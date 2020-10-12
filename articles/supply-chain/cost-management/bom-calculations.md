@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice
+ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, ProdSetupCostEstimation
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 6e83d438f4f1a913bfa86827d7ba0c1d9366030f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f90e5babb440a2226638f7d96f111816732f0e70
+ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202018"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826776"
 ---
 # <a name="bom-calculations"></a>BOM-beräkningar
 
@@ -82,8 +82,8 @@ Följande situationer illustrerar hur reservprincipen kan används på två sät
 ## <a name="bom-calculation-of-a-suggested-sales-price"></a>Strukturlisteberäkning av ett föreslaget försäljningspris
 När du använder en metod för kostnad plus tillägg återspeglar artikelns beräknade försäljningspris de grupper med avkastningsprocent som anges i strukturlisteberäkningen och kostnaderna om associeras med dess komponentartiklar, flödesoperationer och tillämpbara tillverkningsomkostnader. Tillägget återspeglar avkastningsprocenten som tilldelas kostnadsgrupper och  kostnadsgrupperna som tilldelas artiklar, kostnadskategorier för flödesoperationer och beräkningsformlerna för indirekta kostnader för tillverkningsomkostnader. Grupperna med avkastningsprocent har etiketterna **standard**, **vinst 1**, **vinst 2**, och **vinst 3**. Inom uppsättningen vinst 1 kan till exempel en avkastningsprocent på 50 procent definieras för en kostnadsgrupp som tilldelas inköpt material och en avkastningsprocent på 80 kan definieras för en kostnadsgrupp som tilldelas kostnadskategorier för flödesoperationer. Sammanhanget för strukturlisteberäkningen bestämmer hur resultatet från ett beräknat försäljningspris hanteras.
 
--   **Strukturlisteberäkning för en artikel och angiven kostnadsversion** - Strukturlisteberäkningen genererar en väntande försäljningsprispost i kostnadsversionen. Försäljningsprisposten utgör startpunkten när du visar beräkningsdetaljer, till exempel på sidan **Beräkna artikelkostnad**). Försäljningsprisposten fungerar främst som referensinformation, och ligger inte till grund för ett försäljningspris på försäljningsorder.
--   **Orderspecifik strukturlisteberäkning** - En variation på sidan **strukturlisteberäkning** som används när det gäller försäljningsorder, försäljningsofferter eller radartiklar på en serviceorder. En orderspecifik strukturlisteberäkning genererar ingen post i en kostnadsversion. Däremot genererar en beräkningspost som visas på sidan **strukturberäkningsresultat**. Beräkningsposten utgör startpunkten när du visar beräkningsdetaljer, till exempel på sidan **Beräkna artikelkostnad**). Information om den valda beräkningsposten kan överföras till den ursprungliga radartikeln. Till exempel kan det beräknade försäljningspriset överföras till en radartikel på försäljningsordern.
+-   **Strukturlisteberäkning för en artikel och angiven kostnadsversion** - Strukturlisteberäkningen genererar en väntande försäljningsprispost i kostnadsversionen. Försäljningsprisposten utgör startpunkten när du visar beräkningsdetaljer, (till exempel på sidan **Beräkna artikelkostnad**). Försäljningsprisposten fungerar främst som referensinformation, och ligger inte till grund för ett försäljningspris på försäljningsorder.
+-   **Orderspecifik strukturlisteberäkning** - En variation på sidan **strukturlisteberäkning** som används när det gäller försäljningsorder, försäljningsofferter eller radartiklar på en serviceorder. En orderspecifik strukturlisteberäkning genererar ingen post i en kostnadsversion. Däremot genererar en beräkningspost som visas på sidan **strukturberäkningsresultat**. Beräkningsposten utgör startpunkten när du visar beräkningsdetaljer, (till exempel på sidan **Beräkna artikelkostnad**). Information om den valda beräkningsposten kan överföras till den ursprungliga radartikeln. Till exempel kan det beräknade försäljningspriset överföras till en radartikel på försäljningsordern.
 
 ## <a name="order-specific-bom-calculations"></a>Orderspecifika strukturlisteberäkningar
 En orderspecifik strukturlisteberäkning är en variant på en strukturlisteberäkning för en tillverkad artikel. En orderspecifik strukturlisteberäkning utförs för försäljningsorder, försäljningsofferter och radartiklar på serviceorder. En orderspecifik strukturlisteberäkning genererar en beräkningspost som visas på sidan **resultat från strukturlisteberäkningar**. Beräkningsposten omfattar en beräknad vikt, en beräknad kostnad som baseras på aktiva kostnadsposter och ett beräknat försäljningspris. Beräkningsposten som varje orderspecifik strukturlisteberäkning för en artikel genererar på sidan **Resultat från strukturlisteberäkningar** identifieras unikt med ett beräkningsnummer. Resultatet från en beräkningspost kan överföras till den ursprungliga radartikeln. En orderspecifik strukturlisteberäkning skiljer sig från en strukturlisteberäkning för en tillverkad artikel på två sätt.

@@ -1,6 +1,6 @@
 ---
 title: Utbildningskatalog för administratörer för Dynamics 365 Commerce
-description: Hitta alla utbildningsalternativ för Dynamics 365 Commerce.
+description: Hitta alla utbildningsalternativ för administratörsrollen för Dynamics 365 Commerce.
 author: margoc
 ms.topic: article
 ms.date: 07/23/2020
@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7a6e0b6103bf453b74ae485f06bf139b13bae7b2
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: fc4df1c7fc47608300d705616768b6c8ef135652
+ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793403"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3821214"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Utbildningskatalog för administratörer för Dynamics 365 Commerce
 
@@ -39,7 +39,7 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 
 | Innehåll  | beskrivning  | Format  | Längd    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Distribuera Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/)                                    | I den här utbildningssökvägen beskrivs hur du distribuerar Dynamics 365 Commerce-miljöer och utför etableringsstegen för att genomföra Commerce-implementeringar med rätt topologi för varje återförsäljarens affärsbehov.                               | Gratis, självstudier online utbildningsväg | 5 timmar   |
+| [Driftsätta och utöka Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | I den här utbildningssökvägen beskrivs hur du distribuerar Dynamics 365 Commerce-miljöer och utför etableringsstegen för att genomföra Commerce-implementeringar med rätt topologi för varje återförsäljarens affärsbehov. | Gratis, självstudier online utbildningsväg | 5 timmar   |
 | [Konfigurera och använda kassa (POS) i Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-use-pos-commerce/)         | Transaktionsdata skapas i kassan (POS) och överförs sedan till Dynamics 365 Commerce administration för bearbetning. Den här utbildningsvägen beskriver hur man installerar och aktiverar kassan samt hur du skapar dagliga transaktioner i kassan. | Gratis, självstudier online utbildningsväg | 4.5 timmar |
 | [Konfigurera och arbeta med kundtjänst i Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce är en flerkanalslösning som tillhandahåller en kundtjänstkanal med funktioner som standard för specifika orderbearbetningsinställningar och standardvärden för försäljnings order som skapas av kundtjänstanvändare.                                  | Gratis, självstudier online utbildningsväg | 2 timmar   |
 

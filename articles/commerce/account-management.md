@@ -3,7 +3,7 @@ title: Sidor och moduler för kontohantering
 description: Det här ämnet omfattar för kontohantering och moduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,15 +18,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8787a7b01ecf15752569d2a3a8d7804fe492e63d
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: b0f963bcf65ae622522fe52fd59996c6ec0ecf17
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025732"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817168"
 ---
 # <a name="account-management-pages-and-modules"></a>Sidor och moduler för kontohantering
-
 
 [!include [banner](includes/banner.md)]
 
@@ -75,7 +74,7 @@ Om du vill delta i förmånsprogrammet kan du skapa en marknadsföringssida med 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Startpaket – översikt](starter-kit-overview.md)
+[Översikt över modulbibliotek](starter-kit-overview.md)
 
 [Behållarmodul](add-container-module.md)
 

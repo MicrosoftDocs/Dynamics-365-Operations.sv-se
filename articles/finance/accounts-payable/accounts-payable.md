@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e9fbc0e3f3960f25930f9587d489009bc34181c7
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: b663f63552f9de4dbafc0cb71b4381db6d8dc99a
+ms.sourcegitcommit: 71a7fb9e7133d872790ec25def5453bbbb17c627
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772247"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3888166"
 ---
 # <a name="accounts-payable-home-page"></a>Startsida för Leverantörsreskontra
 
@@ -129,11 +129,11 @@ Gå till [utgivningsplaner för Microsoft Dynamics 365](https://go.microsoft.com
 
 Det finns åsikter, nyheter och annan information om leverantörsreskontra och andra lösningar i [bloggen om Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [bloggen om Microsoft Dynamics 365 Finance – Ekonomi](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
+I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partner en resurs där de kan få mer information om vad som är nytt och trendar i Dynamics 365.
 
-#### <a name="community-blogs"></a>Bloggar
+#### <a name="community-blogs"></a>Community-bloggar
 
-[Hantera leverantörsskulder iDynamics 365 Finance](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
+[Hantera leverantörsskulder i Dynamics 365 Finance](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
 
 #### <a name="task-guides"></a>Uppgiftsguider
 Mer hjälp är tillgänglig som uppgiftsguider i appen. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.

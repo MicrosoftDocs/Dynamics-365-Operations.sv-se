@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 022db9365f25c1d3e387870dd9d173077d864b3d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 44dc059f7bfc3ba83a375c197ce67f1378a9bc9b
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141532"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899359"
 ---
 # <a name="base-price-and-trade-agreements"></a> Baspris och handelsavtal
 
@@ -58,7 +58,7 @@ Den här proceduren går igenom hur du skapar kanalspecifika handelsavtal för f
 26. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Namn**.
 27. I listan välj raden **Handel**. I demonstrationsdata har journalnamnet **Handel** standardrelationen **Pris (Försäljning)**. Det innebär att alla skapade nya rader får standardinställningen handelsavtal för försäljningspriset.  
 28. Klicka på **Rader** i **åtgärdsfönstret**.
-29. Välj Grupp i fältet **Kontokod**.
+29. I fältet **Partkodtyp** välj Grupp.
 30. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Kontomarkering**.
 31. Hitta och markera önskad post i listan. Detta slutför länken från Kanal till Prisgrupp till Handelsavtal.  
 32. Skriv ett värde i fältet **Artikelrelation**.

@@ -3,7 +3,7 @@ title: Modul för butiksväljare
 description: Det här avsnittet handlar om modulen för butiksväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1531b27dad4188dca96cf5728a9858f94001977c
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 4438e46d4653a0cd2060092695f08613cd696f4e
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646145"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818260"
 ---
 # <a name="store-selector-module"></a>Modul för butiksväljare
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Det här avsnittet handlar om modulen för butiksväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 
@@ -65,7 +64,7 @@ För att detta scenario ska fungera bör produkter konfigureras så att leverans
 
 Följande bild visar ett exempel på en modul för butiksväljare som används på ett PDP.
 
-![Exempel på en modul för butiksväljare](./media/BOPIS.PNG)
+![Exempel på en modul för butiksväljare som används på PDP](./media/BOPIS.PNG)
 
 ## <a name="find-stores-mode"></a>Sök efter butiksläge
 
@@ -73,7 +72,7 @@ Modulen butiksväljare stöder också ett läge för **sök butiker**. Detta lä
 
 I bilden nedan visas ett exempel på en modul i butiksväljaren som används tillsammans med en kartmodul på en butiksplatssida.
 
-![Exempel på en modul för butiksväljare](./media/ecommerce-Storelocator.PNG)
+![Exempel på en modul för butiksväljare och en kartmodul på sidan lagringsplatser](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>Återge en karta
 
@@ -127,7 +126,7 @@ Om du vill konfigurera modulen för butiksväljaren att visa tillgängliga butik
  
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Startpaket – översikt](starter-kit-overview.md)
+[Översikt över modulbibliotek](starter-kit-overview.md)
 
 [Modul för inköpsruta](add-buy-box.md)
 

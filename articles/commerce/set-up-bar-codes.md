@@ -3,7 +3,7 @@ title: Ställa in streckkoder
 description: Det här avsnittet beskriver hur du använder streckkoder i Dynamics 365 Commerce.
 author: jblucher
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 52801e0d09b1d7da50719966700ca45275d702f7
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 0785f499a3e106e36b803ae61a9acbdbb072ce17
+ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057288"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3835072"
 ---
 # <a name="set-up-bar-codes"></a>Ställa in streckkoder
 
@@ -42,7 +42,7 @@ Du kan skapa streckkoder manuellt eller automatiskt. Slutför följande uppgifte
 1. [Ställ in streckkodsmasktecken](set-up-bar-code-masks.md).
 2. [Ställ in streckkodsmasker](set-up-bar-code-masks.md).
 3. Konfigurera streckkodsinställningar.
-4. Skapa streckkoder för specifika produkter.
+4. [Skapa streckkoder för specifika produkter](../supply-chain/pim/tasks/create-bar-code-product.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

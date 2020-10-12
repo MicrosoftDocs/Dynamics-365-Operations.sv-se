@@ -1,9 +1,9 @@
 ---
-title: Bädda in Power Apps
-description: Det här avsnittet beskriver hur du bäddar in Power Apps till klienten för att utöka produktens funktionalitet.
+title: Bädda in arbetsyteapp från Power Apps
+description: Det här avsnittet förklarar hur du bäddar in arbetsyteappar från Microsoft Power Apps till klienten för att utöka produktens funktionalitet.
 author: jasongre
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,36 +16,39 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 90422a34499dab7302ad7722cf84d40e1815991c
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: e57e4567a80aa9f9ba5ac434b0d71204460e164f
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042952"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893117"
 ---
-# <a name="embed-microsoft-power-apps"></a>Bädda in Microsoft Power Apps
+# <a name="embed-canvas-apps-from-power-apps"></a>Bädda in arbetsyteapp från Power Apps
 
 [!include [banner](../includes/banner.md)]
 
-I plattformsuppdatering stöder Finance and Operations integrering med Microsoft Power Apps en tjänst för utvecklare och icke-tekniska användare för att skapa anpassade affärsappar för mobila enheter, surfplattor och webb utan att skriva kod. Power Apps utvecklats av dig, ditt företag eller det bredare ekosystemet och kan sedan bäddas in i Finance and Operations-appar utöka produktens funktioner. Exempelvis kan du skapa ett program från Power Apps som kompletterar en Finance and Operations-app med information som hämtas från ett annat system.
+Microsoft Power Apps är en tjänst som gör det möjligt för både utvecklare och icke-tekniska användare att skapa anpassade företagsprogram för mobila enheter, surfplattor och webben utan att behöva skriva kod. Finance and Operations-appar stöder integration med Power Apps. Arbetsyteappar som utvecklas av dig, ditt företag eller det bredare ekosystemet kan bäddas in i Finance and Operations-appar utöka produktens funktioner. Exempelvis kan du skapa en arbetsyteapp från Power Apps som kompletterar en Finance and Operations-app med information som hämtas från ett annat system.
 
 Om du vill veta mer om inbäddning av Power Apps kan du titta på den korta videon [Så här bäddar du in Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
-## <a name="adding-an-embedded-app-from-power-apps-to-a-page"></a>Lägger till en inbäddad app från Power Apps på en sida
+## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Lägger till en inbäddad arbetsyteapp från Power Apps på en sida
 
 ### <a name="overview"></a>Översikt
 
-När du infogar en app från Power Apps till klienten måste du först hitta eller skapa en app med önskade bilder och/eller funktioner. Vi kommer inte att beskriva den detaljerade processen för att bygga en app här. Ämnet [Introduktion till Power Apps](https://docs.microsoft.com/powerapps/getting-started) är en bra utgångspunkt om du inte har använt Power Apps förut.
+När du bäddar in en arbetsyteapp från Power Apps till klienten måste du först hitta eller skapa en app med önskade bilder eller funktioner. Det här avsnittet innehåller ingen detaljerad beskrivning av processen för att bygga appar. Om Power Apps är nytt för dig, se [Power Apps-dokumentationen](https://docs.microsoft.com/powerapps/).
 
-När du är klar att bädda in en viss app kan du välja mellan ett av två sätt för att komma åt app på sidan, oavsett vilken väg som bättre passar ditt scenario. Det första sättet är via knappen Power Apps som har lagts till i standardåtgärdsfönstret. Appar som läggs till med den här funktionen visas som menyobjekt inne i menyknappen Power Apps. När den väljs kommer var och en av dessa menyobjekt att öppna en sidoruta som innehåller inbäddade app. Alternativt kan du visa en inbäddad app direkt på en sida som en ny flik, snabbflik, blad eller ett nytt avsnitt på en arbetsyta.
+Det finns två sätt att få åtkomst till en viss arbetsyteapp på en sida när du är redo att bädda in appen. Du kan välja vilken metod som passar ditt scenario bättre. Den första metoden använder knappen **Power Apps** som har lagts till i standardåtgärdsfönstret. Appar som du lägger till genom att använda den här metoden visas som objekt på menyknappen **Power Apps**. När du väljer ett av dessa objekt visas en sidoruta som innehåller inbäddade app. Alternativt kan du visa en inbäddad app direkt på en sida som en ny flik, snabbflik, blad eller ett nytt avsnitt på en arbetsyta.
 
-När du konfigurerar din inbäddade app kan du välja ett fält som du vill skicka som kontext till app. På så sätt kan app svara utifrån den information som för närvarande visas.
+När du konfigurerar din inbäddade arbetsyteapp kan du välja ett fält som du vill skicka som kontext till app. Detta steg gör att appen kan svara utifrån den information som för närvarande visas.
 
-### <a name="details"></a>Detaljer
+> [!NOTE]
+> Du kan för närvarande inte använda den här mekanismen för att bädda in modellerade appar.  
 
-Följande instruktioner visar hur du bäddar in en en app från Power Apps i webbklienten.
+### <a name="details"></a>Information
 
-1. Gå till sidan där du vill bädda in appen. Detta är samma sida som innehåller alla data som ska skickas till appen som indata.
+Följande procedur visar hur du bäddar in en arbetsyteapp från Power Apps i webbklienten.
+
+1. Gå till sidan där du vill bädda in arbetsyteappen. Denna sida är samma sida som innehåller alla data som måste skickas till appen som indata.
 2. Öppna fönstret **Lägg till en app från Power Apps**:
 
     - Klicka på **Alternativ** och välj **Anpassa den här sidan**. Under menyn **Infoga** väljer du **Power Apps**. Slutligen kan du välja den region där du vill lägga till appen. Om du vill bädda in appen under menyknappen Power Apps väljer du åtgärdsfönstret. Om du vill bädda in appen direkt på sidan, välj lämplig flik, snabbflik, blad eller avsnitt (om du är på en arbetsyta).
@@ -54,8 +57,8 @@ Följande instruktioner visar hur du bäddar in en en app från Power Apps i web
 3. Konfigurera inbäddade appen:
 
     - Fältet **Namn** indikerar texten som visas för knappen eller fliken som innehåller inbäddade appen. Du kanske ofta vill upprepa namnet på appen i det här fältet.
-    - **Program-ID** är GUID för appen som du vill bädda in. För att hämta det här värdet hittar du appen på [web.powerapps.com](https://web.powerapps.com) och letar sedan upp den i fältet **Program-ID** under **Uppgifter**.
-    - För **Mata in kontext för appen**, kan du även välja fältet som innehåller de data som du vill skicka till appen som indata. Se avsnittet längre fram i det här ämnet med namnet [Bygga appar som använder data från Finance and Operations-appar](#building-an-app-that-leverages-data-sent-from-finance-and-operations-apps) för information om hur appen kan komma åt data som skickas från Finance and Operations-appar.
+    - Fältet **App-ID** anger den globala unika identifieraren (GUID) för den arbetsyta som du vill bädda in. För att hämta det här värdet hittar du appen på [web.powerapps.com](https://web.powerapps.com) och letar sedan upp den i fältet **Program-ID** under **Uppgifter**.
+    - För **Mata in kontext för appen**, kan du även välja fältet som innehåller de data som du vill skicka till appen som indata. Se avsnittet längre fram i det här ämnet med namnet [Bygga appar som använder data från Finance and Operations-appar](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) för information om hur appen kan komma åt data som skickas från Finance and Operations-appar.
     - Välj **Programstorlek** som matchar typen av app som du bäddar in. Välj **Tunn** för appar som har skapats för mobila enheter och **Omfattande** för appar som skapats för surfplattor. Detta säkerställer att en tillräcklig mängd utrymme avsätts för inbäddade appen.
     - Snabbfliken **Juridiska personer** innehåller möjligheten att välja vilka juridiska personer som appen är tillgänglig för. Standard är att visa appen för alla juridiska personer. Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är inaktiverad. 
 
@@ -63,16 +66,23 @@ Följande instruktioner visar hur du bäddar in en en app från Power Apps i web
 
 ## <a name="sharing-an-embedded-app"></a>Dela en inbäddad app
 
-När du har bäddat in en app på en sida och bekräftat att den fungerar korrekt med all datakontext som skickas från sidan, kanske du vill dela denna med andra användare i systemet. Det kan du göra på två olika sätt genom att använda funktionerna för anpassning av produkten:
+När du har bäddat in en arbetsyteapp på en sida och bekräftat att den fungerar korrekt med all datakontext som skickas från sidan, kanske du vill dela appen med andra användare i systemet. Om du vill dela en inbäddad arbetsyteapp följer du stegen nedan.
 
-- Det rekommenderade scenariot är via den systemadministratör som kan skicka en anpassning till alla användare eller en grupp användare.
-- Du kan också exportera din sidas anpassningar, skicka dem till en eller flera användare och låta var och en av dessa användare importera ändringarna. Verktygsfältet för anpassning har åtgärder som gör att du kan exportera och importera anpassningar.
+1. [Dela arbetsyteappen](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app) med rätt användare så att de kan komma åt appen i Power Apps. 
+
+2. Se till att de målinriktade användarna har lämpliga anpassningar, så att den inbäddade appen visas när dessa användare visar sidan. Du kan använda någon av följande metoder:
+
+    - Rekommenderas: Använd funktionen [Sparade vyer](saved-views.md) för att skapa och publicera en vy som innehåller den inbäddade appen. På så sätt ser du till att alla användare som har de säkerhetsroller som är riktade mot den publicerade vyn kommer att se appen i Finance and Operations-appar. 
+    - Om du inte har aktiverat funktionen Sparade vyer kan du låta system administratören sända en anpassning som innehåller den inbäddade appen till alla användare eller en delmängd av användarna. Du kan också exportera sidans anpassningar och skicka dem till en eller flera användare. Var och en av dessa användare kan sedan importera anpassningarna. Verktygsfältet för anpassning har åtgärder som gör att du kan exportera och importera anpassningar. 
+    
+> [!NOTE]
+> Om arbetsyteapp har delats med externa användare kan dessa användare inte använda den inbäddade appen i Finance and Operations-appar. De kan emellertid komma åt appen direkt i Power Apps. Externa användare inkluderar gäster och användare som inte tillhör den Microsoft 365 Azure-katalog där Finance and Operations-appen distribueras.
 
 Se [Anpassa användarupplevelsen](personalize-user-experience.md) för mer information om anpassningsfunktionerna i produkten och hur de används.
 
-## <a name="building-an-app-that-leverages-data-sent-from-finance-and-operations-apps"></a>Skapa en app som använder data som skickas från Finance and Operations-appar
+## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Skapa en arbetsyteappen som använder data som skickas från Finance and Operations-appar
 
-En viktig del i skapandet av en app från Power Apps som bäddas in i en Finance and Operations-app använder indata från det programmet. Från Power Apps utvecklingsmiljön kan du få åtkomst till indata från en Finance and Operations-app med hjälp av variabeln Param("EntityId").
+När du skapar en arbetsyteappen som ska bäddas in i en Finance and Operations-app, är en viktig del av processen att använda indata från den Finance and Operations-appen. Från Power Apps utvecklingsmiljön kan du få åtkomst till indata från en Finance and Operations-app med hjälp av variabeln **Param("EntityId")**.
 
 Exempelvis i appens OnStart-funktion kan du ange indata från Finance and Operations-appar till en variabel så här:
 
@@ -80,9 +90,9 @@ Exempelvis i appens OnStart-funktion kan du ange indata från Finance and Operat
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
-## <a name="viewing-an-app"></a>Visa en app
+## <a name="viewing-a-canvas-app"></a>Visa en arbetsyteapp
 
-Om du vill visa en inbäddad app på en sida i Finance and Operations-appar, gå till en sida med en inbäddad app. Kom ihåg att appar kan nås via knappen Power Apps i åtgärdsfönstret som standardåtgärdsfönster och kan visas direkt på sidan som en ny flik på snabbflik, blad eller som ett nytt avsnitt på en arbetsyta. När en användare först försöker läsa in en app på en sida, uppmanas han eller hon att logga in för att säkerställa att användaren har behörighet att använda appen.
+Om du vill visa en inbäddad arbetsyteapp på en sida i Finance and Operations-appar, gå till en sida med en inbäddad app. Kom ihåg att appar kan nås genom att använda **Power Apps**-knappen i standard åtgärdsfönstret. Alternativt kan de visas direkt på sidan som en ny flik, snabbflik, blad eller ett nytt avsnitt på en arbetsyta. När användarna först försöker läsa in en app på en sida uppmanas han eller hon att logga in. Det här steget ser till att användarna har rätt behörighet för att använda appen.
 
 ## <a name="editing-an-embedded-app"></a>Redigera en inbäddad app
 
@@ -106,7 +116,7 @@ När en app har inbäddats på en sida finns det två sätt att ta bort den vid 
 
 ## <a name="appendix"></a>Bilaga
 
-### <a name="developer-control-over-where-an-app-can-be-embedded"></a>Utvecklaren styr där en app kan bäddas in
+### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Utvecklare] ange var en app kan bäddas in
 
 Som standard kan användare bädda in appar på sidan under menyknappen Power Apps eller direkt på sidan som en flik, snabbflik, blad eller ett nytt avsnitt på en arbetsyta. Emellertid kan utvecklare vid behov även konfigurera funktionen till att endast tillåta inbäddning av appar för vissa sidor genom att använda följande metoder:
 

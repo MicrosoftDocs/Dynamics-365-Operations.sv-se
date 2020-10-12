@@ -3,7 +3,7 @@ title: Vanliga frågor om arbetsflöde
 description: Detta avsnitt besvarar några vanliga frågor om arbetsflödessystemet.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 02/18/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7408424ff9344b3dcd054106f3f10b0dc1d687b
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 4ba60c832b1f1ac5f514baef4cc0a9c36dd85af9
+ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076096"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826200"
 ---
 # <a name="workflow-faq"></a>Vanliga frågor om arbetsflöde
 
@@ -58,3 +58,5 @@ När du kör under Active Directory Federation Services (AD FS) i en uppgraderad
 ## <a name="why-am-i-getting-sql-deadlocks-on-workflow-processing"></a>Varför får jag SQL-dödlägen vid arbetsflödesbearbetning? 
 Standardfältvärdet för **Antal arbetsflödesobjekt per batch** på sidan **Arbetsflödesparametrar** är 0. Värdet 0 gör att standardvärdet för 20 artiklar per batch ändras. Var försiktig när du justerar det här värdet eftersom ett stort antal poster per batch (> 40) kan orsaka dödlägen i SQL.
 
+## <a name="what-is-the-workflow-enhanced-error-feature"></a>Vad är funktionen utökat fel i arbetsflödet?
+Den utökade felfunktionen i arbetsflödet i version 10.0.13 lägger till felkoder för att skilja mellan olika klasser av arbetsflödesfel. De felmeddelanden som rapporteras är mest likvärdiga med mindre skillnader för att göra dem tydligare.

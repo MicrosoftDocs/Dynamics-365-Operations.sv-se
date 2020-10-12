@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: COODualUseCerts, COORules, COODualUseCountries
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0847dc1ce01a6e6f4f8b72db115445f75de4aac2
-ms.sourcegitcommit: 70d0b4e6bdacc15ec75935550ae55fc02cb79624
+ms.openlocfilehash: 8f2b738fd87219be383b103eaf5fafeb971fc702
+ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "3596277"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3895483"
 ---
 # <a name="dual-use-goods"></a>Varor med dubbla användningsområden
 
@@ -91,7 +92,7 @@ Den här inställningen kontrolleras när du skapar en försäljningsorder.
 
 ## <a name="set-up-dual-use-certificates"></a>Ställa in certifikat med dubbla användningsområden
 
-Använd sidan **Certifikat för dubbel användning** när du vill ställa in och hantera de krävda certifikaten för dubbel användning för varje produkt och land. Du kan spåra varje certifikats detaljer, t.ex. land och giltighetsdatum. Du kan också ange alternativ för att ange var den här informationen ska skrivas ut. Informationen kan till exempel skrivas ut på fakturan, följesedeln och/eller försäljningsordern. Den här inställningen kontrolleras när du skapar en försäljningsorder.
+Använd sidan **Certifikat för dubbel användning** när du vill ställa in och hantera de krävda certifikaten för dubbel användning för varje produkt och land. Du kan spåra varje certifikats detaljer, t.ex. landet och giltighetsdatumet. Du kan också ange alternativ för att ange var den här informationen ska skrivas ut. Informationen kan till exempel skrivas ut på fakturan, följesedeln och/eller försäljningsordern. Den här inställningen kontrolleras när du skapar en försäljningsorder.
 
 1. Gå till **Produktinformationhantering \> Inställningar \> Produktenskompatibilitet \> Produkter med dubbla användningsområden \> Certifikat med dubbla användningsområden**.
 2. Välj ett befintligt certifikat för att redigera, eller välj **ny** i åtgärdsfönstret för att skapa ett nytt certifikat.

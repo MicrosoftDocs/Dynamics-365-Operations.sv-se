@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0fbf44fe35af3147fd5fb478b6cbfc5a5d0b109d
-ms.sourcegitcommit: 5b620f670ac0f403a0fdcdeb9c3f970b163191ee
+ms.openlocfilehash: c7b74983cbddf661456b0a65939e272078d59f6d
+ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "3766770"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3828954"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Hantera ansökningar om ledighet i Teams
 
 [!include [banner](includes/preview-feature.md)]
 
-Med hjälp av Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan du snabbt begära ledighet och visa information om ditt ledighetssaldo direkt i Microsoft Teams. Du kan interagera med en robot för att begära information. Fliken **Ledighet** visar mer detaljerad information.
+Med hjälp av Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan du snabbt begära ledighet och visa information om ditt ledighetssaldo direkt i Microsoft Teams. Du kan använda en robot för att begära information och påbörja en begäran om att lämna en begäran. Fliken **Ledighet** visar mer detaljerad information. Dessutom kan du skicka personuppgifter om din kommande ledighet i team och chattar utanför Human Resources-appen.
 
 ## <a name="install-the-app"></a>Installera appen
 
@@ -56,8 +56,8 @@ Om appen inte logga in dig automatiskt väljer du fliken **Inställningar** för
 
 Om du har till gång till mer än en instans av Human Resources kan du välja vilken miljö du vill ansluta till på fliken **Inställningar**.
 
-> [!WARNING]
-> Appen stöder för närvarande inte säkerhetsrollen Systemadministratör, och ett felmeddelande visas om du loggar in med ett systemadministratörskonto. Om du vill logga in med ett annat konto väljer du fliken **Inställningar**, knappen **Byt konto** och loggar sedan in med ett användarkonto som inte har systemadministratörsbehörighet.
+> [!NOTE]
+> Appen har nu stöd för säkerhetsrollen systemadministratör.
  
 ## <a name="use-the-bot"></a>Använd roboten
 
@@ -130,13 +130,33 @@ På fliken **Ledighet** kan du visa:
 
    ![Redigera utkast i Human Resources Teams-appen för tjänstledighet](./media/hr-teams-leave-app-drafts-edit.png)
    
-### <a name="teams-notifications"></a>Teams-meddelanden
+### <a name="respond-to-teams-notifications"></a>Svara på Teams-meddelanden
 
 När du eller en arbetare är godkännare för att skicka en begäran om ledighet får du ett meddelande i Human Resources-appen i Teams. Du kan välja meddelandet om du vill visa det. Meddelanden visas också i området **Chatt** .
 
 Om du är en godkännare kan du välja **Godkänn** eller **Neka** i meddelandet. Du kan också ange ett valfritt meddelande.
 
 ![Meddelande om ledighetsansökan i Human Resources Teams-appen](./media/hr-teams-leave-app-notification.png)
+
+## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Skicka kommande ledighetsinformation till dina medarbetare
+
+När du har installerat Human Resources-appen för Teams kan du enkelt skicka information om din kommande ledighet till dina medarbetare i grupper eller chattar.
+
+1. I ett team eller chatt i Teams väljer du Human Resources-knappen under chattfönstret.
+
+   ![Human Resources-knappen under chattfönstret](./media/hr-teams-leave-app-chat-button.png)
+
+2. Välj den begäran som du vill dela. Om du vill dela ett utkast till en ledighetsansökan väljer du **utkast** först.
+
+   ![Välj en kommande ledighetsansökan att dela](./media/hr-teams-leave-app-chat-search.png)
+
+Din ledighetsansökan visas i chatten.
+
+![Kort för ledighetsansökan i Human Resources](./media/hr-teams-leave-app-chat-card.png)
+
+Om du har delat en utkastförfrågan visas det som ett utkast:
+
+![Utkast av kort för ledighetsansökan i Human Resources](./media/hr-teams-leave-app-chat-draft-card.png)
 
 ## <a name="view-your-teams-leave-calendar"></a>Visa ditt teams ledighetskalender
 
@@ -164,9 +184,15 @@ Innehållet i användarens frågor och meddelanden behålls i LUIS-systemet unde
 
 Om du vill hantera administrationsinställningar för appar i Microsoft Teams går du till administratörscentret för [Microsoft Teams](https://admin.teams.microsoft.com/).
 
-### <a name="microsoft-azure-event-grid-and-microsoft-teams"></a>Microsoft Azure Event Grid och Microsoft Teams
+### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams, Azure Event Grid och Azure Cosmos DB
 
-När du använder meddelandefunktionen för Dynamics 365 Human Resources-appen i Teams, kommer vissa kunddata att flöda utanför det geografiska område där medarbetarens Human Resources har distribuerats. Dynamics 365 Human Resources överför medarbetarens information om tjänstledighet och arbetsflödes uppgifter till Microsoft Azure Event Grid och Microsoft Teams . Dessa data kan lagras i upp till 24 timmar och bearbetas i USA, krypteras i transit och vila och används inte av Microsoft eller dess under processer för utbildning eller serviceförbättringar.
+När du använder meddelandefunktionen för Dynamics 365 Human Resources-appen i Microsoft Teams kan vissa kunddata flöda utanför det geografiska område där medarbetarens Human Resources har distribuerats.
+
+Dynamics 365 Human Resources överför medarbetarens information om tjänstledighet och arbetsflödes uppgifter till Microsoft Azure Event Grid och Microsoft Teams . Dessa data kan lagras i Microsoft Azure Event Grid i upp till 24 timmar och bearbetas i USA, krypteras i transit och vila och används inte av Microsoft eller dess under processer för utbildning eller serviceförbättringar. Mer information om var dina data lagras i Teams finns i: [plats för data i Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+
+Medan du samtalar med chattroboten i Human Resources-appen kan konversationsinnehållet lagras i Azure Cosmos DB och skickas till Microsoft Teams. Denna data kan lagras i Azure i Cosmos DB i upp till 24 timmar och kan bearbetas utanför det geografiska område där klientorganisationens Human Resources har distribuerats, krypteras i transit och vila och används inte av Microsoft eller dess under processer för utbildning eller serviceförbättringar. Mer information om var dina data lagras i Teams finns i: [plats för data i Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+ 
+Om du vill begränsa åtkomsten till Human Resources-appen personal i Microsoft Teams för din organisation eller dina användare inom organisationen läser du [Hantera principer för programbehörigheter i Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
 ## <a name="see-also"></a>Se även
 

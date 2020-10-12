@@ -150,7 +150,7 @@
           href: modular-app-tech-faq.md
         - name: Exportera data från Attract och Onboard
           href: attract-onboard-export-data.md
-        - name: Bädda in Microsoft Power Apps
+        - name: Bädda in arbetsyteappar från Power Apps
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Få support för Talent
           href: talent-support.md
@@ -252,3 +252,5 @@
           href: user-access-core-hr.md
         - name: Azure Active Directory-användare som inte finns i personväljaren
           href: people-picker-user-not-found.md
+        - name: Attract-användare kan inte söka jobb från karriärportalen
+          href: attract-troubleshoot-career-portal.md

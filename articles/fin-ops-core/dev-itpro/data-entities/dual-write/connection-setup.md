@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 275d24d8f32fd1d2d15356d14c5c6591e8503c65
-ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
+ms.openlocfilehash: b4f69e7933bc5a50cccad6911c99cf08d2768578
+ms.sourcegitcommit: b3df62842e62234e8eaa16992375582518976131
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "3706262"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3818606"
 ---
 # <a name="supported-scenarios-for-dual-write-setup"></a>Scenarier som stöds för inställningen dubbelriktad skrivning
 
@@ -42,7 +42,7 @@ Du kan skapa en dubbelriktad anslutning mellan en Finance and Operations-miljö 
 
 Installationsmekanismen varierar beroende på din prenumeration och miljön.
 
-+ För nya instanser av Finance and Operations-appar börjar konfigurationen av en dubbelriktad anslutning i Microsoft Dynamics Lifecycle Services (LCS). Om du har en licens för Microsoft Power Platform får du en ny Common Data Service-miljö om ditt innehavare inte har någon.
++ För nya instanser av Finance and Operations-appar börjar konfigurationen av en dubbelriktad anslutning i Microsoft Dynamics Lifecycle Services (LCS). Om du har en licens för Power Platform får du en ny Common Data Service-miljö om ditt innehavare inte har någon.
 + När det gäller Finance and Operations-appar i befintliga instanser börjar konfigurationen av dubbelriktad anslutning i Finance and Operations-miljön.
 
 Följande konfigurationsscenarier stöds:

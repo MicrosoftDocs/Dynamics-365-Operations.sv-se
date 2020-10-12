@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c46c4c060d61503779726c68d32449c87b441f1
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7f170fc501e995bf9497d86501f4e086e486d0fb
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207912"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830759"
 ---
 # <a name="purchasing-policies-overview"></a>Inköpspolicyer – översikt
 
@@ -102,9 +102,9 @@ Anbudsförfrågningsregeln för inköpsrekvisition definierar kriterier för att
 
 ### <a name="purchase-requisition-control-rule"></a>Kontrollregel för inköpsrekvisition
 
-Inköpsrekvisitionkontrollregeln är en valfri regel. När du skapar regler av den här typen, kan du ange alternativ på olika flikar:
+Kontrollregeln för inköpsrekvisitioner för rekvisitioner av typen **förbrukning** är en valfri regel. När du skapar regler av den här typen, kan du ange alternativ på olika flikar:
 
--   På fliken **Arbetsflödeskörning** kan du konfigurera de fält som måste anges på rekvisitionraden för att inköpsrekvisitionen ska skickas in för godkännande, när rekvisitionsyftet är **Förbrukning**.
+-   På fliken **Arbetsflödeskörning** kan du konfigurera de fält som måste anges på rekvisitionraden för att inköpsrekvisitionen ska skickas in för godkännande.
 -   På fliken **Orderkvantiteter** kan du konfigurera de fält som krävs på inköpsrekvisitionen under vissa villkor. Du kan också framtvinga orderkvantiteter.
 -   På fliken **Datum** kan du konfigurera om redovisningdatumet är samma som det begärda datumet
 -   På fliken **Adress** kan du ange om användaren får skapa nya adresser i systemet som ska användas för inköpsrekvisitionen.

@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28c9152996b7efc84b4259bd7323411df0b62258
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7aecc2c4786a1912bf5ae44f3949428c778f1df9
+ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207817"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826838"
 ---
-# <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Ställ in en extern katalog för PunchOut eProcurement
+# <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Ställ in en extern katalog för PunchOut eProcurement
 
 [!include [banner](../includes/banner.md)]
 
@@ -85,8 +85,9 @@ Nedan hittar du en beskrivning av de etiketter som ingår i mallen:
 
 ### <a name="extrinsic-elements"></a>Extrinsic-element
 
-Ett yttre element är ytterligare information, till exempel ett användarnamn som baseras på en användare som stämplar ut. Det yttre elementet anges när utstämplingen inträffar och kan skickas i meddelandet om begärandeinställningar.
-Din leverantör kan ha ett krav för att ta emot ett extrinsic-element i förfrågan om inställningar. I sådana fall bör du lägga till extrinsic-elementet i listan över extrinsic-element i avsnittet **Meddelandeformatet** på sidan **Extern katalog**. Ange ett namn för extrinsic-elementet som leverantören kan känna igen och mappa det till ett värde. Alternativen för värden är: Användarnamn, Användarens e-postadress eller Slumpmässigt värde.
+Ett yttre element är ytterligare information, till exempel ett användarnamn som baseras på en användare som stämplar ut. Det yttre elementet anges när PunchOut inträffar och kan skickas i meddelandet om begärandeinställningar.
+Din leverantör kan ha ett krav för att ta emot ett extrinsic-element i förfrågan om inställningar. I sådana fall bör du lägga till extrinsic-elementet i listan över extrinsic-element i avsnittet **Meddelandeformatet** på sidan **Extern katalog**.
+Ange ett namn för extrinsic-elementet som leverantören kan känna igen och mappa det till ett värde. Alternativen för värden är: Användarnamn, Användarens e-postadress eller Slumpmässigt värde.
 Mer information om cXML-protokollet finns på: [cXML.org webbsida](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Retroaktivt meddelande
@@ -109,3 +110,7 @@ Ta bort en extern katalog med åtgärden Ta bort på sidan.
 
 Om en produkt från den externa leverantörskatalogen har efterfrågats kan den externa leverantörskatalogen inte raderas. I stället är statusen för den externa leverantörskatalogen inaktiv. Om du vill ta bort åtkomsten till webbplatsen för den externa leverantörens katalog, men inte ta bort, ändra den externa katalogen till inaktiv.
 
+## <a name="additional-resources"></a>Ytterligare resurser
+
+- [Förbättringar i inköps-cXML](purchasing-cxml-enhancements.md)
+- [Använd externa kataloger för PunchOut eProcurement](use-external-catalogs-for-punchout.md)

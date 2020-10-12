@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0fc9877fdca2d2f85f4f9609616d8d21ab7b5174
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: b0929b449f20e7340c3607d842b7c4f779cbb8fe
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771597"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893315"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-innehåll för kostnadsredovisningsanalys
 
@@ -44,8 +44,6 @@ Genom att definiera säkerhetsnivån för åtkomst inom kostnadsredovisningen oc
 
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
 Du kan hitta Power BI-innehållet **Kostnadsredovisningsanalys** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
-
-<!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
 Hämta innehållet **Kostnadsredovisningsanalys** innehåll som avser versionen av Microsoft Dynamics 365 som du använder.
 
@@ -92,7 +90,7 @@ Följande tabell visar hur viktiga sammanlagda mått används för att skapa fle
 | Avvikelse i budgetkostnad                          | \[Budgeterad kostnad\] - \[Faktisk kostnad\]                                                                                      |
 | Budgetavvikelseprocent                    | OM(\[Budgeterad kostnad\] = 0, blank(), \[Budgetavvikelse\] / \[Budgeterad kostnad\])                                                |
 | Verklig storlek                              | BERÄKNA("Statistiska poster"\[FullMagnitude\], "Transaktionsversioner"\[ISSOURCEVERSIONBUDGET\_VÄRDE\] = 0)          |
-| Budgetomfattning                              | BERÄKNA\[FullMagnitude\], "Transaktionsversioner"\[ISSOURCEVERSIONBUDGET\_VÄRDE\] = 1)                               |
+| Budgetomfattning                              | BERÄKNA(\[FullMagnitude\], "Transaktionsversioner"\[ISSOURCEVERSIONBUDGET\_VÄRDE\] = 1)                               |
 | Statistisk budgetavvikelse                   | \[Budgetstorlek\] - \[Faktisk storlek\]                                                                            |
 | Statistisk budgetavvikelseprocent        | OM(\[Budgetstorlek\] = 0, blank(), \[Statistisk budgetavvikelse\] / \[Budgetstorlek\])                          |
 | Faktisk kostnadstariff                              | OM(\[Faktisk storlek\] = 0, BLANK(), \[Faktisk kostnad\] / \[Faktisk storlek\])                                          |

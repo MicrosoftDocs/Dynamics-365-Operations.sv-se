@@ -76,9 +76,9 @@
                       href: get-started/whats-new-scm-10-0-13.md
                     - name: Supply Chain Management 10.0.12 (augusti 2020)
                       href: get-started/whats-new-scm-10-0-12.md
-                - name: Borttagna och utfasade funktioner
+                - name: Borttagna eller utfasade funktioner
                   items:
-                    - name: Borttagna och utfasade funktioner i Dynamics 365 Supply Chain Management
+                    - name: Borttagna eller utfasade funktioner i Dynamics 365 Supply Chain Management
                       href: get-started/removed-deprecated-features-scm-updates.md
                     - name: Borttagna eller utfasade funktioner i tidigare versioner
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Skapa och arbeta med anpassade fält
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Bädda in Microsoft Power Apps
+                - name: Bädda in arbetsyteappar från Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Hitta information med hjälp av sökningar
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -1651,10 +1651,12 @@
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/supply-chain/toc.json
         - name: Anskaffning och källa
           items:
-            - name: Anskaffning och inköp – översikt
+            - name: Anskaffning och källa – översikt
               href: procurement/procurement-sourcing-overview.md
             - name: Anskaffnings- och källarbetsflöden
               href: procurement/procurement-sourcing-workflows.md
+            - name: Felsöka anskaffnings- och källarbetsflöden
+              href: procurement/troubleshoot-procurementworkflows.md
             - name: Anskaffningskataloger
               items:
                 - name: Anskaffningskataloger – översikt
@@ -1695,7 +1697,9 @@
                   href: procurement/purchase-order-mobile-workspace.md
                 - name: Registrera inleverans av varor på en inköpsorder
                   href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
-            - name: Skapande av inköpsorder
+                - name: Felsöka inköpsorder
+                  href: procurement/troubleshoot-purchaseorders.md
+            - name: Skapa inköpsorder
               items:
                 - name: Skapa inköpsorder manuellt
                   href: procurement/purchase-order-creation.md
@@ -1725,6 +1729,8 @@
                   href: procurement/tasks/create-purchase-agreement.md
                 - name: Leverantörsrabatter
                   href: procurement/vendor-rebates.md
+                - name: 'Felsöka priser, rabatter och avtal'
+                  href: procurement/troubleshooting-pricediscountagreements.md
             - name: Inköpspolicyer
               items:
                 - name: Inköpspolicyer – översikt
@@ -1739,6 +1745,8 @@
                   href: procurement/product-receipt-against-purchase-orders.md
                 - name: Översikt över leverantörsfakturor
                   href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Felsöka produktinleveranser och fakturering
+                  href: procurement/troubleshooting-productreceiptinvoicing.md
             - name: Leverantörshantering och samarbete
               items:
                 - name: Skapa och underhåll leverantörssamarbete
@@ -1765,6 +1773,8 @@
                   href: procurement/vendor-catalogs-import.md
                 - name: Ställ in en extern katalog för PunchOut eProcurement
                   href: procurement/set-up-external-catalog-for-punchout.md
+                - name: Förbättringar i inköps-cXML
+                  href: procurement/purchasing-cxml-enhancements.md
                 - name: Använd externa kataloger för PunchOut eProcurement
                   href: procurement/use-external-catalogs-for-punchout.md
                 - name: Mobil arbetsyta för leverantörssamarbete
@@ -2261,6 +2271,8 @@
                   href: sales-marketing/tasks/manage-order-holds.md
                 - name: Bekräfta försäljningsorder
                   href: sales-marketing/tasks/confirm-sales-orders.md
+                - name: Felsöka försäljningsorder
+                  href: sales-marketing/troubleshooting-sales.md
             - name: Försäljningsavtal
               items:
                 - name: Försäljningsavtal – översikt
@@ -2283,6 +2295,8 @@
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Skapa och redigera försäljningsofferter
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
+                - name: Felsöka försäljningsofferter
+                  href: sales-marketing/troubleshooting-salesquotation.md
             - name: Returer
               items:
                 - name: Försäljningsreturer
@@ -2807,18 +2821,20 @@
                   items:
                     - name: Installera och ansluta distributionslagerappen
                       href: warehousing/install-configure-warehousing-app.md
-                    - name: Konfigurera fältnamn i distributionslagerappen
-                      href: warehousing/configure-app-field-names-priorities-warehouse.md
-                    - name: Ställ in mobila enheter för distributionslagerarbete
-                      href: warehousing/configure-mobile-devices-warehouse.md
                     - name: Skanna streckkoder med kamera i distributionslagerappen
                       href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Konfigurera fältnamn i distributionslagerappen
+                      href: warehousing/configure-app-field-names-priorities-warehouse.md
+                    - name: Ställa in mobila enheter för distributionslagerarbete
+                      href: warehousing/configure-mobile-devices-warehouse.md
                     - name: Inleverans av ID-nummer med distributionslagerappen
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-                    - name: Ställ in ett menyalternativ för mobil enhet för att slutföra arbetet i en inköpsorder
+                    - name: Ställa in ett menyalternativ för mobil enhet för att slutföra arbetet i en inköpsorder
                       href: warehousing/tasks/set-up-mobile-device-menu.md
-                    - name: Ställ in ett menyalternativ för mobila enheter för att registrera mottagna artiklar
+                    - name: Ställa in ett menyalternativ för mobila enheter för att registrera mottagna artiklar
                       href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Konfigurera ett menyalternativ för mobila enheter för att visa översikt över plockrader
+                      href: warehousing/pick-line-overview.md
                     - name: Skapa ett nytt menyalternativ för mobila enheter för avstämning av ID-nummer
                       href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
                     - name: Inleverans av blandat ID-nummer på en mobil enhet

@@ -98,13 +98,11 @@
                       href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (augusti 2020)
                       href: get-started/whats-new-commerce-10-0-12.md
-                    - name: Commerce 10.0.11 (juli 2020)
-                      href: get-started/whats-new-commerce-10-0-11.md
-                - name: Borttagna och utfasade funktioner
+                - name: Borttagna eller utfasade funktioner
                   items:
-                    - name: Borttagna och utfasade funktioner i Finance and Operations
+                    - name: Borttagna eller utfasade funktioner i Finance and Operations
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
-                    - name: Borttagna och utfasade funktioner i Dynamics 365 Commerce
+                    - name: Borttagna eller utfasade funktioner i Dynamics 365 Commerce
                       href: get-started/removed-deprecated-features-commerce.md
                 - name: AX 2012-funktioner som har senarelagts
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
@@ -182,7 +180,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Skapa och arbeta med anpassade fält
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: Bädda in Microsoft Power Apps
+                - name: Bädda in arbetsyteappar från Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
                 - name: Hitta information med hjälp av sökningar
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -956,9 +954,9 @@
                   href: add-privacy-page.md
                 - name: 'Ersätt användar-ID:n som är associerade med spårade innehållsändringar'
                   href: replace-IDs-tracked-changes.md
-            - name: Startpaket
+            - name: Modulbibliotek
               items:
-                - name: Startpaket – översikt
+                - name: Modulbibliotek – översikt
                   href: starter-kit-overview.md
                 - name: Behållarmoduler
                   items:
@@ -1976,7 +1974,7 @@
                   items:
                     - name: Skapa ny modul
                       href: e-commerce-extensibility/create-new-module.md
-                    - name: Klona en startpaketsmodul
+                    - name: Klona en modul från modulbiblioteket
                       href: e-commerce-extensibility/clone-starter-module.md
                     - name: Lägg till konfigurationsfält för modul
                       href: e-commerce-extensibility/add-module-config-fields.md
@@ -2070,7 +2068,7 @@
                   items:
                     - name: Paketera konfigurationer och distribuera dem till en onlinemiljö
                       href: e-commerce-extensibility/package-deploy.md
-                    - name: Uppdateringar av SDK och startpaket för butik
+                    - name: Uppdateringar av SDK och modulbibliotek
                       href: e-commerce-extensibility/sdk-updates.md
             - name: SDK för Retail
               items:
@@ -2148,6 +2146,8 @@
                   href: implementation-considerations-devices.md
                 - name: Kassavy för kundvagnens händelser och hanterare
                   href: dev-itpro/cart-view-handlers.md
+                - name: Lägga till anpassade knappar i kassans rubrikfält
+                  href: dev-itpro/pos-header-bar.md
             - name: Utbyggbarhet för Hardware Station
               items:
                 - name: Hardware Station och utbyggbarhet

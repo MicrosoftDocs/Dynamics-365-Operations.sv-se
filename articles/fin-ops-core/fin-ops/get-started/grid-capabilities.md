@@ -3,7 +3,7 @@ title: Rutnätsmöjligheter
 description: I det här avsnittet beskrivs flera kraftfulla funktioner i rutnätskontrollen. Den nya rutnätsfunktionen måste aktiveras för att du ska kunna använda dessa funktioner.
 author: jasongre
 manager: AnnBe
-ms.date: 08/31/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b4efad8423ab42bf6f7f6e2d1054307c11d31d2c
-ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
+ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
+ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760409"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3835096"
 ---
 # <a name="grid-capabilities"></a>Rutnätsmöjligheter
 
@@ -33,6 +33,7 @@ Den nya rutnätskontrollen innehåller flera användbara och kraftfulla funktion
 -  Skriva före systemet
 -  Utvärdera matematikuttryck 
 -  Gruppera data i en tabell (aktiveras separat med hjälp av funktionen **(förhandsversion) gruppering i rutnät**)
+-  Fästa systemkolumner
 
 ## <a name="calculating-totals"></a>Beräknar summor
 I Finance and Operations-appar har användare möjlighet att visa summor längst ned på numeriska kolumner i rutnät. Dessa summor visas i ett sidfotsavsnitt längst ned i rutnätet. 
@@ -119,12 +120,19 @@ På samma sätt som du kan markera (eller avmarkera) alla rader i rutnätet geno
 ### <a name="hiding-column-names"></a>Dölja kolumnnamn
 När du grupperar data är standardfunktionen att visa kolumnnamnet i grupprubrikraden. Från och med version 10.0.14/plattformsuppdatering 38 kan du välja att utelämna kolumnnamnet i grupphuvud rader genom att välja **Rutnätsalternativ** > **Dölj gruppkolumnnamn**.
 
+## <a name="pinned-system-columns"></a>Fästa systemkolumner
+Kolumnen radmarkering och kolumnen radstatus i det nya rutnätet är fästa, eller frusna, på den vänstra delen av rutnätet. När dessa kolumner tas med i ett rutnät visas de därför alltid för användaren, oavsett den vågräta rullningspositionen i rutnätet.   
+
 ## <a name="frequently-asked-questions"></a>Vanliga frågor
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hur aktiverar jag den nya rutnätskontrollen i min miljö? 
 
-**10.0.9/plattformsuppdatering 33 och senare** funktionen **ny rutnätskontroll** är tillgänglig direkt i funktionshantering i alla miljöer. Liksom andra offentliga förhandsgranskningsfunktioner är aktivering av den här funktionen i produktion är föremål för [Tilläggsavtal för användarvillkor](https://go.microsoft.com/fwlink/?linkid=2105274).  
+**10.0.9 / plattformsuppdatering 33 och senare**
 
-**10.0.8/plattformsuppdatering 32 och 10.0.7/plattformsuppdatering 31** kan funktionen **ny rutnätskontroll** aktiveras i miljöer med nivå 1 (utv/test) och nivå 2 (sandbox) för att ge ytterligare tester och designändringar genom att följa stegen nedan.
+Funktionen **Ny rutnätskontroll** är tillgänglig direkt i funktionshantering i alla miljöer. Liksom andra offentliga förhandsgranskningsfunktioner är aktivering av den här funktionen i produktion är föremål för [Tilläggsavtal för användarvillkor](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8/plattformsuppdatering 32 och 10.0.7/plattformsuppdatering 31**
+
+Funktionen **Ny rutnätskontroll** kan aktiveras nivå 1 (Utv/Test) och nivå 2 (Sandbox) miljö för att ge ytterligare tester och designändringar genom att följa stegen nedan.
 
 1.  **Aktivera flygningen**: kör följande SQL-uttryck: 
 
@@ -139,11 +147,14 @@ När du grupperar data är standardfunktionen att visa kolumnnamnet i grupprubri
 Alla efterföljande användarsessioner börjar med att aktivera nya rutnätskontrollen.
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Utvecklare] Avanmäl individuella sidor från att använda det nya rutnätet 
-Om din organisation hittar en sida med vissa problem med att använda det nya rutnätet, finns det en API som gör det möjligt för ett enskilt formulär att använda den gamla rutnätskontrollen samtidigt som resten av systemet tillåter att den nya rutnätskontrollen används. Om du vill välja en enskild sida från det nya rutnätet lägger du till följande samtalspost `super()` i formulärets `run()`-metod.
+Om din organisation hittar en sida med vissa problem med att använda det nya rutnätet, finns det en API med start i version 10.0.13/plattformsuppdatering 37 som gör det möjligt för ett enskilt formulär att använda den gamla rutnätskontrollen samtidigt som resten av systemet tillåter att den nya rutnätskontrollen används. Om du vill välja en enskild sida från det nya rutnätet lägger du till följande samtalspost `super()` i formulärets `run()`-metod.
 
  ```this.forceLegacyGrid();```
 
-Denna API kommer att hedras tills oktober 2021 släpps när den nya nätkontrollen blir obligatorisk. Rapportera alla problem till Microsoft som kräver att detta API används. 
+Denna API kommer att hedras tills oktober 2021 släpps när den nya nätkontrollen blir obligatorisk. Om något problem kräver att denna API används rapporterar du dem till Microsoft.
+
+## <a name="developer-size-to-available-width-columns"></a>[Utvecklare] kolumner med storlek till tillgänglig bredd
+Om en utvecklare ställer in egenskapen **WidthMode** på **SizeToAvailable** för kolumner inuti det nya rutnätet, har de kolumnerna samma bredd som de skulle ha om egenskapen hade värdet **SizeToContent**. De sträcker sig däremot åt att använda valfri tillgänglig bredd i rutnätet. Om egenskapen har ställts in på **SizeToAvailable** för flera kolumner, delar alla dessa kolumner all tillgänglig bredd i rutnätet. Om en användare manuellt ändrar storleken på en av dessa kolumner blir kolumnen statisk. Den kommer att finnas kvar till den bredden och kan inte längre sträckas ut för att ta upp extra tillgängligt rutnäts bredd.  
 
 ## <a name="known-issues"></a>Kända problem
 Det här avsnittet innehåller en lista med kända problem för den nya rutnätskontrollen medan funktionen är i förhandsgranskningsläge.  

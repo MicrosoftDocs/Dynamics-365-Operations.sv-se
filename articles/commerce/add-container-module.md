@@ -3,7 +3,7 @@ title: Behållaremodul
 description: Det här avsnittet handlar om behållarmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c7d607047aab92144932b4b59db050a588d6483d
-ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
+ms.openlocfilehash: 9bb2c7d56184d009492b4aa839a3546160ad342f
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3417356"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817412"
 ---
 # <a name="container-module"></a>Behållaremodul
 
@@ -123,11 +123,11 @@ Om du vill lägga till en modul för behållarspelare på en ny sida och ställa
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Startpaket – översikt](starter-kit-overview.md)
+[Översikt över modulbibliotek](starter-kit-overview.md)
 
-[Dragspelsmodulen](add-accordion.md)
+[Dragspelsmodul](add-accordion.md)
 
-[Flikmodulen](add-tab.md)
+[Flikmodul](add-tab.md)
 
 [Karusellmodul](add-carousel.md)
 

@@ -16,14 +16,15 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 44c8f3ed76698bb4b70d767d9c8881024699552f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: acf7df09b467e0b0b0463946be018ff199d7153e
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203467"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834270"
 ---
 # <a name="vendor-rebates"></a>Leverantörsrabatter
+
 [!include [banner](../includes/banner.md)]
 
 Leverantörsrabatter hjälper förgöra anspråk på intjänade rabatter.
@@ -50,6 +51,7 @@ Personer på dessa positioner söker metoder att uppnå olika mål. Nedan följe
 - Ha en kvantifierad grund för pågående och framtida rabattförhandlingar med leverantörer.
 
 ## <a name="review-details-of-a-vendor-rebate-agreement"></a>Granska informationen i ett rabattavtal för leverantörer
+
 Ett rabattavtal för leverantörer är ett kontrakt med en leverantör som anger de förhandlade villkor enligt vilka företaget berättigas till monetär ersättning i utbyte mot att uppnå förinställda inköpsmål. Rabattavtal för leverantörer registreras på sidan **Rabattavtal**.
 
 För att öppna sidan **Rabattavtal för leverantörer** markerar du **Anskaffning och inköp** &gt; **Leverantörsrabatter** &gt; **Rabattavtal**.
@@ -60,7 +62,9 @@ På sidan **Rabattavtal för leverantörer** på sidan kan du visa information o
 
 Avtalets rubrik anger de allmänna villkor som kvalificerar ett företag för rabatter. Rubrikinformationen anger att en leverantör beviljar en rabatt när en viss produkt köps i en viss kvantitet. I rubriken kan du också ange måttenhet och beräkningsdatumets typ.
 
-- På fliken **Allmänt**, i fältet **Rabattalternativ för måttenhet** kan du definiera huruvida en måttenhet bör vara ett villkor för att inköpsorderraden ska vara kvalificerad för ett rabattanspråk. 
+- På fliken **Översikt** om du har rader med **Artikelkod** angett till *register* för att ange artikeln, gäller avtalet för den specifika artikeln. Om du har rader med **artikelkod** inställd på *grupp* eller *alla* för att ange artiklarna, kommer rabattavtal för leverantörer att bearbetas individuellt per artikel kvalificering för artikelkoden, inte över alla artiklar som är kvalificerade för artikelkoden.
+
+- På fliken **Allmänt**, i fältet **Rabattalternativ för måttenhet** kan du definiera huruvida en måttenhet bör vara ett villkor för att inköpsorderraden ska vara kvalificerad för ett rabattanspråk.
 
     - **Konvertera** – En inköpsorderrad är berättigad till en leverantörsrabatt i enlighet med rabattavtalet. Du får en rabatt oavsett den måttenhet som används på raden.
     - **Exakt matchning** – För att en inköpsrad ska bli berättigad för rabatt måste den ha samma måttenhet som anges i avtalet.
@@ -97,6 +101,7 @@ Du kan ange rabattavtalet för leverantör mer detaljerat på avtalsraderna.
 När inköpsorder skickas till en leverantör som företaget har ett rabattavtal med, identifierar programmet eventuella framtida utbetalningar av leverantörskrediter. Om inköpsordern berättigar till rabatt, genereras ett rabattanspråk för varje orderrad så fort en inköpsfaktura har bokförts. Detta är en automatisk process. Du kan senare granska de förväntade rabatterna och se effekten av dessa rabatter på produktens kostnad och vinstmarginal.
 
 ### <a name="view-details-of-rebates-that-are-applied-to-a-purchase-order-line-per-the-vendor-rebate-agreement"></a>Visa information om rabatter som tillämpas på en inköpsorderrad i enlighet med rabattavtalet för leverantör
+
 1. På sidan **Inköpsorder** markerar du en orderrad och sedan **Inköpsorderrad** &gt; **Visa** &gt; **Prisinformation**.
 2. På sidan **Prisinformation** markerar du snabbfliken **Rabatter**.
 
@@ -106,15 +111,18 @@ Rabattinformationen visas också i fältet **Leverantörsrabatt** i avsnittet **
 > På sidan **Anskaffnings- och inköpsparametrar**, på fliken **Priser**, kontrollera att alternativet **Aktivera prisinformation** har engetts som **Ja**. Om alternativet har angetts som **Nej** kan du inte visa rabatterna.
 
 ## <a name="review-and-approve-claims"></a>Granska och godkänn anspråk
+
 Rabattanspråk som genereras representerar framtida betalningar som kan förväntas från leverantören. Innan en kreditfaktura utfärdas till leverantören, vill avtalets ägare vanligtvis granska anspråken och godkänna dem. Tänk emellertid på att statusen för ett anspråk avgör huruvida anspråket är redo att gå igenom godkännandeprocessen.
 
 ### <a name="the-status-of-claims-and-the-effect-on-the-approval-process"></a>Status för anspråk och effekten på godkännandeprocessen
+
 När ett anspråk genereras ändras dess status till **Ska beräknas** om rabatten beviljas på ackumulerad basis, eller **Beräknad** om rabatten ges per faktura. Om statusen för ett anspråk är **Ska beräknas** måste anspråket genomgå en beräkningsprocess som hanteras med hjälp av funktionen Ackumulera. Endast anspråk med statusen **Beräknad** kan ingå i godkännandeprocessen.
 
 > [!NOTE]
 > Om alternativet **Godkännande krävs** i ett avtal om leverantörsrabattavtal har angetts som **Nej**, kommer alla anspråk som skapas att få statusen **Godkänd**. Godkännandet är obligatorisk för anspråk som beviljas på ackumulerad basis.
 
 ### <a name="approve-claims-and-view-postings-and-invoice-details"></a>Godkänn anspråk och visa information om bokföringsposter och fakturor
+
 När ett anspråk har godkänts kan det bearbetas av Leverantörsreskontra (A/P). En kreditnota (leverantörsfaktur) för rabattanspråkets belopp genereras automatiskt. Krediten kan sedan läggas till i leverantörssaldot, och A/P-teamet kan inkludera den i den kvittningsprocessen.
 
 1. Markera **Anskaffning och inköp** &gt; **Leverantörsrabatter** &gt; **Rabattanspråk** för att öppna ett rabattanspråk.
@@ -153,6 +161,7 @@ När ett anspråk har godkänts kan det bearbetas av Leverantörsreskontra (A/P)
 9. På sidan **Alla leverantörer** väljer du den leverantör som du erhåller en rabatt från, och i åtgärdsfönstret markerar du **Transaktioner**. Hitta raden för fakturan. Rabattbeloppet har nu lagts till i leverantörssaldot.
 
 ## <a name="summary"></a>Sammanfattning
+
 Processen för att hantera leverantörsrabatter omfattar flera manuella spårningsuppgifter som ofta är omständliga. Genom att automatisera dessa uppgifter kan hanteringsfunktionen för leverantörsrabatter hjälpa dig att ta dig igenom följande processer:
 
 - Generera korrekta rabattanspråk
