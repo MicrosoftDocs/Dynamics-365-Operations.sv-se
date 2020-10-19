@@ -70,6 +70,8 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.15 (januari 2021)
+                      href: get-started/whats-new-changed-10-0-15.md
                     - name: Finance 10.0.14 (november 2020)
                       href: get-started/whats-new-changed-10-0-14.md
                     - name: Finance 10.0.13 (oktober 2020)
@@ -194,6 +196,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/finance/toc.json
                 - name: Flytta LCS-implementeringsprojekt till olika Azure AD-klientorganisationer
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
+                - name: Flytta LCS implementeringsprojekt från lokalt till molnet
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/finance/toc.json
                 - name: Flera LCS-projekt och produktionsmiljöer i en Azure AD-klientorganisation
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json
         - name: Leverantörsreskontra
@@ -224,8 +228,18 @@
               items:
                 - name: Fakturamatchning för leverantörsreskontra – översikt
                   href: accounts-payable/accounts-payable-invoice-matching.md
-                - name: Ställ in validering av fakturamatchning för leverantörsreskontra
+                - name: Ställa in validering av fakturamatchning för leverantörsreskontra
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+            - name: Automation av leverantörsfaktura
+              items:
+                - name: Automatiserade processer för leverantörsfakturering – översikt
+                  href: accounts-payable/auto-vendr-invc-process.md
+                - name: Konfigurera alternativ för automatisering av leverantörsfakturor
+                  href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: Skicka fakturor till arbetsflödessystemet och matcha produktinleveransrader
+                  href: accounts-payable/submit-invoice-workflow-automatically.md
+                - name: Visa resultat från automatisering av leverantörsfakturor
+                  href: accounts-payable/view-automated-vendor-invoice.md
             - name: Redovisningsfördelningar och poster i reskontrajournal för leverantörsfakturor
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Fakturamatchning och koncerninterna inköpsorder
@@ -258,7 +272,7 @@
               href: accounts-payable/mobile-invoice-approvals.md
             - name: Arbetsyta för leverantörssamarbetsfakturering
               href: accounts-payable/vendor-portal-invoicing-workspace.md
-            - name: Automation av leverantörsfaktura
+            - name: Fakturaautomatisering för skannade dokument
               href: accounts-payable/vendor-invoice-automation.md
             - name: Kontraktshantering med mäklare
               href: accounts-payable/broker-contract.md
@@ -450,6 +464,8 @@
               href: accounts-receivable/tasks/process-collection-letters.md
             - name: Ställ in och generera åldersfördelningsinformation för kundreskontra
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Åldersfördelningsrapport för kunder
+              href: accounts-receivable/customer-aging.md
             - name: Skapa en avskrivningsjournal för en kund
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Avancerad noteringshantering
@@ -792,9 +808,13 @@
                   href: fixed-assets/straight-line-life-remaining-depreciation.md
                 - name: Linjär avskrivning av tjänstelivstid
                   href: fixed-assets/straight-line-service-life-depreciation.md
+        - name: Leasing av tillgångar
+          items:
+            - name: Kom i gång med tillgångsleasing
+              href: asset-leasing/asset-leasing-quick-start.md
         - name: Redovisning
           items:
-            - name: Huvudbok – översikt
+            - name: Redovisning – översikt
               href: general-ledger/general-ledger.md
             - name: Konton
               items:
@@ -1882,9 +1902,9 @@
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
                 - name: 'GST (moms), Indien'
                   items:
-                    - name: Indien GST (moms) – översikt
+                    - name: 'GST (moms), Indien – översikt'
                       href: localizations/apac-ind-gst.md
-                    - name: Nyheter eller ändringar för GST-lokalisering (moms) för APAC Indien
+                    - name: Nyheter eller ändringar för GST-lokalisering (moms) för Indien
                       items:
                         - name: Nyheter och ändringar i 10.0.0
                           href: localizations/apac-ind-news-letter-10-0-00.md
@@ -1912,6 +1932,8 @@
                           href: localizations/apac-ind-news-letter-10-0-11.md
                         - name: Nyheter och ändringar i 10.0.12
                           href: localizations/apac-ind-news-letter-10-0-12.md
+                        - name: Nyheter och ändringar i 10.0.13
+                          href: localizations/ind-news-letter-10-0-13.md
                     - name: 'Referensgrupper för GST (moms), Indien'
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST (moms)‑integration för kassaapparater
@@ -2022,6 +2044,8 @@
                           href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
                     - name: Lagertransaktion
                       items:
+                        - name: Lageröverföringsorder
+                          href: localizations/apac-ind-stock-transfer.md
                         - name: Lageröverföringsorder som har moms på överföringspriset
                           href: localizations/apac-ind-GST-stock-transfer-transactions.md
                     - name: Kundbetalningstransaktioner
@@ -2068,16 +2092,14 @@
                       href: general-ledger/tax-engine-applicability.md
                     - name: Skapa momskomponenter
                       href: localizations/tax-engine-create-tax-component.md
-                    - name: Integrering av skattemotor
+                    - name: Integration av skattemotor
                       href: general-ledger/tax-engine-integration.md
-                    - name: Bygg ut skattemotorn
+                    - name: Bygga ut skattemotorn
                       href: general-ledger/extend-tax-engine-configurations.md
                     - name: Felsöka GTE
                       href: localizations/tax-engine-trouble-shooting.md
                 - name: Vanliga frågor och svar om tröskelvärden för moms
                   href: localizations/apac-ind-tax-thresholds.md
-                - name: Lageröverföringar
-                  href: localizations/apac-ind-stock-transfer.md
             - name: Italien
               items:
                 - name: Italien – översikt

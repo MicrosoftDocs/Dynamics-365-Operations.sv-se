@@ -3,7 +3,7 @@ title: Konsekvenskontroll av butikstransaktion
 description: I det här avsnittet beskrivs funktionen för konsekvenskontroll av transaktioner i Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 10/07/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: eb5c7389ba29d50232f9321e40bccceecd5f5fc6
-ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
+ms.openlocfilehash: 3c7ca41b9e8a4c3127c98c756348959530a87996
+ms.sourcegitcommit: 1631296acce118c51c182c989e384e4863b03f10
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3265628"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3968782"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsekvenskontroll av butikstransaktion
 
@@ -47,12 +47,12 @@ Batchprocessen **Validera butikstransaktioner** kontrollerar att butikens handel
 
 - **Kundkonto** – Validerar att kundkontot i transaktionsregistren finns i huvudkontorets kundmall.
 - **Radräkning** – Validerar att antalet rader, som anges i transaktionshuvudregistret, motsvarar antalet rader i försäljningstransaktionsregistren.
-- **Pris inklusive moms** – Validerar att parametern **Pris inklusive moms** är konsekvent på transaktionsraderna.
-- **Betalningsbelopp** – Validerar att betalningsposterna stämmer med betalningsbelopp i huvudet.
-- **Bruttobelopp** – Validerar att bruttobeloppet i huvudet är lika med summan av nettobeloppen på raderna plus momsbeloppet.
-- **Nettobelopp** – Validerar att nettobeloppet i huvudet är lika med summan av nettobeloppen på raderna.
-- **Under-/överbetalning** – Validerar att skillnaden mellan bruttobeloppet i huvudet och betalningsbeloppet inte överskrider den maximala konfigurationen av underbetalning/överbetalning.
-- **Rabattbelopp** – Validerar att rabattbeloppet för rabattregistren och rabattbeloppet i registren för transaktionsrader är konsekventa och att rabattbeloppet i huvudet är lika med summan av rabattbeloppen på raderna.
+- **Pris inklusive moms** – Validerar att parametern **Pris inklusive moms** är konsekvent på alla transaktionsrader och att priset på försäljningsraden är förenligt med konfigurationen av pris inklusive moms och momsbefrielse.
+- **Betalningsbelopp** – Validerar att betalningsposterna stämmer överens med betalningsbeloppet i huvudet, men tar även hänsyn till konfigurationen för öresavrundning i redovisningen.
+- **Bruttobelopp** – Validerar att bruttobeloppet i huvudet är summan av nettobeloppen på raderna plus momsbeloppet, men tar också hänsyn till konfigurationen för öresavrundning i redovisningen.
+- **Nettobelopp** – Validerar att nettobeloppet i huvudet är summan av nettobeloppen på raderna, men tar också hänsyn till konfigurationen för öresavrundning i redovisningen.
+- **Under-/överbetalning** – Validerar att skillnaden mellan bruttobeloppet i huvudet och betalningsbeloppet inte överskrider den maximala konfigurationen av underbetalning/överbetalning, men tar också hänsyn till konfigurationen för öresavrundning i redovisningen.
+- **Rabattbelopp** – Validerar att rabattbeloppet för rabattregistren och rabattbeloppet i registren för butikstransaktionsrader är konsekventa och att rabattbeloppet i huvudet är lika med summan av rabattbeloppen på raderna, men tar också hänsyn till konfigurationen för öresavrundning i redovisningen.
 - **Radrabatt** – Validerar att radrabatten på transaktionsraden är lika med summan av alla rader i rabattregistren som motsvarar transaktionsraden.
 - **Presentkortsartikel** – Det går inte att returnera presentkortsartiklar i Commerce. Saldot på ett presentkort kan dock betalas ut kontant. En presentkortsartikel som bearbetas som en returrad i stället för en utbetalningsrad gör att utdragsbokföringsprocessen misslyckas. Valideringsprocessen för presentkortsartiklar garanterar att de enda returraderna för presentkortsartiklar i transaktionsregistren utgörs av rader för kontantutbetalning av presentkort.
 - **Negativt pris** – Validerar att det inte finns några negativa pristransaktionsrader.
@@ -61,8 +61,9 @@ Batchprocessen **Validera butikstransaktioner** kontrollerar att butikens handel
 - **Serienummer** – Validerar att serienumret finns på transaktionsraderna för artiklar som kontrolleras med serienummer.
 - **Förtecken** – Validerar att förtecknet på kvantiteten och nettobeloppet är detsamma i alla transaktionsrader.
 - **Affärsdatum** – Validerar att de finansiella perioderna för alla affärsdatum för transaktionerna är öppna.
+- **Avgifter** – Validerar att avgiftsbeloppen i huvudet och på raderna överensstämmer med konfigurationen av pris, inklusive moms och momsbefrielse.
 
-## <a name="set-up-the-consistency-checker"></a>Ställ in konsekvenskontrollen
+## <a name="set-up-the-consistency-checker"></a>Ställa in konsekvenskontrollen
 
 Konfigurera batchprocessen "Validera butikstransaktioner" i **Retail och Commerce \> Retail och Commerce IT \> Kassabokföring** för periodiska körningar. Batchjobbet kan schemaläggas utifrån butikens organisationshierarki, vilket påminner om hur processerna "Beräkna utdrag i batch" och "Bokför utdrag i batch" konfigureras. Vi rekommenderar att du konfigurerar den här batchprocessen så att den körs flera gånger under en dag och schemalägga den så att den körs i slutet av varje P-jobbskörning.
 

@@ -14,6 +14,8 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Platform updates
                   href: get-started/whats-new-home-page.md
+                - name: Platform updates för 10.0.15 (januari 2021)
+                  href: get-started/whats-new-platform-updates-10-0-15.md
                 - name: Platform updates för 10.0.14 (november 2020)
                   href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: Platform updates för 10.0.13 (oktober 2020)
@@ -236,11 +238,13 @@
                                   href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                                 - name: Allmän felsökning
                                   href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Vanliga frågor om dubbelriktad skrivning
+                          href: data-entities/dual-write/dual-write-faq.md
                     - name: Integration med Power Platform
                       items:
                         - name: Konfigurera ett scenario för potentiell kund till pengar
                           items:
-                            - name: Potentiell kund till kontanter
+                            - name: Potentiell kund till pengar
                               href: ../../supply-chain/sales-marketing/prospect-to-cash.md
                             - name: Synkronisera konton direkt från Sales till kunder i Finance and Operations
                               href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
@@ -386,6 +390,8 @@
           items:
             - name: Översikt
               href: database/dbmovement-operations.md
+            - name: Verktyg för databasflytt
+              href: database/database-movement-toolkit.md
             - name: Snabbstartsguider
               items:
                 - name: Uppdatera databas
@@ -1564,6 +1570,8 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012-uppgradering – Checklista för föruppgradering för datauppgradering
                   href: migration-upgrade/prepare-data-upgrade.md
+                - name: AX 2012-uppgradering – Datauppgradering i sandbox-miljöer med dacpac-process
+                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: AX 2012-uppgradering – Datauppgradering i sandbox-miljöer
                   href: migration-upgrade/upgrade-data-sandbox.md
                 - name: AX 2012-uppgradering – Lokala miljöer

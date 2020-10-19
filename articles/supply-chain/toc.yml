@@ -70,12 +70,12 @@
                   items:
                     - name: Nyheter eller ändringar av startsidan till Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.15 (december 2020)
+                      href: get-started/whats-new-scm-10-0-15.md
                     - name: Supply Chain Management 10.0.14 (november 2020)
                       href: get-started/whats-new-scm-10-0-14.md
                     - name: Supply Chain Management 10.0.13 (oktober 2020)
                       href: get-started/whats-new-scm-10-0-13.md
-                    - name: Supply Chain Management 10.0.12 (augusti 2020)
-                      href: get-started/whats-new-scm-10-0-12.md
                 - name: Borttagna eller utfasade funktioner
                   items:
                     - name: Borttagna eller utfasade funktioner i Dynamics 365 Supply Chain Management
@@ -194,6 +194,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Flytta LCS-implementeringsprojekt till olika Azure AD-klientorganisationer
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Flytta LCS implementeringsprojekt från lokalt till molnet
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Flera LCS-projekt och produktionsmiljöer i en Azure AD-klientorganisation
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
         - name: Globalisering
@@ -202,6 +204,10 @@
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
             - name: Regeluppdateringar
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Indien
+              items:
+                - name: Lageröverföringsorder
+                  href: ../finance/localizations/apac-ind-stock-transfer.md
             - name: Ryssland
               items:
                 - name: Ryssland – översikt
@@ -1407,6 +1413,8 @@
                   href: master-planning/supply-chain-calendars-master-planning.md
                 - name: Förbättra huvudplaneringens prestanda
                   href: master-planning/master-planning-performance.md
+                - name: Förbättra schemaläggningsmotorns prestanda
+                  href: master-planning/scheduling-engine-performance.md
                 - name: Huvudplaner och funktioner för flera webbplatser
                   items:
                     - name: Huvudplanering och multisitefunktioner – översikt
@@ -1823,7 +1831,7 @@
                   href: pim/uom-conversion-per-product-variant.md
                 - name: Skapa en frisläppt produkt för ett enskilt företag
                   href: pim/tasks/create-released-product-single-company.md
-                - name: Använda dataentiteter
+                - name: Använda datatabeller
                   href: pim/data-entities.md
                 - name: Produktens livscykeltillstånd
                   items:
@@ -1935,13 +1943,15 @@
                       href: pim/tasks/add-expression-constraint-product-configuration-model.md
                     - name: Lägg till en beräkning i en produktkonfigurationsmodell
                       href: pim/tasks/add-calculation-product-configuration-model.md
-                    - name: Underhåll strukturlista för produktkonfigurationsmodell
+                    - name: Underhålla strukturlista för produktkonfigurationsmodell
                       href: pim/tasks/maintain-bom-product-configuration-model.md
-                    - name: Underhåll ett flöde för en produktmodell
+                    - name: Underhålla ett flöde för en produktmodell
                       href: pim/tasks/maintain-route-product-model.md
-                    - name: Godkänn en produktkonfigurationsmodell
+                    - name: Attributbaserade försäljningspriser för begränsningsbaserad produktkonfiguration
+                      href: pim/attribute-based-product-configurator.md
+                    - name: Godkänna en produktkonfigurationsmodell
                       href: pim/tasks/approve-product-configuration-model.md
-                    - name: Överför data för produktmodeller
+                    - name: Överföra data för produktmodeller
                       href: pim/tasks/transfer-data-product-models.md
         - name: Produktionskontroll
           items:
@@ -2035,7 +2045,9 @@
                       href: production-control/config-job-card-device.md
                     - name: Rapportera som färdig från jobbkortenhet
                       href: production-control/report-finished-job-device.md
-                    - name: Återför produktionsorderstatus
+                    - name: Tillhandahålla guider för mixad verklighet för arbetare i produktion
+                      href: production-control/instruction-guides-in-production-overview.md
+                    - name: Återföra produktionsorderstatus
                       href: production-control/reverse-production-order-status.md
                     - name: Insyn i materialundantag
                       href: production-control/improved-visibility-into-material-exceptions.md
@@ -2649,6 +2661,10 @@
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Aktivera utskrift av ID-nummer
                       href: warehousing/tasks/license-plate-label-printing.md
+                    - name: Skapa överföringsorder från distributionslagerappen
+                      href: warehousing/create-transfer-order-from-warehouse-app.md
+                    - name: Händelsebearbetning i distributionslagerappen
+                      href: warehousing/warehouse-app-events.md
                     - name: Enhetsplockningsbekräftelse
                       href: warehousing/piece-picking-confirmation.md
                     - name: Förpackningsmaterial och avgifter
@@ -2845,6 +2861,8 @@
                       href: warehousing/pick-oldest-batch.md
                     - name: Processguideram
                       href: warehousing/process-guide-framework.md
+                    - name: Felsöka anslutningsproblem i distributionslagerappen
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Uppgradering och migrering
                   items:
                     - name: Uppgradera processer för distributionslagerhantering från Microsoft Dynamics AX 2012 till Finance and Operations
