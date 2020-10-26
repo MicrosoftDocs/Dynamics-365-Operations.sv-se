@@ -13,45 +13,45 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e1832158112a203c29eee32163674c9e1475c336
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 52721d948554d4853f9e1d4dec45e45e619a4829
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209661"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3985691"
 ---
-# <a name="create-a-plan-for-a-site"></a><span data-ttu-id="94305-103">Skapa en plan för en plats</span><span class="sxs-lookup"><span data-stu-id="94305-103">Create a plan for a site</span></span>
+# <a name="create-a-plan-for-a-site"></a><span data-ttu-id="2902d-103">Skapa en plan för en plats</span><span class="sxs-lookup"><span data-stu-id="2902d-103">Create a plan for a site</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="94305-104">Produktionstadsplaneraren beräknar material- och kapacitetsbehov för att producera en specifik artikel.</span><span class="sxs-lookup"><span data-stu-id="94305-104">The production planner calculates the material and capacity requirements for the production of a specific item.</span></span> <span data-ttu-id="94305-105">När anskaffningsförslagen har skapats, hittar han order på siten för vilken han planerar och bekräftar order med start från de mest brådskande.</span><span class="sxs-lookup"><span data-stu-id="94305-105">After the sourcing suggestions are created, he finds the orders at the site for which he is planning and firms the orders, starting from the urgent ones.</span></span> <span data-ttu-id="94305-106">De mest brådskande order är de som måste bekräftas på det aktuella datumet.</span><span class="sxs-lookup"><span data-stu-id="94305-106">The most urgent orders are the ones that need to be firmed on the current date.</span></span> <span data-ttu-id="94305-107">Använd demonstrationdataföretaget USMF för att utföra dessa uppgifter.</span><span class="sxs-lookup"><span data-stu-id="94305-107">Use the demo data company USMF to perform these tasks.</span></span>
+<span data-ttu-id="2902d-104">Produktionstadsplaneraren beräknar material- och kapacitetsbehov för att producera en specifik artikel.</span><span class="sxs-lookup"><span data-stu-id="2902d-104">The production planner calculates the material and capacity requirements for the production of a specific item.</span></span> <span data-ttu-id="2902d-105">När anskaffningsförslagen har skapats, hittar han order på siten för vilken han planerar och bekräftar order med start från de mest brådskande.</span><span class="sxs-lookup"><span data-stu-id="2902d-105">After the sourcing suggestions are created, he finds the orders at the site for which he is planning and firms the orders, starting from the urgent ones.</span></span> <span data-ttu-id="2902d-106">De mest brådskande order är de som måste bekräftas på det aktuella datumet.</span><span class="sxs-lookup"><span data-stu-id="2902d-106">The most urgent orders are the ones that need to be firmed on the current date.</span></span> <span data-ttu-id="2902d-107">Använd demonstrationdataföretaget USMF för att utföra dessa uppgifter.</span><span class="sxs-lookup"><span data-stu-id="2902d-107">Use the demo data company USMF to perform these tasks.</span></span>
 
 
-## <a name="create-a-materials-and-capacity-plan-for-an-item"></a><span data-ttu-id="94305-108">Skapa material och kapacitetsplan för en artikel</span><span class="sxs-lookup"><span data-stu-id="94305-108">Create a materials and capacity plan for an item</span></span>
-1. <span data-ttu-id="94305-109">Klcka på Huvudplanering.</span><span class="sxs-lookup"><span data-stu-id="94305-109">Click Master planning.</span></span>
-    * <span data-ttu-id="94305-110">Du måste navigera till Standardinstrumentpanelen.</span><span class="sxs-lookup"><span data-stu-id="94305-110">You need to navigate to the default Dashboard.</span></span>  
-2. <span data-ttu-id="94305-111">Klicka på Kör.</span><span class="sxs-lookup"><span data-stu-id="94305-111">Click Run.</span></span>
-3. <span data-ttu-id="94305-112">Expandera avsnittet Poster som ska ingå.</span><span class="sxs-lookup"><span data-stu-id="94305-112">Expand the Records to include section.</span></span>
-4. <span data-ttu-id="94305-113">Klicka på Filter.</span><span class="sxs-lookup"><span data-stu-id="94305-113">Click Filter.</span></span>
-5. <span data-ttu-id="94305-114">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="94305-114">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="94305-115">Ange ett värde i fältet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="94305-115">In the Criteria field, type a value.</span></span>
-    * <span data-ttu-id="94305-116">Exempel: D0001</span><span class="sxs-lookup"><span data-stu-id="94305-116">Example: D0001</span></span>  
-7. <span data-ttu-id="94305-117">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="94305-117">Click OK.</span></span>
-8. <span data-ttu-id="94305-118">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="94305-118">Click OK.</span></span>
-    * <span data-ttu-id="94305-119">Detta kan ta några minuter.</span><span class="sxs-lookup"><span data-stu-id="94305-119">This may take a few minutes.</span></span>  
-9. <span data-ttu-id="94305-120">Uppdatera sidan.</span><span class="sxs-lookup"><span data-stu-id="94305-120">Refresh the page.</span></span>
+## <a name="create-a-materials-and-capacity-plan-for-an-item"></a><span data-ttu-id="2902d-108">Skapa material och kapacitetsplan för en artikel</span><span class="sxs-lookup"><span data-stu-id="2902d-108">Create a materials and capacity plan for an item</span></span>
+1. <span data-ttu-id="2902d-109">Klcka på Huvudplanering.</span><span class="sxs-lookup"><span data-stu-id="2902d-109">Click Master planning.</span></span>
+    * <span data-ttu-id="2902d-110">Du måste navigera till Standardinstrumentpanelen.</span><span class="sxs-lookup"><span data-stu-id="2902d-110">You need to navigate to the default Dashboard.</span></span>  
+2. <span data-ttu-id="2902d-111">Klicka på Kör.</span><span class="sxs-lookup"><span data-stu-id="2902d-111">Click Run.</span></span>
+3. <span data-ttu-id="2902d-112">Expandera avsnittet Poster som ska ingå.</span><span class="sxs-lookup"><span data-stu-id="2902d-112">Expand the Records to include section.</span></span>
+4. <span data-ttu-id="2902d-113">Klicka på Filter.</span><span class="sxs-lookup"><span data-stu-id="2902d-113">Click Filter.</span></span>
+5. <span data-ttu-id="2902d-114">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="2902d-114">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="2902d-115">Ange ett värde i fältet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="2902d-115">In the Criteria field, type a value.</span></span>
+    * <span data-ttu-id="2902d-116">Exempel: D0001</span><span class="sxs-lookup"><span data-stu-id="2902d-116">Example: D0001</span></span>  
+7. <span data-ttu-id="2902d-117">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="2902d-117">Click OK.</span></span>
+8. <span data-ttu-id="2902d-118">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="2902d-118">Click OK.</span></span>
+    * <span data-ttu-id="2902d-119">Detta kan ta några minuter.</span><span class="sxs-lookup"><span data-stu-id="2902d-119">This may take a few minutes.</span></span>  
+9. <span data-ttu-id="2902d-120">Uppdatera sidan.</span><span class="sxs-lookup"><span data-stu-id="2902d-120">Refresh the page.</span></span>
 
-## <a name="identify-the-urgent-planned-orders-for-the-item"></a><span data-ttu-id="94305-121">Identifiera brådskande planerade order för artikeln</span><span class="sxs-lookup"><span data-stu-id="94305-121">Identify the urgent planned orders for the item</span></span>
-1. <span data-ttu-id="94305-122">Öppna artikelnummerkolumnfiltret.</span><span class="sxs-lookup"><span data-stu-id="94305-122">Open Item number column filter.</span></span>
-2. <span data-ttu-id="94305-123">Använd ett filter för fältet ”artikelnummer”, med värdet ”D0001", med hjälp av filteroperatorn ”börjar med”.</span><span class="sxs-lookup"><span data-stu-id="94305-123">Apply a filter on the "Item number" field, with a value of "D0001", using the "begins with" filter operator.</span></span>
-3. <span data-ttu-id="94305-124">Öppna Kolumnfilter för orderdatum.</span><span class="sxs-lookup"><span data-stu-id="94305-124">Open Order date column filter.</span></span>
-4. <span data-ttu-id="94305-125">Tillämpa ett filter i fältet ”Orderdatum", med ett värde av aktuellt datum med filteroperatorn "Är exakt".</span><span class="sxs-lookup"><span data-stu-id="94305-125">Apply a filter on the "Order date" field, with a value of current date, using the "is exactly" filter operator.</span></span>
+## <a name="identify-the-urgent-planned-orders-for-the-item"></a><span data-ttu-id="2902d-121">Identifiera brådskande planerade order för artikeln</span><span class="sxs-lookup"><span data-stu-id="2902d-121">Identify the urgent planned orders for the item</span></span>
+1. <span data-ttu-id="2902d-122">Öppna artikelnummerkolumnfiltret.</span><span class="sxs-lookup"><span data-stu-id="2902d-122">Open Item number column filter.</span></span>
+2. <span data-ttu-id="2902d-123">Använd ett filter för fältet ”artikelnummer”, med värdet ”D0001", med hjälp av filteroperatorn ”börjar med”.</span><span class="sxs-lookup"><span data-stu-id="2902d-123">Apply a filter on the "Item number" field, with a value of "D0001", using the "begins with" filter operator.</span></span>
+3. <span data-ttu-id="2902d-124">Öppna Kolumnfilter för orderdatum.</span><span class="sxs-lookup"><span data-stu-id="2902d-124">Open Order date column filter.</span></span>
+4. <span data-ttu-id="2902d-125">Tillämpa ett filter i fältet ”Orderdatum", med ett värde av aktuellt datum med filteroperatorn "Är exakt".</span><span class="sxs-lookup"><span data-stu-id="2902d-125">Apply a filter on the "Order date" field, with a value of current date, using the "is exactly" filter operator.</span></span>
 
-## <a name="firm-all-the-urgent-orders-for-the-item"></a><span data-ttu-id="94305-126">Bekräfta alla brådskande planerade order för artikeln</span><span class="sxs-lookup"><span data-stu-id="94305-126">Firm all the urgent orders for the item</span></span>
-1. <span data-ttu-id="94305-127">Markera eller avmarkera alla rader i listan.</span><span class="sxs-lookup"><span data-stu-id="94305-127">In the list, mark or unmark all rows.</span></span>
-2. <span data-ttu-id="94305-128">Klicka på Bekräfta.</span><span class="sxs-lookup"><span data-stu-id="94305-128">Click Firm.</span></span>
-3. <span data-ttu-id="94305-129">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="94305-129">Click OK.</span></span>
+## <a name="firm-all-the-urgent-orders-for-the-item"></a><span data-ttu-id="2902d-126">Bekräfta alla brådskande planerade order för artikeln</span><span class="sxs-lookup"><span data-stu-id="2902d-126">Firm all the urgent orders for the item</span></span>
+1. <span data-ttu-id="2902d-127">Markera eller avmarkera alla rader i listan.</span><span class="sxs-lookup"><span data-stu-id="2902d-127">In the list, mark or unmark all rows.</span></span>
+2. <span data-ttu-id="2902d-128">Klicka på Bekräfta.</span><span class="sxs-lookup"><span data-stu-id="2902d-128">Click Firm.</span></span>
+3. <span data-ttu-id="2902d-129">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="2902d-129">Click OK.</span></span>
 

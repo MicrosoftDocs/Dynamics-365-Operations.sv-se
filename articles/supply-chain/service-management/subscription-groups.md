@@ -15,42 +15,42 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 31beaf76b9e710807974bde7ec7dd53561e2ab28
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 165c1c89af52aac0b540cb6aee577d717d12b0f6
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206690"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979742"
 ---
-# <a name="subscription-groups"></a><span data-ttu-id="9e1ef-103">Abonnemangsgrupper</span><span class="sxs-lookup"><span data-stu-id="9e1ef-103">Subscription groups</span></span>    
+# <a name="subscription-groups"></a><span data-ttu-id="b3d46-103">Abonnemangsgrupper</span><span class="sxs-lookup"><span data-stu-id="b3d46-103">Subscription groups</span></span>    
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="9e1ef-104">Följande information, som anges i abonnemangsgruppen, är gemensam för abonnemangen:</span><span class="sxs-lookup"><span data-stu-id="9e1ef-104">Subscriptions share the following information, which is defined for the subscription group:</span></span>
+<span data-ttu-id="b3d46-104">Följande information, som anges i abonnemangsgruppen, är gemensam för abonnemangen:</span><span class="sxs-lookup"><span data-stu-id="b3d46-104">Subscriptions share the following information, which is defined for the subscription group:</span></span>
 
-  - <span data-ttu-id="9e1ef-105">Eventuell nummerseriekod för abonnemanget.</span><span class="sxs-lookup"><span data-stu-id="9e1ef-105">Number sequence code for the subscription, if any.</span></span>
+  - <span data-ttu-id="b3d46-105">Eventuell nummerseriekod för abonnemanget.</span><span class="sxs-lookup"><span data-stu-id="b3d46-105">Number sequence code for the subscription, if any.</span></span>
 
-  - <span data-ttu-id="9e1ef-106">Den faktureringsperiod för vilken abonnemangstransaktioner skapas.</span><span class="sxs-lookup"><span data-stu-id="9e1ef-106">The invoicing period for which subscription transactions are created.</span></span> <span data-ttu-id="9e1ef-107">Om till exempel periodkoden **Fakturering** i formuläret **Abonnemangsgrupper** är inställd på **Kvartalsvis**, kommer transaktionerna för alla abonnemang som är kopplade till abonnemangsgruppen att skapas varje kvartal.</span><span class="sxs-lookup"><span data-stu-id="9e1ef-107">For example, if the **Invoicing** period code in the **Subscription groups** form is set to **Quarterly**, transactions for all subscriptions that are attached to the subscription group are created on a quarterly basis.</span></span>
+  - <span data-ttu-id="b3d46-106">Den faktureringsperiod för vilken abonnemangstransaktioner skapas.</span><span class="sxs-lookup"><span data-stu-id="b3d46-106">The invoicing period for which subscription transactions are created.</span></span> <span data-ttu-id="b3d46-107">Om till exempel periodkoden **Fakturering** i formuläret **Abonnemangsgrupper** är inställd på **Kvartalsvis**, kommer transaktionerna för alla abonnemang som är kopplade till abonnemangsgruppen att skapas varje kvartal.</span><span class="sxs-lookup"><span data-stu-id="b3d46-107">For example, if the **Invoicing** period code in the **Subscription groups** form is set to **Quarterly**, transactions for all subscriptions that are attached to the subscription group are created on a quarterly basis.</span></span>
 
-  - <span data-ttu-id="9e1ef-108">Hur ofta abonnemanget ska periodiseras.</span><span class="sxs-lookup"><span data-stu-id="9e1ef-108">How frequently the subscription is to be accrued, if at all.</span></span>
+  - <span data-ttu-id="b3d46-108">Hur ofta abonnemanget ska periodiseras.</span><span class="sxs-lookup"><span data-stu-id="b3d46-108">How frequently the subscription is to be accrued, if at all.</span></span>
 
-<span data-ttu-id="9e1ef-109">Du kan även slutföra följande uppgifter för alla abonnemang som är anslutna till abonnemangsgruppen:</span><span class="sxs-lookup"><span data-stu-id="9e1ef-109">You can also complete the following tasks for all subscriptions that are attached to the subscription group:</span></span>
+<span data-ttu-id="b3d46-109">Du kan även slutföra följande uppgifter för alla abonnemang som är anslutna till abonnemangsgruppen:</span><span class="sxs-lookup"><span data-stu-id="b3d46-109">You can also complete the following tasks for all subscriptions that are attached to the subscription group:</span></span>
 
-  - <span data-ttu-id="9e1ef-110">Skapa abonnemangstransaktioner.</span><span class="sxs-lookup"><span data-stu-id="9e1ef-110">Create subscription transactions.</span></span>
+  - <span data-ttu-id="b3d46-110">Skapa abonnemangstransaktioner.</span><span class="sxs-lookup"><span data-stu-id="b3d46-110">Create subscription transactions.</span></span>
 
-  - <span data-ttu-id="9e1ef-111">Uppdatera grundpris eller index för abonnemangen.</span><span class="sxs-lookup"><span data-stu-id="9e1ef-111">Update the base price or the index for the subscriptions.</span></span>
+  - <span data-ttu-id="b3d46-111">Uppdatera grundpris eller index för abonnemangen.</span><span class="sxs-lookup"><span data-stu-id="b3d46-111">Update the base price or the index for the subscriptions.</span></span>
 
-  - <span data-ttu-id="9e1ef-112">Bokföra upplupna intäkter för abonnemangstransaktioner.</span><span class="sxs-lookup"><span data-stu-id="9e1ef-112">Post accrued revenue for subscription transactions.</span></span>
+  - <span data-ttu-id="b3d46-112">Bokföra upplupna intäkter för abonnemangstransaktioner.</span><span class="sxs-lookup"><span data-stu-id="b3d46-112">Post accrued revenue for subscription transactions.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="9e1ef-113">Se även</span><span class="sxs-lookup"><span data-stu-id="9e1ef-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b3d46-113">Se även</span><span class="sxs-lookup"><span data-stu-id="b3d46-113">See also</span></span>
 
-<span data-ttu-id="9e1ef-114">[Abonnemangsgrupper (formulär)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="9e1ef-114">[Subscription groups (form)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))</span></span>
+<span data-ttu-id="b3d46-114">[Abonnemangsgrupper (formulär)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="b3d46-114">[Subscription groups (form)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))</span></span>
 
-[<span data-ttu-id="9e1ef-115">Ställ in abonnemangsgrupper</span><span class="sxs-lookup"><span data-stu-id="9e1ef-115">Set up subscription groups</span></span>](set-up-subscription-groups.md)
+[<span data-ttu-id="b3d46-115">Ställ in abonnemangsgrupper</span><span class="sxs-lookup"><span data-stu-id="b3d46-115">Set up subscription groups</span></span>](set-up-subscription-groups.md)
 
   
 
