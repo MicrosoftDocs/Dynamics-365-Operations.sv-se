@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 671caf1feeb7ac9e7d5a166c5de12540ab9b9792
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: b3e3299388190f03e761591a0c23164b705db9e8
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818360"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961668"
 ---
 # <a name="work-with-fragments"></a>Arbeta med fragment 
 
@@ -61,8 +61,8 @@ Du kan antingen skapa ett nytt fragment eller spara en befintlig modul som ett f
 Om du vill konvertera en tidigare konfigurerad modul till ett återanvändbart fragment följer du stegen nedan.
 
 1. Öppna en sida eller mall som innehåller modulen som du vill konvertera till ett fragment.
-1. Markera den tidigare konfigurerade modulen i dispositionsrutan till vänster eller direkt i huvudarbetsytan.
-1. Markera tre punkter (**...**) bredvid modulens namn i antingen dispositionsfönstret eller i den markerade modulens verktygsfält på arbetsytan. 
+1. Markera den tidigare konfigurerade modulen i dispositionsrutan till vänster eller direkt i visuell sidskapare.
+1. Markera tre punkter (**...**) bredvid modulens namn i antingen dispositionsfönstret eller i den markerade modulens verktygsfält i visuell sidskapare. 
 1. Välj **dela som sidfragment**. 
 1. I dialogrutan **Spara som sidfragment** anger du namnet för fragmentet.
 1. Välj **OK** om du vill spara modulens konfiguration som ett fragment som kan läggas till på andra sidor.
@@ -94,8 +94,8 @@ I följande procedurer beskrivs hur du lägger till, tar bort och redigerar frag
 
 Om du vill lägga till ett fragment till en sida gör du följande.
 
-1. I dispositionsfönstret till vänster eller direkt i huvudarbetsytan, välj en behållare eller fack som underordnade moduler kan läggas till.
-1. Välj tre punkter (**...**) bredvid namnet på behållaren eller platsen.  Om du vill kan du även välja plustecknet (**+**) om du använder huvudarbetsytan.  
+1. I dispositionsfönstret till vänster eller direkt i visuell sidskapare, välj en behållare eller fack som underordnade moduler kan läggas till.
+1. Välj tre punkter (**...**) bredvid namnet på behållaren eller platsen.  Om du vill kan du även välja plustecknet (**+**) om du använder visuell sidskapare.  
 1. Välj **Lägg till fragment**.
 
     ![En skärmbild av hur man lägger till ett befintligt fragment på en plats eller en behållare](./media/add-fragment.png)
@@ -115,7 +115,7 @@ Om du vill lägga till ett fragment till en sida gör du följande.
 
 För att ta bort ett fragment från en plats eller behållare på en sida, följ dessa steg.
 
-1. I dispositionsrutan till vänster, välj ellipsknappen (**...**) bredvid namnet på det fragment som du vill ta bort och markera sedan knappen papperskorgen.  Du kan också markera avsnittet på arbetsytan och välja papperskorgssymbolen i fragmentets verktygsfält.
+1. I dispositionsrutan till vänster, välj ellipsknappen (**...**) bredvid namnet på det fragment som du vill ta bort och markera sedan knappen papperskorgen.  Du kan också markera avsnittet i visuell sidskapare och välja papperskorgssymbolen i fragmentets verktygsfält.
 1. När du uppmanas att bekräfta att du vill ta bort fragmentet väljer du **OK**.
 
 > [!NOTE]

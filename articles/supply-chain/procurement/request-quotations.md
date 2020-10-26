@@ -3,7 +3,7 @@ title: Anbudsförfrågningar (RFQ) – översikt
 description: Det här ämnet ger en översikt över anbudsförfrågningar (RFQ). Organisationer utfärdar anbudsförfrågan (RFQ) när de vill ta emot konkurrenskraftiga erbjudanden för de artiklar eller tjänster som de måste köpa.
 author: mkirknel
 manager: tfehr
-ms.date: 07/25/2019
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eedf6b08ef9a4b7f164db60433dd16922a8ec807
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: 4aec0ce03d438f8153b9555a079b6fd97f6a95a5
+ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895630"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973510"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Anbudsförfrågningar (RFQ) – översikt
 
@@ -34,23 +34,21 @@ Du kan också be leverantörerna att ange om det finns några tillfälliga avgif
 
 Anbudsförfråganprocessen består av följande uppgifter:
 
-1.  Skapa och skicka en anbudsförfrågan till en eller flera leverantörer
-
-2.  Ta emot och registrera bud (svar på anbudsförfrågningar)
-
-3.  Överföra bud som du accepterar till en inköpsorder, ett inköpsavtal eller en inköpsrekvisition.
+1. Skapa och skicka en anbudsförfrågan till en eller flera leverantörer
+1. Ta emot och registrera bud (svar på anbudsförfrågningar)
+1. Överföra bud som du accepterar till en inköpsorder, ett inköpsavtal eller en inköpsrekvisition.
 
 Följande bild ger en översikt över ändringarna i anbudsförfrågansprocessen.
 
 [![RFQ-process](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
 
-Du kan skapa ett anbudsförfrågansärende från planerade order, från en inköpsrekvisition eller genom en manuell post. Anbudsförfrågansärendet är det grundläggande dokument som du använder för att skicka en anbudsförfrågan till varje leverantör.+
+Du kan skapa ett anbudsförfrågansärende från planerade order, från en inköpsrekvisition eller genom en manuell post. Anbudsförfrågansärendet är det grundläggande dokument som du använder för att skicka en anbudsförfrågan till varje leverantör.
 
 När du förbereder anbudsförfrågansärende och lägger till leverantörer väljer du **Sskicka** (**Sskicka och publicera** för offentliga sektorn) på anbudsförfrågansärendet. En journal för anbudsförfrågan skapas för varje leverantör som du har skickat anbudsförfrågan till. Du kan konfigurera utskriftsinställningarna för Skicka-åtgärden om du vill skriva ut en rapport för varje leverantör till ett arkiv, eller skicka en rapport varje leverantörs e-postadress. Dessutom kan du använda anbudsförfråganjournalen för varje leverantör för att generera en rapport som du kan skicka eller skicka om till en leverantör senare. Du kan även konfigurera åtgärden Skicka till att skapa ett svarsblad som leverantören kan fylla i.
 
 Nedan beskrivs processen för hantering av anbudsförfrågningar när leverantörsamarbete inte används. Om systemet är inställt för leverantörssamarbete kan leverantörer ange bud direkt i Supply Chain Management. För mer information, se [Leverantörssamarbeten med kunder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) och [Leverantörssamarbeten med externa leverantörer](vendor-collaboration-work-external-vendors.md).
 
-Om du måste ändra en anbudsförfrågan när du har skickat den, kan du skicka anbudsförfrågan igen till leverantörer när du är klar med ändringen av två åtgärder: skapa och färdigställ.+
+Om du måste ändra en anbudsförfrågan när du har skickat den, kan du skicka anbudsförfrågan igen till leverantörer när du är klar med ändringen av två åtgärder: skapa och färdigställ.
 
 När du tar emot bud via e-post kan du hantera desssa bud från sidan **Anbudsförfrågningar**.
 
@@ -68,15 +66,10 @@ Dessa statusar kommer att beskrivas mer utförligt i detta ämne.
 
 Innan du kan skapa ett anbudsförfrågansärende måste du ställa in information om anbudsförfrågan på sidan **Anskaffnings- och källparametrar**. När du skapar ett anbudsförfrågansärende kan du ange förvalda värden som kopieras till anbudsförfrågan. Du kan ange följande standardvärden:
 
--   Inköpstypen av nya anbudsförfrågan: **Inköpsorder** eller **Inköpsavtal**
-
--   Utgångsdatum och tidsförskjutning från dagen då anbudsförfrågansärendet har skapats
-
--   Typ av begäran kan som standard kan en viss poängmetod till anbudsförfrågansärendet
-
--   Leveransinformation och betalningsvillkor.
-
--   Fält som ska vara inkluderade i anbudet
+- Inköpstypen av nya anbudsförfrågan: **Inköpsorder** eller **Inköpsavtal**
+- Utgångsdatum och tidsförskjutning från dagen då anbudsförfrågansärendet har skapats.
+- Typ av begäran kan som standard kan en viss poängmetod till anbudsförfrågansärendet.
+- Leveransinformation och betalningsvillkor.
 
 Du kan åsidosätta dessa värden för ett visst anbudsförfråganärende.
 
@@ -84,37 +77,25 @@ Du bör också konfigurera ändringsprocessen. Som en del av den här konfigurat
 
 På sidan **Anskaffnings- och källparametrar** väljer du mallen för e-postmeddelandet som du ska använda för att skicka till leverantörer. När en mall skapas i **E-postmallar** kan den innehålla följande utbytestoken:
 
--   %Anbudsförfrågansärende%
-
--   %Orsak till att buden returneras%
-
--   %Orsak till ändring%
-
--   %Ändringen har förberetts av%
-
--   %Företag%
-
--   %anbudsförfrågansärendets namn%
-
--   %Utgångsdatum%
-
--   %Datum%
+- %Anbudsförfrågansärende%
+- %Orsak till att buden returneras%
+- %Orsak till ändring%
+- %Ändringen har förberetts av%
+- %Företag%
+- %anbudsförfrågansärendets namn%
+- %Utgångsdatum%
+- %Datum%
 
 Token för %Orsak till att buden returneras% och %Orsak till ändring% ersätts av text som prokuristen kan ange, när han eller hon avslutar ändringen i guiden **Ändring**. Värdena för token %Ändring förberedd av%, och %Företag% hämtas automatiskt från anbudsförfrågan. Token %Datum% ersätts av det innevarande datumet.
 
 Om du vill avbryta en anbudsförfrågan när den har skickats, kan du göra detta från anbudsförfrågansärendet. För annullering krävs en e-postmall för att skicka meddelande om annullering till leverantörens kontaktpersoner. Mallen måste markeras på sidan **Anskaffnings- och källparametrar**. När mallen skapas, kan den innehålla följande utbytestoken:
 
--   %Orsak till annullering%
-
--   %Anbudsförfrågansärende%
-
--   %Anbudsförfrågan annullerad av%
-
--   %Företag%
-
--   %anbudsförfrågansärendets namn%
-
--   %Datum%
+- %Orsak till annullering%
+- %Anbudsförfrågansärende%
+- %Anbudsförfrågan annullerad av%
+- %Företag%
+- %anbudsförfrågansärendets namn%
+- %Datum%
 
 Token %Orsak till annulleringen% ersättas med text som anskaffningsproffset kan ange i guiden **annullering**. Token %Datum% ersätts av det innevarande datumet.
 
@@ -130,6 +111,19 @@ När du skapar ett anbudsförfrågansärende av typen inköpsorder och lägger t
 
 En inköpschef eller inköpsagent kan skapa och underhålla begärandetyper för att matcha anskaffningskraven för din organisation. Varje typ av begäran kan associeras med en poängmetod. Poängmetoder består av en uppsättning villkor som kan användas när du poängsätter bud. Du måste ställa in typer av begäran, poängmetoder och poängkriterier på sidorna **Typer av begäran** och **Poängmetod** .
 
+## <a name="choose-default-fields-to-include-in-vendor-rfq-reply-forms"></a><a name="default-reply-fields"></a>Välj standardfält som ska inkluderas i svarsformulär för leverantörsanbud
+
+Du kan ange specifika typer av information som leverantörerna ska lämna när de svarar på (lägger bud) en anbudsförfrågning. Fält som du markerar som standard inkluderas i det online-formulär som används för leverantörssamarbete. För att ändra dessa inställningar:
+
+1. Om du inte redan har gjort det använder du sidan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera fälten *Välj fält som ska inkluderas i svarsformulär för leverantörsanbud*.
+1. Gå till **Anskaffning och källa > Inställningar > Anskaffnings- och källparametrar**.
+1. Öppna fliken **Anbudsförfrågan**.
+1. Välj svarsfältets länk **standard anbudsförfrågan** under rubriken **ställ in standardvärden för anbudsförfrågan**.
+1. Dialogrutan **Standardsvarsfält för anbudsförfrågan** öppnas.
+1. Avsnittet **anbudsfält som inkluderade i svarsformulär för leverantörsanbud** innehåller ett skjutreglage för varje fält som kan användas i svarsformulären för en anbudsförfrågan. Fält inställda på *Ja* i det här avsnittet kommer att inkluderas (tillsammans med deras värden) i svarsformulär för anbudsförfrågan. Ställ in skjutreglaget till *Nej* för varje fält där du vill förhindra att leverantörer ser data när de granskar anbud. På så sätt kan du ange uppskattade eller förväntade värden under posten för anbudsförfrågan för interna behov utan att leverantören ser vad som har angetts.
+
+Du kan åsidosätta inställningarna för enskilda anbudsförfrågningar efter behov.
+
 ## <a name="creating-and-sending-an-rfq"></a>Skapa och skicka en anbudsförfrågan
 
 Du skapar ett anbudsförfrågansärende, väljer leverantörerna som du vill bjuda in till anbudsförfrågansärendet och skickar sedan anbudsförfrågan till leverantörerna. Du kan använda utskriftsinställningar när du vill skicka anbudsförfråganrapporten, och svarsbladrapporterar till ditt prioriterade mål.
@@ -138,15 +132,13 @@ Du kan manuellt skapa ett anbudsförfrågansärende för antingen inköpstyperna
 
 Om anbudsförfrågansärendet är av typen **inköpsorder** sker följande beteende som avviker från andra typer av anbudsförfrågansärenden:
 
--   När rader för anbudsförfrågansärende skapas, skapas lagertransaktioner som har inleveransstatus **Offert inleverans**.
-
--   När du accepterar ett bud, skapas en inköpsorder.
+- När rader för anbudsförfrågansärende skapas, skapas lagertransaktioner som har inleveransstatus **Offert inleverans**.
+- När du accepterar ett bud, skapas en inköpsorder.
 
 Om anbudsförfrågan är av typen **inköpsavtal** sker följande beteende som avviker från andra anbudsförfrågansärenden:
 
--   Anbudsförfrågansärendet används för att köpa en visst kvantitet eller värde av produkten över tid. Du måste välja det datumintervall som gäller för inköpsavtalet och namnet på personen, som hanterar inköpsavtalet.
-
--   När du accepterar ett bud, skapas ett inköpsavtal.
+- Anbudsförfrågansärendet används för att köpa en visst kvantitet eller värde av produkten över tid. Du måste välja det datumintervall som gäller för inköpsavtalet och namnet på personen, som hanterar inköpsavtalet.
+- När du accepterar ett bud, skapas ett inköpsavtal.
 
 Om anbudsförfrågansärendet skapas från en inköpsrekvisition, tilldelas typen **Inköpsrekvisition** automatiskt. Du kan inte att skapa ett anbudsförfrågansärende av typen **Inköpsrekvisition**.
 
@@ -156,6 +148,7 @@ När du skapar ett anbudsförfrågansärende, kan du välja en typ av begäran
 
 Du kan lägga till en enkät till ett anbudsförfrågansärende. Denna enkät visas sedan på alla svar på anbudsförfrågningar, efter att du har skickat anbudsförfrågan. Ifyllandet av enkäten är en obligatorisk uppgift innan anbudet kan skickas.
 
+Även om standardvärden har angetts kan du ändra inställningarna för **anbudsfält som inkluderade i svarsformulär för leverantörsanbud** för varje enskild anbudsförfrågan om det behövs. Det gör du genom att skapa eller öppna ett ärende för anbudsförfrågan. Öppna sedan fliken **Offert** i åtgärdsfönstret och från avsnittet **Svar** välj **Ange standardsvar för anbudsförfrågan**. Dialogrutan **Standardsvarsfält för anbudsförfrågan** öppnas, vilket fungerar på samma sätt som när du ställer in standardvärdena för svarsformulär för leverantörsanbud, förutom att dina ändringar här bara påverkar det aktuella anbudsförfrågansärendet. Mer information om hur du aktiverar den här funktionen och hur den fungerar finns i [Välj standardfält som ska inkluderas i svarsformulär för leverantörens anbudsförfrågningar](#default-reply-fields).
 
 Det finns tre sätt att markera leverantören som du vill lägga till ett anbudsförfrågansärende:
 
@@ -166,7 +159,6 @@ Det finns tre sätt att markera leverantören som du vill lägga till ett anbuds
 När anbudsförfrågansärendet är tomt, väljer du **Skicka** Ågärden Skicka skapar journaler och rapporter som ska skrivas ut, arkiveras och skickas enligt dina utskriftsinställningar.
 
 Om du anger **Använd leverantör för omberäkning av priser** och **Använd leverantörsspecifik artikelinformation** till **Ja** på sidan **Skicka anbudsförfrågan** när du skickade anbudsförfrågan till en leverantör, anges viss leverantörsspecifik information i anbudsförfrågan för den leverantören automatiskt.
-
 
 ## <a name="amending-an-rfq-case"></a>Ändra ett anbudsförfrågansärende
 
@@ -179,7 +171,6 @@ Om du konfigurerar ändringsprocessen så att den blir mindre restriktiv behöve
 Om leverantörer använder gränssnittet för leverantörssamarbete måste du alltid använda ändringsprocessen för att meddela leverantörer om ändringar av anbudsförfrågansärendet. Denna process hjälper till att förhindrar situationen där leverantörer lägger bud på ett inaktuellt anbudsförfrågansärende när deras bud pågår. För mer information om leverantörssamarbetet, se [Leverantörssamarbeten med externa leverantörer](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Om du vill bjuda in ytterligare leverantörer till att lämna bud, och inga ändringar har gjorts i anbudsförfrågansärendet kan du använda knappen **skicka**. De leverantörer som du lade till visas på sidan **skicka** och kommer att ta emot e-postinbjudan.
-
 
 ## <a name="receiving-and-registering-rfq-replies"></a>Ta emot och registrera svar på anbudsförfrågningar
 
@@ -208,29 +199,20 @@ I svaret kan du lägga till en orsakskod för att förklara varför du acceptera
 
 När du accepterar ett bud av typen **Inköpsrekvisitioner** kommer inköpsrekvisitionsraderna att uppdateras med följande information som visar information om det godkända budet:
 
--   Pris per enhet
-
--   Rabattprocent
-
--   Rabattbelopp
-
--   Inköp, avgifter
-
--   Radavgifter
-
--   Leverantör
-
--  Externt nummer
-
--   Extern beskrivning
-
+- Pris per enhet
+- Rabattprocent
+- Rabattbelopp
+- Inköp, avgifter
+- Radavgifter
+- Leverantör
+- Externt nummer
+- Extern beskrivning
 
 Följande tabell visar hur anbudsförfråganstatus ändras allt eftersom du godtar och avvisar leverantörernas bud.
 
-<a name="statuses--highest-and-lowest"></a>Status – högsta och lägsta
------------------------------
+## <a name="statuses--highest-and-lowest"></a>Status – högsta och lägsta
 
-På fliken Leverantör i anbudsförfrågansärendet visas raderna som har det högsta och det lägsta statusvärdet för en viss leverantör. Om inga rader ännu har skickats när leverantören läggs till är både lägsta och högsta status <strong>Skapad.</strong>När anbudsförfrågan skickas till leverantören med alla rader kommer status för de två raderna vara <strong>skickad</strong>. Om vissa rader i ett bud från en leverantör accepteras och andra avvisas kommer de avvisade raderna att visa den lägsta status som är <strong>avvisad</strong> och de godkända raderna får den högsta status som är <strong>accepterade</strong>.
+På fliken Leverantör i anbudsförfrågansärendet visas raderna som har det högsta och det lägsta statusvärdet för en viss leverantör. När leverantören läggs till och inga rader ännu har skickats, <strong>skapas</strong> både den lägsta och den högsta statusen. När anbudsförfrågan skickas till leverantören med alla rader kommer status för de två raderna att <strong>skickas</strong>. Om vissa rader i ett bud från en leverantör accepteras och andra avvisas kommer de avvisade raderna att visa den lägsta status som är <strong>avvisad</strong> och de godkända raderna får den högsta status som är <strong>accepterade</strong>.
 
 På raderna för anbudsförfrågansärendet ser du det högsta och det lägsta statusvärdet per rad över alla leverantörer. Om du har skickat en rad till alla leverantörer i anbudsförfrågansärendet och ingen har svarat ännu är både lägsta och högsta status **skickad.** När minst en leverantör svarar ändras det högsta status till **mottagna**. Om du lägger till en ny leverantör till ärendet kommer det lägsta statusvärdet att ändras till **Skapad**
 
