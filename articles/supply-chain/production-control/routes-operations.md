@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bb2f340afffc5f62c200b4daac311db435d796e
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
+ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895387"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3989251"
 ---
 # <a name="routes-and-operations"></a>Flöden och operationer
 
@@ -37,10 +37,10 @@ Det här avsnittet innehåller information om Flöden och operationer. Ett flöd
 
 Ett flöde beskriver ordningen av operationer som krävs för att producera en produkt eller produktvariant. Flödet definierar också operationsresurser som krävs, tid som krävs för att ställa in och utföra operationen och hur kostnaden ska beräknas för varje operation. Du kan använda samma flöde för att skapa flera produkter eller definiera ett unikt flöde för varje produkt eller produktvariant. Du kan också ha flera flöden för samma produkt. I detta fall varierar det flöde som används beroende på faktorer som t.ex. den kvantitet som måste produceras. Definitionen av ett flöde i Supply Chain Management består av fyra separata element som tillsammans beskriver produktionsprocessen:
 
--   **Flöde** – ett flöde som definierar strukturen i produktionsprocessen. Den definierar alltså operationernas ordning.
--   **Operation** – en operation som identifierar ett namngivet steg i flödet, som t.ex. **sammansättning**. Samma operation kan ske på flera flöden och kan ha olika operationsnummer.
--   **Operationsrelation** – En operationsrelation definierar de funktionella egenskaper för en operation som ställtid och körtid, kostnadskategorier, förbrukningsparametrar och krav på systemresurser. Operationsrelationen möjliggör att operativa egenskaper hos en operation varierar beroende på vilket föde som operationen används i eller produkterna som produceras.
--   **Flödesversion** – en flödesversion som definierar flödet som används för att tillverka en produkt eller produktvariant. Flödesversioner tillåter att flöden ska återanvändas mellan produkter eller ändras med tiden. De tillåter också att olika flöden används för att tillverka samma produkt. I detta fall varierar det flöde som används beroende på faktorer som t.ex. plats eller den kvantitet som måste produceras.
+- **Flöde** – ett flöde som definierar strukturen i produktionsprocessen. Den definierar alltså operationernas ordning.
+- **Operation** – en operation som identifierar ett namngivet steg i flödet, som t.ex. **sammansättning**. Samma operation kan ske på flera flöden och kan ha olika operationsnummer.
+- **Operationsrelation** – En operationsrelation definierar de funktionella egenskaper för en operation som ställtid och körtid, kostnadskategorier, förbrukningsparametrar och krav på systemresurser. Operationsrelationen möjliggör att operativa egenskaper hos en operation varierar beroende på vilket föde som operationen används i eller produkterna som produceras.
+- **Flödesversion** – en flödesversion som definierar flödet som används för att tillverka en produkt eller produktvariant. Flödesversioner tillåter att flöden ska återanvändas mellan produkter eller ändras med tiden. De tillåter också att olika flöden används för att tillverka samma produkt. I detta fall varierar det flöde som används beroende på faktorer som t.ex. plats eller den kvantitet som måste produceras.
 
 ## <a name="routes"></a>Flöden
 Ett flöde beskriver ordningen av operationer som används för att producera en produkt eller produktvariant. Varje operation tilldelas ett operationsnummer och en efterföljande operation. Operationernas ordning utgör en flödesnätverk som kan representeras av ett riktat diagram med en eller flera startpunkter och en enda slutpunkt. I Supply Chain Management skiljer sig flöden baserat på vilken typ av struktur. Två typer av flöden är enkla flöden och flödesnätverk. I produktionsstyrningsparametrarna kan du ange om endast enkla flöden kan användas, eller om mer komplexa flödesnätverk kan användas
@@ -60,9 +60,9 @@ Om du aktiverar mer komplexa flödesnätverk i produktionsstyrningsparametrarna 
 [![Flödesnätverk](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
-> -   Varje operation kan ha endast ha en efterföljande operation och hela flödet måste sluta i en enkel operation.
-> -   Det finns ingen garanti för att flera operationer med samma efterföljande operation (exempelvis operationer 30 och 40 i bilden ovan) kommer att köras parallellt. Tillgängligheten och kapaciteten hos resurserna kan sätta begränsningar på sättet som operationerna schemaläggs.
-> -   Du kan inte använda 0 (noll) som operationsnummer. Det numret är reserverat och används för att ange att den sista operationen i flödet inte har någon efterföljande operation.
+> - Varje operation kan ha endast ha en efterföljande operation och hela flödet måste sluta i en enkel operation.
+> - Det finns ingen garanti för att flera operationer med samma efterföljande operation (exempelvis operationer 30 och 40 i bilden ovan) kommer att köras parallellt. Tillgängligheten och kapaciteten hos resurserna kan sätta begränsningar på sättet som operationerna schemaläggs.
+> - Du kan inte använda 0 (noll) som operationsnummer. Det numret är reserverat och används för att ange att den sista operationen i flödet inte har någon efterföljande operation.
 
 ### <a name="parallel-operations"></a>Parallella operationer
 
@@ -99,12 +99,12 @@ De funktionella egenskaper för en operation som ställtid och körtid, kostnads
 ## <a name="operation-relations"></a>Operationsrelation
 Följande funktionella egenskaper för en operation hanteras i operationsrelationen:
 
--   Kostnadskategorier
--   Förbrukningsparametrar
--   Bearbetningstider
--   Bearbetningskvantiteter
--   Resurskrav
--   Anteckningar och instruktioner
+- Kostnadskategorier
+- Förbrukningsparametrar
+- Bearbetningstider
+- Bearbetningskvantiteter
+- Resurskrav
+- Anteckningar och instruktioner
 
 Du kan definiera flera operationsrelationer för samma operation. Men varje operationsrelationen gäller samtidigt och lagrar egenskaper som är specifika för ett flöde, frisläppt produkt eller en uppsättning frisläppta produkter som hör till en artikelgrupp. Samma operation kan därför användas i flera flöden som har olika funktionella egenskaper. Dessutom kan du lättare underhålla huvuddata om du använder standardoperationer som har samma funktionella egenskaper, oavsett flödet som används och produkten som produceras. Omfattningen av operationsrelationen definieras via egenskaperna **Artikelkod**, **Artikelrelation**, **flödeskod** och **flödesrelationen**, vilket visas i följande tabell.
 
@@ -166,12 +166,13 @@ När Supply Chain Management söker efter den mest relevanta operationsrelatione
 En operation bör därför användas endast en gång för varje flöde. Om en operation händer flera gånger i samma flöde kommer alla händelser av den operationen kommer ha samma operationsrelation och du inte har olika egenskaper (till exempel körtid) för varje händelse.
 
 ## <a name="route-versions"></a>Flödesversioner
-Flödesversioner används för att ge plats åt variationer i produktionen av produkter, eller för att ge dig större kontroll över produktionsprocessen. De definierar vilket flöde som ska användas när en specifik frisläppt produkt eller frisläppt produktvariant tillverkas. Du kan använda följande villkor för att definiera vilka flödesversioner används för frisläppt produkt:
 
--   Produktdimensioner (storlek, färg, format eller konfiguration)
--   Produktionskvantitet
--   Produktionsplats
--   Produktionsdatum
+Flödesversioner används för att ge plats åt varianter i produktionen av produkter, eller för att ge dig större kontroll över produktionsprocessen. De definierar vilket flöde som ska användas när en specifik frisläppt produkt eller frisläppt produktvariant tillverkas. Du kan använda följande villkor för att definiera vilka flödesversioner används för frisläppt produkt:
+
+- Produktdimensioner (storlek, färg, format eller konfiguration)
+- Produktionskvantitet
+- Produktionsplats
+- Produktionsdatum
 
 När du skapar produkten på en viss plats, i en viss kvantitet eller under en viss period kan du ange en specifik flödesversion som standardflödesversionen. Observera dock att det enda aktiva flödet som tillåts för en viss frisläppt produkt och en viss uppsättning villkor.  
 
@@ -194,6 +195,7 @@ Om du måste hålla en logg som registrerar vem som godkänner och aktiverar var
 Produktändringsärendet för godkännande och aktivering av nya eller ändrade flöden och flödesversioner ger dig ett enkelt sätt att visa en översikt över begränsningarna för flödesversioner. Du kan också godkänna och aktivera alla flöden som är kopplade till en viss händelse i en operation och resultaten i produktändringsfallet.
 
 ## <a name="maintaining-routes"></a>Underhålla flöden
+
 Beroende på ditt företags behov kanske du vill minska det arbete som krävs för att underhålla dina processdefinitioner.
 
 ### <a name="making-routes-independent-of-resources"></a>Göra flöden oberoende av resurser
@@ -224,10 +226,10 @@ När du använder den här metoden blir sidan **operationsrelationer** det prim�
 
 Om du inte anger en operationsresurs eller resursgrupp som en del av resurskraven för en operation, kan resurser arbeta med olika hastigheter. Den tid som behövs för att bearbeta en operation varierar. För att lösa problemet kan du använda fältet **formel** på operationsrelationenför att ange hur processtiden beräknas. Följande alternativ är tillgängliga:
 
--   **Standard** – (standardalternativet) beräkningen använder endast fälten från operationsrelationen och angiven körtid multipliceras med orderantalet.
--   **Kapacitet** – beräkningen innefattar fältet **kapacitet** från operationsresursen. Därför är tiden resursenberoende. Värdet som anges för operationsresursen är kapacitet per timme. **Processtiden** beräknas som **Orderkvantitet** delad av **Kapacitet**.
--   **Batch** – Batchkapacitet beräknas utifrån informationen från operationsrelationen. Antal batchar och därmed bearbetningstiden kan beräknas baserat på orderkvantiteten.
--   **Resursbatch** – det här alternativet är ungefär densamma som alternativet **Batch**. Men innefattar fältet **Batchkapacitet** från operationsresursen. Därför är tiden resursberoende.
+- **Standard** – (standardalternativet) beräkningen använder endast fälten från operationsrelationen och angiven körtid multipliceras med orderantalet.
+- **Kapacitet** – beräkningen innefattar fältet **kapacitet** från operationsresursen. Därför är tiden resursenberoende. Värdet som anges för operationsresursen är kapacitet per timme. **Processtiden** beräknas som **Orderkvantitet** delad av **Kapacitet**.
+- **Batch** – Batchkapacitet beräknas utifrån informationen från operationsrelationen. Antal batchar och därmed bearbetningstiden kan beräknas baserat på orderkvantiteten.
+- **Resursbatch** – det här alternativet är ungefär densamma som alternativet **Batch**. Men innefattar fältet **Batchkapacitet** från operationsresursen. Därför är tiden resursberoende.
 
 ### <a name="set-up-route-groups"></a>Ställ in flödesgrupper
 

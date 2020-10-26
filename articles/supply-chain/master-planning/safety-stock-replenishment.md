@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: roxanad
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 7a1721b3206f8a3df010f26dc31e3ac4e5e0878b
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: ee5775826c4f7f499d015145a5e8f0f6c7a42903
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887026"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987399"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Säkerhet för artiklar i lageruppfyllelse
 
@@ -41,7 +41,7 @@ Ange säkerhetslagernivån att underhålla för artikeln i fältet **Minimum**. 
 > [!NOTE]
 > Du måste definiera alla övriga planerade disponeringsdimensioner innan du kan definiera fältet **Minimum**. Detta förhindrar att en ogiltig post används vid huvudplanering. Situationen skulle kunna uppstå om en dimensionsgrupp utökas med ytterligare en planerad disponeringsdimension för vilken de minsta och största lagerkvantiteterna ännu inte har angetts.
 
-Använd minimumnycklar för att hantera säsongsvariationer i efterfrågan. Du kan till exempel minska minimilagernivån under lågsäsong och gradvis öka nivån under de övriga månaderna. Du skapar en minimumnyckel genom att gå till **Huvudplanering** > **Inställningar** > **Disponering** > **Minimi-/maximinycklar**. Du anger en minimumnyckel för att justera säkerhetslagernivån efter säsongsvariationer i fältet **Minimumnyckel** på sidan **Artikeldisponering**. 
+Använd minimumnycklar för att hantera säsongsvarianter i efterfrågan. Du kan till exempel minska minimilagernivån under lågsäsong och gradvis öka nivån under de övriga månaderna. Du skapar en minimumnyckel genom att gå till **Huvudplanering** > **Inställningar** > **Disponering** > **Minimi-/maximinycklar**. Du anger en minimumnyckel för att justera säkerhetslagernivån efter säsongsvarianter i fältet **Minimumnyckel** på sidan **Artikeldisponering**. 
 
 ## <a name="example-minimum-key"></a>Exempel: Minimumnyckel
 Om du vill ställa in en minimumnyckel som tar hänsyn till ökad säsongsefterfrågan under vår- och sommarmånaderna går du till **Huvudplanering** > **Inställningar** > **Disponering** > **Minimi-/maximinycklar** och följ stegen.
@@ -62,7 +62,7 @@ Om disponeringskoden är **Min/max** kan du även ange **Maximal** lagerkvantite
 ## <a name="example-minmax-coverage-code"></a>Exempel: Min/max disponeringskod
 Minimikvantiteten är 10 och maximikvantiteten är 15. Aktuella lagerbehållning är 4. Detta ger ett minimikvantitetskrav på 6. Eftersom maximikvantiteten är 15 är genererar huvudplaneringen en planerad order på 11 artiklar.
 
-För artiklar med säsongsvariationer behöver du kanske ha olika maximinivåer. Om du vill göra det måste du definiera **Maximumnycklar** genom att gå till **Huvudplanering** > **Inställningar** > **Disposition** > **Minimi-/maximinycklar**. Fyll i fältet **Maximumnyckel** på idan **Artikeldisponering**. Du kan visa information om säkerhetslagernivåer, definierade med miniminycklarna på fliken **Min/max** på sidan **Artikeldisponering**. Du måste se till att minimi- och maximivärdena hålls synkroniserade under en viss period.
+För artiklar med säsongsvarianter behöver du kanske ha olika maximinivåer. Om du vill göra det måste du definiera **Maximumnycklar** genom att gå till **Huvudplanering** > **Inställningar** > **Disposition** > **Minimi-/maximinycklar**. Fyll i fältet **Maximumnyckel** på idan **Artikeldisponering**. Du kan visa information om säkerhetslagernivåer, definierade med miniminycklarna på fliken **Min/max** på sidan **Artikeldisponering**. Du måste se till att minimi- och maximivärdena hålls synkroniserade under en viss period.
 
 ## <a name="safety-stock-fulfillment"></a>Säkerhetslageruppfyllelse 
 
