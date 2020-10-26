@@ -15,27 +15,27 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 736eaba0c62b7347ed7db0abfb5a77f68f989400
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 58af71c56d1db3f5856a0104da9ac1435dd8e7ae
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202652"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3978687"
 ---
-# <a name="create-a-service-template-group"></a><span data-ttu-id="69c6e-103">Skapa en servicemallgrupp</span><span class="sxs-lookup"><span data-stu-id="69c6e-103">Create a service template group</span></span>  
+# <a name="create-a-service-template-group"></a><span data-ttu-id="d1f33-103">Skapa en servicemallgrupp</span><span class="sxs-lookup"><span data-stu-id="d1f33-103">Create a service template group</span></span>  
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="69c6e-104">Du kan sortera och filtrera servicemallar genom att använda servicemallgrupper.</span><span class="sxs-lookup"><span data-stu-id="69c6e-104">You can use service template groups to sort and filter service templates.</span></span>
+<span data-ttu-id="d1f33-104">Du kan sortera och filtrera servicemallar genom att använda servicemallgrupper.</span><span class="sxs-lookup"><span data-stu-id="d1f33-104">You can use service template groups to sort and filter service templates.</span></span>
 
-1. <span data-ttu-id="69c6e-105">Klicka på **servicehantering** \> **inställningar** \> **serviceavtal** \> **servicemallgrupper**.</span><span class="sxs-lookup"><span data-stu-id="69c6e-105">Click **Service management** \> **Setup** \> **Service agreements** \> **Service template groups**.</span></span>
-2. <span data-ttu-id="69c6e-106">Skapa en ny servicemallgrupp.</span><span class="sxs-lookup"><span data-stu-id="69c6e-106">Create a new service template group.</span></span>
-3. <span data-ttu-id="69c6e-107">Ange grupp-ID, en beskrivning och en överordnad servicemallgrupp, i det finns någon.</span><span class="sxs-lookup"><span data-stu-id="69c6e-107">Enter the group ID, a description, and a parent service template group, if there is one.</span></span>
-4. <span data-ttu-id="69c6e-108">Spara servicemallgruppen.</span><span class="sxs-lookup"><span data-stu-id="69c6e-108">Save the service template group.</span></span>
-5. <span data-ttu-id="69c6e-109">Ställ skjutreglaget **träd kontroll** på **Ja** för att öppna trädvyn och visa servicemallgrupper som en hierarki i en trädvy eller som en översikt.</span><span class="sxs-lookup"><span data-stu-id="69c6e-109">Set the **Tree control** slider to **Yes** to open the tree view and view the service template groups either as a hierarchy in a tree view or as an overview.</span></span>
+1. <span data-ttu-id="d1f33-105">Klicka på **servicehantering** \> **inställningar** \> **serviceavtal** \> **servicemallgrupper**.</span><span class="sxs-lookup"><span data-stu-id="d1f33-105">Click **Service management** \> **Setup** \> **Service agreements** \> **Service template groups**.</span></span>
+2. <span data-ttu-id="d1f33-106">Skapa en ny servicemallgrupp.</span><span class="sxs-lookup"><span data-stu-id="d1f33-106">Create a new service template group.</span></span>
+3. <span data-ttu-id="d1f33-107">Ange grupp-ID, en beskrivning och en överordnad servicemallgrupp, i det finns någon.</span><span class="sxs-lookup"><span data-stu-id="d1f33-107">Enter the group ID, a description, and a parent service template group, if there is one.</span></span>
+4. <span data-ttu-id="d1f33-108">Spara servicemallgruppen.</span><span class="sxs-lookup"><span data-stu-id="d1f33-108">Save the service template group.</span></span>
+5. <span data-ttu-id="d1f33-109">Ställ skjutreglaget **träd kontroll** på **Ja** för att öppna trädvyn och visa servicemallgrupper som en hierarki i en trädvy eller som en översikt.</span><span class="sxs-lookup"><span data-stu-id="d1f33-109">Set the **Tree control** slider to **Yes** to open the tree view and view the service template groups either as a hierarchy in a tree view or as an overview.</span></span>
 
 
 
