@@ -15,40 +15,40 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09f03a50c565d689f55e297016411435513f2175
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 744f78f2dd088e50c91e1f7ef0e6f68b176f9618
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202478"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984140"
 ---
-# <a name="delete-a-service-bom"></a><span data-ttu-id="f31b8-103">Ta bort en servicestrukturlista</span><span class="sxs-lookup"><span data-stu-id="f31b8-103">Delete a service BOM</span></span> 
+# <a name="delete-a-service-bom"></a><span data-ttu-id="a4fe5-103">Ta bort en servicestrukturlista</span><span class="sxs-lookup"><span data-stu-id="a4fe5-103">Delete a service BOM</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="f31b8-104">Klicka på **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**.</span><span class="sxs-lookup"><span data-stu-id="f31b8-104">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span> <span data-ttu-id="f31b8-105">Välj det serviceavtal som du vill ta bort en tjänststrukturlista (BOM) från.</span><span class="sxs-lookup"><span data-stu-id="f31b8-105">Select the service agreement that you want to delete a service bill of materials (BOM) from.</span></span>
+1.  <span data-ttu-id="a4fe5-104">Klicka på **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**.</span><span class="sxs-lookup"><span data-stu-id="a4fe5-104">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span> <span data-ttu-id="a4fe5-105">Välj det serviceavtal som du vill ta bort en tjänststrukturlista (BOM) från.</span><span class="sxs-lookup"><span data-stu-id="a4fe5-105">Select the service agreement that you want to delete a service bill of materials (BOM) from.</span></span>
 
-2.  <span data-ttu-id="f31b8-106">Klicka på **åtgärdsfönstret**, klicka på **Serviceobjekt**.</span><span class="sxs-lookup"><span data-stu-id="f31b8-106">On the **Action Pane**, click **Service objects**.</span></span>
+2.  <span data-ttu-id="a4fe5-106">Klicka på **åtgärdsfönstret**, klicka på **Serviceobjekt**.</span><span class="sxs-lookup"><span data-stu-id="a4fe5-106">On the **Action Pane**, click **Service objects**.</span></span>
 
-3.  <span data-ttu-id="f31b8-107">I formuläret **Serviceobjekt** väljer du den serviceobjekt som du vill ta bort en servicestrukturlista från.</span><span class="sxs-lookup"><span data-stu-id="f31b8-107">In the **Service objects** form, select the service object that you want to delete a service BOM from.</span></span> <span data-ttu-id="f31b8-108">Klicka på **funktion**, och välj sedan **ta bort servicestrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="f31b8-108">Click **Functions**, and then select **Delete service BOM**.</span></span>
+3.  <span data-ttu-id="a4fe5-107">I formuläret **Serviceobjekt** väljer du den serviceobjekt som du vill ta bort en servicestrukturlista från.</span><span class="sxs-lookup"><span data-stu-id="a4fe5-107">In the **Service objects** form, select the service object that you want to delete a service BOM from.</span></span> <span data-ttu-id="a4fe5-108">Klicka på **funktion**, och välj sedan **ta bort servicestrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="a4fe5-108">Click **Functions**, and then select **Delete service BOM**.</span></span>
 
-4.  <span data-ttu-id="f31b8-109">Klicka på **Ja**.</span><span class="sxs-lookup"><span data-stu-id="f31b8-109">Click **Yes**.</span></span>
+4.  <span data-ttu-id="a4fe5-109">Klicka på **Ja**.</span><span class="sxs-lookup"><span data-stu-id="a4fe5-109">Click **Yes**.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="f31b8-110">Om du inte har tillämpat en mallstrukturlista, servicestrukturlistan kan tas bort från formuläret <STRONG>Mallstrukturlistor</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="f31b8-110">If you have not applied a template BOM, the service BOM can be deleted from the <STRONG>Template BOMs</STRONG> form.</span></span> <span data-ttu-id="f31b8-111">Om du har tillämpat en mallstrukturlista kan inte servicestrukturlista tas bort med den här metoden.</span><span class="sxs-lookup"><span data-stu-id="f31b8-111">If you have applied a template BOM, the service BOM cannot be deleted by using this method.</span></span></P>
+> <P><span data-ttu-id="a4fe5-110">Om du inte har tillämpat en mallstrukturlista, servicestrukturlistan kan tas bort från formuläret <STRONG>Mallstrukturlistor</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="a4fe5-110">If you have not applied a template BOM, the service BOM can be deleted from the <STRONG>Template BOMs</STRONG> form.</span></span> <span data-ttu-id="a4fe5-111">Om du har tillämpat en mallstrukturlista kan inte servicestrukturlista tas bort med den här metoden.</span><span class="sxs-lookup"><span data-stu-id="a4fe5-111">If you have applied a template BOM, the service BOM cannot be deleted by using this method.</span></span></P>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="f31b8-112">Se även</span><span class="sxs-lookup"><span data-stu-id="f31b8-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a4fe5-112">Se även</span><span class="sxs-lookup"><span data-stu-id="a4fe5-112">See also</span></span>
 
-[<span data-ttu-id="f31b8-113">Strukturlistemallar </span><span class="sxs-lookup"><span data-stu-id="f31b8-113">Template BOMs</span></span>](template-boms.md)
+[<span data-ttu-id="a4fe5-113">Strukturlistemallar </span><span class="sxs-lookup"><span data-stu-id="a4fe5-113">Template BOMs</span></span>](template-boms.md)
 
-[<span data-ttu-id="f31b8-114">Hantera strukturlistemallar på objektrelationer</span><span class="sxs-lookup"><span data-stu-id="f31b8-114">Manage template BOMs on object relations</span></span>](manage-template-boms-on-object-relations.md)
+[<span data-ttu-id="a4fe5-114">Hantera strukturlistemallar på objektrelationer</span><span class="sxs-lookup"><span data-stu-id="a4fe5-114">Manage template BOMs on object relations</span></span>](manage-template-boms-on-object-relations.md)
 
   
 

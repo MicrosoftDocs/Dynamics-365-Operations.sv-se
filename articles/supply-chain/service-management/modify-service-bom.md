@@ -15,59 +15,59 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11017cf239c55bde5f90a0d48783740a1b3e0591
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 962203726cc47e1c9642c53d671d4b63094f2b2c
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202271"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979389"
 ---
-# <a name="modify-a-service-bom"></a><span data-ttu-id="78a74-103">Ändra en servicestrukturlista</span><span class="sxs-lookup"><span data-stu-id="78a74-103">Modify a Service BOM</span></span> 
+# <a name="modify-a-service-bom"></a><span data-ttu-id="57ae6-103">Ändra en servicestrukturlista</span><span class="sxs-lookup"><span data-stu-id="57ae6-103">Modify a Service BOM</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="78a74-104">Du kan registrera historiken för ett element inom en servicestrukturlista.</span><span class="sxs-lookup"><span data-stu-id="78a74-104">You can record the history of an element in a service BOM.</span></span> <span data-ttu-id="78a74-105">Varje gång, som du uppdaterar en strukturlisterad skapas en historikrad i fönstret **Historik**.</span><span class="sxs-lookup"><span data-stu-id="78a74-105">Every time that you update a BOM line, a history line is created in the **History** pane.</span></span> <span data-ttu-id="78a74-106">Historikraden visar aktuell status för strukturlisteraden.</span><span class="sxs-lookup"><span data-stu-id="78a74-106">The history line shows the current state of the BOM line.</span></span>
+<span data-ttu-id="57ae6-104">Du kan registrera historiken för ett element inom en servicestrukturlista.</span><span class="sxs-lookup"><span data-stu-id="57ae6-104">You can record the history of an element in a service BOM.</span></span> <span data-ttu-id="57ae6-105">Varje gång, som du uppdaterar en strukturlisterad skapas en historikrad i fönstret **Historik**.</span><span class="sxs-lookup"><span data-stu-id="57ae6-105">Every time that you update a BOM line, a history line is created in the **History** pane.</span></span> <span data-ttu-id="57ae6-106">Historikraden visar aktuell status för strukturlisteraden.</span><span class="sxs-lookup"><span data-stu-id="57ae6-106">The history line shows the current state of the BOM line.</span></span>
 
-## <a name="update-a-service-bom-element"></a><span data-ttu-id="78a74-107">Uppdatera ett strukturlisteelement</span><span class="sxs-lookup"><span data-stu-id="78a74-107">Update a service BOM element</span></span>
+## <a name="update-a-service-bom-element"></a><span data-ttu-id="57ae6-107">Uppdatera ett strukturlisteelement</span><span class="sxs-lookup"><span data-stu-id="57ae6-107">Update a service BOM element</span></span>
 
-1.  <span data-ttu-id="78a74-108">Klicka på **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**.</span><span class="sxs-lookup"><span data-stu-id="78a74-108">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
+1.  <span data-ttu-id="57ae6-108">Klicka på **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**.</span><span class="sxs-lookup"><span data-stu-id="57ae6-108">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
 
-2.  <span data-ttu-id="78a74-109">Klicka på **Redigera** för att öppna detaljformuläret **Serviceavtal**.</span><span class="sxs-lookup"><span data-stu-id="78a74-109">Click **Edit** to open the **Service agreements** details form.</span></span>
+2.  <span data-ttu-id="57ae6-109">Klicka på **Redigera** för att öppna detaljformuläret **Serviceavtal**.</span><span class="sxs-lookup"><span data-stu-id="57ae6-109">Click **Edit** to open the **Service agreements** details form.</span></span>
 
-3.  <span data-ttu-id="78a74-110">På **åtgärdsfönstret**, klickar du på **Serviceobjekt** för att öppna formuläret **Serviceobjekt**.</span><span class="sxs-lookup"><span data-stu-id="78a74-110">On the **Action Pane**, click **Service objects** to open the **Service objects** form.</span></span>
+3.  <span data-ttu-id="57ae6-110">På **åtgärdsfönstret**, klickar du på **Serviceobjekt** för att öppna formuläret **Serviceobjekt**.</span><span class="sxs-lookup"><span data-stu-id="57ae6-110">On the **Action Pane**, click **Service objects** to open the **Service objects** form.</span></span>
 
-4.  <span data-ttu-id="78a74-111">Markera objektet som du vill uppdatera en strukturlisterad för och klicka på **Designer**.</span><span class="sxs-lookup"><span data-stu-id="78a74-111">Select the object to update a BOM line for, and then click **Designer**.</span></span>
+4.  <span data-ttu-id="57ae6-111">Markera objektet som du vill uppdatera en strukturlisterad för och klicka på **Designer**.</span><span class="sxs-lookup"><span data-stu-id="57ae6-111">Select the object to update a BOM line for, and then click **Designer**.</span></span>
 
-5.  <span data-ttu-id="78a74-112">I formuläret **Designer** välj strukturlisteraden du vill uppdatera och klicka sedan på **redigera strukturlisterad**.</span><span class="sxs-lookup"><span data-stu-id="78a74-112">In the **Designer** form, select the BOM line to update, and then click **Edit BOM line**.</span></span>
+5.  <span data-ttu-id="57ae6-112">I formuläret **Designer** välj strukturlisteraden du vill uppdatera och klicka sedan på **redigera strukturlisterad**.</span><span class="sxs-lookup"><span data-stu-id="57ae6-112">In the **Designer** form, select the BOM line to update, and then click **Edit BOM line**.</span></span>
     
     > [!NOTE]
-    > <P><span data-ttu-id="78a74-113">På fliken <STRONG>Inställning</STRONG> markera kryssrutan <STRONG>Redigera vid tillägg</STRONG> om du vill att formuläret <STRONG>Redigera strukturlisterad</STRONG> ska  öppnas när du drar en rad till servicestrukturlistan.</span><span class="sxs-lookup"><span data-stu-id="78a74-113">On the <STRONG>Setup</STRONG> tab, select the <STRONG>Edit when adding</STRONG> check box if you want the <STRONG>Edit BOM line</STRONG> form to open when you drag a line into the service BOM.</span></span></P>
+    > <P><span data-ttu-id="57ae6-113">På fliken <STRONG>Inställning</STRONG> markera kryssrutan <STRONG>Redigera vid tillägg</STRONG> om du vill att formuläret <STRONG>Redigera strukturlisterad</STRONG> ska  öppnas när du drar en rad till servicestrukturlistan.</span><span class="sxs-lookup"><span data-stu-id="57ae6-113">On the <STRONG>Setup</STRONG> tab, select the <STRONG>Edit when adding</STRONG> check box if you want the <STRONG>Edit BOM line</STRONG> form to open when you drag a line into the service BOM.</span></span></P>
 
-6.  <span data-ttu-id="78a74-114">I fältet **Kvantitet** anger du kvantiteten.</span><span class="sxs-lookup"><span data-stu-id="78a74-114">In the **Quantity** field, enter the quantity.</span></span>
+6.  <span data-ttu-id="57ae6-114">I fältet **Kvantitet** anger du kvantiteten.</span><span class="sxs-lookup"><span data-stu-id="57ae6-114">In the **Quantity** field, enter the quantity.</span></span>
 
-7.  <span data-ttu-id="78a74-115">Markera kryssrutan **Skapa serviceorderrad** om du vill skapa en serviceorderrad för ersättningsartikeln, som sedan kan faktureras.</span><span class="sxs-lookup"><span data-stu-id="78a74-115">If you want to create a service order line for the replacement item, which can then be invoiced, select the **Create service order line** check box.</span></span>
+7.  <span data-ttu-id="57ae6-115">Markera kryssrutan **Skapa serviceorderrad** om du vill skapa en serviceorderrad för ersättningsartikeln, som sedan kan faktureras.</span><span class="sxs-lookup"><span data-stu-id="57ae6-115">If you want to create a service order line for the replacement item, which can then be invoiced, select the **Create service order line** check box.</span></span>
 
-8.  <span data-ttu-id="78a74-116">Klicka på **OK** om du vill stänga formuläret.</span><span class="sxs-lookup"><span data-stu-id="78a74-116">Click **OK** to close the form.</span></span>
+8.  <span data-ttu-id="57ae6-116">Klicka på **OK** om du vill stänga formuläret.</span><span class="sxs-lookup"><span data-stu-id="57ae6-116">Click **OK** to close the form.</span></span>
 
-## <a name="delete-a-service-bom-line"></a><span data-ttu-id="78a74-117">Ta bort en rad från en servicestrukturlista</span><span class="sxs-lookup"><span data-stu-id="78a74-117">Delete a service BOM line</span></span>
+## <a name="delete-a-service-bom-line"></a><span data-ttu-id="57ae6-117">Ta bort en rad från en servicestrukturlista</span><span class="sxs-lookup"><span data-stu-id="57ae6-117">Delete a service BOM line</span></span>
 
-1.  <span data-ttu-id="78a74-118">Klicka på **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**.</span><span class="sxs-lookup"><span data-stu-id="78a74-118">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
+1.  <span data-ttu-id="57ae6-118">Klicka på **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**.</span><span class="sxs-lookup"><span data-stu-id="57ae6-118">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
 
-2.  <span data-ttu-id="78a74-119">Klicka på **Redigera** för att öppna detaljformuläret **Serviceavtal**.</span><span class="sxs-lookup"><span data-stu-id="78a74-119">Click **Edit** to open the **Service agreements** details form.</span></span>
+2.  <span data-ttu-id="57ae6-119">Klicka på **Redigera** för att öppna detaljformuläret **Serviceavtal**.</span><span class="sxs-lookup"><span data-stu-id="57ae6-119">Click **Edit** to open the **Service agreements** details form.</span></span>
 
-3.  <span data-ttu-id="78a74-120">På **åtgärdsfönstret**, klickar du på **Serviceobjekt** för att öppna formuläret **Serviceobjekt**.</span><span class="sxs-lookup"><span data-stu-id="78a74-120">On the **Action Pane**, click **Service objects** to open the **Service objects** form.</span></span>
+3.  <span data-ttu-id="57ae6-120">På **åtgärdsfönstret**, klickar du på **Serviceobjekt** för att öppna formuläret **Serviceobjekt**.</span><span class="sxs-lookup"><span data-stu-id="57ae6-120">On the **Action Pane**, click **Service objects** to open the **Service objects** form.</span></span>
 
-4.  <span data-ttu-id="78a74-121">Markera objektet som du vill ta bort en strukturlisterad från och klicka sedan på **Designer**.</span><span class="sxs-lookup"><span data-stu-id="78a74-121">Select the object to delete a service BOM line from, and then click **Designer**.</span></span>
+4.  <span data-ttu-id="57ae6-121">Markera objektet som du vill ta bort en strukturlisterad från och klicka sedan på **Designer**.</span><span class="sxs-lookup"><span data-stu-id="57ae6-121">Select the object to delete a service BOM line from, and then click **Designer**.</span></span>
 
-5.  <span data-ttu-id="78a74-122">I formuläret **Designer** välj strukturlisteraden du vill ta bort och klicka sedan på **Ta bort strukturlisterad**.</span><span class="sxs-lookup"><span data-stu-id="78a74-122">In the **Designer** form, select the BOM line to delete, and then click **Delete BOM line**.</span></span>
+5.  <span data-ttu-id="57ae6-122">I formuläret **Designer** välj strukturlisteraden du vill ta bort och klicka sedan på **Ta bort strukturlisterad**.</span><span class="sxs-lookup"><span data-stu-id="57ae6-122">In the **Designer** form, select the BOM line to delete, and then click **Delete BOM line**.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="78a74-123">Se även</span><span class="sxs-lookup"><span data-stu-id="78a74-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="57ae6-123">Se även</span><span class="sxs-lookup"><span data-stu-id="57ae6-123">See also</span></span>
 
-[<span data-ttu-id="78a74-124">Strukturlistemallar </span><span class="sxs-lookup"><span data-stu-id="78a74-124">Template BOMs</span></span>](template-boms.md)
+[<span data-ttu-id="57ae6-124">Strukturlistemallar </span><span class="sxs-lookup"><span data-stu-id="57ae6-124">Template BOMs</span></span>](template-boms.md)
 
   
 
