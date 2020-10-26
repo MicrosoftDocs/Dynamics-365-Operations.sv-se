@@ -3,7 +3,7 @@ title: Arbeta med publiceringsgrupper
 description: I det här avsnittet beskrivs funktionen publicera grupper i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 374a6c7dd33440903babbc8232f580ac2b68df82
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a83affb5b383b50317ddf53de4d3bf565f0d9439
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003175"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973966"
 ---
 # <a name="work-with-publish-groups"></a>Arbeta med publiceringsgrupper
 
@@ -145,6 +145,8 @@ För närvarande stöder funktionen publiceringsgrupper endast webbplatsinnehål
 [Ordlista för sidmodell](page-elements-overview.md)
 
 [Dokumentera tillstånd och livscykel](document-states-overview.md)
+
+[Aktivera och använda delning av flera kanaler](cross-channel-sharing.md)
 
 [Arbeta med moduler](work-with-modules.md)
 

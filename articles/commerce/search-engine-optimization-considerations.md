@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7c7afed8e4620d5fe49ead47eb6c17d97d7492ad
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6ffc772addb330abe7205007662a3f3e08a3e47f
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002822"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961596"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>Språkinformation för sökmotoroptimering (SEO) för din webbplats
 
@@ -47,7 +47,7 @@ För att optimera indexeringen använder återgivningsramverket både informatio
 
 ### <a name="page-seo-settings-for-internal-preview-limited-audiences-and-all-audiences"></a>Sidinställningar för SEO för intern förhandsgranskning, begränsade målgrupper och alla målgrupper
 
-Eftersom Dynamics 365 Commerce ger stöd för "vad du ser är vad du får" (WYSIWYG)-autentiserade förhandsgranskningar, kan författare förbereda sitt sidinnehåll utan att behöva oroa sig om att informationen kommer att visas för besökare på webbplatsen. Om en sida måste publiceras, men dess exponering måste vara begränsad måste den ha metataggen **NOINDEX**, så att den inte indexeras av sökmotorer. När sidan är klar för alla målgrupper bör alla de grundläggande SEO-metadata finnas tillgängliga, vilket maximerar effektiviteten hos sökmotorindexeringen. Dessutom bör metataggen **NOLIMIT** tas bort.
+Eftersom Dynamics 365 Commerce ger stöd för "vad du ser är vad du får" (WYSIWYG)-autentiserade förhandsgranskningar i visuell sidskapare, kan författare förbereda sitt sidinnehåll utan att behöva oroa sig om att informationen kommer att visas för besökare på webbplatsen. Om en sida måste publiceras, men dess exponering måste vara begränsad måste den ha metataggen **NOINDEX**, så att den inte indexeras av sökmotorer. När sidan är klar för alla målgrupper bör alla de grundläggande SEO-metadata finnas tillgängliga, vilket maximerar effektiviteten hos sökmotorindexeringen. Dessutom bör metataggen **NOLIMIT** tas bort.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

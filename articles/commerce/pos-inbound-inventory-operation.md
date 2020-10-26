@@ -3,7 +3,7 @@ title: Inkommande lageråtgärder i kassan
 description: Det här ämnet beskriver möjligheterna i den inkommande lageråtgärden för en kassa (POS).
 author: hhaines
 manager: annbe
-ms.date: 08/18/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 16a786a4b3ca1bcbd202f6753bdf3bf7233a4333
-ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
+ms.openlocfilehash: 89021a85c2b215695d7cc25215c049205f71956d
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710319"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971507"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Inkommande lageråtgärder i kassan
 
@@ -133,6 +133,18 @@ Vyn **ta emot** nu är ett fokuserat sätt för användarna att se vilka produkt
 Valideringar sker under mottagningsprocessen för dokumentraderna. De inkluderar valideringar för överleverans. Om en användare försöker ta emot mer lager än vad som beställts på en inköpsorder, men antingen överleverans eller den mängd som har inlevererats överskrider den överleveranstolerans som har konfigurerats för inköpsorderraden, får användaren ett felmeddelande och får inte ta emot överskjutande kvantitet.
 
 Övermottagning är inte tillåtet för överföringsorderdokument. Användarna får alltid felmeddelanden om de försöker ta emot fler än vad som levererats för överföringsorderraden.
+
+### <a name="close-purchase-order-lines"></a>Stäng inköpsorderrader
+
+Du kan stänga den återstående kvantiteten på en inkommande inköpsorder under inleveransen om speditören har bekräftat att de inte kan leverera den fullständiga kvantitet som har begärts. Om du vill göra det måste företaget konfigureras att tillåta underleverans av inköpsorder. Dessutom måste en undertoleransprocent definieras för inköpsorderraden.
+
+Om du vill konfigurera företaget för att tillåta under leverans av inköpsorder, i Commerce-administration, gå till **Anskaffning och källa** > **Inställningar** > **Anskaffnings- och källparametrar**. På fliken **leverans**, aktivera parametern **acceptera underleverans**. Kör sedan distributionschemajobb **1070** (**kanalkonfiguration**) för att synkronisera ändringarna av inställningar till kanaler.
+
+Toleransprocent för underleverans för en inköpsorderrad kan fördefinieras på produkter som en del av produktkonfigurationerna i Commerce-administration. De kan också ställas in eller skrivas över på en specifik inköpsorder i Commerce-administration.
+
+När en organisation slutför konfigureringen av underleveranser för inköpsorder kommer kassaanvändare att se alternativet **Stäng resterande kvantitet** i fönstret **Information** när de väljer en inkommande inköpsorderrad i åtgärden **Inkommande lager**. Om en användare stänger den återstående kvantiteten utförs en validering i kassan i syfte att verifiera att den kvantitet som stängs ligger inom den procentsats för underleverans som har definierats på inköpsorderraden. Om underleveransens tolerans överskrids visas ett felmeddelande och användaren kan inte stänga den återstående kvantiteten förrän den tidigare mottagna kvantiteten plus den inlevererade kvantiteten **Ta emot nu** uppfyller eller överskrider den minsta kvantitet som måste inlevereras baserat på procentsatsen för underleveranstolerans. 
+
+Om alternativet **Stäng resterande kvantitet** option aktiverad för en inköpsorderrad när användaren slutför inleveransen med hjälp av åtgärden **Slutför mottagande** skickas en stängningsförfrågan också till Commerce-administration och eventuellt obetalt antal av denna orderrad kommer att annulleras. Vid den punkten betraktas raden som fullständigt inlevererad. 
 
 ### <a name="receiving-location-controlled-items"></a>Inleveransplatskontrollerade artiklar
 

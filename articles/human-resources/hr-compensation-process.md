@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 05f7be778857380d40a73d068e2b0b4fc7d1d1f6
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 979a4f311d59cb51cdf0fc6ce85d5b3338ffa870
+ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010601"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3958727"
 ---
 # <a name="process-compensation"></a>Bearbeta kompensation
 
@@ -44,7 +44,7 @@ Klicka på knappen **Lägg till** i fliken **Planer** om du vill lägga till en 
 
 Spara posten och klicka sedan på knappen **Lägg till** i fliken **Åtgärder** för att lägga till fasta kompensationsåtgärder för den markerade planen. Använd alternativet **Aktivera rekommendationer** om du vill ange ett annat belopp än den beräknade riktlinjeökningen för åtgärden. Om du vill beräkna en åtgärd baserat på resultatet av den föregående åtgärden och länka flera kompensationsåtgärder, markera alternativet **Använd föregående resultat**. Fasta kompensationsåtgärder är typer av kompensationslogik som du kan tilldela beskrivande namn till. För Klass- och Band-planer kan du bara lägga till fasta kompensationsåtgärder som är av följande typer:
 
-| Typen Fast kompensationsåtgärd | Funktionalitet                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Åtgärdstypen Fast kompensation | Funktionalitet                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Eget kapital                        | Eget kapital-åtgärder jämför medarbetarens lönesats per cykelns slutdatum med lägsta referenspunkten för de nivåer som anges för medarbetarens jobb. Om medarbetarens lönesats är lägre än den minsta referenspunkten beräknas ökningen som krävs för att få medarbetaren till den lägsta punkten i listan.                                                                                |
 | Merit                         | Meritåtgärder beräknar en ökning baserad på medarbetarens lönesats per cykelns slutdatum och ökningen i procent som finns i den fasta ökningsbudgeten för medarbetarens avdelning, fackförening och plats.                                                                                                                                                                                         |

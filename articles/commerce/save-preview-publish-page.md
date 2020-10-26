@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1e19594327c0042915bfae87f480434a7fcb159
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: db4866b22060b764fdde3e4a44e99e969133c0a0
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269991"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961620"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Spara, förhandsgranska och publicera en sida
 
@@ -38,9 +38,9 @@ När du sparar en sida är ändringarna bara synliga för dig. Åtgärden Spara 
 
 ## <a name="preview-a-page"></a>Förhandsgranska en sida
 
-I utvecklingsverktyget finns två typer av förhandsgranskningsfunktioner: förhandsgranskningsfönstret "vad du ser är vad du får" (WYSIWYG) i sidredigeraren och ett separat förhandsgranskningsfönster.
+I utvecklingsverktyget finns två typer av förhandsgranskningsfunktioner: visuell sidskapare som är "vad du ser är vad du får" (WYSIWYG) i sidredigeraren och ett separat förhandsgranskningsfönster.
 
-Medan du använder sidredigeraren visas förhandsgranskningen "vad du ser är vad du få" (WYSIWYG) i mittenfönstret. Den här förhandsgranskningen uppdateras automatiskt när du sparar sidan. Du kan också uppdatera den manuellt genom att välja **uppdatera** i kommandofältet. Förhandsgranskningen WYSIWYG visar sidan precis som användarna ser den, men redigeringshjälpare visas ovanpå den.
+Medan du använder sidredigeraren visas förhandsgranskningen "vad du ser är vad du få" (WYSIWYG) i mittenfönstret. Den här förhandsgranskningen uppdateras automatiskt när du sparar sidan. Du kan också uppdatera den manuellt genom att välja **uppdatera** i kommandofältet. Förhandsgranskningen visar sidan precis som användarna ser den, men redigeringshjälpare visas ovanpå den.
 
 När du är klar med ändringarna av sidan kanske du vill förhandsgranska den för att se vad kunderna kommer att se. Om du vill förhandsgranska en sida väljer du **förhandsgranska** i kommandofältet. Förhandsgranskningen visas i ett separat webbläsarfönster. Sidan i förhandsgranskningsfönstret återges på samma sätt som webbplatsens användare kommer att se den. Du kan ändra storlek på fönstret för att säkerställa att alla tillgängliga moduler visas korrekt i alla visningsportar.
 
