@@ -3,7 +3,7 @@ title: Kortkommandon
 description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med Finance and Operations-appar.
 author: jasongre
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41d5fb270e7b01effc650b24626b81ced647a399
-ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
+ms.openlocfilehash: 982fbef1af504ad70aa0e7c4ecf19f09fb599d16
+ms.sourcegitcommit: ebb110b0b73c99929636d26811a6f9c186080ddb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761631"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3962530"
 ---
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
@@ -32,6 +32,8 @@ Du kan använda följande kortkommandon för att snabbt och effektivt mata in da
 
 > [!NOTE]
 > Tangentbordsgenvägarna som beskrivs här hänvisar till en amerikansk tangentbordslayout. Knappar på andra tangentbordslayouter kan kanske inte exakt motsvarar tangenterna på ett tangentbord i USA.
+
+Vissa av genvägarna på den här sidan är *nyckelackord*, vilket innebär att de kräver två på varandra följande kombinationer av tangentkombinationer (avgränsade med ett komma) som måste tryckas separat för att utlösa den begärda åtgärden. Till exempel genvägen "Alt+M,A" kräver att användaren först trycker på "Alt+M", släpper upp tangenterna och trycker på "A". 
 
 ## <a name="finding-a-shortcut"></a>Söka efter en genväg
 
@@ -193,7 +195,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Flytta till huvudsidans innehåll (med fokus i ett annat fönster)                    | Alt+M,M                    |
 | Flytta till faktaboxen (som kan inkludera att öppna den)                       | Alt+M,B eller Ctrl+F2         |
 
-## <a name="personalization-shortcuts"></a>Kortkommandon för anpassning
+## <a name="personalization-shortcuts"></a>Kortkommandon [anpassning](personalize-user-experience.md) 
 
 | Om du vill göra detta                                                                                                             | Tryck                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
@@ -237,7 +239,20 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Flytta upp/ned en sida i uppslagningen                                                                                       | Page Up / Page Down              |
 | Flytta till längst upp/längst ned i uppslagningen                                                                                    | Startsida/slut                       |
 
+## <a name="task-recordershortcuts"></a>Kortkommandon [Uppgiftsinspelare](../../dev-itpro/user-interface/task-recorder.md) 
+
+| Om du vill göra detta                                                                    | Tryck på                       |
+|-------------------------------------------------------------------------------|----------------------------|
+| Stoppa inspelningen (under inspelning)                                          | Alt+R,S                    |
+| Växla synligheten för fönstret uppgiftsinspelning (under inspelning)             | Alt+R,T                    |
+| Växla räler (när en uppgiftsguide spelas upp)                                | Alt+R,L                    |
+| Gå till föregående steg (medan du spelar en uppgiftsguide)                          | Alt+R,P                    |
+| Gå till nästa steg (medan du spelar en uppgiftsguide)                              | Alt+R,N                    |
+| Växla mellan sidan och det animerade popup-meddelandet (medan en uppgiftsguide spelas upp) | Alt+R,F               |
+| Visa/dölj det animerade popup-meddelandet (under uppspelning av en uppgiftsguide)              | Alt+R,C                    |
+| Visa mer/mindre information i det animerade popup-meddelandet (under uppspelning av en uppgiftsguide) | Alt+R,M                    |
+
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-- [Tangentbordsgenvägar för analys av saknade konton](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
+[Tangentbordsgenvägar för analys av saknade konton](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
