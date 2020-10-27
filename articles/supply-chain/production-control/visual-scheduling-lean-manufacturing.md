@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6710dcb1cb53e7221b03b35ceee5ac8e055b6dd2
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.openlocfilehash: 45a63ab0f5baadf6bef646224b3f0bf5327ee923
+ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826416"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3958751"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Visuell tidsplanering för lean manufacturing
 
@@ -61,7 +61,7 @@ Sidan **Kanban-schematavla** innehåller sju huvudelement som visas på bilden n
 
 ### <a name="view-the-time-scale"></a>Visa tidsskalan
 
-Tavlan är indelad i perioder som var och en representeras av en nod (4). Periodens noder visas på den lodräta axeln och den vågräta åtkomsten representerar en tidsskala (7) som visar periodens längd. En period är antingen en dag eller en vecka. Periodens längd fastställs av konfigurationen av den arbetsgrupp som valts för kanban-schematavlan (2). Kanban-schematavlan anger hur många planerade kanban-jobb som läser in under perioden för varje periodnod. Det finns även en indikation på maximalt flöde under perioden. Om det planerade flödet överskrider det maximala flödet, anses perioden vara överbelastad och en röd varningssymbol visas. Ett tidsplanerat kanban-jobb visas under en period som har tidsplanerade start- och sluttider (5). Jobbets varaktighet motsvarar aktivitetstiden. Kanban-jobb visas som överlappning under en period om deras aktivitetstider överskrider takttiden för arbetsgruppen.
+Tavlan är indelad i perioder som var och en representeras av en nod (4). Periodens noder visas på den lodräta axeln och den vågräta axeln representerar en tidsskala (7) som visar periodens längd. En period är antingen en dag eller en vecka. Periodens längd fastställs av konfigurationen av den arbetsgrupp som valts för kanban-schematavlan (2). Kanban-schematavlan anger hur många planerade kanban-jobb som läser in under perioden för varje periodnod. Det finns även en indikation på maximalt flöde under perioden. Om det planerade flödet överskrider det maximala flödet, anses perioden vara överbelastad och en röd varningssymbol visas. Ett tidsplanerat kanban-jobb visas under en period som har tidsplanerade start- och sluttider (5). Jobbets varaktighet motsvarar aktivitetstiden. Kanban-jobb visas som överlappning under en period om deras aktivitetstider överskrider uppgiftstiden för arbetsgruppen.
 
 ### <a name="view-job-status"></a>Visa jobbstatus
 

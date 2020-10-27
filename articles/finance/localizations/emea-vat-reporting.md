@@ -14,15 +14,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 266844
 ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, Latvia, Lithuania, Netherlands, Sweden
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2a9b5bafb70883d9daf35a7d5a9107d7aee23469
-ms.sourcegitcommit: 98ef9178b28cd548f08f8c32255636e6e09b25f2
+ms.openlocfilehash: 65ea2f40171a470cab0550aecff07567be4aaa78
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "3395988"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983072"
 ---
 # <a name="vat-reporting-for-europe"></a>Momsrapporter för Europa
 

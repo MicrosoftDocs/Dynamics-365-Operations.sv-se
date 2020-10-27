@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: baa8207f9f3a3de071033c4c70f60a339ec5e083
-ms.sourcegitcommit: d25d0feb3f8a5a760eba50ba5f46e1db02737d25
+ms.openlocfilehash: 7fa2684340f5ce45b99ff9aee9937071f936b81a
+ms.sourcegitcommit: 2bc8e760c7a82572c7eafd51f2e57ef11b4ca98b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3677348"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900996"
 ---
 # <a name="shipment-auto-updates"></a>Automatiska uppdateringar för leveranser
 
@@ -39,7 +39,7 @@ Funktionen automatiska uppdateringar för leveranser gäller både försäljning
 
 Funktionen för automatisk uppdatering av leverans är i huvudsak beroende av leveransstatus för att bestämma om kvantiteten på en lastrad ska ändras när en ändring görs på en försäljningsorderrad eller överföringsorderrad. Den förlitar sig också på leveransstatusen för att fastställa när en ny lastrad automatiskt ska läggas till i en befintlig last. När leveransstatus är **påfylld** eller högre sker ingen automatisk uppdatering.
 
-Påfyllningsstatus övervägs också för automatiska uppdateringar. Om den påfyllnad som är kopplad till lastraden har status **hålls**, **körs**, **frisläppt**, **plockad** eller **levererad** om en användare försöker minska kvantiteten på en lastrad (via en minskning av kvantiteten på försäljningsorderrad eller överföringsorderraden) visas följande felmeddelande: "reservationer kan inte tas bort eftersom det finns arbete skapat som använder reservationerna." När påfyllnad har en av de tidigare nämnda påfyllnadsstatus och en användare försöker indirekt öka lastradens kvantitet genom att minska kvantiteten på försäljningsorderraden eller överföringsorderraden, är kvantiteten på lastraden inte automatiskt öka. I det här fallet måste lastraden uppdateras manuellt.
+Påfyllningsstatus övervägs också för automatiska uppdateringar. Om den påfyllnad som är kopplad till lastraden har status **hålls**, **körs**, **frisläppt**, **plockad** eller **levererad** om en användare försöker minska kvantiteten på en lastrad (via en minskning av kvantiteten på försäljningsorderrad eller överföringsorderraden) visas följande felmeddelande: "reservationer kan inte tas bort eftersom det finns arbete skapat som använder reservationerna." När påfyllnad har en av de tidigare nämnda påfyllnadsstatus och en användare försöker indirekt öka lastradens kvantitet genom att öka kvantiteten på försäljningsorderraden eller överföringsorderraden, är kvantiteten på lastraden inte automatiskt öka. I det här fallet måste lastraden uppdateras manuellt.
 
 ## <a name="scenarios"></a>Scenarier
 

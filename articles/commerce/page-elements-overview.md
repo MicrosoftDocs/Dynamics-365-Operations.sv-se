@@ -3,7 +3,7 @@ title: Ordlista för sidmodell
 description: I det här avsnittet beskrivs de olika element som används på sidorna på en Microsoft Dynamics 365 Commerce-webbplats.
 author: phinneyridge
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: da41440581ad952540c7dcf3caa5e23582198a36
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 5c772a19958ebf0687d09af4c3055c733d99d750
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026004"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973919"
 ---
 # <a name="page-model-glossary"></a>Ordlista för sidmodell
 
@@ -54,6 +54,8 @@ Följande tabell innehåller en sammanfattning av termer som du bör känna till
 [Dokumentera tillstånd och livscykel](document-states-overview.md)
 
 [Arbeta med publiceringsgrupper](publish-groups.md)
+
+[Aktivera och använda delning av flera kanaler](cross-channel-sharing.md)
 
 [Arbeta med moduler](work-with-modules.md)
 

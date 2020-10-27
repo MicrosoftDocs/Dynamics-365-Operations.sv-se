@@ -16,15 +16,15 @@ ms.custom: 72653
 ms.assetid: c5fa4b09-512d-4349-ac51-cc13da69a160
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52e5f42f41a95897003f707f408a9d325dc31470
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6d0de588d54948d89f636cadeb66c3d9e6878015
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203881"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982879"
 ---
 # <a name="demand-forecasting-setup"></a>Behovsprognoser inställning
 
@@ -82,13 +82,13 @@ Gå till **Huvudplanering** &gt; **Inställningar** &gt; **Efterfrågeprognostic
 
 På fliken **allokeringsnycklar** kan du ställa in parametrar **Parametrar för prognosalgoritm** för varje artikelallokeringsnyckel. Följande alternativ är tillgängliga.
 - **Konfidensnivå i procent**: Ett konfidensintervall består av ett antal värden som fungerar som goda prognoser för efterfrågan. En 95-procentig konfidensnivå procenttal indikerar att det finns en 5-procentig risk att framtida efterfrågan faller utanför konfidensintervallet.
-- **Framtvinga säsongsvariationer**: anger om modellen ska använda en viss typ av säsongsvariationer. Gäller endast ARIMA och ETS. Alternativ: AUTO (standard), NONE, ADDITIVE, MULTIPLICATIVE.
+- **Framtvinga säsongsvarianter**: anger om modellen ska använda en viss typ av säsongsvarianter. Gäller endast ARIMA och ETS. Alternativ: AUTO (standard), NONE, ADDITIVE, MULTIPLICATIVE.
 - **Prognosmodell**: alternativ: ARIMA, ETS, STL, ETS+ARIMA, ETS+STL, ALL. För att välja den modell som passar bäst, använd **ALL**.
 - **Maximalt prognostiserat värde**: anger det högsta värde som ska användas för prognoser. Format: + 1E[n] eller numerisk konstant.
 - **Minimalt prognostiserat värde**: anger det minsta värde som ska användas för prognoser. Format: -1E[n] eller numerisk konstant.
 - **Värdeersättning saknas**: anger hur luckor i historiska data ska fyllas i. Alternativ: numeriskt värde, MEAN, PREVIOUS, INTERPOLATE LINEAR, INTERPOLATE POLYNOMIAL.
 - **Intervall för ersättning för saknat värde**: Anger om värdesubstitutionen endast gäller dataområdet för varje enskilt granularitetsattribut eller för hela datauppsättningen. Alternativ: GRANULARITY_ATTRIBUTE (standard), GLOBAL.
-- **Ledtråd för säsongsvariationer**: för säsongsvariationsdata anger du en ledtråd för prognosmodellen för att förbättra prognosnoggrannheten. Format: heltal som representerar antalet grupper som ett efterfrågansmönster upprepas. Ange till exempel "6" för data som upprepas var 6:e månad.
+- **Ledtråd för säsongsvarianter**: för säsongsvariationsdata anger du en ledtråd för prognosmodellen för att förbättra prognosnoggrannheten. Format: heltal som representerar antalet grupper som ett efterfrågansmönster upprepas. Ange till exempel "6" för data som upprepas var 6:e månad.
 - **Testuppsättningsstorlek i procent**: Procentandel av historiska data som ska användas som testuppsättning för beräkning av prognosexakthet. 
 
 <a name="additional-resources"></a>Ytterligare resurser

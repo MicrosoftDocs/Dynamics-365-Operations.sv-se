@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Sweden
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a15145d6a1ae50a1688a55414c012953391819b8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3389b536bb14aac310a7605291ce579ddcda92ab
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175234"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983079"
 ---
 # <a name="export-financial-information-for-auditors-in-sweden"></a>Exportera ekonomisk information för revisorer i Sverige
 

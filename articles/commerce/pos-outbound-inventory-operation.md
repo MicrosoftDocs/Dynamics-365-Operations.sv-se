@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 026d25717dec8c5633f19fe63c6d6f64284d322d
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646169"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971555"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Utgående lageråtgärder i kassan
 
@@ -164,7 +164,7 @@ Funktionen **granska** validerar följande problem i ett utgående dokument:
 - **Ingen plats angiven** – ingen plats har angetts för en plats kontrollerad artikel där tom plats inte är tillåten.
 - **Borttagna rader** – ordern har rader tagits bort av Commerce-administration (HQ) som inte är känd för kassaprogram.
 
-Om du ställer in parametern **Aktivera automatisk validering** till **Ja** i **Commerce-parametrar** > **Lager** > **Lagerhantering** om du vill att valideringen ska utföras automatiskt när **Slutför uppfyllelse** är vald.
+Om du ställer in parametern **Aktivera automatisk validering** till **Ja** i **Commerce-parametrar** > **Lager** > **Lagerhanteringsåtgärder** om du vill att valideringen ska utföras automatiskt när **Slutför uppfyllelse** är vald.
 
 ### <a name="finish-fulfillment"></a>Slutför expediering
 

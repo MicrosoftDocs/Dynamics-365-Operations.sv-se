@@ -3,7 +3,7 @@ title: Human Resources-app i Teams
 description: Detta avsnitt introducerar Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/01/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 33322b9b553076125695f257b201463e9d8275c6
-ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
+ms.openlocfilehash: 51f04e553da822c4e09d31bcd72c71b674ad1f1b
+ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3828924"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3930027"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-app i Teams
 
 [!include [banner](includes/preview-feature.md)]
 
-Med hjälp av Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan personalen snabbt begära ledighet och visa information om sitt ledighetssaldo i Microsoft Teams. Personalen kan interagera med en robot för att begära information. Fliken **Ledighet** ger detaljerade information. Dessutom kan de skicka människor information om kommande ledigheter i Teams och chatta utanför Human Resources-appen.
+Med hjälp av Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan personalen snabbt begära ledighet och visa information om sitt ledighetssaldo i Microsoft Teams. Personalen kan interagera med en robot för att begära information. Fliken **Ledighet** visar mer detaljerad information. Dessutom kan de skicka personuppgifter om kommande ledighet i team och chattar utanför Human Resources-appen.
 
 ![Human Resources Teams-approbot för tjänstledighet](./media/hr-admin-teams-leave-app-bot.png)
 
@@ -90,6 +90,22 @@ När du har aktiverat meddelanden för Human Resources Teams-appen kan du aktive
 | Saldot är felaktigt när ledighet skickas in för ett framtida datum. | Prognosticering är ännu ej tillgänglig. Saldot visas för det aktuella datumet. |
 | Det går inte att avbryta en **Granskas**-begäran. | Den här funktionen stöds för närvarande inte, men kommer att läggas till i en framtida version. |
 | Information om saldo beräknas från och med idag. | Systemet visar för närvarande inte saldon per periodiseringsperioden, även om det har konfigurerats bland parametrarna för Tjänstledighet. |
+
+## <a name="troubleshooting"></a>Felsökning
+
+Om en användare har problem med att logga in på eller använda appen Human Resources Teams kan du försöka följa dessa instruktioner för felsökning. Om du fortfarande har problem efter felsökningen kontaktar du supporten. För mer information, se [Få support](hr-admin-troubleshooting-support.md).
+
+### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Det går inte att logga in på Human Resources-appen i Teams
+
+Om en användare kontaktar dig eftersom de inte kan logga in i appen, kontrollerar du att användaren har en associerad medarbetarpost i Human Resources.
+
+### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Fel vid godkännande av tjänstledighetsbegäranden i Human Resources-appen i Teams
+
+Om en användare får ett fel när han eller hon försöker godkänna tjänstledighetsbegäranden i Teams-appen ska du utföra följande åtgärder för felsökning:
+
+1. Kontrollera att deras Teams-konton är samma som de använder för att få tillgång till Human Resources.
+
+2. Kontrollera att de är giltiga godkännare för begäran genom att kontrollera arbetsflödesinställningarna för att godkännande av tjänstledighet. Mer information om att lämna arbetsflöden för förfrågningar finns i [skapa ett arbetsflöde för tjänstledighetsbegäran](hr-leave-and-absence-workflow.md).
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
 

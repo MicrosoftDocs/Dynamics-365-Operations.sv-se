@@ -3,7 +3,7 @@ title: Hantera ansökningar om ledighet i Teams
 description: I det här avsnittet beskrivs hur du begär ledighet i Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c7b74983cbddf661456b0a65939e272078d59f6d
-ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
+ms.openlocfilehash: c6856e417ee47f8f582f797c5bcedcff23a1432f
+ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3828954"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "3930003"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Hantera ansökningar om ledighet i Teams
 
@@ -171,6 +171,22 @@ Om du är chef med underställda kan du visa teamets godkända och väntande led
 Kalendern visar dina underställdas godkända och väntande ledighet.
 
 ![Ledighetskalender i Human Resources Teams-app](./media/hr-teams-leave-app-calendar.png)
+
+## <a name="troubleshooting"></a>Felsökning
+
+Om du har problem med att logga in på eller använda appen Human Resources Teams kan du försöka följa dessa instruktioner för felsökning. Om du fortfarande har problem efter felsökningen kontaktar du supporten. För mer information, se [Få support](hr-admin-troubleshooting-support.md).
+
+### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Det går inte att logga in på Human Resources-appen i Teams
+
+Om du inte kan logga in i appen är det möjligt att det konto du använder för att logga in i Microsoft Teams inte är associerat med en medarbetarpost i Dynamics 365 Human Resources. Kontakta systemadministratören för att se till att din medarbetarpost är korrekt associerad.
+
+### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Fel vid godkännande av tjänstledighetsbegäranden i Human Resources-appen i Teams
+
+Om du får ett fel när du försöker godkänna tjänstledighetsbegäranden i Teams-appen ska du utföra följande åtgärder för felsökning:
+
+1. Kontrollera att det konto som du använder för att logga in Microsoft Teams är det som du använder för att komma åt Dynamics 365 Human Resources.
+
+2. Kontrollera att de är giltiga godkännare för begäran genom att kontrollera arbetsflödesinställningarna för att godkännande av tjänstledighet. Mer information om att lämna arbetsflöden för förfrågningar finns i [skapa ett arbetsflöde för tjänstledighetsbegäran](hr-leave-and-absence-workflow.md).
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
 

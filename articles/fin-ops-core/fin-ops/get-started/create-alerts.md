@@ -3,7 +3,7 @@ title: Skapa notifieringsregler
 description: Det här avsnittet innehåller information om notifieringar och förklarar hur du skapar en notifieringsregel så att du meddelas om händelser, t.ex. ett datum som anländer eller en viss händelse som inträffar.
 author: tjvass
 manager: AnnBe
-ms.date: 02/19/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 85d4774bc710f0c48b384601e5505f11394cf5d5
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 94b68138066867fad641c70a1674c9292920ec6a
+ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3075934"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3970689"
 ---
 # <a name="create-alert-rules"></a>Skapa notifieringsregler
 
@@ -92,3 +92,14 @@ Notifieringar kan skickas externt med hjälp av ramverket för affärshändelse.
 7. På snabbfliken **Notifiera med** på fältet **Ämne**, acceptera standardämnet för e-postmeddelandet eller ange ett nytt ämne. Texten som används som ämne för e-postmeddelandet som du får när en notifiering initieras. Om du vill skicka notifieringen som en affärshändelse ställer du in **skicka externt** till **Ja**.
 8. Skriv ett valfritt meddelande i fältet **Meddelande**. Den text används som meddelandet som du får när en notifiering utlöses.
 9. Välj **OK** om du vill spara inställningarna och skapa notifieringsregeln.
+
+## <a name="limitations-and-workarounds"></a>Begränsningar och lösningar
+
+### <a name="workaround-for-creating-alerts-for-the-secondary-data-sources-of-a-form"></a>Lösning för att skapa varningar för sekundära datakällor i ett formulär
+Det går inte att skapa notifieringar för vissa sekundära datakällor i formulär. När du till exempel skapar notifieringar i formuläret kund eller leverantör bokföringsprofil, är endast fälten i huvudet (CustLedger eller VendLedger) tillgängliga och inte dimensionskontona. Lösningen för den här begränsningen är att använda **SysTableBrowser** för att öppna registret som primär datakälla. 
+1. Öppna registret formuläret **SysTableBrowser**.
+    ```
+        https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>
+    ```
+2. Skapa en notifiering från formuläret SysTableBrowser.
+

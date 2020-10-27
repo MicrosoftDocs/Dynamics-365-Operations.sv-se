@@ -1,9 +1,9 @@
 ---
 title: Hantera omdömen och recensioner
-description: I det här avsnittet beskrivs hur du hanterar värderingar och recensioner med hjälp av Microsoft Dynamics 365 Commerce klassificeringar och recensioner.
+description: Det här avsnittet innehåller information om hur du hanterar recensioner i Microsoft Dynamics 365 Commerce-webbplatsskaparen.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 01/30/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,38 +18,30 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a7fa2ae3124a0a68b3890987c5dce2730e5c2183
-ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
+ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3027252"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3974016"
 ---
 # <a name="manage-ratings-and-reviews"></a>Hantera omdömen och recensioner
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du hanterar värderingar och recensioner med hjälp av Microsoft Dynamics 365 Commerce klassificeringar och recensioner.
+Det här avsnittet innehåller information om hur du hanterar recensioner i Microsoft Dynamics 365 Commerce-webbplatsskaparen.
 
 ## <a name="overview"></a>Översikt
 
-Dynamics 365 Commerce använder Microsoft Azure kognitiva tjänster för att automatiskt moderera granskningstext genom att ta bort redigering av svordomar. Dessutom kan moderatorerna använda redigeringsverktyget för klassificeringar och recensioner för följande manuella uppgifter:
+Dynamics 365 Commerce använder Microsoft Azure kognitiva tjänster för att automatiskt moderera granskningstext genom att ta bort redigering av svordomar. Dessutom kan moderatorer använda Dynamics 365 Commerce webbplatsskaparen för att implementera följande manuella uppgifter:
 
 - Moderera granskningar genom att svara på dem eller ta bort dem.
 - Ta bort en kunds recensioner på kundens begäran.
 - Massimport av omdömen och granskningsdata för alla produkter i en Microsoft Power BI-mall, så att trender för omdömen och recensioner kan analyseras.
 
-## <a name="access-ratings-and-reviews-moderation-features"></a>Åtkomstklassificering och granskning av redigeringsfunktioner
-
-Om du vill få åtkomst till klassificeringsfunktioner och recensioner av redigeringsfunktionerna i verktyget för webbplatshantering i e-handel följer du stegen nedan.
-
-1. Logga in på [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com).
-1. Öppna det projekt som innehåller den miljö där du vill initiera e-handel.
-1. Välj miljön avsnittet **miljöer**.
-1. Under **Miljöfunktioner**, välj **Butik – hantera**.
-1. På fliken **e-handel** under **länkar** väljer du **Hanteringsverktyg för näthandelsplats**.
-
 ## <a name="read-a-review"></a>Läs en recension 
+
+För läs till en recension i din Commerce-webbplatsskapare.
 
 1. Gå till **start \> recensioner \> moderator**.
 1. Använd sökfältet högst upp till höger på sidan om du vill filtrera granskningarna som visas i produkt-ID, produktnamn eller granska text.
@@ -62,7 +54,7 @@ Med hjälp av fler filter kan du begränsa granskningarna efter period, klassifi
 
 Ibland kan kunder som köpte en produkt uttrycka sig eller vara missnöjda, eller så förstår de inte hur produkten används. Som moderator kan du publicera ett svar på en recension. Det här svaret visas tillsammans med recensionen på webbplatsen. 
 
-Följ de här stegen om du vill svara på en recension.
+För svara till en recension i din Commerce-webbplatsskapare.
 
 1. Gå till **start \> recensioner \> moderator**.
 1. Sök efter och välj den recension som kräver ett svar.
@@ -76,20 +68,20 @@ Följ de här stegen om du vill svara på en recension.
 
 Ibland finns det en affärsjustering för moderatorer som kan ta ned kundens recension. 
 
-Följ de här stegen om du vill ta ned en recension.
+För de här stegen en recension i din Commerce-webbplatsskapare.
 
 1. Gå till **start \> recensioner \> moderator**.
 1. Sök efter och välj den recension som måste tas ned.
-1. I egenskapsrutan till höger väljer du en orsak till nedtagning och väljer sedan **Ta ned**.
+1. I egenskapsrutan till höger väljer du en orsak till nedtagning under **Ta ner en recension** och sedan **Ta ned**.
     
 ## <a name="delete-a-customers-reviews-at-the-customers-request"></a>Ta bort en kunds recensioner på kundens begäran. 
 
 Ibland vill kunderna ha sina värderingar och granska data permanent från en näthandelsplats. En moderator som tar emot en begäran om borttagning från en kund kan ta bort kundens data genom att använda funktionen borttagning av recension. För att kunna söka efter och ta bort en kunds data måste moderatorn ange e-postadressen som kunden använde för att logga in och ge recensioner. 
 
-Om du vill söka efter och ta bort kunddata gör du följande:
+Om du vill söka efter och ta bort kunddata i Commerce-webbplatsskaparen följer du stegen nedan.
 
 1. Gå till **start \> recensioner \> ta bort**.
-1. I fältet **Sök efter användare via e-postadress**, ange kundens e-postadress och välj **Sök**.
+1. I rutan **Sök efter användare via e-postadress**, ange kundens e-postadress och välj **Sök**.
 1. Om kunden har en recensionsaktivitet (t.ex. skicka recensioner, röster om användbarheten hos en annan kunds recension eller kommentarer om en annan kunds recension) visas resultatet. För varje artikel finns det en **borttagnings**-knapp.
 1. Välj **ta bort** för varje artikel som måste tas bort. Välj **ja** när du ombeds bekräfta att det är klart. 
     
@@ -101,18 +93,18 @@ Om du vill söka efter och ta bort kunddata gör du följande:
 
 ## <a name="download-ratings-and-reviews-data"></a>Hämta klassificerings- och granskningsdata
 
-Med klassificerings- och granskningsverktyget kan moderatorer importera klassificeringar och granska data i bulk, så att de kan analysera trender. En Power BI-mall som innehåller grundläggande mått finns tillgänglig. Moderatorerna kan använda den här mallen för att ansluta data i massimporterade och visa en instrumentpanel. De behöver inte skapa en egen instrumentpanel. Moderatorerna kan också anpassa Power BI-mallen efter specifika behov. 
+Commerce-webbplatsskaparen låter moderatorer importera klassificeringar och granska data i bulk, så att de kan analysera trender. En Power BI-mall som innehåller grundläggande mått finns tillgänglig. Moderatorerna kan använda den här mallen för att ansluta data i massimporterade och visa en instrumentpanel. De behöver inte skapa en egen instrumentpanel. Moderatorerna kan också anpassa Power BI-mallen efter specifika behov. 
 
-Hämta klassificerings- och recensioner av data enligt följande instruktioner.
+Om du vill ladda ner betyg och recensionsdata i Commerce-webbplatsskaparen följer du stegen nedan.
 
 1. Gå till **start \> recensioner \> rapporter**.
-1. Välj **hämta klassificeringsdata** om du vill hämta klassificeringar och granska data i bulk i CSV-format (kommaavgränsade värden).
+1. Välj **hämta recensionsdata** om du vill hämta klassificeringar och granska data i bulk i CSV-format (kommaavgränsade värden).
 
 ## <a name="view-ratings-and-reviews-trends"></a>Visa trender för omdömen och recensioner
 
 Moderatorerna kan hämta Power BI-mallen så att de kan visa trender på en instrumentpanel.
 
-För att visa klassificerings- och recensionstrender, följ stegen nedan.
+Om du vill visa klassificeringar och recensionstrender i Commerce-webbplatsskaparen följer du stegen nedan.
 
 1. Gå till **start \> recensioner \> rapporter**.
 1. Välj **PowerBI-mall** om du vill hämta mallen.

@@ -3,7 +3,7 @@ title: Borttagna eller avskrivna plattformsfunktioner
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning i plattformsuppdatering av Finance and Operations-appar.
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0b78401f4c1cf289247cd2d600f097ecdf6a712c
-ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
+ms.openlocfilehash: 51d1d0ed2ce95573ec123121999d73446a7e4ea4
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "3819899"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971455"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller avskrivna plattformsfunktioner
 
@@ -34,6 +34,22 @@ I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerat
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
 Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
+
+## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.15 för Finance and Operations-appar
+
+> [!NOTE]
+> Version 10.0.15 är en förhandsgranskningsversion. Funktionen och dess innehåll kan ändras. Mer information om förhandsversioner finns i [Frågor och svar om tjänstuppdateringar för en version](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio tillägg för att tillämpa snabbkorrigeringar för metadata
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Snabbkorrigeringar för metadata stöds inte längre med [en version](../../fin-ops/get-started/one-version.md) tjänst uppdatering som introducerades i juli 2018 med version 8.1. |
+| **Ersatt av en annan funktion?**   | Enskilda snabbkorrigeringar för metadata är inte tillgängliga för versioner som stöds. Kumulativa kvalitetsuppdateringar tillämpas i stället. |
+| **Produktområden som påverkas**         | Visual Studio tillägg |
+| **Distribueringsalternativ**              | Virtuella datorers utveckling |
+| **Status**                         | Med version 10.0.15 ingår inte längre tillägget i Visual Studio-verktygen. |
+
 
 ## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.14 för Finance and Operations-appar
 
@@ -50,6 +66,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Produktområden som påverkas**         | Systemadministration |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | I oktober 2021 kommer det här formuläret att tas bort.   |
+
 
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.13 för Finance and Operations-appar
 

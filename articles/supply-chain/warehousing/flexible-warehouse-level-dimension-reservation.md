@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 65304216b579b8def493d1e4218174cb9617013d
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: d75e6a8b48447a33156e03d50e990b8514bacda9
+ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652189"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3970713"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexibel reservationspolicy för dimension på lagernivå
 
@@ -233,6 +233,9 @@ Om en artikel för ett lagerställe består av rader som är lika med en komplet
 ![Menyalternativet mobilen där alternativet hantera efter ID-nummer är inställt på Ja](media/Handle-by-LP-menu-item.png)
 
 Eftersom funktionen **Hantera efter ID-nummer** inte stöder arbete som täcker flera lastpallar, är det bättre att ha en separat arbetsuppgift för olika ID-nummer. Om du vill använda den här metoden lägger du till fältet **orderallokerade reservation av ID-nummer** som en sidhuvudsbrytning på sidan **arbetsmall**.
+
+> [!NOTE]
+> Värdet för skapande av beställd lagerdimension kommer att tilldelas till plockarbetsraderna och det går inte att visa registreringsskyltens värde direkt. Endast den *användarspecifika* processen stöds när du konfigurerar ett menyalternativ för mobila enheter.
 
 ## <a name="example-scenario-set-up-and-process-an-order-committed-license-plate-reservation"></a>Exempelscenario: Ställ in och bearbeta en beställning med utfästa registreringslicenser
 

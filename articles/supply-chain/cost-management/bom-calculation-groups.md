@@ -16,15 +16,15 @@ ms.custom: 94063
 ms.assetid: 63e1b7dc-c2c5-41b0-81ed-e3e02d1b39e0
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 522c7f5b29e109f63dab9fd79f1fe9caf2db733e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6e4f53401d604ce3c8308ed475a0b6147805cb78
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202041"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983583"
 ---
 # <a name="bom-calculations-groups"></a>Beräkningsgrupper för strukturlista
 
@@ -94,7 +94,7 @@ En strukturlisteberäkning genererar varningsmeddelanden. Du kan visa varningar 
 -   Identifiera när artikeln på en strukturlisterad har en inaktuell kostnad. Varningen genereras efter en jämförelse mellan beräkningsdatumet och det angivna antalet dagar för kostnadens maximala ålder.
 -   Identifiera när artikeln på en strukturlisterad har en lägre vinstmarginal än du önskar.
 
-Du kan definiera flera beräkningsgrupper för strukturlistor, beroende på dina krav för variationer i varningsmeddelanden. Det kan till exempel räcka med en beräkningsgrupp för strukturlistor som visar ett varningsmeddelande om en aktiv strukturlista eller om en komponentkvantitet som är lika med 0 (noll). När du startar beräkningen av en strukturlista kan du åsidosätta varningsvillkoren som är kopplade till beräkningsgruppen för strukturlistor. Du kan också lägga till eller ta bort varningsvillkor. Om den aktuella situationen inte berör flödesdata kan du exempelvis ta bort varningsvillkoret för ett aktivt flöde. **Obs!** Sidan **Beräkningsgrupper** inkluderas i Tid och närvaro, men har ingen koppling till beräkningsgrupper för strukturlistor. I Tid och närvaro kan arbetstagare tilldelas till beräkningsgrupper som återspeglar grupperingen av arbetstagare som är associerade med samma arbetsledare eller chef. Beräkning av arbetstagarregistreringar kan utföras automatiskt eller manuellt av en arbetsledare eller chef.
+Du kan definiera flera beräkningsgrupper för strukturlistor, beroende på dina krav för varianter i varningsmeddelanden. Det kan till exempel räcka med en beräkningsgrupp för strukturlistor som visar ett varningsmeddelande om en aktiv strukturlista eller om en komponentkvantitet som är lika med 0 (noll). När du startar beräkningen av en strukturlista kan du åsidosätta varningsvillkoren som är kopplade till beräkningsgruppen för strukturlistor. Du kan också lägga till eller ta bort varningsvillkor. Om den aktuella situationen inte berör flödesdata kan du exempelvis ta bort varningsvillkoret för ett aktivt flöde. **Obs!** Sidan **Beräkningsgrupper** inkluderas i Tid och närvaro, men har ingen koppling till beräkningsgrupper för strukturlistor. I Tid och närvaro kan arbetstagare tilldelas till beräkningsgrupper som återspeglar grupperingen av arbetstagare som är associerade med samma arbetsledare eller chef. Beräkning av arbetstagarregistreringar kan utföras automatiskt eller manuellt av en arbetsledare eller chef.
 
 
 

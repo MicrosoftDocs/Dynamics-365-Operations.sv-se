@@ -3,7 +3,7 @@ title: Kom igång med tillägget elektronisk fakturering
 description: Det här avsnittet innehåller information som hjälper dig att komma igång med tillägget elektronisk fakturering i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 61933bb846383932d7dd73e9c4d3c2db7a515a98
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: e7f58b8a449e056c4718ac6db30dcd0f0623d2a4
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3836039"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971482"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Kom igång med tillägget elektronisk fakturering
 
@@ -62,7 +62,7 @@ Du kan använda tillägget elektronisk fakturering med din aktuella licens. Det 
 Innan du kan slutföra stegen i detta ämne måste du ha följande förutsättningar :
 
 - Åtkomst till ditt LCS-konto.
-- Ett LCS distributionsprojekt som innehåller Finance eller Supply Chain Management version 10.0.12 eller senare.
+- Ett LCS distributionsprojekt som innehåller Finance eller Supply Chain Management version 10.0.13 eller senare.
 - Åtkomst till ditt RCS-konto.
 - Aktivera globaliseringsfunktionen för ditt RCS-konto via modulen för **funktionshantering**. Mer information finns i [Regulatory Configuration Services (RCS) - globaliseringsfunktioner](rcs-globalization-feature.md)
 - Skapa en resurs för nyckelvalv och lagringskonto i Azure. Mer information finns i [Skapa Azure Storage-konto och nyckelvalv](e-invoicing-create-azure-storage-account-key-vault.md).
@@ -85,16 +85,18 @@ Följande illustration visar de fem huvudsteg som du kommer att utföra i det h�
 ## <a name="lcs-setup"></a>Inställning av LCS
 
 1. Logga in på LCS-kontot.
-2. Välj LCS distributionsprojekt. Innan du kan välja projektet måste det köras.
-3. På snabbfliken **Miljötillägg** välj **Installera ett nytt tillägg**.
-4. Välj **Skicka affärsdokument**.
-5. I dialogrutan **Tillägg för konfiguration** i fältet **AAD app-ID** anger du **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Det här värdet är ett fast värde.
-6. I fältet **AAD innehavar-ID** anger du ID för ditt Azure abonnemangskonto.
+2. Välj panelen **Hantering av förhandsgranskningsfunktioner** och fältgruppen **Förhandsversionsfunktioner**, välj **BusinessDocumentSubmission**.
+3. Markera fältet **aktivera förhandsversion**.
+4. Välj LCS distributionsprojekt. Innan du kan välja projektet måste det köras.
+5. På snabbfliken **Miljötillägg** välj **Installera ett nytt tillägg**.
+6. Välj **Skicka affärsdokument**.
+7. I dialogrutan **Tillägg för konfiguration** i fältet **AAD app-ID** anger du **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Det här värdet är ett fast värde.
+8. I fältet **AAD innehavar-ID** anger du ID för ditt Azure abonnemangskonto.
 
     ![Dialogrutan tillägg för konfiguration i LCS](media/e-invoicing-services-get-started-lcs-addin-setup.png)
 
-7. Markera kryss rutan om du vill acceptera villkoren.
-8. Välj **Installera**.
+9. Markera kryss rutan om du vill acceptera villkoren.
+10. Välj **Installera**.
 
 ## <a name="rcs-setup"></a>Inställning av RCS
 
@@ -124,7 +126,7 @@ Under RCS-inställningar ska du utföra följande uppgifter:
 
     ![URI-fält för nyckelvalv](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
-7. På snabbfliken **Certifikat** välj **Lägg till** och ange de digitala certifikatnamnen och nyckelvalvets hemligheter. Båda uppsättningarna av värden konfigureras i resurserna för nyckelvalv i Azure.
+7. På snabbfliken **Certifikat** väljer **Lägg till** om du vill ange alla digitala certifikatnamn och nyckel valv hemligheter som behövs för att upprätta betrodda anslutningar. I kolumnen **Typ** kan du ange om det är ett certifikat eller en hemlighet. Båda uppsättningarna av värden konfigureras i resurserna för nyckelvalv i Azure.
 
     ![Lägger till certifikat](media/e-invoicing-services-get-started-add-digital-certificates.png)
 
@@ -132,9 +134,9 @@ Under RCS-inställningar ska du utföra följande uppgifter:
 
 ### <a name="set-up-the-rcs-integration-with-the-electronic-invoicing-add-on-server"></a>Ställ in RCS-integrationen med tilläggsserver för elektronisk fakturering
 
-1. I arbetsytan **globaliseringsfunktioner** i avsnittet **Relaterade länkar** väljer du länken **parametrar för elektronisk rapportering**.
+1. I arbetsytan **globaliseringsfunktioner** i avsnittet **Relaterade inställningar** väljer du länken **parametrar för elektronisk rapportering**.
 2. Välj **Klicka här om du vill ansluta till Lifecycle Service**. Om du inte vill ansluta till LCS väljer du **Avbryt**.
-3. På fliken **tillägget elektronisk fakturering** i fältet **Tjänsteslutpunkt-URI** ange `https://businessdocumentsubmission.us.operations365.dynamics.com/`.
+3. På fliken **e-faktureringstjänster** i fälten **Tjänsteslutpunkt-URI** anger du värdet enligt tillgängliga geografier: `https://businessdocumentsubmission.us.operations365.dynamics.com/` eller `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
 4. I fältet **app-ID** kontrollera att det visar ID **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Det här värdet är ett fast värde.
 5. I fältet **LCS miljö-ID** anger du ID för ditt LCS abonnemangskonto.
 
@@ -162,7 +164,7 @@ Du kan skapa olika miljöer för tillägget för elektronisk fakturering, till e
 
 "e-faktureringsfunktionen" är det allmänna namnet för resursen som är konfigurerad och publicerad för att använda tilläggsservern för elektronisk fakturering. Inställningen av funktionen e-fakturering kombinerar bland annat användningen av konfigurationsformat för elektronisk rapportering (ER) för att skapa konfigurerbara export- och importfiler och användningen av åtgärder och åtgärdsflöden för att möjliggöra skapandet av konfigurerbara regler för att skicka förfrågningar , importera svar och analysera svarsinnehållet.
 
-På grund av variationer i fakturaformat och åtgärdsflöden är funktionen för e-fakturering är beroende av land/region.
+På grund av varianter i fakturaformat och åtgärdsflöden är funktionen för e-fakturering är beroende av land/region.
 
 ## <a name="set-up-electronic-invoicing-add-on-integration-in-finance-or-supply-chain-management"></a>Ställa in integrering av tillägget elektronisk fakturering i Finance eller Supply Chain Management 
 

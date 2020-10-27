@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7cc238c573a319073b451063782762c19a80017
-ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
+ms.openlocfilehash: 363ce16b31a199e519c969746c4f10430d9d7497
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3835120"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967268"
 ---
 # <a name="get-started-with-financial-reporting"></a>Kom i gång med Financial reporting 
 
@@ -149,7 +149,12 @@ Problem 1: Rapportdesigner startar inte när du väljer **ny** eller **Redigera*
 * I Internet Explorer, välj **inställningar** och sedan **Internetalternativ**. Välj fliken **säkerhet**. Välj tillförlitliga platser. Ändra alternativet till i området märkt Säkerhetsnivå för denna zon till **Medel-låg**.
 * Inaktivera blockering av popup-fönster i webbläsaren.
 * Arbetsstationer måste installera Microsoft .NET ramverk 4.6.2 eller senare. Den här versionen av Microsoft .NET Framework kan hämtas och installeras från [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* Om du använder webbläsaren Chrome måste du installera tillägget ClickOnce för att hämta rapportdesignerklienten. Om du använder osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge. Om du inte kan logga in med Chrome kan du försöka med att följa de installationssteg som beskrivs i nummer 1 med Internet Explorer eller Edge-webbläsare. 
+* Om du använder Microsoft Edge med Chrome måste du installera tillägget ClickOnce för att hämta rapportdesignerklienten. Om du använder osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge. 
+     1. Öppna en ny webbläsare i Microsoft Edge.
+     2. Ange **edge://flags** och välj **Retur**.
+     3. Sök efter alternativet **ClickOnce Support** eller använd denna direktlänk: **edge://flags/#edge-click-once**.
+     4. Ställ in menyalternativet på **aktiverad**.
+     5. Välj **starta om webbläsare**.
 
 Problem 2: användaren har inte tilldelats de behörigheter som krävs för att använda Financial Reporting. 
 
