@@ -5,6 +5,12 @@
       items:
         - name: Nyheter och ändringar i Human Resources
           href: hr-admin-whats-new.md
+        - name: 22 oktober 2020
+          href: hr-whats-new-2020-10-22.md
+        - name: 6 oktober 2020
+          href: hr-whats-new-2020-10-06.md
+        - name: 26 september 2020
+          href: hr-whats-new-2020-09-26.md
         - name: 16 september 2020
           href: hr-whats-new-2020-09-16.md
         - name: 3 september 2020
@@ -83,6 +89,8 @@
               href: hr-admin-integration-dayforce.md
             - name: Skapa en app för återkommande dataexport
               href: hr-admin-integration-recurring-data-export.md
+            - name: Integration med LinkedIn Talent Hub
+              href: hr-admin-integration-linkedin.md
             - name: Integration med Office
               items:
                 - name: Office-integration – självstudier
@@ -217,6 +225,10 @@
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
         - name: Human Resources-app i Teams
           href: hr-admin-teams-leave-app.md
+        - name: Förbereda Go live
+          href: hr-admin-go-live-prepare.md
+        - name: Frågor och svar om Go live
+          href: hr-admin-go-live-faq.md
         - name: Dokumentationsresurser
           items:
             - name: Hjälpsystem
@@ -665,10 +677,12 @@
               href: hr-learning-create-closed-ended-question.md
             - name: Skapa en beroende fråga
               href: hr-learning-depending-question.md
-        - name: Ställ in självbetjäning för medarbetare och chef
+        - name: Ställa in självbetjäning för medarbetare och chef
           items:
-            - name: Ställ in självbetjäning för medarbetare och chef – översikt
+            - name: Ställa in självbetjäning för medarbetare och chef – översikt
               href: hr-employee-manager-self-service-overview.md
+            - name: Skapa anpassade länkar i Självbetjäning för chef
+              href: hr-employee-manager-self-service-custom-links.md
             - name: Ändra namn på arbetsytan Självbetjäning för medarbetare
               href: hr-employee-self-service-workspace-name.md
             - name: Redigera personliga uppgifter
