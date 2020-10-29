@@ -182,9 +182,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/finance/toc.json
                 - name: Miljöplanering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/finance/toc.json
-                - name: Förbereda publicering
+                - name: Förbereda Go live
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/finance/toc.json
-                - name: Frågor och svar om publicering
+                - name: Frågor och svar om Go live
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Skicka en serviceförfrågan
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/finance/toc.json
@@ -240,6 +240,8 @@
                   href: accounts-payable/submit-invoice-workflow-automatically.md
                 - name: Visa resultat från automatisering av leverantörsfakturor
                   href: accounts-payable/view-automated-vendor-invoice.md
+                - name: Arbetsyta för registrering av leverantörsfaktura
+                  href: accounts-payable/vendor-invoices-workspace.md
             - name: Redovisningsfördelningar och poster i reskontrajournal för leverantörsfakturor
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Fakturamatchning och koncerninterna inköpsorder
@@ -922,6 +924,8 @@
                   href: general-ledger/open-lines-excel-journals-documents.md
                 - name: Visa poster i redovisningsjournal och transaktioner
                   href: general-ledger/view-journal-entries-transactions.md
+                - name: Rapport för råbalans med transaktionsinformation
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Journalföra bokförda poster i redovisningsjournal
                   href: general-ledger/tasks/journalize-posted-journal-entries.md
                 - name: Valutaomvärdering i ett konsolideringsföretag
@@ -1170,8 +1174,6 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Skapa en avancerad redovisningspost i den offentliga sektorn
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-                - name: Rapport för råbalans med transaktionsinformation
-                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Använd gränser för kontantkontroll
                   href: public-sector/cash-control.md
                 - name: Årsslutsbearbetning i offentlig sektor
@@ -1398,6 +1400,8 @@
                       href: localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
                     - name: NF-e-intyg
                       href: localizations/latam-bra-nfe-certs.md
+                    - name: NF-e anpassad certifikatvalidering
+                      href: localizations/nf-e-custom-certificate-validation.md
                     - name: 'Ställ in, importera och verifiera NF-e XML-dokument och DANFE'
                       href: localizations/latam-bra-set-up-import-nfe.md
                     - name: Ställa in parametrar för federal NF-e
@@ -2080,6 +2084,8 @@
                       href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
                     - name: Momsfråga
                       href: localizations/apac-ind-GST-tax-inquiry.md
+                    - name: Rensa tabellen TaxDocumentJSON
+                      href: localizations/gte-clean-up-tax-document-json-table.md
                 - name: Skattemotor
                   items:
                     - name: Skattemotor – översikt
@@ -2651,7 +2657,7 @@
                         - name: Lagerprofil – översikt
                           href: localizations/rus-inventory-profile-overview.md
                         - name: Ställa in en lagerprofil
-                          hreF: localizations/rus-set-up-inventory-profile.md
+                          href: localizations/rus-set-up-inventory-profile.md
                         - name: Använda en lagerprofil i dokument och frågor
                           href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Rapportering

@@ -142,8 +142,10 @@
                           items:
                             - name: Systemkrav för dubbelriktad skrivning
                               href: data-entities/dual-write/dual-write-system-req.md
-                            - name: Scenarier som stöds för inställning av dubbelriktad skrivning
+                            - name: Riktlinjer för hur du ställer in dubbelriktad skrivning
                               href: data-entities/dual-write/connection-setup.md
+                            - name: Att tänka på vid första synkroniseringen
+                              href: data-entities/dual-write/initial-sync-guidance.md
                             - name: Inställning av dubbelriktad skrivning från Lifecycle Services
                               href: data-entities/dual-write/lcs-setup.md
                             - name: Aktivera dubbelriktad skrivning för befintliga Finance and Operations-appar
@@ -404,6 +406,8 @@
                   href: database/database-point-in-time-restore.md
                 - name: Tidpunktsåterställning av produktionsdatabasen till ett begränsat läge
                   href: database/database-pitr-prod-sandbox.md
+                - name: Aktivera databasåtkomst just-in-time
+                  href: database/database-just-in-time-jit-access.md
             - name: Självstudier
               items:
                 - name: Uppdatera för utbildningssyften
@@ -480,6 +484,8 @@
                   href: deployment/Update-retail-channel.md
                 - name: Initiera Commerce Scale Unit (moln)
                   href: deployment/Initialize-Retail-Channels.md
+                - name: Migrera kanaler till en annan Commerce Scale Unit
+                  href: deployment/Reassign-CSU.md
                 - name: Datahemvist för Retail
                   href: deployment/retail-data-residency.md
             - name: Lokal distribution
@@ -1458,15 +1464,15 @@
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: Få support för Finance and Operations som drivs av 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
-            - name: Ställa in teknisk support för Finance and Operations
+            - name: Ställa in teknisk support för Finance and Operations-appar
               href: lifecycle-services/support-experience.md
-            - name: Hantera Finance and Operations-supportupplevelser
+            - name: Hantera supportupplevelser för Finance and Operations-appar
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: Systemadministration
           items:
             - name: Systemadministration – startsida
               href: sysadmin/system-administration-home-page.md
-            - name: Lägg till länkar till juridiska villkor och sekretesspolicy
+            - name: Lägga till länkar till juridiska villkor och sekretesspolicy
               href: sysadmin/legal-terms-privacy-statement.md
             - name: Rapport med licenskoder och konfigurationsnycklar
               href: sysadmin/license-codes-configuration-keys-report.md
