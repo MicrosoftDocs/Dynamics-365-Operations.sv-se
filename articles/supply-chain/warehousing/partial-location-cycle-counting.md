@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable
+ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46365f618b13c2bcaef9a45d2a835fda27019857
-ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
+ms.openlocfilehash: 5d69b1e9444785058a2b3e62b9a76cb6e70abf03
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760017"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017608"
 ---
 # <a name="partial-location-cycle-counting"></a>Rullande inventering av del av platser
 
@@ -41,7 +41,7 @@ Du kan associera en **arbetsmall** med en plan för rullande inventering för at
 
 När du definierar arbetets mallinformation kan du använda alternativet **Arbetsradbrytningar** för att ange om inventeringsrader för arbete måste grupperas efter artikelnummer eller produktvariantnummer. Denna konfiguration krävs om du vill inventera tillgänglig lagerbehållning endast för specifika produkter på en plats. Arbetsraderna för rullande inventering som skapas får den mängd information som du definierar här, och de vägledda räkneoperationerna hanteras baserat på denna nivå. 
 
-Om du associerar planerna för rullande inventering med arbetsmallar genom att använda alternativet **Arbetsradbrytningar**, väljs fältet **Partiell rullande inventering** för det arbete för rullande inventering som skapas, och multipla arbetsrader för rullande inventering skapas baserat på arbetsmallens definition. 
+Om du associerar planerna för rullande inventering med arbetsmallar genom att använda alternativet **Arbetsradbrytningar** , väljs fältet **Partiell rullande inventering** för det arbete för rullande inventering som skapas, och multipla arbetsrader för rullande inventering skapas baserat på arbetsmallens definition. 
 
 Innan arbetet för partiell rullande inventering kan bearbetas, måste du välja minst **Visa artikelnummer** för menyalternativet för mobil enhet som en del av konfigurationen för rullande inventering. Lageroperatören kommer att uppmanas att registrera endast inventeringsinformation som är relaterad till inventeringsraderna (artikelnummer och produktdimensioner). Alla andra tillgängliga lager kommer att ignoreras för den här inventeringsprocessen. 
 
@@ -51,7 +51,7 @@ För den partiella rullande inventeringsprocessen kommer datum/tid för **Senast
 I det här exemplet måste bara artikelnumret A0001 räknas i lagerställe 61.
 
 1.  En ny arbetsmall skapas för rullande inventering. Alternativet **Arbetsradbrytningar** används för att gruppera inventeringsrader för arbete efter artikelnummer. Det arbete för rullande inventering som skapas kommer får därför rader per artikelnummer. Du kan också gruppera raderna efter produktvariantnummer.
-2.  En ny plan för rullande inventering som hänvisar till den nyskapade arbetsmallen skapas. Planen för rullande inventering innehåller alla platser på lagerställe 61 (frågan **Välj platser**) som håller lager för artikelnummer A0001. Valet av specifika produkter definieras i avsnittet **Produkturval för rullande inventering**.
+2.  En ny plan för rullande inventering som hänvisar till den nyskapade arbetsmallen skapas. Planen för rullande inventering innehåller alla platser på lagerställe 61 (frågan **Välj platser** ) som håller lager för artikelnummer A0001. Valet av specifika produkter definieras i avsnittet **Produkturval för rullande inventering**.
 3.  Du kan välja produkter för planer för rullande inventering genom att ange fältet **tomma platser** till **utelämna tomma**. När planen för rullande inventering bearbetas, skapas delvis rullande inventeringsarbete för artikelnummer A0001. Den faktiska inventeringsprocessen kan utföras genom att använda ett menyalternativ för guidad rullande inventering i en mobil enhet.
 
 

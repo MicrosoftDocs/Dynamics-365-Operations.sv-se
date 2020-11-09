@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 03face220fd63962f645b4fe91f20aec2f19b1ef
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: 6d6880e258510a79cdd5937f96af28e5ae148292
+ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598068"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4040063"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Hantering av kredit och inkasso Power BI-innehåll
 
@@ -44,13 +44,16 @@ Som standard visas kredit- och inkassodata för det aktuella företaget. Om du v
 
 ## <a name="setup-needed-to-view-power-bi-content"></a>Installationen som behövs för att visa Power BI-innehåll
 
-Följande inställningar måste slutföras för att data ska visas i **Kundkredit och inkasso**Power BI-visualiseringar.
+Följande inställningar måste slutföras för att data ska visas i **Kundkredit och inkasso** Power BI-visualiseringar.
 
 1. Gå till **systemadministrations > inställningar > systemparametrar** för att ställa in **Systemvaluta** och **Systemets valutakurs**.
 2. Gå till **Redovisning > kalendrar > räkenskapskalendrar** om du vill validera räkenskapskalender datum som tilldelats den aktiva tidsperioden.
 3. Gå till **redovisning > Inställningar > redovisning** och ange **redovisningsvaluta** och **valutakurstyp**.
 4. Definiera valutakurser mellan transaktionsvalutor och redovisningsvaluta, redovisningsvaluta och systemvaluta. Det gör du genom att gå till **redovisning > valutor > valutakurser**.
 5. Gå till **Systemadministration > Inställningar > Enhetslagring** för att uppdatera sammanlagda måtten **CustCollectionsBIMeasurementsV2**.
+
+>[!NOTE] 
+> Definitioner av åldersfördelningsperiod måste anges i **Parametrar för kundreskontra > Inkasso > Inkassostandarder** för att aktivera åldersdata i Power BI-innehållet.
 
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
 

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 57081b9e737373641cd9d884919d03dcf62a2ffe
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: e255c58997ed1c0ad5614b15867f14714a8bcfc8
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140665"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107408"
 ---
 # <a name="store-configurations-for-retail-statements"></a> Butikskonfigurationer för Retail-utdrag
 
@@ -30,7 +30,7 @@ ms.locfileid: "3140665"
 
 Den här proceduren går igenom konfigurationer för den butik som påverkar hur handelsutdrag skapas och bokförs. Ekonomiska dimensioner för butiker hanteras i en annan procedur. I den här proceduren används demonstrationsföretaget USRT.
 
-1. I **Navigeringsfönstret**, gå till **Moduler > Butik och handel > Kanaler > Butiker > Alla butiker**.
+1. I **Navigeringsfönstret** , gå till **Moduler > Butik och handel > Kanaler > Butiker > Alla butiker**.
 2. Hitta och markera önskad post i listan.
 3. Klicka på länken på den valda raden i listan.
 4. Klicka på **Redigera**.
@@ -46,6 +46,6 @@ Den här proceduren går igenom konfigurationer för den butik som påverkar hur
 14. I fältet **Stängningsmetod** kan du definiera om transaktioner som ska inkluderas i ett utdrag ska ingå i ett stängt skift eller om de kan vara transaktioner inom det angivna datum/tidintervallet.  
 15. I fältet **Slut på vardagen** kan du ange en tidpunkt om transaktioner som inträffar efter midnatt borde ha bokförts föregående dag.  
 16. Välj Ja i **Bokför som vardag** om transaktioner som inträffar efter midnatt borde ha bokförs som en del av föregående dag.  
-17. Välj Ja i **Metoden dela efter utdrag** för att få utdrag skapade för varje definierad utdragsmetod. Det kan vara praktiskt om resultatet för bokföringen behöver förbättras för butiker med höga transaktionsvolymer, eftersom den skapar flera mindre utdrag som kan bearbetas parallellt.  
-18. I fältet **Standardkund** på snabbfliken **Allmänt** kan du välja kundkontot som ska användas för försäljning till kunder som gör köp direkt i butiken.  
+17. Välj Ja i **Metoden dela efter utdrag** för att få utdrag skapade för varje definierad utdragsmetod. Denna åtgärd kan vara praktiskt om resultatet för bokföringen behöver förbättras för butiker med höga transaktionsvolymer, eftersom den skapar flera mindre utdrag som kan bearbetas parallellt.  
+18. I snabbfliken **Standardkund** på snabbfliken **Allmänt** kan du välja kundkontot som ska användas för försäljning till kunder som gör köp direkt i butiken.  
 

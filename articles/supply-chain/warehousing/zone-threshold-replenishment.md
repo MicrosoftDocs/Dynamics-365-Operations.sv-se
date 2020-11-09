@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 7e9fdf0a546bf449f249eacdded1f4b4d1b4d1af
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: e13b5fd895fca7f8fe77809348d63ed8867dea9e
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530614"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017332"
 ---
 # <a name="zone-threshold-replenishment"></a>Zontröskel för lagerpåfyllnad
 
@@ -94,14 +95,14 @@ Det här exemplet visar hur du förbereder en mall för lagerpåfyllnad. Om du p
     - **Lagerpåfyllnadstyp:** _Minimum eller maximum_
 
 1. Välj **Spara**.
-1. Medan den nya raden fortfarande är markerad i rutnätet **Översikt**, välj **Ny** ovanför rutnätet **Information om mall för lagerpåfyllnad** för att lägga till en rad som är kopplad till *Zon min/max lagerp* som du just skapade.
+1. Medan den nya raden fortfarande är markerad i rutnätet **Översikt** , välj **Ny** ovanför rutnätet **Information om mall för lagerpåfyllnad** för att lägga till en rad som är kopplad till *Zon min/max lagerp* som du just skapade.
 1. I den nya raden anger du följande värden:
 
     - **Löpnummer:** Ange _1_.
     - **Beskrivning:** Ange _Välj zonlagerpåfyllnad_.
     - **Påfyllningsenhet:** Välj _ea_.
     - **Begärandetyp:** Lämna det här fältet tomt.
-    - **Direktivkod:** Det här fältet länkar påfyllningsmallen med ett platsdirektiv. Välj den versionskod för demodata som du skapade tidigare (_Zonlagerp_).
+    - **Direktivkod:** Det här fältet länkar påfyllningsmallen med ett platsdirektiv. Välj den versionskod för demodata som du skapade tidigare ( _Zonlagerp_ ).
     - **Arbetsmall:** Lämna det här fältet tomt.
     - **Minsta kvantitet:** Det här fältet anges den kvantitet som påfyllnaden ska utlösas vid. Ange _50_.
     - **Högsta kvantitet:** Det här fältet anger den maximala kvantiteten för en artikel som kan finnas i en zon. Genererat återanskaffningsarbete ökar lagret till denna kvantitet. Ange _150_.
@@ -191,7 +192,7 @@ Om du vill förbereda demodata så att de kan användas i scenariot i slutet av 
 
 1. Välj **Spara** för att spara den nya åtgärden.
 1. Medan den nya åtgärden fortfarande är markerad väljer du **Redigeringsfråga** ovanför rutnätet **Platsdirektivåtgärd**.
-1. Dialogruta för fråga visas där du kan välja vilka platser som ska fyllas på från. På fliken **intervall**, välj **Lägg till** om du vill lägga till rutnätet.
+1. Dialogruta för fråga visas där du kan välja vilka platser som ska fyllas på från. På fliken **intervall** , välj **Lägg till** om du vill lägga till rutnätet.
 1. I den nya raden anger du följande värden:
 
     - **Register:** _platser_
@@ -243,7 +244,7 @@ Om du vill förbereda demodata så att de kan användas i scenariot i slutet av 
 
 1. Välj **Spara** för att spara den nya åtgärden.
 1. Medan den nya åtgärden fortfarande är markerad väljer du **Redigeringsfråga** ovanför rutnätet **Platsdirektivåtgärd**.
-1. Dialogruta för fråga visas där du kan välja vilka zonen som ska fyllas på till. Den här zonen ska vara samma zon som anges i mallen för lagerpåfyllnad. På fliken **intervall**, välj **Lägg till** om du vill lägga till rutnätet.
+1. Dialogruta för fråga visas där du kan välja vilka zonen som ska fyllas på till. Den här zonen ska vara samma zon som anges i mallen för lagerpåfyllnad. På fliken **intervall** , välj **Lägg till** om du vill lägga till rutnätet.
 1. I den nya raden anger du följande värden:
 
     - **Register:** _platser_
@@ -274,8 +275,8 @@ När du har valt den juridiska personen för **USMF** lägger du till de ytterli
 
 Följ dessa steg för att se till att systemet har tillräckligt med inventering för att stödja exempelscenariot.
 
-1. Kontrollera att det finns lagerbehållning för artikel *A0001* på två olika platser i pockzonen (*VÅNING*) som anges i mall för lagerpåfyllnad. Det totala lagret bör dock vara mindre än den obligatoriska minimikvantiteten (*50*) som anges i mallen för lagerpåfyllnad. På så sätt kan du simulera hur beräkningen sker för hela zonen istället för bara för en enda plats. **Med någon av lagerprocesserna kan du justera lagret efter behov.**
-1. Kontrollera att det finns tillräckligt med lager för artikeln *A0001* på en bulkplats som är angiven i området välj plats för zon där lagerpåfyllnadsarbetet ska plocka artiklar från zon-ID *BULK*. Det totala lagret måste vara mindre än den obligatoriska maximala kvantiteten (*150*) som anges i mallen för lagerpåfyllnad.
+1. Kontrollera att det finns lagerbehållning för artikel *A0001* på två olika platser i pockzonen ( *VÅNING* ) som anges i mall för lagerpåfyllnad. Det totala lagret bör dock vara mindre än den obligatoriska minimikvantiteten ( *50* ) som anges i mallen för lagerpåfyllnad. På så sätt kan du simulera hur beräkningen sker för hela zonen istället för bara för en enda plats. **Med någon av lagerprocesserna kan du justera lagret efter behov.**
+1. Kontrollera att det finns tillräckligt med lager för artikeln *A0001* på en bulkplats som är angiven i området välj plats för zon där lagerpåfyllnadsarbetet ska plocka artiklar från zon-ID *BULK*. Det totala lagret måste vara mindre än den obligatoriska maximala kvantiteten ( *150* ) som anges i mallen för lagerpåfyllnad.
 1. Valfritt men rekommenderat: Följ de här stegen för att skapa en lagerjusteringsjournal:
 
     1. Gå till **Lagerhantering \> Journalposter \> Artiklar \> Lagerjustering**.

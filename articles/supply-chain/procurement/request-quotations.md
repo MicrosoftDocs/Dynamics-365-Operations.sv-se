@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ
+ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ, PurchRFQReplyFollowupItem, PurchRFQCaseVend, PurchRFQReplyFollowup, PurchRFQCaseAmendmentInfo, PurchRFQReplyFollowupCase, PurchRFQReplyStatus, PurchRFQCaseReplyFields, PurchRFQAddQuestionnaire, PurchRFQAmendmentWizard, PurchRFQReplyTableStatus, PurchRFQReplyTableListPage, PurchRFQCancelWizard
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4aec0ce03d438f8153b9555a079b6fd97f6a95a5
-ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
+ms.openlocfilehash: cd0ee376da52dc3b36ec32859283a410e5b71854
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973510"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018409"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Anbudsförfrågningar (RFQ) – översikt
 
@@ -44,7 +44,7 @@ Följande bild ger en översikt över ändringarna i anbudsförfrågansprocessen
 
 Du kan skapa ett anbudsförfrågansärende från planerade order, från en inköpsrekvisition eller genom en manuell post. Anbudsförfrågansärendet är det grundläggande dokument som du använder för att skicka en anbudsförfrågan till varje leverantör.
 
-När du förbereder anbudsförfrågansärende och lägger till leverantörer väljer du **Sskicka** (**Sskicka och publicera** för offentliga sektorn) på anbudsförfrågansärendet. En journal för anbudsförfrågan skapas för varje leverantör som du har skickat anbudsförfrågan till. Du kan konfigurera utskriftsinställningarna för Skicka-åtgärden om du vill skriva ut en rapport för varje leverantör till ett arkiv, eller skicka en rapport varje leverantörs e-postadress. Dessutom kan du använda anbudsförfråganjournalen för varje leverantör för att generera en rapport som du kan skicka eller skicka om till en leverantör senare. Du kan även konfigurera åtgärden Skicka till att skapa ett svarsblad som leverantören kan fylla i.
+När du förbereder anbudsförfrågansärende och lägger till leverantörer väljer du **Sskicka** ( **Sskicka och publicera** för offentliga sektorn) på anbudsförfrågansärendet. En journal för anbudsförfrågan skapas för varje leverantör som du har skickat anbudsförfrågan till. Du kan konfigurera utskriftsinställningarna för Skicka-åtgärden om du vill skriva ut en rapport för varje leverantör till ett arkiv, eller skicka en rapport varje leverantörs e-postadress. Dessutom kan du använda anbudsförfråganjournalen för varje leverantör för att generera en rapport som du kan skicka eller skicka om till en leverantör senare. Du kan även konfigurera åtgärden Skicka till att skapa ett svarsblad som leverantören kan fylla i.
 
 Nedan beskrivs processen för hantering av anbudsförfrågningar när leverantörsamarbete inte används. Om systemet är inställt för leverantörssamarbete kan leverantörer ange bud direkt i Supply Chain Management. För mer information, se [Leverantörssamarbeten med kunder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) och [Leverantörssamarbeten med externa leverantörer](vendor-collaboration-work-external-vendors.md).
 
@@ -58,7 +58,7 @@ Om du har lagt till poängkriterier i ditt anbudsförfrågansärende kommer anbu
 
 När du väljer ett anbud eller ett antal rader i ett anbud kan du acceptera alla eller några rader och avvisa resten. Acceptansjournaler, avvisningsjournaler och motsvarande rapporter genereras och kommer att skrivas ut, arkiveras och skickas enligt dina inställningar för utskrift. När du accepterar ett bud eller specifika rader i ett bud, skapas antingen ett inköpsavtal eller en inköpsorder, eller så uppdateras en inköpsrekvisition beroende på inköpstypen för anbudsförfrågan. Du kan skapa ett handelsavtal som du kan använda senare för någon av svaren, oavsett om du accepterade eller avvisade dem.
 
-Ett anbudsförfrågansärende har två statusar: lägst och högst, du kan visa status på listsidan för**Alla anbudsförfrågningar**. Lägsta status är den minst avancerade fasen för vilken rad som helst i ett anbudsförfrågansärende, och den högsta statusen är den mest avancerade fasen för anbudsförfrågansärendet. Anta exempelvis att ett anbudsförfrågansärende med tre rader skickas till två leverantörer så att det finns två anbudsförfrågningar var med tre rader. Alla rader är **skickade**. Nu registreras ett anbud från en av leverantörerna och anbudsraderna får status **mottagna**. Detta innebär att från de tre raderna i anbudsförfrågansärendet är **skickade** för en anbudsförfrågan och **mottagna** för en annan anbudsförfrågan. Det lägsta statusvärdet blir sedan **skickade,** och högsta status är **mottagna.**
+Ett anbudsförfrågansärende har två statusar: lägst och högst, du kan visa status på listsidan för **Alla anbudsförfrågningar**. Lägsta status är den minst avancerade fasen för vilken rad som helst i ett anbudsförfrågansärende, och den högsta statusen är den mest avancerade fasen för anbudsförfrågansärendet. Anta exempelvis att ett anbudsförfrågansärende med tre rader skickas till två leverantörer så att det finns två anbudsförfrågningar var med tre rader. Alla rader är **skickade**. Nu registreras ett anbud från en av leverantörerna och anbudsraderna får status **mottagna**. Detta innebär att från de tre raderna i anbudsförfrågansärendet är **skickade** för en anbudsförfrågan och **mottagna** för en annan anbudsförfrågan. Det lägsta statusvärdet blir sedan **skickade,** och högsta status är **mottagna.**
 
 Dessa statusar kommer att beskrivas mer utförligt i detta ämne.
 

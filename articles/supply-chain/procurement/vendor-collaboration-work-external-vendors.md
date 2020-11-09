@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart
+ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b4b3120001ecd5340c063f80ad7471050b437fd2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 82249f460e5ddce9b9d43906008a3248a80daafb
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203458"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018754"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverantörssamarbete med externa leverantörer
 
@@ -34,7 +34,7 @@ Modulen för **Leverantörssamarbete** vänder sig till leverantörer som inte h
 För mer information om vad externa leverantörer kan göra i gränssnittet för leverantörssamarbeten, se [Leverantörssamarbete med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> Informationen i det här avsnittet om samarbete för leverantör gäller bara för den aktuella versionen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februari 2016) och Microsoft Dynamics AX programversion 7.0.1 (maj 2016) kan du samarbeta med leverantörer med hjälp av modulen **Leverantörsportal**. För information om modulen **Leverantörsportal**, se [Samarbeta med leverantörer genom leverantörsportalen](collaborate-vendors-vendor-portal.md).
+> Informationen i det här avsnittet om samarbete för leverantör gäller bara för den aktuella versionen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februari 2016) och Microsoft Dynamics AX programversion 7.0.1 (maj 2016) kan du samarbeta med leverantörer med hjälp av modulen **Leverantörsportal**. För information om modulen **Leverantörsportal** , se [Samarbeta med leverantörer genom leverantörsportalen](collaborate-vendors-vendor-portal.md).
 
 För mer information om hur leverantörer kan använda leverantörssamarbeten i faktureringsprocessen, se [Arbetsyta för leverantörssamarbetesfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). För mer information hur du reserverar nya användare av leverantörssamarbeten, se [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md).
 
@@ -44,7 +44,7 @@ När leverantörer svarar på en inköpsorder som du skickar till dem, visas e
 
 Så här definierar du den text som visas i svaret på inköpsordern:
 
-1. Gå till sidan **Information för leverantörer som svarar på inköpsordrar**, välj svarstyp och sedan **Redigera**.
+1. Gå till sidan **Information för leverantörer som svarar på inköpsordrar** , välj svarstyp och sedan **Redigera**.
 2. I rutan **Informationsmeddelande** anger du informationen som ska visas för leverantörer i meddelanderutan.
 
 Om du måste lägga till meddelanden på flera språk, skapa då separata meddelanden och ange lämplig språkkod för varje språk. Meddelandet som visas för varje leverantör är på det språk leverantören använder.
@@ -120,7 +120,7 @@ Leverantören kan inte ändra prisinformation och avgifter. Leverantören kan f�
 </tbody>
 </table>
 
-Du kan använda arbetsytan **Förberedelse av inköpsorder** för att övervaka vilka inköpsorder som leverantören har svarat på. Den här arbetsytan innehåller två listor med inköpsorder med statusen **I extern granskning**:
+Du kan använda arbetsytan **Förberedelse av inköpsorder** för att övervaka vilka inköpsorder som leverantören har svarat på. Den här arbetsytan innehåller två listor med inköpsorder med statusen **I extern granskning** :
 
 - I extern granskning kräver åtgärd
 - En extern granskning som avvaktar leverantörens svar
@@ -231,13 +231,13 @@ Det här avsnittet beskriver interaktioner mellan kunder och leverantörer vid a
 
 - **Ändringar** – När en ändring har slutförts tas de befintliga budsvaren bort så att de kan ersättas med uppdaterade värden. Information som radpris och kvantitet från föregående budsvar kan visas via journalerna för anbudsförfrågan.
 
-    Om du vill att ändringsprocessen ska vara tvingande går du till sidan **Anskaffnings- och källparametrar**, snabbfliken **Anbudsförfrågningar** och anger alternativet **Låser anbudsförfrågningar när de skickas** till **Ja**. (Det här alternativet är inställt och obligatoriskt för den offentliga sektorn.)
+    Om du vill att ändringsprocessen ska vara tvingande går du till sidan **Anskaffnings- och källparametrar** , snabbfliken **Anbudsförfrågningar** och anger alternativet **Låser anbudsförfrågningar när de skickas** till **Ja**. (Det här alternativet är inställt och obligatoriskt för den offentliga sektorn.)
 
 - **Returer** – Om en leverantör har skickat ett bud, men mer eller ändrad information krävs för anbudsförfrågan, kan kunden returnera budet till leverantören. Uppgifterna från budet som skickades tidigare bevaras, och leverantören kan göra de begärda ändringarna utan att behöva starta om budprocessen.
 
 ## <a name="public-sector-extensions"></a>Tillägg för offentlig sektor
 
-Med de utökade funktionerna för den offentliga sektorn går det att skicka en anbudsförfrågan till leverantörer och publicera den. När du publicerar en anbudsförfrågan kan alla som begär informationen visa det arbete som omfattas av offentlighetsprincipen. Allt tillgängligt arbete återspeglas på listsidan **Öppna publicerad anbudsförfrågningar**, och annullerade, väntande eller beviljade anbudsförfrågningar kan visas på listsidan **Stängda publicerade anbudsförfrågningar**. Dessa dokument kan även visas på en plats utanför Supply Chain Management genom integrationer med följande datatabeller:
+Med de utökade funktionerna för den offentliga sektorn går det att skicka en anbudsförfrågan till leverantörer och publicera den. När du publicerar en anbudsförfrågan kan alla som begär informationen visa det arbete som omfattas av offentlighetsprincipen. Allt tillgängligt arbete återspeglas på listsidan **Öppna publicerad anbudsförfrågningar** , och annullerade, väntande eller beviljade anbudsförfrågningar kan visas på listsidan **Stängda publicerade anbudsförfrågningar**. Dessa dokument kan även visas på en plats utanför Supply Chain Management genom integrationer med följande datatabeller:
 
 - Publicerade anbudsförfrågningar
 - Rad för publicerade anbudsförfrågningar

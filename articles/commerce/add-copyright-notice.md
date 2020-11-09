@@ -3,7 +3,7 @@ title: Lägg till copyrightmeddelande
 description: I det här avsnittet beskrivs hur du lägger till ett copyrightmeddelande till din näthandelsplats.
 author: psimolin
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a2ed52dbd19508e07fcced92a7fad831180b1d1d
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 838047cac694c65047332e146a7c43ee2ae0f401
+ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269600"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4019551"
 ---
 # <a name="add-a-copyright-notice"></a>Lägg till copyrightmeddelande
 
@@ -41,18 +41,18 @@ Innan du kan lägga till copyrightinformation till webbplatsen måste du ha föl
 
 Om du vill lägga till copyrightinformation längst ned på varje sida som använder en viss mall följer du stegen nedan.
 
-1. Gå till **fragment** och välj **nytt sidfragment**.
-1. I dialog rutan väljer du modulen **sidfot** och namnger fragmentet. Du kan t.ex. ange **Sidfot-Copyright**.
+1. Gå till **Fragment** och välj sedan **Nytt**.
+1. I dialogrutan **Nytt fragment** , välj modulen **Sidfot** och namnge fragmentet. Du kan t.ex. ange **Sidfot-Copyright**.
 1. Välj **OK**.
-1. I navigeringsfönstret väljer du ellipsknappen (**...**) bredvid **sidfot** och väljer sedan **Lägg till modul**.
+1. I navigeringsfönstret väljer du ellipsknappen ( **...** ) bredvid **sidfot** och väljer sedan **Lägg till modul**.
 1. I dialogrutan, välj **Sidfotskategori** och väljer sedan **OK**.
 1. I navigeringsfönstret väljer du ellipsknappen bredvid **sidfotskategori** och väljer sedan **Lägg till modul**.
 1. I dialogrutan, välj **Textblock** och väljer sedan **OK**.
 1. Välj **textblock** i navigeringsfönstret.
 1. I det här egenskapsfönstret till höger, i fältet **stycke** lägger du till ditt copyright-meddelande. Ange till exempel **(C) Fabrikam 2019**.
-1. Välj **Spara**, välj **Slutför redigering** och sedan **Publicera**.
-1. Gå till **mallar**, markera mallen och välj sedan **Redigera**.
-1. Under **Siddisposition**, utöka **Brödtext** och utöka sedan **Standardsidan**.
+1. Välj **Spara** , välj **Slutför redigering** och sedan **Publicera**.
+1. Gå till **mallar** , markera mallen och välj sedan **Redigera**.
+1. Under **Siddisposition** , utöka **Brödtext** och utöka sedan **Standardsidan**.
 1. Markera knappen med punkter för platsen **Sidfotsplats** och välj sedan **Lägg till fragment**.
 1. Markera det fragment som du skapade tidigare och välj sedan **Välj**.
 1. Välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.

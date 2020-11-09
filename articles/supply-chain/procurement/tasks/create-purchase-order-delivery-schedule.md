@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7f84701f5b82ece1806d289dd6aea370bbd8c750
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 9c4e8dca93fdf9ee605ffeb63f259389b58a4b36
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383261"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018246"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Skapa en inköpsorder med en leveransplan
 
@@ -46,7 +46,7 @@ Det här avsnittet visar hur du kan skapa en leveransplan för en inköpsorder. 
 - Välj ett datum som infaller en vecka efter datumet på den första leveransraden i fältet Leveransdatum.  
 - Du kan spåra den totala kvantiteten som tilldelas till leveransplanraderna genom att visa **summan** och **återstående** fält. När den resterande kvantiteten är noll, har den fullständiga kvantiteten från den ursprungliga raden allokerats till tidsplaneringen.  
 12. Expandera avsnittet **Konvertering av avgifter**.
-- Alternativen här låter dig kontrollera hur du vill att avgifter ska fördelas mellan leveransplanraderna. Om du väljer **Kopiera bruttobelopp**, kopieras avgiftsbeloppet på den ursprungliga orderraden till varje leverandsrad. Alternativet **Fördela på leveransrader** delar upp den ursprungliga radavgiften enligt kvantiteten på varje leveransrad.  
+- Alternativen här låter dig kontrollera hur du vill att avgifter ska fördelas mellan leveransplanraderna. Om du väljer **Kopiera bruttobelopp** , kopieras avgiftsbeloppet på den ursprungliga orderraden till varje leverandsrad. Alternativet **Fördela på leveransrader** delar upp den ursprungliga radavgiften enligt kvantiteten på varje leveransrad.  
 13. Komprimera avsnittet **Konvertering av avgifter**.
 14. Välj **OK**.
 - Leveransplanen har nu tillämpats på orderraderna.  
@@ -67,7 +67,7 @@ Inköpsordern måste bekräftas före produktinleveransen kan bearbetas. I detta
 3. Välj **Ta emot** i åtgärdsfönstret.
 4. Välj **produktinleverans** I fältet **Produktinleverans** anger du ett värde.
 - Det här fältet används för att ange en referens som ska användas som verifikation för produktinleveransjournalen.  
-- I fältet **Kvantitet**, välj **Beställd kvantitet**. Det här alternativet innebär att inleverans kommer att bearbetas för den kvantitet som orderradena skapades med.  
+- I fältet **Kvantitet** , välj **Beställd kvantitet**. Det här alternativet innebär att inleverans kommer att bearbetas för den kvantitet som orderradena skapades med.  
 - Kontrollera att fältet **Skriv ut produktinleverans** inte anges till **Nej**. Utskrift är inte nödvändigt i det här exemplet.  
 5. Expandera avsnittet **Rader**.
 - Observera hur produktinleveransen skapas för de två leveransraderna och inte den ursprungliga orderraden. Om inleveransen har registrerats i lagerstället, har den också registrerats på leveransplanraderna.  

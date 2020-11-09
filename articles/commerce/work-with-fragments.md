@@ -3,7 +3,7 @@ title: Arbeta med fragment
 description: I det här avsnittet beskrivs varför, när och hur du ska använda fragment i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b3e3299388190f03e761591a0c23164b705db9e8
-ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
+ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
+ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3961668"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4019574"
 ---
 # <a name="work-with-fragments"></a>Arbeta med fragment 
 
@@ -58,31 +58,27 @@ Du kan antingen skapa ett nytt fragment eller spara en befintlig modul som ett f
 
 ### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Spara en befintlig modulkonfiguration som ett fragment
 
-Om du vill konvertera en tidigare konfigurerad modul till ett återanvändbart fragment följer du stegen nedan.
+Om du vill konvertera en tidigare konfigurerad modul till ett återanvändbart fragment i Commerce webbplatsskaparen följer du stegen nedan.
 
 1. Öppna en sida eller mall som innehåller modulen som du vill konvertera till ett fragment.
 1. Markera den tidigare konfigurerade modulen i dispositionsrutan till vänster eller direkt i visuell sidskapare.
-1. Markera tre punkter (**...**) bredvid modulens namn i antingen dispositionsfönstret eller i den markerade modulens verktygsfält i visuell sidskapare. 
-1. Välj **dela som sidfragment**. 
-1. I dialogrutan **Spara som sidfragment** anger du namnet för fragmentet.
+1. Markera tre punkter ( **...** ) bredvid modulens namn i antingen dispositionsfönstret eller i den markerade modulens verktygsfält i visuell sidskapare. 
+1. Välj **dela som fragment**. 
+1. I dialogrutan **Spara som fragment** anger du namnet för fragmentet.
 1. Välj **OK** om du vill spara modulens konfiguration som ett fragment som kan läggas till på andra sidor.
+<!-- The following image shows how to save a module configuration as a fragment.-->
+<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
 
-Följande bild visar hur du sparar en moduls konfiguration som ett fragment.
+### <a name="create-a-new-fragment"></a>Skapa ett nytt fragment
 
-![En skärmbild av hur du sparar en modulkonfiguration som ett fragment](./media/save-as-fragment.png)
-
-### <a name="create-a-new-fragment"></a>Skapa ett nytt fragment.
-
-Gör så här om du vill skapa ett nytt fragment.
+För att skapa ett nytt fragment i Commerce webbplatsskaparen.
 
 1. I navigeringsfönstret till vänster, välj **fragment**.
-1. Välj **Nytt sidfragment**. En dialogruta visas med alla tillgängliga modultyper. Som tidigare nämnts kan fragment skapas från alla typer av moduler.
+1. Välj **Ny**. En dialogruta visas **Nya fragment** med alla tillgängliga modultyper. Som tidigare nämnts kan fragment skapas från alla typer av moduler.
 1. Välj en modultyp för fragmentet.
 
-I följande bild visas var du kan skapa ett nytt fragment.
-
-![En skärmbild av var du ska skapa ett nytt fragment](./media/fragment-nav-menu.png)
-
+<!-- The following image shows where to create a new fragment.-->
+<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Genom att välja en generisk behållarmodultyp får du den mest flexibla när du måste uppdatera och konfigurera fragmentet senare.
 
@@ -92,30 +88,28 @@ I följande procedurer beskrivs hur du lägger till, tar bort och redigerar frag
 
 ### <a name="add-a-fragment"></a>Lägg till ett fragment
 
-Om du vill lägga till ett fragment till en sida gör du följande.
+För att lägga till ett fragment till en sida i Commerce webbplatsskaparen.
 
 1. I dispositionsfönstret till vänster eller direkt i visuell sidskapare, välj en behållare eller fack som underordnade moduler kan läggas till.
-1. Välj tre punkter (**...**) bredvid namnet på behållaren eller platsen.  Om du vill kan du även välja plustecknet (**+**) om du använder visuell sidskapare.  
+1. Välj tre punkter ( **...** ) bredvid namnet på behållaren eller platsen.  Om du vill kan du även välja plustecknet ( **+** ) om du använder visuell sidskapare.  
 1. Välj **Lägg till fragment**.
-
-    ![En skärmbild av hur man lägger till ett befintligt fragment på en plats eller en behållare](./media/add-fragment.png)
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Om en behållare eller en plats inte stöder nya underordnade moduler är alternativet **Lägg till fragment** inte tillgängligt.
     
-1. Sök efter och markera ett fragment som ska läggas till i dialogrutan **Lägg till fragment**. Om det inte finns några tillgängliga fragment kanske du först måste skapa ett fragment från en modultyp som den valda behållaren eller platsen stöder.
+1. Sök efter och markera ett fragment som ska läggas till i dialogrutan **Välj fragment**. Om det inte finns några tillgängliga fragment kanske du först måste skapa ett fragment från en modultyp som den valda behållaren eller platsen stöder.
 1. Välj önskat fragment om du vill lägga till behållaren eller platsen på sidan.
-
-    ![En skärmdump av spärrat fönster för fragmentväljare](./media/fragment-picker.png)
+<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > Modulerna som är tillåtna i en behållare eller plats definieras av sidans mall eller modulernas egna definitioner.
 
 ### <a name="remove-a-fragment"></a>Ta bort ett fragment
 
-För att ta bort ett fragment från en plats eller behållare på en sida, följ dessa steg.
+Om du vill ta bort ett fragment från ett fack eller en behållare på en sida i Commerce webbplatsskapare följer du stegen nedan.
 
-1. I dispositionsrutan till vänster, välj ellipsknappen (**...**) bredvid namnet på det fragment som du vill ta bort och markera sedan knappen papperskorgen.  Du kan också markera avsnittet i visuell sidskapare och välja papperskorgssymbolen i fragmentets verktygsfält.
+1. I dispositionsrutan till vänster, välj ellipsknappen ( **...** ) bredvid namnet på det fragment som du vill ta bort och markera sedan knappen papperskorgen.  Du kan också markera avsnittet i visuell sidskapare och välja papperskorgssymbolen i fragmentets verktygsfält.
 1. När du uppmanas att bekräfta att du vill ta bort fragmentet väljer du **OK**.
 
 > [!NOTE]
@@ -125,10 +119,10 @@ För att ta bort ett fragment från en plats eller behållare på en sida, följ
 
 Om du vill redigera fragment måste du använda gränssnittet för fragmentredigeraren. Denna begränsning är av design. Den garanterar att författare inte förvirrar processen att redigera modulerna för en viss sida med processen för att redigera fragment som kan delas på många sidor.
 
-Gör så här om du vill redigera ett fragment.
+För att redigera ett fragment i Commerce webbplatsskaparen.
 
 1. I navigeringsfönstret till vänster, välj **fragment**.
-1. Under **Fragment**, välj det fragment du redigera.
+1. Under **Fragment** , välj det fragment du redigera.
 1. Redigera fragmentets modulegenskaper och struktur efter behov. Processen ser ut som om du redigerar modulerna i vyn sidredigerare.
 
 Du kan också redigera ett fragment genom att markera det på en sida, i en mall eller i ett överordnat fragment, och sedan välja **redigera fragment** i egenskapsrutan till höger.

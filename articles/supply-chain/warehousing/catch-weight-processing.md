@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: b1d106fa6fe5072eb74813495253731dd988c376
-ms.sourcegitcommit: 9a0be1ceee90e80f4c75f241aba847547b5032e5
+ms.openlocfilehash: 710446db7746ed3cd3fb9754caeaa15fd2f76641
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3693289"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016273"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
 
@@ -30,7 +30,7 @@ ms.locfileid: "3693289"
 
 ## <a name="feature-exposure"></a>Funktionen exponering
 
-Om du vill använda lagerstyrning för att bearbeta produkt i faktisk/nominell vikt måste du använda en licensnyckelkonfiguration för att aktivera funktionen. Öppna **Systemadministration \> Inställningar \> Licenskonfiguration**. Klicka sedan på fliken **konfigurationsnycklar**, expandera **handel \> hantering av lager och transport** och markera kryssrutan för **faktisk/nominell vikt för lagerstället**.
+Om du vill använda lagerstyrning för att bearbeta produkt i faktisk/nominell vikt måste du använda en licensnyckelkonfiguration för att aktivera funktionen. Öppna **Systemadministration \> Inställningar \> Licenskonfiguration**. Klicka sedan på fliken **konfigurationsnycklar** , expandera **handel \> hantering av lager och transport** och markera kryssrutan för **faktisk/nominell vikt för lagerstället**.
 
 > [!NOTE]
 > Både **hantering av lager och transport** licensnyckeln för konfiguration och **Processfördelning \> faktisk/nominell vikt** måste också aktiveras. Om du vill ställa in konfigurationsnycklarna för faktisk/nominell vikt måste du också aktivera funktionen med hjälp av arbetsytan **funktionshantering**. Huvudfunktionen som måste aktiveras är **Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning**. Två relaterade funktioner som du kanske vill aktivera är **lagerstatusändringar för produkter för faktisk/nominell vikt** och **Använd befintliga koder för faktisk/nominell vikt vid rapportering av tillverkningsorder som färdiga**.
@@ -67,7 +67,7 @@ I dess definition ställs en produkt in för att klara en lägsta vikt på 8 kg
 
 Du har två lådor av produkten och de har 16 kg registrerad vikt. Om lagerarbetare plockar väger en av lådorna och vikt registreras som 9 kg, väger återstående fält 7 kg. Men eftersom 7 kg är lägre än lägsta vikten, gör systemet en automatisk justering för att öka vikten på lagerbehållningen med 1 kg.
 
-Om du vill ställa in kontona justeringarna bokförs på Gå till **kostnadshantering \> Ställ in policyer för redovisningsintegrering \> bokföring**. Klicka sedan på fliken **lager**, ange följande konton:
+Om du vill ställa in kontona justeringarna bokförs på Gå till **kostnadshantering \> Ställ in policyer för redovisningsintegrering \> bokföring**. Klicka sedan på fliken **lager** , ange följande konton:
 
 - Förlustkonto för faktisk/nominell vikt
 - Vinstkonto för faktisk/nominell vikt
@@ -209,4 +209,4 @@ Utöver de begränsningar som för närvarande gäller för produkter med faktis
 - Funktionen för återför arbete stöds inte för artiklar med faktisk/nominell vikt som är kodnummerspårade.
 
 > [!NOTE]
-> Den föregående informationen om koderna för faktisk/nominell vikt är endast giltig om produkten med faktisk/nominell vikt har en spårningsmetod för kod för faktisk/nominell vikt som är helt spårad (det vill säga om parametern **spårningsmetod för kod för faktisk/nominell vikt** för hanteringspolicyn anges till **produktdimensioner, spårningsdimensioner och alla lagerdimensioner**). Om artikeln med faktisk/nominell vikt endast delvis kodspåras (det vill säga om parametern **spårningsmetod för kod för faktisk/nominell vikt** för hanteringspolicyn för faktisk/nominell vikt anges till **produktdimensioner, spårningsdimensioner och lagerstatus**), gäller ytterligare begränsningar. Eftersom visningen går förlorad mellan koden och lagret i det här fallet, stöds inte vissa ytterligare scenarier.
+> Den föregående informationen om koderna för faktisk/nominell vikt är endast giltig om produkten med faktisk/nominell vikt har en spårningsmetod för kod för faktisk/nominell vikt som är helt spårad (det vill säga om parametern **spårningsmetod för kod för faktisk/nominell vikt** för hanteringspolicyn anges till **produktdimensioner, spårningsdimensioner och alla lagerdimensioner** ). Om artikeln med faktisk/nominell vikt endast delvis kodspåras (det vill säga om parametern **spårningsmetod för kod för faktisk/nominell vikt** för hanteringspolicyn för faktisk/nominell vikt anges till **produktdimensioner, spårningsdimensioner och lagerstatus** ), gäller ytterligare begränsningar. Eftersom visningen går förlorad mellan koden och lagret i det här fallet, stöds inte vissa ytterligare scenarier.

@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 92ffd2076497325fb986478328c4b2584929881d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: 7e631f1bf64b47b5f3e85d4f98c6edafe67d627a
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3836038"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039902"
 ---
 # <a name="set-up-the-electronic-invoicing-add-on"></a>Ställ in tillägg för elektroniska fakturor
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 Installation av funktionen för tillägget elektronisk fakturering är processen att skapa den konfiguration som krävs genom RCS-miljön (Regulatory Configuration Services) och publicera den konfigurationen på tilläggsservern för elektronisk fakturering. Med hjälp av installationsprogrammet kan du skapa de konfigurerbara reglerna som gör det möjligt för tillägget för elektronisk fakturering att använda ett säkert protokoll via Internet för att kommunicera och utbyta data med en tredje parts enhet via webbtjänster.
 
@@ -49,7 +49,7 @@ På grund av variationer i fakturaformat och åtgärdsflöden kan funktionsinst�
 Installationsprocessen måste utföras i din RCS-miljö. Följ de här stegen om du vill skapa en ny funktion för tillägg för elektronisk fakturering.
 
 1. Logga in på RCS-miljön.
-2. I arbetsytan **globaliseringsfunktioner** i avsnittet **Funktioner**, välj panelen **Tillägg för elektroniska fakturor**.
+2. I arbetsytan **globaliseringsfunktioner** i avsnittet **Funktioner** , välj panelen **Tillägg för elektroniska fakturor**.
 3. På sidan **Funktioner för tillägg för elektronisk fakturering** välj **Importera** för att importera konfiguration av ER-datamodell från den globala databasen.
 4. Välj **Lägg till** om du vill skapa en funktion för tillägg för elektronisk fakturering. Du kan antingen skapa funktionen från början eller härleda den från en befintlig funktion för tillägg för elektronisk fakturering.
 
@@ -71,7 +71,7 @@ Följ de här stegen om du vill lägga till ER-format till en funktion för till
     > [!NOTE]
     > När du skapar en funktion för tillägg för elektronisk fakturering från början måste du lägga till alla konfigurationer för ER-filformat manuellt. När du härleder en funktion för tillägg för elektronisk fakturering från en befintlig funktion, skapas konfigurationerna för ER-filformat automatiskt eftersom de ärvs från den ursprungliga funktionen för tillägg för elektronisk fakturering.
 
-2. Välj **Redigera** om du vill öppna sidan **Formatdesigner**, där du kan redigera konfigurationen för ER-filformat.
+2. Välj **Redigera** om du vill öppna sidan **Formatdesigner** , där du kan redigera konfigurationen för ER-filformat.
 
     ![Redigera konfigurationer för funktion för tillägg för elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
@@ -194,7 +194,7 @@ Vilka parametrar som är tillgängliga varierar beroende på vilken åtgärd som
 |-----------------------------|-------------|
 | Webbtjänst-URL             | Den URL som begäran ska skickas till. |
 | Timeout för webbegäran         | Maximal tid (i millisekunder) att vänta på ett webbtjänstsvar. |
-| Begär åtgärdstyp      | Den typ av HTTP-begäran som ska åtgärdas (t.ex. **GET**, **POST** eller **DELETE**). |
+| Begär åtgärdstyp      | Den typ av HTTP-begäran som ska åtgärdas (t.ex. **GET** , **POST** eller **DELETE** ). |
 | Certifikatnamn           | Certifikatnamn. |
 | Kodning för svarstext      | Den förväntade kodningen av HTTP-svaret så att den kan avkodas korrekt. |
 | Innehållstyp för HTTP-begäran   | Rubrik för innehållstypen i HTTP-begäran. |

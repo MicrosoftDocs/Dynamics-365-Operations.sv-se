@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 4afa037ce9e446402128e4908a61ed32a30ebd59
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1f2e1bcd220f0cd94fb1515e42fd3f8250c1c621
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986960"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016365"
 ---
 # <a name="shipment-consolidation-policies"></a>Policyer för leveranskonsolidering
 
@@ -55,7 +55,7 @@ I det här avsnittet beskrivs de sidor, kommandon och funktioner som ändras ell
 
 ### <a name="shipment-consolidation-policies-page"></a>Sidan Policyer för leveranskonsolidering
 
-Policyer differentieras efter typen av arbetsorder. Typen **Försäljningsorder** representerar leveranser av _försäljningsorder_, och typen **Överföringsorder** representerar leveranser med _Överföringsproblem_.
+Policyer differentieras efter typen av arbetsorder. Typen **Försäljningsorder** representerar leveranser av _försäljningsorder_ , och typen **Överföringsorder** representerar leveranser med _Överföringsproblem_.
 
 Varje konsolideringspolicy för leverans har en fråga som definierar när den används och ett ordningsnummer som bestämmer körningsordningen. Konsolidering används för varje unik kombination av de valda fälten. Ytterligare en parameter som tillhandahålls används för konsolidering med befintliga (öppna) leveranser. Policyerna utvärderas och tillämpas varje gång en ny leverans (före påfyllnadsbearbetning).
 
@@ -121,7 +121,7 @@ I följande tabell sammanfattas hur leveranskonsolideringen fungerar när du int
 
 | Utan policyer för leveranskonsolidering | Med policyer för leveranskonsolidering |
 |---|----|
-| Inte tillämpligt | Försäljnings- eller överföringsleveranser som har valts för konsolidering måste ha samma konsolideringspolicy som den leverans som skapas, eller också måste de tilldelas till en öppen leverans när alternativet (**Konsolidera med befintliga leveranser**är aktiverat). |
+| Inte tillämpligt | Försäljnings- eller överföringsleveranser som har valts för konsolidering måste ha samma konsolideringspolicy som den leverans som skapas, eller också måste de tilldelas till en öppen leverans när alternativet ( **Konsolidera med befintliga leveranser** är aktiverat). |
 | Proceduren *Släpp till lagerställe* söker inte bland befintliga leveranser för att hitta en leverans för konsolidering. Endast leveranser som skapas av en aktuell instans tillhörande proceduren *Släpp till lagerställe* används för att hitta en leverans för konsolidering. | Om alternativet **Konsolidera med befintliga leveranser** är aktiverat för en konsoliderings policy som för närvarande används kommer proceduren *Släpp till lagerställe* att söka bland befintliga leveranser som skapats baserat på samma konsolideringspolicy i syfte att hitta en leverans att konsolidera. Om du har två policyer kommer därför en leverans som skapas baserat på Policy 2 aldrig att konsolideras med en leverans som skapats baserat på Policy 1. |
 | Inte tillämpligt | Om en lista över fält för konsolideringspolicy är tom, eller om en policy inte kan hittas, skapas en ny leverans för varje enskild försäljningsorder eller överföringsorderrad. |
 | I följande konsolideringsfält definieras den unika kombinationen av värden som används för att konsolidera leveranser för en *överföringsrad*. (Alla andra fält ignoreras.)<ul><li>Ordernummer (OrderNum)</li></ul> | Följande konsolideringsfält definierar den unika kombinationen av värden som används för att konsolidera leveranser för en *överföringsrad*. (Alla andra fält ignoreras.)<ul><li>Ordernummer (OrderNum)</li><li>Leveransmottagare (DeliveryName)</li><li>Postadress (DeliveryPostalAddress)</li><li>ISO-landskod (CountryRegionISOCode)</li><li>Adress (Address)</li><li>Plats (InventSiteId)</li><li>Lagerställe (InventLocation)</li><li>Transportföretag (CarrierCode)</li><li>Transportföretagstjänst (CarrierServiceCode)</li><li>Leveranssätt (ModeCode)</li><li>Transportföretagsgrupp (CarrierGroupCode)</li><li>Leveransvillkor (DlvTermId)</li></ul>Dessa fält är de enda fält som är tillgängliga och initierade när en ny leverans skapas. |
@@ -130,7 +130,7 @@ I följande tabell sammanfattas hur leveranskonsolideringen fungerar när du int
 | Proceduren *Släpp av beläggning till lagerställe* på sidan **Beläggningsplanering** använder en egen, separat kod för att skapa leveranser och påfyllnader. | Policyer för leveranskonsolidering tillämpas för att bestämma vilka fält som ska utvärderas för konsolidering. Leveranser konsolideras nu endast inom en enda beläggning. |
 | Du väljer manuellt **Konsolidera leveranser** på sidan **Alla leveranser** innan du väljer en "målbas"-leverans. Filtret föreslår alla befintliga leveranser som har matchande värden för flera nyckelfält. | Du väljer manuellt **Konsolidera leveranser** på sidan **Alla leveranser** innan du väljer en "målbas"-leverans. Systemet kommer att föreslå andra befintliga leveranser genom att matcha värdena från flera nyckelfält som är konfigurerade för relevanta policyer för leveranskonsolidering. |
 | Du kan använda kommandot **Konsolidera leveranser** på sidan **Alla leveranser** för endast en enskild leverans. | På sidan **Workbench för leveranskonsolidering** kan du hitta en uppsättning leveranser som ännu inte har skickats. Dessa leveranser analyseras baserat på flera nyckelfält som har konfigurerats i dina policyer för leveranskonsolidering. Alla leveranser där värdena för dessa fält matchar föreslås för konsolidering.<p>Du kan underhålla konsolideringen manuellt genom att ta bort leveranser från föreslagna konsolideringar och/eller lägga till leveranser i dem. Flera typer av fel kan uppstå, men du kan åsidosätta vissa av dem.</p> |
-| **Designkommentar:** Proceduren *Automatisk frisläppning av försäljningsorder till lagerställe* delar upp försäljningsrader i grupper. Varje grupp har sitt eget unika **ReleaseToWarehouseId**-värde och bearbetas separat av proceduren *Frisläpp till lagerställe*. Med den här proceduren skapas nytt arbete oavsett inställningar för arbetsavbrott. | **Designkommentar:** Proceduren *Automatisk frisläppning av försäljningsorder till lagerställe* tilldelar samma **ReleaseToWarehouseId**-värde till alla försäljningsrader som bearbetas. Alla försäljningsrader bearbetas samtidigt av proceduren *Frisläpp till lagerställe*. För att säkerställa det tidigare beteendet måste du konfigurera arbetsavbrott per leverans-ID. |
+| **Designkommentar:** Proceduren *Automatisk frisläppning av försäljningsorder till lagerställe* delar upp försäljningsrader i grupper. Varje grupp har sitt eget unika **ReleaseToWarehouseId** -värde och bearbetas separat av proceduren *Frisläpp till lagerställe*. Med den här proceduren skapas nytt arbete oavsett inställningar för arbetsavbrott. | **Designkommentar:** Proceduren *Automatisk frisläppning av försäljningsorder till lagerställe* tilldelar samma **ReleaseToWarehouseId** -värde till alla försäljningsrader som bearbetas. Alla försäljningsrader bearbetas samtidigt av proceduren *Frisläpp till lagerställe*. För att säkerställa det tidigare beteendet måste du konfigurera arbetsavbrott per leverans-ID. |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

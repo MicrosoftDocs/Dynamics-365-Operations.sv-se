@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSRFMenuItem,WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 4b9cd7dac680c1691fb4c6dd4078f109254be784
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b3497d43a500898207ed5154721ee0e3a327fb93
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215611"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017746"
 ---
 # <a name="pick-line-grouping"></a>Plockradsgruppering
 
@@ -36,14 +36,14 @@ I plockradgruppering kan flera arbetsrader som har samma artikel och plats kombi
 ### <a name="create-a-mobile-device-menu-item"></a>Skapa ett menykommando för mobila enheter
 
 1. Gå till **Lagerstyrning \> Konfigurera \> Mobil enhet \> Menyalternativ på mobil enhet** och skapa ett nytt menyalternativ som heter **Plockning av försäljningsgrupprad - Användarriktad**.
-2. Under **Menyalternativ på mobil enhet**, ange följande värden:
+2. Under **Menyalternativ på mobil enhet** , ange följande värden:
 
     - I fältet **Menyartikelnamn** ange **Försäljningsplockning - Grupprad**.
     - I fältet **Rubrik** ange **Försäljningsplockning - Grupprad**.
     - Välj **Arbete** i fältet **Läge**.
     - Ange alternativet **Använd befintligt arbete** till **Ja**.
 
-3. Ange följande värden på snabbfliken **Allmänt**:
+3. Ange följande värden på snabbfliken **Allmänt** :
 
     - I fältet **Dirigerad av** välj **Användarstyrd**.
     - Ange det här alternativet **Generera registreringsskylt** till **Ja**.
@@ -52,7 +52,7 @@ I plockradgruppering kan flera arbetsrader som har samma artikel och plats kombi
 4. På snabbfliken **arbetsklasser** följer du dessa steg för att konfigurera de giltiga arbetsklasserna för mobila enhetens menyalternativ:
 
     1. Välj **Ny**.
-    2. I fältet **Arbetsklass-ID** välj **Försäljning** eller **SO plocka**, beroende på vilket lagerställe du ska använda.
+    2. I fältet **Arbetsklass-ID** välj **Försäljning** eller **SO plocka** , beroende på vilket lagerställe du ska använda.
     3. Välj **Inköpsorder** i fältet **Försäljningsarbetsorder**.
 
 ### <a name="set-up-a-mobile-device-menu"></a>Ställ in mobil enhet för lagerställe
@@ -69,7 +69,7 @@ I plockradgruppering kan flera arbetsrader som har samma artikel och plats kombi
 
     - I fältet **Tabell** väljer du **Tillfälliga arbetsstransaktioner**.
     - I fältet **Härlett register** väljer du **Tillfälliga arbetsstransaktioner**.
-    - I fältet **Fält**, välj **Artikelnummer**.
+    - I fältet **Fält** , välj **Artikelnummer**.
     - I fält **Sökriktning** välj **Stigande**.
 
 > [!NOTE]
@@ -84,15 +84,15 @@ Innan du kan ställa in plockradsgruppering måste du skapa vissa kvalificerade 
 1. Gå till **Försäljning och marknadsföring \> Försäljningsorder \> Alla försäljningsorder**.
 2. Skapa en försäljningsorder genom att välja **Ny**. 
 3. Markera en kund i fältet **Kundkonto**. 
-4. På snabbfliken **Allmänt** i fältet **Lagerställe**, välj **51**. Välj sedan **OK**.
-5. Under **Försäljningsorderrader**, lägg till följande sex rader:
+4. På snabbfliken **Allmänt** i fältet **Lagerställe** , välj **51**. Välj sedan **OK**.
+5. Under **Försäljningsorderrader** , lägg till följande sex rader:
 
-    - **Rad 1:** I fältet **Artikelnummer** välj **M9200**. I fältet **Kvantitet**, ange **3**.
-    - **Rad 2:** I fältet **Artikelnummer** välj **M9201**. I fältet **Kvantitet**, ange **3**. 
-    - **Rad 3:** I fältet **Artikelnummer** välj **M9202**. I fältet **Kvantitet**, ange **2**. 
-    - **Rad 4:** I fältet **Artikelnummer** välj **M9200**. I fältet **Kvantitet**, ange **1**. 
-    - **Rad 5:** I fältet **Artikelnummer** välj **M9200**. I fältet **Kvantitet**, ange **3**.
-    - **Rad 6:** I fältet **Artikelnummer** välj **M9202**. I fältet **Kvantitet**, ange **7**. 
+    - **Rad 1:** I fältet **Artikelnummer** välj **M9200**. I fältet **Kvantitet** , ange **3**.
+    - **Rad 2:** I fältet **Artikelnummer** välj **M9201**. I fältet **Kvantitet** , ange **3**. 
+    - **Rad 3:** I fältet **Artikelnummer** välj **M9202**. I fältet **Kvantitet** , ange **2**. 
+    - **Rad 4:** I fältet **Artikelnummer** välj **M9200**. I fältet **Kvantitet** , ange **1**. 
+    - **Rad 5:** I fältet **Artikelnummer** välj **M9200**. I fältet **Kvantitet** , ange **3**.
+    - **Rad 6:** I fältet **Artikelnummer** välj **M9202**. I fältet **Kvantitet** , ange **7**. 
 
     Här är en sammanfattning av de totala kvantiteterna för varje artikel:
 
@@ -130,3 +130,4 @@ Innan du kan ställa in plockradsgruppering måste du skapa vissa kvalificerade 
 >    - Enhetsplockning.
 >    - Arbetsrader som har oavslutade lagerpåfyllnadsarbete.
 >    - Överplockning.
+>    - Kort plockning med omallokering av artiklar

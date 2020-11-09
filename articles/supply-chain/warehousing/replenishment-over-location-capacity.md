@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5591af5fce4eb3fc901919b98f654faa5e160c54
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 8e9ae16fea892d1d6b6a6b5d06137576623e7f5b
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652267"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016618"
 ---
 # <a name="replenishment-over-location-capacity"></a>Lagerpåfyllnad över platskapacitet
 
@@ -52,7 +53,7 @@ Aktivera funktionen för påfyllning över kapacitet på platsprofilen.
 1. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Platsprofiler**.
 1. Markera **PICK-06** i det vänstra fönstret.
 1. I åtgärdsfönstret väljer du **Redigera**.
-1. Ange följande värden på snabbfliken **lagerpåfyllnad**:
+1. Ange följande värden på snabbfliken **lagerpåfyllnad** :
 
     - **Överskriden kapacitet för plats:** *ja*
 
@@ -228,7 +229,7 @@ När du har gjort alla exempel data som du redan har beskrivit och ställt in de
 1. Du bör se att sju arbets-ID:n har skapats för de tre försäljningsorder som krävs.
 
     - Tre av de sju arbets-ID:na har värdet **Arbetsordertyp** av *Lagerpåfyllnad* och fyra har ett värde **Arbetsordertyp** av *Försäljningsorder*.
-    - Alla tre arbets-ID:n som har en **Arbetsordertyp** värdet för *Påfyllning* har samma *plockning* och *placering* i avsnittet **Rader**:
+    - Alla tre arbets-ID:n som har en **Arbetsordertyp** värdet för *Påfyllning* har samma *plockning* och *placering* i avsnittet **Rader** :
 
         - **Plocka:** *02A01R5S1B*
         - **Placera:** *06A01R2S1B*
@@ -272,7 +273,7 @@ Du kommer att utföra återanskaffningen av distributionslagret för de första 
     Du uppmanas att slutföra det första påfyllningsarbetet. Artikelnummer, kvantitet och plats att plocka från visas.
 
 1. I fältet **LP** ange ID-nummer för den artikel på platsen som visas.
-1. Välj **OK**-knappen (bockmarkeringssymbol).
+1. Välj **OK** -knappen (bockmarkeringssymbol).
 
     Systemet genererar ett mål-ID-nummer för det nya ID-numret för den plockade artikeln.
 
@@ -307,12 +308,12 @@ Innan lagerpåfyllnadsarbetet kan slutföras måste plockningsplatsen vara tom f
     Uppgiftssidan **Försäljningsorder: plockning** visar artikelnummer, kvantitet och plats som du vill plocka från för den första platsen.
 
 1. I fältet **LP** ange ID-nummer för den artikel på platsen som visas.
-1. Välj **OK**-knappen (bockmarkeringssymbol).
+1. Välj **OK** -knappen (bockmarkeringssymbol).
 
     Uppgiftssidan **Försäljningsorder: plockning** visar artikelnummer, kvantitet och plats som du vill plocka från för nästa plats.
 
 1. I fältet **LP** ange ID-nummer för den artikel på platsen som visas.
-1. Välj **OK**-knappen (bockmarkeringssymbol).
+1. Välj **OK** -knappen (bockmarkeringssymbol).
 
     Sidan **Försäljningsorder: placera** ger instruktioner om att både slutförda plockningar ska föras in på den utgående mellanlagringsplatsen.
 
@@ -332,7 +333,7 @@ Innan lagerpåfyllnadsarbetet kan slutföras måste plockningsplatsen vara tom f
 
     Det ID-numret som du anger kommer att vara en av de systemgenererade ID-numren från uppgifterna för påfyllningsarbetet. Kontrollera att du har hämtat rätt ID-nummer genom att kontrollera lager på sidan **Behållningslista** för artikeln, platsen och kvantiteten.
 
-1. Välj **OK**-knappen (bockmarkeringssymbol).
+1. Välj **OK** -knappen (bockmarkeringssymbol).
 1. Bekräfta instruktionerna för placeringsuppgiften på den utgående mellanlagringsplatsen.
 1. Välj **OK**.
 
@@ -352,7 +353,7 @@ Försäljningsorder 2 spärras från plockning eftersom den lagerpåfyllnadsuppg
 
     Det ID-numret som du anger kommer att vara en av de systemgenererade ID-numren från uppgifterna för påfyllningsarbetet. Kontrollera att du har hämtat rätt ID-nummer genom att kontrollera lager på sidan **Behållningslista** för artikeln, platsen och kvantiteten.
 
-1. Välj **OK**-knappen (bockmarkeringssymbol).
+1. Välj **OK** -knappen (bockmarkeringssymbol).
 1. Bekräfta instruktionerna för placeringsuppgiften på den utgående mellanlagringsplatsen.
 1. Välj **OK**.
 
@@ -360,7 +361,7 @@ Försäljningsorder 2 spärras från plockning eftersom den lagerpåfyllnadsuppg
 
 Så snart summan av lagerbehållningen på plockningsplatsen och lagerpåfyllnadskvantitet ligger under tröskeln kan du bearbeta det återstående påfyllningsarbetet.
 
-Gå tillbaka till sidan **Arbetsinformation** och observera att lagerpåfyllnadsarbetet för sista lagerpåfyllnadsdelen (för försäljningsorder 2) är *Öppen*, eftersom det nu finns tillräckligt med utrymme på platsen för att acceptera påfyllnaden.
+Gå tillbaka till sidan **Arbetsinformation** och observera att lagerpåfyllnadsarbetet för sista lagerpåfyllnadsdelen (för försäljningsorder 2) är *Öppen* , eftersom det nu finns tillräckligt med utrymme på platsen för att acceptera påfyllnaden.
 
 Du kan nu bearbeta påfyllningsarbetet via den mobila enheten.
 
@@ -369,7 +370,7 @@ Du kan nu bearbeta påfyllningsarbetet via den mobila enheten.
     Du uppmanas att slutföra det återstående påfyllningsarbetet. Artikelnummer, kvantitet och plats att plocka från visas.
 
 1. I fältet **LP** ange ID-nummer för den artikel på platsen som visas.
-1. Välj **OK**-knappen (bockmarkeringssymbol).
+1. Välj **OK** -knappen (bockmarkeringssymbol).
 
     Systemet genererar ett mål-ID-nummer för det nya ID-numret för den plockade artikeln.
 
@@ -395,7 +396,7 @@ Du kan nu välja försäljningsorder 2. Den blev spärrad när det påfyllningsa
 
     Det ID-numret som du anger kommer att vara det systemgenererade ID-numret från uppgiften för påfyllningsarbetet. Kontrollera att du har hämtat rätt ID-nummer genom att kontrollera lager på sidan **Behållningslista** för artikeln, platsen och kvantiteten.
 
-1. Välj **OK**-knappen (bockmarkeringssymbol).
+1. Välj **OK** -knappen (bockmarkeringssymbol).
 1. Bekräfta instruktionerna för placeringsuppgiften på den utgående mellanlagringsplatsen.
 1. Välj **OK**.
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
+ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTable, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d712cc3ebdc959d1fee4a2a79e3283b84f0b901a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205562"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017093"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Lagerpåfyllnad med uttags-kanbans
 
@@ -54,7 +54,7 @@ I det här scenariot förbrukar tillverkningsprocessen (4) material från en pla
 
 ## <a name="configure-warehouse-work-for-kanban-picking-for-the-withdrawal-kanban"></a>Konfigurera lagerställesarbete för kanbanplockning för uttags-kanban
 
-Om du vill aktivera plockning av råmaterial för uttags-kanban, konfigurera då påfyllnadsmallar, arbetsmallar och platsdirektiv arbetsordertypen **Kanbanplockning**. Denna arbetsordertyp stöder inte bara plockningsprocessen för uttags-kanban. Den stöder också plockningsprocessen för tillverkningskanban. Du kan dock konfigurera en separat plockningsprocess för respektive kanbantyp genom att avgränsa påfyllnadsmallar, arbetsmallar och platsdirektiv. För att avgränsa påfyllnadsmallar, arbetsmallar eller platsdirektiv, ange önskade kriterier för aktivitetstypen (**Process** eller **Överföring**) i frågorna för dessa enheter.
+Om du vill aktivera plockning av råmaterial för uttags-kanban, konfigurera då påfyllnadsmallar, arbetsmallar och platsdirektiv arbetsordertypen **Kanbanplockning**. Denna arbetsordertyp stöder inte bara plockningsprocessen för uttags-kanban. Den stöder också plockningsprocessen för tillverkningskanban. Du kan dock konfigurera en separat plockningsprocess för respektive kanbantyp genom att avgränsa påfyllnadsmallar, arbetsmallar och platsdirektiv. För att avgränsa påfyllnadsmallar, arbetsmallar eller platsdirektiv, ange önskade kriterier för aktivitetstypen ( **Process** eller **Överföring** ) i frågorna för dessa enheter.
 
 ## <a name="configure-the-withdrawal-kanban"></a>Konfigurera uttags-kanban
 

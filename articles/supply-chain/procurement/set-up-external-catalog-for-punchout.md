@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchVendorPortalRequests
+ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7aecc2c4786a1912bf5ae44f3949428c778f1df9
-ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
+ms.openlocfilehash: 5dc6a38b1a9eebdee64762671bb501e5e1294399
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826838"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018269"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Ställ in en extern katalog för PunchOut eProcurement
 

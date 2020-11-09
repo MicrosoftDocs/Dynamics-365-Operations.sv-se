@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bdaabad39484cb12537bc5f94c34dcb2575a5b2f
-ms.sourcegitcommit: ef27189efc15ce79c3c31ce2e41ef8a606fc5429
+ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3410423"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107194"
 ---
 # <a name="set-up-a-call-center-channel"></a>Ställa in en kundtjänstkanal
 
@@ -94,7 +94,7 @@ Om du vill ändra eller lägga till ett leveranssätt som ska associeras till de
 
 1. I formuläret kundtjänstlägen för leveranssätt väljer du **Hantera leveranssätt**
 1. I åtgärdsfönstret, välj **Ny** om du vill skapa ett nytt leverans sätt, eller välj ett befintligt läge.
-1. I avsnittet **butikskanaler**, klicka på **lägg till rad** om du vill lägga till kundtjänstkanalen. Lägga till kanaler med hjälp av organisationsnoder istället för att lägga till varje kanal individuellt kan lägga till kanaler effektivare.
+1. I avsnittet **butikskanaler** , klicka på **lägg till rad** om du vill lägga till kundtjänstkanalen. Lägga till kanaler med hjälp av organisationsnoder istället för att lägga till varje kanal individuellt kan lägga till kanaler effektivare.
 1. Se till att leveranssättet har konfigurerats med data på snabbfliken **produkter** och på snabbfliken **adresser**. Om inga produkter eller leveransadresser är giltiga för leveranssättet, orsakar fel när du väljer det under orderregistrering.
 1. När du har ändrat i konfiguration av kundtjänsts leveransläge måste jobbet **bearbeta leveranslägen** köras för att ändra matrisen. Det här jobbet hittar du genom att navigera till **Retail och Commerce \> Retail och Commerce IT \> Bearbeta leveranssätt**.
 
@@ -115,7 +115,7 @@ När kanalanvändarinställningen är klar och användaren skapar en ny försäl
 
 ### <a name="set-up-price-groups"></a>Ställa in prisgrupper
 
-Prisgrupper är valfria, men om de används kan du kontrollera vilka försäljningspriser som ska erbjudas till kunder som ställer order i den här kundtjänstkanalen. Om en prisgrupp inte har konfigurerats för kunden, eller om katalogprisgrupper inte används på försäljningsordern (med hjälp av fältet **Källkod-ID**i orderrubriken för kundtjänst), används kanalprisgruppen för att hitta artikelpriserna. Om en prisgrupp inte finns på kundtjänstkanalen används standardartikelns huvudpriser. 
+Prisgrupper är valfria, men om de används kan du kontrollera vilka försäljningspriser som ska erbjudas till kunder som ställer order i den här kundtjänstkanalen. Om en prisgrupp inte har konfigurerats för kunden, eller om katalogprisgrupper inte används på försäljningsordern (med hjälp av fältet **Källkod-ID** i orderrubriken för kundtjänst), används kanalprisgruppen för att hitta artikelpriserna. Om en prisgrupp inte finns på kundtjänstkanalen används standardartikelns huvudpriser. 
 
 Om du vill ställa in en prisgrupp gör du följande.
 

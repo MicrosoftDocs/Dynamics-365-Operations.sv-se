@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
+ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,14 +16,15 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a7168f9042bae561eb46ecdc8eea377862af8df0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 171d3b57333cc325fa675627e4c38f764d89f32c
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203421"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018662"
 ---
 # <a name="onboard-vendors"></a>Integrera leverantörer
+
 [!include [banner](../includes/banner.md)]
 
 ---
@@ -111,7 +112,7 @@ När den potentiella leverantörsanvändaren slutför registreringsguiden för l
 
 En leverantörsförfrågan kan skapas som ett utkast och skickas manuellt till ett arbetsflöde. Alternativt kan leverantörsförfrågan också skickas automatiskt till ett arbetsflöde när registreringsguiden för leverantörsregistrering har slutförts. En begäran kan skickas manuellt om exempelvis en inköpare vill bedöma huruvida begäran ska skickas genom en godkännandeprocess innan den skickas till arbetsflödet.
 
-- Välj **Parametrar för anskaffning och inköp** &gt; **Leverantörssamarbete**, och välj sedan **Skicka registrering av potentiell leverantör till arbetsflödet automatiskt** för att konfigurera leverantörsförfrågan så att denna skickas automatiskt till ett arbetsflöde när registreringsguiden för leverantörer har slutförts.
+- Välj **Parametrar för anskaffning och inköp** &gt; **Leverantörssamarbete** , och välj sedan **Skicka registrering av potentiell leverantör till arbetsflödet automatiskt** för att konfigurera leverantörsförfrågan så att denna skickas automatiskt till ett arbetsflöde när registreringsguiden för leverantörer har slutförts.
 
 ## <a name="vendor-requests"></a>Leverantörsförfrågningar
 
@@ -143,7 +144,7 @@ Innan du godkänner en leverantörsförfrågan på sidan **Ny leverantör** i sn
 
 Om den potentiella leverantörsanvändaren ska ha åtkomst till Supply Chain Management i egenskap av en leverantörssamarbetesanvändare som representerar leverantören, ange då åtkomstbehörigheten för leverantörssamarbete som **Ja**. För att inaktivera det användarkonto den potentiella användaren använde för att registrera sig, ange denna behörighet som **Nej**.
 
-Om åtkomstbehörigheten för leverantörssamarbete är **Ja**kommer, när leverantörsförfrågan godkänns, en begäran att skickas in med syfte att ändra användarens roller så att användaren har de roller som har definierats för typen **Leverantör** under **Externa roller**. Om denna behörighet är inställd på **Nej**när leverantörsförfrågan godkänns, kommer en begäran att skickas in med syfte att inaktivera användaren. I detta fall måste arbetsflödet för att inaktivera en användarförfrågan konfigureras.
+Om åtkomstbehörigheten för leverantörssamarbete är **Ja** kommer, när leverantörsförfrågan godkänns, en begäran att skickas in med syfte att ändra användarens roller så att användaren har de roller som har definierats för typen **Leverantör** under **Externa roller**. Om denna behörighet är inställd på **Nej** när leverantörsförfrågan godkänns, kommer en begäran att skickas in med syfte att inaktivera användaren. I detta fall måste arbetsflödet för att inaktivera en användarförfrågan konfigureras.
 
 För att ett leverantörskonto ska skapas när leverantörsförfrågan godkänns måste nummerserien för att skapa leverantörer leverantörsförfrågan ställas in på **Automatisk**.
 

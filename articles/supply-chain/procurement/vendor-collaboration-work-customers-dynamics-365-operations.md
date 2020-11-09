@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
+ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 240fdfb3519e1c4526c46fa3d5e3fbaa8e5a467e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 540f4f4e4a047b5bc33c9be387c8940175f5f919
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207357"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018175"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Leverantörssamarbete med kunder
 
@@ -42,7 +42,7 @@ Leverantörer kan också övervaka information om försändelsen.
 
 I arbetsytan **Inköpsorderbekräftelse** kan du besvara de inköpsorder som har skickats till dig för granskning. Här kan du också visa information om inköpsorder som inväntar åtgärd från kunden, samt inköpsorder som har bekräftats men som fortfarande är öppna.
 
-Det finns tre listor i arbetsytan **Inköpsorderbekräftelse**:
+Det finns tre listor i arbetsytan **Inköpsorderbekräftelse** :
 
 - **Inköpsorder för granskning** – Denna lista visar inköpsorder som har skickats till dig och som inväntar ett svar från dig. När du har svarat tas inköpsordern bort från listan. Om kunden skickar dig en ny version av inköpsordern innan du har svarat på föregående version, visas bara den senaste versionen.
 - **Inväntar kundåtgärd** – Den här listan visar alla de inköpsorder som du har svarat på, men som ännu inte har bekräftats. Om du godkänner en inköpsorder kan du övervaka den i den här listan, tills dess att statusen ändras till **Bekräftad**. Om du avvisar inköpsordern eller godkänner den med ändringar, kan du övervaka inköpsordern här tills kunden skickar en ny version.
@@ -59,7 +59,7 @@ Du kan använda följande sidor när du arbetar med inköpsorder:
 
 De inköpsorder som kunden skickar dig för granskning visas i arbetsytan **Inköpsorderbekräftelse** och på sidan **Inköpsorder för granskning**. När du har öppnat en inköpsorder kan du godkänna den, avvisa den eller acceptera den med ändringar. Det kan finnas bilagor i inköpsorderhuvudet eller på enskilda rader. Du kan även bifoga information för ditt svar i inköpsorderhuvudet eller på enskilda rader. Du kan till exempel föreslå en reservartikel för en av raderna.
 
-Du kan granska och skriva ut inköpsordern som en PDF-fil genom att använda alternativet **Förhandsgranska/Skriv ut**. Du kan också använda åtgärden **Visa dimensioner** om du vill dölja eller visa följande dimensionskolumner: **Plats**, **Lagerställe**, **Färg**, **Storlek**, **Stil** och **Konfiguration**. 
+Du kan granska och skriva ut inköpsordern som en PDF-fil genom att använda alternativet **Förhandsgranska/Skriv ut**. Du kan också använda åtgärden **Visa dimensioner** om du vill dölja eller visa följande dimensionskolumner: **Plats** , **Lagerställe** , **Färg** , **Storlek** , **Stil** och **Konfiguration**. 
 
 Om du använder alternativet **Acceptera ändringar** kan du godkänna eller avvisa enskilda rader. Du kan även göra följande ändringar på rader:
 
@@ -124,7 +124,7 @@ Personer som arbetar inom den offentliga sektorn kan visa öppna och utgångna a
 - Välj **Återställ från anbudsförfrågan** för att återställa de data du angett för ett bud och återgå till den ursprungliga anbudsförfrågan. Du kan återställa huvudet eller raden.
 - Välj **Lägg till alternativ** eller **Ta bort alternativ** i rutnätet om du vill arbeta med alternativ.
 
-    En del anbudsförfrågningar tillåter alternativa bud. Du kan ange alternativa bud endast för rader av typen **Kategori**, eftersom vissa artiklar inte kan läggas till som alternativ. 
+    En del anbudsförfrågningar tillåter alternativa bud. Du kan ange alternativa bud endast för rader av typen **Kategori** , eftersom vissa artiklar inte kan läggas till som alternativ. 
 
 - Välj **Bilaga till anbudsförfrågan** eller **Radbilaga till anbudsförfrågan** för att öppna bilagor som kunden har lagt till i en anbudsförfrågan. Välj **Budbilagor** eller **Radbilagor för bud** för att skicka bilagor tillsammans med budet.
 

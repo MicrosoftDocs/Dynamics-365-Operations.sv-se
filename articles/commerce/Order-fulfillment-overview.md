@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fb535b1f20d97042e6205b680de1cc687350f071
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 68132a78921e0a38c61c85bcc2b89dca3c25b04e
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975157"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107217"
 ---
 # <a name="store-order-fulfillment"></a>Orderuppfyllelse i butik
 
@@ -111,7 +111,7 @@ När order bearbetas över tid kan delkvantiteter behandlas för en specifik rad
 
 Om en orderrad plockas fel, måste hävning av plockningen utföras på orderraden i backoffice. Det finns för närvarande inga hävningsåtgärder som stöds i kassan.
 
-Orderrader från olika order kan väljas och markeras som **plockning**utskrivna på samma plocklista eller märkta som **plockade**.
+Orderrader från olika order kan väljas och markeras som **plockning** utskrivna på samma plocklista eller märkta som **plockade**.
 
 ### <a name="pack"></a>Paket
 
