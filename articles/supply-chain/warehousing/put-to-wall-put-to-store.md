@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 10eb32f75ccfe1521af9ebfe1e73ef08ea4238f7
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: 12501b90e4b31ec11e3c59784ace9fd9a8b7d934
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597563"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017838"
 ---
 # <a name="put-to-wall---put-to-store"></a>Placera på vägg – placera i butik
 
@@ -74,7 +75,7 @@ För denna demo används standard Contoso-data och lagerställe *62*. Vissa till
     - **Platsprofil-ID:** *Sortera*
     - **Namn:** *Sortera*
 
-1. Ange följande värden på snabbfliken **Allmänt**:
+1. Ange följande värden på snabbfliken **Allmänt** :
 
     - **Platsformat:** *PACKET*
     - **Platstyp:** *SORTERA*
@@ -143,7 +144,7 @@ Sorterings mal len styr om sorteringsbefattningar skapas, vilka kriterier som an
     - **Lagerställe:** *62*
     - **Plats:** *Sortera*
 
-1. Ange följande värden på snabbfliken **Allmänt**:
+1. Ange följande värden på snabbfliken **Allmänt** :
 
     - **Sortera verifieringstyp:** *positionsskanning*
 
@@ -155,7 +156,7 @@ Sorterings mal len styr om sorteringsbefattningar skapas, vilka kriterier som an
 
     - **Skapa arbete vi positionsstängning:** *Ja*
 
-        Om detta alternativ är inställt på *Ja*, när positionen är stängd kommer arbetet att skapas för att flytta lager till den slutliga leveransplatsen. Om den är inställd på *Nej*, lager kommer omedelbart att väljas till beställningen när positionen är stängd.
+        Om detta alternativ är inställt på *Ja* , när positionen är stängd kommer arbetet att skapas för att flytta lager till den slutliga leveransplatsen. Om den är inställd på *Nej* , lager kommer omedelbart att väljas till beställningen när positionen är stängd.
 
     - **Befattningstilldelning:** *manuell*
 
@@ -230,12 +231,12 @@ Redigera påfyllnadsmallen som används för att sortera om påfyllnadsbegäran.
 1. Ställ in fältet **Malltyp för påfyllnad** som *Levereras*.
 1. Välj den befintliga mallen **62 leveransstandard**.
 1. I åtgärdsfönstret väljer du **Redigera**.
-1. Ange följande ändringar på snabbfliken **Allmänt**:
+1. Ange följande ändringar på snabbfliken **Allmänt** :
 
     - Ange alternativet **Bearbeta påfyllnad vid släpp till lagerställe** som *Nej*.
     - Ange alternativet **Automatisera släpp av påfyllnad** till *Ja*.
 
-1. På snabbfliken **metoder** ställer du in metoden **sortering**:
+1. På snabbfliken **metoder** ställer du in metoden **sortering** :
 
     1. I rutnätet **återstående metoder** välj **sortering**.
     2. Välj höger pil för att flytta **sortering** till rutnätet **Valda metoder**.
@@ -255,7 +256,7 @@ Redigera påfyllnadsmallen som används för att sortera om påfyllnadsbegäran.
     - **Läge:** *Indirekt*
     - **Använd befintligt arbete:** *Nej*
 
-1. Ange följande värden på snabbfliken **Allmänt**:
+1. Ange följande värden på snabbfliken **Allmänt** :
 
     - **Aktivitetskod:** *Utgående sortering*
     - **Använd processguide:** *Ja* (standardvärde)
@@ -284,7 +285,7 @@ Du måste skapa platsdirektiv för att vägleda arbetet som skapas efter att sor
     - **Sekvens:** *1*
     - **Namn:** *Placera på Baydoor*
 
-1. Ange följande värden på snabbfliken **Platsdirektiv**:
+1. Ange följande värden på snabbfliken **Platsdirektiv** :
 
     - **Arbetstyp:** *Placera*
     - **Plats:** *6*
@@ -329,7 +330,7 @@ Du måste skapa platsdirektiv för att vägleda arbetet som skapas efter att sor
 1. I rutnätet väljer du arbetsmallen **62 välj för packa**.
 1. Klicka på **Arbetsuppgiftshuvudet delas** i åtgärdsfönstret.
 1. I åtgärdsfönstret väljer du **Redigera**.
-1. På raden där fältet **Fältnamn** anges till *Leverans-ID*, rensa kryssrutan **Gruppera efter detta fält**.
+1. På raden där fältet **Fältnamn** anges till *Leverans-ID* , rensa kryssrutan **Gruppera efter detta fält**.
 1. Välj **Spara** och stäng sedan dialogrutan **Arbetsuppgiftshuvudet delas**.
 1. Välj **Sorterad lagerplockning** i fältet *Typ av arbetsorder*.
 1. Skapa en ny arbetsmall genom att välja **Nytt**.
@@ -342,13 +343,13 @@ Du måste skapa platsdirektiv för att vägleda arbetet som skapas efter att sor
 1. I avsnittet **Arbetsmallinformation** skapar du två rader. Välj **ny** och ange sedan följande värden för rad 1:
 
     - **Arbetstyp:** *plockning*
-    - **Obligatorisk:** markerad (= *Ja*)
+    - **Obligatorisk:** markerad (= *Ja* )
     - **Arbetsklass-ID:** *Sortera*
 
 1. Välj **ny** igen och ange sedan följande värden för rad 2:
 
     - **Arbetstyp:** *Placera*
-    - **Obligatorisk:** markerad (= *Ja*)
+    - **Obligatorisk:** markerad (= *Ja* )
     - **Arbetsklass-ID:** *Sortera*
 
 1. Välj **Spara**.
@@ -386,7 +387,7 @@ Innan du skapar försäljningsorder och leveranser måste du se till att plockpl
 1. Upprepa följande steg för varje försäljningsrad på ordern för att reservera lager för den:
 
     1. På snabbfliken **Försäljningsorderrader** i menyn **Lager** välj **Reservation**.
-    1. På sidan **Reservation**, välj **Reservera parti** och stäng sedan sidan.
+    1. På sidan **Reservation** , välj **Reservera parti** och stäng sedan sidan.
     1. Välj **Spara**.
 
 1. Skapa en försäljningsorder för order 2 genom att välja **Ny**.
@@ -409,7 +410,7 @@ Innan du skapar försäljningsorder och leveranser måste du se till att plockpl
 1. Upprepa följande steg för varje försäljningsrad på ordern för att reservera lager för den:
 
     1. På snabbfliken **Försäljningsorderrader** i menyn **Lager** välj **Reservation**.
-    1. På sidan **Reservation**, välj **Reservera parti** och stäng sedan sidan.
+    1. På sidan **Reservation** , välj **Reservera parti** och stäng sedan sidan.
     1. Välj **Spara**.
 
 1. Skapa en försäljningsorder för order 3 genom att välja **Ny**.
@@ -427,7 +428,7 @@ Innan du skapar försäljningsorder och leveranser måste du se till att plockpl
 1. Följ dessa steg för att reservera lager för försäljningsraden:
 
     1. På snabbfliken **Försäljningsorderrader** i menyn **Lager** välj **Reservation**.
-    1. På sidan **Reservation**, välj **Reservera parti** och stäng sedan sidan.
+    1. På sidan **Reservation** , välj **Reservera parti** och stäng sedan sidan.
     1. Välj **Spara**.
 
 Slutför följande procedur för att frisläppa varje försäljningsorder till lagerstället. Tre olika försändelser kommer att skapas. Du kommer sedan att lägga till alla tre försändelser till en ny påfyllnad.
@@ -518,7 +519,7 @@ Nu när hela lagret har placerats på sorteringsplatsen måste det vara sorterat
 1. Slutför det sorterade lagerplockningsarbetet för att flytta lagret till leveransplatsen. När lagret är klart kan du bekräfta det för leverans.
 
 > [!NOTE]
-> För att sorterat lagerplockningsarbete ska bearbetas korrekt, ska en menyartikel för mobila enheter med arbetsklasss-ID där fältet **arbetsordertyp**tälls in för *sorterad lagerplockning* användas för transport och lastningsprocess.
+> För att sorterat lagerplockningsarbete ska bearbetas korrekt, ska en menyartikel för mobila enheter med arbetsklasss-ID där fältet **arbetsordertyp** tälls in för *sorterad lagerplockning* användas för transport och lastningsprocess.
 
 ### <a name="manually-close-a-position-optional"></a>Avsluta en position manuellt (valfritt)
 
@@ -529,7 +530,7 @@ Om sorteringspositionerna ska stängas manuellt måste alternativet **Automatisk
     - Användaren kan skanna ett av artiklarna som redan finns på befattningen och sedan välja **Stäng** för att stänga position.
     - Om användaren skannar en behållare som redan har sorterats som behållare visas ett felmeddelande. Användaren kan dock fortfarande fortsätta att stänga positionen.
 
-- Från sidan Microsoft Dynamics 365 Supply Chain Management sidan **Positionstilldelningar för utgående sortering**:
+- Från sidan Microsoft Dynamics 365 Supply Chain Management sidan **Positionstilldelningar för utgående sortering** :
 
     - Användaren kan välja posten för den utgående sorteringspositionen och sedan välja **stängningsposition** i åtgärdsfönstret.
 

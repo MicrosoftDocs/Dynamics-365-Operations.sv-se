@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0bf61aa839d4d59b2c93eee9931eef0e6c51d4ac
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 798e26badfd2a1f44891ea92f277de327fbed9c7
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179924"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006223"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Omvärdering i utländsk valuta för huvudbok
 
@@ -41,15 +41,15 @@ När du kör omvärderingsprocessen kommer saldot i varje huvudkonto som bokför
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Förbereda en körning av omvärdering i utländsk valuta
 Innan du kan köra omvärderingsprocessen måste följande inställningar göras.
 
--   På sidan **Huvudkonto**:
+-   På sidan **Huvudkonto** :
 -   Om huvudkontot ska omvärderas i redovisningen, välj då **Omräkning i utländsk valuta**. Om huvudkontot inte ska omvärderas (till exempel för kundreskontra och leverantörsreskontra, om dessa omvärderats i redovisningsjournalerna), rensa då detta alternativ.
--   Om huvudkontot valts för omvärdering, ange då **valutakurstyp**. Denna valutakurstyp kommer att användas för omvärdering av huvudkontot. Ett separat fält, **Valutakurstyp för ekonomisk rapportering**, finns tillgängligt för ekonomirapporteringen. De två fälten hålls inte synkroniserade, vilket gör att olika valutakurstyper kan användas för omvärdering och ekonomisk rapportering.
+-   Om huvudkontot valts för omvärdering, ange då **valutakurstyp**. Denna valutakurstyp kommer att användas för omvärdering av huvudkontot. Ett separat fält, **Valutakurstyp för ekonomisk rapportering** , finns tillgängligt för ekonomirapporteringen. De två fälten hålls inte synkroniserade, vilket gör att olika valutakurstyper kan användas för omvärdering och ekonomisk rapportering.
 
--   På sidan **Huvudbok**:
+-   På sidan **Huvudbok** :
 -   Ange **valutakurstyp**. Om valutakurstypen inte definieras på huvudkontot, kommer denna valutakurstyp att användas i samband med omräkning i utländsk valuta.
 -   Ange konton för realiserad vinst, realiserad förlust, orealiserad vinst och orealiserad förlust för valutaomvärdering. Kontona för realiserad vinst och realiserad förlust används för kvittade kundreskontra- och leverantörsreskontratransaktioner, och kontona för orealiserad vinst och orealiserad förlust används för öppna transaktioner samt huvudkonton för redovisning.
 
--   På sidan **Valutaomvärderingskonton**:
+-   På sidan **Valutaomvärderingskonton** :
 -   Välj olika konton för omvärdering valuta för respektive valuta och företag. Om inga konton har definierats används kontona från sidan **Redovisning**.
 
 ## <a name="process-foreign-currency-revaluation"></a>Bearbeta en omvärdering i utländsk valuta
@@ -76,38 +76,33 @@ Orealiserade vinst-/förlusttransaktioner skapas på olika sätt mellan redovisn
 
 **Exempel** Följande saldon finns för huvudkonto 110110.
 
-|            |                    |                        |                       |
+| Datum   | Redovisningskonto| Transaktionsbelopp | Redovisningsbelopp |
 |------------|--------------------|------------------------|-----------------------|
-| **Datum**   | **Redovisningskonto** | **Transaktionsbelopp** | **Redovisningsbelopp** |
 | 20 januari | 110110 (kassa)      | 500 EUR (debet)        | 1000 USD (debet)      |
 
 Huvudkontot omvärderas den 31 januari.  Orealiserad vinst/förlust beräknas på följande sätt.
 
-|                                             |                                            |                                  |                                    |                             |
+| Aktuell balans i transaktionsvaluta | Aktuell balans i redovisningsvaluta | Valutakurs vid omvärdering | Nytt belopp för redovisningsvaluta | Orealiserad vinst/förlust    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| **Aktuell balans i transaktionsvaluta** | **Aktuell balans i redovisningsvaluta** | **Valutakurs vid omvärdering** | **Nytt belopp för redovisningsvaluta** | **Orealiserad vinst/förlust**    |
 | 500 EUR                                     | 1 000 USD                                   | 166.6667                         | 833,33 EUR (500 x 1,666667)        | 166,67 förlust (833,33 – 1 000) |
 
 Följande redovisningspost skapas.
 
-|            |                          |           |            |
+| Datum   | Redovisningskonto       | Debet | Kredit |
 |------------|--------------------------|-----------|------------|
-| **Datum**   | **Redovisningskonto**       | **Debet** | **Kredit** |
 | 31 januari | 110110 (kassa)            |           | 166.67     |
 | 31 januari | 801400 (Orealiserad förlust) | 166.67    |            |
 
 Inga nya transaktioner bokförs för månaden februari.  Huvudkontot omvärderas den 28 februari.
 
-|                                             |                                            |                                  |                                    |                             |
+| Aktuell balans i transaktionsvaluta | Aktuell balans i redovisningsvaluta | Valutakurs vid omvärdering | Nytt belopp för redovisningsvaluta | Orealiserad vinst/förlust    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| **Aktuell balans i transaktionsvaluta** | **Aktuell balans i redovisningsvaluta** | **Valutakurs vid omvärdering** | **Nytt belopp för redovisningsvaluta** | **Orealiserad vinst/förlust**    |
 | 500 EUR                                     | 833,33 USD (1 000 - 166,67)                 | 250.0000                         | 1 250 USD (500 x 2,5)               | 416,67 vinst (1 250 – 833,33) |
 
 Följande redovisningspost skapas.
 
-|             |                          |           |            |
+| Datum    | Redovisningskonto       | Debet | Kredit |
 |-------------|--------------------------|-----------|------------|
-| **Datum**    | **Redovisningskonto**       | **Debet** | **Kredit** |
 | 28 februari | 110110 (kassa)            | 416.67    |            |
 | 28 februari | 801600 (Orealiserad vinst) |           | 416.67     |
 

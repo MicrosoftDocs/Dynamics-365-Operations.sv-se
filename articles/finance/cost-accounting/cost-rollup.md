@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c240e11394582ad1af563ee4a8e58632babfff3a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976389"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006176"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy för samlade kostnader och omkostnadsberäkning 
 
@@ -76,7 +76,7 @@ En dimensionshierarki som uppfyller rapporteringskraven för organisationen kan 
 
 **Dimensionshierarki**
 
-|              | Dimensionsmedlemsintervall |                     |
+|    &nbsp;    | Dimensionsmedlemsintervall | &nbsp;              |
 |--------------|-------------------------|---------------------|
 | **Noder**        | **Från dimensionsmedlem**   | **Till dimensionsmedlem** |
 | Organisation |                         |                     |
@@ -97,7 +97,7 @@ En dimensionshierarki som uppfyller policykraven kan ställas in på följande s
 
 **Dimensionshierarki**
 
-|                         | Dimensionsmedlemsintervall |                     |
+|      &nbsp;             | Dimensionsmedlemsintervall |      &nbsp;         |
 |-------------------------|-------------------------|---------------------|
 | Noder                   | Från dimensionsmedlem   | Till dimensionsmedlem |
 | Resultaträkning |                         |                     |
@@ -105,7 +105,7 @@ En dimensionshierarki som uppfyller policykraven kan ställas in på följande s
 
 När redovisningstransaktionerna bearbetas ser kostnadsbalanspost för kostnadsobjekt ut så här.
 
-|                      | **Kostnadsobjekt** |           |           |           | **Summa**     |
+|      &nbsp;          | **Kostnadsobjekt** | &nbsp;    |  &nbsp;   |  &nbsp;   | **Summa**     |
 |----------------------|-----------------|-----------|-----------|-----------|---------------|
 | **Kostnadselement**     | **CC001**       | **CC002** | **CC003** | **CC004** |               |
 | **1001 Elektricitet** | 100,00          | 200 000    | 6.000,00  | 2.000,00  | **8.300,00**  |
@@ -159,7 +159,7 @@ Om du vill veta hur kostnadsflödet går mellan kostnadsställen i organisatione
 
 Dimensionsmedlemmar för kostnadselement kan ställas in på följande sätt.
 
-| Kostnadselement | Typ          |               |
+| Kostnadselement | Typ          |     &nbsp;    |
 |---------------|---------------|---------------|
 | 1001          | Elektricitet   | Primär       |
 | 1002          | Löner      | Primär       |
@@ -179,7 +179,7 @@ Dimensionshierarkin **Resultaträkning** måste uppdateras med de nya dimensions
 
 **Dimensionshierarki**
 
-|                         | Dimensionsmedlemsintervall |                     |
+|      &nbsp;             | Dimensionsmedlemsintervall |  &nbsp;             |
 |-------------------------|-------------------------|---------------------|
 | Noder                   | Från dimensionsmedlem   | Till dimensionsmedlem |
 | Resultaträkning |                         |                     |
@@ -258,7 +258,7 @@ Dimensionshierarkierna låter dig visa data på olika aggregationsnivåer.
 
 Här följer ett exempel på en Power Pivot-rapportering i Excel.
 
-| **Resultaträkning** | **Kostnadsobjekt** |                |               |               |  **Summa**    |
+| **Resultaträkning** | **Kostnadsobjekt** |      &nbsp;    |   &nbsp;      |     &nbsp;    |  **Summa**    |
 |-----------------------------|-----------------|----------------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002**      | **CC003**     | **CC004**     |               |
 | **Primärkostnad**            | **10.100,00**   | **14.200,00**  | **14.000,00** | **8.500,00**  | **46.800,00** |
@@ -276,7 +276,7 @@ Med hjälp av **Policy för samlade kostnader** och **kostnadselement av typen s
 
 Om det här exemplet har genomförts utan att skapa **Policy för samlade kostnader** rapporteringsresultat blir enligt nedan. Kostnadsflödet går korrekt men spårbarhet och insyn i hur kostnadsflödet går mellan kostnadsställena försvinner.
 
-| **Resultaträkning** | **Kostnadsobjekt** |           |               |               |          **Summa**  |
+| **Resultaträkning** | **Kostnadsobjekt** |   &nbsp;  |    &nbsp;     |  &nbsp;       |          **Summa**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002** | **CC003**     | **CC004**     |               |
 | **Primärkostnad**            | **0.00**        | **0.00**  | **31.082,75** | **15.717,25** | **46.800,00** |

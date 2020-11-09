@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSCrossDockingTemplate, WHSLoadPostMethod, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSPlannedCrossDocking
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: ae805d9aac790a1a58478cf54d033ce758c5eca3
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: cc217f21a5fa70feb9ef9161f3ef2e2b6a333f35
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530108"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017769"
 ---
 # <a name="planned-cross-docking"></a>Planerad direktleverans
 
@@ -276,11 +277,11 @@ Det andra arbets-ID som skapas har värdet **Arbetsordertyp** för *Inköpsorder
 1. Logga in på den mobila enheten för en användare i lager ställe *51*.
 1. Gå till **inkommande \> inleverans av inköp**.
 1. I fältet **PONum** anger du inköpsordernummer.
-1. I fältet **Kvt**, ange *5*.
+1. I fältet **Kvt** , ange *5*.
 1. Välj **OK**.
 1. På nästa sida anger du fältet **artikel** till *A0001*.
 1. Välj **OK**.
-1. På nästa sida bekräfta värdena **PONum**, **Artikel** och **Kvt** genom att klicka på **OK**.
+1. På nästa sida bekräfta värdena **PONum** , **Artikel** och **Kvt** genom att klicka på **OK**.
 
     Du får ett meddelande arbetet är slutfört.
 
@@ -293,7 +294,7 @@ För närvarande har båda arbets-ID:n samma ID-nummer. För att slutföra de ko
 1. Gå till den mobila enheten **Inkommande \> Inköpsartikelinförsel** och ange målnummer-ID från arbetet.
 1. I fältet **ID** ange målnummer-ID från arbetsinformationen.
 
-    Plocksidan för direktleverans visar plockplatsen (*RECV*), målnummer-ID (*ID-nummer*), artikel (*A0001*) och kvantitet (*3*).
+    Plocksidan för direktleverans visar plockplatsen ( *RECV* ), målnummer-ID ( *ID-nummer* ), artikel ( *A0001* ) och kvantitet ( *3* ).
 
 1. Välj **OK**.
 1. I fältet **Mål LP** anger du en målnummer-ID för det licensserver-ID som ska placeras (direktlevereras) på leveransplatsen. Du kan välja valfritt ID-nummer.

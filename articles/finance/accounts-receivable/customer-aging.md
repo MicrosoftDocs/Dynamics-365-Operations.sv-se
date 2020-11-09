@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 062e8972c879d770cc4106c2811cd4c16fff0446
-ms.sourcegitcommit: 25909c6ad3616e4f75a2fe006057dda18d7cc856
+ms.openlocfilehash: 5f3a1bba4596c7b645c20a790a6cbe8725ab665d
+ms.sourcegitcommit: e43aef72b7d65db1dcb014dfada5233ac051ba7c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974871"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4013063"
 ---
 # <a name="customer-aging-report"></a>Åldersfördelningsrapport för kunder 
 
@@ -48,7 +48,7 @@ När du genererar den här rapporten visas följande standardparametrar. Du kan 
 <td><p>Välj en eller flera faktureringsklassificeringar som ska inkluderas i rapporten.</p>
 <div class="alert">
 
-**Obs**! Den här kontrollen är bara tillgänglig om konfigurationsnyckeln <STRONG>Offentlig sektor</STRONG> har valts.</P>
+**Obs** ! Den här kontrollen är bara tillgänglig om konfigurationsnyckeln <STRONG>Offentlig sektor</STRONG> har valts.</P>
 
 
 </div></td>
@@ -58,7 +58,7 @@ När du genererar den här rapporten visas följande standardparametrar. Du kan 
 <td><p>Om den här kryss rutan är markerad kommer alla transaktioner som inte har någon tilldelad faktureringsklassificering att visas i rapporten.</p>
 <div class="alert">
 
-**Obs**! Den här kontrollen är bara tillgänglig om konfigurationsnyckeln <STRONG>Offentlig sektor</STRONG> har valts.</P>
+**Obs** ! Den här kontrollen är bara tillgänglig om konfigurationsnyckeln <STRONG>Offentlig sektor</STRONG> har valts.</P>
 
 </div></td>
 </tr>
@@ -115,8 +115,9 @@ När du genererar den här rapporten visas följande standardparametrar. Du kan 
 <tr class="even">
 <td><p><strong>Utskriftsriktning</strong></p></td>
 <td><p>Välj om du vill beräkna saldon och skriva ut åldersfördelningsrapporten för tidigare eller framtida perioder. Datumen utvärderas i förhållande till det datum som har valts i fältet <strong>Saldo som på</strong>. Välj <strong>Bakåt</strong> för att visa information för tidigare perioder. Välj <strong>Framåt</strong> för att visa information för framtida perioder.</p>
-
-**Obs!** Informationen som du anger i det här fältet används bara om du inte väljer någon definition av åldersfördelningsperiod.</P>
+<div class="alert">
+  
+<STRONG>Obs!</STRONG> Informationen som du anger i det här fältet används bara om du inte väljer någon definition av åldersfördelningsperiod.</P>
 
 
 </div></td>

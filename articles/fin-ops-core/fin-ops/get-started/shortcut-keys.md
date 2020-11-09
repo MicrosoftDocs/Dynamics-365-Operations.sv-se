@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 982fbef1af504ad70aa0e7c4ecf19f09fb599d16
-ms.sourcegitcommit: ebb110b0b73c99929636d26811a6f9c186080ddb
+ms.openlocfilehash: 1a69e262c1dc731839e0bf347a0fb14983742dbe
+ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3962530"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4013190"
 ---
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
@@ -33,7 +33,7 @@ Du kan använda följande kortkommandon för att snabbt och effektivt mata in da
 > [!NOTE]
 > Tangentbordsgenvägarna som beskrivs här hänvisar till en amerikansk tangentbordslayout. Knappar på andra tangentbordslayouter kan kanske inte exakt motsvarar tangenterna på ett tangentbord i USA.
 
-Vissa av genvägarna på den här sidan är *nyckelackord*, vilket innebär att de kräver två på varandra följande kombinationer av tangentkombinationer (avgränsade med ett komma) som måste tryckas separat för att utlösa den begärda åtgärden. Till exempel genvägen "Alt+M,A" kräver att användaren först trycker på "Alt+M", släpper upp tangenterna och trycker på "A". 
+Vissa av genvägarna på den här sidan är *nyckelackord* , vilket innebär att de kräver två på varandra följande kombinationer av tangentkombinationer (avgränsade med ett komma) som måste tryckas separat för att utlösa den begärda åtgärden. Till exempel genvägen "Alt+M,A" kräver att användaren först trycker på "Alt+M", släpper upp tangenterna och trycker på "A". 
 
 ## <a name="finding-a-shortcut"></a>Söka efter en genväg
 
@@ -239,7 +239,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Flytta upp/ned en sida i uppslagningen                                                                                       | Page Up / Page Down              |
 | Flytta till längst upp/längst ned i uppslagningen                                                                                    | Startsida/slut                       |
 
-## <a name="task-recordershortcuts"></a>Kortkommandon [Uppgiftsinspelare](../../dev-itpro/user-interface/task-recorder.md) 
+## <a name="task-recorder-shortcuts"></a>Kortkommandon [Uppgiftsinspelare](../../dev-itpro/user-interface/task-recorder.md) 
 
 | Om du vill göra detta                                                                    | Tryck på                       |
 |-------------------------------------------------------------------------------|----------------------------|

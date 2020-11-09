@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4ec10e0f79e4eca7f51ba48c679dcf6fe745eb29
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: dce2fdd9d91c2bd867f0455573733aefb0796fa7
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141440"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107362"
 ---
 # <a name="create-call-center-orders"></a> Skapa kundtjänstorder
 
@@ -30,29 +30,29 @@ ms.locfileid: "3141440"
 
 Den här proceduren går igenom hur du söker efter en kund, skapar en ny order, söker efter en produkt och tar emot betalningen från kunden. I den här proceduren används demonstrationsdataföretaget USRT och är avsedd för Försäljningsorderansvarig. Förutsättningar: Användaren som utför proceduren ställs in som kundtjänstanvändare och halvårsutgåvan av Fabrikam-katalogen publiceras med minst en källkod på den.
 
-1. Gå till Butik och handel > Kunder > Kundtjänst.
-2. I fältet Söktext, ange sökkriterierna för att hitta kunden.
-    * För den här exempelproceduren, skriv ”karen” och tryck på fliken.  
-3. Klicka på Sök.
-    * Eftersom det bara finns en kund med namnet Karen i demodata, kommer de automatiskt markeras.  
-4. Klicka på Ny försäljningsorder.
-5. Expandera eller komprimera avsnittet Försäljningsorderhuvud.
+1. Gå till **Butik och handel \> Kunder \> Kundtjänst**.
+2. För **Söktext** , ange sökkriterierna för att hitta kunden.
+    * För den här exempelproceduren, skriv ”karen” och tryck på **flik**.  
+3. Välj Sök.
+    * Eftersom det bara finns en kund med namnet Karen i demodata, kommer resultatet automatiskt markeras.  
+4. Välj **Ny försäljningsorder**.
+5. Expandera eller komprimera avsnittet **Försäljningsorderhuvud**.
 6. Välj källkoden för katalogen.
-    * Om det inte finns några aktiva källkoder kan du stänga källfältet och hoppa över det här steget.  
-7. Klicka på Lägg till rad.
-8. Ange artikelsöktermen i fältet Artikelnummer.
-    * För den här exempelproceduren, ange ett delvis artikelnummer 8111 och tryck på fliken. Då poppar artikelsökningsfönstret upp.  
-9. Välj produkten att lägga till försäljningsordern
+    * Om det inte finns några aktiva källkoder kan du hoppa över det här steget.  
+7. Välj **Markera rad**.
+8. För **Artikelnummer** ange artikelsöktermen.
+    * För den här exempelproceduren, ange ett delvis artikelnummer 8111 och tryck på fliken. Denna åtgärd öppnar artikelsökningsfönstret.  
+9. Välj produkten att lägga till försäljningsordern.
 10. Ange försäljningskvantiteten.
-11. Klicka på Skapa.
-12. Klicka på Slutför för att registrera kundbetalningen.
-13. Klicka på Lägg till.
+11. Markera **Skapa**.
+12. Klicka på **Slutför** för att registrera kundbetalningen.
+13. Markera **Lägg till**.
     * Lägg till länk finns på betalningsfliken. Expandera fliken Betalning om den är komprimerad.  
 14. Välj betalningsmetod.
     * Välj betalningsmetoden kontant för den här proceduren.  
 15. Stäng sidan.
 16. Ange belopp.
-    * För den här proceduren, ange ett belopp lika med ordersaldot som kan visas på sammanfattningssidan för försäljningsorder till vänster om beloppsfältet. Detta gör att du slutför ordern som helt betald.  
-17. Klicka på OK.
-18. Klicka på Skicka.
+    * För den här proceduren, ange ett belopp lika med ordersaldot som kan visas på sammanfattningssidan för försäljningsorder till vänster om beloppsfältet. Denna åtgärd gör att du slutför ordern som helt betald.  
+17. Välj **OK**.
+18. Välj **skicka**.
 

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e4d2b1f4b7fb9394f54674f9622c8a8edd435311
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9abe493746719d2e229ef09c2eb5f436b91b2171
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024035"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107289"
 ---
 # <a name="call-center-catalogs"></a>Kundtjänstkataloger
 
@@ -32,7 +32,7 @@ ms.locfileid: "3024035"
 
 Det här avsnittet innehåller en beskrivning av den callcenterspecifika funktionen som är länkad till kataloger i Dynamics 365 Commerce.
 
-Katalogfunktionerna i Handel kan användas för flera ändamål. Urspungligen skapades funktionerna för katalogen för e-handelsintegration för tredje part. Katalogens konfiguration tillät att företag kunde skapa en grupp med produkter och attribut som kunde publiceras externt för förbrukning av en tredje parts e-handelslösning.
+Katalogfunktionerna i Handel kan användas för flera ändamål. Ursprungligen skapades funktionerna för katalogen för e-handelsintegration för tredje part. Katalogens konfiguration tillät att företag kunde skapa en grupp med produkter och attribut som kunde publiceras externt för förbrukning av en tredje parts e-handelslösning.
 
 När kundtjänsts supportkanal lades till utökades katalogkonceptet till att lägga till ytterligare funktioner för stöd och hantering relaterade till traditionella marknadsföringskataloger för försäljning direkt till konsument. Ett direkt till konsument-företag ger ofta ut tryckta kataloger som sedan skickas till ett eller flera segment med kunder. Dessa kataloger har vanligtvis särskilda erbjudanden och erbjudanden som bara gäller om kunden anger en katalogidentifieringskod när beställningen görs.
 
@@ -96,8 +96,8 @@ Medan kataloger som konfigurerats och publiceras i Handel kan funktionen **skick
 
 ## <a name="additional-features"></a>Ytterligare funktioner
 
-På fliken **kataloger**, finns även alternativ för att konfigurera en **betalningsplan** och **gratisprodukter** tillgängliga. Om källkod-ID länkat till katalogen används vid orderregistrering för kundtjänst kommer kunden att berättigas kostnadsfria produkter eller användning av katalogbetalningsplaner enligt definitionen. Om det är nödvändigt att begränsa kunden till att endast kunna välja från betalningsscheman kopplade till deras katalog och inte alla aktiva betalningsplaner i systemet kan kryssrutan **Tillåt endast katalogplaner** markeras för minst ett källkod-ID som definierats för att framtvinga denna begränsning.
+På fliken **kataloger** , finns även alternativ för att konfigurera en **betalningsplan** och **gratisprodukter** tillgängliga. Om källkod-ID länkat till katalogen används vid orderregistrering för kundtjänst kommer kunden att berättigas kostnadsfria produkter eller användning av katalogbetalningsplaner enligt definitionen. Om det är nödvändigt att begränsa kunden till att endast kunna välja från betalningsscheman kopplade till deras katalog och inte alla aktiva betalningsplaner i systemet kan kryssrutan **Tillåt endast katalogplaner** markeras för minst ett källkod-ID som definierats för att framtvinga denna begränsning.
 
 ## <a name="additional-notes"></a>Ytterligare noteringar
 
-När en källkod-ID gäller för en försäljningsorder i kundtjänst, används den för närvarande för att skapa priser, erbjudanden, skript och merförsäljning/korsförsäljnings som är katalogspecifika. Systemet kommer inte att förbjuda eller hindra att en produkt som inte finns i katalogen beställs på försäljningsordern. Om en artikel är beställd som inte tillhör katalogen, kommer systemet först att använda prisgrupp som definieras i kundtjänstkanalen **Prisgrupp** som definieras i kundtjänstkanalen (**Butik och handel** \> **Kanaler** \> **Kundtjänst** \> **Alla kundtjänster**) för artikelpris eller erbjudanden. Om du inte hittar något specifikt kanalpris, används det grundläggande försäljningspriset för artikeln.
+När en källkod-ID gäller för en försäljningsorder i kundtjänst, används den för närvarande för att skapa priser, erbjudanden, skript och merförsäljning/korsförsäljnings som är katalogspecifika. Systemet kommer inte att förbjuda eller hindra att en produkt som inte finns i katalogen beställs på försäljningsordern. Om en artikel är beställd som inte tillhör katalogen, kommer systemet först att använda prisgrupp som definieras i kundtjänstkanalen **Prisgrupp** som definieras i kundtjänstkanalen ( **Butik och handel** \> **Kanaler** \> **Kundtjänst** \> **Alla kundtjänster** ) för artikelpris eller erbjudanden. Om du inte hittar något specifikt kanalpris, används det grundläggande försäljningspriset för artikeln.

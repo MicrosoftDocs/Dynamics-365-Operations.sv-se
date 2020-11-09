@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 853791d5ffc1d92b9fbafa2acc13cd5543c38196
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: f99f3760e75ec1bbf2ccdea497cf2eec3e28e233
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275543"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997384"
 ---
 # <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Felsöka problem med modulen för dubbelriktad skrivning i Finance and Operations-appar
 
@@ -50,7 +49,7 @@ Följande felmeddelande kan visas när du försöker konfigurera en ny entitet f
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Fel vid öppning av användargränssnittet med dubbelriktad skrivning
 
-Följande felmeddelande kan visas när du försöker komma åt dubbelriktad skrivning från arbetsytan **Datahantering**:
+Följande felmeddelande kan visas när du försöker komma åt dubbelriktad skrivning från arbetsytan **Datahantering** :
 
 *login.microsoftonline.com vägrade att ansluta.*
 
@@ -62,7 +61,7 @@ Om du vill åtgärda problemet loggar du in på ett InPrivate-fönster i Microso
 
 Du kan stöta på följande fel när du länkar eller skapar kartor:
 
-*Svarsstatuskoden anger inte lyckad: 403 (tokenexchange).<br> Sessions-ID: \<din sessions-id\><br> rotaktivitets-ID: \<din rotaktivitets-id\>*
+*Svarsstatuskoden anger inte lyckad: 403 (tokenexchange).<br> Session s-ID: \<your session id\><br> Rotaktivitets-ID: \<your root activity id\>*
 
 Det här felet kan uppstå om du inte har tillräcklig behörighet för att länka dubbelriktad skrivning eller skapa kartor. Det här felet kan också uppstå om Common Data Service-miljön återställdes utan att dubbelriktig skrivning avlänkas. Alla användare med rollen systemadministratör i båda Finance and Operations-apparna och Common Data Service kan länka dessa miljöer. Det är bara användaren som installerar anslutningen för dubbelriktad skrivning som kan lägga till nya entitetsmappningar. Efter installationen kan alla användare med rollen systemadministratör övervaka status och redigera mappningarna.
 
@@ -78,7 +77,7 @@ Lös problemet genom att skapa en biljett till dataintegrationsteamet. Koppla n�
 
 ## <a name="error-while-trying-to-start-an-entity-mapping"></a>Fel vid försök att starta en entitetsmappningen
 
-Du kan få ett felmeddelande som följande när du försöker ange status för en mappning som ska **köras**:
+Du kan få ett felmeddelande som följande när du försöker ange status för en mappning som ska **köras** :
 
 *Det gick inte att slutföra inledande datasynkronisering. Fel: del i dubbelriktad skrivning - registrering av plugin-program misslyckades: Det gick inte att skapa metadata för sökning för dubbelriktad skrivning.*
 

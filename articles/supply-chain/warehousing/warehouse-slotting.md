@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHSSlotUOMTier, WHSSlotTemplate, WHSLocDirHint, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,18 +16,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: f6764f8bc082962af37d4775b6fe53d8704658eb
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: ed9e6eae2ecc8de8d5eeef4699678e93dd74f193
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597468"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017424"
 ---
 # <a name="warehouse-slotting"></a>Artikelplacering för lagerställe
 
 [!include [banner](../includes/banner.md)]
 
-Artikelplacering för lagerställe låter dig konsolidera efterfrågan per artikel och enhet från order som har status *beställt*, *reserverat* eller *frisläppt*. Genererade behov kan sedan tillämpas på platser som ska användas för plockning, baserat på kvantitet, enhet, fysiska dimensioner, fasta platser och mycket mer. När artikelplaceringsplanen har fastställts kan du skapa ett lagerpåfyllnadsarbete för att hämta en lämplig lagermängd till varje plats.
+Artikelplacering för lagerställe låter dig konsolidera efterfrågan per artikel och enhet från order som har status *beställt* , *reserverat* eller *frisläppt*. Genererade behov kan sedan tillämpas på platser som ska användas för plockning, baserat på kvantitet, enhet, fysiska dimensioner, fasta platser och mycket mer. När artikelplaceringsplanen har fastställts kan du skapa ett lagerpåfyllnadsarbete för att hämta en lämplig lagermängd till varje plats.
 
 Denna funktion underlättar för lagerchefer att planera plockningsplatser innan de frigör order till lagerstället och skapar plockningsarbete.
 
@@ -82,8 +83,8 @@ Du måste välja den direktivkod som ska associeras med en mall.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Direktivkoder**.
 1. Klicka på **Ny** i åtgärdsfönstret.
-1. I fältet **Direktivkod**, ange *Artikelplacering*.
-1. I fältet **Beskrivning av direktivkod**, ange *Artikelplacering*.
+1. I fältet **Direktivkod** , ange *Artikelplacering*.
+1. I fältet **Beskrivning av direktivkod** , ange *Artikelplacering*.
 
 ### <a name="set-up-slotting-templates"></a>Ställ in artikelplaceringsmallar
 
@@ -158,7 +159,7 @@ För varje mall som du skapar lägger du till en rad för varje artikelplacering
 
     - **Tillåt låt upp:** _Ja_
 
-        Om det här alternativet är inställt på *Ja*, kommer flyttningsarbetet att skapas för att ta ut lagret med lagerställen, men där inget har öppnats. Mallen körs sedan igen. Den här gången ignoreras lagret på platserna. Den här funktionen fungerar bäst om fältet **Tilldela kortplatskriterier** är inställt på _Överväg kvantitet_.
+        Om det här alternativet är inställt på *Ja* , kommer flyttningsarbetet att skapas för att ta ut lagret med lagerställen, men där inget har öppnats. Mallen körs sedan igen. Den här gången ignoreras lagret på platserna. Den här funktionen fungerar bäst om fältet **Tilldela kortplatskriterier** är inställt på _Överväg kvantitet_.
 
     - **Användning av fast lagerplats:** _Endast fasta lagerplatser för produkten_
 
@@ -188,7 +189,7 @@ För varje mall som du skapar lägger du till en rad för varje artikelplacering
 
 1. Välj raden där fältet **Sekvens** är inställt på *2*.
 1. Välj **Redigera fråga**.
-1. På fliken **intervall**, välj **Lägg till** om du vill lägga till en rad i rutnätet.
+1. På fliken **intervall** , välj **Lägg till** om du vill lägga till en rad i rutnätet.
 1. Ställ in följande värden på denna nya rad:
 
     - **Register:** *platser*
@@ -220,7 +221,7 @@ Minst ett platsdirektiv måste ställas in för att stödja plockning av artikel
 
 ##### <a name="configure-the-lines-fasttab"></a>Konfigurera snabbfliken Rader
 
-1. På snabbfliken **Rader**, klicka på **Ny** för att skapa en ny rad.
+1. På snabbfliken **Rader** , klicka på **Ny** för att skapa en ny rad.
 1. Ställ in följande värden på denna nya rad. Acceptera standardvärden för alla andra fält.
 
     - **Från kvantitet:** _0_
@@ -241,7 +242,7 @@ Minst ett platsdirektiv måste ställas in för att stödja plockning av artikel
 ##### <a name="edit-the-query"></a>Redigera frågan
 
 1. På snabbfliken **Platsdirektivåtgärder** välj **Redigera fråga**.
-1. På fliken **intervall**, välj **Lägg till** om du vill lägga till en rad i rutnätet.
+1. På fliken **intervall** , välj **Lägg till** om du vill lägga till en rad i rutnätet.
 1. Ställ in följande värden på denna nya rad:
 
     - **Register:** *platser*
@@ -268,7 +269,7 @@ Skapa den efter frågan som du vill använda skåra på genom att följa stegen 
 1. Gå till **Försäljning och marknadsföring \> Försäljningsorder \> Alla försäljningsorder**.
 1. Skapa en försäljningsorder genom att välja **Ny**.
 1. I dialogrutan **Skapa försäljningsorder** i fältet **Kundkonto** välj _US-007_.
-1. I fältet **Lagerställe**, välj _61_.
+1. I fältet **Lagerställe** , välj _61_.
 1. Välj **OK**.
 1. Den nya försäljningsordern öppnas. Den innehåller en tom rad i snabbfliken **Försäljningsorderrader**. Ställ in följande värden på denna rad:
 
@@ -283,7 +284,7 @@ Skapa den efter frågan som du vill använda skåra på genom att följa stegen 
 1. Välj **Spara**.
 1. Skapa en andra försäljningsorder genom att välja **Ny**.
 1. I dialogrutan **Skapa försäljningsorder** i fältet **Kundkonto** välj _US-008_.
-1. I fältet **Lagerställe**, välj _61_.
+1. I fältet **Lagerställe** , välj _61_.
 1. Den nya försäljningsordern öppnas. Den innehåller en tom rad i snabbfliken **Försäljningsorderrader**. Ställ in följande värden på denna rad:
 
     - **Artikel:** _T0100_

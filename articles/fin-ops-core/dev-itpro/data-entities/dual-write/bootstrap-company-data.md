@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 1ed97d7c388347eb5afe101f51173b6d48b18fcd
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: a2adf284111f2ccc9a830635ab3fb8f4731c84d9
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172933"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997586"
 ---
 # <a name="bootstrap-with-company-data-faq"></a>Vanliga frågor om initiering med företagsdata
  
@@ -57,9 +56,9 @@ När du har packat upp och öppnat lösningen i Visual Studio och återställt N
 Exempelkoden visar bara ett av många sätt som du kan kategorisera entitetsposter efter företag. Genom att ändra logiken i avsnitten **TODO** kan du skapa en anpassad kategorisering. 
  
 ## <a name="what-should-i-expect"></a>Vad ska jag förvänta mig?
-Som standard kan du använda exempelprogrammet för att ange en ordlista med kodmappningar för affärsenhet till företag. Alla entiteter du initierar med fältet **OwningBusinessUnitOwningBusinessUnit** ställs automatiskt in på att använda det angivna företaget. Alla entiteter utan fältet **OwningBusinessUnit**, t.ex. produkt, ställer in företaget baserat på mappningen med ett tomt affärsenhetsvärde.
+Som standard kan du använda exempelprogrammet för att ange en ordlista med kodmappningar för affärsenhet till företag. Alla entiteter du initierar med fältet **OwningBusinessUnitOwningBusinessUnit** ställs automatiskt in på att använda det angivna företaget. Alla entiteter utan fältet **OwningBusinessUnit** , t.ex. produkt, ställer in företaget baserat på mappningen med ett tomt affärsenhetsvärde.
 
-Konsolprogrammet förväntar sig en parameter, antingen **–simulera** eller **–tillämpa**. Om du använder kommandoradparametern **–simulera** uppdateras inga data. Endast **simulation_<entityname>.csv**-filer genereras i samma katalog som verktyget, en för varje entitet som skulle ha uppdaterats. Du kan granska dessa filer iterativt medan du arbetar för att säkerställa att koden uppdaterar företagsvärden som förväntat. 
+Konsolprogrammet förväntar sig en parameter, antingen **–simulera** eller **–tillämpa**. Om du använder kommandoradparametern **–simulera** uppdateras inga data. Endast **simulation_<entityname>.csv** -filer genereras i samma katalog som verktyget, en för varje entitet som skulle ha uppdaterats. Du kan granska dessa filer iterativt medan du arbetar för att säkerställa att koden uppdaterar företagsvärden som förväntat. 
 
 När du är klar med de simulerade uppdateringarna använder du parametern **–tillämpa**. Detta uppdaterar alla poster som för närvarande har ett felaktigt företagsvärde i grupper om 1000 poster i taget (som standard). Koden är idempotent enligt det som anges, vilket innebär att du kan köra den igen och att endast de felaktigt tilldelade företagen uppdateras. När du kör med **–tillämpa** används kodutgångar CSV-filer av de ändringar som har gjorts, med namnet **applied_<entityname>.csv**. 
 

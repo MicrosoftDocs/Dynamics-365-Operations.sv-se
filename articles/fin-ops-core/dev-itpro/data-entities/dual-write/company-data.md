@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 444bfc1698a206ca34e67f742df63431a3b02649
-ms.sourcegitcommit: 7da8811f1a7db858efb76edb0bdf857a47d07600
+ms.openlocfilehash: 46a6ed9763781de8e05cff7adadf75fe2a931fdc
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "3728423"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997536"
 ---
 # <a name="company-concept-in-common-data-service"></a>Företagskoncept i Common Data Service
 
@@ -33,7 +32,7 @@ ms.locfileid: "3728423"
 
 I Finance and Operations, är begreppet av ett *företag* både en laglig konstruktion och en affärskonstruktion. Det är också en säkerhets- och synlighetsgräns för data. Användare arbetar alltid inom ramen för ett enda företag, och de flesta av uppgifterna är sorterade efter företag.
 
-Common Data Service har inte ett likvärdigt koncept. Det närmaste konceptet är *affärsenhet*, som i första hand är en säkerhets- och synlighetsgräns för användardata. Det här konceptet har inte samma juridiska eller affärsmässiga betydelse som företagskonceptet.
+Common Data Service har inte ett likvärdigt koncept. Det närmaste konceptet är *affärsenhet* , som i första hand är en säkerhets- och synlighetsgräns för användardata. Det här konceptet har inte samma juridiska eller affärsmässiga betydelse som företagskonceptet.
 
 Eftersom affärsenhet och företag inte är likvärdiga begrepp, är det inte möjligt att tvinga en en-till-en-mappning (1:1) mellan dem i syfte integrera Common Data Service. Men eftersom användare måste som standard kunna se samma poster i appen och Common Data Service har Microsoft infört en ny entitet i Common Data Service som heter CDM \_-företag. Den här entiteten motsvarar företagsentiteten i appen. För att garantera att synligheten för poster är likvärdig mellan appen och färdiga Common Data Service rekommenderar vi följande inställningar för data i Common Data Service:
 
@@ -86,14 +85,14 @@ Det finns flera sätt att fylla i företagsnamnet automatiskt i kundengagemangsa
 
     :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Ändra företagsnamnet på ett nytt konto.":::
 
-+ Om du har **Skriv**-åtkomst till data i fler än ett företag kan du ändra standardföretaget genom att välja en post som tillhör ett annat företag.
++ Om du har **Skriv** -åtkomst till data i fler än ett företag kan du ändra standardföretaget genom att välja en post som tillhör ett annat företag.
 
     :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="När du väljer en post ändras standardföretaget.":::
 
 + Om du är systemets konfigurator eller administratör och vill fylla i företagsdata automatiskt i ett anpassat formulär, kan du använda [formulärhändelser](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Lägg till en JavaScript-referens till **msdyn_/DefaultCompany.js** och använd följande händelser. Du kan t. ex. använda ett formulär som är utanför rutan, till exempel formuläret **konto**.
 
-    + **OnLoad**-händelse för formuläret: Ställ in fältet **defaultCompany**.
-    + **OnChange**-händelse för fältet **företag**: Ställ in fältet **updateDefaultCompany**.
+    + **OnLoad** -händelse för formuläret: Ställ in fältet **defaultCompany**.
+    + **OnChange** -händelse för fältet **företag** : Ställ in fältet **updateDefaultCompany**.
 
 ## <a name="apply-filtering-based-on-the-company-context"></a>Använd filtrering baserat på företagets kontext
 

@@ -3,7 +3,7 @@ title: Vagnikonmodul
 description: Det här avsnittet handlar om vagnikonmodulen och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 137debe3f4cad3948d20b2902ea80e66fa74ffd4
-ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
+ms.openlocfilehash: 4ab1609d332b96c0588b06aa086dd4fee944e5d9
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "3661157"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055770"
 ---
 # <a name="cart-icon-module"></a>Vagnikonmodul
 
@@ -33,6 +33,9 @@ Det här avsnittet handlar om vagnikonmodulen och beskriver hur du lägger till 
 ## <a name="overview"></a>Översikt
 
 Vagnikonmodulen representerar kundvagnen i huvudmodulen på sidan och visar antalet artiklar i vagnen. Vagnikonmodulen visar också en sammanfattning av kundvagnen (även kallad en minivagn) när vagnikonen hovras över. Minivagnen ger användaren en sammanfattning av artiklarna i kundvagnen utan att behöva navigera till kundvagnssidan. Dessutom kan användaren gå direkt till kassasidan om de är nöjda med sammanfattningen. Detta minskar antalet sidnavigeringer och gör utcheckningen snabbare. 
+
+> [!NOTE]
+> Stöd för modulen kundvagnikon i Dynamics 365 Commerce 10.0.11-versionen.
 
 Följande bild visar ett exempel på en kundvagnsikon som visar en minikundvagn i Fabrikam-rubriken.
 

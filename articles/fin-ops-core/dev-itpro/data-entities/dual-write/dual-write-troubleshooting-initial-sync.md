@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: e4ee3bf07a1df445875197f38f655464cc9b44d3
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: 4d0ca1fb4b7a4964194516544686b6bb7d26e76c
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443859"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997336"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Felsöka problem under första synkroniseringen
 
@@ -157,7 +156,7 @@ Nedan följer några exempel:
 
 Om några poster i kundenheten har värden i fälten **ContactPersonID** och **InvoiceAccount** följ dessa steg slutföra den inledande synkroniseringen. Du kan använda den här metoden för alla enheter utanför lådan, t.ex. **konton** och **kontakter**.
 
-1. I Finance and Operations-appen, ta bort fälten **ContactPersonID** och **InvoiceAccount** från **Kunder V3 (konton)**-mappningen och spara mappningen.
+1. I Finance and Operations-appen, ta bort fälten **ContactPersonID** och **InvoiceAccount** från **Kunder V3 (konton)** -mappningen och spara mappningen.
 
     1. Navigera till mappning med dubbelriktad skrivning för **Kunder V3 (konton)** och välj fliken **enhetsmappningar**. I vänster filter, välj **Finance and Operations app.Customers V3**. I höger filter, välj **Common Data Service.Account**.
     2. Sök efter **contactperson** för att hitta källfältet **ContactPersonID**.
@@ -187,13 +186,13 @@ Om några poster i kundenheten har värden i fälten **ContactPersonID** och **I
 4. Kör den första synkroniseringen för mappningen **CDS-kontakter V2 (kontakter)**.
 
     > [!NOTE]
-    > Det finns två mappningar med samma namn. Se till att kartan som har följande beskrivning flik **Detaljer**: **Mall för dubbelriktad skrivning för synkronisering mellan FO.CDS Vendor Contacts V2 to CDS.Contacts. Kräver nytt paket \[Dynamics365SupplyChainExtended\].**
+    > Det finns två mappningar med samma namn. Se till att kartan som har följande beskrivning flik **Detaljer** : **Mall för dubbelriktad skrivning för synkronisering mellan FO.CDS Vendor Contacts V2 to CDS.Contacts. Kräver nytt paket \[Dynamics365SupplyChainExtended\].**
 
 5. Lägg till fälten **InvoiceAccount** och **ContactPersonId** tillbaka till mappningen **Kunder V3 (konton)** och spara mappningen. Nu är både fältet **InvoiceAccount** och fältet **ContactPersonId** del i ett direkt synkroniseringsläge. I nästa steg slutför du den inledande synkroniseringen för dessa fält.
 6. Kör den första synkroniseringen igen för mappningen **Kunder V3 (konton)**. Eftersom ändringsspårning är inaktiverat kommer data för **InvoiceAccount** och **ContactPersonId** att synkroniseras från Finance and Operations-appen till Common Data Service.
 7. Om du vill synkronisera data för **InvoiceAccount** och **ContactPersonId** från Common Data Service till Finance and Operations-appen måste du använda ett dataintegreringsprojekt.
 
-    1. I Power Apps skapar du ett dataintegreringsprojekt mellan **Sales.Account** och **Finance and Operations-appar. Kunder V3**-enheter. Datariktningen måste vara från Common Data Service till Finance and Operations-appen. Eftersom **InvoiceAccount** är ett nytt attribut i dubbelriktad skrivning kanske du vill hoppa över den inledande synkroniseringen för det. Mer information finns i [integrera data i Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator).
+    1. I Power Apps skapar du ett dataintegreringsprojekt mellan **Sales.Account** och **Finance and Operations-appar. Kunder V3** -enheter. Datariktningen måste vara från Common Data Service till Finance and Operations-appen. Eftersom **InvoiceAccount** är ett nytt attribut i dubbelriktad skrivning kanske du vill hoppa över den inledande synkroniseringen för det. Mer information finns i [integrera data i Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator).
 
         Följande bild visar ett projekt som uppdaterar **CustomerAccount** och **ContactPersonId**.
 
@@ -203,7 +202,7 @@ Om några poster i kundenheten har värden i fälten **ContactPersonID** och **I
 
         > [OBS] Om det inte finns någon filterknapp skapar du ett supportärende som ber dataintegrationsgruppen att aktivera filterkapaciteten för din klientorganisation.
 
-        Om du inte anger någon filterfråga för **\_msdyn\_company\_value**, synkroniseras alla poster.
+        Om du inte anger någon filterfråga för **\_msdyn\_company\_value** , synkroniseras alla poster.
 
         ![Lägga till en filterfråga](media/cust_selfref7.png)
 

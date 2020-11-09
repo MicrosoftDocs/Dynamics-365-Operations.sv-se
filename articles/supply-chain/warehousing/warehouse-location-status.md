@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSLocationProfile,WHSLocation
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 7b17df2afee22dde1af5c44de31c585069daa349
-ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
+ms.openlocfilehash: 31216c24f54f22ec928eb143d4a913aabcd50cf8
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "3775184"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016020"
 ---
 # <a name="warehouse-location-status"></a>Lagerställets platsstatus
 
@@ -66,8 +66,8 @@ Exempelscenariot kräver att du förbereder två platsprofiler.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Platsprofiler**.
 1. Välj **Redigera** om du vill placera sidan i redigeringsläge.
-1. Markera **BULK-06**-profilen.
-1. Ange följande värden på snabbfliken **Allmänt**:
+1. Markera **BULK-06** -profilen.
+1. Ange följande värden på snabbfliken **Allmänt** :
 
     - **Aktivera artikel på plats:** Ange det här alternativet till _Ja_.
     - **Aktivera platsaktivitetens datum och tid:** Ange det här alternativet till _Ja_.
@@ -75,17 +75,17 @@ Exempelscenariot kräver att du förbereder två platsprofiler.
 
     Dessa alternativ bestämmer om referensfälten på platsen är aktiva.
 
-1. Upprepa steg 3 till och med 4 för **PICK-06**-profilen.
+1. Upprepa steg 3 till och med 4 för **PICK-06** -profilen.
 
 > [!NOTE]
-> När parametrarna i platsprofilen (**Aktivera artikel i lagerställe**, **Aktivera platsaktivitet**, **Aktivera platsstatus**) ställs in på *Ja*, uppdateras de relevanta platserna omedelbart genom att jobbet före *Konsekvenskontroll för lagerplatsstatus*.
+> När parametrarna i platsprofilen ( **Aktivera artikel i lagerställe** , **Aktivera platsaktivitet** , **Aktivera platsstatus** ) ställs in på *Ja* , uppdateras de relevanta platserna omedelbart genom att jobbet före *Konsekvenskontroll för lagerplatsstatus*.
 
 ### <a name="scenario"></a>Scenario
 
 1. Gå till **Anskaffning och källa \> Inköpsorder \> Alla inköpsorder**.
 1. Välj **Ny**.
-1. I dialogrutan **Skapa inköpsorder** på snabbfliken **Leverantör** på fältet **Leverantörskonto**, välj *104*.
-1. På snabbfliken **Allmänt** i fältet **Lagerställe**, välj *61*.
+1. I dialogrutan **Skapa inköpsorder** på snabbfliken **Leverantör** på fältet **Leverantörskonto** , välj *104*.
+1. På snabbfliken **Allmänt** i fältet **Lagerställe** , välj *61*.
 1. Välj **OK**.
 1. Den nya inköpsordern (IO) öppnas. Den innehåller en tom rad i rutnätet **Inköpsorderrader**. Ställ in följande värden på denna rad:
 
@@ -94,14 +94,14 @@ Exempelscenariot kräver att du förbereder två platsprofiler.
 
 1. I åtgärdsfönstret på fliken **Inköp** i gruppen **Åtgärder** välj **Bekräfta** för att bekräfta inköpsorder.
 1. På den mobila enheten, gå till **Inkommande \> inleverans av inköp**.
-1. Markera fältet **PONUM**, ange inköpsordernummer och bekräfta.
+1. Markera fältet **PONUM** , ange inköpsordernummer och bekräfta.
 1. Markera fältet **ARTIKEL** ange *A0002* som artikelnummer och bekräfta.
 1. På sidan **KVT** ange *5* som kvantitet och bekräfta.
 
     Du kan ange kvantitet på något av följande sätt:
 
-    - Markera plustecknet (**+**) eller minustecknet (**–**) om du vill addera eller subtrahera ett numeriskt värde.
-    - Markera det tomma fältet mellan plustecknet (**+**) och minustecknet (**–**) för att öppna det knappsatsen.
+    - Markera plustecknet ( **+** ) eller minustecknet ( **–** ) om du vill addera eller subtrahera ett numeriskt värde.
+    - Markera det tomma fältet mellan plustecknet ( **+** ) och minustecknet ( **–** ) för att öppna det knappsatsen.
 
 1. Bekräfta ditt val av artikelnummer *A0002* och kvantiteten *5*. Ett meddelande om att "arbetet är slutfört" visas längst ned på sidan.
 1. Välj menyknappen (kallas ibland för hamburger eller hamburgerknappen) i det övre högra hörnet och välj sedan **Avbryt** för att avsluta **Inleverans av inköp** och gå tillbaka till menyn **Inkommande**.
@@ -109,7 +109,7 @@ Exempelscenariot kräver att du förbereder två platsprofiler.
 1. På fliken **Allmänt** observera att värdena **Arbets-ID** och **Målregistreringsskylt** skapades.
 1. I avsnittet **Rader** observera värdena **Plats** för arbetstyperna *Plocka* och *Placera*.
 1. På den mobila enheten, gå till **Inkommande \> inköpsartikelinförsel**.
-1. Markera fältet **ID**, ange arbets-ID och bekräfta.
+1. Markera fältet **ID** , ange arbets-ID och bekräfta.
 1. Bekräfta en gång till för att slutföra registreringen *Plocka*.
 1. Välj menyknappen i det övre högra hörnet och välj sedan **Klar** för att slutföra arbetet *Plocka*.
 1. Anteckna inlagringsplats och bekräfta. Ett meddelande om att "arbetet är slutfört" visas längst ned på sidan.
@@ -118,7 +118,7 @@ Exempelscenariot kräver att du förbereder två platsprofiler.
 1. I Dynamics 365 Supply Chain Management, gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Platser**.
 1. Filtrera på **Plats** och ange inlagringsplats från inköpsorderarbetet. Du bör se följande resultat:
 
-    - Kolumnen **Platsstatus** visar ett värde av *Lagring*, eftersom den sista transaktionen mot den här platsen var en placering.
+    - Kolumnen **Platsstatus** visar ett värde av *Lagring* , eftersom den sista transaktionen mot den här platsen var en placering.
     - I kolumnen **artikelnummer** visas värdet *A0002* eftersom artikeln har inlevererats och placerats i lagerstället.
     - I kolumnen **Datum och tid för senaste aktivitet** visar tidsstämpeln för datum och tid då arbetet avslutades på platsen.
 
@@ -135,7 +135,7 @@ Exempelscenariot kräver att du förbereder två platsprofiler.
 1. Gå till **Försäljning och marknadsföring \> Försäljningsorder \> Alla försäljningsorder**.
 1. Välj **Ny**.
 1. I dialogrutan **Skapa försäljningsorder** i fältet **Kundkonto** välj *US-002*.
-1. I fältet **Lagerställe**, välj *61*.
+1. I fältet **Lagerställe** , välj *61*.
 1. Välj **OK**.
 1. Den nya försäljningsordern öppnas. Den innehåller en tom rad i rutnätet **Försäljningsorderrader**. Ställ in följande värden på denna rad:
 
@@ -143,22 +143,22 @@ Exempelscenariot kräver att du förbereder två platsprofiler.
     - **Kvantitet:** _1_
 
 1. På snabbfliken **Försäljningsorderrader** i menyn **Lager** välj **Reservation**.
-1. I sidan **Reservation**, välj **Reservera parti** för att reservera orderrad. Välj sedan knappen **Stäng** (**X**) överst till höger. för att stänga sidan.
-1. I åtgärdsfönstret **Lagerställe**, flik **åtgärder**, välj **Släpp till lagerställe**.
-1. På snabbfliken **Försäljningsorderrader** på menyn **Lagerställe**, välj **Arbetsdetaljer**.
+1. I sidan **Reservation** , välj **Reservera parti** för att reservera orderrad. Välj sedan knappen **Stäng** ( **X** ) överst till höger. för att stänga sidan.
+1. I åtgärdsfönstret **Lagerställe** , flik **åtgärder** , välj **Släpp till lagerställe**.
+1. På snabbfliken **Försäljningsorderrader** på menyn **Lagerställe** , välj **Arbetsdetaljer**.
 1. Kopiera värdet för **arbets-ID** som skapades.
 1. På den mobila enheten, gå till **Utgående \> Försäljningsplockning**.
-1. Markera fältet **ID**, ange arbets-ID du kopierade tidigare och bekräfta.
+1. Markera fältet **ID** , ange arbets-ID du kopierade tidigare och bekräfta.
 1. På sidan **Försäljningsorder: plockning** föreslår fältet **LOC** plockningsplatsen som den inlagringsplats skapades tidigare. Gör en notering av plats.
-1. Markera fältet **LOC**, ange plats och bekräfta.
-1. Välj fältet **LP**, ange det ID-nummer som du gjorde en notering för under rörelseaktiviteten och bekräfta.
+1. Markera fältet **LOC** , ange plats och bekräfta.
+1. Välj fältet **LP** , ange det ID-nummer som du gjorde en notering för under rörelseaktiviteten och bekräfta.
 1. Markera fältet **Artikel** ange *A0002* som artikelnummer och bekräfta.
 1. På sidan **KVT** ange *1* som kvantitet och bekräfta.
 
     Du kan ange kvantitet på något av följande sätt:
 
-    - Markera plustecknet (**+**) eller minustecknet (**–**) om du vill addera eller subtrahera ett numeriskt värde.
-    - Markera det tomma fältet mellan plustecknet (**+**) och minustecknet (**–**) för att öppna det knappsatsen.
+    - Markera plustecknet ( **+** ) eller minustecknet ( **–** ) om du vill addera eller subtrahera ett numeriskt värde.
+    - Markera det tomma fältet mellan plustecknet ( **+** ) och minustecknet ( **–** ) för att öppna det knappsatsen.
 
 1. Markera fältet **MÅL LP** ange ett användardefinierat målnummer-ID och bekräfta det.
 1. Bekräfta en gång till för att slutföra plockningsarbetet. Ett meddelande om att "arbetet är slutfört" visas längst ned på sidan.

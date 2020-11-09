@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchVendorPortalConfirmedOrders, DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventOwner, InventTableInventoryDimensionGroups, VendTable
+ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchTablePart, PurchVendorPortalConfirmedOrders, DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventOwner, InventTableInventoryDimensionGroups, VendTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af30938929677ad0e1388760e6b7a992a8718240
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0127cc64688bc7878623b08ef143dfd040484ce0
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212904"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018386"
 ---
 # <a name="set-up-consignment"></a>Ställ in försändelse
 
@@ -40,7 +40,7 @@ I det här scenariot har exempelföretaget USMF ett försändelseavtal med lever
 2.  Leverantören informeras om den förväntade leveransen. Detta kan utföras på ett av tre sätt:
     -   Alla som arbetar på USMF skickar orderinformation till leverantören.
     -   Leverantören kan övervaka den förväntade lagerbehållningen med hjälp av leverantörsamarbetesgränssnittet.
-    -   Alla som arbetar på USMF filtrerar data på sidan **Lagerbehållning** för att endast visa posterna för leverantören US-104, där inleveransstatusen är **Beställd**och skickar sedan denna information till leverantören.
+    -   Alla som arbetar på USMF filtrerar data på sidan **Lagerbehållning** för att endast visa posterna för leverantören US-104, där inleveransstatusen är **Beställd** och skickar sedan denna information till leverantören.
 3.  Lagret levereras från US-104 till USMF.
 4.  När materialet kommer till USMF, uppdateras försändelseåteranskaffningordern med en produktinleverans. Endast de fysiska kvantiteterna av det leverantörsägda lagret registreras. Det finns inga redovisningstransaktioner skapade, eftersom lagret fortfarande ägs av leverantören.
 5.  Leverantören övervakar uppdateringar av den fysiska lagerbehållningen på sidan **Behållning i försändelselager**.
@@ -60,14 +60,14 @@ Leverantören US-104, kan övervaka uppdateringarna på **Behållning i försän
 ## <a name="consignment-replenishment-orders"></a>Order för försändelseåteranskaffning
 En order för försändelseåteranskaffning är ett dokument som används för att begära och hålla ordning kvantiteterna av produkter, som en leverantör har för avsikt att leverera inom ett visst datumintervall genom att skapa beställda lagertransaktioner. Vanligtvis baseras detta på prognosen och faktisk efterfrågan av de specifika produkterna. Lagret som ska inlevereras mot ordern för försändelseåteranskaffning kvarstår leverantörens ägarskap. Endast innehav av produkter relaterade till uppdateringen av fysiska inleverans registreras och därför sker inga redovisningstransaktionsuppdateringar. 
 
-Dimensionen**Ägare** används för att separat information om vilket lager som ägs av leverantören och som ägs av den mottagande juridiska personen. Orderrader för försändelsepåfyllnad har statusen **Öppen order** status så länge inte hela radkvantiteten har tagits emot eller annullerats. När den fullständiga kvantiteten har tagits emot eller annullerats ändras statusen till **Slutfört**. Den fysiska lagerbehållningen som gäller en order för försändelseåteranskaffning kan registreras med hjälp av en registreringsprocess samt en uppdateringsprocess för produktinleverans. Registreringen kan göras som en del av artikelinförselprocessen eller manuellt genom att uppdatera orderraderna. När uppdateringprocessen för produktinleverans används, görs en post i produktinleveransjournalen som kan användas för att bekräfta inleveranser av varor till leverantörerna.
+Dimensionen **Ägare** används för att separat information om vilket lager som ägs av leverantören och som ägs av den mottagande juridiska personen. Orderrader för försändelsepåfyllnad har statusen **Öppen order** status så länge inte hela radkvantiteten har tagits emot eller annullerats. När den fullständiga kvantiteten har tagits emot eller annullerats ändras statusen till **Slutfört**. Den fysiska lagerbehållningen som gäller en order för försändelseåteranskaffning kan registreras med hjälp av en registreringsprocess samt en uppdateringsprocess för produktinleverans. Registreringen kan göras som en del av artikelinförselprocessen eller manuellt genom att uppdatera orderraderna. När uppdateringprocessen för produktinleverans används, görs en post i produktinleveransjournalen som kan användas för att bekräfta inleveranser av varor till leverantörerna.
 
 [![Order-för-försändelseåteranskaffning](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Journal för lagerägarskapsändring
 Processen att ändra ägare för lagret från leverantören till mottagande juridisk person görs genom en Ändringsjournal för lageräganderätt. Inga förväntade lagertransaktioner skapas för journalen. De enda lagertransaktioner som skapas är de som relaterar till en bokförd journal. När journalen är bokförd:
 
--   Det leverantörsägda lagret sker med hjälp av **Äganderättändring**-referens med en **Såld**-status.
+-   Det leverantörsägda lagret sker med hjälp av **Äganderättändring** -referens med en **Såld** -status.
 -   Lagerbehållning tas emot av den juridiska person som förbrukar den genom att använda en lagertransaktion som uppdaterats för produktinleveransen på inköpsordern. Detta ställer in orderns status på **Inlevererat**. Inköpsorder som används för försändelse har fältet **Ursprung** inställt på **Försändelse**.
 
 Det går inte att uppdatera kvantiteten på rader för försändelseinköpsorder efter att ordern har skapats.
@@ -82,7 +82,7 @@ Leverantörsamarbetesgränssnittet har tre sidor som är relaterade till den ink
 -   **Behållning i försändelselager** - Visar information om försändelseartiklarna som de förväntas leverera och de artiklar som redan är fysiskt tillgängliga på kundsiten.
 
 ## <a name="inventory-owners"></a>Lagerägare
-Om du vill registrera det fysiska inkommande försändelselagret måste du definiera en leverantörsägare. Detta görs på sidan **Lagerägare**. När du väljer ett **Leverantörskonto** genererar detta förvalda värden för fälten **Namn** och **Ägare**. Värdet i fältet **Ägare** visas för leverantören, så du kanske vill ändra det om ditt leverantörkontonamn inte är svårt för externa kontakter att känna igen. Det är möjligt att redigera fältet **Ägare**, men bara fram till den punkt när du sparar posten **Lagerägare**. Fältet **Namn** fylls i med namnet på den part som leverantörskontot är kopplat till och detta kan inte ändras.
+Om du vill registrera det fysiska inkommande försändelselagret måste du definiera en leverantörsägare. Detta görs på sidan **Lagerägare**. När du väljer ett **Leverantörskonto** genererar detta förvalda värden för fälten **Namn** och **Ägare**. Värdet i fältet **Ägare** visas för leverantören, så du kanske vill ändra det om ditt leverantörkontonamn inte är svårt för externa kontakter att känna igen. Det är möjligt att redigera fältet **Ägare** , men bara fram till den punkt när du sparar posten **Lagerägare**. Fältet **Namn** fylls i med namnet på den part som leverantörskontot är kopplat till och detta kan inte ändras.
 
 [![lagerägare](./media/inventory-owners.png)](./media/inventory-owners.png)
 
@@ -92,7 +92,7 @@ Artiklar som ska användas i försändelseprocesser, måste associeras med en **
 [![spårningsdimensionsgrupp](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Journal för lagerägarskapsändring
-Journalen **Lagerägarskapsändring**används till att bokföra överföringen av ägandeskap av försändelselager från leverantören till den nuvarande juridisk person som förbrukar den. Till skillnad från lagerjournal måste den identifieras med ett Lagerjournalnamn. Dessa namn skapas på sidan **Lagerjournalnamn** och **Journaltyp** måste ställas in på **Ägarskapsändring**.
+Journalen **Lagerägarskapsändring** används till att bokföra överföringen av ägandeskap av försändelselager från leverantören till den nuvarande juridisk person som förbrukar den. Till skillnad från lagerjournal måste den identifieras med ett Lagerjournalnamn. Dessa namn skapas på sidan **Lagerjournalnamn** och **Journaltyp** måste ställas in på **Ägarskapsändring**.
 
 [![journal-för-lagerägarskapsändring](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 

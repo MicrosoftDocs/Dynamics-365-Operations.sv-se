@@ -3,7 +3,7 @@ title: Modulen navigeringsmeny
 description: Det här avsnittet handlar om modul för navigeringsmenyn och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 91239bd1db3f5819b7ad8d45ccfd8ab0d88b1b41
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: b0e8168ca9ec9ca68011650a73cc09983deca645
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817884"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055747"
 ---
 # <a name="navigation-menu-module"></a>Modulen navigeringsmeny
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Det här avsnittet handlar om modul för navigeringsmenyn och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 
@@ -45,9 +44,13 @@ Följande illustration visar ett exempel på en navigeringsmeny för Fabrikam-we
 
 | Egenskapsnamn             | Värde                 | beskrivning |
 |---------------------------|-----------------------|-------------|
-| Källa                  | **Detaljhandel**, **Manuell redigering**, **Återförsäljning och manuell redigering** | Med värdet **Detaljhandel** kan kanalnavigeringshierarkin från Commerce-administration visas på navigeringsmenyn. Med hjälp av värdet **Manuellt redigering** kan statiska menyalternativ granskas. Värdet **Återförsäljning och manuell redigering** tillåter en blandning av båda. |
+| Källa                  | **Detaljhandel** , **Manuell redigering** , **Återförsäljning och manuell redigering** | Med värdet **Detaljhandel** kan kanalnavigeringshierarkin från Commerce-administration visas på navigeringsmenyn. Med hjälp av värdet **Manuellt redigering** kan statiska menyalternativ granskas. Värdet **Återförsäljning och manuell redigering** tillåter en blandning av båda. |
 | Visa kategoribilder | **Sant** eller **falskt**    | När den här egenskapen är aktiverad visas kategoribilder på navigeringsmenyn som har definierats i Commerce-administration för varje kategori. Lades till i Commerce version 10.0.14. |
+| Aktivera navigeringsmeny med flera nivåer | **Sant** eller **falskt** | När den här egenskapen är aktiverad kan navigeringsmenyn visa flera nivåer i navigeringsvyn. Den här funktionen är endast i Dynamics 365 Commerce version 10.0.15. |
+| Antal nivåer | heltal | Den här egenskapen definierar antalet nivåer som ska visas om egenskapen **Aktivera navigering i flera nivåer** är inställd på **True**. |
 | Statiskt menyalternativ| Matris med värden| Statiska menyalternativ som associerar ett menyalternativnamn med en länk till en statisk webbplatssida. Du kan skapa menyalternativ under andra menyalternativ. Statiska menyer visas som standard på rotnivå och kommer att läggas till i kanalens navigeringshierarki om den finns. |
+| Visa rotmenyn | **Sant** eller **falskt** | När den här egenskapen är aktiverad kan navigeringsmenyn definieras under en anpassad rot (t.ex. **handla nu** ). Den här funktionen är endast i Dynamics 365 Commerce version 10.0.15. |
+| Rotmeny | sträng | Den här egenskapen kan användas för att definiera text för en anpassad rot om egenskapen **Visa rotmeny** är inställd på **True**. |
 
 Följande illustration visar ett exempel på en kategoribild som visas på navigeringsmenyn för webbplatsen Fabrikam.
 ![Exempel på en navigeringsmodul med kategoribilder](./media/ecommerce-categoryimages.PNG)
@@ -58,7 +61,11 @@ Mer information om hur du lägger till en modul för navigeringsmeny i en sidhuv
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över modulbibliotek](starter-kit-overview.md)
+[Modulbibliotek – översikt](starter-kit-overview.md)
+
+[Modul för navigeringssökväg](add-breadcrumb.md)
+
+[Modul för webbplatsväljare](site-selector.md)
 
 [Modul för inköpsruta](add-buy-box.md)
 

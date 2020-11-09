@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: d8c2da17d4e3df37c55844f0aad00f883725f741
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.openlocfilehash: 14645f592275d07a6b633146bb6da35b89c1bf77
+ms.sourcegitcommit: 6d2fc497c8a7f49c48e7662995e27b5f8cc10296
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989296"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4000988"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Tillhandahålla guider för mixad verklighet för arbetare i produktion
 
@@ -124,7 +124,7 @@ Om du vill konfigurera hur guider visas verkstadsgolvet går du till konfigurati
 
 Ange följande fält.
 
-- **CDS-miljö underdomän** - det här fältet ska redan ha ett värde. Det här fältet innehåller underdomänen för Common Data Service-miljön där du skapar guiderna. Underdomänen är den första delen av URL:en och har normalt ett namn efter din organisation. Om din Common Data Service-URL t.ex. är "contoso.crm4.dynamics.com" skriver du *contoso* här. Det här värdet används för att skapa adresser för guider och de kommer att kodas till QR-koderna.
+- **Common Data Service underdomän** - det här fältet ska redan ha ett värde. Det här fältet innehåller underdomänen för Common Data Service-miljön där du skapar guiderna. Underdomänen är den första delen av URL:en och har normalt ett namn efter din organisation. Om din Common Data Service-URL t.ex. är "contoso.crm4.dynamics.com" skriver du *contoso* här. Det här värdet används för att skapa adresser för guider och de kommer att kodas till QR-koderna.
 - **Storlek på QR** - Ange storleken på den återgivna QR-koden. Vi rekommenderar att du väljer en storlek som kommer att fylla större delen av skärmen, men inte mer. Normalt *15* är ett bra värde.
 - **Korrigeringsnivå för QR-kod** - Ange granularitet för QR-koden. Högre granularitet kan öka kodens tillförlitlighet, men **QR-kodens storlek** måste vara stor nog för att ge den detaljnivå som krävs för den valda korrigeringsnivån.
 

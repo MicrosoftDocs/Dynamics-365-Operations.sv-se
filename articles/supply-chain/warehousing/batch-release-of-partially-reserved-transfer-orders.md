@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSLoadPlanningWorkbench
+ms.search.form: WHSLoadPlanningWorkbench, WHSFulfillmentPolicy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0707731caaf9b4852e3c19be899ad92f5b84e29
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7807ae109a4a708f3530112feed1a4fb210a30ef
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201305"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016304"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Frisläppning i batch av delvis reserverade överföringsorder
 
@@ -45,13 +45,13 @@ Innan en order kan delvis frisläppas till ett lager som en batch, måste uppfyl
 
 Uppfyllandepolicyer för överförings- och försäljningsorder anges på företagsnivå. Beroende på inställningarna för uppfyllandepolicyn kommer orderfrisläppandet i batch att godtas eller avvisas. Alla order kommer sedan att behandlas därefter.
 
--   Om du vill skapa uppfyllandepolicyer för överförings- och försäljningsorder klickar du på **Lagerstyrning** \> **Inställningar** \> **Frisläpp till lagerställe** \> **Uppfyllelsepolicy**, och skapar sedan en uppfyllandepolicy genom att ange ett namn och en beskrivning.
+-   Om du vill skapa uppfyllandepolicyer för överförings- och försäljningsorder klickar du på **Lagerstyrning** \> **Inställningar** \> **Frisläpp till lagerställe** \> **Uppfyllelsepolicy** , och skapar sedan en uppfyllandepolicy genom att ange ett namn och en beskrivning.
 
--   Om du vill ange en uppfyllandekvot, en värdetyp samt det meddelande som ska visas om uppfyllandepolicyn överträds klickar du på **Lagerstyrning** \> **Inställningar** \> **Frisläpp till lagerställe** \> **Uppfyllandepolicy**, och fyller sedan i fälten **Uppfyllandekvot**, **Värdetyp** och **Meddelande om brott mot uppfyllande**.
+-   Om du vill ange en uppfyllandekvot, en värdetyp samt det meddelande som ska visas om uppfyllandepolicyn överträds klickar du på **Lagerstyrning** \> **Inställningar** \> **Frisläpp till lagerställe** \> **Uppfyllandepolicy** , och fyller sedan i fälten **Uppfyllandekvot** , **Värdetyp** och **Meddelande om brott mot uppfyllande**.
 
 ### <a name="set-the-fulfillment-policies-for-transfer-orders-and-sales-orders"></a>Ange uppfyllandevillkoren för överförings- och försäljningsorder
 
--   Om du vill ange villkoren för överföringsorder klickar du på **Lagerstyrning** \> **Inställningar** \> **Parametrar för lager och lagerstyrning** \> **Överföringsorder** \> **Lagerstyrning**, och väljer sedan uppfyllelsevillkor för överföringsorder.
+-   Om du vill ange villkoren för överföringsorder klickar du på **Lagerstyrning** \> **Inställningar** \> **Parametrar för lager och lagerstyrning** \> **Överföringsorder** \> **Lagerstyrning** , och väljer sedan uppfyllelsevillkor för överföringsorder.
 
 -   Om du vill ange uppfyllelsevillkor för försäljningsorder klickar du på **Kundreskontra** \> **Inställningar** \> **Parametrar för kundreskontra** \> **Lagerstyrning** och väljer sedan villkor för uppfyllandet av försäljningsorder.
 

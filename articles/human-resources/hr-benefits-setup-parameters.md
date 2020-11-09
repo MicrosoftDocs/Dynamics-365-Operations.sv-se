@@ -2,7 +2,7 @@
 title: Ställ in parametrar för hantering av förmåner
 description: Konfigurera parametrar för förmånshantering i Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 85bbe5d3b422f2f29f1d1fe8ee269b407da691c2
-ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
+ms.openlocfilehash: cb9dd6eb8ef840dab54eabab8526200a3a8e21f0
+ms.sourcegitcommit: e100c1c7c8dcdacf066defc206dd2f44b8ce6100
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3599366"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4057038"
 ---
 # <a name="set-benefits-management-parameters"></a>Ställa in parametrar för förmånshantering
 
@@ -31,9 +31,9 @@ Innan du kan ställa in tjänstledighetsplaner i Microsoft Dynamics 365 Human Re
 
 ## <a name="configure-general-parameters"></a>Konfigurera allmänna parametrar
 
-1. I arbetsytan **Förmånshantering** under **inställningar**, välj **Dela personalparametrar**.
+1. I arbetsytan **Förmånshantering** under **inställningar** , välj **Dela personalparametrar**.
 
-2. På fliken **Allmänt**, ange värden för följande fält:
+2. På fliken **Allmänt** , ange värden för följande fält:
 
    | Fält | Beskrivning |
    | --- | --- |
@@ -45,7 +45,7 @@ Innan du kan ställa in tjänstledighetsplaner i Microsoft Dynamics 365 Human Re
    | **Orsakskod för prisändring** | Orsakskoden som ska användas vid annullering och öppnande av en förmånsplan för medarbetare under uppdateringsprocessen av prisändringen. Den visar vilka poster som ändrades under uppdatering av prisändring. |
    | **Årlig inkomst av förmåner** | Gör att du kan ställa in ett belopp för **Årslön** för en medarbetare. Personal kommer att använda beloppet **Årslön** vid fastställande av täckningsbelopp, istället för det årliga beloppet för fast ersättning. |
    | **Berättigad till nyanställning** | Anger om nya anställningar är berättigade. |
-   | **Period för ny anställningsanmälan** | Den tidsperiod då den nya anställningsanmälan är tillåten.</br></br>**Obs**! den här inställningen åsidosätter eventuella nya anställningsperioder för anställningsanmälan som du ställer in i berättiganderegler för planen. |
+   | **Period för ny anställningsanmälan** | Den tidsperiod då den nya anställningsanmälan är tillåten.</br></br>**Obs** ! den här inställningen åsidosätter eventuella nya anställningsperioder för anställningsanmälan som du ställer in i berättiganderegler för planen. |
    | **Standardvärde för lönefrekvens** | Standard lönefrekvensen som används när nya arbetare läggs till. |
    | **Livshändelser har aktiverats** | Aktiverar livshändelser. |
    | **Dölj formulären för tidigare förmåner** | Gör att du kan dölja äldre förmånsformulär. |
@@ -54,11 +54,11 @@ Innan du kan ställa in tjänstledighetsplaner i Microsoft Dynamics 365 Human Re
 
 ## <a name="configure-employee-self-service-parameters"></a>Konfigurera anställdas självbetjäningsparametrar
 
-1. I arbetsytan **Förmånshantering** under **inställningar**, välj **Personalparametrar**.
+1. I arbetsytan **Förmånshantering** under **inställningar** , välj **Personalparametrar**.
 
-2. På fliken **Självbetjäning för medarbetare** ange värden för följande fält:
+2. På fliken **Hantering av förmåner** , ange värden för följande fält:
 
-   | Fält | Beskrivning |
+   | Fält | beskrivning |
    | --- | --- |
    | **Förmånsverifiering** | Verifieringstext under utcheckningen från självbetjäningen för förmåner. |
    | **Välj befullmäktigade automatiskt** | Anger om man automatiskt ska välja beroende och stödmottagare baserat på deras berättigande till planalternativ. |

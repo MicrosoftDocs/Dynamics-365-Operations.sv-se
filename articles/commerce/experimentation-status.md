@@ -3,7 +3,7 @@ title: Granska status för ett experiment
 description: Det här ämnet förklarar vilken status ett experiment har i testcykeln i Dynamics 365 Commerce.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,17 +18,17 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 097206c0aa487e14499bdf3907465e17b7d337e2
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: eea67ddc1718902198b74614ee1a910fc6e29c1d
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930289"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4097080"
 ---
 # <a name="review-the-status-of-an-experiment"></a>Granska status för ett experiment
 Det finns många steg när du ställer in och kör ett experiment i Dynamics 365 Commerce. Mer information om livscykeln för experiment finns i avsnittet [Experiment i Dynamics 365 Commerce](experimentation-overview.md).
 
-Om du vill veta var ett experiment är i livscykeln går du till fliken **Experiment** i webbplatsskaparen. En lista med experiment visas med status för varje experiment i både Commerce och den tredjepartstjänst som används för att skapa experiment, tilldela varianter och analysera data.
+Om du vill veta var ett experiment är i livscykeln i Commerce webbplatsskaparen väljer du **Experiment** i vänster navigeringsfönster. En lista med experiment visas med status för varje experiment i både Commerce och den tredjepartstjänst som används för att skapa experiment, tilldela varianter och analysera data.
 
 I kolumnen **Commerce-status** kan följande värden visas: 
 - **Utkast** - experimentet ansluts till en sida eller ett fragment i Commerce och redigeras.

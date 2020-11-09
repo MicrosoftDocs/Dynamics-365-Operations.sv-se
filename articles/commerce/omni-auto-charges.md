@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c397354ade1ac1d4f5f9bc0e6bb5d4be5a7ae9f3
-ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
+ms.openlocfilehash: 2d463bf01659aeb6599023ce46da0c604f8eeff0
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3505621"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107385"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerade automatiska avgifter för flera kanaler
 
@@ -44,7 +44,7 @@ Med funktionen för avancerade automatiska avgifter kan kassaanvändare ha syste
 
 ## <a name="enabling-advanced-auto-charges"></a>Aktivera avancerade automatiska avgifter
 
-På sidan **Butik och handel \> Administrationsinställning \> Parametrar \> Handelsparametrar**, gå till fliken **kundorder**. På snabbfliken **Avgifter**, ange **Använd avancerade automatiska avgifter** till **Ja**.
+På sidan **Butik och handel \> Administrationsinställning \> Parametrar \> Handelsparametrar** , gå till fliken **kundorder**. På snabbfliken **Avgifter** , ange **Använd avancerade automatiska avgifter** till **Ja**.
 
 ![Parametrar för avancerade automatiska avgifter](media/advancedchargesparameter.png)
 
@@ -183,7 +183,7 @@ Samma tillvägagångssätt kan användas i kundtjänst med funktionen ”Underh�
 
 På sidan **Hantera avgifter** i kassan kan användaren visa information om avgifter på både huvud- och radnivå. Användaren kan använda **redigera** som är tillgänglig på den här sidan för att ändra det belopp som debiteras en specifik avgiftsrad. När en avgiftsrad läggs till manuellt räknas den inte om systematiskt om inte användaren initierar åtgärden **beräkna om avgifter**.
 
-Om **Orsakskod för åsidosättning av avgift** har konfigurerats på installationssidan **handelsparametrar**, användaren uppmanas att ange en orsakskod när avgifter har ändrats i kassaprogrammet.
+Om **Orsakskod för åsidosättning av avgift** har konfigurerats på installationssidan **handelsparametrar** , användaren uppmanas att ange en orsakskod när avgifter har ändrats i kassaprogrammet.
 
 Om orsakskoder registrerays för överskrivna avgifter, finns även en ny rapport för att granska dessa åsidosättningar. Rapporten finns i **butik och handel \> förfrågningar och rapporter \> historik för avgiftsåsidosättning**.
 
@@ -193,13 +193,13 @@ Om parametern **Använd avancerade automatiska avgifter** är inställd på **Ja
 
 ### <a name="refunding-charges-on-a-return-order-transaction"></a>Återbetalning av avgifter för en ordertransaktion
 
-Avgifter återbetalas inte systematiskt till **returorder** som skapats i handel. Användare måste välja alternativet **kopiera avgifter** när de skapar **returorder**. Om **kopiera avgifter** inte är markerat kommer avgifter från den ursprungliga försäljningstransaktionen inte att återbetalas automatiskt. Om **kopiera avgifter** är markerat kopieras alla avgifter till returordern och användaren kan manuellt redigera eller ta bort ändringar som de inte vill ha tillbaka. Returorderprocessen för kundtjänst accepterar för närvarande inte flaggan **Återbetalningsbar** på **Avgiftskod**-inställningen.
+Avgifter återbetalas inte systematiskt till **returorder** som skapats i handel. Användare måste välja alternativet **kopiera avgifter** när de skapar **returorder**. Om **kopiera avgifter** inte är markerat kommer avgifter från den ursprungliga försäljningstransaktionen inte att återbetalas automatiskt. Om **kopiera avgifter** är markerat kopieras alla avgifter till returordern och användaren kan manuellt redigera eller ta bort ändringar som de inte vill ha tillbaka. Returorderprocessen för kundtjänst accepterar för närvarande inte flaggan **Återbetalningsbar** på **Avgiftskod** -inställningen.
 
 ### <a name="configuring-pos-receipts-to-show-charges"></a>Konfigurera kassainleveranser för att visa debiteringar
 
 Följande inleverans har lagts till inleveransraden och sidfoten för att stödja funktionen för avancerade automatiska avgifter.
 
-- **Leveransavgifter för rad** - Detta element på radnivå kan användas för att sammanfatta koder för särskilda avgifter som har kopplats till försäljningsraden. Endast avgiftskoder som har flaggats som **leverans**-avgifter på sidan **avgiftskoder** visas här.
+- **Leveransavgifter för rad** - Detta element på radnivå kan användas för att sammanfatta koder för särskilda avgifter som har kopplats till försäljningsraden. Endast avgiftskoder som har flaggats som **leverans** -avgifter på sidan **avgiftskoder** visas här.
 - **Övriga avgifter för rad** - Detta element på radnivå kan användas för alla icke leveransspecifika avgiftskoder som har kopplats till försäljningsraden. Dessa är avgiftskoder där flaggan **leverans** på sidan den **avgiftskod** inte har aktiverats.
 - **Leveransavgiftsdetaljer för order** - Detta element på sidfotnivå visar beskrivningar av avgiftskoder som gäller för ordern som har flaggats som **leverans** på installationssidan **avgiftskod**.
 - **Leveransavgifter för order** - Detta element på sidfotnivå visar belopp för leveransrelaterade avgifter.

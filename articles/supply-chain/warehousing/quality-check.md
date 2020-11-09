@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSQualityCheckTemplate,WHSWorkClass,WHSWorkTemplateTable.WHSLocDirTable
+ms.search.form: WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 44a4694281f3dd53581c9d8245a0105b37b2b155
-ms.sourcegitcommit: 7dc2ff9461c310324937bea2fc160ff056fefd8a
+ms.openlocfilehash: dfb71f74732d65409003c4f6f74145442a1efa3f
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686367"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016641"
 ---
 # <a name="quality-check"></a>Kvalitetskontroll
 
@@ -208,7 +208,7 @@ Placering av direktiven är regler som hjälper till att identifiera och sätta 
 1. I nya rader, ange fältet **Namn** till *Kvalitet*. Acceptera standardvärden för kvarvarande fält.
 1. I åtgärdsfönstret välj **Spara** så att knappen **Redigera fråga** i snabbfliken **Platsdirektivåtgärder** är tillgänglig.
 1. Medan raden som du just har lagt till fortfarande är markerad på snabbfliken **Platsdirektivåtgärder** välj **Redigera fråga** för att öppna en dialogruta där du kan redigera frågan för åtgärden.
-1. På fliken **intervall**, välj **Lägg till** om du vill lägga till frågan.
+1. På fliken **intervall** , välj **Lägg till** om du vill lägga till frågan.
 1. I den nya raden anger du följande värden:
 
     - **Register:** *platser*
@@ -216,7 +216,7 @@ Placering av direktiven är regler som hjälper till att identifiera och sätta 
     - **Fält:** *Plats*
     - **Kriterier:** *QMS*
 
-    *QMS*-plats är ett lagerställe för kvalitet.
+    *QMS* -plats är ett lagerställe för kvalitet.
 
 1. Välj **OK** för att stänga dialogrutan.
 1. Du måste nu ändra ordningsföljden för direktiven för inköpsorderplats för lagerställe *51*. Spara det nya *51 till kvalitet* platsdirektivet, uppdatera sidan och markera platsdirektivet i listan. Använd sedan knapparna **Flytta upp** och **Flytta ned** i åtgärdsfönstret för att placera direktivet för lagerställe *51* i följande ordning. (Innan du väljer **Flytta upp** eller **Flytta ned** måste du välja ett platsdirektiv i listan.)
@@ -308,10 +308,10 @@ När inköps ordern har skapats kan den tas emot med hjälp av menyalternativet 
 1. Bekräfta inköpsordernummer.
 1. I fältet **LINENUM** anger du numret från den inköpsorderrad som inlevereras. Eftersom ordern bara har en rad i det här scenariot ska du ange *1* i fältet **LINENUM** för varje mottagningssteg.
 1. Bekräfta radnumret.
-1. I fältet **QTY** anger du kvantiteten som ska inlevereras. Eftersom inköpsordern är för tre lastpallar (*PL*) i det här scenariot och det finns tre mottagningssteg, anger du *1* i fältet **QTY** för varje mottagningssteg.
+1. I fältet **QTY** anger du kvantiteten som ska inlevereras. Eftersom inköpsordern är för tre lastpallar ( *PL* ) i det här scenariot och det finns tre mottagningssteg, anger du *1* i fältet **QTY** för varje mottagningssteg.
 1. Bekräfta kvantiteten.
 
-    Sidan **kvalitetskontroll** som visas har inga inmatningsfält. Den har bara knappen bekräfta (bockmarkering) längst ned och menyknappen (**≡**) högst upp. (Menyknappen kallas ibland för hamburger eller hamburgerknappen.) För att processen för kvalitetskontroll ska kunna påskyndas bekräftar användaren bara sidan kvalitetskontroll när lastpallen passerar **kvalitetskontrollen**.
+    Sidan **kvalitetskontroll** som visas har inga inmatningsfält. Den har bara knappen bekräfta (bockmarkering) längst ned och menyknappen ( **≡** ) högst upp. (Menyknappen kallas ibland för hamburger eller hamburgerknappen.) För att processen för kvalitetskontroll ska kunna påskyndas bekräftar användaren bara sidan kvalitetskontroll när lastpallen passerar **kvalitetskontrollen**.
 
     ![Sidan för kvalitetskontroll](media/quality-check.png "Sidan för kvalitetskontroll")
 
@@ -342,7 +342,7 @@ I det här scenariot avvisas lastpall 2.
 
     Sidan **Kvalitetskontroll** visas. För det här inleveransen avvisas lastpallen för kvalitet och kommer att placeras på *QMS* kvalitetsplats.
 
-1. Markera menyknappen (**≡**) längst upp på sidan och välj sedan **avvisa** på menyn.
+1. Markera menyknappen ( **≡** ) längst upp på sidan och välj sedan **avvisa** på menyn.
 1. På sidan **Uppgift** som visas anger du **QMS** som *Placera* plats dit lastpallen ska skickas för vidare granskning.
 
     Sidan **kvalitet i kvalitetskontroll: Placera** som visas visar information om det införda arbetet:
@@ -394,6 +394,6 @@ I det här scenariot godkänns lastpall 3.
 
     På sidan **uppgift** för inleverans av inköpsorderrader får du ett meddelande "Arbetet slutfört". Fältet **LINENUM** är tillgängligt så att du kan börja ta emot nästa lastpall.
 
-1. Markera menyknappen (**≡**) längst upp på sidan och välj sedan **avbryt** för att återgå till menyn.
+1. Markera menyknappen ( **≡** ) längst upp på sidan och välj sedan **avbryt** för att återgå till menyn.
 
 Nu kan du stänga mobilappen.

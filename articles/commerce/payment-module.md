@@ -3,7 +3,7 @@ title: Betalningsmodul
 description: Det här avsnittet handlar om betalningsmodul för leveransadressmodulen förklarar hur du konfigurera i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4267391edaf70ec645933b2c5c08a72735f52894
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 894ac35973927c193d6e9c54e326daefb8a3f4a5
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818336"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055391"
 ---
 # <a name="payment-module"></a>Betalningsmodul
 
@@ -41,6 +41,9 @@ I betalningsmodulen kan också kunder som är inloggade spara sina betalningsupp
 Betalningsmodulen täcker alla orderavgifter som inte redan omfattas av förmånspoäng eller presentkort. Om summan för en order helt täcks av förmånspoäng eller presentkortskrediter, döljs betalningsmodulen och kunden kan placera ordern utan den.
 
 Adyen betalningskontakt stöder också stark kundautentisering (SCA). En del av Europeiska unionen (EU) direktiv om betalningstjänster 2.0 (PSD 2.0) kräver att online-shoppare autentiseras utanför deras online-erfarenhet när de använder en elektronisk betalningsmetod. Under kassaflödet omdirigeras kunderna till sin banks webbplats. Efter autentiseringen omdirigeras de tillbaka till Commerce-kassaflödet. Under denna omdirigering behålls den information som en kunden registrerats i kassaflödet (t.ex. leveransadress, leveransalternativ, presentkortsinformation och lojalitetsinformation). Innan du kan aktivera den här funktionen måste betalningskopplingen konfigureras för SCA i Commerce-administration. Mer information finns i [grundlig kundautentisering med hjälp av Adyen](adyen_redirect.md).
+
+> [!NOTE]
+> För Adyen -betalningskoppling kan modulen iFrame i modulen betalning bara återges om du lägger till Adyen-URL i din webbplatslista över tillåtna. Du slutför det här steget genom att lägga till direktiven **\*.adyen.com** till **child-src** , **connect-src** , **img-src** , **script-src** och **style-src** för säkerhetspolicyn för din webbplats. Mer information finns i [hantera säkerhetsprinciper för innehåll](manage-csp.md). 
 
 Följande bild visar ett exempel på moduler för presentkorts-, förmåns- och betalningsmoduler på en kassasida.
 

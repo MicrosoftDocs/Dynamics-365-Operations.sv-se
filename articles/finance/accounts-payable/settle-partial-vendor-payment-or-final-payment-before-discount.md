@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34d941c3806ccc9d2b8baa29eef45fbd4216686e
-ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
+ms.openlocfilehash: 202d6e8b0933522c2faf5fb49291f11200e4754f
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3967320"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006151"
 ---
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Kvitta en leverantörsbetalning och hela slutbetalningen före rabattdatumet
 
@@ -48,7 +48,7 @@ Från sidan **Leverantörer** öppnar Anna sidan **Kvitta transaktioner**. Hon k
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
-|                              |           |
+|       &nbsp;                 | &nbsp;    |
 |------------------------------|-----------|
 | Kassarabattdatum           | 7/09/2015 |
 | Kassarabattbelopp         | -10.00    |
@@ -72,7 +72,7 @@ April kan skapa en betalningsjournal för den här betalningen, genom att öppna
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
-|                              |           |
+|  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
 | Kassarabattdatum           | 7/09/2015 |
 | Kassarabattbelopp         | -10.00    |
@@ -88,7 +88,7 @@ April vill infoga exakt halva fakturan. Därför ändrar hon fakturan och ändra
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
-|                              |           |
+|  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
 | Kassarabattdatum           | 7/09/2015 |
 | Kassarabattbelopp         | -10.00    |
@@ -105,9 +105,9 @@ April stänger sidan **Kvitta transaktioner**. En betalningsrad för 495,00 skap
 | RAB-10010 | Kassarabatt    | 2015/07/01  |         | 5,00                                 |                                       | 0,00    | USD      |
 
 ## <a name="remaining-amount-paid-on-july-8"></a>Resterande belopp betalas den 8 juli
-April betalar resten av fakturan för leverantör 3064 den 8 juli, vilket är efter kassarabattperioden. April skapar betalningsjournalen den 8 juli och markerar transaktionen för kvittning. Hon ser att beloppet som måste kvittas är 495,00. Värdet i fältet **Beräknad kassarabatt** är **-5,00**, eftersom rabatten på 5,00 utnyttjades tidigare.
+April betalar resten av fakturan för leverantör 3064 den 8 juli, vilket är efter kassarabattperioden. April skapar betalningsjournalen den 8 juli och markerar transaktionen för kvittning. Hon ser att beloppet som måste kvittas är 495,00. Värdet i fältet **Beräknad kassarabatt** är **-5,00** , eftersom rabatten på 5,00 utnyttjades tidigare.
 
-|                         |        |
+|  &nbsp;                 |  &nbsp; |
 |-------------------------|--------|
 | Markerad summa            | 495,00 |
 | Uppskattad kassarabatt | -5,00  |
@@ -120,7 +120,7 @@ Information om den valda transaktionen visas i rutnätet på sidan **Kvitta öpp
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
-|                              |           |
+|  &nbsp;                      | &nbsp;    |
 |------------------------------|-----------|
 | Kassarabattdatum           | 2015/07/09 |
 | Kassarabattbelopp         | 10,00     |

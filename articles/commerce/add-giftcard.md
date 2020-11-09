@@ -17,17 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fc47d590789c79c08af7555222aa7cc9409da23c
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: b7d28e041b8adc828a2447ab09a0c1d28cc2aec0
+ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817436"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022015"
 ---
 # <a name="gift-card-module"></a>Presentkortsmodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Det här avsnittet handlar om presentkortsmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 
@@ -62,7 +61,7 @@ Värden som stöds:
 
 ## <a name="site-settings-for-gift-card-modules"></a>Platsinställningar för presentkortsmoduler
 
-I Commerce webbplatsskaparen under **webbplatsinställnings \> tillägg**, finns en presentkorts inställning som kallas **presentkortstyp som stöds**. Den här inställningen har stöd för tre värden:
+I Commerce webbplatsskaparen under **webbplatsinställnings \> tillägg** , finns en presentkorts inställning som kallas **presentkortstyp som stöds**. Den här inställningen har stöd för tre värden:
 - **Dynamics 365 presentkort** - när den här inställningen används tillåter presentkortet bara inlösen av Dynamics 365-presentkort. Den här inställningen stöds endast för inloggade användare på webbplatsen för e-handel.
 - **SVS- och Givex-presentkort** - när den här inställningen används tillåter presentkortet bara inlösen av SVS- och Givex-presentkort. Den här inställningen stöds för inloggade anonyma användare på webbplatsen för e-handel.
 - **Dynamics 365, SVS- och Givex-presentkort** - när den här inställningen används tillåter presentkortet inlösen av Dynamics 365, Givex och SVS-presentkort. Den här inställningen stöds endast för inloggade användare på webbplatsen för e-handel.

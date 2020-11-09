@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 5ea93324547ed81df120db3412ee41fce2a93f4a
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 08c04caeace7b8ced40915ace1561d817426cba3
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652015"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017677"
 ---
 # <a name="work-policies"></a>Arbetspolicyer
 
@@ -100,7 +101,7 @@ Gör så här om du vill konfigurera ett menyalternativ för mobila enheter för
 1. Välj eller skapa ett menyalternativ som använder en av arbetsprocesserna som listas tidigare i det här avsnittet.
 1. På snabbfliken **allmänt** anger du alternativet **Använd standarddata** till **Ja**.
 1. I åtgärdsfönstret, välj **Standarddata**.
-1. Ange följande värden på sidan **Standarddata**:
+1. Ange följande värden på sidan **Standarddata** :
 
     - **Standarddatafält:** Ange det här fältet till *till plats*.
     - **Lagerställe:** Välj det lagerställe vid destinationen som ska användas för menyartikeln.
@@ -112,7 +113,7 @@ Gör så här om du vill konfigurera ett menyalternativ för mobila enheter för
 
 ## <a name="example-scenario-warehouse-receiving"></a>Exempelscenario: inleverans av lager
 
-Alla produkter som tas emot av processen *Inleverans och inlagring av inköpsorderartikel* måste registreras på platsen *FL-001* och de måste vara tillgängliga i lagerstället *24*. Arbete ska dock inte skapas. Produkter som tas emot av någon annan process (dvs. genom att använda andra menyartiklar för mobila enheter) registreras på standardplatsen för inleverans av lager (*RECV*) och arbete ska skapas som vanligt. (Det här scenariot visar inte standardinställningarna för mottagning.)
+Alla produkter som tas emot av processen *Inleverans och inlagring av inköpsorderartikel* måste registreras på platsen *FL-001* och de måste vara tillgängliga i lagerstället *24*. Arbete ska dock inte skapas. Produkter som tas emot av någon annan process (dvs. genom att använda andra menyartiklar för mobila enheter) registreras på standardplatsen för inleverans av lager ( *RECV* ) och arbete ska skapas som vanligt. (Det här scenariot visar inte standardinställningarna för mottagning.)
 
 Det här scenariot kräver följande element:
 
@@ -193,14 +194,14 @@ Exemplet i det här avsnittet visar hur du tar emot en inköpsorderartikel, men 
 1. Ange inköpsordernumret för inköpsordern som du skapade i den föregående proceduren.
 1. I fältet **artikelnummer** ange *A0001*.
 1. Välj **OK**.
-1. I fältet **Kvantitet**, ange *1*.
+1. I fältet **Kvantitet** , ange *1*.
 1. Välj **OK**.
 
 Inköpsordern tas nu emot, men inget arbete associeras med den. Lagerbehållningen har uppdaterats och kvantiteten *1* av artikel *A0001* finns nu tillgänglig på platsen *FL-001*.
 
 ## <a name="example-scenario-manufacturing"></a>Exempelscenario: tillverkning
 
-I följande exempel finns det två produktionsorder *PRD-001* och *PRD-002*. Produktionsorder *PRD-001* har en åtgärd med namnet *Sammansättning*, där produkten *SC1* rapporterats som färdig till plats *001*. Produktionsorder *PRD-002* har en åtgärd med namnet *Målar* och förbrukar produkten *SC1* från platsen *001*. Produktionsorder *PRD-002* förbrukar även råmaterial *RM1* från platsen *001*. Råmaterial *RM1* lagras på lagerställeplats och *BULK-001* plockas till platsen *001* av lagerställets arbetsuppgift för plockning av råmaterial. Plockningsarbetet skapas när produktion *PRD-002* frisläpps.
+I följande exempel finns det två produktionsorder *PRD-001* och *PRD-002*. Produktionsorder *PRD-001* har en åtgärd med namnet *Sammansättning* , där produkten *SC1* rapporterats som färdig till plats *001*. Produktionsorder *PRD-002* har en åtgärd med namnet *Målar* och förbrukar produkten *SC1* från platsen *001*. Produktionsorder *PRD-002* förbrukar även råmaterial *RM1* från platsen *001*. Råmaterial *RM1* lagras på lagerställeplats och *BULK-001* plockas till platsen *001* av lagerställets arbetsuppgift för plockning av råmaterial. Plockningsarbetet skapas när produktion *PRD-002* frisläpps.
 
 [![Policyer för distributionslagerarbete](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
@@ -252,7 +253,7 @@ Lagerställeprocesser inkluderar inte alltid lagerarbete. Genom att definiera en
     - **Plats:** *001*
 
 1. På snabbfliken **produkter** ställer du in fältet **produktval** till *valda*.
-1. På snabbfliken **produkter**, välj **Lägg till** om du vill lägga till rutnätet.
+1. På snabbfliken **produkter** , välj **Lägg till** om du vill lägga till rutnätet.
 1. I nya rader, ange fältet **Artikelnummer** till *L0101*.
 1. Klicka på **Spara** i åtgärdsfönstret.
 
@@ -260,7 +261,7 @@ Lagerställeprocesser inkluderar inte alltid lagerarbete. Genom att definiera en
 
 1. Gå till **Organisationsadministration \> Resurser \> Resursgrupper**.
 1. I det vänstra fönstret, välj resursgrupp **5102**.
-1. Ange följande värden på snabbfliken **Allmänt**:
+1. Ange följande värden på snabbfliken **Allmänt** :
 
     - **Utleveranslagerställe:** *51*
     - **Utleveransplats:** *001*
@@ -281,15 +282,15 @@ Lagerställeprocesser inkluderar inte alltid lagerarbete. Genom att definiera en
 
     Behåll den nya produktionsordern vald.
 
-1. I Åtgärdsfönstret, på fliken **Produktionsorder**, i gruppen **Process**, markerar du **Uppskatta**.
+1. I Åtgärdsfönstret, på fliken **Produktionsorder** , i gruppen **Process** , markerar du **Uppskatta**.
 1. I dialogrutan **uppskattningen** läs uppskattningen och välj sedan **OK** för att stänga dialogrutan.
-1. I Åtgärdsfönstret, på fliken **Produktionsorder**, i gruppen **Process**, markerar du **Start**.
+1. I Åtgärdsfönstret, på fliken **Produktionsorder** , i gruppen **Process** , markerar du **Start**.
 1. I dialogrutan **Start** på fliken **Allmänt** anger du fältet **automatisk strukturlisteförbrukning** till *Aldrig*.
 1. Välj **OK** om du vill spara inställningarna och stänga dialogrutan.
-1. I Åtgärdsfönstret, på fliken **Produktionsorder**, i gruppen **Process**, markerar du **Rapportera som slutförd**.
+1. I Åtgärdsfönstret, på fliken **Produktionsorder** , i gruppen **Process** , markerar du **Rapportera som slutförd**.
 1. I dialogrutan **Rapportera som slutförd** på fliken **Allmänt** anger du alternativet **Acceptera fel** till *Ja*.
 1. Välj **OK** om du vill spara inställningarna och stänga dialogrutan.
-1. I åtgärdsfönstret, på fliken **Lagerställe**, i gruppen **Allmänt**, väljer du **Arbetsdetaljer**.
+1. I åtgärdsfönstret, på fliken **Lagerställe** , i gruppen **Allmänt** , väljer du **Arbetsdetaljer**.
 
 När tillverkningsordern rapporterades som färdig, genererades inget arbete för plats. Detta beteende inträffar, eftersom en arbetspolicy definieras som hindrar arbete från att genereras när produkten *L0101* rapporterats som färdig till plats *001*.
 

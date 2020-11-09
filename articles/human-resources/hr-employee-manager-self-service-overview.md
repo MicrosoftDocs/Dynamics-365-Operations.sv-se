@@ -2,8 +2,8 @@
 title: Översikt över självbetjäning för medarbetare och chef
 description: Den här artikeln innehåller en översikt över arbetsytan för självbetjäning för medarbetare och chef.
 author: andreabichsel
-manager: AnnBe
-ms.date: 08/17/2020
+manager: tfehr
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fd642d0976c607b47a7874d0771e441153272ec9
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: 116c85c53b0ec2fe1e1fd2d1fbc2738f5b6351fb
+ms.sourcegitcommit: e100c1c7c8dcdacf066defc206dd2f44b8ce6100
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712242"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4057062"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Översikt över självbetjäning för medarbetare och chef
 
@@ -39,7 +39,7 @@ Om du inte har länkat din användare till en post för **arbetare** på sidan *
 
 **Ditt användar-ID är inte associerat med din medarbetarpost i systemet och du kan inte visa eller uppdatera din information förrän den kan associeras. Kontakta din chef eller ditt supportteam för hjälp.**
 
-Om du vill koppla en användare till en post för **arbetare**, navigerar du till **användare** och väljer användaren. Välj **Redigera**, lägg till motsvarande arbetare i fältet **Person** i formuläret och välj **Spara**. Du bör nu ha till gång till Självbetjäning för medarbetare.
+Om du vill koppla en användare till en post för **arbetare** , navigerar du till **användare** och väljer användaren. Välj **Redigera** , lägg till motsvarande arbetare i fältet **Person** i formuläret och välj **Spara**. Du bör nu ha till gång till Självbetjäning för medarbetare.
 
 ## <a name="security-requirements-for-employee-and-manager-self-service"></a>Säkerhetskrav för självbetjäning för medarbetare och chef
 
@@ -74,13 +74,13 @@ Kortet **ledighetssaldon** visar saldona för alla eventuella registrerade plane
 
 På kortet **aktiviteter** visas uppgifter som du har tilldelats och där kan du visa och hantera dem.
 
-Kortet **Nästa registrerade kurs** visar nästa kurs som du har registrerat för. Du kan bara visa och registrera för alla öppna kurser. Alla kurser som är öppna för anmälan har statusvärdet **startad**och låter medarbetare göra självregistrering visas på det här kortet. Beroende på din organisations inställningar kan kursregistreringen gå igenom en godkännandeprocess.
+Kortet **Nästa registrerade kurs** visar nästa kurs som du har registrerat för. Du kan bara visa och registrera för alla öppna kurser. Alla kurser som är öppna för anmälan har statusvärdet **startad** och låter medarbetare göra självregistrering visas på det här kortet. Beroende på din organisations inställningar kan kursregistreringen gå igenom en godkännandeprocess.
 
 Kortet **Certifikat** visar certifikatet och utgångsdatumet för certifikatet som förfaller närmast aktuellt datum. Du kan uppdatera, lägga till eller ta bort certifikat. Beroende på din organisations inställningar kan certifikatuppdateringar gå igenom en godkännandeprocess.
 
 Kortet **Nästa schemalagda granskning** visar nästa resultatöversyn. Du kan starta en ny granskning från det här kortet. Din chef eller din HR-representant kan också initiera recensioner. Beroende på din organisations inställningar kanske du också kan visa, uppdatera och skicka ut avstängningsgranskning från det här kortet.
 
-Du kan hantera dina mål med kortet **resultatmål**. Det här kortet visar antalet mål du har för varje status (**inte startat**, **pågår** och **behöver förbättras**). Du kan skapa, uppdatera och ta bort mål, beroende på vilken rollbaserad säkerhet som har tilldelats. Om du vill kan du lägga till nya mål från grupper eller mallar. Chefer och HR kan också skapa mål för medarbetare och bestämma hur detaljerat varje mål ska vara. Chefer och medarbetare kan samarbeta om mål och uppdatera aktiviteter, mått och status. Du kan också inkludera bilagor.
+Du kan hantera dina mål med kortet **resultatmål**. Det här kortet visar antalet mål du har för varje status ( **inte startat** , **pågår** och **behöver förbättras** ). Du kan skapa, uppdatera och ta bort mål, beroende på vilken rollbaserad säkerhet som har tilldelats. Om du vill kan du lägga till nya mål från grupper eller mallar. Chefer och HR kan också skapa mål för medarbetare och bestämma hur detaljerat varje mål ska vara. Chefer och medarbetare kan samarbeta om mål och uppdatera aktiviteter, mått och status. Du kan också inkludera bilagor.
 
 Du kan visa dina befintliga kunskaper på kortet **Kompetenser**. Du kan uppdatera kompetenser, lägga till nya eller ta bort sådana som inte längre är relevanta. Beroende på din organisations inställningar kan ändringar i dina kompetenser gå igenom en godkännandeprocess.
 
@@ -96,7 +96,7 @@ Anmäl dig till förmåner via länken **förmåner**. Mer information om förm�
 
 Under **prestanda** kan du välja **prestandajournaler** för att skapa poster i resultatjournaler som kan användas på både resultatmål och recensioner. Du kan välja **skicka feedback** om du vill ge feedback för andra medarbetare inom organisationen. Beroende på inställningarna för din organisation kan e-postmeddelanden skickas till mottagaren, avsändaren och cheferna. Du kan skicka feedback till alla medarbetare inom organisationen. Sändning av feedback begränsas inte av företaget.
 
-Under **kompetenser**, kan du göra ändringar i **kurser**, **utbildningar**, **förtroendeuppdrag** och **yrkeserfarenhet**. Beroende på din organisations inställningar kan uppdatering av dessa kompetenser gå igenom en godkännandeprocess.
+Under **kompetenser** , kan du göra ändringar i **kurser** , **utbildningar** , **förtroendeuppdrag** och **yrkeserfarenhet**. Beroende på din organisations inställningar kan uppdatering av dessa kompetenser gå igenom en godkännandeprocess.
 
 Du kan visa jobbinformation under **organisation**. Jobbinformation omfattar färdigheter, certifikat och ansvarsområden för din primära befattning. Du kan också se alla utlånade utrustningar som är utcheckade till dig. Beroende på din organisations inställningar kan ändringar i utlånad utrustning gå igenom en godkännandeprocess.
 
@@ -193,9 +193,9 @@ Du kan visa befattningsdata för både direkta och utökade rapporter.
 
 #### <a name="compensation-tab"></a>Fliken Kompensation
 
-Fliken **kompensation** visar medarbetarens årslön. En företags identifierare visas under lönebeloppet. Om en medarbetare har fler än en anställning och får betalt från flera juridiska personer, kommer medarbetaren att ha flera kompensationskort. Det senaste ökningsbeloppet och procenten visas, baserat på anställningsföretaget.
+Fliken **kompensation** visar medarbetarens årslön. En företags identifierare visas under lönebeloppet. Om en medarbetare har fler än en anställning och får betalt från flera juridiska personer, kommer medarbetaren att ha flera kompensationsplaner. Om du vill visa alla kompensationsplaner över juridiska personer utan att växla mellan företag, måste du aktivera kompensation mellan företag under **personal > delade parametrar > avancerad åtkomst > aktivera kompensation mellan företag**.
 
-Om du vill visa kompensationshistorik väljer du lönebeloppet som du vill öppna formuläret **Detaljer** för. Endast aktuella och historiska fasta och variabla kompensations poster visas i formuläret **kompensation**. Om en medarbetare har fler än en anställning kan du växla mellan företag för att visa kompensationshistoriken i varje företag.
+Om du vill visa kompensationshistorik väljer du lönebeloppet som du vill öppna formuläret **Detaljer** för. Endast aktuella och historiska fasta och variabla kompensations poster visas i formuläret **kompensation**. Om en medarbetare har fler än en anställning kan du växla mellan företag för att visa kompensationshistoriken i varje företag eller aktivera en kompensation mellan företag i gemensamma parametrar för personal för att visa alla kompensationsplaner.
 
 Du kan visa kompensation för både direkta och utökade rapporter.
 
@@ -211,6 +211,6 @@ Chefer kan se alla mål för deras team via panelen **Teamprestationsmål** i av
 
 #### <a name="reviews-tab"></a>Fliken recensioner
 
-På fliken **recensioner** sammanfattas de granskningar som medarbetaren har i varje tillstånd: **pågår**, **klar för granskning** och **slutlig granskning**. Om du vill komma åt en medarbetares granskning väljer du knappen **Detaljer** och väljer sedan granska för att samarbeta på. Beroende på var en granskning är i arbetsflödesprocessen kan du se om granskningen är tillgänglig för uppdatering. 
+På fliken **recensioner** sammanfattas de granskningar som medarbetaren har i varje tillstånd: **pågår** , **klar för granskning** och **slutlig granskning**. Om du vill komma åt en medarbetares granskning väljer du knappen **Detaljer** och väljer sedan granska för att samarbeta på. Beroende på var en granskning är i arbetsflödesprocessen kan du se om granskningen är tillgänglig för uppdatering. 
 
 Du kan se alla recensioner för ditt team genom **Teamprestationsgranskningar** i avsnittet **Sammanfattning** i **Mitt team**.

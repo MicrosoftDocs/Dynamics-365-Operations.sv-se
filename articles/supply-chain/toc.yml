@@ -180,9 +180,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Miljöplanering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Förbereda publicering
+                - name: Förbereda Go live
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Frågor och svar om publicering
+                - name: Frågor och svar om Go live
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Skicka en serviceförfrågan
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/supply-chain/toc.json
@@ -1733,8 +1733,10 @@
               items:
                 - name: Inköpsavtal
                   href: procurement/purchase-agreements.md
-                - name: Skapa ett nytt inköpsavtal
+                - name: Skapa ett inköpsavtal
                   href: procurement/tasks/create-purchase-agreement.md
+                - name: Automatisk allokering av avgifter
+                  href: procurement/automatic-charges-allocation.md
                 - name: Leverantörsrabatter
                   href: procurement/vendor-rebates.md
                 - name: 'Felsöka priser, rabatter och avtal'
@@ -2041,6 +2043,14 @@
                       href: production-control/release-production-orders.md
                     - name: Rapportera produktionsorder som slutförda
                       href: production-control/report-production-orders-as-finished.md
+                    - name: Konfigurera och använda körningsgränssnittet för produktionsgolvet
+                      items:
+                        - name: Konfigurera körningsgränssnittet för produktionsgolvet
+                          href: production-control/production-floor-execution-configure.md
+                        - name: Konfigurera en enhet för att köra körningsgränssnittet för produktionsgolvet
+                          href: production-control/production-floor-execution-setup.md
+                        - name: Hur arbetare använder körningsgränssnittet för produktionsgolvet
+                          href: production-control/production-floor-execution-use.md
                     - name: Konfigurera jobbkort för enheter
                       href: production-control/config-job-card-device.md
                     - name: Rapportera som färdig från jobbkortenhet
@@ -2275,6 +2285,8 @@
                   href: sales-marketing/tasks/ship-orders-direct-deliveries.md
                 - name: Leverera försäljningsorder utan lagerhållning
                   href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+                - name: Automatisk allokering av avgifter
+                  href: procurement/automatic-charges-allocation.md
                 - name: Skapa en inköpsorder från en försäljningsorder
                   href: sales-marketing/tasks/create-purchase-order-sales-order.md
                 - name: Skapa försäljningsorder
@@ -2663,13 +2675,11 @@
                       href: warehousing/tasks/license-plate-label-printing.md
                     - name: Skapa överföringsorder från distributionslagerappen
                       href: warehousing/create-transfer-order-from-warehouse-app.md
-                    - name: Händelsebearbetning i distributionslagerappen
-                      href: warehousing/warehouse-app-events.md
                     - name: Enhetsplockningsbekräftelse
                       href: warehousing/piece-picking-confirmation.md
                     - name: Förpackningsmaterial och avgifter
                       href: warehousing/pack-materials-packing-material-fees.md
-                    - name: Ställ in manuell förpackning (enbart februari och maj 2016)
+                    - name: Ställa in manuell förpackning (enbart februari och maj 2016)
                       href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
                     - name: Skapa omallokering av artiklar för kort plockning
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
@@ -2843,6 +2853,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Ställa in mobila enheter för distributionslagerarbete
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Händelsebearbetning i distributionslagerappen
+                      href: warehousing/warehouse-app-events.md
                     - name: Inleverans av ID-nummer med distributionslagerappen
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Ställa in ett menyalternativ för mobil enhet för att slutföra arbetet i en inköpsorder

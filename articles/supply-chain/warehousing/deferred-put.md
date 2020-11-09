@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d274eae4ad3ba60eadb18ca8de22d4b2d10fe727
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cc8321c55bc867db065af0cddf356fb497a956e8
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205700"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016711"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Uppskjuten bearbetning av lagerhållningsarbete
 
@@ -44,7 +44,7 @@ Policyer konfigureras på sidan **arbetsbearbetningspolicyer**. Följande regist
 | Namn på arbetsprocesspolicy     | Namnet på arbetsbearbetningspolicyn. |
 | Typ av arbetsorder                 | Den arbetsordertyp som policyn tillämpas på. |
 | Åtgärd                       | Åtgärden som bearbetas med hjälp av policyn. |
-| Arbetsprocessmetod          | Den metod som används för att bearbeta arbetsraden Om metoden är inställd på **omedelbar**, liknar beteendet det beteende när inga policyer för bearbetning av arbetsprocesser används för att bearbeta raden. Om metoden har ställts in på **uppskjuten**, används uppskjuten bearbetning som använder batchramverket. |
+| Arbetsprocessmetod          | Den metod som används för att bearbeta arbetsraden Om metoden är inställd på **omedelbar** , liknar beteendet det beteende när inga policyer för bearbetning av arbetsprocesser används för att bearbeta raden. Om metoden har ställts in på **uppskjuten** , används uppskjuten bearbetning som använder batchramverket. |
 | Tröskelvärde för uppskjuten bearbetning   | Värdet **0** (noll) innebär att det inte finns något tröskelvärde. I det här fallet används uppskjuten bearbetning om den kan användas. Om den specifika beräkningen av tröskelvärde ligger under tröskelvärdet används metoden omedelbar. I annat fall används den uppskjutna metoden om den kan användas. För försäljnings- och överföringsrelaterat arbete beräknas tröskelvärdet som antalet associerade källastrader som bearbetas för arbetet. För lagerpåfyllnadsarbete beräknas tröskelvärdet som antalet arbetsrader som fylls på av arbetet. Genom att ange ett tröskelvärde på till exempel **5** för försäljning, kommer mindre arbeten som har färre än fem inledande källastrader inte att använda uppskjuten bearbetning, men större arbeten kommer att använda den. Tröskelvärdet har endast effekt om arbetsbearbetningsmetoden har ställts in på **uppskjuten**. |
 | Batchgrupp för uppskjuten bearbetning |Den batchgrupp som används för bearbetning. |
 

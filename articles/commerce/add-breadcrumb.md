@@ -3,7 +3,7 @@ title: Modulen för navigeringssökväg
 description: Det här avsnittet handlar om moduler för navigeringssökväg och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7c6f215c3a7539cc16b0d72594702e6bdde7c58e
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: 05e8614f53db2593ade92fdb42dc0dfe869e9407
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817120"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055414"
 ---
 # <a name="breadcrumb-module"></a>Modulen för navigeringssökväg
 
@@ -66,23 +66,27 @@ Modulen för navigeringssökväg är beroende av inställningen **navigeringssö
 
 Om du vill lägga till en modul för navigeringssökväg till en PDP och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Gå till **webbplatsinställningar /> tillägg** och för den **navigeringssökväg displaytyp på PDP**-inställningen väljer du **Visa kategorihierarki**.
+1. Gå till **webbplatsinställningar /> tillägg** och för den **navigeringssökväg displaytyp på PDP** -inställningen väljer du **Visa kategorihierarki**.
 1. Gå till **mallar** och välj PDP-mallen.
-1. I platsen **Behållare** som innehåller modul för inköpsruta markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul**, välj modulen **navigeringssökväg** och klicka sedan på **OK**.
-1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
+1. I platsen **Behållare** som innehåller modul för inköpsruta markerar du ellipsknappen ( **...** ) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul** , välj modulen **navigeringssökväg** och klicka sedan på **OK**.
+1. Välj **Spara** , välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Gå till **sidor** och öppna en PDP som använder PDP-mallen. Om det ännu inte finns något PDP skapar du ett.
-1. I platsen **Behållare** som innehåller modul för inköpsruta markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul**, välj modulen **navigeringssökväg** och klicka sedan på **OK**.
-1. I egenskapsrutan för platsen **Navigeringssökväg**, under **Rot**, välj **Länktext**.
-1. I dialogrutan **Länktext** ange **Start** och sedan under **Länkmål**, välj **Lägg till en länk**.
+1. I platsen **Behållare** som innehåller modul för inköpsruta markerar du ellipsknappen ( **...** ) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul** , välj modulen **navigeringssökväg** och klicka sedan på **OK**.
+1. I egenskapsrutan för platsen **Navigeringssökväg** , under **Rot** , välj **Länktext**.
+1. I dialogrutan **Länktext** ange **Start** och sedan under **Länkmål** , välj **Lägg till en länk**.
 1. I dialogrutan **Lägg till en länk** väljer du länken för roten för navigeringssökväg och välj sedan **OK**.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan.
 1. Välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över modulbibliotek](starter-kit-overview.md)
+[Modulbibliotek – översikt](starter-kit-overview.md)
+
+[Modul för navigeringsmeny](nav-menu-module.md)
+
+[Modul för webbplatsväljare](site-selector.md)
 
 [Översikt över standardkategorilandningssida och sida för sökresultat](category-search-page-overview.md)
 

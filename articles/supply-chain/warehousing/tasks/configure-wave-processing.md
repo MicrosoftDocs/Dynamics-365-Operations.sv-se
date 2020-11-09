@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 73fb8b936fb3066557f3d556506ce29ef0d919ab
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: aa193f6d62613893f9d5da4351d43a810dbf1596
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3217182"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017263"
 ---
 # <a name="configure-wave-processing"></a>Konfigurera påfyllnadsbearbetning
 
@@ -32,7 +32,7 @@ I den här guiden beskrivs hur du ställer in villkoren som avgör vilket arbete
 
 1. Gå till **navigeringsfönstret > moduler > lagerstyrning > inställningar > påfyllnader > påfyllnadsmallar**.
 2. Klicka på **Ny**.
-3. I fältet **Påfyllnadsmallnamn**, skriv ett värde. När du ställer in en påfyllnadsmall, anger du sekvensen i vilken mallar ska matchas för att frisläppa rader på försäljningsorder, tillverkningsorder eller kanban. När en rad frisläppts till lagerställe eller till produktion, används den första påfyllnadsmallen som den uppfyller villkoren för. Vi rekommenderar därför att du sätter mallar med det mest specifika kriteriet längst upp i listan. Ju bredare villkoren är, desto mer rimligt är det att en rad ska uppfylla kriterierna, vilket kan leda till att rader tilldelas fel påfyllnad.  
+3. I fältet **Påfyllnadsmallnamn** , skriv ett värde. När du ställer in en påfyllnadsmall, anger du sekvensen i vilken mallar ska matchas för att frisläppa rader på försäljningsorder, tillverkningsorder eller kanban. När en rad frisläppts till lagerställe eller till produktion, används den första påfyllnadsmallen som den uppfyller villkoren för. Vi rekommenderar därför att du sätter mallar med det mest specifika kriteriet längst upp i listan. Ju bredare villkoren är, desto mer rimligt är det att en rad ska uppfylla kriterierna, vilket kan leda till att rader tilldelas fel påfyllnad.  
 4. Skriv ett värde i fältet **Beskrivning av påfyllnadsmall**.
 5. i fältet **Plats** anger eller väljer du ett värde. Om du använder USMF kan du välja site 2.  
 6. Ange eller välj ett värde i fältet **Lagerställe**. Om du använder USMF kan du välja lager 24.  
@@ -56,7 +56,7 @@ I den här guiden beskrivs hur du ställer in villkoren som avgör vilket arbete
 21. Klicka på **Spara**.
 22. Stäng sidan.
 23. Gå till **Navigeringsfönster > Moduler > Produktionskontroll > Inställningar > Produktionskontrollparametrar**.
-24. I fältet **Släpp till lagerställe**, markera ett alternativ.
+24. I fältet **Släpp till lagerställe** , markera ett alternativ.
 
 För försäljnings - och kanbanorder måste lager reserveras om ordern har frisläppts till lagerstället. Annars kan artiklarna eller allokeringsraderna inte bearbetas i en våg. För tillverkningsorder har du även alternativet att välja Tillåt viss reservation. Detta är till exempel praktiskt om du har material som behövs för att starta en produktion, och kan vänta tills ytterligare material är tillgängligt för att avsluta processen. Om du markerar det här alternativet måste du upprepa frisläppningen till lagerprocess när ytterligare material blir tillgängliga.  
 25. Stäng sidan.

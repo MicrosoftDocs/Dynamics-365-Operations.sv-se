@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5e4172a8d3f82e6eeb8868aac87abd183a94c088
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: 6a328b20c1cfb2fc376ab4656c64cf585a5aa015
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598795"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017194"
 ---
 # <a name="item-consolidation---location-utilization"></a>Artikelkonsolidering – platsutnyttjande
 
@@ -59,7 +60,7 @@ I det här avsnittet beskrivs hur du förbereder systemet för att använda arti
 
 1. Gå till **Produktinformationshantering \> Produkter \> Frisläppta produkter**.
 1. I fältet **artikelnummer** välj *M9201* och öppna informationssidan.
-1. I åtgärdsfönstret, på fliken **Hantera lager**, i gruppen **Lagerställe**, väljer du **Fysiska dimensioner**.
+1. I åtgärdsfönstret, på fliken **Hantera lager** , i gruppen **Lagerställe** , väljer du **Fysiska dimensioner**.
 1. På sidan **fysiska dimensioner** i åtgärdsfönstret väljer du **Ny**.
 
     En ny rad läggs till i rutnätet. Fältet **artikelnummer** är förval.
@@ -72,7 +73,7 @@ I det här avsnittet beskrivs hur du förbereder systemet för att använda arti
 1. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Platsprofiler**.
 1. I listan över platsprofiler, välj **FLOOR-05**.
 1. I åtgärdsfönstret väljer du **Redigera**.
-1. På snabbfliken **Allmänt** ser du till att båda följande alternativ är inställda på *Ja*:
+1. På snabbfliken **Allmänt** ser du till att båda följande alternativ är inställda på *Ja* :
 
     - Aktivera artikel på plats
     - Aktivera platsens status
@@ -97,8 +98,8 @@ I det här avsnittet beskrivs hur du förbereder systemet för att använda arti
     >
     > Om meddelandet om konsekvenskontroll anger "felaktig platsstatusinformation hittades för plats XXXX i lagerställe XX" måste du köra konsekvenskontrollen igen. Den här gången anger du fältet **Kontrollera/åtgärda** för att *åtgärda felet*. Visa meddelandena och se till att inga fel hittades.
 
-1. Du måste nu slutföra konfigurationen av platsprofilen. Gå tillbaka till **lagerstyrning \> inställningar \> lager \> platsprofiler**, välj platsprofil **FLOOR-05** och välj sedan **Redigera** i åtgärdsfönstret.
-1. Ange följande värden på snabbfliken **Dimensioner**:
+1. Du måste nu slutföra konfigurationen av platsprofilen. Gå tillbaka till **lagerstyrning \> inställningar \> lager \> platsprofiler** , välj platsprofil **FLOOR-05** och välj sedan **Redigera** i åtgärdsfönstret.
+1. Ange följande värden på snabbfliken **Dimensioner** :
 
     - **Volymutnyttjandeprocent:** *100*
     - **Volymmetod som används för lagerställe:** *Använd platsvolym*
@@ -120,7 +121,7 @@ I det här avsnittet beskrivs hur du förbereder systemet för att använda arti
     - **Läge:** *arbete*
     - **Använd befintligt arbete:** *Nej*
 
-1. Ange följande värden på snabbfliken **Allmänt**:
+1. Ange följande värden på snabbfliken **Allmänt** :
 
     - **Arbetsskapandeprocess:** *justering i*
     - **Lagerjusteringstyper:** *Justera i*
@@ -185,7 +186,7 @@ I följande scenario används lagerställeappen på en mobil enhet för att gör
 ### <a name="consolidate-locations"></a>Konsolidera platser
 
 1. Gå till **lagerstyrning \> periodiska uppgifter \> artikelkonsolidering**.
-1. Välj ett lagerställe att konsolidera för i huvudet. I fältet **Lagerställe**, ange *51*.
+1. Välj ett lagerställe att konsolidera för i huvudet. I fältet **Lagerställe** , ange *51*.
 
     En post visas för varje plats där artikel *M9201* justeras. Kolumnen **användningsprocent** visar den tillåtna platsens volymetriska utnyttjande.
 

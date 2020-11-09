@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ae6b36c40d2f2f9e5266dfb3e2d1cbbb57755222
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: ad8b33633646f27bc368dc4bbedc1eb64c150a9f
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803101"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014945"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>Installera tillägget för IoT-information i LCS
 
@@ -52,7 +52,7 @@ LCS-konfigurationen har nu slutförts. Nästa steg är att [ställa in scenarier
 
 ## <a name="uninstall-the-add-in"></a><a id="uninstall-addin"></a>Avinstallera tillägget
 
-1. [Avaktivera scenarierna](iot-scenario-setup.md#how-to-disable-a-scenario) i Supply Chain Management.
+1. [Avaktivera scenarierna](iot-scenario-setup.md#disable-a-scenario) i Supply Chain Management.
 2. I LCS går du till informationen för Supply Chain Management.
 3. Bläddra till avsnittet **Miljötillägg**.
 4. Välj **Avinstallera** för tilläggsprogrammet för IoT-information.

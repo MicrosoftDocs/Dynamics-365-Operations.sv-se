@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 889337560f073708fb16b2dc173f9872593dd570
-ms.sourcegitcommit: be4fcf8f19c55e852a729b215a16e24e971ff5b7
+ms.openlocfilehash: 7e1f70d95f29dc154044f09c6020300a8e4f8987
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456824"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997488"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering av valutatyp för dubbelriktad skrivning
 
@@ -87,7 +86,7 @@ När migreringen har slutförts kan administratörer ställa in valutaprecision.
 
 ### <a name="business-management-currencies"></a>Affärshantering: valutor
 
-Om du kräver att valutaprecisionen för en viss valuta avviker från den valutaprecision som används för prissättningen kan du ändra den. Gå till **Inställningar \> Företagshantering**, välj **Valutor** och välj sedan vilken valuta du vill ändra. Ställ sedan in fältet **Valutaprecision** till önskat antal decimaler, som du ser i bilden nedan.
+Om du kräver att valutaprecisionen för en viss valuta avviker från den valutaprecision som används för prissättningen kan du ändra den. Gå till **Inställningar \> Företagshantering** , välj **Valutor** och välj sedan vilken valuta du vill ändra. Ställ sedan in fältet **Valutaprecision** till önskat antal decimaler, som du ser i bilden nedan.
 
 ![Valutainställningar för ett specifikt språk](media/specific-currency.png)
 

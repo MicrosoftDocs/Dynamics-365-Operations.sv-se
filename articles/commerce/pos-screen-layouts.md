@@ -19,17 +19,17 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 75bce16c5e1b0898a0284659f9ce5e4716a93049
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: 2a6fdbc957a50adba38627bc37622c17ab4be419
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834219"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022481"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Visuella konfigurationer för kassaanvändargränssnitt
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Användargränssnittet (UI) för Microsoft Dynamics 365 Commerce kassa (POS) kan konfigureras med en kombination av visuella profiler och skärmlayouter, tilldelade till butiker, kassor och användare. Det här avsnittet innehåller information om dessa konfigurationsalternativ.
 
@@ -62,15 +62,15 @@ Visuella profiler tilldelas till kassor och de anger visuella element som är ka
 > [!NOTE]
 > Layouten **höger** och datum/tid-visning gäller inte för inloggningsskärmen i den kompakta vyn.
 
-Du måste köra distributionschemajobbet **1090** (**Kassor**) för att synkronisera de senaste inställningarna för visuell profil i kanaldatabasen.
+Du måste köra distributionschemajobbet **1090** ( **Kassor** ) för att synkronisera de senaste inställningarna för visuell profil i kanaldatabasen.
 
 ## <a name="screen-layouts"></a>Skärmlayouter
 
-Skärmlayoutkonfigurationen avgör åtgärderna, innehållet i och placeringen av gränssnittskontrollerna på kassans **välkomst**-skärm och **transaktions**-skärmen.
+Skärmlayoutkonfigurationen avgör åtgärderna, innehållet i och placeringen av gränssnittskontrollerna på kassans **välkomst** -skärm och **transaktions** -skärmen.
 
 ![Visa vy för kassaskärmslayout](../commerce/media/POS-Screen-Layout-View.png)
 
-- **Välkomstskärm**- I de flesta fall är välkomstskärmen den sida som användare ser när de först loggar in i kassan. Välkomstskärmen kan bestå av ett varumärke och knappsatser som ger åtkomst till kassaåtgärder. Åtgärder som inte är specifika för den aktuella transaktionen är oftast placerade på den här skärmen.
+- **Välkomstskärm** - I de flesta fall är välkomstskärmen den sida som användare ser när de först loggar in i kassan. Välkomstskärmen kan bestå av ett varumärke och knappsatser som ger åtkomst till kassaåtgärder. Åtgärder som inte är specifika för den aktuella transaktionen är oftast placerade på den här skärmen.
 
     ![Kassavälkomstskärm](../commerce/media/POS-Welcome-Screen.png)
 
@@ -84,7 +84,7 @@ Skärmlayoutkonfigurationen avgör åtgärderna, innehållet i och placeringen a
 
 Skärmlayouter kan tilldelas på butik-, kassa- och användarnivå. Användartilldelningen åsidosätter kassa- och butikstilldelningen, och kassatilldelningen åsidosättningar butikstilldelningen. I ett enkelt scenario där alla användare använder samma layout oavsett kassa eller roll kan skärmlayouten endast anges för butiksnivå. I de scenarier där vissa kassor eller användare kräver specialiserade layouter, kan dessa layouter tilldelas.
 
-Beroende på vilken nivå du har tilldelat webblayouterna måste du köra distributionschemajobbet **1070** (**kanalkonfiguration**), **1090** (**kassor**) och/eller **1060** (**personal**) för att synkronisera de senaste konfigurationerna för skärmlayout med kanaldatabasen.
+Beroende på vilken nivå du har tilldelat webblayouterna måste du köra distributionschemajobbet **1070** ( **kanalkonfiguration** ), **1090** ( **kassor** ) och/eller **1060** ( **personal** ) för att synkronisera de senaste konfigurationerna för skärmlayout med kanaldatabasen.
 
 ### <a name="layout-sizes"></a>Layoutstorlekar
 

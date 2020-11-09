@@ -14,15 +14,15 @@ ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anupamar-ms
+ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5876b953a3b3d960c106acf37731fde13b93f8e7
-ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
+ms.openlocfilehash: 6610d2abe0a1b03ddd763f9a65fc1dab42f1da1b
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "3661182"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015190"
 ---
 # <a name="order-details-module"></a>Orderinformationsmodul
 
@@ -38,7 +38,7 @@ Orderinformationsmodul används för att visa bekräftelseinformationen när en 
 
 | Egenskapsnamn  | Värden | beskrivning |
 |----------------|--------|-------------|
-| Rubrik        | Rubriktext och rubriktagg (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Orderdetaljmodulen kan ha en rubrik. Som standard används rubriktaggen **H2** för rubriken. Taggen kan emellertid ändras så att den uppfyller tillgänglighetskraven. |
+| Rubrik        | Rubriktext och rubriktagg ( **H1** , **H2** , **H3** , **H4** , **H5** eller **H6** ) | Orderdetaljmodulen kan ha en rubrik. Som standard används rubriktaggen **H2** för rubriken. Taggen kan emellertid ändras så att den uppfyller tillgänglighetskraven. |
 | Kontaktnummer | Text | Ett kontaktnummer kan anges för frågor som är relaterade till order. |
 
 ## <a name="modules-that-can-be-used-on-an-order-details-page"></a>Moduler som kan användas på en sida för orderinformation
@@ -52,17 +52,17 @@ När du skapar en sida för orderinformation kan du lägga till andra relevanta 
 
 Om du vill lägga till en orderdetaljmodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
-1. I dialogrutan **Ny mall** under **Mallnamn**, ange ett namn **Orderinformationsmall** och välj sedan **OK**.
-1. I facket **brödtext** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul**, välj modulen **Standardsida** och klicka sedan på **OK**.
-1. I platsen **Huvud** i modulen **Standardsida** markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
+1. I dialogrutan **Ny mall** under **Mallnamn** , ange ett namn **Orderinformationsmall** och välj sedan **OK**.
+1. I facket **brödtext** välj ellips-knappen ( **...** ) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul** , välj modulen **Standardsida** och klicka sedan på **OK**.
+1. I platsen **Huvud** i modulen **Standardsida** markerar du ellipsknappen ( **...** ) och väljer sedan **Lägg till modul**.
 1. I dialogrutan **Lägg till modul** välj modulen **orderinformation** och sedan **OK**.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska mallen. Orderinformationsmodulen kommer inte återges eftersom den kräver en kontext för orderbekräftelsenumret.
 1. Välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
-1. I dialogrutan **Välj en mall** väljer du en **Orderinnehållsmall**. Under **Sidnamn**, ange **Orderinnehållsida** och klicka sedan på **OK**.
-1. I platsen **Huvud** i modulen **Standardsida** markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Välj en mall** väljer du en **Orderinnehållsmall**. Under **Sidnamn** , ange **Orderinnehållsida** och klicka sedan på **OK**.
+1. I platsen **Huvud** i modulen **Standardsida** markerar du ellipsknappen ( **...** ) och väljer sedan **Lägg till modul**.
 1. I dialogrutan **Lägg till modul** välj modulen **orderinformation** och sedan **OK**.
 1. I egenskapsrutan i dragspelsmodulen väljer du **rubrik** bredvid pennsymbolen.
 1. I fältet **Rubriktext** i dialogrutan **Rubrik** ange rubriktext **Orderdetaljer** och välj sedan **OK**.

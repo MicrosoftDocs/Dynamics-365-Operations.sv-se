@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable
+ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f46bbaca86f9113a3e4705e4f2c0f76590e62ec1
-ms.sourcegitcommit: 86052c58e3c365c443bd6f37ad1054bea395e21b
+ms.openlocfilehash: a7de9430ddcc2499627bacfa01b4dc7fd5546a4d
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3338343"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018892"
 ---
 # <a name="procurement-and-sourcing-overview"></a>Upphandling och inköp – översikt
 
@@ -35,15 +35,15 @@ Upphandling och inköp omfattar alla steg från att identifiera ett behov av pro
 
 ## <a name="identifying-a-need-for-product-and-services"></a>Identifiera ett behov av produkter och tjänster.
 
-Behovet av produkter eller tjänster som kan uppstå från *anmodan*, till exempel när en anställd behöver en produkt. *Produktkataloger* kan ställas in för att styra urvalet av tillgängliga produkter att välja mellan, eller förfrågningar kan göras för produkter som ännu inte är tillgängliga i en katalog, så att inköpsavdelningen att överväga hur produkten kan levereras.  
+Behovet av produkter eller tjänster som kan uppstå från *anmodan* , till exempel när en anställd behöver en produkt. *Produktkataloger* kan ställas in för att styra urvalet av tillgängliga produkter att välja mellan, eller förfrågningar kan göras för produkter som ännu inte är tillgängliga i en katalog, så att inköpsavdelningen att överväga hur produkten kan levereras.  
 
-*Utgiftsramen* kan användas för att begränsa utgifterna för anmodan och*inköp arbetsflöde* ger möjlighet att kräva godkännande innan beställning sker. Det är också möjligt att ange budget anslag, om det behövs.  
+*Utgiftsramen* kan användas för att begränsa utgifterna för anmodan och *inköp arbetsflöde* ger möjlighet att kräva godkännande innan beställning sker. Det är också möjligt att ange budget anslag, om det behövs.  
 
-Upphandling avdelningen identifierar leverantörer för varor och tjänster, och detta kan innebära en*offertförfrågan* som skickas ut till flera potentiella leverantörer. Det är möjligt att dela specifikationer för produkten som begärts och potentiella leverantörer kan visa dessa för att se om de kan leverera en produkt som uppfyller dem. Säljare tillbaka sina anbud som sedan granskas av inköpsavdelning innan de väljer den leverantör som de vill anskaffa från.  
+Upphandling avdelningen identifierar leverantörer för varor och tjänster, och detta kan innebära en *offertförfrågan* som skickas ut till flera potentiella leverantörer. Det är möjligt att dela specifikationer för produkten som begärts och potentiella leverantörer kan visa dessa för att se om de kan leverera en produkt som uppfyller dem. Säljare tillbaka sina anbud som sedan granskas av inköpsavdelning innan de väljer den leverantör som de vill anskaffa från.  
 
-Inköpsorder har ett alternativ för att skicka en *inköpsorder* till leverantören som ett alternativ till en mer omfattande offertförfrågan. Köp undersökning kan användas för att bidra till att skapa villkor som priser, rabatter och leveransdatum. Om leverantörer är inställda för användning av **Leverantör**portalen kommer inköpsförfrågan funktionen att inaktiveras. I stället delas på**säljaren** portal, och när en*begäran om bekräftelse* skickas säljaren kan direkt bekräfta ordern.  
+Inköpsorder har ett alternativ för att skicka en *inköpsorder* till leverantören som ett alternativ till en mer omfattande offertförfrågan. Köp undersökning kan användas för att bidra till att skapa villkor som priser, rabatter och leveransdatum. Om leverantörer är inställda för användning av **Leverantör** portalen kommer inköpsförfrågan funktionen att inaktiveras. I stället delas på **säljaren** portal, och när en *begäran om bekräftelse* skickas säljaren kan direkt bekräfta ordern.  
 
-*Säljaren kataloger* kan användas för att samla in information om produktsortiment som leverantörer kan leverera. Säljare kan publicera sin egen katalog, så det är enklare att hålla katalogen aktuell. Det är möjligt att bifoga en*lista över godkända leverantörer* till en produkt, och detta kan vägleda säljaren val när nya inköpsorder är öppnade och förhindra användning av oavsiktliga leverantörer.
+*Säljaren kataloger* kan användas för att samla in information om produktsortiment som leverantörer kan leverera. Säljare kan publicera sin egen katalog, så det är enklare att hålla katalogen aktuell. Det är möjligt att bifoga en *lista över godkända leverantörer* till en produkt, och detta kan vägleda säljaren val när nya inköpsorder är öppnade och förhindra användning av oavsiktliga leverantörer.
 
 ## <a name="procurement"></a>Anskaffning
 
@@ -78,7 +78,7 @@ Avgifter kan tilldelas till inköpsordern. Detta kan ske automatiskt genom insta
 
 ## <a name="product-receipt-and-invoicing"></a>Produkt inleverans och fakturering
 
-Inköpsorder som inkluderar fysiska produkter som vanligen kräver *ankomstregistrering* sker inom ett lager, och efter detta en *produkt inleverans* är registrerade för den aktuella ordern. Inköpsorder med produkter som uppfyller anmodan kan konfigureras så att den person som har begärt att produkter måste också lämna en*bekräftelse på mottagandet*.  
+Inköpsorder som inkluderar fysiska produkter som vanligen kräver *ankomstregistrering* sker inom ett lager, och efter detta en *produkt inleverans* är registrerade för den aktuella ordern. Inköpsorder med produkter som uppfyller anmodan kan konfigureras så att den person som har begärt att produkter måste också lämna en *bekräftelse på mottagandet*.  
 
 Några inköpsorder med produkter som tjänster eller andra icke-fysiska produkter där inleverans i lager behövs inte. Produkter kan skapas som tjänster eller *upphandling kategorier* kan användas direkt på inköpsordern för sådana beställningar. Med dessa beställningar, redovisning av produktens mottagandet är ibland hoppade och ordern är fakturerad direkt eller alternativt produkt inleverans registrering görs på inköpsordern utan någon föregående ankomstregistrering.  
 
@@ -92,4 +92,4 @@ Fakturerade inköpsorder bokförs som skuld på leverantörens konto i leverant�
 
 ## <a name="vendor-performance"></a>Leverantörsprestanda
 
-Prestanda och granskning av inköp stöds genom *upphandlings- och leverantörsreskontrarapporter*, som inkluderar kostnadsanalys och leverantörens resultatanalys.
+Prestanda och granskning av inköp stöds genom *upphandlings- och leverantörsreskontrarapporter* , som inkluderar kostnadsanalys och leverantörens resultatanalys.

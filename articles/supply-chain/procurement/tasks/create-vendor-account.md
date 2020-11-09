@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: VendTable, LogisticsPostalAddressGrid, DirPartyLookup, LogisticsPostalAddress, SysLookupMultiSelectGrid
+ms.search.form: VendTable, LogisticsPostalAddressGrid, DirPartyLookup, LogisticsPostalAddress, SysLookupMultiSelectGrid, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aca23db2a0cc86a2c12ea74d3b1e491643b7efec
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: dd8cd2bb7b03c0415a5c5656f0e3ffada961973e
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207702"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017217"
 ---
 # <a name="create-a-vendor-account"></a>Skapa ett leverantörskonto
 
@@ -33,10 +33,10 @@ I den här proceduren visas hur du skapar ett leverantörskonto och lägger till
 ## <a name="create-a-vendor-account"></a>Skapa ett leverantörskonto
 1. Gå till **navigeringsfönstret > Moduler > Anskaffning och källa > Leverantörer > Alla leverantörer**.
 2. Klicka på **Ny**.
-3. I fältet **Leverantörskonto**, skriv ett värde.
+3. I fältet **Leverantörskonto** , skriv ett värde.
     - Värdet kan fyllas i automatiskt. Om det gör det kan du hoppa över det här steget.  
     - Du kan skapa leverantörskonton för en person eller en organisation. Detta påverkar vilka fält som är tillgängliga. I det här exemplet ska du skapa ett leverantörskonto för en organisation.   
-4. I fältet **Namn**anger eller väljer du ett värde. Om leverantören är en redan registrerad part i systemet kan du använda listrutan och välja honom/henne i det här fältet, så ärver det nya leverantörskontot den adress och kontaktinformation som redan är registrerad.
+4. I fältet **Namn** anger eller väljer du ett värde. Om leverantören är en redan registrerad part i systemet kan du använda listrutan och välja honom/henne i det här fältet, så ärver det nya leverantörskontot den adress och kontaktinformation som redan är registrerad.
 5. Ange eller välj ett värde i fältet **Grupp**. Leverantörsgruppen används för att gruppera leverantörer som har någon av följande parametrar gemensamt: Betalningsvillkor, kvittningsperiod, huvudbokskonton för lagerbokföring inklusive momsgruppen, standardhuvudbokskonton, produktfilterkoder och leveransprognoskonfiguration.
 6. Ange ett antal i fältet **Antal medarbetare**.
 7. Skriv ett värde i fältet **Organisationsnummer**.

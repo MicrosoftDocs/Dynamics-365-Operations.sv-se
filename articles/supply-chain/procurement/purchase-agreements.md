@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal
+ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 253177103435c765bfe45daffeae0c436617af21
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: ce6b76d92526b9a353bda2524bdfd0f7f4a5f68e
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803173"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018846"
 ---
 # <a name="purchase-agreements"></a>Inköpsavtal
 
@@ -93,7 +93,7 @@ Du kan bara välja ett inköpsavtal när du skapar en inköpsorder. Du kan inte 
 I vissa fall där inköpsorder skapas indirekt kan du kontrollera om Supply Chain Management automatiskt ska söka efter tillämpliga inköpsavtal. Du kan till exempel göra det när du kopplar automatiskt bekräftade inköpsorder eller skapar inköpsorder som baseras på försäljningsorder.
 
 ## <a name="matching-policy-on-purchase-agreements"></a>Matchningspolicy för inköpsavtal
-Du kan definiera en radmatchningspolicy i inköpsavtalets rubrik. Den här radmatchningspolicyn respekterar policyn för parametrar på leverantörsreskontra när fältet **Tillåt åsidosättning av matchningspolicy** på sidan **Parametrar för leverantörsreskontra** (på snabbfliken **Pris- och kvantitetsmatchning**) anges till **Högre än företagspolicy**. Dokument som refererar till inköpsavtalet kommer att använda radmatchningspolicyn som definieras på inköpsavtalshuvudet om inget annat har definierats för motsvarande artikel, artikel och leverantör, eller kategoriinköpspolicy.
+Du kan definiera en radmatchningspolicy i inköpsavtalets rubrik. Den här radmatchningspolicyn respekterar policyn för parametrar på leverantörsreskontra när fältet **Tillåt åsidosättning av matchningspolicy** på sidan **Parametrar för leverantörsreskontra** (på snabbfliken **Pris- och kvantitetsmatchning** ) anges till **Högre än företagspolicy**. Dokument som refererar till inköpsavtalet kommer att använda radmatchningspolicyn som definieras på inköpsavtalshuvudet om inget annat har definierats för motsvarande artikel, artikel och leverantör, eller kategoriinköpspolicy.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Inköpsavtal och koncernintern handel
 Koncerninterna handelsrelationer kan skapas mellan leverantörskonton och kundkonton som finns i olika juridiska personer. När en försäljnings- eller inköpsorder skapas för en av parterna skapas en koncernintern orderkedja. I orderkedjan skapas försäljningsordern och inköpsordern i de motsvarande juridiska personerna.  

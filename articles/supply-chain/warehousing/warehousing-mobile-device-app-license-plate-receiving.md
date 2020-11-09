@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 60e69fd62d6d15a1fcb17644ef4710b8764ce924
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 0d6894c0adb5671818e976dbb5116ecb947025d2
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651724"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016572"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-app"></a>Inleverans av ID-nummer via lagerställeappen
 
@@ -30,7 +31,7 @@ I det här avsnittet beskrivs hur du ställer in lagerställeappen så att du ka
 
 Du kan använda den här funktionen för att snabbt registrera inleveranser av ankommande lager som är relaterat till en leveransavisering (ASN). Systemet skapar automatiskt ett ASN när lagerstyrningsprocesser används för att leverera en överföringsorder. För inköpsorderprocessen kan ett ASN registreras manuellt, eller importeras automatiskt med hjälp av en inkommande ASN-dataenhetsprocess.
 
-ASN-data är kopplade till laster och försändelser via *förpackningsstrukturer*, där lastpallar (överordnade ID-nummerar) kan innehålla lådor (kapslade ID-nummer).
+ASN-data är kopplade till laster och försändelser via *förpackningsstrukturer* , där lastpallar (överordnade ID-nummerar) kan innehålla lådor (kapslade ID-nummer).
 
 > [!NOTE]
 > Om du vill minska antalet lagertransaktioner när förpackningsstrukturer som har kapslade ID-nummer används registrerar systemet den fysiska lagerbehållningen på den överordnade ID-numret. För att den fysiska lagerbehållningen ska kunna initieras från den överordnade ID-numret till de kapslade ID-nummerna, baserat på förpackningsstrukturens data, måste den mobila enheten tillhandahålla ett menyobjekt som baseras på processen för att skapa arbete *paketet för att skapa kapslade ID-nummer*.
@@ -49,7 +50,7 @@ När du registrerar inkommande artiklar med en arbetspolicy som skapar arbete, g
 
 ### <a name="work-policies-without-work-creation"></a>Arbetspolicyer utan arbetsskapande
 
-Du kan använda inleveransprocess för ID-nummer utan att skapa arbete. Om du definierar arbetspolicyer principer som har en arbetsordertyp av *Överföringsinleverans* och/eller *Inköpsorder* och du använder processen för *Inleverans av ID-nummer (och inlagrad)*, kommer följande två mobilapprocesser för lagerställe inte att skapa arbete. De registrerar i stället bara det ingående fysiska lagret på ID-numret vid inkommande inleverans.
+Du kan använda inleveransprocess för ID-nummer utan att skapa arbete. Om du definierar arbetspolicyer principer som har en arbetsordertyp av *Överföringsinleverans* och/eller *Inköpsorder* och du använder processen för *Inleverans av ID-nummer (och inlagrad)* , kommer följande två mobilapprocesser för lagerställe inte att skapa arbete. De registrerar i stället bara det ingående fysiska lagret på ID-numret vid inkommande inleverans.
 
 - *Inleverans av registreringsskylt*
 - *Plats och mottagning av registreringsskylt*
@@ -66,7 +67,7 @@ Det går att använda ett lagerställe som är tilldelat till en platsprofil äv
 
 ## <a name="add-mobile-device-menu-items-for-each-receiving-location-in-a-warehouse"></a>Lägg till menyartiklar för mobila enheter för varje mottagningsplats på ett lagerställe
 
-Funktionen *Förbättringar i Inleverans med ID-nummer* gör att du kan ta emot alla platser i ett lagerställe genom att lägga till platsspecifik mottagning av menyartiklar för ID-nummer (och inlagrad) till modulen för lagerhantering. Tidigare har systemet endast tagit emot den standardplats som har definierats för varje lagerställe. Om den här funktionen är aktiverad innehåller menyalternativen för mobila enheter för mottagning av skyltar (och inlagrad) ger du alternativet **Använd standarddata**, vilket gör att du kan välja en anpassad "till"-plats för varje menyalternativ. (Det här alternativet är redan tillgängligt för andra typer av menyalternativ.)
+Funktionen *Förbättringar i Inleverans med ID-nummer* gör att du kan ta emot alla platser i ett lagerställe genom att lägga till platsspecifik mottagning av menyartiklar för ID-nummer (och inlagrad) till modulen för lagerhantering. Tidigare har systemet endast tagit emot den standardplats som har definierats för varje lagerställe. Om den här funktionen är aktiverad innehåller menyalternativen för mobila enheter för mottagning av skyltar (och inlagrad) ger du alternativet **Använd standarddata** , vilket gör att du kan välja en anpassad "till"-plats för varje menyalternativ. (Det här alternativet är redan tillgängligt för andra typer av menyalternativ.)
 
 Om du vill göra den här funktionen tillgänglig i systemet måste du aktivera funktionen för att *Förbättringar i Inleverans med ID-nummer* [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 

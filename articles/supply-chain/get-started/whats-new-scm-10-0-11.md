@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: fa67cdc7ad07c1384c4a0bad453447a464adf144
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 52090645b0bb00399a88926c0b48a3cee8fcd114
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652093"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012308"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.11 (juli 2020)
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management förhandsversion 10.0.11. Den här versionen har ett versionsnummer för 10.0.464 och är tillgänglig enligt följande:
+Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management 10.0.11. Den här versionen har ett versionsnummer för 10.0.464 och är tillgänglig enligt följande:
 
 - **Förhandsversion:** april 2020
 - **Allmän tillgänglighet (självuppdatering):** maj 2020
@@ -39,10 +39,15 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](https://docs.microsoft.com/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
 
 - [Lagring av lagerbehållningsrapport](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
+
 - [Förbättringar av inleverans av ID-nummer med distributionslagerappen](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Mer information finns i [Inleverans av ID-nummer du via distributionslagerappen](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+
 - [Förbättringar av radreservationen för reservationsformuläret batchnummer](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Mer information finns i [Reservera samma batch för en försäljningsorder](../sales-marketing/reserve-same-batch-sales-order.md).
+
 - [Nya dataenheter för tillverkningsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+
 - [Överinleverans av lastkvantiteter](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Mer information finns i [Lagerhantering av inkommande laster för inköpsorder](../warehousing/inbound-load-handling.md).
+
 - [Rapportera som färdig för batchnummer från jobbkortsenheten](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - Mer information finns i [Rapportera som färdig från jobbkortenhet](../production-control/report-finished-job-device.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser

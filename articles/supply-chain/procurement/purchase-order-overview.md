@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4792cf982b9d5be3b30755483a5185a6d5a5a21
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cfb35d6db74f965911329dbd6215d1108149fa6c
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207935"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018777"
 ---
 # <a name="purchase-order-overview"></a>Översikt över inköpsorder
 
@@ -33,7 +33,7 @@ Den här artikeln innehåller allmän information om inköpsorder (PO) och länk
 
 En inköpsorder (IO) är ett dokument som representerar ett avtal med en leverantör om att köpa varor eller tjänster. Dokumentet kan också hålla reda på produktinleveranser som gjorts mot ordern och senare redovisning av leverantörsfakturor som leverantören debiterar mot ordern.  
 
-Sidan **Inköpsorder** innehåller en översikt över tillgängliga order och du kan ändra dessa order. När du öppnar en inköpsorder kan du välja vyn **Rubrik** som innehåller information som endast anges en gång för varje inköpsorder, till exempel information om leverantören. Alternativt kan du välja vyn **Rader** där du kan ändra orderrader. Vanligtvis ska du växla mellan dessa två vyer när du ändrar inköpsorder. Avgifter visas inte direkt på sidan **Inköpsorder**, men nås via menyerna i orderhuvudet och på orderraderna.  
+Sidan **Inköpsorder** innehåller en översikt över tillgängliga order och du kan ändra dessa order. När du öppnar en inköpsorder kan du välja vyn **Rubrik** som innehåller information som endast anges en gång för varje inköpsorder, till exempel information om leverantören. Alternativt kan du välja vyn **Rader** där du kan ändra orderrader. Vanligtvis ska du växla mellan dessa två vyer när du ändrar inköpsorder. Avgifter visas inte direkt på sidan **Inköpsorder** , men nås via menyerna i orderhuvudet och på orderraderna.  
 
 Det finns många rapporter där du kan visa information om inköpsorder, produktinleveranser och leverantörsfakturor. Rapporter finns i modulerna **Anskaffning och källa** och **Leverantörsreskontra**.  
 
@@ -73,7 +73,7 @@ Fältet **Dokumentera status** hjälper dig att snabbt kontrollera orderförlopp
 
 Fältet **Godkännandestatus** används när en inköpsorder genomgår en granskningsprocess eller ett arbetsflöde. Följande värden finns:
 
--   **Utkast**, **Under granskning** och **Avvisad** – Dessa statusvärden används enbart när ett arbetsflöde för godkännande används för inköpsordern.
+-   **Utkast** , **Under granskning** och **Avvisad** – Dessa statusvärden används enbart när ett arbetsflöde för godkännande används för inköpsordern.
 -   **Godkänd** – Den här statusen tilldelas order med slutfört arbetsflöde för godkännande. Order som har skapats utan ett arbetsflöde för godkännande får statusen **Godkänd** direkt.
 -   **Under extern granskning** – Den här statusen används i scenarier där en inköpsorderförfrågan skickas till leverantören, så att leverantören kan bekräfta villkoren för inköpsordern. Denna status används också i processen som inleds med åtgärden **Bekräftelsebegäran**. För den här processen ombeds leverantören bekräfta villkoren för inköpsordern genom att ansluta systemet och registrera om ordern ska bekräftas eller avvisas.
 -   **Bekräftad** – Den här statusen tilldelas när ordern har bekräftats. Denna status är vanligtvis den sista godkännandestatusen som tilldelas till en order.

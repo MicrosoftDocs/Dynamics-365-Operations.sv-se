@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: dce4b6310e2f6d31a115302efa7fbc132799e48f
-ms.sourcegitcommit: 4ba10abe5be8a21b95370cd970a622e954970984
+ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829295"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997684"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>Ställ in mappningen för fälten för försäljningsorderstatus
 
@@ -45,7 +44,7 @@ I Supply Chain Management visar två fält status för försäljningsordern. De 
 - Fakturerat
 - Avbröts
 
-**Dokumentstatus** uppräkningen anger det senaste dokument som skapades för ordern. Om t.ex. en order är bekräftad är dokumentet en bekräftelse på försäljningsorder. Om en försäljningsorder är delvis fakturerad och den återstående raden bekräftas, kommer dokumentstatusen att ha kvar **faktura**, eftersom fakturan genereras senare i processen.
+**Dokumentstatus** uppräkningen anger det senaste dokument som skapades för ordern. Om t.ex. en order är bekräftad är dokumentet en bekräftelse på försäljningsorder. Om en försäljningsorder är delvis fakturerad och den återstående raden bekräftas, kommer dokumentstatusen att ha kvar **faktura** , eftersom fakturan genereras senare i processen.
 
 **Dokumentstatus** uppräkningen har följande värden:
 
@@ -130,7 +129,7 @@ Så här aktiverar du attribut **IsSOPIntegrationEnabled** följ dessa steg.
 
 Så här aktiverar du attribut **isIntegrationUser** följ dessa steg.
 
-1. I Sales, gå till **Inställning \> Anpassning \> Anpassa systemet**, välj **Användarentitet** och öppna sedan **Formulär \> Användare**.
+1. I Sales, gå till **Inställning \> Anpassning \> Anpassa systemet** , välj **Användarentitet** och öppna sedan **Formulär \> Användare**.
 
     ![Öppna användarformuläret](media/sales-map-user.png)
 

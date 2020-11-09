@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchVendorPortalRequests
+ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b263b7c4f44871f81e8dd753f702327893f00d86
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e451b419da59817ccf397fbb231a1cd112fd45ca
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207150"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018455"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeta med leverantörer genom leverantörsportalen
 

@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 22e5333859d37ad33f5806d63fc874b1b5a52831
-ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
+ms.openlocfilehash: 46095e4ec21aac7cbf98dc1265ea7c8de27148ab
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3967344"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015053"
 ---
 # <a name="feature-management-overview"></a>Översikt över funktionshantering
 
@@ -92,7 +92,7 @@ Ibland levereras en kritisk funktion som måste aktiveras automatiskt när du g�
 
 Som standard är alla funktioner som läggs till i miljön inaktiverade. Du kan aktivera alla funktioner genom att välja knappen **Aktivera alla**. 
 
-När du väljer **aktivera alla**visas ett alternativ där du behöver ange följande information:
+När du väljer **aktivera alla** visas ett alternativ där du behöver ange följande information:
 - En lista över alla funktioner som kräver bekräftelse innan de kan aktiveras. Om du vill aktivera funktionerna i listan väljer du **Ja** för knappen **Aktivera funktioner som kräver bekräftelse**.
 - En lista över alla funktioner som inte kan aktiveras visas. Dessa funktioner kommer inte att aktiveras.
 
@@ -130,7 +130,7 @@ Med hjälp av en dataenhet som kallas **funktionshantering** kan du exportera fu
 
 I följande exempel beskrivs vad som händer när du använder entiteten **funktionshantering** för att importera data.
 
-- Om **du ändrar värdet i det aktiverade** fältet till **ja**, aktive ras funktionen, och fältet **aktiverings datum** sätts till aktuellt datum.
+- Om **du ändrar värdet i det aktiverade** fältet till **ja** , aktive ras funktionen, och fältet **aktiverings datum** sätts till aktuellt datum.
 - Om du ändrar värdet **Aktiverad** till **Nej** eller lämnar fältet **EnableDate** tomt inaktiveras funktionen och fältet **Aktivera datum**. Du kan inte inaktivera en obligatorisk funktion eller en funktion som inte kan inaktiveras när den är aktiverad.
 - Om du ändrar värdet i fältet **EnableDate** till ett framtida datum, tidsplaneras funktionen för det datumet.
 - Om du ändrar värdet i fältet **Aktiverad** till **Ja** och ändrar värdet i fältet **EnableDate** till ett framtida datum tidsplaneras funktionen för det datumet. 
@@ -183,7 +183,9 @@ Ja, om en funktion påverkar en miljö som inte har någon funktionell effekt ka
 ### <a name="how-can-feature-enablement-be-checked-in-code"></a>Hur kan funktionsaktivering kontrolleras i kod?
 Använd metoden **isFeatureEnabled** i klassen **FeatureStateProvider** och skicka den till en förekomst av funktionsklassen. Exempel: 
 
-    if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
+```xpp
+if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
+```
 
 ### <a name="how-can-feature-enablement-be-checked-in-metadata"></a>Hur kan funktionsaktivering kontrolleras i metadata?
 Egenskapen **FeatureClass** kan användas för att ange att vissa metadata är kopplade till en funktion. Klass namnet som används för funktionen ska användas, t.ex. **BatchContentionPreventionFeature**. Dessa metadata visas bara i den funktionen. Egenskapen **FeatureClass** är tillgänglig på menyer, menyalternativ, uppräkningsvärden och tabell/visningsfält.
@@ -191,9 +193,11 @@ Egenskapen **FeatureClass** kan användas för att ange att vissa metadata är k
 ### <a name="what-is-a-feature-class"></a>Vad är en funktionsklass?
 Funktioner i funktionshantering definieras som *funktionsklasser*. En funktionsklass **implementerar IFeatureMetadata** och använder attributet funktionsklass för att identifiera sig själv för arbetsytan funktionshantering. Det finns många exempel på tillgängliga funktionsklasser som kan kontrolleras för aktivering i kod med hjälp av API **FeatureStateProvider** och i metadata med egenskapen **FeatureClass**. Exempel: 
 
-    [ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
-    internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
-    
+```xpp
+[ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
+internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
+```
+
 ### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Vad är IFeatureLifecycle implementerad av vissa funktionsklasser?
 IFeatureLifecycle är en Microsoft-intern mekanism för att indikera livscykelfasen för funktionen. Funktioner kan vara:
 - PrivatePreview - en förhandsversion måste vara synlig.

@@ -3,7 +3,7 @@ title: Visa resultat från automatisering av leverantörsfakturor (förhandsvers
 description: I det här avsnittet beskrivs hur du visar status för leverantörsfakturor som finns i den automatiska sändningen till arbetsflödesprocessen.
 author: abruer
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 65e7929e612c8465f26a2f3bc7df6f13620e5b4e
-ms.sourcegitcommit: 3387595e41fb03e98bb437588f6de78794ae383f
+ms.openlocfilehash: ec49a621e24b6373532497b499e8b9d45c9bed14
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "3930953"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022623"
 ---
-# <a name="view-vendor-invoice-automation-results-preview"></a>Visa resultat från automatisering av leverantörsfakturor (förhandsversion)
+# <a name="view-vendor-invoice-automation-results"></a>Visa resultat från automatisering av leverantörsfakturor
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 I det här avsnittet beskrivs hur du visar status för leverantörsfakturor som finns i den automatiska sändningen till arbetsflödesprocessen. Information om automatiseringshistoriken underhålls för varje importerad leverantörsfaktura. Beroende på vilka affärsprocesser du har automatiserat visar sidan **Pågående leverantörsfakturor** värdena **Automatisk mottagningsstatus** och **Automatisk överföring till statusvärden för arbetsflöden**. Du kan visa detaljerna och göra en plan för att fokusera på fakturorna som misslyckades med ett automatiserat steg. När du har korrigerat problemet kan du sedan återuppta den automatiserade processen för den importerade fakturan.
 

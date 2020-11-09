@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSWorkCluster, WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: b7ac243a04309a41ab0e06c1b2d4843ae8ac0e22
-ms.sourcegitcommit: 7c32e4739c07d825a8562564ea9e78922db2ce38
+ms.openlocfilehash: 0838405bcb5ee0d8e582093fbbd69553228cb2b6
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "3406391"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016043"
 ---
 # <a name="system-directed-cluster-picking"></a>Systemdirigerad klusterplockning
 
@@ -71,7 +71,7 @@ Klusterprofiler styr hur systemet skapar varje kluster. Om det krävs olika klus
     - **Generera kluster-ID** – Välj **Ja**. Det här alternativet avgör om kluster-ID skapas automatiskt av systemet eller om användaren ska skapa den i början av plockning. 
     - **Aktivera befattningar** – Välj **Ja**. Det här alternativet avgör om positionsnamnen genereras automatiskt baserat på inställningen av positionsnamn. Om den här alternativet är inställt på **Nej** används registreringsskylt-ID för positionen.
     - **Antal positioner:** – Välj **2**. Det här fältet bestämmer det maximala antalet positioner som klustret kan ha (det vill, det maximala antalet rutor, laster och så vidare).
-    - **Positionsnamn:** – Välj **numeriskt**, så att befattningar namnges med hjälp av kontinuerliga tal. Om du väljer **alfabetiskt** namnges positionerna i alfabetisk ordning.
+    - **Positionsnamn:** – Välj **numeriskt** , så att befattningar namnges med hjälp av kontinuerliga tal. Om du väljer **alfabetiskt** namnges positionerna i alfabetisk ordning.
     - **Bryt kluster på:** – Välj **placera**. Det här fältet avgör när klustret bryts. 
     - **Sortera verifieringstyp:** – Välj **positionsskanning**. Det här fältet bestämmer om sätta i position-steget verifieras.
         
@@ -131,7 +131,7 @@ Gör så här om du vill skapa ett nytt menyalternativ för mobila enheter för 
 1. Bläddra tills du hittar **SD-kluster**.
 1. Välj **SD-kluster** kommer den pil som pekar på listan **Menystruktur** kommer att aktiveras.
 1. Välj **pilknappen** om du vill flytta menyalternativet **SD-kluster** till den **utgående** menystrukturen.
-1. Välj **SD-kluster** från listan **Menystruktur** och välj sedan **UPP**- eller **NED**-pilarna för att flytta menyalternativet till önskad plats på menyn för den mobila enheten.
+1. Välj **SD-kluster** från listan **Menystruktur** och välj sedan **UPP** - eller **NED** -pilarna för att flytta menyalternativet till önskad plats på menyn för den mobila enheten.
 
 ## <a name="scenario"></a>Scenario
 
@@ -142,10 +142,10 @@ Innan du kan ställa in systemstyrd klusterplockning måste du skapa kvalificera
 1. Gå till **Försäljning och marknadsföring > Försäljningsorder > Alla försäljningsorder**.
 1. Välj **Ny** i åtgärdsfönstret för att skapa den första försäljningsordern.
     - Menyn **Skapa försäljningsorder** öppnas och ange följande information:
-        - Gå till snabbfliken **Kund**, ange **Kundkonto** - **US-004**.
+        - Gå till snabbfliken **Kund** , ange **Kundkonto** - **US-004**.
         - Gå till snabbfliken **Allmänt** och ange **Lagerställe** - **62**.
         - Välj **OK** för att stänga menyn och skapa försäljningsordern.
-    - På snabbfliken **försäljningsorderrader**, välj **Lägg till rad** om en ny rad inte läggs till automatiskt och ange följande:
+    - På snabbfliken **försäljningsorderrader** , välj **Lägg till rad** om en ny rad inte läggs till automatiskt och ange följande:
         - **Artikelnummer** - A0001
         - **Kvantitet** - 1
         - Välj **Lägg till rad** för att lägga till en andra rad.
@@ -153,16 +153,16 @@ Innan du kan ställa in systemstyrd klusterplockning måste du skapa kvalificera
         - **Kvantitet** - 3
     - Reservera lager för båda raderna som du just har skapat.
         - Markera **rad 1**.
-        - I åtgärdsfönstret **Försäljningsorderrader**, välj **Lager** och sedan **Reservation** från listan.
-        - I formuläret **Reservation**, välj **Reservera parti** för att reservera lager.
+        - I åtgärdsfönstret **Försäljningsorderrader** , välj **Lager** och sedan **Reservation** från listan.
+        - I formuläret **Reservation** , välj **Reservera parti** för att reservera lager.
         - Stäng formuläret **Reservation** när reservationen är klar.
         - Upprepa dessa steg för att reservera lager för **rad 2**.
 1. Välj **Ny** i åtgärdsfönstret för att skapa den andra försäljningsordern
     - Menyn **Skapa försäljningsorder** öppnas och ange följande information:
-        - Gå till snabbfliken **Kund**, ange **Kundkonto** - **US-005**.
+        - Gå till snabbfliken **Kund** , ange **Kundkonto** - **US-005**.
         - Gå till snabbfliken **Allmänt** och ange **Lagerställe** - **62**.
         - Välj **OK** för att stänga menyn och skapa försäljningsordern
-    - På snabbfliken **försäljningsorderrader**, välj **Lägg till rad** om en ny rad inte läggs till automatiskt och ange följande information:
+    - På snabbfliken **försäljningsorderrader** , välj **Lägg till rad** om en ny rad inte läggs till automatiskt och ange följande information:
         - **Artikelnummer** - A0001
         - **Kvantitet** - 4
         - Välj **Lägg till rad** för att lägga till en andra rad.
@@ -170,28 +170,28 @@ Innan du kan ställa in systemstyrd klusterplockning måste du skapa kvalificera
         - **Kvantitet** - 2
     - Reservera lager för båda raderna som du just har skapat.
         - Markera **rad 1**.
-        - I åtgärdsfönstret **Försäljningsorderrader**, välj **Lager** och sedan **Reservation** från listan.
-        - I formuläret **Reservation**, välj **Reservera parti** för att reservera lager.
+        - I åtgärdsfönstret **Försäljningsorderrader** , välj **Lager** och sedan **Reservation** från listan.
+        - I formuläret **Reservation** , välj **Reservera parti** för att reservera lager.
         - Stäng formuläret **Reservation** när reservationen är klar.
         - Upprepa dessa steg för att reservera lager för **rad 2**.
     - Stäng försäljningsordern och returnera till listsidan **Alla försäljningsorder**.
 1. Hitta de två försäljningsorder som du just skapade (du kanske måste uppdatera sidan). I registret markerar du både försäljningsorder med hjälp av avsnittets kryssruta.
-    - I åtgärdsfönstret **Alla försäljningsorder**, välj fliken **lagerställe**.
+    - I åtgärdsfönstret **Alla försäljningsorder** , välj fliken **lagerställe**.
     - I gruppen **Åtgärder** väljer du **Frisläpp till lager** för att frisläppa både försäljningsorder till lagerstället.
 1. När frisläppningen till lagerställeprocessen har slutförts visas ett informationsmeddelande.
     - Leveranser skapas för varje försäljningsorder.
     - En våg skapas och båda utleveranserna kommer att tilldelas vågen. Gör en notering av **Påfyllnads-ID**.
 1. Gå till **lagerstyrning > utgående påfyllningar > leveranspåfyllningar > alla påfyllningar**.
     - I listan **Alla påfyllningar** hitta och välj det **Påfyllnings-ID** som du skapade i föregående steg.
-    - I åtgärdsfönstret, klicka på fliken **Påfyllnad**,
-    - I gruppen **Påfyllnad**, välj **Bearbeta** om du vill bearbeta påfyllnad och skapa **Arbete**.
+    - I åtgärdsfönstret, klicka på fliken **Påfyllnad** ,
+    - I gruppen **Påfyllnad** , välj **Bearbeta** om du vill bearbeta påfyllnad och skapa **Arbete**.
     - Informationsmeddelanden genereras när bearbetningen har slutförts, vilket anger att arbetet har skapats och att påfyllnaden har bokförts.
-1. **Valfritt**: Gå till **Lagerstyrning > Arbete > Arbetsuppgifter** för att visa det arbete som har skapats. Två olika arbets-ID skapas. Varje arbets-ID har två plockningsrader.
+1. **Valfritt** : Gå till **Lagerstyrning > Arbete > Arbetsuppgifter** för att visa det arbete som har skapats. Två olika arbets-ID skapas. Varje arbets-ID har två plockningsrader.
 
 ### <a name="run-the-mobile-device-flow"></a>Kör det mobila enhetsflödet
 
 1. Logga in på den mobila enheten för en användare i lager ställe **62**.
-1. I **huvudmenyn**, välj **utgående**.
+1. I **huvudmenyn** , välj **utgående**.
 1. I menyn **utgående** välj **SD-kluster** för att initiera plockningen.
     - Ett kluster skapas och de två arbets-ID:n som du skapade tidigare är kopplade. Om du har skapat fler än två arbets-ID:n läggs bara de första två till i klustret. Observera att arbets-ID:n läggs till i klustret i stigande ordning, som du angav i frågeinstallationen.
 

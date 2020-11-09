@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (oktober 2020)
                       href: get-started/whats-new-commerce-10-0-13.md
-                    - name: Commerce 10.0.12 (augusti 2020)
-                      href: get-started/whats-new-commerce-10-0-12.md
                 - name: Borttagna eller utfasade funktioner
                   items:
                     - name: Borttagna eller utfasade funktioner i Finance and Operations
@@ -262,9 +260,9 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
                 - name: Miljöplanering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
-                - name: Förbereda publicering
+                - name: Förbereda Go live
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
-                - name: Frågor och svar om publicering
+                - name: Frågor och svar om Go live
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
                 - name: Skicka en serviceförfrågan
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
@@ -1040,6 +1038,8 @@
                       href: add-breadcrumb.md
                     - name: Modul för navigeringsmeny
                       href: nav-menu-module.md
+                    - name: Modul för webbplatsväljare
+                      href: site-selector.md
                 - name: Efterlevnadsmoduler
                   items:
                     - name: Modul för samtycke till cookies
@@ -1986,6 +1986,8 @@
                       href: e-commerce-extensibility/cli-command-reference.md
                 - name: En moduls uppbyggnad
                   items:
+                    - name: Översikt över moduler
+                      href: e-commerce-extensibility/modules-overview.md
                     - name: Definitionsfil för modul
                       href: e-commerce-extensibility/module-definition-file.md
                     - name: 'Modul, React-komponentfil'
@@ -2034,12 +2036,18 @@
                       href: e-commerce-extensibility/cookie-api-overview.md
                     - name: Översikt över interaktiva komponenter
                       href: e-commerce-extensibility/interactive-components.md
-                    - name: Globaliseringsmoduler med hjälp av klassen CultureInfoFormatter
+                    - name: Skissa på inloggat tillstånd under lokal utveckling
+                      href: e-commerce-extensibility/mock-sign-in.md
+                    - name: Globalisera moduler med hjälp av klassen CultureInfoFormatter
                       href: e-commerce-extensibility/globalize-modules.md
+                    - name: Konfigurera Azure Key Vault för säker nyckelhantering
+                      href: e-commerce-extensibility/set-up-key-vault.md
                 - name: Utveckla dataåtgärder
                   items:
                     - name: Översikt över dataåtgärder
                       href: e-commerce-extensibility/data-actions.md
+                    - name: Cachealternativ för dataåtgärd
+                      href: e-commerce-extensibility/data-action-cache.md
                     - name: Testa dataåtgärder med modeller
                       href: e-commerce-extensibility/test-data-action-mocks.md
                     - name: Dataåtgärder vid sidhämtning
@@ -2080,6 +2088,8 @@
                       href: e-commerce-extensibility/theme-style-presets.md
                     - name: Utöka ett tema för att lägga till modultillägg
                       href: e-commerce-extensibility/theme-module-extensions.md
+                    - name: Åsidosätta en modulbibliotekskomponent i ett tema
+                      href: e-commerce-extensibility/override-theme-component.md
                     - name: Utöka ett tema från ett bastema
                       href: e-commerce-extensibility/extend-theme.md
                     - name: Lägga till anpassade resurser i din anpassningskod
@@ -2102,6 +2112,10 @@
                       href: e-commerce-extensibility/package-deploy.md
                     - name: Uppdateringar av SDK och modulbibliotek
                       href: e-commerce-extensibility/sdk-updates.md
+                - name: Regelverk
+                  items:
+                    - name: Regelverk för Dynamics 365 Commerce-utveckling
+                      href: e-commerce-extensibility/best-practices-dev.md
             - name: SDK för Retail
               items:
                 - name: SDK för Retail-arkitektur
@@ -2197,7 +2211,7 @@
                 - name: Retail Typescript- och C#-proxyservrar
                   href: dev-itpro/typescript-proxy-retail-pos.md
                 - name: 'Använda API:er för Retail Server i externa appar'
-                  href: dev-itpro/consume-retail-server-api
+                  href: dev-itpro/consume-retail-server-api.md
             - name: Utbyggbarhet av Commerce Runtime (CRT)
               items:
                 - name: CRT-arkitektur och konfiguration

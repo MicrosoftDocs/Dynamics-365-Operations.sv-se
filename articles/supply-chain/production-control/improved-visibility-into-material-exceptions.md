@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 37d0841b656153255b9230a60229d30064b81fbe
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0c17997d9dd04559fb7022fe39bb2b961c1cfc4a
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212628"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016595"
 ---
 # <a name="visibility-into-material-exceptions"></a>Insyn i materialundantag
 
@@ -34,7 +34,7 @@ I arbetsytan **Produktionsgolvsledning** ger tre paneler bättre insyn i undanta
 - Obearbetade påfyllnader behöver åtgärdas
 - Öppet lagerarbete som behöver åtgärdas
 
-För alla tre paneler jämförs datumet för råmaterial av strukturlistans rader och formelraderna mot arbetsytans datum samt filtren för **Produktionsenhet**, **Resursgrupp**, och **Resurs** som är inställda på menyn **Konfigurera min arbetsyta**. Som standard är arbetsytans datum inställt på det aktuella datumet, men du kan justera det.
+För alla tre paneler jämförs datumet för råmaterial av strukturlistans rader och formelraderna mot arbetsytans datum samt filtren för **Produktionsenhet** , **Resursgrupp** , och **Resurs** som är inställda på menyn **Konfigurera min arbetsyta**. Som standard är arbetsytans datum inställt på det aktuella datumet, men du kan justera det.
 
 En outgiven strukturlisterad eller formelrad kräver åtgärd om råmaterialdatumet för raden är samma som eller tidigare än datumet för arbetsytan och om de uppfyller de villkor som anges av filtren i arbetsytan.
 

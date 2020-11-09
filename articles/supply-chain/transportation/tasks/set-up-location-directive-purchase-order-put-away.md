@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSInventFixedLocation
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -16,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c14fb92103fdd3c32ebc287a74a5dc4f4882b0e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b07cd8af0fd619a71d3fe5188f41d0a0ed954f93
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981955"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016503"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Ställ in ett platsdirektiv för artikelinförsel av inköpsorder
 
@@ -81,7 +82,7 @@ Det här avsnittet innehåller information om hur du ställer in ett enkelt plat
 ## <a name="edit-the-query-for-directive-action-line"></a>Redigera frågan för direktivåtgärdsrad
 1. Välj **Redigera fråga**.
 2. Markera **Lägg till**.
-3. I fältet **Fält**, ange `location profile ID`. I det här exemplet ska du begränsa de möjliga platserna med hjälp av ett platsprofil-ID.  
+3. I fältet **Fält** , ange `location profile ID`. I det här exemplet ska du begränsa de möjliga platserna med hjälp av ett platsprofil-ID.  
 4. I fältet **Kriterier** skriver du ett värde.
 5. Välj **OK**. Du kan fortsätta att lägga till direktivrader och direktivåtgärder tills du har täckt alla möjliga scenarier i ditt lagerställe.  
 

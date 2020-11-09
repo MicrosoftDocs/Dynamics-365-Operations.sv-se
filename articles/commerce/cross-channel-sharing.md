@@ -3,7 +3,7 @@ title: Aktivera och använda delning av flera kanaler
 description: I det här avsnittet beskrivs hur du aktiverar och använder delningsfunktionen för flera kanaler i Microsoft Dynamics 365 Commerce webbplatsskaparen.
 author: psimolin
 manager: annbe
-ms.date: 10/09/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5dad866250bc57a9b158ee73948da509ecccd52c
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
+ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974089"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4019528"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Aktivera och använda delning av flera kanaler
 
@@ -55,7 +55,7 @@ Gör så här om du vill aktivera delning mellan flera kanaler i Commerce webbpl
 
     ![Alternativet för flera kanaler anges till på Commerce webbplatsskaparen](./media/enabling-cross-channel-sharing.png)
 
-När du har aktiverat delning av flera kanaler visas information om flera kanaler i avsnittet **kanaler** på **webbplatsinställningar \> funktioner**, som exemplet i bilden nedan visar.
+När du har aktiverat delning av flera kanaler visas information om flera kanaler i avsnittet **kanaler** på **webbplatsinställningar \> funktioner** , som exemplet i bilden nedan visar.
 
 ![Information om kanaler visas efter att delning mellan kanaler har aktiverats](./media/channels-cross-channel.png)
 
@@ -72,10 +72,10 @@ Du kan skapa och använda innehåll över kanaler på flera sätt. Du kan till e
 För att skapa fragment i flera kanaler i Commerce webbplatsskaparen:
 
 1. Gå till **Fragment** och välj **ny** för att skapa ett nytt fragment.
-1. I dialogrutan **Nytt sidfragment** välj modulen **Kampanjbanderoll** och sedan under **Sidfragmentets namn** ange ett namn (till exempel **Banderoll i flera kanaler**). Välj sedan **OK**.
+1. I dialogrutan **Nytt fragment** välj modulen **Kampanjbanderoll** och sedan under **Fragmentets namn** ange ett namn (till exempel **Banderoll i flera kanaler** ). Välj sedan **OK**.
 1. I egenskapsfönstret i modulen **Kampanjbanderoll** välj **Lägg till meddelande** och välj sedan **Meddelande**.
-1. I dialogrutan **Meddelande** under **Text**, ange **Flera kanaler** och välj **OK**. 
-1. Välj **Spara**, välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
+1. I dialogrutan **Meddelande** under **Text** , ange **Flera kanaler** och välj **OK**. 
+1. Välj **Spara** , välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 
 Det här fragmentet kan användas på flera olika kanaler eller specifika sidor som skapas på alla platskanaler.
 
@@ -87,9 +87,9 @@ Skapa en sida för flera kanaler i Commerce webbplatsskaparen där innehåll med
 
 1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
 1. I dialogrutan **Välj en mall** väljer du en mall, t.ex. **Marknadsföring**.
-1. Under **Sidnamn** anger du ett namn för sidan (till exempel **Sida med flera kanaler**).
-1. Under **Sid-URL**, anger du en sid-URL (till exempel **examplepage**) och väljer sedan **OK**.
-1. I platsen för nya sidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till fragment**.
+1. Under **Sidnamn** anger du ett namn för sidan (till exempel **Sida med flera kanaler** ).
+1. Under **Sid-URL** , anger du en sid-URL (till exempel **examplepage** ) och väljer sedan **OK**.
+1. I platsen för nya sidan väljer du **Huvud** , markerar ellipsknappen ( **...** ) och väljer sedan **Lägg till fragment**.
 1. I dialogrutan **Lägg till fragment** väljer du det fragment med flera kanaler som du skapade tidigare med en erbjudande banderoll och väljer sedan **OK**.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan. Du bör se kampanjens banderoll med texten "flera kanaler".
 1. Välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
@@ -100,12 +100,12 @@ Genom att använda innehåll i flera kanaler på kanalspecifika sidor kan du ska
 
 Skapa en kanalspecifik sida i Commerce webbplatsskaparen där innehåll med flera kanaler används genom att följa stegen nedan.
 
-1. Från en viss kanal, t.ex. **Fabrikam utökade online-butik**, gå till **Sidor** och välj sedan **Ny** för att skapa en ny sida.
+1. Från en viss kanal, t.ex. **Fabrikam utökade online-butik** , gå till **Sidor** och välj sedan **Ny** för att skapa en ny sida.
 1. I dialogrutan **Välj en mall** väljer du en mall, t.ex. **Marknadsföring**.
-1. Under **Sidnamn** anger du ett namn för sidan (till exempel **Kanalspecifik sida**).
-1. Under **Sid-URL**, anger du en sid-URL (till exempel **channelspecificpage**) och väljer sedan **OK**.
-1. I platsen för nya sidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till fragment**.
-1. I dialogrutan **Lägg till fragment** under **Kanal**, välj **Onlinebutik i flera kanaler**. Fragment mellan kanaler som du skapade tidigare ska visas i listan. Välj det och välj sedan **OK**.
+1. Under **Sidnamn** anger du ett namn för sidan (till exempel **Kanalspecifik sida** ).
+1. Under **Sid-URL** , anger du en sid-URL (till exempel **channelspecificpage** ) och väljer sedan **OK**.
+1. I platsen för nya sidan väljer du **Huvud** , markerar ellipsknappen ( **...** ) och väljer sedan **Lägg till fragment**.
+1. I dialogrutan **Lägg till fragment** under **Kanal** , välj **Onlinebutik i flera kanaler**. Fragment mellan kanaler som du skapade tidigare ska visas i listan. Välj det och välj sedan **OK**.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan. Du bör se kampanjens banderoll med texten "flera kanaler".
 1. Välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 
@@ -119,10 +119,10 @@ Följ dessa steg för att skapa en kanalspecifik version av en sida mellan kanal
 1. Öppna sidan för den sida mellan kanaler som du skapade tidigare.
 1. I fältet **Kanal** högst upp till höger väljer du den kanal som ska ha specifikt innehåll. Sidredigeraren visar ett meddelande där du uppmanas att skapa en ny variant av sidan.
 1. Välj **skapa variant av sidan**.
-1. I platsen **Huvud** i sidvariant markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul**, välj modulen **Kampanjbanderoll** och klicka sedan på **OK**.
+1. I platsen **Huvud** i sidvariant markerar du ellipsknappen ( **...** ) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul** , välj modulen **Kampanjbanderoll** och klicka sedan på **OK**.
 1. I egenskapsfönstret i modulen **Kampanjbanderoll** välj **Lägg till meddelande** och välj sedan **Meddelande**.
-1. I dialogrutan **Meddelande** under **Text**, ange **Kanalspecifik** och välj **OK**.
+1. I dialogrutan **Meddelande** under **Text** , ange **Kanalspecifik** och välj **OK**.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan. Du bör se kampanjens banderoll med texten "Kanalspecifik".
 1. Välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 
