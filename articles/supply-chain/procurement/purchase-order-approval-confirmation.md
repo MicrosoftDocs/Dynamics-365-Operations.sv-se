@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6b331b7e7725b3dd284deb02e59fcf2d699822c4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e3879079e233a881ea0adc1f5e2ba39ab70b372d
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208004"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018823"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Godkänn och bekräfta inköpsorder
 
@@ -35,7 +35,7 @@ Det här avsnittet innehåller en beskrivning av de statusar en inköpsorder (IO
 När du har skapat en inköpsorder (IO) kan den behöva genomgå en godkännandeprocess. När leverantören har godkänt ordern sätts statusen för inköpsordern till **Bekräftad**.
 
 ## <a name="approval-of-purchase-orders"></a>Godkänna inköpsorder
-Inköpsorder som inte använder ändringshantering har statusen **Godkänd** så fort den har skapats medan inköpsorder som använder ändringshantering har statusen **Utkast** när den skapas. En inköpsorder som har skapats via en bekräftelse av en planerad order från huvudplaneringen får alltid statusen **Godkänd**, oberoende av inställningarna för ändringshanteringen. En inköpsorder kan bara skapa lagertransaktioner när den har statusen **Godkänd**. Av den anledningen visas inte lagret som tillgängligt för reservation eller märkning förrän ordern har accepterats.
+Inköpsorder som inte använder ändringshantering har statusen **Godkänd** så fort den har skapats medan inköpsorder som använder ändringshantering har statusen **Utkast** när den skapas. En inköpsorder som har skapats via en bekräftelse av en planerad order från huvudplaneringen får alltid statusen **Godkänd** , oberoende av inställningarna för ändringshanteringen. En inköpsorder kan bara skapa lagertransaktioner när den har statusen **Godkänd**. Av den anledningen visas inte lagret som tillgängligt för reservation eller märkning förrän ordern har accepterats.
 
 Du kan aktivera ändringshantering för inköpsorder genom att ställa in alternativet **Aktivera ändringshantering** på sidan **Anskaffnings- och källparametrar**. När ändringshantering är aktiverad måste inköpsorder genomgå ett godkännandearbetsflöde efter att de har slutförts. Supply Chain Management har en redigerare för arbetsflödesprocesser i vilken du kan definiera ett arbetsflöde som representerar din godkännandeprocess. Arbetsflödet kan omfatta regler för automatiskt godkännande, regler som fastställer vem som ska godkänna särskilda inköpsorder och regler för att påskynda ett arbetsflöde som har väntat på ett godkännande under en längre tid. Du kan aktivera processen för ändringshantering för alla leverantörer eller för vissa leverantörer. Du kan även ställa in processen så att den kan åsidosättas för enskilda inköpsorder.
 

@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 914400d2e8acff0bfa762708ba421812c31be32b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 4576e442c2f270932e20472a6c340dcac6d45246
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982099"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018708"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Skapa en inköpsorder från en försäljningsorder
 
@@ -45,7 +45,7 @@ Proceduren visar hur du kan skapa en inköpsorder som baseras på en försäljni
 12. Klicka på länken på den valda raden i listan.
 13. Ange ett nummer i fältet **Kvantitet**.
 14. Klicka på **Spara**.
-15. I **åtgärdsrutan**, klicka på **Försäljningsorder**.
+15. I **åtgärdsrutan** , klicka på **Försäljningsorder**.
 16. Klicka på **inköpsordern**. Sidan **Skapa inköpsorder** visar alla öppna försäljningsorderrader som har kopierats från försäljningsorder. Du kan granska orderinformation och om det behövs, även ändra valda detaljer som inköpkvantitet och prissättningsvillkor innan du skapar inköpen. 
 17. Välj **Inkludera alla alternativ**.
     - Om du vill skapa inköpsorder för bara en delmängd av försäljningsorderraderna väljer du dessa separat.  
@@ -63,7 +63,7 @@ Proceduren visar hur du kan skapa en inköpsorder som baseras på en försäljni
 ## <a name="review-purchase-orders-created-from-sales-orders"></a>Granska inköpsorder som har skapats av försäljningsorder
 1. I **åtgärdsrutan** klickar du på **Allmänt**.
 2. Klicka på **relaterade order**. Sidan **Relaterade order** listar alla de order som har skapats från försäljningsorder. I det här exemplet finns det två inköpsorder som har skapats för två olika leverantörer. 
-3. Klicka för att följa länk i fältet **Inköpsorder**. Varje inköpsorderrad har kopplats till försäljningsorderraden som ledde till köpet. Relationen till försäljningsorder anges på **Produktflik** på snabbfliken **Raddetaljer** i fälten **referenstyp**, **referensnummer** och **referensparti**.  
+3. Klicka för att följa länk i fältet **Inköpsorder**. Varje inköpsorderrad har kopplats till försäljningsorderraden som ledde till köpet. Relationen till försäljningsorder anges på **Produktflik** på snabbfliken **Raddetaljer** i fälten **referenstyp** , **referensnummer** och **referensparti**.  
 4. Expandera eller dölj avsnittet **Raddetaljer**.
 5. Klicka på fliken **Produkter**.
     - **Referensparti** garanterar att kostnaden för det aktuella inköpet debiteras den kopplade försäljningsordern.  

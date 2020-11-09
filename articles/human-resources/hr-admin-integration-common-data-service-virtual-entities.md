@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0848b7556100fba38fcab0aa2a1a109e2e055fc9
-ms.sourcegitcommit: b89baab13e530b5b1f079231619c628309a4742d
+ms.openlocfilehash: 0d6f79ea569a7a9b0d25e73e8666bf9ba19095d0
+ms.sourcegitcommit: a8665c47696028d371cdc4671db1fd8fcf9e1088
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3959585"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "4058164"
 ---
 # <a name="configure-common-data-service-virtual-entities"></a>Konfigurera virtuella Common Data Service-enheter
 
@@ -87,13 +87,13 @@ Installera appen Dynamics 365 HR Virtual Entity i din Power Apps-miljö för att
 
 1. Öppna [Power Platform administrationscenter](https://admin.powerplatform.microsoft.com).
 
-2. I listan **miljöer**, välj Power Apps-miljö som är kopplad till personalinstansen.
+2. I listan **miljöer** , välj Power Apps-miljö som är kopplad till personalinstansen.
 
 3. I avsnittet **resurser** på sidan väljer du **Dynamics 365-appar**.
 
 4. Välj åtgärden **Installera app**.
 
-5. Välj **Dynamics 365 HR Virtual Entity**och välj **Nästa**.
+5. Välj **Dynamics 365 HR Virtual Entity** och välj **Nästa**.
 
 6. Granska och markera det här alternativet om du vill godkänna tjänstvillkoren.
 
@@ -109,11 +109,11 @@ Nästa steg är att konfigurera datakällan för den virtuella enheten i Power A
 
 1. Öppna [Power Platform administrationscenter](https://admin.powerplatform.microsoft.com).
 
-2. I listan **miljöer**, välj Power Apps-miljö som är kopplad till personalinstansen.
+2. I listan **miljöer** , välj Power Apps-miljö som är kopplad till personalinstansen.
 
 3. Välj **miljö-URL** i avsnittet **information** på sidan.
 
-4. I **Lösning hälsocenter**, välj ikonen **Avancerad sökning** längst upp till höger på appsidan.
+4. I **Lösning hälsocenter** , välj ikonen **Avancerad sökning** längst upp till höger på appsidan.
 
 5. På sidan **Avancerad sökning** i listrutan **Sök efter** välj **Konfiguration av virtuella enhetens datakälla i Finance and Operations**.
 
@@ -123,10 +123,10 @@ Nästa steg är att konfigurera datakällan för den virtuella enheten i Power A
 
 8. Ange den information som krävs för konfigurationen av datakällan.
 
-   - **Mål-URL**: en URL till din personal namnrymd.
-   - **Klientorganisations-ID**: Azure Active Directory (Azure AD) klientorganisations-ID.
-   - **AAD app-ID**: det app-ID (klient) som skapades för den app som är registrerat i Microsoft Azure-portalen. Du har fått den här informationen tidigare under steget [Registrera appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
-   - **Hemlighet för AAD app-ID**: klienthemligheten som skapades för den app som är registrerat i Microsoft Azure-portalen. Du har fått den här informationen tidigare under steget [Registrera appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+   - **Mål-URL** : en URL till din personal namnrymd.
+   - **Klientorganisations-ID** : Azure Active Directory (Azure AD) klientorganisations-ID.
+   - **AAD app-ID** : det app-ID (klient) som skapades för den app som är registrerat i Microsoft Azure-portalen. Du har fått den här informationen tidigare under steget [Registrera appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+   - **Hemlighet för AAD app-ID** : klienthemligheten som skapades för den app som är registrerat i Microsoft Azure-portalen. Du har fått den här informationen tidigare under steget [Registrera appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
 9. Välj **Spara och stäng**.
 
@@ -149,39 +149,40 @@ Bevilja behörigheter för de två Azure AD-apparna i Human Resources:
 
 3. Välj **Nytt** för att skapa en andra appost:
 
-    - **Klient-ID**: f9be0c49-aa22-4ec6-911a-c5da515226ff
-    - **Namn**: Dynamics 365 HR Virtual Entity
+    - **Klient-ID** : f9be0c49-aa22-4ec6-911a-c5da515226ff
+    - **Namn** : Dynamics 365 HR Virtual Entity
     - I fältet **Användar-ID** väljer du användar-ID för en användare med administratörsbehörighet i Human Resources och Power Apps-miljön.
 
 ## <a name="generate-virtual-entities"></a>Generera virtuella enheter
 
 När installationsprogrammet är klart kan du välja vilka virtuella entiteter du vill generera och aktivera i din Common Data Service-instans.
 
-1. Öppna [Power Platform administrationscenter](https://admin.powerplatform.microsoft.com).
+1. I Human Resources, öppna sidan **Common Data Service (CDS) integration**.
 
-2. I listan **miljöer**, välj Power Apps-miljö som är kopplad till personalinstansen.
-
-3. Välj **miljö-URL** i avsnittet **information** på sidan.
-
-4. I **Lösning hälsocenter**, välj ikonen **Avancerad sökning** längst upp till höger på sidan.
-
-5. På sidan **Avancerad sökning** i listrutan **Sök efte** välj **Tillgängliga HR-enheter**.
-
-6. Använd filteralternativen för att söka efter den eller de entiteter som du vill aktivera.
-
-7. Välj en enhet i listan.
-
-8. På sidan entitet ändrar du egenskapen **har genererats** till **Ja** för entiteten.
-
-9. Spara och stäng enhetssidan.
+2. Välj fliken **virtuella entiteter**.
 
 > [!NOTE]
-> Du kan generera flera virtuella entiteter samtidigt genom att använda sidan **ändra flera poster**. Markera flera poster på sidan och välj **Redigera** i menyfliksområdet. Du kan sedan ändra egenskapen **har genererats** för alla valda poster.
+> Växlingsknappen **Aktivera virtuell entitet** kommer att ställas in på **Ja** automatiskt när alla nödvändiga inställningar har slutförts. Om växlingsknappen är inställd på **Nej** bör du granska stegen i de tidigare avsnitten i det här dokumentet så att alla nödvändiga inställningar är slutförda.
 
-![Tillgängliga HR-entiteter](./media/hr-admin-integration-virtual-entities-available.jpg)
+3. Välj den eller de entiteter du vill generera i Common Data Service.
 
-> [!NOTE]
-> För att effektivisera processen med att generera virtuella enheter i framtida versioner sker processen på en sida i Human Resources.
+4. Välj **generera/uppdatera**.
+
+![Common Data Service-integration](./media/hr-admin-integration-common-data-service-integration.jpg)
+
+## <a name="check-entity-generation-status"></a>Kontrollera entitetens statusgenerering
+
+Virtuella entiteter genereras i Common Data Service genom en asynkron bakgrundsprocess. Uppdateringar av processvisningen i åtgärdscentret. Information om processen, inklusive felloggar, visas på sidan **Processautomatiseringar**.
+
+1. I Personal, öppna listsidan **Processautomatiseringar**.
+
+2. Välj fliken **Bakgrundsprocesser**.
+
+3. Välj **Process för bakgrundsförfarande för asynkron operation av virtuell enhet**.
+
+4. Välj **Visa senaste resultat**.
+
+I det utfällbara fönstret visas de senaste körningsresultaten för processen. Du kan visa loggen för processen, inklusive eventuella fel som returnerats från Common Data Service.
 
 ## <a name="see-also"></a>Se även
 

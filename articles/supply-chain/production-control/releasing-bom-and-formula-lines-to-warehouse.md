@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse
+ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: ab0a6e7de02b4b69d3f7a129392a1057482f0c26
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.openlocfilehash: bf2beef30ba1cf6877325e686b76de5dc8d3ba55
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826345"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017240"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frisläpp strukturliste- och formelrader till lagerstället
 
@@ -46,7 +46,7 @@ För en snabb demonstration av hur du frisläpper strukturlistor och formlrader 
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Att frisläppa strukturliste- och formelrader med hjälp av ett batchjobb
 
-Batchjobbet **Automatisk frisläppning av strukturliste- och formelrader** går genom valda strukturliste- och formelrader som har en resterande kvantitet att frisläppa. Jobbet tar bara hänsyn till order som har statusen **frisläppt**, **startad**, eller **rapporterat som färdig**. Om strukturliste- eller formelraden har en resterande kvantitet att släppa frisläppa, frisläpper jobbet upp till den kvantitet som kan täckas av den kvantitet som redan har reserverats fysiskt och kvantiteten är fysiskt tillgänglig.
+Batchjobbet **Automatisk frisläppning av strukturliste- och formelrader** går genom valda strukturliste- och formelrader som har en resterande kvantitet att frisläppa. Jobbet tar bara hänsyn till order som har statusen **frisläppt** , **startad** , eller **rapporterat som färdig**. Om strukturliste- eller formelraden har en resterande kvantitet att släppa frisläppa, frisläpper jobbet upp till den kvantitet som kan täckas av den kvantitet som redan har reserverats fysiskt och kvantiteten är fysiskt tillgänglig.
 
 ### <a name="example-of-a-batch-job-release"></a>Exempel på en frisläppning av batchjobb
 
@@ -68,7 +68,7 @@ Följande bild visar en produktionsorder som har två jobb, 10 och 20, som täck
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Frsiläppa material per operationsnummer eller i förhållande till mängden färdiga varor
 
-Om du frisläpper material med hjälp av parameterinställningen **Vid frisläppning av produktionsorder**, när du gör en manuell frisläppning har du två alternativ för att styra materialfrisläppningen:
+Om du frisläpper material med hjälp av parameterinställningen **Vid frisläppning av produktionsorder** , när du gör en manuell frisläppning har du två alternativ för att styra materialfrisläppningen:
 
 - Frisläpp material per operationsnummer.
 - Frisläpp material i förhållande till mängden färdiga varor.
@@ -77,7 +77,7 @@ Om du frisläpper material med hjälp av parameterinställningen **Vid frisläpp
 
 För att kontrollera de åtgärder som materialet ska frisläppas till, används sidan **Frisläpp till lagerställe**.
 
-- Välj **produktionskontroll**\>**tillverkningsorder**\>**alla produktionsorder**, välj en produktionsorder och klicka sedan på fliken **lagerställe**, välj **frisläpp till lagerställe**. Använd sedan **Från oper.nr.** och fälten **Till oper.nr.** för att ange intervallet av operationsnummer.
+- Välj **produktionskontroll**\>**tillverkningsorder**\>**alla produktionsorder** , välj en produktionsorder och klicka sedan på fliken **lagerställe** , välj **frisläpp till lagerställe**. Använd sedan **Från oper.nr.** och fälten **Till oper.nr.** för att ange intervallet av operationsnummer.
 
 Följande bild visar en produktionsorder som använder två åtgärder 10 och 20. I det här exemplet begränsar du frisläppning till operation 10, endast material M9203 kommer att frisläppas.
 
@@ -89,11 +89,11 @@ Titta på den här korta YouTube-videon för en snabb demonstration av hur du fr
 
 Du kan frisläppa råmaterial för en delkvantitet av färdiga varor, eller i en viss enhet.
 
-- Du kan frisläppa råmaterial för en delkvantitet av färdiga varor, eller i en viss enhet genom att välja **produktionskontroll**\>**tillverkningsorder**\>**alla produktionsorder**, välj en produktionsorder och klicka sedan på fliken **lagerställe**, välj **frisläpp till lagerställe**. Ange sedan en kvantitet i fältet **Kvantitet**.
+- Du kan frisläppa råmaterial för en delkvantitet av färdiga varor, eller i en viss enhet genom att välja **produktionskontroll**\>**tillverkningsorder**\>**alla produktionsorder** , välj en produktionsorder och klicka sedan på fliken **lagerställe** , välj **frisläpp till lagerställe**. Ange sedan en kvantitet i fältet **Kvantitet**.
 
     Till exempel en tillverkningsorder skapas och planeras för 1 000 stycken (st). Produktionslagerarbetsledaren planerar produktionen av 100 st. för nästa skift och vill frisläppa material endast för det skiftet. I det här fallet kan arbetsledaren använda fältet **kvantitet** för att frisläppa material för 100 st. som har planerats för nästa skift.
 
-- Du kan frisläppa råmaterial i en specifik enhet genom att välja **produktionskontroll**\>**tillverkningsorder**\>**alla produktionsorder**, välj en produktionsorder och klicka sedan på fliken **lagerställe**, välj **frisläpp till lagerställe**. Använd fältet **Enhet** för att välja enhet av den färdiga varan att frisläppa material i.
+- Du kan frisläppa råmaterial i en specifik enhet genom att välja **produktionskontroll**\>**tillverkningsorder**\>**alla produktionsorder** , välj en produktionsorder och klicka sedan på fliken **lagerställe** , välj **frisläpp till lagerställe**. Använd fältet **Enhet** för att välja enhet av den färdiga varan att frisläppa material i.
 
     Enheter som är tillgängliga fastställs i enhetssekvensgrupp-ID för den färdiga varan.
 

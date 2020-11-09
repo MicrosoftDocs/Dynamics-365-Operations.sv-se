@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2098ffed81ab3c18855363f0c3ef43dc1d11a77d
-ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
+ms.openlocfilehash: e1764f31c98039e9ea6f665dcb04a1cfd23c31dc
+ms.sourcegitcommit: 3feccc9facb33e3dee18f04e202f7b20785df0a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138102"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3998858"
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Ställ in alias för huvudbokskonto
 
 [!include [banner](../../includes/banner.md)]
 
-Den här proceduren visar hur du skapar ett kontoalias som innehåller en genväg för att ange ett kontonummer. I proceduren används demonstrationsdataföretaget USMF.
+Den här proceduren visar hur du skapar ett kontoalias som innehåller en genväg för att ange ett kontonummer. I proceduren används demonstrationsföretag USMF.
 
 1. Gå till Redovisning > Kontoplan > Konton > Alias för huvudbokskonto.
 2. Klicka på Ny.

@@ -16,15 +16,15 @@ ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 18a9b7ed4cd26a806002fb1b4684de1e84f39889
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989295"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015077"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Förbättra schemaläggningsmotorns prestanda
 
@@ -180,7 +180,7 @@ Problemlösa ren är inte medvetna om tidsplaneringsalgoritmens specifika begrä
 
 En stor del av de (interna) begränsningarna i motorn styr resursens arbetstid och kapacitet. För det andra är uppgiften att passera arbetstidsplatserna för en resurs från en given punkt i en given riktning och hitta ett tillräckligt mycket intervall då jobben som krävs (tiden) kan passa.
 
-För att göra detta måste motorn känna till arbetstiderna för en resurs. Motsatsen till huvudmodelldata är att arbetstiderna är *lazy loaded*, vilket innebär att de läses in i motorn efter behov. Orsaken till det här tillvägagångssättet är att det ofta finns arbetstider i Supply Chain Management för en kalender under en lång period och det finns vanligtvis många kalendrar för dessa data för inläsning.
+För att göra detta måste motorn känna till arbetstiderna för en resurs. Motsatsen till huvudmodelldata är att arbetstiderna är *lazy loaded* , vilket innebär att de läses in i motorn efter behov. Orsaken till det här tillvägagångssättet är att det ofta finns arbetstider i Supply Chain Management för en kalender under en lång period och det finns vanligtvis många kalendrar för dessa data för inläsning.
 
 En kalenderinformation begärs av motorn i segment, genom att klassmetoden X++ anropas `WrkCtrSchedulingInteropDataProvider.getWorkingTimes`. Begäran gäller ett visst kalender-ID i ett visst tidsintervall. Beroende på servercachen hantering i Supply Chain Management kan var och en av dessa begäranden avslutas i flera databasanrop, vilket tar lång tid (relativt till den tid som är tidsödande). Om kalendern innehåller mycket avancerade definitioner av arbetstid med många arbetstidsintervall per dag, läggs detta till i den tidpunkt då inläsningen sker.
 
@@ -238,11 +238,7 @@ Om till exempel arbetstiden för en resursgrupp för ett visst datum är mellan 
 
 Beläggningen från finplaneringen för alla resurser som ingår i resursgruppen för en viss dag beaktas när den tillgängliga kapaciteten för resursgruppen på samma dag beräknas. För varje datum är beräkningen:
 
-> Tillgänglig resursgruppskapacitet =  
-> (kapacitet för resurser i gruppen baserat på deras kalender) -  
-> (tidsplanerad jobbeläggning för resurserna i gruppen) -  
-> (tidsplanerad operationsbeläggning för resurserna i gruppen) -  
-> (tidsplanerad operationsbeläggning för resursgruppen)
+*Tillgänglig resursgruppskapacitet = kapacitet för resurser i gruppen baserat på deras kalender &ndash; tidsplanerad jobbeläggning för resurserna i gruppen &ndash; tidsplanerad operationsbeläggning för resurserna i gruppen &ndash; tidsplanerad operationsbeläggning för resursgruppen*
 
 På fliken **resursbehov** i flödesoperationen kan resurskraven anges med antingen en specifik resurs (då tidsplaneringen schemaläggs med hjälp av resursen), för en resursgrupp, för en resurstyp, eller för en eller flera funktioner, kompetens, kurs eller certifikat. När du använder alla dessa alternativ ger det stor flexibilitet i vägens design, men det förstorar också schemaläggningen av motorn eftersom kapaciteten måste redovisas för varje "egenskap" (det abstrakta namn som används i motorn för kapacitet, kvalifikationer och så vidare).
 
@@ -252,11 +248,7 @@ Vid grovplanering reduceras den tillgängliga kapaciteten för en viss kapacitet
 
 För varje datum är den krävda beräkningen:
 
-> Tillgänglig kapacitet för en förmåga =  
-> (kapaciteten för förmåga) -  
-> (finplanerad beläggning för resurserna med den specifika funktionen, inkluderad i resursgruppen)-  
-> (operationsbeläggning för resurserna med den specifika funktionen, inkluderad i resursgruppen) -  
-> (operationsbeläggning för själva resursgruppen som kräver den specifika funktionen)
+*Tillgänglig kapacitet för en förmåga = kapacitet för en förmåga &ndash; tidsplanerad jobbeläggning för resursen med specifik kapacitet, inkluderad i resursgruppen &ndash; tidsplanerad operationsbeläggning för resurser med specifik kapacitet, inkluderad i resursgruppen &ndash; tidsplanerad operationsbeläggning för själva resursgruppen som kräver den specifika kapaciteten*
 
 Det innebär att om belastningen på en viss resurs laddas, tas beläggningen med i beräkningen av resursgruppens tillgängliga kapacitet per kapacitet, eftersom beläggningen för en viss resurs minskar dess bidrag till resursgruppens kapacitet för en kapacitet oavsett om beläggningen för den specifika resursen är för den specifika funktionen. Om det finns en belastning på resursgruppsnivån beaktas den i beräkningen av resursgruppens tillgängliga kapacitet per möjlighet endast om beläggningen kommer från en åtgärd som kräver den specifika funktionen.
 
@@ -313,7 +305,7 @@ Användning av begränsad kapacitet kräver att motorn läser in kapacitetsinfor
 
 ### <a name="setting-hard-links"></a>Ställa in hårda länkar
 
-Standardlänktypen för flödet är *mjuk*, vilket innebär att en tidslucka är tillåten mellan sluttiden för en operation och starten på nästa. Att tillåta detta kan ha den olyckliga effekten att om material eller kapacitet inte finns tillgängligt för en av verksamheterna under mycket lång tid, kan produktionen vara inaktiv under ett tag, vilket innebär en möjlig ökning av pågående arbete. Det här händer inte när du tar med hårda länkar, eftersom slut och start måste justeras helt. Om du ställer in hårda länkar blir det svårare att schemalägga, eftersom arbetstid och skärningspunkter för kapacitet måste beräknas för de två resurserna i operationerna. Om det också finns parallella operationer lägger detta till en avsevärd beräkningstid. Om resurserna för de två operationerna har olika kalendrar som inte överlappar varandra kan problemet inte lösas.
+Standardlänktypen för flödet är *mjuk* , vilket innebär att en tidslucka är tillåten mellan sluttiden för en operation och starten på nästa. Att tillåta detta kan ha den olyckliga effekten att om material eller kapacitet inte finns tillgängligt för en av verksamheterna under mycket lång tid, kan produktionen vara inaktiv under ett tag, vilket innebär en möjlig ökning av pågående arbete. Det här händer inte när du tar med hårda länkar, eftersom slut och start måste justeras helt. Om du ställer in hårda länkar blir det svårare att schemalägga, eftersom arbetstid och skärningspunkter för kapacitet måste beräknas för de två resurserna i operationerna. Om det också finns parallella operationer lägger detta till en avsevärd beräkningstid. Om resurserna för de två operationerna har olika kalendrar som inte överlappar varandra kan problemet inte lösas.
 
 Vi rekommenderar att du endast använder hårda länkar om det är absolut nödvändigt och noga fundera över om det är nödvändigt för varje operation av flödet.
 

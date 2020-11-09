@@ -3,7 +3,7 @@ title: Kom i gång med tillgångsleasing
 description: I det här avsnittet beskrivs funktionen tillgångsleasing och visar information för dessa lån genom att följa stegen för att skapa ett tillgångsleasing.
 author: moaamer
 manager: Ann Beebe
-ms.date: 09/24/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5f8f86861f65f3da71843f6fd4a64e4199e86627
-ms.sourcegitcommit: 9668af8d918faec37abe1881e550872cd6b73259
+ms.openlocfilehash: 9e206569aad3f53a2f6f66e6d6253226e5980078
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3970018"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022577"
 ---
 # <a name="asset-leasing-get-started"></a>Kom i gång med tillgångsleasing
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 I det här avsnittet beskrivs funktionen tillgångsleasing och visar information för dessa lån genom att följa stegen för att skapa ett tillgångsleasing. Avsnittet definierar också vilken terminologi som används i användargränssnittet och i dokumentationen. Leasing av tillgångar är en avancerad funktion för hantering, spårning och automatisering av finansiella transaktioner för leasade tillgångar i Microsoft Dynamics 365 Finance. Leasing av tillgångar uppfyller IAS (IFRS 16) och US GAAP standard (ASC 842). Leasing av tillgångar samlar in och bearbetar information om leasing och genererar journalposter för leasingens livscykel från första redovisningstillfället, månatliga journalposter, till nedskrivningar och uppsägningar av leasingavtalet. Leasing av tillgångar integreras sömlöst med andra komponenter i Dynamics 365 Finance, inklusive anläggningstillgångar, leverantörsreskontra och redovisning.
 
@@ -209,7 +208,7 @@ Detta motsvarar överföring av saldoavdrag för tillgång med nyttjanderätt. I
 ## <a name="create-an-asset-lease"></a>Skapa en tillgångsleasing
 Gör på följande sätt om du vill skapa en ny leasing. 
 
-1. Om du vill använda **Leasing av tillgångar** måste du aktivera den med arbetsytan **Funktionshantering**. Från arbetsytan **Funktionshantering**, välj **Alla** så att alla funktioner visas på sidan. Välj **Leasing av tillgångar** och välj sedan **Aktivera nu**.
+1. Om du vill använda **Leasing av tillgångar** måste du aktivera den med arbetsytan **Funktionshantering**. Från arbetsytan **Funktionshantering** , välj **Alla** så att alla funktioner visas på sidan. Välj **Leasing av tillgångar** och välj sedan **Aktivera nu**.
 2. Gå till **Leasing av tillgångar > Vanlig > Sammanfattning av leasing**. Ange obligatoriska fält på snabbfliken **Allmänt**. 
    - **Leasingdetaljer**
    - **Tillgångens livslängd (månader)**

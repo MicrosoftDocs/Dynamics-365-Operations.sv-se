@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37c378a424d89a884d1f3f0f14e1d544b3af178b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f9ae9218a85c50582c8c4999da463833fc91d260
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180034"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006125"
 ---
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Kvitta en kunddelbetalning och hela slutbetalningen före rabattdatumet
 
@@ -34,7 +34,7 @@ Den här artikeln tillhandahåller scenarier som visar hur du registrerar delbet
 Fabrikam säljer varor till kunden 4028. Fabrikam erbjuder en kassarabatt på 1 procent om fakturan betalas inom 14 dagar. Fakturor måste betalas inom 30 dagar. Fabrikam erbjuder även kassarabatter på delbetalningar. Kvittningsparametrar finns på sidan **Parametrar för kundreskontra**.
 
 ## <a name="customer-invoice"></a>Kundfaktura
-Den 25 juni registrerar och bokför Arnie en faktura på 1 000,00 för kund 4028. Arnie kan visa den här transaktionen på sidan**Kundtransaktioner**.
+Den 25 juni registrerar och bokför Arnie en faktura på 1 000,00 för kund 4028. Arnie kan visa den här transaktionen på sidan **Kundtransaktioner**.
 
 | Verifikation   | transaktionstyp | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo  | Valuta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
@@ -48,7 +48,7 @@ Från sidan **Kund** eller **Kundtransaktioner** kan Arnie öppna sidan **Kvitta
 
 Informationen visas längst ned på sidan **Kvitta transaktioner** för den markerade fakturan.
 
-|                              |           |
+|    &nbsp;                    |  &nbsp;   |
 |------------------------------|-----------|
 | Kassarabattdatum           | 2015/07/09 |
 | Kassarabattbelopp         | 10,00     |
@@ -79,7 +79,7 @@ Istället för att öppna sidan **Ange kundbetalningar** i betalningsjournalen, 
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
-|                              |           |
+|        &nbsp;                | &nbsp;    |
 |------------------------------|-----------|
 | Kassarabattdatum           | 2015/07/09 |
 | Kassarabattbelopp         | 10,00     |
@@ -95,7 +95,7 @@ Om kunden vill kvitta exakt halva fakturan, skickar in kunden en betalning på 4
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
-|                              |           |
+|     &nbsp;                   | &nbsp;    |
 |------------------------------|-----------|
 | Kassarabattdatum           | 2015/07/09 |
 | Kassarabattbelopp         | 10,00     |
@@ -112,9 +112,9 @@ Arnie stänger sidan **Kvitta transaktioner**. En betalningsrad för 495,00 skap
 | RAB-10010 |  Kassarabatt   | 2015/07/01  |         |                                      | 5,00                                  | 0,00    | USD      |
 
 ## <a name="payment-for-the-remaining-amount"></a>Betalning för återstående belopp
-Kund 4028 betalar det resterande beloppet på 495,00 den 8 juli vilket infaller under kassarabattperioden. Arnie skapar betalningsjournalen den 8 juli och markerar transaktionen för kvittning. Han ser att beloppet som måste kvittas är 495,00. Värdet i fältet **Beräknad kassarabatt** är **5,00**, eftersom rabatten på 5,00 utnyttjades tidigare.
+Kund 4028 betalar det resterande beloppet på 495,00 den 8 juli vilket infaller under kassarabattperioden. Arnie skapar betalningsjournalen den 8 juli och markerar transaktionen för kvittning. Han ser att beloppet som måste kvittas är 495,00. Värdet i fältet **Beräknad kassarabatt** är **5,00** , eftersom rabatten på 5,00 utnyttjades tidigare.
 
-|                         |        |
+|   &nbsp;                | &nbsp; |
 |-------------------------|--------|
 | Markerad summa            | 495,00 |
 | Uppskattad kassarabatt | 5,00   |
@@ -127,7 +127,7 @@ Information om den valda transaktionen visas i rutnätet på sidan **Kvitta öpp
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
-|                              |           |
+|  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
 | Kassarabattdatum           | 2015/07/09 |
 | Kassarabattbelopp         | 10,00     |

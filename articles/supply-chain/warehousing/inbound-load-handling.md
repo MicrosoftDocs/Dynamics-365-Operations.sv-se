@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: f165a6187332a45e77c22de6eb10e227bc1c8f4c
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985028"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017631"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhantering av inkommande laster för inköpsorder
 
@@ -121,8 +122,8 @@ Använd fältet **Last övermottagning** för relevant menyartikel för mobilenh
 
 - Mottagande av lastartikel
 - Mottagande och inleverans av lastartikel
-- Inleverans av blandad registreringsskylt (när fältet **Källdokument för metod för radidentifiering** anges till _Mottagande av lastartikel_)
-- Inleverans och artikelinförsel av blandad registreringsskylt (när fältet **Källdokument för metod för radidentifiering** anges till _Mottagande av lastartikel_)
+- Inleverans av blandad registreringsskylt (när fältet **Källdokument för metod för radidentifiering** anges till _Mottagande av lastartikel_ )
+- Inleverans och artikelinförsel av blandad registreringsskylt (när fältet **Källdokument för metod för radidentifiering** anges till _Mottagande av lastartikel_ )
 
 I följande tabell beskrivs de alternativ som är tillgängliga för fältet **Last övermottagning**.
 
@@ -158,7 +159,7 @@ Om du vill öppna en sida där de kan bokföra en produktinleverans kan medlemma
 - Öppna relevant inköpsorder och välj sedan åtgärden **produktinleverans**.
 - Gå till **Anskaffning och källa \> Inköpsorder \> Tar emot produkter \> Bokför produktinleveransjobb**.
 
-Åtgärden **produktinleverans** är tillgänglig på sidan **last** (och på motsvarande sida för uppdateringsjobbet sidan **uppdatera produktinleveranser**) kan endast uppdatera kvantiteter för produktinleveranser på inköpsorderkvantiteter som har statusen _Registrerad_. Åtgärden **produktinleverans** om är tillgänglig på sidan **inköpsorder** kan dock inkludera kvantiteter i båda bearbetningsstatus (_beställt_ och _registrerat_). Den kan också styra omfattningen av bokföring av produktinleveransen genom ytterligare parametrar, till exempel _Kvantitet för Inleverera nu_ och _registrerad kvantitet och tjänster_.
+Åtgärden **produktinleverans** är tillgänglig på sidan **last** (och på motsvarande sida för uppdateringsjobbet sidan **uppdatera produktinleveranser** ) kan endast uppdatera kvantiteter för produktinleveranser på inköpsorderkvantiteter som har statusen _Registrerad_. Åtgärden **produktinleverans** om är tillgänglig på sidan **inköpsorder** kan dock inkludera kvantiteter i båda bearbetningsstatus ( _beställt_ och _registrerat_ ). Den kan också styra omfattningen av bokföring av produktinleveransen genom ytterligare parametrar, till exempel _Kvantitet för Inleverera nu_ och _registrerad kvantitet och tjänster_.
 
 Endast order som har statusen _bekräftad_ kan vara produktinleverans – bokförd. För icke-bekräftade inköpsorder visas åtgärden **produktinleverans** som ej tillgänglig.
 
@@ -184,7 +185,7 @@ Till produktinleverans – bokför införselregistreringarna som hör till en va
 >
 > | Version | Beräkning |
 > |---|---|
-> | Versioner före version 10.0.10, och nyare versioner där funktionen _Tillåt flera produktinleveranser per last_ inte är aktiverad | Radantalet är summan av alla registrerade kvantiteter _för den inköpsorderraden_, oavsett om registreringen utförts via flera laster, oberoende av lasten, från en mobil enhet eller från klienten. |
+> | Versioner före version 10.0.10, och nyare versioner där funktionen _Tillåt flera produktinleveranser per last_ inte är aktiverad | Radantalet är summan av alla registrerade kvantiteter _för den inköpsorderraden_ , oavsett om registreringen utförts via flera laster, oberoende av lasten, från en mobil enhet eller från klienten. |
 > | Version 10.0.10 och senare där funktionen _Tillåt flera produktinleveranser per last_ är aktiverad | Radens kvantitet är summan av alla registrerade kvantiteter _för lastposten_ som åtgärden **bokföring av produktinleverans** initierades från. |
 
 När användaren väljer **OK** för att bekräfta bokföringen av produktinleveransen sker följande nyckeluppdateringar på lämpliga enheter i systemet.
@@ -206,8 +207,8 @@ I följande tabell sammanfattas effekterna av inställningen **Tillåt flera pro
 |---|---|---|---|
 | När det här fältet inte är tillgängligt (versioner före 10.0.10) | <p>Lastkvantitet ställs in så att den motsvarar den registrerade kvantiteten.</p><p>Om lastkvantitet uppdateras till 0 (noll), vilket innebär att ingen registrering har gjorts, tas lastraden bort.</p><p>Om det inte finns några lastrader i lasten tas lasten bort.</p> | _Inlevererat_ | Om det finns flera laster för orderradens registrerade kvantitet, uppdateras bara statusen för den last som inleveransen bokfördes från uppdateras till _mottaget_. |
 | Nr | <p>Lastkvantitet ställs in så att den motsvarar den registrerade kvantitet som är associerad med last-ID.</p><p>Om inget last-ID har registrerats för lagertransaktionen, matchar beteendet de som finns i versioner före 10.0.10.</p> | _Inlevererat_ | |
-| Ja | Inga uppdateringar | _Mottaget_, om den totala registrerade lastkvantiteten är lika med eller större än lastkvantiteten | |
-| Ja | Inga uppdateringar | _Levererad_ eller _Pågående_, om den totala registrerade lastkvantiteten är mindre än lastkvantiteten | |
+| Ja | Inga uppdateringar | _Mottaget_ , om den totala registrerade lastkvantiteten är lika med eller större än lastkvantiteten | |
+| Ja | Inga uppdateringar | _Levererad_ eller _Pågående_ , om den totala registrerade lastkvantiteten är mindre än lastkvantiteten | |
 
 När fältet **Laststatus** är inställt på _Inlevererat_ kan inga fler bokföringar av produktinleverans göras för den lasten. Arbetaren kan dock registrera den återstående orderkvantiteten mot inlevererad last under följande förhållanden. (Mer information finns i avsnitt [Last övermottagning](#load-over-receiving) tidigare i det här avsnittet.)
 
@@ -218,7 +219,7 @@ Till produktinleverans – bokför ytterligare registrerade lastkvantiteter som 
 
 ### <a name="post-registered-quantities-from-the-purchase-order-page"></a>Bokför registrerade kvantiteter från sidan Inköpsorder
 
-För produktinleverans – bokför registrerade kvantiteter från sidan **inköpsorder** användaren slutför följande uppgifter innan han eller hon väljer åtgärden **produktinleverans**:
+För produktinleverans – bokför registrerade kvantiteter från sidan **inköpsorder** användaren slutför följande uppgifter innan han eller hon väljer åtgärden **produktinleverans** :
 
 - Ange fältet **kvantitet** i avsnittet **parametrar** på fliken **inställningar** visar den _registrerade kvantiteten_.
 - I fältet **Produktinleverans** ange de nummer för inköpsorder som är inkluderade i bokföringen.
@@ -237,7 +238,7 @@ I följande tabell sammanfattas effekterna av inställningen **Tillåt flera pro
 
 | Tillåt flera produktinleveranser per last | Lastkvantitet | Laststatus | Sedel |
 |---|---|---|---|
-| När det här fältet antingen är inaktiverat eller inte tillgängligt (i versioner före 10.0.10) | Inga uppdateringar | Inga uppdateringar har utförts. (Statusen förblir _öppen_, _levererad_, eller _pågående_.) | Eftersom bokföring av produktinleverans initieras från en inköpsorder har inte uppdateringslogiken information om associationen mellan registrerade kvantiteter inom dess omfattning och den last som registreringen registrerades mot. Därför kan den inte välja last för statusuppdateringen. |
+| När det här fältet antingen är inaktiverat eller inte tillgängligt (i versioner före 10.0.10) | Inga uppdateringar | Inga uppdateringar har utförts. (Statusen förblir _öppen_ , _levererad_ , eller _pågående_.) | Eftersom bokföring av produktinleverans initieras från en inköpsorder har inte uppdateringslogiken information om associationen mellan registrerade kvantiteter inom dess omfattning och den last som registreringen registrerades mot. Därför kan den inte välja last för statusuppdateringen. |
 | Aktiverad | Inga uppdateringar | <p>En av följande åtgärder inträffar:</p><ul><li>Statusvärdet ändras till <i>mottagen</i> om den totala inlevererade och den inköpta kvantiteten av lagertransaktioner för inköpsorder är mer än eller lika med den kvantitet av lasten som de är kopplade till.</li><li>Statusen förblir <i>Öppen</i>, <i>Levererad</i> eller <i>Pågående</i> om det tidigare villkoret inte uppfylls för alla rader i last.</li></ul> | |
 
 ### <a name="select-the-appropriate-product-receipt-posting-option-for-your-logistics-operations"></a>Välj lämpligt bokföringsalternativ för produktinleverans för dina logistikåtgärder
@@ -321,7 +322,7 @@ I den här proceduren ska du skapa en inköpsorder och en tillhörande överför
 
 1. I åtgärdsfönstret, på fliken **Inköp** välj **Åtgärd \> Bekräfta**. Orderstatusen är nu _bekräftad_.
 1. I åtgärdsfönstret, på fliken **Lagerställe** välj **Åtgärd \> Workbench för lastplanering**.
-1. På sidan **Workbench för lastplanering** i åtgärdsfönstret på fliken **Tillgång och efterfrågan**, välj **Lägg till \> Till ny last**.
+1. På sidan **Workbench för lastplanering** i åtgärdsfönstret på fliken **Tillgång och efterfrågan** , välj **Lägg till \> Till ny last**.
 1. I dialogrutan **Tilldelning av lastmall** ange fältet **Lastmall-ID** till _20' behållare_.
 1. Välj **OK** för att stänga dialogrutan och returnera till workbench.
 1. I avsnittet **Laster** välj **Last-ID** för att öppna den nyss skapade lasten.
@@ -343,8 +344,8 @@ När lasten inkommer till lagrets mottagningsplats registrerar en inleveransansv
 1. Välj menyalternativ _Mottagande av lastartikel_ som du har skapat för det här scenariot.
 1. Ange följande värden genom att följa instruktionerna för datainmatning på skärmen. (Ordningen kan variera beroende på vilken mobil enhet eller emulator som du använder.)
 
-    - **Last**– ange det last-ID som du skapade under den föregående proceduren.
-    - **Artikel** – ange _A0001_, vilket är den artikel som förväntas för lasten.
+    - **Last** – ange det last-ID som du skapade under den föregående proceduren.
+    - **Artikel** – ange _A0001_ , vilket är den artikel som förväntas för lasten.
     - **Kvantitet** – ange _9_ som den faktiska kvantiteten som finns på lasten. Observera att kvantiteten är mindre än den förväntade kvantiteten.
 
 1. Fortsätt att gå igenom arbetsflödet, lämna alla andra fält tomma eller ange standardvärden tills din enhet informerar att arbetet har slutförts.
@@ -353,7 +354,7 @@ Uppgiften för lastmottagning har nu slutförts och inleveransansvarig kan gå v
 
 1. Gå till **Lagerstyrning \> Laster \> Alla laster**.
 1. Sök efter den last som du just har fått i listan. (Du kanske måste markera kryssrutan **Visa stängd** om du vill inkludera inkommande laster som har statusvärdet _levererat_.) Markera sedan länken i kolumnen **Last-ID** för att öppna last.
-1. Observera i lastposten att värdet **Laststatus** fortfarande är _levererat_, men värdet **Arbetsskapad kvantitet** det skapade antalet på lastraden har _9_.
+1. Observera i lastposten att värdet **Laststatus** fortfarande är _levererat_ , men värdet **Arbetsskapad kvantitet** det skapade antalet på lastraden har _9_.
 1. Gå till **Anskaffning och källa \> Inköpsorder \> Alla inköpsorder**.
 1. Leta upp det inköp som du just har fått i listan och välj sedan länken i kolumnen **inköpsorder** för att öppna ordern.
 \
@@ -413,17 +414,17 @@ Du får också lära dig att ställa in inköpsorderraden så att du kan ta emot
 
 1. Gå till **Anskaffning och källa \> Inköpsorder \> Alla inköpsorder**.
 1. Välj **Ny**.
-1. På snabbfliken **leverantör** ställer du in fältet **leverantörskonto** till _1001_och väljer sedan **OK**.
+1. På snabbfliken **leverantör** ställer du in fältet **leverantörskonto** till _1001_ och väljer sedan **OK**.
 1. Den nya inköpsordern öppnas och innehåller en tom rad i rutnätet **inköpsorderrad**. Ange följande värden för den här orderraden:
 
     - **Artikelnummer:** _A0001_
     - **Lagerställe:** _24_
     - **Kvantitet:** _10_
 
-1. På snabbfliken **Raddetaljer** på fliken **leverans**, ange fältet **Överleverans** till _20_.
+1. På snabbfliken **Raddetaljer** på fliken **leverans** , ange fältet **Överleverans** till _20_.
 1. I åtgärdsfönstret, på fliken **Inköp** välj **Åtgärd \> Bekräfta**. Orderstatusen är nu _bekräftad_.
 1. I åtgärdsfönstret, på fliken **Lagerställe** välj **Åtgärd \> Workbench för lastplanering**.
-1. På sidan **Workbench för lastplanering** i åtgärdsfönstret på fliken **Tillgång och efterfrågan**, välj **Lägg till \> Till ny last**.
+1. På sidan **Workbench för lastplanering** i åtgärdsfönstret på fliken **Tillgång och efterfrågan** , välj **Lägg till \> Till ny last**.
 1. I dialogrutan **Tilldelning av lastmall** ange fältet **Lastmall-ID** till _20' behållare_. På fliken **Detaljer** ändra värdet **kvantitet** från _10_ till _5_ för att delvis lägga till inköpsorderradens kvantitet.
 1. Välj **OK** om du vill använda inställningarna och stänga dialogrutan.
 1. Upprepa steg 8 till och med 10 om du vill skapa en andra last. Den här gången ska fältet **kvantitet** redan vara inställt på _5_.
@@ -446,13 +447,13 @@ Den här proceduren visar hur en inleveransansvarig kommer att registrera lastkv
 1. Välj menyalternativ _Mottagande av lastartikel_ som du har skapat för det här scenariot.
 1. Ange följande värden genom att följa instruktionerna för datainmatning på skärmen. (Ordningen kan variera beroende på vilken mobil enhet eller emulator som du använder.)
 
-    - **Last**– ange det första last-ID som du skapade under den föregående proceduren.
-    - **Artikel** – ange _A0001_, vilket är den artikel som förväntas för lasten.
+    - **Last** – ange det första last-ID som du skapade under den föregående proceduren.
+    - **Artikel** – ange _A0001_ , vilket är den artikel som förväntas för lasten.
     - **Kvantitet** – ange _3_. Observera att kvantiteten är mindre än den förväntade kvantiteten. I det här scenariot ska du anta att du, som inleveransansvarig, inte har tid att registrera alla kvantiteter för den här lasten. Senare i den här proceduren registrerar du de återstående delarna genom att upprepa det här steget och ställa in **kvantitet** på _2_.
 
 1. Fortsätt att gå igenom arbetsflödet, lämna alla andra fält tomma eller ange standardvärden tills din enhet informerar att arbetet har slutförts.
 1. I webbklienten, gå till **Lagerstyrning \> Laster \> Alla laster**.
-1. Sök efter den last som du just har tagit emot i listan och välj värdet **last-ID** för att öppna lasten. Observera att värdet **Laststatus** fortfarande är _levererat_, men värdet **Arbetsskapad kvantitet** det skapade antalet på lastraden har _3_.
+1. Sök efter den last som du just har tagit emot i listan och välj värdet **last-ID** för att öppna lasten. Observera att värdet **Laststatus** fortfarande är _levererat_ , men värdet **Arbetsskapad kvantitet** det skapade antalet på lastraden har _3_.
 1. I Åtgärdsfönster, på fliken **Leverera och ta emot** välj **Inleverera \> Produktinleverans**. Om du uppmanas att bekräfta åtgärden väljer du **Ja**.
 1. I dialogrutan **Bokför produktinleverans** men ändra inte de värden som visas och välj sedan **OK**.
 1. Du kommer tillbaka till sidan **lastinformation** för den valda lasten. Observera följande punkter:
@@ -473,7 +474,7 @@ I det här scenariot kommer inleveransansvarig att inkommande registrera en kvan
 1. Ange följande värden genom att följa instruktionerna för datainmatning på skärmen. (Ordningen kan variera beroende på vilken mobil enhet eller emulator som du använder.)
 
     - **Last** – ange det andra last-ID som du skapade tidigare.
-    - **Artikel** – ange _A0001_, vilket är den artikel som förväntas för lasten.
-    - **Kvantitet** – ange _7_, vilket är den återstående kvantiteten som leverantören är auktoriserad att leverera som en del av den totala kvantiteten i inköpsordern på 12 (där 10 är den ursprungliga orderkvantiteten och 2 är den tillåtna överleveransen på 20 procent). Kom ihåg att fem datorer redan har registrerats mot den första lasten.
+    - **Artikel** – ange _A0001_ , vilket är den artikel som förväntas för lasten.
+    - **Kvantitet** – ange _7_ , vilket är den återstående kvantiteten som leverantören är auktoriserad att leverera som en del av den totala kvantiteten i inköpsordern på 12 (där 10 är den ursprungliga orderkvantiteten och 2 är den tillåtna överleveransen på 20 procent). Kom ihåg att fem datorer redan har registrerats mot den första lasten.
 
 Den andra lasten har nu uppdaterats med kvantiteten 7 och kan vara produktinleverans – uppdateras baserat på denna kvantitet.

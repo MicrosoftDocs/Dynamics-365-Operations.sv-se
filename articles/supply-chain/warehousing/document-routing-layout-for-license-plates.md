@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSLicensePlateLabel
+ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 9af077022ab0759534d2c1da5f39997712e6a354
-ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
+ms.openlocfilehash: 8c96aef5d66ed8f8c44d74eee9b60f0a7d38a46d
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763465"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017723"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Layout för dokumentflöde för ID-nummeretiketter
 
@@ -63,10 +63,10 @@ $FieldName:FormatString$
 
 Här följer en förklaring av detta format:
 
-- `FieldName` är namnet på datafältet (t.ex. **antal**).
+- `FieldName` är namnet på datafältet (t.ex. **antal** ).
 - `FormatString` definierar hur data måste skrivas ut.
 
-Följande exempel visar hur du kan anpassa fältet arbetskvantitet (**antal**):
+Följande exempel visar hur du kan anpassa fältet arbetskvantitet ( **antal** ):
 
 - Om du alltid vill visa fyra siffror (genom att använda nollor som platshållare) ska du använda `$Qty:0000$`. Om kvantiteten till exempel är 10 visas etiketten "0010".
 - Om du alltid vill visa två decimaler använder du `$Qty:0.00$`. Om kvantiteten till exempel är 10 visas etiketten "10,00".

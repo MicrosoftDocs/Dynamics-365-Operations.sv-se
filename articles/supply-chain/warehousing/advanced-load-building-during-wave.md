@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate
+ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate, WHSWaveTableListPage, TMSLoadBuildTemplateApply, TMSLoadBuildTemplates
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Retail, Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 3bc82c3af2b99303a650f672f2b2ccd48c9889a9
-ms.sourcegitcommit: d25d0feb3f8a5a760eba50ba5f46e1db02737d25
+ms.openlocfilehash: 7fb47498cfb3756b0e180fe9e5500255c7312a92
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3677444"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016342"
 ---
 # <a name="advanced-load-building-during-wave"></a>Avancerad belastningsuppbyggnad under påfyllnad
 
@@ -33,8 +33,8 @@ Under en påfyllnadsbearbetning skapar systemet vanligtvis en ny beläggning fö
 
 Om du vill använda funktionen måste du ställa in systemet på följande sätt:
 
-- Skapa *påfyllnadsmallar* som innehåller den nya **buildLoads**-metoden. Den här metoden gör avancerad belastningsuppbyggnad under påfyllnad tillgänglig för påfyllnader som använder dessa mallar.
-- Konfigurera *mallar för belastningsuppbyggnad*, som var och en är kopplad till en viss påfyllnadsmall och -metod. Mallar för belastningsuppbyggnad styr vilken belastning (befintlig eller ny) som används för att lägga till de lastrader som används för påfyllnad. Du kan ha kombinerade eller separata försändelser, baserat på kriterier som t.ex. lastmall, utrustning och andra fältvärden på lastraden.
+- Skapa *påfyllnadsmallar* som innehåller den nya **buildLoads** -metoden. Den här metoden gör avancerad belastningsuppbyggnad under påfyllnad tillgänglig för påfyllnader som använder dessa mallar.
+- Konfigurera *mallar för belastningsuppbyggnad* , som var och en är kopplad till en viss påfyllnadsmall och -metod. Mallar för belastningsuppbyggnad styr vilken belastning (befintlig eller ny) som används för att lägga till de lastrader som används för påfyllnad. Du kan ha kombinerade eller separata försändelser, baserat på kriterier som t.ex. lastmall, utrustning och andra fältvärden på lastraden.
 - Definiera *grupper med blandad last* för att kontrollera vilka artiklar som ska och inte ska kombineras i en enda last. Du anger också om begränsningen ska generera en varning eller ett fel, och om begränsningen för lastmallens volym ska utvärderas.
 
 ## <a name="turn-on-advanced-wave-load-building-in-your-system"></a>Aktivera avancerad på belastningsuppbyggnad i systemet
@@ -59,7 +59,7 @@ Du kan också använda denna demo som vägledning för funktionen när du arbeta
 
 ### <a name="make-sure-that-the-scenario-setup-includes-enough-available-inventory"></a>Kontrollera att scenarioinställningen innehåller tillräckligt med tillgängligt lager
 
-Om du arbetar med **USMF** demodata, bör du först se till att ditt system är konfigurerat så att tillräckligt med lager finns tillgängliga på varje relevant plats. I den här demon är det förväntat att du har följande lager tillgängligt på lagerställe *62*:
+Om du arbetar med **USMF** demodata, bör du först se till att ditt system är konfigurerat så att tillräckligt med lager finns tillgängliga på varje relevant plats. I den här demon är det förväntat att du har följande lager tillgängligt på lagerställe *62* :
 
 - **Artikel A0001:** 10 stycken
 - **Artikel A0002:** 10 stycken
@@ -99,7 +99,7 @@ Artikel **M9200** måste läggas till i lagerstället. Lägg till artikellagret 
 1. Klicka på **Ny** i åtgärdsfönstret.
 1. I dialogrutan **Skapa lagerjournal** på snabbfliken **Översikt** i fältet **Lagerställe** ange *62*. Acceptera standardvärden i alla andra fält.
 1. Välj **OK** för att stänga dialogrutan.
-1. Sidan **Jagerjustering** har öppnats. På snabbfliken **Journalrader**, klicka på **Ny** för att lägga till en rad.
+1. Sidan **Jagerjustering** har öppnats. På snabbfliken **Journalrader** , klicka på **Ny** för att lägga till en rad.
 1. Ställ in följande värden på denna nya rad. Acceptera standardvärden i alla andra fält.
 
     - **Artikelnummer:** *M9200*
@@ -116,14 +116,14 @@ Artikel **M9200** måste läggas till i lagerstället. Lägg till artikellagret 
 
 ### <a name="regenerate-wave-process-methods"></a>Återskapa metoder för påfyllnadsprocesser
 
-Du måste kanske återskapa dina metoder för påfyllnadsprocess för att göra belastningsuppbyggnadsmetoden (**buildLoads**) tillgänglig.
+Du måste kanske återskapa dina metoder för påfyllnadsprocess för att göra belastningsuppbyggnadsmetoden ( **buildLoads** ) tillgänglig.
 
 1. Gå till **Lagerstyrning** \> **Inställningar** \> **Påfyllnader** \> **Metoder för påfyllnadsprocess**.
 2. Kontrollera att **buildLoads** finns i listan. Om den inte finns med väljer du **återskapa metoder** i åtgärdsfönstret för att lägga till den.
 
 ### <a name="set-up-wave-templates"></a>Ställa in påfyllnadsmallar
 
-Om du vill utnyttja avancerad belastningsuppbyggnad under påfyllnad måste du inkludera **buildLoads**-metoden i varje relevant [påfyllnadsmall](tasks/configure-wave-processing.md).
+Om du vill utnyttja avancerad belastningsuppbyggnad under påfyllnad måste du inkludera **buildLoads** -metoden i varje relevant [påfyllnadsmall](tasks/configure-wave-processing.md).
 
 1. Gå till **Lagerstyrning** \> **Inställningar** \> **Påfyllnader** \> **Påfyllnadsmallar**.
 1. Välja en påfyllnadsmall.
@@ -131,18 +131,18 @@ Om du vill utnyttja avancerad belastningsuppbyggnad under påfyllnad måste du i
     Om du arbetar med **USMF** demodata väljer du mallen **Standardleverans för 62**.
 
 1. I åtgärdsfönstret, välj **Redigera** för att placera sidan i redigeringsläge.
-1. På snabbfliken **Metoder** i rutnätet **återstående metoder**, välj metoden **buildLoads**.
+1. På snabbfliken **Metoder** i rutnätet **återstående metoder** , välj metoden **buildLoads**.
 1. Välj höger knapp för att flytta metoden **buildLoads** på rutnätet **Valda metoder**.
-1. Om du vill tilldela ett värde **Kod för påfyllnadssteg** för metoden **buildLoads** måste du först skapa en kod på sidan **Koder för påfyllnadssteg**. Du kan använda vilket värde du vill, men glöm inte att anteckna det eftersom du kommer att behöva det senare. Följ dessa steg för att skapa koden **WSC2112**:
+1. Om du vill tilldela ett värde **Kod för påfyllnadssteg** för metoden **buildLoads** måste du först skapa en kod på sidan **Koder för påfyllnadssteg**. Du kan använda vilket värde du vill, men glöm inte att anteckna det eftersom du kommer att behöva det senare. Följ dessa steg för att skapa koden **WSC2112** :
 
-    1. I raden för metoden **buildLoads**, högerklicka på nedpilen i fältet **Kod för påfyllnadssteg** och välj sedan **Visa information**.
+    1. I raden för metoden **buildLoads** , högerklicka på nedpilen i fältet **Kod för påfyllnadssteg** och välj sedan **Visa information**.
     1. På sidan **Koder för påfyllnadssteg** i åtgärdssfönstret väljer du **Ny**.
-    1. I fältet **Kod för påfyllnadssteg**, ange *WSC2112*.
-    1. I fältet **Beskrivning för påfyllnadssteg**, ange *WSC2112*.
+    1. I fältet **Kod för påfyllnadssteg** , ange *WSC2112*.
+    1. I fältet **Beskrivning för påfyllnadssteg** , ange *WSC2112*.
     1. I fältet **Typ av påfyllnadssteg** väljer du *Lastuppbyggnad*.
 
 1. Markera **Spara** och stäng sedan sidan.
-1. På raden för metoden **buildLoads** i fältet **Kod för påfyllnadssteg** den kod som du just har skapat (**WSC2112**).
+1. På raden för metoden **buildLoads** i fältet **Kod för påfyllnadssteg** den kod som du just har skapat ( **WSC2112** ).
 1. Klicka på **Spara** i åtgärdsfönstret.
 
 > [!NOTE]
@@ -201,9 +201,9 @@ Du kan ställa in så många mallar för belastningsuppbyggnad, som du behöver.
     | Utrustning | Utrustningen att matcha mot när du tilldelar befintliga laster och att ange nya laster som skapas. | Lämna det här fältet tomt. |
     | ID för grupp med blandad last | Välj den grupp med blandad last som används om artikeln är tillåtet på lasten. Blandade gruppen skapar regler för de typer av artiklar som kan kombineras i en enda last. Markera en av de blandade grupper som du skapade tidigare i den här inställningen. | *TV* |
     | Använd öppna laster | Välj om befintliga öppna laster också läggas till. Följande alternativ är tillgängliga:<ul><li>**Ingen** – Lägg inte till öppna laster till befintliga laster.</li><li>**Alla** – Lägg till öppna laster till alla befintliga laster som gäller för raden.</li><li>**Tilldelad** – Lägg till öppna laster till den last som är tilldelad till påfyllnad.</li></ul> | *Valfritt* |
-    | Skapa laster | Ange om nya laster ska skapas om ingen befintlig last matchar kriterierna. | Markerad (= *Ja*) |
-    | Tillåt delning av leveransrad | Ange om en enda lastrad kan delas mellan flera laster, om den fullständiga raden överstiger maximumkapaciteten för lastmallen. | Reglerat (= *Nej*) |
-    | Validera volymmetriker | Ange om lastuppbyggnaden bör kontrollerar vikten och volymen när varje lastrad läggs till för att säkerställa att lastmallens volymetriska gränser respekteras. | Reglerat (= *Nej*) |
+    | Skapa laster | Ange om nya laster ska skapas om ingen befintlig last matchar kriterierna. | Markerad (= *Ja* ) |
+    | Tillåt delning av leveransrad | Ange om en enda lastrad kan delas mellan flera laster, om den fullständiga raden överstiger maximumkapaciteten för lastmallen. | Reglerat (= *Nej* ) |
+    | Validera volymmetriker | Ange om lastuppbyggnaden bör kontrollerar vikten och volymen när varje lastrad läggs till för att säkerställa att lastmallens volymetriska gränser respekteras. | Reglerat (= *Nej* ) |
 
 1. I åtgärdsfönstret väljer du **Spara** om du vill göra alternativet **Redigera fråga** tillgängligt.
 1. I åtgärdsfönstret, välj **Redigera fråga** för att öppna en dialogruta för att redigera frågan.
@@ -216,7 +216,7 @@ Du kan ställa in så många mallar för belastningsuppbyggnad, som du behöver.
     - **Sökriktning:** *Stigande*
 
 1. Välj **OK** om du vill spara dina ändringar fråga och stänga dialogrutan.
-1. På snabbfliken **Dela efter** anger du regler som styr hur dina laster delas upp. Vanligtvis kan du dela på anpassade fält som har förlängts på lastraden, t.ex. **flöde**, **visning** eller **körning**. Om du till exempel vill skapa en last per ordernummer markerar du kryssrutan **Dela efter** för den rad som har följande värden:
+1. På snabbfliken **Dela efter** anger du regler som styr hur dina laster delas upp. Vanligtvis kan du dela på anpassade fält som har förlängts på lastraden, t.ex. **flöde** , **visning** eller **körning**. Om du till exempel vill skapa en last per ordernummer markerar du kryssrutan **Dela efter** för den rad som har följande värden:
 
     - **Referensregisternamn:** *Lastinformation*
     - **Namn på referensfält:** *Ordernummer*
@@ -238,12 +238,12 @@ Det här scenariot visar hur inställningarna som beskrevs tidigare i det här a
 1. Den nya försäljningsordern öppnas. Detta bör innehålla en ny tom rad i rutnätet på snabbfliken **försäljningsorderrader**. På den nya raden anger du fältet **Artikelnummer** till *A0001* och fältet **Kvantitet** till *1*.
 1. I menyn **Lager** ovanför rutnätet, välj **Reservation**.
 1. På sidan **Reservation** i åtgärdssfönstret väljer du **Reservera parti**.
-1. Välj knappen **Stäng** (**X**) överst till höger på sidan för att återgå till försäljningsordern.
-1. I åtgärdsfönstret **Lagerställe**, flik **åtgärder**, välj **Släpp till lagerställe**. Systemet skapar en försändelse och lägger till den i en ny last, eftersom ingen befintlig last innehåller lastrader som har det här ordernumret.
+1. Välj knappen **Stäng** ( **X** ) överst till höger på sidan för att återgå till försäljningsordern.
+1. I åtgärdsfönstret **Lagerställe** , flik **åtgärder** , välj **Släpp till lagerställe**. Systemet skapar en försändelse och lägger till den i en ny last, eftersom ingen befintlig last innehåller lastrader som har det här ordernumret.
 
     Du får informationsmeddelanden som anger vilket arbete, vilken påfyllnad och vilket leverans som skapas för den här ordern.
 
-1. Bekräfta informationen om last, leverans och arbete på försäljningsraden genom att markera raden och sedan välja menyn **Lagerställe** ovanför rutnätet, välj **Lastinformation**, **Leveransinformation** eller **Arbetsinformation**.
+1. Bekräfta informationen om last, leverans och arbete på försäljningsraden genom att markera raden och sedan välja menyn **Lagerställe** ovanför rutnätet, välj **Lastinformation** , **Leveransinformation** eller **Arbetsinformation**.
 1. I försäljningsordern som du just skapat på snabbfliken **Försäljningsorderrader** väljer du **Lägg till rad** om du vill lägga till ytterligare en rad.
 1. På den nya raden anger du fältet **Artikelnummer** till *A0002* och fältet **Kvantitet** till *1*.
 1. Upprepa raderna 6 till 9 om du vill reservera raden och släppa den på lagerstället. En **ny** leverans skapas för raden som du har lagt till i systemet. Eftersom du använder avancerad belastningsuppbyggnad under påfyllnad lägger systemet dock till leverans- och lastraden för den befintliga påfyllnaden. Om du inte använder avancerad belastningsuppbyggnad under påfyllnad skulle systemet skapa en ny last för leveransen.

@@ -1,7 +1,7 @@
 ---
 title: Konfigurera Azure-resurser för IoT-information
 description: I det här avsnittet beskrivs hur du skapar och konfigurerar de Microsoft Azure-resurser som krävs för IoT-information.
-author: ''
+author: robinarh
 manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bbac1676d28c7285c19ed48f77426a37ce123a29
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1277d2ab8bb1f2925874f7469250e164f6bde62d
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982904"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014922"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>Konfigurera Azure-resurser för IoT-information
 
@@ -122,7 +122,7 @@ Följ dessa steg när du vill konfigurera nyckelvalvet.
 1. Markera nyckelvalvsresursen bland dina resurser.
 2. I det vänstra navigeringsfönstret välj er du **Policyåtkomst**.
 3. Välj **Lägg till en åtkomstpolicy**.
-4. På sidan **Lägg till åtkomstpolicy**, i fältet **Hemliga behörigheter**, väljer du **Hämta** och **Lista**.
+4. På sidan **Lägg till åtkomstpolicy** , i fältet **Hemliga behörigheter** , väljer du **Hämta** och **Lista**.
 5. Klicka på i **Välj primär**.
 6. I dialogrutan **Primär** letar du upp och väljer **Microsoft Dynamics ERP Microservices**. Välj sedan **Välj**.
 7. Markera **Lägg till**.

@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 6810753c10d03999c38a6163687effd771076c15
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: 7b0ebfb965e5a8f1bfe1857a9642d998dac2faf3
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530062"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017131"
 ---
 # <a name="location-license-plate-positioning"></a>Placering för plats-ID-nummer
 
@@ -93,8 +94,8 @@ Funktionen måste vara aktiverad i platsprofilen för varje plats där den ska a
     ![Registerkopplingar](media/LpTableJoin.png "Registerkopplingar")
 
 1. Välj **OK** om du vill bekräfta de uppdaterade kopplade register och stäng frågeredigeraren.
-1. På snabbfliken **Platsdirektivåtgärd**, välj **Redigera fråga** igen för att öppna frågeredigeraren igen.
-1. På fliken **intervall**, välj **Lägg till** om du vill lägga till en rad i rutnätet.
+1. På snabbfliken **Platsdirektivåtgärd** , välj **Redigera fråga** igen för att öppna frågeredigeraren igen.
+1. På fliken **intervall** , välj **Lägg till** om du vill lägga till en rad i rutnätet.
 1. Ställ in följande värden på denna nya rad:
 
     - **Register:** *Plats för positionering av ID-nummer*
@@ -192,9 +193,9 @@ Arbetet har nu slutförts.
     Två arbets-ID ska ha skapats för dessa rader. Antalet för båda dessa arbets-ID måste accepteras.
 
 1. I rutnätet väljer du det första arbets-ID:t för arbetsordertypen *Rullande inventering*.
-1. I åtgärdsfönstret, på fliken **Arbete**, i gruppen **Arbete**, väljer du **Rullande inventering**.
+1. I åtgärdsfönstret, på fliken **Arbete** , i gruppen **Arbete** , väljer du **Rullande inventering**.
 
-    Två rader visas, en för varje artikel och ID-nummer. Värdena i fälten **Räknad kvantitet**, **Plats**, **ID-nummer** och **Artikel** bör matcha de inventeringsposter som du skapade på den mobila enheten. Om något av dessa fält inte visas väljer du **Visa dimensioner** i åtgärdsfönstret för att lägga till dem i rutnätet.
+    Två rader visas, en för varje artikel och ID-nummer. Värdena i fälten **Räknad kvantitet** , **Plats** , **ID-nummer** och **Artikel** bör matcha de inventeringsposter som du skapade på den mobila enheten. Om något av dessa fält inte visas väljer du **Visa dimensioner** i åtgärdsfönstret för att lägga till dem i rutnätet.
 
 1. Markera båda raderna.
 1. Välj **Godkänn inventering** i åtgärdsfönstret.
@@ -210,9 +211,9 @@ Arbetet har nu slutförts.
     Du kommer nu att acceptera arbetet för ID-numret på plats *01A01R1S2B*.
 
 1. På fliken **Översikt** väljer du det andra arbets-ID:t för arbetsordertypen *Rullande inventering*.
-1. I åtgärdsfönstret, på fliken **Arbete**, i gruppen **Arbete**, väljer du **Rullande inventering**.
+1. I åtgärdsfönstret, på fliken **Arbete** , i gruppen **Arbete** , väljer du **Rullande inventering**.
 
-    En rad visas för artikeln och ID-numret. Värdena i fälten **Räknad kvantitet**, **Plats**, **ID-nummer** och **Artikel** bör matcha de inventeringsposter som du skapade på den mobila enheten.
+    En rad visas för artikeln och ID-numret. Värdena i fälten **Räknad kvantitet** , **Plats** , **ID-nummer** och **Artikel** bör matcha de inventeringsposter som du skapade på den mobila enheten.
 
 1. Markera raden.
 1. Välj **Godkänn inventering** i åtgärdsfönstret.
@@ -236,12 +237,12 @@ Arbetet har nu slutförts.
 
 1. Lägg märke till att platsen *01A01R1S1B* har två ID-nummer:
 
-    - **A0001**, där fältet **LP-position** anges till *1*
-    - **A0002**, där fältet **LP-position** anges till *2*
+    - **A0001** , där fältet **LP-position** anges till *1*
+    - **A0002** , där fältet **LP-position** anges till *2*
 
 1. Lägg märke till att platsen *01A01R1S2B* har ett ID-nummer:
 
-    - **A0002**, där fältet **LP-position** anges till *1*
+    - **A0002** , där fältet **LP-position** anges till *1*
 
 ### <a name="sales-order-scenario"></a>Scenario för försäljningsorder
 
@@ -263,7 +264,7 @@ Nu när funktionen *positionering av ID-nummer* har ställts in och lagret har m
 1. I menyn **Lager** ovanför rutnätet, välj **Reservation**.
 1. På sidan **Reservation** i åtgärdsfönstret, välj **Reservera parti** för att reservera lager för orderraden.
 1. Stäng sidan **Reservation**.
-1. I åtgärdsfönstret **Lagerställe**, flik **åtgärder**, välj **Släpp till lagerställe**.
+1. I åtgärdsfönstret **Lagerställe** , flik **åtgärder** , välj **Släpp till lagerställe**.
 
     Du får ett informationsmeddelande som visar det påfyllnads-ID och leverans-ID som skapades för ordern.
 

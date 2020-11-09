@@ -3,7 +3,7 @@ title: Anslut ett experiment och redigera varianter
 description: I det här avsnittet beskrivs hur du ansluter ett experiment till en tredjepartstjänst till Dynamics 365 Commerce och hur du redigerar varianter för experimentet.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,16 +18,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ea1da0a7dc90b7197f3ee532bccc55d2ddbe4ddd
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: 030640ba8907ae52c198ac96ad2c243b533d8c53
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930294"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4096977"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Anslut ett experiment och redigera varianter
 
-I det här avsnittet beskrivs hur du ansluter ditt experiment i Commerce och ändrar varianterna så att de överensstämmer med din hypotes. I bilden nedan visas alla steg som ingår när du ställer in och kör ett experiment på en e-handelswebbplats i Dynamics 365 Commerce. Ytterligare steg beskrivs i olika avsnitt.
+I det här avsnittet beskrivs hur du ansluter ditt experiment i Commerce och ändrar varianterna så att de överensstämmer med din hypotes. 
+
+I bilden nedan visas alla steg som ingår när du ställer in och kör ett experiment på en e-handelswebbplats i Dynamics 365 Commerce. Ytterligare steg beskrivs i olika avsnitt.
 
 [ ![Experimentets användarresa - anslut och redigera](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
@@ -56,13 +58,15 @@ Mer information om publiceringsgrupper finns i [arbeta med publiceringsgrupper](
 ## <a name="connect-your-experiment"></a>Anslut ditt experiment
 Om du vill ansluta ditt experiment startar du guiden **Ansluta experiment**. Guiden vägleder dig genom de steg som krävs för att ansluta experimentet. När du slutför guiden är experimentet anslutet och varianter skapas och kan redigeras.
 
-1. Du startar guiden genom att välja fliken **experiment** i webbplatsskaparen och sedan välja **Anslut**. Du kan också få åtkomst till guiden från en sida eller en programredigerare. Välj **Anslut experiment** i kommandofältet i redigeringsläge.
+För att komma igång med att ansluta ditt experiment i Commerce webbplatsskaparen, följ dessa steg.
 
-> [!NOTE]
-> En sida kan bara kopplas till ett experiment åt gången. Om du vill ansluta en sida till ett annat experiment tar du först bort experimentet som sidan är ansluten till för tillfället.
+1. Starta guiden **Anslutningsförsök** genom att välja **Experiment** i det vänstra navigeringsfönstret och sedan välja **Anslut**. Du kan också öppna guiden från en sida eller ett fragmentredigerare genom att redigera den och välja **Anslut experiment** i kommandofältet.
+
+    > [!NOTE]
+    > En sida kan bara kopplas till ett experiment åt gången. Om du vill ansluta en sida till ett annat experiment tar du först bort experimentet som sidan är ansluten till för tillfället.
 
 1. Välj sidan eller fragmentet som du vill köra ditt experiment på.
-1. Ange att experimentets omfattning till **del** eller **hel**, baserat på det val du gjorde i avsnittet [avgör omfattningen av experiment](#determine-the-scope-of-your-experiment) ovan.
+1. Ange att experimentets omfattning till **del** eller **hel** , baserat på det val du gjorde i avsnittet [avgör omfattningen av experiment](#determine-the-scope-of-your-experiment) ovan.
     > [!NOTE]
     > Funktionen **Experiment på sidor eller fragment** måste vara aktiverat om du vill experimentera på hela sidan eller avsnittet. Se ämnet [Experimentera i Dynamics 365 Commerce](experimentation-overview.md) för mer information.
     
@@ -80,7 +84,7 @@ Följ dessa steg om du har definierat omfattningen av experimentet som ett **del
 1. Välj vilken modul som ska experimenteras, välj tre punkter (...) och välj sedan **Lägg till i experimentet**.
 
 ### <a name="edit-variations-for-experiments-with-entire-scope"></a>Redigera varianter för experiment med hel omfattning
-Om du har definierat omfattningen av experimentet som **hel** i guiden **Anslut experiment**, i redigeringsvy, använder du den nedrullningsbara menyn för varianter under kommandofältet för att redigera varje variant utifrån den ursprungliga hypotesen. 
+Om du har definierat omfattningen av experimentet som **hel** i guiden **Anslut experiment** , i redigeringsvy, använder du den nedrullningsbara menyn för varianter under kommandofältet för att redigera varje variant utifrån den ursprungliga hypotesen. 
 
 > [!NOTE]
 > Du kanske också vill fastställa en kontroll eller en basvariant genom att lämna någon av varianterna oförändrad.

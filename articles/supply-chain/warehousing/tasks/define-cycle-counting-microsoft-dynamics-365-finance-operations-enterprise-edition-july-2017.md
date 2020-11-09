@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSParameters, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1503ef3646657a4b7bb7e240144af2ac559a62d0
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: a8b7f39fc9a91d9fe219445e409d000266e24775
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383031"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016158"
 ---
 # <a name="define-cycle-counting"></a>Definiera rullande inventering  
 
@@ -37,7 +38,7 @@ Rullande inventering är en lagerställesprocess som du kan använda för att ko
 5. Stäng sidan.
 
 ## <a name="enable-the-mobile-device"></a>Aktivera den mobila enheten
-1. I **Navigeringsfönster**, gå till **Moduler > Lagerstyrning > Inställningar > Mobil enhet > Menyalternativ på mobil enhet**.
+1. I **Navigeringsfönster** , gå till **Moduler > Lagerstyrning > Inställningar > Mobil enhet > Menyalternativ på mobil enhet**.
 2. Klicka på **Ny**.
 3. Ange ett värde i fältet **Menyalternativnamn**.
 4. Ange ett värde i fältet **Rubrik**.
@@ -49,9 +50,9 @@ Rullande inventering är en lagerställesprocess som du kan använda för att ko
 10. Välj ett värde i fältet **Arbetsklass-ID**.
 11. Klicka på **Ny**.
 12. Välj ett värde i fältet **Arbetsklass-ID**.
-13. I **åtgärdsfönstret**, klicka på **Spara**.
+13. I **åtgärdsfönstret** , klicka på **Spara**.
 14. Stäng sidan.
-15. I **Navigeringsfönster**, gå till **Moduler > Lagerstyrning > Inställningar > Mobil enhet > Meny på mobil enhet**.
+15. I **Navigeringsfönster** , gå till **Moduler > Lagerstyrning > Inställningar > Mobil enhet > Meny på mobil enhet**.
 16. Hitta och markera önskad post i listan.
 17. Välj menykommandot som du nyss skapat i trädet.
 18. Klicka på **Redigera**.
@@ -59,7 +60,7 @@ Rullande inventering är en lagerställesprocess som du kan använda för att ko
 20. Klicka på **Spara**.
 
 ## <a name="create-a-counting-threshold"></a>Skapa en tröskel för rullande inventering
-1. I **navigeringsfönster**, gå till **Moduler > Lagerstyrning > Inställningar > Rullande inventering > Trösklar för rullande inventering**.
+1. I **navigeringsfönster** , gå till **Moduler > Lagerstyrning > Inställningar > Rullande inventering > Trösklar för rullande inventering**.
 2. Klicka på **Ny**.
 3. Skriv ett värde i fältet **Tröskel-ID för rullande inventering**.
 4. Ange alternativet **Bearbeta rullande inventering direkt** till Ja.
@@ -72,7 +73,7 @@ Rullande inventering är en lagerställesprocess som du kan använda för att ko
 11. Stäng sidan.
 
 ## <a name="create-a-cycle-count-plan"></a>Skapa en plan för rullande inventering
-1. I **navigeringsfönster**, gå till **Moduler > Lagerstyrning > Inställningar > Rullande inventering > Planer för rullande inventering**.
+1. I **navigeringsfönster** , gå till **Moduler > Lagerstyrning > Inställningar > Rullande inventering > Planer för rullande inventering**.
 2. Klicka på **Ny**.
 3. Skriv ett värde i fältet **Plan-ID för rullande inventering**.
 4. I fältet **Beskrivning** anger du ett värde.

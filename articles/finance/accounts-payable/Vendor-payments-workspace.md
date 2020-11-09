@@ -3,7 +3,7 @@ title: Arbetsyta för leverantörsbetalningar
 description: Det här avsnittet innehåller information om arbetsytan för leverantörsbetalningar. Arbetsyta för leverantörsbetalningar visar information kopplad till behandling av leverantörsbetalningar.
 author: abruer
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 86091e16712092086a641d79e49afbc5b205e934
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: 39a9ba54ba26db5904c2cd519be9f83bbc68c037
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598119"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022529"
 ---
 # <a name="vendor-payments-workspace"></a>Arbetsyta för leverantörsbetalningar
 
@@ -32,7 +32,7 @@ Arbetsytan **Leverantörsbetalningar** visar information kopplad till behandling
 
 ## <a name="setup-needed-to-view-power-bi-content"></a>Installationen som behövs för att visa Power BI-innehåll
 
-Följande inställningar måste slutföras för att data ska visas i **Leverantörsbetalningar**Power BI-visualiseringar.
+Följande inställningar måste slutföras för att data ska visas i **Leverantörsbetalningar** Power BI-visualiseringar.
 1. Gå till **systemadministrations > inställningar > systemparametrar** för att ställa in **Systemvaluta** och **Systemets valutakurs**.
 2. Gå till **Redovisning > kalendrar > räkenskapskalendrar** om du vill validera räkenskapskalender datum som tilldelats den aktiva tidsperioden.
 3. Gå till **redovisning > Inställningar > redovisning** om du vill ange **redovisningsvaluta** och **valutakurstyp**. 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 756924c87ced7cd2d5fc4e7c2a01b571558d3550
-ms.sourcegitcommit: 06f64550b2043582de4018bdd3924fcc1fd5d310
+ms.openlocfilehash: 1b18965b41822c6ae6c263948c6605a229277165
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3801468"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012331"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.8 (februari 2020)
 
@@ -36,13 +36,14 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
-Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](https://docs.microsoft.com/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. Vissa av dessa funktioner kan också ha inkluderats i en tidigare stegvis version, men inte annonserats i föregående avsnitt *Nyheter*, så vi lägger till dem här. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
+Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](https://docs.microsoft.com/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. Vissa av dessa funktioner kan också ha inkluderats i en tidigare stegvis version, men inte annonserats i föregående avsnitt *Nyheter* , så vi lägger till dem här. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
 
 - [Ytterligare platszoner](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
+
 - [Tillgångshantering](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - Mer information finns i [Översikt för tillgångshantering](../asset-management/index.md).
 - [Avbryt arbete](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - Mer information finns i [Avbryt lagerarbete för undantagshantering](../warehousing/cancel-warehouse-work.md).
 - [Ändra arbetspool för arbete](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - Mer information finns i [Ändra arbetspool för arbetsuppgift](../warehousing/change-work-pool-on-work.md).
-- [Klusterposition full](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full) - För mer information, se [Klusterposition full](../warehousing/cluster-position-full.md).
+- [Klusterposition full](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)<br> - Mer information finns i [klusterbefattningen är full](../warehousing/cluster-position-full.md).
 - [Bekräfta och överför](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - Mer information finns i [Bekräfta och överför](../warehousing/confirm-and-transfer.md).
 - [Platsdirektiv för plockning i åldersfördelat lager](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - Mer information finns i [Platsdirektiv för plockning i åldersfördelat lager](../warehousing/location-directive-inventory-picking-aging.md).
 - [Platsens status](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, SalesTable
+ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, PurchTablePart, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6acfdf819ffce496f0a9b5d6242b55d857510b49
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 532f437bee490743847cf5617579c579f9202b71
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986609"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018340"
 ---
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Sök efter produkter och produktvarianter under orderregistrering
 
@@ -44,7 +44,7 @@ När du söker efter produkter eller produktvarianter är det viktigt att du f�
 
 ### <a name="examples"></a>Exempel
 
-I följande exempel används produkter och produktvarianter för att visa hur sökningen hanteras i olika scenarier. **Förutsättning:** Under **Försäljning och marknadsföring &gt; Inställningar &gt; Sök &gt; Sökparametrar &gt; Söktyp**, väljer du alternativet **Fullständig matchning**.
+I följande exempel används produkter och produktvarianter för att visa hur sökningen hanteras i olika scenarier. **Förutsättning:** Under **Försäljning och marknadsföring &gt; Inställningar &gt; Sök &gt; Sökparametrar &gt; Söktyp** , väljer du alternativet **Fullständig matchning**.
 
 | Produkttyp     | Produktnamn    | Visa produktnummer | Artikelnummer | Inställningar |
 |------------------|-----------------|------------------------|-------------|---------------|
@@ -65,11 +65,11 @@ Gör på följande sätt för att konfigurera produktsökningen innan du kan anv
 
 ### <a name="step-1include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Steg 1: Inkludera alla relevanta produkter och produktvariantidentifierare och dimensioner i sökvillkoren
 
-Exempel på produkt- och produktvariantidentifierare och dimensioner som du kan söka med är  **Produktnamn, artikelnummer**, **Visa produktnummer, konfiguration, storlek, färg, utförande, söknamn, etc.**.  
+Exempel på produkt- och produktvariantidentifierare och dimensioner som du kan söka med är  **Produktnamn, artikelnummer** , **Visa produktnummer, konfiguration, storlek, färg, utförande, söknamn, etc.**.  
 
 Gå till sidan **Försäljning och marknadsföring &gt; Inställningar &gt; Sök &gt; Sökvillkor**. Sidan **Sökkriterier** låter dig definiera kriterier för kund, potentiell kund och produktsökning. Se till att filtrera sidan genom att använda produktsökvillkor. Detta kan du göra genom att växla till **Produkt** på sidans meny.  
 
-Om du vill lägga till produktvisningsnumret till sökvillkoren klickar du på **Ny** på sidans meny. Då läggs en ny post till i rutnätet **Sökvillkor**. Öppna kolumnen **Fältnamn**-sökningen och välj **DisplayProductNumber**. För att lägga till produktens konfiguration till sökkriterierna skapar du en ny post i rutnätet **Sökkriterier** och väljer **configId** i kolumnen **Fältnamn**. På samma sätt skapar du en post med **Fältnamn** **InventColorId** för färgdimensionen, **InventSizeId** för storleksdimensionen och **InventStyleId** för utförandedimensionen.
+Om du vill lägga till produktvisningsnumret till sökvillkoren klickar du på **Ny** på sidans meny. Då läggs en ny post till i rutnätet **Sökvillkor**. Öppna kolumnen **Fältnamn** -sökningen och välj **DisplayProductNumber**. För att lägga till produktens konfiguration till sökkriterierna skapar du en ny post i rutnätet **Sökkriterier** och väljer **configId** i kolumnen **Fältnamn**. På samma sätt skapar du en post med **Fältnamn** **InventColorId** för färgdimensionen, **InventSizeId** för storleksdimensionen och **InventStyleId** för utförandedimensionen.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Steg 2: Fyll i databasregistret som används för produktsökning
 

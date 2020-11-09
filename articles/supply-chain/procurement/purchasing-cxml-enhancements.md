@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: cd0435fd89050311ecd4f24400d5830cbcf8fdfd
-ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
+ms.openlocfilehash: d7184f14ab67d646451c8c2b1313336d47e59316
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826935"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018317"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Förbättringar i inköps-cXML
 
@@ -64,7 +65,7 @@ Gå till **Anskaffning och källa \> inställningar \> cXML-hantering \> cXML-pa
 
 ## <a name="set-up-vendor-purchase-orders-to-use-cxml"></a><a name="vendor-setup"></a>Ange inköpsorder för leverantör för att använda cXML
 
-Varje gång du bekräftar en inköpsorder där alternativet **Skicka inköps order via cXML** anges till _Ja_, genererar systemet automatiskt cXML-meddelandet och levererar det till den leverantör som är kopplad till den inköpsordern. Det finns två sätt att kontrollera det här alternativet för dina inköpsorder:
+Varje gång du bekräftar en inköpsorder där alternativet **Skicka inköps order via cXML** anges till _Ja_ , genererar systemet automatiskt cXML-meddelandet och levererar det till den leverantör som är kopplad till den inköpsordern. Det finns två sätt att kontrollera det här alternativet för dina inköpsorder:
 
 - Om du vill ställa in en leverantör så att den automatiskt använder cXML för alla nya inköpsorder som skapas från en rekvisition, gå till **Anskaffning och källa \> Leverantörer \> Alla leverantörer** och välj eller skapa en leverantör för att öppna sidan med information om sidan. På snabbfliken **Standardvärden för inköpsorder** anger du alternativet **Skicka inköpsorder via cXML** till _Ja_. Om cXML även ska användas automatiskt för nya inköpsorder som **inte** skapas från en rekvisition, måste du också ställa in egenskapen **ENABLEMANUALPO** till _True_ för den relaterade externa katalogen, enligt beskrivningen i [Ange orderegenskaper](#set-order-properties) senare i det här avsnittet.
 - För enskilda inköpsorder går du till **Anskaffning och källa \> Inköpsorder \> Alla inköpsorder** och väljer eller skapar en inköpsorder för att öppna sidan information om den. Växla till vyn **Huvud** och sedan på snabbfliken **Inställningar** ange alternativet **Skicka inköpsorder via cXML** efter behov.
@@ -73,7 +74,7 @@ Varje gång du bekräftar en inköpsorder där alternativet **Skicka inköps ord
 
 ## <a name="set-up-an-external-catalog-to-use-cxml"></a><a name="external-catalog-setup"></a>Ställ in en extern katalog till att använda cXML
 
-På sidan **Externa kataloger**, för varje katalog, kan du ställa in funktionerna för PunchOut och funktionen för att skicka inköpsorder. Om du vill söka efter relevanta inställningar går du till **Anskaffning och källa \> Kataloger \> Externa kataloger**. Börja med att [ställa in varje katalog som vanligt](set-up-external-catalog-for-punchout.md). Processen omfattar tilldelning av en leverantör, val av de kategorier som leverantören har tillåtelse att leverera och aktiverar katalogen. Konfigurera sedan de ytterligare inställningar som beskrivs i det här avsnittet.
+På sidan **Externa kataloger** , för varje katalog, kan du ställa in funktionerna för PunchOut och funktionen för att skicka inköpsorder. Om du vill söka efter relevanta inställningar går du till **Anskaffning och källa \> Kataloger \> Externa kataloger**. Börja med att [ställa in varje katalog som vanligt](set-up-external-catalog-for-punchout.md). Processen omfattar tilldelning av en leverantör, val av de kategorier som leverantören har tillåtelse att leverera och aktiverar katalogen. Konfigurera sedan de ytterligare inställningar som beskrivs i det här avsnittet.
 
 > [!NOTE]
 > När du bekräftar en inköpsorder som kan skickas via cXML, letar systemet upp den leverantör som är kopplad till inköpsordern och söker sedan efter den första aktiva externa katalogen som är kopplad till leverantören. Därefter använder systemet de inställningar från den externa katalogen för att skicka inköpsordern. Om flera externa kataloger har ställts in, använder systemet bara den första externa katalogen som den hittar, baserat på leverantören på inköpsordern. Därför rekommenderar vi att du skapar en enda extern katalog för varje leverantör.
@@ -118,20 +119,20 @@ Använd standardegenskaperna på följande sätt:
 - **RESPONSETEXT** – ange valfri anpassad text som du tror att leverantören ska returnera i cXML-svarsmeddelandet efter att ordern har skickats. På så sätt kan systemet markera meddelandet som _bekräftat_. Om svaret inte matchar standardtext eller kundtexten som du anger här, markeras förfrågan som ett _fel_.
 - **RESPONSETEXTSUB** – Ange den här egenskapen till _TRUE_ om du vill söka efter leverantörens svarstext för de värden som anges i fältet **RESPONSETEXT**. Leverantören kan till exempel returnera en lång sträng som innehåller "OK" i svaret. I det här fallet kan du ange _OK_ i fältet **RESPONSETEXT** och ställa in **RESPONSETESTSUB** på _TRUE_ om du vill söka efter "OK" var som helst i svaret. Ordern kan sedan ställas in på _bekräftad_.
 - **CONTENTTYPE** – du behöver inte ställa in den här egenskapen för en typisk kataloginställning. Om du får ett server 500-fel från leverantörens system när du skickar en inköpsorder, kan du utföra tester genom att ge egenskapen värdet _FALSE_. Det värdet kommer att ändra en inställning i webbförfrågningen och kan göra det möjligt att skicka meddelandet för vissa plattformar.
-- **ENABLEHEADERS** – Ange den här egenskapen till _TRUE_ för att skicka rubriker tillsammans med inköpsordern. Du måste bara ange den här egenskapen om leverantören kräver det. Om du ställer in den här egenskapen på _TRUE_ lägger du till extra anpassade egenskaper som baseras på de namn som leverantören tillhandahåller och ger dem prefixet _H\__. Typiska exempel är **H\_USERID**, **H\_PASSWORD**, **H\_RECEIVERID** och **H\_ACTIONREQUEST**. Följande anpassade egenskaper ingår i standardegenskaperna:
+- **ENABLEHEADERS** – Ange den här egenskapen till _TRUE_ för att skicka rubriker tillsammans med inköpsordern. Du måste bara ange den här egenskapen om leverantören kräver det. Om du ställer in den här egenskapen på _TRUE_ lägger du till extra anpassade egenskaper som baseras på de namn som leverantören tillhandahåller och ger dem prefixet _H\__. Typiska exempel är **H\_USERID** , **H\_PASSWORD** , **H\_RECEIVERID** och **H\_ACTIONREQUEST**. Följande anpassade egenskaper ingår i standardegenskaperna:
 
     - **H\_USERID** – om handelspartnern kräver att du skickar ett användar-ID som en del av URL:en för att skicka en inköpsorder anger du värdet här.
     - **H\_PASSWORD** – om handelspartnern kräver att du skickar ett lösenord som en del av URL:en för att skicka en inköpsorder anger du värdet här.
 
 - **ENABLEMANUALPO** – om den här egenskapen har värdet _TRUE_ och användarna manuellt skapar inköpsorder (dvs. när de inte startar från en rekvisition) ärver dessa inköpsorderinställningen för alternativet **Skicka inköpsorder via cXML** från leverantören. Om den här egenskapen inte anges, eller om den har värdet _FALSE_ kommer alternativet **Skicka inköpsorder via cXML** inte att ställas in i inköpsorderrubriken för manuellt skapade inköpsorder. För inköpsorder som skapas från en rekvisition ärvs inställningen för alternativet **Skicka inköpsorder via cXML** alltid från leverantören, oavsett inställningen för den här egenskapen. Mer information finns i avsnittet [Ställa in leverantörs inköpsorder för att använda cXML](#vendor-setup) tidigare i det här avsnittet.
 - **PUNCHOUTPOONLY** – om den här egenskapen har värdet _TRUE_ kommer endast inköpsrekvisitionsrader som skapas från funktionen PunchOut att ställa in alternativet **Skicka inköpsorder via cXML** i inköpsorderrubriken. Dessutom måste inköpsrekvisitionens radtyp för alla rader på inköpsordern vara _extern katalogartikel_. I annat fall kan cXML inköpsordern inte skapas.
-- **PUNCHOUTSHIPTO** – om den här egenskapen har värdet _TRUE_ läggs standardadressen för den juridiska personen till i meddelandet om inställning av PunchOut när användaren öppnar en extern katalog. Den här adressen läggs till som **ShipTo**-adress. Leverantörer använder **ShipTo**-adress för att visa prissättning utifrån företagets plats.
+- **PUNCHOUTSHIPTO** – om den här egenskapen har värdet _TRUE_ läggs standardadressen för den juridiska personen till i meddelandet om inställning av PunchOut när användaren öppnar en extern katalog. Den här adressen läggs till som **ShipTo** -adress. Leverantörer använder **ShipTo** -adress för att visa prissättning utifrån företagets plats.
 - **TRACEPUNCHOUT** – Ange den här egenskapen till _TRUE_ om du får ett felmeddelande när du försöker bläddra till en extern katalog från rekvisitionen. Spårningsinformation fylls sedan i för meddelanden **PunchOutSetupRequest** och **PunchOutResponse** som skickas mellan Supply Chain Management och leverantörens webbplats. Du kan visa den här informationen på sidan **meddelandelogg för cXML-kundvagn** som du kan öppna från sidan **Extern kataloginställning** för den leverantörskatalog som du har problem med. Du bör bara ställa in den här egenskapen på _TRUE_ om du felsöker, eftersom den skapar en stor prestanda i databasen för varje PunchOut. Mer information finns i avsnittet [Vissa meddelandelogg för cXML-kundvagn för extern katalog för PunchOut](#message-log) senare i det här avsnittet.
-- **REPLACENEWLINE** – Ange den här egenskapen _TRUE_ om du har problem eftersom en leverantörs system skickar ett **PunchOutResponse**-meddelande som innehåller radinmatningstecken (\\n). Det här problemet kan uppstå om leverantörens meddelanden har parsats mellan mellanprogram eller ett inköpsnav. Om du har problem med en ny leverantörsinställning ställer du in egenskapen **TRACEPUNCHOUT** till _TRUE_ för att visa meddelandet **PunchOutResponse** och bestämma om XML-taggarna är uppdelade efter radinmatningstecken.
+- **REPLACENEWLINE** – Ange den här egenskapen _TRUE_ om du har problem eftersom en leverantörs system skickar ett **PunchOutResponse** -meddelande som innehåller radinmatningstecken (\\n). Det här problemet kan uppstå om leverantörens meddelanden har parsats mellan mellanprogram eller ett inköpsnav. Om du har problem med en ny leverantörsinställning ställer du in egenskapen **TRACEPUNCHOUT** till _TRUE_ för att visa meddelandet **PunchOutResponse** och bestämma om XML-taggarna är uppdelade efter radinmatningstecken.
 - **POCOMMENTS** – Ange den här egenskapen till _TRUE_ om du vill att cXML-dokumentet ska innehålla noteringar som är kopplade till inköpsordern i Supply Chain Management. Den bifogade texten tas med i rubrikkommentarerna i inköpsordermeddelandet. Mer information om hur dessa bifogade filer markeras och bearbetas i systemet finns i [bifoga noteringar till en inköpsorder](#attach-po-notes) senare i det här avsnittet.
 - **VENDCOMMENTS** – Ange den här egenskapen till _TRUE_ om du vill att cXML-dokumentet ska innehålla noteringar som är kopplade till inköpsordern i Supply Chain Management. Den bifogade texten tas med i rubrikkommentarerna i inköpsordermeddelandet. Mer information om hur dessa bifogade filer markeras och bearbetas i systemet finns i avsnittet [bifoga noteringar till en inköpsorder](#attach-po-notes).
 - **CLEANAMP** – Ange den här egenskapen till _TRUE_ om ett fel meddelande visas när du försöker att göra en PunchOut till en leverantör och leverantörens retur-URL innehåller felaktigt kodade et-tecken (\&).
-- **PUNCHOUTTZ** – Ange den här egenskapen till _TRUE_ om den leverantör som du arbetar med använder (Internationella standardiseringsorganisationen) 8601 ISO-standard för att utföra en specifik validering av begärandemeddelandet om PunchOut datum/tid. Supply Chain Management använder datumet Coordinated Universal Time (UTC) i **PunchOutSetupRequest**-meddelandet. Därför när du anger den här egenskapen till _TRUE_, läggs *+00:00* till i formatet datum/tid.
+- **PUNCHOUTTZ** – Ange den här egenskapen till _TRUE_ om den leverantör som du arbetar med använder (Internationella standardiseringsorganisationen) 8601 ISO-standard för att utföra en specifik validering av begärandemeddelandet om PunchOut datum/tid. Supply Chain Management använder datumet Coordinated Universal Time (UTC) i **PunchOutSetupRequest** -meddelandet. Därför när du anger den här egenskapen till _TRUE_ , läggs *+00:00* till i formatet datum/tid.
 - **WMSADDRESSID** – Ange den här egenskapen till _TRUE_ för att använda lagerställenumret i inköpsorderrubriken som värdet **addressID** i adressen **ShipTo** för den inköpsorderbegäran som skickas till leverantören. Om du anger ett värde för egenskapen **FIXEDSHIPADDRESSID** har det värdet företräde framför detta värde. Därför bör du använda en av egenskaperna eller den andra för att ange värdet **addressID** i addressen **ShipTo** för dokumentet.
 - **PUNCHOUTSHIPTOUSER** – den här egenskapen fungerar tillsammans med egenskapen **PUNCHOUTSHIPTO**. Om **PUNCHOUTSHIPTO** anges till _TRUE_ hämtas adressen för den juridiska personen. Om **PUNCHOUTSHIPTOUSER** anges till _TRUE_ används den primära adressen från den användare som använder PunchOut-funktionen istället för adressen till den juridiska personen.
 
@@ -147,7 +148,7 @@ Om du vill ange vilka typer av anteckningar som systemet ska söka efter går du
 
 ![Formulär inställningssida](media/cxml-form-setup.png "Formulär inställningssida")
 
-Bilagor ingår endast i en inköpsorder om deras fält **Typ** anges till värdet du har valt i fältet **Inkludera dokument av typen** och om deras fält **Begränsning** anges till _Extern_. Gå till om du vill skapa, visa eller redigera bilagorna för en inköpsorder **Anskaffning och källa \> Alla inköpsorder**, väljer eller skapar du en inköpsorder och markerar sedan knappen **Bifogade filer** (gemsymbol) i det övre högra hörnet.
+Bilagor ingår endast i en inköpsorder om deras fält **Typ** anges till värdet du har valt i fältet **Inkludera dokument av typen** och om deras fält **Begränsning** anges till _Extern_. Gå till om du vill skapa, visa eller redigera bilagorna för en inköpsorder **Anskaffning och källa \> Alla inköpsorder** , väljer eller skapar du en inköpsorder och markerar sedan knappen **Bifogade filer** (gemsymbol) i det övre högra hörnet.
 
 ![Kopplad notering som har ställts in för att skickas till en leverantör](media/cxml-note-to-vendor.png "Kopplad notering som har ställts in för att skickas till en leverantör")
 
@@ -182,7 +183,7 @@ Om du vill lägga till extrinsic-element i en extern katalog följer du stegen n
 
 ![Extrinsic-elementinställningar](media/cxml-extrinsics.png "Extrinsic-elementinställningar")
 
-Användaren eller administratören ser inte extrinsic-elementen eftersom de inte läggs till förrän användaren har en PunchOut. De infogas automatiskt mellan **BuyerCookie** och **BrowserFromPost**-elementen i begärandemeddelandet för cXML-inställning. Därför behöver du inte ställa in dem manuellt i XML-filen när du ställer in den externa katalogen.
+Användaren eller administratören ser inte extrinsic-elementen eftersom de inte läggs till förrän användaren har en PunchOut. De infogas automatiskt mellan **BuyerCookie** och **BrowserFromPost** -elementen i begärandemeddelandet för cXML-inställning. Därför behöver du inte ställa in dem manuellt i XML-filen när du ställer in den externa katalogen.
 
 ![Extrinsic-element har lagts till i XML](media/cxml-extrinsics-xml.png "Extrinsic-element har lagts till i XML")
 
@@ -196,7 +197,7 @@ När du skapar en inköpsorder från en inköpsrekvisition som kom från ett Pun
 
 ![Exempel på ett externt referensnummer](media/cxml-line-details.png "Exempel på ett externt referensnummer")
 
-När du har fyllt i all information om inköpsordern måste du bekräfta den. Inget meddelande skickas om inte inköpsordern bekräftas. För att bekräfta en inköpsorder, i åtgärdsfönstret på fliken **Inköp** i gruppen **Åtgärder**, välj **Bekräfta**. 
+När du har fyllt i all information om inköpsordern måste du bekräfta den. Inget meddelande skickas om inte inköpsordern bekräftas. För att bekräfta en inköpsorder, i åtgärdsfönstret på fliken **Inköp** i gruppen **Åtgärder** , välj **Bekräfta**. 
 
 När inköpsordern har bekräftats kan du visa bekräftelsens status genom journalerna **Bekräftelser av inköpsorder**. I åtgärdsfönstret på fliken **Inköp** i gruppen **Journaler** väljer du **Bekräftelser av inköpsorder**.
 
@@ -216,7 +217,7 @@ Om batch-jobbet har ställts in och körs kommer dokumentet att skickas. Du kan 
 
 ## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>Tidsplanera batch-jobbet för begäran om inköpsorder
 
-För att aktivera batchjobbet för att skicka inköpsorderförfrågningar, gå till **Anskaffning och källa \> Inställningar \> cXML-hantering \> Förfrågan om inköpsorder** och åtgärdsfönstret på fliken **Förfrågan om inköpsorder** i gruppen **Batch**, välj **Skicka jobb** för att öppna dialogrutan **Inköpsförfrågan förbereda och skicka**. Du kan använda den här dialogrutan när du vill ställa in återkommande intervall, på samma sätt som du vanligtvis använder batch-jobb i Supply Chain Management. Välj ett intervall, baserat på din ordervolym. Även om du kan köra batch-jobbet varje minut är det förmodligen bäst att skicka batchar under hela arbetsdagen, baserat på det orderkvitto som matchar leverantörens scheman.
+För att aktivera batchjobbet för att skicka inköpsorderförfrågningar, gå till **Anskaffning och källa \> Inställningar \> cXML-hantering \> Förfrågan om inköpsorder** och åtgärdsfönstret på fliken **Förfrågan om inköpsorder** i gruppen **Batch** , välj **Skicka jobb** för att öppna dialogrutan **Inköpsförfrågan förbereda och skicka**. Du kan använda den här dialogrutan när du vill ställa in återkommande intervall, på samma sätt som du vanligtvis använder batch-jobb i Supply Chain Management. Välj ett intervall, baserat på din ordervolym. Även om du kan köra batch-jobbet varje minut är det förmodligen bäst att skicka batchar under hela arbetsdagen, baserat på det orderkvitto som matchar leverantörens scheman.
 
 Leverantören har till exempel en policy som anger att alla order som inlevereras kl. 13:00 kommer att skickas samma dag. I så fall behöver du bara köra batchen några gånger under morgon för att kunna kommunicera alla beställningar som du har. Resten av order kommer sedan att skickas nästa dag. Det här beslutet är ett rent affärsbeslut. Du kan granska den och ställa in parametrarna för det efter detta.
 

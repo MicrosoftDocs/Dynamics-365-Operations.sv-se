@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8d030afb568b158e6caf48b0044d595d6ec024f6
-ms.sourcegitcommit: 06f64550b2043582de4018bdd3924fcc1fd5d310
+ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3802224"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016181"
 ---
 # <a name="cluster-position-full"></a>Klusterposition full
 
@@ -53,7 +54,7 @@ Du måste ange om kluster-ID ska genereras automatiskt, hur många positioner so
 
 1. Gå till **lagerstyrning \> inställningar \> mobiltelefon \> klusterprofiler**.
 1. I listfönstret, välj **Skapa kluster**.
-1. Ange följande värden på snabbfliken **Allmänt**:
+1. Ange följande värden på snabbfliken **Allmänt** :
 
     - **Generera kluster-ID:** *Ja*
     - **Aktivera positioner:** *Ja*
@@ -93,7 +94,7 @@ Du måste konfigurera ett menyalternativ för mobila enheter för att använda b
 1. Gå till **Lagerstyrning \> Inställningar \> Mobil enhet \> Menyalternativ på mobil enhet**.
 1. I listfönstret, välj **Skapa klusterplockning**.
 1. Välj **Redigera** i åtgärdsfönstret.
-1. Ange följande värden på snabbfliken **Allmänt**:
+1. Ange följande värden på snabbfliken **Allmänt** :
 
     - **Dirigerad av:** *klusterplockning*
     - **Generera ID-nummer:** *Ja*
@@ -201,7 +202,7 @@ Två arbets-ID ska ha skapats, där alla har två plockningsrader. Följ dessa s
 1. Markera raden för varje försäljningsorder om du vill visa relaterad information i rutnätet **rader**. Anteckna platsen som varje artikel ska plockas från.
 1. Gå till **Lagerhantering \> Förfrågningar och rapporter \> Behållningslista**.
 1. I åtgärdsfönstret välj **Dimensioner** om du vill öppna dialogrutan **Dimensionsvisning**.
-1. Kontrollera att kryssrutorna **ID-nummer**, **Lagerställe** och **Artikelnummer** är markerade och välj sedan **OK**.
+1. Kontrollera att kryssrutorna **ID-nummer** , **Lagerställe** och **Artikelnummer** är markerade och välj sedan **OK**.
 1. I rutan **Filter** ange följande filter:
 
     - **Artikelnummer** – **är ett av** – *L0101* och *T100*
@@ -236,10 +237,10 @@ Du kan när som helst under följande steg välja fliken **Detaljer** vill visa 
 
     Sidan **UPPGIFT: sortera: skapa plockningsklustret** visas. Här kan du sortera de två plockade lastpallarna på en plockposition. Den här befattningen kan vara en last eller en behållare som används för att separera det plockade lagret efter försäljningsorder.
 
-1. Visa de detaljer som visas för artikeln (*L0101*) och kvantiteten (*20* ea) som ska sorteras i position 1 (för försäljningsorder 1).
+1. Visa de detaljer som visas för artikeln ( *L0101* ) och kvantiteten ( *20* ea) som ska sorteras i position 1 (för försäljningsorder 1).
 1. Ställ in fältet **POSITION NA** till *1*.
 1. Välj **OK** (kryssmarkeringssymbol).
-1. Visa de detaljer som visas för artikeln (*L0101*) och kvantiteten (*20* ea) som ska sorteras i position 2 (för försäljningsorder 2).
+1. Visa de detaljer som visas för artikeln ( *L0101* ) och kvantiteten ( *20* ea) som ska sorteras i position 2 (för försäljningsorder 2).
 1. Ställ in fältet **POSITION NA** till *2*.
 1. Välj **OK** (kryssmarkeringssymbol).
 
@@ -258,10 +259,10 @@ I det här scenariot kan position 1 inte acceptera hela kvantiteten av artiklar 
 1. Välj **OK** (kryssmarkeringssymbol).
 1. Ange det ID-nummer som artikeln plockas från genom att ställa in fältet **LP** på *LPREPL04* .
 1. Välj **OK** (kryssmarkeringssymbol).
-1. Visa de detaljer som visas för artikeln (*T0100*) och kvantiteten (*2* ea) som ska sorteras i position 2 (för försäljningsorder 2).
+1. Visa de detaljer som visas för artikeln ( *T0100* ) och kvantiteten ( *2* ea) som ska sorteras i position 2 (för försäljningsorder 2).
 1. Ställ in fältet **POSITION NA** till *2*.
 1. Välj **OK** (kryssmarkeringssymbol).
-1. Visa de detaljer som visas för artikeln (*T0100*) och kvantiteten (*2* ea) som ska sorteras i position 1 (för försäljningsorder 1).
+1. Visa de detaljer som visas för artikeln ( *T0100* ) och kvantiteten ( *2* ea) som ska sorteras i position 1 (för försäljningsorder 1).
 1. Ställ in fältet **POSITION NA** till *1*.
 1. Välj **OK** (kryssmarkeringssymbol).
 

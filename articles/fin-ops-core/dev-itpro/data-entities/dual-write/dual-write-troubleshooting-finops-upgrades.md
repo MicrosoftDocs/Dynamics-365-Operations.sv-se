@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 53df00de82b101aa02160d865a9c3bbebcfcae15
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 07d6bd0bab796d7839daa2bad91f7e88c2e881b5
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275474"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997928"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Felsöka problem som rör uppgraderingar av Finance and Operations-appar
 
@@ -54,7 +53,7 @@ Gör så här om du vill åtgärda problemet.
 1. Logga in på den virtuella datorn (VM) för Finance and Operations-appen.
 2. Öppna Visual Studio som administratör och öppna programobjektträd (AOT).
 3. Sök efter **DualWriteProjectConfiguration**.
-4. I programobjektträdet högerklickar du på **DualWriteProjectConfiguration**och väljer **Lägg till i nytt projekt**. Välj **OK** om du vill skapa det nya projekt som använder standardalternativ.
+4. I programobjektträdet högerklickar du på **DualWriteProjectConfiguration** och väljer **Lägg till i nytt projekt**. Välj **OK** om du vill skapa det nya projekt som använder standardalternativ.
 5. I Solution Explorer, högerklicka på **projektegenskaper** och ställ in **Synkronisera databas i version** till **Sant**.
 6. Skapa projektet och bekräfta att versionen lyckades.
 7. I menyn **Dynamics 365** väljer du **Synkronisera databas**.
@@ -67,15 +66,15 @@ Gör så här om du vill åtgärda problemet.
 
 På sidan **dubbelriktad skrivning** kan du få ett felmeddelande som liknar följande exempel:
 
-*Källfält \<fältnamn\> saknas i schemat.*
+*Källfält fältnamn \<field name\> saknas i schemat*
 
 ![Exempel på felmeddelandet för källfält saknas](media/error_missing_field.png)
 
 Lös problemet genom att först följa de här stegen för att kontrollera att fälten finns i entiteten.
 
 1. Logga in på den virtuella datorn för Finance and Operations-appen.
-2. Gå till **Arbetsytor \> Datahantering**, välj panelen **Rramverksparametrar** och sedan på fliken **Entitetsinställningar** välj **Uppdatera entitetslistan** för att uppdatera enheterna.
-3. Gå till **Arbetsytor \> Datahantering**, välj fliken **Dataentiteter** och kontrollera att entiteten finns med i listan. Om entiteten inte finns med loggar du in på den virtuella datorn för Finance and Operations-appen och ser till att enheten är tillgänglig.
+2. Gå till **Arbetsytor \> Datahantering** , välj panelen **Rramverksparametrar** och sedan på fliken **Entitetsinställningar** välj **Uppdatera entitetslistan** för att uppdatera enheterna.
+3. Gå till **Arbetsytor \> Datahantering** , välj fliken **Dataentiteter** och kontrollera att entiteten finns med i listan. Om entiteten inte finns med loggar du in på den virtuella datorn för Finance and Operations-appen och ser till att enheten är tillgänglig.
 4. Öppna sidan **entitetsmappning** från sidan **dubbelriktad skrivning** i Finance and Operations-appen.
 5. Markera **uppdatera entitetslista** om du vill fylla i fälten i entitetsmappningarna automatiskt.
 
@@ -86,7 +85,7 @@ Om problemet fortfarande inte är åtgärdat följer du stegen nedan.
 
 1. I Finance and Operations-appen, gå till **Arbetsytor \> Datahantering** och välj panelen **Dataentiteter**.
 2. Sök efter den entitet som saknar attributet. Klicka på **Ändra målmappning** i verktygsfältet.
-3. I fönstret **Mappa mellanlagring till mål**, klicka på **Generera källmappning**.
+3. I fönstret **Mappa mellanlagring till mål** , klicka på **Generera källmappning**.
 4. Öppna sidan **entitetsmappning** från sidan **dubbelriktad skrivning** i Finance and Operations-appen.
 5. Om attributet inte fylls i automatiskt på kartan lägger du till det manuellt genom att klicka på knappen **Lägg till attribut** och sedan på **Spara**. 
 6. Markera mappningen och klicka på **Kör**.

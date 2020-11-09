@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 5643be99ac2c58f4da1a2a068e84bf526f8575cb
-ms.sourcegitcommit: 164de749f394a133f223c526aa0c46bf922d1ea8
+ms.openlocfilehash: 36716c302d86bc5715798bf4cf4899f666d0872c
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "3770022"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997464"
 ---
 # <a name="integrated-customer-master"></a>Integrerad kundmaster
 

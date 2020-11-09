@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,18 +18,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: fc5db8d04a2860df0c917816e2910c6fbda941ff
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: f502519ba419cb8fa322eb1d22f06d2b805f5f05
+ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173164"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4000744"
 ---
 # <a name="organization-hierarchy-in-common-data-service"></a>Organisationshierarki i Common Data Service
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Eftersom Dynamics 365 Finance är ett finansiellt system är *organisation* ett grundläggande begrepp och systeminställningarna börjar med konfigurationen av en organisationshierarki. Affärsekonomi kan sedan spåras på organisationsnivå och även på alla nivåer i organisationshierarkin.
 
@@ -41,8 +38,6 @@ Eftersom Dynamics 365 Finance är ett finansiellt system är *organisation* ett 
 Ett affärsekosystem som består av Finance and Operations-appar och Common Data Service kommer att fortsätta att ha en organisationshierarki. Organisationshierarkin bygger på Finance and Operations-appar, men den exponeras i Common Data Service för information och utbyggbarhet. Följande illustration visar organisationshierarkiinformation som exponeras i Common Data Service som ett enkelriktat dataflöde från Finance and Operations-appar till Common Data Service.
 
 ![Arkitekturbild](media/dual-write-data-flow.png)
-
-## <a name="templates"></a>Mallar
 
 Organisationshierarkin entitetskartor är tillgängliga för enkelriktad synkronisering av data från Finance and Operations-appar till Common Data Service.
 
@@ -55,10 +50,9 @@ Finance and Operations-appar | Andra Dynamics 365-appar | beskrivning
 Syften för organisationshierarki | msdyn_internalorganizationhierarchypurposes | Den här mallen innehåller en enkelriktad synkronisering av entiteten syfte för organisationshierarki.
 Typ av organisationshierarki | msdyn_internalorganizationhierarchytypes | Den här mallen innehåller en enkelriktad synkronisering av entiteten typ för organisationshierarki.
 Organisationshierarki - publicerad | msdyn_internalorganizationhierarchies | Den här mallen innehåller en enkelriktad synkronisering av entiteten publicerad för organisationshierarki.
-Driftenhet | msdyn_internalorganizations | 
-Juridiska personer | msdyn_internalorganizations | 
+Driftenhet | msdyn_internalorganizations |
+Juridiska personer | msdyn_internalorganizations |
 Juridiska personer | cdm_companies | Tillhandahåller dubbelriktad synkronisering av information om den juridiska personen (företag).
-
 
 [!include [banner](../../includes/dual-write-symbols.md)]
 
@@ -77,4 +71,3 @@ Intern organisationsinformation i Common Data Service kommer från två entitete
 [!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
 
 [!include [Legal entities](includes/LegalEntities-Companies.md)]
-

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipConsolidationSetShipment, WHSShipmentConsolidation, WHSFilterGenerallyAvail, WHSReleaseToWarehouse
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 406ff268eede4a9d448b3b9c1729a00fcec8f21e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 96f994e9f3440721105545f96d7d8475fcab2b6b
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986754"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016803"
 ---
 # <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden-from-the-release-to-warehouse-page"></a>Konsolidera leveranser när policyn för leveranskonsolidering åsidosätts från sidan Släpp till lagerställe
 
 [!include [banner](../includes/banner.md)]
 
-Detta ämne innehåller ett scenario där en eller flera försäljningsrader måste släppas manuellt till lagerstället från sidan **Släpp till lagerställe**, och den systemdefinierade policyn för leveranskonsolidering måste åsidosättas före frisläppandet. Det kan krävas en åsidosättning av policyn för leveranskonsoliderings om en order som exempelvis normalt sett inte konsolideras med öppna leveranser nu måste konsolideras med öppna leveranser.
+Detta ämne innehåller ett scenario där en eller flera försäljningsrader måste släppas manuellt till lagerstället från sidan **Släpp till lagerställe** , och den systemdefinierade policyn för leveranskonsolidering måste åsidosättas före frisläppandet. Det kan krävas en åsidosättning av policyn för leveranskonsoliderings om en order som exempelvis normalt sett inte konsolideras med öppna leveranser nu måste konsolideras med öppna leveranser.
 
 Under scenariot kommer du att skapa en uppsättning försäljningsorder och sedan åsidosätta standardpolicyn för leveranskonsolidering innan du släpper orderna i lagerstället.
 
@@ -47,7 +47,7 @@ Det scenario som beskrivs här förutsätter att du redan har aktiverat funktion
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 1. Välj **Lager \> Bokning** och välj sedan **Reservera parti** i åtgärdsfönstret för att reservera orderraden.
@@ -64,7 +64,7 @@ Följ dessa steg om du vill åsidosätta policyn för leveranskonsolidering unde
 1. Välj **Släpp till lagerställe**.
 1. Välj den andra och tredje försäljningsorder som du skapat för detta scenario.
 1. Välj **Lägg till** om du vill lägga till rader om frisläppande till lagerstället. Observera att policyn *Standard* tillämpas i det nedre fönstret.
-1. Markera den andra raden och sedan, i fältet **Välj ny konsolideringspolicy för leverans**, policyn *CustomerORderNo*.
+1. Markera den andra raden och sedan, i fältet **Välj ny konsolideringspolicy för leverans** , policyn *CustomerORderNo*.
 1. Välj **Släpp till lagerställe** för båda raderna.
 
 ## <a name="verify-the-shipments"></a>Verifiera leveranserna
