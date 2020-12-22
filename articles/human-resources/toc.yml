@@ -1,0 +1,695 @@
+- name: Dynamics 365 Human Resources
+  href: hr-welcome.md
+  items:
+    - name: Nyheter
+      items:
+        - name: Nyheter och ändringar i Human Resources
+          href: hr-admin-whats-new.md
+        - name: 2 december 2020
+          href: hr-whats-new-2020-12-02.md
+        - name: 22 oktober 2020
+          href: hr-whats-new-2020-10-22.md
+        - name: 6 oktober 2020
+          href: hr-whats-new-2020-10-06.md
+        - name: 26 september 2020
+          href: hr-whats-new-2020-09-26.md
+        - name: 16 september 2020
+          href: hr-whats-new-2020-09-16.md
+        - name: 3 september 2020
+          href: hr-whats-new-2020-09-03.md
+        - name: 20 augusti 2020
+          href: hr-whats-new-2020-08-20.md
+        - name: 6 augusti 2020
+          href: hr-whats-new-2020-08-06.md
+        - name: 23 juli 2020
+          href: hr-whats-new-2020-07-23.md
+        - name: 8 juli 2020
+          href: hr-whats-new-2020-07-08.md
+        - name: 25 juni 2020
+          href: hr-whats-new-2020-06-23.md
+        - name: 11 juni 2020
+          href: hr-whats-new-2020-06-11.md
+        - name: 28 maj 2020
+          href: hr-whats-new-2020-05-28.md
+        - name: 14 maj 2020
+          href: hr-whats-new-2020-05-14.md
+        - name: 1 maj 2020
+          href: hr-whats-new-2020-05-01.md
+        - name: Nyhetsarkiv 2020
+          items:
+            - name: 13 april 2020
+              href: hr-whats-new-2020-04-13.md
+            - name: 3 april 2020
+              href: hr-whats-new-2020-04-03.md
+            - name: 24 mars 2020
+              href: hr-whats-new-2020-03-24.md
+            - name: 19 mars 2020
+              href: hr-whats-new-2020-03-19.md
+            - name: 10 mars 2020
+              href: hr-whats-new-2020-03-10.md
+            - name: 3 mars 2020
+              href: hr-whats-new-2020-03-03.md
+            - name: 25 februari 2020
+              href: hr-whats-new-2020-02-25.md
+            - name: 18 februari 2020
+              href: hr-whats-new-2020-02-18.md
+            - name: 12 februari 2020
+              href: hr-whats-new-2020-02-12.md
+            - name: 7 februari 2020
+              href: hr-whats-new-2020-02-07.md
+            - name: 3 februari 2020
+              href: hr-whats-new-2020-02-03.md
+    - name: Administratörsguide
+      items:
+        - name: Översikt
+          href: hr-admin-overview.md
+        - name: Systemkrav
+          href: hr-admin-system-requirements.md
+        - name: Ställa in och hantera instanser
+          items:
+            - name: Reservera Human Resources
+              href: hr-admin-setup-provision.md
+            - name: Kopiera en instans
+              href: hr-admin-setup-copy-instance.md
+            - name: Ta bort en instans
+              href: hr-admin-setup-remove-instance.md
+            - name: Uppdatera process
+              href: hr-admin-setup-update-process.md
+        - name: Ställa in dataintegrering
+          items:
+            - name: Välja en dataintegreringsteknik
+              href: hr-admin-integration-choose-technology.md
+            - name: Konfigurera Common Data Service-integration
+              href: hr-admin-integration-common-data-service.md
+            - name: Common Data Service-enheter
+              href: hr-developer-entities.md
+            - name: Konfigurera virtuella Common Data Service-enheter
+              href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: Konfigurera integration med Finance
+              href: hr-admin-integration-finance.md
+            - name: Konfigurera integration med Dayforce
+              href: hr-admin-integration-dayforce.md
+            - name: Skapa en app för återkommande dataexport
+              href: hr-admin-integration-recurring-data-export.md
+            - name: Integration med LinkedIn Talent Hub
+              href: hr-admin-integration-linkedin.md
+            - name: Integration med Office
+              items:
+                - name: Office-integration – självstudier
+                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
+                - name: Uppdatera enhetsdata i Excel
+                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa Öppna i Excel-upplevelse
+                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
+                - name: Felsöka Office-integration
+                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
+        - name: Konfigurera datahantering
+          items:
+            - name: Översikt över ramverk för datahantering
+              href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Datatabeller
+              items:
+                - name: Översikt över datatabeller
+                  href: ../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsdataprojekt
+                  href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/human-resources/toc.json
+                - name: Kopiera konfigurationsdata mellan företag eller juridiska personer
+                  items:
+                    - name: Kopiera konfigurationsdata – översikt
+                      href: ../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurationsdatapaket
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurationsdatapaket (endast utgåvan från juli 2017)
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsdatamallar
+                  href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/human-resources/toc.json
+                - name: Spåra ändringar av en enhet
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Söka efter information om standarddatatabeller
+                  href: ../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/human-resources/toc.json
+                - name: Datamallar med flera kalkylblad
+                  href: ../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/human-resources/toc.json
+                - name: Aktivera ändringsspårning för enheter
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsnycklar och datatabeller
+                  href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsdatapaket
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Jobb för import och export av data
+              items:
+                - name: Översikt över jobb för import och export av data
+                  href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
+                - name: Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal
+                  href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
+            - name: Utveckling för datatabeller
+              items:
+                - name: Designprinciper och metodtips för datatabeller
+                  href: ../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa nya datatabeller
+                  href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Egenskaper för datatabell
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa beräknade kolumner och virtuella fält
+                  href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Korsföretagsbeteende
+                  href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/human-resources/toc.json
+                - name: Hantera lands-/regionkoder
+                  href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/human-resources/toc.json
+                - name: Arvmönster
+                  href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/human-resources/toc.json
+                - name: Guideregler för datatabell
+                  href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/human-resources/toc.json
+                - name: Metadataegenskaper
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Valideringar, standarder och omappade fält'
+                  href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Säkerhet och datatabeller
+                  href: ../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Använda testverktyg i tjänster från tredje part
+                  href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa skrivskyddade enheter som visar ekonomiska dimensioner
+                  href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/human-resources/toc.json
+            - name: Ta med din egen databas
+              href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/human-resources/toc.json
+            - name: Optimera BYOD batchjobb
+              href: hr-admin-integration-byod-batch-jobs.md
+            - name: Automatiserad uppdatering av Enhetslagring
+              href: ../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/human-resources/toc.json
+            - name: Automatisering av datauppgift
+              href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbetsyta – checklista för datavalidering
+              href: ../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/human-resources/toc.json
+            - name: Felbeskrivningar för datahantering
+              href: ../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/human-resources/toc.json
+        - name: Hantera funktioner
+          href: hr-admin-manage-features.md
+        - name: Konfigurera och hantera databasloggning
+          href: hr-admin-database-logging.md
+        - name: Utforska användargränssnittet
+          items:
+            - name: Användargränssnittselement
+              href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json
+            - name: Hjälpmedelsfunktioner
+              href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json
+            - name: Översikt över funktionshantering
+              href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json
+            - name: Frågor och svar för klient
+              href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json
+            - name: Åtgärdssökning
+              href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json
+            - name: Avancerad filtrerings- och frågesyntax
+              href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurera och filtrera arbetsytor
+              href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json
+            - name: Visa sidor sida vid sida med funktionen Öppna i nytt fönster
+              href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/human-resources/toc.json
+            - name: Kortkommandon
+              href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/human-resources/toc.json
+            - name: Ändra banderoller eller logotyper för juridiska personer
+              href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/human-resources/toc.json
+            - name: Navigeringsökning
+              href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/human-resources/toc.json
+            - name: Anpassa användarupplevelsen
+              href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/human-resources/toc.json
+            - name: Sparade vyer
+              href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
+            - name: Skapa och arbeta med anpassade fält
+              href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
+            - name: Bädda in arbetsyteappar från Power Apps
+              href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
+            - name: Hitta information med hjälp av sökningar
+              href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
+            - name: Ändra datumet för en session
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json
+            - name: Ställa in en användares prioriterade tidszon
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
+            - name: Förstå Lifecycle Services
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Human Resources-app i Teams
+          href: hr-admin-teams-leave-app.md
+        - name: Förbereda Go live
+          href: hr-admin-go-live-prepare.md
+        - name: Frågor och svar om Go live
+          href: hr-admin-go-live-faq.md
+        - name: Dokumentationsresurser
+          items:
+            - name: Hjälpsystem
+              href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
+            - name: Ansluta hjälpsystemet
+              href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
+            - name: Anpassad hjälp – översikt
+              href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
+            - name: Visa och exportera fältbeskrivningar
+              href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
+            - name: Uppgiftsinspelare
+              href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json
+            - name: Skapa dokumentation eller utbildning med Uppgiftsinspelare
+              href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Felsöka Human Resources
+          items:
+            - name: Få support
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/human-resources/toc.json
+            - name: Optimera prestandan genom att schemalägga batchjobb efter kontorstid
+              href: hr-admin-troubleshooting-batch-jobs.md
+            - name: Optimera prestanda med automatiska rensningsuppgifter
+              href: hr-admin-troubleshooting-batch-history.md
+            - name: Analysrapporter uppdateras inte
+              href: hr-admin-troubleshooting-analytic-reports.md
+            - name: Det går inte att skapa en miljö i administrationscentret för Power Apps
+              href: hr-admin-troubleshooting-power-apps.md
+            - name: Klienten kopplas från
+              href: hr-admin-troubleshooting-disconnect.md
+            - name: Undvika trunkerad text i positionshierarki
+              href: hr-admin-troubleshooting-truncate.md
+            - name: Köra kompensationsprocessen
+              href: hr-admin-troubleshooting-compensation.md
+            - name: Spara en uppgiftsguide i LCS
+              href: hr-admin-troubleshooting-task-guide.md
+            - name: Få åtkomst till privata adresser efter säkerhetsroll
+              href: hr-admin-troubleshooting-private-addresses.md
+            - name: Human Resources visas inte i Dynamics 365-appar
+              href: hr-admin-troubleshooting-not-in-apps.md
+            - name: Rapporteringsalternativ
+              href: hr-admin-troubleshooting-reporting.md
+            - name: Integrering av frågor och svar
+              href: hr-admin-troubleshooting-integration.md
+    - name: Utvecklarguide
+      items:
+        - name: Översikt
+          href: hr-developer-overview.md
+        - name: Utöka med Power Apps och Power Automate
+          href: hr-developer-power-apps.md
+        - name: Common Data Service-enheter
+          href: hr-developer-entities.md
+        - name: Anpassade fält
+          href: hr-developer-custom-fields.md
+        - name: Ställa in dataintegrering
+          items:
+            - name: Välja en dataintegreringsteknik
+              href: hr-admin-integration-choose-technology.md
+            - name: Konfigurera Common Data Service-integration
+              href: hr-admin-integration-common-data-service.md
+            - name: Konfigurera integration med Finance
+              href: hr-admin-integration-finance.md
+            - name: Konfigurera integration med Dayforce
+              href: hr-admin-integration-dayforce.md
+            - name: Skapa en app för återkommande dataexport
+              href: hr-admin-integration-recurring-data-export.md
+            - name: Integration med Office
+              items:
+                - name: Office-integration – självstudier
+                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Uppdatera enhetsdata i Excel
+                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Skapa Öppna i Excel-upplevelse
+                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Felsöka Office-integration
+                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Referens för enhets-API
+          items:
+            - name: Autentisering
+              href: hr-developer-api-authentication.md
+            - name: Enheter
+              items:
+                - name: MyLeaveRequests
+                  items:
+                    - name: Översikt över MyLeaveRequests
+                      href: hr-developer-api-myleaverequests-overview.md
+                    - name: Skicka en ledighetsansökan till arbetsflödet
+                      href: hr-developer-api-myleaverequests-submit.md
+    - name: Användarhandbok
+      items:
+        - name: Översikt
+          href: hr-hrpro-overview.md
+        - name: Konfigurera Human Resources
+          items:
+            - name: Konfigurera Human Resources-parametrar
+              href: hr-setup-parameters.md
+            - name: Konfigurera delade Human Resources-parametrar
+              href: hr-setup-shared-parameters.md
+            - name: Förstå Datum- och tid-fält
+              href: hr-setup-date-time-fields.md
+        - name: Konfigurera organisationsinställningar
+          items:
+            - name: Organisationsadministration – startsida
+              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json
+            - name: Nummerserier
+              items:
+                - name: Nummerserier – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/human-resources/toc.json
+                - name: Ställa in enskilda nummerserier
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/human-resources/toc.json
+                - name: Ställa in nummerserier med hjälp av en guide
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/human-resources/toc.json
+            - name: Organisationer och organisationshierarkier
+              items:
+                - name: Organisationer och organisationshierarkier – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/human-resources/toc.json
+                - name: Planera en organisationshierarki
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa en organisationshierarki
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa juridiska personer
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa driftenheter
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/human-resources/toc.json
+            - name: Global adressbok
+              items:
+                - name: Översikt över global adressbok
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                - name: Planera för den globala adressboken och andra adressböcker
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurera den globala adressboken
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vanliga frågor och svar om adressböcker
+                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurera adressböcker
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbetsflödessystem
+              items:
+                - name: Arbetsflödessystem – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+                - name: Arbetsflödessystemets arkitektur
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+                - name: Arbetsflödeselement
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+                - name: Arbetsflödesåtgärder
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa arbetsflöden
+                  items:
+                    - name: Skapa arbetsflöden – översikt
+                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurera arbetsflödesegenskaper
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurera manuella uppgifter
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurera automatiska uppgifter
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurera godkännandeprocesser
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurera godkännandesteg
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurera manuella beslut
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurera villkorliga beslut
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurera parallella aktiviteter
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurera parallella grenar
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurera arbetsflöden för radartiklar
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurera batchjobbet Meddelandebehandling i arbetsflöde som kritiskt
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+                - name: Delegera arbetsuppgifter i ett arbetsflöde
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Visa arbetsflödeshistorik
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurera systemet för att skicka arbetsflödesrelaterad e-post till användare
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+                - name: Arbetsflödestyper
+                  items:
+                    - name: Skapar en arbetsflödestyp
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Checklista för arbetsflödestyp
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Skapa en arbetsflödeskategori
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Skapa en fråga för en arbetsflödestyp
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Skapa en ny arbetsflödestyp
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Skapa en arbetsflödesdokumentklass
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Skapa en SubmitToWorkflow-klass
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Associera en arbetsflödesdokumentklass med en arbetsflödestyp
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+                - name: Rapport för arbetsflödestyper
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vanliga frågor om arbetsflöde
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
+            - name: Notifieringar
+              items:
+                - name: Notifieringar – översikt
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa notifieringsregler
+                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/human-resources/toc.json
+                - name: Batchbearbetning av notifieringar
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
+                - name: Kundnotifieringar via e-postmeddelande
+                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
+            - name: Elektroniska signaturer
+              items:
+                - name: Elektroniska underskrifter – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
+                - name: Ställa in elektroniska signaturer
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
+            - name: Ärendehantering
+              items:
+                - name: Översikt över ärendehantering
+                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Planera säkerhet, processer och kategorier för ärenden'
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/human-resources/toc.json
+            - name: Postmallar
+              items:
+                - name: Postmallar – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa en postmall
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/human-resources/toc.json
+                - name: Använda en postmall för att skapa en ny post
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurera dokumenthantering
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurera och skicka e-post
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
+            - name: Datum-/tidsdata och tidszoner
+              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json
+        - name: Hantera personal
+          items:
+            - name: Organisera personalen
+              href: hr-personnel-departments-jobs-positions.md
+            - name: Ställa in komponenter för ett jobb
+              href: hr-personnel-jobs.md
+            - name: Definiera avdelningar
+              href: hr-personnel-define-departments.md
+            - name: Lägga till en avdelning i en hierarki
+              href: hr-personnel-add-department-hierarchy.md
+            - name: Definiera jobb
+              href: hr-personnel-define-jobs.md
+            - name: Skapa en arbetstidskalender
+              href: hr-personnel-create-working-time-calendar.md
+            - name: Rekrytera jobbkandidater
+              href: hr-personnel-recruit.md
+            - name: Vanliga frågor och svar om personalåtgärder
+              href: hr-personnel-actions-faq.md
+            - name: Använda arbetsflöden för att hantera medarbetarinformation
+              href: hr-workflow-manage-employee-information.md
+            - name: Visa och hantera adressändringar
+              href: hr-personnel-view-address-changes.md
+            - name: Ändra rapporteringsrelationer för en befattning
+              href: hr-personnel-modify-reporting-relationships-position.md
+            - name: Ange arbetarinformation
+              href: hr-personnel-enter-worker-information.md
+            - name: Låna ut artiklar till arbetare
+              href: hr-personnel-loan-item-worker.md
+            - name: Skapa låneartiklar
+              href: hr-personnel-create-loan-items.md
+            - name: Hantera låneartiklar
+              href: hr-personnel-loan-items.md
+            - name: Utveckla en successionsplan
+              href: hr-personnel-develop-succession-plan.md
+            - name: Massanställningsprojekt
+              href: hr-personnel-mass-hire-projects.md
+            - name: Skapa ett massanställningsprojekt
+              href: hr-personnel-create-mass-hire-project.md
+            - name: Ställa in befattningar
+              href: hr-personnel-set-up-positions.md
+            - name: Ställa in information om skador och sjukdomar
+              href: hr-personnel-set-up-injury-illness-information.md
+            - name: Underhålla information om medarbetares skador och sjukdomar
+              href: hr-personnel-maintain-employee-injury-illness-information.md
+        - name: Ställ in kompensationsplaner
+          items:
+            - name: Översikt över kompensationsplaner
+              href: hr-compensation-overview.md
+            - name: Ställa in kompensationsrutnät
+              href: hr-compensation-grids.md
+            - name: Utveckla en struktur och plan för kompensation
+              href: hr-compensation-structure.md
+            - name: Skapa planer för fast kompensation
+              href: hr-compensation-fixed-plans.md
+            - name: Skapa planer för variabel kompensation
+              href: hr-compensation-variable-plans.md
+            - name: Registrera medarbetare i en fast kompensationsplan
+              href: hr-compensation-enroll-employees-fixed.md
+            - name: Registrera medarbetare i en variabel kompensationsplan
+              href: hr-compensation-enroll-employees-variable.md
+            - name: Definiera kompensationsprocessen och beräkna resultat
+              href: hr-compensation-define-process.md
+            - name: Bearbeta kompensationsplaner
+              href: hr-compensation-process.md
+        - name: Hantera förmåner
+          items:
+            - name: Hantering av förmåner
+              items:
+                - name: Hantering av förmåner – översikt
+                  href: hr-benefits-management-overview.md
+                - name: Konfigurera förmånshantering
+                  items:
+                    - name: Konfigurera parametrar för förmånshantering per företag
+                      href: hr-benefits-setup-parameters-per-company.md
+                    - name: Konfigurera parametrar för förmånshantering och självbetjäning för medarbetare för alla företag
+                      href: hr-benefits-setup-parameters.md
+                    - name: Konfigurera regler och alternativ för berättigande
+                      href: hr-benefits-setup-eligibility-rules.md
+                    - name: Konfigurera berättigandealternativ för personlig kontakt
+                      href: hr-benefits-setup-contact-eligibility-options.md
+                    - name: Skapa disponeringsalternativ
+                      href: hr-benefits-setup-coverage-options.md
+                    - name: Ställa in betalningsfrekvenser
+                      href: hr-benefits-setup-payment-frequencies.md
+                    - name: Konfigurera livshändelsetyper
+                      href: hr-benefits-setup-life-event-types.md
+                    - name: Skapa plantyper
+                      href: hr-benefits-setup-plan-types.md
+                    - name: Ställa in orsakskoder
+                      href: hr-benefits-setup-reason-codes.md
+                    - name: Ställa in skiktkoder
+                      href: hr-benefits-setup-tier-codes.md
+                    - name: Konfigurera satser
+                      href: hr-benefits-setup-rates.md
+                    - name: Konfigurera avdrag
+                      href: hr-benefits-setup-deductions.md
+                    - name: Konfigurera väntedagar
+                      href: hr-benefits-setup-waiting-days.md
+                    - name: Konfigurera vänteperioder
+                      href: hr-benefits-setup-waiting-periods.md
+                    - name: Ställa in avrundningsregler
+                      href: hr-benefits-setup-rounding-rules.md
+                    - name: Skapa anställningskategorier
+                      href: hr-benefits-setup-employment-categories.md
+                    - name: Ställa in anställningstyper
+                      href: hr-benefits-setup-employment-types.md
+                    - name: Konfigurera självbetjäning för medarbetare
+                      href: hr-benefits-setup-employee-self-service.md
+                - name: Skapa förmånsplaner
+                  items:
+                    - name: Ställa in förmånsplaner
+                      href: hr-benefits-plans-setup.md
+                    - name: Ställa in flexkreditprogram
+                      href: hr-benefits-plans-flex-credit-programs.md
+                - name: Bearbeta förmånsplaner
+                  items:
+                    - name: Bearbeta anmälningsberättigande
+                      href: hr-benefits-process-enrollment-eligibility.md
+                    - name: Bearbeta livshändelser
+                      href: hr-benefits-process-life-events.md
+                    - name: Bearbeta ändringar av livshändelser
+                      href: hr-benefits-process-life-event-changes.md
+                    - name: Bearbeta livshändelseberättigande
+                      href: hr-benefits-process-life-event-eligibility.md
+                    - name: Bearbeta ändringar av sats
+                      href: hr-benefits-process-rate-changes.md
+            - name: Definiera och hantera ett förmånsprogram
+              href: hr-benefits-manage-program.md
+            - name: Policyer för förmånsberättigande
+              href: hr-benefits-eligibility-policies.md
+            - name: Process för förmånsberättigande
+              href: hr-benefits-eligibility-process.md
+            - name: Definiera förmånsberättiganderegler och policyer
+              href: hr-benefits-define-eligibility-rules.md
+            - name: Utveckla ett förmånsprogram för medarbetare
+              href: hr-benefits-deliver-employee-benefits-program.md
+            - name: Skapa nya förmåner
+              href: hr-benefits-create.md
+            - name: Anmäl arbetare till förmåner
+              href: hr-benefits-enroll-workers.md
+            - name: Hantera utgångsdatum för förmån
+              href: hr-benefits-expiration-dates.md
+            - name: Generera ACA-rapporter
+              href: hr-benefits-aca-reports.md
+        - name: Hantera ledighet och frånvaro
+          items:
+            - name: Översikt
+              href: hr-leave-and-absence-overview.md
+            - name: Konfigurera parametrar för ledighet och frånvaro
+              href: hr-leave-and-absence-parameters.md
+            - name: Skapa en arbetstidskalender
+              href: hr-leave-and-absence-working-time-calendar.md
+            - name: Skapa ett arbetsflöde för ledighetsansökan
+              href: hr-leave-and-absence-workflow.md
+            - name: Konfigurera typer av tjänstledighet och frånvaro
+              href: hr-leave-and-absence-types.md
+            - name: Skapa en plan för tjänstledighet och frånvaro
+              href: hr-leave-and-absence-plans.md
+            - name: Tilldela arbetare en tjänstledighetsplan
+              href: hr-leave-and-absence-enroll.md
+            - name: Periodisera planer för tjänstledighet och frånvaro
+              href: hr-leave-and-absence-accrue.md
+            - name: Skjut upp tjänstledighet
+              href: hr-leave-and-absence-suspend-leave.md
+            - name: Tjänstledighetsansökan
+              href: hr-employee-self-service-request-leave-of-absence.md
+            - name: Hantera tjänstledighet för medarbetare
+              href: hr-leave-and-absence-manage-employee-leave.md
+            - name: Visa analys för tjänstledighet och frånvaro
+              href: hr-leave-and-absence-analytics.md
+            - name: Hantera begäranden om ledighet och frånvaro
+              href: hr-employee-self-service-manage-requests.md
+            - name: Begär ledig tid
+              href: hr-employee-self-service-request-time-off.md
+            - name: Visa team- och företagskalendrar
+              href: hr-employee-self-service-calendar.md
+            - name: Hantera policyer för köpa och sälja tjänstledighet
+              href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: Skapa arbetsflöden för att köpa och sälja tjänstledigt
+              href: hr-leave-and-absence-buy-sell-workflow.md
+            - name: Köpa och sälja tjänstledighet
+              href: hr-employee-self-service-buy-sell-leave.md
+        - name: Hantera begäranden om ledighet i Teams
+          href: hr-teams-leave-app.md
+        - name: Utveckla medarbetare
+          items:
+            - name: Översikt över prestationshantering
+              href: hr-develop-performance-management-overview.md
+            - name: Anpassa personalens kompetenser
+              href: hr-develop-skills.md
+            - name: Lägga till i din resultatjournal
+              href: hr-develop-add-performance-journal.md
+            - name: Skapa ett mål
+              href: hr-develop-create-goal.md
+            - name: Skapa en resultatöversyn
+              href: hr-develop-create-performance-review.md
+        - name: Skapa kurser
+          items:
+            - name: Skapa utbildningar
+              href: hr-learning-courses.md
+            - name: Enkätöversikt
+              href: hr-learning-questionnaires.md
+            - name: Utforma enkäter
+              href: hr-learning-design-questionnaires.md
+            - name: Skicka ut och schemalägga enkäter
+              href: hr-learning-distribute-questionnaires.md
+            - name: Distribuera enkäter med hjälp av tidsplanering
+              href: hr-learning-distribute-questionnaires-scheduling.md
+            - name: Visa enkätresultat
+              href: hr-learning-evaluate-questionnaire-results.md
+            - name: Analysera enkätresultat
+              href: hr-learning-analyze-questionnaire-results.md
+            - name: Skapa en öppen fråga
+              href: hr-learning-create-open-ended-question.md
+            - name: Skapa en stängd avslutad fråga
+              href: hr-learning-create-closed-ended-question.md
+            - name: Skapa en beroende fråga
+              href: hr-learning-depending-question.md
+        - name: Ställa in självbetjäning för medarbetare och chef
+          items:
+            - name: Ställa in självbetjäning för medarbetare och chef – översikt
+              href: hr-employee-manager-self-service-overview.md
+            - name: Skapa anpassade länkar i Självbetjäning för chef
+              href: hr-employee-manager-self-service-custom-links.md
+            - name: Ändra namn på arbetsytan Självbetjäning för medarbetare
+              href: hr-employee-self-service-workspace-name.md
+            - name: Redigera personliga uppgifter
+              href: hr-employee-manager-self-service-edit-personal-information.md
