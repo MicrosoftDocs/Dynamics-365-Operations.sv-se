@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.openlocfilehash: 3e77b5586c7b4a6abe58c8006b8773ee3a0f26f9
-ms.sourcegitcommit: 880f617d1d6e95eccbed762c7ea04398553c2ec0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036486"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459923"
 ---
 # <a name="welcome-to-dynamics-365-talent"></a>Välkommen till Dynamics 365 Talent
 
@@ -31,7 +31,7 @@ ms.locfileid: "3036486"
 I Talent ingår Attract som hjälper dig att identifiera, intervjua och anställa kandidater som har den kompetens din organisation behöver. När du går vidare från rekrytering till anställning får du med appen Onboard hjälp att introducera nyanställda i organisationen genom att ställa upp korrekta förväntningar, tillhandahålla information de behöver för att komma igång, sätta dem i kontakt med kolleger och skapa bra förutsättningar för dem i deras nya roller.  
 
 - [Microsoft Dynamics 365 Talent – funktioner och möjligheter i Attract](attract-overview.md)
-- [Kom igång med Onboard](create-onboarding-experience.md)
+- [Kom i gång med Onboard](create-onboarding-experience.md)
 
 > [!IMPORTANT]
 > Funktionerna i Dynamics 365 Talent: Core HR är nu en del av Dynamics 365 Human Resources. Du kan läsa dokumentationen för Human Resources på [Välkommen till Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365/human-resources/hr-welcome).

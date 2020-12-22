@@ -5,6 +5,8 @@
       items:
         - name: Nyheter och ändringar i Human Resources
           href: hr-admin-whats-new.md
+        - name: 2 december 2020
+          href: hr-whats-new-2020-12-02.md
         - name: 22 oktober 2020
           href: hr-whats-new-2020-10-22.md
         - name: 6 oktober 2020
@@ -477,6 +479,8 @@
               href: hr-personnel-define-jobs.md
             - name: Skapa en arbetstidskalender
               href: hr-personnel-create-working-time-calendar.md
+            - name: Rekrytera jobbkandidater
+              href: hr-personnel-recruit.md
             - name: Vanliga frågor och svar om personalåtgärder
               href: hr-personnel-actions-faq.md
             - name: Använda arbetsflöden för att hantera medarbetarinformation
@@ -533,7 +537,9 @@
                   href: hr-benefits-management-overview.md
                 - name: Konfigurera förmånshantering
                   items:
-                    - name: Ställa in parametrar för förmånshantering
+                    - name: Konfigurera parametrar för förmånshantering per företag
+                      href: hr-benefits-setup-parameters-per-company.md
+                    - name: Konfigurera parametrar för förmånshantering och självbetjäning för medarbetare för alla företag
                       href: hr-benefits-setup-parameters.md
                     - name: Konfigurera regler och alternativ för berättigande
                       href: hr-benefits-setup-eligibility-rules.md

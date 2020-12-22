@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 27681
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 424da665f91820f3fe42c98b352a646dd3db72c5
-ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
+ms.openlocfilehash: 694c1f415fd52eb9e98ace2e5787c12f7a1fed8e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258590"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687287"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Rapportering och analyser med startsidan för Power BI
 
@@ -30,7 +29,7 @@ ms.locfileid: "3258590"
 
 Det här avsnittet hänvisar till resurser som du kan använda för att lära dig mer om de BI-verktyg (Business Intelligence) och rapporteringsverktyg som finns.
 
-## <a name="get-started"></a>Kom igång
+## <a name="get-started"></a>Kom i gång
 - [Åtkomst till information och rapportering](information-access-reporting.md)
 - [Tekniksnack: Rapporteringsalternativ](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
 - [Finance and Operations: Blogg om Power BI för analys- och rapporttjänster](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blogg)

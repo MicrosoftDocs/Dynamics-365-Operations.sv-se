@@ -4,7 +4,7 @@
       items:
         - name: Dynamics 365 Supply Chain Management startsidan
           href: index.md
-        - name: Kom igång
+        - name: Kom i gång
           items:
             - name: Innan du köper
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
@@ -12,10 +12,12 @@
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
             - name: Tjänstuppdateringar för One Version
               items:
-                - name: Översikt över tjänstuppdateringar för One Version
+                - name: Översikt över tjänstuppdateringar för en version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Frågor och svar om tjänstuppdateringar för One Version
+                - name: Frågor och svar om tjänstuppdateringar för en version
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Hantera uppdateringar och den anpassade kodens livs cykel, inklusive Dynamics 365 Commerce'
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Livscykelpolicy för programmet – moln
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Livscykelpolicy för programmet – lokal
@@ -70,12 +72,12 @@
                   items:
                     - name: Nyheter eller ändringar av startsidan till Supply Chain Management
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.15 (december 2020)
+                    - name: Supply Chain Management 10.0.16 (februari 2021)
+                      href: get-started/whats-new-scm-10-0-16.md
+                    - name: Supply Chain Management 10.0.15 (januari 2021)
                       href: get-started/whats-new-scm-10-0-15.md
                     - name: Supply Chain Management 10.0.14 (november 2020)
                       href: get-started/whats-new-scm-10-0-14.md
-                    - name: Supply Chain Management 10.0.13 (oktober 2020)
-                      href: get-started/whats-new-scm-10-0-13.md
                 - name: Borttagna eller utfasade funktioner
                   items:
                     - name: Borttagna eller utfasade funktioner i Dynamics 365 Supply Chain Management
@@ -84,8 +86,6 @@
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: AX 2012-funktioner som har senarelagts
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Funktioner som ännu inte har implementerats i lokala distributioner
-                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dokumentationsresurser
@@ -216,6 +216,14 @@
                   items:
                     - name: Varor på väg från leverantör
                       href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Moln och kant
+          items:
+            - name: Moln- och kantskalningsenheter för arbetsbelastning i tillverknings och distributionslagerhantering
+              href: cloud-edge/cloud-edge-landing-page.md
+            - name: Arbetsbelastningar för tillverkningskörning för moln- och kantskalningsenheter
+              href: cloud-edge/cloud-edge-workload-manufacturing.md
+            - name: Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
+              href: cloud-edge/cloud-edge-workload-warehousing.md
         - name: Tillgångshantering
           items:
             - name: Översikt av tillgångshantering
@@ -230,9 +238,9 @@
                 - name: Livscykelstadier för funktionsplats
                   href: asset-management/setup-for-functional-locations/functional-location-stages.md
                 - name: Underhåll av attributtyper
-                  href: asset-management/setup-for-functional-locations/functional-location-types.md
-                - name: Funktionsplatstyper
                   href: asset-management/setup-for-functional-locations/specification-types.md
+                - name: Funktionsplatstyper
+                  href: asset-management/setup-for-functional-locations/functional-location-types.md
             - name: Funktionsplatser
               items:
                 - name: Introduktion till funktionsplatser
@@ -633,6 +641,8 @@
                   href: cost-management/amortize-constant-costs-manufactured-item.md
             - name: Power BI-innehållspaket för kostnadshantering
               href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Felsöka kostnadshantering
+              href: cost-management/troubleshoot-costmanagement.md
         - name: Rapportering och Power BI-integrationer
           items:
             - name: Rapportering och analyser med Power BI
@@ -1327,6 +1337,8 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Spåra löpande genomsnittlig kostnad per lagerdimension
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+            - name: Tillägg för lagersynlighet
+              href: inventory/inventory-visibility.md
         - name: IoT-intelligens
           items:
             - name: IoT-intelligens – startsida
@@ -1347,20 +1359,30 @@
           items:
             - name: Huvudplanering – startsida
               href: master-planning/master-planning-home-page.md
+            - name: Migrering till planeringsoptimering för huvudplanering
+              href: master-planning/new-master-planning-engine.md
             - name: Planeringsoptimering
               items:
                 - name: Planeringsoptimering – översikt
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Kom igång med planeringsoptimering
+                - name: Kom i gång med planeringsoptimering
                   href: master-planning/planning-optimization/get-started.md
                 - name: Bristanalys för planeringsoptimering
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Använda filter på en plan
                   href: master-planning/planning-optimization/plan-filters.md
+                - name: Huvudplanering med efterfrågeprognos
+                  href: master-planning/planning-optimization/demand-forecast.md
                 - name: Huvudplanering med inköpshandelsavtal
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Säkerhetsmarginaler
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: Lagermarkeringen med Planeringsoptimering
+                  href: master-planning/planning-optimization/marking.md
+                - name: Koncernintern planering
+                  href: master-planning/planning-optimization/Intercompany-planning.md
+                - name: Utesluta produkter med vissa livscykeltillstånd för produkt
+                  href: master-planning/planning-optimization/product-lifecycle-state.md
                 - name: Godkänna planerade order
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automatisk bekräftelse med planeringsoptimering
@@ -1463,6 +1485,8 @@
                   href: master-planning/tasks/create-baseline-forecast.md
                 - name: Ändra en efterfrågeprognos manuellt
                   href: master-planning/tasks/modify-demand-forecast-manually.md
+            - name: Felsöka huvudplanering
+              href: master-planning/troubleshoot-masterplanning.md
         - name: Mobilapp
           items:
             - name: Startsida för mobilapp
@@ -1891,10 +1915,12 @@
                   href: pim/tasks/create-sales-order-configurable-product.md
                 - name: Skapa urvalskriterier för försäljningspris
                   href: pim/tasks/create-sales-price-selection-criteria.md
-                - name: Ställ in attributbaserad prissättning för konfigurerbara produkter
+                - name: Ställa in attributbaserad prissättning för konfigurerbara produkter
                   href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
                 - name: Strukturlisteberäkningar
                   href: cost-management/bom-calculations.md
+                - name: Felsöka produktinformation
+                  href: pim/troubleshooting-productinformation.md
             - name: Produktkonfiguration
               items:
                 - name: Produktkonfiguration – översikt
@@ -1955,6 +1981,34 @@
                       href: pim/tasks/approve-product-configuration-model.md
                     - name: Överföra data för produktmodeller
                       href: pim/tasks/transfer-data-product-models.md
+                - name: Felsöka produktkonfiguratorn
+                  href: pim/troubleshooting-productconfigurator.md
+        - name: Konstruktionsändringshantering
+          items:
+            - name: Konstruktionsändringshantering – översikt
+              href: engineering-change-management/product-engineering-overview.md
+            - name: Genomgång av funktioner för ändringshantering
+              href: engineering-change-management/engineering-scenarios.md
+            - name: Parametrar för konstruktionsändringshantering
+              href: engineering-change-management/engineering-parameters.md
+            - name: Fastställa gemensamma värden för konstruktionsändringshantering
+              href: engineering-change-management/engineering-change-management-setup.md
+            - name: Regler för teknikorganisationer och dataägande
+              href: engineering-change-management/engineering-org-data-ownership-rules.md
+            - name: Produktägare
+              href: engineering-change-management/product-owner.md
+            - name: Tekniska attribut och sökning efter tekniska attribut
+              href: engineering-change-management/engineering-attributes-and-search.md
+            - name: Konstruktionsversioner och kategorier av konstruktionsprodukter
+              href: engineering-change-management/engineering-versions-product-category.md
+            - name: Produktens livscykeltillstånd och transaktioner
+              href: engineering-change-management/product-lifecycle-state-transactions.md
+            - name: Hantera ändringar av konstruktionsprodukter
+              href: engineering-change-management/engineering-change-management.md
+            - name: Produktberedskap
+              href: engineering-change-management/product-readiness.md
+            - name: Frisläppa produktstruktur
+              href: engineering-change-management/release-product-structure.md
         - name: Produktionskontroll
           items:
             - name: Produktionsprocess – översikt
@@ -2047,6 +2101,8 @@
                       items:
                         - name: Konfigurera körningsgränssnittet för produktionsgolvet
                           href: production-control/production-floor-execution-configure.md
+                        - name: Designa körningsgränssnittet för produktionsgolvet
+                          href: production-control/production-floor-execution-tabs.md
                         - name: Konfigurera en enhet för att köra körningsgränssnittet för produktionsgolvet
                           href: production-control/production-floor-execution-setup.md
                         - name: Hur arbetare använder körningsgränssnittet för produktionsgolvet
@@ -2105,6 +2161,8 @@
                       href: production-control/absence-registration-in-time-and-attendance.md
                     - name: Flexgrupper
                       href: production-control/time-attendance-flex-groups.md
+                - name: Felsöka diskret tillverkning
+                  href: production-control/troubleshoot-discretemanufacturing.md
             - name: Lean manufacturing
               items:
                 - name: Lean manufacturing – översikt
@@ -2257,6 +2315,8 @@
                       href: production-control/consumption.md
                     - name: Produktionsbokföring
                       href: cost-management/production-posting.md
+                - name: Felsöka processtillverkning
+                  href: production-control/troubleshoot-processmanufacturing.md
         - name: Försäljning och marknadsföring
           items:
             - name: Försäljning och marknadsföring – översikt
@@ -2589,6 +2649,8 @@
               href: transportation/create-new-transportation-management-engine.md
             - name: Associera ett bränsleindex med ett transportföretag som ett tillägg
               href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+            - name: USMCA-certifiering av ursprung
+              href: transportation/usmca-certification-of-origin.md
             - name: Skapa en fraktsedel
               href: transportation/create-bill-of-lading.md
             - name: Planera frakttransportrutter
@@ -2607,11 +2669,31 @@
               href: transportation/reconcile-freight-transportation-management.md
             - name: Registrera en förares incheckning och utcheckning för ett möte
               href: transportation/tasks/register-driver-check-check-out-appointment.md
-            - name: Ställ in bränsleindex för transportföretag
+            - name: Rabatter
+              href: transportation/transportation-management-discount.md
+            - name: Övriga avgifter
+              href: transportation/transportation-management-misc-charge.md
+            - name: Lägen och metoder
+              href: transportation/transportation-management-modes-methods.md
+            - name: Nummerserier
+              href: transportation/transportation-management-number-sequence.md
+            - name: Status
+              href: transportation/transportation-management-status.md
+            - name: Zonmall
+              href: transportation/transportation-management-zone-master.md
+            - name: Transportföretagsgrupper
+              href: transportation/tasks/carrier-groups.md
+            - name: Workbench för lastuppbyggnad
+              href: transportation/tasks/load-building-workbench.md
+            - name: Lastmallar
+              href: transportation/tasks/load-template.md
+            - name: Bedömningsprofiler
+              href: transportation/tasks/setup-a-rating-profile.md
+            - name: Ställa in bränsleindex för transportföretag
               href: transportation/tasks/set-up-carrier-fuel-index.md
-            - name: Ställ in ett transportanbud
+            - name: Ställa in ett transportanbud
               href: transportation/tasks/set-up-transportation-tender.md
-            - name: Ställ in tilläggstilldelningar
+            - name: Ställa in tilläggstilldelningar
               href: transportation/tasks/set-up-accessorial-assignments.md
             - name: Skapa en tidpunkt för en beläggning
               href: transportation/tasks/set-up-appointment-load.md
@@ -2641,24 +2723,32 @@
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: Ställ in ett platsdirektiv för artikelinförsel av inköpsorder
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
-                - name: Ställ in en arbetsmall för inköpsorder
+                - name: Ställa in en arbetsmall för inköpsorder
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
                 - name: Blandning av produktdimensioner på plats
                   href: warehousing/location-product-dimension-mixing.md
+                - name: Kluster för artikelinförsel
+                  href: warehousing/putaway-clusters.md
                 - name: Kvalitetskontroll
                   href: warehousing/quality-check.md
+                - name: Felsöka åtgärder för mottagande distributionslager
+                  href: warehousing/troubleshoot-warehouse-inbound.md
             - name: Åtgärder för utgående distributionslager
               items:
                 - name: Reservationer i distributionslagerhantering
                   items:
                     - name: Flexibel reservationspolicy för dimension på distributionslagernivå
                       href: warehousing/flexible-warehouse-level-dimension-reservation.md
+                    - name: Felsöka reservationer i distributionslagerhantering
+                      href: warehousing/troubleshoot-warehouse-reservations.md
                 - name: Delvis frisläppning och delleverans
                   items:
                     - name: Delleverans av en transportlast
                       href: warehousing/partial-shipping-of-transport-loads.md
                     - name: Frisläppning i batch av delvis reserverade överföringsorder
                       href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+                    - name: Felsöka delvis frisläppning och delleverans
+                      href: warehousing/troubleshoot-warehouse-partial-release-shipment.md
                 - name: Plockning och packning
                   items:
                     - name: Ställa in klusterplockning
@@ -2697,6 +2787,10 @@
                       href: warehousing/outbound-sorting.md
                     - name: Placera på vägg – placera i butik
                       href: warehousing/put-to-wall-put-to-store.md
+                    - name: Visualisering av utgående arbetsbelastning
+                      href: warehousing/outbound-workload-visualization.md
+                    - name: Felsöka plockning och packning
+                      href: warehousing/troubleshoot-warehouse-picking-packing.md
                 - name: Lagerpåfyllnad
                   items:
                     - name: Lagerpåfyllnad – översikt
@@ -2705,26 +2799,32 @@
                       href: warehousing/immediate-replenishment.md
                     - name: Lagerpåfyllnad med uttags-kanbans
                       href: warehousing/material-replenishment-withdrawal-kanban.md
-                    - name: Ställ in en min-max-process för lagerpåfyllnad
+                    - name: Ställa in en min-max-process för lagerpåfyllnad
                       href: warehousing/tasks/set-up-min-max-replenishment-process.md
                     - name: Zontröskel för lagerpåfyllnad
                       href: warehousing/zone-threshold-replenishment.md
+                    - name: Strategier för lagerpåfyllnad
+                      href: warehousing/replenishment-strategies.md
                     - name: Lagerpåfyllnad över platskapacitet
                       href: warehousing/replenishment-over-location-capacity.md
+                    - name: Felsöka lagerpåfyllnad
+                      href: warehousing/troubleshoot-warehouse-replenishment.md
                 - name: Lastuppbyggnad och utleveranser
                   items:
-                    - name: Bekräfta och överför
+                    - name: Bekräfta och överföra
                       href: warehousing/confirm-and-transfer.md
                     - name: Bekräfta utgående leveranser från batchjobb
                       href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
                     - name: Avancerad lastuppbyggnad under påfyllnad
                       href: warehousing/advanced-load-building-during-wave.md
-                    - name: Släpp till distributionslager – regel
+                    - name: Släppa till distributionslager – regel
                       href: warehousing/release-to-warehouse-rule.md
                     - name: Gruppering av påfyllnadsmall
                       href: warehousing/wave-template-grouping.md
-                    - name: Skriv ut på nytt och annullera påfyllnadsetiketter
+                    - name: Skriva ut på nytt och annullera påfyllnadsetiketter
                       href: warehousing/reprint-and-void-wave-labels.md
+                    - name: Felsöka lastuppbyggnad och utleveranser
+                      href: warehousing/troubleshoot-warehouse-loads-shipments.md
                 - name: Policyer för leveranskonsolidering
                   items:
                     - name: Policyer för leveranskonsolidering
@@ -2741,6 +2841,8 @@
                       href: warehousing/consolidate-shipments-manual-workbench.md
                     - name: Scenario 5 – konsolidera leveranser manuellt via sidan Konsolidera leveranser
                       href: warehousing/consolidate-shipments-manual-form.md
+                - name: Felsöka åtgärder för utgående distributionslager
+                  href: warehousing/troubleshoot-warehouse-outbound.md
             - name: För alla distributionslageråtgärder
               items:
                 - name: Policyer för distributionslagerarbete
@@ -2793,11 +2895,15 @@
                       href: warehousing/work-line-details.md
                     - name: Placering för plats-ID-nummer
                       href: warehousing/location-license-plate-positioning.md
-                    - name: Ändra arbetspool för arbetsuppgift
+                    - name: Ändra arbetspool för arbete
                       href: warehousing/change-work-pool-on-work.md
                     - name: Artikelkonsolidering – platsutnyttjande
                       href: warehousing/item-consolidation-location-utilization.md
-            - name: Inställning för distributionslager
+                    - name: Felsöka distributionslagerarbete
+                      href: warehousing/troubleshoot-warehouse-work.md
+                    - name: Arbetsdelning
+                      href: warehousing/work-split.md
+            - name: Inställningar för distributionslager
               items:
                 - name: Konfiguration av distributionslager
                   items:
@@ -2805,10 +2911,12 @@
                       href: warehousing/warehouse-configuration.md
                     - name: Konfigurera ett lagerställe med hjälp av konfigurationsmall
                       href: inventory/warehouse-template.md
-                    - name: Styr arbetsuppgifter genom att använda arbetsmallar och platsdirektiv
+                    - name: Styra arbetsuppgifter genom att använda arbetsmallar och platsdirektiv
                       href: warehousing/control-warehouse-location-directives.md
-                    - name: Skapa platsdirektiv
+                    - name: Arbeta med platsdirektiv
                       href: warehousing/create-location-directive.md
+                    - name: Lagringsbegränsningsplats
+                      href: warehousing/location-stocking-limits.md
                     - name: Koder för påfyllnadssteg
                       href: warehousing/wave-step-codes.md
                     - name: Konfigurera påfyllnadsbearbetning
@@ -2841,8 +2949,10 @@
                       href: warehousing/document-routing-layout-for-license-plates.md
                     - name: Stöd för streckkod för mobil
                       href: warehousing/mobile-barcode-support.md
-                    - name: Ställ in distributionslager för överföringsorder
+                    - name: Ställa in distributionslager för överföringsorder
                       href: warehousing/transfer-orders-warehouse.md
+                    - name: Felsöka distributionslagerkonfiguration
+                      href: warehousing/troubleshoot-warehouse-configuration.md
                 - name: Installera och konfigurera distributionslagerappen
                   items:
                     - name: Installera och ansluta distributionslagerappen
@@ -2879,6 +2989,10 @@
                   items:
                     - name: Uppgradera processer för distributionslagerhantering från Microsoft Dynamics AX 2012 till Finance and Operations
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
+                    - name: Felsöka uppgradering och migrering till avancerad distributionslagerhantering
+                      href: warehousing/troubleshoot-warehouse-upgrade-migration.md
+                - name: Felsöka distributionslagerinställningar
+                  href: warehousing/troubleshoot-warehouse-setup.md
         - name: Utveckling av Supply Chain Management
           items:
             - name: Guide för utveckling av Gantt-kontroll

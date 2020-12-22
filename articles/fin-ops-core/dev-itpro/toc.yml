@@ -14,14 +14,12 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Platform updates
                   href: get-started/whats-new-home-page.md
+                - name: Platform updates för 10.0.16 (februari 2021)
+                  href: get-started/whats-new-platform-updates-10-0-16.md
                 - name: Platform updates för 10.0.15 (januari 2021)
                   href: get-started/whats-new-platform-updates-10-0-15.md
                 - name: Platform updates för 10.0.14 (november 2020)
                   href: get-started/whats-new-platform-updates-10-0-14.md
-                - name: Platform updates för 10.0.13 (oktober 2020)
-                  href: get-started/whats-new-platform-updates-10-0-13.md
-                - name: Platform updates för 10.0.12 (augusti 2020)
-                  href: get-started/whats-new-platform-update-10-0-12.md
             - name: Borttagna eller utfasade funktioner
               items:
                 - name: Borttagna eller utfasade plattformsfunktioner
@@ -30,8 +28,6 @@
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: AX 2012-funktioner som har senarelagts
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: Funktioner som ännu inte har implementerats i lokala distributioner
-              href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: Affärshändelser
@@ -160,8 +156,10 @@
                                   href: data-entities/dual-write/enable-entity-map.md
                             - name: Migrering av valutadatatyp för dubbelriktad skrivning
                               href: data-entities/dual-write/currrency-decimal-places.md
-                            - name: Ställ in mappning för fälten för försäljningsorderns status
+                            - name: Ställa in mappning för fälten för försäljningsorderns status
                               href: data-entities/dual-write/sales-status-map.md
+                            - name: Filtrera koncerninterna order för att undvika synkronisering av order och orderrader
+                              href: data-entities/dual-write/filtering-intercompany-orders.md
                         - name: Hantera dubbelriktad skrivning
                           items:
                             - name: Anpassa enhets- och fältmappningar
@@ -206,12 +204,14 @@
                                   href: data-entities/dual-write/finance-tax-reference.md
                                 - name: Integrerad redovisning
                                   href: data-entities/dual-write/ledger-mapping.md
-                                - name: Integrerad momsmaster
+                                - name: Integrerat skattehuvud
                                   href: data-entities/dual-write/tax-mapping.md
-                            - name: Synkronisera med Dynamics 365 Supply Chain Management prissättningsmotor på begäran
-                              href: data-entities/dual-write/pricing-engine.md
                             - name: Potentiell kund till kontanter med dubbelriktad skrivning
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Synkronisera med prissättningsmotorn för Dynamics 365 Supply Chain Management på begäran
+                              href: data-entities/dual-write/pricing-engine.md
+                            - name: Använda prissättningsmotorn för Dynamics 365 Commerce med Dynamics 365 Sales
+                              href: data-entities/dual-write/commerce-pricing.md
                             - name: Interna tillgångar för service
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 'Integrerad arbetare, jobb och befattning'
@@ -500,6 +500,8 @@
                       href: deployment/plan-onprem-deployment.md
                     - name: Storlekskrav för maskinvara
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+                    - name: Autentisering i Dynamics 365 Finance + Operations (on-premises)
+                      href: deployment/authentication-onprem.md
                 - name: Konfigurera och distribuera lokala miljöer
                   items:
                     - name: Konfigurera lokala projekt i LCS
@@ -630,6 +632,8 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Skapa en anslutning till Lifecycle Services (LCS) i Azure Pipelines
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: Uppdatera en äldre pipeline i Azure Pipelines
+                  href: dev-tools/pipeline-msbuild-update.md
             - name: Hantering av vagnpark – exempelprogram
               items:
                 - name: Komplett scenario för exempelprogrammet Hantering av vagnpark
@@ -692,7 +696,7 @@
                   href: dev-tools/programming-language-support.md
                 - name: LINQ-provider för C#
                   href: dev-tools/linq-provider-c.md
-                - name: Skriva regelverksregler
+                - name: Skriva regler för bästa praxis
                   href: dev-tools/author-best-practice-rules.md
                 - name: Egenskaper för Programutforskaren
                   href: dev-ref/application-explorer-aot-properties.md
@@ -762,10 +766,12 @@
                           href: dev-ref/xpp-data/xpp-select-expression.md
                         - name: Transaktionsintegritet
                           href: dev-ref/xpp-data/xpp-transaction.md
-                        - name: Konvertering av åtgärder från set-baserat till post för post
+                        - name: Konvertering av åtgärder från uppsättningsbaserat till post för post
                           href: dev-ref/xpp-data/xpp-data-perf.md
                         - name: Dataåtkomst med API för SysDa
                           href: dev-ref/sysda.md
+                        - name: Minska risken för SQL-injektionsattack
+                          href: dev-ref/query-with-parameters.md
                     - name: Makron för X++
                       href: dev-ref/xpp-macros.md
                     - name: Attributklasser för X++
@@ -1040,7 +1046,7 @@
                       href: perf-test/concepts-specifications.md
                     - name: Kodgenerering i biblioteket för acceptanstester
                       href: perf-test/code-generation-wizard.md
-                    - name: Regelverk för biblioteket för acceptanstester
+                    - name: Bästa praxis för biblioteket för acceptanstester
                       href: perf-test/atl-best-practices.md
                     - name: Vanliga frågor
                       href: perf-test/atl-faq.md
@@ -1180,9 +1186,9 @@
           items:
             - name: Mobila plattformsresurser
               href: mobile-apps/platform/mobile-platform-home-page.md
-            - name: Kom igång
+            - name: Kom i gång
               items:
-                - name: Kom igång med mobilplattformen
+                - name: Kom i gång med mobilplattformen
                   href: mobile-apps/platform/mobile-platform-getting-started.md
                 - name: Överväganden vid arkitektur och design
                   href: mobile-apps/platform/mobile-platform-architecture.md
@@ -1416,7 +1422,7 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Regression Suite Automation Tool-självstudier och andra funktioner
               href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
-            - name: Regelverk
+            - name: Bästa praxis
               href: perf-test/rsat/rsat-best-practices.md
             - name: Dataagnostiska tester med hjälp av Regression Suite Automation Tool
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
@@ -1498,6 +1504,8 @@
                   href: sysadmin/security-reports.md
                 - name: Skapa nya användare
                   href: sysadmin/tasks/create-new-users.md
+                - name: Hantering av användarsession
+                  href: sysadmin/user-session-management.md
                 - name: Massimportera användare
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: Ställa in ansvarsfördelning
@@ -1558,6 +1566,8 @@
               href: sysadmin/odata-warmup.md
             - name: Konfigurera Azure Key Vault-klienten
               href: ../../finance/localizations/setting-up-azure-key-vault-client.md
+            - name: Rensa rutiner
+              href: sysadmin/cleanuproutines.md
         - name: 'Uppgraderingar, uppdateringar och snabbkorrigeringar'
           items:
             - name: 'Resurser för uppgraderingar, uppdateringar och snabbkorrigeringar'
@@ -1696,7 +1706,7 @@
                   href: user-interface/build-customer-form.md
                 - name: Skapa navigering
                   href: user-interface/build-navigation.md
-                - name: Skapa arbetsytor
+                - name: Ändra en arbetsyta
                   href: user-interface/build-workspace.md
             - name: Formulär
               items:
@@ -1704,7 +1714,7 @@
                   href: user-interface/page-navigation.md
                 - name: Sidlayout i webbklienten
                   href: user-interface/page-layout.md
-                - name: Dynamics symbolteckensnitt
+                - name: Symbolteckensnitt för Dynamics
                   href: user-interface/symbol-font.md
                 - name: Sparade vyer
                   href: ../fin-ops/get-started/saved-views.md

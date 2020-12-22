@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: cb8519db2f5d52d4e317b485d6ecc910956788cb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 5998a492e12cb93aeec029c6e56f811f8b90055a
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975326"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4459985"
 ---
 # <a name="customer-workflow"></a>Kundarbetsflöde
 
@@ -60,4 +60,4 @@ När du har minst en föreslagen ändring visas två extra menyer i åtgärdsfö
 
     Sidans status ändras till **Ändringar som väntar på godkännande**.
 
-Arbetsflödet följer den vanliga arbetsflödesprocessen i appen. Godkännaren dirigeras till sidan **Kund** där han eller hon kan granska ändringarna på sidan **Föreslagna ändringar** och sedan välja **Arbetsflöde \> Godkänn** för att godkänna arbetsflödet. När alla godkännanden har slutförts uppdateras fälten med de värden du har föreslagit.
+Arbetsflödet följer den vanliga arbetsflödesprocessen i appen. Godkännaren dirigeras till sidan **Kund** där ändringarna kan granskas på sidan **Föreslagna ändringar** och sedan välja **Arbetsflöde \> Godkänn** för att godkänna arbetsflödet. När alla godkännanden har slutförts uppdateras fälten med de värden du har föreslagit.

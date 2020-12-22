@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f6bf4b6c946ebc63d3d84140f762cd4b789deb03
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459938"
+---
 När du kopierar en databas mellan olika miljöer måste du köra miljöetableringsverktyget igen innan den kopierade databasen fungerar helt och hållet och alla Commerce-komponenter är uppdaterade.
 
 > [!IMPORTANT]

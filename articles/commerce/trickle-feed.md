@@ -19,11 +19,11 @@ ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 79f99b9b401de3e3bcca6ec5a13a3b4f7bad6f8c
-ms.sourcegitcommit: 5b620f670ac0f403a0fdcdeb9c3f970b163191ee
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "3766746"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459972"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Indroppningsbaserat orderskapande för butikstransaktioner
 
@@ -36,7 +36,7 @@ Med indroppningsbaserat orderskapande som introducerades i Retail version 10.0.5
 
 ## <a name="how-to-use-trickle-feed-based-posting"></a>Så här använder du indroppningsbaserad bokföring
   
-1. Om du vill aktivera indroppningsbaserad bokföring av butikstransaktioner aktiverar du funktionen **Butiksutdrag – Indroppning**med hjälp av Funktionshantering.
+1. Om du vill aktivera indroppningsbaserad bokföring av butikstransaktioner aktiverar du funktionen **Butiksutdrag – Indroppning** med hjälp av Funktionshantering.
 
     > [!IMPORTANT]
     > Innan du aktiverar den här funktionen måste du se till att det inte finns några utdrag som väntar på att bokföras.
