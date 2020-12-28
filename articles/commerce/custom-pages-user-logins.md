@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0b54bf6234dcb87c84b21259c30ca5c321869adf
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: 5d9f2febc912b35897b063019146d219cadea1fa
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817316"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517242"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Ställa in anpassade sidor för användarinloggningar
 
@@ -58,7 +58,7 @@ För att konfigurera policyn "Registrera och logga in" följ stegen nedan.
     ![Valda attribut och anspråk](./media/B2C_SignInSignUp_Attributes.png)
 
 1. Skapa policyn genom att välja **OK**.
-1. Dubbelklicka på det nya policynamnet och välj sedan **Egenskaper**i navigeringsfönstret.
+1. Dubbelklicka på det nya policynamnet och välj sedan **Egenskaper** i navigeringsfönstret.
 1. Ange alternativet **aktivera JavaScript med tvingad sidlayout (förhandsgranskning)** till **På**.
 
     ![Egenskapssida för den nya policyn](./media/B2C_SignInSignUp_EnableJavascript.png)
@@ -78,7 +78,7 @@ Gör på följande vis för att konfigurera policyn "profilredigering".
 1. I kolumnen **Samla in attribut** välj kryssrutorna för **e-postadresser** och **efternamn**.
 1. I kolumnen **returanspråk** markerar du kryssrutorna för **e-postadresser**, **förnamn**, **identitetsleverantör**, **efternamn** och **användarens objekt-ID**.
 1. Skapa policyn genom att välja **OK**.
-1. Dubbelklicka på det nya policynamnet och välj sedan **Egenskaper**i navigeringsfönstret.
+1. Dubbelklicka på det nya policynamnet och välj sedan **Egenskaper** i navigeringsfönstret.
 1. Ange alternativet **aktivera JavaScript med tvingad sidlayout (förhandsgranskning)** till **På**.
 
 Du kommer tillbaka till den här policyn för att slutföra installationen när du har byggt de anpassade sidorna. Stäng nu policyn för att återgå till sidan **användarflöden (policyer)** i Azure-portalen.
@@ -98,7 +98,7 @@ Gör på följande vis för att konfigurera policyn "Lösenordsåterställning".
     ![Valda anspråk](./media/B2C_ForgetPassword_Attributes.png)
 
 1. Skapa policyn genom att välja **OK**.
-1. Dubbelklicka på det nya policynamnet och välj sedan **Egenskaper**i navigeringsfönstret.
+1. Dubbelklicka på det nya policynamnet och välj sedan **Egenskaper** i navigeringsfönstret.
 1. Ange alternativet **aktivera JavaScript med tvingad sidlayout (förhandsgranskning)** till **På**.
 
 Du kommer tillbaka till den här policyn för att slutföra installationen när du har byggt de anpassade sidorna. Stäng nu policyn för att återgå till sidan **användarflöden (policyer)** i Azure-portalen.
@@ -197,15 +197,15 @@ När du har uppdaterat global.json-filen och publicerat ändringarna, visas den 
 
 [Konfigurera ditt domännamn](configure-your-domain-name.md)
 
-[Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
+[Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md)
 
-[Skapa en e-handelsplats](create-ecommerce-site.md)
+[Skapa en näthandelsplats](create-ecommerce-site.md)
 
-[Associera en online-webbplats med en kanal](associate-site-online-store.md)
+[Associera en Dynamics 365 Commerce-webbplats med en onlinekanal](associate-site-online-store.md)
 
 [Hantera robots.txt-filer](manage-robots-txt-files.md)
 
-[Överföring av URL-omdirigeringar i bulk](upload-bulk-redirects.md)
+[Överför URL-omdirigeringar i bulk](upload-bulk-redirects.md)
 
 [Ställa in en B2C-innehavare i Commerce](set-up-B2C-tenant.md)
 

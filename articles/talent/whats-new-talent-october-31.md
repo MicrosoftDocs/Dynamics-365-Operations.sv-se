@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 4851c62a19bb562c7f5f578aecbae99cfcdb982f
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897383"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462604"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-october-31-2018"></a>Nyheter och ändringar i Dynamics 365 Talent - Core HR (31 oktober 2018)
 
@@ -59,7 +59,7 @@ Varje länk som skapats måste ha följande information definierad.
 
 - Använd användarens nuvarande företag, välj **Ja** om du vill använda användarens nuvarande företag när du navigerar till Finance. Om **Nej** är markerat kan du välja det företag som ska användas.
 
-- Målmenyalternativ - ange menyalternativet från Finance som länken ska användas för att navigera. Menyalternativ som du kan navigera direkt till är tillgängliga. För att hitta det menyalternativ som krävs, öppna Finance och öppna den sida som är målet för navigeringen. Kopiera menyalternativet från URL:en. Om du till exempel vill att länken ska ta dig till medarbetarlistan i Finance and Operations anger du värdet som visas efter den ”&mi” i URL-adressen. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. Menyalternativet för att navigera till listsidan för medarbetare i det här exemplet är: HcmWorkerListPage_Employees.
+- Målmenyalternativ - ange menyalternativet från Finance som länken ska användas för att navigera. Menyalternativ som du kan navigera direkt till är tillgängliga. För att hitta det menyalternativ som krävs, öppna Finance och öppna den sida som är målet för navigeringen. Kopiera menyalternativet från URL:en. Om du till exempel vill att länken ska ta dig till medarbetarlistan i Finance and Operations anger du värdet som visas efter ”&mi” i URL-adressen. https://devax00124aos.cloud.test.dynamics.com/?p=USMF&mi=HcmWorkerListPage_Employees. Menyalternativet för att navigera till listsidan för medarbetare i det här exemplet är: HcmWorkerListPage_Employees.
 
 - Länk till datakälla – Välj den källa för data som länken refererar till. De vanligaste datakällorna såsom **arbetare** och **befattning** är tillgängliga.
 

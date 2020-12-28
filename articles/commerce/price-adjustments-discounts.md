@@ -3,7 +3,7 @@ title: Prisjusteringar och rabatter
 description: Denna artikel innehåller information om prisjusteringar och rabatter i Dynamics 365 Commerce.
 author: scott-tucker
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dfaacfa7681258e3b2273083017c0c398d566651
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0c2adaa5cd935d5b593bfbb3215d3466fcafab7b
+ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024115"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4584325"
 ---
 # <a name="price-adjustments-and-discounts"></a>Prisjusteringar och rabatter
 
@@ -41,11 +41,13 @@ Prisjusteringar och rabatter kan användas för produkter, varianter eller kateg
 
 ## <a name="types-of-discounts"></a>Typer av rabatter
 
-Det finns fyra typer av rabatter:
+Det finns många olika typer av rabatter:
 
 - **Enkel rabatt** – En procentandel eller ett belopp.
 - **Rabatterad kvantitet** – En rabatt som används när två eller fler produkter köps.
 - **Mixa-och-matcha-rabatt** – En rabatt som används när en specifik kombination av produkter köps in.
 - **Tröskelrabatt** – En rabatt som används när transaktionens summa är mer än ett angivet belopp.
+- **Kassabaserad rabatt** – En rabatt som tillämpas när transaktionens totalsumma överstiger ett angivet belopp och ett visst betalsätt (t. ex. kassa, kredit eller betalkort) används för betalning.
+- **Leveransrabatt** – En rabatt som tillämpas när transaktionssumman är mer än ett angivet belopp och ett specifikt leveranssätt (t. ex. två dagars leverans nästföljande dag) används på ordern.
 
 Både prisjusteringar och rabatter kan associeras till prisgrupper. Prisgrupper kan sedan associeras till kanaler, kataloger, anknytningar och bonusprogram.

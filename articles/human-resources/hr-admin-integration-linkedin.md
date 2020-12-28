@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e82b79858060f31a6310cc5abdb2faf87db2d6c2
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4056107"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527895"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integration med LinkedIn Talent Hub
 
 [!include [banner](includes/preview-feature.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 [LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) är en plattform för sökningsspårningssystem (ATS). Med den kan du anskaffa, hantera och anställa medarbetare på samma ställe. Genom att integrera Microsoft Dynamics 365 Human Resources med LinkedIn Talent Hub kan du enkelt skapa medarbetarposter i Human Resources för de sökande som har anställts för en befattning.
 
@@ -45,7 +47,7 @@ En systemadministratör måste slutföra installationsåtgärderna för att kunn
 
 4. Välj **auktorisera** för Microsoft Dynamics 365 Human Resources-integrationen.
 
-5. På sidan **Dynamics 365 Human Resources** , välj den miljö du vill länka LinkedIn Talent Hub till och välj sedan **Länka**.
+5. På sidan **Dynamics 365 Human Resources**, välj den miljö du vill länka LinkedIn Talent Hub till och välj sedan **Länka**.
 
     ![LinkedIn Talent Hub registrering](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
@@ -99,7 +101,7 @@ En program användare måste skapas för LinkedIn Talent Hub för att bevilja be
     1. Ändra värdet för fältet **Användartyp** till **Appanvändare**.
     2. Ange fältet **användarnamn** till **Dynamics365 HR LinkedIn HRIS-integration**.
     3. Ange fältet **App-ID** till **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
-    4. Ange valfritt värde i fälten **Förnamn** , **Efternamn** och **Primär e-post**.
+    4. Ange valfritt värde i fälten **Förnamn**, **Efternamn** och **Primär e-post**.
     5. I verktygsfältet, välj **Spara \& Stäng**.
 
 ### <a name="assign-a-security-role-to-the-new-user"></a>Tilldela den nya användaren en säkerhetsroll
@@ -121,9 +123,9 @@ När du har sparat och stängt den nya appanvändaren i föregående avsnitt, ko
 1. I Dynamics 365 Human Resources, öppna sidan **Azure Active Directory-appar**.
 2. Lägg till en ny post till listan och ange följande fält:
 
-    - **Klient-ID** : ange **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
-    - **Namn** : Ange namnet på den Power Apps säkerhetsroll som du skapade tidigare, t.ex. **LinkedIn Talent Hub HRIS-integration**.
-    - **Användar-ID** : Välj en användare som har behörighet att skriva data i personalhantering.
+    - **Klient-ID**: ange **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
+    - **Namn**: Ange namnet på den Power Apps säkerhetsroll som du skapade tidigare, t.ex. **LinkedIn Talent Hub HRIS-integration**.
+    - **Användar-ID**: Välj en användare som har behörighet att skriva data i personalhantering.
 
 ### <a name="create-the-entity-in-common-data-service"></a>Skapa entiteten i Common Data Service
 
@@ -152,13 +154,13 @@ När en kandidat har gått igenom rekryteringsprocessen och har anställts kan d
 
 3. Välj **Ändra fas** och välj sedan **Anställd**.
 
-4. På ellips-menyn ( **...** ) för kandidaten väljer du **Exportera till HRIS**.
+4. På ellips-menyn (**...**) för kandidaten väljer du **Exportera till HRIS**.
 
 5. I fönstret **Exportera till HRIS** ange informationen som måste exporteras:
 
     - I fältet **HRIS-leverantör** väljer du **Microsoft Dynamics 365 Human Resources**.
     - I fältet **startdatum** välj ett värde för den nya anställda.
-    - I fältet **jobbtitel** , ange en jobbtitel för den nya medarbetarens jobb.
+    - I fältet **jobbtitel**, ange en jobbtitel för den nya medarbetarens jobb.
     - I fältet **plats** anger du den plats där medarbetaren ska baseras.
     - Ange eller verifiera medarbetarens e-postadress.
 

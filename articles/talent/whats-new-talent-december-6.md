@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e46000414436b5a2fa211428dcd10131b9d588c1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 462b87a655e3e4017cffd2ba41cb6d1f18de3e50
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897705"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529172"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-december-6-2018"></a>Nyheter och ändringar i Dynamics 365 Talent - Core HR (6 december 2018)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 **Skapa 8.1.2071**
 
@@ -48,13 +50,13 @@ Verktygsfältet för anpassning har fått en ny design i plattformsuppdatering 2
 
 ### <a name="optimized-is-one-of-filtering-experience"></a>Optimerad "är någon av" filtreringsupplevelsen
 
-Filtreringsoperatorn ”är någon av” är tillgänglig för de flesta fält när du använder i rubriklistrutorna för filterfönster och rutnät. Den här operatorn tillåter att en användare filtrerar ett fält baserat på flera värden. En ny och förbättrad upplevelse för operatorn ”är någon av” finns i plattformsuppdatering 22 för Finance and Operations. För mer information, se [Optimerad "är någon av" filtreringsupplevelse](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
+Filtreringsoperatorn ”är någon av” är tillgänglig för de flesta fält när du använder i rubriklistrutorna för filterfönster och rutnät. Den här operatorn tillåter att en användare filtrerar ett fält baserat på flera värden. En ny och förbättrad upplevelse för operatören ”är någon av” finns i plattformsuppdatering 22 för Finance and Operations. För mer information, se [Optimerad "är någon av" filtreringsupplevelse](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
 ### <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>Klistra in listor från Excel till filterfält med operatorn ”"är någon av”
 
 För vissa uppgifter kan användare ha en lista över värden i Excel som de skulle vilja använda för att filtrera data i Talent. Exempelvis i Personal kan användaren ha identifierat en grupp av medarbetare i en rapport som kräver ytterligare undersökning i systemet och det skulle vara perfekt för den här användaren att kunna kopiera listan direkt från Excel till ett filterfält i Talent.
 
-Med start i plattformsuppdatering 22 för Finance and Operations identifieras operatorn ”är någon av” i filterfönstret och filtrering i rutnätskolumner erkänner nu listor som kopieras från Excel så att de kan klistras in direkt i ett filterfält. Detta inkluderar en uppsättning värden som kopieras från olika rader och kolumner i Excel. Mer information om den här funktionen finns i [Klistra in listor från Excel till filterfält med operatorn ”är någon av”](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+Med start i plattformsuppdatering 22 för Finance and Operations identifieras operatören ”är någon av” i filterfönstret och filtrering i rutnätskolumner erkänner nu listor som kopieras från Excel så att de kan klistras in direkt i ett filterfält. Detta inkluderar en uppsättning värden som kopieras från olika rader och kolumner i Excel. Mer information om den här funktionen finns i [Klistra in listor från Excel till filterfält med operatorn ”är någon av”](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
 ## <a name="in-preview"></a>I förhandsgranskning
 
@@ -133,7 +135,7 @@ Arbetare till arbetsuppgift måste ha följande mappningar uppdaterade.
 
 Transformering av fältet Kön behöver också uppdateras. Välj mapptypen **fn** (funktion) för kön och uppdatera följande värdemappningar.
 
-| Common Data Service Värde   | Finance and Operations-värde | | ------------|------------------ -----------| | 75440000    | Man                         | | 75440001    | Kvinna                       | | 75440002    | Ingen                         | | 75440003    | Ej specifik                  |
+| Common Data Service-värde   | Finance and Operations-värde | | ------------|------------------ -----------| | 75440000    | Man                         | | 75440001    | Kvinna                       | | 75440002    | Inget                         | | 75440003    | Ospecificerat                  |
 
 Uppdaterade mappningar ska se ut så här.
 

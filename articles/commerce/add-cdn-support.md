@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 0e888fca4a5401f1df6e61b10358489846ad4b0e
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646049"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517218"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Lägga till stöd för ett innehållsleveransnätverk (CDN)
 
@@ -33,11 +33,11 @@ I det här avsnittet beskrivs hur du lägger till ett innehållsleveransnätverk
 
 ## <a name="overview"></a>Översikt
 
-När du ställer in en näthandelsmiljö i Dynamics 365 Commerce kan du konfigurera den så att den fungerar med ditt CDN-tjänst. 
+När du konfigurerar en näthandelsmiljö i Dynamics 365 Commerce kan du konfigurera den så att den fungerar med ditt CDN-tjänst. 
 
 Din anpassade domän kan aktiveras under etableringsprocessen för näthandelsmiljön. Du kan också använda en serviceförfrågan för att ställa in den när etableringen har slutförts. Etableringsprocessen för näthandelsmiljön genererar ett värdnamn som associeras med miljön. Det här värdnamnet har följande format, där \<*e-commerce-tenant-name*\> är namnet på din miljö:
 
-&lt;e-handelsinnehavarens-namn&gt;.commerce.dynamics.com
+&lt;näthandelsinnehavarens-namn&gt;.commerce.dynamics.com
 
 Värdnamnet eller slutpunkten som genereras under etableringsprocessen har stöd för ett SSL-certifikat (Secure Sockets Layer) för \*commerce.dynamics.com. Det stöder inte SSL för anpassade domäner. Därför måste du avsluta SSL för anpassade domäner i CDN och vidarebefordra trafiken från CDN till värdnamnet eller slutpunkten som skapas av handel. 
 
@@ -97,8 +97,8 @@ Så här skapar du en flödesregel i Azure Front Door Service:
 1. Skriv **Dokument** i fältet **Standard**.
 1. I fältet **accepterat protokoll**, välj **HTTP och HTTPS**.
 1. I fältet **Klientvärd** ange **dynamics-ecom-tenant-name.azurefd.net**.
-1. Under **Mönster att matcha**, i det övre fältet anger du **/\***.
-1. Under **Flödesdetaljer**, ange alternativet **Flödestyp** till **Framåt**.
+1. Under **Mönster att matcha** i det övre fältet anger du **/\** _.
+1. Under **Flödesdetaljer** anger du alternativet **Flödestyp** som **Framåt**.
 1. I fältet **Serverpool** välj **ecom-backend**.
 1. I fältgruppen **Vidarebefordringsprotokoll** välj alternativet **Matcha begäran**. 
 1. Ange alternativet **URL-omskrivning** till **inaktiverad**.
@@ -110,8 +110,8 @@ Så här skapar du en cachelagringsregel i Azure Front Door Service:
 1. Skriv **statisk** i fältet **namn**.
 1. I fältet **accepterat protokoll**, välj **HTTP och HTTPS**.
 1. I fältet **Klientvärd** ange **dynamics-ecom-tenant-name.azurefd.net**.
-1. Under **Mönster att matcha**, i det övre fältet, **/\_msdyn365/\_scnr/\***.
-1. Under **Flödesdetaljer**, ange alternativet **Flödestyp** till **Framåt**.
+1. Under **Mönster att matcha** i det övre fältet, ange **/\_msdyn365/\_scnr/\** _.
+1. Under **Flödesdetaljer** anger du alternativet **Flödestyp** som **Framåt**.
 1. I fältet **Serverpool** välj **ecom-backend**.
 1. I fältgruppen **Vidarebefordringsprotokoll** välj alternativet **Matcha begäran**.
 1. Ange alternativet **URL-omskrivning** till **inaktiverad**.
@@ -146,15 +146,15 @@ Din CDN ska nu vara korrekt konfigurerad så att den kan användas med din näth
 
 [Konfigurera ditt domännamn](configure-your-domain-name.md)
 
-[Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
+[Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md)
 
-[Skapa en e-handelsplats](create-ecommerce-site.md)
+[Skapa en näthandelsplats](create-ecommerce-site.md)
 
-[Associera en online-webbplats med en kanal](associate-site-online-store.md)
+[Associera en Dynamics 365 Commerce-webbplats med en onlinekanal](associate-site-online-store.md)
 
 [Hantera robots.txt-filer](manage-robots-txt-files.md)
 
-[Överföring av URL-omdirigeringar i bulk](upload-bulk-redirects.md)
+[Överför URL-omdirigeringar i bulk](upload-bulk-redirects.md)
 
 [Ställa in en B2C-innehavare i Commerce](set-up-B2C-tenant.md)
 

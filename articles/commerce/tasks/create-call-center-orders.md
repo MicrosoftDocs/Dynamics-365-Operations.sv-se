@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dce2fdd9d91c2bd867f0455573733aefb0796fa7
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.openlocfilehash: c875eaa85d9da997b75b296ad9ace99ae1e91798
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107362"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594246"
 ---
 # <a name="create-call-center-orders"></a> Skapa kundtjänstorder
 
@@ -31,7 +31,7 @@ ms.locfileid: "4107362"
 Den här proceduren går igenom hur du söker efter en kund, skapar en ny order, söker efter en produkt och tar emot betalningen från kunden. I den här proceduren används demonstrationsdataföretaget USRT och är avsedd för Försäljningsorderansvarig. Förutsättningar: Användaren som utför proceduren ställs in som kundtjänstanvändare och halvårsutgåvan av Fabrikam-katalogen publiceras med minst en källkod på den.
 
 1. Gå till **Butik och handel \> Kunder \> Kundtjänst**.
-2. För **Söktext** , ange sökkriterierna för att hitta kunden.
+2. För **Söktext**, ange sökkriterierna för att hitta kunden.
     * För den här exempelproceduren, skriv ”karen” och tryck på **flik**.  
 3. Välj Sök.
     * Eftersom det bara finns en kund med namnet Karen i demodata, kommer resultatet automatiskt markeras.  
@@ -55,4 +55,10 @@ Den här proceduren går igenom hur du söker efter en kund, skapar en ny order,
     * För den här proceduren, ange ett belopp lika med ordersaldot som kan visas på sammanfattningssidan för försäljningsorder till vänster om beloppsfältet. Denna åtgärd gör att du slutför ordern som helt betald.  
 17. Välj **OK**.
 18. Välj **skicka**.
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+[Anpassa transaktionsmeddelanden via e-post efter leveranssätt](../customize-email-delivery-mode.md)
+
+[Ändra leveranssätt i kassan](../pos-change-delivery-mode.md)
 

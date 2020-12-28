@@ -1,7 +1,7 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Talent - Core HR (augusti 2018)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent - Core HR.
-author: Darinkramer
+author: andreabichsel
 manager: AnnBe
 ms.date: 08/27/2018
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-08-27
 ms.dyn365.ops.version: Talent August 2018 update
-ms.openlocfilehash: 4f6d0a32807397d5f2c0892061e54c2fed24610b
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 30646de08bd5ea4b2da05bfc38da7edc320a3331
+ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897774"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4690110"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-august-2018"></a>Nyheter och ändringar i Dynamics 365 Talent - Core HR (augusti 2018)
 
@@ -33,7 +33,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Talent: C
 
 ## <a name="view-expiring-records-in-manager-self-service"></a>Visa utgående poster i självbetjäning för chef
 
-Du kan nu visa utgående poster i självbetjäning för chef. Nya alternativ låter dig konfigurera vilken information som ska vara tillgängliga för chefer att visa. Dessa omfattar:
+Du kan nu visa utgående poster i självbetjäning för chef. Nya alternativ låter dig konfigurera vilken information som ska vara tillgängliga för chefer att visa. Alternativen inkluderar:
 
 -   Intyg
 
@@ -51,7 +51,7 @@ Den här funktionen ger även möjlighet att ange det antal dagar som ska sökas
 
 Du kan konfigurera efter roll de alternativ som är tillgängliga vid registrering av en överföringsbegäran. Denna funktion ger ytterligare flexibilitet mellan roller i organisationen.
 
-T.ex. chefer som begär överföring av medarbetare kanske inte har åtkomst till att föreslå eller ange kompensationsbelopp eller välja uppgiftslistor som kommer att vara associerade till överföringsbegäran. I detta fall kan chefer skapa och skicka överföringsbegäranden men de får inte ange kompensation eller lista aktivitetstilldelningar. I samma konfiguration kommer personalavdelningen att kunna tilldela nya kompensationsvärden och även tilldela eventuella ytterligare checklistor som ska slutföras som ett resultat av att överföringen slutförs.
+T.ex. chefer som begär överföring av medarbetare kanske inte har åtkomst till att föreslå eller ange kompensationsbelopp eller välja uppgiftslistor som kommer att vara associerade till överföringsbegäran. Chefer kan skapa och skicka överföringsbegäranden, men de kan inte ange kompensation eller lista aktivitetstilldelningar. I samma konfiguration kan personalavdelningen tilldela nya kompensationsvärden och tilldela eventuella ytterligare checklistor som ska slutföras eftersom överföringen slutförs.
 
 Som standard ställs nya konfigurationsalternativ in för att inte ändra funktionerna före uppdateringen.
 
@@ -59,7 +59,7 @@ Som standard ställs nya konfigurationsalternativ in för att inte ändra funkti
 
 Det finns nu fler datumfält i Ledighet och frånvaro.
 
-Du kan ange underlag för periodiseringsperiod på plannivå för att använda specifika medarbetardatum. Detta inkluderar andra datum än startdatum för planen som ska användas under periodiseringsprocessen för ledigheten. Alternativen för specifika medarbetardatum omfattar följande värden:
+Du kan ange underlag för periodiseringsperiod på plannivå för att använda specifika medarbetardatum. Andra datum än startdatum för planen kan användas under periodiseringsprocessen för ledigheten. Alternativen för medarbetarspecifika datum omfattar följande värden:
 
 -   Anpassad (tillgänglig innan denna uppdatering)
 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 68dc73b7316a3ceb7129c9ea46bc60669ed2be95
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 04b5a006d4580fe419d81986a90851bc8d611722
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896944"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528229"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Vad är nytt och ändrat i Dynamics 365 Talent (2 april 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Talent.
 
@@ -55,7 +57,7 @@ I Attract och Onboard loggas problem av slutanvändare genom funktionen rapporte
 Ändringar som beskrivs i detta avsnitt gäller versionsnummer 8.1.2216.
 
 ### <a name="platform-update-25-for-finance-and-operations"></a>Plattformsuppdatering 25 för Finance and Operations
-Ytterligare information om plattformsuppdatering 25 för Finance and Operations finns i [Förhandsgranskningsfunktioner i Dynamics 365 for Finance and Operations plattformsuppdatering 25 (april 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+Mer information om plattformsuppdatering 25 för Finance and Operations finns i [Förhandsgranskningsfunktioner i Dynamics 365 for Finance and Operations-plattformsuppdatering 25 (april 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Avancerad kompensationssäkerhet (fasta och rörliga)
 I många organisationer kan kompensations- och förmånsansvariga endast ha tillgång till vissa kompensationsposter. Dessa kan inkludera poster för chefer eller nationella medarbetare. Denna ändring ger personalavdelningen möjlighet att hantera och underhålla kompensationsplaner för olika medarbetargrupper i organisationen. Du kan tilldela säkerhetsroller till fasta och variabla planer. Dessa säkerhetsroller avgör åtkomst till planer och relaterade medarbetardata, till exempel lön- eller bonusposter så att endast de rollerna kan bearbeta kompensation för medarbetargrupper.

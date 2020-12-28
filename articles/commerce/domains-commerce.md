@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 84becee12363ca38951ff13073d87d1b1f14b616
-ms.sourcegitcommit: a47a4652a29fdb567a8ba67c4f914a8698e8c48c
+ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3765011"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517365"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domäner i Dynamics 365 Commerce
 
@@ -34,26 +34,26 @@ Domäner är webbadresser som används för att navigera till Dynamics 365 Comme
 
 ## <a name="provisioning-and-supported-host-names"></a>Etablera och stödja värdnamn
 
-När du etablerar en näthandelsmiljö i [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), används rutan **Värdnamn som stöds** på näthandelskärmen används för att ange domäner som ska associeras med den distribuerade handelsmiljön. De här domänerna är DNS-namn (domännamnserver) där e-handelswebbplatser kommer att finnas på en värd. Att ange en domän i detta skede börjar inte att leda till att trafiken för domänen ändras till Dynamics 365 Commerce. Trafik för en domän skickas bara till Commerce-slutpunkten när DNS CNAME-posten uppdateras för att använda Commerce-slutpunkten för domänen.
+När du etablerar en näthandelsmiljö i [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), används rutan **Värdnamn som stöds** på etableringsskärmen för näthandel för att ange domäner som ska associeras med den distribuerade Commerce-miljön. Dessa domäner blir de kundriktade DNS-namn (domännamnserver) där näthandelsplatser värdbaseras. Att ange en domän i detta skede börjar inte att leda till att trafiken för domänen ändras till Dynamics 365 Commerce. Trafik för en domän skickas bara till Commerce-slutpunkten när DNS CNAME-posten uppdateras för att använda Commerce-slutpunkten för domänen.
 
 > [!NOTE]
 > Flera domäner kan anges i rutan **värdnamn som stöds** genom att avgränsa dem med semikolon.
 
-I följande bild visas näthandelskärmen för LCS med rutan **värdnamn som stöds** markerad. 
+I följande bild visas LCS-etableringsskärmen för näthandel med rutan **Värdnamn som stöds** markerad. 
 
-![näthandelskärmen för LCS med rutan **värdnamn som stöds** markerad](./media/Domains_ProvisioningeCommerceScreen.png)
+![Etableringsskärmen för LCS-näthandel med rutan **Värdnamn som stöds** markerad](./media/Domains_ProvisioningeCommerceScreen.png)
 
 Du kan skapa en tjänstbegäran om du vill lägga till fler domäner i en miljö om etableringen redan har genomförts. Om du vill skapa en tjänstbegäran i LCS, inom din miljö, går du till **Support \> Supportproblem** och väljer **Skicka en incident**.
 
 ## <a name="commerce-generated-urls"></a>Commerce-genererade URL
 
-Vid etablering av en näthandelsmiljö genererar Commerce en URL som kommer att vara arbetsadress för miljön. Den här URL:en refereras i den e-handelsplatslänk som visas i LCS efter att miljön har etablerats. En Commerce-genererad URL är i formatet `https://<e-Commerce tenant name>.commerce.dynamics.com` där näthandelsinnehavarens namn är det namn som har angetts i LCS för Commerce-miljö.
+Vid etablering av en Dynamics 365 Commerce-näthandelsmiljö genererar Commerce en URL som blir miljöns arbetsadress. Denna URL refereras till i den näthandelsplatslänk som visas i LCS efter det att miljön har etablerats. En Commerce-genererad URL bär formatet `https://<e-commerce tenant name>.commerce.dynamics.com`, där namnet på näthandelns klientorganisation är det namn som har angetts i LCS för Commerce-miljö.
 
 Du kan också använda namn på produktionsplats värden i en sandbox-miljö. Det här alternativet är praktiskt när du vill kopiera en webbplats från en begränsat miljö till en produktion.
 
 ## <a name="site-setup"></a>Inställning av webbplats
 
-När din e-handelsmiljö har etablerats måste du ställa in din webbplats i webbplatsskaparen för att koppla webbplatsen till arbets-URL:en.
+När din näthandelsmiljö har etablerats måste du ställa in din webbplats i Commerce-webbplatsskaparen för att koppla webbplatsen till arbets-URL:en.
 
 När du först skapar en webbplats i webbplatsskaparen visas dialogrutan **konfigurera plats**.
 
@@ -68,7 +68,7 @@ Rutan **Sökväg** kan lämnas tom, eller så kan en extra sökvägssträng läg
 > [!NOTE]
 > Sökvägen kallas även **matchningssökväg** när en kanal läggs till i konfigurationsavsnittet i **webbplatsinställningar \> kanaler** i webbplatsskaparen.
 
-Om du till exempel har en webbplats i webbplatsskaparen som kallas "Fabrikam" i en e-handelsklient med namnet "xyz", och du ställer in webbplatsen med en tom sökväg, får du tillgång till det publicerade webbplatsinnehållet i en webbläsare genom att gå direkt till den grundläggande Commerce-genererade URL:en:
+Om du till exempel har en webbplats i webbplatsskaparen som kallas "Fabrikam" i en näthandelsklient med namnet "xyz" och du ställer in webbplatsen med en tom sökväg, får du tillgång till det publicerade webbplatsinnehållet i en webbläsare genom att gå direkt till den grundläggande Commerce-genererade URL:en:
 
 `https://xyz.commerce.dynamics.com`
 
@@ -102,9 +102,9 @@ Om ingen frågesträng för domän har angetts i en miljö med flera domäner, a
 
 ## <a name="traffic-forwarding-in-production"></a>Vidarebefordran av trafik i produktion
 
-Du kan simulera flera domäner med hjälp av parametrar för domänfrågor i själva commerce.dynamics.com slutpunkt. När du behöver gå in i produktionen måste du vidarebefordra trafiken för din anpassade domän till slutpunkten `<e-Commerce tenant name>.commerce.dynamics.com`.
+Du kan simulera flera domäner med hjälp av parametrar för domänfrågor i själva commerce.dynamics.com slutpunkt. När du behöver gå in i produktionen måste du vidarebefordra trafiken för din anpassade domän till slutpunkten `<e-commerce tenant name>.commerce.dynamics.com`.
 
-Slutpunkten `<e-Commerce tenant name>.commerce.dynamics.com` stöder inte anpassade domän Secure Sockets Layers (SSL), så du måste konfigurera anpassade domäner med hjälp av Front Door Service eller ett CDN (Content Delivery Network). 
+Slutpunkten `<e-commerce tenant name>.commerce.dynamics.com` stöder inte anpassade domän Secure Sockets Layers (SSL), så du måste konfigurera anpassade domäner med hjälp av Front Door Service eller ett CDN (Content Delivery Network). 
 
 Om du vill ställa in anpassade domäner med hjälp av en Front Door Service eller CDN har du två alternativ:
 
@@ -115,7 +115,7 @@ Information om hur du ställer in en CDN-tjänst direkt finns i [lägga till st�
 
 Om du vill använda en Commerce-tillhandahållen Azure Front Door-instans måste du skapa en service förfrågan för CDN-inställningar hjälp från det inbyggda Commerce-integrationsteamet. 
 
-- Du måste ange företagsnamn, produktionsdomän, miljö-ID och innehavarens namn på näthandelsinnehavaren. 
+- Du måste ange företagsnamn, produktionsdomän, miljö-ID och namnet på klientorganisationen för näthandel för produktionen. 
 - Du måste bekräfta om detta är en befintlig domän (som används för en för tillfället aktiv plats) eller en ny domän. 
 - För en ny domän kan domänverifiering och SSL-certifikat uppnås i ett enda steg. 
 - För en domän som betjänar en befintlig webbplats, finns det en multistegsprocess som krävs för att upprätta domän verifieringen och SSL-certifikatet. Denna process har ett servicenivåavtal (7 arbetsdagar) för en domän att vara aktivt, eftersom det innehåller flera sekventiella steg.
@@ -143,26 +143,26 @@ För befintliga/aktiva domäner:
 
 Den Commerce-tillhandahållna Azure Front Door-instansen stöder inte apex-domäner (rotdomäner som inte innehåller underdomäner). Apex-domäner kräver en IP-adress för att kunna matcha och Commerce Azure Front Door-instans finns endast med virtuella slutpunkter. Om du vill använda en apex-domän har du två alternativ:
 
-- **Alternativ 1** - Använd din DNS-provider för att omdirigera apex-domänen till en "www"-domän. Fabrikam.com omdirigeras till exempel till den `www.fabrikam.com` där `www.fabrikam.com` är CNAME-posten som pekar på den Commerce-värdbaserade Azure Front Door-instansen.
+- **Alternativ 1** - Använd din DNS-provider för att omdirigera apex-domänen till en "www"-domän. Fabrikam.com omdirigeras till exempel till den `www.fabrikam.com` där `www.fabrikam.com` är CNAME-posten som pekar mot den Commerce-värdbaserade Azure Front Door-instansen.
 
 - **Alternativ 2** - Ställ in en CDN/Front Door-instans som värd för apex-domänen.
 
 > [!NOTE]
-> Om du använder Azure Front Door måste du också ställa in en Azure DNS i samma prenumeration. Apex-domänen som finns på Azure DNS kan peka på din Azure Front Door som en aliaspost. Detta är det enda problemet, eftersom apex-domäner alltid måste peka på en IP-adress.
+> Om du använder Azure Front Door måste du också ställa in en Azure DNS i samma prenumeration. Apex-domänen som finns på Azure DNS kan peka mot din Azure Front Door som en aliaspost. Detta är det enda problemet, eftersom apex-domäner alltid måste peka mot en IP-adress.
 
   ## <a name="additional-resources"></a>Ytterligare resurser
 
-  [Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
+  [Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md)
 
   [Ställ in en kanal för onlinebutik](online-stores.md)
 
-  [Skapa en e-handelsplats](create-ecommerce-site.md)
+  [Skapa en näthandelsplats](create-ecommerce-site.md)
 
-  [Associera en online-webbplats med en kanal](associate-site-online-store.md)
+  [Associera en Dynamics 365 Commerce-webbplats med en onlinekanal](associate-site-online-store.md)
 
   [Hantera robots.txt-filer](manage-robots-txt-files.md)
 
-  [Överföring av URL-omdirigeringar i bulk](upload-bulk-redirects.md)
+  [Överför URL-omdirigeringar i bulk](upload-bulk-redirects.md)
 
   [Ställa in en B2C-innehavare i Commerce](set-up-B2C-tenant.md)
 

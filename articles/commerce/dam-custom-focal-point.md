@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af922e857e6bd7a58c0b9891939c8265568b549b
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: b20fbc20f18243c712595795a0b16ae417e755e6
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269531"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594342"
 ---
 # <a name="customize-image-focal-points"></a>Anpassa bildens fokuspunkter
 
@@ -58,3 +58,5 @@ Om du vill definiera en egen fokuspunkt för en bild följer du stegen nedan.
 [Överför filer](dam-upload-files.md)
 
 [Beskär bilder](dam-crop-images.md)
+
+[Ladda upp och betjäna statiska filer](upload-serve-static-files.md)

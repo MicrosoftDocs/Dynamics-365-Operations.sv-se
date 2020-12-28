@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e00a54db50f1360096bb5329eef660927cecde3d
-ms.sourcegitcommit: 4359e7e4eec25362df61c9a26c7218604d12da3d
+ms.openlocfilehash: 97385da9d258cc169a9976be7c7798faa41661c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3078053"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527703"
 ---
 # <a name="source-candidates-with-talent-pools-in-attract"></a>Skaffa kandidater med talangpooler i Attract
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Rekryterare och anställande chefer kan ordna sina kandidater med funktionen talangpooler i Attract. Talangpooler kan hjälpa dig att hålla reda på och kommunicera med kandidater som söker jobb i ditt företag.
 
@@ -113,7 +115,7 @@ Alla användare har en gemensam vy över kandidatprofiler. Fliken **profil** vis
 
 - Fliken **dokument** visar alla handlingar som kandidaten har lagt till från hans eller hennes profil eller under jobbansökningar. Du kan använda den här fliken för att hantera kandidatens meritförteckningar, följebrev, portföljarbete, och så vidare. Du kan också använda den här fliken för att lägga till dokument.
 
-    Om du vill visa ett dokument markerar du dokumentnamnet i dokumentlistan. Du kan visa Microsoft Word-dokument i programmet med Microsoft Office 365. Du kan också hämta dokument på den lokala datorn med hjälp av alternativet **hämta** för varje dokument.
+    Om du vill visa ett dokument markerar du dokumentnamnet i dokumentlistan. Du kan visa Microsoft Word-dokument i programmet med Microsoft 365. Du kan också hämta dokument på den lokala datorn med hjälp av alternativet **hämta** för varje dokument.
 
 - Fliken **LinkedIn** visar kandidatens LinkedIn-information. Om du vill använda den här fliken måste du ansluta ditt LinkedIn-konto i användarinställningarna och din miljös LinkedIn Recruiter-anslutning måste skapas. Mer information finns i [Hitta kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md).
 

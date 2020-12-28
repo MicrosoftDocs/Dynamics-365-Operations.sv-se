@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 291f7aefac61c26dfab81cfff28c1c6580d46de5
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897132"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462607"
 ---
 # <a name="edit-onboarding-guides-and-templates"></a>Redigera integrationsguider och mallar
 
@@ -46,7 +46,7 @@ När du väljer en hanterad aktivitet kan du se källmallen överst i aktivitete
 
 [![Källa för hanterad aktivitet](./media/onboard-edit-guide-managed-activity-source.png)](./media/onboard-edit-guide-managed-activity-source.png)
 
-Om du redigerar en aktivitet i en mall, skickar Onboard ändringarna till alla mallar och ej skickade guider som baseras på mallen. Om du väljer en guide som inte har skickats och som är baserad på en mall som du har redigerat och sedan väljer fliken **aktiviteter** i guiden visas ett meddelande om att din guide har ändrats. Klicka på **OK**om du vill stänga meddelandet. 
+Om du redigerar en aktivitet i en mall, skickar Onboard ändringarna till alla mallar och ej skickade guider som baseras på mallen. Om du väljer en guide som inte har skickats och som är baserad på en mall som du har redigerat och sedan väljer fliken **aktiviteter** i guiden visas ett meddelande om att din guide har ändrats. Klicka på **OK** om du vill stänga meddelandet. 
 
 [![Ändra meddelande](./media/onboard-edit-guide-change-notification.png)](./media/onboard-edit-guide-change-notification.png)
 
@@ -166,7 +166,7 @@ Du kan lägga till användbara filer, kartor och länkar till avsnittet **resurs
 2. Gör något av följande:
 
     - Om du vill lägga till en fil väljer du fliken **Fil** och drar filen till det angivna området. (Du kan också klicka någonstans i området för att bläddra efter filen på din dator eller välja **bläddra i OneDrive**.) Ange ett namn på filen och välj sedan **Lägg till**.
-    - Om du vill lägga till en länk väljer väljer du fliken**Länk** och anger ett namn och en adress för länken och väljer sedan **Lägg till**.
+    - Om du vill lägga till en länk väljer väljer du fliken **Länk** och anger ett namn och en adress för länken och väljer sedan **Lägg till**.
     - Om du vill lägga till en karta väljer väljer du fliken **karta** och anger ett namn och en adress för kartan och väljer sedan **Lägg till**. Onboard kommer att innehålla en karta över den adress som du anger.
 
     ![[Lägga till en resurs i en introduktionsguide eller mall](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 855eafaca88d180997cf5a68c7f0fe975c177f88
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 115d7cd3d71eaddce2434cb1939c503d36bccdf8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898929"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527300"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-5-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (5 mars 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Det här ämnet beskriver nya eller ändrade funktioner i Talent.
 
@@ -77,4 +79,4 @@ Tidsgränser för uppgradering till Common Data Service för appar närmar sig s
 I många organisationer kan kompensations- och förmånsansvariga bara komma åt vissa kompensationsposter, t.ex. poster för chefer eller regionsbaserade anställda. Med den här ändringen kan du hantera och underhålla kompensationsplaner för olika medarbetare i organisationen. Fasta och variabla planer kan tilldelas säkerhetsroller som bestämmer åtkomsten till planer och medarbetardata relaterade till planerna, till exempel lön eller bonusposter. Endast roller med viss åtkomst ska kunna bearbeta kompensation för dessa anställda.
 
 ###  <a name="platform-update-24-for-finance-and-operations"></a>Plattformsuppdatering 24 för Finance and Operations
-Ytterligare information om plattformsuppdatering 24 för Finance and Operations finns i [Nyheter eller ändringar i Finance and Operations plattformsuppdatering 24 (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Mer information om plattformsuppdatering 24 för Finance and Operations finns i [Vad är nytt eller har ändrats i Finance and Operations-plattformsuppdatering 24 (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
