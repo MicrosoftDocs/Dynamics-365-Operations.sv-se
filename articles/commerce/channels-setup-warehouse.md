@@ -1,0 +1,149 @@
+---
+title: Ställ in ett lagerställen
+description: I det här avsnittet beskrivs hur du ställer in ett lagerställe som ska användas med en ny kanal i Microsoft Dynamics 365 Commerce.
+author: samjarawan
+manager: annbe
+ms.date: 01/27/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+audience: Application User
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: samjar
+ms.search.validFrom: 2020-01-20
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415824"
+---
+# <a name="warehouse-set-up"></a><span data-ttu-id="6b397-103">Inställning av lagerställe</span><span class="sxs-lookup"><span data-stu-id="6b397-103">Warehouse set up</span></span>
+
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="6b397-104">I det här avsnittet beskrivs hur du ställer in ett lagerställe som ska användas med en ny kanal i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="6b397-104">This topic describes how to set up a warehouse to be used with a new channel in Microsoft Dynamics 365 Commerce.</span></span>
+
+## <a name="overview"></a><span data-ttu-id="6b397-105">Översikt</span><span class="sxs-lookup"><span data-stu-id="6b397-105">Overview</span></span>
+
+<span data-ttu-id="6b397-106">Varje handelskanal kräver ett konfigurerat lagerställe för att det ska associeras med det.</span><span class="sxs-lookup"><span data-stu-id="6b397-106">Each Commerce channel requires a configured warehouse to be associated with it.</span></span> <span data-ttu-id="6b397-107">Följande procedurer ger den minsta konfiguration som krävs för att ställa in ett lager ställe för en handelskanal.</span><span class="sxs-lookup"><span data-stu-id="6b397-107">The following procedures provide the minimum configuration required to set up a warehouse for a Commerce channel.</span></span> <span data-ttu-id="6b397-108">Mer information om inställningar för lagerställen finns i [Lagerstyrning – översikt](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).</span><span class="sxs-lookup"><span data-stu-id="6b397-108">For more information regarding warehouse setup, please see the [Warehouse management overview](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).</span></span>
+
+## <a name="configure-a-warehouse-site"></a><span data-ttu-id="6b397-109">Konfigurera en lagerställeplats</span><span class="sxs-lookup"><span data-stu-id="6b397-109">Configure a warehouse site</span></span>
+
+<span data-ttu-id="6b397-110">Innan du ställer in ett lagerställe måste du konfigurera en lagerställeplats.</span><span class="sxs-lookup"><span data-stu-id="6b397-110">Before setting up a warehouse, you need to configure a warehouse site.</span></span>
+
+<span data-ttu-id="6b397-111">Konfigurera en lagerställeplats enligt följande instruktioner.</span><span class="sxs-lookup"><span data-stu-id="6b397-111">To configure a warehouse site, follow these steps.</span></span>
+
+1. <span data-ttu-id="6b397-112">I Navigeringsfönstret, gå till **Moduler \> Butik och handel \> Kanalsinställning \> Webbplatser**.</span><span class="sxs-lookup"><span data-stu-id="6b397-112">In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Sites**.</span></span>
+1. <span data-ttu-id="6b397-113">Klicka på **Ny** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6b397-113">On the action pane, select **New**.</span></span>
+1. <span data-ttu-id="6b397-114">I fältet **Webbplatser** anger du ett värde.</span><span class="sxs-lookup"><span data-stu-id="6b397-114">In the **Site** field, enter a value.</span></span>
+1. <span data-ttu-id="6b397-115">I fältet **Namn** anger du ett värde.</span><span class="sxs-lookup"><span data-stu-id="6b397-115">In the **Name** field, enter a value.</span></span>
+1. <span data-ttu-id="6b397-116">I avsnittet **Allmänt** ange lämplig **Tidszon**.</span><span class="sxs-lookup"><span data-stu-id="6b397-116">In the **General** section, set the appropriate **Time zone**.</span></span>
+1. <span data-ttu-id="6b397-117">I avsnittet **Adresser** ange en adress.</span><span class="sxs-lookup"><span data-stu-id="6b397-117">In the **Addresses** section, enter an address.</span></span>
+1. <span data-ttu-id="6b397-118">Klicka på **Spara** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6b397-118">On the action pane, select **Save**.</span></span>
+
+<span data-ttu-id="6b397-119">I bilden nedan visas ett exempel på lagerställeplats.</span><span class="sxs-lookup"><span data-stu-id="6b397-119">The following image shows an example warehouse site.</span></span>
+
+![Exempel på lagerställeplats](media/warehouse-site.png)
+
+## <a name="set-up-a-warehouse"></a><span data-ttu-id="6b397-121">Ställ in ett lagerställen</span><span class="sxs-lookup"><span data-stu-id="6b397-121">Set up a warehouse</span></span>
+
+<span data-ttu-id="6b397-122">Så här ställer du in ett lagerställe.</span><span class="sxs-lookup"><span data-stu-id="6b397-122">To set up a warehouse, follow these steps.</span></span>
+
+1. <span data-ttu-id="6b397-123">I navigeringsfönstret, gå till **Moduler \> Butik och handel \> Kanalsinställning \> Lagerställen**.</span><span class="sxs-lookup"><span data-stu-id="6b397-123">In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Warehouses**.</span></span>
+1. <span data-ttu-id="6b397-124">Klicka på **Ny** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6b397-124">On the action pane, select **New**.</span></span>
+1. <span data-ttu-id="6b397-125">I fältet **Lagerställe** ange ett värde.</span><span class="sxs-lookup"><span data-stu-id="6b397-125">In the **Warehouse** field, enter a value.</span></span>  <span data-ttu-id="6b397-126">Om detta är en 1:1-mappning till en butik bör du överväga att använda butiksnamnet eller namnet på ett regionalt distributionscenter.</span><span class="sxs-lookup"><span data-stu-id="6b397-126">If this is a 1:1 mapping to a store, consider using the store name or the name of a regional distribution center.</span></span>
+1. <span data-ttu-id="6b397-127">I fältet **Namn** anger du ett värde.</span><span class="sxs-lookup"><span data-stu-id="6b397-127">In the **Name** field, enter a value.</span></span>
+1. <span data-ttu-id="6b397-128">I listrutan **Plats** väljer du den lagerställeplats som du skapade tidigare.</span><span class="sxs-lookup"><span data-stu-id="6b397-128">In the **Site** drop-down list, select the warehouse site created previously.</span></span>
+1. <span data-ttu-id="6b397-129">I fältet **Typ**, välj **Standard**.</span><span class="sxs-lookup"><span data-stu-id="6b397-129">In the **Type** field, select **Default**.</span></span>
+    - <span data-ttu-id="6b397-130">Om du vill ställa in ett **Karantänlagerställe** måste du först följa stegen nedan för att skapa ett ytterligare lagerställe där **Typ** ställs in på **Karantän**.</span><span class="sxs-lookup"><span data-stu-id="6b397-130">If you want to set a **Quarantine warehouse**, first you'll need to follow these steps to create an additional warehouse where the **Type** is set to **Quarantine**.</span></span>
+    - <span data-ttu-id="6b397-131">Om du vill ställa in ett **Transitlager** måste du först följa stegen nedan för att skapa ett ytterligare lagerställe där **Typ** ställs in på **Transit**.</span><span class="sxs-lookup"><span data-stu-id="6b397-131">If you want to set a **Transit warehouse**, first you'll need to follow these steps to create an additional warehouse where the **Type** is set to **Transit**.</span></span>
+1. <span data-ttu-id="6b397-132">Klicka på **Spara** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6b397-132">On the action pane, select **Save**.</span></span>
+
+## <a name="set-up-inventory-aisles"></a><span data-ttu-id="6b397-133">Ställ in lagergångar</span><span class="sxs-lookup"><span data-stu-id="6b397-133">Set up inventory aisles</span></span>
+
+<span data-ttu-id="6b397-134">Så här ställer du in lagergångar.</span><span class="sxs-lookup"><span data-stu-id="6b397-134">To set up inventory aisles, follow these steps.</span></span>
+
+1. <span data-ttu-id="6b397-135">I navigeringsfönstret, gå till **Moduler \> Butik och handel \> Kanalsinställning \> Platsinställning \> Lagergångar**.</span><span class="sxs-lookup"><span data-stu-id="6b397-135">In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Location setup \> Inventory aisles**.</span></span>
+1. <span data-ttu-id="6b397-136">Klicka på **Ny** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6b397-136">On the action pane, select **New**.</span></span>
+1. <span data-ttu-id="6b397-137">I listrutan **Lagerställe** väljer du det lagerställe som du skapade tidigare.</span><span class="sxs-lookup"><span data-stu-id="6b397-137">In the **Warehouse** drop-down list, select the warehouse created previously.</span></span>
+1. <span data-ttu-id="6b397-138">I fältet **Gång** anger du ett namn (till exempel "Def").</span><span class="sxs-lookup"><span data-stu-id="6b397-138">In the **Aisle** field, enter a name (for example, "Def").</span></span>
+1. <span data-ttu-id="6b397-139">I fältet **Namn** anger du ett namn (till exempel "Standardgång").</span><span class="sxs-lookup"><span data-stu-id="6b397-139">In the **Name** field, enter a name (for example, "Default aisle").</span></span>
+1. <span data-ttu-id="6b397-140">Klicka på **Spara** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6b397-140">On the action pane, select **Save**.</span></span>
+
+## <a name="set-up-warehouse-inventory-locations"></a><span data-ttu-id="6b397-141">Konfigurera lagerplatser på lagerställen</span><span class="sxs-lookup"><span data-stu-id="6b397-141">Set up warehouse inventory locations</span></span>
+
+<span data-ttu-id="6b397-142">Om du vill ställa in lagerplatser för lagerställen för standard, skadat och returnerat lager följer du dessa steg.</span><span class="sxs-lookup"><span data-stu-id="6b397-142">To set up warehouse inventory locations for standard, damaged, and returned inventory, follow these steps.</span></span>
+
+1. <span data-ttu-id="6b397-143">I navigeringsfönstret, gå till **Moduler \> Butik och handel \> Kanalsinställning \> Lagerställen**.</span><span class="sxs-lookup"><span data-stu-id="6b397-143">In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Warehouses**.</span></span>
+1. <span data-ttu-id="6b397-144">Välj det lagerställe som du skapat tidigare.</span><span class="sxs-lookup"><span data-stu-id="6b397-144">Select the warehouse you created previously.</span></span>
+1. <span data-ttu-id="6b397-145">Klicka på **Redigera** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6b397-145">On the action pane, select **Edit**.</span></span>
+1. <span data-ttu-id="6b397-146">I åtgärdsfönstret, välj **Lagerställe** och välj sedan **lagerplats**.</span><span class="sxs-lookup"><span data-stu-id="6b397-146">On the action pane, select **Warehouse**, and then select **Inventory location**.</span></span>
+1. <span data-ttu-id="6b397-147">Klicka på **Ny** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6b397-147">On the action pane, select **New**.</span></span> <span data-ttu-id="6b397-148">Listrutan **Lagerställe** bör som standard vara ditt nya lager.</span><span class="sxs-lookup"><span data-stu-id="6b397-148">The **Warehouse** drop-down list should default to your new warehouse.</span></span>
+    1. <span data-ttu-id="6b397-149">I rutan **gång** ange namnet på gången du angav tidigare.</span><span class="sxs-lookup"><span data-stu-id="6b397-149">In the **Aisle** box, enter the name of the aisle you specified earlier.</span></span> 
+    1. <span data-ttu-id="6b397-150">Ange **manuell uppdatering** till **Ja**</span><span class="sxs-lookup"><span data-stu-id="6b397-150">Set **Manual update** to **Yes**</span></span>
+    1. <span data-ttu-id="6b397-151">I rutan **Plats** ange namnet på lagerstället.</span><span class="sxs-lookup"><span data-stu-id="6b397-151">In the **Location** box, enter the name of the warehouse.</span></span>
+    1. <span data-ttu-id="6b397-152">Klicka på **Spara** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6b397-152">On the action pane, select **Save**.</span></span>
+ 1. <span data-ttu-id="6b397-153">Klicka på **Ny** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6b397-153">On the action pane, select **New**.</span></span>  <span data-ttu-id="6b397-154">Listrutan **Lagerställe** bör som standard vara ditt nya lager.</span><span class="sxs-lookup"><span data-stu-id="6b397-154">The **Warehouse** drop-down list should default to your new warehouse.</span></span>
+    1. <span data-ttu-id="6b397-155">I rutan **gång** ange namnet på gången du angav tidigare.</span><span class="sxs-lookup"><span data-stu-id="6b397-155">In the **Aisle** box, enter the name of the aisle you specified earlier.</span></span>  
+    1. <span data-ttu-id="6b397-156">Ange **manuell uppdatering** till **Ja**</span><span class="sxs-lookup"><span data-stu-id="6b397-156">Set **Manual update** to **Yes**</span></span>
+    1. <span data-ttu-id="6b397-157">I rutan **Plats** ange "Skadad".</span><span class="sxs-lookup"><span data-stu-id="6b397-157">In the **Location** box, enter "Damaged".</span></span>
+    1. <span data-ttu-id="6b397-158">Klicka på **Spara** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6b397-158">On the action pane, select **Save**.</span></span>
+ 1. <span data-ttu-id="6b397-159">Klicka på **Ny** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6b397-159">On the action pane, select **New**.</span></span>  <span data-ttu-id="6b397-160">Listrutan **Lagerställe** bör som standard vara ditt nya lager.</span><span class="sxs-lookup"><span data-stu-id="6b397-160">The **Warehouse** drop-down list should default to your new warehouse.</span></span>
+    1. <span data-ttu-id="6b397-161">I rutan **gång** ange namnet på gången du angav tidigare.</span><span class="sxs-lookup"><span data-stu-id="6b397-161">In the **Aisle** box, enter the name of the aisle you specified earlier.</span></span> 
+    1. <span data-ttu-id="6b397-162">Ange **manuell uppdatering** till **Ja**</span><span class="sxs-lookup"><span data-stu-id="6b397-162">Set **Manual update** to **Yes**</span></span>
+    1. <span data-ttu-id="6b397-163">I rutan **Plats** ange "Returer".</span><span class="sxs-lookup"><span data-stu-id="6b397-163">In the **Location** box, enter "Returns".</span></span>
+    1. <span data-ttu-id="6b397-164">Klicka på **Spara** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6b397-164">On the action pane, select **Save**.</span></span>
+    
+<span data-ttu-id="6b397-165">Följande bild visar inställningar av San Francisco-lagerplats.</span><span class="sxs-lookup"><span data-stu-id="6b397-165">The following image shows a San Francisco warehouse inventory location setup.</span></span>
+
+![Exempel på inställningar av lagerplats](media/warehouse-inventory-locations.png)
+    
+## <a name="complete-warehouse-setup"></a><span data-ttu-id="6b397-167">Slutförd inställning av lagerställe</span><span class="sxs-lookup"><span data-stu-id="6b397-167">Complete warehouse setup</span></span>
+
+<span data-ttu-id="6b397-168">Om du vill slutföra inställning av lagerställe, följ dessa steg.</span><span class="sxs-lookup"><span data-stu-id="6b397-168">To complete warehouse setup, follow these steps.</span></span>
+
+1. <span data-ttu-id="6b397-169">I navigeringsfönstret, gå till **Moduler \> Butik och handel \> Kanalsinställning \> Lagerställen**.</span><span class="sxs-lookup"><span data-stu-id="6b397-169">In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Warehouses**.</span></span>
+1. <span data-ttu-id="6b397-170">Välj det lagerställe som du skapat tidigare.</span><span class="sxs-lookup"><span data-stu-id="6b397-170">Select the warehouse you previously created.</span></span>
+1. <span data-ttu-id="6b397-171">Klicka på **Redigera** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6b397-171">On the action pane, select **Edit**.</span></span>
+1. <span data-ttu-id="6b397-172">Under **Hantering av lager och lagerstyrning**:</span><span class="sxs-lookup"><span data-stu-id="6b397-172">Under **Inventory and warehouse management**:</span></span>
+    1. <span data-ttu-id="6b397-173">Ange **Standardinleveransplats** till standardplatsen som skapades ovan.</span><span class="sxs-lookup"><span data-stu-id="6b397-173">Set **Default receipt location** to the default location created above.</span></span>
+    1. <span data-ttu-id="6b397-174">Välj **Standardutleveransplats** till standardplatsen som skapades ovan.</span><span class="sxs-lookup"><span data-stu-id="6b397-174">Select **Default issue location** to the default location created above.</span></span>
+1. <span data-ttu-id="6b397-175">Under avsnittet **adresser** ange en adress till lagerstället.</span><span class="sxs-lookup"><span data-stu-id="6b397-175">Under the **Addresses** section, enter a warehouse address.</span></span>
+1. <span data-ttu-id="6b397-176">Under avsnittet **butik**:</span><span class="sxs-lookup"><span data-stu-id="6b397-176">Under the **Retail** section:</span></span> 
+    1. <span data-ttu-id="6b397-177">I rutan **Standardreturplats** ange den returplats som skapades tidigare.</span><span class="sxs-lookup"><span data-stu-id="6b397-177">In the **Default return location** box, enter the returns location created previously.</span></span>
+    1. <span data-ttu-id="6b397-178">Ange **Butik** till **Ja**.</span><span class="sxs-lookup"><span data-stu-id="6b397-178">Set **Store** to **Yes**.</span></span>
+    1. <span data-ttu-id="6b397-179">Ange **Vikt** till **1,00**.</span><span class="sxs-lookup"><span data-stu-id="6b397-179">Set **Weight** to **1.00**.</span></span> 
+    1. <span data-ttu-id="6b397-180">I rutan **Lagringsdimensioner** ange den standardplats som skapades tidigare.</span><span class="sxs-lookup"><span data-stu-id="6b397-180">In the **Storage Dimensions** box, enter the default location created previously.</span></span>
+1. <span data-ttu-id="6b397-181">Under avsnittet **lagerställe** ange **Fysiskt negativt lager** till **Ja**.</span><span class="sxs-lookup"><span data-stu-id="6b397-181">Under the **Warehouse** section, set **Physical negative inventory** to **Yes**.</span></span>
+1. <span data-ttu-id="6b397-182">Klicka på **Spara** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6b397-182">On the action pane, select **Save**.</span></span>
+
+<span data-ttu-id="6b397-183">Följande bild visar information om ett konfigurerat lagerställe.</span><span class="sxs-lookup"><span data-stu-id="6b397-183">The following image shows details for a configured warehouse.</span></span>
+
+![Exempel på konfigurerat lagerställe](media/warehouse-sample.png)
+
+## <a name="additional-resources"></a><span data-ttu-id="6b397-185">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="6b397-185">Additional resources</span></span>
+
+[<span data-ttu-id="6b397-186">Lagerstyrning – översikt</span><span class="sxs-lookup"><span data-stu-id="6b397-186">Warehouse management overview</span></span>](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
+
+[<span data-ttu-id="6b397-187">Översikt över kanaler</span><span class="sxs-lookup"><span data-stu-id="6b397-187">Channels overview</span></span>](channels-overview.md)
+
+[<span data-ttu-id="6b397-188">Förutsättningar för att ställa in kanaler</span><span class="sxs-lookup"><span data-stu-id="6b397-188">Channel setup prerequisites</span></span>](channels-prerequisites.md)
+
+[<span data-ttu-id="6b397-189">Ställa in en butikskanal</span><span class="sxs-lookup"><span data-stu-id="6b397-189">Set up a retail channel</span></span>](channel-setup-retail.md)
+    
+[<span data-ttu-id="6b397-190">Ställ in en onlinekanal</span><span class="sxs-lookup"><span data-stu-id="6b397-190">Set up an online channel</span></span>](channel-setup-online.md)
+
+[<span data-ttu-id="6b397-191">Ställa in en kundtjänstkanal</span><span class="sxs-lookup"><span data-stu-id="6b397-191">Set up a call center channel</span></span>](channel-setup-callcenter.md)
+
+
+
+
+
