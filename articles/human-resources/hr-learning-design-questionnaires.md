@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429576"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420653"
 ---
 # <a name="design-questionnaires"></a>Utforma enkäter
 
@@ -91,7 +91,7 @@ Nummerseriekoderna används för att ordna frågor och svar. Baserat på nummers
 Du bör definiera alla parametrar innan du börjar skapa dina data. Du kan ändra enkätparameterinställningarna när som helst.
 
 ## <a name="questionnaire-components"></a>Enkätkomponenter
-Frågeformulär består av tre huvuddelar: svarsgrupper som innehåller svaren på en flervalsfråga frågor, frågor i enkäten samt själva enkäten. Du kan även gruppera frågorna i en enkät i resultatgrupper. Resultatgrupper kategoriserar frågor och tillhandahåller ytterligare analys i enkäten. 
+Frågeformulär består av tre huvuddelar: svarsgrupper som innehåller svaren på en flervalsfråga frågor, frågor i enkäten samt själva enkäten.  Du kan även gruppera frågorna i en enkät i resultatgrupper. Resultatgrupper kategoriserar frågor och tillhandahåller ytterligare analys i enkäten. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 

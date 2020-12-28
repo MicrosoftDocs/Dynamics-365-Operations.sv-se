@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ms.openlocfilehash: 8dbaddf0165f36db07378e817639fd8b17a4a96f
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428907"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420523"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Skapa avdelningar och inkludera dessa i avdelningshierarkin
 
@@ -46,8 +46,8 @@ En avdelning kan omfatta en grupp kostnadsställen. Positionerna kan tilldelas a
 Om du vill lägga till en avdelning till avdelning hierarki, följ dessa steg.
 
 1.  Klicka **Personal** &gt; **Avdelningar** &gt; **Avdelningshierarki**.
-2.  Klicka på **Redigera**och välj sedan organisationen att avdelningen ska vara.
-3.  Klicka på **Infoga**och välj den **avdelning** i listan.
+2.  Klicka på **Redigera** och välj sedan organisationen att avdelningen ska vara.
+3.  Klicka på **Infoga** och välj den **avdelning** i listan.
 4.  I listan över enheter som visas, välj den avdelning som du vill lägga till i hierarkin.
 5.  Spara ändringarna. Du får ett meddelande om att ett utkast av hierarkin har skapats.
 6.  När du är klar klickar du på **Publicera** i hierarkidesignern. Du kan ange ett giltighetsdatum som anger när hierarkin ska publiceras. Om du exempelvis vill lägga till en ny avdelning i början av nästa kalenderår, ställ in datumet 1 januari på det nya kalenderåret. Ändringarna i hierarkin kommer att träda i kraft den dagen.

@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 0158bd4ee74e24006e338c0477ee0ac4210b1bf5
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429369"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420516"
 ---
 # <a name="edit-personal-information"></a>Redigera personliga uppgifter
 
@@ -50,13 +50,13 @@ Parametrar som ställs in i den globala adressboken avgör vilka roller som kan 
     - Om du vill redigera en befintlig adress markerar du adressen och väljer sedan **redigera**.
     - Om du vill visa en karta väljer du **karta**.
     - Om du vill lägga till eller ta bort en kontakt väljer du **fler alternativ** och väljer sedan **Avancerat**. Under **Kontaktinformation**, välj **Lägg till** eller **Ta bort** och redigera fälten vid behov.
-    - Om du vill ange tidszon, välj **fler alternativ** och väljer sedan **Avancerat**. Under **allmänt**redigerar du fälten om det behövs.
+    - Om du vill ange tidszon, välj **fler alternativ** och väljer sedan **Avancerat**. Under **allmänt** redigerar du fälten om det behövs.
 
 4. Om du vill ändra din kontaktinformation väljer du fliken **kontaktinformation**. Du kan tillhandahålla olika typer av kontaktinformation, t.ex. telefon, e-post och länkar till sociala medier. Du kan ange en kontaktinformation som primär, men du kan bara ställa in en av varje typ som primär. 
 
     - För att lägga till en ny kontaktinformation, välj **Lägg till**. Redigera fälten efter behov.
     - Om du vill redigera en befintlig kontaktinformation väljer du artikeln och väljer sedan **redigera**. Redigera fälten efter behov.
-    - Om du vill ange en kontaktinformation som privat markerar du artikeln, väljer **Avancerat**och ställer sedan in växlingsknappen på **privat** till **ja**. Välj **OK**.
+    - Om du vill ange en kontaktinformation som privat markerar du artikeln, väljer **Avancerat** och ställer sedan in växlingsknappen på **privat** till **ja**. Välj **OK**.
   
 5. Om du vill ändra dina personliga kontakter väljer du fliken **personliga kontakter**. Du kan ange nödkontakter, mottagare och beroenden. En kontakt kan vara en person eller en organisation. Funktionen **Hantering av förmåner** använder personlig kontaktinformation. För mer information, se [Konfigurera berättigandealternativ för personlig kontakt](hr-benefits-setup-contact-eligibility-options.md).
 

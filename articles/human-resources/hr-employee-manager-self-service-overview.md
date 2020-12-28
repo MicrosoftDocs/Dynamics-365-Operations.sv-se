@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 116c85c53b0ec2fe1e1fd2d1fbc2738f5b6351fb
-ms.sourcegitcommit: e100c1c7c8dcdacf066defc206dd2f44b8ce6100
+ms.sourcegitcommit: 1fdca917e01470fbd5d3051adb85fd63e8624b47
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "4057062"
+ms.locfileid: "4420670"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Översikt över självbetjäning för medarbetare och chef
 
@@ -39,7 +39,7 @@ Om du inte har länkat din användare till en post för **arbetare** på sidan *
 
 **Ditt användar-ID är inte associerat med din medarbetarpost i systemet och du kan inte visa eller uppdatera din information förrän den kan associeras. Kontakta din chef eller ditt supportteam för hjälp.**
 
-Om du vill koppla en användare till en post för **arbetare** , navigerar du till **användare** och väljer användaren. Välj **Redigera** , lägg till motsvarande arbetare i fältet **Person** i formuläret och välj **Spara**. Du bör nu ha till gång till Självbetjäning för medarbetare.
+Om du vill koppla en användare till en post för **arbetare**, navigerar du till **användare** och väljer användaren. Välj **Redigera**, lägg till motsvarande arbetare i fältet **Person** i formuläret och välj **Spara**. Du bör nu ha till gång till Självbetjäning för medarbetare.
 
 ## <a name="security-requirements-for-employee-and-manager-self-service"></a>Säkerhetskrav för självbetjäning för medarbetare och chef
 
@@ -80,7 +80,7 @@ Kortet **Certifikat** visar certifikatet och utgångsdatumet för certifikatet s
 
 Kortet **Nästa schemalagda granskning** visar nästa resultatöversyn. Du kan starta en ny granskning från det här kortet. Din chef eller din HR-representant kan också initiera recensioner. Beroende på din organisations inställningar kanske du också kan visa, uppdatera och skicka ut avstängningsgranskning från det här kortet.
 
-Du kan hantera dina mål med kortet **resultatmål**. Det här kortet visar antalet mål du har för varje status ( **inte startat** , **pågår** och **behöver förbättras** ). Du kan skapa, uppdatera och ta bort mål, beroende på vilken rollbaserad säkerhet som har tilldelats. Om du vill kan du lägga till nya mål från grupper eller mallar. Chefer och HR kan också skapa mål för medarbetare och bestämma hur detaljerat varje mål ska vara. Chefer och medarbetare kan samarbeta om mål och uppdatera aktiviteter, mått och status. Du kan också inkludera bilagor.
+Du kan hantera dina mål med kortet **resultatmål**. Det här kortet visar antalet mål du har för varje status (**inte startat**, **pågår** och **behöver förbättras**). Du kan skapa, uppdatera och ta bort mål, beroende på vilken rollbaserad säkerhet som har tilldelats. Om du vill kan du lägga till nya mål från grupper eller mallar. Chefer och HR kan också skapa mål för medarbetare och bestämma hur detaljerat varje mål ska vara. Chefer och medarbetare kan samarbeta om mål och uppdatera aktiviteter, mått och status. Du kan också inkludera bilagor.
 
 Du kan visa dina befintliga kunskaper på kortet **Kompetenser**. Du kan uppdatera kompetenser, lägga till nya eller ta bort sådana som inte längre är relevanta. Beroende på din organisations inställningar kan ändringar i dina kompetenser gå igenom en godkännandeprocess.
 
@@ -96,7 +96,7 @@ Anmäl dig till förmåner via länken **förmåner**. Mer information om förm�
 
 Under **prestanda** kan du välja **prestandajournaler** för att skapa poster i resultatjournaler som kan användas på både resultatmål och recensioner. Du kan välja **skicka feedback** om du vill ge feedback för andra medarbetare inom organisationen. Beroende på inställningarna för din organisation kan e-postmeddelanden skickas till mottagaren, avsändaren och cheferna. Du kan skicka feedback till alla medarbetare inom organisationen. Sändning av feedback begränsas inte av företaget.
 
-Under **kompetenser** , kan du göra ändringar i **kurser** , **utbildningar** , **förtroendeuppdrag** och **yrkeserfarenhet**. Beroende på din organisations inställningar kan uppdatering av dessa kompetenser gå igenom en godkännandeprocess.
+Under **kompetenser**, kan du göra ändringar i **kurser**, **utbildningar**, **förtroendeuppdrag** och **yrkeserfarenhet**. Beroende på din organisations inställningar kan uppdatering av dessa kompetenser gå igenom en godkännandeprocess.
 
 Du kan visa jobbinformation under **organisation**. Jobbinformation omfattar färdigheter, certifikat och ansvarsområden för din primära befattning. Du kan också se alla utlånade utrustningar som är utcheckade till dig. Beroende på din organisations inställningar kan ändringar i utlånad utrustning gå igenom en godkännandeprocess.
 
@@ -211,6 +211,6 @@ Chefer kan se alla mål för deras team via panelen **Teamprestationsmål** i av
 
 #### <a name="reviews-tab"></a>Fliken recensioner
 
-På fliken **recensioner** sammanfattas de granskningar som medarbetaren har i varje tillstånd: **pågår** , **klar för granskning** och **slutlig granskning**. Om du vill komma åt en medarbetares granskning väljer du knappen **Detaljer** och väljer sedan granska för att samarbeta på. Beroende på var en granskning är i arbetsflödesprocessen kan du se om granskningen är tillgänglig för uppdatering. 
+På fliken **recensioner** sammanfattas de granskningar som medarbetaren har i varje tillstånd: **pågår**, **klar för granskning** och **slutlig granskning**. Om du vill komma åt en medarbetares granskning väljer du knappen **Detaljer** och väljer sedan granska för att samarbeta på. Beroende på var en granskning är i arbetsflödesprocessen kan du se om granskningen är tillgänglig för uppdatering. 
 
 Du kan se alla recensioner för ditt team genom **Teamprestationsgranskningar** i avsnittet **Sammanfattning** i **Mitt team**.

@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: a0509ce99205d49d516e180203ffb65a1dc09a7c
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092116"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420522"
 ---
 # <a name="authentication"></a>Äkthetsbevisning
 
@@ -75,7 +75,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
         |-------------------------|-------------|
         | Endast konton i den här organisationsenhetskatalogen | Välj det här alternativet om du bygger en app med affärsmässiga företag. Det här alternativet är inte tillgängligt om du inte registrerar programmet i en katalog.<p>Det här alternativet är endast mappat till en **Azure AD-innehavare**.</p><p>Det här alternativet är standardalternativet om du inte registrerar appen utanför en katalog. I det fallet är standardalternativet **Azure AD flera innehavare och personliga Microsoft-konton**.</p> |
         | Endast konton en organisationsenhetskatalog | Välj det här alternativet om du vill rikta alla affärs- och utbildningskunder.<p>Det här alternativet är endast mappat till en **Azure AD flera innehavare**.</p><p>Om du har registrerat appen som endast en **Azure AD innehavare**, kan du använda bladet **verifiering** för att uppdatera det till endast flera **Azure AD innehavare** och sedan tillbaka till endast en **Azure AD innehavare**.</p> |
-        | Konton i alla organisationskataloger och privata Microsoft-konton | Välj det här alternativet om du vill rikta de bredaste kunduppsättningarna.<p>Det här alternativet mappas till **Azure AD flera innehavare och personliga Microsoft-konton**.</p><p>Om du har registrerat appen som **Azure AD flera innehavare och personliga Microsoft-konton**kan du inte ändra den här inställningen i användargränssnittet. I stället måste du använda programmets manifestredigeraren för att ändra de kontotyper som stöds.</p> |
+        | Konton i alla organisationskataloger och privata Microsoft-konton | Välj det här alternativet om du vill rikta de bredaste kunduppsättningarna.<p>Det här alternativet mappas till **Azure AD flera innehavare och personliga Microsoft-konton**.</p><p>Om du har registrerat appen som **Azure AD flera innehavare och personliga Microsoft-konton** kan du inte ändra den här inställningen i användargränssnittet. I stället måste du använda programmets manifestredigeraren för att ändra de kontotyper som stöds.</p> |
 
     - **Omdirigera URI (valfritt)** – Välj den typ av app som du skapar: **webb** eller **offentlig klient (mobil och skrivbord)**. Ange sedan omdirigerings-URI (eller svars-URL) för appen.
 
