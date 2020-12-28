@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: d9debd16b18300d090bde1862a16920d8e9185eb
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817264"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415747"
 ---
 # <a name="promo-banner-module"></a>Annonsbanderollmodul
 
@@ -33,13 +33,13 @@ Det här avsnittet handlar om annonsbanderollmoduler och beskriver hur du lägge
 
 ## <a name="overview"></a>Översikt
 
-Annonsbanderollmoduler används för att visa infogade informationsmeddelanden på en sida. De kan användas för att visa erbjudanden på hela webbplatsen som visas på alla sidor på en e-handelswebbplats. 
+Annonsbanderollmoduler används för att visa infogade informationsmeddelanden på en sida. De kan användas för att visa erbjudanden på hela webbplatsen som visas på alla sidor på en näthandelswebbplats. 
 
 I annonsbanderollmoduler kan du använda textmeddelanden och länkar. Om flera meddelanden läggs till i en annonsbanderollmodul blir det en roterande karusellbanderoll som gör det möjligt för kunder att gå igenom alla meddelanden. 
 
 Annonsbanderollmoduler styrs av data från CMS-systemet (Content Management System) och kan placeras på vilken sida som helst.
 
-## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>Exempel på annonsbanderoller i e-handel
+## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>Exempel på annonsbanderoller i näthandel
 
 Annonsbanderoller kan användas i webbplatshuvudet för att visa erbjudanden som rör hela webbplatsen, som i följande exempel.
 
@@ -69,7 +69,7 @@ Följande bild visar ett exempel på en annonsbanderoll.
 
 Om du vill lägga till en annonsbanderollmodul på en sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
+1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
 1. I dialogrutan **Ny mal** under **Mallnamn**, ange **annonsbanderollmall** och välj sedan **OK**.
 1. Under **Siddisposition**, lägg till en **Standardsida** i facket **Brödtext**. 
 1. Välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den. 

@@ -18,11 +18,11 @@ ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: ce6491d176f90717877f084b11546010084c5f3b
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761283"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415777"
 ---
 # <a name="add-a-privacy-policy-page"></a>Lägga till en sida med sekretesspolicy
 
@@ -54,7 +54,7 @@ Starta i redigeringsverktyg, gå till den webbplats som du vill skapa en sekrete
 
 Gör så här om du vill skapa en arbetsmall.
 
-1. Gå till **mallar**och välj sedan **ny** för att skapa en sidmall.
+1. Gå till **mallar** och välj sedan **ny** för att skapa en sidmall.
 1. I dialogrutan **Ny mal** under **Mallnamn**, ange **annonsbanderollmall** och välj sedan **OK**.
 1. I mallen lägger du till nödvändiga moduler till de obligatoriska sidfacken. För vägledning håller du muspekaren över de röda utropstecknen. (Till exempel facket **HTML-rubrik** kräver en **extern standardskript**-modul.)
 1. I facket **Brödtext**, lägg till en **standardsid**-modul.

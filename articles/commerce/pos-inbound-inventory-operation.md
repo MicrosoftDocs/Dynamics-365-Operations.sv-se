@@ -20,11 +20,11 @@ ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
 ms.openlocfilehash: 89021a85c2b215695d7cc25215c049205f71956d
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971507"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415859"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Inkommande lageråtgärder i kassan
 
@@ -206,7 +206,7 @@ När asynkron dokumentbearbetning används skickas kvittot via ett asynkront dok
 
 Från kassan kan användare skapa nya överföringsorderdokument. Starta processen genom att välja **ny** i appfältet medan du är i huvuddokumentlistan för **ingående operation**. Du uppmanas sedan att välja lagerställe eller butik med **överföring från** som ger lager till din butiksplats. Värdena begränsas till det val som har angetts i konfigurationen för butikens uppfyllelsegrupp. I en begäran om ingående överföringar är den aktuella butiken alltid **överföringen till** lagerstället för överföringsordern. Det går inte att ändra värdet.
 
-Du kan ange värden i fälten **Transportdatum**, **Inleveransdatum** och **Leveransläge** efter behov. Du kan också lägga till en notering som kommer att lagras tillsammans med överföringsorder rubriken, som en bilaga till dokumentet i Commerce-administration.
+Du kan ange värden i fälten **Transportdatum**, **Inleveransdatum** och **Leveranssätt** efter behov. Du kan också lägga till en notering som kommer att lagras tillsammans med överföringsorder rubriken, som en bilaga till dokumentet i Commerce-administration.
 
 När informationen i huvudet har skapats kan du lägga till produkter på överföringsordern. Om du vill starta processen med att lägga till artiklar och begärda kvantiteter, välj **Lägg till produkt**. I fönstret **information** kan du också lägga till en orderspecifik notering till journalraderna. Dessa anteckningar sparas som bifogade filer i en rad.
 

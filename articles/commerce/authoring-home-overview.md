@@ -18,11 +18,11 @@ ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 95908c3a8b6c5231f2f5b283fa05f07c4e91b5d7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001162"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415811"
 ---
 # <a name="authoring-page-overview"></a>Översikt över redigeringssidan
 
@@ -111,7 +111,7 @@ Gör så här om du vill skapa en ny webbplats.
 
 ## <a name="select-a-website-to-author"></a>Välj en webbplats att redigera
 
-Webbplatslistan ger en omfattande lista över de webbplatser som är kopplade till e-handelssystemet. Webbplatser visas i alfabetisk ordning. Den domän som är associerad med varje webbplats visas också. Om du vill visa innehållet på en webbplats och starta på författarsidor markerar du webbplatsens namn. Redigeringsverktyget och innehållet för webbplatsen läses in.
+Webbplatslistan ger en omfattande lista över de webbplatser som är kopplade till näthandelssystemet. Webbplatser visas i alfabetisk ordning. Den domän som är associerad med varje webbplats visas också. Om du vill visa innehållet på en webbplats och starta på författarsidor markerar du webbplatsens namn. Redigeringsverktyget och innehållet för webbplatsen läses in.
 
 När utvecklingsverktyget har lästs in kan du välja **Start** för att gå tillbaka till redigeringssidan.
 

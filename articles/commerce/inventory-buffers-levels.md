@@ -16,11 +16,11 @@ ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
 ms.openlocfilehash: ef58dbb756c7bed3924010cb33eff27af66cd0bd
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982610"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415860"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurera inventeringsbuffertar and lagernivåer
 
@@ -30,9 +30,9 @@ I det här avsnittet beskrivs hur du konfigurerar lagerkvantiteter och lagerniv�
 
 ## <a name="overview"></a>Översikt
 
-Dynamics 365 Commerce huvudkontoret innehåller lagerdata och olika kanaler som kassaapplikationer, e-handelsbutiker och andra anpassade integrerade applikationer som drar och skjuter omkring inventering på ett asynkront sätt. Därför är de tillgängliga lagervärden som hämtas via sidan för lagerbehållning i Commerce-administration via kassaanvändargränssnittet och via e-handelslager. API:er för lagertillgänglighet är inte alltid 100 procent korrekt i realtid.
+Dynamics 365 Commerce huvudkontoret innehåller lagerdata och olika kanaler som kassaapplikationer, näthandelsbutiker och andra anpassade integrerade applikationer som drar och skjuter omkring inventering på ett asynkront sätt. Därför är de tillgängliga lagervärden som hämtas via sidan för lagerbehållning i Commerce-administration via kassaanvändargränssnittet och via näthandelslager. API:er för lagertillgänglighet är inte alltid 100 procent korrekt i realtid.
 
-I stället för att visa faktiska lagervärden i e-handelsbutiker föredrar många återförsäljare bara att visa meddelanden om lagertillgänglighetsstatus (t.ex. "tillgänglig" eller "på lagret") för att informera kunderna om huruvida en artikel är tillgänglig för inköp eller eventuellt inte kan användas i lager. För den här metoden måste lagerkvantiteter och lagernivåer som fastställer lagertillgänglighet meddelanden göras tillgängliga och konfigurerade.
+I stället för att visa faktiska lagervärden i näthandelsbutiker föredrar många återförsäljare bara att visa meddelanden om lagertillgänglighetsstatus (t.ex. "tillgänglig" eller "på lagret") för att informera kunderna om huruvida en artikel är tillgänglig för inköp eller eventuellt inte kan användas i lager. För den här metoden måste lagerkvantiteter och lagernivåer som fastställer lagertillgänglighet meddelanden göras tillgängliga och konfigurerade.
 
 ## <a name="prerequisite-turn-on-the-inventory-buffers-and-inventory-levels-feature"></a>Förutsättning: aktivera funktionen lagerbuffrar och lagernivåer
 
@@ -101,7 +101,7 @@ Om du vill synkronisera konfigurationerna för lagernivåprofiler till kanaler f
 
 ## <a name="configure-an-inventory-buffer"></a>Konfigurera en lagerkvantitet
 
-*Lagerkvantiteten* är ett användardefinierat värde som subtraherar den ytterligare kvantiteten av en artikel från den ursprungliga kvantiteten för att beräkna den uppskattade kvantiteten. Denna uppskattade kvantitet ger detaljister en säker buffert så att de inte säljer en produkt genom att sälja mer än den faktiska lagerbehållningen. Du kan konfigurera en lagerbuffert på antingen produktkategorinivå eller enskild produktnivå. Om ingen lagringsbuffert anges är standardvärdet för**0** (noll) används.
+*Lagerkvantiteten* är ett användardefinierat värde som subtraherar den ytterligare kvantiteten av en artikel från den ursprungliga kvantiteten för att beräkna den uppskattade kvantiteten. Denna uppskattade kvantitet ger detaljister en säker buffert så att de inte säljer en produkt genom att sälja mer än den faktiska lagerbehållningen. Du kan konfigurera en lagerbuffert på antingen produktkategorinivå eller enskild produktnivå. Om ingen lagringsbuffert anges är standardvärdet för **0** (noll) används.
 
 Följ dessa steg för att konfigurera en lagerbuffer för en kategori.
 
@@ -132,14 +132,14 @@ Om du vill synkronisera konfigurationerna för inventeringsbuffertar till kanale
 
 I Commerce webbplatsskaparen används funktionerna för lagerkvantitet och lager nivå i Commerce-administration för att fastställa meddelanden om lagertillgänglighet på näthandelsplatser. Mer information om [Använd lagerinställningar](inventory-settings.md).
 
-Alternativt, om du integrerar med en tredjeparts e-handelslösning, kan du använda **GetEstimatedAvailability** och **GetEstimatedProductWarehouseAvailability** API:er för att visa lagertillgängligheten för en produkt i ditt e-handelsscenario. Mer information om dessa API:er finns i [Beräkna lagerdisposition för butikskanaler](calculated-inventory-retail-channels.md).
+Alternativt, om du integrerar med en tredjeparts näthandelslösning, kan du använda **GetEstimatedAvailability** och **GetEstimatedProductWarehouseAvailability** API:er för att visa lagertillgängligheten för en produkt i ditt näthandelsscenario. Mer information om dessa API:er finns i [Beräkna lagerdisposition för butikskanaler](calculated-inventory-retail-channels.md).
 
 Introduktionen av lagerkvantiteter och lagernivåer gör att dessa API:er kan returnera lagernivåkoder och etikettmeddelanden som bestäms baserat på totala tillgängliga och tillgängliga fysiska värden. API:erna kan konfigureras ytterligare för att avgöra om lagerkvantiteten returneras tillsammans med meddelandet och om den disponibla kvantiteten reduceras med lagervärdet.
 
 Konfigurera svaret på produkttillgänglighet API:erna enligt följande instruktioner.
 
 1. Öppna **Retail och Commerce** \> **Administrationsinställning** \> **Parametrar** \> **Commerce-parametrar**.
-1. I avsnittet **Butikslager** på fliken **Lager** i fältet **Produkttillgänglighet API:er för e-handel** välj ett värde.
+1. I avsnittet **Butikslager** på fliken **Lager** i fältet **Produkttillgänglighet API:er för näthandel** välj ett värde.
 1. Om du vill tillämpa inställningarna på kanaler kör du **1110** (**Globalkonfiguration**) distributionschemajobb.
 
 ## <a name="additional-resources"></a>Ytterligare resurser

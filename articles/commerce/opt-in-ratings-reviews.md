@@ -19,11 +19,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: cbdb69202ebec19f4442041cfb1f99857da36d2e
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057520"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415840"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Välj att använda omdömen och recensioner
 
@@ -35,7 +35,7 @@ Det här avsnittet innehåller information om hur du väljer att använda värde
 
 Klassificerings- och granskningslösningen är en flerkanalslösning som du kan göra tillgänglig i Dynamics 365 Commerce genom att använda Microsoft Dynamics Lifecycle Services (LCS). LCS är en administrationsportal som används av detaljhandlare för att hantera sina miljöer från etablering till avställning.
 
-Om du vill använda klassificeringen och granska lösningen på din handelswebbplats, måste du välja om du vill ha omdömen och recensioner under distributionen av din e-handelswebbplats på Dynamics 365 Commerce.
+Om du vill använda klassificeringen och granska lösningen på din handelswebbplats, måste du välja om du vill ha omdömen och recensioner under distributionen av din näthandelswebbplats på Dynamics 365 Commerce.
 
 ## <a name="opt-in-to-use-ratings-and-reviews"></a>Välj att använda omdömen och recensioner
 
@@ -48,10 +48,10 @@ Om du vill använda värderingar och recensioner på webbplatsen följer du steg
 
     ![Välj att använda omdömen och recensioner](media/LCS_RnR_Preference.png)
 
-1. Slutför initieringsprocessen för e-handel.
+1. Slutför initieringsprocessen för näthandel.
 
 > [!NOTE] 
-> Om du är en befintlig Dynamics 365 Commerce-kund som redan har distribuerat en e-handelsplats utan att ha valt värderingar och recensioner och nu vill använda omdömen och recensioner från Dynamics 365 Commerce-paketet, måste du skicka en serviceförfrågan. Mer information om hur du skickar en serviceförfrågan finns i [skicka bearbeta serviceförfrågningar](../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json). 
+> Om du är en befintlig Dynamics 365 Commerce-kund som redan har distribuerat en näthandelsplats utan att ha valt värderingar och recensioner och nu vill använda omdömen och recensioner från Dynamics 365 Commerce-paketet, måste du skicka en serviceförfrågan. Mer information om hur du skickar en serviceförfrågan finns i [skicka bearbeta serviceförfrågningar](../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json). 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

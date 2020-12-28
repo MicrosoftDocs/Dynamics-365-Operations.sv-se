@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 6a1ae960f0f530104af7bdea9a8fcb78b01571f5
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599734"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415725"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera en Dynamics 365 Commerce utvärderingsmiljö
 
@@ -82,9 +82,9 @@ Om du vill aktivera Cloud POS i LCS, följ dessa steg.
 
 Följ dessa steg om du vill börja konfigurera din utvärderingswebbplats i Commerce.
 
-1. Logga in på webbplatsskaparen med hjälp av den URL som du antecknade när du initierade e-handel under etableringen (se [initiera e-handel](provisioning-guide.md#initialize-e-commerce)).
+1. Logga in på webbplatsskaparen med hjälp av den URL som du antecknade när du initierade näthandel under etableringen (se [initiera näthandel](provisioning-guide.md#initialize-e-commerce)).
 1. Klicka på på webbplatsen **Fabrikam** för att öppna dialogrutan webbplatsinställningar.
-1. Välj den domän som du angav när du initierade e-handel.
+1. Välj den domän som du angav när du initierade näthandel.
 1. Som standardkanal väljer du **Fabrikam utökade online-butik**. (Se till att välja den **utökade** onlinebutiken)
 1. För standardspråk väljer du **sv-SE**.
 1. Lämna värdet i fältet **sökväg** som det är.

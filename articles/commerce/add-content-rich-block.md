@@ -18,11 +18,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: c6527ad00e74fa105f3873036eb56557b98b05aa
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817388"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415767"
 ---
 # <a name="text-block-module"></a>Textblockmodul
 
@@ -36,7 +36,7 @@ En textblockmodul är en modul som används för att lägga till textinnehåll. 
 
 Textblockmoduler styrs av data från CMS-systemet (Content Management System) och kan placeras på vilken sida som helst. De är fristående moduler som inte är beroende av sidkontext eller andra moduler.
 
-## <a name="examples-of-text-block-modules-in-e-commerce"></a>Exempel på innehållsrika textmoduler i e-handel
+## <a name="examples-of-text-block-modules-in-e-commerce"></a>Exempel på innehållsrika textmoduler i näthandel
 
 Innehållsrika textblockmoduler kan användas på följande sätt:
 
@@ -61,7 +61,7 @@ Följande bild visar ett exempel på en modul för textblock som används på en
 
 Om du vill lägga till en textblockmodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
+1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
 1. I dialogrutan **Ny mall** under **Mallnamn** anger du **Innehållsmall**.
 1. I facket **brödtext** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
 1. I dialogrutan **Lägg till modul**, välj modulen **Standardsida** och klicka sedan på **OK**.

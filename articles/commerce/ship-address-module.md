@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7233b23020e6c82f39981d530095642902461807
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: aeaa410fde29b285fdbbdd6acac19b0c4e917aa5
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818408"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4415993"
 ---
 # <a name="shipping-address-module"></a>Modul för leveransadress
 
@@ -32,11 +32,11 @@ Det här avsnittet beskriver om modul för leveransadressmodulen förklarar hur 
 
 ## <a name="overview"></a>Översikt
 
-Leveransadressmodulen låter kunderna lägga till eller välja leveransadressen för en order under kassaflödet. Om kunden är inloggad visas alla adresser som har sparats för den kunden och kunden kan välja bland dem. Kunden kan också lägga till en ny adress. Leveransadressmodulen används för alla artiklar i den order som kräver leverans.
+Leveransadressmodulen låter kunderna lägga till eller välja leveransadressen för en order under kassautcheckningsflödet. Om kunden är inloggad visas alla adresser som har sparats för den kunden och kunden kan välja bland dem. Kunden kan också lägga till en ny adress. Leveransadressmodulen används för alla artiklar i den order som kräver leverans.
 
 Adressformat för leverans kan definieras i Commerce-administration för varje land eller region och i modulen för leverans används lands-/regionspecifika regler.
 
-När kunderna anger en leveransadress under kassaflödet kan de välja att spara adressen som en primär adress. Det här alternativet visas bara om kunden är inloggad.
+När kunderna anger en leveransadress under kassautcheckningsflödet kan de välja att spara adressen som en primär adress. Det här alternativet visas bara om kunden är inloggad.
 
 Även om modulen leveransadress inte ger adressvalidering kan denna funktion implementeras genom anpassning.
 
@@ -66,6 +66,8 @@ En modul för leveransadress kan bara läggas till i en betalningsmodul. Mer inf
 [Betalningsmodul](payment-module.md)
 
 [Modul för leveransalternativ](delivery-options-module.md)
+
+[Informationsmodul för upphämtning](pickup-info-module.md)
 
 [Orderinformationsmodul](order-confirmation-module.md)
 

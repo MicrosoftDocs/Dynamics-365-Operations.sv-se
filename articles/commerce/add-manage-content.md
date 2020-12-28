@@ -18,11 +18,11 @@ ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 802a41b8c55e65eee58d26137c2f160b69847010
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973990"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415779"
 ---
 # <a name="ways-to-add-content"></a>Sätt att lägga till innehåll
 
@@ -32,7 +32,7 @@ Det här ämnet ger en översikt och väljer länkar för dokumentation om hur h
 
 ## <a name="overview"></a>Översikt
 
-Det finns många sätt att ändra utseende, känsla och innehåll på din webbplats. Beroende på vilken anpassningsnivå som krävs kan många av dessa ändringar genomföras av icke-utvecklare i webbplatsskaparen, webbredigeringsverktyget som ingår i Dynamics 365 Commerce. Med webbplatsskapare kan du skapa mallar, välja teman och välja och konfigurera moduler utan att behöva skriva någon kod. Utvecklingskunskaper krävs däremot för att skapa ett nytt tema eller en ny modul, eftersom programutvecklingskit (SDK) frö e-handel och Microsoft Dynamics Lifecycle Services (LCS) måste användas för distribution arbetsflöde.
+Det finns många sätt att ändra utseende, känsla och innehåll på din webbplats. Beroende på vilken anpassningsnivå som krävs kan många av dessa ändringar genomföras av icke-utvecklare i webbplatsskaparen, webbredigeringsverktyget som ingår i Dynamics 365 Commerce. Med webbplatsskapare kan du skapa mallar, välja teman och välja och konfigurera moduler utan att behöva skriva någon kod. Utvecklingskunskaper krävs däremot för att skapa ett nytt tema eller en ny modul, eftersom programutvecklingskit (SDK) frö näthandel och Microsoft Dynamics Lifecycle Services (LCS) måste användas för distribution arbetsflöde.
 
 Följande ämnen är bra att följa om du vill lära dig att lägga till och hantera webbplatsinnehåll. De flesta ämnen som anges fokuserar på områden på din webbplats som inte behöver en utvecklaren. En del grundläggande innehållsredigering för adress, medan andra fokuserar på webbplatsadministratörens uppgifter. I dessa avsnitt betecknas specifika uppgifter som kan kräva SDK-arbete. Varje ämne förutsätter att du redan har etablerat en webbplats och fått åtkomst till verktygen för webbplatsskapare för din webbplats.
 

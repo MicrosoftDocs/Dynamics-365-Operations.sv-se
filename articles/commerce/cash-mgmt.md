@@ -19,11 +19,11 @@ ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 0c561c39dfcbfa739c5a22394c05191e7f9bc107
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127708"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415797"
 ---
 # <a name="cash-management-improvements"></a>Förbättringar av kassahantering
 
@@ -33,7 +33,7 @@ ms.locfileid: "3127708"
 Kassahantering är en nyckelfunktion för återförsäljare i fysiska butiker. Återförsäljare vill att deras butiker ska ha system som kan hjälpa dem att ge dig en fullständig spårning av kontanter och dess rörelse i de olika kassorna och kassörerna i en butik. De måste kunna stämma av mot eventuella skillnader och fastställa ansvarsområden.
 
 
-Microsoft Dynamics 365 Commerce har kontanthanteringskapacitet i sitt kassaprogram (POS). I tidigare versioner av Retail än version 10.0.3 är kassahanteringsfunktionen emellertid inte tillräckligt stabil för att ge en fullständig spårning av kassaflödesrörelser i butiker. Även om återförsäljare kan stämma av kassan för en butik, kan de inte exakt fastställa ansvarsskyldigheten i händelse av en kassaavvikelse.
+Microsoft Dynamics 365 Commerce har kontanthanteringskapacitet i sitt kassaprogram (POS). I tidigare versioner av Retail än version 10.0.3 är kassahanteringsfunktionen emellertid inte tillräckligt stabil för att ge en fullständig spårning av kassautcheckningsflödetsrörelser i butiker. Även om återförsäljare kan stämma av kassan för en butik, kan de inte exakt fastställa ansvarsskyldigheten i händelse av en kassaavvikelse.
 
 
 I Retail version 10.0.3 och senare får detaljhandlare spårning för kassahantering. Som en del av den här spårbarheten kan detaljhandlare definiera kassaskåp, göra tvåsidiga kassatransaktioner och stämma av kassahanteringstransaktioner.

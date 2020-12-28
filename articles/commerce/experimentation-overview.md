@@ -1,6 +1,6 @@
 ---
 title: Experiment i Dynamics 365 Commerce
-description: Experiment gör det möjligt att skapa, redigera och hantera sidlayouter och innehålls behandlingar i webbplatsskaparen. Komplett support för experiment har aktiverats för sidor och enheter för e-handel på en sida.
+description: Experiment gör det möjligt att skapa, redigera och hantera sidlayouter och innehålls behandlingar i webbplatsskaparen. Komplett support för experiment har aktiverats för sidor och enheter för näthandel på en sida.
 author: sushma-rao
 manager: AnnBe
 ms.date: 10/21/2020
@@ -19,14 +19,14 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: 85eb7a661cc66c42699797cca4fa6820941de7c0
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4097149"
+ms.locfileid: "4415971"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Experiment i Dynamics 365 Commerce
-Du kan använda experiment i Dynamics 365 Commerce för att validera hypoteser om hur effektiva dina e-handelssidor är och fatta beslut med datadriven säkerhet. Commerce har stöd för A/B-test på sidor, moduler och fragment och gör att du kan mäta effekterna av föreslagna ändringar på webbplatsen.
+Du kan använda experiment i Dynamics 365 Commerce för att validera hypoteser om hur effektiva dina näthandelssidor är och fatta beslut med datadriven säkerhet. Commerce har stöd för A/B-test på sidor, moduler och fragment och gör att du kan mäta effekterna av föreslagna ändringar på webbplatsen.
 
 Du kan skapa, redigera och hantera metoder för sid- och innehållshantering som kallas **varianter** i Commerce webbplatsskaparen. Commerce är integrerad med tjänster från tredje part som du kan använda för att skapa experiment och behandla tilldelningar. Händelseströmmar i realtid som samlas i Commerce aktiverar analysen som definierar experimentresultatet i tredjepartstjänst. Du kan sedan använda dessa analyser för att hjälpa till att stödja eller tillbakavisa din hypotes.
 

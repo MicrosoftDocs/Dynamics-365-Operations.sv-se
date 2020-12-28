@@ -15,11 +15,11 @@ ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: fc4df1c7fc47608300d705616768b6c8ef135652
-ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3821214"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415855"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Utbildningskatalog för administratörer för Dynamics 365 Commerce
 
@@ -43,7 +43,7 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | [Konfigurera och använda kassa (POS) i Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-use-pos-commerce/)         | Transaktionsdata skapas i kassan (POS) och överförs sedan till Dynamics 365 Commerce administration för bearbetning. Den här utbildningsvägen beskriver hur man installerar och aktiverar kassan samt hur du skapar dagliga transaktioner i kassan. | Gratis, självstudier online utbildningsväg | 4.5 timmar |
 | [Konfigurera och arbeta med kundtjänst i Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce är en flerkanalslösning som tillhandahåller en kundtjänstkanal med funktioner som standard för specifika orderbearbetningsinställningar och standardvärden för försäljnings order som skapas av kundtjänstanvändare.                                  | Gratis, självstudier online utbildningsväg | 2 timmar   |
 
-## <a name="e-commerce"></a>E-handel<a name="e-commerce"></a>
+## <a name="e-commerce"></a>näthandel<a name="e-commerce"></a>
 
 | Innehåll  | beskrivning  | Format  | Längd    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|

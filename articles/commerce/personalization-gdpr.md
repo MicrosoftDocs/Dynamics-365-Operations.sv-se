@@ -20,11 +20,11 @@ ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 6a64b45e1326673dd84c3c705491c9c100cdd069
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817533"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415804"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Avanmälan av anpassade rekommendationer
 
@@ -67,7 +67,7 @@ I kontohantering i backoffice i Handel kan återförsäljare avanmäla sig för 
 
 ## <a name="obtain-a-digital-copy-of-personalized-recommendations-data-on-behalf-of-an-authenticated-user"></a>Skaffa en digital kopia av dina anpassade rekommendationer, data för en autentiserad användares räkning
 
-Kunderna kanske vill skaffa en digital kopia av sina personliga data och också se en exporterad vy över sina rekommendationer. Om en kund begär denna information måste återförsäljaren skapa ett anpassat tillägg som anropar API i Retail Server och fråga efter fullständiga resultat från listan **Plocka åt dig** som baseras på kundens kund-ID. Resultaten kan sedan exporteras i CSV-format (kommaavgränsade värden) och delas med kunden.
+Kunderna kanske vill skaffa en digital kopia av sina personliga data och också se en exporterad vy över sina rekommendationer. Om en kund begär denna information måste återförsäljaren skapa ett anpassat tillägg som anropar API i Retail Server och fråga efter fullständiga resultat från listan **Dina val** som baseras på kundens kund-ID. Resultaten kan sedan exporteras i CSV-format (kommaavgränsade värden) och delas med kunden.
 
 Följande exempel visar hur en återförsäljare kan utföra uppgiften.
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurera omdömen och recensioner
-description: I det här avsnittet beskrivs hur du konfigurerar din e-handelsplats så att du kan visa kundomdömen och recensioner i Microsoft Dynamics 365 Commerce.
+description: I det här avsnittet beskrivs hur du konfigurerar din näthandelsplats så att du kan visa kundomdömen och recensioner i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 02/17/2020
@@ -18,17 +18,17 @@ ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: edd2082b5d2cafcb955f8e3c7762bcba523ac479
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071576"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415734"
 ---
 # <a name="configure-ratings-and-reviews"></a>Konfigurera omdömen och recensioner
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du konfigurerar din e-handelsplats så att du kan visa kundomdömen och recensioner i Microsoft Dynamics 365 Commerce.
+I det här avsnittet beskrivs hur du konfigurerar din näthandelsplats så att du kan visa kundomdömen och recensioner i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Översikt
 

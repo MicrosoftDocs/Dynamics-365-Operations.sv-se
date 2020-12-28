@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 7a8b1c214ba31b7c47cecbe67bef493f5fa450fc
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817364"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415770"
 ---
 # <a name="content-block-module"></a>Innehållsblockmodul
 
@@ -38,7 +38,7 @@ En innehållsblockmodul används för att marknadsföra produkter eller erbjudan
 
 En innehållsblockmodul drivs av data från innehållshanteringssystemet (CMS). Det är en fristående modul som inte är beroende av andra moduler på sidan. En innehållsblockmodul kan placeras på alla webbplatssidor där en återförsäljare vill marknadsföra eller främja något (t.ex. produkter, försäljning eller funktioner).
 
-## <a name="examples-of-content-block-module-in-e-commerce"></a>Exempel på innehållsblockmoduler i e-handel
+## <a name="examples-of-content-block-module-in-e-commerce"></a>Exempel på innehållsblockmoduler i näthandel
 
 - En innehållsblockmodul kan användas på startsidan för en näthandelsplats för att framhäva erbjudanden och nya produkter.
 - En innehållsblockmodul kan användas på en produktinformationssida för att visa upp produktinformation.
@@ -79,7 +79,7 @@ Följande bild visar ett exempel på en innehållsblockmodul med en funktionslay
 
 Om du vill lägga till en fokusmodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Gå till **mallar**och skapa en sidmall med namnet **innehållsblockmall**.
+1. Gå till **mallar** och skapa en sidmall med namnet **innehållsblockmall**.
 1. Lägg till platsen **Huvud** på standardsida, lägg till fokusmodul.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Använd den fokusmall som du just skapade för att skapa en sida med namnet **innehållsblocksida**.

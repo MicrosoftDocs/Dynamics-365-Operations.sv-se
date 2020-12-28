@@ -18,11 +18,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 52069af5ca2211473d4a096ad850b5be1290bba1
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055460"
+ms.locfileid: "4415967"
 ---
 # <a name="header-module"></a>Modul för sidhuvud
 
@@ -34,7 +34,7 @@ Det här avsnittet handlar om moduler för sidhuvud och beskriver hur du skapar 
 
 I Dynamics 365 Commerce konfigureras ett sidrubrik som ett fragment som innehåller modulerna rubrik, annonsbanderoll och cookie-samtycke. 
 
-Modulen rubrik innehåller en webbplats logotyp, länkar till navigeringsnoden, länkar till andra sidor på webbplatsen, en vagnmodul, en önskelista-symbol, inloggningsalternativ och sökfältet. En sidhuvudmodul optimeras automatiskt för enheten som platsen visas på (dvs. en stationär enhet eller en mobil enhet). Om du till exempel använder en mobil enhet döljs navigeringsfältet i **meny** -knapp (som ibland kallas en *hamburgarmeny* ).
+Modulen rubrik innehåller en webbplats logotyp, länkar till navigeringsnoden, länkar till andra sidor på webbplatsen, en vagnmodul, en önskelista-symbol, inloggningsalternativ och sökfältet. En sidhuvudmodul optimeras automatiskt för enheten som platsen visas på (dvs. en stationär enhet eller en mobil enhet). Om du till exempel använder en mobil enhet döljs navigeringsfältet i **meny**-knapp (som ibland kallas en *hamburgarmeny*).
 
 Följande bild visar ett exempel på en rubrikmodul på en startsida.
 
@@ -42,7 +42,7 @@ Följande bild visar ett exempel på en rubrikmodul på en startsida.
 
 ## <a name="properties-of-a-header-module"></a>Egenskaper för sidhuvudmodul
 
-En sidhuvudmodul stöder egenskaperna **logotypbild** , **logotyplänk** och **länkar till mitt konto**. 
+En sidhuvudmodul stöder egenskaperna **logotypbild**, **logotyplänk** och **länkar till mitt konto**. 
 
 Egenskaperna **logotypbild** och **logotyplänk** används för att definiera en logotyp på sidan. Mer information finns i [Lägg till en logotyp](add-logo.md). 
 
@@ -72,33 +72,33 @@ Följande moduler kan användas i en sidhuvudmodul:
 Gör så här om du vill skapa ett huvudfragment.
 
 1. Gå till **Fragment** och välj **ny** för att skapa ett nytt fragment.
-1. I dialogrutan **Nytt fragment** väljer du modul för **Behållare** , anger ett namn på fragmentet och väljer sedan **OK**.
+1. I dialogrutan **Nytt fragment** väljer du modul för **Behållare**, anger ett namn på fragmentet och väljer sedan **OK**.
 1. Välj platsen **standardenhet** och sedan i egenskapsfönstret till höger, ange egenskapen **Bredd** till **Fyll skärm**.
-1. I facket **Standardbehållare** välj ellips-knappen ( **...** ) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul** välj **Cookie-samtycke** , **Huvud** och **Kampanjbanderoll** och välj sedan **OK**.
+1. I facket **Standardbehållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul** välj **Cookie-samtycke**, **Huvud** och **Kampanjbanderoll** och välj sedan **OK**.
 1. I egenskapsfönstret i modulen **Kampanjbanderoll** välj **Lägg till meddelande** och välj sedan **Meddelande**.
 1. I dialogrutan **Meddelande** lägg till text och länkar för säljinnehåll och välj sedan **OK**.
 1. I egenskapsfönstret för modulen **Cookie-samtycke** lägg till och konfigurera text och en länk till webbplatsens sekretesspolicy.
-1. I platsen för rubrikmodul väljer du **Navigeringsmeny** , markerar ellipsknappen ( **...** ) och väljer sedan **Lägg till modul**.
+1. I platsen för rubrikmodul väljer du **Navigeringsmeny**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
 1. I dialogrutan **Lägg till modul** välj modulen **Navigeringsmeny** och sedan **OK**.
-1. I egenskapsrutan för modulen navigeringsmeny under **källa för navigeringsmeny** , väljer du **butiksserver**.
-1. I egenskapspanelen för navigeringsmenymodulen under **Statiska menyobjekt** , välj **Lägg till menyobjekt** och välj sedan **Menyobjekt**. 
+1. I egenskapsrutan för modulen navigeringsmeny under **källa för navigeringsmeny**, väljer du **butiksserver**.
+1. I egenskapspanelen för navigeringsmenymodulen under **Statiska menyobjekt**, välj **Lägg till menyobjekt** och välj sedan **Menyobjekt**. 
 1. I dialogrutan **Menyobjekt** under **Menyobjekttext** ange "kontakt."
 1. I dialogrutan **Menyobjekt** under **Länkmål för menyobjekt** välj **Lägg till en länk**.
 1. I dialogrutan **Lägg till en länk** väljer du URL för webbplatsens sida "Kontakter" och välj sedan **OK**.  
 1. I dialogrutan **Menyobjekt** väljer du **OK**.
-1. I platsen för rubrikmodul väljer du **Sök** , markerar ellipsknappen ( **...** ) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul** , välj modulen **Sök** och klicka sedan på **OK**.
+1. I platsen för rubrikmodul väljer du **Sök**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Sök** och klicka sedan på **OK**.
 1. Konfigurera egenskaperna efter behov i egenskapsfönstret för sökmodulen.
-1. I platsen för rubrikmodul väljer du **Kundvagnsikon** , markerar ellipsknappen ( **...** ) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul** , välj modulen **Kundvagnsikon** och klicka sedan på **OK**.
+1. I platsen för rubrikmodul väljer du **Kundvagnsikon**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Kundvagnsikon** och klicka sedan på **OK**.
 1. Konfigurera egenskaperna efter behov i egenskapsfönstret för modulen för kundvagnsikon. Om du vill att kundvagnsikonen ska visa en kundvagnssammanfattning (även kallad en minikundvagn) när användarna hovrar över den väljer du **Visa minikundvagnen**.
-1. Välj **Spara** , välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera den.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera den.
 
 Om du vill garantera att ett sidhuvud visas på varje sida följer du stegen nedan för varje sidmall som skapas för webbplatsen.
 
 1. På platsen **Rubrik** i modulen **standardsida** lägg till det sidfotsfragment som du skapade.
-1. Välj **Spara** , välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

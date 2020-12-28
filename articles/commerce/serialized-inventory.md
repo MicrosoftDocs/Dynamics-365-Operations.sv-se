@@ -17,11 +17,11 @@ ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: bf3a6a2b713e5fe1fe22ae886080945e7a87c9b2
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024090"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415949"
 ---
 # <a name="point-of-sale-pos-improvements-for-serialized-products"></a>Kassaförbättringar för serialiserade produkter
 
@@ -40,5 +40,5 @@ Baserat på inställningarna i administration för Handel kan produkterna klassi
     Den nya åtgärden **Lägg till serienummer** tillhandahåller även serienummer för varor som saknar serienummer. Ett angivet serienummer kan inte redigeras. Kassören måste ogiltigförklara raden och lägga till produkten på nytt.
     
 - **Inga serienummer krävs för att lägga kundorder** – Kundorder kan läggas i en butik och utföras från en annan. En kassör som lägger en kundorder behöver inte ange något serienummer. Serienumret anges i samband med plock eller hämtning. Ett serienummer måste emellertid anges för samtliga radobjekt som leveranstypen **Utkörning** väljs för. I annat fall kan transaktionen inte slutföras.
-- **Serialiserade produkter sammanställs inte på transaktionsskärmen** – Inställningen **Sammanställda produkter** i fältgruppen **Terminal** på sidan **Funktionalitetsprofil** låter dig sammanställa samma icke-serialiserade produkter på transaktionsskärmen. När samma produkter sammanställs blir de lättare att se i transaktionsrutnätet. Eftersom serienummer som regel är unika och försäljningsmedarbetare inte behöver ange serienummer före kassan, gäller inställningen **Sammanställda produkter** emellertid inte serialiserade produkter. Därför kommer serialiserade produkter inte att sammanställas på transaktionsskärmen om inställningen **Sammanställ produkter** väljs.
+- **Serialiserade produkter sammanställs inte på transaktionsskärmen** – Inställningen **Sammanställda produkter** i fältgruppen **Terminal** på sidan **Funktionalitetsprofil** låter dig sammanställa samma icke-serialiserade produkter på transaktionsskärmen. När samma produkter sammanställs blir de lättare att se i transaktionsrutnätet. Eftersom serienummer som regel är unika och säljare inte behöver ange serienummer före kassan, gäller inställningen **Sammanställda produkter** emellertid inte serialiserade produkter. Därför kommer serialiserade produkter inte att sammanställas på transaktionsskärmen om inställningen **Sammanställ produkter** väljs.
 - **Möjlighet att söka efter journalerna med serienummer** - Journalerna går nu dessutom att söka med serienummer. Öppna åtgärden Journaler och tryck på knappen Avancerad sökning i appfältet. Knappen Lägg till filter gör det möjligt att även använda ett filter vid sökning efter serienummer.

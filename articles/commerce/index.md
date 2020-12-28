@@ -20,11 +20,11 @@ ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 211bcf3f4938b438e417f92cd385aaa04278a404
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107171"
+ms.locfileid: "4415980"
 ---
 # <a name="commerce-home-page"></a>Startsidan för Handel
 
@@ -33,9 +33,9 @@ ms.locfileid: "4107171"
 
 Dynamics 365 Commerce – som bygger på de beprövade funktionerna i Dynamics 365 Retail – är en omfattande lösning i flera kanaler där backoffice, butik, kundtjänst och digitala upplevelser samordnas. Dynamics 365 Commerce gör det möjligt för dig att skapa varumärkeslojalitet via anpassade kundåtaganden, öka intäkterna med förbättrad produktivitet hos anställda, optimera åtgärder för att minska kostnaderna och öka effektiviteten i leveranskedjan och slutligen leverera bättre affärsresultat.
 
-Den här versionen gör det möjligt att skapa digitala upplevelser med inbyggda webbredigerings- och utvecklingsverktyg för att skapa engagerande och intelligenta digitala butiker. En ansluten marknads- och fjärradministrerad e-handelsplattform gör det enklare att hantera innehåll, resurser, kampanjer, lager och priser över alla kanaler.
+Den här versionen gör det möjligt att skapa digitala upplevelser med inbyggda webbredigerings- och utvecklingsverktyg för att skapa engagerande och intelligenta digitala butiker. En ansluten marknads- och fjärradministrerad näthandelsplattform gör det enklare att hantera innehåll, resurser, kampanjer, lager och priser över alla kanaler.
 
-- **Allt du behöver för att skapa och köra e-handel:** effektivisera ditt företags affärs- och heltäckande handelslösningar som anpassar dina behov till dina behov i traditionella och framväxande kanaler. Med de inbyggda verktygen för webbredigering och utveckling kan du skapa engagerande intelligenta digitala butiker, medan en ansluten marknads- och fjärradministrerad e-handelsplattform möjliggör sömlös hantering av innehåll, tillgångar, kampanjer, lager och priser över kanaler.
+- **Allt du behöver för att skapa och köra näthandel:** effektivisera ditt företags affärs- och heltäckande handelslösningar som anpassar dina behov till dina behov i traditionella och framväxande kanaler. Med de inbyggda verktygen för webbredigering och utveckling kan du skapa engagerande intelligenta digitala butiker, medan en ansluten marknads- och fjärradministrerad näthandelsplattform möjliggör sömlös hantering av innehåll, tillgångar, kampanjer, lager och priser över kanaler.
 
 - **Skapa lojalitet och överskrid kundernas förväntningar:** Använd klientelingverktyg för att få en omfattande översikt över kunden och svara på deras behov på alla samarbetsnivå, baserat på kundens profil, historik och inställningar som flödar över fysiskt och digitalt kanaler. Ge dina anställda möjlighet att utveckla långsiktiga relationer genom AI-drivna rekommendationer, Customer Insights och förmånsprogram som gör det möjligt att öka varumärket.
 

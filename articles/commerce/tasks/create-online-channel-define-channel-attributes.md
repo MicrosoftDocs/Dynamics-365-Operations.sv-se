@@ -18,11 +18,11 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: f15b035c01801041d637a2d315d8a3ddcc9d6540
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140972"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415885"
 ---
 # <a name="create-online-channel-and-define-channel-attributes"></a>Skapa online-kanal och definiera kanalattribut
 
@@ -63,7 +63,7 @@ I den här proceduren skapar du en ny onlinekanal och lägger till den i organis
 
 ## <a name="configure-orders-for-near-real-time-notification"></a>Konfigurera order för nära realtidsmeddelande
 1. Gå till Butik och handel > Administrationsinställning > Parametrar > Handelparametrar.
-2. Ange Använd realtidstjänst för skapande av e-handelsorder till "Ja".
+2. Ange Använd realtidstjänst för skapande av näthandelsorder till "Ja".
 3. Kör distributionsschema 1070 för att synkronisera ändringar i databasen för kanalen. 
 
 

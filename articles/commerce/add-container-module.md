@@ -18,11 +18,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 9bb2c7d56184d009492b4aa839a3546160ad342f
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817412"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415768"
 ---
 # <a name="container-module"></a>Behållaremodul
 
@@ -39,7 +39,7 @@ Tre behållarmoduler stöds: behållare, behållare med 2 platser och behållare
 > [!NOTE] 
 > Vi rekommenderar att du alltid placerar moduler inuti en behållarmodul så att de kan begränsas till behållarens bredd.
 
-## <a name="examples-of-container-modules-in-e-commerce"></a>Exempel på behållarmoduler i e-handel
+## <a name="examples-of-container-modules-in-e-commerce"></a>Exempel på behållarmoduler i näthandel
 
 - En webbplatsförfattare vill ha en layout med tre kolumner, där tre moduler visas sida vid sida. Därför använder webbplatsförfattaren en behållarmodul med typen 3 platser.
 - En webbplatsförfattare vill ha en layout med sex kolumner, där sex moduler visas sida vid sida. Därför använder webbplatsförfattaren en behållare som innehåller sex kolumner.
@@ -102,7 +102,7 @@ Ytterligare egenskaper kan användas för att optimera layouten för olika visni
 
 Om du vill lägga till en modul för behållarspelare på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
+1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
 1. I dialogrutan **Ny mal** under **Mallnamn**, ange **Behållarmall** och välj sedan **OK**.
 1. I facket **brödtext** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
 1. I dialogrutan **Lägg till modul**, välj modulen **Standardsida** och klicka sedan på **OK**.

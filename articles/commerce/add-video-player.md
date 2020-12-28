@@ -18,11 +18,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 3cf7ead9a5340d5db37a87bdf131ba87681d5a82
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817071"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415787"
 ---
 # <a name="video-player-module"></a>Modul för videospelare
 
@@ -41,7 +41,7 @@ Videospelaren kan användas för att visa videofilmer på en näthandelsplats. D
 
 Videospelarmodulen stöder också sekundära ljudspår. När en video laddas upp till CMS kan även ett sekundärt ljudspår laddas upp. Videospelarmodulen kan sedan spela upp det sekundära ljudspåret om en användare väljer det.
 
-### <a name="examples-of-video-player-modules-in-e-commerce"></a>Exempel på moduler i videopelare i e-handel
+### <a name="examples-of-video-player-modules-in-e-commerce"></a>Exempel på moduler i videopelare i näthandel
 
 - Visa videoklipp på produktinformationssidor eller på marknadsföringssidor
 - Reklamfilmer eller videoklipp om policyer på alla marknadsföringssidor
@@ -62,7 +62,7 @@ Följande bild visar ett exempel på en modul för videospelare på en startsida
 | Spela upp på helskärm       | **Sant** eller **falskt**               | När värdet är inställt på **Sant** spelas videon upp i helskärmsläge. |
 | Utlösare för spela upp och pausa    | **Sant** eller **falskt**               | När värdet är inställt på **Sant** visas en spela upp/pausa-knapp på videon. |
 | Kontroller för videospelare | **Sant** eller **falskt**               | När värdet är inställt på **Sant** visas alla videospelarkontroller. Dessa kontroller omfattar både spela upp och paus-knappar, en förloppsindikator och en dold textning. |
-| Dölj affischbild     | **Sant** eller **falskt**               | Ett videoklipp kan ha en affischram. När värdet för den här egenskapen har angetts till **Sant**döljs affischramen. |
+| Dölj affischbild     | **Sant** eller **falskt**               | Ett videoklipp kan ha en affischram. När värdet för den här egenskapen har angetts till **Sant** döljs affischramen. |
 | Masknivå            | Ett nummer mellan **0** och **100** | Den mask som används på videon som ska formateras. |
 
 ## <a name="add-a-video-player-module-to-a-page"></a>Lägg till en videospelarmodul till en sida
@@ -72,7 +72,7 @@ Följande bild visar ett exempel på en modul för videospelare på en startsida
 
 Om du vill lägga till en modul för videospelare på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
+1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
 1. I dialogrutan **Ny mal** under **Mallnamn**, ange **mall för videospelare** och välj sedan **OK**.
 1. I facket **brödtext** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
 1. I dialogrutan **Lägg till modul**, välj modulen **Standardsida** och klicka sedan på **OK**.

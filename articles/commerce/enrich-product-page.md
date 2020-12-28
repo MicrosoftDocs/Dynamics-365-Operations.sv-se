@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 12508a80c440894ec6e2073b5e550846480e6c45
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269830"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415756"
 ---
 # <a name="enrich-a-product-page"></a>Utöka en produktsida
 
@@ -45,15 +45,15 @@ Om du vill utöka en produktsida följer du stegen nedan.
 1. I navigeringsfönstret till vänster, välj **Produkter**.
 1. Välj en produkt som inte har någon berikad produktsida.
 1. I åtgärdsfönstret, välj **Berika produktsida**.
-1. Välj **PDP-mall**och välj sedan **OK**.
+1. Välj **PDP-mall** och välj sedan **OK**.
 1. I dispositionsträdet för sida till vänster expanderar du platsen **Huvud**.
 1. Markera knappen med punkter (**...**) för platsen **Huvud** och välj sedan **Lägg till modul**.
-1. Välj **Behållare 2**och välj sedan **OK**.
+1. Välj **Behållare 2** och välj sedan **OK**.
 1. Markera knappen med punkter för **Behållare 2** och välj sedan **Lägg till modul**.
-1. Välj **Funktion**och välj sedan **OK**.
+1. Välj **Funktion** och välj sedan **OK**.
 1. I fönstret egenskaper till höger i fältet **oformaterad text** anger du den uppdaterade beskrivningen av produkten.
 1. I fältet **Rubrik** anger du rubriktexten och väljer sedan **OK**.
-1. Välj **spara**och välj sedan **Avsluta redigeringen**.
+1. Välj **spara** och välj sedan **Avsluta redigeringen**.
 1. I fältet **kommentarer** anger du **Berika en produkt** och sedan **OK**.
 1. Välj **Förhandsgranska** om du vill förhandsgranska den berikade produktsidan. När du är klar kan du stänga fliken förhandsgranskning och återgå till redigeringsverktyget.
 1. Markera **Publicera**.

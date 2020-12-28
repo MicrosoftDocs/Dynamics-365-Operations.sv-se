@@ -18,11 +18,11 @@ ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 25c0574e8d4502bcb846fba0ddf913d81eded87b
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599777"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415726"
 ---
 # <a name="dynamics-365-commerce-evaluation-environment-overview"></a>Dynamics 365 Commerce utvärderingsmiljö – översikt
 
@@ -45,8 +45,8 @@ Bortsett från några mindre begränsningar som inte påverkar funktioner eller 
 
 Även om utvärderingsmiljö Commerce innehåller en fullständig uppsättning handelsfunktioner och funktioner finns det några mindre begränsningar:
 
-- Även om utvärderingsmiljö Commerce inte har några geografiska begränsningar, kan komponenter i miljön, till exempel Retail Cloud Scale Unit (RCSU) och e-handelsprogram, endast etableras i USA.
-- Användning av utvärderingsmiljö för Commerce är begränsad till 30 dagar från det datum då e-handel etableras.
+- Även om utvärderingsmiljö Commerce inte har några geografiska begränsningar, kan komponenter i miljön, till exempel Retail Cloud Scale Unit (RCSU) och näthandelsprogram, endast etableras i USA.
+- Användning av utvärderingsmiljö för Commerce är begränsad till 30 dagar från det datum då näthandel etableras.
 - Utvärderingsmiljö för Commerce kan distribueras och initieras endast i en miljö som använder demotopologin, där alla komponenter i en miljö distribueras i en enda molnstyrd virtuell dator (VM). Den huvudsakliga begränsningen för denna topologi är antalet samtidiga användare som miljön kan stödja.
 
 ## <a name="get-started"></a>Kom igång

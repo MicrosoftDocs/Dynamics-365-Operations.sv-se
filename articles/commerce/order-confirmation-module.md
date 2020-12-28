@@ -1,9 +1,9 @@
 ---
-title: Orderinformationsmodul
-description: Det här avsnittet handlar om orderinformationsmoduler och beskriver hur du använder dem i Microsoft Dynamics 365 Commerce.
-author: anupamar
+title: Orderbekräftelsemodulen
+description: Det här avsnittet handlar om orderbekräftelsemoduler och beskriver hur du använder dem i Microsoft Dynamics 365 Commerce.
+author: anupamar-ms
 manager: annbe
-ms.date: 06/18/2020
+ms.date: 11/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,55 +17,56 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6610d2abe0a1b03ddd763f9a65fc1dab42f1da1b
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: bf33ebf9c0c5136f40fcd7e1012988d186c4169b
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015190"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4415995"
 ---
-# <a name="order-details-module"></a>Orderinformationsmodul
+# <a name="order-confirmation-module"></a>Modul för orderbekräftelse
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet handlar om orderinformationsmoduler och beskriver hur du använder dem i Microsoft Dynamics 365 Commerce.
+Det här avsnittet handlar om orderbekräftelsemoduler och beskriver hur du använder dem i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Översikt
 
-Orderinformationsmodul används för att visa bekräftelseinformationen när en order har placerats. Det visar order bekräftelse-ID, orderns kontaktinformation och annan orderinformation, till exempel de artiklar som har köpts, betalningsinformation och leveransmetoden.
+Orderbekräftelsemodulen används för att visa bekräftelseinformationen när en order har lagts. Denna visar order bekräftelse-ID, orderns kontaktinformation och annan orderinformation, till exempel de artiklar som har köpts, betalningsinformation, upphämtningsalternativ och leveransmetod.
 
-## <a name="order-details-module-properties"></a>Egenskaper för orderdetaljmodul
+## <a name="order-confirmation-module-properties"></a>Egenskaper för orderbekräftelsemodul
 
-| Egenskapsnamn  | Värden | beskrivning |
+| Egenskapsnamn  | Värden | Beskrivning |
 |----------------|--------|-------------|
-| Rubrik        | Rubriktext och rubriktagg ( **H1** , **H2** , **H3** , **H4** , **H5** eller **H6** ) | Orderdetaljmodulen kan ha en rubrik. Som standard används rubriktaggen **H2** för rubriken. Taggen kan emellertid ändras så att den uppfyller tillgänglighetskraven. |
+| Rubrik        | Rubriktext och rubriktagg (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Orderbekräftelsemodulen kan ha en rubrik. Som standard används rubriktaggen **H2** för rubriken. Taggen kan emellertid ändras så att den uppfyller tillgänglighetskraven. |
 | Kontaktnummer | Text | Ett kontaktnummer kan anges för frågor som är relaterade till order. |
+| Visa information om upphämtningstidpunkt | Sant eller falskt | Denna egenskap är tillgänglig i Dynamics 365 Commerce 10.0.15 och senare. När värdet är "true" visas information om tidpunkt för upphämtning om en upphämtningsartikel avses|
 
-## <a name="modules-that-can-be-used-on-an-order-details-page"></a>Moduler som kan användas på en sida för orderinformation
+## <a name="modules-that-can-be-used-on-an-order-confirmation-page"></a>Moduler som kan användas på en sida för orderbekräftelse
 
-När du skapar en sida för orderinformation kan du lägga till andra relevanta moduler utöver orderinformationsmodulen. Nedan följer några exempel:
+När du skapar en sida för orderbekräfta kan du lägga till andra relevanta moduler utöver orderbekräftelsemodulen. Nedan följer några exempel:
 
-- **Rekommendationsmodul** – modulen rekommendationer kan läggs till på sidan för orderinformation för att föreslå andra produkter till kunden.
-- **Marknadsföringsmoduler** – valfri marknadsföringsmodul kan läggas till på sidan orderinformation om du vill visa marknadsföringsinnehåll.
+- **Rekommendationsmodul** – Rekommendationsmodulen kan läggas till på sidan för orderbekräftelse för att föreslå andra produkter till kunden.
+- **Marknadsföringsmoduler** – Valfri marknadsföringsmodul kan läggas till på sidan för orderbekräftelse om du vill visa marknadsföringsinnehåll.
 
-## <a name="add-an-order-details-module-to-a-page"></a>Lägg till orderdetaljmodul till en sida
+## <a name="add-an-order-confirmation-module-to-a-page"></a>Lägg till en orderbekräftelsemodul på en sida
 
-Om du vill lägga till en orderdetaljmodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
+Om du vill lägga till en orderbekräftelsemodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
 1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
-1. I dialogrutan **Ny mall** under **Mallnamn** , ange ett namn **Orderinformationsmall** och välj sedan **OK**.
-1. I facket **brödtext** välj ellips-knappen ( **...** ) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul** , välj modulen **Standardsida** och klicka sedan på **OK**.
-1. I platsen **Huvud** i modulen **Standardsida** markerar du ellipsknappen ( **...** ) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul** välj modulen **orderinformation** och sedan **OK**.
-1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska mallen. Orderinformationsmodulen kommer inte återges eftersom den kräver en kontext för orderbekräftelsenumret.
+1. I dialogrutan **Ny mall**, under **Mallnamn**, anger du namnet **Orderbekräftelsemall** och väljer sedan **OK**.
+1. I facket **brödtext** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Standardsida** och klicka sedan på **OK**.
+1. I platsen **Huvud** i modulen **Standardsida** markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul** väljer du modulen **Orderbekräftelse** och väljer sedan **OK**.
+1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska mallen. Modulen för orderbekräftelse återges inte eftersom den kräver en kontext för orderbekräftelsenumret.
 1. Välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
-1. I dialogrutan **Välj en mall** väljer du en **Orderinnehållsmall**. Under **Sidnamn** , ange **Orderinnehållsida** och klicka sedan på **OK**.
-1. I platsen **Huvud** i modulen **Standardsida** markerar du ellipsknappen ( **...** ) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul** välj modulen **orderinformation** och sedan **OK**.
-1. I egenskapsrutan i dragspelsmodulen väljer du **rubrik** bredvid pennsymbolen.
-1. I fältet **Rubriktext** i dialogrutan **Rubrik** ange rubriktext **Orderdetaljer** och välj sedan **OK**.
+1. I dialogrutan **Välj en mall** väljer du en **Orderbekräftelsemall**. Under **Sidnamn** anger du **Orderbekräftelsesida** och klickar sedan på **OK**.
+1. I platsen **Huvud** i modulen **Standardsida** markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul** väljer du modulen **Orderbekräftelse** och väljer sedan **OK**.
+1. I egenskapsrutan för orderbekräftelsemodulen väljer du **Rubrik** bredvid pennsymbolen.
+1. I fältet **Rubriktext** i dialogrutan **Rubrik** anger du rubriktexten **Orderbekräftelse** och väljer sedan **OK**.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan.
 1. Välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 
@@ -82,5 +83,7 @@ Om du vill lägga till en orderdetaljmodul på en ny sida och ställa in de obli
 [Modul för leveransadress](ship-address-module.md)
 
 [Modul för leveransalternativ](delivery-options-module.md)
+
+[Informationsmodul för upphämtning](pickup-info-module.md)
 
 [Presentkortsmodul](add-giftcard.md)

@@ -19,11 +19,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 1248ce660d765ddade1df7d79786202235019990
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057404"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415934"
 ---
 # <a name="ratings-and-reviews-overview"></a>Översikt över omdömen och recensioner
 
@@ -34,7 +34,7 @@ I det här avsnittet beskrivs omdömen och recensioner i Microsoft Dynamics 365 
 
 ## <a name="overview"></a>Översikt
 
-Omdömen och recensioner är avgörande för e-handelskunder som vill veta hur andra kunder uppfattar en produkt. De kan också hjälpa konsumenter att fatta köpbeslut. I Dynamics 365 Commerce kan återförsäljare med hjälp av omdömen och recensioner samla in produktrecensioner och omdömen från kunderna. Återförsäljare kan sedan visa genomsnittsomdömen och granska information på deras näthandelsplatser.
+Omdömen och recensioner är avgörande för näthandelskunder som vill veta hur andra kunder uppfattar en produkt. De kan också hjälpa konsumenter att fatta köpbeslut. I Dynamics 365 Commerce kan återförsäljare med hjälp av omdömen och recensioner samla in produktrecensioner och omdömen från kunderna. Återförsäljare kan sedan visa genomsnittsomdömen och granska information på deras näthandelsplatser.
 
 Den genomsnittliga bedömningsinformationen visas i kassa och kundtjänstkanaler. Därför kan säljare använda det för att hjälpa användarna att fatta beslut. Omdömen och recensioner kan också fungera som en feedbackmetod som kan användas för att förbättra kvaliteten på en produkt och därmed öka försäljningen.
 

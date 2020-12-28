@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: 82a8795360f453cdee19fa6e9e376a42e8276849
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022097"
+ms.locfileid: "4415962"
 ---
 # <a name="social-share-module"></a>Modul för social delning
 
@@ -35,7 +35,7 @@ Det här avsnittet handlar om modul för social delning och beskriver hur du lä
 
 Med hjälp av modul för social delning kan användarna dela webbadresser för näthandelsplatser på sociala medier som exempelvis Facebook, Twitter, Pinterest och LinkedIn. Webbadresser till webbplatssidan kan också delas via e-post. Moduler för social delning används ofta på produktinformationssidor (PDP) för att hjälpa användarna att dela produktinformation.
 
-Varje modul för social delning är en behållare för artikelmoduler för social delning. Varje artikelmodul för social delning kan konfigureras så att den pekar på en specifik plats för sociala medier. Integrering med Facebook, Twitter, Pinterest, LinkedIn och e-post stöds i kartongen. När en webbplats användare väljer en symbol för sociala medier, startas en HTML iFrame för respektive socialt medieplats. I iFrame kan användaren logga in och bokföra det sidinnehåll som de visade.
+Varje modul för social delning är en behållare för artikelmoduler för social delning. Varje artikelmodul för social delning kan konfigureras så att den pekar mot en specifik plats för sociala medier. Integrering med Facebook, Twitter, Pinterest, LinkedIn och e-post stöds i kartongen. När en webbplats användare väljer en symbol för sociala medier, startas en HTML iFrame för respektive socialt medieplats. I iFrame kan användaren logga in och bokföra det sidinnehåll som de visade.
 
 Varje plattform för sociala medier kan spåra cookies, så den här modulen kräver att webbplats användarna accepterar meddelandet om att ett meddelande ska skickas till en cookie. När cookie-tillstånd inte godkänns, döljs modulen på sidan. Mer information finns i [kompatibilitet med cookies](cookie-compliance.md).
 
@@ -53,7 +53,7 @@ Följande bild visar ett exempel på en modul för social delning som används p
 ## <a name="social-share-item-module-properties"></a>Egenskaper för artikelmodul för social delning
 | Egenskapsnamn             | Värde                 | beskrivning |
 |---------------------------|-----------------------|-------------|
-| Sociala medier              | **Facebook** , **Twitter** , **Pinterest** , **LinkedIn** , **post** | En nedrullningsbar meny med en lista över sociala medieplattformar. |
+| Sociala medier              | **Facebook**, **Twitter**, **Pinterest**, **LinkedIn**, **post** | En nedrullningsbar meny med en lista över sociala medieplattformar. |
 | Ikon |Bild    | Detta är den bild som kommer att visas för respektive socialt media. Du bör läsa den sociala medieplattformens SDK för den rekommenderade bilden som ska användas för varje plattform. |
 
 ## <a name="add-a-social-share-module-to-a-buy-box-module"></a>Lägg till en modul för social delning för en modul för inköpsruta
@@ -61,15 +61,15 @@ Följande bild visar ett exempel på en modul för social delning som används p
 Följ dessa steg för att lägga till en social delningsmodul till en köpboxmodul.
 
 1. På webbplatsen Fabrikam väljer du **sidor** och väljer sedan sidan **DefaultPDP** för att öppna sidan produktinformation. 
-1. I facket **inköpsruta (krävs)** välj ellips-knappen ( **...** ) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul** , välj modulen **social delning** och klicka sedan på **OK**.
-1. I facket **social delning** välj ellips-knappen ( **...** ) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul** , välj modulen **social delning** och klicka sedan på **OK**.
-1. I egenskapsfönstret i modulen **social delning** , under **orientering** välj **horisontell**. Lägg till en undertext efter behov.
-1. I facket **social delning** välj ellips-knappen ( **...** ) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul** , välj modulen **social delningsartikel** och klicka sedan på **OK**.
-1. I egenskapsfönstret i modulen **social delningsartikel** , under **sociala medier** välj **Facebook**.
-1. I egenskapsfönstret i modulen **social delningsartikel** , under **Ikon** välj **+ Lägg till en bild**.
+1. I facket **inköpsruta (krävs)** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **social delning** och klicka sedan på **OK**.
+1. I facket **social delning** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **social delning** och klicka sedan på **OK**.
+1. I egenskapsfönstret i modulen **social delning**, under **orientering** välj **horisontell**. Lägg till en undertext efter behov.
+1. I facket **social delning** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **social delningsartikel** och klicka sedan på **OK**.
+1. I egenskapsfönstret i modulen **social delningsartikel**, under **sociala medier** välj **Facebook**.
+1. I egenskapsfönstret i modulen **social delningsartikel**, under **Ikon** välj **+ Lägg till en bild**.
 1. I dialogrutan **Mediaväljare** välj modulen Facebook-logotyp och välj sedan **OK**. Om det inte finns någon Facebook logotypbild kan du välja **överför ny medieartikel** för att ladda upp ett.
 1. Lägg till och konfigurera ytterligare moduler för **social delningsartikel** efter behov.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan. På sidan visas modulen för modul för social delning.

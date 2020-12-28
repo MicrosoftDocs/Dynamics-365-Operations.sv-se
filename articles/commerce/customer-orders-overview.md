@@ -20,32 +20,32 @@ ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: 9e5770de82638e6cef6d4c1dffd1dc85549fb11f
-ms.sourcegitcommit: 30e4dc0a45f7de5f0a7178b1e88f7c3d61a7395e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763711"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415818"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundorder i kassa (POS)
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller information om hur du skapar och hanterar kundorder i kassan (POS). Kundorder kan användas för att fånga in försäljningar där köpare vill plocka produkter på ett senare datum, plocka produkter från en annan plats eller låta artiklarna levereras till dem. 
+Det här avsnittet innehåller information om hur du skapar och hanterar kundorder i kassan (POS). Kundorder kan användas för att fånga in försäljningar där köpare vill hämta produkter på ett senare datum, hämta produkter från en annan plats eller låta artiklarna levereras till dem. 
 
 I en handelsvärld kännetecknad av omnikanaler erbjuder många återförsäljare möjlighet till kundorder (eller specialorder) för att uppfylla kraven för olika produkter och utföranden. Här följer några vanliga scenarier:
 
 - En kund vill att produkterna ska levereras till en specifik adress på ett visst datum.
 - En kund vill hämta produkter från en butik eller en plats som skiljer sig från den butiken eller plats där kunden har köpt produkterna.
-- En kund inom en butiksplats vill beställa produkter i dag och plocka dem från samma butiksplats på ett senare datum.
+- En kund inom en butiksplats vill beställa produkter i dag och hämta dem från samma butiksplats på ett senare datum.
 
-Återförsäljare använder också kundorder för att minimera förlorade försäljningar som lagerfel annars kan medföra, detta eftersom varorna kan levereras eller avhämtas vid en annan tidpunkt eller på en annan plats.
+Återförsäljare använder också kundorder för att minimera förlorade försäljningar som lagerfel annars kan medföra, detta eftersom varorna kan levereras eller upphämtas vid en annan tidpunkt eller på en annan plats.
 
 ## <a name="set-up-customer-orders"></a>Skapa kundorder
 Innan du försöker använda funktionen kundorder i kassan måste du se till att slutföra alla konfigurationer som krävs i Commerce-administration.
 
 ### <a name="configure-modes-of-delivery"></a>Konfigurera leveranssätt
 
-Om du vill använda kundorder måste du konfigurera leveranssätt som butikskanalen kan använda. Du måste definiera minst ett leveranssätt som kan användas när orderrader levereras till en kund från en butik. Du måste också definiera minst ett leveranssätt som kan användas när orderrader hämtas från butiken. Leveranssätt definieras på sidan **leveranssätt** i Commerce-administration. För mer information om hur du ställer in leveranslägen för Commerce-kanaler, se [Definiera leveranssätt](https://docs.microsoft.com/dynamics365/commerce/configure-call-center-delivery#define-delivery-modes).
+Om du vill använda kundorder måste du konfigurera leveranssätt som butikskanalen kan använda. Du måste definiera minst ett leveranssätt som kan användas när orderrader levereras till en kund från en butik. Du måste också definiera minst ett leveranssätt som kan användas när orderrader hämtas från butiken. Leveranssätt definieras på sidan **leveranssätt** i Commerce-administration. För mer information om hur du ställer in leveranssätt för Commerce-kanaler, se [Definiera leveranssätt](https://docs.microsoft.com/dynamics365/commerce/configure-call-center-delivery#define-delivery-modes).
 
 ![SIdan leveranssätt](media/customer-order-modes-of-delivery.png)
 
@@ -54,7 +54,7 @@ Om du vill använda kundorder måste du konfigurera leveranssätt som butikskana
 
 Vissa butiker eller lagerställen kanske inte kan uppfylla kundorder. Genom att konfigurera uppfyllelsegrupper kan en organisation ange vilka butiker och lagerställen som ska visas som alternativ för användare som skapar kundorder i POS. Uppfyllelsegrupper konfigureras på sidan **uppfyllelsegrupper** . Organisationer kan skapa så många uppfyllelsegrupper som behövs. När en uppfyllelsegrupp har definierats länkas den till en butik med hjälp av en knapp på fliken **Ställ in** i åtgärdsfönstret på sidan **Butiker**.
 
-I Commerce version 10.0.12 och senare kan organisationer ange om lagerstället eller de kombinationer av lagerställen som har definierats i uppfyllelsegrupper kan användas för leverans, för upphämtning eller både leverans och upphämtning. Därför har butiken ytterligare möjligheter att driva lager- och butiksalternativen som visas för användare som skapar en order för upphämtning och leverans av en order. Om du vill utnyttja dessa konfigurationsalternativ måste du aktivera funktionen **möjlighet att ange platser som "leverans" eller "plockning" inom en uppfyllelsegrupp**. Om ett lagerställe som är länkat till en uppfyllelsegrupp inte är en butik kan det endast konfigureras som en leveransplats. Den kan inte användas när order för upphämtning har konfigurerats i kassan.
+I Commerce version 10.0.12 och senare kan organisationer ange om lagerstället eller de kombinationer av lagerställen som har definierats i uppfyllelsegrupper kan användas för leverans, för upphämtning eller både leverans och upphämtning. Därför har butiken ytterligare möjligheter att driva lager- och butiksalternativen som visas för användare som skapar en order för upphämtning och leverans av en order. Om du vill utnyttja dessa konfigurationsalternativ måste du aktivera funktionen **möjlighet att ange platser som "leverans" eller "upphämtning" inom en uppfyllelsegrupp**. Om ett lagerställe som är länkat till en uppfyllelsegrupp inte är en butik kan det endast konfigureras som en leveransplats. Den kan inte användas när order för upphämtning har konfigurerats i kassan.
 
 ![Sidan uppfyllelsegrupper](media/customer-order-fulfillment-group.png)
 
@@ -89,8 +89,8 @@ Innan du försöker skapa kundorder i kassan måste du konfigurera lämpliga par
 Kontrollera att kassan [skärmlayout](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts) är konfigurerad så att den stöder skapande och hantering av kundorder och att alla nödvändiga kassaåtgärder har konfigurerats. Nedan följer några av de kassaåtgärder som rekommenderas för att skapa och hantera kundorder:
 - **Leverera alla produkter** – den här operationen används för att ange att alla rader i transaktionsvagnen ska levereras till en destination.
 - **Leverera valda produkter** – den här operationen används för att ange att valda rader i transaktionsvagnen ska levereras till en destination.
-- **Plocka alla produkter** – den här operationen används för att ange att alla rader i transaktionsvagnen ska hämtas från en vald butiksplats.
-- **Plocka valda produkter** – den här operationen används för att ange att valda rader i transaktionsvagnen ska hämtas från en vald butiksplats.
+- **Hämta alla produkter** – den här operationen används för att ange att alla rader i transaktionsvagnen ska hämtas från en vald butiksplats.
+- **Hämta valda produkter** – den här operationen används för att ange att valda rader i transaktionsvagnen ska hämtas från en vald butiksplats.
 - **Utföra alla produkter** – den här åtgärden används för att ange att alla rader i transaktionsvagnen ska utföras. Om den här operationen används i kassan konverteras kundordern till en hämtköpstransaktioner.
 - **Utför valda produkter** – den här åtgärden används för att ange att valda rader i transaktionsvagnen utförs av kunden vid inköpstillfället. Den här åtgärden är endast användbar i ett scenario med [hybridorder](https://docs.microsoft.com/dynamics365/commerce/hybrid-customer-orders) .
 - **Återkalla order** – den här åtgärden används för att söka efter och hämta kundorder så att kassaanvändare kan redigera, avbryta eller utföra slutförda åtgärder på dem efter behov.
@@ -118,7 +118,7 @@ Kontrollera att kassan [skärmlayout](https://docs.microsoft.com/dynamics365/com
 2. Lägg till produkter i kundvagnen.
 3. Välj **Hämta valda** eller **Hämta alla** för att initiera konfigurationen av order upphämtningen.
 4. Välj det lagerställe där kunden ska hämta de valda produkterna.
-5. Välj ett plockningsdatum.
+5. Välj ett upphämtningsdatum.
 6. Använd betalningsfunktionerna om du vill betala för alla beräknade belopp som förfaller, eller använd åtgärden **Insättningsåsidosättning** för att ändra förfallna belopp och sedan använda betalning.
 7. Om den fullständiga ordersumman inte har betalats väljer du om kunden ska betala vid ett senare tillfälle (vid upphämtning) eller om ett kreditkort ska ställas i token nu och sedan användas och fångas in vid tidpunkten för upphämtningen.
 

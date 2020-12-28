@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: f09f3f98d174f965a75e27ee6a5c2ed8599042fc
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3816996"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415759"
 ---
 # <a name="carousel-module"></a>Karusellmodul
 
@@ -37,7 +37,7 @@ En karusellmodul används för att placera flera reklamartiklar (inklusive rika 
 
 Du kan lägga till innehållsblockmoduler i en karusellmodul. Egenskaperna för karusellmodulen anger sedan hur modulerna ska renderas.
 
-## <a name="examples-of-carousel-modules-in-e-commerce"></a>Exempel på karusellmoduler i e-handel
+## <a name="examples-of-carousel-modules-in-e-commerce"></a>Exempel på karusellmoduler i näthandel
 
 - En karusell med flera reklammoduler i kan användas på en startsida.
 - En karusell med flera reklammoduler i kan användas på en sida med produktinformation.
@@ -51,7 +51,7 @@ Följande bild visar ett exempel på en karusellmodul som används på en starts
 
 | Egenskapsnamn             | Värde                 | beskrivning |
 |---------------------------|-----------------------|-------------|
-| Spela upp automatiskt                  | **Sant** eller **falskt** | Om värdet är inställt på **Sant**sker övergången mellan objekten i karusellen automatiskt. Om värdet är inställt på **Falsk** sker ingen övergång om inte kunden använder tangentbordet eller musen för att flytta från ett objekt till nästa objekt. |
+| Spela upp automatiskt                  | **Sant** eller **falskt** | Om värdet är inställt på **Sant** sker övergången mellan objekten i karusellen automatiskt. Om värdet är inställt på **Falsk** sker ingen övergång om inte kunden använder tangentbordet eller musen för att flytta från ett objekt till nästa objekt. |
 | Intervall för bildövergång | Ett värde i sekunder    | Intervallet för övergångar mellan artiklar. |
 | Övergångstyp           | **Bild** eller **toning** | Övergångseffekten mellan objekt. |
 | Dölj karusellens flipper     | **Sant** eller **falskt** | Om värdet är inställt på **Sant** döljs ikonen karusell och sekvensindikator. |
@@ -61,7 +61,7 @@ Följande bild visar ett exempel på en karusellmodul som används på en starts
 
 Om du vill lägga till en karusellmodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
+1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
 1. I dialogrutan **Ny mal** under **Mallnamn**, ange **Karusellmall** och välj sedan **OK**.
 1. I facket **Brödtext**, lägg till en **standardsida**-modul.
 1. Välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.  

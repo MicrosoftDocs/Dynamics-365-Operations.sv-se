@@ -20,11 +20,11 @@ ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
 ms.openlocfilehash: 048885cac7a316e144b2df072da405d74096203f
-ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "3175141"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415706"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Allokera huvudavgifter för att matcha försäljningsrader
 
@@ -65,7 +65,7 @@ I det här scenariot har organisationen definierat avgifter på huvudnivå för 
 
 En försäljningsorder skapas i kundtjänst och leveranssätt anges till **99**. Den här beställningen innehåller fem artiklar. Två rader har konfigurerats för att använda leveranssätt **99**, två rader har konfigurerats för att använda leveranssätt **11** och en rad har konfigurerats för att använda leveranssätt **21**, enligt följande tabell.
 
-| Artikel  | Radkvantitet | Leveransläge | Pris per enhet |
+| Artikel  | Radkvantitet | Leveranssätt | Pris per enhet |
 |-------|---------------|---------------|----------------|
 | 81331 | 1             | 11            | 10 $            |
 | 81332 | 1             | 99            | $50            |
@@ -87,7 +87,7 @@ I det här scenariot definieras avgifter på huvudnivå för leveranssättrelati
 
 Det här scenariot använder samma försäljningsorder som innehåller fem rader. Leveranssätt i orderrubriken anges till **99**, men leveranssätt för varje artikel i försäljningsordern har konfigurerats enligt följande tabell.
 
-| Artikel  | Radkvantitet | Leveransläge | Pris per enhet |
+| Artikel  | Radkvantitet | Leveranssätt | Pris per enhet |
 |-------|---------------|---------------|----------------|
 | 81331 | 1             | 11            | 10 $            |
 | 81332 | 1             | 99            | $50            |

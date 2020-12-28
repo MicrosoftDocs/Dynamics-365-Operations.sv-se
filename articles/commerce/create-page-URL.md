@@ -18,11 +18,11 @@ ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 588cbedb077fab0663d3d62fc4a8b8ed915635b3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001931"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415789"
 ---
 # <a name="create-a-page-url"></a>Skapa URL för webbsida
 
@@ -33,7 +33,7 @@ I det här avsnittet beskrivs de grundläggande begreppen och procedurerna för 
 
 ## <a name="overview"></a>Översikt
 
-Den fullständiga eller absoluta URL som pekar på en sida på din webbplats består av separata delar. Till exempel URL-adressen `https://www.contoso.com/en-us/contactus` har följande delar:
+Den fullständiga eller absoluta URL som pekar mot en sida på din webbplats består av separata delar. Till exempel URL-adressen `https://www.contoso.com/en-us/contactus` har följande delar:
 
 - `https://www.contoso.com`– HTTP-protokollet och platsens domän.
 - `/en-us`– Platsens språksökväg.
@@ -52,10 +52,10 @@ Det finns två sätt att skapa URL:
 
 ### <a name="create-a-page-url-when-you-create-a-page"></a>Skapa en sid-URL när du skapar en sida
 
-Om du anger ett namn i fältet **URL** när du skapar en ny sida, skapas en sid-URL som pekar på sidan automatiskt på sidan **URL:er**. När du har publicerat URL:en och sidan som den pekar på, kan webbplatsanvändare (dina kunder) komma åt den sida som är kopplad till URL:en.
+Om du anger ett namn i fältet **URL** när du skapar en ny sida, skapas en sid-URL som pekar mot sidan automatiskt på sidan **URL:er**. När du har publicerat URL:en och sidan som den pekar mot, kan webbplatsanvändare (dina kunder) komma åt den sida som är kopplad till URL:en.
 
 > [!NOTE]
-> Om du publicerar en URL utan att publicera sidan som den pekar på, får webbplatsanvändarna ett 404-fel när de försöker öppna sidan. Om du publicerar en sida utan att publicera den URL som pekar på den, går det inte att komma åt sidan via en URL.
+> Om du publicerar en URL utan att publicera sidan som den pekar mot, får webbplatsanvändarna ett 404-fel när de försöker öppna sidan. Om du publicerar en sida utan att publicera den URL som pekar mot den, går det inte att komma åt sidan via en URL.
 
 ### <a name="manually-create-a-page-url"></a>Manuellt skapa en sida-URL
 
@@ -80,7 +80,7 @@ Om du vill uppdatera målsidan för en sid-URL följer du stegen nedan.
 
 ## <a name="redirect-a-page-url"></a>Omdirigera en sid-URL
 
-Ibland vill du kanske att dina kunder ska kunna visa en annan sida när de begär en viss URL. I dessa fall är den bästa och enklaste metoden ofta att ändra sidan som sid-URL:en pekar på. Du kan dock ha legitima skäl för att använda HTTP 301- eller 3023-omdirigeringar för att omdirigera begäranden för en URL till en annan URL.
+Ibland vill du kanske att dina kunder ska kunna visa en annan sida när de begär en viss URL. I dessa fall är den bästa och enklaste metoden ofta att ändra sidan som sid-URL:en pekar mot. Du kan dock ha legitima skäl för att använda HTTP 301- eller 3023-omdirigeringar för att omdirigera begäranden för en URL till en annan URL.
 
 Om du vill omdirigera en URL till en annan URL följer du stegen nedan.
 
@@ -88,8 +88,8 @@ Om du vill omdirigera en URL till en annan URL följer du stegen nedan.
 1. I egenskapsrutan till höger, välj **Omdirigera**.
 1. Välj ett mål för omdirigeringen:
 
-    - Om du vill peka på en annan sida på webbplatsen markerar du **Intern URL**, väljer ellipsknappen (**...**) och väljer den URL du vill omdirigera till.
-    - Om du vill peka på en sida på en extern webbplats väljer du **Extern URL**, och anger sedan full URL-adressen för sidan. Se till att du inkluderar protokollet. Ange exempelvis `https://domain.com/new/page`. Om URL:en redan omdirigeras till en intern URL måste du välja **Rensa urval** innan du kan ange en extern URL.
+    - Om du vill peka mot en annan sida på webbplatsen markerar du **Intern URL**, väljer ellipsknappen (**...**) och väljer den URL du vill omdirigera till.
+    - Om du vill peka mot en sida på en extern webbplats väljer du **Extern URL**, och anger sedan full URL-adressen för sidan. Se till att du inkluderar protokollet. Ange exempelvis `https://domain.com/new/page`. Om URL:en redan omdirigeras till en intern URL måste du välja **Rensa urval** innan du kan ange en extern URL.
 
 1. Välj en omdirigeringstyp:
 

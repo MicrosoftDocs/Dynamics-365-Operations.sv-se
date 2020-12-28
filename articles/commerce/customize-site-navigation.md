@@ -18,11 +18,11 @@ ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: c2b6a7a3b35873e80be391c627d0397fd6398a99
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817240"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415817"
 ---
 # <a name="customize-site-navigation"></a>Anpassa webbplatsnavigeringen
 
@@ -85,7 +85,7 @@ Om du vill visa kategorihierarkin i din nätbutik måste du lägga till modulen 
 
 ## <a name="add-custom-navigation-options"></a>Lägga till anpassade navigeringsalternativ
 
-På navigeringsmenyn kan du lägga till navigeringsalternativ som inte ingår i din produktkategorihierarki. I slutet av listan med produktkategorier kan du till exempel lägga till artikeln **kontakta oss** som pekar på en kontaktsida som du har skapat för webbplatsen.
+På navigeringsmenyn kan du lägga till navigeringsalternativ som inte ingår i din produktkategorihierarki. I slutet av listan med produktkategorier kan du till exempel lägga till artikeln **kontakta oss** som pekar mot en kontaktsida som du har skapat för webbplatsen.
 
 Om du vill lägga till anpassade navigeringsalternativ på navigeringsmenyn följer du stegen nedan.
 

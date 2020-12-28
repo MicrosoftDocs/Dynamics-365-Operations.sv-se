@@ -20,17 +20,17 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.openlocfilehash: b5d0e92196f98fb707b1c424a6ae237f4dc9545c
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895363"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415813"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Hantera attribut och attributsgrupper
 
 [!include [banner](includes/banner.md)]
 
-*Attribut* ger ett sätt att ytterligare beskriva en produkt och dess egenskaper med hjälp av anpassade fält (t.ex **minnesstorlek**, **hårddiskkapacitet**, **är Energy star-kompatibel**och så vidare). Attribut som kan förknippas med olika handelsenheter, såsom produktkategorier och handelskanaler och standardvärden kan ställas in för dem. Produkter ärva deras attribut och värden för de attribut som när de är associerade med produktkategorier eller kanaler. Standardvärdena kan åsidosättas på den enskilda produkten, vid kanalnivå eller i en katalog.
+*Attribut* ger ett sätt att ytterligare beskriva en produkt och dess egenskaper med hjälp av anpassade fält (t.ex **minnesstorlek**, **hårddiskkapacitet**, **är Energy star-kompatibel** och så vidare). Attribut som kan förknippas med olika handelsenheter, såsom produktkategorier och handelskanaler och standardvärden kan ställas in för dem. Produkter ärva deras attribut och värden för de attribut som när de är associerade med produktkategorier eller kanaler. Standardvärdena kan åsidosättas på den enskilda produkten, vid kanalnivå eller i en katalog.
 
 
 En normal TV-produkt kan till exempel ha följande attribut.
@@ -165,12 +165,12 @@ Gör så här om du vill tilldela attributgrupper till kategorier i produkthiera
 1. Logga in på backoffice-klienten som marknadsföringschef.
 2. Gå till **Butik och handel** &gt; **Kategori- och produkthantering** &gt; **Produkthierarki och handel**.
 3. Välj **Modenavigeringshierarkin**.
-4. Under **Herrkläder**markerar du kategorin **Byxor** och sedan på snabbfliken **Produktattributgrupper** lägger du till en attributgrupp med namnet **Herrbälten**.
+4. Under **Herrkläder** markerar du kategorin **Byxor** och sedan på snabbfliken **Produktattributgrupper** lägger du till en attributgrupp med namnet **Herrbälten**.
 5. Välj kategorin **Modesolglasögon** och kontrollera de nya attributen i attributgruppen **Modesolglasögon** genom att markera **Visa attributen**.
 
     Attributgruppen ska visa den nya attributen **Linsform** och **Solglasögonmärke**.
 
-6. Under **Herrkläder**markerar du kategorin **Byxor** och kontrollerar attributen för attributgruppen **Herrbälten** genom att markera **Visa attributen**.
+6. Under **Herrkläder** markerar du kategorin **Byxor** och kontrollerar attributen för attributgruppen **Herrbälten** genom att markera **Visa attributen**.
 
     Attributgruppen bör visa attributen **Herrbältemärken**, **Beltesmaterial** och **Bältesstorlek**.
 

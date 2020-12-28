@@ -20,11 +20,11 @@ ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
 ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971555"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415718"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Utgående lageråtgärder i kassan
 
@@ -151,7 +151,7 @@ Använd funktion **Avbryt uppfyllelse** på appfältet endast om du vill säkerh
 
 Om du uppfyller överföringsordern kan du använda funktionen **pausa uppfyllelse** för att pausa uppfyllelse om du vill ta en paus från processen. Du kanske till exempel vill utföra en annan åtgärd från kassa, t.ex. att ringa upp en kundförsäljning, eller att försena bokföringen av leveransen till Commerce-administration (HQ).
 
-När du väljer **Pausa uppfyllelse**dokumentets status ändrades till **Pausa**. Därför vet användaren att data har registrerats i dokumentet, men dokumentet har ännu inte genomförts. När du är redo att återuppta uppfyllelseprocessen markerar du det pausade dokumentet och väljer **orderdetaljer**. Alla kvantiteter **leverans nu** kvantiteter som tidigare sparats kommer att behållas och kan ses från **fullständig orderlista**.
+När du väljer **Pausa uppfyllelse** dokumentets status ändrades till **Pausa**. Därför vet användaren att data har registrerats i dokumentet, men dokumentet har ännu inte genomförts. När du är redo att återuppta uppfyllelseprocessen markerar du det pausade dokumentet och väljer **orderdetaljer**. Alla kvantiteter **leverans nu** kvantiteter som tidigare sparats kommer att behållas och kan ses från **fullständig orderlista**.
 
 ### <a name="review"></a>Granska
 
@@ -176,7 +176,7 @@ När asynkron dokumentbearbetning används skickas kvittot via ett asynkront dok
 
 Från kassan kan användare skapa nya överföringsorderdokument. Starta processen genom att välja **ny** i appfältet medan du är i huvuddokumentlistan för **utgående operation**. Du uppmanas sedan att välja lagerställe eller butik med **överföring till** som den aktuella butiken skickar lager till. Värdena begränsas till det val som har angetts i konfigurationen för butikens uppfyllelsegrupp. I en begäran om utgående överföringar är den aktuella butiken alltid **överföringen från** lagerstället för överföringsordern. Det går inte att ändra värdet.
 
-Du kan ange värden i fälten **Transportdatum**, **Inleveransdatum** och **Leveransläge** efter behov. Du kan också lägga till en notering som kommer att lagras tillsammans med överföringsorder rubriken, som en bilaga till dokumentet i Commerce-administration (HQ).
+Du kan ange värden i fälten **Transportdatum**, **Inleveransdatum** och **Leveranssätt** efter behov. Du kan också lägga till en notering som kommer att lagras tillsammans med överföringsorder rubriken, som en bilaga till dokumentet i Commerce-administration (HQ).
 
 När informationen i huvudet har skapats kan du lägga till produkter på överföringsordern. Om du vill starta processen med att lägga till artiklar och begärda kvantiteter, skanna streckkoder eller välj **Lägg till produkt**.
 

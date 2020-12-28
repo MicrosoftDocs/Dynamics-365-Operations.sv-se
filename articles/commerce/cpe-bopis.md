@@ -18,11 +18,11 @@ ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 62dabaa2610341cc8ad8e85812a317ac3123fcb1
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599806"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415729"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera BOPIS i en Dynamics 365 Commerce-utvärderingsmiljö
 
@@ -43,7 +43,7 @@ När hela Commerce-miljön har etablerats och konfigurerats kan du använda det 
 BOPIS-scenarier som involverar en kreditkortsbetalning kräver en maskinvarustation. Maskinvarustationen ingår i Modern POS för Windows och Android-klienter. Om du använder Cloud POS eller Modern POS för iOS måste kassan (POS) kombineras med en delad maskinvarustation. I det här avsnittet beskrivs hur du konfigurerar BOPIS för Windows och Android-klienter. Mer information om hur du konfigurerar en delad maskinvarustation finns i [Konfiguration och installation av Retail Hardware Station](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation).
 
 1. Gå till **Retail och Commerce \> Kanalinställningar \> Kassainställning \> Kassor**.
-2. Välj kassa **SANFRAN-5**och välj sedan **redigera**.
+2. Välj kassa **SANFRAN-5** och välj sedan **redigera**.
 3. Ändra värdet för fältet **Maskinvaruprofil** från **HW002** till **HW001** och välj sedan **Spara**.
 4. För att synkronisera ändringarna, gå till **Retail och Commerce \> Retail och Commerce IT \> Distributionsschema**.
 5. Välj distributionsschema **1090** och sedan på åtgärdsfönstret väljer du **Kör nu**.

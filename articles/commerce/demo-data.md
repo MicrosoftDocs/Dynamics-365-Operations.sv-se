@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: d3701046487e1c2004cea57aa3fe244133634854
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 935e1a550160515e2c325c39eab86be3b9fa5394
+ms.sourcegitcommit: d82f319cf7dd26c93a3fd342de4fd537272fa8d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014896"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4415988"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Demodataskärmlayouter i Modern POS (MPOS) och molnbaserad kassa
 
@@ -64,6 +64,7 @@ Skärmlayout-ID kan ha upp till 10 tecken. ID är en sträng som består av tre 
 |----------------|--------------------------------------------------------------------------------------------|
 | 3              | Grundläggande version som stöder flera olika skärmstorlekar för olika enheter och förhållandet mellan bredd och höjd |
 | 3.1            | Grundläggande version som har stöd för ytterligare språk för panelen **Rekommenderade produkter**        |
+| 4              | Den utökade versionen för den utökade Fabrikam-uppdaterade layouten                                  |
 
 ### <a name="persona"></a>Person
 
@@ -75,9 +76,9 @@ Skärmlayout-ID kan ha upp till 10 tecken. ID är en sträng som består av tre 
 
 ### <a name="example-layout"></a>Exempel på layout
 
-Här följer ett exempel på en skärmlayout-ID för företaget Fabrikam, layoutversion 3 och butikschefen:
+Här följer ett exempel på en skärmlayout-ID för företaget Fabrikam, layoutversion 4 och butikschefen:
 
-F3MGR
+F4MGR
 
 Följande illustration visar ett exempel på välkomstskärmen för Fabrikam butikschefen.
 
@@ -103,6 +104,7 @@ Följande tabell visar layoutstorlek för normal skärmupplösning.
 | Fullständig\*      | 1280 × 720 | 16:9         | Surfplatta                 |
 | Fullständig        | 1366 × 768 | 16:9         | Surfplattor, större skärmar |
 | Fullständig        | 1440 × 960 | 3:2          | Surfplattor, större skärmar |
+| Fullständig\*      | 1536 × 864 | 16:9         | Surfplattor, större skärmar |
 
 \*Dessa ytterligare layoutstorlekar är bara tillgängliga i Adventure Works och Fabrikam layouter.
 
@@ -120,7 +122,7 @@ Varje fiktivt företag är avsett för ett annat butikssegment och innehåller p
 | Företag         | Plats | Segment        | Accent | Tema |
 |-----------------|----------|----------------|--------|-------|
 | Adventure Works | Seattle  | Sportutrustning | Blått   | Mörk  |
-| Fabrikam        | Houston  | Mode        | Grönt  | Ljus |
+| Fabrikam        | San Francisco  | Mode        | Grönt  | Ljus |
 | Contoso         | Boston   | Elektronik    | Röd    | Mörk  |
 
 > [!NOTE]
@@ -153,7 +155,7 @@ Användare har angetts för de olika layouterna för skärmen. Med hjälp av tab
 | Adventure Works | A3MGR            | Butikschef | 000154, 000137, 000073 |
 | Adventure Works | A3CSH            | Kassör       | 000150, 000175, 000165 |
 | Adventure Works | A3STK            | Ansvarig för lager   | 000155, 000181, 000152 |
-| Fabrikam        | F3MGR            | Butikschef | 000160, 000168, 000163 |
+| Fabrikam        | F4MGR            | Butikschef | 000160, 000713         |
 | Fabrikam        | F3CSH            | Kassör       | 000161, 000113, 000114 |
 | Fabrikam        | F3STK            | Ansvarig för lager   | 000164, 000112, 000123 |
 | Contoso         | C3MGR            | Butikschef | 000100, 000111         |

@@ -17,11 +17,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.openlocfilehash: 82cec9861b759037f40315fb2e6f36002a0ac059
-ms.sourcegitcommit: 80cbb7d22267aa6a0ae0568d0063fb95556958a5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036819"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415898"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>Tilldela uppgiftslistor till butiker eller medarbetare
 
@@ -61,7 +61,7 @@ I bilden nedan visas ett exempel på hur du hittar och väljer butiker i dialogr
 1. Select **Starta process**.
 1. I dialogrutan **Starta process** på fliken **Allmänt** i fältet **Processnamn** anger du ett namn.
 1. Ge alternativet **Upprepning** värdet **Ja**.
-1. I fältet **Återkommande förskjutning av måldatum i dagar** anger du antal dagar. Om du till exempel anger **4**är måldatumet det återkommande datumet plus fyra dagar.
+1. I fältet **Återkommande förskjutning av måldatum i dagar** anger du antal dagar. Om du till exempel anger **4** är måldatumet det återkommande datumet plus fyra dagar.
 1. På fliken **kör i bakgrunden** väljer du **återkommande**.
 1. I dialogrutan **Definiera återkommande** anger du frekvenskriterier och väljer sedan **OK**.
 

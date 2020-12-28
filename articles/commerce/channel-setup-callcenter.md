@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107194"
+ms.locfileid: "4415984"
 ---
 # <a name="set-up-a-call-center-channel"></a>Ställa in en kundtjänstkanal
 
@@ -94,9 +94,9 @@ Om du vill ändra eller lägga till ett leveranssätt som ska associeras till de
 
 1. I formuläret kundtjänstlägen för leveranssätt väljer du **Hantera leveranssätt**
 1. I åtgärdsfönstret, välj **Ny** om du vill skapa ett nytt leverans sätt, eller välj ett befintligt läge.
-1. I avsnittet **butikskanaler** , klicka på **lägg till rad** om du vill lägga till kundtjänstkanalen. Lägga till kanaler med hjälp av organisationsnoder istället för att lägga till varje kanal individuellt kan lägga till kanaler effektivare.
+1. I avsnittet **butikskanaler**, klicka på **lägg till rad** om du vill lägga till kundtjänstkanalen. Lägga till kanaler med hjälp av organisationsnoder istället för att lägga till varje kanal individuellt kan lägga till kanaler effektivare.
 1. Se till att leveranssättet har konfigurerats med data på snabbfliken **produkter** och på snabbfliken **adresser**. Om inga produkter eller leveransadresser är giltiga för leveranssättet, orsakar fel när du väljer det under orderregistrering.
-1. När du har ändrat i konfiguration av kundtjänsts leveransläge måste jobbet **bearbeta leveranslägen** köras för att ändra matrisen. Det här jobbet hittar du genom att navigera till **Retail och Commerce \> Retail och Commerce IT \> Bearbeta leveranssätt**.
+1. När du har ändrat i konfiguration av kundtjänsts leveranssätt måste jobbet **bearbeta leveranssätt** köras för att ändra matrisen. Det här jobbet hittar du genom att navigera till **Retail och Commerce \> Retail och Commerce IT \> Bearbeta leveranssätt**.
 
 I bilden nedan visas ett exempel på ett leveranssätt.
 

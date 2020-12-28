@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270060"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415814"
 ---
 # <a name="manage-seo-metadata"></a>Hantera SEO-metadata
 
@@ -75,7 +75,7 @@ Om du vill ändra metadata, följ dessa steg.
 1. Klicka på **Redigera** i kommandofältet.
 1. I fönstret Egenskaper till höger, visa **Standardmetataggar**.
 1. Om du vill lägga till en ny metatagg väljer du **Lägg till** och anger sedan taggen i fältet. Om du vill ta bort en befintlig metatagg markerar du papperskorgen till höger om den.
-1. Välj **spara**och välj sedan **Avsluta redigeringen**.
+1. Välj **spara** och välj sedan **Avsluta redigeringen**.
 1. I fältet **kommentarer** anger du **Uppdaterade metataggar** och sedan **OK**.
 1. Välj **Förhandsgranska** om du vill förhandsgranska din sida. När du är klar kan du stänga fliken förhandsgranskning och återgå till redigeringsverktyget.
 1. Markera **Publicera**.

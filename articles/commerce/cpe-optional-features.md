@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 6f7ba7e6de3791720458b509059f008423c73a82
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599830"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415727"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera valfria funktioner för en utvärderingsmiljö för Dynamics 365 Commerce
 
@@ -44,7 +44,7 @@ Följande förutsättningar måste uppfyllas om du vill utvärdera e-postfunktio
 > [!NOTE]
 > Innan du kan slutföra den här proceduren måste du slutföra stegen i [konfigurera din webbplats i Commerce](cpe-post-provisioning.md#set-up-your-site-in-commerce).
 
-1. Logga in på verktyget Commerce webbplatsskaparen med hjälp av den URL som du antecknade när du initierade e-handel under etableringen (se [initiera e-handel](provisioning-guide.md#initialize-e-commerce)).
+1. Logga in på verktyget Commerce webbplatsskaparen med hjälp av den URL som du antecknade när du initierade näthandel under etableringen (se [initiera näthandel](provisioning-guide.md#initialize-e-commerce)).
 1. Öppna webbplatsen **Fabrikam**.
 1. I menyn till vänster, välj **Mediebibliotek**.
 1. Markera en enskild bildtillgång.
@@ -141,7 +141,7 @@ Följande token gäller för den övergripande försäljningsordern.
 | Leveransadress  | %deliveryaddress% |
 | Faktureringsadress   | %customeraddress% |
 | Orderdatum        | %shipdate% |
-| Leveransläge     | %modeofdelivery% |
+| Leveranssätt     | %modeofdelivery% |
 | Rabatt          | %discount% |
 | Moms         | %tax% |
 | Ordersumma       | %total% |
