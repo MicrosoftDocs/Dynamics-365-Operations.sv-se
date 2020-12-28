@@ -1,0 +1,43 @@
+---
+title: Ställ in orsakskoder
+description: Dynamics 365 Human Resources använder orsakskoder för att förklara varför en medarbetares förmåner ändras.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-human-resources
+ms.technology: ''
+ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
+audience: Application User
+ms.reviewer: anbichse
+ms.search.scope: Human Resources
+ms.custom: 7521
+ms.assetid: ''
+ms.search.region: Global
+ms.author: anbichse
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: 83923eecf7eb23a21b8dbbd39491014fa2bc20d6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420619"
+---
+# <a name="set-up-reason-codes"></a><span data-ttu-id="a96be-103">Ställ in orsakskoder</span><span class="sxs-lookup"><span data-stu-id="a96be-103">Set up reason codes</span></span>
+
+<span data-ttu-id="a96be-104">Dynamics 365 Human Resources använder orsakskoder för att förklara varför en medarbetares förmåner ändras.</span><span class="sxs-lookup"><span data-stu-id="a96be-104">Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing.</span></span> 
+
+1. <span data-ttu-id="a96be-105">I arbetsytan **Förmånshantering** under **inställningar**, välj **orsakskoder**.</span><span class="sxs-lookup"><span data-stu-id="a96be-105">In the **Benefits management** workspace, under **Setup**, select **Reason codes**.</span></span>
+
+2. <span data-ttu-id="a96be-106">Välj **Ny**.</span><span class="sxs-lookup"><span data-stu-id="a96be-106">Select **New**.</span></span>
+
+3. <span data-ttu-id="a96be-107">Ange värden för de följande fälten:</span><span class="sxs-lookup"><span data-stu-id="a96be-107">Specify values for the following fields:</span></span>
+
+   | <span data-ttu-id="a96be-108">Fält</span><span class="sxs-lookup"><span data-stu-id="a96be-108">Field</span></span> | <span data-ttu-id="a96be-109">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="a96be-109">Description</span></span> |
+   | --- | --- |
+   | <span data-ttu-id="a96be-110">**Orsakskod**</span><span class="sxs-lookup"><span data-stu-id="a96be-110">**Reason code**</span></span> | <span data-ttu-id="a96be-111">Ett unikt namn som identifierar orsaken till att en medarbetare ändrar en anmälan av förmånsplan.</span><span class="sxs-lookup"><span data-stu-id="a96be-111">A unique name to identify the reason an employee would change a benefit plan enrollment.</span></span> |
+   | <span data-ttu-id="a96be-112">**Beskrivning**</span><span class="sxs-lookup"><span data-stu-id="a96be-112">**Description**</span></span> | <span data-ttu-id="a96be-113">En beskrivning av orsakskoden.</span><span class="sxs-lookup"><span data-stu-id="a96be-113">A description of the reason code.</span></span> |
+
+4. <span data-ttu-id="a96be-114">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="a96be-114">Select **Save**.</span></span> 
