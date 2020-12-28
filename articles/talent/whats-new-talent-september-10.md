@@ -1,0 +1,100 @@
+---
+title: Nyheter och ändringar i Dynamics 365 Talent - Core HR (10 september 2018)
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent - Core HR.
+author: Darinkramer
+manager: AnnBe
+ms.date: 09/12/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-talent
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: anbichse
+ms.search.scope: Talent
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: dkrame
+ms.search.validFrom: 2018-09-06
+ms.dyn365.ops.version: Talent September 10, 2018 update
+ms.openlocfilehash: ff5d21a8a71b068a276bedaf6e4b9964adcb4027
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462629"
+---
+# <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-september-10-2018"></a><span data-ttu-id="dd040-103">Nyheter och ändringar i Dynamics 365 Talent - Core HR (10 september 2018)</span><span class="sxs-lookup"><span data-stu-id="dd040-103">What's new or changed in Dynamics 365 Talent - Core HR (September 10, 2018)</span></span>
+
+<span data-ttu-id="dd040-104">**Skapa 8.1.138.0**</span><span class="sxs-lookup"><span data-stu-id="dd040-104">**Build 8.1.138.0**</span></span>
+
+<span data-ttu-id="dd040-105">Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent: Core HR.</span><span class="sxs-lookup"><span data-stu-id="dd040-105">This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent: Core HR.</span></span>
+
+## <a name="allow-specific-time-of-day-on-time-off-requests-half-days"></a><span data-ttu-id="dd040-106">Tillåta viss tid på ledighetsbegärande (halv dagar)</span><span class="sxs-lookup"><span data-stu-id="dd040-106">Allow specific time of day on time-off requests (half days)</span></span>
+
+<span data-ttu-id="dd040-107">Om ledighet och frånvaro är inställd så att ledig tid lämnas in i dagar, kan du nu även aktivera en halvdagars definition.</span><span class="sxs-lookup"><span data-stu-id="dd040-107">If leave and absence is set up so that time off is submitted in days, you can now also enable a half-day definition.</span></span> <span data-ttu-id="dd040-108">Därefter när användaren skickar ledighetsbegäranden, kan de ange om de begär första halvan eller andra halvan av den lediga dagen.</span><span class="sxs-lookup"><span data-stu-id="dd040-108">Then, when users submit time-off requests, they can specify whether they are requesting the first half or the second half of the day off.</span></span>
+
+<span data-ttu-id="dd040-109">Det här alternativet är inaktiverat som standard.</span><span class="sxs-lookup"><span data-stu-id="dd040-109">By default, this option is turned off.</span></span> <span data-ttu-id="dd040-110">För anställda att begära den första halvan eller andra halvan av dagen, måste du aktivera det här alternativet i området **Tjänstledighet och frånvaro** personalparametrar.</span><span class="sxs-lookup"><span data-stu-id="dd040-110">For employees to request the first half or second half of the day off, you must turn on this option in the **Leave and absence** area of Human resources parameters.</span></span>
+
+<span data-ttu-id="dd040-111">Säkerhetsprivilegier för den här funktionen är Underhåll personalparametrar.</span><span class="sxs-lookup"><span data-stu-id="dd040-111">The security privilege for this feature is Maintain Human Resources Parameters.</span></span>
+
+## <a name="validation-of-leave-and-absence-entries"></a><span data-ttu-id="dd040-112">Validering av tjänstledighets- och frånvaroposter</span><span class="sxs-lookup"><span data-stu-id="dd040-112">Validation of leave and absence entries</span></span>
+
+<span data-ttu-id="dd040-113">Beroende på hur ledigheten är konfigurerad, får anställda som försöker skicka in en ledighetsbegäran som är längre än sin arbetsdag ett varningsmeddelande.</span><span class="sxs-lookup"><span data-stu-id="dd040-113">Depending on how leave is configured, employees who try to submit a time-off request that is longer than their work day receive a warning message.</span></span> <span data-ttu-id="dd040-114">Med andra ord varnas de om de försöker ta mer än en hel dag vid ett givet datum.</span><span class="sxs-lookup"><span data-stu-id="dd040-114">In other words, they are warned if they try to take more than a full day off on any given date.</span></span>
+
+<span data-ttu-id="dd040-115">Verifieringen är alltid aktiverad.</span><span class="sxs-lookup"><span data-stu-id="dd040-115">This validation is always turned on.</span></span> <span data-ttu-id="dd040-116">När anställda överstiger tröskelvärdet som definieras får de en varning i sin ledighetsbegäran.</span><span class="sxs-lookup"><span data-stu-id="dd040-116">Any time that employees exceed the day threshold that is defined, they receive a warning in their time-off request.</span></span>
+
+## <a name="additional-fields-for-conditional-statements-in-workflows"></a><span data-ttu-id="dd040-117">Ytterligare fält för villkorssatser i arbetsflöden</span><span class="sxs-lookup"><span data-stu-id="dd040-117">Additional fields for conditional statements in workflows</span></span>
+
+<span data-ttu-id="dd040-118">Ytterligare fält har lagts till villkorssatser och platshållare för flera arbetsflöden i Core HR.</span><span class="sxs-lookup"><span data-stu-id="dd040-118">Additional fields have been added to conditional statements and placeholders for several workflows in Core HR.</span></span>
+
+<span data-ttu-id="dd040-119">Följande fält har lagts till kompensation, avslutning och överföra arbetsflöden:</span><span class="sxs-lookup"><span data-stu-id="dd040-119">The following fields have been added to the compensation, termination, and transfer workflows:</span></span>
+
+- <span data-ttu-id="dd040-120">EmploymentType</span><span class="sxs-lookup"><span data-stu-id="dd040-120">EmploymentType</span></span>
+- <span data-ttu-id="dd040-121">LegalEntity</span><span class="sxs-lookup"><span data-stu-id="dd040-121">LegalEntity</span></span>
+- <span data-ttu-id="dd040-122">AdjustedWorkerStartDate</span><span class="sxs-lookup"><span data-stu-id="dd040-122">AdjustedWorkerStartDate</span></span>
+- <span data-ttu-id="dd040-123">EmployerNoticeAmount</span><span class="sxs-lookup"><span data-stu-id="dd040-123">EmployerNoticeAmount</span></span>
+- <span data-ttu-id="dd040-124">EmployerUnitOfNotice</span><span class="sxs-lookup"><span data-stu-id="dd040-124">EmployerUnitOfNotice</span></span>
+- <span data-ttu-id="dd040-125">TransitionDate</span><span class="sxs-lookup"><span data-stu-id="dd040-125">TransitionDate</span></span>
+- <span data-ttu-id="dd040-126">WorkerNoticeAmount</span><span class="sxs-lookup"><span data-stu-id="dd040-126">WorkerNoticeAmount</span></span>
+- <span data-ttu-id="dd040-127">WorkerStartDate</span><span class="sxs-lookup"><span data-stu-id="dd040-127">WorkerStartDate</span></span>
+- <span data-ttu-id="dd040-128">WorkerUnitOfNotice</span><span class="sxs-lookup"><span data-stu-id="dd040-128">WorkerUnitOfNotice</span></span>
+- <span data-ttu-id="dd040-129">ProbationEndDate</span><span class="sxs-lookup"><span data-stu-id="dd040-129">ProbationEndDate</span></span>
+- <span data-ttu-id="dd040-130">Befattning</span><span class="sxs-lookup"><span data-stu-id="dd040-130">Position</span></span>
+- <span data-ttu-id="dd040-131">Fackförening</span><span class="sxs-lookup"><span data-stu-id="dd040-131">Union</span></span>
+- <span data-ttu-id="dd040-132">Avdelning</span><span class="sxs-lookup"><span data-stu-id="dd040-132">Department</span></span>
+- <span data-ttu-id="dd040-133">PositionType</span><span class="sxs-lookup"><span data-stu-id="dd040-133">PositionType</span></span>
+- <span data-ttu-id="dd040-134">CompLocation</span><span class="sxs-lookup"><span data-stu-id="dd040-134">CompLocation</span></span>
+- <span data-ttu-id="dd040-135">Namn</span><span class="sxs-lookup"><span data-stu-id="dd040-135">Title</span></span>
+- <span data-ttu-id="dd040-136">Jobb</span><span class="sxs-lookup"><span data-stu-id="dd040-136">Job</span></span>
+- <span data-ttu-id="dd040-137">JobType</span><span class="sxs-lookup"><span data-stu-id="dd040-137">JobType</span></span>
+- <span data-ttu-id="dd040-138">JobFamily</span><span class="sxs-lookup"><span data-stu-id="dd040-138">JobFamily</span></span>
+- <span data-ttu-id="dd040-139">JobFunction</span><span class="sxs-lookup"><span data-stu-id="dd040-139">JobFunction</span></span>
+
+<span data-ttu-id="dd040-140">Följande fält har lagts till i befattningsarbetsflöden:</span><span class="sxs-lookup"><span data-stu-id="dd040-140">The following fields have been added to the position workflow:</span></span>
+
+- <span data-ttu-id="dd040-141">Befattning</span><span class="sxs-lookup"><span data-stu-id="dd040-141">Position</span></span>
+- <span data-ttu-id="dd040-142">Fackförening</span><span class="sxs-lookup"><span data-stu-id="dd040-142">Union</span></span>
+- <span data-ttu-id="dd040-143">Avdelning</span><span class="sxs-lookup"><span data-stu-id="dd040-143">Department</span></span>
+- <span data-ttu-id="dd040-144">PositionType</span><span class="sxs-lookup"><span data-stu-id="dd040-144">PositionType</span></span>
+- <span data-ttu-id="dd040-145">CompLocation</span><span class="sxs-lookup"><span data-stu-id="dd040-145">CompLocation</span></span>
+- <span data-ttu-id="dd040-146">Namn</span><span class="sxs-lookup"><span data-stu-id="dd040-146">Title</span></span>
+- <span data-ttu-id="dd040-147">Jobb</span><span class="sxs-lookup"><span data-stu-id="dd040-147">Job</span></span>
+- <span data-ttu-id="dd040-148">JobType</span><span class="sxs-lookup"><span data-stu-id="dd040-148">JobType</span></span>
+- <span data-ttu-id="dd040-149">JobFamily</span><span class="sxs-lookup"><span data-stu-id="dd040-149">JobFamily</span></span>
+- <span data-ttu-id="dd040-150">JobFunction</span><span class="sxs-lookup"><span data-stu-id="dd040-150">JobFunction</span></span>
+
+<span data-ttu-id="dd040-151">Fält i villkorssatser och platshållare är tillgängliga för alla användare som har tillgång till konfiguration av tidigare nämnda arbetsflöden.</span><span class="sxs-lookup"><span data-stu-id="dd040-151">Fields in conditional statements and placeholders are available to all users who have access to configure the previously mentioned workflows.</span></span>
+
+## <a name="navigation-to-attract-from-personnel-management"></a><span data-ttu-id="dd040-152">Navigera till Attract från personalhantering</span><span class="sxs-lookup"><span data-stu-id="dd040-152">Navigation to Attract from personnel management</span></span>
+
+<span data-ttu-id="dd040-153">I personalhantering, om Attract inte har konfigurerats, hjälper avsnittet **Kandidater att anställa** användare att komma igång med Attract i stället för att visa meddelandet, ”Vi hittade ingenting att visa här”.</span><span class="sxs-lookup"><span data-stu-id="dd040-153">In personnel management, if Attract hasn't been set up, the **Candidates to hire** section directs users to get started with Attract instead of showing the message, "We didn't find anything to show here."</span></span>
+
+## <a name="other-changes"></a><span data-ttu-id="dd040-154">Andra ändringar</span><span class="sxs-lookup"><span data-stu-id="dd040-154">Other changes</span></span>
+
+<span data-ttu-id="dd040-155">Den här versionen innehåller flera ytterligare felkorrigeringar:</span><span class="sxs-lookup"><span data-stu-id="dd040-155">This release includes several additional bug fixes:</span></span>
+
+- <span data-ttu-id="dd040-156">När en entreprenör anställs bör fliken **kompensation** inte vara tillgänglig på sidan förfrågan/åtgärd.</span><span class="sxs-lookup"><span data-stu-id="dd040-156">When a contractor is hired, the **Compensation** tab should not be available on the request/action page.</span></span>
+- <span data-ttu-id="dd040-157">Under processen om begäran om uppsägning kan du inte fortsätta förrän alla obligatoriska fält innehåller data.</span><span class="sxs-lookup"><span data-stu-id="dd040-157">During the request termination process, you can't continue until all required fields contain data.</span></span>
+- <span data-ttu-id="dd040-158">Problem med sorteringsordning och datumvisning i analysen för Personalhantering har hanterats.</span><span class="sxs-lookup"><span data-stu-id="dd040-158">Sort order and date display issues on the Personnel management analytics have been addressed.</span></span>
