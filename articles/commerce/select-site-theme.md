@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1f92b31e870cbb4d3cc04870273693bed1378c5e
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: c54a3e9471fdeb56f27fe7c567c7cd7f0b7fd218
+ms.sourcegitcommit: 2ef23dcd4e42362186b9951e675010d97d55c6bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817716"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4556439"
 ---
 # <a name="select-a-site-theme"></a>Välj ett tema för webbplatsen
 
@@ -32,7 +32,7 @@ I det här avsnittet beskrivs hur du ställer in eller ändrar webbplatstema i M
 
 ## <a name="overview"></a>Översikt
 
-En webbplats layout och stil (t.ex. teckensnitt, storlekar och färger) definieras av det tema som du väljer och tillämpar på webbplatsen. Ett tema skapas och distribueras av en utvecklare på ditt företag. En översikt över teman finns i [Översikt över teman](http://). Mer information om hur du skapar och distribuerar teman finns i [Skapa ett nytt tema](http://).
+En webbplats layout och stil (t.ex. teckensnitt, storlekar och färger) definieras av det tema som du väljer och tillämpar på webbplatsen. Ett tema skapas och distribueras av en utvecklare på ditt företag. En översikt över teman finns i [Översikt över teman](e-commerce-extensibility/theming.md). Mer information om hur du skapar och distribuerar teman finns i [Skapa ett nytt tema](e-commerce-extensibility/create-theme.md).
 
 När du först skapar en webbplats använder den som standard ett tema som heter **Fabrikam**. Det här standardtemat ingår i Commerce-modulbibliotek. När du har distribuerat ytterligare teman för platsen kan du konfigurera platsen så att den använder en av dem i stället.
 
@@ -63,3 +63,8 @@ Gör så här för att välja det tema som ska användas på webbplatsen:
 [Lägg till språk på din webbplats](add-languages-to-site.md)
 
 [Lägga till skriptkod på webbsidor för att stödja telemetri](add-telemetry.md)
+
+[Översikt över teman](e-commerce-extensibility/theming.md)
+
+[Skapa ett nytt tema](e-commerce-extensibility/create-theme.md)
+

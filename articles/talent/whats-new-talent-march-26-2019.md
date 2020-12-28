@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a9cd6fda0e6e0405163184327f954b66eb8c7612
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 17eae6c2aa2a1305b1d6f403c595c022f71da48f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897567"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529100"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (26 mars 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Talent.
 
@@ -91,7 +93,7 @@ Organisationer kan kräva att orsakskoder anges för specifika tjänstledighetst
 I många organisationer kan kompensations- och förmånsansvariga endast ha tillgång till vissa kompensationsposter. Posterna kan vara för chefer eller nationella medarbetare. Med den här ändringen kan personalavdelningen hantera och underhålla kompensationsplaner för olika medarbetargrupper i organisationen. Du ska tilldela säkerhetsroller till fasta och variabla planer som bestämmer åtkomsten till planer och medarbetardata relaterade till planerna, till exempel lön eller bonusposter. Endast roller med åtkomst kan bearbeta kompensation för dessa anställda.
 
 ###  <a name="email-support-for-alerts"></a>E-support för notifieringar
-Med plattformsuppdatering 25 för Finance and Operations kan användare skapa notifieringsregler som automatiskt levererar e-postmeddelanden till kontakter när de utlöses av en händelse. 
+Med plattformsuppdatering 25 för Finance and Operations kan användare skapa notifieringsregler som automatiskt skickar ut e-postmeddelanden till kontakter när de utlöses av en händelse. 
 
 ### <a name="duplicate-employee-checks-user-interface-changes"></a>Dubblettkontroll av medarbetare: användargränssnittsändringar
 Med denna ändring detekteras dubbletter när du anger namnfält och status visar antalet dubbletter som hittades. Du kan välja den angivna länken för att öppna en ny sida för att bedöma om du ska använda de identifierade träffarna. Dublettformuläret öppnas inte automatiskt för att undvika att inmatningen avbryts.

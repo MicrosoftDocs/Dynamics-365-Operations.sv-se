@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d7d25fd62efca52dd2d60ed3435104c3507a1d19
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: dfa8b2bdc03e3698feda26932db757421097140d
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817619"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517074"
 ---
 # <a name="apply-inventory-settings"></a>Använd lagerinställningar
 
@@ -46,7 +46,7 @@ I Commerce webbplatsskaparen kan lagertrösklar och intervall definieras för en
 
 I Commerce, lagerinställningar definieras på **Platsinställningar \> Tillägg \> Lagerhantering** i webbplatsskaparen. Det finns fyra lagerinställningar, varav en är föråldrad (inaktuell):
 
-- **Aktivera lagerkontroll för appen** – den här inställningen aktiverar en produktinventeringskontroll. När du köper kartongen, kundvagnen och hämtningen i butiksmoduler kontrolleras produktlagret och då kan en produkt bara läggas till i kundvagnen om det finns tillgängligt lager.
+- **Aktivera lagerkontroll i appen** – Den här inställningen aktiverar en produklagerkontroll. När du köper kartongen, kundvagnen och hämtningen i butiksmoduler kontrolleras produktlagret och då kan en produkt bara läggas till i kundvagnen om det finns tillgängligt lager.
 - **Lagernivå baserad på** – den här inställningen definierar hur lagernivåer beräknas. De tillgängliga värdena är **Total tillgänglig**, **fysiskt tillgänglig** och **tröskel för utanför lagret**. I Commerce, lagertrösklar och intervall definieras för en varje produkt och kategori. Lager-API:erna returnerar produktinformation för båda egenskap **Total tillgänglig** och egenskap **Fysisk tillgänglig**. Återförsäljaren bestämmer om det **totala tillgängliga** eller **fysiskt tillgängliga** värdet ska användas för att fastställa lagerinventeringen och motsvarande intervall för status som lager och inte artiklar.
 
     Värdet **tröskel för utanför lagret** för inställning **Lagernivå baserad på** är ett gammalt (äldre) föråldrat värde. När lagerinventeringen väljs bestäms resultatet av det **totala tillgängliga** värdet, men tröskeln definieras av **inställningen för frånvaro av lagertröskel** som beskrivs senare. Den här tröskelinställningen gäller för alla produkter på en näthandelsplats. Om lagret är lägre än tröskelnumret anses en produkt vara utanför lagret. I annat fall betraktas det som i lager. Möjligheterna för **tröskelvärdet för frånvaro** är begränsade och vi rekommenderar inte att du använder det i version 10.0.12 och senare.

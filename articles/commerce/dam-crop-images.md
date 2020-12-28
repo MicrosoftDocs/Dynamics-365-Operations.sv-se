@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9496a1f96e2d0e18eb477a9743927b2076c5548a
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: a8f52c22a57d465ce1c2bedac6e8f13db3e856c0
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269577"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594488"
 ---
 # <a name="crop-images"></a>Beskär bilder
 
@@ -64,3 +64,5 @@ När den anpassade beskärningen har slutförts kommer bildändringarna att bör
 [Överför filer](dam-upload-files.md)
 
 [Anpassa bildens fokuspunkter](dam-custom-focal-point.md)
+
+[Ladda upp och betjäna statiska filer](upload-serve-static-files.md)

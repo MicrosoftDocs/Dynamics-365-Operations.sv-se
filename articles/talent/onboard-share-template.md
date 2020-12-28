@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 474c7cc82aaccf6b3bcfb3bbe879725497961c43
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897153"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462638"
 ---
 # <a name="share-content-with-other-contributors"></a>Dela innehåll med andra deltagare
 
@@ -31,7 +31,7 @@ Microsoft Dynamics 365 Talent: Onboard låter dig dela integrationsguider och ma
 
 ## <a name="share-an-onboarding-guide-with-other-contributors"></a>Dela en integrationsguiden med andra deltagare
 
-1. Välj **guider**på menyn till vänster och välj sedan den guide som du vill dela.
+1. Välj **guider** på menyn till vänster och välj sedan den guide som du vill dela.
 2. Välj knappen **fler** (tre vertikala punkter) i det övre högra hörnet på sidan och välj sedan **dela**.
 
     ![[Dela en integrationsguiden med andra deltagare](./media/onboard-share-guide.png)](./media/onboard-share-guide.png)

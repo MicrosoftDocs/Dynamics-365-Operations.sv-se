@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 6dce39bc529bf6dd6079ed900af12510c0773f9a
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: cd7f288e5c1015f4266db527adfcd62a5dbbc95f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899092"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528111"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-16-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (16 juli 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent.
 
@@ -90,7 +92,7 @@ Denna veckas ändringar tillåter nu att du visar och redigerar mål och granskn
 
 ### <a name="goal-form-cannot-be-closed-after-a-user-edits-any-goal-field"></a>Det går inte att stänga målformuläret efter att en användare har redigerat ett målfält
 
-I den här versionen åtgärdas ett problem där målformuläret inte stängs när **stängning**väljs.
+I den här versionen åtgärdas ett problem där målformuläret inte stängs när **stängning** väljs.
 
 ### <a name="creating-new-goals-and-saving-displays-error"></a>Skapa nya mål och spara visar fel
 

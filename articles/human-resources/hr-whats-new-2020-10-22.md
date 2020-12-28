@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5c66d8695ee0ff41e81c699a5d5a37075470059
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.openlocfilehash: 513fc3b35f0b6a7f5d9703d2b5eb4109289a189a
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107546"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529992"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources 22 oktober 2020
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Det här ämnet beskriver nya, ändrade, kommer snart funktioner i Dynamics 365 Human Resources. Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
@@ -60,10 +62,10 @@ Den här versionen innehåller följande felkorrigeringar.
 | 505347 | Utbildningsansvariga kan skicka en begäran om att lämna en medarbetare när den strömlinjeformade funktionen för arbetare aktiverades. | Andra roller än personal assistenten och personalchef får inte skicka ansökningar om ledighet för medarbetare. |
 | 513490 | Loggning av fördelarhantering: lägg till loggning för planer utan täckningsalternativ. | Vi aktiverade loggningsresultat för **Planera utan täckningsalternativ**. Nu visas de i tabellen **Processresultat** och de sorteras korrekt så att de visas överst. |
 | 517021 | Det går inte att välja flera planer med samma **plantyp** kod om **plantypen** kan anmäla sig till en per typ. | Vi har ändrat begränsningarna för urvalsplaner där endast en registrering tillåts. Begränsningarna är nu på **plantypskoden** nivå i stället för **plantyp**. Den här ändringen gör det möjligt att planera som HSA och FSA, som är både samma typ, men du kan ge dem en separat **plantypskod**. På så sätt kan du välja båda för samma registreringsperiod. |
-| 444791 | Kan inte se ersättning i självbetjäning för medarbetare när **begränsad åtkomst** är aktiverat i kompensationsplanen. | I kort självbetjäning för medarbetare **Kompensation** , det aktuella ersättningsbeloppet och ökningsprocenten som visas "0" om den anställde var inskriven i en plan med **Begränsa åtkomsten** aktiverat och tilldelats specifika roller. Vi har löst problemet så att medarbetaren och chefen alltid kan se kompensationsdetaljer för sig själva och deras direkt rapporter. |
+| 444791 | Kan inte se ersättning i självbetjäning för medarbetare när **begränsad åtkomst** är aktiverat i kompensationsplanen. | I kort självbetjäning för medarbetare **Kompensation**, det aktuella ersättningsbeloppet och ökningsprocenten som visas "0" om den anställde var inskriven i en plan med **Begränsa åtkomsten** aktiverat och tilldelats specifika roller. Vi har löst problemet så att medarbetaren och chefen alltid kan se kompensationsdetaljer för sig själva och deras direkt rapporter. |
 | 457542 | Uppdatera kursinformation när kursen stängs uppdaterar inte också samma information för medarbetaren som tog kursen. | Medarbetarens information uppdateras nu på rätt sätt när du ändrar kursinformation när en kurs stängs och sedan öppnas igen. |
 | 515342 | Det går inte att infoga data via **CDSLeaveRequestDetailEntity**. Företaget hittas inte eller finns inte. | Du kan nu använda **CDSLeaveRequestDetailEntity** till infoga data. |
-| 514743 | Fel i formuläret **e-postparametrar** vid användning av Microsoft Exchange. | Meddelandet "Det gick inte att läsa in filer eller sammansättning..." visas på sidan **E-postparametrar** när e-postleverantören ställts in på **Växel**. Denna korrigering tillåter också **E-postparametrar** läses in och sparas som förväntat. |
+| 514743 | Fel i formuläret **E-postparameter** vid användning av Microsoft Exchange. | Meddelandet "Det gick inte att läsa in filer eller sammansättning..." visas på sidan **E-postparametrar** när e-postleverantören ställts in på **Växel**. Denna korrigering tillåter också **E-postparametrar** läses in och sparas som förväntat. |
 
 
 ## <a name="in-preview"></a>I förhandsgranskning

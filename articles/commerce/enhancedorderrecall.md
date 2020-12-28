@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 41944fb7819b5527f6bc023a60acd9450d9e43c2
-ms.sourcegitcommit: 25909c6ad3616e4f75a2fe006057dda18d7cc856
+ms.openlocfilehash: 42b11ff16757d633b868dfdf248341193a44378f
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974848"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665308"
 ---
 # <a name="recall-order-operation-in-pos"></a>Åtgärden återkalla order i kassan
 
 [!include [banner](includes/banner.md)]
 
-Åtgärden återkallningsorder i Commerce kassa ger uppdaterade funktioner för ordersökning och filtrering och orderspecifik information. Den här funktionen är tillgänglig i Commerce versioner 10.0.15 och senare.
+Åtgärden **Återkalla order** i Commerce-kassan (POS) ger uppdaterade funktioner för ordersökning och filtrering, samt orderspecifik information. Den här funktionen är tillgänglig i Commerce versioner 10.0.15 och senare.
 
 För att aktivera denna funktion, slå på funktionen **Förbättrad åtgärden återkalla order i kassan** i arbetsytan **funktionshantering** i Commerce-administration. När du har aktiverat funktionen kan du överväga att uppdatera [bildskärmslayouter](pos-screen-layouts.md) i kassan för att dra nytta av vissa av de ändrade funktionerna.
 
@@ -37,13 +37,13 @@ Genom att konfigurera knappen **Återkalla order** kan organisationer distribuer
 Visningsalternativen är följande.
 - **Inget** – det här alternativet distribuerar åtgärden utan specifik visning. När en användare öppnar åtgärden med den här konfigurationen uppmanas de att söka efter order eller välja från ett fördefinierat orderfilter.
 - **Order som ska uppfyllas** – när en användare startar operationen körs en fråga automatiskt för att söka i och visa en lista med order som ska uppfyllas av butiken. Dessa order konfigureras för butikshämtning eller butiksleverans och raderna på dessa order har ännu inte plockats eller packats.
-- **Order som ska plockas** – när en användare startar operationen körs en fråga automatiskt för att söka i och visa en lista med order som är konfigurerade för hämtning i butik eller i användarens nuvarande butik.
+- **Order som ska hämtas** – när en användare startar operationen körs en fråga automatiskt för att söka i och visa en lista med order som är konfigurerade för hämtning i butik eller i användarens nuvarande butik.
 - **Order som ska levereras** – när en användare startar operationen körs en fråga automatiskt för att söka i och visa en lista med order som är konfigurerade för leverans från användarens nuvarande butik.
 
 När du startar åtgärden **Återkalla order** från kassan, om bildskärmen har konfigurerats till **ingen** kan en användare söka efter och hämta order på något av följande sätt.
 - Skanna orderstreckkoder. Det här fältet söker efter ordernummer, kanalreferens och kvitto-ID för matchningar.
 - Välj ikonen **Sök order** eller **Sök och filtrera** på AppBar om du vill använda filtreringsfunktionen för att söka efter order som uppfyller filtervillkoren.
-- Välj från ett fördefinierat filter på listrutan **Visa order** (order som ska uppfyllas, order som ska plockas eller order som ska levereras).
+- Välj från ett fördefinierat filter på listrutan **Visa order** (order som ska uppfyllas, order som ska hämtas eller order som ska levereras).
 
 ![RecallOrderMainMenu](media/recallordermain.png)
 

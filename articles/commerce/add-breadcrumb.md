@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 05e8614f53db2593ade92fdb42dc0dfe869e9407
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: ec9f5c72b03d9fd76055369e24491db5c7633cdf
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055414"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517170"
 ---
 # <a name="breadcrumb-module"></a>Modulen för navigeringssökväg
 
@@ -66,16 +66,16 @@ Modulen för navigeringssökväg är beroende av inställningen **navigeringssö
 
 Om du vill lägga till en modul för navigeringssökväg till en PDP och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Gå till **webbplatsinställningar /> tillägg** och för den **navigeringssökväg displaytyp på PDP** -inställningen väljer du **Visa kategorihierarki**.
+1. Gå till **Webbplatsinställningar \> Tillägg**. För inställningen **Displaytyp för navigeringssökväg på PDP** väljer du **Visa kategorihierarki**.
 1. Gå till **mallar** och välj PDP-mallen.
-1. I platsen **Behållare** som innehåller modul för inköpsruta markerar du ellipsknappen ( **...** ) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul** , välj modulen **navigeringssökväg** och klicka sedan på **OK**.
-1. Välj **Spara** , välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
+1. I platsen **Behållare** som innehåller modul för inköpsruta markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **navigeringssökväg** och klicka sedan på **OK**.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Gå till **sidor** och öppna en PDP som använder PDP-mallen. Om det ännu inte finns något PDP skapar du ett.
-1. I platsen **Behållare** som innehåller modul för inköpsruta markerar du ellipsknappen ( **...** ) och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul** , välj modulen **navigeringssökväg** och klicka sedan på **OK**.
-1. I egenskapsrutan för platsen **Navigeringssökväg** , under **Rot** , välj **Länktext**.
-1. I dialogrutan **Länktext** ange **Start** och sedan under **Länkmål** , välj **Lägg till en länk**.
+1. I platsen **Behållare** som innehåller modul för inköpsruta markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **navigeringssökväg** och klicka sedan på **OK**.
+1. I egenskapsrutan för platsen **Navigeringssökväg**, under **Rot**, välj **Länktext**.
+1. I dialogrutan **Länktext** ange **Start** och sedan under **Länkmål**, välj **Lägg till en länk**.
 1. I dialogrutan **Lägg till en länk** väljer du länken för roten för navigeringssökväg och välj sedan **OK**.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan.
 1. Välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.

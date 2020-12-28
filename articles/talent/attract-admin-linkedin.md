@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
 ms.openlocfilehash: 4c518fb7036d44aa52c8db859ee3616fc4e58a06
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833194"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462613"
 ---
 # <a name="set-up-linkedin-integration-with-attract"></a>Konfigurera LinkedIn-integration med Attract
 
@@ -84,7 +84,7 @@ Om du vill tillåta rekryterare att hitta jobb via LinkedIn Recruiter måste du 
 
 7. Du måste slutföra följande steg, du måste ha administratörsbehörigheter i ditt LinkedIn Recruiter-kontrakt.
 
-    1. Logga in på LinkedIn genom att använda ditt administratörskonto och välj **LinkedIn Recruiter**sedan i det övre högra hörnet. 
+    1. Logga in på LinkedIn genom att använda ditt administratörskonto och välj **LinkedIn Recruiter** sedan i det övre högra hörnet. 
     2. På sidan **mer** längst upp på skärmen, väljer du **administrationsinställningar**, och klickar sedan på fliken **ATS**.
     3. Om du vill aktivera exporten för ett enda kontrakt ska du aktivera **åtkomst på kontraktsnivå för varje klient i det här kontraktet**. Aktivera det för hela företaget genom att aktivera åtkomst på **företagsnivå för varje kontrakt i företaget**.
 

@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2039c09372381ef2c078e1f4d4ed8a25c22de5c7
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814730"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462636"
 ---
 # <a name="view-the-status-of-onboarding-employees-and-your-tasks"></a>Visa status för integration av medarbetare och dina uppgifter
 
@@ -33,12 +33,12 @@ Microsoft Dynamics 365 Talent: Onboard låter dig visa de framsteg som dina nyan
 
 1. Välj **guider** i menyn till vänster. Du ser en översikt över förloppet för alla integrationsguider som du har skickat.
 
-    ![[Visa status för integrationsguider](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
+    ![[Visa status för registreringsguider](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
 
 2. Om du vill detaljgranska nedåt väljer du den guide som du vill visa.
 3. Välj fliken **aktiviteter** för att se vilka aktiviteter din nyanställda har slutfört.
 
-    ![[Visa aktiviteter som den nyanställda har slutfört](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
+    ![[Visa aktiviteter som den nya anställningen har slutfört](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
 
 ## <a name="view-onboarding-tasks-that-are-assigned-to-you"></a>Visa integreringsuppgifter som har tilldelats dig
 

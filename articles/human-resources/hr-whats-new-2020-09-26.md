@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d27104a08cdc899f12942d80e693f3495d90a6ec
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.openlocfilehash: 4103c0630b72b9b92a116f7fe702a777dd295e25
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040086"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527420"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources 26 september 2020
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Det här ämnet beskriver nya, ändrade, kommer snart funktioner i Dynamics 365 Human Resources. Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
@@ -39,7 +41,7 @@ I den här versionen ingår följande nya funktioner och felkorrigeringar. Ändr
 
 Följande funktion är i allmänhet tillgänglig i den här versionen:
 
-- **Nu finns 10.0.13 för plattformsuppdatering** : Mer information om uppdateringen finns i [plattformsuppdateringar för version 10.0.13 av Finance and Operations-appar (oktober 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13).
+- **Nu finns 10.0.13 för plattformsuppdatering**: Mer information om uppdateringen finns i [plattformsuppdateringar för version 10.0.13 av Finance and Operations-appar (oktober 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13).
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 
@@ -51,12 +53,12 @@ Den här versionen innehåller följande felkorrigeringar.
 | Utfärda nummer | Utleverans | beskrivning |
 | --- | --- | --- |
 | 469495 | Uppdatera standardrutnät och dialogruta för ekonomiska dimensioner | Standardrutnätet för ekonomiska dimensioner och dialogruta ärr uppdaterade i Human Resources. |
-| 474887 | Arbetsuppgiften för ledighetsansökan öppnar fel länk i ett manuellt beslut | När en arbetsflödeskonfiguration innehåller ett manuellt beslut, öppnar jag fellänken genom att navigera till ledighetsansökan från **arbetsuppgifter som har tilldelats till mig** , med antingen ett tomt formulär eller en ledighetsansökan som har skapats av aktuell användare i stället för den som har tilldelats dem för det manuella beslutet. |
+| 474887 | Arbetsuppgiften för ledighetsansökan öppnar fel länk i ett manuellt beslut | När en arbetsflödeskonfiguration innehåller ett manuellt beslut, öppnar jag fellänken genom att navigera till ledighetsansökan från **arbetsuppgifter som har tilldelats till mig**, med antingen ett tomt formulär eller en ledighetsansökan som har skapats av aktuell användare i stället för den som har tilldelats dem för det manuella beslutet. |
 | 474962 | Entiteten parametrar för tjänstledighet och frånvaro har fält med oklara etiketter | Etiketterna för entiteten parametrar för tjänstledighet och frånvaro uppdateras så att de blir tydligare. |
 | 481401 | Periodiseringsbehandling hänger sig vid utgångsdatum för periodisering efter periodisering startdatum och i slutet av månaden | Periodiseringsbehandling uppdateras till att inte ha en försening när datumet för periodiseringen är efter periodiseringens startdatum och i slutet av månaden. |
 | 447167 | Utgångna postlister inkluderar inaktiva arbetare | Fliken **utgående poster** i **personalhantering** inkluderar inaktiva arbetare. Nu ingår bara aktiva arbetare. |
 | 486840 | Fel tjänstledighetsansökan öppnas från **arbetsuppgifter som tilldelats mig** | Om du väljer en tjänstledighetsansökan från **arbetsuppgifter som har tilldelats till mig** öppnas den senaste tjänstledighetsansökan som tilldelats den aktuella användaren. |
-| 506868 | Common Data Service **Rubrik** -fältet har inte angetts för entiteten **Jobbefattning** | Fältet **Rubrik** i entiteterna **Jobb** och **Jobbefattning** visas som ej specificerade. Fältet **Rubrik** visas nu. |
+| 506868 | Common Data Service **Rubrik**-fältet har inte angetts för entiteten **Jobbefattning** | Fältet **Rubrik** i entiteterna **Jobb** och **Jobbefattning** visas som ej specificerade. Fältet **Rubrik** visas nu. |
 | 430359 | Kan inte komma åt checklisteuppgifter för avregistrering med chef och medarbetarroller tilldelade | Arbetare med ett framtida uppsägningsdatum kunde inte komma åt sina rapportuppgifter om de bara hade rollen medarbetare eller chef. Nu kan användare med endast en medarbetare eller chefsroll komma åt avregistreringsuppgifter med ett framtida uppsägningsdatum. |
 | 458102 | Ny medarbetare visas inte på entiteten **Information om arbetarlön** när den skapas | Nya medarbetare tas med i entiteten information om arbetarlön utan att du behöver öppna löneinformationen för medarbetaren innan du exporterar enheten. |
 

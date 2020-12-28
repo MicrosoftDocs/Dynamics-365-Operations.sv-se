@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-11-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 48de07178acfaccf11e0a02b2848bf24e6ccc117
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: c4068cf81782d2f9559179b91da31e049c006059
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896783"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527130"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-november-5-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (5 november 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Talent.
 
@@ -69,7 +71,7 @@ I den här versionen åtgärdas ett problem när kompensationsändringar begärs
 
 Med den här ändringen kommer orsakskoder med fler än 30 tecken att uppdateras i Common Data Service. Ändringar som görs i Common Data Service kommer också att återspeglas i Talent.
 
-### <a name="address-integration-from-talent-to-finance-and-operations-351961"></a>Adressintegrationer från Talent till Finance and Operations (351961)
+### <a name="address-integration-from-talent-to-finance-and-operations-351961"></a>Adressintegrering från Talent till Finance and Operations (351961)
 
 Genom den här versionen åtgärdas problemet att adresser som uppdateras i Talent inte uppdateras i Finance and Operations. Ändringar i adressblock kommer nu att uppdateras.
 

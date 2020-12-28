@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: 35cceb97442b05abc243cf7341e0ce7a0d09c613
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: b73b420c2eb75077814fbfeb6cd17404c7efc11e
+ms.sourcegitcommit: 436731d8b3889bebfe6f17922b0a31b1994f6796
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915211"
+ms.lasthandoff: 10/26/2020
+ms.locfileid: "4462651"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Strömlinjeformad medarbetarinmatning och navigering
 
@@ -68,9 +68,9 @@ Banderollen för väntande arbetare visar följande fält:
 
 - Arbete
 - Person
-- Lämna
+- Tjänstledighet
 - Kompensation
-- Fördelar
+- Förmåner
 - Regelefterlevnad
 
 Dessutom ger en ny flik **länk** på huvudarbetarsidan användare en central plats för åtkomst till all relaterad information för en arbetare.
@@ -81,7 +81,7 @@ På grund av dessa ändringar kan information visas på en annan plats än du br
 
 ## <a name="work-history"></a>Arbetshistorik
 
-Fliken **arbetshistorik** visar arbetshistoriken för alla juridiska personer och den är tillgänglig för stängning, aktiv och väntande medarbetare och leverantörer. Du kan nu visa all arbetshistorik samtidigt för de juridiska personer som du har tillgång till. Dessutom kan du redigera information för varje post i arbetshistorik utan att ändra datakontexten. Du kan uppdatera all information direkt på sidan. 
+Fliken **Arbetshistorik** visar arbetshistoriken för alla juridiska personer och den är tillgänglig för stängning, aktiv och väntande medarbetare och leverantörer. Du kan nu visa all arbetshistorik samtidigt för de juridiska personer som du har tillgång till. Dessutom kan du redigera information för varje post i arbetshistorik utan att ändra datakontexten. Du kan uppdatera all information direkt på sidan. 
 
 [![Arbetshistorik](./media/Worker-work-history.png)](./media/Worker-work-history.png)
 

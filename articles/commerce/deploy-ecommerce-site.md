@@ -1,6 +1,6 @@
 ---
-title: Distribuera en ny klientorganisation för e-handel
-description: I det här avsnittet beskrivs hur du distribuerar en ny näthandelsinnehavare med hjälp av Microsoft Dynamics Lifecycle Services (LCS).
+title: Distribuera en ny klientorganisation för näthandel
+description: I det här avsnittet beskrivs hur du distribuerar en ny Dynamics 365 Commerce-näthandelsplats med hjälp av Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
 ms.date: 07/02/2020
@@ -17,40 +17,40 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 00f35b516dbf6ab4d4d9171c84a16b89f6afe832
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 157dc8225e5bbf9338a1b5a79a2880e8a8c4bf10
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533285"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517292"
 ---
-# <a name="deploy-a-new-e-commerce-tenant"></a>Distribuera en ny klientorganisation för e-handel
+# <a name="deploy-a-new-e-commerce-tenant"></a>Distribuera en ny klientorganisation för näthandel
 
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du distribuerar en ny näthandelsplats med hjälp av Microsoft Dynamics Lifecycle Services (LCS).
+I det här avsnittet beskrivs hur du distribuerar en ny Dynamics 365 Commerce-näthandelsplats med hjälp av Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="overview"></a>Översikt
 
-Microsoft Dynamics Lifecycle Services (LCS) är en molnbaserad samarbetsyta som partners och kunder kan använda för att hantera sina projekt och miljöer, visa den senaste informationen om Microsoft Dynamics produkter och funktioner samt skapa, spåra och bläddra i supporthändelser. Funktionerna för hantering av e-handel integreras i LCS.
+Microsoft Dynamics Lifecycle Services (LCS) är en molnbaserad samarbetsyta som partners och kunder kan använda för att hantera sina projekt och miljöer, visa den senaste informationen om Microsoft Dynamics produkter och funktioner samt skapa, spåra och bläddra i supporthändelser. Administreringsfunktionerna för näthandel integreras i LCS.
 
 Mer information om LCS finns i [användarhandboken för Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
     
-## <a name="get-started"></a>Kom igång
+## <a name="get-started"></a>Kom i gång
 
-Innan du kan initiera e-handel måste du initiera ett projekt, en miljö och en Retail Cloud Scale Unit (RCSU). Om du vill utföra initieringen i LCS måste du ha behörighet till rollen som projektägare eller som en miljöhanterare. Topologierna för tillverkning och begränsat läge stöds.
+Innan du kan initiera näthandel måste du initiera ett projekt, en miljö och en Retail Cloud Scale Unit (RCSU). Om du vill utföra initieringen i LCS måste du ha behörighet till rollen som projektägare eller som en miljöhanterare. Topologierna för tillverkning och begränsat läge stöds.
 
 Mer information om miljöer finns i [miljöplanering](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning). Mer information om RCSU finns i [Initiera Retail Cloud Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels).
 
-## <a name="initialize-e-commerce"></a>Initiera e-handelsplattform
+## <a name="initialize-e-commerce"></a>Initiera näthandel
 
-Använd den här proceduren för att initiera funktionen för e-handel i en befintlig miljö.
+Använd den här proceduren för att initiera funktionen för näthandel i en befintlig miljö.
 
 Innan du börjar måste du se till att du har följande obligatoriska information:
 
 - RCSU som ska användas.
-- Den Microsoft Azure Active Directory-säkerhetsgrupp som ska användas för e-handelssystemadministratörer.
+- Den Microsoft Azure Active Directory-säkerhetsgrupp som ska användas för systemadministratörer för näthandel.
 - Den Microsoft Azure Active Directory-säkerhetsgrupp som ska användas för moderatorer för omdömen och recensioner.
 - Domänerna som ska associeras med miljön.
 
@@ -69,39 +69,39 @@ Dessutom kan du samla in följande valfria information:
 > [!NOTE]
 > Denna information kan läggas till senare, genom en tjänstbegäran.
 
-När du har samlat in den information som krävs följer du stegen nedan för att initiera e-handel.
+När du har samlat in den information som krävs följer du stegen nedan för att initiera näthandel.
 
 1. Logga in på [LCS](https://lcs.dynamics.com).
-1. Öppna det projekt som innehåller den miljö där du vill initiera e-handel.
+1. Öppna det projekt som innehåller den miljö där du vill initiera näthandel.
 1. Välj miljön avsnittet **miljöer**.
 1. Under **miljöfunktioner**, välj länken **Butik – hantera**.
-1. På fliken **e-handel** välj **inställningar**. En dialogruta visas där du måste ange den information som krävs för etableringen.
+1. På fliken **näthandel** välj **inställningar**. En dialogruta visas där du måste ange den information som krävs för etableringen.
 1. Fyll i den information som krävs och gå sedan till nästa sida.
-1. Fyll i önskad information på nästa sida och skicka sedan in formuläret. Du kommer tillbaka till fliken **e-handel** där du bör se att initieringen har startats.
-1. Om du vill visa initieringsstatusen **uppdatera** du eller återgår till fliken **e-handel** senare.
+1. Fyll i önskad information på nästa sida och skicka sedan in formuläret. Du kommer tillbaka till fliken **näthandel** där du bör se att initieringen har startats.
+1. Om du vill visa initieringsstatusen **uppdatera** du eller återgår till fliken **näthandel** senare.
     
-När e-handel initieras från LCS, etablerar systemet flera komponenter som krävs för e-handel och kopplar dem till miljön. När etableringen har slutförts, på fliken **e-handel** på sidan **Butikshantering** uppdateras för att avspegla etableringen. På sidan visas de senaste anpassningsdistributionerna och status för alla andra pågående distributioner. Den innehåller också länkar till webbplatsen för e-handel och webbplatsskaparen för e-handel där webbplatser har redigerats.
+När näthandel initieras från LCS etablerar systemet flera komponenter som krävs för näthandel och kopplar dem till miljön. När etableringen har slutförts, på fliken **näthandel** på sidan **Butikshantering** uppdateras för att avspegla etableringen. På sidan visas de senaste anpassningsdistributionerna och status för alla andra pågående distributioner. Den innehåller också länkar till webbplatsen för näthandel och Commerce-webbplatsskaparen där webbplatser har skapats.
 
-## <a name="access-site-builder"></a>Få åtkomst till webbplatsskaparen
+## <a name="access-commerce-site-builder"></a>Få åtkomst till Commerce-webbplatsskaparen
 
-Du öppnar webbplatsskaparen genom att gå till fliken **e-handel** på sidan **butikshantering** i LCS och väljer länken **Hanteringsverktyg för näthandelsplats**. Landningssidan för webbplatsskaparen visar en vy på klientorganisationsnivå. Från den här sidan kan du:
+För att få åtkomst till Commerce-webbplatsskaparen går du till fliken **näthandel** på sidan **Butikshantering** i LCS och väljer länken **Hanteringsverktyg för näthandelsplats**. Landningssidan för webbplatsskaparen visar en vy på klientorganisationsnivå. Från den här sidan kan du:
 
 - Ändra inställningarna för klientorganisationsnivå.
 - Navigera till en webbplats som du har skapat och ha behörighet att visa den. 
 - Åtkomst till granskningsfunktioner, t.ex. av redigering och rapportering.
-- Skapa en ny anläggning. Mer information om hur du skapar en ny webbplats finns i [Skapa en e-handelsplats](create-ecommerce-site.md). 
+- Skapa en ny anläggning. Mer information om hur du skapar en ny webbplats finns i [Skapa en näthandelsplats](create-ecommerce-site.md). 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Konfigurera ditt domännamn](configure-your-domain-name.md)
 
-[Skapa en e-handelsplats](create-ecommerce-site.md)
+[Skapa en näthandelsplats](create-ecommerce-site.md)
 
-[Associera en online-webbplats med en kanal](associate-site-online-store.md)
+[Associera en Dynamics 365 Commerce-webbplats med en onlinekanal](associate-site-online-store.md)
 
 [Hantera robots.txt-filer](manage-robots-txt-files.md)
 
-[Överföring av URL-omdirigeringar i bulk](upload-bulk-redirects.md)
+[Överför URL-omdirigeringar i bulk](upload-bulk-redirects.md)
 
 [Ställa in en B2C-innehavare i Commerce](set-up-B2C-tenant.md)
 

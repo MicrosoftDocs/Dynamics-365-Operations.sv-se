@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 24ef0ad8528d1d094f59736b7a36fd77f57fb227
-ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
+ms.openlocfilehash: 7dc9f85bf90e6ddf9badf656eb136e28a71b036f
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "3081349"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594123"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Verksamhet för online- och offlinekassor (POS)
 
@@ -138,8 +138,8 @@ Följande kolumner anger var operationerna kan startas:
 | 207 | Betala förmån | Acceptera ett förmånskort för betalning och lös in poäng mot produkter som uppfyller kraven. | Ja | Ja | Nr | Nr | Nr |
 | 634 | Betalningshistorik | Visa kundens betalningshistorik för den aktuella kundordern. | Ja | Ja | Nr | Nr | Nr |
 | 803 | Plockning och mottagning | Öppna sidan **plockning och mottagning** där du kan välja order, plocka eller ta emot i lagret. | Ja | Ja | Ja | Nr | Nr |
-| 632 | Avhämta alla produkter | Ange uppfyllelsemetoden till **butiksupphämtning** för alla rader. | Ja | Ja | Nr | Ja\* | Nr |
-| 631 | Avhämta valda produkter | Ange uppfyllelsemetoden till **butiksupphämtning** för valda rader. | Ja | Ja | Nr | Ja\* | Nr |
+| 632 | upphämta alla produkter | Ange uppfyllelsemetoden till **butiksupphämtning** för alla rader. | Ja | Ja | Nr | Ja\* | Nr |
+| 631 | upphämta valda produkter | Ange uppfyllelsemetoden till **butiksupphämtning** för valda rader. | Ja | Ja | Nr | Ja\* | Nr |
 | 400 | Popup-meny | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Nr |
 | 101 | Priskontroll | Den här operationen låter användaren leta upp priset för en viss produkt. | Ja | Ja | Ja | Ja | Nr |
 | 104 | Prisåsidosättning | Åsidosätter priset på en produkt, om produkten har ställts in på att tillåta prisåsidosättning. | Ja | Ja | Nr | Ja | Nr |
@@ -196,7 +196,9 @@ Följande kolumner anger var operationerna kan startas:
 | 102 | Annullera produkt | Annullera den markerade radartikeln från transaktionen. | Ja | Ja | Nr | Ja | Nr |
 | 500 | Annullera transaktion | Annullera den aktuella transaktionen. | Ja | Ja | Nr | Ja | Nr |
 | 916 | Windows Workflow Foundation | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Nr |
-| 924 | X-rapport för bankkort | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Ja |
+| 924 | X-rapport för bankkort | Den här operationen stöds inte. | Inte aktuellt | Inte aktuellt | Inte aktuellt | Inte aktuellt | Ja |
+| 311 | Ta bort systemrabatter från transaktioner | Ta bort alla tillämpade rabatter i systemet, inklusive kupongbaserade rabatter, från transaktionen. Detta innebär inte att manuella rabatter tas bort. | Ja | Ja | Ja | Ja | Nr |
+| 312 | Återanvända systemrabatter | Återanvänd systemrabatter på transaktionen om de tagits bort med hjälp av åtgärden **Ta bort systemrabatter från transaktion**. | Ja | Ja | Ja | Ja | Nr |
 
 \*Operationen är endast tillgänglig i offlineläge när en kundorder eller försäljningsoffert skapas, och om offlineskapade av kundorder och försäljningsofferter som har konfigurerats i kassafunktionsprofilen. Operationen kan inte utföras när order skapas med Realtidstjänst eller när en order har återkallats eller redigeras.
 

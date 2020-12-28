@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6b52b696d323df6bafead2418ae322d1a9cdf64a
-ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
+ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "3706238"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527847"
 ---
 # <a name="copy-an-instance"></a>Kopiera en instans
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Du kan använda Microsoft Dynamics Lifecycle Services (LCS) för att kopiera en Microsoft Dynamics 365 Human Resources-databas till en miljö i begränsat läge. Om du har en annan miljö med begränsat läge kan du även kopiera databasen från den miljön till en miljö med begränsat läge.
 
@@ -86,7 +88,7 @@ Följande dataelement kopieras inte när du kopierar en personalinstans:
 
 - E-postadresser i **LogisticsElectronicAddress**-registret
 
-- Historiken för batchjobb i tabellerna **BatchJobHistory**, **BatchHistory**och **BatchConstraintHistory**
+- Historiken för batchjobb i tabellerna **BatchJobHistory**, **BatchHistory** och **BatchConstraintHistory**
 
 - SMTP-lösenordet (Simple Mail Transfer Protocol) i **SysEmailSMTPPassword**-registret
 

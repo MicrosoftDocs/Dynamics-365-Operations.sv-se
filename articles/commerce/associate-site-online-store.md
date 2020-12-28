@@ -1,5 +1,5 @@
 ---
-title: Associera en näthandelsplats med en onlinekanal
+title: Associera en Dynamics 365 Commerce-webbplats med en onlinekanal
 description: I det här avsnittet beskrivs hur du binder Microsoft Dynamics 365 Commerce-webbplats till en eller flera onlinebutiker.
 author: bicyclingfool
 manager: AnnBe
@@ -18,23 +18,22 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b7c393ec2f716c7057a77d0f3c3c1a9f79ee8c68
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b6ae02d34499275fa303358f7dae4d3835d438e1
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975378"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517340"
 ---
-# <a name="associate-an-e-commerce-site-with-an-online-channel"></a>Associera en näthandelsplats med en onlinekanal
+# <a name="associate-a-dynamics-365-commerce-site-with-an-online-channel"></a>Associera en Dynamics 365 Commerce-webbplats med en onlinekanal
 
 [!include [banner](includes/banner.md)]
 
-
 I det här avsnittet beskrivs hur du binder Microsoft Dynamics 365 Commerce-webbplats till en eller flera onlinebutiker. 
 
-När du har etablerat e-handel med hjälp av Microsoft Dynamics Lifecycle Services-portalen (LCS) är du redo att upprätta din första näthandelsplats. Som en del av den första webbplatsen som skapas associerar du webbplatsen till en onlinebutik som skapats tidigare. Detta steg binder webbplatsen till en onlinekanal och låter webbplatsen visa navigeringshierarki, produkter, kategorier, priser, leveransalternativ och allt annat som du har definierat i onlinebutiken.
+När du har etablerat din Dynamics 365 Commerce-näthandelsmiljö med hjälp av Microsoft Dynamics Lifecycle Services-portalen (LCS) är du redo att upprätta din första näthandelsplats. Som en del av den första webbplatsen som skapas associerar du webbplatsen till en onlinebutik som skapats tidigare. Detta steg binder webbplatsen till en onlinekanal och låter webbplatsen visa navigeringshierarki, produkter, kategorier, priser, leveransalternativ och allt annat som du har definierat i onlinebutiken.
 
-Om du vill skapa en ny webbplats och koppla en onlinebutik till den väljer du länken för webbplatsredigeringsmiljön i LCS. Sedan på sidan för webbplatsredigeringsmiljön, välj **Ny webbplats**. I dialogrutan **Ny webbplats** måste du ange en grundläggande information om webbplatsen. En fullständig förklaring av den information som du måste tillhandahålla finns i [skapa en ny näthandelsplats](create-ecommerce-site.md).
+Om du vill skapa en ny webbplats och koppla en onlinebutik till den väljer du länken för webbplatsredigeringsmiljön i LCS. Sedan på sidan för webbplatsredigeringsmiljön, välj **Ny webbplats**. I dialogrutan **Ny webbplats** måste du ange en grundläggande information om webbplatsen. En fullständig förklaring av den information som du måste tillhandahålla finns i [Skapa en ny näthandelsplats](create-ecommerce-site.md).
 
 När du har skapat webbplatsen kan du kontrollera att den är kopplad till onlinebutiken genom att välja fliken **produkter**. Du bör se sortimentet av produkter som har tilldelats onlinebutiken. Du kan också använda det nedrullningsbara fältet längst upp till vänster på sidan för att komma åt produkterna efter kategori.
 
@@ -42,9 +41,9 @@ När du har skapat webbplatsen kan du kontrollera att den är kopplad till onlin
 
 [Konfigurera ditt domännamn](configure-your-domain-name.md)
 
-[Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
+[Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md)
 
-[Skapa en e-handelsplats](create-ecommerce-site.md)
+[Skapa en näthandelsplats](create-ecommerce-site.md)
 
 [Hantera robots.txt-filer](manage-robots-txt-files.md)
 

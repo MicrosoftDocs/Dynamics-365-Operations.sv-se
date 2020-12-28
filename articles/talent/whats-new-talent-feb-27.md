@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d0fdc9f056ea494cf52e8483b901070dae0bcd29
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: afa1044c8adc9566149e20ade57e771b50d9c53f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897682"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529148"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (27 februari 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent.
 
@@ -77,7 +79,7 @@ I många organisationer kan kompensationer och förmåner chefer bara har tillg�
 
 ### <a name="platform-update-24-for-finance-and-operations"></a>Plattformsuppdatering 24 för Finance and Operations
 
-Mer information om plattformsuppdatering 24 för Microsoft Dynamics 365 Finance and Operations plattformsuppdatering 24 (mars 2019) finns i [Förhandsgranskningsfunktioner i Finance and Operations plattformsuppdatering 24 (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Mer information om plattformsuppdatering 24 för Microsoft Dynamics 365 Finance and Operations (mars 2019) finns i [Förhandsgranskningsfunktioner i Finance and Operations plattformsuppdatering 24 (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
 ### <a name="make-employee-fixed-compensation-available-for-future-position-assignments"></a>Gör medarbetarens fasta kompensation tillgänglig för framtida befattningstilldelningar
 
@@ -98,19 +100,19 @@ Följ dessa steg om du vill uppdatera den befintliga mallen.
 
     - **Jobbefattningar till befattningar:** ta bort den här mappningen.
     - **Jobbefattningar till befattningars överordnade jobbtilldelningar:** ta bort den här mappningen.
-    - **Jobbefattningar till jobb till grundläggande befattning:** lägga till en ny mappning från entiteten **Jobbefattningar**Common Data Service till entiteten **grundläggande befattning** Finance and Operations. Flytta till position 7 i sekvensen.
+    - **Jobbefattingar till grundläggande befattning:** Lägg till en ny mappning från **Jobbefattningar** Common Data Service till **Grundläggande befattning** Finance and Operations. Flytta till position 7 i sekvensen.
 
         [![Jobbefattningar till grundläggande beffattningsmappning](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-    - **Jobbefattningar till befattningsdetaljer:** lägga till en ny mappning från entiteten **Jobbefattningar**Common Data Service till entiteten **befattningsdetaljer** Finance and Operations. Flytta till position 8 i sekvensen.
+    - **Jobbefattingar till befattningsinformation:** Lägg till en ny mappning från **Jobbefattningar** Common Data Service till **Befattningsinformation** Finance and Operations. Flytta till position 8 i sekvensen.
 
         [![Jobbefattningar till befattningsdetaljmappning](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
-    - **Jobbefattningar till befattningstidslängder:** lägga till en ny mappning från entiteten **Jobbefattningar**Common Data Service till entiteten **befattningstidslängder** Finance and Operations.
+    - **Jobbefattingar till befattningsvaraktighet:** Lägg till en ny mappning från **Jobbefattningar** Common Data Service till **Befattningsvaraktighet** Finance and Operations.
 
         [![Jobbefattningar till befattningstidslängdmappning](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **Jobbefattningar till befattningshierarkier:** lägga till en ny mappning från entiteten **Jobbefattningar**Common Data Service till entiteten **befattningshierarkier** Finance and Operations. Välj **avancerad fråga** för att göra en avancerad fråga tillgänglig för projektet.
+    - **Jobbefattingar till befattningshierarkier:** Lägg till en ny mappning från **Jobbefattningar** Common Data Service till **Befattningshierarkier** Finance and Operations. Välj **avancerad fråga** för att göra en avancerad fråga tillgänglig för projektet.
 
        [![Knappen Avancerad sökfråga](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 
@@ -131,7 +133,7 @@ Följ dessa steg om du vill uppdatera den befintliga mallen.
         [![Lägg till kommando för villkorlig kolumn](./media/Add-column.png)](./media/Add-column.png)
 
     6. I dialogrutan **Lägg till villkorlig kolumn** anger du **HIERARCHYTYPENAME** som namnet på den nya kolumnen.
-    7. I delen av villkoret **om** markerar du ett fält genom att använda **lika med** som relationen och anger något värde. I delar av villkoret ***sedan** och **annars** anger du vad som ska utgöra standardvärdet. I det här fallet anger du **rad** i båda delarna.
+    7. I delen av villkoret **om** markerar du ett fält genom att använda **lika med** som relationen och anger något värde. I delarna **Sedan** och **Annars** i villkoren anger du vad standardvärdet ska vara. I det här fallet anger du **rad** i båda delarna.
 
         [![Lägg till villkorsstyrd kolumndialogruta](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
 

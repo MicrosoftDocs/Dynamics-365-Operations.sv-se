@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8571c52b98a87751400dab9482168ee370834bcc
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: f562d3376fde6a24e6a1e1a3f7f4192cf290ae90
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3097085"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594294"
 ---
 # <a name="upload-images"></a>Överför bilder
 
@@ -41,7 +41,7 @@ När du överför en bild kan du ange följande information.
 
 - **Rubrik, Alt text, beskrivning, nyckelord**: metadata för bilden eller bilderna. Rubrik och Alt text är obligatoriska värden.
 - **Välj kategori**:
-    - **Ingen**: används för en e-handels berättandebild eller bilder.
+    - **Ingen**: används för en näthandels berättandebild eller bilder.
     - **Produkt, kategori, kund, medarbetare, katalog**: används för Dynamics 365 Commerce bild eller bilder i flera kanaler.
 - **Publicera resurser efter uppladdning**: när den här kryssrutan är markerad publiceras bilden eller bilderna omedelbart efter överföringen.
 
@@ -95,3 +95,5 @@ Så här massöverför du en mapp av bilder i webbplatsskapare.
 [Beskär bilder](dam-crop-images.md)
 
 [Anpassa bildens fokuspunkter](dam-custom-focal-point.md)
+
+[Ladda upp och betjäna statiska filer](upload-serve-static-files.md)

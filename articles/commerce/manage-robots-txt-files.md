@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1f7a779d69bf49d3416de3e92d4414cfabf358eb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ad87594b9c20d0c2b53e8d4e7c1170a78babe74b
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983633"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517462"
 ---
 # <a name="manage-robotstxt-files"></a>Hantera robots.txt-filer
 
@@ -90,15 +90,15 @@ Så här tar du bort en robots.txt-fil i Commerce.
 
 [Konfigurera ditt domännamn](configure-your-domain-name.md)
 
-[Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
+[Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md)
 
-[Skapa en e-handelsplats](create-ecommerce-site.md)
+[Skapa en näthandelsplats](create-ecommerce-site.md)
 
-[Associera en online-webbplats med en kanal](associate-site-online-store.md)
+[Associera en Dynamics 365 Commerce-webbplats med en onlinekanal](associate-site-online-store.md)
 
-[Överföring av URL-omdirigeringar i bulk](upload-bulk-redirects.md)
+[Överför URL-omdirigeringar i bulk](upload-bulk-redirects.md)
 
-[Ställa in en B2C-innehavare i Commerce](set-up-B2C-tenant.md)
+[Ställa in en B2C-klientorganisation i Commerce](set-up-B2C-tenant.md)
 
 [Ställa in anpassade sidor för användarinloggningar](custom-pages-user-logins.md)
 

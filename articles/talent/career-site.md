@@ -19,11 +19,11 @@ ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.openlocfilehash: d4a1e7c19ccec6ae32e46ec7d58604b162418953
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832964"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462554"
 ---
 # <a name="set-up-your-career-site-in-attract"></a>Ställ in din karriärwebbplats i Attract
 
@@ -62,7 +62,7 @@ Följande lista innehåller vanliga URL för karriärwebbplatser och hur du komm
 
 -   **Karriärwebbplatsens startside-URL** - för att visa startsidan för karriärwebbplatsen, logga in i Attract som administratör och välj **administratörscenter** på menyn **inställningar** -och välj sedan fliken **Hantera karriärwebbplats**.
 
--   **Svars-URL för individuell jobbpublicering** - När du [publicerar ett externt jobb](Creating-jobs-Attract.md#postings) för första gången, kan du kopiera länken **Använd** från Attract. URL-adressen för den här länken är i följande format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
+-   **Svars-URL för individuell jobbpublicering** - När du [publicerar ett externt jobb](Creating-jobs-Attract.md#postings) för första gången, kan du kopiera länken **Använd** från Attract. Webbadressen för den här länken är i följande format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
 
 -   **Individuell jobbpublicerings-URL** - URL för jobbpubliceringen är en delsträng av svars-URL. Den består av allt upp genom jobbnumret. Därför är jobbpublicerings-URL:en för de föregående svars-URL [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e)
 

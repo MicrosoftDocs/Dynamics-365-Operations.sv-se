@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: a7a44e1c9d8dcb4b2cc81a682a044d26cdc1149e
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812705"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462579"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-20-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (20 mars 2019)
 
@@ -58,7 +58,7 @@ Baserat på kundernas feedback kan rekryterare nu konfigurera om en meritförtec
 Kandidater som redan har sin aktuella uppdaterade profil på LinkedIn kan ansöka om jobb med bara ett enda klick med hjälp av den profilen.
 
 ### <a name="track-how-a-candidate-profile-originated-in-the-system-and-where-your-applicants-discover-the-jobs-they-applied-for"></a>Spåra var en kandidaprofil kommer från i systemet och om sökandena upptäcker de jobb de sökte
-Nu kan nu ta reda på hur profilen för en viss kandidat har sitt ursprung i Attract genom att titta på profilens källa under kandidatens information på en sökandes **profil**sida eller talangpoolprofil. På samma sätt kan du se hur varje sökande upptäcker jobbet genom att titta på ansökningskällan som finns i **Ansökningsaktivitet** i feed för ansökningsaktivitet. Den här informationen finns också tillgänglig i jobbhistoriken i talangpoolprofilen. När rekryterare eller anställande chefer lägger till kandidater manuellt uppmanas de också att ange källan till ansöknings- eller kandidatprofil. När en kandidat ansöker för första gången, blir deras profilkälla detsamma som ursprunget till ansökningarna. Du kan förhandsgranska den här funktionen genom att låta en administratör aktivera den med hjälp av [Funktionshantering i administratörscenter](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature). Observera att befintliga kandidater och sökande inte har någon källinformation. Rekryterare kan emellertid lägga till informationen manuellt.
+Nu kan nu ta reda på hur profilen för en viss kandidat har sitt ursprung i Attract genom att titta på profilens källa under kandidatens information på en sökandes **profil** sida eller talangpoolprofil. På samma sätt kan du se hur varje sökande upptäcker jobbet genom att titta på ansökningskällan som finns i **Ansökningsaktivitet** i feed för ansökningsaktivitet. Den här informationen finns också tillgänglig i jobbhistoriken i talangpoolprofilen. När rekryterare eller anställande chefer lägger till kandidater manuellt uppmanas de också att ange källan till ansöknings- eller kandidatprofil. När en kandidat ansöker för första gången, blir deras profilkälla detsamma som ursprunget till ansökningarna. Du kan förhandsgranska den här funktionen genom att låta en administratör aktivera den med hjälp av [Funktionshantering i administratörscenter](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature). Observera att befintliga kandidater och sökande inte har någon källinformation. Rekryterare kan emellertid lägga till informationen manuellt.
 
 ## <a name="changes-in-onboard"></a>Ändringar i Onboard
 
@@ -80,7 +80,7 @@ Ett problem med dubblettposter i den här uppdateringen har åtgärdats. Det hä
 I många organisationer kan kompensations- och förmånsansvariga endast ha tillgång till vissa kompensationsposter. Posterna kan vara för chefer eller nationella medarbetare. Med den här ändringen kan personalavdelningen hantera och underhålla kompensationsplaner för olika medarbetargrupper i organisationen. Du ska tilldela säkerhetsroller till fasta och variabla planer som bestämmer åtkomsten till planer och medarbetardata relaterade till planerna, till exempel lön eller bonusposter. Endast roller med åtkomst kan bearbeta kompensation för dessa anställda.
 
 ###  <a name="email-support-for-alerts"></a>E-support för notifieringar
-Med plattformsuppdatering 24 för Finance and Operations kan användare skapa notifieringsregler som automatiskt levererar e-postmeddelanden till kontakter när de utlöses av en händelse.
+Med plattformsuppdatering 24 för Finance and Operations kan användare skapa notifieringsregler som automatiskt skickar ut e-postmeddelanden till kontakter när de utlöses av en händelse.
 
 ### <a name="duplicate-employee-check-interface-changes"></a>Dubblettkontroll av medarbetare: gränssnittsändringar
 Med denna ändring detekteras dubbletter när du anger namnfält och status visar antalet dubbletter som hittades. Du kan välja den angivna länken för att öppna en ny sida för att bedöma om du ska använda de identifierade träffarna. Dublettformuläret öppnas inte automatiskt för att undvika att inmatningen avbryts.

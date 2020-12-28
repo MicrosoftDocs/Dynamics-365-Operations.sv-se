@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4d3a423bf64900e547a23f2e5eeb90aa679ec5d1
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: f87d29a8cffb70e4dea211cea7538e5e4c85295c
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533400"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517316"
 ---
 # <a name="enable-location-based-store-detection"></a>Aktivera platsbaserad butiksdetektering
 
@@ -52,15 +52,15 @@ Aktivera platsbaserad butiks identifiering i näthandelsbutiken genom att följa
 
 [Konfigurera ditt domännamn](configure-your-domain-name.md)
 
-[Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
+[Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md)
 
-[Skapa en e-handelsplats](create-ecommerce-site.md)
+[Skapa en näthandelsplats](create-ecommerce-site.md)
 
-[Associera en online-webbplats med en kanal](associate-site-online-store.md)
+[Associera en Dynamics 365 Commerce-webbplats med en onlinekanal](associate-site-online-store.md)
 
 [Hantera robots.txt-filer](manage-robots-txt-files.md)
 
-[Överföring av URL-omdirigeringar i bulk](upload-bulk-redirects.md)
+[Överför URL-omdirigeringar i bulk](upload-bulk-redirects.md)
 
 [Ställa in en B2C-innehavare i Commerce](set-up-B2C-tenant.md)
 

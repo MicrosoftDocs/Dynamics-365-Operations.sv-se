@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: ac19fca407bd936cb9b7edcfa9f4eb81daf607dd
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: e77cc8921f2a8cfa1a48fda589fd20aae00e0fd4
+ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006228"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4690086"
 ---
 # <a name="working-time-calendars"></a>Arbetstidskalendrar
 
@@ -53,6 +53,6 @@ Så här ställer du in en kalender:
 
 9. På fliken **dagar**, välj **generera** för att generera dagar i kalendern. Ange datumintervall för kalendern. Dagar och arbetstider skapas baserat på de arbetsdagar och tider som definieras i alternativ för generering tillsammans med de datum som valts.
 
-10. För att tilldela en kalender till medarbetare, välj **tilldela medarbetare** i åtgärdsfönstret. Välj den medarbetare du vill tilldela till kalendern och klicka sedan på **tilldela**.
+10. För att tilldela en kalender till medarbetare, välj **tilldela medarbetare** i åtgärdsfönstret. Välj den medarbetare du vill tilldela till kalendern och klicka sedan på **Tilldela**.
 
 Anställda måste inte ha tilldelats kalendrar. Om det finns en definierad arbetstidskalender kommer lediga dagar automatiskt uteslutas från begäran. Antalet timmar eller dagar är som standard de arbetstider som anges i kalendern. Om medarbetaren inte har en kalender tilldelad är alla dagar tillgängliga för ledig tid och ledig tidsmängd är inte standard för begäran. 

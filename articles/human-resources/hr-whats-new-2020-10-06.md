@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5ca2fbbf3ffbcc7c9c32490f3733b8a94731170e
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.openlocfilehash: fe01a2b82b72bf38bb537ed7b2bf5560235817d9
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022225"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529838"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (6 oktober 2020)
 
-Det här ämnet beskriver nya, ändrade, kommer snart funktioner i Dynamics 365 Human Resources. Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+Det här ämnet beskriver nya, ändrade, kommer snart funktioner i Dynamics 365 Human Resources. Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
 Mer information om nya funktioner och deras förväntade allmänna tillgänglighetsdatum finns i [Översikt över Dynamics 365 Human Resources 2020 utgivningscykel 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
 
@@ -77,11 +79,11 @@ Följande nya funktioner är i förhandsgranskning. Mer information om hur du ak
 
 Följande nya funktioner är schemalagda för framtida versioner:
 
-- **Entiteter för checklista inkluderade i Common Data Service** : Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga i Common Data Service.
+- **Entiteter för checklista inkluderade i Common Data Service**: Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga i Common Data Service.
 
-- **Orsakskoder för hantering av förmåner** : Orsakskoder för förmånshantering kommer snart att kombineras med befintliga orsakskoder i Human Resources. Om du skapade orsakskoder i en förmånshantering som är över 15 tecken stora måste du ändra namnet på orsakskoden i formuläret för förmåner i förmånshanteringens formulär **orsakskoder** till 15 tecken eller mindre. När du har uppdaterat namnet visas orsakskoden under formuläret befintlig orsakskod i personalhantering. Den här ändringen kommer att vara tillgänglig i framtiden och påverkar inte befintliga funktioner.
+- **Orsakskoder för hantering av förmåner**: Orsakskoder för förmånshantering kommer snart att kombineras med befintliga orsakskoder i Human Resources. Om du skapade orsakskoder i en förmånshantering som är över 15 tecken stora måste du ändra namnet på orsakskoden i formuläret för förmåner i förmånshanteringens formulär **orsakskoder** till 15 tecken eller mindre. När du har uppdaterat namnet visas orsakskoden under formuläret befintlig orsakskod i personalhantering. Den här ändringen kommer att vara tillgänglig i framtiden och påverkar inte befintliga funktioner.
 
-- **Anpassade länkar i självbetjäning för chef** : för att stödja chefer utökas funktionerna i självbetjäning för chef. Funktionerna läggs till för att lägga till anpassade länkar på fliken **Mitt team**. Den här funktionen liknar funktionen anpassade länkar på **Min informationsfliken** i självbetjäning för medarbetare. Mer information finns i [Anpassade länkar i självservice för chef](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
+- **Anpassade länkar i självbetjäning för chef**: för att stödja chefer utökas funktionerna i självbetjäning för chef. Funktionerna läggs till för att lägga till anpassade länkar på fliken **Mitt team**. Den här funktionen liknar funktionen anpassade länkar på **Min informationsfliken** i självbetjäning för medarbetare. Mer information finns i [Anpassade länkar i självbetjäning för chef](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
 
 En fullständig lista över planerade funktioner och deras schemalagda versioner finns i [Översikt över Dynamics 365 Human Resources 2019 utgivningscykel 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
 

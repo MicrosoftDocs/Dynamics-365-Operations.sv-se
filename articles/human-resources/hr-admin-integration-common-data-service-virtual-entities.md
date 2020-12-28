@@ -3,7 +3,7 @@ title: Konfigurera virtuella Common Data Service-enheter
 description: I det här avsnittet beskrivs hur du konfigurerar virtuella entiteter för Dynamics 365 Human Resources. Generera och uppdatera befintliga virtuella entiteter samt analysera genererade och tillgängliga entiteter.
 author: andreabichsel
 manager: tfehr
-ms.date: 10/05/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0d6f79ea569a7a9b0d25e73e8666bf9ba19095d0
-ms.sourcegitcommit: a8665c47696028d371cdc4671db1fd8fcf9e1088
+ms.openlocfilehash: 2b590faeab600d04c9d5303693ec1e9ac682250d
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "4058164"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645611"
 ---
 # <a name="configure-common-data-service-virtual-entities"></a>Konfigurera virtuella Common Data Service-enheter
 
-[!include [banner](includes/preview-feature.md)]
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dynamics 365 Human Resources är en virtuell datakälla i Common Data Service. Det ger fullständiga åtgärder för att skapa, läsa, uppdatera och ta bort (CRUD) från Common Data Service och Microsoft Power Platform. Data för virtuella entiteter lagras inte i Common Data Service, men i appdatabasen. 
 
@@ -50,11 +50,23 @@ Virtuella enheter för personal är inte samma sak som de fysiska Common Data Se
 
 ## <a name="setup"></a>Ställ in
 
-Följ dessa installationssteg för att aktivera virtuella enheter i miljön. 
+Följ dessa installationssteg för att aktivera virtuella enheter i miljön.
+
+### <a name="enable-virtual-entities-in-human-resources"></a>Aktivera virtuella entiteter i Human Resources
+
+Först måste du aktivera virtuella entiteter i arbetsytan **Funktionshantering**.
+
+1. I Personal, välj **Systemadministration**.
+
+2. Välj panelen **funktionshantering**.
+
+3. Välj **Stöd för virtuell entitet i HR/CDS** och sedan **Aktivera**.
+
+Mer information om att aktivera och inaktivera funktioner finns i [Hantera funktioner](hr-admin-manage-features.md).
 
 ### <a name="register-the-app-in-microsoft-azure"></a>Registrera appen i Microsoft Azure
 
-Först måste du registrera programmet på Azure-portalen så att Microsofts identitetsplattform kan tillhandahålla autentisering och auktoriseringstjänster för appen och användarna. Mer information om registrering av program i Azure finns i [snabbstart: registrera ett app med Microsoft identitetsplattform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Du måste registrera din Human Resource-instans i Azure-portalen så att Microsofts identitetsplattform kan tillhandahålla autentisering och auktoriseringstjänster för appen och användarna. Mer information om registrering av program i Azure finns i [snabbstart: registrera ett app med Microsoft identitetsplattform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 1. Öppna [Microsoft Azure-portal](https://portal.azure.com).
 
@@ -87,7 +99,7 @@ Installera appen Dynamics 365 HR Virtual Entity i din Power Apps-miljö för att
 
 1. Öppna [Power Platform administrationscenter](https://admin.powerplatform.microsoft.com).
 
-2. I listan **miljöer** , välj Power Apps-miljö som är kopplad till personalinstansen.
+2. I listan **miljöer**, välj Power Apps-miljö som är kopplad till personalinstansen.
 
 3. I avsnittet **resurser** på sidan väljer du **Dynamics 365-appar**.
 
@@ -109,11 +121,11 @@ Nästa steg är att konfigurera datakällan för den virtuella enheten i Power A
 
 1. Öppna [Power Platform administrationscenter](https://admin.powerplatform.microsoft.com).
 
-2. I listan **miljöer** , välj Power Apps-miljö som är kopplad till personalinstansen.
+2. I listan **miljöer**, välj Power Apps-miljö som är kopplad till personalinstansen.
 
 3. Välj **miljö-URL** i avsnittet **information** på sidan.
 
-4. I **Lösning hälsocenter** , välj ikonen **Avancerad sökning** längst upp till höger på appsidan.
+4. I **Lösning hälsocenter**, välj ikonen **Avancerad sökning** längst upp till höger på appsidan.
 
 5. På sidan **Avancerad sökning** i listrutan **Sök efter** välj **Konfiguration av virtuella enhetens datakälla i Finance and Operations**.
 
@@ -121,16 +133,28 @@ Nästa steg är att konfigurera datakällan för den virtuella enheten i Power A
 
 7. Markera posten **Microsoft HR datakälla**.
 
-8. Ange den information som krävs för konfigurationen av datakällan.
+8. Ange den information som krävs för konfigurationen av datakällan:
 
-   - **Mål-URL** : en URL till din personal namnrymd.
-   - **Klientorganisations-ID** : Azure Active Directory (Azure AD) klientorganisations-ID.
-   - **AAD app-ID** : det app-ID (klient) som skapades för den app som är registrerat i Microsoft Azure-portalen. Du har fått den här informationen tidigare under steget [Registrera appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
-   - **Hemlighet för AAD app-ID** : klienthemligheten som skapades för den app som är registrerat i Microsoft Azure-portalen. Du har fått den här informationen tidigare under steget [Registrera appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+   - **Mål-URL**: en URL till din personal namnrymd. Formatet för mål-URL:en är:
+     
+     https://\<hostname\>.hr.talent.dynamics.com/namespaces/\<namespaceID\>/
 
-9. Välj **Spara och stäng**.
+     Exempel:
+     
+     `https://aos.rts-sf-5ea54e35c68-westus2.hr.talent.dynamics.com/namespaces/49d24c565-8f4d-4891-b174-bf83d948ed0c/`
+
+     >[!NOTE]
+     >Se till att du tar med "**/**"-tecknet i slutet av URL:en för att undvika att få ett fel.
+
+   - **Klientorganisations-ID**: Azure Active Directory (Azure AD) klientorganisations-ID.
+
+   - **AAD app-ID**: det app-ID (klient) som skapades för den app som är registrerat i Microsoft Azure-portalen. Du har fått den här informationen tidigare under steget [Registrera appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+
+   - **Hemlighet för AAD app-ID**: klienthemligheten som skapades för den app som är registrerat i Microsoft Azure-portalen. Du har fått den här informationen tidigare under steget [Registrera appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
    ![Microsoft HR-datakälla](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+
+9. Välj **Spara och stäng**.
 
 ### <a name="grant-app-permissions-in-human-resources"></a>Ge appbehörighet i Human Resources
 
@@ -149,8 +173,8 @@ Bevilja behörigheter för de två Azure AD-apparna i Human Resources:
 
 3. Välj **Nytt** för att skapa en andra appost:
 
-    - **Klient-ID** : f9be0c49-aa22-4ec6-911a-c5da515226ff
-    - **Namn** : Dynamics 365 HR Virtual Entity
+    - **Klient-ID**: f9be0c49-aa22-4ec6-911a-c5da515226ff
+    - **Namn**: Dynamics 365 HR Virtual Entity
     - I fältet **Användar-ID** väljer du användar-ID för en användare med administratörsbehörighet i Human Resources och Power Apps-miljön.
 
 ## <a name="generate-virtual-entities"></a>Generera virtuella enheter

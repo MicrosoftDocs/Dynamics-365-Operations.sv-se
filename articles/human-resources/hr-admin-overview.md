@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 981a66706c07bb350dd08307213f654e56b232ac
-ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
+ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3443428"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527871"
 ---
 # <a name="overview"></a>Översikt
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Den här administratörsguiden hjälper dig att konfigurera, hantera och felsöka Dynamics 365 Human Resources.
 
@@ -44,10 +46,10 @@ Den här administratörsguiden hjälper dig att konfigurera, hantera och felsök
   - [Konfigurera integration med Dayforce](hr-admin-integration-dayforce.md)
   - [Skapa en app för återkommande dataexport](hr-admin-integration-recurring-data-export.md)
   - Integration med Office
-    - [Office-integrering – självstudier](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Office-integration – självstudier](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Uppdatera enhetsdata i Excel](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Skapa Öppna i Excel-upplevelse](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Felsöka Office-integrering](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Felsöka Office-integration](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [Hantera funktioner](hr-admin-manage-features.md)
 

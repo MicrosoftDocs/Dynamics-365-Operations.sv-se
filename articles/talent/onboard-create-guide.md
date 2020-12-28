@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2371d86165390503312c2848842acf4745a8ed7a
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898258"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462567"
 ---
 # <a name="create-and-send-an-onboarding-guide"></a>Skapa och skicka en integrationsguide.
 
@@ -34,7 +34,7 @@ När du har skapat en integrationsguiden kan du skicka den till en ny anställni
 ## <a name="create-an-onboarding-guide-from-a-template-and-send-it-to-a-single-new-hire"></a>Skapa en introduktionsguide från en mall och skicka den till en enda ny anställningsmanual
 
 1. Välj **mallar** i menyn till vänster.
-2. Under **Mina mallar**väljer du den mall som du vill konfigurera som en integrationsguide för den nyanställda.
+2. Under **Mina mallar** väljer du den mall som du vill konfigurera som en integrationsguide för den nyanställda.
 3. Redigera mallen som du önskar. Se till att spara ditt arbete regelbundet.
 4. När du är klar med redigeringen av mallen väljer du **skapa guide**.
 
@@ -58,7 +58,7 @@ När du har skapat en integrationsguiden kan du skicka den till en ny anställni
 Onboard låter dig skicka en integrationsguiden till flera nyanställda samtidigt.
 
 1. Välj **mallar** i menyn till vänster.
-2. Under **Mina mallar**väljer du den mall som du vill konfigurera som en integrationsguide för den nyanställda.
+2. Under **Mina mallar** väljer du den mall som du vill konfigurera som en integrationsguide för den nyanställda.
 3. Redigera mallen som du önskar. Se till att spara ditt arbete regelbundet.
 4. När du är klar med redigeringen av mallen väljer du **skapa guide**.
 5. I fönstret **skapa en guide** väljer du **Behöver du introducera flera personer på samma gång**.

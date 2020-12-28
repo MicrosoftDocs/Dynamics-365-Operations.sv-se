@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 58446289c9a53af30d4d6d331a1a609ae0d2a0ad
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818208"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665406"
 ---
 # <a name="iframe-module"></a>Iframe-modul
 
@@ -35,7 +35,7 @@ Det här avsnittet handlar om iframe-modulen och beskriver hur du lägger till d
 
 En iframe-modul innehåller en iframe (infogad ram) som är värd för det externa innehållet på en webbplats. Det kan till exempel användas för att vara värd för ett YouTube-video eller PDF-filgranskare på valfri webbplatssida. 
 
-En iframe-modul kräver en mål-URL. Sedan lagras innehållet på målsidan i ett HTML **iframe**-element. Externa URL:er måste finnas i listan över tillåtna (även kallat "vit lista") per webbplatsens innehålls säkerhetsprincip (CSP). För iframe-innehåll ska URL:er tillåtas genom att använda direktivet **frame-ancestor**. Mer information finns i [hantera säkerhetsprinciper för innehåll (CSP)](manage-csp.md).
+En iframe-modul kräver en mål-URL. Sedan lagras innehållet på målsidan i ett HTML **iframe**-element. Externa URL:er måste finnas med i listan över tillåtna per webbplatsens säkerhetsprinciper för innehåll (CSP). För iframe-innehåll ska URL:er tillåtas genom att använda direktivet **frame-ancestor**. Mer information finns i [hantera säkerhetsprinciper för innehåll (CSP)](manage-csp.md).
 
 > [!NOTE]
 > iFrame-modulen är tillgänglig i Dynamics 365 Commerce 10.0.13-versionen.
@@ -57,7 +57,7 @@ I följande bild visas exempel på iframe-moduler som visar externa videoklipp p
 
 Om du vill lägga till en iframe-modul på en sida för att visa en extern video följer du stegen nedan.
 
-1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
+1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
 1. I dialogrutan **Ny mal** under **Mallnamn**, ange **Marknadsföringsmall** och välj sedan **OK**.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.

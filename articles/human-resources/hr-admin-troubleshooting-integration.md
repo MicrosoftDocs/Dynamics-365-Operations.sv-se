@@ -17,16 +17,28 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a3389d6ce5f1985f7515e777a2bafae4eae5f0c
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 6a94c1269cd81ecdcbdff018ec4a8f90be36f0f3
+ms.sourcegitcommit: 6aa8d6aa8276611967fb6fab44715950de49f6af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431117"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4589073"
 ---
 # <a name="integration-with-finance-faq"></a>Vanliga frågor integration med Finance
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 Det här avsnittet svarar på vanliga frågor om vilken information som synkroniseras när Dynamics 365 Human Resources är integrerad med Dynamics 365 Finance.
+
+## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Kan jag redigera Dynamics 365 Talent-programanvändaren i Power Apps?
+
+Nr Om du redigerar Talang-programanvändaren, kan det hända att integrationen mellan Human Resources och Common Data Service misslyckas. I följande tabell visas standardinställningarna för Talang-programanvändaren.
+
+| Fullständigt namn | Sökande-ID | Azure AD Objekt-ID | Sökande-ID URI |
+| --- | --- | --- | --- |
+| Dynamics 365 för Talang | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
+
+![Standardinställningar för Talang-programanvändare](media/DynamicsApplicationUser.png)
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Synkroniseras all data eller bara vissa datatabeller?
 

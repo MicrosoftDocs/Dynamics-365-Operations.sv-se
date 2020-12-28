@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: beb705852be99ce817997d7017c41a0159f75419
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.openlocfilehash: fa9d42c20540f2ee2240cc4f2b180140c3f9a628
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022039"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517098"
 ---
 # <a name="buy-box-module"></a>Modul för inköpsruta
 
@@ -50,7 +50,7 @@ En modul för inköpsruta återger titel, beskrivning, pris och klassificering f
 
 En mängd väljare tillhandahålls, så att kunder kan ange hur många artiklar som ska köpas. Den högsta kvantiteten som kan köpas kan definieras i webbplatsinställningarna.
 
-Från inköpsrutan kan kunder också utföra åtgärder som att lägga till en produkt i kundvagnen, lägga till en produkt i deras önskelista och välja en plockplats. Dessa åtgärder kan utföras på en produkt eller produktvariant. Om du vill lägga till en produkt i en önskelista måste kunden vara inloggad.
+Från inköpsrutan kan kunder också utföra åtgärder som att lägga till en produkt i kundvagnen, lägga till en produkt i deras önskelista och välja en upphämtningsplats. Dessa åtgärder kan utföras på en produkt eller produktvariant. Om du vill lägga till en produkt i en önskelista måste kunden vara inloggad.
 
 Teman kan användas för att ta bort eller ändra ordningen på produktegenskaper och åtgärdskontroller i inköpsrutan. 
 
@@ -68,14 +68,14 @@ Teman kan användas för att ta bort eller ändra ordningen på produktegenskape
 
 ## <a name="buy-box-module-settings"></a>Inställningar för modul för inköpsruta
 
-Följande köpboxmodulinställningar som kan konfigureras på **Platsinställningar \> Tillägg** :
+Följande köpboxmodulinställningar som kan konfigureras på **Platsinställningar \> Tillägg**:
 
 - **Kvantitetsbegränsning för kundvagn** – Den här egenskapen används för att ange det maximala antalet för varje objekt som kan läggas till i vagnen. En återförsäljare kan till exempel besluta att endast 10 av varje produkt kan säljas i en enda transaktion.
 - **Lager** – För information om hur du använder lagerinställningar finns i [tillämpa lagerinställningar](inventory-settings.md).
-- **Lägg till i kundvagn** - den här egenskapen används för att ange funktionen när en artikel har lagts till i vagnen. De möjliga värdena är **Navigera till kundvagn** , **Navigera inte i kundvagn** och **Visa meddelanden**. När värdet är inställt på **Navigera till kundvagn** skickas användarna till kundvagnssidan när de har lagt till en artikel. När värdet är inställt på **Navigera inte till kundvagn** skickas användarna inte till kundvagnssidan när de har lagt till en artikel. När värdet är inställt på **Visa meddelanden** visas användarna ett bekräftelsemeddelande och du kan fortsätta att bläddra på sidan produktinformation. 
+- **Lägg till produkten i kundvagnen** - Denna egenskap används för att ange funktionen när en artikel har lagts till i vagnen. De möjliga värdena är **Navigera till kundvagnssidan**, **Navigera inte till kundvagnssidan** och **Visa meddelande**. När värdet är inställt på **Navigera till kundvagnssidan** skickas användarna till kundvagnssidan när de har lagt till en artikel. När värdet är inställt på **Navigera inte till kundvagnssidan** skickas användarna inte till kundvagnssidan när de har lagt till en artikel. När värdet är inställt på **Visa meddelande** visas användarna ett bekräftelsemeddelande och du kan fortsätta att bläddra på sidan för produktinformation. 
 
 > [!IMPORTANT]
-> Platsinställningarna **Lägg till i kundvagn** är tillgängliga i Dynamics 365 Commerce 10.0.11 versionen. Om du uppdaterar från en äldre version av Dynamics 365 Commerce måste du uppdatera filen appsettings.json manuellt. Information om hur du uppdaterar filen appsettings.json finns i [SDK- och modulens biblioteksuppdateringar](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+> Webbplatsinställningarna **Lägg till produkt i kundvagn** är tillgängliga i Dynamics 365 Commerce-versionen 10.0.11. Om du uppdaterar från en äldre version av Dynamics 365 Commerce måste du uppdatera filen appsettings.json manuellt. Information om hur du uppdaterar filen appsettings.json finns i [SDK- och modulens biblioteksuppdateringar](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
 I följande bild visas ett exempel på ett bekräftelsemeddelande om tillägg till kundvagnen på Fabrikam webbplats.
 
@@ -90,26 +90,26 @@ Modul för inköpsruta hämtar produktinformation med hjälp av API:er för skal
 Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
 1. Gå till **Fragment** och välj **ny** för att skapa ett nytt fragment.
-1. I dialogrutan **Nytt fragment** , välj modulen **inköpsruta**.
-1. Under **Fragmentets namn** , anger du ett namn på **inköpsrutafragmentet** och klickar sedan på **OK**.
-1. I platsen för modul för inköpsruta väljer du **Mediagalleriet** , markerar ellipsknappen ( **...** ) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Nytt fragment** väljer du modulen **Inköpsruta**.
+1. Under **Fragmentets namn**, anger du ett namn på **inköpsrutafragmentet** och klickar sedan på **OK**.
+1. I platsen för modul för inköpsruta väljer du **Mediagalleriet**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
 1. I dialogrutan **Lägg till modul** välj modulen **Mediagalleriet** och sedan **OK**.
-1. I platsen för modul för inköpsruta väljer du **butiksväljare** , markerar ellipsknappen ( **...** ) och väljer sedan **Lägg till modul**.
+1. I platsen för modul för inköpsruta väljer du **butiksväljare**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
 1. I dialogrutan **Lägg till modul** välj modulen **butiksväljare** och sedan **OK**.
-1. Välj **Spara** , välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera den.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera den.
 1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
-1. I dialogrutan **Ny mal** under **Mallnamn** , ange **PDP-mall** och välj sedan **OK**.
-1. I facket **brödtext** välj ellips-knappen ( **...** ) och välj sedan **Lägg till modulen**.
-1. I dialogrutan **Lägg till modul** , välj modulen **Standardsida** och klicka sedan på **OK**.
-1. I platsen för standardsidan väljer du **Huvud** , markerar ellipsknappen ( **...** ) och väljer sedan **Lägg till fragment**.
+1. I dialogrutan **Ny mal** under **Mallnamn**, ange **PDP-mall** och välj sedan **OK**.
+1. I facket **brödtext** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Standardsida** och klicka sedan på **OK**.
+1. I platsen för standardsidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till fragment**.
 1. I dialogrutan **Välj fragment** väljer du det **inköpsrutafragment** som du skapade tidigare och väljer sedan **OK**.
-1. Välj **Spara** , välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
-1. I dialogrutan **Välj en mall** väljer du en **PDP-mall**. Under **sidnamn** , ange **PDP-sida** och klicka sedan på **OK**.
-1. I platsen för nya sidan väljer du **Huvud** , markerar ellipsknappen ( **...** ) och väljer sedan **Lägg till fragment**.
+1. I dialogrutan **Välj en mall** väljer du en **PDP-mall**. Under **sidnamn**, ange **PDP-sida** och klicka sedan på **OK**.
+1. I platsen för nya sidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till fragment**.
 1. I dialogrutan **Välj fragment** väljer du det **inköpsrutafragment** som du skapade tidigare och väljer sedan **OK**.
 1. Spara och förhandsgranska sidan. Lägg till frågesträngparametern **?productid=&lt;product id&gt;** till URL för förhandsgranskningssidan. På så sätt används produktkontexten för att läsa in och återge förhandsgranskningssidan.
-1. Välj **Spara** , välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den. En inköpsruta bör visas på sidan för produktinformation.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den. En inköpsruta bör visas på sidan för produktinformation.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

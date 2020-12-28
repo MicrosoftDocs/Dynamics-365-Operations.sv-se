@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-01-23
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: f97462f088fc1a3cb94f2a34204fc09f1cd66fb0
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899138"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462538"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-january-23-2019"></a>Nyheter och ändringar i Dynamics 365 Talent - Core HR (23 januari 2019)
 
@@ -52,4 +52,4 @@ När du byter jobb på befattning, jobbfält överförs som standard till befatt
 Förutom denna skillnad fält **provanställning** och **kalender** har lagts till i sida **hantera ändringar** om du vill tillåta för datainmatning för tidigare och framtida anställda.
 
 ### <a name="platform-update-23-for-finance-and-operations"></a>Plattformsuppdatering 23 för Finance and Operations
-Mindre felkorrigeringar har ingår i plattformsuppdatering 23 for Finance and Operations. Mer information finns i [vad är nya eller ändrade i Dynamics 365 Finance and Operations plattformsuppdatering 23 (januari 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+Mindre felkorrigeringar ingår i plattformsuppdatering 23 för Finance and Operations. Mer information finns i [vad är nya eller ändrade i Dynamics 365 Finance and Operations plattformsuppdatering 23 (januari 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6bb754ca80af0a0793b5ee162a378ebbe92524c5
-ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
+ms.openlocfilehash: 9e6eeac66cff24d193e30aa942039707fc0aed52
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3197300"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528351"
 ---
 # <a name="choose-a-data-integration-technology"></a>Välja en dataintegreringsteknik
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Den här artikeln innehåller information om hur du integrerar med data som hanteras av Dynamics 365 Human Resources. Här beskrivs olika integreringstekniker som hjälper dig att avgöra vilka tekniker som bäst passar dina behov.
 
@@ -123,7 +125,7 @@ Dataintegrerarprojekt är lämpliga för Common Data Service batch-integration. 
 
 ### <a name="power-query"></a>Power Query
 
-Dataintegrerare stöder [Power Query](https://docs.microsoft.com/power-query/power-query-what-is-power-query) (via dess [avancerade frågefunktion](https://docs.microsoft.com/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query innehåller kraftfull, flexibel datafiltrering och transformering, inklusive det rika M-formelspråket. Power Query är förmodligen bekant om du har utvecklat Power BI-rapporter.
+Dataintegrerare stöder [Power Query](https://docs.microsoft.com/power-query/power-query-what-is-power-query) via dess [avancerade frågefunktion](https://docs.microsoft.com/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query innehåller kraftfull, flexibel datafiltrering och transformering, inklusive det rika M-formelspråket. Power Query är förmodligen bekant om du har utvecklat Power BI-rapporter.
 
 ## <a name="deciding-on-an-integration-technology"></a>Fatta beslut om integrationsteknik
 

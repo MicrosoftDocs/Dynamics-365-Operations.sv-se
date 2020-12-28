@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 071aa79ea75e9a94187dd74dabab940e2cce0f92
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551966"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462637"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-talent---onboard"></a>Uppdatera integrationsguider i Dynamics 365 Talent - Onboard
+# <a name="update-onboarding-guides"></a>Uppdatera integrationsguider
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ Om du måste göra ändringar i integrationsguiderna i Microsoft Dynamics 365 Ta
 2. Välj guiden som du vill redigera.
 3. Gör alla önskade ändringar och välj sedan knappen **spara** (disksymbolen).
 
-    ![[Spara ändringar i en integrationsguide](./media/onboard-save.png)](./media/onboard-save.png)
+    ![[Spara ändringar i en registreringsguide](./media/onboard-save.png)](./media/onboard-save.png)
 
 Onboard kommer automatiskt att skicka den nyanställde ett e-postmeddelande som anger vad ändringarna är. För enkel identifiering visas en röd tagg **ny** bredvid varje ändring.
 
@@ -49,6 +49,6 @@ Onboard kommer automatiskt att skicka den nyanställde ett e-postmeddelande som 
 3. Gör alla önskade ändringar och välj sedan knappen **spara** (disksymbolen).
 4. Om du vill skicka ändringarna till alla guider som baseras på mallen väljer du **skicka dessa ändringar**.
 
-    ![[Skicka ändringarna i en integrationsmall till alla guider som skapades av den](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
+    ![[Skicka ändringarna i en registreringsmall till alla guider som skapades av den](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
 Ändringarna blir synliga för nyanställda som öppnar integrationsguiderna. Onboard skickar dock inte e-postaviseringar till nyanställda så att de vet att deras integrationsguide har ändrats. För enkel identifiering visas en röd tagg **ny** bredvid varje ändring. 
