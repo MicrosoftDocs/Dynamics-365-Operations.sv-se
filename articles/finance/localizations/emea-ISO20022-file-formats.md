@@ -17,11 +17,11 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: b809ba8d92772d8f3f416d4854d4af322e6f954a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773438"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408612"
 ---
 # <a name="import-iso20022-files"></a>Importera ISO20022-filer
 
@@ -111,7 +111,7 @@ När du importerar en formatkonfigurationen från LCS importerar du hela konfigu
 
  - **Betalningsmodell**
  - **Betalningsmodellmappning 1611** - den här mappningen används för att generera exportfilen
- - **Betalningsmodellmappning till destination mål ISO20022** – den här konfigurationen innehåller alla mappningar som ska användas för att importera data mappningsriktningen ”till destination”)
+ - **Betalningsmodellmappning till destination mål ISO20022** – den här konfigurationen innehåller alla mappningar som ska användas för att importera data mappningsriktningen (”till destination”)
  - **ISO20022 kreditöverföring** – den här konfigurationen innehåller en formatkomponent som ansvarar för export av filgenerering (pain.001) utifrån betalningsmodellmappning 1611 samt ett format till modellmappningskomponent som ska användas tillsammans med betalningsmodellmappning till destination ISO20022 för att registrera exporterade betalningar i systemet för ytterligare import (import i tekniska tabellen CustVendProcessedPayments)
  - **ISO20022 kreditöverföring (CE)**, där CE motsvarar landstillägg – härlett format till ISO20022 kreditöverföring med samma struktur och vissa landsspecifika skillnader
  - **Pain.002** – det här formatet ska användas tillsammans med betalningsmodellmappning till destination ISO20022 för att importera filen pain.002 till överföringsjournalen för leverantörsbetalningar

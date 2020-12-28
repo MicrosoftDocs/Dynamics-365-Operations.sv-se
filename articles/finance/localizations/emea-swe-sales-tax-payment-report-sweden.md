@@ -18,11 +18,11 @@ ms.author: v-lurodi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: b3d34b6c47d6a7b00a34f6f036512ee61b535111
-ms.sourcegitcommit: c0d37fdd70f3dec4605fdee6f981f84a49be9b9e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3339891"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408627"
 ---
 # <a name="sales-tax-report-for-sweden"></a>Momsrapport för Sverige
 
