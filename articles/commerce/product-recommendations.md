@@ -20,34 +20,34 @@ ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 5aa7db8e53906f9e1416b912fe2c3b70d5430258
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3664892"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415705"
 ---
 # <a name="product-recommendations-overview"></a>Översikt av produktrekommendationer
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 Commerce kan användas för att visa produktrekommendationer på webbplatsen för e-handel och kassaenheten (POS). Produktrekommendationer är artiklar som en kund kan vara intresserad av. Rekommendationerna bygger på de övriga kundernas inköpstrender i online- och fysiska butiker.
+Microsoft Dynamics 365 Commerce kan användas för att visa produktrekommendationer på webbplatsen för näthandel och kassaenheten (POS). Produktrekommendationer är artiklar som en kund kan vara intresserad av. Rekommendationerna bygger på de övriga kundernas inköpstrender i online- och fysiska butiker.
 
 Med produktrekommendationer kan kunderna enkelt och snabbt hitta produkter som de vill ha medan de får en upplevelse som tjänar dem väl. Korsförsäljning och merförsäljning kan användas för att hjälpa kunder att hitta fler produkter än vad de ursprungligen avsåg att köpa. När rekommendationer används för att hjälpa till med produktidentifiering kan de skapa fler konverteringsmöjligheter, hjälpa till att öka försäljningsintäkterna och till och med öka kundens tillfredsställelse och kvarhållande.
 
-I e-handel drivs produktrekommendationerna av Microsoft maskininlärningsteknik för rekommendationer i en stor skala.
+I näthandel drivs produktrekommendationerna av Microsoft maskininlärningsteknik för rekommendationer i en stor skala.
 
 ## <a name="recommendation-service"></a>Rekommendationstjänst
 
 Tjänsten produktrekommendationer använder funktioner för artificiell intelligens och AI-ML (AI-ML) på följande sätt:
 
-- Data i det format som krävs av rekommendationstjänster extraheras från e-handelns driftsdatabas och skickas till enhetslagringen i Azure Data Lake Storage.
+- Data i det format som krävs av rekommendationstjänster extraheras från näthandelns driftsdatabas och skickas till enhetslagringen i Azure Data Lake Storage.
 - Rekommendationstjänsten använder lagrade data för att träna rekommendationsmodeller för listan **människor gillar också**, **köps ofta ihop**, **ny**, **bästsäljare** och **trend**.
 
 ## <a name="scenarios"></a>Scenarier
 
 Produktrekommendationer är tillgängliga för följande scenarier:
 
-- **På valfri butikssida för bläddring eller landnings sida i e-handel:** Om kunder eller butikspartner besöker en butikssida kan rekommendationsmotorn föreslå produkter i listorna **Ny**. **Bästsäljande** och **Trend**.
+- **På valfri butikssida för bläddring eller landnings sida i näthandel:** Om kunder eller butikspartner besöker en butikssida kan rekommendationsmotorn föreslå produkter i listorna **Ny**. **Bästsäljande** och **Trend**.
 - **På sidan produktinformation:** om kunder eller säljare besöker en sida med **produktinformation** föreslår rekommendationsmotorn ytterligare artiklar som troligen kommer att köpas. Dessa objekt visas i listan **människor gillar också**.
 - **På transaktionssidan eller på utcheckningssidan:** rekommendationsmotorn föreslår artiklar, baserat på den fullständiga listan med artiklar i varukorgen. Dessa objekt visas i listan över **Köps ofta ihop**.
 - **Personliga rekommendationer:** inköpare kan ge de inloggade kunderna en anpassad **plockning för dig**, förutom nya funktioner som gör att befintliga listscenarier kan anpassas baserat på den kunden. Mer information finns i [Aktivera anpassade rekommendationer.](personalized-recommendations.md).

@@ -19,11 +19,11 @@ ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
 ms.openlocfilehash: 80eaf36fb382e0ebe0a66383ea17ab76faa07dfa
-ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "3819823"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415953"
 ---
 # <a name="omni-channel-payments-overview"></a>Översikt över betalningar i flera kanaler
 
@@ -39,7 +39,7 @@ Det här ämnet innehåller en översikt betalningar i flera kanaler i Dynamics 
 | Korttoken | Ett token som en betalningsprocessor tillhandahåller för lagring i kassasystemet. En korttoken kan bara användas av den handlare som tar emot det. Korttoken kallas ibland även för *kortreferenser*. |
 | Autentiseringstoken (auth) | Ett unikt ID som en betalningsprocess ger som en del av svaret som den skickar till ett kassasystem när en auktoriseringsbegäran utförts av kassasystemet. Du kan använda en autentiseringstoken senare om behandlaren anropas för att utföra åtgärder som att återföra eller annullera auktoriseringen. Den används emellertid oftast för att samla in pengar när en order är uppfylld eller om en transaktion har slutförts. Autoriseringstoken kallas ibland även för *Autoriseringsreferenser*. |
 | Insamlingstoken | En referens som en betalningsbehandlare använder för ett kassasystem när en betalning har slutförts eller registrerats. Insamlingstoken kan sedan användas för att referera till betalningsinsamlad i efterföljande operationer, t.ex. återbetalningsbegär. | 
-| Kortet är inte tillgängligt | En term som refererar till betalningstransaktioner där ett fysiskt kort inte visas. Dessa transaktioner kan till exempel inträffa i scenarier med e-handel eller kundtjänst. För dessa transaktioner anges den betalningsrelaterade informationen manuellt på en e-handelswebbplats, i ett kundtjänstflöde, eller i kassan eller i betalningsterminalen. |
+| Kortet är inte tillgängligt | En term som refererar till betalningstransaktioner där ett fysiskt kort inte visas. Dessa transaktioner kan till exempel inträffa i scenarier med näthandel eller kundtjänst. För dessa transaktioner anges den betalningsrelaterade informationen manuellt på en näthandelswebbplats, i ett kundtjänstflöde, eller i kassan eller i betalningsterminalen. |
 | Kortet är tillgängligt | En term som refererar till betalningstransaktioner där ett fysiskt kort presenteras och används på en betalningsterminal som är ansluten till Microsoft Dynamics 365 kassasystemet. |
 
 ## <a name="overview"></a>Översikt
@@ -66,8 +66,8 @@ Den första uppsättningen med API:er **iNamedRequestHandler**. Den stöder impl
 
 Följande komponenter och inställningssteg krävs:
 
-- **eCommerce-integration** : en integration med Handel krävs för att stödja scenarier där en order kommer från en onlinebutik. Mer information om Retail E-commerce SDK finns i [SKD (Software Development Kit) för e-handelsplattform](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). I en demomiljö har referensbutiken stöd för betalningsscenarier i flera kanaler. 
-- **Konfiguration av onlinebetalningar:** inställningarna för onlinekanal måste inkludera en betalningsanslutning som har uppdaterats för att stödja betalningar i flera kanaler. Alternativt kan den färdiga betalningssndlutningen användas. Information om hur du konfigurerar Adyen för betalningsanslutning för onlinebutiker finns i [Adyen betalningsanslutning](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) Förutom de inställningssteg för e-handel som beskrivs i det avsnittet, måste parametern **Tillåt att spara betalningsinformation i e-handel** anges till **Sant** i inställningarna för Adyen-anslutningen. 
+- **eCommerce-integration** : en integration med Handel krävs för att stödja scenarier där en order kommer från en onlinebutik. Mer information om Retail E-commerce SDK finns i [SKD (Software Development Kit) för näthandelsplattform](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). I en demomiljö har referensbutiken stöd för betalningsscenarier i flera kanaler. 
+- **Konfiguration av onlinebetalningar:** inställningarna för onlinekanal måste inkludera en betalningsanslutning som har uppdaterats för att stödja betalningar i flera kanaler. Alternativt kan den färdiga betalningssndlutningen användas. Information om hur du konfigurerar Adyen för betalningsanslutning för onlinebutiker finns i [Adyen betalningsanslutning](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) Förutom de inställningssteg för näthandel som beskrivs i det avsnittet, måste parametern **Tillåt att spara betalningsinformation i näthandel** anges till **Sant** i inställningarna för Adyen-anslutningen. 
 - **Konfiguration av betalningar i flera kanaler** I backoffice, gå till **Butik och handel \> Administrationsinställning \> Parametrar \> Gemensamma handelsparametrar**. sedan på fliken **Betalningar i flera kanaler** anger du alternativet **Använd betalningar i flera kanaler** till **Ja**. I Commerce versioner 10.0.12 och senare finns den här inställningen på arbetsytan **funktionshantering**. Välj funktionen **Betalningar i flera kanaler** och klicka på **Aktivera nu**. 
 - **Betalningstjänster:** Kundtjänst använder standardbetalningsanslutningen på sidan **betalningstjänster** för att bearbeta betalningar. Om du vill stödja scenarier som t.ex. "Köp i kundtjänst, hämta i butik" måste den här standardbetalningsanslutningen vara Adyen betalningsanslutning eller en betalningsanslutning som uppfyller implementeringskraven för betalningar i flera kanaler.
 - **EFT-tjänst** : betalningar via en betalningsterminal måste ställas in på snabbfliken **EFT** i maskinvaruprofilen. Adyen-anslutaren stöder färdiga scenarier för betalningar i flera kanaler. Andra betalningsanslutningar som stöder **iNamedRequestHandler**-gränssnittet kan även användas om de stöder betalningar i flera kanaler.
@@ -136,7 +136,7 @@ Följ dessa steg om du vill köra scenariet:
 5. På sidan ny försäljningsorder väljer du **rubrik** för att visa orderrubriken. 
 6. På sidan **order rubrik** ställer du in webbplatsen till **central** och lagerstället till **Houston**.
 7. På fliken **leverera** ställer du in **leveransmetod** till **60** för kundupphämtning.
-8. Markera **rader**och lägg till en eller flera rader i ordern. 
+8. Markera **rader** och lägg till en eller flera rader i ordern. 
 9. Välj **Slutför** om du vill ange flödet för slutförande av order.
 10. Bläddra ned till betalningssektionerna väljer du **Lägg** och välj sedan och där betalningsmetodtypen anges **Kortet**. 
 11. Välj plus tecknet (**+**) om du vill lägga till en kortbetalning. 
@@ -166,8 +166,8 @@ Följ dessa steg om du vill köra scenariet:
 2. På sidan **transaktion** lägger du till Karen Berg till transaktionen med hjälp av det numeriska tangentbordet för **2001**.
 3. Lägg till en eller flera rader till transaktionen.
 4. Välj **order** om du vill visa orderalternativen.
-5. Välj **plocka alla**och välj sedan när du uppmanas **kundorder**.
-6. Ange **Seattle**i sökfältet och välj sedan butiken i **Stockholm** för upphämtning. 
+5. Välj **Hämta alla** och välj sedan när du uppmanas **kundorder**.
+6. Ange **Seattle** i sökfältet och välj sedan butiken i **Stockholm** för upphämtning. 
 7. Välj **OK** om du vill acceptera aktuellt datum som datum för upphämtningen.
 9. Välj **Betalningskort** för att initiera betalningen.
 10. Betalningsmedel kortbetalning för det belopp som förfaller till insättning. 
@@ -193,7 +193,7 @@ Följ dessa steg om du vill köra scenariet:
 2. På sidan **transaktion** lägger du till Karen Berg till transaktionen med hjälp av det numeriska tangentbordet för **2001**.
 3. Lägg till en eller flera rader till transaktionen.
 4. Välj **order** om du vill visa orderalternativen.
-5. Välj **leverera alla**och välj sedan när du uppmanas **kundorder**.
+5. Välj **leverera alla** och välj sedan när du uppmanas **kundorder**.
 6. På sidan för leveransmetod, välj **Standard på natten** och välj sedan **OK** för att acceptera dagens datum som leveransdatum. 
 7. Välj **OK** om du vill acceptera aktuellt datum som datum för upphämtningen.
 8. Välj **Betalningskort** för att initiera betalningen.

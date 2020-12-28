@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: db4866b22060b764fdde3e4a44e99e969133c0a0
-ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3961620"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415924"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Spara, förhandsgranska och publicera en sida
 
@@ -71,7 +71,7 @@ Om du vill spara, förhandsgranska och publicera en startsida följer du stegen 
 1. Sök och välj startsidan för att öppna den i sidredigeraren.
 1. Välj **Redigera**.
 1. Ändra sidan efter behov.
-1. Välj **spara**och välj sedan **Avsluta redigeringen**.
+1. Välj **spara** och välj sedan **Avsluta redigeringen**.
 1. I fältet **kommentarer** anger du en notering om de ändringar som du har gjort och väljer sedan **OK**.
 1. Välj **Förhandsgranska** om du vill förhandsgranska din sida. När du är klar kan du stänga fliken förhandsgranskning och återgå till redigeringsverktyget.
 1. Markera **Publicera**.

@@ -19,11 +19,11 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: dd2ce6b223c99d890691d5fdb9f93a5ceaf33a0d
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154190"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415952"
 ---
 # <a name="peripherals"></a>Kringutrustning
 
@@ -174,7 +174,7 @@ När en maskinvarustation används för att stödja delning av kringutrustning m
 -   **Kvittoskrivaren** – om två kvittoutskriftskommandon skickas till maskinvarustationen på samma gång kan ett kommando försvinna, beroende på vilken enhet. Vissa enheter har internminne eller poolning som kan förhindra att det här problemet. Om utskriftskommando misslyckas kommer kassören att få ett felmeddelande och kan försöka utföra utskriftkommandot från kassan.
 -   **Betalningsterminal** – om en kassör försöker utföra en transaktion som redan används på en betalningsterminal får kassören ett meddelande att terminalen används och uppmanas att försöka igen senare. Vanligtvis kan kassörer se att en terminal används redan och ska vänta tills den andra transaktionen har slutförts innan de kan försöka igen.
 
-Validering planeras för kommande versioner för att identifiera om enheter som inte stöds har ställts in för en maskinvaruprofil som är mappad till en delad maskinvarustation. Om några enheter som inte stöds upptäcks får användaren ett meddelande om att enheterna inte stöder delad maskinvarustationer. När det gäller delade maskinvarustationer i **Välj vid anbudet** är inställt på **Ja** på registernivån. Kassaanvändaren uppmanas att välja maskinvarustation när ett anbud har valts för en transaktion i kassan. När maskinvarustationen markeras endast vid tid för anbud läggs maskinvarustationen till direkt till kassaarbetsflödet för mobila scenarier. Som en extra förmån används inte radvisning för betalningsterminal för gemensamma scenarion. Om betalningsterminal används som en radvisning hindras andra användare från att använda terminalen förrän transaktionen har slutförts. Mobila scenarier kan rader läggas till en transaktion under en längre period. Därför krävs alternativet **Välj vid anbudet** krävs för att garantera optimala enhetstillgänglighet.
+Validering planeras för kommande versioner för att identifiera om enheter som inte stöds har ställts in för en maskinvaruprofil som är mappad till en delad maskinvarustation. Om några enheter som inte stöds upptäcks får användaren ett meddelande om att enheterna inte stöder delad maskinvarustationer. När det gäller delade maskinvarustationer i **Välj i samband med offert** är inställt på **Ja** på registernivån. Kassaanvändaren uppmanas att välja maskinvarustation när en offert har valts för en transaktion i kassan. När maskinvarustationen endast markeras vid tidpunkten för offert läggs maskinvarustationen till direkt till kassaarbetsflödet för mobila scenarier. Som en extra förmån används inte radvisning för betalningsterminal för gemensamma scenarion. Om betalningsterminal används som en radvisning hindras andra användare från att använda terminalen förrän transaktionen har slutförts. Mobila scenarier kan rader läggas till en transaktion under en längre period. Därför krävs alternativet **Välj i samband med offert** krävs för att garantera optimala enhetstillgänglighet.
 
 ### <a name="network-peripherals"></a>Nätverkskringutrustning
 
@@ -557,7 +557,7 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som delar m
 17. På maskinvarustationen urvalssida klickar du på den nyligen valda maskinvarustationen för att aktivera den. 
 
 > [!NOTE]
-> Om enheter ofta använder olika maskinvarustationer rekommenderar vi att du konfigurerar Modern POS för att uppmana kassörer att välja en maskinvarustation när de börjar anbudsprocessen. Klicka på **Retail och Commerce** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassor**. Markera kassan och ange alternativet **Välj vid anbud** till **Ja**. Använd distributionsschema **1090** för att synkronisera ändringar i databasen för kanalen.
+> Om enheter ofta använder olika maskinvarustationer rekommenderar vi att du konfigurerar Modern POS för att uppmana kassörer att välja en maskinvarustation när de börjar offertprocessen. Klicka på **Retail och Commerce** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassor**. Markera kassan och ange alternativet **Välj i samband med offert** till **Ja**. Använd distributionsschema **1090** för att synkronisera ändringar i databasen för kanalen.
 
 ## <a name="extensibility"></a>Utbyggbarhet
 Information om tilläggsscenarier för maskinvarustationen finns i [maskinvarustationstillägg](dev-itpro/hardware-station-extensibility.md).

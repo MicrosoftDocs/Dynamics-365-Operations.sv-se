@@ -18,11 +18,11 @@ ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: a83affb5b383b50317ddf53de4d3bf565f0d9439
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973966"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415941"
 ---
 # <a name="work-with-publish-groups"></a>Arbeta med publiceringsgrupper
 
@@ -33,7 +33,7 @@ I det här avsnittet beskrivs funktionen publicera grupper i Microsoft Dynamics 
 
 ## <a name="overview"></a>Översikt
 
-E-handelswebbplatser uppdateras ständigt med nytt innehåll under hela året. Uppdateringar publiceras ofta i omgångar runt upptagna e-handelsevenemang som helgdagar, säsongsbetonade marknadsföringskampanjer eller kampanjlanseringar. Dessa uppdateringar kräver ofta att grupper av webbplatsinnehåll (till exempel sidor, bilder, fragment och mallar) mellanlagras, verifieras och publiceras samtidigt i en enda åtgärd.
+näthandelswebbplatser uppdateras ständigt med nytt innehåll under hela året. Uppdateringar publiceras ofta i omgångar runt upptagna näthandelsevenemang som helgdagar, säsongsbetonade marknadsföringskampanjer eller kampanjlanseringar. Dessa uppdateringar kräver ofta att grupper av webbplatsinnehåll (till exempel sidor, bilder, fragment och mallar) mellanlagras, verifieras och publiceras samtidigt i en enda åtgärd.
 
 Möjligheten att gruppera objekt i logiska uppsättningar som publicerar objekt tillsammans, där varje uppsättning har sin egen livscykel, ger många fördelar för webbplatsförfattarna. I Commerce kallas dessa logiska uppsättningar för publiceringsgrupper. De låter webbplatsförfattarna spåra uppsättningar av uppdateringar som sina egna konfigurerbara, testbara och publicerbara entiteter.
 
@@ -72,7 +72,7 @@ I Commerce är standard redigeringskontexten den aktiva webbplatsens kontext. Re
 Om du vill arbeta i en publiceringsgrupp måste du växla till redigeringskontexten för publiceringsgruppen för den. Så här anger du publiceringsgruppens kontext.
 
 - I det vänstra navigeringsfönstret markerar du kontext kontrollen direkt under **publiceringsgrupper** och markerar sedan namnet på publiceringsgruppen i listan med alternativ som visas. Kontextkontrollen byter namn och visar namnet på publiceringsgruppen.
-- I det vänstra navigeringsfönstret väljer du **publiceringsgrupper**och markerar sedan namnet på **Publiceringsgruppen** under publiceringsgrupper. Kontextkontrollen byter namn och visar namnet på publiceringsgruppen.
+- I det vänstra navigeringsfönstret väljer du **publiceringsgrupper** och markerar sedan namnet på **Publiceringsgruppen** under publiceringsgrupper. Kontextkontrollen byter namn och visar namnet på publiceringsgruppen.
 
 När du har angett redigeringskontexten för publiceringsgruppen arbetar du i den publiceringsgruppens kontext när du förhandsgranskar och redigerar webbplatsinnehåll.
 

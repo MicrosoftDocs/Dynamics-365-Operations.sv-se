@@ -18,11 +18,11 @@ ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: e663a5dca76d570217b7e02444689a2e2d312c41
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975181"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415741"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Visa ordermeddelanden i kassan (POS)
 
@@ -53,8 +53,8 @@ Om du vill aktivera meddelanden för utförande av orderuppfyllelse, se följand
 
 När du har slutfört föregående steg ska medarbetare kunna visa meddelanden i kassan. För att visa meddelanden, tryck på meddelandeikonen i det övre högra hörnet av kassan. Ett meddelandecenter visas och visar meddelanden för utförandet av orderuppfyllelse. Meddelancecentret ska visa följande grupper inom utförandet av orderuppfyllelse:
 
-- **Upphämtning i butik** Den här gruppen visar antalet order som har leveransläget **upphämtning** och upphämtning kommer från den aktuella butiken. Du kan trycka på numret i gruppen så öppnas sidan **orderuppfyllelse**. I det här fallet filtreras sidan så att den endast visar de aktiva order som har ställts in för upphämtning från den aktuella butiken.
-- **Leverera från butik** Den här gruppen visar antalet order som har leveransläget **Leverans** och leverans är planerad från den aktuella butiken. Du kan trycka på numret i gruppen så öppnas sidan **orderuppfyllelse**. I det här fallet filtreras sidan så att den endast visar de aktiva order som har ställts in för försändelse från den aktuella butiken.
+- **Upphämtning i butik** Den här gruppen visar antalet order som har leveranssättet **upphämtning** och upphämtning kommer från den aktuella butiken. Du kan trycka på numret i gruppen så öppnas sidan **orderuppfyllelse**. I det här fallet filtreras sidan så att den endast visar de aktiva order som har ställts in för upphämtning från den aktuella butiken.
+- **Leverera från butik** Den här gruppen visar antalet order som har leveranssättet **Leverans** och leverans är planerad från den aktuella butiken. Du kan trycka på numret i gruppen så öppnas sidan **orderuppfyllelse**. I det här fallet filtreras sidan så att den endast visar de aktiva order som har ställts in för försändelse från den aktuella butiken.
 
 När nya order tilldelats butiken för uppfyllelse kommer meddelandeikonen att ändras för att indikera att det finns nya meddelanden och antalet för lämpliga grupper uppdateras. Även om grupperna uppdateras med jämna mellanrum kan kassaanvändare uppdatera grupperna manuellt när som helst genom att välja knappen **uppdatera** bredvid gruppen. Slutligen, om en grupp har en ny artikel som den aktuella medarbetaren inte har sett visar gruppen en explosionsikon som indikerar nytt innehåll.
 

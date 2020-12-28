@@ -1,9 +1,9 @@
 ---
 title: Hantera tjänstledighet för medarbetare
-description: Definiera personalparametrar för tjänstledighet och frånvaro i Dynamics 365 Human Resources.
+description: Hantera tjänstledighet för medarbetare i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
-ms.date: 04/30/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4c45d2c57d89929ac9c423ab58aee4cbfa213509
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: 627c8959b1845fbad761a85bdca7dc93bfc6a105
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712143"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4420678"
 ---
 # <a name="manage-employee-leave"></a>Hantera tjänstledighet för medarbetare
 
@@ -31,7 +31,7 @@ Du kan hantera en medarbetares tjänstledighet efter ledighetstyp. Det inkludera
 
 ## <a name="adjust-leave-balances"></a>Justera tjänstledighetssaldon
 
-1. Välj **tjänstledighet**för medarbetarens post.
+1. Välj **tjänstledighet** för medarbetarens post.
 
 2. Välj **Inställning för tjänstledighet och frånvaro**.
 
@@ -44,6 +44,13 @@ Du kan hantera en medarbetares tjänstledighet efter ledighetstyp. Det inkludera
 6. Du kan även välja ett **Datum**. 
 
 Du kan inkludera en orsakskod och en kommentar när du justerar en medarbetares tjänstledighetssaldo. 
+
+>[!IMPORTANT]
+>Visa mer information om att lämna saldon är i förhandsgranskning. Du måste aktivera den i **sandbox-miljön**. Mer information om att aktivera förhandsfunktioner finns i [Hantera funktioner](hr-admin-manage-features.md).<br>
+>När du hovrar över en tjänstledighet visas nu:<br>
+>- **Tillgänglig**: totalt under året – ta detta år
+>- **Total i år**: alla periodiseringar, justeringar och överföringar för året
+>- **Taget i år**: alla godkända ledigheter
 
 ## <a name="see-also"></a>Se även
 

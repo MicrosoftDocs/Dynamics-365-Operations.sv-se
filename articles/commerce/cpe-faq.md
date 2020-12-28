@@ -18,11 +18,11 @@ ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 637714e28b9f8f4aa66e251e709d8f78bff2739d
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599780"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415730"
 ---
 # <a name="dynamics-365-commerce-evaluation-environment-faq"></a>Dynamics 365 Commerce utvärderingsmiljö – vanliga frågor
 
@@ -30,11 +30,11 @@ ms.locfileid: "3599780"
 
 Det här avsnittet innehåller vanliga frågor och svar om utvärderingsmiljö för Microsoft Dynamics 365 Commerce.
 
-**Kan vi använda utvärderingsmiljön för Commerce som ett e-handelsskyltfönstret för kunder som för närvarande implementerar Retail?**
+**Kan vi använda utvärderingsmiljön för Commerce som ett näthandelsskyltfönstret för kunder som för närvarande implementerar Retail?**
 
 Nr. Commerce utvärderingsmiljön är endast till för utvärdering. Om du behöver en miljö för en kund som implementerar Retail kontaktar du Microsoft.
 
-**Kan utvärderingsmiljön för Commerce användas för att etablera e-handelsfunktioner ovanpå ett befintligt program/miljö som implementerar Retail?**
+**Kan utvärderingsmiljön för Commerce användas för att etablera näthandelsfunktioner ovanpå ett befintligt program/miljö som implementerar Retail?**
 
 Nej (oftast). Commerce utvärderingskomponenterna är bara tillgängliga för miljöer som matchar de konfigurationer som anges i guiden för förutsättningar. Dessutom är de nödvändiga grundläggande demodata inte tillgängliga i miljöer som distribuerades med en första utgåva som är tidigare än 10.0.8. 
 
@@ -42,7 +42,7 @@ Nej (oftast). Commerce utvärderingskomponenterna är bara tillgängliga för mi
 
 En traditionell Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce huvudkontoret demomiljö (virtuell dator \[VM\]) kommer att finnas i Azure-prenumeration. Du kan använda [Azure priskalkylatorn](https://azure.microsoft.com/pricing/calculator/) för att uppskatta den här kostnaden.
 
-Andra komponenter, t.ex. Commerce Scale Unit, Commerce webbplatsskaparen och din e-handelswebbplats kommer att vara tillgängliga som en tjänst (SaaS) och värd från Microsoft.
+Andra komponenter, t.ex. Commerce Scale Unit, Commerce webbplatsskaparen och din näthandelswebbplats kommer att vara tillgängliga som en tjänst (SaaS) och värd från Microsoft.
 
 **Vilka Azure-geografiska områden stöds för närvarande i utvärderingsmiljön Commerce?**
 
@@ -54,7 +54,7 @@ Dynamics 365 Commerce och Commerce Scale Unit är helt programvara som en tjäns
 
 **Hur länge kan utvärderingsmiljön för Commerce användas?**
 
-Commerce utvärderingsmiljön har en tidsgräns på 30 dagar från det datum då SaaS-komponenter som Commerce Scale Unit, Commerce webbplatsskaparen och din e-handelswebbplats etableras.
+Commerce utvärderingsmiljön har en tidsgräns på 30 dagar från det datum då SaaS-komponenter som Commerce Scale Unit, Commerce webbplatsskaparen och din näthandelswebbplats etableras.
 
 **Kan jag förlänga tidsgränsen för min utvärderingsmiljö för Commerce?**
 

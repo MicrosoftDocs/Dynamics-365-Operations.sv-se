@@ -18,11 +18,11 @@ ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 68132a78921e0a38c61c85bcc2b89dca3c25b04e
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107217"
+ms.locfileid: "4415981"
 ---
 # <a name="store-order-fulfillment"></a>Orderuppfyllelse i butik
 
@@ -50,7 +50,7 @@ De färdiga parametrar för utförande av orderuppfyllelse kan användas till å
 
 ## <a name="orders-for-fulfillment"></a>Order för uppfyllelse
 
-Utförandet av orderuppfyllelse visar bara order som antingen kommer att plockas upp i eller levereras från den aktuella butiken. Order för andra butiker att uppfylla visas inte när du använder utförandet av orderuppfyllelse.
+Utförandet av orderuppfyllelse visar bara order som antingen kommer att hämtas upp i eller levereras från den aktuella butiken. Order för andra butiker att uppfylla visas inte när du använder utförandet av orderuppfyllelse.
 
 ## <a name="line-selection"></a>Radurval
 
@@ -165,7 +165,7 @@ Orderraderna som ska levereras från lagret kan bearbetas via enhetligt orderutf
 - **Resulterande status:** fakturerat eller delvis fakturerad
 - **Resulterande backoffice-status:** fakturerad eller delvis fakturerad
 
-Rader som har skickats från enhetlig orderuppfyllelse faktureras från backoffice på liknande sätt som om ordern faktureras direkt från backoffice. Rader som levereras från enhetliga orderuppfyllande läses inte in i transaktionsvyn och det lämnas inget anbud när raderna har levererats.
+Rader som har skickats från enhetlig orderuppfyllelse faktureras från backoffice på liknande sätt som om ordern faktureras direkt från backoffice. Rader som levereras från enhetliga orderuppfyllande läses inte in i transaktionsvyn och det lämnas inga offerter när raderna har levererats.
 
 Orderrader som har levererats fullständigt visas inte längre i enhetlig orderuppfyllelse. Rader som delvis har hämtats fortsätter att visas i enhetlig orderuppfyllande tills de har levererats i sin helhet.
 
@@ -199,7 +199,7 @@ Orderrader i kassan har flera statusar som återspeglar status för orderraden. 
 - **Plockning** - Raderna som ska plockas för närvarande på butiksnivån har statusen **plockning**. Samma rader, när de visas i backoffice, visas som **Orderbehandling**.
 - **Plockad** och **Delvis plockad** - Raderna som plockats eller delvis plockats vid kassan får statusen **Plockad** eller **Delvis plockad**. Samma rader i backoffice visas också som **Plockad** eller **Delvis plockad**.
 - **Packad** och **Delvis packad** - Raderna som packats eller delvis packats vid kassan får statusen **Packad** eller **Delvis packad**. Samma rader i backoffice visas också som **Levererade** eller **Delvis levererade**.
-- **Delvis fakturerad** - Raderna som har delvis plockats eller delvis levererats får statusen **Delvis fakturerade** i kassan och backoffice.
+- **Delvis fakturerad** - Raderna som har delvis hämtats eller delvis levererats får statusen **Delvis fakturerade** i kassan och backoffice.
 - **Fakturerad** - Rader som är fullständigt fakturerade i kassan visas inte längre för uppfyllelse. I backoffice är statusen för dessa rader **Fakturerad**.
 
 ## <a name="order-fulfillment-filtering"></a>Orderuppfyllelsefiltrering

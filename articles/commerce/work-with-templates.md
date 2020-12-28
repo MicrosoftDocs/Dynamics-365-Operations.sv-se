@@ -18,11 +18,11 @@ ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: a3fc4259a76f6edcfaa0b8f6e08292477c6c0835
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269876"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415845"
 ---
 # <a name="work-with-templates"></a>Arbeta med mallar
 
@@ -65,7 +65,7 @@ I dispositionsträdets vy till vänster visas de moduler och strukturer som är 
 | Egenskapsnamn | Beskrivning |
 |---|---|
 | Minsta antal förekomster | Den här egenskapen definierar det minsta antalet förekomster för den valda modulen. Om värdet till exempel är inställt på **1**, krävs modulen för underordnade författare, men om värdet är **0** (noll) är modulen valfri. |
-| Max antal förekomster | Den här egenskapen definierar det högsta antalet förekomster för den valda modulen. Om värdet till exempel är inställt på **1**kan modulen bara läggas till en gång. |
+| Max antal förekomster | Den här egenskapen definierar det högsta antalet förekomster för den valda modulen. Om värdet till exempel är inställt på **1** kan modulen bara läggas till en gång. |
 | Min moduler (behållare) | För moduler som innehåller andra moduler (dvs. för *behållarmoduler*) definierar denna egenskap det minsta antal moduler som ska läggas till som underordnade. För till exempel en karusellmodul kan värdet vara ett värde som är större än 1. |
 | Max moduler (behållare) | Den här egenskapen definierar det maximala antalet moduler som ska läggas till som underordnade för behållarmoduler. För till exempel en karusellmodul kan värdet vara ett värde som är mindre än 10. |
 | Låst | En **låst** boolesk kontroll visas bredvid alla kärnmodulegenskaper. Mallen gör att författaren kan låsa en modulinställning i mallen. En modulinställning som är låst kan inte åsidosättas av underordnade layouter eller sidor. Det blir ett centralt redigerbart egenskaps värde för alla layouter och sidor som använder mallen. |

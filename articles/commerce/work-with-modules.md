@@ -18,11 +18,11 @@ ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 301eb6206fb9e02c3aa7d3c07cf368ba800a1ab9
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818432"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415849"
 ---
 # <a name="work-with-modules"></a>Arbeta med moduler
 
@@ -34,7 +34,7 @@ I det här avsnittet beskrivs hur och när du ska använda moduler i Microsoft D
 
 Moduler är logiska byggblock som utgör sidans struktur och har olika syfte och omfång. Vissa moduler är behållare på hög nivå, och de är bara avsedda att innehålla och organisera andra moduler (underordnade moduler). Andra moduler, t.ex. en enkel bildplaceringsmodul, har ett mycket specifikt syfte. Andra moduler, till exempel en karusellmodul, ligger någonstans mellan dessa två kategorier.
 
-Webbplatsen Dynamics 365 Commerce innehåller som standard ett modulbibliotek som gör att du kan uppnå de flesta grundläggande näthandelsscenarier. Du bör kunna skapa en slutpunkt-till-slutpunkt-plats för e-handel genom att bara använda de här modulerna. Men du kanske också vill anpassa dessa moduler eller bygga nya, anpassade moduler för specifika behov. Om du vill skapa anpassade moduler kan du använda en moduldesign-SDK (Software Development Kit) som hjälper dig att skapa ett anpassat bibliotek för modulen.
+Webbplatsen Dynamics 365 Commerce innehåller som standard ett modulbibliotek som gör att du kan uppnå de flesta grundläggande näthandelsscenarier. Du bör kunna skapa en slutpunkt-till-slutpunkt-plats för näthandel genom att bara använda de här modulerna. Men du kanske också vill anpassa dessa moduler eller bygga nya, anpassade moduler för specifika behov. Om du vill skapa anpassade moduler kan du använda en moduldesign-SDK (Software Development Kit) som hjälper dig att skapa ett anpassat bibliotek för modulen.
 
 ## <a name="container-modules-and-slots"></a>Moduler och platser för behållare
 

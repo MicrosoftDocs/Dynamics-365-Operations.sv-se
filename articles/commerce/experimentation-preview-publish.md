@@ -19,15 +19,15 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: f1a565917ab7a048d4d455bc0a0fbd9316237aeb
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4097126"
+ms.locfileid: "4415970"
 ---
 # <a name="preview-and-publish-an-experiment"></a>Förhandsgranska och publicera ett experiment
 
-I det här avsnittet beskrivs hur du förhandsgranskar och publicerar ditt experiment Dynamics 365 Commerce när du har [kopplat experimentet och redigerat dina varianter](experimentation-connect-edit.md). I bilden nedan visas alla steg som ingår när du ställer in och kör ett experiment på en e-handelswebbplats i Dynamics 365 Commerce. Ytterligare steg beskrivs i olika avsnitt.
+I det här avsnittet beskrivs hur du förhandsgranskar och publicerar ditt experiment Dynamics 365 Commerce när du har [kopplat experimentet och redigerat dina varianter](experimentation-connect-edit.md). I bilden nedan visas alla steg som ingår när du ställer in och kör ett experiment på en näthandelswebbplats i Dynamics 365 Commerce. Ytterligare steg beskrivs i olika avsnitt.
 
 [ ![Experimentets användarresa - granska och publicera](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 

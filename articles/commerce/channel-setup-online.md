@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107240"
+ms.locfileid: "4415983"
 ---
 # <a name="set-up-an-online-channel"></a>Ställ in en onlinekanal
 
@@ -66,7 +66,7 @@ I bilden nedan visas ett exempel på onlinekanal.
 
 ## <a name="set-up-languages"></a>Ställ in språk
 
-Om din e-handelswebbplats ska stödja flera språk expanderar du avsnittet **språk** och lägger till ytterligare språk efter behov.
+Om din näthandelswebbplats ska stödja flera språk expanderar du avsnittet **språk** och lägger till ytterligare språk efter behov.
 
 ## <a name="set-up-payment-account"></a>Ställ in betalningskonto
 
@@ -76,7 +76,7 @@ Från avsnittet **betalningskonto** kan du lägga till en tredje parts betalning
 
 Ytterligare uppgifter som krävs för inställningar av onlinekanal inkluderar inställning av betalningsmetoder, leveranssätt och tilldelning av uppfyllelsegrupp.
 
-I följande bild visas alternativen **leveranssätt** , **betalningsmetoder** och **uppfyllelse av grupptilldelning** på fliken **inställning**.
+I följande bild visas alternativen **leveranssätt**, **betalningsmetoder** och **uppfyllelse av grupptilldelning** på fliken **inställning**.
 
 ![Ytterligare åtgärder för konfigurering av onlinekanal](media/channel-setup-online-3.png)
 
@@ -103,7 +103,7 @@ Om du vill ändra eller lägga till ett leveranssätt följer du stegen nedan.
 
 1. I navigeringsfönstret, gå till **Moduler \> Lagerhantering \> Leveranssätt**.
 1. I åtgärdsfönstret, välj **Ny** om du vill skapa ett nytt leverans sätt, eller välj ett befintligt läge.
-1. I avsnittet **butikskanaler** , välj **lägg till rad** om du vill lägga till kanalen. Lägga till kanaler med hjälp av organisationsnoder istället för att lägga till varje kanal individuellt kan lägga till kanaler effektivare.
+1. I avsnittet **butikskanaler**, välj **lägg till rad** om du vill lägga till kanalen. Lägga till kanaler med hjälp av organisationsnoder istället för att lägga till varje kanal individuellt kan lägga till kanaler effektivare.
 
 I bilden nedan visas ett exempel på ett leveranssätt.
 
@@ -116,7 +116,7 @@ Så här ställer du in en tilldelning av uppfyllelsegrupp.
 1. I åtgärdsfönstret, välj fliken **Inställningar** och välj sedan **Tilldelning av uppfyllelsegrupp**.
 1. Klicka på **Ny** i åtgärdsfönstret.
 1. I listrutan **uppfyllelsegrupp** väljer du en uppfyllelsegrupp.
-1. I listrutan **Beskrivning** , ange en beskrivning.
+1. I listrutan **Beskrivning**, ange en beskrivning.
 1. Klicka på **Spara** i åtgärdsfönstret.
 
 I bilden nedan visas ett exempel på en inställning av tilldelning av uppfyllelsegrupp.

@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 32a7ca7c74b3f84519145d26c6e0461f546dbee3
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428766"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420657"
 ---
 # <a name="overview"></a>Översikt
 
@@ -32,8 +32,8 @@ Användarhandboken för Dynamics 365 Human Resources innehåller anvisningar om 
 ## <a name="set-up-human-resources"></a>Ställ in personal
 
 [Konfigurera personalparametrar](hr-setup-parameters.md)</br>
-[Konfigurera delade personalparametrar](hr-setup-shared-parameters.md)</br>
-[Ställa in arbetsflöden för personal](hr-setup-workflows.md)</br>
+[Konfigurera delade Human Resources-parametrar](hr-setup-shared-parameters.md)</br>
+[Ställa in arbetsflöden för Human Resources](hr-setup-workflows.md)</br>
 [Förstå Datum- och tid-fält](hr-setup-date-time-fields.md)</br>
 
 ## <a name="configure-organization-settings"></a>Konfigurera organisationsinställningar

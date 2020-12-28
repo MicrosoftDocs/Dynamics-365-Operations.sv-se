@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: edd4b999624a845fc145ed9ff348ae9cba782719
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010556"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420630"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Skapa en app för återkommande dataexport
 
@@ -104,7 +104,7 @@ Den stora delen av övningen innebär att skapa logikappen.
     3. Ställ in en HTTP **POST**-begäran för att anropa **ExportToPackage** DMF REST API.
 
         - **Metod:** POST
-        - **Url för begäran:** https://\<värdnamn\>/namnområden/\<namnområde\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
+        - **Url för begäran:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackage
         - **Huvudtext av begäran:**
 
             ```JSON
@@ -141,7 +141,7 @@ Den stora delen av övningen innebär att skapa logikappen.
         > Det här exemplet utför ingen felkontroll. **GetExecutionSummaryStatus** API:n kan returnera terminaltillstånd som har misslyckats (dvs. andra lägen än **slutförd**). Mer information finns i [API-dokumentationen](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus).
 
         - **Metod:** POST
-        - **Url för begäran:** https://\<värdnamn\>/namnområden/\<namnområde\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
+        - **Url för begäran:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
         - **Brödtext för begäran:** body('Invoke\_an\_HTTP\_request')?['value']
 
             > [!NOTE]
@@ -159,7 +159,7 @@ Den stora delen av övningen innebär att skapa logikappen.
     - Lägg till åtgärden **Anropa HTTP-begäran** för att anropa [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST API.
 
         - **Metod:** POST
-        - **Url för begäran:** https://\<värdnamn\>/namnområden/\<namnområde\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
+        - **Url för begäran:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
         - **Begärans brödtext:** {"executionId": body('GetExportedPackageURL')?['value']}
 
         ![Åtgärden GetExportedPackageURL](media/integration-logic-app-get-exported-package-step.png)

@@ -18,11 +18,11 @@ ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 4f54b9b8130a167dbecdb13fccd7039f827f6ed0
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761331"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415732"
 ---
 # <a name="cookie-compliance"></a>Cookie-kompatibilitet
 
@@ -32,7 +32,7 @@ I det här avsnittet beskrivs överväganden för cookie-efterlevnad och standar
 
 ## <a name="overview"></a>Översikt
 
-Sekretess är en viktig faktor när någon spårningsteknik som påverkar e-handelskunder används. På grund av sekretess standarder för efterlevnad, till exempel den allmänna dataskyddsförordningen (GDPR) i Europeiska unionen (EU), måste riktlinjerna för elektronisk sekretess övervägas för alla webbplatser som är aktiva idag. Eftersom många e-handelsplatser är globalt tillgängliga som standard är det viktigt att du granskar efterlevnadsstandarderna för din e-handelsplats.
+Sekretess är en viktig faktor när någon spårningsteknik som påverkar näthandelskunder används. På grund av sekretess standarder för efterlevnad, till exempel den allmänna dataskyddsförordningen (GDPR) i Europeiska unionen (EU), måste riktlinjerna för elektronisk sekretess övervägas för alla webbplatser som är aktiva idag. Eftersom många näthandelsplatser är globalt tillgängliga som standard är det viktigt att du granskar efterlevnadsstandarderna för din näthandelsplats.
 
 Om du vill veta mer om de grundläggande principer som Microsoft använder för cookie-efterlevnad besöker du [Microsoft Trust Center](https://www.microsoft.com/trust-center). På den webbplatsen kan du också få mer information om efterlevnadsområden och sekretess.
 
@@ -56,9 +56,9 @@ I följande tabell visas den aktuella referenslistan över cookies som placerats
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Används för att underhålla SSO-sessionen.                        |
 | x-ms-cpim-trans                             | Används för att spåra transaktioner (antalet öppna flikar som autentiserar mot en B2C-webbplats), inklusive den aktuella transaktionen. |
 
-## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Cookie-tillstånd för webbplatsanvändare på en e-handelsplats 
+## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Cookie-tillstånd för webbplatsanvändare på en näthandelsplats 
 
-Om en användare av en e-handelsplats eller en modul använder en icke-väsentlig cookie måste en webbplatsanvändare erhålla ett tillstånd innan cookien spåras. För att webbplatsanvändare ska kunna ge cookie-samtycke på e-handelsplatsen måste en webbplatsförfattare lägga till och konfigurera en modul för cookie-samtycke i sidans rubrikmodul för att säkerställa att samtycket uppmanas och tas emot. Tillstånd från webbplatsanvändare måste ges innan en funktion eller modul med en icke-väsentlig cookie kan återges på en webbplatssida.
+Om en användare av en näthandelsplats eller en modul använder en icke-väsentlig cookie måste en webbplatsanvändare erhålla ett tillstånd innan cookien spåras. För att webbplatsanvändare ska kunna ge cookie-samtycke på näthandelsplatsen måste en webbplatsförfattare lägga till och konfigurera en modul för cookie-samtycke i sidans rubrikmodul för att säkerställa att samtycket uppmanas och tas emot. Tillstånd från webbplatsanvändare måste ges innan en funktion eller modul med en icke-väsentlig cookie kan återges på en webbplatssida.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

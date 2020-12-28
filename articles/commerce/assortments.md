@@ -16,11 +16,11 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
 ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024017"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415758"
 ---
 # <a name="assortment-management"></a>Sortimenthantering
 
@@ -89,7 +89,7 @@ Förutom att stoppa försäljningen av en produkt kan du tillfälligt blockera f
 
 ### <a name="date-effectivity"></a>Gäller från
 
-Sortiment gäller utifrån datum. Återförsäljare kan därför konfigurera när produkter ska eller inte ska vara tillgängliga per kanal. Du kan definiera och publicera sortiment i förväg och ange start- och slutdatumen. Produkterna kommer automatiskt att bli tillgängliga eller inte tillgängliga vid bestämda tidpunkter.
+Sortiment gäller utifrån datum. Återförsäljare kan därför konfigurera när produkter ska eller inte ska vara tillgängliga per kanal. Du kan definiera och publicera sortiment i förväg och ange start- och slutdatumen. Produkterna kommer automatiskt att bli tillgängliga eller inte tillgängliga på bestämda datum.
 
 ### <a name="process-assortments-batch-job"></a>Bearbeta batchjobb för sortiment.
 

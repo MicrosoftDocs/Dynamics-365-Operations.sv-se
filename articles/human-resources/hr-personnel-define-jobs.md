@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 47a81d5c872b49b2395ed687855798fe04772b7e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428672"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420609"
 ---
 # <a name="define-new-jobs"></a>Definiera nya jobb
 
@@ -57,7 +57,7 @@ Denna uppgift är avsedd för generering av ett nytt jobb. Detta ska utföras me
 21. Hitta och markera önskad post i listan.
 22. Klicka på länken på den valda raden i listan.
 23. Växla utökningen av avsnittet Kompetenser.
-    * Observera att fälten på snabbflikarna för kunskap, färdigheter och certifikat är blanka. När du har kopierat information från en jobbmall, kommer information i dessa fält att anges i ett enda steg.   
+    * Observera att fälten på snabbflikarna för kunskap, färdigheter och certifikat är blanka. När du har kopierat information från en jobbmall, kommer information i dessa fält att anges i ett enda steg.   
 24. Klicka på Spara.
 25. Klicka på Kopiera från.
 26. Klicka på Kopiera från mall.

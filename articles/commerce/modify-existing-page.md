@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 8ca23dcf568cb0df6934f0d6201e4aafba5f9ba1
-ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3961644"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415912"
 ---
 # <a name="modify-an-existing-site-page"></a>Ändra en befintlig webbplatssida
 
@@ -67,7 +67,7 @@ Följande exempel visar hur du ändrar startsidan genom att ändra videon som vi
 1. I egenskapsrutan till höger, välj egenskapen **video**. Tillgångsväljaren visas.
 1. Markera en tillgänglig videoresurs i tillgångsväljaren eller välj **överför ny tillgång** om du vill överföra en ny videotillgång.
 1. Välj **OK**.
-1. Välj **spara**och välj sedan **Avsluta redigeringen**.
+1. Välj **spara** och välj sedan **Avsluta redigeringen**.
 1. I fältet **kommentarer** anger du **Ändrade videon** och sedan **OK**.
 1. Välj **Förhandsgranska** om du vill förhandsgranska den uppdaterade sidan. När du är klar kan du stänga fliken förhandsgranskning och återgå till redigeringsverktyget.
 1. Markera **Publicera**.

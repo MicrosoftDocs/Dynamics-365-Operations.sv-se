@@ -20,11 +20,11 @@ ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
 ms.openlocfilehash: 2d463bf01659aeb6599023ce46da0c604f8eeff0
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107385"
+ms.locfileid: "4415982"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerade automatiska avgifter för flera kanaler
 
@@ -34,7 +34,7 @@ Det här avsnittet innehåller information om konfiguration och distribution av 
 
 När avancerade funktioner för automatiska avgifter är aktiverade stöds order som har skapats i någon handelskanal (kassa, kundtjänst och online), kan utnyttja den [automatisk debitering](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurationer som fastställs i ERP-programmet för både huvud- och relaterade avgifter på radnivå.
 
-I versioner före Retail version 10.0 [automatiska avgifter](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) endast tillgängliga för order som har skapats i e-handels- och kundtjänstkanaler. I versioner 10.0 och senare kan kassaskapade order utnyttja konfigurationer av automatiska avgifter. På så sätt kan ytterligare avgifter systematiskt läggas på försäljningstransaktioner.
+I versioner före Retail version 10.0 [automatiska avgifter](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) endast tillgängliga för order som har skapats i näthandels- och kundtjänstkanaler. I versioner 10.0 och senare kan kassaskapade order utnyttja konfigurationer av automatiska avgifter. På så sätt kan ytterligare avgifter systematiskt läggas på försäljningstransaktioner.
 
 När du använder versioner före version 10.0 uppmanas POS-användare att manuellt ange en leverans avgift när skapas fartygets ”alla” eller ”skicka valda” POS-transaktionen. När funktionerna för diverse avgifter i programmet används i förhållande till hur avgifterna skrivs till ordern, ges inte någon systematisk beräkning – beräkningen är beroende av användarens indata för att bestämma värdet på avgifterna. Avgifterna endast läggas till som en enda ”leverans”-relaterad kod och enkelt redigeras eller ändras när de har skapats i kassan.
 
@@ -44,7 +44,7 @@ Med funktionen för avancerade automatiska avgifter kan kassaanvändare ha syste
 
 ## <a name="enabling-advanced-auto-charges"></a>Aktivera avancerade automatiska avgifter
 
-På sidan **Butik och handel \> Administrationsinställning \> Parametrar \> Handelsparametrar** , gå till fliken **kundorder**. På snabbfliken **Avgifter** , ange **Använd avancerade automatiska avgifter** till **Ja**.
+På sidan **Butik och handel \> Administrationsinställning \> Parametrar \> Handelsparametrar**, gå till fliken **kundorder**. På snabbfliken **Avgifter**, ange **Använd avancerade automatiska avgifter** till **Ja**.
 
 ![Parametrar för avancerade automatiska avgifter](media/advancedchargesparameter.png)
 
@@ -52,7 +52,7 @@ När avancerad automatiska avgifter aktiveras uppmanas användare inte längre a
 
 När avancerade automatiska tillägg är aktiverade kommer befintliga **handelsparametrar** för **leveransavgiftskod** och **återbetala leveransavgifter** inte längre användas. Dessa parametrar kan endast användas om parametern **Använd avancerade automatiska avgifter** är inställd på **Nej**.
 
-Innan du aktiverar den här funktionen, kontrollera att du har testat och utbildad personal, eftersom den aktiverade funktionen ändrar affärsprocessflödet för hur frakt och andra avgifter beräknas och läggs till försäljningsorder från kassan. Kontrollera att du förstår effekten av processflödet för att skapa transaktioner från kassan. För kundtjänst och e-handel är effekterna av att aktivera avancerade automatiska tillägg minimal. Kundtjänst och e-handelsprogram fortsätter att ha samma sätt som de tidigare har haft relaterade till register för automatiska avgifter för att beräkna ytterligare avgifter. Användare av kundtjänstkanal kommer även fortsättningsvis ha möjlighet att manuellt redigera beräknade automatiska avgifter på rubrik- eller radnivå eller lägga till ytterligare tillägg manuellt på rubrik- eller radnivå.
+Innan du aktiverar den här funktionen, kontrollera att du har testat och utbildad personal, eftersom den aktiverade funktionen ändrar affärsprocessflödet för hur frakt och andra avgifter beräknas och läggs till försäljningsorder från kassan. Kontrollera att du förstår effekten av processflödet för att skapa transaktioner från kassan. För kundtjänst och näthandel är effekterna av att aktivera avancerade automatiska tillägg minimal. Kundtjänst och näthandelsprogram fortsätter att ha samma sätt som de tidigare har haft relaterade till register för automatiska avgifter för att beräkna ytterligare avgifter. Användare av kundtjänstkanal kommer även fortsättningsvis ha möjlighet att manuellt redigera beräknade automatiska avgifter på rubrik- eller radnivå eller lägga till ytterligare tillägg manuellt på rubrik- eller radnivå.
 
 ## <a name="additional-pos-operations"></a>Ytterligare kassaåtgärder
 
@@ -97,13 +97,13 @@ Skicka ändringarna till skalningsenhet för handel/Channel DB så att kassan ka
 
 #### <a name="sales-processing-for-this-scenario"></a>Försäljningsbearbetning för det här scenariot
 
-När du är klar med ovanstående konfiguration och ändringarna har tillämpats för databaskanal, alla kundorder eller försäljningstransaktioner som skapats i kassan, kundtjänst eller e-handelskanaler som har mark- eller flygleverans metoderna i huvudnivå ska använda dessa avgifter och tillämpa dem automatiskt på försäljningen.
+När du är klar med ovanstående konfiguration och ändringarna har tillämpats för databaskanal, alla kundorder eller försäljningstransaktioner som skapats i kassan, kundtjänst eller näthandelskanaler som har mark- eller flygleverans metoderna i huvudnivå ska använda dessa avgifter och tillämpa dem automatiskt på försäljningen.
 
 Vid denna tidpunkt kommer avgifterna att gälla för alla försäljningstransaktioner som skapats inom den juridiska enheten som använder dessa leveranssätt, eftersom det inte finns någon funktionalitet för att ange att en konfiguration av automatiska avgifter endast gäller en specifik försäljningskanal.
 
-För kassa- och e-handelsscenarier, eftersom det inte finns någon tydligt definierad "huvud" på dessa beställningar gäller avgifter på huvudnivå endast om alla försäljningsrader på transaktionen är inställda att skickas med exakt samma leveranssätt. Om ”blandade sätt” för utförande av transaktioner skapas av kassan eller e-handel beaktas och tillämpas endast automatiska avgifter på radnivå.
+För kassa- och näthandelsscenarier, eftersom det inte finns någon tydligt definierad "huvud" på dessa beställningar gäller avgifter på huvudnivå endast om alla försäljningsrader på transaktionen är inställda att skickas med exakt samma leveranssätt. Om ”blandade sätt” för utförande av transaktioner skapas av kassan eller näthandel beaktas och tillämpas endast automatiska avgifter på radnivå.
 
-I kundtjänstscenarier har användaren kontroll över inställningen för leveransläge vid orderhuvudet. Därför gäller avgifter på huvudnivå för dessa order även om några av försäljningsraderna har konfigurerats för att använda ett annat leveranssätt. Avgifter på huvudnivå för kundtjänstorder kommer alltid att baseras på leveranssättet som definieras vid orderhuvudnivån i försäljningsordern.
+I kundtjänstscenarier har användaren kontroll över inställningen för leveranssätt vid orderhuvudet. Därför gäller avgifter på huvudnivå för dessa order även om några av försäljningsraderna har konfigurerats för att använda ett annat leveranssätt. Avgifter på huvudnivå för kundtjänstorder kommer alltid att baseras på leveranssättet som definieras vid orderhuvudnivån i försäljningsordern.
 
 ### <a name="auto-charges-line-charges-example"></a>Exempel på automatiska avgifter för radavgifter
 
@@ -125,7 +125,7 @@ Skicka avgifterna till skalningsenhet för handel/Channel DB så att kassan kan 
 
 #### <a name="sales-processing-for-this-scenario"></a>Försäljningsbearbetning för det här scenariot
 
-När du är klar med ovanstående konfiguration och ändringarna har tillämpats för databaskanal, alla kundorder eller försäljningstransaktioner som skapats i kassan, kundtjänst eller e-handelskanaler som har denna post i ordern kommer att utlösa en radnivåavgift som systematiskt läggs till i orderantalet.
+När du är klar med ovanstående konfiguration och ändringarna har tillämpats för databaskanal, alla kundorder eller försäljningstransaktioner som skapats i kassan, kundtjänst eller näthandelskanaler som har denna post i ordern kommer att utlösa en radnivåavgift som systematiskt läggs till i orderantalet.
 
 Vid denna tidpunkt kommer avgifterna att gälla för alla försäljningsrader som matchar konfigurationen av automatiska avgifter på radnivå inom juridisk enhet, eftersom det inte finns någon funktionalitet för att konfigurera en automatisk avgift på radnivå för att endast vara tillämplig på en viss försäljningskanal.
 
@@ -183,7 +183,7 @@ Samma tillvägagångssätt kan användas i kundtjänst med funktionen ”Underh�
 
 På sidan **Hantera avgifter** i kassan kan användaren visa information om avgifter på både huvud- och radnivå. Användaren kan använda **redigera** som är tillgänglig på den här sidan för att ändra det belopp som debiteras en specifik avgiftsrad. När en avgiftsrad läggs till manuellt räknas den inte om systematiskt om inte användaren initierar åtgärden **beräkna om avgifter**.
 
-Om **Orsakskod för åsidosättning av avgift** har konfigurerats på installationssidan **handelsparametrar** , användaren uppmanas att ange en orsakskod när avgifter har ändrats i kassaprogrammet.
+Om **Orsakskod för åsidosättning av avgift** har konfigurerats på installationssidan **handelsparametrar**, användaren uppmanas att ange en orsakskod när avgifter har ändrats i kassaprogrammet.
 
 Om orsakskoder registrerays för överskrivna avgifter, finns även en ny rapport för att granska dessa åsidosättningar. Rapporten finns i **butik och handel \> förfrågningar och rapporter \> historik för avgiftsåsidosättning**.
 
@@ -193,13 +193,13 @@ Om parametern **Använd avancerade automatiska avgifter** är inställd på **Ja
 
 ### <a name="refunding-charges-on-a-return-order-transaction"></a>Återbetalning av avgifter för en ordertransaktion
 
-Avgifter återbetalas inte systematiskt till **returorder** som skapats i handel. Användare måste välja alternativet **kopiera avgifter** när de skapar **returorder**. Om **kopiera avgifter** inte är markerat kommer avgifter från den ursprungliga försäljningstransaktionen inte att återbetalas automatiskt. Om **kopiera avgifter** är markerat kopieras alla avgifter till returordern och användaren kan manuellt redigera eller ta bort ändringar som de inte vill ha tillbaka. Returorderprocessen för kundtjänst accepterar för närvarande inte flaggan **Återbetalningsbar** på **Avgiftskod** -inställningen.
+Avgifter återbetalas inte systematiskt till **returorder** som skapats i handel. Användare måste välja alternativet **kopiera avgifter** när de skapar **returorder**. Om **kopiera avgifter** inte är markerat kommer avgifter från den ursprungliga försäljningstransaktionen inte att återbetalas automatiskt. Om **kopiera avgifter** är markerat kopieras alla avgifter till returordern och användaren kan manuellt redigera eller ta bort ändringar som de inte vill ha tillbaka. Returorderprocessen för kundtjänst accepterar för närvarande inte flaggan **Återbetalningsbar** på **Avgiftskod**-inställningen.
 
 ### <a name="configuring-pos-receipts-to-show-charges"></a>Konfigurera kassainleveranser för att visa debiteringar
 
 Följande inleverans har lagts till inleveransraden och sidfoten för att stödja funktionen för avancerade automatiska avgifter.
 
-- **Leveransavgifter för rad** - Detta element på radnivå kan användas för att sammanfatta koder för särskilda avgifter som har kopplats till försäljningsraden. Endast avgiftskoder som har flaggats som **leverans** -avgifter på sidan **avgiftskoder** visas här.
+- **Leveransavgifter för rad** - Detta element på radnivå kan användas för att sammanfatta koder för särskilda avgifter som har kopplats till försäljningsraden. Endast avgiftskoder som har flaggats som **leverans**-avgifter på sidan **avgiftskoder** visas här.
 - **Övriga avgifter för rad** - Detta element på radnivå kan användas för alla icke leveransspecifika avgiftskoder som har kopplats till försäljningsraden. Dessa är avgiftskoder där flaggan **leverans** på sidan den **avgiftskod** inte har aktiverats.
 - **Leveransavgiftsdetaljer för order** - Detta element på sidfotnivå visar beskrivningar av avgiftskoder som gäller för ordern som har flaggats som **leverans** på installationssidan **avgiftskod**.
 - **Leveransavgifter för order** - Detta element på sidfotnivå visar belopp för leveransrelaterade avgifter.

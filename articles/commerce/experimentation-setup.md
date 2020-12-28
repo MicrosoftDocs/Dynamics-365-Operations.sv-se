@@ -19,15 +19,15 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: 29c21ceb4c259f463f4a039942e51141201a9809
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4097057"
+ms.locfileid: "4415974"
 ---
 # <a name="set-up-an-experiment"></a>Konfigurera ett experiment
 
-När du har [definierat en hypotes och bestämmer vilka mått du vill använda](experimentation-identify.md), måste du ställa in experimentet i tredjeparttjänsten. I bilden nedan visas alla steg som ingår när du ställer in och kör ett experiment på en e-handelswebbplats i Dynamics 365 Commerce. Ytterligare steg beskrivs i olika avsnitt.
+När du har [definierat en hypotes och bestämmer vilka mått du vill använda](experimentation-identify.md), måste du ställa in experimentet i tredjeparttjänsten. I bilden nedan visas alla steg som ingår när du ställer in och kör ett experiment på en näthandelswebbplats i Dynamics 365 Commerce. Ytterligare steg beskrivs i olika avsnitt.
 
 [ ![Experimentets användarresa - Inställning](./media/experimentation_setup.svg) ](./media/experimentation_setup.svg#lightbox)
 

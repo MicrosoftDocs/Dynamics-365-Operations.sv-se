@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8439b88ccda3f72e5a9b918c6c89bd406599b516
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 28d58caba71ea98ccf163e756e879587aa254bb3
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818236"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4415990"
 ---
 # <a name="checkout-module"></a>Kassamodul
 
@@ -42,7 +42,7 @@ Följande bild visar ett exempel på en Fabrikam kassamodul på en kassasida.
 
 ## <a name="checkout-module-properties"></a>Egenskaper för kassamodul
 
-En betalningsmodul visar en ordersammanfattning och innehåller funktioner för att placera en order. Om du vill samla in all kundinformation som krävs innan en order kan placeras, måste ytterligare moduler läggas till i modulen för utcheckning. Därför har detaljhandlare flexibilitet att lägga till anpassade moduler i kassaflödet eller att utesluta moduler utifrån deras krav.
+En betalningsmodul visar en ordersammanfattning och innehåller funktioner för att placera en order. Om du vill samla in all kundinformation som krävs innan en order kan placeras, måste ytterligare moduler läggas till i modulen för utcheckning. Därför har detaljhandlare flexibilitet att lägga till anpassade moduler i kassautcheckningsflödet eller att utesluta moduler utifrån deras krav.
 
 | Egenskapsnamn | Värden | beskrivning |
 |----------------|--------|-------------|
@@ -65,7 +65,7 @@ En betalningsmodul visar en ordersammanfattning och innehåller funktioner för 
  
     ![Exempel på en leveransalternativmodul](./media/ecommerce-deliveryoptions.PNG)
 
-- **Behållare för kassaavsnitt** – den här modulen är en behållare som du kan placera flera moduler i för att skapa ett avsnitt i kassaflödet. Du kan till exempel placera alla betalningsrelaterade moduler i behållaren så att de visas som ett avsnitt. Den här modulen påverkar endast flödets layout.
+- **Behållare för kassaavsnitt** – den här modulen är en behållare som du kan placera flera moduler i för att skapa ett avsnitt i kassautcheckningsflödet. Du kan till exempel placera alla betalningsrelaterade moduler i behållaren så att de visas som ett avsnitt. Den här modulen påverkar endast flödets layout.
 
 - **Presentkort** – i den här modulen kan en kund betala för en order genom att använda ett presentkort. Mer information om den här modulen finns i [Modul för presentkort](add-giftcard.md).
 
@@ -121,6 +121,8 @@ Om du vill lägga till en kassamodul på en ny sida och ställa in de obligatori
 [Modul för leveransadress](ship-address-module.md)
 
 [Modul för leveransalternativ](delivery-options-module.md)
+
+[Informationsmodul för upphämtning](pickup-info-module.md)
 
 [Orderinformationsmodul](order-confirmation-module.md)
 

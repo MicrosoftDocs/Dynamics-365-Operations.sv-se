@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39026ec56ebf25342410330f2ba3e2e7773dfd6a
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: 33db06ecfa2a8fa93cde3c4f1b31d6b30bfd0c34
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055437"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4415989"
 ---
 # <a name="cart-module"></a>Kundvagnsmodul
 
@@ -34,7 +34,7 @@ Det här avsnittet handlar om kundvagnsmoduler och beskriver hur du lägger till
 
 En kundvagnsmodul visar artiklarna som har lagts till i kundvagnen innan kunden fortsätter till kassan. Modulen visar även en också en ordersammanfattning och gör att kunden kan använda eller ta bort kampanjkoder.
 
-Kundvagnsmodulen stöder inloggade utcheckning och gästkassa. Det stöder också en **Tillbaka till shopping** -länk. Du kan konfigurera flödet för den här länken när **webbplatsinställningar \> tillägg \> flöden**.
+Kundvagnsmodulen stöder inloggade utcheckning och gästkassa. Det stöder också en **Tillbaka till shopping**-länk. Du kan konfigurera flödet för den här länken när **webbplatsinställningar \> tillägg \> flöden**.
 
 I modulen kundvagn återges data baserat på vagn-ID:t, som är en webbläsarcookie som är tillgänglig på hela webbplatsen. 
 
@@ -50,9 +50,9 @@ Följande bild visar ett exempel på en kundvagnssida på Fabrikam-webbplatsen. 
 
 | Egenskap | Värden | beskrivning |
 |----------------|--------|-------------|
-| Rubrik | Rubriktext och rubriktagg ( **H1** , **H2** , **H3** , **H4** , **H5** eller **H6** ) | En rubrik för kundvagnen, till exempel "Shoppingväska" eller "Artiklarna i vagnen." |
+| Rubrik | Rubriktext och rubriktagg (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En rubrik för kundvagnen, till exempel "Shoppingväska" eller "Artiklarna i vagnen." |
 | Visa fel av typen Slut i lager | **Sant** eller **falskt** | Om den här egenskapen har angetts till **True** visar sidan för kundvagn fel som är relaterade till lagret. Vi rekommenderar att du ställer in den här egenskapen på **True** om lagerkontroller används på webbplatsen. |
-| Visa leveransavgifter för radartiklar | **Sant** eller **falskt** | Om den här egenskapen har värdet **True** visar kundvagnsartiklar leveransavgifter om den här informationen är tillgänglig. Den här funktionen stöds inte i det Fabrikam-temat, eftersom användarna väljer enbart leverans i kassaflödet. Den här funktionen kan emellertid aktiveras i andra arbetsflöden om den är tillämplig. |
+| Visa leveransavgifter för radartiklar | **Sant** eller **falskt** | Om den här egenskapen har värdet **True** visar kundvagnsartiklar leveransavgifter om den här informationen är tillgänglig. Den här funktionen stöds inte i det Fabrikam-temat, eftersom användarna väljer enbart leverans i kassautcheckningsflödet. Den här funktionen kan emellertid aktiveras i andra arbetsflöden om den är tillämplig. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduler kan användas i en kundvagnsmodul
 
@@ -61,7 +61,7 @@ Följande bild visar ett exempel på en kundvagnssida på Fabrikam-webbplatsen. 
 
 ## <a name="module-properties"></a>Modulegenskaper
 
-Följande kundvagnsmodulinställningar som kan konfigureras på **Platsinställningar \> Tillägg** :
+Följande kundvagnsmodulinställningar som kan konfigureras på **Platsinställningar \> Tillägg**:
 
 - **Maximal kvantitet** – Den här egenskapen används för att ange det maximala antalet för varje objekt som kan läggas till i vagnen. En återförsäljare kan till exempel besluta att endast 10 av varje produkt kan säljas i en enda transaktion.
 - **Lager** – För information om hur du använder lagerinställningar finns i [tillämpa lagerinställningar](inventory-settings.md).
@@ -79,18 +79,18 @@ Vagnmodul för inköpsruta hämtar produktinformation med hjälp av API:er för 
 Om du vill lägga till en kundvagnsmodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
 1. Gå till **Fragment** och välj **ny** för att skapa ett nytt fragment.
-1. I dialogrutan **Nytt fragment** , välj modulen **Kundvagn**.
-1. Under **Fragmentets namn** , anger du ett namn på **kundvagnsfragmentet** och klickar sedan på **OK**.
+1. I dialogrutan **Nytt fragment**, välj modulen **Kundvagn**.
+1. Under **Fragmentets namn**, anger du ett namn på **kundvagnsfragmentet** och klickar sedan på **OK**.
 1. Markera platsen **kundvagn**.
 1. I pennfönstret till höger väljer du pennsymbolen, anger rubriktext i fältet och markerar sedan kryssmarkeringssymbolen.
-1. I facket **kundvagn** välj ellips-knappen ( **...** ) och välj sedan **Lägg till modulen**.
+1. I facket **kundvagn** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
 1. I dialogrutan **Lägg till modul** välj modulen **butiksväljare** och sedan **OK**.
-1. Välj **Spara** , välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera den.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera den.
 1. Gå till **mallar** och välj sedan **ny** för att skapa en ny mall.
 1. I dialogrutan **Ny mall** under **Mallnamn** anger du ett namn för mallen.
-1. I dispositionsträdet väljer du platsen **Brödtext** markerar ellipsknappen ( **...** ) och väljer sedan **Lägg till fragment**.
+1. I dispositionsträdet väljer du platsen **Brödtext** markerar ellipsknappen (**...**) och väljer sedan **Lägg till fragment**.
 1. I dialogrutan **Välj fragment** väljer du det **kundvagnsfragment** och väljer sedan **OK**.
-1. Välj **Spara** , välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
 1. I dialogrutan **Välj en mall** väljer du den mall som du skapade, anger sidnamn och väljer sedan **OK**.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan.
@@ -107,6 +107,8 @@ Om du vill lägga till en kundvagnsmodul på en ny sida och ställa in de obliga
 [Modul för leveransadress](ship-address-module.md)
 
 [Modul för leveransalternativ](delivery-options-module.md)
+
+[Informationsmodul för upphämtning](pickup-info-module.md)
 
 [Orderinformationsmodul](order-confirmation-module.md)
 

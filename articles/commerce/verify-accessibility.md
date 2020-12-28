@@ -18,11 +18,11 @@ ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: fc3dca673510e1636f497bb7d5c295bebe025677
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015113"
+ms.locfileid: "4415958"
 ---
 # <a name="verify-page-content-accessibility"></a>Kontrollera tillgängligheten för sidinnehåll
 
@@ -53,7 +53,7 @@ Gör så här om [Microsoft Accessibility Insights](https://accessibilityinsight
 
 Gör så här om [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-integrering för en enda Commerce-webbplatser.
 
-1. Under **Webbplatser** , välj **Fabrikam** (eller namnet på webbplatsen).
+1. Under **Webbplatser**, välj **Fabrikam** (eller namnet på webbplatsen).
 1. I det vänstra navigeringsfönstret väljer du **Webbplatsinställningar** för att expandera den.
 1. Under **Webbplatsinställningar** väljer du **funktioner**.
 1. Ställ in alternativet **Hjälpmedelskontroll** till **på**.
@@ -62,7 +62,7 @@ Gör så här om [Microsoft Accessibility Insights](https://accessibilityinsight
 
 Om du vill använda den integrerade tjänsten [Microsoft Accessibility Insights](https://accessibilityinsights.io/) för att skanna och verifiera innehållet på din startsida i Commerce.
 
-1. Under **Webbplatser** , välj **Fabrikam** (eller namnet på webbplatsen).
+1. Under **Webbplatser**, välj **Fabrikam** (eller namnet på webbplatsen).
 1. I navigeringsfönstret till vänster, välj **sidor**.
 1. Sök och välj startsidan för att öppna den i sidredigeraren.
 1. Klicka på **Hjälpmedelskontroll** i kommandofältet. Sidan **Hjälpmedelskontroll** visas.

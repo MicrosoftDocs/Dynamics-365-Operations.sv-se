@@ -19,11 +19,11 @@ ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 59d7274c3b40e78209d90960c4514321b736876a
-ms.sourcegitcommit: d66fd72342931fad25a696b251c05781280d36c4
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4011439"
+ms.locfileid: "4420665"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Förbered publicering av Human Resource
 
@@ -55,9 +55,9 @@ I följande tabell anges alla steg i processen, den förväntade varaktigheten o
 
 En viktig milstolpe i varje implementeringsprojekt är övergången till produktionsmiljön. 
 
-För att säkerställa att produktionsmiljön används för publiceringsåtgärder, tillhandahåller Microsoft produktionsinstansen endast när implementeringsfasen närmar sig fasen **Drift** , efter att de obligatoriska åtgärderna i LCS-metoden har slutförts. Mer information om dina miljöer i abonnemanget finns i  [licensguiden för Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544). 
+För att säkerställa att produktionsmiljön används för publiceringsåtgärder, tillhandahåller Microsoft produktionsinstansen endast när implementeringsfasen närmar sig fasen **Drift**, efter att de obligatoriska åtgärderna i LCS-metoden har slutförts. Mer information om dina miljöer i abonnemanget finns i  [licensguiden för Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544). 
 
-Kunderna måste slutföra faserna **analys** , **utforma och utveckla** och **testa** i LCS-metoden innan knappen  **Konfigurera**  för att begära att produktionsmiljön blir tillgänglig. Om du vill slutföra en fas i LCS måste du först slutföra alla nödvändiga steg i den fasen. När alla steg i en fas har slutförts kan du slutföra hela fasen. Du kan alltid öppna en fas igen senare om du måste göra ändringar. Mer information finns i  [Lifecycle Services (LCS) för Finance and Operations-appkunder](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
+Kunderna måste slutföra faserna **analys**, **utforma och utveckla** och **testa** i LCS-metoden innan knappen  **Konfigurera**  för att begära att produktionsmiljön blir tillgänglig. Om du vill slutföra en fas i LCS måste du först slutföra alla nödvändiga steg i den fasen. När alla steg i en fas har slutförts kan du slutföra hela fasen. Du kan alltid öppna en fas igen senare om du måste göra ändringar. Mer information finns i  [Lifecycle Services (LCS) för Finance and Operations-appkunder](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
 
 Processen för att slutföra ett steg består av två delar: 
 

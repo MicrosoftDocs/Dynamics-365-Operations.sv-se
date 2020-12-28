@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 39e597b88afcca69623b1a23acc95e4da3873082
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: f9e8df576efd1e58fde235828823f31e87ed58bf
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818309"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4415998"
 ---
 # <a name="delivery-options-module"></a>Modul för leveransalternativ
 
@@ -38,7 +38,7 @@ Mer information om hur du konfigurerar leveranssätt finns i [konfiguration av o
 
 Varje leveranssätt kan ha en associerad avgift. Mer information om hur du konfigurerar avgifter för en nätbutik finns i [Avancerade automatiska avgifter för flera kanaler](omni-auto-charges.md).
 
-I Commerce version 10.0.13 har modulen leveransalternativ uppdaterats för att stödja funktionerna **huvudavgifter utan proportionell fördelning** och **leverera som radavgift**. Om proportionen är inaktiverad är det förväntat att arbetsflödet för e-handel inte tillåter ett blandat leverans sätt för artiklarna i kundvagnen (dvs. vissa artiklar väljs för leverans, men andra väljs för upphämtning). Funktionen **huvudavgifter utan proportionell fördelning** kräver att flaggan **Aktivera konsekvent hantering av leveranssätt i kanal** aktiveras i Commerce-administration. När den flaggan är påslagen kommer fraktkostnader att tillämpas antingen på huvudnivå eller radnivå, beroende på konfigurationen i Commerce-administration.
+I Commerce version 10.0.13 har modulen leveransalternativ uppdaterats för att stödja funktionerna **huvudavgifter utan proportionell fördelning** och **leverera som radavgift**. Om proportionen är inaktiverad är det förväntat att arbetsflödet för näthandel inte tillåter ett blandat leverans sätt för artiklarna i kundvagnen (dvs. vissa artiklar väljs för leverans, men andra väljs för upphämtning). Funktionen **huvudavgifter utan proportionell fördelning** kräver att flaggan **Aktivera konsekvent hantering av leveranssätt i kanal** aktiveras i Commerce-administration. När den flaggan är påslagen kommer fraktkostnader att tillämpas antingen på huvudnivå eller radnivå, beroende på konfigurationen i Commerce-administration.
 
 Temat Fabrikam har stöd för ett blandat leveranssätt, där vissa artiklar har valts för leverans men andra har valts för upphämtning. I det här läget beräknas fraktkostnaderna för alla artiklar som väljs för leveranssättet. Om ett blandat leveranssätt ska fungera måste du först konfigurera funktionen **huvudavgifter utan proportionell fördelning** i Commerce-administration. Mer information om den här konfigurationen finns i [Fördela huvudtillägg proportionellt som matchar försäljningsraderna](pro-rate-charges-matching-lines.md).
 
@@ -54,7 +54,7 @@ Följande bild visar ett exempel på en leveransalternativmodul på en kassasida
 |----------|--------|-------------|
 | Rubrik | Rubriktext och rubriktagg (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En valfri rubrik för leveransalternativmodul. |
 | Anpassat CSS-klassnamn | Text | Ett klassnamn för Överlappande formatmallar (CSS) som används för att återge modulen, om det är tillämpligt. |
-| Alternativ för att filtrera leveranssätt | **Filtrera inte** eller **ej leveranslägen** | Ett värde som anger om modulen för leveransalternativ ska filtrera bort alla leveranslägen som inte kan levereras. |
+| Alternativ för att filtrera leveranssätt | **Filtrera inte** eller **ej leveranssätt** | Ett värde som anger om modulen för leveransalternativ ska filtrera bort alla leveranssätt som inte kan levereras. |
 
 ## <a name="add-a-delivery-options-module-to-a-checkout-page-and-set-the-required-properties"></a>Lägg till leveransalternativmodul på en kassasida och ställa in de obligatoriska egenskaperna.
 
@@ -69,6 +69,8 @@ En leveransalternativmodul kan bara läggas till i en betalningsmodul. Mer infor
 [Betalningsmodul](payment-module.md)
 
 [Modul för leveransadress](ship-address-module.md)
+
+[Informationsmodul för upphämtning](pickup-info-module.md)
 
 [Orderinformationsmodul](order-confirmation-module.md)
 

@@ -18,11 +18,11 @@ ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
 ms.openlocfilehash: b221bfede5d1db8d7970e1efede85e8dba7fe017
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124392"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415712"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Ställ in räkenskapsintegration för handelskanaler
 
@@ -191,7 +191,7 @@ Alternativ för felhantering som finns tillgängliga i räkenskapsintegration st
     > Om parametern **Fortsätt vid fel** är aktiverad kan parametrarna **Tillåt hoppa över** och **Tillåt markera som registrerad** inaktiveras automatiskt.
 
 2. Alternativen **Hoppa över** och **Markera som registrerad** kräver behörigheten **Tillåt hoppa över registrering eller markera som registrerade**. Därför på sidan **behörighetsgrupper** (**Butik och handel \> medarbetare \> behörighetsgrupper**), aktivera behörigheten **Tillåt hoppa över registrering eller markera som registrerad**.
-3. Alternativen **hoppa över** och **markera som registrerad** låter operatörer ange ytterligare information när räkenskapsregistreringen misslyckas. Om du vill göra funktionen tillgänglig bör du ange infokoderna**hoppa över** och **markera som registrerad** på en grupp för räkenskapskoppling. Informationen som operatörer anger sparas som en infokodtransaktion som kopplas till räkenskapstransaktionen. Mer information om infokoder finns i [Infokoder och infokodgrupper](../info-codes-retail.md).
+3. Alternativen **hoppa över** och **markera som registrerad** låter operatörer ange ytterligare information när räkenskapsregistreringen misslyckas. Om du vill göra funktionen tillgänglig bör du ange infokoderna **hoppa över** och **markera som registrerad** på en grupp för räkenskapskoppling. Informationen som operatörer anger sparas som en infokodtransaktion som kopplas till räkenskapstransaktionen. Mer information om infokoder finns i [Infokoder och infokodgrupper](../info-codes-retail.md).
 
     > [!NOTE]
     > Utlösarfunktionen **produkt** stöds inte för infokoder som används för **hoppa över** och **markera som registrerad** i grupper för räkenskapskoppling.

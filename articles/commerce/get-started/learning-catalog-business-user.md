@@ -15,11 +15,11 @@ ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 11dd8f05ec3e8e1b92bddea9676edd7e32f966d5
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793355"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415853"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-commerce"></a>Utbildningskatalog för användare av Dynamics 365 Commerce
 
@@ -47,7 +47,7 @@ Om du vill öva på funktioner som delas med andra Finance and Operations-appar,
 | [Konfigurera och arbeta med kundtjänst i Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce är en flerkanalslösning som tillhandahåller en kundtjänstkanal med funktioner som standard för specifika orderbearbetningsinställningar och standardvärden för försäljnings order som skapas av kundtjänstanvändare. | Gratis, självstudier online utbildningsväg | 2 timmar   |
 | [Hantera uppfyllelse av order och inventering i Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/manage-order-fulfillment-inventory-commerce/) | Effektiv lagerhantering spelar en viktig roll i detaljhandelsbranschen, där möjligheten att få en uppdaterad vy av det aktuella lagret och enkelt överföra och registrera varor, kan ha stor inverkan på återförsäljarnas framgång för att betjäna kunderna och öka försäljningsintäkterna. | Gratis, självstudier online utbildningsväg | 2 timmar   |
 
-## <a name="e-commerce"></a>E-handel<a name="e-commerce"></a>
+## <a name="e-commerce"></a>näthandel<a name="e-commerce"></a>
 
 | Innehåll | beskrivning  | Format   | Längd    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|

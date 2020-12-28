@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269968"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415778"
 ---
 # <a name="add-a-new-site-page"></a>Lägga till en ny webbplatssida
 
@@ -61,13 +61,13 @@ Gör så här om du vill lägga till en ny webbplatssida till din webbplats:
 1. I fältet **URL** anger du en sträng (URL-instruktion) för att slutföra URL:en (t.ex. **mynewpage**).
 1. Välj **OK**. Sidredigeraren visas. Observera att ett sidhuvud och en sidfot läggs till automatiskt på sidan, baserat på den valda mallen.
 1. I siddispositionen väljer du platsen **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
-1. Välj **Behållare**och välj sedan **OK**.
+1. Välj **Behållare** och välj sedan **OK**.
 1. Markera knappen med punkter för **vätskebehållare** och välj sedan **Lägg till modul**.
 1. Välj **Innehållsrikt block** och välj sedan **OK**.
 1. Markera knappen med punkter för **Innehållsrikt block** och välj sedan **Lägg till modul**.
 1. Välj **Artikeln innehållsrikt block** och välj sedan **OK**.
 1. I egenskapsrutan till höger, välj **Paragraf** och ange sedan **Min testtext** i fältet.
-1. Välj **spara**och välj sedan **Avsluta redigeringen**.
+1. Välj **spara** och välj sedan **Avsluta redigeringen**.
 1. I fältet **kommentarer** anger du **Ny sida tillagd** och sedan **OK**.
 1. Välj **Förhandsgranska** om du vill förhandsgranska din sida. När du är klar kan du stänga fliken förhandsgranskning och återgå till redigeringsverktyget.
 1. Markera **Publicera**.

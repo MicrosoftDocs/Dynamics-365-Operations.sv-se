@@ -18,11 +18,11 @@ ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: e15ba6a0d624bd97c25936aa6d3bfafb844b66c0
-ms.sourcegitcommit: 7e8a9f92a2675bf5b620889678a2918f63f3e199
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3901506"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415775"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Lägga till skriptkod på webbsidor för att stödja telemetri
 
@@ -50,7 +50,7 @@ Om du vill skapa ett återanvändbart fragment för den infogade skriptoden i we
 1. Under **fragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.
 1. Under det fragment som du har skapat väljer du modulen **infogat standardskript**.
 1. Ange skript på klientsidan i egenskapsrutan till höger under **infogat skript**. Konfigurera sedan andra alternativ som du behöver.
-1. Välj **spara**och välj sedan **Avsluta redigeringen**.
+1. Välj **spara** och välj sedan **Avsluta redigeringen**.
 1. Markera **Publicera**.
 
 ### <a name="create-a-reusable-fragment-for-your-external-script-code"></a>Skapa ett återanvändbart fragment för den externa skriptkoden
@@ -62,7 +62,7 @@ Om du vill skapa ett återanvändbart fragment för den externa skripkoden i web
 1. Under **fragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.
 1. Under det fragment som du har skapat väljer du modulen **externt standardskript**.
 1. I egenskapsrutan till höger, under **Skriptkälla**, lägg till en extern eller relativ URL för den externa skriptkällan. Konfigurera sedan andra alternativ som du behöver.
-1. Välj **spara**och välj sedan **Avsluta redigeringen**.
+1. Välj **spara** och välj sedan **Avsluta redigeringen**.
 1. Markera **Publicera**.
 
 > [!NOTE]
@@ -76,7 +76,7 @@ Följ dessa steg för att lägga till ett fragment som innehåller skriptkod til
 1. I det vänstra fönstret expanderar du mallstrukturlistan så att platsen **HTML-huvud** visas.
 1. På platsen **HTML-huvud** markera knappen med punkter (**...**) och välj sedan **Lägg till fragment**.
 1. Markera det fragment som du har skapat för skriptkoden.
-1. Välj **spara**och välj sedan **Avsluta redigeringen**.
+1. Välj **spara** och välj sedan **Avsluta redigeringen**.
 1. Markera **Publicera**.
 
 ## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a>Lägga till ett externt skript eller infogat skript direkt i en mall
@@ -92,7 +92,7 @@ Om du vill lägga till ett infogat skript direkt på en mall i webbplatsskaparen
 1. I facket **HTML-huvud** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
 1. I dialogrutan **Lägg till modul** välj **infogat skript**.
 1. Ange skript på klientsidan i egenskapsrutan till höger under **infogat skript**. Konfigurera sedan andra alternativ som du behöver.
-1. Välj **spara**och välj sedan **Avsluta redigeringen**.
+1. Välj **spara** och välj sedan **Avsluta redigeringen**.
 1. Markera **Publicera**.
 
 ### <a name="add-an-external-script-directly-to-a-template"></a>Lägga till ett externt skript direkt i en mall
@@ -104,7 +104,7 @@ Om du vill lägga till ett extern skript direkt på en mall i webbplatsskaparen 
 1. I facket **HTML-huvud** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
 1. I dialogrutan **Lägg till modul** välj **externt skript**.
 1. I egenskapsrutan till höger, under **Skriptkälla**, lägg till en extern eller relativ URL för den externa skriptkällan. Konfigurera sedan andra alternativ som du behöver.
-1. Välj **spara**och välj sedan **Avsluta redigeringen**.
+1. Välj **spara** och välj sedan **Avsluta redigeringen**.
 1. Markera **Publicera**.
 
 ## <a name="additional-resources"></a>Ytterligare resurser

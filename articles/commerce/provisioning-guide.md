@@ -3,7 +3,7 @@ title: Etablera en utvärderingsmiljön för Dynamics 365 Commerce
 description: Det här avsnittet förklarar hur du etablerar en utvärderingsmiljö för Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 07/16/2020
+ms.date: 11/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e5ce2002c66a1c36d5647d3c76684b394fc1ff79
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.openlocfilehash: b54216a565c264dfcfe821581fee9df7b5e22323
+ms.sourcegitcommit: 715508547f9a71a89a138190e8540686556c753d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599860"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "4415987"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Etablera en utvärderingsmiljön för Dynamics 365 Commerce
 
@@ -38,7 +38,7 @@ Innan du börjar rekommenderar vi att du tar en snabbgenomgång genom det här a
 
 ## <a name="overview"></a>Översikt
 
-För att kunna etablera din utvärderingsmiljö för Commerce måste du skapa ett projekt som har ett specifikt produktnamn och en viss typ. Miljön och Commerce Scale Unit (CSU) har även del specifika parametrar som du måste använda för att kunna förvänta dig att etablera e-handel senare. Instruktionerna i det här avsnittet beskriver alla nödvändiga steg för att slutföra etablering och de parametrar som du måste använda.
+För att kunna etablera din utvärderingsmiljö för Commerce måste du skapa ett projekt som har ett specifikt produktnamn och en viss typ. Miljön och Commerce Scale Unit (CSU) har även del specifika parametrar som du måste använda för att kunna förvänta dig att etablera näthandel senare. Instruktionerna i det här avsnittet beskriver alla nödvändiga steg för att slutföra etablering och de parametrar som du måste använda.
 
 När du har tillhandahållit din utvärderingsmiljö för Commerce måste du slutföra några steg efter etablering för att förbereda den. Vissa steg är valfria, beroende på vilka delar av systemet du vill utvärdera. Du kan alltid slutföra de valfria stegen senare.
 
@@ -48,12 +48,13 @@ Information om hur du konfigurerar utvärderingsmiljö för Commerce efter att d
 
 Följande förutsättningar måste vara på plats innan du kan etablera din utvärderingsmiljö för Commerce:
 
+- Du har tagit med i utvärderingsprogrammet och beviljats kapacitet för en utvärderingsmiljö.
 - Du har åtkomst till Microsoft Dynamics Lifecycle Services-portal (LCS).
 - Du är en befintlig Microsoft Dynamics 365-partner eller kund och kan skapa ett Dynamics 365 Commerce-projekt.
 - Du har administratörsåtkomst till din Microsoft Azure prenumeration, eller så har du kontakt med en prenumerationsadministratör som kan hjälpa dig om det behövs.
 - Du har ditt Azure Active Directory (Azure AD) innehavar-ID tillgängligt.
-- Du har skapat en Azure AD-säkerhetsgrupp som kan användas som en systemadministratörsgrupp för e-handel och du har dess ID tillgängligt.
-- Du har skapat en Azure AD-säkerhetsgrupp som kan användas som gruppen moderator för omdömen och recensioner och du har dess ID tillgängligt. (Den här säkerhetsgruppen kan vara samma som administratörsgruppen för e-handelssystem.)
+- Du har skapat en Azure AD-säkerhetsgrupp som kan användas som en systemadministratörsgrupp för näthandel och du har dess ID tillgängligt.
+- Du har skapat en Azure AD-säkerhetsgrupp som kan användas som gruppen moderator för omdömen och recensioner och du har dess ID tillgängligt. (Den här säkerhetsgruppen kan vara samma som administratörsgruppen för näthandelssystem.)
 
 Observera att listan inte är uttömmande. Om du har problem kontakta din Microsoft-partnerkontakt för hjälp.
 
@@ -91,7 +92,7 @@ Följ dessa steg för att distribuera miljön.
 
 1. På huvudmenyn väljer du miljön **Molnstyrda miljöer**.
 1. Klicka på **Lägg till** om du vill lägga till en miljö.
-1. I fältet **Programversion** väljer du den mest aktuella versionen. Om du har ett specifikt behov av att välja en annan programversion än den senaste versionen ska du inte välja en version före **10.0.8**.
+1. I fältet **Programversion** väljer du den mest aktuella versionen. Om du har ett specifikt behov av att välja en annan programversion än den senaste versionen ska du inte välja en version före **10.0.14**.
 1. I fältet **plattformsversion** använder du den plattformsversion som väljs automatiskt för den valda programversionen. 
 
     ![Välj program- och plattformsversioner](./media/project1.png)
@@ -130,26 +131,26 @@ Gör så här om du vill initiera en CSU.
 
 Om du inte hittar länken **hantera** i vyn miljödetaljer kontaktar du din Microsoft-kontakt för att få hjälp.
 
-### <a name="initialize-e-commerce"></a>Initiera e-handelsplattform
+### <a name="initialize-e-commerce"></a>Initiera näthandelsplattform
 
-Gör så här om du vill initiera e-handel.
+Gör så här om du vill initiera näthandel.
 
-1. Granska medgivande för utvärdering på fliken **e-handel** och välj sedan **inställningar**.
-1. I fältet **miljönamn för e-handel**, ange ett namn. Tänk på att det här namnet kommer att visas i några av webbadresserna som pekar på din e-handelsinstans.
+1. Granska medgivande för utvärdering på fliken **näthandel** och välj sedan **inställningar**.
+1. I fältet **miljönamn för näthandel**, ange ett namn. Tänk på att det här namnet kommer att visas i några av webbadresserna som pekar mot din näthandelsinstans.
 1. I fältet **Namn på Commerce Scale Unit** välj din CSU i listan. (Listan bör bara ha ett alternativ.)
 
-    Fältet **geografi för e-handel** ställs in automatiskt.
+    Fältet **geografi för näthandel** ställs in automatiskt.
 
 1. Klicka på **Nästa** när du vill fortsätta.
 1. I fältet **Värdnamn som stöds** ange en giltig domän, t.ex. `www.fabrikam.com`.
 1. I fältet **AAD-säkerhetsgruppen för systemadministratör**, ange de första bokstäverna i namnet på den säkerhetsgrupp som du vill använda och välj sedan förstoringsglassymbol för att se sökresultaten. Välj korrekt säkerhetsgrupp i listan.
 1.  I fältet **AAD-säkerhetsgruppen för moderator för omdömen och recensioner**, ange de första bokstäverna i namnet på den säkerhetsgrupp som du vill använda och välj sedan förstoringsglassymbol för att se sökresultaten. Välj korrekt säkerhetsgrupp i listan.
 1. Lämna alternativet **tjänsten aktivera klassificering och granska** till **Ja**.
-1. Välj **initiera**. Vyn **Hantering av handel** visas igen, där fliken **e-handel** väljs. Initieringen av e-handel har påbörjats.
-1. Innan du fortsätter väntar du tills initieringsstatus för e-handel är **initialisering har slutförts**.
+1. Välj **initiera**. Vyn **Hantering av handel** visas igen, där fliken **näthandel** väljs. Initieringen av näthandel har påbörjats.
+1. Innan du fortsätter väntar du tills initieringsstatus för näthandel är **initialisering har slutförts**.
 1. Under **länkar** längst ned till höger, anteckna webbadresserna för följande länkar:
 
-    * **e-handelsplats** – länken till roten på din e-handelsplats.
+    * **näthandelsplats** – länken till roten på din näthandelsplats.
     * **Commerce webbplatsskaparen** – länken till webbplatshanteringsverktyget.
 
 ## <a name="next-steps"></a>Nästa steg

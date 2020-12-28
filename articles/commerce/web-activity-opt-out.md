@@ -18,11 +18,11 @@ ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 4b0e48307527a8fea729d8dfdcdbc6337be0faf1
-ms.sourcegitcommit: 8058db089b8768076ff1250be77d42a6e2b3f570
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3379002"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415851"
 ---
 # <a name="opt-out-of-web-activity-event-collection"></a>Välj bort insamling av webbaktivitetshändelser
 [!include [banner](includes/banner.md)]
@@ -31,7 +31,7 @@ I det här avsnittet beskrivs hur du kan låta kunderna välja bort insamling av
 
 ## <a name="overview"></a>Översikt
 
-Dynamics 365 Commerce låter webbplatsadministratörer analysera webbaktiviteten bland användarna av deras e-handelssidor. På så sätt kan de bättre förstå hur deras webbplatser används och kan optimera webbplatserna så att dessa ger en förbättrad användarupplevelse och uppfylla affärsmål.
+Dynamics 365 Commerce låter webbplatsadministratörer analysera webbaktiviteten bland användarna av deras näthandelssidor. På så sätt kan de bättre förstå hur deras webbplatser används och kan optimera webbplatserna så att dessa ger en förbättrad användarupplevelse och uppfylla affärsmål.
 
 
 ## <a name="ways-for-administrators-to-implement-an-opt-out-experience"></a>Sätt för administratörer att implementera en avanmälningsupplevelse

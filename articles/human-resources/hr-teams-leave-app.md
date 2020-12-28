@@ -3,7 +3,7 @@ title: Hantera ansökningar om ledighet i Teams
 description: I det här avsnittet beskrivs hur du begär ledighet i Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/30/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c6856e417ee47f8f582f797c5bcedcff23a1432f
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
+ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930003"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4420676"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Hantera ansökningar om ledighet i Teams
 
 [!include [banner](includes/preview-feature.md)]
 
-Med hjälp av Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan du snabbt begära ledighet och visa information om ditt ledighetssaldo direkt i Microsoft Teams. Du kan använda en robot för att begära information och påbörja en begäran om att lämna en begäran. Fliken **Ledighet** visar mer detaljerad information. Dessutom kan du skicka personuppgifter om din kommande ledighet i team och chattar utanför Human Resources-appen.
+Med hjälp av Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan du snabbt begära ledighet och visa information om ditt ledighetssaldo direkt i Microsoft Teams. Du kan använda en robot för att begära information och påbörja en begäran om att lämna en begäran. Fliken **Ledighet** visar mer detaljerad information. Du kan dessutom skicka personuppgifter om din kommande ledighet i team och chattar utanför Human Resources-appen.
 
 ## <a name="install-the-app"></a>Installera appen
 
@@ -182,11 +182,25 @@ Om du inte kan logga in i appen är det möjligt att det konto du använder för
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Fel vid godkännande av tjänstledighetsbegäranden i Human Resources-appen i Teams
 
-Om du får ett fel när du försöker godkänna tjänstledighetsbegäranden i Teams-appen ska du utföra följande åtgärder för felsökning:
+Om du får ett fel när du försöker godkänna tjänstledighetsbegäranden i Teams-appen ska du testa följande åtgärder för felsökning:
 
 1. Kontrollera att det konto som du använder för att logga in Microsoft Teams är det som du använder för att komma åt Dynamics 365 Human Resources.
 
 2. Kontrollera att de är giltiga godkännare för begäran genom att kontrollera arbetsflödesinställningarna för att godkännande av tjänstledighet. Mer information om att lämna arbetsflöden för förfrågningar finns i [skapa ett arbetsflöde för tjänstledighetsbegäran](hr-leave-and-absence-workflow.md).
+
+## <a name="known-accessibility-issues"></a>Kända tillgänglighetsproblem
+
+Appen Human Resources i Team har följande tillgänglighetsproblem som vi arbetar med att åtgärda i framtida versioner.
+
+| Utleverans | Lösning eller förklaring |
+| --- | --- |
+| Om du zoomar till 400 % på skrivbordet döljs vissa av åtgärdsknapparna i vyn. | Vi rekommenderar att du använder en skärmförstorare istället för att använda den här zoomningsnivån. |
+| Under fliken **Ledighet** tillkännager VoiceOver en knappåtgärd samtidigt som rubriken för ledighetsrutnätet läses upp. | Rubriken och elementen i rutnätet är grupperade efter år och de är döljbara. Med VoiceOver tolkas detta som en åtgärdsbar artikel, men det är inte det. |
+| Om du sveper när en popup eller meny är öppen hoppar VoiceOver över läsningen av popup- eller menyinnehållet. | Utforska innehållet med hjälp av fingeravsökning. |
+| Under fliken **Ledighet** finns en extra svepgest när du navigerar till **Orsakskod** i en ny begäran. | Det finns ingen dold kontroll som svepnavigeringen försöker nå. |
+| Under fliken **Ledighet**, om du sveper när kalendern är öppen, hamnar du utanför kontrollen istället för längst upp i en ny begäran eller när du redigerar en begäran. | När du kommer till **Gå till idag**, se det som slutet på kontrollen och svep i motsatt riktning för att komma tillbaka till toppen. |
+| VoiceOver läser inte etiketterna för datum. | Datumen i par är alltid **startdatum** och **Slutdatum**. |
+| Under fliken **Chatt** hoppar fokus tillbaka till toppen när du anger ett datum samtidigt som du använder hjälpverktyget eller tangentbordsnavigeringen. | TABB tills du kommer till inmatningsområdet igen. |
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
 
