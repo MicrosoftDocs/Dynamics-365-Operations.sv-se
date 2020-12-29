@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c9ff3d0c7eabe2670c4818173d88c3ab5da7ff0
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 97e1712e38247c996af11bef051a5b1d9239f0c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015139"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527396"
 ---
 # <a name="product-information-overview"></a>Översikt över produktinformation
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Det här avsnittet innehåller information om hur du hanterar produktinformation. Produktinformationshantering fungerar med en delad produktdefinition, kategorisering och identifierare för alla juridiska personer och även särskilda konfigurationer för en produkt så att den passar i affärsprocesserna. 
 
@@ -72,7 +74,7 @@ En produktmall associeras med en produktdimensionsgrupp och en konfigurationstek
 Du kan välja mellan tre olika konfigurationstekniker:
 
 - Fördefinierade varianter definieras av fördefinierade produktdimensioner. Variantdefinitionen innehåller definitionen av en specifik giltig kombination av dimensioner, till exempel färg, stil och storlek. Varje kombination skapar en viss specifik produktvariant.
-- Dimensionsbaserad konfiguration används normalt i tillverkningenscenarier och låter dig använda konfigurationsdimensionen i definitionen av strukturlistorna. När en specifik konfiguration har valts använder systemet en underuppsättning av strukturlisterader som är giltiga för den konfigurationen för planering och produktion. Detta koncept kallas även *global strukturlista* , eftersom en delad Strukturlista används för alla konfigurationer av en produkt.
+- Dimensionsbaserad konfiguration används normalt i tillverkningenscenarier och låter dig använda konfigurationsdimensionen i definitionen av strukturlistorna. När en specifik konfiguration har valts använder systemet en underuppsättning av strukturlisterader som är giltiga för den konfigurationen för planering och produktion. Detta koncept kallas även *global strukturlista*, eftersom en delad Strukturlista används för alla konfigurationer av en produkt.
 - Begränsningsbaserad konfiguration använder en modell för produktkonfiguration som beskriver alla möjliga attribut och komponenter som krävs för att beskriva alla möjliga varianter av en produkt i en enstaka modell. Begränsningar av kombinationer av attribut kan beskrivas genom reguljära uttryck eller registerbaserade begränsningar. Konfigurationsmodeller och konfiguratorer blir ännu viktigare i produktinformationshantering och används i alla branscher.
 
 När du planerar implementeringen av Supply Chain Management är det viktigt att du väljer rätt konfigurationsteknik för en affärsprocess. En produkt kan inte konverteras från en modell till en annan efter implementeringen.
@@ -89,7 +91,7 @@ Produkter som släpps till en särskild juridisk person kallas *frisläppta prod
 
 Du kan konfigurera arbetsytan **Underhåll av frisläppt produkt** menyobjektet **Konfigurera min arbetsyta**. Välj en kategorihierarki och kategori att filtrera listan efter. Om du vill justera relevanta produktdata på arbetsytan kan du också definiera tidsgränser i dagar för **Nyligen frisläppta produkter** och **Stoppade frisläppta produkter**.
 
-Arbetsytan består av en sammanfattning av paneler och två listor. Listan **Öppna ärenden** visar produktändringsärenden som har produkter i den valda produktkategorihierarkin som inte är utförda och stängda. Listan **Nyligen frisläppta** visar produkter som har släppts inom tidsgränsen som anges i arbetsytans konfiguration. Validering utförs för varje artikel i listan och status för valideringen visas. Denna status kan indikera att nödvändiga konfigurationer för den juridiska personen inte är slutförda. I listan får du direkt tillgång till **Information om frisläppt produkt** , **Underhåll av produktattribut** , **Underhåll av produktkategori** , **Standardorderinställningar** och **Textöversättningar** så att du kan slutföra den nödvändiga konfiguration av produkten.
+Arbetsytan består av en sammanfattning av paneler och två listor. Listan **Öppna ärenden** visar produktändringsärenden som har produkter i den valda produktkategorihierarkin som inte är utförda och stängda. Listan **Nyligen frisläppta** visar produkter som har släppts inom tidsgränsen som anges i arbetsytans konfiguration. Validering utförs för varje artikel i listan och status för valideringen visas. Denna status kan indikera att nödvändiga konfigurationer för den juridiska personen inte är slutförda. I listan får du direkt tillgång till **Information om frisläppt produkt**, **Underhåll av produktattribut**, **Underhåll av produktkategori**, **Standardorderinställningar** och **Textöversättningar** så att du kan slutföra den nödvändiga konfiguration av produkten.
 
 ### <a name="manually-creating-a-new-released-product"></a>Skapa en ny frisläppt produkt manuellt
 

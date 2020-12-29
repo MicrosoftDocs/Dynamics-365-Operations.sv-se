@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e969a4bc4346d05abd99022868dae3a1d78fe50
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ae3192bcf5128c09279017e3d5e8be8f42ec6975
+ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979437"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4666780"
 ---
 # <a name="order-promising"></a>Orderlöfte
 
@@ -37,6 +37,12 @@ Orderlöfte beräknar de tidigaste transport- och inleveransdatumen och baseras 
 -   **ATP (available-to-promise; "tillgänglig att utlova")** – ATP är den kvantitet av en artikel som finns tillgänglig och därför kan utlovas en kund vid ett specifikt datum. ATP-beräkning inkluderar det obekräftade lagret, ledtider, planerade inleveranser och utleveranser.
 -   **ATP + utleveransmarginal**– Leveransdatum är lika med ATP-datumet plus utleveransmarginal för artikeln. Utleveransmarginalen är den tid som krävs för att förbereda artiklar som ska levereras.
 -   **CTP (CTP)**– Tillgänglighet beräknas genom nedbrytning.
+
+> [!NOTE]
+> När en försäljningsorder uppdateras information om orderlöften endast om det befintliga datumet för orderlöfte inte kan uppfyllas, vilket illustreras i följande exempel:
+> 
+> - **Exempel 1**: det aktuella datumet för orderlöfte är 20 juli, men på grund av en ökad kvantitet kan du inte leverera förrän den 25 juli. Eftersom det aktuella datumet inte längre kan uppfyllas utlöses orderlöfte.
+> -  **Exempel 2**: det aktuella datumet för orderlöfte är 20 juli, men på grund av en minskad kvantitet är det nu möjligt att leverera den 15 juli. Eftersom det aktuella datumet kan fortfarande uppfyllas utlöses inte orderlöfte och 20 juli är datumet för orderlöftet.
 
 ## <a name="atp-calculations"></a>ATP-beräkningar
 ATP-kvantiteten beräknas med metoden "ackumulerad ATP med framförhållning". Den största fördelen med ATP-beräkningsmetoden är att den förmår hantera fall där summan av utleveranser bland inleveranser överstiger den senaste inleveransen (till exempel när en kvantitet från en tidigare inleverans måste användas för att kunna uppfylla ett behov). Beräkningsmetoden "ackumulerad ATP med framförhållning" omfattar alla utleveranser tills den ackumulerade kvantiteten att inleverera är större än den ackumulerade kvantiteten att utleverera. Därför utvärderar den här ATP-beräkningsmetoden om en del av kvantiteten från en tidigare period kan användas i en senare period.  

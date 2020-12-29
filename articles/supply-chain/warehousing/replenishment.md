@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSReplenishmentTemplates, WHSReplenishmentTemplates, WHSInventFixedLocation
+ms.search.form: WHSReplenishmentTemplates, WHSReplenishmentTemplates, WHSInventFixedLocation, WHSRequestType
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c53596f9b11b1a7be4b8f1e18d58a202c74acd4
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 1fc7ae950ed32a75b8767d764c1b77193c454381
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016526"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654134"
 ---
 # <a name="replenishment-overview"></a>Lagerpåfyllnad – översikt
 
@@ -62,7 +62,7 @@ Minimi- och maximinivåerna ställs in i en lagerpåfyllnadsmall. Många av de a
 Observera att strategin Minsta/största lagerpåfyllnad inte kan fylla på en tom plats om inte platsen är markerad som fast lagerplats för artikeln. Om platsen som måste fyllas på inte är fast, kan systemet inte avgöra vilken vara som ska fyllas på. Därför krävs åtminstone en viss lagerbehållning innan lagerpåfyllnad utförs.
 
 ## <a name="load-demand-replenishment"></a>Lagerpåfyllnad för lastefterfrågan
-Lagerpåfyllnad för lastefterfrågan summerar behovet av flera laster och skapar de lagerpåfyllnadsarbeten som krävs för att fylla på relevanta plockplatser. Lagerpåfyllnad för lastefterfrågan liknar Lagerpåfyllnad baserad på efterfrågan på många sätt. Den största skillnaden är hur och när Lagerpåfyllnad för lastefterfrågan och Lagerpåfyllnad baserad på efterfrågan körs. I likhet med Minsta/största lagerpåfyllnad körs Lagerpåfyllnad för lastefterfrågan med hjälp av ett batchjobb. Om du vill ställa in batchjobbet på sidan **Lagerpåfyllnad för lastefterfrågan** , välj vilken lagerpåfyllnadsmall som ska användas och markera en filterfråga för att ange vilka laster som ska användas för att fastställa behovet. Platsfrågan definierar de platser som tillgänglig kvantitet kommer att dras av ifrån för att tillgodose det sammanlagda behovet av laster.
+Lagerpåfyllnad för lastefterfrågan summerar behovet av flera laster och skapar de lagerpåfyllnadsarbeten som krävs för att fylla på relevanta plockplatser. Lagerpåfyllnad för lastefterfrågan liknar Lagerpåfyllnad baserad på efterfrågan på många sätt. Den största skillnaden är hur och när Lagerpåfyllnad för lastefterfrågan och Lagerpåfyllnad baserad på efterfrågan körs. I likhet med Minsta/största lagerpåfyllnad körs Lagerpåfyllnad för lastefterfrågan med hjälp av ett batchjobb. Om du vill ställa in batchjobbet på sidan **Lagerpåfyllnad för lastefterfrågan**, välj vilken lagerpåfyllnadsmall som ska användas och markera en filterfråga för att ange vilka laster som ska användas för att fastställa behovet. Platsfrågan definierar de platser som tillgänglig kvantitet kommer att dras av ifrån för att tillgodose det sammanlagda behovet av laster.
 
 ## <a name="immediate-replenishment"></a>Omedelbar påfyllnad
 Du kan applicera en omedelbar påfyllnadsstrategi istället för att behöva sammanställa behovet i slutet av en allokeringsprocess och sedan fylla på baserat på den sammanställda kvantiteten. När du använder denna teknik kan lagret fyllas på omedelbart efter det att en direktivrad för plats misslyckas. Du kan därför konfigurera påfyllnaden som att den begränsas av specifika enheter, samt på så sätt att den använder kvantiteter angivna för specifika platser.

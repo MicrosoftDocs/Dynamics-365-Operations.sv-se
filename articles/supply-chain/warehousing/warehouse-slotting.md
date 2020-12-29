@@ -3,7 +3,7 @@ title: Artikelplacering för lagerställe
 description: Den här ämnet innehåller information om artikelplacering för lagerställe. Artikelplacering för lagerställe låter dig konsolidera efterfrågan per artikel och enhet från order som har status beställt, reserverat eller frisläppt. Det underlättar för lagerchefer att planera plockningsplatser innan de frigör order till lagerstället och skapar plockningsarbete.
 author: mirzaab
 manager: tfehr
-ms.date: 07/01/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,31 +16,48 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: ed9e6eae2ecc8de8d5eeef4699678e93dd74f193
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 31b86837735ca16610a1d304eab611b12a6aceeb
+ms.sourcegitcommit: be4b9d557511bbb43e71a93f2c3b23b5f1a4669d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017424"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "4627759"
 ---
 # <a name="warehouse-slotting"></a>Artikelplacering för lagerställe
 
 [!include [banner](../includes/banner.md)]
 
-Artikelplacering för lagerställe låter dig konsolidera efterfrågan per artikel och enhet från order som har status *beställt* , *reserverat* eller *frisläppt*. Genererade behov kan sedan tillämpas på platser som ska användas för plockning, baserat på kvantitet, enhet, fysiska dimensioner, fasta platser och mycket mer. När artikelplaceringsplanen har fastställts kan du skapa ett lagerpåfyllnadsarbete för att hämta en lämplig lagermängd till varje plats.
+Flera funktioner artikelplacering för distributionslager är tillgängliga för att hjälpa till lagerchefer att planera plockningsplatser innan de frigör order till lagerstället och skapar plockningsarbete.
 
-Denna funktion underlättar för lagerchefer att planera plockningsplatser innan de frigör order till lagerstället och skapar plockningsarbete.
+*Funktioner för artikelplacering* för lagerställe låter dig konsolidera efterfrågan per artikel och enhet från order som har status *beställt*, *reserverat* eller *frisläppt*. Genererade behov kan sedan tillämpas på platser som ska användas för plockning, baserat på kvantitet, enhet, fysiska dimensioner, fasta platser och mycket mer. När artikelplaceringsplanen har fastställts kan du skapa ett lagerpåfyllnadsarbete för att hämta en lämplig lagermängd till varje plats.
 
-## <a name="turn-on-the-warehouse-slotting-feature"></a>Aktivera funktionen artikelplacering för lagerställe
+Funktionen *Artikelplacering för distributionslager för överföringsorder* kan lagerchefer fylla på plockplatser baserat på efterfrågan från överföringsorder som ännu inte släppts till lagret. Det säkerställer att plockplatser innehåller alla artiklar som krävs för överföringsorder när de har frisläppts till lagerställe. Denna funktion kräver att du även aktiverar funktionen för funktionen *Artikelplacering för distributionslager*.
 
-Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+Funktionen *förbättrad allokering av artikelplacering för distributionslager* lägger till ett alternativ för de mallrader som används i funktionen *artikelplacering för distributionslager*. Alternativet gör det möjligt att överväga befintlig lagerbehållning på en målplats. Därför kan färre påfyllningar genereras för artikelplacering. Funktionen *förbättrad allokering av artikelplacering för distributionslager* kräver att du även aktiverar funktionen *artikelplacering för distributionslager*. Den kan också användas tillsammans med funktionen *Artikelplacering för distributionslager för överföringsorder*.
 
-- **Modul:** *Lagerstyrning*
-- **Funktionens namn:** *Funktionen artikelplacering för lagerställe*
+## <a name="turn-on-the-warehouse-slotting-features"></a>Aktivera funktionen artikelplacering för lagerställe
+
+Innan du kan använda dessa funktioner måste de aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera status för dessa funktioner och aktivera dem om de behövs. Aktivera följande funktioner om det behövs:
+
+- Lagerställets tilldelningsfunktion
+- Artikelplacering i distributionslager för överföringsorder
+
+    > [!IMPORTANT]
+    > Funktionen för *Funktionen artikelplacering för lagerställe* måste aktiveras före den här funktionen.
+
+- Förbättringar av allokering av artikelplacering i distributionslager
+
+    > [!IMPORTANT]
+    > Funktionen för *Funktionen artikelplacering för lagerställe* måste aktiveras före den här funktionen.
 
 ## <a name="set-up-warehouse-slotting"></a>Ställ in artikelplacering för lagerställe
 
 Om du vill använda artikelplacering för lagerställe måste du ställa följande element i systemet:
+
+- Måttenhetsnivåer för artikelplacering
+- Direktivkoder
+- Artikelplaceringsmallar
+- Platsdirektiv
 
 ### <a name="create-unit-of-measure-tiers-for-slotting"></a><a name="unit-tiers"></a>Skapa måttenhetsnivåer för artikelplacering
 
@@ -83,8 +100,8 @@ Du måste välja den direktivkod som ska associeras med en mall.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Direktivkoder**.
 1. Klicka på **Ny** i åtgärdsfönstret.
-1. I fältet **Direktivkod** , ange *Artikelplacering*.
-1. I fältet **Beskrivning av direktivkod** , ange *Artikelplacering*.
+1. I fältet **Direktivkod**, ange *Artikelplacering*.
+1. I fältet **Beskrivning av direktivkod**, ange *Artikelplacering*.
 
 ### <a name="set-up-slotting-templates"></a>Ställ in artikelplaceringsmallar
 
@@ -93,9 +110,9 @@ Varje artikelplaceringsmall styr hur lagret tilldelas till platser för ett viss
 1. Gå till **Lagerstyrning \> Inställningar \> Lagerpåfyllnad \> Artikelplaceringsmallar**.
 1. Skapa en ny mall genom att välja **Nytt**.
 
-Sedan måste du ställa in mallhuvudet, artikelplaceringsspecifikation och platsdirektiven, enligt beskrivningen i följande underavsnitt.
+Sedan måste du ställa in mallhuvudet, artikelplaceringsspecifikation och platsdirektiven, enligt beskrivningen i följande underavsnitt. Inställningen för artikelplacering för överföringsorder liknar inställningen för artikelplacering för försäljningsorder, men **Efterfrågetyp** anges till *Överföringsorder* istället för *Försäljningsorder*.
 
-#### <a name="set-up-a-slotting-template-header"></a>Ställa in ett artikelplacering mallhuvud
+#### <a name="set-up-the-header-for-a-sales-order-slotting-template"></a>Ställ in rubriken för en mall för att skapa en försäljningsorder
 
 1. Ange följande värden i mallens rubrik:
 
@@ -103,7 +120,8 @@ Sedan måste du ställa in mallhuvudet, artikelplaceringsspecifikation och plats
     - **Beskrivning:** _61_
     - **Efterfrågetyp:** *försäljningsorder*
 
-        För närvarande är den enda efterfrågetypen som stöds *försäljningsorder*.
+        > [!NOTE]
+        > För närvarande är *Försäljningsorder* och *Överföringsorder* de enda typer av efterfrågan som stöds. Du kan bara välja *Överföringsorder* om funktionen *Artikelplacering i distributionslager för överföringsorder* är aktiverad.
 
     - **Efterfrågestrategi:** _beställt_
 
@@ -111,6 +129,7 @@ Sedan måste du ställa in mallhuvudet, artikelplaceringsspecifikation och plats
 
         - **Beställt** – hela den beställda kvantiteten på försäljningsordern ska behandlas som efterfrågan.
         - **Reserverat** – endast försäljningsorderradens kvantitet som är reserverade (fysiska och beställda) ska betraktas som efterfrågan.
+        - **Frisläppt** – den frisläppta kvantiteten ska behandlas som efterfrågan.
 
     - **Lagerställe:** _61_
     - **Tillåt påfyllnad av efterfrågan att använda icke-reserverade kvantiteter:** _Ja_
@@ -119,7 +138,7 @@ Du kan även ange en fråga för att begränsa omfattningen av den efterfrågan 
 
 #### <a name="set-up-slotting-specifications-for-each-template"></a>Ställa in en artikelplaceringsspecifikation för varje mall
 
-För varje mall som du skapar lägger du till en rad för varje artikelplaceringsspecifikation genom att följa stegen nedan.
+För varje försäljningsordermall som du skapar lägger du till en rad för varje artikelplaceringsspecifikation genom att följa stegen nedan.
 
 1. På snabbfliken **Information artikelplaceringsspecifikation** välj **Ny** för att skapa en mallrad.
 1. Ställ in följande värden på denna nya rad:
@@ -148,6 +167,7 @@ För varje mall som du skapar lägger du till en rad för varje artikelplacering
 
         - **Antag vara tom** – det här systemet ska anta att alla platser i plockområdet är tomma och inte ska kontrollera lagerställen.
         - **Överväg kvantitet** – Systemet bör kontrollera platserna i plockningsområdet för inventering och bör hoppa över alla platser som inte är tomma.
+        - **Överväg lagerbehållning** – systemet bör kontrollera om det finns icke reserverade kvantiteter för artikeln på efterfrågeraden. Om kvantiteten är tillräckligt stor för att kunna uppfylla minst en enhet av efterfrågeraden, reduceras den genererade artikelplaceringsposten med det tillgängliga beloppet. Om efter frågan t.ex. är 10 ärenden och ett ärende är i handen, kommer den efterfrågan att vara nio ärende. Om efterfrågan är 10 ärenden och varje är i handen, kommer den efterfrågan att vara 10 ärenden. Det här värdet är bara tillgängligt om funktionen *Förbättringar av allokering av artikelplacering i distributionslager* är aktiverad.
 
     - **Direktiv kod:** _Artikelplacering_
 
@@ -159,7 +179,7 @@ För varje mall som du skapar lägger du till en rad för varje artikelplacering
 
     - **Tillåt låt upp:** _Ja_
 
-        Om det här alternativet är inställt på *Ja* , kommer flyttningsarbetet att skapas för att ta ut lagret med lagerställen, men där inget har öppnats. Mallen körs sedan igen. Den här gången ignoreras lagret på platserna. Den här funktionen fungerar bäst om fältet **Tilldela kortplatskriterier** är inställt på _Överväg kvantitet_.
+        Om det här alternativet är inställt på *Ja*, kommer flyttningsarbetet att skapas för att ta ut lagret med lagerställen, men där inget har öppnats. Mallen körs sedan igen. Den här gången ignoreras lagret på platserna. Den här funktionen fungerar bäst om fältet **Tilldela kortplatskriterier** är inställt på _Överväg kvantitet_.
 
     - **Användning av fast lagerplats:** _Endast fasta lagerplatser för produkten_
 
@@ -168,6 +188,9 @@ För varje mall som du skapar lägger du till en rad för varje artikelplacering
         - **Fasta och icke-fasta lagerplatser** – systemet ska inte begränsas till att bara använda fasta lagerplatser.
         - **Endast fasta lagerplatser för produkten** – systemet ska endast kortas till platser som är fasta lagerplatser för produkten.
         - **Endast fasta lagerplatser för produktvarianten** – systemet ska endast kortas till platser som är fasta lagerplatser för produktvarianten.
+
+> [!NOTE]
+> Om artikelplaceringsmallen innehåller minst en rad där fältet **Tilldela kortkriterier** anges *Överväg lagerbehållning*, minskningar är inte längre tillåtna för någon rad i mallen.
 
 1. Välj **Spara**.
 1. Klicka på **Ny** för att skapa en andra mallrad.
@@ -189,7 +212,7 @@ För varje mall som du skapar lägger du till en rad för varje artikelplacering
 
 1. Välj raden där fältet **Sekvens** är inställt på *2*.
 1. Välj **Redigera fråga**.
-1. På fliken **intervall** , välj **Lägg till** om du vill lägga till en rad i rutnätet.
+1. På fliken **intervall**, välj **Lägg till** om du vill lägga till en rad i rutnätet.
 1. Ställ in följande värden på denna nya rad:
 
     - **Register:** *platser*
@@ -207,6 +230,7 @@ Minst ett platsdirektiv måste ställas in för att stödja plockning av artikel
 1. I vänstra fönstret i fältet **Typ av arbetsorder** väljer du *lagerpåfyllnad*.
 1. Klicka på **Ny** i åtgärdsfönstret.
 1. I rubriken för det nya platsdirektivet anger du i fältet **Namn** *61 plocka artikelplacering*.
+1. I fältet **Löpnummer** acceptera standardvärdet.
 
 ##### <a name="configure-the-location-directives-fasttab"></a>Konfigurera snabbfliken platsdirektiv
 
@@ -221,12 +245,13 @@ Minst ett platsdirektiv måste ställas in för att stödja plockning av artikel
 
 ##### <a name="configure-the-lines-fasttab"></a>Konfigurera snabbfliken Rader
 
-1. På snabbfliken **Rader** , klicka på **Ny** för att skapa en ny rad.
-1. Ställ in följande värden på denna nya rad. Acceptera standardvärden för alla andra fält.
+1. På snabbfliken **Rader**, klicka på **Ny** för att skapa en ny rad.
+1. Ställ in följande värden på denna nya rad.
 
     - **Från kvantitet:** _0_
     - **Till kvantitet:** _1000000_
 
+1. Acceptera standardvärden för kvarvarande fält.
 1. Välj **Spara** om du vill göra snabbfliken **Platsdirektivåtgärd** tillgänglig.
 
 ##### <a name="configure-the-location-directive-actions-fasttab"></a>Konfigurera snabbfliken Platsdirektivåtgärder
@@ -234,15 +259,17 @@ Minst ett platsdirektiv måste ställas in för att stödja plockning av artikel
 1. På snabbfliken **Platsdirektivåtgärder** välj **Ny** för att skapa en rad.
 1. Ställ in följande värden på denna nya rad. Acceptera standardvärden för alla andra fält.
 
+    - **Löpnummer:** Acceptera standardvärdet.
     - **Namn:** _Bulk_
     - **Strategi:** _ingen_
 
+1. Acceptera standardvärden för kvarvarande fält.
 1. Välj **Spara** om du vill göra knappen **Redigera fråga** tillgänglig.
 
 ##### <a name="edit-the-query"></a>Redigera frågan
 
 1. På snabbfliken **Platsdirektivåtgärder** välj **Redigera fråga**.
-1. På fliken **intervall** , välj **Lägg till** om du vill lägga till en rad i rutnätet.
+1. På fliken **intervall**, välj **Lägg till** om du vill lägga till en rad i rutnätet.
 1. Ställ in följande värden på denna nya rad:
 
     - **Register:** *platser*
@@ -269,7 +296,7 @@ Skapa den efter frågan som du vill använda skåra på genom att följa stegen 
 1. Gå till **Försäljning och marknadsföring \> Försäljningsorder \> Alla försäljningsorder**.
 1. Skapa en försäljningsorder genom att välja **Ny**.
 1. I dialogrutan **Skapa försäljningsorder** i fältet **Kundkonto** välj _US-007_.
-1. I fältet **Lagerställe** , välj _61_.
+1. I fältet **Lagerställe**, välj _61_.
 1. Välj **OK**.
 1. Den nya försäljningsordern öppnas. Den innehåller en tom rad i snabbfliken **Försäljningsorderrader**. Ställ in följande värden på denna rad:
 
@@ -284,7 +311,7 @@ Skapa den efter frågan som du vill använda skåra på genom att följa stegen 
 1. Välj **Spara**.
 1. Skapa en andra försäljningsorder genom att välja **Ny**.
 1. I dialogrutan **Skapa försäljningsorder** i fältet **Kundkonto** välj _US-008_.
-1. I fältet **Lagerställe** , välj _61_.
+1. I fältet **Lagerställe**, välj _61_.
 1. Den nya försäljningsordern öppnas. Den innehåller en tom rad i snabbfliken **Försäljningsorderrader**. Ställ in följande värden på denna rad:
 
     - **Artikel:** _T0100_
@@ -318,9 +345,16 @@ Efter att efterfrågan har genererats måste du använda kommandot **Hitta efter
 
 #### <a name="slotting-plan"></a>Plan för artikelplacering
 
-Artikelplaceringsplanen visar platsen som varje artikel/kvantitet har tilldelats för, om spill användes, om det är fråga om att arbeta med rader och vilka mallrader som användes. **Alla efterfrågan som inte kan skåras markeras i artikelplacering.**
+Artikelplaceringsplanen visar platsen som varje artikel/kvantitet har tilldelats för, om spill användes, om det är fråga om att arbeta med rader och vilka mallrader som användes. *Alla efterfrågan som inte kan skåras markeras i artikelplacering.*
 
 - I åtgärdsfönstret, välj **Artikelplaceringsplan** du vill visa resultaten.
+
+> [!NOTE]
+> - Processen **Generera efterfrågan**, **Hitta efterfrågan** och **Kör lagerpåfyllnad** processer i ett begränsat läge. (Dessa processer är tillgängliga från åtgärdsfönstret på sidan **artikelplaceringsmallar**).
+> - Processer **Generera efterfrågan**, **Lokalisera efterfrågan** och **Kör lagerpåfyllnad** processer har ett lås för att säkerställa att de inte kan utlösas samtidigt. I annat fall kan data som används tas bort.
+> - Processerna **Generera efterfrågan** och **Lokalisera efterfrågan** visar en varning om körningen inte genererade poster, eller om det saknas information om posterna.
+> - När du väljer en **Plan för artikelplacering** har inte sidan knapparna **Ny**, **Redigera** eller **Ta bort** i åtgärdsfönstret eftersom datakällan inte kan redigeras.
+> - När du väljer **Kör påfyllnad**, validerar systemet den valda platsens mall och processer.
 
 #### <a name="create-replenishment"></a>Skapa lagerpåfyllnad
 

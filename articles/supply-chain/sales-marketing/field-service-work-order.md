@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: a896acb984f64860df54b61350c0e6d12e0dd678
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d8051e21c731213e2d74ab6eeb80c239ca9932e6
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209155"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528933"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synkronisera arbetsorder i Field Service till försäljningsorder i Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera arbetsorder i Dynamics 365 Field Service till försäljningsorder Dynamics 365 Supply Chain Management.
 
@@ -129,7 +131,7 @@ Synkronisering av värdet **uppskattad** jämfört med värdet **använd** hante
     - **Produktrad:** uppskattad kvantitet = 5ea, använd kvantitet = 0ea, radstatus = uppskattad, tilldelad = Nej
     - **Servicerad:** uppskattad kvantitet = 2 tim, använd kvantitet = 0 tim, radstatus = uppskattad
 
-    I detta exempel synkroniseras produktens värde för**Använd kvantitet** **0** (noll) och tjänstens värde för **Uppskattad kvantitet** är **2 tim** till Supply Chain Management.
+    I detta exempel synkroniseras produktens värde för **Använd kvantitet** **0** (noll) och tjänstens värde för **Uppskattad kvantitet** är **2 tim** till Supply Chain Management.
 
 2. Produkter fördelas i Field Service.
 
@@ -138,7 +140,7 @@ Synkronisering av värdet **uppskattad** jämfört med värdet **använd** hante
     - **Produktrad:** uppskattad kvantitet = 5ea, använd kvantitet = 0ea, radstatus = uppskattad, tilldelad = Ja
     - **Servicerad:** uppskattad kvantitet = 2 tim, använd kvantitet = 0 tim, radstatus = uppskattad
 
-    I detta exempel synkroniseras produktens värde för**Använd kvantitet** **5ea** och tjänstens värde för **Uppskattad kvantitet** är **2 tim** till Supply Chain Management.
+    I detta exempel synkroniseras produktens värde för **Använd kvantitet** **5ea** och tjänstens värde för **Uppskattad kvantitet** är **2 tim** till Supply Chain Management.
 
 3. Serviceteknikern börjar arbeta på arbetsorder och registrerar materialanvändningen 6.
 
@@ -147,7 +149,7 @@ Synkronisering av värdet **uppskattad** jämfört med värdet **använd** hante
     - **Produktrad:** uppskattad kvantitet = 5ea, använd kvantitet = 6ea, radstatus = använd, tilldelad = Ja
     - **Servicerad:** uppskattad kvantitet = 2 tim, använd kvantitet = 0 tim, radstatus = uppskattad
 
-    I detta exempel synkroniseras produktens värde för**Använd kvantitet** **6** och tjänstens värde för **Uppskattad kvantitet** är **2 tim** till Supply Chain Management.
+    I detta exempel synkroniseras produktens värde för **Använd kvantitet** **6** och tjänstens värde för **Uppskattad kvantitet** är **2 tim** till Supply Chain Management.
 
 4. Serviceteknikern slutför arbetsordern och registerar använd tid till 1,5 timmar.
 
@@ -156,7 +158,7 @@ Synkronisering av värdet **uppskattad** jämfört med värdet **använd** hante
     - **Produktrad:** uppskattad kvantitet = 5ea, använd kvantitet = 6ea, radstatus = använd, tilldelad = Ja
     - **Servicerad:** uppskattad kvantitet = 2 tim, använd kvantitet = 1,5 tim, radstatus = använd
 
-    I detta exempel synkroniseras produktens värde för**Använd kvantitet** **6** och tjänstens värde för **Använd kvantitet** är **1,5 tim** till Supply Chain Management.
+    I detta exempel synkroniseras produktens värde för **Använd kvantitet** **6** och tjänstens värde för **Använd kvantitet** är **1,5 tim** till Supply Chain Management.
 
 ## <a name="sales-order-origin-and-status"></a>Försäljningorderns ursprung och status
 

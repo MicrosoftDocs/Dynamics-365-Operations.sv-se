@@ -19,14 +19,16 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 259c9f07fb69b07f73baeb5ce94e0a7bc29bb2d6
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: c16818f1dc52c9e21130539213e7e8d1053fef1d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984815"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529196"
 ---
 # <a name="product-identifiers"></a>Produktidentifierare
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 [!include [banner](../includes/banner.md)]
 
@@ -165,7 +167,7 @@ Följande tabell ger en översikt över resultaten av import och manuellt skapan
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Identifierare för produktenhet (exportera alla produktidentifierare)
 
-Produktenhetens ID-modell skapades för att möjliggöra att version 1.0 av CDS tillhandahålls med alla identifierare som används för att referera till en produkt. För att förenkla uppgiften samlas alla identifierare i en global identifierartabell så att de kan exporteras som en modell. Observera att den här versionen av CDS inte använder produktidentifierarens modell. Därför har entiteten **Produktentiteten identifierare av common data service**och denna process begränsad praktisk användning och kommer sannolikt att ändras i framtiden.
+Produktenhetens ID-modell skapades för att möjliggöra att version 1.0 av CDS tillhandahålls med alla identifierare som används för att referera till en produkt. För att förenkla uppgiften samlas alla identifierare i en global identifierartabell så att de kan exporteras som en modell. Observera att den här versionen av CDS inte använder produktidentifierarens modell. Därför har entiteten **Produktentiteten identifierare av common data service** och denna process begränsad praktisk användning och kommer sannolikt att ändras i framtiden.
 
 Tabellen för produktidentifierare är en globalt tabell som är ifylld från alla referenstabeller från den huvudsakliga juridiska personen genom ett återkommande batchjobb. Du måste välja en juridisk person och en produktkategorihierarki som definition av den globala produktmallomfattningen. Generering av den globala tabellen för produktidentifierare begränsas till produkter som övergår till den valda juridiska personen och produkter som ingår i produkthierarkin som har valts för rollen **Common data service** i produktkategorihierarkin.
 

@@ -3,7 +3,7 @@ title: Tillhandahålla guider för mixad verklighet för arbetare i produktion
 description: I det här avsnittet beskrivs hur du integrerar modulen för produktionshantering i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides.
 author: cabeln
 manager: tfehr
-ms.date: 09/29/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 14645f592275d07a6b633146bb6da35b89c1bf77
-ms.sourcegitcommit: 6d2fc497c8a7f49c48e7662995e27b5f8cc10296
+ms.openlocfilehash: 727a3bc50ea55259c7260a9d060dac59473ee3c1
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4000988"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645154"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Tillhandahålla guider för mixad verklighet för arbetare i produktion
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Arbetare i produktionsprocesser kommer att ha nytta av relevanta instruktioner som ges vid rätt tid inom ramen för deras arbete. *Instruktionerna* gäller i flera arbetsdomäner, t.ex. sammansättning, service, åtgärder, certifiering och säkerhet. I alla dessa grundläggande affärsfunktioner kan de pågående utbildningsinstruktionerna hjälpa medarbetarna att utföra mer och arbeta bättre.
 
@@ -124,10 +126,9 @@ Om du vill konfigurera hur guider visas verkstadsgolvet går du till konfigurati
 
 Ange följande fält.
 
-- **Common Data Service underdomän** - det här fältet ska redan ha ett värde. Det här fältet innehåller underdomänen för Common Data Service-miljön där du skapar guiderna. Underdomänen är den första delen av URL:en och har normalt ett namn efter din organisation. Om din Common Data Service-URL t.ex. är "contoso.crm4.dynamics.com" skriver du *contoso* här. Det här värdet används för att skapa adresser för guider och de kommer att kodas till QR-koderna.
+- **Microsoft Dataverse URL** - Ange den URL till Microsoft Dataverse-miljön där du skapar Guides. Formatet är "contoso.crm4.dynamics.com", där den första delen av webbadressen vanligtvis namnges efter din organisation (t.ex. "contoso."), den andra delen är specifik för din miljös dataområde (t.ex. "CRM4.") och den sista delen är domänen (t.ex. "dynamics.com"). Ett sätt att hitta rätt URL är att gå till [home.dynamics.com](https://home.dynamics.com/) och sedan öppna appen Guides. När Guides öppnas visas URL:en i adressfältet i webbläsaren (endast bas-URL:en, som bör likna föregående exempel). Det här värdet används för att skapa adresser för guider och de kommer att kodas till QR-koderna."
 - **Storlek på QR** - Ange storleken på den återgivna QR-koden. Vi rekommenderar att du väljer en storlek som kommer att fylla större delen av skärmen, men inte mer. Normalt *15* är ett bra värde.
 - **Korrigeringsnivå för QR-kod** - Ange granularitet för QR-koden. Högre granularitet kan öka kodens tillförlitlighet, men **QR-kodens storlek** måste vara stor nog för att ge den detaljnivå som krävs för den valda korrigeringsnivån.
-
 
 > [!TIP]
 > - Värden för QR-koder som är för stora för din bildskärm tar lite längre tid att återge och sedan skalas de ned så att de passar din bildskärm. De ger ingen förmån.

@@ -15,20 +15,22 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e3ab79bc9203309c0cfa1ff18f75580297ae1001
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 7849f354817f189bf7c844bbe2944f94c8fffe83
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3414012"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527373"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Anpassa och använda kundportalen
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I det här avsnittet beskrivs de olika sidor som medföljer kundportalen. Den förklarar vad sidorna gör och hur du kan anpassa dem.
 
 Kundportalen erbjuder några medföljande webbsidor och åtgärder. I följande webbplatsöversikt finns en översikt över de webbsidor och åtgärder och vilka roller som kan utföra åtgärderna.
 
-![![Översikt över kundportal webbplats](media/customer-portal-site-map.png "Översikt över kundportal webbplats")](media/customer-portal-site-map.png "Customer portal site map")
+![Översikt över kundportal webbplats](media/customer-portal-site-map.png "Översikt över kundportal webbplats")
 
 ## <a name="typical-customizations"></a>Typiska anpassningar
 
@@ -62,12 +64,12 @@ Här följer de här standardstegen för att skicka en order från kundportalen.
     - **Rekvisitionsnummer** – Ange orderns rekvisitionsnummer. Detta fält krävs inte.
     - **Leverera till land/region** – ange landet eller regionen som artiklarna ska levereras till. Det här fältet ställs automatiskt in för användare som inte är administratörer.
 
-    ![![Sidan orderinformation](media/customer-portal-order-information.png "Sidan orderinformation")](media/customer-portal-order-information.png "Order Information page")
+    ![Sidan orderinformation](media/customer-portal-order-information.png "Sidan orderinformation")
 
 1. Välj **Nästa**.
 1. På sidan **Artiklar** markerar du **Lägg till artikel**.
 
-    ![![Sidan artiklar](media/customer-portal-items.png "Sidan artiklar")](media/customer-portal-items.png "Items page")
+    ![Sidan artiklar](media/customer-portal-items.png "Sidan artiklar")
 
 1. I dialogrutan **Artikelinformation** anger du följande fält:
 
@@ -76,14 +78,14 @@ Här följer de här standardstegen för att skicka en order från kundportalen.
     - **Enhet** – Ange måttenheten (t.ex. **styck**, **kgs** eller **box**).
     - **Uppskattat nettobelopp** – värdet beräknas som det uppskattade priset för artikeln × kvantiteten för den valda enheten.
 
-    ![![Dialogruta för artikelinformation](media/customer-portal-item-information.png "Dialogruta för artikelinformation")](media/customer-portal-item-information.png "Item Information dialog box")
+    ![Dialogruta för artikelinformation](media/customer-portal-item-information.png "Dialogruta för artikelinformation")
 
 1. Välj **Skicka** för att lägga till artikeln till ordern.
 1. Upprepa steg 4 till och med 6 tills du har lagt till alla artiklar som du vill beställa.
 1. När du har lagt till alla artiklar väljer du **Nästa** på sidan **Artiklar**.
 1. På sidan **Orderinformation** finns en sammanfattning av ordern. Granska orderinnehåll och leveransinformation. Om allting ser korrekt ut väljer du **Skicka** för att skicka ordern.
 
-    ![![Sidan orderinformation](media/customer-portal-order-submit.png "Sidan orderinformation")](media/customer-portal-order-submit.png "Order Information page")
+    ![Sidan orderinformation](media/customer-portal-order-submit.png "Sidan orderinformation")
 
 ### <a name="standard-data-setup"></a>Ställa in standarddata
 
@@ -148,19 +150,19 @@ Alla kontrollerna i kundportalen är inbyggda i Power Apps-portalkontroller. Du 
 
 Den enda anpassade kontrollen som ingår i kundportalmallen används för att skapa panelerna på startsidan.
 
-![![Paneler på startsidan](media/customer-portal-home-page-tiles.png "Paneler på startsidan")](media/customer-portal-home-page-tiles.png "Tiles on the home page")
+![Paneler på startsidan](media/customer-portal-home-page-tiles.png "Paneler på startsidan")
 
 Gör så här om du vill ändra paneler.
 
 1. Öppna [Portalhanteringsapp](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-portal).
 1. I navigeringsfönstret till vänster, välj **Sidmallar**.
 
-    ![![Navigeringsfönster för portalhantering](media/customer-portal-nav.png "Navigeringsfönster för portalhantering")](media/customer-portal-nav.png "Portal Management navigation pane")
+    ![Navigeringsfönster för portalhantering](media/customer-portal-nav.png "Navigeringsfönster för portalhantering")
 
 1. Markera den sidmall som heter **Start**.
 1. I fältet **webbmall** väljer du **start**-länken för att öppna källkoden för den sidan.
 
-    ![![Fältet webbmall](media/customer-portal-web-template.png "Fältet webbmall")](media/customer-portal-web-template.png "Web Template field")
+    ![Fältet webbmall](media/customer-portal-web-template.png "Fältet webbmall")
 
 1. Du bör nu se alla källkoder för startsidan och kan ändra den efter behov.
 

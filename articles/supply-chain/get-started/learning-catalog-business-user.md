@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 741c8af7eaabe23c03546daddd0a9a422146f575
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: c3fc8cf49b62515f41712e594076c31ae5d7654b
+ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793573"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4668991"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Utbildningskatalog för användare av Dynamics 365 Supply Chain Management
 
@@ -50,6 +50,7 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | [Konfigurera och hantera produkter och lager i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/) | Produktinformation är den viktigaste delen i leveranskedjor och butiksapplikationer inom alla branscher. I de olika modulerna för en företagslösning krävs produktspecifik information och konfiguration för att hantera de affärsprocesser som rör specifika produkter, produktfamiljer, strukturlistor och produktkategorier. Lagerrapporter kommer att visa hur mycket av lagret du har på olika sätt och förklarar hur du kan bli mer effektiv i dina lagerinvesteringar. Huvudplaneringen hjälper dig att förenkla planeringen, baserat på fördefinierade faktorer så att du effektivt kan planera vilka material som behöver köpas in, överföras eller tillverkas. | Gratis, självstudier online utbildningsväg | 14 timmar |
 | [Konfigurera och hantera anskaffning och leverantörer i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/) | Processen att hitta och arbeta med leverantörer, köpa produkter och säkerställa varornas och tjänsternas kvalitet är viktiga faktorer som påverkar ett företags rykte och framgång. | Gratis, självstudier online utbildningsväg | 14 timmar |
 | [Konfigurera och hantera försäljning och kunder i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-manage-sales-customers-dyn365-supply-chain-mgmt/) | Processen att arbeta med kunder, förstå livscykeln för försäljningsprocessen och att ställa in försäljningsavtal är alla viktiga faktorer som påverkar ett företags framgång. | Gratis, självstudier online utbildningsväg | 7 timmar |
+| [Huvudplanering i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/master-planning-supply-chain-management/) | Masterplanering gör det möjligt för företag att identifiera och balansera de råvaror och kapacitet som krävs för att nå sina framtida mål. Huvudplaneringen bedömer vilka råvaror och kapacitet som för närvarande finns tillgängliga, och vilka råvaror och kapacitet som krävs för att slutföra produktionen. Den identifierar exempelvis vad som måste tillverkas, köpas, överföra eller sparas som säkerhetslager innan man kan slutföra produktionen. | Gratis, självstudier online utbildningsväg | 5 timmar |
 | [Konfigurera och arbeta med lagerstyrning i Dynamics 365 for Finance and Operations](https://docs.microsoft.com/learn/paths/configure-work-warehouse-management-d365-finance-ops/) | Lagerstyrning i Dynamics 365 Supply Chain Management hjälper till att optimera och effektivisera lagerprocesser utifrån dina individuella behov och ge insyn i lagret och verktygen för att öka kundtillfredsställelsen och minska kostnaderna. | Gratis, självstudier online utbildningsväg | 8.5 timmar |
 | [Konfigurera och arbeta med transporthantering i Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/configure-work-transportation-mgmt-dyn365-supply-chain-mgmt/) | Modulen transporthantering i Dynamics 365 Supply Chain Management hjälper dig att hitta det mest effektiva sättet att leverera varor till kunderna. Transporthantering beräknar det billigaste och snabbaste sättet att leverera varor och gör att du kan identifiera leverantörs- och flödeslösningar för inkommande och utgående order. | Gratis, självstudier online utbildningsväg | 3 timmar |
 | [Arbeta med tillgångshantering för Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/paths/work-asset-management-dyn365-supply-chain-mgmt/) | Tillgångshantering är ett tillägg till Dynamics 365 Supply Chain Management, som används för att hantera tillgångar som används i ditt företags dagliga drift. Exempel på dessa typer av tillgångar är maskiner, produktionsutrustning och gaffeltruckar. | Gratis, självstudier online utbildningsväg | 12.5 timmar |

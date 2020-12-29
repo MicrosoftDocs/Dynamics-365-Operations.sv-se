@@ -3,7 +3,7 @@ title: Anskaffnings- och källarbetsflöden
 description: Vissa organisationer kräver att inköpsrekvisitioner och inköpsorder godkänns av en annan användare än den som registrerade transaktionen. Ställ in en godkännandeprocess genom att skapa ett arbetsflöde.
 author: mkirknel
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c757779d60147748e305d85fbc2b0bf6b0eedaf3
-ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
+ms.openlocfilehash: 22602911fa5d395d439242746f2fe8a27c656bcf
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3813922"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654158"
 ---
 # <a name="procurement-and-sourcing-workflows"></a>Anskaffnings- och källarbetsflöden
 
@@ -32,25 +32,34 @@ ms.locfileid: "3813922"
 Vissa organisationer kräver att inköpsrekvisitioner och inköpsorder godkänns av en annan användare än den som registrerade transaktionen. Ställ in en godkännandeprocess genom att skapa ett arbetsflöde.
 
 Ett arbetsflöde representerar en affärsprocess. Det visar ett dokuments väg genom systemet och anger vem som måste genomföra en uppgift eller godkänna ett dokument. Det finns flera fördelar med att använda arbetsflödessystemet i organisationen:
--   **Konsekventa processer** – Du kan definiera godkännandeprocessen för specifika dokument, till exempel inköpsrekvisitioner och utgiftsrapporter. Med arbetsflödessystemet blir det enklare att se till att dokumenten bearbetas och godkänns på ett enhetligt och effektivt sätt.
--   **Processerna blir synliga** – Du kan spåra status, historik och prestandamått för specifika arbetsflödesinstanser. Det blir då enklare att ta reda på om du bör göra ändringar för att höja effektiviteten.
--   **Centraliserad arbetslista** – Användarna kan visa en centraliserad arbetslista för att visa arbetsflödesuppgifterna och godkännanden som har tilldelats dem för alla arbetsflöden som de deltar i. Detta är tillgängligt på sidan Arbetsuppgifter.
+
+- **Konsekventa processer** – Du kan definiera godkännandeprocessen för specifika dokument, till exempel inköpsrekvisitioner och utgiftsrapporter. Med arbetsflödessystemet blir det enklare att se till att dokumenten bearbetas och godkänns på ett enhetligt och effektivt sätt.
+- **Processerna blir synliga** – Du kan spåra status, historik och prestandamått för specifika arbetsflödesinstanser. Det blir då enklare att ta reda på om du bör göra ändringar för att höja effektiviteten.
+- **Centraliserad arbetslista** – Användarna kan visa en centraliserad arbetslista för att visa arbetsflödesuppgifterna och godkännanden som har tilldelats dem för alla arbetsflöden som de deltar i. Detta är tillgängligt på sidan Arbetsuppgifter.
 
 ## <a name="the-types-of-workflows-that-you-can-create"></a> De typer av arbetsflöden som du kan skapa
+
 Följande arbetsflödestyper är tillgängliga för Anskaffning och källa.
 
-|                                  |                                                               |
-|----------------------------------|---------------------------------------------------------------|
-| **Typ**                         | **Använd den här typen för att**                                          |
-| Granskning av inköpsrekvisition      | Skapa gransknings- och godkännandearbetsflöden för inköpsrekvisitioner.            |
-| Granskning av inköpsrekvisitionsrad | Skapa gransknings- och godkännandearbetsflöden för inköpsrekvisitionsrader.       |
-| Arbetsflöde för inköpsorder          | Skapa granskning- och godkännandearbetsflöden för inköpsorder.     |
-| Arbetsflöde för inköpsorderrad     | Skapa granskning- och godkännandearbetsflöden för orderrader. |
-| Ansökningsarbetsflöde för leverantörstillägg  | Att granska och godkänna arbetsflöden för att lägga till nya leverantörer via leverantörsförfrågningar. |
+| Typ | Använd den här typen för att |
+|---|---|
+| Granskning av inköpsrekvisition | Skapa gransknings- och godkännandearbetsflöden för inköpsrekvisitioner. |
+| Granskning av inköpsrekvisitionsrad | Skapa gransknings- och godkännandearbetsflöden för inköpsrekvisitionsrader. |
+| Arbetsflöde för inköpsorder | Skapa granskning- och godkännandearbetsflöden för inköpsorder. |
+| Arbetsflöde för inköpsorderrad | Skapa granskning- och godkännandearbetsflöden för orderrader. |
+| Ansökningsarbetsflöde för leverantörstillägg | Att granska och godkänna arbetsflöden för att lägga till nya leverantörer via leverantörsförfrågningar. |
+
+> [!IMPORTANT]
+> När du lägger till ett nytt arbetsflöde kan du också se följande föråldrade arbetsflöden i dialogrutan **Skapa arbetsflöde**. Dessa är relaterade till funktionen *bekräftelse av kvitto* som fanns i [Dynamics AX 2012](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows), men som nu är föråldrade. Dessa arbetsflöden stöds för närvarande inte.
+> 
+> - Meddelandearbetsflöde för leveransens förfallodatum
+> - Meddelandearbetsflöde för mottagen faktura
+> - Produktinleveransen godkändes inte i meddelandearbetsflödet
+> - Meddelandearbetsflöde för avvisad obekräftad produktinleverans
 
 ## <a name="creating-a-workflow"></a>Skapa ett arbetsflöde
 
-Om du vill skapa ett arbetsflöde, gå till Anskaffning och källa &gt; Inställningar &gt; Anskaffnings- och källarbetsflöden och skapa ett nytt arbetsflöde genom att välja vilken typ av arbetsflöden som du vill skapa.  
+Om du vill skapa ett arbetsflöde, gå till Anskaffning och källa &gt; Inställningar &gt; Anskaffnings- och källarbetsflöden och skapa ett nytt arbetsflöde genom att välja vilken typ av arbetsflöden som du vill skapa. 
 
 I arbetsflödets arbetsyta kan du dra arbetsflödeselement till designern och länka elementen till ett flöde. Arbetsflödeselementen bör konfigureras. För arbetsflödeselement för godkännande och uppgift kan du konfigurera vilken deltagare som ska vidta åtgärder.
 
@@ -58,21 +67,16 @@ I arbetsflödets arbetsyta kan du dra arbetsflödeselement till designern och l�
 
 Du kan tilldela ett godkännandesteg till följande grupper för deltagare.
 
-| Användargrupp    | Beskrivning                                                               |
-|---------------|---------------------------------------------------------------------------|
-| Deltagare   | Tilldela godkännandesteget till medlemmar i en grupp eller en roll.                   |
-| Hierarki     | Tilldela godkännandesteget till användare i en viss organisationshierarki |
-| Användare av arbetsflöde | Tilldela godkännandesteget till användare i arbetsflödet.                       |
-| Kö         | Tilldela godkännandesteget till en arbetsuppgiftskö.                            |
-| Användare          | Tilldela godkännandesteget till specifika användare.                               |
-
-
+| Användargrupp | Beskrivning |
+|---|---|
+| Deltagare | Tilldela godkännandesteget till medlemmar i en grupp eller en roll. |
+| Hierarki | Tilldela godkännandesteget till användare i en viss organisationshierarki |
+| Användare av arbetsflöde | Tilldela godkännandesteget till användare i arbetsflödet. |
+| Kö | Tilldela godkännandesteget till en arbetsuppgiftskö. |
+| Användare | Tilldela godkännandesteget till specifika användare. |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Definiera affärsprocessarbetsflöden för inköpsrekvisitioner](https://www.microsoft.com/download/details.aspx?id=101821)
-
 - [Arbetsflöde för inköpsrekvisitioner](purchase-requisitions-workflow.md)
-
 - [Integrera leverantörer](vendor-onboarding.md)
-

@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d69b1e9444785058a2b3e62b9a76cb6e70abf03
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: a541818a72f5c24db8784071f447c83a2aa4edfd
+ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017608"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4666756"
 ---
 # <a name="partial-location-cycle-counting"></a>Rullande inventering av del av platser
 
@@ -35,29 +35,30 @@ Planer för rullande inventering guidar de faktiska räkningsoperationerna. Du k
 Du kan vägleda de faktiska räkningsoperationerna genom att använda planer för rullande inventering för att skapa räkningsarbeten. Du kan begära att bara specifika produkter och produktvarianter räknas i stället för alla tillgängliga lager på en plats. Genom att filtrera efter specifika produkter kan lagerchefen minska granskningsomkostnaderna, undvika konsolideringsmisstag och spara tid.
 
 ## <a name="how-to-configure-partial-location-cycle-counting"></a>Så här konfigurerar du partiell rullande inventering för plats
-När du använder arbetsprocessen för lagerställe för inventeringsoperationer skapas en arbetsrubrik för varje plats. När du definierar planen för rullande inventering kan du använda frågan **Välj platser** för att begränsa arbetet för rullande inventering som skapas. När du väljer produkter för planen för rullande inventering kan du välja både produkt- och produktvariantfrågor för att begränsa det som räknas. 
 
-Du kan associera en **arbetsmall** med en plan för rullande inventering för att definiera hur arbetet för rullande inventering ska skapas. Arbetsmallen för inventeringsoperationer refereras direkt från planen för rullande inventering. 
+När du använder arbetsprocessen för lagerställe för inventeringsoperationer skapas en arbetsrubrik för varje plats. När du definierar planen för rullande inventering kan du använda frågan **Välj platser** för att begränsa arbetet för rullande inventering som skapas. När du väljer produkter för planen för rullande inventering kan du välja både produkt- och produktvariantfrågor för att begränsa det som räknas.
 
-När du definierar arbetets mallinformation kan du använda alternativet **Arbetsradbrytningar** för att ange om inventeringsrader för arbete måste grupperas efter artikelnummer eller produktvariantnummer. Denna konfiguration krävs om du vill inventera tillgänglig lagerbehållning endast för specifika produkter på en plats. Arbetsraderna för rullande inventering som skapas får den mängd information som du definierar här, och de vägledda räkneoperationerna hanteras baserat på denna nivå. 
+Du kan associera en **arbetsmall** med en plan för rullande inventering för att definiera hur arbetet för rullande inventering ska skapas. Arbetsmallen för inventeringsoperationer refereras direkt från planen för rullande inventering.
 
-Om du associerar planerna för rullande inventering med arbetsmallar genom att använda alternativet **Arbetsradbrytningar** , väljs fältet **Partiell rullande inventering** för det arbete för rullande inventering som skapas, och multipla arbetsrader för rullande inventering skapas baserat på arbetsmallens definition. 
+När du definierar arbetets mallinformation kan du använda alternativet **Arbetsradbrytningar** för att ange om inventeringsrader för arbete måste grupperas efter artikelnummer eller produktvariantnummer. Denna konfiguration krävs om du vill inventera tillgänglig lagerbehållning endast för specifika produkter på en plats. Arbetsraderna för rullande inventering som skapas får den mängd information som du definierar här, och de vägledda räkneoperationerna hanteras baserat på denna nivå.
 
-Innan arbetet för partiell rullande inventering kan bearbetas, måste du välja minst **Visa artikelnummer** för menyalternativet för mobil enhet som en del av konfigurationen för rullande inventering. Lageroperatören kommer att uppmanas att registrera endast inventeringsinformation som är relaterad till inventeringsraderna (artikelnummer och produktdimensioner). Alla andra tillgängliga lager kommer att ignoreras för den här inventeringsprocessen. 
+Om du associerar planerna för rullande inventering med arbetsmallar genom att använda alternativet **Arbetsradbrytningar**, väljs fältet **Partiell rullande inventering** för det arbete för rullande inventering som skapas, och multipla arbetsrader för rullande inventering skapas baserat på arbetsmallens definition.
+
+Innan arbetet för partiell rullande inventering kan bearbetas, måste du välja minst **Visa artikelnummer** för menyalternativet för mobil enhet som en del av konfigurationen för rullande inventering. Lageroperatören kommer att uppmanas att registrera endast inventeringsinformation som är relaterad till inventeringsraderna (artikelnummer och produktdimensioner). Alla andra tillgängliga lager kommer att ignoreras för den här inventeringsprocessen.
 
 För den partiella rullande inventeringsprocessen kommer datum/tid för **Senaste rullande inventering** inte att uppdateras för platsen även om alla artiklarnas lagerbehållning på en given plats räknas. Den partiella rullande inventeringen tar inte hänsyn till parametern **dagar mellan rullande inventering** på sidan **Planer för rullande inventering** . Partiell rullande inventering stöder inte samtidig räkning av flera artiklar på samma plats. Funktionen för partiell rullande inventering kan leda till att samma lagerställe räknas flera gånger för en artikel när **Bearbetning av plan för rullande inventering** körs. Undvik det scenariot genom att ange filter i fältet **Välj platser**.
 
+> [!NOTE]
+> Distributionslagerappen tillhandahåller inte knappen **Lägg till LP eller artikel** när du använder processen för partiell cykelinventering.
+
 ## <a name="example"></a>Exempel
+
 I det här exemplet måste bara artikelnumret A0001 räknas i lagerställe 61.
 
-1.  En ny arbetsmall skapas för rullande inventering. Alternativet **Arbetsradbrytningar** används för att gruppera inventeringsrader för arbete efter artikelnummer. Det arbete för rullande inventering som skapas kommer får därför rader per artikelnummer. Du kan också gruppera raderna efter produktvariantnummer.
-2.  En ny plan för rullande inventering som hänvisar till den nyskapade arbetsmallen skapas. Planen för rullande inventering innehåller alla platser på lagerställe 61 (frågan **Välj platser** ) som håller lager för artikelnummer A0001. Valet av specifika produkter definieras i avsnittet **Produkturval för rullande inventering**.
-3.  Du kan välja produkter för planer för rullande inventering genom att ange fältet **tomma platser** till **utelämna tomma**. När planen för rullande inventering bearbetas, skapas delvis rullande inventeringsarbete för artikelnummer A0001. Den faktiska inventeringsprocessen kan utföras genom att använda ett menyalternativ för guidad rullande inventering i en mobil enhet.
+1. En ny arbetsmall skapas för rullande inventering. Alternativet **Arbetsradbrytningar** används för att gruppera inventeringsrader för arbete efter artikelnummer. Det arbete för rullande inventering som skapas kommer får därför rader per artikelnummer. Du kan också gruppera raderna efter produktvariantnummer.
+1. En ny plan för rullande inventering som hänvisar till den nyskapade arbetsmallen skapas. Planen för rullande inventering innehåller alla platser på lagerställe 61 (frågan **Välj platser**) som håller lager för artikelnummer A0001. Valet av specifika produkter definieras i avsnittet **Produkturval för rullande inventering**.
+1. Du kan välja produkter för planer för rullande inventering genom att ange fältet **tomma platser** till **utelämna tomma**. När planen för rullande inventering bearbetas, skapas delvis rullande inventeringsarbete för artikelnummer A0001. Den faktiska inventeringsprocessen kan utföras genom att använda ett menyalternativ för guidad rullande inventering i en mobil enhet.
 
-
-
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Rullande inventering](cycle-counting.md)
-
