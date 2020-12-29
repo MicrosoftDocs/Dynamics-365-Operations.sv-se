@@ -4,7 +4,7 @@ description: Det här ämnet beskriver utskrift av påfyllnadsetikett och förkl
 author: GarmMSFT
 manager: PJacobse
 ms.date: 05/01/2020
-ms.topic: configure-wave-label-printing
+ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 1f51ed9f05caede3d4f320ddb6b705e67df9aa1f
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 6314fd25d8d8a0013984d484f57a832c26f82b5a
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016968"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4438109"
 ---
 # <a name="set-up-and-use-wave-label-printing"></a>Ställa in och använda utskrift av påfyllnadsetikett
 
@@ -132,9 +132,9 @@ Etikettlayouten bestämmer vilken information som ska skrivas ut på etiketten o
 
     Den här frågan ser till att endast arbetsrader av typen plockning skrivs ut på etiketten, inte artikelrader av typen radtyp.
 
-1. Om du vill kunna skriva ut fraktsedels-ID väljer du på fliken **kopplingar** , sedan **arbetsrader** och kopplar tabellen **leveranser** till den.
+1. Om du vill kunna skriva ut fraktsedels-ID väljer du på fliken **kopplingar**, sedan **arbetsrader** och kopplar tabellen **leveranser** till den.
 1. Stäng dialogrutan frågeredigeraren.
-1. På snabbfliken **Layout för skrivartext** finns tre avsnitt där du kan skriva skrivarkod: **rubrikavsnitt** , **brödtext** och **sidfotsavsnitt**. I avsnittet **rubrikavsnitt** i fältet **etikettrubrik** anger du koden för önskad rubrik. Om du till exempel använder Zebra-skrivare kan du använda följande kod.
+1. På snabbfliken **Layout för skrivartext** finns tre avsnitt där du kan skriva skrivarkod: **rubrikavsnitt**, **brödtext** och **sidfotsavsnitt**. I avsnittet **rubrikavsnitt** i fältet **etikettrubrik** anger du koden för önskad rubrik. Om du till exempel använder Zebra-skrivare kan du använda följande kod.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -307,7 +307,7 @@ Nummerserietillägg styr GS1 efterlevnaden av specifika nummerserier. Den här k
     - Påfyllnadsetiketter genereras och skrivs ut. Antalet etiketter är lika med antalet kartonger (i det här exemplet är 376 boxetiketter för rad 1 och 322 boxetiketter för rad 2).
     - Ett nytt fraktsedels-ID genereras för leveranserna. Om du har konfigurerat nummerserietilläggen följer påfyllnadsetikett-ID nummerformatet **SSCC-18**. 
 
-Du kan visa och skriva ut påfyllnadsetiketter på följande sidor. I åtgärdsfönstret, på varje sida, på fliken **Leveranser** , i gruppen **Relaterad information** , väljer du **påfyllnadsetiketter**.
+Du kan visa och skriva ut påfyllnadsetiketter på följande sidor. I åtgärdsfönstret, på varje sida, på fliken **Leveranser**, i gruppen **Relaterad information**, väljer du **påfyllnadsetiketter**.
 
 - Alla leveranser \> leveransinformation
 - Alla laster \> Läs in information
@@ -389,9 +389,9 @@ Med påfyllnadsmallar kan du länka specifika förekomster av påfyllnadsmetoder
     - **Fält:** *arbetstyp*
     - **Kriterier:** *Plocka*
 
-1. Om du vill kunna skriva ut fraktsedels-ID väljer du på fliken **kopplingar** , sedan **arbetsrader** och kopplar tabellen **leveranser** till den.
+1. Om du vill kunna skriva ut fraktsedels-ID väljer du på fliken **kopplingar**, sedan **arbetsrader** och kopplar tabellen **leveranser** till den.
 1. Stäng dialogrutan frågeredigeraren.
-1. På snabbfliken **Layout för skrivartext** finns tre avsnitt där du kan skriva skrivarkod: **rubrikavsnitt** , **brödtext** och **sidfotsavsnitt**. I avsnittet **rubrikavsnitt** i fältet **etikettrubrik** anger du koden för önskad rubrik. Om du till exempel använder Zebra-skrivare kan du använda följande kod.
+1. På snabbfliken **Layout för skrivartext** finns tre avsnitt där du kan skriva skrivarkod: **rubrikavsnitt**, **brödtext** och **sidfotsavsnitt**. I avsnittet **rubrikavsnitt** i fältet **etikettrubrik** anger du koden för önskad rubrik. Om du till exempel använder Zebra-skrivare kan du använda följande kod.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -581,9 +581,9 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
 
     Den här frågan ser till att endast arbetsrader av typen plockning skrivs ut på etiketten, inte artikelrader av typen radtyp.
 
-1. Om du vill kunna skriva ut fraktsedels-ID väljer du på fliken **kopplingar** , sedan **arbetsrader** och kopplar tabellen **leveranser** till den. 
+1. Om du vill kunna skriva ut fraktsedels-ID väljer du på fliken **kopplingar**, sedan **arbetsrader** och kopplar tabellen **leveranser** till den. 
 1. Stäng dialogrutan frågeredigeraren.
-1. På snabbfliken **Layout för skrivartext** finns tre avsnitt där du kan skriva skrivarkod: **rubrikavsnitt** , **brödtext** och **sidfotsavsnitt**. I avsnittet **rubrikavsnitt** i fältet **etikettrubrik** anger du koden för önskad rubrik. Om du till exempel använder Zebra-skrivare kan du använda följande kod.
+1. På snabbfliken **Layout för skrivartext** finns tre avsnitt där du kan skriva skrivarkod: **rubrikavsnitt**, **brödtext** och **sidfotsavsnitt**. I avsnittet **rubrikavsnitt** i fältet **etikettrubrik** anger du koden för önskad rubrik. Om du till exempel använder Zebra-skrivare kan du använda följande kod.
 
 
     ```plaintext
@@ -693,9 +693,9 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
 
     Den här frågan ser till att endast arbetsrader av typen plockning skrivs ut på etiketten, inte artikelrader av typen radtyp.
 
-1. Om du vill kunna skriva ut fraktsedels-ID väljer du på fliken **kopplingar** , sedan **arbetsrader** och kopplar tabellen **leveranser** till den.
+1. Om du vill kunna skriva ut fraktsedels-ID väljer du på fliken **kopplingar**, sedan **arbetsrader** och kopplar tabellen **leveranser** till den.
 1. Stäng dialogrutan frågeredigeraren.
-1. På snabbfliken **Layout för skrivartext** finns tre avsnitt där du kan skriva skrivarkod: **rubrikavsnitt** , **brödtext** och **sidfotsavsnitt**. I avsnittet **rubrikavsnitt** i fältet **etikettrubrik** anger du koden för önskad rubrik. Om du till exempel använder Zebra-skrivare kan du använda följande kod.
+1. På snabbfliken **Layout för skrivartext** finns tre avsnitt där du kan skriva skrivarkod: **rubrikavsnitt**, **brödtext** och **sidfotsavsnitt**. I avsnittet **rubrikavsnitt** i fältet **etikettrubrik** anger du koden för önskad rubrik. Om du till exempel använder Zebra-skrivare kan du använda följande kod.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -733,7 +733,7 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
     - **Beskrivning:** *avbrottsetikett*
 
 1. Klicka på **Spara** i åtgärdsfönstret.
-1. På snabbfliken **Layout för skrivartext** finns tre avsnitt där du kan skriva skrivarkod: **rubrikavsnitt** , **brödtext** och **sidfotsavsnitt**. I avsnittet **rubrikavsnitt** i fältet **etikettrubrik** anger du ZPL-koden för önskad rubrik. Här är ett exempel:
+1. På snabbfliken **Layout för skrivartext** finns tre avsnitt där du kan skriva skrivarkod: **rubrikavsnitt**, **brödtext** och **sidfotsavsnitt**. I avsnittet **rubrikavsnitt** i fältet **etikettrubrik** anger du ZPL-koden för önskad rubrik. Här är ett exempel:
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -824,7 +824,7 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
     - **Layout-ID för etikett:** Välj en avbrottsetikett. (Välj t.ex. etikettlayouten *Avbrott* som du skapade tidigare i det här scenariot.)
     - **Skrivarnamn:** Välj skrivare för avbrottsetiketten. (I syfte att dela upp etikettrullar bör du välja samma skrivare som väljs på snabbfliken **information om påfyllnadsetikettens mall**. Andra scenarier är dock möjliga.)
 
-1. Från raden där fältet **Namn på referensfält** anges till *referens till läs in rad-ID* , markera kryssrutan **etikettversions-ID**.
+1. Från raden där fältet **Namn på referensfält** anges till *referens till läs in rad-ID*, markera kryssrutan **etikettversions-ID**.
 
     > [!NOTE]
     > Med den här inställningen skapas en etikettserie ("kartong 1 av X") per lastrad i hela påfyllnaden, oavsett inställningen för arbetsgrupperingen. Denna etikettserie kan skrivas ut på etikettlayouten. Dessutom kommer etiketter för olika försändelser att åtskiljas med den valda avbrottsetiketten.
@@ -878,7 +878,7 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
     - **Layout-ID för etikett:** Välj en avbrottsetikett. (Välj t.ex. etikettlayouten *Avbrott* som du skapade tidigare i det här scenariot.)
     - **Skrivarnamn:** Välj skrivare för avbrottsetiketten. (I syfte att dela upp etikettrullar bör du välja samma skrivare som väljs på snabbfliken **information om påfyllnadsetikettens mall**. Andra scenarier är dock möjliga.)
 
-1. Från raden där fältet **Namn på referensfält** anges till *referens till läs in rad-ID* , markera kryssrutan **etikettversions-ID**.
+1. Från raden där fältet **Namn på referensfält** anges till *referens till läs in rad-ID*, markera kryssrutan **etikettversions-ID**.
 
     > [!NOTE]
     > Med den här inställningen skapas en etikettserie ("kartong 1 av X") per lastrad i hela påfyllnaden, oavsett inställningen för arbetsgrupperingen. Denna etikettserie kan skrivas ut på etikettlayouten. Dessutom kommer etiketter för olika försändelser att åtskiljas med den valda avbrottsetiketten.

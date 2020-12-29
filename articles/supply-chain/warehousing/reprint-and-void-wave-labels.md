@@ -4,7 +4,7 @@ description: I det här avsnittet beskrivs hur du makulerar och skriver ut om be
 author: GarmMSFT
 manager: PJacobse
 ms.date: 07/09/2020
-ms.topic: reprint-and-void-wave-labels
+ms.topic: article
 ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: af92334af28824b3fcebde5f046bd7c6da459885
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 0efa9400a3bf29e4e0dd56d9138cf8c3825556c7
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016664"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4438111"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Skriv ut på nytt och annullera påfyllnadsetiketter
 
@@ -42,7 +42,7 @@ I det här avsnittet finns en samling scenarier som kan visas, till exempel hur 
 
 ## <a name="scenario-1-reprint-labels-from-the-web-client"></a>Scenario 1: skriva ut etiketter från webbklienten
 
-Du kan visa och skriva ut påfyllnadsetiketter på följande sidor. I åtgärdsfönstret, på varje sida, på fliken **Leveranser** , i gruppen **Relaterad information** , väljer du **påfyllnadsetiketter**.
+Du kan visa och skriva ut påfyllnadsetiketter på följande sidor. I åtgärdsfönstret, på varje sida, på fliken **Leveranser**, i gruppen **Relaterad information**, väljer du **påfyllnadsetiketter**.
 
 - Alla leveranser \> leveransinformation
 - Alla laster \> Läs in information
@@ -54,7 +54,7 @@ Om du vill skriva ut en påfyllnadsetikett från webbklienten följer du stegen 
 
 1. Gå till **lagerstyrning \> utgående påfyllningar \> leveranspåfyllningar \> alla påfyllningar**.
 1. Välj den påfyllnad som du vill skriva ut etiketter från.
-1. I Åtgärdsfönstret, på fliken **påfyllning** , i gruppen **skriv ut** , markerar du **påfyllnadsetiketter**.
+1. I Åtgärdsfönstret, på fliken **påfyllning**, i gruppen **skriv ut**, markerar du **påfyllnadsetiketter**.
 1. Följ ett av eller båda stegen nedan:
 
     - För att skriva ut en etikett igen, välj en skrivare i fältet **Skrivarnamn**. (Lämna fältet tomt om du bara vill uppdatera detaljerna för påfyllnadsetiketter utan att skriva ut etiketten igen).
@@ -118,7 +118,7 @@ Följ dessa steg för att skapa en ny samling med menyalternativ för att skriva
     - **Etikett för systemgruppering:** *leverans-ID*
     - **Utskriftsläge:** *uppräkning*
 
-1. I åtgärdsrutan, välj **Fältlista** och använd sedan rullgardinslistorna för att välja de fält som ska visas för att hjälpa arbetare att identifiera rätt etikettrulle (till exempel *LabelItemId* , *LabelItemName* , *InventQty* , *LabelUnitId* och *NumberOfLabels* ).
+1. I åtgärdsrutan, välj **Fältlista** och använd sedan rullgardinslistorna för att välja de fält som ska visas för att hjälpa arbetare att identifiera rätt etikettrulle (till exempel *LabelItemId*, *LabelItemName*, *InventQty*, *LabelUnitId* och *NumberOfLabels*).
 1. Stäng sidan.
 1. Skapa ett fjärde menyalternativ och ange följande värden för det:
 
@@ -131,7 +131,7 @@ Följ dessa steg för att skapa en ny samling med menyalternativ för att skriva
     - **Etikett för systemgruppering:** *leverans-ID*
     - **Utskriftsläge:** *senaste bra påfyllnadsetikett-ID*
 
-1. I åtgärdsrutan, välj **Fältlista** och använd sedan rullgardinslistorna för att välja de fält som ska visas för att hjälpa arbetare att identifiera rätt etikettrulle (till exempel *LabelItemId* , *LabelItemName* , *InventQty* , *LabelUnitId* och *NumberOfLabels* ).
+1. I åtgärdsrutan, välj **Fältlista** och använd sedan rullgardinslistorna för att välja de fält som ska visas för att hjälpa arbetare att identifiera rätt etikettrulle (till exempel *LabelItemId*, *LabelItemName*, *InventQty*, *LabelUnitId* och *NumberOfLabels*).
 1. Stäng sidan.
 
 #### <a name="set-up-the-mobile-device-menu"></a>Ställ in meny för mobila enheter

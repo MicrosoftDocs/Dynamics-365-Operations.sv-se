@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: d4ba2a23f84972391283eaf01cef70a161c75226
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383189"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437608"
 ---
 # <a name="create-purchasing-policies"></a>Skapa inköpspolicyer
 
@@ -34,7 +34,7 @@ I det här avsnittet visas hur du skapar inköpspolicyer att justera med dina af
 1. I navigeringsfönstret går du till **moduler > anskaffning och källa > inställningar > principer > inköpspolicyer**.
 2. Klicka på **Parametrar** i åtgärdsfönstret.
 - Policyprioritetsregler gäller för olika nivåer i din organisation. Organisationsenheterna som visas beror på din organisationshierarki och på vilka nivåer i hierarkin som har tilldelats syftet med Intern anskaffningskontroll. Till exempel kan din organisation ha juridiska personer, kostnadsställen, regioner och avdelningar, men det kan hända att bara några av dessa har ett hierarkiskt syfte av Intern anskaffningskontroll. Som standard är organisationen av typen Företaget tillgänglig.  
-3. Välj fliken**Parametrar för policyregeltyp**.
+3. Välj fliken **Parametrar för policyregeltyp**.
 4. I trädet går du till **Inköpspolicy > Kontrollregel för inköpsrekvisition**.
 - Du definierar prioritetsordningen för policylösning på policynivå. Men för vissa policytyper kan du åsidosätta prioritetsordningen för enskilda policyregeltyper. Till exempel kan du definiera prioritet för inköpspolicyer i denna ordning till: kostnadsställe, avdelning, företag. Men du kanske vill att prioritetsordningen för katalogpolicyregeln ska användas i denna ordning: avdelning, kostnadsställe, företag. Då ändrar du prioritetsordningen för katalogpolicyregeln. När en anställd skapar en rekvisition, bestäms katalogen som visas av de policyer som associeras med arbetarens avdelning, sedan deras kostnadsställe och sedan deras företag.  
 - Om det finns fler än en angiven organisationsnivå, kan du använda de UPP/NED-pilarna för att ange prioritetsordningen för Kontrollregeln för inköpsrekvisition.  

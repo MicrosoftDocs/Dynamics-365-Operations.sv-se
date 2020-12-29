@@ -20,11 +20,11 @@ ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989251"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437479"
 ---
 # <a name="routes-and-operations"></a>Flöden och operationer
 
@@ -246,7 +246,7 @@ Bland jobbtyper hittar du överlappning. Överlappning tillåter att olika jobb 
 Därför när aktivering väljs för överlappning kommer resten av inställningarna (jobbhantering, arbetstid och kapacitet) inte ha någon inverkan på flödesgruppen. 
 
 > [!NOTE]
-> När du uppgraderar versioner kan följande fel uppstå: **”CRL-fel uppstod när planeringsmotorn anropades”**. Om du får detta felmeddelande går du till sidan **flödesgrupper** och för alla flöden där du har aktiverat **överlappa**avmarkerar du alternativen **jobbhantering**, **arbetstid** och **kapacitet**. 
+> När du uppgraderar versioner kan följande fel uppstå: **”CRL-fel uppstod när planeringsmotorn anropades”**. Om du får detta felmeddelande går du till sidan **flödesgrupper** och för alla flöden där du har aktiverat **överlappa** avmarkerar du alternativen **jobbhantering**, **arbetstid** och **kapacitet**. 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

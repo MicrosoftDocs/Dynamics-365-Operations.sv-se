@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
-ms.sourcegitcommit: d25d0feb3f8a5a760eba50ba5f46e1db02737d25
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3677420"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437435"
 ---
 # <a name="confirm-and-transfer"></a>Bekräfta och överför
 
@@ -140,7 +140,7 @@ Om du vill skapa en kvalificeringslast skapar du först tre försäljningsorder 
 1. Upprepa steg 1 till och med 4 om du vill lägga till en tredje försäljningsorder för samma kund och lagerställe.
 1. Lägg till två försäljningsrader med följande värden: När du har lagt till varje rad ska du reservera lagret för den som beskrivs i steg 6 till 8.
 
-    - kvantitet**Rad 1:** Ställ in fältet **Artikelnummer** till *M9201*, fältet **Kvantitet** till *20* och fältet **Enhet** till *ea*.
+    - kvantitet **Rad 1:** Ställ in fältet **Artikelnummer** till *M9201*, fältet **Kvantitet** till *20* och fältet **Enhet** till *ea*.
     - **Rad 2:** Ställ in fältet **Artikelnummer** till *M9202*, fältet **Kvantitet** till *60* och fältet **Enhet** till *ea*.
 
 #### <a name="load-planning-workbench"></a>Workbench för lastplanering

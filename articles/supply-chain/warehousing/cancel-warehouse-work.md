@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: daa8f0d19de75e6c126fe7a5fe312bca24c89bdc
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016252"
+ms.locfileid: "4438030"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>Avbryt lagerarbete för undantagshantering
 
@@ -40,7 +40,7 @@ Till skillnad från de vanliga avbrott som går att komma åt med hjälp av knap
 > [!NOTE]
 > För arbete som måste annulleras av funktionsskäl måste lageranvändarna fortsätta att använda den vanliga funktionen Avbryt på arbetssidan.
 
-Endast arbete av typen **Försäljning** , **Överför leverans** , **Råmaterialhämtning** eller **Lagerpåfyllnad** kan annulleras genom att använda funktionen Avbryt arbete. Annulleringslogik körs inte för plockningsarbete av fryst råmaterial eller arbete som kan avbrytas med funktionen Avbryt (se föregående notering).
+Endast arbete av typen **Försäljning**, **Överför leverans**, **Råmaterialhämtning** eller **Lagerpåfyllnad** kan annulleras genom att använda funktionen Avbryt arbete. Annulleringslogik körs inte för plockningsarbete av fryst råmaterial eller arbete som kan avbrytas med funktionen Avbryt (se föregående notering).
 
 För att häva blockeringen av arbetet i systemet avbryts alla återstående arbetsrader och de lagerdata som är associerade med det arbets-ID som användaren anger avbryts. Alla vanliga lagerhanteringsoperationer som rör berörd artikelkvantitet kan sedan återupptas.
 

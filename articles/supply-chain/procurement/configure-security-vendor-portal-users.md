@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 72f353448f3b5d1f816bb240a230e26529c9cec3
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207133"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437953"
 ---
 # <a name="vendor-portal-user-security"></a>Användarsäkerhet på leverantörsportalen
 
@@ -37,8 +37,8 @@ Funktionen för leverantörsportal har ersatts med utökade funktioner för leve
 Innan du skapar ett användarkonto för någon som använder säljaren portalen måste du ställa upp säljaren att säljaren portal samarbete. Använd **inköpsorder samarbete** på **fliken Allmänt** på **leverantörer** . Externa leverantörer som använder säljaren portal måste ha följande inställningar:
 
 -   Ett Microsoft Azure Active Directory (AAD) användarkonto måste registreras för säljaren på sidan **användare** i Dynamics AX.
--   Säljaren måste **säljaren (extern)** säkerhet roll, inte **SystemUser**roll. **Obs!** Rollen **SystemUser** beviljas automatiskt när du skapar ett nytt användarkonto i Dynamics AX. Därför måste du ta den rollen och bekräfta varningsmeddelandet som du tar emot.
--   Säljaren bör inte beviljas tillstånd för att lägga till ytterligare fält från PO bord till deras uppfattning av PO. På **fliken anpassning** , på **fliken Användare** , ange**uttryckliga anpassningen tillåtet** alternativ för användaren till **någon**.
+-   Säljaren måste **säljaren (extern)** säkerhet roll, inte **SystemUser** roll. **Obs!** Rollen **SystemUser** beviljas automatiskt när du skapar ett nytt användarkonto i Dynamics AX. Därför måste du ta den rollen och bekräfta varningsmeddelandet som du tar emot.
+-   Säljaren bör inte beviljas tillstånd för att lägga till ytterligare fält från PO bord till deras uppfattning av PO. På **fliken anpassning** , på **fliken Användare** , ange **uttryckliga anpassningen tillåtet** alternativ för användaren till **någon**.
 -   Användaren måste vara kopplad till en registrerad kontaktperson. Om **användarna** väljer du en kontaktperson i **fältet Namn** . Den person som du väljer bör ha **kontakt** roll för respektive leverantör.
 
 Om samma person kräver tillgång till säljaren portal för flera leverantörer konton (för olika juridiska enheter, kanske), varje personens användarkontona måste vara associerade med samma registrerade kontaktperson. **Säljaren (extern)** roll innefattar alla de grundläggande funktioner som krävs för att använda funktionerna som är tillgängliga i säljaren portal. Den här installationen hjälper till att säkra att användargränssnittet att externa användare ser är fokuserade på den avsedda scenario.

@@ -20,11 +20,11 @@ ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f66f7061c608379689016e3c0b9c5ba4ad23dc9e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214532"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437841"
 ---
 # <a name="prerequisites-for-standard-costs-overview"></a>Krav för översikt över standardkostnader
 
@@ -52,7 +52,7 @@ Använd sidan **Transaktionskombinationer** om vill du göra det möjligt att an
 
 -  Använd fliken **Lagerredovisning** på sidan **Lagerredovisningsparametrar** om du vill definiera två kontrollparametrar som hör till standardkostnader.
 
-    -  I fältet **Kostnadsuppdelning** välj **Inga** eller **Delredovisning**. Om du väljer **Delredovisning**är kostnadsuppdelningen *aktiv*. En aktiv kostnadsuppdelning har stor betydelse när du beräknar, behåller och visar kostnadsgruppssegmentering över en produktstruktur i flera nivåer för standardkostnadsartiklar. När kostnadsuppdelningen är aktiv kan du rapportera och analysera lager, produkter i arbete (PIA) och kostnader för sålda varor (COGS) per kostnadsgrupp på en enda nivå, flera nivåer eller i totalformat. Om kostnadsuppdelningen är aktiv och du också aktiverar en tillverkad artikels kostnad kommer kostnadsgruppssegmenteringen att lagras i artikelns kostnadspost. 
+    -  I fältet **Kostnadsuppdelning** välj **Inga** eller **Delredovisning**. Om du väljer **Delredovisning** är kostnadsuppdelningen *aktiv*. En aktiv kostnadsuppdelning har stor betydelse när du beräknar, behåller och visar kostnadsgruppssegmentering över en produktstruktur i flera nivåer för standardkostnadsartiklar. När kostnadsuppdelningen är aktiv kan du rapportera och analysera lager, produkter i arbete (PIA) och kostnader för sålda varor (COGS) per kostnadsgrupp på en enda nivå, flera nivåer eller i totalformat. Om kostnadsuppdelningen är aktiv och du också aktiverar en tillverkad artikels kostnad kommer kostnadsgruppssegmenteringen att lagras i artikelns kostnadspost. 
 
     -  Om du väljer **ingen** underhålls inte kostnadsgruppssegmenteringen för standardkostnadsartiklar. Med andra ord beräknas och underhålls en tillverkad artikels standardkostnad som ett enskilt belopp, utan kostnadsgruppssegmentering. Kostnadsbidragen från tillverkade komponenter aggregeras till ett enda belopp.
 

@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 171d3b57333cc325fa675627e4c38f764d89f32c
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018662"
+ms.locfileid: "4438069"
 ---
 # <a name="onboard-vendors"></a>Integrera leverantörer
 
@@ -112,7 +112,7 @@ När den potentiella leverantörsanvändaren slutför registreringsguiden för l
 
 En leverantörsförfrågan kan skapas som ett utkast och skickas manuellt till ett arbetsflöde. Alternativt kan leverantörsförfrågan också skickas automatiskt till ett arbetsflöde när registreringsguiden för leverantörsregistrering har slutförts. En begäran kan skickas manuellt om exempelvis en inköpare vill bedöma huruvida begäran ska skickas genom en godkännandeprocess innan den skickas till arbetsflödet.
 
-- Välj **Parametrar för anskaffning och inköp** &gt; **Leverantörssamarbete** , och välj sedan **Skicka registrering av potentiell leverantör till arbetsflödet automatiskt** för att konfigurera leverantörsförfrågan så att denna skickas automatiskt till ett arbetsflöde när registreringsguiden för leverantörer har slutförts.
+- Välj **Parametrar för anskaffning och inköp** &gt; **Leverantörssamarbete**, och välj sedan **Skicka registrering av potentiell leverantör till arbetsflödet automatiskt** för att konfigurera leverantörsförfrågan så att denna skickas automatiskt till ett arbetsflöde när registreringsguiden för leverantörer har slutförts.
 
 ## <a name="vendor-requests"></a>Leverantörsförfrågningar
 

@@ -18,11 +18,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 4e8f5c23f82e96145f411ec993f766a90137b5b8
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015974"
+ms.locfileid: "4438023"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>Skapa omallokering av artiklar för kort plockning
 
@@ -43,7 +43,7 @@ Det går att definiera flera arbetsundantag med olika artikelomallokeringspolicy
 
 Demonstrationsdataföretaget USMF har använts för att skapa denna procedur.
 
-1. I **navigeringsfönstret** , gå till **Lagerstyrning > Inställningar > Arbete > Arbetsundantag**.
+1. I **navigeringsfönstret**, gå till **Lagerstyrning > Inställningar > Arbete > Arbetsundantag**.
 2. Klicka på **Ny**. 
 3. Ange ett värde i fältet **Kod för arbetsundantag.** Detta är rubriken på detta undantag. Till exempel "Kortplockning manuellt".
 4. I fältet **Beskrivning** anger du ett värde. En kort beskrivning av hur detta undantags används. T.ex. är den här artikeln för kortplockning inte tillgänglig.
@@ -57,7 +57,7 @@ Demonstrationsdataföretaget USMF har använts för att skapa denna procedur.
 Demonstrationsdataföretaget USMF har använts för att skapa denna procedur.
 
 1. Stäng sidan.
-2. I **navigeringsfönstret** , gå till **Lagerstyrning > Inställningar > Arbetare**.
+2. I **navigeringsfönstret**, gå till **Lagerstyrning > Inställningar > Arbetare**.
 3. Klicka på **Redigera**.
 4. I listan väljer du arbetare. Till exempel Julia Funderburk.
 5. Expandera snabbfliken **Användare**.

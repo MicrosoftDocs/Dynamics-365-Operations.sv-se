@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2505f5f334c3f86959023812880e956f0ebaac09
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889851"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437775"
 ---
 # <a name="asset-management-parameters"></a>Parametrar för tillgångshantering
 
@@ -97,7 +97,7 @@ Fälten som beskrivs i följande lista relaterar till beräknade bedömningspoä
 
 **Arbetares startdatum** - ett bedömningspoäng som beräknats tillsammans med **ansvarig arbetare**, **önskad arbetare**, **önskad arbetargrupp**, **tillgångsplats** och **startdatum** för bedömningspoängvärden. I det här fältet anges den dagliga poängen som ett negativt värde och jämförs med fältet **förväntad start** på en arbetsorder. Om värdet "10,00" infogas i det här fältet och det förväntade startdatumet för en arbetsorder är imorgon, är bedömningsresultatet minus 10,00.
 
-  - Om du antar att ingen ansvarig arbetare och ansvarig arbetargrupp har valts på en arbetsorder som ska tidsplaneras lägger du till och subtraherar värdena för bedömningspoängvärderingen i exemplen i **önskad arbetare** i **önskad arbetargrupp**och **tillgångens plats** och **startdatum** ovan får du totalt 3 010,00. Det innebär en hög poäng för arbetaren som redan har valts som önskad arbetare samt inkluderas i den önskade arbetargruppen på arbetsordern, och arbetaren finns också i samma anläggning som tillgångenför ett jobb som behöver tidsplaneras. Det innebär detta att det finns en god chans att arbetare i fråga kommer att väljas för att slutföra jobbet under tidsplaneringen av arbetsordern.  
+  - Om du antar att ingen ansvarig arbetare och ansvarig arbetargrupp har valts på en arbetsorder som ska tidsplaneras lägger du till och subtraherar värdena för bedömningspoängvärderingen i exemplen i **önskad arbetare** i **önskad arbetargrupp** och **tillgångens plats** och **startdatum** ovan får du totalt 3 010,00. Det innebär en hög poäng för arbetaren som redan har valts som önskad arbetare samt inkluderas i den önskade arbetargruppen på arbetsordern, och arbetaren finns också i samma anläggning som tillgångenför ett jobb som behöver tidsplaneras. Det innebär detta att det finns en god chans att arbetare i fråga kommer att väljas för att slutföra jobbet under tidsplaneringen av arbetsordern.  
   - Om värdet "0,00" infogas i något av de åtta fälten ovan, används inte bedömningspoängen undertidsplaneringen av arbetsordern.  
 
 Länken **Dokumenttyper**

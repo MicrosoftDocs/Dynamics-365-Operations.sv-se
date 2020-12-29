@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: f636a1f3d598a069c3922160eedbe05b68bc91eb
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017447"
+ms.locfileid: "4438024"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Ställ in ett menyalternativ för mobila enheter för att registrera mottagna artiklar
 
@@ -46,8 +46,8 @@ Du kan använda den här guiden i demonstrationsföretaget USMF. Den här proced
     - Om du väljer alternativet **Generera id-nummer** skapas ett unikt id-nummer på grundval av nummerserievalet.  
     - Du kan välja mallen som ska användas när arbetsuppgiften skapas. Om du till exempel registrerar en artikel för en inköpsorder genereras den inlagrade arbetsuppgiften baserat på arbetsmallen. Om du inte väljer någon arbetsmall här, tilldelas en mall baserat på frågevillkoren som associeras med mallarna.  
     - Om dispositionskoder visas på den mobila enheten, kan medarbetare utvärdera statusen eller kvaliteten på artiklarna och välja lämplig kod. Reglerna för dispositionskoden bestämmer om artiklarna ska vara tillgängliga för andra lagerprocesser. Reglerna avgör också vilket platsdirektiv som används för arbetsuppgiften som skapas.   
-    - Om du väljer alternativet  **Batchdispositionskoder** , kan medarbetare utvärdera statusen eller kvaliteten på en batch och välja lämplig kod. Reglerna på batchdispositionskoden bestämmer om batchen ska vara tillgängliga för andra lagerprocesser.  
-    - Om du väljer **Skriv ut etiketter** , skrivs ett id-nummer ut automatiskt när artiklarna tas emot.  
+    - Om du väljer alternativet  **Batchdispositionskoder**, kan medarbetare utvärdera statusen eller kvaliteten på en batch och välja lämplig kod. Reglerna på batchdispositionskoden bestämmer om batchen ska vara tillgängliga för andra lagerprocesser.  
+    - Om du väljer **Skriv ut etiketter**, skrivs ett id-nummer ut automatiskt när artiklarna tas emot.  
 7. Välj **Spara**.
 8. Stäng sidan.
 

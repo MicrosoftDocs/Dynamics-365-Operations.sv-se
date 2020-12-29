@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: fb0472a0d2ac9b552cd16e4d6bf516a876ea4a0e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981521"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437509"
 ---
 # <a name="moving-average"></a>Rörligt genomsnitt
 
@@ -108,7 +108,7 @@ På sidan **Kvittningar för verifikationen** kan du se en justering på 4,00 so
 
 ## <a name="moving-average-with-production"></a>Rörligt genomsnitt med produktion
 
-Rörligt genomsnitt stöder tillverkade artiklar. Om du tänker använda rörligt genomsnitt i en produktionsmiljö, ska skjutreglaget **Använd uppskattad självkostnad** på sidan **Produktionkontrollparametrar**väljas. Det innebär att självkostnaden som beräknas vid uppskattningen används i stället för den verkliga självkostnaden för strukturlisteberäkning.
+Rörligt genomsnitt stöder tillverkade artiklar. Om du tänker använda rörligt genomsnitt i en produktionsmiljö, ska skjutreglaget **Använd uppskattad självkostnad** på sidan **Produktionkontrollparametrar** väljas. Det innebär att självkostnaden som beräknas vid uppskattningen används i stället för den verkliga självkostnaden för strukturlisteberäkning.
 
 ## <a name="moving-average-with-a-backdated-transaction"></a>Rörligt genomsnitt med en bakåtdaterad etransaktion
 

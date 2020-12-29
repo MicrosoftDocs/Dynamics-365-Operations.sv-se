@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 31cb26479ccb74dfb58fd5590cd60d7b7c64c292
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018524"
+ms.locfileid: "4438083"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Leverera order som direktleveranser
 
@@ -34,7 +34,7 @@ Det här avsnittet visar hur du kan skapa en direktleverans för en försäljnin
 2. Välj **Ny**.
 3. Ange eller välj ett värde i fältet **Kundkonto** och välj sedan **OK**
 4. Ange eller välj värden i fälten **artikelnummer** och **plats** och välj sedan **spara**.
-5. I åtgärdsfönstret, välj **Försäljningsorder** , välj sedan **Direktleverans**. På sidan för leveransgenerering visas alla öppna försäljningsorderrader som kopierade från försäljningsordern. Du kan granska orderinformation och om det behövs, även ändra detaljer som inköpkvantitet och prissättningsvillkor innan du skapar direktleveransen.  
+5. I åtgärdsfönstret, välj **Försäljningsorder**, välj sedan **Direktleverans**. På sidan för leveransgenerering visas alla öppna försäljningsorderrader som kopierade från försäljningsordern. Du kan granska orderinformation och om det behövs, även ändra detaljer som inköpkvantitet och prissättningsvillkor innan du skapar direktleveransen.  
 6. Välj **Ja** i fältet **inkludera alla**.
     - Om du vill skapa en direktleverans för bara en delmängd av försäljningsorderraderna väljer du dessa separat.  
     - Fältet **Leverantörskonto** är eller är inte ifyllt med leverantörsnumret. Om säljaren är inställd för produkten (på den associerade artikeltäckning) då säljaren kommer att kopieras till kundorderraden. Annars måste du ange en leverantör manuellt. I det här exemplet kommer vi att välja en ny leverantör i nästa steg, även om det redan ifylld.   
@@ -57,7 +57,7 @@ Det här avsnittet visar hur du kan skapa en direktleverans för en försäljnin
 17. Välj **OK**.
 18. Välj **Ta emot** i åtgärdsfönstret.
 19. Välj **produktinleverans**
-20. I fältet **Produktinleverans** , skriv ett värde.
+20. I fältet **Produktinleverans**, skriv ett värde.
 21. Välj **OK**.
 22. Välj **Allmänt** i åtgärdsfönstret.
 23. Välj **relaterade order** och markera önskad post.

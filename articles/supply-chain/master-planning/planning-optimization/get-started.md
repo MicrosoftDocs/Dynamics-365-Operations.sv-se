@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 49025d0aa0f6a627b816a43dd4260449942b400c
-ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
+ms.openlocfilehash: 54ad180b7f4691ead3563b077eadadc3b9b20588
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973486"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4438114"
 ---
 # <a name="get-started-with-planning-optimization"></a>Kom igång med planeringsoptimering
 
@@ -67,6 +67,8 @@ Om du vill använda planeringsoptimering installerar du tillägget för planerin
 1. På snabbfliken **miljötillägg** ser du till att planeringsoptimeringen installeras.
 1. När ett par minuter **installeras** bör du byta till **installerat** (du kan behöva uppdatera sidan). När installationen är klar kan du aktivera planeringsoptimering i Dynamics 365 Supply Chain Management.
 
+Det huvudsakliga syftet med tillägget att installera tilläggsprogrammet för planeringsoptimering är att ansluta tjänsten och miljön. Därför måste du installera tillägget separat för varje miljö där du vill använda planeringsoptimering, oavsett vilken kod som flyttas mellan miljöerna.
+
 ### <a name="planning-optimization-integration"></a>Planera optimeringsintegration
 
 Om du vill konfigurera om tillägget för planeringsoptimering ska användas för huvudplanering går du till **Huvudplanering** \> **Inställningar** \> **Parametrar för planeringsoptimering**.
@@ -95,7 +97,7 @@ Inställningen av alternativet **Använd planeringsoptimering** avgör vilken pl
 
 ### <a name="integration-with-the-setup"></a>Integration med inställningen
 
-Om förhandsgranskningen av planeringsoptimeringen är aktiverad görs huvudplanering med tillägget planeringsoptimering. I det här fallet påverkas huvudplaneringens resultat och funktioner.
+Om planeringsoptimeringen är aktiverad görs huvudplanering med tillägget planeringsoptimering. I det här fallet påverkas huvudplaneringens resultat och funktioner.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

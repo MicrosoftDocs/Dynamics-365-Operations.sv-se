@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 948db1f7308896209e195613d50b1d66b807b1bf
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016849"
+ms.locfileid: "4438016"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Direktleverans från produktionsorder till utlastningsplatser
 
@@ -36,7 +36,7 @@ Det här avsnittet beskriver hur du hanterar processen för direktutleveransmate
 
 Direktutleverans från produktion till en utlastningsplats gäller tillverkare som producerar stora volymer och vi vill skicka de färdiga produkterna när de rapporteras som färdiga från produktionsraderna. Syftet är att leverera produkter till distributionscenter som fysiskt finns nära kundefterfrågan, i stället för att bygga upp lagret på tillverkningsplatsen.
 
-Om det inte finns några omedelbara behov för en produkt, måste det föras in till lagerställen på tillverkningsplatsen. Denna process kallas också *opportunistisk direktutleverans* , vilket innebär att om det finns ett krav på att produkten levereras, ska affärsmöjligheten användas i stället för att föra in produkten för intern lagring.
+Om det inte finns några omedelbara behov för en produkt, måste det föras in till lagerställen på tillverkningsplatsen. Denna process kallas också *opportunistisk direktutleverans*, vilket innebär att om det finns ett krav på att produkten levereras, ska affärsmöjligheten användas i stället för att föra in produkten för intern lagring.
 
 I följande exempel visas tre varianter av ett flöde som påbörjas vid slutet av produktionsrad (2).
 
@@ -97,7 +97,7 @@ I direktutleveranspolicyn som du kan ställa in villkor för kräver att överf�
 När en produkt som har rapporterats som avslutat på produktionsraden överförs den till en vikdörrplats där den lastas på en lastbil och överförs till ett distributionscenter. Använd företags-USMF.
 
 1.  Aktivera en ny nummersekvens för direktutleverans. Gå till sidan **nummersekvenser** välj knappen **generera**. En guide hjälper dig geom processen.
-2.  Skapa en direktleveranspolicy. Gå till sidan **Direktleveranspolicy** och skapa en ny policy med namnet **Direktleverans till överföringsorder**. Observera att den enda arbetsordertypen som du kan välja är **Överför leverans** , och den enda direktutleveransstrategin som finns är **datum och tid**.
+2.  Skapa en direktleveranspolicy. Gå till sidan **Direktleveranspolicy** och skapa en ny policy med namnet **Direktleverans till överföringsorder**. Observera att den enda arbetsordertypen som du kan välja är **Överför leverans**, och den enda direktutleveransstrategin som finns är **datum och tid**.
 3.  Skapa en arbetspolicy. Gå till sidan **arbetspolicyer** och skapa en ny arbetspolicy som heter **Direktutleverans L0101**.
 4.  Ställ in laster så att de skapas automatiskt för överföringsorder. I lagerställeparametrarna anger du laster så att de skapas automatiskt när en överföringsorder skapas. En last är en förutsättning för att göra överföringsordern berättigad till direktutleverans.
 5.  Konfigurera artikellastmappning. Gå till sidan **artikellastmappning** och skapa en standardlastmall för artikelgruppen **CarAudio**. Den här mappningen infogar automatiskt lastmallen när överföringsordern skapas.
@@ -117,7 +117,7 @@ När en produkt har rapporterats som avslutad på produktionsraden överförs de
 3.  Öppna **workbench för lastplanering**.
 4.  Från workbench för lastplanering går du till avsnittet **Laster** och markerar **Tidsplanera möte** på menyn **transport** om du vill skapa ett nytt mötesschema. Observera att mötesschemat innehåller en referens till överföringsordern i fältet **ordernummer**. I fältet **Planerat startdatum/tid på plats** kan du ange datum och tid för den avtalade tiden. Detta datum och denna tid används när direktutleveransefterfrågan prioriteras under direktutleveransprocessen. Det datum och den tid som du anger i det här fältet uppdaterar fältet **Datum och tid för tidsplanerad lastleverans** på motsvarande last. Platsen på snabbfliken **leveransinformation** anger platsen som levereras på överföringsordern.
 5.  På **Workbench för lastplanering** frisläpper till lagret.
-6.  Skapa en produktionsorder för artikelnummer **L0101** , och ange status till **startad** , med kvantiteten 20.
+6.  Skapa en produktionsorder för artikelnummer **L0101**, och ange status till **startad**, med kvantiteten 20.
 7.  Rapportera som färdigt från den mobila enheten.
 8.  Gå till portalen för den mobila enheten och välj menyalternativet **Rapportera som färdig och inlagrad**.
 9.  Rapportera nu som färdig **L0101** från den handhållna enheten. Observera att platsen nu är **BAYDOOR 2**. Den här platsen finns från mötesschemat i stället för ett platsdirektiv **Överföringsinleverans**.

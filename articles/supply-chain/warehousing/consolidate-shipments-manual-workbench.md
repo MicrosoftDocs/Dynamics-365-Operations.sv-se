@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: 1eec1a8e3a9a2a0f95302e1d6ea68eb90b9a3b93
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016826"
+ms.locfileid: "4438010"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Konsolidera leveranser genom att använda workbench för leveranskonsolidering
 
@@ -63,7 +63,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 1. Välj **Lager \> Bokning** och välj sedan **Reservera parti** i åtgärdsfönstret för att reservera orderraden.
@@ -77,13 +77,13 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 1. Välj **Lager \> Bokning** och välj sedan **Reservera parti** i åtgärdsfönstret för att reservera orderraden.
 1. Lägg till en andra orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0002* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0002* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
     - **Leveranssätt:** *Flygfrakt*
 
@@ -100,13 +100,13 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *M9200* (en artikel där filtret **Kod 4** har värdet *Brandfarligt* )
+    - **Artikelnummer:** *M9200* (en artikel där filtret **Kod 4** har värdet *Brandfarligt*)
     - **Kvantitet:** *1.00*
 
 1. Välj **Lager \> Bokning** och välj sedan **Reservera parti** i åtgärdsfönstret för att reservera orderraden.
 1. Lägg till en andra orderrad med följande inställningar:
 
-    - **Artikelnummer:** *M9201* (en artikel där filtret **Kod 4** har värdet *Explosivt* )
+    - **Artikelnummer:** *M9201* (en artikel där filtret **Kod 4** har värdet *Explosivt*)
     - **Kvantitet:** *1.00*
     - **Leveranssätt:** *Flygfrakt*
 
@@ -123,7 +123,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 1. Välj **Lager \> Bokning** och välj sedan **Reservera parti** i åtgärdsfönstret för att reservera orderraden.
@@ -137,7 +137,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 1. Välj **Lager \> Bokning** och välj sedan **Reservera parti** i åtgärdsfönstret för att reservera orderraden.
@@ -152,7 +152,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 1. Välj **Lager \> Bokning** och välj sedan **Reservera parti** i åtgärdsfönstret för att reservera orderraden.
@@ -165,7 +165,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 1. Välj **Lager \> Bokning** och välj sedan **Reservera parti** i åtgärdsfönstret för att reservera orderraden.
@@ -181,7 +181,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 1. Välj **Lager \> Bokning** och välj sedan **Reservera parti** i åtgärdsfönstret för att reservera orderraden.
@@ -197,7 +197,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 1. Välj **Lager \> Bokning** och välj sedan **Reservera parti** i åtgärdsfönstret för att reservera orderraden.

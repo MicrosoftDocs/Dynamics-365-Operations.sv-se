@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6e4f53401d604ce3c8308ed475a0b6147805cb78
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983583"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437874"
 ---
 # <a name="bom-calculations-groups"></a>Beräkningsgrupper för strukturlista
 
@@ -66,7 +66,7 @@ Det finns två alternativ för beräkning av fältet **Försäljningspriser**:
 
 ### <a name="stop-explosion"></a>Stoppa nedbrytningen
 
-Kryssrutan **Stoppa nedbrytning** används för att ange när en tillverkad artikel ska behandlas som en inköpspost. Vanligtvis lämnar du kryssrutan**Stoppa nedbrytning** avmarkerad. Markera den här kryssrutan om du vill visa att en tillverkad artikel ska behandlas som en inköpt komponent och inte som en tillverkad komponent vid en strukturlisteberäkning. Beroende på platsen kan artikelkostnaden fortfarande beräknas med hjälp av strukturlisteberäkningar. Nedbrytningen av planerade inköpsorder och produktionsorder stoppas i en strukturlista som har komponenter kopplade till den beräkningsgrupp som kryssrutan **Stoppa nedbrytning** är markerad för. Huvudplanering genererar planerade order för själva strukturlistan och inte för artiklarna som ingår i strukturlistan. Genom att markera den här kryssrutan kan du i princip ange att en kostnad inte ska läggas till i strukturlisteberäkningen för artiklar som har denna beräkningsgrupp.
+Kryssrutan **Stoppa nedbrytning** används för att ange när en tillverkad artikel ska behandlas som en inköpspost. Vanligtvis lämnar du kryssrutan **Stoppa nedbrytning** avmarkerad. Markera den här kryssrutan om du vill visa att en tillverkad artikel ska behandlas som en inköpt komponent och inte som en tillverkad komponent vid en strukturlisteberäkning. Beroende på platsen kan artikelkostnaden fortfarande beräknas med hjälp av strukturlisteberäkningar. Nedbrytningen av planerade inköpsorder och produktionsorder stoppas i en strukturlista som har komponenter kopplade till den beräkningsgrupp som kryssrutan **Stoppa nedbrytning** är markerad för. Huvudplanering genererar planerade order för själva strukturlistan och inte för artiklarna som ingår i strukturlistan. Genom att markera den här kryssrutan kan du i princip ange att en kostnad inte ska läggas till i strukturlisteberäkningen för artiklar som har denna beräkningsgrupp.
 
 ### <a name="warnings"></a>Varningar
 

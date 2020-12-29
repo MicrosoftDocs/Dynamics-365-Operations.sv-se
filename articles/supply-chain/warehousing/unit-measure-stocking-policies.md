@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6bd6a3ea9d7b339df99ffa65f058fc4b98b58b9c
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216699"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437959"
 ---
 # <a name="unit-of-measure-and-stocking-policies"></a>Måttenheten och lagerpolicyer
 
@@ -37,7 +37,7 @@ Enhetssekvensgrupper definierar den sekvens av enheter som kan användas i lager
 Om du vill använda frisläppta produkter i lagerställearbeteprocesser, måste en enhetssekvensgrupp tilldelas till dem. Om du validerar en produkt som är kopplad till en Lagringsdimensionsgrupp och alternativet **Använd lagerstyrningsprocesser** för lagringsdimensiongruppen är inställd på **Ja** får du ett felmeddelande om ett enhetssekvensgrupp-ID inte har definierats för produkten. Om enhetssekvensgruppen som du använder innehåller flera rader (och därför flera enheter), måste du ställa in en enhetskonvertering mellan enheterna. Du slutför den här inställningen på sidan **Enhetskonverteringar**. Den minsta enheten i en sekvensgrupp, som du kopplar till en frisläppt produkt måste matcha den lagerenhet som definieras för motsvarande produkt. Lagerenheten är den enhet som används för basberäkningar av lagerbehållning. Du kan även ställa in måttenhetkonverteringar för produktvarianter av produktmallar, genom att använda alternativet **Aktivera måttenhetkonverteringar**.
 
 ## <a name="license-plate-grouping"></a>Registreringsskyltsgruppering
-Du kan ange om inleveranser av mindre än eller fler än en specifik enhet ska grupperas till en registreringsskylt eller delas upp på flera skyltar. För att ställa in det här beteendet använder du alternativet **Gruppering av registreringsskyltar**på fliken **Radinformation** på sidan **Enhetssekvensgrupper** . Om du vill använda registreringsskyltsgruppering när arbete bearbetas med en mobil enhet, måste du välja alternativet **ID-gruppering** på menyalternativet **Mobil enhet**. Du kan till exempel använda en mobil enhet för att registrera en artikel som är kopplad till en enhetssekvensgrupp, som har två rader. Första raden är för Enheter och alternativet **ID-gruppering** är inställt på **Ja**. Den andra raden är för Lastpallsenhet och alternativet **ID-gruppering** är inställt på **Nej**. I det här fallet kan systemet automatiskt guida delningen och skapandet av registreringsskyltar per 100 enheter.
+Du kan ange om inleveranser av mindre än eller fler än en specifik enhet ska grupperas till en registreringsskylt eller delas upp på flera skyltar. För att ställa in det här beteendet använder du alternativet **Gruppering av registreringsskyltar** på fliken **Radinformation** på sidan **Enhetssekvensgrupper** . Om du vill använda registreringsskyltsgruppering när arbete bearbetas med en mobil enhet, måste du välja alternativet **ID-gruppering** på menyalternativet **Mobil enhet**. Du kan till exempel använda en mobil enhet för att registrera en artikel som är kopplad till en enhetssekvensgrupp, som har två rader. Första raden är för Enheter och alternativet **ID-gruppering** är inställt på **Ja**. Den andra raden är för Lastpallsenhet och alternativet **ID-gruppering** är inställt på **Nej**. I det här fallet kan systemet automatiskt guida delningen och skapandet av registreringsskyltar per 100 enheter.
 
 ## <a name="units-for-cycle-counting"></a>Enheter för rullande inventering
 För att definiera vilka enheter som ska användas som en del av processen för rullande inventering väljer du alternativet **Använd enhet för rullande inventering** på sidan **Enhetssekvensgrupper** . Du kan välja maximalt fyra enheter i sekvensgruppen. Om du väljer fler än fyra enheter, kommer de ytterligare enheterna inte att visas i den mobila enheten.

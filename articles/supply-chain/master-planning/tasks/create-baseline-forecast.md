@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a1d8fd665ec40efede0a3db8b0c59ac89751a64
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 47e26a48cdde3a6996f4c0a4ca85222c402f44e2
+ms.sourcegitcommit: 436731d8b3889bebfe6f17922b0a31b1994f6796
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987200"
+ms.lasthandoff: 10/26/2020
+ms.locfileid: "4438108"
 ---
 # <a name="create-a-baseline-forecast"></a>Skapa en baslinjeprognos
 
@@ -43,7 +43,7 @@ En produktionsplanerare kan skapa en baslinjeprognos, antingen genom att använd
 7. Stäng sidan.
 8. Stäng sidan.
 
-## <a name="set-up-the-demand-forecasting-paramters"></a>Ställ in parametrar för efterfrågeprognosticering
+## <a name="set-up-the-demand-forecasting-parameters"></a>Ställ in parametrar för efterfrågeprognosticering
 1. Gå till Huvudplanering > Inställningar > Efterfrågeprognosticering > Parametrar för efterfrågeprognosticering.
 2. Expandera avsnittet Forecast algorithm parameters.
 3. Välj "Kopiera över historisk efterfrågan" i fältet Strategi för prognosgenerering.

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: e911f7ca3b67acd9d5a1b170d8c99135da730847
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889156"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437783"
 ---
 # <a name="asset-fault-analysis"></a>Felanalys för tillgång
 
@@ -61,7 +61,7 @@ Det finns många sätt att analysera felregistreringar. Det här avsnittet har f
 I skärmbilden nedan är bara knappen **Symptom** markerad.
 
 - Felregistreringar har utförts på tre felsymtom: "luftläcka", "utlöst säkring" och "utrustning har fastnat".  
-- I kolumnen **Sannolikhet %** blir procentsatserna totalt 100 %. Sannolikheten baseras på alla **symptom**registreringar i den här felanalysen.
+- I kolumnen **Sannolikhet %** blir procentsatserna totalt 100 %. Sannolikheten baseras på alla **symptom** registreringar i den här felanalysen.
 
 ![Figur 1](media/06-controlling-and-reporting.png)
 
@@ -70,7 +70,7 @@ I skärmbilden nedan är bara knappen **Symptom** markerad.
 I bilden nedan läggs **år** och **månad** till för att visa hur du kan visa felregistreringar under en vald period.
 
 - Felsymptomen visas nu som registreringar per år/månad.  
-- Om du lägger till alla procentsatser för varje månad i kolumnen **Sannolikhet %** blir procentsatserna totalt 100 %. Sannolikheten baseras på **symptom**registreringarna i den här felanalysen. Om du har ett stort antal rader på en tillgång, men en stor procentsats på en rad, kan det vara en indikation på ett felsymptom som du ska undersöka närmare för att begränsa antalet registreringar för det felsymptomet.
+- Om du lägger till alla procentsatser för varje månad i kolumnen **Sannolikhet %** blir procentsatserna totalt 100 %. Sannolikheten baseras på **symptom** registreringarna i den här felanalysen. Om du har ett stort antal rader på en tillgång, men en stor procentsats på en rad, kan det vara en indikation på ett felsymptom som du ska undersöka närmare för att begränsa antalet registreringar för det felsymptomet.
 
 ![Figur 2](media/07-controlling-and-reporting.png)
 
@@ -85,7 +85,7 @@ I allmänhet innehåller knapparna i åtgärdsfönstergrupperna **Gruppera efter
 På skärmbilden nedan har **Tillgång** och **Tillgångstyp** lagts till för att ge mer detaljerad information om felregistreringar.
 
 - Felsymptomen delas nu upp i kombinationer av **Tillgång** / **Tillgångstyp** / **Symptom**.  
-- I kolumnen **Sannolikhet %**, om du lägger till alla procentandelar för kombinationen av **Tillgång** / **Tillgångstyp** / **Symptom** uppgår var och en till 100 %. Sannolikheten baseras på **symptom**registreringarna i den här felanalysen. Om du har ett stort antal rader på en tillgång, men en stor procentsats på en rad, kan det vara en indikation på ett felsymptom som du ska undersöka närmare för att begränsa antalet registreringar för det felsymptomet.
+- I kolumnen **Sannolikhet %**, om du lägger till alla procentandelar för kombinationen av **Tillgång** / **Tillgångstyp** / **Symptom** uppgår var och en till 100 %. Sannolikheten baseras på **symptom** registreringarna i den här felanalysen. Om du har ett stort antal rader på en tillgång, men en stor procentsats på en rad, kan det vara en indikation på ett felsymptom som du ska undersöka närmare för att begränsa antalet registreringar för det felsymptomet.
 
 ![Figur 3](media/08-controlling-and-reporting.png)
 

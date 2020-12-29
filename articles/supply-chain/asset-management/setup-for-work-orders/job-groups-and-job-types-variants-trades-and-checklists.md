@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 8bf7c53a6150a2beeca5c6e9b5ab4ea98584158d
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889085"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437650"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor
 
@@ -39,7 +39,7 @@ Varianter av typer av underhållsjobb kan ställas in för en underhållsjobbtyp
 
 Yrkesgrenar för underhållsjobb innehåller information om professionella yrken, t.ex. mekaniska, elektriska och hydrauliska yrkesgrenar. Kompetenskrav kan ställas in för en yrkesgren för underhållsjobb. Alla yrkesgrenar för underhållsjobb kan användas i relation till alla jobbtyper för underhåll. Val av variant av underhållsjobbtyp och/eller yrkesgren för underhållsjobb är valfritt på en arbetsorder.
 
-För varje underhållsjobbtyp kan varianter av inställningen av underhållsjobbtypen skapas. Om du till exempel har en underhållsjobbtyp med namnet **Service**, kan du skapa följande varianter för underhållsjobbtypen: **Lastbilar 30 000 km**, **Bilar 30 000 km**och **Skåpbilar 30 000 km**.
+För varje underhållsjobbtyp kan varianter av inställningen av underhållsjobbtypen skapas. Om du till exempel har en underhållsjobbtyp med namnet **Service**, kan du skapa följande varianter för underhållsjobbtypen: **Lastbilar 30 000 km**, **Bilar 30 000 km** och **Skåpbilar 30 000 km**.
 
 Kategorier av underhållsjobbtyper används för att samla in en grupp med underhållsjobbtyper i översiktssyfte. Exempel på kategorier av underhållsjobbtyper kan vara **Kalibrering**, **Inspektion**, **Översyn** och **Instrumentering**.
 

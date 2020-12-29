@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a7de9430ddcc2499627bacfa01b4dc7fd5546a4d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018892"
+ms.locfileid: "4437995"
 ---
 # <a name="procurement-and-sourcing-overview"></a>Upphandling och inköp – översikt
 
@@ -35,7 +35,7 @@ Upphandling och inköp omfattar alla steg från att identifiera ett behov av pro
 
 ## <a name="identifying-a-need-for-product-and-services"></a>Identifiera ett behov av produkter och tjänster.
 
-Behovet av produkter eller tjänster som kan uppstå från *anmodan* , till exempel när en anställd behöver en produkt. *Produktkataloger* kan ställas in för att styra urvalet av tillgängliga produkter att välja mellan, eller förfrågningar kan göras för produkter som ännu inte är tillgängliga i en katalog, så att inköpsavdelningen att överväga hur produkten kan levereras.  
+Behovet av produkter eller tjänster som kan uppstå från *anmodan*, till exempel när en anställd behöver en produkt. *Produktkataloger* kan ställas in för att styra urvalet av tillgängliga produkter att välja mellan, eller förfrågningar kan göras för produkter som ännu inte är tillgängliga i en katalog, så att inköpsavdelningen att överväga hur produkten kan levereras.  
 
 *Utgiftsramen* kan användas för att begränsa utgifterna för anmodan och *inköp arbetsflöde* ger möjlighet att kräva godkännande innan beställning sker. Det är också möjligt att ange budget anslag, om det behövs.  
 
@@ -92,4 +92,4 @@ Fakturerade inköpsorder bokförs som skuld på leverantörens konto i leverant�
 
 ## <a name="vendor-performance"></a>Leverantörsprestanda
 
-Prestanda och granskning av inköp stöds genom *upphandlings- och leverantörsreskontrarapporter* , som inkluderar kostnadsanalys och leverantörens resultatanalys.
+Prestanda och granskning av inköp stöds genom *upphandlings- och leverantörsreskontrarapporter*, som inkluderar kostnadsanalys och leverantörens resultatanalys.

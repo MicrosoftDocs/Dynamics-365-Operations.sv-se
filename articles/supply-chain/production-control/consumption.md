@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f58365278200344169b93658e9c92dea2bc4f18f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211654"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437735"
 ---
 # <a name="calculate-material-consumption"></a>Beräkna materialförbrukning
 
@@ -63,7 +63,7 @@ Det antas att 0,5 rör kasseras för var femte del av röret som förbrukas.
 
 ### <a name="consumption"></a>Förbrukning
 
-Vanligtvis väljer du**Förbrukning** som avrundningsmekanism när råmaterial måste plockas i hela kvantiteter för en specifik hanteringsenhet av produkten. Till exempel används 2 liter färg för att tillverka en enhet av en färdig vara och målarfärgen plockas i 25 kvartars burkar. I detta fall kan avundningsmekanismen **Förbrukning** användas för att avrunda förbrukning till heltal i 25 kvartars burkar. Här följer beloppet för beräkningen av färg som krävs, om 180 enheter av den färdiga varan måste produceras:
+Vanligtvis väljer du **Förbrukning** som avrundningsmekanism när råmaterial måste plockas i hela kvantiteter för en specifik hanteringsenhet av produkten. Till exempel används 2 liter färg för att tillverka en enhet av en färdig vara och målarfärgen plockas i 25 kvartars burkar. I detta fall kan avundningsmekanismen **Förbrukning** användas för att avrunda förbrukning till heltal i 25 kvartars burkar. Här följer beloppet för beräkningen av färg som krävs, om 180 enheter av den färdiga varan måste produceras:
 
 1.  Målning som krävs, exklusive kassation: 180 × 2 = 360 liter
 2.  Antal burkar: 360 ÷ 25 = 14,4, som avrundas uppåt till 15

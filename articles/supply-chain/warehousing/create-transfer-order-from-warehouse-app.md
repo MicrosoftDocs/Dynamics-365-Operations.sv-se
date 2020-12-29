@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
 ms.openlocfilehash: c30b0e74053480a08f84f4d7579021084ded5799
-ms.sourcegitcommit: 286786445f72db20e993d37a63df0b886f8f5e99
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3988401"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437451"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Skapa överföringsorder från distributionslagerappen
 
@@ -261,7 +261,7 @@ För nämnda exempel två **Händelser för lagerställeapp** (*Skapa överföri
 
 Du kan visa den händelsekön och de händelsemeddelanden som har genererats av lagerställeappen genom att gå till **Hantering av distributionslager \> Frågor och rapporter \> Loggar för mobil enhet \> Lagerställeapp händelser**.
 
-Händelsemeddelandena *Skapa överföringsorder* kommer att få status *Vänta*, vilket innebär att batch-jobbet **Bearbeta lagerställeapp händelser** inte kommer att hämtas och bearbeta händelsemeddelandena. Så snart händelsemeddelandet uppdateringar till status *i kö* bearbetar batch-jobbet händelserna. Detta kommer att ske samtidigt som skapandet av händelsen *Slutför överföringsorder* (när en arbetare väljer knappen**Slutför order** på distributionslagerappen). När händelsemeddelandena *skapa överföringsorder* har bearbetats uppdateras statusen till *slutförd* eller *misslyckad*. När status *Slutför överföringsorder* uppdateras till *Slutförd* tas alla relaterade händelser bort från kön.
+Händelsemeddelandena *Skapa överföringsorder* kommer att få status *Vänta*, vilket innebär att batch-jobbet **Bearbeta lagerställeapp händelser** inte kommer att hämtas och bearbeta händelsemeddelandena. Så snart händelsemeddelandet uppdateringar till status *i kö* bearbetar batch-jobbet händelserna. Detta kommer att ske samtidigt som skapandet av händelsen *Slutför överföringsorder* (när en arbetare väljer knappen **Slutför order** på distributionslagerappen). När händelsemeddelandena *skapa överföringsorder* har bearbetats uppdateras statusen till *slutförd* eller *misslyckad*. När status *Slutför överföringsorder* uppdateras till *Slutförd* tas alla relaterade händelser bort från kön.
 
 Eftersom **Händelser för lagerställeapp** för skapandet av överföringsorderdata kommer inte bearbetas av batchjobbet innan meddelandena uppdateras till status *I kö* måste du slå upp de begärda numren för överföringsorder som en del av fältet **Identifierare**. Fältet **Identifierare** finns i rubriken på sidan för **händelser för lagerställeapp**.
 

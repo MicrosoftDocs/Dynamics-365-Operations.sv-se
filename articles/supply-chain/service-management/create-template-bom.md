@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b2e06283f3b95c5ff6b4376bba63cf5a42d5feeb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981827"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437789"
 ---
 # <a name="create-a-template-bom"></a>Skapa en strukturlistemall   
 
@@ -38,7 +38,7 @@ Du kan skapa en strukturlistemall med följande metoder. För samtliga metoder g
 
 2.  Tryck på CTRL+N om du vill öppna formuläret **Skapa mallstrukturlista**.
 
-3.  Under **Kopiera strukturlisterader från referens**markerar du alternativ **manuell**.
+3.  Under **Kopiera strukturlisterader från referens** markerar du alternativ **manuell**.
 
 4.  I fältet **Artikelnummer** anger du en artikel av typen **Strukturlista**.
 
@@ -56,7 +56,7 @@ En ny tom strukturlistemall skapas.
 
 2.  Tryck på CTRL+N om du vill öppna formuläret **Skapa mallstrukturlista**.
 
-3.  Under **Kopiera strukturlisterader från referens**markerar du alternativ **Mallstrukturlista**.
+3.  Under **Kopiera strukturlisterader från referens** markerar du alternativ **Mallstrukturlista**.
 
 4.  I fältet **Referensnummer** väljer du en befintlig strukturlistemall att kopiera till din nya strukturlistemall.
 

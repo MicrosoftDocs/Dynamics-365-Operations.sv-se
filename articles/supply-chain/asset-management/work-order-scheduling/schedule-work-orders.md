@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 095ff2697a7cc8486afc6e77fd7d06f761e74e75
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888915"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437771"
 ---
 # <a name="schedule-work-orders"></a>Schemalägg arbetsorder
 
@@ -88,7 +88,7 @@ I exemplen nedan är allvarlighetspoängen "2" och servicenivåpoängen är "5" 
 | WO-00010817   | Två dagar från nu   | 2                      | 20              | (-2 \* 10) + (2 \* 2) + 5 / 20     | \- 15.75   |
 | WO-00010818   | Två dagar från nu   | 3                      | 5               | (-2 \* 10) + (2 \* 3) + 5 / 5      | \- 13      |
 
-Arbetsorderna kommer att planeras i följande ordning: WO-000108**16**, WO-000108**18**, WO-000108**17**.
+Arbetsorderna kommer att planeras i följande ordning: WO-000108 **16**, WO-000108 **18**, WO-000108 **17**.
 
 **Exempel 2:**
 
@@ -98,7 +98,7 @@ Arbetsorderna kommer att planeras i följande ordning: WO-000108**16**, WO-00010
 | WO-00010817   | Två dagar från nu   | 2                      | 20                  | (-2 \* 10) + (2 \* 2) + 100 / 20 | \- 11    |
 | WO-00010818   | Två dagar från nu   | 3                      | 5                   | (-2 \* 10) + (2 \* 3) + 100 / 5  | 6        |
 
-Om servicenivåpoängen höjs till "100" i stället för "5" blir planeringsordningen: WO-000108**18**, WO-000108**16**, WO-000108**17**.
+Om servicenivåpoängen höjs till "100" i stället för "5" blir planeringsordningen: WO-000108 **18**, WO-000108 **16**, WO-000108 **17**.
 
 Bedömningspoängen för att beräkna vilka underhållsarbetare som ska arbeta med arbetsorderna ställs in som siffror som läggs till i varje underhållsarbetares beräkning under arbetsorderplaneringen. Underhållsarbetaren med högsta poäng väljs för arbetsordern. Här följer en kort beskrivning av underhållsarbetarens poäng:
 

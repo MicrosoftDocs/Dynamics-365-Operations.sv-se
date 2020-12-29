@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 0cc44592bd60e89f1dc67114098d701d8965e4fe
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212559"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437544"
 ---
 # <a name="production-feedback"></a>Produktionsåterrapportering
 
@@ -32,7 +32,7 @@ ms.locfileid: "3212559"
 
 Den här artikeln innehåller information om produktionsåterrapportering, som ger arbetarna återrapportering om produktionsjobb. Artikeln innehåller information om de olika sätten att uppdatera produktionsåterrapportering.
 
-Produktionåterkoppling ger arbetarna återrapportering om produktionsjobb. Den registrerar materialförbrukning och produktionsorder, operationskvantiteter och status och fel som orsakar att ett jobb eller en operation misslyckas. Produktionåterkoppling kan uppdateras i journaler som är relaterade till produktionsorder. Journalerna **Produktionsjobbkort** och **Produktionsflödekort** används för att rapportera tid och kvantiteter per jobb eller operation. För att rapportera om det sista jobbet eller operationen kan kvantiteter i den färdiga produkten rapporteras som slutförda. Produktionåterkoppling kan också uppdateras på sidorna **Jobbkortterminal** och **Jobbkortenhet**. Dessa sidor låter produktionsåterrapportering uppdateras på tillverkningsstället, och ingår i funktionen tillverkningskörning i modulen **Produktionskontroll**. Sidan**Jobbkortterminal** har ett konfigurerbart användargränssnitt som visar en lista med de frisläppta jobben i en prioriterad order för ett valt arbetsområde. Den erbjuder även avancerade alternativ som till exempel buntning av jobb och teamarbete. Sidan **Jobbkortenhet** har ett pekvänligt användargränssnitt. Produktionåterkoppling på båda sidorna uppdateras från produktionsjournalerna.
+Produktionåterkoppling ger arbetarna återrapportering om produktionsjobb. Den registrerar materialförbrukning och produktionsorder, operationskvantiteter och status och fel som orsakar att ett jobb eller en operation misslyckas. Produktionåterkoppling kan uppdateras i journaler som är relaterade till produktionsorder. Journalerna **Produktionsjobbkort** och **Produktionsflödekort** används för att rapportera tid och kvantiteter per jobb eller operation. För att rapportera om det sista jobbet eller operationen kan kvantiteter i den färdiga produkten rapporteras som slutförda. Produktionåterkoppling kan också uppdateras på sidorna **Jobbkortterminal** och **Jobbkortenhet**. Dessa sidor låter produktionsåterrapportering uppdateras på tillverkningsstället, och ingår i funktionen tillverkningskörning i modulen **Produktionskontroll**. Sidan **Jobbkortterminal** har ett konfigurerbart användargränssnitt som visar en lista med de frisläppta jobben i en prioriterad order för ett valt arbetsområde. Den erbjuder även avancerade alternativ som till exempel buntning av jobb och teamarbete. Sidan **Jobbkortenhet** har ett pekvänligt användargränssnitt. Produktionåterkoppling på båda sidorna uppdateras från produktionsjournalerna.
 
 
 

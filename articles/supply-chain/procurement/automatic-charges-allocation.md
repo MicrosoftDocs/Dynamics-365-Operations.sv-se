@@ -16,11 +16,11 @@ ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
-ms.sourcegitcommit: 3feccc9facb33e3dee18f04e202f7b20785df0a8
+ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/13/2020
-ms.locfileid: "3998886"
+ms.locfileid: "4437968"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatisk allokering av tillägg
 
@@ -53,8 +53,8 @@ Om du vill fördela tillägg måste du först definiera tilläggskoder.
 
 1. Snabbfliken **Bokföring** innehåller avsnittet **Debet** och **Kredit**. Ställ in följande fält, beroende på redovisningen som du vill bokföra tilläggen på:
 
-    - **Typ** – Välj den typ av konto som du bokför till ( *redovisning* , *kund* eller *artikel* ).
-    - **Bokföring** – Välj den typ av bokföring som ska skapas (t.ex. *Mäklaravgift* eller *Kundkvittning* ).
+    - **Typ** – Välj den typ av konto som du bokför till (*redovisning*, *kund* eller *artikel*).
+    - **Bokföring** – Välj den typ av bokföring som ska skapas (t.ex. *Mäklaravgift* eller *Kundkvittning*).
     - **Konto** – Välj det konto som tillägget ska bokföras på.
 
 1. Klicka på **Spara** i åtgärdsfönstret.
@@ -100,33 +100,33 @@ När dina tilläggskoder har ställts in följer du dessa steg för att definier
     - För inköpsorder: gå till **Anskaffning och källa \> Inställningar \> Tillägg \> Automatiska tillägg**.
     - För försäljningsorder: gå till **Kundreskontra \> Inställningar \> Ställa in tillägg \> Automatiska tillägg**.
 
-1. I listfönstret, i fältet **Nivå** , välj nivån där din automatiska tillägg gäller:
+1. I listfönstret, i fältet **Nivå**, välj nivån där din automatiska tillägg gäller:
 
     - *Huvud* – Tillämpa tillägg i orderrubriken.
     - *Rad* – Tillämpa tillägg till orderrader.
 
 1. Välj en befintlig automatisk avgift om du vill redigera den eller välj **ny** om du vill definiera en ny automatisk kostnad.
-1. I listan **Kontokod** , välj ett av följande värden för att ange omfattningen av konton som påverkas:
+1. I listan **Kontokod**, välj ett av följande värden för att ange omfattningen av konton som påverkas:
 
     - *Tabell* – Tilldela tillägg till en viss kund eller leverantör.
     - *Grupp* – Tilldela tillägg till en tilläggsgrupp.
     - *Alla* – Tilldela tillägg till alla kunder och leverantörer.
 
-1. I fälten **Kundrelation** eller **Leverantörsrelation** väljer du en specifik kund eller leverantör om du anger fältet **Kontokod** till *Tabell*. Om du anger fältet **Kontokod** till *Grupp* , välj en kund- eller leverantörstilläggsgrupp.
-1. I fältet **Artikelkod** , välj ett av följande värden för att ange omfattningen av artiklar som påverkas. Du kan välja en artikel kod, när du definierar auto tillägg på radnivå.
+1. I fälten **Kundrelation** eller **Leverantörsrelation** väljer du en specifik kund eller leverantör om du anger fältet **Kontokod** till *Tabell*. Om du anger fältet **Kontokod** till *Grupp*, välj en kund- eller leverantörstilläggsgrupp.
+1. I fältet **Artikelkod**, välj ett av följande värden för att ange omfattningen av artiklar som påverkas. Du kan välja en artikel kod, när du definierar auto tillägg på radnivå.
 
     - *Tabell* – Tilldela tillägg till en viss artikel.
     - *Grupp* – Tilldela tillägg till en avgiftsgrupp för artiklar.
     - *Alla* – Tilldela tillägg till alla artiklar.
 
-1. I fältet **Artikelrelation** välj en specifik artikel om du anger fältet **Artikelkod** till *Tabell*. Om du anger fältet **Artikelkod** till *Grupp* , väljer du en avgiftsgrupp för artiklar.
+1. I fältet **Artikelrelation** välj en specifik artikel om du anger fältet **Artikelkod** till *Tabell*. Om du anger fältet **Artikelkod** till *Grupp*, väljer du en avgiftsgrupp för artiklar.
 1. **Endast för försäljningsorder:** I fältet **Kod för leveranssätt** väljer du ett av följande värden för att ange omfattningen av de leveranslägen som kommer att påverkas:
 
     - *Tabell* – Tilldela tillägg på ett visst leveranssätt.
     - *Grupp* – Tilldela tillägg till en viss leveranssättsgrupp.
     - *Alla* – Tilldela tillägg till alla leveranssätt.
 
-1. **Endast för försäljningsorder:** I fältet **Relation för leveranssätt** välj ett specifikt leveranssätt om du anger fältet **Kod för leveranssätt** till *tabell*. Om du anger fältet **Kod för leveranssätt** till *Grupp* , välj en leveransgrupp.
+1. **Endast för försäljningsorder:** I fältet **Relation för leveranssätt** välj ett specifikt leveranssätt om du anger fältet **Kod för leveranssätt** till *tabell*. Om du anger fältet **Kod för leveranssätt** till *Grupp*, välj en leveransgrupp.
 1. På snabbfliken **Rader** om du vill definiera avgifterna och tilläggstarifferna som ska användas när den aktuella Du kan använda verktygsfältet på den här snabbfliken för att lägga till så många rader som behövs. För varje rad anger du följande fält:
 
     - **Valuta** – Välj den valuta som ska användas för att beräkna omkostnaden.
@@ -174,6 +174,6 @@ I följande procedur beskrivs hur du tilldelar tillägg på huvudnivå till en r
     - **Visa val och tydliga specifika rader** – Markera den här kryssrutan om du vill exkludera specifika rader från den här allokeringen. När du markerar den här kryssrutan öppnas rutnätet **Välj rader som ska undantas från fördelning**. Rutnätet inkluderar bara de rader som matchar kriterierna som definieras av inställningarna **Fördela avgifter på rader** och **I lager**. Om du till exempel anger fältet **Fördela avgifter på rader** till *Positiva rader* och markerar kryssrutan **I lager** visar rutnätet bara rader som är både positiva och inventerade. Dessutom filtrerar rutnätet automatiskt bort alla rader som redan har inlevererats för den fullständiga kvantiteten. Medan rutnätet är öppet avmarkerar du kryssrutan **inkludera** för varje rad som ska undantas från allokeringen. 
 
         > [!IMPORTANT]
-        > När du arbetar med fältet **Välj rader som ska undantas från fördelning** se till att lämna rutnätet öppet tills du väljer **fördela**. Om du stänger rutnätet innan du väljer **fördela** , går inställningarna i rutnätet förlorade. Därför fördelas avgifter utifrån de kriterier som du tidigare definierat.
+        > När du arbetar med fältet **Välj rader som ska undantas från fördelning** se till att lämna rutnätet öppet tills du väljer **fördela**. Om du stänger rutnätet innan du väljer **fördela**, går inställningarna i rutnätet förlorade. Därför fördelas avgifter utifrån de kriterier som du tidigare definierat.
 
 1. Välj **fördela** om du vill använda inställningarna och stänga dialogrutan.

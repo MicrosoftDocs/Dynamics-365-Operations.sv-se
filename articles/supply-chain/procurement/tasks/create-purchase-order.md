@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: ec91174f291bcfa7027a93ca344823561cc29e3f
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018174"
+ms.locfileid: "4438062"
 ---
 # <a name="create-a-purchase-order"></a>Skapa en inköpsorder
 
@@ -47,7 +47,7 @@ Det här avsnittet visar hur du skapar en inköpsorder manuellt. Den är vanliga
 2. Välj **dimensioner** Produkter kan vara i varianter som särskiljs av dimensioner, till exempel färg, storlek eller utförande. Produkter kan också ställas in att använda lagringsdimensioner, till exempel site och lagerställe. Det finns också frivilliga spårningsdimensioner, såsom parti och serienummer. Om du vill förbättra effektiviteten hos orderregistreringen kan du lägga till dimensionsfälten som du använder ofta direkt till orderrutnätet.  
 3. Markera kryssrutan **Färg**. Valfritt: Om du väljer fältet **Spara inställningar** kommer de dimensioner som du har valt även att visas på orderradrutnätet nästa gång du öppnar inköpsordersidan.  
 4. Välj **OK**.
-5. I fältet **Artikelnummer** , välj **T0004**.
+5. I fältet **Artikelnummer**, välj **T0004**.
 
     - Orderrader skapas för produkter och tjänster genom att ange ett artikelnummer, eller som utgifter genom att ange en anskaffningkategori. 
     - Kategorifältet **Anskaffning** används för att lägga till rader där upphandlade artiklar kostnadsförs direkt, snarare än att de går till lagret. Det innebär att du om du behöver utgifter för ett inköp kan du göra detta genom att skapa en inköpsorderrad som anger en anskaffningkategori snarare än skapa en rad med ett artikelnummer. Artiklar kan också associeras med en anskaffningkategori, och i så fall, visas anskaffningkategorin som informativ.  
@@ -60,7 +60,7 @@ Det här avsnittet visar hur du skapar en inköpsorder manuellt. Den är vanliga
     - Fältet **Enhetspris** innehåller vanligtvis ett värde i antingen ett inköpsavtal eller ett handelsavtal. Det är möjligt att ändra enhetspriset på enskilda orderrader, till exempel om ett unikt pris förhandlas med leverantören.  
     - Fältet **Rabatt** representerar ett rabattbelopp per enhet. Denna rabatt minskar därmed enhetspriset efter rabatten. Denna rabatt levereras ofta automatiskt från inköpsavtal eller handelsavtal, men den går att åsidosätta på enskilda rader om unika rabatter har förhandlats fram med leverantören.  
     - En rabattprocentsats kan anges som minskar nettobeloppet för raden. Denna rabatt levereras ofta automatiskt från inköpsavtal eller handelsavtal, men den går att åsidosätta på enskilda rader om unika rabattprocentsatser har förhandlats fram med leverantören.  
-    - Värdet i fältet **Nettobelopp** beräknas från andra fält på raden inklusive kvantitet, enhetspris, rabatt och rabattprocent. Det är möjligt att ändra Nettobelopp, men sedan kommer fälten **Enhetspris** , **Rabatt** och **Rabattprocent** att vara tomma och när du bokför mot raden kommer det bokförda beloppet att vara proportionell mot nettobeloppet. Vanligtvis används fältet **Nettobelopp** endast för att visa nettobeloppet för raden.  
+    - Värdet i fältet **Nettobelopp** beräknas från andra fält på raden inklusive kvantitet, enhetspris, rabatt och rabattprocent. Det är möjligt att ändra Nettobelopp, men sedan kommer fälten **Enhetspris**, **Rabatt** och **Rabattprocent** att vara tomma och när du bokför mot raden kommer det bokförda beloppet att vara proportionell mot nettobeloppet. Vanligtvis används fältet **Nettobelopp** endast för att visa nettobeloppet för raden.  
 
 8. Visa avsnittet **Raddetaljer**.
 9. Välj fliken **Leverans**. Ett unikt leveransdatum kan tilldelas varje orderrad. Datumet ärvs från fältet på inköpsorderrubriken, men du kan ändra detta.  

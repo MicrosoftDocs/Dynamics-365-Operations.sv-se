@@ -18,11 +18,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 3119b6e93bc1f09c068fa599ec5ea2d0b23906a1
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016734"
+ms.locfileid: "4437998"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Ställ in en min-max-process för lagerpåfyllnad
 
@@ -49,7 +49,7 @@ Den här proceduren visar hur du ställer in en ny process för lagerpåfyllnad 
 6. i fältet **Plats** anger eller väljer du ett värde. Om du använder USMF kan du välja site 2.  
 7. Ange eller välj ett värde i fältet **Lagerställe**. Om du använder USMF kan du välja lager 24.  
 8. Klicka på **Spara**.
-9. I avsnittet **Rader** , klicka på **Ny**.
+9. I avsnittet **Rader**, klicka på **Ny**.
 10. Markera vald rad i listan.
 11. Ange ett värde i fältet **Till kvantitet**. Till exempel kan du ställa in den på 9999.  
 12. Markera kryssrutan **Tillåt delningar**. Om du väljer det här alternativet kommer processen för att skapa arbete tillåta att kvantiteter på arbetsrader delas av flera platser.  
@@ -68,10 +68,10 @@ Den här proceduren visar hur du ställer in en ny process för lagerpåfyllnad 
 3. Klicka på **Nytt** i **Åtgärdsfönstret**.
 4. Skriv ett värde i fältet **Arbetsmall.**
 5. Klicka på **Spara**.
-6. I **Arbetsmallinformation** , klicka på **Ny**.
+6. I **Arbetsmallinformation**, klicka på **Ny**.
 7. Välj Välj i fältet **Arbetstyp**.
 8. Ange eller välj ett värde i fältet **Arbetsklass-ID**. Detta ska vara en arbetsklass som är relaterad till lagerpåfyllnad. Välj Lagerpåfyllnad om du använder USMF.  
-9. I **Arbetsmallinformation** , klicka på **Ny**.
+9. I **Arbetsmallinformation**, klicka på **Ny**.
 10. Markera vald rad i listan.
 11. Välj Placera i fältet **Arbetstyp**.
 12. Ange eller välj ett värde i fältet **Arbetsklass-ID**.
@@ -84,7 +84,7 @@ Den här proceduren visar hur du ställer in en ny process för lagerpåfyllnad 
 3. Skriv ett värde i fältet **Lagerpåfyllnadsmall**. Namnge mallen för att ange att den är för minsta/största för påfyllnad.  
 4. I fältet **Beskrivning** anger du ett värde.
 5. Markera kryssrutan **Tillåt påfyllnadsbegäran för att använda ej reserverade kvantiteter**. Om du markerar det här alternativet, aktiverar den lagerpåfyllnadsbegäran för att använda kvantiteter som är relaterade till minsta/största lagerpåfyllnad. Detta kan t.ex. vara praktiskt om det minsta/största lagerpåfyllnadsarbetet inte bearbetas på en gång för att undvika att onödigt påfyllnadsbegäransarbete skapas.
-6. I **mall för lagerpåfyllnad** , klicka på **Ny**.
+6. I **mall för lagerpåfyllnad**, klicka på **Ny**.
 7. Ange ett nummer i fältet **Sekvensnummer**.
 8. I fältet **Beskrivning** anger du ett värde.
 9. Markera vald rad i listan.

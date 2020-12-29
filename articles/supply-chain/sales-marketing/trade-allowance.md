@@ -17,11 +17,11 @@ ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 13b665427a4caf206e0a3b3aca6b04c1529b9206
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978879"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437624"
 ---
 # <a name="trade-allowance-management"></a>Hantering av handelsavdrag
 
@@ -96,7 +96,7 @@ På snabbfliken **kunder** i listan till vänster kan du markera och visa kundgr
 
 På snabbfliken **artiklar** på snabbfliken **artiklar** på sidan **medel** läggs produkter till i avtalet för att koppla företagets försäljning till det avdrag som har kommit överens om.
 
-På snabbfliken **medel**kan du visa de kampanjmedel som är associerade med kontraktet. Du kan också visa avtalets händelsekostnadsallokering. En händelsekostnadsallokering på 100 procent innebär att denna kampanj kommer att finansieras utifrån en fond. Alternativt kan ett händelseavtal ställas ut på flera medel och kan använda lika eller olika procentuell allokering.
+På snabbfliken **medel** kan du visa de kampanjmedel som är associerade med kontraktet. Du kan också visa avtalets händelsekostnadsallokering. En händelsekostnadsallokering på 100 procent innebär att denna kampanj kommer att finansieras utifrån en fond. Alternativt kan ett händelseavtal ställas ut på flera medel och kan använda lika eller olika procentuell allokering.
 
 #### <a name="lines"></a>Rader
 
@@ -126,7 +126,7 @@ Om du vill tillämpa avtalet till försäljningsorder som uppfyller villkoren i 
 
 När du skapar en försäljningsorder med rader som uppfyller bestämmelserna i avtalet kan du visa relaterad information på sidan **försäljningsorder** genom att välja **försäljningsorderrad**\>**visa**\>**Prisinformation**.
 
-På sidan **prisinformation**på snabbfliken **rabatter** kan försäljningsansvarig se en strukturlista från giltigt handelsavdragsavtal (rabattprogram-ID visas) och det totala beloppet som gäller för raden. Detta belopp visas även i fältet **Rabattbelopp** i avsnittet **Marginalberäkning** på sidan **Prisinformation**.
+På sidan **prisinformation** på snabbfliken **rabatter** kan försäljningsansvarig se en strukturlista från giltigt handelsavdragsavtal (rabattprogram-ID visas) och det totala beloppet som gäller för raden. Detta belopp visas även i fältet **Rabattbelopp** i avsnittet **Marginalberäkning** på sidan **Prisinformation**.
 
 När försäljningsfakturan bokförs skapas motsvarande återfaktureringskrav för varje fakturarad.
 

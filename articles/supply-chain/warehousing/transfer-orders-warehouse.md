@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
 ms.openlocfilehash: e482567eb92b9ab891d41d82d10cbb87f9b7fb01
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017493"
+ms.locfileid: "4438050"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>Ställ in lagerställen för överföringsorder 
 
@@ -50,6 +50,6 @@ Lagerställenivåer kan användas för att skapa en hierarki som stöder överf�
 
 Du måste också ange ledtiden för transport mellan lagerställen på sidan **Transportdagar**. 
 1. Gå till **Lagerhantering > Inställningar > Distribution > Transport dagar**.
-2. I fältet **Mottagningsplats** , välj **Lagerställe**.
-3. Välj **speditionslager** , **mottagande lager** och **transportdagar**. 
+2. I fältet **Mottagningsplats**, välj **Lagerställe**.
+3. Välj **speditionslager**, **mottagande lager** och **transportdagar**. 
 4. (Valfritt) Du kan också ange transporttiden beroende på leveranssätt, under fliken **Transportdagar per leveranssätt**.

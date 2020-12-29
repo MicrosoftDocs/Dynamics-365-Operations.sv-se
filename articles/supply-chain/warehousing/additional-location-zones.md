@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
 ms.openlocfilehash: 6cf81939989b8faffcda51bbbd5bc6b27aec7eea
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016318"
+ms.locfileid: "4438034"
 ---
 # <a name="additional-location-zones"></a>Ytterligare platszoner
 
@@ -45,16 +45,16 @@ Innan du kan använda funktionen *Ytterligare platszon* den aktiveras i ditt sys
 1. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Guide för platsinställning**.
 2. Ange följande värden.
 
-    - I fältet **Lagerställe** , välj _62_.
+    - I fältet **Lagerställe**, välj _62_.
     - I fältet **Zon-ID** välj _FLOOR_.
     - I fältet **Ytterligare Zon 1** välj _PICKZONE1_.
     - I fältet **Ytterligare Zon 2** välj _WEBSHOP1_.
-    - I fältet **Platsprofil-ID** , välj _FLOOR_.
+    - I fältet **Platsprofil-ID**, välj _FLOOR_.
 
 3. Välj rad **Våning**.
-4. I fältet **Från nummer** , ange _1_. I fältet **Till nummer** , ange _3_.
+4. I fältet **Från nummer**, ange _1_. I fältet **Till nummer**, ange _3_.
 5. Välj rad **Gång**.
-6. I fältet **Från nummer** , ange _1_. I fältet **Till nummer** , ange _5_.
+6. I fältet **Från nummer**, ange _1_. I fältet **Till nummer**, ange _5_.
 7. Markera **Skapa**.
 8. Du får meddelanden om att nya platser har lagts till. Välj knappen **Visa meddelanden** om du vill visa meddelandena.
 9. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Platser**. De nya platserna visas i listan och alla zonfält är tillgängliga (det vill säga det befintliga zonfältet och de nya ytterligare zonfälten).

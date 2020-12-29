@@ -20,11 +20,11 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c3865bfc3b66c018f836e21bbddf658de0351e57
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211386"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437512"
 ---
 # <a name="operations-scheduling-options"></a>Tidsplansalternativ för åtgärder
 
@@ -97,7 +97,7 @@ När referenser vilar på tillverkningsorder kallas de också för delproduktion
 
 ### <a name="synchronize-references"></a>Synkronisera referenser
 
-Du kan synkronisera referenser med produktionsordern. Om det här alternativet väljs flyttas och justeras datumen för delproduktionerna när ändringar görs i produktionsorderns tidsplanering. Om en tillverkningsorder har en eller flera delproduktioner, kan du överväga att planera delproduktionerna tillsammans med huvudproduktionen. I så fall kan huvudproduktionen inte startas förrän de relaterade delproduktionerna har slutförts. Markera därför den här kryssrutan om tidsplaneringen för delproduktioner ska baseras på start- och sluttid för vald produktion. Du kan markera den här kryssrutan om även kryssrutan**Tidsplanera referenser** markeras.
+Du kan synkronisera referenser med produktionsordern. Om det här alternativet väljs flyttas och justeras datumen för delproduktionerna när ändringar görs i produktionsorderns tidsplanering. Om en tillverkningsorder har en eller flera delproduktioner, kan du överväga att planera delproduktionerna tillsammans med huvudproduktionen. I så fall kan huvudproduktionen inte startas förrän de relaterade delproduktionerna har slutförts. Markera därför den här kryssrutan om tidsplaneringen för delproduktioner ska baseras på start- och sluttid för vald produktion. Du kan markera den här kryssrutan om även kryssrutan **Tidsplanera referenser** markeras.
 
 ## <a name="cancellation"></a>Annullera
 ### <a name="cancel-queue-time"></a>Annullera kötid

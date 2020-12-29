@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e9874d3b44a687a60ea1fd26889af3d1b644f86a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214399"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437748"
 ---
 # <a name="standard-cost-conversion-overview"></a>Standardkostnadskonvertering – översikt
 
@@ -78,7 +78,7 @@ När statusvärdet för konverteringsposten ändras till **Klar** utförs en slu
 Om du har skapat en säkerhetskopia av databasen kan du återställa den om fel uppstår under konverteringsprocessen.
 
 ## <a name="8-perform-the-conversion-when-the-conversion-record-has-a-ready-status"></a>8. Genomför konverteringsprocessen när konverteringspostens statusvärde är Klar.
-För att konverteringsprocessen ska kunna genomföras måste en lagerstängning ha genomförts på ett datum en dag före det planerade konverteringsdatumet. Det här kravet ser till att bakåtdaterade transaktioner inte ska kunna anges inom övergångsperioden. Om ingen lagerstängning har genomförts får du en fråga om du vill genomföra en lagerstängning som en del av konverteringsprocessen. Konverteringsprocessen hanterar en artikel åt gången. Den börjar med de lägsta artiklarna i en produktstruktur baserat på artikelns lågnivåkod. När en artikel har konverterats korrekt, ändras dess status till **Konverterad**i konverteringsposten. Om konverteringsprocessen avbryts används statusvärdet **Kontrollerad** för artiklar som inte har konverterats korrekt. En konverteringsprocess som genomförs utan problem har följande effekter:
+För att konverteringsprocessen ska kunna genomföras måste en lagerstängning ha genomförts på ett datum en dag före det planerade konverteringsdatumet. Det här kravet ser till att bakåtdaterade transaktioner inte ska kunna anges inom övergångsperioden. Om ingen lagerstängning har genomförts får du en fråga om du vill genomföra en lagerstängning som en del av konverteringsprocessen. Konverteringsprocessen hanterar en artikel åt gången. Den börjar med de lägsta artiklarna i en produktstruktur baserat på artikelns lågnivåkod. När en artikel har konverterats korrekt, ändras dess status till **Konverterad** i konverteringsposten. Om konverteringsprocessen avbryts används statusvärdet **Kontrollerad** för artiklar som inte har konverterats korrekt. En konverteringsprocess som genomförs utan problem har följande effekter:
 
 -   Statusvärdet för konverteringsposten ändras från **Klar** till **Slutförd** och statusvärdet för alla valda artiklar ändras från **Kontrollerad** till **Konverterad**.
 -   Artikelmodellgruppen för konverterade artiklar ändras så att den motsvarar en ny grupp med en lagermodell för standardkostnad.

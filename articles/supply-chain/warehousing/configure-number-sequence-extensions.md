@@ -4,7 +4,7 @@ description: Det här ämnet innehåller en översikt över de funktioner som ge
 author: GarmMSFT
 manager: tfehr
 ms.date: 06/10/2020
-ms.topic: configure-number-sequence-extensions
+ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: cee5047a8c80aa850d9dd1bb872188a822ba8328
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: e6faab834b4c1c514bcc23a59d74e2bd0e069754
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016135"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4438110"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Konfigurera nummerserier för lagerflöden
 
@@ -53,7 +53,7 @@ Om du vill ställa in nummerserietillägg i systemet följer du stegen nedan.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Parametrar för lagerstyrning**.
 1. På fliken **Allmänt** i **GS1-företagsprefix** och ange ditt företagets GS1-prefix. Det här värdet påverkar alla nummerserier där GS1-prefixet ingår som ett segment.
-1. Om du vill generera BOL-nummer för påfyllnadsetikett på fliken **Rapporter** , markera kryssrutan **Generera BOL-nummer när du skriver ut påfyllnadsetiketter**.
+1. Om du vill generera BOL-nummer för påfyllnadsetikett på fliken **Rapporter**, markera kryssrutan **Generera BOL-nummer när du skriver ut påfyllnadsetiketter**.
 
     > [!NOTE]
     > Den här kryssrutan är bara tillgänglig om funktionen för [utskrift av påfyllnadsetiketter](configure-wave-label-printing.md) är aktiverad.
@@ -85,10 +85,10 @@ Följ stegen nedan när du vill skapa och redigera nummerserier.
     | Segmenttyp | beskrivning |
     |---|---|
     | Konstant | Den här segmenttypen lägger till samma konstant text för varje genererat tal i sekvensen. I fältet **Värde** anger du krävd texten. Fältet **Längd** uppdateras automatiskt till längden på den text som du har angett i fältet **Värde**. |
-    | Nummerserie | I fältet **Värde** ange ett nummertecken ( *\#* ) för varje tecken som ska visas i den genererade sekvensen. Nummerserien kan generera längre nummer, men endast tecknen längst till höger visas. Fältet **Längd** uppdateras automatiskt till numret för nummertecken som du har angett i fältet **Värde**.<p>Om du vill uppfylla GS1-krav för SSCC-18s-nummer ser du till att längden på det här segmentet är 16 minus längden på ditt GS1-prefix.</p> |
+    | Nummerserie | I fältet **Värde** ange ett nummertecken (*\#*) för varje tecken som ska visas i den genererade sekvensen. Nummerserien kan generera längre nummer, men endast tecknen längst till höger visas. Fältet **Längd** uppdateras automatiskt till numret för nummertecken som du har angett i fältet **Värde**.<p>Om du vill uppfylla GS1-krav för SSCC-18s-nummer ser du till att längden på det här segmentet är 16 minus längden på ditt GS1-prefix.</p> |
     | GS1-prefix | Den här segmenttypen lägger till värdet som har ställts in i fältet **GS1-företagsprefix** på sidan **Parametrar för lagerstyrning**. Fältet **Värde** visar det värde som är angivet på sidan **Parametrar för lagerstyrning** och fältet **Längd** visar antalet tecken i värdet. Både fältet **Värde** och fältet **Längd** är skrivskyddade. |
     | Programidentifierare | I fältet **Värde** anger du en programidentifierare, som anges i relevant GS1-policy för den här typen av nummerserie. Ange till exempel *00* för SSCC eller *420* för BOL. Fältet **Längd** uppdateras automatiskt till längden på den identifierare som du har angett i fältet **Värde**. |
-    | Packtyp | För artiklar som kan identifieras tydligt lägger den här segmenttypen till ett fältvärde från den relevanta enhetsseriegruppen (från sidan **Enhetssekvensgrupper** ). (Det här beteendet matchar den befintliga logiken för ID-nummer.) För ID-nummer som innehåller flera lagerhållningsenheter (SKU) adderar denna segmenttyp *0* (noll) som standard. För den här segmenttypen är fältet **värde** alltid inställt på *P* och fältet **längd** är alltid inställt på *1*.|
-    | Kontrollsiffra | Den här segmenttypen lägger till en kontrollsiffra, som är en beräkning av modulo 10. (Det här beteendet matchar den befintliga logiken för ID-nummer.) För den här segmenttypen är fältet **värde** fältet alltid inställt på ett inskjutningstecken ( *^* ) och fältet **längd** är alltid inställt på *1*. |
+    | Packtyp | För artiklar som kan identifieras tydligt lägger den här segmenttypen till ett fältvärde från den relevanta enhetsseriegruppen (från sidan **Enhetssekvensgrupper**). (Det här beteendet matchar den befintliga logiken för ID-nummer.) För ID-nummer som innehåller flera lagerhållningsenheter (SKU) adderar denna segmenttyp *0* (noll) som standard. För den här segmenttypen är fältet **värde** alltid inställt på *P* och fältet **längd** är alltid inställt på *1*.|
+    | Kontrollsiffra | Den här segmenttypen lägger till en kontrollsiffra, som är en beräkning av modulo 10. (Det här beteendet matchar den befintliga logiken för ID-nummer.) För den här segmenttypen är fältet **värde** fältet alltid inställt på ett inskjutningstecken (*^*) och fältet **längd** är alltid inställt på *1*. |
 
 1. Om du vill visa ett exempel på det slutliga talformatet, kontrollerar du fältet **format** längst ned på snabbfliken **segment**.

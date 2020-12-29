@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 9332e45f7213ed815e4417969b617256778598db
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017815"
+ms.locfileid: "4438077"
 ---
 # <a name="wave-step-codes"></a>Koder för påfyllnadssteg
 
@@ -40,7 +40,7 @@ Påfyllnadskoderna för en viss typ av påfyllnadsstegtyp ställs in på en sepa
 
 ## <a name="setup-demo"></a>Demonstration av installation 
 
-För den här demonstrationen måste demonstrationsdata vara installerade och du måste använda **USMF** -demodataföretaget.
+För den här demonstrationen måste demonstrationsdata vara installerade och du måste använda **USMF**-demodataföretaget.
 
 ### <a name="enable-wave-step-codes"></a>Aktivera koder för påfyllnadssteg
 
@@ -59,7 +59,7 @@ Under inställningar görs valideringar under datauppgraderingen. Om uppgraderin
 
 När du har löst alla konflikter som har identifierats under valideringen kan du köra försök igen för att aktivera funktionen.
 
-När funktionen har aktiverats, kommer sidan **koder för påfyllnadssteg** ( **Lagerstyrning \> Inställning \> Påfyllnad \> Koder för påfyllnadssteg** ) tillgänglig. På den här sidan visas de koder för påfyllnadssteg som uppgraderades när funktionen organisationsomfattande kod för påfyllnadssteg aktiverades.
+När funktionen har aktiverats, kommer sidan **koder för påfyllnadssteg** (**Lagerstyrning \> Inställning \> Påfyllnad \> Koder för påfyllnadssteg**) tillgänglig. På den här sidan visas de koder för påfyllnadssteg som uppgraderades när funktionen organisationsomfattande kod för påfyllnadssteg aktiverades.
 
 ### <a name="create-new-wave-step-codes"></a>Skapa nya koder för påfyllnadssteg
 
@@ -89,7 +89,7 @@ Följande procedur garanterar att den påfyllnadsmall som du har skapat kommer a
 2. Gå till **Lagerstyrning \> Inställningar \> Lagerpåfyllnad \> Mallar för lagerpåfyllnad** och skapa en mall för lagerpåfyllnad.
 3. I mallen för lagerpåfyllnad väljer du koden för påfyllningssteg som du skapade för typen **Lagerpåfyllnad**.
 4. Gå till **Lagerstyrning \> Inställningar \> Påfyllnader \> Påfyllnadsmallar** och välj den våg som du tänker använda.
-5. I mallen, på snabbfliken **Metoder** , välj metoden **Lagerpåfyllnad**.
-6. I fältet **Kod för påfyllnadssteg** , välj koden för påfyllningssteg som du valde i lagerpåfyllnadsmallen.
+5. I mallen, på snabbfliken **Metoder**, välj metoden **Lagerpåfyllnad**.
+6. I fältet **Kod för påfyllnadssteg**, välj koden för påfyllningssteg som du valde i lagerpåfyllnadsmallen.
 
 Du utför dessa steg för varje juridisk person.

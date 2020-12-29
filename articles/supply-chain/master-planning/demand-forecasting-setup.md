@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6d0de588d54948d89f636cadeb66c3d9e6878015
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982879"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437912"
 ---
 # <a name="demand-forecasting-setup"></a>Behovsprognoser inställning
 
@@ -84,7 +84,7 @@ På fliken **allokeringsnycklar** kan du ställa in parametrar **Parametrar för
 - **Konfidensnivå i procent**: Ett konfidensintervall består av ett antal värden som fungerar som goda prognoser för efterfrågan. En 95-procentig konfidensnivå procenttal indikerar att det finns en 5-procentig risk att framtida efterfrågan faller utanför konfidensintervallet.
 - **Framtvinga säsongsvarianter**: anger om modellen ska använda en viss typ av säsongsvarianter. Gäller endast ARIMA och ETS. Alternativ: AUTO (standard), NONE, ADDITIVE, MULTIPLICATIVE.
 - **Prognosmodell**: alternativ: ARIMA, ETS, STL, ETS+ARIMA, ETS+STL, ALL. För att välja den modell som passar bäst, använd **ALL**.
-- **Maximalt prognostiserat värde**: anger det högsta värde som ska användas för prognoser. Format: + 1E[n] eller numerisk konstant.
+- **Maximalt prognostiserat värde**: anger det högsta värde som ska användas för prognoser. Format: +1E[n] eller numerisk konstant.
 - **Minimalt prognostiserat värde**: anger det minsta värde som ska användas för prognoser. Format: -1E[n] eller numerisk konstant.
 - **Värdeersättning saknas**: anger hur luckor i historiska data ska fyllas i. Alternativ: numeriskt värde, MEAN, PREVIOUS, INTERPOLATE LINEAR, INTERPOLATE POLYNOMIAL.
 - **Intervall för ersättning för saknat värde**: Anger om värdesubstitutionen endast gäller dataområdet för varje enskilt granularitetsattribut eller för hela datauppsättningen. Alternativ: GRANULARITY_ATTRIBUTE (standard), GLOBAL.

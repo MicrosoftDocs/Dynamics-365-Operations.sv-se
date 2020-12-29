@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f62381ca212e711fd61e12c9ec8f066ec124a933
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983034"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437908"
 ---
 # <a name="maintain-planned-orders"></a>Underhåll planerade order
 
@@ -32,7 +32,7 @@ ms.locfileid: "3983034"
 
 Detta avsnitt innehåller information om hur du hanterar planerade order. Det beskriver hur du kan uppdatera statusen för planerade order, bekräfta dem och filtrera för planerade order som har samma status som en vald planerad order.
 
-Du kan hantera planerade order från arbetsytan **Huvudplanering**, listan **Planerad order** eller listorna **Planerade produktionsorder**, **Planerade inköpsorder**och **Planerad överföring**. 
+Du kan hantera planerade order från arbetsytan **Huvudplanering**, listan **Planerad order** eller listorna **Planerade produktionsorder**, **Planerade inköpsorder** och **Planerad överföring**. 
 
 ## <a name="planned-order-status"></a>Status på planerad order
 Du kan använda fältet **Status** för att följa dina framsteg. Följande värden används:

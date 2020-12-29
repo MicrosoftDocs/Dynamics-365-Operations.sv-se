@@ -19,11 +19,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 8bb256514175166621847a5d40c16b9b749b1ddc
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016204"
+ms.locfileid: "4438033"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Ställ in mobila enheter för lagerarbete
 
@@ -44,7 +44,7 @@ För att skapa ett menyalternativ för en aktivitet eller en förfrågan, ange f
 > Beroende på det läge som du väljer för menyalternativet och om menyalternativet används för att utföra befintligt arbete, kan det finnas ytterligare fält tillgängliga för menyalternativet. Se avsnittet ”Ytterligare menyalternativ" senare i det här avsnittet för information om ytterligare fältval.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurera menyalternativ för aktiviteter och förfrågningar
-Om fältet **Metod** för ett menyalternativ anges som **Indirekt** , kan du skapa ett menyalternativ för att utföra en allmän aktivitet eller förfrågning som inte skapar arbete. Till exempel nyutskrift av registreringsskyltar och en förfrågan om artiklar på en plats. I följande tabell finns de alternativ som är tillgängliga.
+Om fältet **Metod** för ett menyalternativ anges som **Indirekt**, kan du skapa ett menyalternativ för att utföra en allmän aktivitet eller förfrågning som inte skapar arbete. Till exempel nyutskrift av registreringsskyltar och en förfrågan om artiklar på en plats. I följande tabell finns de alternativ som är tillgängliga.
 
 | Alternativ | Beskrivning |
 |---|---|
@@ -55,7 +55,7 @@ Om fältet **Metod** för ett menyalternativ anges som **Indirekt** , kan du ska
 | Registreringsskyltsförfrågan | Visa kvantiteten av artiklar på en registreringsskylt och platsen för registreringsskylten. |
 | Starta produktionsorder | Starta en produktionsorder. |
 | Produktionskassation | Ange kvantiteten av kassation som har skapats under produktionen för varje strukturlisterad. |
-| Sista produktionspall | Ange att den sista lastpallen har producerats för en tillverkningsorder, och att statusen för produktionsordern måste uppdateras till **Rapporterat som färdigt** -klienten. Status för råmaterial som inte förbrukats under produktionen ändras tillbaka från **Plockat** till **Har beställts** och artiklarna kan returneras till lagret. |
+| Sista produktionspall | Ange att den sista lastpallen har producerats för en tillverkningsorder, och att statusen för produktionsordern måste uppdateras till **Rapporterat som färdigt**-klienten. Status för råmaterial som inte förbrukats under produktionen ändras tillbaka från **Plockat** till **Har beställts** och artiklarna kan returneras till lagret. |
 | Artikelfråga | Skanna en artikel för att avgöra var den finns i lagerstället. Frågan returnerar alla platser och kvantiteter för den skannade artikeln. |
 | Skriv ut etikett på nytt | Skriva ut en ID-nummeretikett igen. |
 | Skapa registreringsskylt | Skapa en överordnad registreringsskylt genom att kombinera flera registreringsskyltar på samma plats. Detta alternativ är användbart om du flyttar flera registreringsskyltar samtidigt. När den överordnade registreringsskylten har tagits bort måste du utföra ett registreringsskyltsavbrott innan du kan plocka artiklar från varje registreringsskylt. <p></p>**Tips:** Om du vill flytta en överordnad registreringsskylt måste du använda en mobil enhet som har konfigurerats för att skapa arbete för förflyttningar. |
@@ -64,8 +64,8 @@ Om fältet **Metod** för ett menyalternativ anges som **Indirekt** , kan du ska
 | Förarens utcheckning | Registrera att en förare har slutfört hans eller hennes möte. |
 | Rensa nummerseriecache | Ta bort nummer i nummerserie från nummerserieminnet. Denna aktivitet utförs vanligtvis av en systemadministratör för att lösa cachelagringsproblem från mobila enheter. |
 | Ändra batchdisposition | Tillåt att en anställd anger en batchdispositionskod för en artikel och en batch. Detta val uppdaterar den dispositionskod som anges för batchen. |
-| Visa lista över öppet arbete | Visa en lista över tillgängligt arbete till en viss användare. Användaren kan sedan välja arbetet som ska utföras och styrs mot det. Den här listan är avsedd att visas på pekplattor med skärmstorlekar på 7 tum eller mer. När du väljer det här alternativet kommer menyalternativen **Redigera fråga** och **Fältlista** blir tillgängliga. Sidan **Redigera fråga** låter dig ställa in kriterier för det arbete som visas i listan. Sidan **Fältlista** låter dig välja vilka fält som visas i arbetslistan. Du kan till exempel minska antalet fält som visas så att användaren snabbare kan välja den lämpligaste arbetsuppgiften. På snabbfliken **Allmän** i fältet **Poster per sida** kan du också välja hur många arbetsposter per sida som ska visas. Om alternativet **Tillåt användare att filtrera arbete efter transaktionstyp** är markerat, kommer arbetslistan att inkludera en **Filtrera arbete** -kontroll i arbetsuppgiftslistan, som låter användaren filtrera per transaktionstyp. I arbetslistan kommer användaren endast att se arbete som de har behörighet till. Du måste kontrollera att användarna har behörighet för en eller flera användarriktade menykommandon som stöder de specifika arbetsklasstyperna som de ska ha åtkomst till. Behörigheter kontrolleras när en användare försöker utföra arbete i listan.|
-| Skapa överföringsorder från ID-nummer | Tillåter lagerarbetare att skapa och bearbeta överföringsorder direkt från lagerställeappen. Lagerarbetarna börjar med att välja destinationslager stället och kan sedan skanna en eller flera licensskyltar med hjälp av appen. När lagerarbetaren väljer **slutför order** , kommer ett batch-jobb att skapa de överföringsorder och orderrader som krävs baserat på den lagerbehållning som har registrerats för dessa registreringsskyltar. Mer information finns i [skapa överföringsorder från lagerställeapp](create-transfer-order-from-warehouse-app.md)
+| Visa lista över öppet arbete | Visa en lista över tillgängligt arbete till en viss användare. Användaren kan sedan välja arbetet som ska utföras och styrs mot det. Den här listan är avsedd att visas på pekplattor med skärmstorlekar på 7 tum eller mer. När du väljer det här alternativet kommer menyalternativen **Redigera fråga** och **Fältlista** blir tillgängliga. Sidan **Redigera fråga** låter dig ställa in kriterier för det arbete som visas i listan. Sidan **Fältlista** låter dig välja vilka fält som visas i arbetslistan. Du kan till exempel minska antalet fält som visas så att användaren snabbare kan välja den lämpligaste arbetsuppgiften. På snabbfliken **Allmän** i fältet **Poster per sida** kan du också välja hur många arbetsposter per sida som ska visas. Om alternativet **Tillåt användare att filtrera arbete efter transaktionstyp** är markerat, kommer arbetslistan att inkludera en **Filtrera arbete**-kontroll i arbetsuppgiftslistan, som låter användaren filtrera per transaktionstyp. I arbetslistan kommer användaren endast att se arbete som de har behörighet till. Du måste kontrollera att användarna har behörighet för en eller flera användarriktade menykommandon som stöder de specifika arbetsklasstyperna som de ska ha åtkomst till. Behörigheter kontrolleras när en användare försöker utföra arbete i listan.|
+| Skapa överföringsorder från ID-nummer | Tillåter lagerarbetare att skapa och bearbeta överföringsorder direkt från lagerställeappen. Lagerarbetarna börjar med att välja destinationslager stället och kan sedan skanna en eller flera licensskyltar med hjälp av appen. När lagerarbetaren väljer **slutför order**, kommer ett batch-jobb att skapa de överföringsorder och orderrader som krävs baserat på den lagerbehållning som har registrerats för dessa registreringsskyltar. Mer information finns i [skapa överföringsorder från lagerställeapp](create-transfer-order-from-warehouse-app.md)
 
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Ställ in menyalternativ för att skapa arbete för en annan arbetare eller process

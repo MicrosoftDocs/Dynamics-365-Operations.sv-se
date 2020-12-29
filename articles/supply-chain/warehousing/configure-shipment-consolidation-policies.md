@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 ms.openlocfilehash: adb88bbd29a89a1d18d7fd4781c2541ffb4e721f
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016227"
+ms.locfileid: "4438012"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurera konsolideringspolicyer för leverans
 
@@ -47,7 +47,7 @@ Varje scenario i det här avsnittet innehåller referenservärden och -poster so
 
 ## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Scenario 1: Konfigurera konsolideringspolicyer för standardleverans
 
-Det finns två situationer där du måste konfigurera det lägsta antalet standardpolicyer när du har aktiverat funktionen för *Konsolideringspolicyer för leverans* :
+Det finns två situationer där du måste konfigurera det lägsta antalet standardpolicyer när du har aktiverat funktionen för *Konsolideringspolicyer för leverans*:
 
 - Du uppgraderar en miljö som redan innehåller data.
 - Du ställer in en helt ny miljö.
@@ -59,7 +59,7 @@ När du startar den här proceduren bör funktionen *Konsolideringspolicyer för
 Följ de här stegen om du vill ställa in standardpolicyer för leveranskonsolidering i en miljö där lagerställen redan har konfigurerats för konsolidering av flera order.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Lagerställen**.
-1. I listan söker du efter och öppnar önskad post för lagerställe (t.ex. lager *24* i **USMF** -demodata).
+1. I listan söker du efter och öppnar önskad post för lagerställe (t.ex. lager *24* i **USMF**-demodata).
 1. I åtgärdsfönstret väljer du **Redigera**.
 1. På snabbfliken **Lageerställe** ställer du in alternativet **Konsolidera leverans vid släpp till lagerställe** som *Ja*.
 1. Upprepa steg 2 till och med 4 för alla andra lagerställen där konsolidering krävs.
@@ -68,14 +68,14 @@ Följ de här stegen om du vill ställa in standardpolicyer för leveranskonsoli
 1. Gå till **Lagerstyrnings \> Inställningar \> Släpp till lagerställe \> Policyer för leveranskonsolidering**. Du kanske måste uppdatera webbläsaren för att se det nya menyalternativet **Policyer för leveranskonsolidering** när du har aktiverat funktionen.
 1. I åtgärdsfönstret väljer du **Skapa standardinställningar** för att skapa följande policyer:
 
-    - En **CrossOrder** -policy för policytypen *Försäljningsorder* (förutsatt att du har minst ett lagerställe som har ställts in för att använda den tidigare konsolideringsfunktionen)
-    - En **standard** -policy för policytypen *försäljningsorder*
-    - En **standard** -policy för policytypen *Överföringsproblem*
-    - En **CrossOrder** -policy för policytypen *Överföringsproblem* (förutsatt att du har minst ett lagerställe som har ställts in för att använda den tidigare konsolideringsfunktionen)
+    - En **CrossOrder**-policy för policytypen *Försäljningsorder* (förutsatt att du har minst ett lagerställe som har ställts in för att använda den tidigare konsolideringsfunktionen)
+    - En **standard**-policy för policytypen *försäljningsorder*
+    - En **standard**-policy för policytypen *Överföringsproblem*
+    - En **CrossOrder**-policy för policytypen *Överföringsproblem* (förutsatt att du har minst ett lagerställe som har ställts in för att använda den tidigare konsolideringsfunktionen)
 
     > [!NOTE]
-    > - Båda **CrossOrder** -policyerna beaktar samma uppsättning fält som den tidigare logiken, förutom fältet för ordernumret. (Detta fält används för att konsolidera rader till levranser, baserat på faktorer som lagerställe, leveransens transportmetod samt adress.)
-    > - Båda **standard** -policyerna beaktar samma uppsättning fält som den tidigare logiken, inklusive fältet för ordernumret. (Detta fält används för att konsolidera rader till leveranser, baserat på faktorer som ordernummer, lagerställe, leveransens transportmetod samt adress.)
+    > - Båda **CrossOrder**-policyerna beaktar samma uppsättning fält som den tidigare logiken, förutom fältet för ordernumret. (Detta fält används för att konsolidera rader till levranser, baserat på faktorer som lagerställe, leveransens transportmetod samt adress.)
+    > - Båda **standard**-policyerna beaktar samma uppsättning fält som den tidigare logiken, inklusive fältet för ordernumret. (Detta fält används för att konsolidera rader till leveranser, baserat på faktorer som ordernummer, lagerställe, leveransens transportmetod samt adress.)
 
 1. Välj policyn **CrossOrder** för policytypen *Försäljningsorder* och välj sedan **Redigera fråga** i åtgärdsfönstret.
 1. I dialogrutan för frågeredigeraren kan du se att de lagerställen listas där alternativet **Konsolidera leverans vid släpp till lagerställe** är inställt på *Ja*. De inkluderas därför i frågan.
@@ -88,11 +88,11 @@ Följ de här stegen om du vill ställa in standardpolicyer för leveranskonsoli
 1. Gå till **Lagerstyrnings \> Inställningar \> Släpp till lagerställe \> Policyer för leveranskonsolidering**.
 1. I åtgärdsfönstret väljer du **Skapa standardinställningar** för att skapa följande policyer:
 
-    - En **standard** -policy för policytypen *försäljningsorder*
-    - En **standard** -policy för policytypen *Överföringsproblem*
+    - En **standard**-policy för policytypen *försäljningsorder*
+    - En **standard**-policy för policytypen *Överföringsproblem*
 
     > [!NOTE]
-    > Båda **standard** -policyerna beaktar samma uppsättning fält som den tidigare logiken, inklusive fältet för ordernumret. (Detta fält används för att konsolidera rader till leveranser, baserat på faktorer som ordernummer, lagerställe, leveransens transportmetod samt adress.)
+    > Båda **standard**-policyerna beaktar samma uppsättning fält som den tidigare logiken, inklusive fältet för ordernumret. (Detta fält används för att konsolidera rader till leveranser, baserat på faktorer som ordernummer, lagerställe, leveransens transportmetod samt adress.)
 
 ## <a name="scenario-2-configure-custom-shipment-consolidation-policies"></a>Scenario 2: Konfigurera konsolideringspolicyer för anpassad leverans
 
@@ -121,10 +121,10 @@ Använd funktionshantering om du vill aktivera funktionen - om du inte redan har
         - **Filterrubrik:** *Kod 4*
 
 1. Gå till **Produktinformationshantering \> Produkter \> Frisläppta produkter**.
-1. Öppna produkten med artikelnummer *M9200*. (Den produkt du väljer måste vara aktiverad för avancerade \[WMS\]-processer för lagerställen, och denna produkt är föraktiverad för WMS-processer i **USMF** -demodatan.)
+1. Öppna produkten med artikelnummer *M9200*. (Den produkt du väljer måste vara aktiverad för avancerade \[WMS\]-processer för lagerställen, och denna produkt är föraktiverad för WMS-processer i **USMF**-demodatan.)
 1. På snabbfliken **Lagerställe** anger du fältet **Kod 4** som *Brandfarlig*.
 1. Stäng sidan.
-1. Öppna produkten med artikelnummer *M9201*. (Den här produkten har också föraktiverats för WMS-processer i **USMF** -demodatan.)
+1. Öppna produkten med artikelnummer *M9201*. (Den här produkten har också föraktiverats för WMS-processer i **USMF**-demodatan.)
 1. På snabbfliken **Lagerställe** anger du fältet **Kod 4** som *Explosivt*.
 1. Stäng sidan.
 
@@ -166,7 +166,7 @@ Använd funktionshantering om du vill aktivera funktionen - om du inte redan har
 
 I det här exemplet ska du skapa en *kund- +läges* policy som kan användas i följande affärsfall:
 
-- Policyn kommer att fråga efter ett specifikt kundkonto ( *US-001* ) och ett specifikt leveranssätt ( *Flygfrakt* ).
+- Policyn kommer att fråga efter ett specifikt kundkonto (*US-001*) och ett specifikt leveranssätt (*Flygfrakt*).
 - Konsolidering med öppna leveranser är inaktiverade.
 - Konsolidering sker per order-ID. (Med andra ord sker separata leveranser per order, lagerställe och så vidare.)
 
@@ -181,10 +181,10 @@ Följ stegen nedan om du vill skapa en leveranskonsolideringspolicy för affärs
 
 1. Lämna alternativet **Konsolidera med öppna leveranser** inställt på *Nej*.
 1. Klicka på **Spara** i åtgärdsfönstret.
-1. På snabbfliken **Konsolideringsfält** , i listan **Återstående fält** , markerar du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
+1. På snabbfliken **Konsolideringsfält**, i listan **Återstående fält**, markerar du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
 1. Välj knappen **Lägg till** ![Högerpil](media/forward-button.png) om du vill flytta fältet till listan **Valda fält**.
 1. I åtgärdsfönstret väljer du **Redigera fråga**.
-1. I dialogrutan för frågeredigeraren, på fliken **Intervall** , letar du upp raden där fältet **Fält** är inställt på *Kundkonto* och ställer in fältet **Kriterium** för den raden som *USA – 001*.
+1. I dialogrutan för frågeredigeraren, på fliken **Intervall**, letar du upp raden där fältet **Fält** är inställt på *Kundkonto* och ställer in fältet **Kriterium** för den raden som *USA – 001*.
 1. Välj **Lägg till** för att lägga till en rad med följande inställningar i rutnätet:
 
     - **Register:** *Orderrader*
@@ -201,7 +201,7 @@ Följ stegen nedan om du vill skapa en leveranskonsolideringspolicy för affärs
 
 I det här exemplet kommer du att skapa en policy om *farligt gods* som kan användas i följande affärsfall:
 
-- Policyn kommer att fråga efter en specifik filterkod ( *farligt* ) och ett specifikt leveranssätt ( *Flygfrakt* ).
+- Policyn kommer att fråga efter en specifik filterkod (*farligt*) och ett specifikt leveranssätt (*Flygfrakt*).
 - Konsolidering med öppna leveranser är aktiverat.
 - Konsolidering sker mellan order. (Med andra ord sker separata leveranser per konto, lagerställe och så vidare, men bara inom den artikelgrupp som anges i frågan.)
 
@@ -216,10 +216,10 @@ Följ stegen nedan om du vill skapa en leveranskonsolideringspolicy för affärs
 
 1. Ange alternativet **Konsolidera med öppna leveranser** som *Ja*.
 1. Klicka på **Spara** i åtgärdsfönstret.
-1. På snabbfliken **Konsolideringsfält** , i listan **Återstående fält** , markerar du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
+1. På snabbfliken **Konsolideringsfält**, i listan **Återstående fält**, markerar du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
 1. Välj knappen **Lägg till** ![Högerpil](media/forward-button.png) om du vill flytta fältet till listan **Valda fält**.
 1. I åtgärdsfönstret väljer du **Redigera fråga**.
-1. I dialogrutan för frågeredigeraren, i fliken **Kopplingar** , expanderar och väljer du **Register \> Läs in information** i trädet.
+1. I dialogrutan för frågeredigeraren, i fliken **Kopplingar**, expanderar och väljer du **Register \> Läs in information** i trädet.
 1. Välj **Lägg till registerkoppling**.
 1. I relationsrutnätet som visas söker du efter samt markerar den rad där fältet **Relatioer** är inställt på *Artikelnummer för lagerställe (artikelnummer)* och väljer sedan **Välj**. 
 1. På fliken **Intervall** väljer du **Lägg till** för att lägga till en rad med följande inställningar i rutnätet:
@@ -232,7 +232,7 @@ Följ stegen nedan om du vill skapa en leveranskonsolideringspolicy för affärs
 1. Välj **OK** för att stänga dialogrutan.
 
 > [!NOTE]
-> För det här affärsärendet konsolideras alla orderrader där artiklar har en specifik filterkod (det vill säga där fältet **kod 4** är inställt på *Brandfarlig* ) kommer att konsolideras med andra artiklar av samma typ mellan olika order. Om det finns en öppen leverans för samma konto, lagerställe och grupp med artiklar, kommer de nya raderna att kopplas till den.
+> För det här affärsärendet konsolideras alla orderrader där artiklar har en specifik filterkod (det vill säga där fältet **kod 4** är inställt på *Brandfarlig*) kommer att konsolideras med andra artiklar av samma typ mellan olika order. Om det finns en öppen leverans för samma konto, lagerställe och grupp med artiklar, kommer de nya raderna att kopplas till den.
 
 ### <a name="create-example-policy-3"></a>Skapa exempelpolicy 3
 
@@ -253,12 +253,12 @@ Följ stegen nedan om du vill skapa en leveranskonsolideringspolicy för affärs
 
 1. Ange alternativet **Konsolidera med öppna leveranser** som *Ja*.
 1. Klicka på **Spara** i åtgärdsfönstret.
-1. På snabbfliken **Konsolideringsfält** , i listan **Återstående fält** , markerar du den rad där fältet **Fältnamn** är inställt på *Kundrekvisition*.
+1. På snabbfliken **Konsolideringsfält**, i listan **Återstående fält**, markerar du den rad där fältet **Fältnamn** är inställt på *Kundrekvisition*.
 1. Välj knappen **Lägg till** ![Högerpil](media/forward-button.png) om du vill flytta fältet till listan **Valda fält**.
 1. I listan **Återstående fält** väljer du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
 1. Välj knappen **Lägg till** ![Högerpil](media/forward-button.png) om du vill flytta fältet till listan **Valda fält**.
 1. I åtgärdsfönstret väljer du **Redigera fråga**.
-1. I dialogrutan för frågeredigeraren, på fliken **Intervall** , letar du upp raden där fältet **Fält** är inställt på *Kundkonto* och ställer in fältet **Kriterium** för den raden som *US-001*.
+1. I dialogrutan för frågeredigeraren, på fliken **Intervall**, letar du upp raden där fältet **Fält** är inställt på *Kundkonto* och ställer in fältet **Kriterium** för den raden som *US-001*.
 1. Välj **OK** för att stänga dialogrutan.
 
 > [!NOTE]
@@ -270,7 +270,7 @@ I det här exemplet kommer du att skapa en policy om *Kunder som tillåter konso
 
 - Policyn kommer att fråga efter en specifik orderpool i syfte att identifiera kunder som accepterar konsoliderade leveranser.
 - Konsolidering med öppna leveranser är inaktiverade.
-- Konsolidering sker mellan order med hjälp av de fält som väljs av den förvalda CrossOrder-policyn (för att replikera den tidigare **Konsolidera leverans vid släpp till lagerställe** ).
+- Konsolidering sker mellan order med hjälp av de fält som väljs av den förvalda CrossOrder-policyn (för att replikera den tidigare **Konsolidera leverans vid släpp till lagerställe**).
 
 - Du kan åsidosätta regeln på en försäljningsorder genom att välja en annan orderpool.
 
@@ -285,7 +285,7 @@ Följ stegen nedan om du vill skapa en leveranskonsolideringspolicy för affärs
 
 1. Lämna alternativet **Konsolidera med öppna leveranser** inställt på *Nej*.
 1. Klicka på **Spara** i åtgärdsfönstret.
-1. På snabbfliken **Konsolideringsfält** , i listan **Återstående fält** , markerar du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
+1. På snabbfliken **Konsolideringsfält**, i listan **Återstående fält**, markerar du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
 1. Välj knappen **Lägg till** ![Högerpil](media/forward-button.png) om du vill flytta fältet till listan **Valda fält**.
 1. I åtgärdsfönstret väljer du **Redigera fråga**.
 1. På fliken **Intervall** i dialogrutan för frågeredigerare väljer du **Lägg till** för att lägga till en rad med följande inställningar i rutnätet:
@@ -306,7 +306,7 @@ I det här exemplet kommer du att skapa en policy om *Lagerställen som tillåte
 
 - Policyn kommer att fråga efter en specifik orderpool i syfte att identifiera lagerställen som kan konsolidera leveranser.
 - Konsolidering med öppna leveranser är inaktiverade.
-- Konsolidering sker mellan order med hjälp av de fält som väljs av den förvalda CrossOrder-policyn (för att replikera den tidigare **Konsolidera leverans vid släpp till lagerställe** ).
+- Konsolidering sker mellan order med hjälp av de fält som väljs av den förvalda CrossOrder-policyn (för att replikera den tidigare **Konsolidera leverans vid släpp till lagerställe**).
 
 Vanligtvis kan detta affärsärendet åtgärdas med hjälp av de standardprinciper som du skapade i [Scenario 1](#scenario-1). Du kan emellertid även skapa likartade policyer manuellt genom att följa stegen nedan.
 
@@ -319,10 +319,10 @@ Vanligtvis kan detta affärsärendet åtgärdas med hjälp av de standardprincip
 
 1. Lämna alternativet **Konsolidera med öppna leveranser** inställt på *Nej*.
 1. Klicka på **Spara** i åtgärdsfönstret.
-1. På snabbfliken **Konsolideringsfält** , i fältet **Återstående fält** , markerar du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
+1. På snabbfliken **Konsolideringsfält**, i fältet **Återstående fält**, markerar du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
 1. Välj knappen **Lägg till** ![Högerpil](media/forward-button.png) om du vill flytta fältet till listan **Valda fält**.
 1. I åtgärdsfönstret väljer du **Redigera fråga**.
-1. I dialogrutan för frågeredigeraren, på fliken **Intervall** , letar du upp raden där fältet **Fält** är inställt på *Lagerställe* och ställer in fältet **Kriterium** för den raden som *61, 63*.
+1. I dialogrutan för frågeredigeraren, på fliken **Intervall**, letar du upp raden där fältet **Fält** är inställt på *Lagerställe* och ställer in fältet **Kriterium** för den raden som *61, 63*.
 1. Välj **OK** för att stänga dialogrutan.
 
 ### <a name="set-the-order"></a>Ställ in order

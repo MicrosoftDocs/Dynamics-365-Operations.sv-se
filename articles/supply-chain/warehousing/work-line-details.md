@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: bcb340b21e06b294a40784bf3a1da71b0daf7655
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015905"
+ms.locfileid: "4438046"
 ---
 # <a name="work-line-details"></a>Arbetsradsdetaljer
 
@@ -98,8 +98,8 @@ Följ dessa steg för att skapa lite plockningsarbete.
 1. I åtgärdsfönstret på fliken **Lagerställe** välj **Frisläpp till regel för lagerställe**. Systemet skapar en leverans, lägger till den i en ny last och skapar det begärda arbetet.
 1. Skapa en andra försäljningsorder för samma kundkonto och lagerställe som du använde för den första ordern. Lägg till följande två orderrader till denna order:
 
-    - **Rad 1:** Ställ in fältet **Artikelnummer** till _M9200_ , fältet **Kvantitet** till _25_ och fältet **Enhet** till _ea_.
-    - **Rad 2:** Ställ in fältet **Artikelnummer** till _M9202_ , fältet **Kvantitet** till _10_ och fältet **Enhet** till _ea_.
+    - **Rad 1:** Ställ in fältet **Artikelnummer** till _M9200_, fältet **Kvantitet** till _25_ och fältet **Enhet** till _ea_.
+    - **Rad 2:** Ställ in fältet **Artikelnummer** till _M9202_, fältet **Kvantitet** till _10_ och fältet **Enhet** till _ea_.
 
 1. Upprepa steg 6 till 8 för att reservera lagret för varje orderrad (ett i taget) och upprepa sedan steg 9 för att frisläppa ordern till lagerstället.
 
@@ -121,7 +121,7 @@ Följ dessa steg för att skapa lite plockningsarbete.
 1. Välj **Avbryt arbetsrad** om du vill öppna dialogruta **Kvantitet att avbryta**.
 1. I dialogrutan **Kvantitet att avbryta** ändrar du värdet i fältet **Kvantitet** för att ange den kvantitet som ska *dras av från* den kvantitet som redan har angetts för raden. Som standard visar fältet **kvantitet** hela kvantiteten.
 
-    - Om du avbryter hela kvantiteten kommer **Arbetsstatus** att ändras till _Annullerad_ , men fältet **Arbetskvantitet** visar fortfarande det ursprungliga värdet.
+    - Om du avbryter hela kvantiteten kommer **Arbetsstatus** att ändras till _Annullerad_, men fältet **Arbetskvantitet** visar fortfarande det ursprungliga värdet.
     - Om du endast avbryter en del av kvantiteten kommer fältet **Arbetskvantitet** att uppdateras och visa det nya värdet men värdet **Arbetsstatus** ändras inte.
 
 1. Välj **OK** om du vill tillämpa ändringen och stänga dialogrutan.

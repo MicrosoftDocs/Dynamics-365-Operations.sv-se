@@ -16,11 +16,11 @@ ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
 ms.openlocfilehash: 0f39bd2ffda492fce9b3fe51feafcbc8fd32391c
-ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763489"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437944"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Kvalitetsstyrning för lagerprocesser
 
@@ -107,7 +107,7 @@ När funktionen _Kvalitetshantering för lagerprocesser_ aktiveras sätts den ti
 | Sökgrupp | beskrivning |
 |---|---|
 | Grupp 1 | För varje kvalitetsassociation, kontrollera värdena **referenstyp**, **händelsetyp** och **körningsmatchning** mot artikeln. Om det finns en matchning mot källdokument raden går du vidare till grupp 2. |
-| Grupp 2 | För varje kvalitetsassociation, kontrollera värdet **artikelkod** (_tabell_, _grupp_ eller _alla_) mot artikeln. _Register_ är mer specifikt än _grupp_ och _gruppen_ är mer specifik än _alla_. Om det finns en matchning för _register_ (en specifik artikel) går du vidare till grupp 3. Om det inte finns någon matchning för _register_, sök efter en matchning för _grupp_. Om det inte finns någon matchning _för_gruppen _gäller_ alla. Om det finns en matchning går du vidare till grupp 3. |
+| Grupp 2 | För varje kvalitetsassociation, kontrollera värdet **artikelkod** (_tabell_, _grupp_ eller _alla_) mot artikeln. _Register_ är mer specifikt än _grupp_ och _gruppen_ är mer specifik än _alla_. Om det finns en matchning för _register_ (en specifik artikel) går du vidare till grupp 3. Om det inte finns någon matchning för _register_, sök efter en matchning för _grupp_. Om det inte finns någon matchning _för_ gruppen _gäller_ alla. Om det finns en matchning går du vidare till grupp 3. |
 | Grupp 3 | För varje kvalitetsassociation kontrollerar du värdena **kontokod** och **resurskod** mot artikeln. Den logik som används liknar den logik som används för värdet **artikelkod**. |
 | Grupp 4 | För varje kvalitetsassociation, kontrollera värdet **Tillämplig lagerställetyp** (_Endast kvalitetshantering för lagerprocesser_ eller _Alla_) mot artikeln. Om alternativet **aktivera kvalitetsorder för lagerprocesser** anges till _Ja_ för lagerstället i källdokumentet, och artikeln på källdokumentraden är inställd på att _använd lagerhanteringsprocesser_, kommer båda associationer där det finns en matchning för _Endast kvalitetshantering för lagerprocesser_ och associationer där det är en matchning för _Alla_ kommer att tillämpas parallellt, om båda finns. Om alternativet **aktivera kvalitetsorder för lagerprocesser** anges till _nej_ för lagret på källdokumentet och objektet på källdokumentraden är inställt på _Använd lagerhanteringsprocessen_, endast kvalitetsstyrning kommer att tillämpas. |
 

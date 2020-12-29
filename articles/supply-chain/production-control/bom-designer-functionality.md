@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2e845b05d77701191a267de45354c3da25bd7699
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979512"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437714"
 ---
 # <a name="bom-designer-functionality"></a>Funktionen Strukturlistedesigner
 
@@ -96,7 +96,7 @@ Filtret som används för strukturlistan och flödet, visas i strukturlistedesig
 När du använder strukturlistedesignern för att granska eller redigera strukturlistor som består av en eller flera nivåer av fiktiva element, omfattar flödet som är kopplat till den översta artikeln, vanligtvis den färdiga strukturlistans hierarki. För att förenkla översikten kan du låsa flödet på högsta nivån på skärmen genom att klicka på **Visa** &gt; **Lås flöde**. Om du vill låsa upp flödet, klicka på **Visa** &gt; **Lås upp flöde**.
 
 ## <a name="adding-and-editing-boms-and-bom-lines"></a>Lägga till och redigera strukturlistor och strukturlisterader
-Använd funktionerna **Strukturlisterader**eller **Strukturlista** för att ändra strukturlisteraderna eller strukturlistan. När du väljer en nod i trädet, bestämmer typen av nod vilka funktioner som är tillgängliga.
+Använd funktionerna **Strukturlisterader** eller **Strukturlista** för att ändra strukturlisteraderna eller strukturlistan. När du väljer en nod i trädet, bestämmer typen av nod vilka funktioner som är tillgängliga.
 
 | Funktion                            | beskrivning                                                                                               | Nodtyp och -villkor                                                                                                                                                                                                                                                                       |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

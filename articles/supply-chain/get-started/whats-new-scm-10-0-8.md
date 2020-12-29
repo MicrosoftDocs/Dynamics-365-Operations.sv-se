@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
 ms.openlocfilehash: 1b18965b41822c6ae6c263948c6605a229277165
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012331"
+ms.locfileid: "4437974"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.8 (februari 2020)
 
@@ -36,7 +36,7 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
-Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](https://docs.microsoft.com/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. Vissa av dessa funktioner kan också ha inkluderats i en tidigare stegvis version, men inte annonserats i föregående avsnitt *Nyheter* , så vi lägger till dem här. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
+Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](https://docs.microsoft.com/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. Vissa av dessa funktioner kan också ha inkluderats i en tidigare stegvis version, men inte annonserats i föregående avsnitt *Nyheter*, så vi lägger till dem här. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
 
 - [Ytterligare platszoner](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
 

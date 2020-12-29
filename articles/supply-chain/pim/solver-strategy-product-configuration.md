@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cb0fc054e0feec4c54c0bd916e01ce3a2a4cd903
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986561"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437899"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Lösarstrategi för produktkonfiguration
 
@@ -61,7 +61,7 @@ Följande tabell innehåller rekommendationer om problemlösarstrategin i olika 
 
 | Lösarstrategi      | Använd strategin i det här scenariot |
 |----------------------|-----------------------------------|
-| Standard              | **Standard**strategin har optimerats för att lösa modeller som utnyttjar registerbegränsningar. Studier av kundimplementation har visat att det här alternativet är den mest effektiva strategin i scenarier där registerbegränsningar är mycket vanliga. |
+| Standard              | **Standard** strategin har optimerats för att lösa modeller som utnyttjar registerbegränsningar. Studier av kundimplementation har visat att det här alternativet är den mest effektiva strategin i scenarier där registerbegränsningar är mycket vanliga. |
 | Minimala domäner först | Strategierna **Minsta domänen först** och **uppifrån och ned** hör nära samman. Studier av kundimplementation har visat att strategin **uppifrån och ned** är bättre än strategin **Minsta domän först**. Men strategin **Minsta domän först** behålls i produkten för bakåtkompatibilitet. Båda dessa problemlösarstrategier för har visat sig vara effektivare på att lösa modeller som innehåller flera aritmetiska uttryck och där ingen registerbegränsningar används. I vissa fall kan **standard** strategin vara bättre än båda de andra strategierna. Kom alltså ihåg att prova alla strategier. |
 | Ovansida ned             | Strategierna **Minsta domänen först** och **uppifrån och ned** hör nära samman. Studier av kundimplementation har visat att strategin **uppifrån och ned** är bättre än strategin **Minsta domän först**. Men strategin **Minsta domän först** behålls i produkten för bakåtkompatibilitet. Båda dessa problemlösarstrategier för har visat sig vara effektivare på att lösa modeller som innehåller flera aritmetiska uttryck och där ingen registerbegränsningar används. I vissa fall kan **standard** strategin vara bättre än båda de andra strategierna. Kom alltså ihåg att prova alla strategier. |
 | Z3                   | Vi rekommenderar att du använder strategin **Z3** som standardstrategin. Om du oroar dig för prestanda och skalbarhet kan du utvärdera andra strategier. |

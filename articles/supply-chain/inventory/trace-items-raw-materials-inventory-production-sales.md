@@ -19,11 +19,11 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: fa1be4970f1106bf4b87eeaa428bac07c645b4f5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213870"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437922"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Spåra artiklar och råmaterial i lager, produktion och försäljning
 
@@ -99,7 +99,7 @@ Resultatet av en spårning visas i kronologisk ordning i trädet på snabbfliken
 För att minska mängden information i spårningsdetaljerna, innehåller bara noden för den första instansen av artikeln eller råmaterialet information. Om en vald nod inte innehåller detaljer kan du visa noden som innehåller detaljer genom att klicka på **Gå till spårad rad**. Du kan sedan återvända till noden som du lämnat genom att klicka på **Gå tillbaka**.
 
 ## <a name="can-i-view-only-a-particular-type-of-document-for-example-can-i-view-only-production-orders-customers-or-vendors"></a>Kan jag visa endast en viss typ av dokument? Kan jag till exempel visa endast tillverkningsorder, kunder eller leverantörer?
-Ja, från spårningsdetaljerna du kan öppna listsidor som endast innehåller en viss typ av dokument eller transaktion. Du öppnar dessa sidor från **Spårning**-menyobjektet i åtgärdsfönstret, i grupperna **Artikel**. **Försäljning**, **Inköp**, **Produktion**och **Kvalitet**. Om du till exempel vill visa en lista med leverantörer i spårningsdetaljerna klickar du på **Spårning** &gt; **Inköp** &gt; **Leverantörer**. Listsidorna sammanfattar dokumenten eller transaktionerna från spårdetaljerna. Listsidorna **Pågående transaktioner**, **Väntande order** och **Försäljningsorder som inte har levererats** visar också annan information som inte inkluderas i spårdetaljerna. De visar alltid resultat för aktuellt datum, oavsett om ett datumintervall har angetts. I tabellen nedan beskrivs de ytterligare detaljer som dessa sidor kan innehålla.
+Ja, från spårningsdetaljerna du kan öppna listsidor som endast innehåller en viss typ av dokument eller transaktion. Du öppnar dessa sidor från **Spårning**-menyobjektet i åtgärdsfönstret, i grupperna **Artikel**. **Försäljning**, **Inköp**, **Produktion** och **Kvalitet**. Om du till exempel vill visa en lista med leverantörer i spårningsdetaljerna klickar du på **Spårning** &gt; **Inköp** &gt; **Leverantörer**. Listsidorna sammanfattar dokumenten eller transaktionerna från spårdetaljerna. Listsidorna **Pågående transaktioner**, **Väntande order** och **Försäljningsorder som inte har levererats** visar också annan information som inte inkluderas i spårdetaljerna. De visar alltid resultat för aktuellt datum, oavsett om ett datumintervall har angetts. I tabellen nedan beskrivs de ytterligare detaljer som dessa sidor kan innehålla.
 
 | Listor                    | Beskrivning                                                                                                                                                                                                                                                                                                                   |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

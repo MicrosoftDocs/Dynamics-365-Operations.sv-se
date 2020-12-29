@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1fed3de8741b375cf4992578db3e57d6e5a35a93
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980643"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437724"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-datum med fysiskt värde och markering
 
@@ -39,7 +39,7 @@ Du rekommenderas att göra en periodisk lagerstängning när du använder lagerm
 I följande exempel visas effekten av att använda LIFO-datum i tre konfigurationer:
 
 -   LIFO-datum utan alternativet **Inkludera fysiskt värde**
--   LIFO-datum med alternativet**Inkludera fysiskt värde**
+-   LIFO-datum med alternativet **Inkludera fysiskt värde**
 -   LIFO-datum med länkning
 
 ## <a name="lifo-date-without-the-include-physical-value-option"></a>LIFO-datum utan alternativet Inkludera fysiskt värde

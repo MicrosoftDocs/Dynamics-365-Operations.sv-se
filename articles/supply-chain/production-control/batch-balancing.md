@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: 2ef0a43480e547c6bd19d5f9b7377ed8b73425e7
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016895"
+ms.locfileid: "4438017"
 ---
 # <a name="batch-balancing"></a>Batchbalansering
 
@@ -115,7 +115,7 @@ Relationen mellan en aktiv beståndsdel och en kompletterande beståndsdel stäl
 
 Följ dessa steg för att ställa in relationer mellan beståndsdelar.
 
-1.  Välj **Produktinformationshantering**\>**Strukturlistor och formler**\>**Formler** , öppna en receptrad och välj sedan **Beståndsdelar** för att öppna sidan **Kompenseringsprincipen**.
+1.  Välj **Produktinformationshantering**\>**Strukturlistor och formler**\>**Formler**, öppna en receptrad och välj sedan **Beståndsdelar** för att öppna sidan **Kompenseringsprincipen**.
 
 2.  Markera raden som representerar en kompenseringsprincip och välj att kompensera den aktiva beståndsdelen.
 

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 045bb59642d766ac23939dee0900ea6911fe50fe
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3890043"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437447"
 ---
 # <a name="create-an-asset"></a>Skapa en tillgång
 
@@ -55,7 +55,7 @@ Den funktionsplats som tillgången är relaterad till visas i fältet **funktion
 
 Du kan redigera information om **tillgångstillverkare** och **tillgångsmodell** som används för att hantera reservdelar, alternativa reservdelar och standardvärden för jobbtyp. Se [tillgångstillverkare och modeller](../setup-for-objects/product-and-model.md) för mer information. Du kan också lägga till information om **Modellår** och **serienummer** om det behövs.
 
-**Aktuellt livscykeltillstånd** används för att definiera om tillgången är aktiv eller inaktiv. När du skapar en tillgång är scenen alltid inställd på den första etappen i tillgångsfasgruppen. När du är redo att aktivera en tillgång klickar du på **uppdatera tillgångsstatus**och väljer det livscykeltillstånd som du har definierat som "tillgång aktiv" och klickar på **OK**.
+**Aktuellt livscykeltillstånd** används för att definiera om tillgången är aktiv eller inaktiv. När du skapar en tillgång är scenen alltid inställd på den första etappen i tillgångsfasgruppen. När du är redo att aktivera en tillgång klickar du på **uppdatera tillgångsstatus** och väljer det livscykeltillstånd som du har definierat som "tillgång aktiv" och klickar på **OK**.
 
 **Obs!** när en tillgång är inställd på "inaktiv", är det inte längre möjligt att skapa arbetsorder för tillgången. Du kan inte heller schemalägga förebyggande underhållsjobb för en inaktiv tillgång.
 

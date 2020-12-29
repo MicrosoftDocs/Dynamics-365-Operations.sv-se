@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 ms.openlocfilehash: ac3ab25dc1355ee15e1209950ff0f3b3933b7095
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016872"
+ms.locfileid: "4438011"
 ---
 # <a name="consolidate-shipments-when-they-are-released-to-the-warehouse-by-using-automatic-release-of-sales-orders"></a>Konsolidera leveranser när dessa släpps till lagerstället med hjälp av automatiskt släpp av försäljningsorder
 
@@ -56,7 +56,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 #### <a name="sales-order-1-2"></a>Försäljningsorder 1-2
@@ -68,7 +68,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 #### <a name="sales-order-1-3"></a>Försäljningsorder 1-3
@@ -80,12 +80,12 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 1. Lägg till en andra orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0002* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0002* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
     - **Leveranssätt:** *Flygfrakt*
 
@@ -99,12 +99,12 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *M9200* (en artikel där filtret **Kod 4** har värdet *Brandfarligt* )
+    - **Artikelnummer:** *M9200* (en artikel där filtret **Kod 4** har värdet *Brandfarligt*)
     - **Kvantitet:** *1.00*
 
 1. Lägg till en andra orderrad med följande inställningar:
 
-    - **Artikelnummer:** *M9201* (en artikel där filtret **Kod 4** har värdet *Explosivt* )
+    - **Artikelnummer:** *M9201* (en artikel där filtret **Kod 4** har värdet *Explosivt*)
     - **Kvantitet:** *1.00*
     - **Leveranssätt:** *Flygfrakt*
 
@@ -118,12 +118,12 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *M9200* (en artikel där filtret **Kod 4** har värdet *Brandfarligt* )
+    - **Artikelnummer:** *M9200* (en artikel där filtret **Kod 4** har värdet *Brandfarligt*)
     - **Kvantitet:** *1.00*
 
 1. Lägg till en andra orderrad med följande inställningar:
 
-    - **Artikelnummer:** *M9201* (en artikel där filtret **Kod 4** har värdet *Explosivt* )
+    - **Artikelnummer:** *M9201* (en artikel där filtret **Kod 4** har värdet *Explosivt*)
     - **Kvantitet:** *1.00*
     - **Leveranssätt:** *Flygfrakt*
 
@@ -141,7 +141,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 ### <a name="create-order-set-5"></a>Skapa orderuppsättning 5
@@ -155,7 +155,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 #### <a name="sales-order-5-3"></a>Försäljningsorder 5-3
@@ -167,7 +167,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 ### <a name="create-order-set-6"></a>Skapa orderuppsättning 6
@@ -181,7 +181,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 #### <a name="sales-orders-6-3-and-6-4"></a>Försäljningsorder 6-3 och 6-4
@@ -193,7 +193,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 #### <a name="sales-orders-6-5-and-6-6"></a>Försäljningsorder 6-5 och 6-6
@@ -207,7 +207,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 #### <a name="sales-orders-6-7-and-6-8"></a>Försäljningsorder 6-7 och 6-8
@@ -221,7 +221,7 @@ Gå till **Kundreskontra \> Order \> Alla försäljningsorder** och skapa en sam
 
 1. Lägg till en orderrad med följande inställningar:
 
-    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4** -filter tilldelas till)
+    - **Artikelnummer:** *A0001* (en artikel som inget **Kod 4**-filter tilldelas till)
     - **Kvantitet:** *1.00*
 
 ## <a name="automatic-release-of-sales-orders-to-the-warehouse"></a>Automatiskt släpp av försäljningsorder till lagerstället
@@ -292,7 +292,7 @@ När du är klar ska du se att följande åtgärder har utförts:
 
 Följ den [grundläggande proceduren för frisläppning till lagerställe](#release-procedure) för att frisläppa försäljningsorder från orderuppsättning 4.
 
-När du är klar bör du se att en befintlig leverans (där fältet **Kundrekvisition** är inställt på *1* ) har uppdaterats. En ny rad lades till i den.
+När du är klar bör du se att en befintlig leverans (där fältet **Kundrekvisition** är inställt på *1*) har uppdaterats. En ny rad lades till i den.
 
 ### <a name="release-sales-orders-from-order-set-5"></a>Frisläpp försäljningsorder från orderuppsättning 5
 
@@ -300,7 +300,7 @@ Följ den [grundläggande proceduren för frisläppning till lagerställe](#rele
 
 När du är klar ska du se att följande åtgärder har utförts:
 
-- En befintlig leverans (där fältet **Kundrekvisition** är inställt på *1* ) har uppdaterats. En rad från försäljningsorder 5-3 (där fältet **Kundrekvisition** är inställt på *1* ) har lagts till i den.
+- En befintlig leverans (där fältet **Kundrekvisition** är inställt på *1*) har uppdaterats. En rad från försäljningsorder 5-3 (där fältet **Kundrekvisition** är inställt på *1*) har lagts till i den.
 - En ny leverans skapades, där rader från försäljningsorder 5-1 och 5-2 grupperas till en och samma leverans.
 
 ### <a name="release-sales-orders-from-order-set-6"></a>Frisläpp försäljningsorder från orderuppsättning 6

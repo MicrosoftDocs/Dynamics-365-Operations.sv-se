@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9bf5e92ad6bc62dd008a51aacca891cb7253a723
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018039"
+ms.locfileid: "4438019"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Skapa en upprepad inköpsorder
 
@@ -45,7 +45,7 @@ I det här avsnittet visas hur du skapar en upprepad inköpsorder (IO) genom att
     - Alternativet **Omräkna priser** använder de aktuella priserna och rabatterna snarare än att kopiera dessa från dokument som du kopierar annan information från.  
     - Alternativet **Kopiera exakt** skapar en exakt kopia av värdena i alla fälten i orderdokumentets rubrik och rader. Om det här alternativet inte har markerats, används förvalda värden för många av fälten som relateras till leverantören och produkterna, precis som om du skapade den nya ordern manuellt. Om till exempel den order som du kopierar från hade åsidosatt standardfakturakontot för leverantören, kopieras samma fakturakonto till din order. Om du inte har markerat alternativet **Kopiera exakt** ska istället standardfakturakontot för leverantören användas på din order.  
     - Alternativet **Radera inköpsrader** tar bort alla inköpsorderrader som redan finns på inköpsordern som du kopierar till, innan du tillämpar nya raderna. Använd det här alternativet försiktigt eftersom det tar bort alla befintliga rader utan ytterligare varning.  
-    - Om du använder alternativet **Kopiera orderrubrik** , behöver du inte manuellt skapa huvudinformationen på den nya ordern. Observera att det här alternativet leder till att förvalda värden används för fälten som är kopplade till leverantören. Om dokumentet som du kopierar från har icke-standardvärden som du vill kopiera, använder du alternativet **Kopiera exakt**.   
+    - Om du använder alternativet **Kopiera orderrubrik**, behöver du inte manuellt skapa huvudinformationen på den nya ordern. Observera att det här alternativet leder till att förvalda värden används för fälten som är kopplade till leverantören. Om dokumentet som du kopierar från har icke-standardvärden som du vill kopiera, använder du alternativet **Kopiera exakt**.   
     - Det finns olika dokumentkällor som du kan kopiera från och var och en har ett separat avsnitt på den här sidan. Till exempel låter avsnittet **Inköpsorder** dig att kopiera från befintliga inköpsorder.  
 
 8. Markera de rader som du vill kopiera till Urklipp i avsnittet **Inköpsorder**. Det går att välja ytterligare inköpsorderrader från andra inköpsorder och även att kopiera dem till din order. Det går också att lägga till rader från andra typer av inköpsdokument. De nästa få steg granskar de olika alternativen.  

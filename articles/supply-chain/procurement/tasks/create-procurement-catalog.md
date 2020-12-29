@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 20966291ce6297561514ce9d9f7e945859997351
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205882"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437612"
 ---
 # <a name="create-a-procurement-catalog"></a>Skapa en anskaffningskatalog
 
@@ -62,7 +62,7 @@ Det här ämnet förklarar hur du skapar en anskaffningskatalog. Den här uppgif
 3. Skriv ett värde i fältet **Namn**.
 4. Välj **OK**.
 5. Välj **Lägg till produkter**.
-6. Hitta och markera önskad post i listan. Du kan använda kategorihierarkin till vänster eller filtret högst upp i listan om du vill filtrera).  
+6. Hitta och markera önskad post i listan. Du kan använda kategorihierarkin till vänster eller filtret högst upp i listan om du vill filtrera.  
 7. Välj **Lägg till på rader**.
 8. Välj **OK**.
 

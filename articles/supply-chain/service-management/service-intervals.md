@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1027a6a1ddb1057ba039382d394522d6f9538a90
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979146"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437756"
 ---
 # <a name="service-intervals"></a>Serviceintervall
 
@@ -44,7 +44,7 @@ Det här exemplet illustrerar hur ett serviceintervall påverkar serviceavtalsra
 Först skapar du ett serviceavtal och anger **med serviceavtal** för alternativet **kombinera serviceorder**.
 
 1. Klicka på **Serviceavtal**
-2. För att skapa ett nytt serviceavtal använd **åtgärdsfönstret**på fliken **serviceavtal** och klicka på **serviceavtal** i gruppen för **nytt**.
+2. För att skapa ett nytt serviceavtal använd **åtgärdsfönstret** på fliken **serviceavtal** och klicka på **serviceavtal** i gruppen för **nytt**.
 3. Ange en beskrivning, välj ett projekt i fältet **projekt-ID** och ange ett datum i fältet **startdatum**.
 4. I fältet **kombinera serviceorder** väljer du **med serviceavtal**.
 

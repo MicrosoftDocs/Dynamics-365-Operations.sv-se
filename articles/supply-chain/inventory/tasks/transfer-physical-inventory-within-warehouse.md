@@ -18,11 +18,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 540ba2266ea74c36babce57670f84159c89018f1
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383444"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437921"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>Överför fysiskt lager i lagerstället
 
@@ -34,7 +34,7 @@ I den här proceduren beskrivs hur du kan skapa och bokföra en lageröverförin
 ## <a name="create-an-inventory-transfer-journal"></a>Skapa en lageröverföringsjournal
 1. I **navigeringsfönstret**, gå till **Lagerhantering > Journalposter > Artiklar > Överför**.
 2. Klicka på **Ny**.
-3. I fältet **Namn**anger eller väljer du ett värde.
+3. I fältet **Namn** anger eller väljer du ett värde.
 4. Klicka på **OK**. Det finns alternativ för att ange från- och tilldimensioner för varje journalrad. Dessa är nödvändiga för den här journaltypen. Du kan överföra artiklar till platser med olika regler. I det här exemplet överför vi en artikel inom samma lagerställe, från en ID-nummerstyrd plats till en plats som inte är id-nummerstyrd.   
 
 ## <a name="create-journal-lines"></a>Skapa journalrader

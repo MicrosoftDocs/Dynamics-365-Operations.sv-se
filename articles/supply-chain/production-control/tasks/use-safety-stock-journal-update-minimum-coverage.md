@@ -18,11 +18,11 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 0d69daf3d307ba72ff6017d91849e3d22bd0bd85
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210328"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437898"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Använd säkerhetslagerjournalen för att uppdatera minimumdisponering
 
@@ -41,7 +41,7 @@ I den här proceduren visas hur du beräknar minsta disponeringsförslag som bas
 ## <a name="create-a-safety-stock-journal"></a>Skapa en säkerhetslagerjournal
 1. I **navigeringfönstret**, gå till **Huvudplanering > Huvudplanering > Kör > Beräkning av säkerhetslager**.
 2. Klicka på **Ny**.
-3. I fältet **Namn**anger eller väljer du ett värde. Välj det säkerhetslagerjournalnamn som du har skapaat, t.ex. Material.  
+3. I fältet **Namn** anger eller väljer du ett värde. Välj det säkerhetslagerjournalnamn som du har skapaat, t.ex. Material.  
 4. Klicka på **Skapa rader.**
 5. I fältet **Från datum** anger du ett datum.  
 6. I fältet **Till-datum**, anger du ett datum.

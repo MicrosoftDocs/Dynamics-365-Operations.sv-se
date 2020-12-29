@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4b7d6e3dea1b3c1ef47490df678f639c036cdd5c
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889827"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437578"
 ---
 # <a name="asset-criticality-types"></a>Allvarlighetsgradtyper för tillgång
 
@@ -49,7 +49,7 @@ Om du vill ställa in allvarlighetsgrad kan du först skapa allvarlighetsgradtyp
 
 1. Välj **tillgångshantering** \> **inställningar** \> **allvarlighetsgrad för tillgång**.
 2. Välj **Ny** för att skapa en post.
-3. Beroende på hur önskad detaljnivå för allvarlighetsgrad för tillgång, gör relevanta val i **funktionsplats**, **tillgångstyp**, **tillverkare**, **modell**, **tillgång**, **jobbtypkategori**, **jobbtyp**, **jobbtypvariant**och **jobbkrav**.
+3. Beroende på hur önskad detaljnivå för allvarlighetsgrad för tillgång, gör relevanta val i **funktionsplats**, **tillgångstyp**, **tillverkare**, **modell**, **tillgång**, **jobbtypkategori**, **jobbtyp**, **jobbtypvariant** och **jobbkrav**.
 
     > [!NOTE]
     > När en allvarlighetsgrad för tillgång har valts går tillgångshanteraren igenom alla poster för tillgångens allvarlighetsgrad för att kontrollera om det finns en möjlig matchning. Den kontrollerar alltid den mest specifika kombinationen först. Med andra ord kontrollerar tillgångshantering först **jobbehov**. Om ingen matchning hittas kontrollerar den **jobbtypvariant**. Om ingen matchning hittas kontrollerar den **jobbtyp**, osv. Som du kan se i layouten på sidan innebär detta att, för att hitta den mest specifika kombinationen, kontrollerar tillgångshantering varje post från höger till vänster för en matchning. Om ingen matchning hittas används den standardpost som inte har några val.

@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
 ms.openlocfilehash: 84c4ec83ed16762e6c3c1a22425cf60e5b3ae8da
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017700"
+ms.locfileid: "4438088"
 ---
 # <a name="outbound-sorting"></a>Utgående sortering
 
@@ -104,7 +104,7 @@ Förpackningsstationen anses vara en plats. Lagerarbetare som loggar in på för
     - **Platsprofil-ID:** *sortering*
     - **Namn:** *sortering*
 
-1. Ange följande värden på snabbfliken **Allmänt** :
+1. Ange följande värden på snabbfliken **Allmänt**:
 
     - **Platsformat:** *ASRB* (gång-rack-hylla-fack)
     - **Platstyp:** *SORTERA*
@@ -141,16 +141,16 @@ I det här scenariot ska du skapa en mall för utgående sortering för att skap
     - **Lagerställe:** *62*
     - **Plats:** *SORT*
 
-1. Ange följande värden på snabbfliken **Allmänt** :
+1. Ange följande värden på snabbfliken **Allmänt**:
 
     - **Sortera verifieringstyp:** *positionsskanning*
     - **Skapa arbete vi positionsstängning:** *Ja*
 
-        Om detta alternativ är inställt på *Ja* , när positionen är stängd kommer arbetet att skapas för att flytta lager till den slutliga leveransplatsen. Om den är inställd på *Nej* , lager kommer omedelbart att väljas till beställningen när positionen är stängd.
+        Om detta alternativ är inställt på *Ja*, när positionen är stängd kommer arbetet att skapas för att flytta lager till den slutliga leveransplatsen. Om den är inställd på *Nej*, lager kommer omedelbart att väljas till beställningen när positionen är stängd.
 
     - **Befattningstilldelning:** *Automatisk*
 
-        I detta fält anges till *Manuell* , måste användaren ange vilken plats som lagret sorteras till. Om detta anges till *automatisk* kommer systemet automatiskt att leda lagret till en plats som när det är möjligt baseras på sorteringsmallens uppdelningar.
+        I detta fält anges till *Manuell*, måste användaren ange vilken plats som lagret sorteras till. Om detta anges till *automatisk* kommer systemet automatiskt att leda lagret till en plats som när det är möjligt baseras på sorteringsmallens uppdelningar.
 
 1. Välj **Spara** för att göra knappen **Redigera fråga** i åtgärdsfönstret tillgängligt.
 1. I åtgärdsfönstret väljer du **Redigera fråga**.
@@ -187,7 +187,7 @@ I det här scenariot ska du skapa en mall för utgående sortering för att skap
     - **Policyer för packning av behållare:** *Sortera*
     - **Beskrivning:** *Sortera*
 
-1. Ange följande värden på snabbfliken **Översikt** :
+1. Ange följande värden på snabbfliken **Översikt**:
 
     - **Lagerställe:** *62*
     - **Standardplats för sortering:** *SORTERA*
@@ -209,7 +209,7 @@ Skapa en ny förpackningsprofil som ska användas tillsammans med sorteringsfunk
     - **Policyer för packning av behållare:** *Sortera*
     - **Läge för behållar-ID:** *Auto*
     - **Behållartyp:** *Kartong-stor*
-    - **Skapa behållare automatiskt när behållare stängs:** avmarkerad (= *Nr* )
+    - **Skapa behållare automatiskt när behållare stängs:** avmarkerad (= *Nr*)
 
 1. Välj **Spara**.
 
@@ -241,7 +241,7 @@ Skapa en menyartikel för mobila enheter för att skapa lastpallar under sorteri
     - **Läge:** *Indirekt*
     - **Använd befintligt arbete:** *Nej*
 
-1. Ange följande värden på snabbfliken **Allmänt** :
+1. Ange följande värden på snabbfliken **Allmänt**:
 
     - **Aktivitetskod:** *Utgående sortering*
 
@@ -303,7 +303,7 @@ Nu måste du lägga till nya menyalternativ på menyn för mobila enheter.
     - **Sekvens:** *1*
     - **Namn:** *Baydoor*
 
-1. Ange följande värden på snabbfliken **Platsdirektiv** :
+1. Ange följande värden på snabbfliken **Platsdirektiv**:
 
     - **Arbetstyp:** *Placera*
     - **Plats:** *6*
@@ -338,7 +338,7 @@ Nu måste du lägga till nya menyalternativ på menyn för mobila enheter.
     - **Sekvens:** *2*
     - **Namn:** *Baydoor Multi*
 
-1. Ange följande värden på snabbfliken **Platsdirektiv** :
+1. Ange följande värden på snabbfliken **Platsdirektiv**:
 
     - **Arbetstyp:** *Placera*
     - **Plats:** *6*
@@ -368,7 +368,7 @@ Nu måste du lägga till nya menyalternativ på menyn för mobila enheter.
 1. Gå till **Lagerstyrning \> Inställningar \> Arbete \> Arbetsmallar**.
 1. Ändra fältet **Arbetsordertyp** till *Sorterad lagerplockning*.
 1. I åtgärdsfönstret, välj **Ny** för att skapa en arbetsmall.
-1. Ange följande värden på fliken **Översikt** :
+1. Ange följande värden på fliken **Översikt**:
 
     - **Sekvens:** *1*
     - **Kod för arbetsmall:** *Sortera*
@@ -422,7 +422,7 @@ Det här scenariot simulerar en situation där packade behållare automatiskt sk
 1. Medan den nya orderraden fortfarande är markerad på snabbfliken **försäljningsorderrader** väljer du menyn **lager** och **Reservation**.
 1. På sidan **Reservation** välj **Reservera parti** för att reservera den valda radens fullständiga kvantitet i lagerstället.
 1. Stäng sidan **Reservation** om du vill återgå till försäljningsordern.
-1. I åtgärdsfönstret **Lagerställe** , flik **åtgärder** , välj **Släpp till lagerställe**.
+1. I åtgärdsfönstret **Lagerställe**, flik **åtgärder**, välj **Släpp till lagerställe**.
 1. Du får ett informationsmeddelande som visar försändelsen och påfyllnad för ordern. Anteckna påfyllnadens ID och försändelsens ID-nummer.
 
 #### <a name="sales-order-2"></a>Försäljningsorder 2
@@ -440,20 +440,20 @@ Det här scenariot simulerar en situation där packade behållare automatiskt sk
     - **Artikel:** *A0001*
     - **Kvantitet:** *1*
 
-1. På snabbfliken **Raddetaljer** på fliken **leverans** , ange fältet **Leveranssätt** till *Flowe-ST*.
+1. På snabbfliken **Raddetaljer** på fliken **leverans**, ange fältet **Leveranssätt** till *Flowe-ST*.
 1. På snabbfliken **Försäljningsorderrader** välj **Lägg till rad** och ange sedan följande värden på den andra raden:
 
     - **Artikel:** *A0002*
     - **Kvantitet:** *1*
 
-1. På snabbfliken **Raddetaljer** på fliken **leverans** , ändra värdet för fältet **Leveranssätt** till *Air C-Air*.
+1. På snabbfliken **Raddetaljer** på fliken **leverans**, ändra värdet för fältet **Leveranssätt** till *Air C-Air*.
 1. På snabbfliken **Försäljningsorderrader** välj den första orderraden. I menyn **Lager** ovanför rutnätet, välj **Reservation**.
 1. På sidan **Reservation** välj **Reservera parti** för att reservera den valda radens fullständiga kvantitet i lagerstället.
 1. Stäng sidan **Reservation** om du vill återgå till försäljningsordern.
 1. På snabbfliken **Försäljningsorderrader** välj den andra orderraden. I menyn **Lager** ovanför rutnätet, välj **Reservation**.
 1. På sidan **Reservation** välj **Reservera parti** för att reservera den valda radens fullständiga kvantitet i lagerstället.
 1. Stäng sidan **Reservation** om du vill återgå till försäljningsordern.
-1. I åtgärdsfönstret **Lagerställe** , flik **åtgärder** , välj **Släpp till lagerställe**.
+1. I åtgärdsfönstret **Lagerställe**, flik **åtgärder**, välj **Släpp till lagerställe**.
 1. Du får ett informationsmeddelande som visar försändelsen och påfyllnad för ordern. Observera att två påfyllnads-ID-nummer och två leverans-ID-nummer har skapats, ett för varje leverans sätt för försäljningsorderraderna.
 
 #### <a name="get-the-work-ids-from-the-work-details"></a>Hämta arbets-ID från arbetsinformationen
@@ -470,7 +470,7 @@ Slutför det skapade arbetet genom att flytta dem till paketstationen med hjälp
 1. I menyn **utgående** välj **försäljningsplockning**.
 1. I fältet **ID** anger du det arbets-ID som skapades för försäljningsorder 1.
 1. Välj **OK**.
-1. På sidan **försäljningsorder – plocka** anger du en mål LP som skapades för försäljningsorder 1. Observera att plockplatsen ( *bulk-001* ), artikel ( *A0001* ) och kvantitet ( *2 stycken* ) visas.
+1. På sidan **försäljningsorder – plocka** anger du en mål LP som skapades för försäljningsorder 1. Observera att plockplatsen (*bulk-001*), artikel (*A0001*) och kvantitet (*2 stycken*) visas.
 1. Välj **OK**.
 1. Granska informationen på sidan **Inköpsorder – placera**. Fältet **Loc** ska visa att de plockade artiklarna kommer till platsen *Packa*.
 1. Välj **OK**.
@@ -481,7 +481,7 @@ Slutför det skapade arbetet genom att flytta dem till paketstationen med hjälp
 
 1. I fältet **ID** anger du det arbets-ID som skapades för försäljningsorder 2 där rad 1 har artikel *A0001*.
 1. Välj **OK**.
-1. På sidan **Försäljningsorder – Placera** anger du mål-LP. Observera att plockplatsen ( *bulk-001* ), artikel ( *A0001* ) och kvantitet ( *1 stycken* ) visas.
+1. På sidan **Försäljningsorder – Placera** anger du mål-LP. Observera att plockplatsen (*bulk-001*), artikel (*A0001*) och kvantitet (*1 stycken*) visas.
 1. Välj **OK**.
 1. Granska informationen på sidan **Inköpsorder – placera**. Fältet **Loc** ska visa att de plockade artiklarna kommer till platsen *Packa*.
 1. Välj **OK**.
@@ -490,7 +490,7 @@ Slutför det skapade arbetet genom att flytta dem till paketstationen med hjälp
 
 1. I fältet **ID** anger du det arbets-ID som skapades för försäljningsorder 2 där rad 2 har artikel *A0002*.
 1. Välj **OK**.
-1. På sidan **Försäljningsorder – Placera** anger du mål-LP. Observera att plockplatsen ( *bulk-002* ), artikel ( *A0001* ) och kvantitet ( *1 stycken* ) visas.
+1. På sidan **Försäljningsorder – Placera** anger du mål-LP. Observera att plockplatsen (*bulk-002*), artikel (*A0001*) och kvantitet (*1 stycken*) visas.
 1. Välj **OK**.
 1. Granska informationen på sidan **Inköpsorder – placera**. Fältet **Loc** ska visa att de plockade artiklarna kommer till platsen *Packa*.
 1. Välj **OK**.
@@ -516,7 +516,7 @@ Slutför det skapade arbetet genom att flytta dem till paketstationen med hjälp
 1. På sidan **Packa** i fältet **ID-nummer eller leverans** ange mål-LP för försäljningsorder 1. Markera sedan **tabb** eller **retur** på tangentbordet för att flytta från fältet.
 1. Klicka på **Ny behållare** i åtgärdsfönstret.
 1. Godkänn alla standardinställningar och välj **OK**. Gör en notering av behållar-ID.
-1. Ange följande värden på snabbfliken **artikelpackning** :
+1. Ange följande värden på snabbfliken **artikelpackning**:
 
     - **Kvantitet:** *1*
     - **Identifierare:** Artikel *A0001*
@@ -527,7 +527,7 @@ Slutför det skapade arbetet genom att flytta dem till paketstationen med hjälp
 1. Skapa en andra behållare för att lägga till den andra artikeln från LP för försäljningsorder 1 till en ny behållare.
 1. Klicka på **Ny behållare** i åtgärdsfönstret.
 1. Godkänn alla standardinställningar och välj **OK**. Gör en notering av behållar-ID.
-1. Ange följande värden på snabbfliken **artikelpackning** :
+1. Ange följande värden på snabbfliken **artikelpackning**:
 
     - **Kvantitet:** *1*
     - **Identifierare:** Artikel *A0001*
@@ -541,7 +541,7 @@ Slutför det skapade arbetet genom att flytta dem till paketstationen med hjälp
 1. På sidan **Packa** i fältet **ID-nummer eller leverans** ange mål-LP för rad 1 i försäljningsorder 2. Markera sedan **tabb** eller **retur** på tangentbordet för att flytta från fältet.
 1. Klicka på **Ny behållare** i åtgärdsfönstret.
 1. Godkänn alla standardinställningar och välj **OK**. Gör en notering av behållar-ID.
-1. Ange följande värden på snabbfliken **artikelpackning** :
+1. Ange följande värden på snabbfliken **artikelpackning**:
 
     - **Kvantitet:** *1*
     - **Identifierare:** Artikel *A0001*
@@ -552,7 +552,7 @@ Slutför det skapade arbetet genom att flytta dem till paketstationen med hjälp
 1. I fältet **ID-nummer eller leverans** ange mål-LP för rad 2 i försäljningsorder 2. Markera sedan **tabb** eller **retur** på tangentbordet för att flytta från fältet.
 1. Klicka på **Ny behållare** i åtgärdsfönstret.
 1. Godkänn alla standardinställningar och välj **OK**. Gör en notering av behållar-ID.
-1. Ange följande värden på snabbfliken **artikelpackning** :
+1. Ange följande värden på snabbfliken **artikelpackning**:
 
     - **Kvantitet:** *1*
     - **Identifierarfält:** artikel *A0002*
@@ -578,7 +578,7 @@ Om du vill visa behållardetaljer går du till **Hantering av distributionslager
 1. I fältet **LP/Con** ange det första behållar-ID som är associerat med försäljningsorder 1.
 1. Välj **OK**.
 1. Eftersom det inte finns några sorteringspositioner för närvarande måste du ange en. I fältet **Sorteringsposition-ID** ange *SP01*.
-1. Eftersom ingen LP för närvarande är associerad med sorteringspositionen *SP01* , måste du ange ett. I fältet **LP** anger du *PLP01*.
+1. Eftersom ingen LP för närvarande är associerad med sorteringspositionen *SP01*, måste du ange ett. I fältet **LP** anger du *PLP01*.
 1. Välj **OK**.
 1. Eftersom valideringen av sorteringsposition är aktiverad måste du ange sorteringspositionens ID igen. I fältet **Sorteringsposition-ID** ange *SP01*.
 1. Välj **OK**.
@@ -650,18 +650,18 @@ Du måste slutföra det sorterade lagerplockningsarbetet. När den är avslutad 
 1. I menyn **Utgående** välj **Lasta från sortering**.
 1. Ange mål-LP-ID från den första sorteringspositionen, *SP01*. Ange fältet **ID** till *PLP01*.
 1. Välj **OK**.
-1. På sidan **Sorterad lagerplockning: Plocka** visas det plockningsarbete som måste utföras. Plocka från platsen *SORTERA* och mål-LP *PLP01* , som har flera artiklar och kvantiteten *3*.
+1. På sidan **Sorterad lagerplockning: Plocka** visas det plockningsarbete som måste utföras. Plocka från platsen *SORTERA* och mål-LP *PLP01*, som har flera artiklar och kvantiteten *3*.
 1. Välj **OK**.
-1. På sidan **Sorterad lagerplockning: Placera** visas det placeringsarbete som måste utföras. Placera på platsen *Vikdörr* och mål-LP *PLP01* , som har flera artiklar och kvantiteten *3*.
+1. På sidan **Sorterad lagerplockning: Placera** visas det placeringsarbete som måste utföras. Placera på platsen *Vikdörr* och mål-LP *PLP01*, som har flera artiklar och kvantiteten *3*.
 1. Välj **OK**.
 
     Arbetet har slutförts.
 
 1. Ange målnummer-ID från den andra sorteringspositionen *SP02*. Ange fältet **ID** till *PLP02*.
 1. Välj **OK**.
-1. På sidan **Sorterad lagerplockning: Plocka** visas det plockningsarbete som måste utföras. Plocka från platsen *SORTERA* och mål-LP *PLP02* , som har flera artiklar och kvantiteten *1*.
+1. På sidan **Sorterad lagerplockning: Plocka** visas det plockningsarbete som måste utföras. Plocka från platsen *SORTERA* och mål-LP *PLP02*, som har flera artiklar och kvantiteten *1*.
 1. Välj **OK**.
-1. På sidan **Sorterad lagerplockning: Placera** visas det placeringsarbete som måste utföras. Placera på platsen *Vikdörr* och mål-LP *PLP02* , som har flera artiklar och kvantiteten *1*.
+1. På sidan **Sorterad lagerplockning: Placera** visas det placeringsarbete som måste utföras. Placera på platsen *Vikdörr* och mål-LP *PLP02*, som har flera artiklar och kvantiteten *1*.
 1. Välj **OK**.
 
     Arbetet har slutförts.

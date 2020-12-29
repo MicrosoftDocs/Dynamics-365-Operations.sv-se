@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 566036c6361194d910a0fc34bd5d72147585ec4f
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889923"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437574"
 ---
 # <a name="asset-lifecycle-states"></a>Tillgångs livscykeltillstånd
 
@@ -31,7 +31,7 @@ ms.locfileid: "3889923"
 
  
 
-Det här avsnittet beskriver livscykeltillstånd för tillgångar och livscykelmodeller i tillgångshantering. Tillgångs livscykeltillstånd används för att definiera om tillgången är aktiv eller inaktiv. Du kan till exempel ställa in tillgångs livscykeltillstånd som **skapad**, **aktiv**och **avslutad**.
+Det här avsnittet beskriver livscykeltillstånd för tillgångar och livscykelmodeller i tillgångshantering. Tillgångs livscykeltillstånd används för att definiera om tillgången är aktiv eller inaktiv. Du kan till exempel ställa in tillgångs livscykeltillstånd som **skapad**, **aktiv** och **avslutad**.
 
 > [!NOTE]
 > - Begär livscykeltillstånd är länkade till livscykeltillstånd för tillgångar. Därför när en begäran ändras till ett nytt livscykeltillstånd ändras tillgången som är kopplad till begäran till ett nytt livscykeltillstånd för tillgångar. Om livscykeltillståndet för en begäran till exempel ändras till **inkommande** ändras livscykeltillståndet för den kopplade tillgången till det livscykeltillstånd som har valts i fältet **inkommande livscykeltillstånd** på snabbfliken **Livscykeltillstånd för tillgångar** på sidan **Livscykelmodeller för tillgångar**. 

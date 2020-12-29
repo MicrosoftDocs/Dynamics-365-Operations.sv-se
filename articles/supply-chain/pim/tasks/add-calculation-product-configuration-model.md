@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: e703c6d505f1e2e77f454732301de7a6c130c58a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986513"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437683"
 ---
 # <a name="add-a-calculation-to-a-product-configuration-model"></a>Lägg till en beräkning i en produktkonfigurationsmodell
 
@@ -34,7 +34,7 @@ I den här proceduren visas hur du kan lägga till en ny beräkning i en produkt
 
 ## <a name="create-calculation-expression"></a>Skapa ett beräkningsuttryck
 1. Klicka på Redigera uttryck.
-2. I ConstraintBody fältet anger du If[CabinetFinish=="White", 10, 15].
+2. I ConstraintBody fältet anger du 'If[CabinetFinish=="White", 10, 15]'.
 3. Klicka på Validera.
 4. Klicka på Stäng.
 5. Klicka på OK.

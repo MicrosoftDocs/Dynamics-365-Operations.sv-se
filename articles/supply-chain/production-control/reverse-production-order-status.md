@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c7529e6c2bd7cb6b8386565c9f19075e56a65d3c
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826156"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437653"
 ---
 # <a name="reverse-the-production-order-status"></a>Återför produktionsorderstatus
 
@@ -32,7 +32,7 @@ ms.locfileid: "3826156"
 
 I det här avsnittet beskrivs hur du återför produktionsorderstatus. 
 
-Om du återför statusen för en produktionsorder tar själva ordern och alla operationer som är kopplade till flödena tillbaka till ett tidigare steg i produktionscykeln. Till exempel har en produktionsorder statusen **Tidsplanerad**och du ändrar tillbaka status till **Skapad**. I detta fall måste systemet först ändra statusvärdet till **Estimated**, som är den status som omedelbart föregår **Scheduled**. Den kan sedan ändra statusvärdet till den status som du vill **Skapad**. **Obs!** Om ordern har uppnått statusen **Rapportera som färdigt** kan du fortfarande vända det till en tidigare status. Du måste dock köra om uppskattning och grovplanering, finplanering eller båda typerna av planering om du vill uppdatera informationen på ordern. Detta steg krävs för att eventuella reservationer av återstående artikelförbrukning och operationsresursförbrukning också måste återställas. Resten av denna artikel förklarar vad som sker när du återför statusen för en produktionsorder på följande sätt:
+Om du återför statusen för en produktionsorder tar själva ordern och alla operationer som är kopplade till flödena tillbaka till ett tidigare steg i produktionscykeln. Till exempel har en produktionsorder statusen **Tidsplanerad** och du ändrar tillbaka status till **Skapad**. I detta fall måste systemet först ändra statusvärdet till **Estimated**, som är den status som omedelbart föregår **Scheduled**. Den kan sedan ändra statusvärdet till den status som du vill **Skapad**. **Obs!** Om ordern har uppnått statusen **Rapportera som färdigt** kan du fortfarande vända det till en tidigare status. Du måste dock köra om uppskattning och grovplanering, finplanering eller båda typerna av planering om du vill uppdatera informationen på ordern. Detta steg krävs för att eventuella reservationer av återstående artikelförbrukning och operationsresursförbrukning också måste återställas. Resten av denna artikel förklarar vad som sker när du återför statusen för en produktionsorder på följande sätt:
 
 -   Från **Uppskattad** till **Skapad**
 -   Från **Planerad** till **Uppskattad**

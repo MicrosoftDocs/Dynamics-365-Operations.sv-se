@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b7214575e1eb3289224446ae5dd9d40221f054f8
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978517"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437752"
 ---
 # <a name="production-posting"></a>Produktionsbokföring
 
@@ -47,7 +47,7 @@ När en produktionsorder rapporters som färdig, uppdateras kvantiteten av de sl
 Innan en produktionsorder avslutas beräknas faktiska kostnader för den kvantitet som producerats. Alla uppskattade kostnader för material, arbete och omkostnader återställs och ersätts med faktiska kostnader. Den sammanlagda kostnaden för den färdiga artikeln debiteras kontot Lagerinleverans och krediteras kontot Lagerutleverans. Om du markerar kryssrutan **Avsluta jobb** när du kör kostnadsberäkningen, ändras produktionsorderns status till **Avslutad**. Denna status förhindrar att ytterligare kostnader oavsiktligt bokförs på en slutförd produktionsorder. Du kan ange att värdet för antal fel som rapporteras under rapportering som färdigt ska fördelas till de goda kvantiteterna som rapporteras som färdiga. Alternativt kan du ange att värdet av felkvantiteter ska bokföras på ett dedikerat kassationkonto.
 
 ## <a name="controlling-the-level-of-ledger-posting"></a>Kontrollera nivån för redovisningsbokföring
-I **Produktionkontrollparametrar**kan du använda fältet **Redovisningsbokföring** för att ange nivån för redovisningsbokföring för produktionsprocesserna. Följande värden finns:
+I **Produktionkontrollparametrar** kan du använda fältet **Redovisningsbokföring** för att ange nivån för redovisningsbokföring för produktionsprocesserna. Följande värden finns:
 
 -   **Artikel och resurs** – Använd redovisningskonton som har ställts in i artikelgrupperna för råmaterial och färdiga produkter. PIA för tidsförbrukning hämtas från resursen eller resursgruppen från flödesoperationer.
 -   **Artikel och kategori** – Använd redovisningskonton som har ställts in i artikelgrupperna för råmaterial och färdiga produkter. PIA för tidsförbrukning tas från de kostnadskategorier som associeras med flödesoperationer.

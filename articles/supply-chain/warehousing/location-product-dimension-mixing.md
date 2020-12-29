@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 73519f3fe79d3d7d917d3044255f735640b8ccfd
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017171"
+ms.locfileid: "4437991"
 ---
 # <a name="location-product-dimension-mixing"></a>Blandning av produktstorlekar på plats
 
@@ -81,26 +81,26 @@ Varje plats på lagerstället måste ha en platsprofil associerad som beskriver 
 1. Välj **Frisläpp produkter** i åtgärdsfönstret.
 1. På sidan **Välj produkter att frisläppa** bekräftar du att produktnumret *B0001* finns i listan och väljer **Nästa**.
 1. Välj **Nästa** för att bekräfta de produktvarianter som ska frisläppas.
-1. På sidan **Välj företag att frisläppa till** , välj *USMF* och sedan **Nästa** för att bekräfta valet.
+1. På sidan **Välj företag att frisläppa till**, välj *USMF* och sedan **Nästa** för att bekräfta valet.
 1. På sidan **Bekräfta val** väljer du **slutför** för att slutföra frisläppandet.
 
     Du får ett meddelande Operationen är klar.
 
 ### <a name="update-a-released-product-in-the-usmf-company"></a>Uppdatera en frisläppt produkt i USMF företaget
 
-1. Kontrollera att du är inloggad på **USMF** -företaget.
+1. Kontrollera att du är inloggad på **USMF**-företaget.
 1. Gå till **produktinformationshantering \> produkter \> frisläppta produkter** för att avsluta skapa den frisläppta produkten.
 1. Sök och välj artikelnummer *B0001* om du vill öppna sidan **information om frisläppta produkter**.
 1. I åtgärdsfönstret väljer du **Redigera**.
 1. På snabbfliken **Allmänt** ser du till att fältet **artikelmodellgrupp** är inställt på *FIFO*.
-1. I åtgärdsfönstret, på fliken **Produkt** i gruppen **Konfigurering** , markerar du **Dimensionsgrupper**.
+1. I åtgärdsfönstret, på fliken **Produkt** i gruppen **Konfigurering**, markerar du **Dimensionsgrupper**.
 1. Ange följande värden.
 
     - **Lagringsdimensionsgrupp:** *Lager*
     - **Spårningsdimensionsgrupp:** *Ingen*
 
 1. Välj **OK**.
-1. I åtgärdsfönstret, på fliken **Produkt** i gruppen **Konfigurering** , markerar du **Reservationshierarki**.
+1. I åtgärdsfönstret, på fliken **Produkt** i gruppen **Konfigurering**, markerar du **Reservationshierarki**.
 1. Ställ in fältet **Reservationshierarki** till *Standard* och välj sedan **OK**.
 1. På snabbfliken **Allmänt** i avsnittet **Administration** ser du att dina val har uppdaterats.
 1. På snabbfliken **Inköp** i fältet **Pris** ange *10*.
@@ -153,7 +153,7 @@ Varje plats på lagerstället måste ha en platsprofil associerad som beskriver 
     - **Läge:** *arbete*
     - **Använd befintligt arbete:** *Nej*
 
-1. Ange följande värden på snabbfliken **Allmänt** :
+1. Ange följande värden på snabbfliken **Allmänt**:
 
     - **Arbetsskapandeprocess:** *Inköpsorderrad har inlevererats och inlagrats*
     - **Generera ID-nummer:** *Ja*
@@ -212,11 +212,11 @@ Du skapar en inköpsorder med tre rader: två rader för samma produktnummer men
 1. Logga in på lagerställeappen som en användare som är aktiverad för lagerstället *24*.
 1. Välj menyn **Inkommande**.
 1. Välj **Inleverans av inköpsorderrad**.
-1. Markera fältet **PONUM** , ange inköpsordernummer och bekräfta.
+1. Markera fältet **PONUM**, ange inköpsordernummer och bekräfta.
 1. Bekräfta registreringen genom att välja knappen bekräfta (✔) längst ned på sidan.
 1. Ange radnumret från inköpsordern som ska inlevereras. Markera fältet **LINENUM** och använd sedan det numeriska tangentbordet för att ange *1*.
 1. Bekräfta din inmatning.
-1. Ange den kvantitet som ska ta emot. Markera knappen plustecken ( **+** ) två gånger för att öka värdet i fältet **Kvt** till *2*.
+1. Ange den kvantitet som ska ta emot. Markera knappen plustecken (**+**) två gånger för att öka värdet i fältet **Kvt** till *2*.
 1. Registrera din registrering genom att välja knappen (✔) längst ned på sidan och bekräfta registreringen genom att välja knappen (✔) igen.
 1. Visa informationen på sidan **Inköpsorder: placera**. På den här sidan visas det arbete som har skapats för artikelinförseln (arbete 1).
 
@@ -238,4 +238,4 @@ Du skapar en inköpsorder med tre rader: två rader för samma produktnummer men
 1. Välj Meny-knappen överst på sidan (kallas ibland hamburger eller knappen hamburger) och välj sedan **Avbryt** för att avsluta **Inleverans av inköpsorderrad**.
 
 > [!TIP]
-> Du kan upprepa scenariot, men den här gången ändra **Storlek** - *Nej* under snabbfliken **tillåta blandning av produktdimensioner** på *BULK* **platsprofiler** , så att ingen av produkt dimensionerna kan blandas. I det här fallet, när du tar emot inköpsordern, kommer varje produktvariant att placeras på en ny plats.
+> Du kan upprepa scenariot, men den här gången ändra **Storlek** - *Nej* under snabbfliken **tillåta blandning av produktdimensioner** på *BULK* **platsprofiler**, så att ingen av produkt dimensionerna kan blandas. I det här fallet, när du tar emot inköpsordern, kommer varje produktvariant att placeras på en ny plats.

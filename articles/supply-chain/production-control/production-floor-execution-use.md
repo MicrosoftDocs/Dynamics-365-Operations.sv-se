@@ -16,11 +16,11 @@ ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012509"
+ms.locfileid: "4437978"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hur arbetare använder körningsgränssnittet för produktionsgolvet
 
@@ -41,7 +41,7 @@ I de återstående avsnitten i det här ämnet beskrivs hur arbetare interagerar
 
 ## <a name="all-jobs-tab"></a>Fliken alla jobb
 
-Fliken **Alla jobb** tillhandahåller en jobblista som visar alla produktionsjobb som har statusen *inte startad* , *stoppad* eller *startad*.
+Fliken **Alla jobb** tillhandahåller en jobblista som visar alla produktionsjobb som har statusen *inte startad*, *stoppad* eller *startad*.
 
 ![Fliken alla jobb](media/pfei-all-jobs-tab.png "Fliken alla jobb")
 
@@ -85,13 +85,13 @@ Arbetare kan starta ett jobb som har status. När en arbetare startar ett jobb m
 
 ## <a name="reporting-good-quantities"></a>Rapportera godkända kvantiteter
 
-När en arbetare slutför eller delvis slutför ett jobb kan de rapportera bra kvantiteter som producerats genom att välja ett jobb på fliken **Aktiva jobb** och flik **Rapportera progress**. Sedan i dialogrutan **Rapportera framsteg** anger arbetaren den goda kvantiteten med hjälp av det numeriska tangentbordet. Kvantiteten är tom som standard. När en kvantitet har angivits kan han eller hon uppdatera status för jobbet till *pågår* , *stoppad* eller *slutfört*.
+När en arbetare slutför eller delvis slutför ett jobb kan de rapportera bra kvantiteter som producerats genom att välja ett jobb på fliken **Aktiva jobb** och flik **Rapportera progress**. Sedan i dialogrutan **Rapportera framsteg** anger arbetaren den goda kvantiteten med hjälp av det numeriska tangentbordet. Kvantiteten är tom som standard. När en kvantitet har angivits kan han eller hon uppdatera status för jobbet till *pågår*, *stoppad* eller *slutfört*.
 
 ![Dialogrutan rapportera framsteg](media/pfei-report-progress-dialog.png "Dialogrutan rapportera framsteg")
 
 ## <a name="reporting-scrap"></a>Rapportera kassation
 
-När en arbetare slutför eller delvis slutför ett jobb kan de rapportera kassation genom att välja ett jobb på **Aktiva jobb** och flik **Rapportera kassation**. Sedan i dialogrutan **Rapportera kassation** anger arbetaren kassationskvantiteten med hjälp av det numeriska tangentbordet. Arbetaren väljer också en orsak ( *ingen* , *maskin* , *operatör* eller *material* ).
+När en arbetare slutför eller delvis slutför ett jobb kan de rapportera kassation genom att välja ett jobb på **Aktiva jobb** och flik **Rapportera kassation**. Sedan i dialogrutan **Rapportera kassation** anger arbetaren kassationskvantiteten med hjälp av det numeriska tangentbordet. Arbetaren väljer också en orsak (*ingen*, *maskin*, *operatör* eller *material*).
 
 ![Dialogrutan rapportera kassation](media/pfei-report-scrap-dialog.png "Dialogrutan rapportera kassation")
 
@@ -119,8 +119,8 @@ Indirekta aktiviteter är aktiviteter som inte är direkt relaterade till en pro
 
 Till exempel Shannon, en butiksarbetare i Contoso, vill delta i ett företagsmöte och möten betraktas som en indirekt aktivitet. Ett av följande två scenarier gäller:
 
-- **Shannon arbetar med ett eller flera aktiva jobb.** Shannon väljer **aktivitet** , identifierar aktiviteten (mötet) och bekräftar valet. Ett meddelande som visas med information om att hon har jobb som pågår. Med hjälp av meddelandet kan Shannon välja att slutföra eller stoppa jobb som hon arbetar med innan hon går till mötet.
-- **Shannon har inga aktiva jobb.** Shannon väljer **aktivitet** , identifierar aktiviteten (mötet) och bekräftar valet. Hon är nu registrerad som på mötet.
+- **Shannon arbetar med ett eller flera aktiva jobb.** Shannon väljer **aktivitet**, identifierar aktiviteten (mötet) och bekräftar valet. Ett meddelande som visas med information om att hon har jobb som pågår. Med hjälp av meddelandet kan Shannon välja att slutföra eller stoppa jobb som hon arbetar med innan hon går till mötet.
+- **Shannon har inga aktiva jobb.** Shannon väljer **aktivitet**, identifierar aktiviteten (mötet) och bekräftar valet. Hon är nu registrerad som på mötet.
 
 När Shannon bekräftar sina val i båda scenarierna, går hon antingen till inloggningssidan eller en sida som väntar på att hon ska bekräfta att hon har returnerat från sin indirekta aktivitet. Vilken sida som visas beror på konfigurationen av körningsgränssnittet för produktionsgolvet. (Mer information finns i [Konfigurera gränssnittet för körning av produktionsstyrning](production-floor-execution-configure.md).)
 

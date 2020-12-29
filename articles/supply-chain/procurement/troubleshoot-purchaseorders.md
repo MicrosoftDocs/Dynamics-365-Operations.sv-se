@@ -20,11 +20,11 @@ ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: 234458f865e37a2d962aee8ab218b9521847081d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018570"
+ms.locfileid: "4438091"
 ---
 # <a name="troubleshoot-purchase-orders"></a>Felsök inköpsorder
 
@@ -118,7 +118,7 @@ Detta beteende är av design. På inköpsorder visas produkten alltid på system
 
 ### <a name="issue-description"></a>Problembeskrivning
 
-En produkt har en godkänd leverantör som t.ex. är ett giltighetsdatum på 11 januari 2018 ( *01/11/2018* ) och ett utgångsdatum för *aldrig*. Om du försöker ändra giltighetsdatum till 10 januari 2018 ( *01/10/2018* ) eller 12 januari 2018 ( *01/12/2018* ) visas följande felmeddelande:
+En produkt har en godkänd leverantör som t.ex. är ett giltighetsdatum på 11 januari 2018 (*01/11/2018*) och ett utgångsdatum för *aldrig*. Om du försöker ändra giltighetsdatum till 10 januari 2018 (*01/10/2018*) eller 12 januari 2018 (*01/12/2018*) visas följande felmeddelande:
 
 > Det går inte att skapa en post i listan över godkända leverantörer (PdsApproveVendorList). Värdet för utgångsdatum måste vara större än eller lika med värdet effektiv.
 
@@ -130,7 +130,7 @@ Du kan bara utöka den period som leverantören är godkänd för. Följande reg
 - Om du vill ändra utgångsdatum så att det blir senare än någon av de befintliga perioderna måste giltighetsdatumet vara efter det senaste utgångsdatumet i någon befintlig post.
 - Om du vill minska den totala perioden som leverantören har godkänts för måste du ta bort eller ändra befintliga poster. Alternativt kan du använda växeln **trunkera** under importen. Den här växeln tar bort alla befintliga poster i registret för godkända leverantörer per artikel.
 
-I det här scenariot som beskrivs i ärendebeskrivningen, där en post har giltighetsdatumet *01/11/2018* och ett utgångsdatum för *aldrig* , kan du importera en ny post som har ett giltighetsdatum på *01/10/2018* och ett utgångsdatum för *aldrig*. Du kan dock inte förkorta perioden så att giltighetsdatumet uppdateras till *01/12/2018* via datahantering. Du måste göra ändringen genom användargränssnittet.
+I det här scenariot som beskrivs i ärendebeskrivningen, där en post har giltighetsdatumet *01/11/2018* och ett utgångsdatum för *aldrig*, kan du importera en ny post som har ett giltighetsdatum på *01/10/2018* och ett utgångsdatum för *aldrig*. Du kan dock inte förkorta perioden så att giltighetsdatumet uppdateras till *01/12/2018* via datahantering. Du måste göra ändringen genom användargränssnittet.
 
 ## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-nameisnt-synced"></a>När jag har ändrat leveransadressen i ett inköpsorderhuvud synkroniseras inte leveransnamnet.
 

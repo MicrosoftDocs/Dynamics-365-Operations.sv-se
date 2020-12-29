@@ -16,17 +16,17 @@ ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.12
 ms.openlocfilehash: e049af5e83343459546e1c3715415e9d7ffa9cab
-ms.sourcegitcommit: 7fec9dc5297ed6e687d4a0dff099922d59d6a830
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "3372769"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437580"
 ---
 # <a name="cost-accounting-service-home-page-private-preview"></a>Startsida för kostnadsredovisningstjänst (privat förhandsvisning)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-Internationella organisationer står under ökande press för att följa båda lokala regler (lokala allmänt accepterade redovisningsprinciper \[GAAP\]) och delade redovisningsstandarder (som US-GAAP, International Financial Reporting Standards) \[IFRS\], och internationella redovisningsstandarder \[IAS\]), även i situationer där de olika standarderna och förordningarna kan vara i konflikt.
+Internationella organisationer står under ökande press för att följa båda lokala regler (lokala allmänt accepterade redovisningsprinciper \[GAAP\]) och delade redovisningsstandarder (som US-GAAP, International Financial Reporting Standards \[IFRS\], och internationella redovisningsstandarder \[IAS\]), även i situationer där de olika standarderna och förordningarna kan vara i konflikt.
 
 Internationella organisationer som har dotterbolag i länder eller regioner där det finns en lokal valuta med flera förändringar kan krävas av den lokala regeringen för att redovisa och hantera lagret i den valutan. För att kunna följa med US-GAAP måste även dotterbolaget ta hänsyn till och hantera lagret i en stabil valuta, t.ex. amerikanska dollar (USD).
 

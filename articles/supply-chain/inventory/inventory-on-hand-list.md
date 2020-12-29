@@ -17,11 +17,11 @@ ms.author: chuzheng
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: Release 10.0.12
 ms.openlocfilehash: 33e5ccc454191e27e33835a05094b823ec54e891
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017401"
+ms.locfileid: "4438084"
 ---
 # <a name="inventory-on-hand-list"></a>Lagerbehållningslista
 
@@ -53,7 +53,7 @@ För varje matchande artikel innehåller rutnätet **behållning** följande kol
 | Totalt beställt | Den totala kvantiteten som är inkluderad på inkommande order eller som har en positiv kvantitet i olika lagerjournaler. |
 | Har beställts | Den totala kvantiteten som är inkluderad på utgående order eller som har en negativ kvantitet i olika lagerjournaler. |
 | Beställt reserverat | Total partikvantitet som reserverats för beställda inleveranser. Värdet i det här fältet representerar den totala kvantiteten av artiklar i avgående transaktioner som har statusen _Beställt reserverat_. Artiklar som reserveras som beställda finns inte fysiskt tillgängliga i lagret. Därför kan de inte plockas och levereras direkt. |
-| Tillgänglig för reservation | Den totala kvantiteten lagerbehållning som kan reserveras.<p>**Obs!** om kryssrutan **Reservera beställda artiklar** är markerad på sidan **Parametrar för lager och lagerstyrning** , inkluderar värdet i det här fältet förväntade inleveranser. Om kryssrutan avmarkeras utesluter värdet förväntat inleveranser.</p> |
+| Tillgänglig för reservation | Den totala kvantiteten lagerbehållning som kan reserveras.<p>**Obs!** om kryssrutan **Reservera beställda artiklar** är markerad på sidan **Parametrar för lager och lagerstyrning**, inkluderar värdet i det här fältet förväntade inleveranser. Om kryssrutan avmarkeras utesluter värdet förväntat inleveranser.</p> |
 | Totalt disponibelt | Total tillgänglig kvantitet.<p>**Total tillgänglig** är ett beräknat fält. Värdet motsvarar värdet **Tillgängliga fysiska** plus det **Totalt beställt** minus värdet **Har beställts**.</p> |
 
 ## <a name="apply-filters-to-find-the-records-that-youre-looking-for"></a><a name="filters-pane"></a>Använd filter för att hitta de poster du letar efter
@@ -61,7 +61,7 @@ För varje matchande artikel innehåller rutnätet **behållning** följande kol
 Använd fönstret **filter** när du vill filtrera lagerbehållningslistan så att den bara innehåller poster där fältvärdena matchar filterkriterierna. Om du vill definiera ett filter, följ dessa steg.
 
 1. I fönstret **Filter** hitta det fält som du vill filtrera på.
-2. Välj en logisk operatör i fältet under namnet på målfältet (till exempel *startar med* , *lika med* eller *större än* ).
+2. Välj en logisk operatör i fältet under namnet på målfältet (till exempel *startar med*, *lika med* eller *större än*).
 3. Ange eller välj det värde du vill söka efter.
 
 > [!IMPORTANT]
@@ -73,7 +73,7 @@ Använd fönstret **filter** när du vill filtrera lagerbehållningslistan så a
 
 Du kan ändra uppsättningen filter som är tillgängliga i fönstret **filter** genom att följa stegen nedan.
 
-- Om du vill ta bort ett filter från fönstret väljer du knappen **Stäng** ( **X** ).
+- Om du vill ta bort ett filter från fönstret väljer du knappen **Stäng** (**X**).
 - Om du vill lägga till ett filter väljer du **Lägg till** högst upp i fönstret **filter**. Dialogrutan **Lägg till filterfält** som visas visar en lista över tillgängliga fält. Den visar också information om datatypen och registret för varje fält. Använd kolumnrubrikerna för att filtrera och sortera listan efter behov och markera sedan kryssrutan för varje fält som du vill lägga till i rutan **filter**. När du är klar väljer du **infoga** för att tillämpa ändringarna.
 
 ## <a name="select-which-dimensions-to-show"></a><a name="dimensions"></a>Välj vilka dimensioner som ska visas
@@ -87,7 +87,7 @@ Om du vill anpassa urvalet av lagerdimensioner som visas följer du dessa steg.
     Dialogrutan **Dimensionsvisning** som visas visar varje dimension.
 
 2. Markera kryssrutan för varje dimension som du vill ta med i rutnätet.
-3. Om du vill att ditt val ska användas som standard nästa gång du öppnar sidan **behållningslistan** anger du alternativet **spara inställningar** till **ja**. Om du ställer in detta alternativ till **Nej** , används ditt val bara under den aktuella sessionen. Nästa gång du öppnar sidan används därför den aktuella standardmarkeringen.
+3. Om du vill att ditt val ska användas som standard nästa gång du öppnar sidan **behållningslistan** anger du alternativet **spara inställningar** till **ja**. Om du ställer in detta alternativ till **Nej**, används ditt val bara under den aktuella sessionen. Nästa gång du öppnar sidan används därför den aktuella standardmarkeringen.
 4. Välj **OK** om du vill tillämpa ändringen och stänga dialogrutan.
 
 ## <a name="filter-on-the-output-of-the-inventory-on-hand-list"></a><a name="grid-filters"></a>Filtrera efter utflödet av lagerbehållningslistan
@@ -145,4 +145,4 @@ Här är resultatet av utdata.
 |---|---|---|---|
 | IA0001 | 1 | 2 | 2 |
 
-Observera att inställningarna i fönstret **filter** gäller för den detaljerade (ej aggregerade) lager tabellen som visas i början av det här avsnittet. Det innebär att kriteriet som **tillgängligt fysiskt** \| **mindre än eller lika med** \| _1_ hittar två rader från tabellen (den första och tredje raden, som var och en visar ett **tillgängligt fysiskt** värde för _1_ ). I det här scenariot är dock sidan **behållningssidan** inte är inställd för att visa dimensionen **lagerställe**. Därför aggregerar den två ursprungliga raderna till en enda resulterande rad, eftersom båda raderna har identiska värden i alla dimensioner som visas. Denna rad verkar bryta mot filtreringskriteriet eftersom värdet **tillgängliga fysiska** visas som _2_. Resultatet är emellertid korrekt, eftersom inställningarna i **filter** -fönstret gäller källtabellen, inte den sammanställda tabell som visas på sidan **Behållningslista**.
+Observera att inställningarna i fönstret **filter** gäller för den detaljerade (ej aggregerade) lager tabellen som visas i början av det här avsnittet. Det innebär att kriteriet som **tillgängligt fysiskt** \| **mindre än eller lika med** \| _1_ hittar två rader från tabellen (den första och tredje raden, som var och en visar ett **tillgängligt fysiskt** värde för _1_). I det här scenariot är dock sidan **behållningssidan** inte är inställd för att visa dimensionen **lagerställe**. Därför aggregerar den två ursprungliga raderna till en enda resulterande rad, eftersom båda raderna har identiska värden i alla dimensioner som visas. Denna rad verkar bryta mot filtreringskriteriet eftersom värdet **tillgängliga fysiska** visas som _2_. Resultatet är emellertid korrekt, eftersom inställningarna i **filter**-fönstret gäller källtabellen, inte den sammanställda tabell som visas på sidan **Behållningslista**.

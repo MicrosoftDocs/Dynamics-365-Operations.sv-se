@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 86d396b069a354b8fa7e15793372a8293273d238
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017044"
+ms.locfileid: "4438057"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemstyrd arbetssekvensering
 
@@ -91,7 +91,7 @@ För att arbeta igenom scenariot genom att använda värdena som presenteras i d
 
     Platser läggs till i registerkoppling.
 
-1. På fliken **Sortering** , välj **Lägg till** om du vill lägga till en rad.
+1. På fliken **Sortering**, välj **Lägg till** om du vill lägga till en rad.
 1. Ställ in följande värden på denna nya rad:
 
     - **Tabell:** *Arbetsrader*
@@ -130,7 +130,7 @@ För att arbeta igenom scenariot genom att använda värdena som presenteras i d
     - **Villkor:** *!FAS*
 
         > [!IMPORTANT]
-        > Se till att du tar med utropstecknet ( *!* ) framför *FAS*.
+        > Se till att du tar med utropstecknet (*!*) framför *FAS*.
 
 1. Välj **OK** om du vill spara och stänga frågan.
 1. Välj **Spara**.
@@ -181,7 +181,7 @@ Därefter frigörs varje försäljningsorder till lagerstället så att det utg�
     - **Kvantitet:** *20*
 
 1. I menyn **Lager** ovanför rutnätet, välj **Reservation**.
-1. På sidan **Reservation** , välj **Reservera parti** för att reservera lager.
+1. På sidan **Reservation**, välj **Reservera parti** för att reservera lager.
 1. Stäng sidan **Reservation**.
 1. I åtgärdsfönstret på fliken **Lagerställe** väljer du **Släpp till lagerställe** för att skapa arbete för lagerstället.
 
@@ -300,7 +300,7 @@ Kom ihåg att den här inställningen sparas alla arbeten som har minst en rad d
 
 ## <a name="tips"></a>Tips:
 
-Systemstyrda frågor för arbetsserier *inkluderar*. Det är viktigt att du minns detta faktum för vissa inställningar. Du vill till exempel att en viss menyartikel endast ska behandla arbete där arbetsenheten är *ea* och du anger denna begränsning på fliken **intervall** i frågan. I det här fallet skickas alla arbeten där minst en arbetsrad har inställningen för arbetsenhet inställd på *ea* till arbetare. Därför kan det här arbetet även omfatta arbete där arbetsenheten har en annan arbetsenhet än *ea* (t.ex. *ruta* eller *lastpall* ). Frågan utesluter endast arbete där arbetsenheten inte har satts till *ea*.
+Systemstyrda frågor för arbetsserier *inkluderar*. Det är viktigt att du minns detta faktum för vissa inställningar. Du vill till exempel att en viss menyartikel endast ska behandla arbete där arbetsenheten är *ea* och du anger denna begränsning på fliken **intervall** i frågan. I det här fallet skickas alla arbeten där minst en arbetsrad har inställningen för arbetsenhet inställd på *ea* till arbetare. Därför kan det här arbetet även omfatta arbete där arbetsenheten har en annan arbetsenhet än *ea* (t.ex. *ruta* eller *lastpall*). Frågan utesluter endast arbete där arbetsenheten inte har satts till *ea*.
 
 I exemplet från det här scenariot har arbets-ID *4* också fångats in av frågan. När den skapades lades två rader till: en för 25 ea och en annan för 10 ea. Arbetet uppvisades fortfarande för användaren, eftersom minst en arbetsrad har en kvantitet som är mindre än 20 ea.
 

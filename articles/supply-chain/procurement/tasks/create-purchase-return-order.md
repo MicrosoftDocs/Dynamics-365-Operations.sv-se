@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 635e9ffb629a844bc5cccfa5d2a538ef0cf098d9
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018200"
+ms.locfileid: "4438020"
 ---
 # <a name="create-a-purchase-return-order"></a>Skapa en inköpsreturorder
 
@@ -32,7 +32,7 @@ I den här proceduren visas hur du skapar en inköpsreturorder med hjälp av åt
 ## <a name="create-a-new-purchase-return-order"></a>Skapa en ny inköpsreturorder.
 1. Gå till **Navigeringsfönster > Moduler > Anskaffning och källa > Inköpsorder > Alla inköpsorder**. Första steget är att skapa en ny inköpsorder som ska användas som inköpsreturorder.  
 2. Klicka på **Ny**.
-3. In the **Leverantörskonto** , ange "US-102".
+3. In the **Leverantörskonto**, ange "US-102".
 4. Klicka på **OK**.
 5. I **Åtgärdsfönstret** klickar du på **Köp**.
 6. Klicka på **Kreditfaktura**. Detta är sidan som du kan kopiera från en befintlig leverantörsfaktura till din returorder. Detta är samma sida som används för andra kopieringsåtgärder. Men eftersom du har öppnat den från åtgärden Kreditfaktura konfigureras sidan för att stödja skapandet av en returorder som motbokar leverantörsfakturor.  
@@ -54,17 +54,17 @@ I den här proceduren visas hur du skapar en inköpsreturorder med hjälp av åt
 17. Expandera avsnittet **Valda rader eller rubriker som ska kopieras**. Den här vyn visar en sammanfattning av alla dokument och rader som du har valt att kopiera till din order.  
 18. Komprimera avsnittet **Valda rader eller rubriker som ska kopieras**.
 19. Klicka på **OK**. Raden som du valde har nu kopierats till din inköpsreturorder. Fältet **Kvantitet** visar -10.   
-20. I avsnittet **Inköpsorderrad** , klicka på **Lager**.
+20. I avsnittet **Inköpsorderrad**, klicka på **Lager**.
 21. Klicka på **Markering**. Den orderrad som skapades är markerad mot lagertransaktionen från leverantörsfakturan. På så sätt ser du till att lagret som returneras till leverantören är samma som det lager som inlevererades från dem tidigare. Det finns vissa fall där markering inte uppstår, till exempel om lagret redan har markerats som Förbrukat, eller om produkten är en som inte använder markering.  
 
 22. Klicka på **OK**.
 
 ## <a name="confirm-and-record-the-shipment-of-goods"></a>Bekräfta och registrera leveransen av varor
 1. Klicka på **åtgärder > bekräfta**.
-2. I **åtgärdsfönstret** , klicka på **Ta emot**.
+2. I **åtgärdsfönstret**, klicka på **Ta emot**.
 3. Klicka på **Produktinleverans**.
     - Den här sidan används till att registrera produktinleveransen för inköpsorder samt för att bearbeta returnerade varor tillbaka till leverantören. Orderrader med en negativ kvantitet innebär att varor ska returneras till leverantören och dokumentet som kan skapas från den här sidan kan användas som följesedel för detta ändamål.   
     - Välj Beställd kvantiteten för det här exemplet i fältet **Kvantitet**. På så sätt ser du till att sändningen bearbetas för hela beställda kvantiteten som orderrader skapades med.   
-4. I fältet **Produktinleverans** , skriv ett värde. Det här fältet används för att ange en referens som ska användas som verifikation för produktinleveransjournalen.  
+4. I fältet **Produktinleverans**, skriv ett värde. Det här fältet används för att ange en referens som ska användas som verifikation för produktinleveransjournalen.  
 5. Klicka på **OK**. Varorna har nu registrerats som skickade på inköpsreturordern och en produktinleveransjournal har skapats. Du kan använda åtgärden Produktinleverans om du vill granska journalerna som skapats med inköpsordern och se vad som har inlevererats eller returnerats och när.  
 

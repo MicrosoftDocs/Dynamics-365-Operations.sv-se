@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 045b82af6f65b22e1c683f8de47a6df282711e6a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978145"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437444"
 ---
 # <a name="monitor-a-master-planning-run"></a>Övervaka en huvudplaneringskörning
 
@@ -36,7 +36,7 @@ På sidan **Visa huvudplaneringsförlopp** kan du visa detaljer om historisk huv
 Du använder funktionen genom att följa dessa steg.
 
 1. I arbetsytan **Funktionshantering** på fliken **Ny**, välj **Visualisering av huvudplaneringsförlopp** i listan. Om funktionen inte visas på fliken **Ny** tittar du på flikarna **Ej aktiverad** och **Alla**.
-1. Välj **Aktivera nu**. Du kan också välja **schema**och sedan välja den tidpunkt då funktionen ska aktiveras.
+1. Välj **Aktivera nu**. Du kan också välja **schema** och sedan välja den tidpunkt då funktionen ska aktiveras.
 
 Sidan **Visa huvudplaneringsförlopp** kan visa både historiska planeringsjobb och aktiva planeringsjobb. 
 
@@ -118,7 +118,7 @@ Färgen visas endast på den lägsta nivån i Gantt-diagrammet. Välj **expander
 
 ## <a name="run-master-planning-and-track-processing-time"></a>Kör huvudplanering och spårning av bearbetningstid
 
-1. Välj **Huvudplanering**på standardinstrumentpanelen.
+1. Välj **Huvudplanering** på standardinstrumentpanelen.
 1. I fältet **Plan**, ange eller välj ett värde.
 1. Välj **kör**.
 1. Ange alternativet **Spåra bearbetningstid** till **Ja**.

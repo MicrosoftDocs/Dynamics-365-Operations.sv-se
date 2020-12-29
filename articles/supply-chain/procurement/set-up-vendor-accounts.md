@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cc5229918c89657f3108e1c2314dff8251eae93d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018085"
+ms.locfileid: "4438044"
 ---
 # <a name="set-up-vendor-accounts"></a>Skapa leverantörskonton
 
@@ -75,7 +75,7 @@ Om flera juridiska personer i din organisation gör affärer med samma leverant�
 
 Om du vill slå ihop part-ID:n, följ då dessa steg.
 
-1.  På sidan **Global adressbok** , markera de adressboksposter som representerar leverantören i varje juridisk person som ska inkluderas i mappningen.
+1.  På sidan **Global adressbok**, markera de adressboksposter som representerar leverantören i varje juridisk person som ska inkluderas i mappningen.
 2.  I åtgärdsfönstret klickar du **Sammanfoga poster**.
 
 ## <a name="agreements"></a>Avtal
@@ -114,7 +114,7 @@ Om du måste göra betalningar till ett leverantörsbankkonto kan du ange inform
 ## <a name="ledger-accounts"></a>Huvudbokskonton
 Du kan ange de standardkonton som automatiskt visas i leverantörsfakturajournalerna för den angivna leverantören. Denna funktion kan vara praktisk om du vanligtvis betalar för samma typer av artiklar eller tjänster från samma leverantörer över tid. När du anger ett standardkonto kan du snabbt och effektivt ange journalposter i fakturajournalen. Standardkontona som du anger används inte för inköpsordrar eller för leverantörsfakturor som anges på sidan **Leverantörsfaktura**.  
 
-Du väljer standardkonton på sidan **Standardkontoinställning** , som du öppnar via fliken **Faktura** på leverantörsposten. De konton som du väljer här visas i den filtrerade listan över konton för leverantörskontot när du anger en journalpost. Du kan ange ett av kontona som ett standardkonto.
+Du väljer standardkonton på sidan **Standardkontoinställning**, som du öppnar via fliken **Faktura** på leverantörsposten. De konton som du väljer här visas i den filtrerade listan över konton för leverantörskontot när du anger en journalpost. Du kan ange ett av kontona som ett standardkonto.
 
 
 

@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 ms.openlocfilehash: 2f1dd5c743664e638c043b600ae7b0f6bce5ddcd
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986850"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437432"
 ---
 # <a name="consolidate-shipments-by-using-release-to-warehouse-from-the-load-planning-workbench"></a>Konsolidera leveranser genom att använda Frisläpp till lagerställe från workbench för lastplanering
 

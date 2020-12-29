@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 0127cc64688bc7878623b08ef143dfd040484ce0
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018386"
+ms.locfileid: "4438021"
 ---
 # <a name="set-up-consignment"></a>Ställ in försändelse
 
@@ -67,7 +67,7 @@ Dimensionen **Ägare** används för att separat information om vilket lager som
 ## <a name="inventory-ownership-change-journal"></a>Journal för lagerägarskapsändring
 Processen att ändra ägare för lagret från leverantören till mottagande juridisk person görs genom en Ändringsjournal för lageräganderätt. Inga förväntade lagertransaktioner skapas för journalen. De enda lagertransaktioner som skapas är de som relaterar till en bokförd journal. När journalen är bokförd:
 
--   Det leverantörsägda lagret sker med hjälp av **Äganderättändring** -referens med en **Såld** -status.
+-   Det leverantörsägda lagret sker med hjälp av **Äganderättändring**-referens med en **Såld**-status.
 -   Lagerbehållning tas emot av den juridiska person som förbrukar den genom att använda en lagertransaktion som uppdaterats för produktinleveransen på inköpsordern. Detta ställer in orderns status på **Inlevererat**. Inköpsorder som används för försändelse har fältet **Ursprung** inställt på **Försändelse**.
 
 Det går inte att uppdatera kvantiteten på rader för försändelseinköpsorder efter att ordern har skapats.
@@ -82,7 +82,7 @@ Leverantörsamarbetesgränssnittet har tre sidor som är relaterade till den ink
 -   **Behållning i försändelselager** - Visar information om försändelseartiklarna som de förväntas leverera och de artiklar som redan är fysiskt tillgängliga på kundsiten.
 
 ## <a name="inventory-owners"></a>Lagerägare
-Om du vill registrera det fysiska inkommande försändelselagret måste du definiera en leverantörsägare. Detta görs på sidan **Lagerägare**. När du väljer ett **Leverantörskonto** genererar detta förvalda värden för fälten **Namn** och **Ägare**. Värdet i fältet **Ägare** visas för leverantören, så du kanske vill ändra det om ditt leverantörkontonamn inte är svårt för externa kontakter att känna igen. Det är möjligt att redigera fältet **Ägare** , men bara fram till den punkt när du sparar posten **Lagerägare**. Fältet **Namn** fylls i med namnet på den part som leverantörskontot är kopplat till och detta kan inte ändras.
+Om du vill registrera det fysiska inkommande försändelselagret måste du definiera en leverantörsägare. Detta görs på sidan **Lagerägare**. När du väljer ett **Leverantörskonto** genererar detta förvalda värden för fälten **Namn** och **Ägare**. Värdet i fältet **Ägare** visas för leverantören, så du kanske vill ändra det om ditt leverantörkontonamn inte är svårt för externa kontakter att känna igen. Det är möjligt att redigera fältet **Ägare**, men bara fram till den punkt när du sparar posten **Lagerägare**. Fältet **Namn** fylls i med namnet på den part som leverantörskontot är kopplat till och detta kan inte ändras.
 
 [![lagerägare](./media/inventory-owners.png)](./media/inventory-owners.png)
 

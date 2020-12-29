@@ -19,11 +19,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: c69a9c9fd595280ba4f05a11409a3e672e4b1691
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017520"
+ms.locfileid: "4438060"
 ---
 # <a name="immediate-replenishment"></a>Omedelbar lagerpåfyllnad
 
@@ -47,7 +47,7 @@ Omedelbar påfyllning används under påfyllnadskörning om tilldelning misslyck
 
 ## <a name="set-up-immediate-replenishment"></a>Ange omedelbar lagerpåfyllnad
 
-- Gå till **lagerstyrning**\>**inställningar**\>**platsdirektiv** , och sedan till fliken **rader** i listan **omedelbar påfyllnadsmall** och välj en påfyllnadsmall för påfyllnadsbegäran.
+- Gå till **lagerstyrning**\>**inställningar**\>**platsdirektiv**, och sedan till fliken **rader** i listan **omedelbar påfyllnadsmall** och välj en påfyllnadsmall för påfyllnadsbegäran.
 
 Påfyllnadsmallen tillämpas om platsdirektivraden misslyckas att tilldelas en särskild måttenhet.
 

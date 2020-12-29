@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
 ms.openlocfilehash: 163c2e00bd0363303596a48199a833369e51b232
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012354"
+ms.locfileid: "4437976"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Vad är nytt och ändrat i Dynamics 365 Supply Chain Management (10.0.9 april 2020)
 
@@ -30,13 +30,13 @@ ms.locfileid: "4012354"
 
 Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management förhandsversion 10.0.9. Den här versionen har ett versionsnummer för 10.0.383 och är tillgänglig enligt följande:
 
-- **Förhandsversion** : februari 2020
+- **Förhandsversion**: februari 2020
 - **Allmän tillgänglighet (självuppdatering):** mars 2020
 - **Automatisk uppdatering:** april 2020
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
-Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](https://docs.microsoft.com/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. Vissa av dessa funktioner kan också ha inkluderats i en tidigare stegvis version, men inte annonserats i föregående avsnitt *Nyheter* , så vi lägger till dem här. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
+Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](https://docs.microsoft.com/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. Vissa av dessa funktioner kan också ha inkluderats i en tidigare stegvis version, men inte annonserats i föregående avsnitt *Nyheter*, så vi lägger till dem här. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
 
 - [Avancerad belastningsuppbyggnad under en våg](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)<br> - Mer information finns i [Avancerad lastuppbyggnad under påfyllnad](../warehousing/advanced-load-building-during-wave.md) .
 

@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3ae2826b54cb2ff516840443e01185a5342aedcc
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017147"
+ms.locfileid: "4437989"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Platsdirektiv för plockning i åldersfördelat lager
 
@@ -98,7 +98,7 @@ Demonstrationsdata kräver inställning och lagerjusteringar för att stödja sc
 
     Dessa steg lämnar lagret på två platser i demonstrationsdata. Varje plats har ett annat åldersdatum. Plats *FL-001* har ett åldersdatum för 15 april 15, 2017 och platsen *FL-002* har åldersdatum 29 januari, 2017. Båda platserna innehåller artikel *A0001*.
 
-    Om du vill visa dessa data går du till **Lagerhantering \> förfrågningar och rapporter \> behållningslistan** och filtrerar sedan på lagerställe *63* och artikel *A0001*. I raderna där fältet **Plats** anges till *FL-001* eller *FL-002* , välj en rad som har ett positivt värde för **Fysiskt lager** och välj sedan **Transaktioner** i åtgärdsfönstret. I fältet **fysiskt datum** visas ett datum som motsvarar ett av de tidigare angivna åldersdatumen.
+    Om du vill visa dessa data går du till **Lagerhantering \> förfrågningar och rapporter \> behållningslistan** och filtrerar sedan på lagerställe *63* och artikel *A0001*. I raderna där fältet **Plats** anges till *FL-001* eller *FL-002*, välj en rad som har ett positivt värde för **Fysiskt lager** och välj sedan **Transaktioner** i åtgärdsfönstret. I fältet **fysiskt datum** visas ett datum som motsvarar ett av de tidigare angivna åldersdatumen.
 
 ### <a name="scenario-1-set-up-and-use-fifo-location-aging"></a><a name="fifo-demo"></a>Scenario 1: Ställ in och använd FIFO-platsåldrande
 
@@ -120,7 +120,7 @@ FIFO-strategin söker efter platsen som innehåller det äldsta åldersdatumet o
 1. På sidan **Försäljningsorder** i åtgärdsfönstret väljer du **Lagerställe** i gruppen **Åtgärder** välj **Släpp till distributionslager**. Du får informativa meddelanden. Systemet skapar en leverans, lägger till den i en ny last och skapar det begärda arbetet.
 1. På snabbfliken **Försäljningsorderrader** på menyn **Lagerställe** välj **Arbetsdetaljer** för att öppna det arbete som har skapats för den här försäljningsordern. Observera att raden där värdet för **Arbetstyp** är *Plocka* visar ett värde för **Plats** för *FL-002*. Den här platsen innehåller det ID-nummer som har det äldsta åldersdatumet (FIFO).
 1. Välj **Lagerställe \> Leveransdetaljer**.
-1. På snabbfliken * **Allmänt** noterar du påfyllnad-ID, så att du kan använda det i scenario 2.
+1. På snabbfliken ***Allmänt** noterar du påfyllnad-ID, så att du kan använda det i scenario 2.
 
 ### <a name="scenario-2-set-up-and-use-lifo-location-aging"></a>Scenario 2: Ställ in och använd LIFO-platsåldrande
 
@@ -134,7 +134,7 @@ LIFO-strategin söker efter platsen som innehåller det nyaste åldersdatumet oc
 1. Gå till **lagerstyrning \> utgående påfyllningar \> leveranspåfyllningar \> alla påfyllningar**.
 1. Välj och öppna påfyllnad som innehåller ordern som du skapade för FIFO-scenariot.
 1. I åtgärdsfönstret på fliken **Arbete** välj **Avbryt** för att avbryta arbetet som du skapade för FIFO-scenariot.
-1. I Åtgärdsfönstret, på fliken **påfyllning** , i gruppen **påfyllning** , markerar du **bearbeta**.
+1. I Åtgärdsfönstret, på fliken **påfyllning**, i gruppen **påfyllning**, markerar du **bearbeta**.
 1. När processen är slutförd, i åtgärdsfönstret på fliken **Påfyllnad** i gruppen **Relaterad information** välj **Arbete** om du vill visa det arbete som har skapats för den här påfyllnaden.
 1. På sidan **Arbete** på fliken **Översikt** ska det finnas två rader. Välj raden där fältet **Arbetsstatus** är inställt på *Öppen*.
 1. Observera att raden där värdet för **Arbetstyp** är *Plocka* visar ett värde för **Plats** för *FL-001*. Den här platsen innehåller det ID-nummer som har det nyaste åldersdatumet (LIFO).

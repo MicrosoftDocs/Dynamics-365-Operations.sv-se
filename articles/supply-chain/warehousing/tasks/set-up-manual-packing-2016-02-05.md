@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 67e1e99b479752a027c60a878c57bd35d4219981
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017563"
+ms.locfileid: "4438052"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>Skapa manuell förpackning (februari 2016 och maj 2016)
 

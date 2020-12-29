@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: dd8cd2bb7b03c0415a5c5656f0e3ffada961973e
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017217"
+ms.locfileid: "4438098"
 ---
 # <a name="create-a-vendor-account"></a>Skapa ett leverantörskonto
 
@@ -33,7 +33,7 @@ I den här proceduren visas hur du skapar ett leverantörskonto och lägger till
 ## <a name="create-a-vendor-account"></a>Skapa ett leverantörskonto
 1. Gå till **navigeringsfönstret > Moduler > Anskaffning och källa > Leverantörer > Alla leverantörer**.
 2. Klicka på **Ny**.
-3. I fältet **Leverantörskonto** , skriv ett värde.
+3. I fältet **Leverantörskonto**, skriv ett värde.
     - Värdet kan fyllas i automatiskt. Om det gör det kan du hoppa över det här steget.  
     - Du kan skapa leverantörskonton för en person eller en organisation. Detta påverkar vilka fält som är tillgängliga. I det här exemplet ska du skapa ett leverantörskonto för en organisation.   
 4. I fältet **Namn** anger eller väljer du ett värde. Om leverantören är en redan registrerad part i systemet kan du använda listrutan och välja honom/henne i det här fältet, så ärver det nya leverantörskontot den adress och kontaktinformation som redan är registrerad.

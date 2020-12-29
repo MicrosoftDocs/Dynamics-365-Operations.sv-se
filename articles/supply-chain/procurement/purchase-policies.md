@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 00200bc79f83e9d072ff8220c89a6aaa70cb07a5
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018731"
+ms.locfileid: "4438102"
 ---
 # <a name="purchasing-policies-overview"></a>Inköpspolicyer – översikt
 
@@ -130,7 +130,7 @@ Inköpsorderskapande och efterfrågekonsolideringsregeln definierar policyregler
     -   **Bara om det inte finns något handelsavtal** – Priser och rabatter överförs från inköpsrekvisitionen bara om det inte finns något tillämpligt handelsavtal eller baspris. Om ett handelsavtal eller baspris finns för artikeln eller leverantören, är priser och rabatter omräknat baserat på handelsavtalet eller baspriset och gäller för inköpsordern. Om inget annat anges är detta standardbeteendet.
     -   **Alltid** – Priser och rabatter alltid överförs från inköpsrekvisitionen.
 
-    Du kan även tillåta beställaren att ändra metoden för pris- och rabattöverföringen för enskilda inköpsrekvisitionsrader, oavsett vilken pris/rabattöverföringsregel som definieras. Välj alternativet **Tillåt manuell åsidosättning per inköpsrekvisitionsrad** , om du vill aktivera den här funktionen.
+    Du kan även tillåta beställaren att ändra metoden för pris- och rabattöverföringen för enskilda inköpsrekvisitionsrader, oavsett vilken pris/rabattöverföringsregel som definieras. Välj alternativet **Tillåt manuell åsidosättning per inköpsrekvisitionsrad**, om du vill aktivera den här funktionen.
 -   På fliken **Överföring av artikelbeskrivning** kan du överföra artikelbeskrivningen från inköpsrekvisitionen, när den har hämtats från en anbudsförfrågan.
 -   På fliken **Pristolerans** kan du definiera pristoleransreglerna som används för att dirigera tillbaka de godkända inköpsrekvisitionerna genom granskningsprocessen, när priset på en artikel i en intern katalog ökar. Ange maxbeloppet som nettobeloppet i en radartikel i en inköpsrekvisition kan öka, mellan den tidpunkt då inköpsrekvisitionen godkänns och tid när inköpsordern skapas. Nettobeloppet beräknas genom att använda följande formel: (\[Kvantitet × (enhetspris – rabatt) ÷ prisenhet\] + inköpstillägg) × (100 – rabatt i procent) ÷ 100 Inköpsrekvisitionsrader som överstiger pristoleransen som du anger hålls för manuell hantering. Reglerna som du konfigurerar på fliken **Bearbetningsfel** bestämmer hur inköpsrekvisitionsraderna bearbetas.
 -   På fliken **Bearbetningsfel** kan du konfigurera den bearbetningsregeln som tillämpas på en inköpsrekvisition, om den inte klarar validering under skapandet av inköpsordern, på grund av ett leverantörfel eller ett pristoleransfel. Välj ett av följande alternativ:

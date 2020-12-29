@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 37da9d59e4e9cf84238f6798a1aa7de72ff91f02
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888851"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437561"
 ---
 # <a name="create-functional-locations"></a>Skapa funktionsplatser
 
@@ -45,7 +45,7 @@ För att kunna arbeta med funktionsplatser börjar du med att skapa två "katego
 När du använder funktionsplatser börjar du med att skapa en standardplats som ska användas när du skapar nya tillgångar. Den här funktionella platsen är den du väljer i fältet **tillgångshantering** > **inställningar** > **parametrar för tillgångshantering** > **tillgångar** länk > **funktionella standardplatser**. Den funktionella standardplatsen kan användas när du skapar nya tillgångar och du ännu inte har ställt in en funktionsplatsstruktur för dessa tillgångar.
 
 1. Välj **tillgångshantering** > **allmänt** > **funktionsplatser** > **alla funktionsplatser**.  
-2. I **alla funktionsplatser**väljer du **ny**.
+2. I **alla funktionsplatser** väljer du **ny**.
 3. Infoga ett ID i fältet **funktionsplats**, till exempel "0000" eller "standard", för att indikera att detta är en speciell funktionsplats.
 4. Infoga namn för den funktionella standardplatsen i fältet **namn**.
 5. Välj *inte* en överordnad i fältet **överordnad** – lämna fältet tomt.
@@ -113,7 +113,7 @@ När data om **plats**, **lagerställe**, **adress** och **ekonomiska dimensione
 
 Om ditt företag har flera funktionsplatser med liknande platsstrukturer, kan du använda funktionen Kopiera i Tillgångshantering för att snabbt skapa ett antal liknande platshierarkier. När du kopierar en specifik funktionsplats eller en hel struktur har den nya platsen eller strukturen samma namn som den du kopierade. När kopieringen är klar kan du enkelt ändra namnet eller andra inställningar på den nya funktionella platsen, förutsatt att livscykeltillståndet för den funktionella platsen som valts för den nya funktionella platsen tillåter det.
 
-1. I **alla funktionsplatser**väljer du den funktionella plats som du vill kopiera. Du kan till exempel välja en övre plats (överordnad) om du vill kopiera hela funktionella platsstrukturen inklusive underplatser.
+1. I **alla funktionsplatser** väljer du den funktionella plats som du vill kopiera. Du kan till exempel välja en övre plats (överordnad) om du vill kopiera hela funktionella platsstrukturen inklusive underplatser.
 2. Välj knappen **kopiera funktionsplatsstruktur**. Den plats du valde på listsidan visas i fältet **kopiera från**.
 3. Infoga namnet på den nya platsen i fältet **ny funktionsplats**.
 4. I fältet **överordnad att klistra in under** kan du bara infoga ett överordnat ID om den plats du skapar ska ingå i en befintlig funktionsplatsstruktur.
@@ -126,7 +126,7 @@ Om ditt företag har flera funktionsplatser med liknande platsstrukturer, kan du
 
 En funktionsplats med relaterade underplatser kan tas bort om inga tillgångar har installerats på någon av de funktionsplatser som du försöker ta bort och om det aktuella livscykeltillståndet för funktionsplats tillåter det.
 
-1. I **alla funktionsplatser**väljer du den funktionella plats som du vill ta bort.
+1. I **alla funktionsplatser** väljer du den funktionella plats som du vill ta bort.
 2. Om det behövs, uppdatera den funktionella platsen till ett livscykeltillstånd för funktionsplats som tillåter borttagning av en funktionsplats.
 3. Välj **Ta bort**.
 

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ec150adb35eb0600844245b14cbec9e9632ab337
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889563"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437725"
 ---
 # <a name="move-replace-and-install-assets"></a>Flytta, ersätt och installera tillgångar
 
@@ -59,7 +59,7 @@ Använd funktionen **Flytta tillgång** för att flytta en tillgång antingen ti
 Använd funktionen **Ersätt tillgång** i samband med reparationer, renovering eller permanent ersättning av en utsliten tillgång genom en ny tillgång. Den här funktionen används för att ersätta underordnade tillgångar i en tillgångsstruktur. För överordnade tillgångar (dvs. tillgångar som för närvarande inte har en överordnad tillgång), görs denna ersättning på en funktionsplats. Mer information om hur du ersätter överordnade tillgångar på en funktionsplats finns i [Installera tillgångar på funktionsplatser](../functional-locations/install-objects-on-functional-locations.md).
 
 > [!NOTE]
-> Om en reparationsverkstad är relaterad till din produktionsavdelning kan du skapa funktionsplatser som **reparation**, **kassation**och **lagring** för att hantera reparation och utbyte av tillgångar.
+> Om en reparationsverkstad är relaterad till din produktionsavdelning kan du skapa funktionsplatser som **reparation**, **kassation** och **lagring** för att hantera reparation och utbyte av tillgångar.
 
 1. Välj **Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillgångar** eller **Aktiva tillgångar**.
 2. Välj den underordnade tillgången som ska bytas ut i listan. Om tillgången har underordnade tillgångar kan du också byta ut dessa tillgångar.

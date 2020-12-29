@@ -18,11 +18,11 @@ ms.author: mkirknel
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
 ms.openlocfilehash: 525f21d076027f1bf339e59fd0e346706044839c
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216515"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437496"
 ---
 # <a name="asset-management-mobile-workspace"></a>Mobil arbetsyta för tillgångshantering
 
@@ -178,7 +178,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
     4. Välj **Klar**.
 
 6. Välj **Lägg till artiklar** om du vill skapa artikelregistreringar.
-    1. Välj **Artikelnummer**från sökningen
+    1. Välj **Artikelnummer** från sökningen
     2. Välj kategorin från **Plats**.
     3. Ange **kvantitet** av artiklar som ska förbrukas.
     4. Välj **Klar**.

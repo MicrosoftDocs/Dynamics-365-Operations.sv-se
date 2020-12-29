@@ -18,11 +18,11 @@ ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
 ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
-ms.sourcegitcommit: 92611ec276da6f7211d722cfcd66739b612296dc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3382807"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437956"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Måttenhetskonvertering per produktvariant
 
@@ -59,7 +59,7 @@ Så här konfigurerar du en produktmall till stöd för enhetskonvertering per v
     - **Produkt** – Om du väljer detta värde kan du ange en enhetskonvertering för produktmallen. Den enhetskonverteringen kommer att användas som reserv för alla produktvarianter som ingen enhetskonvertering definieras för.
     - **Produktvariant** – Om du väljer detta värde kan du ange en enhetskonvertering för en specifik produktvariant. Använd fältet **Produktvariant** för att välja varianten.
 
-    ![Lägga till en ny enhets konvertering](media/uom-new-conversion.png "Lägga till en ny enhetskonvertering")
+    ![![Lägga till en ny enhets konvertering](media/uom-new-conversion.png "Lägga till en ny enhetskonvertering")](media/uom-new-conversion.png "Adding a new unit conversion")
 
 1. Använd de andra fälten som tillhandahålls för att ställa in din enhetskonvertering.
 1. Klicka på **OK** om du vill spara den nya enhetskonverteringen.

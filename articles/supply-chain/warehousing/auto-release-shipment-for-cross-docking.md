@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: b86fe2f3ea4321dbe598233018934187ba0d713a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983989"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437467"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatisk frisläppning av försändelse för direktutleverans
 
@@ -117,7 +117,7 @@ Om du vill begränsa vilka typer av platser där direktlevererade färdiga varor
 
 #### <a name="location-directives"></a>Platsdirektiv
 
-En standardprocess för artikelinförsel för färdiga varor kräver platsdirektivet **Placera** för att vägleda produktionen av plockade produktionskvantiteter till ett vanligt lagringsutrymme. På samma sätt måste du ställa in platsdirektivet direktleverans **Placera**om du vill att jobbet ska ställa in den färdiga kvantiteten på en angiven avgående plats som bevarar försändelsen av den associerade försäljningsordern.
+En standardprocess för artikelinförsel för färdiga varor kräver platsdirektivet **Placera** för att vägleda produktionen av plockade produktionskvantiteter till ett vanligt lagringsutrymme. På samma sätt måste du ställa in platsdirektivet direktleverans **Placera** om du vill att jobbet ska ställa in den färdiga kvantiteten på en angiven avgående plats som bevarar försändelsen av den associerade försäljningsordern.
 
 För direktleverans, som för vanlig artikelinförsel av färdiga varor, behöver du inte skapa ett platsdirektiv för åtgärden välj arbetsplats eftersom utleveransplatsen anges. Den här utleveransplatsen förväntas också vara angiven som standardinställd utleveransplats på en av de resursbaserade posterna (dvs. resursen, resursgruppsrelationen eller resursgruppen) eller som en standardplats för produktion av färdiga varor för en lokal.
 

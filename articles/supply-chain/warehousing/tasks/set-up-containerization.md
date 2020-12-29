@@ -18,11 +18,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 1f961dc379ceeeae9bbceec1baaa9b9be21316f3
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017792"
+ms.locfileid: "4437999"
 ---
 # <a name="set-up-containerization"></a>Definiera skapande av behållare
 
@@ -34,12 +34,12 @@ I den här avsnittet beskriver hur du automatiserar skapandet av behållare för
 ## <a name="set-up-a-wave-template"></a>Ställa in en påfyllnadsmall
 1. I navigeringsfönstret, gå till **moduler > lagerstyrning > inställningar > påfyllnader > påfyllnadsmallar**.
 2. Välj **Ny**.
-3. I fältet **Påfyllnadsmallnamn** , skriv ett värde.
+3. I fältet **Påfyllnadsmallnamn**, skriv ett värde.
 4. Skriv ett värde i fältet **Beskrivning av påfyllnadsmall**.
 5. i fältet **Plats** anger eller väljer du ett värde.
 6. Ange eller välj ett värde i fältet **Lagerställe**.
 7. Visa avsnittet **Metoder**. Fönstret **Valda metoder** visar metoderna för den valda påfyllnadsmallstypen. Påfyllnadsmallen måste inkludera metoden för skapande av behållare.  
-8. I fältet **Kod för påfyllnadssteg** , skriv ett värde. Ange en Kod för påfyllnadssteg för den tillagda metoden, som kan vara en kod. Det går att lägga till metod mer än en gång och tilldela olika koder för påfyllnadssteg. Om du vill göra detta väljer du **Kan upprepas för den här metoden** på sidan **Metoder för bearbetning av påfyllnad**.  
+8. I fältet **Kod för påfyllnadssteg**, skriv ett värde. Ange en Kod för påfyllnadssteg för den tillagda metoden, som kan vara en kod. Det går att lägga till metod mer än en gång och tilldela olika koder för påfyllnadssteg. Om du vill göra detta väljer du **Kan upprepas för den här metoden** på sidan **Metoder för bearbetning av påfyllnad**.  
 9. Välj **Spara**.
 10. Stäng sidan.
 
@@ -50,7 +50,7 @@ I den här avsnittet beskriver hur du automatiserar skapandet av behållare för
 4. Ange ett nummer i fältet **Taravikt**.
 5. Ange ett värde i fältet **Högsta vikt**.
 6. Välj ett nummer i fältet **Volym**.
-7. I fältet **Längd** , ange ett tal.
+7. I fältet **Längd**, ange ett tal.
 8. Ange ett värde i fältet **Bredd**.
 9. Ange ett värde i fältet **Höjd**.
 10. I fältet **Beskrivning** anger du ett värde.
@@ -72,10 +72,10 @@ I den här avsnittet beskriver hur du automatiserar skapandet av behållare för
 2. Välj **Ny**. Behållareversionmallen baseras på vilket process för skapande av fraktbehållare som utförs. Varje behållareversionmall definierar en process för skapande av fraktbehållare som ska användas i en påfyllnadsmall. Alternativet **Redigera fråga** låter dig definiera de villkor som den valda mallen ska bearbeta. Till exempel vill du kanske bara att köra skapande av fraktbehållare för specifika kunder, produkter, eller lagerställen och du kan lägga till motsvarande frågeintervall i mallen. Fältet **Kod för påfyllnadssteg** är hur en behållarversionsmall länkas till steg i en påfyllnadsmall. När en påfyllnad körs, bestämmer den vilka/vilken behållarversionsmall(ar) som används för att initiera skapande av fraktbehållare. Fältet Basfrågetyper bestämmer vad som ska packas och vad filterfrågan ska baseras på. 
 3. Skriv ett värde i fältet **Behållarmall-ID**.
 4. I fältet **Behållargrupp** kan du ange eller välja ett värde.
-5. I fältet **Kod för påfyllnadssteg** , skriv ett värde.
+5. I fältet **Kod för påfyllnadssteg**, skriv ett värde.
 6. Markera kryssrutan **Tillåt delade plockningar**.
 7. Välj **Spara**.
-8. Klicka på **Blandade begränsningar för behållare**. Avbrott för blandningslogik låter dig ställa in regler för att packa allokeringsrader i behållare. Om du t.ex. lägger till fältet **Artikelnummer** , när artiklar tilldelas till behållare, kommer en ny behållare att skapas om det finns ett nytt artikelnummer. Detta kommer att förebygga att arbetare packar allokeringsrader för två olika kunder i samma behållare.  
+8. Klicka på **Blandade begränsningar för behållare**. Avbrott för blandningslogik låter dig ställa in regler för att packa allokeringsrader i behållare. Om du t.ex. lägger till fältet **Artikelnummer**, när artiklar tilldelas till behållare, kommer en ny behållare att skapas om det finns ett nytt artikelnummer. Detta kommer att förebygga att arbetare packar allokeringsrader för två olika kunder i samma behållare.  
 9. Välj **Ny**.
 10. Markera ett alternativ i fältet **Tabell**.
 11. Ange eller välj ett värde i fältet **Välj**.

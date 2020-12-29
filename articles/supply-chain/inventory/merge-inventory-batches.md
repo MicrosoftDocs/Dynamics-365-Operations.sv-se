@@ -19,11 +19,11 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: fa571fb7392f6f7154f7f1bfd908e11e1bebd3a6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214192"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437838"
 ---
 # <a name="merge-inventory-batches"></a>Sammanfoga lagerbatchar
 
@@ -31,7 +31,7 @@ ms.locfileid: "3214192"
 
 Den här artikeln innehåller information om hur du konsoliderar två eller flera lagerbatchar till en sammanfogad batch.
 
-När du sammanslår batchar kan beräkningar hjälpa dig att optimera egenskaperna och batchattribut för den sammanslagna batchen. När källbatcharna har valts kan den sammanfogade batchen granskas och ändras innan den bokförs. (Du kan även överföra batchsammanfogningen till en lagerjournal för godkännande. Lagret kan sedan reserveras eller bokföras direkt från den aktuella lagerjournalen. När du bokför en sammanslagen batch, justeras lager för källbatcharna och den sammanslagna batchen.
+När du sammanslår batchar kan beräkningar hjälpa dig att optimera egenskaperna och batchattribut för den sammanslagna batchen. När källbatcharna har valts kan den sammanfogade batchen granskas och ändras innan den bokförs. Du kan även överföra batchsammanfogningen till en lagerjournal för godkännande. Lagret kan sedan reserveras eller bokföras direkt från den aktuella lagerjournalen. När du bokför en sammanslagen batch, justeras lager för källbatcharna och den sammanslagna batchen.
 
 ## <a name="are-there-any-prerequisites"></a>Finns det några förutsättningar?
 Ja finns ingen saker som du måste ställa in, innan du kan använda sammanfogningbatchverktygen. I följande tabell beskrivs förutsättningarna.

@@ -20,11 +20,11 @@ ms.author: mafoge
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1061f336701461df7a2cf78661788e4c6100c84d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215710"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437552"
 ---
 # <a name="packing-materials-and-fees"></a>Förpackningsmaterial och avgifter
 
@@ -65,10 +65,10 @@ Innan du kan beräkna förpackningsmaterialets vikt, avgifter för förpacknings
             - **Alla** – skapa en allokering för alla artiklar.
 
             > [!NOTE]
-            > Vanligtvis bör du göra alla dina allokeringar på samma nivå (**register**, **grupp**eller **alla**). Om du använder fler än en nivå används den mest specifika matchande allokeringen för varje artikel. (Nivån **Register** prioriteras över nivån **grupp** och båda dessa nivåer åsidosätter nivån **Alla**.)
+            > Vanligtvis bör du göra alla dina allokeringar på samma nivå (**register**, **grupp** eller **alla**). Om du använder fler än en nivå används den mest specifika matchande allokeringen för varje artikel. (Nivån **Register** prioriteras över nivån **grupp** och båda dessa nivåer åsidosätter nivån **Alla**.)
 
         - **Artikelrelation** – Markera artikeln om du vill fördela för en enda artikel. Om du allokerar för en grupp av artiklar väljer du förpackningsgruppen. Lämna det här fältet tomt om du vill tilldela för alla artiklar.
-        - **Konfiguration**, **storlek**, **färg**och **stil** – ange värden för dessa dimensioner som du behöver för att ytterligare definiera den artikel du allokerar för.
+        - **Konfiguration**, **storlek**, **färg** och **stil** – ange värden för dessa dimensioner som du behöver för att ytterligare definiera den artikel du allokerar för.
         - **Förpackningsenhet** – Välj den enhet som artikeln förpackas i när förpackningsmaterialet används. Den här enheten kan skilja sig från den enhet som artikeln köps in i eller lagras i.
         - **Faktor för förpackningsenhet** – ange den konverteringsfaktor som används för att konvertera från lagerenheten till förpackningsenheten. (Konverteringen använder formeln *förpackningsenheter* = *artikelenheter* × *faktor för förpackningsenhet*.)
 

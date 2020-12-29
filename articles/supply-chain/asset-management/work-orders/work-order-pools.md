@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 3e95a4fdfaf4817867f3d2df7774df6a27ee6599
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889515"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437963"
 ---
 # <a name="work-order-pools"></a>Arbetsorderpooler
 
@@ -79,7 +79,7 @@ På listsidan **Alla arbetsorderpooler** eller **Aktiva arbetsorderpooler** kan 
 
 15. För att se en lista över inköpskrav som är relaterade till arbetsordrarna i arbetsorderpoolen, i åtgärdsfönstret, på **Arbetsorderpool** i gruppen **Anskaffning**, välj **Inköp för arbetsorder** för att öppna listsidan **Inköp för arbetsorder**.
 
-16. För att se en lista över inköpskrav som är relaterade till arbetsordrarna i arbetsorderpoolen, i åtgärdsfönstret, på**Arbetsorderpool** i gruppen **Anskaffning**, välj **Inköpsrekvisition för arbetsorder** för att öppna listsidan **Inköpsrekvisition för arbetsorder**.
+16. För att se en lista över inköpskrav som är relaterade till arbetsordrarna i arbetsorderpoolen, i åtgärdsfönstret, på **Arbetsorderpool** i gruppen **Anskaffning**, välj **Inköpsrekvisition för arbetsorder** för att öppna listsidan **Inköpsrekvisition för arbetsorder**.
 
 >[!NOTE]
 >När en arbetsorderpool inte längre är relevant för din arbetsplanering ställer du in alternativet **Aktiv** för den poolen till **Nej** i listvyn på sidan **Arbetsorderpool**.

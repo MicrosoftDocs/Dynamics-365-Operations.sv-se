@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 42ca1d4d2d9b45d79cf479833f83e498e3b73540
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975642"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4437411"
 ---
 # <a name="register-the-receipt-of-returned-items"></a>Registrera inleverans av returnerade artiklar 
 
@@ -34,7 +34,7 @@ Du kan registrera inleverans av returnerade artiklar på två sätt. Den första
 
 ## <a name="register-the-receipt-of-returned-items-in-the-arrival-overview-form"></a>Registrera inleverans av returnerade artiklar i formuläret Införselöversikt
 
-Du kan använda formuläret **Införselöversikt**för att identifiera en returleverans genom dess RMA-numret (Return Material Authorization). Om ett journalnamn definieras på fliken **Inställning**och journalrader som motsvarar de rader som väljs i formuläret **Införselöversikt** finns, skapas en ny journalrubrik när du klickar på **Starta införsel**.
+Du kan använda formuläret **Införselöversikt** för att identifiera en returleverans genom dess RMA-numret (Return Material Authorization). Om ett journalnamn definieras på fliken **Inställning** och journalrader som motsvarar de rader som väljs i formuläret **Införselöversikt** finns, skapas en ny journalrubrik när du klickar på **Starta införsel**.
 
 1.  Klicka på **Lagerhantering** \> **Periodisk** \> **Införselöversikt**.
 
@@ -72,7 +72,7 @@ Du kan använda formuläret **Införselöversikt**för att identifiera en returl
 
 7.  Välj införseljournalen som du just skapat, och klicka sedan på **Rader** för att öppna formuläret **Journalrader, platser**.
 
-8.  På fliken**Allmänt**, justera antalet i fältet **Kvantitet** om det behövs, och sedan tilldela en dispositionskod i fältet **Dispositionskod**.
+8.  På fliken **Allmänt**, justera antalet i fältet **Kvantitet** om det behövs, och sedan tilldela en dispositionskod i fältet **Dispositionskod**.
     
     Alternativt kan du välja kryssrutan **Karantänhantering** om du vill att de returnerade artiklarna som skickas via en inspektionprocess i samband med en karantänorder.
     
