@@ -1,0 +1,318 @@
+---
+title: Planerad direktleverans
+description: I det här avsnittet beskrivs avancerad, planerad direktleverans, där lagerkvantiteten som krävs för en order dirigeras direkt från inleverans eller skapande till rätt utlastningsplats eller mellanlagringsområde. Allt återstående lager från den inkommande källan dirigeras till rätt lagringsplats genom den vanliga artikelinförselprocessen.
+author: Mirzaab
+manager: tfehr
+ms.date: 07/01/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: WHSCrossDockingTemplate, WHSLoadPostMethod, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSPlannedCrossDocking
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: mirzaab
+ms.search.validFrom: 2020-07-01
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: cc217f21a5fa70feb9ef9161f3ef2e2b6a333f35
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4438068"
+---
+# <a name="planned-cross-docking"></a><span data-ttu-id="92539-104">Planerad direktleverans</span><span class="sxs-lookup"><span data-stu-id="92539-104">Planned cross-docking</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="92539-105">I det här avsnittet beskrivs avancerad, planerad direktleverans.</span><span class="sxs-lookup"><span data-stu-id="92539-105">This topic describes advanced planned cross-docking.</span></span> <span data-ttu-id="92539-106">Direktleverans är en lagerställesprocess där lagerkvantiteten som krävs för en order dirigeras direkt från inleverans eller skapande till rätt utlastningsplats eller mellanlagringsområde.</span><span class="sxs-lookup"><span data-stu-id="92539-106">Cross-docking is a warehouse process where the inventory quantity that is required for an order is directed straight from receipt or creation to the correct outbound dock or staging area.</span></span> <span data-ttu-id="92539-107">Allt återstående lager från den inkommande källan dirigeras till rätt lagringsplats genom den vanliga artikelinförselprocessen.</span><span class="sxs-lookup"><span data-stu-id="92539-107">All remaining inventory from the inbound source is directed to the correct storage location through the regular put-away process.</span></span>
+
+<span data-ttu-id="92539-108">Direktleverans låter medarbetare hoppa över inkommande artikelinförsel och utgående plockning av lager som redan har markerats för en utgående order.</span><span class="sxs-lookup"><span data-stu-id="92539-108">Cross-docking lets workers skip inbound put-away and outbound picking of inventory that is already marked for an outbound order.</span></span> <span data-ttu-id="92539-109">Därför minimeras antalet gånger som lagret vidrörs, om det är möjligt.</span><span class="sxs-lookup"><span data-stu-id="92539-109">Therefore, the number of times that inventory is touched is minimized, where possible.</span></span> <span data-ttu-id="92539-110">Eftersom det är mindre interaktion med systemet ökas dessutom tid och utrymmesbesparingar på lagret.</span><span class="sxs-lookup"><span data-stu-id="92539-110">Additionally, because there is less interaction with the system, time and space savings on the warehouse shop floor are increased.</span></span>
+
+<span data-ttu-id="92539-111">Innan direktleverans kan köras måste användaren konfigurera en ny mall för direktleverans där leveranskällan och andra uppsättningar krav för direktleverans har angetts.</span><span class="sxs-lookup"><span data-stu-id="92539-111">Before cross-docking can be run, the user must configure a new cross-docking template, where the supply source and other sets of requirements for cross-docking are specified.</span></span> <span data-ttu-id="92539-112">När den utgående ordern skapas måste raden markeras mot en inkommande order som innehåller samma artikel.</span><span class="sxs-lookup"><span data-stu-id="92539-112">As the outbound order is created, the line must be marked against an inbound order that contains the same item.</span></span>
+
+<span data-ttu-id="92539-113">Vid tiden för inleverans av inkommande order identifierar inställningen för direktleverans automatiskt behovet av direktleverans och skapar flyttningsarbetet för den begärda kvantiteten, baserat på inställningen för platsdirektivet.</span><span class="sxs-lookup"><span data-stu-id="92539-113">At the time of inbound order receiving, the cross-docking setup automatically identifies the need for cross-docking and creates the movement work for the required quantity, based on the setup of the location directive.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="92539-114">Lagertransaktioner avregistreras **inte** när jobbet för direktleverans avbryts, även om inställningen för denna funktion aktiveras i parametrar för lagerstyrning.</span><span class="sxs-lookup"><span data-stu-id="92539-114">Inventory transactions are **not** unregistered when crossing-dock work is canceled, even if the setting for this capability is turned on in Warehouse management parameters.</span></span>
+
+## <a name="turn-on-the-planned-cross-docking-feature"></a><span data-ttu-id="92539-115">Aktivera funktionen planerad direktleverans</span><span class="sxs-lookup"><span data-stu-id="92539-115">Turn on the Planned cross docking feature</span></span>
+
+<span data-ttu-id="92539-116">Innan du kan använda funktionen avancerad direktleverans måste funktionen aktiveras i ditt system.</span><span class="sxs-lookup"><span data-stu-id="92539-116">Before you can use advanced planned cross-docking, the feature must be turned on in your system.</span></span> <span data-ttu-id="92539-117">Administratörer kan använda arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs.</span><span class="sxs-lookup"><span data-stu-id="92539-117">Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required.</span></span> <span data-ttu-id="92539-118">Funktionen visas på följande sätt:</span><span class="sxs-lookup"><span data-stu-id="92539-118">There, the feature is listed in the following way:</span></span>
+
+- <span data-ttu-id="92539-119">**Modul:** *Lagerstyrning*</span><span class="sxs-lookup"><span data-stu-id="92539-119">**Module:** *Warehouse management*</span></span>
+- <span data-ttu-id="92539-120">**Funktionens namn:** *Planerad direktleverans*</span><span class="sxs-lookup"><span data-stu-id="92539-120">**Feature name:** *Planned cross docking*</span></span>
+
+## <a name="setup"></a><span data-ttu-id="92539-121">Konfigurera</span><span class="sxs-lookup"><span data-stu-id="92539-121">Setup</span></span>
+
+### <a name="regenerate-load-posting-methods"></a><span data-ttu-id="92539-122">Generera om lastbokföringsmetoder</span><span class="sxs-lookup"><span data-stu-id="92539-122">Regenerate load posting methods</span></span>
+
+<span data-ttu-id="92539-123">Planerad direktleverans är implementerad som en lastbokföringsmetod.</span><span class="sxs-lookup"><span data-stu-id="92539-123">Planned cross-docking is implemented as a load posting method.</span></span> <span data-ttu-id="92539-124">När du har aktiverat funktionen måste du generera om metoderna.</span><span class="sxs-lookup"><span data-stu-id="92539-124">After you turn on the feature, you must regenerate the methods.</span></span>
+
+1. <span data-ttu-id="92539-125">Gå till **Lagerstyrning \> Inställningar \> Lastbokföringsmetoder**.</span><span class="sxs-lookup"><span data-stu-id="92539-125">Go to **Warehouse management \> Setup \> Load posting methods**.</span></span>
+1. <span data-ttu-id="92539-126">Klicka på **återskapa metoder** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="92539-126">On the Action Pane, select **Regenerate methods**.</span></span>
+
+    <span data-ttu-id="92539-127">När återskapandet är slutfört visas en metod med ett värde för **metodnamn** på *planCrossDocking*.</span><span class="sxs-lookup"><span data-stu-id="92539-127">When regeneration is completed, you should see a method that has a **Method name** value of *planCrossDocking*.</span></span>
+
+1. <span data-ttu-id="92539-128">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="92539-128">Close the page.</span></span>
+
+### <a name="create-a-cross-docking-template"></a><span data-ttu-id="92539-129">Skapa en direktleveransmall.</span><span class="sxs-lookup"><span data-stu-id="92539-129">Create a cross-docking template</span></span>
+
+1. <span data-ttu-id="92539-130">Gå till **Lagerstyrning \> Inställningar \> Arbete \> Mallar för direktleverans**.</span><span class="sxs-lookup"><span data-stu-id="92539-130">Go to **Warehouse management \> Setup \> Work \> Cross docking templates**.</span></span>
+1. <span data-ttu-id="92539-131">I åtgärdsfönstret, välj **Ny** för att skapa en mall.</span><span class="sxs-lookup"><span data-stu-id="92539-131">On the Action Pane, select **New** to create a template.</span></span>
+1. <span data-ttu-id="92539-132">I rubriken anger du följande värden:</span><span class="sxs-lookup"><span data-stu-id="92539-132">In the header, set the following values:</span></span>
+
+    - <span data-ttu-id="92539-133">**Sekvens:** *1*</span><span class="sxs-lookup"><span data-stu-id="92539-133">**Sequence:** *1*</span></span>
+
+        <span data-ttu-id="92539-134">I det här fältet definieras ordningen som mallarna utvärderas i.</span><span class="sxs-lookup"><span data-stu-id="92539-134">This field defines the order that templates are evaluated in.</span></span>
+
+    - <span data-ttu-id="92539-135">**Mall-ID för direktleverans:** *51*</span><span class="sxs-lookup"><span data-stu-id="92539-135">**Cross docking template ID:** *51*</span></span>
+    - <span data-ttu-id="92539-136">**Beskrivning:** *lagerställe 51*</span><span class="sxs-lookup"><span data-stu-id="92539-136">**Description:** *Warehouse 51*</span></span>
+    - <span data-ttu-id="92539-137">**Frisläppning av efterfrågan:** *Före leverans av inleverans*</span><span class="sxs-lookup"><span data-stu-id="92539-137">**Demand release policy:** *Before supply receipt*</span></span>
+    - <span data-ttu-id="92539-138">**Lagerställe:** *51*</span><span class="sxs-lookup"><span data-stu-id="92539-138">**Warehouse:** *51*</span></span>
+
+1. <span data-ttu-id="92539-139">Inställningen på snabbfliken **Planering** styr hur mallen fungerar.</span><span class="sxs-lookup"><span data-stu-id="92539-139">The setup on the **Planning** FastTab controls how the template works.</span></span> <span data-ttu-id="92539-140">Ange följande värden.</span><span class="sxs-lookup"><span data-stu-id="92539-140">Set the following values:</span></span>
+
+    - <span data-ttu-id="92539-141">**Krav på begäran:** *Inga*</span><span class="sxs-lookup"><span data-stu-id="92539-141">**Demand requirements:** *None*</span></span>
+
+        <span data-ttu-id="92539-142">Det här fältet definierar kraven för efterfrågelager.</span><span class="sxs-lookup"><span data-stu-id="92539-142">This field defines the requirements of the demand inventory.</span></span> <span data-ttu-id="92539-143">Om behovet måste kopplas till leveransen före frisläppning väljer du markera *markering*.</span><span class="sxs-lookup"><span data-stu-id="92539-143">If the demand must be linked to the supply before release, select *Marking*.</span></span> <span data-ttu-id="92539-144">Om efter frågan måste vara orderreserverad mot försörjningen före frisläppning väljer du *Orderreservation*.</span><span class="sxs-lookup"><span data-stu-id="92539-144">If the demand must be order-reserved against the supply before release, select *Order reservation*.</span></span>
+
+    - <span data-ttu-id="92539-145">**Söka efter typ:** *utleveransplatser*</span><span class="sxs-lookup"><span data-stu-id="92539-145">**Locating type:** *Shipment locations*</span></span>
+
+        <span data-ttu-id="92539-146">Det här fältet definierar om direktleveransen ska använda för produktions-/lastplatserna från leverans, eller om den ska använda platsdirektiv för att hitta sina egna mellanlagrings- eller lastplatser.</span><span class="sxs-lookup"><span data-stu-id="92539-146">This field defines whether the cross-docking work should use the staging/load locations from the shipment, or whether it should use location directives to find its own staging/load locations.</span></span>
+
+    - <span data-ttu-id="92539-147">**Arbetsmall:** Lämna det här fältet tomt.</span><span class="sxs-lookup"><span data-stu-id="92539-147">**Work template:** Leave this field blank.</span></span>
+
+        <span data-ttu-id="92539-148">Det här fältet definierar arbetsmallen som ska användas när direktleverans skapas.</span><span class="sxs-lookup"><span data-stu-id="92539-148">This field defines the work template that should be used when cross-docking work is created.</span></span>
+
+    - <span data-ttu-id="92539-149">**Validera på leveranskvitto igen:** *Nej*</span><span class="sxs-lookup"><span data-stu-id="92539-149">**Revalidate on supply receipt:** *No*</span></span>
+
+        <span data-ttu-id="92539-150">Det här alternativet anger om leveransen ska omvalideras under inleverans.</span><span class="sxs-lookup"><span data-stu-id="92539-150">This option defines whether the supply should be revalidated during receipt.</span></span> <span data-ttu-id="92539-151">Om det här alternativet har värdet *Ja* kontrolleras både det maximala tidsfönstret och intervallet för utgångsdagar.</span><span class="sxs-lookup"><span data-stu-id="92539-151">If this option is set to *Yes*, both the maximum time window and the expiration days range are checked.</span></span>
+
+    - <span data-ttu-id="92539-152">**Validera tidsfönster:** *Ja*</span><span class="sxs-lookup"><span data-stu-id="92539-152">**Validate time window:** *Yes*</span></span>
+
+        <span data-ttu-id="92539-153">Det här alternativet anger om det maximala tidsfönstret ska utvärderas när en leveranskälla väljs.</span><span class="sxs-lookup"><span data-stu-id="92539-153">This option defines whether the maximum time window should be evaluated when a supply source is selected.</span></span> <span data-ttu-id="92539-154">Om det här alternativet är inställt på *Ja* blir fälten som är relaterade till den maximala och minsta tidsfönstret tillgängliga.</span><span class="sxs-lookup"><span data-stu-id="92539-154">If this option is set to *Yes*, the fields that are related to the maximum and minimum time windows become available.</span></span>
+
+    - <span data-ttu-id="92539-155">**Maximalt tidsfönster:** *5*</span><span class="sxs-lookup"><span data-stu-id="92539-155">**Maximum time window:** *5*</span></span>
+
+        <span data-ttu-id="92539-156">Detta fält definierar den maximala perioden som är tillåten mellan leveransankomst och efterfrågeutförsel.</span><span class="sxs-lookup"><span data-stu-id="92539-156">This field defines the maximum period that is allowed between supply arrival and demand departure.</span></span>
+
+    - <span data-ttu-id="92539-157">**Enheten maximalt tidsfönster:** *Dagar*</span><span class="sxs-lookup"><span data-stu-id="92539-157">**Maximum time window unit:** *Days*</span></span>
+    - <span data-ttu-id="92539-158">**Minsta tidsfönster:** *0*</span><span class="sxs-lookup"><span data-stu-id="92539-158">**Minimum time window:** *0*</span></span>
+
+        <span data-ttu-id="92539-159">Detta fält definierar den minimala perioden som är tillåten mellan leveransankomst och efterfrågeutförsel.</span><span class="sxs-lookup"><span data-stu-id="92539-159">This field defines the minimum period that is allowed between supply arrival and demand departure.</span></span>
+
+    - <span data-ttu-id="92539-160">**Enheten minimalt tidsfönster:** *Dagar*</span><span class="sxs-lookup"><span data-stu-id="92539-160">**Minimum time window unit:** *Days*</span></span>
+    - <span data-ttu-id="92539-161">**Intervall med förfallodagar:** *0*</span><span class="sxs-lookup"><span data-stu-id="92539-161">**Expiration days range:** *0*</span></span>
+
+        <span data-ttu-id="92539-162">*FEFO-kriterier (först utgått, först ut):* Det här fältet definierar det maximala antalet dagar mellan utgångsdatumet för den första utgående batch som för närvarande finns i lagerstället och den batch som inlevereras.</span><span class="sxs-lookup"><span data-stu-id="92539-162">*First expiry first out (FEFO) criteria:* This field defines the maximum number of days between the expiration date of the first-expiring batch that is currently in the warehouse and the batch that is being received.</span></span>
+
+1. <span data-ttu-id="92539-163">På snabbfliken **Leveranskällor** anger du vilka typer av leveranser som är giltiga för den här mallen.</span><span class="sxs-lookup"><span data-stu-id="92539-163">On the **Supply sources** FastTab, you specify the types of supply that are valid for this template.</span></span> <span data-ttu-id="92539-164">Välj **ny** och ange sedan följande värden:</span><span class="sxs-lookup"><span data-stu-id="92539-164">Select **New**, and then set the following values:</span></span>
+
+    - <span data-ttu-id="92539-165">**Löpnummer:** *1*</span><span class="sxs-lookup"><span data-stu-id="92539-165">**Sequence number:** *1*</span></span>
+    - <span data-ttu-id="92539-166">**Leveranskälla:** *inköpsorder*</span><span class="sxs-lookup"><span data-stu-id="92539-166">**Supply source:** *Purchase order*</span></span>
+
+### <a name="create-a-work-class"></a><span data-ttu-id="92539-167">Skapa en arbetsklass</span><span class="sxs-lookup"><span data-stu-id="92539-167">Create a work class</span></span>
+
+1. <span data-ttu-id="92539-168">Gå till **Lagerstyrning \> Inställningar \> Arbete \> Arbetsklasser**.</span><span class="sxs-lookup"><span data-stu-id="92539-168">Go to **Warehouse management \> Setup \> Work \> Work classes**.</span></span>
+1. <span data-ttu-id="92539-169">I åtgärdsfönstret, välj **Ny** för att skapa en arbetsklass.</span><span class="sxs-lookup"><span data-stu-id="92539-169">On the Action Pane, select **New** to create a work class.</span></span>
+1. <span data-ttu-id="92539-170">Ange följande värden.</span><span class="sxs-lookup"><span data-stu-id="92539-170">Set the following values:</span></span>
+
+    - <span data-ttu-id="92539-171">**Arbetsklass-ID:** *CrossDock*</span><span class="sxs-lookup"><span data-stu-id="92539-171">**Work class ID:** *CrossDock*</span></span>
+    - <span data-ttu-id="92539-172">**Beskrivning:** *Direktleverans*</span><span class="sxs-lookup"><span data-stu-id="92539-172">**Description:** *Cross Dock*</span></span>
+    - <span data-ttu-id="92539-173">**Typ av arbetsorder:** *direktleverans*</span><span class="sxs-lookup"><span data-stu-id="92539-173">**Work order type:** *Cross docking*</span></span>
+
+### <a name="create-a-work-template"></a><span data-ttu-id="92539-174">Skapa en arbetsuppgiftsmall</span><span class="sxs-lookup"><span data-stu-id="92539-174">Create a work template</span></span>
+
+1. <span data-ttu-id="92539-175">Gå till **Lagerstyrning \> Inställningar \> Arbete \> Arbetsmallar**.</span><span class="sxs-lookup"><span data-stu-id="92539-175">Go to **Warehouse management \> Setup \> Work \> Work templates**.</span></span>
+1. <span data-ttu-id="92539-176">Ange fältet **Inköpsordertyp** till *Direktleverans*.</span><span class="sxs-lookup"><span data-stu-id="92539-176">Set the **Work order type** field to *Cross docking*.</span></span>
+1. <span data-ttu-id="92539-177">I åtgärdsfönstret, välj **Ny** om du vill lägga till en rad i fliken **Översikt**.</span><span class="sxs-lookup"><span data-stu-id="92539-177">On the Action Pane, select **New** to add a line to the **Overview** tab.</span></span>
+1. <span data-ttu-id="92539-178">Ställ in följande värden på denna nya rad:</span><span class="sxs-lookup"><span data-stu-id="92539-178">On the new line, set the following values:</span></span>
+
+    - <span data-ttu-id="92539-179">**Löpnummer:** *1*</span><span class="sxs-lookup"><span data-stu-id="92539-179">**Sequence number:** *1*</span></span>
+    - <span data-ttu-id="92539-180">**Arbetsmall:** *51 direktleverans*</span><span class="sxs-lookup"><span data-stu-id="92539-180">**Work template:** *51 Cross Dock*</span></span>
+    - <span data-ttu-id="92539-181">**Beskrivning av arbetsmall:** *51 direktleverans*</span><span class="sxs-lookup"><span data-stu-id="92539-181">**Work template description:** *51 Cross Dock*</span></span>
+
+1. <span data-ttu-id="92539-182">Välj **Spara** om du vill göra snabbfliken **Arbetsmallinformation** tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="92539-182">Select **Save** to make the **Work Template Details** FastTab available.</span></span>
+1. <span data-ttu-id="92539-183">På snabbfliken **Arbetsmallinformation** välj **Ny** för att lägga till en rad i rutnätet.</span><span class="sxs-lookup"><span data-stu-id="92539-183">On the **Work Template Details** FastTab, select **New** to add a line to the grid.</span></span>
+1. <span data-ttu-id="92539-184">Ställ in följande värden på denna nya rad:</span><span class="sxs-lookup"><span data-stu-id="92539-184">On the new line, set the following values:</span></span>
+
+    - <span data-ttu-id="92539-185">**Arbetstyp:** *plockning*</span><span class="sxs-lookup"><span data-stu-id="92539-185">**Work type:** *Pick*</span></span>
+    - <span data-ttu-id="92539-186">**Arbetsklass-ID:** *CrossDock*</span><span class="sxs-lookup"><span data-stu-id="92539-186">**Work class ID:** *CrossDock*</span></span>
+
+1. <span data-ttu-id="92539-187">Välj **Ny** för att lägga till en till rad och ställa in följande värden på den:</span><span class="sxs-lookup"><span data-stu-id="92539-187">Select **New** to add another line, and set the following values on it:</span></span>
+
+    - <span data-ttu-id="92539-188">**Arbetstyp:** *Placera*</span><span class="sxs-lookup"><span data-stu-id="92539-188">**Work type:** *Put*</span></span>
+    - <span data-ttu-id="92539-189">**Arbetsklass-ID:** *CrossDock*</span><span class="sxs-lookup"><span data-stu-id="92539-189">**Work class ID:** *CrossDock*</span></span>
+
+1. <span data-ttu-id="92539-190">Välj **Spara** och bekräfta att kryssrutan **Giltig** är markerad för mallen *51 direktleverans*.</span><span class="sxs-lookup"><span data-stu-id="92539-190">Select **Save**, and confirm that the **Valid** check box is selected for the *51 Cross Dock* template.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="92539-191">Arbetsklass-ID för arbetstyperna *Plocka* och *Placera* måste vara samma.</span><span class="sxs-lookup"><span data-stu-id="92539-191">The work class IDs for the *Pick* and *Put* work types must be the same.</span></span>
+
+### <a name="create-location-directives"></a><span data-ttu-id="92539-192">Skapa platsdirektiv</span><span class="sxs-lookup"><span data-stu-id="92539-192">Create location directives</span></span>
+
+1. <span data-ttu-id="92539-193">Gå till **Lagerstyrning \> Inställningar \> Platsdirektiv**.</span><span class="sxs-lookup"><span data-stu-id="92539-193">Go to **Warehouse management \> Setup \> Location directives**.</span></span>
+1. <span data-ttu-id="92539-194">I vänster ruta ange fältet **Arbetsordertyp** till *Direktleverans*.</span><span class="sxs-lookup"><span data-stu-id="92539-194">In the left pane, set the **Work order type** field to *Cross docking*.</span></span>
+1. <span data-ttu-id="92539-195">I åtgärdsfönstret, välj **ny** och ange sedan följande värden:</span><span class="sxs-lookup"><span data-stu-id="92539-195">On the Action Pane, select **New**, and set the following values:</span></span>
+
+    - <span data-ttu-id="92539-196">**Löpnummer:** *1*</span><span class="sxs-lookup"><span data-stu-id="92539-196">**Sequence number:** *1*</span></span>
+    - <span data-ttu-id="92539-197">**Namn:** *51 direktleverans*</span><span class="sxs-lookup"><span data-stu-id="92539-197">**Name:** *51 Cross Dock Put*</span></span>
+    - <span data-ttu-id="92539-198">**Arbetstyp:** *Placera*</span><span class="sxs-lookup"><span data-stu-id="92539-198">**Work type:** *Put*</span></span>
+    - <span data-ttu-id="92539-199">**Plats:** *5*</span><span class="sxs-lookup"><span data-stu-id="92539-199">**Site:** *5*</span></span>
+    - <span data-ttu-id="92539-200">**Lagerställe:** *51*</span><span class="sxs-lookup"><span data-stu-id="92539-200">**Warehouse:** *51*</span></span>
+
+1. <span data-ttu-id="92539-201">Välj **Spara** om du vill göra snabbfliken **Rader** tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="92539-201">Select **Save** to make the **Lines** FastTab available.</span></span>
+1. <span data-ttu-id="92539-202">På snabbfliken **Rader** välj **Ny** för att lägga till en rad i rutnätet.</span><span class="sxs-lookup"><span data-stu-id="92539-202">On the **Lines** FastTab, select **New** to add a line to the grid.</span></span>
+1. <span data-ttu-id="92539-203">Ställ in följande värden på denna nya rad:</span><span class="sxs-lookup"><span data-stu-id="92539-203">On the new line, set the following values:</span></span>
+
+    - <span data-ttu-id="92539-204">**Från kvantitet:** *1*</span><span class="sxs-lookup"><span data-stu-id="92539-204">**From quantity:** *1*</span></span>
+    - <span data-ttu-id="92539-205">**Till kvantitet:** *1000000*</span><span class="sxs-lookup"><span data-stu-id="92539-205">**To quantity:** *1,000,000*</span></span>
+
+1. <span data-ttu-id="92539-206">Välj **Spara** om du vill göra snabbfliken **Platsdirektivåtgärd** tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="92539-206">Select **Save** to make the **Location Directive Actions** FastTab available.</span></span>
+1. <span data-ttu-id="92539-207">På snabbfliken **Platsdirektivåtgärder** välj **Ny** för att lägga till en rad i rutnätet.</span><span class="sxs-lookup"><span data-stu-id="92539-207">On the **Location Directive Actions** FastTab, select **New** to add a line to the grid.</span></span>
+1. <span data-ttu-id="92539-208">Ställ in följande värden på denna nya rad:</span><span class="sxs-lookup"><span data-stu-id="92539-208">On the new line, set the following values:</span></span>
+
+    - <span data-ttu-id="92539-209">**Namn:** *Baydoor*</span><span class="sxs-lookup"><span data-stu-id="92539-209">**Name:** *Baydoor*</span></span>
+    - <span data-ttu-id="92539-210">**Användning av fast lagerplats:** *Fasta och ej fasta platser*</span><span class="sxs-lookup"><span data-stu-id="92539-210">**Fixed location usage:** *Fixed and non-fixed locations*</span></span>
+
+1. <span data-ttu-id="92539-211">Välj **Spara** så att knappen **Redigera fråga** i verktygsfältet **Platsdirektivåtgärder** är tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="92539-211">Select **Save** to make the **Edit query** button on the **Location Directive Actions** toolbar available.</span></span>
+1. <span data-ttu-id="92539-212">Välj **Redigera fråga** för att öppna frågeredigeraren.</span><span class="sxs-lookup"><span data-stu-id="92539-212">Select **Edit query** to open the query editor.</span></span>
+1. <span data-ttu-id="92539-213">På fliken **Intervall** ser du till att följande två rader har konfigurerats:</span><span class="sxs-lookup"><span data-stu-id="92539-213">On the **Range** tab, make sure that the following two lines are configured:</span></span>
+
+    - <span data-ttu-id="92539-214">Rad 1:</span><span class="sxs-lookup"><span data-stu-id="92539-214">Line 1:</span></span>
+
+        - <span data-ttu-id="92539-215">**Register:** *platser*</span><span class="sxs-lookup"><span data-stu-id="92539-215">**Table:** *Locations*</span></span>
+        - <span data-ttu-id="92539-216">**Härlett register:** *platser*</span><span class="sxs-lookup"><span data-stu-id="92539-216">**Derived Table:** *Locations*</span></span>
+        - <span data-ttu-id="92539-217">**Fält:** *lagerställe*</span><span class="sxs-lookup"><span data-stu-id="92539-217">**Field:** *Warehouse*</span></span>
+        - <span data-ttu-id="92539-218">**Kriterier:** *51*</span><span class="sxs-lookup"><span data-stu-id="92539-218">**Criteria:** *51*</span></span>
+
+    - <span data-ttu-id="92539-219">Rad 2:</span><span class="sxs-lookup"><span data-stu-id="92539-219">Line 2:</span></span>
+
+        - <span data-ttu-id="92539-220">**Register:** *platser*</span><span class="sxs-lookup"><span data-stu-id="92539-220">**Table:** *Locations*</span></span>
+        - <span data-ttu-id="92539-221">**Härlett register:** *platser*</span><span class="sxs-lookup"><span data-stu-id="92539-221">**Derived Table:** *Locations*</span></span>
+        - <span data-ttu-id="92539-222">**Fält:** *Plats*</span><span class="sxs-lookup"><span data-stu-id="92539-222">**Field:** *Location*</span></span>
+        - <span data-ttu-id="92539-223">**Kriterier:** *Baydoor*</span><span class="sxs-lookup"><span data-stu-id="92539-223">**Criteria:** *Baydoor*</span></span>
+
+1. <span data-ttu-id="92539-224">Stäng frågeredigeraren genom att välja **OK**.</span><span class="sxs-lookup"><span data-stu-id="92539-224">Select **OK** to close the query editor.</span></span>
+
+### <a name="create-a-mobile-device-menu-item"></a><span data-ttu-id="92539-225">Skapa ett menykommando för mobila enheter</span><span class="sxs-lookup"><span data-stu-id="92539-225">Create a mobile device menu item</span></span>
+
+1. <span data-ttu-id="92539-226">Gå till **Lagerstyrning \> Inställningar \> Mobil enhet \> Menyalternativ på mobil enhet**.</span><span class="sxs-lookup"><span data-stu-id="92539-226">Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.</span></span>
+1. <span data-ttu-id="92539-227">I listan över menyalternativ i det vänstra fönstret väljer du **inköpsartikelinförsel**.</span><span class="sxs-lookup"><span data-stu-id="92539-227">In the list of menu items in the left pane, select **Purchase Put-away**.</span></span>
+1. <span data-ttu-id="92539-228">Välj **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="92539-228">Select **Edit**.</span></span>
+1. <span data-ttu-id="92539-229">På snabbfliken **Arbetsklasser** välj **Ny** för att lägga till en rad i rutnätet.</span><span class="sxs-lookup"><span data-stu-id="92539-229">On the **Work classes** FastTab, select **New** to add a line to the grid.</span></span>
+1. <span data-ttu-id="92539-230">Ställ in följande värden på denna nya rad:</span><span class="sxs-lookup"><span data-stu-id="92539-230">On the new line, set the following values:</span></span>
+
+    - <span data-ttu-id="92539-231">**Arbetsklass-ID:** *CrossDock*</span><span class="sxs-lookup"><span data-stu-id="92539-231">**Work class ID:** *CrossDock*</span></span>
+    - <span data-ttu-id="92539-232">**Typ av arbetsorder:** *direktleverans*</span><span class="sxs-lookup"><span data-stu-id="92539-232">**Work order type:** *Cross docking*</span></span>
+
+1. <span data-ttu-id="92539-233">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="92539-233">Select **Save**.</span></span>
+
+## <a name="scenario"></a><span data-ttu-id="92539-234">Scenario</span><span class="sxs-lookup"><span data-stu-id="92539-234">Scenario</span></span>
+
+### <a name="create-a-purchase-order"></a><span data-ttu-id="92539-235">Skapa en inköpsorder</span><span class="sxs-lookup"><span data-stu-id="92539-235">Create a purchase order</span></span>
+
+<span data-ttu-id="92539-236">Följ stegen nedan när du vill skapa en inköpsorder som leveranskälla.</span><span class="sxs-lookup"><span data-stu-id="92539-236">Follow these steps to create a purchase order as a source of supply.</span></span>
+
+1. <span data-ttu-id="92539-237">Gå till **Anskaffning och källa \> Inköpsorder \> Alla inköpsorder**.</span><span class="sxs-lookup"><span data-stu-id="92539-237">Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.</span></span>
+1. <span data-ttu-id="92539-238">Klicka på **Ny** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="92539-238">On the Action Pane, select **New**.</span></span>
+1. <span data-ttu-id="92539-239">I dialogrutan **Skapa inköpsorder** ställ in följande värden:</span><span class="sxs-lookup"><span data-stu-id="92539-239">In the **Create purchase order** dialog box, set the following values:</span></span>
+
+    - <span data-ttu-id="92539-240">**Leverantörskonto:** *104*</span><span class="sxs-lookup"><span data-stu-id="92539-240">**Vendor account:** *104*</span></span>
+    - <span data-ttu-id="92539-241">**Lagerställe:** *51*</span><span class="sxs-lookup"><span data-stu-id="92539-241">**Warehouse:** *51*</span></span>
+
+1. <span data-ttu-id="92539-242">Välj **OK** och anteckna ordernumret.</span><span class="sxs-lookup"><span data-stu-id="92539-242">Select **OK**, and make a note of the order number.</span></span>
+1. <span data-ttu-id="92539-243">En ny rad läggs till i rutnätet på snabbfliken **Inköpsorderrader**.</span><span class="sxs-lookup"><span data-stu-id="92539-243">A new line is added to the **Purchase order lines** FastTab.</span></span> <span data-ttu-id="92539-244">Ställ in följande värden på denna rad:</span><span class="sxs-lookup"><span data-stu-id="92539-244">On this line, set the following values:</span></span>
+
+    - <span data-ttu-id="92539-245">**Artikelnummer:** *A0001*</span><span class="sxs-lookup"><span data-stu-id="92539-245">**Item number:** *A0001*</span></span>
+    - <span data-ttu-id="92539-246">**Kvantitet:** *5*</span><span class="sxs-lookup"><span data-stu-id="92539-246">**Quantity:** *5*</span></span>
+
+### <a name="create-a-sales-order"></a><span data-ttu-id="92539-247">Skapa en försäljningsorder</span><span class="sxs-lookup"><span data-stu-id="92539-247">Create a sales order</span></span>
+
+<span data-ttu-id="92539-248">Följ stegen nedan när du vill skapa en försäljningsorder som behovskälla.</span><span class="sxs-lookup"><span data-stu-id="92539-248">Follow these steps to create a sales order as a source of demand.</span></span>
+
+1. <span data-ttu-id="92539-249">Gå till **Försäljning och marknadsföring \> Försäljningsorder \> Alla försäljningsorder**.</span><span class="sxs-lookup"><span data-stu-id="92539-249">Go to **Sales and marketing \> Sales orders \> All sales orders**.</span></span>
+1. <span data-ttu-id="92539-250">Klicka på **Ny** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="92539-250">On the Action Pane, select **New**.</span></span>
+1. <span data-ttu-id="92539-251">I dialogrutan **Skapa försäljningsorder** ställ in följande värden:</span><span class="sxs-lookup"><span data-stu-id="92539-251">In the **Create sales order** dialog box, set the following values:</span></span>
+
+    - <span data-ttu-id="92539-252">**Kundkonto:** *US-002*</span><span class="sxs-lookup"><span data-stu-id="92539-252">**Customer account:** *US-002*</span></span>
+    - <span data-ttu-id="92539-253">**Lagerställe:** *51*</span><span class="sxs-lookup"><span data-stu-id="92539-253">**Warehouse:** *51*</span></span>
+
+1. <span data-ttu-id="92539-254">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="92539-254">Select **OK**.</span></span>
+1. <span data-ttu-id="92539-255">En ny rad läggs till i rutnätet på snabbfliken **Försäljningsorderrader**.</span><span class="sxs-lookup"><span data-stu-id="92539-255">A new line is added to the **Sales order lines** FastTab.</span></span> <span data-ttu-id="92539-256">Ställ in följande värden på denna rad:</span><span class="sxs-lookup"><span data-stu-id="92539-256">On this line, set the following values:</span></span>
+
+    - <span data-ttu-id="92539-257">**Artikelnummer:** *A0001*</span><span class="sxs-lookup"><span data-stu-id="92539-257">**Item number:** *A0001*</span></span>
+    - <span data-ttu-id="92539-258">**Kvantitet:** *3*</span><span class="sxs-lookup"><span data-stu-id="92539-258">**Quantity:** *3*</span></span>
+
+### <a name="create-planned-cross-docking"></a><span data-ttu-id="92539-259">Skapa planerad direktleverans</span><span class="sxs-lookup"><span data-stu-id="92539-259">Create planned cross-docking</span></span>
+
+<span data-ttu-id="92539-260">Följ dessa steg för att skapa den planerade direktleveransen från försäljningsordern.</span><span class="sxs-lookup"><span data-stu-id="92539-260">Follow these steps to create the planned cross-docking from the sales order.</span></span>
+
+1. <span data-ttu-id="92539-261">På sidan **försäljningsorderinformation** för försäljningsordern som du just skapat, i åtgärdsfönstret på fliken **Lagerställe** i gruppen **Åtgärder** väljer du **Frisläpp till lager**.</span><span class="sxs-lookup"><span data-stu-id="92539-261">In the **Sales order details** page for the sales order that you just created, on the Action Pane, on the **Warehouse** tab, in the **Actions** group, select **Release to warehouse**.</span></span>
+
+    <span data-ttu-id="92539-262">Åtgärden frisläpp till lager skapar en leverans- och lastrad för försäljningsorderraden och försöker allokera lager.</span><span class="sxs-lookup"><span data-stu-id="92539-262">The release to warehouse action creates a shipment and load line for the sales order line, and tries to allocate inventory.</span></span>
+    
+    <span data-ttu-id="92539-263">Du får ett informativt meddelande.</span><span class="sxs-lookup"><span data-stu-id="92539-263">You receive an informational message.</span></span> <span data-ttu-id="92539-264">Följande varningsmeddelande visas också: "inget arbete har skapats för påfyllnad XXXX.</span><span class="sxs-lookup"><span data-stu-id="92539-264">You also receive the following warning message: "No work was created for wave XXXX.</span></span> <span data-ttu-id="92539-265">Mer information finns i loggen över arbetsskapande."</span><span class="sxs-lookup"><span data-stu-id="92539-265">See the work creation history log for details."</span></span> <span data-ttu-id="92539-266">Det här beteendet förväntas eftersom det inte finns något lager i lagerstället.</span><span class="sxs-lookup"><span data-stu-id="92539-266">This behavior is expected, because there is no inventory in the warehouse.</span></span>
+
+1. <span data-ttu-id="92539-267">På snabbfliken **Försäljningsorderrader** i menyn **Lagerställe** välj **Leveransinformation**.</span><span class="sxs-lookup"><span data-stu-id="92539-267">On the **Sales order lines** FastTab, on the **Warehouse** menu, select **Shipment details**.</span></span>
+
+    <span data-ttu-id="92539-268">Sidan **Leveransinformation** visas och visar den leverans som har skapats för försäljningsordern.</span><span class="sxs-lookup"><span data-stu-id="92539-268">The **Shipment details** page appears and shows the shipment that was created for the sales order.</span></span>
+
+1. <span data-ttu-id="92539-269">På snabbfliken **Lastrader** ser du att fältet **Kvantitet i planerad direktleverans** har värdet *3*.</span><span class="sxs-lookup"><span data-stu-id="92539-269">On the **Load lines** FastTab, notice that the **Planned cross docking quantity** field is set to *3*.</span></span> <span data-ttu-id="92539-270">Eftersom det inte fanns något lager tillgängligt i lagerstället, men en giltig leveranskälla kommer in inom tidsfönstret som definieras i mallen för direktleverans, skapades kvantiteten för direktleverans.</span><span class="sxs-lookup"><span data-stu-id="92539-270">Because no inventory was available in the warehouse, but a valid supply source will arrive within the time window that is defined in the cross-docking template, the cross-docking quantity was created.</span></span>
+1. <span data-ttu-id="92539-271">På snabbfliken **Lastrader** välj **Planerad direktleverans** om du vill visa information om direktleverans som har skapats.</span><span class="sxs-lookup"><span data-stu-id="92539-271">On the **Load lines** FastTab, select **Planned cross docking** to view the details of the cross-docking that was created.</span></span>
+
+## <a name="process-the-cross-docking"></a><span data-ttu-id="92539-272">Bearbeta direktleverans.</span><span class="sxs-lookup"><span data-stu-id="92539-272">Process the cross-docking</span></span>
+
+### <a name="purchase-order-receiving-on-the-warehousing-mobile-app"></a><span data-ttu-id="92539-273">Inleverans av inköpsorder med mobilappen för lagerhantering</span><span class="sxs-lookup"><span data-stu-id="92539-273">Purchase order receiving on the warehousing mobile app</span></span>
+
+<span data-ttu-id="92539-274">Kvantiteten för 5 tas emot från inköpsordern till mottagningsplatsen och två arbetsuppgifter skapas.</span><span class="sxs-lookup"><span data-stu-id="92539-274">The system will receive the quantity of 5 from the purchase order into the receiving location and create two pieces of work.</span></span>
+
+<span data-ttu-id="92539-275">Det första arbets-ID som skapas har värdet **Arbetsordertyp** för *Direktleverans* och är kopplat till försäljningsordern.</span><span class="sxs-lookup"><span data-stu-id="92539-275">The first work ID that is created has a **Work order type** value of *Cross docking* and is linked to the sales order.</span></span> <span data-ttu-id="92539-276">Den har kvantiteten 3 och dirigeras till den slutgiltiga leveransplatsen så att den kan skickas direkt.</span><span class="sxs-lookup"><span data-stu-id="92539-276">It has a quantity of 3 and is directed to the final shipping location so that it can be shipped out immediately.</span></span>
+
+<span data-ttu-id="92539-277">Det andra arbets-ID som skapas har värdet **Arbetsordertyp** för *Inköpsorder* och är kopplat till inköpsordern.</span><span class="sxs-lookup"><span data-stu-id="92539-277">The second work ID that is created has a **Work order type** value of *Purchase orders* and is linked to the purchase order.</span></span> <span data-ttu-id="92539-278">Den innehåller den återstående kvantiteten 2 som inte har direktlevereras och dirigeras till artikelinförseln till lagret.</span><span class="sxs-lookup"><span data-stu-id="92539-278">It has the remaining quantity of 2 that wasn't cross-docked and is directed to put-away to storage.</span></span>
+
+1. <span data-ttu-id="92539-279">Logga in på den mobila enheten för en användare i lager ställe *51*.</span><span class="sxs-lookup"><span data-stu-id="92539-279">Sign in to the mobile device as a user in warehouse *51*.</span></span>
+1. <span data-ttu-id="92539-280">Gå till **inkommande \> inleverans av inköp**.</span><span class="sxs-lookup"><span data-stu-id="92539-280">Go to **Inbound \> Purchase Receive**.</span></span>
+1. <span data-ttu-id="92539-281">I fältet **PONum** anger du inköpsordernummer.</span><span class="sxs-lookup"><span data-stu-id="92539-281">In the **PONum** field, enter your purchase order number.</span></span>
+1. <span data-ttu-id="92539-282">I fältet **Kvt**, ange *5*.</span><span class="sxs-lookup"><span data-stu-id="92539-282">In the **Qty** field, enter *5*.</span></span>
+1. <span data-ttu-id="92539-283">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="92539-283">Select **OK**.</span></span>
+1. <span data-ttu-id="92539-284">På nästa sida anger du fältet **artikel** till *A0001*.</span><span class="sxs-lookup"><span data-stu-id="92539-284">On the next page, set the **Item** field to *A0001*.</span></span>
+1. <span data-ttu-id="92539-285">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="92539-285">Select **OK**.</span></span>
+1. <span data-ttu-id="92539-286">På nästa sida bekräfta värdena **PONum**, **Artikel** och **Kvt** genom att klicka på **OK**.</span><span class="sxs-lookup"><span data-stu-id="92539-286">On the next page, confirm the **PONum**, **Item**, and **Qty** values by selecting **OK**.</span></span>
+
+    <span data-ttu-id="92539-287">Du får ett meddelande arbetet är slutfört.</span><span class="sxs-lookup"><span data-stu-id="92539-287">You receive a "Work Completed" message.</span></span>
+
+1. <span data-ttu-id="92539-288">Välj **avbryt** för att avsluta.</span><span class="sxs-lookup"><span data-stu-id="92539-288">Select **Cancel** to exit.</span></span>
+
+### <a name="put-away-to-cross-docking-and-bulk"></a><span data-ttu-id="92539-289">Artikelinförsel till direktleverans och bulk</span><span class="sxs-lookup"><span data-stu-id="92539-289">Put-away to cross-docking and bulk</span></span>
+
+<span data-ttu-id="92539-290">För närvarande har båda arbets-ID:n samma ID-nummer.</span><span class="sxs-lookup"><span data-stu-id="92539-290">Currently, both work IDs have the same target license plate.</span></span> <span data-ttu-id="92539-291">För att slutföra de kommande stegen måste du ha arbets-ID:t och målnummer-ID.</span><span class="sxs-lookup"><span data-stu-id="92539-291">To complete the next steps, you must get the work ID and the target license plate ID.</span></span> <span data-ttu-id="92539-292">Den här informationen kan du få från arbetsuppgifterna för inköpsorderraden och försäljningsorderraden.</span><span class="sxs-lookup"><span data-stu-id="92539-292">You can get this information from the work details for the purchase order line and the sales order line.</span></span> <span data-ttu-id="92539-293">Du kan också gå till information om **Lagerstyrning \> Arbete \> Arbetsinformation** och filtrera fram det arbete där värde **Lagerstället** är *51*.</span><span class="sxs-lookup"><span data-stu-id="92539-293">Alternately, you can go to **Warehouse management \> Work \> Work details** and filter for work where the **Warehouse** value is *51*.</span></span>
+
+1. <span data-ttu-id="92539-294">Gå till den mobila enheten **Inkommande \> Inköpsartikelinförsel** och ange målnummer-ID från arbetet.</span><span class="sxs-lookup"><span data-stu-id="92539-294">On the mobile device, go to **Inbound \> Purchase put-away**, and enter the target license plate from the work.</span></span>
+1. <span data-ttu-id="92539-295">I fältet **ID** ange målnummer-ID från arbetsinformationen.</span><span class="sxs-lookup"><span data-stu-id="92539-295">In the **ID** field, enter the target license plate ID from the work details.</span></span>
+
+    <span data-ttu-id="92539-296">Plocksidan för direktleverans visar plockplatsen (*RECV*), målnummer-ID (*ID-nummer*), artikel (*A0001*) och kvantitet (*3*).</span><span class="sxs-lookup"><span data-stu-id="92539-296">The cross-docking pick page shows the picking location (*RECV*), target license plate (*license plate*), item (*A0001*), and quantity (*3*).</span></span>
+
+1. <span data-ttu-id="92539-297">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="92539-297">Select **OK**.</span></span>
+1. <span data-ttu-id="92539-298">I fältet **Mål LP** anger du en målnummer-ID för det licensserver-ID som ska placeras (direktlevereras) på leveransplatsen.</span><span class="sxs-lookup"><span data-stu-id="92539-298">In the **Target LP** field, enter a target license plate for the license plate ID that should be put (cross-docked) to the shipping location.</span></span> <span data-ttu-id="92539-299">Du kan välja valfritt ID-nummer.</span><span class="sxs-lookup"><span data-stu-id="92539-299">You can select any license plate ID of your choice.</span></span>
+1. <span data-ttu-id="92539-300">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="92539-300">Select **OK**.</span></span>
+1. <span data-ttu-id="92539-301">På nästa sida i fältet **ID** ange målnummer-ID.</span><span class="sxs-lookup"><span data-stu-id="92539-301">On the next page, in the **ID** field, enter the target license plate ID.</span></span>
+1. <span data-ttu-id="92539-302">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="92539-302">Select **OK**.</span></span>
+1. <span data-ttu-id="92539-303">Bekräfta arbetet för plockning av resterande kvantitet av 2 och klicka sedan på **OK**.</span><span class="sxs-lookup"><span data-stu-id="92539-303">Confirm the work for picking the remaining quantity of 2, and then select **OK**.</span></span>
+1. <span data-ttu-id="92539-304">På nästa sida väljer **Klar** för att avsluta plockningsprocessen och påbörjar artikelinförselprocessen.</span><span class="sxs-lookup"><span data-stu-id="92539-304">On the next page, select **Done** to end the picking process and begin the put-away process.</span></span>
+
+    <span data-ttu-id="92539-305">I mobilappen får du en plats och ett ID-nummer platta att inlagra artikeln i.</span><span class="sxs-lookup"><span data-stu-id="92539-305">The mobile app presents you with the location and license plate to put the item to.</span></span>
+
+1. <span data-ttu-id="92539-306">Bekräfta masslagringen **Placera** genom att välja **OK**.</span><span class="sxs-lookup"><span data-stu-id="92539-306">Confirm the bulk storage **Put** by selecting **OK**.</span></span>
+1. <span data-ttu-id="92539-307">På nästa sida bekräfta direktleverans **Placera** och välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="92539-307">On the next page, confirm the cross-docking **Put** by selecting **OK**.</span></span>
+
+    <span data-ttu-id="92539-308">Du får ett meddelande arbetet är slutfört.</span><span class="sxs-lookup"><span data-stu-id="92539-308">You receive a "Work Completed" message.</span></span>
+
+1. <span data-ttu-id="92539-309">Välj **avbryt** för att avsluta.</span><span class="sxs-lookup"><span data-stu-id="92539-309">Select **Cancel** to exit.</span></span>
+
+<span data-ttu-id="92539-310">Följande illustration visar hur det slutförda direktleveransen kan visas i Microsoft Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="92539-310">The following illustration shows how the completed cross-docking work might appear in Microsoft Dynamics 365 Supply Chain Management.</span></span>
+
+<span data-ttu-id="92539-311">![Direktleveransarbete har slutförts](media/PlannedCrossDockingWork.png "Direktleveransarbete har slutförts")</span><span class="sxs-lookup"><span data-stu-id="92539-311">![Cross-docking work completed](media/PlannedCrossDockingWork.png "Cross-docking work completed")</span></span>

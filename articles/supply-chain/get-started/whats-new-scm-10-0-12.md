@@ -1,0 +1,84 @@
+---
+title: Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.12 augusti 2020
+description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.12.
+author: kamaybac
+manager: tfehr
+ms.date: 05/29/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: kamaybac
+ms.search.validFrom: 2020-05-29
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: a210af5e37e12d883054d46719602604870213b4
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4437972"
+---
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a><span data-ttu-id="4b6de-103">Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.12 augusti 2020</span><span class="sxs-lookup"><span data-stu-id="4b6de-103">What's new or changed in Dynamics 365 Supply Chain Management 10.0.12 (August 2020)</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="4b6de-104">Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management 10.0.12.</span><span class="sxs-lookup"><span data-stu-id="4b6de-104">This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.12.</span></span> <span data-ttu-id="4b6de-105">Den här versionen har ett versionsnummer för 10.0.507 och är tillgänglig enligt följande:</span><span class="sxs-lookup"><span data-stu-id="4b6de-105">This version has a build number of 10.0.507 and is available as follows:</span></span>
+
+- <span data-ttu-id="4b6de-106">**Förhandsversion:** maj 2020</span><span class="sxs-lookup"><span data-stu-id="4b6de-106">**Preview release:** May 2020</span></span>
+- <span data-ttu-id="4b6de-107">**Allmän tillgänglighet (självuppdatering):** juli 2020</span><span class="sxs-lookup"><span data-stu-id="4b6de-107">**General availability (self-update):** July 2020</span></span>
+- <span data-ttu-id="4b6de-108">**Automatisk uppdatering:** augusti 2020</span><span class="sxs-lookup"><span data-stu-id="4b6de-108">**Auto-update:** August 2020</span></span>
+
+## <a name="features-included-in-this-release"></a><span data-ttu-id="4b6de-109">Funktioner som ingår i den här versionen</span><span class="sxs-lookup"><span data-stu-id="4b6de-109">Features included in this release</span></span>
+
+<span data-ttu-id="4b6de-110">Den här versionen innehåller följande nya funktioner:</span><span class="sxs-lookup"><span data-stu-id="4b6de-110">The following features are included in this release.</span></span> <span data-ttu-id="4b6de-111">Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](https://docs.microsoft.com/dynamics365/release-plans/).</span><span class="sxs-lookup"><span data-stu-id="4b6de-111">The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site.</span></span> <span data-ttu-id="4b6de-112">Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen.</span><span class="sxs-lookup"><span data-stu-id="4b6de-112">Additional links point to additional documentation or videos that are currently available for that feature.</span></span> <span data-ttu-id="4b6de-113">De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.</span><span class="sxs-lookup"><span data-stu-id="4b6de-113">Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.</span></span>
+
+- [<span data-ttu-id="4b6de-114">Tillåt låsning av jobbkortets pekskärm för sanering</span><span class="sxs-lookup"><span data-stu-id="4b6de-114">Allow locking the job card touchscreen for sanitization</span></span>](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization)<br> <span data-ttu-id="4b6de-115">- Mer information finns i [Konfigurera jobbkort för enheter](../production-control/config-job-card-device.md).</span><span class="sxs-lookup"><span data-stu-id="4b6de-115">- For more information, see [Configure job card for devices](../production-control/config-job-card-device.md).</span></span>
+
+- [<span data-ttu-id="4b6de-116">Hämta produktvarianter och spåra dimensioner i modulen lagerställe under mottagning av beläggningsartikel</span><span class="sxs-lookup"><span data-stu-id="4b6de-116">Capture product variants and tracking dimensions in the warehouse app during load item receiving</span></span>](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving)<br> <span data-ttu-id="4b6de-117">- Mer information finns i [Konfigurera mobila enheter för lagerställearbete](../warehousing/configure-mobile-devices-warehouse.md).</span><span class="sxs-lookup"><span data-stu-id="4b6de-117">- For more information, see [Set up mobile devices for warehouse work](../warehousing/configure-mobile-devices-warehouse.md).</span></span>
+
+- <span data-ttu-id="4b6de-118">Kostnadsberäkningsnivå (ny strukturlistenivå)</span><span class="sxs-lookup"><span data-stu-id="4b6de-118">Cost calculation level (new BOM level)</span></span><br> <span data-ttu-id="4b6de-119">- Mer information finns i [Kostnadsberäkningsnivå](../cost-management/cost-calculation-level.md).</span><span class="sxs-lookup"><span data-stu-id="4b6de-119">- For more information, see [Cost calculation level](../cost-management/cost-calculation-level.md).</span></span>
+
+- [<span data-ttu-id="4b6de-120">Kundportal för Dynamics 365 Supply Chain Management</span><span class="sxs-lookup"><span data-stu-id="4b6de-120">Customer portal for Dynamics 365 Supply Chain Management</span></span>](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/customer-self-service-experiences)<br> <span data-ttu-id="4b6de-121">- Mer information finns i [Kundportal för Dynamics 365 Supply Chain Management översikt](../sales-marketing/customer-portal-overview.md).</span><span class="sxs-lookup"><span data-stu-id="4b6de-121">- For more information, see [Customer portal for Dynamics 365 Supply Chain Management overview](../sales-marketing/customer-portal-overview.md).</span></span>
+
+- [<span data-ttu-id="4b6de-122">Kärninsikter för IoT-intelligens</span><span class="sxs-lookup"><span data-stu-id="4b6de-122">IoT intelligence core insights</span></span>](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> <span data-ttu-id="4b6de-123">- Mer information finns i [Startsida för IoT-intelligens](../iot/iot-intelligence-home-page.md).</span><span class="sxs-lookup"><span data-stu-id="4b6de-123">- For more information, see [IoT Intelligence home page](../iot/iot-intelligence-home-page.md).</span></span>
+
+- [<span data-ttu-id="4b6de-124">Förbättringar av inleverans av ID-nummer med distributionslagerappen (fortsättning)</span><span class="sxs-lookup"><span data-stu-id="4b6de-124">License plate receiving enhancements for the warehouse app (continued)</span></span>](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> <span data-ttu-id="4b6de-125">- Mer information finns i [Inleverans av ID-nummer du via distributionslagerappen](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).</span><span class="sxs-lookup"><span data-stu-id="4b6de-125">- For more information, see [License plate receiving via the warehouse app](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).</span></span>
+
+- [<span data-ttu-id="4b6de-126">Massdistribution för Warehouse mobile app</span><span class="sxs-lookup"><span data-stu-id="4b6de-126">Mass deployment for Warehouse mobile app</span></span>](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> <span data-ttu-id="4b6de-127">- Mer information finns i [Installera och konfigurera översikt över lagerställeappen](../warehousing/install-configure-warehousing-app.md).</span><span class="sxs-lookup"><span data-stu-id="4b6de-127">- For more information, see [Install and configure the warehouse app overview](../warehousing/install-configure-warehousing-app.md).</span></span>
+
+- [<span data-ttu-id="4b6de-128">Maximal körningstid för jobbet Rensning av behållningsposter för lagerstyrning</span><span class="sxs-lookup"><span data-stu-id="4b6de-128">Maximum execution time for the warehouse management on-hand entries cleanup job</span></span>](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> <span data-ttu-id="4b6de-129">- För mer information, se [Jobbet Rensning av behållningsposter för distributionslagerhantering](../warehousing/onhand-cleanup.md).</span><span class="sxs-lookup"><span data-stu-id="4b6de-129">- For more information, see [Warehouse management on-hand entries cleanup job](../warehousing/onhand-cleanup.md).</span></span>
+
+- [<span data-ttu-id="4b6de-130">Planeringsoptimeringsstöd för inköpshandelsavtal</span><span class="sxs-lookup"><span data-stu-id="4b6de-130">Planning Optimization support for purchase trade agreements</span></span>](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements)<br> <span data-ttu-id="4b6de-131">- För mer information, se [Huvudplanering med inköpshandelsavtal](../master-planning/planning-optimization/purchase-trade-agreement.md).</span><span class="sxs-lookup"><span data-stu-id="4b6de-131">- For more information, see [Master planning with purchase trade agreements](../master-planning/planning-optimization/purchase-trade-agreement.md).</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="4b6de-132">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="4b6de-132">Additional resources</span></span>
+
+### <a name="platform-updates-for-finance-and-operations-apps"></a><span data-ttu-id="4b6de-133">Plattformsuppdateringar för Finance and Operations-appar</span><span class="sxs-lookup"><span data-stu-id="4b6de-133">Platform updates for Finance and Operations apps</span></span>
+
+<span data-ttu-id="4b6de-134">Microsoft Dynamics 365 Supply Chain Management 10.0.12 inkluderar plattformsuppdateringar.</span><span class="sxs-lookup"><span data-stu-id="4b6de-134">Microsoft Dynamics 365 Supply Chain Management 10.0.12 includes platform updates.</span></span> <span data-ttu-id="4b6de-135">Mer information finns i [plattformsuppdateringar för version 10.0.12 av Finance and Operations appar (augusti 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).</span><span class="sxs-lookup"><span data-stu-id="4b6de-135">To learn more, see [Platform updates for version 10.0.12 of Finance and Operations apps (August 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).</span></span>
+
+### <a name="bug-fixes"></a><span data-ttu-id="4b6de-136">Felkorrigeringar</span><span class="sxs-lookup"><span data-stu-id="4b6de-136">Bug fixes</span></span>
+
+<span data-ttu-id="4b6de-137">Om du vill ha information om felkorrigeringar som ingår i varje uppdatering som ingår i 10.0.12 loggar du in på Lifecycle Services (LCS) och visar [KB-artikel](https://fix.lcs.dynamics.com/Issue/Details?bugId=453382&dbType=3&qc=a68cf77635c0ab926e7b1b75c6925c82a23058c524c4d728ba8b30fedaf41746).</span><span class="sxs-lookup"><span data-stu-id="4b6de-137">For information about the bug fixes included in each of the updates that are part of 10.0.12, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=453382&dbType=3&qc=a68cf77635c0ab926e7b1b75c6925c82a23058c524c4d728ba8b30fedaf41746).</span></span>
+
+### <a name="dynamics-365-2020-release-wave-1-plan"></a><span data-ttu-id="4b6de-138">Dynamics 365: 2020 utgivningsvåg 1 plan</span><span class="sxs-lookup"><span data-stu-id="4b6de-138">Dynamics 365: 2020 release wave 1 plan</span></span>
+
+<span data-ttu-id="4b6de-139">Har du frågor om nya och kommande funktioner i våra affärsappar eller plattformen?</span><span class="sxs-lookup"><span data-stu-id="4b6de-139">Wondering about upcoming and recently released capabilities in any of our business apps or platform?</span></span>
+
+<span data-ttu-id="4b6de-140">Se [Dynamics 365: 2020 utgivningsvåg 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index).</span><span class="sxs-lookup"><span data-stu-id="4b6de-140">Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index).</span></span> <span data-ttu-id="4b6de-141">Vi har sammanställt all information som du kan tänkas behöva på ett enskilt dokument som du kan använda för din planering.</span><span class="sxs-lookup"><span data-stu-id="4b6de-141">We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.</span></span>
+
+### <a name="removed-and-deprecated-supply-chain-management-features"></a><span data-ttu-id="4b6de-142">Borttagna och inaktuella funktioner för Supply Chain Management</span><span class="sxs-lookup"><span data-stu-id="4b6de-142">Removed and deprecated Supply Chain Management features</span></span>
+
+<span data-ttu-id="4b6de-143">De [borttagna eller föråldrade funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) i ämnet beskriver funktioner som har schemalagts eller är planerade att tas bort eller inaktuellt för Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="4b6de-143">The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.</span></span>
+
+- <span data-ttu-id="4b6de-144">En *borttagen* funktion är inte längre tillgänglig i produkten.</span><span class="sxs-lookup"><span data-stu-id="4b6de-144">A *removed* feature is no longer available in the product.</span></span>
+- <span data-ttu-id="4b6de-145">En *borttagen* funktion är inte i aktiv utveckling och kan tas bort i en kommande uppdatering.</span><span class="sxs-lookup"><span data-stu-id="4b6de-145">A *deprecated* feature is not in active development and may be removed in a future update.</span></span>
+
+<span data-ttu-id="4b6de-146">Innan någon funktion tas bort från produkten visas understrykningsmeddelandet i ämnet [borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före avhämtningen.</span><span class="sxs-lookup"><span data-stu-id="4b6de-146">Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic 12 months prior to the removal.</span></span>
+
+<span data-ttu-id="4b6de-147">För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader.</span><span class="sxs-lookup"><span data-stu-id="4b6de-147">For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months.</span></span> <span data-ttu-id="4b6de-148">Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.</span><span class="sxs-lookup"><span data-stu-id="4b6de-148">Typically, these are functional updates that need to be made to the compiler.</span></span>

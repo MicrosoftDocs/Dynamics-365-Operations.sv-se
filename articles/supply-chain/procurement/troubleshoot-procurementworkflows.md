@@ -1,0 +1,82 @@
+---
+title: Felsök anskaffnings- och källarbetsflöden
+description: I det här avsnittet beskrivs hur du åtgärdar problem som kan uppstå när du arbetar med anskaffnings- och källarbetsflöden.
+author: SmithaNataraj
+manager: tfehr
+ms.date: 09/16/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: PurchTable, PurchTablePart
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.search.industry: Manufacturing
+ms.author: smnatara
+ms.search.validFrom: 2020-9-16
+ms.dyn365.ops.version: Release 10.0.14
+ms.openlocfilehash: cdedc45b8f057310801f134104156a732fb58d86
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4438094"
+---
+# <a name="troubleshoot-procurement-and-sourcing-workflows"></a><span data-ttu-id="16bfc-103">Felsök anskaffnings- och källarbetsflöden</span><span class="sxs-lookup"><span data-stu-id="16bfc-103">Troubleshoot procurement and sourcing workflows</span></span>
+
+<span data-ttu-id="16bfc-104">I det här avsnittet beskrivs hur du åtgärdar problem som kan uppstå när du arbetar med anskaffnings- och källarbetsflöden.</span><span class="sxs-lookup"><span data-stu-id="16bfc-104">This topic describes how to fix issues that you might encounter while you work with procurement and sourcing workflows.</span></span>
+
+## <a name="error-when-re-submitting-a-purchase-order-to-the-workflow-after-a-change-changes-to-purchase-order-x-are-allowed-only-in-a-draft-state-when-change-management-is-activated"></a><span data-ttu-id="16bfc-105">Ett fel uppstod när en inköpsorder skickas igen till arbetsflödet efter en ändring: "ändringar av inköpsordern X tillåts endast i utkastläge när ändringshanteringen aktiveras"</span><span class="sxs-lookup"><span data-stu-id="16bfc-105">Error when re-submitting a purchase order to the workflow after a change: "Changes to purchase order X are allowed only in a Draft state when change management is activated"</span></span>
+
+<span data-ttu-id="16bfc-106">Det här problemet uppstår endast om inköpsordern har statusen *bekräftat* innan du begärde ändringar.</span><span class="sxs-lookup"><span data-stu-id="16bfc-106">This issue occurs only if the purchase order was in a *Confirmed* state before you requested changes.</span></span> <span data-ttu-id="16bfc-107">Om du begär ändringar medan inköpsordern är i ett tillstånd *godkänt* kan arbetsflödet bearbetas.</span><span class="sxs-lookup"><span data-stu-id="16bfc-107">If you request changes while the purchase order is in an *Approved* state, the workflow can be processed successfully.</span></span>
+
+### <a name="error-description"></a><span data-ttu-id="16bfc-108">Felbeskrivning</span><span class="sxs-lookup"><span data-stu-id="16bfc-108">Error description</span></span>
+
+<span data-ttu-id="16bfc-109">Följande fel uppstår i arbetsflödet när en inköpsorder skickas igen efter en ändring:</span><span class="sxs-lookup"><span data-stu-id="16bfc-109">The following error occurs in the workflow when a purchase order is resubmitted after a change:</span></span>
+
+> <span data-ttu-id="16bfc-110">Stoppat (fel): X ++, undantag: ändringar av inköpsordern PO0000569 tillåts endast i utkast när ändringshantering aktiveras på</span><span class="sxs-lookup"><span data-stu-id="16bfc-110">Stopped (error): X++ Exception: Changes to purchase order PO0000569 are only allowed in state Draft when change management is activated at</span></span><br>
+<span data-ttu-id="16bfc-111">SysWorkflowParticipantProvider-resolve</span><span class="sxs-lookup"><span data-stu-id="16bfc-111">SysWorkflowParticipantProvider-resolve</span></span><br>
+<span data-ttu-id="16bfc-112">SysWorkflowParticipantProvider-resolveParticipants</span><span class="sxs-lookup"><span data-stu-id="16bfc-112">SysWorkflowParticipantProvider-resolveParticipants</span></span><br>
+<span data-ttu-id="16bfc-113">SysWorkflowServiceProvider-resolveParticipant</span><span class="sxs-lookup"><span data-stu-id="16bfc-113">SysWorkflowServiceProvider-resolveParticipant</span></span><br>
+<span data-ttu-id="16bfc-114">SysWorkflowQueue-resume</span><span class="sxs-lookup"><span data-stu-id="16bfc-114">SysWorkflowQueue-resume</span></span>
+
+### <a name="issue-resolution"></a><span data-ttu-id="16bfc-115">Problemlösning</span><span class="sxs-lookup"><span data-stu-id="16bfc-115">Issue resolution</span></span>
+
+<span data-ttu-id="16bfc-116">Det här problemet kan uppstå på grund av inkonsekvenser i inköpsorderns fördelningar.</span><span class="sxs-lookup"><span data-stu-id="16bfc-116">This issue can occur because of inconsistency in purchase order distributions.</span></span>
+
+<span data-ttu-id="16bfc-117">Om du vill häva blockeringen och återställa inköpsordern till tillstånd *utkast* går du till **Anskaffning och källa \> Periodiska uppgifter \> Rensa \> Återställningen av inköpsorder**.</span><span class="sxs-lookup"><span data-stu-id="16bfc-117">To unblock this issue and reset the purchase order to a *Draft* state, go to **Procurement and sourcing \> Periodic tasks \> Clean up \> Purchase order distribution reset**.</span></span> <span data-ttu-id="16bfc-118">Mer information finns i följande blogginlägg: [korrigera inköpsorder distributionsfel i Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).</span><span class="sxs-lookup"><span data-stu-id="16bfc-118">For more information, see the following blog post: [Resolve PO distribution errors in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).</span></span>
+
+<span data-ttu-id="16bfc-119">Problemet kommer att åtgärdas genom [den här artikeln i Microsoft Knowledge Base (KB)](https://msdyneng.visualstudio.com/FinOps/_workitems/edit/467138).</span><span class="sxs-lookup"><span data-stu-id="16bfc-119">The issue will be fixed through [this Microsoft Knowledge Base (KB) article](https://msdyneng.visualstudio.com/FinOps/_workitems/edit/467138).</span></span>
+
+## <a name="one-or-more-accounting-distributions-are-either-over-distributed-or-under-distributed"></a><span data-ttu-id="16bfc-120">En eller flera redovisningsfördelningar är antingen överspridda eller underfördelade.</span><span class="sxs-lookup"><span data-stu-id="16bfc-120">One or more accounting distributions are either over-distributed or under-distributed.</span></span>
+
+<span data-ttu-id="16bfc-121">Det här problemet kan uppstå på grund av inkonsekvenser i inköpsorderns fördelningar.</span><span class="sxs-lookup"><span data-stu-id="16bfc-121">This issue can occur because of inconsistency in purchase order distributions.</span></span>
+
+<span data-ttu-id="16bfc-122">Om du vill häva blockeringen och återställa inköpsordern till tillstånd *utkast* går du till **Anskaffning och källa \> Periodiska uppgifter \> Rensa \> Återställningen av inköpsorder**.</span><span class="sxs-lookup"><span data-stu-id="16bfc-122">To unblock this issue and reset the purchase order to a *Draft* state, go to **Procurement and sourcing \> Periodic tasks \> Clean up \> Purchase order distribution reset**.</span></span> <span data-ttu-id="16bfc-123">Mer information finns i följande blogginlägg: [korrigera inköpsorder distributionsfel i Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).</span><span class="sxs-lookup"><span data-stu-id="16bfc-123">For more information, see the following blog post: [Resolve PO distribution errors in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).</span></span>
+
+## <a name="if-a-delivery-remainder-is-canceled-on-a-purchase-order-where-change-management-is-turned-on-the-purchase-order-goes-to-a-confirmed-state"></a><span data-ttu-id="16bfc-124">Om en leveranspåminnelse annulleras på en inköpsorder där ändringshantering har aktiverats, skickas inköpsordern till ett bekräftat tillstånd.</span><span class="sxs-lookup"><span data-stu-id="16bfc-124">If a delivery remainder is canceled on a purchase order where change management is turned on, the purchase order goes to a Confirmed state.</span></span>
+
+### <a name="issue-description"></a><span data-ttu-id="16bfc-125">Problembeskrivning</span><span class="sxs-lookup"><span data-stu-id="16bfc-125">Issue description</span></span>
+
+<span data-ttu-id="16bfc-126">För en inköpsorder som är föremål för ändringshantering, om den enda ändringen som begärs är annulleringen av en leverans som rest på en eller flera av raderna, skickas inköpsordern direkt till ett tillstånd *bekräftat* när den godkänns och ingen journal skapas.</span><span class="sxs-lookup"><span data-stu-id="16bfc-126">For a purchase order that is subject to change management, if the only change that is requested is the cancellation of a delivery remainder on one or more of the lines, the purchase order will go directly to a *Confirmed* state when it's approved, and no journal will be created.</span></span>
+
+### <a name="issue-resolution"></a><span data-ttu-id="16bfc-127">Problemlösning</span><span class="sxs-lookup"><span data-stu-id="16bfc-127">Issue resolution</span></span>
+
+<span data-ttu-id="16bfc-128">Annullering av en leveranspåminnelse påverkar inte innehållet i bekräftelsejournalen.</span><span class="sxs-lookup"><span data-stu-id="16bfc-128">Cancellation of a delivery remainder doesn't affect the contents of the confirmation journal.</span></span> <span data-ttu-id="16bfc-129">Den här funktionen ska användas när raden har inlevererats delvis och den resterande kvaliteten ska annulleras i processteg efter det att inköpsordern har bekräftats med leverantören.</span><span class="sxs-lookup"><span data-stu-id="16bfc-129">This functionality should be used when the line has been partially received, and the remainder quality should be canceled in the process step after the purchase order has been confirmed with the vendor.</span></span>
+
+<span data-ttu-id="16bfc-130">Om detta ska avspeglas på inköpsorderbekräftelsen ska kvantiteten justeras på inköpsorderraden så att bekräftelsen blir nödvändig.</span><span class="sxs-lookup"><span data-stu-id="16bfc-130">If this should be reflected on the purchase order confirmation, the quantity should be adjusted on the purchase order line so that the confirmation will be required.</span></span> <span data-ttu-id="16bfc-131">Om inget har mottagits på raden kan du ta bort kvantiteten.</span><span class="sxs-lookup"><span data-stu-id="16bfc-131">Alternatively, if nothing has been received on the line, the quantity can be removed.</span></span> <span data-ttu-id="16bfc-132">I det här fallet krävs en ombekräftelse.</span><span class="sxs-lookup"><span data-stu-id="16bfc-132">In this case, reconfirmation will be required.</span></span>
+
+## <a name="canceled-purchase-orders-appear-in-the-draft-list-in-the-purchase-order-preparation-workspace"></a><span data-ttu-id="16bfc-133">Annullerade inköpsorder visas i utkast listan på arbetsytan för förberedelse av inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="16bfc-133">Canceled purchase orders appear in the draft list in the Purchase order preparation workspace.</span></span>
+
+### <a name="issue-description"></a><span data-ttu-id="16bfc-134">Problembeskrivning</span><span class="sxs-lookup"><span data-stu-id="16bfc-134">Issue description</span></span>
+
+<span data-ttu-id="16bfc-135">När du har avbrutit inköpsorder som *bekräftat* visas de inställda inköpsorder fortfarande i listan över utkast till inköpsorder i arbetsordern **Inköpsorderförberedelse**.</span><span class="sxs-lookup"><span data-stu-id="16bfc-135">After you cancel purchase orders that were in a *Confirmed* state, the canceled purchase orders still appear in the list of draft purchase orders in the **Purchase order preparation** workspace.</span></span>
+
+### <a name="issue-resolution"></a><span data-ttu-id="16bfc-136">Problemlösning</span><span class="sxs-lookup"><span data-stu-id="16bfc-136">Issue resolution</span></span>
+
+<span data-ttu-id="16bfc-137">Det här problemet uppstår endast för inköpsorder som är föremål för ändringshantering.</span><span class="sxs-lookup"><span data-stu-id="16bfc-137">This issue occurs only for purchase orders that are subject to change management.</span></span> <span data-ttu-id="16bfc-138">Det beror på att annulleringen betraktas som en ändring som måste godkännas.</span><span class="sxs-lookup"><span data-stu-id="16bfc-138">It occurs because the cancellation is considered a change that must be approved.</span></span> <span data-ttu-id="16bfc-139">Godkännandet kan utföras automatiskt av systemet.</span><span class="sxs-lookup"><span data-stu-id="16bfc-139">The approval can be done automatically by the system.</span></span> <span data-ttu-id="16bfc-140">Därför är processen att skicka den annullerade inköpsordern till arbetsflödet för godkännande så att den kan gå till ett *godkänt* tillstånd.</span><span class="sxs-lookup"><span data-stu-id="16bfc-140">Therefore, the process is to submit the canceled purchase order to the approval workflow so that it can go to an *Approved* state.</span></span> <span data-ttu-id="16bfc-141">Vid den tidpunkten visas inköpsordern inte längre i listan med utkast till inköpsorder i arbetsytan **Inköpsorder förberedelse**.</span><span class="sxs-lookup"><span data-stu-id="16bfc-141">At that point, the purchase order will no longer appear in the list of draft purchase orders in the **Purchase order preparation** workspace.</span></span>
+
