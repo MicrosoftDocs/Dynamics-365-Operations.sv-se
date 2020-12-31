@@ -19,11 +19,11 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ceddeda5760d961568d58e7e4805955ea972c586
-ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3106892"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4448135"
 ---
 # <a name="budget-planning-data-allocation"></a>Dataallokering för budgetplanering
 
@@ -34,7 +34,7 @@ Det här avsnittet ger en beskrivning av olika allokeringsmetoder som är tillg�
 Du kan fördela data i en budgetplan på många sätt för att exakt att beskriva de projekterade beloppen.
 
 ## <a name="allocation-methods"></a>Allokeringsmetoder
-Tre allokeringsmetoder (Allokera över perioder, Allokera över dimensioner Använd allokeringsregler för redovisning kan skapa budgetplanrader som baseras på rader i samma budgetplan. Tre andra metoder (Aggregera, Distribuera och Kopiera från budgetplan) kan skapa budgetplanrader i andra budgetplaner. För alla sex allokeringmetoder anger du målscenariot. Målscenariot kan antingen vara samma som källscenariot eller skilja sig från källscenariot. Dessutom kan du ange om nya rader bifogas till budgetplanen eller om de aktuella raderna i budgetplanen ska ersättas.
+Tre allokeringsmetoder (Allokera över perioder, Allokera över dimensioner Använd allokeringsregler för redovisning) kan skapa budgetplanrader som baseras på rader i samma budgetplan. Tre andra metoder (Aggregera, Distribuera och Kopiera från budgetplan) kan skapa budgetplanrader i andra budgetplaner. För alla sex allokeringmetoder anger du målscenariot. Målscenariot kan antingen vara samma som källscenariot eller skilja sig från källscenariot. Dessutom kan du ange om nya rader bifogas till budgetplanen eller om de aktuella raderna i budgetplanen ska ersättas.
 
 > [!NOTE] 
 > Ett unikt scenario ska användas för aggregering som skiljer sig från det scenario som används för distribution eller andra ändringar som har utförts i den överordnade planen.  

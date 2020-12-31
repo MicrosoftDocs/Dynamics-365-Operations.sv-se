@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 464fd211eb5417265f8c737b23456769137a7c13
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 670e6be595fb891408b1b0804c68a41650b0da0b
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772684"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4448226"
 ---
 # <a name="budget-control-overview"></a>Översikt över budgetkontroll
 
@@ -126,4 +126,4 @@ När budgetkontroll aktiveras kommer användarna att få varnings- och felmeddel
 
 Från den här sidan kan användare titta på sidan **Budgetkontrollstatistik efter period** för att se information om tillgänglig budget och reservationer för en vald kombination av budgetkontrolldimensioner. Användarna kan även titta på sidan **Budgetkontrollstatistik** för att se tillgänglig budget för alla kombinationer av ekonomisk dimension som används i budgetkontroll. 
 
-Om budgetkontroll aktiveras för inköpsorder kan budgetchefen använda arbetsområdet **Redovisningsbudgetar och prognoser** för att granska kön för alla obekräftade inköpsorder som har varningar och fel för budgetkontroll. Om budgetchefen har behörigheter för överskriden budget kan han eller hon bekräfta inköpsorder direkt i arbetsområdet.    
+Om budgetkontroll aktiveras för inköpsorder kan budgetchefen använda arbetsområdet **Redovisningsbudgetar och prognoser** för att granska kön för alla obekräftade inköpsorder som har varningar och fel för budgetkontroll. Om budgetchefen har behörigheter för överskriden budget konfigurerade kan inköpsorder bekräftas direkt i arbetsytan.    

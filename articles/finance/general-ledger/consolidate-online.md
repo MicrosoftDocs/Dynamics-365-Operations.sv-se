@@ -17,11 +17,11 @@ ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
 ms.openlocfilehash: 86be6d4cc0af3f2fd92523d4ecd3825f2383fc48
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770745"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4448002"
 ---
 # <a name="online-financial-consolidations"></a>Online ekonomisk konsolidering
 
@@ -29,10 +29,10 @@ ms.locfileid: "2770745"
 
 Det här avsnittet beskriver online ekonomiska konsolideringar i redovisning. Innan du läser det här avsnittet bör du läsa avsnittet [finansiell konsolidering och valutaomräkning - översikt](financial-consolidations-currency-translation.md).
 
-När du har slutfört inställningarna kan du ange detaljerna för konsolideringen på sidan **konsolidera [Online]**. När du är klar kan du klicka på **OK** eller **Batch** för att bearbeta konsolideringen.
+När du har slutfört inställningarna kan du ange detaljerna för konsolideringen på sidan **Konsolidera [Online]**. När du är klar kan du klicka på **OK** eller **Batch** för att bearbeta konsolideringen.
 
-## <a name="criteria"></a>Kriterier
-I fliken **kriterier** på sidan **konsolidera [Online]** kan du definiera kontona, perioder och vilken typ av data som ska konsolideras.
+## <a name="criteria"></a>Villkor
+På fliken **Kriterier** på sidan **Konsolidera [Online]** kan du definiera kontona, perioder och vilken typ av data som ska konsolideras.
 
 ![Fliken Kriterier](./media/criteria-consolidate-online.png "Fliken Kriterier")
 

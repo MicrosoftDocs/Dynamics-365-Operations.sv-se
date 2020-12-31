@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 22acdcfbecc1efe78a1b1be87e40b2e7d23506fc
-ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
+ms.openlocfilehash: 4fc35feb4f3a67ba9c8c70c2d2f8c07cb944b0f6
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759458"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4448230"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Mobil arbetsyta för kostnadskontroll
 
@@ -36,7 +36,7 @@ Denna mobila arbetsyta är avsedd att användas med mobilappen Finance and Opera
 ## <a name="overview"></a>Översikt
 Mobil arbetsyta för **Kostnadskontroll** ger en omedelbar översikt över aktuell prestanda för kostnadsställen genom att jämföra faktiska kostnader mot budgeterade kostnader. Du kan gå ända ner till statusen för enskilda kostnadselement.
 
-Till exempel en medarbetare får en inbjudan till en internationell konferens, men organisationen måste stå för alla resekostnader. Medarbetaren frågar sin chef om han kan delta i konferensen. Chefen öppnar den mobila arbetsytan för **kostnadskontroll** i sin mobiltelefon för att se om budgeten tillåter att medarbetaren deltar i konferensen.
+Till exempel en medarbetare får en inbjudan till en internationell konferens, men organisationen måste stå för alla resekostnader. Medarbetaren frågar sin chef om hon kan delta i konferensen. Chefen öppnar den mobila arbetsytan för **Kostnadskontroll** i sin mobila enhet för att se om budgeten tillåter att medarbetaren deltar i konferensen.
 
 ### <a name="data-security"></a>Datasäkerhet
 Datan i den mobila arbetsytan för **kostnadskontroll** skyddas av användarens autentiseringsuppgifter. Chefer för ett kostnadsställe får endast se data för eget kostnadsställe. Säkerheten för åtkomstnivå hanteras inom modulen **kostnadsredovisning**.
@@ -71,7 +71,7 @@ Den mobila arbetsytan **kostnadskontroll** innehåller följande åtgärder, vye
     -   Information om föregående period.
     -   Information om hittillsvarande år.
 
-    När du väljer en länk visas ett kort för varje kostnadselement. Följande belopp visas på varhje kort: Utfall, Budget, Budgetavvikelse, Budgetavvikelseprocent, Reviderad budget, Reviderad budgetavvikelse samt Reviderad budgetavvikelseprocent.
+    När du väljer en länk visas ett kort för varje kostnadselement. Följande belopp visas på varje kort: Utfall, Budget, Budgetavvikelse, Budgetavvikelseprocent, Reviderad budget, Reviderad budgetavvikelse samt Reviderad budgetavvikelseprocent.
     
     [![Kort för ett kostnadselement ](./media/Cost-controlling.png)](./media/Cost-controlling.png)
 

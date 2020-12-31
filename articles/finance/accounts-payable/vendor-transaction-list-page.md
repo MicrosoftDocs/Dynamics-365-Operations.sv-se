@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1534aab03ac35950e875a1384dfdf2a22bc22546
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 4f4535d08ff1bb6f83172efb4ceada5a7d02ebd4
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978017"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4448235"
 ---
 # <a name="vendor-transactions-list-page"></a>Listsida för leverantörstransaktioner
 
@@ -48,7 +48,7 @@ Knappen **Visa kvittningar** i åtgärdsfönstret ger snabb tillgång till kvitt
 
 ## <a name="global-transactions"></a>Globala transaktioner
 
-Knappen **globala transaktioner** visas även på listsidan **leverantörstransaktioner**. Den här knappen låter dig visa alla transaktioner för en leverantör i alla juridiska personer. Listsidan **leverantörstransaktioner** visar endast transaktioner för de juridiska personer som användaren har tillgång till, baserat på dennes säkerhetsinställningar.
+Knappen **globala transaktioner** visas även på listsidan **leverantörstransaktioner**. Den här knappen låter dig visa alla transaktioner för en leverantör i alla juridiska personer. Listsidan **Leverantörstransaktioner** visar endast transaktioner för de juridiska personer som användaren har tillgång till, baserat på användarens säkerhetsinställningar.
 
 Listsidan visar alla transaktioner för leverantörer som har samma part-ID som leverantören du startade med. Om t.ex. leverantör US-001 i en juridisk person har samma part-ID som leverantör DE-001 i en annan juridisk person, visas alla transaktioner för både leverantörs-ID:n.
 

@@ -19,11 +19,11 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 301f15f1d7d8f0e10bbaf2546fcf727aff284624
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552312"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4447894"
 ---
 # <a name="posting-definition-examples"></a>Exempel: bokföringsdefinitioner
 
@@ -86,7 +86,7 @@ I det här exemplet matchar alla konton, som är en del av kontostrukturen - Res
 ## <a name="example-budget-appropriations"></a>Exempel: Budgetanslag
 När du aktiverar budgettransaktioner genom att välja **Aktivera budgetanslag** på sidan **Allmänna redovisningsparametrar**, måste bokföringsdefinitioner användas för att bokföra budgetregisterposter i redovisningen. När en budgetkontrollkonfiguration är aktiv och aktiveras, kan bokföringsdefinitioner och transaktionbokföringsdefinitioner användas som stöd för registreringen av poster för anslag, ändringar, överföringar, projekt, anläggningstillgångar och leverans- och efterfrågeprognoser i redovisningen. 
 
-Om du vill ställa in en bokföringsdefinition för budgetregisterposter som har budgettypen **Ursprunglig budget**och som har anslag aktiverade, välj modulen **Budget** på sidan **Bokföringsdefinitioner** . Sedan i området **Budget** på sidan **Bokföringsdefinitioner för transaktioner** kan du använda budgetkoder för att koppla bokföringsdefinitionen med budgetregisterposter som ha budgettypen **Ursprunglig budget** 
+Om du vill ställa in en bokföringsdefinition för budgetregisterposter som har budgettypen **Ursprunglig budget** och som har anslag aktiverade, välj modulen **Budget** på sidan **Bokföringsdefinitioner** . Sedan i området **Budget** på sidan **Bokföringsdefinitioner för transaktioner** kan du använda budgetkoder för att koppla bokföringsdefinitionen med budgetregisterposter som ha budgettypen **Ursprunglig budget** 
 
 När budgetanslag och budgeterade bokföringsdefinitioner aktiveras, registreras de här registerposterna för budgetkontroll och i redovisningen.
 

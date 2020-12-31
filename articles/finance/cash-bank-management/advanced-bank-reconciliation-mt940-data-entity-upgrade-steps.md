@@ -18,11 +18,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 65970cdac114b72363d2fbbc08766c99ace00b88
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899383"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4447948"
 ---
 # <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Avancerad MT940-import för bankavstämning - uppgradering för sammansatt dataenhet
 
@@ -55,7 +55,7 @@ Använd följande steg när du vill lägga till bankutdragimportenheten för att
             3.  Överföra datafil = ny version SampleBankCompositeEntity.xml.
             4.  Klicka på **Ja** om du vill skriva över den befintliga filen.
             5.  Klicka på **Ja** om du vill generera en ny mappning.
-            6.  Kontrollera att S**equenceNumber** mappas.
+            6.  Kontrollera att S **equenceNumber** mappas.
                 -   Klicka på **Visa karta** på bankutdraget.
                 -   Kontrollera att **SequenceNumber** mappas från Källa till Mellanlagring.
 

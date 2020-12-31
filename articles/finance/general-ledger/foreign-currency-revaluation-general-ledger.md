@@ -19,11 +19,11 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 798e26badfd2a1f44891ea92f277de327fbed9c7
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006223"
+ms.locfileid: "4448174"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Omvärdering i utländsk valuta för huvudbok
 
@@ -41,15 +41,15 @@ När du kör omvärderingsprocessen kommer saldot i varje huvudkonto som bokför
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Förbereda en körning av omvärdering i utländsk valuta
 Innan du kan köra omvärderingsprocessen måste följande inställningar göras.
 
--   På sidan **Huvudkonto** :
+-   På sidan **Huvudkonto**:
 -   Om huvudkontot ska omvärderas i redovisningen, välj då **Omräkning i utländsk valuta**. Om huvudkontot inte ska omvärderas (till exempel för kundreskontra och leverantörsreskontra, om dessa omvärderats i redovisningsjournalerna), rensa då detta alternativ.
--   Om huvudkontot valts för omvärdering, ange då **valutakurstyp**. Denna valutakurstyp kommer att användas för omvärdering av huvudkontot. Ett separat fält, **Valutakurstyp för ekonomisk rapportering** , finns tillgängligt för ekonomirapporteringen. De två fälten hålls inte synkroniserade, vilket gör att olika valutakurstyper kan användas för omvärdering och ekonomisk rapportering.
+-   Om huvudkontot valts för omvärdering, ange då **valutakurstyp**. Denna valutakurstyp kommer att användas för omvärdering av huvudkontot. Ett separat fält, **Valutakurstyp för ekonomisk rapportering**, finns tillgängligt för ekonomirapporteringen. De två fälten hålls inte synkroniserade, vilket gör att olika valutakurstyper kan användas för omvärdering och ekonomisk rapportering.
 
--   På sidan **Huvudbok** :
+-   På sidan **Huvudbok**:
 -   Ange **valutakurstyp**. Om valutakurstypen inte definieras på huvudkontot, kommer denna valutakurstyp att användas i samband med omräkning i utländsk valuta.
 -   Ange konton för realiserad vinst, realiserad förlust, orealiserad vinst och orealiserad förlust för valutaomvärdering. Kontona för realiserad vinst och realiserad förlust används för kvittade kundreskontra- och leverantörsreskontratransaktioner, och kontona för orealiserad vinst och orealiserad förlust används för öppna transaktioner samt huvudkonton för redovisning.
 
--   På sidan **Valutaomvärderingskonton** :
+-   På sidan **Valutaomvärderingskonton**:
 -   Välj olika konton för omvärdering valuta för respektive valuta och företag. Om inga konton har definierats används kontona från sidan **Redovisning**.
 
 ## <a name="process-foreign-currency-revaluation"></a>Bearbeta en omvärdering i utländsk valuta

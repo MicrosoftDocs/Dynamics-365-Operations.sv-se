@@ -17,11 +17,11 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 7f721a05c8b74f1cfcf43177b73129751483650e
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3144946"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4448034"
 ---
 # <a name="post-periodic-journals"></a>Bokför periodiska journaler
 
@@ -31,7 +31,7 @@ Periodiska journaler kallas ibland återkommande journaler eftersom beloppet, te
 
 1. Gå till **Navigeringsfönstret > Moduler > Redovisning > Periodiska uppgifter > Periodiska journaler**.
 2. Klicka på **Ny**.
-3. I fältet **Namn**anger eller väljer du ett värde.
+3. I fältet **Namn** anger eller väljer du ett värde.
 4. Klicka på länken på den valda raden i listan.
 5. I fältet **Beskrivning** anger du ett värde. Beskrivningen är namnet på den periodiska journalen när den hämtas senare, så se till att ge den ett relevant namn.
 6. Klicka på **Rader** i **åtgärdsfönstret**. En periodisk journal vanligtvis kommer att innehålla flera journalrader. Men i den här uppgiftguiden ska vi bara lägga till en rad.
@@ -47,7 +47,7 @@ Periodiska journaler kallas ibland återkommande journaler eftersom beloppet, te
 16. Klicka på **Spara**.
 17. Gå till **Navigeringsfönstret > Moduler > Redovisning > Journalposter > Allmänna journaler**.
 18. Klicka på **Ny**.
-19. I fältet **Namn**anger eller väljer du ett värde.
+19. I fältet **Namn** anger eller väljer du ett värde.
 20. Hitta och markera önskad post i listan.
 21. Klicka på länken på den valda raden i listan.
 22. I fältet **Beskrivning** anger du ett värde.

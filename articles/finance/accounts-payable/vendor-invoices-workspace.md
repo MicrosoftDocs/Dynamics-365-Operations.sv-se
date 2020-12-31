@@ -18,11 +18,11 @@ ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
 ms.openlocfilehash: a4ba676d9b6df69cf0a91862bcc4d2837b7cb69e
-ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
+ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4000805"
+ms.locfileid: "4448167"
 ---
 # <a name="vendor-invoice-entry-workspace"></a>Arbetsyta för registrering av leverantörsfaktura
 
@@ -48,7 +48,7 @@ Du måste slutföra den här inställningen innan data kan visas i Power BI-visu
 8. Granska de återstående, valfria inställningarna och konfigurera dem enligt organisationens krav.
 9. Gå till **Systemadministration \> Inställningar \> Systemparametrar** och ställ in **Systemvaluta** och **Systemets valutakurs**.
 10. Gå till **Redovisning \> Inställningar \> Redovisning** och ange fälten **redovisningsvaluta** och **valutakurstyp**.
-11. Gå till **Redovisning \> Valutor \> Valutakurser** , och ange valutakurserna mellan transaktionsvalutan och redovisningsvalutan och mellan redovisningsvalutan och systemvalutan.
+11. Gå till **Redovisning \> Valutor \> Valutakurser**, och ange valutakurserna mellan transaktionsvalutan och redovisningsvalutan och mellan redovisningsvalutan och systemvalutan.
 12. Gå till **Systemadministration \> Inställningar \> Enhetslagring** och sök efter **Åtgärd för automatisering av leverantörsfaktura**. Välj **uppdatera**.
 
 Om du vill visa den information som visas på arbetsytan måste du ha säkerhetsrollen Leverantörsreskontrachef eller Leverantörsreskontraansvarig.
@@ -72,7 +72,7 @@ Panelerna i avsnittet **Sammanfattning av väntande fakturor** i vyn **Mitt arbe
 
 Om du vill använda panelen **Återställ leverantörsfakturor** måste funktionen vara aktiverad i leverantörsparametrar. Gå till **leverantörsreskontra \> parametrar för leverantörsreskontra** och ställ sedan in fliken **faktura** ange alternativet **tillåt återställning av leverantörsfaktura** till **Ja**.
 
-När funktionen är aktiverad visas också tre paneler som grupperats på arbetsytan i ett avsnitt med namnet **journaler**. Panelerna heter **Journaler** , **Journaler - tilldelade till mig** och **Fakturapool**. 
+När funktionen är aktiverad visas också tre paneler som grupperats på arbetsytan i ett avsnitt med namnet **journaler**. Panelerna heter **Journaler**, **Journaler - tilldelade till mig** och **Fakturapool**. 
 
 Informationen i avsnittet **Sammanfattning av väntande fakturor** för företaget som anges som standardföretag för inloggningen.
 
@@ -102,7 +102,7 @@ I rutnätet **Söka efter inköpsorder** kan du använda fältet **Sök** för a
 
 ### <a name="related-information"></a>Relaterad information
 
-Du kan visa information om bokförda fakturor genom att använda länkarna på höger sida av arbetsytan. Dessa länkar inkluderar **Öppna leverantörsfakturor** , **Fakturajournal** och **Fakturahistorik och matchningsuppgifter**. I avsnittet **leverantörer** kan du komma åt en filtrerad lista som visar alla leverantörer som är i vänteläge, eller så kan du använda **Alla leverantörer**. Länkarna **Alla inköpsorder** och **Öppna för förskottsbetalning** är också tillgängliga.
+Du kan visa information om bokförda fakturor genom att använda länkarna på höger sida av arbetsytan. Dessa länkar inkluderar **Öppna leverantörsfakturor**, **Fakturajournal** och **Fakturahistorik och matchningsuppgifter**. I avsnittet **leverantörer** kan du komma åt en filtrerad lista som visar alla leverantörer som är i vänteläge, eller så kan du använda **Alla leverantörer**. Länkarna **Alla inköpsorder** och **Öppna för förskottsbetalning** är också tillgängliga.
 
 ### <a name="analytics--all-companies-page"></a>Sidan analyser – alla företag
 

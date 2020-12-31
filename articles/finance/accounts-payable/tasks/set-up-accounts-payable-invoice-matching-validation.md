@@ -17,11 +17,11 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: a101edd9e25fba1aa2325cb2193c6ea56282c9d1
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143798"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4447949"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Ställ in validering av Fakturamatchning för leverantörsreskontra
 
@@ -52,7 +52,7 @@ Fyra olika typer av matchningsvalideringar är tillgängliga.
 8. Välj ett värde som ska användas som standardpolicy för den juridiska person som du arbetar med i fältet **Radmatchningspolicy**. **Krävs ej** innebär att det inte finns någon verifiering av enskilda fakturaradspriser till inköpsorderpris- eller fakturakvantiteter till obligatoriska följesedelns kvantiteter. **Tvåvägsmatchning** betyder att verifieringen med fakturarader krävs men endast inköpsordern och leverantörens fakturadokumenten ingår i verifieringen. Produktinleveransen faktorer inte till de matcha de valideringar. **Trevägsmatchning** betyder att fakturans nettoenhetspris ska jämföras med inköpsorderns netto enhetspris och matcha den produktinleveranskvantiteten ska jämföras med kvantiteten.
 9. Om du vill tillåta en annan matchningsnivå för en artikel, leverantör, leverantör och artikel i kombination eller en inköpsorderrad, väljer du ett värde i fältet **Tillåt åsidosättning av matchningspolicy**. Radmatchningspolicyn för den juridiska personen kan åsidosättas för en specifik leverantör, artikel eller kombination av leverantör och artikel på sidan **matchningspolicy**.
     * Om du använder en rad matchningspolicy av tvåvägs matcha eller trevägsmatcha, kan du ange procentsatser för pristoleranser för dina juridisk person, artiklar och leverantörer på sidan för **artikelpristolerans**. Den juridiska personens standardpristolerans sätts till noll procent för tvåvägs- och trevägsmatchning. När leverantörsfakturor jämförs med informationen i inköpsorder görs en sökning efter tillämpliga toleransprocentsatser.   
-10. Välj ett värde i fältet **Matcha prissummor** för att matcha prissummor för radartiklar på fakturor. Den här typen av att de är praktiskt, när leverantören skickar flera fakturor för samma inköpsorderraden. Du kan jämföra prisinformation för nettobeloppet för varje rad på fakturan, och alla väntande och tidigare bokförda fakturarader, med nettobeloppet för den motsvarande inköpsorderraden.  Alternativen är **ingen**, **procent**, **belopp**eller **procent och belopp**.
+10. Välj ett värde i fältet **Matcha prissummor** för att matcha prissummor för radartiklar på fakturor. Den här typen av att de är praktiskt, när leverantören skickar flera fakturor för samma inköpsorderraden. Du kan jämföra prisinformation för nettobeloppet för varje rad på fakturan, och alla väntande och tidigare bokförda fakturarader, med nettobeloppet för den motsvarande inköpsorderraden.  Alternativen är **ingen**, **procent**, **belopp** eller **procent och belopp**.
 11. I fältet **Toleransprocent för inköpsprissumma** anger du en procentsats av den avvikelse som du godtar. Det här fältet är bara tillgängligt om **Matcha prissummor** anges **Procentandel** eller **Procentandel och belopp**.
 12. I fältet **Tolerans för inköpsprissumma**, ange ett belopp i redovisningsvalutan. Det här fältet är bara tillgängligt om **Matcha prissummor** anges **Belopp** eller **Procentandel och belopp**.
 13. I fältet **Visa matchningsikon för prissumma**, välj om en ikon visas, om avvikelser för fakturamatchning överskrider toleransen för nettopriset per enhet i fältet . Ikonen kan visas när en positiv diskrepans överskrider toleransen, eller när antingen en positiv eller negativ diskrepans överskrider toleransen.

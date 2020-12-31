@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 38dc261a74eea9e45036961fdfecea1465b238de
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: c54afd0d94a56f6306a11e03448cc66c168390c2
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977705"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4448231"
 ---
 # <a name="cost-control-workspace"></a>Arbetsyta för kostnadskontroll 
 
@@ -83,7 +83,7 @@ Värdena i de markerade kolumnerna kommer att multipliceras med de valda värden
 | Aktuell period       | Saldot för den aktuella räkenskapsperioden visas.<blockquote>[!NOTE]<br>Som standard bestäms innevarande period av sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod. Det valda värdet representerar sedan innevarande perioden.</blockquote> |
 | Föregående period      | Saldot för den föregående räkenskapsperioden visas. Följande formel används:<br>Innevarande räkenskapsperiod - 1<blockquote>[!NOTE]<br>Som standard härleds föregående period från sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod som innevarande period. **Föregående period** räknas sedan i enlighet med detta.</blockquote> |
 | Början på året till dagens datum         | Den för hittills i år visas. Följande formel används:<br>YearToDate (innevarande räkenskapsperiod)<blockquote>[!NOTE]<br>Som standard bestäms innevarande period av sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod. Det valda värdet representerar sedan den aktuella perioden och värdet **Hittills i år** uppdateras.</blockquote> |
-| Hittills i år, genomsnitt | Genomsnittet för hittills i år visas. Följande formel används:<br>(YearToDate [innevarande räkenskapsperiod]) ÷ (antal [innevarande räkenskapsperiod])<p><strong>Exempel</strong></p><ul><li>**Statistisk dimensionsmedlem:** Heltidsmedarbetare</li><li>**Aktuellt datum:** 2017-03-21</li><li>**Period:** räkenskapsperiod 1, räkenskapsperiod 2, räkenskapsperiod 3</li><li>**Storlek:** 10, 10, 12</li></ul>I det här fallet **Hittills i år, genomsnitt** = (10 + 10 + 12) ÷ 3 = 10,67<p>Värdet **Hittills i år, genomsnitt** kan beräknas för dimensionsmedlemmar för kostnadselement och statistiska dimensionsmedlemmar.</p><blockquote>[!NOTE]<br>Som standard bestäms innevarande period av sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod. Det valda värdet representerar sedan den aktuella perioden och värdet **Hittills i år** och **Hittills i år, genomsnitt** uppdateras.</blockquote> |
+| Hittills i år, genomsnitt | Genomsnittet för hittills i år visas. Följande formel används:<br>(YearToDate [innevarande räkenskapsperiod]) ÷ (Count [innevarande räkenskapsperiod])<p><strong>Exempel</strong></p><ul><li>**Statistisk dimensionsmedlem:** Heltidsmedarbetare</li><li>**Aktuellt datum:** 2017-03-21</li><li>**Period:** räkenskapsperiod 1, räkenskapsperiod 2, räkenskapsperiod 3</li><li>**Storlek:** 10, 10, 12</li></ul>I det här fallet **Hittills i år, genomsnitt** = (10 + 10 + 12) ÷ 3 = 10,67<p>Värdet **Hittills i år, genomsnitt** kan beräknas för dimensionsmedlemmar för kostnadselement och statistiska dimensionsmedlemmar.</p><blockquote>[!NOTE]<br>Som standard bestäms innevarande period av sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod. Det valda värdet representerar sedan den aktuella perioden och värdet **Hittills i år** och **Hittills i år, genomsnitt** uppdateras.</blockquote> |
 
 ### <a name="columns-to-display-for-costs"></a>Kolumner att visa för kostnader
 
@@ -145,7 +145,7 @@ Användare kan klicka på **kostnadstransaktioner** för att gå till postens de
 
 ![Kostnadsposter](./media/cost-entries.png)
 
-Hyra är till exempel en utgift som distribueras till kostnadsställen. En användare som vill förstå som hans eller hennes kostnadsställe ska bära kostnaden hyra går ner för att se hur hyra beräknas.
+Hyra är till exempel en utgift som distribueras till kostnadsställen. En användare som vill förstå om hans eller hennes kostnadsställe ska bära hyreskostnaden kan öka detaljnivån för att se hur hyra beräknas.
 
 Om användaren klickar på **Allokeringsunderlag** på sidan **kostnadstransaktioner** visas en dialogruta. Användare kan sedan tilldela allokeringsunderlaget till regeln och visa motsvarande statistiska mätningar som är registrerade för perioden.
 

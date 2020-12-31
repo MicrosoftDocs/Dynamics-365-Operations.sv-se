@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: da4353849b053ff94cf1fda7a03568438d0111da
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015017"
+ms.locfileid: "4448178"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Kvitta en delkundbetalning som har rabatter på kreditfakturor.
 
@@ -51,11 +51,11 @@ Från sidan **Kundtransaktioner** öppnar Arnie sidan **Kvitta transaktioner**. 
 
 Information om rabatten visas längst ned på sidan **Kvitta transaktioner**.
 
-- **Kassarabattdatum** : 7/12/2015 
-- **Kassarabattbelopp** : -1,00     
-- **Använd kassarabatt** : Normal    
-- **Utnyttjad kassarabatt** : 0.00      
-- **Kassarabattbelopp att utnyttja** : -1,00     
+- **Kassarabattdatum**: 7/12/2015 
+- **Kassarabattbelopp**: -1,00     
+- **Använd kassarabatt**: Normal    
+- **Utnyttjad kassarabatt**: 0.00      
+- **Kassarabattbelopp att utnyttja**: -1,00     
 
 Kvittningen blir 100,00 och ska inkludera en betalning på 99,00 och en rabatt på 1,00.
 

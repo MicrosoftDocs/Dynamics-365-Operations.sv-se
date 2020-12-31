@@ -19,11 +19,11 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
 ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3058027"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4448063"
 ---
 # <a name="one-voucher"></a>En verifikation
 
@@ -84,7 +84,7 @@ Utifrån samtal med våra kunder har Microsoft samlat följande lista med scenar
 Följande scenarier kan endast uppnås genom att använda funktionen för en verifikation. Om din organisation har något av dessa scenarier, måste du aktivera flera transaktioner som ska registreras på en verifikation genom att ändra inställningen av parametern **tillåta flera transaktioner i en verifikation** på sidan **allmänna redovisningsparametrar**. Dessa funktionella luckor fylls med andra funktioner i senare versioner.
 
 > [!Note]
-> [I följande scenarier måste fältet **Tillåt flera transaktioner inom en verifikation** anges till Ja på snabbfliken **Allmänt** på sidan **Allmänna huvudboksparametrar**.]
+> [I följande scenarier måste fältet **Tillåt flera transaktioner inom en verifikation** anges till Ja på snabbfliken **Allmänt** på sidan **Redovisningsparametrar**.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Bokför kund- eller leverantörsbetalningar i sammanfattningsformulär till ett bankkonto
 

@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f9ae9218a85c50582c8c4999da463833fc91d260
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006125"
+ms.locfileid: "4448173"
 ---
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Kvitta en kunddelbetalning och hela slutbetalningen före rabattdatumet
 
@@ -112,7 +112,7 @@ Arnie stänger sidan **Kvitta transaktioner**. En betalningsrad för 495,00 skap
 | RAB-10010 |  Kassarabatt   | 2015/07/01  |         |                                      | 5,00                                  | 0,00    | USD      |
 
 ## <a name="payment-for-the-remaining-amount"></a>Betalning för återstående belopp
-Kund 4028 betalar det resterande beloppet på 495,00 den 8 juli vilket infaller under kassarabattperioden. Arnie skapar betalningsjournalen den 8 juli och markerar transaktionen för kvittning. Han ser att beloppet som måste kvittas är 495,00. Värdet i fältet **Beräknad kassarabatt** är **5,00** , eftersom rabatten på 5,00 utnyttjades tidigare.
+Kund 4028 betalar det resterande beloppet på 495,00 den 8 juli vilket infaller under kassarabattperioden. Arnie skapar betalningsjournalen den 8 juli och markerar transaktionen för kvittning. Han ser att beloppet som måste kvittas är 495,00. Värdet i fältet **Beräknad kassarabatt** är **5,00**, eftersom rabatten på 5,00 utnyttjades tidigare.
 
 |   &nbsp;                | &nbsp; |
 |-------------------------|--------|

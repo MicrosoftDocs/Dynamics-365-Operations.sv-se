@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 89e025977a0dcd40e35f17448a7b0ebde08cb6c8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180028"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4447842"
 ---
 # <a name="vendor-payments-for-a-partial-amount"></a>Leverantörsbetalningar för ett delbelopp
 
@@ -37,7 +37,7 @@ Ibland kan du utföra betalningar som är mindre än beloppet i en faktura till 
 En leverantör kan erbjuda dig en kassarabatt för att betala en faktura före förfallodatumet. Till exempel anger du en faktura på 100,00 som anger en kassarabatt 2 procent, om fakturan betalas inom 10 dagar. Förfallodatumtermerna är 30 dagar. Om ett betalningsförslag använder kassarabatt som villkor för att välja en faktura om om förslaget körs på eller före kassarabattsdatumet, kommer fakturan att markeras till betalning och betalningen skapas för 98,00. En kassarabatt kan också användas för en enstaka betalning som skapats manuellt.
 
 ## <a name="partial-payments-with-cash-discounts"></a>Delbetalningar med kassarabatter
-När du gör en delvis betalning, kan du planera att göra en ytterligare delvis betalning för att helt kvitta fakturan. För att få kassarabatt för en delvis betalning måste du ange alternativet **Beräkna kassarabatter för delvisa betalningar** till**Ja** på sidan **Obetalda parametrar för konto**. 
+När du gör en delvis betalning, kan du planera att göra en ytterligare delvis betalning för att helt kvitta fakturan. För att få kassarabatt för en delvis betalning måste du ange alternativet **Beräkna kassarabatter för delvisa betalningar** till **Ja** på sidan **Obetalda parametrar för konto**. 
 
 Om du till exempel får 2 procent kassarabatt om fakturan betalas inom 10 dagar, efter att den har utfärdats. En faktura på 100,00 bokförs. Om du gör en betalning på 49,00 inom 10 dagar, anger du ett debetbelopp på 49,00 i en betalningsjournal. När du kvittar delbetalningen på sidan **Kvitta öppna transaktioner** visas **1,00** i fältet **Kassarabattbelopp att utnyttja**. 
 

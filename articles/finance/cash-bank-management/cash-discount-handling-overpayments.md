@@ -19,11 +19,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 3f0714eab80f43695b2b93f77a70f31c360277f9
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899527"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4448151"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Kassarabatter för överbetalningar
 
@@ -38,7 +38,7 @@ En faktura betraktas som överbetald när betalningsbeloppet överstiger faktura
 | 105,00        | 10,50                   | 94,50                                               | 95,00                             |
 
 ## <a name="cash-discount-administration--specific"></a>Administration av kassarabatt = Specifikt
-När **Specifikt** har valts i fältet **Administration av kassarabatt** på sidan **Konton för automatiska transaktioner**, hämtas den fullständiga kassarabatten. Överbetalningbeloppet bokförs antingen till ett redovisningskonto för kassarabattskillnad eller återstår som ett saldo på kundens konto. Beteendet beror på om överbetalningsbeloppet är mellan 0,00 och det belopp som angetts i fältet**Maximal över- och underbetalning**, eller om överbetalningsbeloppet är större än beloppet **Maximal över- och underbetalning** .
+När **Specifikt** har valts i fältet **Administration av kassarabatt** på sidan **Konton för automatiska transaktioner**, hämtas den fullständiga kassarabatten. Överbetalningbeloppet bokförs antingen till ett redovisningskonto för kassarabattskillnad eller återstår som ett saldo på kundens konto. Beteendet beror på om överbetalningsbeloppet är mellan 0,00 och det belopp som angetts i fältet **Maximal över- och underbetalning**, eller om överbetalningsbeloppet är större än beloppet **Maximal över- och underbetalning** .
 
 ### <a name="scenario-1"></a>Scenario 1
 
@@ -99,7 +99,7 @@ Kunden skickar in en betalning på för 95,00 inom kassarabattperioden. Betalnin
 
 | Konto                                                                                          | Debetbelopp | Kreditbelopp |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Kassarabatt (**fältet Huvudkonto för kundrabatter** på sidan**Kassarabatter**) | 10,50        |               |
+| Kassarabatt (**fältet Huvudkonto för kundrabatter** på sidan **Kassarabatter**) | 10,50        |               |
 | Kundreskontra                                                                              |              | 10,50         |
 
 ## <a name="cash-discount-administration--unspecific"></a>Administration av kassarabatt = Ospecifikt

@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 57e8ce38241933b16252f1c918b0f763a8f1be08
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180042"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4447985"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Skapa leverantörsbetalningar med ett betalningsförslag
 
@@ -119,7 +119,7 @@ Med dimensionskontroll kan du kontrollera grupperingen av genererade rader efter
 
 #### <a name="bank-account-selection"></a>Val av bankkonto
 
-Du kan definiera ett standardkonto för betalningsdebitering per betalningsmetod oavsett landskontext. Detta ska anges i betalningsrader som genereras av ett förslag. Med bankkontofunktionen kan du definiera flera debiterande bankkonton som hanteras av dimension och valuta, eller en kombination av dessa om du vill använda andra debiteringsbankkonton, beroende på respektive kombination. Du kan ställa in dessa kombinationer på sidan **Betalningsmetoder** genom att använda knappen **Bankkonton** som finns för respektive betalningsmetod med **Bokföringskontotyp** = **Bank**.
+Du kan definiera ett standardkonto för betalningsdebitering per betalningsmetod oavsett landskontext. Detta ska anges i betalningsrader som genereras av ett förslag. Med bankkontofunktionen kan du definiera flera debiterande bankkonton som hanteras av dimension och valuta, eller en kombination av dessa om du vill använda andra debiteringsbankkonton, beroende på respektive kombination. Du kan ställa in dessa kombinationer på sidan **Betalningsmetoder** genom att använda knappen  **Bankkonton** som finns för respektive betalningsmetod med **Bokföringskontotyp** = **Bank**.
 
 
 

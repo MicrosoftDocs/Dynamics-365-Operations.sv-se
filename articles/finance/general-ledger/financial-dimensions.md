@@ -18,11 +18,11 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 0715d3e4e4cb167c55d9c7d98cdf599187bf3b43
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179926"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4448123"
 ---
 # <a name="financial-dimensions"></a>Ekonomiska dimensioner
 
@@ -119,7 +119,7 @@ Härledda dimensioner med denna inställning ersätter inte automatiskt befintli
 
 ### <a name="preventing-changes-with-derived-dimensions"></a>Förhindra ändringar med härledda dimensioner
  
-När du använder **Lägg till segment ”** på sidan **Härledda dimensioner** om du vill lägga till ett segment som en härledd dimension finns ett alternativ längst ned på sidan **Lägg till segment** som låter dig förhindra ändringar till den dimensionen när den hämtas på en sida. Standardinställningen är av så att den inte förhindrar härledda dimensionsvärdena från att ändras. Ändra inställningen till **Ja** om du vill förhindra att dimensionen ändras när de har härletts. Till exempel om värdet för avdelningsdimensionen härleds från värdet för kostnadsställedimensionen kan avdelningsvärdet inte ändras om inställningen**Förhindra ändringar** är **Ja**. 
+När du använder **Lägg till segment ”** på sidan **Härledda dimensioner** om du vill lägga till ett segment som en härledd dimension finns ett alternativ längst ned på sidan **Lägg till segment** som låter dig förhindra ändringar till den dimensionen när den hämtas på en sida. Standardinställningen är av så att den inte förhindrar härledda dimensionsvärdena från att ändras. Ändra inställningen till **Ja** om du vill förhindra att dimensionen ändras när de har härletts. Till exempel om värdet för avdelningsdimensionen härleds från värdet för kostnadsställedimensionen kan avdelningsvärdet inte ändras om inställningen **Förhindra ändringar** är **Ja**. 
  
 Inställningen inte ändras om dimensionsvärdet är giltig, men visas inte i listan över härledda dimensioner. Till exempel om avdelning 20 härleds från kostnadsställe 10 och du anger kostnadsställe 10 kommer du inte att kunna redigera avdelning 20. Men om du anger kostnadsställe 20 och det är inte i listan över härledda dimensionerna för kostnadsställe, kan du redigera värdet avdelning. 
  

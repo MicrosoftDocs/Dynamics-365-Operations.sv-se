@@ -17,11 +17,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: ff8a2858bfa96eb1d4b0afa1e48ebd1b578a4431
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143134"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4448107"
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a>Skapa och exportera leverantörsbetalningar med ett ISO20022-betalningsformat
 
@@ -35,7 +35,7 @@ Detta är den femte proceduren av fem som illustrerar leverantörbetalningsproce
 
 1.    Gå till **Leverantörsreskontra > Betalningar > Betalningsjournal.**
 2.    Klicka på **Ny**.
-3.    I fältet **Namn**anger eller väljer du ett värde.
+3.    I fältet **Namn** anger eller väljer du ett värde.
 4.    Klicka på **Rader > Betalningsförslag > Skapa betalningsförslag**.
 5.    Expandera avsnittet **Poster som ska ingå**.
 6.    Klicka på **Filter**.

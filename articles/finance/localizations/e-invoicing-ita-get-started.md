@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: c513141f820c95fe3842478361693701f1e3641b
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039802"
+ms.locfileid: "4448186"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Kom igång med tillägget elektronisk fakturering för Italien
 
@@ -54,7 +54,7 @@ Under RCS-inställningar ska du utföra följande uppgifter:
 ## <a name="import-the-e-invoicing-feature"></a>Importera e-faktureringsfunktion
 
 1. Logga in på RCS-kontot.
-2. I arbetsytan **globaliseringsfunktioner** i avsnittet **Funktioner** , välj panelen **e-fakturering**.
+2. I arbetsytan **globaliseringsfunktioner** i avsnittet **Funktioner**, välj panelen **e-fakturering**.
 3. På sidan **e-faktureringsfunktioner** väljer du **Importera** för att importera e-faktureringsfunktion från den globala databasen.
 
     > [!NOTE]
@@ -96,11 +96,11 @@ När du importerar funktionen **exportera e-fakturor (IT)** från den globala da
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Hantera inställningen för e-faktureringsfunktionen
 
-- på sidan **e-faktureringsfunktioner** på fliken **Inställningar** välj **Lägg till** , **Ta bort** eller **Redigera** för att hantera inställningsfunktionen för e-fakturering.
+- på sidan **e-faktureringsfunktioner** på fliken **Inställningar** välj **Lägg till**, **Ta bort** eller **Redigera** för att hantera inställningsfunktionen för e-fakturering.
 
 ![Hantera inställningen för e-faktureringsfunktionen](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
 
-I det här steget konfigurerar du de händelser som gäller för elektroniska fakturor, inklusive generering av XML-utdatafilerna i **FatturaPA** -format och digital signering (om det behövs).
+I det här steget konfigurerar du de händelser som gäller för elektroniska fakturor, inklusive generering av XML-utdatafilerna i **FatturaPA**-format och digital signering (om det behövs).
 
 ### <a name="configure-the-sales-invoice-feature-setup"></a>Konfigurera inställningen av funktionen Sales-faktura
 
@@ -144,12 +144,12 @@ Du kan publicera e-faktureringsfunktionen genom att ändra versionsstatus till *
 
 ### <a name="change-the-version-status-to-completed"></a>Ändra versionsstatus till slutförd
 
-1. På sidan **e-faktureringsfunktion** på fliken **Versioner** , välj den version av e-faktureringsfunktionen som har status **Utkast**.
+1. På sidan **e-faktureringsfunktion** på fliken **Versioner**, välj den version av e-faktureringsfunktionen som har status **Utkast**.
 2. Välj **Ändra status \> Slutför**. 
 
 ### <a name="change-the-version-status-to-published"></a>Ändra versionsstatus till publicerad 
 
-1. På sidan **e-faktureringsfunktion** på fliken **Versioner** , välj den version av e-faktureringsfunktionen som har status **Slutförd**.
+1. På sidan **e-faktureringsfunktion** på fliken **Versioner**, välj den version av e-faktureringsfunktionen som har status **Slutförd**.
 2. Välj **Ändra status \> Publicera**.
 
 ![Ändra status för e-faktureringsfunktionen](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
@@ -166,7 +166,7 @@ Under inställningar av Finance ska du utföra följande uppgifter:
 1. I arbetsytan **elektronisk rapportering** kontrollera att konfigurationsleverantören **Tjänst för affärsdokument** anges till **Aktiv**.
 2. Välj **Databaser**.
 3. Välj **Global resurs \> Öppna**.
-4. Importera **Fakturamodell** , **Mappning av fakturamodell** och **Kontextmodell för kundfaktura**.
+4. Importera **Fakturamodell**, **Mappning av fakturamodell** och **Kontextmodell för kundfaktura**.
 
 #### <a name="turn-on-the-feature-for-exporting-customer-electronic-invoices-for-italy"></a>Aktivera funktionen för att exportera kunders elektroniska fakturor för Italien
 
@@ -186,7 +186,7 @@ Under inställningar av Finance ska du utföra följande uppgifter:
 3. Definiera ett relaterat dokumentsammanhang för varje register.
 
     - För **Kundfakturajournaler** anger du **Kundfakturakontext**.
-    - För **Projektfaktura** , ange **Projektfaktura kontext**.
+    - För **Projektfaktura**, ange **Projektfaktura kontext**.
 
 ![Ställ in svarstyper](media/e-Invoicing-services-get-started-ITA-Set-up-response-types.png)
 
@@ -214,14 +214,14 @@ Du kan skicka dokumenten manuellt, baserat på efterfrågan på e-fakturadokumen
 
 #### <a name="filter-query"></a>Filterfråga
 
-1. Dialogrutan **Förfrågning** , konfigurera filtreringsvillkoren för både försäljningsfakturor och projektfakturor, eller låt villkoren vara tomma för att inkludera alla icke inlämnade fakturor.
+1. Dialogrutan **Förfrågning**, konfigurera filtreringsvillkoren för både försäljningsfakturor och projektfakturor, eller låt villkoren vara tomma för att inkludera alla icke inlämnade fakturor.
 
     ![Ställa in kriterier för överföringsfilter](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
 
 2. Välj **OK** för att stänga dialogrutan **Förfrågning**.
 3. Välj **OK** för att skicka de valda dokumenten.
 
-> [OBS!] Under ditt första försök att skicka ett dokument via tjänsten uppmanas du att bekräfta anslutningen med tillägget för elektronisk fakturering. Välj **Klicka här för att ansluta till tjänsten inlämning av elektroniska dokument**.
+> ![OBS] Under ditt första försök att skicka ett dokument via tjänsten uppmanas du att bekräfta anslutningen med tillägget för elektronisk fakturering. Välj **Klicka här för att ansluta till tjänsten inlämning av elektroniska dokument**.
 
 #### <a name="view-submission-logs"></a>Visa överföringsloggar
 

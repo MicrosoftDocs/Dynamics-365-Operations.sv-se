@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: 7b2a3aae43d42060c7fcd9e1ea3db814fc5d8f22
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039856"
+ms.locfileid: "4448190"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Kom igång med tillägget elektronisk fakturering
 
@@ -84,7 +84,7 @@ Följande illustration visar de fem huvudsteg som du kommer att utföra i det h�
 ## <a name="lcs-setup"></a>Inställning av LCS
 
 1. Logga in på LCS-kontot.
-2. Välj panelen **Hantering av förhandsgranskningsfunktioner** och fältgruppen **Förhandsversionsfunktioner** , välj **BusinessDocumentSubmission**.
+2. Välj panelen **Hantering av förhandsgranskningsfunktioner** och fältgruppen **Förhandsversionsfunktioner**, välj **BusinessDocumentSubmission**.
 3. Markera fältet **aktivera förhandsversion**.
 4. Välj LCS distributionsprojekt. Innan du kan välja projektet måste det köras.
 5. På snabbfliken **Miljötillägg** välj **Installera ett nytt tillägg**.
@@ -108,7 +108,7 @@ Under RCS-inställningar ska du utföra följande uppgifter:
 ### <a name="set-up-the-key-vault-in-rcs"></a>Ställ in nyckelvalvet i RCS
 
 1. Logga in på RCS-kontot.
-2. I arbetsytan **globaliseringsfunktioner** i avsnittet **Miljöer** , välj panelen **e-fakturering**.
+2. I arbetsytan **globaliseringsfunktioner** i avsnittet **Miljöer**, välj panelen **e-fakturering**.
 3. Välj **tjänstemiljöer**.
 
     ![Välj tjänstemiljöer](media/e-invoicing-services-get-started-select-service-environments.png)
@@ -145,13 +145,13 @@ Under RCS-inställningar ska du utföra följande uppgifter:
 
 Du kan skapa olika miljöer för tillägget för elektronisk fakturering, till exempel utvecklings-, test- eller produktionsmiljöer.
 
-1. I arbetsytan **globaliseringsfunktioner** i avsnittet **Miljöer** , välj panelen **e-fakturering**.
+1. I arbetsytan **globaliseringsfunktioner** i avsnittet **Miljöer**, välj panelen **e-fakturering**.
 2. Skapa en miljö genom att välja **Nytt**.
 3. I fältet **Konto för SAS-lagringstoken** anger du namnet på nyckelvalvets hemlighet som du konfigurerade i nyckelvalvet i RCS.
 
     ![Fältet konto för SAS-lagringstoken](media/e-invoicing-services-get-started-enter-sas-token-secret.png)
 
-4. På snabbfliken **Använder** , välj **Ny** för att bevilja åtkomst till användare för den här miljön.
+4. På snabbfliken **Använder**, välj **Ny** för att bevilja åtkomst till användare för den här miljön.
 
     ![Lägga till tjänstanvändare](media/e-invoicing-services-get-started-enter-service-users.png)
 
@@ -205,7 +205,7 @@ Integreringsfunktionen för elektronisk faktura aktiveras via flygning. Flygning
 
 Om du vill göra det möjligt att samla affärsdata och skicka dem till tillägget elektronisk fakturering måste du importera konfigurationen ER-datamodell och ER-datamodell som är relaterade till den lands-/regionspecifika e-faktureringsfunktion som du vill använda.
 
-1. I arbetsytan **elektronisk rapportering** i avsnittet **konfigurationsprovider** väljer du panelen **Microsoft**. Kontrollera att konfigurationsprovidern är **aktiverad**. För information om hur du ställer in en leverantör på **Aktiv** , se [Skapa konfigurationsleverantörer och markera dem som aktiva](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+1. I arbetsytan **elektronisk rapportering** i avsnittet **konfigurationsprovider** väljer du panelen **Microsoft**. Kontrollera att konfigurationsprovidern är **aktiverad**. För information om hur du ställer in en leverantör på **Aktiv**, se [Skapa konfigurationsleverantörer och markera dem som aktiva](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
 3. Välj **Databaser**.
 4. Markera **Global resurs** och välj sedan **Öppna**.
 5. I dialogrutan **Ansluta till Lifecycle Services** välj **Klicka här för att ansluta till Lifecycle Service**.
@@ -231,7 +231,7 @@ Om det överförda fakturadokumentet kräver en uppdatering efter det att sändn
 1. I arbetsytan **elektronisk rapportering** i avsnittet **konfigurationsprovider** väljer du panelen **Microsoft**.
 2. Välj **Databaser**.
 3. Markera **Global resurs** och välj sedan **Öppna**.
-4. Importera **Modell för svarsmeddelande** , **Importformat för svarsmeddelande** , **Modell för svarsmeddelande för mappning till destination** och **Importformat för filinnehåll**.
+4. Importera **Modell för svarsmeddelande**, **Importformat för svarsmeddelande**, **Modell för svarsmeddelande för mappning till destination** och **Importformat för filinnehåll**.
 5. Gå till **organisationsadministration \> inställning \> parametrar för elektroniska dokument**.
 6. På fliken **Elektroniskt dokument** välj **Lägg till** för att ange namnet på tabellen som är relaterad till ditt lands-/regionspecifika fakturadokument. Information om vilket registernamn som du bör välj finns i avsnittet lands-/regionspecifika "komma igång med det elektroniska tillägget för fakturering".
 7. Välj **svarstyper** för att konfigurera svarstyper. Information om vilket registernamn som du bör välj finns i avsnittet lands-/regionspecifika "komma igång med det elektroniska tillägget för fakturering".
@@ -283,7 +283,7 @@ Du kan skicka affärsdokument antingen manuellt eller utifrån dina tidsplanerin
 
 ### <a name="filter-query"></a>Filterfråga
 
-1. I dialogrutan **Förfrågan** på fliken **Område** anger du filterkriterier genom att använda fälten **Register** , **Härlett register** , **Fält** och **Kriterier**.
+1. I dialogrutan **Förfrågan** på fliken **Område** anger du filterkriterier genom att använda fälten **Register**, **Härlett register**, **Fält** och **Kriterier**.
 2. Välj **Lägg till** om du vill lägga till så många ytterligare kriterier som du behöver för att välja affärsdokumenten.
 
     ![Ställa in kriterier för överföringsfilter](media/e-invoicing-services-get-started-set-up-submission-filter-criteria.png)
@@ -312,7 +312,7 @@ Du kan skicka affärsdokument antingen manuellt eller utifrån dina tidsplanerin
 I stället för att skicka dokument manuellt kan du automatisera överföringsprocessen och köra den i bakgrunden, baserat på en konfigurerad frekvens för batch-körning.
 
 1. I dialogrutan **Skicka elektroniska dokument** på snabbfliken **Kör i bakgrunden** ange **Batch-bearbetning** till **Ja**.
-2. På fliken **återkommande** , konfigurera frekvensen för batchbearbetning.
+2. På fliken **återkommande**, konfigurera frekvensen för batchbearbetning.
 
 ![Ställa in överföring per batch](media/e-invoicing-services-get-started-set-up-submission-batch.png)
 

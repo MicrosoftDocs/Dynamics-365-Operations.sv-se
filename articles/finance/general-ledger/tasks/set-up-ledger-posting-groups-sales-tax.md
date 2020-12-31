@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1481b714d089994c1f00189cdaba3ca328f00577
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 90fe7f3ab08e9417af3f857f04934a9b5df3d82d
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983117"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644907"
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Ställ in redovisningsbokföringsgrupper för moms
 
@@ -37,7 +37,7 @@ Moms beräknas och bokförs på huvudkontona som anges i redovisningsbokförings
 6. Välj huvudkontot för inkommande moms som ska mottagas från skattemyndigheten i fältet **Momsfordran**. Leverantörer samlar in moms åt skattemyndigheten när du köper momspliktiga varor och tjänster. Det här fältet är inte tillgängligt om alternativet Använd momsbeskattningsregler har valts på sidan **Redovisningsparametrar**. Istället debiteras moms som betalats till leverantörer på samma konto som inköpen.   
 7. I fältet **Importavgift, utgift**, välj huvudkontot för bokföring av avdragsgilla importavgifter som inte begärts eller rapporterats till skattemyndigheten av leverantörer i enlighet med reglerna för omvänd skattskyldighet i EU i fältet GST/HST. Alternativet **Importavgift** måste väljas för **Momskod** i **momsgruppen** som används i transaktionen. Det här fältet är inte tillgängligt om alternativet **Använd momsbeskattningsregler** har valts på sidan **Redovisningsparametrar** .   
 8. Välj huvudkontot för bokföring av inkommande importmoms som ska betalas till skattemyndigheten i fältet **Importavgift, skuld**. Alternativet **Importavgift** måste väljas i **Momskod** i **Momsgrupp** för bokföring av **importavgiften**. Om alternativet **Använd momsbeskattningsregler** valts på sidan **Redovisningsparametrar** bokförs en motbokning på transaktionens utgiftskonto.   
-9. Välj, i fältet **Kvittningskonto**, huvudkontot där nettosaldot för redovisningskontona som anges i fälten **Importavgift, skuld** och **Momsfordran** ska bokföras. Saldot skapas när momskvittningen och bokföringsjobbet körs.  Om skattemyndigheten för kvittningsperioden är kopplad till ett leverantörskonto, bokförs saldot på leverantörskontot i stället.
+9. Välj, i fältet **Kvittningskonto**, huvudkontot där nettosaldot för redovisningskontona som anges i fälten **Importavgift, skuld** och **Momsfordran** ska bokföras. Saldot skapas när momskvittningen och bokföringsjobbet har körts.  Om skattemyndigheten för kvittningsperioden är kopplad till ett leverantörskonto, bokförs saldot på leverantörskontot i stället.
 10. Välj huvudkontot för att bokföra kassarabatten för momskoder som är kopplade till denna redovisningsbokföringsgrupp i fältet **Leverantörskassarabatt**. Det här är valfritt och om inget konto anges ska huvudkontot för **kassarabattkoder** användas. Det kan vara praktiskt att använda andra konton, per **redovisningsbokföringsgrupp**, om du använder alternativet för återföring av moms vid kassarabatter i momsgrupperna.  
 11. Välj huvudkontot för att bokföra kassarabatten för **momskoder** som är kopplade till denna **redovisningsbokföringsgrupp** i fältet **Kundkassarabatt**. Det är valfritt och om inget konto anges, ska huvudkontot för **kassarabattkoder** användas. Det kan vara praktiskt att använda andra konton, per **redovisningsbokföringsgrupp**, om du använder alternativet för återföring av moms vid kassarabatter i **Momsgrupper**.  
 12. Klicka på **Spara**.

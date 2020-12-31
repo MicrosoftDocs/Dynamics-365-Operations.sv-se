@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 0b25bbeb270f33d1d158de2091ab86e7e98be98a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976557"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4447973"
 ---
 # <a name="credit-management-parameters-setup"></a>Inställningar för parametrar för kredithantering
 
@@ -74,7 +74,7 @@ Flera statistik för kredithantering inkluderas i faktarutan **Statistik över k
 ### <a name="credit-limits"></a>Kreditgränser
 
 - I kredithantering visas kundkreditgränsen i kundens valuta. Du måste ange valutakurstypen för kreditgränsen i kundens valuta. I fältet **kreditgränsens valutakurstyp** väljer du den typ av valutakurs som ska användas för att konvertera den primära kreditgränsen till kundens kreditgräns.
-- Ange alternativet **Tillåt manuell redigering av kreditgränser** till **Nej** om du vill förhindra att användare redigerar kreditgränser på sidan **kund**. Om det här alternativet är inställt på **Nej**kan ändringar av kundens kreditgräns endast göras genom att transaktioner för kreditgränsjusteringar bokförs.
+- Ange alternativet **Tillåt manuell redigering av kreditgränser** till **Nej** om du vill förhindra att användare redigerar kreditgränser på sidan **kund**. Om det här alternativet är inställt på **Nej** kan ändringar av kundens kreditgräns endast göras genom att transaktioner för kreditgränsjusteringar bokförs.
 
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Nummerserier och delade parametrar för nummerserier
 

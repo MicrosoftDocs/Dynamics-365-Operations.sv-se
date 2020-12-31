@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: fb3ec2d60875d7a0747d64b397aafaa0a3d26348
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039879"
+ms.locfileid: "4448189"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-brazil"></a>Kom igång med tillägget elektronisk fakturering för Brasilien 
 
@@ -57,7 +57,7 @@ Under RCS-inställningar ska du utföra följande uppgifter:
 ## <a name="import-the-e-invoicing-feature"></a>Importera e-faktureringsfunktion
 
 1. Logga in på RCS-kontot
-2. I arbetsytan **globaliseringsfunktioner** i avsnittet **Funktioner** , välj panelen **e-fakturering**.
+2. I arbetsytan **globaliseringsfunktioner** i avsnittet **Funktioner**, välj panelen **e-fakturering**.
 3. På sidan **e-faktureringsfunktioner** väljer du **Importera** för att importera e-faktureringsfunktion för NF-e-skattedokument från den globala databasen.
 
     ![Importera-knapp](media/e-Invoicing-services-get-started-BRA-Select-Import-e-Invoicing-feature.png)
@@ -89,7 +89,7 @@ Under RCS-inställningar ska du utföra följande uppgifter:
 
         - NFe annullera exportformat
 
-2. Välj en konfigurationsversion i listan och välj sedan **Redigera** eller **Visa** för att öppna sidan **Formatdesigner** , där du kan redigera eller visa konfigurationen.
+2. Välj en konfigurationsversion i listan och välj sedan **Redigera** eller **Visa** för att öppna sidan **Formatdesigner**, där du kan redigera eller visa konfigurationen.
 
     ![Öppna sidan Formatdesigner](media/e-Invoicing-services-get-started-BRA-Configuration-ER-fomat-designer.png)
 
@@ -135,9 +135,9 @@ Om du vill skicka in en NF-e-annullering måste du ställa in en funktion för a
 
 #### <a name="set-up-the-url-for-sefaz-web-services"></a>Ställ in URL:en för SEFAZ-webbtjänster 
 
-1. På fliken **Inställning av funktionsversion** på fliken **Åtgärder** på snabbfliken **Åtgärder** välj **Anropa brasilianska SEFAZ-tjänsten** (åtgärds-ID **3** ).
+1. På fliken **Inställning av funktionsversion** på fliken **Åtgärder** på snabbfliken **Åtgärder** välj **Anropa brasilianska SEFAZ-tjänsten** (åtgärds-ID **3**).
 2. På snabbfliken **Parametrar** i fältet **Parametrar för URL-adress** anger du webbadressen till SEFAZ-webbtjänsten för NF-e-sändning.
-3. På snabbfliken **åtgärder** väljer du **anropa brasilianska SEFAZ-tjänsten** (åtgärds-ID **7** ).
+3. På snabbfliken **åtgärder** väljer du **anropa brasilianska SEFAZ-tjänsten** (åtgärds-ID **7**).
 4. På snabbfliken **Parametrar** i fältet **Parametrar för URL-adress** anger du webbadressen till SEFAZ-webbtjänsten för NF-e-sändning.
 
 #### <a name="configure-the-cancellation-feature-setup"></a>Konfigurera inställningar för annulleringsfunktionen
@@ -156,7 +156,7 @@ Om du vill skicka in en NF-e-annullering måste du ställa in en funktion för a
 
 #### <a name="set-up-the-url-for-sefaz-web-services"></a>Ställ in URL:en för SEFAZ-webbtjänster
 
-1. På fliken **Inställning av funktionsversion** på fliken **Åtgärder** på snabbfliken **Åtgärder** välj **Anropa brasilianska SEFAZ-tjänsten** (åtgärds-ID **3** ).
+1. På fliken **Inställning av funktionsversion** på fliken **Åtgärder** på snabbfliken **Åtgärder** välj **Anropa brasilianska SEFAZ-tjänsten** (åtgärds-ID **3**).
 2. På snabbfliken **Parametrar** i fältet **Parametrar för URL-adress** anger du webbadressen till SEFAZ-webbtjänsten för annullering av godkänd NF-e.
 
 ### <a name="make-an-e-invoicing-environment-available-and-assign-a-draft-version"></a>Göra en e-faktureringsmiljö tillgänglig och tilldela en utkastversion
@@ -170,12 +170,12 @@ Om du vill skicka in en NF-e-annullering måste du ställa in en funktion för a
 
 ### <a name="change-the-status-to-completed"></a>Ändra status till slutförd
 
-1. På sidan **e-faktureringsfunktion** på fliken **Versioner** , välj den version av e-faktureringsfunktionen som har status **Utkast**.
+1. På sidan **e-faktureringsfunktion** på fliken **Versioner**, välj den version av e-faktureringsfunktionen som har status **Utkast**.
 2. Välj **Ändra status \> Slutför**.
 
 ### <a name="change-the-status-to-publish"></a>Ändra status till publicera
 
-1. På sidan **e-faktureringsfunktion** på fliken **Versioner** , välj den version av e-faktureringsfunktionen som har status **Slutförd**.
+1. På sidan **e-faktureringsfunktion** på fliken **Versioner**, välj den version av e-faktureringsfunktionen som har status **Slutförd**.
 2. Välj **Ändra status \> Publicera**.
 
 ![Publicera e-faktureringsfunktion](media/e-Invoicing-services-get-started-BRA-Publish-e-Invoicing-feature.png)
@@ -196,7 +196,7 @@ Under inställningen ska du utföra följande uppgifter:
 ### <a name="import-the-er-data-model-mapping-required-for-nf-e-fiscal-documents"></a>Importera mappningen för ER-datamodell som krävs för NF-e-skattedokument
 
 1. Logga in på Finance.
-2. I arbetsytan **elektronisk rapportering** i avsnittet **konfigurationsprovider** väljer du panelen **Microsoft**. Kontrollera att konfigurationsprovidern är **aktiverad**. För information om hur du ställer in en leverantör på **Aktiv** , se [Skapa konfigurationsleverantörer och markera dem som aktiva](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. I arbetsytan **elektronisk rapportering** i avsnittet **konfigurationsprovider** väljer du panelen **Microsoft**. Kontrollera att konfigurationsprovidern är **aktiverad**. För information om hur du ställer in en leverantör på **Aktiv**, se [Skapa konfigurationsleverantörer och markera dem som aktiva](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
 3. Välj **Databaser**.
 4. Välj **Global resurs \> Öppna**.
 5. Importera konfigurationer **Mappning av skattedokument**.
@@ -206,17 +206,17 @@ Under inställningen ska du utföra följande uppgifter:
 1. I arbetsytan **elektronisk rapportering** i avsnittet **konfigurationsprovider** väljer du panelen **Microsoft**.
 2. Välj **Databaser**.
 3. Välj **Global resurs \> Öppna**.
-4. Importera **import av NF-e fellogg (BR)** , **importformat för NF-e svarsdata (BR)** och **import av NF-e svarsmeddelande (BR)**.
+4. Importera **import av NF-e fellogg (BR)**, **importformat för NF-e svarsdata (BR)** och **import av NF-e svarsmeddelande (BR)**.
 5. Gå till **organisationsadministration \> inställning \> parametrar för elektroniska dokument**.
 6. På fliken **Elektroniska dokument** väljer du **Lägg till**.
 6. I fältet **Registernamn** ange **skattedokumentets rubrik**.
 7. I fältet **Dokumentkontext** väljer du **Kundfaktura kontextmodell - skattedokument kontext**.
 8. Välj **svarstyper**.
-9. Markera **Ny** och sedan, i fältet **Svarstyp** , markerar du **Svar**.
+9. Markera **Ny** och sedan, i fältet **Svarstyp**, markerar du **Svar**.
 10. I fältet **Överföringsstatus** välj **Väntande**.
 11. I fältet **Modellmappning** välj **Importformat för svarsmeddelande - Modellmappning från svarsmeddelande**.
 12. Välj **Spara**.
-13. Markera **Ny** och sedan, i fältet **Svarstyp** , markerar du **ResponseData**.
+13. Markera **Ny** och sedan, i fältet **Svarstyp**, markerar du **ResponseData**.
 14. I fältet **Överföringsstatus** välj **Väntande**.
 15. I fältet **modellmappning** väljer du **NFe importformat för svarsdata – import av svarsdata**.
 16. Välj **Spara**.
@@ -231,7 +231,7 @@ Under bearbetningen i Finance ska du utföra följande uppgifter:
 
 ### <a name="submit-nf-e-fiscal-documents-for-sefaz-authorization"></a>Skicka NF-e-dokument för SEFAZ-auktorisering 
 
-När du har aktiverat funktionen **Konfigurerbara integreringstillägg för elektronisk fakturering** kan den gamla processen för NF-e skattedokument för auktorisering ( **Exportera/importera NF-e-process** ) kan inte längre användas. Den ersätts med en ny process som kallas **skicka elektroniska dokument**.
+När du har aktiverat funktionen **Konfigurerbara integreringstillägg för elektronisk fakturering** kan den gamla processen för NF-e skattedokument för auktorisering (**Exportera/importera NF-e-process**) kan inte längre användas. Den ersätts med en ny process som kallas **skicka elektroniska dokument**.
 
 > [!NOTE]
 > Innan du fortsätter måste du kontrollera att du har ett eller flera kundskattedokument modell 55 som har utfärdats av kundens skattemyndighet. Riktningen för dessa skattedokument måste ställas in på **utgående** och status måste **skapad**. Mer information finns i avsnittet om att [utfärda kundskattedokument (Brasilien)](https://docs.microsoft.com/dynamics365/finance/localizations/tasks/br-00038-issuing-customer-fiscal-document).
@@ -242,7 +242,7 @@ När du har aktiverat funktionen **Konfigurerbara integreringstillägg för elek
 4. På fliken **Intervall** klickar du på **Lägg till**.
 5. I fältet **Register** ange **skattedokumentets rubrik**.
 6. I fältet **härlett register** ange **skattedokumentets rubrik**.
-6. I fältet **Fält** , välj **Nummer**.
+6. I fältet **Fält**, välj **Nummer**.
 7. I fältet **Kriterier** anger du numret på det skattedokument som ska skickas.
 8. Välj **OK** för att stänga dialogrutan **Förfrågning**.
 8. Välj **OK** för att skicka de valda dokumenten.
@@ -301,7 +301,7 @@ När du har aktiverat funktionen **konfigurerbara integreringstillägg för elek
     ![Visa information om överföringsloggar för annullering](media/e-Invoicing-services-get-started-BRA-View-Cancellation-Submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
-Om du aktiverar funktionen BR-00053 (NF-e Federal) kan det krävas att begränsade data skickas, vilket inkluderar organisationens momsregistrerings-ID. Detta kommer att översändas till tredje parts byråer som har tillstånd av skattemyndigheten för att skicka elektroniska fakturor till denna skattemyndighet i det fördefinierade format som krävs för integrering med den offentliga sektorns webbtjänster. En administratör kan aktivera och inaktivera funktionen BR-00053 (NF-e Federal) genom att navigera till **Organisationsadministration \> Inställningar \> Parametrar för elektroniskt dokument**. Välj fliken **Funktioner** , markera den rad som innehåller funktionen BR-00053 och välj sedan lämpligt alternativ. Data som importeras från dessa externa system till denna Dynamics 365 onlinetjänst omfattas av vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=512132). Mer information finns i sektionerna om sekretessmeddelanden i landsspecifik funktionsdokumentation.
+Om du aktiverar funktionen BR-00053 (NF-e Federal) kan det krävas att begränsade data skickas, vilket inkluderar organisationens momsregistrerings-ID. Detta kommer att översändas till tredje parts byråer som har tillstånd av skattemyndigheten för att skicka elektroniska fakturor till denna skattemyndighet i det fördefinierade format som krävs för integrering med den offentliga sektorns webbtjänster. En administratör kan aktivera och inaktivera funktionen BR-00053 (NF-e Federal) genom att navigera till **Organisationsadministration \> Inställningar \> Parametrar för elektroniskt dokument**. Välj fliken **Funktioner**, markera den rad som innehåller funktionen BR-00053 och välj sedan lämpligt alternativ. Data som importeras från dessa externa system till denna Dynamics 365 onlinetjänst omfattas av vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=512132). Mer information finns i sektionerna om sekretessmeddelanden i landsspecifik funktionsdokumentation.
 
 
 ## <a name="additional-resources"></a>Ytterligare resurser

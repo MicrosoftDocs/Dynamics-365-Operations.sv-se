@@ -19,11 +19,11 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f0fc01508bd206f750a4101521cd9dff7b647656
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180036"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4447957"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Översikt över SEPA-kreditöverföring
 
@@ -58,7 +58,7 @@ Du bör alltid gå till det delade resursbiblioteket i Microsoft Dynamics Lifecy
 
 ## <a name="what-do-i-have-to-set-up"></a>Vad måste jag ställa in?
 -   Innan du skapar kreditöverföringsfiler måste minst en aktiv konfiguration för kreditöverföring importeras till dina ER-konfigurationer. Instruktioner finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
--   När du konfigurerar betalningsmetoder för leverantörsreskontra markerar du kryssrutan **Generisk elektronisk rapportering** och väljer lämpligt format för kreditöverföring (t.ex.) **ISO 20022 kreditöverföring (AT)**) som en exportformatkonfiguration.
+-   När du konfigurerar betalningsmetoder för leverantörsreskontra markerar du kryssrutan **Generisk elektronisk rapportering** och väljer lämpligt format (för kreditöverföring (t.ex.) **ISO 20022 kreditöverföring (AT)**) som en exportformatkonfiguration.
 -   Du måste även ange information om den juridiska personen och om bankkontot.
 -   Bankkontonummer, IBAN och ibland SWIFT-koder (BIC) eller andra ID krävs för att skapa giltiga kreditöverföringsbetalningar. Därför måste du ställa in dem för leverantörsbankkonto och bankkontot för organisationen som begär överföringen.
 -   Ytterligare information kan krävas, t.ex momsnummer (VAT) för parter som anges i kreditöverföringsmeddelandet. Denna information måste ställas in för leverantörer och för den juridiska personen när det krävs.

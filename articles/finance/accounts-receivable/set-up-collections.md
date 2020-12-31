@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58d3e7f66ab5816849d393098d073ea7629e6b7c
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 8f8e066b1df3eb3a26d488e1c014f4ae3f31395a
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3013173"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4448228"
 ---
 # <a name="set-up-collections"></a>Ställ in inkasseringar
 
@@ -96,7 +96,7 @@ Du kan använda e-post för att kommunicera med både kunder och säljare om ink
 ### <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Ställ in inställningar för e-post och adress frö samlingskundkontakter
 Ställ in e-postadresser för kundkontakter om du vill skicka e-postmeddelanden till dessa kontakter från sidan **Inkasso** . Inkassokontakten används som standardkontakten på sidan **Inkasso**. Du kan ställa in en utdragadress för kunden om utdrag ska ha en annan adress än den primära adressen. 
 
-På snabbfliken **Kredit och inkasso** för en kund, i fältet **Kontaktperson vid krav**, väljer du den person i kundorganisationen som arbetar med inkassohandläggaren. Den här personen används som standardkontakt på sidan **Inkasso** och e-postmeddelande skickas till honom eller henne. 
+På snabbfliken **Kredit och inkasso** för en kund, i fältet **Kontaktperson vid krav**, väljer du den person i kundorganisationen som arbetar med inkassohandläggaren. Den här personen används som standardkontakt på sidan **Inkasso** och e-postmeddelande skickas till personen. 
 
 > [!NOTE] 
 > Om en inkassokontakt inte angetts för en kund används den primära kontakten för kunden. Om en primär kontakt inte anges skickas e-postmeddelanden till den första adressen som är angiven på sidan **Kontakter**.

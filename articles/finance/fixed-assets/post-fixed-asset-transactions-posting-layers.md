@@ -1,7 +1,7 @@
 ---
 title: Bokför transaktioner för anläggningstillgång i bokföringsskikt
 description: Den här artikeln ger en översikt över bokföringsskiktsfunktionen för transaktioner för anläggningstillgångar.
-author: ShylaThompson
+author: moaamer
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 3001
 ms.assetid: 7dabde57-0843-47c3-85ef-f36b6f472e30
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc8c4f4f41ed39447ae441dd8e01cfcf80c939b5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: a80e4d1a081b5bd8c58238b0f154f8fbdc660ccb
+ms.sourcegitcommit: f80819c67c0a7475315fc68ce1cb568831e2c0e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770722"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4493682"
 ---
 # <a name="post-fixed-asset-transactions-to-posting-layers"></a>Bokför transaktioner för anläggningstillgång i bokföringsskikt
 
@@ -39,8 +39,11 @@ Journaler för anläggningstillgångar har definierats genom att använda sidan 
 
 Du kan ange huvudbokskonton för anläggningstillgångar på sidan Bokföringsprofiler för anläggningstillgångar. För varje bokföringsprofil måste du välja relevant transaktionstyp och bok, och sedan välja huvudbokskonton. Ställ in en profilpost för bokföring för varje bok som ska bokföra i redovisningen.
 
+Anläggningstillgången kan anges i dokument som bara stöder det **aktuella** bokföringsskiktet, som **Inköpsorder**, **Pågående leverantörsfaktura**, **Försäljningsorder** och **Fritextfaktura**. När du väljer ett anläggningstillgångs-ID i något av dessa dokument, filtreras till tillgångsboken med **aktuellt** bokföringsskikt och fylls i automatiskt vid bokföring när systemet validerar att bokföringsskiktet för anläggningstillgången är **Aktuellt**. Om valideringen inte kan slutföras avbryts bokföringsprocessen. 
+
 > [!NOTE] 
-> Genom att använda härledda böcker kan du bokföra transaktioner samtidigt till olika bokföringsskikt. Du skapar transaktionerna för den primära boken i en journal där bokföringsskiktet motsvarar bokens bokföringsskikt. I samband med bokföring bokförs transaktionerna för den härledda boken till lämpliga bokföringsskikt.
+> Genom att använda härledda böcker kan du bokföra transaktioner samtidigt till olika bokföringsskikt. Transaktionerna för den primära boken skapas i en journal eller ett källdokument där bokföringsskiktet motsvarar bokens bokföringsskikt. I samband med bokföring bokförs transaktionerna för den härledda boken till lämpliga bokföringsskikt. 
+
 
 Mer information finns i [Härledda böcker](derived-books.md) och [Bokföra med härledda böcker](post-derived-value-models.md).
 

@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 84cde511ab0b5cbe4b99e72832bf548336b6b28c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187232"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4447868"
 ---
 # <a name="manual-depreciation"></a>Manuell avskrivning
 
@@ -39,7 +39,7 @@ När du ställer in en avskrivningsprofil för anläggningstillgångar och välj
 -   Halvårsvis
 -   Dagligen
 
-När du har valt periodfrekvens klickar du på **Manuella tidsplaner**och ställer in procenttal frö varje bokföringsintervall. Tillsammans definierar de manuella tidsplanerna och bokföringsintervallen avskrivningsbeloppet, enligt exemplen senare i den här artikeln. Manuell avskrivning beräknas alltid i procent av anskaffningspriset. För manuell avskrivning behöver de avskrivningsintervall du anger inte utgöra 100 procent. Manuell avskrivning är en flexibel avskrivningsmetod som ofta används för att definiera en extraordinär avskrivningsprofil på sidan **Böcker**, till exempel en icke-periodisk avskrivning av speciella skäl (kanske skatteskäl).
+När du har valt periodfrekvens klickar du på **Manuella tidsplaner** och ställer in procenttal frö varje bokföringsintervall. Tillsammans definierar de manuella tidsplanerna och bokföringsintervallen avskrivningsbeloppet, enligt exemplen senare i den här artikeln. Manuell avskrivning beräknas alltid i procent av anskaffningspriset. För manuell avskrivning behöver de avskrivningsintervall du anger inte utgöra 100 procent. Manuell avskrivning är en flexibel avskrivningsmetod som ofta används för att definiera en extraordinär avskrivningsprofil på sidan **Böcker**, till exempel en icke-periodisk avskrivning av speciella skäl (kanske skatteskäl).
 
 ## <a name="examples"></a>Exempel
 Anskaffningspris: 11 000,00 Förväntat skrotvärde: 1 000,00 Följande tabell visar de intervall och procentsatser som du ställer in på sidan **Tidsplaner för anläggningstillgångens avskrivningsprofil**.

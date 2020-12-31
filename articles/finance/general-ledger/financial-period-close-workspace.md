@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d647dc41eb18d25101e66d3030327fc55b55a4d5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6f96da7f7f5374fb34e317c416238a48c3fe7d05
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250338"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4448233"
 ---
 # <a name="financial-period-close-workspace"></a>Arbetsyta för räkenskapsperiodens stängning
 
@@ -68,7 +68,7 @@ Innan du kan använda arbetsytan **Räkenskapsperiodens stängning** måste du k
 
 På fliken **resurser** definierar du de personer som är inblandade i utgående processer. Alla medarbetare som ansvarar för en stängningsaktivitet måste först tilldelas här. Du måste också ange medarbetarvyn i arbetsytan. Följande alternativ är tillgängliga:
 
--   **Endast tilldelade uppgifter** – Användaren ser enbart de uppgifter som är tilldelade honom eller henne.
+-   **Endast tilldelade uppgifter** – Användaren ser enbart de uppgifter som är tilldelade användaren.
 -   **All uppgifter och statusar** – Användaren ser alla bokslutsuppgifter och statusar för hela processen.
 
 Användare som har behörighet att visa endast sina tilldelade uppgifter, kommer inte att vara i stånd att lägga till uppgifter i uppgiftslistan, redigera uppgifter eller ta bort uppgifter från uppgiftslistan.

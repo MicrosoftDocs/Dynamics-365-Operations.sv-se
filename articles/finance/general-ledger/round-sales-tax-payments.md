@@ -19,11 +19,11 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 998dbd01352d3fa5040187e81b564d14133464db
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014969"
+ms.locfileid: "4448177"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Momsbetalningar och avrundningregler
 
@@ -44,7 +44,7 @@ Det totala momsen för en period visar ett kreditsaldo på -98 765,43. Den jurid
 Den juridiska personen vill använda en avrundningsmetod som rundar av saldot till närmaste hela 1,00. Användaren som ansvarar för momsredovisningen måste då göra följande steg.
 
 1. Klicka på **Skatt** > **Indirekt moms** > **Moms** > **Skattemyndigheter**.
-2. I snabbfliken **Allmän** i fältet **Avrundningssätt** , välj **Normal**.
+2. I snabbfliken **Allmän** i fältet **Avrundningssätt**, välj **Normal**.
 3. I fältet **Avrundning** anger du 1,00.
 4. När det är dags att betala moms till skattemyndigheten, gå till **Skatt** > **Deklarationer** > **Moms** > **Kvitta och bokför moms**. På momskvittningskontot kan du se att skatteskuldbeloppet på **98 765,43** avrundas till **98 765**.
 
@@ -54,7 +54,7 @@ Följande tabell visar hur ett belopp på 98 765,43 avrundas med hjälp av varje
 > Om värdet för avrunda är inställt på 0,00 är:
 >
 > - Vid normal avrundning är avrundningsbeteendet detsamma som för **Avrundning = 0,01**.
-> - För **Alternativ för avrundningssätt** , **Nedåt** , **Uppåt** och **Egen fördel** är beteendet detsamma som för **Avrundning = 1,00**.
+> - För **Alternativ för avrundningssätt**, **Nedåt**, **Uppåt** och **Egen fördel** är beteendet detsamma som för **Avrundning = 1,00**.
 
 | Aternativ för avrundningssätt                | Avrundningsvärde = 0,01 | Avrundningsvärde = 0,10 | Avrundningsvärde = 1,00 | Avrundningsvärde = 100,00 | Avrundningsvärde = 0,00   |
 |-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|

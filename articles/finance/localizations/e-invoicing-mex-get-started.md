@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a30f5a9b585c826222108563ea10ac4194ee441c
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.openlocfilehash: 6d15a79a359b3c708b2b33893d700377a57c3eb7
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039832"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512244"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Kom igång med tillägget elektronisk fakturering för Mexiko
 
@@ -53,7 +53,7 @@ Under RCS-inställningar ska du utföra följande uppgifter:
 ## <a name="import-the-e-invoicing-feature"></a>Importera e-faktureringsfunktion
 
 1. Logga in på RCS-kontot.
-2. I arbetsytan **globaliseringsfunktioner** i avsnittet **Funktioner** , välj panelen **e-fakturering**.
+2. I arbetsytan **globaliseringsfunktioner** i avsnittet **Funktioner**, välj panelen **e-fakturering**.
 3. På sidan **e-faktureringsfunktioner** väljer du **Importera** för att importera **CFDI-fakturor (MX)** från den globala databasen.
 
     > [!NOTE]
@@ -85,7 +85,7 @@ Du kan skapa en ny version om t.ex. URL:er måste uppdateras. Mer information fi
     - CFDI annulleringsbegäran (MX) (BusinessDocumentService)
     - CFDI-faktura (BusinessDocumentService)
 
-2. Välj en konfigurationsversion i listan och välj sedan **Redigera** eller **Visa** för att öppna sidan **Formatdesigner** , där du kan redigera eller visa konfigurationen.
+2. Välj en konfigurationsversion i listan och välj sedan **Redigera** eller **Visa** för att öppna sidan **Formatdesigner**, där du kan redigera eller visa konfigurationen.
 
     ![Öppna sidan Formatdesigner](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
@@ -95,7 +95,7 @@ Du kan skapa en ny version om t.ex. URL:er måste uppdateras. Mer information fi
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Hantera inställningen för e-faktureringsfunktionen
 
-- på sidan **e-faktureringsfunktioner** på fliken **Inställningar** välj **Lägg till** , **Ta bort** eller **Redigera** för att hantera inställningsfunktionen för e-fakturering.
+- på sidan **e-faktureringsfunktioner** på fliken **Inställningar** välj **Lägg till**, **Ta bort** eller **Redigera** för att hantera inställningsfunktionen för e-fakturering.
 
 ![Hantera inställningen för e-faktureringsfunktionen](media/e-Invoicing-services-get-started-MEX-Manage-e-Invoicing-feature-Setup.png)
 
@@ -140,7 +140,7 @@ Om du vill skicka annullering av CFDI-faktura krävs funktionsinställningarna *
 
 ## <a name="change-the-version-status-to-completed"></a>Ändra versionsstatus till slutförd
 
-1. På sidan **e-faktureringsfunktion** på fliken **Versioner** , välj den version av e-faktureringsfunktionen som har status **Utkast**.
+1. På sidan **e-faktureringsfunktion** på fliken **Versioner**, välj den version av e-faktureringsfunktionen som har status **Utkast**.
 2. Välj **Ändra status \> Slutför**.
 
 ## <a name="change-the-version-status-to-published"></a>Ändra versionsstatus till publicerad
@@ -164,10 +164,10 @@ Du ställer in tillägg för elektroniska fakturor i Finance genom att utföra f
 ### <a name="import-the-er-data-model-er-data-model-mapping-and-context-configurations-for-cfdi-invoices"></a>Importera ER-datamodell, ER-datamodellmappning och kontextkonfigurationer för CFDI-fakturor
 
 1. Logga in på Finance.
-2. I arbetsytan **elektronisk rapportering** i avsnittet **konfigurationsprovider** väljer du rubriken **Microsoft**. Kontrollera att konfigurationsprovidern är **aktiverad**. För information om hur du ställer in en leverantör på **Aktiv** , se [Skapa konfigurationsleverantörer och markera dem som aktiva](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. I arbetsytan **elektronisk rapportering** i avsnittet **konfigurationsprovider** väljer du rubriken **Microsoft**. Kontrollera att konfigurationsprovidern är **aktiverad**. För information om hur du ställer in en leverantör på **Aktiv**, se [Skapa konfigurationsleverantörer och markera dem som aktiva](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
 3. Välj **Databaser**.
 4. Välj **Global resurs \> Öppna**.
-5. Importera **Fakturamodell** , **Mappning av fakturamodell** , **CFDI-fakturaformat (MX)** , **CFDI-format för begäran om annullering av faktura (MX)** och **CFDI-format för annullering av faktura (MX)**.
+5. Importera **Fakturamodell**, **Mappning av fakturamodell**, **CFDI-fakturaformat (MX)**, **CFDI-format för begäran om annullering av faktura (MX)** och **CFDI-format för annullering av faktura (MX)**.
 
 ### <a name="turn-on-the-feature-for-processing-cfdi-invoices"></a>Aktivera funktionen för att bearbeta CFDI-fakturor
 
@@ -183,7 +183,7 @@ Du ställer in tillägg för elektroniska fakturor i Finance genom att utföra f
 1. I arbetsytan **elektronisk rapportering** i avsnittet **konfigurationsprovider** väljer du rubriken **Microsoft**.
 3. Välj **Databaser**.
 4. Välj **Global resurs \> Öppna**.
-5. Importera **svarsmeddelandemodell** , **import av CFDI fellogg (MX)** , **import av CFDI fellogg (MX)** och **CFDI-import av svarsmeddelande (MX)**.
+5. Importera **Svarsmeddelandemodell**, **CFDI import av fellogg (MX)** och **CFDI import av svarsmeddelande (MX)**.
 
 #### <a name="set-up-the-response-types"></a>Ställ in svarstyper
 
@@ -193,14 +193,14 @@ Du ställer in tillägg för elektroniska fakturor i Finance genom att utföra f
 4. Definiera ett relaterat dokumentsammanhang för varje register.
 
     - För **Kundfakturajournaler** anger du **Kundfakturakontext**.
-    - För **Projektfaktura** , ange **Projektfaktura kontext**.
+    - För **Projektfaktura**, ange **Projektfaktura kontext**.
 
 4. Välj **svarstyper** för att konfigurera de svarstyper som kan returneras från tillägget elektronisk fakturering och inkluderas i en kundfakturajournal eller på en projektfaktura.
-5. Markera **Ny** och sedan, i fältet **Svarstyp** , markerar du **Svar**.
+5. Markera **Ny** och sedan, i fältet **Svarstyp**, markerar du **Svar**.
 6. I fältet **Överföringsstatus** välj **Väntande**.
 7. I fältet **Modellmappning** välj **Importformat för svarsmeddelande - Modellmappning från svarsmeddelande**.
 8. Välj **Spara**.
-9. Markera **Ny** och sedan, i fältet **Svarstyp** , markerar du **ResponseData**.
+9. Markera **Ny** och sedan, i fältet **Svarstyp**, markerar du **ResponseData**.
 10. I fältet **Överföringsstatus** välj **Väntande**.
 11. I fältet **modellmappning** väljer du **CFDI importformat för svarsdata (information) – import av svarsdata**.
 12. Välj **Spara**.
@@ -215,7 +215,7 @@ Under bearbetningen av CFDI-fakturor i Finance genom tillägget för elektronisk
 
 ### <a name="submit-cfdi-invoices"></a>Skicka CFDI-fakturor
 
-När du har aktiverat funktionen **Konfigurerbara integreringstillägg för elektronisk fakturering** kan processen **Exportera/importera e-faktura** ( **Kundreskontra \> Fakturor \> E-fakturor** ) för att skicka CFDI-fakturor inte längre användas. Den ersätts med en ny process som kallas **skicka elektroniska dokument**.
+När du har aktiverat funktionen **Konfigurerbara integreringstillägg för elektronisk fakturering** kan processen **Exportera/importera e-faktura** (**Kundreskontra \> Fakturor \> E-fakturor**) för att skicka CFDI-fakturor inte längre användas. Den ersätts med en ny process som kallas **skicka elektroniska dokument**.
 
 > [!NOTE]
 > Innan du använder processen för att **skicka elektroniska dokument** bör du kontrollera att inställningen som krävs för mexikanska e-fakturor har slutförts. För mer information, se [CFDI layout version 3.3](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3).
@@ -292,7 +292,7 @@ När du har aktiverat funktionen **konfigurerbara integreringstillägg för elek
     ![Visa information om överföringsloggar för annullering](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
-Om du aktiverar funktionerna MX-00010 och MX-00016 (CFDI-faktura och CFDI-annullering) kan kräva sändning av begränsad data, som inkluderar organisationens skatteregistrerings-ID. Detta kommer att översändas till tredje parts byråer som har tillstånd av skattemyndigheten för att skicka elektroniska fakturor till denna skattemyndighet i det fördefinierade format som krävs för integrering med den offentliga sektorns webbtjänster. En administratör kan aktivera och inaktivera funktionen MX-00010 och MX-00016 (CFDI-faktura och CFDI-annullering) genom att navigera till **Organisationsadministration \> Inställningar \> Parametrar för elektroniskt dokument**. Välj fliken **Funktioner** , markera de rader som innehåller funktionerna MX-00010 och MX-00016 och välj sedan lämpligt alternativ. Data som importeras från dessa externa system till denna Dynamics 365 onlinetjänst omfattas av vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=512132). Mer information finns i sektionerna om sekretessmeddelanden i landsspecifik funktionsdokumentation.
+Om du aktiverar funktionerna MX-00010 och MX-00016 (CFDI-faktura och CFDI-annullering) kan kräva sändning av begränsad data, som inkluderar organisationens skatteregistrerings-ID. Detta kommer att översändas till tredje parts byråer som har tillstånd av skattemyndigheten för att skicka elektroniska fakturor till denna skattemyndighet i det fördefinierade format som krävs för integrering med den offentliga sektorns webbtjänster. En administratör kan aktivera och inaktivera funktionen MX-00010 och MX-00016 (CFDI-faktura och CFDI-annullering) genom att navigera till **Organisationsadministration \> Inställningar \> Parametrar för elektroniskt dokument**. Välj fliken **Funktioner**, markera de rader som innehåller funktionerna MX-00010 och MX-00016 och välj sedan lämpligt alternativ. Data som importeras från dessa externa system till denna Dynamics 365 onlinetjänst omfattas av vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=512132). Mer information finns i sektionerna om sekretessmeddelanden i landsspecifik funktionsdokumentation.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

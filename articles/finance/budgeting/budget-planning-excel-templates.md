@@ -19,11 +19,11 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 471c719a8e6de0ebe6fcdad0ae222453db841c87
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772109"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4448134"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budgetplaneringsmallar för Excel
 
@@ -67,7 +67,7 @@ I fliken **Design**, klicka på fälten **Lägg till** och markera sedan **Budge
 
 Peka markören på önskad plats i Excel-filen. Klicka på knappen **Lägg till etikett** för att lägga till fältetiketten på vald plats. Välj **Lägg till värde** för att lägga till värdefältet på vald plats. Klicka på **Klart** för att stänga designverktyget.
 
-## <a name="select-add-valuemediabpt7pngmediabpt7png"></a>[![Välj Lägg till värde](./media/bpt7.png)](./media/bpt7.png)
+## <a name="select-add-valuemediabpt7png"></a>[![Välj Lägg till värde](./media/bpt7.png)](./media/bpt7.png)
 
 <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Lägg till beräknad kolumn i ett dokumentmallsregister för budgetplan
 --------------------------------------------------------------
@@ -83,7 +83,7 @@ Den valda fältgruppen visar de kolumner som finns i mallen. Klicka på **Formel
 [![Lägg till och infoga kolumn](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Ange formeln genom att skapa den i kalkylbladet och kopiera den sedan till fönstret **Design**. Ett register avsett för Finance and Operations namnges vanligtvis "AXTable1". För att till exempel summera Begäran K1 : Begäran K4-kolumner i kalkylbladet blir formeln = AxRegister1\[Begäran K1\]+ AxRegister1\[Begäran K2\]+ AxRegister1\[Begäran K3\]+ AxRegister1\[Begäran K4\].
+> Ange formeln genom att skapa den i kalkylbladet och kopiera den sedan till fönstret **Design**. En tabell avsedd för Finance and Operations namnges vanligtvis "AXTable1". För att till exempel summera Begäran K1 : Begäran K4-kolumner i kalkylbladet blir formeln = AxRegister1\[Begäran K1\]+ AxRegister1\[Begäran K2\]+ AxRegister1\[Begäran K3\]+ AxRegister1\[Begäran K4\].
 
 Upprepa dessa steg för att infoga kolumnen **Justering**. Använd formeln = AxRegister1\[Total begäran\]\*$I$ 1 för den här kolumnen. Detta kommer ta värdet i cell I1 och multiplicera värdena i kolumnen **Total begäran** för att beräkna justeringsbeloppen.
 
@@ -120,7 +120,7 @@ Vi rekommenderar att låsa mallen om du vill hindra användare från att stänga
 
 Klicka på pilen för att visa en ytterligare meny. Välj **Lås**.
 
-### <a name="select-lockmediabpt16-1024x614pngmediabpt16png"></a>[![Vålj lås](./media/bpt16-1024x614.png)](./media/bpt16.png)
+### <a name="select-lockmediabpt16png"></a>[![Vålj lås](./media/bpt16-1024x614.png)](./media/bpt16.png)
 
 ### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>Kan jag använda andra Excel-funktioner som cellformatering, färger, villkorsstyrd formatering och diagram med mina budgetplansmallar?
 

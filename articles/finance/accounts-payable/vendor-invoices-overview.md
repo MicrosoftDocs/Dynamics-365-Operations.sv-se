@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb797af1ae14ebbb420a1b4a1591202c42bd8824
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: d51a5ff2dca764a534ea4bf92c30bcf0bf0a5dad
+ms.sourcegitcommit: 51cd470ee885d12f7d51c66201b092aaa16dfaa6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249128"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4701686"
 ---
 # <a name="vendor-invoices-overview"></a>Översikt över leverantörsfakturor
 
@@ -112,9 +112,12 @@ Du kan endast komma åt sidan **återställa leverantörsfakturor** om säkerhet
 
 ## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Återställa arbetsflödesstatus för leverantörsfakturor från Oåterkalleligt till Utkast
 
-En arbetsflödesinstans som har stoppats på grund av ett oåterkalleligt fel får arbetsflödesstatusen **oåterkalleligt**. När statusen för ett arbetsflöde för leverantörsfakturor är **Oåterkalleligt** kan du återställa den till **Utkast** genom att välja **Återkalla**. Du kan sedan redigera leverantörsfakturan. Den här funktionen är tillgänglig om paramtern **Återställa utkaststatus för arbetsflöde för leverantörsfaktura** på sidan **Funktionshantering** är aktiverad.
+En arbetsflödesinstans som har stoppats på grund av ett oåterkalleligt fel får arbetsflödesstatusen **oåterkalleligt**. När statusen för ett arbetsflöde för leverantörsfakturor är **Oåterkalleligt** kan du återställa den till **Utkast** genom att välja **Återkalla**. Du kan sedan redigera leverantörsfakturan. Den här funktionen är tillgänglig om parametern **Återställa arbetsflödesstatus för leverantörsfakturor från Oåterkalleligt till Utkast** på sidan **Funktionshantering** är aktiverad.
 
 På sidan **Arbetsflödeshistorik** för leverantörsfakturor kan du återställa arbetsflödesstatusen till **utkast**. Du kan öppna den här sidan från **leverantörsfakturan** eller från navigeringen **Allmänt > Förfrågningar > Arbetsflöde**. Om du vill återställa arbetsflödesstatus **utkast**, välj **återkalla**. Du kan också återställa arbetsflödesstatus till utkast genom att välja åtgärden **återkalla** på sidan **leverantörsfaktura** eller **väntande leverantörsfakturor**. När arbetsflödesstatusen har återställts till **Utkast** blir den tillgänglig för redigering på sidan **leverantörsfaktura**.
+
+## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>Visa fakturasumman på sidan Väntande leverantörsfakturor
+Du kan visa fakturasumman på sidan **Väntande leverantörsfakturor** genom att aktivera parametern **Visa fakturasumma i listan med pågående leverantörsfakturor** på sidan **Parametrar för leverantörsreskontra**. 
 
 
 

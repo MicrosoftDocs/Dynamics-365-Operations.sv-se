@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 28669014b4998de6ae13ec7dbc4c704a14aff6e2
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 948f83d56e560cc21205294c15de4b2097d2ad2e
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975350"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4448227"
 ---
 # <a name="customer-transactions-list-page"></a>Listsida för kundtransaktioner
 
@@ -48,7 +48,7 @@ Knappen **Visa kvittningar** i åtgärdsfönstret ger snabb tillgång till kvitt
 
 ## <a name="global-transactions"></a>Globala transaktioner
 
-Knappen **globala transaktioner** visas även på listsidan **kundtransaktioner**. Den här knappen låter dig visa alla transaktioner för en kund i alla juridiska personer. Listsidan **kundtransaktioner** visar endast transaktioner för de juridiska personer som användaren har tillgång till, baserat på dennes säkerhetsinställningar.
+Knappen **globala transaktioner** visas även på listsidan **kundtransaktioner**. Den här knappen låter dig visa alla transaktioner för en kund i alla juridiska personer. Listsidan **Kundtransaktioner** visar endast transaktioner för de juridiska personer som användaren har tillgång till, baserat på användarens säkerhetsinställningar.
 
 Listsidan visar alla transaktioner för kunder som har samma part-ID som kunder du startade med. Om t.ex. kunder US-001 i en juridisk person har samma part-ID som kunder DE-001 i en annan juridisk person, visas alla transaktioner för både kunder-ID:n.
 

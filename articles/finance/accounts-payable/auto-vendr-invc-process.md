@@ -3,7 +3,7 @@ title: Automatiserade processer för leverantörsfakturering – översikt
 description: Det här ämnet beskriver möjligheten att automatisera bearbetning av leverantörsfaktura och fördelar med att använda en automatiserad process.
 author: abruer
 manager: AnnBe
-ms.date: 10/16/2020
+ms.date: 11/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ec3598ebd158cc23ac7c02d7e33557141d5901bc
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.openlocfilehash: 677760ec15630a11bf691be4cd8af9cf5549ddf9
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022506"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665332"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Automatiserade processer för leverantörsfakturering – översikt
 
@@ -39,8 +39,9 @@ Automatiseringsprocesser kan användas för att utföra dessa uppgifter:
 - Skicka importerade fakturor automatiskt till arbetsflödessystemet.
 - Matcha produktinleveranser mot väntande leverantörsfakturarader.
 - Simulera bokföring innan en leverantörsfaktura bokförs.
-- Visa arbetsflödeshistorik snabbt och effektivt.
+- Visa arbetsflödes- och automationshistorik snabbt och effektivt.
 - Visa och analysera resultaten av automatiserad bearbetning av leverantörsfakturor.
+- Återuppta automatisk bearbetning för flera fakturor.
 
 ## <a name="vendor-invoice-automation--submit-imported-vendor-invoices-to-the-workflow-system"></a>Automatisering av leverantörsfaktura – skicka importerade leverantörsfakturor till arbetsflödessystemet
 
@@ -58,10 +59,13 @@ Systemet kan automatiskt matcha bokförda produktinleveranser mot fakturarader s
 
 Vid bokföringssimulering slutförs valideringsstegen som utförs under bokföringsprocessen för leverantörsfakturor, men inga konton uppdateras. Om du vill köra processen kan du välja antingen en enda faktura eller flera fakturor på sidan **Pågående leverantörsfakturor**.
 
-## <a name="vendor-invoice-automation--enhanced-experience-for-viewing-workflow-historical-information-for-vendor-invoices"></a>Automatisering av leverantörsfaktura – förbättrad erfarenhet för visning av arbetsflödeshistorik information för leverantörsfakturor
+## <a name="vendor-invoice-automation--enhanced-experience-for-viewing-workflow-and-automation-historical-information-for-vendor-invoices"></a>Automatisering av leverantörsfaktura – förbättrad upplevelse för visning av historisk arbetsflödes- och automationsinformation för leverantörsfakturor
 
-En vy över arbetsflödeshistoriken som är lättläst för leverantörsfakturor tillhandahålls. Arbetsflödeshistorik för leverantörsfakturor kan nås direkt från leverantörsfakturan. Därför behövs det färre musklick för att hitta den informationen.
+En vy över arbetsflödeshistoriken som är lättläst för leverantörsfakturor tillhandahålls. Arbetsflödeshistorik för leverantörsfakturor kan nås direkt från leverantörsfakturan. Därför behövs det färre musklick för att hitta den informationen. Om din organisation har aktiverat möjligheten att automatiskt skicka in importerade leverantörsfakturor till arbetsflödet, tillhandahålls automationshistoriken för de importerade fakturorna. Automationshistoriken hjälper dig att identifiera det aktuella steget i processen, samt vilka steg som redan har slutförts. När ett steg misslyckas tillhandahåller systemet detaljerad information som hjälper dig att förstå orsaken till felet.
 
 ## <a name="vendor-invoice-automation--analytics-and-metrics"></a>Automatisering av leverantörsfaktura – analys och mått
 
 Arbetsytan **Leverantörsfakturaregistrering** kan du fokusera på leverantörsfakturor som inte har gjort dem via den automatiska processen. Sida vid sida på arbetsytan visar information om leverantörsfakturor som inte kunde skickas till arbetsflödessystemet, importeras eller matchas mot produktinleveranser. Microsofts Power BI mätvärden ges också för att ge leverantörsreskontra chefer insikt i effektiviteten vid automatisering av leverantörsfakturor.
+
+## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Automatisering av leverantörs faktura – återuppta automationsbearbetning av flera fakturor
+När en importerad faktura inte har skickats till arbetsflödet via den automatiska processen, tas den bort från vidare automatisk bearbetning. En leverantörsreskontraansvarig kan granska och redigera fakturan innan den automatiska processen skickar den igen till arbetsflödet. Om en felorsak kan lösas med samma korrigering för flera fakturor kan du starta om den automatiska processen på sidan **Återuppta automatisk bearbetning för fakturor**. 

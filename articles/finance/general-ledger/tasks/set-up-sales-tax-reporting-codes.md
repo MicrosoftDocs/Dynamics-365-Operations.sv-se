@@ -1,6 +1,6 @@
 ---
 title: Ställ in momsrapporteringskoder
-description: Momsrapportkoderna refererar till ett fältnummer i momsrapporten.
+description: Momsrapportkoderna refererar till ett fältnummer som anges i momsrapporten.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/08/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6c18f4fb0db31a959647bb10d2b99d940646676e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 362d30e56fe35b85d50bfa2df57364733b366fef
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976803"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646191"
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>Ställ in momsrapporteringskoder
 
 [!include [banner](../../includes/banner.md)]
 
-Momsrapportkoderna refererar till ett fältnummer i momsrapporten. Dessa används för landsspecifika rapportlayouter och rapporten Momsbetalning per kod om du vill skriva ut momsbelopp för en kvittningsperiod som summeras per rapporteringskod. När du har skapat momsrapporteringskoder kan du referera till dem på rapportinställningssnabbflikarna på momskodsidan. 
+Momsrapportkoderna refererar till ett fältnummer som anges i momsrapporten. De används på landsspecifika rapportlayouter. De används också på rapporten Momsbetalning per kod. Rapporten visar momsbelopp för en kvittningsperiod som summeras för varje rapporteringskod. När du har skapat momsrapporteringskoder kan du referera till koderna på rapportinställningssnabbflikarna, som du når från sidan **Momskod**. 
 
 I den här registreringen används demonstrationsföretaget DEMF.
 

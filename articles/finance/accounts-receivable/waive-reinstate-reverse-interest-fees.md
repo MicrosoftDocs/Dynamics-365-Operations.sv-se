@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1b5c92d6f3bb0bdc3fbadc9708350b5107e6cf37
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188681"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4448025"
 ---
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Avstå, återinföra eller återföra ränta
 
@@ -61,7 +61,7 @@ Du kan göra korrigeringar med hjälp av **korrekt faktura** på rutan Åtgärd 
 
 Du kan vända en kund transaktion på en faktura om en faktura skapats felaktigt. Om den återförda kundtransaktionen har ränta som ingår i en räntefaktura, och om räntefakturan har konterats, kommer räntan i transaktionen också återföras på räntefakturan. Den räntefaktura avbryts om den inte har bokförts. 
 
-Du kan återföra kundtransaktioner med hjälp av **bakåtknappen**på **kundtransaktioner** sida.
+Du kan återföra kundtransaktioner med hjälp av **bakåtknappen** på **kundtransaktioner** sida.
 
 ## <a name="waive-or-reinstate-interest-notes"></a>efterskänka eller återinföra räntefakturor
 Du kan avstå från eller återinföra alla avgifter på räntefakturor som du väljer. När du avstå från avgifter, det totala beloppet att avstå inte överstiga ett belopp som har ställts in. Du kan bara återinsätta räntefaktura om den inte tidigare avfärdades. 
@@ -76,12 +76,12 @@ Du kan avstå från eller återinföra räntefakturor via **transaktionsränta**
 ## <a name="waive-or-reinstate-fees"></a>efterskänka eller Återinföra avgifter
 Du kan avstå från eller återinföra särskilda avgifter på en räntefaktura, i stället för att justera alla avgifter för räntefakturan. När du avstå från avgifter, det totala beloppet att avstå inte överstiga ett belopp som har ställts in. Du kan bara återinsätta en avgift om den avfärdades tidigare. 
 
-Du kan avstå från eller återinföra räntefakturor med**avgift** knappen på **Samla in** fliken på **Kund** sidan.
+Du kan avstå från eller återinföra räntefakturor med **avgift** knappen på **Samla in** fliken på **Kund** sidan.
 
 ## <a name="reverse-interest-notes"></a>Återför räntefakturor
 Du kan återställa alla avgifter på räntefakturor som du väljer. Återförda avgifter tas bort från kundens konto och är inte längre aktuellt. När räntefakturan har återförts, kan du beräkna om ränta och skapa en ny räntefaktura. 
 
-Du kan återföra räntefakturor med**räntefaktura** knappen på **Samla in** fliken på **Kund** sidan.
+Du kan återföra räntefakturor med **räntefaktura** knappen på **Samla in** fliken på **Kund** sidan.
 
 ## <a name="reverse-interest-transactions"></a>Återför räntetransaktioner
 Du kan återställa alla räntetransaktioner som du väljer. Återförda avgifter tas bort från kundens konto och är inte längre aktuellt. När transaktionen har återförts, kan du beräkna om ränta och skapa en ny räntefaktura.

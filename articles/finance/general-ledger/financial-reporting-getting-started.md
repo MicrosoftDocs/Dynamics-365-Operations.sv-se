@@ -3,7 +3,7 @@ title: Översikt över ekonomisk rapportering
 description: Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 Finance och hur du använder finansiella rapporteringsfunktioner.
 author: aprilolson
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd87983ce062bd1fa57e97628986cadced9971ab
-ms.sourcegitcommit: 374298f0816b57c95c0c3e3fd7e852399e1d8696
+ms.openlocfilehash: 88436b4a5d6be4172e15fa4a9dadc34696417fb9
+ms.sourcegitcommit: eec96c64f44d1b4877d49ee15665a774019d42d7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3999559"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "4672454"
 ---
 # <a name="get-started-with-financial-reporting"></a>Kom i gång med Financial reporting 
 
@@ -114,17 +114,17 @@ Ekonomisk rapportering innehåller 22 standardrapporter. Varje rapport använder
 | Balansräkning och resultaträkning sida vid sida – standardinställning | Visa organisationens ekonomiska läge och lönsamhet för året sida vid sida.                                                                                                                                                                                                                              |
 | Kassaflöde – standardinställning                                       | Visa kontanter som kommer in och lämnar organisationen.                                                                                                                                                                                                                                   |
 | Detaljerad JE- och TB-granskning – standardinställning                      | Visa ingående balans och aktivitetsinformation för alla konton.                                                                                                                                                                                                                                                      |
-| Detaljerad råbalans – standardinställning                         | Visa saldoinformation för alla konton med debet- och kreditsaldon och nettot för dessa saldon, tillsammans med transaktionsdatum, verifikation och journalbeskrivning.                                                                                                                                  |
+| [Detaljerad råbalans – standardinställning](trial-balance-financial-reports.md)| Visa saldoinformation för alla konton med debet- och kreditsaldon och nettot för dessa saldon, tillsammans med transaktionsdatum, verifikation och journalbeskrivning.                                                                                                                                  |
 | Utgifter med treårig kvartalstrend – standardinställning             | Visa utgifter för de senaste tolv kvartalen över de tre senaste åren.                                                                                                                                                                                                                                   |
 | Ekonomisk översikt för JE- och TB-granskning – standardinställning            | Visa en översikt över saldona och aktiviteten för finansrubrikerna tillgång, skuld, ägarens eget kapital, intäkt, utgift, vinst eller förlust.                                                                                                                                                                           |
-| Resultaträkning – standardinställning                                | Visa organisationens lönsamhet för den aktuella perioden till dags dato.                                                                                                                                                                                                                                   |
+| [Resultaträkning – standardinställning](income-statement-financial-report.md)| Visa organisationens lönsamhet för den aktuella perioden till dags dato.                                                                                                                                                                                                                                   |
 | Redovisningstransaktionslista – standardinställning                        | Visa detaljerad saldoinformation för alla konton. Den här rapporten visar debet- och kreditsaldon, tillsammans med ytterligare transaktionsinformation, såsom transaktionsdatum, journalnummer, verifikation och bokföringstyp och spårningsnummer.                                                                            |
 | Grader – standardinställning                                          | Visa organisationens solvens, lönsamhet och effektivitetsgrad för året.                                                                                                                                                                                                                           |
 | Rullande tolv månaders utgifter – standardinställning                       | Visa utgifter för var och en av de sista 12 månaderna. Dessa tolv månader kan omfatta mer än ett räkenskapsår.                                                                                                                                                                                                       |
 | Rullande resultaträkning för kvartal – standardinställning               | Visa organisationens lönsamhet på kvartalsbasis för det senaste året och även året till dags dato.                                                                                                                                                                                                                   |
 | Balansräkning sida vid sida – standardinställning                      | Visa organisationens ekonomiska läge för året. Den här rapporten visar tillgångar och skulder och aktiekapitalet sida vid sida.                                                                                                                                                                                |
-| Råbalanssammanfattning - standardinställning                          | Visa information om saldo för alla konton som har in- och utgående balanser och debet- och kreditsaldon tillsammans med deras nettodifferens.                                                                                                                                                                  |
-| Summerad råbalans på årsbasis – standardinställning           | Visa saldoinformation för alla konton som har in- och utgående saldon, och debet- och kreditsaldon tillsammans med deras nettodifferens för aktuellt år och föregående år.                                                                                                                           |
+| [Råbalanssammanfattning - standardinställning](trial-balance-financial-reports.md)| Visa information om saldo för alla konton som har in- och utgående balanser och debet- och kreditsaldon tillsammans med deras nettodifferens.                                                                                                                                                                  |
+| [Summerad råbalans på årsbasis – standardinställning](trial-balance-financial-reports.md)| Visa saldoinformation för alla konton som har in- och utgående saldon, och debet- och kreditsaldon tillsammans med deras nettodifferens för aktuellt år och föregående år.                                                                                                                           |
 | Veckoförsäljning och rabatt – standardinställning                     | Visa försäljning och rabatter för varje vecka i en månad. Den här rapporten innehåller en fyraveckors summa.                                                                                                                                                                                                              |
 | Tillgängliga budgetmedel - standardinställningar                         | Visa en detaljerad jämförelse av reviderad budget, faktisk utgift, budgetreservationer och tillgängliga budgetmedel för alla konton                                                                                                                                                                                  |
 
@@ -145,11 +145,12 @@ Det finns några vanliga problem som kan orsaka problem när du öppnar rapportd
 
 Problem 1: Rapportdesigner startar inte när du väljer **ny** eller **Redigera**.
 
-* I Internet Explorer, välj **inställningar** och sedan **Internetalternativ**. Välj fliken **säkerhet**. Välj betrodda platser och välj sedan **platser**. I **Lägg till denna webbplats till zon** , ange "\*\.dynamics.com" (utan citattecken) och välj sedan **Lägg till**. 
+* I Internet Explorer, välj **inställningar** och sedan **Internetalternativ**. Välj fliken **säkerhet**. Välj betrodda platser och välj sedan **platser**. I **Lägg till denna webbplats till zon**, ange "\*\.dynamics.com" (utan citattecken) och välj sedan **Lägg till**. 
 * I Internet Explorer, välj **inställningar** och sedan **Internetalternativ**. Välj fliken **säkerhet**. Välj tillförlitliga platser. Ändra alternativet till i området märkt Säkerhetsnivå för denna zon till **Medel-låg**.
 * Inaktivera blockering av popup-fönster i webbläsaren.
 * Arbetsstationer måste installera Microsoft .NET ramverk 4.6.2 eller senare. Den här versionen av Microsoft .NET Framework kan hämtas och installeras från [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* Om du använder Microsoft Edge med Chrome måste du installera tillägget ClickOnce för att hämta rapportdesignerklienten. Om du använder osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge. 
+* Om du använder webbläsaren Chrome måste du installera tillägget ClickOnce för att hämta rapportdesignerklienten. Om du använder Chrome i osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge. Mer information om Chrome ClickOnce-tillägget finns i [Systemkrav för molnbaserad distribution](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
+* Om du använder Microsoft Edge med en Chrome-webbläsare behöver du inte installera ett ClickOnce-tillägg för Edge Chromium. Du måste dock aktivera alternativet ClickOnce för att kunna hämta Report Designer-klienten. Om du använder osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge.
      1. Öppna en ny webbläsare i Microsoft Edge.
      2. Ange **edge://flags** och välj **Retur**.
      3. Sök efter alternativet **ClickOnce Support** eller använd denna direktlänk: **edge://flags/#edge-click-once**.

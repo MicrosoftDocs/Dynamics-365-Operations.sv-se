@@ -19,11 +19,11 @@ ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
 ms.openlocfilehash: 9e206569aad3f53a2f6f66e6d6253226e5980078
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.sourcegitcommit: 30c541426cf2037b768e3556e1b170a64991f64a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022577"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "4448182"
 ---
 # <a name="asset-leasing-get-started"></a>Kom i gång med tillgångsleasing
 
@@ -208,7 +208,7 @@ Detta motsvarar överföring av saldoavdrag för tillgång med nyttjanderätt. I
 ## <a name="create-an-asset-lease"></a>Skapa en tillgångsleasing
 Gör på följande sätt om du vill skapa en ny leasing. 
 
-1. Om du vill använda **Leasing av tillgångar** måste du aktivera den med arbetsytan **Funktionshantering**. Från arbetsytan **Funktionshantering** , välj **Alla** så att alla funktioner visas på sidan. Välj **Leasing av tillgångar** och välj sedan **Aktivera nu**.
+1. Om du vill använda **Leasing av tillgångar** måste du aktivera den med arbetsytan **Funktionshantering**. Från arbetsytan **Funktionshantering**, välj **Alla** så att alla funktioner visas på sidan. Välj **Leasing av tillgångar** och välj sedan **Aktivera nu**.
 2. Gå till **Leasing av tillgångar > Vanlig > Sammanfattning av leasing**. Ange obligatoriska fält på snabbfliken **Allmänt**. 
    - **Leasingdetaljer**
    - **Tillgångens livslängd (månader)**
@@ -231,7 +231,7 @@ Gör på följande sätt om du vill skapa en ny leasing.
 
 7.  Gå till **Betalningsplan** under avsnittet **Funktioner**.  
 
-   På sidan **Betalningsplan** visas framtida betalningsplaner för ett leasing-ID. Välj **Bekräfta schema** om du vill kunna bokföra transaktionerna för **första redovisningen**. 
+   På sidan **Betalningsplan** visas framtida betalningsplaner för ett leasing-ID. Välj **Bekräfta plan** om du vill kunna bokföra transaktionerna för **första redovisningen**. 
 
 [![Funktionen första redovisningen](./media/overview-13.png)](./media/overview-13.png)
 

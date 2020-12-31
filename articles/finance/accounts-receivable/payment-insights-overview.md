@@ -1,6 +1,6 @@
 ---
 title: Customer payment insights (förhandsversion)
-description: I det här avsnittet beskrivs de möjligheter till betalningsinsikter som hjälper till att förbättra förståelsen av enskilda kunders typiska betalningspraxis och kan identifiera omständigheter som motiverar inledande insamlingsprocesser tidigare än vad du har gjort.
+description: I det här ämnet beskrivs funktioner för betalningsinsikter som hjälper dig att bättre förstå en enskild kunds typiska betalningspraxis. Funktionen kan också hjälpa dig att identifiera omständigheter gör att du bör starta inkassoprocesser tidigare än vad du annars skulle ha gjort.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 11/06/2019
@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f9f1e4ae4270380c88069723e768fd44ecf8c113
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: f151942555ac503338f0fd44aa8779e3c2970fb1
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2774050"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644643"
 ---
 # <a name="customer-payment-insights-preview"></a>Customer payment insights (förhandsversion)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-I det här avsnittet beskrivs de möjligheter till betalningsinsikter som hjälper till att förbättra förståelsen av enskilda kunders typiska betalningspraxis och kan identifiera omständigheter som motiverar inledande insamlingsprocesser tidigare än vad du har gjort. 
+I det här ämnet beskrivs funktioner för betalningsinsikter som hjälper dig att bättre förstå en enskild kunds typiska betalningspraxis. Funktionen kan också hjälpa dig att identifiera omständigheter gör att du bör starta inkassoprocesser tidigare än vad du annars skulle ha gjort. 
 
 ## <a name="overview"></a>Översikt
 
-Organisationer finner det ofta svårt att förutsäga när en kund betalar sina fakturor. Den här bristen på insyn leder till mindre korrekta kassaflödesprognoser, inkassoprocesser som startar för sent och order som kan levereras som standard till kunder. Customer Payment Insights (förhandsversion) hjälper organisationer att förutse när en kundfaktura kommer att betalas, vilket hjälper organisationen att skapa insamlingsstrategier som förbättrar sannolikheten för att betalas i tid. 
+Det kan vara svårt att förutsäga när en kund kommer att betala sina fakturor. Den här bristen på insyn leder till mindre korrekta kassaflödesprognoser, inkassoprocesser som startar för sent och order som kan levereras som standard till kunder. Kundbetalningsinsikter (förhandsversion) hjälper organisationer att förutsäga när en kundfaktura kommer att betalas. Denna information kan hjälpa organisationer att skapa inkassostrategier som förbättrar sannolikheten för att bli betald i tid. 
 
 ## <a name="predictions"></a>Förutsägelser
 
@@ -42,13 +42,13 @@ Med hjälp av betalningsförutsägelserna kan organisationerna förbättra sina 
 
 Genom att använda en modell för maskininlärning som används för historiska fakturor, betalningar och kunddata, Customer Payment Insights (förhandsversion), förutsägs mer noggrant när en kund betalar en utestående faktura.
 
-Customer Payment Insights (förhandsversion) förutsäger tre sannolikheter för betalning för respektive faktura:
+Kundbetalningsinsikter (förhandsversion) kan förutsäga tre sannolikheter för betalning för varje öppen faktura:
 
 -   Sannolikhet för att betalningen görs i tid 
 -   Sannolikhet för att betalningen görs sent
 -   Sannolikhet för att betalningen görs mycket sent
 
-För att hjälpa organisationer att förstå det totala betalningsbeloppet som de kan förvänta sig från en kund i en av de tre grupper, i tid, sent och mycket sent, innehåller Customer Payment Insights (förhandsversion) också en sammansatt vy med förväntade betalningar.
+Kundbetalningsinsikter (förhandsversion) tillhandahåller en aggregerad vy över förväntade betalningar, vilket kan hjälpa organisationer att första det totala betalningsbelopp de kan förvänta sig från en kund i en av tre buckets, I tid, Sent och Mycket sent.
 
 [![Aggregerad vy över betalningsförutsägelser](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
@@ -66,7 +66,7 @@ Det är svårt att utveckla och distribuera en AI-lösning. Det krävs ett team 
 
 ## <a name="how-to-get-customer-payment-insights-preview"></a>Hur du skaffar Customer Payment Insights (förhandsversion)
 
-Skicka e-post till [Customer Payment Insights (förhandsversion)](mailto:fiap@microsoft.com) om du vill testa Customer Payment Insights (förhandsversion).
+Skicka e-post till [Kundbetalningsinsikter (förhandsversion)](mailto:fiap@microsoft.com) om du vill testa Kundbetalningsinsikter (förhandsversion).
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
 
