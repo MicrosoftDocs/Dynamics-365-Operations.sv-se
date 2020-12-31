@@ -1,0 +1,108 @@
+---
+title: Nyheter och ändringar i Dynamics AX programvaruversion 7.0.1 (maj 2016)
+description: Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Microsoft Dynamics AX programvaruversion 7.0.1. Den här versionen släpptes i maj 2016 och har en versionsnummer 7.0.1265.23014.
+author: sericks007
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+ROBOTS: NOINDEX, NOFOLLOW
+audience: Application User, Developer, IT Pro
+ms.reviewer: josaw
+ms.custom: 91213
+ms.assetid: f0bbc78f-87fc-40e9-b46a-6655893f69be
+ms.search.region: Global
+ms.author: sericks
+ms.search.validFrom: 2016-05-31
+ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 1dd76150dd1519adf2c453db8e874d6db32b5906
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693152"
+---
+# <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a><span data-ttu-id="ae928-104">Nyheter och ändringar i AX programvaruversion 7.0.1 (maj 2016)</span><span class="sxs-lookup"><span data-stu-id="ae928-104">What's new or changed in Dynamics AX application version 7.0.1 (May 2016)</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="ae928-105">Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Microsoft Dynamics AX programvaruversion 7.0.1.</span><span class="sxs-lookup"><span data-stu-id="ae928-105">This article describes features that are either new or changed in Microsoft Dynamics AX application version 7.0.1.</span></span> <span data-ttu-id="ae928-106">Den här versionen släpptes i maj 2016 och har en versionsnummer 7.0.1265.23014.</span><span class="sxs-lookup"><span data-stu-id="ae928-106">This version was released in May 2016 and has a build number of 7.0.1265.23014.</span></span>
+
+## <a name="electronic-reporting-er"></a><span data-ttu-id="ae928-107">Elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="ae928-107">Electronic reporting (ER)</span></span>
+
+| <span data-ttu-id="ae928-108">Vad kan du göra?</span><span class="sxs-lookup"><span data-stu-id="ae928-108">What can you do?</span></span> | <span data-ttu-id="ae928-109">Varför är detta viktigt?</span><span class="sxs-lookup"><span data-stu-id="ae928-109">Why is this important?</span></span> |
+|------------------|------------------------|
+| <span data-ttu-id="ae928-110">Konfigurera en dialogruta för körtid för att skapa elektronisk rapporteringsrapporter (ER), så att användaren kan markera valfria ekonomiska dimensioner.</span><span class="sxs-lookup"><span data-stu-id="ae928-110">Configure a run-time dialog box for designing Electronic reporting (ER) reports, so that users can select the financial dimensions that they want.</span></span> | <span data-ttu-id="ae928-111">Vid körning kan användaren markera flera ekonomiska dimensioner i dialogrutan för att köra en ER-rapport.</span><span class="sxs-lookup"><span data-stu-id="ae928-111">At run time, in the dialog box for running an ER report, users can select multiple financial dimensions.</span></span> <span data-ttu-id="ae928-112">Information om valda ekonomiska dimensioner visas i det elektroniska dokument som skapas.</span><span class="sxs-lookup"><span data-stu-id="ae928-112">The details of the selected financial dimensions will be displayed in the electronic document that is generated.</span></span> |
+| <span data-ttu-id="ae928-113">Konfigurera åtkomst till flera ekonomiska dimensioner vid utformningen av en ER rapport, via en enda mappning till valfri datakälla.</span><span class="sxs-lookup"><span data-stu-id="ae928-113">Configure access to multiple financial dimensions during the design of an ER report, via a single mapping to the desired data source.</span></span> | <span data-ttu-id="ae928-114">Samma konfiguration för en ER-rapport kan användas för att skapa elektroniska dokument som innehåller transaktionsdata tillsammans med information om ekonomiska dimensioner, oavsett antalet ekonomiska dimensioner som antingen har valts av användaren eller som har konfigureras för den aktuella juridiska personen eller instansen.</span><span class="sxs-lookup"><span data-stu-id="ae928-114">The same ER report configuration can be used to generate electronic documents that present transactional data together with details of financial dimensions, regardless of the number of financial dimensions that are either selected by the user or configured for the current legal entity or instance.</span></span> |
+| <span data-ttu-id="ae928-115">Konfigurera en ER-rapport för att ange data i dynamiskt skapade kolumner i ett elektroniskt dokument som har skapats i OPENXML-kalkylbladsformat.</span><span class="sxs-lookup"><span data-stu-id="ae928-115">Configure an ER report to enter data in dynamically generated columns of an electronic document that is created in OPENXML worksheet format.</span></span> | <span data-ttu-id="ae928-116">En ER-rapport kan överföra data till ett OPENXML-kalkylblad som skapas genom att kopiera kolumner horisontellt.</span><span class="sxs-lookup"><span data-stu-id="ae928-116">An ER report can enter data in an OPENXML worksheet that is generated, via horizontally replicating columns.</span></span> <span data-ttu-id="ae928-117">Därför kan samma ER-rapportkonfiguration återanvändas för att skapa elektroniska dokument som har olika antal dynamiskt skapade kolumner.</span><span class="sxs-lookup"><span data-stu-id="ae928-117">Therefore, the same ER report configuration can be reused to generate electronic documents that have a different number of dynamically generated columns.</span></span> |
+| <span data-ttu-id="ae928-118">Konfigurera ER-mål så att resultatet av ett utdataformat dirigeras till specifika mål: fil, E-post eller arkiv (Microsoft SharePoint-mapp eller Microsoft Azure Storage).</span><span class="sxs-lookup"><span data-stu-id="ae928-118">Configure ER destinations so that the output result of a format is directed to specific destination: file, email, or archive (Microsoft SharePoint folder or Microsoft Azure Storage).</span></span> | <span data-ttu-id="ae928-119">Tidigare visades en meddelanderuta som krävde en användaråtgärd för att spara eller öppna en fil när du körde en ER-konfiguration.</span><span class="sxs-lookup"><span data-stu-id="ae928-119">Previously, when you ran an ER configuration, a message box appeared that required user action to save or open a file.</span></span> <span data-ttu-id="ae928-120">Nu kan du förkonfigurera ett mål för varje formatkonfiguration och utdatakomponent (en mapp eller en fil) separat.</span><span class="sxs-lookup"><span data-stu-id="ae928-120">You can now pre-configure a destination for each format configuration and for each output component (a folder or a file) separately.</span></span> <span data-ttu-id="ae928-121">Användare med rätt behörighet kan även ändra inställningar för mål vid körning.</span><span class="sxs-lookup"><span data-stu-id="ae928-121">Users who have appropriate access rights can also modify destination settings at run time.</span></span> |
+
+## <a name="pos--microsoft-dynamics-ax-retail"></a><span data-ttu-id="ae928-122">Kassa – Microsoft Dynamics AX Retail</span><span class="sxs-lookup"><span data-stu-id="ae928-122">POS – Microsoft Dynamics AX Retail</span></span>
+
+| <span data-ttu-id="ae928-123">Vad kan du göra?</span><span class="sxs-lookup"><span data-stu-id="ae928-123">What can you do?</span></span> | <span data-ttu-id="ae928-124">Varför är detta viktigt?</span><span class="sxs-lookup"><span data-stu-id="ae928-124">Why is this important?</span></span> |
+|------------------|------------------------|
+| <span data-ttu-id="ae928-125">Använd Google Chrome-webbläsare.</span><span class="sxs-lookup"><span data-stu-id="ae928-125">Use the Google Chrome browser.</span></span> | <span data-ttu-id="ae928-126">Återförsäljare kan nu starta molnbaserade kassor från Chrome-webbläsaren och utnyttja alla funktioner som finns i Microsoft Edge- och Internet Explorer-versionen av den molnbaserade kassan.</span><span class="sxs-lookup"><span data-stu-id="ae928-126">Retailers can now start Cloud POS from the Chrome browser, and can experience all the functionality that is available in the Microsoft Edge and Internet Explorer version of Cloud POS.</span></span> |
+
+## <a name="financial-reporting"></a><span data-ttu-id="ae928-127">Ekonomisk rapportering</span><span class="sxs-lookup"><span data-stu-id="ae928-127">Financial reporting</span></span>
+
+| <span data-ttu-id="ae928-128">Vad kan du göra?</span><span class="sxs-lookup"><span data-stu-id="ae928-128">What can you do?</span></span> | <span data-ttu-id="ae928-129">Varför är detta viktigt?</span><span class="sxs-lookup"><span data-stu-id="ae928-129">Why is this important?</span></span> |
+|------------------|------------------------|
+| <span data-ttu-id="ae928-130">Återskapa ekonomiska rapporteringsdatamart.</span><span class="sxs-lookup"><span data-stu-id="ae928-130">Rebuild the Financial reporting data mart.</span></span> | <span data-ttu-id="ae928-131">När du flyttar databaser för Dynamics AX mellan olika miljöer eller gör andra invasiva ändringar i miljön kan ekonomiska rapporteringsdatabasen behöva återskapas.</span><span class="sxs-lookup"><span data-stu-id="ae928-131">When you move Dynamics AX databases between environments or make other invasive changes to the environment, the Financial reporting database might have to be rebuilt.</span></span> <span data-ttu-id="ae928-132">Ett Windows PowerShell-skript tillhandahålls nu för att återskapa databasen åt dig.</span><span class="sxs-lookup"><span data-stu-id="ae928-132">A Windows PowerShell script is now provided to rebuild the database for you.</span></span> |
+| <span data-ttu-id="ae928-133">Du kan inte längre välja alternativ för rapportdesigner som inte är giltiga.</span><span class="sxs-lookup"><span data-stu-id="ae928-133">You can no longer select report designer options that aren't valid.</span></span> | <span data-ttu-id="ae928-134">Flera rapportdesigneralternativ som användes i marknadsversionerna av Management Reporter gäller inte i den här versionen av Dynamics AX.</span><span class="sxs-lookup"><span data-stu-id="ae928-134">Several report designer options that were used in the in-market versions of Management reporter don't apply to this version of Dynamics AX.</span></span> <span data-ttu-id="ae928-135">De här alternativen har relaterats till ekonomisk rapportdesign, utleverans och länkning.</span><span class="sxs-lookup"><span data-stu-id="ae928-135">These options were related to financial report design, output, and linking.</span></span> <span data-ttu-id="ae928-136">De här alternativen har tagits bort från den ekonomiska rapportdesignen för att förhindra användarfel.</span><span class="sxs-lookup"><span data-stu-id="ae928-136">These options have been removed from the financial report designer to prevent user errors.</span></span> |
+
+## <a name="financial-management"></a><span data-ttu-id="ae928-137">Ekonomisk styrning</span><span class="sxs-lookup"><span data-stu-id="ae928-137">Financial management</span></span>
+
+| <span data-ttu-id="ae928-138">Vad kan du göra?</span><span class="sxs-lookup"><span data-stu-id="ae928-138">What can you do?</span></span> | <span data-ttu-id="ae928-139">Varför är detta viktigt?</span><span class="sxs-lookup"><span data-stu-id="ae928-139">Why is this important?</span></span> |
+|------------------|------------------------|
+| <span data-ttu-id="ae928-140">Skapa betalningskontrollfiler för leverantörsreskontrabetalningar.</span><span class="sxs-lookup"><span data-stu-id="ae928-140">Generate positive pay files for accounts payable payments.</span></span> | <span data-ttu-id="ae928-141">Betalningskontrollfiler kan skapas för att förhindra checkbedrägerier.</span><span class="sxs-lookup"><span data-stu-id="ae928-141">Positive pay files can be generated to help prevent check fraud.</span></span> |
+
+## <a name="warehouse-and-production"></a><span data-ttu-id="ae928-142">Lagerställe och produktion</span><span class="sxs-lookup"><span data-stu-id="ae928-142">Warehouse and production</span></span>
+
+<table>
+<thead>
+<tr>
+<th><span data-ttu-id="ae928-143">Vad kan du göra?</span><span class="sxs-lookup"><span data-stu-id="ae928-143">What can you do?</span></span></th>
+<th><span data-ttu-id="ae928-144">Varför är detta viktigt?</span><span class="sxs-lookup"><span data-stu-id="ae928-144">Why is this important?</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span data-ttu-id="ae928-145">Definiera en policy för lagerarbete som styr skapandet av arbete för en uppsättning produkter på särskilda platser.</span><span class="sxs-lookup"><span data-stu-id="ae928-145">Define a warehouse work policy that controls the creation of work for a set of products at specific locations.</span></span></td>
+<td><span data-ttu-id="ae928-146">Lagerställeprocesser inkluderar inte alltid arbete.</span><span class="sxs-lookup"><span data-stu-id="ae928-146">Warehouse processes don't always include work.</span></span> <span data-ttu-id="ae928-147">Genom att använda den nya policyn för lagerarbete kan du förhindra att arbeten skapas för råmaterialhämtning och inlagring av färdiga varor för en uppsättning produkter på specifika platser.</span><span class="sxs-lookup"><span data-stu-id="ae928-147">By using the new warehouse work policy, you can prevent work from being created for raw material picking and put-away of finished goods for a set of products at specific locations.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="ae928-148">Ange att en produktionsutleveransplatsen inte är registreringsskyltsstyrd.</span><span class="sxs-lookup"><span data-stu-id="ae928-148">Specify that a production output location isn't license plate–controlled.</span></span></td>
+<td><span data-ttu-id="ae928-149">Du kan nu ange att en produktutleveransplats inte är registreringsskyltsstyrd.</span><span class="sxs-lookup"><span data-stu-id="ae928-149">You can now specify that a product output location isn't license plate–controlled.</span></span> <span data-ttu-id="ae928-150">Funktionen är exempelvis användbar när en överordnad tillverkningsorder rapporterar artiklar som färdiga direkt till en plats som fungerar som en produktionsinleveransplats för en underordnad tillverkningsorder.</span><span class="sxs-lookup"><span data-stu-id="ae928-150">For example, this feature is useful when an upstream production order reports items as finished directly to a location that acts as production input location for a downstream production order.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="ae928-151">Stöd för strukturer som innehåller artiklar med olika dimensioner av samma artikel.</span><span class="sxs-lookup"><span data-stu-id="ae928-151">Support BOMs that include items with different product dimensions of the same item.</span></span></td>
+<td><span data-ttu-id="ae928-152">När du använder en eller flera av produktdimensionerna i produktionen kan situationer uppstå då du vill producera en artikel utifrån en annan variant av samma artikel.</span><span class="sxs-lookup"><span data-stu-id="ae928-152">When using one or multiple of the product dimensions in production, you can have situations where you would like to produce an item, based on a different variant of the same item.</span></span> <span data-ttu-id="ae928-153">Mer information finns i <a href="https://blogs.msdn.microsoft.com/axmfg/2015/12/22/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item/">den här bloggen</a>.</span><span class="sxs-lookup"><span data-stu-id="ae928-153">For more information, see <a href="https://blogs.msdn.microsoft.com/axmfg/2015/12/22/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item/">this blog</a>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="ae928-154">Produktionsorder med cirkulära strukturer på den första nivån av deras strukturer är undantagna från strukturlistenivåberäkning för materialresursplanering.</span><span class="sxs-lookup"><span data-stu-id="ae928-154">Production orders with circular structures at the first level of their BOMs are excluded from BOM level calculation for material resource planning.</span></span></td>
+<td><span data-ttu-id="ae928-155">Det går inte att tilldela rätt strukturlistenivåer till produktvarianter för produktionsorder som orsaka loopar i strukturlistehierarkin.</span><span class="sxs-lookup"><span data-stu-id="ae928-155">It is not possible to assign correct BOM levels to product variants for production orders that cause circularity in the BOM hierarchy.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="ae928-156">Beräkna olika strukturlistenivåer för materialresursplanering och kostnadsberäkning:</span><span class="sxs-lookup"><span data-stu-id="ae928-156">Calculate separate BOM levels for material resource planning and cost calculation:</span></span>
+<ul>
+<li><span data-ttu-id="ae928-157">För materialresursplanering beräknas strukturlistenivåer i den nya tabellen <strong>ReqItemLevel</strong>.</span><span class="sxs-lookup"><span data-stu-id="ae928-157">For material resource planning, BOM levels are calculated in the new <strong>ReqItemLevel</strong> table.</span></span> <span data-ttu-id="ae928-158">Avslutade tillverkningsorder ignoreras i beräkningen.</span><span class="sxs-lookup"><span data-stu-id="ae928-158">Ended production orders are ignored in the calculation.</span></span></li>
+<li><span data-ttu-id="ae928-159">För beräkning av produktionskostnaden beräknas strukturlistenivåer i <strong>InventTable</strong>.</span><span class="sxs-lookup"><span data-stu-id="ae928-159">For production cost calculation, BOM levels are calculated in the <strong>InventTable</strong>.</span></span> <span data-ttu-id="ae928-160">Avslutade tillverkningsorder inkluderas i beräkningen.</span><span class="sxs-lookup"><span data-stu-id="ae928-160">Ended production orders are included in the calculation.</span></span></li>
+</ul>
+</td>
+<td>
+<ul>
+<li><span data-ttu-id="ae928-161">När du kör materialresursplanering, till exempel huvudplaneringsplanläggning och explosion, behöver enbart strukturlistenivåer som används för materialresursplanering beräknas.</span><span class="sxs-lookup"><span data-stu-id="ae928-161">When running material resource planning, for example, master planning plan scheduling and explosion, only BOM levels used for material resource planning need to be recalculated.</span></span> <span data-ttu-id="ae928-162">Det finns med andra ord ingen anledning att beräkna strukturlistenivåer som används för beräkning av produktionskostnader</span><span class="sxs-lookup"><span data-stu-id="ae928-162">In other words, there is no need to calculate BOM levels used for production costing calculation.</span></span></li>
+<li><span data-ttu-id="ae928-163">När du kör kostnadsoperationer, till exempel lagerstängning, behöver enbart strukturlistenivåer som används för beräkning för produktionskostnader beräknas om.</span><span class="sxs-lookup"><span data-stu-id="ae928-163">When running costing operations, for example, inventory closing, only BOM levels used for production costing calculation need to be recalculated.</span></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+## <a name="additional-resources"></a><span data-ttu-id="ae928-164">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="ae928-164">Additional resources</span></span>
+
+[<span data-ttu-id="ae928-165">Nyheter och ändringar på hemsidan för Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="ae928-165">What's new or changed in Finance and Operations home page</span></span>](whats-new-changed.md)
+
+[<span data-ttu-id="ae928-166">Nya eller uppdaterade uppgiftsguider (maj 2016)</span><span class="sxs-lookup"><span data-stu-id="ae928-166">New or updated task guides (May 2016)</span></span>](new-updated-task-guides-available-may-2016.md)
