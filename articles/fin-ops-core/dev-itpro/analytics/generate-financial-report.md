@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c682ed96e47c718d3a9af1eb10aada75c59d3156
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e8b688cb1e4589eb076015d01dc4f0f0db14787e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181851"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688327"
 ---
 # <a name="generate-financial-reports"></a>Skapa ekonomiska rapporter
 
@@ -98,7 +97,7 @@ Du måste vara ägare till rapportschemat eller ha administratörsrollen för at
 
 Om du inte anger de autentiseringsuppgifter som krävs för alla företag som omfattas av rapporterna visas följande felmeddelande när du sparar rapportschemat: ”Du måste ange autentiseringsuppgifter för företagen som ingår i det här rapportschemat. Ange autentiseringsuppgifterna genom att klicka på knappen Behörigheter.”
 
-Exempel: Anna loggar in i företag A med sitt användarnamn och lösenord. Hon skapar ett schema för en rapport där en rapportträdsdefinition används för att samla in data från flera företag. När rapporten sparas uppmanas Anna ange autentiseringsuppgifterna för de andra angivna företagen i rapportträdsdefinitionen. Om dina autentiseringsuppgifter upphör att gälla skapas inte de rapporter i rapportschemat som påverkas förrän autentiseringsuppgifterna har uppdaterats. Det visas ett meddelande i rapportkön om att behörigheterna måste uppdateras. Körningen av rapportschemat misslyckas om något av följande inträffar (på grund av krav på autentiseringsuppgifter):
+Exempel: Användaren loggar in i företag A med sitt användarnamn och lösenord. Användaren skapar ett schema för en rapport där en rapportträdsdefinition används för att samla in data från flera företag. När rapporten sparas uppmanas användaren ange autentiseringsuppgifterna för de andra angivna företagen i rapportträdsdefinitionen. Om dina autentiseringsuppgifter upphör att gälla skapas inte de rapporter i rapportschemat som påverkas förrän autentiseringsuppgifterna har uppdaterats. Det visas ett meddelande i rapportkön om att behörigheterna måste uppdateras. Körningen av rapportschemat misslyckas om något av följande inträffar (på grund av krav på autentiseringsuppgifter):
 
 - Ett nytt företag har lagts till i ett rapportträd för en enskild rapport.
 - En rapport i en rapportgrupp har ändrats.

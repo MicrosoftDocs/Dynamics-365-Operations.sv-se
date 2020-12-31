@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 92d03f08fc5e34402f10068ed770b1f724cfd3a8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183001"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685869"
 ---
 # <a name="modify-row-definition-cells"></a>Ändra raddefinitionsceller
 
@@ -107,7 +106,7 @@ Cellen **Formatkod** ger ett urval av förformaterade val för innehållet i den
     |-------------------------------|-----------------------------------|--------|
     | (Ingen)                        |                                   | Rensar cellen **Formatkod**. |
     | TOT                           | Summa                             | Identifierar en rad som använder matematiska operatorer i kolumnen **Relaterade formler/rader/enheter**. Summor innehåller enkla operatorer som t.ex. **+** eller **-**. |
-    | CAL                           | Beräkning                       | Identifierar en rad som använder matematiska operatorer i kolumnen **Relaterade formler/rader/enheter**. Beräkningar innehåller komplexa operatorer, t.ex. **+**, **-**, **\***, **/** och uttrycken **IF/THEN/ELSE**. |
+    | CAL                           | Beräkning                       | Identifierar en rad som använder matematiska operatorer i kolumnen **Relaterade formler/rader/enheter**. Beräkningar innehåller komplexa operatorer, t.ex. **+**, **-**, **\**_, _*/** och uttrycken **IF/THEN/ELSE**. |
     | DES                           | beskrivning                       | Identifierar en rubrikrad eller en tom rad i en rapport. |
     | LFT RGT CEN                   | Vänster Höger Centrera                 | Justerar radbeskrivningstexten på rapportsidan, oavsett textens placering i kolumndefinitionen. |
     | CBR                           | Ändra basrad                   | Identifierar en rad som anger basraden för kolumnberäkningar. |
@@ -175,7 +174,7 @@ I kolumnen **Formatkod** i en raddefinition använder formatkoderna **DES**, **L
 
 ### <a name="example-of-preventing-printing-of-rows"></a>Exempel på att förhindra utskrift av rader
 
-I följande exempel vill Phyllis förhindra att rubriken och understrecken i raden **Totala kontanter** i hennes rapport skrivs ut, eftersom det inte finns någon aktivitet på något av kassakontona. Därför, på rad 220 (som, vilket formatkoden **---** anger, är en formateringsrad), i cellen **Relaterade formler/rader/enheter**, anger hon **250** som är radkoden för beloppsraden som hon vill utelämna.
+I följande exempel vill en användare förhindra att rubriken och understrecken i raden **Totala kontanter** i rapporten skrivs ut, eftersom det inte finns någon aktivitet på något av kassakontona. Därför, på rad 220 (som, vilket formatkoden **---** anger, är en formateringsrad), i cellen **Relaterade formler/rader/enheter**, anger användaren **250** som är radkoden för beloppsraden som ska utelämnas.
 
 [![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
@@ -416,7 +415,7 @@ Som standard skriver rapportdesignern inte ut en rad som inte har något motsvar
 3. Klicka på **Spara** på menyn **Arkiv** om du vill spara dina ändringar.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Använd jokertecken och intervall i en raddefinition
-När du anger ett typsegmentvärde i dialogrutan **Dimensioner** kan du placera ett jokertecken (? eller \*) i vilken position som helst i ett segment. Report designer hämtar alla värden för de definierade positioner utan att beakta jokertecknen. Om raddefinitionen t.ex. bara innehåller typsegmentvärden, och typsegment har fyra tecken. Genom att ange **6???** på en rad instruerar du rapportdesignern att inkludera alla konton som ett naturligt segmentvärde som börjar med 6. Om du anger **6\***, returneras samma resultat, men resultatet inkluderar också variabelbreddvärden som **60** och **600000**. Rapportdesignern ersätter varje jokertecken (?) med hela intervallet av möjliga värden, inklusive bokstäver och specialtecken. T.ex. i intervallet från **PKCS? 0** till **PKCS? 4** ersätter jokertecknet i **PKCS? 0** det lägsta värdet på teckenuppsättningen, och jokertecknet i **PKCS? 4** ersätter det högsta värdet i teckenuppsättningen.
+När du anger ett typsegmentvärde i dialogrutan **Dimensioner** kan du placera ett jokertecken (? eller \*) i vilken position som helst i ett segment. Report designer hämtar alla värden för de definierade positioner utan att beakta jokertecknen. Om raddefinitionen t.ex. bara innehåller typsegmentvärden, och typsegment har fyra tecken. Genom att ange **6???** på en rad instruerar du rapportdesignern att inkludera alla konton som ett naturligt segmentvärde som börjar med 6. Om du anger **6\**_, returneras samma resultat, men resultatet inkluderar också variabelbreddvärden som* 60** och **600000**. Rapportdesignern ersätter varje jokertecken (?) med hela intervallet av möjliga värden, inklusive bokstäver och specialtecken. T.ex. i intervallet från **PKCS? 0** till **PKCS? 4** ersätter jokertecknet i **PKCS? 0** det lägsta värdet på teckenuppsättningen, och jokertecknet i **PKCS? 4** ersätter det högsta värdet i teckenuppsättningen.
 
 > [!NOTE]
 > Du bör undvika att använda jokertecken för start- och slutkonton i intervallet. Om du använder jokertecken i antingen startkontot eller slutkontot kan du få oväntade resultat.

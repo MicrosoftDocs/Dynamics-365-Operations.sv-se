@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 17404
 ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5df0c7a84a2c24bdbcd39837119bc184c1f3fcf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180055"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694699"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planera en organisationshierarki
 
@@ -45,7 +44,7 @@ När du skapar planeringshierarkier för dimensionsuppsättningar, är det ocks�
 
 Du måste ha minst en juridisk person som representerar din verksamhet. En juridisk person kan ingå juridiska avtal och måste förbereda bokslut som visar dess resultat.
 
-Juridiska personer kan användas för transaktionsaffärer eller för konsolidering. Detta innebär att en juridisk person i Finance and Operations inte nödvändigtvis representerar en verklig enhet i verksamheten. Ett företag som medverkar i transaktioner kan till exempel äga dotterbolag som är juridiska personer. I det här scenariot krävs en juridisk person för transaktioner, och en virtuell juridisk person krävs för att konsolidera resultat och saldon från dotterbolagens juridiska personer.
+Juridiska personer kan användas för transaktionsaffärer eller för konsolidering. Detta innebär att en juridisk person i Finance and Operations inte nödvändigtvis representerar en verklig entitet i verksamheten. Ett företag som medverkar i transaktioner kan till exempel äga dotterbolag som är juridiska personer. I det här scenariot krävs en juridisk person för transaktioner, och en virtuell juridisk person krävs för att konsolidera resultat och saldon från dotterbolagens juridiska personer.
 
 Interna organisationer i din verksamhet, till exempel regionkontor, kan representeras som ytterligare juridiska personer, eller som driftenheter i den huvudsakliga juridiska personen. En driftenhet behöver inte vara en juridiskt definierad organisation. Driftenheter används för att kontrollera ekonomiska resurser och driftprocesser i verksamheten. Avdelningar och kostnadsställen är till exempel driftenheter.
 
@@ -174,7 +173,7 @@ I länder/regioner som stöds kan de flesta lagstadgade rapporter skapas. Inform
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Om organisationen modelleras som en driftenhet
 
-Lagstadgade rapporter måste skapas med hjälp av ett annat program. Du måste du se till att data samlas in i Finance and Operations-appar för att stödja kraven för varje driftenhet, där de skiljer sig från kraven för huvudkontoret.
+Lagstadgade rapporter måste skapas med hjälp av ett annat program. Du måste du se till att data samlas in i Finance and Operations för att stödja kraven för varje driftenhet, där de skiljer sig från kraven för huvudkontoret.
 
 ### <a name="currency"></a>Valuta
 

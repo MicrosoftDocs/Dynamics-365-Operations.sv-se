@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 252754
 ms.assetid: 11a72e4a-7899-42be-b180-a0f4b86d88f1
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 8747df5513cab16ee3b609f405740e660753e086
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: fb43be5e57758664c5e17e48db5b9c38630b2ded
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812542"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694999"
 ---
 # <a name="new-or-updated-task-guides-august-2016"></a>Nya eller uppdaterade uppgiftsguider (augusti 2016)
 
@@ -32,7 +31,7 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 
 ## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Uppgiftsguider i (augusti 2016 - alla språk) APQC Unified Library för Microsoft Dynamics AX
 
-APQC Unified Library (augusti 2016 - alla språk) innehåller de uppgiftsguider som är avsedda att användas för Hjälp med Microsoft Dynamics AX -plattformsuppdatering 2 (augusti 2016), programuppdateringen Dynamics AX maj 2016 samt Microsoft Dynamics AX februari 2016-utgåvan. Mer information om dessa versioner finns i [nyheter och ändringar på startsidan för Finance and Operations](whats-new-changed.md). Lokaliserade versioner av uppgiftsguiderna finns tillgängliga i detta bibliotek. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Hjälp-system](help-overview.md).
+APQC Unified Library (augusti 2016 - alla språk) innehåller de uppgiftsguider som är avsedda att användas för Hjälp med Microsoft Dynamics AX -plattformsuppdatering 2 (augusti 2016), programuppdateringen Dynamics AX maj 2016 samt Microsoft Dynamics AX februari 2016-utgåvan. Mer information om dessa utgåvor finns i [Nyheter och ändringar på hemsidan för Finance and Operations.](whats-new-changed.md). Lokaliserade versioner av uppgiftsguiderna finns tillgängliga i detta bibliotek. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Hjälp-system](help-overview.md).
 
 ### <a name="data-access"></a>Dataåtkomst
 

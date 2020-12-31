@@ -3,7 +3,7 @@ title: Bädda in arbetsyteapp från Power Apps
 description: Det här avsnittet förklarar hur du bäddar in arbetsyteappar från Microsoft Power Apps till klienten för att utöka produktens funktionalitet.
 author: jasongre
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: e57e4567a80aa9f9ba5ac434b0d71204460e164f
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: ba3b736aeae8540349309ddd82bd431720b9701c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893117"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693493"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Bädda in arbetsyteapp från Power Apps
 
@@ -57,7 +56,7 @@ Följande procedur visar hur du bäddar in en arbetsyteapp från Power Apps i we
 3. Konfigurera inbäddade appen:
 
     - Fältet **Namn** indikerar texten som visas för knappen eller fliken som innehåller inbäddade appen. Du kanske ofta vill upprepa namnet på appen i det här fältet.
-    - Fältet **App-ID** anger den globala unika identifieraren (GUID) för den arbetsyta som du vill bädda in. För att hämta det här värdet hittar du appen på [web.powerapps.com](https://web.powerapps.com) och letar sedan upp den i fältet **Program-ID** under **Uppgifter**.
+    - Fältet **App-ID** anger den globala unika identifieraren (GUID) för den arbetsyta som du vill bädda in. För att hämta det här värdet hittar du appen på [make.powerapps.com](https://make.powerapps.com) och letar sedan upp den i fältet **Program-ID** under **Detaljer**.
     - För **Mata in kontext för appen**, kan du även välja fältet som innehåller de data som du vill skicka till appen som indata. Se avsnittet längre fram i det här ämnet med namnet [Bygga appar som använder data från Finance and Operations-appar](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) för information om hur appen kan komma åt data som skickas från Finance and Operations-appar.
     - Välj **Programstorlek** som matchar typen av app som du bäddar in. Välj **Tunn** för appar som har skapats för mobila enheter och **Omfattande** för appar som skapats för surfplattor. Detta säkerställer att en tillräcklig mängd utrymme avsätts för inbäddade appen.
     - Snabbfliken **Juridiska personer** innehåller möjligheten att välja vilka juridiska personer som appen är tillgänglig för. Standard är att visa appen för alla juridiska personer. Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är inaktiverad. 
@@ -116,7 +115,7 @@ När en app har inbäddats på en sida finns det två sätt att ta bort den vid 
 
 ## <a name="appendix"></a>Bilaga
 
-### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Utvecklare] ange var en app kan bäddas in
+### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Utvecklare] Anger var en app kan bäddas in
 
 Som standard kan användare bädda in appar på sidan under menyknappen Power Apps eller direkt på sidan som en flik, snabbflik, blad eller ett nytt avsnitt på en arbetsyta. Emellertid kan utvecklare vid behov även konfigurera funktionen till att endast tillåta inbäddning av appar för vissa sidor genom att använda följande metoder:
 

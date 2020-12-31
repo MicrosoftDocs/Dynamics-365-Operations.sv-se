@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1498c09160acea2799a90e36c155523635895e5f
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: b92ef15fc9f3f6a5ebb6ba4ea4eae1a0f7488995
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329862"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687802"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Skapa dokumentation eller utbildning med uppgiftsinspelning
 
@@ -37,9 +36,9 @@ Det här avsnittet förklarar vad uppgiftsregistrering och uppgiftsguider är, h
 <a name="learn-about-task-recorder"></a>Läs om uppgiftsregistrering
 -------------------------
 
-Uppgiftsinspelaren är ett verktyg som du kan använda till att registrera åtgärder som du utför i produktanvändargränssnittet (UI). När du använder uppgiftsregistrering spelas alla händelser som du utför i UI, som utförs mot servern, inklusive lägga till värden, ändra inställningar, ta bort data, in. Stegen som du registrerar kallas gemensamt för en *uppgiftsregistrering* Uppgiftsregistrering kan användas på flera sätt:
+Uppgiftsinspelaren är ett verktyg som du kan använda till att registrera åtgärder som du utför i produktanvändargränssnittet (UI). När du använder uppgiftsinspelning spelas alla händelser som du utför i UI, som utförs mot servern, inklusive lägga till värden, ändra inställningar, ta bort data, in. Stegen som du registrerar kallas gemensamt för en *uppgiftsregistrering* Uppgiftsregistrering kan användas på flera sätt:
 
--   **Uppgiftsregistrering kan spelas upp som uppgiftsguider.** Uppgiftsguider är en integrerad del av Hjälp-upplevelsen. En uppgiftsguide är en kontrollerad, guidad, interaktiv upplevelse som leder dig genom stegen för en affärsprocess. Användaren uppmanas avsluta varje steg med en prompt ("eller bubbla") som animerar i UI och pekar på UI-elementet som användaren ska interagera med. "Bubblan" innehåller även information om hur du interagerar med element som till exempel "Klicka här" eller "I det här fältet anger du ett värde". En uppgiftsguide körs mot användarens aktuella datauppsättning och informationen som anges sparas i användarens miljö.
+-   **Uppgiftsregistrering kan spelas upp som uppgiftsguider.** Uppgiftsguider är en integrerad del av Hjälp-upplevelsen. En uppgiftsguide är en kontrollerad, guidad, interaktiv upplevelse som leder dig genom stegen för en affärsprocess. Användaren uppmanas avsluta varje steg med en prompt ("eller bubbla") som animerar i UI och pekar på UI-elementet som användaren ska interagera med. "Bubblan" innehåller även information om hur du interagerar med element som till exempel "Klicka här" eller "I det här fältet anger du ett värde". En uppgiftsguide körs mot användarens aktuella datauppsättning och informationen som anges sparas i användarens miljö.
 -   **Uppgiftsregistreringar kan sparas som Word-dokument.** På så sätt kan du enkelt producera utskrivbara utbildningsguider.
 
 Du kan skapa egna uppgiftsregistreringar, spela upp uppgiftsregistreringar som tillhandahålls av Microsoft eller ändra Microsofts uppgiftsregistrering för att återspegla konfigurationen. För mer information om Uppgiftsinspelare, se [Uppgiftsinspelare](task-recorder.md).
@@ -51,14 +50,14 @@ Om du skapar en ny uppgiftsregistrering eller baserar din registrering på Micro
 -   Gå igenom affärsprocessen en eller två gånger utan att registrera den så att du förstår stegen.
 -   När du går igenom processen före registreringen, lägg märke till var du använder kortkommandon eller tangenten **Retur**, så att du kan undvika att använda dem under den verkliga registreringen.
 -   Identifiera följande:
-    -   Vill du gruppera steg till underuppgifter? Underuppgifter avskiljer avsnitt i en process. Om du till exempel du skapar en registrering för Skapa och släppa en produkt, vill du kanske vill gruppera stegen som behövs för att skapa en produkt och sedan vill gruppera stegen som behövs för att släppa produkten. Underuppgifter gör också längre processer enklare att läsa.
+    -   Vill du gruppera steg till underuppgifter? Underuppgifter avskiljer avsnitt i en process. Om du till exempel du skapar en registrering för "Skapa och släppa en produkt", vill du kanske gruppera stegen som behövs för att skapa en produkt och sedan gruppera stegen som behövs för att släppa produkten. Underuppgifter gör också längre processer enklare att läsa.
     -   Vill du lägga till kommentarer och i så fall var? Mer information finns i Förstå de olika kommentarstyperna nedan.
     -   Vilka värden vill du lägga till i de olika fälten när du slutför stegen för affärsprocessen? Det är en bra idé att veta vad du ska välja eller ange när du går vidare så att du inte går bakåt eller korrigerar misstag när du registrerar.
 
 **Skriv beskrivning och kommentarer i förväg**
 
--   I början av varje uppgiftsregistrering finns det ett beskrivningsfält som tillåter att du ger en introduktion till registreringen. Det är en bra idé att skriva och spara beskrivningen i förväg i ett separat dokument så att du kan kopiera och klistra in det i uppgiftsregistreringen när du registrerar. På så vis lägger du tid på att förbättra texten när du inte registrerar. När du klipper och klistrar in texten går inspelningsprocessen snabbare och lättare.
--   För varje steg i en uppgiftsregistrering kan du skapa kommentarer. Under uppspelning av en uppgiftsguide visas kommentarer i "bubblan" som anteckningar över eller under texten för steget. När visad som text i hjälpfönstret, visas kommentarers som text infogad i steget. Som med beskrivningen är det en bra idé att skriva och spara dina kommentarer i ett separat dokument. När du registrerar uppgiften, klipp och klistra in kommentarerna in från det dokumentet.
+-   I början av varje uppgiftsregistrering finns det ett beskrivningsfält som tillåter att du ger en introduktion till registreringen. Det är en bra idé att skriva och spara beskrivningen i förväg i ett separat dokument så att du kan kopiera och klistra in det i uppgiftsregistreringen när du registrerar. På så vis lägger du tid på att förbättra texten när du inte registrerar. När du klipper och klistrar in texten går inspelningsprocessen snabbare och lättare.
+-   För varje steg i en uppgiftsregistrering kan du skapa kommentarer. Under uppspelning av en uppgiftsguide visas kommentarer i "bubblan" som anteckningar över eller under texten för steget. När visad som text i hjälpfönstret, visas kommentarers som text infogad i steget. Som med beskrivningen är det en bra idé att skriva och spara dina kommentarer i ett separat dokument. När du registrerar uppgiften, klipp och klistra in kommentarerna in från det dokumentet.
 
 **Förstå de olika kommentarstyperna** Alla kommentarer är valfria. Lägga bara till dem när de ger användbar information till användaren.
 
@@ -82,20 +81,20 @@ Detta är vad anteckningskommentar ser ut som i "bubblan” i uppgiftsguiden.
 
 [![Anteckningskommentarens utseende i uppgiftsguiden](./media/screen4.png)](./media/screen4.png)
 
--   **Informationssteg**: Dessa anteckningar skapas genom att högerklicka på en kontroll eller någonstans i ett formulär &lt; **Uppgiftsregistrering** &lt; **steget Lägg till information.** Informationssteg visas som ett numrerat steg vid den tidpunkt som du infogar det, även om ingen åtgärd rapporterades i användargränssnittet. Du kan lägga till ett informationssteg på formulärnivå eller ett informationssteg associerat med en kontroll. När ett informationssteg tillhör ett formulär visas uppgiftsguidens "bubbla" någonstans i formuläret utan pekare när uppgiftsguiden spelas upp. När ett informationssteg tillhör en kontroll pekar uppgiftsguidens "bubbla" på kontrollen när uppgiftsguiden spelas upp. I hjälpfönstret visas en informationsstegsanteckning som ett numrerat steg med texten du angett. Använd informationssteg för att förbereda användaren för nästa steg, för att beskriva steg som måste utföras utanför appen eller att hänvisa till andra registreringar (det går dock inte att skapa hyperlänkar i kommentarer).
+-   **Informationssteg**: Dessa anteckningar skapas genom att högerklicka på en kontroll eller någonstans i ett formulär &lt; **Uppgiftsinspelare** &lt; **Lägg till informationssteg.** Informationssteg visas som ett numrerat steg vid den tidpunkt som du infogar det, även om ingen uppgift spelats in i användargränssnittet. Du kan lägga till ett informationssteg på formulärnivå eller ett informationssteg associerat med en kontroll. När ett informationssteg tillhör ett formulär visas uppgiftsguidens "bubbla" någonstans i formuläret utan pekare när uppgiftsguiden spelas upp. När ett informationssteg tillhör en kontroll pekar uppgiftsguidens "bubbla" på kontrollen när uppgiftsguiden spelas upp. I hjälpfönstret visas en informationsstegsanteckning som ett numrerat steg med texten du angett. Använd informationssteg för att förbereda användaren för nästa steg, för att beskriva steg som måste utföras utanför appen eller att hänvisa till andra registreringar (det går dock inte att skapa hyperlänkar i kommentarer).
 
 **Avgör hur långa registreringen ska vara**
 
 -   Användaren kommer antingen att läsa eller spela upp registreringen från början till slut, så kombinera inte steg eller uppgifter som görs bättre separat.
--   Försök inte att registrera ett långt scenario som omfattar flera underprocesser. Till exempel är Arbeta i butikens kundtjänst för allmänt. Bryt det upp till kortare uppgifter som till exempel Ta emot returer och Lägg till på presentkort.
+-   Försök inte att registrera ett långt scenario som omfattar flera underprocesser. Till exempel är "Arbeta i butikens kundtjänst" för allmänt. Bryt det upp till kortare uppgifter som till exempel "Acceptera returer" och "Lägg till på presentkort".
 -   Om en uppgift kan utföras som en del av flera olika affärsprocesser, skapa en separat registrering för den och du kan referera till den i de andra registreringarna.
 -   Om processen gäller flera uppgifter som personen troligen gör samtidigt, kan du behålla uppgifterna i en registrering, till exempel Ställ in och tilldela funktionsprofiler.
 -   Om det är något som görs en gång (till exempel konfiguration) och sedan en annan uppgift som de kan göra omedelbart efteråt men flera gånger och fristående, bryt upp dem till två uppgiftsregistreringar.
 
-**Bestäm var i användargränssnittet du startar en inspelning**. Sidan som visas när du börjar spela in en uppgiftsinspelning påverkar vilka sidor uppgiftsguiden visar. Om du exempelvis vill att din uppgiftsinspelning ska visas i listan i hjälpfönstret när användaren klickar på Hjälp på sidan Redovisningsparametrar måste du starta inspelningen på sidan Redovisningsparametrar. **Spara registreringar som .axtr-filer** När du har skapat eller redigerat en uppgiftsregistrering får du flera alternativ för att hämta eller spara registreringen. Du kan hämta filen som en uppgiftsregistreringspaket (.axtr), hämta den som en rå registreringsfil (.xml), hämta den som ett Word-dokument eller spara filen i ett LCS-bibliotek. Det är en bra idé att alltid uppgiftsregistreringar som en uppgiftsregistreringspaketfil (.axtr). Detta gör det lättare att underhålla filen enklare om procedurer eller kommentarer måste ändras senare. Om du vill hämta filen som ett Word-dokument, spara den även uppgiftsregistreringspaketfil.
+**Bestäm var i användargränssnittet du startar en inspelning**. Sidan som visas när du börjar spela in en uppgiftsinspelning påverkar vilka sidor uppgiftsguiden visar. Om du exempelvis vill att din uppgiftsinspelning ska visas i listan i hjälpfönstret när användaren klickar på Hjälp på sidan Redovisningsparametrar måste du starta inspelningen på sidan Redovisningsparametrar. **Spara inspelningar som .axtr-filer** När du har skapat eller redigerat en uppgiftsinspelning får du olika alternativ för att hämta eller spara inspelningen. Du kan hämta filen som en uppgiftsregistreringspaket (.axtr), hämta den som en rå registreringsfil (.xml), hämta den som ett Word-dokument eller spara filen i ett LCS-bibliotek. Det är en bra idé att alltid uppgiftsregistreringar som en uppgiftsregistreringspaketfil (.axtr). Detta gör det enklare att underhålla filen om procedurer eller kommentarer måste ändras senare. Om du vill hämta filen som ett Word-dokument ska du även spara den som uppgiftsinspelningspaketfil.
 
 ## <a name="create-your-task-recording"></a>Skapa en uppgiftsregistrering
-Detaljerad information finns i [Uppgiftsinspelarresurser](task-recorder.md).
+Detaljerad information om stegen finns i [Uppgiftsinspelarresurser](task-recorder.md).
 
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopiera och anpassa Microsofts uppgiftsregistreringar
 Du kan hämta och redigera Microsofts uppgiftsregistreringar för att använda dem för egen hjälpdokumentation eller eget utbildningsmaterial. Hämta en Microsoft uppgiftsregistrering genom att följa dessa steg:
@@ -108,7 +107,7 @@ Du kan hämta och redigera Microsofts uppgiftsregistreringar för att använda d
 6.  Välj biblioteksnoden för affärsprocesser i trädet som uppgiftsregistreringen är kopplad till.
 7.  Klicka på **OK**.
 8.  Klicka på **Start**.
-9.  Stega vid den här punkten igenom registreringen och ändra steg när du omregistrerar det. **Anm.**: Om du bara behöver ändra texten i en registrering kan du öppna registreringen i läget **Redigera en registrerings kommentarer** och sedan spara den.
+9.  Nu går du igenom inspelningen och ändrar eventuellt steg under genomgången för att spela in den igen. **Obs!** Om du bara behöver ändra texten i en inspelning kan du öppna inspelningen i läget **Redigera anteckningar om en inspelning** och spara den.
 10. När registreringen har spelat till slutet, klicka på **Stoppa** i uppgiftsregistreringsfältet överst på skärmen.
 11. Välj hur du vill spara uppgiftsregistreringen.
 

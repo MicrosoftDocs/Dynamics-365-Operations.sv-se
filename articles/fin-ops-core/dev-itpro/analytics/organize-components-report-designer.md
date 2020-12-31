@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4a4733dc4da7a8713ac7ddec5c96ae18c91edc18
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 58525da35eb9e9376cb5793ad6c6fa45b9de42e6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185300"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685821"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organisera rapportdelar i rapportdesignern
 
@@ -63,13 +62,13 @@ Du kan gruppera rapportdefinitioner för att skapa flera rapporter samtidigt. F�
 3. Klicka på fliken **Rapportgrupp** och utför valfria ändringar.
 4. På menyn **Arkiv** klickar du på **Spara** för att spara den ändrade rapportgruppen. Du kan också klicka på knappen **Spara** ![Spara](media/save.gif "Spara") i verktygsfältet.
 
-> Om du har schemalagda rapporter som skapas vid inställda intervall kan du åsidosätta dessa inställningar och skapa en rapport direkt.
+> [OBS] Om du har schemalagda rapporter som skapas vid inställda intervall kan du åsidosätta dessa inställningar och skapa en rapport omedelbart.
 
 ### <a name="generate-a-report-group-report"></a>Skapar en rapportgruppsrapport
 
 1. Öppna Report Designer och klicka på **Rapportgrupper** i navigeringsfönstret.
 2. Öppna rapportgruppen att skapa.
-3. Klicka på knappen **Skapa rapport** ![Skapa rapport](media/generate-report.gif "Skapa rapport") för att skapa rapporter.
+3. Klicka på knappen **Generera rapport** ![Generera rapport](media/generate-report.gif "Generera rapport") för att generera rapporter.
 
 ### <a name="delete-a-report-group"></a>Ta bort en rapportgrupp
 

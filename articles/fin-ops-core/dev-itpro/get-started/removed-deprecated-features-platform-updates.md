@@ -3,24 +3,23 @@ title: Borttagna eller avskrivna plattformsfunktioner
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning i plattformsuppdatering av Finance and Operations-appar.
 author: sericks007
 manager: AnnBe
-ms.date: 09/24/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 51d1d0ed2ce95573ec123121999d73446a7e4ea4
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.openlocfilehash: ffd98016079ccab47864c821116c821b5df22e3b
+ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971455"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4689576"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller avskrivna plattformsfunktioner
 
@@ -37,8 +36,16 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.15 för Finance and Operations-appar
 
-> [!NOTE]
-> Version 10.0.15 är en förhandsgranskningsversion. Funktionen och dess innehåll kan ändras. Mer information om förhandsversioner finns i [Frågor och svar om tjänstuppdateringar för en version](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11-stöd för Dynamics 365 är inaktuellt
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Från och med december 2020 kommer Microsoft Internet Explorer 11-stöd för samtliga Dynamics 365-produkter att betraktas som inaktuellt, och Internet Explorer 11 kommer inte att stödjas efter augusti 2021.<br><br>Detta påverkar kunder som använder Dynamics 365-produkter som har utformats för användning med ett Internet Explorer 11-gränssnitt. Efter augusti 2021 stöds inte Internet Explorer 11 för sådana Dynamics 365-produkter. |
+| **Ersatt av en annan funktion?**   | Vi rekommenderar våra kunder att övergå till Microsoft Edge.|
+| **Produktområden som påverkas**         | Alla Dynamics 365-produkter |
+| **Distribueringsalternativ**              | Allt|
+| **Status**                         | Inaktuell. Internet Explorer 11 kommer inte att stödjas efter augusti 2021.|
+
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio tillägg för att tillämpa snabbkorrigeringar för metadata
 
@@ -52,10 +59,6 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 
 ## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.14 för Finance and Operations-appar
-
-> [!NOTE]
-> Version 10.0.14 är en förhandsgranskningsversion. Funktionen och dess innehåll kan ändras. Mer information om förhandsversioner finns i [Tillgänglighet för tjänstuppdateringar](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
-
 
 ### <a name="online-users-page"></a>Sidan Onlineanvändare 
 
@@ -144,7 +147,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Ersatt av en annan funktion?**   | Visual Studio 2017 ersätter Visual Studio 2015 som den distribuerade och begärda versionen. |
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | När du har fått till gång till nya virtuella datorer (VM) med Visual Studio 2017 meddelas, måste befintliga virtuella datorer med bara Visual Studio 2015 omdistribueras efter utgivningsvåg 1 av 2021. |
+| **Status**                         | Virtuella datorer som distribueras med version 10.0.13 (plattformsuppdatering 37) eller senare innehåller Visual Studio 2017. Version 10.0.16 (plattformsuppdatering 40) är den slutliga versionen som har stöd för Visual Studio 2015. Virtuella datorer med endast Visual Studio 2015 kommer inte att kunna uppdateras till version 10.0.17 (plattformsuppdatering 41). |
 
 ### <a name="field-groups-containing-invalid-field-references"></a>Fältgrupper innehåller ogiltiga fältreferenser
 

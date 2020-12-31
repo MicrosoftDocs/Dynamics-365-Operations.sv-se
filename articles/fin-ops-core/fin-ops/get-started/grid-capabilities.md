@@ -3,7 +3,7 @@ title: Rutnätsmöjligheter
 description: I det här avsnittet beskrivs flera kraftfulla funktioner i rutnätskontrollen. Den nya rutnätsfunktionen måste aktiveras för att du ska kunna använda dessa funktioner.
 author: jasongre
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,21 +11,21 @@ ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
-ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
+ms.openlocfilehash: fb30cdded33f90bb472c8abdb70875077b1dd985
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3835096"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693784"
 ---
 # <a name="grid-capabilities"></a>Rutnätsmöjligheter
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Den nya rutnätskontrollen innehåller flera användbara och kraftfulla funktioner som kan användas för att förbättra användarproduktiviteten, skapa mer intressanta vyer av dina data och få meningsfulla insikter om dina data. Den här artikeln kommer att omfatta följande funktioner: 
 
@@ -95,21 +95,23 @@ Som en produktivitetsförstärkning kan användarna ange matematiska formler i n
 Om du vill att ett värde ska identifieras som ett uttryck i systemet startar du värdet med ett likhetstecken (**=**). Mer information om operatorer och syntax som stöds finns i [matematiska symboler som stöds](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Gruppera data i tabellform
-[!include [preview banner](../includes/preview-banner.md)]
+Företagsanvändare behöver ofta för att utföra ad hoc-analys av data. Det kan du göra genom att exportera data till Microsoft Excel och med hjälp av pivottabeller och funktionen **gruppering i rutnät** som är allmänt tillgänglig i version 10.0.16/Plattformsuppdatering 40 och är beroende av den nya nätkontrollfunktionen, tillåter användare att organisera sina tabelldata på intressanta sätt i Finance and Operations-appar. När funktionen utökas kommer funktionen **Summor**, **Gruppera** också få meningsfulla insikter i data genom att tillhandahålla delsummor på gruppnivån.
 
-Företagsanvändare behöver ofta för att utföra ad hoc-analys av data. Det kan du göra genom att exportera data till Microsoft Excel och med hjälp av pivottabeller och funktionen **(förhandsversion) gruppera i rutnät** som är beroende av den nya nätkontrollfunktionen, tillåter användare att organisera sina tabelldata på intressanta sätt i Finance and Operations-appar. När funktionen utökas kommer funktionen **Summor**, **Gruppera** också få meningsfulla insikter i data genom att tillhandahålla delsummor på gruppnivån.
-
-Om du vill använda den här funktionen högerklickar du på den kolumn som du vill gruppera efter och väljer **gruppera efter denna kolumn**. Den här åtgärden sorterar data efter den markerade kolumnen, lägger till en ny **gruppera efter kolumn** i början av rutnätet och infogar "rubrikrader" i början av varje grupp. Dessa rubrikrader innehåller följande information om varje grupp: 
+Om du vill använda den här funktionen högerklickar du på den kolumn som du vill gruppera efter och väljer **gruppera efter denna kolumn**. Den här åtgärden sorterar data efter den markerade kolumnen, lägger till en ny **Gruppera efter**-kolumn i början av rutnätet och infogar "rubrikrader" i början av varje grupp. Dessa rubrikrader innehåller följande information om varje grupp: 
 -  Datavärde för gruppen 
--  Kolumnnamn (den här informationen är särskilt användbar när flera grupperingsnivåer stöds.)  
+-  Kolumnnamn (den här informationen är särskilt användbar när du har flera grupperingsnivåer)  
 -  Antal data rader i den här gruppen
 -  Delsummor för alla kolumner som konfigurerats att visa summor
 
 När [sparade vyer](saved-views.md) är aktiverad kan den här gruppen sparas med personlig anpassning som en del av en vy för snabbåtkomst nästa gång du besöker sidan.  
 
-Om du väljer **gruppera efter denna kolumn** i en annan kolumn, ersätts den ursprungliga grupperingen eftersom det bara går att använda en grupperingsnivå i version 10.0.9 med plattformsuppdatering 33.
+### <a name="multiple-levels-of-grouping"></a>Flera nivåer av gruppering
+När du har grupperat data efter en enda kolumn kan du gruppera data efter en annan kolumn genom att välja **Gruppera efter denna kolumn** i önskad kolumn. Den här processen kan upprepas tills du har fem kapslade nivåer för gruppering, vilket är det maximala djup som stöds. I det här läget kan du inte längre gruppera efter ytterligare kolumner.  
 
-Om du vill ångra grupperingar i ett rutnät högerklickar du på grupperingskolumnen och väljer **Ta bort grupp**.  
+Du kan när som helst ta bort grupperingen i valfri kolumn genom att högerklicka på kolumnen och välja **Dela upp**. Du kan också ta bort grupperingen från alla kolumner genom att välja **rutnätsalternativ** och sedan **Dela upp alla**.   
+
+Observera att före version 10.0.16/Plattformsuppdatering 40, fanns det enbart stöd för en nivå av gruppering. Om data är grupperade i dessa versioner och du väljer **Gruppera efter denna kolumn** för en annan kolumn, ersätts den ursprungliga grupperingen.  
+
 
 ### <a name="expanding-and-collapsing-groups"></a>Expandera och komprimera grupper
 Den första grupperingen av data kommer att ha alla grupper expanderade. Du kan skapa sammanfattade vyer över informationen genom att dölja enskilda grupper, eller så kan du använda expandera och komprimera grupp för att underlätta navigeringen mellan data. Om du vill expandera eller komprimera en grupp, markerar du knappen (>) i motsvarande grupprubrikrad. Observera att läget utöka/komprimera för enskilda grupper **inte** sparas i anpassning.
@@ -153,7 +155,7 @@ Om din organisation hittar en sida med vissa problem med att använda det nya ru
 
 Denna API kommer att hedras tills oktober 2021 släpps när den nya nätkontrollen blir obligatorisk. Om något problem kräver att denna API används rapporterar du dem till Microsoft.
 
-## <a name="developer-size-to-available-width-columns"></a>[Utvecklare] kolumner med storlek till tillgänglig bredd
+## <a name="developer-size-to-available-width-columns"></a>[Utvecklare] Anpassa kolumner efter tillgänglig bredd
 Om en utvecklare ställer in egenskapen **WidthMode** på **SizeToAvailable** för kolumner inuti det nya rutnätet, har de kolumnerna samma bredd som de skulle ha om egenskapen hade värdet **SizeToContent**. De sträcker sig däremot åt att använda valfri tillgänglig bredd i rutnätet. Om egenskapen har ställts in på **SizeToAvailable** för flera kolumner, delar alla dessa kolumner all tillgänglig bredd i rutnätet. Om en användare manuellt ändrar storleken på en av dessa kolumner blir kolumnen statisk. Den kommer att finnas kvar till den bredden och kan inte längre sträckas ut för att ta upp extra tillgängligt rutnäts bredd.  
 
 ## <a name="known-issues"></a>Kända problem
@@ -165,10 +167,26 @@ Det här avsnittet innehåller en lista med kända problem för den nya rutnäts
     -  Det finns en grupperad kortlista på sidan.
     -  En rutnätskolumn med en icke-reagerande utökningsbar kontroll.
 
-    När en användare först stöter på en av dessa situationer, visas ett meddelande om att sidan ska uppdateras. När det här meddelandet visas fortsätter sidan att använda det befintliga rutnätet för alla användare tills nästa versionsuppdatering av produkten sker. En bättre hantering av dessa scenarier, så att det nya rutnätet kan användas, övervägs för framtida uppdateringar.     
+    När en användare först stöter på en av dessa situationer, visas ett meddelande om att sidan ska uppdateras. När det här meddelandet visas fortsätter sidan att använda det befintliga rutnätet för alla användare tills nästa versionsuppdatering av produkten sker. En bättre hantering av dessa scenarier, så att det nya rutnätet kan användas, övervägs för framtida uppdateringar.    
+    
+-  [KB-4582758] Poster är suddiga när du ändrar zoom från 100 till något annat procenttal
+    
+### <a name="fixed-as-part-of-10015"></a>Korrigerat som en del av 10.0.15    
+
+-  [KB 4582723] Visningsalternativ visas inte när de utförs senare i formuläret livscykel
+
+### <a name="fixed-as-part-of-10014"></a>Korrigerat som en del av 10.0.14
+
+-  (Kvalitetsuppdatering) [KB 4584752] Oväntat klientfel på sidan för projektfakturaförslag
 
 ### <a name="fixed-as-part-of-10013"></a>Korrigerat som en del av 10.0.13
 
+-  (Kvalitetsuppdatering) [KB-4583880] Regression Suite Automation Tool (RSAT)-tester misslyckas vid OpenLookup-åtgärd med "Cannot read property RowIndex of undefined"
+-  (Kvalitetsuppdatering) [KB 4583847] Oväntat klientfel vid navigering i sökningar 
+-  (Kvalitetsuppdatering) [Fel 471777] Det går inte att markera fält i ett rutnät för att redigera eller skapa en mobilapp
+-  [Fel 474851] Hyperlänkar i referensgruppskontroller fungerar inte 
+-  [Fel 474848] Utökade förhandsgranskningar med rutnät visas inte
+-  [KB 4582726] Egenskapen RotateSign respekteras inte  
 -  [Fel 470173] Kryssrutor på inaktiva rader växlar när användaren klickar på blanksteg i cellen
 -  [Fel 474848] Utökade förhandsgranskningar med rutnät visas inte
 -  [Fel 474851] Hyperlänkar i referensgruppskontroller fungerar inte 
@@ -176,10 +194,11 @@ Det här avsnittet innehåller en lista med kända problem för den nya rutnäts
 -  [KB 4569441] Problem med återgivning av kortlistor för flera kolumner, knappbeskrivningar på bilder och visningsalternativ för vissa fält
 -  [KB 4575279] Alla markerade rader raderas inte i redovisningsjournalen
 -  [KB 4575233] Visningsalternativ återställs inte efter flyttning till en annan rad
+-  [Fel-477884] Sökningar returnerar fel värde/post om ny rutnätskontroll aktiveras
 -  [KB 4571095] Bokföring av produktinleverans sker när användaren råkar trycka på retur (korrekt hantering av sidans standardåtgärd)
 -  [KB 4575437] Sökningar med redigerbara kontroller stängs oväntat
 -  [KB 4569418] Formuläret duplicerad rad har skapats i leveransschemaformuläret
--  [KB 4575435] Förbättrad förhandsgranskning är ibland även om muspekaren inte är nära fältet
+-  [KB 4575435] Förbättrad förhandsgranskning är ibland kvar även om muspekaren inte är nära fältet
 -  [KB 4575434] Sökningen filtreras inte när fältet har ändrats
 -  [KB 4575430] Värden i lösenordsfält maskeras inte i rutnätet
 -  [KB 4569438] "Bearbetning har avbrutits på grund av ett valideringsproblem" visar efter markeringsrader under kvittning av leverantörstransaktioner
@@ -200,14 +219,14 @@ Det här avsnittet innehåller en lista med kända problem för den nya rutnäts
 - [KB 4558584] Negativa tal återges inte korrekt.
 - [KB 4560726] Ett "oväntat klientfel" inträffar när växlingen mellan listor har utförts med en listvy.
 - [KB 4562141] Rutnätsindex är inaktiverade efter att en ny post har lagts till.
-- [KB 4562151] alternativen **validera** och **kopiera** uppgiftsinspelning är inte tillgängliga för kontroll av datum/nummer. 
+- [KB 4562151] Alternativen **Validera** och **Kopiera** för uppgiftsinspelning är inte tillgängliga för kontroll av datum/nummer. 
 - [KB 4562153] Kryssrutor med flera markeringar visas inte i list- eller kortrutnätet.
-- [KB 4562646] Ibland kan du inte klicka utanför rutnätet när du har flera markeringar i rutnätet.
-- [KB 4562647] Fokus återställs till den första kontrollen i dialogrutan **publicera** efter att en ny rad har lagts till i rutnätet för säkerhetsroller.
+- [KB 4562646] Ibland kan du inte klicka utanför rutnätet när du har flera radmarkeringar i rutnätet.
+- [KB 4562647] Fokus återställs till den första kontrollen i dialogrutan **Publicera** efter att en ny rad har lagts till i rutnätet för säkerhetsroller.
 - [KB 4563310] Den utökade förhandsgranskningen stängs inte efter att en rad har ändrats.
 - [KB 4563313] Ett oväntat klientfel inträffar i Internet Explorer när ett värde väljs i en sökning.
 - [KB 4564557] Uppslag och nedrullningsbara menyer öppnas inte i Internet Explorer
-- [KB 4563324] Navigeringen fungerar inte när arbetsytan **personalhantering** har öppnats.
+- [KB 4563324] Navigeringen fungerar inte när arbetsytan **Personalhantering** har öppnats.
 
 ### <a name="fixed-as-part-of-10011"></a>Korrigerat som en del av 10.0.11
 
@@ -225,7 +244,7 @@ Det här avsnittet innehåller en lista med kända problem för den nya rutnäts
 - [KB 4558383] Kontroller utanför rutnätet uppdateras inte efter att sista posten har tagits bort.
 - [KB 4558587] Referensgrupper som har kombinationsrutor för ersättningsfält visar inte värden.
 - [KB 4562143] Fält uppdateras inte efter att en rad ändring/rutnätsbehandling har fastnat efter att rader har tagits bort.
-- [KB 4562645] Ett undantag uppstår när ett uppslag öppnas när testerna av RSAT (Remote Server Administration Tools) körs.
+- [KB 4562645] Ett undantag uppstår när ett uppslag öppnas när tester av Regression Suite Automation Tool (RSAT) körs.
 
 ### <a name="fixed-as-part-of-10010"></a>Korrigerat som en del av 10.0.10
 

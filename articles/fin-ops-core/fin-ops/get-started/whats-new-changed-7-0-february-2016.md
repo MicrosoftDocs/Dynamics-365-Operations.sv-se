@@ -11,19 +11,18 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Operations
 ms.custom: 91243
 ms.assetid: 515bc6e7-a85d-4995-95c6-6cab6c8aa0f9
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54f07e7037f818862db4a44f9ad3e3fe8545f6f9
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 5d72eaa28cfe3d114d2ab48cb1e477074a8bf739
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811492"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693268"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheter och ändringar i Dynamics AX 7.0 (februari 2016)
 
@@ -541,7 +540,7 @@ u<td>Varukoder för Intrastat är en separat lista. Dessa varukoder kan vara sta
 | Vad kan du göra? | Dynamics AX 2012 |
 |------------------|------------------|
 | Utföra en kontroll av materialtillgänglighet för tillverkningsorder på en separat sida som öppnas från arbetsytan **Produktionsgolvsledning**. | Inte tillgänglig |
-| Starta och rapportera utvecklingen för produktionsjobb genom att använda den nya sidan **Jobbkortenhet**. | Formuläret **Jobbregistrering**är främst avsett för stora terminalskärmar, och användargränssnittet nås normalt via musklickningar. |
+| Starta och rapportera utvecklingen för produktionsjobb genom att använda den nya sidan **Jobbkortenhet**. | Formuläret **Jobbregistrering** är främst avsett för stora terminalskärmar, och användargränssnittet nås normalt via musklickningar. |
 
 ## <a name="master-planning-and-forecasting"></a>Huvudplanering och prognosticering
 

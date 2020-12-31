@@ -3,7 +3,7 @@ title: Skapa en konfiguration för att generera dokument i Excel-format
 description: Det här avsnittet innehåller information om hur du utformar ett elektroniskt rapporteringsformat (ER) för att fylla i en Excel-mall och sedan generera utgående dokument i Excelformat.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/14/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e889b08f10c5d0c95fed7c9e422340706bdd154a
-ms.sourcegitcommit: 67ce81c57194afb26a04ae4c0b7509e0efa32afc
+ms.openlocfilehash: d5733e40c67f9c97b04f126f7c3cfea9d4f8f5b5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "3375823"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686548"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Skapa en konfiguration för att generera dokument i Excel-format
 
@@ -59,11 +58,11 @@ Om du vill ange layouten för det utgående dokumentet bifogar du en Excel-arbet
 
 ![Lägga till en bilaga i Excel\fil-komponenten](./media/er-excel-format-add-file-component2.png)
 
-Om du vill ange hur den bifogade mallen ska fyllas i när du kör det konfigurerade ER-formatet måste du lägga till kapslade **Ark-**, **Intervall-** och **Cell-** komponenter i**Excel\\fil**-komponenten. Varje kapslad komponent måste associeras med ett namngivet Excel-objekt.
+Om du vill ange hur den bifogade mallen ska fyllas i när du kör det konfigurerade ER-formatet måste du lägga till kapslade **Ark-**, **Intervall-** och **Cell-** komponenter i **Excel\\fil**-komponenten. Varje kapslad komponent måste associeras med ett namngivet Excel-objekt.
 
 ### <a name="template-import"></a>Mallimport
 
-Du kan välja **Importera från Excel** på fliken **Importera** i åtgärds fönstret för att importera en ny mall till ett tomt ER-format. I det här exemplet skapas en **Excel\\-fil**komponent automatiskt, och den importerade mallen kopplas till den. Alla obligatoriska ER-komponenter skapas också automatiskt, baserat på listan med Excel-objekt som upptäcks.
+Du kan välja **Importera från Excel** på fliken **Importera** i åtgärds fönstret för att importera en ny mall till ett tomt ER-format. I det här exemplet skapas en **Excel\\-fil** komponent automatiskt, och den importerade mallen kopplas till den. Alla obligatoriska ER-komponenter skapas också automatiskt, baserat på listan med Excel-objekt som upptäcks.
 
 ![Välja Importera från Excel](./media/er-excel-format-import-template.png)
 
@@ -145,7 +144,7 @@ Komponenten **PageBreak** tvingar Excel att påbörja en ny sida. Den här kompo
 
 ### <a name="update-a-template"></a>Uppdatera en mall
 
-Du kan välja **Uppdatera från Excel** på fliken **Importera** i åtgärdsfönstret för att importera en uppdaterad mall till ett redigerbart ER-format. Under den här processen ersätts en mall för den valda **Excel\\**-filkomponenten med en ny mall. Innehållet i det redigerbara ER-formatet synkroniseras med innehållet i den uppdaterade ER-mallen.
+Du kan välja **Uppdatera från Excel** på fliken **Importera** i åtgärdsfönstret för att importera en uppdaterad mall till ett redigerbart ER-format. Under den här processen ersätts en mall för den valda **Excel\\-filkomponenten** med en ny mall. Innehållet i det redigerbara ER-formatet synkroniseras med innehållet i den uppdaterade ER-mallen.
 
 - En ny komponent för ER-format kommer att skapas automatiskt för alla Excel-namn om komponenten i ER-format inte hittas i det redigerbara formatet.
 - Alla ER-formatkomponenter tas bort från det redigerbara ER-formatet om det inte finns något korrekt Excel-namn.
@@ -165,6 +164,17 @@ När du validerar ett ER-format som kan redigeras görs en konsekvenskontroll f�
 
 ![Meddelande om felvalidering](./media/er-excel-format-validate.png)
 
+## <a name="control-the-calculation-of-excel-formulas"></a>Kontrollera beräkning av Excel-formler
+
+När ett utgående dokument i ett Microsoft Excel arbetsboksformat genereras, kan vissa celler i det här dokumentet innehålla Excel-formler. När funktionen **Aktivera användning av EPPlus bibliotek i ramverket för elektronisk rapportering** är aktiverad kan du styra när formlerna beräknas genom att ändra värdet för **Beräkningsalternativ**-[parametern](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) i Excel-mallen som används:
+
+- Välj **Automatisk** för att beräkna om alla beroende formler varje gång som ett genererat dokument läggs till av nya områden, celler osv.
+    >[!NOTE]
+    > Det kan orsaka ett prestandaproblem för Excel-mallar som innehåller många relaterade formler.
+- Välj **Manuell** för att undvika omberäkningar av formler när ett dokument genereras.
+    >[!NOTE]
+    > Omräkning av formel utförs påtvingat manuellt när ett genererat dokument öppnas för förhandsgranskning med Excel.
+    > Använd inte det här alternativet om du konfigurerar en ER-destination som förutsätter användning av ett genererat dokument utan förhandsgranskning i Excel (PDF-konvertering, e-post osv.) eftersom det genererade dokumentet kanske inte innehåller värden i celler med formler.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

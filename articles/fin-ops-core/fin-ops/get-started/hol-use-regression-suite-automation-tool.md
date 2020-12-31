@@ -10,18 +10,17 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 0c2babc3144cae5c68075bd853a2587505263776
-ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
+ms.openlocfilehash: 798717b276e68949a9425350720bf683a37d6fb5
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3410160"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693000"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Självstudie för Regression Suite Automation Tool
 
@@ -456,7 +455,7 @@ Du har ett testskript som skapar en ny kund. Via skript kan det här testfallet 
 
 Kund-ID:t anges i formatet *ATCUS\<number\>*, där \<number\> är ett värde mellan **000000001** och **999999999**.
 
-I följande exempel används en parameter, **Start**för att definiera det första numret som används. Det använder en andra parameter, **nr**, för att definiera antalet kunder som måste skapas. För varje upprepning ändras parametrarna i Excel-parameterfil med hjälp av en UpdateCustomer-funktion. Då anropas kommando raden för RSAT i en RunTestCase-funktion.
+I följande exempel används en parameter, **Start** för att definiera det första numret som används. Det använder en andra parameter, **nr**, för att definiera antalet kunder som måste skapas. För varje upprepning ändras parametrarna i Excel-parameterfil med hjälp av en UpdateCustomer-funktion. Då anropas kommando raden för RSAT i en RunTestCase-funktion.
 
 Öppna Microsoft Windows PowerShell ISE (Integrated Scripting Environment) i administrationsläge och klistra in följande kod i fönstret med namnet **Untitled1.ps1**.
 

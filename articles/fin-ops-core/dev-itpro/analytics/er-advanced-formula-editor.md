@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: d9911c858d6832aa70378d37e0fd5cf7d7831b1b
-ms.sourcegitcommit: dce8c5d3b2fc4a752d676cf9ba91e0dea2fa80d8
+ms.openlocfilehash: 14eb8a59b64a49649768f93befdf8e6e8dcf8105
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "3257071"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685393"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Avancerad formelredigerare för elektronisk rapportering
 
@@ -44,9 +43,9 @@ Förutom [elektronisk rapportering](general-electronic-reporting.md)[formelredig
 
 Gör på följande sätt när du vill börja använda den avancerade formelredigeraren i din instans av Microsoft Dynamics 365 Finance.
 
-1.  Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
-2.  På sidan **Konfigurationer** i åtgärdsfönstret, på fliken **Konfigurationer** i gruppen **Avancerad inställningar** markerar du **Använd parametrar**.
-3.  I dialogrutan **Användarparametrar** i avsnittet the **körningsspårning** ange parametern **Aktivera avancerad formelredigerare** till **ja**.
+1.  Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
+2.  På sidan **Konfigurationer** i åtgärdsfönstret, på fliken **Konfigurationer** i gruppen **Avancerad inställningar** markerar du **Använd parametrar**.
+3.  I dialogrutan **Användarparametrar** i avsnittet **Körningsspårning** ska du ange parametern **Aktivera avancerad formelredigerare** till **Ja**.
 
 [![Sidan ER-konfigurationer](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
 

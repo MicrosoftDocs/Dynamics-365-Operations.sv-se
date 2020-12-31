@@ -1,6 +1,6 @@
 ---
 title: Integrerat leverantörshuvud
-description: I det här avsnittet beskriver integreringen av leverantörsdata mellan Finance and Operations-appar och Common Data Service.
+description: I det här avsnittet beskriver integreringen av leverantörsdata mellan Finance and Operations-appar och Dataverse.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 07/15/2019
@@ -18,16 +18,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 5c4cc92fd7809f4016d8421c98f41a85fcfedc7b
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 636bc57b5ef09d605744f4857fd5fbefceac4875
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997658"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685495"
 ---
 # <a name="integrated-vendor-master"></a>Integrerat leverantörshuvud
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -37,7 +39,7 @@ I båda metoderna är leverantörsdata integrerad mellan Dynamics 365 Supply Cha
 
 ## <a name="vendor-data-flow"></a>Leveranstörsdataflöde
 
-Om du inte vill lagra leverantörsdata i entiteten **konto/kontakt** i Common Data Service, kan du använda den nya leverantörsdesignen.
+Om du inte vill lagra leverantörsdata i entiteten **konto/kontakt** i Dataverse, kan du använda den nya leverantörsdesignen.
 
 ![Leveranstörsdataflöde](media/dual-write-vendor-data-flow.png)
 
@@ -50,12 +52,12 @@ Om du vill fortsätta att lagra leverantörsdata i entiteten **konto/kontakt** k
 
 ## <a name="templates"></a>Mallar
 
-Leverantörsdata innehåller all information om leverantören, till exempel leverantörsgruppen, adresser, kontaktinformation, betalningsprofil och fakturaprofil. En samling entitetsmappningar fungerar tillsammans under leverantörsdatainteraktion, som visas i följande tabell.
+Leverantörsdata innehåller all information om leverantören, till exempel leverantörsgruppen, adresser, kontaktinformation, betalningsprofil och fakturaprofil. En samling tabellmappningar fungerar tillsammans under leverantörsdatainteraktion, som visas i följande tabell.
 
 Finance and Operations-appar | Andra Dynamics 365-appar     | Beskrivning
 ----------------------------|-----------------------------|------------
 Leverantör V2                   | Konto                     | Företag som använder kontoentiteten för att lagra leverantörsinformation kan fortsätta att använda den på samma sätt. De kan också dra nytta av de explicita leverantörsfunktioner som kommer på grund av Finance and Operations-appintegrering.
-Leverantör V2                   | Msdyn\_vendors              | Företag som använder en anpassad lösning för leverantörer kan dra nytta av det färdiga leverantörskoncept som introduceras i Common Data Service på grund av Finance and Operations-appintegrering. 
+Leverantör V2                   | Msdyn\_vendors              | Företag som använder en anpassad lösning för leverantörer kan dra nytta av det färdiga leverantörskoncept som introduceras i Dataverse på grund av Finance and Operations-appintegrering. 
 Leverantörsgrupper               | msdyn\_vendorgroups         | Den här mallen synkroniserar leverantörsgruppinformation.
 Betalningsmetod för leverantör       | msdyn\_vendorpaymentmethods | Den här mallen synkroniserar information om leverantörsbetalningsmetod.
 CDS-kontakter V2             | kontakter                    | Mallen [Kontakter](customer-mapping.md#cds-contacts-v2-to-contacts) synkroniserar all primär, sekundär och tertiär kontaktinformation för både kunder och leverantörer.

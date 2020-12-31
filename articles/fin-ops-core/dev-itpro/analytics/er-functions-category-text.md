@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd4dd7e9a3e1aa448adea5abd0c21b8133f34e3b
-ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
+ms.openlocfilehash: 228620afc81e154eced572f3b6024d6836d00d66
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201099"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686037"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Lista över ER-funktioner i textkategorin
 
@@ -37,7 +36,7 @@ Textfunktioner för elektronisk rapportering (ER) kan användas för att utföra
 |----------|-------------|
 | [Char](er-functions-text-char.md) | Den här funktionen returnerar ett *sträng*-värde som visar ett enstaka tecken som refereras av det angivna Unicode-numret. |
 | [Sammanfoga](er-functions-text-concatenate.md) | Den här funktionen returnerar alla angivna textsträngar som ett *sträng*-värde när de har sammanfogas till en sträng. |
-| [Format](er-functions-text-format.md) | Den här funktionen returnerar den angivna strängen som ett *Sträng* efter att den har formaterats genom att byta ut alla förekomster av **%N** med argumentet *N*th. |
+| [Format](er-functions-text-format.md) | Den här funktionen returnerar den angivna strängen som ett *Sträng* efter att den har formaterats genom att byta ut alla förekomster av **%N** med argumentet *N* th. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | Den här funktionen söker efter ett specifikt värde för *uppräkning* i angiven uppräkningsdatakälla med hjälp av det uppräkningsnamn som anges som ett *sträng*-värde. Om *Enum*-värdet hittas returnerar funktionen den. |
 | [GuidValue](er-functions-text-guidvalue.md) | Den här funktionen konverterar det angivna indata för typen *Sträng* till ett dataobjekt i typen *GUID*. |
 | [JsonValue](er-functions-text-jsonvalue.md) | Den här funktionen analyserar data i JSON-format (JavaScript Object Notation) som används av den angivna sökvägen och som extraherar ett skalärvärde som baseras på angivet-ID. Den returnerar sedan det extraherade skalärvärdet som ett *sträng* värde. |

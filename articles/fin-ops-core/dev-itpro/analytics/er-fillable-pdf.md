@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 96426ce54ec1b37c6751d990503d95960c2913df
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: de31469e79addfb82b3b57e647ff82e4d254881a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771316"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688135"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Utforma ER-konfigurationer för att fylla i PDF-mallar
 
@@ -243,7 +242,7 @@ Nu ska du importera det exempel på ER-format som du tidigare hämtade för att 
 
 ![Formatdesigner där en mappning har valts](media/rcs-ger-filloutpdf-reviewformat2.png)
 
-Observera att formatelementet **fält** används för att fylla i ett enskilt fält i ett ifyllbart PDF-dokument som definieras som en mall för det överordnade **PDF-fil**formatet. Bindningen för **PDF-fil**formatet eller det inkapslade elementet, om det innehåller några kapslade element, anger värdet som anges i motsvarande PDF-fält. Olika egenskaper för formatelementet **fält** kan användas för att ange vilket PDF-fält som fylls i av ett enskilt formatelement:
+Observera att formatelementet **fält** används för att fylla i ett enskilt fält i ett ifyllbart PDF-dokument som definieras som en mall för det överordnade **PDF-fil** formatet. Bindningen för **PDF-fil** formatet eller det inkapslade elementet, om det innehåller några kapslade element, anger värdet som anges i motsvarande PDF-fält. Olika egenskaper för formatelementet **fält** kan användas för att ange vilket PDF-fält som fylls i av ett enskilt formatelement:
 
 - På fliken **format** är **Namn** attributet för formatelementet
 - På fliken **Mappning** är **Namn** uttrycket för formatelementet

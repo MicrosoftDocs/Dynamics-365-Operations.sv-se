@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 270894
 ms.assetid: 1b90768d-8bf7-4e35-90c0-65962fea5d26
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 40317cdef777ca6524feb66caf66ddec3d855d32
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 56545e56201180bf73420bf73f9a9f6e7a426b33
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811611"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695047"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>Nya eller uppdaterade uppgiftsguider (november 2016)
 
@@ -30,7 +29,7 @@ ms.locfileid: "2811611"
 
 Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft APQC Unified Library för Microsoft Dynamics 365 for Operations (november 2016 - alla språk). Inge nytt Komma igång-biblioteket gavs ut.
 
-(November 2016 – alla språk) APQC Unified Library innehåller de uppgiftsguider som är avsedda att användas för Hjälp med Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations-plattformsuppdatering 3 Microsoft Dynamics AX-plattformsuppdatering 2, Dynamics AX maj 2016 uppdatering Microsoft Dynamics AX februari 2016 utgåvan. Mer information om dessa versioner finns i [nyheter och ändringar på startsidan för Finance and Operations](whats-new-changed.md). Lokaliserade versioner av uppgiftsguiderna finns tillgängliga i detta bibliotek. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Hjälp-system](help-overview.md).
+(November 2016 – alla språk) APQC Unified Library innehåller de uppgiftsguider som är avsedda att användas för Hjälp med Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations-plattformsuppdatering 3 Microsoft Dynamics AX-plattformsuppdatering 2, Dynamics AX maj 2016 uppdatering Microsoft Dynamics AX februari 2016 utgåvan. Mer information om dessa utgåvor finns i [Nyheter och ändringar på hemsidan för Finance and Operations.](whats-new-changed.md). Lokaliserade versioner av uppgiftsguiderna finns tillgängliga i detta bibliotek. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Hjälp-system](help-overview.md).
 
 > [!NOTE]
 > En asterisk (\*) bredvid rubriken för en affärsprocessmodellerare (BPM)-rad visar att uppgiftsguiden för den affärsprocessen skapades för Dynamics 365 for Operations november 2016 -uppdateringen och inte stöds i tidigare versioner av Microsoft Dynamics AX.

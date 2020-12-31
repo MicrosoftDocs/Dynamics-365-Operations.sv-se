@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 3f83271327df186d407516ff1a197800ffc8c78c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6e27806d3b94eb485705cec539a4849b81fbba91
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249366"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685797"
 ---
 # <a name="parse-incoming-documents-in-excel-format"></a>Tolka inkommande dokument i Excel-format
 
@@ -42,7 +41,7 @@ Hämta följande filer för att slutföra uppgiftsguiderna som nämns ovan.
 | Inkommande fil i XLSX-format - mall    | [1099import template.xlsx](https://go.microsoft.com/fwlink/?linkid=862266) |
 | Inkommande fil i XLSX-format - exempeldata | [1099import data.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)     |
 
-Om du inte har spelat upp följande uppgiftguide än [ER Skapa erforderliga konfigurationer för att importera data från en extern fil f](./tasks/er-required-configurations-import-data.md) i den aktuella Finance and Operation-appen, hämta följande fil.
+Om du inte har spelat upp följande uppgiftsguide, [ER Skapa erforderliga konfigurationer för att importera data från en extern fil](./tasks/er-required-configurations-import-data.md) i den aktuella Finance and Operations-appen ska du hämta följande fil.
 
 | Beskrivning av innehåll    | Fil                                                            |
 |------------------------|-----------------------------------------------------------------|

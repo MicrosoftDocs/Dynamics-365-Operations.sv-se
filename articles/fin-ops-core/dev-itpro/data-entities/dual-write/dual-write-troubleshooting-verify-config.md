@@ -1,6 +1,6 @@
 ---
-title: Kontrollera att dubbelriktad skrivning är konfigurerad i Finance and Operations-appar och Common Data Service
-description: I det här avsnittet beskrivs hur du kan avgöra om dubbelriktad skrivning är konfigurerad i Finance and Operations-appar och i Common Data Service.
+title: Kontrollera att dubbelriktad skrivning är konfigurerad i Finance and Operations-appar och Dataverse
+description: I det här avsnittet beskrivs hur du kan avgöra om dubbelriktad skrivning är konfigurerad i Finance and Operations-appar och i Dataverse.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
@@ -18,41 +18,43 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2ddac76871a3ac574a1edcb5446be6c64e5e4682
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: f389bcf133cc7e6a086167d5e26c1b8795d0fa30
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997240"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685549"
 ---
-# <a name="verify-that-dual-write-is-configured-in-finance-and-operations-apps-and-common-data-service"></a>Kontrollera att dubbelriktad skrivning är konfigurerad i Finance and Operations-appar och Common Data Service
+# <a name="verify-that-dual-write-is-configured-in-finance-and-operations-apps-and-dataverse"></a>Kontrollera att dubbelriktad skrivning är konfigurerad i Finance and Operations-appar och Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Finance and Operations-appar och Common Data Service. Det beskriver särskilt hur du kan avgöra om dubbelriktad skrivning är konfigurerad i Finance and Operations-appar och i Common Data Service.
+
+Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Finance and Operations-appar och Dataverse. Det beskriver särskilt hur du kan avgöra om dubbelriktad skrivning är konfigurerad i Finance and Operations-appar och i Dataverse.
 
 ## <a name="verify-that-dual-write-is-configured-in-a-finance-and-operations-app"></a>Kontrollera att dubbelriktad skrivning är konfigurerad i en Finance and Operations-app
 
-För att avgöra om de fel som visas när du försöker spara poster för uppdatering kommer från dubbelriktad skrivning, kontrollera först att dubbelriktad skrivning är konfigurerad.
+För att avgöra om de fel som visas när du försöker spara rader för uppdatering kommer från dubbelriktad skrivning, ska du först kontrollera att dubbelriktad skrivning är konfigurerad.
 
-+ Om du har administratörsbehörighet i Finance and Operations-appen, gå till **Arbetsytor \> Datahantering** och välj panelen **dubbelriktad skrivning**. Om information om de länkade miljöerna och listan över entitetsmappningar som körs visas, konfigureras dubbelriktad skrivning.
++ Om du har administratörsbehörighet i Finance and Operations-appen, gå till **Arbetsytor \> Datahantering** och välj panelen **dubbelriktad skrivning**. Om information om de länkade miljöerna och listan över tabellmappningar som körs visas, konfigureras dubbelriktad skrivning.
 
     ![Verifiera Finance and Operations-appanslutningen när du har administratörsbehörighet](media/verify_fin_ops_1.png)
 
-+ Om du inte har administratörsbehörighet visas ett felmeddelande *Det går inte att skriva data till entitet \<entity name\>*. I exemplet i följande bild kan du inte skapa en kundpost i Finance and Operations-appen eftersom dubbelriktad skrivning är konfigurerad men referensdata för kundgrupp och betalningsvillkor finns inte i Common Data Service.
++ Om du inte har administratörsbehörighet visas ett felmeddelande *Det går inte att skriva data till entitet \<entity name\>*. I exemplet i följande bild kan du inte skapa en kundrad i Finance and Operations-appen eftersom dubbelriktad skrivning är konfigurerad men referensdata för kundgrupp och betalningsvillkor finns inte i Dataverse.
 
     ![Verifiera Finance and Operations-appanslutningen när du inte har administratörsbehörighet](media/verify_fin_ops_2.png)
 
 Information om hur du åtgärdar problem när du skapar data i Finance and Operations-appar finns i [Felsöka problem med realtidssynkronisering](dual-write-troubleshooting-live-sync.md).
 
-## <a name="verify-that-dual-write-is-configured-in-common-data-service"></a>Kontrollera att dubbelriktad skrivning är konfigurerad i Common Data Service
+## <a name="verify-that-dual-write-is-configured-in-dataverse"></a>Kontrollera att dubbelriktad skrivning är konfigurerad i Dataverse
 
-När du skapar data, om du ser fältet **Företag** på sidor i Common Data Service, är dubbelriktad skrivning konfigurerad.
+När du skapar data, om du ser fältet **Företag** på sidor i Dataverse, är dubbelriktad skrivning konfigurerad.
 
-![Verifierar Common Data Service-anslutningen](media/verify_cds.png)
+![Verifierar Dataverse-anslutningen](media/verify_cds.png)
 
-Information om hur du åtgärdar problem när du skapar data i Common Data Service finns i [Felsöka problem med realtidssynkronisering](dual-write-troubleshooting-live-sync.md).
+Information om hur du åtgärdar problem när du skapar data i Dataverse finns i [Felsöka problem med realtidssynkronisering](dual-write-troubleshooting-live-sync.md).
 
-Information om hur du visar felinformation om du stöter på några fel medan du skapar data i Common Data Service finns i [Aktivera och visa spårningslogg för plugin-program i Common Data Service för att visa felinformation](dual-write-troubleshooting.md#enable-and-view-the-plug-in-trace-log-in-common-data-service-to-view-error-details).
+Information om hur du visar felinformation om du stöter på några fel medan du skapar data i Dataverse finns i [Aktivera och visa spårningslogg för plugin-program i Dataverse för att visa felinformation](dual-write-troubleshooting.md#enable-view-trace).

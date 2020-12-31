@@ -11,18 +11,17 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 21761, NotInToc
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f5670f6a580249491ad16ae46470160545bb8f91
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: 4757d506239e309dcbc3e181469b17e3286cc111
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248723"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695125"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Självstudie för att ställa in och installera Regression Suite Automation Tool
 Det här avsnittet är en vägledning som hjälper dig att få installationsprogrammet och komma igång med RSAT och verktygen för att använda RSAT. 
@@ -93,7 +92,7 @@ I den här självstudien ska du använda LCS affärsprocessmodelleraren (BPM) f�
 
     ![Säkerhetskommando](./media/setup_rsa_tool_05.png)
 
-2. Markera **personliga åtkomsttoken**i det vänstra fönstret under **säkerhet**. Välj sedan **ny token**.
+2. Markera **personliga åtkomsttoken** i det vänstra fönstret under **säkerhet**. Välj sedan **ny token**.
 
     ![Knappen Ny token på fliken för personliga åtkomsttoken i användarinställningar](./media/setup_rsa_tool_06.png)
 
@@ -286,7 +285,7 @@ Skapa en motsvarande uppgiftsinspelning som du kan koppla till den enkla affärs
 
         ![Knappen Överför](./media/setup_rsa_tool_37.png)
 
-    5. Välj **bläddra**och markera den .axtr-fil som du sparade tidigare. Välj sedan **överför**.
+    5. Välj **bläddra** och markera den .axtr-fil som du sparade tidigare. Välj sedan **överför**.
 
         ![Välja vilken .axtr-fil som ska överföras](./media/setup_rsa_tool_38.png)
 
@@ -387,7 +386,7 @@ Om du vill aktivera autentisering måste du generera och installera ett certifik
 
     ![AOSService i listan över webbplatser](./media/setup_rsa_tool_49.png)
 
-3. Högerklicka på **utforska** om du vill öppna mappen **\<enhet\>: \\AosService\\WebRoot**. Leta upp filen **wif.config**.
+3. Högerklicka på **Utforska** för att öppna mappen **\<Drive\>: \\AosService\\WebRoot**. Leta upp filen **wif.config**.
 
     ![Filen wif.config i mappen WebRoot](./media/setup_rsa_tool_50.png)
 
@@ -407,7 +406,7 @@ Om du vill aktivera autentisering måste du generera och installera ett certifik
     ```
 
     > [!NOTE]
-    > Om flera användare använder samma program, måste varje användare generera separata tumavtryck och alla dessa tumavtryck måste läggas till i avsnittet **\<nycklar\>**.
+    > Om flera användare använder samma program, måste alla användare generera separata tumavtryck och alla dessa tumavtryck måste läggas till i avsnittet **\<keys\>**.
 
 5. Om det finns fler än en AOS-dator upprepar du steg 3 till och med 4 för varje ytterligare dator.
 
@@ -501,7 +500,7 @@ I tidigare versioner av RSAT var du tvungen att installera drivrutiner för Sele
     - **Åtkomsttoken** – ange den åtkomsttoken som gör att verktyget kan ansluta till Azure DevOps. Använd den personliga åtkomsttoken som du skapade tidigare i den här självstudien. Mer information finns i autentisera [åtkomst med privata åtkomsttoken](https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate).
     - **Projektnamn** – Välj namnet på Azure DevOps-projektet.
     - **Testplan** – Välj Azure DevOps testplanen som innehåller testfallen. Mer information finns i [skapa testplaner och testpaket](https://www.visualstudio.com/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan). När du har valt en testplan väljer du **testa anslutning** för att testa anslutningen till Azure DevOps.
-    - **Värdnamn** – ange värdnamnet på testmiljön, t.ex. **\<myaos\>.cloudax.dynamics.com**. Ta inte med prefixet **https://** eller **http://**.
+    - **Värdnamn** – Ange värdnamnet på testmiljön, som **\<myaos\>.cloudax.dynamics.com**. Ta inte med prefixet **https://** eller **http://**.
     - **SOAP-värdnamn** – ange SOAP-värdnamnet för testmiljön. Vanligt vis är SOAP-värdnamnet detsamma som värdnamnet, men det har ett **soap**-suffix. Här följer ett exempel: **\<myaos\>soap.cloudax.dynamics.com**. Ta inte med prefixet **https://** eller **http://**.
 
         > [!NOTE]
@@ -563,7 +562,7 @@ I tidigare versioner av RSAT var du tvungen att installera drivrutiner för Sele
 
     ![Skärmupplösningen är inställd på 100 %](./media/setup_rsa_tool_68.png)
 
-6. Om drivrutinerna för webbläsaren inte är installerade i systemet visas ett varningsmeddelande om "Den här åtgärden kräver drivrutin för \<webbläsare\>. Vill du att den automatiskt ska hämtas och installeras nu?" Välj **Ja**.
+6. Om drivrutinerna för webbläsaren inte är installerade i systemet visas ett varningsmeddelande om "Den här åtgärden kräver drivrutin för \<browser name\>. Vill du att den automatiskt ska hämtas och installeras nu?" Välj **Ja**.
 
     ![Varningsmeddelande för Internet Explorer](./media/setup_rsa_tool_69.png)
 
@@ -706,7 +705,7 @@ I det här avsnittet skapar du en sparad variabel i det första testfallet, skap
     ![Nya steg har lagts till](./media/setup_rsa_tool_93.png)
 
 12. Välj **Redigeringen är slutförd**.
-13. Välj **Spara till Lifecycle Services**och koppla den nya uppgiftsinspelningen till samma BPM-bibliotek och affärsprocess som den ursprungliga uppgiftsinspelningen var kopplad till. Mer information finns i avsnittet [skapa en uppgiftsinspelning och spara den i BPM-biblioteket](#create-a-task-recording-and-save-it-to-the-bpm-library).
+13. Välj **Spara till Lifecycle Services** och koppla den nya uppgiftsinspelningen till samma BPM-bibliotek och affärsprocess som den ursprungliga uppgiftsinspelningen var kopplad till. Mer information finns i avsnittet [skapa en uppgiftsinspelning och spara den i BPM-biblioteket](#create-a-task-recording-and-save-it-to-the-bpm-library).
 14. Gå till BPM-biblioteket och välj **Synkronisera testärenden** om du vill skriva över den uppgiftsinspelning som är kopplad till testfallet i Azure DevOps, enligt beskrivningen i avsnittet [testa synkronisering från BPM till Azure DevOps](#test-the-synchronization-from-bpm-to-azure-devops).
 15. Öppna RSAT och välj **Läs in** om du vill läsa in alla testfall i testpaketet på nytt. Du måste generera om automatiserings- och parameterfiler genom att välja testfall och sedan välja **Ny \> Generera testkörnings- och parameterfiler**, enligt beskrivningen i avsnittet [Läs in och kör testfall](#load-and-run-test-cases).
 
@@ -759,7 +758,7 @@ I det här avsnittet skapar du en sparad variabel i det första testfallet, skap
 
 #### <a name="add-the-new-test-case-to-the-existing-test-suite"></a>Lägg till det nya testfallet i det befintliga testpaketet
 
-1. Gå till **testplaner \> testplaner**och markera planen **RSAT-testplan**.
+1. Gå till **testplaner \> testplaner** och markera planen **RSAT-testplan**.
 2. Välj **Lägg till befintlig**.
 3. På sidan **Lägg till testfall i paket** väljer du **Kör fråga**.
 4. Välj det nya testfallet som har skapats för **Frisläppa en produkt** och välj sedan **Lägg testfall** i det nedre högra hörnet på sidan (den här knappen visas inte i bilden nedan).

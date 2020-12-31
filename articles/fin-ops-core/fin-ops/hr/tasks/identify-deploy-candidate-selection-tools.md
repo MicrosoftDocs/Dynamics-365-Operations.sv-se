@@ -3,7 +3,7 @@ title: Identifiera och distribuera kandidaturvalsverktyg
 description: Om du vill hitta en kvalificerad pool av kandidater kan det vara svårt att fylla vakanser, särskilt för en befattning kräver en unik kompetenskombination.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 11/20/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d8a05ad7f100e6c54ccf1ecf7b76509cf44dbb8
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: f4e7ed6feaa1b5b27fcfc0ec99a2d75415fe7d6a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143959"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693074"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identifiera och distribuera kandidaturvalsverktyg
 
@@ -39,22 +38,22 @@ Om du vill hitta en kvalificerad pool av kandidater kan det vara svårt att fyll
 7. Klicka på Jobb.
 8. Ange eller välj ett värde i fältet Jobb.
 9. Klicka på OK.
-10. Expandera snabbsorteringsfliken och lägg till ytterligare information, till exempel avdelning.
-11. Expandera certifikatsnabbfliken om du vill visa eller redigera certifikat.
-12. Expandera snabbfliken Kompetenser om du vill visa eller redigera kompetenser.
-13. Expandera snabbfliken Utbildning om du vill visa eller redigera utbildningskriterier.
+10. Expandera FastTab för intervallet och lägg till ytterligare information, till exempel avdelning.
+11. Expandera FastTab för certifikat för att visa eller redigera certifikat.
+12. Expandera FastTab för Kompetenser om du vill visa eller redigera kompetenser.
+13. Expandera FastTab Utbildning om du vill visa eller redigera utbildningskriterier.
 14. Klicka på Kör.
 15. Klicka på OK.
 16. Klicka på Resultat.
 17. Klicka på Resultat.
 18. Klicka på Fortsätt.
 19. Klicka på Certifikat.
-    * Du kan detaljgranska varje person och visa information om deras utbildning, färdigheter, yrkeserfarenhet osv.  
+    * Du kan detaljgranska varje person och visa information om deras utbildning, färdigheter och yrkeserfarenhet osv.  
 20. Stäng sidan.
 21. Stäng sidan.
 22. Välj resultatet igen.
 23. Klicka på Rapport.
-    * Rapporten anger de bästa matchningarna högst upp i rapporten.  Du kan se att det finns en lucka i listan.  Detta är skillnaden mellan nivån som anges i kompetensmappningen och nivån på färdigheten som tilldelas till en person.  
+    * Rapporten anger de bästa matchningarna högst upp i rapporten.  Du kan se att en lucka är listad.  Detta är skillnaden mellan nivån som anges i kompetensmappningen och nivån på färdigheten som tilldelas till en person.  
 24. Stäng sidan.
 25. Klicka på Spara.
 
