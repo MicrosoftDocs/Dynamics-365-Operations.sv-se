@@ -1,6 +1,6 @@
 ---
-title: Organisationshierarki i Common Data Service
-description: I det här avsnittet beskrivs integreringen av organisationsinformation mellan Finance and Operations-appar och Common Data Service.
+title: Organisationshierarki i Dataverse
+description: I det här avsnittet beskrivs integreringen av organisationsinformation mellan Finance and Operations-appar och Dataverse.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 07/15/2019
@@ -18,32 +18,34 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: f502519ba419cb8fa322eb1d22f06d2b805f5f05
-ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
+ms.openlocfilehash: e2b652f11db62eb58ffc2ec2fc4322149e7d45d1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4000744"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680082"
 ---
-# <a name="organization-hierarchy-in-common-data-service"></a>Organisationshierarki i Common Data Service
+# <a name="organization-hierarchy-in-dataverse"></a>Organisationshierarki i Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 Eftersom Dynamics 365 Finance är ett finansiellt system är *organisation* ett grundläggande begrepp och systeminställningarna börjar med konfigurationen av en organisationshierarki. Affärsekonomi kan sedan spåras på organisationsnivå och även på alla nivåer i organisationshierarkin.
 
-Även om Common Data Service inte har begreppet av en organisationshierarki, har den några lösa begrepp, till exempel totala försäljningsintäkter. Som en del av Common Data Service-integrationen läggs organisationshierarkins datastruktur till i Common Data Service.
+Även om Dataverse inte har begreppet av en organisationshierarki, har den några lösa begrepp, till exempel totala försäljningsintäkter. Som en del av Dataverse-integrationen läggs organisationshierarkins datastruktur till i Dataverse.
 
 ## <a name="data-flow"></a>Dataflöde
 
-Ett affärsekosystem som består av Finance and Operations-appar och Common Data Service kommer att fortsätta att ha en organisationshierarki. Organisationshierarkin bygger på Finance and Operations-appar, men den exponeras i Common Data Service för information och utbyggbarhet. Följande illustration visar organisationshierarkiinformation som exponeras i Common Data Service som ett enkelriktat dataflöde från Finance and Operations-appar till Common Data Service.
+Ett affärsekosystem som består av Finance and Operations-appar och Dataverse kommer att fortsätta att ha en organisationshierarki. Organisationshierarkin bygger på Finance and Operations-appar, men den exponeras i Dataverse för information och utbyggbarhet. Följande illustration visar organisationshierarkiinformation som exponeras i Dataverse som ett enkelriktat dataflöde från Finance and Operations-appar till Dataverse.
 
 ![Arkitekturbild](media/dual-write-data-flow.png)
 
-Organisationshierarkin entitetskartor är tillgängliga för enkelriktad synkronisering av data från Finance and Operations-appar till Common Data Service.
+Organisationshierarkins tabellmappningar är tillgängliga för enkelriktad synkronisering av data från Finance and Operations-appar till Dataverse.
 
 ## <a name="templates"></a>Mallar
 
-Produktinformationen innehåller all information som är relaterad till produkten och dess definition, t.ex. produktdimensioner eller spårnings- och lagringsdimensioner. Som framgår av följande tabell skapas en samling med enhetsmappningar för synkronisering av produkter och relaterad information.
+Produktinformationen innehåller all information som är relaterad till produkten och dess definition, t.ex. produktdimensioner eller spårnings- och lagringsdimensioner. Som framgår av följande tabell skapas en samling med tabellmappningar för synkronisering av produkter och relaterad information.
 
 Finance and Operations-appar | Andra Dynamics 365-appar | beskrivning
 -----------------------|--------------------------------|---
@@ -64,7 +66,7 @@ Juridiska personer | cdm_companies | Tillhandahåller dubbelriktad synkroniserin
 
 ## <a name="internal-organization"></a>Intern organisation
 
-Intern organisationsinformation i Common Data Service kommer från två entiteter **driftenhet** och **juridiska personer**.
+Intern organisationsinformation i Dataverse kommer från två tabeller **driftenhet** och **juridiska personer**.
 
 [!include [Operating unit](includes/OperatingUnit-msdyn-internalorganizations.md)]
 

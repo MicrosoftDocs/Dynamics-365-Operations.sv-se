@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 59131
 ms.assetid: 966a3f1d-c59c-4a84-acd4-5bb7e65144c8
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 07f49e63fc2e0410d2673f3ca9378325e9b4ebf8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 779548dc49be0a92456df791017045803f70bd86
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174154"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683121"
 ---
 # <a name="report-definitions-in-financial-report-designer"></a>Rapportdefinitioner i designer för ekonomiska rapporter
 
@@ -41,7 +40,7 @@ Däremot är det inte säkert att transaktionsinformation finns tillgänglig i r
 
 ## <a name="create-a-report-definition"></a>Skapa en rapportdefinition
 1. I Report Designer i menyn **Fil** klickar du på **Nytt** och väljer sedan **Rapportdefinition**.
-2. Ange lämplig information i flikarna **Rapport**som krävs på **Utleverans och fördelning**, **Sidhuvud och sidfot**och **Inställningar**.
+2. Ange lämplig information i flikarna **Rapport** som krävs på **Utleverans och fördelning**, **Sidhuvud och sidfot** och **Inställningar**.
 
 ## <a name="contents-of-a-report-definition"></a>Innehåll i en rapportdefinition
 I följande register finns beskrivningar av flikarna i en rapportdefinition och hur informationen används.

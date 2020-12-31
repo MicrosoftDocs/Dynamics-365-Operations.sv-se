@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c5401f310138d19f78412dff318959414c31a191
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 34d4ad9106b2751c77db4fd03d83932e587a5332
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770033"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680130"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI
 
@@ -93,7 +92,7 @@ Följ stegen nedan för att ändra formatkonfigurationen för **Importera/export
 
     1. Namnet på datakällan **direction\__enum**.
     2. Välj **Uppräkning för datamodell** som typ av datakälla.
-    3. Hänvisa till uppräkningen för datamodell**Riktning**.
+    3. Hänvisa till uppräkningen för datamodell **Riktning**.
 
     [![direction_enum](./media/ger-power-bi-format-configuration-mapping-added-enum-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-added-enum.png)
 
@@ -126,7 +125,7 @@ Klicka på knappen **Inställningar** för den nya målposten. Följ sedan dessa
 2. I fältet **SharePoint** väljer du dokumenttypen **Delad** som du skapade tidigare.
 
 ## <a name="schedule-execution-of-the-configured-er-format"></a>Tidsplanera körning av den konfigurerade ER-formatet
-1. På sidan **Konfigurationer** (**Organisationadministration** &gt; **Elektronisk rapportering** &gt; **Konfigurationer**, i konfigurationsträdet väljer du konfigurationen **Importera/exportera aktiviteter** som du skapade tidigare.
+1. På sidan **Konfigurationer** (**Organisationadministration** &gt; **Elektronisk rapportering** &gt; **Konfigurationer**), i konfigurationsträdet väljer du konfigurationen **Importera/exportera aktiviteter** som du skapade tidigare.
 2. Ändra status för version 1.1 från **Utkast** till **Slutför** om du vill göra detta format tillgängligt för användning.
 
     [![Sidan Konfigurationer](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)

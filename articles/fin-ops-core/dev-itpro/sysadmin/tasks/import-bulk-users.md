@@ -1,7 +1,7 @@
 ---
-title: Massimportera användare
-description: Den här proceduren kan användas av systemadministratörer för att importera ett stort antal användare från Azure Active Directory.
-author: maertenm
+title: Importera användare från Azure Active Directory
+description: Den här proceduren kan användas av systemadministratörer för att manuellt importera valda användare eller att importera ett stort antal användare från Azure Active Directory.
+author: peakerbl
 manager: AnnBe
 ms.date: 07/07/2017
 ms.topic: business-process
@@ -10,41 +10,51 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: sericks
+ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa86d408727ecf2127308070fda592ff6a1fccf4
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 56b6666310309817ff30ccb3902721880b829ee0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982464"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679824"
 ---
-# <a name="import-users-in-bulk"></a>Massimportera användare
+# <a name="import-users-from-azure-active-directory"></a>Importera användare från Azure Active Directory
 
 [!include [banner](../../includes/banner.md)]
 
+## <a name="import-select-users"></a>Importera valda användare
+
+Den här proceduren kan användas av systemadministratörer för att importera valda användare från Azure Active Directory (Azure AD).
+
+1. Användaren importeras med det aktuella sessionsföretaget som standardföretag. Ändra aktuellt företag vid behov innan användarna importeras.
+2. Gå till **Systemadministration > Användare > Användare**.
+3. Klicka på **Importera användare**.
+4. Markera de användare som ska importeras och välj **Importera användare**.
+
+När importen är klar måste du tilldela användare roller.
+
+## <a name="import-users-in-bulk"></a>Massimportera användare
+
 Den här proceduren kan användas av systemadministratörer för att importera ett stort antal användare från Azure Active Directory.
+Observera att det inte är möjligt att välja användare när du använder alternativet för batchimport.
 
+## <a name="run-the-import-as-a-batch-job"></a>Kör importen som ett batchjobb
+1. Användaren importeras med det aktuella sessionsföretaget som standardföretag. Ändra aktuellt företag vid behov innan användarna importeras.
+2. Gå till **Systemadministration > Användare > Användare**.
+3. Klicka på **Batchimport**.
+4. Expandera avsnittet **Kör i bakgrunden**.
+4. Välj **Ja i fältet **Batchbearbetning**.
+6. Ange eller välj ett värde i fältet **Batchgrupp**. Detta steg är valfritt.  
+7. Välj **Ja** i fältet **Privat**. Detta steg är valfritt.  
+8. Välj **Ja** i fältet **Kritiskt jobb**. Detta steg är valfritt.  
+9. Välj ett alternativ i fältet **Övervakningskategori.
+10. Klicka på **OK**.
 
-## <a name="run-as-a-batch-job"></a>Kör som ett batchjobb
-1. Gå till Systemadministration > Användare > Användare.
-2. Klicka på Batchimport.
-3. Expandera avsnittet Kör i bakgrunden.
-4. Välj Ja i fältet Batchbearbetning.
-5. Skriv ett värde i fältet Uppgiftsbeskrivning.
-6. Ange eller välj ett värde i fältet Batchgrupp.
-    * Detta steg är valfritt.  
-7. Välj Ja i fältet Privat.
-    * Detta steg är valfritt.  
-8. Välj Ja i fältet Kritiskt jobb.
-    * Detta steg är valfritt.  
-9. Välj ett alternativ i fältet Övervakningskategori.
-10. Klicka på OK.
+När importen är klar måste användare tilldelas roller.
 
 ## <a name="run-in-a-sandbox-environment"></a>Kör i ett begränsat läge
-1. Klicka på Batchimport.
-2. Klicka på OK.
-
+1. Välj **Batchimport**.
+2. Välj **OK**.

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6132d48f276b27797e86fbcde11746b7e4da7d3b
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142465"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684557"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Ändra format för att generera dokument som omfattar programdata
 
@@ -80,7 +79,7 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
 38. Klicka på OK.
 39. Välj File\Declaration\Data\Item i trädet.
 40. Klicka på Lägg till artikel.
-41. Skriv "Commodity rec id" i namnfältet.
+41. Skriv "Artikelpost-ID" i namnfältet.
     * Artikelpost-ID  
 42. Välj Int64 i fältet Datatyp.
 43. Klicka på OK.
@@ -89,22 +88,23 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
 46. Klicka på Bind.
 47. Expandera "modell" i trädet.
 48. Expandera model\Transactions i trädet.
-49. Välj File\Declaration\Data\Item =  model.Transactions\Commodity rec id i trädet.
-50. Välj model\Transactions\Commodity rec id i trädet.
+49. Välj File\Declaration\Data\Item = model.Transactions\Commodity rec ID i trädet.
+50. Välj "model\Transactions\Commodity rec " i trädet.
 51. Klicka på Bind.
 52. Klicka på Spara.
 
 ## <a name="modify-format-to-memorize-details-of-reporting"></a>Ändra format för att memorera information om rapportering
+
 1. Klicka på Mappa format till modell.
 2. Klicka på Ny.
 3. Ange eller välj ett värde för rotobjektet For application data update i fältet Definition.
-    * För uppdatering av programdata  
+    * För uppdatering av programdata.
 4. Skriv "Mapping to update data" i namnfältet.
     * Mappning för att uppdatera data  
 5. Klicka på Spara.
-    * Den här mappningen avgör hur information om Intrastat-rapporten samlas in i datamodellen, strukturen som anges av det valda rotobjektet "For application data update". Dessa uppgifter, modellmappningen med samma rotobjekt "For application data update" och riktningen "To mål" används för uppdatering av programdata. Uppdateringen av programdata inleds omedelbart efter att den utgående Intrastat-rapporten har skapats. Observera att uppdateringen av programdata kan hoppas över under körning, men datamodellen måste vara tom (innehåller en tom postlista).   
+    * Den här mappningen avgör hur information om Intrastat-rapporten samlas in i datamodellen, strukturen som anges av det valda rotobjektet "For application data update". Dessa uppgifter, modellmappningen med samma rotobjekt "For application data update" och riktningen "To mål" används för uppdatering av programdata. Uppdateringen av programdata inleds omedelbart efter att den utgående Intrastat-rapporten har skapats. Uppdateringen av programdata kan hoppas över under körning, men datamodellen måste vara tom (innehålla en tom postlista).
 6. Klicka på Designer.
-    * Observera att formatet för den utgående Intrastat-rapporten läggs till som standard som datakälla för den här modellmappningen.  
+    * Formatet för den utgående Intrastat-rapporten läggs till som standard som datakälla för den här modellmappningen.  
     * Bind elementen i den utformade rapporten (visas som datakälla) till elementen i datamodellen, som filtreras utifrån den valda modellens rotobjekt.  
 7. Expandera Archive header i trädet.
 8. Expandera Archive header\Archive lines i trädet.
@@ -120,8 +120,8 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
 18. Klicka på funktionen Lägg till.
 19. Expandera format i trädet.
 20. Expandera format\Declaration: XML Element(Declaration) i trädet.
-21. Expandera format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data) i trädet.
-22. Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item) i trädet.
+21. Expandera `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)` i trädet.
+22. Välj `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)` i trädet.
 23. Klicka på Lägg till datakälla.
 24. Skriv "COUNT(format.Declaration.Data.Item)" i formelfältet.
     * COUNT(format.Declaration.Data.Item)  
@@ -130,23 +130,22 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
 27. Välj Archive header\File name i trädet.
 28. Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\File name: Item String(File name) i trädet.
 29. Klicka på Bind.
-30. Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number) i trädet.
+30. Välj `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)` i trädet.
 31. Välj Archive header\Archive lines\Item number i trädet.
 32. Klicka på Bind.
-33. Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value) i trädet.
+33. Välj `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)` i trädet.
 34. Välj Archive header\Archive lines\Amount i trädet.
 35. Klicka på Bind.
-36. Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec id: Item Int64(Commodity rec id) i trädet.
-37. Välj Archive header\Archive lines\Commodity rec id i trädet.
+36. Välj `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec ID: Item Int64(Commodity rec ID)` i trädet.
+37. Välj "Archive header\Archive lines\Commodity rec ID" i trädet.
 38. Klicka på Bind.
 39. Välj Archive header\Archive lines i trädet.
-40. Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item) i trädet.
+40. Välj `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)` i trädet.
 41. Klicka på Bind.
 42. Välj Archive header i trädet.
-43. Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data).
+43. Välj `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)` i trädet.
 44. Klicka på Bind.
 45. Klicka på Spara.
 46. Stäng sidan.
 47. Stäng sidan.
 48. Stäng sidan.
-

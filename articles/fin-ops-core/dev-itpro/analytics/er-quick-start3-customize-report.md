@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c19fef3e62eec48e66f7cec824afee3ebb25209e
-ms.sourcegitcommit: cc78f9bf585082ce65c2ab0b011ff62620fa883d
+ms.openlocfilehash: 47bb8a2a9adab4ec963a1d0b95e783299aab3819
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "4088230"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683031"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Anpassa konfigurationer av elektronisk rapportering så att ett elektroniskt dokument skapas
 
@@ -53,7 +52,7 @@ Procedurerna i det här avsnittet förklarar hur en användare i rollen systemad
 - [Tillämpa ändringarna på de nya versionerna av standard-ER-konfigurationen i dina anpassade ER-konfigurationer](#RebaseCustomERConfigurations).
 - [Lägg till, bokför och skicka en kundfaktura med hjälp av de nya versionerna av de anpassade ER-konfigurationerna](#ProcessInvoice3).
 
-Alla dessa procedurer kan slutföras i **DEMF** -företaget.
+Alla dessa procedurer kan slutföras i **DEMF**-företaget.
 
 ## <a name="configure-the-er-framework"></a><a name="ConfigureER"></a>Konfigurera ER-ramverket
 
@@ -65,7 +64,7 @@ Som användare i rollen funktionell konsult för elektronisk rapportering eller 
 2. På sidan **lokaliseringskonfiguration** i avsnittet **Relaterade länkar** väljer du **parametrar för elektronisk rapportering**.
 3. På sidan **parametrar för elektronisk rapportering** på fliken **allmänna** anger du alternativet till **aktivera designläge** till **Ja**.
 4. På fliken **Bilagor** i fältet **Konfigurationer** välj **Fil**.
-5. I fältet **Jobbarkiv** , **Tillfälliga** , **Baslinje** och **Andra** och välj typen **Fil**.
+5. I fältet **Jobbarkiv**, **Tillfälliga**, **Baslinje** och **Andra** och välj typen **Fil**.
 
 Mer information om ER-parametrar finns i [Konfigurera om ER-ramverket](electronic-reporting-er-configure-parameters.md).
 
@@ -104,9 +103,9 @@ Om du vill lägga till standard-ER-konfigurationer i din aktuella ekonomiinstans
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. På sidan **lokaliseringskonfiguration** i avsnittet **konfigurationsleverantörer** välj panelen **Microsoft** och markera sedan **databaser** om du vill visa listan över databaser för Microsoft-leverantören.
-3. På sidan **Konfigurationsdatabaser** väljer du i rutnätet den befintliga databasen för **Global** -typ och väljer sedan **Öppna**. Om du uppmanas att bevilja behörighet att ansluta till Regulatory Configuration Service följer du instruktionerna för auktorisering.
-4. På sidan **Konfigurationsdatabas** i konfigurationsträdet i vänster fönster, välj den **Peppol-försäljningsfaktura** -formatkonfiguration.
-5. På snabbfliken **Versioner** , välj version **11.2.2**.
+3. På sidan **Konfigurationsdatabaser** väljer du i rutnätet den befintliga databasen för **Global**-typ och väljer sedan **Öppna**. Om du uppmanas att bevilja behörighet att ansluta till Regulatory Configuration Service följer du instruktionerna för auktorisering.
+4. På sidan **Konfigurationsdatabas** i konfigurationsträdet i vänster fönster, välj den **Peppol-försäljningsfaktura**-formatkonfiguration.
+5. På snabbfliken **Versioner**, välj version **11.2.2**.
 6. Klicka på **Importera** för att hämta den valda versionen från Global lagringsplats.
 
 ![Sidan Konfigurationsdatabas](./media/er-quick-start3-import-solution1.png)
@@ -127,12 +126,12 @@ Observera att förutom det valda **Peppol-försäljningsfaktura** ER-format, har
 
 För att simulera tillståndet som ER-konfigurationer i den aktuella ekonomiinstansen skulle vara om du importerade versionen **11.2.2** av **Peppol-försäljningsfakturan** ER-format i det förflutna (t.ex. 7 augusti 2019) följer du dessa steg.
 
-- I åtgärdsfönstret, välj **Ta bort** för att ta bort alla ER-konfigurationer som publicerades efter den 7 augusti 2019. Den enda **Fakturamodellen** , **Mappning av fakturamodell** (från början kallad **Modellmappning av kundfaktura** ), **UBL försäljningsfaktura** och **Peppol-försäljningsfaktura** -konfigurationer måste finnas kvar.
-- För de återstående ER-konfigurationerna, på snabbfliken **Versioner** , välj **Ta bort** för att ta bort alla versioner av ER-konfigurationer som publicerades efter den 7 augusti 2019.
+- I åtgärdsfönstret, välj **Ta bort** för att ta bort alla ER-konfigurationer som publicerades efter den 7 augusti 2019. Den enda **Fakturamodellen**, **Mappning av fakturamodell** (från början kallad **Modellmappning av kundfaktura**), **UBL försäljningsfaktura** och **Peppol-försäljningsfaktura**-konfigurationer måste finnas kvar.
+- För de återstående ER-konfigurationerna, på snabbfliken **Versioner**, välj **Ta bort** för att ta bort alla versioner av ER-konfigurationer som publicerades efter den 7 augusti 2019.
 
 Verifiera sedan att följande konfigurationer är tillgängliga i konfigurationsträdet:
 
-- Konfiguration av **Fakturamodellen** ER-datamodell (från början kallad **Kundfakturamodell** ):
+- Konfiguration av **Fakturamodellen** ER-datamodell (från början kallad **Kundfakturamodell**):
 
     - Version 11 innehåller version 10 av [datamodell](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-komponent som representerar datastrukturen för företagsdomänen för fakturering. Den här ER-konfigurationen har importerats som en överordnad till ER-formatet **Peppol-försäljningsfakturan** som valdes för import.
     - Version 50 innehåller version 31 av ER-komponenten för datamodellen. Den här ER-konfigurationen har importerats som en föregångare till versionen från 7 augusti 2019 av konfiguration av ER-modellmappning **Mappning av fakturamodell**.
@@ -142,7 +141,7 @@ Verifiera sedan att följande konfigurationer är tillgängliga i konfigurations
     > [!TIP]
     > Om version 50 av denna datamodell inte visas öppnar du den globala databasen och importerar version 50.19 av ER-konfigurationen **Mappning av fakturamodell**.
 
-- Konfiguration och ER-modellmappning av **Mappning av fakturamodell** ER-datamodell (från början kallad **Mappning av kundfakturamodell** ):
+- Konfiguration och ER-modellmappning av **Mappning av fakturamodell** ER-datamodell (från början kallad **Mappning av kundfakturamodell**):
 
     - Version 50.19 har importerats som den senaste implementeringen av version 50 av konfiguration av ER-datamodell **fakturamodellen**. Den innehåller två [modellmappnings](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-komponenter som beskriver hur datamodellen fylls i med appdata vid körning.
 
@@ -172,7 +171,7 @@ Verifiera sedan att följande konfigurationer är tillgängliga i konfigurations
 ## <a name="configure-the-legal-entity-parameters"></a><a name="ConfigureLE"></a>Konfigurera parametrarna för den juridiska personen
 
 1. Gå till **Organisationsadministration** \> **Organisationer** \> **Juridiska personer**.
-2. För det valda **DEMF** -företaget på snabbfliken **Bankkontoinformation** i fältet **Clearingnummer** ange **1234**.
+2. För det valda **DEMF**-företaget på snabbfliken **Bankkontoinformation** i fältet **Clearingnummer** ange **1234**.
 3. Välj **Spara**.
 4. Stäng sidan **Juridiska personer**.
 
@@ -184,7 +183,7 @@ Verifiera sedan att följande konfigurationer är tillgängliga i konfigurations
 ### <a name="add-a-customer-contact"></a>Lägg till en kundkontakt
 
 1. Gå till **Leverantörsreskontra** \> **Kunder** \> **Alla kunder**.
-2. I Åtgärdsfönstret, på fliken **kund** , i gruppen **konton** , markerar du **kontakter**.
+2. I Åtgärdsfönstret, på fliken **kund**, i gruppen **konton**, markerar du **kontakter**.
 3. Välj **Lägg till kontakter**.
 4. På sidan **Kontakter** i fältet **Förnamn** öppnar du sökningen, väljer **Adam Carter** och väljer sedan **Välj** för att stänga sökningen.
 5. Välj **Spara**.
@@ -266,9 +265,9 @@ Utför anpassningarna enligt följande steg.
 2. På sidan **Alla kunder** välj länken **DE-014** kundkonto.
 3. På snabbfliken **Allmänt** högerklickar du på ett tomt område under fältet **Språk** och väljer sedan **Anpassa: UpperGroup**.
 
-    Innehållet på snabbfliken **Allmänt** markeras och en **anpassa** -meny visas.
+    Innehållet på snabbfliken **Allmänt** markeras och en **anpassa**-meny visas.
 
-4. På **Anpassa** -menyn, välj **Lägg till ett fält**.
+4. På **Anpassa**-menyn, välj **Lägg till ett fält**.
 5. I dialogrutan **Lägg till kolumner** välj **Skapa nytt fält**.
 6. I dialogrutan **Skapa nytt fält** i fält **Tabellnamn** välj **Kunder**.
 7. I fältet **Namnprefix** anger du **FederalTaxID**.
@@ -277,7 +276,7 @@ Utför anpassningarna enligt följande steg.
     > Hela fältnamnet har definierats automatiskt som **FederalTaxID\_Anpassat**.
 
 8. I fältet **Etikett** anger du **skatte-ID**.
-9. I fältet **Typ** , välj **Text**.
+9. I fältet **Typ**, välj **Text**.
 10. I fältet **Längd** anger du **20**.
 11. Välj **Spara**.
 12. I meddelanderutan som visas väljer **Ja** för att bekräfta att du vill skapa en ny fältpost **FederalTaxID** för tabellen **Kunder**.
@@ -370,7 +369,7 @@ Som användare i rollen funktionell utvecklare för elektronisk rapportering kan
 
 #### <a name="configure-a-custom-model-mapping"></a>Konfigurera en anpassad modellmappning
 
-Du måste ändra din anpassade modellmappning och ange hur det anpassade **FederalTaxID\_Litware** -fältet i den anpassade datamodellen ska fyllas i med programdata vid körning.
+Du måste ändra din anpassade modellmappning och ange hur det anpassade **FederalTaxID\_Litware**-fältet i den anpassade datamodellen ska fyllas i med programdata vid körning.
 
 1. Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
 2. På sidan **konfigurationer** i konfigurationsträdet i vänster fönster expanderar du **Kundfakturamodell** \> **Mappning av kundfakturamodell** och väljer **Mappning av fakturamodell (Litware)**.
@@ -381,10 +380,10 @@ Du måste ändra din anpassade modellmappning och ange hur det anpassade **Feder
 
 5. Välj **Designer**.
 6. På sidan **Modellmapping designer** i fönstret **Datakällor** expanderar du datakällan **CustInvoiceJour** som representerar appregistret **CustInvoiceJour**.
-7. Under **CustInvoiceJour** , expandera **Relationer** för att granska relationerna av typen många till en (N:1) för tabellen **CustInvoiceJour**.
-8. Under **CustInvoiceJour** \> **Relationer** , expandera **Kunder (CustTable)** för att komma åt fälten och relationerna i tabellen **Kunder (CustTable)**.
+7. Under **CustInvoiceJour**, expandera **Relationer** för att granska relationerna av typen många till en (N:1) för tabellen **CustInvoiceJour**.
+8. Under **CustInvoiceJour** \> **Relationer**, expandera **Kunder (CustTable)** för att komma åt fälten och relationerna i tabellen **Kunder (CustTable)**.
 9. Välj datakällfältet **FederalTaxID\_Anpassa** som du implementerade [tidigare](#insert_custom_field).
-10. I fönstret **Datamodell** , expandera **Kundinformation (kund)** och väljer datamodellfältet **FederalTaxID\_Litware**.
+10. I fönstret **Datamodell**, expandera **Kundinformation (kund)** och väljer datamodellfältet **FederalTaxID\_Litware**.
 11. Välj **bind**.
 
     ![Modellmappningsdesigner](./media/er-quick-start3-customize-model-mapping.gif)
@@ -452,13 +451,13 @@ Du måste ändra det anpassade formatet genom att lägga till ett nytt formatele
 #### <a name="configure-a-custom-format-mapping"></a>Konfigurera en anpassad formatmappning
 
 1. På sidan **Formatdesigner** på fliken **Mappning** expanderar du datakällan **Faktura** för typen **Modell**.
-2. Under **Faktura** , expandera **kundinformation (kund)** och välj **FederalTaxID\_Litware**.
+2. Under **Faktura**, expandera **kundinformation (kund)** och välj **FederalTaxID\_Litware**.
 3. Välj **bind**.
 
     ![Formatdesignersida](./media/er-quick-start3-customized-format-mapping.png)
 
 4. Markera datakällan **faktura** av typen **modell** och välj **Redigera**.
-5. I fältet **Version** , välj version **1** av din anpassade datamodell och sedan **OK**.
+5. I fältet **Version**, välj version **1** av din anpassade datamodell och sedan **OK**.
 6. Välj **Spara**.
 7. Stäng sidan **Formatdesigner**.
 
@@ -518,8 +517,8 @@ Om du vill behålla standard-ER-konfigurationerna i din ekonomiinstans [uppdater
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. På sidan **lokaliseringskonfiguration** i avsnittet **konfigurationsleverantörer** välj panelen **Microsoft** och markera sedan **databaser** om du vill visa listan över databaser för Microsoft-leverantören.
-3. På sidan **Konfigurationsdatabaser** väljer du i rutnätet den befintliga databasen för **Global** -typ och väljer sedan **Öppna**. Om du uppmanas att bevilja behörighet att ansluta till Regulatory Configuration Service följer du instruktionerna för auktorisering.
-4. På sidan **Konfigurationsdatabas** i konfigurationsträdet i vänster fönster, välj den **Peppol-försäljningsfaktura** -formatkonfiguration.
+3. På sidan **Konfigurationsdatabaser** väljer du i rutnätet den befintliga databasen för **Global**-typ och väljer sedan **Öppna**. Om du uppmanas att bevilja behörighet att ansluta till Regulatory Configuration Service följer du instruktionerna för auktorisering.
+4. På sidan **Konfigurationsdatabas** i konfigurationsträdet i vänster fönster, välj den **Peppol-försäljningsfaktura**-formatkonfiguration.
 5. På snabbfliken **Versioner** välj version **32.6.7** av den valda konfigurationen av ER-format som har släppts för att stödja kundens elektroniska fakturor i PEPPOL BIS 3-format. Mer information finns i [KB4490320](https://support.microsoft.com/help/4490320/an-update-for-european-union-to-support-export-of-customers-electronic).
 6. Välj **Importera** för att hämta den valda versionen från den globala databasen till den aktuella Finance-instansen.
 
@@ -596,13 +595,13 @@ Status för version 206.2 ändras från **utkast** till **slutfört** och versio
     ![Konfliktmeddelandet för basera om på sidan konfigurationer](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
 
 5. I åtgärdsfönstret, välj **Designer** och välj sedan **Kundfaktura** i listan över mappningar.
-6. För varje konflikt med ombasering, välj **Bibehåll eget värde** , eftersom du måste behålla versionsnumret för din anpassade datamodell för varje komponent som har nämnts.
+6. För varje konflikt med ombasering, välj **Bibehåll eget värde**, eftersom du måste behålla versionsnumret för din anpassade datamodell för varje komponent som har nämnts.
 
     ![Konflikter för ombasering på sidan för modellmappningsdesigner](./media/er-quick-start3-rebase-conflicts-model-mapping2.png)
 
 7. Välj **Spara** och stäng sedan sidan **Modellmappningsdesigner**.
 8. I listan över mappningar, välj **projektfaktura**.
-9. För varje konflikt med ombasering, välj **Bibehåll eget värde** , eftersom du måste behålla versionsnumret för din anpassade datamodell för varje komponent som har nämnts.
+9. För varje konflikt med ombasering, välj **Bibehåll eget värde**, eftersom du måste behålla versionsnumret för din anpassade datamodell för varje komponent som har nämnts.
 10. Välj **Spara** och stäng sedan sidan **Modellmappning**.
 
     > [!NOTE]
@@ -626,10 +625,10 @@ Status för version 206.132.2 ändras från **utkast** till **slutfört** och ve
     Lägg märke till att vissa konflikter för ombasering upptäcktes. Du måste nu lösa konflikterna manuellt.
 
 5. Klicka på **Designer** i åtgärdsfönstret.
-6. För varje konflikt med ombasering, välj **Bibehåll eget värde** , eftersom du måste behålla versionsnumret för din anpassade datamodell för varje komponent som har nämnts.
+6. För varje konflikt med ombasering, välj **Bibehåll eget värde**, eftersom du måste behålla versionsnumret för din anpassade datamodell för varje komponent som har nämnts.
 7. Välj **Spara**.
 8. På fliken **Mappning** välj datakällan **Faktura** av typen **Modell** och välj **Redigera**.
-9. I fältet **Version** , välj version **2** av din anpassade datamodell och sedan **OK**.
+9. I fältet **Version**, välj version **2** av din anpassade datamodell och sedan **OK**.
 10. Välj **Spara**.
 
     > [!NOTE]

@@ -3,24 +3,23 @@ title: Översikt över jobb för import och export av data
 description: Använda arbetsytan Datahantering för att skapa och hantera dataimport- och dataexportjobb.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 3af49d9355f37e0016f491ed37050f75bbc65d72
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278908"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684070"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Översikt över jobb för import och export av data
 
@@ -130,7 +129,7 @@ Ett jobb kan skyddas med roller, användare och juridisk person samtidigt.
 Du kan köra ett jobb en gång genom att välja knappen **Importera** eller **Exportera** när du har definierat jobbet. Välj **Skapa återkommande datajobb** för att skapa ett återkommande jobb.
 
 > [!NOTE]
-> Ett import- eller exportjobb kan köras asynkront genom att välja knappen **importera** eller **exportera**. Köra asynkrona använder asynkrona ramverk som skiljer sig från batchramverket. men liksom batchramverket, kan asynkrona ramverk också genomgå begränsning och därmed körs kanske inte jobbet omedelbart. Jobb kan även köras synkront genom att markera **importera nu** eller **exportera nu**. Det här jobbet startar omedelbart och är användbart om asynkrona eller en batch inte startas på grund av begränsning. Jobb kan också köras i ett batchjobb genom att välja alternativet **kör i batch**. Batchresurser är föremål för begränsning, så batchjobbet kanske inte startar omedelbart. Asynkrona alternativet är användbart när användare interagerar direkt med användargränssnittet och inte privilegierade användare att förstå batch-tidsplanering. Att använda en batch är ett alternativ om stora volymer måste importeras eller exporteras. Batchjobb kan planeras på en viss batchgrupp som ger mer kontroll ur ett belastningsutjämningsperspektiv. Om asynkrona och batch både är under begränsning på grund av hög resursanvändning på systemet, kan den synkrona versionen av import och export användas som en omedelbar lösning. Det synkrona alternativet startar omedelbart och blockerar användargränssnittet eftersom det körs synkront. Webbläsarfönstret måste vara öppet när synkrona åtgärder pågår.
+> Ett import- eller exportjobb kan köras genom att välja knappen **Importera** eller **Exportera**. Då schemaläggs ett batchjobb så att det bara körs en gång. Jobbet kanske inte körs direkt om batchtjänsten begränsas på grund av beläggning på batchtjänsten. Jobb kan även köras synkront genom att markera **importera nu** eller **exportera nu**. Det här jobbet startar omedelbart och är användbart om batchen inte startas på grund av begränsning. Jobben kan också schemaläggas att köras vid senare tillfälle. Detta gör du genom att välja alternativet **Kör i batch**. Batchresurser är föremål för begränsning, så batchjobbet kanske inte startar omedelbart. Det rekommenderade alternativet är att använda batch eftersom det också kommer att hjälpa till att importera eller exportera stora datavolymer. Batchjobb kan planeras på en viss batchgrupp som ger mer kontroll ur ett belastningsutjämningsperspektiv.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Validera att jobbet har körts som förväntat
 Jobbhistoriken blir tillgänglig för felsökning och undersökning för såväl import- som exportjobb. Historiska jobbkörningar ordnas efter tidsintervall.
@@ -195,7 +194,7 @@ Rensningsfunktionen för jobbhistoriken i datahantering måste användas för at
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-Funktionen måste aktiveras i funktionshantering och du kan få åtkomst till den från **Datahantering \> Rensning av jobbhistorik**.
+Funktionen **Rensning av körningshistorik** måste aktiveras i funktionshantering och du kan få åtkomst till den från **Datahantering \> Rensning av jobbhistorik**.
 
 ### <a name="scheduling-parameters"></a>Planeringsparametrar
 
@@ -211,3 +210,36 @@ När du schemalägger rensningsprocessen måste följande parametrar anges för 
 
 > [!NOTE]
 > Om posterna i mellanlagringsplatserna inte rensas fullständigt bör du kontrollera att rensningsjobbet är schemalagt att köra i upprepning. Som förklaras ovan kommer jobbet att bara rensa så många körnings-ID som möjligt inom de maximalt angivna timmarna i alla rensningskörningar. Jobbet måste vara schemalagt för att kunna köras regelbundet för att alla återstående uppsamlingsfiler ska kunna rensas.
+
+## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Rensning och arkivering av jobbhistorik (finns för förhandsgranskning i plattformsuppdatering 39 eller version 10.0.15)
+Funktionen rensning och arkivering av jobbhistorik ersätter de tidigare versionerna av rensningsfunktion. Det här avsnittet innehåller en beskrivning av de nya funktionerna.
+
+En av de viktigaste ändringarna i rensningsfunktionen är användning av systembatchjobb för att rensa historiken. Med systembatchjobb kan Finance and Operations-appar automatiskt schemaläggas och köras så snart systemet är klart. Du behöver inte längre tidsplanera batchjobbet manuellt. I det här standardkörnings läget körs batchjobbet varje timme med början vid 12 midnatt och behåller körningshistoriken för de senaste sju dagarna. Den rensade historiken arkiveras för framtida hämtning.
+
+> [!NOTE]
+> Eftersom den här funktionen är i förhandsversion kommer inte systembatchjobb att radera någon körningshistorik innan den aktiveras via DMFEnableExecutionHistoryCleanupSystemJob. När funktionen är allmänt tillgänglig i en senare version, krävs inte den här förhandsversionen och systembatchjobbet startar och arkiveras när systemet är klart, baserat på det definierade schemat enligt beskrivningen ovan. 
+
+> [!NOTE]
+> I en senare version kommer tidigare versioner av rensningsfunktionen att tas bort från Finance and Operations-appar.
+
+Den andra ändringen i rensningsprocessen är arkiveringen av den rensade körningshistoriken. Rensningsjobbet kommer att arkivera de raderade posterna till den blob-lagring som DIXF använder för vanliga integrationer. Den arkiverade filen kommer att vara i DIXF-paketformat och den kommer att vara tillgänglig i blobben för hämtning i sju dagar. Standardlivslängden på sju dagar för den arkiverade filen kan ändras i parametrarna till maximalt 90 dagar.
+
+### <a name="changing-the-default-settings"></a>Ändra standardinställningarna
+Den här funktionen är för närvarande i förhandsversion och måste uttryckligen aktiveras på ett sätt som aktiverar DMFEnableExecutionHistoryCleanupSystemJob. Funktionen för rensning av mellanlagring måste också aktiveras i funktionshanteringen.
+
+Om du vill ändra standardinställningen för livslängd för den arkiverade filen ska du gå till arbetsytan för datahantering och välja **Rensning av jobbhistorik**. Ange **Dagar att behålla paketet i blobben** som ett värde mellan 7 och 90 (inklusive). Detta kommer att börja gälla för de arkiv som skapas efter att ändringen gjorts.
+
+### <a name="downloading-the-archived-package"></a>Hämta det arkiverade paketet
+Den här funktionen är för närvarande i förhandsversion och måste uttryckligen aktiveras på ett sätt som aktiverar DMFEnableExecutionHistoryCleanupSystemJob. Funktionen för rensning av mellanlagring måste också aktiveras i funktionshanteringen.
+
+För att hämta den arkiverade körningshistoriken ska du gå till arbetsytan för datahanterings och välja **Rensning av jobbhistorik**. Välj **Historik för säkerhetskopiering av paket** för att öppna formuläret historik. I det här formuläret visas en lista med alla arkiverade paket. Du kan välja och hämta ett arkiv genom att välja **Hämta paket**. Det hämtade paketet kommer att vara i DIXF-paketformat och innehålla följande filer:
+
+-   Registerfilen för entitetens mellanlagring
+-   DMFDEFINITIONGROUPEXECUTION
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+-   DMFEXECUTION
+-   DMFSTAGINGEXECUTIONERRORS
+-   DMFSTAGINGLOG
+-   DMFSTAGINGLOGDETAILS
+-   DMFSTAGINGVALIDATIONLOG
+

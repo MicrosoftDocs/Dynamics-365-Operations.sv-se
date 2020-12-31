@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 33d3f3773fdba4b704deeca48874b10958e2ea4e
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143325"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684292"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Skapa erforderliga konfigurationer för att importera data från en extern fil
 
@@ -98,11 +97,11 @@ Stegen i den här underaktiviteten visar hur en ny konfiguration av formatet kan
 
     Observera att det utformade formatet här presenteras som en datakällekomponent.  
 
-6. Expandera format: Record\*settlement: XML Element 1..1 (settlement): Record i trädet.
-7. Expandera format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list i trädet.
-8. Expandera format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record i trädet.
-9. Expandera format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record i trädet.
-10. Välj format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record i trädet.
+6. Expandera `format: Record\*settlement: XML Element 1..1 (settlement): Record` i trädet.
+7. Expandera `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list` i trädet.
+8. Expandera `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record` i trädet.
+9. Expandera `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record` i trädet.
+10. Välj `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record` i trädet.
 
     Observera att presentationen av obligatoriska och valfria formatelement varierar i den fördefinierade datakällekomponenten "Formatera".  
 11. Expandera "Transactions: Record list= format.settlement.'$enumerated'" i trädet.
@@ -237,15 +236,15 @@ Kör denna formatmappning i testsyfte. Använd filen 1099entries.xml som du tidi
 19. Stäng sidan.
 20. Klicka på Redigera.
 
-    Om du har installerat snabbkorrigeringen "KB 4012871 Stöd för TYS modellmappningar i separata konfigurationer med möjlighet att ange olika typer av krav vid tillämpning av dem i olika versioner av Dynamics 365 Finance” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), kör då nästa steg "Aktivera flaggan 'Standard för modellmappning'" för angiven formatkonfiguration. Hoppa annars över nästa steg.  
+    Om du har installerat snabbkorrigeringen "KB 4012871 Stöd för TYS modellmappningar i separata konfigurationer med möjlighet att ange olika typer av krav vid tillämpning av dem i olika versioner av Dynamics 365 Finance" ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)) kör då nästa steg "Aktivera flaggan Standard för modellmappning" för angiven formatkonfiguration. Hoppa annars över nästa steg.  
 
-21. Välj Ja i fältet Standardvärde för modellmappning.
+21. Välj Ja i fältet Standard för modellmappning.
 22. Välj "Betalningsmodell 1099" i trädet.
 23. Klicka på Designer.
 24. Klicka på Mappa modell till datakälla.
 25. Klicka på Kör.
 
-    Om du har installerat snabbkorrigeringen "KB 4012871 Stöd för TYS modellmappningar i separata konfigurationer med möjlighet att ange olika typer av krav vid tillämpning av dem i olika versioner av (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), välj då föredragen modellmappning i sökfältet. Om du ännu inte har installerat snabbkorrigeringen än, hoppa då vidare till nästa steg eftersom det förvalda formatets konfigurationsdefinition redan har valt mappningen.  
+    Om du har installerat snabbkorrigeringen "KB 4012871 Stöd för TYS modellmappningar i separata konfigurationer med möjlighet att ange olika typer av krav vid tillämpning av dem i olika versioner av ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)) ska du välja föredragen modellmappning i sökfältet. Om du ännu inte har installerat snabbkorrigeringen än, hoppa då vidare till nästa steg eftersom det förvalda formatets konfigurationsdefinition redan har valt mappningen.  
     
     Om du inte har installerat snabbkorrigeringen KB 4012871, observera då att dialogrutan innehåller en ytterligare modellmappningsfråga som används för att tolka den fil som du importerar. Datan postas sedan från dialogrutan till datamodellen. För närvarande kan du välja vilken formatmappning som måste användas beroende på den typ av fil som du tänker importera.  
     

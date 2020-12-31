@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ede88bc1767304a86a86ec27365db9403c5a951d
-ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
+ms.openlocfilehash: 7cd0d8e7aa9595e705416798772f52956ef609da
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3678258"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680252"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Skapa en ny ER-lösning för att skriva ut en egen rapport
 
@@ -142,10 +141,10 @@ Som användare i rollen Utvecklare för elektronisk rapportering måste du konfi
 
 ### <a name="configure-er-parameters"></a><a name="ConfigureParameters"></a>Konfigurera ER-parametrar
 
-1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
-2. På arbetsytan **Elektronisk rapportering** väljer du **Elektroniska rapporteringsparametrar**.
-3. På sidan **parametrar för elektronisk rapportering** på fliken **allmänt** anger du alternativet till **aktivera designläge** till **Ja**.
-4. Ange följande parametrar på fliken **Bilagor** :
+1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
+2. På arbetsytan **Elektronisk rprogramortering** väljer du **Elektroniska rprogramorteringsparametrar**.
+3. På sidan **parametrar för elektronisk rapportering** på fliken **allmänna** anger du alternativet till **aktivera designläge** till **Ja**.
+4. Ange följande parametrar på fliken **Bilagor**:
 
     - Ange fältet **Konfigurationer** till **Fil** för **USMF**-företaget.
     - Ange **Jobbarkiv**, **Tillfälliga**, **Baslinje** och **Andra** till **Fil**.
@@ -161,28 +160,28 @@ Varje ER-konfiguration markeras som ägd av en ER-konfigurationsleverantör. Dä
 
 #### <a name="review-the-list-of-er-configuration-providers"></a><a name="ReviewProvidersList"></a>Granska listan med ER-konfigurationsleverantörer
 
-1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
+1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. I arbetsytan **elektronisk rapportering** i avsnittet **Relaterade länkar** väljer du **Konfigurationsleverantörer**.
 3. På sidan **Konfigurationsleverantörer** har varje konfigurationsleverantörspost ett unikt namn och en URL. Granska innehållet på den här sidan. Om det redan finns en post för **Litware, Inc.** (`https://www.litware.com`) hoppar du över nästa procedur [Lägg till en ny ER-konfigurationsleverantör](#ActivateProvider).
 
 #### <a name="add-a-new-er-configuration-provider"></a><a name="AddProvider"></a>Lägg till en ny ER-konfigurationsleverantör
 
 1. Välj **Konfigurationsleverantörer** på sidan **Leveranssätt**.
-2. I fältet **Namn** anger du  **Litware, Inc.**.
-3. I fältet **Internetadress** anger du  `https://www.litware.com`.
-4. Välj  **Spara**.
+2. I fältet **Namn** anger du **Litware, Inc.**.
+3. I fältet **Internetadress** anger du `https://www.litware.com`.
+4. Välj **Spara**.
 
 #### <a name="activate-an-er-configuration-provider"></a><a name="ActivateAddedProvider"></a>Aktivera en ER-konfigurationsleverantör
 
-1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
+1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. I arbetsytan **Elektronisk rapportering** väljer du **Litware, Inc.** för din konfigurationsleverantör.
-3. Ställ in  **Ange aktiva**.
+3. Ställ in **Ange aktiva**.
 
 Mer information om ER-konfigurationsleverantörer finns i [Skapa konfigurationsleverantörer och markera dem som aktiva](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="design-a-domain-specific-data-model"></a><a name="DesignModel"></a>Ange urvalskriterier i dialogrutan för frågeformulär
 
-Du måste skapa en ny ER-konfiguration som innehåller komponenten [datamodell](general-electronic-reporting.md#data-model-and-model-mapping-components) för affärsdomänen **enkät**. Den här datamodellen kommer senare att användas som datakälla när du designar ett ER-format för att generera **enkät**-rapporten.
+Du måste skapa en ny ER-konfiguration som innehåller komponenten [datamodell](general-electronic-reporting.md#data-model-and-model-mapping-components) för affärsdomänen **Enkät**. Den här datamodellen kommer senare att användas som datakälla när du designar ett ER-format för att generera **enkät**-rapporten.
 
 Genom att slutföra stegen i avsnittet [Importera en ny konfiguration för datamodell](#ImportDataModel) kan du importera den datamodell som krävs från den angivna XML-filen. Du kan också slutföra stegen i avsnittet [Skapa en ny konfiguration för datamodell](#DesignDataModel) om du vill designa den här datamodellen från början.
 
@@ -650,7 +649,7 @@ Du måste ange en databindning för ett formatelement som används för att fyll
 
     1. I fältet **Etikett-ID** anger du **ReportTitle**.
     2. I fältet **text på standardspråk** anger du **enkätrapport**.
-    3. Välj **Översätt**och välj sedan **Spara**.
+    3. Välj **Översätt** och välj sedan **Spara**.
     4. Välj **Översätt** om du vill stänga dialogrutan **textöversättning**.
 
 5. Stäng formelredigeraren.
@@ -811,13 +810,13 @@ Status för version 1.1 av denna konfiguration ändras från **utkast** till **s
 
 Som användare i rollen systemadministratör måste du utveckla en ny logik så att det konfigurerade ER-formatet kan anropas från programmets användargränssnitt för att skapa din anpassade rapport. För närvarande erbjuder ER inte någon möjlighet att konfigurera den här typen av logik. Därför krävs en del konstruktionsarbete. 
 
-För att utveckla den nya logiken måste du distribuera en topologi som stöder kontinuerlig version. Mer information finns i [distribuera topologier som stöder kontinuerlig automatisering av bygga och testa](../perf-test/continuous-build-test-automation.md). Du måste också ha tillgång till utvecklingsmiljön för den här topologin. Mer information om tillgängliga ER API:er finns i [ER-ramverks-API](er-apis-app73.md).
+För att utveckla den nya logiken måste du distribuera en topologi som stöder kontinuerlig version. Mer information finns i [distribuera topologier som stöder kontinuerlig automatisering av bygga och testa](../perf-test/continuous-build-test-automation.md). Du måste också ha tillgång till utvecklingsmiljön för den här topologin. Mer information om tillgängliga ER API:er finns i [ER-ramverks-API](er-apis-app73.md).
 
 ### <a name="modify-source-code"></a><a name="ModifySourceCode"></a>Modifiera källkod
 
 #### <a name="add-a-data-contract-class"></a><a name="DataContractClass"></a>Lägga till en datakontraktklass
 
-Lägg till den nya klassen**QuestionnairesErReportContract** till ditt Microsoft Visual Studio-projekt och skriv kod som anger det datakontrakt som ska användas för att köra det konfigurerade ER-formatet.
+Lägg till den nya klassen **QuestionnairesErReportContract** till ditt Microsoft Visual Studio-projekt och skriv kod som anger det datakontrakt som ska användas för att köra det konfigurerade ER-formatet.
 
 ```xpp
 /// <summary>
@@ -1060,7 +1059,7 @@ Bygg ditt projekt för att göra ett nytt menyalternativ tillgängligt för anv�
 5. Bekräfta filtreringsåtgärden genom att välja **OK**.
 6. Klicka på **OK** om du vill köra rapporten.
 
-    ![Ange urvalskriterier i dialogrutan för elektronisk rapport](./media/er-quick-start1-report-run-dialog-page.png)
+    ![Ange urvalskriterier i dialogrutan för Elektronisk rapport](./media/er-quick-start1-report-run-dialog-page.png)
 
 7. Granska den genererade rapporten.
 
@@ -1179,7 +1178,7 @@ Status för version 1.2 av denna konfiguration ändras från **utkast** till **s
 
 Observera att den genererade rapportens sidfot innehåller namnet på det ER-format som användes för att generera den.
 
-![Generera rapporten i Excel-format](./media/er-quick-start1-report4.png)
+![Genererad rapport i Excel-format](./media/er-quick-start1-report4.png)
 
 ### <a name="run-a-format-from-er"></a><a name="RunFormatFromER3"></a>Kör ett format från ER
 

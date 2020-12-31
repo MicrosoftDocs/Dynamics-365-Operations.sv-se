@@ -11,31 +11,30 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 28bdd02c25db27536a489f9e8ab2a91a5ca0f09c
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.openlocfilehash: f7c6cb99a6c5cc6fb92ce52041296af2d0c6722e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138870"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679496"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Tillåt användare att ställa in en ER-formatreferens som frågar ett format från den globala databasen
 
 [!include [banner](../includes/banner.md)]
 
-Du kan använda [ramverket för Elektronisk rapportering](general-electronic-reporting.md) (ER) för att konfigurera [format](general-electronic-reporting.md#FormatComponentOutbound) för utgående dokument i enlighet med de lagliga kraven i olika länder/regioner. Du kan också använda ER-ramverket för att konfigurerra [format](general-electronic-reporting.md#FormatComponentInbound) för att analysera inkommande dokument och använda informationen från dessa dokument för att lägga till eller uppdatera applikationsdata. Varje format kan användas i din Dynamics 365 Finance-instans för att hantera inkommande eller utgående affärsdokument som en del av en viss affärsprocess. 
+Du kan använda [ramverket för Elektronisk rapportering](general-electronic-reporting.md) (ER) för att konfigurera [format](general-electronic-reporting.md#FormatComponentOutbound) för utgående dokument i enlighet med de lagliga kraven i olika länder/regioner. Du kan också använda ER-ramverket för att konfigurerra [format](general-electronic-reporting.md#FormatComponentInbound) för att analysera inkommande dokument och använda informationen från dessa dokument för att lägga till eller uppdatera applikationsdata. Varje format kan användas i din Dynamics 365 Finance-instans för att hantera inkommande eller utgående affärsdokument som en del av en viss affärsprocess.
 
 Vanligtvis måste du ange vad ER-format som ska användas i en viss affärsprocess. Det gör du genom att välja ett enskilt ER-format i ett uppslagsfält som är konfigurerat som en del av affärsprocessens specifika parametrar. Dessa uppslagsfält implementeras vanligtvis med hjälp av lämplig API för ER-ramverk. Mer information finns i [ER-ramverkets API-kod för att visa en formatmappningssökning](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
 När du till exempel konfigurerar [parametrar för utländsk handel](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters) måste du ställa in referenserna för enskilda ER-format som ska användas för att generera Intrastat-deklarationen och Intrastat-deklarationen för kontroll. Skärmdumparna nedan visar hur uppslagsfältet för ER-format ser ut på sidan **Utländska handelsparametrar**.
 
-Om den aktuella Finance-instansen inte innehåller några affärsprocessrelaterade ER-format för Intrastat, är det här uppslags fältet tomt.
+Om den aktuella Finance-instansen inte innehåller några affärsprocessrelaterade ER-format för Intrastat, är det här uppslagsfältet tomt.
 
 [![Sidan Utländska handelsparametrar](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
 
@@ -55,13 +54,13 @@ När du väljer ett ER-format på snabbfliken **importera från den globala data
 
 [![Sidan Utländska handelsparametrar](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
-Om importen sedan har slutförts lagras referensen till det importerade ER-formatet i sökfältet. Observera att när du öppnar GR för första gången måste du följa länken som anges för att registrera dig för [Regulatory Configuration Service](https://aka.ms/rcs) (RCS) som används för att hantera åtkomsten till GR.
+Om importen sedan har slutförts lagras referensen till det importerade ER-formatet i sökfältet. När du öppnar GR för första gången måste du följa länken som anges för att registrera dig för [Regulatory Configuration Service](https://aka.ms/rcs) (RCS) som används för att hantera åtkomsten till GR.
 
 [![Sidan Utländska handelsparametrar](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Som standard innehåller snabbfliken **importera från global databas** listan med ER-format från den tillfälliga lagring som skapas automatiskt, baserat på innehållet i GR för prestandaförbättringar. Detta inträffar när snabbfliken **importera från global databas** öppnas första gången, vilket kan ta flera sekunder.
 
-Om du inte ser det nödvändiga ER-formatet på **Importera från global databas** men du är säker på att detta ER-format lagras i GR, väljer, du alternativet **Synkronisera**. Detta uppdaterar den tillfälliga lagringen och synkroniserar den med det aktuella innehållet i GR.
+Om du inte ser det nödvändiga ER-formatet på **Importera från global databas** men du är säker på att detta ER-format lagras i GR, väljer, du alternativet **Synkronisera**. Detta alternativ uppdaterar den tillfälliga lagringen och synkroniserar den med det aktuella innehållet i GR.
 
 ## <a name="feature-activation"></a>Funktionsaktivering
 
@@ -73,7 +72,7 @@ Tillgängligheten för den här funktionen styrs av den **utökade sökningen ef
 
 Behörigheten **Underhåll konfigurationsdatabaser** (**ERMaintainSolutionRepositories**) kontrollerar åtkomst till GR för en användare som öppnar ER-formatsökning med aktiverade snabbfliken **Importera från global databas**. Om du vill att användarna ska kunna komma åt innehållet i ER-formatsökningen måste du ändra säkerhetsinställningarna genom att bevilja privilegium **ERMaintainSolutionRepositories** till användarna direkt eller använda redan tilldelade roller och uppgifter.
 
-Följande skärmbild visar hur det här privilegiet kan beviljas användare som tilldelats rollen **revisor**. Med den här rollen kan användare konfigurera utländska handelsparametrar och ställa in referenser till ER-format i fälten **Filformatmappning** och **Rapportformatmappning** på sidan **utländska handelsparametrar**.
+Följande skärmbild visar hur det här privilegiet kan beviljas användare som tilldelats rollen **revisor**. Med den här rollen tillåts användare konfigurera utländska handelsparametrar och ställa in referenser till ER-format i fälten **Filformatmappning** och **Rapportformatmappning** på sidan **Utländska handelsparametrar**.
 
 [![Sidan Säkerhetskonfiguration](./media/ER-ExtLookup-SecuritySetting.png)](./media/ER-ExtLookup-SecuritySetting.png)
 

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8ff3b419caafec626497c65ea18ca24ca95cb5d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 4e59e9f2dd5a0fa6d5955e3d93d25759a478ede7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143063"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684437"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Hantera ER-modellmappning i separata ER-konfigurationer
 
@@ -31,7 +30,7 @@ I följande steg förklaras hur en användare som är tilldelad rollen som syste
 Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här uppgiftsguiden med valfri företagsdatauppsättning. Funktionen för den här uppgiften är tillgänglig om du har installerat någon av följande snabbkorrigeringar: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 för Dynamics AX 7.0 version eller https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 för Dynamics 365 for Operations version.
 
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
-    * Kontrollera att konfigurationsleverantören för provföretaget "Litware, Inc." är markerad som aktiv och tillgänglig. Om du inte ser den här konfigurationsleverantören måste du först slutföra stegen i uppgiftsguiden Skapa en konfigurationsleverantör och välj den som aktiv.   
+    * Kontrollera att konfigurationsleverantören för provföretaget "Litware, Inc." är markerad som aktiv och tillgänglig. Om du inte ser den här konfigurationsleverantören måste du först slutföra stegen i uppgiftsguiden Skapa en konfigurationsleverantör och välja den som aktiv.   
 
 ## <a name="add-a-new-er-model-configuration"></a>Lägg till en ny konfiguration för ER-modell
 1. Klicka på Reporting configurations.
@@ -66,7 +65,7 @@ Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här upp
     * Exempelmappning  
 4. Klicka på Skapa konfiguration.
 5. Expandera avsnittet Förutsättningar.
-    * Observera att gruppen för implementeringsförutsättningar har lagts till automatiskt. Gruppen innehåller den nödvändiga komponent som refererar till den överordnade datamodellkonfigurationen och markeras som Implementering. Detta innebär den här modellmappningskonfigurationen, Sample mapping, tar hänsyn till implementeringen av datamodellen, Sample data model. Den här komponenten tvingar därför ER att hämta modellmappningskonfigurationen, Sample mapping, från en ER-databas när modellkonfigurationen, Sample data model, hämtas.   
+    * Gruppen för implementeringsförutsättningar har lagts till automatiskt. Gruppen innehåller den nödvändiga komponent som refererar till den överordnade datamodellkonfigurationen och markeras som Implementering. Detta innebär den här Sample-mapping av modellmappningskonfiguration tar hänsyn till implementering av datamodellen, Sample data model. Den här komponenten tvingar därför ER att hämta modellmappningskonfigurationen, Sample mapping, från en ER-databas när modellkonfigurationen, Sample data model, hämtas.   
 6. Klicka på Designer.
     * Observera att den skapade modellmappningskonfigurationen innehåller en tom ny mappning med samma namn som den skapade konfigurationen. När en vald överordnad modellkonfiguration innehåller modellmappningar kopieras de till en ny modellmappningskonfiguration.   
 7. Klicka på Designer.
@@ -112,7 +111,7 @@ Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här upp
 16. Klicka på Kör.
     * Klicka på Kör på snabbfliken Versioner.  
 17. Klicka på OK.
-    * Granska utdata som innehåller namnet på det företaget där användaren som kör den här formatkonfigurationen är inloggad i. Observera att den skapade konfigurationen för modellmappning används av denna formatkonfiguration eftersom det bara finns en konfigurationsnyckel som innehåller nödvändiga modellmappningar.   
+    * Granska utdata som innehåller namnet på det företaget där användaren som kör den här formatkonfigurationen är inloggad i. Den skapade konfigurationen för modellmappning används av denna formatkonfiguration eftersom det bara finns en konfigurationsnyckel som innehåller nödvändiga modellmappningar.   
 
 ## <a name="add-alternative-er-model-mapping-configuration"></a>Lägg till en alternativ konfiguration för ER-modellmappning
 1. Välj "Sample data model" i trädet.
@@ -150,15 +149,15 @@ Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här upp
 28. Stäng sidan.
 29. Välj Yes i fältet Run Draft.
 
-## <a name="use-an-existing-er-model-mapping-configuration"></a>Använd en befintlig konfiguration för ER-mappning
+## <a name="use-an-existing-er-model-mapping-configuration"></a>Använd en befintlig konfiguration för ER-modellmappning
 1. Välj Sample data model\Sample format i trädet.
 2. Klicka på Kör.
-    * Observera att den valda utkastversionen av ER-formatkonfigurationen inte kan köras eftersom det finns mer än en modellmappningskonfiguration för den odefinierade datamodellen som har valts som datakälla för ER-formatet som körs.   
+    * Den valda utkastversionen av ER-formatkonfigurationen inte kan köras eftersom det finns mer än en modellmappningskonfiguration för den odefinierade datamodellen som har valts som datakälla för ER-formatet som körs.   
     * Härnäst ska du definiera den alternativa modellmappningskonfigurationen som den varifrån modellmappningar ska användas som datakällor för ER-formatet som körs.   
 3. Välj Sample data model\Sample mapping (alternative) i trädet.
-4. Välj Ja i fältet Standardvärde för modellmappning.
+4. Välj Ja i fältet Standard för modellmappning.
 5. Välj Sample data model\Sample format i trädet.
 6. Klicka på Kör.
 7. Klicka på OK.
-    * Observera att standardmodellmappningskonfigurationen används i den här formatkonfigurationen för att skapa det elektroniska dokumentet (de utdata som skapas innehåller företagskoden).  
+    * Standardmodellmappningskonfigurationen används i den här formatkonfigurationen för att generera det elektroniska dokumentet (de utdata som skapas innehåller företagskoden).  
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner, ERLookupDesigner, ERComponentLookupStructureEditing
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: d32da76ee46ff5293ae8fefb16d251564b6be21a
-ms.sourcegitcommit: d6196d83c7b9166ddb4fe43a91e6bd0ad9da2099
+ms.openlocfilehash: 0ed1442403ae82dfc820212e3e235737f37f21a4
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "2694256"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679736"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Konfigurera ER-format för användning av parametrar som anges per juridisk person
 
@@ -63,7 +62,7 @@ Logga sedan in på RCS-instansen.
 
 I det här exemplet ska du skapa en konfiguration för exempelföretaget, Litware. Innan du kan slutföra stegen i den här proceduren måste du först slutföra stegen i avsnittet [Skapa en konfigurationsleverantör och markera den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md) i RCS.
 
-1.  Välj **elektronisk rapportering**på standardinstrumentpanelen.
+1.  Välj **elektronisk rapportering** på standardinstrumentpanelen.
 2.  Välj **rapporteringskonfigurationer**.
 3.  Importera de ER-konfigurationer du laddade ned innan till RCS i följande ordning: datamodell, metadata, modellmappning och format. Följ dessa steg för varje ER-konfiguration:
 

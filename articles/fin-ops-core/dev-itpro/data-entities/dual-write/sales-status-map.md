@@ -19,11 +19,11 @@ ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
 ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997684"
+ms.locfileid: "4457405"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>Ställ in mappningen för fälten för försäljningsorderstatus
 
@@ -44,7 +44,7 @@ I Supply Chain Management visar två fält status för försäljningsordern. De 
 - Fakturerat
 - Avbröts
 
-**Dokumentstatus** uppräkningen anger det senaste dokument som skapades för ordern. Om t.ex. en order är bekräftad är dokumentet en bekräftelse på försäljningsorder. Om en försäljningsorder är delvis fakturerad och den återstående raden bekräftas, kommer dokumentstatusen att ha kvar **faktura** , eftersom fakturan genereras senare i processen.
+**Dokumentstatus** uppräkningen anger det senaste dokument som skapades för ordern. Om t.ex. en order är bekräftad är dokumentet en bekräftelse på försäljningsorder. Om en försäljningsorder är delvis fakturerad och den återstående raden bekräftas, kommer dokumentstatusen att ha kvar **faktura**, eftersom fakturan genereras senare i processen.
 
 **Dokumentstatus** uppräkningen har följande värden:
 
@@ -129,7 +129,7 @@ Så här aktiverar du attribut **IsSOPIntegrationEnabled** följ dessa steg.
 
 Så här aktiverar du attribut **isIntegrationUser** följ dessa steg.
 
-1. I Sales, gå till **Inställning \> Anpassning \> Anpassa systemet** , välj **Användarentitet** och öppna sedan **Formulär \> Användare**.
+1. I Sales, gå till **Inställning \> Anpassning \> Anpassa systemet**, välj **Användarentitet** och öppna sedan **Formulär \> Användare**.
 
     ![Öppna användarformuläret](media/sales-map-user.png)
 

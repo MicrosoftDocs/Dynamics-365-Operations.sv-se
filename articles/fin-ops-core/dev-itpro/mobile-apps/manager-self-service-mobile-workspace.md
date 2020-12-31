@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations, Human Resources
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: c2ad5f30ed0e69df1769eb0379b5da2865d4ce4f
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 6ac3bf0a6ce20866f749b0c14030b70770e5589c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005619"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680980"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobil arbetsyta för mitt team
 
@@ -84,16 +83,16 @@ Hämta och installera mobilappen Finance and Operations.
 [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>Visa team-medlemmar via arbetsytan för Mitt team
-1.  I mobilappen väljer du arbetsytan **Mitt team**. En lista över team-medlemmar visas. Listan visar också varje enskild team-medlems titel, samt alla eventuella underställda som han eller hon har.
-2.  Välj en teammedlem Sidan **Sammanfattning för teammedlem** visas. Informationen på denna sida innehåller teammedlemmarnas födelsedatum, tjänsteålder, antal tjänsteår, år i aktuell befattning samt kompensationsinformation.
+1.  I mobilappen väljer du arbetsytan **Mitt team**. En lista över team-medlemmar visas. Listan visar också varje enskild teammedlems titel, samt alla eventuella underställda som medlemmen har.
+2.  Välj en teammedlem Sidan **Sammanfattning för teammedlem** visas. Informationen på denna sida innehåller teammedlemmarnas födelsedatum, tjänsteålder, antal tjänsteår, år i den aktuella befattningen samt kompensationsinformation.
 
 ## <a name="view-extended-team-members-by-using-the-my-team-mobile-workspace"></a>Visa utökade teammedlemmar via arbetsytan för Mitt team
-1.  I mobilappen väljer du arbetsytan **Mitt team**. En lista över team-medlemmar visas. Listan visar också varje enskild team-medlems titel, samt alla eventuella underställda som han eller hon har.
+1.  I mobilappen väljer du arbetsytan **Mitt team**. En lista över team-medlemmar visas. Listan visar också varje enskild teammedlems titel, samt alla eventuella underställda som medlemmen har.
 1.  Välj länken **Underställda**. En lista över ditt utökade team visas.
-1.  Välj en teammedlem Sidan **Sammanfattning för teammedlem** visas. Informationen på denna sida innehåller teammedlemmarnas födelsedatum, tjänsteålder, antal tjänsteår, år i aktuell befattning samt kompensationsinformation.
+1.  Välj en teammedlem Sidan **Sammanfattning för teammedlem** visas. Informationen på denna sida innehåller teammedlemmarnas födelsedatum, tjänsteålder, antal tjänsteår, år i den aktuella befattningen samt kompensationsinformation.
 
 ## <a name="send-praise-about-team-members-by-using-the-my-team-mobile-workspace"></a>Skicka beröm om teammedlemmar via arbetsytan för Mitt team
-1.  I mobilappen väljer du arbetsytan **Mitt team**. En lista över team-medlemmar visas. Listan visar också varje enskild team-medlems titel, samt alla eventuella underställda som han eller hon har.
+1.  I mobilappen väljer du arbetsytan **Mitt team**. En lista över team-medlemmar visas. Listan visar också varje enskild teammedlems titel, samt alla eventuella underställda som medlemmen har.
 1.  Välj en teammedlem Sidan **Sammanfattning för teammedlem** visas.
 1.  Välj **Skicka beröm**. 
 1. Ange den berömtext som du vill skicka. 

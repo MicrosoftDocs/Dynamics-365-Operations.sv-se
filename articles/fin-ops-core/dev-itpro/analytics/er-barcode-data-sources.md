@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: c549a476f854ffcf962ffb62e430b459d3445734
-ms.sourcegitcommit: cc78f9bf585082ce65c2ab0b011ff62620fa883d
+ms.openlocfilehash: 3fb754267de1120bc3c086d49cb7c63028183bda
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "4088207"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681434"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Använd streckkodsdatakällor för att generera streckkodsbilder
 
@@ -73,7 +72,7 @@ När du konfigurerar en datakällan **streckkod** kan du definiera särskilda å
 - **Höjd** – Ange streckkodens höjd i bildpunkter. Värdet **0** (noll) anger att standardhöjden används. Innebörden kan variera i olika format.
 - **Marginal** – Ange storleken på streckkodens marginal i bildpunkter. Marginalen är området på varje sida av streckkoden som måste hållas klar (tyst zon). Värdet **0** (noll) anger att standardmarginalen används. Innebörden kan variera i olika format.
 - **Utgående innehåll** – Ställ in värdet på **Ja** för att generera en streckkodsbild som innehåller den kodade informationen som text. Standardvärdet är **Nej**.
-- **Kodning** – anger vilken typ av tecken som ska kodas i den genererade streckkodsbilden. Som standard används **UTF-8** -kodning.
+- **Kodning** – anger vilken typ av tecken som ska kodas i den genererade streckkodsbilden. Som standard används **UTF-8**-kodning.
 
 > [!IMPORTANT]
 > När du lägger till en ny **streckkod** datakälla måste du lägga den under ett annat objekt (behållare) som ett kapslat element.
@@ -106,7 +105,7 @@ Det här exemplet visar hur en användare i rollen **Systemadministratör** elle
 
 I det här exemplet ska du använda den angivna den ER-lösningen som har konfigurerats för att generera betalningschecken. Den här lösningen genererar betalningschecker där det utgående beloppet skrivs både som ett tal och som text. Du kommer att ändra den här ER-lösningen så att checken även innehåller en genererad streckkod där skuldbeloppet är kodat och kan läsas med hjälp av en streckkodsskanner.
 
-Dessa steg kan slutföras i **USMF** -nivå i Microsoft Dynamics 365 Finance.
+Dessa steg kan slutföras i **USMF**-nivå i Microsoft Dynamics 365 Finance.
 
 ### <a name="complete-the-prerequisites"></a><a name="ExamplePrerequisites"></a>Slutför förutsättningarna
 
@@ -139,15 +138,15 @@ Hämta dessutom följande Excel-fil som innehåller den ändrade mallen för den
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. På sidan **Lokaliseringskonfiguration** i avsnittet **Konfigurationer** väljer du panelen **Rapporteringskonfiguration**.
-3. På sidan **konfigurationer** , om konfigurationen **Modell för checkar** inte är tillgänglig i konfigurationsträdet, följ dessa steg för att importera konfigurationen för ER-datamodell:
+3. På sidan **konfigurationer**, om konfigurationen **Modell för checkar** inte är tillgänglig i konfigurationsträdet, följ dessa steg för att importera konfigurationen för ER-datamodell:
 
     1. På Åtgärdsfönster väljer du **växla** \> **läs in från XML-fil**.
-    2. I dialogrutan, välj **Bläddra** , hitta och välj filen **Modell för checkar.xml** och välj sedan **OK**.
+    2. I dialogrutan, välj **Bläddra**, hitta och välj filen **Modell för checkar.xml** och välj sedan **OK**.
 
 4. Om konfigurationen **Checkar utskriftsformat** inte är tillgänglig i konfigurationsträdet, följ dessa steg för att importera ER-formatkonfigurationen:
 
     1. På Åtgärdsfönster väljer du **växla** \> **läs in från XML-fil**.
-    2. I dialogrutan, välj **Bläddra** , hitta och välj filen **Checkar utskriftsformat.xml** och välj sedan **OK**.
+    2. I dialogrutan, välj **Bläddra**, hitta och välj filen **Checkar utskriftsformat.xml** och välj sedan **OK**.
 
 5. I konfigurationsträdet expanderar du **modell för checkar**.
 6. Granska listan över importerade ER-konfigurationer i konfigurationsträdet.
@@ -155,11 +154,11 @@ Hämta dessutom följande Excel-fil som innehåller den ändrade mallen för den
 ### <a name="generate-a-payment-check"></a><a name="ExampleGenerateCheque"></a>Generera en betalningscheck
 
 1. Gå till **Kassa- och bankhantering** \> **Bankkonton** \> **Bankkonton**.
-2. På sidan **Bankkonton** väljer du **USMF OPER** -konto.
+2. På sidan **Bankkonton** väljer du **USMF OPER**-konto.
 3. På sidan bankkontoinformation, på åtgärdsfönstret, fliken **Konfigurera** i **Layout** väljer du **Check**.
 4. På sidan **Checklayout** välj **Redigera**.
 5. På snabbfliken **Allmänt** ställer du in alternativet **Allmänt elektroniskt exportformat** till **Ja**.
-6. I fältet **Konfiguration av exportformat** , välj det ER-format för **Checkar utskriftsformat** som du importerade tidigare.
+6. I fältet **Konfiguration av exportformat**, välj det ER-format för **Checkar utskriftsformat** som du importerade tidigare.
 7. Välj **Testutskrift** i åtgärdsfönstret.
 8. I dialogrutan ställer du in alternativet **Överlåtbart checkformat** till **Ja** och väljer sedan **OK**.
 
@@ -192,8 +191,8 @@ Du måste nu ändra ER-lösningen och sedan [använda](modify-electronic-reporti
     ![Bindning av cellformatelement till datakällor i ER Operations designer](./media/er-barcode-data-source-cells-bound.png)
 
 7. Välj fliken **Format** på sidans högra sida.
-8. I åtgärdsfönstret, välj ellipsen ( **...** ) och sedan **Importera**.
-9. I gruppen **Importera** , välj **Uppdatera från Excel** och välj sedan **Uppdatera mall**.
+8. I åtgärdsfönstret, välj ellipsen (**...**) och sedan **Importera**.
+9. I gruppen **Importera**, välj **Uppdatera från Excel** och välj sedan **Uppdatera mall**.
 10. I dialogrutan, bläddra till filen **Checkmall.xlsx** som har sparats på datorn i dialog rutan, markera den och välj sedan **OK** för att bekräfta att den valda mallen ska användas.
 11. Välj fliken **Mappning** till höger på sidan och väljer sedan **Visa/Dölj** i formatträdrutan till vänster.
 12. Observera att cellelementet **AmountBarcode** har lagts till i formatet. Det här elementet är associerat med elementet **AmountBarcode** som har lagts till i den ändrade Excel-mallen som en platshållare för en streckkodsbild.
@@ -209,9 +208,9 @@ Sedan måste du lägga till en ny datakälla för typen **streckkod**.
 
     ![Välja typ av streckkodsdatakälla](./media/er-barcode-data-source-add.png)
 
-3. I dialogrutan i fältet **Namn** , ange **streckkod**.
-4. I **Streckkodsformat** , välj **Kod 128**.
-5. I fältet **Bredd** , ange **500**.
+3. I dialogrutan i fältet **Namn**, ange **streckkod**.
+4. I **Streckkodsformat**, välj **Kod 128**.
+5. I fältet **Bredd**, ange **500**.
 6. Välj **OK**.
 
     ![Dialogrutan databasegenskaper](./media/er-barcode-data-source-add2.png)
@@ -273,7 +272,7 @@ Utkastversionen av det valda formatet markeras som tillgänglig för användning
 ### <a name="generate-a-payment-check"></a><a name="ExampleGenerateCheque2"></a>Generera en betalningscheck
 
 1. Gå till **Kassa- och bankhantering** \> **Bankkonton** \> **Bankkonton**.
-2. På sidan **Bankkonton** väljer du **USMF OPER** -konto.
+2. På sidan **Bankkonton** väljer du **USMF OPER**-konto.
 3. På sidan bankkontoinformation, på åtgärdsfönstret, fliken **Konfigurera** i **Layout** väljer du **Check**.
 4. På sidan **Checklayout** i åtgärdsrutan, välj **Skriv ut test**.
 5. I dialogrutan ställer du in alternativet **Överlåtbart checkformat** till **Ja**.

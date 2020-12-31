@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERFormatBaselineTable, ERFormatMappingRunLogTable, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: be641e1b2f90f4d19f7ed15e47413c0aa43d5073
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 0a2586afd56eef0f953454ad246ff3647a5b09d1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771454"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681458"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatisera testning med elektronisk rapportering
 
@@ -60,7 +59,7 @@ Funktionella privilegierade användare kan köra tester av användarens acceptan
 Innan du kan slutföra uppgifterna i detta ämne måste du slutföra följande förutsättningar:
 
 - Distribuera en topologi som stöder testautomatisering. Du måste ha tillgång till instansen av denna topologi för rollen **systemadministratör**. Den här topologin måste innehålla de demodata som ska användas i det här exemplet. Mer information finns i [distribuera och använd en miljö som stöder kontinuerlig automatisering av bygga och testa](../perf-test/continuous-build-test-automation.md).
-- Om du vill köra acceptans- och integrationstest automatiskt måste du installera RSAT i den topologi som du använder och konfigurera det på lämpligt sätt. Information om hur du installerar och konfigurerar RSAT och konfigurerar den så att den fungerar med Finance and Operations-appar och Azure DevOps, se [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Var uppmärksam på förutsättningarna för att använda verktyget. Följande illustration visar ett exempel på RSAT-inställningar. Den blå rektangeln innesluter parametrarna som anger åtkomsten till Azure DevOps. Den gröna rektangeln innesluter parametrarna som anger åtkomsten till instansen.
+- Om du vill köra acceptans- och integrationstest automatiskt måste du installera RSAT i den topologi som du använder och konfigurera det på lämpligt sätt. Information om hur du installerar och konfigurerar RSAT och konfigurerar den för att fungera med Finance and Operations och Azure DevOps finns i [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Var uppmärksam på förutsättningarna för att använda verktyget. Följande illustration visar ett exempel på RSAT-inställningar. Den blå rektangeln innesluter parametrarna som anger åtkomsten till Azure DevOps. Den gröna rektangeln innesluter parametrarna som anger åtkomsten till instansen.
 
     ![RSAT-inställningar](media/GER-Configure.png "Skärmbild av dialogrutan RSAT-inställningar")
 
@@ -105,7 +104,7 @@ Innan du kan slutföra uppgifterna i detta ämne måste du slutföra följande f
 
         ![Sidan betalningsjournal](media/GER-APJournal.png "Skärmbild av sidan betalningsjournal")
 
-    3. Välj **rader**och ange en rad med följande information.
+    3. Välj **rader** och ange en rad med följande information.
 
         | Fält               | Exempelvärde   |
         |---------------------|-----------------|
@@ -221,7 +220,7 @@ Som funktionell priviligierad användare kan du registrera dina egna steg för a
 2. Välj **uppgiftsregistrering**.
 3. Välj **Spela upp inspelning**.
 4. Välj **Öppna från datorn**.
-5. Välj **bläddra**och markera den lokalt sparade filen **Förbered\\inspelning.xml**.
+5. Välj **bläddra** och markera den lokalt sparade filen **Förbered\\inspelning.xml**.
 6. Välj **start**.
 7. Fortsätt välja **Spela upp nästa väntande steg** tills alla steg i inspelningen har spelats upp.
 
@@ -247,7 +246,7 @@ Vi rekommenderar att du spelar upp (och redigerar, efter behov) uppgiftsinspelni
 2. Välj **uppgiftsregistrering**.
 3. Välj **Spela upp inspelning**.
 4. Välj **Öppna från datorn**.
-5. Välj **bläddra**och markera den lokalt sparade filen **Bearbeta\\inspelning.xml**.
+5. Välj **bläddra** och markera den lokalt sparade filen **Bearbeta\\inspelning.xml**.
 6. Välj **start**.
 7. Fortsätt välja **Spela upp nästa väntande steg** tills alla steg i inspelningen har spelats upp.
 

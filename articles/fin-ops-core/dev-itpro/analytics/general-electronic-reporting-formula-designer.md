@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14539ed6c00915b7d59a5a3c4870ab6d1a96ad95
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d96fe041fd0ffb292909c1e724068efebe0184b9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002530"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682659"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -51,7 +50,7 @@ Du kan öppna sidan **Formula designer** när du utför någon av följande åtg
 - Definiera villkoren för processtyrningsvalideringarna.
 - Definiera meddelandetexten för processtyrningsvalideringar.
 
-## <a name="Binding"></a>Data bindande
+## <a name="data-binding"></a><a name="Binding"></a>Data bindande
 
 ER-formeldesignern kan användas för att definiera ett uttryck som transformerar data som tagits emot från datakällor så att dessa data kan anges i datakonsumenten vid körning på följande sätt:
 
@@ -69,7 +68,7 @@ Bilden nedan visar hur ett uttryck av den här typen kan användas. I det här e
 
 Vid körning avrundar den designade formeln `ROUND (Intrastat.AmountMST, 2)` värdet av fältet **AmountMST** för varje post i tabellen Intrastat till två decimaler. Därefter skrivs det avrundade värdet in i komponenten **Transaction.InvoicedAmount** i datamodellen **Tax reporting**.
 
-## <a name="Transformation"></a>Data formatering
+## <a name="data-formatting"></a><a name="Transformation"></a>Data formatering
 
 ER-formeldesignern kan användas för att definiera uttryck som formaterar data som tagits emot från datakällor, så att dessa data kan skickas som en del av det skapade elektroniska dokumentet. Du har kanske en formatering som måste användas som en typisk regel och som ska återanvändas för ett format. Då kan du ange den formateringen en gång för alla i formatkonfigurationen, som en namngiven omvandling som innehåller ett uttryck med formatering. Den namngivna transformeringen kan sedan länkas till flera formatkomponenter, där utdata måste vara formaterade enligt det uttryck du skapade.
 
@@ -87,7 +86,7 @@ Om du har en formatering som måste tillämpas separat kan du införa den format
 
 [![Att tillämpa formatering på en enskild komponent](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
-## <a name="Validation"></a>Processen flödeskontroll
+## <a name="process-flow-control"></a><a name="Validation"></a>Processen flödeskontroll
 
 ER-formeldesignern kan användas för att definiera uttryck som styr processflödet för skapande elektroniska dokument. Du kan utföra följande uppgifter:
 
@@ -112,11 +111,11 @@ ER-formeldesignern kan även användas för att skapa ett filnamn för ett skapa
 
 [![Processen flödeskontroll](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-## <a name="Enabled"></a>Kontroll av dokumentinnehåll
+## <a name="document-content-control"></a><a name="Enabled"></a>Kontroll av dokumentinnehåll
 
 Du kan använda ER-formuldesigner för att konfigurera uttryck som styr vilka data som ska placeras i genererade elektroniska dokument vid körning. Till exempel kan uttryck aktivera eller inaktivera utdata från specifika element av formatet, beroende på bearbetade data och konfigurerad logik. Uttrycken kan anges för ett enskilt formatelement i fältet **Aktiverad** på fliken **Mappning** på sidan **Operations designer**. Du kan ange uttrycken som ett logiskt villkor som returnerar ett *booleskt* värde:
 
-- Om villkoret returnerar **Sant**körs det aktuella formatelementet.
+- Om villkoret returnerar **Sant** körs det aktuella formatelementet.
 - Om villkoret returnerar **Falskt** hoppas det aktuella formatelementet över.
 
 Bilden visar uttryck av den här typen. (Version 11.12.11 av **ISO20022 kreditöverföring (NO)** formatkonfiguration som tillhandahålls av Microsoft används som ett exempel.) **XMLHeader**-formatkomponenten är konfigurerad för att beskriva strukturen för kreditöverföringsmeddelandet enligt ISO 20022 XML-meddelandestandarderna. Formatkomponenten **XMLHeader/dokument/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/ Ustrd** är konfigurerad för att lägga till det genererade meddelandet, XML-elementet **Ustrd** och lägga remitteringsinformationen i en ostrukturerat format som text i följande XML-element:
@@ -139,7 +138,7 @@ Bilden visar uttryck av den här typen. (Version 11.12.11 av **ISO20022 kreditö
 > 
 > Baserat på denna inställning, meddelandet som genereras för varje gäldenärsbetalning, **Ustrd** XML-element, som antingen innehåller texten på betalningsanteckningar eller om den texten är tom, en kommaseparerad lista av de fakturanummer som används för att kvitta betalningen.
 
-## <a name="TestFormula"></a>Validering av konfigurerade formler
+## <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Validering av konfigurerade formler
 
 På sidan **formeldesignern** väljer du **test** för att validera hur den konfigurerade formeln fungerar.
 

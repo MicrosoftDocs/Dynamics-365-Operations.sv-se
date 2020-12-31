@@ -10,25 +10,24 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 596a067611ac4477f4469dbbc370c971e0f7a35d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 67f6d567c7e8d4cc6332c2d661abb04d1b28d2e9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181782"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682781"
 ---
 # <a name="financial-insights"></a>Ekonomiska insikter
 
 [!include [banner](../includes/banner.md)]
 
-**Ekonomiska insikter**använder Microsoft Power BI för att sammanföra bokslut, diagram och ekonomiska nyckeltal (KPI). Power BI är inbäddad i appen. Tyngdpunkten i **Ekonomiska insikter** är analytisk rapportering. All personal i organisationen kan läsa, undersöka, förstå och agera. 
+**Ekonomiska insikter** använder Microsoft Power BI för att sammanföra bokslut, diagram och ekonomiska nyckeltal (KPI). Power BI är inbäddad i appen. Tyngdpunkten i **Ekonomiska insikter** är analytisk rapportering. All personal i organisationen kan läsa, undersöka, förstå och agera. 
 
 **Ekonomiska insikter** kombinerar data från redovisningen och reskontran för att ge en mer fullständig bild av den ekonomiska situationen i en organisation.
 
@@ -81,14 +80,14 @@ Du kan definiera ett återkommande batchjobb för att regelbundet uppdatera data
 ## <a name="security"></a>Säkerhet
 För närvarande kan inte data i inbäddade Power BI-rapporter begränsas till de juridiska personer som användaren har åtkomst till. Därför kontrolleras inbäddade Power BI-rapporter via uppgifter i säkerhetsinställningarna. Behörigheterna som definierar åtkomst till data gäller antingen för alla juridiska personer eller endast för det aktiva företaget. Följande register visar de behörigheter som finns och vilka roller som de har tilldelats. Behörigheter kan tas bort eller tilldelas till olika roller, utifrån organisationens behov.
 
-| Avgift                                    | Roller | Beskrivning |
+| Tullavgift                                    | Roller | beskrivning |
 |-----------------------------------------|-------|------------|
 | Visa arbetsyta för ekonomichefsöversikt             | Ekonomichef | Behörigheten ger åtkomst till arbetsytan Översikt över ekonomichef. Normalt används det aktiva företaget som ett filter. Du kan emellertid lägga till alla juridiska personer, oavsett om användaren har åtkomst till de övriga juridiska personerna. |
 | Visa aktuellt företag för ekonomiska insikter | <ul><li>Redovisare</li><li>Redovisningschef</li><li>Redovisningsansvarig</li><li>Revisor</li><li>Budgetchef</li><li>Verkställande direktör</li><li>Ekonomichef</li><li>Ekonomicontroller</li></ul> | Behörigheten ger tillgång till Ekonomiska insikter. Normalt används det aktiva företaget som ett filter. Du kan inte lägga till andra juridiska personer. |
 | Visa korsföretag för ekonomiska insikter   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, uppgiften inte är tilldelade till en roll. I nästa utgåva kommer behörigheten att tilldelas rollen ekonomichef. | Behörigheten ger åtkomst till menyn för arbetsytan Översikt över ekonomichef. Normalt används det aktiva företaget som ett filter. Du kan emellertid lägga till alla juridiska personer, oavsett om användaren har åtkomst till de övriga juridiska personerna. |
 
 
-## <a name="financial-reporting-vs-finanical-insights"></a>Ekonomisk rapportering jämfört med finansiell information
+## <a name="financial-reporting-vs-financial-insights"></a>Ekonomisk rapportering jämfört med ekonomisk information
 Även om **ekonomiska insikter** innehåller bokslut ersätter det inte ekonomisk rapportering i appen. Standardbokslut i **ekonomiska insikter** är begränsade och innehåller inte alla typer av bokslut. Ekonomiska rapporter är fortfarande huvudverktyget för att utforma, skapa och generera lagstadgade bokslut.
 
 Jämförelsediagrammet nedan hjälper dig att skilja de två alternativen:
@@ -121,7 +120,7 @@ Utöver användargränssnittet i den ursprungliga arbetsytan **Översikt för ek
 - Försäljning per kund
 
 ## <a name="edit-visuals"></a>Redigera visuella element
-I den ursprungliga versionen av **Ekonomiska insikter**kunde inga visuella element redigeras. I framtida versioner kommer användare som har lämplig behörighet kunna skapa nya visuella element, kopiera befintliga och redigera elementen. Även om .pbix-filer som innehåller rapporter är tillgängliga som resurser, rekommenderas inte att du ändrar i standardrapporterna. Ytterligare ändringar kommer att göras i de visuella element för egna bokslut, standardrapport och datamodell som används för bokslut. För att dra nytta av nya funktioner och ändringar i nästa versions datamodell måste du göra om alla ändringar som du gjort i standardrapporterna via Microsoft Power BI Desktop.
+I den ursprungliga versionen av **Ekonomiska insikter** kunde inga visuella element redigeras. I framtida versioner kommer användare som har lämplig behörighet kunna skapa nya visuella element, kopiera befintliga och redigera elementen. Även om .pbix-filer som innehåller rapporter är tillgängliga som resurser, rekommenderas inte att du ändrar i standardrapporterna. Ytterligare ändringar kommer att göras i de visuella element för egna bokslut, standardrapport och datamodell som används för bokslut. För att dra nytta av nya funktioner och ändringar i nästa versions datamodell måste du göra om alla ändringar som du gjort i standardrapporterna via Microsoft Power BI Desktop.
 
 ## <a name="filtering"></a>Filtrering
 Användare kan filtrera rapporten med hjälp av fönstret **Filter** till vänster. Det här fönstret är detsamma som det som finns på skrivbordet för Power BI Desktop. Det finns olika nivåer av filtrering, varav en del kanske inte är tillgängliga, beroende på vad du har markerat på en sida (flik) eller om du använder funktionerna för detaljgranskning:
@@ -131,7 +130,7 @@ Användare kan filtrera rapporten med hjälp av fönstret **Filter** till vänst
 - **Visuellt filter** – dessa filter tillämpas endast på det utvalda visuella elementet. Dessa filter läggs ovanpå sidnivåfiltren.
 - **Detaljgranskningsfilter** – detta filter filtrerar från ett "visuellt källelement" som tillämpas på aktuellt element när du detaljgranskar från källan till aktuellt visuellt element.
 
-![Filter](./media/filter.png)
+![Filteralternativ](./media/filter.png)
 
 Välj symbolen för att radera om du vill ta bort ett specifikt filtervärde. Ta inte bort ett filter genom att markera X. Om du väljer X raderas det fält som du filtrerar och försvinner som filteralternativ. Om du av misstag tar bort ett fält från filtret kan du stänga arbetsytan och öppna den igen. Standardinställningarna för filtret kommer att återställas.
 
@@ -176,25 +175,25 @@ Olika nivåer av granskning är tillgängliga via Power BI. Varje nivå har olik
 
 På följande bild är utdraget **råbalans** komprimerat till den högsta nivån i radhierarkin, dvs huvudkontotypen.
 
-![Råbalans](./media/trial-balance.png)
+![Råbalansutdrag](./media/trial-balance.png)
 
 Om du vill visa nästa nivå i hierarkin huvudkontokategorier, kan du ställa in fältet **Detaljgranska** till **rader** och välj sedan knappen **visa** (den tredje efter granskningsfältet). Nu visas alla huvudkontokategorier i expanderat format. För närvarande kan Power BI inte expandera bara en rad eller kolumn och samtidigt visa alla de andra raderna eller kolumnerna.
 
-![Råbalans](./media/trial-balance2.png)
+![Råbalansens rader för detaljgranskning](./media/trial-balance2.png)
 
 För att expandera till huvudkonton för alla rader kan du åter använda knappen **visa**. Men om du vill granska huvudkonton för en enstaka rad väljer du först knappen **detaljgranska** (den enda nedåtriktade pilen till höger i fönstret) och markerar sedan den rad du vill detaljgranska. I följande bild visas resultatet när raden **Sales** har markerats efter att knappen **detaljgranska** har valts.
 
-![Råbalans](./media/trial-balance3.png)
+![Expansionsknapp för råbalans](./media/trial-balance3.png)
 
 När du detaljgranskar en enda rad krävs flera val för att återgå till full råbalans. Knappen för **upp** (den första knappen efter **detaljgranska**) går uppåt endast vad gäller kategorin **Sales**, vilket visas i följande illustration.
 
-![Råbalans](./media/trial-balance4.png)
+![Knapp upp för detaljnivå på råbalans](./media/trial-balance4.png)
 
 Du kan fortsätta att använda knappen **upp** för att gå tillbaka till den högsta nivån av sammanfattning för raderna.
 
 Power BI har även en knapp som gör att du kan gå till nästa nivå i hierarkin (den andra knappen efter fältet **detaljgranska**). Effekten av den här knappen skiljer sig från effekterna av knappen **expandera** (tredje knappen efter fältet **detaljgranska**), som används för att expandera hierarkin. När du expanderar hierarkin underhålls hierarkin i rapporten. Till exempel, som visades tidigare, om du expanderar på huvudkontotypen syns fortfarande huvudkontotypen i rapporten. Men när du går till nästa nivå i hierarkin visar rapporten inte längre den överordnade hierarkin, enligt följande illustration.
 
-![Råbalans](./media/trial-balance5.png)
+![Knapp ner för detaljnivå på råbalans](./media/trial-balance5.png)
 
 För att se transaktionsdetaljer bakom summerade saldon kan du välja att granska vissa summor tillbaka till Financial and Operations.
 
@@ -245,6 +244,6 @@ Power BI har inte något alternativ för att visa och dölja tomma rader. Om en 
 
 Informationen i följande resurser krävs inte för att aktivera inbäddade rapporter i arbetsytan för **Översikt över ekonomichef** eller **Ekonomiska insikter** i en produktionsmiljö. Däremot är de användbara för dev och om du vill bädda in Power BI rapporterna.
 
-- <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
+- [Få åtkomst till analysarbetsytor och rapporter i en 1-rutemiljö](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
-- <https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
+- [Lägg till analyser i arbetsytor genom att använda Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)

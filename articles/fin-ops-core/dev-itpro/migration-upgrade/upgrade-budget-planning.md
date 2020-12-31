@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
 ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 5ba9b8a041f9eef8142cb56d7c764a5faf6071f6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1c62771170212039112c777e55d45a0d88d2f49d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191510"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681008"
 ---
 # <a name="upgrade-budget-planning"></a>Uppgradera budgetplanering
 
@@ -72,7 +71,7 @@ För att hjälpa dig att avgöra hur du konfigurerar det uppgraderade systemet, 
    -   Budgetplanscenarier: verkliga, baslinje, Budgetförfrågan, budget godkänd
    -   Budgetplansrader för alla scenarier i 2017 och utfall för både 2017 och 2016
 
-   Följande kolumner skapas Finance and Operations:
+   Följande kolumner skapas i Finance and Operations:
 
    | Kolumnnamn    | Budgetplanscenario | Kolumntidsperiod | Förskjutning för år |
    |----------------|----------------------|--------------------|-------------|

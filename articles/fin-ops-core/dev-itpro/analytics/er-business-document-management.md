@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65874e5ca73c18c3df7b94b8abb6eb15491482bf
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: 4b50a170bb9e584501fe780239228dc871ca7750
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893145"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681314"
 ---
 # <a name="business-document-management-overview"></a>Översikt över hantering av affärsdokument
 
@@ -94,7 +93,7 @@ Exempel på ER-konfigurationer används i exemplet på denna procedur. Du måste
 | Intrastat model.version.1.xml             | [Exempel på konfiguration av ER-datamodell.](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 | Intrastat report.version.1.9.xml          | [ER-formatkonfiguration för rapporten för Intrastat-kontroll](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
-Använd följande procedur för att importera varje fil. Importera konfigurationen för ER-*datamodell* för varje ER-lösning i tabellerna ovan innan du importerar motsvarande ER-*format*konfiguration.
+Använd följande procedur för att importera varje fil. Importera konfigurationen för ER-*datamodell* för varje ER-lösning i tabellerna ovan innan du importerar motsvarande ER-*format* konfiguration.
 
 1. Öppna sidan **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
 2. Välj **Växel** högst upp på sidan.

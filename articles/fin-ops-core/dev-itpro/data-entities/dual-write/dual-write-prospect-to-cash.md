@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: b21d468d672277be14877b93e291e9833659c54a
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 3b482a2754bb4bcaca5410da72c21897fd066a41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997410"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683657"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potentiell kund till kontanter vid dubbel skrivning
 
@@ -62,9 +62,9 @@ Nummerserien i hanteringen av Supply Chain Management är **1, 2, 3, 4, 5, ...**
 
 Försäljningsofferter kan skapas antingen i Sales eller Supply Chain Management. Om du skapar en offert i Sales synkroniseras den med Supply Chain Management i realtid. Om du skapar en offert i Supply Chain Management, synkroniseras den med Sales i realtid. Observera följande:
 
-+ Du kan lägga till en rabatt för produkten på offerten. I det här fallet kommer rabatten att synkroniseras med Supply Chain Management. Fälten **rabatt** , **tillägg** , och **moms** på rubriken styrs av en inställning i Supply Chain Management. Den här inställningen stöder inte integreringsmappning. I stället underhålls och underhålls fälten **pris** , **rabatt** , **tillägg** , och **moms** i Supply Chain Management.
-+ Fälten **Rabatt %** , **Rabatt** och **Fraktbelopp** fält på försäljningsoffertens rubrik är skrivskyddade fält.
-+ Fälten **betalningsvillkor** , **fraktvillkor** , **leveransvillkor** , **leveranssätt** och leveransläge tillhör inte standardmappningarna. Om du vill mappa dessa fält måste du konfigurera en värdemappning som är specifik för data i organisationer som enheten synkroniseras mellan.
++ Du kan lägga till en rabatt för produkten på offerten. I det här fallet kommer rabatten att synkroniseras med Supply Chain Management. Fälten **rabatt**, **tillägg**, och **moms** på rubriken styrs av en inställning i Supply Chain Management. Den här inställningen stöder inte integreringsmappning. I stället underhålls och underhålls fälten **pris**, **rabatt**, **tillägg**, och **moms** i Supply Chain Management.
++ Fälten **Rabatt %**, **Rabatt** och **Fraktbelopp** fält på försäljningsoffertens rubrik är skrivskyddade fält.
++ Fälten **betalningsvillkor**, **fraktvillkor**, **leveransvillkor**, **leveranssätt** och leveransläge tillhör inte standardmappningarna. Om du vill mappa dessa fält måste du konfigurera en värdemappning som är specifik för data i organisationer som enheten synkroniseras mellan.
 
 Om du även använder Field Service-lösningen måste du aktivera parametern **Snabbskapa anbudsförfrågan**. Om du aktiverar parametern igen kan du fortsätta att skapa offertrader med hjälp av funktionen snabbgenerering.
 1. Navigera till ditt Dynamics 365 Sales-program.
@@ -98,7 +98,7 @@ Om du synkroniserar från Supply Chain Management till Sales får du följande r
 
 ## <a name="dual-write-solution-for-sales"></a>Lösningar för dubbelriktad skrivning för Sales
 
-Nya fält har lagts till i enheten **Order** och visas på sidan. De flesta av dessa fält visas på fliken **integration** i Sales. Om du vill veta mer om hur statusfälten mappas refererar du till dokumentationsavsnittet för att [ställa in mappningen för fält för försäljningsorderstatus](https://review.docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/sales-status-map?branch=robin-dw-status-map)
+Nya fält har lagts till i enheten **Order** och visas på sidan. De flesta av dessa fält visas på fliken **integration** i Sales. För att veta mer om hur statusfälten mappas ska du gå till [Ställa in mappningen för fält för försäljningsorderstatus](sales-status-map.md).
 
 + Knapparna **skapa faktura** och **annullera order** på sidan **försäljningsorder** är dolda i Sales.
 + Värdet **Status för försäljningsorder** förblir **aktiv** för att se till att ändringar från Supply Chain Management når Försäljningsordern i Sales. För att styra detta beteende, ange standardvärdet till **Statuskod \[Status\]** till **Aktiv**.
@@ -110,11 +110,11 @@ Försäljningsfakturor skapas i Supply Chain Management och synkroniseras med Sa
 + Ett fält för **fakturanummer** har lagts till i entiteten **Faktura** och visas på sidan.
 + Knappen **Skapa faktura** på sidan **Försäljningsorder** är dold eftersom fakturorna skapas i Supply Chain Management och synkroniseras med Sales. Sidan **Faktura** kan inte redigeras eftersom fakturorna synkroniseras från Supply Chain Management.
 + Värdet **Status för försäljningsorder** ändras automatiskt till **Fakturerad** när tillhörande faktura från Supply Chain Management har synkroniserats med Sales. Dessutom kan ägaren till den försäljningsorder som fakturan skapades från tilldelas till fakturaägaren. Därför kan ägaren till försäljningsordern kan visa fakturan.
-+ Fälten **betalningsvillkor** , **fraktvillkor** och **leveranssätt** och leveransläge tillhör inte standardmappningarna. Om du vill mappa dessa fält måste du konfigurera en värdemappning som är specifik för data i organisationer som enheten synkroniseras mellan.
++ Fälten **betalningsvillkor**, **fraktvillkor** och **leveranssätt** och leveransläge tillhör inte standardmappningarna. Om du vill mappa dessa fält måste du konfigurera en värdemappning som är specifik för data i organisationer som enheten synkroniseras mellan.
 
 ## <a name="templates"></a>Mallar
 
-Potentiell kund till kontanter inkluderar en samling entitetsmappningar som fungerar tillsammans under kunddatainteraktion, som visas i följande tabell.
+Potentiell kund till kontanter inkluderar en samling tabellmappningar som fungerar tillsammans under kunddatainteraktion, enligt följande tabell.
 
 | Finance and Operations-appar | Modellstyrda appar i Dynamics 365 | beskrivning |
 |-----------------------------|-----------------------------------|-------------|
@@ -126,7 +126,7 @@ Potentiell kund till kontanter inkluderar en samling entitetsmappningar som fung
 | CDS-försäljningsofferrubrik  | anbudsförfrågningar                            |             |
 | Försäljningsoffertrader för CDS   | quotedetails                      |             |
 
-Här är de relaterade de huvudsakliga entitetsmappningar för potentiella kunder till kontanter:
+Här är de relaterade huvudsakliga tabellmappningarna för potentiella kunder till kontanter:
 
 + [Kunder V3 till konton](customer-mapping.md#customers-v3-to-accounts)
 + [CDS-kontakter V2 till kontakter](customer-mapping.md#cds-contacts-v2-to-contacts)

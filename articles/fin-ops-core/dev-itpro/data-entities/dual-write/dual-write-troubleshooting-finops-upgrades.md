@@ -18,20 +18,22 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 07d6bd0bab796d7839daa2bad91f7e88c2e881b5
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: c76b35ed3af766f42484a118a4a0407d969b5240
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997928"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683609"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Felsöka problem som rör uppgraderingar av Finance and Operations-appar
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Finance and Operations-appar och Common Data Service. Särskilt ger de information som kan hjälpa dig att åtgärda problem som är relaterade till uppgradering av Finance and Operations-appar.
+
+Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Finance and Operations-appar och Dataverse. Särskilt ger de information som kan hjälpa dig att åtgärda problem som är relaterade till uppgradering av Finance and Operations-appar.
 
 > [!IMPORTANT]
 > Vissa av de problem som det här ämnet behandlar kan kräva antingen systemadministratörsrollen eller Microsoft Azure Active Directory (Azure AD) autentiseringsuppgifter för administratör för klientorganisationen. I avsnittet för varje problem förklaras om en viss roll eller autentiseringsuppgifter krävs.
@@ -43,7 +45,7 @@ Det här avsnittet innehåller felsökningsinformation för integrering av dubbe
 Ett felmeddelande av följande slag kan visas när du försöker använda entiteten **DualWriteProjectConfiguration** för att uppdatera en Finance and Operations-app till plattformsuppdatering 30.
 
 ```console
-Infolog diagnostic message: 'Cannot select a record in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
+Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
 10/28/2019 15:18:20: Application configuration sync failed.
 Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw exception(s), please investigate before synchronizing again: 'InfoException:Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN."
 ```
@@ -73,19 +75,19 @@ På sidan **dubbelriktad skrivning** kan du få ett felmeddelande som liknar fö
 Lös problemet genom att först följa de här stegen för att kontrollera att fälten finns i entiteten.
 
 1. Logga in på den virtuella datorn för Finance and Operations-appen.
-2. Gå till **Arbetsytor \> Datahantering** , välj panelen **Rramverksparametrar** och sedan på fliken **Entitetsinställningar** välj **Uppdatera entitetslistan** för att uppdatera enheterna.
-3. Gå till **Arbetsytor \> Datahantering** , välj fliken **Dataentiteter** och kontrollera att entiteten finns med i listan. Om entiteten inte finns med loggar du in på den virtuella datorn för Finance and Operations-appen och ser till att enheten är tillgänglig.
-4. Öppna sidan **entitetsmappning** från sidan **dubbelriktad skrivning** i Finance and Operations-appen.
-5. Markera **uppdatera entitetslista** om du vill fylla i fälten i entitetsmappningarna automatiskt.
+2. Gå till **Arbetsytor \> Datahantering**, välj panelen **Ramverksparametrar** och sedan på fliken **Tabellinställningar** välj **Uppdatera entitetslistan** för att uppdatera tabellerna.
+3. Gå till **Arbetsytor \> Datahantering**, välj fliken **Datatabeller** och kontrollera att entiteten finns med i listan. Om entiteten inte finns med loggar du in på den virtuella datorn för Finance and Operations-appen och ser till att enheten är tillgänglig.
+4. Öppna sidan **Tabellmappning** från sidan **Dubbelriktad skrivning** i Finance and Operations-appen.
+5. Markera **Uppdatera entitetslista** om du vill fylla i fälten i tabellmappningarna automatiskt.
 
 Om problemet fortfarande inte är åtgärdat följer du stegen nedan.
 
 > [!IMPORTANT]
 > De här stegen vägleder dig genom processen att ta bort en enhet och sedan lägga till den igen. Se till att du följer stegen exakt om du vill undvika problem.
 
-1. I Finance and Operations-appen, gå till **Arbetsytor \> Datahantering** och välj panelen **Dataentiteter**.
+1. I Finance and Operations-appen, gå till **Arbetsytor \> Datahantering** och välj panelen **Datatabeller**.
 2. Sök efter den entitet som saknar attributet. Klicka på **Ändra målmappning** i verktygsfältet.
-3. I fönstret **Mappa mellanlagring till mål** , klicka på **Generera källmappning**.
-4. Öppna sidan **entitetsmappning** från sidan **dubbelriktad skrivning** i Finance and Operations-appen.
+3. I fönstret **Mappa mellanlagring till mål**, klicka på **Generera källmappning**.
+4. Öppna sidan **Tabellmappning** från sidan **Dubbelriktad skrivning** i Finance and Operations-appen.
 5. Om attributet inte fylls i automatiskt på kartan lägger du till det manuellt genom att klicka på knappen **Lägg till attribut** och sedan på **Spara**. 
 6. Markera mappningen och klicka på **Kör**.

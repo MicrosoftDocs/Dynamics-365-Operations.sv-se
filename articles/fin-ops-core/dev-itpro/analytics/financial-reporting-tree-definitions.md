@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6bb16ada206434c0588ed6c140a49b6a5d94d7ed
-ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
+ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "2564177"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682684"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportträddefinitioner i ekonomiska rapporter
 
@@ -76,7 +75,7 @@ Om du vill skapa en rapportträddefinition, följ dessa steg:
     | Inkludera/teckenbefattning       | Det här avsnittet visar dimensionerna som definieras i ekonomiska data och antalet tecken i det längsta värdet som definieras för varje dimension. Välj kryssrutan för en dimension om du vill inkludera dimensionen i rapportträdhierarkin. |
     | Segmentera hierarkin och intervaller     | Det här avsnittet visar dimensionshierarkin. Du kan flytta dimensionerna i listan om du vill ändra deras rapporteringorder. Du kan ange många olika värden för varje dimension i fälten **Från dimension** och **Till dimension**. Om du inte anger ett intervall kommer alla dimensionsvärden att infogas i rapportträdet.<blockquote>[!NOTE] Om du använder fler än en dimension är det bara dimensionskombinationer till vilka något har bokförts som returneras i resultatet.</blockquote> |
 
-    Om du vill se en skärmbild som visar ett exempel på dialogrutan **Infoga rapportenheter från dimensioner** kan du titta i avsnittet "Exempel på Infoga rapporenheter från dialogrutan dimensioner" senare i den här artikeln.
+    Om du vill se en skärmbild som visar ett exempel på dialogrutan **Infoga rapportenheter från dimensioner** kan du titta i avsnittet "Exempel på Infoga rapportenheter från dialogrutan dimensioner" senare i den här artikeln.
 
 5. Om du vill skapa fler segment (såsom dela ett segment i två kortare delar) ska du klicka på den rätta platsen i fältet **Teckenposition** och sedan klicka på **Dela segment**.
 6. Om du vill slå ihop två segment till ett klickar du på någon av segmentrutorna som ska slås ihop och sedan på **Kombinera segment**.
@@ -98,7 +97,7 @@ Om du vill skapa en rapportträddefinition, följ dessa steg:
 
 ### <a name="roll-up-data-in-a-reporting-tree"></a>Rulla upp data i ett rapportträd
 
-När du använder ett rapportträd kan du slå ihop belopp från underordnade rapportenheter på den överordnade rapportenhetsnivån. Detta kallas rulla upp data. Följande regler används för att rulla upp belopp till överordnade enheter i ett rapportträd:
+När du använder ett rapportträd kan du slå samman belopp från underordnade rapportenheter på den överordnade rapportenhetsnivån. Detta kallas rulla upp data. Följande regler används för att rulla upp belopp till överordnade enheter i ett rapportträd:
 
 - I ett rapportträd måste underordnade enheter innehålla dimensioner, om det inte är ett rapportträd i en nivå. Överordnade enheter innehåller vanligtvis inte dimensioner i ett rapportträd.
 
@@ -106,7 +105,7 @@ När du använder ett rapportträd kan du slå ihop belopp från underordnade ra
     > När du registrerar dimensioner för både överordnade och underordnade enheter kan detta orsaka fördubbling av data i rapporten.
 
 - Rapportenheter som innehåller dimensioner i rapportträdet motsvarar de dimensioner som används i rad- och kolumndefinitioner. Kombinationen av dimensioner bestämmer de belopp som ska returneras för den enheten. I exempel 2 senare i den här artikeln till exempel returneras enbart raderna 6 och 7 för avdelningarna 00 respektive 01.
-- Beloppen för de överordnade rapportenheterna som inte innehåller dimensioner i rapportträdet fastställs utifrån den underordnade rapportenheten och rullar upp beloppet till den angivna överordnade enheten. Om till exempel den överordnade enheten (se Contoso USA i exempel 2 i rulla upp data-exemplet) har två underordnade enheter (022 och 023) och inte innehåller dimensioner, genereras en rapport för varje underordnad enhet och den överordnade enheten. Överordnad summan är summan av de två underordnade beloppen.
+- Beloppen för de överordnade rapportenheterna som inte innehåller dimensioner i rapportträdet fastställs utifrån den underordnade rapportenheten och rullar upp beloppet till den angivna överordnade enheten. Om till exempel den överordnade enheten (se Contoso USA i exempel 2 i rullande data-exempel) har två underordnade enheter (022 och 023) och inte innehåller dimensioner, genereras en rapport för varje underordnad enhet och den överordnade enheten. Överordnad summan är summan av de två underordnade beloppen.
 
 ### <a name="manage-reporting-units"></a>Hantera rapportenheter
 
@@ -165,9 +164,9 @@ Du kan förhindra vissa användare och grupper från åtkomst till en rapportenh
 3. I dialogrutan **Enhetssäkerhet** väljer du ett namn och klickar sedan på **Ta bort.**.
 4. Klicka på **OK**.
 
-### <a name="link-toreports"></a>Länk till rapporter
+### <a name="link-to-reports"></a>Länk till rapporter
 
-Efter att du har skapat kolumnen  **Rapport** i raddefinitionen och angett vilken rapport som ska inkluderas i rapporten måste du uppdatera rapportträdet med den länkade kolumnen och informationen om rapporten. En rapport kan importeras till alla enheter i rapportträdet.
+Efter att du har skapat kolumnen **Rapport** i raddefinitionen och angett vilken rapport som ska inkluderas i rapporten måste du uppdatera rapportträdet med den länkade kolumnen och informationen om rapporten. En rapport kan importeras till alla enheter i rapportträdet.
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>Identifiera rapporten i ett rapportträd
 

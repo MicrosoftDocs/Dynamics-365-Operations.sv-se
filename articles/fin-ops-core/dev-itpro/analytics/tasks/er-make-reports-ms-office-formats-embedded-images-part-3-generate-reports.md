@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6324b244195e9626e259e42eef9512e64cde86
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 78dcdbd83dc717104d437662f7f451c9ecb714cf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143109"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684389"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Skapa rapporter i Office-format som omfattar inbäddade bilder
 
@@ -40,14 +39,14 @@ I det här exemplet ska du använda skapade ER-konfigurationer för exempelföre
     * Kör formatet i testsyfte.  
 6. Välj Ja i fältet Överlåtbart checkformat.
 7. Klicka på OK.
-    * Granska den skapade utleveransen. Observera att företagets logotyp visas i rapporten samt den behöriga personens underskrift. Signaturbilden hämtas från fältet för datatypen Behållare i checklayoutposten som associeras med det valda bankkontot.  
+    * Granska den skapade utleveransen. Företagets logotyp visas i rapporten samt den behöriga personens underskrift. Signaturbilden hämtas från fältet för datatypen Behållare i checklayoutposten som är associerad med det valda bankkontot.  
 8. Expandera avsnittet Kopior.
 9. Klicka på Redigera.
 10. Ange "Skriv ut vattenstämpel som annullerad" i fältet Vattenstämpel.
     * Ändra layoutinställningarna för vattenstämpel för att visa vattenstämpeln när dokument skapas i ett formatelement för Excel-kalkylblad.  
 11. Klicka på Testutskrift
 12. Klicka på OK.
-    * Granska den skapade utleveransen. Kontrollera att vattenstämpeln visas i rapporten i enlighet med det valda alternativet.  
+    * Granska den skapade utleveransen. Vattenstämpeln visas i rapporten i enlighet med det valda alternativet.  
 13. Stäng sidan.
 14. Klicka på Hantera betalningar i åtgärdsfönstret.
 15. Klicka på Checkar.
@@ -56,7 +55,7 @@ I det här exemplet ska du använda skapade ER-konfigurationer för exempelföre
 18. Markera alla rader i listan.
 19. Klicka på Skriv ut checkkopia.
     * Kör formatet om du vill skriva ut valda checkar igen.  
-    * Granska den skapade utleveransen. Observera att valda checkar har skrivits ut igen. Företagets logotyp och etiketter skrivs inte ut eftersom de visas på den förtryckta blanketten.  
+    * Granska den skapade utleveransen. Valda checkar har skrivits ut igen. Företagets logotyp och etiketter skrivs inte ut eftersom de visas på den förtryckta blanketten.  
 
 ## <a name="modify-the-mapping-of-the-imported-data-model"></a>Ändra mappning av den importerade datamodellen
 1. Stäng sidan.
@@ -66,7 +65,7 @@ I det här exemplet ska du använda skapade ER-konfigurationer för exempelföre
 5. Klicka på Designer.
 6. Klicka på Mappa modell till datakälla.
 7. Klicka på Designer.
-    * Vi vill ändra bindningen för datamodellens signaturobjekt för att hämta signaturbilden från filen som har kopplats till checklayoutposten som associeras med det valda bankkontot.  
+    * Vi vill ändra bindningen för datamodellens signaturobjekt för att hämta signaturbilden från filen som har kopplats till checklayoutposten som är associerad med det valda bankkontot.  
 8. Inaktivera Visa detaljer.
 9. Expandera "layout" i trädet.
 10. Expandera "layout\signature" i trädet.
@@ -91,7 +90,7 @@ I det här exemplet ska du använda skapade ER-konfigurationer för exempelföre
 4. Klicka på Kontrollera.
 5. Klicka på Testutskrift
 6. Klicka på OK.
-    * Granska den skapade utleveransen. Observera att bilden från dokumenthanteringsbilagan visas som underskriften för en behörig person.  
+    * Granska den skapade utleveransen. Bilden från dokumenthanteringsbilagan visas som underskrift för en behörig person.  
 
 ## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>Använd MS Word-dokument som en mall i det importerade formatet
 1. Stäng sidan.
@@ -118,5 +117,5 @@ I det här exemplet ska du använda skapade ER-konfigurationer för exempelföre
 21. Klicka på Kontrollera.
 22. Klicka på Testutskrift
 23. Klicka på OK.
-    * Granska den skapade utleveransen. Observera att utdata har skapats som ett MS Word-dokument med inbäddade bilder som innehåller företagslogotypen, underskrift av en behörig person och den markerade texten i vattenstämpeln.  
+    * Granska den skapade utleveransen. Utdata har genererats som ett Word-dokument med inbäddade bilder som innehåller företagslogotyp, underskrift av en behörig person och den markerade texten i vattenstämpeln.  
 

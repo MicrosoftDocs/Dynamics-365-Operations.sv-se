@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 89d36c305bc9210f7906cd4288e33e5028baecdb
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: f15b78d3ed5b4df47540f9f89cc69c0b535a7241
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771270"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680204"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Förbered programspecifika metadata för RCS och ER
 
@@ -221,7 +220,7 @@ Om du redan har slutfört proceduren [Få åtkomst till programdata genom att an
 
 1. Gå till **Alla arbetsytor \> Elektronisk rapportering**.
 2. Välj **anslutna program**.
-3. Kontrollera att det konfigurerade programmet är baserat på Microsoft Azure och att det är tillgängligt i allmänhet för att RCS-användare. Den aktuella RCS-användaren måste ha åtkomst till det konfigurerade programmet och registrerats som en användare av det här programmet som ger honom eller henne behörighet att komma åt programmets metadata.
+3. Kontrollera att det konfigurerade programmet är baserat på Microsoft Azure och att det är tillgängligt i allmänhet för att RCS-användare. Den aktuella RCS-användaren måste ha åtkomst till det konfigurerade programmet och registrerats som en användare av det här programmet som ger behörighet att komma åt programmets metadata.
 4. Välj **Ny**.
 5. Ange **MyConnectedApp** som namnet på det kopplade programmet i fältet **Namn**.
 6. Ange URL för programmet i fältet **Program**.

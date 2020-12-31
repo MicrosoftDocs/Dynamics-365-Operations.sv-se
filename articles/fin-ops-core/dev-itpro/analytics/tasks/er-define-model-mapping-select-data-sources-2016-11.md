@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a6287fa95b7ce7341e99d1b1a6b972db68a30398
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7d57c191761b8e2367ff8806c1cd98d6d83559e3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142185"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682127"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>Definiera ER-modellmappningar och välj datakällor för dem
 
@@ -78,7 +77,7 @@ I följande steg beskrivs hur en användare i rollen Systemadministratör eller 
 17. Välj "Transaktioner\Verifikation" i trädet.
 18. Klicka på Lägg till datakälla.
 19. I formelfältet anger du "CONCATENATE(Transactions.Voucher, "-", ".
-    * Skriv [ , "-", ] i slutet av formeln.  
+    * Skriv [ , ”, ”-] i slutet av formeln.  
 20. Välj "Sträng\TEXT" i trädet.
 21. Klicka på funktionen Lägg till.
 22. Välj "Transaktioner\Post-ID(RecId)" i trädet.
@@ -99,7 +98,7 @@ I följande steg beskrivs hur en användare i rollen Systemadministratör eller 
 32. Välj "Transaktioner\Debet(AmountCurDebit)" i trädet.
 33. Klicka på Lägg till datakälla.
 34. I formelfältet anger du "Transactions.AmountCurDebit - ".
-    * Skriv[ - ] i slutet av formeln.  
+    * Skriv [ - ] i slutet av formeln.  
 35. Välj "Transaktioner\Kredit(AmountCurCredit)" i trädet.
 36. Klicka på Lägg till datakälla.
 37. Klicka på Spara.

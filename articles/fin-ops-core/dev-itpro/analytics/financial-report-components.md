@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 27a6745be62185b23a7e81c9aed78879e36b3a9d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 97468be0bdea679ca7a52c5cef9c1e10950736e8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181736"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682731"
 ---
 # <a name="financial-report-components"></a>Komponenter för ekonomisk rapport
 
@@ -81,7 +80,7 @@ Du kan visa alla byggblock som tilldelas en byggblockgrupp. Du kan även exporte
 
 ### <a name="export-a-building-block-group"></a>Exportera en byggblocksgrupp
 
-Du kan exportera en byggblocksgrupp eller rapportbyggblock i en byggblocksgrupp. Du kan använda den exporterade byggblocksgruppen som en säkerhetskopia. Du kan också kopiera exporterade data mellan installationer. Rapportdesignern inkluderar de refererade teckenstilarna och dimensionsuppsättningarna tillsammans med byggblockgruppen.
+Du kan exportera en byggblocksgrupp eller rapportbyggblock i en byggblocksgrupp. Du kan använda den exporterade byggblocksgruppen som en säkerhetskopia. Du kan också kopiera exporterade data mellan installationer. Rapportdesignern inkluderar de refererade teckenstilarna och dimensionsuppsättningarna tillsammans med byggblocksgruppen.
 
 1. I Report Designer, på menyn **Företag** klicka på **Byggblockgrupper**.
 2. Markera det byggblock som ska exporteras i dialogrutan **Byggblocksgrupper** och klicka sedan på **Exportera**.
@@ -114,7 +113,7 @@ Du kan importera en byggblockgrupp till en befintlig byggblockgrupp. Alla import
 
 ### <a name="undo-a-checkout-of-a-building-block"></a>Ångra en utcheckning av ett byggblock
 
-När du öppnar ett byggblock kan andra användare bara komma åt byggblocket i skrivskyddat läge. Ibland kan en användare glömma att stänga ett byggblock eller stänger av sitt system utan att stänga byggblocket. Därför förblir byggblocket utcheckat och ingen annan användare kan öppna det. I en sådan situation kan en administratör för ekonomisk rapportering använda dialogrutan **Utcheckade artiklar** för att checka in byggblock som en användare har lämnat i utcheckad.
+När du öppnar ett byggblock kan andra användare bara komma åt byggblocket i skrivskyddat läge. Ibland kan en användare glömma att stänga ett byggblock eller stänger av sitt system utan att stänga byggblocket. Därför förblir byggblocket utcheckat och ingen annan användare kan öppna det. I en sådan situation kan en administratör för ekonomisk rapportering använda dialogrutan **Utcheckade artiklar** för att checka in byggblock som en användare har lämnat utcheckade.
 
 > [!NOTE]
 > Du måste ha rollen administratör för att checka in byggblock med dialogrutan **Utcheckade objekt**.

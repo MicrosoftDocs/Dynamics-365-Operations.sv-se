@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 58381f491cda199d77e555e5d3da04714b6a5f8f
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.openlocfilehash: 6dce3768c886403f789063d516e0e696fc829f81
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138933"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680720"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Skjut upp körningen av XML-element i ER-format
 
@@ -196,7 +195,7 @@ Om transaktionsvolymen är mycket större än volymen i det aktuella exemplet ka
     ![SUMIF-uttryck](./media/ER-DeferredXml-FormulaDesigner.png)
 
 10. Stäng sidan **Formeldesigner**.
-11. Välj **spara**och välj sedan **kör**.
+11. Välj **spara** och välj sedan **kör**.
 12. Hämta och granska filen som webbläsaren erbjuder.
 
     ![Hämta fil](./media/ER-DeferredXml-Run1.png)
@@ -205,7 +204,7 @@ Om transaktionsvolymen är mycket större än volymen i det aktuella exemplet ka
 
 13. Markera attributet **rapport\\meddelande\\sammanfattning\\TotalTaxAmount** och välj **redigera formel**.
 14. Ange `SUMIF(SummingAmountKey, WsColumn, WsRow)`uttrycket i stället för det befintliga uttrycket.
-15. Välj **spara**och välj sedan **kör**.
+15. Välj **spara** och välj sedan **kör**.
 16. Hämta och granska filen som webbläsaren erbjuder.
 
     ![Hämta fil](./media/ER-DeferredXml-Run2.png)
@@ -218,7 +217,7 @@ Om du till exempel vill visa summan av momsvärden i rapportens rubrik kan du ä
 
 1. På sidan **Formatdesigner** på fliken **Format**, välj XML-element **Rapport\\Meddelande\\Sammanfattning**.
 2. Välj **Flytta upp**.
-3. Välj **spara**och välj sedan **kör**.
+3. Välj **spara** och välj sedan **kör**.
 4. Hämta och granska filen som webbläsaren erbjuder.
 
     ![Hämta fil](./media/ER-DeferredXml-Run3.png)
@@ -232,7 +231,7 @@ Om du till exempel vill visa summan av momsvärden i rapportens rubrik kan du ä
 
     ![Alternativet uppskjuten körning av sammanfattning XML-element på sidan formatdesigner](./media/ER-DeferredXml-Format5.png)
 
-3. Välj **spara**och välj sedan **kör**.
+3. Välj **spara** och välj sedan **kör**.
 4. Hämta och granska filen som webbläsaren erbjuder.
 
     ![Hämta fil](./media/ER-DeferredXml-Run4.png)

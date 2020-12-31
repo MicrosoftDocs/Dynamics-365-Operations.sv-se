@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8c3a905c90f5dd4ad3487f004a958c0dcd52115d
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: fcfbcb021b192cef75d59b0db1796e994f3dc27d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893257"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681386"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Lägga till nya fält i en affärsdokumentmall i Microsoft Excel
 
@@ -86,7 +85,7 @@ Sidan BDM-mallredigerare visas. Du kan använda Microsoft 365 för att redigera 
 
 ### <a name="format-the-template-to-reserve-space-for-a-new-field"></a>Formatera mallen till att reservera utrymme för ett nytt fält
 
-1.  Välj sammanfogad cell **G8:H8**på sidan BDM mallredigerare.
+1.  Välj sammanfogad cell **G8:H8** på sidan BDM mallredigerare.
 2.  I Excel-menyfliksområdet på fliken **Start** välj **Sammanfoga och centrera** om du vill sammanfoga de markerade cellerna till en ny sammanfogad **G8:H8**-cell.
 3.  Markera sammanfogad cell **G7:H7**, välj **Hämta format** och markera sedan sammanfogad cell **G8:H8** om du vill formatera den på samma sätt som den sammanfogade cellen **G7:H7**.
 
@@ -127,7 +126,7 @@ Sidan BDM-mallredigerare visas. Du kan använda Microsoft 365 för att redigera 
 
 7.  Välj **CompanyInfo_Value** som fältet som du vill binda till en datakälla för det underliggande ER-formatet.
 8.  I avsnittet **Datakällor** i fönstret **Mallstruktur** expanderar du **Modell \> InvoiceBase \> CompanyInfo**.
-9.  Under **CompanyInfo**väljer du artikeln **WebsiteURI**.
+9.  Under **CompanyInfo** väljer du artikeln **WebsiteURI**.
 
     ![Artikeln WebsiteURI har markerats](./media/BDM-AddFldExcel-BindURL.png)
 

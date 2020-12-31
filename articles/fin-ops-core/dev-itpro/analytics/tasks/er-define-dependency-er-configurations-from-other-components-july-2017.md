@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e06fdda7d2d73c3fe4a4b9ee5bd44e6ef857b8d5
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 77783d629afc9abf30cdc48534fbb26eba5f8811
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142276"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681983"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definiera beroendet av ER-konfigurationer för andra komponenter
 
@@ -47,7 +46,7 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
 5. Klicka på Ny.
 6. Välj produktförutsättningskomponenten.
 7. Välj Microsoft Dynamics 365 for Operations (1611).
-8. Skriv "[7.1.1541.3036,8)" i fältet Version.
+8. I fältet Version, skriv '[7.1.1541.3036,8)'.
     * [7.1.1541.3036,8)  
     * När den här konfigurationen har hämtats från en ER-databas utvärderas de beroenden som du anger. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Exempeldatamodell redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Finance and Operations, versionen måste vara 7.1.1541.3036 eller senare och den får inte vara senare än huvudversion 8.   
 9. Klicka på Spara.
@@ -60,7 +59,7 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
 16. Klicka på Ny.
 17. Välj produktförutsättningskomponenten.
 18. Välj Microsoft Dynamics AX 7.0 RTW.
-19. Skriv "[7.0.1265.3015,7.1)" i fältet Version.
+19. I fältet Version, skriv '[7.0.1265.3015,7.1)'.
     * [7.0.1265.3015,7.1)  
     * Beroendena utvärderas när den här konfigurationen har hämtats från en ER-databas. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Exempeldatamodell redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, versionen måste vara 7.0.1265.3015 eller senare och den får inte vara senare än delversion 1.   
 20. Klicka på Spara.

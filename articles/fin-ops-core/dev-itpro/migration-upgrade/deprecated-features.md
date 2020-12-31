@@ -10,23 +10,24 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1d14003ff7595ceaa78b42f69cf1927fbd8157d
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040132"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679966"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Borttagna eller utfasade funktioner i tidigare versioner
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
 > Det här avsnittet uppdateras inte längre. Om du vill visa en aktuell lista över funktioner som har tagits bort från Finance and Operations-appar kan du söka efter innehållet **"borttagna eller gamla funktioner"** som hör till det program du använder.
@@ -79,7 +80,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Vi tar bort **setUtcString()** -metoden eftersom det finns en bättre ersättningsmetod. |
+| **Orsak till inaktuell/borttagning** | Vi tar bort **setUtcString()**-metoden eftersom det finns en bättre ersättningsmetod. |
 | **Ersatt av en annan funktion?**   | Ja |
 | **Produktområden som påverkas**         | Plattform |
 | **Distribueringsalternativ**              | Allt |
@@ -185,7 +186,7 @@ Stöd för att skapa projektbaserade försäljningsorder där projektkontraktet 
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Funktionen kommer alltid att aktiveras alltid när den här parametern har tagits bort. |
 | **Ersatt av en annan funktion?**   | Nr. Funktionen för att stödja projektbaserade försäljningsorder med flera finansieringskällor alltid aktiverade.   |
-| **Produktområden som påverkas**         |Parametern **Tillåt försäljningsorder för projekt som har flera finansieringskällor** kommer att tas bort. Följande metoder ändras när parametern tas bort: metoden **ctrlSalesOrderTable** i klassen **ProjStatusType** , metoden **validera** för fältet **ProjId** och **kör** metoden i formuläret **SalescreateOrder**. Följande metoder ska vara inaktuell när parametern tas bort: **IsSalesOrderAllowedForMultipleFundingSources** i registerfilen **ProjTable** , metoden **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** i registerfilen **ProjTable** , datafältet **AllowSalesOrdersForMultipleFundingSources** i formuläret **ProjParameters** och filerna **ProjParameterEntity** , privat metod **IsAssociatedToMultipleFundingSourcesContract** i regsiterfilen **ProjTable**. |
+| **Produktområden som påverkas**         |Parametern **Tillåt försäljningsorder för projekt som har flera finansieringskällor** kommer att tas bort. Följande metoder ändras när parametern tas bort: metoden **ctrlSalesOrderTable** i klassen **ProjStatusType**, metoden **validera** för fältet **ProjId** och **kör** metoden i formuläret **SalescreateOrder**. Följande metoder ska vara inaktuell när parametern tas bort: **IsSalesOrderAllowedForMultipleFundingSources** i registerfilen **ProjTable**, metoden **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** i registerfilen **ProjTable**, datafältet **AllowSalesOrdersForMultipleFundingSources** i formuläret **ProjParameters** och filerna **ProjParameterEntity**, privat metod **IsAssociatedToMultipleFundingSourcesContract** i regsiterfilen **ProjTable**. |
 | **Distribueringsalternativ**              | Allt  |
 | **Status**                         | Avskrivning planeras för släpp av påfyllnad, april 2020. |
 
@@ -266,7 +267,7 @@ Inbäddade KPI:er (Key Performance Indicators) kan utformas i Visual Studio av e
 
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Det är möjligt för definitioner av registermetadata att ha fältgrupper som innehåller ogiltiga fältreferenser. Om distribuerad kan det orsaka körningsfel i Ekonomisk rapportering och SQL Server Reporting Services (SSRS). Det här problemet är kategoriserat som en *kompileringsvarning* i stället för ett *fel* , vilket innebär att skapande och distribution av paket som kan distribueras kan fortsätta utan att åtgärda problemet. Åtgärda det här problemet:<br><br>1. Ta bort den ogiltiga fältreferensen från tabellens fältgruppdefinition.<br><br>2. Kompilera om.<br><br>3. Kontrollera att eventuella varningar eller fel åtgärdas. |
+| **Orsak till inaktuell/borttagning** | Det är möjligt för definitioner av registermetadata att ha fältgrupper som innehåller ogiltiga fältreferenser. Om distribuerad kan det orsaka körningsfel i Ekonomisk rapportering och SQL Server Reporting Services (SSRS). Det här problemet är kategoriserat som en *kompileringsvarning* i stället för ett *fel*, vilket innebär att skapande och distribution av paket som kan distribueras kan fortsätta utan att åtgärda problemet. Åtgärda det här problemet:<br><br>1. Ta bort den ogiltiga fältreferensen från tabellens fältgruppdefinition.<br><br>2. Kompilera om.<br><br>3. Kontrollera att eventuella varningar eller fel åtgärdas. |
 | **Ersatt av en annan funktion?**   | Denna varning ersätts av ett kompileringsfel i framtiden. |
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
@@ -374,12 +375,12 @@ Dessa två rapporter stöds inte längre i Finance and Operations. I stället ka
 | **Status**                       | Inaktuell: Menyalternativen för de två rapporterna har tagits bort i version 7.3. Koden för rapporterna finns emellertid kvar i produkten Planen är att ta bort koden i framtida versioner. |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-innehållspaket finns på AppSource
-Innehållspaketen **Kostnadshantering** , **Ekonomiska resultat** och **Butikskanalresultat** som publicerades på webbplatsen [Microsoft AppSource](https://appsource.microsoft.com), är inaktuella till följd av produktuppdateringar i Microsoft Power BI. Systemadministrationsformulär som brukade användas för att distribuera dessa innehållspaket till PowerBI.com används även i Finance and Operations.
+Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat** och **Butikskanalresultat** som publicerades på webbplatsen [Microsoft AppSource](https://appsource.microsoft.com), är inaktuella till följd av produktuppdateringar i Microsoft Power BI. Systemadministrationsformulär som brukade användas för att distribuera dessa innehållspaket till PowerBI.com används även i Finance and Operations.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Produktuppdateringar Microsoft Power BI. |
-| **Ersatt av en annan funktion?**   | Innehållspaketen **Kostnadshantering** , **Ekonomiska resultat** och **Butikskanalresultat** som finns på webbplatsen [AppSource](https://appsource.microsoft.com) ersätts med analytiska applikationer som möjliggör lösningsintegrering på databasnivå. Läs mer om analytiska program i [Inbäddad Power BI i arbetsytor](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Ersatt av en annan funktion?**   | Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat** och **Butikskanalresultat** som finns på webbplatsen [AppSource](https://appsource.microsoft.com) ersätts med analytiska applikationer som möjliggör lösningsintegrering på databasnivå. Läs mer om analytiska program i [Inbäddad Power BI i arbetsytor](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Produktområden som påverkas**         | Kostnadshantering, Ekonomi och Butik                                                                                               |
 | **Distribueringsalternativ**              | Endast molnet (integrering med PowerBI.com stöds inte i lokala distributioner.)                                                                                                            |
 | **Status**                         | Inaktuell: Måltidsramen för att ta bort funktioner är K2 2018.    |
@@ -712,7 +713,7 @@ Löneinformation i HR
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Den här funktionen har ersatts av huvudsidorna Lön och Personal.  |
-| **Ersatt av en annan funktion?**   | **Förmåner** , **Inkomster** och andra relaterade sidor, som tidigare fanns i USA-lönelistan, har konfigurerats om och är nu en del av den grundläggande konfigurationen Personal för att ge stöd för extern lönebearbetning. Den här funktionen kan nås med hjälp av konfigurationsnyckeln **Personal 1** \> **Lönelista**. |
+| **Ersatt av en annan funktion?**   | **Förmåner**, **Inkomster** och andra relaterade sidor, som tidigare fanns i USA-lönelistan, har konfigurerats om och är nu en del av den grundläggande konfigurationen Personal för att ge stöd för extern lönebearbetning. Den här funktionen kan nås med hjälp av konfigurationsnyckeln **Personal 1** \> **Lönelista**. |
 | **Produktområden som påverkas**         | Personal, Lön   |
 | **Status**                         | Borttagen från Dynamics 365 for Operations version 1611.    |
 
@@ -847,7 +848,7 @@ Ett arbetsflöde för hantering av genereringen av medarbetare är en av flera a
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF-, AxD- och AxBC-integrationer
 
-I AIF (Application Integration Framework) kan data utbytas med externa system genom affärslogik som exponeras som tjänster. Dynamics AX omfattar tjänster som baseras på dokument och .NET Business Connector (AxBC). Ett dokument skapas genom att använda XML. XML inkluderar rubrikinformation som läggs till för att skapa ett *meddelande* som kan överföras in eller ut från Dynamics AX. Exempel på dokument innehåller försäljningsorder och inköpsorder. Dock kan nästan alla enheter, till exempel en kund, representeras av ett dokument. Tjänster som baseras på dokument använder **Axd \<Document\>** -klasserna.
+I AIF (Application Integration Framework) kan data utbytas med externa system genom affärslogik som exponeras som tjänster. Dynamics AX omfattar tjänster som baseras på dokument och .NET Business Connector (AxBC). Ett dokument skapas genom att använda XML. XML inkluderar rubrikinformation som läggs till för att skapa ett *meddelande* som kan överföras in eller ut från Dynamics AX. Exempel på dokument innehåller försäljningsorder och inköpsorder. Dock kan nästan alla enheter, till exempel en kund, representeras av ett dokument. Tjänster som baseras på dokument använder **Axd \<Document\>**-klasserna.
 
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -1157,7 +1158,7 @@ Genereringen av förauktoriseringar kan inte utföras med hjälp av en batch men
 
 ### <a name="gl-ssrs-reports"></a>GL SSRS-rapporter
 
-Rapporter som innehåller följande menykommandon har tagits bort: **Råbalanssammanfattning** , **Detaljerad råbalans** , **Kontoplan** , **Redovisningsspårning** , **Saldon** och **Saldolista**.
+Rapporter som innehåller följande menykommandon har tagits bort: **Råbalanssammanfattning**, **Detaljerad råbalans**, **Kontoplan**, **Redovisningsspårning**, **Saldon** och **Saldolista**.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -1359,7 +1360,7 @@ Windows 8 surfplatteapp gav funktion för utgiftsregistrering och godkännande.
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Låg användning |
-| **Ersatt av en annan funktion?**   | Nej, men sidan **Profilrelation** , som öppnas från sidan **Profilgrupper** stöder samma affärsscenario som den inaktuella sidan **Arbetsplanerare**. |
+| **Ersatt av en annan funktion?**   | Nej, men sidan **Profilrelation**, som öppnas från sidan **Profilgrupper** stöder samma affärsscenario som den inaktuella sidan **Arbetsplanerare**. |
 | **Produktområden som påverkas**         | Tid och närvaro     |
 | **Status**                         | Koden har inte tagits bort. Formuläret JmgWorkPlanner har emellertid inte migrerats.    |
 

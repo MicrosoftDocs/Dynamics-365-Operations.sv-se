@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 6cdfbbd7d4f41503e97620b8738679ad572b2a4a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: d89922bd10b6db17d3fee22409137d6ec966858b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771247"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682833"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Spåra skapade rapportresultat och jämföra dem med baslinjevärden
 
@@ -88,10 +87,10 @@ För att slutföra stegen i detta exempel måste du i RCS först slutföra stege
 3. Ange **Rot** i listrutan i fältet **namn**.
 4. Markera **Lägg till**.
 5. Välj **Rotreferens**.
-6. Välj **OK**och välj sedan **spara**.
+6. Välj **OK** och välj sedan **spara**.
 7. Stäng sidan **modelldesigner**.
 8. Välj **Ändra status**.
-9. Välj **Slutför**och välj sedan **OK**.
+9. Välj **Slutför** och välj sedan **OK**.
 
 ![Sidan Konfigurationer](media/GER-BaselineSample-ModelComplete.PNG "Skärmbild av sidan Konfigurationer")
 
@@ -142,7 +141,7 @@ I det här exemplet ska du skapa ett enkelt ER-format för att generera XML-doku
     3. Välj **OK**.
 
 11. I trädet, välj **Output\\Document\\Id**.
-12. Välj **Bind**och välj sedan **Spara**.
+12. Välj **Bind** och välj sedan **Spara**.
 
 ![Formatdesignersida](media/GER-BaselineSample-FormatMappingDesign.PNG "Skärmbild av sidan Formatdesigner")
 
@@ -187,7 +186,7 @@ Baslinjen läggs till i formatet **format för att lära dig ER-baslinjer**.
 
 1. På ssidan **Basliinjer för elektroniskt rapporteringsformat** i åtgärdfönstret, väljer du knappen **bifogade filer** (gemsymbolen).
 2. I åtgärdsfönstret väljer du **Ny** \> **Fil**. I ER-parametrarna bör dokumenttypen **fil** ha valts tidgare som den dokumenttyp som används för att lagra baslinjefiler.
-3. Välj **bläddra**och välj sedan filen **out. Admin.xml** som skapades när det konfigurerade ER-formatet kördes tidigare.
+3. Välj **bläddra** och välj sedan filen **out. Admin.xml** som skapades när det konfigurerade ER-formatet kördes tidigare.
 
     ![Sidan Bilagor](media/GER-BaselineSample-UploadBaselineFile.PNG "Skärmbild av sidan Bilagor")
 

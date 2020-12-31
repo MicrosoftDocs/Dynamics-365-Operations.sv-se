@@ -1,6 +1,6 @@
 ---
 title: Inställningen dubbelriktad skrivning från Lifecycle Services
-description: I det här avsnittet beskrivs hur du ställer in en dubbelriktad anslutning i en ny Finance and Operations-miljö och en ny Common Data Service-miljö från Microsoft Dynamics Lifecycle Services (LCS).
+description: I det här avsnittet beskrivs hur du ställer in en dubbelriktad anslutning i en ny Finance and Operations-miljö och en ny Dataverse-miljö från Microsoft Dynamics Lifecycle Services (LCS).
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 01/06/2020
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: f49eba1748861af6ee3353a6c58005ee84ccae23
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 25db9c58c3d09e44dcf11b48cae1a9eda4241c35
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3998118"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683535"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Inställningen dubbelriktad skrivning från Lifecycle Services
 
@@ -31,14 +31,16 @@ ms.locfileid: "3998118"
 
 [!include [preview-banner](../../includes/preview-banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in en dubbelriktad anslutning i en ny Finance and Operations-miljö och en ny Common Data Service-miljö från Microsoft Dynamics Lifecycle Services (LCS).
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+I det här avsnittet beskrivs hur du ställer in en dubbelriktad anslutning i en ny Finance and Operations-miljö och en ny Dataverse-miljö från Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="prerequisites"></a>Förutsättningar
 
 Du måste vara administratör för att kunna konfigurera en anslutning med dubbelriktad anslutning.
 
 + Du måste ha åtkomst till innehavare.
-+ Du måste vara administratör i både Finance and Operations-miljöer och Common Data Service-miljöer.
++ Du måste vara administratör i både Finance and Operations-miljöer och Dataverse-miljöer.
 
 ## <a name="set-up-a-dual-write-connection"></a>Konfigurera en dubbelriktad anslutning
 
@@ -49,20 +51,20 @@ Följ dessa steg för att konfigurera dubbelriktad anslutning.
 3. Välj version. 
 4. Välj topologi. Om det bara finns en tillgänglig topologi väljs den automatiskt.
 5. Slutför de första stegen i guiden **distributionsinställningar**.
-6. På fliken **Common Data Service** följ stegen:
+6. På fliken **Dataverse** följ stegen:
 
-    - Om en Common Data Service-miljö redan har etablerats för din klientorganisation kan du välja den.
+    - Om en Dataverse-miljö redan har etablerats för din klientorganisation kan du välja den.
 
-        1. Ange alternativet **Konfigurera Common Data Service** till **Ja**.
+        1. Ange alternativet **Konfigurera Dataverse** till **Ja**.
         2. I fältet **Tillgängliga miljöer** välj miljön som ska integreras med dina Finance and Operations data. Listan innehåller alla miljöer där du har administratörsbehörighet.
         3. Markera kryssrutan **acceptera** för att ange att du godkänner villkoren.
 
-        ![Fliken Common Data Service när en Common Data Service-miljö redan har etablerats för din klientorganisation](../dual-write/media/lcs_setup_1.png)
+        ![Fliken Dataverse när en Dataverse-miljö redan har etablerats för din klientorganisation](../dual-write/media/lcs_setup_1.png)
 
-    - Om din klientorganisation inte redan har en Common Data Service-miljö, kommer en ny miljö att etableras.
+    - Om din klientorganisation inte redan har en Dataverse-miljö, kommer en ny miljö att etableras.
 
-        1. Ange alternativet **Konfigurera Common Data Service** till **Ja**.
-        2. Ange ett namn på Common Data Service-miljön.
+        1. Ange alternativet **Konfigurera Dataverse** till **Ja**.
+        2. Ange ett namn på Dataverse-miljön.
         3. Välj regionen som miljön ska distribueras till.
         4. Välj standardspråk och valuta för miljön.
 
@@ -71,12 +73,12 @@ Följ dessa steg för att konfigurera dubbelriktad anslutning.
 
         5. Markera kryssrutan **acceptera** för att ange att du godkänner villkoren.
 
-        ![Common Data Service fliken när din klientorganisation inte redan har Common Data Service-miljö](../dual-write/media/lcs_setup_2.png)
+        ![Dataverse fliken när din klientorganisation inte redan har Dataverse-miljö](../dual-write/media/lcs_setup_2.png)
 
 7. Slutför de kvarstående stegen i guiden **distributionsinställningar**.
-8. När miljön har statusen **distribuerad** ska du öppna sidan miljöinformation. I avsnittet **Common Data Service-miljöinformation** visas namnen på Finance and Operations-miljön och Common Data Service-miljön som är länkade.
+8. När miljön har statusen **distribuerad** ska du öppna sidan miljöinformation. I avsnittet **Dataverse-miljöinformation** visas namnen på Finance and Operations-miljön och Dataverse-miljön som är länkade.
 
-    ![Avsnittet Common Data Service-miljöinformation](../dual-write/media/lcs_setup_3.png)
+    ![Avsnittet Dataverse-miljöinformation](../dual-write/media/lcs_setup_3.png)
 
 9. En administratör för Finance and Operations-miljön måste logga in på LCS och välja **länka till CDS-skivor för appar** för att slutföra länken. På sidan miljöinformation visas kontaktinformationen för administratören.
 
@@ -84,7 +86,7 @@ Följ dessa steg för att konfigurera dubbelriktad anslutning.
 
 10. Öppna arbetsytan **Dataintegration** i Finance and Operations-miljön och kontrollera vilka mallar som är tillgängliga, välj **Länk till CDS för appar**.
 
-    ![Knappen länk till CDS för appar i avsnittet Common Data Service-miljöinformation](../dual-write/media/lcs_setup_4.png)
+    ![Knappen länk till CDS för appar i avsnittet Dataverse-miljöinformation](../dual-write/media/lcs_setup_4.png)
 
 > [!NOTE]
 > Du kan inte avlänka miljöer med hjälp av LCS. Om du vill ta bort länken för en miljö, öppna arbetsytan **Dataintegration** i Finance and Operations-miljön och välj sen **Ta bort länk**.

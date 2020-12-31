@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26a912aa2002f1d60dd650248bd3c68e45e68596
-ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
+ms.openlocfilehash: 7934f36877247460ec843201a08d4670456889f9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3810677"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679712"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Designa flerspråkiga rapporter i elektronisk rapportering
 
@@ -78,15 +77,15 @@ När du konfigurerar en ER-datamodell kan du lägga till ER-etiketter för den. 
 
 När en ER-datamodell konfigureras på det här sättet visas dess innehåll för användarna av ER-datamodelldesigner på varje användares prioriterade språk. Modellunderhåll är därför förenklat. Följande bilder visar hur den här funktionen fungerar för användare med inställd DE-AT och JA som önskat språk.
 
-![Layout för ER-datamodelldesigner för en användare som har inställt DE-AT som sitt prioriterade språk](./media/er-multilingual-labels-refer-de.png)
+![Layout för ER-datamodelldesigner för en användare som har inställt DE-AT som prioriterat språk](./media/er-multilingual-labels-refer-de.png)
 
-![Layout för ER-datamodelldesigner för en användare som har inställt JA som sitt prioriterade språk](./media/er-multilingual-labels-refer-ja.png)
+![Layout för ER-datamodelldesigner för en användare som har inställt JA som prioriterat språk](./media/er-multilingual-labels-refer-ja.png)
 
 ### <a name="model-mapping-component"></a>Komponent för modellmappning
 
 Eftersom ER-modellmappning baseras på en ER-datamodell, visas etiketterna för de datamodellelement som refereras till på användarens önskade språk i modellmappningsverktyget. Följande bild visar hur betydelsen av fältet **PurchaseOrder** beskrivs i den redigerbara modellmappningen genom att använda etiketten för attributet **Beskrivning** som har lagts till i den konfigurerade datamodellen. Observera att etiketten visas på användarens önskade språk (DE-AT i det här exemplet).
 
-![Layout för ER-mappningsdesigner för en användare som har inställt DE-AT som sitt prioriterade språk](./media/er-multilingual-labels-show-mapping.png)
+![Layout för ER-mappningsdesigner för en användare som har inställt DE-AT som prioriterat språk](./media/er-multilingual-labels-show-mapping.png)
 
 När attributet **Etikett** i datakällan **Användarindataparametrar** har konfigurerats som länkad till en ER-etikett, visas det parameterfält som motsvarar denna data källa i dialogrutan för användare under körning till användarna på det språk de föredrar.
 
@@ -158,7 +157,7 @@ ER har olika sätt att ange ett språk för en genererad rapport. I fältet **Sp
 
     ![Ange i ER-åtgärdsdesigner ett designtidsspråk som språket i en genererad rapport](./media/er-multilingual-labels-language-context-fixed.png)
 
-- **Definierade under körning** – Generera en rapport på ett språk som anges i körning. Om du väljer det här värdet ska du i fältet **Språk** konfigurera ett ER-uttryck som returnerar språk koden för språket, t.x. det språk som tillhör motsvarande kund.
+- **Definierade under körning** – Generera en rapport på ett språk som anges i körning. Om du väljer det här värdet ska du i fältet **Språk** konfigurera ett ER-uttryck som returnerar språk koden för språket, som det språk som tillhör motsvarande kund.
 
     ![Ange i ER-åtgärdsdesigner en körning definieras språket i en genererad rapport](./media/er-multilingual-labels-language-context-runtime.png)
 

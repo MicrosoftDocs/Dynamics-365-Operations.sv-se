@@ -1,6 +1,6 @@
 ---
 title: Enhetlig produktupplevelse
-description: I det här avsnittet beskrivs integreringen av produktinformation mellan Finance and Operations-appar och Common Data Service.
+description: I det här avsnittet beskrivs integreringen av produktinformation mellan Finance and Operations-appar och Dataverse.
 author: t-benebo
 manager: AnnBe
 ms.date: 12/12/2019
@@ -18,18 +18,20 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 3c564d580d2743d8a80cdf5667b1f95e00736d60
-ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
+ms.openlocfilehash: 46f2f846f1259d433630a69f17f7b8db9514e6fa
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4000774"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680058"
 ---
 # <a name="unified-product-experience"></a>Enhetlig produktupplevelse
 
 [!include [banner](../../includes/banner.md)]
 
-När ett affärsekosystem utgörs av Dynamics 365-program, t.ex. Finance, Supply Chain Management och Sales använder verksamheter ofta dessa program för att ange produktdata. Detta beror på att dessa appar ger en robust produktinfrastruktur som kompletteras med sofistikerade prissättningsbegrepp och korrekta lagerbehållningsdata. Verksamheter som använder ett externt PLM-system (Product Lifecycle Management) för inköp kan produktdata kanalisera produkter från Finance and Operations-appar till andra Dynamics 365-appar. Den enhetliga produktupplevelsen ger den integrerade produktens datamodell till Common Data Service, så att alla programanvändare inklusive Power Platform-användare kan dra nytta av de omfattande produktdata som kommer från Finance and Operations-appar.
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+När ett affärsekosystem utgörs av Dynamics 365-program, t.ex. Finance, Supply Chain Management och Sales använder verksamheter ofta dessa program för att ange produktdata. Detta beror på att dessa appar ger en robust produktinfrastruktur som kompletteras med sofistikerade prissättningsbegrepp och korrekta lagerbehållningsdata. Verksamheter som använder ett externt PLM-system (Product Lifecycle Management) för inköp kan produktdata kanalisera produkter från Finance and Operations-appar till andra Dynamics 365-appar. Den enhetliga produktupplevelsen ger den integrerade produktens datamodell till Dataverse, så att alla programanvändare inklusive Power Platform-användare kan dra nytta av de omfattande produktdata som kommer från Finance and Operations-appar.
 
 Här är produktdatamodellen från Sales.
 
@@ -39,20 +41,20 @@ Här är produktdatamodellen från Finance and Operations-appar.
 
 ![Datamodell för produkter i Finance and Operations](media/dual-write-products-5.jpg)
 
-Dessa två produktdatamodeller har integrerats i Common Data Service som visas nedan.
+Dessa två produktdatamodeller har integrerats i Dataverse som visas nedan.
 
 ![Datamodell för produkter i Dynamics 365-appar](media/dual-write-products-6.jpg)
 
-Dubbelriktade entitetsmappningar för produkter har utformats så att data endast kan flödas på ett sätt nästan i realtid från Finance and Operations-appar till Common Data Service. Produktinfrastrukturen har dock gjorts öppen så att den är dubbelriktad vid behov. Även om du kan anpassa den på din egen risk eftersom Microsoft inte rekommenderar det här tillvägagångssättet.
+Dubbelriktade tabellmappningar för produkter har utformats så att data endast kan flödas i en riktning nästan i realtid från Finance and Operations-appar till Dataverse. Produktinfrastrukturen har dock gjorts öppen så att den är dubbelriktad vid behov. Även om du kan anpassa den på din egen risk eftersom Microsoft inte rekommenderar det här tillvägagångssättet.
 
 ## <a name="templates"></a>Mallar
 
-Produktinformationen innehåller all information som är relaterad till produkten och dess definition, t.ex. produktdimensioner eller spårnings- och lagringsdimensioner. Som framgår av följande tabell skapas en samling med enhetsmappningar för synkronisering av produkter och relaterad information.
+Produktinformationen innehåller all information som är relaterad till produkten och dess definition, t.ex. produktdimensioner eller spårnings- och lagringsdimensioner. Som framgår av följande tabell skapas en samling med tabellmappningar för synkronisering av produkter och relaterad information.
 
 Finance and Operations-appar | Andra Dynamics 365-appar | beskrivning
 -----------------------|--------------------------------|---
 Frisläppta produkter V2 | msdyn\_sharedproductdetails | Entiteten **msdyn\_sharedproductdetails** innehåller fälten från Finance and Operations-appar som definierar produkten och som innehåller produktens ekonomi- och hanteringsinformation. 
-Common Data Service frisläppta specifika produkter | Produkt | Entiteten **Produkt** innehåller de fält som definierar produkten. Den omfattar enskilda produkter (produkter med undertypprodukt) och produktvarianter. Tabellen nedan visar mappningarna.
+Dataverse frisläppta specifika produkter | Produkt | Entiteten **Produkt** innehåller de fält som definierar produkten. Den omfattar enskilda produkter (produkter med undertypprodukt) och produktvarianter. Tabellen nedan visar mappningarna.
 Produktnummer med identifierad streckkod | msdyn\_productbarcodes | Produktstreckkoder används för att identifiera produkter på ett unikt vis.
 Standardorderinställningar | msdyn\_productdefaultordersettings
 Produktspecifika standardorderinställningar | msdyn_productdefaultordersettings
@@ -63,36 +65,36 @@ Färger | msdyn\_productcolors
 Storlekar | msdyn\_productsizes
 Stilar | msdyn\_productsytles
 Konfigurationer | msdyn\_productconfigurations
-Produktmallfärger | msdyn_sharedproductcolors | Entiteten **Delad produktfärg** anger vilka färger en viss produktmall kan ha. Det här konceptet migreras till Common Data Service för att hålla data konsekventa.
-Produktmallstorlekar | msdyn_sharedproductsizes | Entiteten **Delad produktstorlek** anger vilka storlekar en viss produktmall kan ha. Det här konceptet migreras till Common Data Service för att hålla data konsekventa.
-Produktmallutföranden | msdyn_sharedproductstyles | Entiteten **Delad produktstil** anger vilka stilar en viss produktmall kan ha. Det här konceptet migreras till Common Data Service för att hålla data konsekventa.
-Produktmallkonfigurationer | msdyn_sharedproductconfigurations | Entiteten **Delad produktkonfiguration** anger vilka konfigurationer en viss produktmall kan ha. Det här konceptet migreras till Common Data Service för att hålla data konsekventa.
+Produktmallfärger | msdyn_sharedproductcolors | Entiteten **Delad produktfärg** anger vilka färger en viss produktmall kan ha. Det här konceptet migreras till Dataverse för att hålla data konsekventa.
+Produktmallstorlekar | msdyn_sharedproductsizes | Entiteten **Delad produktstorlek** anger vilka storlekar en viss produktmall kan ha. Det här konceptet migreras till Dataverse för att hålla data konsekventa.
+Produktmallutföranden | msdyn_sharedproductstyles | Entiteten **Delad produktstil** anger vilka stilar en viss produktmall kan ha. Det här konceptet migreras till Dataverse för att hålla data konsekventa.
+Produktmallkonfigurationer | msdyn_sharedproductconfigurations | Entiteten **Delad produktkonfiguration** anger vilka konfigurationer en viss produktmall kan ha. Det här konceptet migreras till Dataverse för att hålla data konsekventa.
 Alla produkter | msdyn_globalproducts | Entiteten alla produkter innehåller alla produkter tillgängliga i Finance and Operations-appar, både frisläppta produkter och produkter som inte frisläppts.
 Enhet | uoms
 Enhetskonverteringar | msdyn_ unitofmeasureconversions
 Produktspecifik måttenhetskonvertering | msdyn_productspecificunitofmeasureconversion
 Produktkategorier | msdyn_productcategories | Var och en av produktkategorierna och informationen om dess struktur och egenskaper finns i entiteten produktkategori. 
-Produktkategorihierarkier | msdyn_productcategoryhierarhies | Du kan använda produkthierarkier för att kategorisera eller gruppera produkter. Kategorihierarkier är tillgängliga i Common Data Service använda entiteten produktkategorihierarki. 
+Produktkategorihierarkier | msdyn_productcategoryhierarhies | Du kan använda produkthierarkier för att kategorisera eller gruppera produkter. Kategorihierarkier är tillgängliga i Dataverse använda entiteten produktkategorihierarki. 
 Produktkategorihierarkiroller | msdyn_productcategoryhierarchies | Produkthierarkier kan användas för olika roller i D365 Finance and Operations. De specificerar vilken kategori som används i varje roll som entiteten produktkategori används. 
 Produktkategoritilldelningar | msdyn_productcategoryassignments | Så här tilldelar du en produkt till en kategori där entiteten produktkategoritilldelningar kan användas.
 
 ## <a name="integration-of-products"></a>Integrering av produkter
 
-I den här modellen representeras produkten av kombinationen av två entiteter i Common Data Service: **Produkt** och **msdyn\_sharedproductdetails**. Den första entiteten innehåller definitionen av en produkt (den unika identifieraren för produkten, produktens namn och beskrivningen), den andra entiteten innehåller fälten som lagras på produktnivå. Kombinationen av dessa två entiteter används för att definiera produkten enligt begreppet lagerhållningsenhet (SKU). Varje frisläppt produkt får sin information i nämnda enheter (information om produkt och delad produkt). Om du vill hålla reda på alla produkter (frisläppta och icke frisläppta) används entiteten **globala produkter**. 
+I den här modellen representeras produkten av kombinationen av två tabeller i Dataverse: **Produkt** och **msdyn\_sharedproductdetails**. Den första entiteten innehåller definitionen av en produkt (den unika identifieraren för produkten, produktens namn och beskrivningen), den andra entiteten innehåller fälten som lagras på produktnivå. Kombinationen av dessa två tabeller används för att definiera produkten enligt begreppet lagerhållningsenhet (SKU). Varje frisläppt produkt får sin information i nämnda tabeller (information om produkt och delad produkt). Om du vill hålla reda på alla produkter (frisläppta och icke frisläppta) används entiteten **globala produkter**. 
 
-Eftersom produkten representeras som SKU kan begreppen distinkta produkter, produktmallar och produktvarianter fångas in i Common Data Service på följande sätt:
+Eftersom produkten representeras som SKU kan begreppen distinkta produkter, produktmallar och produktvarianter fångas in i Dataverse på följande sätt:
 
 - **Produkter med undertypsprodukter** är produkter som definieras av dem själva. Inga dimensioner behöver definieras. Ett exempel på detta är en specifik bok. För dessa produkter skapas en post i entiteten **produkt** och en post skapas i entiteten **msdyn\_sharedproductdetails**. Ingen produktfamiljepost skapas.
-- **Produktmallar** används som allmänna produkter som innehåller definitionen och reglerna som bestämmer beteendet i affärsprocessern Baserat på dessa definitioner kan distinkta produkter som kallas produktvarianter genereras. T.ex. t-shirt är produktmall och kan ha färg och storlek som dimensioner. Varianter kan frisläppas med olika kombinationer av dessa dimensioner, t.ex. en liten blå t-shirt eller en medelstor grön t-shirt. I integrationen skapas en post per variant i produktregistret. Den här posten innehåller den variantspecifika informationen, t.ex. de olika dimensionerna. Den allmänna informationen för produkten lagras i entiteten **msdyn\_sharedproductdetails**. (Denna allmänna information finns i produktmallen). Produktmallinformationen synkroniseras till Common Data Service så snart den frisläppta produktmallen skapas (men innan varianter släpps).
+- **Produktmallar** används som allmänna produkter som innehåller definitionen och reglerna som bestämmer beteendet i affärsprocessern Baserat på dessa definitioner kan distinkta produkter som kallas produktvarianter genereras. T.ex. t-shirt är produktmall och kan ha färg och storlek som dimensioner. Varianter kan frisläppas med olika kombinationer av dessa dimensioner, t.ex. en liten blå t-shirt eller en medelstor grön t-shirt. I integrationen skapas en post per variant i produktregistret. Den här posten innehåller den variantspecifika informationen, t.ex. de olika dimensionerna. Den allmänna informationen för produkten lagras i entiteten **msdyn\_sharedproductdetails**. (Denna allmänna information finns i produktmallen). Produktmallinformationen synkroniseras till Dataverse så snart den frisläppta produktmallen skapas (men innan varianter släpps).
 - **Distinkta produkter** refererar till alla produkters undertypprodukt och alla produktvarianter. 
 
 ![Datamodell för produkter](media/dual-write-product.png)
 
 Om funktionen för dubbelriktad skrivning är aktiverad kommer produkterna från Finance and Operations att synkroniseras i andra Dynamics 365-produkter i tillståndet **utkast**. De läggs till den första prislista med samma valuta. Med andra ord läggs de till den första prislistan i en Dynamics 365-app som matchar valutan för den juridiska person där produkten släpps i en Finance and Operations-app. 
 
-Som standard synkroniseras produkter från Finance and Operations-appar till andra Dynamics 365-appar i tillståndet **utkast**. Om du vill synkronisera produkten med tillståndet **Aktiv** så att du kan använda den direkt på försäljningsorderofferter, till exempel, måste du välja följande inställning: under **System> Adminstration > Systemadministration > Systeminställningar > Försäljning** , välj **skapa produkter i aktivt tillstånd = ja**. 
+Som standard synkroniseras produkter från Finance and Operations-appar till andra Dynamics 365-appar i tillståndet **utkast**. Om du vill synkronisera produkten med tillståndet **Aktiv** så att du kan använda den direkt på försäljningsorderofferter, till exempel, måste du välja följande inställning: under **System> Adminstration > Systemadministration > Systeminställningar > Försäljning**, välj **skapa produkter i aktivt tillstånd = ja**. 
 
-Observera att synkroniseringen av produkter sker från Finance and Operations-appar till Common Data Service. Det innebär att värdena i fälten för produktentitet kan ändras i Common Data Service, men när synkroniseringen utlöses (när ett produktfält ändras i en Finance and Operations-appar) skrivs värdena över i Common Data Service. 
+Observera att synkroniseringen av produkter sker från Finance and Operations-appar till Dataverse. Det innebär att värdena i fälten för produktentitet kan ändras i Dataverse, men när synkroniseringen utlöses (när ett produktfält ändras i en Finance and Operations-appar) skrivs värdena över i Dataverse. 
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
@@ -104,7 +106,7 @@ Observera att synkroniseringen av produkter sker från Finance and Operations-ap
 
 ## <a name="product-dimensions"></a>Produktdimensioner 
 
-Produktdimensioner är egenskaper som identifierar en produktvariant. De fyra produktdimensionerna (färg, storlek, stil och konfiguration) mappas också till Common Data Service för att definiera produktvarianter. Följande bild visar datamodellen för produktdimensionsfärgen. Samma modell används i storlekar, stilar och konfigurationer. 
+Produktdimensioner är egenskaper som identifierar en produktvariant. De fyra produktdimensionerna (färg, storlek, stil och konfiguration) mappas också till Dataverse för att definiera produktvarianter. Följande bild visar datamodellen för produktdimensionsfärgen. Samma modell används i storlekar, stilar och konfigurationer. 
 
 ![Datamodell för produktdimensioner](media/dual-write-product-two.png)
 
@@ -118,7 +120,7 @@ Produktdimensioner är egenskaper som identifierar en produktvariant. De fyra pr
 
 När en produkt har olika produktdimensioner (t.ex. en produktmall har storlek och färg som produktdimensioner) definieras varje enskild produkt (dvs. varje produktvarianten) som en kombination av dessa produktdimensioner. Produktnummer B0001 är t.ex. en extra liten svart T-shirt och produktnummer B0002 är en liten svart T-shirt. I det här fallet definieras de befintliga kombinationerna av produktdimensioner. T.ex. kan t-shirten från föregående exempel vara extra small och svart, small och svart, medium och svart eller large och svart, men inte vara extra large och svarta. Med andra ord anges de produktdimensioner som en produktmall kan utföra och varianter kan frisläppas baserat på dessa värden.
 
-Om du vill hålla reda på vilka produktdimensioner en produktmall kan utföra, skapas följande entiteter och mappas i Common Data Service för varje produktdimension. Mer information finns i [Översikt över produktinformation](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/product-information).
+Om du vill hålla reda på vilka produktdimensioner en produktmall kan utföra, skapas följande tabeller och mappas i Dataverse för varje produktdimension. Mer information finns i [Översikt över produktinformation](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/product-information).
 
 [!include [product colors](includes/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 
@@ -132,7 +134,7 @@ Om du vill hålla reda på vilka produktdimensioner en produktmall kan utföra, 
 
 ## <a name="default-order-settings-and-product-specific-default-order-settings"></a>Standardorderinställningar och produktspecifika standardorderinställningar
 
-Standardorderinställningar definierar site och lagerställe som artiklar kommer att anskaffas från eller lagras, och de minimum-, maximum-, multipla- och standardkvantiteter som ska användas för handel eller lagerhantering, ledtider, stoppflagga och orderlöftesmetod. Informationen kommer att vara tillgänglig i Common Data Service med hjälp av standardorderinställningarna för orderinställningar och produktspecifika entiteter för standardorderinställningar. Mer information om funktionen finns i avsnittet [standardorderinställningar](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/default-order-settings).
+Standardorderinställningar definierar site och lagerställe som artiklar kommer att anskaffas från eller lagras, och de minimum-, maximum-, multipla- och standardkvantiteter som ska användas för handel eller lagerhantering, ledtider, stoppflagga och orderlöftesmetod. Informationen kommer att vara tillgänglig i Dataverse med hjälp av standardorderinställningarna för orderinställningar och produktspecifika entiteter för standardorderinställningar. Mer information om funktionen finns i avsnittet [standardorderinställningar](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/default-order-settings).
 
 [!include [product sizes](includes/InventProductDefaultOrderSettingsEntity-msdyn-productdefaultordersetting.md)]
 
@@ -140,7 +142,7 @@ Standardorderinställningar definierar site och lagerställe som artiklar kommer
 
 ## <a name="unit-of-measure-and-unit-of-measure-conversions"></a>Måttenheter och konverteringar av måttenheter
 
-Måttenheterna och deras respektive konverteringar är tillgängliga i Common Data Service enligt datamodellen som visas i diagrammet.
+Måttenheterna och deras respektive konverteringar är tillgängliga i Dataverse enligt datamodellen som visas i diagrammet.
 
 ![Datamodell för måttenhet](media/dual-write-product-three.png)
 
@@ -152,15 +154,15 @@ Måttenhetens koncept integreras mellan Finance and Operations-appar och andra D
 
 [!include [product-specific unit of measure conversions](includes/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
 
-## <a name="initial-synchronization-of-units-data-matching-between-finance-and-operations-and-common-data-service"></a>Initial synkronisering av enhetsdata matchar mellan Finance and Operations och Common Data Service
+## <a name="initial-synchronization-of-units-data-matching-between-finance-and-operations-and-dataverse"></a>Initial synkronisering av enhetsdata matchar mellan Finance and Operations och Dataverse
 
 ### <a name="initial-synchronization-of-units"></a>Initial synkronisering av enheter
 
-När dubbelriktat är aktiverat synkroniseras enheter från Finance and Operations-appar till andra Dynamics 365-appar. Enhetsgrupperna som synkroniseras från Finance and Operations-appar i Common Data Service har en flagguppsättning som anger att de är "externt underhåll".
+När dubbelriktat är aktiverat synkroniseras enheter från Finance and Operations-appar till andra Dynamics 365-appar. Enhetsgrupperna som synkroniseras från Finance and Operations-appar i Dataverse har en flagguppsättning som anger att de är "externt underhåll".
 
 ### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Matchande enheter och enhetsklasser/gruppers data från Finance and Operations och andra Dynamics 365-appar
 
-För det första är det viktigt att notera att integrationsnyckeln för enheten är msdyn_symbol. Därför måste värdet vara unikt i Common Data Service eller andra Dynamics 365-appar. Eftersom i andra Dynamics 365-appar är det paret "enhetsgrupp-ID" och "namn" som definierar unikheten av en enhet, men du måste ta hänsyn till olika scenarier för matchande enhetsdata mellan Finance and Operations-appar och Common Data Service.
+För det första är det viktigt att notera att integrationsnyckeln för enheten är msdyn_symbol. Därför måste värdet vara unikt i Dataverse eller andra Dynamics 365-appar. Eftersom i andra Dynamics 365-appar är det paret "enhetsgrupp-ID" och "namn" som definierar unikheten av en enhet, men du måste ta hänsyn till olika scenarier för matchande enhetsdata mellan Finance and Operations-appar och Dataverse.
 
 För enhetsmatchning/överlappning i Finance and Operations-appar och andra Dynamics 365-appar:
 
@@ -169,7 +171,7 @@ För enhetsmatchning/överlappning i Finance and Operations-appar och andra Dyna
 
 För enheter och enhetsklasser i Finance and Operations-appar som inte finns i andra Dynamics 365-appar:
 
-Som en del av dubbelriktad skapas och synkroniseras enhetsgrupperna från Finance and Operations-appar och de tillhörande enheterna i andra Dynamics 365-appar och Common Data Service och enhetsgruppen anges som "externt underhåll". Ingen extra initiering krävs.
+Som en del av dubbelriktad skapas och synkroniseras enhetsgrupperna från Finance and Operations-appar och de tillhörande enheterna i andra Dynamics 365-appar och Dataverse och enhetsgruppen anges som "externt underhåll". Ingen extra initiering krävs.
 
 För enheter i andra Dynamics 365-appar som inte existerar i Finance and Operations-appar:
 
@@ -198,24 +200,24 @@ Produktpolicyer är uppsättningar med policyer som används för att definiera 
 
 ## <a name="integration-key-for-products"></a>Integrationsnyckel för produkter 
 
-För att unikt identifiera produkter mellan Dynamics 365 for Finance and Operations och produkter i Common Data Service används integrationsnycklarna. För produkter är **(productnumber)** den unika nyckel som identifierar en produkt i Common Data Service. Den består av sammanfogningen av: **(företag, msdyn_productnumber)**. **Företaget** anger den juridiska personen i Finance and Operations och **msdyn_productnumber** anger produktnumret för den specifika produkten i Finance and Operations. 
+För att unikt identifiera produkter mellan Dynamics 365 for Finance and Operations och produkter i Dataverse används integrationsnycklarna. För produkter är **(productnumber)** den unika nyckel som identifierar en produkt i Dataverse. Den består av sammanfogningen av: **(företag, msdyn_productnumber)**. **Företaget** anger den juridiska personen i Finance and Operations och **msdyn_productnumber** anger produktnumret för den specifika produkten i Finance and Operations. 
 
-För användare av andra Dynamics 365-appar identifieras produkten i användargränssnittet med **msdyn_productnumber** (observera att fältets etikett är **produktnummer** ). I produktformuläret visas både företaget och msydn_productnumber. Den unika nyckeln för en produkt visas dock inte i fältet (productNumber). 
+För användare av andra Dynamics 365-appar identifieras produkten i användargränssnittet med **msdyn_productnumber** (observera att fältets etikett är **produktnummer**). I produktformuläret visas både företaget och msydn_productnumber. Den unika nyckeln för en produkt visas dock inte i fältet (productNumber). 
 
-Om du skapar appar i Common Data Service ska du vara uppmärksam på att använda **productnumber** (det unika produkt-ID) som integrationsnyckel. Använd inte **msdyn_productnumber** , eftersom det inte är unikt. 
+Om du skapar appar i Dataverse ska du vara uppmärksam på att använda **productnumber** (det unika produkt-ID) som integrationsnyckel. Använd inte **msdyn_productnumber**, eftersom det inte är unikt. 
 
-## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>Initial synkronisering av produkter och migrering av data från Common Data Service till Finance and Operations
+## <a name="initial-synchronization-of-products-and-migration-of-data-from-dataverse-to-finance-and-operations"></a>Initial synkronisering av produkter och migrering av data från Dataverse till Finance and Operations
 
 ### <a name="initial-synchronization-of-products"></a>Initial synkronisering av produkter 
 
-När dubbelriktat är aktiverat synkroniseras produkter från Finance and Operations-appar till Common Data Service och andra modellstyrda appar i Dynamics 365. Produkter som skapats i Common Data Service och andra Dynamics 365-appar före dubbelriktning frisläpptes kommer inte att uppdateras eller matchas med produktdata från Finance and Operations.
+När dubbelriktat är aktiverat synkroniseras produkter från Finance and Operations-appar till Dataverse och andra modellstyrda appar i Dynamics 365. Produkter som skapats i Dataverse och andra Dynamics 365-appar före dubbelriktning frisläpptes kommer inte att uppdateras eller matchas med produktdata från Finance and Operations.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Matchande produktdata från Finance and Operations och andra Dynamics 365-appar
 
-Om samma produkter hålls (överlappande/matchande) i Finance and Operations och i Common Data Service och i andra Dynamics 365-appar, när du aktiverar dubbelriktning sker synkroniseringen av produkter från Finance and Operations och dubbla poster visas i Common Data Service för samma produkt.
-För att undvika den tidigare situationen, om andra Dynamics 365-appar har produkter som överlappar/matchar med Finance and Operations, måste administratören som aktiverar dubbelriktning initiera fälten **företag** (exempel: "USMF") och **msdyn_productnumber** (exempel: "1234:Black:S") innan synkroniseringen av produkterna äger rum. Med andra ord måste dessa två fält i produkten i Common Data Service fyllas i med respektive företag Finance and Operations som produkten måste matchas mot och med dess produktnummer. 
+Om samma produkter hålls (överlappande/matchande) i Finance and Operations och i Dataverse och i andra Dynamics 365-appar, när du aktiverar dubbelriktning sker synkroniseringen av produkter från Finance and Operations och dubbla poster visas i Dataverse för samma produkt.
+För att undvika den tidigare situationen, om andra Dynamics 365-appar har produkter som överlappar/matchar med Finance and Operations, måste administratören som aktiverar dubbelriktning initiera fälten **företag** (exempel: "USMF") och **msdyn_productnumber** (exempel: "1234:Black:S") innan synkroniseringen av produkterna äger rum. Med andra ord måste dessa två fält i produkten i Dataverse fyllas i med respektive företag Finance and Operations som produkten måste matchas mot och med dess produktnummer. 
 
-När synkroniseringen aktiveras och genomförs synkroniseras produkter från Finance and Operations med de matchade produkterna i Common Data Service och andra Dynamics 365-appar. Detta gäller för både separata produkter och produktvarianter. 
+När synkroniseringen aktiveras och genomförs synkroniseras produkter från Finance and Operations med de matchade produkterna i Dataverse och andra Dynamics 365-appar. Detta gäller för både separata produkter och produktvarianter. 
 
 
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Migrering av produktdata från och andra Dynamics 365-appar till Finance and Operations

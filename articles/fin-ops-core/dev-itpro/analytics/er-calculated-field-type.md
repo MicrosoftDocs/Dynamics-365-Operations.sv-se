@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c68f0a0e2481c69add8c50a1581466ad0b1483c0
-ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
+ms.openlocfilehash: 3f21b323ddbf653bf8ca8dd1f879a6bdbddcdefc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759921"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681266"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Stödparameteranrop till ER-datakällor för typen beräknat fält
 
@@ -57,7 +56,7 @@ Du måste också hämta följande filer och lagra dem lokalt.
 ## <a name="sign-in-to-your-rcs-instance"></a>Logga in på RCS-instansen.
 I det här exemplet skapar du en konfiguration för exempelföretaget, Litware, Inc. Först, i RCS, måste du slutföra stegen i proceduren [Skapa en konfigurationsleverantör och markera den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md):
 
-1. Välj **elektronisk rapportering**på standardinstrumentpanelen.
+1. Välj **elektronisk rapportering** på standardinstrumentpanelen.
 2. Välj **rapporteringskonfigurationer**.
 3. Importera nedladdade konfigurationer till RCS i följande ordning: datamodell, metadata, modellmappning, format. Utför följande steg för varje ER-konfiguration:
 
@@ -221,7 +220,7 @@ På sidan **formatdesigner** kräver det konfigurerade parametriserade beräknad
 
 Återkommande anrop av valfritt parametriserat beräknat fält stöds inte.
 
-Du kan välja **Redigera formel**och ändra det argument som används som standard det parametiserade beräknade fältet i den valda bindningen. Om detta argument saknas kan det orsaka fel under körningen och användarna informeras om en sådan situation när det aktuella formatet valideras.
+Du kan välja **Redigera formel** och ändra det argument som används som standard det parametiserade beräknade fältet i den valda bindningen. Om detta argument saknas kan det orsaka fel under körningen och användarna informeras om en sådan situation när det aktuella formatet valideras.
 
 ![Varningsmeddelande för validering](media/er-calculated-field-type-10.png)
 

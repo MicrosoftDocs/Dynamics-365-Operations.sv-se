@@ -10,31 +10,30 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cbecf178d0588c51b831fbd55b536d3e4e41c27
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 34ebb9c6262defa5ccf520ad51101eb3bc613fef
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771129"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682755"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Innehållspaket för ekonomiska resultat för PowerBI.com
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Den här PowerBI.com lösningen är föråldrad som dokumenteras i [borttagna eller inaktuella funktioner för Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Den här PowerBI.com-lösningen är inaktuell vilket dokumenteras i [orttagna och utfasade funktioner för Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Det här avsnittet beskriver PowerBI.com-lösning för **finansiellt resultat**. Det beskriver instrumentpanelen och de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa lösningen.
 
 ## <a name="main-account-setup"></a>Huvudkontoinställningar
-Konfigurationen av huvudkonton är viktig eftersom organisationer vill att skuld- och intäktsbelopp ska anges som positiva belopp i rapporter. Huvudkontotypen måste anges som **Skuld** eller **Intäkt** för att huvudkontona ska anges som positiva belopp. När dessa kontotyper används, kommer rapporteringen via Power BI att vända på tecknen och ange beloppen som positiva.
+Konfigurationen av huvudkonton är viktig eftersom organisationer vill att skuld- och intäktsbelopp ska anges som positiva belopp i rapporter. Huvudkontotypen måste anges som **Skuld** eller **Intäkt** för att huvudkontona ska anges som positiva belopp. När dessa kontotyper används, kommer rapporteringen via Power BI att vända tecknen och ange beloppen som positiva.
 
 ## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>Instrumentpanelen och rapporterna som ingår i PowerBI.com-lösning
 Instrumentpanelen innehåller summerade datarutor baserade på underliggande rapporter. Varje ruta innehåller sammanfattad information för innevarande år för alla företag i en organisation. Här följer några exempel på paneler:

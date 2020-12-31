@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 6c4b18a3cf2ba313756d5f761ef1beb2c3015516
-ms.sourcegitcommit: 56add4c49c35c65a75fa2ca5234927e7f7cd66ef
+ms.openlocfilehash: a9035f128a1db4bcd126f09c0fe30c1857fa884a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781155"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680887"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Konfigurera ER-modellmappningar som är beroende av landkontext
 
@@ -143,8 +142,8 @@ Som du har sett fungerar valet av modellmappning för körningen av ett ER-forma
 
 - Definitionen modellmappning som används för ett ER-format anges i (**startpunkt 1** i exemplen i det här avsnittet).
 - Alla mappningskonfigurationer som innehåller en mappning som har den angivna definitionen, och som uppfyller eventuella kontextbegränsningar för land/region som har konfigurerats, kan användas för att köra ER-formatet **Mappning (allmänt)**, **Mappning (allmänt) - anpassa** och **Mappning (FR)** i exemplen i det här avsnittet.
-- Alla standardmodellmappningar som har begränsningar för land/region har högst prioritet för markering (**Mappning (FR)** i exemplen i det här avsnittet.
-- Alla standardmodellmappningar som inte har begränsningar för land/region har nästa högsta prioritet för markering (**Mappning (allmänt) - anpassa** i exemplen i det här avsnittet.
+- Alla standardmodellmappningar som har begränsningar för land/region har högst prioritet för markering (**Mappning (FR)** i exemplen i det här avsnittet).
+- Alla standardmodellmappningar som inte har begränsningar för land/region har nästa högsta prioritet för markering (**Mappning (allmänt) - anpassa** i exemplen i det här avsnittet).
 - Alla modellmappningar som har begränsningar i land/region har högre prioritet än en modellmappning som saknar sammanhangsbegränsningar för land/region.
 
 Följande tabell ger information om resultatet av val av modellmappning i alla möjliga fall av inställningar av modellmappning:
@@ -202,7 +201,7 @@ I tabellen anger ett plus tecken (+) närvaron av en konfiguration av modellmapp
 
 Observera att en ny post har lagts till i ER-felsökningsloggen för det körda ER-formatet. Eftersom fältet **nivå** för den här posten är inställt på **info**, är posten information. Eftersom fältet Formatkomponent är inställt på **Mappningskonfiguration** informerar posten om en modellmappning som användes under körningen av ER-formatet **Format för att lära mappningar** (välja fältet **Konfigurationsnamn**). Innehållet av fältet **Innehållet text** informerar om att mappningskomponenten för mappningskonfigurationen **Mappning (FR)** som komponent som finns i **Mappning (FR)** som har använts för att köra denna rapport.
 
-## <a name="appendix1"></a> Bilaga 1
+## <a name="appendix-1"></a><a name="appendix1"></a> Bilaga 1
 
 ### <a name="configure-a-sample-data-model"></a>Konfigurera en exempel datamodell
 
@@ -212,7 +211,7 @@ I det här exemplet skapar du en konfiguration för exempelföretaget, Litware, 
 
 #### <a name="create-an-er-data-model-configuration"></a>Skapa en ER datamodellskonfiguration
 
-1.  Välj **elektronisk rapportering**på standardinstrumentpanelen.
+1.  Välj **elektronisk rapportering** på standardinstrumentpanelen.
 2.  Välj panelen **rapporteringskonfigurationer**.
 3.  Välj **Designer** på sidan **Skapa konfiguration**.
 4.  I listrutan i fältet **namn** anger du **modell för att lära dig mappningar**.
@@ -343,7 +342,7 @@ Observera att utkastversion 1 av den här ER-konfigurationen är klar för redig
 4.  Välj **Spara**.
 5.  Stäng sidan.
 
-## <a name="appendix2"></a> Bilaga 2
+## <a name="appendix-2"></a><a name="appendix2"></a> Bilaga 2
 
 ### <a name="configure-a-sample-model-mapping-for-general-customization"></a>Konfigurera en exempel modellmappning för allmän anpassning
 
@@ -403,7 +402,7 @@ Observera att utkastversion 1 av den här ER-konfigurationen är klar för redig
 
 Observera att den skapade konfigurationen sparas som slutförd version 1.
 
-## <a name="appendix3"></a> Bilaga 3
+## <a name="appendix-3"></a><a name="appendix3"></a> Bilaga 3
 
 ### <a name="configure-a-sample-model-mapping-for-countryregion-specific-customization"></a>Konfigurera en exempel modellmappning för lands-/regionspecifika anpassningar
 
