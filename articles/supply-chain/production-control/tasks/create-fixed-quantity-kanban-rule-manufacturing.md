@@ -74,3 +74,6 @@ Den här proceduren fokuserar på inställningarna som krävs för att skapa en 
     * Detta skapar 5 kanbans.  
     * Observera att 5 kanbans, för 10 vardera, skapades för den här kanban-regeln för tillverkning. Detta är det sista steget i den här proceduren.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

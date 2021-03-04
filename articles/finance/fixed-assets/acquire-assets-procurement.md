@@ -109,3 +109,6 @@ Mer information finns i [Integrering av anläggningstillgångar](fixed-asset-int
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

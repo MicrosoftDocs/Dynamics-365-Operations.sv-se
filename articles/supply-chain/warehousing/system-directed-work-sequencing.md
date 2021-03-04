@@ -305,3 +305,6 @@ Systemstyrda frågor för arbetsserier *inkluderar*. Det är viktigt att du minn
 I exemplet från det här scenariot har arbets-ID *4* också fångats in av frågan. När den skapades lades två rader till: en för 25 ea och en annan för 10 ea. Arbetet uppvisades fortfarande för användaren, eftersom minst en arbetsrad har en kvantitet som är mindre än 20 ea.
 
 Beroende på scenariot kan du förhindra detta genom att använda arbetsavbrott.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

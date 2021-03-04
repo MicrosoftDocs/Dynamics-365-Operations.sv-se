@@ -54,3 +54,6 @@ Immigration Reform and Control Act kräver att amerikanska arbetsgivare verifier
 22. Ange eller välj ett värde i fältet Dokumentnummer.
 23. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

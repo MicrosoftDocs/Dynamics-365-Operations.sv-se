@@ -121,3 +121,6 @@ När alla artiklar har registrerats uppdaterar lagerchefen eller inköpschefen d
 
 ## <a name="summary"></a>Sammanfattning
 Sidan **Införselöversikt** kan hjälpa lagerchefen och lagerarbetare att få en översikter över förväntat arbete som måste utföras av ett inkommande process. Sidan kan också användas för att starta artikelinleveransprocessen för att hjälpa till att garantera att artiklarna spåras i den första posten i lagret.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

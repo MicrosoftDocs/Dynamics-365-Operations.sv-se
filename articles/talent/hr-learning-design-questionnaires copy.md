@@ -246,3 +246,6 @@ Alternativt kan du skapa en enkät så att om den svarande väljer Svar A på fr
 
 [Visa och utvärdera resultaten av enkäter](evaluate-questionnaire-results.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -128,3 +128,6 @@ I det här exemplet matchar alla konton, som är en del av kontostrukturen - Res
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

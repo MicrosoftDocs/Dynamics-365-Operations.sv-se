@@ -82,3 +82,6 @@ Mottagandet profiler tilldelas direkt till skrivare via hårdvara profil.
 
 > [!NOTE]
 > Om två skrivare används en skrivare kan användas för att skriva ut 40-kolumnen termiska kvitton. Den andra skrivare används vanligen för att skriva ut sida typerna som kräver mer information. Dessa inleveranstyperna inkludera kundens inköpsorder och kundfakturor.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

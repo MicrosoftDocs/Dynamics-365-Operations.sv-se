@@ -193,3 +193,6 @@ Det finns ett undantag från regeln om att batchorder gäller för batchbalanser
 Om en formel innehåller en aktiv beståndsdel för en produkt som har aktiverats för lagerstyrningsprocesser och batchnumret är under plats i reservationshierarkin gäller inte batchordern för batchbalansering.
 
 En batchorder inte gäller för batchbalansering genomgår den vanliga processcykeln för batchorder.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

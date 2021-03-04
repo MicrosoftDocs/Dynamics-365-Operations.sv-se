@@ -87,3 +87,6 @@ Följande exempel visar hur du ändrar startsidan genom att ändra videon som vi
 [Utöka en kategorilandningssida](enrich-category-page.md)
 
 [Kontrollera tillgängligheten för sidinnehåll](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

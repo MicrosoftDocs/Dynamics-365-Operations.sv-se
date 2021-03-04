@@ -52,3 +52,6 @@ Detta är den fjärde proceduren av fem som illustrerar leverantörbetalningspro
 4. I listan klickar du på länken på SEPA CT-raden.
 5. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

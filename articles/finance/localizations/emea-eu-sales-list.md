@@ -160,3 +160,6 @@ När du har slutfört rapporteringen för en specifik period (exempelvis när sk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

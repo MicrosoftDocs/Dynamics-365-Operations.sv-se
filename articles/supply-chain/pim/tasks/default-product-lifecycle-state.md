@@ -62,3 +62,6 @@ Den här proceduren visar hur du skapar produktlivscykelns standardtillstånd oc
 > [!NOTE]
 > Anta att du har ställt in ett aktivt tillstånd, kan du nu välja det aktiva tillståndet så att produkten används i huvudplanering och beräkning av strukturlistenivå. Självklart lönar det sig bara om produkten har allt som krävs för konsekvent planering.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

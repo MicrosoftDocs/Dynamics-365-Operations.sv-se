@@ -52,3 +52,6 @@ I följande avsnitt beskrivs hur planeringsmotorn används för att avgöra vilk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

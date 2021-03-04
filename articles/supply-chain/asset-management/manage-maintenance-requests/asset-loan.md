@@ -58,3 +58,6 @@ På sidan **aktiva tillgångslån** kan du visa en lista över alla lånetillgå
 3. I fältet **Returnerad** ställer du in datum och tid.
 4. Välj **OK**.
 5. Uppdatera listsidan **aktiva tillgångslån** och observera att tillgångslånet inte längre visas i listan.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Bilden nedan ger en översikt över arbetsflödet från att skapa underhållspla
 
 ![Figur 1](media/01-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

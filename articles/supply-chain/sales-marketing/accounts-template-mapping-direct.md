@@ -117,3 +117,6 @@ I följande illustrationer visas ett exempel på en mallmappning i dataintegreri
 
 [Synkronisera huvuden och rader i försäljningsfakturor direkt från Supply Chain Management till Sales](sales-invoice-template-mapping-direct.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

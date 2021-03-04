@@ -89,3 +89,6 @@ En *parallell aktivitet* är ett arbetsflödeselement som inkluderar två eller 
 ### <a name="subworkflow"></a>Delarbetsflöde
 
 Ett *delarbetsflöde* är ett arbetsflöde som körs i ett annat arbetsflödes sammanhang.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

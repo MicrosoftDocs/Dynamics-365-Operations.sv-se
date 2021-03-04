@@ -316,3 +316,6 @@ För närvarande har båda arbets-ID:n samma ID-nummer. För att slutföra de ko
 Följande illustration visar hur det slutförda direktleveransen kan visas i Microsoft Dynamics 365 Supply Chain Management.
 
 ![Direktleveransarbete har slutförts](media/PlannedCrossDockingWork.png "Direktleveransarbete har slutförts")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

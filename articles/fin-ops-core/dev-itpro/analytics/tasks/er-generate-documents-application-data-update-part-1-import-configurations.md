@@ -75,3 +75,6 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
     * Granska strukturen i det format som användes för att skapa Intrastat-rapporten. Observera att det är till för att skapa en XML-fil genom att fylla i data från datamodellen, som baseras på rotobjektet "For outgoing document". Kontrollera att namnet på den skapade filen har definierats i dialogruteformuläret (datakällan "fn" används för det).   
 30. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

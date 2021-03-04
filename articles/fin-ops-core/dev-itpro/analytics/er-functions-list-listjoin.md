@@ -83,3 +83,6 @@ Strukturen för den här listan består av ett enda fält **belopp** av typen `R
 [Lista över funktioner](er-functions-category-list.md)
 
 [Felsöka datakällor i ett kört ER-format för analys av dataflöde och omvandling](er-debug-data-sources.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -239,3 +239,6 @@ Om du vill kontrollera om arbetare ska återanvända ett befintligt ID-nummer el
 
 > [!NOTE]
 > För att konfigurera etiketten, gå till **Lagerstyrning \> Inställningar \> Dokumentflöde \> Dokumentflöde**. Mer information finns i [Aktivera utskrift av ID-nummeretiketter](../warehousing/tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

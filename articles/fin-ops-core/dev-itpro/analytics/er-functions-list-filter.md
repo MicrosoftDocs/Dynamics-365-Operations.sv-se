@@ -73,3 +73,6 @@ Du anger datakällan **DS** för typen *beräknat fält* som innehåller uttryck
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Lista över funktioner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

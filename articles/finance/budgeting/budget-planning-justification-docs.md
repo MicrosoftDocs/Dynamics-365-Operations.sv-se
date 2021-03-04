@@ -72,3 +72,6 @@ En budgetplansmall skapas av den budgetansvarige i Microsoft Word och tilldelas 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

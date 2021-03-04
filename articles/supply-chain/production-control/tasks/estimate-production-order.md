@@ -42,3 +42,6 @@ Du kan köra den här proceduren med demonstrationsdataföretaget USMF eller anv
 1. Klicka på Hantera kostnader i åtgärdsfönstret.
 2. Klicka på Visa beräkningsuppgifter.
     * Den här sidan visar kostnadsuppdelningen. Du kan till exempel visa den totala självkostnaden per enhet för den färdiga produkten på den första raden. De efterföljande raderna innehåller kostnader i enlighet med strukturlistan, produktionsflödet och de indirekta kostnaderna.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

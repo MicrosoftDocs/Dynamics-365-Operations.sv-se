@@ -64,3 +64,6 @@ Följande tabell innehåller en sammanfattning av termer som du bör känna till
 [Översikt över mallar och layouter](templates-layouts-overview.md)
 
 [Anpassa webbplatsnavigeringen](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -106,3 +106,6 @@ I följande exempel visas hur du exporterar en **Lagervärderapport**.
 1. På sidan **körningssammanfattning** som visas kan du se statusen för exportjobbet och en lista över de enheter som har exporterats. I avsnittet **Bearbetningsstatus för entitet**, välj **Lagervärde** i listan och välj sedan **Hämta fil** för att hämta de data som exporteras från den enheten.
 
 Mer information om hur du använder datahantering för att exportera data finns i [översikt över dataimport- och exportjobb](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

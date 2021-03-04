@@ -176,3 +176,6 @@ Program är en uppsättning förmånsplaner som delar en gemensam uppsättning r
    | **Berättiganderegler** | Välj de berättiganderegler som ska användas för förmånsprogrammet. Du definierar reglerna för berättigande på fliken **berättiganderegler** på den här sidan. |
    
 4. Välj **Spara**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

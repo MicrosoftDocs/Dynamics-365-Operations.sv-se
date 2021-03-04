@@ -277,3 +277,6 @@ Om du vill visa innehållet i en leverantörsbekräftelse eller ett fel svar vä
 
 - [Ställ in en extern katalog för PunchOut eProcurement](set-up-external-catalog-for-punchout.md)
 - [Använd externa kataloger för PunchOut eProcurement](use-external-catalogs-for-punchout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

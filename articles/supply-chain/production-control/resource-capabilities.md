@@ -58,3 +58,6 @@ När du har operationer resurser av **mänskliga resurser** som är kopplade til
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Det demonstrationsdataföretag som används för att skapa den här uppgiften ä
 13. Hitta och markera önskad post i listan. Håll Skift-tangenten nedtryckt om du vill markera flera roller som ska läggas till i fönstret **Valda roller** och klicka sedan på pilen för att lägga till de valda rollerna.  
 14. Klicka på **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -238,3 +238,6 @@ När en order som har flera betalningsmedel och flera rader hämtas, tar kassör
 - [Dynamics 365-betalningskoppling för Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
 - [Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

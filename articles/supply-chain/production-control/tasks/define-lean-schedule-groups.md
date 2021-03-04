@@ -56,3 +56,6 @@ Resurssnåla schemagrupper definieras för att kunna gruppera och skilja grupper
 3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelallokeringsnyckel.
 4. Klicka på länken på den valda raden i listan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

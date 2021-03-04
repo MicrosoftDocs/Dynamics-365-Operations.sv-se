@@ -83,3 +83,6 @@ För att ställa in omdirigering för sidan med statuskodfelsvar enligt följand
 [Lägga till en ny webbplatssida](add-new-page.md)
 
 [Skapa URL för webbsida](create-page-url.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

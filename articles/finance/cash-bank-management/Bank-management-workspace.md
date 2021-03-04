@@ -64,3 +64,6 @@ Sidan **analys** ger viktiga mått om bankkonton i det aktuella företaget. Föl
 -   Saldo per valuta
 
 Du kan visa bankanalys i alla företag från arbetsytan **kontantöversikt – alla företag**. Mer information finns i [Kassaöversikt Power BI-innehåll](Cash-Overview-Power-BI-content.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

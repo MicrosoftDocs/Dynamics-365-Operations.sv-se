@@ -45,3 +45,6 @@ Endast arbete av typen **Försäljning**, **Överför leverans**, **Råmaterialh
 För att häva blockeringen av arbetet i systemet avbryts alla återstående arbetsrader och de lagerdata som är associerade med det arbets-ID som användaren anger avbryts. Alla vanliga lagerhanteringsoperationer som rör berörd artikelkvantitet kan sedan återupptas.
 
 Om du vill placera den berörda artikeln på en viss plats efter att arbetet avbrutits måste användaren använda en lagerrörelse eller en kvantitetjusteringsåtgärd på en mobil enhet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

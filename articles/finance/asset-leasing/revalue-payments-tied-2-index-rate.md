@@ -68,3 +68,6 @@ Om du vill visa effekterna av leasingomvärderingsprocessen för IFRS 16-leasing
 Du kan visa den nyligen genererade betalningsplanen som startar på omvärderingsdatumet och visar det totala uppdaterade betalningsbeloppet. En ny amorteringsplan för leasingskulder och en avskrivningsplan för tillgångar har också skapats för att återspegla den justerade betalningsplanen.
 
 Journalposten har automatiskt bokfört justeringsjournalposten på kontot för ändringen av leasingbetalningar som hör till indexomvärderingen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

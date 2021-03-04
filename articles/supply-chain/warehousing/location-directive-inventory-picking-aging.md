@@ -140,3 +140,6 @@ LIFO-strategin söker efter platsen som innehåller det nyaste åldersdatumet oc
 1. Observera att raden där värdet för **Arbetstyp** är *Plocka* visar ett värde för **Plats** för *FL-001*. Den här platsen innehåller det ID-nummer som har det nyaste åldersdatumet (LIFO).
 
 I dessa fall har du sett hur positioneringsstrategin för platsen har placerats i arbete med antingen det äldsta lagret eller det senaste lagret, beroende på den valda strategin för lagerstället.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -203,3 +203,6 @@ För mer information om hur du konfigurerar e-post i Dynamics 365 Commerce, se [
 [Ställ in e-postinleveranser](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
 [Skicka e-postkvitton från Modern POS ](email-receipts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

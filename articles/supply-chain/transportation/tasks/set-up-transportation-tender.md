@@ -48,3 +48,6 @@ I den här proceduren visas hur du skapar ett anbud för transport. Detta görs 
 7. Klicka på Skicka.
 8. Välj ett flöde.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

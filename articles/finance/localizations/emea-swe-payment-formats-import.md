@@ -59,3 +59,6 @@ När du har importerat returfilen bör betalningarna uppdateras till statusen **
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

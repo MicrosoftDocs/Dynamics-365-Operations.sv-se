@@ -133,3 +133,6 @@ Mer information finns i [hjälpsystemet](../../fin-ops/get-started/help-overview
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

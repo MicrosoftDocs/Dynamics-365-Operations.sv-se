@@ -114,3 +114,6 @@ Mer information om anpassade rekommendationer finns i [aktivera anpassade rekomm
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

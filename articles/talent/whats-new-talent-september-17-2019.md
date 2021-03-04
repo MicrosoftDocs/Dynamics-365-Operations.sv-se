@@ -59,3 +59,6 @@ I den här versionen har fältet jobbfamilj lagts till på sidan **hantera ändr
 Den här funktionen är nu tillgänglig i miljöer med begränsat läge. Om du vill aktivera den här funktionen navigerar du till **Systemadministration > Länkar > Inställningar > Systemparametrar > Förhandsfunktioner**. Välj **Förbättrade arbetarformulär och navigering**. Detta aktiverar dessa ändringar för alla användare. Du kan stänga av det här alternativet när du vill.
 
 Mer information finns i [strömlinjeformad medarbetarinmatning och navigering](./streamlined-employee-entry.md) För att se ändringarna, titta på videon [Dynamics 365 for Talent 2019 släpp av påfyllnad 2 - översikt](https://aka.ms/ROGT19RW2ROV).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

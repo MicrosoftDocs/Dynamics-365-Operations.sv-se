@@ -56,3 +56,6 @@ Så här ställer du in en kalender:
 10. För att tilldela en kalender till medarbetare, välj **tilldela medarbetare** i åtgärdsfönstret. Välj den medarbetare du vill tilldela till kalendern och klicka sedan på **Tilldela**.
 
 Anställda måste inte ha tilldelats kalendrar. Om det finns en definierad arbetstidskalender kommer lediga dagar automatiskt uteslutas från begäran. Antalet timmar eller dagar är som standard de arbetstider som anges i kalendern. Om medarbetaren inte har en kalender tilldelad är alla dagar tillgängliga för ledig tid och ledig tidsmängd är inte standard för begäran. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

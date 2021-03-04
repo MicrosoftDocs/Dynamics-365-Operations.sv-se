@@ -56,3 +56,6 @@ Commerce-parametrar cachelagras normalt. När den här parametern har uppdaterat
 
 - [Offline kassafunktionalitet (POS)](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
 - [Verksamhet för online- och offlinekassor (POS)](https://docs.microsoft.com/dynamics365/retail/pos-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

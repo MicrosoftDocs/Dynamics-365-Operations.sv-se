@@ -140,3 +140,6 @@ Mer information finns i följande avsnitt:
 
 - [Definiera ekonomiska dimensioner](tasks/define-financial-dimensions.md)
 - [Underhåll standardmallar för ekonomisk dimension](tasks/maintain-financial-dimension-default-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

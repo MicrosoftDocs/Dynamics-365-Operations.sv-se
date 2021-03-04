@@ -135,3 +135,6 @@ I följande tabell sammanfattas hur leveranskonsolideringen fungerar när du int
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Konfigurera policyer för leveranskonsolidering](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

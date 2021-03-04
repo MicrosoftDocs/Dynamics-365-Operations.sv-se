@@ -83,3 +83,6 @@ Leverantörsfakturan förblir väntande tills den faktiska leverantörsfakturan 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

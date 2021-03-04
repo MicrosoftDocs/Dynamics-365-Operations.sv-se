@@ -60,3 +60,6 @@ Den här proceduren beskriver hur du kan skapa och bokför en lagerjusteringsjou
 5. Stäng formuläret.
 6. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

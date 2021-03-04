@@ -113,3 +113,6 @@ Ytterligare gruppering av serviceorderrader till serviceordrar görs enligt de t
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

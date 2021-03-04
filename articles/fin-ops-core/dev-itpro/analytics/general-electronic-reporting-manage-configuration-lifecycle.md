@@ -87,3 +87,6 @@ ER-konfigurationer som utformas i utvecklingsmiljön kan överföras till testmi
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

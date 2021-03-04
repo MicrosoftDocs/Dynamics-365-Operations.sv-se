@@ -49,3 +49,6 @@ Det h채r avsnittet inneh책ller information om hur du st채ller in k채llskatt. *K�
 18. V채lj **Spara**.
 19. St채ng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

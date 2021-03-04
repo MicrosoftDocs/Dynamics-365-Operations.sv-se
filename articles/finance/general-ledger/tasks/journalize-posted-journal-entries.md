@@ -40,3 +40,6 @@ Den här proceduren visar dig hur du journalför bokförda journalposter. I proc
 9. Klicka på **OK** för att stänga filtersidan.
 10. Starta journalföringsprocessen genom att klicka på **OK**. En rapport skapas när processen är slutförd.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

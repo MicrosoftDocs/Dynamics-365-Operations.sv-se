@@ -51,3 +51,6 @@ Det är mycket viktigt att du förstår hur **spara den manuella justeringar av 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ När kompensationsbeloppen har granskats för en medarbetare och de rekommendera
 När en eller flera medarbetarhändelser har fått sin status uppdaterad till Godkänd, kan de läsas till medarbetarnas fasta kompensationsposter. Detta gör du genom att markera varje Medarbetarhändelse en i taget och klicka på knappen **Läs in medarbetarkompensation** på resultatsidan **Medarbetarresultat** eller genom att klicka på **Läs in kompensation** på sidan **Processresultat** för att läs in alla godkända medarbetarhändelser samtidigt.
 
 Om du klickar på **OK** i dialogrutan **Läs in kompensation** läggs noll kompensationsåtgärdsrader till på sidan **Fast medarbetarkompensation**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

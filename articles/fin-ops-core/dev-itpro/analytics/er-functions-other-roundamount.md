@@ -91,3 +91,6 @@ Om parametern **model.RoundOff** är inställd på **RoundOffType.RoundUp**, `RO
 [Andra (företagsdomänspecifika) funktioner](er-functions-category-other.md)
 
 [Matematiska funktioner](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

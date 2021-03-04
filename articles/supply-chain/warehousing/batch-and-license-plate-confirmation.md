@@ -48,3 +48,6 @@ Du kan konfigurera bekräftelse av batch och registreringsskylt från mobila enh
 
 1. Ange inställning av arbetsbekräftelse från mobila enhetens menyalternativ.  
 1. Välj alternativ för bekräftelse av batch eller registreringsskylt. Båda alternativen är tillgängliga för arbetstypen plockning som inte har automatisk bekräftelse aktiverad.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -66,3 +66,6 @@ Med rekryteringsprojekt kan du hantera rekryteringsprocessen. För varje rekryte
     * Statusen Startad innebär att projektet är redo att ta emot ansökningar.  
 33. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -109,3 +109,6 @@ Fragmentet kan nu refereras i mallen för andra webbplatssidor. När det här fr
 [Cookie-kompatibilitet](cookie-compliance.md)
 
 [Ersätt användar-ID:n som är associerade med spårade innehållsändringar](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

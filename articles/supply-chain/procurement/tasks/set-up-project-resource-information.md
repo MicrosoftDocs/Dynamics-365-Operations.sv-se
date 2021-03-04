@@ -52,3 +52,6 @@ I den här proceduren visas hur du skapar en projektresurs. I den här uppgiften
 20. Klicka på Spara.
 21. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

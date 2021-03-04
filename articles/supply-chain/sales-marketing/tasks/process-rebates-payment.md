@@ -51,3 +51,6 @@ I den här proceduren visas hur du konverterar godkända och bearbetade kundraba
     * Observera att en transaktion för negativt belopp som motsvarar det totala rabattbeloppet utan fakturareferens har lagts till kundbalansen.   
 15. Klicka på Avbryt.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Om du inte har definierat numret för anläggningstillgången i mallen för Exce
 
 > [!WARNING]
 > Anläggningstillgångsposten tas inte bort om transaktionerna bokfördes i den associerade boken, eller om den nya anläggningstillgången anges på en journalrad men inte bokförts. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

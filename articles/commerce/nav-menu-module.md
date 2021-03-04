@@ -72,3 +72,6 @@ Mer information om hur du lägger till en modul för navigeringsmeny i en sidhuv
 [Cookie-kompatibilitet](cookie-compliance.md)
 
 [Modul för sidhuvud](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

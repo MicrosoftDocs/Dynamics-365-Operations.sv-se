@@ -149,3 +149,6 @@ Ofta väljs inte flera bra kandidater till ett jobb, men du vill inte tappa bort
 1. På ansökningssidan väljer du **Lägg till i talangpool**. En lista över talangpooler som du har tillgång till visas.
 
 1. Välj eller sök efter talangpool och välj sedan **Lägg till** för att lägga till kandidater till talangpoolen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

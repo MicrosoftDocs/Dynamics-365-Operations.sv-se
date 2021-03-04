@@ -102,3 +102,6 @@ Om du väljer fältet **Ärv feedbackdeltagare från anställningsteamet** komme
 Intervjuaktiviteten är en valfri aktivitet med tre komponenter: **Begär tillgänglighet för kandidat**, **schema** och **feedback**. Använd aktiviteten intervju i jobbmallen om du vill inkludera alla kandidaters begäran om tillgänglighet, schema och feedback som en del av en process istället för att använda dem individuellt.
 
 Om du vill inkludera eller begränsa kandidater till detta väljer du ett värde i fältet **Vem du intervjuar**. Tillgängliga alternativ är följande **alla kandidater**, **externa kandidater** och **interna kandidater**. Om du till exempel vill hoppa över interna kandidater i första rundan av intervjun anger du **Vem du intervjuar** till **externa kandidater**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

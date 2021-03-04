@@ -67,3 +67,6 @@ Aktivera ändringsspårning för dataentitetsprojekt
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Projekt (Supply Chain Management till Field Service): projekt
 
 [![Mallmappning i dataintegrering](./media/FSProject1.png)](./media/FSProject1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

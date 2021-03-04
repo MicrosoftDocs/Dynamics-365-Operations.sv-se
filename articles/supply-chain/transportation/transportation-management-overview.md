@@ -87,3 +87,6 @@ Supply Chain Management innehåller en lastuppbyggnadsstrategi med namnet Volymb
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

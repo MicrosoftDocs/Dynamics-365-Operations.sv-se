@@ -58,3 +58,6 @@ Rapporten **lista för underhållsbegäran** visar en lista över alla underhål
 Följande illustration visar ett exempel på rapporten **lista för underhållsbegäran** för alla aktiva underhållsbegäran.
 
 ![Rapport om lista för underhållsbegäran](media/10-manage-maintenance-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

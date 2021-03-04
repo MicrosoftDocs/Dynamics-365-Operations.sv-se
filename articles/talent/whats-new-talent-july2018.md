@@ -57,3 +57,6 @@ Rubrikerna har expanderats i den här uppdateringen. Fältet omfattar nu 65 teck
 ## <a name="benefit-enrollment-status-report"></a>Statusrapport för förmånsanmälan
 
 Inbyggda rapporter om öppen anmälan om förmåner hjälper dig att enkelt förstå var dina anställda befinner sig i den öppna registreringsprocessen. Du kan få veta hur många anställda som har slutfört processen, för närvarande slutför den samt ännu inte har startat den. Dessutom kan du snabbt visa problem som inträffar i samband med anmälan för medarbetare, samt en fullständig logg över alla medarbetarinlägg. Du kan därför enkelt verifiera och granska medarbetarinlägg.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Om du vill konfigurera ett grundläggande arbetsflöde som startas när anställ
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

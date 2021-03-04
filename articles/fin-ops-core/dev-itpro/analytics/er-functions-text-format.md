@@ -101,3 +101,6 @@ Om samma rapport bearbetas för **Litware-butikskunden** den 17 december 2015, i
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Textfunktioner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

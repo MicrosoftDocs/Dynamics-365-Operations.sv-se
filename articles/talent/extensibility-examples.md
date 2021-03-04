@@ -79,3 +79,6 @@ Hämta **Appen Hänvisning** genom att gå till [Dynamics 365 Talent utbyggbarhe
 
 [Appen Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
 [Migrera mellan innehavare och program](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

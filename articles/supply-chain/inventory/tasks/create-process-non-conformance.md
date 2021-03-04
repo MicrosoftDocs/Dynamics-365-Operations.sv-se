@@ -67,3 +67,6 @@ Det här avsnittet förklarar hur du utför avvikelsehantering baserat på en be
 2. Välj **Stäng avvikelsen**.
 3. Välj **Ja**.
 4. Stäng sidorna.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

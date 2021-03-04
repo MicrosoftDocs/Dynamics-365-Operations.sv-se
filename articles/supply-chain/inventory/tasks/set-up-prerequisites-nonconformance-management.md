@@ -80,3 +80,6 @@ Använd det här avsnittet för att aktivera avvikelsehanteringsprocesser. En av
 4. I fältet **Beskrivning** anger du ett värde.
 5. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

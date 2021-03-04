@@ -67,3 +67,6 @@ Använd den här proceduren när du vill skapa och tilldela en kostnadsallokerin
 5. Ange eller välj ett värde i fältet Kostnadsstyrenhet.
 6. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ Diagrammet nedan visar de grundläggande komponenterna som hjälper till att st�
 [![tjänstkomponenter för nätverksutskrift\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Observera att en skrivare kan registreras med flera dokumentflödesagenter. För att lösa skrivarens egenskaper använder värdtjänsten nätverkssökvägen som unikt identifierar alla nätverksskrivare. Därför visas den som ett alternativ i listan över skrivare som är tillgänglig i appar även om en skrivare är registrerad med flera klienter.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

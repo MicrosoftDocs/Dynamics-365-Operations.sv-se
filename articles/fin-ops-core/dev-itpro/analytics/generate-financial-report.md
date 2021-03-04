@@ -156,3 +156,6 @@ Du kan använda följande tangentbordsgenvägar när du kör en analys av saknad
 [Ekonomisk rapportering](financial-reporting-intro.md)
 
 [Användargränssnitt i Report Designer](report-designer-interface.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

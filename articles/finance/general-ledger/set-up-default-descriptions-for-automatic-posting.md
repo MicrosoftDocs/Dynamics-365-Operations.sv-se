@@ -87,3 +87,6 @@ När du har slutfört stegen i avsnittet [Ange standardbeskrivningar](#set-up-de
 2. Välj databasregistret från vilket du vill lägga till parameterdata i beskrivningen i fältet **Referenstabell**.
 3. Välj fältet från vilket du vill lägga till parameterdata i beskrivningen i fältet **Referensfält**.
 4. Upprepa steg 1 till och med 3 om du vill lägga till fler parametrar.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -142,3 +142,6 @@ Som de här resultaten visar har de två modellerna nästan identiska F1-makropo
 
 #### <a name="privacy-notice"></a>Sekretesspolicy
 Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

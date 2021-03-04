@@ -169,3 +169,6 @@ Exempelscenariot kräver att du förbereder två platsprofiler.
 
 > [!NOTE]
 > Platsfälten uppdateras endast av lagerställetransaktioner. Om du flyttar lagret med hjälp av en journal eller andra icke-WHS-processer, uppdateras inte fälten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

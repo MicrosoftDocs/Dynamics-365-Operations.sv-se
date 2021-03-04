@@ -95,3 +95,6 @@ Om du vill ändra metadata, följ dessa steg.
 [Utöka en kategorilandningssida](enrich-category-page.md)
 
 [Kontrollera tillgängligheten för sidinnehåll](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

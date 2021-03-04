@@ -60,3 +60,6 @@ Det här avsnittet förklarar hur du ställer in tillgångstillverkare och relat
 2. I kolumnen **tillgång**, välj länken för tillgången. Sidan **Detaljer** visas.
 3. Välj **Redigera**.
 4. På snabbfliken **allmänt** väljer du värden i fälten **tillverkare** och **modell**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -152,3 +152,6 @@ Om en produktvarianten redan har frisläppts i ett företag A och du försöker 
 Knappen **Nytt** på sidan **frisläppta produktvarianter** skapar varianten och släpper den i företagets sammanhang. Om varianten redan har skapats kan du inte använda knappen **Ny** att frisläppa den i ett annat företag.
 
 Du löser problemet genom att öppna sidan **produktmall** och välja **frisläppt produkt** för att frisläppa den befintliga varianten i det önskade företaget.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

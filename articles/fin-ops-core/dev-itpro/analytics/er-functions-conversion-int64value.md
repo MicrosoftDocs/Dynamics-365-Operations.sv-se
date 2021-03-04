@@ -73,3 +73,6 @@ Eventuella decimaler trunkeras.
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Funktioner för typkonvertering](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

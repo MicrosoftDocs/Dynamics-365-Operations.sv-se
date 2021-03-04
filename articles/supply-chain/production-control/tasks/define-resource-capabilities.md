@@ -49,3 +49,6 @@ Resurskapaciteter beskriver vad verksamhetsresurser kan göra. Vid tidsplanering
 5. Välj ett tal i fältet Nivå.
     * När du anger att ett jobb eller en operation kräver en viss kapacitet, kan du också ange den lägsta nivån som krävs. Använd kapacitetsnivån för att skilja mellan resurser som kan utföra samma jobb, men med olika hastighet, styrka, storlek osv.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

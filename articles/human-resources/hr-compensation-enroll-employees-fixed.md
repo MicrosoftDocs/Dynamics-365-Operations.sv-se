@@ -39,3 +39,6 @@ Chefen över kompensationer och förmåner kan tilldela medarbetare till fasta k
     * Om den fasta kompensationsplanen är en stegplan, väljer du det steg som innehåller korrekt lönesats för medarbetaren. Om den fasta kompensationsplanen är en gradplan eller bandplan, anger du lönesatsen för medarbetaren. Lönesatsen ska valideras mot toleransinställningarna för planen, och de lägsta och högsta referenspunkterna för jobbets kompensationsnivå.  
 8. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

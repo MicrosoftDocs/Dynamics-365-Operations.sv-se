@@ -260,3 +260,6 @@ Därför när aktivering väljs för överlappning kommer resten av inställning
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

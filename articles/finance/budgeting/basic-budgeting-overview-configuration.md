@@ -88,3 +88,6 @@ Ett företag som använder Budget planeringsfunktionen kan skapa och använda *b
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

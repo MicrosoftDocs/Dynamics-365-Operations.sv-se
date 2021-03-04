@@ -274,3 +274,6 @@ Om en enhet går förlorad eller drabbas av fel, måste du ta bort åtkomsten ti
 1. Kontrollera att klient-ID:t för programmet matchar det klient-ID som du noterade i steg 2.
 1. Välj **Ta bort** i verktygsfältet.
 1. Markera **Ja** i bekräftelsemeddelandet som visas.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

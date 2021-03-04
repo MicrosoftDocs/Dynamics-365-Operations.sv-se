@@ -56,3 +56,6 @@ Den här proceduren fokuserar på att ersätta en befintlig kanban-regel med en 
 1. AngeHögsta kvantitet till "100".
     * Visa snabbfliken Kvantiteter om du vill visa fältet Högsta kvantitet. Om du ändrar den högsta kvantiteten till 100 kommer upp till 100 kanban att bearbetas.    Detta är det sista steget i den här uppgiften.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

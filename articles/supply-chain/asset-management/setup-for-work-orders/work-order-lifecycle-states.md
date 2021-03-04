@@ -139,3 +139,6 @@ När du har skapat de livscykeltillstånd för arbetsorder som krävs för dina 
 9. Spara arbetsorderns livscykelmodell.
 
 ![Sidan Livscykelmodeller för arbetsorder](media/15-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

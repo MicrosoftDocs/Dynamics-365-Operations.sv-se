@@ -63,3 +63,6 @@ Följ dessa steg för att spela upp en uppgiftsguide från LCS.
 2. Välj **Öppna från LCS**.
 3. Markera biblioteket och BPM-noden som har den sparade uppgiftsguiden.
 4. Öppna uppgiftsguiden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

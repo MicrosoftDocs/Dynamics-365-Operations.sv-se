@@ -92,3 +92,6 @@ Det här avsnittet beskriver processen för att skapa en rekvisition. Den visar 
 6. Stäng sidan.
 7. Uppdatera sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

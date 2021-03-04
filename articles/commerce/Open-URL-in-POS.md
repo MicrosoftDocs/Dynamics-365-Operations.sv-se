@@ -83,3 +83,6 @@ Gör följande om du vill konfigurera en URL-adress att öppnas i kassan.
 5. Välj **Öppna URL** som åtgärd.
 6. Ange den URL som du vill använda.
 7. Konfigurera om du vill öppna URL i ett nytt fönster.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

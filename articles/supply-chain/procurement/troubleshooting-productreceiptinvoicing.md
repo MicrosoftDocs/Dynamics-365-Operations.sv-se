@@ -110,3 +110,6 @@ Följande procedur anger ett sätt att skapa reproducera problemet.
 ### <a name="issue-resolution"></a>Problemlösning
 
 Detta beror på parameterinställningarna för fakturor och fakturagrupper. Mer information finns i följande blogginlägg: [Redovisning av inköpsavgift och lagervariation](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

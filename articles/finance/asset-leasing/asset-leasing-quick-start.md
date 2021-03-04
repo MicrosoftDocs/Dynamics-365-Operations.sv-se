@@ -253,3 +253,6 @@ Gör på följande sätt om du vill skapa en ny leasing.
 
    På sidan **Transaktion av leasingskulder** visas det första redovisningstillfället, betalningen av leasingränta, leasingbetalning och saldo för leasingskuld. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

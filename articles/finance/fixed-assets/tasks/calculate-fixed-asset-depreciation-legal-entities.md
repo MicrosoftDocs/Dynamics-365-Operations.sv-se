@@ -51,3 +51,6 @@ Avskrivning av anläggningstillgångar kan köras över juridiska personer i ett
 5. Kicka på Skapa journal.
 6. Gå till Anläggningstillgångar > Journalposter > Journal för anläggningstillgångar.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

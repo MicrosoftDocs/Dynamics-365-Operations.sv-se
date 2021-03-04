@@ -66,3 +66,6 @@ Följande typer av moduler finns i modulbiblioteket:
 [Modul för sidhuvud](author-header-module.md)
 
 [Modul för sidfot](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

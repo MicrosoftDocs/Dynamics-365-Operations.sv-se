@@ -60,3 +60,6 @@ Jobbstatus kommer att vara **annullerar** tills planeringsoptimeringstjänsten b
 [Visa planhistorik och planeringsloggar](plan-history-logs.md)
 
 [Använda filter på en plan](plan-filters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

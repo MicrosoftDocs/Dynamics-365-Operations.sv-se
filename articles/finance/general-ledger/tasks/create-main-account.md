@@ -52,3 +52,6 @@ Den här uppgiften vägleder dig genom stegen för att lägga till en huvudkonto
 21. Välj metoden för att beräkna valutakurser för kontot i fältet **Valutaregistreringstyp**.
 22. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

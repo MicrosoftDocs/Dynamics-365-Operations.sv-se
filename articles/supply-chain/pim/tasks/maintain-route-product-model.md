@@ -67,3 +67,6 @@ När du kör den här proceduren krävs det att det finns en modell för produkt
 15. Ange eller välj ett värde i fältet Behov.
 16. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

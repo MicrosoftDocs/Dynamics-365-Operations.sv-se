@@ -55,3 +55,6 @@ Den här versionen inkluderar felkorrigeringar för Dynamics 365 Talent: Onboard
 ## <a name="changes-in-core-hr"></a>Ändringar i Core HR
 
 Den här versionen inkluderar felkorrigeringar för Dynamics 365 Talent: Core HR.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

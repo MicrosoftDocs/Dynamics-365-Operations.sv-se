@@ -143,3 +143,6 @@ I den här avsnittet förklaras hur du granskar inkassoinformation samt olika in
 5. Välj **Visa lista**.
 - Markera ett kundkonto eller acceptera standardvärdet. Som standard är det här det valda kundkontot på listsidan eller i formuläret från vilket du öppnade det här formuläret. Om du öppnade formuläret från en listsida, kunderna i listan är de kunder som ingår i inkassopoolen som används på listsidan.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

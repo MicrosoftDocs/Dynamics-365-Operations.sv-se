@@ -119,3 +119,6 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 [Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

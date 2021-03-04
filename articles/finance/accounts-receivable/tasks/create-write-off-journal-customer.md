@@ -84,3 +84,6 @@ Den här uppgiftsguiden innehåller information om hur du ställer in parametrar
 5. Klicka på **OK**.
 6. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

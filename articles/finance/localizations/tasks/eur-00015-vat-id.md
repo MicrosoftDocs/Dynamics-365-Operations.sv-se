@@ -61,3 +61,6 @@ Informationen här gäller alla europeiska länder/regioner. Uppgiften skapades 
     * Tilldela den registreringstyp som du skapade till en fördefinierad registreringskategori.  
 22. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

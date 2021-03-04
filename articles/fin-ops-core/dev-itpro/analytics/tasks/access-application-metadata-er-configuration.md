@@ -125,3 +125,6 @@ I följande steg förklaras hur en användare av Regulatory configuration servic
 > [!NOTE]
 > Det här sättet att hämta information om programdata det enda som är tillgängligt för lokalt distribuerade program (när lokala affärsdata (LBD) eller lokalt, distributionsmodell används).
         
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

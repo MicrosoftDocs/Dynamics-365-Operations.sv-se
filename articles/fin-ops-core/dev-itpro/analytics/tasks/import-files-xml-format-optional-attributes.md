@@ -123,3 +123,6 @@ I följande steg förklaras hur en användare i rollen Systemadministratör elle
 
 > [!NOTE]
 > Samma fil har importerats som formatdesignen betraktar nu attributet "ID" för "dokument"-elementet som valfritt.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -115,3 +115,6 @@ Följande bild visar ett exempel på en konfiguration för en frisläppt produkt
 [Skapa juridiska personer](channels-legal-entities.md)
 
 [Skapa en variantgrupp](create-variant-group.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

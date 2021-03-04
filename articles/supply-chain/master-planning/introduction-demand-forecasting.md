@@ -100,3 +100,6 @@ Observera att efterfrågeprognosenhet inte behöver ha någon specifik betydelse
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ Det här avsnittet visar hur du kan skapa en direktleverans för en försäljnin
     - Direktleveranssidan fungerar som en arbetsyta som ger inköparen en översikt över alla försäljningsorderrader som ska direktlevereras, och det gör att det går att skapa respektive inköpsorder. Dessutom kan de visa öppna direktleveransorder och bekräftade order på flikarna Bekräftelse och Leverans.  
     - När du har skapat en direktleverans skapas flyttas denna automatiskt till fliken Bekräftelse. Du kan välja att bekräfta ordern direkt från den här sidan. När inköpet har bekräftats flyttas det automatiskt till fliken Leverans där du kan registrera inleveransen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

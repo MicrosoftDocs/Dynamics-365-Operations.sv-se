@@ -38,3 +38,6 @@ Om det finns flera transportföretag och transportföretagstjänster för samma 
 1. I fältet **Namn** ange ett beskrivande namn för gruppen.
 1. På snabbfliken **Detaljer** lägger du till en rad och väljer ett transportföretag och en transportföretagstjänst för det. Upprepa det här steget tills du har lagt till så många transportföretag som behövs för gruppen.
 1. Stäng sidan.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

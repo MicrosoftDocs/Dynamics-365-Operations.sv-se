@@ -108,3 +108,6 @@ I bildskärmen nedan visas ett exempel på beräkningsresultat i **Datumkontroll
 ![Exempel på beräkningsresultat i Datumkontroll för arbetsorder](media/03-controlling-and-reporting.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

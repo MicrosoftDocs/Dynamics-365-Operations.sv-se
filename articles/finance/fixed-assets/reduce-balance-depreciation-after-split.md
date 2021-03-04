@@ -45,3 +45,6 @@ Följande villkor gäller till exempel:
 Det belopp som ska skrivas av för den ursprungliga till gången är 1 822,25 USD. Det här beloppet är lika med BNV innan delningstransaktionen bokförs (9 111,25 USD) plus den anskaffningsjustering som genereras vid bokföringen av den uppdelade transaktionen (-8 000 USD) plus den avskrivningsjustering som genererades under delningstransaktionen (711 USD). Därför är avskrivningen för det andra året (1 822,25 × 18 procent) ÷ 12 = 27,33 USD.
 
 Beloppet som ska skrivas av för den nya anläggningstillgången under det första året är (8 000 × 18 procent) ÷ 12 = 120 USD.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

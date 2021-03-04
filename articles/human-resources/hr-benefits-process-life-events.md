@@ -57,3 +57,6 @@ Om till exempel dagens datum är 1 februari och den 14 februari är arbetare Joh
    4. Välj **OK**. Processen kommer att köras med de parametrar du angett.
 
 4. Välj **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

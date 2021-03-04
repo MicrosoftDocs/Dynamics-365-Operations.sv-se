@@ -129,3 +129,6 @@ Dessa uppgifter är avsedda för systemadministratörer.
 8. Skriv PRT i fältet Land/region.
 9. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

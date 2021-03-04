@@ -41,3 +41,6 @@ Om det finns en konflikt med kontoplanen, kan avgränsare för kontoplanen och p
 
 ## <a name="how-to-determine-if-your-environment-requires-updated-delimiters"></a>Ta reda på om din miljö kräver uppdaterade avgränsare 
 Om avgränsare i din uppgraderade miljö står i konflikt, kan du uppleva instabilitet när du anger värden i en segmenterad postkontroll eller dimensionspostkontroll. Detta innebär att du måste alltid använda sökningar eller en utfälld meny när du anger konto och dimensionskombinationer.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

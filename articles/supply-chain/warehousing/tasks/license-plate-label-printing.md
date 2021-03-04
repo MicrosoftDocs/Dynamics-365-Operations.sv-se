@@ -101,3 +101,6 @@ I det här avsnittet visar vi hur du aktiverar automatisk utskrift av ett EAN-ko
 7. Välj **Spara**.
 8. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

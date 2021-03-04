@@ -56,3 +56,6 @@ Rekommendationerna visas som kort i fliken **Potentiella kandidater** för alla 
 > Om du nyligen har börjat använda Attract måste du vänta tills du har minst 10 sökanden som har fullständiga profiler eller meritförteckningar innan du kan använda den här funktionen.
 
 För att undvika eventuell snedvridning i rekommendationerna skannar Attract endast kandidatprofiler för kompetenser, kvalifikationer och andra nyckelord som matchar jobbbeskrivningen. Dessutom tar Attract bort personlig identifieringsinformation från kandidatprofiler före utvärderingen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

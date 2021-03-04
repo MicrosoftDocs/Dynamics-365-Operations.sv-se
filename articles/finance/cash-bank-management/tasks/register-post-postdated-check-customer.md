@@ -50,3 +50,6 @@ Du kan registrera information om en efterdaterad check som tas emot från en kun
 15. Klicka på Bokför.
 16. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

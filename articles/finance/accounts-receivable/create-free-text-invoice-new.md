@@ -85,3 +85,6 @@ När du kopierar rader kan du redigera informationen efter behov.
 Du kan skapa en fritextfaktura från en mall. När du väljer **Ny från mall** på fliken **Faktura** kan du välja ett mallnamn och kundkontot för den nya fritextfakturan. Standardvärden, till exempel betalningsvillkor och betalningsmetod, kan fyllas i automatiskt från kunden, eller du kan använda de värden som sparades i mallen.
 
 En ny fritextfaktura skapas och du kan redigera värdena som du vill.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

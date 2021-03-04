@@ -183,3 +183,6 @@ En godkännandeprocess består av godkännandesteg. Slutför följande procedur 
 1. Dubbelklicka på godkännandeprocessen i arbetsflödesredigeraren. Arbetsflödesredigeraren visar stegen för godkännandeprocessen.
 2. Dra steget från området **Arbetsflödeselement** till arbetsytan för att lägga till ett godkännandesteg.
 3. Se [Konfigurera godkännandesteg i ett arbetsflöde](configure-approval-step-workflow.md) för att konfigurera ett godkännandesteg.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

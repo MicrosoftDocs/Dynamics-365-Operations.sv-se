@@ -91,3 +91,6 @@ Information om rabatten visas längst ned på sidan **Kvitta öppna transaktione
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

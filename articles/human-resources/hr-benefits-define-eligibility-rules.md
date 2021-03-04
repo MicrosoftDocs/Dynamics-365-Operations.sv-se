@@ -69,3 +69,6 @@ Det demonstrationsdataföretag som används för att skapa den här registrering
 10. Klicka på Spara.
 11. Stäng formuläret.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

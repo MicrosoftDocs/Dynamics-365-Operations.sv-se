@@ -41,3 +41,6 @@ Det här avsnittet förklarar hur du avyttrar en anläggningstillgång med hjäl
 10. Ange eller välj ett värde i fältet **Anläggningstillgång**.
 11. Vald **bokföring** 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

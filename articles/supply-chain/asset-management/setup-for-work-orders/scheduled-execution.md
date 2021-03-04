@@ -43,3 +43,6 @@ Den schemalagda utförandeinställningen, som är relaterad till arbetsorder, ka
 6. Välj **Spara**.
 
 ![Schemalagt utförande](media/20-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

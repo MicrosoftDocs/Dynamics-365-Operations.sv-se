@@ -80,3 +80,6 @@ Den här funktionen är tillgänglig för alla roller som kan underhålla förs�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

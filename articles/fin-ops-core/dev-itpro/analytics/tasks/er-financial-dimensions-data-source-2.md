@@ -147,3 +147,6 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 4. Klicka på Slutför.
 5. Klicka på OK.
 ![Sidan ER-modellmappningsdesigner](../media/er-financial-dimensions-guides-model-mapping5.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ När du vill slutföra omallokeringen väljer du **Bearbeta**. Du uppmanas att a
 > Om du vill förklara varför dessa ytterligare artiklar visas kan du lägga till andra kolumner i rutnätet, till exempel **Omallokerings-ID** och **Försäljningsorder**.
 > 
 > [![Ytterligare kolumner på sidan Allokering av intäktspris](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

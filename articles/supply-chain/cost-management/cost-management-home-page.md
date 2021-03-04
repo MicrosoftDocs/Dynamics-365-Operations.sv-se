@@ -65,3 +65,5 @@ Du hittar åsikter, nyheter och annan information om kostnadshantering i [teambl
 #### <a name="task-guides"></a>Uppgiftsguider
 
 Mer hjälp är tillgänglig som uppgiftsguider. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

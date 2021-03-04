@@ -106,3 +106,6 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 [Nyheter och ändringar på hemsidan för Finance and Operations](whats-new-changed.md)
 
 [Nya eller uppdaterade uppgiftsguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -101,3 +101,6 @@ Bokföringsmallar hjälper dig att skapa poster snabbare. Du kan skapa en bokfö
 - [Konfigurera dokumenthantering](configure-document-management.md)
 - [Konfigurera och skicka e-post](configure-email.md)
 - [Datum/tidsdata och tidszoner](date-time-zones.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

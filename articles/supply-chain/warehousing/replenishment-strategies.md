@@ -115,3 +115,6 @@ Resultaten skiljer sig på grund av den information som är tillgänglig när du
 [![Exempel 2](media/ReplenTemp_example_2.png "Exempel 2")](media/ReplenTemp_example_2_large.png)
 
 Om du vill hämta den maximala kvantiteten till de påfyllningsbara platserna bör du ställa in alternativet **Tillåt delning** på *Ja* i platsdirektiv för påfyllningsplockning.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

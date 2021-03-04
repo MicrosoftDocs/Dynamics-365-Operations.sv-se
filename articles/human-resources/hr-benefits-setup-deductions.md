@@ -52,3 +52,6 @@ Använd avdrag i Microsoft Dynamics 365 Human Resources för att fastställa hur
 4. Om du vill spåra och underhålla ändringar i inställningarna för förmånsgrad **åtgärder** och välj sedan **underhåll versioner**.
 
 5. Välj **Spara**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

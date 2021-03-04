@@ -99,3 +99,6 @@ Om en inköpsorder är under ändringshantering måste alla ändringar, till exe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

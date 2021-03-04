@@ -83,3 +83,6 @@ För orderrader med upphämtning i butik eller drive in-upphämtning anges momsg
 
 [Beräkning av momsbefrielse](tax-exempt-price-inclusive.md) 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

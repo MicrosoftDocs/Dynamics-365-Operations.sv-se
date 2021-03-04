@@ -58,3 +58,6 @@ En resursgrupp är en uppsättning verksamhetsresurser som normalt motsvarar den
 6. Hitta och markera önskad post i listan.
 7. Klicka på länken på den valda raden i listan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

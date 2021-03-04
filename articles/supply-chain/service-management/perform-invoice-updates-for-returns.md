@@ -57,3 +57,6 @@ När du ställer in fakturauppdateringen för batchbearbetning måste försäljn
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

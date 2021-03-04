@@ -76,3 +76,6 @@ Hämta följande filer för att slutföra uppgiftsguiden:
 
 - [Konfiguration av ER-datamodell - CrossCompanyDataAccessModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 - [ER-formatkonfiguration - CrossCompanyDataAccessFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

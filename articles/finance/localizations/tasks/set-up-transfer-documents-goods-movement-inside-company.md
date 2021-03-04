@@ -74,3 +74,6 @@ I den här proceduren visas hur du skapar överföringsdokument för varurörels
 10. Klicka på Följesedel.
 11. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

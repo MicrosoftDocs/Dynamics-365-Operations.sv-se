@@ -136,3 +136,6 @@ Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in d
 [Beräkna lagertillgänglighet för butikskanaler](calculated-inventory-retail-channels.md)
 
 [Uppdateringar av SDK och modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -163,3 +163,5 @@ Prestationsjournalens källtyper beskriver var prestationsjournalerna kommer ifr
 ### <a name="review-types"></a>Gransnkningstyper
 
 Med prestationsgranskningstyperna kan du styra granskningens beteende. Du kan aktivera eller inaktivera arbetsflöde för en granskning. Om arbetsflöde inte används för granskningen, kan du definiera den standardstatus som ska användas när granskningen skapas. Du kan också bestämma om medarbetaren, chef eller båda måste godkänna granskningen.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

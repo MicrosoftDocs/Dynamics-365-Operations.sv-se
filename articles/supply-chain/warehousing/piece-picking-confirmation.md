@@ -51,3 +51,6 @@ Följande alternativ blir tillgängliga när arbetstypen är Plockning eller Inv
 | Enhetsplockningsbekräftelse | Tillgängliga för arbetstyperna Plockning och Inventering. Bekräftelse av produkten väljs automatiskt. Låter dig bekräfta varje lagerenhet från den mobila enheten. |
 |  Maximalt antal enheter  |                   Tillgänglig för plockningsarbete om enhetsplockningsbekräftelse är aktiverad. Sätter en gräns för hur många enheter du måste bekräfta.                   |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

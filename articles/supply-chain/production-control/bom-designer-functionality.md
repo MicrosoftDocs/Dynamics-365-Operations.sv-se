@@ -121,3 +121,6 @@ Klicka på **Inställningar** om du vill anpassa informationen som visas i träd
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

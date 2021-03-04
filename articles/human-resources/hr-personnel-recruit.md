@@ -227,3 +227,5 @@ Vid behov kan du avvisa en kandidat när du har anställt den. En kandidat kan t
 [Konfigurera Common Data Service virtuella enheter](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Organisera personalen](hr-personnel-departments-jobs-positions.md)<br>
 [Ställa in komponenter för ett jobb](hr-personnel-jobs.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

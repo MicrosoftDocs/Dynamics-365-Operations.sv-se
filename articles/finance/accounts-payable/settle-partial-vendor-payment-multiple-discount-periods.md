@@ -140,3 +140,6 @@ Den 20 juli skapar April en slutbetalning på 200,00. Ingen rabatt utnyttjas, ef
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

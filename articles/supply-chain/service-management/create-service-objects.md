@@ -43,3 +43,6 @@ Serviceobjekt är en kunds tillgångar och produkter som du kan utföra en tjän
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

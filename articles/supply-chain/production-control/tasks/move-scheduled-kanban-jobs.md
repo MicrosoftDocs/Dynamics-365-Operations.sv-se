@@ -62,3 +62,6 @@ Proceduren fokuserar på att flytta planerade kanban-processjobb till en annan p
 2. Klicka på **Framåt.** Observera att jobbet flyttas en rad ned på listan. 
 
 3. Klicka på **Bakåt**. Observera att jobbet flyttas en rad upp på listan.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

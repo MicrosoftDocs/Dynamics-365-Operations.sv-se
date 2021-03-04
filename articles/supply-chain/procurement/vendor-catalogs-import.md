@@ -70,3 +70,6 @@ En filmall för katalogimport är en XSD-fil som du använder för att skapa en 
 3. Välj plats där du vill lagra katalogfilmallen och spara filen i dialogrutan **Spara som**.
 
 Mer information och exempel finns i det här blogginlägget: [leverantörskataloger i Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

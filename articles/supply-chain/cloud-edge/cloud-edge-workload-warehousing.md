@@ -245,3 +245,6 @@ På arbetsbelastningen i skalningsenheter kan du hantera följande två batchjob
 
 - Bearbeta registerposter för påfyllnad
 - Bearbeta överföringshändelser för kontroll av påfyllnadskörning
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

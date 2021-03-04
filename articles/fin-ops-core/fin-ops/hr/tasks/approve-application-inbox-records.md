@@ -48,3 +48,6 @@ I den här proceduren visas hur du granskar ansökningar som mottagits via medar
 2. Klicka på länken på den valda raden i listan.
 3. Expandera avsnittet Bilagor.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

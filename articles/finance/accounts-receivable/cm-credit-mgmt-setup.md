@@ -79,3 +79,6 @@ Flera statistik för kredithantering inkluderas i faktarutan **Statistik över k
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Nummerserier och delade parametrar för nummerserier
 
 Ett journal-ID krävs för att bearbeta kreditgränsjusteringar. Du måste lägga till det kreditgränsjusteringsnummer som ska användas för att generera journal-ID.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

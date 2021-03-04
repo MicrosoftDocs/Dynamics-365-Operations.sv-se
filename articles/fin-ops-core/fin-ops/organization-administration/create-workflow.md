@@ -83,3 +83,6 @@ Följ dessa steg när du är redo att spara och aktivera arbetsflödet.
 
     - Klicka på **Aktivera den nya versionen** för att aktivera denna version av arbetsflödet. När ett arbetsflöde är aktivt kan användare skicka dokument till det för bearbetning.
     - Klicka på **Aktivera inte den nya versionen** om du inte vill aktivera denna version. Du kan aktivera arbetsflödet senare.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

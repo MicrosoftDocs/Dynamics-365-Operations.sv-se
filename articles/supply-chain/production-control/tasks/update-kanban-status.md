@@ -48,3 +48,6 @@ När en kanban tömms av misstag eller en inlevererad kanban behöver tömmas, m
 2. Markera vald rad i listan.
     * Observera att status för materialhanteringsenhet är Tömd.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

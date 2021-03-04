@@ -80,3 +80,6 @@ I många organisationer kan kompensations- och förmånsansvariga bara komma åt
 
 ###  <a name="platform-update-24-for-finance-and-operations"></a>Plattformsuppdatering 24 för Finance and Operations
 Mer information om plattformsuppdatering 24 för Finance and Operations finns i [Vad är nytt eller har ändrats i Finance and Operations-plattformsuppdatering 24 (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

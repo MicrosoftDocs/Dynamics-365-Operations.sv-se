@@ -74,3 +74,6 @@ När en ekonomisk transaktion bokförs får transaktionsposten statusen **Såld*
 -   Lagerjournaler med negativ kvantitet, t.ex. förflyttningar, resultat, inventeringsjournaler, strukturlistor och överföringar
 
 Transaktioner som minskar kvantiteten bokförs till den löpande genomsnittliga självkostnaden. Därför måste lagerstängningsprocessen kvitta utleveranstransaktioner mot inleveranstransaktioner baserat på den lagermodell som har valts för varje artikel.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

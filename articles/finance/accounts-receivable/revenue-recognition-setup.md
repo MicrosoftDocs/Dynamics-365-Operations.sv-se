@@ -193,3 +193,6 @@ Intäktsredovisning kan också användas för försäljningsorder som skapas gen
 
 - **Periodiserad fakturaintäkt** (under **Intäktskonton**) – ange huvudkontot för intäktspriset som bokförs för periodiserad intäkt (istället för intäkt). Intäktspriset periodiseras om försäljningsorderraden har en intäktsplan.
 - **Periodiserad kostnad** (under **Kostnadskonton**) – ange huvudkontot för kostnaden för det sålda beloppet för varor som bokförs till periodiserad kostnad för sålda varor om intäkten också periodiseras.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

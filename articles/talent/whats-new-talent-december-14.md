@@ -151,3 +151,6 @@ Uppdaterade mappningar ska se ut som följande bilderna.
 ![Arbetare till arbetaruppgift.](./media/WorkerMapping.png)
 
 ![Transformering av fältet Kön](./media/WorkerTransform.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

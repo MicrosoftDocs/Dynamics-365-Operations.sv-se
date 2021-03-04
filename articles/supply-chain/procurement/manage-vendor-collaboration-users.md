@@ -94,3 +94,6 @@ Om du vill begära att säkerhetsrollerna ändras för en användare:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

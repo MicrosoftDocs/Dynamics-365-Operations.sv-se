@@ -85,3 +85,6 @@ Om du vill använda den integrerade tjänsten [Microsoft Accessibility Insights]
 [Utöka en produktsida](enrich-product-page.md)
 
 [Utöka en kategorilandningssida](enrich-category-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

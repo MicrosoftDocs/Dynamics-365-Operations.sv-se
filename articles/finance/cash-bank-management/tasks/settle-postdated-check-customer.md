@@ -56,3 +56,6 @@ I den här proceduren används demonstrationsföretaget USMF.
 10. Klicka på Verifikation.
 11. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -37,3 +37,6 @@ Nedan beskrivs proceduren för att tilldela ett livscykeltillstånd till en fris
 5. Ange eller välj ett värde i fältet produktlivscykeltillstånd.
 6. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

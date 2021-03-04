@@ -246,3 +246,6 @@ Du kan visa överföringsloggar för alla skickade dokument.
 - [Tillägg för elektronisk fakturering: översikt](e-invoicing-service-overview.md)
 - [Kom igång med tillägget elektronisk fakturering](e-invoicing-get-started.md)
 - [Ställ in tillägg för elektroniska fakturor](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Du kan skicka en begäran om frånvaro och se statusen för din begäran om frå
 ## <a name="see-also"></a>Se även
 
 [Skjut upp tjänstledighet](hr-leave-and-absence-suspend-leave.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

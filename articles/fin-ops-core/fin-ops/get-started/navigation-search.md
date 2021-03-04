@@ -62,3 +62,6 @@ Listan med sökresultat begränsas till tio objekt. Om du inte hittar vad du sö
 ## <a name="development"></a>Utveckling
 
 Från ett utvecklingsperspektiv är navigeringssökfunktionen mycket lätt att utnyttja, eftersom det inte finns någon faktiskt fördröjning mellan distributionen av menyalternativ och deras förmåga att visas i sökresultat. Så länge som menyalternativen länkas till från antingen navigeringsfönstret eller instrumentpanelen kommer dessa automatiskt att bli sökbara.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Om du vill modellera legotillverkningsarbete för lean manufacturing måste du s
 24. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Enhet.
 25. ResolveChanges enheten.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

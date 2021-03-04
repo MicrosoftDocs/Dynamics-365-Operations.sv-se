@@ -53,3 +53,6 @@ Följ dessa steg för att skapa en leasingbok.
     | Korttidströskel                     | Ange antalet månader som ska användas som ett tröskelvärde för kortfristig leasing. Om leasingperioden är mindre än eller lika med antalet månader som du anger här, klassificeras leasingen som en kortsiktig leasing och behandlingen med uppskov av leasingavgift kommer att tillämpas. |
     | Lågvärdeströskel                      | Ange ett belopp som ska användas som tröskelvärde för lågvärdesleasing. Om tillgångens verkliga värde är mindre än eller lika med värdet som du anger här, klassificeras leasingen som en lågvärdesleasing och behandlingen med uppskov av leasingavgift kommer att tillämpas. |
     | Betala till leverantör                            | Ställ in det här alternativet **Ja** för att låta leasingbetalningar bokföras, som en faktura, till det leverantörskonto som anges för varje leasing. När en leasingbetalning bokförs kommer leverantörskontot att krediteras. Om det här alternativet är inställt på **Nej**, krediteras det konto som anges för bokföringstypen **Leasingbetalning** på sidan **Parametrar för bokföring av leasing** i stället. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

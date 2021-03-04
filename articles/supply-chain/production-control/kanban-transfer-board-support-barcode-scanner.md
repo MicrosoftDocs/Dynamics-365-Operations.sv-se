@@ -192,3 +192,6 @@ Status för valda jobb och status för alla fixerade jobb för händelsekanban a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -183,3 +183,6 @@ För varje dispositionskod, som du definierar, måste du välja dispositionsåtg
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

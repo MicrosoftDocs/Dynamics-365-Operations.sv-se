@@ -136,3 +136,5 @@ I den här proceduren visas om hur du aktiverar en kvalitetshantering process d�
 
 > [!NOTE]
 > Funktionen *Kvalitetshantering för lagerprocesser* ger ytterligare alternativ för att ställa in kvalitetsassociationer. Det lägger till ett nytt villkor (**Tillämplig lagerställetyp**) och en ny inställning (**Policy för kvalitetsbearbetning**). Om du har aktiverat den här funktionen, se [Kvalitetshantering för lagerprocesser](../quality-management-for-warehouses-processes.md) för mer information.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

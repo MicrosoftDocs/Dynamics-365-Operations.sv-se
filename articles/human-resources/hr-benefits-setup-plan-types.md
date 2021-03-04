@@ -63,3 +63,6 @@ En plantyp kan definiera täckningsalternativ. Alternativen för disponering är
    | **Rapportfönster** | Anger rapportfönstret, i dagar, för livshändelsen. **Obs**! om du inte anger ett belopp, förutsätts att rapportfönstret är noll och livshändelsen bearbetas inte. |
 
 5. Välj **Spara**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

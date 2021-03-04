@@ -62,3 +62,6 @@ Fältet **Kostnadsallokering för biprodukt** på sidan **Samprodukter** är ett
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

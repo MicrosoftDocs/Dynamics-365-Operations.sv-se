@@ -120,3 +120,6 @@ Om du vill massredigera transaktioner som inte är länkade till ett utdrag i Co
 [Skapa en Excel-arbetsbok för att redigera butikstransaktioner](create-excel-edit.md)
 
 [Lägga till fält i en Excel-arbetsbok för att redigera butikstransaktioner](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Den här proceduren går igenom hur du kan skapa avancerade regler för journale
 4. Markera gruppen du vill tillåta bokföring för när det gäller journalnamnet i trädet.
 5. Klicka på **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

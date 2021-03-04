@@ -92,3 +92,6 @@ Följ stegen nedan när du vill skapa och redigera nummerserier.
     | Kontrollsiffra | Den här segmenttypen lägger till en kontrollsiffra, som är en beräkning av modulo 10. (Det här beteendet matchar den befintliga logiken för ID-nummer.) För den här segmenttypen är fältet **värde** fältet alltid inställt på ett inskjutningstecken (*^*) och fältet **längd** är alltid inställt på *1*. |
 
 1. Om du vill visa ett exempel på det slutliga talformatet, kontrollerar du fältet **format** längst ned på snabbfliken **segment**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

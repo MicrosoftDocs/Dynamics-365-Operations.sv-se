@@ -66,3 +66,6 @@ Varje återanskaffningsmetod tilldelas en av följande täckningskoder:
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Huvudplaner – översikt](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

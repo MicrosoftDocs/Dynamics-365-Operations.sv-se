@@ -77,3 +77,6 @@ Funktionen `TRANSLATE` ersätter ett tecken i taget. Funktionen ersätter det f�
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Textfunktioner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

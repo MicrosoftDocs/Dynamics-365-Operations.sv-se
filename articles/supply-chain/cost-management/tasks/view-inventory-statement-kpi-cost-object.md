@@ -39,3 +39,6 @@ Det demonstrationsdataföretag som används för att skapa den här proceduren �
 7. Ange ett datum i fältet Från datum.
 8. Ange ett datum i fältet Till datum.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

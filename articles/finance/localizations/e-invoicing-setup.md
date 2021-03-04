@@ -361,3 +361,6 @@ Följ de här stegen om du vill hantera livscykeln för en funktion för tilläg
 
     > [!NOTE]
     > När du väljer **Ja** ändras status för konfigurationsversioner automatiskt från **slutförd** till **delad**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

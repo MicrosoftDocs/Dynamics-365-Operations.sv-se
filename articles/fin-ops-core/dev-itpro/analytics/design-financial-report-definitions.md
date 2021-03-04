@@ -84,3 +84,6 @@ I följande register finns beskrivningar av flikarna i en rapportdefinition och 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

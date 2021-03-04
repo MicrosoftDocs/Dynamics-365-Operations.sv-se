@@ -50,3 +50,6 @@ Kostnadsredovisningen visas på sidan **Beräkna artikelkostnad**. Kostnadsredov
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

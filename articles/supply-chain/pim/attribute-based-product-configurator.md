@@ -141,3 +141,6 @@ Det sista steget är att ange de attributbaserade försäljningspriserna för pr
 1. I åtgärdsfönstret, öppna fliken **Modell** och från gruppen **Produktmodellinformation** välj **Versioner**.
 1. Sidan **versioner** öppnas. Kontrollera att **prissättningsmetoden** är inställd på **attributbaserat**.
     ![Ställ in prissättningsmetoden för attributbaserad](media/prod-config-versions.png "Ställ in prissättningsmetoden för attributbaserad")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

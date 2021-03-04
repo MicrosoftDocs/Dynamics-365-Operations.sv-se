@@ -70,3 +70,6 @@ Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina 
     - Åtgärden **Rensa och skicka in** gäller endast när du använder kundtjänstfunktionerna.  
 8. Klicka på **Rensa spärrar**. Spärren har nu tagits bort från ordern och från listan över aktiva spärrningar. Ändra värdet i fältet Visa för att visa samtliga spärrningar eller deras underuppsättningar enligt en viss status.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

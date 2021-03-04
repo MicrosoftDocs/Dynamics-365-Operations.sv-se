@@ -64,3 +64,6 @@ Du kan även kopiera kunder med hjälp av sökfunktionen för momsregistreringsn
 
 1. Alternativet **Kopiera kund** visas. Standardvärdet för det här alternativet är **Nej**. Om du vill kopiera kunden till den aktuella juridiska personen väljer du alternativet **Ja**. 
 2. Välj **Välj**. Den nya kunden skapas.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

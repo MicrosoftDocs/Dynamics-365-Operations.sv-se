@@ -44,3 +44,6 @@ I den här proceduren visas hur du ändrar rapporteringsrelationen för en medar
 12. I fältet Rapporter till befattning, ange eller välj ett värde.  Exempel: 000437
 13. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Gör på följande sätt när du vill lägga till det ytterligare BankTransactio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

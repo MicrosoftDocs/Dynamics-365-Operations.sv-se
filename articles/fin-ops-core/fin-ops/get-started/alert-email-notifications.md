@@ -50,3 +50,6 @@ Tjänsten skickar e-postmeddelanden med hjälp av fördefinierade e-postmallar s
 Följande bild visar strukturen för aviseringar skickas när de tas emot via e-post.
 
 [![Mallbaserade aviseringar för att skapa, ändra och ta bort mallen](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

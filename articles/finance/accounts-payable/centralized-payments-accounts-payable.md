@@ -301,3 +301,6 @@ Fabrikam skapar en betalning på 75,00 för leverantör 3004, Fourth Coffee. Bet
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

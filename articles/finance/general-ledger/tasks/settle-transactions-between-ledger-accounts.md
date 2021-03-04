@@ -49,3 +49,6 @@ Proceduren visar hur det går till att kvitta transaktioner mellan huvudbokskont
 7. Klicka på Redovisningskvittningar.
 8. Markera vald rad i listan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Du kan distribuera Dynamics 365 Finance + Operations (lokal). När du väljer en
 - [Borttagna och utfasade funktioner för Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Livscykelpolicy och lokala versioner av programmet](../migration-upgrade/on-prem-version-update-policy.md)
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

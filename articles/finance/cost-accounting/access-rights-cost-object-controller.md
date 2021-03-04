@@ -106,3 +106,6 @@ Ytterligare resurser
 - [Arbetsyta för kostnadskontroll](cost-control-workspace.md)
 - [Dimensionshierarki](dimension-hierarchy.md)
 - [Ställa in säkerhet för kostnadsredovisningsinnehållspaket](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

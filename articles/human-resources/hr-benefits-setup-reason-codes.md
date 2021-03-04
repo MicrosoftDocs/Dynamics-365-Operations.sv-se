@@ -41,3 +41,6 @@ Dynamics 365 Human Resources använder orsakskoder för att förklara varför en
    | **Beskrivning** | En beskrivning av orsakskoden. |
 
 4. Välj **Spara**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

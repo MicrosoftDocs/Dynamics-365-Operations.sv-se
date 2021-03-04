@@ -227,3 +227,6 @@ Verktygsfältet för rapportdesignern ger snabb åtkomst till kommandon navigeri
 [Ekonomisk rapportering](financial-reporting-intro.md)
 
 [Generera ekonomiska rapporter](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

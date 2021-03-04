@@ -68,3 +68,6 @@ Den här uppgiftsguiden beskriver fakturering av en försäljningsorder, inklusi
 10. Klicka på **Avbryt**.
 11. Klicka på **Ja**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

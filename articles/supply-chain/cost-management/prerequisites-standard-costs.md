@@ -80,3 +80,6 @@ Kunder som vill ändra sina befintliga artiklar till lagermodellen Standardkostn
 
 - [Så här ställer du in standardkostnader för direkt material i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/06/07/how-to-set-up-standard-costs-for-direct-materials-in-dynamics-365-for-finance-and-operations)
 - [Direkta standardarbetskostnader i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/07/16/standard-direct-labor-cost-in-dynamics-365-for-finance-and-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

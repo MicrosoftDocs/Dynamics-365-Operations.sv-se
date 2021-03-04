@@ -45,3 +45,6 @@ När en rekryterare har skapat ett massanställningsprojekt och genererat befatt
 8. Avmarkera vald rad i listan.
     * Välj nästa projektbefattning och fortsätt ange information om arbetare för varje person som du anställer.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

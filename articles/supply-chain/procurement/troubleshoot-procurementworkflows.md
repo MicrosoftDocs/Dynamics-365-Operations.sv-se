@@ -80,3 +80,6 @@ När du har avbrutit inköpsorder som *bekräftat* visas de inställda inköpsor
 
 Det här problemet uppstår endast för inköpsorder som är föremål för ändringshantering. Det beror på att annulleringen betraktas som en ändring som måste godkännas. Godkännandet kan utföras automatiskt av systemet. Därför är processen att skicka den annullerade inköpsordern till arbetsflödet för godkännande så att den kan gå till ett *godkänt* tillstånd. Vid den tidpunkten visas inköpsordern inte längre i listan med utkast till inköpsorder i arbetsytan **Inköpsorder förberedelse**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

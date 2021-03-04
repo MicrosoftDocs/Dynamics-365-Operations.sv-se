@@ -114,3 +114,6 @@ I följande avsnitt beskrivs olika scenarier för intäktsredovisning:
 - [Omallokering vid intäktsredovisning – Scenario 2](rev-rec-reallocation-scenario-2.md) – Två försäljningsorder registreras, och sedan lägger kunden till en artikel i kontraktet efter att den första försäljningsordern har fakturerats.
 - [Omallokering vid intäktsredovisning – Scenario 3](rev-rec-reallocation-scenario-3.md) – En ny rad läggs till i en befintlig, fakturerad försäljningsorder.
 - [Omallokering vid intäktsredovisning – Scenario 4](rev-rec-reallocation-scenario-4.md) – En rad tas bort från en befintlig, delvis fakturerad försäljningsorder.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

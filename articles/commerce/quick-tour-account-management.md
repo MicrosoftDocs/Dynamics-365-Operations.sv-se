@@ -96,3 +96,6 @@ Mer information om moduler för kontohantering och hur du redigerar dem finns i 
 
 [Översikt över sidor för kundvagn och kassa](quick-tour-cart-checkout.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Den här proceduren visar hur en ny produkt skapas i Handel produkthierarkin. De
 8. Skriv ett värde i fältet Produktnummer.
 9. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

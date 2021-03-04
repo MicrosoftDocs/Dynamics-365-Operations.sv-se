@@ -128,3 +128,6 @@ Om du vill hantera översättningar för värden i ett dimensionsvärdegrupp, f�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

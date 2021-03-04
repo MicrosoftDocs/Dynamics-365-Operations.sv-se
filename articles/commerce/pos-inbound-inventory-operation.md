@@ -221,3 +221,6 @@ När dokumentet är i status **begärd** visas det på fliken **Aktiv**. Det kan
 ## <a name="related-topics"></a>Relaterade ämnen
 
 [Utgående lageråtgärder i kassan](pos-outbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ I följande tabell beskrivs fälten som är tillgängliga på fliken **Konstrukt
 | Allvarlighetsregel | Välj hur allvarlighetsgraden för en teknisk ändringsorder ska fastställas. Välj *manuell* om användaren förväntas ange ett värde i fältet **allvarlighetsgrad**. Välj *Beräkna* om du vill att systemet beräknar värdet av fältet **Allvarlighetsgrad** när du väljer **Beräkna allvarlighetsgrad** i åtgärdsfönstret för teknisk ändringsorder. I det här fallet använder systemet allvarlighetsreglerna som definieras på sidan **Allvarlighetsregel**. Välj *Beräkna automatiskt* om du vill att värdet i fältet **Allvarlighetsgrad** beräknas automatiskt och fyllas i enligt regeluppsättningarna för allvarlighetsgrad. |
 | Återutge påverkade produkter | Det här fältet används när du återlanserar produkter via en teknisk ändringsorder. Du kan välja om alla produkter eller endast de berörda produkterna ska föreslås i dialogrutan **Versioner**. |
 | Strukturlistenivåer att frisläppa | Djupet på strukturnivån som ska frisläppas. Om strukturlistan har fler nivåer (dvs. om den är djupare) än värdet som anges här frigörs bara nivåerna upp genom det angivna värdet. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

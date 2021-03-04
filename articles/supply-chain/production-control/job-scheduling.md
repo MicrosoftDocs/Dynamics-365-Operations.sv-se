@@ -77,3 +77,6 @@ Vid finplaneringen används även de effektivitetsprocent som angetts för resur
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -66,3 +66,6 @@ Den här proceduren fokuserar på att köra ett uttagskanban-jobb för att över
 2. Klicka på Slutför.
     * Detta slutför överföringen av båda jobben.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

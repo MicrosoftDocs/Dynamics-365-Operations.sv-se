@@ -109,3 +109,6 @@ Som beskrivs i avsnittet ovan kan du lägga till arbetsorder till en arbetsorder
 
 Om du vill ta bort en arbetsorder från en arbetsorderpool, upprepa dessa steg men välj **Ta bort** i steg 3.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

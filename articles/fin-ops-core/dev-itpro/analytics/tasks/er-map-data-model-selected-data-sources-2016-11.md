@@ -146,3 +146,6 @@ I följande steg beskrivs hur en användare i rollen Systemadministratör eller 
 5. Välj den slutförda versionen av den aktuella konfigurationen.
     * Observera att den skapade konfigurationen sparas som slutförd version 1.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

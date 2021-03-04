@@ -109,3 +109,6 @@ I skärmbilden nedan läggs **Typ** till, och den mest detaljerade beräkningen 
 >[!NOTE]
 >Om du vill ha en översikt över alla felregistreringar som har skapats på arbetsorder och underhållsbegäranden, klicka på **Tillgångshantering** > **Förfrågningar** > **Tillgångsfel** > **Tillgångsfel**. På sidan **Tillgångsfel** väljer du en tillgångsfelregistrering och expanderar fönstret **Relaterad information** för att visa information om den relaterade arbetsordern eller underhållsbegäran.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

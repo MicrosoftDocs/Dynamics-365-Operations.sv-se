@@ -541,3 +541,6 @@ Om sorteringspositionerna ska stängas manuellt måste alternativet **Automatisk
 
 > [!IMPORTANT]
 > När du har skapat rörelsearbete från sorteringsplatsen, får du inte avbryta arbetet. I annat fall kommer positionen och behållarna i den att tas bort från systemet och inte användas för vidare behandling. Även lagret tas bort.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

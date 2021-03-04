@@ -38,3 +38,6 @@ En huvudbok för kostnadsredovisning utgör den övergripande rapporteringsenhet
 8. Ange eller välj ett värde i fältet Statistikdimension.
 9. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

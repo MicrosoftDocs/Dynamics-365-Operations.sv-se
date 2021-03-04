@@ -73,3 +73,6 @@ Med den här guiden blir det enklare att skapa en leverantörsfaktura från en i
 19. Klicka på **Bokför**.
 20. Stäng formuläret. Observera att inköpsordern inte längre registreras som mottagen men inte fakturerad.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

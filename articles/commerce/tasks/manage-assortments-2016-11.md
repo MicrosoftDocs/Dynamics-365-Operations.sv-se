@@ -55,3 +55,6 @@ Den här proceduren visar hur du skapar och publicerar ett nytt produktsortiment
 1. Klicka på Publicera.
 2. Klicka på Ja.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

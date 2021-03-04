@@ -117,3 +117,6 @@ Följande tabell visar de visulaiseringar som är tillgängliga på varje rapppo
 | Fakturor som inte kunde importeras | <ul><li>Fakturor som inte kunde importeras</li><li>Fakturor som inte kunde importeras efter företag</li></ul> |
 | Orsaker till automatiseringsfel | <ul><li>Fakturor misslyckades</li><li>Fakturorna misslyckades av företaget</li><li>Fakturor som misslyckades av leverantörsgrupp</li></ul> |
 | Arbetsflödesstatus                | <ul><li>Fakturor i arbetsflöde</li><li>Instanser av arbetsflöde för leverantörsfaktura</li><li>Tilldelning per godkännare</li><li>Arbetsflöde för leverantörsfakturor per företag</li><li>Genomsnittligt antal dagar i arbetsflödet per godkännare</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

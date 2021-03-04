@@ -101,3 +101,6 @@ I den här proceduren visas hur du skapar offerter med en uppsättning produkter
 11. Gå till försäljning och marknadsföring > offerter > Alla offerter.
     * Kontrollera att offerter har skapats för alla angivna kunder i massuppdateringrutinen som baserat på den valda mallen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

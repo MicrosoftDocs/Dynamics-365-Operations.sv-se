@@ -49,3 +49,6 @@ Beakta följande situationer: Ett del av metallplattan krävs för en svetsningo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

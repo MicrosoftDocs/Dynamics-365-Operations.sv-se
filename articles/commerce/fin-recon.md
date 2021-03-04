@@ -62,3 +62,6 @@ När bokföring av indroppningsutdrag används, så att bokföringen av transakt
 Information om den ekonomiska avstämningen för ett skift synkroniseras till Commerce-administration med hjälp av P-jobbet.
 
 Ekonomiska butiksutdrag i Commerce-administration beräknar inte summor för att visa detaljer på utdragsraderna. I stället används de slutna beloppen i kassaklienten för att skapa och bokföra ekonomirapporter.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

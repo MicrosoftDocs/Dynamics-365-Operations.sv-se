@@ -193,3 +193,6 @@ Hela levererade överföringsorder flyttas till fliken **Slutför** på dokument
 ## <a name="related-topics"></a>Relaterade ämnen
 
 [Ingående lageråtgärder i kassan](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

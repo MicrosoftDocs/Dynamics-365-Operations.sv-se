@@ -274,3 +274,6 @@ En prognosreduceringsnyckel måste tilldelas artikelns disponeringsgrupp. Följ 
 ### <a name="reduce-a-forecast-by-transactions"></a>Minska en prognos med transaktioner
 
 När du väljer **transaktioner - reduceringsnyckel** eller **transaktioner - dynamisk period** som metod för att minska prognosbehoven kan du ange vilka transaktioner som reducerar prognosen. På sidan **Disponeringsgrupper** på transaktioner **Övrigt** i fältet **reducera prognos efter** väljer du **alla transaktioner** om alla transaktioner ska reducera prognosen eller **order** om bara försäljningsorder ska reducera prognosen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

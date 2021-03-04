@@ -163,3 +163,6 @@ Om konfigurationen kommer att ske på en ort, eller ens ett företag, som skilje
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

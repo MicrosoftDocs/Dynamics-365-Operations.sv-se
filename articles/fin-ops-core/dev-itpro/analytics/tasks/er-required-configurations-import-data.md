@@ -254,3 +254,6 @@ Kör denna formatmappning i testsyfte. Använd filen 1099entries.xml som du tidi
 27. Stäng sidan.
 28. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

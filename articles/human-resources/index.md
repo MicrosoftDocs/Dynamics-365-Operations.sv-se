@@ -78,3 +78,6 @@ Personal ansluter människor och driftdata som hjälper dig att optimera persona
 [Hantera ledighet och frånvaro](hr-leave-and-absence-overview.md)</br>
 [Utveckla medarbetare](hr-develop-performance-management-overview.md)</br>
 [Skapa kurser](hr-learning-courses.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

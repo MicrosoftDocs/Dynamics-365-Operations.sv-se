@@ -58,3 +58,6 @@ I den här proceduren visas hur en enskild anställd kan omfattas av en eller fl
 14. Klicka på länken på den valda raden i listan.
 15. På den här sidan kan du visa vilka medarbetare som har anmälts till förmånen, samt vilka medarbetare som inte har anmälts.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

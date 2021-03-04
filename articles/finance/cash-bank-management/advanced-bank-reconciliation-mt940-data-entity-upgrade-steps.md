@@ -64,3 +64,6 @@ Använd följande steg när du vill lägga till bankutdragimportenheten för att
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

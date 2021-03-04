@@ -48,3 +48,6 @@ Om du vill ha stöd för fristående Onboard-appen, använd modulen i följande 
 | Rapportera ett problem. | Markera knappen **hjälp** (**?**) i det övre högra hörnet på sidan och välj **rapportera ett problem.** Ange en beskrivning av problemet och inkludera en e-postadress om du vill följa upp problem. |
 | Få hjälp med frågor om Talent-licenser. | Kontakta din partner eller Microsoft-återförsäljare. |
 | Begär nya funktionera och egenskaper i Onboard. | Välj knappen **hjälp** (**?**) och välj **Idéer** Du kan också besöka [Dynamics 365 Talent: Onboard idéer](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard) att visa, söka eller rösta på befintliga idéer eller lägga till nya idéer. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

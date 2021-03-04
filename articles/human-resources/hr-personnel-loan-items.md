@@ -55,3 +55,6 @@ Om en artikel skadas eller tappas bort anger du ett fiktivt återlämnande. Seda
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

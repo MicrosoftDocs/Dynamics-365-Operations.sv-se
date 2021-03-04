@@ -73,3 +73,6 @@ Om en användare av en näthandelsplats eller en modul använder en icke-väsent
 [Modul för cookie-samtycke](cookie-consent-module.md) 
  
 [Modul för sidhuvud](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

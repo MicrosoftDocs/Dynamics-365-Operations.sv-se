@@ -185,3 +185,6 @@ namespace TalentODataPoC
 ```
 
 När du har hämtat en åtkomsttoken överför du token i auktoriseringsrubriken som ett ansvarigt token till varje begäran som du skickar till data-API enligt beskrivningen ovan.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

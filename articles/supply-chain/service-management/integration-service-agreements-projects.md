@@ -83,3 +83,6 @@ Du kan även aktivera fälten **Starttid** och **Sluttid** på fliken **Projekt*
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

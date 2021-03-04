@@ -81,3 +81,6 @@ Följande illustration visar resultatet när det designade formatet har körts.
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Lista över funktioner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

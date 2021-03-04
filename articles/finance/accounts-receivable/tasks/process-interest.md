@@ -68,3 +68,6 @@ I den här proceduren visas hur du skapar, skriver ut och bokför räntefakturor
 5. Klicka på **OK**.
 6. Välj Bokförd i fältet **Status.**
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -66,3 +66,6 @@ Den här funktionen är bara tillgänglig för juridiska personer som har den pr
 16. Klicka på Spara.
 17. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

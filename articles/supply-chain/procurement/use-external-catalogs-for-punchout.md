@@ -55,3 +55,5 @@ När rekvisitionen är klar använder du åtgärden **Srbetsflöde** > **Skicka*
 
 - [Ställ in en extern katalog för PunchOut eProcurement](set-up-external-catalog-for-punchout.md)
 - [Förbättringar i inköps-cXML](purchasing-cxml-enhancements.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

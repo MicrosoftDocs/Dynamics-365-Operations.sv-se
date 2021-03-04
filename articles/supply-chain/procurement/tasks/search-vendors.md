@@ -39,3 +39,6 @@ Läs hur du vill söka efter leverantörer baserat på specifika kriterier. I de
 6. Skriv ett värde i fältet Land/region.
 7. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

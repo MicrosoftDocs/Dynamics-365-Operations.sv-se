@@ -107,3 +107,6 @@ När du ställer in dina kontostrukturer finns det metodtips som du kan följa. 
 När du är nöjd med dina nya inställningar eller en ändring av en kontostruktur måste du aktivera den. Om en kontostruktur tilldelas till redovisningen kommer denna aktivering vara en tidskrävande process eftersom alla ej bokförda transaktioner i systemet måste vara synkroniserade med den nya strukturen. Bokförda transaktioner påverkas inte med hänsyn till förändringar struktur.
 
 Mer information finns i [planera din kontoplan](plan-chart-of-accounts.md), [ekonomiska dimensioner](financial-dimensions.md) och [och dimensionskombinationer (indelad kontroll) ange](enter-account-dimension-combinations-segmented-entry-control.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

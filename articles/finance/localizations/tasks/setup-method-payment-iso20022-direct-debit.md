@@ -53,3 +53,6 @@ Detta är den tredje av fem procedurer som demonstrerar kundbetalningsprocessen 
     * Välj parametern Require mandate för layouten för kundbetalningar som kräver inkludering av fullmaktsinformation i betalningsmeddelandet, exempelvis autogiro för SEPA.  
 9. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

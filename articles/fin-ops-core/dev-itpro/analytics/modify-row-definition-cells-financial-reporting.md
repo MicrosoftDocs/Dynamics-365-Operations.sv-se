@@ -529,3 +529,6 @@ En dimensionsvärdeuppsättning är en namngiven grupp av dimensionsvärden. En 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Följande alternativ, som du hittar på fliken **Handel** för frisläppta produ
 > De här inställningarna begränsar inte hur prisåsidosättningsåtgärden eftersom de anger grundpriset och behandlas inte som en rabatt.
 
 [![Förhindra rabattfält](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

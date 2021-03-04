@@ -132,3 +132,6 @@ En funktionsplats med relaterade underplatser kan tas bort om inga tillgångar h
 
 >[!NOTE]
 >Om du inte kan ta bort en funktionsplats kan du i stället hantera borttagningen genom att ställa in ett livscykeltillstånd för funktionsplats för detta ändamål. Du kan till exempel ställa in ett "kasserat" eller "borttaget" stadium, som inte ska vara en aktiv fas, i formuläret **livscykeltillstånd för funktionsplats**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

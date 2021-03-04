@@ -57,3 +57,6 @@ Dialogrutan returnerar ATP-information från Supply Chain Management. I den här
 - Inleveranskvantitet
 - Utleveranskvantitet
 - Lagerbehållning
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

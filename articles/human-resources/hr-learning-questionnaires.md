@@ -44,3 +44,6 @@ I följande tabell finns länkar till mer information om viktiga enkätuppgifter
 | [Utforma en enkät](hr-learning-design-questionnaires.md) | Den här artikeln ger information om hur du utformar en enkät. Utformningen omfattar att ställa in förutsättningar, frågor och svar och sedan att kombinera dem till en enkät. |
 | [Skicka ut och schemalägg enkäter](hr-learning-distribute-questionnaires.md) | Den här artikeln innehåller information om hur du distribuerar en enkät till svarande och hur du fyller i enkäter. |
 | [Visa och utvärdera resultaten av en enkät](hr-learning-evaluate-questionnaire-results.md) | Den här artikeln innehåller information om hur du visar och utvärderar resultaten från ifyllda enkäter. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -218,3 +218,6 @@ Arbetsundantag styr funktionen för kortplockning. Följ dessa steg för att ska
 1. Välj **kortplockning**.
 1. Välj den arbetsundantagskod som du har skapat för det här scenariot.
 1. Om du har valt rätt undantag ska kryssrutan **annullera och skriv ut igen** vara tillgänglig. Markera rutan och bekräfta. När det är bekräftat räknas den serie som identifieras av fältet **etikettversions-ID** omberäknas baserat på den ändrade kvantiteten för arbetsraden. Sedan skrivs den om på den angivna skrivaren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

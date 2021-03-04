@@ -42,3 +42,6 @@ Följande alternativ är tillgängliga för överföring av delredovisningsbatch
 I version 10.0.8 har förbättringar gjorts för att förbättra prestanda för alternativet Asynkront. Den här funktionen aktiveras under funktionsnamnet **Prestandaoptimering för överföring av delredovisning till redovisning**. 
  
 Den här funktionen gör det enklare att överföra data från delredovisningen till redovisningen. Det gör att processen blir effektivare och grupper av mindre transaktioner som kan överföras till varandra. På så sätt kan du använda batch-servern mer effektivt. Denna funktion kräver att batch-servern ställs in online och fungerar för att det asynkrona överföringsalternativet ska fungera. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

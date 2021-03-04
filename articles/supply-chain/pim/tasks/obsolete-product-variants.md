@@ -73,3 +73,6 @@ Den här proceduren visar hur du hittar föråldrade frisläppta produkter eller
 
 8. Hitta och markera önskad post i listan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

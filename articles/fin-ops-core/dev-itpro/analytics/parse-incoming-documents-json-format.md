@@ -50,3 +50,6 @@ Du måste dessutom fylla i uppgiftsguiden [ER Skapa erforderliga konfigurationer
 | Namn                  | Filnamn |
 |------------------------|-----------|
 | ER modellkonfiguration | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=874111) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

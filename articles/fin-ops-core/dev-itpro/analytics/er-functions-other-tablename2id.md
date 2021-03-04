@@ -59,3 +59,6 @@ Körningen av den här funktionen kan ha olika resultat i olika instanser av Mic
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Andra (företagsdomänspecifika) funktioner](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -137,3 +137,6 @@ Om du använder bas-URL:en för kanalen och går till URL:en för sidan på den 
 [Dokumentera tillstånd och livscykel](document-states-overview.md)
 
 [Arbeta med publiceringsgrupper](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

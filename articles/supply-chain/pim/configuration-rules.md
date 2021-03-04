@@ -46,3 +46,6 @@ Befintliga konfigurationer påverkas inte av senare ändringar av konfigurations
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

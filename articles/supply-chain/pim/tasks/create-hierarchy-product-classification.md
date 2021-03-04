@@ -67,3 +67,6 @@ I den här proceduren visas hur du skapar en ny kategorihierarki och tilldelar e
 8. Klicka på länken på den valda raden i listan.
 9. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

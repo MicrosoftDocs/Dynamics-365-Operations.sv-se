@@ -72,3 +72,6 @@ I den här artikeln beskrivs hur du visar berättigande processresultat.
    | **Resultatstatus** | Detta är berättigat eller inte berättigat. Resultatstatusen är inte giltig om medarbetaren inte uppfyller villkoren för berättiganderegler, om personen saknar nödvändig information, t.ex. lönefrekvens eller en fast kompensation, eller om det saknas information om förmånsplanen som förhindrar att arbetare registreras. |
    | **Resultatmeddelande** | Anger varför en arbetare är berättigad till en förmånsplan eller om berättiganderegler har överförts. |
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

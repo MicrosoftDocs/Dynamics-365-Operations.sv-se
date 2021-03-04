@@ -40,3 +40,6 @@ Konfigurationen **visning av äldre batcher inom lagerstället på en mobil enhe
 
 - Under **lagerstyrning** > **inställningar** > **mobiltelefon** > **Menyalternativ på mobil enhet**, ange **använd befintligt arbete** till **Ja** för menyobjekt och välj **Varna** i fältet **plocka äldsta batch**. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

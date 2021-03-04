@@ -37,3 +37,6 @@ Du kan exportera ekonomiska data i de format som specificerats av SIE-gruppen, d
   - Typ 4I – Transaktioner exporteras. 
   - Type 4E – Periodsaldon och -transaktioner exporteras. 
 8. Klicka på **OK**. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

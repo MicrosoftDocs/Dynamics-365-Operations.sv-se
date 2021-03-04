@@ -39,3 +39,6 @@ I den här proceduren visas hur du kan lägga till en ny beräkning i en produkt
 4. Klicka på Stäng.
 5. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

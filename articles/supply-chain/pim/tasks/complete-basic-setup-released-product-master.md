@@ -53,3 +53,6 @@ Detta är den tredje proceduren utav åtta som förklarar hur du ställer upp ko
 20. Stäng sidan.
 21. Stäng formuläret **Information om frisläppt produkt**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

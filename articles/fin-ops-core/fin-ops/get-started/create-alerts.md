@@ -102,3 +102,6 @@ Det går inte att skapa notifieringar för vissa sekundära datakällor i formul
     ```
 2. Skapa en notifiering från formuläret SysTableBrowser.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

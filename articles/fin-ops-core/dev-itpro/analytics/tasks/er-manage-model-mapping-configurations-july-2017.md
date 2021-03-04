@@ -161,3 +161,6 @@ Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här upp
 7. Klicka på OK.
     * Standardmodellmappningskonfigurationen används i den här formatkonfigurationen för att generera det elektroniska dokumentet (de utdata som skapas innehåller företagskoden).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

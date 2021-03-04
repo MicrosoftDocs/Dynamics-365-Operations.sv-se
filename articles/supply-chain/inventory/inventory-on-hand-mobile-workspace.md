@@ -130,3 +130,6 @@ Hämta och installera mobilappen Finance and Operations.
     -   Genom fysiskt lager (denna vy representerar den totala mängden.)
     -   Genom fysiskt reserverat (denna vy representerar den reserverade mängden.)
     -   Genom fysiskt disponibelt (den här vyn representerar tillgänglig mängd utan reservationer.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

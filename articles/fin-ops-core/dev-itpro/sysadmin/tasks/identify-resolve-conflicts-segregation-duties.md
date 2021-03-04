@@ -43,3 +43,6 @@ Det här avsnittet förklarar hur du identifierar och löser konflikter vid ansv
 1. Gå till **Navigeringsfönster > Moduler > Systemadministration > Säkerhet > Ansvarsfördelning > Ansvarsfördelningsregler**. Välj en regel.  
 2. Välj **Validera programbehörigheter och roller**. Om några befintliga roller strider mot den valda regeln visas ett meddelande som innehåller namnet på rollen och namnen på de motstridiga programbehörigheterna. Administratören måste antingen ange hanteringen av säkerhetrisken eller ändra rollen så att den inte bryter mot reglerna för ansvarsfördelning. Om inga roller strider mot den valda regeln visas ett meddelande om att alla roller efterlevs.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

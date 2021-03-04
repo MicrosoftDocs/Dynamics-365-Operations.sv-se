@@ -76,3 +76,6 @@ I det här avsnittet beskrivs hur du hämtar den senaste versionen av dina [Elek
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Hämta ER-konfigurationer från den globala databasen med konfigurationstjänster](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

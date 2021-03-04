@@ -599,3 +599,6 @@ Om arbetaren inte går till jobbet en arbetsdag och det inte finns någon planer
 - Infoga frånvaro automatiskt
 
 När dagliga registreringar beräknas för en arbetare som är aktiverad för flextid används frånvarokoden som anges på fältet **Infoga flex- automatiskt** som en standardfrånvarokod. Om arbetaren inte har aktiverats för flextid används den frånvarokod som anges på fältet **Infoga frånvaro automatiskt**. Om ett företag har en kombination av arbetare som är aktiverade för flextid och som inte är aktiverade för flextimmar, måste båda parametrarna ställas in.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

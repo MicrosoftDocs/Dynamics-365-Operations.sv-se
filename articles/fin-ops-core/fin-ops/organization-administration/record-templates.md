@@ -37,3 +37,6 @@ Till exempel, tänk dig att du anger hyrbilsinformation för ett hyrbilsföretag
 > Du kan bara använda mallar för de områden som du har tillgång till. Men alla malltitlar är synliga för dig när du skapar en ny post, och andra användare också, om du skapar mallar som kommer att vara tillgängliga för alla användare. Beaktar detta när du namnger mallar. Undvik att använda namn som innehåller ord som ”provision”, om det konfidentiellt att vissa medarbetare inom företaget provision-harbaserat lön.
 
 När en eller flera mallar som du har tillgång till finns för ett specifikt formulär och du försöker skapa en ny post i formuläret, visas sidan **Välj en mall för**. När du väljer en mall i listan skapas den nya posten med standardinformation som är baserad på mallen du valde. Om du inte vill använda mallar när du skapar nya poster, markerar du kryssrutan **Fråga inte igen** på sidan **Välj en mall för**. Om du vill visa dialogrutan för val av mall igen högerklickar du på en post, klickar på **Postinfo** och klickar sedan på **Visa mallval**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -132,3 +132,6 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 77. Klicka på Spara.
 78. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

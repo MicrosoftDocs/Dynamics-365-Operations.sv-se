@@ -51,3 +51,6 @@ Den avancerade bankavstämningsfunktionen gör att du kan importera bankutdrag. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Den här uppgiften visar hur du skapar förmånselement som ska användas när d
 6. Ange datum och tid i fältet Giltighet.
 7. Klicka på Skapa förmån.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

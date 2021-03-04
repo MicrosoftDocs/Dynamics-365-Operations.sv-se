@@ -64,3 +64,6 @@ Illustrationen som följer visar fliken **Uppgiftslistor**.
 [Skapa uppgiftslistor och lägga till uppgifter](task-mgmt-create-lists.md)
 
 [Tilldela uppgiftslistor till butiker eller medarbetare](task-mgmt-assign-lists.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

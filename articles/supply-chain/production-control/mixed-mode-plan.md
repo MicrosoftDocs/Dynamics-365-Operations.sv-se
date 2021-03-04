@@ -69,3 +69,6 @@ För fullständig flexibilitet i blandat läge rekommenderar vi att du använder
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

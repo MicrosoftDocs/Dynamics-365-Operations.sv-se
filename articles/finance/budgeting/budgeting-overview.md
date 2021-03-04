@@ -70,3 +70,6 @@ Det går till exempel att definiera vem som gör budgeten, vad som budgeteras oc
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

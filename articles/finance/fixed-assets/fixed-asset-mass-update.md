@@ -42,3 +42,6 @@ När du har uppdaterat avskrivningspraxis för tillgångar kan du bearbeta avskr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

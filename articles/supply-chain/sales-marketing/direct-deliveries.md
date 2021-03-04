@@ -53,3 +53,6 @@ När du skapar en direktleverans kommer artiklarna som du säljer aldrig fysiskt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

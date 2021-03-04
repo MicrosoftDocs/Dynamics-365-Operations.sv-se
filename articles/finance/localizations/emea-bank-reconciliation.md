@@ -59,3 +59,6 @@ Förutom ett bankutdrag kan banker även tillhandahålla specifika meddelanden s
 -   (SVERIGE) BankGirot retur – Returformat för leverantörsbetalningar som motsvarar exportformatet Bankgirot
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

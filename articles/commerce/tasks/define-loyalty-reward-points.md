@@ -46,3 +46,6 @@ Den här proceduren går igenom hur du definierar lojalitetsbelöningspoäng. Du
 10. Välj ett alternativ i fältet Enhet för utgångstid.
 11. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

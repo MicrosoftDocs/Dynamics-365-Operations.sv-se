@@ -85,3 +85,6 @@ Så här återställer du miljön:
 
 > [!Warning]
 > Power Apps-miljöer sparas bara i sju dagar efter borttagning. Du måste återställa miljön inom sju dagar.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

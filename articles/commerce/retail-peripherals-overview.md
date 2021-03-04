@@ -837,3 +837,6 @@ Följande kringutrustning har testats med hjälp av en delad IIS maskinvarustati
 [Kringutrustningssimulator för Commerce](dev-itpro/retail-peripheral-simulator.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

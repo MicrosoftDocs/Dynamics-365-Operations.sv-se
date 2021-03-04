@@ -83,3 +83,6 @@ Anpassade hälsokontroller kan också skapas för att testa enheter som inte st�
 ## <a name="related-articles"></a>Relaterade artiklar
 
 [Utlösare och utskrift för Modern POS (MPOS)](dev-itpro/pos-trigger-printing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

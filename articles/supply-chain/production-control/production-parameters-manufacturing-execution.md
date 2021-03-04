@@ -154,3 +154,6 @@ Du kan använda följande inställningar om materialen alltid ska dras av manuel
 | Rapportera som färdig |   Automatisk strukturlisteförbrukning    | <strong>Aldrig</strong>  |
 | Rapportera som färdig | Uppdatera färdig rapport online | <strong>Status</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

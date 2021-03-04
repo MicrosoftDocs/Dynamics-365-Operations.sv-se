@@ -61,3 +61,6 @@ Följande data är tillgängliga när processgranskning används.
 |Historik över jobbansökan | Jobbansökan (msdyn_JobapplicatonId)<br></br>Status (msdyn_status) <br></br>Statusorsak (msdyn_statusreason) <br></br>Orsak till avvisande (msdyn_rejectionreason) |
 | Historik för jobberbjudande | Jobberbjudande (msdyn_JobopeningId) <br></br>Status (msdyn_jobopeningstatus) <br></br>Statusorsak (msdyn_jobopeningstatusreason) |
 | Kandidathistorik | Kandidat (msdyn_CandidateId) |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

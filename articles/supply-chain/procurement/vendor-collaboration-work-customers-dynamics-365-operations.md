@@ -147,3 +147,6 @@ De tillgängliga uppgifterna är leverantörens namn, adress, kontaktinformation
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -110,3 +110,6 @@ Mer information finns i [Kredit och inkasso i kundreskontra](collections-credit-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

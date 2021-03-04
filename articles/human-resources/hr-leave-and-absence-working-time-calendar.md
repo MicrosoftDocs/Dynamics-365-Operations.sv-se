@@ -75,3 +75,6 @@ Om du har aktiverat förhandsgranskningsfunktionen för ledighet och frånvaro i
 
 - [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)
 - [Konfigurera typer av tjänstledighet och frånvaro](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

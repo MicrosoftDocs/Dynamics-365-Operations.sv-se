@@ -45,3 +45,6 @@ En tillverkningsorder kan skapas i följande situationer:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

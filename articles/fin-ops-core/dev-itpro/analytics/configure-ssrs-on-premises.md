@@ -93,3 +93,6 @@ Använd stegen i det här avsnittet för att konfigurera SQL Server Reporting Se
 13. Klicka på **Avsluta** för att stänga **Reporting Services Configuration Manager**.
 
     [![Stänga reporting services configuration manager](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

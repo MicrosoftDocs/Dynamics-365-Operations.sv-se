@@ -146,3 +146,6 @@ Om du vill konfigurera modulen för butiksväljaren att visa tillgängliga butik
 [Bing Maps REST API:er](https://docs.microsoft.com/bingmaps/rest-services/)
 
 [Kartmodul](map-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

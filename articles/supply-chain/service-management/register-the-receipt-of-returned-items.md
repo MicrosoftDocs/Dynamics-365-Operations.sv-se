@@ -113,3 +113,6 @@ Ett alternativ till att använda formuläret **Införselöversikt** kan du anvä
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

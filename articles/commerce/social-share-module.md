@@ -82,3 +82,6 @@ Följ dessa steg för att lägga till en social delningsmodul till en köpboxmod
 [Modul för inköpsruta](add-buy-box.md)
 
 [Cookie-kompatibilitet](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -136,3 +136,6 @@ Om du vill ställa in en prisgrupp gör du följande.
 [Ställa in och arbeta med bedrägerivarningar](set-up-fraud-alerts.md)
 
 [Ställa in kontinuitetsprogram för kundtjänster](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

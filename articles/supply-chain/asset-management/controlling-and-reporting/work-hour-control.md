@@ -74,3 +74,6 @@ I skärmbilden nedan visas ett exempel på ett beräkningsresultat i **Timkontro
 Ett annat sätt att göra en timberäkning är att använda flera tillgångar i **Alla tillgångar** eller **Aktiva tillgångar**. Klicka sedan på knappen **Timkontroll** på snabbfliken **Allmänt**. De valda tillgångarna infogas automatiskt i fältet **Tillgång** på snabbfliken **Poster som ska ingå**. Klicka på **OK** i dialogrutan **Timkontroll för tillgång** och beräkningen för de valda tillgångarna visas. Samma procedur kan utföras för funktionsplatser i **Alla funktionsplatser** eller **Aktiva funktionsplatser**, och för arbetsorder i **Alla arbetsorder** eller **Aktiva arbetsorder**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

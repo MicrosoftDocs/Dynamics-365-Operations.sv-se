@@ -82,3 +82,6 @@ Följande bild visar en hierarki med olika kanaler tillagda.
 [Ställa in en butikskanal](channel-setup-retail.md)
     
 [Ställ in en onlinekanal](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

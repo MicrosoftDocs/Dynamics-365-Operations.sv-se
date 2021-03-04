@@ -127,3 +127,6 @@ När budgetkontroll aktiveras kommer användarna att få varnings- och felmeddel
 Från den här sidan kan användare titta på sidan **Budgetkontrollstatistik efter period** för att se information om tillgänglig budget och reservationer för en vald kombination av budgetkontrolldimensioner. Användarna kan även titta på sidan **Budgetkontrollstatistik** för att se tillgänglig budget för alla kombinationer av ekonomisk dimension som används i budgetkontroll. 
 
 Om budgetkontroll aktiveras för inköpsorder kan budgetchefen använda arbetsområdet **Redovisningsbudgetar och prognoser** för att granska kön för alla obekräftade inköpsorder som har varningar och fel för budgetkontroll. Om budgetchefen har behörigheter för överskriden budget konfigurerade kan inköpsorder bekräftas direkt i arbetsytan.    
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

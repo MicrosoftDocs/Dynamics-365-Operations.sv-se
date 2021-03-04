@@ -190,3 +190,6 @@ Följande information importeras och inkluderas i den nya medarbetarposten:
 
 [Konfigurera Common Data Service virtuella enheter](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Vad är Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

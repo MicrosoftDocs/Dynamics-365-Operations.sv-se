@@ -68,3 +68,6 @@ Om du planerar att bekräfta många order samtidigt kan körningstiden och prest
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

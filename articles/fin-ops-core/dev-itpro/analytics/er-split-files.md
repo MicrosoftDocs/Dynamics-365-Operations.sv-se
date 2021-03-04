@@ -47,3 +47,6 @@ Om du vill veta mer om den här funktionen kan du spela upp uppgiftsguiden **ER 
 [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 
 [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

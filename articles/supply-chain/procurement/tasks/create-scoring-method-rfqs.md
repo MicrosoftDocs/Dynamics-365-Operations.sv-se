@@ -47,3 +47,6 @@ Den här proceduren visar hur du skapar en poängmetod. En poängmetod är en up
 14. Ange ett nummer i fältet Intervall från.
 15. Ange ett nummer i fältet Intervall till.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

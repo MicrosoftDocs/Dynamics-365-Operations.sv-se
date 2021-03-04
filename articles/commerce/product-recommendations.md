@@ -88,3 +88,6 @@ I följande tabell beskrivs olika typer av automatiska produktrekommendationer s
 [Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

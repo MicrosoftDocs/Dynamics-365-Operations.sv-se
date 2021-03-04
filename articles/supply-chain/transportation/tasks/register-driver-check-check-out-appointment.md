@@ -46,3 +46,6 @@ Den här proceduren visar hur du registrerar en in- och utcheckning av förare. 
 1. Klicka på Driver check-out.
 2. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

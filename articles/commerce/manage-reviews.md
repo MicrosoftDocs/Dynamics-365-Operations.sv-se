@@ -132,3 +132,6 @@ Om du vill visa klassificeringar och recensionstrender i Commerce-webbplatsskapa
 [Konfigurera omdömen och recensioner](configure-ratings-reviews.md)
 
 [Synkronisera produktklassificeringar i Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

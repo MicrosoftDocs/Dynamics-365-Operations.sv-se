@@ -99,3 +99,6 @@ Om du vill rapportera ett produktionsavbrott följer du processen som beskrivs i
  ## <a name="see-also"></a>Se även
 
  [Förbereda publicering](hr-admin-go-live-prepare.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

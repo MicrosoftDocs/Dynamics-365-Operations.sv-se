@@ -147,3 +147,6 @@ Följande tabell visar beräkningsresultatet för ett lagerobjekt. Du kan visa r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

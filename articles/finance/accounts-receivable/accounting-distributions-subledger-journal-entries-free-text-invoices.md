@@ -136,3 +136,6 @@ Innan du bokför en fritextfaktura kan du visa hela redovisningsposten för fakt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

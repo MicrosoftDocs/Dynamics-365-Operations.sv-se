@@ -75,3 +75,6 @@ Följ de här stegen om du vill skapa en granskad produktrekommendationslista.
 [Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

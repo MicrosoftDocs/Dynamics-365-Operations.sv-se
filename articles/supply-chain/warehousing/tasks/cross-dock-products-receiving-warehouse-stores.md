@@ -49,3 +49,6 @@ Den här proceduren går igenom stegen för att skapa och bearbeta en direktutle
 15. I listan, sök efter och välj ett lagerställe som har tagit emot produkter.
 16. Klicka på order för att visa de order som skapades för det valda lagerstället
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

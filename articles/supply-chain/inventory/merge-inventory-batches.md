@@ -140,3 +140,6 @@ Du kan godkänna lagerjournalen för batchsammanfogningen från listsidan **Alla
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Varför visas inte faktisk/nominell vikt i lagerjournalen efter att jag slagit ihop en fångstviktartikel?
 Du kan sammanslå batchar med fångstviktartiklar precis som alla andra artiklar. Dock visas information om faktisk/nominell vikt inte i lagerjournalen. Vi rekommenderar att du kontrollerar information om faktisk/nominell vikt innan du överför batchsammanfogningen till lagerjournalen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -344,3 +344,6 @@ Här följer några anmärkningar och tips för hur du arbetar med funktionen:
 
 - Om du använder dynamiska platser kommer lagerpåfyllnadsarbetet att skapas antingen för den första tillgängliga platsen eller för en plats som redan innehåller lager om åtgärden platsdirektiv har ställts in för att använda strategin **konsolidering**.
 - Om du använder fast lagerplats i stället för zoner bör du använda [standard för min/max lagerpåfyllnad](tasks/set-up-min-max-replenishment-process.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

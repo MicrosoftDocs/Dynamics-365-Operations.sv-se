@@ -49,3 +49,6 @@ Gör följande om du vill koppla en nummerserie till ett transportföretag:
 1. Välj **Redigera**.
 1. På snabbfliken **Översikt** väljer du ett alternativ i fältet **Pro-nummerserie**.
 1. Stäng sidan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

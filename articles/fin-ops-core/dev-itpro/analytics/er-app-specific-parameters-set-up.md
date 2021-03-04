@@ -260,3 +260,6 @@ I föregående exempel har du tillgång till programspecifika parametrar för et
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 
 [Konfigurera ER-format för användning av parametrar som anges per juridisk person](er-app-specific-parameters-configure-format.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -146,3 +146,6 @@ Arbetare kan öppna ett dokument som är kopplat till ett jobb genom att välja 
 1. Arbetaren går igenom guiden för att lära sig uppgiften.
 
 Mer information om hur du skapar, tilldelar och använder guider för HoloLens finns i [Ange guider för mixad verklighet för arbetare i produktion](instruction-guides-in-production-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

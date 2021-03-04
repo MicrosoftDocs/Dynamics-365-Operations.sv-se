@@ -65,3 +65,6 @@ I argumenten för logiska funktioner kan du använda datakällans referenser, nu
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Logiska funktioner](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

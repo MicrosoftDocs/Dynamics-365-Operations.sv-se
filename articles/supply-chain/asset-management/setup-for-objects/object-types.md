@@ -97,3 +97,6 @@ På sidan **reservdelar** kan du också skapa nya reservdelar för befintliga ko
 
 Om du vill se om en reservdel på den valda raden används någon annanstans i tillgångshantering (till exempel i relation till tillgångar och arbetsorder), markerar du **artikel där den används** för att öppna sidan **artikel där den används**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

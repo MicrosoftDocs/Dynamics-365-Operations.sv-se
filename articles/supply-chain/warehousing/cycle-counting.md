@@ -140,3 +140,6 @@ Du kan justera avvikelser i det beräknade värdet och sedan acceptera det berä
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

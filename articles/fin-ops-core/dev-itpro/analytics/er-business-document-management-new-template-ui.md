@@ -64,3 +64,6 @@ Följ de här stegen för att aktivera funktionen för alla juridiska personer.
 Knappen **Nytt dokument** används för att skapa och redigera en mall i formatkonfiguration för ER-format som tillhandahålls av en annan leverantör. I exemplet i det här avsnittet är leverantören Microsoft. När du klickar på **Nytt dokument** visas alla mallar som ägs av aktuella och andra leverantörer. När du har valt mallen kommer den att öppnas för redigering. Den redigerade mallen kommer sedan att lagras i en ny konfiguration för ER-format som skapas automatiskt.
 
 Mer information finns i [översikt över hantering av affärsdokument](er-business-document-management.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

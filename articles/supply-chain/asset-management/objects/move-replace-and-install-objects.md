@@ -91,3 +91,6 @@ Använd funktionen **installera tillgång** för att installera en tillgångsstr
 4. I fältet **Funktionsplats** väljer du den nya platsen.
 5. Som standard är fältet **Giltighet** inställt på aktuellt datum och aktuell tid. Du kan dock välja ett annat datum och en annan tidpunkt som installationen på tillgångens struktur är giltig från.
 6. Välj **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

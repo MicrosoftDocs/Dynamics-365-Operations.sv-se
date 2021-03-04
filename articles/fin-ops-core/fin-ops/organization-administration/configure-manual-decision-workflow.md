@@ -350,3 +350,6 @@ Följ dessa steg om beslutet måste fattas inom en viss tid.
     - **År –** – Välj dag, vecka och månad då beslutet senast måste vara fattat. Du kanske till exempel vill att beslutet ska vara fattat senast på fredagen i den tredje veckan i december.
 
 4. Om tidsgränsen överskrids kommer systemet att fatta beslutet. I listan **Åtgärd** väljer du det alternativ som systemet ska vidta.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

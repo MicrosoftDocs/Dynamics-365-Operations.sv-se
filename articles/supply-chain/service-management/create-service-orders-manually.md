@@ -102,3 +102,6 @@ Du kan skapa en serviceorder från formuläret **försäljningsorder** genom att
 
 [Skapa serviceorder (klassformulär)](https://technet.microsoft.com/library/aa553901\(v=ax.60\)) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

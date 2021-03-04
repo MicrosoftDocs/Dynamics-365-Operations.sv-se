@@ -41,3 +41,6 @@ Du kan konfigurera systemet till att skicka e-postmeddelanden till användare vi
 
 > [!NOTE]
 > E-postmallarna för arbetsflödet kommer att hämtas från antingen systemets e-postmallar eller organisationens e-postmallar beroende på om arbetsflödet är på systemnivå (inte företagsspecifik) eller arbetsflödet på organisationsnivå (företagsspecifik).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

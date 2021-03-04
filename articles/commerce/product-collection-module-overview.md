@@ -109,3 +109,6 @@ I följande tabell visas de listtyper som är tillgängliga för val i dialogrut
 [Modul för inköpsruta](add-buy-box.md)
 
 [Översikt av produktrekommendationer](product-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

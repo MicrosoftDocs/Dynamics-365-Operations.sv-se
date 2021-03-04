@@ -93,3 +93,6 @@ Du kan också använda dubbla nivåer. Om du väljer **dubbla nivåer** för vä
    | **Flexkreditpris för rökare** | Antalet flexkrediter för förmånspris, baserat på den beräkning som definierats för prisnivån för rökare. |
 
 5. Välj **Spara**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

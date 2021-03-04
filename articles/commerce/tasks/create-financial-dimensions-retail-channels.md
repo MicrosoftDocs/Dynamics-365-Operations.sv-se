@@ -55,3 +55,6 @@ Den här proceduren beskriver hur du skapar en ekonomisk dimension för handelsk
 24. Klicka på länken på den valda raden i listan.
 25. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

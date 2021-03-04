@@ -207,3 +207,6 @@ Följande tabell visar nyckeldimensionerna används som filter för att dela upp
 | Juridiska personer                                          | Namn på juridisk person                              |
 | Räkenskapskalendrar                                        | Räkenskapskalender, år, kvartal, period, månad   |
 | Webbplats                                                    | ID, namn, adress, delstat, land               |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

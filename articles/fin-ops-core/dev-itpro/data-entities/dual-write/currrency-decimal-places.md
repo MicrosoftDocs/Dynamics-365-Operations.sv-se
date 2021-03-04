@@ -95,3 +95,6 @@ Om du kräver att valutaprecisionen för en viss valuta avviker från den valuta
 ### <a name="tables-currency-field"></a>tabeller: valutafält
 
 Antalet decimaler som kan konfigureras för särskilda valutafält är begränsat till fyra.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

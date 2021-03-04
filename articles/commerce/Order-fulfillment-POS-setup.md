@@ -131,3 +131,6 @@ Orderuppfyllelse i kassan innehåller filter för att hjälpa användaren att en
 - Skapades den
 - Leveransdatum
 - Inleveransdatum
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

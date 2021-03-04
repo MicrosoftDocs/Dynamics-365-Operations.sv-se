@@ -87,3 +87,6 @@ Använd ansvarsområden för att indikera arbetsroller, processer och produkter 
 
 ## <a name="steps-for-creating-a-job"></a>Steg för att skapa ett jobb
 Hänvisa till ämnet [Definiera nya jobb](../fin-and-ops/hr/tasks/define-new-jobs.md) för stegvisa anvisningar om hur du skapar ett nytt jobb. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ I den här uppgiften används datauppsättningen SSI.
 12. Ange ett värde i fältet Kommentar.
 13. Klicka på Skicka.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

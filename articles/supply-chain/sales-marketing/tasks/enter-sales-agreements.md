@@ -57,3 +57,6 @@ I det här avsnittet visas hur du skapar en försäljningsavtal där en av dina 
 11. Välj **OK**.
 12. Stäng sidan. Avtalet är nu giltigt. Du kan börja att länka kundens order till avtalet för att motboka mot det utfästa målet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

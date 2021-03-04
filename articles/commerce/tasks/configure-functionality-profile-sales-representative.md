@@ -37,3 +37,6 @@ I den här proceduren visas hur du konfigurerar en butiks funktionsprofilinstäl
 4. Välj ett alternativ i fältet Prompt for sales representative.
 5. Välj Yes i fältet Require sales representative.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

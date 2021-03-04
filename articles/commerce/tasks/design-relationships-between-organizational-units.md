@@ -63,3 +63,6 @@ I den här proceduren går vi igenom hur du utformar relationen mellan organisat
 29. Klicka på Publicera.
 30. Klicka på Stäng.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

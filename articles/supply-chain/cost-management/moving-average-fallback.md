@@ -46,3 +46,6 @@ Följ de här stegen om du vill välja en reservkostnadssekvenser för beräknin
     - **Aktiv kostnad – ett artikelpris** – organisationer kan uppleva prestandaproblem om de använder affärsprocesser där lagret regelbundet blir negativt och samtidigt är transaktionsvolymen hög. Den här inställningen kan hjälpa till att minska prestandaproblemen.
 
 ![Parametrarna lagerredovisning](media/inventory-accounting-parameters.png "Parametrarna lagerredovisning")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

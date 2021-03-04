@@ -309,3 +309,6 @@ Så här lär du dig hur du använder konfigurerade ER-formatet **format för at
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 
 [Ställ in parametrarna för ett ER-format per juridisk person](er-app-specific-parameters-set-up.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

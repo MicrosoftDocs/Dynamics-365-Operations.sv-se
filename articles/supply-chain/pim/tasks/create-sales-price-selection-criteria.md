@@ -54,3 +54,6 @@ I den här proceduren visas hur du skapar ett kriterier för urval för försäl
 4. Välj Customer group 10 i fältet Criteria. 
 5. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

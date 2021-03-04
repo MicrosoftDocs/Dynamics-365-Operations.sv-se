@@ -91,3 +91,6 @@ Du kan välja mellan följande avskrivningsmetoder.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -190,3 +190,6 @@ Nu kan du använda dataentiteterna **Entiteten identifierare av common data serv
 ## <a name="related-topic"></a>Relaterat ämne
 
 [Sök efter produkter och produktvarianter under orderregistrering](search-products-product-variants.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

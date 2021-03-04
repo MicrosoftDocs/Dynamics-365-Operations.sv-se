@@ -57,3 +57,6 @@ Den här proceduren är avsedd för att köra kanban-processjobb. Det första jo
 6. Ange ett värde i fältet Godkänd kvantitet.
 7. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

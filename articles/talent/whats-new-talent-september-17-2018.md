@@ -54,3 +54,6 @@ Plattformsuppdatering 18 för Finance and Operations ingår i Talent-versionen.
 ## <a name="bug-fixes"></a>Felkorrigeringar
 
 Versionen innehåller flera ytterligare felkorrigeringar, inklusive referenser till ACA, ADA och I9 kan nu bara användas i företag i USA.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

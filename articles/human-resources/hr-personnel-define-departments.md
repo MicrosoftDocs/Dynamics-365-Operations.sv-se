@@ -52,3 +52,6 @@ Avdelningar är driftenheter som motsvarar ett funktionellt område i ett föret
 16. Skriv ett värde i fältet Beskriv ändringar.
 17. Klicka på Publicera.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

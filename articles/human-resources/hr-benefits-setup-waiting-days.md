@@ -42,3 +42,6 @@ I Microsoft Dynamics 365 Human Resources väntedagar på att få en månatlig mi
    | **Dag** | Den dag i månaden som systemet ska ställa in vänteperiodens datum på. |
    
 4. Välj **Spara**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

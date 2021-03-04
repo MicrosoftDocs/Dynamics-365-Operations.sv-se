@@ -73,3 +73,6 @@ Följande tabell innehåller rekommendationer om problemlösarstrategin i olika 
 [Heuristik](https://techterms.com/definition/heuristic)
 
 [Begränsningsbaserad problem](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

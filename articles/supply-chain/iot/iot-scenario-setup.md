@@ -143,3 +143,6 @@ Följ dessa steg om du vill inaktivera ett scenario.
 2. På panel för scenariot väljer du **Konfigurera**.
 3. Klicka på **Nästa** för att öppna sidan för den senaste guiden.
 4. Ange alternativet för att inaktivera scenariot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

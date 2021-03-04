@@ -59,3 +59,6 @@ I den här handboken får du hjälp med att ställa in en åldersfördelningsper
 2. Välj en kund med ett saldo.
 3. Expandera faktarutan **åldersfördelning** om du vill visa åldersfördelningssaldon. Åldersfördelningsperioddefinitionen för faktarutan hämtas från standardåldersfördelningsperioddefinitionen som anges i parametrarna. Du kan ändra detta med menyn Inkasso.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

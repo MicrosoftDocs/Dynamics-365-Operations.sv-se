@@ -95,3 +95,6 @@ Om du har definierat omfattningen av experimentet som **hel** i guiden **Anslut 
 
 ## <a name="next-step"></a>Gå vidare
 [Förhandsgranska och publicera ett experiment](experimentation-preview-publish.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

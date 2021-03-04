@@ -37,3 +37,6 @@ Den här proceduren går igenom hur du frisläpper en produkt eller en produktma
 6. Klicka på Nästa.
 7. Klicka på Avsluta.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ I den här proceduren visas hur du skapar en koncernintern plan. Det demonstrati
 2. Klicka på länken på den valda raden i listan. Klicka på länken för StaticPlan. Du måste vara i företaget USMF.  
 3. Klicka på **Planerade order.**
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ I fältet **serviceavtalsgrupp** på sidan **servicehanteringsparametrar** kan d
 ## <a name="related-topics"></a>Relaterade ämnen
 
 [Skapa serviceavtalsgrupper](create-service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

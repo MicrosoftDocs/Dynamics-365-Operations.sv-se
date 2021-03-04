@@ -207,3 +207,6 @@ Följande exempel visar hur du kan ställa in momskoder och momsrapporteringskod
 När du har genererat svenska momsrapporten använder du informationen på den för att fylla i momsdeklarationen för den svenska momsmyndigheten i det officiella formatet. Följande illustration visar vad den svenska momsdeklarationen har sett ut sedan 2016.
 
 ![Svensk momsdeklarationsrapport](media/4_Swedish_VAT_declaration.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

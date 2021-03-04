@@ -65,3 +65,6 @@ Arbetsgivare behöver veta när deras medarbetare skadas eller blir sjuka på gr
     * Arbetsmiljöbyråer är byråer som incidenten måste rapporteras till. Markera standardkryssrutan för byrån som är standardbyrån för att rapportera sjukdom och skador till.  
 23. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

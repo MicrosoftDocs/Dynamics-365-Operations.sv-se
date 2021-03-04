@@ -55,3 +55,6 @@ Det resulterande *booleska* värdet.
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Logiska funktioner](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

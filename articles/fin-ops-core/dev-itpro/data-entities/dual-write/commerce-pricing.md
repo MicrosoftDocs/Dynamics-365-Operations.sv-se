@@ -53,3 +53,6 @@ När användarna initierar en offert i Sales kopieras offertinformationen till C
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Potentiell kund till kontanter vid dubbel skrivning](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

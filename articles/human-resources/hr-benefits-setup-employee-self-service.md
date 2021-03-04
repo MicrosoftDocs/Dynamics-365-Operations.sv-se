@@ -72,3 +72,6 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurera paneler för naviger
    | **Slutdatum** | Slutdatum och tid som panelen ska vara tillgänglig. |
 
 4. Välj **Spara**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

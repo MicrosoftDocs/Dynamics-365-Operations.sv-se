@@ -49,3 +49,6 @@ Detta exempel använde en extra kostnadsversion för hantering av uppdateringar 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

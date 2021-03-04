@@ -367,3 +367,6 @@ Med hjälp av ER kan du införa ändringar av den senaste versionen av baskompon
 
 - [Skapa en konfiguration för elektronisk rapportering (ER)](electronic-reporting-configuration.md)
 - [Hantera livscykeln för konfiguration av elektronisk rapportering (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

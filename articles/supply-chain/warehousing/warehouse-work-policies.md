@@ -301,3 +301,6 @@ Mer information om menyartiklar för mobila enheter finns i [ställa in mobila e
 Detaljerad information om det mottagna ID-numret och arbetspolicyer finns i [Inleverans av ID-nummer som erhålls via lagerställeappen](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Mer information om inkommande belastningshantering finns i [Lagerhantering av inkommande laster för inköpsorder](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

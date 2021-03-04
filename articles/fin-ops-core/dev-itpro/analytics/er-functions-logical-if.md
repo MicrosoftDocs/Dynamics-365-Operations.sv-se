@@ -69,3 +69,6 @@ Om det första värdet och det andra värdet är värden för datatypen *behåll
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Logiska funktioner](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

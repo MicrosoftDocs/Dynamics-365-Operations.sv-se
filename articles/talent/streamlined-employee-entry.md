@@ -91,3 +91,6 @@ Fliken **befattningar** på huvudarbetarsidan ger en fullständig översikt öve
 
 [![Befattningar](./media/Worker-position-history.png)](./media/Worker-position-history.png)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

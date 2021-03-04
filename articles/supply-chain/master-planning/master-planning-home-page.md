@@ -86,3 +86,6 @@ Mer hj채lp 채r tillg채nglig som uppgiftsguider. Klicka p책 knappen **Hj채lp** p�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ Om du vill ignorera betalningar och kreditnotor när du beräknar kravbrevskod, 
 
 1. Gå till **navigeringfönster > Moduler > Kredit och inkasso > Inställningar > Parametrar för kundreskontra** och klicka på fliken **Samlingar**. 
 2. Ändra värdet för **Ignorera betalningar och kreditnotor när du beräknar kravbrevskod** till **Ja**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

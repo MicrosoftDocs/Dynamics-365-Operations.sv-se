@@ -108,3 +108,6 @@ I följande illustrationer visas en mallmappning i dataintegrering.
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Avtalsfakturor (Field Service till Supply Chain Management): Fakturarader
 
 [![Mallmappning i dataintegrering](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

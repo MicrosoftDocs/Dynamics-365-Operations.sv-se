@@ -280,3 +280,6 @@ När du behöver utvärdera den här modellmappningen med hjälp av metadata i e
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 Du kan också spela upp uppgiftsguiden **förbereda programmetadata som kan användas i RCS** i programmet och uppgiftsguiderna **Få åtkomst till programmets metadata med hjälp av en ER-konfiguration** och **Få åtkomst till programmetadata med hjälp av kopplade program** i RCS. De här uppgiftsguiderna kan hämtas på sidan [uppgiftsguiden elektronisk rapportering för Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

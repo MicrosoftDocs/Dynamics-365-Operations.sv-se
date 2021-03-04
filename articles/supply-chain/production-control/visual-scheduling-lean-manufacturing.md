@@ -95,3 +95,6 @@ Du kan öppna kanban-schematavlan genom att använda menyalternativet på följa
 
 [Kanban-jobbplanering för lean manufacturing](lean-manufacturing-kanban-job-scheduling.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

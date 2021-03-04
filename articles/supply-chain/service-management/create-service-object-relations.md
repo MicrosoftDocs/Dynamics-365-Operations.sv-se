@@ -72,3 +72,6 @@ Använd följande steg för att skapa en ny serviceobjektrelation för ett servi
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ I den här proceduren visas hur du uppfyller ett försäljningsavtal genom att k
 23. Klicka på Bifogat försäljningsavtal.
 24. Klicka på fliken Uppfyllelse.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

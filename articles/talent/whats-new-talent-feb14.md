@@ -52,3 +52,6 @@ En ändring har gjorts till standard för koden "Uppsägningsorsak" vid avslut a
 
 ### <a name="new-entity-created-for-job-compensation-levels"></a>Ny entitet som skapats för jobbkompensationsnivåer
 En ny entitet för datahanteringsramverk (DMF) skapades. Entiteten skapar och uppdaterar till kompensationsnivåer, marknadsvärde och urvalsundersökningar för varje jobb som är definierat i systemet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

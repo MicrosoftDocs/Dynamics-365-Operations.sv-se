@@ -187,3 +187,6 @@ Du skapar en ny datamodell för den valda konfigurationen. Den här konfiguratio
 65. Klicka på Spara.
 66. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

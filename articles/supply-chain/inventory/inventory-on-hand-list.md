@@ -146,3 +146,6 @@ Här är resultatet av utdata.
 | IA0001 | 1 | 2 | 2 |
 
 Observera att inställningarna i fönstret **filter** gäller för den detaljerade (ej aggregerade) lager tabellen som visas i början av det här avsnittet. Det innebär att kriteriet som **tillgängligt fysiskt** \| **mindre än eller lika med** \| _1_ hittar två rader från tabellen (den första och tredje raden, som var och en visar ett **tillgängligt fysiskt** värde för _1_). I det här scenariot är dock sidan **behållningssidan** inte är inställd för att visa dimensionen **lagerställe**. Därför aggregerar den två ursprungliga raderna till en enda resulterande rad, eftersom båda raderna har identiska värden i alla dimensioner som visas. Denna rad verkar bryta mot filtreringskriteriet eftersom värdet **tillgängliga fysiska** visas som _2_. Resultatet är emellertid korrekt, eftersom inställningarna i **filter**-fönstret gäller källtabellen, inte den sammanställda tabell som visas på sidan **Behållningslista**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

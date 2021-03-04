@@ -65,3 +65,6 @@ Den här listan tillhandahålls så att du kan ta hänsyn till dessa borttagna o
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

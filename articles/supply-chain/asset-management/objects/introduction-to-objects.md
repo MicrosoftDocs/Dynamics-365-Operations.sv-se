@@ -78,3 +78,6 @@ Knapparna i åtgärdsfönstret är ordnade på flikar. I följande tabell beskri
 | Reservdelar          | Visa en lista över godkända och alternativa reservdelar som kan användas på tillgången.                                                                               |
 | Tillgångsförbrukning    | Skriv ut en rapport som visar förbrukningsregistreringar på tillgången.                                                                                                |
 | Tillgångsfel          | Skriv ut en rapport som visar felregistreringar på tillgången.                                                                                                      |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

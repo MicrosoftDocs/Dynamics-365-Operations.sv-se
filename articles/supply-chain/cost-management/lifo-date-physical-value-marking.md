@@ -157,3 +157,6 @@ I illustrationen visas effekten av lagermodellen LIFO på serien med transaktion
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

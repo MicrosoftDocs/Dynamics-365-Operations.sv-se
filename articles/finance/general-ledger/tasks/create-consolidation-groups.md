@@ -47,3 +47,6 @@ I den här proceduren ser du hur du skapar en konsolideringskontogrupp och sedan
 8. Skriv ett värde i fältet Konsolideringskonto.
 9. Skriv ett värde i fältet Konsolideringskontonamn.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

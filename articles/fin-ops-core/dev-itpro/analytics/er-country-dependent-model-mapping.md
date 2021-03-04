@@ -496,3 +496,6 @@ Kontrollera att konfigurationen för mappning av delade modeller inte har marker
 - Minst en version av konfigurationen för ER-modellmappning har antingen **slutfört** eller **delad** status. I det här fallet används versionen med det högsta versions numret för ER-formatkörning.
 - Alternativet **kör utkast** för konfigurationen för ER-modellmappning är aktiverat. I det här fallet används versionen **utkast** används ER-formatkörning.
 > Alternativet **kör utkast** blir tillgängligt på **sidan konfigurationer** för varje konfiguration för ER-modellmappning när ER-användarparametern **Kör inställning** är aktiverad.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

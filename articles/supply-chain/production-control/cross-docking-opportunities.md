@@ -127,3 +127,6 @@ När en produkt har rapporterats som avslutad på produktionsraden överförs de
 -   Direktutleverans scenario stöds för batch- och seriekontrollerade element, både för batch- och serienummerdimensioner definierade ovan och under platsen i reservationshierarkin. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

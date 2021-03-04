@@ -84,3 +84,6 @@ Följande bild visar hur du publicerar kanaluppdateringar.
 [Skapa en navigeringshierarki för kanal](create-channel-hierarchy.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -218,3 +218,6 @@ Om du vill se vilken budget planerar en prognos, befattning har inkluderats in, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -159,3 +159,6 @@ Du måste ange följande allmänna inställningar för Sverige.
 
     
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

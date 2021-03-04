@@ -55,3 +55,6 @@ I följande steg förklaras hur en användare i rollen Systemadministratör elle
 5. Välj **Nära**. 
 6. Markera önskad version av ER-konfigurationen och välj **importera** för att ta med den aktuella instansen.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

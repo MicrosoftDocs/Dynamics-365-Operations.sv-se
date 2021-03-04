@@ -94,3 +94,6 @@ Tre serviceorderrader har skapats inom den tidsram som du angav i dialogrutan f√
 
 [St√§ll in serviceintervall](set-up-service-intervals.md)  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

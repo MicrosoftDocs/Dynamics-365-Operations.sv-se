@@ -186,3 +186,6 @@ Om en korrigering måste göras för redovisningskonto för Kundreskontra eller 
 ### <a name="the-system-allows-it"></a>”Det är möjligt i systemet”
 
 Organisationer använder ofta funktionen för en verifikation för att systemet låter dem använda det, utan att förstå följderna.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

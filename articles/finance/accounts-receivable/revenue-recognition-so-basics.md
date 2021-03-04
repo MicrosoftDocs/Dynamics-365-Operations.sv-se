@@ -97,3 +97,6 @@ Knappen **Allokering av intäktspris** är fortfarande tillgänglig så att du k
 Den förväntade intäktsredovisningsplanen tas bort och ersätts med den slutliga intäktsredovisningsplanen. Intäktsplansdetaljerna underhålls för varje försäljningsorderrad och används för att frisläppa den uppskjutna intäkten till faktisk intäkt allt eftersom de avtalsenliga skyldigheterna uppfylls.
 
 [![Slutlig intäktsredovisningsplan](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

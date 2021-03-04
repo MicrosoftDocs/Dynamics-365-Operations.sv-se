@@ -96,3 +96,6 @@ En bankutdragstransaktion som har markerats som **Ny** på kalkylbladet för avs
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

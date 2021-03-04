@@ -42,3 +42,6 @@ Det demonstrationsdataföretag som används för att skapa den här proceduren �
     * Koppla ytterligare information till journalen.  
     * Koppla till exempel en skannad bild av EU-mottagningskvittot till journalen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Programdata används för att fylla i rapporter i innehållspaketet för organis
 | Training\_Position        | Befattning, titel och heltidsanställning (FTE)                  | Training\_CourseAgenda, Training\_CourseAttendees |
 | Training\_WorkerName      | Förnamn, efternamn och fullständiga namn                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | Titel och tjänsteålder                                         | Training\_CourseAttendees |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

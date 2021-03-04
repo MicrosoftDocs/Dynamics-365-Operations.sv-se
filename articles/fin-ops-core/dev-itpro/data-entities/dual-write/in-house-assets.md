@@ -76,3 +76,6 @@ Interna tillgångar inkluderar en samling tabellmappningar som fungerar tillsamm
 [!include [models](includes/AssetManagementModels-msdyn-models.md)]
 
 [!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

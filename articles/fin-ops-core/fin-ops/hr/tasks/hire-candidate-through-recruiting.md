@@ -45,3 +45,6 @@ I den här proceduren aktiveras en rekryterare när du anställer en sökande so
 15. Expandera eller komprimera avsnittet Kontaktinformation.
 16. Expandera eller komprimera avsnittet Personalinformation.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

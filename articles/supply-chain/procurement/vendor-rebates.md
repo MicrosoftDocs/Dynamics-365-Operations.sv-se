@@ -167,3 +167,6 @@ Processen för att hantera leverantörsrabatter omfattar flera manuella spårnin
 - Generera korrekta rabattanspråk
 - Periodisering av förväntad fordran och interimintäkt i redovisningen
 - Uppdatering av leverantörssaldot och intäktsutdraget med de avdrag som förfaller
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

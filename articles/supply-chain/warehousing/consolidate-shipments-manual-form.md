@@ -98,3 +98,5 @@ Följ dessa steg för att släppa varje försäljningsorder som du har skapat f�
 
 - [Policyer för leveranskonsolidering](about-shipment-consolidation-policies.md)
 - [Konfigurera policyer för leveranskonsolidering](configure-shipment-consolidation-policies.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

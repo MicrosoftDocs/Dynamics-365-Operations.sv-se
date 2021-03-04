@@ -78,3 +78,6 @@ När du har bokfört förbrukning på arbetsorder kan du skriva ut en rapport ö
 >[!NOTE]
 >Du kan också skapa en [arbetsorderrapport](../work-orders/work-order-report.md)som innehåller mer information om arbetsorder.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

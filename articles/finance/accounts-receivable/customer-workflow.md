@@ -60,3 +60,6 @@ När du har minst en föreslagen ändring visas två extra menyer i åtgärdsfö
     Sidans status ändras till **Ändringar som väntar på godkännande**.
 
 Arbetsflödet följer den vanliga arbetsflödesprocessen i appen. Godkännaren dirigeras till sidan **Kund** där ändringarna kan granskas på sidan **Föreslagna ändringar** och sedan välja **Arbetsflöde \> Godkänn** för att godkänna arbetsflödet. När alla godkännanden har slutförts uppdateras fälten med de värden du har föreslagit.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

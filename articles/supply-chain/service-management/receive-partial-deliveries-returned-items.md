@@ -51,3 +51,6 @@ Om en returleverans innehåller mindre än den fullständiga kvantiteten på en 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

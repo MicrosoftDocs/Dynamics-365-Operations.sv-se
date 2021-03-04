@@ -52,3 +52,6 @@ I den här proceduren visas hur du kan förhindra den fysiska lagerbehållningen
 2. Klicka på **Ja**.
 3. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Det här avsnittet visar hur du ställer in standardmallar för ekonomiska dimen
 11. Ange värdena för den ekonomiska dimension som motsvarar de angivna procentsatsen.
 12. Välj **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

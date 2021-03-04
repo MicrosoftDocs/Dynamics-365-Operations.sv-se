@@ -75,3 +75,6 @@ I föregående exempel visade åtgärdsökningen resultat från det vanliga åtg
 ## <a name="action-search-vs-navigation-search"></a>Åtgärd söka vs. navigation sökningen
 
 Medan åtgärdssökningen är avsedd att hitta och köra åtgärder på en sida, finns en separat sökmekanism för att söka och navigera till sidor. Mer information om funktionen finns i artikeln [Navigeringssökning](navigation-search.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

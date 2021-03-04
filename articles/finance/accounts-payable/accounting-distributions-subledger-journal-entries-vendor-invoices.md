@@ -250,3 +250,6 @@ Om posten i reskontrajournalen är fel när du granskar den innan du journalför
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

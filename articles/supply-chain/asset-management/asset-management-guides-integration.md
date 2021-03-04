@@ -114,3 +114,6 @@ För att associera en guide med en mall för underhållschecklista ska du följa
 
 - [Översikt över dubbelriktad skrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Översikt av tillgångshantering](index.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

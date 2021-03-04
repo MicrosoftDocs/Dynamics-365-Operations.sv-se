@@ -81,3 +81,6 @@ Om du arbetar med flöden måste operationerna definieras för varje produktions
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

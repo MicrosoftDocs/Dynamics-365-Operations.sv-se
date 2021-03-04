@@ -51,3 +51,6 @@ Denna uppgift är en genomgång av hur du skapar ett bankkreditlimitavtal om du 
 18. Klicka på Utöka.
 19. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Olika rapporter innehåller information om respektive transaktion. Använd dessa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ För att du snabbt ska kunna bedöma hur viktig en serviceorder är, stöder Gan
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ Lägg slutligen till en automatisk uppgift för allokeringsfas för budgetplaner
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

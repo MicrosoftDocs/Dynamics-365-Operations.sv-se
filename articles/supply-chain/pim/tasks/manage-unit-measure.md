@@ -63,3 +63,6 @@ I den här proceduren visas hur du definierar en måttenhet, anger översättnin
 6. Klicka på **OK**.
 7. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ När du identifierar en avvikelse, kan du behöva kontakta säljaren om du tycke
 Mer information finns i [Undersöka eller lösa undantag](tasks/research-resolve-exceptions.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

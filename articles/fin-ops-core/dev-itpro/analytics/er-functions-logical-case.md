@@ -83,3 +83,6 @@ Om det första resultatvärdet och *N* th resultatvärdet är värden för datat
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Logiska funktioner](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

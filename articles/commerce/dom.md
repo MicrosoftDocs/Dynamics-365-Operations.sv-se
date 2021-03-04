@@ -256,3 +256,6 @@ Här är några saker att tänka på när du använder DOM-funktionen:
 - För tillfället granskar DOM bara order som skapas från handelskanaler. Försäljningsorder identifieras som butiksförsäljningsorder när alternativet **Commerce-försäljning** har värdet **Ja**.
 - Microsoft har inte testat DOM med funktioner för avancerad distributionslagerhantering. Kunder och partner måste noga bedöma om DOM är kompatibelt med de funktionerna för avancerad distributionslagerhantering och processerna som är relevanta för dem.
 - DOM är bara tillgängligt i molnversionen av Commerce. Det stöds inte i lokala installationer.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

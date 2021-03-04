@@ -97,3 +97,6 @@ Följande exempel visar hur du kan få listan med unika kundkontonummer som mins
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Lista över funktioner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

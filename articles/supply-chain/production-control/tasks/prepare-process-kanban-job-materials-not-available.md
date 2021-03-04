@@ -52,3 +52,6 @@ I den här proceduren ligger fokus på att förbereda ett kanban-processjobb nä
 6. Klicka på Förbered.
     * Lägg märke till att en ikon i jobbstatusen indikerar att jobbet nu är klart.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

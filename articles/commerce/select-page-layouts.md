@@ -78,3 +78,6 @@ Om du vill välja en annan layouter för en befintlig sida följer du stegen ned
 
 [Kontrollera tillgängligheten för sidinnehåll](verify-accessibility.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

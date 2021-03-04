@@ -185,3 +185,6 @@ De flesta fält på teknik ändringsorder är samma fält för frisläppta produ
 | Miljö- och hälsosäkerhet | Ange om miljöhälso- och säkerhetsregler gäller för ändringen. Om de är det kan du sedan välja tillämpliga regler. |
 
 Använd knappen **Bibehåll/kopiera ändringsinformation** för att kopiera ändringsinformation mellan berörda produkter.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

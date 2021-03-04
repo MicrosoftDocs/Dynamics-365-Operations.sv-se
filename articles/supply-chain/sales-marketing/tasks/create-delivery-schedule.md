@@ -65,3 +65,6 @@ Den här proceduren visas hur du kan skapa en leveransplan för en försäljning
 22. Klicka på OK.
 23. Klicka på Ja.
 24. Stäng sidan.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

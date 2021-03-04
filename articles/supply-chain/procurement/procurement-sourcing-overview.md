@@ -93,3 +93,6 @@ Fakturerade inköpsorder bokförs som skuld på leverantörens konto i leverant�
 ## <a name="vendor-performance"></a>Leverantörsprestanda
 
 Prestanda och granskning av inköp stöds genom *upphandlings- och leverantörsreskontrarapporter*, som inkluderar kostnadsanalys och leverantörens resultatanalys.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Den här proceduren visar hur du skapar en produktionsorder. Det demonstrationsd
 6. Klicka på Spara.
 7. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

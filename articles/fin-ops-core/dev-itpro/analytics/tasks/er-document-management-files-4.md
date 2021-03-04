@@ -69,3 +69,6 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 11. Klicka på OK.
     * Granska den genererade utleveransen. Notera att en enda XML-nod skapas för respektive bilaga. Bilagans innehåll fylls i textformatet för XML-utleverans i MIME (base64).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

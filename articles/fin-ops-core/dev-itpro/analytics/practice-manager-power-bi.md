@@ -117,3 +117,6 @@ Nedanstående avsnitt beskriver de sammanlagda mått som används i respektive e
 | Sammanlagda huvudmått       | Fält               | beskrivning |
 |---------------------------------|---------------------|-------------|
 | Planerad kostnad för slutförd aktivitet | Sum(TotalCostPrice) | Uppskattad total självkostnad för alla projekttransaktionstyper som har slutförda uppgifter. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

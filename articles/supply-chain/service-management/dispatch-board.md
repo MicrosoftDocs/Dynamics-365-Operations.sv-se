@@ -54,3 +54,6 @@ Se avsnitten i avsnittet **Se även** för information om hur du utför specifik
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

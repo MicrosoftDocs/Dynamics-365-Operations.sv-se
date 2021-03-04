@@ -123,3 +123,6 @@ Följande illustration visar ett exempel på en näthandelsorder där en tidpunk
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Informationsmodul för upphämtning](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

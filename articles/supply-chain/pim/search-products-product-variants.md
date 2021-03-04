@@ -87,3 +87,6 @@ För försäljningsorderradpost är standardbeteendet att öppna sidan **Produkt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

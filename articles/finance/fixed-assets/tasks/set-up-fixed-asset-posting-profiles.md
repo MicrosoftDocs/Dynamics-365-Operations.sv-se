@@ -123,3 +123,6 @@ I den här uppgiftsguiden ställer vi in bokföringsprofiler för anläggningsti
 88. Ange önskade värden i fältet **Huvudkonto**.
 89. Ange önskade värden i fältet **Motkonto**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -66,3 +66,6 @@ Programdata används för att fylla i rapporter i innehållspaketet för kompens
 | Personal\_ArbetareNamn             | Förnamn, efternamn och fullständiga namn                                                                       | Personal\_CurrentWorker, Personal\_TerminatedWorker, Personal\_WorkerTrend |
 | Personal\_ArbetareTitel            | Titel och tjänsteålder                                                                                   | Personal\_CurrentWorker, Personal\_TerminatedWorker, Personal\_WorkerTrend |
 | Personal\_WorkerTrend            | Arbetare över tid, antal anställda, företag och befattning                                                        | Personal\_Företag, Personal\_Kompensation, Personal\_GeographicLocation, Personal\_Resultat, Personal\_WorkerName, Personal\_ReportsToWorkerName, Personal\_CalendarOffset, Personal\_Datum, Personal\_WorkerTitle, Personal\_Demografi, Personal\_Anställning, Personal\_Jobb, Personal\_WorkerBenefit |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

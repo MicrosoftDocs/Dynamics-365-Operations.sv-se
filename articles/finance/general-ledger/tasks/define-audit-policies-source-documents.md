@@ -88,3 +88,6 @@ I det här avsnittet visar vi hur du ställer in och kör granskningspolicyregle
 57. Expandera avsnittet **Associationer**.
 58. Hitta och markera önskad post i listan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

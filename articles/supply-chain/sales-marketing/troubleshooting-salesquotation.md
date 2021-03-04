@@ -40,3 +40,6 @@ Om du försöker ange en försäljningskvantitet (fältet **SalesQty**) för en 
 
 Du kan inte ange en försäljningskvantitet för produkter som är serviceartiklar. Om du till exempel erbjuder en tjänst för att installera en artikel, är det inte klokt att registrera en kvantitet, eftersom det inte finns någon fysisk artikel. Det finns bara en tjänst.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

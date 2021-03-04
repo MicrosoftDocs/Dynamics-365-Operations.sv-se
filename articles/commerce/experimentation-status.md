@@ -45,3 +45,6 @@ På liknande sätt i kolumnen **tredje parts status** kan följande värden visa
 I diagrammet nedan visas båda uppsättningarna med status och hur de relaterar till varandra.
 
 [ ![Experimentstatus](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

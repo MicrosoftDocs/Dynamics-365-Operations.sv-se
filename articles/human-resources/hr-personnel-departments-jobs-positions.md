@@ -165,3 +165,6 @@ Du kan ändra informationen som nämns i tabellen ovan för en befattning eller 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

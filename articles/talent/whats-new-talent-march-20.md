@@ -86,3 +86,6 @@ Med plattformsuppdatering 24 för Finance and Operations kan användare skapa no
 Med denna ändring detekteras dubbletter när du anger namnfält och status visar antalet dubbletter som hittades. Du kan välja den angivna länken för att öppna en ny sida för att bedöma om du ska använda de identifierade träffarna. Dublettformuläret öppnas inte automatiskt för att undvika att inmatningen avbryts.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

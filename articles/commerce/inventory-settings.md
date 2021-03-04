@@ -93,3 +93,6 @@ Följande bild visar ett exempel på en kundvagn som visar meddelandet i lager (
 [Modul för butiksväljare](store-selector.md)
 
 [Uppdateringar av SDK och modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

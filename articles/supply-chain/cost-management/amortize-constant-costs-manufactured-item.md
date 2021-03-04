@@ -47,3 +47,6 @@ Den beräknade mängden av en tillverkad artikels periodiserade konstanta kostna
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

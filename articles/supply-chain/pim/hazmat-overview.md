@@ -62,3 +62,6 @@ Mer information om hur du ställer in regler och värden för farliga material o
 ## <a name="warehouse-management"></a>Lagerstyrning
 
 När du förbereder en leverans i lagerstyrning kommer du att kunna skriva ut flera nya rapporter som använder informationen som du ställer in i produktinformationshantering. Mer information om tillgängliga rapporter och hur du använder dem finns i [frågor och rapporter om farliga material](hazmat-reports.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

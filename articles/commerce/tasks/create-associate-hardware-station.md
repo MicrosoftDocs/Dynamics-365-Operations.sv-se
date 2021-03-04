@@ -58,3 +58,6 @@ Den här proceduren visar hur du skapar en ny maskinvarustation. En ny maskinvar
 23. Skriv ett värde i fältet EFT-terminal-ID.
 24. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

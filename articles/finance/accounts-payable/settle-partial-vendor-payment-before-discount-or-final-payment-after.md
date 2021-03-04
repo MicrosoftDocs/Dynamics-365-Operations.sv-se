@@ -122,3 +122,6 @@ April bokför sedan betalningen. När hon öppnar sidan **Leverantörstransaktio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

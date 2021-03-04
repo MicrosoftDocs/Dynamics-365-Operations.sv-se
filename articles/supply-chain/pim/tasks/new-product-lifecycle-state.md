@@ -35,3 +35,6 @@ I den här proceduren visas hur du skapar ett nytt livscykeltillstånd för en p
 3. Ange ett värde i fältet Tillstånd.
 4. Ange ett värde i fältet Beskrivning.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

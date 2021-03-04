@@ -45,3 +45,6 @@ Du definierar standardvärdet för det batch-ID som används för försäljnings
 
 > [!NOTE]
 > Stöd för förbättrad hantering av batchspårade artiklar under bokföringen av icke-avancerade scenarier för distributionslagerhantering infördes i Retail version 10.0.5.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

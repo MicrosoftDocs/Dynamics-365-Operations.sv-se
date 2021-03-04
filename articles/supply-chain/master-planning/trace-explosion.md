@@ -48,3 +48,6 @@ Du kan visa information om leveransplaner och åtgärder för en vald order. På
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

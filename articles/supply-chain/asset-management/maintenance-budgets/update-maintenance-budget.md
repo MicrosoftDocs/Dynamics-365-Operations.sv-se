@@ -75,3 +75,6 @@ På sidan **Budgetrader för underhåll** kan du manuellt lägga till en ny budg
 
 - Du vet att reparation av vissa tillgångar för närvarande pågår under planeringsfasen, men relaterade jobb har ännu inte skapats i Tillgångshantering. Du vill dock att budgetkostnader för dessa jobb ska inkluderas i underhållsbudgeten.
 - Nya tillgångar eller tillgångstyper har skapats sedan du gjorde underhållsbudgeten, men underhållsplanerna har inte ställts in för dessa tillgångar eller tillgångstyper. Du vill dock att budgetkostnader för dessa tillgångstyper ska inkluderas i underhållsbudgeten.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

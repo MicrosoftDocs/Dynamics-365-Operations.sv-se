@@ -41,3 +41,6 @@ En driftenhet är en organisation som används för skilja kontrollen av ekonomi
     + Ange information om kommunikationsmetoder, till exempel e-postadresser, webbadresser (URL:er) och telefonnummer. Klicka på Ny om du vill ange en ny kommunikationspost. Klicka på **Fler alternativ > Avancerat** om du vill ändra en befintlig post.   
 6. Alternativt kan du ändra **Driftenhetsnummer** om det behövs. Observera att detta nummer är ett unikt ID för motsvarande **Part**-post och kan inte vara samma som någon annan driftenhet.
 7. Välj **Spara**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ GTIN-koder tilldelas av organisationen GS1. I det här exemplet ska du ange en k
 11. Ange ett värde i fältet GTIN.
 12. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

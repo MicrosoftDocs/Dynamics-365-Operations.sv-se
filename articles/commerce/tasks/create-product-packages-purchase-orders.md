@@ -73,3 +73,6 @@ Den här proceduren går igenom hur du skapar ett produktpaket och använder det
 17. Klicka på Skapa.
 18. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

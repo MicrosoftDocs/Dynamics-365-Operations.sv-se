@@ -150,3 +150,6 @@ För att slutföra dessa steg måste du först slutföra stegen i proceduren "Cr
 17. Skriv `GBSI OPER` i fältet **Bankkonto**.
 18. Välj **OK** och välj sedan **OK** igen. Granska det skapade kalkylbladet, inklusive information om betalningsrader samt summan för varje valutakod som används i detta betalningmeddelande.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

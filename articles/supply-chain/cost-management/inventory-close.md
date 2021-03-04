@@ -87,3 +87,6 @@ I vissa fall kanske du måste återföra en genomförd lagerstängning för att 
 > [!NOTE] 
 > Endast den senaste lagerperioden som har stängts kan öppnas igen. För att återföra en tidigare lagerstängning måste du återföra alla efterföljande lagerstängningar en i taget och börja med de senaste.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

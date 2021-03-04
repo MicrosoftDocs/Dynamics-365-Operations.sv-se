@@ -41,3 +41,6 @@ I den här proceduren läggs fokus på inställningen av en dispositionskod som 
 6. Skriv ett värde i fältet Returdispositionskod.
     * Returdispositionskoden bestämmer resten av returorderprocessen för de registrerade artiklarna. I det här exemplet ska kunden få en kreditfaktura. Lägg till en returdispositionskod som innehåller en åtgärdskredit.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

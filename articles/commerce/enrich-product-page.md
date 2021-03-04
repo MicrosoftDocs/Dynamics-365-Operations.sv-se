@@ -73,3 +73,6 @@ Om du vill utöka en produktsida följer du stegen nedan.
 [Utöka en kategorilandningssida](enrich-category-page.md)
 
 [Kontrollera tillgängligheten för sidinnehåll](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

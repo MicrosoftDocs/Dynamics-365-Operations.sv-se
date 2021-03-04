@@ -46,3 +46,6 @@ Dessa vanliga scenarier är tillgängliga för återförsäljare som använder H
 + Hämta produkter i den aktuella butiken eller i en annan butik.
 + Avbryt en order i den aktuella butiken eller i en annan butik.
 + Returnera en order med eller utan kvitt i den aktuella butiken eller i en annan butik.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

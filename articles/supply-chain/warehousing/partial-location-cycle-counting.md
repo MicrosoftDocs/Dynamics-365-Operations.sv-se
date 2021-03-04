@@ -62,3 +62,6 @@ I det här exemplet måste bara artikelnumret A0001 räknas i lagerställe 61.
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Rullande inventering](cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

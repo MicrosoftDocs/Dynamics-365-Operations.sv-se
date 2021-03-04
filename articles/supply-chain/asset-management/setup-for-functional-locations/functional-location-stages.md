@@ -63,3 +63,6 @@ När du har skapat de livscykeltillstånd som krävs för dina funktionsplatser 
 5. Om du vill markera alla tillgängliga tillstånd för en modell klickar du på knappen ![Välj alla tillgängliga tillstånd](media/03-setup-for-functional-locations.png). Alla tillstånd överförs till avsnittet **markerade livscykeltillstånd**.
 6. Om du vill ta bort ett valt tillstånd från modellen, markerar du tillståndet i avsnittet **markerade livscykeltillstånd** och väljer sedan ![bakåtpilknappen](media/04-setup-for-functional-locations.png).
 7. Välj **uppdateringar av livscykeltillstånd** för att definiera vilka livscykeltillstånd som kan följa ett valt tillstånd.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

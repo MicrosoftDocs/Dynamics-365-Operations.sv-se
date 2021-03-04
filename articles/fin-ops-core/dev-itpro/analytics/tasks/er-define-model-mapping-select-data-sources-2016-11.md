@@ -157,3 +157,6 @@ I följande steg beskrivs hur en användare i rollen Systemadministratör eller 
 71. Stäng sidan.
 72. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

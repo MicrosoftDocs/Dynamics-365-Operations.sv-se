@@ -80,3 +80,6 @@ Om du har problem med att logga in eller publicera jobb på LinkedIn, se [Felsö
 [Hitta kandidater med LinkedIn Recruiter](./attract-linkedin-recruiter.md)
 
 [Felsöka integration med LinkedIn](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

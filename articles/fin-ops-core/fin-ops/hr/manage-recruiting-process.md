@@ -103,3 +103,6 @@ Om en ansökning måste granskas av flera medarbetare kan du använda sidan **An
 ## <a name="hiring-applicants"></a>Anställa sökande
 
 Använd sidna **Ansökningar** när du anställer en sökande. När du anställer en sökande, kommer ansökningsposten har statusvärdet **Anställd** och sökandens globala adressbokspost är kopplad till den nya medarbetarposten. Ändringar av informationen om den globala adressboken för den nya medarbetarposten visas även i ansökningsposten. Detta kan hjälpa till att minska registreringen av information om den nya arbetaren någonsin skulle ansöka om ett annat jobb inom ditt företag. Om du vill anställa en befintlig arbetare på en ny befattning klickar du på **Byt befattning** i listrutan **Ansökningsstatus** för att initiera flytten.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

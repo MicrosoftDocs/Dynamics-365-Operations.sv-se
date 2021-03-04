@@ -180,3 +180,6 @@ Följande personalentiteter är tillgängliga i Common Data Service.
 
 [Välja en dataintegreringsteknik](hr-admin-integration-choose-technology.md)</br>
 [Konfigurera Common Data Service-integrering](hr-admin-integration-common-data-service.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

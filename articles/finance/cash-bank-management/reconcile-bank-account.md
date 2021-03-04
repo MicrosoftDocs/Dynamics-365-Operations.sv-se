@@ -71,3 +71,6 @@ Med funktionen Avbryt avstämning av bankutdrag kan du annullera avstämning av 
 Avstämningar av bankutdrag kan bara annulleras i kronologisk ordning som de angavs. När en avstämning av bankutdraget annulleras, kommer nya transaktioner och korrigeringar att återföras och alla andra transaktioner markeras som ej avstämda.
  
 Om du vill avbryta avstämningen av bankutdraget väljer du bankutdraget och väljer **bankutdrag > Avbryt bankavstämning**. På sidan **Avbryt bankavstämning** anger du **orsakskoden**, **orsakskommentaren** och **annulleringsdatumet**. Välj **OK** för att påbörja annulleringen. Observera att annulleringsdatumet för bankutdraget måste vara på eller efter bankutdragsdatumet. När avstämningen av bankutdraget har annullerats kommer fältet **Annulleringsdatum** för bankutdraget att uppdateras med det angivna **Annulleringsdatumet**. Välj knappen **transaktioner** om du vill visa transaktionerna som avstämningen annullerades.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

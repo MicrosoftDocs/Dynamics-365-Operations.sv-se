@@ -76,3 +76,6 @@ Den sammanlagda procentsatsen för alla intervall behöver inte vara 100. Du kom
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

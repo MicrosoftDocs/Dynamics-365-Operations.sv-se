@@ -93,3 +93,6 @@ Registreringen av den här uppgiften omfattar de grundläggande stegen för att 
 36. Klicka på Spara.
     * Ärendets status kan när som helst uppdateras.  Ange ärendet till pågående om behandlingen av sjukdomen eller skadan pågår.  När du stänger incidenten kan du bara lägga till eller ta bort kostnader, behandlingar eller arkiveringar som är relaterade till incidenten.  Öppna ärendet på nytt för att ändra annan information.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

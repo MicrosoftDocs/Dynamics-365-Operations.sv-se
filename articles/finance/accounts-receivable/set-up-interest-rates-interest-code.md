@@ -131,3 +131,6 @@ Om du vill visa andra versioner kan du använda menyvalet **Från och med (datum
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

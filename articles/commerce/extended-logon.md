@@ -67,3 +67,6 @@ Inloggning tjänsten kan utökas för att stödja ytterligare utökade inloggnin
 ## <a name="using-extended-logon"></a>Med hjälp av utökade inloggning
 
 När utökad inloggning är konfigurerad, och arbetstagaren har tilldelats en streckkod eller den magnetiska stripen, arbetaren bara nallar eller skanna hans eller hennes kort medan POS inloggningssidan visas. Om ett lösenord krävs också före inloggning kan fortsätta, arbetstagaren uppmanas du att ange sitt lösenord.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

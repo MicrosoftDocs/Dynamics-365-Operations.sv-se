@@ -66,3 +66,6 @@ Det finns åsikter, nyheter och annan information om leverantörsreskontra och a
 ### <a name="videos"></a>Videoklipp
 Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen på YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

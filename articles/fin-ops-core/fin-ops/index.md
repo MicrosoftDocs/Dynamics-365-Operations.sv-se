@@ -145,3 +145,6 @@ Mycket av innehållet gäller även relaterade produkter: Dynamics 365 Commerce 
 
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

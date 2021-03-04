@@ -131,3 +131,6 @@ När du har utformat och har fördelat en enkät kan den besvaras av valda svara
 Enkäter kan göras tillgängliga för vissa användare eller grupper av användare eller för alla användare i ett nätverk.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

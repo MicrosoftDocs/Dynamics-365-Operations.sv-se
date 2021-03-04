@@ -96,3 +96,6 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 7. Klicka på OK.
     * Granska den genererade utleveransen. Notera att: Utöver fakturameddelandet i XML-format har en enda fil skapats för respektive bilaga. Bilagefilerna fylls i med den zippade utmatningen i binärt format.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

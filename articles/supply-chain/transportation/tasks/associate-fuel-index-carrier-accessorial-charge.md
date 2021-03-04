@@ -78,3 +78,6 @@ I den här guiden visas hur du skapar en tilldelning av tillägg, en tilläggsav
 6. Klicka på länken på den valda raden i listan.
 7. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -106,3 +106,6 @@ Supply Chain Management stöder numera strukturlisteberäkning som innehåller t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

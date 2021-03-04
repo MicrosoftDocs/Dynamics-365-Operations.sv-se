@@ -47,3 +47,6 @@ Förutom att visa starttid och status för jobb kan du visa loggen för ett spec
 [Använda filter på en plan](plan-filters.md)
 
 [Annullera ett planeringsjobb](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

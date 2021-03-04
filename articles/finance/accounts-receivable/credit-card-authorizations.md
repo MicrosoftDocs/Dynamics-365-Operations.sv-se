@@ -80,3 +80,6 @@ Om du vill annullera en kreditkortskontroll kan du ändra betalningsmetoden till
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

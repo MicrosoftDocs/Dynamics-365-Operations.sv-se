@@ -63,3 +63,6 @@ I det här avsnittet beskrivs hur du ställer in information om platser i ett la
 7. Stäng sidan.
 8. Uppdatera sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

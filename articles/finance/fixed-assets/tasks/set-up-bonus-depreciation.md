@@ -49,3 +49,6 @@ I den här proceduren visas hur du skapar en särskild avskrivning och kopplar d
     * Förvalet för procentandel eller belopp stammar från de särskilda avskrivningsinställningarna.  
 8. Välj ett tal i fältet Prioritet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

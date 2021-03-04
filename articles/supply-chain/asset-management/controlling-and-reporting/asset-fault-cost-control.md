@@ -62,3 +62,6 @@ Det här exemplet visar en kostnadskontrollberäkning för tillgångsfel.
     ![Figur 1](media/05-controlling-and-reporting.png)
 
 För information om hur du ställer in fel, se avsnittet [Felhantering](../setup-for-work-orders/fault-management.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

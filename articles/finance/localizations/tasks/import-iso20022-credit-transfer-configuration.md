@@ -45,3 +45,6 @@ Detta är den första av fem uppgifter som tillsammans illustrerar leverantörbe
     * Om importknappen inte är tillgänglig innebär det att konfigureringen redan har importerats.  
 9. Klicka på Ja.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

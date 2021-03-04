@@ -37,3 +37,6 @@ Du kan använda **RÅA XML**-formatelement för att utforma format för elektron
 > Tänk på att ramverket inte kontrollerar om XML-innehållet som placeras i det skapade dokumentet med hjälp av formatelementet **RÅA XML** är korrekt.
 
 Om du vill veta mer om den här funktionen kan du spela upp uppgiftsguiderna **Rapporterna ER använda råa XML-data för att skapa XML (Del 1: Designa datamodell)** och **Rapporterna ER använda råa XML-data för att skapa XML (Del 2: Designa och köra rapport)** som ingår i affärsprocessen **7.5.4.3 hämta/utveckla fram IT-tjänst/komponenter (10677)** och kan hämtas från [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). Dessa uppgiftsguider förklarar processen att konfigurera ett ER-format för att infoga råa XML-data i skapade filer.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

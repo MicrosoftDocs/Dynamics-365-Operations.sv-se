@@ -79,3 +79,6 @@ Men `DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "EN-US")` sk
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Datum- och tidsfunktioner](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

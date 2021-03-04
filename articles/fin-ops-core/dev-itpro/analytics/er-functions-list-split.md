@@ -85,3 +85,6 @@ Om argumentet `input` är tomt returneras en tom ny lista. Om antingen `input` e
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Lista över funktioner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

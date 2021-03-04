@@ -41,3 +41,6 @@ I den här proceduren visas hur du skapar momsavstämningrapporten som är tillg
 6. Välj Ja i fältet Visa detaljer.
 7. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

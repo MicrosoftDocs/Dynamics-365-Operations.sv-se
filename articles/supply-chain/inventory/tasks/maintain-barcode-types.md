@@ -46,3 +46,6 @@ I den här proceduren visas hur du ställer in en ny streckkoddefinition som sed
 12. Klicka på Spara.
 13. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

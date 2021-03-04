@@ -87,3 +87,6 @@ Resultatet blir en planerad order på 25 stycken. (= 25 stycken. &minus; 0 styck
 [Visa planhistorik och planeringsloggar](plan-history-logs.md)
 
 [Annullera ett planeringsjobb](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Mer information och exempel på hur du använder funktionen finns i [Skjuta upp 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Datainsamlingsfunktioner](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

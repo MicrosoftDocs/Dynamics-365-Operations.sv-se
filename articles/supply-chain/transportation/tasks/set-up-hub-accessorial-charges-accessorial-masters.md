@@ -54,3 +54,6 @@ I den här proceduren visas hur du skapar en tilläggsmall för en hub och anvä
 9. Klicka på Spara.
 10. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

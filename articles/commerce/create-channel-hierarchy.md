@@ -107,3 +107,6 @@ Följande bild visar en exempelnod med produktattributgrupper som läggs till.
 [Ställa in sortiment](set-up-assortments.md)
 
 [Hantera attribut och attributsgrupper](attribute-attributegroups-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

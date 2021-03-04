@@ -64,3 +64,6 @@ Ibland stoppar en organisation att erbjuda vissa förmåner. I det här fallet m
 På liknande sätt låter dig förlängning av massförmån dig förlänga sista giltighetsdatum för både en förmån och för medarbetarregistreringar för den förmånen om du väljer att erbjuda en förmån längre än vad du ursprungligen planerade.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Följande PowerBI.com-lösningar är tillgängliga från [Microsoft AppSource](h
 - Kostnadshantering
 - [Finansiellt resultat](financial-performance-power-bi-content-pack.md)
 - [Resultat för butikskanal ](retail-channel-performance-dashboard-power-bi-data.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

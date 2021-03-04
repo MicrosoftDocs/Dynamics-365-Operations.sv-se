@@ -131,3 +131,6 @@ Om du vill använda anpassningar för en befintlig rekommendations lista i webbp
 [Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

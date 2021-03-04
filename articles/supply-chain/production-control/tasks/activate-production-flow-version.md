@@ -41,3 +41,6 @@ Innan kanban-jobb kan skapas och aktiviteter bearbetas för en produktionsflöde
 5. Klicka på Aktivera.
 6. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

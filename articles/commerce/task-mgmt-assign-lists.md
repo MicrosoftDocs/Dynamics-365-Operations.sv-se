@@ -92,3 +92,6 @@ Följ dessa steg för att spåra uppgiftslistans status för alla uppgifter som 
 [Skapa uppgiftslistor och lägga till uppgifter](task-mgmt-create-lists.md)
 
 [Uppgiftshantering i kassan](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

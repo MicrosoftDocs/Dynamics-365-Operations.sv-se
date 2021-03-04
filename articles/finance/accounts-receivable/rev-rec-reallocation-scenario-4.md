@@ -77,3 +77,6 @@ När du väljer **Verifikation** visas den ursprungliga redovisningsposten i fak
 Öppna sedan sidan **Alla kunder** (**Kundreskontra \> Kunder \> Alla kunder**), välj kunden **US\_SI\_0003** och välj sedan **Transaktioner**. På sidan **Kundtransaktioner** visas bara den ursprungliga fakturan (000008), tillsammans med den ursprungliga redovisningsposten. Eftersom alternativet **Bokför fakturakorrigeringar i Kundreskontra** ställts in på **Nej** på sidan **Redovisningsparametrar** uppdateras bara redovisningen. Därför visas inte återförande och uppdaterade redovisningsposter. Observera att de intäktsjusteringstransaktioner som har skapats [i scenario 3](rev-rec-reallocation-scenario-3.md) visas.
 
 [![Ursprunglig redovisningspost på sidan Kundtransaktioner](./media/47_rev-rec-scenarios.png)](./media/47_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

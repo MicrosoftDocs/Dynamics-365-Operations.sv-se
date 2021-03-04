@@ -62,3 +62,6 @@ Den här proceduren går igenom hur du söker efter en kund, skapar en ny order,
 
 [Ändra leveranssätt i kassan](../pos-change-delivery-mode.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

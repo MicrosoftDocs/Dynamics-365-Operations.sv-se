@@ -101,3 +101,6 @@ Alla policyregler för en viss granskningspolicy delar samma batchparametrar och
 [Definiera granskningspolicyer för källdokument](tasks/define-audit-policies-source-documents.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

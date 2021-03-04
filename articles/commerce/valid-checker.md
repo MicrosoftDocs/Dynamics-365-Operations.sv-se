@@ -78,3 +78,6 @@ Om ett valideringsfel inträffar går det bara att korrigera felet genom att kon
 
 > [!NOTE]
 > Ytterligare valideringsregler för andra scenarier kommer i framtida versioner.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

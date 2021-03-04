@@ -64,3 +64,6 @@ Det demonstrationsdataföretag som används för att skapa den här registrering
 5. Klicka på Exportera.
 6. Klicka på PDF.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

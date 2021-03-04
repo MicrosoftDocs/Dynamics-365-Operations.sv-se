@@ -89,3 +89,6 @@ I det här fallet beaktas de två tillgängliga delarna av artikelnummer COMP. M
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

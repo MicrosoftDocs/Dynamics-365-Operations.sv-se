@@ -82,3 +82,6 @@ Kupongfunktionen omfattar flera olika funktioner. administration för Handel (hu
 - **Huvudkontor är delvis uppdaterat, men skalningsenhet för handel och kassa är inte uppdaterade.** Vid uppdatering av Huvudkontor uppdateras sidorna Kupong och Rabatt. Även motorn för handelspris uppdateras. Om endast en av dessa två komponenter uppdateras kommer vissa sidor i Handel inte att matcha prisberäkningsdata. Därför kan oväntade rabattberäkningar eller fel inträffa vid beräkningarna av rabatten.
 - **Huvudkontor är uppdaterat, men skalningsenhet för handel och kassa är inte uppdaterade (N-1).** Eftersom inte alla butiker kan uppdateras samtidigt, rekommenderar vi att du uppdaterar huvudkontoret innan du uppdaterar butiker. I N-1-scenariot kommer inte nya funktioner som är relaterade till kuponger att visas i butiker som ännu inte har uppdaterats. Exempelvis introducerar kuponger funktionen ”Uteslut”-rader. Om du använder utelämnar rader på en rabatt, används de inte i butiker som kör en tidigare version.
 - **Huvudkontor är inte uppdaterat, men skalningsenhet för handel och kassa är uppdaterade (N+1).** Eftersom prismotorn är uppdaterad i skalningsenhet för handel kan servern hantera äldre rabattkoder under prisberäkningar. Uppdateringen bör inte ha någon funktionspåverkan i det här scenariot.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

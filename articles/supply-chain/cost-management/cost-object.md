@@ -82,3 +82,6 @@ Följande tabell visar vad som är ett kostnadsobjekt och vad som är ett lagero
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

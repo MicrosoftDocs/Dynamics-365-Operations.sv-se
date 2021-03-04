@@ -43,3 +43,6 @@ Det här avsnittet innehåller information om hur du skapar en platsprofil i Dyn
 10. Välj **Ja** i fältet **Tillåt rullande inventering**.
 11. Välj **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Du kan exkludera avvikare för att förbättra prognosexaktheten. Den här uppgi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

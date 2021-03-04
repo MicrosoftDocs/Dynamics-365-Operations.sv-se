@@ -84,3 +84,6 @@ Du kan manuellt skapa artikelrader för tillgångar.
 5. Om artikeln upphör att gälla anger du ett slutdatum i fältet **förfallodatum**.
 6. Välj en artikel i fältet **Artikelnummer**. Namnet anges automatiskt i fältet **Produktnamn**.
 7. I fältet **Kvantitet** anger du kvantiteten som används. Fältet **Enhet** uppdateras automatiskt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

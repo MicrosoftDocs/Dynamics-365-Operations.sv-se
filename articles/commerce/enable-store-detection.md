@@ -69,3 +69,6 @@ Aktivera platsbaserad butiks identifiering i näthandelsbutiken genom att följa
 [Konfigurera flera B2C-innehavare i en Commerce-miljö](configure-multi-B2C-tenants.md)
 
 [Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Kostnadsfördelningsregler används för att fördela kostnader som räknats eko
 5. Ange eller välj ett värde i fältet Kostnadsstyrenhet.
 6. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

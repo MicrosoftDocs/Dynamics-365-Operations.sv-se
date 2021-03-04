@@ -58,3 +58,6 @@ När du byter jobb på en befattning kommer nu **jobbfamilj** användas som stan
 
 ### <a name="performance-improvements-when-rendering-workspaces"></a>Prestandaförbättringar vid återgivning av arbetsytor
 Analysflikar på arbetsytor läses nu bara vid åtkomst till sidorna. En indikator visas under den första återgivningen av sidan i det övre vänstra hörnet på sidan.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

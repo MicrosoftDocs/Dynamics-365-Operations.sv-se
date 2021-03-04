@@ -70,3 +70,6 @@ Med ett nytt alternativ kan cheferna visa prestandan för både deras direktrapp
 #### <a name="platform-update-29-for-finance-and-operations"></a>Plattformsuppdatering 29 för Finance and Operations
 
 Ytterligare information om plattformsuppdatering 29 för Finance and Operations finns i [Förhandsgranskningsfunktioner i Dynamics 365 Finance and Operations plattformsuppdatering 29 (oktober 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -258,3 +258,6 @@ När du har skapat platsdirektiv kan du associera varje direktivkod med en arbet
 
 - Video: [konfiguration för lagerstyrning djupdykning](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Hjälpavsnitt: [Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv](control-warehouse-location-directives.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

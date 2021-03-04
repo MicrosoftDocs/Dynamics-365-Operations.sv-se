@@ -102,3 +102,6 @@ På fliken **allokeringsnycklar** kan du ställa in parametrar **Parametrar för
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

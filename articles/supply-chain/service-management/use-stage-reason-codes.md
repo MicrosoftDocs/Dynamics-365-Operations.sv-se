@@ -73,3 +73,6 @@ Om du har angett att en orsakskod krävs måste du ange en orsakskod i följande
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

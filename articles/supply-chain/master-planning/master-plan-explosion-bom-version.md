@@ -48,3 +48,6 @@ Följande bild visar hur processen för efterfrågenedbrytningen i huvudplanerin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

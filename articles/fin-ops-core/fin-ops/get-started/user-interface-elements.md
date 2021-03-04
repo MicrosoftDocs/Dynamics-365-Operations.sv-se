@@ -86,3 +86,6 @@ Ett *verktygsfält* innehåller verktyg, t.ex. möjligheten att lägga till fäl
 En *lista* är det namn som ges till en samling poster som du kan rulla igenom. Du kan flytta dessa poster till sidan genom att markera dem. Detta öppnar ofta ett rutnät.
 
 ![Följande bild visar exempel på verktygsfält, rutnät och listor.](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

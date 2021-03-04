@@ -109,3 +109,6 @@ Om du vill skapa paritet med Finance and Operations-appar gör dubbelriktad skri
 
 Mer information om kommande ändringar finns i [nyheter och ändringar i dubbelriktad skrivning](whats-new-dual-write.md) .
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

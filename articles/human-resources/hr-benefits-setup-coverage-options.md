@@ -59,3 +59,6 @@ När du definierar omfattningsalternativ kopplar du omfattningsalternativen till
    | **Tillåt medarbetarförsäkringsbelopp** | Anger om medarbetare ska kunna ändra försäkringsbeloppet för självbetjäning för förmåner när de väljer förmåner. Om du markerar den här kryssrutan kommer systemet att beräkna förmånplanparametrar baserat på det försäkringsbelopp som medarbetaren registrerar sig på i Självbetjäning för medarbetare. |
 
 6. Välj **Spara**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

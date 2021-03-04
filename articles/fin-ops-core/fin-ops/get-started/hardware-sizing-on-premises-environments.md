@@ -141,3 +141,6 @@ Orchestrator-tjänsten är en tjänst som hanterar distributionen och relaterad 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisering och överabonnemang
 
 Missionskritiska tjänster som AOS bör finnas på virtuella värdar som har dedikerade resurser - kärnor, minne och disk.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

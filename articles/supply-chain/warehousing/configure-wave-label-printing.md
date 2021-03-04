@@ -932,3 +932,6 @@ Du kan visa och skriva ut påfyllnadsetiketter på följande sidor:
 - Etiketthistorik för påfyllnad
 
 För de flesta av dessa sidor hittar du den relevanta funktionen genom att välja **Påfyllnadsetiketter** i gruppen **Relaterad information** i fliken **leveranser** i åtgärdsfönstret.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -85,3 +85,6 @@ Mer information om den här funktionen finns i [Office integration självstudier
 ## <a name="other-fixes"></a>Andra korrigeringar
 
 Den här versionen innehåller ett antal olika felkorrigeringar, tillägg av nya entiteter, korrigeringar för befintliga entiteter och lokaliserade etikettändringar.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

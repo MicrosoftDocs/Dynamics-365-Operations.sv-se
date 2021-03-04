@@ -75,3 +75,6 @@ Om värdet för argumentet `decimals` är mindre än 0 (noll) avrundas det speci
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Matematiska funktioner](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

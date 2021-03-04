@@ -59,3 +59,6 @@ Serviceavtalet varar från 1 januari 2012 till 31 december 2012. Det finns två 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

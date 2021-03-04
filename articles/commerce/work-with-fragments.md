@@ -136,3 +136,6 @@ Du kan också redigera ett fragment genom att markera det på en sida, i en mall
 [Arbeta med förinställda layouter](work-with-layouts.md)
 
 [Arbeta med publiceringsgrupper](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

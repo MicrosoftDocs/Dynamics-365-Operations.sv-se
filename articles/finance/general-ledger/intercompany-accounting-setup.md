@@ -50,3 +50,6 @@ Ett ömsesidigt förhållande kan enkelt skapas på sidan **Koncernintern redovi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

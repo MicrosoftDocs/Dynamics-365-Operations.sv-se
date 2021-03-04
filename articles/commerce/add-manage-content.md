@@ -57,3 +57,6 @@ Välj ett av följande avsnitt för att komma igång.
 [Dokumentera tillstånd och livscykel](document-states-overview.md)
 
 [Aktivera och använda delning av flera kanaler](cross-channel-sharing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

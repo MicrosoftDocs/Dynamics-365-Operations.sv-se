@@ -41,3 +41,6 @@ Dynamics 365 Human Resources använder nivåkoder med förmånspriser som betala
    | **Beskrivning** | En beskrivning av nivåkod för förmån. |
 
 4. Välj **Spara**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Om du vill veta mer om de grundläggande principer som Microsoft använder besö
 [Lägga till en sida med sekretesspolicy](add-privacy-page.md)
 
 [Ersätt användar-ID:n som är associerade med spårade innehållsändringar](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

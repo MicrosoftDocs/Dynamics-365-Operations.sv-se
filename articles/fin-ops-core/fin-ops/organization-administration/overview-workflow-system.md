@@ -71,3 +71,6 @@ Det finns flera fördelar med att använda arbetsflödessystemet i organisatione
 + [Konfigurera parallella grenar i ett arbetsflöde](configure-parallel-branch-workflow.md)
 + [Konfigurera arbetsflöden för radartiklar](configure-line-item-workflow.md)
 + [Vanliga frågor om arbetsflöde](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

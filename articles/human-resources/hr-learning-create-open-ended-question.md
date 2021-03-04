@@ -38,3 +38,6 @@ ms.locfileid: "4420655"
     * Indatatyperna Text eller Notering används för en öppen fråga.  
 6. Ange din fråga i fältet Text.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

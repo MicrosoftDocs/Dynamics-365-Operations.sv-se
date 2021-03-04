@@ -44,3 +44,6 @@ I detta avsnitt beskriver följande steg förklaras hur en användare som är ti
 2. Ställ in **Ange aktiva**.
 
 ![Sidan Arbetsytan för elektronisk rapportering](../media/GER-Task-ActiveProvider-1.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

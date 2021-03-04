@@ -57,3 +57,6 @@ Mer information om varje steg i experimentprocessen finns i följande avsnitt.
 
 ## <a name="next-step"></a>Gå vidare
 [Identifiera en hypotes och fastställa mätvärden för framgång för ett experiment](experimentation-identify.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

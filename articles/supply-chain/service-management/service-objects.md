@@ -47,3 +47,6 @@ Företag A hanterar ekonomiska poster för flera mindre företag. En av företag
 
 [Skapa serviceobjekt](create-service-objects.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

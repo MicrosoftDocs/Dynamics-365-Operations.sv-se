@@ -44,3 +44,6 @@ Använd formuläret **Ta bort returorder** när du vill ta bort flera returorder
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

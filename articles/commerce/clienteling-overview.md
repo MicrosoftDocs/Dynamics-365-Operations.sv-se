@@ -124,3 +124,6 @@ Följ dessa steg för att ställa in integrationen.
     4. Du kan ha flera miljöer i Customer Insights, t.ex. test- och produktionsmiljöer. I fältet **miljöinstans-ID** anger du lämplig miljö.
     5. I fältet **alternativt kund-ID** anger du egenskapen i Customer Insights som har mappats till kundkontonumret. (I Handel är kundkontonumret kundens ID.)
     6. De återstående tre egenskaperna är de mått som kommer att visas på kundkortet i kundboken. Du kan välja upp till tre mått som ska visas på kundkortet. (Du behöver dock inte markera några mått.) Som tidigare nämnts visar systemet dessa värden först och sedan visas värdena för attributgruppen för kundboksgruppen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

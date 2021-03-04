@@ -69,3 +69,6 @@ Enkätstatistiken kan användas för att beräkna medelvärde, summor och procen
 2. Klicka på Resultat.
 3. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

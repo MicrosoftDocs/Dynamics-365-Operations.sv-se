@@ -89,3 +89,6 @@ Hämta och installera mobilappen Finance and Operations.
 1.  I mobilappen väljer du **Företagskatalog**.
 2.  I fältet **söka** anger du medarbetarens förnamn, efternamn, titel eller avdelning för att starta sökningen.
 3.  Välj en medarbetare. Sidan **profil för medarbetaren** visas. Informationen på den här sidan innehåller medarbetarens förnamn, efternamn, titel och avdelning.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

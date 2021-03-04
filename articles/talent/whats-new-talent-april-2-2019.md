@@ -80,3 +80,6 @@ Med denna ändring detekteras dubbletter när du anger namnfält och status visa
 
 ###  <a name="email-support-for-alerts"></a>E-support för notifieringar
 Med plattformsuppdatering 25 för Finance and Operations kan användare skapa notifieringsregler som automatiskt levererar e-postmeddelanden till kontakter när de utlöses av en händelse. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

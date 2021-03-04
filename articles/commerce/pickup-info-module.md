@@ -70,3 +70,6 @@ I bilden nedan visas ett exempel på en kassasida för näthandel som innehålle
 [Modul för orderbekräftelse](order-confirmation-module.md)
 
 [Orderinformationsmodul](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

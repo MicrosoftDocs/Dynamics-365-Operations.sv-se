@@ -107,3 +107,6 @@ Om du vill omdirigera en URL till en annan URL följer du stegen nedan.
 [Konfigurera ditt domännamn](configure-your-domain-name.md)
 
 [Lägg till språk på din webbplats](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

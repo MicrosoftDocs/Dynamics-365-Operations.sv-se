@@ -88,3 +88,6 @@ I det här exemplet skapas en planerad inköpsorder i USMF-företaget för att t
 Följande illustration visar hur det här exemplet kan visas på sidan **Pegging på flera nivåer** för den planerade tillverkningsordern.
 
 ![Koncerninternt exempel som inbegriper tre företag](media/IntercompanyPlanning2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

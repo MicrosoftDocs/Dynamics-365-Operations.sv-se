@@ -73,3 +73,6 @@ I huvudavsnittet på startsidan kan du markera produkter, kategorier eller kampa
 [Översikt över sidor för kundvagn och kassa](quick-tour-cart-checkout.md)
 
 [Översikt över sidor för kontohantering](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

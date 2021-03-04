@@ -40,3 +40,5 @@ Se till att du aktiverar alla anpassade fält som du skapar så att du kan anvä
 [Common Data Service-entiteter](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
 [Skapa och arbeta med anpassade fält](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
 [Visa anpassade fält i datatabeller](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

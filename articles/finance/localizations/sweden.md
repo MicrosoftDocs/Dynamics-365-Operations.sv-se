@@ -33,3 +33,6 @@ Det här avsnittet innehåller länkar till dokumentationsresurser för Sverige.
 - [Importera betalningsformat](emea-swe-payment-formats-import.md)
 - [Funktioner för kassaapparat](../../retail/localizations/emea-swe-cash-registers.md)
 - [Momsbetalningsrapport för Sverige](emea-swe-sales-tax-payment-report-sweden.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

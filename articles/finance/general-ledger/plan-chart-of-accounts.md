@@ -60,3 +60,6 @@ Mer information finns i följande avsnitt:
 
 - [Ekonomiska dimensioner](financial-dimensions.md)
 - [Skapa och tilldela avancerade regelstrukturer](tasks/create-assign-advanced-rule-structures.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

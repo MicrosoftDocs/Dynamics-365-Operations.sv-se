@@ -46,3 +46,6 @@ Information finns i avsnittet ”beviljar behörighet för miljön” i [Etabler
 **Långsiktig lösning**
 
 Microsoft överväger att automatiskt tilldela rätt behörigheter till Onboard och Attract när en användare läggs till Personal.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

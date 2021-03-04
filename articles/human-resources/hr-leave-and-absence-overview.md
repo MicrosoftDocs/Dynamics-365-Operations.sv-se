@@ -54,3 +54,6 @@ Dina medarbetare kan skicka ledighetsansökningar och du kan hantera dem på arb
 [Begär ledig tid](hr-employee-self-service-request-time-off.md)
 [Hantera begäranden om ledighet och frånvaro](hr-employee-self-service-manage-requests.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

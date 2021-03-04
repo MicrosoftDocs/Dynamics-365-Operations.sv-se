@@ -79,3 +79,6 @@ När du har skapat alla flikar du behöver kan du koppla dem till en konfigurati
 1. Fortsätt att lägga till ytterligare flikar om det behövs.
 
 1. Använd knapparna **Flytta upp** och **Flytta ned** i verktygsfältet om du vill ordna flikarna efter behov. Flikarna visas från vänster till höger i den ordning som visas i ovanstående skärmdump (fliken längst upp visas till vänster).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

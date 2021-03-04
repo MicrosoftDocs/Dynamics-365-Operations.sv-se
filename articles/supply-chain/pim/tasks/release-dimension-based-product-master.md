@@ -41,3 +41,6 @@ I den här proceduren visas hur du frisläpper en produktmall som ska användas 
 7. Klicka på Nästa.
 8. Klicka på Avsluta.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

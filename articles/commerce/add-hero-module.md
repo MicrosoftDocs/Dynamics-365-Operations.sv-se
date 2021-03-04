@@ -107,3 +107,6 @@ Om du vill lägga till en fokusmodul på en ny sida och ställa in de obligatori
 [Textblockmodul](add-content-rich-block.md)
 
 [Modul för videospelare](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

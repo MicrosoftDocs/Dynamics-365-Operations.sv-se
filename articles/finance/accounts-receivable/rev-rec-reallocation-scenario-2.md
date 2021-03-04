@@ -90,3 +90,6 @@ Den andra försäljningsordern har nu fakturerats. Den totala fakturan som visas
 [![Sidan Verifikationstransaktion med redovisningsposten som bokförs](./media/24_rev-rec-scenarios.png)](./media/24_rev-rec-scenarios.png)
 
 Eftersom summan av intäkten och försäljningen är större än $1 170,44, bokförs skillnaden -$130,17. Detta belopp rensar saldot från kontot Delvis clearing av fakturaintäkt. Det saldot bokförs i den nya redovisningsposten efter omallokeringen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

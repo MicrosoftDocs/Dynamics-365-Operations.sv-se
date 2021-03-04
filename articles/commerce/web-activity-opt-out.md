@@ -56,3 +56,6 @@ Administratörer kan låta autentiserade användare själva säga upp insamling 
 ### <a name="custom-extensions"></a>Anpassade tillägg
 
 Administratörer kan skapa sina egna tillägg för att hantera användarnas avanmälningsfunktioner. Mer information finns i [anropa API:er för Butik](e-commerce-extensibility/call-retail-server-apis.md) och [Utbyggbarhet av onlinekanal](e-commerce-extensibility/overview.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

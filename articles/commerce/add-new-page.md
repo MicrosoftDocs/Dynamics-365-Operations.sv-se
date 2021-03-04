@@ -91,3 +91,6 @@ Gör så här om du vill lägga till en ny webbplatssida till din webbplats:
 [Utöka en kategorilandningssida](enrich-category-page.md)
 
 [Kontrollera tillgängligheten för sidinnehåll](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

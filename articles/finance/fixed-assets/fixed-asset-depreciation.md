@@ -57,3 +57,6 @@ Mer information finns i [Avskrivningsmetoder och avskrivningspraxis](depreciatio
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

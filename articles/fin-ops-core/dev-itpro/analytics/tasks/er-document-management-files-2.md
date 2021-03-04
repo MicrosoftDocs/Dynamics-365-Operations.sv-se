@@ -91,3 +91,6 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 26. Klicka på Slutför.
 27. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

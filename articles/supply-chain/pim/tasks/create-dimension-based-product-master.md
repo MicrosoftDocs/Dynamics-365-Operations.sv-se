@@ -42,3 +42,6 @@ I den här proceduren visas hur du skapar en ny produktmall med dimensionsbasera
     * Välj dimensionsbaserad konfigurationsteknik.  
 9. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Den här proceduren visar hur du startar en produktionsorder i fabriken. Tids- o
 7. Klicka på Bokför.
 8. Klicka på OK.
     * I flödeskortjournalen registreras tidsåtgången för enskilda åtgärder. Varu- och felkvantiteten kan också rapporteras.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

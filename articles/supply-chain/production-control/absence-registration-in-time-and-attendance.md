@@ -109,3 +109,6 @@ En arbetare stämplar t.ex. in klockan 10:00 och väljer en frånvarokod som ind
 ### <a name="calculate-and-approve-absence"></a>Beräkna och godkänn frånvaro
 
 - Välj **Tid och närvaro**&gt;**Granska och godkänn**&gt;**Godkänn eller beräkna**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

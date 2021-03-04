@@ -137,3 +137,6 @@ Följande sidor och menyobjekt som är relaterade till funktionsinställningar �
  - **Utländska handelsparametrar** (**Skatt** > **Inställning** > **Moms** > **Utlandshandel** > **Utländska handelsparametrar**). Se [Ställa in egenskaper för land/region](#Set-up-Country/region-properties).
 
 Kryssrutan **Omvänd moms** finns på sidorna **Momsgrupp** och **Bokförd moms**. Mer information finns i avsnitten [Ställ in momsgrupper och artikelmomsgrupper](#sales-tax-item-sales-tax-groups), [Omvänd moms på en försäljningsfaktura](#reverse-charge-sale) och [Omvänd moms på en inköpsfaktura](#reverse-charge-purchase).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

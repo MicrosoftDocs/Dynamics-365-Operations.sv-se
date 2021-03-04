@@ -162,3 +162,6 @@ Konstruktionsstrukturlistor och flöden skapas från den konstruktionsversion d�
 För produkter där du använder produktdimensionen *version* (tillsammans med logistisk påverkan på transaktionerna) läggs versionen även till i strukturlistorna och flödena. Det här beteendet gör det enklare att särskilja strukturlistor och flöden i sammanhängande versioner, oavsett inställningen **påtvinga effektivitet**.
 
 För produkter där du inte använder produktdimensionen *version* (utan logistisk påverkan på transaktionerna) läggs versionen inte till i strukturlistorna eller flödena. Därför kommer det inte att finnas någon skillnad mellan strukturlistorna och flödena i efterföljande versioner. I det här fallet rekommenderar vi starkt att du ställer in alternativet **Påtvinga effektivitet** till *Ja*. På det här sättet bidrar till att undvika konstruktionsversioner från att överlappa, och du kan även aktivera strukturlistan och flödet för en nyare version utan att först inaktivera strukturlistan och flödet för den föregående versionen. Om du ställer in alternativet **Påtvinga effektivitet** till *Ja* i det här fallet måste du manuellt inaktivera strukturlistorna och flödena av äldre versioner innan du kan aktivera den senaste versionen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

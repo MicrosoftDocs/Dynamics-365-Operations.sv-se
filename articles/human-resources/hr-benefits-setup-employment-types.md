@@ -41,3 +41,6 @@ Ställ in medarbetartyper i Dynamics 365 Human Resources för att stämma övere
    | **Beskrivning** | En beskrivning av anställningstyp. |
 
 4. Välj **Spara**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -133,3 +133,6 @@ Följ dessa steg om du vill skapa en lista med förslag på lösningar och repar
 
 > [!NOTE]
 > Du kan ändra namnen på dina felsymtom, felområden, feltyper, felorsaker och fellösningar. Namnändringarna återspeglas automatiskt i de relaterade felregistreringarna.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

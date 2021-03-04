@@ -49,3 +49,6 @@ I det här avsnittet finns information om hur du analyserar och hanterar krav p�
     - Om **Roll** har valts väljer du **Lägg till roll till användare**. Då öppnas sidan **Tilldela användare till roller**. Mer information finns på sidan [Tilldela användare till säkerhetsroller](assign-users-security-roles.md).
     - Om **Uppdrag** är valt väljer du **Lägg till uppgift i roll**, väljer de roller som uppgiften ska läggas till i och väljer sedan **OK**.
     - Om **Privilegium** är valt väljer du **Lägg till privilegium i uppgifter**, väljer de roller som privilegium ska läggas till i och väljer sedan **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

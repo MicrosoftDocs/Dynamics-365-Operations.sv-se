@@ -38,3 +38,6 @@ Om en importerad faktura omfattas av sändningen av arbetsflödesprocessen kan d
 - **Pausad** – de automatiserade processer som har definierats på sidan **parametrar för leverantörsreskontra** har körts, men minst ett steg i processen misslyckades. Statusen **Pausad** används även om fältet **inkludera i automatisk bearbetning** är inställt på **Nej**. Du kan visa felen genom att välja knappen **Visa senaste resultat**.
 - **I arbetsflödet** – den importerade fakturan har skickats till arbetsflödessystemet, antingen genom den automatiska sändningen till arbetsflödesprocessen eller manuellt.
 - **Arbetsflödet slutfört** – arbetsflödesprocessen har slutförts för den importerade fakturan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

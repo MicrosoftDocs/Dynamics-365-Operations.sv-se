@@ -71,3 +71,6 @@ Denna uppgift är avsedd för generering av ett nytt jobb. Detta ska utföras me
 33. Växla utökningen av avsnittet Utbildning.
 34. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ För mer information om att använda den här funktionen, se uppgiftsguiden [ER 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Datainsamlingsfunktioner](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

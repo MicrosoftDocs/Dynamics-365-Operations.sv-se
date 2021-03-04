@@ -80,3 +80,6 @@ När klusterplockning används, är objektbekräftelse avgörande för att kontr
 1. I den mobila enhetens menyalternativ öppnar du inställningsformuläret för arbetsbekräftelse: **Hantering av lagerställe** \> **Hantering av lagerställe** \> **Inställningar** \>  **Mobil enhet** \> **Menyobjekt för mobil enhet**.
 
 1. Från mobila enhetens menyalternativ öppnar du **Inställning av arbetsbekräftelse**. Alternativet **Produktbekräftelse** låter dig kontrollera varje lagerenhet från den mobila enheten när du har skannat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

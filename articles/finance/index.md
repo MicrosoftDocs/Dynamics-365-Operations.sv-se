@@ -73,3 +73,6 @@ Regleringar för land/region påverkar momsinställningarna och andra områden i
 
 Funktionerna för hantering av leveranskedjan omfattar delar av procure-to-pay-processen som inkluderar rekvisition, beställning, mottagning, fakturering och betalning för de varor och tjänster som dina organisation köper. På [startsidan för Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) för information om möjligheterna att hantera inköp, lager och tillverkning. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ En verksamhetsresurs utför aktiviteter för ett projekt eller en produktionspro
 4. Ange eller välj ett värde i fältet Plats för inleverans.
     * Ange lagerställesplatsen från vilken verksamhetsresursen förbrukar material.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

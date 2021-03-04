@@ -51,3 +51,6 @@ Gör på följande sätt om du vill återföra osparade ändringar på en utför
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Detta är den femte proceduren av fem som illustrerar leverantörbetalningsproce
     3.    I fältet **Filnamn** anger du eller väljer ett värde. I det här exemplet på grund av betalningar i EUR blir den genererade filen SEPA-kompatibel. ISO20022 kreditöverföring samt andra leverantörsbetalningsformat kan också användas för att generera betalningar i andra valutor.
     4.    I fältet **Bankkonto** anger du eller väljer ett värde.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

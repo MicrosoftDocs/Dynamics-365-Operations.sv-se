@@ -376,3 +376,6 @@ Observera att en zip-fil kan hämtas i webbläsaren. Den här filen innehåller 
 
 - [Översikt över elektronisk rapportering](general-electronic-reporting.md)
 - [Förbättra prestanda för ER-lösningar genom att lägga till parametriserade datakällor för BERÄKNADE FÄLT](er-calculated-field-ds-performance.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

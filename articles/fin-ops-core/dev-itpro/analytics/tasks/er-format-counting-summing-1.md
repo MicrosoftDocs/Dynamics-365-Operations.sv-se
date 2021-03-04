@@ -56,3 +56,6 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 8. Expandera "Intrastat model" i trädet.
 9. Välj "Intrastat modell\Intrastat (DE)" i trädet.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

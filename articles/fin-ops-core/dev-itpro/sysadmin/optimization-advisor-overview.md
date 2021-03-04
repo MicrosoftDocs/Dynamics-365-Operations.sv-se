@@ -94,3 +94,6 @@ Markera affärsmöjligheten som skapades av regeln om du vill inaktivera utvärd
 [Skapa regler för rådgivning om optimering](./create-rules-optimization-advisor.md)
 
 [Optimerings-advisor i Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

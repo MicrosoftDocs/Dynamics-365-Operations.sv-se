@@ -63,3 +63,6 @@ Den här uppgiftsguiden går igenom vilka olika metoder som används för att sk
 33. Klicka på **OK** för att generera betalningarna.
 34. Klicka på **Bokför** om alla betalningar har godkänts och genererats. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

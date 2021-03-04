@@ -81,3 +81,6 @@ När du har angett grundläggande information om anbudsförfrågan anger du de v
 4. Stäng sidan.
 5. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

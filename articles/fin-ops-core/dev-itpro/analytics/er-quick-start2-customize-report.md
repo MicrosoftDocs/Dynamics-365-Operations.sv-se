@@ -514,3 +514,6 @@ Om du vill börja använda den nya funktionen i version 3.3 av **BACS (UK)** for
 - [Översikt över elektronisk rapportering](general-electronic-reporting.md)
 - [Ladda ned ER-konfigurationer från Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 - [Hämta ER-konfigurationer från den globala databasen med konfigurationstjänster](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

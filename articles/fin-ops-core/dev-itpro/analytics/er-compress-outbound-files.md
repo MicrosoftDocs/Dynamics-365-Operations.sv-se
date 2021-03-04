@@ -94,3 +94,6 @@ Innan du slutför procedurerna i detta ämne måste följande steg vara slutför
 [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 
 [Skjuta upp körningen av XML-element i ER-format](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

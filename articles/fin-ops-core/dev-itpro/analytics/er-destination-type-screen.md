@@ -38,3 +38,6 @@ Om du ställer in **Aktiverad** som **Ja** skapas en förhandsgranskning av resu
 
 - [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Stegen kan utföras med hjälp av valfri datauppsättning. För att slutföra de
     * Intrastat-exempelmappning  
 5. Klicka på Skapa konfiguration.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

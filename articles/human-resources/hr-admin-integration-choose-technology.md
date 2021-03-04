@@ -144,3 +144,6 @@ Med så många olika integrationstekniker tillgängliga kan det vara överväldi
 <sup>2</sup>Microsoft investerar mycket i att öka datatäckningen för Common Data Service-enheter. Vi rekommenderar att du använder Common Data Service när täckning är tillgängligt. För närvarande är Common Data Service datatäckning låg jämfört med DMF- och OData-aktiverade entiteter.
 
 <sup>3</sup>SQL-databasen kan öppnas programmässigt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ När du genererar den här rapporten visas följande standardfält. Du kan anvä
 Om du bara vill visa icke-momskonton i rapporten ställer du in ett filtervillkor, t.ex. en asterisk (\*), som visas på bilden nedan.
 
 ![Rapporten visar icke-momskonton](media/taxspecperledgertrans.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ I den här registreringen används demonstrationsföretaget USMF. Leverantörsre
 24. Stäng sidan.
 25. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

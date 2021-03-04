@@ -82,3 +82,6 @@ Dessa kolumndefinitioner innehåller olika typer av kolumner för att tillhandah
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

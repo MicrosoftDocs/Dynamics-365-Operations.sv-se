@@ -813,3 +813,6 @@ Information om hur formatstrukturen kan synkroniseras med en ER-mall i mallredig
 [Spåra körningen av ER-format för att felsöka prestandaproblem](trace-execution-er-troubleshoot-perf.md)
 
 [Hantering av affärsdokument – översikt](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ När dokumenttypens plats är inställd på **Azure Storage** kan du spara en fi
 - [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Konfigurera dokumenthantering](../../fin-ops/organization-administration/configure-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

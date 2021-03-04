@@ -130,3 +130,6 @@ I följande steg förklaras hur en användare i rollen Systemadministratör elle
 3. Klicka på **Bläddra** och välj filen **IncomingDocumentToLearnHowToHandleOptionalAttributes.xml**.
 4. Klicka på **OK**.
 5. Granska den skapade filen. Observera att samma fil har importerats som formatdesignen betraktar nu attributet "ID" för "dokument"-elementet som valfritt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

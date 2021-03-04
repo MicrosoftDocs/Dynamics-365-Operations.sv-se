@@ -196,3 +196,6 @@ Konfigurera integration med Power BI. Mer information finns i [Konfigurera Power
 [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

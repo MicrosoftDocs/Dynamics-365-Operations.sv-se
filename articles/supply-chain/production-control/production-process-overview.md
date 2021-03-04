@@ -88,3 +88,6 @@ Följande steg i tillverkningslivscykeln kan genereras för alla ordertyper av t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

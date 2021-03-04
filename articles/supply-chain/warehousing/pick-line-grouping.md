@@ -131,3 +131,6 @@ Innan du kan ställa in plockradsgruppering måste du skapa vissa kvalificerade 
 >    - Arbetsrader som har oavslutade lagerpåfyllnadsarbete.
 >    - Överplockning.
 >    - Kort plockning med omallokering av artiklar
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

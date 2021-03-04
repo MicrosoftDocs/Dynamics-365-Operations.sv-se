@@ -69,3 +69,6 @@ Programdata används för att fylla i rapporter i innehållspaketet för medarbe
 | Personal\_ArbetareNamn             | Förnamn, efternamn och fullständiga namn                                                                       | |
 | Personal\_ArbetareTitel            | Titel och tjänsteålder                                                                                   | |
 | Personal\_ArbetareTrend             | Arbetare över tid, antal anställda, företag och befattning                                                        | Personal\_Företag, Personal\_Kompensation, Personal\_GeographicLocation, Personal\_Prestanda, Personal\_WorkerName, Personal\_ReportsToWorkerName, Personal\_CalendarOffset, Personal\_Datum, Personal\_WorkerTitle, Personal\_Demografi, Personal\_Anställning, Personal\_Jobb |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

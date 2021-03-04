@@ -56,3 +56,6 @@ Med villkorsstyrda frågor kan du ange vilken uppföljningsfråga som ska visas 
 10. Välj "Frågor\Jag betalas rättvist för det arbete jag gör” i trädet.
     * Observera att frågeträdet har uppdateras för att visa beroendet.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

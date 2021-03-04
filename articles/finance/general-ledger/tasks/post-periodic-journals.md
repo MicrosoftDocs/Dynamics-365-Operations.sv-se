@@ -58,3 +58,6 @@ Periodiska journaler kallas ibland återkommande journaler eftersom beloppet, te
 27. Ange eller välj ett värde i fältet **Periodisk journal**.
 28. Klicka på länken på den valda raden i listan.
 29. Klicka på **OK**. Periodjournalen kan nu granskas, godkännas eller bokföras beroende på inställningar och krav.   
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

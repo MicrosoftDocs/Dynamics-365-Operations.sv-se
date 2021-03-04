@@ -249,3 +249,6 @@ Om du till exempel vill visa summan av momsvärden i rapportens rubrik kan du ä
 - [Konfigurera format för inventering och summering](./tasks/er-format-counting-summing-1.md)
 - [Spåringskörning av ER-format för att hjälpa dig att felsöka prestandaproblem.](trace-execution-er-troubleshoot-perf.md)
 - [Skjut upp körningen av XML-element i ER-format](er-defer-xml-element.md#Example)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

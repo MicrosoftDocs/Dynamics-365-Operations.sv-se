@@ -70,3 +70,6 @@ I den här proceduren visas hur du aktiverar lönelistprocessen för tid och nä
 7. Klicka på Redigera.
 8. Ange eller välj ett värde i fältet Löneavtal.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -175,3 +175,6 @@ Händelsen **AttachingFile()** utlöses när följande ER-destinationer bearbeta
 
 - [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Startsida för utbyggbarhet](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

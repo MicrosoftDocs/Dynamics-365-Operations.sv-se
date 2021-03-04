@@ -182,3 +182,6 @@ Så här ställer du in kassaskåp.
 
 [Ställa in en kundtjänstkanal](channel-setup-callcenter.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

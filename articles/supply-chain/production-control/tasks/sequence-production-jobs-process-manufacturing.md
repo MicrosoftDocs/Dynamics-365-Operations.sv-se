@@ -71,3 +71,6 @@ Den här proceduren använder målarfärgprodukter som ett exempel för att visa
 8. Använd snabbfiltret för att filtrera på fältet Artikelnummer med värdet P300.
     * Observera att order grupperas nu enligt prioritet för färg och storlek och planerade order börjar på det tidigaste order- och leveransdatumet. Validera orderdatumkolumnen eller startdatumet i faktaboxen Detaljer om tidsplan.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

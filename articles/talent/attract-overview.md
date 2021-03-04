@@ -49,3 +49,6 @@ Så fort de har lagts till i ett jobb får kandidaterna ett e-postmeddelande som
 
 ## <a name="analytic-reports"></a>Analysrapporter
 Anställningsgrupper kan använda mätvärden för anställningsprocess för ett enskilt jobb eller aggregeras för all ajobb med [analysrapport u Attract](analytic-reports.md). Den här funktionen är för närvarande i [förhandsversion](access-preview-feature.md) för kunder med [Vilken version av Microsoft Dynamics 365 Talent - Attract](attract-comprehensive-hiring.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

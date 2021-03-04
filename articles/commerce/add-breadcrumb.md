@@ -95,3 +95,6 @@ Om du vill lägga till en modul för navigeringssökväg till en PDP och ställa
 [Modul för inköpsruta](add-buy-box.md)
 
 [Uppdateringar av SDK och modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

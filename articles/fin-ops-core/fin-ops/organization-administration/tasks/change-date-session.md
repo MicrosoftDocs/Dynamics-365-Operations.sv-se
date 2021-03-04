@@ -32,3 +32,6 @@ I det här avsnittet beskrivs hur du ändrar datumet för en session. Som standa
 2. Ange ett datum i fältet **Datum.**
 3. Välj **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -210,3 +210,6 @@ Som tidigare nämnts i det här avsnittet **Etikett** och **Beskrivning** för v
 
 - [Översikt över elektronisk rapportering](general-electronic-reporting.md)
 - [Funktioner för elektronisk rapportering](er-formula-language.md#functions)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

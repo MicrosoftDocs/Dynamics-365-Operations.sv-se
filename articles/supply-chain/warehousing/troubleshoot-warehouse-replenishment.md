@@ -40,3 +40,6 @@ Plocknings arbetet spärras på grund av beroende återanskaffningsarbete.
 ### <a name="issue-resolution"></a>Problemlösning
 
 När du använder lagerpåfyllnadsbegäran om en plockplats måste fyllas på skapar systemet både påfyllningsarbetet och plockningsarbetet om en plockplats måste fyllas på för att uppfylla källorderns behov. Men det blockerar plockningsarbetet tills påfyllningsarbetet har slutförts. Det här beteendet är avsiktligt eftersom plockplatsen inte har tillräckligt med lager om inte lagerpåfyllnadsarbetet har slutförts. Slutför påfyllningsarbetet och bearbeta sedan plockningsarbetet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

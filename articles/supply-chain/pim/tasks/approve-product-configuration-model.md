@@ -49,3 +49,6 @@ När du kör den här proceduren krävs det att det finns minst en modell för p
     * Aktivera produktmodellsversionen. Det är endast möjligt att ha en aktiv produkt för en produktmodell åt gången.  
 13. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

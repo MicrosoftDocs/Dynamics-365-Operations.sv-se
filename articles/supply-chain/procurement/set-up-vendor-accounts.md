@@ -118,3 +118,6 @@ Du väljer standardkonton på sidan **Standardkontoinställning**, som du öppna
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Använd den här proceduren för att ställa in en mall som ska representera obj
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

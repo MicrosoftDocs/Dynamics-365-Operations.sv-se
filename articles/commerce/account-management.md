@@ -89,3 +89,6 @@ Om du vill delta i förmånsprogrammet kan du skapa en marknadsföringssida med 
 [Modul för sidhuvud](author-header-module.md)
 
 [Modul för sidfot](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

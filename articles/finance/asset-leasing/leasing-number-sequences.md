@@ -36,3 +36,6 @@ I det här ämnet beskrivs hur du skapar nummerserier för leasing-ID:n. Det inn
 3. Välj **Nummerserier** i sidofältet.
 4. Välj nummerserien för referensen **Leasing-ID**. Denna nummerserie används för att generera den unika identifieraren för varje leasing.
 5. Välj nummerserien för referensen **Process-ID**. Denna nummerserie används för att generera den unika identifieraren för varje indexomvärderingsprocess.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

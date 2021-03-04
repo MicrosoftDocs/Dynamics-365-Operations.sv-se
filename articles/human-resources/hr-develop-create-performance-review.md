@@ -78,3 +78,6 @@ I det här avsnittet förklarar vi hur du skapar en resultatöversyn och beskriv
 34. Välj fliken **Granska**. I takt med att granskningen fortskrider genom de olika stadierna, kan medarbetaren och chefen lägga till kommentarer för respektive mål eller kompetens.  
 35. Välj fliken **Godkännanden**. Arbetaren och chefen kan godkänna granskningen. När alla erforderliga godkännande har slutförts ändras statusen till **Slutfört**, och inga fler ändringar kan genomföras.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

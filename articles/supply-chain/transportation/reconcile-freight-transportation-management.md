@@ -47,3 +47,6 @@ Du måste ange tidsplanen för avstämning, fakturorna och vilket transportföre
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

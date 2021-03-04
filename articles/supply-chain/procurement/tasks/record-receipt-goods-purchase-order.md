@@ -49,3 +49,6 @@ Det häravsnittet visar dig hur du registrerar inleverans av varor direkt i en i
 6. Ställ in **kvantiteten** på 4. Här kan du manuellt ange den kvantitet som har inlevererats för varje rad i ordern.  
 7. Välj **OK**. Varorna har nu registrerats som inlevererade på inköpsordern och en produktinleveransjournal har skapats som dokumentet för att återspegla detta. Du kan använda åtgärden Produktinleverans om du vill granska journalerna som skapats med inköpsordern och se vad som har levererats och när.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

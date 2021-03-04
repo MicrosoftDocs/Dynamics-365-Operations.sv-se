@@ -62,3 +62,6 @@ Avsnitten nedan hjälper dig att konfigurera handelskomponenter och onlinebutike
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

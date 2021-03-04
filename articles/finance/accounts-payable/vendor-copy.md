@@ -64,3 +64,6 @@ Du kan även kopiera leverantörer med hjälp av sökfunktionen för momsregistr
 
 1. Alternativet **Kopiera leverantör** visas. Standardvärdet för det här alternativet är **Nej**. Om du vill kopiera leverantören till den aktuella juridiska personen väljer du alternativet **Ja**.
 2. Välj **Välj**. Den nya leverantören skapas.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

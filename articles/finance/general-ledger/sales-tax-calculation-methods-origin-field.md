@@ -131,3 +131,6 @@ Dokumentet/journalen ställs in på Moms ingår i beloppen = Nej, Transaktionens
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

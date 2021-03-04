@@ -40,3 +40,6 @@ Sidan **översikt tillgångsattribut** visar en separat rad för varje tillgång
 3. Välj **OK**. En lista visar alla tillgångar som använder den valda tillgångstypen. För varje tillgång visas alla relaterade tillgångsattributtyper på samma rad.
 
 Sidan **tillgångsattributet** visar en separat rad för varje attributtyp som används på en tillgång. Öppna denna sida genom att välja **tillgångshantering** \> **förfrågningar** \> **tillgångar** \> **tillgångsattribut**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

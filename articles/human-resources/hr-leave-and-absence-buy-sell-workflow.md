@@ -81,3 +81,6 @@ Exemplen visar hur du kan skapa olika typer av arbetsflödesvillkor genom att an
 [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)<br>
 [Hantera principer för köpa och sälja tjänstledighet](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

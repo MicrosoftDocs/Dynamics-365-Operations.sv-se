@@ -88,3 +88,6 @@ Följande felmeddelande kan visas när du försöker att aktivera kartor:
 *Del i dubbelriktad skrivning - registrering av plugin-program misslyckades: \[(Det gick inte att skaffa karta över partitioner för projekt-DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea. Felet överskrider högsta antal tillåtna partitioner för mappning av DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\], ett eller flera fel uppstod.*
 
 Den aktuella gränsen när du länkar miljöer är ungefär 40 juridiska tabeller. Det här felet uppstår om du försöker aktivera mappningar och mer än 40 juridiska tabeller är länkade mellan miljöer.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

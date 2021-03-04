@@ -61,3 +61,6 @@ Kvittningen blir 100,00 och ska inkludera en betalning på 99,00 och en rabatt p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

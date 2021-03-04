@@ -78,3 +78,6 @@ Följ dessa steg för att lägga till öppettider på de utskrivna kassakvittona
 I kassakvitton ingår nu butikens öppettider. Om helgdagar inkluderades i mallen visas de på kvittot.
 
 ![Kvittoexempel](../dev-itpro/media/Storehours3.png "Kvittoexempel")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

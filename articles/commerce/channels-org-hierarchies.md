@@ -88,3 +88,6 @@ Följande bild visar en juridisk person som lagts till i hierarkistrukturen med 
 [Översikt över kanaler](channels-overview.md)
 
 [Förutsättningar för att ställa in kanaler](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

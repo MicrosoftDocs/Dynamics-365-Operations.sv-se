@@ -91,3 +91,6 @@ Om du har aktiverat funktionen **Utökad sökning av ER-formatkonfigurationer so
 - [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Ramverks-API för elektroniskt rapportering (ER)](er-apis-app73.md)
 - [Hantera livscykeln för konfiguration av elektronisk rapportering (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

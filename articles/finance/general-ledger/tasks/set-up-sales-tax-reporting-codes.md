@@ -39,3 +39,6 @@ I den här registreringen används demonstrationsföretaget DEMF.
 6. Ange en beskrivning för internt bruk i fältet **Kort beskrivning**.
 7. Klicka på **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

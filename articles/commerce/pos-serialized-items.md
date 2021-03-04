@@ -95,3 +95,6 @@ Om du vill aktivera en sådan validering måste du schemalägga följande jobb s
 [Inkommande lageråtgärder i kassan](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [Utgående lageråtgärder i kassan](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

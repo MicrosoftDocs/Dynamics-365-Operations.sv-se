@@ -71,3 +71,6 @@ Uppgraderingsprocessen flyttar din befintliga inställning och alla befintliga t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

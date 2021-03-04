@@ -83,3 +83,6 @@ Det finns två alternativ som är relaterade till reservationer på sidan **Para
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Lagerreservationpolicyer på sidan för produktparametrar
 
 Värdet i fältet **Reservation** i fliken **Allmänt** på sidan **Produktionsparametrar** avgör den förvalda punkten i produktionsprocessen då lager bör reserveras. Till exempel kan lager reserveras när arbete schemaläggs eller när jobbet startas.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

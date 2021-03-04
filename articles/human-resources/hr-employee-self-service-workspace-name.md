@@ -45,3 +45,6 @@ Om du har frivilliga eller andra icke-anställda, kanske du vill ändra namnet p
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Översikt över självbetjäning för medarbetare och chef](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

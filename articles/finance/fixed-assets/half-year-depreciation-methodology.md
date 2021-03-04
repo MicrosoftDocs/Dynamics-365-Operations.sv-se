@@ -42,3 +42,6 @@ Det första året i tjänst kommer att ingå i december 2020, vilket innebär at
    [![Avskrivningsschema för halvårs avskrivningspraxis](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 De utökade avskrivningsperioder som läggs till med halvårspraxis ger en mer korrekt fördelning av avskrivningen. Den sex månaders praxis representerar avskrivningskostnaderna mer jämt, vilket är användbart för rapportering av resultaträkningen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

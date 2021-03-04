@@ -45,3 +45,6 @@ ms.locfileid: "4683148"
 - [Arbetsyta för leverantörsbetalningar](../../../finance/accounts-payable/Vendor-payments-workspace.md)
 - [Resultat för lagerställe Power BI-innehåll](warehouse-power-bi-content.md)
 - [Personalmätningar Power BI-innehåll](workforce-analysis-power-bi-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

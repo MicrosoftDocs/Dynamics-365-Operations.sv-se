@@ -243,3 +243,6 @@ Baslinjen läggs till i formatet **format för att lära dig ER-baslinjer**.
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Konfigurera ramverket för elektronisk rapportering (ER)](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

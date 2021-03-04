@@ -39,3 +39,5 @@ Chefer kan hantera ledighetsansökningar från arbetsytan **Självbetjäning fö
 
 - [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)
 - [Skapa en plan för tjänstledighet och frånvaro](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ I det här avsnittet beskrivs hur du använder funktioner i modulerna servicehan
 [Ta fram och upprätta avtal – översikt](service-agreements.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

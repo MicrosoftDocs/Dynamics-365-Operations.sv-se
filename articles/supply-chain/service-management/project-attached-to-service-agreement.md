@@ -37,3 +37,6 @@ Du registrerar och bokför alla serviceordertransaktioner via det projekt som du
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

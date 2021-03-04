@@ -84,3 +84,6 @@ Du kan konfigurera orsakskoder så att dessa krävs för ändringar av en anläg
 Slutligen, på fliken **Number sequences**, anger du nummerserier för anläggningstillgångar. **Anläggningstillgångens** nummerserie kan åsidosättas av **Anläggningstillgångsgruppens** nummerserie, om denna har angetts.
 
 Mer information finns i [Skapa en anläggningstillgång](tasks/create-fixed-asset.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -94,3 +94,5 @@ Inkludera inte personuppgifter (all information som kan identifiera dig) i feedb
 
 - [Nyheter i Personal](hr-admin-whats-new.md)
 - [Utgivningsplan för Dynamics 365 och Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

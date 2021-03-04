@@ -53,3 +53,6 @@ Följ dessa steg för att lägga till tillverkade artiklar under den låsta peri
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

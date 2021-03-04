@@ -171,3 +171,6 @@ Redigeraren stöds för närvarande i följande webbläsare:
 - [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 - [Monaco-redigerare](https://microsoft.github.io/monaco-editor)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

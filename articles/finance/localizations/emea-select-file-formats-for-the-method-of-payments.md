@@ -55,3 +55,6 @@ Gör följande om du vill välja filformat som baseras på X++ -kod.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

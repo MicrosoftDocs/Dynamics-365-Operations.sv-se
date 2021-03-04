@@ -68,3 +68,6 @@ Du kan exportera listor över medarbetare som har skapats med något av filtreri
 Om du vill rapportera omfattade personer eftersom du som arbetsgivare tillhandahåller egenförsäkrade täckning, kan du även visa alla beroende personer som täcks av förmånsplaner markerade som **ACA-pliktiga** genom att välja åtgärden Visa beroendetäckning via fliken i åtgärdsfönstret.
 
 **Obs!** Bara förmåner vars plan har markerats som **ACA-pliktig** visas i frågefönstret.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

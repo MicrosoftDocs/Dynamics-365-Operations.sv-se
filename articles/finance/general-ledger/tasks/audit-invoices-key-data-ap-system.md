@@ -62,3 +62,6 @@ I den här proceduren används demonstrationsföretaget USMF. Leverantörsreskon
 9. Klicka på **Granska** i åtgärdsrutan.
 10. Klicka på **Matcha detaljer**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

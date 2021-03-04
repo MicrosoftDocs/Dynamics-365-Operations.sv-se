@@ -55,3 +55,6 @@ Det nya fältet och data för det ska nu vara tillgängliga för redigering i Ex
 [Redigera ekonomiska dimensioner för butikstransaktioner](edit-financial-dim.md)
 
 [Skapa en Excel-arbetsbok för att redigera butikstransaktioner](create-excel-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

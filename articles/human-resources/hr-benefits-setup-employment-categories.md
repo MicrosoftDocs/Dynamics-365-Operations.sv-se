@@ -36,3 +36,6 @@ Ställ in medarbetarkategorier i Dynamics 365 Human Resources för att stämma �
 3. Ange värden för **arbetartyp**, **medarbetarkategori** och **beskrivning**.
 
 4. Välj **Spara**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

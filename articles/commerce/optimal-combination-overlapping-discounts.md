@@ -84,3 +84,6 @@ För att lösa problemet med ett exponentiellt ökande antal kombinationer som m
 ![Formel för beräkning av marginalvärde](./media/overlapping-discount-combo-06.jpg)
 
 När marginalvärdet av varje rabatt i en delad uppsättning produkter beräknas, tillämpas rabatterna på de delade produkterna i ordning och fullständigt, från högsta marginalvärde till lägsta marginalvärde. För den här metoden jämförs inte alla resterande rabattmöjligheter varje gång när en enda instans av en rabatt har tillämpats. I stället jämförs överlappande rabatter en gång och tillämpas sedan i ordning. Inga ytterligare jämförelser görs. Du kan konfigurera tröskeln att byta till marginalvärdesmetoden på fliken **Rabatt** på sidan **Handelsparametrar**. Den godtagbar tiden att beräkna den totala rabatten varierar mellan butiksbranscher. Tiden ligger dock vanligtvis mellan tiotals millisekunder och en sekund.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

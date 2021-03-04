@@ -63,3 +63,6 @@ Innan en helt avskriven tillgång delas upp, ska tillgångens bokningsstatus än
     - En anskaffningstransaktion skapas för den nya tillgången för samma belopp.
 
 4. Vald **bokföring**
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

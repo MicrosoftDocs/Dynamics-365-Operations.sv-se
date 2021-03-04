@@ -56,3 +56,6 @@ Vissa typer av produktionsarbete kan gälla för projekttidsuppskattningar och r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Sidan Workbench för lastuppbyggnad använder kundadresser och leveransdatum fr�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

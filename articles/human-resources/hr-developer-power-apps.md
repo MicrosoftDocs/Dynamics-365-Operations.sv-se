@@ -60,3 +60,5 @@ För att hämta mallen **Power Automate – ansluta och köra SQL** gå till [Po
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Appen Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

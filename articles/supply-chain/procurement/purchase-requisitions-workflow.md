@@ -121,3 +121,6 @@ Om du vill använda en av omkostnadgranskarna, som ställs in i ett arbetsflöde
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

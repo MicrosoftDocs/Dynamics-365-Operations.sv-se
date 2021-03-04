@@ -73,3 +73,6 @@ I det här avsnittet beskrivs hur du ställer in ett transportföretag och defin
 9. I fältet **Transporttidsmotor** väljer du ett alternativ i den nedrullningsbara menyn.
 10. Välj **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

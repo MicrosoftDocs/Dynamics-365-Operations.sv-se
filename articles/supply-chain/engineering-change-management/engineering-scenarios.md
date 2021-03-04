@@ -411,3 +411,6 @@ Produkten kan nu frisläppas igen till *USMF*-företaget och skickas till kunden
 1. Välj varje företag som du vill frisläppa produkter till.
 1. Välj **OK** för att stänga dialogrutan **Versioner** och returnera till ändringsorder.
 1. På åtgärdsfönstret, på fliken **Ändringsorder** i gruppen **Produktfrisläppning**, välj **Process** för att frisläppa de berörda produkterna till de utvalda företagen. Du kan också välja **Frisläpp produktstruktur** för att starta frisläppningsprocessen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

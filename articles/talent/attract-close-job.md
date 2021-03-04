@@ -62,3 +62,6 @@ Du kan stänga ett jobb som **befattningen har tillsatts** efter att minst en po
    > Du kan endast stänga ett jobb som **befattningen har tillsatts** när minst en potentiell kandidat har slutfört erbjudandefasen. Om jobbansökan inte har **Erbjudandet har accepterats** vald eller om ansökan inte visar statusen **Accepterad** i erbjudandet visas inte alternativet **Befattningen har tillsatts** i listrutan **Orsak**.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

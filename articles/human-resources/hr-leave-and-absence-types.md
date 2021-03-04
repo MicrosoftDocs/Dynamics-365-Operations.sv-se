@@ -82,3 +82,6 @@ Tjänstledighetstyper i Dynamics 365 Human Resources definierar olika typer av f
 - [Skapa en arbetstidskalender](hr-leave-and-absence-working-time-calendar.md)
 - [Skjut upp tjänstledighet](hr-leave-and-absence-suspend-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

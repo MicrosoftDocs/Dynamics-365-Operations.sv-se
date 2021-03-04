@@ -381,3 +381,6 @@ När den manuella uppgiften tilldelas en användare, måste användaren vidta å
 5. Markera kryssrutan **Delegera** om du vill att användaren ska kunna tilldela uppgiften till en annan användare.
 6. Markera kryssrutan **Överlåt** om du vill att användaren ska kunna överlåta uppgiften till en annan användare i arbetsuppgiftskön.
 7. Markera kryssrutan **Frisläpp** om du vill att användaren ska kunna överlåta uppgiften till arbetsuppgiftskön. En annan användare kan sedan slutföra uppgiften.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

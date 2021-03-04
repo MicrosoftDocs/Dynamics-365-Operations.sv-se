@@ -84,3 +84,6 @@ Om du vill lägga till en flikmodul på en sida och ställa in de obligatoriska 
 [Dragspelsmodul](add-accordion.md)
 
 [Textblockmodul](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -104,3 +104,6 @@ Baserat på de fält som du valt att inkludera i diagrammet visar varje nod den 
 **Ytterligare alternativ**
 
 I Personal kanske du också använder arbetsytan **Personer** för att visa hierarkirelaterad information.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Ett garantiavtal kan innehålla flera avtalsrader för att täcka garantin för 
     4. I fältet **Procent** anger du täckningsgraden för garantiraden. Procentsatsen anger hur mycket som företaget täcker.
 
 ![Sidan Garanti](media/01-warranty.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

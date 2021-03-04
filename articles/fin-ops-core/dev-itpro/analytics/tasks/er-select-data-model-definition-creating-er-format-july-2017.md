@@ -98,3 +98,6 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
     * Observera att det nu bara finns ett rotobjekt tillgängligt att mappa till programmets datakällor. När minst en modellmappning har tagits i bruk kan bara modellens rotobjekt som är mappade till programmet datakällor väljas som modelldefinition när ER-formatet läggs till.   
 5. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

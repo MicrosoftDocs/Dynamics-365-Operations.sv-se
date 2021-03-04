@@ -205,3 +205,6 @@ Följande bild visar hur Logic Apps Designer ser ut när alla steg i logikappen 
 I den här självstudien lärde du dig att använda en logikapp för att exportera data från personal och spara exporterade data till en OneDrive för företag-mapp. Du kan ändra stegen i den här självstudien så att de passar dina affärsbehov.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

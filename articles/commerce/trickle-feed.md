@@ -54,3 +54,6 @@ Med indroppningsbaserat orderskapande som introducerades i Retail version 10.0.5
 > Menyalternativen **Retail och Commerce > Retail och Commerce IT > Kassabokföring > Beräkna utdrag i batch** och **Retail och Commerce >Retail och Commerce IT > Kassabokföring > Bokför utdrag i batch** tas bort i den nya funktionen.
 
 Alternativt kan transaktions- och bokslutstyper skapas manuellt. Gå till **Retail och Commerce > Kanaler > Butiker** och klicka på **Utdrag**. Klicka på **Ny** och välj sedan den typ av utdrag som du vill skapa. Fält på sidan **Utdrag** och åtgärder under **Utdragsgrupper** på sidan visar relevanta data och åtgärder baserade på den valda utdragstypen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

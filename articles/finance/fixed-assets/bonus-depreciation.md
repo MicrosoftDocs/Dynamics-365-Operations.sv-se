@@ -65,3 +65,6 @@ Bonusavskrivning anges i procent eller som ett fast belopp. När du bokför avsk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

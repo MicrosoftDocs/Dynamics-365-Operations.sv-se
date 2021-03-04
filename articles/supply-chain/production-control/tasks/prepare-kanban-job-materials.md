@@ -42,3 +42,6 @@ Den här uppgiften fokuseras på att förbereda ett kanban-processjobb när alla
 6. Klicka på Förbered.
     * Förberedelseprocessen är nu slutförd. Den markerade kryssrutan för alla rader i plocklistan anger att tillförselstatusen plockas.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

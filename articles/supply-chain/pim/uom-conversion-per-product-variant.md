@@ -107,3 +107,6 @@ Om du vill exportera enhetskonverteringar till Excel går du till sidan **Enhets
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Hantera måttenhet](tasks/manage-unit-measure.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

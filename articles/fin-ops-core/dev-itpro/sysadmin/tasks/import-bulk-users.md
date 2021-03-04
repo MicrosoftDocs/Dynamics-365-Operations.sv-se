@@ -58,3 +58,6 @@ När importen är klar måste användare tilldelas roller.
 ## <a name="run-in-a-sandbox-environment"></a>Kör i ett begränsat läge
 1. Välj **Batchimport**.
 2. Välj **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Om du anger `SPLIT("abc" , 1)` som datakälla **DS** returnerar uttrycket `STRIN
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Lista över funktioner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

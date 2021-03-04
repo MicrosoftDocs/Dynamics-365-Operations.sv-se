@@ -94,3 +94,6 @@ Ett batchjobb rensar regelbundet poster i referensregistret för enheter som int
 1. I åtgärdsfönstret, välj **Rensa klientkonfigurationer**.
 1. I dialogrutan **Rensa klientkonfigurationer** ange fältet **Antal dagar** av inaktivitet (före idag). Du tar bort alla konfigurationer och inloggningsposter för enheter som inte har varit aktiva under den tiden.
 1. Välj **OK** om du vill rensa de relevanta konfigurationerna, baserat på **Antal dagar**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

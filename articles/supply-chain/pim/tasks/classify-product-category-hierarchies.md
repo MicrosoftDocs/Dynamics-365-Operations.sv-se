@@ -43,3 +43,6 @@ I det här avsnittet beskrivs hur du klassificerar en produkt med hjälp av kate
 11. I fältet **Kategori**, ange eller välj ett värde.
 12. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

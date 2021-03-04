@@ -57,3 +57,6 @@ Analysen av den tid som används för att bearbeta arbetsposter kan hjälpa till
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ I det här avsnittet beskrivs de journaltyper där du kan ställa in redovisning
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

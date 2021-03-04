@@ -48,3 +48,6 @@ Om du vill använda den här funktionen aktiverar du **anpassade länkar i Själ
 ## <a name="see-also"></a>Se även
 
 [Översikt över självbetjäning för medarbetare och chef](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ När du automatiskt skapar serviceorder kan du använda serviceuppgifter som ett
 2. På fliken **inställningar** välj **per serviceuppgift** i fältet för **kombinera serviceorder**.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

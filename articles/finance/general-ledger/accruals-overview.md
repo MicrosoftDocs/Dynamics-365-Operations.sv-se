@@ -46,3 +46,6 @@ När du anger en journal, kan du klicka på **Periodiseringar** på menyn **Funk
 
 
 Mer information finns i [Skapa periodiseringsscheman](tasks/create-accrual-schemes.md) och [Skapa periodiseringstransaktioner](tasks/create-ledger-accrual-transactions.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

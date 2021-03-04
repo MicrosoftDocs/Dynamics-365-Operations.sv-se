@@ -43,3 +43,6 @@ Följande tabell visar Power BI-innehållet som rapporten kopieras från och de 
 | [Försäljnings- och lönsamhet](sales-profitability-performance-content-pack.md) | <ul><li>Intäkter per region</li><li>Bästa 10 kunderna per intäkt</li><li>Bästa 10 produkterna per intäkt</li></ul> |
 | [Hantering av kredit och inkasso](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Förfallna kunder</li><li>Kundens över kreditgräns</li><li>Åldersfördelade saldon</li></ul> |
 | [Inköps- och utgiftsanalys](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Inköp per månad/dag</li><li>Främsta 10 leverantörerna per inköp</li><li>Främsta 10 produkterna per inköp</li></ul> |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

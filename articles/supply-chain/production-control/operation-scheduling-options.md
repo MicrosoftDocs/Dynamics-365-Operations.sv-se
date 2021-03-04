@@ -134,3 +134,6 @@ Du kan spara aktuella värden som förvalda värden. Det finns två alternativ:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

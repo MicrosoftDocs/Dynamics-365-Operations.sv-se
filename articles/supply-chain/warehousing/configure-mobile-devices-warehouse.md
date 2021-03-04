@@ -439,3 +439,6 @@ I tabellen nedan beskrivs de olika arbetstyperna som du kan anv√§nda arbetsbekr√
 [Lagerstatus](../inventory/inventory-statuses.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

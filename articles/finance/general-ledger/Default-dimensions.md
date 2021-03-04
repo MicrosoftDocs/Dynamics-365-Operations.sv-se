@@ -127,3 +127,6 @@ Några av följande resurser hänvisar till en tidigare version av vår programv
 [Dimension som används som standard i redovisningsfördelningar](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
 [Standardvärden i dimensionsramverket](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

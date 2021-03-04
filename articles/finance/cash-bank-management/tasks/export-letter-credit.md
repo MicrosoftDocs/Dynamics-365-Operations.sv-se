@@ -140,3 +140,6 @@ Kör procedurerna Ställ in bankkreditlimiter och bokföringsprofiler, och Rembu
 3. Klicka på länken på den valda raden i listan.
     * Kontrollera att Försändelsens status = Betalning mottagen och att Saldobelopp = 0,00.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

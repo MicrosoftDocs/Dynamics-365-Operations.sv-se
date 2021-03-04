@@ -144,3 +144,6 @@ Följande fält läggs till på menyalternativet för mobil enhet när **justeri
 - Orsakskod för standardinventering
 - Visa orsakskod för inventering
 - Redigera orsakskod för inventering
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

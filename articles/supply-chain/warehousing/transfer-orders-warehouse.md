@@ -53,3 +53,6 @@ Du måste också ange ledtiden för transport mellan lagerställen på sidan **T
 2. I fältet **Mottagningsplats**, välj **Lagerställe**.
 3. Välj **speditionslager**, **mottagande lager** och **transportdagar**. 
 4. (Valfritt) Du kan också ange transporttiden beroende på leveranssätt, under fliken **Transportdagar per leveranssätt**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

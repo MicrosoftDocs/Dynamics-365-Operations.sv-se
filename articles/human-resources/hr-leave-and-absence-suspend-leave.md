@@ -49,3 +49,6 @@ Om periodiseringen bearbetas medan medarbetarens tjänstledighet är uppskjuten,
 - [Konfigurera typer av tjänstledighet och frånvaro](hr-leave-and-absence-types.md)
 - [Periodisera planer för tjänstledighet och frånvaro](hr-leave-and-absence-accrue.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

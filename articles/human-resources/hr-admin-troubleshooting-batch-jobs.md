@@ -65,3 +65,6 @@ Följande batchjobb ska köras under nätter eller efter timmar. Kontrollera tid
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Optimera prestanda med automatiska rensningsuppgifter](hr-admin-troubleshooting-batch-history.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -109,3 +109,6 @@ Den här proceduren går igenom hur du kör ett återkommande batchjobb om du vi
 - RetailTransactionMarkupTrans
 - RetailTransactionPaymentTrans
 - RetailTransactionAttributeTrans
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

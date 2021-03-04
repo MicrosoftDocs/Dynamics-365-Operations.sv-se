@@ -52,3 +52,6 @@ Systemet avgör vilken gren som ska användas genom att utvärdera det skickade 
     2. Markera en post i området **Validera villkor** i formuläret.
     3. Klicka på **Ja**. Systemet utvärderar posten i syfte att avgöra om den uppfyller villkoren som du angett.
     4. Klicka på **OK** eller **Avbryt** för att återgå till formuläret **Egenskaper**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

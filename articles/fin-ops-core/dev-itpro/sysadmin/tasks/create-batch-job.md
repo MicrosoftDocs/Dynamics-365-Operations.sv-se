@@ -54,3 +54,6 @@ Ett batchjobb är en grupp med uppgifter som skickas till en AOS-instans (Applic
     - **Källskatte**: Ställ in batchjobbet som **källskatt** så att det inte dras från batchjobbets tidsplan. Motsvarar *stopp*.
     - **Väntar**: Ställ in batchjobbet som **väntar** så att det väntar på att få hämtas av batchjobbets tidsplan. Motsvarar *gå*.
 5. Klicka på **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

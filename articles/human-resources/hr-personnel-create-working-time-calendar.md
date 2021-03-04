@@ -43,3 +43,6 @@ Kalendrar beskriver kapaciteten och arbetstider för verksamhetsresurser. Det h�
 12. Välj **OK**.
 13. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

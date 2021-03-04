@@ -208,3 +208,6 @@ I följande scenario används lagerställeappen på en mobil enhet för att gör
 
     > [!NOTE]
    > Systemet skapar ett arbets-ID för varje förflyttning som måste slutföras. Om du anger en plats som redan innehåller lager, skapas bara ett arbets-ID. Om du anger en ny plats skapas två arbets-ID:n.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

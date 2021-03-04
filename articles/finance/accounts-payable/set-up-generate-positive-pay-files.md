@@ -165,3 +165,6 @@ Om du måste ändra en betalningskontrollfil kan du sedan återkalla den. På si
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

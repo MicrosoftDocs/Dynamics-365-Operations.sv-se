@@ -144,3 +144,6 @@ Baserat på fältprioriteringen i lagerställets program som anges i tabellen ov
 --------
 
 [Installera och konfigurera lagerställeappen - översikt](install-configure-warehousing-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

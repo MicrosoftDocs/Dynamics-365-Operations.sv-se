@@ -139,3 +139,6 @@ Vi ska ta bort de skapade konfigurationerna från systemet och hämta tillbaka d
 26. Expandera Sample data model i trädet.
     * Observera att modellkonfigurationen Exempelmappning har hämtats tillsammans med den valda datamodellkonfigurationen. De två filerna hämtas tillsammans eftersom Exempelmappning har definierats till att implementera den valda datamodellen, och eftersom den gäller för appen. Konfigurationen Exempelmappning (alternative) har inte hämtats eftersom villkoret för programversionen inte är uppfyllt.   
     * Om du loggar in till Finance and Operations, registrerar samma leverantör, öppnar LCS-projektet och hämtar samma datamodellkonfiguration, hämtas konfigurationen Exempelmappning (alternativ) medan konfigurationen Exempelmappning hoppas över.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

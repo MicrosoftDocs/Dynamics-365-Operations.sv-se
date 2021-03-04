@@ -207,3 +207,6 @@ Innan du kan ställa in systemstyrd klusterplockning måste du skapa kvalificera
 1. Det sista steget på den mobila enheten är att **placera** klustret till den sista platsen. Välj **OK**
     - När den här placeringsoperationen bekräftas stängs klustret och bryts, baserat på det värde som du anger för fältet **Bryt kluster vid** i klusterprofilen. Arbets-ID:n är också stängda.
 1. Ett meddelande om att "klustret har slutförts" visas på den mobila enheten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

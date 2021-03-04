@@ -47,3 +47,6 @@ När du ställer in en servicefas, kan du skapa flera alternativ, eller förgren
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

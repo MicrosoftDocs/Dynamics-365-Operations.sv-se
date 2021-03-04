@@ -45,3 +45,6 @@ Om inget tidsfönster har angetts för en serviceavtalsrad måste serviceorderra
 
 [Skapa tidsfönster](create-time-windows.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

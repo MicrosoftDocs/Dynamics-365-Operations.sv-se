@@ -113,3 +113,5 @@ Filen hämta är en zip-fil som innehåller:
 ## <a name="see-also"></a>Se även
 
 [Ta Dynamics 365 Talent: Attract och Dynamics 365 Talent: Onboard-appar ur bruk](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

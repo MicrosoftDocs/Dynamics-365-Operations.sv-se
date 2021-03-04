@@ -65,3 +65,6 @@ Följande procedur beskriver relationen mellan tillgångar, arbetsorder, jobbpro
 
 7. Om du vill visa en översikt över de projekt som är kopplade till en anläggningstillgång **anläggningstillgångar** > **anläggningstillgångar** > **anläggningstillgångar** och sedan i fältet **anläggningstillgångsnummer**, välj länken för anläggningstillgången för att öppna detaljvyn. Expandera fönstret **relaterad information** till höger på sidan och välj snabbfliken **associerade projekt**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

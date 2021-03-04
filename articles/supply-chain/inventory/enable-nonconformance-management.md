@@ -54,3 +54,6 @@ Gör så här om du vill aktivera avvikelsehantering:
 [Kvalitetshanteringsprocesser](quality-management-processes.md)
 
 [Ställ in förutsättningar för avvikelsehantering](tasks/set-up-prerequisites-nonconformance-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

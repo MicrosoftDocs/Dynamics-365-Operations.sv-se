@@ -53,3 +53,6 @@ Den här artikeln beskriver hur du ställer in och skapar en modell för produkt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

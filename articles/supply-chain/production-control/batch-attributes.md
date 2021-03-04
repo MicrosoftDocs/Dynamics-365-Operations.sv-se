@@ -53,3 +53,6 @@ Du kan söka i batchattribut när du gör batchreservationer för en försäljni
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

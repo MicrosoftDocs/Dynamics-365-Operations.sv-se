@@ -211,3 +211,6 @@ Om några rader i kundentiteten har värden i fälten **ContactPersonID** och **
     Den inledande synkroniseringen av raderna har nu slutförts.
 
 8. I Finance and Operations-appen, aktivera tillbaka ändringsspårning på entiteten **Kunder V3**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

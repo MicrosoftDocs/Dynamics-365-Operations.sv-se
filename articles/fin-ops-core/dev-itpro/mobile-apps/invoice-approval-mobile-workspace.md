@@ -86,3 +86,6 @@ Hämta och installera mobilappen Finance and Operations.
 7.  Välj **Bilagor** för att visa noteringar eller filer som är kopplade till fakturan.
 8.  På sidan **Fakturainformation** väljer du lämplig arbetsflödesåtgärd för att slutföra din granskningsprocess.
 9.  Välj **Klar**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

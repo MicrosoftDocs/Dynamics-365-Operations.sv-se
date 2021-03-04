@@ -44,3 +44,6 @@ Ytterligare knappar på **Kostnadskategorier**-sidan kan ge dig åtkomst till pr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Varje förekomst kan ändras utan att påverka andra förekomster som har defini
 ## <a name="developer-documentation"></a>Dokumentation för utvecklare
 
 Med processens automatiseringsramverk kan utvecklare utöka processens automatiseringsramverk. [Ramverket för processautomatisering](../process-automation/process-automation-framework.md) dokumentationen får du information om hur du kan skapa anpassade processer som du behöver köra av den batchservern som är schemalagd med guiden bearbeta automatisering och visas automatiskt i kalendervyn.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

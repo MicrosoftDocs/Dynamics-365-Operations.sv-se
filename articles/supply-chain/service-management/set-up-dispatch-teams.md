@@ -54,3 +54,6 @@ I det här avsnittet beskrivs hur du skapar ett serviceteam. När du har skapat 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

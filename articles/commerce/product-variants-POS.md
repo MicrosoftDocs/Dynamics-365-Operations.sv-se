@@ -115,3 +115,6 @@ Följande tabell visar mer information om ytterligare åtgärder som är tillgä
 | Tillgänglighet         | Visa ATP-information om den valda variantkombinationen för den valda platsen. |
 | Visa alla platser   | Växla till standardinställda lagersökningsvyn och markera lagertillgänglighetsinformation för artikelvarianten i alla butiker i butikslokaliserargruppen samt i distributionscenter av typen **Standard/standard**. |
 | Visa produktinformation | Omdirigera användaren till sidan **produktinformation** med den associerade produktmallen. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

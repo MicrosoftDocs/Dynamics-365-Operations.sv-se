@@ -87,3 +87,6 @@ Korrigeringen för det här felet beror på orsaken till felet:
 
 + Om mappningen har beroende mappningar ska du se till att aktivera de beroende mappningarna för den här tabellmappningen.
 + Mappningen kanske saknar käll- eller målfält. Om ett fält i Finance and Operations-appen saknas följer du stegen i avsnittet [Entitetsfält som saknas problem i kartor](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Om ett fält i Dataverse saknas klickar du på knappen **Uppdatera tabeller** på mappningen så att fälten automatiskt fylls i igen i mappningen.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

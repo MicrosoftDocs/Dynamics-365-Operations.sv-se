@@ -276,3 +276,6 @@ Om en användare inte vidtar åtgärder för ett dokument inom den tilldelade ti
 
 5. Upprepa steg 3 och 4 för varje användare som ska läggas till i eskaleringsvägen. Du kan ändra alla användarnas ordningsföljd.
 6. Om användarna i eskaleringsvägen inte svarar inom den tillåtna tidsperioden, kommer automatiska åtgärder att vidtas för dokumentet. Om du vill ange den åtgärd som systemet ska vidta, välj då raden **Åtgärd** och sedan en åtgärd i fliken **Slutåtgärd**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

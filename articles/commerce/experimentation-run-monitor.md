@@ -53,3 +53,6 @@ Om du av någon anledning skulle behöva ändra varianterna följer du stegen ne
 
 ## <a name="next-step"></a>Gå vidare
 [Höja en variant och slutföra ett experiment](experimentation-review-complete.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

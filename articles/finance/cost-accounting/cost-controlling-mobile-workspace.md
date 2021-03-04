@@ -145,3 +145,6 @@ Hämta och installera mobilappen Finance and Operations.
 11. Visa prestandan för enskilda kostnadselement.
 12. Du kan också söka efter specifika kostnadselement.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

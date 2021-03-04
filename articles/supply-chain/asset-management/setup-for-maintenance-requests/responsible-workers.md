@@ -54,3 +54,6 @@ Innan du kan ställa in ansvariga underhållsarbetare måste du ställa in arbet
 Följande illustration visar ett exempel på sidan **Ansvariga underhållsarbetare**.
 
 ![Sidan Ansvariga underhållsarbetare](media/08-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

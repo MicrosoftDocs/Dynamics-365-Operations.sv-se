@@ -111,3 +111,6 @@ Arnie ändrar värdet i fältet **Använd kassarabatt** tillbaka till **Normal**
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

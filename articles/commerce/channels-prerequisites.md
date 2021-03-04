@@ -86,3 +86,6 @@ Innan du kan skapa en Dynamics 365 Commerce-kanal måste flera nödvändiga uppg
 [Ställa in en butikskanal](channel-setup-retail.md)
     
 [Ställ in en onlinekanal](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

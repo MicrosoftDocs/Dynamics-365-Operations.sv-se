@@ -854,3 +854,6 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
     - Överföringsorder och plockning av råmaterial
 
 - Behållarens konsolideringsregel för paketering av direktivenhet har begränsningar. För orderallokerade reservationer rekommenderar vi att du inte använder uppbyggnadsmallar för behållare där fältet **Packa efter enhet för direktiv** är aktiverad. I den aktuella designen används inte platsdirektiv när lagerarbete skapas. Det innebär att endast den minsta enheten i enhetssekvensgruppen (lagerenheten) används under påfyllnadssteget skapande av behållare.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

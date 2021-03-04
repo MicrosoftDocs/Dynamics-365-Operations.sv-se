@@ -68,3 +68,6 @@ Alla transaktionstyper för anläggningstillgångar kan bokföras på sidan Allm
 Avskrivningsperiodernas återstående värde av anläggningstillgången uppdateras inte när en journalrad för avskrivningstransaktionstyp skapas manuellt eller importeras via en datatabell. Detta värde uppdateras när avskrivningsförslagsprocessen används till att skapa journalraden.
 
 Mer information finns i [Integrering av anläggningstillgångar](fixed-asset-integration.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

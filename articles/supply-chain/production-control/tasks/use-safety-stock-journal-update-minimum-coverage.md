@@ -66,3 +66,6 @@ I den här proceduren visas hur du beräknar minsta disponeringsförslag som bas
 5. Klicka på Plan i **åtgärdsfönstret**.
 6. Klicka på **Artikeldisponering**. Observera att den **minsta kvantiteten** har uppdaterats med den nya minsta kvantiteten från säkerhetslagerjournalen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

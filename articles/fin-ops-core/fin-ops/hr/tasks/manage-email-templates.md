@@ -47,3 +47,6 @@ Du kan överföra information från organisationens databas till bokmärkena i e
 8. Fortsätt skriva ditt e-postmeddelande och infoga bokmärkesfälten där de behövs.
 9. Välj **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

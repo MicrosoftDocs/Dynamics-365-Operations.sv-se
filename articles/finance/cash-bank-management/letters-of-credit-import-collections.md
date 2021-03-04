@@ -54,3 +54,6 @@ En importinkasso garanterar att säljaren får betalt när köparen får leveran
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

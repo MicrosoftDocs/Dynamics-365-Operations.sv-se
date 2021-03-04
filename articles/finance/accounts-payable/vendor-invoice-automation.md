@@ -232,3 +232,6 @@ Följande roller ger skrivskyddad åtkomst till visningsprogrammet för bilagor 
 + **Ansvarig för leverantörsreskontra** och **Chef för leverantörsreskontra** – underhålla leverantörsfakturor har tilldelats dessa roller.
 
 Som standard, om användarrollen ger redigeringsrättigheter på valfri sida, har användaren även redigeringsrättigheter i visningsprogrammet för bilagor för att markera, blockera och anteckna åtgärder. Om scenarier där en viss roll bör ha redigeringsrättigheter på sidan men inte i visningsprogrammet för bilagor kan behörighet i ovanstående lista användas i detta användningsfall.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

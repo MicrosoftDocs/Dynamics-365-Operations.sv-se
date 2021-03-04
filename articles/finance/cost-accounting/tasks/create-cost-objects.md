@@ -51,3 +51,6 @@ I den här proceduren visas hur du skapar kostnadsobjekt, genom att importera de
 ## <a name="view-the-imported-cost-centers"></a>Visa de importerade kostnadsställena
 1. Klicka på View dimension members.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

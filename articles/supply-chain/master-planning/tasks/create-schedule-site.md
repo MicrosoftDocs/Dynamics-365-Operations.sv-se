@@ -56,3 +56,6 @@ I den här proceduren visas hur du tidsplanerar tillverkningsorder som ännu int
 4. Klicka på Material.
     * På den här sidan kan du se den uppskattade materialförbrukningen för operationerna i produktionsordern och det aktuella tillgängliga lagret.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Det här avsnittet innehåller information om hur du ställer in ett enkelt plat
 4. I fältet **Kriterier** skriver du ett värde.
 5. Välj **OK**. Du kan fortsätta att lägga till direktivrader och direktivåtgärder tills du har täckt alla möjliga scenarier i ditt lagerställe.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

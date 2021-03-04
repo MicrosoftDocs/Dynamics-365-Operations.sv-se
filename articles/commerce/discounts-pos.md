@@ -69,3 +69,6 @@ Följande bild visar den logik som används när concurrency-läge för rabatt �
 Följande bild visar den logik som används när concurrency-läge för rabatt är inställd på **bästa pris endast inom prioritet, alltid sammansatt över prioritet**.
 
 ![Logik för bästa pris endast inom prioritet, alltid sammansatt över prioritet](./media/Model_2.png "Logik för bästa pris endast inom prioritet, alltid sammansatt över prioritet").
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

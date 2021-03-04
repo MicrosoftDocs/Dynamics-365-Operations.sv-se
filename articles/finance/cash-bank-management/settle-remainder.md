@@ -70,3 +70,6 @@ Om du vill kvitta rest gör du följande:
 7)  Du kan också välja att skapa en betalningsjournal med kvittning rest eller bara bokföra dem utan en journal. Välj **Ja** för **Redigera i journal** för att skapa en betalningsjournal. Du kommer att kunna redigera den betalningsjournal som du skapar.
 8)  Klicka på **Kvitta rest**. Om du vill skapa en journal ändras knappen till **Skapa journal**. Klicka på **Skapa journal** istället
 9)  Om du har skapat en betalningsjournal kan sidan öppnas när du klickar på **Kvitta rest**. En journalrad läggs till journalen med kvitta återstående belopp som beloppet och kontot för kvittning av rest som motkonto. Om du har lagt till en kund eller leverantör så att du kan flytta kvittningsbeloppet till en annan kund eller leverantör, läggs ytterligare en rad till i journalen för att flytta kvittningsbeloppet till kunden eller leverantören.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

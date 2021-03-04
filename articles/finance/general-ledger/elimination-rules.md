@@ -155,3 +155,6 @@ Välj det företag som utgör grunden för den konsoliderade datan, och välj se
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

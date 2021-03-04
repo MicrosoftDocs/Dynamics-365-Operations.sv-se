@@ -39,3 +39,6 @@ Innan du kan använda navkonsolidering måste du aktivera alternativet **Transpo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

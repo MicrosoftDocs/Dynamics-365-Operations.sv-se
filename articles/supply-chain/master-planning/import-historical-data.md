@@ -59,3 +59,6 @@ När du har importerat efterfrågehistoriken kan du skapa en efterfrågeprognos.
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

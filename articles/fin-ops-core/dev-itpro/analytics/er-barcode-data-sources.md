@@ -303,3 +303,6 @@ När datakällan **streckkod** används för att producera streckkoder beror det
 - [Destinationer för elektronisk rapportering](electronic-reporting-destinations.md)
 - [Formelspråk i elektronisk rapportering](er-formula-language.md)
 - [Funktionen NUMBERFORMAT](er-functions-text-numberformat.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

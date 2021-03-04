@@ -137,3 +137,6 @@ Dynamics 365 Finance skriver inte ut formuläret 1096 Annual Summary and Transmi
 En ny funktion för den offentliga sektorn, **Uppdatera 1099-information efter huvudkonto**, har lagts till och du kan aktivera den i arbetsytan för **funktionshantering**. Med hjälp av den här funktionen kan du associera 1099-värdena för en leverantör med huvudkontot i redovisningsfördelningen, i stället för standardkontot för leverantörsposten.
 
 Mer information finns i [Ange leverantörer för 1099-rapportering](../localizations/noam-usa-set-up-vndrs-1099-rprtg.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

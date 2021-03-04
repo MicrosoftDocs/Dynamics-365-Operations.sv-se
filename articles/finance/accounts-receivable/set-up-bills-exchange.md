@@ -86,3 +86,6 @@ På sidan **Kunder**, för varje kund som har avtalat att betala via en växel, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

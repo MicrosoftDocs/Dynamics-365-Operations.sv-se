@@ -96,3 +96,6 @@ I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dy
 ### <a name="videos"></a>Videor
 
 Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen på YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ). 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

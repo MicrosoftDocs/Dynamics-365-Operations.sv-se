@@ -57,3 +57,6 @@ I **Produktionkontrollparametrar** kan du använda fältet **Redovisningsbokför
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

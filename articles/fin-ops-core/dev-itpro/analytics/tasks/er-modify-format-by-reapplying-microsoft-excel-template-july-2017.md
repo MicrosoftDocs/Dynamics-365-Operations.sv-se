@@ -83,3 +83,6 @@ Den här proceduren beskriver hur du ändrar formatkonfigurationen i en elektron
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Använd den ändrade utkastversionen av ER-formatet för bearbetning av betalningsplansjournal
 
 Granska det skapade kalkylbladet, inklusive den nya detaljen på betalningsraderna – betalningsdatum.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

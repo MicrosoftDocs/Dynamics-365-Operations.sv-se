@@ -53,3 +53,6 @@ Gör på följande sätt när du vill lägga till och konfigurera förgreningarn
     > Ordningen för förgreningarna är oviktig eftersom alla förgreningar i en parallell aktivitet körs samtidigt.
 
 3. Se [Konfigurera en parallella grenar i ett arbetsflöde](configure-parallel-branch-workflow.md) för att konfigurera respektive förgrening.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -162,3 +162,6 @@ Flera datatabeller har lagts till för att aktivera snabb implementering av budg
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

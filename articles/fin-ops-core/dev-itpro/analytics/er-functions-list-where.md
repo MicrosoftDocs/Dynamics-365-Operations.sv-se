@@ -69,3 +69,6 @@ Om du anger datakällans **DS** för typen *Beräknat fält* och den innehåller
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Lista över funktioner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

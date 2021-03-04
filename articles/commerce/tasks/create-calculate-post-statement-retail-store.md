@@ -48,3 +48,6 @@ Det här avsnittet beskriver de manuella stegen för att skapa, beräkna och bok
 12. På startsidan väljer du **butiksekonomi**.
 13. Välj fliken **Bokförda utdrag**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

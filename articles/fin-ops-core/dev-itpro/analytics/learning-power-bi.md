@@ -62,3 +62,6 @@ Följande data används för att fylla i rapporterna i **Learning** Power BI-inn
 | Befattning         | Befattning, titel och heltidsanställning (FTE)                  | Kursagenda, kursdeltagare |
 | Namn på medarbetare    | Förnamn, efternamn och fullständiga namn                             | Kursdeltagare |
 | Medarbetartitel   | Titel och tjänsteålder                                         | Kursdeltagare |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

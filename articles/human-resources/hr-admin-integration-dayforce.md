@@ -676,3 +676,6 @@ Medarbetare kan deklarera passinformation. Denna information bär ID-typen **Pas
 
 Medarbetare kan deklarera flera ID-nummer med ID-typen **Pass**. Endast den aktuella passposten integreras emellertid i Dayforce. Om alla passposter har upphört att gälla kommer det pass som är utfärdat senast att integreras i Dayforce.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

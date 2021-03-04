@@ -58,3 +58,6 @@ När du kör den här proceduren krävs en befintlig modell för produktkonfigur
     * Kontrollera om någon av produktdimensionerna är aktiva, och därför måste ha ett värde eller ett attribut.  
 9. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

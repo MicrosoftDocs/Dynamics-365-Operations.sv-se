@@ -60,3 +60,6 @@ Den här proceduren visar hur du kan uppdatera lagerbehållningen manuellt genom
 25. Stäng sidan.
 26. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

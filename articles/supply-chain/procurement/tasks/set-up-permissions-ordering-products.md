@@ -45,3 +45,6 @@ I det här avsnittet visas hur du beviljar arbetare behörighet att förbereda i
 2. Använd snabbfiltret för att hitta den arbetare som du just lade till som beställaren.
 3. Välj beställare. Förberedarelistan visar personer som har behörighet att beställa artiklar på uppdrag av beställaren som är vald i vänstra fönstret.  Du kan lägga till ytterligare förberedare här. Denna vy låter dig också bevilja beställarebehörighet att skapa rekvisitioner i juridiska personer och driftenheter som inte är den personens primära juridiska person eller driftenhet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

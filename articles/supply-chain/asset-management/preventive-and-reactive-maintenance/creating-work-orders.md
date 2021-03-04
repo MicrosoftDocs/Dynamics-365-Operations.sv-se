@@ -52,3 +52,6 @@ När du har schemalagt förebyggande underhållsjobb är nästa steg att skapa a
 
 5. Klicka på **OK**. En eller flera arbetsorder skapas.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

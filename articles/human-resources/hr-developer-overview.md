@@ -62,3 +62,6 @@ Den här utvecklarhandboken innehåller en API och anpassade fältreferenser. De
 - [Nyheter och ändringar i Personal](hr-admin-whats-new.md)
 - [Administratörsguide](hr-admin-overview.md)
 - [Användarhandbok](hr-hrpro-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

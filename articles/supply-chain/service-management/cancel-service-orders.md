@@ -78,3 +78,6 @@ Markerade serviceorder kommer då antingen att annulleras eller få sin status *
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

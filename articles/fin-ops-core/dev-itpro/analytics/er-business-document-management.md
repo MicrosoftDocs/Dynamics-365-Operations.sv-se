@@ -423,3 +423,6 @@ Troligen loggade du in på den aktuella instansen av appen i Azure AD-domänen s
 
 [Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

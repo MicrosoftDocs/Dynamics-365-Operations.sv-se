@@ -88,3 +88,6 @@ Visningsordningen för kanalnavigeringshierarkin visas i huvudkontor, katalog oc
 
 > [!NOTE]
 > Funktionen för anpassad sorteringsordning är avstängd som standard. Mer information om hur du aktiverar den här funktionen och andra funktioner finns i [Funktionshantering](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

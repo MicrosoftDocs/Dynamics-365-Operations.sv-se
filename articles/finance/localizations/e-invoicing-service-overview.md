@@ -113,3 +113,6 @@ Om du aktiverar och använder elektronisk fakturering kan det krävas att begrä
 - [Kom igång med tillägget elektronisk fakturering för Mexiko](e-invoicing-mex-get-started.md)
 - [Kom igång med tillägget elektronisk fakturering för Italien](e-invoicing-ita-get-started.md)
 - [Ställ in tillägg för elektroniska fakturor](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

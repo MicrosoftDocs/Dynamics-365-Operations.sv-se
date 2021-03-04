@@ -60,3 +60,6 @@ I takt med att organisationen växer och du börjar planera successioner kan du 
 28. Klicka på Rapport.
     * Rapporten anger de bästa matchningarna högst upp i rapporten.  Du kan se att det finns en lucka i listan.  Detta är skillnaden mellan nivån som anges i kompetensmappningen och nivån på färdigheten som tilldelas till en person.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

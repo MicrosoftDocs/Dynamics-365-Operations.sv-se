@@ -88,3 +88,6 @@ En av de fantastiska funktionerna i Power BI är hur alla visuella element på e
 ## <a name="export-to-excel"></a>Exportera till Excel
 
 Om du vill visa rapportdata i Excel kan du klicka på alternativmenyn (tre punkter) på en bild och välja **Exportera underliggande data**. Exporterade data exporteras som filtrerade och respekterar användarbehörigheterna för att Attract. Mer information finns i [exportera data från visualiseringar](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

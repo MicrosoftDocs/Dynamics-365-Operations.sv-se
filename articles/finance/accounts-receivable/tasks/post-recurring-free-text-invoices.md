@@ -46,3 +46,6 @@ ms.locfileid: "4447997"
 6. Klicka på Bokför.
     * Bokför de valda fakturorna.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ På sidan **bedömningsprofiler** kan du granska alla tillgängliga bedömningsp
 
 > [!NOTE]
 > Profiler som skapas på sidan **Transportföretag** visas också på sidan **Bedömningsprofiler**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

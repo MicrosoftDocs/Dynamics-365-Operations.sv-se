@@ -60,3 +60,6 @@ Det resulterande postvärdet.
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Inspelningsfunktioner](er-functions-category-record.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

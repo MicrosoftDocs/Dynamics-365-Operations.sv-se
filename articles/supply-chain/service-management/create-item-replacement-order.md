@@ -68,3 +68,6 @@ Ersättningsorder skapas vanligtvis efter att en produkt har returnerats och ins
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

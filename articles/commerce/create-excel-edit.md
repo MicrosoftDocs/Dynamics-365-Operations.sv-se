@@ -78,3 +78,6 @@ Följ de här stegen om du vill skapa och konfigurera en Excel-arbetsbok så att
 [Redigera ekonomiska dimensioner för butikstransaktioner](edit-financial-dim.md)
 
 [Lägga till fält i en Excel-arbetsbok för att redigera butikstransaktioner](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

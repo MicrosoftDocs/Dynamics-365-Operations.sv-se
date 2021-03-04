@@ -70,3 +70,6 @@ Den här proceduren går igenom hur du skapar kanalspecifika handelsavtal för f
 38. Klicka på Sälj i **åtgärdsfönstret**.
 39. Klicka på **Försäljningspris**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

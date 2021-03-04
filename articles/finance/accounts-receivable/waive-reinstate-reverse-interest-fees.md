@@ -95,3 +95,6 @@ Du kan återföra räntetransaktioner via **Historik** knappen på **Samla in** 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

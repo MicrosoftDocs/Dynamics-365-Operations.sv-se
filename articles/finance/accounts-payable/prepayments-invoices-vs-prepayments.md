@@ -66,3 +66,6 @@ Förskottsfakturor är en vanlig företagspraxis. En leverantör utfärdar för
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

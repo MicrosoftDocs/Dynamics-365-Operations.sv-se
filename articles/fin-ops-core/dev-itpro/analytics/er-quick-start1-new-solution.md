@@ -1233,3 +1233,6 @@ Observera att den genererade rapportens sidfot inte innehåller namnet på ER-fo
 - [IF-funktion](er-functions-logical-if.md)
 - [ORDERBY-funktion](er-functions-list-orderby.md)
 - [SESSIONNOW-funktion](er-functions-datetime-sessionnow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

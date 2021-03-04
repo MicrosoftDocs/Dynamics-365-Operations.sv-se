@@ -84,3 +84,6 @@ I den här veckans version visas beskrivningen när du väljer jobbet på sidan 
 ### <a name="print-performance-reviews"></a>Skriv ut resultatöversyner
 
 Medarbetare, chefer och personalansvariga kan skriva ut en medarbetares resultatöversyn.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

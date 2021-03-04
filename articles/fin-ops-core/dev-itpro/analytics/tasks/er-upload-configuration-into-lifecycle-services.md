@@ -145,3 +145,6 @@ I det här exemplet ska du skapa en konfigurering för bildpunktföretaget, Litw
     Den ER-konfiguration som du överförde ska visas i listan.
 
     Observera att den överförda LCS-konfigurationen kan importeras till en annan instans om leverantörerna har tillgång till det här LCS-projektet.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

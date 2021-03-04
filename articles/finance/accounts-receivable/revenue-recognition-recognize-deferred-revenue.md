@@ -108,3 +108,6 @@ Om du vill ändra planen markerar du en rad i planen för den artikel du ändrar
 - Om intäkt har redovisats för produkten, redovisades en del intäkter felaktigt eftersom redovisningen baseras på fel intäktsplan. Dessa rader måste återföras och redovisas på nytt, baserat på den nya planen. I det här scenariot skapas nya intäktsplansrader med negativa belopp på det ursprungliga redovisningsdatumet. Sedan skapas nya rader som redovisar belopp baserat på den nya intäktsplanen. Exempel: Den 8 augusti 2019 redovisade du intäkter på 10,53 USD. Den 8 september 2019 redovisade du intäkter på 13,16 USD. Därför skapas två nya rader på samma datum. En rad på -10,53 USD och en annan på -13,16 USD. 24 nya rader skapas sedan och den totala uppskjutna intäkten på 160,61 USD fördelas mellan dem. Du kan bokföra återföringsraderna genom att köra processen **Skapa journal**.
 
 [![Intäktsredovisningsplan](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

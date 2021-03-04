@@ -164,3 +164,6 @@ Vissa formler kan inte testas vid designtillfället. En formel kan till exempel 
 
 - [Översikt över elektronisk rapportering](general-electronic-reporting.md)
 - [Formelspråk i elektronisk rapportering](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Det grafiska designgränssnittet för MPOS eller Cloud POS styrs av kassalådela
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Konfigurera, installera och aktivera Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

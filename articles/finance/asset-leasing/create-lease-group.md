@@ -50,3 +50,6 @@ När du har skapat leasinggrupper kan du tilldela böcker till varje grupp. När
 1. Gå till **Leasing av tillgångar \> Konfigurera \> Leasinggrupp**.
 2. Välj en leasinggrupp och välj sedan **Böcker**.
 3. Välj **Ny** och i fältet **Boktyp** väljer du sedan den bok som ska tilldelas leasinggruppen. Du kan tilldela flera böcker till en leasinggrupp om en leasing måste redovisas på olika sätt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

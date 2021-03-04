@@ -46,3 +46,6 @@ I den här uppgiften används demonstrationsföretaget USMF.
 12. Stäng sidan.
 13. Välj **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

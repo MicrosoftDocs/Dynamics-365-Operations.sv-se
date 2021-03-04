@@ -56,3 +56,6 @@ I det här avsnittet handboken visas hur du uppdaterar en försäljningsorder n�
 19. I åtgärdsfönstret, klicka **Plocka och packa.**
 20. Välj **Följesedel**. Sidan **Följesedelsjournal** innehåller alla följesedlar som har skapats för ordern. Du kan granska informationen i varje dokument och skriva ut dem om du vill.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

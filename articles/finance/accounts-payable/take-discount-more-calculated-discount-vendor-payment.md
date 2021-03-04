@@ -51,3 +51,6 @@ April bokför sedan betalningsjournalen. Fakturan kvittas fullständigt med hjä
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

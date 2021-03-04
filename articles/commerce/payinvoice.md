@@ -45,3 +45,6 @@ Om du vill aktivera dessa scenarier måste funktionsprofilen för butiker konfig
 
 > [!NOTE]
 > Betalning eller kvittning av partiella belopp stöds inte ännu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

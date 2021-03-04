@@ -128,3 +128,6 @@ Följ dessa steg för att skapa lite plockningsarbete.
 
 > [!IMPORTANT]
 > Om du avbryter bara en del av kvantiteten för en arbetsrad, måste du också ta bort den inaktuella kvantiteten från lastraden. Annars, om inte under leverans har ställts in korrekt, kan lastraden inte bekräftas för levererans.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

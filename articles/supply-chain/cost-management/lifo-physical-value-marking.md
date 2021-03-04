@@ -151,3 +151,6 @@ I illustrationen nedan visas hur den här serien med transaktioner påverkas av 
 - Lagerstängningar visas som en röd lodrät streckad linje och etiketten *Lagerstängning*.
 - Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

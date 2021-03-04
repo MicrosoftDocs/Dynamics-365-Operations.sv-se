@@ -56,3 +56,6 @@ Om fältet **Återför periodisering vid kreditering** i formuläret **Serviceha
 
 
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

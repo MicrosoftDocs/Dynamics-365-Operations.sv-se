@@ -265,3 +265,6 @@ Försäljningsorder med en påtvingad spärrorsak kan inte frisläppas automatis
 Kredithantering kan endast användas för försäljningsorder. Fritextfakturor, kassaorder och kundtjänstorder använder de tillfälliga kreditgränser och försäkringar/garantier som du lägger till för att justera kreditgränsen. De kommer inte att använda spärrningsreglerna och de kommer inte att placeras i spärrlistan om det finns ett problem med kreditgränsen.
 
 Det finns inget stöd för projektfakturor i kredithantering.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

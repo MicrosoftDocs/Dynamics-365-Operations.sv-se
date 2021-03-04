@@ -168,3 +168,6 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
 66. Stäng sidan.
 67. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

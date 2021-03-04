@@ -162,3 +162,6 @@ Innan disponeringssteget börjar, finns det ett steg före täckning under vilka
 - **En tung rutin vid en tidpunkt** – kör inte huvudplanering tillsammans med någon annan tung rutin.
 - **Granska loggen för session**
 - **Filtrering av artiklar** – Använd livscykelstadiet för att exkludera artiklar från huvudplaneringskörningen. (Använd inte artikelnumren.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

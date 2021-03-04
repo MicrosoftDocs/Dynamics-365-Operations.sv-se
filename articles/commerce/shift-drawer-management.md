@@ -158,3 +158,6 @@ Gå till **Butik och handel \> kanaler \> butiker \> alla butiker \> utdrag/stä
 Den här inställningen kan garantera att backoffice-rapporterna innehåller samma transaktioner som skift i POS och att informationen summeras genom det skiftet.
 
 Mer information om utdrag och stängningsmetoder finns i [spara konfigurationer för butiksutdrag](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

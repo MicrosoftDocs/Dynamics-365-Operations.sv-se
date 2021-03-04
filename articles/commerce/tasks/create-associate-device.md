@@ -41,3 +41,6 @@ Den här proceduren går igenom hur du skapar en ny enhet och kopplar den till e
 9. Klicka på länken på den valda raden i listan.
 10. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

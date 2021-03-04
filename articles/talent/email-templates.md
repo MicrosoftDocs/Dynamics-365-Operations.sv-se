@@ -81,3 +81,6 @@ När anställningsteamet skickar ett e-postmeddelande, kan du använda mallar so
 
 > [!NOTE] 
 > För e-postmeddelanden som skickas automatiskt, kan du skapa flera mallar. Men endast en mall kan anges som den aktiva mallen. Eftersom processen har utlösts av händelser, kan endast administratören avgöra vilken mall som ska användas baserat på kombinationen av brickorna **Standard** och **Skickas automatiskt** i biblioteket för mallar.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

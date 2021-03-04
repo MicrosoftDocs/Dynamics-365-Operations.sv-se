@@ -106,3 +106,6 @@ Det finns många avsnitt om tillverkning och hantering av underleverantörer i [
 ## <a name="elearning-courses"></a>E-utbildningskurser
 
 Information om onlinekurser och utbildning finns [Dynamics 365 Supply Chain Management i Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

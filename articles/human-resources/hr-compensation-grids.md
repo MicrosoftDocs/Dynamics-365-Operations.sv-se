@@ -92,3 +92,6 @@ Kompensationsrutnät används för att definiera och underhålla lönstrukturern
 29. Markera eller avmarkera alla rader i listan.
 30. Klicka på Använd i rutnät.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

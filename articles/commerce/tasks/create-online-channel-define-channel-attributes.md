@@ -67,3 +67,6 @@ I den här proceduren skapar du en ny onlinekanal och lägger till den i organis
 3. Kör distributionsschema 1070 för att synkronisera ändringar i databasen för kanalen. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

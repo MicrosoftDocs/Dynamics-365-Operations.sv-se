@@ -48,3 +48,6 @@ Innan du använder funktionen **Öppna i nytt fönster** måste du konfigurera w
 Funktionen **Öppna i nytt fönster** är endast tillgänglig när det finns fler än en sida som är öppen i fönstret. Popup-fönstret stängs även automatiskt när det inte finns några fler öppna sidor (det vill säga när den sista sidan i det fönstret stängs.) Systemet stänger även öppna sidor när du navigerar till ett annat område i programmet. Om du har öppna popup-fönster och navigerar till ett annat område i programmet stängs därför popup-fönster automatiskt, eftersom sidorna i dessa fönster stängdes av systemet.
 
 Det övre fältet i popup-fönster visar information om företaget som sidan öppnades i och är skrivskyddat. Popup-fönstren använder även de huvudsakliga webbläsarfönstret. Om huvudfönstret stängs eller uppdateras, blir alla öppna popup-fönster skrivskyddade. I det här fallet kan du fortfarande visa informationen i dessa fönster, men du kan inte interagera med den.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

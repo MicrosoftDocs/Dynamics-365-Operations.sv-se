@@ -77,3 +77,6 @@ När kulturen inte definieras som ett argument för den anropade funktionen defi
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Datum- och tidsfunktioner](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

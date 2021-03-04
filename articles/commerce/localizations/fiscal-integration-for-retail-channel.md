@@ -150,3 +150,6 @@ Följande funktioner för räkenskapsintegration finns också i Retail SDK men f
 Följande tidigare funktioner för räkenskapsintegrering som är tillgängliga i Retail SDK använder inte ramverket för räkenskapsintegration och kommer att föråldras i senare uppdateringar:
 
 - [Exempel på integration av kontrollenhet för Sverige (äldre)](./retail-sdk-control-unit-sample.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

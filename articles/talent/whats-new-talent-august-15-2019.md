@@ -61,3 +61,6 @@ Ytterligare information om plattformsuppdatering 29 för Finance and Operations 
 Ändringar i medarbetarposter träder sällan i kraft direkt. Du måste uppdatera data från medarbetarens startdatum, som ofta sker i framtiden och du måste också uppdatera informationen tidigare. Med den här strömlinjeformade navigeringsmodellen kan du uppdatera framtida och tidigare data utan att gå till flera formulär eller ändra datumsammanhanget. Den här ändringen främjar också dynamiskt och visar viktig information i den övre delen av medarbetarposten.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

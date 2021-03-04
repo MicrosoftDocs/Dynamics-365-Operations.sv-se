@@ -74,3 +74,6 @@ I den här uppgiften används demonstrationsföretaget USMF.
     * Det här kontot debiteras när ingångsmarginalen bokförs och krediteras när betalningen bokförs.  
 9. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ I det här ämnet beskrivs hur du konfigurerar ett godkännandearbetsflöde som 
 14. Välj **Stäng** på sidan **Skapa arbetsflöde**.
 14. Välj det nya arbetsflödet och välj sedan **Versioner**. Välj sedan **Aktivera** för att säkerställa att arbetsflödet är aktivt.
 15. Välj **Nära**. Den nya aktiva versionen visas.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

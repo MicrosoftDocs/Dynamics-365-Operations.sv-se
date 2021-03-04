@@ -157,3 +157,6 @@ Följ dessa steg för att skapa ett jobb.
 
 13. Aktivera jobbet genom att välja **Aktivera**.
 14. Om du vill publicera jobbet går du till **Publiceringar** och väljer sedan **Publicera nu** under Talent karriärwebbplats eller LinkedIn.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

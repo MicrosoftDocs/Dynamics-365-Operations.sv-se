@@ -177,3 +177,6 @@ I följande procedur beskrivs hur du tilldelar tillägg på huvudnivå till en r
         > När du arbetar med fältet **Välj rader som ska undantas från fördelning** se till att lämna rutnätet öppet tills du väljer **fördela**. Om du stänger rutnätet innan du väljer **fördela**, går inställningarna i rutnätet förlorade. Därför fördelas avgifter utifrån de kriterier som du tidigare definierat.
 
 1. Välj **fördela** om du vill använda inställningarna och stänga dialogrutan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

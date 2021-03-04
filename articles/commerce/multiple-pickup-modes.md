@@ -86,3 +86,6 @@ När flera leveranssätt genom upphämtning är tillgängliga för en kanal ges 
 ## <a name="considerations-for-distributed-order-management"></a>Beaktanden för fördelad orderhantering
 
 Funktionerna för [fördelad orderhantering (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) i Commerce ignorerar alla försäljningsrader som har markerats för hämtning i butik. Dessa funktioner har uppdaterats i syfte att se till att försäljningsrader som är länkade till konfigurerade leveranssätt för upphämtning åsidosätter DOM-logiken och inte allokeras om till ett nytt lagerställe för uppfyllande.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

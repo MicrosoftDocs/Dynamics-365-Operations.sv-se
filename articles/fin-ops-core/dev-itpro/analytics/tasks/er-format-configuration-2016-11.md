@@ -158,3 +158,6 @@ Det här avsnittet förklarar hur en användare i rollen Systemadministratör el
 42. Klicka på **Spara**.
 43. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

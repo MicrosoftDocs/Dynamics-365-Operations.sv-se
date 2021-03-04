@@ -51,3 +51,6 @@ I det här avsnittet beskrivs hur du bearbetar en kvalitetsorder. Du kan köra d
 4. Välj **OK**.
 5. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Det här avsnittet visar hur du skapar en postmall så att fältvärden som ofta
 13. Välj **OK**.
 14. Välj **Nära**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

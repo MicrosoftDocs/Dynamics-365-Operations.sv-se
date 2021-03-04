@@ -50,3 +50,6 @@ Tre nya beloppsfält har lagts till i kundvagnen för att ge bättre inblick i v
 - **Utnyttjad insättning** – Insättningsbeloppet som används i en transaktion när användaren hämtar upp en kundorder. Om det inte finns någon insättningsåsidosättning och en tioprocentig insättning har konfigurerats är beloppet i detta fält 90 procent av kundorderns totalbelopp.
 - **Utför belopp** – Det totala beloppet för rader där leveransläget var **Utför** när kundordern skapades eller redigerades, eller under ett kundorderutbyte. Beloppet i detta fält omfattar moms och avgifter.
 - **Returbelopp** – Det totala beloppet för rader med negativa kvantiteter under kundorderutbytet. Beloppet i detta fält omfattar moms och avgifter.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

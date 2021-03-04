@@ -55,3 +55,6 @@ Därför skapas följande redovisningsposter automatiskt för att balansera jour
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

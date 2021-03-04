@@ -58,3 +58,6 @@ Detta avsnitt visar dig hur du skapar en produktnummernomenklatur för fördefin
 5. I fältet **Nomenklatur för produktvariantnummer**, ange eller välj ett värde.
 6. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

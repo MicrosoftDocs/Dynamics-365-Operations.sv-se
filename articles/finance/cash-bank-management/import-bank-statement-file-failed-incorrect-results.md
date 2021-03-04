@@ -108,3 +108,6 @@ Följande tabell anger exempel på tekniska layoutdefinitioner för importfiler 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -380,3 +380,6 @@ Som du har sett kan funktionen för ett ER-format utvärderas automatiskt med hj
 - [Spåra genererade rapportresultat och jämför dem med baslinjevärden](er-trace-reports-compare-baseline.md)
 - [ER Uppgradera ditt format genom att implementera en ny basversion för det formatet](tasks/er-upgrade-format.md)
 - [ER importera en konfiguration från Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

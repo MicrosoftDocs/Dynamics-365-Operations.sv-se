@@ -166,3 +166,6 @@ Illustrationen nedan visar ett exempel på dialogrutan **Skapa arbetsorder**.
 >[!NOTE]
 >Om du vill att arbetsordrar ska skapas automatiskt kan du schemalägga underhållsplanjobb eller så kan du ställa in "Skapa automatiskt" [underhållsplaner](../preventive-and-reactive-maintenance/maintenance-plans.md) eller [underhållsrundor](../preventive-and-reactive-maintenance/maintenance-rounds.md) på en tillgång. Arbetsorder som skapas från underhållsbegäranden på listsidan **All underhållsschema** har samma underhållsjobbtyper som väljs i underhållsbegärandena.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

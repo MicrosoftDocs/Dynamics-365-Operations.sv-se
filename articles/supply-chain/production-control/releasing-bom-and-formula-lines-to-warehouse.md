@@ -98,3 +98,6 @@ Du kan frisläppa råmaterial för en delkvantitet av färdiga varor, eller i en
     Enheter som är tillgängliga fastställs i enhetssekvensgrupp-ID för den färdiga varan.
 
     Till exempel har en färdig vara följande enhetskonvertering mellan kilo (kg) och lastpall (PL): 1 PL = 100 kg. Skapa en tillverkningsorder för 10 000 kg. av färdiga varor kan du frisläppa råmaterial för antalet lastpallar som du planerar att producera. Välj **PL** som enhet, och välj sedan ett motsvarande värde i fältet **kvantitet**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

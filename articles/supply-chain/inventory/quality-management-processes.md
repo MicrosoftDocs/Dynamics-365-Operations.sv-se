@@ -101,3 +101,6 @@ Det är en bra idé att definiera en unik dokumenttyp för avvikelser på sidan 
 [Ställ in kvalitetsorder](tasks/set-up-quality-orders.md)
 
 [Kontrollera kvaliteten på varor](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

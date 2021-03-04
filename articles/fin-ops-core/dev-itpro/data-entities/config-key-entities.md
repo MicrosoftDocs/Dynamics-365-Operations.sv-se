@@ -94,3 +94,6 @@ Genom att använda de metadata för konfigurationsnycklar som skapas under enhet
 När du uppdaterar konfigurationsnycklar i enheten, på register- eller fältnivå, måste enhetslistan i ramverket för datahantering uppdateras. Proceduren säkerställer att ramverket hämtar de senaste inställningarna för konfigurationsnycklar. Tills enhetslistan uppdateras visas följande varningsmeddelande på enhetslistans sida. De uppdaterade ändringarna för konfigurationsnycklar börjar gälla omedelbart efter att enhetslistan uppdateras. Vi rekommenderar att du validerar befintliga dataprojekt och jobb för att säkerställa att de fungerar som förväntat efter att ändringarna av konfigurationsnycklar har börjar gälla.
 
 ![Målfält](./media/Target_fields_3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

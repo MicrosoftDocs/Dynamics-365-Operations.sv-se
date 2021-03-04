@@ -101,3 +101,6 @@ Möjligheten att spåra arbetstiden och förstå hur tiden är beräknad hjälpe
 ### <a name="email-support-for-alerts"></a>E-support för notifieringar
 
 Med plattformsuppdatering 26 för Finance and Operations kan användare skapa notifieringsregler som automatiskt levererar e-postmeddelanden till kontakter när de utlöses av en händelse.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

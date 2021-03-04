@@ -67,3 +67,6 @@ Standardfunktionsplatstypen som endast ska användas för en standardfunktionspl
 
 >[!NOTE] 
 >På snabbfliken **allmänt** kan du få en översikt över antalet tillgångstyper, underhållsplaner, tillgångsattributkrav, tillåtna typer, attribut och funktionsplatser som har ställts in på funktionsplatstypen. I fältet **funktionsplatser** visas antalet funktionsplatser som använder funktionsplatstypen. Du kan använda knappen **kopiera** för att kopiera inställningar från en funktionsplatstyp till den valda funktionsplatstypen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

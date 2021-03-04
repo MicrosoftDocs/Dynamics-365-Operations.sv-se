@@ -104,3 +104,6 @@ Följ stegen i något av följande exempel för att visa de tillåtna betalnings
 
 
 ![Lista över betalningsmetoder](media/Return-policy-page5.PNG "Återbetalningstyp tillåts")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

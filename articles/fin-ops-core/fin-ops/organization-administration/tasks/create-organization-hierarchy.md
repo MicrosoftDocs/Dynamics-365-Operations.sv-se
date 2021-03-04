@@ -48,3 +48,6 @@ Det demonstrationsdataföretag som används för att skapa den här proceduren �
     - Lägg till fler organisationer efter behov.  
     - Klicka på **Redigera** och sedan **Infoga** om du vill lägga till en organisation. När du är klar med ändringar, kan du **spara** ett utkast och/eller **publicera** ändringarna.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

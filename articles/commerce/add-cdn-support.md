@@ -163,3 +163,6 @@ Din CDN ska nu vara korrekt konfigurerad så att den kan användas med din näth
 [Konfigurera flera B2C-innehavare i en Commerce-miljö](configure-multi-B2C-tenants.md)
 
 [Aktivera platsbaserad butiksdetektering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

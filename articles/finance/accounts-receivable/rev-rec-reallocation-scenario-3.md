@@ -81,3 +81,6 @@ Försäljningsordern faktureras igen för artikeln som lagts till. Den totala fa
 [![Sidan Verifikationstransaktion med redovisningsposten som bokförs](./media/36_rev-rec-scenarios.png)](./media/36_rev-rec-scenarios.png)
 
 Eftersom summan av intäkten och försäljningen är större än $319,50, bokförs skillnaden $14,48. Detta belopp rensar saldot från kontot Delvis clearing av fakturaintäkt. Det saldot uppdaterades i den nya redovisningsposten som bokfördes efter omallokeringen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

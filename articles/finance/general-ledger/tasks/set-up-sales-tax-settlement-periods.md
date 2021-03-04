@@ -51,3 +51,6 @@ I den här uppgiften används demonstrationsföretaget USMF.
 16. Välj **Nytt periodintervall**. När det första periodintervallet har angetts, kan nya perioder skapas automatiskt. Du kan komma tillbaka och lägga till nya periodintervall som krävs.  
 17. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

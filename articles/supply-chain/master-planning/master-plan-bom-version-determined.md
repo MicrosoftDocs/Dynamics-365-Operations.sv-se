@@ -44,3 +44,6 @@ En giltig strukturlisteversion, oavsett om den är sitespecifik eller allmän, m
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

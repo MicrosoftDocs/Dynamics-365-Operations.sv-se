@@ -50,3 +50,6 @@ När du har ställt in ett kontinuitetsprogram enligt beskrivningen ovan kan du 
 - **Utöka kontinuitetsrader** (vid behov) – Utöka antalet gånger som en kontinuitetshändelse kan upprepas. Repetitionen av försändelser kan överskrida tidsgränsen som anges i fältet **Tröskel för upprepa kontinuitet** i kundtjänstparametrarna.
 - **Utför en kontinuitetsuppdatering** (vid behov) – Synkronisera ändringar mellan kontinuitetsprogrammet och överordnade kontinuitetsförsäljningsorder.
 - **Stäng överordnade kontinuitetsrader och kontinuitetsorder** – Stäng kontinuitetsorder.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

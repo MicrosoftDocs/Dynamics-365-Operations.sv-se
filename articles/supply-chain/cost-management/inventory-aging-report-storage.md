@@ -57,3 +57,6 @@ Innan du kan använda den här funktionen måste du aktivera den i ditt system. 
     > Formuläret innehåller delsummor som definieras i rapportlayouten.
 
 Dataentiteten **Lagerföråldringsrapport** låter dig exportera resultatet av **Lagring av Lagerföråldringsrapport** genom att använda ett filter för fältet **Identifierare för process – Namn** till ett format som datahanteringen stöder.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

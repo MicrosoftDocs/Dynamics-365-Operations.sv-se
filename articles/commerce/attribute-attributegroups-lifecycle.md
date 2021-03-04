@@ -257,3 +257,6 @@ Standardvärden för attribut kan åsidosättas för enskilda produkter på prod
 
     > [!NOTE]
     > Om delad produktmedia och delade produktattribut skapas gäller de för alla produkter.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

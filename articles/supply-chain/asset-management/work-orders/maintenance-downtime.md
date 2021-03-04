@@ -89,3 +89,6 @@ Om du vill se en översikt över alla underhållsstoppregistreringar, klicka på
 >[!NOTE]
 >Alla kalendrar som används i modulen **Tillgångshantering** ställs in i **Organisationsadministration** > **Inställningar** > **Kalendrar** > **Kalendrar**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

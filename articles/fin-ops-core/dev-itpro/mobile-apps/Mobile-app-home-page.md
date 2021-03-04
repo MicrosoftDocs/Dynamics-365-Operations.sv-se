@@ -151,3 +151,6 @@ Följande tabell innehåller länkar till resurser som hjälper dig att implemen
 
 ## <a name="troubleshooting"></a>Felsökning
 [Mobila plattformsresurser](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

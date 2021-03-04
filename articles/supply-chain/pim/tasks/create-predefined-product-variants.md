@@ -72,3 +72,6 @@ Den här proceduren går igenom hur du skapar produktvarianter för en produktma
     * Du kan generera beskrivningar av alla dina varianter baserat på kombinationen av produktdimensionvärden. Beskrivningar är valfria.  
 5. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -38,3 +38,6 @@ Begränsningsbaserade produktkonfigurationsmodeller använder komponenter som by
 7. Ange ett värde i fältet Beskrivning.
 8. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

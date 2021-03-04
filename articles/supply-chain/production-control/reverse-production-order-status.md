@@ -53,3 +53,6 @@ När du återför statusen för en produktionsorder från **Startad** till **Fri
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

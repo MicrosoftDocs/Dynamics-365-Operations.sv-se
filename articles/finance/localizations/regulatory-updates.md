@@ -87,3 +87,6 @@ För de senaste kravuppdateringsplanerna, se följande tabell.
 - Hitta alla planerade och andra uppdateringar i [Lifecycle Service - problemsökning](https://lcs.dynamics.com/Logon/Index) (inloggning krävs).
 - För en lista över lokalisering som kan användas, se [Guide över internationell tillgänglighet](https://aka.ms/dynamics_365_international_availability_deck).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

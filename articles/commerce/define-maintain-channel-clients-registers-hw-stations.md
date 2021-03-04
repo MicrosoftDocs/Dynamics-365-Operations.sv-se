@@ -205,3 +205,6 @@ Ytterligare aktiveringsrelaterad information omfattar arbetstagare som har ändr
 ### <a name="client-data-synchronization"></a>Klientdatasynkronisering
 
 Alla ändringar av en kassaklient, förutom ändringar av enhetens aktiveringsstatus, måste synkroniseras till kanaldatabasen för att börja gälla. Om du vill synkronisera ändringar i kanaldatabasen, gå till **Butik och handel** &gt; **Butik och handel-IT** &gt; **Distributionsschema** och kör det obligatoriska distributionsschemat. För klientändringar bör du köra distributionsschemat **Kassor** och även distributionsschemat **Kanalkonfiguration**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

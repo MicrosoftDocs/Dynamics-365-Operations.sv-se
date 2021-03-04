@@ -62,3 +62,6 @@ I det här avsnittet visas hur du skapar en lagerpåfyllnadsorder för försänd
 3. Välj **Översikt**. Artiklarna som har inlevererats som ett försändelselager ägt av leverantören finns tillgängliga i lager. Återstående kvantitet i lagerpåfyllnadsordern för försändelse anges i fältet **Totalt beställt**.  
 4. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

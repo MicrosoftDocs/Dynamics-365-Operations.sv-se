@@ -86,3 +86,6 @@ I den här veckans utgivning synkroniseras nu adressdata med Common Data Service
 ### <a name="print-performance-reviews"></a>Skriv ut resultatöversyner
 
 Se [Skriv ut resultatöversyner](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) i Dynamics 365: 2019 släpp påfyllnad 2 plan.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

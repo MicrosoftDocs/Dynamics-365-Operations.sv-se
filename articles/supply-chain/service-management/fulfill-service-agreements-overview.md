@@ -107,3 +107,6 @@ I följande register visas de formulär som stöder affärsprocesskomponenten f�
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

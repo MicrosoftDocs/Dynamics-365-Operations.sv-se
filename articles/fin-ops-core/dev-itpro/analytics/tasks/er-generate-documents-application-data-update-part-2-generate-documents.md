@@ -58,3 +58,6 @@ Innan du börjar ska du ändra land för DEMF-företaget från DEU (Tyskland) ti
 10. Stäng sidan.
 11. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

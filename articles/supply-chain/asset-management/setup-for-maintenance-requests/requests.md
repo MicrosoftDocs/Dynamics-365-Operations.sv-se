@@ -42,3 +42,6 @@ Du kan ställa in olika typer av begäranden som ska användas i ditt företag. 
 Följande illustration visar ett exempel på listsidan **alla begäran om underhåll**.
 
 ![Listsidan Hantera underhållsbegäranden](media/01-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

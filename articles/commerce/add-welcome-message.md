@@ -68,3 +68,6 @@ Välkomstmeddelandet visas nu överst på varje webbplatssida där det valda rub
 
 [Lägga till skriptkod på webbsidor för att stödja telemetri](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ Alla journalposter som skapas i Leasing av tillgång ingår i journalen för lea
 
 > [!NOTE]
 > Det går inte att skapa till journalen för leasing av tillgång manuellt. Den skapas automatiskt när leasingplanerna skapas.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

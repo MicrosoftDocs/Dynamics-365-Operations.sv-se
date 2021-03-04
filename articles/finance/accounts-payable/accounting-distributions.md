@@ -57,3 +57,6 @@ De allmänna redovisningsfördelningsfunktionerna innehåller följande alternat
 I version 10.0.13 har en funktion lagts till som validerar registret för redovisningsfördelning för att se till att nya fält ställs in korrekt. Den här funktionen kallas för **Aktivera ytterligare validering av data för dokument med hjälp av källdokumentets redovisningsramverk**. Om du vill använda funktionen måste du aktivera den med hjälp av arbetsytan **funktionshantering**. Aktivera funktionen genom att söka efter funktionsnamnet i fältet **Sök** på sidan **Funktionshantering** och välj sedan **Aktivera nu**.
 
 Mer information finns i [Redovisningsfördelningar och redovisningsjournalposter för leverantörsfakturor](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Detta avsnitt är avsett för att ställa in en översiktsprofil för införsel.
 17. Välj **Spara**.
 18. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -334,3 +334,6 @@ Du kan visa och underhålla detta på sidan **Händelser för lagerställeapp**.
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Kan jag använda ett ID-nummer som har fysiskt negativt lagerbehållning?
 
 Funktionen har endast stöd för positiva fysiska behållningsartiklar. Se till att du har positiva fysiska lagerbehållningar på lagerställe och lagerstatusnivå innan du tilldelar ID-nummer till en överföringsorder.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Den här proceduren visar hur du söker efter information om lojalitetskort och 
 15. Klicka på Korttransaktioner.
 16. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

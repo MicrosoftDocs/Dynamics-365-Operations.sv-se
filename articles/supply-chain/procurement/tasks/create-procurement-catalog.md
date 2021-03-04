@@ -66,3 +66,6 @@ Det här ämnet förklarar hur du skapar en anskaffningskatalog. Den här uppgif
 7. Välj **Lägg till på rader**.
 8. Välj **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

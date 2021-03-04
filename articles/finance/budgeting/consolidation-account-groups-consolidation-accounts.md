@@ -54,3 +54,6 @@ För mer information, se [Skapa konsolideringsgrupper och ytterligare konsolider
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

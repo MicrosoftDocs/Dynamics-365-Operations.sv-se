@@ -41,3 +41,6 @@ I den här proceduren beskrivs hur du definierar kostnadsstyrenheter i huvudboke
 10. Ange eller välj ett värde i fältet Dimension.
 11. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -599,3 +599,6 @@ Du kan dela beloppet i en kolumn med ett specifik antalet perioder. Till exempel
 [Rapportdefinitioner i designer för ekonomiska rapporter](row-definitions-financial-reporting.md)
 
 [Avancerade formateringsalternativ i ekonomiska rapporter](advanced-formatting-options-financial-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

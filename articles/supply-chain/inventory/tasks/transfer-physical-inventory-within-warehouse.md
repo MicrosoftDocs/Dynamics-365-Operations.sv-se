@@ -59,3 +59,6 @@ I den här proceduren beskrivs hur du kan skapa och bokföra en lageröverförin
 1. Klicka på **Lager**.
 2. Klicka på **Transaktioner.** Här kan du se de transaktioner som skapades när du bokförde din journal.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

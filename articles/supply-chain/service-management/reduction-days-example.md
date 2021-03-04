@@ -121,3 +121,6 @@ När transaktioner för mars 2011 faktureras minskas försäljningspriset på 20
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

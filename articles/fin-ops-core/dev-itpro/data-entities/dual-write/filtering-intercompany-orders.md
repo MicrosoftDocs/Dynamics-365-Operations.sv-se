@@ -65,3 +65,6 @@ Alla standardentiteter för Common Data Service utökas med referenser till **In
 7. När du har utökat entiteten **Offerter** använder du ett filter med `CUSTGROUP !=  "<company>"` som frågesträng.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Försäljningsofferthuvud, redigera fråga":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

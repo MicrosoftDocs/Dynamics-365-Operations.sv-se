@@ -110,3 +110,6 @@ Det finns flera scenarier där uppskjuten placeringsbearbetning inte tillämpas 
 ## <a name="deleting-completed-tasks"></a>Ta bort slutförda uppgifter
 
 Du kan ta bort uppskjutna placeringsbearbetningsuppgifter som har slutförts genom att markera dem och ta bort dem på sidan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

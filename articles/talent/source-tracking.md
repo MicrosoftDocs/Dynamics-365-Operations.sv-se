@@ -102,3 +102,6 @@ För att undvika att negativ påverkan av användargränssnittet ska du inte red
 - **Annat**
 
 Däremot kan du utöka enum **TalentSource** för att lägga till andra typer av källor.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Avskrivningsförslaget den 31 januari är som följer: Beräknad kvantitet × Pr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

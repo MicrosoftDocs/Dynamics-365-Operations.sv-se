@@ -52,3 +52,6 @@ Rollen för den här proceduren är Kassaförvaltare. I den här proceduren anv�
 10. Klicka på Verifikation.
 11. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

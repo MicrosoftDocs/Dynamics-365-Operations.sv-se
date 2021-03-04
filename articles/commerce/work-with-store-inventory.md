@@ -69,3 +69,6 @@ Lagerinventeringar kan antingen vara tidsplanerade eller ej tidsplanerade. Plane
 ## <a name="inventory-lookup"></a>Lagersökning
 
 Den aktuella produktkvantiteten som för tillfället finns att tillgå för flera butiker och lagerställen kan beskådas på sidan **Lagersökning**. Utöver det aktuella saldot kan framtida ATP-kvantiteter ("available-to-promise") visas för varje enskild butik. Välj butiken som du vill visa ATP-kvantiteter för och välj sedan **Visa tillgänglighet för butik**. Mer information om vilka konfigurationsalternativ som är tillgängliga finns i [Beräkna lagertillgänglighet för butikskanaler](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

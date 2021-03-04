@@ -67,3 +67,6 @@ Befattningar är ett viktigt element i den lägre nivån i en organisationshiera
 30. Ange eller välj ett värde i fältet Avdelning.
 31. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1373,3 +1373,6 @@ Windows 8 surfplatteapp gav funktion för utgiftsregistrering och godkännande.
 |     <strong>Produktområden som påverkas</strong>     |                                              Huvudbok                                              |
 |             <strong>Status</strong>             |                                      Borttagen från och med Dynamics AX 2012.                                      |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

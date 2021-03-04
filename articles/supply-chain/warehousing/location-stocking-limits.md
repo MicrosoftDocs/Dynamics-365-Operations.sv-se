@@ -104,3 +104,6 @@ För att förklara felet måste du förstå urvalskriterierna för platsens lage
 
 > [!NOTE]
 > Du kan inte använda platslagergränser för att t.ex. styra påfyllningen av artiklar som har olika kvantiteter på samma plats. Använd i så fall en *återanskaffningsmall*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

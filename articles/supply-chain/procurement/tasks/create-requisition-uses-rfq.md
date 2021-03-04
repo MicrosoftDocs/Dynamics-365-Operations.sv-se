@@ -99,3 +99,6 @@ Nästa uppgift är att skapa en anbudsförfrågan för att få bud från leveran
 8. Välj sidan.
 9. Välj Slutför.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

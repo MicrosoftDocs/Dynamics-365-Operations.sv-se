@@ -140,3 +140,6 @@ Påfyllningen bearbetas och skapar arbete för reserverade kvantiteter på lastr
 Om en leverans har statusen **påfylld** eller högre, visas inte uppdateringar av kvantiteten på en försäljningsorderraden på eller valideras mot en lastrad som är kopplad till leveransen. Ändringar av kvantiteten på en lastrad måste göras direkt på lastraden.
 
 Validering görs när arbetet har skapats för lastraden och en reservation har gjorts. En minskning av kvantiteten på försäljningsorderraden valideras sedan mot arbetsradens reservation.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

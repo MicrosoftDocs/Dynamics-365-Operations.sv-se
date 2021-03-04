@@ -50,3 +50,6 @@ Spårningsdimensionen **Ägare** spårningsdimension saknas när distributionsla
 ### <a name="issue-resolution"></a>Problemlösning
 
 Microsoft har utvärderat det här problemet och har fastställt att det är en funktionsbegränsning. För närvarande stöder lagerhanteringsprocesserna endast lager som ägs av den juridiska personen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ I den här handboken visas hur du skapar en bränsleindexregion, ett bränsleind
 12. Klicka på länken på den valda raden i listan.
 13. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

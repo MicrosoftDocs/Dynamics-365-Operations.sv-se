@@ -54,3 +54,6 @@ Alternativet **Visa information** är tillgängligt på flera sätt:
 
 - Om en kontroll har funktionen **Visa information** och dessutom ett värde, kan värdet visas som en hyperlänk. Du kan klicka på hyperlänken när du vill öppna en sida som innehåller mer information.
 - **Visa information** är även ett alternativ på snabbmenyerna. Mer information om när snabbmenyerna visas när du högerklickar finns i föregående avsnitt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

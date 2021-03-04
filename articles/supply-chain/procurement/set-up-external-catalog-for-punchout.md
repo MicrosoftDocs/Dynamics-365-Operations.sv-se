@@ -114,3 +114,5 @@ Om en produkt från den externa leverantörskatalogen har efterfrågats kan den 
 
 - [Förbättringar i inköps-cXML](purchasing-cxml-enhancements.md)
 - [Använd externa kataloger för PunchOut eProcurement](use-external-catalogs-for-punchout.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

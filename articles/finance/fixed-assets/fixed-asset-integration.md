@@ -95,3 +95,6 @@ Mer information finns i [Förvärv av tillgångar genom upphandling](acquire-ass
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

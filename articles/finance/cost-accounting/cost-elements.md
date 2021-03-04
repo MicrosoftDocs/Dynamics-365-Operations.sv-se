@@ -76,3 +76,6 @@ Eftersom kostnadselement representerar den lägsta nivån i kostnadsdetaljer, sk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

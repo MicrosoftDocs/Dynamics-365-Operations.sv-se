@@ -40,3 +40,6 @@ Det demonstrationsdataföretag som används för att skapa den här proceduren �
 8. Avmarkera kryssrutan Plats.
 9. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

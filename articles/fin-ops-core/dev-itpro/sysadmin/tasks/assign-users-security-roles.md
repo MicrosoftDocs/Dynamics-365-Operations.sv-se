@@ -57,3 +57,6 @@ Användare som tilldelas säkerhetsroller manuellt måste också tas bort manuel
 2. I trädet väljer du roll och i menyn **Användare tilldelade till rollen**, väljer du **Tilldela/exkludera användare manuellt**.
 4. I **Tilldela användare till eller exkludera användare från rollen** visas användare som inte har tilldelats roll med **Tilldelningsläge** med inställningen **Ingen**. Välj en eller flera användare som ska tilldelas rollen.
 5. I **Åtgärdsfönstret**, välj **Tilldela till roll**. **Tilldelningsläget** uppdateras till **Manuellt** och användarna har nu fått en ny roll tilldelad.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

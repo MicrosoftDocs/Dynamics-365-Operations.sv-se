@@ -41,3 +41,6 @@ I versioner före release 10.0.13 får du följande felaktiga varningsmeddelande
 > Du utför en lagerstängning med ett datum %1. Ingen kostnadskalkylering med automatisk lageravräkning med datum %1 matchningsperiodens slut har registrerats. Kom ihåg att utföra en kostnadskalkylering med automatisk lageravräkning med datum %1 matchningsperiodens slut. Värderingen av lager, sålda varor och avvikelser kan inte vara korrekt i delredovisning eller redovisning förrän denna har utförts.
 
 Det här problemet har korrigerats i version 10.0.13 och senare. Mer information finns i [KB 4582468](https://fix.lcs.dynamics.com/Issue/Details?kb=4582468&bugId=468844&dbType=3&qc=fcd64080446a27382cfde3e4c3bdcfb714279185932259cd11ceb0d500617296).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

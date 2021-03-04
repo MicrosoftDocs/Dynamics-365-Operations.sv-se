@@ -142,3 +142,6 @@ Organisationer kan erbjuda många olika typer av tjänstledighet till medarbetar
 ### <a name="view-performance-information-for-direct-and-extended-reports-in-manager-self-service"></a>Visa prestandainformation för direkta och utökade rapporter i Självbetjäning för chefer
 
 Med ett nytt alternativ kan cheferna visa prestandan för både deras direktrapporter och de utökade rapporterna. För närvarande kan linjechefer tilldela och uppdatera resultatmål och utfärda nya recensioner. Dessutom kan direktchefer och deras medarbetare underhålla och uppdatera prestandajournaler för att säkerställa att processen för resultatöversynen går smidigt. När den här ändringen har implementerats kan chefer visa och underhålla prestandarelaterad information för sina utökade rapporter utöver deras underställda.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

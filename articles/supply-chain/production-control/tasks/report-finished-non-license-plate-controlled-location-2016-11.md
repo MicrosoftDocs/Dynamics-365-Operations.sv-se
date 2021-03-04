@@ -62,3 +62,6 @@ Den här uppgiftsguiden visar ett exempel på rapporteringen som slutförd till 
 18. Klicka på Information om arbete.
     * När tillverkningsordern rapporterades som färdig, genererades inget arbete för plats. Detta inträffar, eftersom en arbetspolicy definieras som hindrar arbete från att genereras när produkten L0101 rapporterats som färdig till plats 001.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

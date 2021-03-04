@@ -97,3 +97,6 @@ Om du emellertid använder villkorsmoms kvittar du med skattemyndigheten när du
 Om du använder den efterdaterade checken som betalningsmetod när betalningen skapas, töms inte bankkontot. I vissa länder blir momsen "realiserad" skuld när betalningen avmarkerar banken, vilket innebär att den efterdaterade checken kvittas. Du kan aktivera det genom att välja **realisera den villkorliga momsen när efterdaterade checkar hämtas** i **kontanter och bankhantering > inställningar > parametrar för kassa-och bankhantering > efterdaterade checkar**.
 
 Mer information finns i [Ställ in källskatt](tasks/set-up-withholding-tax.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

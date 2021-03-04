@@ -69,3 +69,6 @@ Detta är den fjärde av fem procedurer som demonstrerar kundbetalningsprocessen
 8. Klicka på OK.
 9. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

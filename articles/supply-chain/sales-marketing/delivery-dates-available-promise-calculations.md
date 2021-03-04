@@ -81,3 +81,6 @@ Därför anges transportdatum som 10 dagar från nu, baserat på beräkningen av
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ Följande illustration visar saldot för anläggningstillgångar.
 Följande illustration visar den verifikation som bokförs.
 
 [![Bokfört nettovärde](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

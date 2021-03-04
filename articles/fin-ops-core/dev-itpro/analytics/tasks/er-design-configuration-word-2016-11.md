@@ -99,3 +99,6 @@ För närvarande används Excel-dokumentet som en mall för att skapa utdata i O
 16. Klicka på **OK**.
 17. Klicka på **OK**. Analysera den skapade utleveransen. Observera att skapade utdata visas i Word-format och innehåller information om de behandlade betalningarna.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

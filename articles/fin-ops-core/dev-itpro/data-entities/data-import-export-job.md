@@ -243,3 +243,6 @@ För att hämta den arkiverade körningshistoriken ska du gå till arbetsytan f�
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Det här avsnittet beskriver steg för att visa statusvärdet för ett dokument 
     - Knappen **Tilldela om** öppnar en dialogruta där du kan tilldela en arbetsuppgift till en annan användare.  
     - Kontrollera att avsnittet **Spårningsuppgifter** expanderas. I det här avsnittet kan du visa arbetsflödeshistoriken för det valda dokumentet.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

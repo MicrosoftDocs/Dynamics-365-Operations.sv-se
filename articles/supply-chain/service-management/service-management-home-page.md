@@ -71,3 +71,6 @@ Servicehantering kan integreras med följande moduler:
 
   
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

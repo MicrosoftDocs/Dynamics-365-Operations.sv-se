@@ -68,3 +68,6 @@ Den här artikeln visar hur du skapar förmånselement som ska användas när du
 16. Markera ett alternativ i fältet Bas.
 17. Ange ett tal i fältet Belopp eller tariff.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

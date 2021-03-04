@@ -175,3 +175,6 @@ public static void initializeReportControl(
 | showFilterPane   | Ett booleskt värde som anger om filterrutan ska visas (**sant**) eller döljas (**falsk**).     |
 | showNavPane      | Ett booleskt värde som anger om navigeringsrutan ska visas (**sant**) eller döljas (**falsk**). |
 | defaultFilters   | Standardfilter för Power BI-rapporten.                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

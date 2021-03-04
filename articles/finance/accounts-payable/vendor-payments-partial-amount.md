@@ -54,3 +54,6 @@ Du kanske vill göra en delvis betalning, där beloppet som fortfarande måste k
 
 
 Mer information finns i [Översikt över leverantörsbetalning](../cash-bank-management/tasks/vendor-payment-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

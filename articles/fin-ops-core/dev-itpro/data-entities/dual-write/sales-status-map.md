@@ -150,3 +150,6 @@ Så här aktiverar du attribut **isIntegrationUser** följ dessa steg.
     ![Ändra värdet för fältet användarläge för integration](media/sales-map-user-mode-yes.png)
 
 Dina försäljningsorder är nu mappade.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

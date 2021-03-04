@@ -60,3 +60,6 @@ Detta är användbart om du vill få en översikt över förväntad artikelförb
 8. Klicka på knappen **Visa dimensioner** om du vill visa produkt-, lagrings- eller spårningsdimensioner som hör till artiklarna. Markera relevanta kryssrutor och klicka på **OK**.
 
 ![Figur 1](media/02-capacity-planning.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

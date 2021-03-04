@@ -276,3 +276,6 @@ I det här scenariot har klusterplockningen slutförts och användaren måste f�
     Du får ett meddelande att "klustret är slutfört".
 
 Nu kan du använda **försäljningsplockning** för att plocka den resterande kvantiteten. Du kan sedan använda menyobjektet **försäljningslast** för att flytta artiklarna från mellanlagringsplatsen till lastkaj.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

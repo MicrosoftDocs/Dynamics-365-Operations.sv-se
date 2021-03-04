@@ -113,3 +113,6 @@ Varje formatversion kan konfigureras som tillgänglig för användning med start
 1. Visa eller dölj avsnittet om ISO-koder för land/region.
     * Varje formatåtkomst kan begränsas genom att identifiera särskilda länder/regioner som ett format kan tillämpas på. När listan över länder/regioner för ett visst format är tomt, kan formatet användas i alla företag. När vissa ISO-koder för land/region infogas i listan över länder/regioner kan formatet endast användas i företag vars primära adress ligger i landet/regionen.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

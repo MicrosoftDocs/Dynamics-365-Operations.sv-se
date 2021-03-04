@@ -111,3 +111,6 @@ Ta bort periodiseringsposter för ett specifikt plan- och datumintervall. Period
 
 [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)</br>
 [Skapa en plan för tjänstledighet och frånvaro](hr-leave-and-absence-plans.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

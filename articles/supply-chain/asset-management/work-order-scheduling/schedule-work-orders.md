@@ -138,3 +138,6 @@ Så här visar och arbetar du med Gantt-diagrammet:
     - Om du vill omplanera en visad arbetsorder väljer du och drar den till lämpligt nytt datum och aktuell tid.
 
 1. Om du har gjort några ändringar väljer du **Spara** i åtgärdsfönstret för att spara dem.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

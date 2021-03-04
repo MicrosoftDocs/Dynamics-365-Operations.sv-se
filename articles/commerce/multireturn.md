@@ -54,3 +54,6 @@ När ordern har valts visas en lista över alla produkter på alla fakturor som 
 
 Om ordern har returnerats till fullo kommer momsbeloppet som har returnerats till kunden att vara lika med det momsbelopp som ursprungligen debiterades.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

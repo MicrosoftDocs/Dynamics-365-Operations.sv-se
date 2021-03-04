@@ -91,3 +91,6 @@ Om problemet fortfarande inte är åtgärdat följer du stegen nedan.
 4. Öppna sidan **Tabellmappning** från sidan **Dubbelriktad skrivning** i Finance and Operations-appen.
 5. Om attributet inte fylls i automatiskt på kartan lägger du till det manuellt genom att klicka på knappen **Lägg till attribut** och sedan på **Spara**. 
 6. Markera mappningen och klicka på **Kör**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

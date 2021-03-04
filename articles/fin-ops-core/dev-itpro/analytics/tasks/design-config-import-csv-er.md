@@ -124,3 +124,6 @@ För testningsändamål, utför formatmappning med den 1099entriescsv.csv-fil so
     * Granska utdata i XML-format, vilket representerar de data som har importerats från den valda filen och integrerats i datamodellen. Observera att alla 7 raderna i importerade CSV-filen har bearbetats. Det innehållande fältets rubrikrad 1 hoppades över, 4 transaktioner analyserades korrekt och 2 transaktioner erkändes som otillåtna.
 3. Stäng sidan.
 4. Stäng sidan.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

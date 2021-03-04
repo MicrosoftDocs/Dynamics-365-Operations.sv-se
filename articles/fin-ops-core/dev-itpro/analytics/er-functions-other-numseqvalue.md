@@ -105,3 +105,6 @@ När datakällan **NumSeq** kallas, returneras det nya genererade värdet för n
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Andra (företagsdomänspecifika) funktioner](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

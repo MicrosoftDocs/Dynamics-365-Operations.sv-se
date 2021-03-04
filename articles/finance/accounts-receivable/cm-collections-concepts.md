@@ -122,3 +122,6 @@ Du kan bearbeta NSF-betalningar, genom att välja **NSF-betalning** på sidan **
 [Kreditspärrar för försäljningsorder](./cm-sales-order-credit-holds.md)
 
 [Periodiska kredithanteringsuppgifter för kund](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

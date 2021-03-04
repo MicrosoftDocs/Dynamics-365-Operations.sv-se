@@ -39,3 +39,6 @@ Den här proceduren visar hur du skapar en inköpsorder för en engångsleverant
 5. Klicka på OK.
     * Inköpsordern kan nu slutföras och bearbetas som alla andra order. Det finns inga särskilda resursegenskaper som är relaterade till hur detta ska göras. Fakturan tar hänsyn en transaktion som förfaller på leverantörskontot som skapades med ordern och betalningen bearbetas därefter.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

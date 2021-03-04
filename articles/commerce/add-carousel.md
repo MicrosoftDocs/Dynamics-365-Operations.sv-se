@@ -86,3 +86,6 @@ Om du vill lägga till en karusellmodul på en ny sida och ställa in de obligat
 [Innehållsblockmodul](add-hero-module.md)
 
 [Modul för videospelare](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

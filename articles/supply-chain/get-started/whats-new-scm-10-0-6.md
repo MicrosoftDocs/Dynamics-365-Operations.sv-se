@@ -71,3 +71,6 @@ De [borttagna eller föråldrade funktionerna i Dynamics 365 Supply Chain Manage
 Innan någon funktion tas bort från produkten visas understrykningsmeddelandet i ämnet [borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före avhämtningen.
 
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

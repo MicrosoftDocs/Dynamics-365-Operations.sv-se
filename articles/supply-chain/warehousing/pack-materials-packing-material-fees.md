@@ -112,3 +112,6 @@ Du kan skriva ut vikter för förpackningsmaterial på fakturan och ange vem som
 
 1. Gå till **Kundreskontra \> Inställningar \> Parametrar för kundreskontra**.
 1. På fliken **Uppdateringar** på snabbfliken **Faktura** ange alternativet **Skriv ut vikt på förpackningsmaterial** till **Ja**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

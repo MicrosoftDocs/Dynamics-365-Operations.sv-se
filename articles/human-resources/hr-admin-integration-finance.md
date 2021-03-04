@@ -255,3 +255,5 @@ Det plats-ID som används för arbetaradressen är inte en del av en nummerserie
 I följande illustration visas ett exempel på en mallmappning i Dataintegrerare. 
 
 ![Mallmappning](./media/IntegrationMapping.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

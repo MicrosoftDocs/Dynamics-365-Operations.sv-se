@@ -49,3 +49,6 @@ Värdeströmmar är driftenheter som grupperar ett eller flera produktionsflöde
 2. Stäng sidan.
 3. Uppdatera sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

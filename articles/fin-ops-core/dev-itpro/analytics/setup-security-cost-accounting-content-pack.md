@@ -63,3 +63,6 @@ Vi utgår från att din organisation vill begränsa dataåtkomst. Om säkerhetsp
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 Mer information om säkerhet för Power BI på radnivå finns i [Hantera säkerheten av din modell i Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

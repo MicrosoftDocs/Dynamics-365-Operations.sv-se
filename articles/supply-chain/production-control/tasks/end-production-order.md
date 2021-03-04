@@ -46,3 +46,6 @@ Den här proceduren visar hur du avslutar en produktionsorder. Det demonstration
 1. Klicka på Hantera kostnader i åtgärdsfönstret.
 2. Klicka på Visa kostnadsjämförelse.
     * När du har avslutat produktionsordern kan du jämföra den uppskattade självkostnaden med den verkliga självkostnaden för att få en överblick över produktionsavvikelserna.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

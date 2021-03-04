@@ -56,3 +56,6 @@ Eftersom Dynamics 365 Commerce ger stöd för "vad du ser är vad du får" (WYSI
 [Lägga till skriptkod på webbsidor för att stödja telemetri](add-telemetry.md)
 
 [Hantera säkerhetspolicy för innehåll (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

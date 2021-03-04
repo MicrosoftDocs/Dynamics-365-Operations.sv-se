@@ -63,3 +63,6 @@ Om enskilda avsnitt i arbetsytan har filter kan du filtrera varje avsnitt separa
 [![avsnittsfilter-för-arbetsyta](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Välj eller ange ett värde i fältet för att filtrera innehållet i avsnittet på samma sätt som med filtret för hela arbetsytan.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

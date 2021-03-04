@@ -73,3 +73,6 @@ Fiktiva strukturlistor kan också användas för en strukturlista som har ett fl
 I bilden nedan (a) är strukturlistan för produkt G och del F och (b) flödesbladet för produkt G och del F.
 
 ![Produkt G och del F med bladflöde](media/product-G-part-F-with-route-sheet.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

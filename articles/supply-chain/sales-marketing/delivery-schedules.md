@@ -57,3 +57,6 @@ När du bekräftar försäljningsofferter, visar de resulterande försäljningso
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

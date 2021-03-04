@@ -41,3 +41,6 @@ I den här proceduren visas hur du frisläpper en produktionsorder. Det demonstr
 6. Klicka på OK.
 7. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

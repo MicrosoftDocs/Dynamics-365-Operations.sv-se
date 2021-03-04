@@ -67,3 +67,6 @@ Om **Leverantör** konfigureras som en ER-datakälla som refererar till tabellen
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Lista över funktioner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

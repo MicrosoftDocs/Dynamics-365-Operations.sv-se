@@ -62,3 +62,6 @@ Kom ihåg att köra en lagerstängning från och med %3 (31-01-2019) som matchar
 ## <a name="inventory-aging-report-discrepancies"></a>Avvikelser för lagerföråldringsrapport
 
 **Åldersfördelningsrapport för lager** visar olika värden när den visas på olika lagringsdimensioner (t.ex. webbplats eller lagerställe). Mer information om rapportlogik finns i rapport över [exempel på lagerföråldringsrapport och logik](inventory-aging-report.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

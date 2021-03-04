@@ -99,3 +99,6 @@ Du kan använda fliken **Åsidosättning** för att åsidosätta specifika värd
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

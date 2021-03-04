@@ -238,3 +238,6 @@ Formatet måste först vara tillgängligt i ER konfigurationer. Om denna föruts
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

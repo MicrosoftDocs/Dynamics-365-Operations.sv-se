@@ -38,3 +38,6 @@ Bilden nedan är en illustration av gränssnitten till andra moduler i Finance a
 ![Översikt över hur Tillgångshantering integrerar](media/overview-integrate2.jpg)
 
 Tillgångshantering gör det möjligt för dig att effektivt hantera och utföra uppgifter som rör hantering och service av många typer av utrustning i ditt företag, till exempel maskiner, produktionsutrustning och fordon. Tillgångshantering stödjer lösningar inom många branscher.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

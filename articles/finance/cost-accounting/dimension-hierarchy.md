@@ -333,3 +333,6 @@ Inställningar för Hierarki för åtkomstlista används för att bestämma vilk
 > [!NOTE] 
 > - Innan Hierarki för åtkomstlista kan påverka data i Power BI måste hierarkiåtkomst och säkerhet på radnivå i Power BI paras ihop. Mer information finns i [ställa in säkerhet för kostnadsredovisningens innehållspaket](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Hierarki för åtkomstlista hjälper inte export av data till Excel. Därför ska detta rapportverktyg bara användas av kostnadsrevisorer och chefer som måste ha fullständig behörighet för att visa data.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

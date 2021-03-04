@@ -110,3 +110,6 @@ Om du vill lägga till anpassade navigeringsalternativ på navigeringsmenyn föl
 [Skapa URL för webbsida](create-page-url.md)
 
 [Arbeta med publiceringsgrupper](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

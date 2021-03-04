@@ -71,3 +71,6 @@ I skärmbilden nedan visas ett exempel på en beräkning av artikel-där-den-anv
 
 ![Exempel på artikel där beräkningen används](media/12-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

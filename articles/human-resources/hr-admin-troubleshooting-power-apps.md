@@ -44,3 +44,6 @@ Observera att olika Microsoft Office SKU:er också ger rättigheten tillsammans 
 
 1. Gå till [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).
 2. Skapa miljöerna genom att följa instruktionerna i [Etablera Personal](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

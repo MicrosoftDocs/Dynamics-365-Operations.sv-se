@@ -116,3 +116,6 @@ Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

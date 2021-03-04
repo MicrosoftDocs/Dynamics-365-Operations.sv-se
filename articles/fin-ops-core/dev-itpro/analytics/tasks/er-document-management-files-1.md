@@ -74,3 +74,6 @@ Du kan skapa en egen konfiguration av kundfakturamodellen baserat på den konfig
 3. Ange "Customer invoice model (custom)" i namnfältet.
 4. Klicka på Skapa konfiguration.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

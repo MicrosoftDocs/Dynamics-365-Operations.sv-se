@@ -55,3 +55,6 @@ Den här proceduren är avsedd för att återställa en felaktig kanban-jobbstat
     * Välj samma jobb.  
     * Observera att jobbstatusen för kanban-jobbet återställs till Planerat, vilket anges med en tom kanban-ikon.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

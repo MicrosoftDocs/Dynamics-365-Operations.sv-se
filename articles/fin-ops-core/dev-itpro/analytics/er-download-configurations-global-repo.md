@@ -90,3 +90,6 @@ I det här avsnittet beskrivs hur du hämtar [konfigurationer av elektronisk rap
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

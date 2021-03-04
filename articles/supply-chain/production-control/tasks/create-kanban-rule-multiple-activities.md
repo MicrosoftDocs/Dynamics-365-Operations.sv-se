@@ -59,3 +59,6 @@ Den här proceduren visar hur du skapar en kanban-regel som omfattar flera aktiv
     * Observera att kanban har två processjobb från produktionsflödet. Det första är SpeakerAssemblyAndPolish och det andra är SpeakerTestAndPackaging.  
     * Detta är det sista steget!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

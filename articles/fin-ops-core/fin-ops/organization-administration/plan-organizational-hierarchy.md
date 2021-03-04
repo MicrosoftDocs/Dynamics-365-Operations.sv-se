@@ -241,3 +241,6 @@ Tänk på följande när du implementerar en organisationshierarki:
 - Innan du utformar stora omstruktureringsscenarier använder du hierarkins giltighetsdatum för att utföra en följdanalys och ett valideringstest.
 - Använd utkastläge för att ändra en hierarki innan du publicerar en ny version i en produktionsmiljö.
 - Begränsa antalet personer som har behörighet att lägga till eller ta bort organisationer från en hierarki i en produktionsmiljö. Ett lägre antal minskar risken för kostsamma misstag och behovet av korrigeringar.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

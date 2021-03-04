@@ -81,3 +81,6 @@ I följande illustrationer visas en mallmappning i dataintegrering.
 ### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Lagerställen (Supply Chain Management till Field Service): lagerställe
 
 [![Mallmappning i dataintegrering](./media/Warehouse1.png)](./media/Warehouse1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

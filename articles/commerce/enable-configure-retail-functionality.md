@@ -69,3 +69,6 @@ Efter initialiseringen är klar måste du konfigurera ytterligare handelsdata. N
 - Handelskanaler
 - Register och enheter
 - Sortiment
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

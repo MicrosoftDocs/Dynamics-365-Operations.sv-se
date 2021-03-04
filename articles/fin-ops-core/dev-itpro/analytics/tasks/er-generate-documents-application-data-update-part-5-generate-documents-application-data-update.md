@@ -78,3 +78,6 @@ Granska den skapade XML-filen.
 6. Stäng sidan.
 7. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ I den här proceduren beskrivs processen för att ställa in ett massanställnin
     * Du kan välja avdelning för de nya befattningarna.  
 13. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

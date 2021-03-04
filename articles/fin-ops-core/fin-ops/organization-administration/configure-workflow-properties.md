@@ -179,3 +179,6 @@ Gör på följande sätt om du vill kommentera de ändringar som du har utfört 
 2. Skriv dina kommentarer i fältet **Ange kommentarer om arbetsflödet**.
 3. Granska dina kommentarer. När du har lagt till kommentarer kan du inte ändra dem.
 4. Klicka på **Lägg till** för att lägga till dina kommentarer i området **Kommentarshistorik**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

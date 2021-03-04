@@ -59,3 +59,6 @@ Aktivera sedan konfigurationsnyckeln för **konstruktionsändringshantering** ge
 1. Öppna **Systemadministration \> Inställningar \> Licenskonfiguration**.
 1. Expandera noden **Handel** och markera kryssrutan **konstruktionsändringshantering**.
 1. Inaktivera underhållsläge enligt beskrivningen i [underhållsläge](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

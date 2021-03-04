@@ -104,3 +104,6 @@ För att lägga till en modul för mediegalleri till en marknadsföringssida, f�
 [Behållarmodul](add-container-module.md)
 
 [Överför bilder](dam-upload-images.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

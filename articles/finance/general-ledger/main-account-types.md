@@ -41,3 +41,6 @@ För mer information, se [Ställ in huvudkontokategorier](tasks/set-up-main-acco
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

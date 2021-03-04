@@ -48,3 +48,6 @@ I den här proceduren visas stegen för att skapa Påfyllnadsregler. Påfyllnads
 14. Ange ett nummer i fältet Vikt.
 15. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

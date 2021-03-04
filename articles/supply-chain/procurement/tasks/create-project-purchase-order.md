@@ -48,3 +48,6 @@ Den här proceduren visar hur du skapar en inköpsorder för projekt. I den här
     * Kontrollera att försäljnings- och självkostnadspriser är tillgängliga. Ange informationen om de inte är tillgängliga, men behövs.  
 14. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

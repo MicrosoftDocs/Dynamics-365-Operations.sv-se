@@ -103,3 +103,6 @@ I den här proceduren beskrivs hur du skapar en enskild frisläppt produkt i sam
 12. Hitta och markera önskad post i listan.
 13. Klicka på länken på den valda raden i listan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

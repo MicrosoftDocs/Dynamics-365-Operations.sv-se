@@ -152,3 +152,6 @@ Du kan kontrollera antalet redovisningstransaktioner som skapas när du bokför 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

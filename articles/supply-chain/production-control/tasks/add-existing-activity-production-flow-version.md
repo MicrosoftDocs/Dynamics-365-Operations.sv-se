@@ -56,3 +56,6 @@ Denna uppgift kräver produktionsflöde med version och aktiviteter som redan ha
 3. Ange eller välj ett värde i fältet Activity.
 4. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

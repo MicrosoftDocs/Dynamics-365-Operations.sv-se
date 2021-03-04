@@ -48,3 +48,6 @@ Den här proceduren går igenom hur du skapar ekonomiska dimensioner för kassar
 17. I listan du söker efter och väljer dimensionsvärdet för registret som uppdateras.
 18. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

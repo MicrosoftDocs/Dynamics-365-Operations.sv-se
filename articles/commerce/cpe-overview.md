@@ -64,3 +64,6 @@ Om du vill etablera utvärderingsmiljö för Commerce, se [Etablera en utvärder
 [Konfigurera valfria funktioner för en Dynamics 365 Commerce utvärderingsmiljö](cpe-optional-features.md)
 
 [Dynamics 365 Commerce utvärderingsmiljö – vanliga frågor](cpe-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

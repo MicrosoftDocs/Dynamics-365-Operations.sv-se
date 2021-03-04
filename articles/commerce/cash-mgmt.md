@@ -62,3 +62,6 @@ I Retail version 10.0.3 och senare tillhandahålls även följande funktioner so
 - Under avstämningen, om den valda transaktionen inte balanserar, måste användaren ange en beskrivning av orsaken till den obalanserade avstämningen. Användarna kan välja en enda transaktion och sedan stämma av den med relevant orsaksbeskrivning som de kräver.
 - Användarna kan fortsätta att stämma av och avstämma av transaktioner tills skiftet stängs. När ett skift har stängts kan transaktionerna inte avstämmas.
 - När en användare väljer att stänga ett skift, validerar Handel att det inte finns några ej avstämda kassahanteringstransaktioner i skiftet. Användare kan inte stänga ett skift om det finns ej avstämda transaktioner.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

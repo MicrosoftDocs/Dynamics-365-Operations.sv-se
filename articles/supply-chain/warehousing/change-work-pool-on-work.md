@@ -149,3 +149,6 @@ Du kan använda sidan **Arbetsuppgifter** för att se det arbete som skapades oc
 > När **Ändra arbetspool** visas kanske fältet **arbetspool-ID** är tomt som standard. Om fältet är tomt när du väljer **OK** för att tillämpa ändringarna tas arbetspoolen bort helt från arbetet.
 >
 > Förutom att växla mellan arbetspooler kan du använda den här proceduren för att lägga till en resurspool i en arbetsuppgift som inte har en eller för att ta bort en resurspool från valfri arbetsuppgift som har en sådan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

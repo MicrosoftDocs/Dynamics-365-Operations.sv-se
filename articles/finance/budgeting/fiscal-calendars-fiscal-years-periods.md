@@ -64,3 +64,6 @@ Du kan använda sidan Redovisningskalender om du vill visa information om räken
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

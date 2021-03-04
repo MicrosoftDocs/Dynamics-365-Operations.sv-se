@@ -99,3 +99,6 @@ Mer hj채lp 채r tillg채nglig som uppgiftsguider i Finance. Klicka p책 knappen Hj�
 #### <a name="videos"></a>Videoklipp
 
 Ta en titt p책 instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen p책 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

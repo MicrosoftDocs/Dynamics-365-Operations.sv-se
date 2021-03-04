@@ -113,3 +113,6 @@ Du kommer att köra den skapade modellmappningen för testning för att se hur d
     * Välj Bläddra och välj filen Response4.xml.
 16. Välj OK.
     * Granska den genererade utleveransen. Svarstypen har nu korrekt identifierats att överensstämma med Response1.xml-fil.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Du kan koppla infokoder så att, när en infokod utlöses, utlöses även en ann
 **Exempel 2: Länka infokoder till  infokodgrupper**
 
 När du säljer vissa produkter, till exempel mobila enheter, vill du alltid samla in specifik information, till exempel telefonnummer, den mobila utrustningsidentifieraren (MEID) och serienummer. Men du vill också hämta in olika information för en Tablet PC kontra en mobiltelefon. Du kan ställa in en informationkodgrupp som innehåller prompt för telefonnummer, MEID och serienummer och sedan informationkodgruppen länkar till en enskild informationskod. När den produktspecifika informationskoden utlöses, kan informationskodgruppen sedan utlösas för att göra det möjligt för dig att samla in gemensamma data, utan att behöva definiera flera uppsättningar av kopplade informationskoder för varje enhet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

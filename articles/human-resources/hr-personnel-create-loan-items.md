@@ -59,3 +59,6 @@ Låneartiklar är poster som gör det enklare att spåra fysiska artiklar, till 
 14. Klicka på OK.
 15. Uppdatera sidan.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

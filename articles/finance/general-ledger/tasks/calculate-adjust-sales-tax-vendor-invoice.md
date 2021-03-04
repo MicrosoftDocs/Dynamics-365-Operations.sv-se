@@ -44,3 +44,6 @@ I det här avsnittet beskriver hur du justerar momsen på en leverantörsfaktura
 13. Välj **OK**.
 14. Välj **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

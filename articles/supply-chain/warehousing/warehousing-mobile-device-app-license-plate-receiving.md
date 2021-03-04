@@ -105,3 +105,6 @@ Mer information om menyartiklar för mobila enheter finns i [ställa in mobila e
 Mer information om produktionsscenariot *Rapportera som slutförd* se [Policyer för lagerarbete – översikt](warehouse-work-policies.md).
 
 Mer information om inkommande belastningshantering finns i [Lagerhantering av inkommande laster för inköpsorder](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

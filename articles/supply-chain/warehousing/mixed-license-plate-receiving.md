@@ -49,3 +49,6 @@ Du måste skapa ett nytt menyalternativ med läge för arbetsuppgifter som inte 
 - Inleverans och inlagring för blandad registreringsskylt
 
 Alternativen för att identifiera källdokumentraderna är inköpsorderartikel, inköpsorderrad, returorder, överföring av orderartikel och överföringsorderrad. Dessa alternativ kan ändra mottagningsordningen på en enda registreringsskylt. Det sista alternativet är per beläggningsartikel. Du kan lägga till flera artiklar på en registreringsskylt, men du kan inte växla mellan flera olika beläggningar.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

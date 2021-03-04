@@ -54,3 +54,6 @@ Ytterligare resurser
 
 [Skapa ett autogiromedgivande för en kund](tasks/create-direct-debit-mandate-customer.md) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

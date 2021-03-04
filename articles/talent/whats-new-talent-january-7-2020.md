@@ -53,3 +53,6 @@ Denna ändring lägger till ett borttagningsalternativ i formuläret **arbetare 
 5. Ange behörigheten **Ta bort** till Bevilja.
 6. Välj fliken **Opublicerade objekt**.
 7. Markera **Publicera alla**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Använd den här proceduren för att konfigurera arbetsytan Kostnadskontroll så
 27. Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadsobjekt.
     * När du har valt en dimensionshierarki för kostnadsobjekt ska du expandera kostnadselementets dimensionshierarki om du vill visa önskade kostnadsvärden. Exempelvis kan du expandera hierarkin till Tillverkningsomkostnader för att visa värdet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

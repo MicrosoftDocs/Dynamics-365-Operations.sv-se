@@ -50,3 +50,6 @@ För att importera och exportera produktdata måste du använda dataenheter. Fö
 
 > [!NOTE]
 > Du kan använda dataentiteten **frisläppta produkter V2** för att importera produkter till systemet endast om den delade produkten redan har skapats. Annars, om du vill importera produkter till systemet, måste du använda **produktskapande** dataentitet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

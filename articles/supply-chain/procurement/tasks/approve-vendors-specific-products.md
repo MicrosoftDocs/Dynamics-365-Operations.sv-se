@@ -62,3 +62,6 @@ I den här proceduren visas hur du godkänner leverantörer för specifika produ
 31. Stäng sidan.
 32. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

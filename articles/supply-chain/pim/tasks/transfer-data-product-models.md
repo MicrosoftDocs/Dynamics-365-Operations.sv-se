@@ -37,3 +37,6 @@ När du exporterar data för en produktkonfigurationsmodell krävs det att du ha
 5. Klicka på Exportera produktmodell.
     * Hämtbeteendet varierar från webbläsaren till webbläsaren beroende på hur säkerhetinställningarna ställs in.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

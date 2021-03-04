@@ -50,3 +50,6 @@ Avskrivning utan avrundning beräknas som 2 444,44. Som följande tabell visar v
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

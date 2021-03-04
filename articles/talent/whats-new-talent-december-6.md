@@ -143,3 +143,6 @@ Uppdaterade mappningar ska se ut så här.
 
 ![Transformering av fältet Kön](./media/WorkerTransform.png)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

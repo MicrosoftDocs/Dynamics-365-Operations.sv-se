@@ -105,3 +105,6 @@ Möjligheten att återkalla en journal i ett arbetsflöde med statusen "oåterka
 
 ## <a name="delete-journal-lines"></a>Radera journalrader
 Möjligheten att snabbt ta bort alla journalrader är aktiverad i en journal under **funktioner** > **ta bort journalrader**. Om du vill aktivera den här funktionen väljer du **funktionshantering**, välj **ta bort optimeringar för journalprestanda**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Om du vill skapa och bokföra journalposten för omklassificering av kortfristig
 4. Aktivera parametern **Bokför**. Om posten ska skapas men inte bokföras lämnar du den här parametern inaktiverad.
 5. Aktivera parametern **Förhandsgranska före bokföring** för att visa posten innan den bokförs.
 6. Välj **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

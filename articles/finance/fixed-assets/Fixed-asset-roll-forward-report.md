@@ -67,3 +67,6 @@ Följande register beskriver de fält som är tillgängliga i rapporten.
 |           Avyttring: Kassationsvärde            |                                                                                               Kassationsvärde för förteckning över anläggningstillgångar med avyttring - kassationstransaktion.                                                                                               |
 |           Avyttring: Vinst/förlust            |                                                                                 Vinst- eller förlustvärdet som beräknas som en del av avyttringstransaktionen för förteckning över anläggningstillgångar.                                                                                 |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

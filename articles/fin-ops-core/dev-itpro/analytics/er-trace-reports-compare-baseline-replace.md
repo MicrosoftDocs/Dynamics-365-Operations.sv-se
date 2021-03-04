@@ -207,3 +207,6 @@ Om du vill importera baslinjeinställningar från en XML-fil som är lagrad på 
 
 - [Spåra genererade rapportresultat och jämför dem med baslinjevärden](er-trace-reports-compare-baseline.md)
 - [Uppgiftsinspelarresurser](../user-interface/task-recorder.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

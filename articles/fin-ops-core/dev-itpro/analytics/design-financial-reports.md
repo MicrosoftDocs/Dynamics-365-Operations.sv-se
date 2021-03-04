@@ -197,3 +197,6 @@ I den här övning ska du skapa en ny rapport. Rapporten är en resultaträkning
 [Visa ekonomiska rapporter](../../../finance/general-ledger/view-financial-reports.md)
 
 [Dynamics 365 Finance-blogg](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

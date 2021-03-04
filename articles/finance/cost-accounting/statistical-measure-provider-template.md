@@ -346,3 +346,6 @@ Om den fördefinierad dimensionsmedlemsallokeringsbasen för el tilldelas som en
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Allokeringsunderlag](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

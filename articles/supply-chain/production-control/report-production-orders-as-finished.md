@@ -48,3 +48,6 @@ Du kan ställa in en produktionsorder som **Rapportera som färdig** genom uppda
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

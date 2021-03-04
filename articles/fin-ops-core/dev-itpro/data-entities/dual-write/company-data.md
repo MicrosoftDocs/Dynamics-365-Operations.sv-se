@@ -102,3 +102,6 @@ Om du vill använda filtrering baserat på företagets kontext i dina anpassade 
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Använd företagets kontext":::
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

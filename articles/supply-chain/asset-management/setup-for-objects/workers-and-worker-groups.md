@@ -64,3 +64,6 @@ Du kan också skapa underhållsarbetargrupper och associera underhållsarbetare 
 6. Om en resursgrupp ska relateras till den valda gruppen för underhållsarbetare väljer du **kopiera från resursgrupp**. i fältet **grupp** väljer du den resursgrupp som du vill kopiera kalenderinställningar från. Välj sedan i fältet **arbetargrupp** den arbetargrupp som du vill kopiera resursgruppens kalenderinställningar till. Det här steget är endast relevant om du vill att underhållsarbetare ska använda kalendern som är relaterad till en resurs (produktionsgruppen) vid schemaläggning av arbetsorder.
 
     Fältet på snabbfliken **Detaljer** visar antalet underhållsarbetare som har ställt in den valda underhållsarbetargruppen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

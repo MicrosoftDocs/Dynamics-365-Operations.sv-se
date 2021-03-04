@@ -68,3 +68,6 @@ Nedan beskrivs proceduren att skapa en policy för samlad kostnad och skapa regl
     * Fortsätt tills alla kostnadsställen har mappats till deras motsvarande sekundära kostnadselement.  
 16. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

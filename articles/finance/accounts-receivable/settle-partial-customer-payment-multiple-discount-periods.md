@@ -98,3 +98,6 @@ Fakturasaldot är nu 0,00. Arnie kan visa den här informationen på sidan **Kun
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

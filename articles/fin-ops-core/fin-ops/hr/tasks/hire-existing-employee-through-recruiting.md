@@ -40,3 +40,6 @@ Ibland kan lediga befattningar fyllas av kandidater som redan är medarbetare i 
 9. Klicka på Ändra befattning.
     * Du kan också ändra kompensation vid denna tidpunkt. Om du inte tilldelar kompensation vid denna tidpunkt kan du ändra den genom att gå till arbetarformuläret, välja fliken Kompensation och sedan "Fast plan". När du har valt "Ändra befattning" uppdateras statusen för ansökningen till "Anställd".  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

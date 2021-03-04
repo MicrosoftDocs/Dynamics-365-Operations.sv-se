@@ -51,3 +51,6 @@ Det finns många olika typer av rabatter:
 - **Leveransrabatt** – En rabatt som tillämpas när transaktionssumman är mer än ett angivet belopp och ett specifikt leveranssätt (t. ex. två dagars leverans nästföljande dag) används på ordern.
 
 Både prisjusteringar och rabatter kan associeras till prisgrupper. Prisgrupper kan sedan associeras till kanaler, kataloger, anknytningar och bonusprogram.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

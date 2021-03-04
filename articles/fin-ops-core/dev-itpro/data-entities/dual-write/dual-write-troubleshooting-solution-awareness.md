@@ -45,3 +45,6 @@ På sidan **dubbelriktad skrivning** kan du få ett felmeddelande som liknar fö
 *Entiteten med namnet 'msdyn\_dualwriteentitymap' with namemapping='Logical' hittades inte i MetadataCache.*
 
 Lös problemet genom att kontrollera att kärnlösningen för dubbelriktad skrivning är installerad i Dataverse. Kärnlösningen för dubbelriktad skrivning är en förutsättning för lösningsmedvetenhet.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

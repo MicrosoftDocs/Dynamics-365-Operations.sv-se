@@ -57,3 +57,6 @@ I det här avsnittet visas hur du skapar inköpspolicyer att justera med dina af
 4. Välj **Nära**.
 - Nu kan du ställa in andra policyregler för inköpspolicyn. Observera att en policyregeltyp inte kan ha överlappande regler som är aktiva samtidigt inom en enskild anskaffningpolicy.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ När du blir ombedd att ange en orsakskod för att förklara varför du uppdater
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

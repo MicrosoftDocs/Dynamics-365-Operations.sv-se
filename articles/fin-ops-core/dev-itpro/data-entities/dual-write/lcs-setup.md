@@ -90,3 +90,6 @@ Följ dessa steg för att konfigurera dubbelriktad anslutning.
 
 > [!NOTE]
 > Du kan inte avlänka miljöer med hjälp av LCS. Om du vill ta bort länken för en miljö, öppna arbetsytan **Dataintegration** i Finance and Operations-miljön och välj sen **Ta bort länk**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Den här proceduren fokuserar på att ändra den använda kanban-regeln för en 
 7. Klicka på Avsluta.
     * Nu använder kanban-jobbet en annan kanban-regel. Det kan vara bra för att utjämna beläggningen av arbetsgrupper.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

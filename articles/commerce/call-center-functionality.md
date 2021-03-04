@@ -69,3 +69,6 @@ Den här sidan innehåller länkar till relevanta handlingar som är relaterade 
 ## <a name="configure-continuity-programs"></a>Konfigurera kontinuitetsprogram
 
 [Ställa in kontinuitetsprogram för kundtjänster](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

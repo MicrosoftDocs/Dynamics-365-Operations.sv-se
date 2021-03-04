@@ -58,3 +58,6 @@ Hur du bygger din hierarki av funktionsplatser beror på ditt företags krav på
 Följande bild visar ett exempel på funktionsplatser som är baserade på kunder.
 
 ![Diagram som visar funktionella platser baserat på kunder](media/04-overview-image.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

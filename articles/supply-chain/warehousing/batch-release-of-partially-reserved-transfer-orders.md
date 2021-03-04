@@ -64,3 +64,6 @@ Parametern **Kvantitet** anger om hela kvantiteten eller den fysiskt reserverade
 -   För att ange parametrarna **Kvantitet** och **Tillåt frisläpp av delvis frisläppta order** för överföringsorder klickar du på **Lagerstyrning** \> **Frisläpp till lagerställe** \> **Automatisk frisläppning av överföringsorder**.
 
 -   För att ange parametrarna **Kvantitet** och **Tillåt frisläppning av delvis frisläppta order** för försäljningsorder klickar du på **Lagerstyrning** \> **Frisläpp till lagerställe** \> **Automatisk frisläppning av försäljningsorder**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ Följande rapporter innehåller referensinformation om objekten:
 - [Rapport med licenskoder och konfigurationsnycklar](../sysadmin/license-codes-configuration-keys-report.md)
 - [Tillgängliga SQL Server Reporting Services-rapporter (SSRS)](SSRS-report.md)
 - [Rapport för arbetsflödestyper](../../fin-ops/organization-administration/workflow-types-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ Kvantiteten för strukturlista (BOM) är 1, och produktionskvantiteten är 110. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

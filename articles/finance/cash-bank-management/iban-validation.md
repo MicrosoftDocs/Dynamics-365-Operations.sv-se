@@ -48,3 +48,6 @@ Information om strukturen i IBAN-numret lagras i Microsoft Dynamics 365 Finance.
     Valideringen kontrollerar även att bankkontonumret stämmer överens med delen i IBAN-numret som representerar numret på bankkontot. Om bankkontonumret inte överensstämmer visas ett varningsmeddelande. Detta meddelande är bara en varning. Du kan fortsätta trots att bankkontonumret inte stämmer överens.
 
     Valideringen kontrollerar även att bankorganisationsnumret stämmer överens med delen i IBAN-numret som representerar bankorganisationsnumret. Organisationsnumret inkluderar ett banknummer och ofta ett ytterligare bankkontor. Om bankorganisationsnumret inte överensstämmer visas ett varningsmeddelande. Detta meddelande är bara en varning. Du kan fortsätta trots att bankorganisationsnumret inte stämmer överens.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

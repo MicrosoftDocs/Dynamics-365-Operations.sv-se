@@ -300,3 +300,6 @@ Mer information om ER-konfigurationsleverantörer finns i [Skapa konfigurationsl
 - [Översikt över elektronisk rapportering](general-electronic-reporting.md)
 - [Spåra körningen av ER-format för att felsöka prestandaproblem](trace-execution-er-troubleshoot-perf.md)
 - [Stödparameteranrop till ER-datakällor för typen beräknat fält](er-calculated-field-type.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

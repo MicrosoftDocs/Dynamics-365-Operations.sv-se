@@ -46,3 +46,6 @@ Om du inte har spelat upp följande uppgiftsguide, [ER Skapa erforderliga konfig
 | Beskrivning av innehåll    | Fil                                                            |
 |------------------------|-----------------------------------------------------------------|
 | ER modellkonfiguration | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

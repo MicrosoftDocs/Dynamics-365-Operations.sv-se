@@ -41,3 +41,6 @@ Detta avsnitt visar de mobila arbetsytor som är tillgängliga för användning 
 | [Försäljningsorder](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Håll dig uppdaterad om dina försäljningsorder.                                                                                                                          |  2017 januari                  |
 | [Leverantörssamarbete](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Leverantörer kan hållas uppdaterade om de inköpsorder som har skickats till dem för godkännande. De kan också visa information om nya och uppdaterade inköpsorder och kontakter. |2017 januari    |
 | [Tillgångshantering](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | På den här arbetsytan kan användare visa och skapa underhållsbegäran och arbetsorder. Användarna kan också visa de tilldelade arbetsorderjobben i en kalender eller listvy. Tillgångar och funktionella platser kan också visas och sökas efter. |2019 oktober    |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -37,3 +37,6 @@ Ekonomi- och momsdata integreras med hjälp av följande mappningar:
 
 + [Integrerad redovisning](ledger-mapping.md)
 + [Integrerat skattehuvud](tax-mapping.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

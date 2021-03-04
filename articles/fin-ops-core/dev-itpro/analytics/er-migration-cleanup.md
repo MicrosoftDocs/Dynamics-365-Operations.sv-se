@@ -57,3 +57,6 @@ Gör på följande sätt för att lösa problem med ER-mallar som du inte kan ko
 Ett liknande problem kan uppstå om du migrerar programinstansen till en annan plats som har använts som migreringsmål mer än en gång och för vilken blob-lagring redan innehåller ER-mallfiler.
 
 Eftersom du kan ha flera ER-formatkonfigurationer, kan den här processen ta lång tid. Därför rekommenderas du att använda funktionen [Säkerhetslagring av ER-mallar](er-backup-storage-templates.md) för att automatiskt återställa mallar med brutna referenser.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

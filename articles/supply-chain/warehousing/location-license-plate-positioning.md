@@ -281,3 +281,6 @@ Nu när funktionen *positionering av ID-nummer* har ställts in och lagret har m
     ![Position 1 plats](media/LocationLicensePlatePositioning.png "Position 1 plats")
 
 1. Ange det ID-nummer som du skapade för platsen och följ sedan instruktionerna för att plocka försäljningsordern.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

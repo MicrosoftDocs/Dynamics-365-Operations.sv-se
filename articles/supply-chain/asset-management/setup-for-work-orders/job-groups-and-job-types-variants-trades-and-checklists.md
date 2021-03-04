@@ -267,3 +267,6 @@ I Tillgångshantering kan du automatiskt uppdatera alla ändringar av prognoser 
 2. I dialogrutan **Uppdatera prognos för underhållsjobbtyp**, på snabbfliken **Poster som ska ingå** kan du lägga till urval för specifika underhållsjobbtyper efter behov. Välj **Filter** och välj **Välj** för att göra urvalen.
 3. På snabbfliken **Kör i bakgrunden** kan du ställa in den automatiska uppdateringen som ett batchjobb, efter behov.
 4. Starta prognosuppdateringen genom att välja **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

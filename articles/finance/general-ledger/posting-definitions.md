@@ -62,3 +62,6 @@ Följande restriktioner gäller när du skapar länkar i bokföringsdefinitioner
 Mer information finns i [Exempel på bokföringsdefinition](example-posting-definitions.md). 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

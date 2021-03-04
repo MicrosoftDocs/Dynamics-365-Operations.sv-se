@@ -259,3 +259,6 @@ Den användare som ställer in parametrarna för anbudsförfråganprocessen kan 
 - %createddate%
 
 Om en ändring krävs och skickas efter att en anbudsförfrågan har skickats, skickas anbudsförfrågan på nytt till alla inbjudna leverantörer. Det publicerade dokumentet uppdateras också på sidan **Öppna publicerad anbudsförfrågningar**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -119,3 +119,6 @@ Gör det enklare och snabbare att definiera åtgärder som är knutna till varje
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

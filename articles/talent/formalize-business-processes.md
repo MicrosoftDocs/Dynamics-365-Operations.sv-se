@@ -73,3 +73,6 @@ För att skapa eller kopiera en mall för företagsprocessen, eller för att sta
 
 Om du vill visa aktiva processer och tillhörande uppgifter, gå till arbetsytan **Affärsprocesser**
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -75,3 +75,6 @@ Konfigurationen delas med den externa organisationen och är tillgänglig för d
 ![Konfigurationen delas med en extern organisation](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
 
 6. Om du vill ta bort delning av en konfiguration som tidigare har delats med en extern organisation, markerar du konfigurationen och klickar på **Ta bort delning** innan du väljer **OK**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

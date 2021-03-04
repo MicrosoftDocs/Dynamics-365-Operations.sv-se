@@ -63,3 +63,6 @@ Den här proceduren fokuserar på att skapa en beräkningspolicy för kanban-kva
 8. Klicka på länken på den valda raden i listan.
     * Välj policyn Speaker2016 som du precis har skapat i föregående underuppgift.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

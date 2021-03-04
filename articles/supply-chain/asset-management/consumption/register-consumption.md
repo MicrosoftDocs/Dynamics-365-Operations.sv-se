@@ -95,3 +95,6 @@ När du gör förbrukningsregistreringar läggs ekonomiska dimensioner som hör 
 >[!NOTE]
 >För alla tre registreringstyperna valideras kombinationen av ekonomisk dimension, och ogiltiga kombinationer görs tomma. Detta är standardinställningen för andra Finance and Operations-appar.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

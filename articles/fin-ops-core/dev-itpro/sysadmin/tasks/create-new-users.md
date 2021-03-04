@@ -55,3 +55,6 @@ Användare som är externa till innehavaren som miljön distribuerades till mås
 4. Välj **Importera användare**.
 5. Välj **Nära**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Du kan även länka en expedieringskod till varje leveranssätt som du konfigure
 Exempelvis för order som ska levereras med flyg, nästa dag måste plockning göras på ett lagerställe kl 13 varje dag. I det här fallet kan du skapa en expedieringskod och koden kan länkas till leverans nästa arbetsdagsläge som har konfigurerats i systemet. När lagerstället skapar dess påfyllnadsplockning och lämplig expedieringskod i fältet **expediering** kan användas som ett filter så att plockning utförs endast för order som har de leveranssätt som är kopplade till koden.
 
 Dessutom när en kundtjänstorder anges kan en expedieringskod användas manuellt till försäljningsorderrubriken eller till enskilda försäljningsorderraden. Igen kan koden användas för sorterings- eller rapporteringsändamål. Ibland kan måste en order hanteras försiktigt på grund av ett problem med kundtjänst. Då kan en viss expedieringskod tillämpas på orderrubriken eller rader för att identifiera och prioritera ordern under utförandeprocessen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

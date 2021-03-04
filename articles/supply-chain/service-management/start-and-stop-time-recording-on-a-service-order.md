@@ -65,3 +65,6 @@ Använd den här proceduren om du vill starta och stoppa tidsregistrering för e
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

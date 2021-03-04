@@ -45,3 +45,6 @@ En typ av underhållbegäran definierar anslutningen med en livscykeltillståndg
 Följande illustration visar ett exempel på sidan **underhållsbegärandetyper**.
 
 ![Sidan Typer av underhållsbegäran](media/07-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

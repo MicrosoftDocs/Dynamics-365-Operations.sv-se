@@ -55,3 +55,6 @@ Flera steg måste slutföras när du vill schemalägga och köra ett underhålls
 
 > [!NOTE]
 > I allmänhet när du arbetar i Dynamics 365 Supply Chain Management och modulen **tillgångshantering** väljer du **Ny** för att skapa en ny post, väljer **redigera** för att uppdatera en befintlig post och väljer **Spara** för att spara nya eller redigerade data.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

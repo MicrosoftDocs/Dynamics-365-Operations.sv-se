@@ -57,3 +57,6 @@ I slutet av varje månad periodiserar du en månads intäkt från kundens abonne
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

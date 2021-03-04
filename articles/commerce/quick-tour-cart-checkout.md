@@ -107,3 +107,6 @@ Mer information om hur du redigerar en kassasida finns i [lägga till en kassamo
 [Översikt över sidor med produktinformation](quick-tour-pdp.md)
 
 [Översikt över sidor för kontohantering](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

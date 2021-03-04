@@ -61,3 +61,6 @@ Börja med att konfigurera den här informationen genom att skapa en regel som d
 ## <a name="warehouse-management"></a>Lagerstyrning
 
 När en försändelse har förberetts kan flera nya rapporter skrivas ut. I dessa rapporter används den information som du ställer in i produktinformationshantering.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

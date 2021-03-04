@@ -100,3 +100,6 @@ Modulen produktrecensionslista innehåller en plats där du kan lägga till en m
 [Modul för sidhuvud](author-header-module.md)
 
 [Modul för sidfot](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

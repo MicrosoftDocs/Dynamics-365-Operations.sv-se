@@ -102,3 +102,6 @@ I Finance and Operations version 10.0.5 är säkerhetslagring av funktionen ER-m
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Konfigurera ramverket för elektronisk rapportering (ER)](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

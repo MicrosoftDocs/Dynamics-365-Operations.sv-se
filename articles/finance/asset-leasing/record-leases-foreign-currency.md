@@ -53,3 +53,6 @@ När du skapar avskrivningsjournalposterna mot en leasing som uttrycks i en utl�
 Det slutliga utgiftsbeloppet för avskrivning kan beräknas med en något annorlunda valutakurs, så att ROU-tillgången är helt avskriven i både redovisningsvalutan och rapporteringsvalutan.
 
 Om leasingen har omklassificerats som **Uppskov av leasingavgift** rensar systemet automatiskt redovisnings- och rapporteringsvalutorna, om de redan har definierats.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

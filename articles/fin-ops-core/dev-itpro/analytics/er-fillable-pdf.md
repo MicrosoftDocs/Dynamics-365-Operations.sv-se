@@ -301,3 +301,6 @@ Den följande bilden visar ett exempel på en annan sida i den rapport som gener
 
 - [ER Skapa en konfiguration för rapportgenerering i OPENXML-format (november 2016)](tasks/er-design-reports-openxml-2016-11.md)
 - [Utforma ER-konfigurationer för rapportgenerering i Word-format](tasks/er-design-configuration-word-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

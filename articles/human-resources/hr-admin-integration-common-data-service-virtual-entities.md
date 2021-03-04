@@ -216,3 +216,6 @@ I det utfällbara fönstret visas de senaste körningsresultaten för processen.
 [Skapa och redigera virtuella entiteter som innehåller data från en extern datakälla](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [Vad är Power Apps-portaler?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Översikt över att skapa appar i Power Apps](https://docs.microsoft.com/powerapps/maker/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

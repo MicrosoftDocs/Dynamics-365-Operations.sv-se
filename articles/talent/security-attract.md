@@ -157,3 +157,6 @@ Kandidater är personer som har lagts till i en talangpool men som inte har kopp
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profil - information om kandidat | Skapa, läsa, uppdatera och ta bort | Skapa, läsa, uppdatera och ta bort | Ingen åtkomst   |
 | Dokument                   | Skapa, läsa, uppdatera och ta bort | Skapa, läsa, uppdatera och ta bort | Ingen åtkomst   |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

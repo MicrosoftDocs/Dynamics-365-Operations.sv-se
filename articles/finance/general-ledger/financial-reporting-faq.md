@@ -88,3 +88,6 @@ När du har en rapport som inte matchar vad du förväntade dig i D365, kan du f
 2.  Exportera rapporten till Excel
 
 Du bör nu kunna kopiera data från Excel-rapporten i ekonomisk rapportering och till D365-råbalansrapporten och jämföra kolumnerna "Utgående balans".
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

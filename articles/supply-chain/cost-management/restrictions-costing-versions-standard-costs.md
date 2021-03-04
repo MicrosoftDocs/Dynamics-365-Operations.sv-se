@@ -51,3 +51,6 @@ Artikelkostnadsdata för standardkostnader kan kopieras till en annan kostnadsve
 
 [Förbereda underhåll av standardkostnader för tillverkade artiklar](update-standard-costs-manufacturing-environment.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

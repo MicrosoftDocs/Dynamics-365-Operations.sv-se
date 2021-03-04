@@ -95,3 +95,6 @@ Använd den här proceduren för att skapa en rapporthierarki för organisations
     * Välj den dimensionsmedlem som motsvarar noden.  
 59. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

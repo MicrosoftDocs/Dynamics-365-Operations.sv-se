@@ -56,3 +56,6 @@ Det här avsnittet beskriver hur du lägger till ekonomiska dimensioner till arb
 16. Bygg ditt projekt och öppna sedan programmet för att visa resultaten.
 
     [![Slutförd arbetsyta](./media/workspace.png)](./media/workspace.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

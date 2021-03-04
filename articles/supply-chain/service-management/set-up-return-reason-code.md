@@ -63,3 +63,6 @@ Den här proceduren gör det enklare att ställa in orsakskoder som du kan anvä
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

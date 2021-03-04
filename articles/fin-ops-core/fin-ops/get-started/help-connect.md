@@ -99,3 +99,6 @@ Om du vill samarbeta med Microsoft angående verktyg och processer för att anpa
 [Uppgiftsinspelarresurser](../../dev-itpro/user-interface/task-recorder.md)  
 [Skapa dokumentation eller utbildning med Uppgiftsinspelare](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Anpassad GitHub-databas för Hjälp](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

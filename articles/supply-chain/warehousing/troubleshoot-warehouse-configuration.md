@@ -109,3 +109,6 @@ Om du vill att arbetare ska kunna göra denna ändring kan du skapa ett menyalte
 - **Visa lagerstatus:** *Ja*
 
 Du kan ställa in andra fält på sidan efter behov.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

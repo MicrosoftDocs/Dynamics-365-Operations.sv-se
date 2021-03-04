@@ -62,3 +62,6 @@ Denna procedur visar hur du säljer ett kontinuitetsprogram och behandlar relate
     * Ange försäljningsordernummer som du noterade tidigare i proceduren. Detta håller bearbetningstiden till ett minimum för denna procedur. Fältet för försäljningsorder valfritt ‒ du kan processa alla ordrar för valfritt program.  
 21. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

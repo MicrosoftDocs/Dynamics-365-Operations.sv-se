@@ -54,3 +54,6 @@ Resultatjournalen innehåller information som är relaterad till hur du uppfylle
 20. Ange "Thanks for all the help at the conference!" i fältet Description.
 21. Klicka på Skicka.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

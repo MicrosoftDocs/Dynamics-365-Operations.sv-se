@@ -65,3 +65,6 @@ Om du vill utöka en kategorisida gör du följande.
 [Utöka en produktsida](enrich-product-page.md)
 
 [Kontrollera tillgängligheten för sidinnehåll](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Rollen för den här proceduren är Kassaförvaltare. I den här proceduren anv�
 18. Klicka på Spara.
 19. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

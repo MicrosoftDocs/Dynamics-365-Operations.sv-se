@@ -142,3 +142,6 @@ Om du vill lägga till en modul för behållarspelare på en ny sida och ställa
 [Modul för sidhuvud](author-header-module.md)
 
 [Sidfotmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

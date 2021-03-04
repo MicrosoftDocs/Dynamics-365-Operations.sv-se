@@ -65,3 +65,6 @@ Om du anger **Lev** som datakällan för datatypen *Postlista* som refererar til
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Lista över funktioner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

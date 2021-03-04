@@ -54,3 +54,6 @@ I det här avsnittet beskrivs hur du ställer in lastmallar och hur du kopplar e
 1. I Åtgärdsfönster, på fliken **Tillgång och efterfrågan** i gruppen **Lägg till** välj **Till ny last**.
 1. I dialogrutan **Lastmall** ange fältet **Lastmall-ID** välj mall att tillämpa.
 1. Välj **OK** för att använda mallen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

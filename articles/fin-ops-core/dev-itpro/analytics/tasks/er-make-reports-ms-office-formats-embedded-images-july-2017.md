@@ -90,3 +90,6 @@ För att slutföra stegen i den här proceduren ska du först slutföra stegen i
  30. Välj Ja i fältet Tillåt att reservationer skapas för inaktiva bankkonton:  
  31. Klicka på Spara.  
  32. Stäng sidan.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

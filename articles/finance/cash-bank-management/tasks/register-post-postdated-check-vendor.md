@@ -56,3 +56,6 @@ Rollen för den här uppgiftsguiden är Kassaförvaltare. I den här uppgiften a
 16. Stäng sidan.
 17. Klicka på fliken Efterdaterade checkar.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

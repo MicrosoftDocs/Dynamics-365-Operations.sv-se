@@ -56,3 +56,6 @@ Veckans ändringar korrigerar ett problem där kalenderdagar inte kunde generera
 ### <a name="current-balance-report-in-leave-pbi-doubles-employee-balance-385581"></a>Aktuell balansrapport i Leave PBI dubblerar medarbetarens saldo (385581)
 
 Den här ändringen korrigerar den aktuella saldorapporten i det här scenariot.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

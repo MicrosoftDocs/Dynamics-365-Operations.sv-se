@@ -41,3 +41,6 @@ Chefen över kompensationer och förmåner kan anmäla medarbetare till variabla
 8. Växla utökningen av avsnittet Organisationsåsidosättningar.
     * Om hänsyn ska tas till medarbetarens resultat, resultat för olika avdelningar eller för en annan avdelning än den som har tilldelats till medarbetarens befattning kan avdelningen åsidosättas. Kolumnen Procent ska uppgå till 100.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

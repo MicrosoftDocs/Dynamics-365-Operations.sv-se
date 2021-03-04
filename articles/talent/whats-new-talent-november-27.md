@@ -62,3 +62,6 @@ Med denna uppdatering visas uppsagda medarbetare är återanställda endast en g
 
 - **Problem**: när du lägger till en ny bilaga till en arbetare blir knapparna **Ny** och **Redigera** nedtonade. 
 - **Lösning:** innan du öppnar bilagesidan, kontrollera att faktaboxar på sidan **Arbetare** är stängda. Om faktarutorna är stängda när sidan **arbetare** hämtas kommer knapparna för bifogade filer att aktiveras. (Det här problemet kommer att åtgärdas i nästa plattformsuppdatering.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ I varje fall bör du noggrant överväga hur du ska uppdatera standardkostnader.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

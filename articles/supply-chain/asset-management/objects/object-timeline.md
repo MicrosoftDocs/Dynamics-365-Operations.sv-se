@@ -49,3 +49,6 @@ Tidslinjen uppdateras varje gång sidan öppnas. Det innehåller följande infor
 - Arbetsorder, inklusive bokförda artiklar och noteringar
 - Fel
 - Tillståndsbedömningar
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

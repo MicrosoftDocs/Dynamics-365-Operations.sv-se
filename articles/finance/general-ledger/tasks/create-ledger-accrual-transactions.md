@@ -49,3 +49,6 @@ Stegen i den här guiden beskriver hur du genererar periodiseringstransaktioner 
 17. Klicka på OK.
 18. Klicka på Bokför.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

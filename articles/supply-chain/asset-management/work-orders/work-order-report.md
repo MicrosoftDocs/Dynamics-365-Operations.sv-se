@@ -51,3 +51,6 @@ I följande illustration visas ett exempel på en arbetsorderrapport som generer
 
 ![Figur 2](media/21-work-orders.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

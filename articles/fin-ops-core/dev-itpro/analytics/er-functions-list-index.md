@@ -63,3 +63,6 @@ Om du anger datakällans **DS** av typen *Beräknat fält* och den innehåller u
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Lista över funktioner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

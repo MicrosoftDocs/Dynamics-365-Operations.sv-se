@@ -63,3 +63,6 @@ Avslutavräkningsprincipen anger att materialet ska förbrukas automatiskt, när
 
 ### <a name="available-at-location"></a>Tillgänglig på plats
 Tillgänglig på platsen-avräkningsprincipen anger att materialet ska förbrukas automatiskt, när det registreras som plockat för produktion. Materialet har registrerats som plockat från plats när arbetet med råmaterialplockningen har slutförts eller när material finns på platsen för produktionsinleverans och materialraden släppts till lagret. Plocklistan som skapas under processen bokförs i ett batchjobb. Denna princip är användbar om du till exempel har många plockaktiviteter mot en tillverkningsorder. I det här fallet behöver du inte manuellt uppdatera plocklistan och du får en aktuell vy över PIA-saldo.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

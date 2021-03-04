@@ -75,3 +75,6 @@ Detta är relaterat till en väntande funktion som planeras som en del av suppor
 [Kom igång med planeringsoptimering](get-started.md)
 
 [Bristanalys för planeringsoptimering](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Ett planfilter är en inställning som omfattar artiklarna A, B och C. Huvudplan
 [Visa planhistorik och planeringsloggar](plan-history-logs.md)
 
 [Annullera ett planeringsjobb](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

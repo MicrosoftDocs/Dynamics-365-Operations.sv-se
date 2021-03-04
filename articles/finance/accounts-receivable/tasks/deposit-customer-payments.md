@@ -48,3 +48,6 @@ Insättning av kundbetalningar. I den här uppgiften används demonstrationsför
 17. Välj **OK**. Den första sidan används för att skapa insättningskvittot.  
 18. Välj **OK**. I det andra steget är att skriva ut insättningskvittot, men steget krävs inte.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

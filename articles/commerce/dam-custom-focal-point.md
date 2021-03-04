@@ -60,3 +60,6 @@ Om du vill definiera en egen fokuspunkt för en bild följer du stegen nedan.
 [Beskär bilder](dam-crop-images.md)
 
 [Ladda upp och betjäna statiska filer](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

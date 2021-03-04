@@ -174,3 +174,6 @@ Andra interna förbättringar som användarna kan se att de har gjorts till funk
 
     - Öppna **Retail och Commerce** \> **Administrationsinställning** \> **Parametrar** \> **Commerce-parametrar**. Klicka sedan på fliken **bokföring** på snabbfliken **lageruppdatering** på fältet **Detaljnivå** och välj **sammanfattning**.
     - Öppna **Retail och Commerce** \> **Administrationsinställning** \> **Parametrar** \> **Commerce-parametrar**. Klicka sedan på fliken **bokföring** på snabbfliken **Sammanslagning** och ställ in alternativet **Verifikationstransaktioner** till **Ja**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

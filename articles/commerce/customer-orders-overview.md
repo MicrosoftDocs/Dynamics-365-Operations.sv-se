@@ -170,3 +170,6 @@ När alternativet **Skapa kundorder i asynkront läge** är inställt på **Ja**
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Kombinerade kundorder](hybrid-customer-orders.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -103,3 +103,6 @@ Vanligtvis tilldelas utleveranslagerställe och platsen för en resursgrupp inom
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

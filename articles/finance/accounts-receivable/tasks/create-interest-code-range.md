@@ -51,3 +51,6 @@ Räntekoder kan ställas in för att beräkna olika räntebelopp baserat på ett
 21. Ange den ränteprocent per månad som ska användas för att beräkna räntan från och med månad 7. Välj 2.5 i det här exemplet.
 22. Avsluta inställningarna genom att klicka på Stäng.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

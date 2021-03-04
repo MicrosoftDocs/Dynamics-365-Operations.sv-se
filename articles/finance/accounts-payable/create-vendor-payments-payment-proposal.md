@@ -123,3 +123,6 @@ Du kan definiera ett standardkonto för betalningsdebitering per betalningsmetod
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

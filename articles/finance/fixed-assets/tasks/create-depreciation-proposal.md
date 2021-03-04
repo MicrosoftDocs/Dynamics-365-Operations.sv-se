@@ -48,3 +48,6 @@ Det här avsnittet beskriver hur avskrivningsbatchförslag fungerar och förklar
 3. Markera **rader**
 4. Vald **bokföring**
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

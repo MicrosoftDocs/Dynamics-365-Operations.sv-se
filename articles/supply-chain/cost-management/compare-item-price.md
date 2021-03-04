@@ -121,3 +121,6 @@ Nedan finns ett exempel på hur du exporterar rapporten **jämföra lager för a
 1. Sidan **körningssammanfattning** öppnas, där du kan se statusen för exportjobbet och en lista över de enheter som har exporterats. Markera enheten **jämför artikelpriser** i området **Bearbetningsstatus för entitet** och välj sedan **hämta fil** för att hämta de data som exporteras från den enheten.
 
 Mer information om hur du använder datahantering för att exportera data finns i [översikt över dataimport- och exportjobb](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

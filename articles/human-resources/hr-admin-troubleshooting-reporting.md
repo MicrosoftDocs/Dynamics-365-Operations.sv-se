@@ -49,3 +49,6 @@ Användaren kan inte anpassa inbäddade Microsoft Power BI-rapporter.
 **Långsiktig lösning**
 
 Ytterligare alternativ för Power BI kommer att bli tillgängliga och mer data och enheter kommer att ingå i Common Data Service.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ Du kommer att se ytterligare transaktioner för rapportering valuta.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

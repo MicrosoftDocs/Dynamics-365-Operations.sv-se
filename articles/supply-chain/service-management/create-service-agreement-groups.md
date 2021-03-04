@@ -43,3 +43,6 @@ Serviceavtalsgrupper är användbara för att sortera och filtrera serviceavtal.
 ## <a name="related-topics"></a>Relaterade ämnen
 
 [Serviceavtal – översikt](service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

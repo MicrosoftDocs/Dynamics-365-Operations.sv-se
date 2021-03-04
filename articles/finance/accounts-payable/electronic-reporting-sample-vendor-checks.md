@@ -44,3 +44,6 @@ Microsoft Dynamics 365 Finance innehåller ett provformat där checken är läng
 - När du genererar betalningar för det konfigurerade bankkontot i betalningsjournalen skrivs checkarna ut med det angivna formatet.
 
 Mer information finns i [Ändra elektroniskt rapportformat](../../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

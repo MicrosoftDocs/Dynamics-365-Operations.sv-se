@@ -74,3 +74,6 @@ Följande tabell visar de visulaiseringar som är tillgängliga på varje rapppo
 | Värderingskartor        | Information om anläggningstillgångar |
 
 Om du vill visa analysen med data måste du först uppdatera det sammanlagda måttet AssetTransactionMeasure på sidan **enhetslagring**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ I den här proceduren visas hur du manuellt hanterar information om sökanden oc
 6. Klicka på Spara.
     * När du har sparat ansökningen kan du koppla dokument till den, inklusive sökandens erfarenhet, belöningar och följebrevet.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ En produktionsorder för produkt C skapas och produkt A läggs till i produktion
     - **Produkt C:** 2
 
 Detta säkerställer att ändringar av strukturlistor för produktionsorder inte påverkar efterföljande kostnadsberäkningar.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

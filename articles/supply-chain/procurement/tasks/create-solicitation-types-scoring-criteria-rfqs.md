@@ -52,3 +52,6 @@ I den här handboken visas hur du skapar en typ av begäran och associerar med e
 8. Klicka på OK.
 9. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

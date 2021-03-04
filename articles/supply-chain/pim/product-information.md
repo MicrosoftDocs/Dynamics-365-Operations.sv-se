@@ -96,3 +96,6 @@ Arbetsytan består av en sammanfattning av paneler och två listor. Listan **Öp
 ### <a name="manually-creating-a-new-released-product"></a>Skapa en ny frisläppt produkt manuellt
 
 Du kan manuellt skapa en frisläppt produkt i en enda körning, beroende på organisationens affärsprocesser och regler om huruvida den här funktionen ska användas. Den här funktionen skapar en ny produkt och frisläpper den automatiskt till den aktuella juridiska personen. Om du vill skapa en ny produkt, klicka på **Frisläppta produkter** på arbetsytan **Underhåll av frisläppta produkter** eller på listsidan **Frisläppt produkt**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -233,3 +233,6 @@ För att undvika oönskade problem med framtida kvittningar för denna transakti
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

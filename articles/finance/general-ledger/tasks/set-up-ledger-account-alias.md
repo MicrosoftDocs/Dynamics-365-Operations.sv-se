@@ -41,3 +41,6 @@ Den här proceduren visar hur du skapar ett kontoalias som innehåller en genvä
 9. Välj den dimension som ska ha fokus när aliaset används i fältet Initialt fokus.
     * När du har skrivit genvägen och kontot och dimensionerna fyllts i är det ursprungliga fokusfältet dit markören eller fokus flyttar.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

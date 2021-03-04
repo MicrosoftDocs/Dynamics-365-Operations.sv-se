@@ -123,3 +123,6 @@ Följande huvuddimensioner används som filter för att dela upp de sammanlagda 
 | Räkenskapskalendrar                   | Kalender, kalenderbeskrivning                                                                                       |
 | Räkenskapsår                       | Kalenderår                                                                                                        |
 | Räkenskapsperioder                     | Kalenderårsperioder                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

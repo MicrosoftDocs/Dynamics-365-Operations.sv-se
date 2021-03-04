@@ -84,3 +84,6 @@ Om du arbetar med begränsade material vilar planeringen dessutom på tillgängl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

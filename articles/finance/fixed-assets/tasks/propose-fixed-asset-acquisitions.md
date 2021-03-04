@@ -43,3 +43,6 @@ Detta avsnitt beskriver hur du anskaffar en anläggningstillgång med hjälp av 
 - Endast anläggningstillgångar med anskaffningsdatum och anskaffningspris på räkenskapsboken inkluderas i anskaffningsförslaget.  
 11. På sidan väljer du fliken **Böcker**.
 12. Vald **bokföring**
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

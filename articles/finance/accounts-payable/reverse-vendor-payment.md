@@ -83,3 +83,6 @@ Om checken som återfördes utfärdades för en kundåterbetalning inträffar ä
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

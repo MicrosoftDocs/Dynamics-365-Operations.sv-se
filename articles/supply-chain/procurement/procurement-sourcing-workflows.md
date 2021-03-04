@@ -80,3 +80,6 @@ Du kan tilldela ett godkännandesteg till följande grupper för deltagare.
 - [Definiera affärsprocessarbetsflöden för inköpsrekvisitioner](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Arbetsflöde för inköpsrekvisitioner](purchase-requisitions-workflow.md)
 - [Integrera leverantörer](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

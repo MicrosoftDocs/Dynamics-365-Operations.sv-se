@@ -142,3 +142,6 @@ Du kan inte rapportera felkvantiteten i en tillverkningsorder om du inte också 
 ## <a name="can-i-trace-the-serial-numbers-of-finished-goods-against-the-serial-numbers-of-consumed-goods"></a>Kan jag spåra serienumren för färdiga varor mot serienumren för förbrukade varor?
 
 Du kan inte spåra serienumren för färdiga varor mot serienummer för material som en tillverkningsorder använder för att göra dessa färdiga varor. Detta scenario stöds för närvarande inte. Lösningen är att skapa tillverkningsorder för kvantiteten 1.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

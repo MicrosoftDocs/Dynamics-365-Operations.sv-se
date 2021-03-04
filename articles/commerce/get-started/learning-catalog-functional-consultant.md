@@ -55,3 +55,6 @@ Om du vill öva på funktioner som delas med andra Finance and Operations-appar,
 | Innehåll  | beskrivning | Format  | Längd    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
 | [Konfigurera och arbeta med näthandel i Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/) | Online-kanalerna och näthandelsplatsen i Dynamics 365 Commerce gör det möjligt för återförsäljare att skapa en online-presentation av sitt varumärke. | Gratis, självstudier online utbildningsväg | 4 timmar   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

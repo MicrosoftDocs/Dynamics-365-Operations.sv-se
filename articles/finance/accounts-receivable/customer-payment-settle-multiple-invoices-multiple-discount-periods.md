@@ -101,3 +101,6 @@ Arnie kan visa den här informationen på sidan **Kundtransaktioner**.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

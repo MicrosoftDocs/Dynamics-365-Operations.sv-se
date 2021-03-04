@@ -67,3 +67,6 @@ När arbetsytan **medarbetarens självbetjäning** är markerad som den ursprung
 
 ### <a name="termination-reason-code-updates-position-assignment-record"></a>Orsakskod till uppsägningen uppdaterar befattningstilldelningsposten
 Orsakskoden till uppsägning uppdaterar nu befattningstilldelningen när du säger upp en medarbetare och avslutar befattningen. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

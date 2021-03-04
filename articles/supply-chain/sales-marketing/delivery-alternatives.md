@@ -153,3 +153,6 @@ Den här fliken markerar effekten av valt alternativ. Om du klickar på **OK**, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Avyttrandetransaktionen för en tillgång i en lågvärdespool minskar det bokf�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Oavsett metod kommer datauppgraderingsskriptet också att använda nummerserien 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

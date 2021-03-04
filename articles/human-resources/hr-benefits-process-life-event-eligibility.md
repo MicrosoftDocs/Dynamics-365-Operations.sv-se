@@ -48,3 +48,6 @@ I den här artikeln beskrivs hur du kör bearbetning av berättigande för livsh
    4. Välj **OK**. Processen kommer att köras med de parametrar du angett.
 
 4. Välj **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

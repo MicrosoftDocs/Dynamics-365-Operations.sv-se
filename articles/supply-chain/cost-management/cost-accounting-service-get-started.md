@@ -111,3 +111,6 @@ Så här ställer du in integrationen mellan kostnadsredovisningstjänsten och D
 ## <a name="related-resources"></a>Relaterade resurser
 
 [Startsida för kostnadsredovisningstjänst](cost-accounting-service-home.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

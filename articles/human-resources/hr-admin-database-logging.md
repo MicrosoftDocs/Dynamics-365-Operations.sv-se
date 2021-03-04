@@ -87,3 +87,6 @@ Följ dessa steg för att ställa in rensning av databaslogg:
    - Skapat datum och klockslag
 
 3. Använd fliken **Rensning i databasloggen** för att bestämma när loggrensningsuppgiften ska köras. Som standard är databasloggar tillgängliga i 30 dagar.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

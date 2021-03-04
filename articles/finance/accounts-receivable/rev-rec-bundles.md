@@ -110,3 +110,6 @@ Fakturajournalen som skapas efter bokföringen skapas inte med den överordnade 
 Det är viktigt att fakturajournalen inte innehåller den överordnade artikeln från bunten, eftersom eventuella processer som utförs efter att fakturan har bokförts baseras på fakturajournalen. Om du till exempel skapar en kreditfaktura från fliken **Sälj** i åtgärdsfönstret, kommer kreditfakturan som skapas att inkludera komponentartiklarna men inte den överordnade artikeln.
 
 [![Kreditfaktura som visar komponentartiklarna men inte den överordnade artikeln](./media/bundle-09.png)](./media/bundle-09.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

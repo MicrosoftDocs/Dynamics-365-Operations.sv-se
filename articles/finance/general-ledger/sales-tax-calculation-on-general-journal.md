@@ -157,3 +157,6 @@ Tabellen nedan visar den allmänna regeln.
 | Ingående moms | Negativa              | Konto för ingående moms | Negativ (kredit)  |
 | Utgående moms    | Positiva              | Konto för utgående moms    | Negativ (kredit)  |
 | Utgående moms    | Negativa              | Konto för utgående moms    | Positiv (Debet)  |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
