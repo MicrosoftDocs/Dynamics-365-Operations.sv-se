@@ -5,6 +5,10 @@
       items:
         - name: Nyheter och ändringar i Human Resources
           href: hr-admin-whats-new.md
+        - name: 28 januari 2021
+          href: hr-whats-new-2021-01-28.md
+        - name: 21 januari 2021
+          href: hr-whats-new-2021-01-21.md
         - name: 2 december 2020
           href: hr-whats-new-2020-12-02.md
         - name: 22 oktober 2020
@@ -79,12 +83,16 @@
           items:
             - name: Välja en dataintegreringsteknik
               href: hr-admin-integration-choose-technology.md
-            - name: Konfigurera Common Data Service-integration
+            - name: Vanliga frågor och svar om begränsning
+              href: hr-admin-integration-throttling-faq.md
+            - name: Konfigurera Dataverse-integration
               href: hr-admin-integration-common-data-service.md
-            - name: Common Data Service-enheter
+            - name: Dataverse-tabeller
               href: hr-developer-entities.md
-            - name: Konfigurera virtuella Common Data Service-enheter
+            - name: Konfigurera virtuella Dataverse-enheter
               href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: Vanliga frågor och svar om virtuella enheter i Human Resources
+              href: hr-admin-virtual-entity-faq.md
             - name: Konfigurera integration med Finance
               href: hr-admin-integration-finance.md
             - name: Konfigurera integration med Dayforce
@@ -271,7 +279,7 @@
               href: hr-admin-troubleshooting-not-in-apps.md
             - name: Rapporteringsalternativ
               href: hr-admin-troubleshooting-reporting.md
-            - name: Integrering av frågor och svar
+            - name: Vanliga frågor och svar om integration
               href: hr-admin-troubleshooting-integration.md
     - name: Utvecklarguide
       items:
@@ -279,7 +287,7 @@
           href: hr-developer-overview.md
         - name: Utöka med Power Apps och Power Automate
           href: hr-developer-power-apps.md
-        - name: Common Data Service-enheter
+        - name: Dataverse-tabeller
           href: hr-developer-entities.md
         - name: Anpassade fält
           href: hr-developer-custom-fields.md
@@ -287,7 +295,7 @@
           items:
             - name: Välja en dataintegreringsteknik
               href: hr-admin-integration-choose-technology.md
-            - name: Konfigurera Common Data Service-integration
+            - name: Konfigurera Dataverse-integration
               href: hr-admin-integration-common-data-service.md
             - name: Konfigurera integration med Finance
               href: hr-admin-integration-finance.md
@@ -317,6 +325,92 @@
                       href: hr-developer-api-myleaverequests-overview.md
                     - name: Skicka en ledighetsansökan till arbetsflödet
                       href: hr-developer-api-myleaverequests-submit.md
+        - name: API för ATS-integration
+          items:
+            - name: Introduktion
+              href: hr-admin-integration-ats-api-introduction.md
+            - name: Rekryteringsbegäran och relaterade enheter
+              items:
+                - name: Rekryteringsbegäran
+                  href: hr-admin-integration-ats-api-recruiting-request.md
+                - name: Utbildning för rekryteringsbegäran
+                  href: hr-admin-integration-ats-api-recruiting-request-education.md
+                - name: Plats för rekryteringsbegäran
+                  href: hr-admin-integration-ats-api-recruiting-request-location.md
+                - name: Befattning för rekryteringsbegäran
+                  href: hr-admin-integration-ats-api-recruiting-request-position.md
+                - name: Färdighet för rekryteringsbegäran
+                  href: hr-admin-integration-ats-api-recruiting-request-skill.md
+                - name: Exempelfråga för rekryteringsbegäran
+                  href: hr-admin-integration-ats-api-recruiting-request-example-query.md
+            - name: Alternativuppsättningar för rekryteringsbegäran
+              items:
+                - name: Befrielsestatus för jobb
+                  href: hr-admin-integration-ats-api-job-exempt-status.md
+                - name: Befattningsstatus för rekryteringsbegäran
+                  href: hr-admin-integration-ats-api-recruiting-request-position-status.md
+                - name: Status för rekryteringsbegäran
+                  href: hr-admin-integration-ats-api-recruiting-request-status.md
+                - name: Kategori för lagstadgade jobb
+                  href: hr-admin-integration-ats-api-regulatory-job-category.md
+            - name: Kandidat att anställa och relaterade enheter
+              items:
+                - name: Kandidat att anställa
+                  href: hr-admin-integration-ats-api-candidate-to-hire.md
+                - name: Certifikattyp
+                  href: hr-admin-integration-ats-api-certificate-type.md
+                - name: Partens kontakt
+                  href: hr-admin-integration-ats-api-party-contact.md
+                - name: Person
+                  href: hr-admin-integration-ats-api-person.md
+                - name: Personens adress
+                  href: hr-admin-integration-ats-api-person-address.md
+                - name: Personens certifikat
+                  href: hr-admin-integration-ats-api-person-certificate.md
+                - name: Personens utbildning
+                  href: hr-admin-integration-ats-api-person-education.md
+                - name: Personens ID-nummer
+                  href: hr-admin-integration-ats-api-person-identification-number.md
+                - name: Personens yrkeserfarenhet
+                  href: hr-admin-integration-ats-api-person-professional-experience.md
+                - name: Personkontroll
+                  href: hr-admin-integration-ats-api-person-screening.md
+                - name: Personens färdighet
+                  href: hr-admin-integration-ats-api-person-skill.md
+                - name: Värderingsnivå
+                  href: hr-admin-integration-ats-api-rating-level.md
+                - name: Kontrolltyper
+                  href: hr-admin-integration-ats-api-screening-types.md
+                - name: Exempelfråga för kandidat att anställa
+                  href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
+            - name: Alternativuppsättningar för kandidat
+              items:
+                - name: Resultat för integration av sökande
+                  href: hr-admin-integration-ats-api-applicant-integration-result.md
+                - name: Tomt Ja nej
+                  href: hr-admin-integration-ats-api-blank-yes-no.md
+                - name: Slutförandestatus
+                  href: hr-admin-integration-ats-api-completion-status.md
+                - name: Kontakttyp
+                  href: hr-admin-integration-ats-api-contact-type.md
+                - name: Bas för utbildningskredit
+                  href: hr-admin-integration-ats-api-education-credit-basis.md
+                - name: Kön
+                  href: hr-admin-integration-ats-api-gender.md
+                - name: Civilstånd
+                  href: hr-admin-integration-ats-api-marital-status.md
+                - name: Månader under året
+                  href: hr-admin-integration-ats-api-months-of-year.md
+                - name: Nej Ja
+                  href: hr-admin-integration-ats-api-no-yes.md
+                - name: Periodenhet
+                  href: hr-admin-integration-ats-api-period-unit.md
+                - name: Kontrollfrekvens
+                  href: hr-admin-integration-ats-api-screening-frequency.md
+                - name: Kontrollfrekvens genereras från
+                  href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
+                - name: Typ av färdighetsnivå
+                  href: hr-admin-integration-ats-api-skill-level-type.md
     - name: Användarhandbok
       items:
         - name: Översikt
@@ -439,12 +533,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
                 - name: Kundnotifieringar via e-postmeddelande
                   href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
-            - name: Elektroniska signaturer
-              items:
-                - name: Elektroniska underskrifter – översikt
-                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
-                - name: Ställa in elektroniska signaturer
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
             - name: Ärendehantering
               items:
                 - name: Översikt över ärendehantering
@@ -591,6 +679,8 @@
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: Bearbeta ändringar av sats
                       href: hr-benefits-process-rate-changes.md
+                - name: ACA-rapportering
+                  href: hr-benefits-management-aca-reports.md
             - name: Definiera och hantera ett förmånsprogram
               href: hr-benefits-manage-program.md
             - name: Policyer för förmånsberättigande
