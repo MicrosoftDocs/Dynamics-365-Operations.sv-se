@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ecff18f0a34d22ef359f473fa6aaaff16c811bb6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ef946df30c68373b83660fce98b472dc94b42719
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459945"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989603"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>Förbättrad hantering av batchspårade artiklar
 
@@ -42,7 +41,7 @@ Du definierar standardvärdet för det batch-ID som används för kundorder i f�
 Du definierar standardvärdet för det batch-ID som används för försäljningsorder via utdragsbokföring i fältet **Standard-batch-ID**, på snabbfliken **Lageruppdatering**, på fliken **Bokföring** på sidan **Commerce-parametrar**.
 
 > [!NOTE]
-> Den här funktionen är bara tillgänglig när avancerad lagerstyrning har aktiverats för det specifika butikslagret och artiklarna. I en senare version kommer funktionen också att fungera för tillfällen då avancerad lagerstyrning inte används.
+> Den här funktionen är bara tillgänglig när avancerad distributionslagerhantering har aktiverats för det specifika butikslagret och artiklarna. I en senare version kommer funktionen också att fungera för tillfällen då avancerad distributionslagerhantering inte används.
 
 > [!NOTE]
-> Stöd för förbättrad hantering av batchspårade artiklar under bokföringen av icke-avancerade lagerstyrningsscenarier infördes i Retail version 10.0.5.
+> Stöd för förbättrad hantering av batchspårade artiklar under bokföringen av icke-avancerade scenarier för distributionslagerhantering infördes i Retail version 10.0.5.

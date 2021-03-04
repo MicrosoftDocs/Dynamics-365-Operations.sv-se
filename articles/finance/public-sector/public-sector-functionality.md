@@ -1,6 +1,6 @@
 ---
 title: Startsida för offentlig sektor
-description: Med Microsoft Dynamics 365 Finance går det att använda affärsprocesser som är gemensamma för både offentligt och privat sektor, som budgetering, inköp, leverantörsreskontra och kundreskontra.
+description: Dynamics 365 Finance har stöd för vanliga affärsprocesser inom den offentliga sektorn. Dessa innefattar uppgifter inom budgetering, inköp, leverantörsreskontra och kundreskontra.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SysConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 20691
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4a3722cf286909c83b5154137c86508929a2691
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 23dbc61d72775c8ea642b0ec4026637e1f8958e1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459930"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4984694"
 ---
 # <a name="public-sector-home-page"></a>Startsida för offentlig sektor
 
@@ -60,9 +59,8 @@ Med konfigurationsnyckeln **Offentlig sektor** kan du använda sidor och kontrol
 ## <a name="how-does-the-public-sector-configuration-key-relate-to-other-configuration-keys"></a>Vilket är sambandet mellan konfigurationsnyckeln för offentlig sektor och andra konfigurationsnycklar?
 I följande tabell finns information om sambandet mellan den här konfigurationsnyckeln och andra konfigurationsnycklar.
 
-|            |                                                                                                                                                                                                                     |
+|   **Detalj**         |              **Beskrivning**                                                                                                                                                                                        |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Detalj** | **Beskrivning**                                                                                                                                                                                                     |
 | Överordnad nyckel | Ingen                                                                                                                                                                                                                |
 | Underordnade nycklar | Konfigurationsnyckeln **Avancerad redovisningspost** (AdvancedLedgerEntry) Konfigurationsnyckeln **Offentlig sektor 1099G** (Tax1099G) Konfigurationsnyckeln **Offentlig sektor 1099S** (Tax1099S) Konfigurationsnyckeln **Franska regler** |
 

@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: rhaertle
 ms.custom: 62303
 ms.search.region: Global
-ms.author: margoc
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a44324a14a78174ad4d68e6686c523c49d7aa3bd
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 413bdd2e7a817185829eb551380caf71d87af9b7
+ms.sourcegitcommit: 36d256bf5a832d2d70014d64044026f732b77831
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694396"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "5073117"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Finance and Operations-programdokumentation
 
@@ -100,7 +100,7 @@ Mycket av innehållet gäller även relaterade produkter: Dynamics 365 Commerce 
 <p><a href="../../supply-chain/production-control/production-process-overview.md">Produktionskontroll</a></p>
 <p><a href="../../supply-chain/sales-marketing/overview-sales-marketing.md">Försäljning och marknadsföring</a></p>
 <p><a href="../../supply-chain/transportation/transportation-management-overview.md">Transporthantering</a></p>
-<p><a href="../../supply-chain/warehousing/warehouse-configuration.md">Lagerstyrning</a></p>
+<p><a href="../../supply-chain/warehousing/warehouse-configuration.md">Hantering av distributionslager</a></p>
 
 
 <h3><a href="../dev-itpro/analytics/bi-reporting-home-page.md">Intelligence</a></h3>

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b90c98628fef2006addb64a6b880ab4020edb8cd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459944"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995576"
 ---
 # <a name="revenue-recognition-setup"></a>Inställning för intäktsredovisning
 [!include [banner](../includes/banner.md)]
@@ -29,7 +28,9 @@ ms.locfileid: "4459944"
 En ny modul för **intäktsredovisning** har lagts till, inklusive menyartiklar för alla inställningar som krävs. I det här avsnittet beskrivs inställningsalternativen och deras konsekvenser.
 
 > [!NOTE]
-> Intäktsredovisningsfunktionen kan inte slås på via funktionshantering. För närvarande måste du använda konfigurationsnycklar för att slå på den.
+> Intäktsredovisningsfunktionen kan inte aktiveras via funktionshantering. För närvarande måste du använda konfigurationsnycklar för att aktivera den.
+
+> Intäktsredovisning, inklusive buntfunktionen, stöds inte för användning i Commerce-kanaler (e-handel, kassa, callcenter). Artiklar som konfigurerats med intäktsredovisning ska inte läggas till på order eller transaktioner som skapas i Commerce-kanaler.
 
 Modulen för **intäktsredovisning** har följande inställningsalternativ:
 
@@ -180,7 +181,7 @@ När du ställer in en buntad artikel måste du ställa in två fält på sidan 
 - På snabbfliken **Konstruera** i fältet **Produktionstyp** måste artikeln ställas in som en strukturlisteartikel.
 - På snabbfliken **Allmänt** i fältet **Bunt** måste artikeln markeras som en buntad artikel.
 
-Komponenterna måste tilldelas till den överordnade bunten/strukturlisteartikeln på sidan **BOM-versioner** (gå till **Intäktsredovisning \> Inställningar \> Inställningar för lager och produkt \> Frisläppta artiklar** och i Åtgärdsfönstret, på fliken **Konstruera**, väljer du sedan **BOM‑versioner** i gruppen för **strukturlistor**). Mer information finns i inställningsdokumentationen för strukturlistor.
+Komponenterna måste tilldelas den överordnade bunten/strukturlisteartikeln på sidan **BOM-versioner** (gå till **Intäktsredovisning \> Inställningar \> Inställningar för lager och produkt \> Frisläppta artiklar** och i Åtgärdsfönstret, på fliken **Konstruera**, väljer du sedan **BOM‑versioner** i gruppen för **strukturlistor**). Mer information finns i inställningsdokumentationen för strukturlistor.
 
 [![Frisläppta produkter, planer för strukturlistor](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 

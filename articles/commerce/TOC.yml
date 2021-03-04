@@ -94,12 +94,12 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.17 (april 2021)
+                      href: get-started/whats-new-commerce-10-0-17.md
                     - name: Commerce 10.0.16 (februari 2021)
                       href: get-started/whats-new-commerce-10-0-16.md
                     - name: Commerce 10.0.15 (januari 2021)
                       href: get-started/whats-new-commerce-10-0-15.md
-                    - name: Commerce 10.0.14 (november 2020)
-                      href: get-started/whats-new-commerce-10-0-14.md
                 - name: Borttagna eller utfasade funktioner
                   items:
                     - name: Borttagna eller utfasade funktioner i Finance and Operations
@@ -176,7 +176,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/commerce/toc.json
                 - name: Sparade vyer
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
-                - name: Rutnätsmöjligheter
+                - name: Rutnätsfunktioner
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Skapa och arbeta med anpassade fält
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
@@ -190,6 +190,44 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/commerce/toc.json
                 - name: Förstå Lifecycle Services
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/commerce/toc.json
+            - name: Livscykelhantering för implementering
+              items:
+                - name: Livscykelhantering för implementering – startsida
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
+                - name: Arkitektur för Finance and Operations-appar
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Microsoft FastTrack
+                  href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
+                - name: Integrera ett implementeringsprojekt
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
+                - name: Miljöplanering
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
+                - name: Förbereda Go live
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
+                - name: Frågor och svar om Go live
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
+                - name: Skicka en serviceförfrågan
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
+                - name: 'Frågor och svar om prenumerationer, LCS-projekt och Azure AD-klientorganisationer'
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Flytta miljöer mellan datacenter
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
+                - name: Flytta licenser mellan avtalstyper
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
+                - name: Flytta LCS-implementeringsprojekt till olika Azure AD-klientorganisationer
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: Flytta LCS implementeringsprojekt från lokalt till molnet
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
+                - name: Flera LCS-projekt och produktionsmiljöer i en Azure AD-klientorganisation
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: Implementera Finance and Operations Commerce-projekt
+                  href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+                - name: 'Ställa in nya miljöer, Azure DevOps och avdelningar för projekt'
+                  href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+                - name: Uppdatera kod och miljöer för Commerce-projekt
+                  href: dev-itpro/updating-environments.md
+                - name: Problem med testning och prestanda
+                  href: dev-itpro/retail-implementation-testing-performance.md
         - name: Arkitekturöversikt
           items:
             - name: Arkitektur
@@ -248,44 +286,6 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
                 - name: Initiera startdata i nya Commerce-miljöer
                   href: enable-configure-retail-functionality.md
-            - name: Livscykelhantering för implementering
-              items:
-                - name: Livscykelhantering för implementering – startsida
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Arkitektur för Finance and Operations-appar
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Microsoft FastTrack for Finance and Operations
-                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Integrera ett implementeringsprojekt
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
-                - name: Miljöplanering
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
-                - name: Förbereda Go live
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
-                - name: Frågor och svar om Go live
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
-                - name: Skicka en serviceförfrågan
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Frågor och svar om prenumerationer, LCS-projekt och Azure AD-klientorganisationer'
-                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Flytta miljöer mellan datacenter
-                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
-                - name: Flytta licenser mellan avtalstyper
-                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
-                - name: Flytta LCS-implementeringsprojekt till olika Azure AD-klientorganisationer
-                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Flytta LCS implementeringsprojekt från lokalt till molnet
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
-                - name: Flera LCS-projekt och produktionsmiljöer i en Azure AD-klientorganisation
-                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Implementera Finance and Operations Commerce-projekt
-                  href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-                - name: 'Ställa in nya miljöer, Azure DevOps och avdelningar för Commerce-projekt'
-                  href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
-                - name: Uppdatera kod och miljöer för Commerce-projekt
-                  href: dev-itpro/updating-environments.md
-                - name: Problem med testning och prestanda
-                  href: dev-itpro/retail-implementation-testing-performance.md
         - name: Ställa in dina kanaler
           items:
             - name: Översikt över kanaler
@@ -504,6 +504,8 @@
                       href: payment-methods.md
                     - name: Betalningsmetoder i kundcenter
                       href: work-with-payments.md
+                    - name: Behandling av återbetalning i kundcenter
+                      href: call-center-refund-payments.md
                     - name: 'Inställning, auktorisering och registrering av kreditkort'
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurera kontantvalörer för kassan
@@ -648,6 +650,8 @@
                       href: personalization-gdpr.md
                 - name: Aktivera rekommendationer för "köp liknande produkter"
                   href: shop-similar-looks.md
+                - name: Aktivera rekommendationer för "köp liknande beskrivning"
+                  href: shop-similar-description.md
                 - name: Kassaupplevelser
                   items:
                     - name: Lägga till produktrekommendationer i kassan
@@ -720,6 +724,8 @@
                   href: enhancedorderrecall.md
                 - name: Aktivera flera leveranslägen för upphämtning
                   href: multiple-pickup-modes.md
+                - name: Bearbeta upphämtning av en kundorder i kassan
+                  href: process-order-pickup-POS.md
             - name: Försäljningsorder
               items:
                 - name: Skapa kundtjänstorder
@@ -858,6 +864,10 @@
                   href: add-cdn-support.md
                 - name: Aktivera platsbaserad butiksidentifiering
                   href: enable-store-detection.md
+                - name: Digitala presentkort för näthandel
+                  href: digital-gift-cards.md
+                - name: Krav för webbläsare för Dynamics 365 Commerce-webbplatser
+                  href: browser-requirements.md
             - name: Exempelwebbplats – översikt
               items:
                 - name: Översikt över startsidan
@@ -948,6 +958,8 @@
                       href: enrich-category-page.md
                     - name: Kontrollera tillgängligheten för sidinnehåll
                       href: verify-accessibility.md
+                    - name: Skapa dynamiska näthandelssidor baserade på URL-parametrar
+                      href: create-dynamic-pages.md
                 - name: Webbplatsnavigering
                   items:
                     - name: Anpassa webbplatsnavigeringen
@@ -1058,6 +1070,8 @@
                   items:
                     - name: Produktsamlingsmoduler
                       href: product-collection-module-overview.md
+                    - name: Snabbvymodul
+                      href: quick-view-module.md
                 - name: Navigeringsmoduler
                   items:
                     - name: Modul för navigeringssökväg
@@ -1066,6 +1080,10 @@
                       href: nav-menu-module.md
                     - name: Modul för webbplatsväljare
                       href: site-selector.md
+                - name: Sökmoduler
+                  items:
+                    - name: Sökresultatmodul
+                      href: search-result-module.md
                 - name: Efterlevnadsmoduler
                   items:
                     - name: Modul för samtycke till cookies
@@ -1106,6 +1124,18 @@
           items:
             - name: Dynamics 365 Fraud Protection-integration med Dynamics 365 Commerce
               href: dev-itpro/DFP.md
+        - name: Näthandel B2B
+          items:
+            - name: Konfigurera en näthandelsplats för B2B
+              href: b2b/set-up-b2b-site.md
+            - name: Skapa organisationsmodelleringshierarkier för B2B-organisationer
+              href: b2b/org-model.md
+            - name: Hantera affärspartneranvändare på näthandelsplatser för B2B
+              href: b2b/manage-b2b-users.md
+            - name: Konfigurera betalningsmetod för kundkonto på näthandelsplatser för B2B
+              href: b2b/payment-method.md
+            - name: Konfigurera produktkvantitetsgränser på nätandelsplatser för B2B
+              href: b2b/quantity-limits.md
         - name: Övervakning och analys
           items:
             - name: Övervaka försäljningsresultat och marginaler
@@ -2066,6 +2096,8 @@
                       href: e-commerce-extensibility/interactive-components.md
                     - name: Skissa på inloggat tillstånd under lokal utveckling
                       href: e-commerce-extensibility/mock-sign-in.md
+                    - name: Konfigurera modulegenskaper som ska visas baserat på kontext
+                      href: e-commerce-extensibility/configure-properties-context.md
                     - name: Globalisera moduler med hjälp av klassen CultureInfoFormatter
                       href: e-commerce-extensibility/globalize-modules.md
                     - name: Konfigurera Azure Key Vault för säker nyckelhantering
@@ -2152,7 +2184,7 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Kommande ändringar i SDK för Retail
                   href: dev-itpro/UpcomingSDKChanges.md
-                - name: Viktig utveckling och ALM-ändringar från version 10.0.10 till 10.0.13
+                - name: Utveckling och ALM-ändringar från version 10.0.10 till 10.0.13
                   href: dev-itpro/dev-changes-10-13.md
                 - name: Slå samman versionssystemen för Commerce och Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
@@ -2162,7 +2194,7 @@
                   href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
                 - name: Skapa distribuerbara paket
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-                - name: Utveckling i molnbaserade utvecklingsmiljöer utan administratörsåtkomst
+                - name: Utveckling i molnstyrda miljöer utan administratörsåtkomst
                   href: dev-itpro/cloud-dev-box.md
                 - name: Konfigurera versionspipeline för SDK för Commerce
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
@@ -2238,7 +2270,7 @@
               items:
                 - name: 'Kund- och klient-API:er för Commerce Scale Unit'
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Skapa nytt tilläggs-API för Retail Server (SDK för Retail version 10.0.11 och senare)
+                - name: Skapa tilläggs-API för Retail Server (SDK för Retail version 10.0.11 och senare)
                   href: dev-itpro/retail-server-icontroller-extension.md
                 - name: Skapa nytt tilläggs-API för Retail Server (SDK för Retail version 10.0.11 och tidigare)
                   href: dev-itpro/retail-server-extension.md
@@ -2300,7 +2332,7 @@
                   href: payment-connector-data-fields.md
                 - name: Aktivera skydd mot dubbelbetalning för betalningsanslutning
                   href: dev-itpro/duplicate-payments-protection.md
-                - name: Skapa betalningspaket för programutforskaren i Service Fabric-distributioner
+                - name: Skapa Commerce-betalningspaket för Finance and Operations-distribution
                   href: dev-itpro/payment-connector-package.md
             - name: Utbyggbarhet för e-handel från tredje part
               items:

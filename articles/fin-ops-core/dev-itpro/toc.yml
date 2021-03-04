@@ -14,12 +14,12 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Platform updates
                   href: get-started/whats-new-home-page.md
+                - name: Platform updates för 10.0.17 (april 2021)
+                  href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: Platform updates för 10.0.16 (februari 2021)
                   href: get-started/whats-new-platform-updates-10-0-16.md
                 - name: Platform updates för 10.0.15 (januari 2021)
                   href: get-started/whats-new-platform-updates-10-0-15.md
-                - name: Platform updates för 10.0.14 (november 2020)
-                  href: get-started/whats-new-platform-updates-10-0-14.md
             - name: Borttagna eller utfasade funktioner
               items:
                 - name: Borttagna eller utfasade plattformsfunktioner
@@ -122,9 +122,9 @@
                       href: data-entities/tasks/create-record-template-facilitate-data-entry.md
                     - name: Skapa poster med postmallar
                       href: data-entities/tasks/use-record-template-new-record.md
-                - name: Dataintegrering med Common Data Service
+                - name: Dataintegrering med Dataverse
                   items:
-                    - name: Översikt över dataintegrering med Common Data Service
+                    - name: Översikt över dataintegrering med Dataverse
                       href: data-entities/data-integration-cds.md
                     - name: Integration med dubbelriktad skrivning
                       items:
@@ -168,7 +168,7 @@
                               href: data-entities/dual-write/multiple-entity-maps.md
                             - name: Redigera en juridisk person efter konfiguration med dubbelriktad skrivning
                               href: data-entities/dual-write/edit-legal-entity.md
-                            - name: Felhantering och varningsaviseringar
+                            - name: Felhantering och varningsnotifieringar
                               href: data-entities/dual-write/errors-and-alerts.md
                             - name: Livscykelhantering för program
                               href: data-entities/dual-write/app-lifecycle-management.md
@@ -192,11 +192,11 @@
                                   href: data-entities/dual-write/sites-warehouses-mapping.md
                             - name: Företagsintegrering
                               items:
-                                - name: Företagskoncept i Common Data Services
+                                - name: Företagskoncept i Dataverse
                                   href: data-entities/dual-write/company-data.md
-                                - name: Starta med företagsdata
+                                - name: Initiera företagsdata
                                   href: data-entities/dual-write/bootstrap-company-data.md
-                            - name: Organisationshierarki för Common Data Service
+                            - name: Organisationshierarki för Dataverse
                               href: data-entities/dual-write/organization-mapping.md
                             - name: Ekonomi- och momsdata
                               items:
@@ -204,12 +204,14 @@
                                   href: data-entities/dual-write/finance-tax-reference.md
                                 - name: Integrerad redovisning
                                   href: data-entities/dual-write/ledger-mapping.md
-                                - name: Integrerat skattehuvud
+                                - name: Integrerad momsmall
                                   href: data-entities/dual-write/tax-mapping.md
+                            - name: Integrera anskaffning i Supply Chain Management med Field Service
+                              href: data-entities/dual-write/scm-field-service-procurement.md
+                            - name: Synkronisera på begäran med prissättningsmotorn för Supply Chain Management
+                              href: data-entities/dual-write/pricing-engine.md
                             - name: Potentiell kund till kontanter med dubbelriktad skrivning
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
-                            - name: Synkronisera med prissättningsmotorn för Dynamics 365 Supply Chain Management på begäran
-                              href: data-entities/dual-write/pricing-engine.md
                             - name: Använda prissättningsmotorn för Dynamics 365 Commerce med Dynamics 365 Sales
                               href: data-entities/dual-write/commerce-pricing.md
                             - name: Interna tillgångar för service
@@ -222,21 +224,23 @@
                           items:
                             - name: Stöd för Field Service- och Project Service Automation-lösningar
                               href: data-entities/dual-write/field-service-project-service-automation.md
+                            - name: Migrera Potentiell kund till kontanter från dataintegreraren till dubbelriktad skrivning
+                              href: data-entities/dual-write/migrate-prospect-to-cash.md
                             - name: Felsökning
                               items:
-                                - name: Kontrollera att dubbelriktad skrivning är konfigurerat i Finance and Operations-appar och Common Data Service
+                                - name: Kontrollera konfiguration för dubbelriktad skrivning i Finance and Operations-appar och Dataverse
                                   href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                                 - name: Felsöka problem under första installationen
                                   href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
                                 - name: Felsöka problem under första synkroniseringen
                                   href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                                - name: Felsöka problem med modulen för dubbelriktad skrivning i Finance and Operations-appar
+                                - name: Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
                                   href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                                 - name: Felsöka problem med livesynkronisering
                                   href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
                                 - name: Felsöka problem som rör lösningsmedvetande
                                   href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                                - name: Felsöka problem som rör uppgraderingar av Finance and Operations-appar
+                                - name: Felsöka problem från uppgraderingar av Finance and Operations-appar
                                   href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                                 - name: Allmän felsökning
                                   href: data-entities/dual-write/dual-write-troubleshooting.md
@@ -338,8 +342,12 @@
               items:
                 - name: Översikt över jobb för import och export av data
                   href: data-entities/data-import-export-job.md
-                - name: Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal
+                - name: Synkronisera datum och tid i importjobb
+                  href: data-entities/data-synchronize-date-and-time.md
+                - name: Importera verifikationer med hjälp av enheten Allmän journal
                   href: data-entities/tips-tricks-import-general-journal-entity.md
+                - name: Optimera datamigrering för Finance and Operations-appar
+                  href: sysadmin/optimize-data-migration.md
             - name: Utveckling för datatabeller
               items:
                 - name: Designprinciper och metodtips för datatabeller
@@ -442,6 +450,8 @@
                       href: database/api/v1/reference-create-export.md
                     - name: Hämta aktivitetsstatus för åtgärd
                       href: database/api/v1/reference-get-status.md
+                    - name: Starta och stoppa miljöer
+                      href: database/api/v1/reference-start-stop-environments.md
         - name: Demodata
           items:
             - name: Demonstrationsdata – översikt
@@ -808,65 +818,11 @@
                       href: dev-ref/xpp-string-run-time-functions.md
                 - name: Systemtabeller
                   href: dev-ref/system-tables.md
-                - name: Systemklasser
-                  items:
-                    - name: Lista med systemklasser
-                      href: dev-ref/system-classes/toc.yml
-                    - name: Systemklasser grupperade alfabetiskt
-                      items:
-                        - name: A-klasser
-                          href: dev-ref/a-classes.md
-                        - name: B-klasser
-                          href: dev-ref/b-classes.md
-                        - name: C-klasser
-                          href: dev-ref/c-classes.md
-                        - name: D-klasser
-                          href: dev-ref/d-classes.md
-                        - name: E-klasser
-                          href: dev-ref/e-classes.md
-                        - name: F-klasser
-                          href: dev-ref/f-classes.md
-                        - name: G-klasser
-                          href: dev-ref/g-classes.md
-                        - name: H-klasser
-                          href: dev-ref/h-classes.md
-                        - name: I-klasser
-                          href: dev-ref/i-classes.md
-                        - name: J-klasser
-                          href: dev-ref/j-classes.md
-                        - name: K-klasser
-                          href: dev-ref/k-classes.md
-                        - name: L-klasser
-                          href: dev-ref/l-classes.md
-                        - name: M-klasser
-                          href: dev-ref/m-classes.md
-                        - name: N-klasser
-                          href: dev-ref/n-classes.md
-                        - name: O-klasser
-                          href: dev-ref/o-classes.md
-                        - name: P-klasser
-                          href: dev-ref/p-classes.md
-                        - name: Q-klasser
-                          href: dev-ref/q-classes.md
-                        - name: R-klasser
-                          href: dev-ref/r-classes.md
-                        - name: S-klasser
-                          href: dev-ref/s-classes.md
-                        - name: T-klasser
-                          href: dev-ref/t-classes.md
-                        - name: U-klasser
-                          href: dev-ref/u-classes.md
-                        - name: V-klasser
-                          href: dev-ref/v-classes.md
-                        - name: W-klasser
-                          href: dev-ref/w-classes.md
-                        - name: X-klasser
-                          href: dev-ref/x-classes.md
             - name: Utbyggbarhet
               items:
                 - name: Startsida för utbyggbarhet
                   href: extensibility/extensibility-home-page.md
-                - name: Introduktion och komma igång
+                - name: Introduktion och komma i gång
                   items:
                     - name: Plan för programs utbyggbarhet
                       href: extensibility/extensibility-roadmap.md
@@ -1008,7 +964,7 @@
                   href: perf-test/multi-user-testing-local-test-controller.md
                 - name: Fleranvändartestning med Performance SDK och Azure DevOps
                   href: perf-test/multi-user-testing-perfsdk-azuredevops.md
-                - name: Felsökningsguide för enanvändartestning eller fleranvändartestning med Performance SDK
+                - name: Felsökningsguide för testning med Performance SDK
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
                 - name: Performance SDK och fleranvändartestning i lokala miljöer
                   href: perf-test/perfsdk-tutorial-lbd.md
@@ -1022,7 +978,7 @@
                   href: perf-test/testing-validation.md
                 - name: Testa projekt i Visual Studio
                   href: perf-test/testing-support.md
-                - name: Distribuera miljöer som har stöd för kontinuerlig bygg- och testautomatisering
+                - name: Distribuera och använda miljön för kontinuerlig bygg- och testautomatisering
                   href: perf-test/continuous-build-test-automation.md
                 - name: SysTest-filtrering med hjälp av klass- och metodattribut
                   href: perf-test/systest-filtering.md
@@ -1172,11 +1128,13 @@
           items:
             - name: Microsoft Power Platform-integration med Finance and Operations
               href: power-platform/overview.md
+            - name: Översikt över tillägg
+              href: power-platform/add-ins-overview.md
             - name: Enhetsmodellering
               href: power-platform/entity-modeling.md
             - name: Livscykelhantering för program
               href: power-platform/application-lifecycle-management.md
-            - name: Finance and Operations- och Common Data Service-administratörsreferens
+            - name: Finance and Operations- och Dataverse-administratörsreferens
               href: power-platform/admin-reference.md
             - name: Power Apps-portaler med Finance and Operations
               href: power-platform/power-portal-reference.md
@@ -1420,8 +1378,8 @@
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Härledda testfall
               href: perf-test/rsat/rsat-derived-test-cases.md
-            - name: Regression Suite Automation Tool-självstudier och andra funktioner
-              href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
+            - name: Självstudier för Regression Suite Automation Tool
+              href: perf-test/rsat/rsat-tutorial.md
             - name: Bästa praxis
               href: perf-test/rsat/rsat-best-practices.md
             - name: Dataagnostiska tester med hjälp av Regression Suite Automation Tool
@@ -1467,7 +1425,7 @@
             - name: Få support för Finance and Operations och Lifecycle Services
               href: lifecycle-services/lcs-support.md
             - name: Översikt över Dynamics 365-support
-              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
+              href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
             - name: Få support för Finance and Operations som drivs av 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
             - name: Ställa in teknisk support för Finance and Operations-appar
@@ -1506,6 +1464,8 @@
                   href: sysadmin/tasks/create-new-users.md
                 - name: Hantering av användarsession
                   href: sysadmin/user-session-management.md
+                - name: Spärra åtkomst efter plats med villkorsstyrd åtkomst i Azure AD
+                  href: /power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
                 - name: Massimportera användare
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: Ställa in ansvarsfördelning
@@ -1524,6 +1484,8 @@
                   href: sysadmin/create-simple-security-policy.md
             - name: Följ standard för användarlicensieringskrav
               href: sysadmin/stay-compliant-user-license-requirement.md
+            - name: Visa licensstatus för oberoende programvaruleverantör
+              href: sysadmin/view-isv-license-status.md
             - name: Processautomatisering
               href: sysadmin/process-automation.md
             - name: Batchbearbetning
@@ -1542,15 +1504,13 @@
                   href: sysadmin/batch-active-period-dst.md
                 - name: Säkerhetsroll för batchhanterare
                   href: sysadmin/runby.md
-                - name: Batchjobbet ska hantera defragmentering av SQL-index
-                  href: sysadmin/batch-job-SQL-defragmentation.md
                 - name: Konfigurera batchnotifieringar
                   href: sysadmin/alerts.md
                 - name: Utökade batchformulär
                   href: sysadmin/enhanced-forms.md
                 - name: Rensa batchhistorik
                   href: sysadmin/batch-history-cleanup.md
-                - name: Avbryt körning av batchjobb
+                - name: Avbryta körning av batchjobb
                   href: sysadmin/batch-abort.md
             - name: Rådgivning om optimering
               items:

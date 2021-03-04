@@ -72,12 +72,12 @@
                   items:
                     - name: Nyheter eller ändringar av startsidan till Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.17 (april 2021)
+                      href: get-started/whats-new-scm-10-0-17.md
                     - name: Supply Chain Management 10.0.16 (februari 2021)
                       href: get-started/whats-new-scm-10-0-16.md
                     - name: Supply Chain Management 10.0.15 (januari 2021)
                       href: get-started/whats-new-scm-10-0-15.md
-                    - name: Supply Chain Management 10.0.14 (november 2020)
-                      href: get-started/whats-new-scm-10-0-14.md
                 - name: Borttagna eller utfasade funktioner
                   items:
                     - name: Borttagna eller utfasade funktioner i Dynamics 365 Supply Chain Management
@@ -154,7 +154,9 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Sparade vyer
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Rutnätsmöjligheter
+                - name: Vyer som sparas som standard för Supply Chain Management
+                  href: get-started/saved-views-scm.md
+                - name: Rutnätsfunktioner
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Skapa och arbeta med anpassade fält
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
@@ -174,8 +176,8 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Arkitektur för Finance and Operations-appar
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Microsoft FastTrack for Finance and Operations
-                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Microsoft FastTrack
+                  href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
                 - name: Integrera ett implementeringsprojekt
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Miljöplanering
@@ -224,6 +226,8 @@
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
               href: cloud-edge/cloud-edge-workload-warehousing.md
+            - name: Distributionslagerorder för moln- och kantskalningsenheter
+              href: cloud-edge/cloud-edge-warehouse-order.md
         - name: Tillgångshantering
           items:
             - name: Översikt av tillgångshantering
@@ -363,6 +367,8 @@
               items:
                 - name: 'Prognoser, arbetsorder och projekt'
                   href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+                - name: Underhållsräkning för kundägda tillgångar
+                  href: asset-management/integration-to-project-management-and-accounting/customer-billing.md
             - name: Integrera tillgångshantering med anläggningstillgångar
               href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
             - name: Förebyggande och reaktivt underhåll
@@ -439,10 +445,14 @@
                   href: asset-management/controlling-and-reporting/item-where-used.md
                 - name: Underhållsstatus
                   href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Tillgångshantering från mobilappen
+              items:
+                - name: Konfigurera mobil arbetsyta för tillgångshantering
+                  href: asset-management/set-up-asset-management-mobile.md
+                - name: Använda mobil arbetsyta för tillgångshantering
+                  href: asset-management/asset-management-mobile-workspace.md
             - name: Integrera tillgångshantering med Dynamics 365 Guides
               href: asset-management/asset-management-guides-integration.md
-            - name: Mobil arbetsyta för tillgångshantering
-              href: asset-management/asset-management-mobile-workspace.md
         - name: Datahantering
           items:
             - name: Målenheter
@@ -1291,7 +1301,7 @@
                   href: inventory/tasks/initialize-stock-levels-warehouse.md
                 - name: Överför fysiskt lager i distributionslagret
                   href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
-                - name: Justera lagernivåer i lagerstället (grundläggande lagerstyrning)
+                - name: Justera lagernivåer i lagerstället (grundläggande distributionslagerhantering)
                   href: inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing.md
                 - name: Lagermärkesinventering
                   href: inventory/inventory-tag-counting.md
@@ -1319,6 +1329,8 @@
                   href: sales-marketing/register-serial-numbers-sales-process.md
                 - name: Mobil arbetsyta för inventering av lagerbehållning
                   href: inventory/inventory-on-hand-mobile-workspace.md
+                - name: Felsöka lageråtgärder
+                  href: inventory/troubleshoot-inventory-operations.md
             - name: Utgående process
               items:
                 - name: Utgående process – översikt
@@ -1377,12 +1389,18 @@
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Säkerhetsmarginaler
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: Inköpsrekvisitioner
+                  href: master-planning/planning-optimization/purchase-requisitions.md
+                - name: Produktionsplanering
+                  href: master-planning/planning-optimization/production-planning.md
                 - name: Lagermarkeringen med Planeringsoptimering
                   href: master-planning/planning-optimization/marking.md
                 - name: Koncernintern planering
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Utesluta produkter med vissa livscykeltillstånd för produkt
                   href: master-planning/planning-optimization/product-lifecycle-state.md
+                - name: Tidsgränser för disponering
+                  href: master-planning/planning-optimization/coverage-time-fence.md
                 - name: Godkänna planerade order
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automatisk bekräftelse med planeringsoptimering
@@ -1909,6 +1927,8 @@
                   href: production-control/bom-designer-functionality.md
                 - name: Använda formeldesignern
                   href: production-control/formula-designer.md
+                - name: Åsidosätta standardreservationsprincipen för material i produktion
+                  href: production-control/override-default-reservation-principle.md
                 - name: Lägg till variantprodukter i inköpsorder med hjälp av variantvikter
                   href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
                 - name: Skapa en försäljningsorder för en konfigurerbar produkt
@@ -2027,6 +2047,8 @@
                       href: production-control/bill-of-material-bom.md
                     - name: Funktionen Strukturlistedesigner
                       href: production-control/bom-designer-functionality.md
+                    - name: Åsidosätta standardreservationsprincipen för material i produktion
+                      href: production-control/override-default-reservation-principle.md
                     - name: Fiktiva artiklar
                       href: production-control/phantom-items.md
                     - name: Strukturlisteberäkningar
@@ -2715,9 +2737,9 @@
               items:
                 - name: Distributionslagerhantering av inkommande laster för inköpsorder
                   href: warehousing/inbound-load-handling.md
-                - name: Registrera artiklar för en avancerad lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
+                - name: Registrera artiklar för en artikel som är aktiverad för avancerad distributionslagerhantering med hjälp av en artikelinförseljournal
                   href: warehousing/tasks/register-items-advanced-warehousing.md
-                - name: Registrera artiklar för en grundläggande lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
+                - name: Registrera artiklar för en artikel som är aktiverad för grundläggande distributionslagerhantering med hjälp av en artikelinförseljournal
                   href: warehousing/tasks/register-items-basic-warehousing.md
                 - name: Direktleverera produkter från det mottagande lagerstället till butiker
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
@@ -2757,6 +2779,8 @@
                       href: warehousing/cluster-position-full.md
                     - name: Systemdirigerad klusterplockning
                       href: warehousing/system-directed-cluster-pick.md
+                    - name: Konfigurera olika dimensioner för packning och lagring
+                      href: warehousing/packing-vs-storage-dimensions.md
                     - name: Definiera skapande av behållare
                       href: warehousing/tasks/set-up-containerization.md
                     - name: Bekräftelse av batch och ID-nummer
@@ -2823,6 +2847,8 @@
                       href: warehousing/wave-template-grouping.md
                     - name: Skriva ut på nytt och annullera påfyllnadsetiketter
                       href: warehousing/reprint-and-void-wave-labels.md
+                    - name: Leverans av små paket
+                      href: warehousing/small-parcel-shipping.md
                     - name: Felsöka lastuppbyggnad och utleveranser
                       href: warehousing/troubleshoot-warehouse-loads-shipments.md
                 - name: Policyer för leveranskonsolidering
@@ -2915,12 +2941,16 @@
                       href: warehousing/control-warehouse-location-directives.md
                     - name: Arbeta med platsdirektiv
                       href: warehousing/create-location-directive.md
+                    - name: Konfigurera produktfilter för distributionslagertransaktioner
+                      href: warehousing/filters-and-filter-codes.md
                     - name: Lagringsbegränsningsplats
                       href: warehousing/location-stocking-limits.md
                     - name: Koder för påfyllnadssteg
                       href: warehousing/wave-step-codes.md
                     - name: Konfigurera påfyllnadsbearbetning
                       href: warehousing/tasks/configure-wave-processing.md
+                    - name: Schemalägga skapande av arbete under påfyllnad
+                      href: warehousing/configure-wave-schedule-work-creation.md
                     - name: Ställa in och använda utskrift av påfyllnadsetikett
                       href: warehousing/configure-wave-label-printing.md
                     - name: Uppdatera leveranser automatiskt
@@ -2955,6 +2985,8 @@
                       href: warehousing/troubleshoot-warehouse-configuration.md
                 - name: Installera och konfigurera distributionslagerappen
                   items:
+                    - name: Installera och ansluta mobilappen för distributionslagerhantering
+                      href: warehousing/install-configure-warehouse-management-app.md
                     - name: Installera och ansluta distributionslagerappen
                       href: warehousing/install-configure-warehousing-app.md
                     - name: Skanna streckkoder med kamera i distributionslagerappen

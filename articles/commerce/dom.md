@@ -3,14 +3,13 @@ title: Fördelad orderhantering (DOM)
 description: I detta avsnitt beskrivs funktionen fördelad orderhantering (DOM) i Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 05/22/2020
+ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3a83bd6e997110d107bac836abf237f99db78d99
-ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
+ms.openlocfilehash: 367eaebfdd59d15040bfd4824b0b6f4621cb7147
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4459982"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982601"
 ---
 # <a name="distributed-order-management-dom"></a>Fördelad orderhantering (DOM)
 
@@ -49,8 +48,12 @@ Följande illustration visar livscykeln för en försäljningsorder i ett DOM-sy
     - **Aktivera fördelad orderhantering** – Välj inställningen **Ja**.
     - **Bekräfta att Bing-kartor används för DOM** – Välj inställningen **Ja**.
 
+
         > [!NOTE]
         > Du kan välja **Ja** endast om alternativet **Aktivera Bing-kartor** på fliken **Bing-kartor** på sidan **Gemensamma Commerce-parametrar** (**Retail och Commerce \> Administrationsinställning \> Parametrar \> Gemensamma Commerce-parametrar**) också har värdet **Ja**, och om en giltig nyckel anges i fältet **Nyckel till Bing-kartor**.
+        >
+        > Med portalen [utvecklingscenter för Bing-kartor](https://www.bingmapsportal.com/) kan du begränsa åtkomsten till dina API-nycklar för Bing-kartor till en uppsättning domäner som du anger. Med den här funktionen kan kunder definiera en strikt uppsättning referensvärden eller intervall med IP-adresser som nyckeln ska valideras mot. Förfrågningar som kommer från din lista över tillåtna domäner bearbetas normalt, medan förfrågningar från domäner utanför listan returnerar ett svar om nekad åtkomst. Det är valfritt att lägga till domänsäkerhet för din API-nyckel, och de nycklar som lämnas i befintligt skick fortsätter fungera. Listan över tillåtna domäner för en nyckel är oberoende av alla andra nycklar, vilket gör att du kan ha olika regler för varje nyckel. Distribuerad orderhantering har inte stöd för inställningar av egenskaper som refereras av domäner.
+
 
     - **Kvarhållandeperiod i dagar** – Ange hur länge uppfyllelseplanerna som DOM-körningar genererar behålls i systemet. Batchjobbet **Inställning av borttagningsjobb för DOM-uppfyllelsedata** raderar alla uppfyllelseplaner som är äldre än antalet dagar som anges här.
     - **Avvisningsperiod (i dagar)** – Anger hur lång tid som måste gå innan en avvisad orderrad får tilldelas samma plats.
@@ -62,14 +65,15 @@ Följande illustration visar livscykeln för en försäljningsorder i ett DOM-sy
     - **Problemlösartyp** – välj ett värde. Två typer av problemlösare medföljer Commerce: **Produktionsproblemlösare** och **Förenklad problemlösare**. **Produktionsproblemlösare** måste väljas för alla maskiner som kör DOM (dvs. alla servrar som ingår i DOMBatch-gruppen). Produktionsproblemlösare kräver en särskild licensnyckel som normalt licensieras och används i produktionsmiljö. I andra miljöer måste denna licensnyckel börja användas manuellt. Använd licensnyckeln manuellt på detta sätt:
 
         1. Öppna biblioteket Gemensamma tillgångar i Microsoft Dynamics Lifecycle Services, välj **Modell** som tillgångstyp och ladda ned filen **DOM-licens**.
-        2. Starta Microsoft Internet Information Services-hanteraren (IIS), högerklicka på **AOSServices webbplats** och välj **Utforska**. Utforskaren öppnas i **\<AOS service root\>\\webroot**. Anteckna sökvägen till \<AOS Service root\>, eftersom den anges i nästa steg.
-        3. Kopiera konfigurationsfilen i katalogen **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
-        4. Gå till Headquarters-klienten och öppna sidan **DOM-parametrar**. Välj **Produktionsproblemlösare** i fältet **Problemlösartyp** på fliken **Problemlösare** och bekräfta att inga felmeddelanden visas.
+        1. Starta Microsoft Internet Information Services-hanteraren (IIS), högerklicka på **AOSServices webbplats** och välj **Utforska**. Utforskaren öppnas i **\<AOS service root\>\\webroot**. Anteckna sökvägen till \<AOS Service root\>, eftersom den anges i nästa steg.
+        1. Kopiera konfigurationsfilen i katalogen **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
+        1. Gå till Headquarters-klienten och öppna sidan **DOM-parametrar**. Välj **Produktionsproblemlösare** i fältet **Problemlösartyp** på fliken **Problemlösare** och bekräfta att inga felmeddelanden visas.
+
 
         > [!NOTE]
         > Den förenklade problemlösaren medföljer så att återförsäljare ska kunna testa DOM-funktionen utan att behöva använda den särskilda licensen. Den förenklade problemlösaren bör inte användas i produktionsmiljö.
         >
-        > Även om den förenklade problemlösaren ger tillgång till samma funktioner som Produktionsproblemlösaren är den begränsad i fråga om prestanda (antalet order och orderrader som går att hantera under en körning) och konvergens av resultaten (en orderbatch kanske inte ger det bästa resultatet i vissa scenarier).
+        > Produktionsproblemlösaren förbättrar prestandan (till exempel antalet order och orderrader som går att hantera under en körning) och konvergens av resultaten (eftersom en orderbatch kanske inte ger det bästa resultatet i vissa scenarier). För en del regler som regeln för **partiell order** och regeln för **maximalt antal platser** måste Produktionsproblemlösaren användas.
      
 6. Gå tillbaka till **Retail och Commerce \> Fördelad orderhantering \> Inställningar \> DOM-parametrar**.
 7. Tilldela de olika DOM-enheterna de nödvändiga nummerserierna på fliken **Nummerserier**.
@@ -121,9 +125,9 @@ Följande illustration visar livscykeln för en försäljningsorder i ett DOM-sy
         \* Om **Uppfyll partiella order** har värdet **Nej** anses **Uppfyll partiella rader** alltid ha värdet **Nej**, oavsett av vilket värde det faktiskt har.
 
         > [!NOTE]
-        > I Retail version 10.0.5 har parametern **Uppfyll order från enbart en plats** ändrats till **Maximalt antal uppfyllelseplatser**. I stället för att låta en användare konfigurera om order kan uppfyllas från enbart en plats eller från så många platser som möjligt, kan användarna nu ange om uppfyllelse kan ske från en bestämd uppsättning platser (upp till 5) eller från så många platser som möjligt. Detta ger mer flexibilitet när det gäller antalet platser som ordern kan uppfyllas från.
+        > I Retail version 10.0.5 har parametern **Uppfyll order från enbart en plats** ändrats till **Maximalt antal uppfyllelseplatser**. I stället för att låta en användare konfigurera om order kan uppfyllas från enbart en plats eller från så många platser som möjligt, kan användarna nu ange om uppfyllelse kan ske från en bestämd uppsättning platser (upp till 5) eller från så många platser som möjligt. Detta ger mer flexibilitet när det gäller antalet platser som ordern kan uppfyllas från. Den här regeln fungerar bara med Produktionsproblemlösaren. 
 
-   - **Platsregel för offline-uppfyllelse** – Med denna regel kan organisationen ange att en plats eller en grupp med platser är offline eller inte tillgänglig för DOM, så att order inte kan tilldelas till dessa platser för uppfyllelse.
+   - **Platsregel för offline-uppfyllelse** – Med denna regel kan organisationen ange att en plats eller en grupp med platser är offline eller inte tillgänglig för DOM, så att order inte kan tilldelas dessa platser för uppfyllelse.
     - **Regel för högsta antal avvisningar** – Med denna regel kan organisationen ange ett tröskelvärde för avvisningar. När tröskelvärdet har nåtts märker DOM-processorn en order eller orderrad som ett undantag och utesluter den från ytterligare behandling.
 
         När orderrader har tilldelats en plats kan platsen avvisa en tilldelad orderrad eftersom den kanske inte kan uppfylla den raden av någon anledning. Avvisade rader märks som undantag och återförs till poolen för bearbetning i nästa körning. Under nästa körning försöker DOM tilldela en annan plats den avvisade raden. Den nya platsen kan också avvisa den tilldelade orderraden. Denna tilldelnings- och avvisningscykel kan löpa flera varv. När antalet avvisningar når upp till det angivna tröskelvärdet märker DOM orderraden som ett permanent undantag och plockar inte raden för tilldelning igen. DOM tar bara upp orderraden för tilldelningen igen om en användare återställer dess status manuellt.
@@ -250,5 +254,5 @@ När DOM-bearbetningen körs skapas uppfyllelseplaner. Med tiden blir det många
 Här är några saker att tänka på när du använder DOM-funktionen:
 
 - För tillfället granskar DOM bara order som skapas från handelskanaler. Försäljningsorder identifieras som butiksförsäljningsorder när alternativet **Commerce-försäljning** har värdet **Ja**.
-- Microsoft har inte testat DOM med avancerade lagerstyrningsfunktioner. Kunder och partner måste noga bedöma om DOM är kompatibelt med den avancerade lagerstyrningskapacitet och processerna som är relevanta för dem.
+- Microsoft har inte testat DOM med funktioner för avancerad distributionslagerhantering. Kunder och partner måste noga bedöma om DOM är kompatibelt med de funktionerna för avancerad distributionslagerhantering och processerna som är relevanta för dem.
 - DOM är bara tillgängligt i molnversionen av Commerce. Det stöds inte i lokala installationer.
