@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: BOMTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1904e771915b8808b854437412639e2bc0d4677a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3a0234fcce4f108fc6b03f0c4221613bb8526e86
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437657"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966890"
 ---
 # <a name="define-configuration-route"></a>Definiera konfigurationsflöde
 
@@ -46,6 +45,3 @@ Den här proceduren visar hur du kan definiera ett konfigureringsflöde som fast
 15. Klicka på länken på den valda raden i listan.
 16. Klicka på Spara.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

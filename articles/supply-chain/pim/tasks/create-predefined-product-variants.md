@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6fa9c6d4862a49bbf0b5ecbb8c0c3d573e0f49e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d07a090dbd41eb17e8d604887435bbb8b07e8d9e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437668"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966940"
 ---
 # <a name="create-predefined-product-variants"></a>Skapa fördefinierade produktvarianter
 
@@ -72,6 +71,3 @@ Den här proceduren går igenom hur du skapar produktvarianter för en produktma
     * Du kan generera beskrivningar av alla dina varianter baserat på kombinationen av produktdimensionvärden. Beskrivningar är valfria.  
 5. Klicka på Spara.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

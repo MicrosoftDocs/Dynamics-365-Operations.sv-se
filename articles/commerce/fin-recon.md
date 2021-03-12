@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5d0520f35391f76b52fd8a333033b0d7ba4f7fe1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8ddefcdc2b2bbb5fe25e9a87396802cbbbfef72c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415721"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965087"
 ---
 # <a name="financial-reconciliation-in-retail-stores"></a>Finansiell avstämning i butiker
 
 [!include [banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 Commerce version 10.0.10 och tidigare tillhandahåller funktionerna som kassaklienten (POS) ger för processerna i slutet av dagen i butikerna och låter butikssäljarna och cheferna utför dagliga åtgärder. De kan till exempel utföra kassaavstämningar, skift som har stängts dolt, stämma av skifttransaktioner och stänga skift. Det finns emellertid ingen möjlighet i kassan att slutföra den ekonomiska informationen för skift, så att den kan användas för att bokföra det ekonomiska i Commerce-administration. Normalt är butikschefer ansvariga för att slutföra den här uppgiften. Innan de kan logga ut ett skift måste de granska informationen, göra de ändringar som behövs och slutföra summorna för det skiftet. De färdiga summorna bokförs sedan i de ekonomiska modulerna i Commerce-administration.
+I Microsoft Dynamics 365 Commerce version 10.0.10 och tidigare tillhandahåller funktionerna som kassaklienten (POS) ger för processerna i slutet av dagen i butikerna och låter butikssäljarna och cheferna utför dagliga åtgärder. De kan till exempel utföra kassaavstämningar, skift som har stängts dolt, stämma av skifttransaktioner och stänga skift. Det finns emellertid ingen möjlighet i POS att slutföra den ekonomiska informationen för skift, så att den kan användas för att bokföra det ekonomiska i Commerce-administration. Normalt är butikschefer ansvariga för att slutföra den här uppgiften. Innan de kan logga ut ett skift måste de granska informationen, göra de ändringar som behövs och slutföra summorna för det skiftet. De färdiga summorna bokförs sedan i de ekonomiska modulerna i Commerce-administration.
 
 I Commerce version 10.0.10 och tidigare kan butikschefer granska och göra justeringar av utdragsraderna i Commerce-administration. Möjligheten är dock begränsad och butikschefer har sällan åtkomst till klienten Commerce-administration. Dessutom kan granskning och justering av butikens ekonomirapporter endast göras när ekonomirapporter skapas i Commerce-administration. Processen är dock vanligtvis en nattlig process. Därför måste butikschefer vänta på att skiftet loggas ut när ekonomirapporter för butik skapas i Commerce-administration.
 
@@ -42,7 +41,7 @@ I Commerce version 10.0.11 och senare kan butikschefer granska, justera och slut
 
 Följ de här stegen om du vill använda funktionen för ekonomisk avstämning.
 
-1. I arbetsytan **Funktionshantering** aktiverar du funktionen **Butiksutdrag - Indroppning**.
+1. I arbetsytan **Funktionshantering** aktiverar du funktionen **Butiksutdrag – Indroppning**.
 1. I kassafunktionsprofilen för den aktuella butiken anger du alternativet **Aktivera ekonomisk avstämning i butiken** till **Ja**.
 
 ## <a name="more-information-about-financial-reconciliation"></a>Mer information om ekonomisk avstämning
@@ -55,13 +54,10 @@ Justeringar kan göras för varje betalningsmedel. När ett betalnings medel vä
 
 Användare kan ignorera valideringsanvisningar och meddelanden och de kan fortsätta att stänga skiftet. Om en användare däremot ignorerar valideringsfrågorna, kommer samma problem att uppstå och måste åtgärdas när de ekonomiska rapporterna i Commerce-administration bokförs.
 
-I åtgärden **Stäng skift** i kassan validerar också att alla transaktioner i offlinedatabasen synkroniseras med kanaldatabasen. Om några transaktioner inte synkroniseras får användaren ett varningsmeddelande, eftersom den här situationen kan medföra att systembeloppen beräknas felaktigt. I det här fallet kan användaren avsluta åtgärden **Stäng skift** och försöka synkronisera offlinetransaktionerna med kanaldatabasen. Alternativt kan användaren manuellt justera de systemberäknade beloppen för att redovisa de transaktioner som inte har synkroniserats, så att rätt uppsättning av ekonomiska nummer slutförs och bokförs. 
+I åtgärden **Stäng skift** i POS validerar också att alla transaktioner i offlinedatabasen synkroniseras med kanaldatabasen. Om några transaktioner inte synkroniseras får användaren ett varningsmeddelande, eftersom den här situationen kan medföra att systembeloppen beräknas felaktigt. I det här fallet kan användaren avsluta åtgärden **Stäng skift** och försöka synkronisera offlinetransaktionerna med kanaldatabasen. Alternativt kan användaren manuellt justera de systemberäknade beloppen för att redovisa de transaktioner som inte har synkroniserats, så att rätt uppsättning av ekonomiska nummer slutförs och bokförs. 
 
 När bokföring av indroppningsutdrag används, så att bokföringen av transaktionerna skiljs från bokföring av ekonomi, kan du välja att justera de systemberäknade beloppen för saknade offlinetransaktioner. På så sätt säkerställer du att ekonomierna alltid redovisas och bokförs korrekt, oavsett vilka transaktioner som saknas. Offlinetransaktioner kan synkroniseras med kanaldatabasen och Commerce-administration och sedan bokföras senare oberoende av de ekonomiska bokföringarna.
 
 Information om den ekonomiska avstämningen för ett skift synkroniseras till Commerce-administration med hjälp av P-jobbet.
 
 Ekonomiska butiksutdrag i Commerce-administration beräknar inte summor för att visa detaljer på utdragsraderna. I stället används de slutna beloppen i kassaklienten för att skapa och bokföra ekonomirapporter.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

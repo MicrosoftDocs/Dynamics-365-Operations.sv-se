@@ -11,42 +11,41 @@ ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 68132a78921e0a38c61c85bcc2b89dca3c25b04e
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: fa568926ccdde4620294915679cd094adbd1e833
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4415981"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965412"
 ---
 # <a name="store-order-fulfillment"></a>Orderuppfyllelse i butik
 
 [!include [banner](includes/banner.md)]
 
-Många återförsäljare vill optimera orderuppfyllelse genom att låta butiker fylla i order. Orderuppfyllelse på butiksnivå hjälper dig att förenkla scenarier med överlager för en specifik butik eller kan behövas från en logistisk synvinkel i de fall som en butik har extra kapacitet eller ligger inom närmare avstånd för leverans till kunden. För att tillgodose detta behov är ett enhetligt utförande av orderuppfyllelse tillgängligt i kassan.
+Många återförsäljare vill optimera orderuppfyllelse genom att låta butiker fylla i order. Orderuppfyllelse på butiksnivå hjälper dig att förenkla scenarier med överlager för en specifik butik eller kan behövas från en logistisk synvinkel i de fall som en butik har extra kapacitet eller ligger inom närmare avstånd för leverans till kunden. För att tillgodose detta behov är ett enhetligt utförande av orderuppfyllelse tillgängligt i POS.
 
 Order för uppfyllelse i en specifik butik har butikens lagerstället tilldelat på rubriken eller raderna på ordern.
 
-Utförande av orderuppfyllelse i butiken ger en enskild arbetsyta i kassan som kan användas för att bearbeta order. Detta inkluderar allt från att acceptera ordern, till att markera den som levererad eller påbörja upphämtning i butik.
+Utförande av orderuppfyllelse i butiken ger en enskild arbetsyta i POS som kan användas för att bearbeta order. Detta inkluderar allt från att acceptera ordern, till att markera den som levererad eller påbörja upphämtning i butik.
 
-## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Komma åt enhetligt orderuppfyllande i kassan
+## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Komma åt enhetligt orderuppfyllande i POS
 
-Orderuppfyllande [Operations-ID 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations), kan användas för åtkomst till butikens orderuppfyllelsearbete i kassan.
+Orderuppfyllande [Operations-ID 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations), kan användas för åtkomst till butikens orderuppfyllelsearbete i POS.
 
-Utförande av orderuppfyllelsen har inte sin egen inte har sin egen färdiga behörighet, men användare kommer i framtiden att kunna använda behörigheten **Tillåt hämta order** för att starta en åtgärd från kassan.
+Utförande av orderuppfyllelsen har inte sin egen inte har sin egen färdiga behörighet, men användare kommer i framtiden att kunna använda behörigheten **Tillåt hämta order** för att starta en åtgärd från POS.
 
-På butiksnivå finns en konfigurationsinställning tillgänglig för att bestämma om en orderrad måste godkännas manuellt inifrån kassan eller inte. Om det alternativet inte anges godtas orderrader som standard. Om det alternativet är aktiverat kommer användarna i kassan behöva välja behörigheten **Tillåt acceptera order** för att ta emot order inifrån kassan.
+På butiksnivå finns en konfigurationsinställning tillgänglig för att bestämma om en orderrad måste godkännas manuellt inifrån POS eller inte. Om det alternativet inte anges godtas orderrader som standard. Om det alternativet är aktiverat kommer användarna i POS behöva välja behörigheten **Tillåt acceptera order** för att ta emot order inifrån POS.
 
-Orderrader kan också avvisas från kassan. Om du avvisar en orderrad anger du att den inte ska uppfyllas i den här butiken och skickar tillbaka orderraden för tilldelning till en annan butik eller lagerställe. Behörighet att avvisa orderrad tilldelas via behörigheten **Tillåt avvisa order**.
+Orderrader kan också avvisas från POS. Om du avvisar en orderrad anger du att den inte ska uppfyllas i den här butiken och skickar tillbaka orderraden för tilldelning till en annan butik eller lagerställe. Behörighet att avvisa orderrad tilldelas via behörigheten **Tillåt avvisa order**.
 
 ## <a name="order-fulfillment-operation-parameters"></a>Parametrar för utförande av orderuppfyllelse
 
-De färdiga parametrar för utförande av orderuppfyllelse kan användas till åtgärden när den anropas i kassan. När parametern **Alla order** är konfigurerad, visas alla order när åtgärden används. Parametern **Order att leverera** visar bara order som måste levereras från butiken och **Order att hämta** visar order som kommer att hämtas i butiken.
+De färdiga parametrar för utförande av orderuppfyllelse kan användas till åtgärden när den anropas i POS. När parametern **Alla order** är konfigurerad, visas alla order när åtgärden används. Parametern **Order att leverera** visar bara order som måste levereras från butiken och **Order att hämta** visar order som kommer att hämtas i butiken.
 
 ## <a name="orders-for-fulfillment"></a>Order för uppfyllelse
 
@@ -94,9 +93,9 @@ När en order har tagits emot kan rader väljas och markeras som **plockning**. 
 - **Resulterande status:** Plockning
 - **Resulterande back office-status:** Ingen ändring
 
-Plocklistor kan skrivas ut vid kassan för att hjälpa medarbetare att utföra plockningsprocessen. En utskriven plocklista kan köras medan medarbetaren utför plockningen och när produkterna plockas kan medarbetaren manuellt markera dem som plockade på plocklistan.
+Plocklistor kan skrivas ut vid POS för att hjälpa medarbetare att utföra plockningsprocessen. En utskriven plocklista kan köras medan medarbetaren utför plockningen och när produkterna plockas kan medarbetaren manuellt markera dem som plockade på plocklistan.
 
-Plocklistformatet konfigurerats i Handel och läggs till i kvittoprofilen. Mer information om hur du ställer in kvittoprofiler finns i [Kvittomallar och utskrift](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Plocklistformatet konfigurerats i Commerce och läggs till i kvittoprofilen. Mer information om hur du ställer in kvittoprofiler finns i [Kvittomallar och utskrift](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 Om raderna markeras och en plocklista skrivs ut för dessa rader uppdateras de automatiskt med statusen **plockning**.
 
@@ -105,11 +104,11 @@ Om raderna markeras och en plocklista skrivs ut för dessa rader uppdateras de a
 - **Resulterande status:** Plockad eller delvis plockad
 - **Resulterande backoffice-status:** Plockad eller delvis plockad
 
-När den fysiska plockningsprocessen har utförts kan raderna markeras som **plockade**. Att välja en rad och markera den som **plockad** utför ett anrop i realtid om att uppdatera orderraden. När raden har markerats som **plockad** i kassan, uppdateras även statusen i backoffice till **plockad** och lagertransaktioner visar att den angivna kvantiteten har minskats.
+När den fysiska plockningsprocessen har utförts kan raderna markeras som **plockade**. Att välja en rad och markera den som **plockad** utför ett anrop i realtid om att uppdatera orderraden. När raden har markerats som **plockad** i POS, uppdateras även statusen i backoffice till **plockad** och lagertransaktioner visar att den angivna kvantiteten har minskats.
 
 När order bearbetas över tid kan delkvantiteter behandlas för en specifik rad. Om en rad är markerad och åtgärden **Markera som plockad** hämtas och kvantiteten är större än 1, uppmanas användaren till att ange kvantiteten. Resterande kvantitet som ska plockas fylls i automatiskt. Om mindre än det återstående antalet anges blir statusen för raden **Delvis plockad**. När orderraden uppdateras i backoffice återspeglar den även den delvis plockade statusen och den kvantitet som angetts av användaren och används för lageruppdateringen.
 
-Om en orderrad plockas fel, måste hävning av plockningen utföras på orderraden i backoffice. Det finns för närvarande inga hävningsåtgärder som stöds i kassan.
+Om en orderrad plockas fel, måste hävning av plockningen utföras på orderraden i backoffice. Det finns för närvarande inga hävningsåtgärder som stöds i POS.
 
 Orderrader från olika order kan väljas och markeras som **plockning** utskrivna på samma plocklista eller märkta som **plockade**.
 
@@ -122,7 +121,7 @@ Orderrader kan packas när som helst efter det att orderraden har accepterats.
 - **Resulterande status:** Packad eller delvis packad
 - **Resulterande backoffice-status:** levererad eller delvis levererad
 
-Den här åtgärden markerar rader som packade eller delvis packade och skriver ut en följesedel. En följesedel kan skrivas ut för att validera de produkter som har packats ihop. Följesedelformatet konfigureras i Handel och läggs till i kvittoprofilen. Mer information om hur du ställer in kvittoprofiler finns i [Kvittomallar och utskrift](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Den här åtgärden markerar rader som packade eller delvis packade och skriver ut en följesedel. En följesedel kan skrivas ut för att validera de produkter som har packats ihop. Följesedelformatet konfigureras i Commerce och läggs till i kvittoprofilen. Mer information om hur du ställer in kvittoprofiler finns i [Kvittomallar och utskrift](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Åtgärd: Markera som packad**
 
@@ -139,14 +138,14 @@ För närvarande är alternativet för att lagra butiksupphämtningsrader som **
 
 ### <a name="pick-up"></a>Upphämtning
 
-Order för butiksupphämtning kan plockas direkt när de hämtas i kassan. Beställningar för butiksupphämtning omfattas inte av godkännande.
+Order för butiksupphämtning kan plockas direkt när de hämtas i POS. Beställningar för butiksupphämtning omfattas inte av godkännande.
 
 **Åtgärd: plockning**
 
 - **Resulterande status:** fakturerat eller delvis fakturerad
 - **Resulterande backoffice-status:** fakturerad eller delvis fakturerad
 
-Om en rad är markerad för plockning in från enhetliga orderuppfyllande läses hela ordern till kassan och den fullständiga kvantiteten för den valda raden markeras. Andra rader i ordern läses också in i transaktionsvyn i kassan, men med kvantiteten som markerad som noll.
+Om en rad är markerad för plockning in från enhetliga orderuppfyllande läses hela ordern till POS och den fullständiga kvantiteten för den valda raden markeras. Andra rader i ordern läses också in i transaktionsvyn i POS, men med kvantiteten som markerad som noll.
 
 När rader för upphämtning har lästs in i transaktionsvyn kan transaktionen genomföras som vanligt.
 
@@ -180,7 +179,7 @@ Rader eller delvisa rader avslås. Detta gör att de kan skickas vidare från ba
 - **Resulterande status:** Avvisad
 - **Resulterande back office-status:** Ingen ändring
 
-De avvisade orderraderna kan visas från arbetsytan **Bearbetning och förfrågan om försäljningsorder**. Radera personfiltret på arbetsytan om du vill visa alla avvisade orderrader mellan butikerna. Fliken **Avvisade orderrader** under avsnittet **order och favoriter** visar orderraderdetaljerna. Dessutom kan användarna klicka på knappen **Avvisade orderrader** under avsnittet **sammanfattning** för att gå till en försäljningsordervy. Detta visar alla order som har en eller flera avvisade orderrader. Om distribuerad orderhantering (DOM) är aktiverad kommer dessa avvisade order att automatiskt tilldelas de lämpliga butikerna för uppfyllelse, men dessa orderrader kan även tilldelas manuellt. För att göra detta, markera raden som visar **uppfyllelsestatus** som **avvisad** och ändra vid behov platsen/lagerstället. Klicka på listrutan **uppdatera rad** och klicka på **Återställ uppfyllelsestatus** för att ändra uppfyllelsestatusen från **avvisad** till **accepterad** eller **väntande** beroende på inställningen av orderuppfyllelsen. Efter att uppfyllelsestatus har återställts ska butikspersonalen kunna visa orderrader i kassan.
+De avvisade orderraderna kan visas från arbetsytan **Bearbetning och begäran om försäljningsorder**. Radera personfiltret på arbetsytan om du vill visa alla avvisade orderrader mellan butikerna. Fliken **Avvisade orderrader** under avsnittet **order och favoriter** visar orderraderdetaljerna. Dessutom kan användarna klicka på knappen **Avvisade orderrader** under avsnittet **sammanfattning** för att gå till en försäljningsordervy. Detta visar alla order som har en eller flera avvisade orderrader. Om distribuerad orderhantering (DOM) är aktiverad kommer dessa avvisade order att automatiskt tilldelas de lämpliga butikerna för uppfyllelse, men dessa orderrader kan även tilldelas manuellt. För att göra detta, markera raden som visar **uppfyllelsestatus** som **avvisad** och ändra vid behov platsen/lagerstället. Klicka på listrutan **uppdatera rad** och klicka på **Återställ uppfyllelsestatus** för att ändra uppfyllelsestatusen från **avvisad** till **accepterad** eller **väntande** beroende på inställningen av orderuppfyllelsen. Efter att uppfyllelsestatus har återställts ska butikspersonalen kunna visa orderrader i POS.
 
 ## <a name="line-quantity-tracking"></a>Radkvantitetsspårning
 
@@ -192,19 +191,19 @@ Fortsätter med exemplet ovan, om 200 kort markeras som packade och leverans är
 
 ## <a name="line-statuses"></a>Radstatusar 
 
-Orderrader i kassan har flera statusar som återspeglar status för orderraden. Statusar i kassan och backoffice matchar inte alltid. Orderradstatusen kan ses genom den kassa som använder utförande av orderuppfyllelse. I backoffice visas orderraderna från orderdetaljerna. Orderdetaljer kan nås via **Butik och handel** \> **Kunder** \> **Alla kundorder**. Välj **Order-ID** för orderdetaljer. Från orderdetaljer väljer du fliken **Försäljningsorder** och väljer sedan **Detaljerad status** under underrubriken **Visa**.
+Orderrader i POS har flera statusar som återspeglar status för orderraden. Statusar i POS och backoffice matchar inte alltid. Orderradstatusen kan ses genom den kassa som använder utförande av orderuppfyllelse. I backoffice visas orderraderna från orderdetaljerna. Orderdetaljer kan nås via **Butik och handel** \> **Kunder** \> **Alla kundorder**. Välj **Order-ID** för orderdetaljer. Från orderdetaljer väljer du fliken **Försäljningsorder** och väljer sedan **Detaljerad status** under underrubriken **Visa**.
 
-- **Väntande** - Orderrader som har tilldelats en butik, men som ännu inte accepterat har status **väntande** när den ses i kassan. Raderna som väntar på godkännande i kassan kommer att ha status **Orderbehandling** i backoffice.
-- **Accepterad** - Orderrader som har accepterats manuellt eller accepteras automatiskt får statusen **Accepterad** när de visas i kassan. Rader med status **accepterad** visas som **orderbehandling** i backoffice.
-- **Plockning** - Raderna som ska plockas för närvarande på butiksnivån har statusen **plockning**. Samma rader, när de visas i backoffice, visas som **Orderbehandling**.
-- **Plockad** och **Delvis plockad** - Raderna som plockats eller delvis plockats vid kassan får statusen **Plockad** eller **Delvis plockad**. Samma rader i backoffice visas också som **Plockad** eller **Delvis plockad**.
-- **Packad** och **Delvis packad** - Raderna som packats eller delvis packats vid kassan får statusen **Packad** eller **Delvis packad**. Samma rader i backoffice visas också som **Levererade** eller **Delvis levererade**.
-- **Delvis fakturerad** - Raderna som har delvis hämtats eller delvis levererats får statusen **Delvis fakturerade** i kassan och backoffice.
-- **Fakturerad** - Rader som är fullständigt fakturerade i kassan visas inte längre för uppfyllelse. I backoffice är statusen för dessa rader **Fakturerad**.
+- **Väntande** – Orderrader som har tilldelats en butik, men som ännu inte accepterat har status **väntande** när den ses i POS. Raderna som väntar på godkännande i POS kommer att ha status **Orderbehandling** i backoffice.
+- **Accepterad** – Orderrader som har accepterats manuellt eller accepteras automatiskt får statusen **Accepterad** när de visas i POS. Rader med status **accepterad** visas som **orderbehandling** i backoffice.
+- **Plockning** – Raderna som ska plockas för närvarande på butiksnivån har statusen **plockning**. Samma rader, när de visas i backoffice, visas som **Orderbehandling**.
+- **Plockad** och **Delvis plockad** – Raderna som plockats eller delvis plockats vid POS får statusen **Plockad** eller **Delvis plockad**. Samma rader i backoffice visas också som **Plockad** eller **Delvis plockad**.
+- **Packad** och **Delvis packad** – Raderna som packats eller delvis packats vid POS får statusen **Packad** eller **Delvis packad**. Samma rader i backoffice visas också som **Levererade** eller **Delvis levererade**.
+- **Delvis fakturerad** – Raderna som har delvis hämtats eller delvis levererats får statusen **Delvis fakturerade** i POS och backoffice.
+- **Fakturerad** – Rader som är fullständigt fakturerade i POS visas inte längre för uppfyllelse. I backoffice är statusen för dessa rader **Fakturerad**.
 
 ## <a name="order-fulfillment-filtering"></a>Orderuppfyllelsefiltrering
 
-Orderuppfyllelse i kassan innehåller filter för att hjälpa användaren att enkelt hitta vad de behöver. Filter kan ändras via åtgärdsfönstret längst ned på skärmen **Kassa**. Som standard tillämpas filtret **leveranstyp** beroende på hur operationen ställs in. Om operationen ställs in med parametern **alla order** och filtret används vid åtkomst av orderuppfyllelse. Detsamma gäller för parametrarna **Butiksupphämtning** och **Leverans från butik**. Andra filter kan tillämpas på orderuppfyllelsen:
+Orderuppfyllelse i POS innehåller filter för att hjälpa användaren att enkelt hitta vad de behöver. Filter kan ändras via åtgärdsfönstret längst ned på skärmen **Kassa**. Som standard tillämpas filtret **leveranstyp** beroende på hur operationen ställs in. Om operationen ställs in med parametern **alla order** och filtret används vid åtkomst av orderuppfyllelse. Detsamma gäller för parametrarna **Butiksupphämtning** och **Leverans från butik**. Andra filter kan tillämpas på orderuppfyllelsen:
 
 - Kundnummer
 - Kundnamn
@@ -218,6 +217,3 @@ Orderuppfyllelse i kassan innehåller filter för att hjälpa användaren att en
 - Skapades den
 - Leveransdatum
 - Inleveransdatum
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

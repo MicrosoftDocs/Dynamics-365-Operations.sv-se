@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart, PurchEditLines, PurchTable, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 31cb26479ccb74dfb58fd5590cd60d7b7c64c292
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0a8f214a56c6a5013cab8233d5b2e0126deb9220
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438083"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966115"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Leverera order som direktleveranser
 
@@ -82,6 +81,3 @@ Det här avsnittet visar hur du kan skapa en direktleverans för en försäljnin
     - Direktleveranssidan fungerar som en arbetsyta som ger inköparen en översikt över alla försäljningsorderrader som ska direktlevereras, och det gör att det går att skapa respektive inköpsorder. Dessutom kan de visa öppna direktleveransorder och bekräftade order på flikarna Bekräftelse och Leverans.  
     - När du har skapat en direktleverans skapas flyttas denna automatiskt till fliken Bekräftelse. Du kan välja att bekräfta ordern direkt från den här sidan. När inköpet har bekräftats flyttas det automatiskt till fliken Leverans där du kan registrera inleveransen.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

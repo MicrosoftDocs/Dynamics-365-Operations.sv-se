@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,20 +17,20 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ee86a6761b27f3c08a65a2e250659cdcfd71db44
-ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
+ms.openlocfilehash: ba6fb94033e227790e01676819308bb4f0cd6868
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "4415976"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965234"
 ---
 # <a name="run-and-monitor-an-experiment"></a>Köra och övervaka ett experiment
 
 I det här avsnittet beskrivs hur du kör och övervakar ditt experiment i en annan tillverkare och ändrar varianter om det behövs. Innan du slutför stegen i det här avsnittet måste du först [publicera](experimentation-preview-publish.md) experimentet i Commerce. 
 
-I bilden nedan visas alla steg som ingår när du ställer in och kör ett experiment på en näthandelswebbplats i Dynamics 365 Commerce. Ytterligare steg beskrivs i olika avsnitt.
+I bilden nedan visas alla steg som ingår när du ställer in och kör ett experiment på en näthandelssajt i Dynamics 365 Commerce. Ytterligare steg beskrivs i olika avsnitt.
 
-[ ![Experimentets användarresa - kör och övervaka](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
+[ ![Experimentets användarresa – kör och övervaka](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 
 När du har publicerat dina varianter måste du utföra experimentet med alla steg du behöver slutföra i Commerce. Nästa steg bestämmer vilken variant som ska visas för varje användare när de begär en sida. Den tredje partens tjänst gör det enkelt att fastställa, men först måste du aktivera experimentet inom tjänsten. Eftersom stegen för att aktivera ett experiment varierar från tjänst till tjänst måste du följa instruktionerna som medföljde tjänsten eller leverantören. Om experimentet inte har aktiverats visas standardversionen för sidan (utan att några varianter visas).
 
@@ -53,6 +52,3 @@ Om du av någon anledning skulle behöva ändra varianterna följer du stegen ne
 
 ## <a name="next-step"></a>Gå vidare
 [Höja en variant och slutföra ett experiment](experimentation-review-complete.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

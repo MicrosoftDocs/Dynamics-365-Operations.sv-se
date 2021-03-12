@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a875343d9b93f5ebf2c2992fba8b2f182310461e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 411895763cc282766b5a668208f20c72496059cd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415723"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965131"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Skapa och konfigurera utökade garantier
 
@@ -45,7 +44,7 @@ Dynamics 365 Commerce tillhandahåller funktioner som gör att du kan skapa en g
 
 Utökade garantier säljs i en återförsäljarkanal under det initiala produktinköpet. De kan också säljas under en begränsad tid efter den första inköpet.
 
-I kassan (POS) ber säljaren att lägga till en utökad garanti när en relaterad produkt läggs till i en kundvagn. Därför presenteras en affärsmöjlighet med försäljning och merförsäljning till säljare som en del av försäljningsflödet.
+I POS ber säljaren att lägga till en utökad garanti när en relaterad produkt läggs till i en kundvagn. Därför presenteras en affärsmöjlighet med försäljning och merförsäljning till säljare som en del av försäljningsflödet.
 
 Kunder kan också returnera senare och köpa en utökat garanti för en produkt som de tidigare har köpt. I dessa fall kan en säljare söka efter den ursprungliga transaktionen och sälja kunden den relaterade utökade garantiartikeln.
 
@@ -59,7 +58,7 @@ I följande tabell definieras vissa garantier som är relaterade till garantin.
 | Tillverkarens garanti | En *tillverkares garanti* (kallas ofta för *begränsad garanti*) är den garanti som kunderna får när de köper en produkt. Här följer några av funktionerna för tillverkarens garanti:<ul><li>Garantikostnaden ingår i kostnaden för produkten. Kunderna behöver inte betala något ytterligare belopp för tillverkarens garanti.</li><li>Beroende på produktkategori är tillverkarens garanti vanligtvis 30 dagar, sex månader eller ett år. (För de flesta hemelektronikprodukter varar garantin i ett år).</li><li>Garantin täcker alla fel som orsakas av mekaniska eller elektriska fel. Täckningen är begränsad och den omfattar inte olycksskador på den köpta produkten. Kunder som vill skydda produkterna som de köper från vardagliga skador bör investera i en utökad garanti. Utökade garantier varar i två till tio år, beroende på produktkategori. De har också större täckning och täcker varje vardagliga missöden, t.ex. fall, spill och fläckar.</li></ul> |
 | Garantiartikel | En *garantiartikel* är en utökad garantiartikel som säljs för en garantiberättigad artikel. Ett exempel är en två års olycksskyddsplan för bärbara datorer. |
 | Garantiberättigad artikel | En *garantiberättigad artikel* är en serialiserad produkt som en garanti säljs för. En bärbar dator är till exempel en garantiberättigad artikel som kan säljas till två år och tre års utökad garanti. |
-| Garantigrupp | En *garantigrupp* är en relation mellan garantiartiklar och garantiberättigad artiklar. Kassan använder garantigrupper för att fastställa vilka garantiartiklar som säljare ska föreslå att lägga till när en garantiberättigad artikel läggs till i en kundvagn. |
+| Garantigrupp | En *garantigrupp* är en relation mellan garantiartiklar och garantiberättigad artiklar. POS använder garantigrupper för att fastställa vilka garantiartiklar som säljare ska föreslå att lägga till när en garantiberättigad artikel läggs till i en kundvagn. |
 | Garantipolicy | En *garantipolicy* är en entitet som skapas i Commerce när en garantipolicy säljs. En garantipolicy omfattar information som start- och slutdatum för den inköpta garantiartikeln, villkoren och villkoren samt serienumret för den motiverade produkten. Garantipolicynummer kan delas med kunder så att de har en referens till den utökade garanti artikeln som de köpt. |
 
 ## <a name="create-a-warranty-item"></a>Skapa en garantiartikel
@@ -93,7 +92,7 @@ Följ de här stegen om du vill skapa en garantiartikel i Commerce.
     | Fältnamn | Värde | beskrivning |
     |------------|-------|-------------|
     | Bas för prisintervall | **Inget**, **Grundpris** eller **Försäljningspris** | <ul><li>**Ingen** – Värdena **Nedre gräns** och **Övre gräns** för prisintervall är inte tillämpliga.</li><li>**Grundpris** – En given garanti kommer att tillämpas om grundpriset (dvs. priset utan rabatter) för den garanterade artikeln ligger mellan värdena **Nedre gränsen** och den **Övre gränsen** som anges här, baserat på priset för den motiverade artikeln.</li><li>**Försäljningspris** – detta värde är reserverat för framtida användning.</li></ul> |
-    | Nedre gräns, övre gräns | Ett positivt heltalsvärde | Dessa fält definierar de övre och nedre prisgränserna för den artikel som är berättigad och hur den aktuella garantiartikeln kan användas för den garantiberättigade artikeln. Dessa gränser kan baseras på den motiverade artikelns grundpris (även kallad tillverkarens föreslagna butikspris \[MSRP\]). Om fältet **Bas för prisintervall** anges till endast **Grundpris**, kommer endast en garantiberättigad artikel (produkt) som har ett grundpris mellan värdena **nedre gräns** och **övre gräns** kommer att utlösa en uppmaning om att lägga till garantiposten i kassan. |
+    | Nedre gräns, övre gräns | Ett positivt heltalsvärde | Dessa fält definierar de övre och nedre prisgränserna för den artikel som är berättigad och hur den aktuella garantiartikeln kan användas för den garantiberättigade artikeln. Dessa gränser kan baseras på den motiverade artikelns grundpris (även kallad tillverkarens föreslagna butikspris \[MSRP\]). Om fältet **Bas för prisintervall** anges till endast **Grundpris**, kommer endast en garantiberättigad artikel (produkt) som har ett grundpris mellan värdena **nedre gräns** och **övre gräns** kommer att utlösa en uppmaning om att lägga till garantiposten i POS. |
 
     I följande bild visas till exempel fältet **Bas för prisintervall** som anges till **Grundpris**, fältet **nedre gräns** anges till 500 $ och fältet **övre gräns** anges till 1 000 $.
     
@@ -108,22 +107,22 @@ En produkt som kan vara föremål för en bärbar dator (produkt) har ett grundp
 - Garanti\_1 har en nedre gräns för 500 $ och en övre gräns på 1 000 $ och **Bas för prisintervall** är inställt på **grundpris**.
 - Garanti\_2 har en nedre gräns på 1 001 $ och en övre gräns på 2 000 $ och **Bas för prisintervall** är inställt på **grundpris**.
 
-När den bärbara datorn läggs till i en kundvagn visas i så fall en uppmaning att lägga till garanti\_1 i kassan, eftersom priset på den bärbara datorn ligger mellan det nedre och övre gräns värdet för garanti\_1.
+När den bärbara datorn läggs till i en kundvagn visas i så fall en uppmaning att lägga till garanti\_1 i POS, eftersom priset på den bärbara datorn ligger mellan det nedre och övre gräns värdet för garanti\_1.
 
 > [!NOTE]
 > Om du till exempel vill att frågor ska visas både om garanti\_1 och garanti\_2, oavsett pris på garantiberättigad artikel, ställer du in fältet **Bas för prisintervall** till **ingen**.
 
 ## <a name="configure-channel-specific-settings"></a>Konfigurera kanalspecifika inställningar
 
-Med kanalspecifika inställningar kan du ange om en fråga ska läggas till om en garantiartikel ska visas i kassan när en garantiberättigad artikel läggs till i en kundvagn.
+Med kanalspecifika inställningar kan du ange om en fråga ska läggas till om en garantiartikel ska visas i POS när en garantiberättigad artikel läggs till i en kundvagn.
 
 Om du vill konfigurera kanalspecifik inställning i Commerce följer du stegen nedan.
 
 1. Gå till **Retail och Commerce \> Produkter och kategorier \> Garanti \> Garantiinställningar**.
 1. På fliken **Kanalspecifik** i kolumnen **Fråga efter garanti** för din kanal, följ ett av stegen nedan:
 
-    - Markera kryssrutan om en fråga om garantiartikeln ska visas i kassan när en berättigad artikel läggs till i kundvagnen.
-    - Avmarkera kryssrutan om ingen fråga om garantiartikeln ska visas i kassan när en berättigad artikel läggs till i kundvagnen.
+    - Markera kryssrutan om en fråga om garantiartikeln ska visas i POS när en berättigad artikel läggs till i kundvagnen.
+    - Avmarkera kryssrutan om ingen fråga om garantiartikeln ska visas i POS när en berättigad artikel läggs till i kundvagnen.
 
 1. Kör **1070** jobbet för att synkronisera data till kanalen.
 
@@ -138,16 +137,16 @@ Följ de här stegen om du vill konfigurera en nummerserie för garantipolicyn i
 
 ## <a name="set-up-a-warranty-group"></a>Ställ in en garantigrupp
 
-En garantigrupp är en relation mellan garantiartiklar och garantiberättigad artiklar. Kassan använder garantigrupper för att fastställa vilka garantiartiklar som säljare ska föreslå att lägga till när en garantiberättigad artikel läggs till i en kundvagn.
+En garantigrupp är en relation mellan garantiartiklar och garantiberättigad artiklar. POS använder garantigrupper för att fastställa vilka garantiartiklar som säljare ska föreslå att lägga till när en garantiberättigad artikel läggs till i en kundvagn.
 
 Så här ställer du in en garantigrupp i Commerce.
 
-1. Gå till  **Retail och Commerce \> Produkter och kategorier \> Garanti \> Garantigrupper**.
+1. Gå till **Retail och Commerce \> Produkter och kategorier \> Garanti \> Garantigrupper**.
 1. Välj **Nytt** för att skapa en garantigrupp.
 1. Ange ett unikt namn för den nya gruppen i fältet **Namn**.
 1. På snabbfliken **Allmänt** i fältet **Beskrivning** anger du en beskrivning för gruppen.
 1. På snabbfliken **garantiprodukter** väljer du **Lägg till rad** för att lägga till en garantiartikel.
-1. I fältet **visningsordning** anger du ett nummer som rangordnar garantigruppen vid kassan. I kassan visas garantiartiklar i stigande rangordning i garantitolken.
+1. I fältet **visningsordning** anger du ett nummer som rangordnar garantigruppen vid POS. I POS visas garantiartiklar i stigande rangordning i garantitolken.
 1. På snabbfliken **garantiberättigade produkter** väljer du **Lägg till rad** för att lägga till garantiberättigade produkter.
 1. Om garantiartikeln gäller för en hel kategori av garantiberättigade artiklar (produkter) väljer du kategorin i fältet **kategori**. Om garantiartikeln gäller för en specifik artikel (produkt) väljer du produkten i fältet **produkt**.
 1. På snabbfliken **Tillämpliga kanaler** väljer du **Lägg till rad** om du vill lägga till kanalen där garantiartikeln ska säljas.
@@ -155,7 +154,7 @@ Så här ställer du in en garantigrupp i Commerce.
 1. Välj **publicera** om du vill publicera garantigruppen.
 1. Kör **1040** jobbet för att synkronisera data till kanalen.
 
-## <a name="sell-warranty-items-at-the-pos"></a>Sälj garantiartiklar i kassan
+## <a name="sell-warranty-items-at-the-pos"></a>Sälj garantiartiklar i POS
 
 Två kassaåtgärder gör det möjligt för säljare att sälja garantiartiklar under arbetsflödet för kundinköp:
 
@@ -220,7 +219,7 @@ I följande tabell beskrivs egenskaperna för garantipolicy och deras värden. I
 
 ## <a name="frequently-asked-questions-faq"></a>Vanliga frågor
 
-**Varför ser jag inte någon garantifråga i kassan?**
+**Varför ser jag inte någon garantifråga i POS?**
 
 Se till att garantiartikeln är utvald för kanalen. Kontrollera också att garantigruppen har konfigurerats så att den innehåller relevant kanal.
 
@@ -239,6 +238,3 @@ En garanti är en tjänst som tillhandahålls för en specifik, unik produkt. I 
 [Ställa in sortiment](set-up-assortments.md)
 
 [Nummerserier – översikt](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

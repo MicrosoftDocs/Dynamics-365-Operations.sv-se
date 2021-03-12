@@ -1,5 +1,5 @@
 ---
-title: Produkt- och kundsökning i kassan (POS)
+title: Produkt- och kundsökning i POS
 description: Det här avsnittet innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 manager: AnnBe
@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 141393
 ms.assetid: ''
 ms.search.region: Global
@@ -18,14 +17,14 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 10c843670a280c86790185c8a39cb2943e2838f9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1de8373471ff8187bd476305c9ed0b26beaa52d5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415755"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965288"
 ---
-# <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- och kundsökning i kassan (POS)
+# <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- och kundsökning i POS
 
 [!include [banner](includes/banner.md)]
 
@@ -98,26 +97,23 @@ Sökningar som är baserade på telefonnummer har förenklats. Dessa sökningar 
 > [!NOTE]
 > En kund kan ha flera telefonnummer och flera e-postadresser. Kundens sökalgoritm söker också igenom dessa sekundära e-postadresser och telefonnummer, men sidan med sökresultat för kund visar endast primär e-postadress och telefonnummer. Detta kan leda till en del förvirring när det returnerade kundresultatet inte visar den sökta e-postadressen eller telefonnumret. I en senare version planerar vi att förbättra skärmen för kundens sökresultat för att visa den här informationen.
 
-Vanlig kundsökning kan vara tidskrävande, eftersom den söker över flera fält. Kassörer kan istället nu söka i en kudegenskap, till exempel namn, telefonnummer eller e-postadress. Egenskaper som kundens sökalgoritm använder kallas *sökvillkor för kund*. Systemadministratören kan enkelt konfigurera ett eller flera kriterier som genvägar som visas i kassan. Eftersom sökningen är begränsat till ett enda villkor visas endast relevanta sökresultat och den får mycket bättre prestanda än en standardkundsökningsprestanda. I följande illustration visas kundens sökgenvägar i kassan.
+Vanlig kundsökning kan vara tidskrävande, eftersom den söker över flera fält. Kassörer kan istället nu söka i en kudegenskap, till exempel namn, telefonnummer eller e-postadress. Egenskaper som kundens sökalgoritm använder kallas *sökvillkor för kund*. Systemadministratören kan enkelt konfigurera ett eller flera kriterier som genvägar som visas i POS. Eftersom sökningen är begränsat till ett enda villkor visas endast relevanta sökresultat och den får mycket bättre prestanda än en standardkundsökningsprestanda. I följande illustration visas kundens sökgenvägar i POS.
 
 ![Genvägar för kundsökning](./media/SearchShortcutsPOS.png "Genvägar för kundsökning")
 
-Om du vill ange sökvillkor som genvägar måste administratören öppna sidan **Handelparametrar** i Handel och sedan på fliken **Sökvillkor för kassa** väljer du de kriterier som ska visas som genvägar.
+Om du vill ange sökvillkor som genvägar måste administratören öppna sidan **Handelparametrar** i Commerce och sedan på fliken **Sökvillkor för kassa** väljer du de kriterier som ska visas som genvägar.
 
 ![Konfigurera sökgenvägar](./media/ConfigureShortcutsAX.png "Konfigurera sökgenvägar")
 
 > [!NOTE]
-> Om du lägger till för många genvägar kommer menyn på sökfältet i kassan att bli plottrig och medarbetarens sökupplevelse kan påverkas. Vi rekommenderar att du endast lägger till så många genvägar som du behöver.
+> Om du lägger till för många genvägar kommer menyn på sökfältet i POS att bli plottrig och medarbetarens sökupplevelse kan påverkas. Vi rekommenderar att du endast lägger till så många genvägar som du behöver.
 
-Fältet **visningsordning** anger den ordning som genvägarna visas i kassan. Kriteriet som visas är de färdiga egenskaper som kundens sökalgoritm använder för att söka efter kunder. Partner kan emellertid lägga till anpassade egenskaper som sökgenvägar. Om du vill lägga till anpassade egenskaper som sökgenvägar måste systemadministratören utöka den omfattande uppräkningen (enum) som ska användas för kundsökkriterierna och markera partners anpassade egenskaper som genvägar. Partner som är ansvarig för att skriva koden för att hitta resultat när deras anpassade genvägar används i sökningar.
+Fältet **visningsordning** anger den ordning som genvägarna visas i POS. Kriteriet som visas är de färdiga egenskaper som kundens sökalgoritm använder för att söka efter kunder. Partner kan emellertid lägga till anpassade egenskaper som sökgenvägar. Om du vill lägga till anpassade egenskaper som sökgenvägar måste systemadministratören utöka den omfattande uppräkningen (enum) som ska användas för kundsökkriterierna och markera partners anpassade egenskaper som genvägar. Partner som är ansvarig för att skriva koden för att hitta resultat när deras anpassade genvägar används i sökningar.
 
 > [!NOTE]
 > En anpassad egenskap som läggs till enum påverkar inte den standardinställda kundsökalgoritmen. Med andra ord söker inte kundens sökalgoritm i den anpassade egenskapen. Användare kan endast använda en anpassad egenskap för sökningar om den anpassade egenskapen läggs till som en genväg, eller om standardsökalgoritmen åsidosätts.
 
-I en kommande version av Handel kan återförsäljare ställa in standardsökläget för kunder i kassan för att **söka igenom alla butiker**. Den här konfigurationen kan vara till hjälp i situationer där kunder som har skapats utanför kund måste sökas igenom direkt (t.ex. till och med innan fördelningsjobbet körs). En nytt alternativ för **standardsökläget för kunder** är tillgängligt i funktionsprofilen för kassan. Ställ in den på **på** för att ange att standardsökläget **söka igenom alla butiker**. Varje kunds sökning gör då ett realtidssamtal till huvudkontoret.
+I en kommande version av Commerce kan återförsäljare ställa in standardsökläget för kunder i POS för att **söka igenom alla butiker**. Den här konfigurationen kan vara till hjälp i situationer där kunder som har skapats utanför kund måste sökas igenom direkt (t.ex. till och med innan fördelningsjobbet körs). En nytt alternativ för **standardsökläget för kunder** är tillgängligt i funktionsprofilen för POS. Ställ in den på **på** för att ange att standardsökläget **söka igenom alla butiker**. Varje kunds sökning gör då ett realtidssamtal till huvudkontoret.
 
 För att förhindra att oväntade prestandaproblem döljs den här konfigurationen bakom en förhandsversionsflagga som kallas **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Om du därför vill visa inställningen **standardsökläget för kunder** för kund i användargränssnittet måste återförsäljaren skapa ett acceptanstestet för användare (UAT) och produktionsmiljön. När ärendet har tagits emot arbetar teknikteamet tillsammans med återförsäljaren för att säkerställa att återförsäljaren testar i sina miljöer för icke-produktion för att bedöma prestanda och implementera eventuella optimeringar som krävs.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

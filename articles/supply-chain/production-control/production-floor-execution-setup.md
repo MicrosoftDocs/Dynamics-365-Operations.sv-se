@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 57f09bf907407e19ae0e693de64510f7f4efbf0b
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.openlocfilehash: d4529af21d9673512889b17aeb1e7fbd49969cdc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4437977"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966289"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Konfigurera en enhet för att köra körningsgränssnittet för produktionsgolvet
 
@@ -80,6 +79,3 @@ I den övre delen av bilden nedan visas hur gränssnittet ser ut som standard. I
 Som standard används körningsgränssnittet för produktionsgolvet automatiskt för att logga ut om ingen använder det i 12 timmar. En användare av Supply Chain Management måste sedan logga in igen. Du kan dock förlänga tidsgränsen till upp till 90 dagar.
 
 Om du vill förlänga tidsgränsen loggar du in på Supply Chain Management, går till **Systemadministration \> Användare \> Sessionstillägg**. Ange användarkontot för Supply Chain Management som används för att logga in på enheten och antalet timmar som sessionen ska vara aktiv för.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

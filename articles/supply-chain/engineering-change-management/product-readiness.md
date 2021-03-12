@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 58b5a35800ab464f25868c6756b16f25d14d8d78
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 8321a0d8516a6c2c085ce9c1236f70af1cca98da
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4438124"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967268"
 ---
 # <a name="product-readiness"></a>Produktberedskap
 
@@ -148,6 +147,3 @@ Ange följande fält för varje rad du lägger till.
 | Enkät | Välj den enkät som ska användas för kontrollista. Check listan är en lokal kontrollista i företaget där beredskapskontrollen är klar. Systemet måste kunna bedöma om kontrollistan är korrekt besvarad. Därför måste kontrollistan ställas in så att en utvärdering görs baserat på korrekta svar. Mer information om hur du skapar enkäter finns i [använda enkäter](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) och den närliggande informationen. |
 | Automatiskt godkännande | Beredskapskontroll poster inkluderar en kryssruta **godkänd** som visar godkännandestatus. Markera kryssrutan **automatiskt godkännande** för kontroller som ska ställas in på godkänd omedelbart efter att den tilldelade användaren har slutfört dem. Avmarkera den här kryssrutan om du vill att explicit godkännande ska krävas som ett ytterligare steg. |
 | Obligatoriskt | Markera den här kryssrutan för kontroller som måste slutföras av den tilldelade användaren. Obligatoriska kontroller kan inte hoppas över. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

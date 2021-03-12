@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MpsFitAnalysis, MpsIntegrationParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 769bd84b4ba23c9de4638df9186381936221414a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 04605370cbcc7b8c13552ae7f999212a1efabfab
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437692"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967085"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Bristanalys för planeringsoptimering
 
@@ -53,7 +52,7 @@ Om du vill se analysresultaten för planeringsoptimering går du till **Huvudpla
 
 ## <a name="overview-of-possible-results-from-the-fit-analysis"></a>Översikt över möjliga resultat från bristanalysen
 
-I följande tabell visas de olika resultat som kan visas efter en bristanalys. Nummertecken (_\#_) ersätts med ett tal som anger antalet poster som innehåller det listade problemet.
+I följande tabell visas de olika resultat som kan visas efter en bristanalys. Nummertecken (_\#_) ersätts med ett tal som anger antalet poster som innehåller det listade problemet. Funktionerna som stöds eller förhandsgranskas är tillgängliga med version 10.0.9 eller senare (såvida inte ett högre versionsnummer visas i kolumnen "Förväntad tillgänglighet").
 
 | Funktion | Listat problem | Förklaring | Förväntad tillgänglighet |
 | --- | --- | --- | --- |
@@ -66,17 +65,17 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 | Bekräftelse | Poster för artikeldisponering med automatisk bekräftelse angivet: _\#_ | I version 10.0.7 och senare stöds automatiska bekräftelser som ett separat bekräftat batchjobb när huvudplaneringen är slutförd (förutsatt att funktionen _Automatisk bekräftelse för planeringsoptimering_ har aktiverats i [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Observera att automatisk bekräftelse för planeringsoptimering baseras på orderdatum (startdatum), inte behovsdatum (slutdatum). Det här beteendet säkerställer att bekräftelse av planerade order sker i tid, utan att produktionstiden behöver inkluderas i den bekräftade tidsgränsen. | Stöds |
 | Bekräftelse | Huvudplaner med automatisk bekräftelse angivet: _\#_ | I version 10.0.7 och senare stöds automatiska bekräftelser som ett separat bekräftat batchjobb när huvudplaneringen är slutförd (förutsatt att funktionen _Automatisk bekräftelse för planeringsoptimering_ har aktiverats i [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Observera att automatisk bekräftelse för planeringsoptimering baseras på orderdatum (startdatum), inte behovsdatum (slutdatum). Det här beteendet säkerställer att bekräftelse av planerade order sker i tid, utan att produktionstiden behöver inkluderas i den bekräftade tidsgränsen. | Stöds |
 | FitAnalysisPlanningItems | Planeringsartiklar: _\#_ | Denna funktion väntar. För närvarande hanteras planeringsartiklar som vanliga artiklar när planeringsoptimering aktiveras. | 2021 oktober |
-| Prognos | Disponeringsgrupper med aktiverat "Inkludera koncerninterna order": _\#_ | Denna funktion väntar. För närvarande inkluderar inte underordnad planerad efterfrågan när planeringsoptimering är aktiverad, oavsett den här inställningen. Observera att släppta/bekräftade order fortfarande fungerar med de vanliga koncerninterna funktionerna och kommer att täcka de flesta scenarierna. | 2020 oktober |
-| Prognos | Disponeringsgrupper med inställningen "minska prognos med" angiven till ett värde som skiljer sig från "Order": _\#_ | Som standard använder planeringsoptimeringen "reducera prognos efter" för order, oavsett den här inställningen. | November 2020 |
+| Prognos | Disponeringsgrupper med aktiverat "Inkludera koncerninterna order": _\#_ | Denna funktion väntar. För närvarande inkluderar inte underordnad planerad efterfrågan när planeringsoptimering är aktiverad, oavsett den här inställningen. Observera att släppta/bekräftade order fortfarande fungerar med de vanliga koncerninterna funktionerna och kommer att täcka de flesta scenarierna. | I förhandsgranskning |
+| Prognos | Disponeringsgrupper med inställningen "minska prognos med" angiven till ett värde som skiljer sig från "Order": _\#_ | Som standard använder planeringsoptimeringen "reducera prognos efter" för order, oavsett den här inställningen. | Stöds |
 | Prognos | Prognosmodeller med undermodeller: _\#_ | Denna funktion väntar. För närvarande stöds inte prognoser som använder undermodeller när planeringsoptimering är aktiverat. De kommer att ignoreras oavsett den här inställningen. | 2021 april |
 | Prognos | Huvudplaner med "inkludera leveransprognos" aktiverat: _\#_ | Denna funktion väntar. För närvarande stöds inte prognoser om tillgång när planeringsoptimering är aktiverat. De kommer att ignoreras oavsett den här inställningen. | 2021 oktober |
 | Frystidsgräns | Disponeringsgrupper med frystidsgräns angiven: _\#_ | Frystidsgränsen används inte ofta och det finns för närvarande inga planer på att inkludera den för planeringsoptimering. För närvarande ignoreras inställning av frystidsgräns när planeringsoptimeringen är aktiverad, oavsett den här inställningen. | Inte tillämpligt |
 | Frystidsgräns | Poster för artikeldisponering med frystidsgräns angiven: _\#_ | Frystidsgränsen används inte ofta och det finns för närvarande inga planer på att inkludera den för planeringsoptimering. För närvarande ignoreras inställning av frystidsgräns när planeringsoptimeringen är aktiverad, oavsett den här inställningen. | Inte tillämpligt |
 | Frystidsgräns | Huvudplaner med frystidsgräns angiven: _\#_ | Frystidsgränsen används inte ofta och det finns för närvarande inga planer på att inkludera den för planeringsoptimering. För närvarande ignoreras inställning av frystidsgräns när planeringsoptimeringen är aktiverad, oavsett den här inställningen. | Inte tillämpligt |
-| Koncerninternt | Huvudplaner inklusive underordnad planerad efterfrågan: _\#_ | Denna funktion väntar. För närvarande inkluderar inte underordnad planerad efterfrågan när planeringsoptimering är aktiverad, oavsett den här inställningen. Observera att släppta/bekräftade order fortfarande fungerar med de normala koncerninterna funktionerna och kommer att täcka de flesta scenarierna. | 2020 oktober |
+| Koncerninternt | Huvudplaner inklusive underordnad planerad efterfrågan: _\#_ | Denna funktion väntar. För närvarande inkluderar inte underordnad planerad efterfrågan när planeringsoptimering är aktiverad, oavsett den här inställningen. Observera att släppta/bekräftade order fortfarande fungerar med de normala koncerninterna funktionerna och kommer att täcka de flesta scenarierna. | I förhandsgranskning |
 | Kanban | Poster för artikeldisponering med planerad ordertyp för kanban: _\#_ | Denna funktion väntar. För närvarande kommer artikeldisponering som anges till kanban att ignoreras när planeringsoptimering aktiveras. Den planerade order typen för kanban kommer att skapa en varning under huvudplaneringen och planerade inköpsorder skapas för att täcka det relaterade behovet. | 2021 oktober |
 | Kanban | Artiklar med standardordertyp för kanban: _\#_ | För närvarande kommer en standardordertyp som anges till kanban att ignoreras när planeringsoptimering aktiveras. Den planerade standardordertypen för kanban kommer att skapa en varning under huvudplaneringen och planerade inköpsorder skapas för att täcka det relaterade behovet. | 2021 oktober |
-| Produktens livscykeltillstånd   | Produktens livscykeltillstånd är inte aktivt för planering: _\#_ | Detta är en kommande funktion. För närvarande ignoreras produktens livscykeltillstånd med planeringsoptimering aktiverat. Du kan justera produktfiltret för plannivå för att undvika produkter där produktens livscykeltillstånd är inaktiverat för planering. | November 2020 |
+| Produktens livscykeltillstånd   | Produktens livscykeltillstånd är inte aktivt för planering: _\#_ | Detta är en kommande funktion. För närvarande ignoreras produktens livscykeltillstånd med planeringsoptimering aktiverat. Du kan justera produktfiltret för plannivå för att undvika produkter där produktens livscykeltillstånd är inaktiverat för planering. | Stöds |
 | Produktion | Strukturlisterader med avrundning eller flera inställningar: _\#_ | Denna funktion väntar. För närvarande ignoreras avrundning och flera inställningar på strukturlisterader när planeringsoptimering är aktiverad, oavsett den här inställningen. | 2021 april |
 | Produktion | Strukturliste-/formelrader med formelmätning: _\#_ | Denna funktion väntar. För närvarande ignoreras formelmätning på strukturliste- och formelrader när planeringsoptimering är aktiverad, oavsett den här inställningen. | 2021 oktober |
 | Produktion | Strukturliste-/formelrader med artikelersättning (plangrupper): _\#_ | Denna funktion väntar. För närvarande ignoreras artikelersättning (plangrupper) på strukturliste- och formelrader när planeringsoptimering är aktiverad, oavsett den här inställningen. | 2021 oktober |
@@ -85,7 +84,7 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 | Produktion | Strukturliste-/formelrader med stegförbrukning: _\#_ | Denna funktion väntar. För närvarande kommer stegförbrukning på strukturliste- och formelrader att ignoreras när planeringsoptimering aktiveras. | 2021 oktober |
 | Produktion | Strukturlistor med definierad konstant eller variabel kassation: _\#_ | Denna funktion väntar. För närvarande ignoreras konstant kassation och variabel kassation som definieras på strukturlistor när planeringsoptimering aktiveras. | 2021 oktober |
 | Produktion | Strukturlistor med legotillverkning: _\#_ | Denna funktion väntar. För närvarande ignoreras inställning av legotillverkning på strukturlistor när planeringsoptimeringen är aktiverad, oavsett den här inställningen. | 2021 oktober |
-| Produktion | Strukturlistor utan plats: _\#_ | Denna funktion väntar. För närvarande ignoreras strukturlistor utan plats när planeringsoptimering aktiveras. | 2020 oktober |
+| Produktion | Strukturlistor utan plats: _\#_ | Denna funktion väntar. För närvarande ignoreras strukturlistor utan plats när planeringsoptimering aktiveras. | Stöds |
 | Produktion | Efterfrågan med specifika definierade strukturliste- eller flödeskrav: _\#_ | Denna funktion väntar. För närvarande ignoreras de specifika strukturliste- eller flödeskraven som har definierats på efterfrågan (t.ex. en understrukturlista eller underflöde på en försäljningsorder) när planeringsoptimering är aktiverad. Standardstrukturlistan eller flödet används oavsett den här inställningen. | 2021 oktober |
 | Produktion | Formelversioner med sam-/biprodukter: _\#_ | Denna funktion väntar. För närvarande kommer samprodukter och biprodukter som är associerade med formelversionen att ignoreras när planeringsoptimering är aktiverad. | 2021 oktober |
 | Produktion | Formelversioner med avkastning: _\#_ | Denna funktion väntar. För närvarande ignoreras avkastning som är associerad med formelversionen när planeringsoptimering är aktiverad. | 2021 oktober |
@@ -97,8 +96,8 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 | Produktion | Planering med nedbrytning av produktionsorder: _\#_ | Tidsplanering som använder nedbrytning av produktionsorder stöds inte när planeringsoptimering aktiveras. Tillverkningsorder kan tidsplaneras individuellt. | 2021 oktober |
 | Anbudsförfrågningar | Huvudplaner med anbudsförfrågningar aktiverat: _\#_ | Denna funktion väntar. För närvarande anses inte anbudsförfrågningar vara efterfrågan när planeringsoptimering är aktiverad. De kommer att ignoreras oavsett den här inställningen. | 2021 oktober |
 | Rekvisitioner | Huvudplaner med rekvisitioner aktiverat: _\#_ | Denna funktion väntar. För närvarande betraktas inte rekvisitioner när planeringsoptimering aktiveras. De kommer att ignoreras oavsett den här inställningen. | 2021 oktober |
-| Säkerhetsmarginaler | Disponeringsgrupper med säkerhetsmarginal: _\#_ | Denna funktion väntar. För närvarande ignoreras säkerhetsmarginal när planeringsoptimering aktiveras. Du kan kompensera för det här problemet genom att öka produktionstiden så att den inkluderar säkerhetsmarginalen. | 2020 oktober |
-| Säkerhetsmarginaler | Huvudplaner med säkerhetsmarginal: _\#_ | Denna funktion väntar. För närvarande ignoreras säkerhetsmarginal när planeringsoptimeringen är aktiverad, oavsett den här inställningen. Du kan kompensera för det här problemet genom att öka produktionstiden så att den inkluderar säkerhetsmarginalen. | 2020 oktober |
+| Säkerhetsmarginaler | Disponeringsgrupper med säkerhetsmarginal: _\#_ | Denna funktion väntar. För närvarande ignoreras säkerhetsmarginal när planeringsoptimering aktiveras. Du kan kompensera för det här problemet genom att öka produktionstiden så att den inkluderar säkerhetsmarginalen. | Inleveransmarginal: Stöds. Ombeställningsmarginal och utleveransmarginal: april 2021 |
+| Säkerhetsmarginaler | Huvudplaner med säkerhetsmarginal: _\#_ | Denna funktion väntar. För närvarande ignoreras säkerhetsmarginal när planeringsoptimeringen är aktiverad, oavsett den här inställningen. Du kan kompensera för det här problemet genom att öka produktionstiden så att den inkluderar säkerhetsmarginalen. | Inleveransmarginal: Stöds. Ombeställningsmarginal och utleveransmarginal: april 2021 |
 | Uppfyllelse av säkerhetslager | Poster för artikeldisponering med "uppfyllda minimum" som skiljer sig från "dagens datum + anskaffningstid": _\#_ | Planeringsoptimering använder alltid *dagens datum + anskaffningstid*. Den här ändringen görs för att förbereda för en förenklad planeringsinställning i framtiden och för att ge ett åtgärdbart resultat. Om anskaffningstiden inte finns med i säkerhetslagret försenas planerade order som skapas för aktuell lagerbehållning alltid på grund av produktionstiden. Det här beteendet kan orsaka betydande brus och oönskade planerade order. Det bästa tillvägagångssättet är att ändra inställningen så att *dagens datum + anskaffningstid* används. Uppdatera huvuddata för att undvika varningar. | Inte tillämpligt |
 | Försäljningsofferter | Huvudplaner med försäljningsofferter aktiverade: _\#_ | Denna funktion väntar. För närvarande betraktas inte offerter när planeringsoptimering aktiveras. De kommer att ignoreras oavsett den här inställningen. | 2021 oktober |
 | Hållbarhetstid | Huvudplaner med hållbarhetstid aktiverat: _\#_ | Denna funktion väntar. För närvarande beaktas inte hållbarhetstid när planeringsoptimeringen är aktiverad, oavsett den här inställningen. | 2021 oktober |
@@ -114,6 +113,3 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 [Använda filter på en plan](plan-filters.md)
 
 [Annullera ett planeringsjobb](cancel-planning-job.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
