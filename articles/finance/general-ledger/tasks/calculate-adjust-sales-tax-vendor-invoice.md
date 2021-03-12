@@ -11,36 +11,35 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice, VendTableLookup, TaxTmpWorkTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 03313d875d23489b3293376dd94f808c73a4bd15
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2536e87953267eae13cf3b42c2bd5476fc647c22
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447835"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994725"
 ---
-# <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a><span data-ttu-id="fb417-103">Beräkna och justera moms på en leverantörsfaktura</span><span class="sxs-lookup"><span data-stu-id="fb417-103">Calculate and adjust sales tax on a vendor invoice</span></span>
+# <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a><span data-ttu-id="4575b-103">Beräkna och justera moms på en leverantörsfaktura</span><span class="sxs-lookup"><span data-stu-id="4575b-103">Calculate and adjust sales tax on a vendor invoice</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="fb417-104">I det här avsnittet beskriver hur du justerar momsen på en leverantörsfaktura.</span><span class="sxs-lookup"><span data-stu-id="fb417-104">This topic explains how to adjust sales tax on a vendor invoice.</span></span> <span data-ttu-id="fb417-105">Om det ursprungliga källdokumentet visar andra momsbelopp än dem som beräknas kan du justera dessa belopp, innan du bokför dem.</span><span class="sxs-lookup"><span data-stu-id="fb417-105">If the original source document displays different tax amounts as calculated, you can adjust those amounts before posting.</span></span> <span data-ttu-id="fb417-106">I den här uppgiften används demonstrationsföretaget DEMF.</span><span class="sxs-lookup"><span data-stu-id="fb417-106">This task uses the DEMF demo company.</span></span>
+<span data-ttu-id="4575b-104">I det här avsnittet beskriver hur du justerar momsen på en leverantörsfaktura.</span><span class="sxs-lookup"><span data-stu-id="4575b-104">This topic explains how to adjust sales tax on a vendor invoice.</span></span> <span data-ttu-id="4575b-105">Om det ursprungliga källdokumentet visar andra momsbelopp än dem som beräknas kan du justera dessa belopp, innan du bokför dem.</span><span class="sxs-lookup"><span data-stu-id="4575b-105">If the original source document displays different tax amounts as calculated, you can adjust those amounts before posting.</span></span> <span data-ttu-id="4575b-106">I den här uppgiften används demonstrationsföretaget DEMF.</span><span class="sxs-lookup"><span data-stu-id="4575b-106">This task uses the DEMF demo company.</span></span>
 
-1. <span data-ttu-id="fb417-107">I navigeringsfönstret går du till **Moduler > Leverantörsreskontra > Fakturor > Fakturajournal**.</span><span class="sxs-lookup"><span data-stu-id="fb417-107">In the navigation pane, go to **Modules > Accounts payable > Invoices > Invoice journal**.</span></span>
-2. <span data-ttu-id="fb417-108">Välj **Ny**.</span><span class="sxs-lookup"><span data-stu-id="fb417-108">Select **New**.</span></span>
-3. <span data-ttu-id="fb417-109">I fältet **Namn** i den nya raden väljer du ett alternativ i listrutemenyn.</span><span class="sxs-lookup"><span data-stu-id="fb417-109">In the **Name** field of the new row, select an option in the drop-down menu.</span></span>
-4. <span data-ttu-id="fb417-110">Klicka på **Rader** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="fb417-110">In the Action Pane, select **Lines**.</span></span>
-5. <span data-ttu-id="fb417-111">Ange önskade värden i fältet **Konto**.</span><span class="sxs-lookup"><span data-stu-id="fb417-111">In the **Account** field, specify the desired values.</span></span>
-6. <span data-ttu-id="fb417-112">Ange ett värde i fältet **Faktura**.</span><span class="sxs-lookup"><span data-stu-id="fb417-112">In the **Invoice** field, type a value.</span></span>
-7. <span data-ttu-id="fb417-113">I fältet **Kredit** väljer du ett tal.</span><span class="sxs-lookup"><span data-stu-id="fb417-113">In the **Credit** field, enter a number.</span></span>
-8. <span data-ttu-id="fb417-114">Ange önskade värden i fältet **Motkonto**.</span><span class="sxs-lookup"><span data-stu-id="fb417-114">In the **Offset account** field, specify the desired values.</span></span>
-9. <span data-ttu-id="fb417-115">Välj **Moms**.</span><span class="sxs-lookup"><span data-stu-id="fb417-115">Select **Sales tax**.</span></span>
-10. <span data-ttu-id="fb417-116">Ange ett tal i fältet **Totalt faktiskt momsbelopp**.</span><span class="sxs-lookup"><span data-stu-id="fb417-116">In the **Total actual sales tax amount** field, enter a number.</span></span>
-11. <span data-ttu-id="fb417-117">På fliken **justering** kan momsbeloppen justeras per momskod.</span><span class="sxs-lookup"><span data-stu-id="fb417-117">On the **Adjustment** tab, the sales tax amounts can be adjusted per sales tax code.</span></span>
-12. <span data-ttu-id="fb417-118">Välj **Återställ utfall till beräknade belopp**.</span><span class="sxs-lookup"><span data-stu-id="fb417-118">Select **Reset actual from calculated amounts**.</span></span>
-13. <span data-ttu-id="fb417-119">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="fb417-119">Select **OK**.</span></span>
-14. <span data-ttu-id="fb417-120">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="fb417-120">Select **Save**.</span></span>
+1. <span data-ttu-id="4575b-107">I navigeringsfönstret går du till **Moduler > Leverantörsreskontra > Fakturor > Fakturajournal**.</span><span class="sxs-lookup"><span data-stu-id="4575b-107">In the navigation pane, go to **Modules > Accounts payable > Invoices > Invoice journal**.</span></span>
+2. <span data-ttu-id="4575b-108">Välj **Ny**.</span><span class="sxs-lookup"><span data-stu-id="4575b-108">Select **New**.</span></span>
+3. <span data-ttu-id="4575b-109">I fältet **Namn** i den nya raden väljer du ett alternativ i listrutemenyn.</span><span class="sxs-lookup"><span data-stu-id="4575b-109">In the **Name** field of the new row, select an option in the drop-down menu.</span></span>
+4. <span data-ttu-id="4575b-110">Klicka på **Rader** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="4575b-110">In the Action Pane, select **Lines**.</span></span>
+5. <span data-ttu-id="4575b-111">Ange önskade värden i fältet **Konto**.</span><span class="sxs-lookup"><span data-stu-id="4575b-111">In the **Account** field, specify the desired values.</span></span>
+6. <span data-ttu-id="4575b-112">Ange ett värde i fältet **Faktura**.</span><span class="sxs-lookup"><span data-stu-id="4575b-112">In the **Invoice** field, type a value.</span></span>
+7. <span data-ttu-id="4575b-113">I fältet **Kredit** väljer du ett tal.</span><span class="sxs-lookup"><span data-stu-id="4575b-113">In the **Credit** field, enter a number.</span></span>
+8. <span data-ttu-id="4575b-114">Ange önskade värden i fältet **Motkonto**.</span><span class="sxs-lookup"><span data-stu-id="4575b-114">In the **Offset account** field, specify the desired values.</span></span>
+9. <span data-ttu-id="4575b-115">Välj **Moms**.</span><span class="sxs-lookup"><span data-stu-id="4575b-115">Select **Sales tax**.</span></span>
+10. <span data-ttu-id="4575b-116">Ange ett tal i fältet **Totalt faktiskt momsbelopp**.</span><span class="sxs-lookup"><span data-stu-id="4575b-116">In the **Total actual sales tax amount** field, enter a number.</span></span>
+11. <span data-ttu-id="4575b-117">På fliken **justering** kan momsbeloppen justeras per momskod.</span><span class="sxs-lookup"><span data-stu-id="4575b-117">On the **Adjustment** tab, the sales tax amounts can be adjusted per sales tax code.</span></span>
+12. <span data-ttu-id="4575b-118">Välj **Återställ utfall till beräknade belopp**.</span><span class="sxs-lookup"><span data-stu-id="4575b-118">Select **Reset actual from calculated amounts**.</span></span>
+13. <span data-ttu-id="4575b-119">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="4575b-119">Select **OK**.</span></span>
+14. <span data-ttu-id="4575b-120">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="4575b-120">Select **Save**.</span></span>
 
