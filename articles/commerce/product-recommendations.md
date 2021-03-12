@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5aa7db8e53906f9e1416b912fe2c3b70d5430258
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1769af6663a040c699449eb53841b3f72ab433e5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415705"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972385"
 ---
 # <a name="product-recommendations-overview"></a>Översikt av produktrekommendationer
 
@@ -49,7 +48,7 @@ Produktrekommendationer är tillgängliga för följande scenarier:
 
 - **På valfri butikssida för bläddring eller landnings sida i näthandel:** Om kunder eller butikspartner besöker en butikssida kan rekommendationsmotorn föreslå produkter i listorna **Ny**. **Bästsäljande** och **Trend**.
 - **På sidan produktinformation:** om kunder eller säljare besöker en sida med **produktinformation** föreslår rekommendationsmotorn ytterligare artiklar som troligen kommer att köpas. Dessa objekt visas i listan **människor gillar också**.
-- **På transaktionssidan eller på utcheckningssidan:** rekommendationsmotorn föreslår artiklar, baserat på den fullständiga listan med artiklar i varukorgen. Dessa objekt visas i listan över **Köps ofta ihop**.
+- **På transaktionssidan eller på kassasidan:** rekommendationsmotorn föreslår artiklar, baserat på den fullständiga listan med artiklar i varukorgen. Dessa objekt visas i listan över **Köps ofta ihop**.
 - **Personliga rekommendationer:** inköpare kan ge de inloggade kunderna en anpassad **plockning för dig**, förutom nya funktioner som gör att befintliga listscenarier kan anpassas baserat på den kunden. Mer information finns i [Aktivera anpassade rekommendationer.](personalized-recommendations.md).
 
 ### <a name="types-of-product-recommendations"></a>Typer av produktrekommendationer
@@ -77,7 +76,7 @@ I följande tabell beskrivs olika typer av automatiska produktrekommendationer s
 
 [Aktivera rekommendationer för "köp liknande produkter"](shop-similar-looks.md)
 
-[Lägga till produktrekommendationer i kassan](product.md)
+[Lägga till produktrekommendationer i POS](product.md)
 
 [Lägg till rekommendationer på transaktionsskärmen](add-recommendations-control-pos-screen.md)
 
@@ -88,6 +87,3 @@ I följande tabell beskrivs olika typer av automatiska produktrekommendationer s
 [Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

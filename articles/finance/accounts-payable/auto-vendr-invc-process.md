@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 677760ec15630a11bf691be4cd8af9cf5549ddf9
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: 9a033258feeccf172f1e2c03a9f49305054b24c2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665332"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972141"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Automatiserade processer för leverantörsfakturering – översikt
 
@@ -51,7 +50,7 @@ Fakturor som är relaterade till inköpsorder och fakturor som innehåller en an
 
 Automatiseringsfunktionen tillhandahåller ett flexibelt ramverk där du kan definiera företagsspecifika regler för att skicka importerade leverantörs fakturor till arbetsflödessystemet och matcha bokförda produktinleveranser mot pågående leverantörsfakturarader.
 
-## <a name="vendor-invoice-automation--match-product-receipts-to-invoice-lines-that-have-a-three-way-matching-policy"></a>Automation av leverantörsfaktura - Matcha bokförda produktinleveranser mot fakturarader som har en policy för trevägsmatchning
+## <a name="vendor-invoice-automation--match-product-receipts-to-invoice-lines-that-have-a-three-way-matching-policy"></a>Automation av leverantörsfaktura – Matcha bokförda produktinleveranser mot fakturarader som har en policy för trevägsmatchning
 
 Systemet kan automatiskt matcha bokförda produktinleveranser mot fakturarader som en policy för trevägsmatchning har definierats för. Processen kommer att köras tills den matchade kvantiteten för produktinleverans är lika med faktura antalet. Som en del av denna process kan du ange det maximala antalet gånger för att försöka med automatisk matchning – Välj det antal gånger som systemet ska försöka matcha produktinleveranser mot en fakturarad innan det finner att processen misslyckades. Processen kommer att köras i bakgrunden, antingen varje timme eller per dag. Du kan köra den automatiska matchningen som en del av processen för att skicka fakturor till arbetsflödessystemet. Du kan också köra den som en fristående process.
 
@@ -69,6 +68,3 @@ Arbetsytan **Leverantörsfakturaregistrering** kan du fokusera på leverantörsf
 
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Automatisering av leverantörs faktura – återuppta automationsbearbetning av flera fakturor
 När en importerad faktura inte har skickats till arbetsflödet via den automatiska processen, tas den bort från vidare automatisk bearbetning. En leverantörsreskontraansvarig kan granska och redigera fakturan innan den automatiska processen skickar den igen till arbetsflödet. Om en felorsak kan lösas med samma korrigering för flera fakturor kan du starta om den automatiska processen på sidan **Återuppta automatisk bearbetning för fakturor**. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

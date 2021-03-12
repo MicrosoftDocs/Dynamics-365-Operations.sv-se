@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
@@ -19,19 +18,19 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 91c0a96abdd7df9e85e63ca6b1b47a57f3f401eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e14b029a1420eda6af6e83392f295a071a29842a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415707"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972440"
 ---
 # <a name="retail-price-reports"></a>Prisrapporter för Retail
 
 [!include [banner](includes/banner.md)]
 
 
-För att kunna förse kunderna med konkurrenskraftiga priser ändrar återförsäljare ofta priserna på produkter. Butikschefer vill ha möjlighet att enkelt komma åt tidigare eller kommande prisändringar så att de kan planera för resurserna som krävs för att uppdatera prisetiketterna som visas på butikshyllorna. Med versionen 10.0 av Handel kan butikschefen öppna rapporten **Pris** genom att gå till **Alla butiker \> Butik \> Prisrapport** och visa de uppdaterade priserna för produkter som är kopplade till butiken. 
+För att kunna förse kunderna med konkurrenskraftiga priser ändrar återförsäljare ofta priserna på produkter. Butikschefer vill ha möjlighet att enkelt komma åt tidigare eller kommande prisändringar så att de kan planera för resurserna som krävs för att uppdatera prisetiketterna som visas på butikshyllorna. Med versionen 10.0 av Commerce kan butikschefen öppna rapporten **Pris** genom att gå till **Alla butiker \> Butik \> Prisrapport** och visa de uppdaterade priserna för produkter som är kopplade till butiken. 
 
 För att aktivera prisrapporten måste parametern **Aktivera prisrapport för butik** vara aktiverad. Denna parameter finns på fliken **Handelsparametrar \> Rabatter \> Ddiverse**. När du öppnar sidan **Prisrapport** visas en dialogruta med olika konfigurationer. Nedan finns tillgängliga konfigurationer.
 
@@ -44,6 +43,3 @@ För att aktivera prisrapporten måste parametern **Aktivera prisrapport för bu
 | Visa produkter med prisändringar | Om du anger detta till **Ja** visas priserna endast för de datum då priset har ändrats. Priset för *en dag före* det valda **från datumet** kommer alltid att visas, så att butikschefen enkelt kan identifiera de produkter som inte har ändrade priser under hela valda varaktigheten och kan också visa det aktuella priset. |
 
 När rapporten har skapats kan Excel-filen hämtas för eventuella ytterligare filtreringsbehov. Prisrapporten kan också användas för att kontrollera historiska priser för produkter för tidigare datum.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

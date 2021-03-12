@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: bab2b0b2b021266e50d6f4a1fad1cc4a1c1ae56e
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 4bc4bac1a422a7505ef4c66b9c3b79a3d754cc4d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4448211"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971488"
 ---
 # <a name="asset-leasing-reports"></a>Leasing av tillgångar – rapporter
 
@@ -147,7 +146,7 @@ Rapporten om leasingrörelse fungerar som en uppdateringsrapport för leasingsku
 |     Utgående balans            |     Saldot för leasingens alla skuldtransaktioner som har bokförts per rapportens **Till-datum**.                  |
 
 ## <a name="lease-transactions-report"></a>Leasingtransaktionsrapport
-Vid förfrågan om leasingtransaktioner visas alla journalposter som har genererats av Leasing av tillgångar. Varje journalpost är kopplad till det bok-ID som den kom från. På så sätt kan du enkelt associera journalposten till motsvarande leasing. Förfrågan om leasingtransaktioner fungerar på ett sätt som liknar sidan **Verifikationstransaktioner** i redovisningen.
+Vid begäran om leasingtransaktioner visas alla journalposter som har genererats av Leasing av tillgångar. Varje journalpost är kopplad till det bok-ID som den kom från. På så sätt kan du enkelt associera journalposten till motsvarande leasing. Begäran om leasingtransaktioner fungerar på ett sätt som liknar sidan **Verifikationstransaktioner** i redovisningen.
 
 ## <a name="weighted-average-discount-rate-report"></a>Rapport med viktat genomsnittligt diskonto
 Rapport med viktat genomsnittligt diskonto uppfyller USA:s GAAP-upplysningskrav som anges i ASC 842-20-50-4(g)(4) för ett viktat genomsnittligt diskonto. Om du vill visa rapporten går du till **Leasing av tillgångar > Förfrågningar och rapporter > Upplysningar > Viktat genomsnittligt diskonto**. Rapporten innehåller följande fält. 
@@ -165,6 +164,3 @@ Rapport med viktat genomsnittligt diskonto uppfyller USA:s GAAP-upplysningskrav 
 |     Valuta                          |     Förkortningen för den transaktionsvaluta som används. Alla rapporter kommer att konvertera transaktionsvalutan till rapporteringsvalutan.  |
 |     Resterande leasingbetalningar          |     Det totala beloppet med obetalda leasingbetalningar från betalningsplanen som återstår från **Från och med**-datumet.            |
 |     Återstående vägda betalningar       |     De leasingbetalningar som återstår multiplicerat med den diskontoränta som används.   |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

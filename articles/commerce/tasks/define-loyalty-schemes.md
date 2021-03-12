@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2bec8653c05d7684202c0e63d049ddb517e12834
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eb1afb0ebce742fa2f6accd65e553df6607107a4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415873"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972290"
 ---
 # <a name="define-loyalty-schemes"></a> Definiera förmånsscheman
 
@@ -52,7 +51,7 @@ Den här proceduren går igenom hur du definierar ett bonusprogram. Bonusplaner 
     * Belöningspoängen för beloppstypen lagrar intjänade belopp med decimaler. Om till exempel intjäningsregeln anger att medlemmen får en belöningspoäng för varje kanadensisk dollar som spenderas och medlemmen spenderar 1,25 kanadensiska dollar får hon eller han 1,25 belöningspoäng. Kvantitetstyp extrapoäng kommer posten intjänat belopp i heltal. Om till exempel intjäningsregeln anger att medlemmen får en belöningspoäng för varje kanadensisk dollar som spenderas och medlemmen spenderar 1,25 kanadensiska dollar får hon eller han 1,0 belöningspoäng.  
 16. Klicka på Spara.
 17. Klicka på Lägg till rad.
-    * Regler för inlösen används när lojalitetbetalningsmetoden används.  
+    * Regler för inlösen används när lojalitetbetalsättet används.  
 18. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Belöningspoäng-ID.
     * Endast inlösbara belöningspoäng visas.  
 19. Klicka på länken på den valda raden i listan.
@@ -70,6 +69,3 @@ Den här proceduren går igenom hur du definierar ett bonusprogram. Bonusplaner 
 27. Klicka på Spara.
     * Så snart du ändrar kanalerna för ett bonusprogram måste du köra Bearbeta förmånsscheman. Det kanaler uppdateras lojalitetssystem.  
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

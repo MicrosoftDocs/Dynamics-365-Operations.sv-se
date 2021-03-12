@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91f30d4d1b66e5b4b90f7df67d8f76a95a100338
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4a853287c0795057b09c429ea1c9ad5231e39a33
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415876"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972315"
 ---
 # <a name="define-loyalty-programs"></a> Definiera bonusprogram
 
@@ -57,7 +56,7 @@ Den här proceduren visar hur du ställer in ett bonusprogram med två lojalitet
 22. Klicka på länken på den valda raden i listan.
 23. Ange ett värde i fältet Lägsta antal utfärdade poäng.
     * Om du vill att alla kunder ska kunna bli medlemmar på den lägsta nivån anger du 0 (noll).  
-24. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Intervall för utvärderingsdatum.
+24. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Intervall för bedömningsdatum.
     * Detta datumintervall bör utvidgas till det förgångna. Endast poäng som erhållits under detta datumintervall ska göra det möjligt att tillgodoräkna sig lägsta möjliga utlevererade poängvärde.  
 25. Klicka på länken på den valda raden i listan.
 26. Klicka på Spara.
@@ -66,7 +65,7 @@ Den här proceduren visar hur du ställer in ett bonusprogram med två lojalitet
 29. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Belöningspoäng.
 30. Klicka på länken på den valda raden i listan.
 31. Ange ett värde i fältet Lägsta antal utfärdade poäng.
-32. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Intervall för utvärderingsdatum.
+32. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Intervall för bedömningsdatum.
     * Det här datumintervallet bör utökas bakåt i tiden.  
 33. Klicka på länken på den valda raden i listan.
 34. Klicka på Spara.
@@ -79,6 +78,3 @@ Den här proceduren visar hur du ställer in ett bonusprogram med två lojalitet
 39. Stäng sidan.
 40. Klicka på Spara.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

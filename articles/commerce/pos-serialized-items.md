@@ -3,24 +3,23 @@ title: Arbeta med serialiserade artiklar i kassa
 description: I det här avsnittet beskrivs hur du hanterar serialiserade artiklar i programmet kassa (POS).
 author: boycezhu
 manager: annbe
-ms.date: 08/21/2020
+ms.date: 01/08/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6ba01abc3d1a4496ec586a621aa03b4981f84d76
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0431ffa45eceac5c12d8ed991b00730c50ca62f8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415945"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972565"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Arbeta med serialiserade artiklar i kassa
 
@@ -90,11 +89,49 @@ Om du vill aktivera en sådan validering måste du schemalägga följande jobb s
 - **Retail och Commerce** > **Retail och Commerce IT** > **Produkter och lager** > **Produkttillgänglighet med spårningsdimension**
 - **Retail och Commerce** > **Distributionsscheman** > **1130** (**Produkttillgänglighet**)
 
+## <a name="sell-serialized-items-in-pos"></a>Sälja serialiserade artiklar i POS
+
+Även om kassaprogrammet alltid har haft stöd för serialiserade försäljningsartiklar, kan organisationer i Commerce version 10.0.17 och senare aktivera funktioner som utökar den affärslogik som utlöses när produkter som säljs är konfigurerade för serienummerspårning.
+
+När funktionen **Förbättrad serienummervalidering i orderregistrering och -uppfyllelse i kassa** har aktiverats kommer följande produktkonfigurationer att bedömas när du säljer serialiserade produkter i POS:
+
+- Konfiguration av **seriell typ** för produkten (**aktiv** eller **aktiv i försäljning**).
+- **Tomt ärende tillåtet**-inställningar för produkten.
+- **Fysiskt negativt lager**-inställningar för produkten och/eller säljande lagerställe.
+
+### <a name="active-serial-configurations"></a>Aktiva konfigurationer av serienummer
+
+När artiklar säljs i POS och har konfigurerats med en **aktiv** spårningsdimension för aktivt serienummer initierar POS valideringslogiken som förhindrar att användare slutför försäljningen av en serialiserad artikel med ett serienummer som inte finns i det säljande lagerställets aktuella lager. Det finns två undantag från denna valideringsregel:
+
+- Om artikeln också konfigureras med **Tomt ärende tillåts** aktiverat, kan användarna hoppa över inmatningen av serienumret och sälja artikeln utan serienummer.
+- Om artikeln och/eller det säljande lagerstället konfigureras med **Fysiskt negativt lager** aktiverat, godkänner och säljer programmet ett serienummer som inte kan bekräftas finnas i lagret på det lagerställe som den säljs mot. Denna konfiguration gör det möjligt att låta lagertransaktionen för det specifika artikel-/serienumret att bli negativt, varigenom systemet kan tillåta försäljning av okända serienummer.
+
+> [!IMPORTANT]
+> För att säkerställa att POS-programmet kan validera om serienummer som säljs för artiklar av **aktiv** serietyp finns i det säljande lagerstället, måste organisationer på frekvent basis köra jobbet **Produkttillgänglighet med spårning av dimensioner** i Commerce-administrationen och tillhörande distributionsjobb för produkttillgänglighet **1130** via Commerce-administrationen. När nytt serialiserat lager tas emot till lagerställen för försäljning, måste lagerledaren ofta uppdatera kanaldatabasen med de senast uppdaterade uppgifterna om lagertillgänglighet för de serienummer som säljs, detta för att POS ska kunna validera lagertillgänglighetsdata. Jobbet **Produkttillgänglighet med spårningsdimensioner** tar en aktuell ögonblicksbild av huvudlagret, inklusive serienummer, för alla företagets lagerställen. Distributionsjobbet **1130** tar ögonblicksbilden av lagret och delar den med alla konfigurerade kanaldatabaser.
+
+### <a name="active-in-sales-process-serial-configurations"></a>Aktiv i seriekonfigurationer i försäljningsprocessen
+
+Artiklar som konfigurerats med seriedimensionen **Aktiv i försäljningsprocess** går inte igenom någon lagervalideringslogik, detta eftersom denna konfiguration antyder att lagerserienumren inte är förregistrerade i lagret och att serienumren endast registreras in vid tidpunkten för försäljning.  
+
+Om **Tomt ärende tillåtet** också har konfigurerats för **Aktiv i försäljningsprocess** kan inmatningen av serienumret hoppas över.. Om **Tomt ärende tillåtet** inte har konfigurerats kräver programmet att användaren anger ett serienummer, även om detta inte kommer att valideras mot tillgängligt lager.
+
+### <a name="apply-serial-numbers-during-creation-of-pos-transactions"></a>Använd serienummer när du skapar POS-transaktioner
+
+POS-programmet uppmanar omedelbart användare att samla in serienummer när de säljer en serialiserad artikel, men med programmet kan användarna hoppa över inmatningen av serienummer fram till en viss tidpunkt i försäljningsprocessen. När användaren börjar registrera betalning framtvingar och kräver programmet serienummerpost för alla artiklar som inte är konfigurerade att uppfyllas via framtida försändelser eller upphämtningar. Alla serialiserade artiklar som konfigurerats för hämtköp eller leverans kräver att användaren registrerar serienumret (eller går med på att lämna det tomt om artikelkonfigurationen tillåter det) innan försäljningen slutförs.
+
+För serialiserade artiklar som säljs för framtida upphämtning eller leverans kan POS-användare initialt hoppa över att ange serienumret och ändå slutföra skapandet av kundordern.   
+
+> [!NOTE]
+> När du säljer eller uppfyller serialiserade produkter via POS-programmet tillämpas kvantiteten "1" på de serialiserade artiklarna i försäljningstransaktionen. Detta är ett resultat av hur serienummerinformationen spåras på försäljningsraden. När du säljer eller uppfyller en transaktion för flera serialiserade artiklar via POS, får varje försäljningsrad bara konfigureras med kvantiteten "1". 
+
+### <a name="apply-serial-numbers-during-customer-order-fulfillment-or-pickup"></a>Använd serienummer vid uppfyllelse eller upphämtning av kundorder
+
+När du uppfyller kundorderrader för serialiserade produkter med hjälp av åtgärden **Orderuppfyllelse** i POS, framtvingar POS registrering av serienumret före slutförande. Om ett serienummer inte tillhandahållits under den initiala orderinregistreringen måste det därför registreras under plock-, packnings- eller leveransprocesserna i POS. En validering görs vid respektive steg, och användaren uppmanas bara att bekräfta serienummerdata om dessa saknas eller är ogiltiga. Om en användare till exempel hoppar över plock- eller packningsstegen och startar en leverans, och ett serienummer inte har registrerats för raden, kräver POS att serienumret anges innan det slutgiltiga fakturasteget slutförs. När framtvingad registrering av serienumret under uppfyllelseoperationer av order i POS tillämpas, gäller fortfarande alla regler som omnämnts tidigare i det här avsnittet. Bara serialiserade artiklar som konfigurerats som **Aktiva** genomgår en lagervalidering för serienummer. Artiklar som konfigurerats som **Aktiva i försäljningsprocessen** kommer inte att valideras. Om **Fysiskt negativt lager** tillåts för **Aktiva** produkter, accepteras alla serienummer oavsett lagertillgänglighet. För såväl **Aktiva** artiklar som artiklar **Aktiva i försäljningsprovess** gäller, att om **Tomt ärende tillåtet** har konfigurerats, så kan en användare lämna serienumret tomt om så önskas i samband med stegen för plock, packning och leverans.
+
+Validering av serienummer sker också när en användare utför upphämtningsåtgärder på kundorder i POS. POS-programmet tillåter inte att en hämtning slutförs på en serialiserad produkt såvida denna inte passerar valideringarna som tidigare nämns. Valideringarna baseras alltid på produktens spårningsdimension och säljande lagerställekonfiguration. 
+
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Inkommande lageråtgärder i kassan](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
+[Inkommande lageråtgärder i POS](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
-[Utgående lageråtgärder i kassan](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Utgående lageråtgärder i POS](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)

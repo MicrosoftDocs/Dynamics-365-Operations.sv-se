@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9e206569aad3f53a2f6f66e6d6253226e5980078
-ms.sourcegitcommit: 30c541426cf2037b768e3556e1b170a64991f64a
+ms.openlocfilehash: 97fcaeb091d91c3b214451b0b156382e450e60f3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "4448182"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971513"
 ---
 # <a name="asset-leasing-get-started"></a>Kom i gång med tillgångsleasing
 
@@ -40,11 +39,11 @@ I bilden nedan visas huvudelementen i affärsprocessen för leasingavtal.
 
 En leasad tillgång innehåller följande huvudkomponenter:
 
-- **Leasingavtal** - leasegivaren äger tillgången och samtycker till leasingtagaren att leasa en tillgång för en viss period i utbyte mot regelbundna leasingavgifter. Utöver det juridiska avtalet mellan leasegivaren och leasetagaren, inrättas beslut om förvaltning av ledningen, t.ex. sannolikheten för att ett förlängningsalternativ och överföring av äganderätten ska överlåtas.
+- **Leasingavtal** – leasegivaren äger tillgången och samtycker till leasingtagaren att leasa en tillgång för en viss period i utbyte mot regelbundna leasingavgifter. Utöver det juridiska avtalet mellan leasegivaren och leasetagaren, inrättas beslut om förvaltning av ledningen, t.ex. sannolikheten för att ett förlängningsalternativ och överföring av äganderätten ska överlåtas.
 
-- **Leasingberäkning och klassificering per redovisningsstandard** - leasingberäkningen och klassificeringen identifierar redovisningsstandarden som används vid den första och efterföljande mätningen, samt det klassificeringstest som avgör vad leasingtypen kommer att vara. En leasing kan vara en finansiell leasing, en operationell leasing, en kortfristig leasing eller en lågvärdesleasing. Systemet beräknar också nuvärdet av framtida minsta leasingavgifter för värdering och klassificering.
+- **Leasingberäkning och klassificering per redovisningsstandard** – leasingberäkningen och klassificeringen identifierar redovisningsstandarden som används vid den första och efterföljande mätningen, samt det klassificeringstest som avgör vad leasingtypen kommer att vara. En leasing kan vara en finansiell leasing, en operationell leasing, en kortfristig leasing eller en lågvärdesleasing. Systemet beräknar också nuvärdet av framtida minsta leasingavgifter för värdering och klassificering.
 
-- **Leasingtransaktioner** - tillgångsleasing har stöd för det första erkännandet av tillgång med nyttjanderätt för leasing i balansräkningen, samt efterföljande mätningar för antingen leasing i balansräkning eller leasing utanför balansräkning. Den första igenkänningstransaktionen mäter nuvärdet av framtida lägsta leasingbetalningar. Dessa data används för att bestämma värdet på den initiala tillgång med nyttjanderätt som ska användas och leasingansvar, vilket påverkar företagets balansräkning. Vid den efterföljande mätningen av månatliga leasingtransaktion ingår en ackumulering av ränta på leasingbeloppet, vilket ökar leasingskulden. Den mäter också periodisering av leasingavgifter som minskar leasingskulden och som senare kommer att betalas ut till leasegivaren. Måttet inkluderar även amorteringen av den tillgång med nyttjanderätt.
+- **Leasingtransaktioner** – tillgångsleasing har stöd för det första erkännandet av tillgång med nyttjanderätt för leasing i balansräkningen, samt efterföljande mätningar för antingen leasing i balansräkning eller leasing utanför balansräkning. Den första igenkänningstransaktionen mäter nuvärdet av framtida lägsta leasingbetalningar. Dessa data används för att bestämma värdet på den initiala tillgång med nyttjanderätt som ska användas och leasingansvar, vilket påverkar företagets balansräkning. Vid den efterföljande mätningen av månatliga leasingtransaktion ingår en ackumulering av ränta på leasingbeloppet, vilket ökar leasingskulden. Den mäter också periodisering av leasingavgifter som minskar leasingskulden och som senare kommer att betalas ut till leasegivaren. Måttet inkluderar även amorteringen av den tillgång med nyttjanderätt.
 
   För leasing utanför balansräkningen beräknar systemet den linjära leasingkostnaden över den som är mindre: tillgångens ekonomiska livslängd eller leasingperioden. Leasingjusteringar mäter kontraktsändringar, t.ex. ett leasingtillägg eller en utökning och den nedskrivningstransaktion som använder den tillgång med nyttjanderätt som används som värde för ej återbetalningsbara kostnader.
 
@@ -57,34 +56,34 @@ Följande diagram visar leasingboken, leasingavtalet, beräknad betalningsplan, 
 
 [![Leasing, leasingbok och betalningsplan](./media/overview-02.png)](./media/overview-02.png)
 
-- **Leasingbok** - leasingboken innehåller all information om leasingavtalet, t.ex. leasingvillkor, verkligt värde och leasingbetalningar. Den innehåller också redovisningsstandarden som du följer, leasingtypen och tröskelvärdena som beaktas i leasingklassificeringstestet. Leasingboken innehåller också de leasingtransaktioner som bokförts i redovisningen. 
+- **Leasingbok** – leasingboken innehåller all information om leasingavtalet, t.ex. leasingvillkor, verkligt värde och leasingbetalningar. Den innehåller också redovisningsstandarden som du följer, leasingtypen och tröskelvärdena som beaktas i leasingklassificeringstestet. Leasingboken innehåller också de leasingtransaktioner som bokförts i redovisningen. 
   
-- **Leasing** - leasingen bevarar den information om leasing av tillgång som utgör grunden för leasing av tillgång, leasinginformationens källa är ett leasingavtal och ett ledningsbeslut som båda utförs utanför Dynamics 365 Finance. Tillgångens verkliga värde är det pris som skulle betalas för en tillgång i en transaktion på mätningsdatumet. Detta värde kan bero på tillgångstypen, marknadsvillkoren och andra kriterier som kan beaktas vid bedömningen. Det verkliga värdet för tillgången kommer att beaktas i klassificeringstestets ekvation.
+- **Leasing** – leasingen bevarar den information om leasing av tillgång som utgör grunden för leasing av tillgång, leasinginformationens källa är ett leasingavtal och ett ledningsbeslut som båda utförs utanför Dynamics 365 Finance. Tillgångens verkliga värde är det pris som skulle betalas för en tillgång i en transaktion på mätningsdatumet. Detta värde kan bero på tillgångstypen, marknadsvillkoren och andra kriterier som kan beaktas vid bedömningen. Det verkliga värdet för tillgången kommer att beaktas i klassificeringstestets ekvation.
 
-- **Tillgångens livslängd** - Detta motsvarar de återstående perioderna för en tillgångs livslängd, från leasingens startdatum. Tillgångens livslängd kommer att beaktas i klassificeringstestets ekvation. Den skiljer sig från den livslängd som definierats i anläggningstillgångar.
+- **Tillgångens livslängd** – Detta motsvarar de återstående perioderna för en tillgångs livslängd, från leasingens startdatum. Tillgångens livslängd kommer att beaktas i klassificeringstestets ekvation. Den skiljer sig från den livslängd som definierats i anläggningstillgångar.
 
-- **Marginell låneränta** - Detta är den räntesats som används för att beräkna nuvärdet. Systemet använder den implicita satsen om den är definierad i leasingdata för att beräkna nuvärdet av leasingbetalningarna. Om den implicita satsen inte är definierad kommer systemet att använda marginell låneränta.
+- **Marginell låneränta** – Detta är den räntesats som används för att beräkna nuvärdet. Systemet använder den implicita satsen om den är definierad i leasingdata för att beräkna nuvärdet av leasingbetalningarna. Om den implicita satsen inte är definierad kommer systemet att använda marginell låneränta.
 
-- **Typ av annuitet** - Denna leasingbetalning förfaller antingen i början av betalningsperioden eller vid slutet av perioden. Detta kan vara betalning i förskott eller förfallodatum (i början av leasingbetalningsperioden) eller vanlig annuitet (i slutet av leasingbetalningsperioden).
+- **Typ av annuitet** – Denna leasingbetalning förfaller antingen i början av betalningsperioden eller vid slutet av perioden. Detta kan vara betalning i förskott eller förfallodatum (i början av leasingbetalningsperioden) eller vanlig annuitet (i slutet av leasingbetalningsperioden).
 
   Den första månaden kommer att betraktas som noll för förskottsbetalning. den första månaden kommer att betraktas som en betalning för resterande skuld.
 
-- **Sammanslagningsintervall** - Detta motsvarar antalet perioder som ränta är sammansatta per år. Detta kan vara månads vis (12 perioder per år), kvartalsvis (fyra perioder per år), halvårs (två perioder per år) eller per år (en period per år). Antalet perioder kommer att beaktas vid beräkningen av nuvärdet.
+- **Sammanslagningsintervall** – Detta motsvarar antalet perioder som ränta är sammansatta per år. Detta kan vara månads vis (12 perioder per år), kvartalsvis (fyra perioder per år), halvårs (två perioder per år) eller per år (en period per år). Antalet perioder kommer att beaktas vid beräkningen av nuvärdet.
 
-- **Startdatum** - Detta är det datum då leasegivaren gör tillgången tillgänglig för användning av leasetagaren. Alla leasingberäkningar och transaktioner kommer att baseras på startdatumet. Startdatumet bör infalla i början av en period (månadens första dag) för att säkerställa att efterföljande beräkningar blir korrekta. Du kan använda fältet **signaturdatum för kontraktet** för att ange det faktiska datum då kontraktet undertecknades.
+- **Startdatum** – Detta är det datum då leasegivaren gör tillgången tillgänglig för användning av leasetagaren. Alla leasingberäkningar och transaktioner kommer att baseras på startdatumet. Startdatumet bör infalla i början av en period (månadens första dag) för att säkerställa att efterföljande beräkningar blir korrekta. Du kan använda fältet **signaturdatum för kontraktet** för att ange det faktiska datum då kontraktet undertecknades.
 
-- **Leasingvillkor** - Detta är leasingperiodens längd, i månader.
+- **Leasingvillkor** – Detta är leasingperiodens längd, i månader.
 
 > [!NOTE] 
 > Definitionen av leasingperioden baseras på antalet perioder, eller intervall, på betalningsplanraderna. Det definierade antalet intervall kommer att konverteras till månader.
 
-- **Betalningsplanrad** - detta registrerar leasingbetalningar per period. Det anger också om en förlängningsperiod ska utnyttjas och inkluderas i den initiala mätningen av tillgång med nyttjanderätt och leasingskuld. Du kan definiera startdatum för leasingbetalningar och periodintervall som representerar leasingens längd, som kan vara dagar, månader eller år.
+- **Betalningsplanrad** – detta registrerar leasingbetalningar per period. Det anger också om en förlängningsperiod ska utnyttjas och inkluderas i den initiala mätningen av tillgång med nyttjanderätt och leasingskuld. Du kan definiera startdatum för leasingbetalningar och periodintervall som representerar leasingens längd, som kan vara dagar, månader eller år.
 
-- **Betalningsfrekvens** - Detta anger om betalningen är månatlig, kvartalsvis, halvårs eller årligen. Slutdatumet beräknas automatiskt utifrån startdatumet och antalet angivna perioder.
+- **Betalningsfrekvens** – Detta anger om betalningen är månatlig, kvartalsvis, halvårs eller årligen. Slutdatumet beräknas automatiskt utifrån startdatumet och antalet angivna perioder.
 
-- **Betalningsplan** - Detta är det beräknade nuvärdet, baserat på den tidslängd som täcks av leasingbetalningarna, beloppen för betalningarna, periodens sammanlagda perioder och annuitetstyp.
+- **Betalningsplan** – Detta är det beräknade nuvärdet, baserat på den tidslängd som täcks av leasingbetalningarna, beloppen för betalningarna, periodens sammanlagda perioder och annuitetstyp.
 
-- **Perioder** - Detta är de leasingperioder som återspeglar den sammansatta interna och annuitetstypen. Det sammanlagda intervallet avgör hur perioder delas upp. Du kan ställa in följande sammanlagda intervall:
+- **Perioder** – Detta är de leasingperioder som återspeglar den sammansatta interna och annuitetstypen. Det sammanlagda intervallet avgör hur perioder delas upp. Du kan ställa in följande sammanlagda intervall:
 
   - Varje månad, 12 perioder per år
   - Varje kvartal, 4 perioder per år
@@ -93,26 +92,26 @@ Följande diagram visar leasingboken, leasingavtalet, beräknad betalningsplan, 
 
 Den första perioden börjar med period noll om annuitetstypen är förfallodatum för annuitet. Annars kommer den första perioden börja med en om annuitetstypen är utestående förfallna skulder.
 
-- **Månader** - Detta indikerar antalet kalender månader över leasingtiden. Betalningsbeloppet är det belopp som har definierats enligt betalningsfrekvensen. Det beräknade nuvärdet är den aktuella värdebaserade leasingbetalningen per period, de sammansatta intervallen och marginell låneränta.
+- **Månader** – Detta indikerar antalet kalender månader över leasingtiden. Betalningsbeloppet är det belopp som har definierats enligt betalningsfrekvensen. Det beräknade nuvärdet är den aktuella värdebaserade leasingbetalningen per period, de sammansatta intervallen och marginell låneränta.
 
 > [!NOTE] 
 > Nuvärdet beräknas utifrån den diskonterade kassaflödesekvationen.
 
-- **Böcker** - Detta är den förkonfigurerade inställningen för varje leasing. I boken definieras de tillämpliga redovisningsstandarderna, leasingtyperna och tröskeln som används som grund för klassificeringstesten. Klassificeringstest används för att ange leasingtypen automatiskt.
+- **Böcker** – Detta är den förkonfigurerade inställningen för varje leasing. I boken definieras de tillämpliga redovisningsstandarderna, leasingtyperna och tröskeln som används som grund för klassificeringstesten. Klassificeringstest används för att ange leasingtypen automatiskt.
 
-- **Redovisningsramverk** - det här visar den valda redovisningsstandarden, antingen IFRS 16 och ASC 842, som du har stöd för. Redovisningsstandarden anges i den bok som är kopplad till leasing. Redovisningsstandarden bestämmer vilka redovisningskonton som anges i bokföringsprofilen.
+- **Redovisningsramverk** – det här visar den valda redovisningsstandarden, antingen IFRS 16 och ASC 842, som du har stöd för. Redovisningsstandarden anges i den bok som är kopplad till leasing. Redovisningsstandarden bestämmer vilka redovisningskonton som anges i bokföringsprofilen.
 
 - **Leasingtyper** Detta visar vilken av de två typerna av leasing som kommer att användas, antingen en finansiell leasing eller ett operationell leasing. Enligt en finansiell leasing överförs risker och belöningar som rör leasad tillgång till leasetagaren. Under en operationell leasing behålls risker och belöningar som rör leasad tillgång med leasegivaren. Ett tredje alternativ är en automatisk identifiering av leasingtypen, antingen finansiell eller operationell, baserat på de definierade tröskelvärdena i boken. Denna automatiska identifiering utförs under omklassificeringstestet för leasing.
 
-- **Tröskelvärden** - Detta används i testerna av leasingavtal för att fastställa om tillgången klassificeras som något av följande:
+- **Tröskelvärden** – Detta används i testerna av leasingavtal för att fastställa om tillgången klassificeras som något av följande:
 
-  - **Leasingvillkor** - Detta är den procentandel av nyttjande perioden som ska användas i klassificeringstestet. Leasingavtalet klassificeras som finansiell om leasingtypen är inställd på automatisk och om leasingperioden över tillgångens livslängd är större än eller lika med den procentsats som definierats här.
+  - **Leasingvillkor** – Detta är den procentandel av nyttjande perioden som ska användas i klassificeringstestet. Leasingavtalet klassificeras som finansiell om leasingtypen är inställd på automatisk och om leasingperioden över tillgångens livslängd är större än eller lika med den procentsats som definierats här.
 
-  - **Nuvarande värde** - Detta är den procentandel av tillgångens verkliga värde som ska användas i klassificeringstestet. Leasingavtalet klassificeras som finansiell om leasingtypen är inställd på automatisk och om det nuvarande värdet av framtida leasingbetalningar över tillgångens verkliga värde är större än eller lika med den procentsats som definierats här.
+  - **Nuvarande värde** – Detta är den procentandel av tillgångens verkliga värde som ska användas i klassificeringstestet. Leasingavtalet klassificeras som finansiell om leasingtypen är inställd på automatisk och om det nuvarande värdet av framtida leasingbetalningar över tillgångens verkliga värde är större än eller lika med den procentsats som definierats här.
 
-  - **Kortsiktig leasing** - om leasingperioden är mindre än eller lika med det definierade värdet, kommer leasing att klassificeras som en kortsiktig leasing.
+  - **Kortsiktig leasing** – om leasingperioden är mindre än eller lika med det definierade värdet, kommer leasing att klassificeras som en kortsiktig leasing.
 
-  - **Lågvärde** - om tillgångens verkliga värde är mindre än eller lika med det definierade värdet, kommer leasing att klassificeras som en lågvärdesleasing.
+  - **Lågvärde** – om tillgångens verkliga värde är mindre än eller lika med det definierade värdet, kommer leasing att klassificeras som en lågvärdesleasing.
 
   - **Leasingklassificering och transaktioner** Leasingklassificering är en automatiserad process för att klassificera leasing på grundval av fastställda tröskelvärden i böcker förutom andra klassificeringskriterier för att identifiera om leasingen är en finansiell leasing, operationell leasing, korttidsleasing eller lågvärdesleasing. Detta används även för att identifiera om processen för uppskjuten hyra följs.
 
@@ -152,7 +151,7 @@ En upplupen leasingbetalning identifieras som en framtida betalning för leasing
 |     Finansiell leasing under IFRS och US GAAP        |  Finansiell leasingskuld      |   Leverantörsskuld (redovisning)/växelskuld  |
 
 #### <a name="asset-depreciation"></a>Avskrivning av tillgång
-Tillgång med nyttjanderätt skrivs av över det som är mindre - tillgångens livslängd eller leasingperioden. Metoden för att beräkna avskrivning för US GAAP (ASC 842) baseras på skillnaden mellan den linjära leasingkostnaden och räntebeloppet. Ränta på finansiell leasing beräknas med en linjär standardmetod. Leasingavskrivningen påverkar vinst- och förlusträkningen genom att debitera räntekostnader. Balansräkningen påverkas av att du krediterar ackumulerad tillgång med nyttjanderätt för finansiell leasing. För operationell leasing krediterar avskrivningen leasingutgiftskontot. Om leasing är kopplad till en anläggningstillgång utförs avskrivningstransaktionerna endast från modulen för anläggningstillgångar. 
+Tillgång med nyttjanderätt skrivs av över det som är mindre – tillgångens livslängd eller leasingperioden. Metoden för att beräkna avskrivning för US GAAP (ASC 842) baseras på skillnaden mellan den linjära leasingkostnaden och räntebeloppet. Ränta på finansiell leasing beräknas med en linjär standardmetod. Leasingavskrivningen påverkar vinst- och förlusträkningen genom att debitera räntekostnader. Balansräkningen påverkas av att du krediterar ackumulerad tillgång med nyttjanderätt för finansiell leasing. För operationell leasing krediterar avskrivningen leasingutgiftskontot. Om leasing är kopplad till en anläggningstillgång utförs avskrivningstransaktionerna endast från modulen för anläggningstillgångar. 
 
 |     Typ                                          |     Debet                     |     Kredit                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |
@@ -179,8 +178,8 @@ Detta är kontot för tillgångsleasing för variabla leasingbetalningar som mä
 
 |     Typ                                          |     Debet                             |     Kredit                    |
 |-----------------------------------------------    |-------------------------------------  |----------------------------   |
-|   Indexomvärderingsposter under IFRS vid ökning  |  Tillgång med nyttjanderätt       |   Operationell leasingskuld |
-|   Indexomvärderingsposter under IFRS vid minskning  |  Operationell leasingskuld  |   Tillgång med nyttjanderätt      |
+|   Indexombedömningsposter under IFRS vid ökning  |  Tillgång med nyttjanderätt       |   Operationell leasingskuld |
+|   Indexombedömningsposter under IFRS vid minskning  |  Operationell leasingskuld  |   Tillgång med nyttjanderätt      |
 
 När betalningarna ändras på grund av en ändring i indexräntan, ändras endast de variabla betalningarna om det inte finns några ändringar av kassaflöden, t.ex. ändringar i leasingvillkor som är relaterade till räntesatser under US GAAP ASC 842.
 
@@ -253,6 +252,3 @@ Gör på följande sätt om du vill skapa en ny leasing.
 
    På sidan **Transaktion av leasingskulder** visas det första redovisningstillfället, betalningen av leasingränta, leasingbetalning och saldo för leasingskuld. 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

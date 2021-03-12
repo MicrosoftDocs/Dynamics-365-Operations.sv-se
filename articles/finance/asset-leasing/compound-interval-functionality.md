@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c37da09f50448c27b20dfacccf2e7134b828f13b
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 5978abfd4341bbca76ff0211f029097c3d2d785c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4448215"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971463"
 ---
 # <a name="compounding-interval-functionality"></a>Funktion för sammanslagningsintervall
 
@@ -160,6 +159,3 @@ Följande tabell visar de första tolv månaderna av betalningsplanen. Observera
 
 > [!NOTE]
 > Om annuitetstypen ändras till **Annuitet förfaller**, kommer betalningen att vara i januari i stället för december.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

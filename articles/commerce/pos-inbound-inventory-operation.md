@@ -1,5 +1,5 @@
 ---
-title: Inkommande lageråtgärder i kassan
+title: Inkommande lageråtgärder i POS
 description: Det här ämnet beskriver möjligheterna i den inkommande lageråtgärden för en kassa (POS).
 author: hhaines
 manager: annbe
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,18 +18,18 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 89021a85c2b215695d7cc25215c049205f71956d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f3dd442f979c23a87ae4b7e69a37de65d5d9bd70
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415859"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972640"
 ---
-# <a name="inbound-inventory-operation-in-pos"></a>Inkommande lageråtgärder i kassan
+# <a name="inbound-inventory-operation-in-pos"></a>Inkommande lageråtgärder i POS
 
 [!include [banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 Commerce version 10.0.10 och senare ersätter inkommande och utgående åtgärder i kassan (POS) åtgärden plockning och inleverans.
+I Microsoft Dynamics 365 Commerce version 10.0.10 och senare ersätter inkommande och utgående åtgärder i POS åtgärden plockning och inleverans.
 
 > [!NOTE]
 > I Commerce version 10.0.10 och senare kommer alla nya funktioner i kassaprogrammet som är relaterade till att ta emot butikslager att tas med i inköpsorder och överföringsorder att läggas till i kassaåtgärden **Inkommande åtgärd**. Om du använder åtgärden för plockning och mottagning i kassa rekommenderar vi att du utvecklar en strategi för att flytta från den åtgärden till nya inkommande och utgående åtgärder. Även om åtgärden för plockning och mottagning inte tas bort från produkten, finns det inga ytterligare investeringar i den, från ett funktionellt eller resultatperspektiv efter version 10.0.9.
@@ -39,10 +38,10 @@ I Microsoft Dynamics 365 Commerce version 10.0.10 och senare ersätter inkommand
 
 Den inkommande åtgärden omfattar prestandaförbättringar som säkerställer att användare med höga kvantiteter av inleverans kan bokföra över många butiker eller företag och stora lagerdokument, kan bearbeta dessa dokument till Commerce-administration utan att uppleva timeout eller misslyckanden. Dessa förbättringar kräver användning av ett asynkront dokumentramverk.
 
-När ett asynkront dokumentramverk används kan du tilldela ändringar i inkommande dokument från kassa till Commerce-administration och sedan flytta vidare till andra uppgifter medan behandlingen till Commerce-administration sker i bakgrunden. Du kan kontrollera statusen för dokumentet via dokumentlistsidan **inkommande åtgärd** i kassan för att säkerställa att bokföringen lyckades. I kassaprogrammet kan du även använda listan aktiva dokument i inkommande åtgärd för att se alla dokument som inte kunde bokföras i Commerce-administration. Om ett dokument misslyckas kan kassaanvändare göra korrigeringar till det och sedan försöka bearbeta det till Commerce-administration.
+När ett asynkront dokumentramverk används kan du tilldela ändringar i inkommande dokument från kassa till Commerce-administration och sedan flytta vidare till andra uppgifter medan behandlingen till Commerce-administration sker i bakgrunden. Du kan kontrollera statusen för dokumentet via dokumentlistsidan **inkommande åtgärd** i POS för att säkerställa att bokföringen lyckades. I kassaprogrammet kan du även använda listan aktiva dokument i inkommande åtgärd för att se alla dokument som inte kunde bokföras i Commerce-administration. Om ett dokument misslyckas kan kassaanvändare göra korrigeringar till det och sedan försöka bearbeta det till Commerce-administration.
 
 > [!IMPORTANT]
-> Det asynkrona dokumentramverket måste konfigureras innan ett företag försöker använda inkommande åtgärd i kassan.
+> Det asynkrona dokumentramverket måste konfigureras innan ett företag försöker använda inkommande åtgärd i POS.
 
 Följ instruktionerna nedan om du vill konfigurera ett asynkront dokumentramverk.
 
@@ -61,7 +60,7 @@ Följ instruktionerna nedan om du vill konfigurera ett asynkront dokumentramverk
 > [!NOTE]
 > I Commerce version 10.0.13 och senare behöver du inte konfigurera dessa batchjobb via batch-jobbets ramverk. Batchprocesser kan konfigureras från menyn **Retail och Commerce > Retail och Commerce IT**. Använd menyalternativen **Åtgärdsövervakare för butiksdokument** och **Åtgärdsbearbetning för butiksdokument** när du konfigurerar batchjobb.
 
-De batchjobb som du skapar kommer att användas för att bearbeta dokument som misslyckas eller timeout. De kommer också att användas när antalet aktiva lagerdokument som bearbetas från kassan överskrider ett systemkonfigurerat värde.
+De batchjobb som du skapar kommer att användas för att bearbeta dokument som misslyckas eller timeout. De kommer också att användas när antalet aktiva lagerdokument som bearbetas från POS överskrider ett systemkonfigurerat värde.
 
 1. Gå till **Systemadministration \> Förfrågningar \> Batchjobb**.
 2. På sidan **Batchjobb**, skapa två batchjobb:
@@ -142,9 +141,9 @@ Om du vill konfigurera företaget för att tillåta under leverans av inköpsord
 
 Toleransprocent för underleverans för en inköpsorderrad kan fördefinieras på produkter som en del av produktkonfigurationerna i Commerce-administration. De kan också ställas in eller skrivas över på en specifik inköpsorder i Commerce-administration.
 
-När en organisation slutför konfigureringen av underleveranser för inköpsorder kommer kassaanvändare att se alternativet **Stäng resterande kvantitet** i fönstret **Information** när de väljer en inkommande inköpsorderrad i åtgärden **Inkommande lager**. Om en användare stänger den återstående kvantiteten utförs en validering i kassan i syfte att verifiera att den kvantitet som stängs ligger inom den procentsats för underleverans som har definierats på inköpsorderraden. Om underleveransens tolerans överskrids visas ett felmeddelande och användaren kan inte stänga den återstående kvantiteten förrän den tidigare mottagna kvantiteten plus den inlevererade kvantiteten **Ta emot nu** uppfyller eller överskrider den minsta kvantitet som måste inlevereras baserat på procentsatsen för underleveranstolerans. 
+När en organisation slutför konfigureringen av underleveranser för inköpsorder kommer kassaanvändare att se alternativet **Stäng resterande kvantitet** i fönstret **Information** när de väljer en inkommande inköpsorderrad i åtgärden **Inkommande lager**. Om en användare stänger den återstående kvantiteten utförs en validering i POS i syfte att verifiera att den kvantitet som stängs ligger inom den procentsats för underleverans som har definierats på inköpsorderraden. Om underleveransens tolerans överskrids visas ett felmeddelande och användaren kan inte stänga den återstående kvantiteten förrän den tidigare mottagna kvantiteten plus den inlevererade kvantiteten **Ta emot nu** uppfyller eller överskrider den minsta kvantitet som måste inlevereras baserat på procentsatsen för underleveranstolerans. 
 
-Om alternativet **Stäng resterande kvantitet** option aktiverad för en inköpsorderrad när användaren slutför inleveransen med hjälp av åtgärden **Slutför mottagande** skickas en stängningsförfrågan också till Commerce-administration och eventuellt obetalt antal av denna orderrad kommer att annulleras. Vid den punkten betraktas raden som fullständigt inlevererad. 
+Om alternativet **Stäng resterande kvantitet** option aktiverad för en inköpsorderrad när användaren slutför inleveransen med hjälp av åtgärden **Slutför mottagande** skickas en stängningsbegäran också till Commerce-administration och eventuellt obetalt antal av denna orderrad kommer att annulleras. Vid den punkten betraktas raden som fullständigt inlevererad. 
 
 ### <a name="receiving-location-controlled-items"></a>Inleveransplatskontrollerade artiklar
 
@@ -158,17 +157,17 @@ Som du behöver kan du välja **Inleverera alla** på appfältet för att snabbt
 
 ### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Inleverans av oplanerade artiklar i inköpsorder
 
-I Commerce version 10.0.14 och senare kan användare ta emot en produkt som inte ursprungligen fanns på inköpsordern. Aktivera den här funktionen genom att aktivera **Lägg till rader i inköpsordern när kassan inlevereras**.  
+I Commerce version 10.0.14 och senare kan användare ta emot en produkt som inte ursprungligen fanns på inköpsordern. Aktivera den här funktionen genom att aktivera **Lägg till rader i inköpsordern när POS inlevereras**.  
 
 Den här funktionen fungerar bara för inleverans av inköpsorder. Det går inte att ta emot artiklar mot överföringsorder när artiklarna inte tidigare har beställts och levererats från det utgående lagerstället.
 
-Användare kan inte lägga till nya produkter i inköpsordern under kassamottagning om [arbetsflödet för ändringshantering av inköpsorder](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) är aktiverat i Commerce-administration (HQ). Om du vill aktivera ändringshantering måste alla ändringar av en inköpsorder först godkännas innan mottagning tillåts. Eftersom den här processen tillåter att en mottagare lägger till nya rader i inköpsordern misslyckas inleveransen om arbetsflödet för ändringshantering aktiveras. Om ändringshantering aktiveras för alla inköpsorder eller för den leverantör som är kopplad till inköpsordern aktivt som inlevereras i kassan, kan användaren inte lägga till nya produkter i inköpsordern under inleverans i kassa.
+Användare kan inte lägga till nya produkter i inköpsordern under kassamottagning om [arbetsflödet för ändringshantering av inköpsorder](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) är aktiverat i Commerce-administration (HQ). Om du vill aktivera ändringshantering måste alla ändringar av en inköpsorder först godkännas innan mottagning tillåts. Eftersom den här processen tillåter att en mottagare lägger till nya rader i inköpsordern misslyckas inleveransen om arbetsflödet för ändringshantering aktiveras. Om ändringshantering aktiveras för alla inköpsorder eller för den leverantör som är kopplad till inköpsordern aktivt som inlevereras i POS, kan användaren inte lägga till nya produkter i inköpsordern under inleverans i kassa.
 
 Funktionen som gör det möjligt att lägga till rader kan inte användas som en lösning för att ta emot ytterligare kvantiteter av produkter som redan finns på inköpsordern. Överleverans hanteras via standardinställningarna för [Överleverans](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) för produktraden på inköpsordern.
 
-Om **Lägg till rader i inköpsordern under den tidpunkt då inleveransen** är aktiverad och en användare tar emot den **inkommande operationen** i kassan, om användaren läser in eller nycklar för en produktstreckkod eller ett produktnummer som inte är identifierat som en artikel på den aktuella inköpsordern, men som är identifierad som en giltig artikel, får användaren ett meddelande om att artikeln läggs till Om användaren lägger till artikeln på inköpsordern beaktas den kvantitet som angetts i **inleverans nu** den beställda kvantiteten för inköpsorderraden.
+Om **Lägg till rader i inköpsordern under den tidpunkt då inleveransen** är aktiverad och en användare tar emot den **inkommande operationen** i POS, om användaren läser in eller nycklar för en produktstreckkod eller ett produktnummer som inte är identifierat som en artikel på den aktuella inköpsordern, men som är identifierad som en giltig artikel, får användaren ett meddelande om att artikeln läggs till Om användaren lägger till artikeln på inköpsordern beaktas den kvantitet som angetts i **inleverans nu** den beställda kvantiteten för inköpsorderraden.
 
-När inleveransen av inköpsordern slutförs och skickas till HQ för bearbetning, skapas de tillagda raderna i inköpsorderns huvuddokument. På inköpsorderraden i HQ kommer en flagga **tillagd av kassan** på fliken **Allmänt** inköpsorderraden att läggas till. Flaggan **tillagd av kassan** anger att inköpsorderraden lades till av kassa mottagande processen och inte var en rad som fanns på inköpsordern före inleveransen.
+När inleveransen av inköpsordern slutförs och skickas till HQ för bearbetning, skapas de tillagda raderna i inköpsorderns huvuddokument. På inköpsorderraden i HQ kommer en flagga **tillagd av POS** på fliken **Allmänt** inköpsorderraden att läggas till. Flaggan **tillagd av POS** anger att inköpsorderraden lades till av kassa mottagande processen och inte var en rad som fanns på inköpsordern före inleveransen.
 
 ### <a name="cancel-receiving"></a>Annullera inleverans
 
@@ -200,11 +199,11 @@ När du har fyllt i alla kvantiteter **Inleverans nu** för produkter måste du 
 
 När användarna slutför en inköpsorder, ombeds de ange ett värde i fältet **inleveransnummer** om funktionen har konfigurerats. Vanligtvis är detta värde detsamma som ID:t för leverantörens följesedel. Data för **Inleveransnummer** kommer att lagras i Produktinleveransjournal i Commerce-administration. Inleveransnumren hämtas inte för inleveranser av överföringsorder.
 
-När asynkron dokumentbearbetning används skickas kvittot via ett asynkront dokumentramverk. Hur lång tid det tar att bokföra dokumentet beror på dokumentets storlek (antalet rader) och den allmänna bearbetningstrafik som sker på servern. Vanligtvis förekommer denna process på några sekunder. Om dokumentbokföringen misslyckas meddelas användaren via dokument **Ingående operation** där dokumentstatus uppdateras till **bearbetningen misslyckades**. Användaren kan sedan välja det misslyckade dokumentet i kassan för att visa felmeddelandena och orsaken till misslyckandet i fönstret **information**. Ett misslyckat dokument förblir oförändrat och kräver att användaren går tillbaka till dokumentraderna genom att välja **orderdetaljer** i kassan. Användaren måste sedan uppdatera dokumentet med korrigeringar baserat på felen. När ett dokument har korrigerats kan användaren försöka att bearbeta det genom att välja **Slutför** på appfältet.
+När asynkron dokumentbearbetning används skickas kvittot via ett asynkront dokumentramverk. Hur lång tid det tar att bokföra dokumentet beror på dokumentets storlek (antalet rader) och den allmänna bearbetningstrafik som sker på servern. Vanligtvis förekommer denna process på några sekunder. Om dokumentbokföringen misslyckas meddelas användaren via dokument **Ingående operation** där dokumentstatus uppdateras till **bearbetningen misslyckades**. Användaren kan sedan välja det misslyckade dokumentet i POS för att visa felmeddelandena och orsaken till misslyckandet i fönstret **information**. Ett misslyckat dokument förblir oförändrat och kräver att användaren går tillbaka till dokumentraderna genom att välja **orderdetaljer** i POS. Användaren måste sedan uppdatera dokumentet med korrigeringar baserat på felen. När ett dokument har korrigerats kan användaren försöka att bearbeta det genom att välja **Slutför** på appfältet.
 
 ## <a name="create-an-inbound-transfer-order"></a>Skapa en ingående överföringsorder
 
-Från kassan kan användare skapa nya överföringsorderdokument. Starta processen genom att välja **ny** i appfältet medan du är i huvuddokumentlistan för **ingående operation**. Du uppmanas sedan att välja lagerställe eller butik med **överföring från** som ger lager till din butiksplats. Värdena begränsas till det val som har angetts i konfigurationen för butikens uppfyllelsegrupp. I en begäran om ingående överföringar är den aktuella butiken alltid **överföringen till** lagerstället för överföringsordern. Det går inte att ändra värdet.
+Från POS kan användare skapa nya överföringsorderdokument. Starta processen genom att välja **ny** i appfältet medan du är i huvuddokumentlistan för **ingående operation**. Du uppmanas sedan att välja lagerställe eller butik med **överföring från** som ger lager till din butiksplats. Värdena begränsas till det val som har angetts i konfigurationen för butikens uppfyllelsegrupp. I en begäran om ingående överföringar är den aktuella butiken alltid **överföringen till** lagerstället för överföringsordern. Det går inte att ändra värdet.
 
 Du kan ange värden i fälten **Transportdatum**, **Inleveransdatum** och **Leveranssätt** efter behov. Du kan också lägga till en notering som kommer att lagras tillsammans med överföringsorder rubriken, som en bilaga till dokumentet i Commerce-administration.
 
@@ -220,7 +219,4 @@ När dokumentet är i status **begärd** visas det på fliken **Aktiv**. Det kan
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Utgående lageråtgärder i kassan](pos-outbound-inventory-operation.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Utgående lageråtgärder i POS](pos-outbound-inventory-operation.md)

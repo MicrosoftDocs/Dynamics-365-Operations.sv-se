@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BankAccountTable, DeliveryMode, PaymTerm, VendGroup, VendParameters, VendPaymMode, VendTable, DeliveryReason, DeliveryTerms, DestinationCode
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 24671
 ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5eed11cbe73ede71cabf83655fc1d37b1a979a4c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9ff2da881bb77bf7db2c443f3556b4255cd81e3d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448094"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972190"
 ---
 # <a name="configure-accounts-payable-overview"></a>Konfigurera leverantörsreskontra – översikt
 
@@ -39,13 +38,13 @@ Följande inställning måste göras innan det går att ställa in leverantörsr
 -   I Redovisning:
     -   Om du tänker använda betalningsjournaler, konfigurera betalningsjournaler.
     -   Om du tänker använda valutakursjusteringar, ställ in valutakoder på sidan Valutor, ställ in valutakurstyper på sidan Valutakurstyp och ställ in valutakurser på sidan Valutakurs.
--   Ställ in bankkonton som används med betalningsmetoder i Kassa- och bankhantering.
+-   Ställ in bankkonton som används med betalsätt i Kassa- och bankhantering.
 
 ## <a name="setup-pages-for-accounts-payable"></a>Inställningssidor för leverantörsreskontra
 
 Använd följande sidor när du vill ställa in de grundläggande funktioner i Leverantörsreskontra för varje juridisk person. Sidorna visas i rekommenderad inställningsordning. Du kan göra inställningsprocessen enklare genom att skapa mallar från de första posterna som du skapas. I en mall anges vanligtvis poster i många fält för att avspegla de funktioner organisationen vill implementera för en viss leverantörstyp.
 1.  Definiera betalningsvillkor som du tilldelar till försäljningsorder, inköpsorder, kunder och leverantörer och som fastställer fakturornas förfallodatum på sidan Betalningsvillkor. Mer information finns i [Definiera leverantörsbetalningsavgifter](tasks/define-vendor-payment-fees.md).
-2.  Skapa och underhåll information om hur organisationen betalar sina leverantörer på sidan Betalningsmetoder - leverantörer.
+2.  Skapa och underhåll information om hur organisationen betalar sina leverantörer på sidan Betalsätt – leverantörer.
 3.  Skapa och underhåll grupper av leverantörer med gemensamma nyckelparametrar för bokföring, kvittning och betalning, rapportering och prognostisering på sidan Leverantörsgrupper.
 4.  Definiera hur leverantörstransaktioner bokförs i redovisningen på sidan Bokföringsprofiler för leverantörer.
 5.  Konfigurera standardinställningar som tillämpas om en mer specifik inställning inte anges, parametrar för olika funktionstyper samt olika nummersekvenser för leverantörsreskontra på sidan Parametrar för leverantörsreskontra.
@@ -86,8 +85,8 @@ De ytterligare inställningssidorna som används ordnas efter funktion.
 
 **Fyllnadsartiklar**
 
--   På sidan Fyllnadsartikelgrupper - Leverantör, skapa och underhåll fyllnadsartikelgrupper för leverantörer.
--   På sidan Fyllnadsartikelgrupper - Lager, skapa och underhåll fyllnadsartikelgrupper för artiklar.
+-   På sidan Fyllnadsartikelgrupper – Leverantör, skapa och underhåll fyllnadsartikelgrupper för leverantörer.
+-   På sidan Fyllnadsartikelgrupper – Lager, skapa och underhåll fyllnadsartikelgrupper för artiklar.
 
 **Fördelning**
 
@@ -148,6 +147,3 @@ De ytterligare inställningssidorna som används ordnas efter funktion.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

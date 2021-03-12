@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9558013236a728e0fb9691f4edd719fe58d5457
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec62af4ec62de0d63b590c79db6a8164d59e72c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448137"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971288"
 ---
 # <a name="budget-planning"></a>Budgetplanering
 
@@ -106,7 +105,7 @@ Budgetplaneringen använder särskilda säkerhetsprinciper för att kunna konfig
 
 2.5. Välj Ge tillgång till vissa organisationer. Välj organisationshierarkin som skapades i det första steget. Välj finansnoden och klicka på knappen Bevilja med underordnad knapp. 
 
-***Viktigt!*** *Se till att du är i kontexten för den juridiska personen DEMF när du genomför den här uppgiften, eftersom organisationssäkerhet tilldelas efter juridisk person* 
+**_Viktigt!_* _ _Se till att du är i kontexten för den juridiska personen DEMF när du genomför den här uppgiften, detta eftersom organisationssäkerhet tilldelas per juridisk person* 
 
 ### <a name="task-3-create-scenarios"></a>Uppgift 3: Skapa scenarier
 3.1. Navigera till Budgetering&gt;Inställningar &gt; Budgetplanering &gt; Budgetplaneringskonfiguration. På scenariosidan kan du se scenarierna som vi ska använda i den här labbövningen: Utfall föregående år och Budgeterat. 
@@ -160,7 +159,7 @@ Baserat på layoutdefinitionen av budgetplanen kan vi skapa en Excel-mall som sk
 *Obs: Se till att välja "Spara som" och välj den plats där mallen ska sparas, om du vill redigera. Om användaren väljer "Öppna" i dialogrutan utan att spara, behålls inte ändringar som gjorts i filen när filen stängs.* 
 [![Mallvy](./media/screenshot25.png)](./media/screenshot25.png) 
 
-5.3. &lt;Valfritt steg&gt; Ändra Excel-mallen för att göra den mer användarvänlig – lägg till formler för summor, rubrikfält, formatering osv. Spara ändringarna och skicka filen till budgetplanlayouten genom att klicka på Layout &gt;Överför. 
+5.3. &lt; Valfritt steg&gt; Ändra Excel-mallen för att göra den mer användarvänlig – lägg till formler för summor, rubrikfält, formatering osv. Spara ändringarna och skicka filen till budgetplanlayouten genom att klicka på Layout &gt; Överför. 
 
 
 ### <a name="task-6-create-a-budget-planning-process"></a>Uppgift 6: Skapa en budgetplaneringsprocess
@@ -247,6 +246,3 @@ C. Navigera till Budgetering &gt; Inställningar &gt; Budgetplanering &gt; Budge
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b381ec0535676b77a62bc748fd2ca1c521839ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415708"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972465"
 ---
 # <a name="retail-sales-price-management"></a>Prishantering för Retail-försäljning
 
@@ -43,7 +42,7 @@ Följande termer används i detta avsnitt:
 
 ## <a name="price-groups"></a>Prisgrupper
 
-Prisgrupper är den centrala delen av pris- och rabatthanteringen i Handel. Prisgrupper används för att tilldela priser och rabatter till handelsenheter (dvs kanaler, kataloger, anknytningar och bonusprogram). Eftersom prisgrupper används för alla priser och rabatter, är det viktigt att du planerar hur du använder dem innan du börjar.
+Prisgrupper är den centrala delen av pris- och rabatthanteringen i Commerce. Prisgrupper används för att tilldela priser och rabatter till handelsenheter (dvs kanaler, kataloger, anknytningar och bonusprogram). Eftersom prisgrupper används för alla priser och rabatter, är det viktigt att du planerar hur du använder dem innan du börjar.
 
 En prisgrupp är i sig bara ett namn, en beskrivning och eventuellt en prissättningsprioritet. Den viktigaste punkten att komma ihåg angående prisgrupper är att de används för att hantera många-till-många-relationer som rabatter och priser med handelsenheter.
 
@@ -53,7 +52,7 @@ Följande bild visar hur prisgrupper används. I den här illustrationen observe
 
 När du skapar prisgrupper bör du inte använda en enda prisgrupp för flera typer av handelsenheter. I annat fall kan det vara svårt att avgöra varför ett särskilt pris eller en rabatt används i en transaktion.
 
-När en röd streckad linje i bilden visas ger Handel inte stöd för huvudfunktionerna i Microsoft Dynamics 365 för en prisgrupp som anges direkt på en kund. I detta fall får du endast handelsavtal för försäljningspris. Om du vill använda kundspecifika priser rekommenderar vi att du inte anger prisgrupper direkt på kunden. Du bör i stället använda anknytningar. 
+När en röd streckad linje i bilden visas ger Commerce inte stöd för huvudfunktionerna i Microsoft Dynamics 365 för en prisgrupp som anges direkt på en kund. I detta fall får du endast handelsavtal för försäljningspris. Om du vill använda kundspecifika priser rekommenderar vi att du inte anger prisgrupper direkt på kunden. Du bör i stället använda anknytningar. 
 
 Observera att om prisgruppen har ställts in för kunden, kommer den här prisgruppen att associeras med försäljningsorderrubriken för de order som skapas för den här kunden. Om användaren ändrar prisgruppen i orderrubriken ersätts den gamla prisgruppen bara med den nya prisgruppen för den aktuella ordern. Den gamla prisgruppen kommer till exempel inte att påverka den aktuella ordern, men den kommer fortfarande att vara kopplad till kunden för framtida order.
 
@@ -68,7 +67,7 @@ Inom handel är det mycket vanligt att det finns olika priser i olika kanaler. T
 
 ### <a name="affiliations"></a>Anknytningar
 
-En allmän definition av en anknytning är en länk eller koppling till en grupp. I Handel är anknytningar grupper av kunder. Anknytningar är ett mycket flexibelt verktyg för kundens prissättning och rabatter än det grundläggande Microsoft Dynamics 365-begreppet för kundgrupper och rabattgrupper. Först kan en anknytning användas för både priser och rabatter, medan en icke-butiksprissättning för varje typ av rabatt och pris. Sedan kan en kund tillhöra flera anknytningar men kan endast tillhöra en icke-butiksprissättningsgrupp för varje typ. Slutligen kan även anknytningar ställas in så att de är kopplade till en kund, de behöver inte vara en. En ad hoc-anknytning kan användas för anonyma kunder i kassan. Ett typiskt exempel på en anonym anknytningsrabatt är en pensionärs- eller studentrabatt där en kund kan erhålla en rabatt genom att bara visa ett gruppmedlemskort.
+En allmän definition av en anknytning är en länk eller koppling till en grupp. I Commerce är anknytningar grupper av kunder. Anknytningar är ett mycket flexibelt verktyg för kundens prissättning och rabatter än det grundläggande Microsoft Dynamics 365-begreppet för kundgrupper och rabattgrupper. Först kan en anknytning användas för både priser och rabatter, medan en icke-butiksprissättning för varje typ av rabatt och pris. Sedan kan en kund tillhöra flera anknytningar men kan endast tillhöra en icke-butiksprissättningsgrupp för varje typ. Slutligen kan även anknytningar ställas in så att de är kopplade till en kund, de behöver inte vara en. En ad hoc-anknytning kan användas för anonyma kunder i POS. Ett typiskt exempel på en anonym anknytningsrabatt är en pensionärs- eller studentrabatt där en kund kan erhålla en rabatt genom att bara visa ett gruppmedlemskort.
 
 Även om anknytningar oftast är associerade med rabatter, kan du också använda dem för att ange olika priser. När t.ex. en återförsäljare säljer till en medarbetare, kan den vilja ändra försäljningspriset i stället för att tillämpa en rabatt på ordinarie pris. Ett annat exempel är att en återförsäljare som säljer till både konsumentkunder och affärskunder kan erbjuda bättre priser baserad på deras inköpsvolym. Anknytningar tillåter båda dessa situationer.
 
@@ -134,7 +133,7 @@ Du kan ange priset på en produkt i Microsoft Dynamics 365 på tre platser:
 - I ett handelsavtal för försäljningspris
 - I en prisjustering
 
-Grundpris och handelsavtalspriset ingår i kärninstallationen av Dynamics 365 och är tillgängliga även om du inte använder Handel. Funktionen prisjustering är endast tillgänglig i Handel. Nästa avsnitt innehåller mer information om dessa alternativ för att ange priser och förklarar hur alternativen fungerar tillsammans.
+Grundpris och handelsavtalspriset ingår i kärninstallationen av Dynamics 365 och är tillgängliga även om du inte använder Commerce. Funktionen prisjustering är endast tillgänglig i Commerce. Nästa avsnitt innehåller mer information om dessa alternativ för att ange priser och förklarar hur alternativen fungerar tillsammans.
 
 ## <a name="setting-prices"></a>Prissättning
 
@@ -154,7 +153,7 @@ Du kan skapa handelsavtal för varje produkt genom att använda handelsavtalsjou
 
 Ett handelsavtal för försäljningspris **Tabell** är för en kund som anges direkt i handelsavtalet. Detta scenario är inte ett vanligt B2C-scenario. Om detta uppstår kommer prissättningsmotorn att använda handelsavtal **tabell** för att fastställa priset.
 
-Ett handelsavtal för prissättningen **grupp** är den typ som används oftast. Utanför handel är handelsavtal för prissättningen **grupp** för en enkel kundgrupp. Men i Handel har begreppet kundgrupp utökats så att det är en mer allmän prisgrupp. En prisgrupp kan länkas till en kanal, anknytning, bonusprogram eller katalog. Detaljerad information om grupper finns i avsnittet ”prisgrupper” tidigare i det här avsnittet.
+Ett handelsavtal för prissättningen **grupp** är den typ som används oftast. Utanför handel är handelsavtal för prissättningen **grupp** för en enkel kundgrupp. Men i Commerce har begreppet kundgrupp utökats så att det är en mer allmän prisgrupp. En prisgrupp kan länkas till en kanal, anknytning, bonusprogram eller katalog. Detaljerad information om grupper finns i avsnittet ”prisgrupper” tidigare i det här avsnittet.
 
 > [!NOTE]
 > Ett pris för handelsavtalet används alltid före grundpris.
@@ -181,7 +180,7 @@ Det aktiva priset beräknas genom att använda handelsavtalspriset och tillämpa
 
 ## <a name="category-price-rules"></a>Kategoriprisregler
 
-Kategoriprisregelfunktionen i Handel ger ett enkelt sätt att skapa nya handelsavtal för alla produkter i en kategori. Den här funktionen låter dig automatiskt söka efter befintliga handelsavtal för produkter i kategorin och upphöra dem.
+Kategoriprisregelfunktionen i Commerce ger ett enkelt sätt att skapa nya handelsavtal för alla produkter i en kategori. Den här funktionen låter dig automatiskt söka efter befintliga handelsavtal för produkter i kategorin och upphöra dem.
 
 När du väljer alternativet att upphöra befintliga handelsavtal skapar systemet en ny handelsavtalsjournalen för produkter i kategorin som har ett aktivt handelsavtal. Men journalen bokföras manuellt. Dessutom hittar nu kategoriprisregler befintliga handelsavtal endast om du använder samma prisregel (d.v.s. om du skapar en ny prisregel som använder samma kategori som tidigare). Om du inte använder samma prisregel kommer inte befintliga handelsavtal upphöra att gälla.
 
@@ -207,7 +206,7 @@ Microsoft SQL Server Express används ofta för kanaldatabaser på grund av kost
 
 - Om du använder handelsavtal och ändrar dina priser, ska du upphöra att gälla de gamla handelsavtalen genom att ange ett slutdatum. Med tiden minskar du antalet handelsavtal som hålls i kanaldatabaser. Det hjälper dig också att minska mängden data som prisberäkningsalgoritmen måste samarbeta med.
 - Om priserna varierar efter produktvariant kan du använda produktbaspris som pris för den vanligaste varianten. Använd sedan handelsavtal för variantpriserna som undantag. Den här metoden kan minska antalet handelsavtalsposter. Eftersom det är så enkelt att importera data till Microsoft Dynamics 365 kan du kanske frestas att importera ett handelsavtal för varje variant av varje enskild produkt. Detta tillvägagångssätt kan emellertid producera många handelsavtal som har samma värde. Det kan därför öka mängden data i onödan.
-- Handel behandlar variantspecifika priser i ordning från mest specifika till minst specifika. Om en produktdimension inte påverkar priset ska du inte definiera handelsavtal för den. Till exempel en produkt är tillgänglig i tre färger och fyra storlekar och priset varierar endast efter storlek. Om du definierar ett handelsavtal för varje variant kan skapa du 12 poster. Istället kan du definiera handelsavtal för varje storlek och lämna färgdimensionen tom. I det här fallet kan du skapa fyra poster.
+- Commerce behandlar variantspecifika priser i ordning från mest specifika till minst specifika. Om en produktdimension inte påverkar priset ska du inte definiera handelsavtal för den. Till exempel en produkt är tillgänglig i tre färger och fyra storlekar och priset varierar endast efter storlek. Om du definierar ett handelsavtal för varje variant kan skapa du 12 poster. Istället kan du definiera handelsavtal för varje storlek och lämna färgdimensionen tom. I det här fallet kan du skapa fyra poster.
 
     Om inte alla värden för en dimensionshierarki leder till ett annat pris, kan du också definiera ett handelsavtal för produktmallen och lämna alla produktdimensioner tomma. Definiera sedan ett separat handelsavtal för varje dimensionsvärde som leder till ett annat pris. Exempelvis om storleken XXL har ett högre pris, men alla storlekar har samma pris, kräver du två handelsavtal: en för produktmallen och en XXL storleken.
 
@@ -239,7 +238,4 @@ Dessutom, **endast** prissättningsmotorn stöder följande prissättningsfunkti
 
 Pris är en av de viktigaste faktorerna som kontrollerar köpbesluten för många kunder och många kunder jämför priserna på olika webbplatser innan de gör ett inköp. För att garantera att de erbjuder konkurrenskraftiga priser håller återförsäljare ett öga på sina konkurrenter och kör ofta erbjudanden. För att hjälpa dessa återförsäljare att locka till sig kunderna är det mycket viktigt att produktsökningen, bläddringsfunktionen, listorna och produktinformation visar de mest exakta priserna.
 
-I en kommande version av Handel returnerar API:n **GetActivePrices** (Application Programming Interface) priser som innehåller enkla rabatter (t.ex. rabatter på en rad som inte är beroende av andra artiklar i varukorgen). På så sätt ligger priserna som visas nära det faktiska beloppet som kunderna ska betala för artiklar. Denna API kommer att innehålla alla typer av enkla rabatter: anknytningsbaserade, lojalitetsbaserade, katalogbaserade och kanalbaserade rabatter. Dessutom returnerar API:er namn och giltighetsinformation för de rabatter som används, så att detaljhandlare kan ge en mer detaljerad beskrivning av priset och skapa en uppfattning om hur rabatten kommer att förfalla snart.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+I en kommande version av Commerce returnerar API:n **GetActivePrices** (Application Programming Interface) priser som innehåller enkla rabatter (t.ex. rabatter på en rad som inte är beroende av andra artiklar i varukorgen). På så sätt ligger priserna som visas nära det faktiska beloppet som kunderna ska betala för artiklar. Denna API kommer att innehålla alla typer av enkla rabatter: anknytningsbaserade, lojalitetsbaserade, katalogbaserade och kanalbaserade rabatter. Dessutom returnerar API:er namn och giltighetsinformation för de rabatter som används, så att detaljhandlare kan ge en mer detaljerad beskrivning av priset och skapa en uppfattning om hur rabatten kommer att förfalla snart.

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,21 +18,21 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 048885cac7a316e144b2df072da405d74096203f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a05150d8f4c4fa2d50c07c69c5574cdb602a618f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415706"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972415"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Allokera huvudavgifter för att matcha försäljningsrader
 
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver funktionen för gruppering av automatiska avgifter på huvudnivå och -tillägg och allokera dem till handelsförsäljningsrader. Denna funktion är tillgänglig för transaktioner som skapas i kassan i Retail version 10.0.1 och försäljning som skapas i kundtjänst i Retail version 10.0.2.
+Det här avsnittet beskriver funktionen för gruppering av automatiska avgifter på huvudnivå och -tillägg och allokera dem till handelsförsäljningsrader. Denna funktion är tillgänglig för transaktioner som skapas i POS i Retail version 10.0.1 och försäljning som skapas i kundtjänst i Retail version 10.0.2.
 
-Denna funktion är endast tillgänglig om funktionen [avancerade automatiska avgifter](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) har aktiverats med hjälp av alternativet på sidan **Handelsparametrar**. Förbättrade beräkningsmetoden för automatiska avgifter kan dessutom tillämpas endast till försäljningsorder som skapas via handelskanaler (kassan, en kundtjänst och Dynamics näthandelsplattform).
+Denna funktion är endast tillgänglig om funktionen [avancerade automatiska avgifter](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) har aktiverats med hjälp av alternativet på sidan **Handelsparametrar**. Förbättrade beräkningsmetoden för automatiska avgifter kan dessutom tillämpas endast till försäljningsorder som skapas via handelskanaler (POS, en kundtjänst och Dynamics näthandelsplattform).
 
 Denna nya funktion ger organisationer större flexibilitet i sättet som automatiska avgifter på huvudnivå beräknas och tillämpas på försäljningstransaktioner.
 
@@ -41,7 +40,7 @@ I versioner av appen som är tidigare än version 10.0.1 beräknas automatiska a
 
 Exempelvis definieras automatiska avgifter på huvudnivå **99** och leveranssätt **11**. En försäljningsorder skapas och leveranssätt **99** definieras i orderrubriken. Men vissa försäljningsrader är inställda på att levereras med hjälp av leveranssättet **11**. I det här fallet beaktas och tillämpas endast avgifter på huvudnivå som är kopplade till leveranssätt **99** på försäljningsorder.
 
-I Handel har avgifter på huvudnivå ytterligare en funktion som gör det möjligt att definiera en [skiftindelad avgiftskonfiguration](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) som baseras på ordervärdet. Till exempel om ordervärdet är mellan 50,00 $ och 200,00 $ kanske organisationen vill debitera en fraktavgift på 5,00 $. Om ordervärdet är mellan 200,01 $ och 500,00 $ kan fraktkostnaden vara 4,00 $.
+I Commerce har avgifter på huvudnivå ytterligare en funktion som gör det möjligt att definiera en [skiftindelad avgiftskonfiguration](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) som baseras på ordervärdet. Till exempel om ordervärdet är mellan 50,00 $ och 200,00 $ kanske organisationen vill debitera en fraktavgift på 5,00 $. Om ordervärdet är mellan 200,01 $ och 500,00 $ kan fraktkostnaden vara 4,00 $.
 
 Vissa organisationer vill ha fördelarna med skiftindelad avgiftsberäkning som medföljer avgifter på huvudnivå. I scenarier som avser blandade leveranssätt kan de också vilja se till att de avgifter som beräknas baseras på matchning med leveranssättet som har definierats på varje försäljningsrad.
 
@@ -175,6 +174,3 @@ När denna beräkningsmetod används i ett scenario med delvis retur, om avgifts
 [Avancerade automatiska avgifter för flera kanaler](omni-auto-charges.md)
 
 [Aktivera och konfigurera automatiska avgifter efter kanal](auto-charges-by-channel.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

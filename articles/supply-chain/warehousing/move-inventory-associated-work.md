@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSWorker
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2aee3af8da6610c16fc2d98091bfa3f01f1bd0f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3e7d0cdace306e6f266dd690db2c9855ea75009e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437632"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970341"
 ---
 # <a name="movement-of-inventory-with-associated-work-in-warehouse-management"></a>Lagerrörelse med tillhörande arbete i lagerstyrning
 
@@ -59,6 +58,3 @@ För den arbetare som ska kunna flytta reserverat lager väljer du kryssrutan **
 Denna funktion har också anpassats i efterhand för Microsoft Dynamics AX 2012 R3 och blir tillgänglig som en del av CU12.
 Den kan också hämtas separat via KB-nummer 3192548. 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

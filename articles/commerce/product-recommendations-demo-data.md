@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cca6913375eec2565852676f3c1da5a67f71e14f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7ccb0b6c5aace0fc76c6886299fba7369abed860
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415704"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972386"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Skapa rekommendationer med demodata
 
@@ -32,7 +31,7 @@ ms.locfileid: "4415704"
 
 Det här ämnet ger vägledning om hur du kan utnyttja produktrekommendationer i flera kanaler i en nivå 1 enskilda miljöer med hjälp av i förväg ifyllda, anpassningsbara demodata.
 
-Produktrekommendationer i flera kanaler innehåller en uppsättning av redaktionellt granskade eller programmässigt genererade listor över produkter i en ordnad lista. Dessa listor kan användas i flera situationer, beroende på vad som behövs i verksamheten. Mer information om produktrekommendationslistor finns i [produktrekommendationer - översikt](product-recommendations.md).
+Produktrekommendationer i flera kanaler innehåller en uppsättning av redaktionellt granskade eller programmässigt genererade listor över produkter i en ordnad lista. Dessa listor kan användas i flera situationer, beroende på vad som behövs i verksamheten. Mer information om produktrekommendationslistor finns i [produktrekommendationer – översikt](product-recommendations.md).
 
 För att produktrekommendationer på nivåer 2 och högre beräknas Dynamics 365-miljöer automatiskt baserat på kunddata. Att använda demodata för produktrekommendationer inaktiverar inte någon produktrekommendationslösning som redan har etablerats i miljön och kostnader som är förknippade med användningen.
 
@@ -81,7 +80,7 @@ Tillägget innehåller en datafil som heter RecoMockDataset.csv, vilket gör att
 
 [Aktivera rekommendationer för "köp liknande produkter"](shop-similar-looks.md)
 
-[Lägga till produktrekommendationer i kassan](product.md)
+[Lägga till produktrekommendationer i POS](product.md)
 
 [Lägg till rekommendationer på transaktionsskärmen](add-recommendations-control-pos-screen.md)
 
@@ -90,6 +89,3 @@ Tillägget innehåller en datafil som heter RecoMockDataset.csv, vilket gör att
 [Skapa granskade rekommendationer manuellt](create-editorial-recommendation-lists.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

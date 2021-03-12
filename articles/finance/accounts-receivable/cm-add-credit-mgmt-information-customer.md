@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 919aa50136f02a44eb69146589496ad1284721f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a04180a5dbec1e08d0149beeed0495a0d13af76c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447977"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971738"
 ---
 # <a name="add-credit-management-information-for-customers"></a>Lägg till information för kredithantering för kunder
 
@@ -35,7 +34,7 @@ Du kan lägga till kunduppgifter på snabbfliken **kredit och inkasso** på sida
 1. Ställ in alternativet **obegränsad kreditgräns** till **ja** om kunden inte ska begränsas med några kreditgränstest.
 2. Ange alternativet **exkludera från kredithantering** till **ja** för att utesluta kunden från de åtgärder som normalt inträffar under kredithanteringsprocesser.
 3. Välj kredithanteringsgrupp för kunden.
-4. Om du vill beräkna kreditgränsen i kundens valuta anger du kundens kreditgräns i fältet **kreditgräns** i kundens valuta. Kreditgränsen i företagsvalutan konverteras med hjälp av de valutakurser som definieras av växelkurstypen för kreditgräns som valts i parametrarna för kredithantering.
+4. Om du vill beräkna kreditgränsen i kundens valuta anger du kundens kreditgräns i fältet **kreditgräns** i kundens valuta. Kreditgränsen i företagsvalutan konverteras med hjälp av de valutakurser som definieras av valutakurstypen för kreditgräns som valts i parametrarna för kredithantering.
 5. I fältet **senaste granskningsdatum** anger du det datum då kundens kreditgräns senast granskades av en kreditchef.
 6. I fältet **nästa planerade granskningsdatum** anger du det datum då kunden är schemalagd för granskning och uppdatering av kredit.
 7. I fältet **Berättigad kreditgräns** anger du den högsta kreditgränsen som kan tilldelas kunden, baserat på din granskning av kundens kredithistorik. Den berättigade kreditgränsen kan skilja sig från kreditgränsen som visas på snabbfliken **kredit och inkasso**.
@@ -102,6 +101,3 @@ Du kan skapa försäkringsbrev och garantier på sidan **alla kunder** (**kundre
     I det här fallet är den effektiva kreditgränsen 125 000 (= A + \[B × C\]).
     
     Om du däremot markerar kryssrutan **inkluderad i exponering** tas värdet **Uppdatera kreditgräns** på 50 000 (= 50,00 procent av 100 000) bort och exponeringsvärdet är 75 000 (= A + \[B × C\] – B).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

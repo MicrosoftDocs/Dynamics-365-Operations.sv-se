@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 86d396b069a354b8fa7e15793372a8293273d238
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3811486a31d079cac7f7c27ea6323f16de4478d5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438057"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970216"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemstyrd arbetssekvensering
 
@@ -305,6 +304,3 @@ Systemstyrda frågor för arbetsserier *inkluderar*. Det är viktigt att du minn
 I exemplet från det här scenariot har arbets-ID *4* också fångats in av frågan. När den skapades lades två rader till: en för 25 ea och en annan för 10 ea. Arbetet uppvisades fortfarande för användaren, eftersom minst en arbetsrad har en kvantitet som är mindre än 20 ea.
 
 Beroende på scenariot kan du förhindra detta genom att använda arbetsavbrott.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

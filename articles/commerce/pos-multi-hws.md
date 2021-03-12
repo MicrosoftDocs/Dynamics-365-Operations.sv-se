@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 03cb68ede82668523e6970d33df676738e65fd83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 72142a3e05092a2da7749fa01ec58e2c1d8fe25d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415858"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972615"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedikerade betalningsterminaler och fråga om skrivare och kassalåda
 
@@ -65,7 +64,7 @@ Mer information om hur du konfigurerar kringutrustning i nätverk finns i [Över
 
 ### <a name="set-up-hardware-profiles"></a>Ställ in maskinvaruprofiler
 
-Du måste ha två typer av maskinvaruprofil. Den första tilldelas kassan. Den andra har tilldelats en maskinvarustation på butiksnivå och används för logisk gruppering av nätverkskvittoskrivare och kassalådor.
+Du måste ha två typer av maskinvaruprofil. Den första tilldelas POS. Den andra har tilldelats en maskinvarustation på butiksnivå och används för logisk gruppering av nätverkskvittoskrivare och kassalådor.
 
 #### <a name="set-up-a-hardware-profile-for-the-register"></a>Ställ in en maskinvaruprofil för kassaapparaten
 
@@ -85,7 +84,7 @@ Om du vill ställa in maskinvaruprofilen som är kopplad till kassaapparaten fö
 
 5. I Dynamics 365 Commerce söker du efter **register**.
 6. Välj ett register genom att välja registernumret och välj sedan **Redigera**.
-7. Tilldela den maskinvaruprofil som du just har skapat i kassan som ska använda en särskild betalningsterminal. Enheten som mappas till den här kassan måste använda antingen Modern POS för Windows eller Modern POS för Android-programmet.
+7. Tilldela den maskinvaruprofil som du just har skapat i POS som ska använda en särskild betalningsterminal. Enheten som mappas till den här POS måste använda antingen Modern POS för Windows eller Modern POS för Android-programmet.
 8. Välj **Spara**.
 9. I åtgärdsfönstret på fliken **Kassor** välj **Konfigurera IP-adresser**.
 10. På snabbfliken **PIN-knappsats** anger du IP-adressen för betalningsterminalen. Information om hur du hämtar IP-adressen för betalningsterminalen med hjälp av Adyen-anslutaren finns i [Dynamics 365-betalningskoppling för Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3).
@@ -102,14 +101,14 @@ Om du vill ställa in maskinvaruprofilen som används för att gruppera skrivare
 
     | Enhet | Typ | beskrivning | Ytterligare detaljer |
     |---|---|---|---|
-    | Skrivare | Nätverk | **Epson** eller **Star** | Enhetsnamnet är skiftlägeskänsligt. **Kvittoprofil-ID** ska vara detsamma som **kvittoprofil-ID** som mappas till skrivaren som har ställts in i maskinvaruprofilen som har tilldelats kassan. |
+    | Skrivare | Nätverk | **Epson** eller **Star** | Enhetsnamnet är skiftlägeskänsligt. **Kvittoprofil-ID** ska vara detsamma som **kvittoprofil-ID** som mappas till skrivaren som har ställts in i maskinvaruprofilen som har tilldelats POS. |
     | Kassalåda | Nätverk | **Epson** eller **Star** | Enhetsnamnet är skiftlägeskänsligt. ange alternativet **Använda delade skift** till **Ja**. |
 
 5. Välj **Spara**.
 
 ### <a name="set-up-hardware-stations"></a>Konfigurera maskinvarustationer
 
-Du måste ha två maskinvarustationer. Den första kommer att mappas till kassan. Den andra kommer att väljas efter behov, när en inleverans måste skrivas ut eller en kassalåda måste öppnas.
+Du måste ha två maskinvarustationer. Den första kommer att mappas till POS. Den andra kommer att väljas efter behov, när en inleverans måste skrivas ut eller en kassalåda måste öppnas.
 
 #### <a name="register-a-hardware-station"></a>Registrera en maskinvarustation
 
@@ -117,7 +116,7 @@ Du måste ha två maskinvarustationer. Den första kommer att mappas till kassan
 2. Välj en butik genom att välja dess **ID-värden för butikskanal** och välj sedan **Redigera**.
 3. På snabbfliken **Maskinvarustationer** väljer du **Lägg till**.
 4. Ange fältet **Maskinvarustationtyp** till **dedikerad**.
-5. Ange en beskrivning men ställ inte in några andra värden för den här maskinvarustationen. Den här maskinvarustationen kommer alltid att användas för kassan. 
+5. Ange en beskrivning men ställ inte in några andra värden för den här maskinvarustationen. Den här maskinvarustationen kommer alltid att användas för POS. 
 
 #### <a name="set-up-a-hardware-station-for-the-receipt-printer-and-cash-drawer"></a>Ställa in en maskinvarustation för kvittoskrivaren och kassalådan
 
@@ -140,8 +139,8 @@ Du måste ha två maskinvarustationer. Den första kommer att mappas till kassan
 1. Stäng det aktuella skiftet i en POS-klient som stöds, om ett skift är öppet.
 2. Logga in och välj sedan **Åtgärder som inte berör kassalådan**.
 3. Använd funktionen **Hantera maskinvarustationer** för att aktivera en maskinvarustation.
-4. Välj maskinvarustationen som du skapade för kassan om du vill göra den aktiv.
-5. Logga ut från kassan och logga sedan in igen och öppna ett skift.
+4. Välj maskinvarustationen som du skapade för POS om du vill göra den aktiv.
+5. Logga ut från POS och logga sedan in igen och öppna ett skift.
 
 Den betalningsterminal som tilldelas maskinvaruprofilen kommer nu alltid att vara aktiv, och du uppmanas att ange om en kvittoskrivare eller kassalåda krävs.
 
@@ -154,6 +153,3 @@ Butikspersonalen ombeds att välja en maskinvarustation bara en gång per transa
 - [Konfigurera POS Hybrid-app på Android och iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
 - [Dynamics 365-betalningskoppling för Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
 - [Nätverkskringutrustning för nätverk](https://go.microsoft.com/fwlink/?linkid=2129965)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cbc638b684ad6eb59b852e599cf36cbd0b66faf
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: 01fd382a97f86e93e4ab91759d35c65fae7447c5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4448171"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972018"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>En verifikation med flera kund- eller leverantörsposter
 
@@ -41,7 +40,7 @@ En verifikation som innehåller mer än en kund eller leverantör, kan anges med
 Det här avsnittet visar hur kvittningen kommer att bearbetas när en verifikation med flera kund- eller leverantörsposter bokförs. Dessutom ger det här avsnittet tillfälliga lösningar som hjälper dig att förstå hur du undviker att använda en verifikation med flera kunder eller leverantörer. I synnerhet finns det två exempel som illustrerar de två gemensamma kvittningscenarion som påverkas av användningen av en verifikation med flera kunder eller leverantörer:
 
 -   Kassarabattbokföring
--   Omvärderingsbokföring
+-   Ombedömningsbokföring
 
 ## <a name="how-does-settlement-impact-single-voucher-usage"></a>Hur påverkar kvittning användning av enskild verifikation
 När du bokför en verifikation som innehåller flera kund- eller leverantörsposter skapas en enskild redovisningsverifikation som innehåller flera kundreskontra- eller leverantörsreskontrasaldon. Under kvittningsprocessen används de ursprungliga redovisningsposterna för att skapa redovisningsposter för kassarabatten, orealiserad vinst och förlust, realiserad vinst och förlust och avdrag för originaldokumentets samlingskonto. Om till exempel en kassarabatt tas när du kvittar en leverantörsbetalning till en faktura måste kassarabattredovisningen bokföras till huvudboken för leverantörsreskontra från den ursprungliga fakturan. Om den ursprungliga fakturan bokfördes i en verifikation som innehåller flera leverantörsposter, sammanfattas den ursprungliga redovisningen. I det här fallet, eftersom det inte finns något sätt att få tillgång till den detaljerade redovisningsposten för varje leverantörstransaktion i den enkla verifikationen finns det inget sätt att bestämma hur användaren avsåg hur kassarabatten skulle redovisas.
@@ -123,7 +122,7 @@ I följande exempel registreras flera leverantörsfakturor i redovisningen på e
 
 Observera att verifikationen innehåller två poster för bokföringstypen för leverantörsaldo i den enkla verifikationen. Det finns inget sätt att ange att debet för 606300-001 är avsett att kompensera leverantörsaldoposten på 100,00 till 200110-001. Detta är eftersom användaren angav de olika leverantörsposterna i en enda verifikation. 
 
-Med det här exemplet kan du analysera påverkan som det har att använda en verifikation på en underordnad kvittningsredovisning. Anta att din redovisningsvaluta är SEK och ovanstående transaktionerna bokfördes i en transaktionsvaluta i EUR. Anta att du helt betalar fakturan på 200,00 EUR men att det uppstår en realiserad förlust på grund av en skillnad i växelkursen mellan tiden för bokföring av fakturan och betalningen. Observera att värdet för realiserad förlustkonto fördelas mellan alla dimensioner från fakturaverifikationens utgiftskonton. I det här fallet fördelas både dimension 001 och 002, även om användarens föreställning kan vara att endast 002 tillhör utgiftskontot från den fakturan som kvittas. Detta beror på att en verifikation används för att bokföra ovanstående faktura, utan någon möjlighet att indikera hur användaren avsåg att kostnadsfördelningarna korrelerar till leverantörssaldot i den enkla verifikationen.
+Med det här exemplet kan du analysera påverkan som det har att använda en verifikation på en underordnad kvittningsredovisning. Anta att din redovisningsvaluta är SEK och ovanstående transaktionerna bokfördes i en transaktionsvaluta i EUR. Anta att du helt betalar fakturan på 200,00 EUR men att det uppstår en realiserad förlust på grund av en skillnad i valutakursen mellan tiden för bokföring av fakturan och betalningen. Observera att värdet för realiserad förlustkonto fördelas mellan alla dimensioner från fakturaverifikationens utgiftskonton. I det här fallet fördelas både dimension 001 och 002, även om användarens föreställning kan vara att endast 002 tillhör utgiftskontot från den fakturan som kvittas. Detta beror på att en verifikation används för att bokföra ovanstående faktura, utan någon möjlighet att indikera hur användaren avsåg att kostnadsfördelningarna korrelerar till leverantörssaldot i den enkla verifikationen.
 
 | Verifikation | Konto | Bokföringstyp   | Belopp i transaktionsvaluta (EUR) | Belopp i redovisningsvaluta (SEK) |
 |-------------|-------------|--------------------|------------------------------------------|-----------------------------------------|
@@ -233,6 +232,3 @@ För att undvika oönskade problem med framtida kvittningar för denna transakti
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

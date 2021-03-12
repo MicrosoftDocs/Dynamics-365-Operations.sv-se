@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 15191
 ms.assetid: 89a918e8-59a4-4711-a2e9-b41989ddd0f1
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceddeda5760d961568d58e7e4805955ea972c586
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b07a0f59dfba1cc38133f0cc8ea02e0515f43443
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448135"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971263"
 ---
 # <a name="budget-planning-data-allocation"></a>Dataallokering för budgetplanering
 
@@ -49,7 +48,7 @@ Tre allokeringsmetoder (Allokera över perioder, Allokera över dimensioner Anv�
 **Aggregera** – budgetplansraderna aggregeras från källbudgetplansscenariot i den associerade (underordnade) budgetplanen till målscenariot i den överordnade budgetplanen. Den här metoden aktiverar budgetbelopp som förbereds på lägre nivå i organisationen att konsolideras på en högre nivå.          
 
 [![Distribuera diagram](./media/distributechart-300x230.png)](./media/distributechart.png)
-**Fördela** - Budgetplanraderna fördelas från källbudgetplaneringsscenariot i den överordnade i budgetplanen till målscenariot i de associerade (underordnade) budgetplanerna baserat på organisationsenheternas ekonomiska dimensioner av de associerade planerna. Den här metoden aktiverar budgetbelopp som förbereds på högre nivå i organisationen att fördelas ut för mer lokaliserad granskning.           
+**Fördela** – Budgetplanraderna fördelas från källbudgetplaneringsscenariot i den överordnade i budgetplanen till målscenariot i de associerade (underordnade) budgetplanerna baserat på organisationsenheternas ekonomiska dimensioner av de associerade planerna. Den här metoden aktiverar budgetbelopp som förbereds på högre nivå i organisationen att fördelas ut för mer lokaliserad granskning.           
 
 [![Allokeringsregler för redovisning](./media/ledgerallocationrules-300x202.png)](./media/ledgerallocationrules.png)
 **Använd allokeringsregler för redovisning** – Budgetplanraderna distribueras från källbudgetplaneringsscenariot till målscenariot baserat på vald allokeringsregel för redovisning. 
@@ -77,6 +76,3 @@ Lägg slutligen till en automatisk uppgift för allokeringsfas för budgetplaner
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

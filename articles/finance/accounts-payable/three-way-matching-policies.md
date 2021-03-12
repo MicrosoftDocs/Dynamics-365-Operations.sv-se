@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d84e3ed050bacf7632d03cf0123f682c43fd7b58
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d337abc899ec668a52d9ba931599dc51d91a296c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447953"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971813"
 ---
 # <a name="three-way-matching-policies"></a>Trevägsmatchningspolicyer
 
@@ -98,7 +97,7 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 -   Ken anger matchningspolicyn på juridisk personnivån till tvåmatchning.
 -   Ken anger fältet Matchprissummor för den juridiska personen till Procentsats och anger 10 % som toleransprocent.
 -   Ken kan ange pristoleransinformation för alla artiklar 2 %.
--   Cassie anger matchningspolicyn på artikeln och leverantörkombinationsnivån för artikeln PH2500 - dator och leverantör Contoso till trevägsmatchning.
+-   Cassie anger matchningspolicyn på artikeln och leverantörkombinationsnivån för artikeln PH2500 – dator och leverantör Contoso till trevägsmatchning.
 -   Alicia, en inköpsordeansvarig på Fabrikams malaysiska avdelning, utfärdar inköpsorder till Contoso för att leverera tre artiklar som visas i följande tabell. När hon skapar inköpsordern åsidosätter hon matchningspolicyn för att den trådlösa musen ska vara trevägsmatchning i stället för tvåvägsmatchning.
 
     | Artikelnummer           | Kvantitet | Enhetspris | Nettobelopp | Matchningspolicy (standardvärde) | Matchningspolicy (på inköpsorderraden) |
@@ -145,6 +144,3 @@ Mer information finns i [Översikt över fakturamatchning för leverantörsresko
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AccountingDistribution
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 17231
 ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9a627ba33065086d21c758a1b8d8f2fa2f6ef02
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3901fb61c1c8f9a9fd13b8ea558877daf884f3ee
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448163"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972261"
 ---
 # <a name="accounting-distributions"></a>Redovisningsfördelningar
 
@@ -40,7 +39,7 @@ De allmänna redovisningsfördelningsfunktionerna innehåller följande alternat
 
 -   **Fördela belopp** – visa och ändra redovisningsfördelningar för ett enskilt dokumenthuvud eller en enskild rad och eventuella underordnade rader, till exempel moms eller avgifter.
     -   För de översta penningbeloppsfördelningarna (överordnade fördelningar), kan huvudkontot och ekonomiska dimensioner vara redigerbara direkt i den segmenterade postkontrollen i rutnätet. Det slutliga priset är ett typiskt exempel på en sådan överordnad distribution.
-    -   Fördelningsbeloppen baseras på termvalutan för dokumentet. Generellt är denna valuta transaktionsvalutan. Redovisnings - och rapporteringsvalutabelopp skapas i underredovisning.
+    -   Fördelningsbeloppen baseras på termvalutan för dokumentet. Generellt är denna valuta transaktionsvalutan. Redovisnings – och rapporteringsvalutabelopp skapas i underredovisning.
     -   Fördelningarna visar redovisningsdatumet och redovisningshändelsen. Vanligtvis ställs redovisningshändelsen in på **Ingen** tills dokumentet bokförs/journalförs. I det här läget blir redovisningshändelsen **Original**. När fördelningarna har bokförts, kan du inte ändra dem.
     -   Knappen **Dela** kan aktiveras för överordnade fördelningar. **Dela** genererar nya redovisningsfördelningar, och delningen kan baseras på procentsats, belopp eller kvantitet.
     -   Knappen **Fördela lika** kan användas i kombination med **Dela** för att automatiskt fördela beloppet lika mellan alla fördelningar.
@@ -57,6 +56,3 @@ De allmänna redovisningsfördelningsfunktionerna innehåller följande alternat
 I version 10.0.13 har en funktion lagts till som validerar registret för redovisningsfördelning för att se till att nya fält ställs in korrekt. Den här funktionen kallas för **Aktivera ytterligare validering av data för dokument med hjälp av källdokumentets redovisningsramverk**. Om du vill använda funktionen måste du aktivera den med hjälp av arbetsytan **funktionshantering**. Aktivera funktionen genom att söka efter funktionsnamnet i fältet **Sök** på sidan **Funktionshantering** och välj sedan **Aktivera nu**.
 
 Mer information finns i [Redovisningsfördelningar och redovisningsjournalposter för leverantörsfakturor](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
