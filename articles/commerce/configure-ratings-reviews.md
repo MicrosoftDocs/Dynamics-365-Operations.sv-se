@@ -1,6 +1,6 @@
 ---
 title: Konfigurera omdömen och recensioner
-description: I det här avsnittet beskrivs hur du konfigurerar din näthandelsplats så att du kan visa kundomdömen och recensioner i Microsoft Dynamics 365 Commerce.
+description: I det här avsnittet beskrivs hur du konfigurerar din näthandelssajt så att du kan visa kundomdömen och recensioner i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 02/17/2020
@@ -10,29 +10,28 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: edd2082b5d2cafcb955f8e3c7762bcba523ac479
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3fcdf571378c25d71b3ef4f3baad062a25390417
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415734"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993560"
 ---
 # <a name="configure-ratings-and-reviews"></a>Konfigurera omdömen och recensioner
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du konfigurerar din näthandelsplats så att du kan visa kundomdömen och recensioner i Microsoft Dynamics 365 Commerce.
+I det här avsnittet beskrivs hur du konfigurerar din näthandelssajt så att du kan visa kundomdömen och recensioner i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Översikt
 
-Omdömen och recensioner på webbplatser för näthandel hjälper kunder lära sig mer om produkter innan de fattar ett inköpsbeslut, genom att visa vad andra kunder tycker om dessa produkter. För näthandelsplatser är omdömen och recensioner också en mekanism för att samla in kundernas feedback om produkter. 
+Omdömen och recensioner på webbplatser för näthandel hjälper kunder lära sig mer om produkter innan de fattar ett inköpsbeslut, genom att visa vad andra kunder tycker om dessa produkter. För näthandelssajter är omdömen och recensioner också en mekanism för att samla in kundernas feedback om produkter. 
 
 ## <a name="configure-a-site-to-show-ratings-and-reviews"></a>Konfigurera en webbplats att visa omdömen och recensioner
 
@@ -95,6 +94,3 @@ Information om hur du konfigurerar modulen värderingar och recensioner på prod
 [Konfigurera klassificeringar och recensioner av moduler på produktinformationssidor](ratings-reviews-modules.md)
 
 [Synkronisera produktklassificeringar i Dynamics 365 Retail](sync-product-ratings.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

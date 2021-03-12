@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d1d33dbbd37daaa75f4b64359194a2328728b27f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a2aa1980ebc1fa8412fc388e7837bc40b6902bc0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447879"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991273"
 ---
 # <a name="credit-management-setup"></a>Inställning för kredithantering 
 
@@ -145,7 +144,7 @@ Du kan skapa kriterier för automatiska kreditgränser på sidan **automatiska k
 
 1. Välj en riskgrupp som den automatiska kreditgränsen ska tilldelas till.
 2. Välj valuta för den automatiska kreditgränsen. Du kan skapa flera automatiska kreditgränser i olika valutor för samma riskgrupp.
-3. Ange intäktsbeloppet som representerar den maximala företagsintäkten som kan användas för den här automatiska kreditgränsen. När kreditgränser skapas jämförs intäktsbeloppet med ett intäktsvärde som finns på sidan **Ekonomi** (**kundreskontra \> alla kunder \> välj en kund \> allmän \> statistik \> ekonomi**). Systemet använder det senaste värdet i avsnittet **översikt**.
+3. Ange intäktsbeloppet som representerar den maximala företagsintäkten som kan användas för den här automatiska kreditgränsen. När kreditgränser skapas jämförs intäktsbeloppet med ett intäktsvärde som finns på sidan **Finance** (**kundreskontra \> alla kunder \> välj en kund \> allmän \> statistik \> ekonomi**). Systemet använder det senaste värdet i avsnittet **översikt**.
 
 Följ dessa steg för att lägga till rader som representerar den kreditgräns som kommer att genereras utifrån de valda kriterierna.
 
@@ -153,6 +152,3 @@ Följ dessa steg för att lägga till rader som representerar den kreditgräns s
 2. Välj den jämförelseoperator som definierar hur poänggruppens informationen ska utvärderas.
 3. Ange det värde som ska jämföras med värdet som angetts för poänggruppen.
 4. Ange den kreditgräns som ska tilldelas om kundinformationen matchar värdet som angetts för poänggruppen. Du kan till exempel skapa en automatisk kreditgräns för den **lägsta** poänggruppen. Om åren i företaget är en av poänggrupperna kan du definiera en rad som tilldelar en 100 000 kreditgräns om kunden har haft verksamheten fem år och en annan rad som tilldelar en 200 000 kreditgräns om kunden har haft verksamheten i 10 år.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

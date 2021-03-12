@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4f4535d08ff1bb6f83172efb4ceada5a7d02ebd4
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 17059dc2343df66e899a3c22908875be6b6de4ef
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4448235"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993248"
 ---
 # <a name="vendor-transactions-list-page"></a>Listsida för leverantörstransaktioner
 
@@ -90,13 +89,10 @@ Listsidan **leverantörstransaktioner** visar alla transaktioner för en leveran
 
 Varje fält har en annan effekt på transaktionen vid redigering:
 
-- **Redigera basdatum** - Förfallodagen och rabattdatumet ändras som om basdatumet är dokumentdatumet.
-- **Redigera förfallodatum** - Endast förfallodatumet ändras
-- **Redigera rabattdatum** - Endast rabattdatum ändras.
-- **Redigera betalningsvillkoren** - Förfallodatumet ändras utifrån basdatum och betalningsvillkoren.
-- **Redigera villkoren för kassarabatt** - Kassarabatterna ändras utifrån basdatum och kassarabattsvillkoren.
+- **Redigera basdatum** – Förfallodagen och rabattdatumet ändras som om basdatumet är dokumentdatumet.
+- **Redigera förfallodatum** – Endast förfallodatumet ändras
+- **Redigera rabattdatum** – Endast rabattdatum ändras.
+- **Redigera betalningsvillkoren** – Förfallodatumet ändras utifrån basdatum och betalningsvillkoren.
+- **Redigera villkoren för kassarabatt** – Kassarabatterna ändras utifrån basdatum och kassarabattsvillkoren.
 
 När du är klar med redigeringen av betalningdinställningar väljer du **Stäng** att spara dina ändringar.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a4ba676d9b6df69cf0a91862bcc4d2837b7cb69e
-ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
+ms.openlocfilehash: 04aca717c3f255799699d63fb74ee0b543f8c8ba
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4448167"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993273"
 ---
 # <a name="vendor-invoice-entry-workspace"></a>Arbetsyta för registrering av leverantörsfaktura
 
@@ -33,7 +32,7 @@ I det här avsnittet beskrivs hur du ställer in en arbetsyta som är relaterad 
 
 ## <a name="overview"></a>Översikt
 
-Arbetsytan **registrering av leverantörsfaktura** visar information kopplad till behandling av leverantörsfaktura. Den innehåller vyn **Mitt arbete** och sidan **Analyser - alla företag**. Vyn **Mitt arbete** visar sammanfattningsrutor, rutnät för leverantörstransaktioner och relaterad leverantörsinformation. Sidan **Analyser - alla företag** använder funktionerna i Power BI för att visa visualiseringar relaterade till leverantörsfakturor.
+Arbetsytan **registrering av leverantörsfaktura** visar information kopplad till behandling av leverantörsfaktura. Den innehåller vyn **Mitt arbete** och sidan **Analyser – alla företag**. Vyn **Mitt arbete** visar sammanfattningsrutor, rutnät för leverantörstransaktioner och relaterad leverantörsinformation. Sidan **Analyser – alla företag** använder funktionerna i Power BI för att visa visualiseringar relaterade till leverantörsfakturor.
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>Ställ in arbetsytan för att visa Power BI-innehåll
 
@@ -72,7 +71,7 @@ Panelerna i avsnittet **Sammanfattning av väntande fakturor** i vyn **Mitt arbe
 
 Om du vill använda panelen **Återställ leverantörsfakturor** måste funktionen vara aktiverad i leverantörsparametrar. Gå till **leverantörsreskontra \> parametrar för leverantörsreskontra** och ställ sedan in fliken **faktura** ange alternativet **tillåt återställning av leverantörsfaktura** till **Ja**.
 
-När funktionen är aktiverad visas också tre paneler som grupperats på arbetsytan i ett avsnitt med namnet **journaler**. Panelerna heter **Journaler**, **Journaler - tilldelade till mig** och **Fakturapool**. 
+När funktionen är aktiverad visas också tre paneler som grupperats på arbetsytan i ett avsnitt med namnet **journaler**. Panelerna heter **Journaler**, **Journaler – tilldelade till mig** och **Fakturapool**. 
 
 Informationen i avsnittet **Sammanfattning av väntande fakturor** för företaget som anges som standardföretag för inloggningen.
 
@@ -106,7 +105,7 @@ Du kan visa information om bokförda fakturor genom att använda länkarna på h
 
 ### <a name="analytics--all-companies-page"></a>Sidan analyser – alla företag
 
-När alternativet **Skicka importerade fakturor automatiskt till arbetsflödet** anges till **Ja** på sidan **Parametrar för leverantörsreskontra** kan du visa automatiseringsanalys. Sidan **Analys - alla företag** innehåller viktiga mått, t.ex. leverantörsfakturor som har godkänts av godkännaren och av företaget. Denna sida innehåller fem rapportsidor. En sida ger en översikt och de andra sidorna ger information om statistik över automatisering av leverantörsreskontra.
+När alternativet **Skicka importerade fakturor automatiskt till arbetsflödet** anges till **Ja** på sidan **Parametrar för leverantörsreskontra** kan du visa automatiseringsanalys. Sidan **Analys – alla företag** innehåller viktiga mått, t.ex. leverantörsfakturor som har godkänts av godkännaren och av företaget. Denna sida innehåller fem rapportsidor. En sida ger en översikt och de andra sidorna ger information om statistik över automatisering av leverantörsreskontra.
 
 Följande tabell visar de visulaiseringar som är tillgängliga på varje rappportsida.
 
@@ -117,6 +116,3 @@ Följande tabell visar de visulaiseringar som är tillgängliga på varje rapppo
 | Fakturor som inte kunde importeras | <ul><li>Fakturor som inte kunde importeras</li><li>Fakturor som inte kunde importeras efter företag</li></ul> |
 | Orsaker till automatiseringsfel | <ul><li>Fakturor misslyckades</li><li>Fakturorna misslyckades av företaget</li><li>Fakturor som misslyckades av leverantörsgrupp</li></ul> |
 | Arbetsflödesstatus                | <ul><li>Fakturor i arbetsflöde</li><li>Instanser av arbetsflöde för leverantörsfaktura</li><li>Tilldelning per godkännare</li><li>Arbetsflöde för leverantörsfakturor per företag</li><li>Genomsnittligt antal dagar i arbetsflödet per godkännare</li></ul> |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8bee320beb411a5ee0829a0e3170de0c7f293172
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eb2ec9969bdec985e1f8c731eade1c1a81a4766c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447974"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993024"
 ---
 # <a name="collections-management-key-concepts"></a>Viktiga begrepp för inkassohantering
 
@@ -63,9 +62,9 @@ Inkassohandläggare arbetar är en person som arbetar med kunder för att säker
 
 Följande listsidor hjälper dig att ordna information om inkasso:
 
-- **Åldersfördelade saldon** - kolumnerna på listsidan visar kundsaldon och föråldrade belopp per åldersfördelningsperiod. Den här informationen lagras i en ögonblicksbild över åldersfördelningen. Åldersfördelningsperioderna bestäms av åldersfördelningsperioddefinitionen som används. Åldersfördelningsperioddefinitionen hämtas från kundpoolen, om en kundpool har angetts för poolfrågan. Om kundpoolen inte har någon åldersfördelningsperioddefinition används standardåldersfördelningsperioddefinitionen som angetts på sidan **Parametrar för kundreskontra**. Om ingen förvald definition av åldersfördelningsperioder har angetts används den första definitionen av åldersfördelningsperioder på sidan **Definitioner för åldersfördelningsperiod**.
+- **Åldersfördelade saldon** – kolumnerna på listsidan visar kundsaldon och föråldrade belopp per åldersfördelningsperiod. Den här informationen lagras i en ögonblicksbild över åldersfördelningen. Åldersfördelningsperioderna bestäms av åldersfördelningsperioddefinitionen som används. Åldersfördelningsperioddefinitionen hämtas från kundpoolen, om en kundpool har angetts för poolfrågan. Om kundpoolen inte har någon åldersfördelningsperioddefinition används standardåldersfördelningsperioddefinitionen som angetts på sidan **Parametrar för kundreskontra**. Om ingen förvald definition av åldersfördelningsperioder har angetts används den första definitionen av åldersfördelningsperioder på sidan **Definitioner för åldersfördelningsperiod**.
 - **Inkassoaktiviteter** – kolumnerna på listsidan visar aktiviteter som identifieras som inkassoaktiviteter. Dessa aktiviteter skapas, genom att använda sidan **Inkasso**. Använd aktiviteter för att spåra inkassorelaterat arbete som du gör.
-- **Inkassoärenden** - kolumnerna på listsidan visar information om ärenden som har ärendekategori med ärendetypen **Inkasso**.
+- **Inkassoärenden** – kolumnerna på listsidan visar information om ärenden som har ärendekategori med ärendetypen **Inkasso**.
 
 ### <a name="aging-snapshots"></a>Ögonblicksbilder av åldersfördelningen
 
@@ -122,6 +121,3 @@ Du kan bearbeta NSF-betalningar, genom att välja **NSF-betalning** på sidan **
 [Kreditspärrar för försäljningsorder](./cm-sales-order-credit-holds.md)
 
 [Periodiska kredithanteringsuppgifter för kund](./cm-periodic-tasks.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

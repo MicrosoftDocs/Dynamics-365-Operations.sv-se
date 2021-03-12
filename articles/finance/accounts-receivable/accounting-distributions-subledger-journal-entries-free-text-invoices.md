@@ -1,5 +1,5 @@
 ---
-title: Redovisningsfördelningar och redovisningsjournalposter för fritextfakturor
+title: Redovisningsfördelningar och poster i redovisningsjournaler för fritextfakturor
 description: Redovisningsfördelningar används för att definiera hur ett belopp ska redovisas. Exempelvis hur intäkten, momsen eller avgifterna ska redovisas på en fritextfaktura. Varje belopp som måste redovisas när leverantörsfakturan journalförs ska ha en eller flera redovisningsfördelningar.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 515d0a9c35507fad04b776e1f0b6225ac5a162d3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f3ee26825ec48a8e8e32401ceaa8c80ecd679d2e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447856"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993214"
 ---
-# <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Redovisningsfördelningar och redovisningsjournalposter för fritextfakturor
+# <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Redovisningsfördelningar och poster i redovisningsjournal för fritextfakturor
 
 [!include [banner](../includes/banner.md)]
 
@@ -136,6 +135,3 @@ Innan du bokför en fritextfaktura kan du visa hela redovisningsposten för fakt
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

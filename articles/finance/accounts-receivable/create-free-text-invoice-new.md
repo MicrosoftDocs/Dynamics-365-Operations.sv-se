@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 1ac06e7d702ffe3a8cdb6bd2823f2ffdc055c722
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 726d4979059417871a00626c55da32fa4286cb53
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447875"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991127"
 ---
 # <a name="create-a-free-text-invoice"></a>Skapa en fritextfaktura
 
@@ -30,8 +29,8 @@ Det här avsnittet innehåller information om hur du skapar fritextfakturor. Fö
 
 ## <a name="create-a-free-text-invoice"></a>Skapa en fritextfaktura
 
-1. Gå till **Kundreskontra \> Fakturor \> Alla fritextfakturor**.
-2. Markera **Nytt**.
+1. Gå till **Kundreskontra (eller försäljningsredovisning) \> Fakturor \> Alla fritextfakturor**.
+2. Välj **Ny**.
 3. Välj ett värde i fältet **Kundkonto**.
 
     * Som standard används kontot som valts som kundkonto som fakturakonto.
@@ -85,6 +84,3 @@ När du kopierar rader kan du redigera informationen efter behov.
 Du kan skapa en fritextfaktura från en mall. När du väljer **Ny från mall** på fliken **Faktura** kan du välja ett mallnamn och kundkontot för den nya fritextfakturan. Standardvärden, till exempel betalningsvillkor och betalningsmetod, kan fyllas i automatiskt från kunden, eller du kan använda de värden som sparades i mallen.
 
 En ny fritextfaktura skapas och du kan redigera värdena som du vill.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

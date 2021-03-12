@@ -1,6 +1,6 @@
 ---
-title: Konfigurera en Dynamics 365 Commerce utvärderingsmiljö
-description: Detta ämne förklarar hur du konfigurerar utvärderingsmiljö för Microsoft Dynamics 365 Commerce efter att den är etablerad.
+title: Konfigurera en Dynamics 365 Commerce bedömningsmiljö
+description: Detta ämne förklarar hur du konfigurerar bedömningsmiljö för Microsoft Dynamics 365 Commerce efter att den är etablerad.
 author: psimolin
 manager: annbe
 ms.date: 07/16/2020
@@ -10,31 +10,30 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6a1ae960f0f530104af7bdea9a8fcb78b01571f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fa92a581a96de6bed26b4a0c6601ebd9d5088347
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415725"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993435"
 ---
-# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera en Dynamics 365 Commerce utvärderingsmiljö
+# <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera en Dynamics 365 Commerce bedömningsmiljö
 
 [!include [banner](includes/banner.md)]
 
-Detta ämne förklarar hur du konfigurerar utvärderingsmiljö för Microsoft Dynamics 365 Commerce efter att den är etablerad.
+Detta ämne förklarar hur du konfigurerar bedömningsmiljö för Microsoft Dynamics 365 Commerce efter att den är etablerad.
 
 ## <a name="overview"></a>Översikt
 
-Slutför procedurerna i det här avsnittet först när utvärderingsmiljö för Commerce har etablerats. Information om hur du konfigurerar etablerar utvärderingsmiljö för Commerce, se [Etablera en utvärderingsmiljö för Commerce](provisioning-guide.md).
+Slutför procedurerna i det här avsnittet först när bedömningsmiljö för Commerce har etablerats. Information om hur du konfigurerar etablerar bedömningsmiljö för Commerce, se [Etablera en bedömningsmiljö för Commerce](provisioning-guide.md).
 
-När din utvärderingsmiljö för Commerce har etablerats måste ytterligare konfigurationssteg för efter etableringen slutföras innan du kan börja utvärdera miljön. Om du vill utföra dessa steg måste du använda Microsoft Dynamics Lifecycle Services (LCS) och Dynamics 365 Commerce.
+När din bedömningsmiljö för Commerce har etablerats måste ytterligare konfigurationssteg för efter etableringen slutföras innan du kan börja utvärdera miljön. Om du vill utföra dessa steg måste du använda Microsoft Dynamics Lifecycle Services (LCS) och Dynamics 365 Commerce.
 
 ## <a name="before-you-start"></a>Innan du börjar
 
@@ -47,14 +46,14 @@ När din utvärderingsmiljö för Commerce har etablerats måste ytterligare kon
 
 Under åtgärderna efter etablering i Commerce-administration, se till att den juridiska personen **USRT** alltid är vald.
 
-## <a name="configure-the-point-of-sale"></a>Konfigurera kassan
+## <a name="configure-the-point-of-sale"></a>Konfigurera POS
 
 ### <a name="associate-a-worker-with-your-identity"></a>Associera arbetare med din identitet
 
 Om du vill associera en anställd med din identitet, följ dessa steg i Commerce-administration.
 
 1. Använd menyn till vänster för att gå till **moduler \> Retail och Commerce \> anställda \> arbetare**.
-1. Hitta och markera följande post: **000713 - Andrew Collette** i listan.
+1. Hitta och markera följande post: **000713 – Andrew Collette** i listan.
 1. I åtgärdsfönstret, välj **Commerce**.
 1. Välj **Associera befintlig identitet**.
 1. I fältet **E-post** (till höger om **Sök via e-post**), skriv din e-postadress.
@@ -80,7 +79,7 @@ Om du vill aktivera Cloud POS i LCS, följ dessa steg.
 
 ## <a name="set-up-your-site-in-commerce"></a>Ställ in din webbplats i Commerce
 
-Följ dessa steg om du vill börja konfigurera din utvärderingswebbplats i Commerce.
+Följ dessa steg om du vill börja konfigurera din bedömningswebbplats i Commerce.
 
 1. Logga in på webbplatsskaparen med hjälp av den URL som du antecknade när du initierade näthandel under etableringen (se [initiera näthandel](provisioning-guide.md#initialize-e-commerce)).
 1. Klicka på på webbplatsen **Fabrikam** för att öppna dialogrutan webbplatsinställningar.
@@ -121,7 +120,7 @@ Om du vill kan du också ställa in upprepningsintervallet till en (1) minut fö
 
 Om du vill köra fullständig datasynkronisering i Commerce-administration följ dessa steg.
 
-1. Med hjälp av menyn till vänster, gå till **Moduler \> Retail och Commerce \> Administrationsinställning \> Handelsschemaläggare \> Kanaldatabas**.
+1. Med hjälp av menyn till vänster, gå till **Moduler \> Retail och Commerce \> Administrationsinställning \> Commercesschemaläggare \> Kanaldatabas**.
 1. Välj kanalen med namnet **scXXXXXXXXX**.
 1. I åtgärdsfönstret, välj **Fullständig datasynkronisering**.
 1. Ange **9999** som distributionsschema.
@@ -141,21 +140,21 @@ För att kunna utföra testtransaktioner på webbplatsen kan du använda den hä
 
 ## <a name="next-steps"></a>Nästa steg
 
-När etablerings- och konfigurationsstegen är slutförda kan du börja använda din utvärderingsmiljö. Använd Commerce URL:en för webbplatsskaparen för att gå till redigeringsupplevelsen. Använd URL:en för Commerce webbplats för att gå till näthandelsplats för butikskunden.
+När etablerings- och konfigurationsstegen är slutförda kan du börja använda din bedömningsmiljö. Använd Commerce URL:en för webbplatsskaparen för att gå till redigeringsupplevelsen. Använd URL:en för Commerce webbplats för att gå till näthandelssajt för butikskunden.
 
-För att konfigurera valfria funktioner för Commerce utvärderingsmiljö efter att du har konfigurerat den finns i [Konfigurera valfria funktioner för utvärderingsmiljö för Commerce](cpe-optional-features.md).
+För att konfigurera valfria funktioner för Commerce bedömningsmiljö efter att du har konfigurerat den finns i [Konfigurera valfria funktioner för bedömningsmiljö för Commerce](cpe-optional-features.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Dynamics 365 Commerce utvärderingsmiljö – översikt](cpe-overview.md)
+[Dynamics 365 Commerce bedömningsmiljö – översikt](cpe-overview.md)
 
-[Etablera en Dynamics 365 Commerce utvärderingsmiljön](provisioning-guide.md)
+[Etablera en Dynamics 365 Commerce bedömningsmiljön](provisioning-guide.md)
 
-[Konfigurera valfria funktioner för en Dynamics 365 Commerce utvärderingsmiljö](cpe-optional-features.md)
+[Konfigurera valfria funktioner för en Dynamics 365 Commerce bedömningsmiljö](cpe-optional-features.md)
 
-[Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö](cpe-bopis.md)
+[Konfigurera BOPIS i en Dynamics 365 Commerce bedömningsmiljö](cpe-bopis.md)
 
-[Dynamics 365 Commerce utvärderingsmiljö – vanliga frågor](cpe-faq.md)
+[Dynamics 365 Commerce bedömningsmiljö – vanliga frågor](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -164,6 +163,3 @@ För att konfigurera valfria funktioner för Commerce utvärderingsmiljö efter 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce webbplatsen](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

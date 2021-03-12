@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustTable, CustBankAccounts, BankAccountTable, CustPaymMode, CustDirectDebitMandate, BankAccountTableLookUp, SrsReportViewerForm,  LogisticsAddressCityLookup, CustFreeInvoice, CustTableLookup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86d29782f616219b5d84e3567910cb28c60b65ae
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f746da0bcf2b1e0cb09af6b5e2ea61938213c924
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447901"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991052"
 ---
 # <a name="create-a-direct-debit-mandate-for-a-customer"></a>Skapa ett autogiromedgivande för en kund
 
@@ -52,12 +51,12 @@ Den här uppgifthandbok visar hur du skapar ett autogiromedgivande och använder
 19. Stäng sidan.
 20. Stäng sidan.
 
-## <a name="define-the-electronic-payment-method"></a>Definiera den elektroniska betalningsmetoden
-1. I **navigeringsfönstret**, gå till **Moduler > Kundreskontra > Betalningsinställning > Betalningsmetoder**.
+## <a name="define-the-electronic-payment-method"></a>Definiera den elektroniska betalsättet
+1. I **navigeringsfönstret**, gå till **Moduler > Kundreskontra > Betalningsinställning > Betalsätt**.
 2. Klicka på **Ny**.
 3. Skriv ett värde i fältet **Betalningsmetod**.
 4. I fältet **Beskrivning** anger du ett värde.
-5. Välj "Elektronisk betalning" i fältet **Betalningstyp**. Betalningstypen för en betalningsmetod med autogiromedgivande måste vara elektronisk betalning.
+5. Välj "Elektronisk betalning" i fältet **Betalningstyp**. Betalningstypen för ett betalsätt med autogiromedgivande måste vara elektronisk betalning.
 6. Välj Ja i fältet **Kräv medgivande**.
 7. Stäng sidan.
 
@@ -90,6 +89,3 @@ Den här uppgifthandbok visar hur du skapar ett autogiromedgivande och använder
 3. Välj kunden som du lagt till medgivande för.
 4. Ange eller välj ett värde i fältet **Autogiromedgivande-ID**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: Konfigurera valfria funktioner för en utvärderingsmiljö för Dynamics 365 Commerce
-description: Detta ämne förklarar hur du konfigurerar valfria funktioner för utvärderingsmiljö för Microsoft Dynamics 365 Commerce.
+title: Konfigurera valfria funktioner för en bedömningsmiljö för Dynamics 365 Commerce
+description: Detta ämne förklarar hur du konfigurerar valfria funktioner för bedömningsmiljö för Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
 ms.date: 07/16/2020
@@ -10,31 +10,30 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f7ba7e6de3791720458b509059f008423c73a82
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6639de250557ce9a25fc2cde3807abf64b0ddc18
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415727"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993460"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera valfria funktioner för en utvärderingsmiljö för Dynamics 365 Commerce
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera valfria funktioner för en bedömningsmiljö för Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Detta ämne förklarar hur du konfigurerar valfria funktioner för utvärderingsmiljö för Microsoft Dynamics 365 Commerce.
+Detta ämne förklarar hur du konfigurerar valfria funktioner för bedömningsmiljö för Microsoft Dynamics 365 Commerce.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
 Följande förutsättningar måste uppfyllas om du vill utvärdera e-postfunktionerna för transaktion:
 
-- Du kan ha en tillgänglig e-postserver (Simple Mail Transfer Protocol \[SMTP\]- server) som kan användas från Microsoft Azure-prenumeration där du tillhandahåller utvärderingsmiljö.
+- Du kan ha en tillgänglig e-postserver (Simple Mail Transfer Protocol \[SMTP\]- server) som kan användas från Microsoft Azure-prenumeration där du tillhandahåller bedömningsmiljö.
 - Du har serverns fullt kvalificerade domännamn (FQDN)-/IP-nummer, SMTP-portnummer och autentiseringsinformation.
 
 ## <a name="configure-the-image-back-end"></a>Konfigurera bildserver
@@ -101,7 +100,7 @@ För varje transaktionshändelse som du vill skicka e-post till måste du uppdat
 
 ## <a name="customize-email-templates"></a>Anpassa e-postmallar
 
-Du kanske vill anpassa e-postmallarna så att de använder olika bilder. Eller så kanske du vill uppdatera länkarna i mallarna så att de går till din utvärderingsmiljö. Den här proceduren förklarar hur du hämtar standardmallarna, anpassar dem och uppdaterar mallarna i systemet.
+Du kanske vill anpassa e-postmallarna så att de använder olika bilder. Eller så kanske du vill uppdatera länkarna i mallarna så att de går till din bedömningsmiljö. Den här proceduren förklarar hur du hämtar standardmallarna, anpassar dem och uppdaterar mallarna i systemet.
 
 1. Med hjälp av en webbläsare, hämta [Microsoft Dynamics 365 Commerce utvärdering av standard e-postmallar .zip-fil](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) till den lokala datorn. Den här filen innehåller följande HTML-dokument:
 
@@ -151,12 +150,12 @@ Följande token gäller för den övergripande försäljningsordern.
 Följande token ersätts med värden för varje produkt i ordningen.
 
 > [!NOTE]
-> Placera token **produktlista - start** i början av HTML-blocket som upprepas för varje produkt och placera token **produktlista - slut** i slutet av blocket.
+> Placera token **produktlista – start** i början av HTML-blocket som upprepas för varje produkt och placera token **produktlista – slut** i slutet av blocket.
 
 | Namn på token      | Token |
 |------------------------|-------|
-| Produktlista - start   | \<!--%tablebegin.salesline% --\> |
-| Produktlista - slut     | \<!--%tableend.salesline%--\> |
+| Produktlista – start   | \<!--%tablebegin.salesline% --\> |
+| Produktlista – slut     | \<!--%tableend.salesline%--\> |
 | Produktnamn           | %lineproductname% |
 | beskrivning            | %lineproductdescription% |
 | Antal               | %linequantity% |
@@ -170,15 +169,15 @@ Följande token ersätts med värden för varje produkt i ordningen.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Dynamics 365 Commerce utvärderingsmiljö – översikt](cpe-overview.md)
+[Dynamics 365 Commerce bedömningsmiljö – översikt](cpe-overview.md)
 
-[Etablera en Dynamics 365 Commerce utvärderingsmiljön](provisioning-guide.md)
+[Etablera en Dynamics 365 Commerce bedömningsmiljön](provisioning-guide.md)
 
-[Konfigurera en Dynamics 365 Commerce utvärderingsmiljö](cpe-post-provisioning.md)
+[Konfigurera en Dynamics 365 Commerce bedömningsmiljö](cpe-post-provisioning.md)
 
-[Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö](cpe-bopis.md)
+[Konfigurera BOPIS i en Dynamics 365 Commerce bedömningsmiljö](cpe-bopis.md)
 
-[Dynamics 365 Commerce utvärderingsmiljö – vanliga frågor](cpe-faq.md)
+[Dynamics 365 Commerce bedömningsmiljö – vanliga frågor](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -187,6 +186,3 @@ Följande token ersätts med värden för varje produkt i ordningen.
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce webbplatsen](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

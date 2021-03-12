@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 52069af5ca2211473d4a096ad850b5be1290bba1
-ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
+ms.openlocfilehash: 1373397c4499ed65835bcc71c6fc628ff356e4e7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4415967"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991525"
 ---
 # <a name="header-module"></a>Modul för sidhuvud
 
@@ -58,9 +57,9 @@ Följande moduler kan användas i en sidhuvudmodul:
 
 - **Vagnikon** – modulen kundvagn representerar vagnikonen, som visar antalet artiklar i vagnen vid en given tidpunkt. Mer information finns i avsnittet [modulen vagnikonen](cart-icon-module.md).
 
-- **Webbplatsväljare** - modulen webbplatsväljare gör det möjligt för användarna att bläddra mellan olika fördefinierade webbplatser, baserat på marknad, regioner och nationella inställningar. Mer information finns i avsnittet [modulen webbplatsväljare](site-selector.md).
+- **Webbplatsväljare** – modulen webbplatsväljare gör det möjligt för användarna att bläddra mellan olika fördefinierade webbplatser, baserat på marknad, regioner och nationella inställningar. Mer information finns i avsnittet [modulen webbplatsväljare](site-selector.md).
 
-- **Butiksväljare** - modulen butiksväljare kan inkluderas i huvudmodulens plats för butiksväljare. Användarna kan då bläddra bland och söka efter butiker i närheten. Användare kan också ange en prioriterad butik. Denna butik visas sedan i rubriken. Om modulen för butiksväljaren är inkluderad i huvudmodulen, måste egenskapen **Läge** ställas in för att **Hitta butiker**. Mer information finns i avsnittet [modulen butiksväljare](store-selector.md).
+- **Butiksväljare** – modulen butiksväljare kan inkluderas i huvudmodulens plats för butiksväljare. Användarna kan då bläddra bland och söka efter butiker i närheten. Användare kan också ange en prioriterad butik. Denna butik visas sedan i rubriken. Om modulen för butiksväljaren är inkluderad i huvudmodulen, måste egenskapen **Läge** ställas in för att **Hitta butiker**. Mer information finns i avsnittet [modulen butiksväljare](store-selector.md).
 
 > [!NOTE]
 > - Stöd för användning av modulen kundvagnikon i huvudmoduler finns i Dynamics 365 Commerce 10.0.11-versionen.
@@ -119,6 +118,3 @@ Om du vill garantera att ett sidhuvud visas på varje sida följer du stegen ned
 [Modul för webbplatsväljare](site-selector.md)
 
 [Modul för butiksväljare](store-selector.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

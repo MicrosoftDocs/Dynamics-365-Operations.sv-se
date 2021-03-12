@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6d19d0e10f477e498e8f0fff1f431bc4bfdd9a1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0e5c08fc09439ce3889ade4f1da44120275ee075
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447950"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993301"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Fakturaautomatisering för skannade dokument
 
@@ -82,7 +81,7 @@ Om du snabbt vill generera testdata som inkluderar fakturor och bilagor ska du f
 Fakturor som importeras med datapaket kan associeras med den juridiska person de tillhör på två sätt:
 
 + Importjobbet som bearbetar fakturan importerar den till samma företag som jobbet planerades för i arbetsytan **Datahantering**. Med andra ord fastställer företaget som utför jobbet vilket företag fakturan tillhör.
-+ När datapaket som innehåller fakturor skickas till Finance kan anroparen (det vill säga integreringsprogrammet som körs utanför Finance) ange företagets ID i HTTP-förfrågan. I det här fallet åsidosätts företagssammanhanget i Finance som jobbet körs i och fakturorna importeras till det företag som skickades via en HTTP-begäran.
++ När datapaket som innehåller fakturor skickas till Finance kan anroparen (det vill säga integreringsprogrammet som körs utanför Finance) ange företagets ID i HTTP-begäran. I det här fallet åsidosätts företagssammanhanget i Finance som jobbet körs i och fakturorna importeras till det företag som skickades via en HTTP-begäran.
 
 > [!NOTE]
 > Detta beteende är standard för datahantering. Det förklaras här, i samband med fakturor, för fullständighet.
@@ -160,7 +159,7 @@ För att du snabbt ska kunna visa bilagor till leverantörsfakturor innehåller 
 
 + **Hantering av undantag**
 + **Väntande leverantörsfakturor** sida (även tillgänglig i processen för granskning av fakturan)
-+ **Fakturajournal** sida för förfrågan (för bokförda fakturor)
++ **Fakturajournal** sida för begäran (för bokförda fakturor)
 
 Här är huvudfunktionerna i visningsprogrammet för bilagor:
 
@@ -232,6 +231,3 @@ Följande roller ger skrivskyddad åtkomst till visningsprogrammet för bilagor 
 + **Ansvarig för leverantörsreskontra** och **Chef för leverantörsreskontra** – underhålla leverantörsfakturor har tilldelats dessa roller.
 
 Som standard, om användarrollen ger redigeringsrättigheter på valfri sida, har användaren även redigeringsrättigheter i visningsprogrammet för bilagor för att markera, blockera och anteckna åtgärder. Om scenarier där en viss roll bör ha redigeringsrättigheter på sidan men inte i visningsprogrammet för bilagor kan behörighet i ovanstående lista användas i detta användningsfall.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

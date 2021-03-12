@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78c72bb9632d3501638d528822a3c30b05686796
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 644ef7cc9535522b72b03ba81a72b1070c8e2ba1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447979"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993049"
 ---
 # <a name="centralized-payments-for-accounts-receivable"></a>Centraliserade betalningar för kundreskontra
 
@@ -120,7 +119,7 @@ Fabrikam tar emot en betalning på 580,00 för Fabrikam-kundkonto 4000, Northwin
 Fabrikam tar emot en betalning på 600,00 euro (EUR) för Fabrikam-kundkonto 4000, Northwind Traders. Betalningen kvittas mot en öppen faktura för kundkonto 4000 i Fabrikam East. En transaktion för kursvinst genereras under kvittningen.
 
 -   Valutakursen för EUR till USD vid fakturadatumet: 1,2062
--   Växelkurs för EUR till USD vid betalningsdatumet: 1,2277
+-   Valutakurs för EUR till USD vid betalningsdatumet: 1,2277
 
 ### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>Faktura bokförs i Fabrikam East för Fabrikam East-kund 4000
 
@@ -159,8 +158,8 @@ Fabrikam tar emot en betalning på 600,00 euro (EUR) för Fabrikam-kundkonto 400
 ## <a name="example-4-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-gain"></a>Exempel 4: Kundbetalning av faktura från en annan juridisk person med kassarabatt och realiserad kursvinst
 Fabrikam bokför en betalning för Fabrikam-kund 4000, Northwind Traders, för en öppen faktura i Fabrikam East. Fakturan har en kassarabatt och en momstransaktion skapas. Betalningen kvittas mot den öppna Fabrikam East-fakturan. En transaktion för kursvinst genereras under kvittningen. Kassarabatten bokförs till den juridiska personen för fakturan (Fabrikam East) och kursvinsten bokförs till den juridiska personen för betalningen (Fabrikam).
 
--   Växelkurs för EUR till USD vid fakturadatumet: 1,2062
--   Växelkurs för EUR till USD vid betalningsdatumet: 1,2277
+-   Valutakurs för EUR till USD vid fakturadatumet: 1,2062
+-   Valutakurs för EUR till USD vid betalningsdatumet: 1,2277
 
 ### <a name="free-text-invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-customer-4000"></a>Fritextfaktura bokförs och en momstransaktion skapas i Fabrikam East för kund 4000
 
@@ -296,6 +295,3 @@ Fabrikam tar emot en betalning på 75,00 från kund 4000, Northwind Traders. Bet
 | Kundreskontra (Fabrikam West)    |              | 75,00         |
 | Förfaller från Fabrikam East (Fabrikam West) | 25,00        |               |
 | Kundreskontra (Fabrikam West)    |              | 25,00         |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

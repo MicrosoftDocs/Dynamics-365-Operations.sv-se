@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16361
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7091e8ba7940e358d77c69c63e26c8f3d9337713
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: d188138654ba20d8393ed4bca8124a65402daff2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4415978"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991450"
 ---
 # <a name="call-center-sales-functionality"></a>Försäljningsfunktioner för kundtjänst
 
@@ -35,7 +34,7 @@ I Dynamics 365 Commerce, är kundtjänst en typ av kanal som kan definieras i pr
 
 Kundtjänst omfattar avancerat pris och erbjudanden, kataloger, presentkort, bonusprogram och kuponger. Kundtjänstorder utnyttjas också av kassaprogrammet för att ge stöd för scenarier för orderuppfyllelse mellan kanaler.
 
-Det är viktigt att komma ihåg att medan modulen för kundtjänst kan användas inom andra branscher utanför Handel, har den aktuella versionen av kundtjänstprogrammet för inte optimerats för användning i B2B-orderbehandlingsscenarier och scenarier där order har ett stort antal försäljningsrader. Vi rekommenderar att användare som vill använda kundtjänstfunktioner för orderhantering utanför normal transaktionsbearbetning direkt till konsument, ta tillräcklig tid för att testa och verifiera att kundtjänstfunktionerna uppfyller funktionella och prestandabehov.
+Det är viktigt att komma ihåg att medan modulen för kundtjänst kan användas inom andra branscher utanför Commerce, har den aktuella versionen av kundtjänstprogrammet för inte optimerats för användning i B2B-orderbehandlingsscenarier och scenarier där order har ett stort antal försäljningsrader. Vi rekommenderar att användare som vill använda kundtjänstfunktioner för orderhantering utanför normal transaktionsbearbetning direkt till konsument, ta tillräcklig tid för att testa och verifiera att kundtjänstfunktionerna uppfyller funktionella och prestandabehov.
 
 Förutom att stödja skapande av order ger kundtjänstmodulen även ett användarvänligt kundtjänstprogram som gör det enklare för användare att hitta kundkonton och granska alla relaterade kundorderdata och attribut. Skärmen för kundtjänst har utformats så att användare snabbt får tillgång till orderrelaterade data för att besvara vanliga orderrelaterade frågor som tagits emot från kunder.
 
@@ -54,7 +53,7 @@ Den här sidan innehåller länkar till relevanta handlingar som är relaterade 
 
 ## <a name="configure-payment-processing"></a>Konfigurera betalningsbearbetning
 
-[Betalningsmetoder i kundcenter](work-with-payments.md)
+[Betalsätt i kundcenter](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a>Konfigurera leveranssätt
 
@@ -69,6 +68,3 @@ Den här sidan innehåller länkar till relevanta handlingar som är relaterade 
 ## <a name="configure-continuity-programs"></a>Konfigurera kontinuitetsprogram
 
 [Ställa in kontinuitetsprogram för kundtjänster](set-up-continuity-program.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
