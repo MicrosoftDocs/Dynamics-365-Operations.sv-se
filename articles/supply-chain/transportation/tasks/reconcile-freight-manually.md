@@ -11,53 +11,52 @@ ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench, TMSFreightBillDetail, TMSInvoiceTable, TMSFreightBillInvoiceReconcile, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily, TMSFBDetailReconcile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fc4fc51955544df4d0156a4c83bcc5b5a0e13df3
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f8679a729dc17e3ee85468b459da3956a92160ce
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438042"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974070"
 ---
-# <a name="reconcile-freight-manually"></a><span data-ttu-id="20db3-103">Stäm av fraktsedel manuellt</span><span class="sxs-lookup"><span data-stu-id="20db3-103">Reconcile freight manually</span></span>
+# <a name="reconcile-freight-manually"></a><span data-ttu-id="445b1-103">Stäm av fraktsedel manuellt</span><span class="sxs-lookup"><span data-stu-id="445b1-103">Reconcile freight manually</span></span>
 
-<span data-ttu-id="20db3-104">[!include [banner](../../includes/banner.md)]]</span><span class="sxs-lookup"><span data-stu-id="20db3-104">[!include [banner](../../includes/banner.md)]]</span></span>
+<span data-ttu-id="445b1-104">[!include [banner](../../includes/banner.md)]]</span><span class="sxs-lookup"><span data-stu-id="445b1-104">[!include [banner](../../includes/banner.md)]]</span></span>
 
-<span data-ttu-id="20db3-105">I den här proceduren visas hur du stämmer av frakt manuellt.</span><span class="sxs-lookup"><span data-stu-id="20db3-105">This procedure shows how to reconcile freight manually.</span></span> <span data-ttu-id="20db3-106">Detta görs normalt av en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="20db3-106">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="20db3-107">Du kan använda den här proceduren i demonstrationsdataföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="20db3-107">You can use this procedure in the USMF demo data company.</span></span>
+<span data-ttu-id="445b1-105">I den här proceduren visas hur du stämmer av frakt manuellt.</span><span class="sxs-lookup"><span data-stu-id="445b1-105">This procedure shows how to reconcile freight manually.</span></span> <span data-ttu-id="445b1-106">Detta görs normalt av en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="445b1-106">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="445b1-107">Du kan använda den här proceduren i demonstrationsdataföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="445b1-107">You can use this procedure in the USMF demo data company.</span></span>
 
 
-## <a name="select-a-load-to-reconcile"></a><span data-ttu-id="20db3-108">Välj en beläggning att stämma av</span><span class="sxs-lookup"><span data-stu-id="20db3-108">Select a load to reconcile</span></span>
-1. <span data-ttu-id="20db3-109">Gå till Transporthantering > Planering > Workbench för lastplanering.</span><span class="sxs-lookup"><span data-stu-id="20db3-109">Go to Transportation management > Planning > Load planning workbench.</span></span>
-2. <span data-ttu-id="20db3-110">Avmarkera kryssrutan Clear the Hide shipped and received.</span><span class="sxs-lookup"><span data-stu-id="20db3-110">Clear the Hide shipped and received check box.</span></span> 
-3. <span data-ttu-id="20db3-111">Välj beläggningen som har beläggningen ID 00006 i listan.</span><span class="sxs-lookup"><span data-stu-id="20db3-111">In the list, select the load that has load ID 00006.</span></span>
+## <a name="select-a-load-to-reconcile"></a><span data-ttu-id="445b1-108">Välj en beläggning att stämma av</span><span class="sxs-lookup"><span data-stu-id="445b1-108">Select a load to reconcile</span></span>
+1. <span data-ttu-id="445b1-109">Gå till Transporthantering > Planering > Workbench för lastplanering.</span><span class="sxs-lookup"><span data-stu-id="445b1-109">Go to Transportation management > Planning > Load planning workbench.</span></span>
+2. <span data-ttu-id="445b1-110">Avmarkera kryssrutan Clear the Hide shipped and received.</span><span class="sxs-lookup"><span data-stu-id="445b1-110">Clear the Hide shipped and received check box.</span></span> 
+3. <span data-ttu-id="445b1-111">Välj beläggningen som har beläggningen ID 00006 i listan.</span><span class="sxs-lookup"><span data-stu-id="445b1-111">In the list, select the load that has load ID 00006.</span></span>
 
-## <a name="create-a-carrier-invoice"></a><span data-ttu-id="20db3-112">Skapa en transportföretagsfaktura</span><span class="sxs-lookup"><span data-stu-id="20db3-112">Create a carrier invoice</span></span>
-<span data-ttu-id="20db3-113">Om du stämmer av frakten manuellt och inte får transportfakturor automatiskt, kan du skapa en faktura baserat på frakträkningen.</span><span class="sxs-lookup"><span data-stu-id="20db3-113">If you reconcile freight manually and don't receive carrier invoices automatically, you can create an invoice based on the freight bill.</span></span>  
-1. <span data-ttu-id="20db3-114">Klicka på Relaterad information.</span><span class="sxs-lookup"><span data-stu-id="20db3-114">Click Related information.</span></span>
-2. <span data-ttu-id="20db3-115">Klicka på Freight bill details.</span><span class="sxs-lookup"><span data-stu-id="20db3-115">Click Freight bill details.</span></span>
-3. <span data-ttu-id="20db3-116">Klicka på Generate freight bill invoice.</span><span class="sxs-lookup"><span data-stu-id="20db3-116">Click Generate freight bill invoice.</span></span>
-4. <span data-ttu-id="20db3-117">Ange ett värde i fältet Faktura.</span><span class="sxs-lookup"><span data-stu-id="20db3-117">In the Invoice field, type a value.</span></span>
-5. <span data-ttu-id="20db3-118">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="20db3-118">Click OK.</span></span>
+## <a name="create-a-carrier-invoice"></a><span data-ttu-id="445b1-112">Skapa en transportföretagsfaktura</span><span class="sxs-lookup"><span data-stu-id="445b1-112">Create a carrier invoice</span></span>
+<span data-ttu-id="445b1-113">Om du stämmer av frakten manuellt och inte får transportfakturor automatiskt, kan du skapa en faktura baserat på frakträkningen.</span><span class="sxs-lookup"><span data-stu-id="445b1-113">If you reconcile freight manually and don't receive carrier invoices automatically, you can create an invoice based on the freight bill.</span></span>  
+1. <span data-ttu-id="445b1-114">Klicka på Relaterad information.</span><span class="sxs-lookup"><span data-stu-id="445b1-114">Click Related information.</span></span>
+2. <span data-ttu-id="445b1-115">Klicka på Freight bill details.</span><span class="sxs-lookup"><span data-stu-id="445b1-115">Click Freight bill details.</span></span>
+3. <span data-ttu-id="445b1-116">Klicka på Generate freight bill invoice.</span><span class="sxs-lookup"><span data-stu-id="445b1-116">Click Generate freight bill invoice.</span></span>
+4. <span data-ttu-id="445b1-117">Ange ett värde i fältet Faktura.</span><span class="sxs-lookup"><span data-stu-id="445b1-117">In the Invoice field, type a value.</span></span>
+5. <span data-ttu-id="445b1-118">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="445b1-118">Click OK.</span></span>
 
-## <a name="reconcile-the-invoice"></a><span data-ttu-id="20db3-119">Stäm av fakturan</span><span class="sxs-lookup"><span data-stu-id="20db3-119">Reconcile the invoice</span></span>
-<span data-ttu-id="20db3-120">När du stämmer av en transportföretagsfaktura och en frakträkning görs detta rad för rad.</span><span class="sxs-lookup"><span data-stu-id="20db3-120">When you reconcile a carrier invoice and a freight bill, this is done line by line.</span></span>  
-1. <span data-ttu-id="20db3-121">Klicka på Match freight bills and invoices.</span><span class="sxs-lookup"><span data-stu-id="20db3-121">Click Match freight bills and invoices.</span></span>
-2. <span data-ttu-id="20db3-122">Expandera avsnittet Invoice details.</span><span class="sxs-lookup"><span data-stu-id="20db3-122">Expand the Invoice details section.</span></span>
-3. <span data-ttu-id="20db3-123">Expandera avsnittet Unmatched freight bill details.</span><span class="sxs-lookup"><span data-stu-id="20db3-123">Expand the Unmatched freight bill details section.</span></span>
-4. <span data-ttu-id="20db3-124">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="20db3-124">In the list, mark the selected row.</span></span>
-5. <span data-ttu-id="20db3-125">Klicka på Match.</span><span class="sxs-lookup"><span data-stu-id="20db3-125">Click Match.</span></span>
-6. <span data-ttu-id="20db3-126">Expandera avsnittet Matched freight bill details.</span><span class="sxs-lookup"><span data-stu-id="20db3-126">Expand the Matched freight bill details section.</span></span>
+## <a name="reconcile-the-invoice"></a><span data-ttu-id="445b1-119">Stäm av fakturan</span><span class="sxs-lookup"><span data-stu-id="445b1-119">Reconcile the invoice</span></span>
+<span data-ttu-id="445b1-120">När du stämmer av en transportföretagsfaktura och en frakträkning görs detta rad för rad.</span><span class="sxs-lookup"><span data-stu-id="445b1-120">When you reconcile a carrier invoice and a freight bill, this is done line by line.</span></span>  
+1. <span data-ttu-id="445b1-121">Klicka på Match freight bills and invoices.</span><span class="sxs-lookup"><span data-stu-id="445b1-121">Click Match freight bills and invoices.</span></span>
+2. <span data-ttu-id="445b1-122">Expandera avsnittet Invoice details.</span><span class="sxs-lookup"><span data-stu-id="445b1-122">Expand the Invoice details section.</span></span>
+3. <span data-ttu-id="445b1-123">Expandera avsnittet Unmatched freight bill details.</span><span class="sxs-lookup"><span data-stu-id="445b1-123">Expand the Unmatched freight bill details section.</span></span>
+4. <span data-ttu-id="445b1-124">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="445b1-124">In the list, mark the selected row.</span></span>
+5. <span data-ttu-id="445b1-125">Klicka på Match.</span><span class="sxs-lookup"><span data-stu-id="445b1-125">Click Match.</span></span>
+6. <span data-ttu-id="445b1-126">Expandera avsnittet Matched freight bill details.</span><span class="sxs-lookup"><span data-stu-id="445b1-126">Expand the Matched freight bill details section.</span></span>
 
-## <a name="submit-the-invoice-for-approval"></a><span data-ttu-id="20db3-127">Skicka fakturan för godkännande</span><span class="sxs-lookup"><span data-stu-id="20db3-127">Submit the invoice for approval</span></span>
-1. <span data-ttu-id="20db3-128">Klicka på Submit for approval.</span><span class="sxs-lookup"><span data-stu-id="20db3-128">Click Submit for approval.</span></span>
-2. <span data-ttu-id="20db3-129">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="20db3-129">Close the page.</span></span>
-3. <span data-ttu-id="20db3-130">Rensa kryssrutan Hide approved.</span><span class="sxs-lookup"><span data-stu-id="20db3-130">Clear the Hide approved check box.</span></span> 
-4. <span data-ttu-id="20db3-131">Klicka på Vendor invoice journals.</span><span class="sxs-lookup"><span data-stu-id="20db3-131">Click Vendor invoice journals.</span></span>
-5. <span data-ttu-id="20db3-132">Klicka för att följa länken i fältet Reference journal number.</span><span class="sxs-lookup"><span data-stu-id="20db3-132">Click to follow the link in the Reference journal number field.</span></span>
-6. <span data-ttu-id="20db3-133">Klicka på Rader.</span><span class="sxs-lookup"><span data-stu-id="20db3-133">Click Lines.</span></span>
+## <a name="submit-the-invoice-for-approval"></a><span data-ttu-id="445b1-127">Skicka fakturan för godkännande</span><span class="sxs-lookup"><span data-stu-id="445b1-127">Submit the invoice for approval</span></span>
+1. <span data-ttu-id="445b1-128">Klicka på Submit for approval.</span><span class="sxs-lookup"><span data-stu-id="445b1-128">Click Submit for approval.</span></span>
+2. <span data-ttu-id="445b1-129">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="445b1-129">Close the page.</span></span>
+3. <span data-ttu-id="445b1-130">Rensa kryssrutan Hide approved.</span><span class="sxs-lookup"><span data-stu-id="445b1-130">Clear the Hide approved check box.</span></span> 
+4. <span data-ttu-id="445b1-131">Klicka på Vendor invoice journals.</span><span class="sxs-lookup"><span data-stu-id="445b1-131">Click Vendor invoice journals.</span></span>
+5. <span data-ttu-id="445b1-132">Klicka för att följa länken i fältet Reference journal number.</span><span class="sxs-lookup"><span data-stu-id="445b1-132">Click to follow the link in the Reference journal number field.</span></span>
+6. <span data-ttu-id="445b1-133">Klicka på Rader.</span><span class="sxs-lookup"><span data-stu-id="445b1-133">Click Lines.</span></span>
 

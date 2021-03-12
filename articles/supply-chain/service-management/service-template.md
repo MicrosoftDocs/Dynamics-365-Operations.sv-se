@@ -11,50 +11,49 @@ ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8a92d67afe5fd427d1bc272c59e459cb1547d22
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3e1353b3576270e9f0c202b85628fae4f49c882f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437349"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974295"
 ---
-# <a name="service-templates"></a><span data-ttu-id="19a64-103">Servicemallar</span><span class="sxs-lookup"><span data-stu-id="19a64-103">Service templates</span></span>
+# <a name="service-templates"></a><span data-ttu-id="bfbf0-103">Servicemallar</span><span class="sxs-lookup"><span data-stu-id="bfbf0-103">Service templates</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="19a64-104">Du kan definiera ett serviceavtal som en mall och senare kopiera raderna i mallen till ett annat serviceavtal eller till en serviceorder.</span><span class="sxs-lookup"><span data-stu-id="19a64-104">You can define a service agreement as a template and copy the lines of the template later into another service agreement or into a service order.</span></span>
+<span data-ttu-id="bfbf0-104">Du kan definiera ett serviceavtal som en mall och senare kopiera raderna i mallen till ett annat serviceavtal eller till en serviceorder.</span><span class="sxs-lookup"><span data-stu-id="bfbf0-104">You can define a service agreement as a template and copy the lines of the template later into another service agreement or into a service order.</span></span>
 
-## <a name="example"></a><span data-ttu-id="19a64-105">Exempel</span><span class="sxs-lookup"><span data-stu-id="19a64-105">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bfbf0-105">Exempel</span><span class="sxs-lookup"><span data-stu-id="bfbf0-105">Example</span></span>
 
-<span data-ttu-id="19a64-106">En kund som du tillhandahåller en tjänst för har identiska servicehissar på fem olika platser.</span><span class="sxs-lookup"><span data-stu-id="19a64-106">A customer for whom you provide service has identical service elevators at five different locations.</span></span>
+<span data-ttu-id="bfbf0-106">En kund som du tillhandahåller en tjänst för har identiska servicehissar på fem olika platser.</span><span class="sxs-lookup"><span data-stu-id="bfbf0-106">A customer for whom you provide service has identical service elevators at five different locations.</span></span>
 
-<span data-ttu-id="19a64-107">Du vill ställa in fem serviceavtal för kunden, en för varje site.</span><span class="sxs-lookup"><span data-stu-id="19a64-107">You want to set up five service agreements for the customer, one for each site.</span></span>
-<span data-ttu-id="19a64-108">För att minska inställningsarbetet, och vara säker på att inställningsinformationen i serviceavtalen blir identisk, skapar du ett serviceavtal och anger den som en mall för servicearbetet på hissarna.</span><span class="sxs-lookup"><span data-stu-id="19a64-108">To limit repetitive setup work, and to make sure that the setup information in the service agreements is identical, you create a service agreement and specify it as a template for the service work on the elevators.</span></span>
+<span data-ttu-id="bfbf0-107">Du vill ställa in fem serviceavtal för kunden, en för varje site.</span><span class="sxs-lookup"><span data-stu-id="bfbf0-107">You want to set up five service agreements for the customer, one for each site.</span></span>
+<span data-ttu-id="bfbf0-108">För att minska inställningsarbetet, och vara säker på att inställningsinformationen i serviceavtalen blir identisk, skapar du ett serviceavtal och anger den som en mall för servicearbetet på hissarna.</span><span class="sxs-lookup"><span data-stu-id="bfbf0-108">To limit repetitive setup work, and to make sure that the setup information in the service agreements is identical, you create a service agreement and specify it as a template for the service work on the elevators.</span></span>
 
-<span data-ttu-id="19a64-109">Du kan nu kopiera mallraderna till fem nya serviceavtal, så att varje serviceavtal fylls i med raderna från mallen.</span><span class="sxs-lookup"><span data-stu-id="19a64-109">You can now copy the template lines into the five new service agreements, so that each service agreement is populated with the lines from the template.</span></span>
+<span data-ttu-id="bfbf0-109">Du kan nu kopiera mallraderna till fem nya serviceavtal, så att varje serviceavtal fylls i med raderna från mallen.</span><span class="sxs-lookup"><span data-stu-id="bfbf0-109">You can now copy the template lines into the five new service agreements, so that each service agreement is populated with the lines from the template.</span></span>
 
-## <a name="create-a-template"></a><span data-ttu-id="19a64-110">Skapa en mall</span><span class="sxs-lookup"><span data-stu-id="19a64-110">Create a template</span></span>
+## <a name="create-a-template"></a><span data-ttu-id="bfbf0-110">Skapa en mall</span><span class="sxs-lookup"><span data-stu-id="bfbf0-110">Create a template</span></span>
 
-<span data-ttu-id="19a64-111">När du skapar en servicemall skapar du ett serviceavtal, skapar de rader som behövs och kopplar sedan serviceavtalet till en servicemallgrupp.</span><span class="sxs-lookup"><span data-stu-id="19a64-111">When you create a service template, you create a service agreement, create the required lines on it, and attach the service agreement to a service-template group.</span></span>
+<span data-ttu-id="bfbf0-111">När du skapar en servicemall skapar du ett serviceavtal, skapar de rader som behövs och kopplar sedan serviceavtalet till en servicemallgrupp.</span><span class="sxs-lookup"><span data-stu-id="bfbf0-111">When you create a service template, you create a service agreement, create the required lines on it, and attach the service agreement to a service-template group.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="19a64-112">Ett serviceavtal kan definieras som en mall bara om det inte har några serviceorder kopplade.</span><span class="sxs-lookup"><span data-stu-id="19a64-112">A service agreement can be defined as a template only if it has no service orders attached to it.</span></span> <span data-ttu-id="19a64-113">Inga serviceorder kan heller skapas från ett serviceavtal som definierats som en mall.</span><span class="sxs-lookup"><span data-stu-id="19a64-113">Also, no service orders can be generated from a service agreement that is defined as a template.</span></span>
+> <span data-ttu-id="bfbf0-112">Ett serviceavtal kan definieras som en mall bara om det inte har några serviceorder kopplade.</span><span class="sxs-lookup"><span data-stu-id="bfbf0-112">A service agreement can be defined as a template only if it has no service orders attached to it.</span></span> <span data-ttu-id="bfbf0-113">Inga serviceorder kan heller skapas från ett serviceavtal som definierats som en mall.</span><span class="sxs-lookup"><span data-stu-id="bfbf0-113">Also, no service orders can be generated from a service agreement that is defined as a template.</span></span>
 
-## <a name="copy-template-lines"></a><span data-ttu-id="19a64-114">Kopiera mallrader</span><span class="sxs-lookup"><span data-stu-id="19a64-114">Copy template lines</span></span>
+## <a name="copy-template-lines"></a><span data-ttu-id="bfbf0-114">Kopiera mallrader</span><span class="sxs-lookup"><span data-stu-id="bfbf0-114">Copy template lines</span></span>
 
-<span data-ttu-id="19a64-115">Du kan kopiera mallrader från en servicemall till ett annat serviceavtal eller till en serviceorder.</span><span class="sxs-lookup"><span data-stu-id="19a64-115">You can copy template lines from a service template into another service agreement or into a service order.</span></span>
+<span data-ttu-id="bfbf0-115">Du kan kopiera mallrader från en servicemall till ett annat serviceavtal eller till en serviceorder.</span><span class="sxs-lookup"><span data-stu-id="bfbf0-115">You can copy template lines from a service template into another service agreement or into a service order.</span></span>
 
-<span data-ttu-id="19a64-116">När du kopierar mallrader till dina serviceorder eller serviceavtal visas mallgrupperna i en trädvy där varje grupp kan utvidgas.</span><span class="sxs-lookup"><span data-stu-id="19a64-116">When you copy template lines into your service orders or service agreements, your template groups are displayed in a tree view in which each group can be expanded.</span></span> <span data-ttu-id="19a64-117">I den här vyn kan du visa alla mallar och mallrader.</span><span class="sxs-lookup"><span data-stu-id="19a64-117">This display lets you view each template and template line.</span></span>
+<span data-ttu-id="bfbf0-116">När du kopierar mallrader till dina serviceorder eller serviceavtal visas mallgrupperna i en trädvy där varje grupp kan utvidgas.</span><span class="sxs-lookup"><span data-stu-id="bfbf0-116">When you copy template lines into your service orders or service agreements, your template groups are displayed in a tree view in which each group can be expanded.</span></span> <span data-ttu-id="bfbf0-117">I den här vyn kan du visa alla mallar och mallrader.</span><span class="sxs-lookup"><span data-stu-id="bfbf0-117">This display lets you view each template and template line.</span></span>
 
-<span data-ttu-id="19a64-118">Det är enklare att ta reda på vilka mallrader som du bör kopiera om du grupperar mallarna enligt namn som beskriver hur de ska användas.</span><span class="sxs-lookup"><span data-stu-id="19a64-118">It is easier to determine the service-template lines that you want to copy if you have grouped the templates under names that reflect the use of the templates.</span></span>
+<span data-ttu-id="bfbf0-118">Det är enklare att ta reda på vilka mallrader som du bör kopiera om du grupperar mallarna enligt namn som beskriver hur de ska användas.</span><span class="sxs-lookup"><span data-stu-id="bfbf0-118">It is easier to determine the service-template lines that you want to copy if you have grouped the templates under names that reflect the use of the templates.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="19a64-119">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="19a64-119">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="bfbf0-119">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="bfbf0-119">Related topics</span></span>
 
-[<span data-ttu-id="19a64-120">Kopiera servicemallsrader</span><span class="sxs-lookup"><span data-stu-id="19a64-120">Copy service templates lines</span></span>](copy-service-template-lines.md)
+[<span data-ttu-id="bfbf0-120">Kopiera servicemallsrader</span><span class="sxs-lookup"><span data-stu-id="bfbf0-120">Copy service templates lines</span></span>](copy-service-template-lines.md)
