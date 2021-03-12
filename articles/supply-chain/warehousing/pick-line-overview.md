@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 3a2c8a69a2c64214a38a654042ea2f62575e7f52
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 433ed2152c47dbe698a640b099cb34727fe63452
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437549"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989703"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Konfigurera ett menyalternativ för mobila enheter för att visa en översikt över plockrader
 
@@ -69,6 +68,3 @@ För att konfigurera ett menyalternativ för mobila enheter för att visa en öv
     - Använd de återstående fälten **Visa fält** för att lägga till upp till sju ytterligare visningsfält efter behov. I varje fält **Visningsfält** väljer du namnet på ett fält i arbetsraden. På varje rad visas sedan ett värde för det fältet. Värdena kommer att visas i den ordning du väljer här. Du kan lämna några av fälten **Visningsfält** tomma om du inte behöver alla sju värden.
 
 1. I åtgärdsfönstret, välj **Spara** och stäng sedan sidan **Fältlista**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

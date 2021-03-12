@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 7171
 ms.assetid: 381fc309-b32a-4927-b5b8-fa1c31b0bd72
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8617785ea969f9f4facaccdf81cfaf5344c30839
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2dcb51c730da3f2ad155675f06f5c1cd9e8476d2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447919"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988674"
 ---
 # <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>Momssatser baserade på fälten Bidragsunderlag och Beräkningsmetoder
 
@@ -49,7 +48,7 @@ Momssatserna ställs in med följande intervall.
 |--------------------|----------|
 | 0 – 50             | 30 %      |
 | 50 – 100           | 20 %      |
-| 100 - 0 (&gt; 100) | 10 %      |
+| 100 – 0 (&gt; 100) | 10 %      |
 
 > [!NOTE]                                                                                                             
 > Den övre gränsen på noll (0) i det sista intervallet innebär att alla belopp över 100 inkluderas i intervallet.
@@ -91,7 +90,7 @@ Momssatserna ställs in med följande intervall.
 |--------------------|----------|
 | 0 – 50             | 30 %      |
 | 50 – 100           | 20 %      |
-| 100 - 0 (&gt; 100) | 10 %      |
+| 100 – 0 (&gt; 100) | 10 %      |
 
 Bidragsunderlag: **Nettobelopp per enhet** 
 
@@ -136,7 +135,7 @@ Momssatserna ställs in med följande intervall.
 |--------------------|----------|
 | 0 – 50             | 30 %      |
 | 50 – 100           | 20 %      |
-| 100 - 0 (&gt; 100) | 10 %      |
+| 100 – 0 (&gt; 100) | 10 %      |
 
 Bidragsunderlag: **Bruttobelopp per rad** Beräkningsmetod: **Intervall** Det finns också en annan momskod som beräknas för en särskild avgift på 5,00 för varje lampa. Avgiften läggs till nettobeloppet innan momsen beräknas. Du köper 8 lampor som kostar 25,00 styck. Nettobeloppet för fakturaraden är 200,00. Bruttobeloppet för fakturaraden är 8 × 25,00 + 8 × 5,00 = 240,00. Momsen beräknas på följande sätt: Total moms = 50 × 0,30 + 50 × 0,20 + 140 × 0,10 = 15 + 20 + 14 = 39,00 Total avgift = 5,00 × 8 = 40,00 Totalt fakturabelopp = 200,00 + 39,00 + 40,00 = 279,00
 
@@ -159,7 +158,7 @@ Momssatserna ställs in med följande intervall.
 |--------------------|----------|
 | 0 – 50             | 30 %      |
 | 50 – 100           | 20 %      |
-| 100 - 0 (&gt; 100) | 10 %      |
+| 100 – 0 (&gt; 100) | 10 %      |
 
 Bidragsunderlag: **Bruttobelopp per enhet** Det finns en särskild avgift på 5,00 för varje lampa. Avgiften läggs till nettobeloppet innan momsen beräknas. Du köper 8 lampor som kostar 25,00 styck. Bruttobeloppet per enhet är 30,00. Momsen beräknas på följande sätt: Moms per enhet = 30 × 30% = 9,00 Total moms = 9,00 × 8 = 72,00 Total avgift = 5,00 × 8 = 40,00 Totalt fakturabelopp = 200,00 + 72,00 + 40,00 = 312,00
 
@@ -177,7 +176,7 @@ Momssatserna ställs in med följande intervall.
 |--------------------|----------|
 | 0 – 50             | 30 %      |
 | 50 – 100           | 20 %      |
-| 100 - 0 (&gt; 100) | 10 %      |
+| 100 – 0 (&gt; 100) | 10 %      |
 
 Bidragsunderlag: **Fakturasumma inklusive andra momsbelopp** Beräkningsmetod: **Intervall**   
 Det finns en särskild avgift på 5, 00 för varje lampa. Avgiften läggs till nettobeloppet innan momsen beräknas. Du köper 8 lampor som kostar 25,00 styck. Nettobeloppet för fakturan är 200,00. Bruttobeloppet för fakturan är 200,00 + (8 × 5,00) = 240,00. Momsen beräknas på följande sätt: Total moms = 50 × 0,30 + 50 × 0,20 + 140 × 0,10 = 15 + 10 + 14 = 39,00 Total avgift = 5,00 × 8 = 40,00 Totalt fakturabelopp = 200,00 + 39,00 + 40,00 = 279,00
@@ -186,6 +185,3 @@ Mer information finns i [Alternativ för hela belopp och intervallberäkning fö
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

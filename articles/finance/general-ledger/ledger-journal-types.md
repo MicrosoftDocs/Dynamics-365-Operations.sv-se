@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalSetup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 15631
 ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b9ab4eeacc54d2d0ea8e7dc9eb3dd846ffc9e29
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f215b31df120d152a84e994fbe9de739385ce836
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447922"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988737"
 ---
 # <a name="ledger-journal-types"></a>Redovisningsjournaltyper
 
@@ -52,12 +51,12 @@ I det här avsnittet beskrivs de journaltyper där du kan ställa in redovisning
 | Löneutbetalning              | Utfärda betalningar som baseras på lön betalar uttalanden. Du kan inte ange transaktioner i journalen manuellt. Du måste skapa löneutdrag och sedan skicka dessa utdrag för betalning.                                                                                                                                                              |                                                                |
 | Periodisk                          | Skapa periodiska transaktioner för den periodiska journalen.                                                                                                                                                                                                                                                                                                      | Periodiska journaler                                              |
 | Bokför anläggningstillgångar                 | Bokföra anläggningstillgångar.                                                                                                                                                                                                                                                                                                                              | Anläggningstillgångar                                                   |
-| Projekt - utgifter                | Skapa utgiftstransaktioner för projekt.                                                                                                                                                                                                                                                                                                                        | Expense                                                        |
+| Projekt – utgifter                | Skapa utgiftstransaktioner för projekt.                                                                                                                                                                                                                                                                                                                        | Expense                                                        |
 | Justering av rapporteringsvaluta     | Skapa justeringar i rapporteringsvaluta för saldon på redovisningskonton.               | Justeringsjournaler för rapporteringsvaluta                         |
 | Statistiktransaktioner            | Skapa statistiktransaktioner.                                                                                                                                                                                                                                                                                                                            |                                                                |
 | Leverantörsbankremissa            | Skapa en remissafil för en skuldsedel som kan skickas till din organisations bank.                                                                                                                                                                                                                                                                      | Remissajournal                                             |
 | Leverantörsutbetalning               | Skapa leverantörsutbetalningstransaktioner.                                                                                                                                                                                                                                                                                                                    | Betalningsjournal                                                |
-| Leverantör ställer ut skuldsedel       | Dra leverantörsskuldsedlar som en betalningsmetod. För att använda denna typ av journal, **Skapa och kontera rita journalen automatiskt när man konterar fakturor** på **betalningssätt – säljare** sida.                                                                                                                                          | Journal för utställda skuldsedlar                                   |
+| Leverantör ställer ut skuldsedel       | Dra leverantörsskuldsedlar som ett betalsätt. För att använda denna typ av journal, **Skapa och kontera rita journalen automatiskt när man konterar fakturor** på **betalningssätt – säljare** sida.                                                                                                                                          | Journal för utställda skuldsedlar                                   |
 | Leverantörsfakturapool utan bokföring | Skapa leverantör faktura transaktioner som ännu inte har bokförts till en tillfällig ankomst.                                                                                                                                                                                                                                                             | Leverantörsfakturapool utan bokföringsdetaljer                  |
 | Leverantörsfakturapool               | Skapa transaktioner för leverantörsfakturapool.                                                                                                                                                                                                                                                                                                                    |                                                                |
 | Registrering av leverantörsfaktura          | Bokföra leverantörsfakturor som är i en journal.                                                                                                                                                                                                                                                                                                                 | Fakturajournal                                                |
@@ -68,6 +67,3 @@ I det här avsnittet beskrivs de journaltyper där du kan ställa in redovisning
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

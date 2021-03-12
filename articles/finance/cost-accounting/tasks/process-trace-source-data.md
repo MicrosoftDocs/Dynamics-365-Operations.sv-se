@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a23443c985ac681c8c31956ae5ea3e513337577
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4363a51549503327e7decccf38c82db6e75acd88
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448139"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990652"
 ---
 # <a name="process-and-trace-source-data"></a>Bearbeta och spåra källdata
 
@@ -45,6 +44,3 @@ All databearbetning körs med jobb. För varje jobb och dataprovider skapas en j
     * Välj Fiscal 2017 Period 9 i det här exemplet.  
 14. Klicka på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

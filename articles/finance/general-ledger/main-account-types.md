@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: MainAccount
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3381
 ms.assetid: e55b9c0e-597b-46d4-b453-81c780939b6d
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: acbe3d6c10891ba8b290f3efdd8e5aab3ca2c1c3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5f33cb0fa65c834435cc612070391a6837b7e675
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447918"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988637"
 ---
 # <a name="main-account-types"></a>Huvudkontotyper
 
@@ -31,7 +30,7 @@ ms.locfileid: "4447918"
 
 Huvudkontotyperna bestämmer hur ett huvudkonto används i kontoplanen.
 
-Du måste välja en huvudkontotyp när du skapar ett huvudkonto på sidan Huvudkonton - kontoplan.
+Du måste välja en huvudkontotyp när du skapar ett huvudkonto på sidan Huvudkonton – kontoplan.
 -   Resultat, Intäkter och Utgifter – Dessa huvudkonton används som bokföringskonton. Vinst- och förlustkontona används för att bokföra intäkter och utgifter. Summan av all vinst och förlust-, intäkts- och utgiftskonton avgör resultatet vid årets slut. Huvudkontona för Intäkt och Utgift har samma funktion som huvudkontona för Vinst och Förlust.
 -   Balansräkning, Tillgångar, Skulder och Eget kapital – dessa huvudkonton används som transaktionskonton för att registrera beloppen som en juridisk persons tillgångar respektive skulder.
 -   Summa – Dessa huvudkonton används för att lägga till kontointervall. Konfigurera Totalhuvudkontotyp genom att använda sidan Kontointervall, som visar summan av gruppsaldona för alla kontointervall. Du får åtkomst till sidan Kontointervall genom att klicka på Summor på fliken Allmänt när du väljer Totalkontotyp.
@@ -41,6 +40,3 @@ För mer information, se [Ställ in huvudkontokategorier](tasks/set-up-main-acco
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

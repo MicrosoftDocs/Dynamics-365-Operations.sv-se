@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,20 +17,20 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7dc9f85bf90e6ddf9badf656eb136e28a71b036f
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: 3051a3b5895a46801a1a154324ec9872dfcb82a0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594123"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989564"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Verksamhet för online- och offlinekassor (POS)
 
 [!include [banner](includes/banner.md)]
 
-De flesta åtgärder som användaren vidtar i kassan anses vara operationer. Operationer konfigureras och hanteras i formuläret i Dynamics 365 Commerce backoffice. Många operationer kan läggas till i knapparna i kassaknappsatsen. Användarna kan sedan välja knappar för att starta operationer och utföra deras funktioner. Andra åtgärder som ingår i kassahuvudprogrammet och startas från knappar på skärmen eller tillsammans med andra arbetsflöden eller processer.
+De flesta åtgärder som användaren vidtar i POS anses vara operationer. Operationer konfigureras och hanteras i formuläret i Dynamics 365 Commerce backoffice. Många operationer kan läggas till i knapparna i kassaknappsatsen. Användarna kan sedan välja knappar för att starta operationer och utföra deras funktioner. Andra åtgärder som ingår i kassahuvudprogrammet och startas från knappar på skärmen eller tillsammans med andra arbetsflöden eller processer.
 
-Följande tabell innehåller information om de åtgärder som är tillgängliga i Modern POS och Cloud POS. Tabellen aner också var i programmet som operationerna kan anropas och om de är tillgängliga när kassan är i offlineläge.
+Följande tabell innehåller information om de åtgärder som är tillgängliga i Modern POS och Cloud POS. Tabellen aner också var i programmet som operationerna kan anropas och om de är tillgängliga när POS är i offlineläge.
 
 Vissa åtgärder är inte tillgängliga i eller Modern POS och Cloud POS. Vissa av dessa åtgärder är antingen språkspecifika åtgärder som kräver ytterligare tillägg och konfiguration. Övriga är funktioner Microsoft Dynamics AX 2012 som inte stöds för närvarande.
 
@@ -42,7 +41,7 @@ Följande kolumner anger var operationerna kan startas:
 - **Välkomstskärmen** – operationen kan startas från kassaknappsatser som har konfigurerats på kassavälkomstskärmen.
 
 > [!NOTE]
-> Åtgärderna i listan nedan gäller den senaste versionen av Handel. Vissa operationer kan ha ändrats eller kanske inte är tillgängliga i tidigare versioner.
+> Åtgärderna i listan nedan gäller den senaste versionen av Commerce. Vissa operationer kan ha ändrats eller kanske inte är tillgängliga i tidigare versioner.
 
 | ID | Åtgärd | beskrivning | Knappsats | Transaktionsskärm | Välkomstskärm | Tillgänglig offline | Språkspecifik  |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
@@ -51,7 +50,7 @@ Följande kolumner anger var operationerna kan startas:
 | 135 | Lägg till anknytning från lista | Lägg till en anknytning till en transaktion i en lista. | Ja | Ja | Ja | Ja | Nr |
 | 137 | Välj en anknytning till en kund | Lägg till en anknytning till en kund på sidan **kunduppgifter**. | Nr | Nr | Nr | Ja | Nr |
 | 138 | Ta bort anknytning från kund | Ta bort en anknytning på sidan **kunduppgifter**. | Nr | Nr | Nr | Ja | Nr |
-| 643 | Lägg till kupongkod | Lägg till en kupong genom att ange dess kod i kassan. | Ja | Ja | Nej | Ja | Nej |
+| 643 | Lägg till kupongkod | Lägg till en kupong genom att ange dess kod i POS. | Ja | Ja | Nej | Ja | Nej |
 | 141 | Lägg till huvudavgifter | Lägg till en tilläggsavgift i orderrubriken. | Ja | Ja | Nej | Nej| Nej |
 | 141 | Lägg till radavgifter | Lägga till en tilläggsavgift till en vald försäljningsrad. | Ja | Ja | Nej | Nej| Nej |
 | 117 | Lägg till förmånskort | Uppmana användaren att ange ett förmånskortnummer som ska läggas till den aktuella transaktionen. | Ja | Ja | Nr | Ja | Nr |
@@ -84,7 +83,7 @@ Följande kolumner anger var operationerna kan startas:
 | 1 100 | Insättning på kundkonto | Utför en betalning till en kunds konto. | Ja | Ja | Ja | Ja | Ja |
 | 612 | Lägga till kund | Den här operationen låter användaren skapa en ny kundpost. | Ja | Ja | Ja | Ja† | Nr |
 | 603 | Rensa kund | Ta bort kunden från den aktuella transaktionen. | Ja | Ja | Nr | Ja | Nr |
-| 602 | Sök efter kund | Denna operation låter användaren söka efter en kundpost genom att navigera till kundsöksidan i kassan. | Ja | Ja | Ja | Ja | Nr |
+| 602 | Sök efter kund | Denna operation låter användaren söka efter en kundpost genom att navigera till kundsöksidan i POS. | Ja | Ja | Ja | Ja | Nr |
 | 609 | Kundtransaktioner | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Nr |
 | 917 | Status för databasanslutning | Den här operationen låter användaren visa aktuella anslutningsinställningar och växla mellan online- och offlinelägen. | Ja | Ja | Ja | Ja | Nr |
 | 1200 | Stäm av startbelopp | Deklarera det belopp som finns i kassalådan när dagen eller skiftet startar. | Ja | Ja | Ja | Ja | Nr |
@@ -95,8 +94,8 @@ Följande kolumner anger var operationerna kan startas:
 | 624 | Visa återbetalningsbelopp | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Ja |
 | 513 | Visa summa | Visa summan för transaktionen på kundskärmen. | Ja | Ja | Ja | Ja | Nr |
 | 623 | Redigera kund | Redigera detaljer för den aktuella kunden. | Ja | Ja | Nr | Nr | Nr |
-| 614 | Redigera kundorder | Återkalla den valda ordern så att den går att ändra i kassan. | Nr | Nr | Nr | Nr | Nr |
-| 615 | Redigera offert | Återkalla den valda offerten så att den går att ändra i kassan. | Nr | Nr | Nr | Nr | Nr |
+| 614 | Redigera kundorder | Återkalla den valda ordern så att den går att ändra i POS. | Nr | Nr | Nr | Nr | Nr |
+| 615 | Redigera offert | Återkalla den valda offerten så att den går att ändra i POS. | Nr | Nr | Nr | Nr | Nr |
 | 518 | Utgiftskonton | Registrera pengar som tas bort ur kassalådan för tillfälliga utgifter. | Ja | Ja | Ja | Ja | Nr |
 | 919 | Förlängd inloggning | Tilldela eller ta bort behörighet att logga in genom att skanna en streckkod eller genom att dra ett kort. | Ja | Ja | Ja | Ja | Nej |
 | 1201 | Växelpost | Den här operationen låter användaren lägga till ytterligare pengar i den aktuella kassalådan eller skift. | Ja | Ja | Ja | Ja | Nr |
@@ -133,7 +132,7 @@ Följande kolumner anger var operationerna kan startas:
 | 204 | Checkbetalning | Ta emot en check som betalning. | Ja | Ja | Nr | Ja | Nr |
 | 213 | Tillgodokvittobetalning | Acceptera en kreditnota (verifikation) som har utfärdats av butiken. | Ja | Ja | Nr | Nr | Nr |
 | 203 | Betalning i annan valuta | Ta emot betalning i olika valutor. | Ja | Ja | Nr | Ja | Nr |
-| 202 | Kundkontobetalning | Läs in transaktionen till en kunds konto. Den här betalningsmetoden är inte giltig för kundens orderinsättningar. | Ja | Ja | Nr | Nr | Nr |
+| 202 | Kundkontobetalning | Läs in transaktionen till en kunds konto. Den här betalsättet är inte giltig för kundens orderinsättningar. | Ja | Ja | Nr | Nr | Nr |
 | 214 | Presentkortsbetalning | Acceptera ett presentkort som har utfärdats av butiken. | Ja | Ja | Nr | Nr | Nr |
 | 207 | Betala förmån | Acceptera ett förmånskort för betalning och lös in poäng mot produkter som uppfyller kraven. | Ja | Ja | Nr | Nr | Nr |
 | 634 | Betalningshistorik | Visa kundens betalningshistorik för den aktuella kundordern. | Ja | Ja | Nr | Nr | Nr |
@@ -150,7 +149,7 @@ Följande kolumner anger var operationerna kan startas:
 | 1056 | Skriv ut X | Skriv ut X rapport för aktuellt skift. | Ja | Ja | Ja | Nr | Nr |
 | 103 | Produktkommentar | Lägg till en kommentar på den valda radartikeln i transaktionen. | Ja | Ja | Nr | Ja | Nr |
 | 100 | Produktförsäljning | Lägg till en specifierad produkt i transaktionen. | Ja | Ja | Ja | Ja | Nr |
-| 108 | Produktsökning | Denna operation låter användaren söka efter en produkt genom att navigera till produktsöksidan i kassan. | Ja | Ja | Ja | Ja | Nr |
+| 108 | Produktsökning | Denna operation låter användaren söka efter en produkt genom att navigera till produktsöksidan i POS. | Ja | Ja | Ja | Ja | Nr |
 | 633 | Utgångsdatum för offert | Den här operationen låter användaren visa eller ändra förfallodatum för en försäljningsoffert. | Ja | Ja | Nr | Ja\* | Nr |
 | 627 | Beräkna om | Beräkna om alla kundorderrader och skatter, baserat på den aktuella konfigurationen. | Ja | Ja | Nej | Ja\* | Nej |
 | 143 | Räkna om avgifter | Beräkna om de automatiska avgifter som tillämpas på ordern. | Ja | Ja | Nej | Nej| Nej |
@@ -161,12 +160,12 @@ Följande kolumner anger var operationerna kan startas:
 | 644 | Ta bort kupongkod | Uppmana användaren till att ta bort kuponger genom att markera dem i en lista över kuponger som associeras med transaktionen. | Ja | Ja | Nr | Ja | Nr |
 | 1057 | Skriv ut Z igen | Skriv ut Z-rapporten igen för föregående skift eller ett markerat skift. | Ja | Ja | Ja | Nr | Nr |
 | 1216 | Ange ett nytt lösenord | Den här operationen låter användaren med behörighet att återställa lösenord för en annan medarbetares med hjälp av ett tillfälligt lösenord. | Ja | Ja | Ja | Nr | Nr |
-| 1219 | Öppna URL i kassan | Denna åtgärd låter användaren öppna en administratörkonfigurerad URL i kassan. | Ja | Ja | Ja | Ja | Nr | 
+| 1219 | Öppna URL i POS | Denna åtgärd låter användaren öppna en administratörkonfigurerad URL i POS. | Ja | Ja | Ja | Ja | Nr | 
 | 109 | Returnera produkt | Utför en retur av enskilda produkter. Nästa skannade produkt visas som en returnerad produkt som har en negativ kvantitet och pris. | Ja | Ja | Nr | Ja | Nr |
 | 114 | Returtransaktion | Återställa en tidigare transaktion genom dess kvittonummer för att returnera några eller alla produkter. | Ja | Ja | Ja | Ja§ | Nr |
-| 1211 | Lämna pengar i kassaskåp | Flytta pengar från kassan till ett kassaskåp. | Ja | Ja | Ja | Ja | Nr |
+| 1211 | Lämna pengar i kassaskåp | Flytta pengar från POS till ett kassaskåp. | Ja | Ja | Ja | Ja | Nr |
 | 516 | Försäljningsfaktura | Den här åtgärden kan kunden göra betalningar till den valda fakturan. | Ja | Ja | Nr | Nr | Nr |
-| 502 | Säljare | Den här operation låter användaren ange värdet **Mottagare** på en försäljningsorder för kundorder i kassan. | Ja | Ja | Nej | Ja\* | Nej |
+| 502 | Säljare | Den här operation låter användaren ange värdet **Mottagare** på en försäljningsorder för kundorder i POS. | Ja | Ja | Nej | Ja\* | Nej |
 | 2000 | Hantering av tidsplan | Åtgärden stöds inte ännu. | Ja | Ja | Ja | Nej | Nej |
 | 2001 | Tidsplanera begäranden | Åtgärden stöds inte ännu. | Ja | Ja | Ja | Nej | Nej |
 | 622 | Sök efter order | Denna operation låter användare förkonfigurera kassaknappar för att utföra sökningar efter artikel, kund eller kategori. | Ja | Ja | Ja | Ja | Nr |
@@ -182,8 +181,8 @@ Följande kolumner anger var operationerna kan startas:
 | 401 | Undermeny | Denna operation tar användaren till en annan länkad knappsats. | Ja | Ja | Ja | Ja | Nr |
 | 1054 | Skjut upp skift | Avbryt det aktuella skiftet så att ett nytt eller annat skift kan aktiveras på den aktuella journalen. | Ja | Ja | Ja | Nr | Nr |
 | 503 | Skjut upp transaktion | Avbryt den aktuella transaktionen, så att den kan återställas senare i butiken. | Ja | Ja | Nr | Ja‡ | Nr |
-| 1004 | Uppgiftsregistrering | Öppna uppgiftsregistrering om du vill registrera procedurmässig steg i kassan. | Nr | Nr | Nr | Ja | Nr |
-| 1052 | Kassaavstämning | Den här operationen låter användaren ange penningbelopp i kassan för varje räknat betalningssätt. | Ja | Ja | Ja | Ja | Nr |
+| 1004 | Uppgiftsregistrering | Öppna uppgiftsregistrering om du vill registrera procedurmässig steg i POS. | Nr | Nr | Nr | Ja | Nr |
+| 1052 | Kassaavstämning | Den här operationen låter användaren ange penningbelopp i POS för varje räknat betalningssätt. | Ja | Ja | Ja | Ja | Nr |
 | 1210 | Borttagning av betalningsmedel | Den här operationen låter användaren ta bort pengar från den aktuella kassalådan eller skift. | Ja | Ja | Ja | Ja | Nr |
 | 920 | Stämpelklocka | Den här operationen låter användare stämpla in och stämpla ut från arbetsskift och raster. | Ja | Ja | Ja | Nr | Nr |
 | 302 | Totalt rabattbelopp | Ange ett rabattbeloppet för transaktionen. Denna operation gäller endast för artiklar som kan ha rabatt och bara i de angivna rabattgränserna. | Ja | Ja | Nr | Ja | Nr |
@@ -202,13 +201,10 @@ Följande kolumner anger var operationerna kan startas:
 
 \*Operationen är endast tillgänglig i offlineläge när en kundorder eller försäljningsoffert skapas, och om offlineskapade av kundorder och försäljningsofferter som har konfigurerats i kassafunktionsprofilen. Operationen kan inte utföras när order skapas med Realtidstjänst eller när en order har återkallats eller redigeras.
 
-† Operationen kan utföras i frånkopplat läge bara när kassan är konfigurerad för att skapa kunder offline i kassafunktionalitetsprofilen.
+† Operationen kan utföras i frånkopplat läge bara när POS är konfigurerad för att skapa kunder offline i kassafunktionalitetsprofilen.
 
-‡ När kassan är offline kan uppskjutna transaktioner endast återställas från aktuella kassans offlinedatabas. Användare kan inte göra uppehåll och återkalla transaktioner genom journaler.
+‡ När POS är offline kan uppskjutna transaktioner endast återställas från aktuella kassans offlinedatabas. Användare kan inte göra uppehåll och återkalla transaktioner genom journaler.
 
-§ När kassan är offline kan endast transaktioner i den aktuella offlinedatabasen återställas för retur.
+§ När POS är offline kan endast transaktioner i den aktuella offlinedatabasen återställas för retur.
 
-\*\* När kassan är offline kan endast transaktioner i den aktuella offlinekanaldatabasen visas i journalen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+\*\* När POS är offline kan endast transaktioner i den aktuella offlinekanaldatabasen visas i journalen.

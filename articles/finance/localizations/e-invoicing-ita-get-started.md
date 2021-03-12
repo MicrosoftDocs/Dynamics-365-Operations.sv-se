@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c513141f820c95fe3842478361693701f1e3641b
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 08d41244d3ec785127db8f69e37dd522a463c388
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4448186"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988550"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Kom igång med tillägget elektronisk fakturering för Italien
 
@@ -194,7 +193,7 @@ Under inställningar av Finance ska du utföra följande uppgifter:
 
 Under bearbetningen i Finance ska du utföra följande uppgifter:
 
-1. Skapa italienska e-fakturor via tillägget för elektronisk fakturering
+1. Skapa italienska e-fakturor via tillägget Elektronisk fakturering
 2. Visa körningsloggarna och granska resultaten av bearbetningen
 
 ### <a name="generate-electronic-invoices"></a>Generera elektroniska fakturor
@@ -204,7 +203,7 @@ När du har aktiverat funktionen **konfigurerbara integreringstillägg för elek
 Du kan skicka dokumenten manuellt, baserat på efterfrågan på e-fakturadokument.
 
 > [!NOTE]
-> Innan du fortsätter kontrollerar du att inställningarna som krävs för italienska e-fakturorna är slutförda. Mer information finns i [Elektroniska kundfakturor](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Tänk på att vissa av de inställningssteg som beskrivs i det ämnet kanske inte är tillgängliga på grund av aktivering av tillägget för elektronisk fakturering.
+> Innan du fortsätter kontrollerar du att inställningarna som krävs för italienska e-fakturorna är slutförda. Mer information finns i [Elektroniska kundfakturor](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Tänk på att vissa av de inställningssteg som beskrivs i det ämnet kanske inte är tillgängliga på grund av aktivering av tillägget Elektronisk fakturering.
 
 1. Gå till **organisationsadministration \> periodisk \> elektroniska dokument \> skicka elektroniska dokument**.
 2. Ställ alltid in alternativet **Skicka dokument igen** till **Nej** för första inlämningen av ett dokument. Om du måste skicka ett dokument på nytt via tjänsten ställer du in det här alternativet på **Ja**.
@@ -221,7 +220,7 @@ Du kan skicka dokumenten manuellt, baserat på efterfrågan på e-fakturadokumen
 2. Välj **OK** för att stänga dialogrutan **Förfrågning**.
 3. Välj **OK** för att skicka de valda dokumenten.
 
-> ![OBS] Under ditt första försök att skicka ett dokument via tjänsten uppmanas du att bekräfta anslutningen med tillägget för elektronisk fakturering. Välj **Klicka här för att ansluta till tjänsten inlämning av elektroniska dokument**.
+> [OBS!] Under ditt första försök att skicka ett dokument via tjänsten uppmanas du att bekräfta anslutningen med tillägget Elektronisk fakturering. Välj **Klicka här för att ansluta till tjänsten inlämning av elektroniska dokument**.
 
 #### <a name="view-submission-logs"></a>Visa överföringsloggar
 
@@ -246,6 +245,3 @@ Du kan visa överföringsloggar för alla skickade dokument.
 - [Tillägg för elektronisk fakturering: översikt](e-invoicing-service-overview.md)
 - [Kom igång med tillägget elektronisk fakturering](e-invoicing-get-started.md)
 - [Ställ in tillägg för elektroniska fakturor](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 26ffed1f49d9087ca767aab1b8cac41b099f73cb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f13e8b8229bbd9e174e5bde7858a468048ba309b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447942"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990096"
 ---
 # <a name="nf-e-custom-certificate-validation"></a>NF-e anpassad certifikatvalidering
 
@@ -36,6 +35,3 @@ Egenskapen **Serverns syfte att autentiseras** från certifikat V5 utfärdas av 
 Den här uppdateringen möjliggör en alternativ lösning för certifikat validering, vilket innebär att det är möjligt att upprätta en säker kommunikation.
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

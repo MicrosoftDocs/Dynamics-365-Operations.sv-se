@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8b71b571b03e8fa2648c90258bbcaa020baeabc0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 04126c0cddd1242e9607274e35f4b7626ad573d2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447855"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990474"
 ---
 # <a name="dual-currency"></a>Dubbel valuta
 
@@ -59,12 +58,12 @@ På grund a denna ändring måste valutakurserna nu finnas mellan CAD och USD oc
 
 ## <a name="reports-and-inquiries"></a>Rapporter och förfrågningar
 
-Olika rapporter och förfrågningarna visar nu både rapporteringsvalutabeloppen och redovisningsvalutabeloppen. Alla rapporter och förfrågan har inte uppdaterats. Till exempel har rapporter som visar belopp i transaktionsvalutan inte ändrats.
+Olika rapporter och förfrågningarna visar nu både rapporteringsvalutabeloppen och redovisningsvalutabeloppen. Alla rapporter och begäran har inte uppdaterats. Till exempel har rapporter som visar belopp i transaktionsvalutan inte ändrats.
 
 Ändringarna följer ett av två mönster:
 
-- Om rapporten eller förfrågan har tillräckligt med utrymme för att visa belopp i både redovisningsvalutan och rapporteringsvalutan, lades rapporteringsvalutabeloppen till.
-- Då rapporten eller förfrågan inte har tillräckligt med utrymme för att visa belopp i båda valutor, lades ett alternativ till så att användarna kan välja vilken valuta som ska visas.
+- Om rapporten eller begäran har tillräckligt med utrymme för att visa belopp i både redovisningsvalutan och rapporteringsvalutan, lades rapporteringsvalutabeloppen till.
+- Då rapporten eller begäran inte har tillräckligt med utrymme för att visa belopp i båda valutor, lades ett alternativ till så att användarna kan välja vilken valuta som ska visas.
 
 För olika rapporter och förfrågningarna lades även logik till för att ignorera rapporteringsvalutabeloppen om rapporteringsvalutan är samma som redovisningsvalutan eller om rapporteringsvaluta inte definierades i redovisningen för den juridiska personen.
 
@@ -73,7 +72,7 @@ För olika rapporter och förfrågningarna lades även logik till för att ignor
 De ekonomiska journalerna, till exempel redovisningsjournal och leverantörsfakturajournal har uppdaterats så att de innehåller ytterligare information om rapporteringsvalutan. Totalbelopp för verifikationen och journalen visas nu i rapporteringsvalutan. Dessutom visas nu information om rapporteringsvalutans valutakurs på fliken **Allmänt** på journalraderna. Därför kan du åsidosätta den rapporteringsvalutans valutakurs när du registrerar transaktioner.
 
 ## <a name="vendor-invoices-sales-orders-and-sales-agreements"></a>Leverantörsfakturor, försäljningsorder och försäljningsavtal
-Leverantörsfakturor, försäljningsorder och försäljningsavtal har uppdaterats så att de inkluderar en fast valutakurs för rapporteringsvalutan. Du kan definiera en fast valutakurs för både redovisningsvalutan och rapporteringsvalutan när transaktionsvalutan är olika. När redovisningsvalutan och rapporteringsvalutan är desamma, behålls den fasta valutakursen med redovisningsvalutans fasta tariff som rapport valutans fasta tariff. Den fasta valutakursen för rapporterings valutan kan inte ändras för den här konfigurationen. När bokföringsvalutan och rapporteringsvalutan skiljer sig från kan en fast växelkurs definieras för både bokföringsvaluta och rapporteringsvaluta under transaktionspost. Om rapporteringsvalutan inte har definierats i redovisningen aktiveras inte fältet **Rapporteringsvaluta fast valutakurs** och inget rapporteringsvalutabelopp beräknas.
+Leverantörsfakturor, försäljningsorder och försäljningsavtal har uppdaterats så att de inkluderar en fast valutakurs för rapporteringsvalutan. Du kan definiera en fast valutakurs för både redovisningsvalutan och rapporteringsvalutan när transaktionsvalutan är olika. När redovisningsvalutan och rapporteringsvalutan är desamma, behålls den fasta valutakursen med redovisningsvalutans fasta tariff som rapport valutans fasta tariff. Den fasta valutakursen för rapporterings valutan kan inte ändras för den här konfigurationen. När bokföringsvalutan och rapporteringsvalutan skiljer sig från kan en fast valutakurs definieras för både bokföringsvaluta och rapporteringsvaluta under transaktionspost. Om rapporteringsvalutan inte har definierats i redovisningen aktiveras inte fältet **Rapporteringsvaluta fast valutakurs** och inget rapporteringsvalutabelopp beräknas.
 
 ## <a name="module-changes"></a>Moduländringar
 
@@ -172,7 +171,7 @@ Dessutom har större ändringar gjorts i avskrivningsprocessen. Ändringarna kr�
     - Guiden visar transaktioner för alla anläggningstillgångsförteckningar i det aktuella företaget som har ett rapporteringsvalutabeloppet på 0 (noll). Endast transaktioner som bokfördes före uppgraderingen inkluderas.
     - Guiden drar **inte** rapporteringsvalutabelopp från redovisningen. Som beskrevs i det förra fallet använde rapporteringsvalutabelopp som ursprungligen bokfördes i redovisningen spotkurs felaktigt. Dessa belopp skulle inte visas i anläggningstillgångens redovisningsjournal, eftersom nästa avskrivningsberäkning kommer att använda de felaktiga beloppen. I stället hittar guiden valutakursen vid tidpunkten för den första anskaffningen. Sedan används den valutakursen för att rekommendera rapporteringsvalutabelopp som ska bokföras i redovisningsjournalen. Till exempel, här är vad guiden kan visa för det föregående scenariot.
 
-        | Anläggningstillgång | Bok      | transaktionstyp | Transaktionsdatum | Valuta | Belopp i transaktionsvaluta | Tid  | Växelkurs | Rapporteringsvalutabelopp |
+        | Anläggningstillgång | Bok      | transaktionstyp | Transaktionsdatum | Valuta | Belopp i transaktionsvaluta | Tid  | Valutakurs | Rapporteringsvalutabelopp |
         |-------------|-----------|------------------|------------------|----------|--------------------------------|---------|-----------|---------------------------|
         | BUIL-00001  | 200\_SLLT | Anskaffning      | 6/3/2016         | DKK      | 1 000 000                      | 500,000 | 2.5       | 250,000                   |
         | BUIL-00001  | 200\_SLLT | Avskrivning     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
@@ -209,6 +208,3 @@ I redovisningskonsolidering har ett nytt alternativ lagts till för att konsolid
 -  Du kan nu välja om redovisningsvalutan eller rapportvalutan från källföretaget ska användas som transaktionsvaluta i konsolideringsföretaget.
 
 - Redovisnings- eller rapportvalutabeloppen från källföretaget kopieras direkt till redovisnings- eller rapporteringsvalutabeloppen i konsolideringsföretaget om någon av valutorna är samma. Redovisnings- och rapportvalutabeloppen i konsolideringsföretaget beräknas med valutakursen om ingen av valutorna är samma.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

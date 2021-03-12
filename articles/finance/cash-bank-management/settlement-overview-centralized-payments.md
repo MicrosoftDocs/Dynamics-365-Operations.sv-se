@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 222414
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea661441c6c810d144d423b054c1bef058cdd9d6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e66d5aac0c2ed966727ef569ac5345fcd91b841e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447996"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989212"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>Kvittningsöversikt för centraliserade betalningar
 
@@ -75,7 +74,7 @@ Det resulterande betalningsbeloppet överförs till betalningsjournalraden när 
 
 ### <a name="posting-for-gain-or-loss-because-of-different-accounting-currencies"></a>Bokföring av vinst eller förlust till följd av olika redovisningsvalutor
 
-Om det finns en vinst eller en förlust vid valutaväxling kommer denna att bokföras för den juridiska person som angetts för fältet **Bokför valutakursvinst eller -förlust** på sidan **Koncernintern redovisning** för den juridiska personen för betalningen. Vinst- eller förlustbeloppet konverteras till redovisningsvalutan för den juridiska person där vinst- eller förlustbeloppet bokförs, med den växelkurs som definierats för den juridiska personen.
+Om det finns en vinst eller en förlust vid valutaväxling kommer denna att bokföras för den juridiska person som angetts för fältet **Bokför valutakursvinst eller -förlust** på sidan **Koncernintern redovisning** för den juridiska personen för betalningen. Vinst- eller förlustbeloppet konverteras till redovisningsvalutan för den juridiska person där vinst- eller förlustbeloppet bokförs, med den valutakurs som definierats för den juridiska personen.
 
 ## <a name="cash-discounts"></a>Kassarabatter
 
@@ -94,7 +93,7 @@ Om administrationsinställningen för kassarabatt är ospecificerad (Unspecific)
 -   Överbetalningen kvittas mot en eller flera fakturor som har en kassarabatt.
 -   Kassarabatten bokförs för samma juridiska person som överbetalningen.
 
-I alla andra situationer bokförs över - eller underbetalningar till det automatiska kontot för kundkassarabatt, leverantörkassarabatt eller öresdifferens i redovisningsvaluta.
+I alla andra situationer bokförs över – eller underbetalningar till det automatiska kontot för kundkassarabatt, leverantörkassarabatt eller öresdifferens i redovisningsvaluta.
 
 ## <a name="sales-tax"></a>Moms
 Momstransaktioner ligger kvar i den juridiska person där de ursprungligen bokförts. 
@@ -108,6 +107,3 @@ För leverantörsbetalningar använder förfaller till- och förfaller från-tra
 
 ## <a name="withholding-tax"></a>Källskatt
 Leverantörskontot som är associerat till fakturan används för att avgöra om källskatt ska beräknas. Om källskatt gäller beräknas denna i den juridiska person som är associerad med fakturan. Om de juridiska personer använder olika valutor, används valutakursen från den juridiska person som är kopplad till fakturan.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

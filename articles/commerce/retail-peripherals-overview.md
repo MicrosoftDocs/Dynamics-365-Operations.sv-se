@@ -11,37 +11,36 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 268444
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dd2ce6b223c99d890691d5fdb9f93a5ceaf33a0d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7ab4ab4d04433ca03ac90acc583afceea2014e8e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415952"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989539"
 ---
 # <a name="peripherals"></a>Kringutrustning
 
 [!include[banner](includes/banner.md)]
 
-Det här avsnittet förklarar koncepten som är relaterade till kringutrustning i butik. Här beskrivs olika sätt att ansluta kringutrustning till kassan och komponenterna som är ansvariga för anslutning till kassan.
+Det här avsnittet förklarar koncepten som är relaterade till kringutrustning i butik. Här beskrivs olika sätt att ansluta kringutrustning till POS och komponenterna som är ansvariga för anslutning till POS.
 
 ## <a name="concepts"></a>Begrepp
 
 ### <a name="pos-registers"></a>Kassaregister
 
-Navigering: klicka på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassor**. Kassaregistret är en enhet som används för att definiera egenskaperna hos en viss instans av kassan. Dessa egenskaper omfattar maskinvaruprofil eller inställningar för kringutrustning som ska användas i kassan, butiken som kassan har mappats till och den visuella upplevelsen när användare loggar in på den kassan.
+Navigering: klicka på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassor**. Kassaregistret är en enhet som används för att definiera egenskaperna hos en viss instans av POS. Dessa egenskaper omfattar maskinvaruprofil eller inställningar för kringutrustning som ska användas i POS, butiken som POS har mappats till och den visuella upplevelsen när användare loggar in på den POS.
 
 ### <a name="devices"></a>Enheter
 
 Navigering: klicka på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Enheter**. En enhet är en entitet som representerar en fysisk instans av en enhet som är mappad till ett kassaregister. När en enhet skapas är den mappad till ett kassaregister. Enhetsentiteten spårar information om när ett kassaregister aktiveras, vilken typ av klient som används och programpaketet som har distribuerats till en viss enhet. 
 
-Enheter som kan mappas till följande programtyper: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone Retail Modern POS - Android och Retail Modern POS – iOS.
+Enheter som kan mappas till följande programtyper: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone Retail Modern POS – Android och Retail Modern POS – iOS.
 
 ### <a name="modern-pos"></a>Modern POS
 
@@ -80,7 +79,7 @@ Skrivare som är traditionella kassakvittoskrivare och helsideskrivare. Skrivare
 
 ### <a name="scanner"></a>Skanner
 
-Upp till två streckkodsläsare kan användas samtidigt. Den här funktionen stöder scenarier där en skanner som är mer mobil krävs för att söka igenom stora eller tunga artiklar, medan en fast inbäddad skanner används för de flesta objekt med standardstorlek för att snabba på utcheckningstider. Skannrar kan stödjas genom OPOS Universal Windows Platform (UWP) eller tangentbordbaserat gränssnitt. USB och Bluetooth kan användas för att ansluta en skanner till en dator.
+Upp till två streckkodsläsare kan användas samtidigt. Den här funktionen stöder scenarier där en skanner som är mer mobil krävs för att söka igenom stora eller tunga artiklar, medan en fast inbäddad skanner används för de flesta objekt med standardstorlek för att snabba på kassatider. Skannrar kan stödjas genom OPOS Universal Windows Platform (UWP) eller tangentbordbaserat gränssnitt. USB och Bluetooth kan användas för att ansluta en skanner till en dator.
 
 ### <a name="msr"></a>MSR
 
@@ -100,11 +99,11 @@ Enheter för digital signatur kan anslutas direkt till en dator via USB genom at
 
 ### <a name="scale"></a>Skala
 
-Skalor kan anslutas till datorn via USP genom att använda OPOS-drivrutiner. När en produkt som är markerad som en "Vägd" produkt läggs till i en transaktion, läser kassan vikten från skalan, lägger till produkten i transaktionen och använder den kvantitet som skalan har angett.
+Skalor kan anslutas till datorn via USP genom att använda OPOS-drivrutiner. När en produkt som är markerad som en "Vägd" produkt läggs till i en transaktion, läser POS vikten från skalan, lägger till produkten i transaktionen och använder den kvantitet som skalan har angett.
 
 ### <a name="pin-pad"></a>PIN-knappsats
 
-Knappsatser för personligt identifieringsnummer (PIN) stöds via OPOS, men de måste hanteras via en betalningsanslutning.
+Knappsatser för persondientifieringsnummer (PIN) stöds via OPOS, men de måste hanteras via en betalningsanslutning.
 
 ### <a name="secondary-display"></a>Sekundär bildskärm
 
@@ -117,9 +116,9 @@ Stöd för betalningsenheten implementeras via betalningskopplingen. Betalningse
 ## <a name="supported-interfaces"></a>Gränssnitt som stöds
 ### <a name="opos"></a>OPOS
 
-För att garantera att den största mängden enheter kan användas med Handel är OLE för kassabranschstandard den primära enhetsplattformen för kringutrustning i butik som stöds. OLE för kassastandarden anses vara framställt av National Retail Federation (NRF), som fastställer branschstandardiserade kommunikationsprotokoll för kringutrustning i butik. OPOS är en ATSC implementering av OLE för POS-standarden. Den utvecklades i mitten av 1990-talet och har uppdaterats flera gånger sedan dess. OPOS ger en enhetsdrivrutinarkitektur som ger enkel integrering av maskinvaruprofil för kassa med Windows-baserade kassasystem. OPOS-kontrollerna styr kommunikationen mellan kompatibel maskinvara och kassaprogram. En OPOS-kontroll består av två delar:
+För att garantera att den största mängden enheter kan användas med Commerce är OLE för kassabranschstandard den primära enhetsplattformen för kringutrustning i butik som stöds. OLE för kassastandarden anses vara framställt av National Retail Federation (NRF), som fastställer branschstandardiserade kommunikationsprotokoll för kringutrustning i butik. OPOS är en ATSC implementering av OLE för POS-standarden. Den utvecklades i mitten av 1990-talet och har uppdaterats flera gånger sedan dess. OPOS ger en enhetsdrivrutinarkitektur som ger enkel integrering av maskinvaruprofil för kassa med Windows-baserade kassasystem. OPOS-kontrollerna styr kommunikationen mellan kompatibel maskinvara och kassaprogram. En OPOS-kontroll består av två delar:
 
--   **Kontrollobjekt** – Kontrollobjektet för en enhetsklass (t.ex. radvisningar) tillhandahåller ett gränssnitt för programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) tillhandahåller en standardiserad uppsättning OPOS-kontrollobjekt som kallas Common Control-objekt (CCO). CCO som används för att testa POS-komponent i Handel. Därför kan testningen garantera att många enhetstyper stöds under förutsättning att tillverkaren tillhandahåller ett serviceobjekt som skapats för OPOS, om Handel stöder en enhetsklass via OPOS. Du behöver inte uttryckligen testa varje enhetstyp.
+-   **Kontrollobjekt** – Kontrollobjektet för en enhetsklass (t.ex. radvisningar) tillhandahåller ett gränssnitt för programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) tillhandahåller en standardiserad uppsättning OPOS-kontrollobjekt som kallas Common Control-objekt (CCO). CCO som används för att testa POS-komponent i Commerce. Därför kan testningen garantera att många enhetstyper stöds under förutsättning att tillverkaren tillhandahåller ett serviceobjekt som skapats för OPOS, om Commerce stöder en enhetsklass via OPOS. Du behöver inte uttryckligen testa varje enhetstyp.
 -   **Serviceobjekt** – Serviceobjektet ger kommunikation mellan kontrollobjektet (CCO) och enheten. Vanligtvis tillhandahålls serviceobjektet för en enhet av enhetens tillverkare. Men i vissa fall kan du behöva hämta serviceobjektet från tillverkarens webbplats. Till exempel kan ett nyare serviceobjekt vara tillgängligt. Se maskinvarudokumentationen för att hitta adressen till tillverkarens webbplats.
 
 [![Kontrollobjekt och serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) stöd för OPOS-implementeringen av OLE för POS hjälper till att garantera att om tillverkare och utgivare POS följer korrekt, POS-system och enheter som stöds kan samarbeta, även om de inte tidigare testats tillsammans. 
@@ -129,14 +128,14 @@ För att garantera att den största mängden enheter kan användas med Handel ä
 
 ### <a name="windows"></a>Windows
 
-Kvittoutskrift i kassan optimeras för OPOS. OPOS brukar vara betydligt snabbare än utskrift genom Windows. Därför är det en bra idé att använda OPOS, särskilt i miljöer där 40-kolumnkvitton skrivs ut och transaktionstiderna måste vara snabba. För de flesta enheter används OPOS-kontroller. Vissa OPOS kvittoskrivare stöder emellertid Windows-drivrutiner. Genom att använda en Windows-drivrutin kan du komma åt de senaste teckensnitten och en nätverksskrivare för flera kassor. Det finns emellertid nackdelar med Windows-drivrutiner. Här följer några exempel på dessa nackdelar:
+Kvittoutskrift i POS optimeras för OPOS. OPOS brukar vara betydligt snabbare än utskrift genom Windows. Därför är det en bra idé att använda OPOS, särskilt i miljöer där 40-kolumnkvitton skrivs ut och transaktionstiderna måste vara snabba. För de flesta enheter används OPOS-kontroller. Vissa OPOS kvittoskrivare stöder emellertid Windows-drivrutiner. Genom att använda en Windows-drivrutin kan du komma åt de senaste teckensnitten och en nätverksskrivare för flera kassor. Det finns emellertid nackdelar med Windows-drivrutiner. Här följer några exempel på dessa nackdelar:
 
 -   När Windows-drivrutiner används återges bilder innan utskrift sker. Därför brukar utskrifter vara långsammare än på skrivare med OPOS-kontroller.
 -   Enheter som är anslutna till skrivaren ("daisy-fastkedjad") fungerar inte när Windows-drivrutiner används. Exempelvis går det inte att öppna kassalådan eller kvittoskrivaren kanske inte skriver som förväntat.
 -   OPOS stöder även en mer omfattande uppsättning variabler som avser kvittoskrivare, som t.ex. pappersskärning eller kvittoutskrift.
 -   Windows-skrivare stöds inte via IIS maskinvarustation. 
 
-Om det finns OPOS-kontroller för Windows-skrivaren som du använder fungerar skrivaren ändå korrekt med Handel.
+Om det finns OPOS-kontroller för Windows-skrivaren som du använder fungerar skrivaren ändå korrekt med Commerce.
 
 ### <a name="universal-windows-platform"></a>Universal Windows-plattform
 
@@ -144,7 +143,7 @@ UWP, när det gäller kringutrustning är relaterat till Windows stöd för Plug
 
 ### <a name="keyboard-wedge"></a>Tangentbords-wedge
 
-Tangentbords-wedgeenheter skickar data till datorn som om informationen har skrivits på ett tangentbord. Därför kommer som standard fältet som är aktiverat i kassan att ta emot data som skannas eller dras. I vissa fall kan detta orsaka att fel typ av data skannas till fel fält. Exempelvis kan en streckkod läsas in i ett fält som är avsett för inmatning av data för kreditkort. I de flesta fall finns en logik i kassan som avgör om data som skannas eller dras är en streckkod eller ett gortdragning. Därför hanteras data på rätt sätt. Men när enheterna ställs in som OPOS i stället för tangentbord-wedge-enheter finns det mer kontroll över hur data från dessa enheter kan förbrukas, eftersom man "känner till" mer om enheten som informationen kommer från. Exempelvis data från en streckkodsskanner identifieras automatiskt som en streckkod och den associerade posten i databasen hittas enklare och snabbare än om en generisk söksträng användes, vilket gäller för tangentbord-wedge-enheter.
+Tangentbords-wedgeenheter skickar data till datorn som om informationen har skrivits på ett tangentbord. Därför kommer som standard fältet som är aktiverat i POS att ta emot data som skannas eller dras. I vissa fall kan detta orsaka att fel typ av data skannas till fel fält. Exempelvis kan en streckkod läsas in i ett fält som är avsett för inmatning av data för kreditkort. I de flesta fall finns en logik i POS som avgör om data som skannas eller dras är en streckkod eller ett gortdragning. Därför hanteras data på rätt sätt. Men när enheterna ställs in som OPOS i stället för tangentbord-wedge-enheter finns det mer kontroll över hur data från dessa enheter kan förbrukas, eftersom man "känner till" mer om enheten som informationen kommer från. Exempelvis data från en streckkodsskanner identifieras automatiskt som en streckkod och den associerade posten i databasen hittas enklare och snabbare än om en generisk söksträng användes, vilket gäller för tangentbord-wedge-enheter.
 
 ### <a name="native-printer"></a>Inbyggd skrivare
 
@@ -160,7 +159,7 @@ Nätverkets adresserbara kassalådor, kvittoskrivare och betalningsterminaler ka
 
 Modern POS-klienter för Windows och Android inkluderar **dedikerade** eller inbyggda maskinvarustationer. Dessa klienter kan kommunicera direkt med kringutrustning med hjälp av affärslogik som är inbyggd i programmen. Android-appen har endast stöd för nätverksenheter. Mer information om kringutrustningsstöd för Android finns på [konfigurera en POS Hybrid-app för Android och iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)-artikel.
 
-Om du vill använda dedikerad maskinvarustationen tilldelar du en maskinvaruprofil till en kassa som kommer att använda Modern POS för Android-program. Skapa en maskinvarustation av typen **Dedikerad** för butiken som kassan ska användas i. Starta Modern POS i icke-användarläge och använd funktionen **hantera maskinvarustationer** för att aktivera maskinvarustationens kapacitet. Den dedikerade maskinvarustationens aktiveras som standard. Därefter kan du logga ut från Modern POS och sedan logga in igen och öppna en skift och kringutrustning som har konfigurerats i maskinvaruprofilen kan användas. 
+Om du vill använda dedikerad maskinvarustationen tilldelar du en maskinvaruprofil till en kassa som kommer att använda Modern POS för Android-program. Skapa en maskinvarustation av typen **Dedikerad** för butiken som POS ska användas i. Starta Modern POS i icke-användarläge och använd funktionen **hantera maskinvarustationer** för att aktivera maskinvarustationens kapacitet. Den dedikerade maskinvarustationens aktiveras som standard. Därefter kan du logga ut från Modern POS och sedan logga in igen och öppna en skift och kringutrustning som har konfigurerats i maskinvaruprofilen kan användas. 
 
 ### <a name="shared"></a>Delade 
 
@@ -171,10 +170,10 @@ Den delade maskinvarustationen kan användas för att tillåta flera kassaklient
 När en maskinvarustation används för att stödja delning av kringutrustning mellan flera kassaklienter, bör bara kassalådor, kvittoskrivare och betalningsterminaler användas. Du kan inte direkt ansluta fristående streckkodsläsare, MSR:er, radvisningar, skalor andra enheter. I annat fall inträffar konflikter när flera POS-enheter försöker göra anspråk på denna kringutrustning samtidigt. Här visas hur konflikter hanteras för enheter som stöds:
 
 -   **Kassalådan** – kassalådan öppnas via en händelse som skickas till enheten. Endast problem som kan uppstå när en kassalådan kallas uppstår om kassalådan är redan öppen. När det gäller delade maskinvaustationer ska kassalådan vara inställd på **delade** i maskinvaruprofilen. Den här inställningen förhindrar att POS kontrollerar om kassalådan redan är öppen när du skickar öppna-kommandon.
--   **Kvittoskrivaren** – om två kvittoutskriftskommandon skickas till maskinvarustationen på samma gång kan ett kommando försvinna, beroende på vilken enhet. Vissa enheter har internminne eller poolning som kan förhindra att det här problemet. Om utskriftskommando misslyckas kommer kassören att få ett felmeddelande och kan försöka utföra utskriftkommandot från kassan.
+-   **Kvittoskrivaren** – om två kvittoutskriftskommandon skickas till maskinvarustationen på samma gång kan ett kommando försvinna, beroende på vilken enhet. Vissa enheter har internminne eller poolning som kan förhindra att det här problemet. Om utskriftskommando misslyckas kommer kassören att få ett felmeddelande och kan försöka utföra utskriftkommandot från POS.
 -   **Betalningsterminal** – om en kassör försöker utföra en transaktion som redan används på en betalningsterminal får kassören ett meddelande att terminalen används och uppmanas att försöka igen senare. Vanligtvis kan kassörer se att en terminal används redan och ska vänta tills den andra transaktionen har slutförts innan de kan försöka igen.
 
-Validering planeras för kommande versioner för att identifiera om enheter som inte stöds har ställts in för en maskinvaruprofil som är mappad till en delad maskinvarustation. Om några enheter som inte stöds upptäcks får användaren ett meddelande om att enheterna inte stöder delad maskinvarustationer. När det gäller delade maskinvarustationer i **Välj i samband med offert** är inställt på **Ja** på registernivån. Kassaanvändaren uppmanas att välja maskinvarustation när en offert har valts för en transaktion i kassan. När maskinvarustationen endast markeras vid tidpunkten för offert läggs maskinvarustationen till direkt till kassaarbetsflödet för mobila scenarier. Som en extra förmån används inte radvisning för betalningsterminal för gemensamma scenarion. Om betalningsterminal används som en radvisning hindras andra användare från att använda terminalen förrän transaktionen har slutförts. Mobila scenarier kan rader läggas till en transaktion under en längre period. Därför krävs alternativet **Välj i samband med offert** krävs för att garantera optimala enhetstillgänglighet.
+Validering planeras för kommande versioner för att identifiera om enheter som inte stöds har ställts in för en maskinvaruprofil som är mappad till en delad maskinvarustation. Om några enheter som inte stöds upptäcks får användaren ett meddelande om att enheterna inte stöder delad maskinvarustationer. När det gäller delade maskinvarustationer i **Välj i samband med offert** är inställt på **Ja** på registernivån. Kassaanvändaren uppmanas att välja maskinvarustation när en offert har valts för en transaktion i POS. När maskinvarustationen endast markeras vid tidpunkten för offert läggs maskinvarustationen till direkt till kassaarbetsflödet för mobila scenarier. Som en extra förmån används inte radvisning för betalningsterminal för gemensamma scenarion. Om betalningsterminal används som en radvisning hindras andra användare från att använda terminalen förrän transaktionen har slutförts. Mobila scenarier kan rader läggas till en transaktion under en längre period. Därför krävs alternativet **Välj i samband med offert** krävs för att garantera optimala enhetstillgänglighet.
 
 ### <a name="network-peripherals"></a>Nätverkskringutrustning
 
@@ -186,7 +185,7 @@ Du kan ange IP-adresser för nätverkets kringutrustning på två ställen. Om M
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS och Modern POS för iOS
 
-Logiken som driver fysiskt anslutna och nätverkets adresserbara kringutrustning finns på maskinvarustationen. För alla POS-klienter utom Modern POS för Windows och Android, måste en station för IIS maskinvarustationer måste därför distribueras och aktivera kassan för att kommunicera med kringutrustning, oavsett om denna kringutrustning är fysiskt ansluten till en maskinvarustation eller beskrivas i nätverket.
+Logiken som driver fysiskt anslutna och nätverkets adresserbara kringutrustning finns på maskinvarustationen. För alla POS-klienter utom Modern POS för Windows och Android, måste en station för IIS maskinvarustationer måste därför distribueras och aktivera POS för att kommunicera med kringutrustning, oavsett om denna kringutrustning är fysiskt ansluten till en maskinvarustation eller beskrivas i nätverket.
 
 ## <a name="setup-and-configuration"></a>Installation och konfiguration
 ### <a name="hardware-station-installation"></a>Installation av maskinvarustation
@@ -477,18 +476,18 @@ Mer information om hur du skapar maskinvaruprofiler finns i [definiera och under
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS för Windows med en IPC maskinvarustation (inbyggt)
 
-Den här konfigurationen är de vanligaste konfigurationen för traditionella, fasta kassor. I det här scenariot mappas maskinvaruprofilinformation till själva kassan direkt. EFT-terminalnummer bör också anges i själva kassan. För att konfigurera denna konfiguration, följ dessa steg.
+Den här konfigurationen är de vanligaste konfigurationen för traditionella, fasta kassor. I det här scenariot mappas maskinvaruprofilinformation till själva POS direkt. EFT-terminalnummer bör också anges i själva POS. För att konfigurera denna konfiguration, följ dessa steg.
 
 1.  Skapa en maskinvaruprofil där all kringutrustning har konfigurerats.
 2.  Mappa maskinvaruprofilen till en kassa.
 3.  Skapa en maskinvarustation av typen **Dedikerad** för butiken som kassaregister ska användas i. En beskrivning är valfri. 
 
     > [!NOTE]
-    > Du behöver inte ange andra egenskaper för maskinvarustationen. Alla övriga uppgifter som krävs till exempel maskinvaruprofilen kommer från själva kassan.
+    > Du behöver inte ange andra egenskaper för maskinvarustationen. Alla övriga uppgifter som krävs till exempel maskinvaruprofilen kommer från själva POS.
 
 4.  Klicka på **Retail och Commerce** &gt; **Retail och Commerce-IT** &gt; **Distributionsschema**.
-5.  Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
-6.  Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
+5.  Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
+6.  Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
 7.  Installera och aktivera Modern POS för Windows.
 8.  Starta Modern POS för Windows och börja använda ansluten kringutrustning.
 
@@ -509,13 +508,13 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som har en 
         > Cloud POS kan lösa **localhost** för att avgöra den lokala datorn där Cloud POS körs. Certifikat som behövs för att länka en Cloud POS till maskinvarustationen måste dock även ha "Localhost" som datornamn. För att undvika problem bör du ange en instans av varje dedikerad maskinvarustation maskinvara för butiken som krävs. För varje maskinvarustation bör värdnamnet vara det specifika datornamn där maskinvarustationen ska distribueras.
     
     -   **Port** – porten som ska användas för maskinvarustationen för att kommunicera med Modern POS-klienten.
-    -   **Maskinvaruprofil** – om maskinvaruprofilen inte ges på själva maskinvarustationen kommer maskinvaruprofilen som har tilldelats kassan att användas.
+    -   **Maskinvaruprofil** – om maskinvaruprofilen inte ges på själva maskinvarustationen kommer maskinvaruprofilen som har tilldelats POS att användas.
     -   **EFT-POS-nummer** – det EFT terminal-ID som används när EFT-tillstånd skickas. Detta ID tillhandahålls av kreditkortsföretaget.
     -   **Paketnamnet** – maskinvarustationspaketet att använda när maskinvarustationen distribueras.
 
 4.  Klicka på **Retail och Commerce** &gt; **Retail och Commerce-IT** &gt; **Distributionsschema**.
-5.  Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
-6.  Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
+5.  Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
+6.  Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
 7.  Installation av maskinvarustation. Mer information om hur du installerar maskinvarustationen finns [Konfiguration och installation av Retail hardware station](retail-hardware-station-configuration-installation.md).
 8.  Installera och aktivera Modern POS. Mer information om hur du installerar Modern POS finns i [Konfigurera, installera och aktivera Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 9.  Logga in i Modern POS och markera **Utföra en åtgärd som inte är en lådåtgärd**.
@@ -542,8 +541,8 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som delar m
 
 4.  Upprepa steg 2 och 3 för varje ytterligare maskinvarustation som krävs i butiken.
 5.  Klicka på **Retail och Commerce** &gt; **Retail och Commerce-IT** &gt; **Distributionsschema**.
-6.  Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
-7.  Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
+6.  Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
+7.  Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
 8.  Installera maskinvarustationen på varje värddator som du angav i steg 2 och 3. Mer information om hur du installerar maskinvarustationen finns [Konfiguration och installation av Retail hardware station](retail-hardware-station-configuration-installation.md).
 9.  Installera och aktivera Modern POS. Mer information om hur du installerar Modern POS finns i [Konfigurera, installera och aktivera Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 10. Logga in i Modern POS och markera **Utföra en åtgärd som inte är en lådåtgärd**.
@@ -557,7 +556,7 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som delar m
 17. På maskinvarustationen urvalssida klickar du på den nyligen valda maskinvarustationen för att aktivera den. 
 
 > [!NOTE]
-> Om enheter ofta använder olika maskinvarustationer rekommenderar vi att du konfigurerar Modern POS för att uppmana kassörer att välja en maskinvarustation när de börjar offertprocessen. Klicka på **Retail och Commerce** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassor**. Markera kassan och ange alternativet **Välj i samband med offert** till **Ja**. Använd distributionsschema **1090** för att synkronisera ändringar i databasen för kanalen.
+> Om enheter ofta använder olika maskinvarustationer rekommenderar vi att du konfigurerar Modern POS för att uppmana kassörer att välja en maskinvarustation när de börjar offertprocessen. Klicka på **Retail och Commerce** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassor**. Markera POS och ange alternativet **Välj i samband med offert** till **Ja**. Använd distributionsschema **1090** för att synkronisera ändringar i databasen för kanalen.
 
 ## <a name="extensibility"></a>Utbyggbarhet
 Information om tilläggsscenarier för maskinvarustationen finns i [maskinvarustationstillägg](dev-itpro/hardware-station-extensibility.md).
@@ -763,10 +762,9 @@ Följande kringutrustning har testats med hjälp av en delad IIS maskinvarustati
 | Epson        | TM-T88V  | OPOS      |                           |
 | Epson        | TM-T88   | Anpassat    | Ansluten via nätverket     |
 | Stjärna         | TSP650II | Anpassat    | Ansluten via nätverket     |
-| Stjärna         | TSP100   | OPOS      | Kräver drivrutiner för TSP650II |
 | HP           | F7M67AA  | OPOS      | Strömförsörjd USB               |
 
-#### <a name="payment-terminal"></a>Betalningsterminal
+#### <a name="payment-terminal"></a>Betalterminal 
 
 | Tillverkare | Modell | Gränssnitt | Kommentarer                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
@@ -837,6 +835,3 @@ Följande kringutrustning har testats med hjälp av en delad IIS maskinvarustati
 [Kringutrustningssimulator för Commerce](dev-itpro/retail-peripheral-simulator.md)
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

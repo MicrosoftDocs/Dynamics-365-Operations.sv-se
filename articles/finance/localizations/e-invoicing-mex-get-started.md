@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6d15a79a359b3c708b2b33893d700377a57c3eb7
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.openlocfilehash: d91f377af2514af932ea585adb75a56bdee13871
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512244"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988498"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Kom igång med tillägget elektronisk fakturering för Mexiko
 
@@ -198,7 +197,7 @@ Du ställer in tillägg för elektroniska fakturor i Finance genom att utföra f
 4. Välj **svarstyper** för att konfigurera de svarstyper som kan returneras från tillägget elektronisk fakturering och inkluderas i en kundfakturajournal eller på en projektfaktura.
 5. Markera **Ny** och sedan, i fältet **Svarstyp**, markerar du **Svar**.
 6. I fältet **Överföringsstatus** välj **Väntande**.
-7. I fältet **Modellmappning** välj **Importformat för svarsmeddelande - Modellmappning från svarsmeddelande**.
+7. I fältet **Modellmappning** välj **Importformat för svarsmeddelande – Modellmappning från svarsmeddelande**.
 8. Välj **Spara**.
 9. Markera **Ny** och sedan, i fältet **Svarstyp**, markerar du **ResponseData**.
 10. I fältet **Överföringsstatus** välj **Väntande**.
@@ -207,7 +206,7 @@ Du ställer in tillägg för elektroniska fakturor i Finance genom att utföra f
 
 ## <a name="process-electronic-invoices-in-finance"></a>Bearbeta elektroniska fakturor i Finance 
 
-Under bearbetningen av CFDI-fakturor i Finance genom tillägget för elektronisk fakturering kan du utföra följande uppgifter:
+Under bearbetningen av CFDI-fakturor i Finance genom tillägget Elektronisk fakturering kan du utföra följande uppgifter:
 
 - Skicka CFDI-fakturor.
 - Visa körningsloggar för överföring.
@@ -227,7 +226,7 @@ När du har aktiverat funktionen **Konfigurerbara integreringstillägg för elek
 ![Skicka ett CFDI-dokument](media/e-Invoicing-services-get-started-MEX-Submit-CFDI-document.png)
 
 > [!NOTE]
-> Under ditt första försök att skicka ett dokument via tjänsten uppmanas du att bekräfta anslutningen med tillägget för elektronisk fakturering. Välj **Klicka här för att ansluta till tjänsten inlämning av elektroniska dokument**.
+> Under ditt första försök att skicka ett dokument via tjänsten uppmanas du att bekräfta anslutningen med tillägget Elektronisk fakturering. Välj **Klicka här för att ansluta till tjänsten inlämning av elektroniska dokument**.
 
 ### <a name="view-submission-logs"></a>Visa överföringsloggar
 
@@ -250,7 +249,7 @@ Informationen i överföringsloggarna delas upp på tre snabbflikar:
 
 - **Bearbeta åtgärder** – på den här snabbfliken visas körningsloggen för de åtgärder som är konfigurerade i funktionsversionen som ställdes in i RCS. Kolumnen **Status** visar om åtgärden har utförts utan fel.
 - **Åtgärdsfiler** – på den här snabbfliken visas de mellanliggande filer som genererades under körningen av åtgärderna. Du kan välja **vy** om du vill hämta och visa filen.
-- **Bearbeta åtgärdslogg** – på den här snabbfliken visas resultaten av kommunikationen mellan tillägget för elektronisk fakturering och målwebbtjänsten. Det visar också vad som har returnerats av bearbetningen från webbtjänst. I kolumnen **Felkod** visas den returkod som har returnerats av webbtjänsten för auktorisering.
+- **Bearbeta åtgärdslogg** – på den här snabbfliken visas resultaten av kommunikationen mellan tillägget Elektronisk fakturering och målwebbtjänsten. Det visar också vad som har returnerats av bearbetningen från webbtjänst. I kolumnen **Felkod** visas den returkod som har returnerats av webbtjänsten för auktorisering.
 
 När den skickade CFDI-fakturan godkänns uppdateras dess status till **godkänd**.
 
@@ -299,6 +298,3 @@ Om du aktiverar funktionerna MX-00010 och MX-00016 (CFDI-faktura och CFDI-annull
 - [Tillägg för elektronisk fakturering: översikt](e-invoicing-service-overview.md)
 - [Kom igång med tillägget elektronisk fakturering](e-invoicing-get-started.md)
 - [Ställ in tillägg för elektroniska fakturor](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

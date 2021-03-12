@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 948beb7baa19c69530dca52b5d4c119b69f8f011
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2bd821fdfe62475849e6d3b80d3a2c377bbabf4a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448138"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990627"
 ---
 # <a name="cost-accounting-terminology"></a>Kostnadsredovisningsterminologi
 
@@ -79,11 +78,11 @@ Kostnadsklassificering grupperar kostnader grupperar enligt deras egenskaper. Ti
 
 Kostnadsbeteende klassificerar kostnader enligt deras beteende i relation till ändringar i viktiga affärsaktiviteter. Om du vill styra kostnader på ett effektivt sätt måste cheferna förstå kostnadsbeteendet. Det finns tre typer av kostnadsbeteendemönster: fast, variabel och halvvariabel.
 
-- **Fast kostnad** - En fast kostnad är en kostnad, som inte varierar på kort sikt, oavsett ändringar i aktivitetsnivå. Exempelvis kan en fast kostnad vara en grundläggande rörelseutgift i ett företag som till exempel hyra, som inte kommer att påverkas även om aktivitetsnivån ökar eller minskar.
+- **Fast kostnad** – En fast kostnad är en kostnad, som inte varierar på kort sikt, oavsett ändringar i aktivitetsnivå. Exempelvis kan en fast kostnad vara en grundläggande rörelseutgift i ett företag som till exempel hyra, som inte kommer att påverkas även om aktivitetsnivån ökar eller minskar.
 
-- **Variabel kostnad** - En variabel kostnad ändras enligt ändringar i aktivitetsnivå. Till exempel är specifika direktmaterialkostnader kopplade till varje produkt som säljs. Ju fler produkter som säljs, desto fler direkta materialkostnader finns det.
+- **Variabel kostnad** – En variabel kostnad ändras enligt ändringar i aktivitetsnivå. Till exempel är specifika direktmaterialkostnader kopplade till varje produkt som säljs. Ju fler produkter som säljs, desto fler direkta materialkostnader finns det.
 
-- **Halvvariabla kostnader** - Halvvariabla kostnader är delvis fasta och delvis variabla kostnader. Till exempel en avgift för Internetåtkomst inkluderar en månatlig standardåtkomstavgift och en användningsavgift för bredband. Den månatliga standardåtkomstavgiften är en fast kostnad, medan användningavgiften för bredband är en variabel kostnad.
+- **Halvvariabla kostnader** – Halvvariabla kostnader är delvis fasta och delvis variabla kostnader. Till exempel en avgift för Internetåtkomst inkluderar en månatlig standardåtkomstavgift och en användningsavgift för bredband. Den månatliga standardåtkomstavgiften är en fast kostnad, medan användningavgiften för bredband är en variabel kostnad.
 
 **Kostnadsstyrenhet**
 
@@ -205,6 +204,3 @@ Utdrag för vyer för chefer som är ansvariga för att kontrollera kostnader. U
 Versioner används för att simulera, visa och jämföra olika resultat. Som standard visas alla faktiska kostnader i en basversion som kallas för *faktisk* För budgetar och beräkningar kan du efter behov arbeta med valfritt antal versioner. Du kan till exempel importera budgetdata till en ursprunglig version och sedan ändra budgeten i en reviderad version. För beräkningar kan du skapa flera versioner. I dessa olika versioner kan du sedan skapa beräkningar genom att använda olika beräkningsregler som ska tillämpas för kostnadsallokering.
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

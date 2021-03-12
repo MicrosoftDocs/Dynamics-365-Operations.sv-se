@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 85183
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 4409811d2ef60174a316db10307dc7af4697398c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e9162bb9b56432dbeb4638e0598dcbf436ab0b1b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415951"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989511"
 ---
 # <a name="retail-statements"></a>Butiksutdrag
 
@@ -32,7 +31,7 @@ ms.locfileid: "4415951"
 
 I Dynamics 365 Commerce är bokföringsprocessen för utdraget att ta hänsyn till de transaktioner som sker i molnbaserad kassa (PO) eller Modern POS (MOPS). Bokföringsprocessen för utdrag använder distributionsschemat för att hämra en uppsättning kassatransaktioner till klientens huvudkontor (HQ). De parametrar som definieras på sidorna **Handelsparametrar** och **Butiker** används för att välja vilka transaktioner som hämtas till enskilda rapporter.
 
-Utdragsbokföringsprocessen illustreras i följande diagram. I denna process överförs transaktioner som är registrerade i kassan till klienten, genom att Handel schemaläggare används. När klienten har tagit emot transaktionerna kan du skapa, beräkna och bokföra transaktionsutdraget för butiken.
+Utdragsbokföringsprocessen illustreras i följande diagram. I denna process överförs transaktioner som är registrerade i POS till klienten, genom att Commerce schemaläggare används. När klienten har tagit emot transaktionerna kan du skapa, beräkna och bokföra transaktionsutdraget för butiken.
 
 [![utdragbokföringsprocessen](./media/retail-statements.png)](./media/retail-statements.png)
 
@@ -48,7 +47,7 @@ Det här steget identifierar den butik som utdraget skapas manuellt för. Om du 
 
 I det här steget väljs transaktionsraderna utifrån villkor som definieras för varje butik i på sidorna **Handelsparametrar** och **Butiker**. På dessa sidor definierar du villkoren och anger hur transaktionerna beräknas. Om du vill visa en lista över de transaktioner som är inkluderade i utdraget, innan du beräknar utdraget, använder du **Transaktioner**.
 
-En utdragsberäkning använder kassaavstämningar från kassor som beräknat belopp. Alternativt kan du ange det räknade beloppet manuellt. Utdraget visar skillnaden mellan försäljningsbeloppet för transaktionerna och det verkliga beräknade beloppet i alla betalningsmetoder. Utdraget bokförs endast om avvikelsen är mindre än den maximalt tillåtna för butiken.
+En utdragsberäkning använder kassaavstämningar från kassor som beräknat belopp. Alternativt kan du ange det räknade beloppet manuellt. Utdraget visar skillnaden mellan försäljningsbeloppet för transaktionerna och det verkliga beräknade beloppet i alla betalsätt. Utdraget bokförs endast om avvikelsen är mindre än den maximalt tillåtna för butiken.
 
 > [!NOTE]
 > Beräkningsprocessen för utdraget använder den globala nummerserien.
@@ -60,7 +59,7 @@ När du beräknar ett utdrag inkluderar beräkningen följande uppgifter:
 
     - Om utdragsmetoden är **Totalt** skapas en rad för varje betalningsmetod i de valda transaktionerna.
     - Om utdragsmetoden är **Personal** skapas en rad för varje betalningsmetod i de transaktioner som har gjorts av den valda personalmedlemmen.
-    - Om utdragsmetoden är **Kassaterminal** skapas en rad för varje betalningsmetod i de transaktioner som har gjorts på den valda kassan.
+    - Om utdragsmetoden är **Kassaterminal** skapas en rad för varje betalningsmetod i de transaktioner som har gjorts på den valda POS.
     - Om utdragsmetoden är **Skift** skapas en rad för varje betalningsmetod i de transaktioner som har gjorts under ett skift.
 
 Om kryssrutan **Dela upp efter utdragsmetod** är markerad på sidan **butiker** skapas ett separat uttryck baserat på värdet som valts på fliken **utdragsmetod**.
@@ -85,9 +84,6 @@ Om kryssrutan **Bokför som vardag** är avmarkerad för samma butik, genereras 
 När du bokför ett utdrag, skapas fakturor för försäljningsorder och försäljning i utdraget.
 
 - Hemköpsförsäljning (cash and carry) aggregeras till en försäljningsorder och faktureras för standardkunden som har tilldelats till butiken.
-- Försäljning, för vilken en kund lades till i transaktionen i kassan genererar separata försäljningsorder och fakturor, en för varje unik kund.
+- Försäljning, för vilken en kund lades till i transaktionen i POS genererar separata försäljningsorder och fakturor, en för varje unik kund.
 
 Betalningsjournaler skapas automatiskt för betalningarna i utdraget och lagret uppdateras för kassabutiken.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

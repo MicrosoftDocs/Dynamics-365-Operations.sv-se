@@ -1,6 +1,6 @@
 ---
 title: Ställ in tillägg för elektroniska fakturor
-description: I det här avsnittet beskrivs hur du ställer in tillägget för elektroniska fakturor i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management.
+description: I det här avsnittet beskrivs hur du ställer in tillägget Elektroniska fakturor i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
 ms.date: 09/22/2020
@@ -11,26 +11,25 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 7e631f1bf64b47b5f3e85d4f98c6edafe67d627a
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 0561a3307f8b990c06dd25c9fc3fd7097254061f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4448187"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988491"
 ---
 # <a name="set-up-the-electronic-invoicing-add-on"></a>Ställ in tillägg för elektroniska fakturor
 
 [!include [banner](../includes/banner.md)]
 
 
-Installation av funktionen för tillägget elektronisk fakturering är processen att skapa den konfiguration som krävs genom RCS-miljön (Regulatory Configuration Services) och publicera den konfigurationen på tilläggsservern för elektronisk fakturering. Med hjälp av installationsprogrammet kan du skapa de konfigurerbara reglerna som gör det möjligt för tillägget för elektronisk fakturering att använda ett säkert protokoll via Internet för att kommunicera och utbyta data med en tredje parts enhet via webbtjänster.
+Installation av funktionen för tillägget elektronisk fakturering är processen att skapa den konfiguration som krävs genom RCS-miljön (Regulatory Configuration Services) och publicera den konfigurationen på tilläggsservern för elektronisk fakturering. Med hjälp av installationsprogrammet kan du skapa de konfigurerbara reglerna som gör det möjligt för tillägget Elektronisk fakturering att använda ett säkert protokoll via Internet för att kommunicera och utbyta data med en tredje parts enhet via webbtjänster.
 
 Konfigureringsmöjligheter är beroende av formatkonfigurationen för elektronisk rapportering (ER) som ett sätt att skapa och ta emot innehåll som skickas och tas emot via digitala filer. Den använder också samordningen av kommunikationsåtgärder för att skicka förfrågningar till och ta emot svar från tredje parts webbtjänster utan att behöva skriva kod.
 
@@ -291,7 +290,7 @@ Följande register beskriver de fält som är tillgängliga på fliken **Tilläm
 
 ### <a name="variables"></a>Variabler
 
-Du kan skapa variabler och sedan använda dem som indatavärde för en parameter för en viss åtgärd. Du kan också använda dem för att utbyta, mellan tillägget för elektronisk fakturering och klienten, information som är resultatet av att en viss åtgärd utförs som en del i flödet av överföringar.
+Du kan skapa variabler och sedan använda dem som indatavärde för en parameter för en viss åtgärd. Du kan också använda dem för att utbyta, mellan tillägget Elektronisk fakturering och klienten, information som är resultatet av att en viss åtgärd utförs som en del i flödet av överföringar.
 
 #### <a name="set-up-variables"></a>Ställ in variabler
 
@@ -361,6 +360,3 @@ Följ de här stegen om du vill hantera livscykeln för en funktion för tilläg
 
     > [!NOTE]
     > När du väljer **Ja** ändras status för konfigurationsversioner automatiskt från **slutförd** till **delad**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

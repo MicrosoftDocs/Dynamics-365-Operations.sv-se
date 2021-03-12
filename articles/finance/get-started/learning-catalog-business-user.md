@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9d99233831ee4f838c0230e92db0750d94b2b55b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3ec0e21ccecd5bf90e9b31b5aade33e585108c62
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448048"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990249"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Utbildningskatalog för användare av Dynamics 365 Finance
 
@@ -34,7 +33,7 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | [Lär dig affärsvärdet av Microsoft Dynamics 365 och Power Platform](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Vill du lära dig mer om affärsprogram? Kanske du inte vet var du ska börja med Microsoft Dynamics 365 och Power Platform-appar? Lär dig hur kraften hos affärsappar kan hjälpa dig att omvandla verksamheten. | Gratis, självstudier online utbildningsväg | 8 timmar |
 | [Dynamics 365 och Power Platform grunder](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Vill du lära dig mer om affärsprogram? Börja med den här utbildningsvägen för att se hur Dynamics 365-appar används. Lär dig mer om molnkoncept Power Platform och hur du kommer igång med Dynamics 365-appar. | Gratis, självstudier online utbildningsväg | 5.5 timmar   |
 | [Kom igång med Finance and Operations-appar](https://docs.microsoft.com/learn/paths/get-started-finance-operations/) | Lär dig hur Finance and Operations-appar ger stöd till företag för att hantera deras globala ekonomisystem, operativa affärsprocesser och effektiviserade leveranskedjor för att ge användarna möjlighet att fatta snabba, välgrundade beslut.   Det första steget i arbetet med Finance and Operations-appar är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill ha. | Gratis, självstudier online utbildningsväg | 2 timmar |
-| [Kurs MB-900T01-A: Dynamics 365 - grunder](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Den här kursen kommer att bekanta dig med Dynamics 365-funktionalitet och affärsvärde. Kursen omfattar Dynamics 365-program, Power Platform, molnkoncepten, säkerhetsmodellen och licensieringsöverväganden. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag |
+| [Kurs MB-900T01-A: Dynamics 365 – grunder](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Den här kursen kommer att bekanta dig med Dynamics 365-funktionalitet och affärsvärde. Kursen omfattar Dynamics 365-program, Power Platform, molnkoncepten, säkerhetsmodellen och licensieringsöverväganden. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag |
 
 ## <a name="core-platform-knowledge"></a>Kunskap om huvudplattformen<a name="core-platform-knowledge"></a>
 
@@ -54,12 +53,10 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | [Konfigurera och använda budgetering i Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-use-budgeting-dyn365-finance/)   | Varje organisation, oavsett om den är privat eller offentlig, ställer in ekonomiska och operativa mål genom att skapa budgetar. Med den samarbetande och processdriven naturen för budgetplanering kan du göra budgetprocessen mer effektiv. | Gratis, självstudier online utbildningsväg | 3.5 timmar |
 | [Konfigurera och hantera anläggningstillgångar i Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-manage-fixed-assets-dyn365-finance/) | Det går att ställa in och ange anskaffningsinformation för anläggningstillgångar och sedan hantera dem genom att skriva av dem och ställa in en kapitaliseringströskel. Sättet på vilket anläggningstillgångar hanteras måste motsvara både internationella redovisningsstandarder och redovisningslagarna i varje land/region. | Gratis, självstudier online utbildningsväg | 4.5 timmar |
 | [Kom igång med kostnadsredovisning för leveranskedjor i Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/get-started-cost-accounting-supply-chains-dyn365-finance/) | Kostnadsredovisning låter dig samla in data från olika källor, till exempel huvudbok, delredovisningar, budgetar och statistisk information. Du kan sedan analysera, summera och utvärdera kostnadsdata, så att ledningen kan ta bästa möjliga beslut när det gäller prisuppdateringar, budgetar, kostnadskontroll, osv.  | Gratis, självstudier online utbildningsväg | 1 timma  |
+| [Arbeta med utgiftshanteringi Dynamics 365 Project Operations](https://docs.microsoft.com/learn/paths/work-expense-management/) | Maximera lönsamhet och minimera kostnader med korrekta möjligheter till utgiftshantering i Dynamics 365 Project Operations. Läs om hur du konfigurerar systemet och skapar och godkänner utgiftsrapporter. | Gratis, självstudier online utbildningsväg | 5.5 timmar  |
 
 ## <a name="exam"></a>Prov<a name="exam"></a>
 
 | Innehåll | beskrivning  | Format  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Dynamics 365 grunder](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl)    | Bevisa att du förstår Microsoft Dynamics 365: Power Platform; molnkoncept; licensieringsalternativ; och distribution- och publiceringsalternativ. | Prov; kostnaden varierar beroende på region |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

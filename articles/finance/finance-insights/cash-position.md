@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 64b8dcd43024e5c26d33bf12c5fe198711adde56
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 5cf1ac4de07cb6357493a0b2c84f6a6ee591d4bc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645900"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990574"
 ---
 # <a name="cash-position-preview"></a>Kassaposition (förhandsversion)
 
@@ -34,7 +33,7 @@ Kassaposition är projektionen av kassaflödet som prognosticeras på kort sikt.
 
 När systemet förutsäger kundbetalningar använder det betalningsförutsägelser från funktionen för kundbetalningsförutsägelse. Utan betalningsförutsägelser används den genomsnittliga tid som krävs för att konvertera en kundfaktura till en betalning för varje kund för att beräkna ett betalningsdatum. För öppna kundorder beräknar systemet fakturadatumet genom att använda det genomsnittliga antalet dagar för orderrader per kund som ska faktureras. Sedan används fakturadatumet som indata för funktionen för betalningsförutsägelse. Funktionen för kundbetalningsförutsägelse beräknar ett betalningsdatum för varje orderrad. 
 
-<*Behöver text från Jarek eller Dave om hur betalnings förutsägelser konverteras till ett datum*> Betalningsdatumet för utestående fakturor [*uppskattas*] ungefärligt från betalningsförutsägelserna genom att välja ett datum som motsvarar 50 procent av den kumulativa fördelningsfunktionen som erhålls från den förutsagda bucketens sannolikhet.
+<*Behöver text från Jarek eller Dave om hur betalningsförutsägelser konverteras till ett datum*> Betalningsdatumet för utestående fakturor uppskattas [*beräknas*] från betalningsförutsägelserna genom att välja ett datum som motsvarar 50 procent av den kumulativa fördelningsfunktionen som erhålls från den förutsagda gruppens (bucket) sannolikhet.
 
 Ett liknande tillvägagångssätt används för att förutsäga betalningar till leverantörer. För varje leverantör beräknar systemet den genomsnittliga tid som krävs för att konvertera en leverantörsfaktura till en betalning. Det antalet dagar används sedan för att beräkna betalningsdatumet. För öppna leverantörsorder beräknar systemet fakturadatumet genom att beakta det genomsnittliga antalet dagar som krävs för att konvertera orderrader till en faktura för varje leverantör. För varje leverantör beräknar systemet sedan betalningsdatumet genom att använda den genomsnittliga tid som krävs för att konvertera en leverantörsfaktura till en betalning.
 
@@ -51,6 +50,3 @@ Skapa en ögonblicksbild om du vill spara och redigera kassapositionen. Mer info
 
 #### <a name="privacy-notice"></a>Sekretesspolicy
 Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

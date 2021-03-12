@@ -11,26 +11,25 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f97b8fc0896f0f7b95bf5609f94367b3a8230ca7
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 0df58d3571b124acbd1edbc6d6acdd49479c309e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645258"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990599"
 ---
 # <a name="cash-flow-forecast-preview"></a>Kassaflödesprognos (förhandsversion)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Kassaflödet är kritiskt för alla företag. Till och med lönsamma företag kan bli insolventa om de inte upprätthåller kassaflödet för att uppfylla omedelbara behov. Prognosfunktionerna för kassaflöde i Ekonomiinsikter gör det enklare för företag att övervaka och hantera sina kontantsaldon effektivt. Funktionen använder maskininlärning för att hjälpa företag prognostisera kassaflöden mer noggrant än tidigare. Den kan också hjälpa chefer att fatta beslut som optimerar affärsmöjligheter i samband med deras aktuella kassaposition. 
+Kassaflödet är kritiskt för alla företag. Till och med lönsamma företag kan bli insolventa om de inte upprätthåller kassaflödet för att uppfylla omedelbara behov. Prognosfunktionerna för kassaflöde i Finance-insikter gör det enklare för företag att övervaka och hantera sina kontantsaldon effektivt. Funktionen använder maskininlärning för att hjälpa företag prognostisera kassaflöden mer noggrant än tidigare. Den kan också hjälpa chefer att fatta beslut som optimerar affärsmöjligheter i samband med deras aktuella kassaposition. 
 
 För de flesta företag, är hantering av kassaflöde och körning av kassaflödesprognoser är en omständlig, repetitiv och manuell process. De flesta företag använder Microsoft Excel-lösningar med varierande grad av komplexitet. Utmaningarna med att korrekt prognostisera kassaflödet är bland andra:
 
@@ -68,6 +67,3 @@ På fliken **Dimensioner** väljer du i listan med dimensioner som ska användas
 
 #### <a name="privacy-notice"></a>Sekretesspolicy
 Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

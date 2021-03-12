@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CAMAXGeneralLedgerEntryProviderConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88f5170610ea9b5634c4bf5da7079cacccdafe04
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7246d42b42404f0f1215bbf14b8ad168fe12691c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448141"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990727"
 ---
 # <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>Hantera en datakälla för huvudbok för kostnadsredovisning
 
@@ -37,7 +36,7 @@ Använd den här proceduren för att hantera datakällan för redovisning för e
 6. Klicka på Ny.
 7. Skriv ett värde i fältet Namn.
 8. Ange eller välj ett värde i fältet Dataprovider.
-    * För det här exemplet väljer du Dynamics 365 Finance - redovisningsposter.  
+    * För det här exemplet väljer du Dynamics 365 Finance – redovisningsposter.  
 9. Ange eller välj ett värde i fältet Dimension för kostnadselement.
     * Välj Kostnadselement för det här exemplet.  
 10. Klicka på Spara.
@@ -48,6 +47,3 @@ Använd den här proceduren för att hantera datakällan för redovisning för e
 14. Välj Aktuell i fältet Bokföringsskikt.
 15. Klicka på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: Ställ in en betalningsmetod för ISO20022-kreditöverföringar
-description: I denna procedur visas hur du ställer in leverantörbetalningsmetoden för ISO20022-kreditöverföring eller någon annan betalningstyp med hjälp av elektronisk rapportering, om du vill skapa en fil.
+title: Ställ in ett betalsätt för ISO20022-kreditöverföringar
+description: I denna procedur visas hur du ställer in leverantörbetalsättet för ISO20022-kreditöverföring eller någon annan betalningstyp med hjälp av elektronisk rapportering, om du vill skapa en fil.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
@@ -11,23 +11,22 @@ ms.technology: ''
 ms.search.form: VendPaymMode
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d6d60502cd7f749b71cf39cc38d8a39dcbb7b108
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 92bc314e69628f2a287ba7c9a7c2d3d73a0bfd33
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447854"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988112"
 ---
-# <a name="set-up-method-of-payment-for-iso20022-credit-transfer"></a>Ställ in en betalningsmetod för ISO20022-kreditöverföringar
+# <a name="set-up-method-of-payment-for-iso20022-credit-transfer"></a>Ställ in ett betalsätt för ISO20022-kreditöverföringar
 
 [!include [banner](../../includes/banner.md)]
 
-I denna procedur visas hur du ställer in leverantörbetalningsmetoden för ISO20022-kreditöverföring eller någon annan betalningstyp med hjälp av elektronisk rapportering, om du vill skapa en fil. 
+I denna procedur visas hur du ställer in leverantörbetalsättet för ISO20022-kreditöverföring eller någon annan betalningstyp med hjälp av elektronisk rapportering, om du vill skapa en fil. 
 
 Innan du slutför denna uppgift måste du exportera formatkonfigurationer och skapa betalningskonton.
 
@@ -35,7 +34,7 @@ Uppgiften har skapats med DEMF-demodataföretaget.
 
 Detta är den tredje proceduren av fem som illustrerar leverantörbetalningsprocessen med hjälp av elektroniska rapporteringskonfigurationer. Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.
 
-1. Gå till Leverantörsreskontra > Betalningsinställning > Betalningsmetoder.
+1. Gå till Leverantörsreskontra > Betalningsinställning > Betalsätt.
 2. Använd snabbfiltret för att söka efter poster. Filtrera till exempel efter fältet Betalningsmetod med värdet "SEPA CT ".
 3. Klicka på Redigera.
 4. Välj "Summa" i fältet period.
@@ -48,6 +47,3 @@ Detta är den tredje proceduren av fem som illustrerar leverantörbetalningsproc
 10. Ange värdena "'DEMF OPER" i fältet Betalningskonto.
 11. Klicka på Spara.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

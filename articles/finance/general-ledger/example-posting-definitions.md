@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 15772
 ms.assetid: 3864e4da-853f-403d-b906-79631d80b363
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 301f15f1d7d8f0e10bbaf2546fcf727aff284624
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 751be602b701ac7a5b593404bf655e1a9852f863
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447894"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990499"
 ---
 # <a name="posting-definition-examples"></a>Exempel: bokföringsdefinitioner
 
@@ -53,7 +52,7 @@ Alla verifikationstransaktioner för inköpsorderinteckningar måste balanseras 
 
 | Kontostruktur       | Matcha kontonummer | Prioritet  |
 |-------------------------|----------------------|----------|
-| Kontostruktur - Resultat | \*                   | 1        |
+| Kontostruktur – Resultat | \*                   | 1        |
 
 <em>Ett mellanrumsvärde i fältet **Matchningskontonummer</em>* betyder att alla matchningskonton i den definierade kontostrukturen är en del av matchningsregeln.
 
@@ -61,8 +60,8 @@ Alla verifikationstransaktioner för inköpsorderinteckningar måste balanseras 
 
 | Kontostruktur | Genererat kontonummer                    | Debet/kredit har skapats |
 |-------------------|---------------------------------------------|------------------------|
-| Saldo           | 300143 - (Inteckningkonto)             | Samma                   |
-| Saldo           | 300144 - - (Reservera för inteckningkonto) | Balanserar              |
+| Saldo           | 300143 – (Inteckningkonto)             | Samma                   |
+| Saldo           | 300144 – - (Reservera för inteckningkonto) | Balanserar              |
 
 ### <a name="transactions-with-the-accounts-dimension-values-and-amounts"></a>Transaktioner med konton, dimensionsvärden och belopp
 
@@ -81,7 +80,7 @@ Genererade redovisningsposter skapas för att registrera inteckningarna.
 | 300143-OU\_1-OU\_3566-utbildning | 250.00 |        |         |
 | 300144-OU\_1-OU\_3566-Training |        | 250.00 |         |
 
-I det här exemplet matchar alla konton, som är en del av kontostrukturen - Resultat matchar bokföringsdefinitionvillkoren. När 606500-OU\_1-OU\_3566-utbildning ska utvärderas, genereras därför poster för de konton som anges i fönstret **Genererade poster** för bokföringsdefinitionen.
+I det här exemplet matchar alla konton, som är en del av kontostrukturen – Resultat matchar bokföringsdefinitionvillkoren. När 606500-OU\_1-OU\_3566-utbildning ska utvärderas, genereras därför poster för de konton som anges i fönstret **Genererade poster** för bokföringsdefinitionen.
 
 ## <a name="example-budget-appropriations"></a>Exempel: Budgetanslag
 När du aktiverar budgettransaktioner genom att välja **Aktivera budgetanslag** på sidan **Allmänna redovisningsparametrar**, måste bokföringsdefinitioner användas för att bokföra budgetregisterposter i redovisningen. När en budgetkontrollkonfiguration är aktiv och aktiveras, kan bokföringsdefinitioner och transaktionbokföringsdefinitioner användas som stöd för registreringen av poster för anslag, ändringar, överföringar, projekt, anläggningstillgångar och leverans- och efterfrågeprognoser i redovisningen. 
@@ -94,7 +93,7 @@ När budgetanslag och budgeterade bokföringsdefinitioner aktiveras, registreras
 
 | Kontostruktur       | Matcha kontonummer | Prioritet  |
 |-------------------------|----------------------|----------|
-| Kontostruktur - Resultat | \*                   | 1        |
+| Kontostruktur – Resultat | \*                   | 1        |
 
 <em>Ett mellanrumsvärde i fältet **Matchningskontonummer</em>* betyder att alla matchningskonton i den definierade kontostrukturen är en del av matchningsregeln.
 
@@ -102,8 +101,8 @@ När budgetanslag och budgeterade bokföringsdefinitioner aktiveras, registreras
 
 | Kontostruktur | Genererat kontonummer              | Debet/kredit har skapats |
 |-------------------|---------------------------------------|------------------------|
-| Kontostruktur | 300145 - - (uppskattad intäkt) | Samma                   |
-| Kontostruktur | 300146 - (Anslagskonto)     | Balanserar              |
+| Kontostruktur | 300145 – - (uppskattad intäkt) | Samma                   |
+| Kontostruktur | 300146 – (Anslagskonto)     | Balanserar              |
 
 ### <a name="transactions-with-the-accounts-dimension-values-and-amounts"></a>Transaktioner med konton, dimensionsvärden och belopp
 
@@ -122,12 +121,9 @@ Genererade redovisningsposter skapas för att registrera den ursprungliga budget
 | 300145-OU\_1-OU\_3566-Training |        | 250.00 |         |
 | 300146-OU\_1-OU\_3566-Training | 250.00 |        |         |
 
-I det här exemplet matchar alla konton, som är en del av kontostrukturen - Resultat matchar bokföringsdefinitionvillkoren. När 606400-OU\_1-OU\_3566-utbildning utvärderas, skapas därför genererade bokföringsposter.
+I det här exemplet matchar alla konton, som är en del av kontostrukturen – Resultat matchar bokföringsdefinitionvillkoren. När 606400-OU\_1-OU\_3566-utbildning utvärderas, skapas därför genererade bokföringsposter.
 
 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
