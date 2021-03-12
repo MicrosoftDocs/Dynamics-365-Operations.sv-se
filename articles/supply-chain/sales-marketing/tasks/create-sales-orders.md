@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals
 audience: Application User, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9aa353ad771844abc0860f06d9bc22b9f4adce92
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8bb4c7a542106161f8bc1b8db0976c24faebf907
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437472"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974820"
 ---
 # <a name="create-sales-orders"></a>Skapa försäljningsorder
 
@@ -68,6 +67,3 @@ Produkterna som säljs av din organisation kan levereras i varianter beroende p�
     Sidan med **summor** visar detaljer om hela ordern. Detta inkluderar delsummabeloppet som är summan av alla radnettobelopp justerat med eventuella radrabatter, det totala fakturabeloppet som är ett delsummabelopp justerat med eventuella ordernivårabatter, tillägg och moms, kundkreditgränsen med mera. Fakturabeloppet är det belopp som ska visas på kundens fakturadokument.  
     
 3. Välj **OK**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

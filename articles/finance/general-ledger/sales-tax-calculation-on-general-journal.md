@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 51d43c8e6d16201e1f8c392c13ead20287782dcc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e420632c248b5b43d4983c5eb483cac580e67f20
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447861"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975568"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Momsberäkning för allmänna journalrader
 [!include [banner](../includes/banner.md)]
@@ -157,6 +156,3 @@ Tabellen nedan visar den allmänna regeln.
 | Ingående moms | Negativa              | Konto för ingående moms | Negativ (kredit)  |
 | Utgående moms    | Positiva              | Konto för utgående moms    | Negativ (kredit)  |
 | Utgående moms    | Negativa              | Konto för utgående moms    | Positiv (Debet)  |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

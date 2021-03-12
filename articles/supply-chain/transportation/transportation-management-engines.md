@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine, TMSFreightBillTypeAssignment, TMSZoneMaster, TMSEngineParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab6667ac02ca55eeb093fa5854a962ac4357aaac
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f4c33191e9a3b8f7c211093ff733f6cd025cb9bb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438037"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973895"
 ---
 # <a name="transportation-management-engines"></a>Transporthanteringsmotorer
 
@@ -89,7 +88,7 @@ Metadata för transporthanteringsmotorer konfigureras olika för olika typer av 
 | **Zonmotor**                                | Kräver att metadata ska ställas in direkt på zonoriginalet.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Transporttidsmotor** och **Milkostnadmotor** | Hämtar metadata direkt från milkostnadsmotorns konfigurationsinställningsformulär.                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **Exempel på metadata för en tariffmotor** Transportledningsmotorn kräver identifiering av ursprungsadressen, destinationens stat och land/region samt start- och slutpunkt för försändelsen. Genom att använda dessa krav ser metadata ut som i följande tabell. Registret innehåller också information om vilken typ av ingångsdata som krävs.
+  **Exempel på metadata för en tariffmotor** Transportledningsmotorn kräver identifiering av ursprungsadressen, destinationens stat och land/region samt start- och slutpunkt för försändelsen. Genom att använda dessa krav ser metadata ut som i följande tabell. Registret innehåller också information om vilken typ av ingångsdata som krävs.
 -   Definiera den här informationen i **Transporthantering** &gt; **Inställningar** på sidan **Tariffbastyp**.
 
 | Sekvens | Namn                          | Fälttyp | Datatyp | Uppslagstyp    | Obligatoriskt |
@@ -99,6 +98,3 @@ Metadata för transporthanteringsmotorer konfigureras olika för olika typer av 
 | 3        | Destination – från postnummer | Uppdrag | Sträng    | Postnummer    | Markerad  |
 | 4        | Destination – till postnummer   | Uppdrag | Sträng    | Postnummer    | Markerad  |
 | 5        | Destinationsland           | Uppdrag | Sträng    | Land/region |           |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

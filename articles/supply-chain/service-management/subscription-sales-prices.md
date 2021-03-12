@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMASalespriceSubscription
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f03efbbca4fc9da76c6ead7566457beb79c8c249
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 35f4e3f3bdbdad7a48b89bad7da96d221f09bdb4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437592"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974237"
 ---
 # <a name="subscription-sales-prices"></a>Abonnemangsförsäljningspriser   
 
@@ -380,6 +379,3 @@ I den första transaktionen för abonnemang 00020\_135, kommer försäljningspri
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

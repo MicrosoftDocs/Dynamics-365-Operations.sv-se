@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 62153
 ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 798e26badfd2a1f44891ea92f277de327fbed9c7
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: ba615d620ae05f667b3e258dedd7270358abc671
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4448174"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975668"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Omvärdering i utländsk valuta för huvudbok
 
@@ -36,10 +35,10 @@ Som en del av ett periodslut kräver redovisningspraxis att redovisningskonton i
 > [!NOTE]
 > Omräkning i utländsk valuta finns även för Kundreskontra och Leverantörsreskontra. Om du använder dessa moduler ska utestående transaktioner omvärderas med hjälp av omvärdering i utländsk valuta i dessa moduler. AR- och AP-omräkning i utländsk valuta skapar en redovisningspost i redovisningen för att återspegla den orealiserade vinsten eller förlusten, och ser till att redovisningsjournalerna kan stämmas av. Eftersom AR- och AP-omräkning i utländsk valuta skapar redovisningsposter i redovisningen, bör huvudkontona för kundreskontra och leverantörsreskontra exkluderas från redovisningomräkning i utländsk valuta. 
 
-När du kör omvärderingsprocessen kommer saldot i varje huvudkonto som bokförs i utländsk valuta att omvärderas. Orealiserade vinst- eller förlusttransaktioner som skapas under omvärderingsprocessen genereras av systemet. Två transaktioner kan komma att skapas, en för redovisningsvalutan och en andra för rapporteringsvalutan, vid behov. Varje redovisningspost bokför till orealiserad vinst eller förlust samt det huvudkonto som omvärderas.
+När du kör ombedömningsprocessen kommer saldot i varje huvudkonto som bokförs i utländsk valuta att omvärderas. Orealiserade vinst- eller förlusttransaktioner som skapas under ombedömningsprocessen genereras av systemet. Två transaktioner kan komma att skapas, en för redovisningsvalutan och en andra för rapporteringsvalutan, vid behov. Varje redovisningspost bokför till orealiserad vinst eller förlust samt det huvudkonto som omvärderas.
 
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Förbereda en körning av omvärdering i utländsk valuta
-Innan du kan köra omvärderingsprocessen måste följande inställningar göras.
+Innan du kan köra ombedömningsprocessen måste följande inställningar göras.
 
 -   På sidan **Huvudkonto**:
 -   Om huvudkontot ska omvärderas i redovisningen, välj då **Omräkning i utländsk valuta**. Om huvudkontot inte ska omvärderas (till exempel för kundreskontra och leverantörsreskontra, om dessa omvärderats i redovisningsjournalerna), rensa då detta alternativ.
@@ -49,13 +48,13 @@ Innan du kan köra omvärderingsprocessen måste följande inställningar göras
 -   Ange **valutakurstyp**. Om valutakurstypen inte definieras på huvudkontot, kommer denna valutakurstyp att användas i samband med omräkning i utländsk valuta.
 -   Ange konton för realiserad vinst, realiserad förlust, orealiserad vinst och orealiserad förlust för valutaomvärdering. Kontona för realiserad vinst och realiserad förlust används för kvittade kundreskontra- och leverantörsreskontratransaktioner, och kontona för orealiserad vinst och orealiserad förlust används för öppna transaktioner samt huvudkonton för redovisning.
 
--   På sidan **Valutaomvärderingskonton**:
+-   På sidan **Valutaombedömningskonton**:
 -   Välj olika konton för omvärdering valuta för respektive valuta och företag. Om inga konton har definierats används kontona från sidan **Redovisning**.
 
 ## <a name="process-foreign-currency-revaluation"></a>Bearbeta en omvärdering i utländsk valuta
 Efter slutförda inställningar, använd sidan **Omräkning i utländsk valuta** för att utvärdera beloppen i huvudsidorna. Du kan köra processen i realtid eller schemalägga den för att köra med en batch. 
 
-Sidan **Omräkning i utländsk valuta** visar historiken för respektive omvärderingsprocess, inklusive när processen kördes, vilka kriterier som angavs, en länk till den verifikation som skapades för omvärderingen, samt en post om en tidigare omvärdering har återförts. Välj knappen **Omräkning i utländsk valuta** om du vill köra omvärderingsprocessen. 
+Sidan **Omräkning i utländsk valuta** visar historiken för respektive ombedömningsprocess, inklusive när processen kördes, vilka kriterier som angavs, en länk till den verifikation som skapades för omvärderingen, samt en post om en tidigare omvärdering har återförts. Välj knappen **Omräkning i utländsk valuta** om du vill köra ombedömningsprocessen. 
 
 Värdena **Från datum** och **Till datum** anger datumintervallet för beräkningen av den utländska valutabalans som ska omvärderas. När du omvärderar vinst- och förlustkonton, omvärderas summan av alla transaktioner som förekommer inom datumintervallet. När du omvärderar balansräkningskonton, ignoreras från-datum. Istället bestäms saldot som ska omvärderas genom att gå från början av räkenskapsåret fram till slutdatum. 
 
@@ -63,16 +62,16 @@ Det **Kursdatum** som kan användas för att definiera det datum då valutakurse
 
 Välj vilka huvudkonton som ska omvärderas: Alla, Balansräkning eller Vinst och förlust. Endast huvudkonton som markerats för omvärdering (på sidan för huvudkonto) kommer att omvärderas. Om du vill begränsa intervallet för huvudkonton ytterligare, använd fliken Poster **att inkludera** för att ange ett intervall med huvudkonton eller enskilda huvudkonton. 
 
-Omvärderingsprocessen kan köras för en eller flera juridiska personer. Sökningen visar endast de juridiska personer som du har tillgång till. Välj den juridiska person som du vill köra utvärderingsprocessen för. 
+Ombedömningsprocessen kan köras för en eller flera juridiska personer. Sökningen visar endast de juridiska personer som du har tillgång till. Välj den juridiska person som du vill köra bedömningsprocessen för. 
 
 Omvärderingen kan köras för en eller flera utländska valutor. Sökningen omfattar alla valutor som har bokförts inom det angivna datumintervallet för typen av huvudkonto (balansräkning eller resultaträkning) för de juridiska personer som du har valt att omvärdera. Redovisningsvalutan tas med i listan, men inget omvärderas om redovisningsvalutan har valts. 
 
-Ange **Förhandsgranska före bokföring** till **Ja** om du vill granska resultatet av omvärderingen av redovisningen. Förhandsgranskningen av redovisningen skiljer sig från simuleringen av omräkningen i utländsk valuta för kund- och leverantörsreskontra. Kund- och leverantörsreskontrasimuleringen är en rapport, men redovisning har en förhandsgranskning som kan bokföras utan att omvärderingsprocessen behöver köras på nytt. Resultatet av förhandsgranskningen kan exporteras till Microsoft Excel om du vill behålla historiken för hur beloppen beräknades. Du kan inte använda batchbearbetning om du vill granska resultatet av omvärderingen. Från förhandsgranskningen har användaren möjlighet att bokföra resultaten för juridiska personerna via knappen **Post**. Om det finns ett problem med resultaten för en juridisk person, har användaren också möjlighet att bokföra en deluppsättning av de juridiska personerna med hjälp av knappen **Välj valda juridiska personer att bokföra**. 
+Ange **Förhandsgranska före bokföring** till **Ja** om du vill granska resultatet av omvärderingen av redovisningen. Förhandsgranskningen av redovisningen skiljer sig från simuleringen av omräkningen i utländsk valuta för kund- och leverantörsreskontra. Kund- och leverantörsreskontrasimuleringen är en rapport, men redovisning har en förhandsgranskning som kan bokföras utan att ombedömningsprocessen behöver köras på nytt. Resultatet av förhandsgranskningen kan exporteras till Microsoft Excel om du vill behålla historiken för hur beloppen beräknades. Du kan inte använda batchbearbetning om du vill granska resultatet av omvärderingen. Från förhandsgranskningen har användaren möjlighet att bokföra resultaten för juridiska personerna via knappen **Post**. Om det finns ett problem med resultaten för en juridisk person, har användaren också möjlighet att bokföra en deluppsättning av de juridiska personerna med hjälp av knappen **Välj valda juridiska personer att bokföra**. 
 
 När processen för omräkning i utländsk valuta är klar skapas en post där du kan spåra historiken för respektive körning.  En separat post skapas för varje juridisk person och bokföringsskikt.
 
 ## <a name="calculate-unrealized-gainloss"></a>Beräkna orealiserad vinst/förlust
-Orealiserade vinst-/förlusttransaktioner skapas på olika sätt mellan redovisningomvärderingen och omvärderingsprocessen för kund- respektive leverantörsreskonto. I kund- och leverantörsreskontra återförs den föregående omvärderingen helt (förutsatt att transaktionen ännu inte har kvittats), och en ny omvärderingstransaktion skapas för den orealiserade vinsten/förlusten baserat på den nya valutakursen. Detta sker eftersom vi omvärderar varje enskild transaktion i kund- och leverantörsreskontra. Föregående omvärdering återförs inte i redovisningen. I stället skapas en transaktion för deltat mellan saldot för huvudkontot, inklusive eventuella föregående omvärderingsbelopp, och det nya värdet baserat på valutakursen för kursdatumet. 
+Orealiserade vinst-/förlusttransaktioner skapas på olika sätt mellan redovisningomvärderingen och ombedömningsprocessen för kund- respektive leverantörsreskonto. I kund- och leverantörsreskontra återförs den föregående omvärderingen helt (förutsatt att transaktionen ännu inte har kvittats), och en ny ombedömningstransaktion skapas för den orealiserade vinsten/förlusten baserat på den nya valutakursen. Detta sker eftersom vi omvärderar varje enskild transaktion i kund- och leverantörsreskontra. Föregående omvärdering återförs inte i redovisningen. I stället skapas en transaktion för deltat mellan saldot för huvudkontot, inklusive eventuella föregående ombedömningsbelopp, och det nya värdet baserat på valutakursen för kursdatumet. 
 
 **Exempel** Följande saldon finns för huvudkonto 110110.
 
@@ -97,7 +96,7 @@ Inga nya transaktioner bokförs för månaden februari.  Huvudkontot omvärderas
 
 | Aktuell balans i transaktionsvaluta | Aktuell balans i redovisningsvaluta | Valutakurs vid omvärdering | Nytt belopp för redovisningsvaluta | Orealiserad vinst/förlust    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 833,33 USD (1 000 - 166,67)                 | 250.0000                         | 1 250 USD (500 x 2,5)               | 416,67 vinst (1 250 – 833,33) |
+| 500 EUR                                     | 833,33 USD (1 000 – 166,67)                 | 250.0000                         | 1 250 USD (500 x 2,5)               | 416,67 vinst (1 250 – 833,33) |
 
 Följande redovisningspost skapas.
 
@@ -113,6 +112,3 @@ Du kan ångra resultatet för omvärderingen av datumordning, men du kanske äve
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

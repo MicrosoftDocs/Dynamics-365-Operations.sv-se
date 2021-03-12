@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c4561a1193971b131ab2b6c8d64f848d8155c1fc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448125"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975774"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Ekonomisk konsolidering och valutaregistrering – översikt
 
@@ -125,7 +124,7 @@ Du kan ange det datum då elimineringsregeln träder i kraft och det datum då d
 
 Du kan definiera de faktiska bearbetningsreglerna genom att klicka på **Rader** efter att du har angett grundläggande egenskaper. Det finns två olika alternativ för elimineringar: du kan eliminera nettoändringsbeloppet eller att definiera ett fast belopp.
 
-Välj källkontona. Du kan använda asterisk (\*) som jokertecken. Till exempel, **1\*** väljer alla konton som startar med en **1** som datakälla för allokeringen.
+Välj källkontona. Du kan använda asterisk (\*) som jokertecken. **1\**_ väljer till exempel alla konton som startar med _* 1** som datakälla för allokeringen.
 
 När du har valt dina källkonton, använd fältet **Kontospecifikation** för att ange kontot som används från destinationsföretaget. Välj **Källa** om du vill använda samma huvudkonto som angetts i källkontot. Om du väljer **Användardefinierad** måste du ange ett destinationskonto.
 
@@ -146,7 +145,7 @@ Välj det företag som utgör grunden för den konsoliderade datan, och välj se
 Mer information och exempel finns i [Elimineringsregler](./elimination-rules.md).
 
 ## <a name="currency-revaluation-in-a-consolidation-company"></a>Valutaomvärdering i ett konsolideringsföretag
-När du konsolidera data från en redovisningsvaluta till en annan måste du fortfarande köra valutaomvärdering om det sker en förändring i valutakurser, så att ditt konto saldo är korrekt omvärderas. När du ursprungligen konsolidera data, använd **valutakursdifferens** flik för att välja den första växelkurser för översättning under konsolideringsprocessen. Efter en ny valutakurs registreras (t.ex. i nästa månad), du måste omvärdera den kontosaldon. Den orealiserade vinster eller förluster som sedan uppdateras baserat på den nya växelkursen och datum.
+När du konsolidera data från en redovisningsvaluta till en annan måste du fortfarande köra valutaomvärdering om det sker en förändring i valutakurser, så att ditt konto saldo är korrekt omvärderas. När du ursprungligen konsolidera data, använd **valutakursdifferens** flik för att välja den första valutakurser för översättning under konsolideringsprocessen. Efter en ny valutakurs registreras (t.ex. i nästa månad), du måste omvärdera den kontosaldon. Den orealiserade vinster eller förluster som sedan uppdateras baserat på den nya valutakursen och datum.
 
 Läs mer om valutaomvärdering i ett konsolideringsföretag i [Valutaomvärdering i ett konsolideringsföretag](currency-revaluation-consolidation-company.md).
 
@@ -182,6 +181,3 @@ Nedan följer några konsolideringsscenarier som Ekonomisk rapportering stöder:
 
 ## <a name="generating-consolidated-financial-statements"></a>Generera konsoliderade bokslut
 För information om scenarier där du kan skapa konsoliderade bokslut, se [skapa konsoliderade bokslut](./generating-consolidated-financial-statements.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

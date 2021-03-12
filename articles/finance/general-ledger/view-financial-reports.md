@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 10334
 ms.assetid: d20f435f-fb65-4068-ab09-7efc7be683a6
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c368259af9454af94da217585b2a1d01ea75d834
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 066f37c399754f795639ab04ddca09abc01a43eb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448009"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975467"
 ---
 # <a name="view-financial-reports"></a>Visa ekonomiska rapporter
 
@@ -41,7 +40,7 @@ Välj ett rapportnamn om du vill öppna en rapport. Första gången rapporten ö
 Ekonomiska rapporter kan innehålla flera detaljnivåer. Den ekonomiska nivån är den första nivån som visas när du öppnar en ekonomisk rapport. Om du vill gå till kontonivån markerar du uppgifterna du vill söka nedåt i. Om du exempelvis vill visa kontodetaljer för försäljning markerar du försäljningsuppgifterna du vill utforska. Från kontonivån kan du söka nedåt för att visa transaktionerna som utgör kontosaldot. Det finns två sätt att visa transaktioner på: rapporttransaktioner och verifikationstransaktioner.
 
 -   **Rapporttransaktioner** – transaktioner visas i en formaterad vy som ingår i den ekonomiska rapporten. Visa transaktioner i den formaterade vyn genom att markera uppgifterna du vill detaljgranska och sedan klicka på **Detaljgranska till rapporttransaktionsnivå**.
--   **Verifikationstransaktioner** – en verifikationstransaktionsförfrågan öppnas där du kan visa transaktioner. Visa transaktioner i verifikationstransaktionsförfrågan genom att markera uppgifterna du vill detaljgranska och sedan klicka på **Öppna verifikationstransaktioner**.
+-   **Verifikationstransaktioner** – en verifikationstransaktionsbegäran öppnas där du kan visa transaktioner. Visa transaktioner i verifikationstransaktionsbegäran genom att markera uppgifterna du vill detaljgranska och sedan klicka på **Öppna verifikationstransaktioner**.
 
 Om informationen är budgetdata, kan du välja att öppna budgetkontoposter. Om du vill stänga någon av nivåerna i rapporten och gå tillbaka till starten, kan du antingen trycka på Esc eller klicka på knappen **Stäng** (**X**) överst till höger.
 
@@ -87,6 +86,3 @@ Exportera en ekonomisk rapport genom att klicka på **Exportera** i åtgärdsfö
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

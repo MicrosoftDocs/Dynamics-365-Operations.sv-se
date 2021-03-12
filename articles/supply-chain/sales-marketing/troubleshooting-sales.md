@@ -8,10 +8,9 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SalesTable, SalesTableListPage
+ms.search.form: SalesTable, SalesTableListPage, SalesTableListPage_SalesCancelOrder
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 6e51723915892f465ce09d09ee9ed622bab9451e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c9a5b7a5e8cac7f8816233dd2d7ff1a7f84ea480
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437625"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974795"
 ---
 # <a name="troubleshoot-sales-orders"></a>Felsök försäljningsorder
 
@@ -59,6 +58,8 @@ Du kan skapa en inköpsorder från en försäljningsorder. För mer information,
 Du kan endast annullera försäljningsorder och returorder som har statusen *skapad*. Mer information finns i [Avbryt returorder](../service-management/cancel-return-order.md).
 
 ## <a name="when-i-try-to-cancel-a-sales-order-i-receive-a-reservations-cannot-be-removed-because-there-is-work-created-which-relies-on-the-reservations-error"></a>När jag försöker annullera en försäljningsorder får jag felet "reservationer kan inte tas bort eftersom det finns ett arbete skapat som använder reservationerna".
+
+Felkod: WAX4661
 
 Om arbete associeras med en försäljningsorder kan du inte annullera försäljningsordern förrän arbetet har annullerats och återförts. Detta krav gäller även om det arbete som är kopplat till försäljningsordern stängs.
 
@@ -111,6 +112,3 @@ Supply Chain Management stöder för närvarande inte beräkningen av provisione
 Buntad artikel är inte tillgänglig för inköpsordern eftersom du, om du granskar försäljningsorderraderna för buntad artikel ser du att kvantiteten är *0* (noll) och statusvärdet *annullerad*. Detta beteende är av design. Försäljningsordern köper endast komponenterna i buntad artikel. Den handlar inte om själva buntade artikeln.
 
 Om du måste köpa en buntad bör du fundera över om du måste markera det som buntad artikel, eftersom denna funktion verkligen är utformad för scenarier för intäktsredovisning. Mer information om buntad artikel, se [buntade](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

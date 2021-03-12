@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3281
 ms.assetid: 1b86763d-d47c-4a6a-a9a6-d97a736750da
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dd4a8726ca194de2e5d95128659f3b212eaace5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f188e440922436511db15e1842f1891c2da5b191
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448065"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976076"
 ---
 # <a name="reduce-balance-depreciation"></a>Degressiv avskrivning
 
@@ -58,7 +57,7 @@ Om du till exempel väljer Årligen, bokförs årets avskrivning alltså bara en
 
 ### <a name="fiscal"></a>Skatt
 
-Om du väljer Räkenskapsår i fältet Avskrivning används den linjära avskrivningsmetoden. Det beräknas utifrån räkenskapsåret, som ställs in på sidan Räkenskapskalendrar som väljs på sidan Redovisning. Exempelvis för räkenskapsåret 1 juli - 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje räkenskapsperiod. Längden på nästa räkenskapsår baseras på de räkenskapsperioder som du ställer in när du skapar ett nytt räkenskapsår på sidan Räkenskapskalendrar.
+Om du väljer Räkenskapsår i fältet Avskrivning används den linjära avskrivningsmetoden. Det beräknas utifrån räkenskapsåret, som ställs in på sidan Räkenskapskalendrar som väljs på sidan Redovisning. Exempelvis för räkenskapsåret 1 juli – 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje räkenskapsperiod. Längden på nästa räkenskapsår baseras på de räkenskapsperioder som du ställer in när du skapar ett nytt räkenskapsår på sidan Räkenskapskalendrar.
 
 
 Om du väljer Räkenskapsår har du följande alternativ i fältet Räkenskapsår.
@@ -74,9 +73,9 @@ Med metoden för degressiv avskrivning beräknas 30 procent av avskrivningsbasen
 
 | Period | Beräkning av årligt avskrivningsbelopp | Bokfört nettovärde i slutet av året |
 |--------|-------------------------------------------|---------------------------------------|
-| År 1 | (11 000 - 1 000) \* 30% = 3 000           | (11 000 - 1 000) - 3 000 = 7 000      |
-| År 2 | (7 000 - 1 000) \* 30% = 1 800            | (7 000 -1 800) = 5 200                |
-| År 3 | (5 200 - 1 000) \* 30% = 1 260            | (5 200 - 1 260) = 3 940               |
+| År 1 | (11 000 – 1 000) \* 30% = 3 000           | (11 000 – 1 000) – 3 000 = 7 000      |
+| År 2 | (7 000 – 1 000) \* 30% = 1 800            | (7 000 -1 800) = 5 200                |
+| År 3 | (5 200 – 1 000) \* 30% = 1 260            | (5 200 – 1 260) = 3 940               |
 
 
 -
@@ -85,6 +84,3 @@ Med metoden för degressiv avskrivning beräknas 30 procent av avskrivningsbasen
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

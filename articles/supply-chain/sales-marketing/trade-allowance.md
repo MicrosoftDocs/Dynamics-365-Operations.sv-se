@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: MCRBrokerClaims, MCRBrokerWriteOffReasonPrompt, MCRRoyaltyVendTable, MCRRoyaltyVendTrans, PdsCustRebateGroup, PdsRebateAgreement, TAMCopyTradePromotions, TAMDeduction, TAMDeductionCreate, TAMDeductionDenyReason, TAMDeductionParmDeny, TAMDeductionParmMassUpdate, TAMDeductionParmMatch, TAMDeductionParmSplit, TAMDeductionParmWriteOff, TAMDeductionType, TAMDeductionWriteOffReason, TAMFundManagement, TAMFundUsage, TAMListPage, TAMMarketingObjective, TAMMerchEventType, TAMOneTimePromotion, TAMPromoCompareGraph, TAMPromoStatistic, TAMPromotionAnalysisSummary, TAMPromotionParameters, TAMPromotionPeriod, TAMTemplateListPage, TAMTradePromotionAnalysis, TAMTradePromotions, TAMWhatIfPromotionAnalysis
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 13b665427a4caf206e0a3b3aca6b04c1529b9206
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 15f324f66240380f698dbc67b95f3bea19314a18
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437624"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974920"
 ---
 # <a name="trade-allowance-management"></a>Hantering av handelsavdrag
 
@@ -200,6 +199,3 @@ Om du vill få en mer analytisk översikt av de olika resultatmåtten för kampa
 
 Om du vill få en mer analytisk översikt av de olika resultatmåtten för kampanjen kan du använda analysvyn. Gå till analysvyn genom att klicka på **Försäljning och marknadsföring**\>**Handelsavdrag**\>**Handelsavdragsavtal**. Klicka på **Analys** på åtgärdsfönstret. 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

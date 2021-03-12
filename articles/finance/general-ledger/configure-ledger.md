@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Ledger
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 929ab7ae66a217de836ce49373faed76325c4d3a
-ms.sourcegitcommit: ac0a676c91e3053ad7f9432d576c9af3ff98a99a
+ms.openlocfilehash: 5a7fcda435fd957edbbe09d796685c0c742dc6a8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "4448225"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975826"
 ---
 # <a name="configure-ledgers"></a>Konfigurera redovisningar
 
@@ -77,11 +76,8 @@ Om transaktioner bokförs i en annan valuta, omvandlar systemet automatiskt tran
 
 Om du använder budgetfunktionen kan du också ställa in fältet **Valutakurs för budget** för att ange den valutakurs som ska användas för att konvertera budgettransaktioner från en valuta till en annan.
 
-Om du använder två valutor, eller om du använder en enskild valuta men transaktioner bokförs i en annan valuta, måste du konfigurera snabbfliken **Konton för valutaomräkning** på sidan **Redovisning**. På den här snabbfliken definierar du de realiserade och orealiserade vinst- och förlustkonton som ska användas som standard när transaktioner bokförs, om inget konto har angetts på sidan **Valutaomvärderingskonton**. (Sidan **Valutaomvärderingskonton** används för att konfigurera olika konton för realiserade och orealiserade vinster och förluster för respektive valuta.)
+Om du använder två valutor, eller om du använder en enskild valuta men transaktioner bokförs i en annan valuta, måste du konfigurera snabbfliken **Konton för valutaomräkning** på sidan **Redovisning**. På den här snabbfliken definierar du de realiserade och orealiserade vinst- och förlustkonton som ska användas som standard när transaktioner bokförs, om inget konto har angetts på sidan **Valutaombedömningskonton**. (Sidan **Valutaombedömningskonton** används för att konfigurera olika konton för realiserade och orealiserade vinster och förluster för respektive valuta.)
 
 Realiserade vinster och förluster är vinster och förluster som görs från slutförda transaktioner. De registreras på vinst- och förlusträkningen. Orealiserade vinster och förluster är vinster och förluster som har materialiserats, men transaktionen är inte slutförd. Med andra ord, du har till exempel bokfört en faktura, men fakturan har inte kvittats och betalats ännu. Orealiserade vinster och förluster redovisas i balansräkningen.
 
 Mer information om att använda två valutor finns i [Dubbel valuta](dual-currency.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

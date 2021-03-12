@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,16 +18,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 3eaa25f0befcff448250ba2cce8e568fa4a4c707
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ddc6159480d1ff9fb823dbd95465c991ae51f9c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437862"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974995"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synkronisering av försäljningsorder direkt mellan Sales och Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningorder direkt mellan Dynamics 365 Sales och Dynamics 365 Supply Chain Management.
 
@@ -64,8 +65,8 @@ Följande synkroniseringsuppgifter krävs före synkronisering av huvuden och ra
 
 | Hantering av underleverantörer  | Försäljning             |
 |-------------------------|-------------------|
-| CDS-försäljningsorderrubrik | Försäljningsorder       |
-| CDS-försäljningsorderrader   | Försäljningsorderinformation |
+| Dataverse försäljningsorderhuvuden | Försäljningsorder       |
+| Dataverse-försäljningsorderrader   | Försäljningsorderinformation |
 
 ## <a name="entity-flow"></a>Flöde för entitet
 
@@ -75,7 +76,7 @@ Du behöver inte skapa order i Sales. Du kan skapa nya försäljningsorder i Sup
 
 I Supply Chain Management hjälper filter i mallen till att endast relevanta försäljningsorder inkluderas i synkroniseringen:
 
-- På försäljningsordern härstammar både beställande kund och fakturerande kund från Sales inkluderas i synkroniseringen. I Supply Chain Management används fälten **Beställande kund hanteras externt** och **Fakturakund hanteras externt** för att filtrera försäljningsorder från dataenheterna.
+- På försäljningsordern härstammar både beställande kund och fakturerande kund från Sales inkluderas i synkroniseringen. I Supply Chain Management används kolumner **Beställande kund hanteras externt** och **Fakturakund hanteras externt** för att filtrera försäljningsorder från datatabellerna.
 - Försäljningsordern i Supply Chain Management måste bekräftas. Endast bekräftade försäljningsorder eller försäljningsorder med högre bearbetningsstatus, exempelvis **Levererad** eller **Fakturerad** synkroniseras till Sales.
 - När en försäljningsorder skapas eller ändras måste batch-jobbet **Beräkna försäljningstotalen** i Supply Chain Management köras. Endast försäljningsorder med beräknade försäljningstotaler synkroniseras med Sales.
 
@@ -103,10 +104,10 @@ När en försäljningsorderrad synkroniseras från Sales till Supply Chain Manag
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Lösningen potentiell kund till kontanter för Sales
 
-Nya fält har lagst till i enheten **Order** och visas på sidan:
+Nya kolumner har lagts till i tabellen **Order** och visas på sidan:
 
 - **Hanteras externt** - Värdet anges som **Ja** när ordern kommer från Supply Chain Management.
-- **Bearbetningsstatus** - Detta fält visar bearbetningsstatusen för ordern i Supply Chain Management. Följande värden finns:
+- **Bearbetningsstatus** - Denna kolumn visar bearbetningsstatusen för ordern i Supply Chain Management. Följande värden finns:
 
     - **Utkast** – inledande status när en order skapas i Sales. I Sales kan endast order med denna bearbetningsstatus redigeras.
     - **Aktiv** – statusen efter att ordern har aktiverats i Sales med hjälp av knappen **aktivera**.
@@ -141,7 +142,7 @@ Innan du synkroniserar försäljningsorder är det viktigt att du uppdaterar fö
 - Gå till **inställningar** &gt; **Administration** &gt; **systeminställningar** &gt; **Sales** och säkerställ att följande inställningar används:
 
     - Alternativet **Använd systemets prisberäkningssystem** är **Ja**.
-    - Fältet **Metod för rabattberäkning** har tilldelats **radartikel**.
+    - Kolumnen **Metod för rabattberäkning** har tilldelats **radartikel**.
 
 ### <a name="setup-in-supply-chain-management"></a>Konfigurera i Supply Chain Management
 
@@ -151,10 +152,10 @@ Om du också använder integration av arbetsorder måste du ställa in försälj
 
 1. Gå till **Försäljning och marknadsföring** \> **Inställningar** \> **Försäljningsorder** \> **Alla försäljningsorder**.
 2. Välj **Ny** för att skapa ett nytt försäljningsursprung.
-3. I fältet **Försäljningsursprung** anger du ett namn för försäljningsursprung som t.ex. **Försäljningsorder**.
-4. I fältet **Beskrivning** anger du en beskrivning såsom **Försäljningsorder från försäljning**.
+3. I kolumnen **Försäljningsursprung** anger du ett namn för försäljningsursprung som t.ex. **Försäljningsorder**.
+4. I kolumnen **Beskrivning** anger du en beskrivning såsom **Försäljningsorder från försäljning**.
 5. Markera kryssrutan **Tilldelning av ursprungstyp**.
-6. Ange fältet **Typ av försäljningsursprung** till **Försäljningsorder av arbetsorder**.
+6. Ange kolumnen **Typ av försäljningsursprung** till **Försäljningsorder av arbetsorder**.
 7. Välj **Spara**.
 
 ### <a name="setup-in-the-sales-orders-sales-to-supply-chain-management---direct-data-integration-project"></a>Inställningen i försäljningsorder (Sales till Supply Chain Management) - Direkt dataintegreringsprojekt
@@ -181,12 +182,12 @@ Om du också använder integration av arbetsorder måste du ställa in försälj
 ## <a name="template-mapping-in-data-integration"></a>Mallmappning i dataintegrering
 
 > [!NOTE]
-> Fälten **betalningsvillkor**, **fraktvillkor**, **leveransvillkor**, **leveranssätt** och **leveransläge** tillhör inte standardmappningarna. Om du vill mappa dessa fält måste du konfigurera en värdemappning som är specifik för data i organisationer som enheten synkroniseras mellan.
+> Kolumnerna **betalningsvillkor**, **fraktvillkor**, **leveransvillkor**, **leveranssätt** och **leveransläge** tillhör inte standardmappningarna. Om du vill mappa dessa kolumner måste du konfigurera en värdemappning som är specifik för data i organisationer som tabellen synkroniseras mellan.
 
 I följande illustrationer visas ett exempel på en mallmappning i dataintegrering.
 
 > [!NOTE]
-> Mappningen visar vilken fältinformation som kommer att synkroniseras från Supply Chain Management till Sales eller från Supply Chain Management till Sales.
+> Mappningen visar vilken kolumninformation som kommer att synkroniseras från Supply Chain Management till Sales eller från Supply Chain Management till Sales.
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Försäljningsorder (Supply Chain Management till Sales) - direkt: OrderHeader
 
@@ -207,6 +208,3 @@ I följande illustrationer visas ett exempel på en mallmappning i dataintegreri
 ## <a name="related-topics"></a>Relaterade ämnen
 
 [Potentiell kund till kontanter](prospect-to-cash.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

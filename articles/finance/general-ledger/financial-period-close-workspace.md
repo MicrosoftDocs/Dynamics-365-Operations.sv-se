@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f96da7f7f5374fb34e317c416238a48c3fe7d05
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 9c28f9e9eb3a4b93d17413e33c7b389e2d5829c7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4448233"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975724"
 ---
 # <a name="financial-period-close-workspace"></a>Arbetsyta för räkenskapsperiodens stängning
 
@@ -87,7 +86,7 @@ Du använder en mall för ekonomisk stängning för att definiera alla aktivitet
 
 Du kan tilldela en uppgift i mallen till ett eller flera företag där uppgiften tillämpas. Om en annan person tilldelas att slutföra arbetsinsatsen i respektive företag, kan det vara en god idé att skapa flera åtgärder för samma arbetsinsats. Skapa en uppgift för varje företag. 
 
-Menyobjektet **Uppgiftslänk** är associerat med uppgiftens arbetsinsats, och kan användas för att gå direkt till motsvarande sida från aktivitetslänken på arbetsytan. En avslutningsaktivitet i syfte att köra valutaomvärderingsprocessen för leverantörsreskontra kan exempelvis kopplas i till tillhörande sida för **Omvärdering i utländsk valuta**. Du kan även länka till en extern URL-adress. 
+Menyobjektet **Uppgiftslänk** är associerat med uppgiftens arbetsinsats, och kan användas för att gå direkt till motsvarande sida från aktivitetslänken på arbetsytan. En avslutningsaktivitet i syfte att köra valutaombedömningsprocessen för leverantörsreskontra kan exempelvis kopplas i till tillhörande sida för **Omvärdering i utländsk valuta**. Du kan även länka till en extern URL-adress. 
 
 > [!TIP]
 > Om du vill länka en viss rapport från en hanteringsrapportör till en bokslutsuppgift, kan du använda rapportwebbadressen. För att öppna rapportwebbadressen öppnar du rapporten i rapportdesignern och klickar på **Fil** &gt; **Visa rapport** för att öppna rapporten i en webbläsare. Du kan sedan kopiera URL:n i webbläsarens adressfält och klistra in den i **uppgiftlänkens** **URL**-fält. 
@@ -108,6 +107,3 @@ När ett stängningsschema är slutfört väljer du alternativet **Stängd** fö
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
