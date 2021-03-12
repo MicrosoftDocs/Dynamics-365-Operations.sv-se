@@ -1,6 +1,6 @@
 ---
 title: Filtrera koncerninterna order för att undvika synkronisering av order och orderrader
-description: Avsnittet beskriver hur du filtrerar koncerninterna order för att undvika synkronisering av order och orderrader.
+description: I det här avsnittet beskrivs hur du filtrerar koncerninterna order så att entiteterna Order och Orderrader inte synkroniseras.
 author: negudava
 manager: tfehr
 ms.date: 11/09/2020
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,49 +18,51 @@ ms.search.industry: ''
 ms.author: negudava
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 6c5e1e2467673badd20366d3bd8e1b93b8078b26
-ms.sourcegitcommit: 0eb33909a419d526eb84b4e4b64d3595d01731ef
+ms.openlocfilehash: 342db8c1b4337145bfd61f5698ff6de25434a400
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4701043"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796616"
 ---
-# <a name="filter-intercompany-orders-to-avoid-synchronizing-orders-and-orderlines"></a><span data-ttu-id="9ff37-103">Filtrera koncerninterna order för att undvika synkronisering av order och orderrader</span><span class="sxs-lookup"><span data-stu-id="9ff37-103">Filter intercompany orders to avoid synchronizing Orders and OrderLines</span></span>
+# <a name="filter-intercompany-orders-to-avoid-syncing-orders-and-orderlines"></a><span data-ttu-id="ec00b-103">Filtrera koncerninterna order för att undvika synkronisering av order och orderrader</span><span class="sxs-lookup"><span data-stu-id="ec00b-103">Filter intercompany orders to avoid syncing Orders and OrderLines</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="9ff37-104">Du kan filtrera koncerninterna order för att undvika synkronisering av entiteter i **order** och **orderrader**.</span><span class="sxs-lookup"><span data-stu-id="9ff37-104">You can filter intercompany orders to avoid synchronizing the **Orders** and **OrderLines** entities.</span></span> <span data-ttu-id="9ff37-105">I vissa fall är inte den koncerninterna orderinformationen nödvändig i kundengagemangsappen.</span><span class="sxs-lookup"><span data-stu-id="9ff37-105">In some scenarios, the intercompany order details are not necessary in customer engagement app.</span></span>
+<span data-ttu-id="ec00b-104">Du kan filtrera koncerninterna order så att tabellerna **order** och **orderrader** inte synkroniseras.</span><span class="sxs-lookup"><span data-stu-id="ec00b-104">You can filter intercompany orders so that the **Orders** and **OrderLines** tables aren't synced.</span></span> <span data-ttu-id="ec00b-105">I vissa fall är inte den koncerninterna orderinformationen nödvändig i kundengagemangsappen.</span><span class="sxs-lookup"><span data-stu-id="ec00b-105">In some scenarios, the intercompany order details aren't required in a customer engagement app.</span></span>
 
-<span data-ttu-id="9ff37-106">Alla standardentiteter för Common Data Service utökas med referenser till **IntercompanyOrder** och mappningar med dubbelriktad skrivning ändras så att de refererar till de ytterligare fälten i filtren.</span><span class="sxs-lookup"><span data-stu-id="9ff37-106">Each of the standard Common Data Service entities is extended with references to the **IntercompanyOrder** field, and the dual-write maps are modified to refer to the additional fields in the filters.</span></span> <span data-ttu-id="9ff37-107">Resultatet blir att koncerninterna order inte längre synkroniseras.</span><span class="sxs-lookup"><span data-stu-id="9ff37-107">The result is that the intercompany orders are no longer synchronized.</span></span> <span data-ttu-id="9ff37-108">Denna process undviker onödiga data i kundengagemangsappen.</span><span class="sxs-lookup"><span data-stu-id="9ff37-108">This process avoids unnecessary data in the customer engagement app.</span></span>
+<span data-ttu-id="ec00b-106">Alla standardtabeller för Dataverse utökas med referenser till kolumnen **IntercompanyOrder** och mappningar med dubbelriktad skrivning ändras så att de refererar till de ytterligare kolumnerna i filtren.</span><span class="sxs-lookup"><span data-stu-id="ec00b-106">Each standard Dataverse table is extended through references to the **IntercompanyOrder** column, and the dual-write maps are modified so that they refer to the additional columns in the filters.</span></span> <span data-ttu-id="ec00b-107">Därför synkroniseras inte längre koncerninterna order.</span><span class="sxs-lookup"><span data-stu-id="ec00b-107">Therefore, the intercompany orders are no longer synced.</span></span> <span data-ttu-id="ec00b-108">Denna process hjälper till att undvika onödiga data i kundengagemangsappen.</span><span class="sxs-lookup"><span data-stu-id="ec00b-108">This process helps prevent unnecessary data in the customer engagement app.</span></span>
 
-1. <span data-ttu-id="9ff37-109">Lägg till en referens till **IntercompanyOrder** på **CDS-försäljningsorderrubriker**.</span><span class="sxs-lookup"><span data-stu-id="9ff37-109">Add a reference to **IntercompanyOrder** to **CDS Sales Order Headers**.</span></span> <span data-ttu-id="9ff37-110">Den fylls endast i för koncerninterna order.</span><span class="sxs-lookup"><span data-stu-id="9ff37-110">It is populated on only intercompany orders.</span></span> <span data-ttu-id="9ff37-111">Fältet **IntercompanyOrder** finns i **SalesTable**.</span><span class="sxs-lookup"><span data-stu-id="9ff37-111">The field **IntercompanyOrder** is available in **SalesTable**.</span></span>
+1. <span data-ttu-id="ec00b-109">Utöka tabellen **CDS-försäljningsorderrubriker** genom att lägga till en referens till kolumnen **IntercompanyOrder**.</span><span class="sxs-lookup"><span data-stu-id="ec00b-109">Extend the **CDS Sales Order Headers** table by adding a reference to the **IntercompanyOrder** column.</span></span> <span data-ttu-id="ec00b-110">Den här kolumnen fylls bara i på koncerninterna order.</span><span class="sxs-lookup"><span data-stu-id="ec00b-110">This column is filled in only on intercompany orders.</span></span> <span data-ttu-id="ec00b-111">Kolumnen **IntercompanyOrder** finns i tabellen **SalesTable**.</span><span class="sxs-lookup"><span data-stu-id="ec00b-111">The **IntercompanyOrder** column is available in the **SalesTable** table.</span></span>
 
-    :::image type="content" source="media/filter-sales-order-header-field-display.png" alt-text="Mappa mellanlagring till mål, SalesOrderHeader":::
-    
-2. <span data-ttu-id="9ff37-113">När **CDS-försäljningsorderrubriker** har utökats är fältet **IntercompanyOrder** tillgängligt i mappningen.</span><span class="sxs-lookup"><span data-stu-id="9ff37-113">After **CDS Sales Order Headers** is extended, the **IntercompanyOrder** field is available in the mapping.</span></span> <span data-ttu-id="9ff37-114">Använd ett filter med `INTERCOMPANYORDER == ""` som frågesträng.</span><span class="sxs-lookup"><span data-stu-id="9ff37-114">Apply a filter with `INTERCOMPANYORDER == ""` as the query string.</span></span>
+    :::image type="content" source="media/filter-sales-order-header-field-display.png" alt-text="Mappa mellanlagring till målsida för CDS-försäljningsorderrubriker":::
 
-    :::image type="content" source="media/filter-sales-order-header.png" alt-text="Försäljningsorderrubriker, redigera fråga":::
+2. <span data-ttu-id="ec00b-113">När **CDS-försäljningsorderrubriker** har utökats är kolumnen **IntercompanyOrder** tillgängligt i mappningen.</span><span class="sxs-lookup"><span data-stu-id="ec00b-113">After **CDS Sales Order Headers** is extended, the **IntercompanyOrder** column is available in the mapping.</span></span> <span data-ttu-id="ec00b-114">Använd ett filter med `INTERCOMPANYORDER == ""` som frågesträng.</span><span class="sxs-lookup"><span data-stu-id="ec00b-114">Apply a filter that has `INTERCOMPANYORDER == ""` as the query string.</span></span>
 
-3. <span data-ttu-id="9ff37-116">Lägg till en referens till **IntercompanyInventTransId** för **CDS-försäljningsorderrader**.</span><span class="sxs-lookup"><span data-stu-id="9ff37-116">Add a reference to **IntercompanyInventTransId** to **CDS Sales Order Lines**.</span></span>  <span data-ttu-id="9ff37-117">Den fylls endast i för koncerninterna order.</span><span class="sxs-lookup"><span data-stu-id="9ff37-117">It is populated on only intercompany orders.</span></span> <span data-ttu-id="9ff37-118">Fältet **InterCompanyInventTransID** finns i **SalesLine**.</span><span class="sxs-lookup"><span data-stu-id="9ff37-118">The field **InterCompanyInventTransID** is available in **SalesLine**.</span></span>
+    :::image type="content" source="media/filter-sales-order-header.png" alt-text="Redigera frågedialogruta för CDS-försäljningsorderrubriker":::
 
-    :::image type="content" source="media/filter-sales-order-line-field-display.png" alt-text="Mappa mellanlagring till mål, SalesOrderLine":::
+3. <span data-ttu-id="ec00b-116">Utöka tabellen **CDS-försäljningsorderrader** genom att lägga till en referens till kolumnen **IntercompanyInventTransId**.</span><span class="sxs-lookup"><span data-stu-id="ec00b-116">Extend the **CDS Sales Order Lines** table by adding a reference to the **IntercompanyInventTransId** column.</span></span> <span data-ttu-id="ec00b-117">Den här kolumnen fylls bara i på koncerninterna order.</span><span class="sxs-lookup"><span data-stu-id="ec00b-117">This column is filled in only on intercompany orders.</span></span> <span data-ttu-id="ec00b-118">Kolumnen **InterCompanyInventTransId** finns i tabellen **SalesLine**.</span><span class="sxs-lookup"><span data-stu-id="ec00b-118">The **InterCompanyInventTransId** column is available in the **SalesLine** table.</span></span>
 
-4. <span data-ttu-id="9ff37-120">När **CDS-försäljningsorderrader** har utökats är fältet **IntercompanyInventTransId** tillgängligt i mappningen.</span><span class="sxs-lookup"><span data-stu-id="9ff37-120">After **CDS Sales Order Lines** is extended, the **IntercompanyInventTransId** field is available in the mapping.</span></span> <span data-ttu-id="9ff37-121">Använd ett filter med `INTERCOMPANYINVENTTRANSID == ""` som frågesträng.</span><span class="sxs-lookup"><span data-stu-id="9ff37-121">Apply a filter with `INTERCOMPANYINVENTTRANSID == ""` as the query string.</span></span>
+    :::image type="content" source="media/filter-sales-order-line-field-display.png" alt-text="Mappa mellanlagring till målsida för CDS-försäljningsorderrader":::
 
-    :::image type="content" source="media/filter-sales-order-lines.png" alt-text="Försäljningsorderrader, redigera fråga":::
+4. <span data-ttu-id="ec00b-120">När **CDS-försäljningsorderrader** har utökats är kolumnen **IntercompanyInventTransId** tillgängligt i mappningen.</span><span class="sxs-lookup"><span data-stu-id="ec00b-120">After **CDS Sales Order Lines** is extended, the **IntercompanyInventTransId** column is available in the mapping.</span></span> <span data-ttu-id="ec00b-121">Använd ett filter med `INTERCOMPANYINVENTTRANSID == ""` som frågesträng.</span><span class="sxs-lookup"><span data-stu-id="ec00b-121">Apply a filter that has `INTERCOMPANYINVENTTRANSID == ""` as the query string.</span></span>
 
-5. <span data-ttu-id="9ff37-123">Utvidga **Försäljningsfakturahuvuden V2** och **Försäljningsfakturarader V2** på samma sätt som du utökade Common Data Service-entiteterna i steg 1 och 2.</span><span class="sxs-lookup"><span data-stu-id="9ff37-123">Extend **Sales Invoice Header V2** and **Sales Invoice Lines V2** in the same way you extended the Common Data Service entities in steps 1 and 2.</span></span> <span data-ttu-id="9ff37-124">Lägg sedan till filterfrågorna.</span><span class="sxs-lookup"><span data-stu-id="9ff37-124">Then add the filter queries.</span></span> <span data-ttu-id="9ff37-125">Filtersträngen för **Försäljningsfakturahuvuden V2** är `(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")`.</span><span class="sxs-lookup"><span data-stu-id="9ff37-125">The filter string for **Sales Invoice Header V2** is `(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")`.</span></span> <span data-ttu-id="9ff37-126">Filtersträngen för **Försäljningsfakturarader V2** är `INTERCOMPANYINVENTTRANSID == ""`.</span><span class="sxs-lookup"><span data-stu-id="9ff37-126">The filter string for **Sales Invoice Lines V2** is `INTERCOMPANYINVENTTRANSID == ""`.</span></span>
+    :::image type="content" source="media/filter-sales-order-lines.png" alt-text="Redigera frågedialogruta för CDS-försäljningsorderrader":::
 
-    :::image type="content" source="media/filter-sales-invoice-header-field-display.png" alt-text="Mappa mellanlagring till mål, Försäljningsfakturahuvuden":::
+5. <span data-ttu-id="ec00b-123">Upprepa steg 1 och 2 om du vill utöka tabellen **Försäljningsfakturahuvuden V2** och lägga till en filterfråga.</span><span class="sxs-lookup"><span data-stu-id="ec00b-123">Repeat steps 1 and 2 to extend the **Sales Invoice Header V2** table and add a filter query.</span></span> <span data-ttu-id="ec00b-124">I detta fall används `(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")` du som frågesträng för filtret.</span><span class="sxs-lookup"><span data-stu-id="ec00b-124">In this case, use `(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")` as the query string for the filter.</span></span>
 
-    :::image type="content" source="media/filter-sales-invoice-header-filter.png" alt-text="Försäljningsfakturahuvuden, redigera fråga":::
+    :::image type="content" source="media/filter-sales-invoice-header-field-display.png" alt-text="Mappa mellanlagring till målsida för försäljningsorderrubrik V2":::
 
-    :::image type="content" source="media/filter-sales-invoice-lines-filter.png" alt-text="Försäljningsfakturarader, redigera fråga":::
+    :::image type="content" source="media/filter-sales-invoice-header-filter.png" alt-text="Redigera frågedialogruta för försäljningsorderrubrik V2":::
 
-6. <span data-ttu-id="9ff37-130">Entiteten **Offerter** har ingen koncernintern relation.</span><span class="sxs-lookup"><span data-stu-id="9ff37-130">The **Quotations** entity doesn't have an intercompany relationship.</span></span> <span data-ttu-id="9ff37-131">Om någon skapar en offert för någon av dina koncerninterna kunder kan du placera alla dessa kunder i en kundgrupp genom att använda fältet **CustGroup**.</span><span class="sxs-lookup"><span data-stu-id="9ff37-131">If someone creates a quote for one of your intercompany customers, you can put all of these customers in one customer group by using the **CustGroup** field.</span></span>  <span data-ttu-id="9ff37-132">Huvud och rader kan utökas om du vill lägga till fältet **CustGroup** och sedan filtrera för att inte inkludera den här gruppen.</span><span class="sxs-lookup"><span data-stu-id="9ff37-132">Header and lines can be extended to add the **CustGroup** field and then filter to not include this group.</span></span>
+6. <span data-ttu-id="ec00b-127">Upprepa steg 3 och 4 om du vill utöka tabellen **Försäljningsfakturarad V2** och lägga till en filterfråga.</span><span class="sxs-lookup"><span data-stu-id="ec00b-127">Repeat steps 3 and 4 to extend the **Sales Invoice Lines V2** table and add a filter query.</span></span> <span data-ttu-id="ec00b-128">I detta fall används `INTERCOMPANYINVENTTRANSID == ""` du som frågesträng för filtret.</span><span class="sxs-lookup"><span data-stu-id="ec00b-128">In this case, use `INTERCOMPANYINVENTTRANSID == ""` as the query string for the filter.</span></span>
 
-    :::image type="content" source="media/filter-cust-group.png" alt-text="Mappa mellanlagring till mål, Försäljningsofferthuvud":::
+    :::image type="content" source="media/filter-sales-invoice-lines-filter.png" alt-text="Redigera frågedialogruta för försäljningsorderrad V2":::
 
-7. <span data-ttu-id="9ff37-134">När du har utökat entiteten **Offerter** använder du ett filter med `CUSTGROUP !=  "<company>"` som frågesträng.</span><span class="sxs-lookup"><span data-stu-id="9ff37-134">After you extent the **Quotations** entity, apply a filter with `CUSTGROUP !=  "<company>"` as the query string.</span></span>
+7. <span data-ttu-id="ec00b-130">Tabellen **Offerter** har ingen koncernintern relation.</span><span class="sxs-lookup"><span data-stu-id="ec00b-130">The **Quotations** table doesn't have an intercompany relationship.</span></span> <span data-ttu-id="ec00b-131">Om någon skapar en offert för en av dina företagskunder kan du använda kolumnen **CustGroup** för att placera alla dessa kunder i en kundgrupp.</span><span class="sxs-lookup"><span data-stu-id="ec00b-131">If someone creates a quotation for one of your intercompany customers, you can use the **CustGroup** column to put all those customers into one customer group.</span></span> <span data-ttu-id="ec00b-132">Du kan utöka rubriken och raderna genom att lägga till kolumnen **CustGroup** och sedan filtrera så att gruppen inte inkluderas.</span><span class="sxs-lookup"><span data-stu-id="ec00b-132">You can extend the header and lines by adding the **CustGroup** column, and then filter so that the group isn't included.</span></span>
 
-    :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Försäljningsofferthuvud, redigera fråga":::
+    :::image type="content" source="media/filter-cust-group.png" alt-text="Mappa mellanlagring till målsida för CDS-försäljningsofferrubrik":::
+
+8. <span data-ttu-id="ec00b-134">Efter **Offerter** utökas, tillämpa ett filter med `CUSTGROUP != "<company>"` som frågesträng.</span><span class="sxs-lookup"><span data-stu-id="ec00b-134">After **Quotations** is extended, apply a filter that has `CUSTGROUP != "<company>"` as the query string.</span></span>
+
+    :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Redigera frågedialogruta för CDS-försäljningsofferrubrik":::
