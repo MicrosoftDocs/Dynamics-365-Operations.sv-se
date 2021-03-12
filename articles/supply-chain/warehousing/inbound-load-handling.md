@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 991da4a1056bec933698d043fe45fe4e280f555a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4437994"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004837"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhantering av inkommande laster för inköpsorder
 
@@ -478,6 +477,3 @@ I det här scenariot kommer inleveransansvarig att inkommande registrera en kvan
     - **Kvantitet** – ange _7_, vilket är den återstående kvantiteten som leverantören är auktoriserad att leverera som en del av den totala kvantiteten i inköpsordern på 12 (där 10 är den ursprungliga orderkvantiteten och 2 är den tillåtna överleveransen på 20 procent). Kom ihåg att fem datorer redan har registrerats mot den första lasten.
 
 Den andra lasten har nu uppdaterats med kvantiteten 7 och kan vara produktinleverans – uppdateras baserat på denna kvantitet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

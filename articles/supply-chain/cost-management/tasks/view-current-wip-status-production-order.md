@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, ProdTable, CostStatement
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e8e55ccfe158146a48fd372d6f0f687d169b7632
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f76a7589de13237ba822296d357df3e0300f11ad
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437799"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5002033"
 ---
 # <a name="view-current-wip-status-on-a-production-order"></a>Visa aktuell PIA-status för en produktionsorder
 
@@ -38,6 +37,3 @@ Den här proceduren visar hur du visar PIA-utdrag på en produktionsorder. Det d
 6. Ange datumet till "2012-12-01" i fältet Från datum.
 7. Ange datumet till "2012-12-31" i fältet Till datum.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

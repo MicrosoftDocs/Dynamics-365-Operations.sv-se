@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventOnhandItem, InventOnHandItemListPage, WHSOnHand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 33e5ccc454191e27e33835a05094b823ec54e891
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 94e54220a68889fd31ac3b269f7a7f6f8dd98c8e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438084"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005212"
 ---
 # <a name="inventory-on-hand-list"></a>Lagerbehållningslista
 
@@ -146,6 +145,3 @@ Här är resultatet av utdata.
 | IA0001 | 1 | 2 | 2 |
 
 Observera att inställningarna i fönstret **filter** gäller för den detaljerade (ej aggregerade) lager tabellen som visas i början av det här avsnittet. Det innebär att kriteriet som **tillgängligt fysiskt** \| **mindre än eller lika med** \| _1_ hittar två rader från tabellen (den första och tredje raden, som var och en visar ett **tillgängligt fysiskt** värde för _1_). I det här scenariot är dock sidan **behållningssidan** inte är inställd för att visa dimensionen **lagerställe**. Därför aggregerar den två ursprungliga raderna till en enda resulterande rad, eftersom båda raderna har identiska värden i alla dimensioner som visas. Denna rad verkar bryta mot filtreringskriteriet eftersom värdet **tillgängliga fysiska** visas som _2_. Resultatet är emellertid korrekt, eftersom inställningarna i **filter**-fönstret gäller källtabellen, inte den sammanställda tabell som visas på sidan **Behållningslista**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

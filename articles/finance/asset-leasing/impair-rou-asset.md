@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7a017cdbcbfa01d4dba383f2b6b7c742e54014e4
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 9822a11dbb277726b60ff82843bd26314e968345
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4448218"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003266"
 ---
 # <a name="impair-right-of-use-assets"></a>Skriva ner tillgångar med nyttjanderätt
 
@@ -102,6 +101,3 @@ I följande tabeller visas de värden som är inställda på flikarna **Allmänt
 7. Om du vill visa nettoeffekten av nedskrivningen går du till tabellerna skuld- och tillgångstransaktioner. Observera att nedskrivningsutgifterna har minskat ROU-tillgången, men det bokförda värdet för leasingskulden inte har ändrats.
 
 Nedskrivningen har en annan effekt som du bör tänka på. Eftersom ROU-tillgångsbeloppet nu är mycket mindre än leasingskulden, måste beloppet avskrivas på ett annat sätt än tidigare. Tillgången avskrivs nu på linjärt sätt under de återstående 84 månaderna av leasingen, med början på transaktionsdatumet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 247bc64bf0b90a641ead8a21971a6043691762fa
-ms.sourcegitcommit: f12ce34cc08cf1fa205c67f48669ea9a6566b526
+ms.openlocfilehash: 46b26fc1c0c45be894e226080a5aa9d5ae48b595
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4515057"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006001"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mekanism för omvänd moms för moms/GST-schema
 
@@ -137,6 +136,3 @@ Följande sidor och menyobjekt som är relaterade till funktionsinställningar �
  - **Utländska handelsparametrar** (**Skatt** > **Inställning** > **Moms** > **Utlandshandel** > **Utländska handelsparametrar**). Se [Ställa in egenskaper för land/region](#Set-up-Country/region-properties).
 
 Kryssrutan **Omvänd moms** finns på sidorna **Momsgrupp** och **Bokförd moms**. Mer information finns i avsnitten [Ställ in momsgrupper och artikelmomsgrupper](#sales-tax-item-sales-tax-groups), [Omvänd moms på en försäljningsfaktura](#reverse-charge-sale) och [Omvänd moms på en inköpsfaktura](#reverse-charge-purchase).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

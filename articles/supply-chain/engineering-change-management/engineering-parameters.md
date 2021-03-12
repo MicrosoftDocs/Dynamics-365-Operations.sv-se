@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 0cf0e56a8aece98379aa0f181d7b7ff665767544
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: dee5429c31bfc872afedfa76ced89633b4b72c96
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4438121"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005387"
 ---
 # <a name="engineering-change-management-parameters"></a>Parametrar för konstruktionsändringshantering
 
@@ -57,6 +56,3 @@ I följande tabell beskrivs fälten som är tillgängliga på fliken **Konstrukt
 | Allvarlighetsregel | Välj hur allvarlighetsgraden för en teknisk ändringsorder ska fastställas. Välj *manuell* om användaren förväntas ange ett värde i fältet **allvarlighetsgrad**. Välj *Beräkna* om du vill att systemet beräknar värdet av fältet **Allvarlighetsgrad** när du väljer **Beräkna allvarlighetsgrad** i åtgärdsfönstret för teknisk ändringsorder. I det här fallet använder systemet allvarlighetsreglerna som definieras på sidan **Allvarlighetsregel**. Välj *Beräkna automatiskt* om du vill att värdet i fältet **Allvarlighetsgrad** beräknas automatiskt och fyllas i enligt regeluppsättningarna för allvarlighetsgrad. |
 | Återutge påverkade produkter | Det här fältet används när du återlanserar produkter via en teknisk ändringsorder. Du kan välja om alla produkter eller endast de berörda produkterna ska föreslås i dialogrutan **Versioner**. |
 | Strukturlistenivåer att frisläppa | Djupet på strukturnivån som ska frisläppas. Om strukturlistan har fler nivåer (dvs. om den är djupare) än värdet som anges här frigörs bara nivåerna upp genom det angivna värdet. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

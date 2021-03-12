@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 2b4e6b42326ecbd07efe006afb23931849f5cf58
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 63f2d3dc55799efefaedb10134edb219fa8588e0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4448229"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003588"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatisera leverantörsbetalningsförslag
 
@@ -83,7 +82,7 @@ Nedan visas ett exempel på hur fälten för "till"-datumet och det minsta betal
 
 ### <a name="summarized-payment-date"></a>Summerat betalningsdatum
 
-Det sammanfattade betalningsdatumet används endast när fältet **Period** anges till **Total** för betalningsmetoden på fakturorna. Om fältet **Period** anges till **Total** för dina betalningsmetoder, måste du ange **Definiera kriterier för sammanfattade betalningsdatum** till **Ja**. Om alternativet anges till **Ja**, använd fältet **Justering av antalet dagar för sammanfattande betalningsdatum** för att sammanfattande betalningsdatum som angivet antal dagar före eller efter det datum då processen körs. Talet kan vara positivt, negativt eller 0 (noll). Till exempel genererar serien betalningar på onsdag och företaget vill skapa en sammanfattande betalning på onsdag. Ange i så fall fältet **Justering av antalet dagar för sammanfattande betalningsdatum** till **0**.
+Det sammanfattade betalningsdatumet används endast när fältet **Period** anges till **Total** för betalsättet på fakturorna. Om fältet **Period** anges till **Total** för dina betalsätt, måste du ange **Definiera kriterier för sammanfattade betalningsdatum** till **Ja**. Om alternativet anges till **Ja**, använd fältet **Justering av antalet dagar för sammanfattande betalningsdatum** för att sammanfattande betalningsdatum som angivet antal dagar före eller efter det datum då processen körs. Talet kan vara positivt, negativt eller 0 (noll). Till exempel genererar serien betalningar på onsdag och företaget vill skapa en sammanfattande betalning på onsdag. Ange i så fall fältet **Justering av antalet dagar för sammanfattande betalningsdatum** till **0**.
 
 ### <a name="records-to-include"></a>Poster som ska ingå
 
@@ -144,6 +143,3 @@ Följande uppgifter och behörigheter har lagts till för automatisering av leve
 | Fråga om förekomster av scheman | Betalningsansvarig för leverantörsreskontra, betalning, ansvarig för centraliserade leverantörsreskontrabetalningar | Denna uppgift ger rätt att visa automatisering av betalningsförslagförekomst via följande privilegier:<ul><li>Visa förekomster av scheman</li><li>Visa endast veckovis vy för förekomster</li></ul> |
 | Fråga om schemaläggningsserier      | None                                                                       | Denna uppgift ger rätt att visa inställningar för serier och förekomster via följande privilegier:<ul><li>Visa förekomster av scheman</li><li>Visa listsidan med förekomster</li><li>Visa endast veckovis vy för förekomster</li></ul>|
 | Underhåll förekomster av scheman     | None                                                                       | Denna uppgift ger rätt att skapa och upprätthålla en förekomst genom följande privilegier:<ul><li>Underhåll förekomster av scheman</li><li>Visa endast veckovis vy för förekomster</li></ul> |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

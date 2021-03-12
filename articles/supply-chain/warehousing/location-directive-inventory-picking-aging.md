@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3ae2826b54cb2ff516840443e01185a5342aedcc
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f8d5e4d82c66d178ceafcdbfb3eb9a941172aa01
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4437989"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004637"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Platsdirektiv för plockning i åldersfördelat lager
 
@@ -120,7 +119,7 @@ FIFO-strategin söker efter platsen som innehåller det äldsta åldersdatumet o
 1. På sidan **Försäljningsorder** i åtgärdsfönstret väljer du **Lagerställe** i gruppen **Åtgärder** välj **Släpp till distributionslager**. Du får informativa meddelanden. Systemet skapar en leverans, lägger till den i en ny last och skapar det begärda arbetet.
 1. På snabbfliken **Försäljningsorderrader** på menyn **Lagerställe** välj **Arbetsdetaljer** för att öppna det arbete som har skapats för den här försäljningsordern. Observera att raden där värdet för **Arbetstyp** är *Plocka* visar ett värde för **Plats** för *FL-002*. Den här platsen innehåller det ID-nummer som har det äldsta åldersdatumet (FIFO).
 1. Välj **Lagerställe \> Leveransdetaljer**.
-1. På snabbfliken ***Allmänt** noterar du påfyllnad-ID, så att du kan använda det i scenario 2.
+1. På snabbfliken **_Allmänt_** noterar du påfyllnad-ID, så att du kan använda det i scenario 2.
 
 ### <a name="scenario-2-set-up-and-use-lifo-location-aging"></a>Scenario 2: Ställ in och använd LIFO-platsåldrande
 
@@ -140,6 +139,3 @@ LIFO-strategin söker efter platsen som innehåller det nyaste åldersdatumet oc
 1. Observera att raden där värdet för **Arbetstyp** är *Plocka* visar ett värde för **Plats** för *FL-001*. Den här platsen innehåller det ID-nummer som har det nyaste åldersdatumet (LIFO).
 
 I dessa fall har du sett hur positioneringsstrategin för platsen har placerats i arbete med antingen det äldsta lagret eller det senaste lagret, beroende på den valda strategin för lagerstället.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

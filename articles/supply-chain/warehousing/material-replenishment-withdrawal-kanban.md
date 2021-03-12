@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTable, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 9de46acd8e568be08518d9bf93067748e0541023
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4437984"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004492"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Lagerpåfyllnad med uttags-kanbans
 
@@ -87,6 +86,3 @@ I följande scenario konfigureras överföringsaktiviteten för uttags-kanban at
 
 När en kanban har förbrukats på platsen för produktionsinleverans rapporteras den som tom, och en ny kanban läggs till i flödet. En påfyllnadsrad läggs till i en kanban-påfyllnad när en kanban skapas. När kanban-påfyllnaden bearbetas, skapas lagerställearbete för kanban-plockning. Lagerarbetaren bearbetar arbetet för kanban-plockning och dirigeras av arbetet för att plocka material för kanban på ett lagerställe. När denna lagerarbetare bekräftar plockningen slutförs kanban automatiskt, och lagerarbetaren vägleds för att förflytta materialet till produktionsinleveransplatsen.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

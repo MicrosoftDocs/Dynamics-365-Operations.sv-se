@@ -12,17 +12,16 @@ ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5f327d1d0b38ad724da6a302cefc115262317812
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437956"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001709"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Måttenhetskonvertering per produktvariant
 
@@ -59,7 +58,7 @@ Så här konfigurerar du en produktmall till stöd för enhetskonvertering per v
     - **Produkt** – Om du väljer detta värde kan du ange en enhetskonvertering för produktmallen. Den enhetskonverteringen kommer att användas som reserv för alla produktvarianter som ingen enhetskonvertering definieras för.
     - **Produktvariant** – Om du väljer detta värde kan du ange en enhetskonvertering för en specifik produktvariant. Använd fältet **Produktvariant** för att välja varianten.
 
-    ![![Lägga till en ny enhets konvertering](media/uom-new-conversion.png "Lägga till en ny enhetskonvertering")](media/uom-new-conversion.png "Adding a new unit conversion")
+    ![Lägga till en ny enhets konvertering](media/uom-new-conversion.png "Lägga till en ny enhetskonvertering")
 
 1. Använd de andra fälten som tillhandahålls för att ställa in din enhetskonvertering.
 1. Klicka på **OK** om du vill spara den nya enhetskonverteringen.
@@ -107,6 +106,3 @@ Om du vill exportera enhetskonverteringar till Excel går du till sidan **Enhets
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Hantera måttenhet](tasks/manage-unit-measure.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

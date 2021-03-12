@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgEcoResProductLifecycleStateChange
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 69ee39479424c1b629388c18e8bfefd023036d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 989cfd3846e4921d24f5dcf809f1735d2cf62dbb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4438120"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005337"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Produktens livscykeltillstånd och transaktioner
 
@@ -76,6 +75,3 @@ Följande fält är tillgängliga för varje process som visas på snabbfliken *
 | Policy | Välj ett av följande värden om du vill kontrollera om och hur den aktuella processen kan tillåtas för produkter i detta livscykeltillstånd:<ul><li>**Aktiverad** – affärsprocessen är tillåten.</li><li>**Spärrat** – processen är inte tillåten. Om en användare försöker använda processen för en produkt som är i livscykeltillstånd blockeras försöket och ett felmeddelande visas i stället. Du kan t.ex. blockera produkter som har nått slutet av livslängd från att köpas.</li><li>**Aktiverad med varning** – processen är tillåten, men en varning visas. Du kanske till exempel vill att en prototypprodukt ska placeras på en tillverkningsorder som skapas av avdelningen för forsknings- och utvecklingsavdelningen. Andra avdelningar bör dock vara medvetna om att de inte borde producera produkten än.</li></ul> |
 
 Om du lägger till fler livscykeltillståndsregler som en anpassning kan du visa reglerna i användargränssnittet genom att välja **Uppdatera processer** i det övre fönstret. Knappen **Uppdatera processer** är bara tillgänglig för administratörer.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 266844
 ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, Latvia, Lithuania, Netherlands, Sweden
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 65ea2f40171a470cab0550aecff07567be4aaa78
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ff1d7fb2c770ef2ce1ac4fb4ad39961f8483ed5b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408609"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005889"
 ---
 # <a name="vat-reporting-for-europe"></a>Momsrapporter för Europa
 
@@ -277,6 +276,3 @@ Momsrapporten för varje land måste uppfylla kraven i landets lagstiftning. Det
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

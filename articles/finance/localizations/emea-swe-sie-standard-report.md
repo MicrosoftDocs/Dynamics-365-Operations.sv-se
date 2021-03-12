@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Sweden
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 3389b536bb14aac310a7605291ce579ddcda92ab
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b5463ba99573877303e8d0d3f9c2a042ebd7073b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408622"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005899"
 ---
 # <a name="export-financial-information-for-auditors-in-sweden"></a>Exportera ekonomisk information för revisorer i Sverige
 
@@ -37,6 +36,3 @@ Du kan exportera ekonomiska data i de format som specificerats av SIE-gruppen, d
   - Typ 4I – Transaktioner exporteras. 
   - Type 4E – Periodsaldon och -transaktioner exporteras. 
 8. Klicka på **OK**. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace, RCS
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 5b2b8f35b9931f8fd1824c20e9045da68af33ad5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ef12c911c8953b181db1c0eff0874a3d8cfcb3da
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448067"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005758"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Skapa ER-konfigurationer i RCS och överför dem till den globala databasen
 
@@ -41,7 +40,7 @@ Innan du kan slutföra dessa procedurer måste du först uppfylla följande för
 Du måste också säkerställa att en RCS-miljö har etablerats för ditt företag.
 
 1. I en Finance and Operations-app går du till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
-2. Om ingen RCS-miljö har etablerats för ditt företag väljer du **Regulatory services - extern konfiguration** och följer sedan instruktionerna för att etablera en.
+2. Om ingen RCS-miljö har etablerats för ditt företag väljer du **Regulatory services – extern konfiguration** och följer sedan instruktionerna för att etablera en.
 
 Om en RCS-miljö redan har etablerats för ditt företag kan du använda sidans URL för att komma åt den genom att välja alternativet för inloggning.
 
@@ -98,6 +97,3 @@ Konfigurationsversionen tas bort och bekräftelsemeddelandet visas.
 > [!NOTE]
 > Konfigurationer kan bara tas bort av den konfigurationsprovider som skapade dem. Om konfigurationen har delats med en annan organisation måste konfigurationen delas ut innan du kan ta bort den.
  
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

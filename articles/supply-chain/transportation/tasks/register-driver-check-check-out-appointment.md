@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: TMSDriverLogListPage, TMSDriverCheckIn
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 34074a6ad2c929085dc6fd43efa8da620ce18584
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 9de0609db95e5b76d04ae78202762cfdf2159f04
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438041"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004987"
 ---
 # <a name="register-driver-check-in-and-check-out-for-an-appointment"></a>Registrera en förares incheckning och utcheckning för ett möte
 
@@ -46,6 +45,3 @@ Den här proceduren visar hur du registrerar en in- och utcheckning av förare. 
 1. Klicka på Driver check-out.
 2. Klicka på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

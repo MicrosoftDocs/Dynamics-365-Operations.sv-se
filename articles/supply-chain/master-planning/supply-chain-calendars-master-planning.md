@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2c32957b0bd234ed14e6333a36a46c6a83ec2e91
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bbbd60ddfd46904374a2cf3ad4a09f96805bd2bf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437691"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001809"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendrar och huvudplanering
 
@@ -143,6 +142,3 @@ För kalender för disponeringsgrupp är det viktigt att beakta som har ett öve
 
 ### <a name="updating-scm-related-calendars"></a>Uppdatera SCM-relaterade kalendrar
 Medan det är viktigt att alla relevanta kalendrar tilldelas på deras respektive plats (leverantör, kund, lager, leveranssätt eller täckningsgrupp), är uppdatering av dem lika viktiga så att de speglar ändringarna. Systemet definierar produktions-, överförings-, inköps- och försäljningsorderdatum beroende på kombinationen av de tilldelade kalendrarna. Det är lämpligt att förtydliga vem som har ansvaret för att tilldela och uppdatera kalendrar i motsvarande områden. Vid en uppdelning eller någon annan ovanlig förändring på arbetsdagarna är det viktigt att uppdatera kalendrarna enligt det. Alla aktiviteter som är beroende av kalendrar, till exempel huvudplanering och produktionsplanering, måste köras när kalendrar uppdateras. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
