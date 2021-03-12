@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bce2dac680871e14220d3bb94afacea0a617c707
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415737"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963120"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurera leveranssätt och avgifter för kundtjänst
 
@@ -32,7 +31,7 @@ När en försäljningsorder placeras i Dynamics 365 Commerce, om den person som 
 
 Du kan välja ett leveranssätt för försäljningsorderrubriken och försäljningsorderrader när du skapar en försäljningsorder. Som standard används det leveranssätt som du valde på rubriken för alla försäljningsorderrader. Du kan åsidosätta standardläge för leverans på individuella försäljningsrader enligt behov. Du kan också definiera ett leveranssätt för en kundpost. Sedan när beställningar skapas för kunden, används det leveranssätt som standard på försäljningsorderrubriken.
 
-Handel har funktioner som låter användarna begränsa leveranssätt som kan användas av en kanal, leveransmetoder som kan användas för en produkt och leveransmetoder som gäller för specifika leveransmål. Tillägg kan också definieras så att extra kostnad läggs till en kundorder, utifrån de leveranssätt som har valts för försäljningsordern och det totala värdet.
+Commerce har funktioner som låter användarna begränsa leveranssätt som kan användas av en kanal, leveransmetoder som kan användas för en produkt och leveransmetoder som gäller för specifika leveransmål. Tillägg kan också definieras så att extra kostnad läggs till en kundorder, utifrån de leveranssätt som har valts för försäljningsordern och det totala värdet.
 
 ## <a name="define-delivery-modes"></a>Definiera leveranssätt
 
@@ -95,6 +94,3 @@ Du kan även länka en expedieringskod till varje leveranssätt som du konfigure
 Exempelvis för order som ska levereras med flyg, nästa dag måste plockning göras på ett lagerställe kl 13 varje dag. I det här fallet kan du skapa en expedieringskod och koden kan länkas till leverans nästa arbetsdagsläge som har konfigurerats i systemet. När lagerstället skapar dess påfyllnadsplockning och lämplig expedieringskod i fältet **expediering** kan användas som ett filter så att plockning utförs endast för order som har de leveranssätt som är kopplade till koden.
 
 Dessutom när en kundtjänstorder anges kan en expedieringskod användas manuellt till försäljningsorderrubriken eller till enskilda försäljningsorderraden. Igen kan koden användas för sorterings- eller rapporteringsändamål. Ibland kan måste en order hanteras försiktigt på grund av ett problem med kundtjänst. Då kan en viss expedieringskod tillämpas på orderrubriken eller rader för att identifiera och prioritera ordern under utförandeprocessen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

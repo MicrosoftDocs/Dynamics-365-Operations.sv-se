@@ -3,7 +3,7 @@ title: Potentiell kund till kontanter vid dubbel skrivning
 description: I det här avsnittet finns information om kunders kontantkassa vid dubbel skrivning.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 01/27/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 3b482a2754bb4bcaca5410da72c21897fd066a41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3f88d7249af515670c0a3e73a5ef890f04133d19
+ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683657"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "4959611"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potentiell kund till kontanter vid dubbel skrivning
 
@@ -37,6 +37,11 @@ I programgränssnitten får du åtkomst till bearbetningsstatus och fakturainfor
 
 ![Dataflöde med dubbel skrivning i potentiell kund till kontanter](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
+Mer information om kund- och kontaktintegrering finns i [Integrerad kundmall](customer-mapping.md). Information om produktintegration finns i [Enhetlig produkterfarenhet](product-mapping.md).
+
+> [!NOTE]
+> I Dynamics 365 Sales, refererar både potentiell kund och kund till en post i tabellen **Konto** där kolumnen **RelationshipType** är antingen **Potentiell kund** eller **Kund**. Om din affärslogik innehåller en kvalifikationsprocess för **Konto** där posten **Konto** skapas och kvalificeras som potentiell kund först och sedan som en kund synkroniseras den kunden endast till Finance and Operations-appen när den är en kund (`RelationshipType=Customer`). Om du vill att raden **Konto** ska synkroniseras som en potentiell kund, behöver du en anpassad mappning för att integrera data för potentiell kund.
+
 ## <a name="prerequisites-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 
 Innan du kan synkronisera försäljningsofferter måste du uppdatera följande inställningar.
@@ -46,11 +51,11 @@ Innan du kan synkronisera försäljningsofferter måste du uppdatera följande i
 I Sales, gå till **Inställningar \> Administration \> Systeminställningar \> Sales** och säkerställ att följande inställningar används:
 
 - Systemalternativet **Använd systemets prisberäkning** är **Ja**.
-- Fältet **Metod för rabattberäkning** har tilldelats **radartikel**.
+- Kolumnen **Metod för rabattberäkning** har tilldelats **radartikel**.
 
 ### <a name="sites-and-warehouses"></a>Webbplatser och lagerställen
 
-I Supply Chain Management är fälten **Webbplats** och **Lagerställe** krävs för offertrader och orderrader. Om du ställer in webbplats och lagerstället i standard orderinställningarna kommer dessa fält automatiskt att ställas in när du lägger till en produkt på en offertrad eller en orderrad. 
+I Supply Chain Management är kolumnerna **Webbplats** och **Lagerställe** krävs för offertrader och orderrader. Om du ställer in webbplats och lagerstället i standard orderinställningarna kommer dessa kolumner automatiskt att ställas in när du lägger till en produkt på en offertrad eller en orderrad. 
 
 ### <a name="number-sequences-for-quotations-and-orders"></a>Nummerserier för offerter och order
 
@@ -62,9 +67,9 @@ Nummerserien i hanteringen av Supply Chain Management är **1, 2, 3, 4, 5, ...**
 
 Försäljningsofferter kan skapas antingen i Sales eller Supply Chain Management. Om du skapar en offert i Sales synkroniseras den med Supply Chain Management i realtid. Om du skapar en offert i Supply Chain Management, synkroniseras den med Sales i realtid. Observera följande:
 
-+ Du kan lägga till en rabatt för produkten på offerten. I det här fallet kommer rabatten att synkroniseras med Supply Chain Management. Fälten **rabatt**, **tillägg**, och **moms** på rubriken styrs av en inställning i Supply Chain Management. Den här inställningen stöder inte integreringsmappning. I stället underhålls och underhålls fälten **pris**, **rabatt**, **tillägg**, och **moms** i Supply Chain Management.
-+ Fälten **Rabatt %**, **Rabatt** och **Fraktbelopp** fält på försäljningsoffertens rubrik är skrivskyddade fält.
-+ Fälten **betalningsvillkor**, **fraktvillkor**, **leveransvillkor**, **leveranssätt** och leveransläge tillhör inte standardmappningarna. Om du vill mappa dessa fält måste du konfigurera en värdemappning som är specifik för data i organisationer som enheten synkroniseras mellan.
++ Du kan lägga till en rabatt för produkten på offerten. I det här fallet kommer rabatten att synkroniseras med Supply Chain Management. Kolumnerna **rabatt**, **tillägg**, och **moms** på rubriken styrs av en inställning i Supply Chain Management. Den här inställningen stöder inte integreringsmappning. I stället underhålls kolumnerna **pris**, **rabatt**, **tillägg**, och **moms** i Supply Chain Management.
++ Kolumnerna **Rabatt %**, **Rabatt** och **Fraktbelopp** på försäljningsoffertens rubrik är skrivskyddade kolumner.
++ Kolumnerna **betalningsvillkor**, **fraktvillkor**, **leveransvillkor**, **leveranssätt** och leveransläge tillhör inte standardmappningarna. Om du vill mappa dessa kolumner måste du konfigurera en värdemappning som är specifik för data i organisationer som tabellen synkroniseras mellan.
 
 Om du även använder Field Service-lösningen måste du aktivera parametern **Snabbskapa anbudsförfrågan**. Om du aktiverar parametern igen kan du fortsätta att skapa offertrader med hjälp av funktionen snabbgenerering.
 1. Navigera till ditt Dynamics 365 Sales-program.
@@ -82,7 +87,7 @@ Försäljningsorder kan skapas antingen i Sales eller Supply Chain Management. O
 + Rabattberäkning och avrundning:
 
     - Rabattberäkningsmodellen i Sales avviker från rabattberäkningsmodell i Supply Chain Management. I Supply Chain Management kan det slutgiltiga rabattbeloppet på en försäljningsrad vara resultatet av en kombination av rabattbelopp och rabattsatser. Om detta slutliga rabattbelopp divideras med antalet på raden, kan avrundning uppstå. Den här typen av avrundning inkluderas inte om ett avrundat rabattbelopp per enhet synkroniseras till Sales. För att garantera att det fullständiga rabattbeloppet från en försäljningsrad i Supply Chain Management synkroniseras korrekt till Sales, måste hela beloppet synkroniseras utan att divideras med radkvantiteten. Därför måste du definiera rabattberäkningsmetod som **radartikel** i Sales.
-    - När en försäljningsorderrad synkroniseras från Sales till Supply Chain Management används fullständig radrabatt. Eftersom Supply Chain Management inte har några fält som kan innehålla fullständiga rabattbeloppet för en rad, divideras beloppet med kvantiteten och lagras i fältet **radrabatt**. All avrundning som uppstår i denna division lagras i fältet **försäljningstillägg** på försäljningsraden.
+    - När en försäljningsorderrad synkroniseras från Sales till Supply Chain Management används fullständig radrabatt. Eftersom Supply Chain Management inte har några kolumner som kan innehålla fullständiga rabattbeloppet för en rad, divideras beloppet med kvantiteten och lagras i kolumnen **radrabatt**. All avrundning som uppstår i denna division lagras i kolumnen **försäljningstillägg** på försäljningsraden.
 
 ### <a name="example-synchronization-from-sales-to-supply-chain-management"></a>Exempel: Synkronisering från Sales till Supply Chain Management
 
@@ -98,7 +103,7 @@ Om du synkroniserar från Supply Chain Management till Sales får du följande r
 
 ## <a name="dual-write-solution-for-sales"></a>Lösningar för dubbelriktad skrivning för Sales
 
-Nya fält har lagts till i enheten **Order** och visas på sidan. De flesta av dessa fält visas på fliken **integration** i Sales. För att veta mer om hur statusfälten mappas ska du gå till [Ställa in mappningen för fält för försäljningsorderstatus](sales-status-map.md).
+Nya kolumner har lagts till i tabellen **Order** och visas på sidan. De flesta av dessa kolumner visas på fliken **integration** i Sales. För att veta mer om hur statuskolumner mappas ska du gå till [Ställa in mappningen för kolumner för försäljningsorderstatus](sales-status-map.md).
 
 + Knapparna **skapa faktura** och **annullera order** på sidan **försäljningsorder** är dolda i Sales.
 + Värdet **Status för försäljningsorder** förblir **aktiv** för att se till att ändringar från Supply Chain Management når Försäljningsordern i Sales. För att styra detta beteende, ange standardvärdet till **Statuskod \[Status\]** till **Aktiv**.
@@ -107,18 +112,18 @@ Nya fält har lagts till i enheten **Order** och visas på sidan. De flesta av d
 
 Försäljningsfakturor skapas i Supply Chain Management och synkroniseras med Sales. Observera följande:
 
-+ Ett fält för **fakturanummer** har lagts till i entiteten **Faktura** och visas på sidan.
++ En kolumn för **fakturanummer** har lagts till i tabellen **Faktura** och visas på sidan.
 + Knappen **Skapa faktura** på sidan **Försäljningsorder** är dold eftersom fakturorna skapas i Supply Chain Management och synkroniseras med Sales. Sidan **Faktura** kan inte redigeras eftersom fakturorna synkroniseras från Supply Chain Management.
 + Värdet **Status för försäljningsorder** ändras automatiskt till **Fakturerad** när tillhörande faktura från Supply Chain Management har synkroniserats med Sales. Dessutom kan ägaren till den försäljningsorder som fakturan skapades från tilldelas till fakturaägaren. Därför kan ägaren till försäljningsordern kan visa fakturan.
-+ Fälten **betalningsvillkor**, **fraktvillkor** och **leveranssätt** och leveransläge tillhör inte standardmappningarna. Om du vill mappa dessa fält måste du konfigurera en värdemappning som är specifik för data i organisationer som enheten synkroniseras mellan.
++ Kolumner **betalningsvillkor**, **fraktvillkor** och **leveranssätt** och leveransläge tillhör inte standardmappningarna. Om du vill mappa dessa kolumner måste du konfigurera en värdemappning som är specifik för data i organisationer som tabellen synkroniseras mellan.
 
 ## <a name="templates"></a>Mallar
 
 Potentiell kund till kontanter inkluderar en samling tabellmappningar som fungerar tillsammans under kunddatainteraktion, enligt följande tabell.
 
-| Finance and Operations-appar | Modellstyrda appar i Dynamics 365 | beskrivning |
+| Finance and Operations-appar | Kundengagemangsappar | beskrivning |
 |-----------------------------|-----------------------------------|-------------|
-| Försäljningsfakturahuvuden V2    | fakturor                          |             |
+| Försäljningsfakturahuvuden V2    | fakturor                          | Tabellen försäljningsfakturahuvuden V2 i Finance and Operations-appen innehåller fakturor för försäljningsorder och fritextfakturor. Ett filter används för Dataverse för att filtrera bort eventuella fritextfakturadokument. |
 | Försäljningsfakturarader V2      | fakturainformation                    |             |
 | CDS-försäljningsorderrubrik     | salesorders                       |             |
 | CDS-försäljningsorderrader       | salesorderdetails                 |             |
@@ -135,6 +140,11 @@ Här är de relaterade huvudsakliga tabellmappningarna för potentiella kunder t
 + [Alla produkter till msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
 + [Prislista](product-mapping.md)
 
+## <a name="limitations"></a>Begränsningar
+- Returorder stöds inte.
+- Kreditfakturor stöds inte.
+- Ekonomiska dimensioner måste anges för huvuddata, till exempel kund och leverantör. När en kund läggs till en offert eller försäljningsorder, flödar kundposten automatiskt till ordern. För närvarande innehåller inte dessa ekonomiska dimensioner några data för huvuddata. 
+
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
 [!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
@@ -150,6 +160,3 @@ Här är de relaterade huvudsakliga tabellmappningarna för potentiella kunder t
 [!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
 
 [!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

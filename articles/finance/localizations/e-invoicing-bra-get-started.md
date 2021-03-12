@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: fb3ec2d60875d7a0747d64b397aafaa0a3d26348
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 0320bd1d9e93cc30ed75f28e387ac2ec8dbfc226
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4448189"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962845"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-brazil"></a>Kom igång med tillägget elektronisk fakturering för Brasilien 
 
@@ -48,7 +47,7 @@ Under RCS-inställningar ska du utföra följande uppgifter:
 3. Granska filformaten som krävs för att begära annullering av en godkänd NF-e.
 4. Konfigurera händelsen som krävs för att skicka NF-e skattedokument för auktorisering.
 5. Konfigurera händelsen som krävs för att begära annullering av en godkänd NF-e.
-6. Tilldela e-faktureringsfunktionen till en miljö för tillägget för elektronisk fakturering.
+6. Tilldela e-faktureringsfunktionen till en miljö för tillägget Elektronisk fakturering.
 7. Publicera e-faktureringsfunktionen.
 
 > [!NOTE]
@@ -210,11 +209,11 @@ Under inställningen ska du utföra följande uppgifter:
 5. Gå till **organisationsadministration \> inställning \> parametrar för elektroniska dokument**.
 6. På fliken **Elektroniska dokument** väljer du **Lägg till**.
 6. I fältet **Registernamn** ange **skattedokumentets rubrik**.
-7. I fältet **Dokumentkontext** väljer du **Kundfaktura kontextmodell - skattedokument kontext**.
+7. I fältet **Dokumentkontext** väljer du **Kundfaktura kontextmodell – skattedokument kontext**.
 8. Välj **svarstyper**.
 9. Markera **Ny** och sedan, i fältet **Svarstyp**, markerar du **Svar**.
 10. I fältet **Överföringsstatus** välj **Väntande**.
-11. I fältet **Modellmappning** välj **Importformat för svarsmeddelande - Modellmappning från svarsmeddelande**.
+11. I fältet **Modellmappning** välj **Importformat för svarsmeddelande – Modellmappning från svarsmeddelande**.
 12. Välj **Spara**.
 13. Markera **Ny** och sedan, i fältet **Svarstyp**, markerar du **ResponseData**.
 14. I fältet **Överföringsstatus** välj **Väntande**.
@@ -225,9 +224,9 @@ Under inställningen ska du utföra följande uppgifter:
 
 Under bearbetningen i Finance ska du utföra följande uppgifter:
 
-1. Skicka ett skattedokument via tillägget för elektronisk fakturering.
+1. Skicka ett skattedokument via tillägget Elektronisk fakturering.
 2. Visa körningsloggarna för överföring och granska resultaten av bearbetningen.
-3. Skicka annullering av ett skattedokument via tillägget för elektronisk fakturering.
+3. Skicka annullering av ett skattedokument via tillägget Elektronisk fakturering.
 
 ### <a name="submit-nf-e-fiscal-documents-for-sefaz-authorization"></a>Skicka NF-e-dokument för SEFAZ-auktorisering 
 
@@ -248,7 +247,7 @@ När du har aktiverat funktionen **Konfigurerbara integreringstillägg för elek
 8. Välj **OK** för att skicka de valda dokumenten.
 
 > [!NOTE]
-> Under ditt första försök att skicka ett dokument via tjänsten uppmanas du att bekräfta anslutningen med tillägget för elektronisk fakturering. Välj **Klicka här för att ansluta till tjänsten inlämning av elektroniska dokument**.
+> Under ditt första försök att skicka ett dokument via tjänsten uppmanas du att bekräfta anslutningen med tillägget Elektronisk fakturering. Välj **Klicka här för att ansluta till tjänsten inlämning av elektroniska dokument**.
 
 ### <a name="view-all-submission-logs"></a>Visa alla överföringsloggar
 
@@ -309,6 +308,3 @@ Om du aktiverar funktionen BR-00053 (NF-e Federal) kan det krävas att begränsa
 - [Tillägg för elektronisk fakturering: översikt](e-invoicing-service-overview.md)
 - [Kom igång med tillägget elektronisk fakturering](e-invoicing-get-started.md)
 - [Ställ in tillägg för elektroniska fakturor](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

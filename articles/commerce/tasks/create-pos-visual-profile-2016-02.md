@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b265a94c6d8f9e2534e1509e4f33c6f8a05eded0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3e1604c12a52e85a73060c6c25e71026fe9ccc18
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415879"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964730"
 ---
 # <a name="create-point-of-sale-pos-visual-profiles"></a>Skapa visuella kassaprofiler
 
@@ -48,6 +47,3 @@ Den här proceduren går igenom hur du skapar en ny visuell kassaprofil. En visu
 17. Klicka på länken på den valda raden i listan.
 18. Klicka på Spara.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

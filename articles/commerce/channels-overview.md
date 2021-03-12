@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 099ccd9f769ea5c431c1a82532d8654cbbd082b1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e060fe2a578296f079653244ed4d5676313e5ea8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415792"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963070"
 ---
 # <a name="channels-overview"></a>Översikt över kanaler
 
@@ -49,7 +48,7 @@ Online-kanaler representerar onlinebutiker. När en onlinekanal har skapats mås
 
 ## <a name="channel-setup-basics"></a>Grundläggande kanalinställningar
 
-Konfigurera kanaler utförs i handelsverktyget. Varje kanal kan ha sina egna betalningsmetoder, prisgrupper, produktvarianter, sortiment och produktuppsättningar. När du har skapat en kanal tilldelar du produkter som du vill ha och sälja i butiken. Varje kanaltyp har en unik uppsättning funktioner som kan behöva konfigureras. Till exempel behöver en butikskanal tilldelade medarbetare, register och kunder. När en ny kanal har skapats måste den tilldelas en organisationshierarki.
+Konfigurera kanaler utförs i handelsverktyget. Varje kanal kan ha sina egna betalsätt, prisgrupper, produktvarianter, sortiment och produktuppsättningar. När du har skapat en kanal tilldelar du produkter som du vill ha och sälja i butiken. Varje kanaltyp har en unik uppsättning funktioner som kan behöva konfigureras. Till exempel behöver en butikskanal tilldelade medarbetare, register och kunder. När en ny kanal har skapats måste den tilldelas en organisationshierarki.
 
 ## <a name="channel-setup-prerequisites"></a>Förutsättningar för att ställa in kanaler
 
@@ -89,6 +88,3 @@ After you create a channel, you may need to complete some of the below tasks:
 [Ställa in en kundtjänstkanal](channel-setup-callcenter.md)
 
 [Ange organisationshierarkier](channels-org-hierarchies.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

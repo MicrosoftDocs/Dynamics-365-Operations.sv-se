@@ -3,7 +3,7 @@ title: Jämförelse mellan moln- och lokala funktioner
 description: Detta avsnitt anger vilka funktioner stöds i molnet och på plats.
 author: sericks007
 manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 5b49dc6d5170af6fecc537a9a9130900e08bb26a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 309131f0d7390288a46f84b1375bd87922407159
+ms.sourcegitcommit: a017fc0583a894382b959e22511231dd07d4254a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694577"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "4959904"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Jämförelse mellan funktioner i molnet och lokalt
 
@@ -120,8 +120,9 @@ Följande tabell anger appområdena. Lokalt stöd och molnstöd anges för funkt
 | Lokaliseringar                        |                                                                                           | Ja       | Ja             |
 | Tillverkning                        |                                                                                           | Ja       | Ja             |
 | Huvudplanering och prognosticering      |                                                                                           | Ja       | Ja             |
+| Planeringsoptimering                |                                                                                           | Ja       | Nr              |
 | Mobilapp, arbetsytor och plattform |                                                                                           | Ja       | Ja             |
-| Office-integrering                   |                                                                                           | Ja       | Ja             |
+| Integrering med Office                   |                                                                                           | Ja       | Ja             |
 | Organisationsadministration          |                                                                                           | Ja       | Ja             |
 | Anskaffning och källa             |                                                                                           | Ja       | Ja             |
 |                                      | Utstämpling till extern katalog från inköpsrekvisition                                   | Ja       | Nr              |
@@ -175,6 +176,3 @@ En lista över funktioner som är tillgängliga i lokal distribution finns i [Co
 
 \* I lokala miljöer visar PerfTimer endast resultat för-klienten.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

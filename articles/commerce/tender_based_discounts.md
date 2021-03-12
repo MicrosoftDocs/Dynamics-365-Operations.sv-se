@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTenderDiscount
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 4be0c9a6f0a32016e07b8e31d0aaff44b4a29623
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9f6747ff9d68c29612346254928e869d6d34d433
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415946"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962945"
 ---
 # <a name="tender-based-discounts"></a>Betalningsmedelbaserade rabatter
 
@@ -35,7 +34,7 @@ Det är en vanligt mellan återförsäljare att frisläppa privata, märkeskredi
 
 Alternativt kan återförsäljare som inte har anpassade kreditkort vilja uppmuntra kunderna att betala med hjälp av andra typer av betalningsmedel, t.ex. kassa, presentkort eller förmånspoäng. På så sätt kan de hjälpa till att minska kostnaderna för avgifterna för bearbetningskostnader för kreditkort. Därför kan detaljhandlare ge rabatter till kunder som använder dessa alternativa betalningsmedelstyper.
 
-I Microsoft Dynamics 365 Commerce kan detaljhandlare konfigurera en procentuell rabatt som tillämpas på kvalificerade rader om kunden betalar med den föredragna betalningsmedeltypen. Kunden kan bestämma om en delbetalning eller en fullständig betalning ska utföras och Handel bestämmer rätt rabattbelopp. Observera att rabatten alltid anges på beloppet för de kvalificerade artiklarnas belopp före skatt.
+I Microsoft Dynamics 365 Commerce kan detaljhandlare konfigurera en procentuell rabatt som tillämpas på kvalificerade rader om kunden betalar med den föredragna betalningsmedeltypen. Kunden kan bestämma om en delbetalning eller en fullständig betalning ska utföras och Commerce bestämmer rätt rabattbelopp. Observera att rabatten alltid anges på beloppet för de kvalificerade artiklarnas belopp före skatt.
 
 Betalningsmedelbaserade rabatter konkurrerar inte med artikelbaserade rabatter, t.ex. periodiska eller manuella rabatter. De är alltid sammansatta över artikelrabatterna. Även om en exklusiv periodisk rabatt tillämpas på en artikel, tillämpas den betalningsmedelbaserade rabatten fortfarande ovanpå den exklusiva periodiska rabatten. På samma sätt gäller att om en tröskelrabatt har tillämpats på transaktionen och den begärda betalningsmedelbaserade rabatten minskar det totala under tröskelvärdet, tillämpas tröskelrabatten fortfarande på transaktionen.
 
@@ -48,11 +47,11 @@ Betalningsmedelbaserade rabatter konkurrerar inte med artikelbaserade rabatter, 
 Endast betalningsmedelbaserade rabatter kan tillämpas på försäljningsrader där priserna inte är låsta. Om nya försäljningsrader läggs till i en order, tillämpas den betalningsmedelbaserade rabatten på nya försäljningsrader endast under betalningen. Även om en kundorder för upphämtning eller utleverans har placerats, tillämpas den betalningsmedelbaserade rabatten endast på insättningsbeloppet. När ordern har placerats är priserna på försäljningsraderna låsta. Därför tillämpas ingen betalningsmedelbaserade baserad på något saldo som betalas under utleveransen eller godkänns under leveransen. Den betalningsmedelbaserade rabatten kan endast tillämpas på hela beloppet för en kundorder om återförsäljaren samlar hela beloppet som en insättning medan ordern placeras.
 
 > [!IMPORTANT]
-> I Handel är de betalningsmedelbaserade rabatterna för närvarande begränsade till två betalningstyper: kreditkort och kassa.
+> I Commerce är de betalningsmedelbaserade rabatterna för närvarande begränsade till två betalningstyper: kreditkort och kassa.
 
 ## <a name="pos-user-experience"></a>Användarupplevelse i kassa
 
-Om den betalningsmedelbaserade rabatten har ställts in på kontanter och kassören i kassan (POS) väljer en knapp som är mappad till åtgärden Kontantbetalning, används den betalningsmedelbaserade rabatten automatiskt för transaktionen. Det reducerade beloppet visas sedan som saldot. Om kassören däremot väljer knappen **bakåt** på betalningsskärmen tas rabatten bort och det ursprungliga beloppet visas på transaktionsskärmen. Den betalningsmedelbaserade rabatten tas bort om betalningsraden är annullerad.
+Om den betalningsmedelbaserade rabatten har ställts in på kontanter och kassören i POS väljer en knapp som är mappad till åtgärden Kontantbetalning, används den betalningsmedelbaserade rabatten automatiskt för transaktionen. Det reducerade beloppet visas sedan som saldot. Om kassören däremot väljer knappen **bakåt** på betalningsskärmen tas rabatten bort och det ursprungliga beloppet visas på transaktionsskärmen. Den betalningsmedelbaserade rabatten tas bort om betalningsraden är annullerad.
 
 För kortbetalningar kan återförsäljare ställa in den betalningsmedelbaserade rabatten på en eller flera typer av kreditkort. Systemet kan dock inte verifiera vilken typ av kreditkort som används om inte kortet är auktoriserat. Om rabatten tillämpas efter auktorisering får betalningsauktoriseringen ett större belopp, men betalningsinsamlingen blir för ett mindre belopp.
 
@@ -61,17 +60,14 @@ För att förhindra den här situationen, om en kund betalar med kreditkort, ser
 
 ## <a name="call-center-user-experience"></a>Användarupplevelse i kundtjänst
 
-När användaren väljer **slutförd** under en kundtjänstorder visas skärmen **Summor**. Först inkluderar summorna på den här skärmen inte betalningsmedelbaserade rabatter eftersom betalningsmetoden ännu inte har valts. På skärmen **Lägg till betalning** om användaren väljer den betalningsmetod som den betalningsmedelbaserade rabatten är konfigurerad för justeras betalningsbeloppet automatiskt så att det återspeglar det rabatterade beloppet. Precis som kunden i kassan kan kunden i kundtjänst avgöra om den ska betala hela betalningen eller en delbetalning. Baserat på det belopp som betalas, tillämpas den avgiftsbelagda rabatten på försäljningsordern.
+När användaren väljer **slutförd** under en kundtjänstorder visas skärmen **Summor**. Först inkluderar summorna på den här skärmen inte betalningsmedelbaserade rabatter eftersom betalsättet ännu inte har valts. På skärmen **Lägg till betalning** om användaren väljer det betalsätt som den betalningsmedelbaserade rabatten är konfigurerad för justeras betalningsbeloppet automatiskt så att det återspeglar det rabatterade beloppet. Precis som kunden i POS kan kunden i kundtjänst avgöra om den ska betala hela betalningen eller en delbetalning. Baserat på det belopp som betalas, tillämpas den avgiftsbelagda rabatten på försäljningsordern.
 
 > [!NOTE]
 > Kortvalidering utförs inte för kundtjänstorder. Om t.ex. kundtjänstanvändaren väljer Visa som kreditkort, men kunden använder MasterCard, används rabatten fortfarande i systemet.
 
 ## <a name="exclude-items-from-discounts"></a>Exkludera artiklar från rabatter
 
-Återförsäljare väljer ofta att exkludera vissa produkter, t.ex. nya artiklar eller artiklar på begäran, från rabatter. De kan dock fortfarande vilja använda betalningsmedelbaserade rabatter. En återförsäljare konfigurerar till exempel Handel så att artikelbaserade rabatter eller manuella rabatter inte tillåts. Om kunden betalar med hjälp av det prioriterade betalningsmedlet, kommer Handel fortfarande rabatten att tillämpas på den betalningsmedelbaserade rabatten. Om du vill ställa in Handel på det här sättet måste du gå till **Produktinformationshantering > Produkter > Frisläppta produkter**, markera artikeln och sedan på snabbfliken **Handel** ange alternativen **Förhindra alla rabatter** och **Förhindra betalningsmedelbaserade rabatter** till **Nej** och alternativen **Förhindra butiksrabatter** och **Förhindra manuella rabatter** till **Ja**.
+Återförsäljare väljer ofta att exkludera vissa produkter, t.ex. nya artiklar eller artiklar på begäran, från rabatter. De kan dock fortfarande vilja använda betalningsmedelbaserade rabatter. En återförsäljare konfigurerar till exempel Commerce så att artikelbaserade rabatter eller manuella rabatter inte tillåts. Om kunden betalar med hjälp av det prioriterade betalningsmedlet, kommer Commerce fortfarande rabatten att tillämpas på den betalningsmedelbaserade rabatten. Om du vill ställa in Commerce på det här sättet måste du gå till **Produktinformationshantering > Produkter > Frisläppta produkter**, markera artikeln och sedan på snabbfliken **Commerce** ange alternativen **Förhindra alla rabatter** och **Förhindra betalningsmedelbaserade rabatter** till **Nej** och alternativen **Förhindra butiksrabatter** och **Förhindra manuella rabatter** till **Ja**.
 
 > [!NOTE]
 > När konfigurationen **Förhindra alla rabatter** är inställd på **Ja** tillämpas inga rabatter på produkten. Inte heller betalningsmedelbaserade rabatter kommer att användas.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

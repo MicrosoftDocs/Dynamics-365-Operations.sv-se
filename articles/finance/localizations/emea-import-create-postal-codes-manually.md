@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LogisticsAddressSetup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 29901
 ms.search.region: Belgium, Netherlands, Sweden
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9663c956ed51b862b86e44094a60d0907d3a1647
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7ef7d8d042c9c0d78c1ea3e56eda2ff3597a9781
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408624"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962680"
 ---
 # <a name="import-or-manually-create-postal-codes"></a>Importera eller skapa postnummer manuellt
 
@@ -47,6 +46,3 @@ I vissa länder måste du använda ramverket för datahantering för att importe
 I stället för att importera koder kan du använda sidan **Adressinställningar** för att manuellt lägga till nya postnummer.
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

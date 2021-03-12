@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 601977cc5b8aa992b8576d30eb1412fb4e119154
-ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
+ms.openlocfilehash: 3bd028e7d61fd57ed434a8a598bf24329a54ac1c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4666804"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963645"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Utbildningskatalog för funktionella konsulter för Dynamics 365 Supply Chain Management
 
@@ -114,6 +113,3 @@ För funktionella konsulter visade vår jobbuppgiftsanalys forskning att alla m�
 | [Examen MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Denna examen mäter din förmåga att utföra följande tekniska uppgifter: Använd vanliga funktioner och implementeringsverktyg. Konfigurera säkerhet, processer och alternativ; utföra datamigrering och validera och stödja lösningen. | Prov; kostnaden varierar beroende på region |
 | [Examen MB-330: Microsoft Dynamics 365 for Finance and Operations, Supply Chain Management](https://docs.microsoft.com/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | Denna examen mäter din förmåga att utföra följande tekniska uppgifter: implementera produktinformationshantering; implementera lagerhantering; implementera och hantera processer för leveranskedja; och implementera lagerstyrning och transporthantering och utföra affärsprocesser. | Prov; kostnaden varierar beroende på region |
 | [Examen MB-320: Microsoft Dynamics 365 for Finance and Operations, tillverkning](https://www.microsoft.com/learning/exam-MB-320.aspx) | Denna examen mäter förmågan att genomföra följande tekniska uppgifter: ställa in och konfigurera tillverkning; skapa och hantera produktions- och lean-order och skapa, bearbeta och hantera batchorder för produktionsorder. | Prov; kostnaden varierar beroende på region |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

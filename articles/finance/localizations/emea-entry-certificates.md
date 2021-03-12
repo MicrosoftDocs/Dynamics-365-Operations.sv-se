@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: CustEntryCertificateJour_W, CustParameters, CustTable, SalesTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 11464
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46a4180163adea72e7d8712ed5ce6a3306e477c5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f91317f327852bc44a8c88887c18b69f6ec020e8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408619"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962783"
 ---
 # <a name="eu-entry-certificates"></a>Mottagningskvitton för EU
 
@@ -126,6 +125,3 @@ Om du inte har åtkomst till de sidor som används för att slutföra den här u
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

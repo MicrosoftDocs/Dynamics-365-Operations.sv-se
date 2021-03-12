@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a72719c9fd03f73b69b558fc0f08eed91ea94ee1
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: c19693151399fc02ea9562757af7fc24124c9b6c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694369"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798840"
 ---
 # <a name="configure-line-item-workflows"></a>Konfigurera arbetsflöden för radartiklar
 
@@ -54,6 +54,3 @@ Gör på följande sätt när du vill ange om samma arbetsflöde används för a
     6. Klicka på **Test** för att bekräfta att den uppsättning villkor som du har angett också har ställts in korrekt. På sidan **Testa arbetsflödesvillkor**, i området **Validera villkor**, väljer du en post innan du klickar på **Testa**. Systemet utvärderar posten i syfte att avgöra om den uppfyller villkoren som du angett. När du vill återgå till sidan **Egenskaper** klickar du på **OK** eller på **Avbryt**.
 
     I fliken **Workflow** markerar du det arbetsflöde du vill använda för att processa radartiklar som uppfyller den uppsättning villkor som du har angett.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

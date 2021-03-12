@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c9cecabb7923e86e8aa09eed7bd3b1ba5ee0bd8
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: d351facbce02355ddb4bdf91d43d9df561e4f3b5
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694871"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798863"
 ---
 # <a name="configure-manual-decisions-in-a-workflow"></a>Konfigurera manuella beslut i ett arbetsflöde
 
@@ -350,6 +350,3 @@ Följ dessa steg om beslutet måste fattas inom en viss tid.
     - **År –** – Välj dag, vecka och månad då beslutet senast måste vara fattat. Du kanske till exempel vill att beslutet ska vara fattat senast på fredagen i den tredje veckan i december.
 
 4. Om tidsgränsen överskrids kommer systemet att fatta beslutet. I listan **Åtgärd** väljer du det alternativ som systemet ska vidta.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

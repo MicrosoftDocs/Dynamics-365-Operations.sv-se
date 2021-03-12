@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b68182ff7da07f350e2eacaf569089e0fdf44a8d
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 43fa263bcbb6f5a6465af59ffb744aa865d66239
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4695071"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4799119"
 ---
 # <a name="navigation-search"></a>Navigeringsökning
 
@@ -62,6 +62,3 @@ Listan med sökresultat begränsas till tio objekt. Om du inte hittar vad du sö
 ## <a name="development"></a>Utveckling
 
 Från ett utvecklingsperspektiv är navigeringssökfunktionen mycket lätt att utnyttja, eftersom det inte finns någon faktiskt fördröjning mellan distributionen av menyalternativ och deras förmåga att visas i sökresultat. Så länge som menyalternativen länkas till från antingen navigeringsfönstret eller instrumentpanelen kommer dessa automatiskt att bli sökbara.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

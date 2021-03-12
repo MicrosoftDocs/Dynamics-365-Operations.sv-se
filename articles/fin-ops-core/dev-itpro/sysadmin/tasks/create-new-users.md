@@ -3,7 +3,7 @@ title: Skapa nya användare
 description: Användare är interna medarbetare i organisationen, eller externa kunder och leverantörer, som behöver åtkomst till systemet för att utföra sitt arbete.
 author: peakerbl
 manager: AnnBe
-ms.date: 06/08/2020
+ms.date: 01/12/2021
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,46 +15,69 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6f861b7493d039b332358be7df7d0198cbadcb7a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ca062ddd49f1c206c503fb6160ed436fe2d6f7e9
+ms.sourcegitcommit: 9e27a097b7eb3c8f2df66011ccc597ad18bc5445
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679850"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "4878667"
 ---
 # <a name="create-new-users"></a>Skapa nya användare
 
 [!include [banner](../../includes/banner.md)]
 
-Användare är interna medarbetare i organisationen, eller externa kunder och leverantörer, som behöver åtkomst till systemet för att utföra sitt arbete.
+Innan du får åtkomst till Finance and Operations-appar måste du först lägga till på sidan **Användare** (**Systemadministration \> Användare \> Användare**). Användare inkluderar interna medarbetare inom organisationen eller externa kunder och leverantörer. Användare kan importeras eller läggas till manuellt. Alla användare måste ha rätt licens för kompatibel användning.
 
-## <a name="associate-a-user-with-a-license-new-license-types-only"></a>Associera en användare med en licens (endast nya licenstyper)
-För kunder som finns på en av de nya licenstyperna som lades till i oktober 2019, måste användarna associeras med en licens. Användare som associeras med en licens läggs automatiskt till som systemanvändare som inte har några roller första gången de loggar in.
+Mer information om hur du köper och licens för Finance and Operations-appar, se [Microsoft Dynamics 365 licenshandboken](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
+## <a name="assign-a-license-to-a-user"></a>Tilldela en licens till en användare.
 Systemadministratörer kan [tilldela licenser till användare](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) i [Microsoft 365 administrationscenter](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide)
 
-## <a name="associate-an-external-user-with-a-license-new-license-types-only"></a>Associera en extern användare med en licens (endast nya licenstyper)
-Användare som är externa till innehavaren som miljön distribuerades till måste representeras i värdbaserade klientkatalogen (Azure Active Directory (Azure AD)) så att de kan tilldelas licenser. Dessa externa användare ska läggas till i innehavaren av Azure AD som gästanvändare och sedan tilldelas de lämpliga licenserna. Mer information finns i [lägga till Azure Active Directory B2B samarbetsanvändare i Azure-portalen](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Lägg till en extern användare i Azure AD och tilldela en licens 
+Externa användare måste finnas med i klientkatalogen (Azure Active Directory (Azure AD)) så att de kan tilldelas licenser. Dessa externa användare ska läggas till i innehavaren av Azure AD som gästanvändare och sedan tilldelas de lämpliga licenserna. Ett krav för Finance and Operations-appar är att gästanvändarens företag måste använda Azure AD. Mer information finns i [lägga till Azure Active Directory B2B samarbetsanvändare i Azure-portalen](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
-## <a name="add-a-new-user"></a>Lägg till ny användare
-1. Gå till **Systemadministration \> Användare \> Användare**.
-2. Klicka på **Ny** i åtgärdsfönstret.
-3. I fältet **Användar-ID** anger du en unik identifierare för användaren. Ett användar-id krävs.  
-4. Ange användarens namn fältet **Användarnamn**.  
-5. Ange användarens domän i fältet **Domän**.  
-6. Ange användarens alias i fältet **alias**.  
-7. Välj önskat företag i fältet **Företag**. 
-8. På snabbfliken **användarens roller** välj **tilldela roller** tilldela användare till säkerhetsroller. För mer information, se [Tilldela användare till säkerhetsroller](assign-users-security-roles.md).
-9. Välj **OK**.
-10. Välj **Spara**.
-
-## <a name="import-users"></a>Importera användare
-1. Gå till **Systemadministration \> Användare \> Användare**.
+## <a name="import-new-users-from-azure-ad"></a>Importera ny användare från Azure AD 
+1. Gå till **Systemadministration** \> **Användare** \> **Användare**.
 2. Välj **Importera användare** i åtgärdsfönstret.
-3. Markera vald rad i listan.
+3. Välj den användare du vill importera. Listan omfattar användare av Azure AD som för närvarande inte är användare i den här miljön.
 4. Välj **Importera användare**.
 5. Välj **Nära**.
 
+> [!NOTE]
+> Värdet för fältet **Företag** ställs in baserat på det aktuella sessionsföretaget för administratören. Efter importen måste du tilldela roller och organisationer, enligt vad som är tillämpligt. För mer information, se [Tilldela användare till säkerhetsroller](assign-users-security-roles.md). Enligt vissa villkor kan det även vara obligatoriskt att koppla användaren till en **person** och uppdatera användaralternativ, till exempel språk.
 
+## <a name="manually-add-a-new-user"></a>Lägg manuellt till ny användare
+1. Gå till **Systemadministration** \> **Användare** \> **Användare**.
+2. Klicka på **Ny** i åtgärdsfönstret.
+3. I fältet **Användar-ID** anger du en unik identifierare för användaren.   
+4. Ange användarens namn fältet **Användarnamn**.  
+5. I fältet **Leverantör**:
+ - Använd standardvärdet för interna användare. Till exempel får Azure AD innehavare prefix med https://sts.windows.net/.  
+ - För icke-Azure AD-användare som tjänst-2-tjänst konton anger du ett grundläggande textvärde. Till exempel NA. Det här värdet hjälper dig att undvika felaktiga autentiseringssamtal som kan leda till fel om ett giltigt ID-leverantörsvärde används.  
+ - För externa eller gästanvändare, lägg till deras Azure AD innehavarnamn efter https://sts.windows.net/.
+6. I fältet **E-post** ange användarens fullständiga e-post/användarens huvudnamn.  
+7. I fältet **Företag** välj standardstartföretag för användaren. 
+8. Välj **Spara**.
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+Värdena för identitetsleverantör och telemetri-ID kommer att uppdateras baserat på en [Microsoft Graph](https://docs.microsoft.com/graph/overview)-samtal när användarposten sparas. Telemetr-ID:t baseras på användarens objekt-ID/säkerhetsidentifierare (SID) i Azure AD.
+
+> [!NOTE]
+> När du har lagt till en användare måste du tilldela roller och organisationer, enligt vad som är tillämpligt. För mer information, se [Tilldela användare till säkerhetsroller](assign-users-security-roles.md). Enligt vissa villkor kan det även vara obligatoriskt att koppla användaren till en **person** och uppdatera **användaralternativ**, till exempel språk.
+
+## <a name="change-a-user-id"></a>Ändra ett användar-ID
+Om du vill ändra ett användar-ID måste du byta namn på nyckeln i databasen. När du ändrar ett användar-ID genom att använda den här proceduren ändras alla relaterade användarinställningar så att de använder det nya användar-ID:t. Till exempel användarinformationen i tabellen **SysLastValue** uppdateras till att referera till det nya användar-ID:t.
+
+> [!NOTE]
+> Användar-ID är den primära nyckeln i tabellen för användarinformation. Att byta namn på primärnyckeln kan ta lite tid för befintliga användare eftersom alla referenser till nyckeln också uppdateras i databasen. 
+
+1. Gå till **Systemadministration \> Användare \> Användare**.
+2. Markera en användare i listan och välj **Alternativ\> Postinformation**.
+3. Välj **Byt namn**.
+4. Ange ett nytt och unikt värde för användar-ID och välj sedan **OK**. 
+5. Klicka på **Ja** för att bekräfta.
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+Fler alternativ för att implementera B2B-användare finns i [Exportera B2B-användare till Azure AD](../implement-b2b.md).
+
+Mer information om förkonfigurerade systemkonton finns i [Förkonfigurerade systemkonton](../pre-configured-system-accounts.md)
