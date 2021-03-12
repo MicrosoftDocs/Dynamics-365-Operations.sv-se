@@ -10,115 +10,114 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e15ba6a0d624bd97c25936aa6d3bfafb844b66c0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dfebc6616186a3a8859b00e90c178129feaa324b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415775"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980167"
 ---
-# <a name="add-script-code-to-site-pages-to-support-telemetry"></a><span data-ttu-id="b491f-103">Lägga till skriptkod på webbsidor för att stödja telemetri</span><span class="sxs-lookup"><span data-stu-id="b491f-103">Add script code to site pages to support telemetry</span></span>
+# <a name="add-script-code-to-site-pages-to-support-telemetry"></a><span data-ttu-id="55a01-103">Lägga till skriptkod på webbsidor för att stödja telemetri</span><span class="sxs-lookup"><span data-stu-id="55a01-103">Add script code to site pages to support telemetry</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="b491f-104">I det här avsnittet beskrivs hur du lägger till skriptkod på klientsidan på webbplatssidorna för att stödja insamling av telemetri på klientsidan.</span><span class="sxs-lookup"><span data-stu-id="b491f-104">This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry.</span></span>
+<span data-ttu-id="55a01-104">I det här avsnittet beskrivs hur du lägger till skriptkod på klientsidan på webbplatssidorna för att stödja insamling av telemetri på klientsidan.</span><span class="sxs-lookup"><span data-stu-id="55a01-104">This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="b491f-105">Översikt</span><span class="sxs-lookup"><span data-stu-id="b491f-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="55a01-105">Översikt</span><span class="sxs-lookup"><span data-stu-id="55a01-105">Overview</span></span>
 
-<span data-ttu-id="b491f-106">Webbanalys är ett viktigt verktyg när du vill förstå hur dina kunder samverkar med din webbplats och fatta beslut som hjälper dig att optimera upplevelsen för maximal konvertering.</span><span class="sxs-lookup"><span data-stu-id="b491f-106">Web analytics are an essential tool when you want to understand how your customers interact with your site and make decisions that will help optimize the experience for maximum conversion.</span></span> <span data-ttu-id="b491f-107">Det finns många webbanalyspaket som hjälper dig att uppnå dessa mål, t.ex. Google Analytics, Clicky, Moz Analytics och KISSMetrics.</span><span class="sxs-lookup"><span data-stu-id="b491f-107">Many web analytics packages are available to help you achieve these goals, such as Google Analytics, Clicky, Moz Analytics, and KISSMetrics.</span></span> <span data-ttu-id="b491f-108">De flesta webbanalyspaketen kräver att du lägger till klientskriptkod i elementet **\<head\>** för HTML på alla sidor på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="b491f-108">Most web analytics packages require that you add client-side script code in the **\<head\>** element of the HTML for all pages of your site.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="b491f-109">Instruktionerna i det här avsnittet gäller även andra anpassade klientfunktioner som Microsoft Dynamics 365 Commerce inte erbjuder.</span><span class="sxs-lookup"><span data-stu-id="b491f-109">The instructions in this topic also apply to other custom client-side functionality that Microsoft Dynamics 365 Commerce doesn't natively offer.</span></span>
-
-## <a name="create-a-reusable-fragment-for-your-script-code"></a><span data-ttu-id="b491f-110">Skapa ett återanvändbart fragment för skriptkoden</span><span class="sxs-lookup"><span data-stu-id="b491f-110">Create a reusable fragment for your script code</span></span>
-
-<span data-ttu-id="b491f-111">Med hjälp av ett fragment kan du återanvända en infogad eller extern skriptkod på alla sidor på din webbplats, oavsett vilken mall de använder.</span><span class="sxs-lookup"><span data-stu-id="b491f-111">A fragment allows you to reuse inline or external script code across all pages on your site, regardless of the template they use.</span></span>
-
-### <a name="create-a-reusable-fragment-for-your-inline-script-code"></a><span data-ttu-id="b491f-112">Skapa ett återanvändbart fragment för den infogade skriptkoden</span><span class="sxs-lookup"><span data-stu-id="b491f-112">Create a reusable fragment for your inline script code</span></span>
-
-<span data-ttu-id="b491f-113">Om du vill skapa ett återanvändbart fragment för den infogade skriptoden i webbplatsskaparen följer du stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="b491f-113">To create a reusable fragment for your inline script code in site builder, follow these steps.</span></span>
-
-1. <span data-ttu-id="b491f-114">Gå till **Fragment** och välj sedan **Nytt**.</span><span class="sxs-lookup"><span data-stu-id="b491f-114">Go to **Fragments**, and then select **New**.</span></span>
-1. <span data-ttu-id="b491f-115">I dialogrutan **Nytt fragment** välj **infogat skript**.</span><span class="sxs-lookup"><span data-stu-id="b491f-115">In the **New fragment** dialog box, select **Inline script**.</span></span>
-1. <span data-ttu-id="b491f-116">Under **fragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.</span><span class="sxs-lookup"><span data-stu-id="b491f-116">Under **Fragment name**, enter a name for the fragment, and then select **OK**.</span></span>
-1. <span data-ttu-id="b491f-117">Under det fragment som du har skapat väljer du modulen **infogat standardskript**.</span><span class="sxs-lookup"><span data-stu-id="b491f-117">Under the fragment that you created, select the **Default inline script** module.</span></span>
-1. <span data-ttu-id="b491f-118">Ange skript på klientsidan i egenskapsrutan till höger under **infogat skript**.</span><span class="sxs-lookup"><span data-stu-id="b491f-118">In the property pane on the right, under **Inline script**, enter your client-side script.</span></span> <span data-ttu-id="b491f-119">Konfigurera sedan andra alternativ som du behöver.</span><span class="sxs-lookup"><span data-stu-id="b491f-119">Then configure other options as you require.</span></span>
-1. <span data-ttu-id="b491f-120">Välj **spara** och välj sedan **Avsluta redigeringen**.</span><span class="sxs-lookup"><span data-stu-id="b491f-120">Select **Save**, and then select **Finish editing**.</span></span>
-1. <span data-ttu-id="b491f-121">Markera **Publicera**.</span><span class="sxs-lookup"><span data-stu-id="b491f-121">Select **Publish**.</span></span>
-
-### <a name="create-a-reusable-fragment-for-your-external-script-code"></a><span data-ttu-id="b491f-122">Skapa ett återanvändbart fragment för den externa skriptkoden</span><span class="sxs-lookup"><span data-stu-id="b491f-122">Create a reusable fragment for your external script code</span></span>
-
-<span data-ttu-id="b491f-123">Om du vill skapa ett återanvändbart fragment för den externa skripkoden i webbplatsskaparen följer du stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="b491f-123">To create a reusable fragment for your external script code in site builder, follow these steps.</span></span>
-
-1. <span data-ttu-id="b491f-124">Gå till **Fragment** och välj sedan **Nytt**.</span><span class="sxs-lookup"><span data-stu-id="b491f-124">Go to **Fragments**, and then select **New**.</span></span>
-1. <span data-ttu-id="b491f-125">I dialogrutan **Nytt fragment** välj **externt skript**.</span><span class="sxs-lookup"><span data-stu-id="b491f-125">In the **New fragment** dialog box, select **External script**.</span></span>
-1. <span data-ttu-id="b491f-126">Under **fragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.</span><span class="sxs-lookup"><span data-stu-id="b491f-126">Under **Fragment name**, enter a name for the fragment, and then select **OK**.</span></span>
-1. <span data-ttu-id="b491f-127">Under det fragment som du har skapat väljer du modulen **externt standardskript**.</span><span class="sxs-lookup"><span data-stu-id="b491f-127">Under the fragment that you created, select the **Default external script** module.</span></span>
-1. <span data-ttu-id="b491f-128">I egenskapsrutan till höger, under **Skriptkälla**, lägg till en extern eller relativ URL för den externa skriptkällan.</span><span class="sxs-lookup"><span data-stu-id="b491f-128">In the property pane on the right, under **Script source**, add an external or relative URL for the external script source.</span></span> <span data-ttu-id="b491f-129">Konfigurera sedan andra alternativ som du behöver.</span><span class="sxs-lookup"><span data-stu-id="b491f-129">Then configure other options as you require.</span></span>
-1. <span data-ttu-id="b491f-130">Välj **spara** och välj sedan **Avsluta redigeringen**.</span><span class="sxs-lookup"><span data-stu-id="b491f-130">Select **Save**, and then select **Finish editing**.</span></span>
-1. <span data-ttu-id="b491f-131">Markera **Publicera**.</span><span class="sxs-lookup"><span data-stu-id="b491f-131">Select **Publish**.</span></span>
+<span data-ttu-id="55a01-106">Webbanalys är ett viktigt verktyg när du vill förstå hur dina kunder samverkar med din webbplats och fatta beslut som hjälper dig att optimera upplevelsen för maximal konvertering.</span><span class="sxs-lookup"><span data-stu-id="55a01-106">Web analytics are an essential tool when you want to understand how your customers interact with your site and make decisions that will help optimize the experience for maximum conversion.</span></span> <span data-ttu-id="55a01-107">Det finns många webbanalyspaket som hjälper dig att uppnå dessa mål, t.ex. Google Analytics, Clicky, Moz Analytics och KISSMetrics.</span><span class="sxs-lookup"><span data-stu-id="55a01-107">Many web analytics packages are available to help you achieve these goals, such as Google Analytics, Clicky, Moz Analytics, and KISSMetrics.</span></span> <span data-ttu-id="55a01-108">De flesta webbanalyspaketen kräver att du lägger till klientskriptkod i elementet **\<head\>** för HTML på alla sidor på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="55a01-108">Most web analytics packages require that you add client-side script code in the **\<head\>** element of the HTML for all pages of your site.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="b491f-132">Om säkerhetsprincip (CSP) för innehåll är aktiverad för din webbplats måste du se till att alla externa URL:er läggs till i CSP-direktivet **skript-src** i Commerce-webbplatsskaparen.</span><span class="sxs-lookup"><span data-stu-id="b491f-132">If content security policy (CSP) is enabled for your site, ensure that all external URLs are added to the **script-src** CSP directive in Commerce site builder.</span></span> <span data-ttu-id="b491f-133">Mer information finns i [hantera säkerhetsprinciper för innehåll (CSP)](manage-csp.md).</span><span class="sxs-lookup"><span data-stu-id="b491f-133">For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).</span></span>
+> <span data-ttu-id="55a01-109">Instruktionerna i det här avsnittet gäller även andra anpassade klientfunktioner som Microsoft Dynamics 365 Commerce inte erbjuder.</span><span class="sxs-lookup"><span data-stu-id="55a01-109">The instructions in this topic also apply to other custom client-side functionality that Microsoft Dynamics 365 Commerce doesn't natively offer.</span></span>
 
-## <a name="add-a-fragment-that-includes-script-code-to-a-template"></a><span data-ttu-id="b491f-134">Lägga till ett fragment som innehåller skriptkod i en mall</span><span class="sxs-lookup"><span data-stu-id="b491f-134">Add a fragment that includes script code to a template</span></span>
+## <a name="create-a-reusable-fragment-for-your-script-code"></a><span data-ttu-id="55a01-110">Skapa ett återanvändbart fragment för skriptkoden</span><span class="sxs-lookup"><span data-stu-id="55a01-110">Create a reusable fragment for your script code</span></span>
 
-<span data-ttu-id="b491f-135">Följ dessa steg för att lägga till ett fragment som innehåller skriptkod till en mall i webbplatsbyggaren.</span><span class="sxs-lookup"><span data-stu-id="b491f-135">To add a fragment that includes script code to a template in site builder, follow these steps.</span></span>
+<span data-ttu-id="55a01-111">Med hjälp av ett fragment kan du återanvända en infogad eller extern skriptkod på alla sidor på din webbplats, oavsett vilken mall de använder.</span><span class="sxs-lookup"><span data-stu-id="55a01-111">A fragment allows you to reuse inline or external script code across all pages on your site, regardless of the template they use.</span></span>
 
-1. <span data-ttu-id="b491f-136">Gå till **mallarna** och öppna mallen för sidorna som du vill lägga till skriptkoden i.</span><span class="sxs-lookup"><span data-stu-id="b491f-136">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
-1. <span data-ttu-id="b491f-137">I det vänstra fönstret expanderar du mallstrukturlistan så att platsen **HTML-huvud** visas.</span><span class="sxs-lookup"><span data-stu-id="b491f-137">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
-1. <span data-ttu-id="b491f-138">På platsen **HTML-huvud** markera knappen med punkter (**...**) och välj sedan **Lägg till fragment**.</span><span class="sxs-lookup"><span data-stu-id="b491f-138">In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add fragment**.</span></span>
-1. <span data-ttu-id="b491f-139">Markera det fragment som du har skapat för skriptkoden.</span><span class="sxs-lookup"><span data-stu-id="b491f-139">Select the fragment that you created for your script code.</span></span>
-1. <span data-ttu-id="b491f-140">Välj **spara** och välj sedan **Avsluta redigeringen**.</span><span class="sxs-lookup"><span data-stu-id="b491f-140">Select **Save**, and then select **Finish editing**.</span></span>
-1. <span data-ttu-id="b491f-141">Markera **Publicera**.</span><span class="sxs-lookup"><span data-stu-id="b491f-141">Select **Publish**.</span></span>
+### <a name="create-a-reusable-fragment-for-your-inline-script-code"></a><span data-ttu-id="55a01-112">Skapa ett återanvändbart fragment för den infogade skriptkoden</span><span class="sxs-lookup"><span data-stu-id="55a01-112">Create a reusable fragment for your inline script code</span></span>
 
-## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a><span data-ttu-id="b491f-142">Lägga till ett externt skript eller infogat skript direkt i en mall</span><span class="sxs-lookup"><span data-stu-id="b491f-142">Add an external script or inline script directly to a template</span></span>
+<span data-ttu-id="55a01-113">Om du vill skapa ett återanvändbart fragment för den infogade skriptoden i webbplatsskaparen följer du stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="55a01-113">To create a reusable fragment for your inline script code in site builder, follow these steps.</span></span>
 
-<span data-ttu-id="b491f-143">Om du vill infoga ett infogat eller externt skript direkt på en uppsättning sidor som kontrolleras av en enskild mall, behöver du inte skapa ett fragment först.</span><span class="sxs-lookup"><span data-stu-id="b491f-143">If you want to insert an inline or external script directly into a set of pages that are controlled by a single template, you don't have to create a fragment first.</span></span>
+1. <span data-ttu-id="55a01-114">Gå till **Fragment** och välj sedan **Nytt**.</span><span class="sxs-lookup"><span data-stu-id="55a01-114">Go to **Fragments**, and then select **New**.</span></span>
+1. <span data-ttu-id="55a01-115">I dialogrutan **Nytt fragment** välj **infogat skript**.</span><span class="sxs-lookup"><span data-stu-id="55a01-115">In the **New fragment** dialog box, select **Inline script**.</span></span>
+1. <span data-ttu-id="55a01-116">Under **fragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.</span><span class="sxs-lookup"><span data-stu-id="55a01-116">Under **Fragment name**, enter a name for the fragment, and then select **OK**.</span></span>
+1. <span data-ttu-id="55a01-117">Under det fragment som du har skapat väljer du modulen **infogat standardskript**.</span><span class="sxs-lookup"><span data-stu-id="55a01-117">Under the fragment that you created, select the **Default inline script** module.</span></span>
+1. <span data-ttu-id="55a01-118">Ange skript på klientsidan i egenskapsrutan till höger under **infogat skript**.</span><span class="sxs-lookup"><span data-stu-id="55a01-118">In the property pane on the right, under **Inline script**, enter your client-side script.</span></span> <span data-ttu-id="55a01-119">Konfigurera sedan andra alternativ som du behöver.</span><span class="sxs-lookup"><span data-stu-id="55a01-119">Then configure other options as you require.</span></span>
+1. <span data-ttu-id="55a01-120">Välj **spara** och välj sedan **Avsluta redigeringen**.</span><span class="sxs-lookup"><span data-stu-id="55a01-120">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="55a01-121">Markera **Publicera**.</span><span class="sxs-lookup"><span data-stu-id="55a01-121">Select **Publish**.</span></span>
 
-### <a name="add-an-inline-script-directly-to-a-template"></a><span data-ttu-id="b491f-144">Lägga till ett infogat skript direkt i en mall</span><span class="sxs-lookup"><span data-stu-id="b491f-144">Add an inline script directly to a template</span></span>
+### <a name="create-a-reusable-fragment-for-your-external-script-code"></a><span data-ttu-id="55a01-122">Skapa ett återanvändbart fragment för den externa skriptkoden</span><span class="sxs-lookup"><span data-stu-id="55a01-122">Create a reusable fragment for your external script code</span></span>
 
-<span data-ttu-id="b491f-145">Om du vill lägga till ett infogat skript direkt på en mall i webbplatsskaparen följer du stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="b491f-145">To add an inline script directly to a template in site builder, follow these steps.</span></span>
+<span data-ttu-id="55a01-123">Om du vill skapa ett återanvändbart fragment för den externa skripkoden i webbplatsskaparen följer du stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="55a01-123">To create a reusable fragment for your external script code in site builder, follow these steps.</span></span>
 
-1. <span data-ttu-id="b491f-146">Gå till **mallarna** och öppna mallen för sidorna som du vill lägga till skriptkoden i.</span><span class="sxs-lookup"><span data-stu-id="b491f-146">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
-1. <span data-ttu-id="b491f-147">I det vänstra fönstret expanderar du mallstrukturlistan så att platsen **HTML-huvud** visas.</span><span class="sxs-lookup"><span data-stu-id="b491f-147">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
-1. <span data-ttu-id="b491f-148">I facket **HTML-huvud** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.</span><span class="sxs-lookup"><span data-stu-id="b491f-148">In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add Module**.</span></span>
-1. <span data-ttu-id="b491f-149">I dialogrutan **Lägg till modul** välj **infogat skript**.</span><span class="sxs-lookup"><span data-stu-id="b491f-149">In the **Add Module** dialog box, select **Inline script**.</span></span>
-1. <span data-ttu-id="b491f-150">Ange skript på klientsidan i egenskapsrutan till höger under **infogat skript**.</span><span class="sxs-lookup"><span data-stu-id="b491f-150">In the property pane on the right, under **Inline script**, enter your client-side script.</span></span> <span data-ttu-id="b491f-151">Konfigurera sedan andra alternativ som du behöver.</span><span class="sxs-lookup"><span data-stu-id="b491f-151">Then configure other options as you require.</span></span>
-1. <span data-ttu-id="b491f-152">Välj **spara** och välj sedan **Avsluta redigeringen**.</span><span class="sxs-lookup"><span data-stu-id="b491f-152">Select **Save**, and then select **Finish editing**.</span></span>
-1. <span data-ttu-id="b491f-153">Markera **Publicera**.</span><span class="sxs-lookup"><span data-stu-id="b491f-153">Select **Publish**.</span></span>
+1. <span data-ttu-id="55a01-124">Gå till **Fragment** och välj sedan **Nytt**.</span><span class="sxs-lookup"><span data-stu-id="55a01-124">Go to **Fragments**, and then select **New**.</span></span>
+1. <span data-ttu-id="55a01-125">I dialogrutan **Nytt fragment** välj **externt skript**.</span><span class="sxs-lookup"><span data-stu-id="55a01-125">In the **New fragment** dialog box, select **External script**.</span></span>
+1. <span data-ttu-id="55a01-126">Under **fragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.</span><span class="sxs-lookup"><span data-stu-id="55a01-126">Under **Fragment name**, enter a name for the fragment, and then select **OK**.</span></span>
+1. <span data-ttu-id="55a01-127">Under det fragment som du har skapat väljer du modulen **externt standardskript**.</span><span class="sxs-lookup"><span data-stu-id="55a01-127">Under the fragment that you created, select the **Default external script** module.</span></span>
+1. <span data-ttu-id="55a01-128">I egenskapsrutan till höger, under **Skriptkälla**, lägg till en extern eller relativ URL för den externa skriptkällan.</span><span class="sxs-lookup"><span data-stu-id="55a01-128">In the property pane on the right, under **Script source**, add an external or relative URL for the external script source.</span></span> <span data-ttu-id="55a01-129">Konfigurera sedan andra alternativ som du behöver.</span><span class="sxs-lookup"><span data-stu-id="55a01-129">Then configure other options as you require.</span></span>
+1. <span data-ttu-id="55a01-130">Välj **spara** och välj sedan **Avsluta redigeringen**.</span><span class="sxs-lookup"><span data-stu-id="55a01-130">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="55a01-131">Markera **Publicera**.</span><span class="sxs-lookup"><span data-stu-id="55a01-131">Select **Publish**.</span></span>
 
-### <a name="add-an-external-script-directly-to-a-template"></a><span data-ttu-id="b491f-154">Lägga till ett externt skript direkt i en mall</span><span class="sxs-lookup"><span data-stu-id="b491f-154">Add an external script directly to a template</span></span>
+> [!NOTE]
+> <span data-ttu-id="55a01-132">Om säkerhetsprincip (CSP) för innehåll är aktiverad för din webbplats måste du se till att alla externa URL:er läggs till i CSP-direktivet **skript-src** i Commerce-webbplatsbyggaren.</span><span class="sxs-lookup"><span data-stu-id="55a01-132">If content security policy (CSP) is enabled for your site, ensure that all external URLs are added to the **script-src** CSP directive in Commerce site builder.</span></span> <span data-ttu-id="55a01-133">Mer information finns i [hantera säkerhetsprinciper för innehåll (CSP)](manage-csp.md).</span><span class="sxs-lookup"><span data-stu-id="55a01-133">For more information, see [Manage Content Security Policy (CSP)](manage-csp.md).</span></span>
 
-<span data-ttu-id="b491f-155">Om du vill lägga till ett extern skript direkt på en mall i webbplatsskaparen följer du stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="b491f-155">To add an external script directly to a template in site builder, follow these steps.</span></span>
+## <a name="add-a-fragment-that-includes-script-code-to-a-template"></a><span data-ttu-id="55a01-134">Lägga till ett fragment som innehåller skriptkod i en mall</span><span class="sxs-lookup"><span data-stu-id="55a01-134">Add a fragment that includes script code to a template</span></span>
 
-1. <span data-ttu-id="b491f-156">Gå till **mallarna** och öppna mallen för sidorna som du vill lägga till skriptkoden i.</span><span class="sxs-lookup"><span data-stu-id="b491f-156">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
-1. <span data-ttu-id="b491f-157">I det vänstra fönstret expanderar du mallstrukturlistan så att platsen **HTML-huvud** visas.</span><span class="sxs-lookup"><span data-stu-id="b491f-157">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
-1. <span data-ttu-id="b491f-158">I facket **HTML-huvud** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.</span><span class="sxs-lookup"><span data-stu-id="b491f-158">In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add Module**.</span></span>
-1. <span data-ttu-id="b491f-159">I dialogrutan **Lägg till modul** välj **externt skript**.</span><span class="sxs-lookup"><span data-stu-id="b491f-159">In the **Add Module** dialog box, select **External script**.</span></span>
-1. <span data-ttu-id="b491f-160">I egenskapsrutan till höger, under **Skriptkälla**, lägg till en extern eller relativ URL för den externa skriptkällan.</span><span class="sxs-lookup"><span data-stu-id="b491f-160">In the property pane on the right, under **Script source**, add an external or relative URL for the external script source.</span></span> <span data-ttu-id="b491f-161">Konfigurera sedan andra alternativ som du behöver.</span><span class="sxs-lookup"><span data-stu-id="b491f-161">Then configure other options as you require.</span></span>
-1. <span data-ttu-id="b491f-162">Välj **spara** och välj sedan **Avsluta redigeringen**.</span><span class="sxs-lookup"><span data-stu-id="b491f-162">Select **Save**, and then select **Finish editing**.</span></span>
-1. <span data-ttu-id="b491f-163">Markera **Publicera**.</span><span class="sxs-lookup"><span data-stu-id="b491f-163">Select **Publish**.</span></span>
+<span data-ttu-id="55a01-135">Följ dessa steg för att lägga till ett fragment som innehåller skriptkod till en mall i webbplatsbyggaren.</span><span class="sxs-lookup"><span data-stu-id="55a01-135">To add a fragment that includes script code to a template in site builder, follow these steps.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="b491f-164">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="b491f-164">Additional resources</span></span>
+1. <span data-ttu-id="55a01-136">Gå till **mallarna** och öppna mallen för sidorna som du vill lägga till skriptkoden i.</span><span class="sxs-lookup"><span data-stu-id="55a01-136">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
+1. <span data-ttu-id="55a01-137">I det vänstra fönstret expanderar du mallstrukturlistan så att platsen **HTML-huvud** visas.</span><span class="sxs-lookup"><span data-stu-id="55a01-137">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
+1. <span data-ttu-id="55a01-138">På platsen **HTML-huvud** markera knappen med punkter (**...**) och välj sedan **Lägg till fragment**.</span><span class="sxs-lookup"><span data-stu-id="55a01-138">In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add fragment**.</span></span>
+1. <span data-ttu-id="55a01-139">Markera det fragment som du har skapat för skriptkoden.</span><span class="sxs-lookup"><span data-stu-id="55a01-139">Select the fragment that you created for your script code.</span></span>
+1. <span data-ttu-id="55a01-140">Välj **spara** och välj sedan **Avsluta redigeringen**.</span><span class="sxs-lookup"><span data-stu-id="55a01-140">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="55a01-141">Markera **Publicera**.</span><span class="sxs-lookup"><span data-stu-id="55a01-141">Select **Publish**.</span></span>
 
-[<span data-ttu-id="b491f-165">Lägga till en logotyp</span><span class="sxs-lookup"><span data-stu-id="b491f-165">Add a logo</span></span>](add-logo.md)
+## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a><span data-ttu-id="55a01-142">Lägga till ett externt skript eller infogat skript direkt i en mall</span><span class="sxs-lookup"><span data-stu-id="55a01-142">Add an external script or inline script directly to a template</span></span>
 
-[<span data-ttu-id="b491f-166">Välja ett tema för webbplatsen</span><span class="sxs-lookup"><span data-stu-id="b491f-166">Select a site theme</span></span>](select-site-theme.md)
+<span data-ttu-id="55a01-143">Om du vill infoga ett infogat eller externt skript direkt på en uppsättning sidor som kontrolleras av en enskild mall, behöver du inte skapa ett fragment först.</span><span class="sxs-lookup"><span data-stu-id="55a01-143">If you want to insert an inline or external script directly into a set of pages that are controlled by a single template, you don't have to create a fragment first.</span></span>
 
-[<span data-ttu-id="b491f-167">Arbeta med CSS åsidosättningsfiler</span><span class="sxs-lookup"><span data-stu-id="b491f-167">Work with CSS override files</span></span>](css-override-files.md)
+### <a name="add-an-inline-script-directly-to-a-template"></a><span data-ttu-id="55a01-144">Lägga till ett infogat skript direkt i en mall</span><span class="sxs-lookup"><span data-stu-id="55a01-144">Add an inline script directly to a template</span></span>
 
-[<span data-ttu-id="b491f-168">Lägg till en favoritikon</span><span class="sxs-lookup"><span data-stu-id="b491f-168">Add a favicon</span></span>](add-favicon.md)
+<span data-ttu-id="55a01-145">Om du vill lägga till ett infogat skript direkt på en mall i webbplatsskaparen följer du stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="55a01-145">To add an inline script directly to a template in site builder, follow these steps.</span></span>
 
-[<span data-ttu-id="b491f-169">Lägg till ett välkomstmeddelande</span><span class="sxs-lookup"><span data-stu-id="b491f-169">Add a welcome message</span></span>](add-welcome-message.md)
+1. <span data-ttu-id="55a01-146">Gå till **mallarna** och öppna mallen för sidorna som du vill lägga till skriptkoden i.</span><span class="sxs-lookup"><span data-stu-id="55a01-146">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
+1. <span data-ttu-id="55a01-147">I det vänstra fönstret expanderar du mallstrukturlistan så att platsen **HTML-huvud** visas.</span><span class="sxs-lookup"><span data-stu-id="55a01-147">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
+1. <span data-ttu-id="55a01-148">I facket **HTML-huvud** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.</span><span class="sxs-lookup"><span data-stu-id="55a01-148">In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add Module**.</span></span>
+1. <span data-ttu-id="55a01-149">I dialogrutan **Lägg till modul** välj **infogat skript**.</span><span class="sxs-lookup"><span data-stu-id="55a01-149">In the **Add Module** dialog box, select **Inline script**.</span></span>
+1. <span data-ttu-id="55a01-150">Ange skript på klientsidan i egenskapsrutan till höger under **infogat skript**.</span><span class="sxs-lookup"><span data-stu-id="55a01-150">In the property pane on the right, under **Inline script**, enter your client-side script.</span></span> <span data-ttu-id="55a01-151">Konfigurera sedan andra alternativ som du behöver.</span><span class="sxs-lookup"><span data-stu-id="55a01-151">Then configure other options as you require.</span></span>
+1. <span data-ttu-id="55a01-152">Välj **spara** och välj sedan **Avsluta redigeringen**.</span><span class="sxs-lookup"><span data-stu-id="55a01-152">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="55a01-153">Markera **Publicera**.</span><span class="sxs-lookup"><span data-stu-id="55a01-153">Select **Publish**.</span></span>
 
-[<span data-ttu-id="b491f-170">Lägg till copyrightmeddelande</span><span class="sxs-lookup"><span data-stu-id="b491f-170">Add a copyright notice</span></span>](add-copyright-notice.md)
+### <a name="add-an-external-script-directly-to-a-template"></a><span data-ttu-id="55a01-154">Lägga till ett externt skript direkt i en mall</span><span class="sxs-lookup"><span data-stu-id="55a01-154">Add an external script directly to a template</span></span>
 
-[<span data-ttu-id="b491f-171">Lägg till språk på din webbplats</span><span class="sxs-lookup"><span data-stu-id="b491f-171">Add languages to your site</span></span>](add-languages-to-site.md)
+<span data-ttu-id="55a01-155">Om du vill lägga till ett extern skript direkt på en mall i webbplatsskaparen följer du stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="55a01-155">To add an external script directly to a template in site builder, follow these steps.</span></span>
+
+1. <span data-ttu-id="55a01-156">Gå till **mallarna** och öppna mallen för sidorna som du vill lägga till skriptkoden i.</span><span class="sxs-lookup"><span data-stu-id="55a01-156">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
+1. <span data-ttu-id="55a01-157">I det vänstra fönstret expanderar du mallstrukturlistan så att platsen **HTML-huvud** visas.</span><span class="sxs-lookup"><span data-stu-id="55a01-157">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
+1. <span data-ttu-id="55a01-158">I facket **HTML-huvud** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.</span><span class="sxs-lookup"><span data-stu-id="55a01-158">In the **HTML Head** slot, select the ellipsis button (**...**), and then select **Add Module**.</span></span>
+1. <span data-ttu-id="55a01-159">I dialogrutan **Lägg till modul** välj **externt skript**.</span><span class="sxs-lookup"><span data-stu-id="55a01-159">In the **Add Module** dialog box, select **External script**.</span></span>
+1. <span data-ttu-id="55a01-160">I egenskapsrutan till höger, under **Skriptkälla**, lägg till en extern eller relativ URL för den externa skriptkällan.</span><span class="sxs-lookup"><span data-stu-id="55a01-160">In the property pane on the right, under **Script source**, add an external or relative URL for the external script source.</span></span> <span data-ttu-id="55a01-161">Konfigurera sedan andra alternativ som du behöver.</span><span class="sxs-lookup"><span data-stu-id="55a01-161">Then configure other options as you require.</span></span>
+1. <span data-ttu-id="55a01-162">Välj **spara** och välj sedan **Avsluta redigeringen**.</span><span class="sxs-lookup"><span data-stu-id="55a01-162">Select **Save**, and then select **Finish editing**.</span></span>
+1. <span data-ttu-id="55a01-163">Markera **Publicera**.</span><span class="sxs-lookup"><span data-stu-id="55a01-163">Select **Publish**.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="55a01-164">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="55a01-164">Additional resources</span></span>
+
+[<span data-ttu-id="55a01-165">Lägga till en logotyp</span><span class="sxs-lookup"><span data-stu-id="55a01-165">Add a logo</span></span>](add-logo.md)
+
+[<span data-ttu-id="55a01-166">Välja ett tema för webbplatsen</span><span class="sxs-lookup"><span data-stu-id="55a01-166">Select a site theme</span></span>](select-site-theme.md)
+
+[<span data-ttu-id="55a01-167">Arbeta med CSS åsidosättningsfiler</span><span class="sxs-lookup"><span data-stu-id="55a01-167">Work with CSS override files</span></span>](css-override-files.md)
+
+[<span data-ttu-id="55a01-168">Lägg till en favoritikon</span><span class="sxs-lookup"><span data-stu-id="55a01-168">Add a favicon</span></span>](add-favicon.md)
+
+[<span data-ttu-id="55a01-169">Lägg till ett välkomstmeddelande</span><span class="sxs-lookup"><span data-stu-id="55a01-169">Add a welcome message</span></span>](add-welcome-message.md)
+
+[<span data-ttu-id="55a01-170">Lägg till copyrightmeddelande</span><span class="sxs-lookup"><span data-stu-id="55a01-170">Add a copyright notice</span></span>](add-copyright-notice.md)
+
+[<span data-ttu-id="55a01-171">Lägg till språk på din webbplats</span><span class="sxs-lookup"><span data-stu-id="55a01-171">Add languages to your site</span></span>](add-languages-to-site.md)
