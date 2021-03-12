@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 64d33212600a75900febbd6ec308e4bf5d4f16b7
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 85e8c8bf0c626e049fd78f326fd0929212f962c5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645779"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985272"
 ---
 # <a name="cash-flow-forecasting"></a>Kassaflödesprognoser
 
@@ -150,6 +149,3 @@ Dessutom kan du visa kassaflödesprognoser för specifika konton, order och arti
 - **Leveransprognos**: Välj **kassaflödesprognoser** för att visa framtida kassaflöden som är kopplade till den valda artikelleveransprognosen.
 - **Efterfrågeprognos**: Välj **kassaflödesprognoser** för att visa framtida kassaflöden som är kopplade till den valda efterfrågeprognos per artikel.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

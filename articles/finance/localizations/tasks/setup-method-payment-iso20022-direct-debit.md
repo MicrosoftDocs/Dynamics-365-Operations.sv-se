@@ -1,6 +1,6 @@
 ---
-title: Ställ in en betalningsmetod för ISO20022-autogiro
-description: I denna procedur visas hur du ställer in kundbetalningsmetoden ISO20022 med direkt debitering eller någon annan betalningstyp med hjälp av elektronisk rapportering.
+title: Ställ in ett betalsätt för ISO20022-autogiro
+description: I denna procedur visas hur du ställer in kundbetalsättet ISO20022 med direkt debitering eller någon annan betalningstyp med hjälp av elektronisk rapportering.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
@@ -11,23 +11,22 @@ ms.technology: ''
 ms.search.form: CustPaymMode
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 38afbc3a49d9020540a56e58ce51196b53d6a9e1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c2cd5c174b0f3e3e15678513cecade020705beda
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447892"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982139"
 ---
-# <a name="setup-method-of-payment-for-iso20022-direct-debit"></a>Ställ in en betalningsmetod för ISO20022-autogiro
+# <a name="setup-method-of-payment-for-iso20022-direct-debit"></a>Ställ in ett betalsätt för ISO20022-autogiro
 
 [!include [banner](../../includes/banner.md)]
 
-I denna procedur visas hur du ställer in kundbetalningsmetoden ISO20022 med direkt debitering eller någon annan betalningstyp med hjälp av elektronisk rapportering. 
+I denna procedur visas hur du ställer in kundbetalsättet ISO20022 med direkt debitering eller någon annan betalningstyp med hjälp av elektronisk rapportering. 
 
 
 
@@ -41,7 +40,7 @@ Proceduren har skapats med demodataföretaget DEMF.
 
 Detta är den tredje av fem procedurer som demonstrerar kundbetalningsprocessen med hjälp av elektroniska rapporteringskonfigurationer.
 
-1. Gå till Kundreskontra > Betalningsinställning > Betalningsmetoder.
+1. Gå till Kundreskontra > Betalningsinställning > Betalsätt.
 2. Använd snabbfiltret för att söka efter poster. Filtrera till exempel efter fältet Betalningsmetod med värdet "ELECTRONIC".
 3. Klicka på Redigera.
 4. Ange värdena "'DEMF OPER" i fältet Betalningskonto.
@@ -53,6 +52,3 @@ Detta är den tredje av fem procedurer som demonstrerar kundbetalningsprocessen 
     * Välj parametern Require mandate för layouten för kundbetalningar som kräver inkludering av fullmaktsinformation i betalningsmeddelandet, exempelvis autogiro för SEPA.  
 9. Klicka på Spara.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

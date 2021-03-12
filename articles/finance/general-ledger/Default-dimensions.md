@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: e65d371486d53d0fe4f039da68fbb4dcc35074d1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a6179841259186c8438c72bb4a4f9cd2bf5dbaa8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447970"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985097"
 ---
 # <a name="financial-dimensions-and-posting"></a>Ekonomiska dimensioner och bokföring 
 
@@ -70,7 +69,7 @@ Användare har ofta frågor om ordningen som olika komponenter körs i. Det är 
 
 | Huvudkonto | Namn          | Juridisk person | Avdelning                                 |
 |--------------|---------------|--------------|--------------------------------------------|
-| 401100       | Produktförsäljning | USMF         | Fast - 022 försäljnings- och marknadsföringsavdelningen |
+| 401100       | Produktförsäljning | USMF         | Fast – 022 försäljnings- och marknadsföringsavdelningen |
 
 Följande illustration visar den fasta standarddimension som har angetts för huvudkonto 401100.
 
@@ -127,6 +126,3 @@ Några av följande resurser hänvisar till en tidigare version av vår programv
 [Dimension som används som standard i redovisningsfördelningar](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
 [Standardvärden i dimensionsramverket](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

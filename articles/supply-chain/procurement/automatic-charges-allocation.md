@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
-ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
+ms.openlocfilehash: 8067285237127bd43e8ff24166a15506cc0426f4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437968"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983188"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatisk allokering av tillägg
 
@@ -177,6 +176,3 @@ I följande procedur beskrivs hur du tilldelar tillägg på huvudnivå till en r
         > När du arbetar med fältet **Välj rader som ska undantas från fördelning** se till att lämna rutnätet öppet tills du väljer **fördela**. Om du stänger rutnätet innan du väljer **fördela**, går inställningarna i rutnätet förlorade. Därför fördelas avgifter utifrån de kriterier som du tidigare definierat.
 
 1. Välj **fördela** om du vill använda inställningarna och stänga dialogrutan.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: af6aedb6c0112822155c6d855909578a927d1c2c
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: e93358a9c76e8eb7bfb4ade4f772dece2aa5f7d3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665430"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982501"
 ---
 # <a name="map-module"></a>Kartmodul
 
@@ -82,6 +81,3 @@ Mer information om hur du konfigurerar en kartmodul på en sida finns i [modulen
 [Hantera Bing-kartor för din organisation](./dev-itpro/manage-bing-maps.md)
 
 [Bing Maps V8 webbkontroll](https://docs.microsoft.com/bingmaps/v8-web-control/)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

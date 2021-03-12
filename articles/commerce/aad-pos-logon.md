@@ -10,17 +10,16 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 6946cb5f8bc8aa451f72d1eebcd324f408ad5f7a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d6073a04814adf8237b4caa952b31b011f4b34bf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415754"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982750"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Aktivera Azure Active Directory-autentisering för kassainloggning
 [!include [banner](includes/banner.md)]
@@ -38,7 +37,7 @@ Följ dessa steg för att konfigurera en ny funktionsprofil.
 1. Välj den funktionsprofil som du vill ändra.
 1. På snabbfliken **funktioner** i avsnittet **kassapersonalinloggning**, ändra värdet i fältet **Autentiseringsmetod för inloggning** från **Personal-ID och lösenord** till **Azure Active Directory**.
 
-Som standard använder alla funktionsprofiler **Personal-ID och lösenord** som autentiseringsmetod för kassan. Därför måste du ändra värdet för **Autentiseringsmetod för inloggning** om du vill använda Azure AD. Alla butiker som är kopplade till den valda funktionsprofilen påverkas av den här ändringen.
+Som standard använder alla funktionsprofiler **Personal-ID och lösenord** som autentiseringsmetod för POS. Därför måste du ändra värdet för **Autentiseringsmetod för inloggning** om du vill använda Azure AD. Alla butiker som är kopplade till den valda funktionsprofilen påverkas av den här ändringen.
 
 För att tillämpa inställningarna till kassaklienter, följ dessa steg instruktioner.
 
@@ -46,7 +45,7 @@ För att tillämpa inställningarna till kassaklienter, följ dessa steg instruk
 1. Kör distributionsschemat **1070** (**Kanalkonfiguration**).
 
 > [!NOTE]
-> Azure AD autentisering kräver en Internetanslutning. Det fungerar inte när kassan är i offline-läge.
+> Azure AD autentisering kräver en Internetanslutning. Det fungerar inte när POS är i offline-läge.
 > 
 > För närvarande stöder inte funktionen **Hantera åsidosättning** Azure AD som autentiseringsmetod. Ett operatörs-ID och ett lösenord måste anges även om Azure AD har konfigurerats som autentiseringsmetod för kassainloggning.
 
@@ -74,6 +73,3 @@ Fälten **Alias**, **UPN** och **Extern underidentifierare** på fliken **Commer
 [Skapa en Retail-funktionsprofil](retail-functionality-profile.md)
 
 [ Konfigurera en arbetare](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

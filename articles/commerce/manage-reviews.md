@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0a70d0526fb2443605a6b11df3ee281d4dd12f1d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415854"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982576"
 ---
 # <a name="manage-ratings-and-reviews"></a>Hantera omdömen och recensioner
 
@@ -76,9 +75,9 @@ För de här stegen en recension i din Commerce-webbplatsskapare.
     
 ## <a name="delete-a-customers-reviews-at-the-customers-request"></a>Ta bort en kunds recensioner på kundens begäran. 
 
-Ibland vill kunderna ha sina värderingar och granska data permanent från en näthandelsplats. En moderator som tar emot en begäran om borttagning från en kund kan ta bort kundens data genom att använda funktionen borttagning av recension. För att kunna söka efter och ta bort en kunds data måste moderatorn ange e-postadressen som kunden använde för att logga in och ge recensioner. 
+Ibland vill kunderna ha sina värderingar och granska data permanent från en näthandelssajt. En moderator som tar emot en begäran om borttagning från en kund kan ta bort kundens data genom att använda funktionen borttagning av recension. För att kunna söka efter och ta bort en kunds data måste moderatorn ange e-postadressen som kunden använde för att logga in och ge recensioner. 
 
-Om du vill söka efter och ta bort kunddata i Commerce-webbplatsskaparen följer du stegen nedan.
+Om du vill söka efter och ta bort kunddata i Commerce-webbplatsbyggaren följer du stegen nedan.
 
 1. Gå till **start \> recensioner \> ta bort**.
 1. I rutan **Sök efter användare via e-postadress**, ange kundens e-postadress och välj **Sök**.
@@ -93,9 +92,9 @@ Om du vill söka efter och ta bort kunddata i Commerce-webbplatsskaparen följer
 
 ## <a name="download-ratings-and-reviews-data"></a>Hämta klassificerings- och granskningsdata
 
-Commerce-webbplatsskaparen låter moderatorer importera klassificeringar och granska data i bulk, så att de kan analysera trender. En Power BI-mall som innehåller grundläggande mått finns tillgänglig. Moderatorerna kan använda den här mallen för att ansluta data i massimporterade och visa en instrumentpanel. De behöver inte skapa en egen instrumentpanel. Moderatorerna kan också anpassa Power BI-mallen efter specifika behov. 
+Commerce-webbplatsbyggaren låter moderatorer importera klassificeringar och granska data i bulk, så att de kan analysera trender. En Power BI-mall som innehåller grundläggande mått finns tillgänglig. Moderatorerna kan använda den här mallen för att ansluta data i massimporterade och visa en instrumentpanel. De behöver inte skapa en egen instrumentpanel. Moderatorerna kan också anpassa Power BI-mallen efter specifika behov. 
 
-Om du vill ladda ner betyg och recensionsdata i Commerce-webbplatsskaparen följer du stegen nedan.
+Om du vill ladda ner betyg och recensionsdata i Commerce-webbplatsbyggaren följer du stegen nedan.
 
 1. Gå till **start \> recensioner \> rapporter**.
 1. Välj **hämta recensionsdata** om du vill hämta klassificeringar och granska data i bulk i CSV-format (kommaavgränsade värden).
@@ -104,7 +103,7 @@ Om du vill ladda ner betyg och recensionsdata i Commerce-webbplatsskaparen följ
 
 Moderatorerna kan hämta Power BI-mallen så att de kan visa trender på en instrumentpanel.
 
-Om du vill visa klassificeringar och recensionstrender i Commerce-webbplatsskaparen följer du stegen nedan.
+Om du vill visa klassificeringar och recensionstrender i Commerce-webbplatsbyggaren följer du stegen nedan.
 
 1. Gå till **start \> recensioner \> rapporter**.
 1. Välj **PowerBI-mall** om du vill hämta mallen.
@@ -132,6 +131,3 @@ Om du vill visa klassificeringar och recensionstrender i Commerce-webbplatsskapa
 [Konfigurera omdömen och recensioner](configure-ratings-reviews.md)
 
 [Synkronisera produktklassificeringar i Dynamics 365 Retail](sync-product-ratings.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

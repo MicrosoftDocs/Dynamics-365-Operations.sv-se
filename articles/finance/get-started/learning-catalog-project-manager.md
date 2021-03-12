@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7a0c8dabc91d4d69d3f7098672611610a4ec73ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 09f7efbfa0b4b96b52350afb961710057d6a2f92
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448113"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4984919"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Utbildningskatalog för projektledare för implementering som arbetar med Dynamics 365 Finance
 
@@ -83,7 +82,7 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | [Kom igång med kostnadsredovisning för leveranskedjor i Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/get-started-cost-accounting-supply-chains-dyn365-finance/) | Kostnadsredovisning låter dig samla in data från olika källor, till exempel huvudbok, delredovisningar, budgetar och statistisk information. Du kan sedan analysera, summera och utvärdera kostnadsdata, så att ledningen kan ta bästa möjliga beslut när det gäller prisuppdateringar, budgetar, kostnadskontroll, osv. | Gratis, självstudier online utbildningsväg | 1 timma |
 | [Konfiguera Dynamics 365 Finance för den offentliga sektorn](https://docs.microsoft.com/learn/modules/configure-public-sector-dyn365-finance/) | Med Dynamics 365 Finance går det att använda affärsprocesser som är gemensamma för offentligt och privat sektor, som budgetering, inköp, leverantörsreskontra och kundreskontra. Med funktionen Offentlig sektor blir det enklare att följa reglerna, förordningarna och rapporteringskraven för organisationer som arbetar för offentlig sektor. | Kostnads fri online-modul i egen takt | 1 timma |
 | [Ekonomisk rapportering (DYN305PAL)](https://community.dynamics.com/365/b/techtalks/posts/financial-reporting-april-25-2017) | I det här tekniksnacket behandlas inställning av ekonomisk rapportering och rapportlistor i Dynamics 365 for Operations. Sessionen kommer också att omfatta återställning till datamart i UAT-miljön och felsökning och sökning efter snabbkorrigering, med hjälp av LCS. | Fri registrering av en webbkonferens | 57 minuter |
-| [Finance and Operations: Storbritannien digital moms - momsdeklaration i Dynamics 365 for Finance and Operations (DYN599PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) | Under den här sessionen pratar vi om den nya sändningsprocessen som infördes av HMRC i Storbritannien för momsdeklarationer. Vi förklarar hur du konfigurerar momsdeklaration och ställer in elektroniska meddelanden i Dynamics 365 for Finance and Operations. Vi visar sändningsprocessen för det HMRC-programmet i ett begränsat läge. Denna session är särskilt relevant för konsulter som implementerar funktionen och som tillhandahåller utbildning för användarna. | Fri registrering av en webbkonferens | 63 minuter |
+| [Finance and Operations: Storbritannien digital moms – momsdeklaration i Dynamics 365 for Finance and Operations (DYN599PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) | Under den här sessionen pratar vi om den nya sändningsprocessen som infördes av HMRC i Storbritannien för momsdeklarationer. Vi förklarar hur du konfigurerar momsdeklaration och ställer in elektroniska meddelanden i Dynamics 365 for Finance and Operations. Vi visar sändningsprocessen för det HMRC-programmet i ett begränsat läge. Denna session är särskilt relevant för konsulter som implementerar funktionen och som tillhandahåller utbildning för användarna. | Fri registrering av en webbkonferens | 63 minuter |
 | [Kurs MB-310T01-A: Konfigurera och använd grundläggande komponenter för ekonomisk hantering i Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-310T01) | Det går att ställa in och ange anskaffningsinformation för anläggningstillgångar och sedan hantera dem genom att skriva av dem och ställa in en kapitaliseringströskel. Sättet på vilket anläggningstillgångar hanteras måste motsvara både internationella redovisningsstandarder och redovisningslagarna i varje land/region. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 2 dagar |
 | [Kurs MB-310T02-A: Konfigurera och använda leverantörsreskontra, kundreskontra och inkasso i Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-310T02) | Kostnadsredovisning låter dig samla in data från olika källor, till exempel huvudbok, delredovisningar, budgetar och statistisk information. Du kan sedan analysera, summera och utvärdera kostnadsdata, så att ledningen kan ta bästa möjliga beslut när det gäller prisuppdateringar, budgetar, kostnadskontroll, osv. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag |
 | [Kurs MB-310T03-A: Konfigurera och använda budgetering, anläggningstillgångar och ytterligare funktioner i Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-310T03) | Du kan slutföra stängningsprocedurerna för en period eller ett år. Stängningsprocesser förbereder systemet för en ny period. Lär dig hur du förbereder, konfigurerar och utför periodiska processer i Dynamics 365 for Finance and Operations. | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag |
@@ -95,6 +94,3 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | [Examen MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Denna examen mäter din förmåga att utföra följande tekniska uppgifter: Använd vanliga funktioner och implementeringsverktyg. Konfigurera säkerhet, processer och alternativ; utföra datamigrering och validera och stödja lösningen. | Prov; kostnaden varierar beroende på region | |
 | [Examen MB-310: Microsoft Dynamics 365 for Finance and Operations, ekonomi](https://docs.microsoft.com/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Denna examen mäter förmågan att genomföra följande tekniska uppgifter: ställa in och konfigurera ekonomihantering; hantera och tillämpa gemensamma processer, implementera och hantera leverantörsreskontra och kundfordringar och hantera budgetering och anläggningstillgångar. | Prov; kostnaden varierar beroende på region | |
 | [Microsoft-certifierad: Dynamics 365 for Finance and Operations, funktionen ekonomi konsult associera](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft-certifierad: Dynamics 365 for Finance and Operations, funktionen ekonomi konsulter innebär global ekonomi och operationer och automatiserar uppgifter och arbetsflöden, effektiviserar kundorder, försäljning, fakturering och rapportering. | Intyg; kostnaden varierar beroende på region |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 82a8795360f453cdee19fa6e9e376a42e8276849
-ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
+ms.openlocfilehash: 0a5ad1f4a9bb317e128ad14f21a4e6c48cab8a72
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4415962"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985546"
 ---
 # <a name="social-share-module"></a>Modul för social delning
 
@@ -33,7 +32,7 @@ Det här avsnittet handlar om modul för social delning och beskriver hur du lä
 
 ## <a name="overview"></a>Översikt
 
-Med hjälp av modul för social delning kan användarna dela webbadresser för näthandelsplatser på sociala medier som exempelvis Facebook, Twitter, Pinterest och LinkedIn. Webbadresser till webbplatssidan kan också delas via e-post. Moduler för social delning används ofta på produktinformationssidor (PDP) för att hjälpa användarna att dela produktinformation.
+Med hjälp av modul för social delning kan användarna dela webbadresser för näthandelssajter på sociala medier som exempelvis Facebook, Twitter, Pinterest och LinkedIn. Webbadresser till webbplatssidan kan också delas via e-post. Moduler för social delning används ofta på produktinformationssidor (PDP) för att hjälpa användarna att dela produktinformation.
 
 Varje modul för social delning är en behållare för artikelmoduler för social delning. Varje artikelmodul för social delning kan konfigureras så att den pekar mot en specifik plats för sociala medier. Integrering med Facebook, Twitter, Pinterest, LinkedIn och e-post stöds i kartongen. När en webbplats användare väljer en symbol för sociala medier, startas en HTML iFrame för respektive socialt medieplats. I iFrame kan användaren logga in och bokföra det sidinnehåll som de visade.
 
@@ -82,6 +81,3 @@ Följ dessa steg för att lägga till en social delningsmodul till en köpboxmod
 [Modul för inköpsruta](add-buy-box.md)
 
 [Cookie-kompatibilitet](cookie-compliance.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

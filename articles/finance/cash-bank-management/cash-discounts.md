@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CashDisc
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3741
 ms.assetid: c25f9d85-2702-46aa-8e61-0b4886e069b3
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 139fb4fdb7d4f8034bff5e9668dc794f29fb327e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9d4f6d5bdf4f2fdc4529d9f51515ed2ac4b5b3b5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448150"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985322"
 ---
 # <a name="cash-discounts"></a>Kassarabatter
 
@@ -64,8 +63,5 @@ Din juridisk persons redovisningsvaluta är EUR och följande valutakurser anges
 En faktura på 1000 USD med villkor för kassarabatt på 20D2% bokförs den 15 februari. Fakturans belopp i redovisningsvalutan är 1 100 EUR. En betalning på 980 USD kvittas mot fakturan den 1 mars. Kassarabattbeloppet är 20 USD. Redovisningsvalutabeloppet för betalningen är 784 EUR. Redovisningsvalutabeloppet för kassarabatten beräknas med hjälp av valutakursen för den 1 mars 1: 20 \* 80 / 100 = 16 EUR.
 
 > [!NOTE]
-> Om alternativet Beräkna kassarabatter för delbetalningar har valt på sidan Parametrar för kundreskontra eller sidan Parametrar för leverantörsreskontra används valutakursen som gäller på datumet för varje delbetalning. 
+> Om alternativet Beräkna kassarabatter för delbetalningar har valts på sidan Parametrar för kundreskontra eller sidan Parametrar för leverantörsreskontra används valutakursen som gäller på datumet för respektive delbetalning. 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

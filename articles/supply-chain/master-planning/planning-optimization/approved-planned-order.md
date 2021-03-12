@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-08-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b7975088be898ccecceb1f7be009cecff107f6e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c29ede7ad8916a97b4a04b68f41961f79810e0c8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437641"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983579"
 ---
 # <a name="approve-planned-orders"></a>Godkänn planerade order
 
@@ -43,6 +42,3 @@ Fältet **Status** hjälper dig att spåra dina framsteg med följande värden:
 - **Godkänd:** om du vill fortsätta redigera eller planera att bekräfta en planerad order ändrar du statusvärdet till *godkänd* . Planerade order med status *godkänd* anses vara fasta och förväntad leverans av huvudplaneringen, så att de inte ändras eller tas bort under en senare huvudplaneringskörning. För att uppnå detta kopierar planeringslogiken de *godkända* planerade orderna från den gamla planversionen till den nya planversionen under huvudplaneringen. Observera att *godkända* planerade order endast behandlas som leverans inom den specifika huvudplanen.
 
 Du kan hantera planerade order från arbetsytan **Huvudplanering**, listan **Planerad order** eller listorna **Planerade produktionsorder**, **Planerade inköpsorder** och **Planerad överföring**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

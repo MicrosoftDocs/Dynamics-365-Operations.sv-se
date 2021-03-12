@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 935e1a550160515e2c325c39eab86be3b9fa5394
-ms.sourcegitcommit: d82f319cf7dd26c93a3fd342de4fd537272fa8d2
+ms.openlocfilehash: e55db57089c8ea5bd3def25d79d9c65a3165526c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "4415988"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982725"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Demodataskärmlayouter i Modern POS (MPOS) och molnbaserad kassa
 
@@ -34,7 +33,7 @@ Det här avsnittet innehåller information om skärmlayouterna som medföljer da
 
 ## <a name="overview"></a>Översikt
 
-Exempel på de skärmlayouter som medföljer Handel demodata ger innehåll som är optimerat för olika butikssegment, lagerarbetarroller och enheter. En enkel layout kan innehålla flera layoutstorlekar och kombinationer av knappsatser som säkerställer täckning som lagerarbetare flyttar mellan enheter och stationer. Det här avsnittet beskriver skillnaderna mellan dessa layouter, operationer de tillhandahåller och de övergripande erfarenheter som de kan ge.
+Exempel på de skärmlayouter som medföljer Commerce demodata ger innehåll som är optimerat för olika butikssegment, lagerarbetarroller och enheter. En enkel layout kan innehålla flera layoutstorlekar och kombinationer av knappsatser som säkerställer täckning som lagerarbetare flyttar mellan enheter och stationer. Det här avsnittet beskriver skillnaderna mellan dessa layouter, operationer de tillhandahåller och de övergripande erfarenheter som de kan ge.
 
 ![Demodatalayouter mellan enheter](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
@@ -90,8 +89,8 @@ Följande illustration visar ett exempel på välkomstskärmen för Fabrikam but
 
 En skärmlayout kan ha konfigurationer för både fullstora och kompakta enheter. Därför kan en användare tilldelas till en enda skärmlayout som fungerar för olika storlekar och formfaktorer i butiken.
 
-- **Modern POS - fullständig** - Vanligtvis används fullständiga layouter bäst till större skärmar, till exempel datorskärmar eller surfplattor. Användare kan markera de UI-element som layouten innehåller, ange storlek och placering av elementen och konfigurera de detaljerade egenskaperna. Fullständiga layouter stöder både stående och liggande konfigurationer.
-- **Modern POS - komprimerad** - Vanligtvis är komprimerad layout bäst för telefoner eller små surfplattor. Designmöjligheter är begränsade för kompakta enheter. Användare kan konfigurera kolumner och fält för kvitto- och summarfönster.
+- **Modern POS – fullständig** – Vanligtvis används fullständiga layouter bäst till större skärmar, till exempel datorskärmar eller surfplattor. Användare kan markera de UI-element som layouten innehåller, ange storlek och placering av elementen och konfigurera de detaljerade egenskaperna. Fullständiga layouter stöder både stående och liggande konfigurationer.
+- **Modern POS – komprimerad** – Vanligtvis är komprimerad layout bäst för telefoner eller små surfplattor. Designmöjligheter är begränsade för kompakta enheter. Användare kan konfigurera kolumner och fält för kvitto- och summarfönster.
 
 ### <a name="screen-resolutions-that-are-provided"></a>Skärmupplösning som tillhandahålls
 
@@ -109,9 +108,9 @@ Följande tabell visar layoutstorlek för normal skärmupplösning.
 \*Dessa ytterligare layoutstorlekar är bara tillgängliga i Adventure Works och Fabrikam layouter.
 
 > [!TIP]
-> Kassan väljer automatiskt layoutstorlekar, baserat på närmaste storleken för skärmupplösningen för det aktuella appfönstret. Öppna den layout-ID och layoutskärmupplösning som för närvarande används i Modern POS (MOPS) eller Retail Cloud POS (CPOS), öppna sidan **inställningar** och titta i avsnittet **sessionsinformation**. Du kan också hitta den aktuella upplösningen för fönster för ditt aktuella program eller webbläsarram. När du har den här informationen hittar du källan för layoutinnehållet genom att gå till **kanalinställning** \> **kassainställningar** \> **kassa** \> **skärmlayouter**.
+> POS väljer automatiskt layoutstorlekar, baserat på närmaste storleken för skärmupplösningen för det aktuella appfönstret. Öppna den layout-ID och layoutskärmupplösning som för närvarande används i Modern POS (MOPS) eller Retail Cloud POS (CPOS), öppna sidan **inställningar** och titta i avsnittet **sessionsinformation**. Du kan också hitta den aktuella upplösningen för fönster för ditt aktuella program eller webbläsarram. När du har den här informationen hittar du källan för layoutinnehållet genom att gå till **kanalinställning** \> **kassainställningar** \> **kassa** \> **skärmlayouter**.
 
-![Skärmlayouter och layoutlösningar/storlekar i Handel och kassa](../commerce/media/demo-screen-layouts-fig-3-1.png)
+![Skärmlayouter och layoutlösningar/storlekar i Commerce och kassa](../commerce/media/demo-screen-layouts-fig-3-1.png)
 
 ## <a name="companies-and-brands"></a>Företag och varumärken
 
@@ -176,6 +175,3 @@ Användare har angetts för de olika layouterna för skärmen. Med hjälp av tab
 <!-- Use the [POS Icon and Image Mapping](../commerce/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 
 <!-- END HIDDEN CONTENT -->
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8aad7ef8425e46182c669686710dfc178abc418f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7c30932800beda13ac8fe6b0386fe29efe93f79c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415837"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982626"
 ---
 # <a name="document-states-and-lifecycle"></a>Dokumentera tillstånd och livscykel
 
@@ -40,7 +39,7 @@ I följande tabell visas de möjliga dokumenttillstånden för sidelement i hand
 | ------------------- | -------------------------- | ------------------------------------------------------------ |
 | Utcheckad         | Välj **Redigera**.           | Det tillämpliga dokumentet är utcheckat till dig. När ett dokument är i det här tillståndet kan det inte ändras av andra autentiserade systemanvändare, och alla ändringar som du gör i dokumentet visas bara för dig. |
 | Sparades               | Välj **Spara**.           | Ändringar som har gjorts i ett utcheckat dokument sparas i databasen men dokumentet har inte checkats in eller publicerats. De sparade ändringarna syns inte för andra autentiserade systemanvändare förrän författaren väljer **Avsluta redigering**. De visas inte för externa användare förrän objektet har publicerats. |
-| Ignorerade utcheckning | Välj **ignorera redigeringar**.  | Alla ändringar av det utcheckade dokumentet ignoreras och objektet återgår till den senast incheckade versionen. |
+| Ignorerade kassa | Välj **ignorera redigeringar**.  | Alla ändringar av det utcheckade dokumentet ignoreras och objektet återgår till den senast incheckade versionen. |
 | Incheckad          | Välj **Slutför redigering**. | Det redigerade dokumentet är incheckat. Alla ändringar är synliga för andra autentiserade systemanvändare och dessa användare kan sedan redigera dokumentet. Varje incheckning skapar en dokumentversionspost i historiken för artikeln. |
 | Publicerat           | Markera **Publicera**.        | Dokumentet publiceras och ändringarna överförs till den aktiva webbplatsen och blir synliga för externa användare. Artiklar kan bara publiceras om de har checkats in först genom att du väljer **Slutför redigering**. |
 
@@ -61,6 +60,3 @@ I följande tabell visas de möjliga dokumenttillstånden för sidelement i hand
 [Översikt över mallar och layouter](templates-layouts-overview.md)
 
 [Anpassa webbplatsnavigeringen](customize-site-navigation.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

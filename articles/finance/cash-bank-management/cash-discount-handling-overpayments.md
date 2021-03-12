@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14171
 ms.assetid: a94d0fd0-57ba-4054-93c8-519d01d50e19
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f0714eab80f43695b2b93f77a70f31c360277f9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6bd0d95bc9b57b63a889afdaad7db136abc5036f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448151"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985347"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Kassarabatter för överbetalningar
 
@@ -31,7 +30,7 @@ ms.locfileid: "4448151"
 
 Det här avsnittet tillhandahåller scenarier om hur en betalning hanteras när kunden får en kassarabatt, men även betalar för mycket. 
 
-En faktura betraktas som överbetald när betalningsbeloppet överstiger fakturabeloppet minus kassarabatten. Om du vill ange hur en användbar kassarabattsskillnad ska hanteras när en faktura är överbetalad, använd fälten **Administration av kassarabatt** och **Maximal över - och underbetalning** på sidan **Parametrar för kundreskontra**. I följande exempel har kunden överbetalt fakturan med 0,50.
+En faktura betraktas som överbetald när betalningsbeloppet överstiger fakturabeloppet minus kassarabatten. Om du vill ange hur en användbar kassarabattsskillnad ska hanteras när en faktura är överbetalad, använd fälten **Administration av kassarabatt** och **Maximal över – och underbetalning** på sidan **Parametrar för kundreskontra**. I följande exempel har kunden överbetalt fakturan med 0,50.
 
 | Fakturatotal | Tillgänglig kassarabatt | Belopp som ska betalas inklusive kassarabatt | Belopp som kunden faktiskt betalar |
 |---------------|-------------------------|-----------------------------------------------------|-----------------------------------|
@@ -139,6 +138,3 @@ Kassarabattbeloppet reduceras från 10,50 till 10,00. Betalningen och fakturan a
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

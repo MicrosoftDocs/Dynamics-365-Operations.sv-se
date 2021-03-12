@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ad87594b9c20d0c2b53e8d4e7c1170a78babe74b
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 2e25a584121b700e566c29dbfe3fbbd72bf998cc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517462"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982551"
 ---
 # <a name="manage-robotstxt-files"></a>Hantera robots.txt-filer
 
@@ -92,7 +91,7 @@ Så här tar du bort en robots.txt-fil i Commerce.
 
 [Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md)
 
-[Skapa en näthandelsplats](create-ecommerce-site.md)
+[Skapa en näthandelssajt](create-ecommerce-site.md)
 
 [Associera en Dynamics 365 Commerce-webbplats med en onlinekanal](associate-site-online-store.md)
 
@@ -107,6 +106,3 @@ Så här tar du bort en robots.txt-fil i Commerce.
 [Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)
 
 [Aktivera platsbaserad butiksdetektering](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

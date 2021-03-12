@@ -1,6 +1,6 @@
 ---
 title: " Betalningskonfigurationer för Retail-utdrag"
-description: I den här proceduren visas konfigurationer för betalningsmetoder för handel som påverkar hur handelsutdrag skapas och bokförs.
+description: I den här proceduren visas konfigurationer för betalsätt för handel som påverkar hur handelsutdrag skapas och bokförs.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
@@ -11,24 +11,23 @@ ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreTenderTypeTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 390ccdfde3f9bb93770d456af7532a42e81955a1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b1fc042bff4d801ae893b0370b67cd8e11ba95f6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415870"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982326"
 ---
 # <a name="payment-configurations-for-retail-statements"></a> Betalningskonfigurationer för Retail-utdrag
 
 [!include [banner](../includes/banner.md)]
 
-I den här proceduren visas konfigurationer för betalningsmetoder för handel som påverkar hur handelsutdrag skapas och bokförs.
+I den här proceduren visas konfigurationer för betalsätt för handel som påverkar hur handelsutdrag skapas och bokförs.
 
 I den här registreringen används demonstrationsföretaget USRT.
 
@@ -36,12 +35,12 @@ I den här registreringen används demonstrationsföretaget USRT.
 2. Hitta och markera önskad post i listan.
 3. Klicka på länken på den valda raden i listan.
 4. Klicka på Ställ in i åtgärdsfönstret.
-5. Klicka på Betalningsmetoder.
+5. Klicka på Betalsätt.
 6. Utöka eller komprimera avsnittet Bokföring.
 7. Klicka på Redigera.
     * Välj om de belopp som har tagits emot för denna betalningsmetod ska bokföras på ett huvudbokskonto eller bankkonto.  
-    * Välj det konto som de belopp som tas emot för den här betalningsmetoden ska bokföras till.  
-    * Välj ett konto för att bokföra möjliga differenser mellan det inlevererade totala transaktionsbeloppet och det belopp som beräknas för betalningsmetoden.  
+    * Välj det konto som de belopp som tas emot för den här betalsättet ska bokföras till.  
+    * Välj ett konto för att bokföra möjliga differenser mellan det inlevererade totala transaktionsbeloppet och det belopp som beräknas för betalsättet.  
     * I det här fältet kan du ange ett konto att styra när avvikelsebeloppet ska bokföras på ett annat differenskonto. Du kan använda det här alternativet för att spåra stora differenser.  
     * Välj ett konto för att bokföra möjliga differenser mellan det inlevererade totala transaktionsbeloppet och det beräknade beloppet, när de överskrider det värde som har definierats i fältet Högsta avvikelsebelopp.  
     * Välj Ja om du vill bokföra de belopp som sätts in på bank på ett separat konto.  
@@ -53,6 +52,3 @@ I den här registreringen används demonstrationsföretaget USRT.
     * Välj det konto du vill bokföra de belopp som lämnats i kassaskåp på.  
 8. Klicka på Spara.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

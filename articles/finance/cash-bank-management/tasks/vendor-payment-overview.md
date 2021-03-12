@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19cea683058f7fb757ac3a99541959ba06df1963
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 37fc9a061f09f7d85f43d7e8d5ca2a3c6660b4d0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448043"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985197"
 ---
 # <a name="vendor-payment-overview"></a>Översikt över leverantörsbetalning
 
@@ -45,7 +44,7 @@ Den här uppgiftsguiden går igenom vilka olika metoder som används för att sk
 15. Välj **Visa betalningsöversikt** om du vill visa de betalningar som ska skapas för leverantören på den valda fakturan.
 16. Välj **Dölj betalningsöversikt** om du vill dölja betalningarna. 
 17. Klicka på **Skapa betalningar.** Innan du väljer **Skapa betalningar** kan du högerklicka på rutnätet och exportera listan med fakturor till Excel. Med knappen **Skapa betalningar** skapas leverantörsbetalningarna i betalningsjournalen.  
-18. Skanna dina betalningar och kontrollera att betalningsmetoden har definierats för alla betalningar. Om du vill generera betalningarna, till exempel skriva ut en check eller skapa en elektronisk betalning måste betalningsmetoden definieras. Betalningsmetoden avgör också vilket bankkonto som betalningen ska göras från som standard.  
+18. Skanna dina betalningar och kontrollera att betalsättet har definierats för alla betalningar. Om du vill generera betalningarna, till exempel skriva ut en check eller skapa en elektronisk betalning måste betalsättet definieras. Betalsättet avgör också vilket bankkonto som betalningen ska göras från som standard.  
 19. Klicka på **Ny** för att skapa en enstaka betalning. En enstaka betalning kan läggas till i en betalningsjournal när som helst före bokföring. Detta görs genom att klicka på knappen **Ny** och att lägga till betalningsinformationen manuellt snarare än att använda **betalningsförslaget**.  
 20. Välj den leverantör som betalningen ska ske till.
 21. Om det finns en faktura som ska betalas, väljer du **Kvitta transaktioner** för att välja fakturan för betalning. Om det är en förskottsbetalning är detta steg valfritt. Du kan skapa betalningen utan att välja någon faktura. 
@@ -55,14 +54,11 @@ Den här uppgiftsguiden går igenom vilka olika metoder som används för att sk
 25. Klicka på **Ta bort**. Om du tar bort en betalning tas endast betalningen bort. Alla fakturor som markeras för betalning är fortfarande tillgängliga för att betalas av en annan betalning.
 26. Klicka på **Ja**.
 27. Välj **Generera betalning** för att skriva ut checkar eller skapa den elektroniska betalningsfilen.
-28. Välj den betalningsmetod som du vill generera. Betalningsjournalen kan innehålla betalningar för båda checkar och elektroniska betalningar, men du kan bara generera en betalningstyp i taget.
+28. Välj det betalsätt som du vill generera. Betalningsjournalen kan innehålla betalningar för båda checkar och elektroniska betalningar, men du kan bara generera en betalningstyp i taget.
 29. Välj bankkontot från vilket du vill generera betalningarna.
-30. Klicka på **OK**. Betalningar genereras endast för betalningar som matchar **betalningsmetoden** och det **bankkonto** som du har valt.
+30. Klicka på **OK**. Betalningar genereras endast för betalningar som matchar **betalsättet** och det **bankkonto** som du har valt.
 31. Om du genererar **checkar** väljer du **Dokument** för att säkerställa korrekt utskriftsmål för checkarna.
 32. Klicka på **OK**.
 33. Klicka på **OK** för att generera betalningarna.
 34. Klicka på **Bokför** om alla betalningar har godkänts och genererats. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: HcmPositionForecast
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 64413
 ms.assetid: 35e791d2-1905-4808-a579-7f181ddddd91
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5bae90cf7c8f11fa5409014023d36cc68ae1bd0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3452b38fb9fcfc8f4f38e74a8f9c36789110e3a4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448047"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985521"
 ---
 # <a name="position-forecasting"></a>Befattningsprognos
 
@@ -136,7 +135,7 @@ Ger kostnader för budget i huvudmenyn informationen för budgettransaktioner pl
 
 Om till exempel en budgetrapport kostnadsredovisning beräknas från elementrad Januari 1, 2017, till juni 30, 2017, som har ett årligt belopp på 100,000 och ett av FTE-värde, som × **0.50** = 24,794.52 för 100,000 × 181 dagar (÷ 365 dagar). 
 
-De budgeterade kostnader elementraderna måste räknas om när FTE-värdet, ändras på prognosbefattningen. Raderna måste också beräknas om, aktiveringen när datum, eller avyttringsdatum ändras. Ändringar av dessa data kan orsaka en uppdatering av budgettransaktioner kostnadsredovisning elementets start - och slutdatum, som måste ligga inom prognosbefattningens data. När omberäkningen krävs, **Beräkna om** blir knappen tillgängliga, och ”kräver ett beräknings" meddelande visas. Omberäkningen krävs, även om du lägger till eller ta bort en budget - element.
+De budgeterade kostnader elementraderna måste räknas om när FTE-värdet, ändras på prognosbefattningen. Raderna måste också beräknas om, aktiveringen när datum, eller avyttringsdatum ändras. Ändringar av dessa data kan orsaka en uppdatering av budgettransaktioner kostnadsredovisning elementets start – och slutdatum, som måste ligga inom prognosbefattningens data. När omberäkningen krävs, **Beräkna om** blir knappen tillgängliga, och ”kräver ett beräknings" meddelande visas. Omberäkningen krävs, även om du lägger till eller ta bort en budget – element.
 
 **Exempel** 
 
@@ -164,7 +163,7 @@ Två alternativ finns på inställningssidan **Budgetkostnadselement**: **Lägg 
 
 Varje process har en liknande sida där du kan välja prognosbefattningar. **Lägga till befattningar** På den här sidan visas alla prognosbefattningar som är tillgängliga för urval, medan sidan **Uppdatera befattningar** visas endast de prognosbefattningar som redan har den tilldelade budgeterade kostnader elementet. (Därför ger sidan **Uppdatera befattningar** dig ett sätt att ta reda på vilka prognosbefattningar som redan har kostnadselementet kopplade.) Du kan flytta prognosbefattningar från en övre rutnätet till ett lägre rutnät för att inkludera dem i uppdateringen. 
 
-Observera att **Ändringsdata** funktionen ändras direkt på **Kostnadsberäkning** fliken budgettransaktioner kostnadsredovisning elementets start - och slutdatum på prognosbefattningarna. Inga valväljare är tillgängliga. 
+Observera att **Ändringsdata** funktionen ändras direkt på **Kostnadsberäkning** fliken budgettransaktioner kostnadsredovisning elementets start – och slutdatum på prognosbefattningarna. Inga valväljare är tillgängliga. 
 
 På **kompensationsgrupp** sidan **Uppdateringbefattningtakter** använder funktionen de aktuella takterna för kompensation taktregistret till prognosbefattningar som tilldelats gruppen. Takterna uppdateras, och rader för merkostnadelement läggas till för alla nya taktregisterrader (baserat på datum.) Om uppdateras de budgeterade kostnader element och ökningdata inte. Du kan välja vilka budgetjournalen planeringsprocessen och budgeterade planscenariot som ska uppdateras. Därför kan du uppdatera ett scenario men lämna andra situationer oförändrade för jämförelse. 
 
@@ -218,6 +217,3 @@ Om du vill se vilken budget planerar en prognos, befattning har inkluderats in, 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

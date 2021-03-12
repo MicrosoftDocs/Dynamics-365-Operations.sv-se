@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysQueryForm, SrsReportViewerForm
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 39930134782b40de05a92a6ad51c4f628f304a78
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9744f8a9abe16955b397f85ba731c4723c20b4ee
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447864"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985172"
 ---
 # <a name="change-depreciation-conventions-for-multiple-fixed-assets"></a>Ändra avskrivningspraxis för flera anläggningstillgångar
 
@@ -32,8 +31,8 @@ Uppgiften uppdaterar avskrivningspraxis för en viss grupp av anläggningstillg�
 1. Gå till Anläggningstillgångar > Periodiska uppgifter > Massuppdatering
 2. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Avskrivningsbok.
 3. Klicka på länken på den valda raden i listan.
-4. Ange datum i fältet Satt i tjänst - start.
-5. Ange datum i fältet Satt i tjänst - slut.
+4. Ange datum i fältet Satt i tjänst – start.
+5. Ange datum i fältet Satt i tjänst – slut.
     * Endast tillgångar som är del av den valda avskrivningsboken och som har satts i tjänst under denna tid kommer att uppdateras.  
 6. Välj alternativ i fältet Aktuell avskrivningspraxis.
     * Endast tillgångar som har aktuell avskrivningspraxis uppdateras.  
@@ -49,6 +48,3 @@ Uppgiften uppdaterar avskrivningspraxis för en viss grupp av anläggningstillg�
 15. Klicka på OK.
     *  Resultatet av processen visas på massuppdateringrapporten.     
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

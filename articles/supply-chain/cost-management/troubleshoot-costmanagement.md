@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails, InventValueProcess, InventValueReportSetup, InventClosing
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: riluan
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e84bb167395c06295b0e8ef8b9fd98aa4bc0cc14
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: b8c527e578fee6abfeeade99fba8070365c020bd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4438113"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983860"
 ---
 # <a name="troubleshoot-cost-management"></a>Felsöka kostnadshantering
 
@@ -63,5 +62,22 @@ Kom ihåg att köra en lagerstängning från och med %3 (31-01-2019) som matchar
 
 **Åldersfördelningsrapport för lager** visar olika värden när den visas på olika lagringsdimensioner (t.ex. webbplats eller lagerställe). Mer information om rapportlogik finns i rapport över [exempel på lagerföråldringsrapport och logik](inventory-aging-report.md).
 
+## <a name="an-update-conflict-occurs-when-the-inventory-valuation-method-is-either-standard-cost-or-moving-average"></a>En uppdateringskonflikt uppstår när lagervärderingsmetoden är Standardkostnad eller Glidande medelvärde
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+När du bokför dokument som lagerjournaler, inköpsorderfakturor eller försäljningsorderfakturor parallellt med skalbarhet och prestanda, kanske du får ett felmeddelande om en uppdateringskonflikt och vissa dokument kanske inte bokförs. Detta problem kan uppstå när lagervärderingsmetoden är *Standardkostnad* eller *Glidande medelvärde*. Båda dessa metoder är beständig kostnadsredovisning. Med andra ord bestäms den slutliga kostnaden vid bokföringstidsdatumet.
+
+Om du använder metoden *Glidande medelvärde* liknar felmeddelandet det här exemplet:
+
+> Lagervärde xx.xx förväntas inte efter den proportionella utgiftsberäkningen
+
+Om du använder metoden *Standardkostnad* liknar felmeddelandet det här exemplet:
+
+> Standardkostnaden matchar inte det ekonomiska lagervärdet efter uppdateringen. Värde = xx.xx, Kvt = yyy.yy, Standardkostnad = zz.zz
+
+Fram till dess att Microsoft har frisläppt en lösning på problemet kan du överväga att använda följande lösningar för att undvika eller minska dessa fel:
+
+- Bokföra om de misslyckade dokumenten på samma sätt.
+- Skapa dokument med färre rader.
+- Undvika decimalvärden i standardkostnaden. Försök att definiera standardkostnaden så att fältet **Priskvantitet** sätts till *1*. Om du måste ange ett värde för **priskvantitet** som är mer än *1*, försöker du minimera antalet decimaler i enhetens standardkostnad. (Helst bör det finnas färre än två decimaler.) Undvik till exempel att definiera standardkostnadsinställningar som **Pris** = *10* och **Priskvantitet** = *3*, eftersom de skapar en enhetsstandardkostnad på 3,333333 (där decimalvärdet upprepas).
+- Undvik att ha flera rader som innehar samma kombination av produkt och ekonomiska lagerdimensioner i en majoritet av dokumenten.
+- Minska parallelliseringsgraden. (I så fall kanske ditt system snabbare, eftersom färre uppdateringskonflikter och nya försök görs.)

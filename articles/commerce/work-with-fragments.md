@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
-ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
+ms.openlocfilehash: 8436fd3621e94fb761c076454423fe9842306c78
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4415960"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982248"
 ---
 # <a name="work-with-fragments"></a>Arbeta med fragment 
 
@@ -48,9 +47,9 @@ Du kan sedan konfigurera fokusfragment med ditt specifika säljinnehåll. Du kan
 
 Alla platser där fragmenten läggs till är referenser till det centrala fokusfragment som du har skapat. Om du publicerar ändringar i avsnittet visas dessa direkt på alla platser där fragmentet refereras på webbplatsen. Därför utgör fragmenten ett kraftfullt och effektivt sätt att återanvända och centralt hantera konfigurationer på en webbplats. Genom att effektivt använda dem kan du öka flexibiliteten och minska den kostnad som är kopplad till hantering av webbplatsens innehåll.
 
-Följande bild visar hur fragment kan användas för att centralisera redigering av konfigurationer för delade moduler på en näthandelsplats.
+Följande bild visar hur fragment kan användas för att centralisera redigering av konfigurationer för delade moduler på en näthandelssajt.
 
-![EN bild visar hur fragment kan användas för att centralisera redigering av konfigurationer för delade moduler på en näthandelsplats.](./media/fragment-figure1.png)
+![EN bild visar hur fragment kan användas för att centralisera redigering av konfigurationer för delade moduler på en näthandelssajt.](./media/fragment-figure1.png)
 
 ## <a name="create-a-fragment"></a>Skapa ett fragment
 
@@ -136,6 +135,3 @@ Du kan också redigera ett fragment genom att markera det på en sida, i en mall
 [Arbeta med förinställda layouter](work-with-layouts.md)
 
 [Arbeta med publiceringsgrupper](publish-groups.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
