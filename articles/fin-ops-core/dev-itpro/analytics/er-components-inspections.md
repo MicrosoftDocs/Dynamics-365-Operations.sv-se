@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72db7660c07b2f57f8609ab6c14964193e842d75
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4ba696fb7a8d9083d11cc29953cf1340a581afcf
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688577"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797351"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Granska den konfigurerade ER-komponenten för att förhindra körningsproblem
 
@@ -493,7 +492,7 @@ Du kan manuellt justera uttrycken för alla datakällor som nämns i validerings
 
 ## <a name="preferability-of-allitemsquery-vs-allitems-function"></a><a id="i8"></a>Funktionen ALLITEMSQUERY jämfört med ALLITEMS
 
-De inbyggda ER-funktionerna [ALLITEMS](er-functions-list-allitems.md) och [ALLITEMSQUERY](er-functions-list-allitemsquery.md) används för att få fram ett platt **Postlista**-värde som består av en lista med poster som representerar alla element som matchar den angivna sökvägen. ER kontrollerar om det går att upprätta ett direkt SQL-anrop till en datakälla som det refereras till i funktionen **ALLITEMS**. Om det inte går att upprätta ett direkt anrop, uppstår en valideringsvarning i ER-modellmappningsdesignern. Det meddelande du får rekommenderar att du använder funktionen **ALLITEMSQUERY** i stället för funktionen **ALLITEMS** för att öka effektiviteten.
+De inbyggda ER-funktionerna [ALLITEMS](er-functions-list-allitems.md) och [ALLITEMSQUERY](er-functions-list-allitemsquery.md) returnerar ett platt **Postlista**-värde som består av en lista med poster som representerar alla element som matchar den angivna sökvägen. ER kontrollerar om det går att upprätta ett direkt SQL-anrop till en datakälla som det refereras till i funktionen **ALLITEMS**. Om det inte går att upprätta ett direkt anrop, uppstår en valideringsvarning i ER-modellmappningsdesignern. Det meddelande du får rekommenderar att du använder funktionen **ALLITEMSQUERY** i stället för funktionen **ALLITEMS** för att öka effektiviteten.
 
 Följande steg visar hur det här problemet kan uppstå.
 
@@ -573,11 +572,11 @@ Följande steg visar hur det här problemet kan uppstå.
 
     ![Validera formatelementen som du har bundit till datakällor på sidan Format designer](./media/er-components-inspections-09c.png)
 
-16. Observera att ett valideringsfel uppstår. Meddelandet anger att det kan finnas ett fel för konfigurerade formatkomponenterna **Instruktion\\Part\\Namn** och **Instruktion\\Part\\AccountNum** vid körning om listan **model.Vendor** är tom.
+16. Observera att ett valideringsfel uppstår. Meddelandet anger att det kan finnas ett fel för konfigurerade formatkomponenterna **Statement\\Party\\Name** och **Statement\\Party\\AccountNum** vid körning om listan `model.Vendor` är tom.
 
     ![Valideringsfel som meddelar eventuella fel på konfigurerade formatkomponenter](./media/er-components-inspections-09d.png)
 
-Följande bild visar det körningsfel som uppstår om du ignorerar varningen och väljer **Kör** för att köra formatet och väljer kontonummer för en leverantör som inte finns. Eftersom den begärda leverantören inte finns är listan **model.Vendor** tom (dvs den kommer inte att innehålla några poster).
+Följande bild visar det körningsfel som uppstår om du ignorerar varningen och väljer **Kör** för att köra formatet och väljer kontonummer för en leverantör som inte finns. Eftersom den begärda leverantören inte finns är listan `model.Vendor` tom (dvs den kommer inte att innehålla några poster).
 
 ![Körningsfel eftersom detta inträffade när formatmappningen kördes](./media/er-components-inspections-09e.png)
 
@@ -589,15 +588,15 @@ För den valda raden i rutnätet på fliken **Varningar** kan du välja **Avbind
 
 #### <a name="option-1"></a>Alternativ 1
 
-Du kan binda formatelementet **Instruktion\\Part\\Namn** till datakällobjektet **model.Vendor**. Vid körning anropar den här bindningen datakällan **model.Vendor** först. När **model.Vendor** returnerar en tom postlista körs inte de kapslade formatelementen. Därför visas inga valideringsvarningar för den här formatkonfigurationen.
+Du kan binda formatelementet **Statement\\Party\\Name** till datakällobjektet `model.Vendor`. Vid körning anropar den här bindningen datakällan `model.Vendor` först. När `model.Vendor` returnerar en tom postlista körs inte de kapslade formatelementen. Därför visas inga valideringsvarningar för den här formatkonfigurationen.
 
 ![Bind formatelementet till datakällobjektet på sidan Format designer](./media/er-components-inspections-09e.gif)
 
 #### <a name="option-2"></a>Alternativ 2
 
-Ändra bindningen för formatelementet **Instruktion\\Part\\Namn** från `model.Vendor.Name` till `FIRSTORNULL(model.Vendor).Name`. Den uppdaterade bindningen konverterar villkorat den första posten i datakällan **model.Vendor** för typen **Postlista** till en ny datakälla för typen **Post**. Den nya datakällan innehåller samma uppsättning fält.
+Ändra bindningen för formatelementet **Instruktion\\Part\\Namn** från `model.Vendor.Name` till `FIRSTORNULL(model.Vendor).Name`. Den uppdaterade bindningen konverterar villkorat den första posten i datakällan `model.Vendor` för typen **Postlista** till en ny datakälla för typen **Post**. Den nya datakällan innehåller samma uppsättning fält.
 
-- Om minst en post är tillgänglig i datakällan **model.Vendor** fylls fälten i posten i med värdena för fälten i för första posten i datakällan **model.Vendor**. I det här fallet returnerar den uppdaterade bindningen leverantörsnamnet.
+- Om minst en post är tillgänglig i datakällan `model.Vendor` fylls fälten i posten i med värdena för fälten i för första posten i datakällan `model.Vendor`. I det här fallet returnerar den uppdaterade bindningen leverantörsnamnet.
 - I annat fall fylls alla fält i posten som skapas med standardvärdet för fältets datatyp. I det här fallet returneras den tomma strängen som standardvärde för datatypen **Sträng**.
 
 Därför uppstår inga valideringsvarningar för formatelementet **Instruktion\\Part\\Namn** när det är bundet till uttrycket `FIRSTORNULL(model.Vendor).Name`.
@@ -606,13 +605,13 @@ Därför uppstår inga valideringsvarningar för formatelementet **Instruktion\\
 
 #### <a name="option-3"></a>Alternativ 3
 
-Om du uttryckligen vill ange de data som anges i ett genererat dokument när datakällan **model.Vendor** för typen **Postlista** returneras inga poster (texten **Inte tillgänglig** i exemplet), ändra bindningen för formatelementet **Instruktion\\Part\\Namn** från `model.Vendor.Name` till `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")`. Du kan även använda uttrycket `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")`.
+Om du uttryckligen vill ange de data som anges i ett genererat dokument när datakällan `model.Vendor` för typen **Postlista** returneras inga poster (texten **Inte tillgänglig** i exemplet), ändra bindningen för formatelementet **Statement\\Party\\Name** från `model.Vendor.Name` t `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")`. Du kan även använda uttrycket `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")`.
 
 ### <a name="additional-consideration"></a><a id="i9a"></a>Ytterligare övervägande
 
-Granskningen varnar också för ett annat potentiellt problem. Som standard, när du binder formatelementen **Instruktion\\Part\\Namn** och **Instruktion\\Part\\AccountNum** till lämpliga fält i datakällan **model.Vendor** för typen **Postlista** kommer dessa bindningar att köras och använda värdena för lämpliga fält i första posten i datakällan **model.Vendor**, om den listan inte är om.
+Granskningen varnar också för ett annat potentiellt problem. Som standard, när du binder formatelementen **Statement\\Party\\Name** och **Statement\\Party\\AccountNum** till lämpliga fält i datakällan `model.Vendor` för typen **Postlista** kommer dessa bindningar att köras och använda värdena för lämpliga fält i första posten i datakällan `model.Vendor` om den listan inte är tom.
 
-Eftersom du inte bundit formatelementet **Instruktion\\Part** med datakällan **model.Vendor** kommer inte elementet **Instruktion\\Part** att itereras för alla poster i datakällan **model.Vendor** under formatkörningen. I stället fylls ett genererat dokument med information från endast den första posten i postlistan, om listan innehåller flera poster. Därför kan det finnas ett problem om formatet är avsett att fylla ett genererat dokument med information om alla leverantörer från datakällan **model.Vendor**. Du löser det här problemet genom att binda elementet **Instruktion\\Part** till datakällan **model.Vendor**.
+Eftersom du inte bundit formatelementet **Statement\\Party** med datakällan `model.Vendor` kommer inte elementet **Statement\\Party** att itereras för alla poster i datakällan `model.Vendor` under formatkörningen. I stället fylls ett genererat dokument med information från endast den första posten i postlistan, om listan innehåller flera poster. Därför kan det finnas ett problem om formatet är avsett att fylla ett genererat dokument med information om alla leverantörer från datakällan `model.Vendor`. Du löser det här problemet genom att binda elementet **Statement\\Party** till datakällan `model.Vendor`.
 
 ## <a name="executability-of-an-expression-with-filter-function-caching"></a><a id="i10"></a>Körbarhet för ett uttryck med funktionen FILTER (cachelagring)
 
@@ -699,7 +698,7 @@ Följande steg visar hur det här problemet kan uppstå.
 
 14. Bind formatelementen till tillhandahållna datakällor på följande sätt:
 
-    - Bind formatelementet **Instruktion\\Part** till datakällobjektet **model.Vendor**.
+    - Bind formatelementet **Statement\\Party** till datakällobjektet `model.Vendor`.
     - Bind formatelementet **Instruktion\\Part\\Namn** till datakällfältet **model.Vendor.Name**.
     - Bind formatelementet **Instruktion\\Part\\AccountNum** till datakällfältet **model.Vendor.AccountNumber**.
 
@@ -813,6 +812,3 @@ Information om hur formatstrukturen kan synkroniseras med en ER-mall i mallredig
 [Spåra körningen av ER-format för att felsöka prestandaproblem](trace-execution-er-troubleshoot-perf.md)
 
 [Hantering av affärsdokument – översikt](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

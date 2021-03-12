@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: bf485b407d56b21621617682bab3492925f7f9a4
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a1d520584e331631bb5a6a88ba6c9a8b50b3d29e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693832"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798633"
 ---
 # <a name="client-alert-notifications-by-email"></a>Kundnotifieringar via e-postmeddelande
 
@@ -28,7 +28,7 @@ ms.locfileid: "4693832"
 
 Du kan du definiera anpassade notifieringsregler som övervakar filtrerade vyer av data och skicka e-postmeddelanden automatiskt vid fördefinierade händelser. Alternativet att skicka e-postmeddelanden är tillgängligt för alla stödda varningstyper och kan även aktiveras för befintliga varningsregler.
 
-Du kan använda inbyggda kontroller för att skapa notifieringsregler som övervakar filtrerade vyer av batchjobb i systemet. Genom att kontrollera värdet för fältet **Status** kan du konfigurera notifieringsregler som skickar e-post när batch-jobbet misslyckas. När dessa notifieringsregler skapas, behöver du inte längre kontrollera rapporter för ändringar i affärsdata. I stället kan du låta den intelligenta ändringsidentifieringstjänsten göra övervakningen.
+Du kan använda inbyggda kontroller för att skapa notifieringsregler som övervakar filtrerade vyer av batchjobb i systemet. Genom att kontrollera värdet för fältet **Status** kan du konfigurera notifieringsregler som skickar e-post när batch-jobbet misslyckas. När du har skapat dessa notifieringsregler behöver du inte längre kontrollera rapporter för ändringar i affärsdata. I stället kan du låta den intelligenta ändringsidentifieringstjänsten göra övervakningen.
 
 Klientnotifieringar beror på undersystemet för e-post som tillhandahålls via integrering med Microsoft Office. Vi rekommenderar att du använder Simple Mail Transfer Protocol (SMTP)-leverantören, så att e-postdistribution inte är beroende av en lokal e-postklient.
 
@@ -50,6 +50,3 @@ Tjänsten skickar e-postmeddelanden med hjälp av fördefinierade e-postmallar s
 Följande bild visar strukturen för aviseringar skickas när de tas emot via e-post.
 
 [![Mallbaserade aviseringar för att skapa, ändra och ta bort mallen](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

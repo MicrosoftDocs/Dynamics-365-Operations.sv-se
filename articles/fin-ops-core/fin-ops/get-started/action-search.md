@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b5d2e678b01f052db29d5a1c47eae27d27cd04f
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: dd9962451e8b72677e1a006dd9c1b8b8b268c93e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694198"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798657"
 ---
 # <a name="action-search"></a>Åtgärdssökning
 
@@ -35,7 +35,7 @@ Sidorna visar främst kommandon i åtgärdsfönster, både det vanliga åtgärds
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
 
-Tangenttips är inte längre tillgängliga utan har ersatts av åtgärden sökfunktionen. Den här nya funktionen kan du snabbt söka efter och kör en knapp från synliga rutan Åtgärd.
+Åtgärden sökningsfunktionen ersätter tangenttips, som inte längre är tillgängliga. Den här nya funktionen kan du snabbt söka efter och kör en knapp från synliga rutan Åtgärd.
 
 ## <a name="using-action-search"></a>Med hjälp av action sök
 
@@ -53,7 +53,7 @@ Du kan också starta åtgärden sökning, genom att pressa Ctrl+/- eller Alt+Q. 
 
 ## <a name="understanding-the-results-list"></a>Förstå resultaten förteckning
 
-Du måste ofta veta både på plats och samband för en knapp för att förstå syftet med den. Därför visas ytterligare information för varje artikel i resultatlistan, information som hjälper dig att förstå exakt vilka knappar som visas i listan. I synnerhet "sökväg" på knappen visas. Den här sökvägen kan inkludera etiketter av följande UI-beståndsdelar:
+Du måste ofta veta både på plats och samband för en knapp för att förstå syftet med den. Därför visas ytterligare information för som hjälper dig att förstå exakt vilka knappar som visas i listan. I synnerhet "sökväg" på knappen visas. Den här sökvägen kan inkludera etiketter av följande UI-beståndsdelar:
 
 - Rutan åtgärd flik
 - Knappgrupp
@@ -75,6 +75,3 @@ I föregående exempel visade åtgärdsökningen resultat från det vanliga åtg
 ## <a name="action-search-vs-navigation-search"></a>Åtgärd söka vs. navigation sökningen
 
 Medan åtgärdssökningen är avsedd att hitta och köra åtgärder på en sida, finns en separat sökmekanism för att söka och navigera till sidor. Mer information om funktionen finns i artikeln [Navigeringssökning](navigation-search.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

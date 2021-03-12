@@ -1,6 +1,6 @@
 ---
 title: Filtrera koncerninterna order för att undvika synkronisering av order och orderrader
-description: Avsnittet beskriver hur du filtrerar koncerninterna order för att undvika synkronisering av order och orderrader.
+description: I det här avsnittet beskrivs hur du filtrerar koncerninterna order så att entiteterna Order och Orderrader inte synkroniseras.
 author: negudava
 manager: tfehr
 ms.date: 11/09/2020
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,52 +18,51 @@ ms.search.industry: ''
 ms.author: negudava
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 6c5e1e2467673badd20366d3bd8e1b93b8078b26
-ms.sourcegitcommit: 0eb33909a419d526eb84b4e4b64d3595d01731ef
+ms.openlocfilehash: 342db8c1b4337145bfd61f5698ff6de25434a400
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4701043"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796616"
 ---
-# <a name="filter-intercompany-orders-to-avoid-synchronizing-orders-and-orderlines"></a>Filtrera koncerninterna order för att undvika synkronisering av order och orderrader
+# <a name="filter-intercompany-orders-to-avoid-syncing-orders-and-orderlines"></a>Filtrera koncerninterna order för att undvika synkronisering av order och orderrader
 
 [!include [banner](../../includes/banner.md)]
 
-Du kan filtrera koncerninterna order för att undvika synkronisering av entiteter i **order** och **orderrader**. I vissa fall är inte den koncerninterna orderinformationen nödvändig i kundengagemangsappen.
+Du kan filtrera koncerninterna order så att tabellerna **order** och **orderrader** inte synkroniseras. I vissa fall är inte den koncerninterna orderinformationen nödvändig i kundengagemangsappen.
 
-Alla standardentiteter för Common Data Service utökas med referenser till **IntercompanyOrder** och mappningar med dubbelriktad skrivning ändras så att de refererar till de ytterligare fälten i filtren. Resultatet blir att koncerninterna order inte längre synkroniseras. Denna process undviker onödiga data i kundengagemangsappen.
+Alla standardtabeller för Dataverse utökas med referenser till kolumnen **IntercompanyOrder** och mappningar med dubbelriktad skrivning ändras så att de refererar till de ytterligare kolumnerna i filtren. Därför synkroniseras inte längre koncerninterna order. Denna process hjälper till att undvika onödiga data i kundengagemangsappen.
 
-1. Lägg till en referens till **IntercompanyOrder** på **CDS-försäljningsorderrubriker**. Den fylls endast i för koncerninterna order. Fältet **IntercompanyOrder** finns i **SalesTable**.
+1. Utöka tabellen **CDS-försäljningsorderrubriker** genom att lägga till en referens till kolumnen **IntercompanyOrder**. Den här kolumnen fylls bara i på koncerninterna order. Kolumnen **IntercompanyOrder** finns i tabellen **SalesTable**.
 
-    :::image type="content" source="media/filter-sales-order-header-field-display.png" alt-text="Mappa mellanlagring till mål, SalesOrderHeader":::
-    
-2. När **CDS-försäljningsorderrubriker** har utökats är fältet **IntercompanyOrder** tillgängligt i mappningen. Använd ett filter med `INTERCOMPANYORDER == ""` som frågesträng.
+    :::image type="content" source="media/filter-sales-order-header-field-display.png" alt-text="Mappa mellanlagring till målsida för CDS-försäljningsorderrubriker":::
 
-    :::image type="content" source="media/filter-sales-order-header.png" alt-text="Försäljningsorderrubriker, redigera fråga":::
+2. När **CDS-försäljningsorderrubriker** har utökats är kolumnen **IntercompanyOrder** tillgängligt i mappningen. Använd ett filter med `INTERCOMPANYORDER == ""` som frågesträng.
 
-3. Lägg till en referens till **IntercompanyInventTransId** för **CDS-försäljningsorderrader**.  Den fylls endast i för koncerninterna order. Fältet **InterCompanyInventTransID** finns i **SalesLine**.
+    :::image type="content" source="media/filter-sales-order-header.png" alt-text="Redigera frågedialogruta för CDS-försäljningsorderrubriker":::
 
-    :::image type="content" source="media/filter-sales-order-line-field-display.png" alt-text="Mappa mellanlagring till mål, SalesOrderLine":::
+3. Utöka tabellen **CDS-försäljningsorderrader** genom att lägga till en referens till kolumnen **IntercompanyInventTransId**. Den här kolumnen fylls bara i på koncerninterna order. Kolumnen **InterCompanyInventTransId** finns i tabellen **SalesLine**.
 
-4. När **CDS-försäljningsorderrader** har utökats är fältet **IntercompanyInventTransId** tillgängligt i mappningen. Använd ett filter med `INTERCOMPANYINVENTTRANSID == ""` som frågesträng.
+    :::image type="content" source="media/filter-sales-order-line-field-display.png" alt-text="Mappa mellanlagring till målsida för CDS-försäljningsorderrader":::
 
-    :::image type="content" source="media/filter-sales-order-lines.png" alt-text="Försäljningsorderrader, redigera fråga":::
+4. När **CDS-försäljningsorderrader** har utökats är kolumnen **IntercompanyInventTransId** tillgängligt i mappningen. Använd ett filter med `INTERCOMPANYINVENTTRANSID == ""` som frågesträng.
 
-5. Utvidga **Försäljningsfakturahuvuden V2** och **Försäljningsfakturarader V2** på samma sätt som du utökade Common Data Service-entiteterna i steg 1 och 2. Lägg sedan till filterfrågorna. Filtersträngen för **Försäljningsfakturahuvuden V2** är `(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")`. Filtersträngen för **Försäljningsfakturarader V2** är `INTERCOMPANYINVENTTRANSID == ""`.
+    :::image type="content" source="media/filter-sales-order-lines.png" alt-text="Redigera frågedialogruta för CDS-försäljningsorderrader":::
 
-    :::image type="content" source="media/filter-sales-invoice-header-field-display.png" alt-text="Mappa mellanlagring till mål, Försäljningsfakturahuvuden":::
+5. Upprepa steg 1 och 2 om du vill utöka tabellen **Försäljningsfakturahuvuden V2** och lägga till en filterfråga. I detta fall används `(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")` du som frågesträng för filtret.
 
-    :::image type="content" source="media/filter-sales-invoice-header-filter.png" alt-text="Försäljningsfakturahuvuden, redigera fråga":::
+    :::image type="content" source="media/filter-sales-invoice-header-field-display.png" alt-text="Mappa mellanlagring till målsida för försäljningsorderrubrik V2":::
 
-    :::image type="content" source="media/filter-sales-invoice-lines-filter.png" alt-text="Försäljningsfakturarader, redigera fråga":::
+    :::image type="content" source="media/filter-sales-invoice-header-filter.png" alt-text="Redigera frågedialogruta för försäljningsorderrubrik V2":::
 
-6. Entiteten **Offerter** har ingen koncernintern relation. Om någon skapar en offert för någon av dina koncerninterna kunder kan du placera alla dessa kunder i en kundgrupp genom att använda fältet **CustGroup**.  Huvud och rader kan utökas om du vill lägga till fältet **CustGroup** och sedan filtrera för att inte inkludera den här gruppen.
+6. Upprepa steg 3 och 4 om du vill utöka tabellen **Försäljningsfakturarad V2** och lägga till en filterfråga. I detta fall används `INTERCOMPANYINVENTTRANSID == ""` du som frågesträng för filtret.
 
-    :::image type="content" source="media/filter-cust-group.png" alt-text="Mappa mellanlagring till mål, Försäljningsofferthuvud":::
+    :::image type="content" source="media/filter-sales-invoice-lines-filter.png" alt-text="Redigera frågedialogruta för försäljningsorderrad V2":::
 
-7. När du har utökat entiteten **Offerter** använder du ett filter med `CUSTGROUP !=  "<company>"` som frågesträng.
+7. Tabellen **Offerter** har ingen koncernintern relation. Om någon skapar en offert för en av dina företagskunder kan du använda kolumnen **CustGroup** för att placera alla dessa kunder i en kundgrupp. Du kan utöka rubriken och raderna genom att lägga till kolumnen **CustGroup** och sedan filtrera så att gruppen inte inkluderas.
 
-    :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Försäljningsofferthuvud, redigera fråga":::
+    :::image type="content" source="media/filter-cust-group.png" alt-text="Mappa mellanlagring till målsida för CDS-försäljningsofferrubrik":::
 
+8. Efter **Offerter** utökas, tillämpa ett filter med `CUSTGROUP != "<company>"` som frågesträng.
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+    :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Redigera frågedialogruta för CDS-försäljningsofferrubrik":::

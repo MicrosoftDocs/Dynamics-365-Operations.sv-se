@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 6a0f114bce6bdb7813c93e9441744d67cd043c30
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5d39bf28dba951a1483412d967c8c6fc6dbcc610
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683752"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744385"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering av valutatyp för dubbelriktad skrivning
 
@@ -44,11 +44,11 @@ Migrering är valfritt. Om du kan ha nytta av stödet för fler decimaler rekomm
 
 ## <a name="requesting-migration-from-microsoft"></a>Begär migrering från Microsoft
 
-Lagring för befintliga valuta fält i Dataverse kan inte hantera fler än fyra decimaler. Under migreringsprocessen kopieras därför valutavärden till nya interna fält i databasen. Den här processen sker kontinuerligt tills alla data har migrerats. Vid slutet av migreringen ersätter de nya lagringstyperna de gamla lagringstyperna, men datavärdena ändras inte. Valutafälten kan sedan stödja upp till 10 decimaler. Under migreringsprocessen kan Dataverse fortfarande användas utan avbrott.
+Lagring för befintliga valuta kolumner i Dataverse kan inte hantera fler än fyra decimaler. Under migreringsprocessen kopieras därför valutavärden till nya interna kolumner i databasen. Den här processen sker kontinuerligt tills alla data har migrerats. Vid slutet av migreringen ersätter de nya lagringstyperna de gamla lagringstyperna, men datavärdena ändras inte. Valutakolumner kan sedan stödja upp till 10 decimaler. Under migreringsprocessen kan Dataverse fortfarande användas utan avbrott.
 
 På samma gång ändras valutakurserna så att de stöder upp till 12 decimaler i stället för den aktuella gränsen på 10. Den här ändringen krävs för att antalet decimaler ska vara samma i både Finance and Operations-appen och Dataverse.
 
-Migreringen ändrar inte några data. När du har konverterat fälten valuta och valutakurs kan administratörer konfigurera systemet att använda upp till 10 decimaler för valutafält genom att ange antalet decimaler för varje transaktionsvaluta och för prissättning.
+Migreringen ändrar inte några data. När du har konverterat kolumnerna valuta och valutakurs kan administratörer konfigurera systemet att använda upp till 10 decimaler för valutakolumner genom att ange antalet decimaler för varje transaktionsvaluta och för prissättning.
 
 ### <a name="request-a-migration"></a>Begär en migrering
 
@@ -72,29 +72,26 @@ När migreringen har slutförts kan Dataverse lagra nummer med fler decimaler. A
 
 Om du vill göra den här ändringen måste du uppdatera följande inställningar i Power Apps:
 
-+ **Systeminställningar: valutaprecision för prissättning** – Fältet **ange valutaprecisionen som används för prissättning i hela system** anger hur valutan ska uppföras för organisationen när **Prissättningsprecision** är vald.
-+ **Företagshantering: valutor** – Fältet **Valutaprecision** låter dig ange ett anpassat antal decimaler för en viss valuta. Det finns en återgång till inställningen för hela organisationen.
++ **Systeminställningar: valutaprecision för prissättning** – Kolumnen **ange valutaprecisionen som används för prissättning i hela system** anger hur valutan ska uppföras för organisationen när **Prissättningsprecision** är vald.
++ **Företagshantering: valutor** – Kolumnen **Valutaprecision** låter dig ange ett anpassat antal decimaler för en viss valuta. Det finns en återgång till inställningen för hela organisationen.
 
 Det finns några begränsningar:
 
-+ Du kan inte konfigurera valutafältet för en entitet.
++ Du kan inte konfigurera valutakolumnen i en tabell.
 + Du kan bara ange fler än fyra decimaler på nivåerna för **Prissättning** och **Transaktionsvaluta**.
 
 ### <a name="system-settings-currency-precision-for-pricing"></a>Systeminställningar: valutaprecision för prissättning
 
-När migreringen har slutförts kan administratörer ställa in valutaprecision. Gå till **Inställningar \> Administration** och välj **Systeminställningar**. På fliken **Allmänt** ändrar du värdet för fältet **Ange valuta precisionen som används för prissättning i hela system** som du ser i bilden nedan.
+När migreringen har slutförts kan administratörer ställa in valutaprecision. Gå till **Inställningar \> Administration** och välj **Systeminställningar**. På fliken **Allmänt** ändrar du värdet för kolumnen **Ange valuta precisionen som används för prissättning i hela system** som du ser i bilden nedan.
 
 ![Systeminställningar för valuta](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Affärshantering: valutor
 
-Om du kräver att valutaprecisionen för en viss valuta avviker från den valutaprecision som används för prissättningen kan du ändra den. Gå till **Inställningar \> Företagshantering**, välj **Valutor** och välj sedan vilken valuta du vill ändra. Ställ sedan in fältet **Valutaprecision** till önskat antal decimaler, som du ser i bilden nedan.
+Om du kräver att valutaprecisionen för en viss valuta avviker från den valutaprecision som används för prissättningen kan du ändra den. Gå till **Inställningar \> Företagshantering**, välj **Valutor** och välj sedan vilken valuta du vill ändra. Ställ sedan in kolumnen **Valutaprecision** till önskat antal decimaler, som du ser i bilden nedan.
 
 ![Valutainställningar för ett specifikt språk](media/specific-currency.png)
 
-### <a name="tables-currency-field"></a>tabeller: valutafält
+### <a name="tables-currency-column"></a>tabeller: valutakolumn
 
-Antalet decimaler som kan konfigureras för särskilda valutafält är begränsat till fyra.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+Antalet decimaler som kan konfigureras för särskilda valutakolumner är begränsat till fyra.

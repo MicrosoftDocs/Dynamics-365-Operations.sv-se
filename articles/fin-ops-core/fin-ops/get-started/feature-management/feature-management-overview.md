@@ -17,12 +17,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 82c8172958f819735ea3f29fc331272f80b3a25a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a0f7391273e2374bdd136c5db47bcb65487e2a9c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692976"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798363"
 ---
 # <a name="feature-management-overview"></a>Översikt över funktionshantering
 
@@ -101,8 +101,8 @@ Alla funktioner som kan aktiveras kommer att aktiveras. Om en funktion redan är
 
 Som standard är alla funktioner som läggs till i miljön inaktiverade, såvida de inte är obligatoriska funktioner. Om du vill aktivera alla nya funktioner automatiskt kan du dock ändra vad som händer när nya funktioner läggs till genom att använda listrutan under arbetsytans rubrik.
 
-- Välj **Alla nya funktioner aktiveras som standard** för att automatiskt aktivera alla nya funktioner när de läggs till i miljön.
-- Välj **Aktivera inte nya funktioner som standard** för att stänga av alla nya funktioner när de läggs till i miljön.
+- Välj `Enable new features automatically` för att automatiskt aktivera alla nya funktioner när de läggs till i miljön.
+- Välj `Do not enable new features automatically` för att standardinställa alla nya funktioner av när de läggs till i din miljö.
 
 
 När du aktiverar alla funktioner automatiskt, kommer det att aktivera alla funktioner som skulle vara aktiverade när du klickar på knappen **aktivera alla**. Det kommer inte att aktivera funktioner som kräver bekräftelse eller funktioner som inte kan aktiveras förrän en åtgärd vidtas.
@@ -199,10 +199,7 @@ internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMet
 
 ### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Vad är IFeatureLifecycle implementerad av vissa funktionsklasser?
 IFeatureLifecycle är en Microsoft-intern mekanism för att indikera livscykelfasen för funktionen. Funktioner kan vara:
-- PrivatePreview - en förhandsversion måste vara synlig.
-- PublicPreview - visas som standard men med en varning om att funktionen är i förhandsversion.
-- Släppt - helt frisläppt.
+- `PrivatePreview` - en förhandsversion måste vara synlig.
+- `PublicPreview` - visas som standard men med en varning om att funktionen är i förhandsversion.
+- `Released`- Helt släppt.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

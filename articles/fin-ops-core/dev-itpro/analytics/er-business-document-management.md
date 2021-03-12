@@ -3,7 +3,7 @@ title: Översikt över hantering av affärsdokument
 description: Det här avsnittet innehåller information om hur du använder funktionen för hantering av affärsdokument i ER-ramverket.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4b50a170bb9e584501fe780239228dc871ca7750
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1e657ffbad88aeb9fd238112954f5555496ac329
+ms.sourcegitcommit: fcc4596eeadac5dfe9a3242afa49b9b1c0c96575
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681314"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740966"
 ---
 # <a name="business-document-management-overview"></a>Översikt över hantering av affärsdokument
 
@@ -43,24 +43,17 @@ För närvarande implementeras funktionen för hantering av affärsdokument enda
 
 Om du vill använda hantering av affärsdokument för att redigera mallar i Excel- eller Word-format med hjälp av Microsoft Office-skrivbordsprogram måste du ha Microsoft Office 2010 eller senare installerat. Detta stöds inte i moln och lokala installationer.
 
+Om du vill använda hantering av affärsdokument för att redigera mallar i Excel- eller Word-format med hjälp av Microsoft 365-appar måste du ha Microsoft 365 Office för webbprenumerationen. Det här stöds i molnbaserad distribution.
+
 ## <a name="business-document-availability"></a>Affärsdokuments tillgänglighet
 
-Följande rapporter, med Excel-baserade mallar, blir tillgängliga i den allmänna förhandsversionen:
+En fullständig lista över alla rapporter planerade för oktober 2019-utgåvan finns i [Konfigurerbar affärsdokumentrapportering i Word och Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-**Kundreskontra** (augusti 2019)
+En fullständig lista över alla rapporter planerade för oktober 2020-utgåvan finns i [Konfigurerbar affärsdokumentrapportering – Word-mallar](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
-- Förskottsfaktura för försäljning
-- Följesedel för försäljningsorder
+Fler rapporter blir tillgängliga i framtida versioner. Särskilda meddelanden om ytterligare rapporter kommer att skickas separat. Mer information om hur du granskar listan över tillgängliga rapporter finns i avsnittet [Lista över ER-konfigurationer som har frisläppts i Finance för att stödja konfigurerbara affärsdokument](#list-of-configurations-cbd) nedan.
 
-**Leverantörsreskontra** (augusti 2019)
-
-- Förskottsfaktura för inköp
-- Inköpsorder
-- Följesedel för inköpsorder
-
-Fler rapporter kommer att bli tillgängliga. Särskilda meddelanden om ytterligare rapporter kommer att skickas separat. 
-
-En fullständig lista över alla rapporter planerade för oktober 2019-utgåvan finns i [Konfigurerbar affärsdokumentrapportering i Word och Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Om du vill veta mer om den här funktionen fyller du i exemplet i det här avsnittet.
+Om du vill veta mer om den här funktionen fyller du i exemplet i det här avsnittet.
 
 ## <a name="configure-er-parameters"></a>Konfigurera ER-parametrar
 
@@ -74,24 +67,24 @@ Exempel på ER-konfigurationer används i exemplet på denna procedur. Du måste
 
 **Exempel på ER-kundfaktureringslösning**
 
-| **Fil**                                  | **Innehåll**                                |
-|-------------------------------------------|--------------------------------------------|
+| Fil                                      | Innehåll |
+|-------------------------------------------|---------|
 | Customer invoicing model.version.2.xml    | [Exempel på konfiguration av ER-datamodell.](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 | Customer FTI report (GER).version.2.3.xml | [Konfiguration för fritextfaktura i ER-format](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 **Exempel på lösning för ER-betalningscheckar**
 
-| **Fil**                                  | **Innehåll**                                |
-|-------------------------------------------|--------------------------------------------|
-| Model for cheques.version.10.xml          | [Exempel på konfiguration av ER-datamodell.](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Cheques printing format.version.10.9.xml  | [Konfiguration för ER-format för betalningscheck](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Fil                                     | Innehåll |
+|------------------------------------------|---------|
+| Model for cheques.version.10.xml         | [Exempel på konfiguration av ER-datamodell.](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Cheques printing format.version.10.9.xml | [Konfiguration för ER-format för betalningscheck](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 **Exempel på ER-lösning för utländsk handel**
 
-| **Fil**                                  | **Innehåll**                                |
-|-------------------------------------------|--------------------------------------------|
-| Intrastat model.version.1.xml             | [Exempel på konfiguration av ER-datamodell.](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Intrastat report.version.1.9.xml          | [ER-formatkonfiguration för rapporten för Intrastat-kontroll](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Fil                             | Innehåll |
+|----------------------------------|---------|
+| Intrastat model.version.1.xml    | [Exempel på konfiguration av ER-datamodell.](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Intrastat report.version.1.9.xml | [ER-formatkonfiguration för rapporten för Intrastat-kontroll](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 Använd följande procedur för att importera varje fil. Importera konfigurationen för ER-*datamodell* för varje ER-lösning i tabellerna ovan innan du importerar motsvarande ER-*format* konfiguration.
 
@@ -101,15 +94,13 @@ Använd följande procedur för att importera varje fil. Importera konfiguration
 4. Välj **Bläddra** om du vill läsa in den nödvändiga XML-filen.
 5. Välj **OK** för att bekräfta konfigurationens import.
 
-![Sidan ER-konfigurationer](./media/BDM-Overview-ERSolutions.png)
-
+![Sidan ER-konfigurationer som bekräftar konfiguration av import](./media/BDM-Overview-ERSolutions.png)
 
 Du kan också importera de officiellt publicerade ER-formatkonfigurationerna från Microsoft Dynamics Lifecycle Service (LCS). Om du till exempel vill utföra den här proceduren kan du importera den senaste versionen av ER-formatkonfigurationen **Fritextfaktura (Excel)**. De motsvarande konfigurationerna för ER-datamodell och ER-modellmappning kommer att importeras automatiskt.
 
 ![Innehållssida för LCS delade tillgångsbibliotek](./media/BDM-Overview-SharedAssetLibrary.png)
 
 Mer information om att importera ER-konfigurationer finns i [Hantera livscykeln för konfiguration av elektronisk rapportering](general-electronic-reporting-manage-configuration-lifecycle.md).
-
 
 ## <a name="enable-business-document-management"></a>Aktivera hantering av affärsdokument
 
@@ -122,7 +113,7 @@ Använd följande procedur om du vill aktivera funktionen för hantering av aff�
 3. Välj **Aktivera nu** om du vill aktivera den valda funktionen.
 4. Uppdatera sidan för att komma åt den nya funktionen.
 
->[!NOTE]
+> [!NOTE]
 > Mer information om hur du använder det nya användargränssnittet för hanteringen av affärsdokument finns i: [Nytt användargränssnitt för hanteringen av affärsdokument](er-business-document-management-new-template-ui.md).
 
 ![Arbetsytan Funktionshantering](./media/BDM-Overview-FMEnabling.png)
@@ -134,21 +125,22 @@ Mer information om hur du aktiverar nya funktioner finns i [Översikt över funk
 Använd informationen i följande avsnitt om du vill ställa in de grundläggande parametrarna för hantering av affärsdokument.
 
 ### <a name="prerequisites-for-parameter-setup"></a>Förutsättningar för parameterinställningar
+
 Innan du kan ställa in affärsdokumenthantering måste du ställa in den obligatoriska dokumenttypen i ramverket för dokumenthantering. Den här dokumenttypen används för att ange tillfällig lagring av dokument i Office-format (Excel och Word) som används som mallar för ER-rapporter. Mallen i tillfällig lagring kan redigeras med hjälp av Office-programmen.
 
 För den här dokumenttypen måste följande attributvärden väljas.
 
-| **Attributnamn**  | **Attributvärde**   |
-|---------------------|-----------------------|
-| Klass               | Koppla fil           |
-| Grupp               | Fil                  |
-| Plats            | SharePoint            |
+| Attributnamn | Attributvärde |
+|----------------|-----------------|
+| Klass          | Koppla fil     |
+| Grupp          | Fil            |
+| Plats       | SharePoint      |
 
 Information om hur du ställer in de obligatoriska parametrarna för dokumenthantering och dokumenttyper finns i [Konfigurera dokumenthantering](../../fin-ops/organization-administration/configure-document-management.md).
 
 ![Ställ in dokumenttyp för dokumenthantering](./media/BDM-Overview-DMSetting.png)
 
-### <a name=""></a><a name="SetupBdmParameters">Ställa in parametrar</a>
+### <a name="set-up-parameters"></a><a name="SetupBdmParameters"></a>Ställa in parametrar
 
 Grundläggande inställningar för affärsdokumenthantering kan ställas in på sidan **Parametrar för affärsdokument**. Endast vissa användare har åtkomst till sidan. Dessa innefattar:
 
@@ -159,7 +151,7 @@ Använd följande procedur om du vill ställa in de grundläggande parametrarna 
 
 1. Logga in som en användare med åtkomst till sidan **Parametrar för affärsdokument**.
 2. Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Hantering av affärsdokument** \> **Parametrar för affärsdokument**.
-3.    På sidan **Parametrar för affärsdokument**, på fliken **Bilagor**, i fältet **SharePoint-dokumenttyp**, definierar du den dokumenttyp som ska användas för att tillfälligt spara mallar i Office-format när de redigeras med Office-programmen. 
+3. På sidan **Parametrar för affärsdokument**, på fliken **Bilagor**, i fältet **SharePoint-dokumenttyp**, definierar du den dokumenttyp som ska användas för att tillfälligt spara mallar i Office-format när de redigeras med Office-programmen. 
 
 > [!NOTE]
 > Endast dokumenttyper som konfigureras med hjälp en SharePoint-plats är tillgängliga för den här parametern.
@@ -175,7 +167,7 @@ Den valda dokumenttypen är företagsspecifik och används när användaren arbe
 
 När åtkomst till behörigheter för affärsdokumenthantering inte har aktiverats, som standard kommer alla användare som har till gång till arbetsytan för affärsdokumenthantering att se alla ER-mallar som är tillgängliga. På arbetsytan för affärsdokumenthantering visas endast de mallar som finns i ER-formatkonfigurationer och som är markerade med en **Affärsdokumenttyp**-tagg.
 
-![Sidan ER-konfigurationer](./media/BDM-Overview-ERFormatTags.png)
+![ER-konfigurationssida med tagg för affärsdokumenttyp](./media/BDM-Overview-ERFormatTags.png)
 
 Listan med mallar som är tillgängliga i arbetsytan affärsdokumenthantering kan begränsas genom konfigurering av åtkomstbehörigheter. Detta kan vara viktigt när olika mallar används för att skapa affärsdokument för olika affärsdomäner (funktionsområden) och du vill tillåta specifika användare tillgång till olika mallar för redigering på arbetsytan för affärsdokumenthantering.
 
@@ -197,13 +189,13 @@ Använd följande procedur om du ställa in behörigheter för åtkomst till han
 
     Följande bild visar vad som finns på arbetsytan för affärsdokumenthantering för användare som tilldelats rollen **Kundreskontraansvarig**. Med den aktuella inställningen för åtkomstbehörigheter kan användaren redigera mallar för affärsdokument från olika funktionsområden inklusive fakturering, lagstadgad rapportering och betalningar.
 
-    ![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-TemplatesForAlice1.png)
+    ![Sidan Arbetsyta för hantering av affärsdokument för kundreskontraansvarig](./media/BDM-Overview-TemplatesForAlice1.png)
 
 3. På sidan **Konfigurerare för åtkomstbehörigheter**, välj **Inställning för åtkomstbehörighet**.
 4. I dialogrutan **Inställningar av åtkomstbehörigheter för att redigera mallar**, aktivera alternativet **Använd konfigurerade åtkomstbehörigheter**.
 5. Välj **OK** för att bekräfta att åtkomstbehörigheter för affärsdokumenthantering har aktiverats.
 
-    ![Sidan Konfiguration av åtkomstbehörigheter för hantering av affärsdokument](./media/BDM-Overview-TemplatesAccess2.png)
+    ![Bekräfta åtkomstbehörigheter för hantering av affärsdokument](./media/BDM-Overview-TemplatesAccess2.png)
 
 6. Välj **Lägg till** om du vill ange en ny affärsroll för vilken behörigheter för åtkomst till mallar för affärsdokumenthantering måste konfigureras.
 7. I dialogrutan **Säkerhetsroller**, välj först rollen **Kundreskontraansvarig** och sedan **OK** för att bekräfta rollvalet.
@@ -215,7 +207,7 @@ Använd följande procedur om du ställa in behörigheter för åtkomst till han
 
 11. Växla fönstret **Relaterad information** från den högra sidan av den aktuella sidan. I fönstret **Relaterad information** visas hur de konfigurerade åtkomstbehörigheterna kommer att användas, inklusive vilka ER-konfigurationsmallar som kommer att vara tillgängliga för användare som tilldelats rollen **Kundreskontraansvarig**.
 
-    ![Sidan Konfiguration av åtkomstbehörigheter för hantering av affärsdokument](./media/BDM-Overview-TemplatesAccess3.png)
+    ![Fönstret Relaterat information på sidan Konfigurerare för åtkomstbehörigheter](./media/BDM-Overview-TemplatesAccess3.png)
 
 12. På fliken **Åtkomstbehörigheter per konfigurationer**, välj alternativet **Lägg till**.
 13. I dialogrutan **Välj konfiguration**, markera ER-formatkonfigurationen **Intrastat-rapport**.
@@ -226,11 +218,11 @@ Den aktuella inställningen betyder att för alla användare som tilldelats roll
 - Mallar som har värdet **Faktura** för taggen **Funktionsområde**.
 - Mallar från ER-formatkonfigurationer som anges på fliken **Åtkomstbehörigheter per konfigurationer** (mallar från formatkonfigurationen **Intrastat-rapport** i domänen **Rapportering enligt lag** i det här exemplet).
 
-![Sidan Konfiguration av åtkomstbehörigheter för hantering av affärsdokument](./media/BDM-Overview-TemplatesAccess4.png)
+![Snabbfliken Åtkomstbehörigheter på sidan Konfigurerare för åtkomstbehörigheter](./media/BDM-Overview-TemplatesAccess4.png)
 
 Följande bild visar vad som finns på arbetsytan för affärsdokumenthantering för en användare som tilldelats rollen **Kundreskontraansvarig**. Med inställningen för åtkomstbehörighet för affärsdokumenthantering kan användaren redigera mallar för affärsdokument från domänen **Fakturera** och ER-formatkonfigurationen **Intrastat-rapport**. Mallar från domänen **Betalningar** är inte tillgängliga för rollen **Kundreskontraansvarig**.
 
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-TemplatesForAlice2.png)
+![Redigera affärsdokumentmallar på sidan Arbetsytan för hantering av affärsdokument](./media/BDM-Overview-TemplatesForAlice2.png)
 
 > [!NOTE]
 > Reglerna för **Åtkomstbehörigheter per konfigurationer** lagras med hjälp av det unika ID-numret för en ER-format konfiguration. Detta innebär att dessa regler inte tas bort när en ER-konfiguration som refererar till dem tas bort. När du importerar borttagna konfigurationer tillbaka till den här instansen refererar dessa regler till dem igen. Du behöver inte ställa in reglerna igen när de borttagna konfigurationerna importeras igen.
@@ -252,7 +244,7 @@ När funktionen **Office-liknande gränssnittsupplevelser för hantering av aff�
 - Mallar som ägs av din ER-konfigurationsleverantör (dvs. den leverantör som för närvarande är markerad som aktiv i arbetsytan **elektronisk rapportering**). När du har valt en av dessa mallar kan du välja **redigera mall** och starta eller fortsätta att redigera den.
 - Mallar som ägs av andra ER-konfigurationsleverantörer. När du har valt en av dessa mallar kan du välja **Nytt dokument** för att skapa en kopia av det som ägs av din ER-konfigurationsleverantör och sedan börja redigera kopian.
 
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate1.png)
+![Mallistor på sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate1.png)
 
 Fliken **Mall** visar innehållet i den valda mallen. Välj fliken **Detaljer** om du vill visa information om den valda mallen samt information om en ER-formatkonfiguration som den här mallen finns i. Lägg märke till att alla mallar har statusen **Publicerad** och inte innehåller någon information i kolumnen **Ändring**. Detta innebär att dessa mallar inte redigeras just nu.
 
@@ -265,7 +257,7 @@ Om du vill arbeta med mallar som ägs av andra ER-konfigurationsleverantörer v�
 1. På arbetsytan för hantering av affärsdokument väljer du mallen **Checkar utskriftsformat** i listan.
 2. Välj fliken **Detaljer**.
 
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate2.png)
+![Sidan Arbetsyta för hantering av affärsdokument, fliken Detaljer](./media/BDM-Overview-EditingTemplate2.png)
 
 Alternativet **Redigera mall** är tillgängligt för den valda mallen. Det här alternativet är alltid tillgängligt för en mall i en ER-formatkonfiguration som ägs av den aktiva ER-konfigurationsleverantören (**Litware, Inc.** i det här exemplet). När du har valt **Redigera mall** kommer den befintliga mallen från utkastversionen av den underliggande ER-formatkonfigurationen att vara tillgänglig för redigering.
 
@@ -273,14 +265,14 @@ Alternativet **Redigera mall** är tillgängligt för den valda mallen. Det här
 
 1. Markera det dokument som du vill använda som mall i arbetsyta för hantering av affärsdokument.
 
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate3.png)
+    ![Välj ett dokument på sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate3.png)
 
-3. Välj **Nytt dokument** och i fältet **Rubrik** ändra titeln på den redigerbara mallen om det behövs. Texten kommer att användas som namn på den konfiguration för ER-format som skapas automatiskt. Lägg märke till att utkastversionen av den här konfigurationen (**Kopia av FTI-rapport för kund (GER)**) som kommer att innehålla den redigerade mallen automatiskt markeras för att köra det här ER-formatet för den aktuella användaren. På samma gång används den icke ändrade ursprungliga mallen från baskonfigurationen för ER-format för att köra det här ER-formatet för andra användare.
-4. I fältet **Namn** ändrar du namnet på den första revisionen av den redigerbara mallen som ska skapas automatiskt.
-5. I fältet **Kommentar** ändrar du kommentaren för automatiskt skapade versionen av den redigerbara mallen.
-6. Välj **OK** för att bekräfta starten av redigeringsprocessen.
+2. Välj **Nytt dokument** och i fältet **Rubrik** ändra titeln på den redigerbara mallen om det behövs. Texten kommer att användas som namn på den konfiguration för ER-format som skapas automatiskt. Lägg märke till att utkastversionen av den här konfigurationen (**Kopia av FTI-rapport för kund (GER)**) som kommer att innehålla den redigerade mallen automatiskt markeras för att köra det här ER-formatet för den aktuella användaren. På samma gång används den icke ändrade ursprungliga mallen från baskonfigurationen för ER-format för att köra det här ER-formatet för andra användare.
+3. I fältet **Namn** ändrar du namnet på den första revisionen av den redigerbara mallen som ska skapas automatiskt.
+4. I fältet **Kommentar** ändrar du kommentaren för automatiskt skapade versionen av den redigerbara mallen.
+5. Välj **OK** för att bekräfta starten av redigeringsprocessen.
 
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate4.png)
+![Bekräfta början på redigeringsprocessen om du vill skapa en ny mall](./media/BDM-Overview-EditingTemplate4.png)
 
 Alternativet **Nytt dokument** är alltid tillgängligt för en mall i en ER-formatkonfiguration som tillhandahålla av en aktuell och en annan leverantör (Microsoft i det här exemplet) som inte har någon ändring. Den redigerade mallen kommer sedan att lagras i en ny konfiguration för ER-format som skapas automatiskt.
 
@@ -290,21 +282,21 @@ Alternativet **Nytt dokument** är alltid tillgängligt för en mall i en ER-for
 2. I fältet **Namn** ändrar du namnet på den första revisionen av den redigerbara mallen som ska skapas automatiskt.
 3. I fältet **Kommentar** ändrar du anmärkningen för automatiskt skapade versionen av den redigerbara mallen.
 
-    ![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate5.png)
+    ![Redigera en mall på sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate5.png)
 
-5. Välj **OK** för att bekräfta starten av redigeringsprocessen.
+4. Välj **OK** för att bekräfta starten av redigeringsprocessen.
 
 Sidan **BDM-mallredigerare** öppnas. Den valda mallen blir tillgänglig för redigering online med hjälp av Microsoft 365.
 
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingLayout1.png)
+![Redigeringssida för mall för affärsdokumenthantering](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name=""></a><a name="EditInOffice365">Redigera en mall i Microsoft 365</a>
+### <a name="edit-a-template-in-microsoft-365"></a><a name="EditInOffice365"></a>Redigera en mall i Microsoft 365
 
 Du kan inte ändra mall med Microsoft 365. Ändra till exempel teckensnittet för fältfrågan i mallhuvudet från **Vanligt** till **Fetstil** i Office Online. Dessa ändringar sparas automatiskt för den redigerbara mallen som lagras i den primära mallens lagringsutrymme (som standard Azure blob-lagringen). Detta är konfigurerat för ER-ramverket.
 
-![Redigeringssida för mall för affärsdokumenthantering](./media/BDM-Overview-EditingLayout2.png)
+![Ändra teckensnitt till fetstil i mallrubriken på Redigeringssida för mall för affärsdokumenthantering](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name=""></a><a name="EditInOfficeDesktopApp">Redigera en mall i Office-skrivbordsprogrammet</a>
+### <a name="edit-a-template-in-the-office-desktop-application"></a><a name="EditInOfficeDesktopApp"></a>Redigera en mall i Office-skrivbordsprogrammet
 
 > [!NOTE]
 > Den här funktionen är endast tillgänglig om parametern **SharePoint dokumenttyp** är korrekt konfigurerad. Mer information finns i [Konfigurera parametrar](#SetupBdmParameters).
@@ -312,15 +304,15 @@ Du kan inte ändra mall med Microsoft 365. Ändra till exempel teckensnittet fö
 1. Välj alternativet **Öppna i skrivbordsprogram** om du vill ändra mallen med hjälp av funktionerna i Office-skrivbordsprogrammet (Excel i det här exemplet). Den redigerbara mallen kopieras från det permanenta lagringsutrymmet till den tillfälliga lagring som har konfigurerats i affärsdokumentparametrarna som en SharePoint-mapp.
 2. Bekräfta att du vill öppna mallen från den temporära lagringsplatsen i Office-skrivbordsprogrammet Excel.
 
-    ![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingLayout3.png)
+    ![Mall som öppnas i skrivbordsprogrammet Excel](./media/BDM-Overview-EditingLayout3.png)
 
 3. Ändra mallen. Ändra till exempel teckensnittet för fältfrågan i mallhuvudet genom att uppdatera färg från **Svart** till **Blå**.
 
-    ![Redigeringssida för mall för affärsdokumenthantering](./media/BDM-Overview-EditingLayout4.png)
+    ![Ändra teckenfärgen i mallrubriken med hjälp av skrivbordsprogrammet Excel](./media/BDM-Overview-EditingLayout4.png)
 
 4. Välj **Spara** i Excel-skrivbordsprogrammet för att lagra malländringarna i den tillfälliga lagringen.
 
-    ![Redigeringssida för mall för affärsdokumenthantering](./media/BDM-Overview-EditingLayout5.png)
+    ![Spara ändringarna på sidan för mallen för affärsdokumenthantering med hjälp av skrivbordsprogrammet Excel](./media/BDM-Overview-EditingLayout5.png)
 
 5. Stäng Excel-skrivbordsprogrammet.
 6. Välj **Synkronisera lagrad kopia** om du vill synkronisera den tillfälliga mallagringen till den permanenta mallagringen.
@@ -340,7 +332,7 @@ Du kan inte ändra mall med Microsoft 365. Ändra till exempel teckensnittet fö
 
 Den uppdaterade mallen visas på fliken **Mall**. Observera att statusen för den redigerade mallen nu är **Utkast** och den aktuella revisionen är inte längre tom. Detta innebär att processen för den här mallens redigering har startats.
 
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate5.png)
+![Visa den uppdaterade mallen på sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate5.png)
 
 ### <a name="test-the-modified-template"></a>Testa den ändrade mallen 
 
@@ -367,7 +359,7 @@ Den modifierade mallen används för att generera fritextfakturarapporten för d
 3. Om det behövs ändrar du namnet på den andra revisionen i fältet **Namn** och baserar det på den för tillfället aktiva första versionen.
 4. Vid behov, i fältet **Kommentar**, ändrar du anmärkningen för automatiskt skapade versionen av den redigerbara mallen.
 
-    ![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-AddRevision.png)
+    ![Skapa revideringarna av mallen på sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-AddRevision.png)
 
     Du har skapat en ny version av din mall som har lagrats i den permanenta mallens lagringsutrymme. Nu kan du fortsätta att redigera mallen för den andra versionen som är markerad som aktiv för tillfället.
 
@@ -385,22 +377,25 @@ Den modifierade mallen används för att generera fritextfakturarapporten för d
 
 När du redigerar mallen från ett ER-format som ägs av den aktuella aktiva leverantören kommer du att erbjudas möjligheten att återkalla ändringar som införts för mallen.
 
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-RevokeChanges.png)
+![Avvisa ändringar av mallen på sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-RevokeChanges.png)
 
 1. På sidan **BDM-mallredigerare**, välj fliken **Mall**.
 2. Välj **Ångra**.
 3. Om du väljer **OK** för att återkalla ändringarna som har gjorts i mallen, kommer den ändrade mallen att ersättas av den ursprungliga mallen och alla ändringar tas bort. När du återkallar ändringar i mallen kommer du att kunna ta bort mallen. Välj **Avbryt** om du vill utforska andra alternativ.
 
 ### <a name="publish-a-modified-template"></a>Publicera en ändrad mall
+
 1. På sidan **BDM-mallredigerare**, på fliken **Mall**, välj **Publicera**.
 2. Om du väljer **OK** för att bekräfta publiceringen markeras utkastversionen av det härledda ER-formatet **Kopia av FTI-rapport för kund (GER)** som innehåller den ändrade mallen som slutförd. Den ändrade mallen blir tillgänglig för andra användare. I de slutförda versionerna av det här ER-formatet sparas endast den senaste aktiva versionen av mallen. Övriga versioner tas bort. Välj **Avbryt** om du vill utforska andra alternativ.
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page"></a>Jag valde **Redigera dokument**, men i stället för att öppna sidan **BDM-mallredigeraren** i Finance and Operations, har jag skickats till Microsoft 365 webbsidan.
-Detta är ett känt problem i Microsoft 365 omdirigeringen. Detta inträffar när du loggar in på Microsoft 365 första gången. Du löser det här problemet genom att välja knappen **Bakåt** i webbläsaren för att gå tillbaka.
+### <a name="i-selected-edit-document-but-instead-of-going-to-the-bdm-template-editor-page-in-finance-i-was-sent-to-the-microsoft-365-webpage"></a>Jag valde Redigera dokument, men i stället för att gå till sidan BDM-mallredigeraren i Finance skickades jag till Microsoft 365 webbsidan.
 
-#### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Jag förstår hur man redigerar en mall med hjälp av Microsoft 365 den första programsessionen och hur man använder mallen i den andra programsessionen för att justera mallen för att se hur ändringarna påverkar det genererade affärsdokumentet. Kan jag göra detta med Office-skrivbordsprogrammet?
+Detta är ett känt problem som omfattar Microsoft 365 omdirigeringen. Detta inträffar när du loggar in på Microsoft 365 första gången. Du löser det här problemet genom att välja **Bakåt** i webbläsaren för att gå tillbaka till föregående sida.
+
+### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-and-adjust-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-use-the-office-desktop-application-in-the-same-way"></a>Jag förstår hur man redigerar en mall med hjälp av Microsoft 365 den första programsessionen och hur man använder mallen i den andra programsessionen för att justera mallen för att se hur ändringarna påverkar det genererade affärsdokumentet. Kan jag använda Office-skrivbordsprogrammet på samma sätt?
+
 Ja, det kan du. I den första programsessionen, välj **Öppna i skrivbordsprogram**. Din mall lagras i den temporära fillagringen och öppnas i Office-skrivbordsprogrammet. Utför sedan följande steg för att förhandsgranska malländringarna i det genererade affärsdokumentet:
 
 1. Gör ändringarna i mallen med hjälp av Office-skrivbordsprogrammet.
@@ -408,7 +403,8 @@ Ja, det kan du. I den första programsessionen, välj **Öppna i skrivbordsprogr
 3. På sidan **BDM-mallredigerare** i den första programsessionen, välj **Synkronisera lagrad kopia**.
 4. Kör det här ER-mallformatet i den andra programsessionen.
 
-#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Jag får felet "Värdet får inte vara null. Parameternamn: externalId" när jag väljer **Öppna i skrivbordsprogram**. Hur undviker jag detta? 
+### <a name="when-i-select-open-in-desktop-app-i-receive-the-following-error-message-value-cannot-be-null-parameter-name-externalid-how-do-i-work-around-this-issue"></a>När jag väljer Öppna i skrivbordsprogrammet visas följande felmeddelande: "Värdet får inte vara null. Parameternamn: externalId." Hur undviker jag detta problem?
+
 Troligen loggade du in på den aktuella instansen av appen i Azure AD-domänen som skiljer sig från Azure AD-domänen som användes för att distribuera den här instansen. Eftersom SharePoint-tjänsten, som används för att lagra mallar som gör dem tillgängliga för redigering med hjälp av Office-skrivbordsprogram, tillhör samma domän har vi ingen behörighet att komma åt SharePoint-tjänsten. Lös problemet genom att logga in på den aktuella instansen med hjälp av autentiseringsuppgifterna för en användare med rätt Azure AD-domän.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
@@ -423,6 +419,163 @@ Troligen loggade du in på den aktuella instansen av appen i Azure AD-domänen s
 
 [Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
+## <a name="list-of-er-configurations-that-have-been-released-in-finance-to-support-configurable-business-documents"></a><a name="list-of-configurations-cbd"></a>Lista över ER-konfigurationer som har lanserats i Finance för att stödja konfigurerbara affärsdokument
 
+[Listan](general-electronic-reporting.md#list-of-configurations) över ER-konfigurationer för Finance uppdateras regelbundet. Öppna den [globala databasen](er-download-configurations-global-repo.md) för att granska listan över ER-konfigurationer som för närvarande stöds. Du kan [filtrera](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) den globala databasen för att granska listan med ER-konfigurationer som används för att stödja konfigurerbara affärsdokument.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Filtrera innehållet i den globala databasen på sidan Konfigurationsdatabas](./media/bdm-overview-filterglobalrepo.gif)
+
+Följande tabell visar en lista över ER-konfigurationer som stöder konfigurerbara affärsdokument och som har frisläppts i Finance till och med december 2020.
+
+| Konfiguration av datamodell.    | Konfiguration av format                           |
+|-----------------------------|-------------------------------------------------|
+| Fraktsedel - modell        | Fraktsedel (Excel)                          |
+|                             | Fraktsedel (Word)                           |
+| Modell för certifiering av ursprung | Certifiering av ursprung (Excel)                   |
+|                             | Certifiering av ursprung (Word)                    |
+| Fakturamodell               | Kunds debetfaktura och kreditfaktura (Excel)          |
+|                             | Kunds debetfaktura och kreditfaktura (Word)           |
+|                             | Fritextfaktura (Excel)                       |
+|                             | Fritextfaktura (Excel) (BH)                  |
+|                             | Fritextfaktura (FR) (Excel)                  |
+|                             | Fritextfaktura (LT) (Excel)                  |
+|                             | Fritextfaktura (LV) (Excel)                  |
+|                             | Fritextfaktura (PL) (Excel)                  |
+|                             | Fritextfaktura (CZ) (Excel)                  |
+|                             | Fritextfaktura (EE) (Excel)                  |
+|                             | Fritextfaktura (HU) (Excel)                  |
+|                             | Fritextfaktura (TH) (Excel)                  |
+|                             | Fritextfaktura (Word)                        |
+|                             | Radartiklar för projektkontrakt (Excel)             |
+|                             | Radartiklar för projektkontrakt (CZ) (Excel)        |
+|                             | Radartiklar för projektkontrakt (Excel) (BH)        |
+|                             | Radartiklar för projektkontrakt (HU) (Excel)        |
+|                             | Radartiklar för projektkontrakt (LT) (Excel)        |
+|                             | Radartiklar för projektkontrakt (PL) (Excel)        |
+|                             | Radartiklar för projektkontrakt (Word)              |
+|                             | Frisläppning av kvarhållande av projektkund (Excel)      |
+|                             | Frisläppning av kvarhållande av projektkund (CZ) (Excel) |
+|                             | Frisläppning av kvarhållande av projektkund (HU) (Excel) |
+|                             | Frisläppning av kvarhållande av projektkund (LT) (Excel) |
+|                             | Frisläppning av kvarhållande av projektkund (PL) (Excel) |
+|                             | Frisläppning av kvarhållande av projektkund (TH) (Excel) |
+|                             | Frisläppning av kvarhållande av projektkund (Word)       |
+|                             | Projektfaktura (Excel)                         |
+|                             | Projektfaktura (Word)                          |
+|                             | Projektfaktura (AE) (Excel)                    |
+|                             | Projektfaktura (CZ) (Excel)                    |
+|                             | Projektfaktura (Excel) (BH)                    |
+|                             | Projektfaktura (HU) (Excel)                    |
+|                             | Projektfaktura (JP) (Excel)                    |
+|                             | Projektfaktura (LT) (Excel)                    |
+|                             | Projektfaktura (PL) (Excel)                    |
+|                             | Projektfaktura (TH) (Excel)                    |
+|                             | Projektfaktura, fullständig (MY) (Excel)               |
+|                             | Projektfaktura, enkel (MY) (Excel)             |
+|                             | Projekthanteringsfaktura (Excel)                  |
+|                             | Projekthanteringsfaktura (CZ) (Excel)             |
+|                             | Projekthanteringsfaktura (Excel) (BH)             |
+|                             | Projekthanteringsfaktura (HU) (Excel)             |
+|                             | Projekthanteringsfaktura (JP) (Excel)             |
+|                             | Projekthanteringsfaktura (LT) (Excel)             |
+|                             | Projekthanteringsfaktura (PL) (Excel)             |
+|                             | Projekthanteringsfaktura (Word)                   |
+|                             | Förskottsfaktura för inköp (Excel)                |
+|                             | Förskottsfaktura för inköp (Word)                 |
+|                             | Förskottsfaktura för försäljning (Excel)                   |
+|                             | Förskottsfaktura för försäljning (Word)                    |
+|                             | Förskottsfaktura för försäljning (PL) (Excel)              |
+|                             | Försäljningsfaktura (Excel)                           |
+|                             | Försäljningsfaktura (Excel) (BH)                      |
+|                             | Försäljningsfaktura (Excel) (CZ)                      |
+|                             | Försäljningsfaktura (Excel) (EE)                      |
+|                             | Försäljningsfaktura (Excel) (FR)                      |
+|                             | Försäljningsfaktura (Excel) (HU)                      |
+|                             | Försäljningsfaktura (Excel) (IN)                      |
+|                             | Försäljningsfaktura (Excel) (LT)                      |
+|                             | Försäljningsfaktura (Excel) (LV)                      |
+|                             | Försäljningsfaktura (Excel) (PL)                      |
+|                             | Försäljningsfaktura (Excel) (TH)                      |
+|                             | Försäljningsfaktura (Word)                            |
+|                             | TMS kommersiell faktura (Excel)                  |
+|                             | TMS kommersiell faktura (Word)                   |
+|                             | Dokument till leverantörsfaktura (Excel)                 |
+|                             | Dokument till leverantörsfaktura (CZ) (Excel)            |
+|                             | Dokument till leverantörsfaktura (HU) (Excel)            |
+|                             | Dokument till leverantörsfaktura (IN) (Excel)            |
+|                             | Dokument till leverantörsfaktura (LT) (Excel)            |
+|                             | Dokument till leverantörsfaktura (LV) (Excel)            |
+|                             | Dokument till leverantörsfaktura (MY) (Excel)            |
+|                             | Dokument till leverantörsfaktura (Word)                  |
+| Ordermodell                 | Avtalsbekräftelse (Excel)                  |
+|                             | Avtalsbekräftelse (Word)                   |
+|                             | Bekräftelser av inköpsavtal (Excel)         |
+|                             | Bekräftelser av inköpsavtal (Word)          |
+|                             | Inköpsorderrad (Excel)                          |
+|                             | Inköpsorderrad (CZ) (Excel)                     |
+|                             | Inköpsorderrad, förfrågan (CZ) (Excel)             |
+|                             | Inköpsorderrad (HU) (Excel)                     |
+|                             | Inköpsorderrad, förfrågan (HU) (Excel)             |
+|                             | Inköpsorder (Word)                           |
+|                             | Inköpsorder, förfrågan (Excel)                  |
+|                             | Inköpsorder, förfrågan (Word)                   |
+|                             | Försäljningsorder, förfrågan (Excel)                |
+|                             | Försäljningsorder, förfrågan (CZ) (Excel)           |
+|                             | Försäljningsorder, förfrågan (HU) (Excel)           |
+|                             | Försäljningsorder, förfrågan (Word)                 |
+| Packningslistemodell          | Behållarinnehåll (Excel)                      |
+|                             | Behållarinnehåll (Word)                       |
+|                             | Lastlista (Excel)                               |
+|                             | Lastlista (Word)                                |
+|                             | Plocklista (Excel)                            |
+|                             | Plocklista (CZ) (Excel)                       |
+|                             | Plocklista (Word)                             |
+|                             | Produktionsplocklista (Excel)                    |
+|                             | Produktionsplocklista (Word)                     |
+|                             | Leveransplocklista för last (Excel)             |
+|                             | Leveransplocklista för last (Word)              |
+|                             | Leveransplocklista för leverans (Excel)         |
+|                             | Leveransplocklista för leverans (Word)          |
+|                             | Leveransplocklista för påfyllnad (Excel)             |
+|                             | Leveransplocklista för påfyllnad (Word)              |
+| Betalningsmodell               | Betalningsavi för kund (Excel)                 |
+|                             | Betalningsavi för kund (Word)                  |
+|                             | Betalningsavi för leverantör (Excel)                   |
+|                             | Betalningsavi för leverantör (Word)                    |
+| Offertmodell             | Projektoffert (Excel)                       |
+|                             | Projektoffert (Word)                        |
+|                             | Anbudsförfrågan (Excel)                   |
+|                             | Anbudsförfrågan (acceptera) (Excel)          |
+|                             | Anbudsförfrågan (acceptera) (Word)           |
+|                             | Anbudsförfrågan (avvisa) (Excel)          |
+|                             | Anbudsförfrågan (avvisa) (Word)           |
+|                             | Anbudsförfrågan (retur) (Excel)          |
+|                             | Anbudsförfrågan (retur) (Word)           |
+|                             | Anbudsförfrågning (Word)                    |
+|                             | Försäljningsoffert (Excel)                         |
+|                             | Försäljningsoffert (CZ) (Excel)                    |
+|                             | Försäljningsoffert (HU) (Excel)                    |
+|                             | Försäljningsoffert (Word)                          |
+|                             | Bekräftelse av försäljningsoffert (Excel)            |
+|                             | Bekräftelse av försäljningsoffert (Word)             |
+| Avstämningsmodell        | Kontoutdrag för kund, Ext (Excel)             |
+|                             | Kontoutdrag för kund, Ext (CN) (Excel)        |
+|                             | Kontoutdrag för kund, Ext (Word)              |
+|                             | Kontoutdrag för kund, Frankrike (Excel)          |
+| Påminnelsemodell              | Kravbrevsnotering (Excel)                  |
+|                             | Kravbrevsnotering (CN) (Excel)             |
+|                             | Kravbrevsnotering (Word)                   |
+|                             | Kundräntefaktura (Excel)                  |
+|                             | Kundräntefaktura (Word)                   |
+| Waybill-modell               | Lastanbud (Excel)                             |
+|                             | Lastanbud (Word)                              |
+|                             | Följesedel för inköpsorder (Excel)             |
+|                             | Följesedel för inköpsorder (CZ) (Excel)        |
+|                             | Följesedel för inköpsorder (Word)              |
+|                             | Rutt (Excel)                                   |
+|                             | Rutt (Word)                                    |
+|                             | Följesedel för försäljningsorder (Excel)                |
+|                             | Följesedel för försäljningsorder (CZ) (Excel)           |
+|                             | Följesedel för försäljningsorder (LT) (Excel)           |
+|                             | Följesedel för försäljningsorder (PL) (Excel)           |
+|                             | Följesedel för försäljningsorder (Word)                 |

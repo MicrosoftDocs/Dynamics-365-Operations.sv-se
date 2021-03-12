@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: adbc9d0bc4632c661b40001a54685192b9ae2d23
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: ea741e3d4b3a6ce93a30c9d8c8adc7c91b513871
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694146"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798559"
 ---
 # <a name="before-you-buy"></a>Innan du köper
 
@@ -30,7 +30,7 @@ Ny för Dynamics 365 Finance, Dynamics 365 Supply Chain Management, eller Dynami
 
 ## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Steg ett: testa Finance and Operations kostnadsfritt i 30 dagar
 
-Du kan prova en 30 dagars provversion av Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce genom en enkel e-postregistrering. Provversionen av Finance and Operations-appar innehåller en Komma igång-guide med steg-för-steg-instruktioner som låter dig visa specifika scenarier i praktiken. Produkten är tillgänglig att utforska och utöva scenarier, men kan inte anpassas. Demodata ingår för att underlätta användningen av produkten och för att upplevelsen ska bli mer beskrivande. En påminnelse i e-postmeddelandet skickas 3 dagar innan testperioden går ut. Hämta information på [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
+Du kan prova en 30 dagars provversion av Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce genom en enkel e-postregistrering. Provversionen av Finance and Operations-appar innehåller en Komma igång-guide med steg-för-steg-instruktioner som låter dig visa specifika scenarier i praktiken. Produkten är tillgänglig att utforska och utöva scenarier, men kan inte anpassas. Demodata ingår för att underlätta användningen av produkten och för att upplevelsen ska bli mer beskrivande. En påminnelse i e-postmeddelandet skickas 3 dagar innan testperioden går ut. Få mer information på [Registrera abonnemang på förhandsversioner](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Steg två: Välj ett distributionsalternativ.
 
@@ -93,6 +93,3 @@ Microsoft FastTrack för Dynamics 365 är vår lyckade kundtjänst som är utfor
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Om du uppgraderar från Dynamics AX 2012 eller migrerar från AX 2009
 
 Om du är kund som uppgraderar från Microsoft Dynamics AX 2012 eller migrerar från Microsoft Dynamics AX 2009, kan du vara berättigad till en längre utvärderingsversion. Kontakta <daxcf@microsoft.com> för mer information.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

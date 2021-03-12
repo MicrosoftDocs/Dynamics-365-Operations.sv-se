@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b4b9abff57386fda61e3a83b0b8f18e533c8758c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 48d8fd06217d318fa8208e11ffa5624f6be25be1
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694651"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796716"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegera arbetsuppgifter i ett arbetsflöde
 
@@ -60,6 +60,3 @@ Om du tänker vara borta från kontoret eller annars inte kan åtgärda arbetsup
 8. Ange datum och tid i fältet **Slutdatum/-tid**.
 9. Aktivera delegeringsregeln genom att markera kryssrutan **Aktiverad**. 
 10. Ange en kommentar som förklarar varför du delegerar arbetsuppgifterna i fältet **Kommentar**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

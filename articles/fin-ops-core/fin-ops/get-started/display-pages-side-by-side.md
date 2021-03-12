@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b770fe44e4e12c515ca53def697fa345ce3eba3
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 35ade352edf31fe895a9b9118a8ad7d5fe6c0bde
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694455"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798413"
 ---
 # <a name="show-pages-side-by-side-using-the-open-in-new-window-feature"></a>Visa sidor sida vid sida med funktionen Öppna i nytt fönster
 
@@ -35,7 +35,7 @@ Om vi fortsätter med exemplet ovan kan du klicka på ikonen **Öppna i nytt fö
 
 [![Klicka på ikonen för Öppna i nytt fönster.](./media/open-in-new-window-icon.png)](./media/open-in-new-window-icon.png)
 
-Om du klickar på ikonen **Open in new window** öppnas radsidan i en ny popup-webbläsare, och navigerar sedan den ursprungliga webbläsaren bakåt i historiken till sidan som visade listan med journaler. Du kan sedan visa båda sidorna sida vid sida. När du är klar med att visa en journal, kan du ändra den valda journalen på journallistsidan och radsidan i popup-fönstret visar automatiskt raderna i den nya valda journalen.
+Om du klickar på ikonen **Öppna i nytt fönster** öppnas radsidan i en ny popup-webbläsare, och navigerar sedan den ursprungliga webbläsaren bakåt i historiken till sidan som visade listan med journaler. Du kan sedan visa båda sidorna sida vid sida. När du har visat en journal, kan du ändra den valda journalen på journallistsidan och radsidan i popup-fönstret visar automatiskt raderna i den nya valda journalen.
 
 [![Du kan visa båda sidorna sida vid sida.](./media/pages-show-side-by-side.png)](./media/pages-show-side-by-side.png)
 
@@ -48,6 +48,3 @@ Innan du använder funktionen **Öppna i nytt fönster** måste du konfigurera w
 Funktionen **Öppna i nytt fönster** är endast tillgänglig när det finns fler än en sida som är öppen i fönstret. Popup-fönstret stängs även automatiskt när det inte finns några fler öppna sidor (det vill säga när den sista sidan i det fönstret stängs.) Systemet stänger även öppna sidor när du navigerar till ett annat område i programmet. Om du har öppna popup-fönster och navigerar till ett annat område i programmet stängs därför popup-fönster automatiskt, eftersom sidorna i dessa fönster stängdes av systemet.
 
 Det övre fältet i popup-fönster visar information om företaget som sidan öppnades i och är skrivskyddat. Popup-fönstren använder även de huvudsakliga webbläsarfönstret. Om huvudfönstret stängs eller uppdateras, blir alla öppna popup-fönster skrivskyddade. I det här fallet kan du fortfarande visa informationen i dessa fönster, men du kan inte interagera med den.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

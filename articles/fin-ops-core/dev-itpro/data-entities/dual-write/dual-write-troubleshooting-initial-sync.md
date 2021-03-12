@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: a7ba4fa4771324b4bcb8464649bd8ce8f32024c0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a2f0e0cbf0f8710dc020a48506775fa28df9c2d2
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683580"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744647"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Felsöka problem under första synkroniseringen
 
@@ -98,7 +98,7 @@ Ett felmeddelande om någon av dina mappningar har självreferenser eller cirkul
 
 ## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-table-mapping"></a><a id="error-vendor-map"></a>Lös fel i tabellmappning för Leverantörer V2 till msdyn_vendors
 
-Du kan stöta på initiala synkroniseringsfel för mappning **Leverantörer V2** till **msdyn\_vendors** om tabellerna har befintliga rader med värden i fälten **PrimaryContactPersonId** och **InvoiceVendorAccountNumber**. Dessa fel beror på att **InvoiceVendorAccountNumber** är ett självrefererande fält och att **PrimaryContactPersonId** är en cirkelreferens i leverantörsmappningen.
+Du kan stöta på initiala synkroniseringsfel för mappning **Leverantörer V2** till **msdyn\_vendors** om tabellerna har befintliga rader med värden i kolumnerna **PrimaryContactPersonId** och **InvoiceVendorAccountNumber**. Dessa fel beror på att **InvoiceVendorAccountNumber** är ett självrefererande kolumn och att **PrimaryContactPersonId** är en cirkelreferens i leverantörsmappningen.
 
 Felmeddelandena som visas kommer att ha följande format.
 
@@ -109,26 +109,26 @@ Nedan följer några exempel:
 - *Det gick inte att matcha GUID för fältet: msdyn\_vendorprimarycontactperson.msdyn\_contactpersonid. Det gick inte att hitta sökningen: 000056. Prova denna URL för att se om referensdata existerar: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Det gick inte att matcha GUID för fältet: msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber. Det gick inte att hitta sökningen: V24-1. Prova denna URL för att se om referensdata existerar: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
 
-Om några rader i leverantörsenheten har värden i fälten **PrimaryContactPersonId** och **InvoiceVendorAccountNumber** ska du följa dessa steg slutföra den inledande synkroniseringen.
+Om några rader i leverantörstabellen har värden i kolumnen **PrimaryContactPersonId** och **InvoiceVendorAccountNumber** ska du följa dessa steg slutföra den inledande synkroniseringen.
 
-1. I Finance and Operations-appen tar du bort fälten **PrimaryContactPersonId** och **InvoiceVendorAccountNumber** från mappningen och s för att spara ändringarna.
+1. I Finance and Operations-appen tar du bort kolumnen **PrimaryContactPersonId** och **InvoiceVendorAccountNumber** från mappningen och s för att spara ändringarna.
 
     1. På sidan för mappning med dubbelriktad skrivning för **Leverantörer V2 (msdyn\_vendors)** på fliken **Tabellmappningar** väljer du **Finance and Operations apps.Vendors V2**. I höger filter, välj **Sales.Vendor**.
-    2. Sök efter **primarycontactperson** för att hitta källfältet **PrimaryContactPersonId**.
+    2. Sök efter **primarycontactperson** för att hitta källkolumen **PrimaryContactPersonId**.
     3. Välj **åtgärder** och välj sedan **ta bort**.
 
-        ![Ta bort fältet PrimaryContactPersonId](media/vend_selfref3.png)
+        ![Ta bort kolumnen PrimaryContactPersonId](media/vend_selfref3.png)
 
-    4. Upprepa dessa steg om du vill ta bort fältet **InvoiceVendorAccountNumber**.
+    4. Upprepa dessa steg om du vill ta bort kolumnen **InvoiceVendorAccountNumber**.
 
-        ![Ta bort fältet InvoiceVendorAccountNumber](media/vend-selfref4.png)
+        ![Ta bort kolumnen InvoiceVendorAccountNumber](media/vend-selfref4.png)
 
     5. Spara dina ändringar i mappningen.
 
-2. Inaktivera ändringsspårningen för entiteten **leverantörer V2**.
+2. Inaktivera ändringsspårningen för tabellen **leverantörer V2**.
 
     1. I arbetsytan **Datahantering** väljer du panelen **Datatabeller**.
-    2. Välj entiteten **Leverantörer V2**.
+    2. Välj tabellen **Leverantörer V2**.
     3. I åtgärdsfönstret, välj **Alternativ** och välj sedan **Ändra spårning**.
 
         ![Välja alternativet Ändringsspårning](media/selfref_options.png)
@@ -138,14 +138,14 @@ Om några rader i leverantörsenheten har värden i fälten **PrimaryContactPers
         ![Klicka på inaktivera ändringsspårning](media/selfref_tracking.png)
 
 3. Kör den första synkroniseringen igen för mappningen **leverantörer V2 (msdyn\_vendors)**. Den ursprungliga synkroniseringen bör köras utan fel.
-4. Kör den första synkroniseringen för mappningen **CDS-kontakter V2 (kontakter)**. Du måste synkronisera den här mappningen om du vill synkronisera primära kontaktfält på leverantörsentiteten, eftersom initial synkronisering också måste göras för kontaktraderna.
-5. Lägg till fälten **PrimaryContactPersonId** och **InvoiceVendorAccountNumber** tillbaka till mappningen **leverantörer V2 (msdyn\_vendors)** och spara mappningen.
+4. Kör den första synkroniseringen för mappningen **CDS-kontakter V2 (kontakter)**. Du måste synkronisera den här mappningen om du vill synkronisera primära kontaktkolumnen på leverantörstabellen, eftersom initial synkronisering också måste göras för kontaktraderna.
+5. Lägg till kolumnen **PrimaryContactPersonId** och **InvoiceVendorAccountNumber** tillbaka till mappningen **leverantörer V2 (msdyn\_vendors)** och spara mappningen.
 6. Kör den första synkroniseringen igen för mappningen **leverantörer V2 (msdyn\_vendors)**. Alla rader kommer att synkroniseras eftersom spårning av ändringar har inaktiverats.
-7. Aktivera tillbaka ändringsspårningen för entiteten **leverantörer V2**.
+7. Aktivera tillbaka ändringsspårningen för tabellen **leverantörer V2**.
 
 ## <a name="resolve-errors-in-the-customers-v3toaccounts-table-mapping"></a><a id="error-customer-map"></a>Lös fel i tabellmappning för Kunder V3 till konton
 
-Du kan stöta på initiala synkroniseringsfel för mappning av **Kunder V3** till **Konton** om tabellerna har befintliga rader med värden i fälten **ContactPersonID** och **InvoiceAccount**. Dessa fel beror på att **InvoiceAccount** är ett självrefererande fält och att **ContactPersonID** är en cirkelreferens i leverantörsmappningen.
+Du kan stöta på initiala synkroniseringsfel för mappning av **Kunder V3** till **Konton** om kolumner har befintliga rader med värden i fälten **ContactPersonID** och **InvoiceAccount**. Dessa fel beror på att **InvoiceAccount** är ett självrefererande kolumnen och att **ContactPersonID** är en cirkelreferens i leverantörsmappningen.
 
 Felmeddelandena som visas kommer att ha följande format.
 
@@ -156,26 +156,26 @@ Nedan följer några exempel:
 - *Det gick inte att matcha GUID för fältet: primarycontactid.msdyn\_contactpersonid. Det gick inte att hitta sökningen: 000056. Prova denna URL för att se om referensdata existerar: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Det gick inte att matcha GUID för fältet: msdyn\_billingaccount.accountnumber. Det gick inte att hitta sökningen: 1206-1. Prova denna URL för att se om referensdata existerar: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
 
-Om några rader i kundentiteten har värden i fälten **ContactPersonID** och **InvoiceAccount** ska du följa dessa steg för att slutföra den inledande synkroniseringen. Du kan använda den här metoden för alla tabeller utanför lådan, t.ex. **Konton** och **Kontakter**.
+Om några rader i kundtabellen har värden i kolumner **ContactPersonID** och **InvoiceAccount** ska du följa dessa steg för att slutföra den inledande synkroniseringen. Du kan använda den här metoden för alla tabeller utanför lådan, t.ex. **Konton** och **Kontakter**.
 
-1. I Finance and Operations-appen, ta bort fälten **ContactPersonID** och **InvoiceAccount** från **Kunder V3 (konton)**-mappningen och spara mappningen.
+1. I Finance and Operations-appen, ta bort kolumner **ContactPersonID** och **InvoiceAccount** från **Kunder V3 (konton)**-mappningen och spara mappningen.
 
     1. Navigera till sidan för mappning med dubbelriktad skrivning för **Kunder V3 (konton)** och välj fliken **Tabellmappningar** i vänster filter och välj **Finance and Operations app.Customers V3**. I höger filter, välj **Dataverse.Account**.
-    2. Sök efter **contactperson** för att hitta källfältet **ContactPersonID**.
+    2. Sök efter **contactperson** för att hitta källkolumnen **ContactPersonID**.
     3. Välj **åtgärder** och välj sedan **ta bort**.
 
-        ![Ta bort fältet ContactPersonID](media/cust_selfref3.png)
+        ![Ta bort kolumnen ContactPersonID](media/cust_selfref3.png)
 
-    4. Upprepa dessa steg om du vill ta bort fältet **InvoiceAccount**.
+    4. Upprepa dessa steg om du vill ta bort kolumnen **InvoiceAccount**.
 
-        ![Ta bort fältet InvoiceAccount](media/cust_selfref4.png)
+        ![Ta bort kolumnen InvoiceAccount](media/cust_selfref4.png)
 
     5. Spara dina ändringar i mappningen.
 
-2. Inaktivera ändringsspårningen för entiteten **Kunder V3**.
+2. Inaktivera ändringsspårningen för tabellen **Kunder V3**.
 
     1. I arbetsytan **Datahantering** väljer du panelen **Datatabeller**.
-    2. Välj entiteten **kunder V3**.
+    2. Välj tabellen **kunder V3**.
     3. I åtgärdsfönstret, välj **Alternativ** och välj sedan **Ändra spårning**.
 
         ![Välja alternativet Ändringsspårning](media/selfref_options.png)
@@ -190,7 +190,7 @@ Om några rader i kundentiteten har värden i fälten **ContactPersonID** och **
     > [!NOTE]
     > Det finns två mappningar med samma namn. Se till att kartan som har följande beskrivning flik **Detaljer**: **Mall för dubbelriktad skrivning för synkronisering mellan FO.CDS Vendor Contacts V2 to CDS.Contacts. Kräver nytt paket \[Dynamics365SupplyChainExtended\].**
 
-5. Lägg till fälten **InvoiceAccount** och **ContactPersonId** tillbaka till mappningen **Kunder V3 (konton)** och spara mappningen. Nu är både fältet **InvoiceAccount** och fältet **ContactPersonId** del i ett direkt synkroniseringsläge. I nästa steg slutför du den inledande synkroniseringen för dessa fält.
+5. Lägg till kolumner **InvoiceAccount** och **ContactPersonId** tillbaka till mappningen **Kunder V3 (konton)** och spara mappningen. Nu är både kolumnen **InvoiceAccount** och kolumnen **ContactPersonId** del i ett direkt synkroniseringsläge. I nästa steg slutför du den inledande synkroniseringen för dessa kolumner.
 6. Kör den första synkroniseringen igen för mappningen **Kunder V3 (konton)**. Eftersom ändringsspårning är inaktiverat kommer data för **InvoiceAccount** och **ContactPersonId** att synkroniseras från Finance and Operations-appen till Dataverse.
 7. Om du vill synkronisera data för **InvoiceAccount** och **ContactPersonId** från Dataverse till Finance and Operations-appen måste du använda ett dataintegreringsprojekt.
 
@@ -202,7 +202,7 @@ Om några rader i kundentiteten har värden i fälten **ContactPersonID** och **
 
     2. Lägg till företagskriterierna i filtret på Dataverse-sidan, eftersom endast de poster som matchar filtervillkoren kommer att uppdateras i Finance and Operations-appen. Klicka på filterknappen om du vill lägga till ett filter. Sedan i dialogrutan **Redigera fråga** kan du lägga till en filterfråga som **\_msdyn\_company\_value eq '\<guid\>'**. 
 
-        > [OBS] Om det inte finns någon filterknapp skapar du ett supportärende som ber dataintegrationsgruppen att aktivera filterfunktionen för din klientorganisation.
+        > [OBS] Om det inte finns någon filterknapp skapar du ett supportärende som ber dataintegrationsgruppen att aktivera filterkapaciteten för din klientorganisation.
 
         Om du inte anger någon filterfråga för **\_msdyn\_company\_value**, synkroniseras alla rader.
 
@@ -210,7 +210,4 @@ Om några rader i kundentiteten har värden i fälten **ContactPersonID** och **
 
     Den inledande synkroniseringen av raderna har nu slutförts.
 
-8. I Finance and Operations-appen, aktivera tillbaka ändringsspårning på entiteten **Kunder V3**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+8. I Finance and Operations-appen, aktivera tillbaka ändringsspårning på tabellen **Kunder V3**.

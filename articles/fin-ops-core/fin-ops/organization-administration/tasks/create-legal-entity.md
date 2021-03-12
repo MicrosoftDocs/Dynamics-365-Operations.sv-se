@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 54e3176ccf4bc3218afdf085f910e6d2a9c1b9ff
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 6dc74291977d999218ebc66f72ee5b01b12827ed
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694847"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796764"
 ---
 # <a name="create-a-legal-entity"></a>Skapa en juridisk person
 
@@ -45,6 +45,3 @@ En juridisk person är en organisation som identifieras genom registrering med e
 15. Expandera avsnittet **momsregistrering**. Ange registreringsnumren som används för att rapportera till skattemyndigheten i avsnittet **Momsregistrering**.
 16. Expandera avsnittet **Moms 1099**. Ange 1099-information för juridiska personen i avsnittet **Skatt 1099**.  
 17. Klicka på **Spara**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

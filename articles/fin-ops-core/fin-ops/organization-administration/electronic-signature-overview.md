@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df7f842477ddfb88662f37ae311215f08c6b0173
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 051bb023d3456dae0be30de3897b282c2d50c5af
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693194"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797638"
 ---
 # <a name="electronic-signatures-overview"></a>Elektroniska underskrifter – översikt
 
@@ -109,6 +109,3 @@ Följ dessa steg om du vill utse godkännare.
 1. Gå till sidan **Alternativ** och sedan till fliken **Konton** och klicka på **Utse godkännare**.
 2. Välj ID för den användare som ska signera för andra användarens ändringar i fältet **Godkänn användar-ID**.
 3. Välj ID för den användare vars ändringar måste signeras i fältet **Signera för användar-ID**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

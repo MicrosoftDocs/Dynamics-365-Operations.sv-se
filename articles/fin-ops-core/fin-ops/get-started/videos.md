@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 4c34c539428563e69013e60ed3d0403b648c96bc
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 56fdfc400b5bc3e640e7951985d54ffa870f96c9
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693579"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797885"
 ---
 # <a name="videos"></a>Videoklipp 
 
@@ -167,6 +167,3 @@ På [Microsoft Dynamics 365 YouTube kanal](https://www.youtube.com/channel/UCJGC
 [Tekniksnack om FastTrack](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) fokuserar på att tillhandahålla teknisk kunskap och metoder som ger kunder och partners utförlig kunskap som gäller för vissa ämnesområden.
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6356ec6850667f32f9e9e4133686c40f0b6d76d7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b01ef3da908739d17f2a03398ae56f35191e8db6
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688269"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744551"
 ---
 # <a name="general-troubleshooting"></a>Allmän felsökning
 
@@ -65,23 +65,23 @@ Så här aktiverar du spårningslogg.
 
 1. Logga in på den modelldrivna appen i Dynamics 365, öppna sidan **Inställningar** och under **System**, välj **Administration**.
 2. På sidan **Administration** väljer du **Systeminställningar**.
-3. På fliken **Anpassning** i fältet **Plugin-program and aktivitetsspåring för anpassat arbetsflöde**, välj **Alla** för att aktivera spårningsloggen för plugin-program. Om du bara vill logga spårningsloggar när undantag inträffar kan du istället välja **undantag**.
+3. På fliken **Anpassning** i kolumnen **Plugin-program and aktivitetsspåring för anpassat arbetsflöde**, välj **Alla** för att aktivera spårningsloggen för plugin-program. Om du bara vill logga spårningsloggar när undantag inträffar kan du istället välja **undantag**.
 
 
 Så här visar du spårningslogg.
 
 1. Logga in på den modelldrivna appen i Dynamics 365, öppna sidan **Inställningar** och under **Anpassning**, välj **Spårningslogg för plugin-program**.
-2. Sök efter spårningsloggarna där fältet **Typnamn** anges till **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
+2. Sök efter spårningsloggarna där kolumnen **Typnamn** anges till **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Dubbelklicka på ett objekt om du vill visa hela loggen och på snabbfliken **Körning**, granska texten **Meddelandeblock**.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivera felsökningsläget för att felsöka problem med direkt synkronisering i Finance and Operations-appar
 
 **Den roll som krävs för att visa felet:** systemadministratören Fel i dubbelriktad skrivning som har sitt ursprung i Dataverse kan visas i Finance and Operations-appen. I vissa fall är den fullständiga texten i felmeddelandet inte tillgänglig eftersom meddelandet är för långt eller innehåller personligt identifierande information (PII). Du kan aktivera detaljerad loggning för fel genom att följa stegen nedan.
 
-1. Alla projektkonfigurationer i Finance and Operations-appar har en **IsDebugMode**-egenskap i entiteten **DualWriteProjectConfiguration**. Öppna entiteten **DualWriteProjectConfiguration** genom att använda Excel-tillägget.
+1. Alla projektkonfigurationer i Finance and Operations-appar har en **IsDebugMode**-egenskap i kolumnen **DualWriteProjectConfiguration**. Öppna kolumnen **DualWriteProjectConfiguration** genom att använda Excel-tillägget.
 
     > [!TIP]
-    > Ett enkelt sätt att öppna entiteten är att aktivera **design**-läget i Excel-tillägget och sedan lägga till **DualWriteProjectConfigurationEntity** i kalkylbladet. För mer information, se [Öppna entitetsdata i Excel och uppdatera den med hjälp av Excel-tillägget](../../office-integration/use-excel-add-in.md).
+    > Ett enkelt sätt att öppna tabellen är att aktivera **design**-läget i Excel-tillägget och sedan lägga till **DualWriteProjectConfigurationEntity** i kalkylbladet. För mer information, se [Öppna tabelldata i Excel och uppdatera den med hjälp av Excel-tillägget](../../office-integration/use-excel-add-in.md).
 
 2. Ställ in egenskapen **IsDebugMode** på **ja** för projektet.
 3. Kör scenariot som genererar fel.
@@ -118,10 +118,7 @@ Nu kan du länka en ny miljö.
 När du skapar en försäljningsorder i Dynamics 365 Sales kan du om du klickar på **+ Lägg till produkter** omdirigeras till formuläret för orderrad i Dynamics 365 Project Operations. Från det formuläret finns det inget sätt att visa formuläret för försäljningsorderrad **Information**. Alternativet för **information** visas inte i listrutan under **Ny orderrad**. Detta inträffar eftersom projektåtgärder har installerats i din miljö.
 
 Så här aktiverar du alternativet för formuläret **informations** igen:
-1. Navigera till entiteten **orderrad**.
+1. Navigera till tabellen **orderrad**.
 2. Hitta formuläret **Information** under formulärnoden. 
 3. Markera formuläret **Information** och klicka på **aktivera säkerhetsroller**. 
 4. Ändra säkerhetsinställningarna till **Visa för alla**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

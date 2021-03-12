@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4fe97ca8e1eecdc064ad4d21d5acdeade9f33d9c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 3721416ce720167a6f78e26583de84af9c8d086b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694505"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798437"
 ---
 # <a name="create-alert-rules"></a>Skapa notifieringsregler
 
@@ -40,7 +40,7 @@ Batchjobben för notifieringar om dataändring och förfallodatum måste köras 
 
 Den händelse som utlöser en notifieringsregel kan vara ett datum som anländer eller en viss händelse som inträffar. Utlösare för händelser definieras på snabbfliken **Notifiera när** i dialogrutan **Skapa notifieringsregel**. Händelser som är fördefinierade för ett visst fält beror på vilken utlösare som har valts.
 
-Om du t.ex. ställer in en notifieringsregel för fältet **Startdatum** är händelser för förfallodatum lämpliga. Därför är händelsetypen **förfaller i** tillgänglig för det fältet. Men för ett fält som t.ex. **Kostnadsställe**, är en händelse för förfallodatum inte lämplig. Därför är händelsetypen **förfaller i** inte tillgänglig. I stället är händelsetypen **har ändrats** tillgänglig.
+Om du t.ex. ställer in en notifieringsregel för fältet **Startdatum** är händelser för förfallodatum lämpliga. Därför är händelsetypen `is due in` tillgänglig för det fältet. Men för ett fält som t.ex. **Kostnadsställe**, är en händelse för förfallodatum inte lämplig. Därför är händelsetypen `is due in` inte tillgänglig. I stället är händelsetypen `has changed` tillgänglig.
 
 ## <a name="event-types"></a>Händelsetyper
 
@@ -77,7 +77,7 @@ På snabbfliken **Notifiera mig** i dialogrutan **Skapa notifieringsregel** kan 
 
 ## <a name="alerts-as-business-events"></a>Notifierar som affärshändelser
 
-Notifieringar kan skickas externt med hjälp av ramverket för affärshändelse. När du skapar en notifiering ställer du in **Organisationsomfattande** till **Nej** och anger **Skicka externt** till **Ja**. När notifieringen utlöser affärshändelsen kan du utlösa ett flöde som skapats i Power Automate med hjälp av **När en affärshändelse händer** utlöses på Finance and Operations kopplingen eller uttryckligen skicka händelsen till en slutpunkt för affärs händelser via **Katalogen affärshändelser**.
+Du kan skicka notifieringar externt med hjälp av ramverket för affärshändelse. När du skapar en notifiering ställer du in **Organisationsomfattande** till **Nej** och anger **Skicka externt** till **Ja**. När notifieringen utlöser affärshändelsen kan du utlösa ett flöde som skapats i Power Automate med hjälp av **När en affärshändelse händer** utlöses på Finance and Operations kopplingen eller uttryckligen skicka händelsen till en slutpunkt för affärs händelser via **Katalogen affärshändelser**.
 
 ## <a name="create-an-alert-rule"></a>Skapa en notifieringsregel.
 
@@ -86,22 +86,19 @@ Notifieringar kan skickas externt med hjälp av ramverket för affärshändelse.
 2. I åtgärdsfönstret, på fliken **Alternativ** i gruppen **Andel** markerar du **Skapa notifieringsregel**.
 3. I dialogrtuan **Skapa notifieringsregel** i fältet **Fält** markerar du fältet som du vill övervaka.
 4. I fältet **Händelse** väljer du typ av fält.
-5. På snabbfliken **Notifiera för** väljer du önskat alternativ. Om du vill skicka notifieringen som en affärshändelse kontrollerar du **Organisationsomfattande** är inställt på **Nej**.
+5. På snabbfliken **Notifiera för** väljer du önskat alternativ. Om du vill skicka notifieringen som en affärshändelse anger du värdet **Organisationsomfattande** till **Nej**.
 6. Om du vill att notifieringsregeln ska inaktiveras på ett visst datum väljer du ett slutdatum på snabbfliken **Notifiera tills**.
-7. På snabbfliken **Notifiera med** på fältet **Ämne**, acceptera standardämnet för e-postmeddelandet eller ange ett nytt ämne. Texten som används som ämne för e-postmeddelandet som du får när en notifiering initieras. Om du vill skicka notifieringen som en affärshändelse ställer du in **skicka externt** till **Ja**.
-8. Skriv ett valfritt meddelande i fältet **Meddelande**. Den text används som meddelandet som du får när en notifiering utlöses.
+7. På snabbfliken **Notifiera med** på fältet **Ämne**, acceptera standardämnet för e-postmeddelandet eller ange ett nytt ämne. Texten blir ämne för e-postmeddelandet som du får när en notifiering initieras. Om du vill skicka notifieringen som en affärshändelse ställer du in **skicka externt** till **Ja**.
+8. Skriv ett valfritt meddelande i fältet **Meddelande**. Den text blir meddelandet som du får när en notifiering utlöses.
 9. Välj **OK** om du vill spara inställningarna och skapa notifieringsregeln.
 
 ## <a name="limitations-and-workarounds"></a>Begränsningar och lösningar
 
 ### <a name="workaround-for-creating-alerts-for-the-secondary-data-sources-of-a-form"></a>Lösning för att skapa varningar för sekundära datakällor i ett formulär
-Det går inte att skapa notifieringar för vissa sekundära datakällor i formulär. När du till exempel skapar notifieringar i formuläret kund eller leverantör bokföringsprofil, är endast fälten i huvudet (CustLedger eller VendLedger) tillgängliga och inte dimensionskontona. Lösningen för den här begränsningen är att använda **SysTableBrowser** för att öppna registret som primär datakälla. 
+Du kan inte ta bort notifieringar för vissa sekundära datakällor i formulär. När du till exempel skapar notifieringar i formuläret kund eller leverantör bokföringsprofil, är endast fälten i huvudet (CustLedger eller VendLedger) tillgängliga och inte dimensionskontona. Lösningen för den här begränsningen är att använda **SysTableBrowser** för att öppna registret som primär datakälla. 
 1. Öppna registret formuläret **SysTableBrowser**.
     ```
         https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>
     ```
 2. Skapa en notifiering från formuläret SysTableBrowser.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

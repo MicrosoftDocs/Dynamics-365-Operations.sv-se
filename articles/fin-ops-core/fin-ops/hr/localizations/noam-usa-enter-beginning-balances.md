@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4411a6b72dbb7e6f5b1a72df8dbcbd54e265164c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 8443bc5c63a90d80757ab4b7507502497c2aaa69
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693412"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797794"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Ange initiala lönesaldon
 
@@ -166,6 +166,3 @@ Det går att återföra och omregistrera transaktioner. Om du vill återföra tr
 2. Klicka på **Ja** när meddelandet ”När du återför detta löneutdrag kommer ett utdrag om löneåterförande att skapas för att kompensera detta löneutdrag. Ingetdera löneutdrag kan redigeras. Vill du återföra detta löneudrag?" visningar. 
 
 När du återför löneutdraget kan du generera ett nytt löneutdrag för arbetaren från inkomstutdrag som du skapade tidigare. Kom ihåg att korrigera felaktiga rader på inkomstutdraget innan du skapar nya löneutdrag och generera sedan nya löneutdrag med korrekt belopp. 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

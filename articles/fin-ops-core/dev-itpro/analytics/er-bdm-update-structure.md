@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fd279b28c43e22bec6bf814845fe97828bc96d81
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cb0188e372b5f6275472cf040d10bb796eed1858
+ms.sourcegitcommit: 95d2fc0fa7d17d3a96f7969f12c985b018b4ff94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681338"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "4728099"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Uppdatera strukturen för en affärsdokumentmall 
 
@@ -56,7 +56,7 @@ Slutför följande procedurer i [Översikt över hantering av affärsdokument](e
 5. Skapa en ny mall genom att välja **OK**.
 
     > [!NOTE]
-    > Om du inte redan har loggat in på Office Online [dirigeras du om till Office 365-inloggningssidan](er-business-document-management.md#i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page). Om du vill återgå till Finance-miljön väljer du knappen **Tillbaka** i webbläsaren.
+    > Om du inte redan har loggat in på Office Online [dirigeras du om till Office 365-inloggningssidan](er-business-document-management.md#frequently-asked-questions). Om du vill återgå till Finance-miljön väljer du knappen **Tillbaka** i webbläsaren.
 
     Den nya mallen öppnas för redigering i den inbäddade kontrollen i Excel Online på sidan för att redigera mall.
 
@@ -106,6 +106,3 @@ Slutför följande procedurer i [Översikt över hantering av affärsdokument](e
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Hantering av affärsdokument – översikt](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -14,26 +14,26 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4e34685731a09131d2ab49a0e04479c9c20f4da8
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: d57586cb18c581e4a462d93a64a88310e251a7af
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693808"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798608"
 ---
 # <a name="batch-processing-of-alerts"></a>Batchbearbetning av notifieringar
 
 [!include [banner](../includes/banner.md)]
 
-Notifieringar bearbetas med funktionen för batchbearbetning. Du måste ställa in batchbearbetning innan notifieringar ska kunna skickas.
+Notifieringar bearbetas med funktionen för batchbearbetning. Du måste ställa in batchbearbetning innan processen och sända notifieringar.
 
-Det går att använda två typer av händelser:
+Batchbearbetningsfunktionen stöder två typer av händelser:
 
 - Händelser som utlöses av ändringsbaserade händelser. Dessa händelser kallas för skapa/ta bort- och uppdateringshändelser.
 - Händelser som utlöses av förfallodatum.
 
 Du kan ställa in batchprocesser för varje typ av händelser.
-        
+
 ## <a name="batch-processing-for-change-based-events"></a>Batchbearbetning för ändringsbaserade händelser
 
 Systemet läser alla ändringsbaserade händelser som har inträffat sedan batchbearbetningen senast kördes. Ändringsbaserade händelser innefattar uppdateringar av fält, borttagning av poster och skapande av poster. Händelserna jämförs med de villkor som har ställts in i notifieringsreglerna. Batchprocessen skapar en notifiering när en händelse matchar regelvillkoren.
@@ -44,13 +44,13 @@ För ändringsbaserade händelser kan du ställa in ett batchjobb som utlöser b
 
 Å andra sidan kan ett batchjobb som återkommer oftare, och som är tidsplanerat för tider när systembelastningen är låg, bidra till att förbättra systemets prestanda. En låg frekvens för batchbearbetning kanske inte uppfyller användarnas behov av snabba notifieringar.
 
-När du ställer in frekvensen för av batchbearbetning för ändringsbaserade händelser bör du se till att det finns en balans mellan tidslinjerna för notifieringarna och hela systemets prestanda. Dessa överväganden blir mer relevanta allt eftersom antalet användare som skapar varningsregler ökar. Frekvensen påverkar inte antalet händelser som måste bearbetas. Men om fler användare skapar regler, måste fler kontroller utföras. Den här typen av datautbyte kan påverka systemets prestanda.
+När du ställer in frekvensen för av batchbearbetning för ändringsbaserade händelser bör du se till att det finns en balans mellan tidslinjerna för notifieringarna och hela systemets prestanda. Dessa överväganden blir mer relevanta allt eftersom antalet användare som skapar varningsregler ökar. Frekvensen påverkar inte antalet händelser som systemet bearbetar. Men om fler användare skapar regler, kör processen fler kontroller. Den här typen av datautbyte kan påverka systemets prestanda.
 
 #### <a name="the-risks-of-low-batch-frequency"></a>Riskerna med låg batchfrekvens
 
-Om du ställer in en låg frekvens för batchbearbetning för ändringsbaserade händelser kan data som är relevanta för villkoren i notifieringsreglerna ändras innan batchen behandlas. Därför kanske du förlorar notifieringar.
+Om du ställer in en låg frekvens för batchbearbetning för ändringsbaserade händelser kan data som är relevanta för villkoren i notifieringsreglerna ändras innan bearbetning. Därför kanske du förlorar notifieringar.
 
-En notifieringsregel ställs till exempel in på att utlösa en notifiering när händelsen **kundkontakten ändras** och villkoret är **kund = BB**. Med andra ord, om kundkontakten för kund BB ändras kommer händelsen att loggas. Emellertid ställs batchbearbetningssystemet in så att batchbearbetning uppstår mer sällan än datainmatning. Om kundens namn ändras från **BB** till **AA** innan händelsen bearbetas kommer data i databasen inte längre att matcha data i regeln **kund = BB**. Därför när händelsen slutligen bearbetas skapas ingen notifiering.
+Om du till exempel skapar en notifiering som ska utlösas när händelsen **kundkontakten ändras** och villkoret är **kund = BB**. Med andra ord, om kundkontakten för kund BB ändras kommer processen att logga händelsen. Emellertid ställs batchbearbetningssystemet in så att batchbearbetning uppstår mer sällan än datainmatning. Om kundens namn ändras från **BB** till **AA** innan händelsen bearbetas kommer data i databasen inte längre att matcha data i regeln **kund = BB**. Därför när händelsen slutligen bearbetas skapas ingen notifiering.
 
 ### <a name="set-up-processing-for-change-based-alerts"></a>Ställa in bearbetning för ändringsbaserade notifieringar
 
@@ -76,12 +76,9 @@ Bearbetningen av notifieringsregler i ett företag kan stoppas av flera skäl. D
 
 Om du vill förhindra att notifieringar med förfallodatum blir föråldrade på grund av att batchjobbet inte har körts i flera dagar kan du ställa in ett batchbearbetningsfönster. Ett batchbearbetningsfönster kan användas för att förhindra att ett batchjobb körs under ett visst antal dagar.
 
-Om du ställer in ett batchbearbetningsfönstret skickas en notifiering när notifieringsregeln bearbetas även om notifieringen överskrider tidsgränsen som definierats i kriteriet för förfallodatumet. En notifiering fortsätter att skickas så länge den inte överskrider den period som definieras av denna tidsgräns plus batchbearbetningsfönstret. En notifiering skickas emellertid inte längre när perioden som definieras av tidsgränsen plus batchbearbetningsfönstret överskrids.
+Om du ställer in ett batchbearbetningsfönstret skickas en notifiering när notifieringsregeln bearbetas även om notifieringen överskrider tidsgränsen som definierats i kriteriet för förfallodatumet. En notifiering fortsätter att skickas så länge den inte överskrider den period som definieras av denna tidsgräns plus batchbearbetningsfönstret. En notifiering skickas emellertid inte längre när periodens värde som definieras av tidsgränsen plus batchbearbetningsfönstret överskrids.
 
 ### <a name="set-up-processing-for-due-date-alerts"></a>Ställa in bearbetning för notifieringar för förfallodatum
 
 1. Gå till **Systemadministration**&gt;**Periodiska uppgifter**&gt;**Notifieringar**&gt;**Notifieringar om förfallodatum**.
 2. I dialogrutan **Notifieringar om förfallodatum**, ange lämplig information.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

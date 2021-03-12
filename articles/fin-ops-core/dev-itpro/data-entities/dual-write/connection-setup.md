@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 47c07dd0e2f311b61297340a48a5a31cb1de3903
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 78a7cdc18476a1c523c83c92ca6f354c3ba806dc
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685675"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744863"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Riktlinjer för att ställa in dubbelriktad skrivning
 
@@ -36,7 +36,7 @@ ms.locfileid: "4685675"
 Du kan skapa en dubbelriktad anslutning mellan en Finance and Operations-miljö och en Dataverse-miljö.
 
 + En **Finance and Operations-miljö** tillhandahåller den underliggande plattformen för **Finance and Operations-appar** (till exempel Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce och Dynamics 365 Human Resources).
-+ En **Dataverse-miljö** tillhandahåller den underliggande plattformen för **kundengagemangsappar i Dynamics 365** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing och Dynamics 365 Project Service Automation).
++ En **Dataverse-miljö** tillhandahåller den underliggande plattformen för **kundengagemangsappar** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing och Dynamics 365 Project Service Automation).
 
 > [!IMPORTANT]
 > Personalmodulen i Dynamics 365 Finance har stöd för anslutningar för dubbelriktad skrivning men inte Dynamics 365 Human Resources-appen.
@@ -138,6 +138,3 @@ Länkar till ett exempel och en alternativ metod finns i avsnittet [Exempel](#ex
 Ett exempel finns i [Aktivera Customers V3 – kontakter tabellmappning](enable-entity-map.md#enable-table-map)
 
 Om du vill ha en alternativ metod baserad på datavolymer i varje enhet som måste köra en inledande synkronisering, se [Att tänka på vid första synkroniseringen](initial-sync-guidance.md).
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
