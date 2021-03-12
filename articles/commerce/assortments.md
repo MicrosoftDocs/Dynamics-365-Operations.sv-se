@@ -10,17 +10,16 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 981d1c604a7ed461f207e78c8c7f073aff03be9e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415758"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980008"
 ---
 # <a name="assortment-management"></a>Sortimenthantering
 
@@ -30,7 +29,7 @@ ms.locfileid: "4415758"
 
 Dynamics 365 Commerce ger *sortiment* som gör att du kan hantera produkttillgänglighet genom olika kanaler. Sortiment avgör vilka produkter som är tillgängliga i vissa butiker och under en viss period.
 
-I Handel är ett sortiment en katalog med en eller flera kanaler (eller grupper av kanaler när organisationshierarkier används) till en eller flera produkter (eller grupper av produkter när kategorihierarkier används).
+I Commerce är ett sortiment en katalog med en eller flera kanaler (eller grupper av kanaler när organisationshierarkier används) till en eller flera produkter (eller grupper av produkter när kategorihierarkier används).
 
 Den övergripande produktblandningen för en kanal bestäms av det publicerade sortiment som är tilldelat till kanalen. Därför kan du konfigurera flera aktiva sortiment per kanal.
 
@@ -85,7 +84,7 @@ Du kan ”stoppa” frisläppta produkter för försäljningsprocessen genom att
 
 ### <a name="blocked-products"></a>Spärrade produkter
 
-Förutom att stoppa försäljningen av en produkt kan du tillfälligt blockera försäljningen av en produkt. Du kan konfigurera den här inställningen på fliken **Handel** för frisläppt produkt. Spärrade produkter väljs fortfarande ut, men du får ett meddelande i kassan om att produkten inte kan säljas.
+Förutom att stoppa försäljningen av en produkt kan du tillfälligt blockera försäljningen av en produkt. Du kan konfigurera den här inställningen på fliken **Commerce** för frisläppt produkt. Spärrade produkter väljs fortfarande ut, men du får ett meddelande i POS om att produkten inte kan säljas.
 
 ### <a name="date-effectivity"></a>Gäller från
 
@@ -93,7 +92,7 @@ Sortiment gäller utifrån datum. Återförsäljare kan därför konfigurera nä
 
 ### <a name="process-assortments-batch-job"></a>Bearbeta batchjobb för sortiment.
 
-Sortiment som har definierats i Handel måste bearbetas innan de träder i kraft. Denna bearbetning är viktig av följande skäl:
+Sortiment som har definierats i Commerce måste bearbetas innan de träder i kraft. Denna bearbetning är viktig av följande skäl:
 
 - Definitioner av sortimentet måste vara avnormaliserade så att kanaler lättare kan förbruka dem.. Du kan definiera en produktkombination för en kanal via flera sortiment som sträcker sig över olika datumintervall. När en del av informationen beräknas förväg på servern kommer prestanda i kanalen att förbättras.
 - Produkter och kanaler i sortimentet kan ändras utanför själva sortimentet. Dynamiska sortiment med referenser till kategorier eller organisationsenheter måste bearbetas med jämna mellanrum så att de inkluderar eller exkluderar poster utifrån sina aktuella tilldelningar.
@@ -106,7 +105,4 @@ Sortiment som har definierats i Handel måste bearbetas innan de träder i kraft
 - **Giltighetsdatum/utgående sortiment** – en av de mest effektiva verktygen för hantering av antalet produkter i kanal- och offline-databaser är sortimentens giltighetsdatum. Om du lämnar öppet (ej utgående) sortiment för säsongsvariationer eller produkter som är i slutet av livscykeln kommer dessa databaser att växa på obestämd tid. Du kan använda olika metoder för att hjälpa hantera denna situation. Du kan till exempel ha separata sortiment för säsongsprodukter och produkter som alltid är tillgängliga.
 - **Försäljning och returer utanför sortiment** – denna kunskap hjälper återförsäljare att effektivt hantera sina sortiment genom att låta dem begränsa antalet produkter till produkter som tillhör butikens grundläggande produktkombination. Den här funktionen hjälper dig också återförsäljare att hantera situationer där en produkt utelämnades av misstag från ett sortiment och om en produkt har returnerats utanför giltighetsdatumen för sortimentet.
 
-Om produktdata inte finns i kanaldatabasen ringer kassan huvudkontoret i realtid för att hämta den information som krävs så att produkten kan säljas, returneras eller sättas på en kundorder. Produktinformation som hämtas på det här sättet finns endast under tillämpningsområdet för den aktuella transaktionen. Produkten läggs inte till i sortimentdefinitionen. Därför görs följande samtal i realtid om det behövs.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Om produktdata inte finns i kanaldatabasen ringer POS huvudkontoret i realtid för att hämta den information som krävs så att produkten kan säljas, returneras eller sättas på en kundorder. Produktinformation som hämtas på det här sättet finns endast under tillämpningsområdet för den aktuella transaktionen. Produkten läggs inte till i sortimentdefinitionen. Därför görs följande samtal i realtid om det behövs.

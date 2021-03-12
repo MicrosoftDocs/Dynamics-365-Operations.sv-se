@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c8d72f3a613deef80685955c21708e32a770539a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415771"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980342"
 ---
 # <a name="add-languages-to-your-site"></a>Lägg till språk på din webbplats
 
@@ -33,7 +32,7 @@ I det här avsnittet beskrivs hur du lägger till stöd för ytterligare språk 
 
 ## <a name="overview"></a>Översikt
 
-Du kan lokalisera webbplatsen till valfritt språk som Handel stöder. (Listan över språk som stöds visas senare i det här avsnittet.) Om du vill lägga till ett språk på webbplatsen måste du först lägga till det i en onlinebutik som är bunden till din webbplats.
+Du kan lokalisera webbplatsen till valfritt språk som Commerce stöder. (Listan över språk som stöds visas senare i det här avsnittet.) Om du vill lägga till ett språk på webbplatsen måste du först lägga till det i en onlinebutik som är bunden till din webbplats.
 
 ## <a name="add-a-language-to-an-online-store"></a>Lägg till ett språk i onlinebutiken
 
@@ -176,6 +175,3 @@ Det språk som du har lagt till kommer nu att vara tillgängligt så att du kan 
 [Lägg till copyrightmeddelande](add-copyright-notice.md)
 
 [Lägga till skriptkod på webbsidor för att stödja telemetri](add-telemetry.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

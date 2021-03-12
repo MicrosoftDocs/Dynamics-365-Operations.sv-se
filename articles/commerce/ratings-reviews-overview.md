@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1248ce660d765ddade1df7d79786202235019990
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ed31982dad8af4509d8dd0615ae53e3d3806640f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415934"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979788"
 ---
 # <a name="ratings-and-reviews-overview"></a>Översikt över omdömen och recensioner
 
@@ -34,7 +33,7 @@ I det här avsnittet beskrivs omdömen och recensioner i Microsoft Dynamics 365 
 
 ## <a name="overview"></a>Översikt
 
-Omdömen och recensioner är avgörande för näthandelskunder som vill veta hur andra kunder uppfattar en produkt. De kan också hjälpa konsumenter att fatta köpbeslut. I Dynamics 365 Commerce kan återförsäljare med hjälp av omdömen och recensioner samla in produktrecensioner och omdömen från kunderna. Återförsäljare kan sedan visa genomsnittsomdömen och granska information på deras näthandelsplatser.
+Omdömen och recensioner är avgörande för näthandelskunder som vill veta hur andra kunder uppfattar en produkt. De kan också hjälpa konsumenter att fatta köpbeslut. I Dynamics 365 Commerce kan återförsäljare med hjälp av omdömen och recensioner samla in produktrecensioner och omdömen från kunderna. Återförsäljare kan sedan visa genomsnittsomdömen och granska information på deras näthandelssajter.
 
 Den genomsnittliga bedömningsinformationen visas i kassa och kundtjänstkanaler. Därför kan säljare använda det för att hjälpa användarna att fatta beslut. Omdömen och recensioner kan också fungera som en feedbackmetod som kan användas för att förbättra kvaliteten på en produkt och därmed öka försäljningen.
 
@@ -59,6 +58,3 @@ Lösningen för omdömen och recensioner innehåller också en Business Intellig
 [Konfigurera omdömen och recensioner](configure-ratings-reviews.md)
 
 [Synkronisera produktklassificeringar i Dynamics 365 Commerce](sync-product-ratings.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

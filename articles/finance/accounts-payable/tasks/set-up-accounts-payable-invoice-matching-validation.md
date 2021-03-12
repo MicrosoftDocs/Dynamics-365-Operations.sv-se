@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a101edd9e25fba1aa2325cb2193c6ea56282c9d1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 662b080a0e87ae6ce7d89ffa848579517dd9b6a8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447949"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979248"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Ställ in validering av Fakturamatchning för leverantörsreskontra
 
@@ -35,7 +34,7 @@ Fyra olika typer av matchningsvalideringar är tillgängliga.
 - **Radnivåmatchning** – den vanligaste typen av matchning är radmatchning. Radnivåmatchning kan vara tvåvägs- och trevägsradsmatchningspolicy. Standardinställda ranivåmatchningen kan anges för en juridisk person på sidan **parameter för leverantörsreskontra**. Tvåvägsmatchning jämför enhetspriset på fakturan med enhetspriset på inköpsordern. Vid trevägsmatchning jämförs fakturakvantitet också med den matchade kvantiteten för produktinleverans.
 - **Matchning av fakturasummor** – Matcha de totala beloppen på fakturan med de totala beloppen på inköpsordern. Den här typen av fakturamatchning inkluderar minst mängd information, så du kan använda det här alternativet för att ställa in kontroller som minimerar personaltiden som behövs för att granska information om fakturamatchning. Sex summor jämförs, inklusive delsumma, total rabatt, avgifter, moms, avrundning och fakturabelopp. Systemet validerar om något av dessa värden på fakturan avviker från förväntade belopp med mer än en acceptabel avvikelse.
 - **Avgiftsmatchning** – Matcha avgiftsinformation (belopp) på fakturan med avgiftsinformation (belopp) på inköpsordern.
-- **Prissummor för radartikelmatchning** – den här typen av matchning är användbar för företag som vanligtvis tar emot flera fakturor för en enda inköpsorderrad. Om du normalt bara tar emot en faktura per inköpsorderrad är den här typen av matchning inte nödvändig. Denna matchning kräver att tvåvägs eller tredimensionell matchning är aktiverad och fungerar som en nettobeloppsvalidering som inte får överskridas baserat på toleransprocent och toleransbelopp.  Denna typ av matchning jämför prisinformation för nettobeloppet för varje rad på fakturan, och alla väntande och tidigare bokförda fakturarader, med nettobeloppet för den motsvarande inköpsorderraden. Nettobeloppet beräknas med följande formel: (Enhetspris * Radkvantitet) + Radavgifter - Radrabatter När du matchar prissummor efter procent jämför systemet värden i transaktionsvalutan. När du matchar prissummor efter belopp jämför systemet värden med redovisningsvalutan.
+- **Prissummor för radartikelmatchning** – den här typen av matchning är användbar för företag som vanligtvis tar emot flera fakturor för en enda inköpsorderrad. Om du normalt bara tar emot en faktura per inköpsorderrad är den här typen av matchning inte nödvändig. Denna matchning kräver att tvåvägs eller tredimensionell matchning är aktiverad och fungerar som en nettobeloppsvalidering som inte får överskridas baserat på toleransprocent och toleransbelopp.  Denna typ av matchning jämför prisinformation för nettobeloppet för varje rad på fakturan, och alla väntande och tidigare bokförda fakturarader, med nettobeloppet för den motsvarande inköpsorderraden. Nettobeloppet beräknas med följande formel: (Enhetspris * Radkvantitet) + Radavgifter – Radrabatter När du matchar prissummor efter procent jämför systemet värden i transaktionsvalutan. När du matchar prissummor efter belopp jämför systemet värden med redovisningsvalutan.
 
 ## <a name="set-up-parameters-to-enable-invoice-matching-validation"></a>Konfigurera parametrar för validering av fakturamatchning
 1. Gå till **Leverantörsreskontra > Inställningar > Parametrar för leverantörsreskontra.**
@@ -98,6 +97,3 @@ Gå till **Leverantörsreskontra > Inställningar > Fakturamatchningsinställnin
 
 1. För att ange toleranserna för enskilda leverantörer som åsidosätter standardtoleransen, välj ett **Leverantörskonto**.
 2. Ange avvikelseprocent som du accepterar för den här leverantör.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

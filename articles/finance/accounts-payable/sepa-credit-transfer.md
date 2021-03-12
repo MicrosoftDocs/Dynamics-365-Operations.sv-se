@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0fc01508bd206f750a4101521cd9dff7b647656
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bddfc706f85192f112f08e172934c7ff66faf35d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447957"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979498"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Översikt över SEPA-kreditöverföring
 
@@ -32,7 +31,7 @@ ms.locfileid: "4447957"
 Artikeln innehåller allmän information om ISO 20022 kreditöverföringar, som inkluderar SEPA-kreditöverföringar ( Single Euro Payments Area) och andra elektroniska betalningar för leverantörer. En SEPA-kreditöverföring är specifik typ av betalning i euro från ett företag eller en person till ett annat företag eller annan person. Ämnet beskriver även hur du ställer in och överför en fil för betalning med kreditöverföring.
 
 ## <a name="what-is-a-credit-transfer-message"></a>Vad är ett kreditöverföringsmeddelande?
-Kreditöverföringsmeddelandet är en förfrågan som en initierande part (ditt företag) skickar för att flytta medel från eget konto till en fordringshavare. Det finns många lands-/regionspecifika och bankspecifika implementeringar av betalningsmeddelanden. Några av dem används inom ett land/en region och vissa blir standarder. En väl etablerad global standard är ISO 20022 och dess initieringsmeddelandet som t.ex. kreditöverföring. Följande bild visar relationerna och täckning för valda kreditöverföringsmeddelanden. 
+Kreditöverföringsmeddelandet är en begäran som en initierande part (ditt företag) skickar för att flytta medel från eget konto till en fordringshavare. Det finns många lands-/regionspecifika och bankspecifika implementeringar av betalningsmeddelanden. Några av dem används inom ett land/en region och vissa blir standarder. En väl etablerad global standard är ISO 20022 och dess initieringsmeddelandet som t.ex. kreditöverföring. Följande bild visar relationerna och täckning för valda kreditöverföringsmeddelanden. 
 ![Kreditöverföring](./media/credit-transfer.jpg) Kreditöverföringsmeddelanden 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Vad är ISO 20022 och SEPA-betalningar?
@@ -58,11 +57,11 @@ Du bör alltid gå till det delade resursbiblioteket i Microsoft Dynamics Lifecy
 
 ## <a name="what-do-i-have-to-set-up"></a>Vad måste jag ställa in?
 -   Innan du skapar kreditöverföringsfiler måste minst en aktiv konfiguration för kreditöverföring importeras till dina ER-konfigurationer. Instruktioner finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
--   När du konfigurerar betalningsmetoder för leverantörsreskontra markerar du kryssrutan **Generisk elektronisk rapportering** och väljer lämpligt format (för kreditöverföring (t.ex.) **ISO 20022 kreditöverföring (AT)**) som en exportformatkonfiguration.
+-   När du konfigurerar betalsätt för leverantörsreskontra markerar du kryssrutan **Generisk elektronisk rapportering** och väljer lämpligt format (för kreditöverföring (t.ex.) **ISO 20022 kreditöverföring (AT)**) som en exportformatkonfiguration.
 -   Du måste även ange information om den juridiska personen och om bankkontot.
 -   Bankkontonummer, IBAN och ibland SWIFT-koder (BIC) eller andra ID krävs för att skapa giltiga kreditöverföringsbetalningar. Därför måste du ställa in dem för leverantörsbankkonto och bankkontot för organisationen som begär överföringen.
 -   Ytterligare information kan krävas, t.ex momsnummer (VAT) för parter som anges i kreditöverföringsmeddelandet. Denna information måste ställas in för leverantörer och för den juridiska personen när det krävs.
--   Vissa betalningsmetoder för leverantörsreskontra, oftast 20022 ISO-baserade betalningsmetoder, kanske kräver ytterligare inställningar för **Uppsättningar av betalningsformatkoder**, som t.ex. **Servicetyp** = **SLEV**. Dessa koder kan användas som ytterligare märkning för betalningstransaktioner under betalningsbearbetning. Standardvärden för betalningskoder, som t.ex. **Kategorisyfte**, **Avgiftspliktig person**, **Lokalt instrument** och **Servicenivå** kan ställas in på två olika platser. Den första platsen är **Leverantörsbetalningsjournal för leverantörsreskontra** och den andra är **Betalningsmetoder för leverantörsreskontra**. När den rader i betalningsjournalen skapas kommer de betalningkodvärden som anges i leverantörsbetalningsjournalen att överföras till en journalrad, om de inte anges används värdena från betalningsmetoder.
+-   Vissa betalsätt för leverantörsreskontra, oftast 20022 ISO-baserade betalsätt, kanske kräver ytterligare inställningar för **Uppsättningar av betalningsformatkoder**, som t.ex. **Servicetyp** = **SLEV**. Dessa koder kan användas som ytterligare märkning för betalningstransaktioner under betalningsbearbetning. Standardvärden för betalningskoder, som t.ex. **Kategorisyfte**, **Avgiftspliktig person**, **Lokalt instrument** och **Servicenivå** kan ställas in på två olika platser. Den första platsen är **Leverantörsbetalningsjournal för leverantörsreskontra** och den andra är **Betalsätt för leverantörsreskontra**. När den rader i betalningsjournalen skapas kommer de betalningkodvärden som anges i leverantörsbetalningsjournalen att överföras till en journalrad, om de inte anges används värdena från betalsätt.
 
 ## <a name="what-parameters-are-available-for-generating-credit-transfer-payments"></a>Vilka parametrar är tillgängliga för att generera betalning med kreditöverföring?
 En lista över specifika parametrar beror på kreditöverföringsformatet. Följande tabell visar de parametrar som du kan använda när du skapar en fil för betalning med ISO 20022-kreditöverföring för Tyskland i en leverantörsbetalningsjournal. Genom att använda alternativen på fliken **Kör i bakgrunden** kan du köra betalningsgenereringar i buntläge.
@@ -126,6 +125,3 @@ När du genererar betalningar genereras betalningsfilen och du ombeds att spara 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

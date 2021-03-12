@@ -1,6 +1,6 @@
 ---
 title: Projektfakturering
-description: Det här ämnet ger en översikt över projektfakturering för Tids - och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
+description: Det här ämnet ger en översikt över projektfakturering för Tids – och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
 author: TaylorVH
 manager: AnnBe
 ms.date: 07/10/2020
@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ba2f9d69295f9f5cfb4a2a791be781de32b50f46
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5a6a29b180564dc4e4dd768b9e4b97c8877ce00c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447960"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979598"
 ---
 # <a name="project-invoicing"></a>Projektfakturering
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet ger en översikt över projektfakturering för Tids - och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
+Det här ämnet ger en översikt över projektfakturering för Tids – och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
 
 Projekttypen bestämmer vilken faktureringsprocedur som ska användas. Endast de två externa projekttyperna, Tid och material och Fastpris, går att fakturera. Tids- och materialprojekt och fastprisprojekt är alltid kopplade till ett projektkontrakt.
 
@@ -75,7 +74,7 @@ Om din organisation kräver att fakturaförslag granskas innan de bokförs, kan 
 
 ### <a name="view-grant-information-on-project-invoice-list-pages"></a>Visa anslagsinformation på listsidor för projektfakturor
 
-Användare i offentlig sektor kan lägga till **anslags-ID** och **anslagsnamn** på **listsidorna för projektfakturaförslag** och **projektfakturor**. Dessa kolumner aktive ras med funktionen **Lägg till anslagsinformation till listsidor för projektfakturor**. Den här funktionen är inaktiverad som standard och kan aktiveras i  **arbetsytor > funktionshantering**. Kontakta systemadministratören om du vill ha hjälp med att aktivera den här funktionen.
+Användare i offentlig sektor kan lägga till **anslags-ID** och **anslagsnamn** på **listsidorna för projektfakturaförslag** och **projektfakturor**. Dessa kolumner aktive ras med funktionen **Lägg till anslagsinformation till listsidor för projektfakturor**. Denna funktion är inaktiverad som standard och kan aktiveras i **Arbetsytor > Funktionshantering**. Kontakta systemadministratören om du vill ha hjälp med att aktivera den här funktionen.
 
 ## <a name="on-account-invoicing"></a>A conto-fakturering
 Det belopp som du anger i en à conto-faktura för ett projekt baseras på timingen, slutförandeprocenten och andra faktureringsvillkor som anges i det relaterade projektkontraktet. Beloppet beräknas inte utifrån de timmar, artiklar, utgifter eller avgifter som bokförts till projektet. 
@@ -132,6 +131,3 @@ Du kan skapa en faktura med negativt belopp, vilken klassificeras som en kreditf
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

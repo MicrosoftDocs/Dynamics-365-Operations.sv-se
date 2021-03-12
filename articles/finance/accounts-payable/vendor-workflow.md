@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Vendor
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 00cdc657fa075e84e62682e33ed3c1bace3f4ad0
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 1fad41fa4fb3562ab94adde522d3899271c85467
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4448234"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979174"
 ---
 # <a name="vendor-workflow"></a>Arbetsflöde för leverantör
 
@@ -61,6 +60,3 @@ När du har minst en föreslagen ändring visas två ytterligare flikar i åtgä
     Sidans status ändras till **Ändringar som väntar på godkännande**.
 
 Arbetsflödet följer standard i arbetsflödesprocessen. Godkännaren dirigeras till sidan **Leverantör** där ändringarna kan granskas på sidan **Föreslagna ändringar** och sedan välja **Arbetsflöde \> Godkänn** för att godkänna arbetsflödet. När alla godkännanden har slutförts uppdateras fälten med de värden du har föreslagit.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

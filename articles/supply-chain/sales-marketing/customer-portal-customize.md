@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7849f354817f189bf7c844bbe2944f94c8fffe83
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1e491100bc24718b8e5bc0f62de241835787f7ea
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527373"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980866"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Anpassa och använda kundportalen
 
@@ -40,9 +39,9 @@ Följande avsnitt innehåller information om grunderna i Power Apps-portaler och
 - [Hantera portalinnehåll](https://docs.microsoft.com/dynamics365/portals/manage-portal-content) – i det här avsnittet beskrivs hur du kan hantera och anpassa innehållet som ligger på en portal.
 - [Redigera CSS](https://docs.microsoft.com/powerapps/maker/portals/edit-css) – i det här avsnittet får du hjälp med att göra mer komplexa anpassningar av portalens användargränssnitt.
 - [Skapa ett tema för portalen](https://docs.microsoft.com/dynamics365/portals/create-theme) – i det här avsnittet får du hjälp med att skapa ett användargränssnittstema för portalen.
-- [Skapa och exponera portalinnehåll enkelt](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) – i det här avsnittet får du hjälp med att hantera underliggande data och entiteter som du använder för portalen.
+- [Skapa och exponera portalinnehåll enkelt](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) – i det här avsnittet får du hjälp med att hantera underliggande data och tabeller som du använder för portalen.
 - [Konfigurera en kontakt som ska användas på en portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) – i det här avsnittet beskrivs hur du skapar och anpassar användarroller och hur du arbetar med säkerhet och autentisering i Power Apps-portaler.
-- [Konfigurera noteringar för entitetsformulär och webbformulär på portaler](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) – i det här avsnittet beskrivs hur du lägger till dokument och ytterligare lagringsutrymme på portalen.
+- [Konfigurera noteringar för tabellformulär och webbformulär på portaler](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) – i det här avsnittet beskrivs hur du lägger till dokument och ytterligare lagringsutrymme på portalen.
 - [Felhantering för portalens webbplats](https://docs.microsoft.com/powerapps/maker/portals/admin/view-portal-error-log) – i det här avsnittet beskrivs hur du visar portalens felloggar och lagrar dem i Microsoft Azure Blob Storage-kontot.
 
 ## <a name="customize-the-order-creation-process"></a>Anpassa processen för att skapa order
@@ -91,7 +90,7 @@ Här följer de här standardstegen för att skicka en order från kundportalen.
 
 För att säkerställa en smidig användarupplevelse fyller kundportalen automatiskt i värden för flera obligatoriska fält. Dessa värden baseras på informationen i kontaktposten för den kund som skickar ordern.
 
-För varje [kontaktpost](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) som tillhör en kund som kommer att använda kundportalen för att skicka order måste värden anges för följande obligatoriska fält. Annars kommer fel att uppstå.
+För varje [kontaktrad](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) som tillhör en kund som kommer att använda kundportalen för att skicka order måste värden anges för följande obligatoriska fält. Annars kommer fel att uppstå.
 
 - **Företag** – Den juridiska personen som ordern tillhör
 - **Potentiell kund** – Det kundkonto som är associerat med ordern.
@@ -99,7 +98,7 @@ För varje [kontaktpost](https://docs.microsoft.com/powerapps/maker/portals/conf
 - **Valuta** – valutan för priset
 - **Leverera till land/region** – landet eller regionen som artiklarna ska levereras till
 
-Följande fält ställs automatiskt in för entiteten för försäljningsorder:
+Följande fält ställs automatiskt in för tabellen för försäljningsorder:
 
 - **Språk** – språket för ordern (som standard hämtas värdet från kontaktposten.)
 - **Leverera till land/region** – landet eller regionen som artiklarna ska levereras till (som standard hämtas värdet från kontaktposten.)
@@ -116,7 +115,7 @@ Följande fält ställs automatiskt in för entiteten för försäljningsorder:
 
 Du kan fritt ändra utseende och användargränssnitt för kundportalen om du inte ändrar den grundläggande processen för att skapa order. Om du vill ändra processen för att skapa order måste du ha några poäng i åtanke.
 
-Ta inte bort följande fält från entiteten för försäljningsorder i Common Data Service eftersom de krävs för att skapa en försäljningsorder i dubbelriktad skrivning:
+Ta inte bort följande kolumner från tabellen för försäljningsorder i Microsoft Dataverse eftersom de krävs för att skapa en försäljningsorder i dubbelriktad skrivning:
 
 - **Företag** – Den juridiska personen som ordern tillhör
 - **Namn** – Namnet på försäljningsordern
@@ -127,7 +126,7 @@ Ta inte bort följande fält från entiteten för försäljningsorder i Common D
 - **Språk** – språket för ordern (vanligtvis är språket den potentiella kundens språk.)
 - **Beskrivning av leveransadress** – leveransadressen för försäljningsordern
 
-För artiklar krävs följande fält:
+För artiklar krävs följande kolumner:
 
 - **Produkt** – produkten som ska beställas
 - **Kvantitet** – kvantiteten för den valda produkten
@@ -135,11 +134,11 @@ För artiklar krävs följande fält:
 - **Leverera till land/region** – landet eller regionen för leveransen
 - **Beskrivning av leveransadress** – leveransadressen för ordern
 
-Du måste se till att kundportalen inte skickar värden för alla dessa fält.
+Du måste se till att kundportalen inte skickar värden för alla dessa kolumner.
 
-Om du vill lägga till fält på sidan eller ta bort fält, se [skapa eller redigera snabbregistreringsformulär för en rationaliserad datainmatningsupplevelse](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
+Om du vill lägga till kolumner på sidan eller ta bort kolumner, se [skapa eller redigera snabbregistreringsformulär för en rationaliserad datainmatningsupplevelse](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
 
-Om du vill ändra hur fälten är förinställda och hur värden ställs in när sidan sparas, kan du läsa följande information i dokumentationen för Power Apps-portalen:
+Om du vill ändra hur kolumnerna är förinställda och hur värden ställs in när sidan sparas, kan du läsa följande information i dokumentationen för Power Apps-portalen:
 
 - [Förifyllt fält](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
 - [Ange värde vid sparande](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
@@ -176,6 +175,3 @@ Mer information om hur du kan ställa in och anpassa kundportalen finns i följa
 - [Uppgradera en portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Migrera portalkonfiguration](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Hantering av lösningens livscykel: Dynamics 365 for Customer Engagement-appar](https://www.microsoft.com/download/details.aspx?id=57777)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e15ba6a0d624bd97c25936aa6d3bfafb844b66c0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dfebc6616186a3a8859b00e90c178129feaa324b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415775"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980167"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Lägga till skriptkod på webbsidor för att stödja telemetri
 
@@ -66,7 +65,7 @@ Om du vill skapa ett återanvändbart fragment för den externa skripkoden i web
 1. Markera **Publicera**.
 
 > [!NOTE]
-> Om säkerhetsprincip (CSP) för innehåll är aktiverad för din webbplats måste du se till att alla externa URL:er läggs till i CSP-direktivet **skript-src** i Commerce-webbplatsskaparen. Mer information finns i [hantera säkerhetsprinciper för innehåll (CSP)](manage-csp.md).
+> Om säkerhetsprincip (CSP) för innehåll är aktiverad för din webbplats måste du se till att alla externa URL:er läggs till i CSP-direktivet **skript-src** i Commerce-webbplatsbyggaren. Mer information finns i [hantera säkerhetsprinciper för innehåll (CSP)](manage-csp.md).
 
 ## <a name="add-a-fragment-that-includes-script-code-to-a-template"></a>Lägga till ett fragment som innehåller skriptkod i en mall
 
@@ -122,6 +121,3 @@ Om du vill lägga till ett extern skript direkt på en mall i webbplatsskaparen 
 [Lägg till copyrightmeddelande](add-copyright-notice.md)
 
 [Lägg till språk på din webbplats](add-languages-to-site.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

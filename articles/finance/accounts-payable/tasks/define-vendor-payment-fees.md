@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendPaymFee, VendPaymModeFee, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 404bd1e22caa8098f114a2dcc67dd420509cce2b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 52321851a1aa588a0bbe238e366a28d503665988
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447847"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979348"
 ---
 # <a name="define-vendor-payment-fees"></a>Definiera leverantörsbetalningsavgifter
 
@@ -49,9 +48,9 @@ Ställ in avgifter för leverantörsbetalningar. I den här uppgiften används d
     * Registret används för att väljer ett enskilt bankkonto, är gruppen för att väljer en bankgrupp, och alla är att använda den här ställer in avgift för alla bankkonton  
 12. Välj antingen en bankgrupp eller ett bankkonto.
     * Sökningen ska visa bankgruppen, om du markerade gruppen, och visar bankkonton, om du har valt registret.  
-13. Välj en betalningsmetod som ska användas för åläggandet av den aktuella betalningsavgiften.
+13. Välj ett betalsätt som ska användas för åläggandet av den aktuella betalningsavgiften.
 14. Välj betalningsspecifikation för aktuell betalningsmetod
-    * Betalningsspecifikationen används med överföringsbetalningsmetoder av elektronisk fond.  
+    * Betalningsspecifikationen används med överföringsbetalsätt av elektronisk fond.  
 15. Välj om tillägget ska vara procent, ett belopp eller ett intervall.
 16. Ange procent eller belopp för avgiften.
     * Om tillägget är en procentsats, ange procentsatsen. Om tillägget är ett belopp, ange beloppet för avgiften. Om tillägget är ett intervall, ska du använda intervallfliken de definierade tiered avgifterna.  
@@ -59,6 +58,3 @@ Ställ in avgifter för leverantörsbetalningar. I den här uppgiften används d
     * Valutan avser avgiften. Betalningvalutan används för att ange när avgiftregeln ska vara bedömt baserat på betalningens valuta. Anta att din bank läsa in en avgift, när en betalning görs i euro, men alla andra betalningar bedömas inte en avgift.  
 18. Klicka på Spara.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

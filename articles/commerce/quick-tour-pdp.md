@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c53e74204fad2960dfba972a38c511df7d6672d8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b0f50b4e7b78f4a5b9fe674a101476879923e10d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415937"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979838"
 ---
 # <a name="product-details-pages-overview"></a>Översikt över sidor med produktinformation
 
@@ -61,7 +60,7 @@ Rekommendationsmodulen är en viktig modul på en PDP. Medan kunder bläddrar ef
 Det finns olika typer av rekommendationslistor:
 
 - Listan **personer gillar också** baseras på maskinutbildning. Den använder transaktionshistorik för andra kunder för att ge rekommendationer. Den här listan genereras av rekommendationstjänsten och liknar listan "kunder som köpt detta har också köpt...". Ett produkt-ID krävs för att listan ska kunna skapas.
-- En **relaterad** lista kan konfigureras för en produkt i Handel. För till exempel en handväska i brunt läder kan flera handväskor som är läderbaserade eller utformade för resor konfigureras för den relaterade listan. Andra typer av relaterade listor, till exempel **tillbehör** och **Fler som den här**, kan också konfigureras i Handel. Ett produkt-ID krävs för att listan ska kunna skapas. Om den läggs till på en startsida, där sidkontexten inte innehåller något produkt-ID, kommer listan att vara tom.
+- En **relaterad** lista kan konfigureras för en produkt i Commerce. För till exempel en handväska i brunt läder kan flera handväskor som är läderbaserade eller utformade för resor konfigureras för den relaterade listan. Andra typer av relaterade listor, till exempel **tillbehör** och **Fler som den här**, kan också konfigureras i Commerce. Ett produkt-ID krävs för att listan ska kunna skapas. Om den läggs till på en startsida, där sidkontexten inte innehåller något produkt-ID, kommer listan att vara tom.
 - Algoritmskapade rekommendationslistor, t.ex. **Trend**, **Bästsäljande** och **Ny** kan användas på PDP. Även om dessa listor kanske inte är direkt relaterade till produkten i PDP är de ett annat sätt att hjälpa kunderna att hitta produkter som kan vara intressanta för dem. Dessa typer av listor kräver inget produkt-ID. De är generiska listor som skapas baserat på köpmönster på webbplatsen.
 - Redaktionella listor är manuellt granskade listor. En återförsäljare kan till exempel välja att manuellt granska listor över produkter som den vill visa.
 
@@ -88,6 +87,3 @@ Om marknadsföringsinnehållet är unikt för en viss produkt kan en marknadsfö
 [Översikt över sidor för kontohantering](quick-tour-account-management.md)
 
 [Utöka en produktdetaljsida](enrich-product-page.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

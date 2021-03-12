@@ -1,6 +1,6 @@
 ---
 title: Lägg till copyrightmeddelande
-description: I det här avsnittet beskrivs hur du lägger till ett copyrightmeddelande till din näthandelsplats.
+description: I det här avsnittet beskrivs hur du lägger till ett copyrightmeddelande till din näthandelssajt.
 author: psimolin
 manager: AnnBe
 ms.date: 10/16/2020
@@ -10,25 +10,24 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 838047cac694c65047332e146a7c43ee2ae0f401
-ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
+ms.openlocfilehash: 54d9ccbb56131333159cdf8858dfca23b75b61fd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4415959"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980466"
 ---
 # <a name="add-a-copyright-notice"></a>Lägg till copyrightmeddelande
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du lägger till ett copyrightmeddelande till din näthandelsplats.
+I det här avsnittet beskrivs hur du lägger till ett copyrightmeddelande till din näthandelssajt.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -75,6 +74,3 @@ Sidfoten som innehåller copyrightinformationen visas automatiskt längst ner p�
 
 [Lägga till skriptkod på webbsidor för att stödja telemetri](add-telemetry.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f249348fac526fc7814045b1b1b71c898430c0f2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415766"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980441"
 ---
 # <a name="add-a-favicon"></a>Lägg till en favicon
 
@@ -66,7 +65,7 @@ För att skapa ett fragment som innehåller en metatagg för din favicon ska du 
 1. I dialogrutan **Nytt fragment** markerar du **Metataggar** som modulen fragment är baserat på.
 1. Ange ett namn på fragment och välj sedan **OK**.
 1. I trädet för fragmentets hierarki väljer du underordnade **Standard metataggar**.
-1. I det högra fönstret, under **Metataggar**, väljer du **Lägg till** och anger sedan den HTML-sträng som du skapade tidigare för favicon. 
+1. I det högra fönstret, under **Metataggar**, väljer du **Lägg till** och anger sedan den HTML-sträng som du skapade tidigare för favicon. 
 1. Välj **Slutför redigering** och välj sedan **Publicera** för att publicera fragment.
 
 ## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>Lägg till fragment med metatagg i HTML-huvudet på dina sidor
@@ -99,6 +98,3 @@ När du förhandsgranskar sidor baserade på den mall som du har lagt till metat
 
 [Lägga till skriptkod på webbsidor för att stödja telemetri](add-telemetry.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

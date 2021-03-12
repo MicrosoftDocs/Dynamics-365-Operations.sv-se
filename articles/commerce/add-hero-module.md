@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a8b1c214ba31b7c47cecbe67bef493f5fa450fc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a6359c915d053bb00c969b166325f675c0003ead
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415770"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980367"
 ---
 # <a name="content-block-module"></a>Innehållsblockmodul
 
@@ -34,13 +33,13 @@ Det här avsnittet handlar om innehållsblockmoduler och beskriver hur du lägge
 
 ## <a name="overview"></a>Översikt
 
-En innehållsblockmodul används för att marknadsföra produkter eller erbjudanden genom en kombination av bilder och text. En återförsäljare kan till exempel lägga till en innehållsblockmodul på startsidan för en näthandelsplats för att marknadsföra en ny produkt och locka kundernas uppmärksamhet.
+En innehållsblockmodul används för att marknadsföra produkter eller erbjudanden genom en kombination av bilder och text. En återförsäljare kan till exempel lägga till en innehållsblockmodul på startsidan för en näthandelssajt för att marknadsföra en ny produkt och locka kundernas uppmärksamhet.
 
 En innehållsblockmodul drivs av data från innehållshanteringssystemet (CMS). Det är en fristående modul som inte är beroende av andra moduler på sidan. En innehållsblockmodul kan placeras på alla webbplatssidor där en återförsäljare vill marknadsföra eller främja något (t.ex. produkter, försäljning eller funktioner).
 
 ## <a name="examples-of-content-block-module-in-e-commerce"></a>Exempel på innehållsblockmoduler i näthandel
 
-- En innehållsblockmodul kan användas på startsidan för en näthandelsplats för att framhäva erbjudanden och nya produkter.
+- En innehållsblockmodul kan användas på startsidan för en näthandelssajt för att framhäva erbjudanden och nya produkter.
 - En innehållsblockmodul kan användas på en produktinformationssida för att visa upp produktinformation.
 - Flera innehållsblockmoduler kan placeras i en karusellmodul för att framhäva flera produkter eller erbjudanden.
 
@@ -107,6 +106,3 @@ Om du vill lägga till en fokusmodul på en ny sida och ställa in de obligatori
 [Textblockmodul](add-content-rich-block.md)
 
 [Modul för videospelare](add-video-player.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

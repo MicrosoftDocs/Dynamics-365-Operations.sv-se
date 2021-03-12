@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cd32ad1b745d1bfda25abf57330fb1385014e4fc
-ms.sourcegitcommit: f0f5545a8ff99583e0131f435d91c64bb68a1c38
+ms.openlocfilehash: 944139a8b3d7d549bd7be83918bd680717e6fdf0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "4448224"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979049"
 ---
 # <a name="asset-leasing-home-page"></a>Startsida för leasing av tillgångar
 
@@ -45,8 +44,8 @@ Följande hjälpavsnitt är tillgängligt som hjälp för konfigurering och anv�
   - [Konfigurera leasingböcker](set-up-lease-books.md)
   - [Skapa en leasinggrupp](create-lease-group.md)
   - [Konfigurera indexräntor](set-up-index-rate-types.md)
-  - [Konfigurera utgiftstyper](set-up-expense-types.md)
-  - [Konfigurera namn för leasingjournal](set-up-lease-journal-names.md)
+  - [Ställa in utgiftstyper](set-up-expense-types.md)
+  - [Ställ in namn för leasingjournal](set-up-lease-journal-names.md)
   - [Skapa bokföringskonton för leasing](set-up-lease-posting-accts.md)
   - [Tilldela nummerserier](leasing-number-sequences.md)
   - [Tilldela användarroller](lease-user-roles.md)
@@ -89,13 +88,10 @@ Gå till [Utgivningsplaner för Microsoft Dynamics 365](https://go.microsoft.com
 
 ### <a name="blogs"></a>Bloggar
 
-Det finns åsikter, nyheter och annan information i [bloggen om Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [bloggen om Microsoft Dynamics 365 Finance and Operations – Ekonomi](https://community.dynamics.com/365/financeandoperations/b/financials).
+Det finns åsikter, nyheter och annan information i [bloggen om Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [bloggen om Microsoft Dynamics 365 Finance and Operations – Finance](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i Dynamics 365.
 
 ### <a name="videos"></a>Videor
 
 Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen på YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ). 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

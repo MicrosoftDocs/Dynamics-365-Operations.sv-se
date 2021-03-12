@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af2450b27106325a86f6db68f9791637694cda63
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2e1ef6506833b35e61351600553a3bc29c20d5b2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415716"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980242"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Lägg till rekommendationer på transaktionsskärmen
 
@@ -34,7 +33,7 @@ ms.locfileid: "4415716"
 Det här avsnittet beskriver hur du lägger till en rekommendationskontroll på transaktionsskärmen på en kassaenhet med hjälp av layoutdesignern för skärm i Microsoft Dynamics 365 Commerce. Mer information om produktrekommendationer finns i [produktrekommendationerna i kassadokumentationen](product.md).
 
 
-Du kan visa produktrekommendationer på din kassaenhet när du använder Handel . Om du vill visa produktrekommendationer måste du lägga till en kontroll på transaktionsskärmen med skärmlayoutdesignern. 
+Du kan visa produktrekommendationer på din kassaenhet när du använder Commerce . Om du vill visa produktrekommendationer måste du lägga till en kontroll på transaktionsskärmen med skärmlayoutdesignern. 
 
 ## <a name="open-layout-designer"></a>Öppna layoutdesignern
 
@@ -69,7 +68,7 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 
 
 3. Klick på **X** för att spara och stänga layoutdesignern.
-4. I Handel, gå till **Butik och handel** &gt; **Butiks- och handels-IT** &gt; **Distributionsschema**.
+4. I Commerce, gå till **Butik och handel** &gt; **Butiks- och handels-IT** &gt; **Distributionsschema**.
 5. I listan väljer du **1090 Registers**.
 6. Klicka på **Kör nu**.
 
@@ -80,7 +79,7 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 
 2. Klicka på **anpassa**.
 
-    [![Anpassning - dialogrutan flikkontroll](./media/pic-5.png)](./media/pic-5.png)
+    [![Anpassning – dialogrutan flikkontroll](./media/pic-5.png)](./media/pic-5.png)
 
 3. Klicka på **Ny flik**.
 4. Hitta den nya fliken som du just skapade. Du kan behöva rulla nedåt.
@@ -92,7 +91,7 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 7. I fältet **Bild** väljer du den bild du vill visa i fliken.
 8. Klicka på **OK**. Den nya fliken visas i knappsatsen.
 9. Klick på **X** för att spara och stänga layoutdesignern.
-10. I Handel, gå till **Butik och handel** &gt; **Butiks- och handels-IT** &gt; **Distributionsschema**.
+10. I Commerce, gå till **Butik och handel** &gt; **Butiks- och handels-IT** &gt; **Distributionsschema**.
 11. I listan väljer du **1090 Registers**.
 12. Klicka på **Kör nu**.
 
@@ -110,7 +109,7 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 
 [Aktivera rekommendationer för "köp liknande produkter"](shop-similar-looks.md)
 
-[Lägga till produktrekommendationer i kassan](product.md)
+[Lägga till produktrekommendationer i POS](product.md)
 
 [Justera rekommendationsresultat från AI-ML](modify-product-recommendation-results.md)
 
@@ -119,6 +118,3 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 [Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

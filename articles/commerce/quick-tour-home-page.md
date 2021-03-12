@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ebc8b4ebd3720815cdaaab708fbfdd8302cbea1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c7f9762b5e00a04f189874a3695c33fe989b579c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415939"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979863"
 ---
 # <a name="home-page-overview"></a>Översikt över startsidan
 
@@ -32,7 +31,7 @@ Det här ämnet innehåller en översikt över startsidan i Microsoft Dynamics 3
 
 ## <a name="overview"></a>Översikt
 
-Startsidan är den standardsida som köparen går till när han eller hon besöker en näthandelsplats. Den här sidan visar vanligtvis produkter och erbjudanden med hjälp av en kombination av marknadsföringsmoduler. Startsidan ska vara rik med bilder och text för att hålla köparen sysselsatt.
+Startsidan är den standardsida som köparen går till när han eller hon besöker en näthandelssajt. Den här sidan visar vanligtvis produkter och erbjudanden med hjälp av en kombination av marknadsföringsmoduler. Startsidan ska vara rik med bilder och text för att hålla köparen sysselsatt.
 
 Följande illustration visar ett exempel på en startsida som har skapats med hjälp av modulbibliotek och temat "Fabrikam".
 
@@ -73,6 +72,3 @@ I huvudavsnittet på startsidan kan du markera produkter, kategorier eller kampa
 [Översikt över sidor för kundvagn och kassa](quick-tour-cart-checkout.md)
 
 [Översikt över sidor för kontohantering](quick-tour-account-management.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

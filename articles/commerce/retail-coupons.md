@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eb3b505af826b1881aa8245fff66e6f05ad7486a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415761"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979685"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Ställa in kuponger för butiksförsäljning
 
@@ -37,14 +36,14 @@ Varje kupong är kopplad till en rabatt. Prisgrupper som associeras med rabatten
 
 I princip är kuponger extra validering utöver kuponger. Kupongen innehåller de kupongkoder och streckkoder som krävs samt datumintervall för dessa koder. Kupongen ger dessutom valfria användningsbegränsningar och villkor som ska uppfyllas av kunden. Rabatten innehåller de produkter som gäller för kupongen. Prisgrupper för rabatten innehåller uppsättningen med kunder, kanaler eller kataloger som kupongen gäller för.
 
-Om du vill skapa en kupong skapar du rabatten och kupongen separat. Sedan länkar du dem genom att välja en rabatt på kupongsidan i Handel.
+Om du vill skapa en kupong skapar du rabatten och kupongen separat. Sedan länkar du dem genom att välja en rabatt på kupongsidan i Commerce.
 
 > [!NOTE]
-> När du har länkat en kupong till en rabatt blir flera fält på rabattsidan i Handel skrivskyddade, eftersom de hanteras av inställningarna för kupongen. Fälten inkluderar fält för status och standarddatumintervall.
+> När du har länkat en kupong till en rabatt blir flera fält på rabattsidan i Commerce skrivskyddade, eftersom de hanteras av inställningarna för kupongen. Fälten inkluderar fält för status och standarddatumintervall.
 
 ### <a name="limited-use-coupons"></a>Kuponger med begränsad användning
 
-Du kan konfigurera kuponger som kuponger med begränsad användning. Användningsgränsen kan definieras per kund eller kanal, eller som en global begränsning. Denna begränsning gäller när koden eller streckkoden används eller skannas i kassan eller vid registrering av försäljningsorderposten.
+Du kan konfigurera kuponger som kuponger med begränsad användning. Användningsgränsen kan definieras per kund eller kanal, eller som en global begränsning. Denna begränsning gäller när koden eller streckkoden används eller skannas i POS eller vid registrering av försäljningsorderposten.
 
 Gränsen tillämpas per kupongkod på en kupong. Exempelvis kan en kupong med två kupongkoder användas två gånger: en gång för varje kupongkod. Varje kod i en kupong aktiveras oberoende av varandra.
 
@@ -77,11 +76,8 @@ Innan du kan skapa en kupong måste du ställa in kupongens streckkod och två k
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Effekten av ofullständiga uppdateringar av kuponger
 
-Kupongfunktionen omfattar flera olika funktioner. administration för Handel (huvudkontor) och kanalen kan delvis uppdateras över komponenter. Därför är det viktigt att du förstår hur ofullständiga uppdateringar påverkar kupongens funktion i sin helhet.
+Kupongfunktionen omfattar flera olika funktioner. administration för Commerce (huvudkontor) och kanalen kan delvis uppdateras över komponenter. Därför är det viktigt att du förstår hur ofullständiga uppdateringar påverkar kupongens funktion i sin helhet.
 
-- **Huvudkontor är delvis uppdaterat, men skalningsenhet för handel och kassa är inte uppdaterade.** Vid uppdatering av Huvudkontor uppdateras sidorna Kupong och Rabatt. Även motorn för handelspris uppdateras. Om endast en av dessa två komponenter uppdateras kommer vissa sidor i Handel inte att matcha prisberäkningsdata. Därför kan oväntade rabattberäkningar eller fel inträffa vid beräkningarna av rabatten.
+- **Huvudkontor är delvis uppdaterat, men skalningsenhet för handel och kassa är inte uppdaterade.** Vid uppdatering av Huvudkontor uppdateras sidorna Kupong och Rabatt. Även motorn för handelspris uppdateras. Om endast en av dessa två komponenter uppdateras kommer vissa sidor i Commerce inte att matcha prisberäkningsdata. Därför kan oväntade rabattberäkningar eller fel inträffa vid beräkningarna av rabatten.
 - **Huvudkontor är uppdaterat, men skalningsenhet för handel och kassa är inte uppdaterade (N-1).** Eftersom inte alla butiker kan uppdateras samtidigt, rekommenderar vi att du uppdaterar huvudkontoret innan du uppdaterar butiker. I N-1-scenariot kommer inte nya funktioner som är relaterade till kuponger att visas i butiker som ännu inte har uppdaterats. Exempelvis introducerar kuponger funktionen ”Uteslut”-rader. Om du använder utelämnar rader på en rabatt, används de inte i butiker som kör en tidigare version.
 - **Huvudkontor är inte uppdaterat, men skalningsenhet för handel och kassa är uppdaterade (N+1).** Eftersom prismotorn är uppdaterad i skalningsenhet för handel kan servern hantera äldre rabattkoder under prisberäkningar. Uppdateringen bör inte ha någon funktionspåverkan i det här scenariot.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

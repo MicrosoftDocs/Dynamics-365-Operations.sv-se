@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: SysUserManagement, HcmWorker, JmgRegistrationSetupTouch, JmgRegistrationSetupAssignUsers
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ada42a98a8a87e377f939d063b17f9904f6b3408
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 89b75936ea9c0f25f82175a1871088da8fd74ad6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437834"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980941"
 ---
 # <a name="configure-a-worker-using-the-mobile-job-device"></a>Konfigurera en arbetare med den mobila jobbenheten
 
@@ -68,6 +67,3 @@ I det här exemplet kontrollerar du att användaren "SHANNON" har tilldelats rol
 6. I fältet **Produktionsenhet** kan du ställa in standardfiltret för arbetaren. Då säkerställs att endast produktionsjobb för den valda produktionsenheten visas när arbetaren loggar in på enheten. Ange önskat värde.
 7. Stäng sidan.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

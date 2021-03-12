@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResCategoryAttribute, EcoResProductEntityAttributeTableFieldAssociation, EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResAttributeType, EcoResAttributeValue, EcoResCategoryAttributeGroup, EcoResCategoryFriendlyName
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b5d0e92196f98fb707b1c424a6ae237f4dc9545c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 70e2b52dd140660fe98c6ff07248a033ba4bd635
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415813"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979983"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Hantera attribut och attributsgrupper
 
@@ -90,7 +89,7 @@ Attribut baseras på *attributtyper*. Attributtypen identifierar den typ av data
 
 För produkter kan attributets metadatainställningar åsidosättas på kanalnivå. Den här funktionen kommer att diskuteras senare i det här avsnittet.
 
-Som du kanske märker innehåller sidan **Attribut** kommandon relaterade till attributmetadata. Under **Attributmetadata för butik**, påverkar ett alternativ som heter **”kan förfinas”** beteendet för attributvärden i kassor (POS) eller sättet som systemet hanterar dessa attributvärden. Endast attribut där du kan ställa in alternativen **”kan förfinas”** till **”Ja”** kommer att visas för förfining eller filtrering av produkter i kassan.
+Som du kanske märker innehåller sidan **Attribut** kommandon relaterade till attributmetadata. Under **Attributmetadata för butik**, påverkar ett alternativ som heter **”kan förfinas”** beteendet för attributvärden i kassor (POS) eller sättet som systemet hanterar dessa attributvärden. Endast attribut där du kan ställa in alternativen **”kan förfinas”** till **”Ja”** kommer att visas för förfining eller filtrering av produkter i POS.
 
 Nedan följer de återstående alternativen för attributmetadata på sidan **Attribut**:
 
@@ -102,7 +101,7 @@ Nedan följer de återstående alternativen för attributmetadata på sidan **At
 - Ignorera skiftläge och format
 - Slutför matchning
 
-De här alternativen var ursprungligen avsedda till att förbättra sökfunktionen för onlinebutiken. Även om Handel inte inkluderar skyltfönster online, inkluderar den eCommerce Publishing Software Development Kit (SDK). Kunderna kan använda denna SDK för att lägga in produkter i ett valfritt sökindex. Även om produktdata importeras bör kunder ändå kunna skilja mellan sökbar data, data som kan efterfrågas och så vidare. På så sätt kan de skapa ett optimalt index för att se till att de bara indexerar attribut som *enligt deras mening* bör indexeras.
+De här alternativen var ursprungligen avsedda till att förbättra sökfunktionen för onlinebutiken. Även om Commerce inte inkluderar skyltfönster online, inkluderar den eCommerce Publishing Software Development Kit (SDK). Kunderna kan använda denna SDK för att lägga in produkter i ett valfritt sökindex. Även om produktdata importeras bör kunder ändå kunna skilja mellan sökbar data, data som kan efterfrågas och så vidare. På så sätt kan de skapa ett optimalt index för att se till att de bara indexerar attribut som *enligt deras mening* bör indexeras.
 
 Information om syftet med dessa återstående alternativ finns i [Översikt över sökschemat i SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
@@ -127,7 +126,7 @@ Sidan **Visningsinställningar för filter** innehåller följande fält:
 
 - **Tröskelvärde** – inställningen krävs om du markerade **intervall** som displaykontrolltyp. Du kan definiera värden genom att använda ett semikolon (;) som avgränsare.
 
-    För exempelvis filter som **väskvolym** kan ett tröskelvärde vara **10; 20; 50; 100; 200; 500; 1000; 5000**. I detta fall kommer kassan att visa följande intervall. Alla områden som inte har några produkter i resultatet är nedtonade.
+    För exempelvis filter som **väskvolym** kan ett tröskelvärde vara **10; 20; 50; 100; 200; 500; 1000; 5000**. I detta fall kommer POS att visa följande intervall. Alla områden som inte har några produkter i resultatet är nedtonade.
 
     - Mindre än 10
     - 10 – 20
@@ -203,7 +202,7 @@ En eller flera attributgrupper som kan förknippas med en eller flera butiker i 
     3. Välj kategorinoden **Mode accessoarer** och välj kategorin **Modesolglasögon** och välj **Kanalproduktattribut** på snabbfliken och sedan **Inkludera attribut** för varje attribut.
     4. Välj kategorinoden **Herrkläder** och välj kategorin **Byxor** och välj **Modesolglasögon** på snabbfliken och sedan **Inkludera attribut** för varje attribut.
 
-![Kanalkategorier och produktattribut - attributgrupper](media/CCPAttrGrp.png)
+![Kanalkategorier och produktattribut – attributgrupper](media/CCPAttrGrp.png)
 
 ## <a name="overriding-attribute-values"></a>Åsidosätta attributvärden
 
@@ -257,6 +256,3 @@ Standardvärden för attribut kan åsidosättas för enskilda produkter på prod
 
     > [!NOTE]
     > Om delad produktmedia och delade produktattribut skapas gäller de för alla produkter.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

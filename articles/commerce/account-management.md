@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b0f963bcf65ae622522fe52fd59996c6ec0ecf17
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6c465b8883438eee886b177274bf89ddb86aa00b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415752"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980566"
 ---
 # <a name="account-management-pages-and-modules"></a>Sidor och moduler för kontohantering
 
@@ -39,7 +38,7 @@ Kontohantering refererar till en grupp med sidor som används för att hantera i
 
 Landningssidan för kontohantering använder följande moduler:
 
-- **Behållare** - alla moduler för landningssida för kontohantering ska placeras i en behållare. 
+- **Behållare** – alla moduler för landningssida för kontohantering ska placeras i en behållare. 
 - **Kontots välkomstpanel** – modulen används för att tillhandahålla ett välkomstmeddelande på sidan kontohantering. Den innehåller egenskaper för rubriken.
 - **Allmän panel för konto** – denna modul kan användas för att tillhandahålla rubriker och länkar till kontohanteringssidor, t.ex. "orderhistorik" eller "min profil"-sidorna. Den generiska panelen kan användas för att konfigurera en panel för varje sida. I Fabrikam används den här modulen för länkarna "orderhistorik" och "min profil" på landningssidan för kontohantering.
 - **Panel för kontoönskelista** – modulen används för att ge en sammanfattning av artiklarna på kundens önskelista. Det kan till exempel vara "du har tio artiklar i din önskelista." Den inkluderar egenskaper för rubriken och länken " visa detaljer". Länken "Visa detaljer" ska vara konfigurerad för omdirigering till sidan för önskelista. 
@@ -89,6 +88,3 @@ Om du vill delta i förmånsprogrammet kan du skapa en marknadsföringssida med 
 [Modul för sidhuvud](author-header-module.md)
 
 [Modul för sidfot](author-footer-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

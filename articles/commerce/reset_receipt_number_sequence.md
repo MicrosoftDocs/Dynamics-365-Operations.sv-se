@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,23 +18,23 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f7242ed830d09a29a4b01e20ce5070c3aaeca62b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415764"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979734"
 ---
 # <a name="reset-receipt-numbers"></a>Återställa kvittonummer 
 
 [!include [banner](includes/banner.md)]
 
 > [!NOTE]
-> Vi kräver att du väljer egenskapen **oberoende sekvens** för alla kvittotyper i funktionsprofilen innan du använder den här funktionen. Även systemets tidszon för enheten, där kassan används, bör matcha motsvarande lagringstidszon. På grund av dessa begränsningar rekommenderar vi att du inte använder den här funktionen i produktionen medan vi arbetar med att åtgärda problemen i en senare version. 
+> Vi kräver att du väljer egenskapen **oberoende sekvens** för alla kvittotyper i funktionsprofilen innan du använder den här funktionen. Även systemets tidszon för enheten, där POS används, bör matcha motsvarande lagringstidszon. På grund av dessa begränsningar rekommenderar vi att du inte använder den här funktionen i produktionen medan vi arbetar med att åtgärda problemen i en senare version. 
 
 Åter försäljare genererar kvittonummer för olika åtgärder i butiken, t.ex. kontanter och hämtköpstransaktioner, returtransaktioner, kundorder, offerter och betalningar. Även om återförsäljare definierar sina egna kvittoformat, har vissa länder eller regioner regler som begränsar dessa kvittoformat. Dessa förordningar kan t.ex. begränsa antalet tecken på kvittot, kräva efterföljande kvittonummer, begränsa vissa specialtecken eller kräva att kvittonummer måste återställas vid början av året. Microsoft Dynamics 365 Commerce gör processen att hantera kvittonummer mycket flexibel, så att återförsäljarna kan uppfylla gällande krav. I det här avsnittet beskrivs hur du använder funktionen för att återställa kvittonummer.
 
-I Handel kan kvittoformat vara alfanumeriska. Du kan både placera statiskt innehåll och dynamiskt innehåll i dem. Statiskt innehåll innehåller alfabetiska tecken, siffror och specialtecken. Dynamiskt innehåll innehåller ett eller flera tecken som representerar information som butiksnummer, terminalnummer, datum, månad, år och nummerserier som automatiskt ökas. Formaten definieras i avsnittet **kvittonummer** i funktionsprofilen. I följande tabell beskrivs de tecken som representerar det dynamiska innehållet.
+I Commerce kan kvittoformat vara alfanumeriska. Du kan både placera statiskt innehåll och dynamiskt innehåll i dem. Statiskt innehåll innehåller alfabetiska tecken, siffror och specialtecken. Dynamiskt innehåll innehåller ett eller flera tecken som representerar information som butiksnummer, terminalnummer, datum, månad, år och nummerserier som automatiskt ökas. Formaten definieras i avsnittet **kvittonummer** i funktionsprofilen. I följande tabell beskrivs de tecken som representerar det dynamiska innehållet.
 
 | Tecken | Beskrivning |
 |------------|-------------|
@@ -62,12 +61,9 @@ Så här aktiverar du återställning.
 
 När du har valt ett datum visas det i kolumnen **Nästa kvittonummer, återställningsdatum**. Återställningsdatumet gäller för alla typer av kvittotransaktioner. Därför återställs kvittots nummerserie av alla typer av kvitton.
 
-När återställningsdatum infaller återställs kvittonumret för den första transaktionen av varje typ. I funktionsprofilen flyttas dessutom återställningsdatumet från kolumnen **Nästa kvittonummer, återställningsdatum** till kolumnen **Aktuellt kvittonummer, återställningsdatum**. Den här ändringen anger att om en kassa inte används på återställningsdatumet återställs kvittonumret nästa gång kassan *används*. Till exempel den 3 december 2019, väljer du **1 januari 2020** som återställningsdatum. Den 1 januari när kassorna gör sin första transaktion återställs kvittonumret. Men en kassa används inte alls under december och januari, utan börjar sedan användas i februari. I detta fall, eftersom en återställningsåtgärd har definierats, återställs kvittonumret för kassan när kassan gör den första transaktionen i februari.
+När återställningsdatum infaller återställs kvittonumret för den första transaktionen av varje typ. I funktionsprofilen flyttas dessutom återställningsdatumet från kolumnen **Nästa kvittonummer, återställningsdatum** till kolumnen **Aktuellt kvittonummer, återställningsdatum**. Den här ändringen anger att om en kassa inte används på återställningsdatumet återställs kvittonumret nästa gång POS *används*. Till exempel den 3 december 2019, väljer du **1 januari 2020** som återställningsdatum. Den 1 januari när kassorna gör sin första transaktion återställs kvittonumret. Men en kassa används inte alls under december och januari, utan börjar sedan användas i februari. I detta fall, eftersom en återställningsåtgärd har definierats, återställs kvittonumret för POS när POS gör den första transaktionen i februari.
 
 Du kan använda funktionen **rensa återställningsdatum** för att rensa framtida återställningsdatum. Om återställningsdatumet har passerat kan det dock inte ångras. Därför görs en återställning av alla kassor där återställningen ännu inte har förekommit.
 
 > [!NOTE]
 > Beroende på vilket återställningsdatum du väljer och kvittoformatet, kan du ha duplicerade kvittonummer. Även om kassasystemet kan hantera dessa situationer, ökar den tid som krävs för att bearbeta returer, eftersom säljare måste välja bland de duplicerade kvittona. Andra komplikationer som rör datarensning kan inträffa om de duplicerade inleveranserna inte är en planerad följd. Därför rekommenderar vi att du använder dynamiska datumtecken (t.ex. **ddd**, **MM**, **DD** och **ÅÅ**) ör att förhindra att kvittonumren dupliceras efter en återställning.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

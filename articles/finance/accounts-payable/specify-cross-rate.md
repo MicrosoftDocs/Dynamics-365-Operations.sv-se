@@ -1,5 +1,5 @@
 ---
-title: Ange växelkurs
+title: Ange valutakurs
 description: Det här ämnet innehåller information om valutakurser i Microsoft Dynamics 365 Finance.
 author: abruer
 manager: AnnBe
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 146794557a3a6ba1801598fe6b814e209d9f5fc6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 317cad877cec4d9f02f53762af65f0b226d0aad6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447851"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979398"
 ---
-# <a name="specify-the-cross-rate"></a>Ange växelkurs
+# <a name="specify-the-cross-rate"></a>Ange valutakurs
 
 [!include [banner](../includes/banner.md)]
 
@@ -34,7 +33,7 @@ Det här avsnittet beskriver syftet med en växlingskurs och hur du anger växli
 
 Växlingskursen används inte för att beräkna valutaregistrering för betalningstransaktionen till betalningens redovisningsvaluta. I stället hämtas valutakurser från valutakurstabellerna för att beräkna värdet på betalningstransaktionens valutabelopp och betalningsredovisningens valutabelopp. 
 
-Redovisningsvalutan är till exempel USD, fakturavalutan CAD och betalningsvalutan EUR. Med växlingskursen kan du ange en valutakurs för att översätta direkt mellan CAD och EUR utan att behöva översätta via USD. När du väljer en faktura och en primär betalning, kan du ange en växlingskurs för fakturaraden. Växlingskursen är växelkursen mellan valutorna för dessa transaktioner på kvittningsdatumet.
+Redovisningsvalutan är till exempel USD, fakturavalutan CAD och betalningsvalutan EUR. Med växlingskursen kan du ange en valutakurs för att översätta direkt mellan CAD och EUR utan att behöva översätta via USD. När du väljer en faktura och en primär betalning, kan du ange en växlingskurs för fakturaraden. Växlingskursen är valutakursen mellan valutorna för dessa transaktioner på kvittningsdatumet.
 
 1.  Gå till en av följande sidor:
 - **Kundreskontra > Allmänt > Kunder > Alla kunder** 
@@ -44,6 +43,3 @@ Redovisningsvalutan är till exempel USD, fakturavalutan CAD och betalningsvalut
 3.  För en kund, på listsidan **Alla kunder**, gå till **Samla in > Kvitta öppna transaktioner**. För en leverantör, på listsidan **Alla leverantörer**, gå till **Faktura > Kvitta öppna transaktioner**. 
 4.  Välj transaktionen som är den primära betalningen och klicka på **Markera betalning**. Kryssrutan i kolumnen **Markera** markeras och en informationsikon visas i kolumnen **Primär betalning**. 
 5.  I fältet **Växlingskurs** ange valutakursen mellan fakturavalutan och betalningsvalutan, på kvittningsdatumet. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

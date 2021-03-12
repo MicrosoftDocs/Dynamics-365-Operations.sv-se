@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 86d9a40d991e915d3529e0c330f7559d8e7ce9ea
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 25b1962af182fc2749fcd6ec0035613d8365deb1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529588"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980816"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Kundportal för Dynamics 365 Supply Chain Management – översikt
 
@@ -64,11 +63,8 @@ Kundportalen utgörs av en Power Apps-mall för portaler. Det beror på Power Ap
 
 [Power Apps-portaler](https://docs.microsoft.com/powerapps/maker/portals/overview) är en funktion som gör att användarna kan skapa webbplatser på en extern webbplats som personer utanför företaget kan logga in på. Liten till ingen kod krävs för att göra portaler. Kundportalen är en av många [Dynamics 365-portalmallar](https://docs.microsoft.com/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365) som är tillgängliga från Microsoft.
 
-[Dubbelriktad skrivning](https://docs.microsoft.com/powerapps/maker/portals/overview) är en medföljande infrastruktur som ger nära realtidssamverkan mellan Dynamics 365 och Finance and Operations-appar. Dubbelriktad skrivning ger dubbelriktad integration mellan Finance and Operations-appar och Common Data Service. Därför ger den ett integrerat användargränssnitt mellan programmen. Kundportalen är beroende av enheter som har synkroniserats med dubbelriktad skrivning. Innan data från Supply Chain Management kan placeras i kundportalen måste dubbelriktade skrivfunktioner aktiveras för alla lämpliga enheter.
+[Dubbelriktad skrivning](https://docs.microsoft.com/powerapps/maker/portals/overview) är en medföljande infrastrukturptodukt som ger nära realtidssamverkan mellan kundengagemangsappar och Finance and Operations-appar. Dubbelriktad skrivning ger dubbelriktad integration mellan Finance and Operations-appar och Microsoft Dataverse. Därför ger den ett integrerat användargränssnitt mellan programmen. Kundportalen är beroende av tabeller som har synkroniserats med dubbelriktad skrivning. Innan data från Supply Chain Management kan placeras i kundportalen måste dubbelriktade skrivfunktioner aktiveras för alla lämpliga tabeller.
 
 ![Kundportalberoenden](media/customer-portal-elements.png "Kundportalberoenden")
 
 Kundportalen fungerar som utgångspunkt för organisationer som vill använda Power Apps-portaler för att skapa en extern webbplats som använder data från en installation av Supply Chain Management. Det hjälper organisationer att ansluta dubbelriktad, Supply Chain Management och Power Apps-portaler.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

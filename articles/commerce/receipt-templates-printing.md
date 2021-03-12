@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ab6b01d6833850af8c04167d94b0a60c7312075c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a66590f18df04d2be0500b7fb1ab183cf64718e8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415936"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979763"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Ställ in och designa inleveransformat
 
@@ -46,6 +45,10 @@ Den här artikeln beskriver hur du ändrar formulärlayouter om du vill styra hu
     - **Skriv inte ut** – mottagandet inte skrivas ut.
     - **Fråga användaren** – uppmanas användaren att skriva ut kvittot.
     - **Vid behov** – Detta alternativ används endast för gift kvitton. När det här alternativet är markerat, kan användaren skriva ut en gåva mottagandet från **ändra** sida, om en gåva inleverans krävs.
+
+## <a name="print-images"></a>Skriv ut bilder
+
+Kvittodesignern innehåller en **Logotyp**-variabel som kan användas för att ange vilka bilder som ska skrivas ut på kvittot. Bilder som ingår i kvitton med hjälp av variabeln **Logotyp** ska vara monkroma bitmappsfiltyper (.bmp). Om en .bmp-bild anges i kvittodesignern men inte skrivs ut när den skickas till skrivaren, kan detta bero på att filstorleken är för stor eller på att bilddimensionerna inte är kompatibla med skrivaren. Försök att reducera bildfilslösningen om detta inträffar.   
 
 ## <a name="design-a-receipt-format"></a>Designa ett kvittoformat
 
@@ -82,6 +85,3 @@ Mottagandet profiler tilldelas direkt till skrivare via hårdvara profil.
 
 > [!NOTE]
 > Om två skrivare används en skrivare kan användas för att skriva ut 40-kolumnen termiska kvitton. Den andra skrivare används vanligen för att skriva ut sida typerna som kräver mer information. Dessa inleveranstyperna inkludera kundens inköpsorder och kundfakturor.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
