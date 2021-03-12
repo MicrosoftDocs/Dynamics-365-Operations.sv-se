@@ -11,41 +11,40 @@ ms.technology: ''
 ms.search.form: WrkCtrCapability
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c07d3fe1969f3baea484991e74f668eade813d78
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 93b30cbe660d224f0a92f4e412d2b1ba33af3f9b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437368"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977848"
 ---
-# <a name="define-resource-capabilities"></a><span data-ttu-id="0f145-103">Definiera resurskunskaper</span><span class="sxs-lookup"><span data-stu-id="0f145-103">Define resource capabilities</span></span>
+# <a name="define-resource-capabilities"></a><span data-ttu-id="aa8a0-103">Definiera resurskunskaper</span><span class="sxs-lookup"><span data-stu-id="aa8a0-103">Define resource capabilities</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="0f145-104">Resurskapaciteter beskriver vad verksamhetsresurser kan göra.</span><span class="sxs-lookup"><span data-stu-id="0f145-104">Resource capabilities describe what operations resources can do.</span></span> <span data-ttu-id="0f145-105">Vid tidsplanering matchas kraven för varje jobb och operation mot kapaciteter hos de tillgängliga resurserna.</span><span class="sxs-lookup"><span data-stu-id="0f145-105">During scheduling, the requirements of each job and operation are matched against the capabilities of the available resources.</span></span> <span data-ttu-id="0f145-106">Den här uppgiftsguiden hjälper dig att skapa en resurskapacitet och tilldela den till en resurs.</span><span class="sxs-lookup"><span data-stu-id="0f145-106">This task guide will help you create a resource capability and assign it to a resource.</span></span> <span data-ttu-id="0f145-107">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="0f145-107">The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="aa8a0-104">Resurskapaciteter beskriver vad verksamhetsresurser kan göra.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-104">Resource capabilities describe what operations resources can do.</span></span> <span data-ttu-id="aa8a0-105">Vid tidsplanering matchas kraven för varje jobb och operation mot kapaciteter hos de tillgängliga resurserna.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-105">During scheduling, the requirements of each job and operation are matched against the capabilities of the available resources.</span></span> <span data-ttu-id="aa8a0-106">Den här uppgiftsguiden hjälper dig att skapa en resurskapacitet och tilldela den till en resurs.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-106">This task guide will help you create a resource capability and assign it to a resource.</span></span> <span data-ttu-id="aa8a0-107">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-107">The demo data company used to create this task is USMF.</span></span>
 
 
-## <a name="create-a-resource-capability"></a><span data-ttu-id="0f145-108">Skapa en ny resurskapacitet</span><span class="sxs-lookup"><span data-stu-id="0f145-108">Create a resource capability</span></span>
-1. <span data-ttu-id="0f145-109">Gå till Resurskunskaper.</span><span class="sxs-lookup"><span data-stu-id="0f145-109">Go to Resource capabilities.</span></span>
-2. <span data-ttu-id="0f145-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="0f145-110">Click New.</span></span>
-3. <span data-ttu-id="0f145-111">Ange ID för resurskapaciteten i fältet Kapacitet.</span><span class="sxs-lookup"><span data-stu-id="0f145-111">In the Capability field, type the ID of the resource capability.</span></span>
-    * <span data-ttu-id="0f145-112">Använd kapacitets-ID för en viss operation för att ange att resurser som måste ha denna kapacitet för att utföra operationen.</span><span class="sxs-lookup"><span data-stu-id="0f145-112">For a given operation, you use the capability ID to specify that resources must have this capability to perform the operation.</span></span>  
-4. <span data-ttu-id="0f145-113">I fältet Beskrivning anger du en kort beskrivning av kapaciteten.</span><span class="sxs-lookup"><span data-stu-id="0f145-113">In the Description field, enter a description of the capability.</span></span>
+## <a name="create-a-resource-capability"></a><span data-ttu-id="aa8a0-108">Skapa en ny resurskapacitet</span><span class="sxs-lookup"><span data-stu-id="aa8a0-108">Create a resource capability</span></span>
+1. <span data-ttu-id="aa8a0-109">Gå till Resurskunskaper.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-109">Go to Resource capabilities.</span></span>
+2. <span data-ttu-id="aa8a0-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-110">Click New.</span></span>
+3. <span data-ttu-id="aa8a0-111">Ange ID för resurskapaciteten i fältet Kapacitet.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-111">In the Capability field, type the ID of the resource capability.</span></span>
+    * <span data-ttu-id="aa8a0-112">Använd kapacitets-ID för en viss operation för att ange att resurser som måste ha denna kapacitet för att utföra operationen.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-112">For a given operation, you use the capability ID to specify that resources must have this capability to perform the operation.</span></span>  
+4. <span data-ttu-id="aa8a0-113">I fältet Beskrivning anger du en kort beskrivning av kapaciteten.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-113">In the Description field, enter a description of the capability.</span></span>
 
-## <a name="assign-capability-to-a-resource"></a><span data-ttu-id="0f145-114">Tilldela kapaciteten till en resurs</span><span class="sxs-lookup"><span data-stu-id="0f145-114">Assign capability to a resource</span></span>
-1. <span data-ttu-id="0f145-115">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="0f145-115">Click Add.</span></span>
-2. <span data-ttu-id="0f145-116">Ange ID för resursen i fältet Resurs.</span><span class="sxs-lookup"><span data-stu-id="0f145-116">In the Resource field, type the ID of the resource.</span></span>
-    * <span data-ttu-id="0f145-117">En resurskapacitet kan tilldelas till en eller flera resurser.</span><span class="sxs-lookup"><span data-stu-id="0f145-117">A resource capability can be assigned to one or more resources.</span></span>  
-3. <span data-ttu-id="0f145-118">I fältet Utgång anger du datum.</span><span class="sxs-lookup"><span data-stu-id="0f145-118">In the Expiration field, enter a date.</span></span>
-    * <span data-ttu-id="0f145-119">Du kan använda det här fältet om du vill ange att en resurs har kapacitet i bara en begränsad tid.</span><span class="sxs-lookup"><span data-stu-id="0f145-119">You can use this field to specify that a resource has the capability for only a limited time.</span></span>  
-4. <span data-ttu-id="0f145-120">Välj ett tal i fältet Prioritet.</span><span class="sxs-lookup"><span data-stu-id="0f145-120">In the Priority field, enter a number.</span></span>
-    * <span data-ttu-id="0f145-121">När du planerar jobb och operationer kan du ange om du vill välja resurser efter prioritet.</span><span class="sxs-lookup"><span data-stu-id="0f145-121">When you schedule jobs and operations, you can specify whether to select resources by priority.</span></span> <span data-ttu-id="0f145-122">Om du väljer att göra detta och fler än en resurs kan utföra jobbet eller operationen per det begärt datumet, väljs resursen som har lägst prioritet med avseende på den begärda kapaciteten.</span><span class="sxs-lookup"><span data-stu-id="0f145-122">If you choose to do this, and more than one resource can perform the job or operation by the requested date, the resource that has the lowest priority with respect to the required capability is selected.</span></span>  
-5. <span data-ttu-id="0f145-123">Välj ett tal i fältet Nivå.</span><span class="sxs-lookup"><span data-stu-id="0f145-123">In the Level field, enter a number.</span></span>
-    * <span data-ttu-id="0f145-124">När du anger att ett jobb eller en operation kräver en viss kapacitet, kan du också ange den lägsta nivån som krävs.</span><span class="sxs-lookup"><span data-stu-id="0f145-124">When you specify that a job or operation requires a particular capability, you can also specify the minimum level that is required.</span></span> <span data-ttu-id="0f145-125">Använd kapacitetsnivån för att skilja mellan resurser som kan utföra samma jobb, men med olika hastighet, styrka, storlek osv.</span><span class="sxs-lookup"><span data-stu-id="0f145-125">Use the capability level to differentiate resources that can perform the same job, but at different speeds, strengths, sizes, and so on.</span></span>  
+## <a name="assign-capability-to-a-resource"></a><span data-ttu-id="aa8a0-114">Tilldela kapaciteten till en resurs</span><span class="sxs-lookup"><span data-stu-id="aa8a0-114">Assign capability to a resource</span></span>
+1. <span data-ttu-id="aa8a0-115">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-115">Click Add.</span></span>
+2. <span data-ttu-id="aa8a0-116">Ange ID för resursen i fältet Resurs.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-116">In the Resource field, type the ID of the resource.</span></span>
+    * <span data-ttu-id="aa8a0-117">En resurskapacitet kan tilldelas till en eller flera resurser.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-117">A resource capability can be assigned to one or more resources.</span></span>  
+3. <span data-ttu-id="aa8a0-118">I fältet Utgång anger du datum.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-118">In the Expiration field, enter a date.</span></span>
+    * <span data-ttu-id="aa8a0-119">Du kan använda det här fältet om du vill ange att en resurs har kapacitet i bara en begränsad tid.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-119">You can use this field to specify that a resource has the capability for only a limited time.</span></span>  
+4. <span data-ttu-id="aa8a0-120">Välj ett tal i fältet Prioritet.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-120">In the Priority field, enter a number.</span></span>
+    * <span data-ttu-id="aa8a0-121">När du planerar jobb och operationer kan du ange om du vill välja resurser efter prioritet.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-121">When you schedule jobs and operations, you can specify whether to select resources by priority.</span></span> <span data-ttu-id="aa8a0-122">Om du väljer att göra detta och fler än en resurs kan utföra jobbet eller operationen per det begärt datumet, väljs resursen som har lägst prioritet med avseende på den begärda kapaciteten.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-122">If you choose to do this, and more than one resource can perform the job or operation by the requested date, the resource that has the lowest priority with respect to the required capability is selected.</span></span>  
+5. <span data-ttu-id="aa8a0-123">Välj ett tal i fältet Nivå.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-123">In the Level field, enter a number.</span></span>
+    * <span data-ttu-id="aa8a0-124">När du anger att ett jobb eller en operation kräver en viss kapacitet, kan du också ange den lägsta nivån som krävs.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-124">When you specify that a job or operation requires a particular capability, you can also specify the minimum level that is required.</span></span> <span data-ttu-id="aa8a0-125">Använd kapacitetsnivån för att skilja mellan resurser som kan utföra samma jobb, men med olika hastighet, styrka, storlek osv.</span><span class="sxs-lookup"><span data-stu-id="aa8a0-125">Use the capability level to differentiate resources that can perform the same job, but at different speeds, strengths, sizes, and so on.</span></span>  
 
