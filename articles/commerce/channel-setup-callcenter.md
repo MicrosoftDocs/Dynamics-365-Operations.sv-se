@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: b25626dafc07d576699ceba3cc9ca691db45cb9f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4415984"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997760"
 ---
 # <a name="set-up-a-call-center-channel"></a>Ställa in en kundtjänstkanal
 
@@ -65,26 +64,26 @@ I bilden nedan visas ett exempel på kundtjänstkanal.
 
 ## <a name="additional-channel-setup"></a>Konfiguration av ytterligare kanal
 
-Ytterligare uppgifter som krävs för inställningar av kundtjänstkanal inkluderar inställning av betalningsmetoder och leveranssätt.
+Ytterligare uppgifter som krävs för inställningar av kundtjänstkanal inkluderar inställning av betalsätt och leveranssätt.
 
-I följande bild visas konfigurationsalternativen **leveranssätt** och **betalningsmetoder** på fliken **inställning**.
+I följande bild visas konfigurationsalternativen **leveranssätt** och **betalsätt** på fliken **inställning**.
 
 ![Ytterligare åtgärder för konfigurering av kundtjänstkanal](media/channel-setup-callcenter-3.png)
 
-### <a name="set-up-payment-methods"></a>Ange betalningsmetoder
+### <a name="set-up-payment-methods"></a>Ange betalsätt
 
-Om du vill ställa in betalningsmetoder följer du dessa steg för varje betalningstyp som stöds på den här kanalen. Användarna måste välja bland fördefinierade betalningsmetoder för att kunna länka dem till kundtjänstkanalen. Innan du ställer in dina betalningsmetoder för kundtjänst, ställ först in dina betalningsmetoder i **Retail och Commerce \> Kanalinställning \> Betalningsmetoder \> Betalningsmetoder**.
+Om du vill ställa in betalsätt följer du dessa steg för varje betalningstyp som stöds på den här kanalen. Användarna måste välja bland fördefinierade betalsätt för att kunna länka dem till kundtjänstkanalen. Innan du ställer in dina betalsätt för kundtjänst, ställ först in dina betalsätt i **Retail och Commerce \> Kanalinställning \> Betalsätt \> Betalsätt**.
 
 1. I åtgärdsfönstret, välj fliken **Inställningar** och välj sedan **betalningssätt**.
 1. Klicka på **Ny** i åtgärdsfönstret.
-1. I navigeringsfönstret väljer du en betalningsmetod från tillgängliga fördefinierade betalningar.
+1. I navigeringsfönstret väljer du ett betalsätt från tillgängliga fördefinierade betalningar.
 1. Konfigurera eventuella ytterligare inställningar efter behov för betalningstypen. För kreditkort, presentkort eller förmånskort behöver du ytterligare inställningar genom att välja funktionen **kortinställningar**. 
 1. Konfigurera lämpliga bokföringskonton för betalningstypen avsnittet **bokföring**.
 1. I åtgärdsfönstret, klicka på **spara**.
 
 I bilden nedan visas ett exempel på en kontantbetalningsmetod.
 
-![Exempel på betalningsmetoder](media/channel-setup-callcenter-payments.png)
+![Exempel på betalsätt](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Ställ in leveranssätt
 
@@ -136,6 +135,3 @@ Om du vill ställa in en prisgrupp gör du följande.
 [Ställa in och arbeta med bedrägerivarningar](set-up-fraud-alerts.md)
 
 [Ställa in kontinuitetsprogram för kundtjänster](set-up-continuity-program.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

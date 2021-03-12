@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ebc5cfa490a4c8538fd081aced0844ed01d63a26
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: 138c256b56593c4fafb20050a97e614fa584597c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4415991"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997837"
 ---
 # <a name="cart-icon-module"></a>Vagnikonmodul
 
@@ -32,7 +31,7 @@ Det här avsnittet handlar om vagnikonmodulen och beskriver hur du lägger till 
 
 ## <a name="overview"></a>Översikt
 
-Vagnikonmodulen representerar kundvagnen i huvudmodulen på sidan och visar antalet artiklar i vagnen. Vagnikonmodulen visar också en sammanfattning av kundvagnen (även kallad en minivagn) när vagnikonen hovras över. Minivagnen ger användaren en sammanfattning av artiklarna i kundvagnen utan att behöva navigera till kundvagnssidan. Dessutom kan användaren gå direkt till kassasidan om de är nöjda med sammanfattningen. Detta minskar antalet sidnavigeringer och gör utcheckningen snabbare. 
+Vagnikonmodulen representerar kundvagnen i huvudmodulen på sidan och visar antalet artiklar i vagnen. Vagnikonmodulen visar också en sammanfattning av kundvagnen (även kallad en minivagn) när vagnikonen hovras över. Minivagnen ger användaren en sammanfattning av artiklarna i kundvagnen utan att behöva navigera till kundvagnssidan. Dessutom kan användaren gå direkt till kassasidan om de är nöjda med sammanfattningen. Detta minskar antalet sidnavigeringer och gör kassan snabbare. 
 
 > [!NOTE]
 > Stöd för modulen kundvagnikon i Dynamics 365 Commerce 10.0.11-versionen.
@@ -66,6 +65,3 @@ Mer information om hur du lägger till en vagnikonmodul finns i [Huvudmodul](aut
 [Orderinformationsmodul](order-confirmation-module.md)
 
 [Presentkortsmodul](add-giftcard.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

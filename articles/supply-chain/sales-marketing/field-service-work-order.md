@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d8051e21c731213e2d74ab6eeb80c239ca9932e6
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f9395d39a68cd11f57262c791dd7646975c5e516
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528933"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998513"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synkronisera arbetsorder i Field Service till försäljningsorder i Supply Chain Management
 
@@ -62,13 +61,13 @@ Följande synkroniseringsuppgifter krävs före synkronisering av huvuden och ra
 
 | **Field Service** | **Hantering av underleverantörer** |
 |-------------------------|-------------------------|
-| msdyn_workorders        | CDS-försäljningsorderrubrik |
-| msdyn_workorderservices | CDS-försäljningsorderrader   |
-| msdyn_workorderproducts | CDS-försäljningsorderrader   |
+| msdyn_workorders        | Dataverse försäljningsorderhuvuden |
+| msdyn_workorderservices | Dataverse-försäljningsorderrader   |
+| msdyn_workorderproducts | Dataverse-försäljningsorderrader   |
 
 ## <a name="entity-flow"></a>Flöde för entitet
 
-Arbetsorder skapas i Field Service. Om arbetsorder endast innehåller externt underhållna produkter och om värdet för **Arbetsorderstatus** skiljer sig från **Öppen - Ej schemalagd** och **Stängda – Annullerade** kan arbetsordern synkroniseras till Supply Chain Management via Common Data Service-dataintegreringsprojekt. Uppdateringar i arbetsordern synkroniseras som försäljningsorder i Supply Chain Management. Dessa uppdateringar omfattar information om ursprungstyp och status.
+Arbetsorder skapas i Field Service. Om arbetsorder endast innehåller externt underhållna produkter och om värdet för **Arbetsorderstatus** skiljer sig från **Öppen - Ej schemalagd** och **Stängda – Annullerade** kan arbetsordern synkroniseras till Supply Chain Management via Microsoft Dataverse-dataintegreringsprojekt. Uppdateringar i arbetsordern synkroniseras som försäljningsorder i Supply Chain Management. Dessa uppdateringar omfattar information om ursprungstyp och status.
 
 ## <a name="estimated-versus-used"></a>Uppskattad jämfört med Använd
 
@@ -273,6 +272,3 @@ Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatu
 Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004) eller (msdyn_allocated ne true))
 
 [![Mallmappning i dataintegrering](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

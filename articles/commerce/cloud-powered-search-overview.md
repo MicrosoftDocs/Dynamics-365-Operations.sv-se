@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 00a3de2515cea341f7529b8cb6cb2caae5e33d22
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5a9cb82053640b7abdba420e087d0707208979de
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415709"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997660"
 ---
 # <a name="cloud-powered-search-overview"></a>Översikt över molnbaserade sökningar
 
@@ -35,7 +34,7 @@ Det här ämnet ger en översikt över den molnbaserade sökningen i Microsoft D
 
 Produktidentifiering garanterar att kunder snabbt och enkelt kan hitta produkter genom att bläddra bland kategorier, söka och filtrera. Återförsäljare betraktar produktidentifiering som ett primärt verktyg för kundinteraktion i alla kanaler.
 
-Kunderna är vana vid de nästan ögonblickliga svarstiderna för sökmotorer på webben, avancerade näthandelsplatser, sociala appar, automatiska förslag som visas som söktermer, inblandad navigering och markeringar. Om kunderna inte hittar produkten som de letar efter tillräckligt snabbt i en nätbutik tvekar de inte att gå vidare till en annan nätbutik.
+Kunderna är vana vid de nästan ögonblickliga svarstiderna för sökmotorer på webben, avancerade näthandelssajter, sociala appar, automatiska förslag som visas som söktermer, inblandad navigering och markeringar. Om kunderna inte hittar produkten som de letar efter tillräckligt snabbt i en nätbutik tvekar de inte att gå vidare till en annan nätbutik.
 
 Den molnbaserade produktidentifieringen i Dynamics 365 Commerce hjälper återförsäljare att fortsätta att öka konsumenternas lagrings- och konverteringskurser över alla kanaler, både näthandelskanaler och kassakanaler (POS).
 
@@ -82,6 +81,3 @@ Förbättrad sortering i Dynamics 365 Commerce låter kunderna sortera, söka oc
 [Översikt över standardkategorilandningssida och sida för sökresultat](category-search-page-overview.md)
 
 [Hantera SEO-metadata](manage-seo-metadata.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

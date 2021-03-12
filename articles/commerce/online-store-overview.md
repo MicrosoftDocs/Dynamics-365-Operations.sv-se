@@ -1,6 +1,6 @@
 ---
 title: Webbplatsöversikt för näthandel
-description: Detta ämne innehåller en översikt över stödet för näthandelsplatser i Microsoft Dynamics 365 Commerce.
+description: Detta ämne innehåller en översikt över stödet för näthandelssajter i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: AnnBe
 ms.date: 11/05/2020
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,18 +18,18 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a5ced6311f32405e544e66d18c912ce40deb177f
-ms.sourcegitcommit: 33a746e41cd6f7b6b056b19b550a84f6a1b905d4
+ms.openlocfilehash: ae220e98acbda99255beefea598d973dbaa22368
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "4512927"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997557"
 ---
 # <a name="e-commerce-site-overview"></a>Webbplatsöversikt för näthandel
 
 [!include [banner](includes/banner.md)]
 
-Detta ämne innehåller en översikt över stödet för näthandelsplatser i Microsoft Dynamics 365 Commerce. Den innehåller information om hur näthandelsbutiker initieras och hanteras i Dynamics 365 Commerce. Den ger också länkar till mer information om onlinebutiker samt om hur du skapar och konfigurerar en näthandelsplats. Även om detta ämne täcker många av grunderna omfattar det inte allt som krävs för att konfigurera en produktion näthandelsplats. Mer avancerade ämnen finns i Dynamics 365 Commerce-dokumentationen.
+Detta ämne innehåller en översikt över stödet för näthandelssajter i Microsoft Dynamics 365 Commerce. Den innehåller information om hur näthandelsbutiker initieras och hanteras i Dynamics 365 Commerce. Den ger också länkar till mer information om onlinebutiker samt om hur du skapar och konfigurerar en näthandelssajt. Även om detta ämne täcker många av grunderna omfattar det inte allt som krävs för att konfigurera en produktion näthandelssajt. Mer avancerade ämnen finns i Dynamics 365 Commerce-dokumentationen.
 
 ## <a name="online-store-channel"></a>Onlinebutikskanal
 
@@ -38,15 +37,15 @@ Innan du kan skapa din plats i Dynamics 365 Commerce måste minst en onlinebutik
 
 I Dynamics 365 Commerce använder du en onlinebutikskanal för att fastställa produkter, prissättning, språk, betalsätt, leveranssätt, lagercentraler och andra aspekter av online-upplevelsen som ska vara tillgängliga för dina kunder.
 
-Endast en onlinebutikskanal måste ställas in innan du kan komma igång med Dynamics 365 Commerce. En enda näthandelsplats kan emellertid tillhandahålla online-upplevelsen för flera onlinebutiker. Om flera onlinebutiker exempelvis har ställts in för att stödja olika geografiska regioner, kan en enda uppsättning näthandelssidor användas för att tillhandahålla de unika upplevelser som definieras av respektive butik. Mer information om hur du konfigurerar en plats för att stödja flera onlinebutiker finns [i associera en onlinewebbplats med en kanal](associate-site-online-store.md).
+Endast en onlinebutikskanal måste ställas in innan du kan komma igång med Dynamics 365 Commerce. En enda näthandelssajt kan emellertid tillhandahålla online-upplevelsen för flera onlinebutiker. Om flera onlinebutiker exempelvis har ställts in för att stödja olika geografiska regioner, kan en enda uppsättning näthandelssidor användas för att tillhandahålla de unika upplevelser som definieras av respektive butik. Mer information om hur du konfigurerar en plats för att stödja flera onlinebutiker finns [i associera en onlinewebbplats med en kanal](associate-site-online-store.md).
 
 När en onlinebutik har ställts in kan den associeras med Dynamics 365 Commerce webbplatsen fungerar som ditt onlineskyltfönster. Mer information om onlinebutiker och hur du konfigurerar dem finns [Konfigurera onlinebutiker](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores).
 
 ## <a name="deploy-a-new-e-commerce-tenant"></a>Distribuera en ny klientorganisation för näthandel
 
-Under initieringen av en näthandelsplats uppmanas du att ange ett domännamn. Mer information om domäner i Commerce finns i [Konfigurera ditt domännamn](configure-your-domain-name.md) och [Domäner i Dynamics 365 Commerce](domains-commerce.md). Om du vill distribuera en ny klientorganisation för näthandel genom att använda [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide) följer du stegen i [Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md). När din klientorganisation för näthandel har konfigurerats i LCS skapas en länk till Commerce-webbplatsbyggaren. Du kan sedan använda Commerce-webbplatsbyggaren för att initiera och konfigurera dina näthandelsplatser.
+Under initieringen av en näthandelssajt uppmanas du att ange ett domännamn. Mer information om domäner i Commerce finns i [Konfigurera ditt domännamn](configure-your-domain-name.md) och [Domäner i Dynamics 365 Commerce](domains-commerce.md). Om du vill distribuera en ny klientorganisation för näthandel genom att använda [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide) följer du stegen i [Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md). När din klientorganisation för näthandel har konfigurerats i LCS skapas en länk till Commerce-webbplatsbyggaren. Du kan sedan använda Commerce-webbplatsbyggaren för att initiera och konfigurera dina näthandelssajter.
 
-## <a name="initialize-your-e-commerce-site"></a>Initiera din näthandelsplats
+## <a name="initialize-your-e-commerce-site"></a>Initiera din näthandelssajt
 
 När du startar Commerce-webbplatsbyggaren från LCS visas sidan **Webbplatser**. Den här sidan innehåller två förkonfigurerade webbplatser, **standard** och **fabrikam**, som visas i följande illustration.
 
@@ -62,9 +61,9 @@ När en ny webbplats har initierats visas **Start**-sidan för Commerce-webbplat
 
 ![Länkar på startsidan i Commerce-webbplatsbyggaren](media/e-commerce-site-03.png)
 
-## <a name="modify-online-store-channels-or-add-online-store-channels-to-an-e-commerce-site"></a>Ändra kanaler i onlinebutiken eller lägga till onlinebutikskanaler på en näthandelsplats
+## <a name="modify-online-store-channels-or-add-online-store-channels-to-an-e-commerce-site"></a>Ändra kanaler i onlinebutiken eller lägga till onlinebutikskanaler på en näthandelssajt
 
-När en näthandelsplats har skapats kan du ändra kanalen som den är kopplad till genom att följa stegen i [Associera en näthandelsplats med en onlinekanal](associate-site-online-store.md). Exemplet i följande bild visar hur ett numret för en kanaldriftsenhet (OUN) kan ändras på sidan **Kanaler** (**Webbplatsinställningar \> Kanaler**). När du har slutfört en ändring ska du se till att välja **Spara och publicera**. På så sätt ser du till att ändringen publiceras.
+När en näthandelssajt har skapats kan du ändra kanalen som den är kopplad till genom att följa stegen i [Associera en näthandelssajt med en onlinekanal](associate-site-online-store.md). Exemplet i följande bild visar hur ett numret för en kanaldriftsenhet (OUN) kan ändras på sidan **Kanaler** (**Webbplatsinställningar \> Kanaler**). När du har slutfört en ändring ska du se till att välja **Spara och publicera**. På så sätt ser du till att ändringen publiceras.
 
 ![Sidan Kanaler i Commerce-webbplatsbyggaren](media/e-commerce-site-04.png)
 
@@ -108,9 +107,9 @@ För information om hur du hanterar webbplatsinnehåll, se följande ämnen:
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Skapa en näthandelsplats](create-ecommerce-site.md)
+[Skapa en näthandelssajt](create-ecommerce-site.md)
 
-[Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
+[Distribuera en ny näthandelssajt](deploy-ecommerce-site.md)
 
 [Associera en online-webbplats med en kanal](associate-site-online-store.md)
 
@@ -121,6 +120,3 @@ För information om hur du hanterar webbplatsinnehåll, se följande ämnen:
 [Aktivera platsbaserad butiksdetektering](enable-store-detection.md)
 
 [Ställa in anpassade sidor för användarinloggningar](custom-pages-user-logins.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

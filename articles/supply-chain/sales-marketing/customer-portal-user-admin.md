@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0fd390e5e0054ff301c18c2507c600f954e6ce89
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528303"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996786"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Skapa och hantera kundportal användare
 
@@ -39,11 +38,11 @@ Videon [Bjud in kunder att registrera och använda kundportalen](https://youtu.b
 
 ## <a name="prerequisite-setup"></a>Nödvändiga inställningar
 
-Kontakter i Power Apps-portaler lagras som poster i entiteten **kontakter** i Common Data Service. Vid dubbelriktad skrivning synkroniseras dessa poster med Microsoft Dynamics 365 Supply Chain Management efter behov.
+Kontakter i Power Apps-portaler lagras som poster i tabellen **kontakter** i Microsoft Dataverse. Vid dubbelriktad skrivning synkroniseras dessa poster med Microsoft Dynamics 365 Supply Chain Management efter behov.
 
 ![Systemdiagram för kundportalkontakter](media/customer-portal-contacts.png "Systemdiagram för kundportalkontakter")
 
-Innan du börjar bjuda in nya kunder måste du kontrollera att du har aktiverat mappning av entiteten **Kontakt** i dubbelriktad skrivning.
+Innan du börjar bjuda in nya kunder måste du kontrollera att du har aktiverat mappning av tabellen **Kontakt** i dubbelriktad skrivning.
 
 ## <a name="the-invitation-process"></a>En inbjudningsprocess
 
@@ -58,15 +57,15 @@ När en kontakt har skapats bör du kunna se den i Supply Chain Management.
 
 Mer information finns i [Konfigurera en kontakt för användning på en portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) i dokumentationen till Power Apps-portalerna.
 
-## <a name="out-of-box-web-roles-and-entity-permissions"></a>Medföljande webbroller och enhetsbehörigheter
+## <a name="out-of-box-web-roles-and-table-permissions"></a>Medföljande webbroller och tabellbehörigheter
 
-Användarroller i Power Apps-portaler definieras av [webbroller](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) och [enhetsbehörigheter](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Ett par roller har definierats för medföljande kundportalen. Du kan skapa nya roller och du kan ändra eller ta bort befintliga roller.
+Användarroller i Power Apps-portaler definieras av [webbroller](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) och [tabellbehörigheter](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Ett par roller har definierats för medföljande kundportalen. Du kan skapa nya roller och du kan ändra eller ta bort befintliga roller.
 
 ### <a name="out-of-box-web-roles"></a>Medföljande webbroller
 
 I det här avsnittet beskrivs de webbroller som levereras med kundportalen.
 
-Mer information om hur du ändrar medföljande användarrollerna finns i [skapa webbroller för portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) och [lägga till postbaserad säkerhet med hjälp av enhetsbehörigheter för portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) i dokumentationen för Power Apps-portaler.
+Mer information om hur du ändrar medföljande användarrollerna finns i [skapa webbroller för portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) och [lägga till postbaserad säkerhet med hjälp av tabellbehörigheter för portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) i dokumentationen för Power Apps-portaler.
 
 #### <a name="administrator"></a>Administratör
 
@@ -96,6 +95,3 @@ Följande tabell visar vilka försäljningsorder som användarna i respektive we
 
 > [!NOTE]
 > Även om både Sam och Jane är kontakter som arbetar för kund X, kan de bara se de order som de själva har placerat och inget annat. Även om May kan ha en order i systemet, kan hon inte se ordningen i kundportalen eftersom hon är en obehörig användare. (Dessutom måste hon ha placerat ordern via en annan kanal än kundportalen.)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

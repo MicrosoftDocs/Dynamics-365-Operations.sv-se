@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6ccfbe30e9d4a0fc4580c7036d222bfca9203a21
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437435"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996336"
 ---
 # <a name="confirm-and-transfer"></a>Bekräfta och överför
 
@@ -230,6 +229,3 @@ Du kan också bekräfta att transaktionsrelationerna har uppdaterats på följan
 - Alternativet **Dela kvantitet till ny last** fungerar även när vissa av de återstående arbetsrubrikerna har statusen *Pågår*. Därför kan du fortfarande använda funktionen även om arbetarna redan kör plockningsorder.
 - Om du väljer **Avbryt ej uppfylld kvantitet** när det finns återstående arbete med statusen *Öppen* eller *Pågår* visas följande fel meddelande: "det går inte att avbryta resterande kvantitet för last. Det finns arbete för last."
 - Om du väljer **Avbryt ej uppfylld kvantitet** när det inte finns något återstående arbete men det finns lastrader på ingången, visas följande felmeddelande: "Det gick inte att bekräfta inleveransen eftersom kvantiteten för artikeln överskrider procentsatsen som är definierad för under leveransen." Du undviker felet genom att ange procentsatsen **Under leverans** ej frisläppta raderna till 100 procent. Det går inte att flytta frisläppta rader till en ny last, men den aktuella last bekräftas med under leverans. I det här fallet kommer du inte att kunna frisläppa den ursprungliga ordern igen. Därför måste du hantera den på något annat sätt.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

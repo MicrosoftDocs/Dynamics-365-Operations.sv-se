@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSLocationBuild, WHSZone
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Supply Chain Management
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 6cf81939989b8faffcda51bbbd5bc6b27aec7eea
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 662725edf5bf8d95be038f7c989b73d8d05fa0df
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438034"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996436"
 ---
 # <a name="additional-location-zones"></a>Ytterligare platszoner
 
@@ -58,6 +57,3 @@ Innan du kan använda funktionen *Ytterligare platszon* den aktiveras i ditt sys
 7. Markera **Skapa**.
 8. Du får meddelanden om att nya platser har lagts till. Välj knappen **Visa meddelanden** om du vill visa meddelandena.
 9. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Platser**. De nya platserna visas i listan och alla zonfält är tillgängliga (det vill säga det befintliga zonfältet och de nya ytterligare zonfälten).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

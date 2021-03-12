@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16231
 ms.assetid: f28a827c-3a50-4d5e-83eb-e5a768db70a1
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9abe493746719d2e229ef09c2eb5f436b91b2171
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: 259b68aa28aa0c84699fc6d2e691bae0af135ab7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4415979"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997810"
 ---
 # <a name="call-center-catalogs"></a>Kundtjänstkataloger
 
@@ -32,11 +31,11 @@ ms.locfileid: "4415979"
 
 Det här avsnittet innehåller en beskrivning av den callcenterspecifika funktionen som är länkad till kataloger i Dynamics 365 Commerce.
 
-Katalogfunktionerna i Handel kan användas för flera ändamål. Ursprungligen skapades funktionerna för katalogen för näthandelsintegration för tredje part. Katalogens konfiguration tillät att företag kunde skapa en grupp med produkter och attribut som kunde publiceras externt för förbrukning av en tredje parts näthandelslösning.
+Katalogfunktionerna i Commerce kan användas för flera ändamål. Ursprungligen skapades funktionerna för katalogen för näthandelsintegration för tredje part. Katalogens konfiguration tillät att företag kunde skapa en grupp med produkter och attribut som kunde publiceras externt för förbrukning av en tredje parts näthandelslösning.
 
 När kundtjänsts supportkanal lades till utökades katalogkonceptet till att lägga till ytterligare funktioner för stöd och hantering relaterade till traditionella marknadsföringskataloger för försäljning direkt till konsument. Ett direkt till konsument-företag ger ofta ut tryckta kataloger som sedan skickas till ett eller flera segment med kunder. Dessa kataloger har vanligtvis särskilda erbjudanden och erbjudanden som bara gäller om kunden anger en katalogidentifieringskod när beställningen görs.
 
-Försäljning direkt till konsument-företag är mycket fokuserade på att följa upp svar på dessa kataloger så att kostnaderna för att tillverka och skicka dem är berättigade. För att spåra svar skrivs en kod traditionellt ut på baksidan av katalogen och denna kod begärs sedan och tillämpas när katalogmottagaren ringer för att göra en beställning per telefon (eller nu mer traditionellt kan koden anges när kunden gör en beställning online). Det finns olika branschtermer som har använts för att identifiera den här katalogen artikelspårningskod (inklusive nyckelkod, kampanjkod, katalogkod, källkoden) avses koden i Handel som **Källkods-ID**.
+Försäljning direkt till konsument-företag är mycket fokuserade på att följa upp svar på dessa kataloger så att kostnaderna för att tillverka och skicka dem är berättigade. För att spåra svar skrivs en kod traditionellt ut på baksidan av katalogen och denna kod begärs sedan och tillämpas när katalogmottagaren ringer för att göra en beställning per telefon (eller nu mer traditionellt kan koden anges när kunden gör en beställning online). Det finns olika branschtermer som har använts för att identifiera den här katalogen artikelspårningskod (inklusive nyckelkod, kampanjkod, katalogkod, källkoden) avses koden i Commerce som **Källkods-ID**.
 
 ## <a name="basic-catalog-setup"></a>Grundläggande kataloginställningar
 
@@ -92,15 +91,12 @@ När du konfigurerar produkter i katalogen, använd åtgärden **Produktsidlayou
 
 ## <a name="catalog-requests"></a>Katalogförfrågningar
 
-Medan kataloger som konfigurerats och publiceras i Handel kan funktionen **skicka katalog** användas. Den här funktionen finns på sidan **kundsökning** och **kundtjänst**. När du har valt en kundpost genom **Sök efter kund** eller medan du visar ett konto för valda kunder från **kundtjänst** kan användarna välja alternativet **skicka katalog** som leder till en dialogruta som tillåter användaren att välja från en lista över alla publicerade och aktiva kataloger. Användaren kan välja en katalog och en kvantitet och ett visst källkod-ID som ska skickas. När de klickar på knappen **skicka** kommer en begäran att lagras som sedan kan hanteras genom att skriva ut rapporten **Katalogförfrågningar**. Rapporten finns genom att gå till **Butik och handel** \> **Kundtjänstrapporter** \> **Katalogförfrågningar - rapport**. Den listar alla katalogförfrågningar, inklusive kundinformation för namn och adress till kunden som begärde ändringen av katalogen. Rapporten kan användas internt eller data kan överföras till tredje part underliggande externa processer för att fysiskt skicka katalogen till kunden.
+Medan kataloger som konfigurerats och publiceras i Commerce kan funktionen **skicka katalog** användas. Den här funktionen finns på sidan **kundsökning** och **kundtjänst**. När du har valt en kundpost genom **Sök efter kund** eller medan du visar ett konto för valda kunder från **kundtjänst** kan användarna välja alternativet **skicka katalog** som leder till en dialogruta som tillåter användaren att välja från en lista över alla publicerade och aktiva kataloger. Användaren kan välja en katalog och en kvantitet och ett visst källkod-ID som ska skickas. När de klickar på knappen **skicka** kommer en begäran att lagras som sedan kan hanteras genom att skriva ut rapporten **Katalogförfrågningar**. Rapporten finns genom att gå till **Butik och handel** \> **Kundtjänstrapporter** \> **Katalogförfrågningar – rapport**. Den listar alla katalogförfrågningar, inklusive kundinformation för namn och adress till kunden som begärde ändringen av katalogen. Rapporten kan användas internt eller data kan överföras till tredje part underliggande externa processer för att fysiskt skicka katalogen till kunden.
 
 ## <a name="additional-features"></a>Ytterligare funktioner
 
-På fliken **kataloger**, finns även alternativ för att konfigurera en **betalningsplan** och **gratisprodukter** tillgängliga. Om källkod-ID länkat till katalogen används vid orderregistrering för kundtjänst kommer kunden att berättigas kostnadsfria produkter eller användning av katalogbetalningsplaner enligt definitionen. Om det är nödvändigt att begränsa kunden till att endast kunna välja från betalningsscheman kopplade till deras katalog och inte alla aktiva betalningsplaner i systemet kan kryssrutan **Tillåt endast katalogplaner** markeras för minst ett källkod-ID som definierats för att framtvinga denna begränsning.
+På fliken **kataloger**, finns även alternativ för att konfigurera en **betalningsplan** och **gratisprodukter** tillgängliga. Om källkod-ID länkat till katalogen används vid orderregistrering för kundtjänst kommer kunden att berättigas kostnadsfria produkter eller användning av katalogbetalningsplaner enligt definitionen. Om det är nödvändigt att begränsa kunden till att endast kunna välja från betalplann kopplade till deras katalog och inte alla aktiva betalningsplaner i systemet kan kryssrutan **Tillåt endast katalogplaner** markeras för minst ett källkod-ID som definierats för att framtvinga denna begränsning.
 
 ## <a name="additional-notes"></a>Ytterligare noteringar
 
 När en källkod-ID gäller för en försäljningsorder i kundtjänst, används den för närvarande för att skapa priser, erbjudanden, skript och merförsäljning/korsförsäljnings som är katalogspecifika. Systemet kommer inte att förbjuda eller hindra att en produkt som inte finns i katalogen beställs på försäljningsordern. Om en artikel är beställd som inte tillhör katalogen, kommer systemet först att använda prisgrupp som definieras i kundtjänstkanalen **Prisgrupp** som definieras i kundtjänstkanalen (**Butik och handel** \> **Kanaler** \> **Kundtjänst** \> **Alla kundtjänster**) för artikelpris eller erbjudanden. Om du inte hittar något specifikt kanalpris, används det grundläggande försäljningspriset för artikeln.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

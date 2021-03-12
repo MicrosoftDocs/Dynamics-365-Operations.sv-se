@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a9291dddf7d4dc080b6eb1ec60702de32a761f45
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 100822ecea03d03267f98654c66e74f2f5924bd9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415794"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4997735"
 ---
 # <a name="set-up-a-retail-channel"></a>Ställa in en butikskanal
 
@@ -33,7 +32,7 @@ I det här avsnittet beskrivs hur du skapar en ny butikskanal i Microsoft Dynami
 
 ## <a name="overview"></a>Översikt
 
-Dynamics 365 Commerce stöder flera butikskanaler. Dessa kanaler inkluderar onlinebutiker, kundtjänst och butiker (kallas också fysiska butiker). Varje butikskanal kan ha egna betalningsmetoder, prisgrupper, kassaregister (POS), intäkts- och utgiftskonton och personal. Du måste ställa in alla dessa element innan du kan skapa en butikskanel. 
+Dynamics 365 Commerce stöder flera butikskanaler. Dessa kanaler inkluderar onlinebutiker, kundtjänst och butiker (kallas också fysiska butiker). Varje butikskanal kan ha egna betalsätt, prisgrupper, kassaregister (POS), intäkts- och utgiftskonton och personal. Du måste ställa in alla dessa element innan du kan skapa en butikskanel. 
 
 Innan du skapar en butikskanal ska du kontrollera att du följer [kanalförutsättningarna](channels-prerequisites.md).
 
@@ -66,7 +65,7 @@ I bilden nedan visas ett exempel på butikskanal.
 
 Det finns flera andra inställningar som kan ställas in i avsnitten **Utdrag/stängning** och **Diverse**, baserat på butikens behov.
 
-Se även [Skärmlayouter för kassan (POS)](pos-screen-layouts.md) för information om att ställa in standardskärmlayouten i avsnittet **skärmlayout** och [Konfigurera och installera Retail Hardware Station](retail-hardware-station-configuration-installation.md) för inställningsinformation om avsnittet **Maskinvarustationer**.
+Se även [Skärmlayouter för POS](pos-screen-layouts.md) för information om att ställa in standardskärmlayouten i avsnittet **skärmlayout** och [Konfigurera och installera Retail Hardware Station](retail-hardware-station-configuration-installation.md) för inställningsinformation om avsnittet **Maskinvarustationer**.
 
 I bilden nedan visas ett exempel på konfiguration av butikskanal.
 
@@ -76,15 +75,15 @@ I bilden nedan visas ett exempel på konfiguration av butikskanal.
 
 Det finns ytterligare objekt som måste konfigureras för en kanal som kan hittas i **åtgärdsfönstret** under avsnittet **inställningar**.
 
-Ytterligare uppgifter som krävs för online-kanalkonfigurering inkluderar inställning av betalningsmetoder, kontantdeklaration, leveranssätt, inkomst/utgiftskonto, avsnitt, tilldelning av uppfyllelsegrupp och kassaskåp.
+Ytterligare uppgifter som krävs för online-kanalkonfigurering inkluderar inställning av betalsätt, kontantdeklaration, leveranssätt, inkomst/utgiftskonto, avsnitt, tilldelning av uppfyllelsegrupp och kassaskåp.
 
 Följande bild visar olika ytterligare alternativ för inställning av butikskanaler på fliken **Inställningar**.
 
 ![Ställ in en kanal](media/channel-setup-retail-4.png)
 
-### <a name="set-up-payment-methods"></a>Ange betalningsmetoder
+### <a name="set-up-payment-methods"></a>Ange betalsätt
 
-Om du vill ställa in betalningsmetoder följer du dessa steg för varje betalningstyp som stöds på den här kanalen.
+Om du vill ställa in betalsätt följer du dessa steg för varje betalningstyp som stöds på den här kanalen.
 
 1. I åtgärdsfönstret, välj fliken **Inställningar** och välj sedan **betalningssätt**.
 1. Klicka på **Ny** i åtgärdsfönstret.
@@ -95,7 +94,7 @@ Om du vill ställa in betalningsmetoder följer du dessa steg för varje betalni
 
 I bilden nedan visas ett exempel på en kontantbetalningsmetod.
 
-![Exempel på betalningsmetoder](media/channel-setup-retail-5.png)
+![Exempel på betalsätt](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-cash-declaration"></a>Inställningar för kontantavstämning
 
@@ -182,6 +181,3 @@ Så här ställer du in kassaskåp.
 
 [Ställa in en kundtjänstkanal](channel-setup-callcenter.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
