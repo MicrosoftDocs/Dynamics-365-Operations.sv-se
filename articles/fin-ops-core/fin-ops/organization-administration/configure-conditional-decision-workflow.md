@@ -16,39 +16,39 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 957246ac9a758de9f420b9c672520dcb07c43a69
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 3a880d4be461ea9b2caa61b7d038f9b24486a919
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693964"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798891"
 ---
-# <a name="configure-conditional-decisions-in-a-workflow"></a><span data-ttu-id="b66c5-103">Konfigurera villkorsbeslut i ett arbetsflöde</span><span class="sxs-lookup"><span data-stu-id="b66c5-103">Configure conditional decisions in a workflow</span></span>
+# <a name="configure-conditional-decisions-in-a-workflow"></a><span data-ttu-id="ca602-103">Konfigurera villkorsbeslut i ett arbetsflöde</span><span class="sxs-lookup"><span data-stu-id="ca602-103">Configure conditional decisions in a workflow</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="b66c5-104">Använd följande procedur om du vill konfigurera egenskaperna för ett villkorsbeslut.</span><span class="sxs-lookup"><span data-stu-id="b66c5-104">Use the following procedure to configure the properties of a conditional decision.</span></span>
+<span data-ttu-id="ca602-104">Använd följande procedur om du vill konfigurera egenskaperna för ett villkorsbeslut.</span><span class="sxs-lookup"><span data-stu-id="ca602-104">Use the following procedure to configure the properties of a conditional decision.</span></span>
 
-<span data-ttu-id="b66c5-105">Ett villkorligt beslut är en punkt vid vilken ett arbetsflöde delas i två grenar.</span><span class="sxs-lookup"><span data-stu-id="b66c5-105">A conditional decision is a point at which a workflow divides into two branches.</span></span> <span data-ttu-id="b66c5-106">Högerklicka på villkorsbeslutet och klicka sedan på **Properties** i arbetsflödesredigeraren för att öppna formuläret **Properties** om du vill konfigurera ett villkorsbeslut.</span><span class="sxs-lookup"><span data-stu-id="b66c5-106">To configure a conditional decision, in the workflow editor, right-click the conditional decision, and then click **Properties** to open the **Properties** form.</span></span>
+<span data-ttu-id="ca602-105">Ett villkorligt beslut är en punkt vid vilken ett arbetsflöde delas i två grenar.</span><span class="sxs-lookup"><span data-stu-id="ca602-105">A conditional decision is a point at which a workflow divides into two branches.</span></span> <span data-ttu-id="ca602-106">Högerklicka på villkorsbeslutet och klicka sedan på **Properties** i arbetsflödesredigeraren för att öppna formuläret **Properties** om du vill konfigurera ett villkorsbeslut.</span><span class="sxs-lookup"><span data-stu-id="ca602-106">To configure a conditional decision, in the workflow editor, right-click the conditional decision, and then click **Properties** to open the **Properties** form.</span></span>
 
-## <a name="name-a-decision"></a><span data-ttu-id="b66c5-107">Namnge ett beslut</span><span class="sxs-lookup"><span data-stu-id="b66c5-107">Name a decision</span></span>
+## <a name="name-a-decision"></a><span data-ttu-id="ca602-107">Namnge ett beslut</span><span class="sxs-lookup"><span data-stu-id="ca602-107">Name a decision</span></span>
 
-<span data-ttu-id="b66c5-108">Följ dessa steg när du vill ange ett namn för ett villkorsbeslut.</span><span class="sxs-lookup"><span data-stu-id="b66c5-108">Follow these steps to enter a name for a conditional decision.</span></span>
+<span data-ttu-id="ca602-108">Följ dessa steg när du vill ange ett namn för ett villkorsbeslut.</span><span class="sxs-lookup"><span data-stu-id="ca602-108">Follow these steps to enter a name for a conditional decision.</span></span>
 
-1. <span data-ttu-id="b66c5-109">Klicka på **Grundinställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="b66c5-109">In the left pane, click **Basic Settings**.</span></span>
-2. <span data-ttu-id="b66c5-110">I fältet **Namn** anger du ett unikt namn för villkorsbeslutet.</span><span class="sxs-lookup"><span data-stu-id="b66c5-110">In the **Name** field, enter a unique name for the conditional decision.</span></span>
+1. <span data-ttu-id="ca602-109">Klicka på **Grundinställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="ca602-109">In the left pane, click **Basic Settings**.</span></span>
+2. <span data-ttu-id="ca602-110">I fältet **Namn** anger du ett unikt namn för villkorsbeslutet.</span><span class="sxs-lookup"><span data-stu-id="ca602-110">In the **Name** field, enter a unique name for the conditional decision.</span></span>
 
-## <a name="set-conditions"></a><span data-ttu-id="b66c5-111"> Ange villkor</span><span class="sxs-lookup"><span data-stu-id="b66c5-111">Set conditions</span></span>
+## <a name="set-conditions"></a><span data-ttu-id="ca602-111"> Ange villkor</span><span class="sxs-lookup"><span data-stu-id="ca602-111">Set conditions</span></span>
 
-<span data-ttu-id="b66c5-112">Systemet avgör vilken gren som ska användas genom att utvärdera det skickade dokumentet för att bestämma om det uppfyller specifika villkor.</span><span class="sxs-lookup"><span data-stu-id="b66c5-112">The system determines which branch is used by evaluating the submitted document to determine whether it meets specific conditions.</span></span>
+<span data-ttu-id="ca602-112">Systemet avgör vilken gren som ska användas genom att utvärdera det skickade dokumentet för att bestämma om det uppfyller specifika villkor.</span><span class="sxs-lookup"><span data-stu-id="ca602-112">The system determines which branch is used by evaluating the submitted document to determine whether it meets specific conditions.</span></span>
 
-1. <span data-ttu-id="b66c5-113">Klicka på **Grundinställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="b66c5-113">In the left pane, click **Basic Settings**.</span></span>
-2. <span data-ttu-id="b66c5-114">Klicka på **Lägg till villkor**.</span><span class="sxs-lookup"><span data-stu-id="b66c5-114">Click **Add condition**.</span></span>
-3. <span data-ttu-id="b66c5-115">Ange ett villkor.</span><span class="sxs-lookup"><span data-stu-id="b66c5-115">Enter a condition.</span></span>
-4. <span data-ttu-id="b66c5-116">Ange ytterligare villkor vid behov.</span><span class="sxs-lookup"><span data-stu-id="b66c5-116">Enter additional conditions, if they are required.</span></span>
-5. <span data-ttu-id="b66c5-117">Slutför följande steg för att bekräfta att de villkor som du har angett har ställts in korrekt:</span><span class="sxs-lookup"><span data-stu-id="b66c5-117">To verify that the conditions that you entered are configured correctly, complete the following steps:</span></span>
+1. <span data-ttu-id="ca602-113">Klicka på **Grundinställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="ca602-113">In the left pane, click **Basic Settings**.</span></span>
+2. <span data-ttu-id="ca602-114">Klicka på **Lägg till villkor**.</span><span class="sxs-lookup"><span data-stu-id="ca602-114">Click **Add condition**.</span></span>
+3. <span data-ttu-id="ca602-115">Ange ett villkor.</span><span class="sxs-lookup"><span data-stu-id="ca602-115">Enter a condition.</span></span>
+4. <span data-ttu-id="ca602-116">Ange ytterligare villkor vid behov.</span><span class="sxs-lookup"><span data-stu-id="ca602-116">Enter additional conditions, if they are required.</span></span>
+5. <span data-ttu-id="ca602-117">Slutför följande steg för att bekräfta att de villkor som du har angett har ställts in korrekt:</span><span class="sxs-lookup"><span data-stu-id="ca602-117">To verify that the conditions that you entered are configured correctly, complete the following steps:</span></span>
 
-    1. <span data-ttu-id="b66c5-118">Klicka på **Testa** för att öppna formuläret **Testa arbetsflödesvillkor**.</span><span class="sxs-lookup"><span data-stu-id="b66c5-118">Click **Test** to open the **Test workflow condition** form.</span></span>
-    2. <span data-ttu-id="b66c5-119">Markera en post i området **Validera villkor** i formuläret.</span><span class="sxs-lookup"><span data-stu-id="b66c5-119">Select a record in the **Validate condition** area of the form.</span></span>
-    3. <span data-ttu-id="b66c5-120">Klicka på **Ja**.</span><span class="sxs-lookup"><span data-stu-id="b66c5-120">Click **Test**.</span></span> <span data-ttu-id="b66c5-121">Systemet utvärderar posten i syfte att avgöra om den uppfyller villkoren som du angett.</span><span class="sxs-lookup"><span data-stu-id="b66c5-121">The system evaluates the record to determine whether it meets the conditions that you defined.</span></span>
-    4. <span data-ttu-id="b66c5-122">Klicka på **OK** eller **Avbryt** för att återgå till formuläret **Egenskaper**.</span><span class="sxs-lookup"><span data-stu-id="b66c5-122">Click **OK** or **Cancel** to return to the **Properties** form.</span></span>
+    1. <span data-ttu-id="ca602-118">Klicka på **Testa** för att öppna formuläret **Testa arbetsflödesvillkor**.</span><span class="sxs-lookup"><span data-stu-id="ca602-118">Click **Test** to open the **Test workflow condition** form.</span></span>
+    2. <span data-ttu-id="ca602-119">Markera en post i området **Validera villkor** i formuläret.</span><span class="sxs-lookup"><span data-stu-id="ca602-119">Select a record in the **Validate condition** area of the form.</span></span>
+    3. <span data-ttu-id="ca602-120">Klicka på **Ja**.</span><span class="sxs-lookup"><span data-stu-id="ca602-120">Click **Test**.</span></span> <span data-ttu-id="ca602-121">Systemet utvärderar posten i syfte att avgöra om den uppfyller villkoren som du angett.</span><span class="sxs-lookup"><span data-stu-id="ca602-121">The system evaluates the record to determine whether it meets the conditions that you defined.</span></span>
+    4. <span data-ttu-id="ca602-122">Klicka på **OK** eller **Avbryt** för att återgå till formuläret **Egenskaper**.</span><span class="sxs-lookup"><span data-stu-id="ca602-122">Click **OK** or **Cancel** to return to the **Properties** form.</span></span>
