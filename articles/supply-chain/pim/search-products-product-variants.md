@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, PurchTablePart, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 248534
 ms.assetid: 99dd5ce1-0029-4f06-90e7-865e6d46d86e
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 532f437bee490743847cf5617579c579f9202b71
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 6ff95b9e16d1a56dee13f67d0a3355f09cfc60b9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438073"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987189"
 ---
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Sök efter produkter och produktvarianter under orderregistrering
 
@@ -32,10 +31,10 @@ ms.locfileid: "4438073"
 
 Använd fältet **Artikelnummer** om du vill söka efter produkter och produktvarianter när du manuellt skapar en försäljningsorderrad eller en inköpsorderrad.  På så sätt kan du snabbt hitta produktvarianter, när du har endast har konfigurationsträngen eller en av produktdimensionerna tillgänglig.
 
-Ibland är det inte den bästa situationen att ha för mycket av något och detta gäller särskilt om du säljer ett antal liknande produkter och du försöker att komma ihåg artikelnummer eller produktsöknamn för att hitta den rätta produkten att lägga till i en försäljningsorder. Du kan använda fältet **Artikelnummer** på en försäljningsorderrad eller en inköpsorderrad som ett sökfält. Du kan ange valfri del av ett produktnamn, nummer eller dimension och få en sökning som visar alla artiklar som matchar sökordet.
+Ibland är det inte den bästa situationen att ha för mycket av något och detta gäller särskilt om du säljer ett antal liknande produkter och du försöker att komma ihåg artikelnummer eller produktsöknamn för att hitta den rätta produkten att lägga till i en försäljningsorder. Du kan använda fältet **Artikelnummer** på en försäljningsorderrad eller en inköpsorderrad som ett sökfält. Du kan ange valfri del av ett produktnamn, nummer eller dimension och få en sökning som visar alla artiklar som matchar sökordet.
 
-## <a name="how-searchworks"></a>Hur sökningen fungerar
-När du söker efter produkter eller produktvarianter är det viktigt att du förstår hur sökfunktionen hittar de produkter som matchar texten som du anger. De huvudsakliga sökreglerna vid leverans av sökresultat, är:
+## <a name="how-search-works"></a>Hur sökningen fungerar
+När du söker efter produkter eller produktvarianter är det viktigt att du förstår hur sökfunktionen hittar de produkter som matchar texten som du anger. De huvudsakliga sökreglerna vid leverans av sökresultat, är:
 
 -   Sökresultat returnerar en matchande post som ignorerar fältet som söktexten anges i.
 -   Söktexten måste finnas i den matchande posten i dess fullständiga längd.
@@ -44,7 +43,7 @@ När du söker efter produkter eller produktvarianter är det viktigt att du f�
 
 ### <a name="examples"></a>Exempel
 
-I följande exempel används produkter och produktvarianter för att visa hur sökningen hanteras i olika scenarier. **Förutsättning:** Under **Försäljning och marknadsföring &gt; Inställningar &gt; Sök &gt; Sökparametrar &gt; Söktyp**, väljer du alternativet **Fullständig matchning**.
+I följande exempel används produkter och produktvarianter för att visa hur sökningen hanteras i olika scenarier. **Förutsättning:** Under **Försäljning och marknadsföring&gt; Inställningar &gt; Sök &gt; Sökparametrar &gt; Söktyp**, väljer du alternativet **Fullständig matchning**.
 
 | Produkttyp     | Produktnamn    | Visa produktnummer | Artikelnummer | Inställningar |
 |------------------|-----------------|------------------------|-------------|---------------|
@@ -52,28 +51,28 @@ I följande exempel används produkter och produktvarianter för att visa hur s�
 | Produktvariant  | Aktiv högtalare  | D0010:::Svart:         | D0010       | 000005        |
 | Produktvariant  | Aktiv högtalare  | D0010:::Vit:         | D0010       | Vit         |
 
-Om du skriver in "högtalare" i fältet **Artikelnummer** kommer du att få alla produkter över som ett resultat i sökningen. Om du skriver ”Svart” i fältet **Artikelnummer** kommer du att få den andra produkten som ett resultat, eftersom det har texten ”Svart” i visa produktnummer. Dessa två exempel visar att sökningen inte bara är i början av fältet, utan en matchning kommer att göras även om söktexten hittas i mitten av en textsträng i den matchande posten.  
+Om du skriver in "högtalare" i fältet **Artikelnummer** kommer du att få alla produkter över som ett resultat i sökningen. Om du skriver ”Svart” i fältet **Artikelnummer** kommer du att få den andra produkten som ett resultat, eftersom det har texten ”Svart” i visa produktnummer. Dessa två exempel visar att sökningen inte bara är i början av fältet, utan en matchning kommer att göras även om söktexten hittas i mitten av en textsträng i den matchande posten.  
 
-Om du skriver "05 " kommer du endast att få den andra produktvarianten som ett resultat, eftersom den har "05 "i konfigurationen. Detta visar att sökningen görs över alla aktiverade fält på sidan **Sökkriterier**.  
+Om du skriver "05 " kommer du endast att få den andra produktvarianten som ett resultat, eftersom den har "05 "i konfigurationen. Detta visar att sökningen görs över alla aktiverade fält på sidan **Sökkriterier**.  
 
-Om du skriver in ”05 " kommer du inte att få några resultat. Detta inträffar eftersom sökningen som letar efter hela texten har ställts in. Sökningen kommer inte att försöka hitta "hög" och sedan begränsa resultaten till de som innehåller "05".  
+Om du skriver in ”05 " kommer du inte att få några resultat. Detta inträffar eftersom sökningen som letar efter hela texten har ställts in. Sökningen kommer inte att försöka hitta "hög" och sedan begränsa resultaten till de som innehåller "05".  
 
-Du kan begränsa antalet sökresultat med hjälp av fältet **Antal resultat** på sidan **Försäljning och marknadsföring &gt; Inställningar &gt; Sök &gt; Sökparametrar** . Om du ställer in detta fält på 0 kommer alla sökresultat att returneras. Om du har ställt in den på 10 till exempel kommer den att returnera maximalt 10 sökträffar.
+Du kan begränsa antalet sökresultat med hjälp av fältet **Antal resultat** på sidan **Försäljning och marknadsföring &gt; Inställningar &gt; Sök &gt; Sökparametrar**. Om du ställer in detta fält på 0 kommer alla sökresultat att returneras. Om du har ställt in den på 10 till exempel kommer den att returnera maximalt 10 sökträffar.
 
-## <a name="configure-the-productsearch"></a>Konfigurera produktsökningen
+## <a name="configure-the-product-search"></a>Konfigurera produktsökningen
 Gör på följande sätt för att konfigurera produktsökningen innan du kan använda sökfunktionen för produkt- och produktvariant. [![3 steg för att konfigurera produktsökning\_AXAppFall](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
 
-### <a name="step-1include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Steg 1: Inkludera alla relevanta produkter och produktvariantidentifierare och dimensioner i sökvillkoren
+### <a name="step-1-include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Steg 1: Inkludera alla relevanta produkter och produktvariantidentifierare och dimensioner i sökvillkoren
 
-Exempel på produkt- och produktvariantidentifierare och dimensioner som du kan söka med är  **Produktnamn, artikelnummer**, **Visa produktnummer, konfiguration, storlek, färg, utförande, söknamn, etc.**.  
+Exempel på produkt- och produktvariantidentifierare och dimensioner som du kan söka med är **Produktnamn, artikelnummer**. **visa produktnummer, konfiguration, storlek, färg, utförande, söknamn, etc.**  
 
-Gå till sidan **Försäljning och marknadsföring &gt; Inställningar &gt; Sök &gt; Sökvillkor**. Sidan **Sökkriterier** låter dig definiera kriterier för kund, potentiell kund och produktsökning. Se till att filtrera sidan genom att använda produktsökvillkor. Detta kan du göra genom att växla till **Produkt** på sidans meny.  
+Gå till sidan **Försäljning och marknadsföring &gt; Inställningar &gt; Sök &gt; Sökvillkor**. Sidan **Sökkriterier** låter dig definiera kriterier för kund, potentiell kund och produktsökning. Se till att filtrera sidan genom att använda produktsökvillkor. Detta kan du göra genom att växla till **Produkt** på sidans meny.  
 
 Om du vill lägga till produktvisningsnumret till sökvillkoren klickar du på **Ny** på sidans meny. Då läggs en ny post till i rutnätet **Sökvillkor**. Öppna kolumnen **Fältnamn**-sökningen och välj **DisplayProductNumber**. För att lägga till produktens konfiguration till sökkriterierna skapar du en ny post i rutnätet **Sökkriterier** och väljer **configId** i kolumnen **Fältnamn**. På samma sätt skapar du en post med **Fältnamn** **InventColorId** för färgdimensionen, **InventSizeId** för storleksdimensionen och **InventStyleId** för utförandedimensionen.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Steg 2: Fyll i databasregistret som används för produktsökning
 
-På sidan **Sökkriterier** klickar du på knappen **Uppdatera sökdata** . I dialogrutan **Updatera sökdata** ser du till att  **Källa** är inställd på **Produkt** och klickar sedan på **OK**. Systemet kommer att samla alla sökkriteriet enligt steg 1 i en tabell. Åtgärden kan ta lång tid och du kan få ett varningsmeddelande om du har väldigt många produkter och produktvarianter. Vi rekommenderar att du schemalägger ifyllning av söktabellen på batchservern vid en tidpunkt när servern inte är för upptagen.  
+På sidan **Sökkriterier** klickar du på knappen **Uppdatera sökdata** . I dialogrutan **Updatera sökdata** ser du till att **Källa** är inställd på **Produkt** och klickar sedan på **OK**. Systemet kommer att samla alla sökkriteriet enligt steg 1 i en tabell. Åtgärden kan ta lång tid och du kan få ett varningsmeddelande om du har väldigt många produkter och produktvarianter. Vi rekommenderar att du schemalägger ifyllning av söktabellen på batchservern vid en tidpunkt när servern inte är för upptagen.  
 
 Innan tabellen är ifylld, kommer produktsökningen inte att ge korrekt resultat. Om du inte får några sökresultat ser du till att fylla i den här tabellen.  
 
@@ -83,10 +82,7 @@ Tabellen måste endast fyllas i när sökkriterierna ändras. Nyligen frisläppt
 
 Du kan aktivera denna funktion, genom att gå **Försäljning och marknadsföring &gt; Inställningar &gt; Sök &gt; Sökparametrar** och ange **Aktivera uppslag för sökning** till **Ja** på fliken **Allmän**.  
 
-För försäljningsorderradpost är standardbeteendet att öppna sidan **Produktsökning** när du börjar att skriva i fältet  **Artikelnummer** och sedan trycker på tangenten  **Flik**. Sidan **Produktsökning** ändrar kontexten under skapande av orderrader och kan betraktas onödigt påträngande. Om du föredrar att få sökresultaten i ett uppslag och att inte förlora kontexten under orderradposten, kan du använda sökuppslag istället. Om du söker efter en produkt eller en produktvariant, men inte väljer något i uppslaget och trycker på tangenten **Flik** kommer sidan **Produktsökning** att visas.
+För försäljningsorderradpost är standardbeteendet att öppna sidan **Produktsökning** när du börjar att skriva i fältet **Artikelnummer** och sedan trycker på tangenten **Flik**. Sidan **Produktsökning** ändrar kontexten under skapande av orderrader och kan betraktas onödigt påträngande. Om du föredrar att få sökresultaten i ett uppslag och att inte förlora kontexten under orderradposten, kan du använda sökuppslag istället. Om du söker efter en produkt eller en produktvariant, men inte väljer något i uppslaget och trycker på tangenten **Flik** kommer sidan **Produktsökning** att visas.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

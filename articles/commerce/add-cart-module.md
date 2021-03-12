@@ -3,7 +3,7 @@ title: Kundvagnsmodul
 description: Det här avsnittet handlar om kundvagnsmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/20/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 33db06ecfa2a8fa93cde3c4f1b31d6b30bfd0c34
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: abb9909c03577763ff7e6242c9395a58159df6ca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4415989"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985989"
 ---
 # <a name="cart-module"></a>Kundvagnsmodul
 
@@ -34,7 +33,7 @@ Det här avsnittet handlar om kundvagnsmoduler och beskriver hur du lägger till
 
 En kundvagnsmodul visar artiklarna som har lagts till i kundvagnen innan kunden fortsätter till kassan. Modulen visar även en också en ordersammanfattning och gör att kunden kan använda eller ta bort kampanjkoder.
 
-Kundvagnsmodulen stöder inloggade utcheckning och gästkassa. Det stöder också en **Tillbaka till shopping**-länk. Du kan konfigurera flödet för den här länken när **webbplatsinställningar \> tillägg \> flöden**.
+Kundvagnsmodulen stöder inloggad kassa och gästkassa. Det stöder också en **Tillbaka till shopping**-länk. Du kan konfigurera flödet för den här länken när **webbplatsinställningar \> tillägg \> flöden**.
 
 I modulen kundvagn återges data baserat på vagn-ID:t, som är en webbläsarcookie som är tillgänglig på hela webbplatsen. 
 
@@ -52,7 +51,8 @@ Följande bild visar ett exempel på en kundvagnssida på Fabrikam-webbplatsen. 
 |----------------|--------|-------------|
 | Rubrik | Rubriktext och rubriktagg (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En rubrik för kundvagnen, till exempel "Shoppingväska" eller "Artiklarna i vagnen." |
 | Visa fel av typen Slut i lager | **Sant** eller **falskt** | Om den här egenskapen har angetts till **True** visar sidan för kundvagn fel som är relaterade till lagret. Vi rekommenderar att du ställer in den här egenskapen på **True** om lagerkontroller används på webbplatsen. |
-| Visa leveransavgifter för radartiklar | **Sant** eller **falskt** | Om den här egenskapen har värdet **True** visar kundvagnsartiklar leveransavgifter om den här informationen är tillgänglig. Den här funktionen stöds inte i det Fabrikam-temat, eftersom användarna väljer enbart leverans i kassautcheckningsflödet. Den här funktionen kan emellertid aktiveras i andra arbetsflöden om den är tillämplig. |
+| Visa leveransavgifter för radartiklar | **Sant** eller **falskt** | Om den här egenskapen har värdet **True** visar kundvagnsartiklar leveransavgifter om den här informationen är tillgänglig. Den här funktionen stöds inte i det Fabrikam-temat, eftersom användarna väljer enbart leverans i kassaflödet. Den här funktionen kan emellertid aktiveras i andra arbetsflöden om den är tillämplig. |
+| Visa tillgängliga erbjudanden| **Sant** eller **falskt** | Om egenskapen har satts till **Sant** visar kundvagnen tillgängliga erbjudanden baserat på artiklarna i vagnen. Denna funktion finns i Dynamics 365 Commerce version 10.0.16. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduler kan användas i en kundvagnsmodul
 
@@ -117,6 +117,3 @@ Om du vill lägga till en kundvagnsmodul på en ny sida och ställa in de obliga
 [Beräkna lagertillgänglighet för butikskanaler](calculated-inventory-retail-channels.md)
 
 [Skapa en onlinefunktionsprofil](online-functionality-profile.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

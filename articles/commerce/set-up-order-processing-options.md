@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 78973
 ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 28954eab857a06da3978ca362081dfc3c525354d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fde831bb08f45623f24805625f76c0a43460562a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415908"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985746"
 ---
 # <a name="set-up-call-center-channels"></a>Ställa in kundtjänstkanaler
 
@@ -40,7 +39,7 @@ Användarna måste kopplas till en kundtjänstkanal för att kunna använda funk
 
 En e-postmeddelandeprofil kan också konfigureras på kundtjänstkanalen. Profilen definierar de e-postmallar som används när e-postmeddelanden skickas till kunder som gör beställningar via kundtjänstkanalen. E-postutlösare kan konfigureras mot systemhändelser, till exempel att skicka beställningen eller orderförsändelse.
 
-Innan försäljning kan behandlas korrekt via en kundtjänstkanal måste korrekta [betalningsmetoder](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-payments) och leveranssätt definieras för kanalen.
+Innan försäljning kan behandlas korrekt via en kundtjänstkanal måste korrekta [betalsätt](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-payments) och leveranssätt definieras för kanalen.
 
 Du kan definiera andra standardvärden som är relaterade till de ekonomiska dimensioner som ska kopplas till order som skapas med den kanalen på nivån för kundtjänstkanalen.
 
@@ -62,7 +61,7 @@ Dessutom om inställningen **aktivera slutförande av order** är aktiv när anv
 
 ### <a name="enable-direct-selling"></a>Aktivera direkt försäljning
 
-Om inställningen **aktivera direkt försäljning** är aktiv för kundtjänstkanalen kan användarna utnyttja funktionerna i Handel för merförsäljning och korsförsäljning. I det här fallet visas popup-fönster under orderregistreringen som föreslår andra produkter som användaren av kundtjänst kan erbjuda kunden. Produkterna som föreslås baseras på produkten som precis beställdes i försäljningsorderraden. För närvarande kan merförsäljning och korsförsäljning konfigureras på artikelnivå på produkter eller kataloger. Om inställning **aktivera direkt försäljning** är inaktiverad för kundtjänstkanalen visas inte popup-fönster under orderregistreringen, även om en giltig merförsäljning och korsförsäljning har definierats för en artikel som beställts.
+Om inställningen **aktivera direkt försäljning** är aktiv för kundtjänstkanalen kan användarna utnyttja funktionerna i Commerce för merförsäljning och korsförsäljning. I det här fallet visas popup-fönster under orderregistreringen som föreslår andra produkter som användaren av kundtjänst kan erbjuda kunden. Produkterna som föreslås baseras på produkten som precis beställdes i försäljningsorderraden. För närvarande kan merförsäljning och korsförsäljning konfigureras på artikelnivå på produkter eller kataloger. Om inställning **aktivera direkt försäljning** är inaktiverad för kundtjänstkanalen visas inte popup-fönster under orderregistreringen, även om en giltig merförsäljning och korsförsäljning har definierats för en artikel som beställts.
 
 När inställningen **aktivera direkt försäljning** är aktiv, aktiveras även skript och funktioner för bilder för försäljningsorderns startsida. I det här fallet finns en informationspanel på höger sida under orderregistreringen. Här kan du visa skript relaterade till den allmänna orderregistrerinsprocessen, katalogkällkod som kopplades eller skript som rör artiklarna som beställs. Dessutom kan bildpaneler visa en produktbild för artiklarna som beställs, om en bild har definierats för artikeln i inställningarna för produkten.
 
@@ -72,7 +71,7 @@ När inställningen **Aktivera orderpriskontroll** är aktiv, kan endast behöri
 
 ## <a name="channel-users"></a>Kanalanvändare
 
-När du definierar kundstjänstkanal måste du koppla användare till kundstjänstkanalen. I annat fall kan inte till en kundstjänstkanal användas i systemet. När användare loggar in Handel och registrerar försäljningsorder eller returorder på en sida relaterad till orderregistrering, valideras användaridentitet mot konfigurationen av kundstjänstkanal. Om en användare kopplas till en specifik kundtjänstkanal, ärver den användaren egenskaper och standardvärden för kanalen.
+När du definierar kundstjänstkanal måste du koppla användare till kundstjänstkanalen. I annat fall kan inte till en kundstjänstkanal användas i systemet. När användare loggar in Commerce och registrerar försäljningsorder eller returorder på en sida relaterad till orderregistrering, valideras användaridentitet mot konfigurationen av kundstjänstkanal. Om en användare kopplas till en specifik kundtjänstkanal, ärver den användaren egenskaper och standardvärden för kanalen.
 
 Som standard är flaggan **Försäljning** i rubriken på försäljningsordern aktiverad för alla order som kundtjänstanvändaren skapar. Dessa order kan sedan utnyttja systemets handelspecifika pris- och kampanjegenskaper.
 
@@ -84,6 +83,3 @@ När du är klar med att konfigurera kundtjänstkanalen och definiera kanalanvä
 > [!NOTE]
 > Om du använder kundtjänstfunktionen måste konfigurationsnyckeln **Flera leveransadresser** till aktiveras. Den här konfigurationsnyckeln finns i den konfigurationsnyckel för **handel** under **Systemadministration**\> **Konfiguration** \> **Licenskonfiguration**. Detta krävs på grund av kundtjänstfunktione som utför olika valideringar baserat på leveransadressen som konfigurerats på försäljningsorderradnivå. 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

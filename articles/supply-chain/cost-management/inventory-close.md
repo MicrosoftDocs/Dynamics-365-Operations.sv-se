@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventClosing
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 61973
 ms.assetid: c210c882-6849-4704-b78c-a777dd6cfdb6
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4cad461c6ff4ef6badeeba868eef45165cf5d33
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1169ad784c07d0757990b36b618282ed7858bcbf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437644"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987564"
 ---
 # <a name="inventory-close"></a>Lagerstängning
 
@@ -60,7 +59,7 @@ Flera av de uppgifter du kan utföra från sidan **Stängning och justering** me
 De redovisningskonton som uppdateras till följd av det här arbetet är länkade till den ursprungliga lagertransaktionen. Om till exempel en försäljningsorder kvittas mot en inköpsorder, justeras de redovisningskonton som används för den ursprungliga försäljningsordern. Detta gäller även om redovisningskontona för den artikelgrupp som har tilldelats artikeln har ändrats sedan försäljningsordern bokfördes. När ett kvittningsbelopp skapas vid lagerstängning bokförs kvittningsbeloppet fortfarande till de ursprungliga huvudbokskontona – inte till de nya huvudbokskontona som tilldelats till artikeln. Redovisningen kan också uppdateras genom att återföra en lagerstängning. 
 
 > [!NOTE] 
-> - Lagerstängning är ett obligatoriskt steg i proceduren för stängning av månad för alla lagermodeller. Detta inkluderar kostnadsredovisning för standard och rörligt genomsnitt. Du kan inte stänga räkenskapsperioden förrän en lagerstängning har utförts vid periodens slutdatum.
+> - Lagerstängning är ett obligatoriskt steg i proceduren för stängning av månad för alla lagermodeller förutom rörligt genomsnitt.  Du kommer att varnas om du försöker stänga en räkenskapsperiod utan att först utföra lagerstängningen som av periodens slutdatum.
 > - Innan du kör stängningsproceduren kan du visa en lista med artiklar som inte kan kvittas under uppdateringen.
 > - Vi rekommenderar att du kör lagerstängningen utanför arbetstid så att datorresurserna belastas mer jämnt.
 
@@ -87,6 +86,3 @@ I vissa fall kanske du måste återföra en genomförd lagerstängning för att 
 > [!NOTE] 
 > Endast den senaste lagerperioden som har stängts kan öppnas igen. För att återföra en tidigare lagerstängning måste du återföra alla efterföljande lagerstängningar en i taget och börja med de senaste.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

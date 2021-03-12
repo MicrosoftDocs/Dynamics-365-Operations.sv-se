@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace, EcoResProductVariantPerCompanyImagePart, EcoResProductRelationType,EcoResProductAvailabilityPart,  EcoResProductReleasedSelect, EcoResProductLookup, EcoResProductVariantsPendingReleaseFormPart, EcoResProductSearchLookup, EcoResProductNumberRename, EcoResDimensionBasedConfigWorkspace, EcoResProductVariantImagePart, EcoResProductImagePart, EcoResProductVariantsPerCompanyPart, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleaseSessions, EcoResProductVariantMaintainWorkspaceConfiguration, EcoResProductProcessManufacturingWorkspaceConfiguration, EcoResProductMasterVariantsPart, EcoResProductDiscreteManufacturingWorkspaceConfiguration, EcoResProductVariantAvailabilityPart, EcoResProductInformationFactBox, EcoResProductLookupTest, EcoResProductImageTest, EcoResProductReleasedRecentlyCreatedFormPart, EcoResPhysicalProductDimensions, PdsMRCRegulatedListItem, EcoResProductAvailabilityPart, PdsMRCRestrictionList, InventItemIdLookupAllocationId, EcoResProductAvailability, EcoResProductEntityAttributeTableFieldAssociation, EcoResProductImagePart, EcoResProductRelation, EcoResProductReleaseAddProduct, EcoResProductPerCompanyListPage, EcoResProductParameters, PdsMRCRestrictedItemByCountryState, EngChgCasePreview, InventTablePreview, PdsMRCItemDetails, EngChgCaseAssociate, PdsMRCCustomerHistory, PdsMRCVendorHistory, PdsMRCRestrictedCountryStateByItem, InventItemIdGroupLookup, InventLocationLookup, PdsMRCValidityIntervalbyCountry, PdsMRCValidityIntervalbyCountry, PdsMRCEventTracker, PdsMRCReportingCountry, PdsMRCDocument, PdsMRCReportingList, PdsMRCItemCAS, GraphicsTestForm, EngChgPicklist
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97e1712e38247c996af11bef051a5b1d9239f0c3
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 18b371494248c8b8f395996c786bb6bf7a54a6de
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527396"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987214"
 ---
 # <a name="product-information-overview"></a>Översikt över produktinformation
 
@@ -59,7 +58,7 @@ En produkt definieras i första hand med hjälp av ett produktnummer, ett namn o
 
 Produktdefinitionen kan skapas i Supply Chain Management. Den går också att importera från system för hantering av produktlivscykel (PLM), hantering av produktdata (PDM) eller hantering av produktinformation (PIM). När du använder flera instanser av Supply Chain Management används vanligtvis en instans som en mall för produktdata för alla andra instanser. Den här metoden stöds genom ett stort antal datatabeller som aktiverar exporten och importen av definitionen för produktdata från en förekomst till en annan.
 
-För att stödja distributionen av produktdata till många instanser tillåter Supply Chain Management användning av Common Data Service. Definitioner av produkter kan exporteras från en förekomst i Supply Chain Management till Common Data Service. Definitioner av produkter kan sedan användas för att förse andra företagsprogram såsom Dynamics 365 Sales med produktdata.
+För att stödja distributionen av produktdata till många instanser tillåter Supply Chain Management användning av Microsoft Dataverse. Definitioner av produkter kan exporteras från en förekomst i Supply Chain Management till Microsoft Dataverse. Definitioner av produkter kan sedan användas för att förse andra företagsprogram såsom Dynamics 365 Sales med produktdata.
 
 Observera att dynamiska och flexibla organisationers produktinformationsdata ändras varje dag. Underhåll av korrekta och aktuella produktdata är därför en kritisk affärsprocess i sig.
 
@@ -96,6 +95,3 @@ Arbetsytan består av en sammanfattning av paneler och två listor. Listan **Öp
 ### <a name="manually-creating-a-new-released-product"></a>Skapa en ny frisläppt produkt manuellt
 
 Du kan manuellt skapa en frisläppt produkt i en enda körning, beroende på organisationens affärsprocesser och regler om huruvida den här funktionen ska användas. Den här funktionen skapar en ny produkt och frisläpper den automatiskt till den aktuella juridiska personen. Om du vill skapa en ny produkt, klicka på **Frisläppta produkter** på arbetsytan **Underhåll av frisläppta produkter** eller på listsidan **Frisläppt produkt**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

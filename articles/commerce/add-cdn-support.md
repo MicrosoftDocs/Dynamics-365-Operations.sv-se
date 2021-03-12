@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0e888fca4a5401f1df6e61b10358489846ad4b0e
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 1d9482a45cb8f2ea52e7f58d55e30cfe56694d04
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517218"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985964"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Lägga till stöd för ett innehållsleveransnätverk (CDN)
 
@@ -35,7 +34,7 @@ I det här avsnittet beskrivs hur du lägger till ett innehållsleveransnätverk
 
 När du konfigurerar en näthandelsmiljö i Dynamics 365 Commerce kan du konfigurera den så att den fungerar med ditt CDN-tjänst. 
 
-Din anpassade domän kan aktiveras under etableringsprocessen för näthandelsmiljön. Du kan också använda en serviceförfrågan för att ställa in den när etableringen har slutförts. Etableringsprocessen för näthandelsmiljön genererar ett värdnamn som associeras med miljön. Det här värdnamnet har följande format, där \<*e-commerce-tenant-name*\> är namnet på din miljö:
+Din anpassade domän kan aktiveras under etableringsprocessen för näthandelsmiljön. Du kan också använda en servicebegäran för att ställa in den när etableringen har slutförts. Etableringsprocessen för näthandelsmiljön genererar ett värdnamn som associeras med miljön. Det här värdnamnet har följande format, där \<*e-commerce-tenant-name*\> är namnet på din miljö:
 
 &lt;näthandelsinnehavarens-namn&gt;.commerce.dynamics.com
 
@@ -49,7 +48,7 @@ För att garantera att SSL konfigureras och att statisk cachelagras måste du ko
 
 /\_msdyn365/\_scnr/\*
 
-När du har etablerat din handelsmiljö med den anpassade domänen som tillhandahålls, eller när du har angett den anpassade domänen för din miljö med hjälp av en serviceförfrågan, pekar du på den anpassade domänen efter det värdnamn eller den slut punkt som skapas av handel.
+När du har etablerat din handelsmiljö med den anpassade domänen som tillhandahålls, eller när du har angett den anpassade domänen för din miljö med hjälp av en servicebegäran, pekar du på den anpassade domänen efter det värdnamn eller den slut punkt som skapas av handel.
 
 Som tidigare nämnts har det genererade värdnamnet eller slutpunkten endast stöd för ett SSL-certifikat för \*.commerce.dynamics.com. Det stöder inte SSL för anpassade domäner.
 
@@ -140,7 +139,7 @@ I följande bild visas dialogrutan **anpassade domän-HTTPS** i Azure Front Door
 
 Detaljerad information om hur du lägger till en anpassad domän i din Azure Front Door Service finns i [lägga till en anpassad domän i din Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
 
-Din CDN ska nu vara korrekt konfigurerad så att den kan användas med din näthandelsplats.
+Din CDN ska nu vara korrekt konfigurerad så att den kan användas med din näthandelssajt.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
@@ -148,7 +147,7 @@ Din CDN ska nu vara korrekt konfigurerad så att den kan användas med din näth
 
 [Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md)
 
-[Skapa en näthandelsplats](create-ecommerce-site.md)
+[Skapa en näthandelssajt](create-ecommerce-site.md)
 
 [Associera en Dynamics 365 Commerce-webbplats med en onlinekanal](associate-site-online-store.md)
 
@@ -163,6 +162,3 @@ Din CDN ska nu vara korrekt konfigurerad så att den kan användas med din näth
 [Konfigurera flera B2C-innehavare i en Commerce-miljö](configure-multi-B2C-tenants.md)
 
 [Aktivera platsbaserad butiksdetektering](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

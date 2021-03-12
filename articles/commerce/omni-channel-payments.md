@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 80eaf36fb382e0ebe0a66383ea17ab76faa07dfa
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6ecfd518298021e08cf73934b450d175cf699a46
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415953"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985871"
 ---
 # <a name="omni-channel-payments-overview"></a>Översikt över betalningar i flera kanaler
 
@@ -39,14 +38,14 @@ Det här ämnet innehåller en översikt betalningar i flera kanaler i Dynamics 
 | Korttoken | Ett token som en betalningsprocessor tillhandahåller för lagring i kassasystemet. En korttoken kan bara användas av den handlare som tar emot det. Korttoken kallas ibland även för *kortreferenser*. |
 | Autentiseringstoken (auth) | Ett unikt ID som en betalningsprocess ger som en del av svaret som den skickar till ett kassasystem när en auktoriseringsbegäran utförts av kassasystemet. Du kan använda en autentiseringstoken senare om behandlaren anropas för att utföra åtgärder som att återföra eller annullera auktoriseringen. Den används emellertid oftast för att samla in pengar när en order är uppfylld eller om en transaktion har slutförts. Autoriseringstoken kallas ibland även för *Autoriseringsreferenser*. |
 | Insamlingstoken | En referens som en betalningsbehandlare använder för ett kassasystem när en betalning har slutförts eller registrerats. Insamlingstoken kan sedan användas för att referera till betalningsinsamlad i efterföljande operationer, t.ex. återbetalningsbegär. | 
-| Kortet är inte tillgängligt | En term som refererar till betalningstransaktioner där ett fysiskt kort inte visas. Dessa transaktioner kan till exempel inträffa i scenarier med näthandel eller kundtjänst. För dessa transaktioner anges den betalningsrelaterade informationen manuellt på en näthandelswebbplats, i ett kundtjänstflöde, eller i kassan eller i betalningsterminalen. |
+| Kortet är inte tillgängligt | En term som refererar till betalningstransaktioner där ett fysiskt kort inte visas. Dessa transaktioner kan till exempel inträffa i scenarier med näthandel eller kundtjänst. För dessa transaktioner anges den betalningsrelaterade informationen manuellt på en näthandelssajt, i ett kundtjänstflöde, eller i POS eller i betalningsterminalen. |
 | Kortet är tillgängligt | En term som refererar till betalningstransaktioner där ett fysiskt kort presenteras och används på en betalningsterminal som är ansluten till Microsoft Dynamics 365 kassasystemet. |
 
 ## <a name="overview"></a>Översikt
 
-Vanligtvis beskriver termen *betalningar i flera kanaler* möjligheten att skapa en order i en kanal och utföra den i en annan kanal. Den nyckel som har stöd för betalningar i flera kanaler bevarar betalningsdetaljer tillsammans med resten av orderdetaljerna och använder sedan dessa betalningsdetaljer när ordern återkallas eller bearbetas i en annan kanal. Ett klassiskt exempel är scenariot "Köp online, hämta i butiken". I det här scenariot läggs betalningsdetaljerna till när ordern skapas online. De återkallas sedan i kassan för att debitera kundens betalningskort vid tidpunkten för upphämtningen. 
+Vanligtvis beskriver termen *betalningar i flera kanaler* möjligheten att skapa en order i en kanal och utföra den i en annan kanal. Den nyckel som har stöd för betalningar i flera kanaler bevarar betalningsdetaljer tillsammans med resten av orderdetaljerna och använder sedan dessa betalningsdetaljer när ordern återkallas eller bearbetas i en annan kanal. Ett klassiskt exempel är scenariot "Köp online, hämta i butiken". I det här scenariot läggs betalningsdetaljerna till när ordern skapas online. De återkallas sedan i POS för att debitera kundens betalningskort vid tidpunkten för upphämtningen. 
 
-Alla scenarier som beskrivs i det här avsnittet kan implementeras med hjälp av standard-SDK (Software Development Kit) som medföljer Handel. [Dynamics 365 betalningsanslutning för Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) innehåller en färdig implementering av alla scenarier som beskrivs här. 
+Alla scenarier som beskrivs i det här avsnittet kan implementeras med hjälp av standard-SDK (Software Development Kit) som medföljer Commerce. [Dynamics 365 betalningsanslutning för Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) innehåller en färdig implementering av alla scenarier som beskrivs här. 
 
 ### <a name="prerequisites"></a>Förutsättningar
 
@@ -66,7 +65,7 @@ Den första uppsättningen med API:er **iNamedRequestHandler**. Den stöder impl
 
 Följande komponenter och inställningssteg krävs:
 
-- **eCommerce-integration** : en integration med Handel krävs för att stödja scenarier där en order kommer från en onlinebutik. Mer information om Retail E-commerce SDK finns i [SKD (Software Development Kit) för näthandelsplattform](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). I en demomiljö har referensbutiken stöd för betalningsscenarier i flera kanaler. 
+- **eCommerce-integration** : en integration med Commerce krävs för att stödja scenarier där en order kommer från en onlinebutik. Mer information om Retail E-commerce SDK finns i [SKD (Software Development Kit) för näthandelsplattform](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). I en demomiljö har referensbutiken stöd för betalningsscenarier i flera kanaler. 
 - **Konfiguration av onlinebetalningar:** inställningarna för onlinekanal måste inkludera en betalningsanslutning som har uppdaterats för att stödja betalningar i flera kanaler. Alternativt kan den färdiga betalningssndlutningen användas. Information om hur du konfigurerar Adyen för betalningsanslutning för onlinebutiker finns i [Adyen betalningsanslutning](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) Förutom de inställningssteg för näthandel som beskrivs i det avsnittet, måste parametern **Tillåt att spara betalningsinformation i näthandel** anges till **Sant** i inställningarna för Adyen-anslutningen. 
 - **Konfiguration av betalningar i flera kanaler** I backoffice, gå till **Butik och handel \> Administrationsinställning \> Parametrar \> Gemensamma handelsparametrar**. sedan på fliken **Betalningar i flera kanaler** anger du alternativet **Använd betalningar i flera kanaler** till **Ja**. I Commerce versioner 10.0.12 och senare finns den här inställningen på arbetsytan **funktionshantering**. Välj funktionen **Betalningar i flera kanaler** och klicka på **Aktivera nu**. 
 - **Betalningstjänster:** Kundtjänst använder standardbetalningsanslutningen på sidan **betalningstjänster** för att bearbeta betalningar. Om du vill stödja scenarier som t.ex. "Köp i kundtjänst, hämta i butik" måste den här standardbetalningsanslutningen vara Adyen betalningsanslutning eller en betalningsanslutning som uppfyller implementeringskraven för betalningar i flera kanaler.
@@ -94,7 +93,7 @@ Följande scenarier för betalning i flera kanaler stöds:
 - Köp i butik A, leverera till kund
 
     > [!NOTE]
-    > Betalningar som görs i kundtjänst och som är kopplade till betalningsfunktionen "normal" måste markeras som **Förskottsbetala** = **Ja** för att återspeglas i det belopp som ska förfalla vid återanrop av ordern i kassan. Ej förskottsbetala betalningar av typen normal identifieras inte när ordern återkallas i kassan. 
+    > Betalningar som görs i kundtjänst och som är kopplade till betalningsfunktionen "normal" måste markeras som **Förskottsbetala** = **Ja** för att återspeglas i det belopp som ska förfalla vid återanrop av ordern i POS. Ej förskottsbetala betalningar av typen normal identifieras inte när ordern återkallas i POS. 
 
 Variationer av dessa scenarier stöds också. En onlinebeställning kan till exempel inkludera både rader som ska levereras till kunden och de rader som ska hämtas i butiken. Alla alternativ för orderuppfyllelse stöds via betalningar i flera kanaler. 
 
@@ -113,15 +112,15 @@ Innan du börjar måste du se till att följande förutsättningar är på plats
 Följ dessa steg om du vill köra scenariet:
 
 1. I en referensbutik skapar du en order för upphämtning i butik. Du måste välja butiken **Houston**. 
-2. Gå igenom stegen i kassan och betala genom att använda ett testkreditkortsnummer. Du hittar testkreditkortsnummer på sidan [sidan Adyen testkreditkortsnummer](https://docs.adyen.com/development-resources/test-cards/test-card-numbers/#description).
-3. I Handel använder du batchjobbet **Synkronisera order** och distributionsschema **P-001** för att skapa order i backoffice.
-4. I kassan på välkomstsidan väljer du åtgärden **order som ska hämtas** för att visa order för upphämtning i butik. 
+2. Gå igenom kassastegen och betala genom att använda ett testkreditkortsnummer. Du hittar testkreditkortsnummer på sidan [sidan Adyen testkreditkortsnummer](https://docs.adyen.com/development-resources/test-cards/test-card-numbers/#description).
+3. I Commerce använder du batchjobbet **Synkronisera order** och distributionsschema **P-001** för att skapa order i backoffice.
+4. I POS på välkomstsidan väljer du åtgärden **order som ska hämtas** för att visa order för upphämtning i butik. 
 5. Välj en eller flera rader från ordern som skapades i referensbutiken och **hämta**.
 
     Ordern hämtas från backoffice. 
 
-6. När detaljerna för orderraderna hämtas från backoffice och en kortbetalning som kan användas för flera kanaler identifieras, informeras du om att en betalningsmetod finns tillgänglig.
-7. Välj **Använd den tillgängliga betalningsmetoden** om du vill slutföra transaktionen med hjälp av kortinformationen som angavs i referensbutiken.
+6. När detaljerna för orderraderna hämtas från backoffice och en kortbetalning som kan användas för flera kanaler identifieras, informeras du om att ett betalsätt finns tillgänglig.
+7. Välj **Använd den tillgängliga betalsättet** om du vill slutföra transaktionen med hjälp av kortinformationen som angavs i referensbutiken.
 
     Orderraderna läses in på transaktionssidan och förfallet saldo är 0 (noll). 
 
@@ -130,7 +129,7 @@ Följ dessa steg om du vill köra scenariet:
 
 ### <a name="buy-in-call-center-pick-up-in-store"></a>Köp i kundtjänst och hämta i butiken
 
-1. I Handel, på sidan **Kundtjänst** anger du **Karen Berg** i sökfältet och väljer sedan **Sök**. 
+1. I Commerce, på sidan **Kundtjänst** anger du **Karen Berg** i sökfältet och väljer sedan **Sök**. 
 3. Välj **Karen Berg** i sökresultaten.
 4. När Karen har lästs in till sidan **kundtjänst** väljer du **Ny försäljningsorder**.
 5. På sidan ny försäljningsorder väljer du **rubrik** för att visa orderrubriken. 
@@ -147,13 +146,13 @@ Följ dessa steg om du vill köra scenariet:
 
 12. Klicka på **OK** igen för att stänga dialogrutan **Slutförande av order, betalningar**.
 13. På sidan **Sammanfattning försäljningsorder** väljer du **skicka**.
-14. I kassan på välkomstsidan väljer du åtgärden **order som ska hämtas** för att visa order för upphämtning i butik. 
+14. I POS på välkomstsidan väljer du åtgärden **order som ska hämtas** för att visa order för upphämtning i butik. 
 15. Välj en eller flera rader från ordern som skapades i referensbutiken och **hämta**.
 
     Ordern hämtas från backoffice. 
 
-16. När detaljerna för orderraderna hämtas från backoffice och en kortbetalning som kan användas för flera kanaler identifieras, informeras du om att en betalningsmetod finns tillgänglig.
-17. Välj **Använd den tillgängliga betalningsmetoden** om du vill slutföra transaktionen med hjälp av kortinformationen som angavs i referensbutiken.
+16. När detaljerna för orderraderna hämtas från backoffice och en kortbetalning som kan användas för flera kanaler identifieras, informeras du om att ett betalsätt finns tillgänglig.
+17. Välj **Använd den tillgängliga betalsättet** om du vill slutföra transaktionen med hjälp av kortinformationen som angavs i referensbutiken.
 
     Orderraderna läses in på transaktionssidan och förfallet saldo är 0 (noll).
 
@@ -162,7 +161,7 @@ Följ dessa steg om du vill köra scenariet:
 
 ### <a name="buy-in-store-a-pick-up-in-store-b"></a>Köp i butik A och hämta i butik B
 
-1. Starta kassan för Houston-butiken.
+1. Starta POS för Houston-butiken.
 2. På sidan **transaktion** lägger du till Karen Berg till transaktionen med hjälp av det numeriska tangentbordet för **2001**.
 3. Lägg till en eller flera rader till transaktionen.
 4. Välj **order** om du vill visa orderalternativen.
@@ -173,14 +172,14 @@ Följ dessa steg om du vill köra scenariet:
 10. Betalningsmedel kortbetalning för det belopp som förfaller till insättning. 
 11. Slutför insättningsbetalningen på betalningsterminalen. 
 12. När insättningen har betalats väljer du alternativet att använda samma kort för uppfyllelse och väntar på att ordern ska slutföras. 
-13. Starta kassan för Seattle-butiken.
-14. I kassan på välkomstsidan väljer du åtgärden **order som ska hämtas** för att visa order för upphämtning i butik. 
+13. Starta POS för Seattle-butiken.
+14. I POS på välkomstsidan väljer du åtgärden **order som ska hämtas** för att visa order för upphämtning i butik. 
 15. Välj en eller flera rader från ordern som skapades i referensbutiken och **hämta**.
 
     Ordern hämtas från backoffice. 
 
-16. När detaljerna för orderraderna hämtas från backoffice och en kortbetalning som kan användas för flera kanaler identifieras, informeras du om att en betalningsmetod finns tillgänglig.
-17. Välj **Använd den tillgängliga betalningsmetoden** om du vill slutföra transaktionen med hjälp av kortinformationen som angavs i referensbutiken.
+16. När detaljerna för orderraderna hämtas från backoffice och en kortbetalning som kan användas för flera kanaler identifieras, informeras du om att ett betalsätt finns tillgänglig.
+17. Välj **Använd den tillgängliga betalsättet** om du vill slutföra transaktionen med hjälp av kortinformationen som angavs i referensbutiken.
 
     Orderraderna läses in på transaktionssidan och förfallet saldo är 0 (noll).
 
@@ -189,7 +188,7 @@ Följ dessa steg om du vill köra scenariet:
 
 ### <a name="buy-in-store-a-ship-to-customer"></a>Köp i butik A, leverera till kund
 
-1. Starta kassan för Houston-butiken.
+1. Starta POS för Houston-butiken.
 2. På sidan **transaktion** lägger du till Karen Berg till transaktionen med hjälp av det numeriska tangentbordet för **2001**.
 3. Lägg till en eller flera rader till transaktionen.
 4. Välj **order** om du vill visa orderalternativen.
@@ -201,7 +200,7 @@ Följ dessa steg om du vill köra scenariet:
 10. Slutför insättningsbetalningen på betalningsterminalen. 
 11. När insättningen har betalats väljer du alternativet att använda samma kort för uppfyllelse och väntar på att ordern ska slutföras.
 
-När ordern plockas, förpackas och faktureras i backoffice kommer betalningsdetaljerna som finns i kassan att användas för att samla in medel för de varor som levereras till kunden. 
+När ordern plockas, förpackas och faktureras i backoffice kommer betalningsdetaljerna som finns i POS att användas för att samla in medel för de varor som levereras till kunden. 
 
 ## <a name="scenario-details"></a>Scenario-information
 
@@ -211,14 +210,14 @@ Förutom de grundläggande scenarier som just har beskrivits har flera förbätt
 
 #### <a name="single-swipedip-for-customer-orders"></a>Enstaka dragningar för kundorder
 
-Innan funktionen för betalning i flera kanaler implementerades, när kundorder som har inkluderat insättningar skapats i kassan, behövde kunderna dra sina kort två gånger: en gång för att betala insättningen och en gång för att tokenisera kortet för efterföljande orderuppfyllelse. När funktionen för tokenisering av flera kanaler är aktiverad, måste kunden bara dra kortet en gång för att både betala insättningen och auktorisera beloppet som förfaller till betalning senare. Vid tiden för uppfyllandet registreras de godkända medlen. Innan funktionen för tokenisering av flera kanaler har implementerats skapas bara token för återkommande kort för efterföljande orderuppfyllelse. Därför var medlen för det väntande uppfyllandet inte tillåtet och eftersom dessa medel inte hölls för det aktuella inköpet var det sannolikt att de kunde samlas in senare.
+Innan funktionen för betalning i flera kanaler implementerades, när kundorder som har inkluderat insättningar skapats i POS, behövde kunderna dra sina kort två gånger: en gång för att betala insättningen och en gång för att tokenisera kortet för efterföljande orderuppfyllelse. När funktionen för tokenisering av flera kanaler är aktiverad, måste kunden bara dra kortet en gång för att både betala insättningen och auktorisera beloppet som förfaller till betalning senare. Vid tiden för uppfyllandet registreras de godkända medlen. Innan funktionen för tokenisering av flera kanaler har implementerats skapas bara token för återkommande kort för efterföljande orderuppfyllelse. Därför var medlen för det väntande uppfyllandet inte tillåtet och eftersom dessa medel inte hölls för det aktuella inköpet var det sannolikt att de kunde samlas in senare.
 
 > [!NOTE]
 > Enkel dragning stöds inte i Retail versionen 8.1.3. Kundorder i version 8.1.3 använder samma flöde som användes innan funktionen för tokenisering av flera kanaler implementerades. 
 
 ### <a name="cards-that-cant-issue-recurring-card-tokens"></a>Kort som inte kan skicka token för återkommande kort
 
-Vissa kort kan inte användas för betalningar i flera kanaler eftersom de inte har stöd för att utfärda token för återkommande kort. När en order skapas i kassan och insättningen betalas med hjälp av ett kort som inte stöder token för återkommande kort, används föregående korttokeniseringsflöde. Därför måste en kund som vill ge en betalning som ska användas för efterföljande order uppvisa ett annat kort. Om det andra kortet inte stöder token för återkommande kort kommer tokeniseringsåtgärden att nekas och kassören uppmanas att be kunden att ange ett annat kort. 
+Vissa kort kan inte användas för betalningar i flera kanaler eftersom de inte har stöd för att utfärda token för återkommande kort. När en order skapas i POS och insättningen betalas med hjälp av ett kort som inte stöder token för återkommande kort, används föregående korttokeniseringsflöde. Därför måste en kund som vill ge en betalning som ska användas för efterföljande order uppvisa ett annat kort. Om det andra kortet inte stöder token för återkommande kort kommer tokeniseringsåtgärden att nekas och kassören uppmanas att be kunden att ange ett annat kort. 
 
 ### <a name="using-a-different-card"></a>Använda ett annat kort
 
@@ -236,8 +235,5 @@ När en order som har flera betalningsmedel och flera rader hämtas, tar kassör
 
 - [Vanliga frågor om betalningar](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365-betalningskoppling för Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
+- [Konfigurera BOPIS i en Dynamics 365 Commerce bedömningsmiljö](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

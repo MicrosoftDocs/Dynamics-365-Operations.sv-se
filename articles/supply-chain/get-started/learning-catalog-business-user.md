@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c3fc8cf49b62515f41712e594076c31ae5d7654b
-ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
+ms.openlocfilehash: 75bd907b44ee320ae2d3c31193ae2f6143514c50
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668991"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987464"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Utbildningskatalog för användare av Dynamics 365 Supply Chain Management
 
@@ -69,6 +68,3 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | Innehåll | beskrivning  | Format  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Dynamics 365 grunder](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Bevisa att du förstår Microsoft Dynamics 365: Power Platform; molnkoncept; licensieringsalternativ; och distribution- och publiceringsalternativ. | Prov; kostnaden varierar beroende på region |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

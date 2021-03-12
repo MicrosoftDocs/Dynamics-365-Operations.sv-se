@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: da957850072e233a41a042d5857f81ddbf178f7a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 95e4246d6c5f9ac5bc86b626be0d971f756c5130
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415905"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985621"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>Aktivera rekommendationer för "köp liknande produkter"
 
@@ -63,7 +62,7 @@ För att rekommendationsmotorn ska få åtkomst till produktbilderna måste åte
 1. I egenskaper **Definiera mediemall** under **Media-URL:er**, välj **Generera URL:er**.
 
 > [!NOTE]
-> När du aktiverar rekommendationsfunktionen "köp liknande produkter", börjar processen att generera listor över produktrekommendationer. Det kan krävas upp till en dag innan dessa listor är tillgängliga och kan visas online och i kassan.
+> När du aktiverar rekommendationsfunktionen "köp liknande produkter", börjar processen att generera listor över produktrekommendationer. Det kan krävas upp till en dag innan dessa listor är tillgängliga och kan visas online och i POS.
 
 Gör så här om du vill aktivera rekommendationer funktionen "köp liknande produkter" i Commerce-administration.
 
@@ -78,13 +77,13 @@ I följande bild visas funktionen **köp liknande produkter** på sidan **Funkti
 När föregående uppgifter har slutförts förbättras kassaterminaler automatiskt med en panel för **köp liknande produkter**. Genom att välja **Se mer** användare av kassaterminal kan tas till en dedikerad sida för "köp liknande produkter" som kan filtreras ytterligare.
 
 > [!NOTE]
-> Om du inaktiverar funktionen "köp liknande produkter" rekommenderar vi att inga andra typer av produktrekommendationer påverkas. Mer information om produktrekommendationslistor finns i [produktrekommendationer - översikt](product-recommendations.md).
+> Om du inaktiverar funktionen "köp liknande produkter" rekommenderar vi att inga andra typer av produktrekommendationer påverkas. Mer information om produktrekommendationslistor finns i [produktrekommendationer – översikt](product-recommendations.md).
 
-## <a name="add-a-shop-similar-looks-button-to-product-details-pages-by-using-commerce-site-builder"></a>Lägga till en knapp för köp liknande produkter på sidan med produktinformation genom att använda Commerce-webbplatsskaparen
+## <a name="add-a-shop-similar-looks-button-to-product-details-pages-by-using-commerce-site-builder"></a>Lägga till en knapp för köp liknande produkter på sidan med produktinformation genom att använda Commerce-webbplatsbyggaren
 
-När du har aktiverat rekommendationerna "köp liknande produkter" i Commerce-administration kan du välja ett alternativ i Commerce-webbplatsskaparen för att lägga till knappar **köp liknande produkter** i köprutan på valfri produktinformationssida (PDP). En kund som väljer den här knappen tas till en särskild sida "köp liknande produkter" som returnerar visuellt likartade produkter. Kunden kan använda väljare för att filtrera produkterna ytterligare.
+När du har aktiverat rekommendationerna "köp liknande produkter" i Commerce-administration kan du välja ett alternativ i Commerce-webbplatsbyggaren för att lägga till knappar **köp liknande produkter** i köprutan på valfri produktinformationssida (PDP). En kund som väljer den här knappen tas till en särskild sida "köp liknande produkter" som returnerar visuellt likartade produkter. Kunden kan använda väljare för att filtrera produkterna ytterligare.
 
-Lägg till en knapp för **Köp liknande produkter** till en PDP genom att använda Commerce-webbplatsskaparen, följ dessa steg.
+Lägg till en knapp för **Köp liknande produkter** till en PDP genom att använda Commerce-webbplatsbyggaren, följ dessa steg.
 
 1. Öppna en befintlig sida i webbplatsskaparen som innehåller en modul för köpruta.
 1. I vänster navigeringsfönstret, välj modul för köpruta.
@@ -105,7 +104,7 @@ Bilden nedan visar kryssrutan **Aktivera länken köp liknande produkter** och k
 
 [Avanmäl anpassade rekommendationer](personalization-gdpr.md)
 
-[Lägg till produktrekommendationer i kassan](product.md)
+[Lägg till produktrekommendationer i POS](product.md)
 
 [Lägg till rekommendationer på transaktionsskärmen](add-recommendations-control-pos-screen.md)
 
@@ -116,6 +115,3 @@ Bilden nedan visar kryssrutan **Aktivera länken köp liknande produkter** och k
 [Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

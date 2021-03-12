@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: bc6a793061a3e644599f0882ff163f5f57b2162d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: aab1b22b844ad14a94e1143f49b69f525d93f5b0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415917"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985921"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Justera AI-ML-baserade produktrekommendationsresultat
 
@@ -112,7 +111,7 @@ Följ dessa steg för att lägga till eller ta bort resultat för en startproduk
 
 [Aktivera rekommendationer för "köp liknande produkter"](shop-similar-looks.md)
 
-[Lägga till produktrekommendationer i kassan](product.md)
+[Lägga till produktrekommendationer i POS](product.md)
 
 [Lägg till rekommendationer på transaktionsskärmen](add-recommendations-control-pos-screen.md)
 
@@ -121,6 +120,3 @@ Följ dessa steg för att lägga till eller ta bort resultat för en startproduk
 [Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PdsBatchAttrib
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8924eedfbb635ca04aa167d7f6c44872fef496fd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6d51cecc800a827fe91583b6086fd88b10aedc41
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437675"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4986939"
 ---
 # <a name="create-batch-attributes-for-a-product"></a>Skapa batchattribut för en produkt
 
@@ -55,6 +54,3 @@ I den här proceduren visas hur du skapar ett batchattribut, tilldelar standardv
 22. Klicka på Spara.
 23. Stäng sidan.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

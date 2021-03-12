@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d9debd16b18300d090bde1862a16920d8e9185eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a77196be69bb71d917bf84c633199a3af3fbf478
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415747"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4986039"
 ---
 # <a name="promo-banner-module"></a>Annonsbanderollmodul
 
@@ -33,7 +32,7 @@ Det här avsnittet handlar om annonsbanderollmoduler och beskriver hur du lägge
 
 ## <a name="overview"></a>Översikt
 
-Annonsbanderollmoduler används för att visa infogade informationsmeddelanden på en sida. De kan användas för att visa erbjudanden på hela webbplatsen som visas på alla sidor på en näthandelswebbplats. 
+Annonsbanderollmoduler används för att visa infogade informationsmeddelanden på en sida. De kan användas för att visa erbjudanden på hela webbplatsen som visas på alla sidor på en näthandelssajt. 
 
 I annonsbanderollmoduler kan du använda textmeddelanden och länkar. Om flera meddelanden läggs till i en annonsbanderollmodul blir det en roterande karusellbanderoll som gör det möjligt för kunder att gå igenom alla meddelanden. 
 
@@ -96,6 +95,3 @@ Om du vill lägga till en annonsbanderollmodul på en sida och ställa in de obl
 [Innehållsblockmodul](add-hero-module.md)
 
 [Modul för videospelare](add-video-player.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

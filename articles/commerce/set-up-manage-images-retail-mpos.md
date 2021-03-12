@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aff3bee942f3443eb604311d1d804b66421e332d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 31f325d2614d0a01192a0157ee0e89514bc51caa
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415910"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985771"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Ställa in och hantera bilder för Modern POS (MPOS)
 
@@ -34,19 +33,19 @@ Den här artikeln beskriver stegen som ingår i hur du ställer in och hanterar 
 
 ## <a name="setting-up-the-media-base-url-and-defining-media-templates-to-configure-the-format-for-image-urls"></a>Ställa in mediebaserad URL och definiera mediamallar för att ställa in format för bild-URL
 
-Bilder som visas i Modern POS (MPOS) måste finnas utanför Handel. Normalt lagras de i ett innehållshanteringssystem, innehållsleveransnätverk (CDN) eller en mediaserver. MPOS hämtar och visar då bilderna för lämpliga enheter, till exempel produkter och kataloger, genom att få åtkomst till mål-URL. Om du vill hämta dessa externt värdbaserade bilder kräver MPOS korrekt URL-format för bilderna. Du kan konfigurera obligatoriskt URL-format för bilderna genom att ställa in värdet **Mediabas-URL** i kanalprofilen och använda funktionen **Definiera mediamall** för varje enhet. Du kan även skriva över det vanliga URL-formatet för en undergrupp av enheter, genom att använda funktionen **Redigera i Excel**.
+Bilder som visas i Modern POS (MPOS) måste finnas utanför Commerce. Normalt lagras de i ett innehållshanteringssystem, innehållsleveransnätverk (CDN) eller en mediaserver. MPOS hämtar och visar då bilderna för lämpliga enheter, till exempel produkter och kataloger, genom att få åtkomst till mål-URL. Om du vill hämta dessa externt värdbaserade bilder kräver MPOS korrekt URL-format för bilderna. Du kan konfigurera obligatoriskt URL-format för bilderna genom att ställa in värdet **Mediabas-URL** i kanalprofilen och använda funktionen **Definiera mediamall** för varje enhet. Du kan även skriva över det vanliga URL-formatet för en undergrupp av enheter, genom att använda funktionen **Redigera i Excel**.
 
 > [!IMPORTANT]
-> I den aktuella versionen av Handel kan du inte längre ställa in URL-formatet genom att använda **Bild**-attributet-XML för MPOS i attributgruppen **Standard** för enheter. Om du har kunskaper om Microsoft Dynamics AX 2012 R3 och använder den aktuella versionen av Handel se till att du använder alltid den nya **Definiera mediamallen** funktionen för att ställa in bilder. Använd inte eller ändra **Bild**-attributet i **Standard**-attributgruppen för enheter, inklusive produkter. De ändringar du gör direkt i **Standard**-attributgruppen för bilder kommer inte reflekteras. Detta alternativ kommer avaktiveras i en kommande version.
+> I den aktuella versionen av Commerce kan du inte längre ställa in URL-formatet genom att använda **Bild**-attributet-XML för MPOS i attributgruppen **Standard** för enheter. Om du har kunskaper om Microsoft Dynamics AX 2012 R3 och använder den aktuella versionen av Commerce se till att du använder alltid den nya **Definiera mediamallen** funktionen för att ställa in bilder. Använd inte eller ändra **Bild**-attributet i **Standard**-attributgruppen för enheter, inklusive produkter. De ändringar du gör direkt i **Standard**-attributgruppen för bilder kommer inte reflekteras. Detta alternativ kommer avaktiveras i en kommande version.
 
 I följande procedurer ställs in bilder för katalogenheten till exempel. Dessa procedurer hjälper dig att garantera att rätt bildmålsökväg anges obetingat för alla katalogbilder som använder en gemensam sökväg. Till exempel, om du har ställt in en mediaserver eller en CDN externt, och vill att bilderna att visas i MPOS för en viss butik, **Definiera mediamallen**-funktionen hjälper dig ställa in sökvägen, där MPOS kan slås upp, och att hämta bilderna.
 
 > [!NOTE]
-> I detta demonstrationsdataexempel distribueras mediaservern på skalningsenhet för handel. Du kan dock ha den någonstans utanför Handel.
+> I detta demonstrationsdataexempel distribueras mediaservern på skalningsenhet för handel. Du kan dock ha den någonstans utanför Commerce.
 
 ### <a name="set-up-the-media-base-url-for-a-channel"></a>Ställ in mediebas-URL för en kanal
 
-1. Öppna Handel HQ portal.
+1. Öppna Commerce HQ portal.
 2. Klicka på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kanalprofiler**.
 
     [![Navigering](./media/channel-profile1.png)](./media/channel-profile1.png)
@@ -62,7 +61,7 @@ I följande procedurer ställs in bilder för katalogenheten till exempel. Dessa
 3. På **Mediesökväg** snabbfliken anger du den återstående sökvägen till bildplatsen. Mediesökvägen stöder **LanguageID** som en variabel. För demodatan kan du exempelvis skapa en mapp kallad **Katalogen** för alla katalogbilder under URL:en för mediabas för din mediaserver (`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer`.) Du kan sedan ha en mapp för varje språk, till exempel en-US eller fr-FR och kopiering lämpliga bilderna under varje mapp. Om du inte har olika bilder för olika språk, kan du utesluta **LanguageID** variabeln i din mappstruktur, och peka direkt till katalogmappen, som innehåller katalogbilder.
 
     > [!NOTE]
-    > Den aktuella versionen av Handel stöder **{LanguageId}**-token för katalog-, produkt- och kategorienheter. (**{LanguageID}** token stöds inte för kund- och arbetarenheter, enligt den befintliga standard som har varit gällande sedan Microsoft Dynamics AX 6.x.)
+    > Den aktuella versionen av Commerce stöder **{LanguageId}**-token för katalog-, produkt- och kategorienheter. (**{LanguageID}** token stöds inte för kund- och arbetarenheter, enligt den befintliga standard som har varit gällande sedan Microsoft Dynamics AX 6.x.)
 
 4. För bilder, filnamnformatet är hårdkodat till katalognamnet och kan inte ändras. Byt namn på dina bilder, så att de har rätt katalognamn, för att garantera att MPOS hanterar dem korrekt.
 5. I **Filtillägg** fältet, välj det förväntade filnamnstillägget, beroende på vilken typ av bilder som du har. Till exempel för demodata har katalogbilder ställts in .jpg filtillägget. (Bildfiler byter också namn så att de har katalognamn).
@@ -114,7 +113,7 @@ Som du lärde dig i det föregående avsnittet, stöder mediamallen för en viss
     [![Generera bid-URL:r för snabbfliken Excel efter att Generera har valts](./media/excel2.png)](./media/excel2.png)
 
     > [!NOTE]
-    > De webbadresser som genereras för Excel använder sökvägen och konventionerna i den definierade mediamallen. Dessa inkluderar konventioner för filnamn. Förväntan är att du har ställt in de fysiska bilderna utanför Handel och bilderna kan hämtas från URL som härleds från mediamallen, som du tidigare definierade. Du kan skriva över härledda URL genom att använda Redigera i Excel-funktionen.
+    > De webbadresser som genereras för Excel använder sökvägen och konventionerna i den definierade mediamallen. Dessa inkluderar konventioner för filnamn. Förväntan är att du har ställt in de fysiska bilderna utanför Commerce och bilderna kan hämtas från URL som härleds från mediamallen, som du tidigare definierade. Du kan skriva över härledda URL genom att använda Redigera i Excel-funktionen.
 
 5. Klicka på **Redigera i Excel**.
 6. Klicka på **Aktivera redigeringen** när du uppmanas, efter att Microsoft Excel kalkylbladet har öppnats.
@@ -163,7 +162,7 @@ För alla enheter utom produkter kan du skriva över bildURL för en viss enheta
     [![Katalogbildgallerisidan](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
-> För närvarande visas galleriet inte förhandsgranskning av bilder för URL för medium mallbild. För katalog-, arbetare-, kund och kategorienheter om användaren innehåller tydligt en URL via den här sidan, rekommenderar vi att du anger vilken bild är standardinställningbilden, eftersom Skalningsenhet för handel serverklienter visar bara en bild per katalog, kund, anställd och kategori. Om användaren inte anger en standardinställningbild, bestämmer systemet standardinställningbilden och skicka den till Handel-menyn uppringangen tjänst (MPOS eller ecommercen).
+> För närvarande visas galleriet inte förhandsgranskning av bilder för URL för medium mallbild. För katalog-, arbetare-, kund och kategorienheter om användaren innehåller tydligt en URL via den här sidan, rekommenderar vi att du anger vilken bild är standardinställningbilden, eftersom Skalningsenhet för handel serverklienter visar bara en bild per katalog, kund, anställd och kategori. Om användaren inte anger en standardinställningbild, bestämmer systemet standardinställningbilden och skicka den till Commerce-menyn uppringangen tjänst (MPOS eller ecommercen).
 
 ### <a name="overwrite-the-image-url-for-catalog-product-images-from-the-preview-page"></a>Skriv över bildURL för katalogproduktbilder från förtittsidan
 
@@ -209,6 +208,3 @@ Katalogen, kategori, medarbetare och kundbilderna, som måste användas i frånk
 5. Följ en liknande process för andra enheter, till exempel kategori, medarbetare och kund.
 
     [![Offlineläge](./media/offline2.png)](./media/offline2.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: aeaa410fde29b285fdbbdd6acac19b0c4e917aa5
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: 6a5eb69c7746be419779b1a844ee35ec375a324c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4415993"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985646"
 ---
 # <a name="shipping-address-module"></a>Modul för leveransadress
 
@@ -32,17 +31,17 @@ Det här avsnittet beskriver om modul för leveransadressmodulen förklarar hur 
 
 ## <a name="overview"></a>Översikt
 
-Leveransadressmodulen låter kunderna lägga till eller välja leveransadressen för en order under kassautcheckningsflödet. Om kunden är inloggad visas alla adresser som har sparats för den kunden och kunden kan välja bland dem. Kunden kan också lägga till en ny adress. Leveransadressmodulen används för alla artiklar i den order som kräver leverans.
+Leveransadressmodulen låter kunderna lägga till eller välja leveransadressen för en order under kassaflödet. Om kunden är inloggad visas alla adresser som har sparats för den kunden och kunden kan välja bland dem. Kunden kan också lägga till en ny adress. Leveransadressmodulen används för alla artiklar i den order som kräver leverans.
 
 Adressformat för leverans kan definieras i Commerce-administration för varje land eller region och i modulen för leverans används lands-/regionspecifika regler.
 
-När kunderna anger en leveransadress under kassautcheckningsflödet kan de välja att spara adressen som en primär adress. Det här alternativet visas bara om kunden är inloggad.
+När kunderna anger en leveransadress under kassaflödet kan de välja att spara adressen som en primär adress. Det här alternativet visas bara om kunden är inloggad.
 
 Även om modulen leveransadress inte ger adressvalidering kan denna funktion implementeras genom anpassning.
 
 Följande bild visar ett exempel på en ny leveransadressmodul på en kassasida.
 
-![Exempel på en modul för leveransadresser på en sida i kassan](./media/ecommerce-shippingaddress.PNG)
+![Exempel på en modul för leveransadresser på en sida i POS](./media/ecommerce-shippingaddress.PNG)
 
 ## <a name="module-properties"></a>Modulegenskaper
 
@@ -72,6 +71,3 @@ En modul för leveransadress kan bara läggas till i en betalningsmodul. Mer inf
 [Orderinformationsmodul](order-confirmation-module.md)
 
 [Presentkortsmodul](add-giftcard.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

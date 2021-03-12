@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 3eb5b5c4304b393008ecc5f5ff5a663295ed0d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: c15dcd0adfcf9b9022a919bd516dcf5117ea5041
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4438115"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987489"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Konstruktionsversioner och kategorier av konstruktionsprodukter
 
@@ -162,6 +161,3 @@ Konstruktionsstrukturlistor och flöden skapas från den konstruktionsversion d�
 För produkter där du använder produktdimensionen *version* (tillsammans med logistisk påverkan på transaktionerna) läggs versionen även till i strukturlistorna och flödena. Det här beteendet gör det enklare att särskilja strukturlistor och flöden i sammanhängande versioner, oavsett inställningen **påtvinga effektivitet**.
 
 För produkter där du inte använder produktdimensionen *version* (utan logistisk påverkan på transaktionerna) läggs versionen inte till i strukturlistorna eller flödena. Därför kommer det inte att finnas någon skillnad mellan strukturlistorna och flödena i efterföljande versioner. I det här fallet rekommenderar vi starkt att du ställer in alternativet **Påtvinga effektivitet** till *Ja*. På det här sättet bidrar till att undvika konstruktionsversioner från att överlappa, och du kan även aktivera strukturlistan och flödet för en nyare version utan att först inaktivera strukturlistan och flödet för den föregående versionen. Om du ställer in alternativet **Påtvinga effektivitet** till *Ja* i det här fallet måste du manuellt inaktivera strukturlistorna och flödena av äldre versioner innan du kan aktivera den senaste versionen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

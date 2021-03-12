@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Sweden
 ms.search.industry: Retail
 ms.author: sepism
 ms.search.validFrom: 2019-10-08
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 41333f8c0ec77a591d372c5b0654585d05872a5c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 30f9702a5002c9da8f125feb22d7d0bd08d0838d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408618"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985929"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Exempel på integration av kontrollenhet för Sverige
 
@@ -33,7 +32,7 @@ ms.locfileid: "4408618"
 
 ## <a name="introduction"></a>Introduktion
 
-Commerce-funktionen för Sverige inkluderar ett exempel för att integrera kassa med Sverige-specifika kvittoskrivarenhet som kallas *kontrollenheter*. Det här exemplet utökar [funktionen räkenskapsintegrering](fiscal-integration-for-retail-channel.md). Det antas att en enhet är fysiskt ansluten till maskinvarustationerna som kassan är kopplad till. Som exempel använder det här exemplet programmeringsgränssnittet (API) för [Cleancash-typen A](https://www.retailinnovation.se/produkter)-styrenhet av Retail innovation HTT AB. Version 1.1.4 av CleanCash-API används.
+Commerce-funktionen för Sverige inkluderar ett exempel för att integrera kassa med Sverige-specifika kvittoskrivarenhet som kallas *kontrollenheter*. Det här exemplet utökar [funktionen räkenskapsintegrering](fiscal-integration-for-retail-channel.md). Det antas att en enhet är fysiskt ansluten till maskinvarustationerna som POS är kopplad till. Som exempel använder det här exemplet programmeringsgränssnittet (API) för [Cleancash-typen A](https://www.retailinnovation.se/produkter)-styrenhet av Retail innovation HTT AB. Version 1.1.4 av CleanCash-API används.
 
 Exemplet tillhandahålls i form av källkod och är en del av Retail Software Development Kit (SDK).
 
@@ -43,7 +42,7 @@ Microsoft släpper inte någon maskinvara, programvara eller dokumentation från
 
 Kontrollenhetens integrering av prov för Sverige omfattar följande funktioner:
 
-- Försäljning, returer och kvittokopior registreras automatiskt i en kontrollenhet som är ansluten till maskinvarustationen som är kopplad till kassan.
+- Försäljning, returer och kvittokopior registreras automatiskt i en kontrollenhet som är ansluten till maskinvarustationen som är kopplad till POS.
 - Kontrollkoden och tillverkningsnumret för kontrollenheten för en registrerad transaktion fångas in från kontrollenheten och sparas i transaktionen. Dessa data kallas också ett *räkenskapssvar*. Det skattemässiga svaret kan visas på sidan **butikstransaktioner**.
 - Anpassade fält för kontrollkoden och tillverkningsnumret för kontrollenheten kan läggas till en kvittolayout. På så sätt kan du skriva ut räkenskapsårets svar för en transaktion på en inleverans.
 - Räkenskapssvar för en transaktion visas på kanalrapporten **elektronisk journal (Sverige)**.
@@ -81,7 +80,7 @@ Styrenhetens integrationsprov för Sverige stöder för närvarande inte ordersc
 
 ## <a name="setting-up-the-integration-with-control-units"></a>Ställa in integrationen med styrenheter
 
-Mer information om de inställningar som krävs för Sverige finns i [ställa in Handel för Sverige](./emea-swe-cash-registers.md#setting-up-commerce-for-sweden).
+Mer information om de inställningar som krävs för Sverige finns i [ställa in Commerce för Sverige](./emea-swe-cash-registers.md#setting-up-commerce-for-sweden).
 
 ### <a name="configuring-swedenspecific-receipts"></a>Konfigurera Sverige – specifika kvitton
 
@@ -631,6 +630,3 @@ Migreringsprocessen bör bestå av följande steg.
 #### <a name="create-deployable-packages"></a>Skapa driftfärdiga paket
 
 Kör **msbuild** för hela Retail SDK för att skapa distribuerbara paket. Tillämpa paketen via LCS eller manuellt. Mer information finns i [Retail SDK-paket](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

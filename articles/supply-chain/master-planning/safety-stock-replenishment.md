@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended, ReqSafetyKeyDefaultDataWizard
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: ee5775826c4f7f499d015145a5e8f0f6c7a42903
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dbc0ca146327fada1325f4b11965c23948d3565d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437445"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987264"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Säkerhet för artiklar i lageruppfyllelse
 
@@ -116,6 +115,3 @@ Fullgörande av transaktionen för säkerhetslagret aktier prioriteras ned om sy
 Under huvudplaneringens täckningfas prioriteras lagerpåfyllnad av säkerhetslager inte längre ned. Lagerbehållning kan användas före alla andra typer av efterfrågan. Under fördröjningsberäkningen läggs ny logik till som överskrider fördröjda försäljningsrader, strukturlisteradbehov och alla andra behovstyper, för att fastställa om de kan levereras i tid, förutsatt att säkerhetslagret används. Om systemet identifierar att det kan minimera fördröjningar genom att använda säkerhetslagret, ersätter sedan försäljningsrader eller strukturlisterader den ursprungliga täckningen med säkerhetslagret och systemet utlöser lagerpåfyllnad för säkerhetslagret i stället.
 
 Om planen eller artikeln inte har ställts in för försenad beräkning har säkerhetslagerbegränsningen samma prioritet som övrig efterfrågan. Detta innebär att en reserv av lagerbehållning och annat tillgängligt lager före andra typer av efterfrågan.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

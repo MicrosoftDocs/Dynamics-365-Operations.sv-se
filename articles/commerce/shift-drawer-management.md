@@ -1,6 +1,6 @@
 ---
 title: Hantering av skift och kassalåda
-description: Det här avsnittet beskriver hur du ställer in och använder shift i Handels kassor.
+description: Det här avsnittet beskriver hur du ställer in och använder shift i Commerces kassor.
 author: jblucher
 manager: AnnBe
 ms.date: 05/10/2018
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 105011
 ms.assetid: 49a0fcc9-d4db-45ad-8c4b-213ccaced82b
 ms.search.region: global
@@ -19,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 32b7be42509a2c857f1357eb64a6b488f9cd2269
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 711f4f5549a478768f7f86a7001ac8a6cf9f4db6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415906"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985694"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Hantering av skift och kassalåda
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver hur du ställer in och använder shift i Handels kassor.
+Det här avsnittet beskriver hur du ställer in och använder shift i Commerces kassor.
 
 I Dynamics 365 Commerce beskriver termen *skift* kassatransaktionsdata och aktiviteter mellan två tidpunkter. För varje skift jämförs belopp som förväntas mot det belopp som har räknats och deklareras.
 
@@ -38,7 +37,7 @@ Vanligtvis öppnas skift i början av arbetsdagen. Då deklarerar en användare 
 
 ## <a name="typical-shift-scenarios"></a>Typiska skiftscenarier
 
-Handel innehåller flera konfigurationsalternativ och kassaåtgärder som stöder en mängd olika affärsprocesser i slutet av dagen för kassan. Det här avsnittet beskriver några vanliga skiftscenarier.
+Commerce innehåller flera konfigurationsalternativ och kassaåtgärder som stöder en mängd olika affärsprocesser i slutet av dagen för POS. Det här avsnittet beskriver några vanliga skiftscenarier.
 
 ### <a name="fixed-till"></a>Fast till
 
@@ -48,7 +47,7 @@ Tidigare har det här scenariot använts oftast. Det används fortfarande ofta. 
 
 I ”flytande till”-skift kan skift och kassalåda flyttas från en kassa till en annan. Även om en kassa endast kan ha ett aktivt skift per kassalåda kan skift avbrytas tillfälligt och sedan fortsätta senare eller i en annan kassa.
 
-T.ex. en butik har två kassor. Varje kassa öppnas i början av den dag när kassören öppnar ett nytt skift och ger startbeloppet. När en kassör tar en paus, skjuter kassören upp skiftet och tar bort det från kassalådan. Kassan blir då tillgänglig för andra kassörerna. En annan kassör kan logga in och öppna sitt eget skift i kassan. Efter första kassörens rast har avslutats kan den kassören återuppta sitt skift när någon av de andra kassorna blir tillgängliga. ”Flytande till”-skift kräver inte någon särskild konfiguration eller behörighet.
+T.ex. en butik har två kassor. Varje kassa öppnas i början av den dag när kassören öppnar ett nytt skift och ger startbeloppet. När en kassör tar en paus, skjuter kassören upp skiftet och tar bort det från kassalådan. POS blir då tillgänglig för andra kassörerna. En annan kassör kan logga in och öppna sitt eget skift i POS. Efter första kassörens rast har avslutats kan den kassören återuppta sitt skift när någon av de andra kassorna blir tillgängliga. ”Flytande till”-skift kräver inte någon särskild konfiguration eller behörighet.
 
 ### <a name="single-user"></a>Enskild användare
 
@@ -75,7 +74,7 @@ Olika åtgärder kan utföras för att ändra status för ett skift eller för a
 
 POS kräver att en användare har ett aktivt, öppet skift för att utföra alla åtgärder som leder till en finansiell transaktion, t.ex en försäljning, retur eller kundorder.
 
-När en användare loggar in till kassan, verifierar systemet först om det finns ett aktivt skift för användaren i den aktuella kassan. Om ett aktivt skift inte är tillgängligt kan användaren sedan välja att öppna ett nytt skift, återuppta ett befintligt skift eller fortsätta att logga in i läget ”utan låda”, beroende på systemkonfigurationen och användarens behörigheter.
+När en användare loggar in till POS, verifierar systemet först om det finns ett aktivt skift för användaren i den aktuella POS. Om ett aktivt skift inte är tillgängligt kan användaren sedan välja att öppna ett nytt skift, återuppta ett befintligt skift eller fortsätta att logga in i läget ”utan låda”, beroende på systemkonfigurationen och användarens behörigheter.
 
 ### <a name="declare-start-amount"></a>Stäm av startbelopp
 
@@ -87,11 +86,11 @@ Den här åtgärden är ofta den första åtgärden som vidtas i ett nyligen öp
 
 ### <a name="tender-removal"></a>Borttagning av betalningsmedel
 
-*Borttagning av betalningsmedel* är ej försäljningstransaktioner som utförs i ett aktivt skift för att minska kontantbeloppet i kassalådan. Denna åtgärd används oftast tillsammans med en växelpost i ett annat skift. Till exempel Kassa 1 börjar få slut på växel så användaren av Kassa 2 utför en borttagning av betalningsmedel för att minska beloppet i kassalådan. Användaren i kassan 1 gör sedan en växelpost för att öka hans eller hennes kassalåda.
+*Borttagning av betalningsmedel* är ej försäljningstransaktioner som utförs i ett aktivt skift för att minska kontantbeloppet i kassalådan. Denna åtgärd används oftast tillsammans med en växelpost i ett annat skift. Till exempel Kassa 1 börjar få slut på växel så användaren av Kassa 2 utför en borttagning av betalningsmedel för att minska beloppet i kassalådan. Användaren i POS 1 gör sedan en växelpost för att öka hans eller hennes kassalåda.
 
 ### <a name="suspend-shift"></a>Skjut upp skift
 
-Användare kan skjuta upp sina aktiva skift för att frigöra den aktuella kassan till en annan användare eller flytta sitt skift till en annan kassa (i detta fall kallas skiftet ofta för ”flytande kassalåda”).
+Användare kan skjuta upp sina aktiva skift för att frigöra den aktuella POS till en annan användare eller flytta sitt skift till en annan kassa (i detta fall kallas skiftet ofta för ”flytande kassalåda”).
 
 Att skjuta upp skift förhindrar eventuella nya transaktioner eller ändringar av skiftet tills det återupptas.
 
@@ -143,7 +142,7 @@ Följande POS-behörigheter påverkar vad vi kan och inte kan göra i olika situ
 - **Tillåt kassaavstämning**
 - **Tillåt kassaredovisning**
 - **Öppna kassalådan utan försäljning**
-- **Tillåt flera skiftinloggningar** - Med denna behörighet kan användaren logga in och använda ett skift som en annan användare öppnade. Användare som inte har den här behörigheten kan logga in och använda skift som de har öppnat.
+- **Tillåt flera skiftinloggningar** – Med denna behörighet kan användaren logga in och använda ett skift som en annan användare öppnade. Användare som inte har den här behörigheten kan logga in och använda skift som de har öppnat.
 - **Att hantera delade skift** – användarna måste ha behörighet för att öppna eller stänga ett delat skift.
 - **Att använda delade skift** – användarna måste ha behörighet för att logga in och använda ett delat skift.
 
@@ -158,6 +157,3 @@ Gå till **Butik och handel \> kanaler \> butiker \> alla butiker \> utdrag/stä
 Den här inställningen kan garantera att backoffice-rapporterna innehåller samma transaktioner som skift i POS och att informationen summeras genom det skiftet.
 
 Mer information om utdrag och stängningsmetoder finns i [spara konfigurationer för butiksutdrag](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

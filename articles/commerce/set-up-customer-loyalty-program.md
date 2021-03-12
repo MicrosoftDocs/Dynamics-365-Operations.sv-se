@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
@@ -19,18 +18,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 119046ee2b783e6a4b868fff2b1d7a1b59966e7b
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 085071cb7aa314dd8a8c19b8ef2ac926a6ab4103
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4415957"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985821"
 ---
 # <a name="loyalty-overview"></a>Lojalitetsöversikt
 
 [!include [banner](includes/banner.md)]
 
-Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för deras samverkan med återförsäljarens varumärke. I Dynamics 365 Commerce kan du ställa in enkla eller komplexa bonusprogram som gäller för dina juridiska personer i en handelskanal. Det här avsnittet beskriver lojalitetsfunktioner i Handel och motsvarande inställningssteg för att hjälpa återförsäljaren att snabbt komma igång med deras bonusprogram.
+Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för deras samverkan med återförsäljarens varumärke. I Dynamics 365 Commerce kan du ställa in enkla eller komplexa bonusprogram som gäller för dina juridiska personer i en handelskanal. Det här avsnittet beskriver lojalitetsfunktioner i Commerce och motsvarande inställningssteg för att hjälpa återförsäljaren att snabbt komma igång med deras bonusprogram.
 
 Du kan ställa in bonusprogram, så att de omfattar följande alternativ.
 
@@ -42,7 +41,7 @@ Du kan ställa in bonusprogram, så att de omfattar följande alternativ.
 
 ## <a name="setting-up-loyalty-programs"></a>Ställa in bonusprogram
 
-Du måste ställa in flera komponenter om du vill aktivera lojalitetsfunktionen i Handel. I bilden nedan visas lojalitetskomponenterna och hur de är relaterade till varandra.
+Du måste ställa in flera komponenter om du vill aktivera lojalitetsfunktionen i Commerce. I bilden nedan visas lojalitetskomponenterna och hur de är relaterade till varandra.
 
 ![Processflöde för bonus](./media/loyaltyprocess.gif "Förmånskomponenter och hur de relaterar till varandra")
 
@@ -55,7 +54,7 @@ I tabellen nedan beskrivs varje komponent och var den används i lojalitetinstä
 | Ställa in rabatter (förutsättning)                  | Ställa in rabatter som du erbjuder dina förmånskunder. Exempelvis kan du erbjuda 5 procents avdrag på alla kläder. | Rabatter måste läggas till i prisgrupper innan de tas med i ett bonusprogram. Prisgrupper tilldelas till bonusprogram och förmånsnivåer. |
 | Ställa in prisgrupper (förutsättning)               | Prisgrupper används för att skapa och hantera priser och rabatter för produkter. Ställa in de prisgrupper som inkluderar rabatter som gäller för dina bonusprogram. | Prisgrupper tilldelas till bonusprogram och bonusprogramnivåer. |
 | Ställa in kanaler (förutsättning)                   | Handelskanaler är de butiker som ska delta i dina bonusprogram, till exempel fysiska butiker, online-butiker eller kundtjänster. Du måste ställa in dina handelskanaler innan du kan tilldela bonusprogram till dem. | Du tilldelar kanaler till ett bonusprogram, om kanalen deltar i bonusprogrammet. |
-| Ställa in en förmånsbetalningsmetod (förutsättning) | För att se till att förmånspoängen kan lösas in i vilken kanal som helst, till exempel i fysiska butiker, onlinebutiker eller kundtjänst, måste du ställa in lagerplatsområdet för förmånskorten på sidan **kortnummer**. | Ställa in en förmånstypsbetalningsmetod och sedan tilldela förmånsbetalningsmetoden till de kanalerna som deltar i bonusprogrammet. |
+| Ställa in en förmånsbetalningsmetod (förutsättning) | För att se till att förmånspoängen kan lösas in i vilken kanal som helst, till exempel i fysiska butiker, onlinebutiker eller kundtjänst, måste du ställa in lagerplatsområdet för förmånskorten på sidan **kortnummer**. | Ställa in en förmånstypsbetalningsmetod och sedan tilldela förmånsbetalsättet till de kanalerna som deltar i bonusprogrammet. |
 | Ställa in datumintervall                            | Datumintervall är ett flexibelt sätt att ange tidsspann för bonusnivåer. Använd datumintervall för att ange hur länge en kund kan förbli på en nivå eller hur lång tid en kund måste utföra en aktivitet för att kvalificera för en nivå. | Datumintervall är endast tillgängliga om du använder nivåer i dina bonusprogram. Du väljer det datumintervall som gäller för programnivåerna, och även datumintervallen som gäller för programnivåreglerna. |
 | Ställa in belöningspoäng                             | Belöningspoäng är olika typer av belöningar som du erbjuder kunderna. Belöningspoäng kan vara inlösbara eller icke-inlösbara. Inlösbara belöningspoäng kan bytas ut mot produkter. Icke-inlösbara belöningspoäng används för att spåra syften eller för att flytta en kund till nästa nivå i ett bonusprogram. | Belöningspoäng refereras i nivåregler och används för att kvalificera en kund för en viss nivå. Belöningspoäng refereras också i förmånsscheman i förtjänst- och befrielseregler. I intäktsregler anger du belöningar som en kund kan tjäna för en viss aktivitet. I befrielseregler anger du den belöning som kunden kan lösa in. |
 | Ställa in bonusprogram                          | Bonusprogram är den viktigaste förmånen som du erbjuder. Varje bonusprogram kan även ha tilldelade förmånsnivåer. Rabatter och prisgrupper tilldelas till bonusprogrammen på antingen programnivå eller bonusnivå. | Du skapar förmånsscheman för dina bonusprogram. Du tilldelar förmånskort till dina bonusprogram, förmånskort och kan tilldelas till en kund. Kanaler deltar i bonusprogrammen som har tilldelats till förmånsscheman. Kunder med förmånskort kan delta i de bonusprogram som är tilldelade till kortet. |
@@ -89,7 +88,7 @@ I tabellen nedan beskrivs de processer som måste köras för att skicka bonusko
 
     ![Undantagna anknytningar](./media/Excluded-affiliations.png "Undanta anknytningar från att tjäna förmånspoäng")
     
-- Kassan gör det möjligt för återförsäljare att antingen använda fysiska förmånskort eller generera ett unikt förmånskortsnummer automatiskt. Om du vill aktivera automatisk generering av förmånskort butiker aktiverar du **generera förmånskortnummer** i funktionsprofilen som är kopplad till butiken. För onlinekanaler, kan återförsäljare använda IssueLoyaltyCard-API för att utfärda förmånskort till kunder. Återförsäljare kan antingen tillhandahålla ett förmånskortnummer till denna API, som används för att generera förmånskortet, eller så kommer systemet att använda förmånskortets nummerserie i Handel. Men om nummerserien inte finns och återförsäljaren inte tillhandahåller ett förmånskortnummer när API anropas visas ett felmeddelande.
+- POS gör det möjligt för återförsäljare att antingen använda fysiska förmånskort eller generera ett unikt förmånskortsnummer automatiskt. Om du vill aktivera automatisk generering av förmånskort butiker aktiverar du **generera förmånskortnummer** i funktionsprofilen som är kopplad till butiken. För onlinekanaler, kan återförsäljare använda IssueLoyaltyCard-API för att utfärda förmånskort till kunder. Återförsäljare kan antingen tillhandahålla ett förmånskortnummer till denna API, som används för att generera förmånskortet, eller så kommer systemet att använda förmånskortets nummerserie i Commerce. Men om nummerserien inte finns och återförsäljaren inte tillhandahåller ett förmånskortnummer när API anropas visas ett felmeddelande.
 
     ![Generera förmånskort](./media/Generate-loyalty-card.png "Generera automatiskt förmånskortnummer")
 
@@ -100,11 +99,11 @@ I tabellen nedan beskrivs de processer som måste köras för att skicka bonusko
 
 - Återförsäljare kan nu ange överlåtelseperiod för varje belöningspoäng. En överlåtelseperiodkonfiguration definierar varaktighet från tjänstedatum, varefter belöningspoängen skulle bli tillgängliga för kunderna. Ej erhållna poäng kan visas i kolumnen **Ej erhållna poäng** på sidan **förmånskort**. När kunderna returnerar vissa artiklar för vilka förmånspoängen intjänades, kommer systemet som standard att dra av de avsatta punkterna först och sedan dra tillbaka saldot från tillgängliga punkter. Du kan dock endast ställa av tillgängliga punkter i stället för att dra bort från ej intjänade poäng.
 
-Återförsäljare kan dessutom definiera maximal gräns för förmånsbelöningspoäng per förmånskort. Det här fältet kan användas för att minska effekten av förmånskortbedrägeri. När den maximala belöningspoängen har nåtts, kan inte användaren får mer poäng. Återförsäljaren kan välja att blockera sådana kort tills de har undersökts för eventuella bedrägerier. Om återförsäljaren avgör bedrägeri, kan inte återförsäljaren bara spärra förmånskortet för kunden utan även markera kunden som blockerades. För att göra detta, ange egenskapen **spärra kunden för registrering av förmåner** till **Ja** under **alla kunder** på snabbfliken **Handel**. Spärrade kunder kommer inte att utfärda ett förmånskort i någon av kanalerna.
+Återförsäljare kan dessutom definiera maximal gräns för förmånsbelöningspoäng per förmånskort. Det här fältet kan användas för att minska effekten av förmånskortbedrägeri. När den maximala belöningspoängen har nåtts, kan inte användaren får mer poäng. Återförsäljaren kan välja att blockera sådana kort tills de har undersökts för eventuella bedrägerier. Om återförsäljaren avgör bedrägeri, kan inte återförsäljaren bara spärra förmånskortet för kunden utan även markera kunden som blockerades. För att göra detta, ange egenskapen **spärra kunden för registrering av förmåner** till **Ja** under **alla kunder** på snabbfliken **Commerce**. Spärrade kunder kommer inte att utfärda ett förmånskort i någon av kanalerna.
 
    ![Överlåtelse och maximal belöningspoäng](./media/Vesting-and-maximum-reward-points.png "Definiera överlåtelse och maximal belöningspoäng")
 
-- Anknytningar används för att tillhandahålla särskilda priser och rabatter, men det finns vissa anknytningar som återförsäljare inte vill visa kunderna. Exempelvis en anknytning som heter ”kund som spenderar mycket” kanske inte tas emot väl av kunder. Dessutom finns vissa anknytningar som inte kan hanteras i butiken, till exempel anställda, eftersom du inte vill att kassörerna bestämmer vem som är en medarbetare och därmed ge medarbetarbaserade rabatter. Nu kan återförsäljare välja anknytningar som ska döljas i kanalerna. Anknytningar som är markerade som **dölja i kanaler** kan inte visas, läggas till eller tas bort i kassan. Men priser och rabatter som är kopplade till anknytningen kan fortfarande tillämpas på produkterna.
+- Anknytningar används för att tillhandahålla särskilda priser och rabatter, men det finns vissa anknytningar som återförsäljare inte vill visa kunderna. Exempelvis en anknytning som heter ”kund som spenderar mycket” kanske inte tas emot väl av kunder. Dessutom finns vissa anknytningar som inte kan hanteras i butiken, till exempel anställda, eftersom du inte vill att kassörerna bestämmer vem som är en medarbetare och därmed ge medarbetarbaserade rabatter. Nu kan återförsäljare välja anknytningar som ska döljas i kanalerna. Anknytningar som är markerade som **dölja i kanaler** kan inte visas, läggas till eller tas bort i POS. Men priser och rabatter som är kopplade till anknytningen kan fortfarande tillämpas på produkterna.
 
     ![Göm anknytningar](./media/Hide-affiliations.png "Dölj anknytningar i kanaler")
     
@@ -139,7 +138,7 @@ I tabellen nedan beskrivs de processer som måste köras för att skicka bonusko
     - Att uppnå en aktivitet har inträffat som borde belönas.
     - Belöna lämpliga punkter.
 
-    Det första steget är utanför Handel t.ex. twittra om varumärke eller gilla varumärket på Facebook. När aktiviteten har identifierats kan återförsäljarna anropa ovannämnda skalningsenhet för handel API och tilldela förmånspoäng i realtid. I sådana scenarier behövs det inte några granskningssteg eftersom en aktivitet har inträffat och motsvarande punkter ska tilldelas. Det finns scenarier där återförsäljaren vill granska posterna innan tilldelning av poäng. Återförsäljaren måste till exempel konfigurera en workshop i butiken som kunderna registrerar sig för på webbplatsen för näthandel eller andra program för händelseregistrering. Endast de deltagande kunderna tjänar lojalitetspoäng. För sådana scenarier introducerar vi i version 10.0 en dataentitet med namnet **Butikens förmåner andra aktivitetstyprader**. Denna dataentitet låter återförsäljare använda Data Import/Export Framework (DIXF) eller OData-API för att registrera de aktiviteter för att tilldela kunder förmånspoäng. Dataentiteten lagrar aktiviteterna i en journal med namnet **lojalitetsrader för andra aktiviteter**, som kan användas för granskning och ändring. När data har granskats kan IT-användaren manuellt bokföra aktivitetsraderna eller köra ett jobb som heter **bearbeta annan aktivitetstyp för lojalitetsrader**, som kommer att bokföra alla ej bokförda aktivitetsrader och tilldela poäng till kunder baserat på inkomstreglerna. I fallet ovan skulle händelseregistreringen kräva OData API för att skicka kundinformation till Handel. Men IT-användaren kan endast bokföra aktivitetsraderna för kunder som har deltagit i verkstaden och ta bort aktivitetsraderna för andra kunder. 
+    Det första steget är utanför Commerce t.ex. twittra om varumärke eller gilla varumärket på Facebook. När aktiviteten har identifierats kan återförsäljarna anropa ovannämnda skalningsenhet för handel API och tilldela förmånspoäng i realtid. I sådana scenarier behövs det inte några granskningssteg eftersom en aktivitet har inträffat och motsvarande punkter ska tilldelas. Det finns scenarier där återförsäljaren vill granska posterna innan tilldelning av poäng. Återförsäljaren måste till exempel konfigurera en workshop i butiken som kunderna registrerar sig för på webbplatsen för näthandel eller andra program för händelseregistrering. Endast de deltagande kunderna tjänar lojalitetspoäng. För sådana scenarier introducerar vi i version 10.0 en dataentitet med namnet **Butikens förmåner andra aktivitetstyprader**. Denna dataentitet låter återförsäljare använda Data Import/Export Framework (DIXF) eller OData-API för att registrera de aktiviteter för att tilldela kunder förmånspoäng. Dataentiteten lagrar aktiviteterna i en journal med namnet **lojalitetsrader för andra aktiviteter**, som kan användas för granskning och ändring. När data har granskats kan IT-användaren manuellt bokföra aktivitetsraderna eller köra ett jobb som heter **bearbeta annan aktivitetstyp för lojalitetsrader**, som kommer att bokföra alla ej bokförda aktivitetsrader och tilldela poäng till kunder baserat på inkomstreglerna. I fallet ovan skulle händelseregistreringen kräva OData API för att skicka kundinformation till Commerce. Men IT-användaren kan endast bokföra aktivitetsraderna för kunder som har deltagit i verkstaden och ta bort aktivitetsraderna för andra kunder. 
 
     > [!NOTE]
     > För närvarande tvingar systemet användare att ställa in en nummerserie för ”andra aktivitetstyper”, men detta blir inte ett obligatoriskt steg i framtida versioner. Om du vill ställa in en nummerserie gå till **Delade handelsparametrar** \> **Nummerserier** och välj en nummerserie för **Lojalitets-ID för annan aktivitetstyp**.
@@ -151,6 +150,3 @@ I tabellen nedan beskrivs de processer som måste köras för att skicka bonusko
 
     > [!NOTE]
     > Till skillnad från andra tidsbegränsade rabatter bl.a kvantitet, enkla, mixa och matcha och tröskelvärde skapar leveransrabatten inte rabattrader, utan snarare redigerar leveransavgifter direkt och lägger till rabattens namn i avgiftsbeskrivningen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

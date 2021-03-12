@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fa9d42c20540f2ee2240cc4f2b180140c3f9a628
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: ae3da8ee77636a2d2257e01f5876f5542469f7da
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517098"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4986064"
 ---
 # <a name="buy-box-module"></a>Modul för inköpsruta
 
@@ -72,7 +71,7 @@ Följande köpboxmodulinställningar som kan konfigureras på **Platsinställnin
 
 - **Kvantitetsbegränsning för kundvagn** – Den här egenskapen används för att ange det maximala antalet för varje objekt som kan läggas till i vagnen. En återförsäljare kan till exempel besluta att endast 10 av varje produkt kan säljas i en enda transaktion.
 - **Lager** – För information om hur du använder lagerinställningar finns i [tillämpa lagerinställningar](inventory-settings.md).
-- **Lägg till produkten i kundvagnen** - Denna egenskap används för att ange funktionen när en artikel har lagts till i vagnen. De möjliga värdena är **Navigera till kundvagnssidan**, **Navigera inte till kundvagnssidan** och **Visa meddelande**. När värdet är inställt på **Navigera till kundvagnssidan** skickas användarna till kundvagnssidan när de har lagt till en artikel. När värdet är inställt på **Navigera inte till kundvagnssidan** skickas användarna inte till kundvagnssidan när de har lagt till en artikel. När värdet är inställt på **Visa meddelande** visas användarna ett bekräftelsemeddelande och du kan fortsätta att bläddra på sidan för produktinformation. 
+- **Lägg till produkten i kundvagnen** – Denna egenskap används för att ange funktionen när en artikel har lagts till i vagnen. De möjliga värdena är **Navigera till kundvagnssidan**, **Navigera inte till kundvagnssidan** och **Visa meddelande**. När värdet är inställt på **Navigera till kundvagnssidan** skickas användarna till kundvagnssidan när de har lagt till en artikel. När värdet är inställt på **Navigera inte till kundvagnssidan** skickas användarna inte till kundvagnssidan när de har lagt till en artikel. När värdet är inställt på **Visa meddelande** visas användarna ett bekräftelsemeddelande och du kan fortsätta att bläddra på sidan för produktinformation. 
 
 > [!IMPORTANT]
 > Webbplatsinställningarna **Lägg till produkt i kundvagn** är tillgängliga i Dynamics 365 Commerce-versionen 10.0.11. Om du uppdaterar från en äldre version av Dynamics 365 Commerce måste du uppdatera filen appsettings.json manuellt. Information om hur du uppdaterar filen appsettings.json finns i [SDK- och modulens biblioteksuppdateringar](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
@@ -136,6 +135,3 @@ Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in d
 [Beräkna lagertillgänglighet för butikskanaler](calculated-inventory-retail-channels.md)
 
 [Uppdateringar av SDK och modulbibliotek](e-commerce-extensibility/sdk-updates.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
