@@ -1,5 +1,5 @@
 ---
-title: Utgående lageråtgärder i kassan
+title: Utgående lageråtgärder i POS
 description: Det här ämnet beskriver möjligheterna i den utgående lageråtgärden för en kassa (POS).
 author: hhaines
 manager: annbe
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,19 +18,19 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b8f0daf96e782e5ba6c985847bad81312e48d30b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415718"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976624"
 ---
-# <a name="outbound-inventory-operation-in-pos"></a>Utgående lageråtgärder i kassan
+# <a name="outbound-inventory-operation-in-pos"></a>Utgående lageråtgärder i POS
 
 [!include [banner](includes/banner.md)]
 
 
-I Microsoft Dynamics 365 Commerce version 10.0.10 och senare ersätter inkommande och utgående åtgärder i kassan (POS) åtgärden plockning och inleverans.
+I Microsoft Dynamics 365 Commerce version 10.0.10 och senare ersätter inkommande och utgående åtgärder i POS åtgärden plockning och inleverans.
 
 > [!NOTE]
 > I version 10.0.10 och senare kommer alla nya funktioner i kassaprogrammet som är relaterade till att ta emot butikslager att tas med i inköpsorder och överföringsorder att läggas till i inkommande åtgärden. Om du använder åtgärden för plockning och mottagning i kassa rekommenderar vi att du utvecklar en strategi för att flytta från den åtgärden till nya inkommande och utgående åtgärder. Även om åtgärden för plockning och mottagning inte tas bort från produkten, finns det inga ytterligare investeringar i den, från ett funktionellt eller resultatperspektiv efter version 10.0.9.
@@ -40,10 +39,10 @@ I Microsoft Dynamics 365 Commerce version 10.0.10 och senare ersätter inkommand
 
 Den utgående åtgärden omfattar prestandaförbättringar som säkerställer att användare med höga kvantiteter av inleverans kan bokföra över många butiker eller företag och stora lagerdokument, kan bearbeta dessa dokument till Commerce-administration (HQ) utan att uppleva timeout eller misslyckanden. Dessa förbättringar kräver användning av ett asynkront dokumentramverk.
 
-När ett asynkront dokumentramverk används kan du tilldela ändringar i utgående dokument från kassa till Commerce-administration (HQ) och sedan flytta vidare till andra uppgifter medan behandlingen till Commerce-administration (HQ) sker i bakgrunden. Du kan kontrollera statusen för dokumentet via dokumentlistsidan **utgående åtgärd** i kassan för att säkerställa att bokföringen lyckades. I kassaprogrammet kan du även använda listan aktiva dokument i utgående åtgärd för att se alla dokument som inte kunde bokföras i Commerce-administration (HQ). Om ett dokument misslyckas kan kassaanvändare göra korrigeringar till det och sedan försöka bearbeta det till Commerce-administration (HQ).
+När ett asynkront dokumentramverk används kan du tilldela ändringar i utgående dokument från kassa till Commerce-administration (HQ) och sedan flytta vidare till andra uppgifter medan behandlingen till Commerce-administration (HQ) sker i bakgrunden. Du kan kontrollera statusen för dokumentet via dokumentlistsidan **utgående åtgärd** i POS för att säkerställa att bokföringen lyckades. I kassaprogrammet kan du även använda listan aktiva dokument i utgående åtgärd för att se alla dokument som inte kunde bokföras i Commerce-administration (HQ). Om ett dokument misslyckas kan kassaanvändare göra korrigeringar till det och sedan försöka bearbeta det till Commerce-administration (HQ).
 
 > [!IMPORTANT]
-> Det asynkrona dokumentramverket måste konfigureras innan ett företag försöker använda utgående åtgärd i kassan.
+> Det asynkrona dokumentramverket måste konfigureras innan ett företag försöker använda utgående åtgärd i POS.
 
 Följ instruktionerna nedan om du vill konfigurera ett asynkront dokumentramverk.
 
@@ -62,7 +61,7 @@ Följ instruktionerna nedan om du vill konfigurera ett asynkront dokumentramverk
 > [!NOTE]
 > I Commerce version 10.0.13 och senare behöver du inte konfigurera dessa batchjobb via batch-jobbets ramverk. Batchprocesser kan konfigureras från menyn **Retail och Commerce > Retail och Commerce IT**. Använd menyalternativen **Åtgärdsövervakare för butiksdokument** och **Åtgärdsbearbetning för butiksdokument** när du konfigurerar batchjobb
 
-De batchjobb som du skapar kommer att användas för att bearbeta dokument som misslyckas eller timeout. De kommer också att användas när antalet aktiva lagerdokument som bearbetas från kassan överskrider ett systemkonfigurerat värde.
+De batchjobb som du skapar kommer att användas för att bearbeta dokument som misslyckas eller timeout. De kommer också att användas när antalet aktiva lagerdokument som bearbetas från POS överskrider ett systemkonfigurerat värde.
 
 1. Gå till **Systemadministration \> Förfrågningar \> Batchjobb**.
 2. På sidan **Batchjobb**, skapa två batchjobb:
@@ -170,11 +169,11 @@ Om du ställer in parametern **Aktivera automatisk validering** till **Ja** i **
 
 När du har fyllt i alla kvantiteter **leverans nu** för produkter måste du välja **slutför påfyllning** i appfältet.
 
-När asynkron dokumentbearbetning används skickas kvittot via ett asynkront dokumentramverk. Hur lång tid det tar att bokföra dokumentet beror på dokumentets storlek (antalet rader) och den allmänna bearbetningstrafik som sker på servern. Vanligtvis förekommer denna process på några sekunder. Om dokument bokföringen misslyckas meddelas användaren via dokument **utgående operation** på fliken **aktiv** där dokument status uppdateras till **bearbetningen misslyckades**. Användaren kan sedan välja det misslyckade dokumentet i kassan för att visa felmeddelandena och orsaken till misslyckandet i fönstret **information**. Ett misslyckat dokument förblir oförändrat och kräver att användaren går tillbaka till dokumentraderna genom att välja **orderdetaljer** i kassan. Användaren måste sedan uppdatera dokumentet med korrigeringar baserat på felen. När ett dokument har korrigerats kan användaren försöka att bearbeta det genom att välja **Slutför** på appfältet.
+När asynkron dokumentbearbetning används skickas kvittot via ett asynkront dokumentramverk. Hur lång tid det tar att bokföra dokumentet beror på dokumentets storlek (antalet rader) och den allmänna bearbetningstrafik som sker på servern. Vanligtvis förekommer denna process på några sekunder. Om dokument bokföringen misslyckas meddelas användaren via dokument **utgående operation** på fliken **aktiv** där dokument status uppdateras till **bearbetningen misslyckades**. Användaren kan sedan välja det misslyckade dokumentet i POS för att visa felmeddelandena och orsaken till misslyckandet i fönstret **information**. Ett misslyckat dokument förblir oförändrat och kräver att användaren går tillbaka till dokumentraderna genom att välja **orderdetaljer** i POS. Användaren måste sedan uppdatera dokumentet med korrigeringar baserat på felen. När ett dokument har korrigerats kan användaren försöka att bearbeta det genom att välja **Slutför** på appfältet.
 
 ## <a name="create-an-outbound-transfer-order"></a>Skapa en utgående överföringsorder
 
-Från kassan kan användare skapa nya överföringsorderdokument. Starta processen genom att välja **ny** i appfältet medan du är i huvuddokumentlistan för **utgående operation**. Du uppmanas sedan att välja lagerställe eller butik med **överföring till** som den aktuella butiken skickar lager till. Värdena begränsas till det val som har angetts i konfigurationen för butikens uppfyllelsegrupp. I en begäran om utgående överföringar är den aktuella butiken alltid **överföringen från** lagerstället för överföringsordern. Det går inte att ändra värdet.
+Från POS kan användare skapa nya överföringsorderdokument. Starta processen genom att välja **ny** i appfältet medan du är i huvuddokumentlistan för **utgående operation**. Du uppmanas sedan att välja lagerställe eller butik med **överföring till** som den aktuella butiken skickar lager till. Värdena begränsas till det val som har angetts i konfigurationen för butikens uppfyllelsegrupp. I en begäran om utgående överföringar är den aktuella butiken alltid **överföringen från** lagerstället för överföringsordern. Det går inte att ändra värdet.
 
 Du kan ange värden i fälten **Transportdatum**, **Inleveransdatum** och **Leveranssätt** efter behov. Du kan också lägga till en notering som kommer att lagras tillsammans med överföringsorder rubriken, som en bilaga till dokumentet i Commerce-administration (HQ).
 
@@ -192,7 +191,4 @@ Hela levererade överföringsorder flyttas till fliken **Slutför** på dokument
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Ingående lageråtgärder i kassan](pos-inbound-inventory-operation.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Ingående lageråtgärder i POS](pos-inbound-inventory-operation.md)

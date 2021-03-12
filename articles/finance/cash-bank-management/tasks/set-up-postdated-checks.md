@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: BankParameters, VendPaymMode, CustPaymMode
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 22e67aa051b5ea8267df7efac40e007d0f11a83d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b677056f11a8733bf90f18110b8ee47f6447503b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448073"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976301"
 ---
 # <a name="set-up-postdated-checks"></a>Ställ in efterdaterade checkar
 
@@ -46,17 +45,14 @@ Rollen för den här proceduren är Kassaförvaltare. I den här proceduren anv�
 9. I fältet Clearingkonto för källskattebelopp, ange de önskade värdena.
 10. Klicka på Spara.
 11. Stäng sidan.
-12. Gå till Leverantörsreskontra > Betalningsinställning > Betalningsmetoder.
+12. Gå till Leverantörsreskontra > Betalningsinställning > Betalsätt.
 13. Klicka på Ny.
 14. Skriv ett värde i fältet Betalningsmetod.
 15. Välj alternativet Clearingbokföring av efterdaterad check om du vill ange att checkbeloppet bokförs på ett clearingkonto.
 16. Välj "Bank" i fältet Kontotyp.
-    * Motkontot för betalningsmetoden kommer att vara en bank.  
+    * Motkontot för betalsättet kommer att vara en bank.  
 17. I fältet Betalningskonto, ange önskade värden.
     * Välj det bankkonto som används för att dra av fakturabeloppet.  
 18. Klicka på Spara.
 19. Stäng sidan.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

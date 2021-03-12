@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05b697cce8ecb9ece282fc659ab4d97c4b747c5e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 826920980bdd2d30337c92553bd0367b119f676c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437532"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977373"
 ---
 # <a name="system-grouping-on-an-open-work-list"></a>Systemgruppering i en öppen arbetslista
 
@@ -42,6 +41,3 @@ Använd dessa steg för att ställa in systemgruppering i en öppen arbetslista.
 | Fält för systemgruppering | Endast tillgängligt om <strong>Tillåt systemarbete</strong> anges till <strong>Ja</strong>. Välj det fält som bestämmer hur plockningsarbete för arbetare ska grupperas. Om du till exempel väljer fältet <strong>ShipmentId</strong> kommer arbetstagare att skanna leverans-ID:t för att gruppera plockningsarbetet. Allt arbete för leveransen tilldelas sedan till arbetaren. Detta fält kräver att du skapar ett menyalternativ som ska använda befintligt arbete som grupperas av systemet. Använd fältet <strong>Etikett för systemgruppering</strong> för att informera arbetaren om vad denne ska skanna. |
 | Etikett för systemgruppering |                       Endast tillgängligt om <strong>Tillåt systemarbete</strong> anges till <strong>Ja</strong>. Ange text för att informera arbetstagaren om vad som ska skannas när plockningsarbetet grupperas . Om du till exempel använder fältet <strong>ShipmentId</strong> för att gruppera plockningarbete efter leverans kan du ange Leverans-ID i fältet. Detta fält kräver att du skapar ett menyalternativ som ska använda befintligt arbete som grupperas av systemet. Du måste också välja fältet som du vill gruppera efter i fältet <strong>Systemgruppering</strong>.                       |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

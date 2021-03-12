@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c77d08d5877ab27f9b6549a5b2a666150938fc08
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1abc86aa5c3863eba34f726b543792408a542383
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448081"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976376"
 ---
 # <a name="reconcile-a-bank-account"></a>Stäm av ett bankkonto
 
@@ -71,6 +70,3 @@ Med funktionen Avbryt avstämning av bankutdrag kan du annullera avstämning av 
 Avstämningar av bankutdrag kan bara annulleras i kronologisk ordning som de angavs. När en avstämning av bankutdraget annulleras, kommer nya transaktioner och korrigeringar att återföras och alla andra transaktioner markeras som ej avstämda.
  
 Om du vill avbryta avstämningen av bankutdraget väljer du bankutdraget och väljer **bankutdrag > Avbryt bankavstämning**. På sidan **Avbryt bankavstämning** anger du **orsakskoden**, **orsakskommentaren** och **annulleringsdatumet**. Välj **OK** för att påbörja annulleringen. Observera att annulleringsdatumet för bankutdraget måste vara på eller efter bankutdragsdatumet. När avstämningen av bankutdraget har annullerats kommer fältet **Annulleringsdatum** för bankutdraget att uppdateras med det angivna **Annulleringsdatumet**. Välj knappen **transaktioner** om du vill visa transaktionerna som avstämningen annullerades.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

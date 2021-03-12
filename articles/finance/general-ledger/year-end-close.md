@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerClosingSheet
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f5b81ed788536a8b81ca53d6b6f12200836b6f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ed15659d156427d0f591a63df7ed0a1ecd4f23c1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448096"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978421"
 ---
 # <a name="year-end-close"></a>Årsbokslut
 
@@ -69,7 +68,7 @@ När de juridiska enheterna har lagts till, definierar du de viktigaste bokslute
 
 Fliken **ekonomiska dimensionen** används för att definiera vilka ekonomiska dimensioner som ska användas på IB-transaktionen. Observera att inställningarna du definierar endast gäller den valda juridiska personen i rutnätet **juridiska personer**. Inställningen upprepas för varje juridisk person i rutnätet. 
 
-**Överför dimensioner i balansräkningen** används för att definiera om de ekonomiska dimensionerna i transaktioner som bokförts på balansräkningskonton ska hanteras på IB-transaktion. Det bästa är att ange detta som **Ja**. **Överför resultatdimensioner** används för att definiera vilka ekonomiska dimensionerna i transaktioner på bokförda vinst- och förlustkontot överförs till huvudkontot för balanserade vinstmedel. Först identifierar du de ekonomiska dimensionerna som är relevanta för den valda juridiska personen. Detta kan inkludera alla ekonomiska dimensioner bokförda under året, även om den ekonomiska dimensionen inte är en del av en aktiv kontostruktur. Härnäst definierar du varje dimension som **Stäng enstaka** eller **Stäng alla**.  Standardvärdet är **Stäng alla**, som har den ekonomiska dimensionens ursprungliga värden från bokförda transaktioner och använder dem för att skapa ingående saldon för balanserad vinst eller förlust. Separata ingående saldon för balanserad vinst eller förlust skapas för varje unik kombination av värden för ekonomiska dimensioner. Om **Stäng enstaka** är markerat kommer alla transaktioner som bokförs med den ekonomiska dimensionen sammanfattas i en balanserade vinstmedel ingående balans för det dimensionsvärde som angetts i fältet efter **Stäng enstaka**. Anta att alla transaktioner för räkenskapsåret har bokförts med kontostrukturen för huvudkontot - avdelning. I Avdelning ekonomiska dimensionen på mallen, **Stäng enstaka** är markerad och värdet 100. Om den totala intäkten för alla transaktioner som bokförts till avdelningar 200, 300 och 400 är 100,000 kr skapas en ingående balans för Balanserade vinstmedel - 100. Om du väljer **Stäng enstaka** och lämnar värdet för ekonomisk dimension tomt kommer alla transaktioner bokföras till balanserade vinstmedel med det dimensionsvärdet tomt. 
+**Överför dimensioner i balansräkningen** används för att definiera om de ekonomiska dimensionerna i transaktioner som bokförts på balansräkningskonton ska hanteras på IB-transaktion. Det bästa är att ange detta som **Ja**. **Överför resultatdimensioner** används för att definiera vilka ekonomiska dimensionerna i transaktioner på bokförda vinst- och förlustkontot överförs till huvudkontot för balanserade vinstmedel. Först identifierar du de ekonomiska dimensionerna som är relevanta för den valda juridiska personen. Detta kan inkludera alla ekonomiska dimensioner bokförda under året, även om den ekonomiska dimensionen inte är en del av en aktiv kontostruktur. Härnäst definierar du varje dimension som **Stäng enstaka** eller **Stäng alla**.  Standardvärdet är **Stäng alla**, som har den ekonomiska dimensionens ursprungliga värden från bokförda transaktioner och använder dem för att skapa ingående saldon för balanserad vinst eller förlust. Separata ingående saldon för balanserad vinst eller förlust skapas för varje unik kombination av värden för ekonomiska dimensioner. Om **Stäng enstaka** är markerat kommer alla transaktioner som bokförs med den ekonomiska dimensionen sammanfattas i en balanserade vinstmedel ingående balans för det dimensionsvärde som angetts i fältet efter **Stäng enstaka**. Anta att alla transaktioner för räkenskapsåret har bokförts med kontostrukturen för huvudkontot – avdelning. I Avdelning ekonomiska dimensionen på mallen, **Stäng enstaka** är markerad och värdet 100. Om den totala intäkten för alla transaktioner som bokförts till avdelningar 200, 300 och 400 är 100,000 kr skapas en ingående balans för Balanserade vinstmedel – 100. Om du väljer **Stäng enstaka** och lämnar värdet för ekonomisk dimension tomt kommer alla transaktioner bokföras till balanserade vinstmedel med det dimensionsvärdet tomt. 
 
 Årsbokslutsprocessen följer inte kontostrukturer. Detta beror på att kontostrukturer kan ändras under ett räkenskapsår och det är inte alltid möjligt att identifiera relevanta kontostrukturen på grund av dessa ändringar.  När IB-transaktioner skapas flyttas saldona framåt med ekonomiska dimensioner enligt årsbokslutsmallen. Posterna i ingående saldon kan inte längre inkludera ekonomiska dimensioner i aktuell kontostruktur och segmentkombinationerna är inte längre giltiga i den aktuella kontostrukturen. Om organisationen vill utesluta en ekonomisk dimension för balanserade vinstmedel ingående balans anger du ekonomiska dimensionen **Stäng enstaka** och lämnar dimensionsvärdet tomt.
 
@@ -88,6 +87,3 @@ Mer information finns i [Stäng redovisningen vid periodslut](close-general-ledg
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

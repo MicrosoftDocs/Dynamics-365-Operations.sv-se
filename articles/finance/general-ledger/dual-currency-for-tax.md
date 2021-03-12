@@ -3,7 +3,7 @@ title: Stöd för moms på dubbel valuta
 description: I det här avsnittet beskrivs hur du utökar redovisningsfunktionen för dubbla valutor i momsdomänen och vilken inverkan som momsen ska beräknas och bokföras.
 author: EricWang
 manager: Ann Beebe
-ms.date: 12/16/2019
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 9e5db8e4bbd14aa30196e3be617cdfcb72c091fd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2e3e7ff93ca3c6a2266ba0f33c8eac7ceade0d4d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447965"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978620"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Stöd för moms på dubbel valuta
 [!include [banner](../includes/banner.md)]
@@ -44,8 +43,7 @@ Mer information om dubbla valutor finns i [dubbla valutor](dual-currency.md).
 
 Som en följd av stöd för dubbla valutor finns två nya funktioner i funktionshantering: 
 
-- Momskonvertering (version i version 10.0.9)
-- Automatiskt saldo för momskvittning i rapporteringsvaluta (utgivning i version 10.0.11)
+- Momskonvertering (nyhet i version 10.0.13)
 
 Stöd till dubbel valuta för moms garanterar att moms beräknas korrekt i momsvalutan och att saldot för momskvittningen beräknas korrekt i både redovisningsvalutan och rapporteringsvalutan. 
 
@@ -53,8 +51,8 @@ Stöd till dubbel valuta för moms garanterar att moms beräknas korrekt i momsv
 
 Parametern **Momskonvertering** innehåller två alternativ för konvertering av momsbelopp från transaktionsvaluta till momsvaluta. 
 
-- Redovisningsvaluta: Sökvägen är "Belopp i transaktionsvaluta> Belopp i redovisningsvaluta> Belopp i momsvaluta". Redovisningsvalutans växelkurstyp (konfigureras i redovisningsinställningar) kommer att användas för valutakonverteringen.
-- Rapporteringsvaluta: Sökvägen är "Belopp i transaktionsvaluta> Belopp i rapporteringsvaluta> Belopp i momsvaluta". Rapporteringsvalutans växelkurstyp (konfigureras i redovisningsinställningar) kommer att användas för valutakonverteringen.
+- Redovisningsvaluta: Sökvägen är "Belopp i transaktionsvaluta> Belopp i redovisningsvaluta> Belopp i momsvaluta". Redovisningsvalutans valutakurstyp (konfigureras i redovisningsinställningarna) kommer att användas för valutakonverteringen.
+- Rapporteringsvaluta: Sökvägen är "Belopp i transaktionsvaluta> Belopp i rapporteringsvaluta> Belopp i momsvaluta". Rapporteringsvalutans valutakurstyp (konfigureras i redovisningsinställningarna) kommer att användas för valutakonverteringen.
 
 ### <a name="example"></a>Exempel
 
@@ -109,7 +107,7 @@ Den här versionen kommer inte att innehålla ändringar av rapporter och formul
 
 ## <a name="tax-settlement-auto-balance-in-reporting-currency"></a>Automatiskt saldo för momskvittning i rapporteringsvaluta
 
-Om momskvittningen inte är balanserad i rapportvalutan av viss anledning, till exempel om momskonverteringsvägen är "redovisningsvaluta", eller om valutakursändringen har ändrats i en enskild momskvittningsperiod, kommer systemet automatiskt att generera redovisningsposter för att justera momsbeloppavvikelsen och förskjut den mot konto för realiserad valutakursvinst/förlust, som konfigureras i redovisningsinställningar.
+Om momskvittningen inte är balanserad i rapportvalutan av en viss anledning, till exempel om momskonverteringssökvägen är "Redovisningsvaluta", eller om valutakursändringen har ändrats i en enskild momskvittningsperiod, så kommer systemet automatiskt att generera redovisningsposter för att justera momsbeloppavvikelsen och förskjuta den mot kontot för realiserad valutakursvinst/förlust, som konfigureras i redovisningsinställningarna.
 
 Med hjälp av föregående exempel kan du visa den här funktionen, anta att data i registret TAXTRANS vid tidpunkten för bokföringen är följande.
 
@@ -145,6 +143,3 @@ Mer information finns i följande avsnitt:
 - [Dubbel valuta](dual-currency.md)
 - [Momsöversikt](indirect-taxes-overview.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

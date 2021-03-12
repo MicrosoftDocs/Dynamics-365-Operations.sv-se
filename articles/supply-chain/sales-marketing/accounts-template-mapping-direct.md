@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 8aa03f94e0fb89a6d34ce014dbb6004a1a666327
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0499f604049240a226b4002710817034598b1e66
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529220"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977723"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Synkronisera konton direkt från Sales till kunder i Supply Chain Management
 
@@ -33,7 +32,7 @@ ms.locfileid: "4529220"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Common Data Service för appar](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+> Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Microsoft Dataverse för appar](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera konton direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
 
@@ -66,11 +65,11 @@ Konton hanteras i Sales och synkroniseras med Supply Chain Management som kunder
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Lösningen potentiell kund till kontanter för Sales
 
-Fältet **kontonummer** är tillgängligt på sidan **konto**. Det har gjorts en fysisk och en unik nyckel för att stödja integreringen. Fysiska nyckeln i CRM-lösningen (Customer Relationship Management) kan påverka kunder som redan använder fältet **kontonummer** men som inte använder unika **kontonummer**-värden för varje konto. Integrationslösningen stöder för närvarande inte fallet.
+Kolumnen **kontonummer** är tillgängligt på sidan **konto**. Det har gjorts en fysisk och en unik nyckel för att stödja integreringen. Fysiska nyckeln i CRM-lösningen (Customer Relationship Management) kan påverka kunder som redan använder kolumnen **kontonummer** men som inte använder unika **kontonummer**-värden för varje konto. Integrationslösningen stöder för närvarande inte fallet.
 
 När ett nytt konto skapas om ett **kontonummer**-värde inte finns, skapas det automatiskt med hjälp av en nummerserie. Värdet består av **ACC** följt av en ökande nummerserie och sedan ett suffix på sex tecken. Här är ett exempel: **ACC-01000-BVRCPS**
 
-När integrationslösningen för Sales används kommer ett uppgraderingsskript angs på fältet **kontonummer** för befintliga konton i Sales. Om det inte finns några **kontonummer**-värden kommer nummerserien som beskrivits ovan att användas.
+När integrationslösningen för Sales används kommer ett uppgraderingsskript anges på kolumnen **kontonummer** för befintliga konton i Sales. Om det inte finns några **kontonummer**-värden kommer nummerserien som beskrivits ovan att användas.
 
 ## <a name="preconditions-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 
@@ -95,12 +94,12 @@ När integrationslösningen för Sales används kommer ett uppgraderingsskript a
 ## <a name="template-mapping-in-data-integration"></a>Mallmappning i dataintegrering
 
 > [!NOTE]
-> Fälten **betalningsvillkor**, **fraktvillkor**, **leveransvillkor**, **leveranssätt** och **leveransläge** tillhör inte standardmappningarna. Om du vill mappa dessa fält måste du konfigurera en värdemappning som är specifik för data i organisationer som enheten synkroniseras mellan.
+> Kolumnerna **betalningsvillkor**, **fraktvillkor**, **leveransvillkor**, **leveranssätt** och **leveransläge** tillhör inte standardmappningarna. Om du vill mappa dessa kolumner måste du konfigurera en värdemappning som är specifik för data i organisationer som tabellen synkroniseras mellan.
 
 I följande illustrationer visas ett exempel på en mallmappning i dataintegrering. 
 
 > [!NOTE]
-> Mappningen visar vilken fältinformation som kommer att synkroniseras från Sales till Supply Chain Management.
+> Mappningen visar vilken kolumninformation som kommer att synkroniseras från Sales till Supply Chain Management.
 
 ![Mallmappning i dataintegrering](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
@@ -117,6 +116,3 @@ I följande illustrationer visas ett exempel på en mallmappning i dataintegreri
 
 [Synkronisera huvuden och rader i försäljningsfakturor direkt från Supply Chain Management till Sales](sales-invoice-template-mapping-direct.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

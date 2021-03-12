@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: LedgerExchAdjHist
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 62183
 ms.assetid: 2762baaf-0c10-4ff7-8713-c506d6c29b98
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33db12388c969b8dadb38bfacf4d9df333b78bd4
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 1907e62e30dbd3a51f5b7d2e5a57229143c87e99
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4448176"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978674"
 ---
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Valutaomvärdering i ett konsolideringsföretag
 
 [!include [banner](../includes/banner.md)]
 
-När du konsolidera data från en redovisningsvaluta till en annan måste du fortfarande köra valutaomvärdering om det sker en förändring i valutakurser, så att ditt konto saldo är korrekt omvärderas. När du ursprungligen konsolidera data, använd **valutakursdifferens** flik för att välja den första växelkurser för översättning under konsolideringsprocessen. Efter en ny valutakurs registreras (t.ex. i nästa månad), du måste omvärdera den kontosaldon. Den orealiserade vinster eller förluster som sedan uppdateras baserat på den nya växelkursen och datum. Följande exempel illustrerar bokföringsposter som skapas under processen.
+När du konsolidera data från en redovisningsvaluta till en annan måste du fortfarande köra valutaomvärdering om det sker en förändring i valutakurser, så att ditt konto saldo är korrekt omvärderas. När du ursprungligen konsolidera data, använd **valutakursdifferens** flik för att välja den första valutakurser för översättning under konsolideringsprocessen. Efter en ny valutakurs registreras (t.ex. i nästa månad), du måste omvärdera den kontosaldon. Den orealiserade vinster eller förluster som sedan uppdateras baserat på den nya valutakursen och datum. Följande exempel illustrerar bokföringsposter som skapas under processen.
 
 ## <a name="company-setup"></a>Företagsinställningar
 -   **Källa/driftbolaget (USMF)** – US dollar (USD) används som redovisning och rapportering valuta.
@@ -89,6 +88,3 @@ Du kommer att se ytterligare transaktioner för rapportering valuta.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

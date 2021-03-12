@@ -1,6 +1,6 @@
 ---
 title: Distribuera en ny klientorganisation för näthandel
-description: I det här avsnittet beskrivs hur du distribuerar en ny Dynamics 365 Commerce-näthandelsplats med hjälp av Microsoft Dynamics Lifecycle Services (LCS).
+description: I det här avsnittet beskrivs hur du distribuerar en ny Dynamics 365 Commerce-näthandelssajt med hjälp av Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
 ms.date: 07/02/2020
@@ -10,26 +10,25 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 157dc8225e5bbf9338a1b5a79a2880e8a8c4bf10
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 3b750ee89a85688dcebe673f9c3ff13693e9fcad
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517292"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976748"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Distribuera en ny klientorganisation för näthandel
 
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du distribuerar en ny Dynamics 365 Commerce-näthandelsplats med hjälp av Microsoft Dynamics Lifecycle Services (LCS).
+I det här avsnittet beskrivs hur du distribuerar en ny Dynamics 365 Commerce-näthandelssajt med hjälp av Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="overview"></a>Översikt
 
@@ -80,22 +79,22 @@ När du har samlat in den information som krävs följer du stegen nedan för at
 1. Fyll i önskad information på nästa sida och skicka sedan in formuläret. Du kommer tillbaka till fliken **näthandel** där du bör se att initieringen har startats.
 1. Om du vill visa initieringsstatusen **uppdatera** du eller återgår till fliken **näthandel** senare.
     
-När näthandel initieras från LCS etablerar systemet flera komponenter som krävs för näthandel och kopplar dem till miljön. När etableringen har slutförts, på fliken **näthandel** på sidan **Butikshantering** uppdateras för att avspegla etableringen. På sidan visas de senaste anpassningsdistributionerna och status för alla andra pågående distributioner. Den innehåller också länkar till webbplatsen för näthandel och Commerce-webbplatsskaparen där webbplatser har skapats.
+När näthandel initieras från LCS etablerar systemet flera komponenter som krävs för näthandel och kopplar dem till miljön. När etableringen har slutförts, på fliken **näthandel** på sidan **Butikshantering** uppdateras för att avspegla etableringen. På sidan visas de senaste anpassningsdistributionerna och status för alla andra pågående distributioner. Den innehåller också länkar till webbplatsen för näthandel och Commerce-webbplatsbyggaren där webbplatser har skapats.
 
-## <a name="access-commerce-site-builder"></a>Få åtkomst till Commerce-webbplatsskaparen
+## <a name="access-commerce-site-builder"></a>Få åtkomst till Commerce-webbplatsbyggaren
 
-För att få åtkomst till Commerce-webbplatsskaparen går du till fliken **näthandel** på sidan **Butikshantering** i LCS och väljer länken **Hanteringsverktyg för näthandelsplats**. Landningssidan för webbplatsskaparen visar en vy på klientorganisationsnivå. Från den här sidan kan du:
+För att få åtkomst till Commerce-webbplatsbyggaren går du till fliken **näthandel** på sidan **Butikshantering** i LCS och väljer länken **Hanteringsverktyg för näthandelssajt**. Landningssidan för webbplatsskaparen visar en vy på klientorganisationsnivå. Från den här sidan kan du:
 
 - Ändra inställningarna för klientorganisationsnivå.
 - Navigera till en webbplats som du har skapat och ha behörighet att visa den. 
 - Åtkomst till granskningsfunktioner, t.ex. av redigering och rapportering.
-- Skapa en ny anläggning. Mer information om hur du skapar en ny webbplats finns i [Skapa en näthandelsplats](create-ecommerce-site.md). 
+- Skapa en ny anläggning. Mer information om hur du skapar en ny webbplats finns i [Skapa en näthandelssajt](create-ecommerce-site.md). 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Konfigurera ditt domännamn](configure-your-domain-name.md)
 
-[Skapa en näthandelsplats](create-ecommerce-site.md)
+[Skapa en näthandelssajt](create-ecommerce-site.md)
 
 [Associera en Dynamics 365 Commerce-webbplats med en onlinekanal](associate-site-online-store.md)
 
@@ -112,6 +111,3 @@ För att få åtkomst till Commerce-webbplatsskaparen går du till fliken **nät
 [Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)
 
 [Aktivera platsbaserad butiksdetektering](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

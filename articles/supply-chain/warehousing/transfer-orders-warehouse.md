@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventLocation,CustVendTransportPoint2Point
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: e482567eb92b9ab891d41d82d10cbb87f9b7fb01
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 7dfb215683b4ee5d186626492bd90116d1a06a1d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438050"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976848"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>Ställ in lagerställen för överföringsorder 
 
@@ -53,6 +52,3 @@ Du måste också ange ledtiden för transport mellan lagerställen på sidan **T
 2. I fältet **Mottagningsplats**, välj **Lagerställe**.
 3. Välj **speditionslager**, **mottagande lager** och **transportdagar**. 
 4. (Valfritt) Du kan också ange transporttiden beroende på leveranssätt, under fliken **Transportdagar per leveranssätt**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

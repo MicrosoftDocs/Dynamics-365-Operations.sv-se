@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13951
 ms.assetid: 69b4e010-7683-4dc2-8a06-6d572f37e903
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0474a8cecccaf1e23874458c27e0bea991140b6c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f012f934015e334aea468b5b62741749103d7790
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448054"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978749"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>200 procent degressiv avskrivning
 
@@ -60,7 +59,7 @@ Om du väljer **Kalender** som avskrivningsår finns följande alternativ i fäl
 
 Om du väljer **Räkenskapsår** i fältet **Avskrivningsår**, beräknas 200 % degressiv avskrivning baserat på räkenskapsåret för räkenskapskalendern som angetts för boken, eller för den räkenskapskalender som har valts på sidan **Huvudbok**. Räkenskapskalendrar ställs in på sidan **Räkenskapskalendrar**. 
 
-För räkenskapsåret 1 juli - 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje period. Längden på nästa räkenskapsår bestäms av inställningen för perioder på sidan **Räkenskapskalendrar**. 
+För räkenskapsåret 1 juli – 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje period. Längden på nästa räkenskapsår bestäms av inställningen för perioder på sidan **Räkenskapskalendrar**. 
 
 Om du väljer **Skatt** som avskrivningsår finns följande alternativ i fältet **Periodfrekvens**:
 
@@ -77,19 +76,16 @@ Om du väljer **Skatt** som avskrivningsår finns följande alternativ i fältet
 | Antal tjänsteår             | 5      |
 | Årlig avskrivningsprocent | 40 %    |
 
-Den degressiva avskrivningsmetoden på 200 % delar 200 procent med tjänstelivstiden i år. Den procenten multipliceras med anläggningstillgångens bokförda nettovärde för att bestämma årets avskrivningsbelopp.
+Den degressiva avskrivningsmetoden på 200 % delar 200 procent med tjänstelivstiden i år. Den procenten multipliceras med anläggningstillgångens bokförda nettovärde för att bestämma årets avskrivningsbelopp.
 
 | Period | Beräkning av årligt avskrivningsbelopp | Bokfört värde             | Bokfört nettovärde i slutet av året |
 |--------|-----------------------------------------------|------------------------|---------------------------------------|
-| År 1 | (11 000 – 1 000) × 40 % = 4 000                | 11 000 – 4 000 = 7 000 | 11 000 – 1 000 – 4 000 = 6 000        |
-| År 2 | 6 000 × 40 % = 2 400                           | 7 000 – 2 400 = 4 600  | 6 000 – 2 400 = 3 600                 |
-| År 3 | 3 600 × 40 % = 1 440                           | 4 600 – 1 440 = 3 160  | 3 600 – 1 440 = 2 160                 |
+| År 1 | (11 000 – 1 000) × 40 % = 4 000                | 11 000 – 4 000 = 7 000 | 11 000 – 1 000 – 4 000 = 6 000        |
+| År 2 | 6 000 × 40 % = 2 400                           | 7 000 – 2 400 = 4 600  | 6 000 – 2 400 = 3 600                 |
+| År 3 | 3 600 × 40 % = 1 440                           | 4 600 – 1 440 = 3 160  | 3 600 – 1 440 = 2 160                 |
 
 > [!NOTE] 
 > Om beloppet som beräknas med den degressiva avskrivningsmetoden 200 % blir lägre än beloppet som beräknas med den linjära metoden, sker vanligtvis en konvertering till den linjära metoden för resterande tjänstelivstid.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

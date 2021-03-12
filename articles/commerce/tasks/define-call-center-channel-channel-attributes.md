@@ -10,23 +10,22 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2f99029195a8b783f0d12990d4e8bab0bb348d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 59193d5d6a54fba89394e9700beb3b9596c47391
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415878"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976574"
 ---
 # <a name="create-call-center-channels-and-define-channel-attributes"></a>Skapa kundtjänstkanaler och definiera kanalattribut
 
 [!include [banner](../includes/banner.md)]
 
-Den här proceduren beskriver hur du skapar en ny handelskanal och definierar kanalattribut. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USRT. Den här proceduren är avsedd för rollen Handels-IT.
+Den här proceduren beskriver hur du skapar en ny handelskanal och definierar kanalattribut. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USRT. Den här proceduren är avsedd för rollen Commerces-IT.
 
 
 ## <a name="create-new-store"></a>Skapa ny butik
@@ -73,7 +72,7 @@ Den här proceduren beskriver hur du skapar en ny handelskanal och definierar ka
 38. Klicka på Spara.
 39. Stäng sidan.
 40. Klicka på Ställ in i åtgärdsfönstret.
-41. Klicka på Betalningsmetoder.
+41. Klicka på Betalsätt.
 42. Klicka på Ny.
 43. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Betalningsmetod.
 44. Klicka på länken på den valda raden i listan.
@@ -100,6 +99,3 @@ Den här proceduren beskriver hur du skapar en ny handelskanal och definierar ka
 65. Klicka på Spara.
 66. Stäng sidan.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

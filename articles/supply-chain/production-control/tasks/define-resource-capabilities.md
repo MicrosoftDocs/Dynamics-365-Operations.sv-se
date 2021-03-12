@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WrkCtrCapability
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c07d3fe1969f3baea484991e74f668eade813d78
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 93b30cbe660d224f0a92f4e412d2b1ba33af3f9b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437368"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977848"
 ---
 # <a name="define-resource-capabilities"></a>Definiera resurskunskaper
 
@@ -49,6 +48,3 @@ Resurskapaciteter beskriver vad verksamhetsresurser kan göra. Vid tidsplanering
 5. Välj ett tal i fältet Nivå.
     * När du anger att ett jobb eller en operation kräver en viss kapacitet, kan du också ange den lägsta nivån som krävs. Använd kapacitetsnivån för att skilja mellan resurser som kan utföra samma jobb, men med olika hastighet, styrka, storlek osv.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

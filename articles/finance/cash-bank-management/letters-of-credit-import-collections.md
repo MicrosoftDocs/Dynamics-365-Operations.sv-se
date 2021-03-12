@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BankLCImport
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 18321
 ms.assetid: 5c97ab81-632b-4043-a940-674bcb496c80
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c31b8af25ea231f23ac5f4968760257b3f5894f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ad39951902395ebd2f78169f77e8d1a2e03a5762
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448023"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978849"
 ---
 # <a name="letters-of-credit-and-import-collections"></a>Remburs och importinkasso
 
@@ -41,7 +40,7 @@ För en importremburs är den juridiska personen köparen eller sökande av remb
 -   En sökande (köparen) som ska betala för varorna.
 -   Mottagaren (säljaren) som ska få betalningen.
 -   Banken som utfärdar rembursen.
--   Banken som utför transaktionen på uppdrag av den sökande.
+-   Banken som utför transaktionen på uppdrag av kandidaten.
 
 Rembursen innehåller en beskrivning av varorna, eventuella obligatoriska dokument, leveransdatumet och ett utgångsdatum för betalningen, dvs. betalningen görs inte efter detta datum. Den utfärdande banken får en avgift för rembursen. 
 
@@ -54,6 +53,3 @@ En importinkasso garanterar att säljaren får betalt när köparen får leveran
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

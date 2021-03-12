@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 12314
 ms.assetid: 3b77d6f3-fd07-41a7-9ddb-1b22d1ae33fc
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b48510febf5a5f9f4a01728b242d9750b3c62c2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 25a90a137ea3f6dfa43f401354780d99b2fda8fd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447857"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978496"
 ---
 # <a name="trial-balance-financial-reports"></a>Ekonomiska råbalansrapporter
 
@@ -39,7 +38,7 @@ Tre råbalansrapporter är tillgängliga i ekonomisk rapportering.
 | Standardrapport                                 | Vad den gör                                                                                                                                                                                        |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Detaljerad råbalans – standardinställning               | Visar saldoinformation för alla konton med och inkluderar debet- och kreditsaldon och nettot för dessa saldon, tillsammans med transaktionsdatum, verifikation och journalbeskrivning.                  |
-| Råbalanssammanfattning - standardinställning                | Visar information om saldo för alla konton och inkluderar in- och utgående balanser och debet- och kreditsaldon tillsammans med deras nettodifferens.                                        |
+| Råbalanssammanfattning – standardinställning                | Visar information om saldo för alla konton och inkluderar in- och utgående balanser och debet- och kreditsaldon tillsammans med deras nettodifferens.                                        |
 | Summerad råbalans på årsbasis – standardinställning | Visar saldoinformation för alla konton och inkluderar in- och utgående balanser och debet- och kreditsaldon tillsammans med deras nettodifferens för aktuellt år och föregående år. |
 
 ## <a name="building-blocks"></a>Byggstenar
@@ -48,7 +47,7 @@ Råbalansrapporterna använder följande byggstenar.
 | Standardrapport                                 | Raddefinition          | Kolumndefinition                              |
 |------------------------------------------------|-------------------------|------------------------------------------------|
 | Detaljerad råbalans – standardinställning               | Råbalans – standardinställning | Detaljerad råbalans – standardinställning               |
-| Råbalanssammanfattning - standardinställning                | Råbalans – standardinställning | Råbalanssammanfattning – standardinställning                |
+| Råbalanssammanfattning – standardinställning                | Råbalans – standardinställning | Råbalanssammanfattning – standardinställning                |
 | Summerad råbalans på årsbasis – standardinställning | Råbalans – standardinställning | Summerad råbalans på årsbasis – standardinställning |
 
 ### <a name="row-definition"></a>Raddefinition
@@ -110,6 +109,3 @@ Alla råbalansrapporter använder olika kolumndefinitioner. Dessa kolumndefiniti
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

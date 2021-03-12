@@ -1,6 +1,6 @@
 ---
 title: Aktivera kassaflödesprognoser (förhandsversion)
-description: I det här ämnet beskrivs hur du aktiverar funktionen för kassaflödesprognoser i Ekonomiinsikter.
+description: I det här ämnet beskrivs hur du aktiverar funktionen för kassaflödesprognoser i Finance-insikter.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/24/2020
@@ -11,26 +11,25 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 321c716c10b136769ea3a48a3b60a8a717798338
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 1977dac4a3ab66cca2248dc0124d3a06d6963f40
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646239"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978774"
 ---
 # <a name="enable-cash-flow-forecasting-preview"></a>Aktivera kassaflödesprognoser (förhandsversion)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-I det här ämnet beskrivs hur du aktiverar funktionen för kassaflödesprognoser i Ekonomiinsikter.
+I det här ämnet beskrivs hur du aktiverar funktionen för kassaflödesprognoser i Finance-insikter.
 
 > [!NOTE]
 > Om du vill använda betalningsförutsägelser i kassaflödet måste du ställa in funktionen Prediktioner av kundbetalning enligt beskrivningen i [Aktivera prediktioner av kundbetalning](enable-cust-paymnt-prediction.md).
@@ -40,7 +39,7 @@ I det här ämnet beskrivs hur du aktiverar funktionen för kassaflödesprognose
     `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)`
 
     > [!NOTE]
-    > Om din distribution av Microsoft Dynamics 365 Finance är en Service Fabric-distribution kan du hoppa över det här steget. Teamet för Ekonomiinsikter ska redan ha aktiverat förhandsversionen för dig. Om funktionerna inte visas på arbetsytan **Funktionshantering**, eller om det uppstår problem när du försöker att aktivera dem, kontaktar du <fiap@microsoft.com>.
+    > Om din distribution av Microsoft Dynamics 365 Finance är en Service Fabric-distribution kan du hoppa över det här steget. Teamet för Finance-insikter ska redan ha aktiverat förhandsversionen för dig. Om funktionerna inte visas på arbetsytan **Funktionshantering**, eller om det uppstår problem när du försöker att aktivera dem, kontaktar du <fiap@microsoft.com>.
   
 2. Öppna arbetsytan **Funktionshantering** och gör så här:
 
@@ -57,7 +56,7 @@ I det här ämnet beskrivs hur du aktiverar funktionen för kassaflödesprognose
     > [!NOTE]
     > Om likviditetskonton inte har konfigurerats kan kassaflödet inte genereras.
 
-4. Gå till **Kassa- och bankhantering \> Konfigurera \> Ekonomiinsikter (förhandsversion) \> Kassaflödesprognoser (förhandsversion)** och gör så här:
+4. Gå till **Kassa- och bankhantering \> Konfigurera \> Finance-insikter (förhandsversion) \> Kassaflödesprognoser (förhandsversion)** och gör så här:
 
     1. På fliken **Kassaflödesprognos** väljer du **Aktivera funktion**.
     2. Välj **Skapa förutsägelsemodell**.
@@ -67,6 +66,3 @@ Mer information om funktionen för kassaflödesprognoser finns i [Kassaflödespr
 ## <a name="privacy-notice"></a>Sekretesspolicy
 
 Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4fe97e3e2f8265c1dc67a4052f45125b693c7218
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a2887bdb09b9c5754a2bb17b2cd8053b5d4fb273
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415711"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976649"
 ---
 # <a name="create-new-address-book"></a>Skapa en ny adressbok
 
@@ -33,7 +32,7 @@ I det här avsnittet beskrivs hur du skapar en ny adressbok i Microsoft Dynamics
 
 ## <a name="overview"></a>Översikt
 
-Adressböcker används i Handel för olika orsaker, t.ex. för att lagra kundlistor och medarbetarlistor för en kanal. Adressböcker kan användas för en enskild kanal eller delas mellan kanaler.
+Adressböcker används i Commerce för olika orsaker, t.ex. för att lagra kundlistor och medarbetarlistor för en kanal. Adressböcker kan användas för en enskild kanal eller delas mellan kanaler.
 
 ## <a name="create-a-new-address-book"></a>Skapa en ny adressbok
 
@@ -57,6 +56,3 @@ Följande bild visar hur en adressbok för medarbetare skapas för en butik.
 [Layoutöversikt för skärm](pos-screen-layouts.md)       
 
 [Konfigurera och installera Retail Hardware Station](retail-hardware-station-configuration-installation.md)  
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0eb3671051d9a3be9430050e2a0ad4227b17677e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a9ad362b4befac4a8da14fff0bc6bc8b938d30bc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448016"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978571"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Beräkningsmetod för moms i fältet Ursprung
 
@@ -114,11 +113,11 @@ Resultatet av exempel 3 och exempel 1 är samma, eftersom det bara fanns en avgi
 Den beräknade procentandelen av nettobeloppet hanterar momsberäkningen annorlunda beroende på inställningen av parametern Moms ingår i beloppen för dokumentet eller journalen.
 ### <a name="example-1"></a>Exempel 1
 
-Dokumentet/journalen ställs in på Moms ingår i beloppen = Ja, Transaktionens radbelopp: 10,00 Momssats 25 % Skatt: Transaktionens radbelopp * (10,00 × 25 %) = 2,50 basbelopp för skatt (ursprungsbelopp): Transaktionens radbelopp - moms (10,00 - 2,50) = 7,50
+Dokumentet/journalen ställs in på Moms ingår i beloppen = Ja, Transaktionens radbelopp: 10,00 Momssats 25 % Skatt: Transaktionens radbelopp * (10,00 × 25 %) = 2,50 basbelopp för skatt (ursprungsbelopp): Transaktionens radbelopp – moms (10,00 – 2,50) = 7,50
 
 ### <a name="example-2"></a>Exempel 2
 
-Dokumentet/journalen ställs in på Moms ingår i beloppen = Nej, Transaktionens radbelopp: 10,00 Momssats: 25 % (Transaktionens radbelopp x Momssats) / (100 - Momssats) (10,00 x 25 %) / (100 % - 25 %) = 3,33 Basbelopp för moms (ursprungsbelopp): Transaktionens radbelopp = 10,00
+Dokumentet/journalen ställs in på Moms ingår i beloppen = Nej, Transaktionens radbelopp: 10,00 Momssats: 25 % (Transaktionens radbelopp x Momssats) / (100 – Momssats) (10,00 x 25 %) / (100 % – 25 %) = 3,33 Basbelopp för moms (ursprungsbelopp): Transaktionens radbelopp = 10,00
 
 
 
@@ -131,6 +130,3 @@ Dokumentet/journalen ställs in på Moms ingår i beloppen = Nej, Transaktionens
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
