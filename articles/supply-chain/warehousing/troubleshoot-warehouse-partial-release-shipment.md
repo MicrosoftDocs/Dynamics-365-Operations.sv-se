@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e89a430f90374733b23fadaf53f5bab598d67d62
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 33323a8aed44cf19db6c2c937abcb09f7e05b6c1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645958"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993963"
 ---
 # <a name="troubleshoot-partial-releases-and-partial-shipments"></a>Felsöka delvis frisläppning och delleverans
 
@@ -42,6 +41,3 @@ En försäljningsorder har till exempel två artiklar: en för leverans och en f
 ### <a name="issue-resolution"></a>Problemlösning
 
 Frisläppningsstatus gäller bara för orderrader där artiklarna är aktiverade för lagerstyrning. Därför fortsätter frisläppningsstatusen att vara *delvis släppts* i det här scenariot. Microsoft har utvärderat det här problemet och har fastställt att det är en funktionsbegränsning. Ett tillägg kan läggas till som en del av följesedeln och faktureringsprocessen för att uppdatera frisläppningsstatus.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

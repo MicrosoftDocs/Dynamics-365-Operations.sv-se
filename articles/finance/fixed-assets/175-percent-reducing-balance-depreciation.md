@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13911
 ms.assetid: cc5d001f-bcfe-4602-9ec1-9e265e9fd188
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a21c315aa9a7193c20e4184da20d4d6d38386c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 82af2a810df4ea0ab8880eb2215e22e5818e178d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448045"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995050"
 ---
 # <a name="175-percent-reducing-balance-depreciation"></a>175 procent degressiv avskrivning
 
@@ -58,7 +57,7 @@ Om du väljer **Kalender** som avskrivningsår finns följande alternativ i fäl
 
 Om du väljer **Räkenskapsår** i fältet **Avskrivningsår**, beräknas 175 % degressiv avskrivning baserat på räkenskapsåret för räkenskapskalendern som angetts för boken, eller för den räkenskapskalender som har valts på sidan **Huvudbok**. Räkenskapskalendrar ställs in på sidan **Räkenskapskalendrar**. Mer information finns i [Räkenskapskalendrar, räkenskapsår och perioder](../budgeting/fiscal-calendars-fiscal-years-periods.md)
 
-För räkenskapsåret 1 juli - 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras automatiskt för varje period och längden på nästa räkenskapsår bestäms av perioderna som ställs in på sidan **Räkenskapskalendrar**. 
+För räkenskapsåret 1 juli – 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras automatiskt för varje period och längden på nästa räkenskapsår bestäms av perioderna som ställs in på sidan **Räkenskapskalendrar**. 
 
 Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ i fältet **Periodfrekvens**:
 
@@ -75,19 +74,16 @@ Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ 
 | Antal tjänsteår             | 5      |
 | Årlig avskrivningsprocent | 35 %    |
 
-Den degressiva avskrivningsmetoden på 175 % delar 175 procent med tjänstelivstiden i år. Den procenten multipliceras med anläggningstillgångens bokförda nettovärde för att bestämma årets avskrivningsbelopp.
+Den degressiva avskrivningsmetoden på 175 % delar 175 procent med tjänstelivstiden i år. Den procenten multipliceras med anläggningstillgångens bokförda nettovärde för att bestämma årets avskrivningsbelopp.
 
 | Period | Beräkning av årligt avskrivningsbelopp | Bokfört värde                  | Bokfört nettovärde i slutet av året |
 |--------|-----------------------------------------------|-----------------------------|---------------------------------------|
-| År 1 | (11 000 - 1 000) × 35 % = 3 500                | 11 000 - 3 500 = 7 500      | 11 000 - 1 000 – 3 500 = 6 500        |
-| År 2 | 6 500 × 35 % = 2 275                           | 7 500 - 2 275 = 5 225       | 6 500 - 2 275 = 4 225                 |
-| År 3 | 4 225 × 35 % = 1 478,75                        | 5 225 - 1 478,75 = 3 746,25 | 4,225 - 1 478,75 = 2 746,25           |
+| År 1 | (11 000 – 1 000) × 35 % = 3 500                | 11 000 – 3 500 = 7 500      | 11 000 – 1 000 – 3 500 = 6 500        |
+| År 2 | 6 500 × 35 % = 2 275                           | 7 500 – 2 275 = 5 225       | 6 500 – 2 275 = 4 225                 |
+| År 3 | 4 225 × 35 % = 1 478,75                        | 5 225 – 1 478,75 = 3 746,25 | 4, 225 – 1 478,75 = 2 746,25           |
 
 > [!NOTE] 
 > Om beloppet som beräknas med den degressiva avskrivningsmetoden 175 % blir lägre än beloppet som beräknas med den linjära metoden, sker vanligtvis en konvertering till den linjära metoden för resterande tjänstelivstid.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

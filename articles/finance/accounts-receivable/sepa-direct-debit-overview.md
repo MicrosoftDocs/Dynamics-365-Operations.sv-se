@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 11144
 ms.assetid: 3277c9b6-e46e-40c9-aa76-9b0449467842
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcb7585d344988e00093231f785c1a746226e4e0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cca929a42c99966af0fac92f1565509e10207d91
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447909"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995528"
 ---
 # <a name="sepa-direct-debit-overview"></a>Översikt över SEPA-autogiro
 
@@ -70,7 +69,7 @@ I SEPA identifieras varje fordringshavare med ett unikt ID. Denna identifiering 
 Kunden signerar en fullmakt som auktoriserar fordringsägaren till att inkassera en betalning och instruerar kundens bank att betala inkasseringen. Kunden kan utfärda fullmakten i pappersform eller elektroniskt. Som standard upphör medgivandet 36 månader efter att autogirot senast initierades.
 
 ## <a name="where-do-i-specify-the-sepa-direct-debit-file-format-iso-20022"></a>Var ställer jag filformatet för SEPA-autogiron (ISO 20022)?
-SEPA-dataformaten baseras på ISO 20022-meddelandestandarderna. Markera kryssrutan Generisk elektronisk rapportering och välj formatet för SEPA-direktdebiteringen som en exportformatkonfiguration när du konfigurerar betalningsmetoder för kundreskontra. Du använder den betalningsmetod när du skapar en betalningsfil i en kundbetalningsjournal.
+SEPA-dataformaten baseras på ISO 20022-meddelandestandarderna. Markera kryssrutan Generisk elektronisk rapportering och välj formatet för SEPA-direktdebiteringen som en exportformatkonfiguration när du konfigurerar betalsätt för kundreskontra. Du använder det betalsätt när du skapar en betalningsfil i en kundbetalningsjournal.
 
 ## <a name="in-what-file-formats-can-i-generate-sepa-direct-debit-payment-files"></a>I vilka filformat kan jag skapa SEPA-filer för direktdebitering?
 Du kan skapa elektroniska betalningsfiler för SEPA-autogiron i följande format:
@@ -84,6 +83,3 @@ Under båda scheman för SEPA-autogiro, har kunder vissa rättigheter till åter
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

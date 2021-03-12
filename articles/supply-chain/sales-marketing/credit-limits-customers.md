@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e98203f03f10b3a7c530cb91211df2af025710dc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dc991e03ba88846a8077fbebb7a7412c8abe1f18
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437764"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994113"
 ---
 # <a name="credit-limits-for-customers"></a>Kreditgränser för kunder
 
@@ -138,6 +137,3 @@ Ibland kan behöva du kontrollera en kunds kreditgräns manuellt. Du kan exempel
 1.  Klicka på **Försäljning och marknadsföring** \> **Allmänt** \> **Försäljningsorder** \> **Alla försäljningsorder**. Dubbelklicka på en försäljningsorder.
 
 2.  I formuläret **Försäljningsorder**, i fliken **Hantera** i åtgärdsfönstret, klickar du på **Kontrollera kreditgräns**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

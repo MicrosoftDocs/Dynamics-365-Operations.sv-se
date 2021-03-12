@@ -1,6 +1,6 @@
 ---
 title: Visa poster eller transaktioner i redovisningsjournal
-description: Detta förfarande anger hur du använder verifikationstransaktionförfrågan för att söka efter poster i redovisningsjournaler eller transaktioner.
+description: Detta förfarande anger hur du använder verifikationstransaktionbegäran för att söka efter poster i redovisningsjournaler eller transaktioner.
 author: aprilolson
 manager: AnnBe
 ms.date: 07/01/2019
@@ -11,23 +11,22 @@ ms.technology: ''
 ms.search.form: SysQueryForm, LedgerTransVoucher, LedgerTransBase, Originaldocuments
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f463b7764288918609cba364acf342eed28ad929
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5863fcc677e6dcfedf32031a14354674255ea137
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447889"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994400"
 ---
 # <a name="view-journal-entries-or-transactions"></a>Visa poster eller transaktioner i redovisningsjournal
 
 [!include [banner](../../includes/banner.md)]
 
-Detta förfarande anger hur du använder verifikationstransaktionförfrågan för att söka efter poster i redovisningsjournaler eller transaktioner.
+Detta förfarande anger hur du använder verifikationstransaktionbegäran för att söka efter poster i redovisningsjournaler eller transaktioner.
 
 1. Gå till **navigeringsfönster > Moduler > Redovisning > Förfrågningar och rapporter > Verifikationstransaktioner**.
 2. Ange fältet som du vill ange ett filterkriterium för.
@@ -43,6 +42,3 @@ Detta förfarande anger hur du använder verifikationstransaktionförfrågan fö
 12. Klicka på **Ursprungsdokument** i åtgärdsfönstret.
 13. Stäng sidan.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

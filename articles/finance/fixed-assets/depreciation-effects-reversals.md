@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 2961
 ms.assetid: 63a3ac92-c321-4379-a86a-b1b14915f340
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd4c4a9e7e89b34b1311b38310877b45e4d95b22
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e3c97690956b07a3a5708cfbf37c69f186073138
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447893"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995025"
 ---
 # <a name="depreciation-effects-with-reversals"></a>Avskrivningseffekter med återföringar
 
@@ -59,7 +58,7 @@ En tillgång har registrerats med en livslängd på fem år och linjär avskrivn
 
 | Datum        | transaktionstyp        | Belopp                                                                                |
 |-------------|-------------------------|---------------------------------------------------------------------------------------|
-| 28 februari | Avskrivning (förslag) | 983,05 Beräkning: Bokfört värde (59 000 - 1 000 avskrivning) / antal kvarstående avskrivningsperioder (59) |
+| 28 februari | Avskrivning (förslag) | 983,05 Beräkning: Bokfört värde (59 000 – 1 000 avskrivning) / antal kvarstående avskrivningsperioder (59) |
 
 Avskrivningens värde är 16,95 för högt (1 000 – 983,05).
 
@@ -71,7 +70,7 @@ En tillgång har registrerats med en livslängd på fem år och linjär avskrivn
 |------------|---------------------------------------------------------------------------|---------------------------------------------|
 | 1 januari  | Anskaffning                                                               | 59 000,00                                   |
 | 1 januari  | Nedskrivning                                                     | 1 000,00                                    |
-| 31 januari | Avskrivning (skapad med ett förslag på en avskrivningsperiod) | 966,67 Beräkning: Bokfört värde (59 000 - 1 000) / antal kvarstående avskrivningsperioder (60) |
+| 31 januari | Avskrivning (skapad med ett förslag på en avskrivningsperiod) | 966,67 Beräkning: Bokfört värde (59 000 – 1 000) / antal kvarstående avskrivningsperioder (60) |
 
 #### <a name="reversal-action"></a>Återföringsåtgärd
 
@@ -83,7 +82,7 @@ En tillgång har registrerats med en livslängd på fem år och linjär avskrivn
 
 | Datum        | transaktionstyp        | Belopp                                                                                       |
 |-------------|-------------------------|----------------------------------------------------------------------------------------------|
-| 28 februari | Avskrivning (förslag) | 983,62 Beräkning: Bokfört värde (59 000 - 966,67 avskrivning) / antal kvarstående avskrivningsperioder (59) |
+| 28 februari | Avskrivning (förslag) | 983,62 Beräkning: Bokfört värde (59 000 – 966,67 avskrivning) / antal kvarstående avskrivningsperioder (59) |
 
 Avskrivningens värde är 16,95 för lågt (983,62 – 966,67).
 
@@ -96,6 +95,3 @@ Avskrivningens värde är 16,95 för lågt (983,62 – 966,67).
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

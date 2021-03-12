@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustBillOfExchangeJour
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 269964
 ms.assetid: f2077165-da90-4359-ab12-e05717728dc7
 ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7f5f62d33f6ffedb3fcefcdd9a83b922c1588df0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8cc9a732e2f220d289906aea7aba3d96a182b25b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447910"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995476"
 ---
 # <a name="set-up-bills-of-exchange"></a>Ställ in växlar
 
@@ -62,13 +61,13 @@ På sidan **Journalnamn** skapar du minst fem journalnamn som ska användas för
 
 Ange information om växlingsnotan på fliken **Växlingsnota** på journalvärdekupongssidan för respektive växlingsnotejournal. När journalraderna för växlingsnotan har bokförts kan du se dem på sidan **Journalfråga för växlingsnota** samt sidan **Växlingsnotestatistik**.
 
-## <a name="set-up-methods-of-payment-for-bills-of-exchange"></a>Ställa in betalningsmetoder för växlar
+## <a name="set-up-methods-of-payment-for-bills-of-exchange"></a>Ställa in betalsätt för växlar
 
-På sidan **Betalningsmetoder** ställer du in minst en betalningsmetod för växlar. Om du gör affärer med fler än en bank ställer du in en betalningsmetod som motsvarar det remissaformat som respektive bank kräver för växlar.
+På sidan **Betalsätt** ställer du in minst ett betalsätt för växlar. Om du gör affärer med fler än en bank ställer du in ett betalsätt som motsvarar det remissaformat som respektive bank kräver för växlar.
 
 ## <a name="set-up-payment-fees-for-bills-of-exchange"></a>Ställa in betalningsavgifter för växlar
 
-En betalningsavgift är en avgift som associeras med betalningsinhämtningen från kunderna. Flera inställningsrader för betalningsavgift kan associeras till varje betalningsavgift. Du kan använda inställningsraderna när du vill styra hur standardbelopp för betalningsavgifter beräknas. Du kan till exempel skapa inställningsrader för betalningsmetoder, betalningsspecifikationer, valutor och tidsperioder. Du kan också skapa inställningsrader för en procentandel eller ett belopp som baseras på dagsintervall. Du kan till exempel ställa in en ränteprocent som baseras på hur lång tid en betalning är förfallen. Om banken debiterar olika avgifter för olika remissatyper, till exempel **Inkasso** eller **Rabatt** ställer du in separata betalningsavgiftsrader för respektive remissatyp.
+En betalningsavgift är en avgift som associeras med betalningsinhämtningen från kunderna. Flera inställningsrader för betalningsavgift kan associeras till varje betalningsavgift. Du kan använda inställningsraderna när du vill styra hur standardbelopp för betalningsavgifter beräknas. Du kan till exempel skapa inställningsrader för betalsätt, betalningsspecifikationer, valutor och tidsperioder. Du kan också skapa inställningsrader för en procentandel eller ett belopp som baseras på dagsintervall. Du kan till exempel ställa in en ränteprocent som baseras på hur lång tid en betalning är förfallen. Om banken debiterar olika avgifter för olika remissatyper, till exempel **Inkasso** eller **Rabatt** ställer du in separata betalningsavgiftsrader för respektive remissatyp.
 
 ## <a name="set-up-remittance-fees-for-bank-remittance-files"></a>Ställa in remissaavgifter för bankremissafiler
 
@@ -86,6 +85,3 @@ På sidan **Kunder**, för varje kund som har avtalat att betala via en växel, 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

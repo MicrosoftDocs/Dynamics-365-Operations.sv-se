@@ -1,6 +1,6 @@
 ---
 title: Uppgraderingsöversikt för avskrivningsregler
-description: 'I tidigare versioner fanns två värderingsbegrepp för anläggningstillgångar: värdemodeller och avskrivningsregler.'
+description: 'I tidigare versioner fanns två bedömningsbegrepp för anläggningstillgångar: värdemodeller och avskrivningsregler.'
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -10,31 +10,30 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 221624
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
 ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: efa1b492fec085cc8bac5a786af4aaba854899e5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ffaeafa987c85aee17404fbfcf8c69c9699e2f3b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447926"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995000"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Översikt över uppgradering av förteckning med avskrivningsregler
 
 [!include [banner](../includes/banner.md)]
 
-I tidigare versioner fanns två värderingsbegrepp för anläggningstillgångar: värdemodeller och avskrivningsregler. I Microsoft Dynamics 365 for Operations (1611), har värdemodellfunktionen och funktionen för avskrivningsregel slagits ihop till ett enda begrepp som kallas för "bok". Detta avsnitt listar några saker att beakta i samband med uppgraderingen. 
+I tidigare versioner fanns två bedömningsbegrepp för anläggningstillgångar: värdemodeller och avskrivningsregler. I Microsoft Dynamics 365 for Operations (1611), har värdemodellfunktionen och funktionen för avskrivningsregel slagits ihop till ett enda begrepp som kallas för "bok". Detta avsnitt listar några saker att beakta i samband med uppgraderingen. 
 
 Uppgraderingsprocessen flyttar din befintliga inställning och alla befintliga transaktioner till den nya bokstrukturen. Värdemodeller kommer att kvarstå som de är, som en bok som bokförs till huvudboken. Avskrivningsregler flyttas till en bok som har alternativet **Bokför i huvudboken** inställt på **Nej**. Journalnamn för avskrivningsregel flyttas till ett journalnamn för huvudbok som har bokföringsskiktet inställt på **Ingen**. Transaktioner för avskrivningsregler flyttas till transaktioner för anläggningstillgångar. 
 
 Innan du kör datauppgraderingen bör du förstå de två tillgängliga alternativen för uppgradering av journalraderna i avskrivningsregler till transaktionsverifikationer, samt den nummerserie som kommer att användas för verifikationsserien. 
 
-Alternativ 1:  **Systemdefinierad nummerserie** - Detta är standardalternativet för att optimera uppgraderingsprestandan. Uppgraderingen använder inte nummerserieramverket, utan allokerar istället verifikationer med en uppsättningsbaserad inställning. Efter uppgraderingen skapa den nya nummerserien **Nästa inställda nummer** lämpligt baserad på uppgraderade transaktioner. Som standard kommer använd nummerserie att vara i formatet FADBUpgr\#\#\#\#\#\#\#\#\#. Det finns några parametrar där du kan justera formatet när du använder den här metoden:
+Alternativ 1:  **Systemdefinierad nummerserie** – Detta är standardalternativet för att optimera uppgraderingsprestandan. Uppgraderingen använder inte nummerserieramverket, utan allokerar istället verifikationer med en uppsättningsbaserad inställning. Efter uppgraderingen skapa den nya nummerserien **Nästa inställda nummer** lämpligt baserad på uppgraderade transaktioner. Som standard kommer använd nummerserie att vara i formatet FADBUpgr\#\#\#\#\#\#\#\#\#. Det finns några parametrar där du kan justera formatet när du använder den här metoden:
 
 -   **Nummerseriekod** – Den kod som identifierar nummerserien. Denna nummerseriekod kan inte existera eftersom den skapas av uppgraderingen.
     -   Konstantnamn: **NumberSequenceDefaultCode**
@@ -45,11 +44,11 @@ Alternativ 1:  **Systemdefinierad nummerserie** - Detta är standardalternativet
 -   **Alfanumerisk längd** – Längden på det alfanumeriska segmentet i nummerserien.
     -   Konstantnamn: **NumberSequenceDefaultParameterAlpanumericLength **
     -   Standardvärde: 9
--   **Startnummer** - Det första nummer som ska användas i nummerserien.
+-   **Startnummer** – Det första nummer som ska användas i nummerserien.
     -   Konstantnamn: **NumberSequenceDefaultParameterStartNumber  **
     -   Standardvärde: 1
 
-Alternativ 2: **Befintlig användardefinierad nummerserie** - Detta alternativ låter dig definiera den nummerserie som ska användas för uppgraderingen. Överväg att använda detta alternativ om du behöver avancerad konfiguration av nummerserie. Om du vill använda en nummerserie måste du ändra uppgraderingsklassen ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans med följande information:
+Alternativ 2: **Befintlig användardefinierad nummerserie** – Detta alternativ låter dig definiera den nummerserie som ska användas för uppgraderingen. Överväg att använda detta alternativ om du behöver avancerad konfiguration av nummerserie. Om du vill använda en nummerserie måste du ändra uppgraderingsklassen ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans med följande information:
 
 -   **Nummerseriekod** – Nummerseriens kod.
     -   Konstantnamn: **NumberSequenceExistingCode **
@@ -83,6 +82,3 @@ Oavsett metod kommer datauppgraderingsskriptet också att använda nummerserien 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

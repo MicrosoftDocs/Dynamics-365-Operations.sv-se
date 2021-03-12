@@ -11,26 +11,25 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: d761e31c4e4169b09711e351948390d2d40f3739
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: ef0daec6153405fc064b1185ba7067796ff5bb45
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644979"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995125"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Utvärdera den första förutsägelsemodellen för kundbetalning (förhandsversion)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-I det här ämnet beskrivs hur du utvärderar en förutsägelsemodell när du har aktiverat Ekonomiinsikter och sedan skapat och tränat din första modell. Det här ämnet handlar om modeller för att förutsäga kundbetalningar. Det beskriver de steg du kan vidta för att förstå modellen för kundbetalningsförutsägelse och utvärdera dess effektivitet.
+I det här ämnet beskrivs hur du utvärderar en förutsägelsemodell när du har aktiverat Finance-insikter och sedan skapat och tränat din första modell. Det här ämnet handlar om modeller för att förutsäga kundbetalningar. Det beskriver de steg du kan vidta för att förstå modellen för kundbetalningsförutsägelse och utvärdera dess effektivitet.
 
 ## <a name="getting-details-about-the-model"></a>Få information om modellen
 
@@ -101,6 +100,3 @@ Mer information om att utvärdera förutsägelsemodeller finns i [Resultat av ma
 
 #### <a name="privacy-notice"></a>Sekretesspolicy
 Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

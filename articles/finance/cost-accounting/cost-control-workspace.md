@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c54afd0d94a56f6306a11e03448cc66c168390c2
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 3163975a8cc99c4b07fdbe03fa57ea6cfef53cd9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4448231"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995225"
 ---
 # <a name="cost-control-workspace"></a>Arbetsyta för kostnadskontroll 
 
@@ -81,9 +80,9 @@ Värdena i de markerade kolumnerna kommer att multipliceras med de valda värden
 | Fält                | beskrivning |
 |----------------------|-------------|
 | Aktuell period       | Saldot för den aktuella räkenskapsperioden visas.<blockquote>[!NOTE]<br>Som standard bestäms innevarande period av sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod. Det valda värdet representerar sedan innevarande perioden.</blockquote> |
-| Föregående period      | Saldot för den föregående räkenskapsperioden visas. Följande formel används:<br>Innevarande räkenskapsperiod - 1<blockquote>[!NOTE]<br>Som standard härleds föregående period från sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod som innevarande period. **Föregående period** räknas sedan i enlighet med detta.</blockquote> |
+| Föregående period      | Saldot för den föregående räkenskapsperioden visas. Följande formel används:<br>Innevarande räkenskapsperiod – 1<blockquote>[!NOTE]<br>Som standard härleds föregående period från sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod som innevarande period. **Föregående period** räknas sedan i enlighet med detta.</blockquote> |
 | Början på året till dagens datum         | Den för hittills i år visas. Följande formel används:<br>YearToDate (innevarande räkenskapsperiod)<blockquote>[!NOTE]<br>Som standard bestäms innevarande period av sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod. Det valda värdet representerar sedan den aktuella perioden och värdet **Hittills i år** uppdateras.</blockquote> |
-| Hittills i år, genomsnitt | Genomsnittet för hittills i år visas. Följande formel används:<br>(YearToDate [innevarande räkenskapsperiod]) ÷ (Count [innevarande räkenskapsperiod])<p><strong>Exempel</strong></p><ul><li>**Statistisk dimensionsmedlem:** Heltidsmedarbetare</li><li>**Aktuellt datum:** 2017-03-21</li><li>**Period:** räkenskapsperiod 1, räkenskapsperiod 2, räkenskapsperiod 3</li><li>**Storlek:** 10, 10, 12</li></ul>I det här fallet **Hittills i år, genomsnitt** = (10 + 10 + 12) ÷ 3 = 10,67<p>Värdet **Hittills i år, genomsnitt** kan beräknas för dimensionsmedlemmar för kostnadselement och statistiska dimensionsmedlemmar.</p><blockquote>[!NOTE]<br>Som standard bestäms innevarande period av sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod. Det valda värdet representerar sedan den aktuella perioden och värdet **Hittills i år** och **Hittills i år, genomsnitt** uppdateras.</blockquote> |
+| Hittills i år, genomsnitt | Genomsnittet för hittills i år visas. Följande formel används:<br>(YearToDate [innevarande räkenskapsperiod]) ÷ (antal [innevarande räkenskapsperiod])<p><strong>Exempel</strong></p><ul><li>**Statistisk dimensionsmedlem:** Heltidsmedarbetare</li><li>**Aktuellt datum:** 2017-03-21</li><li>**Period:** räkenskapsperiod 1, räkenskapsperiod 2, räkenskapsperiod 3</li><li>**Storlek:** 10, 10, 12</li></ul>I det här fallet **Hittills i år, genomsnitt** = (10 + 10 + 12) ÷ 3 = 10,67<p>Värdet **Hittills i år, genomsnitt** kan beräknas för dimensionsmedlemmar för kostnadselement och statistiska dimensionsmedlemmar.</p><blockquote>[!NOTE]<br>Som standard bestäms innevarande period av sessionsdatum. I arbetsytan **kostnadskontroll** kan du välja en specifik räkenskapsperiod. Det valda värdet representerar sedan den aktuella perioden och värdet **Hittills i år** och **Hittills i år, genomsnitt** uppdateras.</blockquote> |
 
 ### <a name="columns-to-display-for-costs"></a>Kolumner att visa för kostnader
 
@@ -158,6 +157,3 @@ Ytterligare resurser
 [Definiera åtkomsträttigheter för kostnadsobjektcontroller](access-rights-cost-object-controller.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

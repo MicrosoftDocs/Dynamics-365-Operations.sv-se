@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 59491
 ms.assetid: 653a135f-c515-4ae3-9da2-82b5e1f103b5
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aba265e69bde9a9c194147d6ee6a806e9b2bd7c2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c6ee3861e967246e79b072aaa69f2be02db9231b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447908"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995503"
 ---
 # <a name="set-up-sepa-direct-debit-mandate"></a>Ställa in SEPA Autogiromedgivande
 
@@ -42,7 +41,7 @@ Följande tabell visar förutsättningarna som krävs och måste finnas på plat
 
 2. Ställ in parametrar för kundreskontra för autogiromedgivande. Använd sidan **Parametrar för kundreskontra** om du vill ställa in parametrar för autogiromedgivande. Du ställer in dessa parametrar på fliken **Direktdebitering**. Ändra standardparametrarna som du vill. Klicka sedan på fliken **Nummerserier** och uppdatera fältet **ID för autogiromedgivande** med den nummerserie som du skapade tidigare.
 
-3. Om du vill ställa in en betalningsmetod för autogiromedgivanden måste du ställa in en betalningsmetod för autogiromedgivanden. Du använder den här betalningsmetoden om du vill fråga efter fakturor som du vill generera autogirobetalningar för. Betalningsmetoden måste ställas in på sidan **Betalningsmetoder**. Om du vill ställa in en betalningsmetod för autogiromedgivanden måste du följa följande ytterligare steg för en betalningsmetod:
+3. Om du vill ställa in ett betalsätt för autogiromedgivanden måste du ställa in ett betalsätt för autogiromedgivanden. Du använder den här betalsättet om du vill fråga efter fakturor som du vill generera autogirobetalningar för. Betalsättet måste ställas in på sidan **Betalsätt**. Om du vill ställa in ett betalsätt för autogiromedgivanden måste du följa följande ytterligare steg för ett betalsätt:
 
 -   Välj **Elektronisk betalning** i fältet **Betalningstyp**.
 -   Valfritt: Om du förväntar dig att var och en av dina kunder har flera fullmakter, väljer du **Faktura** i fältet **Period**. En separat betalning skapas för varje faktura och varje betalning kommer att använda fullmakten som angetts för fakturan.
@@ -54,6 +53,3 @@ Ytterligare resurser
 
 [Skapa ett autogiromedgivande för en kund](tasks/create-direct-debit-mandate-customer.md) 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ceb4fbeb4dbf2f535e05a9d46c84169435d2803b
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: b79b02f7e241783d19a315ccff5bb6874a238c38
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4448217"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995428"
 ---
 # <a name="lease-posting-types"></a>Bokföringstyper för leasing
 
@@ -77,7 +76,7 @@ Kontot är kopplat till den kostnad som är relaterad till avskrivningen av ROU-
 
 Kontot är kopplat till vinster eller förluster som uppstår vid ändringar av leasingavtalet. En vinst kan uppstå under en leasingändring om ändringen minskar leasingskulden med ett belopp som överstiger det bokförda värdet för ROU-tillgången.
 
-Ett leasingavtal har till exempel ett aktuellt bokfört värde för låneskulden på 150 000 USD och ett bokfört värde på ROU-tillgången på 100 000 USD. Leasingavtalet ändras och denna ändring ger ett nytt nuvärde för de framtida lägsta leasingbetalningarna (PVFMLP) på 40 000 USD. Därför debiteras leasingskulden med 110 000 USD (150 000 USD - 40 000 USD). Eftersom ROU-tillgången bara är 100 000 USD gör minskningen på 110 000 USD att tillgången minskar under 0 (noll). Därför anger redovisningsvägledningen att resten ska bokföras på ett vinstkonto. I det här fallet är den slutliga journalposten en debitering till leasingskulden på 110 000 USD, en kredit till leasingtillgången på 100 000 USD och en kredit till vinstkontot på 10 000 USD.
+Ett leasingavtal har till exempel ett aktuellt bokfört värde för låneskulden på 150 000 USD och ett bokfört värde på ROU-tillgången på 100 000 USD. Leasingavtalet ändras och denna ändring ger ett nytt nuvärde för de framtida lägsta leasingbetalningarna (PVFMLP) på 40 000 USD. Därför debiteras leasingskulden med 110 000 USD (150 000 USD – 40 000 USD). Eftersom ROU-tillgången bara är 100 000 USD gör minskningen på 110 000 USD att tillgången minskar under 0 (noll). Därför anger redovisningsvägledningen att resten ska bokföras på ett vinstkonto. I det här fallet är den slutliga journalposten en debitering till leasingskulden på 110 000 USD, en kredit till leasingtillgången på 100 000 USD och en kredit till vinstkontot på 10 000 USD.
 
 **Exempel på journalposter:** Leasingändring<br>
 **Debet:** Leasingskuld XXX<br>
@@ -154,6 +153,3 @@ Det konto som väljs för varje utgiftstyp debiteras när en betalning för den 
 
 > [!NOTE]
 > Motkontot väljs på leasingnivå på raderna för betalningsplanen för verkställighetskostnad. Det här motkontot kan kopplas till leverantören eller till ett huvudbokskonto.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 71ba02fc6be4ab9a7871c10a9f95c474e52ae765
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7fde19ad1a58616672de72fb5e5cbeea39138b46
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447925"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995200"
 ---
 # <a name="dimension-hierarchy"></a>Dimensionshierarki
 
@@ -259,7 +258,7 @@ En ny kostnadsbeteendepolicy skapas och lämpliga dimensionshierarkier tilldelas
 
 \* Den variabla kostnadsnoden behövs inte. Om en kostnad inte klassificeras som fasta kostnader, måste det vara en variabel kostnad.
 
-\*\* En detaljerad regel skapas för kombinationen av kostnadselementmedlem 10001 och alla kostnadsobjektmedlemmar som sammanställs i hierarkinivån Ekonomi (CC002, CC003, CC007).
+\*\* En detaljerad regel skapas för kombinationen av kostnadselementmedlem 10001 och alla kostnadsobjektmedlemmar som sammanställs i hierarkinivån Finance (CC002, CC003, CC007).
 
 Ovanstående regler har den flexibilitet som dimensionshierarkier ger. Genom att definiera regler på hög nivå kan du minimera underhåll. Du kan sedan definiera detaljerade regler som passar ett visst företags mål.
 
@@ -267,7 +266,7 @@ Om de dimensionshierarkier som används i reglerna uppdateras flyttar systemet a
 
 Om en nivå i reglerna inte längre behövs, kan regeln upphöra att gälla.
 
-Till exempel en särskild kostnadsbeteenderegel för dimensionshierarkinoden för kostnadsobjekt Ekonomi behövs inte längre. I detta fall klickar du på **Dra tillbaka regel** för att regeln ska upphöra att gälla.
+Till exempel en särskild kostnadsbeteenderegel för dimensionshierarkinoden för kostnadsobjekt Finance behövs inte längre. I detta fall klickar du på **Dra tillbaka regel** för att regeln ska upphöra att gälla.
 
 | Dimensionshierarkinod för kostnadselement | Dimensionshierarkinod för kostnadsobjekt | Fast procentsats | Fast belopp | Giltig från | Giltig till  |
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|-----------|
@@ -333,6 +332,3 @@ Inställningar för Hierarki för åtkomstlista används för att bestämma vilk
 > [!NOTE] 
 > - Innan Hierarki för åtkomstlista kan påverka data i Power BI måste hierarkiåtkomst och säkerhet på radnivå i Power BI paras ihop. Mer information finns i [ställa in säkerhet för kostnadsredovisningens innehållspaket](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Hierarki för åtkomstlista hjälper inte export av data till Excel. Därför ska detta rapportverktyg bara användas av kostnadsrevisorer och chefer som måste ha fullständig behörighet för att visa data.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

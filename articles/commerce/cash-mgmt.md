@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0c561c39dfcbfa739c5a22394c05191e7f9bc107
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 86cdd70919926243bbf2cb5cc2f26690accdac80
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415797"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993702"
 ---
 # <a name="cash-management-improvements"></a>Förbättringar av kassahantering
 
@@ -33,7 +32,7 @@ ms.locfileid: "4415797"
 Kassahantering är en nyckelfunktion för återförsäljare i fysiska butiker. Återförsäljare vill att deras butiker ska ha system som kan hjälpa dem att ge dig en fullständig spårning av kontanter och dess rörelse i de olika kassorna och kassörerna i en butik. De måste kunna stämma av mot eventuella skillnader och fastställa ansvarsområden.
 
 
-Microsoft Dynamics 365 Commerce har kontanthanteringskapacitet i sitt kassaprogram (POS). I tidigare versioner av Retail än version 10.0.3 är kassahanteringsfunktionen emellertid inte tillräckligt stabil för att ge en fullständig spårning av kassautcheckningsflödetsrörelser i butiker. Även om återförsäljare kan stämma av kassan för en butik, kan de inte exakt fastställa ansvarsskyldigheten i händelse av en kassaavvikelse.
+Microsoft Dynamics 365 Commerce har kontanthanteringskapacitet i sitt kassaprogram (POS). I tidigare versioner av Retail än version 10.0.3 är kassahanteringsfunktionen emellertid inte tillräckligt stabil för att ge en fullständig spårning av kassaflödetsrörelser i butiker. Även om återförsäljare kan stämma av POS för en butik, kan de inte exakt fastställa ansvarsskyldigheten i händelse av en kassaavvikelse.
 
 
 I Retail version 10.0.3 och senare får detaljhandlare spårning för kassahantering. Som en del av den här spårbarheten kan detaljhandlare definiera kassaskåp, göra tvåsidiga kassatransaktioner och stämma av kassahanteringstransaktioner.
@@ -61,7 +60,4 @@ I Retail version 10.0.3 och senare tillhandahålls även följande funktioner so
 - Om du vill stämma av kontanttransaktionerna i ett skift eller över skift väljer du det skift som ska stämmas av och väljer sedan **stämma av**. I den vy som öppnas visas en lista över avstämda och ej avstämda transaktioner på separata flikar. Från den här vyn kan användarna antingen välja ej avstämda transaktioner och stämma av dem, eller välja tidigare avstämda transaktioner och stämma av dem.
 - Under avstämningen, om den valda transaktionen inte balanserar, måste användaren ange en beskrivning av orsaken till den obalanserade avstämningen. Användarna kan välja en enda transaktion och sedan stämma av den med relevant orsaksbeskrivning som de kräver.
 - Användarna kan fortsätta att stämma av och avstämma av transaktioner tills skiftet stängs. När ett skift har stängts kan transaktionerna inte avstämmas.
-- När en användare väljer att stänga ett skift, validerar Handel att det inte finns några ej avstämda kassahanteringstransaktioner i skiftet. Användare kan inte stänga ett skift om det finns ej avstämda transaktioner.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+- När en användare väljer att stänga ett skift, validerar Commerce att det inte finns några ej avstämda kassahanteringstransaktioner i skiftet. Användare kan inte stänga ett skift om det finns ej avstämda transaktioner.

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerParameters, LedgerFiscalCloseGroup, LedgerFiscalCloseAddLedger, SysLookupMultiSelectGrid, LedgerFiscalCloseRunGroup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 593ab5b45cc0c2e1a8b876aa89de014fd9df1a13
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b82cc7e4077a1bd50eab30f234c2f63c79e81d84
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448087"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994700"
 ---
 # <a name="close-the-fiscal-year"></a>Stänga räkenskapsåret
 
@@ -69,7 +68,7 @@ Denna procedur vägleder dig genom stegen i årsbokslutsprocessen som överför 
 15. Klicka på **OK**.
 16. Välj "Ja" eller "Nej" i **Överför balansräkningsdimensioner**.
 
-    Det bästa är att ange detta alternativ som "Yes" för balansräkningskonton. Detta kommer att bibehålla de ekonomiska dimensionerna i bokförda transaktioner när nya saldon ska skapas för balansräkningskontona. För vinst - och förlustkonton kan du välja att underhålla stäng ekonomiska dimensioner (Close all) när saldona flyttas till balanserade vinstmedel, eller också kan du välja att byta ut de ekonomiska dimensionerna med ett annat dimensionsvärde (Close single). Om du väljer Close single kan du definiera ett specifikt dimensionsvärde för varje dimension, eller till och med välja att lämna den tom.  
+    Det bästa är att ange detta alternativ som "Yes" för balansräkningskonton. Detta kommer att bibehålla de ekonomiska dimensionerna i bokförda transaktioner när nya saldon ska skapas för balansräkningskontona. För vinst – och förlustkonton kan du välja att underhålla stäng ekonomiska dimensioner (Close all) när saldona flyttas till balanserade vinstmedel, eller också kan du välja att byta ut de ekonomiska dimensionerna med ett annat dimensionsvärde (Close single). Om du väljer Close single kan du definiera ett specifikt dimensionsvärde för varje dimension, eller till och med välja att lämna den tom.  
 
 17. Klicka på **Spara**.
 18. Starta årsbokslutet genom att välja **Kör årsbokslut** i **åtgärdsfönstret**. Årsbokslutet körs för den valda mallen.  
@@ -83,6 +82,3 @@ Denna procedur vägleder dig genom stegen i årsbokslutsprocessen som överför 
 23. Årsbokslutets standardvärden som ska köras i batch. Det bästa är att låta långvariga processer köras i batch-läge. Detta är vanligtvis en av dessa processer, vilket är orsaken till att standardinställningen är att använda batch-läge.  
 24. Klicka på **OK**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

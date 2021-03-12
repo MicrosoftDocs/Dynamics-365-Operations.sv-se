@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a3fc4259a76f6edcfaa0b8f6e08292477c6c0835
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f4ed3b6797127113450949aa957437125f37394f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415845"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995726"
 ---
 # <a name="work-with-templates"></a>Arbeta med mallar
 
@@ -44,7 +43,7 @@ Som vi har diskuterat i [Översikt över mallar och layouter](templates-layouts-
 - Behåll företagets webbplatser på varumärken genom att definiera en godkänd uppsättning modulers arrangemang och konfigurationsalternativ.
 
     > [!TIP] 
-    > En lyckad näthandelsplats förser kunder med designmönster som är välbekanta, repeterbara och grundläggande användarupplevelse på varumärke (UX). Genom att använda mallar kan du kontrollera konsekvensen på webbplatsen.
+    > En lyckad näthandelssajt förser kunder med designmönster som är välbekanta, repeterbara och grundläggande användarupplevelse på varumärke (UX). Genom att använda mallar kan du kontrollera konsekvensen på webbplatsen.
 
 - Förbättra SEO-poängen (sökmotoroptimering) genom att säkerställa repeterbara och programmässigt definierade siddefinitioner och metadata.
 
@@ -150,6 +149,3 @@ När du har förhandsgranskat ändringarna i din mall gör du följande för att
 [Översikt över mallar och layouter](templates-layouts-overview.md)
 
 [Arbeta med förinställda layouter](work-with-layouts.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

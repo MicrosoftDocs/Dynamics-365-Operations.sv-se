@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: b321fdc185e175d9fe2673c9f1e16486efd8e798
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: f306f9437b78005d8b8aa11f0b6f210ebdd4fd2a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645683"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995075"
 ---
 # <a name="customer-payment-predictions-preview"></a>Kundbetalningsförutsägelser (förhandsversion)
 
@@ -72,13 +71,10 @@ Tidigare har det vanligtvis varit svårt att utveckla och distribuera en AI-lös
 
 ## <a name="release-details"></a>Frisläppningsinformation
 
-Den allmänt tillgängliga förhandsversionen av Ekonomiinsikter finns tillgänglig för distribution i USA, Europa och Storbritannien. Microsoft lägger stegvis till support för ytterligare regioner.
+Den allmänt tillgängliga förhandsversionen av Finance-insikter finns tillgänglig för distribution i USA, Europa och Storbritannien. Microsoft lägger stegvis till support för ytterligare regioner.
 
 Funktionerna för allmänt tillgänglig förhandsversion kan och ska bara aktiveras i nivå-2-sandbox-miljöer. Konfiguration och AI-modeller som skapas i en sandbox-miljö kanske inte migreras till produktionsmiljön. Mer information finns i [Tilläggsavtal för Microsoft Dynamics 365 förhandsversioner](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms).
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
 
 Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

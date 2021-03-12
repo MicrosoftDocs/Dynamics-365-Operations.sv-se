@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace, RCS
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 04c46824123906eccbfff18a03974c8043729e0a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0973d36a8fddd16d02776ac6567d424ac6ebc3ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448068"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994324"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Dela elektroniska rapporteringskonfigurationer (ER) i Microsoft Regulatory Configuration Services (RCS)/den globala databasen med externa organisationer
 
@@ -40,7 +39,7 @@ Följande procedurer förklarar hur en RCS-användare kan dela en version av en 
 Du måste också säkerställa att en RCS-miljö har etablerats för ditt företag.
 
 1. I en Finance and Operations-app går du till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
-2. Om ingen RCS-miljö har etablerats för ditt företag väljer du **Regulatory services - extern konfiguration** och följer sedan instruktionerna för att etablera en.
+2. Om ingen RCS-miljö har etablerats för ditt företag väljer du **Regulatory services – extern konfiguration** och följer sedan instruktionerna för att etablera en.
 
 Om en RCS-miljö redan har etablerats för ditt företag kan du använda sidans URL för att komma åt den genom att välja alternativet för inloggning.
 
@@ -50,7 +49,7 @@ Följ dessa steg för att kontrollera att konfigurationen som du vill dela redan
 
 1. I arbetsytan **Elektronisk rapportering** väljer du **Databaser** för din konfigurationsleverantör.
 
-    ![Konfigurationsleverantörer](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_config_provider.JPG)
+    ![Konfigurationsleverantörer](media/1_RCS_Repo_for_config_provider.JPG)
 
 2. Välj **Global databas** \> **Öppna**.
 3. Sök efter den konfiguration du vill dela. Du kan använda filterfältet för att begränsa sökresultatet. Om du inte kan hitta konfigurationen i den globala databasen följer du stegen i [Skapa och ladda upp en ny version av en konfiguration för elektronisk rapportering (ER)](rcs-global-repo-upload.md).
@@ -64,17 +63,12 @@ När en konfiguration har skapats i din konfigurationsleverantör kan du dela de
 3. Välj den konfiguration du vill dela.
 4. I snabbfliken **Delas med** väljer du **Organisation**.
 
-    ![Delas med snabbfliken](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_org.JPG)
+    ![Delas med snabbfliken](media/1_RCS_Repo_for_Share_with_org.JPG)
 
 5. I dialogrutan anger du domännamnet för den externa organisationen och väljer sedan **OK**.
 
-    ![Dela konfigurationsversion med dialogrutan för extern organisation](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_form.JPG)
+    ![Dela konfigurationsversion med dialogrutan för extern organisation](media/1_RCS_Repo_for_Share_with_form.JPG)
 
 Konfigurationen delas med den externa organisationen och är tillgänglig för den organisationen i den globala databasen. Därifrån kan den importeras till organisationens instans av RCS eller till dess instanser av Finance and Operations-appar.
 
-![Konfigurationen delas med en extern organisation](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
-
 6. Om du vill ta bort delning av en konfiguration som tidigare har delats med en extern organisation, markerar du konfigurationen och klickar på **Ta bort delning** innan du väljer **OK**
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

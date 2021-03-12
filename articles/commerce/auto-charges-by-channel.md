@@ -10,17 +10,16 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 1be07c754e563298d82f6ca54f09ae3aa9118602
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d37b2b785dd29850dcd02d0905e5872445384990
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415810"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993738"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Aktivera och konfigurera automatiska avgifter efter kanal
 
@@ -77,7 +76,7 @@ När du har aktiverat funktionen **Aktivera filter för automatiska tillägg eft
 
 Om du vill definiera automatiska debiteringar utifrån kanal i Commerce följer du stegen nedan.
 
-1. Gå till  **Kundreskontra \> Ställa in avgifter \> Automatiska avgifter**.
+1. Gå till **Kundreskontra \> Ställa in avgifter \> Automatiska avgifter**.
 1. I vänstra fönstret i fältet **Nivå** välj antingen **Huvud** eller **Rad**, hitta och välj i den vänstra rutan.
 1. I fältet **Butik kanalkod** välj lämplig kanalkod (t.ex. **Tabell** eller **Grupp**). Om standardinställningen **alla**, används tilläggsregler för alla kanaler.
 
@@ -128,6 +127,3 @@ Genom att välja avgifter **Transaktionsalternativ \> Avgifter \> Hantera avgift
 [Avancerade automatiska avgifter för flera kanaler](omni-auto-charges.md)
 
 [Allokera huvudavgifter för att matcha försäljningsrader](pro-rate-charges-matching-lines.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

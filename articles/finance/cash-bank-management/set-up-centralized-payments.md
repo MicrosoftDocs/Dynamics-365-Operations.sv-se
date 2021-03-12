@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 62243
 ms.assetid: ffd17b5f-9aea-40e0-be49-d8702f615256
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70b47f819730ae221568e625a1b218e046927e41
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a1ab2423a9615bfaf7858a5d1a90de3822ad7174
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448005"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995250"
 ---
 # <a name="set-up-centralized-payments"></a>Ställ in centraliserade leverantörsbetalningar
 
@@ -50,14 +49,11 @@ Om du betalar en leverantör från en juridisk person, och du vill välja faktur
 ## <a name="set-up-posting-profiles-for-centralized-payments"></a>Ställ in bokföringsprofiler för centraliserade betalningar
 När du skapar en betalning i en juridisk person som kvittar fakturor i andra juridiska personer, måste båda juridiska personer ha samma bokföringsprofil-ID. Säkerställ att betalningarna skapas korrekt genom att i varje juridisk person för fakturan konfigurera en bokföringsprofil som motsvarar de bokföringsprofiler som används i den juridiska personen för betalningen. Växla till det första juridiska personen för fakturan, och sedan på sidan **Bokföringsprofiler för leverantörer** kan du skapa en ny bokföringsprofil eller redigera en existerande bokföringsprofil. De val du gör för bokföringsprofilen i fakturans juridiska person måste inte matcha bokföringsprofilinställningarna i betalningens juridiska person.
 
-## <a name="set-up-methods-of-payment-for-centralized-payments"></a>Ställ in betalningsmetoder för centraliserade betalningar
-När du skapar en betalning i en juridisk person som kvittar fakturor i andra juridiska personer, måste båda juridiska personer ha samma betalningsmetod-ID. Säkerställ att betalningarna skapas korrekt genom att i varje juridisk person för fakturan konfigurera en betalningsmetod som motsvarar de betalningsmetoder som används i den juridiska personen för betalningen. Växla till det första juridiska personen för fakturan, och sedan på sidan **Betalningsmetoder** kan du skapa en ny betalningsmetod eller redigera en befintlig metod för betalning. De val du gör för betalningsmetoden i den juridiska personen för faktureringen måste inte matcha betalningsmetodinställningarna i den juridiska personen för betalningen.
+## <a name="set-up-methods-of-payment-for-centralized-payments"></a>Ställ in betalsätt för centraliserade betalningar
+När du skapar en betalning i en juridisk person som kvittar fakturor i andra juridiska personer, måste båda juridiska personer ha samma betalningsmetod-ID. Säkerställ att betalningarna skapas korrekt genom att i varje juridisk person för fakturan konfigurera ett betalsätt som motsvarar de betalsätt som används i den juridiska personen för betalningen. Växla till det första juridiska personen för fakturan, och sedan på sidan **Betalsätt** kan du skapa en ny betalningsmetod eller redigera en befintlig metod för betalning. De val du gör för betalsättet i den juridiska personen för faktureringen måste inte matcha betalningsmetodinställningarna i den juridiska personen för betalningen.
 
 ## <a name="set-up-default-descriptions"></a>Ställ in standardbeskrivningar
 Du kan ange standardbeskrivningar för koncerninterna kvittningsverifikationer. Standardbeskrivningen inkluderas i transaktioner med giltighetsdatum under kvittningsprocessen mellan företag. På sidan **Standardbeskrivningar** kan du skapa nya beskrivningar för både **Koncernintern kundkvittning** och **Koncernintern leverantörkvittning** genom att välja ett språk och sedan ange text.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

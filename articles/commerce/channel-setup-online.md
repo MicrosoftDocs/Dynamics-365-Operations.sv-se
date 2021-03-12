@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: 89a28d6d4f435b9cf0c39afc64c3caaf0b24ba19
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4415983"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993638"
 ---
 # <a name="set-up-an-online-channel"></a>Ställ in en onlinekanal
 
@@ -35,9 +34,9 @@ I det här avsnittet beskrivs hur du skapar en ny onlinekanal i Microsoft Dynami
 
 Dynamics 365 Commerce stöder flera butikskanaler. Dessa kanaler inkluderar onlinebutiker, kundtjänst och butiker (kallas också fysiska butiker). En onlinebutik ger en kunder alternativet att köpa produkter från återförsäljarens onlinebutik såväl som från deras fysiska butik.
 
-Om du vill skapa en onlinebutik i Handel måste du först skapa en onlinekanal. Innan du skapar en ny onlinekanal måste du kontrollera att du har slutfört [Förutsättningar för att ställa in kanaler](channels-prerequisites.md).
+Om du vill skapa en onlinebutik i Commerce måste du först skapa en onlinekanal. Innan du skapar en ny onlinekanal måste du kontrollera att du har slutfört [Förutsättningar för att ställa in kanaler](channels-prerequisites.md).
 
-Innan du kan skapa en ny plats måste minst en onlinebutik skapas i Handel. Mer information finns i [skapa en handelsschemaläggare](create-ecommerce-site.md).
+Innan du kan skapa en ny plats måste minst en onlinebutik skapas i Commerce. Mer information finns i [skapa en handelsschemaläggare](create-ecommerce-site.md).
 
 ## <a name="create-and-configure-a-new-online-channel"></a>Skapa och konfigurera en ny onlinekanal
 
@@ -66,7 +65,7 @@ I bilden nedan visas ett exempel på onlinekanal.
 
 ## <a name="set-up-languages"></a>Ställ in språk
 
-Om din näthandelswebbplats ska stödja flera språk expanderar du avsnittet **språk** och lägger till ytterligare språk efter behov.
+Om din näthandelssajt ska stödja flera språk expanderar du avsnittet **språk** och lägger till ytterligare språk efter behov.
 
 ## <a name="set-up-payment-account"></a>Ställ in betalningskonto
 
@@ -74,15 +73,15 @@ Från avsnittet **betalningskonto** kan du lägga till en tredje parts betalning
 
 ## <a name="additional-channel-setup"></a>Konfiguration av ytterligare kanal
 
-Ytterligare uppgifter som krävs för inställningar av onlinekanal inkluderar inställning av betalningsmetoder, leveranssätt och tilldelning av uppfyllelsegrupp.
+Ytterligare uppgifter som krävs för inställningar av onlinekanal inkluderar inställning av betalsätt, leveranssätt och tilldelning av uppfyllelsegrupp.
 
-I följande bild visas alternativen **leveranssätt**, **betalningsmetoder** och **uppfyllelse av grupptilldelning** på fliken **inställning**.
+I följande bild visas alternativen **leveranssätt**, **betalsätt** och **uppfyllelse av grupptilldelning** på fliken **inställning**.
 
 ![Ytterligare åtgärder för konfigurering av onlinekanal](media/channel-setup-online-3.png)
 
-### <a name="set-up-payment-methods"></a>Ange betalningsmetoder
+### <a name="set-up-payment-methods"></a>Ange betalsätt
 
-Om du vill ställa in betalningsmetoder följer du dessa steg för varje betalningstyp som stöds på den här kanalen.
+Om du vill ställa in betalsätt följer du dessa steg för varje betalningstyp som stöds på den här kanalen.
 
 1. I åtgärdsfönstret, välj fliken **Inställningar** och välj sedan **betalningssätt**.
 1. Klicka på **Ny** i åtgärdsfönstret.
@@ -93,7 +92,7 @@ Om du vill ställa in betalningsmetoder följer du dessa steg för varje betalni
 
 I bilden nedan visas ett exempel på en kontantbetalningsmetod.
 
-![Exempel på betalningsmetoder](media/channel-setup-retail-5.png)
+![Exempel på betalsätt](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Ställ in leveranssätt
 
@@ -134,6 +133,3 @@ I bilden nedan visas ett exempel på en inställning av tilldelning av uppfyllel
 [Ställa in en kundtjänstkanal](channel-setup-callcenter.md)
 
 [Dynamics 365-betalningskoppling för Adyen](../retail/dev-itpro/adyen-connector.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3521
 ms.assetid: 50207ffb-6b89-4fb9-92e9-928bc0729489
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 30b9aaaabcac09c9147c350422924a23f785c0ce
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7ccccfd3168cf132453b41a74c57f4fd2629fb22
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447988"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994900"
 ---
 # <a name="fixed-asset-mass-update"></a>Massuppdatering av anläggningstillgång
 
@@ -42,6 +41,3 @@ När du har uppdaterat avskrivningspraxis för tillgångar kan du bearbeta avskr
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

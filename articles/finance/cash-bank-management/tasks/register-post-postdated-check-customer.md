@@ -10,23 +10,22 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11089584e150a1a302eb969a5fb61cb9d1900901
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d14b0622f4fbad87ddf019307910d4d4e316888a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448044"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995300"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Registrera och bokför en efterdaterad check för en kund
 
 [!include [banner](../../includes/banner.md)]
 
-Du kan registrera information om en efterdaterad check som tas emot från en kund. Du kan även bokföra den efterdaterade checken och generera ekonomiska transaktioner.   Slutför följande uppgifter innan du registrerar och bokför en efterdaterad check som tas emot från en kund:   * Ställ in efterdaterade checkar på sidan Kassa- och bankhantering * Ställ in en betalningsmetod för efterdaterade checkar   Rollen för den här proceduren är Kassaförvaltare. I den här proceduren används demonstrationsföretaget USMF.
+Du kan registrera information om en efterdaterad check som tas emot från en kund. Du kan även bokföra den efterdaterade checken och generera ekonomiska transaktioner.   Slutför följande uppgifter innan du registrerar och bokför en efterdaterad check som tas emot från en kund:   * Ställ in efterdaterade checkar på sidan Kassa- och bankhantering * Ställ in ett betalsätt för efterdaterade checkar   Rollen för den här proceduren är Kassaförvaltare. I den här proceduren används demonstrationsföretaget USMF.
 
 1. Gå till Kundreskontra > Betalningar > Betalningsjournal.
 2. Klicka på Ny.
@@ -38,7 +37,7 @@ Du kan registrera information om en efterdaterad check som tas emot från en kun
     * Ange det specificerade beloppet på den efterdaterade checken.  
 8. Klicka på fliken Betalning.
 9. Skriv ett värde i fältet Betalningsmetod.
-    * Välj betalningsmetoden för den efterdaterade checken.  
+    * Välj betalsättet för den efterdaterade checken.  
 10. Klicka på fliken Efterdaterade checkar.
 11. I fältet Förfallodatum, ange ett datum.
     * Ange det datum då den efterdaterade checken förfaller till betalning.  
@@ -50,6 +49,3 @@ Du kan registrera information om en efterdaterad check som tas emot från en kun
 15. Klicka på Bokför.
 16. Stäng sidan.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

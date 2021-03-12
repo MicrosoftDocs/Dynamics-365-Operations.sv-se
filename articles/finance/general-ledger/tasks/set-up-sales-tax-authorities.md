@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: TaxAuthority
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 63b1b023181e1ead16571102c524a61edfdabdca
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f4847b5f3f50cc74c5b4854e1f0daedd64785baf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447932"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994575"
 ---
 # <a name="set-up-sales-tax-authorities"></a>Ställ in momsmyndigheter
 
@@ -41,6 +40,3 @@ Skattemyndigheter är enheter dit den insamlade momsen måste rapporteras och be
 10. Välj ett tal i fältet Avrundning.
 11. Klicka på Spara.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
