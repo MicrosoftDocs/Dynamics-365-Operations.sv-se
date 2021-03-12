@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13871
 ms.assetid: 3abc263e-59d6-4f1a-986d-1be388948bd3
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5af050fb6099b583be4e9c60ba56dacf38d31c08
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9511917d72a1bb45daf2ce7e4b56d94c17825daf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448126"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969238"
 ---
 # <a name="125-percent-reducing-balance-depreciation"></a>125 procent degressiv avskrivning
 
@@ -58,7 +57,7 @@ Om du väljer **Kalender** som avskrivningsår finns följande alternativ i fäl
 
 Om du väljer **Räkenskapsår** i fältet **Avskrivningsår**, beräknas 125 % degressiv avskrivning baserat på räkenskapsåret för räkenskapskalendern som angetts för boken, eller för den räkenskapskalender som har valts på sidan **Huvudbok**. Räkenskapskalendrar ställs in på sidan **Räkenskapskalendrar**. 
 
-För räkenskapsåret 1 juli - 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras automatiskt för varje period och längden på nästa räkenskapsår bestäms av perioderna som ställs in på sidan **Räkenskapskalendrar**. 
+För räkenskapsåret 1 juli – 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras automatiskt för varje period och längden på nästa räkenskapsår bestäms av perioderna som ställs in på sidan **Räkenskapskalendrar**. 
 
 Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ i fältet **Periodfrekvens**:
 
@@ -75,7 +74,7 @@ Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ 
 | Antal tjänsteår             | 5      |
 | Årlig avskrivningsprocent | 25 %    |
 
-Den degressiva avskrivningsmetoden på 125 % delar 125 procent med tjänstelivstiden i år. Den procenten multipliceras med anläggningstillgångens bokförda nettovärde för att bestämma årets avskrivningsbelopp.
+Den degressiva avskrivningsmetoden på 125 % delar 125 procent med tjänstelivstiden i år. Den procenten multipliceras med anläggningstillgångens bokförda nettovärde för att bestämma årets avskrivningsbelopp.
 
 | Period | Beräkning av årligt avskrivningsbelopp | Bokfört värde                    | Bokfört nettovärde i slutet av året |
 |--------|-----------------------------------------------|-------------------------------|---------------------------------------|
@@ -88,6 +87,3 @@ Den degressiva avskrivningsmetoden på 125 % delar 125 procent med tjänstelivs
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

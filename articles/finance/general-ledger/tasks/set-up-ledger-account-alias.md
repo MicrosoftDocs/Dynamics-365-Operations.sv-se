@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerAccountAlias
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e1764f31c98039e9ea6f665dcb04a1cfd23c31dc
-ms.sourcegitcommit: 66dafaae9d97f0f8e67ce1d309362532b6edf447
+ms.openlocfilehash: 08fcbc4e7e593c7d1a632183409ae85423545263
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448165"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968415"
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Ställ in alias för huvudbokskonto
 
@@ -41,6 +40,3 @@ Den här proceduren visar hur du skapar ett kontoalias som innehåller en genvä
 9. Välj den dimension som ska ha fokus när aliaset används i fältet Initialt fokus.
     * När du har skrivit genvägen och kontot och dimensionerna fyllts i är det ursprungliga fokusfältet dit markören eller fokus flyttar.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: Lagersökning i kassan
-description: Det här avsnittet beskriver de alternativ som är tillgängliga för visning av lagerinformation i kassan.
+title: Lagersökning i POS
+description: Det här avsnittet beskriver de alternativ som är tillgängliga för visning av lagerinformation i POS.
 author: ashishmsft
 manager: AnnBe
 ms.date: 03/12/2018
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,18 +18,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: 1d6133d80d7674a1d896bc19a743a6bd4d0fb40f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f08906c14f80b07368d88d820acae83cf1157e6c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415943"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969961"
 ---
-# <a name="inventory-lookup-in-the-point-of-sale-pos"></a>Lagersökning i kassan
+# <a name="inventory-lookup-in-the-point-of-sale-pos"></a>Lagersökning i POS
 
 [!include [banner](includes/banner.md)]
 
-Lagersökning i kassan hjälper återförsäljare att effektivisera verksamheten i realtid och få inblick genom att ansluta butiker, kassor och backoffice. Den här funktionen ger en korrekt produktinformation i realtid genom butiker och distributionscenter. Den underlättar också för återförsäljare att skapa ytterligare effektivitet och kostnadsbesparingar genom att förbättra lagerplanering i realtid.
+Lagersökning i POS hjälper återförsäljare att effektivisera verksamheten i realtid och få inblick genom att ansluta butiker, kassor och backoffice. Den här funktionen ger en korrekt produktinformation i realtid genom butiker och distributionscenter. Den underlättar också för återförsäljare att skapa ytterligare effektivitet och kostnadsbesparingar genom att förbättra lagerplanering i realtid.
 
 En korrekt översikt över lager i realtid i en organisation kan ger snabb, överlägsen kundservice. Den tidpunkt som är viktigast är den tidpunkt när kunden är redo att göra ett inköp. Det är viktigt att kassörerna i butiken har lagerinformation lättåtkomlig i realtid, så att de korrekt kan lova produktleverans och hämtning.
 
@@ -52,10 +51,10 @@ Kvantiteterna **Reserverat** och **Beställt** visas också för varje plats.
 Listan över platser innehåller två typer av enheter:
 
 - **Butiker** – Listan visar butiker som konfigureras med hjälp av butikslokaliserargruppen för den aktuella butiken i administration.
-- **Distributionscenter** – olika typer av distributionscenter (till exempel lagerställen) kan konfigureras i Handel. I listan visas dock endast lagertillgänglighetsinformation för distributionscenter av standardtypen **Standard**.
+- **Distributionscenter** – olika typer av distributionscenter (till exempel lagerställen) kan konfigureras i Commerce. I listan visas dock endast lagertillgänglighetsinformation för distributionscenter av standardtypen **Standard**.
 
     > [!NOTE]
-    > Lagertillgänglighetsinformation visas inte för lagerställe av typerna **transport**, **karantän** och **varor på väg** för kassan.
+    > Lagertillgänglighetsinformation visas inte för lagerställe av typerna **transport**, **karantän** och **varor på väg** för POS.
 
 På sidan **Lagersökning** kan du visa  disponibelt att lova-kvantiteter (ATP) för varje butik, utöver de aktuella lagerbehållningskvantiteterna, reserverade kvantiteter och beställda kvantiteter. Välj butiken som du vill visa ATP-information för och välj sedan **Visa tillgänglighet för butik**.
 
@@ -115,6 +114,3 @@ Följande tabell visar mer information om ytterligare åtgärder som är tillgä
 | Tillgänglighet         | Visa ATP-information om den valda variantkombinationen för den valda platsen. |
 | Visa alla platser   | Växla till standardinställda lagersökningsvyn och markera lagertillgänglighetsinformation för artikelvarianten i alla butiker i butikslokaliserargruppen samt i distributionscenter av typen **Standard/standard**. |
 | Visa produktinformation | Omdirigera användaren till sidan **produktinformation** med den associerade produktmallen. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

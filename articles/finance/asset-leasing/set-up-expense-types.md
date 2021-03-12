@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d27c5653d6305aad23142fa6f803134153661278
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 3ab31b16c6ae07466d7655832701e71092064fe1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4448203"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969513"
 ---
 # <a name="set-up-expense-types"></a>Konfigurera utgiftstyper
 
@@ -59,6 +58,3 @@ Därefter ska du koppla konton till utgiftstyperna. De här kontona kommer att d
 7. Välj huvudkonto för finansiell leasing och huvudkonto för operationell leasing i lämpliga fält.
 
 När du har utfört de här stegen kan du lägga till utgifter via raderna för **betalningsplanen för verkställighetskostnad** på sidan **Leasingdetaljer** för en vald leasing. Du kan också lägga till utgifter när du skapar en ny leasing.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Lägg till produktrekommendationer i kassan
+title: Lägg till produktrekommendationer i POS
 description: I det här avsnittet beskrivs användning av produktrekommendationer för en försäljningsenhet (POS).
 author: bebeale
 manager: AnnBe
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 259664
 ms.assetid: 5dd8db08-cd96-4f7e-9e65-b05ca815d580
 ms.search.region: global
@@ -19,20 +18,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7afe9225b8fc966ca154a5eb7421e8d4cc7c3023
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 08784385dd1fead13f538b4e856b4bac6651a560
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415942"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969936"
 ---
-# <a name="add-product-recommendations-on-pos"></a>Lägg till produktrekommendationer i kassan
+# <a name="add-product-recommendations-on-pos"></a>Lägg till produktrekommendationer i POS
 
 [!include [banner](includes/banner.md)]
 
-I grund och botten är produktrekommendationerna ett omvandlande affärsprogram som sträcker sig över alla handelsytor för att skapa omfattande, spännande och skräddarsydda produktidentifieringsupplevelser. Om du vill använda den här funktionen i kassan följer du stegen i [hur du lägger till rekommendationer i kassaenheterna.](add-recommendations-control-pos-screen.md) 
+I grund och botten är produktrekommendationerna ett omvandlande affärsprogram som sträcker sig över alla handelsytor för att skapa omfattande, spännande och skräddarsydda produktidentifieringsupplevelser. Om du vill använda den här funktionen i POS följer du stegen i [hur du lägger till rekommendationer i kassaenheterna.](add-recommendations-control-pos-screen.md) 
 
-Mer information om funktioner för produktrekommendationer finns i [produktrekommendationer - översikt.](../commerce/product-recommendations.md) 
+Mer information om funktioner för produktrekommendationer finns i [produktrekommendationer – översikt.](../commerce/product-recommendations.md) 
 
 ## <a name="scenarios"></a>Scenarier
 
@@ -53,7 +52,7 @@ Produktrekommendationer har aktiverats för följande kassascenarier. De är til
 
     [![Rekommendationer på sidan Transaktion](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurera Handel för att aktivera rekommendationer i kassa
+## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurera Commerce för att aktivera rekommendationer i kassa
 
 Så här ställs produktrekommendationer in:
 
@@ -61,7 +60,7 @@ Så här ställs produktrekommendationer in:
 2. Följ instruktionerna om hur du [aktiverar produktrekommendationer](../commerce/enable-product-recommendations.md) för ditt företag.
 3. Tillval; Om du vill visa rekommendationer på transaktionsskärmen, gå då till **Skärmlayout**, välj din skärmlayout, starta **Designer för skrämlayout**, och släpp sedan kontrollen **Rekommendationer** där så behövs.
 4. Gå till **Handelsparametrar**, välj **Maskininlärning** och välj **Ja** under **Aktivera kassarekommendationer**.
-5. Kör jobbet **1110** för global konfiguration om du vill se rekommendationer på kassan. Kör kanalkonfigurationsjobbet **1070** för att avspeglar ändringar i kassaskärmens layoutdesigner.
+5. Kör jobbet **1110** för global konfiguration om du vill se rekommendationer på POS. Kör kanalkonfigurationsjobbet **1070** för att avspeglar ändringar i kassaskärmens layoutdesigner.
 
 ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Felsök problem där du redan produktrekommendationer aktiverade
 
@@ -92,6 +91,3 @@ Så här ställs produktrekommendationer in:
 [Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

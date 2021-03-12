@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5ecbfcf3fa78ad2909a7cc9988ab1edaf2b98376
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1b0afeabfecb60672156692f3cd809445624020c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415954"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969986"
 ---
 # <a name="create-an-online-functionality-profile"></a>Skapa en online funktionsprofil
 
@@ -37,7 +36,7 @@ Funktionsprofilen online innehåller olika inställningar som används för onli
 
 ## <a name="create-an-online-functionality-profile"></a>Skapa en online funktionsprofil
 
-I proceduren nedan beskrivs hur du skapar en funktionsprofil online från appen administration för Handel.
+I proceduren nedan beskrivs hur du skapar en funktionsprofil online från appen administration för Commerce.
 
 1. I navigeringsfönstret, gå till **Moduler \> Kanalinställningar \> Online butiksinställningar \> Funktionsprofiler**.
 1. Klicka på **Ny** i åtgärdsfönstret.
@@ -53,8 +52,8 @@ I bilden nedan visas ett exempel på funktionsprofil online.
 ## <a name="functions"></a>Funktioner
 
 - **Aggregera produkter**: när den här funktionen är aktiverad kan kundvagnen uppdatera kvantitet när samma artikel läggs till flera gånger.
-- **Tillåt utcheckning utan betalningar**: när det här funktionen är aktiverad hanteras scenariot när artiklar som läggs till i vagnen har priset 0,00 $.
-- **Skapa kund i asynkront läge**: det här är en äldre inställning som gäller näthandelskanaler från tredje part och kan inte användas på näthandelsplatsen Dynamics 365.
+- **Tillåt kassa utan betalningar**: när det här funktionen är aktiverad hanteras scenariot när artiklar som läggs till i vagnen har priset 0,00 $.
+- **Skapa kund i asynkront läge**: det här är en äldre inställning som gäller näthandelskanaler från tredje part och kan inte användas på näthandelssajten Dynamics 365.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
@@ -67,6 +66,3 @@ I bilden nedan visas ett exempel på funktionsprofil online.
 [Ställa in en butikskanal](channel-setup-retail.md)
 
 [Ställa in en kundtjänstkanal](channel-setup-callcenter.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

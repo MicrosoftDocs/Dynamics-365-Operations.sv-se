@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerCalendar, LedgerPeriodModuleAccessControlUpdate, SysLookupPicklist, LedgerFiscalCalendarPeriodStatus
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a149b35c6964166207effc799a02cd4c59bbb843
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 598c28c2fb3dd6a13f96df81189b46c4e228da7a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447935"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968739"
 ---
 # <a name="mass-financial-period-close"></a>Masstäng räkenskapsperiod
 
@@ -42,6 +41,3 @@ I det här avsnittet visas hur du spärrar eller permanent stänger ner en perio
 11. Välj **Uppdatera periodstatus** och ställ in statusen **Spärrad**, **Öppen** eller **Permanent stängd**. **Öppen** visar att bokföring kan göras i perioden, förutsatt att användare har åtkomst. **Spärrad** innebär att inga bokföringar till perioden kan genomföras, men den kan öppnas igen. **Permanent stängd** innebär att perioden är stängd och aldrig kan öppnas på nytt. Inga justeringar kan bokföra. Vi rekommenderar ingen att ställa in en period som **Permanent stängd** förrän alla justeringar och revisioner har avslutats.  
 12. Välj **Uppdatera**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

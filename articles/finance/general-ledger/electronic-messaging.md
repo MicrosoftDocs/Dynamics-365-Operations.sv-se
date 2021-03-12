@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: b5887efc32c71759e4cb3c31e1b18c4c8b64f173
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d4ecc29e47d68129df424c4212505413cf6c8889
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448112"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968989"
 ---
 # <a name="electronic-messaging"></a>Elektroniska meddelanden
 
@@ -37,7 +36,7 @@ Funktionen för elektroniska meddelanden ingår i modulen **elektronisk rapporte
 Elektroniska meddelanden utifrån följande enheter:
 
 - **Elektroniskt meddelande** – en rapport eller deklaration som ska rapporteras och/eller överföras internt. Ett exempel är en rapport som skickas till ett skattekontor.
-- **Elektroniska meddelandeartiklar** - poster som ska tas med i meddelandet som rapporteras.
+- **Elektroniska meddelandeartiklar** – poster som ska tas med i meddelandet som rapporteras.
 - **Elektronisk meddelandebehandling** – en åtgärdskedja som bör köras för att samla in nödvändiga uppgifter, generera rapporter, lagra data i Microsoft Azure Blob-lagring, överföra rapporter från utanför systemet, få svar från utanför systemet och uppdatera databasen baserat på den information som tas emot. Åtgärderna i kedjan kan vara antingen länkade eller inte länkade
 
 Följande illustration visar flödet av data för elektroniska meddelanden.
@@ -194,9 +193,9 @@ I följande tabell beskrivs fälten på sidan **Webbprogram**.
 
 Dessutom är följande knappar tillgängliga i åtgärdsfönstret för sidan **webbprogram** för att ge stöd till auktoriseringsprocessen:
 
-- **Hämta auktoriseringskod** - initiera auktorisering av webbprogrammet.
-- **Hämta ett åtkomsttoken** - initiera processen för att hämta ett åtkomsttoken.
-- **Uppdatera åtkomsttoken** - uppdatera ett åtkomsttoken.
+- **Hämta auktoriseringskod** – initiera auktorisering av webbprogrammet.
+- **Hämta ett åtkomsttoken** – initiera processen för att hämta ett åtkomsttoken.
+- **Uppdatera åtkomsttoken** – uppdatera ett åtkomsttoken.
 
 När ett åtkomsttoken till ett webbprogram som lagras i systemets databas är i krypterat format kan det användas för begäran till en webbtjänst. I säkerhetssyfte måste åtkomsten till åtkomsttoken begränsas till säkerhetsroller som får göra dessa begäranden. Om användare utanför säkerhetsgruppen försöker lämna en begäran får de ett felmeddelande som anger att de inte tillåts att kommunicera via det valda webbprogrammet. Om du vill konfigurera vilka säkerhetsroller som måste ha tillgång till åtkomsttoken, använd snabbfliken **säkerhetsroller** på sidan **webbprogram**. Om säkerhetsroller inte definieras för ett webbprogram, kan endast en systemadministratör interagera med det här webbprogrammet.
 
@@ -214,7 +213,7 @@ I följande tabell beskrivs fälten på sidan **Inställningar för webbtjänst*
 | Intyg                    | Välj ett Key Vault-certifikat som tidigare har ställts in. |
 | Webbprogram                | Välj ett Key Vault-certifikat som tidigare har ställts in. |
 | Svarstyp – XML        | Ange det här alternativet till **Ja** om svarstypen är XML. |
-| Metod för begäran                 | Ange vilken metod för begäran. HTTP definierar en uppsättning metodförfrågan som anger vilken åtgärd som ska utföras av en viss resurs. Den begärda metoden kan vara **HÄMTA**, **BOKFÖR**, eller någon annan HTTP-metod. |
+| Metod för begäran                 | Ange vilken metod för begäran. HTTP definierar en uppsättning metodbegäran som anger vilken åtgärd som ska utföras av en viss resurs. Den begärda metoden kan vara **HÄMTA**, **BOKFÖR**, eller någon annan HTTP-metod. |
 | Rubrik för begäran                | Ange rubrik för begäran. En rubrik för begäran är en HTTP-rubrik som kan användas i en HTTP-begäran och som inte är relaterat till innehållet i meddelandet. |
 | Godta                         | Ange egenskap för **godkännande** av webbegäran. |
 | Godkänn kodning                | Ange värdet **Acceptera kodning**. HTTP-huvudet för begäran att acceptera-kodning meddelar innehålllskodning som klienten kan förstå. Den här innehållskodningen är vanligtvis en komprimeringsalgoritm. |
@@ -320,8 +319,8 @@ Sidan **elektroniska meddelanden** visar den behandling som är tillgänglig fö
 Snabbfliken **Meddelanden** visar elektroniska meddelanden för det valda jobbet. Beroende på status för det valda meddelandet och fördefinierad behandling kan du köra vissa åtgärder genom att välja knapparna ovanför rutnätet:
 
 - **Ny** – den här knappen är kopplad till åtgärder i typen **Skapa meddelanden**.
-- **Ta bort** - Den här knappen är tillgänglig om kryssrutan **Tillåt borttagning** är markerad för aktuell status för det markerade meddelandet.
-- **Samla in data** - Den här knappen är kopplad till en åtgärd av typen **fylla i poster**.
+- **Ta bort** – Den här knappen är tillgänglig om kryssrutan **Tillåt borttagning** är markerad för aktuell status för det markerade meddelandet.
+- **Samla in data** – Den här knappen är kopplad till en åtgärd av typen **fylla i poster**.
 - **Generera rapport** – den här knappen är kopplad till åtgärder av typen **Meddelande om export av elektronisk rapportering**.
 - **Skicka rapport** – den här knappen är kopplad till åtgärder av typen **webbtjänst**.
 - **Importera svar** – den här knappen är kopplad till åtgärder av typen **Import av elektronisk rapportering**.
@@ -334,9 +333,9 @@ Snabbfliken **Ytterligare fält för meddelande** visar alla ytterligare fält s
 
 Snabbfliken **Meddelandeobjekt** visar alla meddelandeobjekt som är relaterade till det markerade meddelandet. Beroende på status för den valda meddelandeartikeln kan du köra vissa åtgärder genom att välja knapparna ovanför rutnätet:
 
-- **Ta bort** - Den här knappen är tillgänglig om kryssrutan **Tillåt borttagning** är markerad för aktuell status för den markerade meddelandeartikeln.
+- **Ta bort** – Den här knappen är tillgänglig om kryssrutan **Tillåt borttagning** är markerad för aktuell status för den markerade meddelandeartikeln.
 - **Uppdatera status** – den här knappen är kopplad till åtgärder av typen **Användarbearbetning**.
-- Välj **originaldokumentet** - Öppna en sida som visar det ursprungliga dokumentet för den markerade meddelandeartikeln.
+- Välj **originaldokumentet** – Öppna en sida som visar det ursprungliga dokumentet för den markerade meddelandeartikeln.
 
 Alla rapporter som redan har skapats och mottagits för ett meddelande är kopplade till meddelandet. Om du vill granska bilagor som är relaterade till ett meddelande, markerar du meddelandet och väljer sedan knappen **bilaga** (gemsymbolen) i det övre högra hörnet på sidan.
 
@@ -536,6 +535,3 @@ Du kan nu ta bort eller uppdatera meddelandestatus. För att uppdatera meddeland
 ![Uppdatera meddelandets status](media/update-status.png)
 
 Meddelandestatus har uppdaterats till **förberedd** och du kan nu skapa rapporten genom att markera **generera rapporten**. Rapporten genereras och meddelandestatus och åtgärdsloggen uppdateras. För att visa den genererade rapporten väljer du knappen **bilaga** (gemsymbolen) i övre högra hörnet på sidan.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

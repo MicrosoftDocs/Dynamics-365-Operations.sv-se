@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxTmpWorkTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 11e006e41f467a594521dfc601f46b4d1b492ce5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1a807ee2743f051528b6b96ddf1eaada65283933
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448092"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968664"
 ---
 # <a name="create-sales-tax-transactions-on-documents"></a>Skapa momstransaktioner i dokument
 
@@ -44,7 +43,7 @@ Moms på dokument beräknas genom att ange en momsgrupp, och en artikelmomsgrupp
 13. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelmomsgrupp.
 14. Hitta och markera önskad post i listan.
 15. Klicka på länken på den valda raden i listan.
-16. Klicka på Ekonomi.
+16. Klicka på Finance.
 17. Klicka på Moms.
 18. Klicka på OK.
 19. Klicka på Lägg till rad.
@@ -60,6 +59,3 @@ Moms på dokument beräknas genom att ange en momsgrupp, och en artikelmomsgrupp
 29. Klicka på Moms.
 30. Klicka på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

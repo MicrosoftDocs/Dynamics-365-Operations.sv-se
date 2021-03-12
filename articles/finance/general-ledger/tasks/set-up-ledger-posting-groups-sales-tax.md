@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: TaxAccountGroup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 90fe7f3ab08e9417af3f857f04934a9b5df3d82d
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 6cc96cbdb11f24d727bddfa5fd4aaa579537802a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644907"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968464"
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Ställ in redovisningsbokföringsgrupper för moms
 
@@ -42,6 +41,3 @@ Moms beräknas och bokförs på huvudkontona som anges i redovisningsbokförings
 11. Välj huvudkontot för att bokföra kassarabatten för **momskoder** som är kopplade till denna **redovisningsbokföringsgrupp** i fältet **Kundkassarabatt**. Det är valfritt och om inget konto anges, ska huvudkontot för **kassarabattkoder** användas. Det kan vara praktiskt att använda andra konton, per **redovisningsbokföringsgrupp**, om du använder alternativet för återföring av moms vid kassarabatter i **Momsgrupper**.  
 12. Klicka på **Spara**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

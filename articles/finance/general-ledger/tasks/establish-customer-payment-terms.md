@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PaymDay, PaymTerm, CashDisc
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f641d75e06b11ca325d2624f836fc2a7c92d69e4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec16ba09cc7c942119bab1d992856c3ffcd5c628
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447913"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968564"
 ---
 # <a name="establish-customer-payment-terms"></a>Upprätta villkor för kundbetalning
 
@@ -41,8 +40,8 @@ I den här proceduren definieras kassarabatt- och förfallodatuminställningar. 
 10. Klicka på **Ny**. Betalningsvillkoren används för att definiera hur förfallodatumen ska beräknas. Kassarabattdatuminställningar definieras i en separat sida. 
 11. Ange ett ID i fältet **Betalningsvillkor**.
 12. Ange en beskrivning i fältet **beskrivning**.
-13. Välj en **betalningsmetod**, t.ex. COD, netto, aktuell månad, etc. Betalningsmetoden används för att definiera starten på hur förfallo kommer att beräknas. Till exempel, netto används om förfallodatumet är alltid ett visst antal månader eller dagar efter fakturadatum. Postförskott kan användas för att, när betalning krävs vid faktura, så ett förfallodatum beräknas inte. Välj aktuell månad för den här uppgifthandbok.  
-14. Välj en **betalningsdag**, om en specifik dag i veckan eller datum tas med i beräkningen. Beroende på betalningsvillkoret kan du ange en kvantitet i månader eller dagar. Du kan använda **betalningsplanen**, eller **betalningsdagen** ”till” lägger till slutet av betalningsmetoden. Om förfallodatumet är alltid 10:e i nästa månad, välj **betalningsdag** den 10:e. 
+13. Välj en **betalningsmetod**, t.ex. COD, netto, aktuell månad, etc. Betalsättet används för att definiera starten på hur förfallo kommer att beräknas. Till exempel, netto används om förfallodatumet är alltid ett visst antal månader eller dagar efter fakturadatum. Postförskott kan användas för att, när betalning krävs vid faktura, så ett förfallodatum beräknas inte. Välj aktuell månad för den här uppgifthandbok.  
+14. Välj en **betalningsdag**, om en specifik dag i veckan eller datum tas med i beräkningen. Beroende på betalningsvillkoret kan du ange en kvantitet i månader eller dagar. Du kan använda **betalningsplanen**, eller **betalningsdagen** ”till” lägger till slutet av betalsättet. Om förfallodatumet är alltid 10:e i nästa månad, välj **betalningsdag** den 10:e. 
 15. Klicka på **Spara**.
 16. Stäng sidan.
 17. Gå till **Kundreskontra > Betalningsinställning > Kassarabatter**.
@@ -57,6 +56,3 @@ I den här proceduren definieras kassarabatt- och förfallodatuminställningar. 
 26. I **Huvudkonto för leverantörsrabatter** anger du det huvudkonto där kassarabatten ska bokföras för leverantörsfakturor.
 27. Klicka på **Spara**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

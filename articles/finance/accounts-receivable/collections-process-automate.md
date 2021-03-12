@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: db59bad2ed3caf38f22bd4d6059e57747d1d983f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a63058904df72a7fda5a67ed1e6a846eed393ce0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447878"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969711"
 ---
 # <a name="collections-process-automation"></a>Automatisering av inkassoprocess
 
@@ -118,6 +117,3 @@ I följande register visas de sidor och fält som de angivna snabbflikarna kan n
 |     Parametrar för kundreskontra > automatisering av inkassoprocessen     |     Bokför kravbrev automatiskt           |     För kravbrevs åtgärdstyper kommer brevet att bokföras under automationen.                                      |
 |     Parametrar för kundreskontra > automatisering av inkassoprocessen     |     Skapa aktiviteter automatisering                |     Skapa och stäng aktiviteter för åtgärdstyper som inte är aktiviteter för att visa alla automatiserade steg som har vidtagits för ett konto.        |
 |     Parametrar för kundreskontra > automatisering av inkassoprocessen     |     Antal dagar som insamling av inkassoprocesser ska fortsätta     |     Definierar antalet dagar som inkassohistoriken lagras.                                                       |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

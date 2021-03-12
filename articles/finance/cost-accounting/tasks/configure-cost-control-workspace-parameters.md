@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca05f6174541a6e97ec94db209a99424a87550eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9861d6bc83d3f1d62091154a36436627eeccad4a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448156"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969363"
 ---
 # <a name="configure-cost-control-workspace-parameters"></a>Konfigurera parametrar för arbetsytan för kostnadskontroll
 
@@ -59,6 +58,3 @@ Använd den här proceduren för att konfigurera arbetsytan Kostnadskontroll så
 27. Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadsobjekt.
     * När du har valt en dimensionshierarki för kostnadsobjekt ska du expandera kostnadselementets dimensionshierarki om du vill visa önskade kostnadsvärden. Exempelvis kan du expandera hierarkin till Tillverkningsomkostnader för att visa värdet.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

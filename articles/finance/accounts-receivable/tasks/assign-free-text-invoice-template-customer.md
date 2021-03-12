@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 19742c53406cd1c616e8be1172b93157437132e8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fb5dd96cb71dcee6db97ad1074e7e75565ac4101
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447903"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969638"
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a>Tilldela en mall för fritextfaktura till en kund
 
@@ -45,11 +44,8 @@ Denna uppgift visar hur du tilldelar en fritextfakturamall till en kund. I denna
 12. I avsnittet **Skapa återkommande fakturor genom att använda standardvärdena från** väljer du fritextfakturamallen eller kundkontot. Välj om du vill använda fritextfakturamallen eller kundkontot för att bestämma standardvärdena för språk, bokföringsprofil, momsgrupp, artikelmomsgrupp, listkod, land/region för leveransen, valuta, betalningsvillkor, betalningsmetod, betalningsspecifikationer, betalningsplan, kassarabatt, ekonomiska dimensioner och gireringsblankett när fakturor skapas.  
 13. I fältet **Upprepningsmönster**, välj upprepningsmönstret.
     + Dagligen – Ange det här alternativet och ange antalet dagar i fältet Per. Om du till exempel anger 15, kommer en faktura skapas var 15:e dag för den här kunden.
-    + Varje vecka - Välj det här alternativet och ange antalet veckor i fältet Per. Om du till exempel anger 2, kommer en faktura skapas varannan vecka för den här kunden.
-    + Varje månad - Välj det här alternativet och ange antalet månader i fältet Per. Om du till exempel anger 6, kommer en faktura skapas var sjätte månad för den här kunden.
-    + Årligen - Välj det här alternativet och ange antalet år i fältet Per. Om du till exempel anger 2, kommer en faktura skapas vartannat år för den här kunden.  
+    + Varje vecka – Välj det här alternativet och ange antalet veckor i fältet Per. Om du till exempel anger 2, kommer en faktura skapas varannan vecka för den här kunden.
+    + Varje månad – Välj det här alternativet och ange antalet månader i fältet Per. Om du till exempel anger 6, kommer en faktura skapas var sjätte månad för den här kunden.
+    + Årligen – Välj det här alternativet och ange antalet år i fältet Per. Om du till exempel anger 2, kommer en faktura skapas vartannat år för den här kunden.  
 14. I fältet **Per**, ange en siffra.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

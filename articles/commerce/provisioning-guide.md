@@ -1,16 +1,15 @@
 ---
-title: Etablera en utvärderingsmiljön för Dynamics 365 Commerce
-description: Det här avsnittet förklarar hur du etablerar en utvärderingsmiljö för Microsoft Dynamics 365 Commerce.
+title: Etablera en bedömningsmiljön för Dynamics 365 Commerce
+description: Det här avsnittet förklarar hur du etablerar en bedömningsmiljö för Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 11/05/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,37 +17,37 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b54216a565c264dfcfe821581fee9df7b5e22323
-ms.sourcegitcommit: 715508547f9a71a89a138190e8540686556c753d
+ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "4415987"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969911"
 ---
-# <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Etablera en utvärderingsmiljön för Dynamics 365 Commerce
+# <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Etablera en bedömningsmiljön för Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet förklarar hur du etablerar en utvärderingsmiljö för Microsoft Dynamics 365 Commerce.
+Det här avsnittet förklarar hur du etablerar en bedömningsmiljö för Microsoft Dynamics 365 Commerce.
 
 Innan du börjar rekommenderar vi att du tar en snabbgenomgång genom det här avsnittet för att få en uppfattning om vad processen kräver.
 
 > [!NOTE]
-> Commerce utvärderingsmiljöer är i allmänhet inte tillgängliga och ges till partners och kunder för varje enskild begäran. För mer information, kontakta din Microsoft-partnerkontakt.
+> Commerce bedömningsmiljöer är i allmänhet inte tillgängliga och ges till partners och kunder för varje enskild begäran. För mer information, kontakta din Microsoft-partnerkontakt.
 
 ## <a name="overview"></a>Översikt
 
-För att kunna etablera din utvärderingsmiljö för Commerce måste du skapa ett projekt som har ett specifikt produktnamn och en viss typ. Miljön och Commerce Scale Unit (CSU) har även del specifika parametrar som du måste använda för att kunna förvänta dig att etablera näthandel senare. Instruktionerna i det här avsnittet beskriver alla nödvändiga steg för att slutföra etablering och de parametrar som du måste använda.
+För att kunna etablera din bedömningsmiljö för Commerce måste du skapa ett projekt som har ett specifikt produktnamn och en viss typ. Miljön och Commerce Scale Unit (CSU) har även del specifika parametrar som du måste använda för att kunna förvänta dig att etablera näthandel senare. Instruktionerna i det här avsnittet beskriver alla nödvändiga steg för att slutföra etablering och de parametrar som du måste använda.
 
-När du har tillhandahållit din utvärderingsmiljö för Commerce måste du slutföra några steg efter etablering för att förbereda den. Vissa steg är valfria, beroende på vilka delar av systemet du vill utvärdera. Du kan alltid slutföra de valfria stegen senare.
+När du har tillhandahållit din bedömningsmiljö för Commerce måste du slutföra några steg efter etablering för att förbereda den. Vissa steg är valfria, beroende på vilka delar av systemet du vill utvärdera. Du kan alltid slutföra de valfria stegen senare.
 
-Information om hur du konfigurerar utvärderingsmiljö för Commerce efter att du har konfigurerat den finns i [Konfigurera en utvärderingsmiljö för Commerce](cpe-post-provisioning.md). Information om hur du konfigurerar valfria funktioner för din Commerce utvärderingsmiljö finns i [Konfigurera valfria funktioner för utvärderingsmiljö för Commerce](cpe-optional-features.md).
+Information om hur du konfigurerar bedömningsmiljö för Commerce efter att du har konfigurerat den finns i [Konfigurera en bedömningsmiljö för Commerce](cpe-post-provisioning.md). Information om hur du konfigurerar valfria funktioner för din Commerce bedömningsmiljö finns i [Konfigurera valfria funktioner för bedömningsmiljö för Commerce](cpe-optional-features.md).
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Följande förutsättningar måste vara på plats innan du kan etablera din utvärderingsmiljö för Commerce:
+Följande förutsättningar måste vara på plats innan du kan etablera din bedömningsmiljö för Commerce:
 
-- Du har tagit med i utvärderingsprogrammet och beviljats kapacitet för en utvärderingsmiljö.
+- Du har tagit med i bedömningsprogrammet och beviljats kapacitet för en bedömningsmiljö.
 - Du har åtkomst till Microsoft Dynamics Lifecycle Services-portal (LCS).
 - Du är en befintlig Microsoft Dynamics 365-partner eller kund och kan skapa ett Dynamics 365 Commerce-projekt.
 - Du har administratörsåtkomst till din Microsoft Azure prenumeration, eller så har du kontakt med en prenumerationsadministratör som kan hjälpa dig om det behövs.
@@ -58,9 +57,9 @@ Följande förutsättningar måste vara på plats innan du kan etablera din utv�
 
 Observera att listan inte är uttömmande. Om du har problem kontakta din Microsoft-partnerkontakt för hjälp.
 
-## <a name="provision-your-commerce-evaluation-environment"></a>Etablera en utvärderingsmiljö för Commerce
+## <a name="provision-your-commerce-evaluation-environment"></a>Etablera en bedömningsmiljö för Commerce
 
-Dessa procedurer förklarar hur du etablerar en utvärderingsmiljö för Commerce. När du har slutfört dem kommer utvärderingsmiljö för Commerce att vara redo för konfigurering. Alla aktiviteter som beskrivs här utförs i LCS-portalen.
+Dessa procedurer förklarar hur du etablerar en bedömningsmiljö för Commerce. När du har slutfört dem kommer bedömningsmiljö för Commerce att vara redo för konfigurering. Alla aktiviteter som beskrivs här utförs i LCS-portalen.
 
 ### <a name="create-a-new-project"></a>Skapa ett nytt projekt
 
@@ -88,7 +87,7 @@ Om du vill lägga till Azure-anslutaren i LCS-projektet följer du stegen i [slu
 Följ dessa steg för att distribuera miljön.
 
 > [!NOTE]
-> Du kanske inte behöver slutföra steg 6, 7 och/eller 8, eftersom sidor som har ett enda alternativ hoppas över. När du är i vyn **Miljöparametrar** bekräfta att texten **Dynamics 365 Commerce - Demo (10.0.* x* med plattformsuppdatering *xx*)** visas direkt ovan fältet **Miljönamn**. För mer information, se illustrationen som visas efter steg 8.
+> Du kanske inte behöver slutföra steg 6, 7 och/eller 8, eftersom sidor som har ett enda alternativ hoppas över. När du är i vyn **Miljöparametrar** bekräfta att texten **Dynamics 365 Commerce – Demo (10.0.* x* med plattformsuppdatering *xx*)** visas direkt ovan fältet **Miljönamn**. För mer information, se illustrationen som visas efter steg 8.
 
 1. På huvudmenyn väljer du miljön **Molnstyrda miljöer**.
 1. Klicka på **Lägg till** om du vill lägga till en miljö.
@@ -117,19 +116,35 @@ Följ dessa steg för att distribuera miljön.
 
 ### <a name="initialize-the-commerce-scale-unit-cloud"></a>Initiera Commerce Scale Unit (moln)
 
-Gör så här om du vill initiera en CSU.
+Gör så här om du vill initiera CSU:n.
 
 1. Välj din miljö i listan **Molnstyrda miljöer**.
 1. Välj i miljövyn till höger **Fullständig information**. Vyn miljöinformation visas.
 1. Under **Miljöfunktioner**, välj **hantera**.
-1. På fliken **Handel**, välj **Initiera**. Parametervyn CSU-initiering visas.
+1. På fliken **Commerce**, välj **Initiera**. Parametervyn CSU-initiering visas.
 1. I fältet **Region** väljer du den region som är densamma eller nära den region som du har distribuerat miljön till.
 1. Lämna fältet **Version** tomt.
 1. Välj **initiera**.
-1. På sidan för distributions bekräftelse, när du har kontrollerat att informationen är korrekt, klickar du på **Ja**. Vyn **Hantering av handel** visas igen, där fliken **Handel** väljs. Din CSU har ställts i kö för etablering.
+1. På sidan för distributions bekräftelse, när du har kontrollerat att informationen är korrekt, klickar du på **Ja**. Vyn **Hantering av handel** visas igen, där fliken **Commerce** väljs. Din CSU har ställts i kö för etablering.
 1. Innan du fortsätter bör du kontrollera att status för din CSU är **Lyckades**. Initieringen tar ungefär två till fem timmar.
 
 Om du inte hittar länken **hantera** i vyn miljödetaljer kontaktar du din Microsoft-kontakt för att få hjälp.
+
+Följande felmeddelande kan visas under distributionsprocessen:
+
+> Bedömnings(demo-/test)miljöer måste registrera anslutningsprogrammet för skalningsenhet \<application ID\> i administrationen.
+
+Om CSU-initialiseringen misslyckas och du får det här felmeddelandet, noterar du program-ID:t (som är en global unik identifierare, GUID) och följer sedan stegen i nästa avsnitt om du vill registrera CSU-distribueringsprogrammet i Commerce-administrationen.
+
+### <a name="register-the-csu-deployment-application-in-commerce-headquarters-if-required"></a>Registrera CSU-distribueringsprogrammet i Commerce-administrationen (vid behov)
+
+Följ dessa steg om du vill registrera CSU-distribueringsprogrammet i Commerce-administrationen.
+
+1. I Commerce-administrationen går du till **Systemadministration \> Inställningar \> Azure Active Directory-program**.
+1. I kolumnen **Klient-ID** anger du program-ID:t från det CSU-initieringsfelmeddelande som du har fått.
+1. Ange eventuell beskrivande text i kolumnen **Namn** (t. ex. **CSU Eval**).
+1. I kolumnen **Användar-ID** anger du **RetailServiceAccount**.
+1. Försök att initiera CSU igen och distribuera från LCS.
 
 ### <a name="initialize-e-commerce"></a>Initiera näthandelsplattform
 
@@ -150,24 +165,24 @@ Gör så här om du vill initiera näthandel.
 1. Innan du fortsätter väntar du tills initieringsstatus för näthandel är **initialisering har slutförts**.
 1. Under **länkar** längst ned till höger, anteckna webbadresserna för följande länkar:
 
-    * **näthandelsplats** – länken till roten på din näthandelsplats.
+    * **näthandelssajt** – länken till roten på din näthandelssajt.
     * **Commerce webbplatsskaparen** – länken till webbplatshanteringsverktyget.
 
 ## <a name="next-steps"></a>Nästa steg
 
-För att fortsätta processen med att tillhandahålla och konfigurera din utvärderingsmiljö för Commerce, se [Konfigurera en utvärderingsmiljö för Commerce](cpe-post-provisioning.md).
+För att fortsätta processen med att tillhandahålla och konfigurera din bedömningsmiljö för Commerce, se [Konfigurera en bedömningsmiljö för Commerce](cpe-post-provisioning.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Dynamics 365 Commerce utvärderingsmiljö – översikt](cpe-overview.md)
+[Dynamics 365 Commerce bedömningsmiljö – översikt](cpe-overview.md)
 
-[Konfigurera en Dynamics 365 Commerce utvärderingsmiljö](cpe-post-provisioning.md)
+[Konfigurera en Dynamics 365 Commerce bedömningsmiljö](cpe-post-provisioning.md)
 
-[Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö](cpe-bopis.md)
+[Konfigurera BOPIS i en Dynamics 365 Commerce bedömningsmiljö](cpe-bopis.md)
 
-[Konfigurera valfria funktioner för en Dynamics 365 Commerce utvärderingsmiljö](cpe-optional-features.md)
+[Konfigurera valfria funktioner för en Dynamics 365 Commerce bedömningsmiljö](cpe-optional-features.md)
 
-[Dynamics 365 Commerce utvärderingsmiljö – vanliga frågor](cpe-faq.md)
+[Dynamics 365 Commerce bedömningsmiljö – vanliga frågor](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -176,6 +191,3 @@ För att fortsätta processen med att tillhandahålla och konfigurera din utvär
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce webbplatsen](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 508fda28d8f815f030e7b163709393f70904a5fd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 330646da075e3fc8c0c3f7fe54b790ed42615395
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415740"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970113"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Välj mellan Modern POS (MPOS) och Cloud POS
 
@@ -33,11 +32,11 @@ Detta avsnitt ger implementerarna ytterligare bakgrund, tips och riktlinjer för
 
 ## <a name="insights"></a>Insikter
 
-Handel innehåller en mängd olika alternativ för distribution och topologi. Återförsäljare kan därför välja de komponenter och den konfiguration som bäst passar deras affärsmässiga och tekniska behov. En aspekt av implementering som kräver ett noggrant övervägande är valet av plattform och formulärfaktor för butikskomponenten.
+Commerce innehåller en mängd olika alternativ för distribution och topologi. Återförsäljare kan därför välja de komponenter och den konfiguration som bäst passar deras affärsmässiga och tekniska behov. En aspekt av implementering som kräver ett noggrant övervägande är valet av plattform och formulärfaktor för butikskomponenten.
 
 ### <a name="pos-platform-and-form-factor-considerations"></a>Överväganden för butiksplattform och formulärfaktorer
 
-Handel har stöd för följande kassaalternativ:
+Commerce har stöd för följande kassaalternativ:
 
 - Modern POS (MPOS) för Microsoft Windows
 - MPOS för Microsoft Windows Phone
@@ -78,22 +77,22 @@ Förutom en plattform och formulärfaktor måste detaljhandlare också välja et
 
 #### <a name="commerce-scale-unit"></a>Skalningsenhet för handel
 
-Skalningsenhet för handel är en komponent som är värd för CRT. CRT ger tillgång till alla affärslogit som kassan använder, och den ger åtkomst till kanalens databas. När de arbetar online används skalningsenhet för handel av alla kassaklienter i butiken. Skalningsenhet för handel kan distribueras i molnet eller i butiken.
+Skalningsenhet för handel är en komponent som är värd för CRT. CRT ger tillgång till alla affärslogit som POS använder, och den ger åtkomst till kanalens databas. När de arbetar online används skalningsenhet för handel av alla kassaklienter i butiken. Skalningsenhet för handel kan distribueras i molnet eller i butiken.
 
 #### <a name="offline-mode"></a>Offlineläge
 
-MPOS för Windows stöder offline-läge. I offline-läge kan kassan fortsätta att bearbeta försäljning även om den kopplas bort från skalningsenhet för handel. Den kan sedan synkroniseras med kanaldatabasen när anslutningen har återställts. MPOS använder sin egen inbäddade instans av CRT, och använder tillfälligt sin egen lokala datakälla (SQL Server-databas som är offline). Mer information om offline-funktioner finns i [Offline-funktioner för kassa](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-offline-functionality).
+MPOS för Windows stöder offline-läge. I offline-läge kan POS fortsätta att bearbeta försäljning även om den kopplas bort från skalningsenhet för handel. Den kan sedan synkroniseras med kanaldatabasen när anslutningen har återställts. MPOS använder sin egen inbäddade instans av CRT, och använder tillfälligt sin egen lokala datakälla (SQL Server-databas som är offline). Mer information om offline-funktioner finns i [Offline-funktioner för kassa](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-offline-functionality).
 
 ### <a name="pos-peripheralhardware-considerations"></a>Överväganden för kassakringutrustning/-maskinvara
 
-Återförsäljare måste också ta hänsyn till hur kassan får åtkomst till enheter och kringutrustning som exempelvis skrivare, kassaapparater och betalningsterminaler. Endast MPOS för Windows stöder direkt kommunikation med dessa enheter. MPOS för Windows Phone iOS eller Android, samt molnbaserad kassa kräver en maskinvarustation för att komma åt dessa enheter. Maskinvarustationer kan tilldelas ett kassaregister eller delas av kassorna i en butik. Mer information om maskinvarustationer finns [Konfiguration och installation av Retail-maskinvarustationer](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation).
+Återförsäljare måste också ta hänsyn till hur POS får åtkomst till enheter och kringutrustning som exempelvis skrivare, kassaapparater och betalningsterminaler. Endast MPOS för Windows stöder direkt kommunikation med dessa enheter. MPOS för Windows Phone iOS eller Android, samt molnbaserad kassa kräver en maskinvarustation för att komma åt dessa enheter. Maskinvarustationer kan tilldelas ett kassaregister eller delas av kassorna i en butik. Mer information om maskinvarustationer finns [Konfiguration och installation av Retail-maskinvarustationer](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation).
 
 ## <a name="implementation-considerations"></a>Implementeringöverväganden
 
 Tänk på följande när du planerar kassaimplementeringen i dina butiker:
 
 - **Funktionella krav** – Kärnprocesser och kärnfunktioner är desamma, oavsett plattforms-, formulärfaktors- eller distributionstopologi. De flesta återförsäljare behöver därför inte betänka funktionella krav när de planerar implementeringen.
-- **Anslutning** - Nätverkstillgänglighet (nätverk för wide area network \[WAN\] och lokalt nätverk \[LAN\]) är en viktig faktor som kräver ett noggrant övervägande. De förmåner som en molnbaserad lösning utan utrymmeskrav ger med avseende på kostnad och enkelhet försvinner om systemet inte är tillgängligt för verksamhetskritiska processer.
+- **Anslutning** – Nätverkstillgänglighet (nätverk för wide area network \[WAN\] och lokalt nätverk \[LAN\]) är en viktig faktor som kräver ett noggrant övervägande. De förmåner som en molnbaserad lösning utan utrymmeskrav ger med avseende på kostnad och enkelhet försvinner om systemet inte är tillgängligt för verksamhetskritiska processer.
 
     Om inte anslutningen för en viss enhet är mycket pålitlig och flexibel, eller antalet driftstopp är acceptabel för återförsäljaren, rekommenderas ett av följande alternativ:
 
@@ -105,6 +104,3 @@ Tänk på följande när du planerar kassaimplementeringen i dina butiker:
 - **Maskinvaruenheter/kringutrustning** – En viktig aspekt av ett Retail POS-system är möjligheten att använda kassakringutrustning som exempelvis skrivare, kassaapparater och betalningsterminaler. Även om alla tillgängliga kassalaternativ kan använda kringutrustning är det bara MPOS för Windows som stöder dem direkt. En eller fler maskinvarustationer krävs för alla andra program. Även om den här metoden ger ökad flexibilitet, måste ytterligare komponenter distribueras, konfigureras och underhållas.
 - **Systemkrav** – Systemkraven för kassatillämpningen varierar. Ta reda på den senaste informationen innan du gör ditt val. Eftersom CPOS körs i en webbläsare stöder det till exempel fler operativsystem. Mer information om systemkraven finns [Systemkrav för molnbaserad distribution](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
 - **Distribution och underhåll** – Distributions- och underhållskravens komplexitet kan variera beroende på program- och distributionsalternativ. För en CPOS-distribution med molnbaserad värd måste du exempelvis inte installera och uppdatera på alla enheter. Därför minskar denna metod komplexitet och kostnad avsevärt. Om du distribuerar MPOS på alla kassor, aktiverar offline-läget och dessutom distribuerar delade maskinvarustationer, kan du emellertid avsevärt öka antalet slutpunkter som måste hanteras.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
