@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 264824
 ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7a0b978228e26ec70457a4bcb1c064070953909b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: def0b35043f0a660e2a167b78cf0c65cd1e8b2fd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448158"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006049"
 ---
 # <a name="registration-ids"></a>Registrerings-ID
 
@@ -86,7 +85,7 @@ I följande tabell visas de registreringstyper som stöds. Om du är bekant med 
 | Moms-ID                                                        | Alla länder i den Europeiska unionen (EU)|  Momsfriskrivningsnummer (lagstiftande typ SKATTE-ID i AX 2012 R3)|
 | Företags-ID (COID)                                          | Belgien, Tjeckien,Estland,Ungern,Lettland,Litauen,Polen,Schweiz | Företagsnummer (EnterpriseNumber) Registreringsnummer (RegNum\_W) Registreringsnummer (RegNum\_W) Registreringsnummer (RegNum\_W) Registreringsnummer (RegNum\_W) Företagskod (EnterpriseCode) Registreringsnummer (RegNum\_W) UID (Lagstiftande typ UID i AX 2012 R3) |
 | Filial-ID                                                     | Belgien            | Filialnummer (BranchNumber)|
-| Spisová značka (registreringsnummer, utfärdande organ, avsnitt) | Tjeckien     | Infällt nummer (CommercialRegisterInsetNumber) Förvaras i avsnittet Handelsregister (CommercialRegister) i handelsregistret (CommercialRegisterSection)|
+| Spisová značka (registreringsnummer, utfärdande organ, avsnitt) | Tjeckien     | Infällt nummer (CommercialRegisterInsetNumber) Förvaras i avsnittet Commercesregister (CommercialRegister) i handelsregistret (CommercialRegisterSection)|
 | Tullkund-ID                                           | Finland | Kundnummer för tull (CustomsCustomerNumber\_FI)|
 | INN                                                           | Ryska federationen| INN (lagstiftande typ INN i AX 2012 R3)|
 | RRC                                                           | Ryska federationen| RRC (lagstiftande typ RRC i AX 2012 R3)|
@@ -112,6 +111,3 @@ Mer information om bearbetning av registrerings-ID, inklusive erforderliga föru
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

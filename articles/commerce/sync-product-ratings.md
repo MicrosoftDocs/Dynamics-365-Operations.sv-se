@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dec87b548f3a218e1f833b752305f373e893b14c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a7318d53535a93352425f811ec90572e65aeb696
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415899"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006295"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkronisera produktklassificeringar i Dynamics 365 Commerce
 
@@ -33,13 +32,13 @@ I det här avsnittet beskrivs hur du synkroniserar produktvärderingar i Microso
 
 ## <a name="overview"></a>Översikt
 
-Om du vill använda produktvärderingar i flera kanaler, t.ex vid kassan (POS) och i kundtjänst, måste produktvärderingar från tjänsten omdömen och recensioner importeras till databas för handelskanal. När produktvärderingar görs tillgängliga i flera kanaler kan de hjälpa kunderna indirekt under sina interaktioner med säljare.
+Om du vill använda produktvärderingar i flera kanaler, t.ex vid POS och i kundtjänst, måste produktvärderingar från tjänsten omdömen och recensioner importeras till databas för handelskanal. När produktvärderingar görs tillgängliga i flera kanaler kan de hjälpa kunderna indirekt under sina interaktioner med säljare.
 
 Detta avsnitt beskriver följande uppgifter:
 
 1. Konfigurera **synkroniseringsjobb för produktklassificering** som ett batchjobb för att synkronisera produktklassificeringar från **tjänsten omdömen och recensioner**.
 1. Kontrollera att batchjobbet för synkronisering av produktvärderingar har slutförts.
-1. Göra produkt produktvärderingar tillgängliga i kassan.
+1. Göra produkt produktvärderingar tillgängliga i POS.
 
 ## <a name="configure-a-batch-job-to-synchronize-product-ratings"></a>Konfigurera ett batchjobb för att synkronisera produktvärderingar
 
@@ -70,7 +69,7 @@ Följande illustration visar ett exempel på deljobbdetaljer i handel.
 > 1. Gå till **Butik och handel \> Administrationsinställning \> Schemaläggare för handel \> Kanaldatabas**. Du kan också söka efter "Kanaldatabas".
 > 1. Välj den kanaldatabas som ska synkroniseras.
 > 1. I åtgärdsfönstret, välj **Fullständig datasynkronisering**.
-> 1. I dialogrutan **Välj ett distributionsschema**, välj **1040 - produkter** och sedan **OK**.
+> 1. I dialogrutan **Välj ett distributionsschema**, välj **1040 – produkter** och sedan **OK**.
 > 1. Upprepa stegen i föregående procedur för att kontrollera att **RetailProductRating**-deljobbet har skapats.
 
 ### <a name="import-product-ratings"></a>Importera produktvärdering
@@ -96,31 +95,31 @@ För att kontrollera att batchjobbet **Synkronisera produktklassificeringar** ly
 1. Om du vill visa information om batchjobbet går du till kolumnen **jobbeskrivning** och söker efter en beskrivning som innehåller "Visa produktklassificeringar" i batchjobbets lista.
 1. Välj jobb-ID om du vill visa detaljer för batchjobbet, t.ex. tidsplanerat startdatum/-tid och upprepningstext.
 
-I följande illustration visas ett exempel på detaljerna i batchjobbet i Handel när batchjobbet är tidsplanerat för körning med två timmars intervall.
+I följande illustration visas ett exempel på detaljerna i batchjobbet i Commerce när batchjobbet är tidsplanerat för körning med två timmars intervall.
 
 ![Detaljer för batchjobbet Synkronisera produktklassificeringar](media/rnr-hq-batchjob-status-checking.png)
 
-## <a name="make-product-ratings-available-at-the-pos"></a>Göra produkt produktvärderingar tillgängliga i kassan.
+## <a name="make-product-ratings-available-at-the-pos"></a>Göra produkt produktvärderingar tillgängliga i POS.
 
-Lösningen för klassificeringar och recensioner i Dynamics 365 Commerce är en flerkanalslösning. Produktklassificeringar visas dock inte som standard i kassan. För att hjälpa kunder i butikerna se värderingar och recensioner när de får hjälp av säljarna måste du aktivera produktvärderingar i kassan.
+Lösningen för klassificeringar och recensioner i Dynamics 365 Commerce är en flerkanalslösning. Produktklassificeringar visas dock inte som standard i POS. För att hjälpa kunder i butikerna se värderingar och recensioner när de får hjälp av säljarna måste du aktivera produktvärderingar i POS.
 
-Så här aktiverar du produktrecensioner i kassan.
+Så här aktiverar du produktrecensioner i POS.
 
-1. Gå till **Butik och handel \> Inställning av Handel \> Parametrar \> Handelparametrar**. Du kan också söka efter "Handelparametrar".
+1. Gå till **Butik och handel \> Inställning av Commerce \> Parametrar \> Commerceparametrar**. Du kan också söka efter "Handelparametrar".
 1. På fliken **konfigurationsparametrar** välj **Ny**.
 1. Ange ett namn som till exempel **RatingsAndReviews.EnableProductRatingsForRetailStores** och ange värdet till **sant**.
 1. Välj **Spara**.
 1. Gå till **Butik och handel \> Butik och handel-IT \> Distributionsschema**. Du kan också söka efter "fördelningsplan".
 1. I jobblistan, välj **1110** (**Global konfiguration**) och välj sedan **Kör nu**.
-1. När jobbet har körts kontrollerar du att produktklassificeringen nu visas i kassan.
+1. När jobbet har körts kontrollerar du att produktklassificeringen nu visas i POS.
 
-Följande illustration visar ett exempel på konfigurationen av parametrarna för Handel som ska aktiveras för produktvärderingar i kassan.
+Följande illustration visar ett exempel på konfigurationen av parametrarna för Commerce som ska aktiveras för produktvärderingar i POS.
 
-![Konfiguration av handelsparametrarna för produktvärderingar i kassan](media/rnr-hq-enable-ratings-in-pos.png)
+![Konfiguration av handelsparametrarna för produktvärderingar i POS](media/rnr-hq-enable-ratings-in-pos.png)
 
-Följande illustration visar ett exempel på produktvärderingar i kassan.
+Följande illustration visar ett exempel på produktvärderingar i POS.
 
-![Produktvärderingar i kassan](media/rnr-pos-catalog-ratings.png)
+![Produktvärderingar i POS](media/rnr-pos-catalog-ratings.png)
 
 Följande illustration visar ett exempel på produktvärderingar kundtjänstkanaler.
 
@@ -135,6 +134,3 @@ Följande illustration visar ett exempel på produktvärderingar kundtjänstkana
 [Hantera omdömen och recensioner](manage-reviews.md)
 
 [Konfigurera omdömen och recensioner](configure-ratings-reviews.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

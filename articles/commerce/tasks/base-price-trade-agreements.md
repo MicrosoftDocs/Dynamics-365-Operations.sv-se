@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: PriceDiscGroup, RetailStoreTable, RetailChannelPriceGroup, EcoResProductDetailsExtended, PriceDiscAdmTable, PriceDiscAdm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 44dc059f7bfc3ba83a375c197ce67f1378a9bc9b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: db3a91807c0cfb51426c03eeaf7785168e6ad0de
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415892"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006068"
 ---
 # <a name="base-price-and-trade-agreements"></a> Baspris och handelsavtal
 
@@ -56,11 +55,11 @@ Den här proceduren går igenom hur du skapar kanalspecifika handelsavtal för f
 24. Klicka på **Skapa handelsavtal**.
 25. Klicka på **Ny**.
 26. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Namn**.
-27. I listan välj raden **Handel**. I demonstrationsdata har journalnamnet **Handel** standardrelationen **Pris (Försäljning)**. Det innebär att alla skapade nya rader får standardinställningen handelsavtal för försäljningspriset.  
+27. I listan välj raden **Commerce**. I demonstrationsdata har journalnamnet **Commerce** standardrelationen **Pris (Försäljning)**. Det innebär att alla skapade nya rader får standardinställningen handelsavtal för försäljningspriset.  
 28. Klicka på **Rader** i **åtgärdsfönstret**.
 29. I fältet **Partkodtyp** välj Grupp.
 30. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Kontomarkering**.
-31. Hitta och markera önskad post i listan. Detta slutför länken från Kanal till Prisgrupp till Handelsavtal.  
+31. Hitta och markera önskad post i listan. Detta slutför länken från Kanal till Prisgrupp till Commercesavtal.  
 32. Skriv ett värde i fältet **Artikelrelation**.
 33. Ange ett nummer i fältet **Belopp i valuta**.
 34. På snabbfliken **Detaljer**, markera eller avmarkera kryssrutan **Sök nästa**. När **Sök nästa** sedan anges till Ja, prissättningsmotorn ska fortsätta att söka efter tillämpliga handelsavtal med ett lägre försäljningspris. När **Sök nästa** anges till Nej slutar prismotorn söka och använder handelsavtalet.  
@@ -70,6 +69,3 @@ Den här proceduren går igenom hur du skapar kanalspecifika handelsavtal för f
 38. Klicka på Sälj i **åtgärdsfönstret**.
 39. Klicka på **Försäljningspris**.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

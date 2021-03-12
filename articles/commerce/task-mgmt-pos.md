@@ -1,5 +1,5 @@
 ---
-title: Uppgiftshantering i kassan
+title: Uppgiftshantering i POS
 description: I det här avsnittet beskrivs uppgiftshantering i Microsoft Dynamics 365 Commerce kassaprogram (POS).
 author: gvrmohanreddy
 manager: annbe
@@ -10,20 +10,19 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: cc685fcd584fe2ab5cd9282e8fbefbd284d5b2a2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 889cc90b534de33ccd0e2bea367b2da42b5d72e0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415894"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006195"
 ---
-# <a name="task-management-in-pos"></a>Uppgiftshantering i kassan
+# <a name="task-management-in-pos"></a>Uppgiftshantering i POS
 
 [!include [banner](includes/banner.md)]
 
@@ -31,7 +30,7 @@ I det här avsnittet beskrivs uppgiftshantering i Microsoft Dynamics 365 Commerc
 
 ## <a name="overview"></a>Översikt
 
-Dynamics 365 Commerce kassaprogrammet har funktioner för uppgiftshantering som tillåter att butikschefer och medarbetare hantera uppgifter och uppdaterar uppgiftsstatus. Butiksarbetare har tillgång till uppgifter antingen genom att välja panelen **Uppgifter** på startsidan för kassan eller genom att välja uppgiftsmeddelanden. Butiksarbetare hämtas som standard till fliken **mina uppgifter** där de kan visa de uppgifter som de har tilldelats. De kan dock enkelt växla till flikarna **Förfallna uppgifter**, **Öppna uppgifter** och **Uppgiftslistor**.
+Dynamics 365 Commerce kassaprogrammet har funktioner för uppgiftshantering som tillåter att butikschefer och medarbetare hantera uppgifter och uppdaterar uppgiftsstatus. Butiksarbetare har tillgång till uppgifter antingen genom att välja panelen **Uppgifter** på startsidan för POS eller genom att välja uppgiftsmeddelanden. Butiksarbetare hämtas som standard till fliken **mina uppgifter** där de kan visa de uppgifter som de har tilldelats. De kan dock enkelt växla till flikarna **Förfallna uppgifter**, **Öppna uppgifter** och **Uppgiftslistor**.
 
 ## <a name="task-operations-for-store-managers"></a>Uppgiftsfunktioner för butikschefer
 
@@ -64,6 +63,3 @@ Illustrationen som följer visar fliken **Uppgiftslistor**.
 [Skapa uppgiftslistor och lägga till uppgifter](task-mgmt-create-lists.md)
 
 [Tilldela uppgiftslistor till butiker eller medarbetare](task-mgmt-assign-lists.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
