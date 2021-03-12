@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8a61ef0720839d371701f2f0a1fdec7e85a5feb7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f535cf0bc3c733426af22cf453ffe97f721f8d9e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415803"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000594"
 ---
 # <a name="enable-personalized-recommendations"></a>Aktivera anpassade rekommendationer
 
@@ -34,16 +33,16 @@ I det här avsnittet beskrivs hur du gör anpassade produktrekommendationer till
 
 ## <a name="overview"></a>Översikt
 
-I Dynamics 365 Commerce kan återförsäljare göra anpassade produktrekommendationer (även kallade anpassningar) tillgängliga. På detta sätt kan personliga rekommendationer införlivas i kundupplevelsen online och i kassan (POS). När anpassningsfunktionen är aktiverad kan systemet associera en användares inköps- och produktinformation för att skapa enskilda produktrekommendationer.
+I Dynamics 365 Commerce kan återförsäljare göra anpassade produktrekommendationer (även kallade anpassningar) tillgängliga. På detta sätt kan personliga rekommendationer införlivas i kundupplevelsen online och i POS. När anpassningsfunktionen är aktiverad kan systemet associera en användares inköps- och produktinformation för att skapa enskilda produktrekommendationer.
 
 ## <a name="personalization-prerequisites"></a>Anpassningskrav
 
-Innan du gör personliga produktrekommendationer tillgängliga för kunder bör du tänka på att produktrekommendationer bara stöds för användare av Handel som har migrerat deras lagring till Azure Data Lake Store. Innan kunderna får egna produktrekommendationer måste återförsäljare [aktivera produktrekommendationer](enable-product-recommendations.md).
+Innan du gör personliga produktrekommendationer tillgängliga för kunder bör du tänka på att produktrekommendationer bara stöds för användare av Commerce som har migrerat deras lagring till Azure Data Lake Store. Innan kunderna får egna produktrekommendationer måste återförsäljare [aktivera produktrekommendationer](enable-product-recommendations.md).
 
 > [!NOTE]
 > Genom att aktivera produktrekommendationer aktiverar du också anpassningar. Om du inaktiverar anpassningar stänger du emellertid inte av de andra typerna av produktrekommendationer.
 
-Mer information om produktrekommendationslistor finns i [produktrekommendationer - översikt](product-recommendations.md).
+Mer information om produktrekommendationslistor finns i [produktrekommendationer – översikt](product-recommendations.md).
 
 ## <a name="turn-on-personalization"></a>Aktivera anpassning
 
@@ -58,11 +57,11 @@ Så här aktiverar du anpassning.
 ![Aktivera anpassning](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
-> När du aktiverar anpassningar startas processen för generering av anpassade produktrekommendationslistor. Det kan krävas upp till en dag innan dessa listor är tillgängliga och kan visas online och i kassan.
+> När du aktiverar anpassningar startas processen för generering av anpassade produktrekommendationslistor. Det kan krävas upp till en dag innan dessa listor är tillgängliga och kan visas online och i POS.
 
 ## <a name="personalized-lists"></a>Anpassade listor
 
-Förutom att göra anpassningar av befintliga datorgenererade listor, kan du med hjälp av rekommendationstjänsten anpassa produktidentifieringsupplevelsen både online och i kassan.
+Förutom att göra anpassningar av befintliga datorgenererade listor, kan du med hjälp av rekommendationstjänsten anpassa produktidentifieringsupplevelsen både online och i POS.
 
 När anpassningen är aktiverad kan återförsäljare visa köparna anpassade "Val för dig"-listor online eller "rekommenderade kunder" i kassaterminaler. Dessutom kan återförsäljare lägga till anpassningar i befintliga produktrekommendationslistor och tillhandahålla allmän dataskyddsförordning (GDPR) avanmälningsupplevelse för autentiserade användare. Om du inaktiverar anpassning inaktiveras även dessa funktioner.
 
@@ -80,23 +79,23 @@ I bilden nedan visas ett exempel på en lista över "val för dig"-lista på en 
 
 !["Val för dig"-lista online](./media/picksforyou.png)
 
-### <a name="recommended-for-customer-lists-at-the-pos"></a>"Rekommenderad för kunder"-listor i kassan
+### <a name="recommended-for-customer-lists-at-the-pos"></a>"Rekommenderad för kunder"-listor i POS
 
 För att förbättra sin klientelingupplevelse kan återförsäljare anpassa befintliga sidor med kundinformation genom att lägga till en snabb "Rekommenderad för kund"-lista.
 
 I bilden nedan visas ett exempel på en lista över "rekommenderad för kund"-lista i en kassaterminal.
 
-!["Rekommenderad för kunder"-list i kassan](./media/picksonpos.png)
+!["Rekommenderad för kunder"-list i POS](./media/picksonpos.png)
 
 ## <a name="apply-personalization-to-existing-recommendation-lists"></a>Använd anpassningar för befintliga rekommendationslistor
 
 Återförsäljare kan göra anpassningar av befintliga rekommendationslistor, t.ex. "nytt", "trend", "bästsäljare", "människor gillar också" och "köps ofta ihop". När anpassningar tillämpas på befintliga listor, tas de objekt som en inloggad användare tidigare köpt bort från dessa listor. För både anonyma användare och användare som väljer att få anpassade rekommendationer visas standardversionerna av de befintliga listorna. Därför behöver inte detaljister manuellt upprätthålla separata sidupplevelser.
 
-En inloggad användare har till exempel redan köpt den svarta klockan och de bruna arbetsstövlar som visas i listan "trend - standard" i följande bild. Därför kommer användarna att se nya produkter i stället för dessa produkter, som de visas i listan "trend - anpassa".
+En inloggad användare har till exempel redan köpt den svarta klockan och de bruna arbetsstövlar som visas i listan "trend – standard" i följande bild. Därför kommer användarna att se nya produkter i stället för dessa produkter, som de visas i listan "trend – anpassa".
 
 ![Använda anpassning](./media/applypersonalization.png)
 
-Om du vill använda anpassningar för en befintlig rekommendations lista i webbplatsskaparen för Handel följer du stegen nedan.
+Om du vill använda anpassningar för en befintlig rekommendations lista i webbplatsskaparen för Commerce följer du stegen nedan.
 
 1. Öppna en befintlig sidan i webbplatsskaparen som innehåller en modul för produktinsamling.
 1. I vänster navigeringsfönstret, välj produktinsamlingsmodul.
@@ -120,7 +119,7 @@ Om du vill använda anpassningar för en befintlig rekommendations lista i webbp
 
 [Avanmäl anpassade rekommendationer](personalization-gdpr.md)
 
-[Lägg till produktrekommendationer i kassan](product.md)
+[Lägg till produktrekommendationer i POS](product.md)
 
 [Lägg till rekommendationer på transaktionsskärmen](add-recommendations-control-pos-screen.md)
 
@@ -131,6 +130,3 @@ Om du vill använda anpassningar för en befintlig rekommendations lista i webbp
 [Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

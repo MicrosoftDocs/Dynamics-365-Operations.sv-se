@@ -1,5 +1,5 @@
 ---
-title: Ansluta kringutrustning till kassan (POS)
+title: Ansluta kringutrustning till POS
 description: Detta avsnitt innehåller information om hur du ansluter kringutrustning till Retail POS.
 author: rubencdelgado
 manager: AnnBe
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
@@ -19,14 +18,14 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ec64cb8a7c490c6798a897fd20a56e5af5c8be3a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc043208362137d337f91745d2de357388510005
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415751"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000910"
 ---
-# <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Ansluta kringutrustning till kassan (POS)
+# <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Ansluta kringutrustning till POS
 
 [!include [banner](includes/banner.md)]
 
@@ -43,7 +42,7 @@ Flera komponenter används för att definiera relationerna mellan en butik, kass
 
 Navigering: klicka på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassor**.
 
-Kassaregistret är en enhet som används för att definiera egenskaperna hos en viss instans av kassan. Dessa egenskaper omfattar maskinvaruprofil eller inställningar för kringutrustning som ska användas i kassan, butiken som kassan har mappats till och den visuella upplevelsen när användare loggar in på den kassan.
+Kassaregistret är en enhet som används för att definiera egenskaperna hos en viss instans av POS. Dessa egenskaper omfattar maskinvaruprofil eller inställningar för kringutrustning som ska användas i POS, butiken som POS har mappats till och den visuella upplevelsen när användare loggar in på den POS.
 
 ### <a name="devices"></a>Enheter
 
@@ -61,7 +60,7 @@ Molnkassa är en webbläsarbaserad kassa. Eftersom det körs i webbläsaren krä
 
 ### <a name="hardware-profile"></a>Maskinvaruprofil
 
-Navigering: Klicka på **Handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Maskinvaruprofiler**.
+Navigering: Klicka på **Commerce** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Maskinvaruprofiler**.
 
 En maskinvaruprofil identifierar den maskinvara som är ansluten till ett kassaregister eller en maskinvarustation. Maskinvaruprofilen används också för att ange betalningsprocessorparametrar som ska användas vid kommunikation med SDK (Software Development Kit) för betalning. (SDK för betalning distribueras som en del av maskinvarustationen.)
 
@@ -69,11 +68,11 @@ En maskinvaruprofil identifierar den maskinvara som är ansluten till ett kassar
 
 Navigering: Klicka på **Retail och Commerce** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker**. Markera en butik och klicka på snabbfliken **Maskinvarustationer**.
 
-En station för maskinvara är en instans av affärslogiken som ligger till grund för kringutrustningen för kassan. En maskinvarustation installeras automatiskt tillsammans med MPOS. Alternativt kan maskinvarustationen installeras som en fristående komponent och sedan kommas åt via MPOS eller Cloud POS via en webbtjänst. Maskinvarustationen måste definieras på kanalnivå.
+En station för maskinvara är en instans av affärslogiken som ligger till grund för kringutrustningen för POS. En maskinvarustation installeras automatiskt tillsammans med MPOS. Alternativt kan maskinvarustationen installeras som en fristående komponent och sedan kommas åt via MPOS eller Cloud POS via en webbtjänst. Maskinvarustationen måste definieras på kanalnivå.
 
 ### <a name="hardware-station-profile"></a>Maskinvarustationens profil
 
-Navigering: Klicka på **Handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Profiler för maskinvarustation**.
+Navigering: Klicka på **Commerce** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Profiler för maskinvarustation**.
 
 Medan maskinvarustationen som anges på kanalnivå innehåller instansspecifik information såsom URL för maskinvarustationen innehåller maskinvarustationens profil information som kan vara statisk eller delad över flera maskinvarustationer. Statisk information innehåller den port som ska användas, maskinvarustationspaketet och maskinvaruprofilen. Statisk information innehåller också en beskrivning av vilken typ av maskinvarustation som distribueras såsom **Checka ut** eller **Returer** beroende på vilken maskinvara som krävs för varje specifik maskinvarustation.
 
@@ -83,7 +82,7 @@ Medan maskinvarustationen som anges på kanalnivå innehåller instansspecifik i
 
 [![Traditionell, fast kassa](./media/traditional-300x279.png)](./media/traditional.png)
 
-Anslut MPOS till kassans kringutrustning i ett traditionellt, fast kassascenario genom att först navigera till själva kassan och tilldela en maskinvaruprofil. Du hittar kassaregister om du går till **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassor**. 
+Anslut MPOS till kassans kringutrustning i ett traditionellt, fast kassascenario genom att först navigera till själva POS och tilldela en maskinvaruprofil. Du hittar kassaregister om du går till **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassor**. 
 
 När du har tilldelat maskinvaruprofilen ska du synkronisera ändringar i kanaldatabasen med hjälp av distributionsschemat **Kassor**. Du hittar distributionsscheman om du går till **Butik och handel** &gt; **Butik och handel-IT** &gt; **Distributionsschema**. 
 
@@ -110,7 +109,7 @@ Tillhandahåll sedan en beskrivning som hjälper kassören att identifiera maski
 
 Navigera sedan från den faktiska maskinvarustationen till kanalen och välj maskinvarustation. Klicka på **Hämta** och installera maskinvarustationen. 
 
-Använd därefter MPOS eller Clod POS för att utföra åtgärden **Välj maskinvarustation** för att välja den maskinvarustation som tidigare installerades. Välj **Koppla** för att upprätta en säker förbindelse mellan kassan och maskinvarustationen. Det här steget måste slutföras en gång för varje kombination av en kassa och en maskinvarustation. 
+Använd därefter MPOS eller Clod POS för att utföra åtgärden **Välj maskinvarustation** för att välja den maskinvarustation som tidigare installerades. Välj **Koppla** för att upprätta en säker förbindelse mellan POS och maskinvarustationen. Det här steget måste slutföras en gång för varje kombination av en kassa och en maskinvarustation. 
 
 När maskinvarustationen är kopplad används samma operation för att aktivera maskinvarustationen medan den används. I det här scenariot ska maskinvaruprofilen tilldelas maskinvarustationens profil snarare än själva kassaapparaten. Om en maskinvarustation av någon anledning inte har tilldelats någon maskinvaruprofil direkt, kommer den maskinvaruprofil som tilldelats kassaapparaten att användas.
 
@@ -118,7 +117,7 @@ När maskinvarustationen är kopplad används samma operation för att aktivera 
 
 ### <a name="registers"></a>Kassor
 
-Kassor hanteras i första hand via själva kassan och via de profiler som är kopplade till kassan. Attribut som är specifika för en enskild kassa hanteras på kassanivå. Dessa attribut omfattar butiken där kassan används, kassanumret, beskrivningen och det EFT-terminal-ID som är specifikt för själva kassan.
+Kassor hanteras i första hand via själva POS och via de profiler som är kopplade till POS. Attribut som är specifika för en enskild kassa hanteras på kassanivå. Dessa attribut omfattar butiken där POS används, kassanumret, beskrivningen och det EFT-terminal-ID som är specifikt för själva POS.
 
 ### <a name="pos-profiles"></a>Kassaprofiler
 
@@ -126,11 +125,11 @@ Du hittar kassaprofiler om du går till **Butik och handel** &gt; **Kanalinstäl
 
 #### <a name="offline-profile"></a>Offlineprofil
 
-Offline-profilen ställs in på butiksnivån. Den används för att ange inställningarna för överföring av transaktioner som utförs på en kassa när kassan inte är ansluten till kanalens databas.
+Offline-profilen ställs in på butiksnivån. Den används för att ange inställningarna för överföring av transaktioner som utförs på en kassa när POS inte är ansluten till kanalens databas.
 
 #### <a name="functionality-profile"></a>Funktionsprofil
 
-Funktionsprofilen ställs in på butiksnivån. Denna används för att ange inställningar för hela butiken som berör de funktioner som kan utföras i kassan. Följande funktioner hanteras via funktionsprofilen. Dessa funktioner är ordnade efter snabbfliken.
+Funktionsprofilen ställs in på butiksnivån. Denna används för att ange inställningar för hela butiken som berör de funktioner som kan utföras i POS. Följande funktioner hanteras via funktionsprofilen. Dessa funktioner är ordnade efter snabbfliken.
 
 - Snabbfliken **Allmänt**:
 
@@ -142,12 +141,12 @@ Funktionsprofilen ställs in på butiksnivån. Denna används för att ange inst
 - Snabbfliken **Funktioner**:
 
     - Hantering av inloggning och utökad inloggning.
-    - Ekonomiska aspekter och valutarelaterade aspekter för kassan såsom inmatning av priser och om decimaler som krävs för mindre valuta.
-    - Aktivera tidsregistrering via kassan.
-    - Hur produkter och betalningar visas i kassan och på kvitton.
+    - Ekonomiska aspekter och valutarelaterade aspekter för POS såsom inmatning av priser och om decimaler som krävs för mindre valuta.
+    - Aktivera tidsregistrering via POS.
+    - Hur produkter och betalningar visas i POS och på kvitton.
     - Dagsavstämning.
     - Kvarhållningsparametrar för kanalens databastransaktion.
-    - Hur kunder letas upp och skapas från kassan.
+    - Hur kunder letas upp och skapas från POS.
     - Hur rabatter beräknas.
 
 - Snabbfliken **Belopp**:
@@ -157,7 +156,7 @@ Funktionsprofilen ställs in på butiksnivån. Denna används för att ange inst
 
 - Snabbfliken **Infokoder**:
 
-    - Alla aspekter av hur infokoder hanteras i kassan. För mer information, se [Infokoder och infokodgrupper](info-codes-retail.md).
+    - Alla aspekter av hur infokoder hanteras i POS. För mer information, se [Infokoder och infokodgrupper](info-codes-retail.md).
 
 - Snabbfliken **Kvittonumrering**:
 
@@ -177,11 +176,11 @@ Visuella profiler tilldelas på registernivå. De används för att ange temat f
 
 ### <a name="custom-fields"></a>​Anpassade fält
 
-Du kan skapa anpassade fält om du vill lägga till fält som inte tillhandahålles direkt vid leverans till kassan. Mer information om hur du använder anpassade fält finns i [Blogginlägget Arbeta med anpassade fält](https://blogs.msdn.microsoft.com/axsupport/2012/08/06/ax-for-retail-2012-working-with-custom-fields/).
+Du kan skapa anpassade fält om du vill lägga till fält som inte tillhandahålles direkt vid leverans till POS. Mer information om hur du använder anpassade fält finns i [Blogginlägget Arbeta med anpassade fält](https://blogs.msdn.microsoft.com/axsupport/2012/08/06/ax-for-retail-2012-working-with-custom-fields/).
 
 ### <a name="language-text"></a>Språktext
 
-Du kan åsidosätta standardsträngar i kassan med hjälp av språktextposter. Lägga till en ny språktextrad om du vill åsidosätta en sträng i kassan. Ange ett ID, standardsträngen som ska åsidosättas och den text som ska visas i kassan i stället för standardsträngen.
+Du kan åsidosätta standardsträngar i POS med hjälp av språktextposter. Lägga till en ny språktextrad om du vill åsidosätta en sträng i POS. Ange ett ID, standardsträngen som ska åsidosättas och den text som ska visas i POS i stället för standardsträngen.
 
 ### <a name="hardware-station-profiles"></a>Maskinvarustationens profiler
 
@@ -189,7 +188,7 @@ Maskinvarustationens profiler beskrevs tidigare i denna artikel. De används fö
 
 ### <a name="channel-reports-configuration"></a>Konfiguration av kanalrapporter
 
-Du ställer in de rapporter som är tillgängliga i kanalen på sidan **Rapportkonfiguration för kanal**. Du kan skapa nya rapporter genom att ange XML-definitionen för rapporten och tilldela rapporten till en viss behörighetsgrupp i kassan.
+Du ställer in de rapporter som är tillgängliga i kanalen på sidan **Rapportkonfiguration för kanal**. Du kan skapa nya rapporter genom att ange XML-definitionen för rapporten och tilldela rapporten till en viss behörighetsgrupp i POS.
 
 ### <a name="devices"></a>Enheter
 
@@ -197,7 +196,7 @@ Enheter beskrevs tidigare i denna artikel. De används för att hantera aktiveri
 
 - **Väntande** – Enheten är redo att aktiveras.
 - **Aktiverad** – Enheten har aktiverats.
-- **Avaktiverad** – Enheten har avaktiverats i administration eller via kassan.
+- **Avaktiverad** – Enheten har avaktiverats i administration eller via POS.
 - **Inaktiverad** – Enheten har inaktiverats.
 
 Ytterligare aktiveringsrelaterad information omfattar arbetstagare som har ändrat aktiveringsstatus för enheten, en tidsstämpel för aktivering och om enhetskonfigurationen har verifierats.
@@ -205,6 +204,3 @@ Ytterligare aktiveringsrelaterad information omfattar arbetstagare som har ändr
 ### <a name="client-data-synchronization"></a>Klientdatasynkronisering
 
 Alla ändringar av en kassaklient, förutom ändringar av enhetens aktiveringsstatus, måste synkroniseras till kanaldatabasen för att börja gälla. Om du vill synkronisera ändringar i kanaldatabasen, gå till **Butik och handel** &gt; **Butik och handel-IT** &gt; **Distributionsschema** och kör det obligatoriska distributionsschemat. För klientändringar bör du köra distributionsschemat **Kassor** och även distributionsschemat **Kanalkonfiguration**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

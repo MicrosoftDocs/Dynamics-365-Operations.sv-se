@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 7b5041d35d310125c314ab2cb77d3cc40cdb7113
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3dcba743e6557b1bd366ac79ecb49ead831dceb4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415736"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001035"
 ---
 # <a name="configure-a-channel-to-use-a-channel-navigation-hierarchy"></a>Konfigurera en kanal för att använda en kanalnavigeringshierarki
 
@@ -33,7 +32,7 @@ I det här avsnittet beskrivs hur du konfigurerar en kanal för att använda en 
 
 ## <a name="overview"></a>Översikt
 
-Navigeringshierarkier för kanal ordnar produkter till kategorier, så att du kan bläddra på en näthandelsplats i kassan. Butiks- och onlinekanaler måste konfigureras med hierarkier för kanalnavigering.
+Navigeringshierarkier för kanal ordnar produkter till kategorier, så att du kan bläddra på en näthandelssajt i POS. Butiks- och onlinekanaler måste konfigureras med hierarkier för kanalnavigering.
 
 ## <a name="configure-the-channel"></a>Konfigurera kanalen
 
@@ -84,6 +83,3 @@ Följande bild visar hur du publicerar kanaluppdateringar.
 [Skapa en navigeringshierarki för kanal](create-channel-hierarchy.md)
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

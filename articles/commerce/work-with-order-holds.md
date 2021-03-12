@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 79132
 ms.assetid: 7c00dc35-73e5-400a-8587-22f37ddfc0e0
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b11dd48ac629910a82b4d5bfdf9889809b0d829d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 55b794029ec765162ccfca1f39f3816c6772273d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415848"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000444"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurera och arbeta med orderspärrar för kundtjänst
 
@@ -81,14 +80,14 @@ För att få en mer detaljerad vy över de order som har spärrats kan användar
 
 Både från listvyn och detaljerad vy över sidan **Orderspärrar** kan användare visa eller redigera ytterligare orderrelaterad information, såsom betalningar, summor och anteckningar.
 
-Alternativen på fliken **Spärra betalning** är praktiskt om flera användare arbetar med spärrkön samtidigt. Genom att välja alternativet **Utcheckning** kan användarna ange att de arbetar för att granska och undersöka orderspärren. På så sätt behöver andra användare inte slösa tid med att försöka utföra samma arbete. Från en detaljerad vy över sidan **Orderspärrar** kan användare visa information om utcheckningsdatum och tid och användaren som har checkat ut spärrposten.
+Alternativen på fliken **Spärra betalning** är praktiskt om flera användare arbetar med spärrkön samtidigt. Genom att välja alternativet **kassa** kan användarna ange att de arbetar för att granska och undersöka orderspärren. På så sätt behöver andra användare inte slösa tid med att försöka utföra samma arbete. Från en detaljerad vy över sidan **Orderspärrar** kan användare visa information om kassadatum och tid och användaren som har checkat ut spärrposten.
 
-När en spärrpost är utcheckat kan bara användaren som har checkat ut radera utcheckning. Denna begränsning är avsedd för att förhindra att användare tar poster som andra användare redan arbetar med. För att släppa en order tillbaka till kön så att andra användare kan arbeta med den väljer den användare som checkade ut posten alternativ **Rensa utcheckning**.
+När en spärrpost är utcheckat kan bara användaren som har checkat ut radera kassa. Denna begränsning är avsedd för att förhindra att användare tar poster som andra användare redan arbetar med. För att släppa en order tillbaka till kön så att andra användare kan arbeta med den väljer den användare som checkade ut posten alternativ **Rensa kassa**.
 
 > [!NOTE]
-> Spärren frisläpps inte när utcheckning är rensad.
+> Spärren frisläpps inte när kassa är rensad.
 
-I vissa situationer, t.ex. när en användare är sjuk eller har lämnat företaget, kanske poster som är utcheckade till användaren tilldelas en annan användare. En chef kan tilldela om poster med hjälp av alternativet **Åsidosätt utcheckning**.
+I vissa situationer, t.ex. när en användare är sjuk eller har lämnat företaget, kanske poster som är utcheckade till användaren tilldelas en annan användare. En chef kan tilldela om poster med hjälp av alternativet **Åsidosätt kassa**.
 
 ## <a name="releasing-orders-that-are-on-hold"></a>Frisläppa order som har spärrats
 
@@ -103,6 +102,3 @@ Om användaren vill ta bort ett undantag, men gör ytterligare ändringar i orde
 ## <a name="reporting-options"></a>Rapporteringsalternativ
 
 Gå till **Butik och handel** \> **förfrågningar och rapporter** \> **kundtjänstrapporter** \> **Orderspärrrapport** om du vill köra en rapport om orderspärrar efter datumintervall, spärrkod eller andra relaterade kriterier.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

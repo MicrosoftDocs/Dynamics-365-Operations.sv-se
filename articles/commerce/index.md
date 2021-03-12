@@ -1,5 +1,5 @@
 ---
-title: Startsidan för Handel
+title: Startsidan för Commerce
 description: Startsida för Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: ''
 ms.custom: 260624
 ms.assetid: ''
 ms.search.region: global
@@ -19,14 +18,14 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 211bcf3f4938b438e417f92cd385aaa04278a404
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: e73ad69b66b8d6874bb32e508d5a1c9fdbaf8118
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4415980"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000700"
 ---
-# <a name="commerce-home-page"></a>Startsidan för Handel
+# <a name="commerce-home-page"></a>Startsidan för Commerce
 
 [!include [banner](includes/banner.md)]
 
@@ -39,7 +38,7 @@ Den här versionen gör det möjligt att skapa digitala upplevelser med inbyggda
 
 - **Skapa lojalitet och överskrid kundernas förväntningar:** Använd klientelingverktyg för att få en omfattande översikt över kunden och svara på deras behov på alla samarbetsnivå, baserat på kundens profil, historik och inställningar som flödar över fysiskt och digitalt kanaler. Ge dina anställda möjlighet att utveckla långsiktiga relationer genom AI-drivna rekommendationer, Customer Insights och förmånsprogram som gör det möjligt att öka varumärket.
 
-- **Flexibel och intelligent flerkanalsupplevelse:** skapa en fysisk och digital handelsmiljö genom att tillhandahålla konsekventa erfarenheter av kunder över molnsökning och upptäckt, produktrecensioner, önskelistor, lager, presentkort och lojalitet. Tillåt att kunder köper när, hur och var de vill, på alla enheter, samtidigt som du väljer mellan moderna betalningsmetoder och produkthämtning eller leverans.
+- **Flexibel och intelligent flerkanalsupplevelse:** skapa en fysisk och digital handelsmiljö genom att tillhandahålla konsekventa erfarenheter av kunder över molnsökning och upptäckt, produktrecensioner, önskelistor, lager, presentkort och lojalitet. Tillåt att kunder köper när, hur och var de vill, på alla enheter, samtidigt som du väljer mellan moderna betalsätt och produkthämtning eller leverans.
 
 - **Effektivisera åtgärder med hjälp av AI i molnet:** driv handelsupplevelser i flera kanaler och integrerad, optimerad backofficeverksamhet genom inrotad, genomgripande och sammanhangsmedveten molnintelligens. Använd avancerad marknadsföring, lagerhantering, distribuerad orderhantering och pris- och säljfrämjande åtgärder för att förnya och hålla konkurrensen framåt.Härled insikter genom att visualisera och analysera omfattande och konsekventa data i alla delar av verksamheten. Använd AI-drivna tekniker för att tillhandahålla hjälpmedelsanpassade webbplatser, skydda ditt företag mot betalningsbedrägerier och dämpa effektivt användargenererat innehåll som värderingar och recensioner. 
 
@@ -53,9 +52,6 @@ Välj ett funktionsområde för att läsa mer om det.
 - [Hantera dina order](Order-fulfillment-overview.md)
 - [Hantera dina kunder](set-up-customer-loyalty-program.md)
 - [Hantera din ekonomi](retail-statements.md)
-- [Hantera din näthandelsplats](online-store-overview.md)
+- [Hantera din näthandelssajt](online-store-overview.md)
 - [Fraud Protection](dev-itpro/DFP.md)
 - [Utveckling och utbyggbarhet för handel](dev-itpro/dev-retail-home-page.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

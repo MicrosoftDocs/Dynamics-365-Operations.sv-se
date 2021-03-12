@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Commerce utvärderingsmiljö – översikt
-description: Det här ämnet ger en översikt över utvärderingsmiljö i Microsoft Dynamics 365 Commerce.
+title: Dynamics 365 Commerce bedömningsmiljö – översikt
+description: Det här ämnet ger en översikt över bedömningsmiljö i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
 ms.date: 07/16/2020
@@ -10,60 +10,56 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 25c0574e8d4502bcb846fba0ddf913d81eded87b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8e08c2f327771d7731b836840006d63b6ecb7dfc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415726"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000960"
 ---
-# <a name="dynamics-365-commerce-evaluation-environment-overview"></a>Dynamics 365 Commerce utvärderingsmiljö – översikt
+# <a name="dynamics-365-commerce-evaluation-environment-overview"></a>Dynamics 365 Commerce bedömningsmiljö – översikt
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet ger en översikt över utvärderingsmiljö i Microsoft Dynamics 365 Commerce.
+Det här ämnet ger en översikt över bedömningsmiljö i Microsoft Dynamics 365 Commerce.
 
 > [!NOTE]
-> Commerce utvärderingsmiljöer är i allmänhet inte tillgängliga och ges till partners och kunder för varje enskild begäran. För mer information, kontakta din Microsoft-partnerkontakt.
+> Commerce bedömningsmiljöer är i allmänhet inte tillgängliga och ges till partners och kunder för varje enskild begäran. För mer information, kontakta din Microsoft-partnerkontakt.
 
 ## <a name="overview"></a>Översikt
 
-Commerce utvärderingsmiljö är en valfri komplett miljö av Dynamics 365 Commerce som låter partners och potentiella kunder prova Commerce-produkten.
+Commerce bedömningsmiljö är en valfri komplett miljö av Dynamics 365 Commerce som låter partners och potentiella kunder prova Commerce-produkten.
 
-Utvärderingsmiljöer är delvis förkonfigurerade för att minska de nödvändiga åtgärderna efter etablering.
+Bedömningsmiljöer är delvis förkonfigurerade för att minska de nödvändiga åtgärderna efter etablering.
 
-Bortsett från några mindre begränsningar som inte påverkar funktioner eller funktioner, tillhandahåller utvärderingsmiljö för Commerce den kompletta handels upplevelsen och kan användas av kunder och implementeringspartners för att utvärdera produkten, ge återkoppling och göra passform/gap-analys.
+Bortsett från några mindre begränsningar som inte påverkar funktioner eller funktioner, tillhandahåller bedömningsmiljö för Commerce den kompletta handels upplevelsen och kan användas av kunder och implementeringspartners för att utvärdera produkten, ge återkoppling och göra passform/gap-analys.
 
-## <a name="limitations-of-the-commerce-evaluation-environment"></a>Begränsningar i utvärderingsmiljö Commerce
+## <a name="limitations-of-the-commerce-evaluation-environment"></a>Begränsningar i bedömningsmiljö Commerce
 
-Även om utvärderingsmiljö Commerce innehåller en fullständig uppsättning handelsfunktioner och funktioner finns det några mindre begränsningar:
+Även om bedömningsmiljö Commerce innehåller en fullständig uppsättning handelsfunktioner och funktioner finns det några mindre begränsningar:
 
-- Även om utvärderingsmiljö Commerce inte har några geografiska begränsningar, kan komponenter i miljön, till exempel Retail Cloud Scale Unit (RCSU) och näthandelsprogram, endast etableras i USA.
-- Användning av utvärderingsmiljö för Commerce är begränsad till 30 dagar från det datum då näthandel etableras.
-- Utvärderingsmiljö för Commerce kan distribueras och initieras endast i en miljö som använder demotopologin, där alla komponenter i en miljö distribueras i en enda molnstyrd virtuell dator (VM). Den huvudsakliga begränsningen för denna topologi är antalet samtidiga användare som miljön kan stödja.
+- Även om bedömningsmiljö Commerce inte har några geografiska begränsningar, kan komponenter i miljön, till exempel Retail Cloud Scale Unit (RCSU) och näthandelsprogram, endast etableras i USA.
+- Användning av bedömningsmiljö för Commerce är begränsad till 30 dagar från det datum då näthandel etableras.
+- Bedömningsmiljö för Commerce kan distribueras och initieras endast i en miljö som använder demotopologin, där alla komponenter i en miljö distribueras i en enda molnstyrd virtuell dator (VM). Den huvudsakliga begränsningen för denna topologi är antalet samtidiga användare som miljön kan stödja.
 
 ## <a name="get-started"></a>Kom igång
 
-Om du vill etablera utvärderingsmiljö för Commerce, se [Etablera en utvärderingsmiljö för Commerce](provisioning-guide.md).
+Om du vill etablera bedömningsmiljö för Commerce, se [Etablera en bedömningsmiljö för Commerce](provisioning-guide.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Etablera en Dynamics 365 Commerce utvärderingsmiljön](provisioning-guide.md)
+[Etablera en Dynamics 365 Commerce bedömningsmiljön](provisioning-guide.md)
 
-[Konfigurera en Dynamics 365 Commerce utvärderingsmiljö](cpe-post-provisioning.md)
+[Konfigurera en Dynamics 365 Commerce bedömningsmiljö](cpe-post-provisioning.md)
 
-[Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö](cpe-bopis.md)
+[Konfigurera BOPIS i en Dynamics 365 Commerce bedömningsmiljö](cpe-bopis.md)
 
-[Konfigurera valfria funktioner för en Dynamics 365 Commerce utvärderingsmiljö](cpe-optional-features.md)
+[Konfigurera valfria funktioner för en Dynamics 365 Commerce bedömningsmiljö](cpe-optional-features.md)
 
-[Dynamics 365 Commerce utvärderingsmiljö – vanliga frågor](cpe-faq.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Dynamics 365 Commerce bedömningsmiljö – vanliga frågor](cpe-faq.md)

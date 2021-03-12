@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, ForecastSales
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 105cf50698889e81804155cdac3a8b484cbf87d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cd931a378b057026eff57b34c9f5740df8adacef
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437500"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999841"
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Ändra en efterfrågeprognos manuellt
 
@@ -43,6 +42,3 @@ I den här proceduren visas hur du ändrar prognosen för en artikel. Det demons
 1. Klicka på **Öppna** i Microsoft Office.
 2. Klicka på **Redigera en efterfrågeprognos** i Excel. I Excel kan du lägga till, ta bort och redigera efterfrågeprognosrader. Om du inte kan se data i Excel måste du logga in med alternativet "Håll mig inloggad" aktiverat och du måste lita på dataanslutningsappen.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

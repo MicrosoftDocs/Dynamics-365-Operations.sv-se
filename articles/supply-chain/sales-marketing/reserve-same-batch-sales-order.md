@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, InventBatch, InventModelGroup, PdsAskSameLotForm, PdsCustSellableDays, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 28911
 ms.assetid: 5823d75e-f839-46dd-beb3-e09b79fc8aa4
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce750745d6f094a296b43827568ee1745179de2d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0fb1f9e017de71d01fbf7a05b579d68b702aa7c9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438081"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001509"
 ---
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>Reservera samma batch för en försäljningsorder
 
@@ -45,6 +44,3 @@ När du reserverar lager för en produkt på en försäljningsorderrad som har s
 - Batchen inte har tillräcklig hållbarhetstid kvar, baserat på utgångsdatum och bäst före-datum, plus eventuella försäljningsdagar för kund.
 
 För artiklar som är kopplade till en lagringsdimensionsgrupp som har **Använd lagerstyrningsprocesser** aktiverat kan du reservera specifika batchnummer genom att använda en reservationssekvens med den lagerdimension som definierats ovanför platsdimensionen. Sidan **Batch-reservation** för försäljnings- och överföringsorderrader låter dig också välja och reservera flera rader baserat på tillgängliga batchnummer. Mer information om vad du ska göra om du använder en reservationssekvens med dimensionen för batchnumret under platsen finns i [Flexibel reservationspolicy för dimension på lagernivå](../warehousing/flexible-warehouse-level-dimension-reservation.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

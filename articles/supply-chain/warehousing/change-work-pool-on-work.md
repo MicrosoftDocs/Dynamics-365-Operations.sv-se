@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSWorkPool,WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 344918b77334f9aca11f799f8c031047ad229ee0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 66d110c3235e8a87b64bf160bdad8524fad6abe5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437706"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001159"
 ---
 # <a name="change-work-pool-on-work"></a>Ändra arbetspool för arbete
 
@@ -149,6 +148,3 @@ Du kan använda sidan **Arbetsuppgifter** för att se det arbete som skapades oc
 > När **Ändra arbetspool** visas kanske fältet **arbetspool-ID** är tomt som standard. Om fältet är tomt när du väljer **OK** för att tillämpa ändringarna tas arbetspoolen bort helt från arbetet.
 >
 > Förutom att växla mellan arbetspooler kan du använda den här proceduren för att lägga till en resurspool i en arbetsuppgift som inte har en eller för att ta bort en resurspool från valfri arbetsuppgift som har en sådan.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1706093
 ms.assetid: 75ee68e0-4b9f-4f4d-b286-f498e0eb73fa
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67fbb8eebb637a96638c574373441213c66e9ddc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 40779d1f8bc14072928767ae1c83fdda47476871
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437949"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998888"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Registrera materialförbrukning med en mobil enhet
 
@@ -40,23 +39,23 @@ Arbetsflödet är relevant om det finns strikta krav på att material ska kunna 
 
 En kontinuerlig produktionsprocess (5) använder batch-kontrollerat råmaterial RM-100. Materialet som finns i lager på lagerstället Bulk-001 (1) vid registreringsskylt PL-1 med två batcher, B1 och B2, båda med en kvantitet på 100 kg. Lagerställearbete (2) publiceras och bearbetas av RM 100 och materialet hämtas från Bulk-001 till platsen för produktionsinleverans PIL-01 (3), som definieras som icke-registreringsskyltkontrollerad. Maskinoperatören väger ut material från platsen för produktionsinleverans (3) och registrerar vikten och batchnumret som förbrukade (4). Från produktionsinleveransplatsen läggs en del av materialet till manuellt i produktionsprocessen i angivna tidsintervall. När maskinoperatören lägger till material, vägs det på en våg och batchnumret registreras.
 
-## <a name="set-up-theworkflow-to-register-consumption-using-a-handheld-device"></a>Konfigurera arbetsflödet för att registrera förbrukning med hjälp av en bärbar enhet
+## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a>Konfigurera arbetsflödet för att registrera förbrukning med hjälp av en bärbar enhet
 Skapa en färdigvaruprodukt, FG 100, med en strukturlista med material som har batch-styrt råmaterial RM-100. Lägg till två batcher B1 och B2 i RM-100 i en kvantitet på 100 till plats: Bulk-001 vid registreringsskylt: PL-1. Avräkningsprincipen på strukturlisteraden för RM-100 anges till **Manuell**. Ställ in plats för produktionsinleverans på PIL-01. Du kan du göra det genom att välja den här platsen som den standardinleveransplats för lagerställe 51.
 
 1.  Skapa en ny menyartikel för mobila enheter: 
 
--    **Menyartikelnamn** – Registrera materialförbrukning. 
+-    **Menyartikelnamn** - Registrera materialförbrukning. 
 -    **Rubrik** – Registrera materialförbrukning. 
 -    **Läge** – Indirekt. 
--    **Aktivitetskod** – Registrera materialförbrukning.
+-    **Aktivitetskod** - Registrera materialförbrukning.
 
 2.  Lägg till menyartikeln i enhetsmenyn **Mobil produktion**.
 3.  Skapa en produktionsorder för den färdiga produkten: 
 
--    **Artikelnummer** – FG-100 
--    **Plats** – 5 
--    **Lagerställe** – 51 
--    **Kvantitet** – 150
+-    **Artikelnummer** - FG-100 
+-    **Plats** - 5 
+-    **Lagerställe** - 51 
+-    **Kvantitet** - 150
 
 Produktionsordern är **Uppskattad** och **Frisläppt** och lagerarbete har skapats.
 
@@ -68,7 +67,7 @@ Detta överför materialet från bulkplatsen till produktionsinleveransplatsen P
 
 När produktionsordern har startat kan du registrera materialförbrukning i arbetsflödet för handenheter. Vi börjar med att registrera förbrukning på 25 kg från batch B1.
 
-6.  Välj menyartikeln  **Registrera material** **förbrukning**. I menyn för handhållen enhet anger du följande information: 
+6.  Välj menyartikeln **Registrera material** **förbrukning**. I menyn för handhållen enhet anger du följande information: 
 
 -    Tillverkningsordernumret. 
 -    Platsen där materialet ska förbrukas är i det här fallet PIL-01. 
@@ -92,6 +91,3 @@ När du har slutfört registreringen väljer du **Klart** för att bokföra jour
 -   Material kan vara överförbrukade. Exempelvis om materialet är beräknat att vara förbrukat med kvantiteten 100 kg kan det sedan vara överförbrukat med samma kvantitet, till exempel 105 kg.
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

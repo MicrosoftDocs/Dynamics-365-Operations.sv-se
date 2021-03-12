@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable, InventSerial
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 28931
 ms.assetid: 5d39630f-607e-492b-8c1e-790ca53effa0
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 989dcca499f6d27ae9680f184978d5500397fa57
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6e4f5a04e85d3cc34111b7421fbff6cbde413b7c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437595"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001534"
 ---
 # <a name="working-with-serialized-items"></a>Arbeta med serialiserade artiklar
 
@@ -51,12 +50,12 @@ Inställningarna för den spårningsdimensionsgrupp som har tilldelats produkten
 Du kan skapa delvisa fakturor och följesedlar för försäljningsorder och register endast serienumren för de artiklar som dessa fakturor och följesedlar innehåller. Om du vill skapa en delfaktura, och du har mer än en följesedel för försäljningsordern, kan du inkludera serienummer från mer än en följesedel. Det kan dock bara finnas en följesedel där alla serienummer inte är inkluderade. Om du till exempel har tre följesedlar och varje innehåller två seriekopplade artiklar, kan du inte skapa en delfaktura för en artikel från varje följesedel.
 
 ## <a name="what-do-i-do-when-a-serial-number-isnt-readable"></a>Vad gör jag när ett serienummer inte är läsligt?
-Om ett serienummer inte kan läsas eller skannas kan du skapa en tom rad för artikeln genom att klicka på **Det går inte att läsa** på sidan **Serienummer**. Om serienumret blir tillgängligt senare kan du uppdatera fakturan eller följesedeln. Mer information finns i nästa avsnittet ”Kan jag korrigera eller ändra serienummer som jag har registrerat för en försäljningsorder?”.
+Om ett serienummer inte kan läsas eller skannas kan du skapa en tom rad för artikeln genom att klicka på **Det går inte att läsa** på sidan **Serienummer**. Om serienumret blir tillgängligt senare kan du uppdatera fakturan eller följesedeln. Mer information finns i nästa avsnittet ”Kan jag korrigera eller ändra serienummer som jag har registrerat för en försäljningsorder?”.
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Kan jag korrigera eller ändra serienummer som jag har registrerat för en försäljningsorder?
 Ja du kan korrigera serienummer, när följande villkor uppfylls:
--   **Fakturor** – Du kan ändra serienummer för de artiklar som du ännu inte har fakturerat. Följesedeln uppdateras då också. Men om en försäljningsorderrad korrigerades genom att registrera en negativ kvantitet kan du inte ändra serienummer för försäljningsorderraden.
--   **Följesedlar** – Du kan inte delvis korrigera en följesedelrad som innehåller seriekopplade artiklar. Du måste återföra hela kvantiteten för raden. Om en följesedel har annullerats eller åtgärdats behöver du inte registrera de återförda serienumren igen när du skapar en ny följesedel för samma seriekopplade artiklar. Numren som har registrerats kommer att användas.
+-   **Fakturor** – Du kan ändra serienummer för de artiklar som du ännu inte har fakturerat. Följesedeln uppdateras då också. Men om en försäljningsorderrad korrigerades genom att registrera en negativ kvantitet kan du inte ändra serienummer för försäljningsorderraden.
+-   **Följesedlar** - Du kan inte delvis korrigera en följesedelrad som innehåller seriekopplade artiklar. Du måste återföra hela kvantiteten för raden. Om en följesedel har annullerats eller åtgärdats behöver du inte registrera de återförda serienumren igen när du skapar en ny följesedel för samma seriekopplade artiklar. Numren som har registrerats kommer att användas.
 
 ## <a name="can-i-view-the-serial-numbers-that-were-shipped-together-with-a-specific-packing-slip-or-that-were-included-on-an-invoice"></a>Kan där jag visa serienumren som har skickats med en viss följesedel, eller som har inkluderats i en faktura?
 Ja kan du köra en fråga på följesedeljournalraden, eller fakturajournalraden som visar serienummer i en lista, som inkluderade, där alla i dokumentet.
@@ -69,7 +68,7 @@ Nej, under en försäljningsprocess kan du inte registrera serienummer för fån
 
 ## <a name="can-i-register-serial-numbers-at-the-retail-pos"></a>Kan jag registrera serienummer i Kassa?
 
-Ja, kassan kommer att uppmana användaren att ange ett serienummer, där användaren säljer en artikel som har tilldelats en spårningsdimensionsgrupp som har ställts in för att endast använda serienummer under försäljningsprocessen.
+Ja, kassan kommer att uppmana användaren att ange ett serienummer, där användaren säljer en artikel som har tilldelats en spårningsdimensionsgrupp som har ställts in för att endast använda serienummer under försäljningsprocessen.
 
 ## <a name="what-security-roles-are-required-in-order-to-register-serial-numbers-during-the-sales-process"></a>Vilka säkerhetsroller krävs för att registrera serienummer under försäljningsprocessen?
 Den här funktionen är tillgänglig för alla roller som kan underhålla försäljningsföljesedlar och försäljningsfakturor. Följande behörigheter gör det möjligt för anställda att korrigera serienummer och registrera blanka poster för serienummer som inte kan läsas eller skannas:
@@ -80,6 +79,3 @@ Den här funktionen är tillgänglig för alla roller som kan underhålla förs�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 27b73f7a05605e4e3ee8f8b72400172b7a8bfc33
-ms.sourcegitcommit: ec78608eb96478b7a57928b60aece129d6799c5b
+ms.openlocfilehash: 85b5d8306eb4e9f2a4b9df13d95ab88020c3591e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "4581922"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000675"
 ---
 # <a name="payment-module"></a>Betalningsmodul
 
@@ -42,7 +41,7 @@ I betalningsmodulen kan också kunder som är inloggade spara sina betalningsupp
 
 Betalningsmodulen täcker alla orderavgifter som inte redan omfattas av förmånspoäng eller presentkort. Om summan för en order helt täcks av förmånspoäng eller presentkortskrediter, döljs betalningsmodulen och kunden kan placera ordern utan den.
 
-Adyen betalningskontakt stöder också stark kundautentisering (SCA). En del av den Europeiska Unionens (EU) reviderade direktiv om betalningstjänster (PSD2) kräver att online-shoppare autentiseras utanför sin online-upplevelse när de använder en elektronisk betalningsmetod. I samband med kassautcheckningsflödet omdirigeras kunderna till sin bankwebbplats - efter autentisering omdirigeras de tillbaka till kassautcheckningsflödet för Commerce. I samband med denna omdirigering behålls den information som en kund har angett i samband med kassautcheckningsflödet (t.ex. leveransadress, leveransalternativ, presentkortsinformation och lojalitetsinformation). Innan du kan aktivera funktionen för Adyen-betalningsanslutning måste betalningsanslutningen konfigureras för SCA i Commerce-administrationen. Mer information finns i [grundlig kundautentisering med hjälp av Adyen](adyen_redirect.md). Denna funktion aktiverades i Commerce version 10.0.12.
+Adyen betalningskontakt stöder också stark kundautentisering (SCA). En del av den Europeiska Unionens (EU) reviderade direktiv om betalningstjänster (PSD2) kräver att online-shoppare autentiseras utanför sin online-upplevelse när de använder en elektronisk betalningsmetod. I samband med kassaflödet omdirigeras kunderna till sin bankwebbplats – efter autentisering omdirigeras de tillbaka till kassaflödet för Commerce. I samband med denna omdirigering behålls den information som en kund har angett i samband med kassaflödet (t.ex. leveransadress, leveransalternativ, presentkortsinformation och lojalitetsinformation). Innan du kan aktivera funktionen för Adyen-betalningsanslutning måste betalningsanslutningen konfigureras för SCA i Commerce-administrationen. Mer information finns i [grundlig kundautentisering med hjälp av Adyen](adyen_redirect.md). Denna funktion aktiverades i Commerce version 10.0.12.
 
 > [!NOTE]
 > För Adyen -betalningskoppling kan modulen iFrame i modulen betalning bara återges om du lägger till Adyen-URL i din webbplatslista över tillåtna. Du slutför det här steget genom att lägga till direktiven **\*.adyen.com** till **child-src**, **connect-src**, **img-src**, **script-src** och **style-src** för säkerhetspolicyn för din webbplats. Mer information finns i [hantera säkerhetsprinciper för innehåll](manage-csp.md). 
@@ -118,6 +117,3 @@ Om både Adyen- och PayPal-betalningsanslutningar behövs lägger du till båda 
 [Dynamics 365-betalningsanslutning för PayPal](paypal.md)
 
 [Stark kundautentisering med Adyen](adyen_redirect.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
