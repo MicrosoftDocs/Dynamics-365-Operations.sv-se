@@ -11,54 +11,53 @@ ms.technology: ''
 ms.search.form: MCRCustomerService, MCRCustSearch, SalesTable, MCRContinuityCustInfo, MCRCustPaymLookup, CreditCardTokenization, CreditCardLookup, MCRSalesOrderRecap
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2baf0127a35cc62952fd78daaf8204d35ec8d2b3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5b641fb6ba5edf359a2f1f2de7b5095d73b497cf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415861"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003638"
 ---
-# <a name="using-continuity-program"></a><span data-ttu-id="0e51f-103">Använda kontinuitetsprogram</span><span class="sxs-lookup"><span data-stu-id="0e51f-103">Using continuity program</span></span>
+# <a name="using-continuity-program"></a><span data-ttu-id="e7173-103">Använda kontinuitetsprogram</span><span class="sxs-lookup"><span data-stu-id="e7173-103">Using continuity program</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0e51f-104">Denna procedur visar hur du säljer ett kontinuitetsprogram och behandlar relaterade försäljningsordrar.</span><span class="sxs-lookup"><span data-stu-id="0e51f-104">This procedure walks through selling a continuity program and processing related sales orders.</span></span> <span data-ttu-id="0e51f-105">För att slutföra denna procedur måste användaren konfigureras som en kundtjänstanvändare.</span><span class="sxs-lookup"><span data-stu-id="0e51f-105">To complete this procedure, the user has to be set up as a call center user.</span></span> <span data-ttu-id="0e51f-106">I proceduren används demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="0e51f-106">This procedure uses the USRT demo data company.</span></span>
+<span data-ttu-id="e7173-104">Denna procedur visar hur du säljer ett kontinuitetsprogram och behandlar relaterade försäljningsordrar.</span><span class="sxs-lookup"><span data-stu-id="e7173-104">This procedure walks through selling a continuity program and processing related sales orders.</span></span> <span data-ttu-id="e7173-105">För att slutföra denna procedur måste användaren konfigureras som en kundtjänstanvändare.</span><span class="sxs-lookup"><span data-stu-id="e7173-105">To complete this procedure, the user has to be set up as a call center user.</span></span> <span data-ttu-id="e7173-106">I proceduren används demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="e7173-106">This procedure uses the USRT demo data company.</span></span>
 
-1. <span data-ttu-id="0e51f-107">Gå till Butik och handel > Kunder > Kundtjänst.</span><span class="sxs-lookup"><span data-stu-id="0e51f-107">Go to Retail and Commerce > Customers > Customer service.</span></span>
-2. <span data-ttu-id="0e51f-108">I det fältet för söktext, ange "Karen" och tryck sedan på Tabb-tangenten.</span><span class="sxs-lookup"><span data-stu-id="0e51f-108">In the SearchText field, type 'Karen' and then press the Tab key.</span></span>
-    * <span data-ttu-id="0e51f-109">Den avancerade sökningsdialogen bör dyka upp.</span><span class="sxs-lookup"><span data-stu-id="0e51f-109">The advanced search dialog should pop up.</span></span> <span data-ttu-id="0e51f-110">Om den inte gör det, klicka då på Search till höger om fältet.</span><span class="sxs-lookup"><span data-stu-id="0e51f-110">If it doesn't, click Search to the right of this field.</span></span>  
-3. <span data-ttu-id="0e51f-111">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="0e51f-111">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="0e51f-112">Det bör bara finnas en rad som anger Karen Berg.</span><span class="sxs-lookup"><span data-stu-id="0e51f-112">There should be only one row with Karen Berg showing.</span></span> <span data-ttu-id="0e51f-113">Markera raden genom att klicka på kryssmarkeringskolumnen längst till höger på rutnätet.</span><span class="sxs-lookup"><span data-stu-id="0e51f-113">Select the row by clicking on the checkmark column on the far left of the grid.</span></span>  
-4. <span data-ttu-id="0e51f-114">Klicka på Välj.</span><span class="sxs-lookup"><span data-stu-id="0e51f-114">Click Select.</span></span>
-5. <span data-ttu-id="0e51f-115">Klicka på Ny försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="0e51f-115">Click New sales order.</span></span>
-    * <span data-ttu-id="0e51f-116">Det är god bra idé att notera försäljningsorderns nummer.</span><span class="sxs-lookup"><span data-stu-id="0e51f-116">It's a good idea to note the sales order number.</span></span> <span data-ttu-id="0e51f-117">Du kommer att behöva det senare under denna procedur.</span><span class="sxs-lookup"><span data-stu-id="0e51f-117">You'll need it later in this procedure.</span></span>  
-6. <span data-ttu-id="0e51f-118">I fältet för artikelnummer, ange "88000" och tryck sedan på Tabb-tangenten.</span><span class="sxs-lookup"><span data-stu-id="0e51f-118">In the Item number field, type '88000' and then press the Tab key.</span></span>
-    * <span data-ttu-id="0e51f-119">Detta är en kontinuitetsartikel i USRT-demonstrationsdatan.</span><span class="sxs-lookup"><span data-stu-id="0e51f-119">This is a continuity item in the USRT demo data.</span></span>  
-7. <span data-ttu-id="0e51f-120">Klicka på Slutför.</span><span class="sxs-lookup"><span data-stu-id="0e51f-120">Click Complete.</span></span>
-8. <span data-ttu-id="0e51f-121">I fältet för betalsätt anger du "Visa".</span><span class="sxs-lookup"><span data-stu-id="0e51f-121">In the Payment method field, enter 'Visa'.</span></span>
-9. <span data-ttu-id="0e51f-122">Klicka på Add credit card.</span><span class="sxs-lookup"><span data-stu-id="0e51f-122">Click Add credit card.</span></span>
-    * <span data-ttu-id="0e51f-123">Ange den obligatoriska kreditkortsinformationen på denna sida.</span><span class="sxs-lookup"><span data-stu-id="0e51f-123">Enter the required credit card information on this page.</span></span>  
-10. <span data-ttu-id="0e51f-124">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="0e51f-124">Click OK.</span></span>
-11. <span data-ttu-id="0e51f-125">Expandera avsnittet Betalning.</span><span class="sxs-lookup"><span data-stu-id="0e51f-125">Expand the Payment section.</span></span>
-    * <span data-ttu-id="0e51f-126">Om du vill skicka in en kundcenterorder måste betalningar anges för ordern.</span><span class="sxs-lookup"><span data-stu-id="0e51f-126">To submit a call center order, payments have to be entered for the order.</span></span>  
-12. <span data-ttu-id="0e51f-127">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="0e51f-127">Click OK.</span></span>
-13. <span data-ttu-id="0e51f-128">Klicka på Skicka.</span><span class="sxs-lookup"><span data-stu-id="0e51f-128">Click Submit.</span></span>
-    * <span data-ttu-id="0e51f-129">Du har nu skapat en ny kontinuitetsorder.</span><span class="sxs-lookup"><span data-stu-id="0e51f-129">You're done creating a new continuity order.</span></span> <span data-ttu-id="0e51f-130">Sedan ska du köra två batchprocesser som används för att processa kontinuitetsordrarna.</span><span class="sxs-lookup"><span data-stu-id="0e51f-130">Next, you'll run two batch processes that are used to process the continuity orders.</span></span>  
-14. <span data-ttu-id="0e51f-131">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="0e51f-131">Close the page.</span></span>
-15. <span data-ttu-id="0e51f-132">Gå till Butik och handel > Kontinuitet > Butik och handel.</span><span class="sxs-lookup"><span data-stu-id="0e51f-132">Go to Retail and Commerce > Continuity > Process continuity payments.</span></span>
-16. <span data-ttu-id="0e51f-133">Ange "88000 "och tryck sedan på Tabb-tangenten i kontinuitetsartikelfältet.</span><span class="sxs-lookup"><span data-stu-id="0e51f-133">In the Continuity item field, type '88000' and then press the Tab key.</span></span>
-17. <span data-ttu-id="0e51f-134">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="0e51f-134">Click OK.</span></span>
-18. <span data-ttu-id="0e51f-135">Gå till Butik och handel > Kontinuitet > Skapa underordnade kontinuitetsorder.</span><span class="sxs-lookup"><span data-stu-id="0e51f-135">Go to Retail and Commerce > Continuity > Create continuity child orders.</span></span>
-    * <span data-ttu-id="0e51f-136">Denna process skapar nya försäljningsordrar som baseras på inställningarna för dina kontinuitetsprogram.</span><span class="sxs-lookup"><span data-stu-id="0e51f-136">This process will create new sales orders based on the settings of your continuity programs.</span></span>  
-19. <span data-ttu-id="0e51f-137">Ange "88000 "och tryck sedan på Tabb-tangenten i kontinuitetsartikelfältet.</span><span class="sxs-lookup"><span data-stu-id="0e51f-137">In the Continuity item field, type '88000' and then press the Tab key.</span></span>
-    * <span data-ttu-id="0e51f-138">Artikel "88000" är en kontinuitetsartikel i USRT-demonstrationsdatan.</span><span class="sxs-lookup"><span data-stu-id="0e51f-138">Item '88000' is a continuity item in the USRT demo data.</span></span>  
-20. <span data-ttu-id="0e51f-139">I fältet Sales order anger eller väljer du ett värde.</span><span class="sxs-lookup"><span data-stu-id="0e51f-139">In the Sales order field, enter or select a value.</span></span>
-    * <span data-ttu-id="0e51f-140">Ange försäljningsordernummer som du noterade tidigare i proceduren.</span><span class="sxs-lookup"><span data-stu-id="0e51f-140">Enter the sales order number that you noted earlier in the procedure.</span></span> <span data-ttu-id="0e51f-141">Detta håller bearbetningstiden till ett minimum för denna procedur.</span><span class="sxs-lookup"><span data-stu-id="0e51f-141">This will keep the processing time to a minimal for this procedure.</span></span> <span data-ttu-id="0e51f-142">Fältet för försäljningsorder valfritt ‒ du kan processa alla ordrar för valfritt program.</span><span class="sxs-lookup"><span data-stu-id="0e51f-142">The Sales order field field is optional--you could process all orders for any one program.</span></span>  
-21. <span data-ttu-id="0e51f-143">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="0e51f-143">Click OK.</span></span>
+1. <span data-ttu-id="e7173-107">Gå till Butik och handel > Kunder > Kundtjänst.</span><span class="sxs-lookup"><span data-stu-id="e7173-107">Go to Retail and Commerce > Customers > Customer service.</span></span>
+2. <span data-ttu-id="e7173-108">I det fältet för söktext, ange "Karen" och tryck sedan på Tabb-tangenten.</span><span class="sxs-lookup"><span data-stu-id="e7173-108">In the SearchText field, type 'Karen' and then press the Tab key.</span></span>
+    * <span data-ttu-id="e7173-109">Den avancerade sökningsdialogen bör dyka upp.</span><span class="sxs-lookup"><span data-stu-id="e7173-109">The advanced search dialog should pop up.</span></span> <span data-ttu-id="e7173-110">Om den inte gör det, klicka då på Search till höger om fältet.</span><span class="sxs-lookup"><span data-stu-id="e7173-110">If it doesn't, click Search to the right of this field.</span></span>  
+3. <span data-ttu-id="e7173-111">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="e7173-111">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="e7173-112">Det bör bara finnas en rad som anger Karen Berg.</span><span class="sxs-lookup"><span data-stu-id="e7173-112">There should be only one row with Karen Berg showing.</span></span> <span data-ttu-id="e7173-113">Markera raden genom att klicka på kryssmarkeringskolumnen längst till höger på rutnätet.</span><span class="sxs-lookup"><span data-stu-id="e7173-113">Select the row by clicking on the checkmark column on the far left of the grid.</span></span>  
+4. <span data-ttu-id="e7173-114">Klicka på Välj.</span><span class="sxs-lookup"><span data-stu-id="e7173-114">Click Select.</span></span>
+5. <span data-ttu-id="e7173-115">Klicka på Ny försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="e7173-115">Click New sales order.</span></span>
+    * <span data-ttu-id="e7173-116">Det är god bra idé att notera försäljningsorderns nummer.</span><span class="sxs-lookup"><span data-stu-id="e7173-116">It's a good idea to note the sales order number.</span></span> <span data-ttu-id="e7173-117">Du kommer att behöva det senare under denna procedur.</span><span class="sxs-lookup"><span data-stu-id="e7173-117">You'll need it later in this procedure.</span></span>  
+6. <span data-ttu-id="e7173-118">I fältet för artikelnummer, ange "88000" och tryck sedan på Tabb-tangenten.</span><span class="sxs-lookup"><span data-stu-id="e7173-118">In the Item number field, type '88000' and then press the Tab key.</span></span>
+    * <span data-ttu-id="e7173-119">Detta är en kontinuitetsartikel i USRT-demonstrationsdatan.</span><span class="sxs-lookup"><span data-stu-id="e7173-119">This is a continuity item in the USRT demo data.</span></span>  
+7. <span data-ttu-id="e7173-120">Klicka på Slutför.</span><span class="sxs-lookup"><span data-stu-id="e7173-120">Click Complete.</span></span>
+8. <span data-ttu-id="e7173-121">I fältet för betalsätt anger du "Visa".</span><span class="sxs-lookup"><span data-stu-id="e7173-121">In the Payment method field, enter 'Visa'.</span></span>
+9. <span data-ttu-id="e7173-122">Klicka på Add credit card.</span><span class="sxs-lookup"><span data-stu-id="e7173-122">Click Add credit card.</span></span>
+    * <span data-ttu-id="e7173-123">Ange den obligatoriska kreditkortsinformationen på denna sida.</span><span class="sxs-lookup"><span data-stu-id="e7173-123">Enter the required credit card information on this page.</span></span>  
+10. <span data-ttu-id="e7173-124">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="e7173-124">Click OK.</span></span>
+11. <span data-ttu-id="e7173-125">Expandera avsnittet Betalning.</span><span class="sxs-lookup"><span data-stu-id="e7173-125">Expand the Payment section.</span></span>
+    * <span data-ttu-id="e7173-126">Om du vill skicka in en kundcenterorder måste betalningar anges för ordern.</span><span class="sxs-lookup"><span data-stu-id="e7173-126">To submit a call center order, payments have to be entered for the order.</span></span>  
+12. <span data-ttu-id="e7173-127">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="e7173-127">Click OK.</span></span>
+13. <span data-ttu-id="e7173-128">Klicka på Skicka.</span><span class="sxs-lookup"><span data-stu-id="e7173-128">Click Submit.</span></span>
+    * <span data-ttu-id="e7173-129">Du har nu skapat en ny kontinuitetsorder.</span><span class="sxs-lookup"><span data-stu-id="e7173-129">You're done creating a new continuity order.</span></span> <span data-ttu-id="e7173-130">Sedan ska du köra två batchprocesser som används för att processa kontinuitetsordrarna.</span><span class="sxs-lookup"><span data-stu-id="e7173-130">Next, you'll run two batch processes that are used to process the continuity orders.</span></span>  
+14. <span data-ttu-id="e7173-131">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="e7173-131">Close the page.</span></span>
+15. <span data-ttu-id="e7173-132">Gå till Butik och handel > Kontinuitet > Butik och handel.</span><span class="sxs-lookup"><span data-stu-id="e7173-132">Go to Retail and Commerce > Continuity > Process continuity payments.</span></span>
+16. <span data-ttu-id="e7173-133">Ange "88000 "och tryck sedan på Tabb-tangenten i kontinuitetsartikelfältet.</span><span class="sxs-lookup"><span data-stu-id="e7173-133">In the Continuity item field, type '88000' and then press the Tab key.</span></span>
+17. <span data-ttu-id="e7173-134">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="e7173-134">Click OK.</span></span>
+18. <span data-ttu-id="e7173-135">Gå till Butik och handel > Kontinuitet > Skapa underordnade kontinuitetsorder.</span><span class="sxs-lookup"><span data-stu-id="e7173-135">Go to Retail and Commerce > Continuity > Create continuity child orders.</span></span>
+    * <span data-ttu-id="e7173-136">Denna process skapar nya försäljningsordrar som baseras på inställningarna för dina kontinuitetsprogram.</span><span class="sxs-lookup"><span data-stu-id="e7173-136">This process will create new sales orders based on the settings of your continuity programs.</span></span>  
+19. <span data-ttu-id="e7173-137">Ange "88000 "och tryck sedan på Tabb-tangenten i kontinuitetsartikelfältet.</span><span class="sxs-lookup"><span data-stu-id="e7173-137">In the Continuity item field, type '88000' and then press the Tab key.</span></span>
+    * <span data-ttu-id="e7173-138">Artikel "88000" är en kontinuitetsartikel i USRT-demonstrationsdatan.</span><span class="sxs-lookup"><span data-stu-id="e7173-138">Item '88000' is a continuity item in the USRT demo data.</span></span>  
+20. <span data-ttu-id="e7173-139">I fältet Sales order anger eller väljer du ett värde.</span><span class="sxs-lookup"><span data-stu-id="e7173-139">In the Sales order field, enter or select a value.</span></span>
+    * <span data-ttu-id="e7173-140">Ange försäljningsordernummer som du noterade tidigare i proceduren.</span><span class="sxs-lookup"><span data-stu-id="e7173-140">Enter the sales order number that you noted earlier in the procedure.</span></span> <span data-ttu-id="e7173-141">Detta håller bearbetningstiden till ett minimum för denna procedur.</span><span class="sxs-lookup"><span data-stu-id="e7173-141">This will keep the processing time to a minimal for this procedure.</span></span> <span data-ttu-id="e7173-142">Fältet för försäljningsorder valfritt ‒ du kan processa alla ordrar för valfritt program.</span><span class="sxs-lookup"><span data-stu-id="e7173-142">The Sales order field field is optional--you could process all orders for any one program.</span></span>  
+21. <span data-ttu-id="e7173-143">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="e7173-143">Click OK.</span></span>
 
