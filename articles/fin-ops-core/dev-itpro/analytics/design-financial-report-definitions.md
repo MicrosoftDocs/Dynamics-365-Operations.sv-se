@@ -1,6 +1,6 @@
 ---
 title: Rapportdefinitioner i designer för ekonomiska rapporter
-description: Den här artikeln innehåller information om rapportdefinitioner. En rapportdefinition är en rapportkomponent (eller byggblock) som använder en raddefinition, en kolumndefinition och valfri rapportträddefinition för att skapa en rapport. En rapportdefinition innehåller också alternativ och inställningar för att anpassa en rapport.
+description: Den här artikeln innehåller information om rapportdefinitioner.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 779548dc49be0a92456df791017045803f70bd86
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7d5531112cfb803912849af3af785b2a69a79f3d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683121"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093424"
 ---
 # <a name="report-definitions-in-financial-report-designer"></a>Rapportdefinitioner i designer för ekonomiska rapporter
 
@@ -84,6 +84,3 @@ I följande register finns beskrivningar av flikarna i en rapportdefinition och 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

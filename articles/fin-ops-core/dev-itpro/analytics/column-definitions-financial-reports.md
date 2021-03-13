@@ -1,6 +1,6 @@
 ---
 title: Kolumndefinitioner i ekonomiska rapporter
-description: Den här artikeln innehåller information om kolumndefinitioner. En kolumndefinition är en rapportkomponent eller ett byggblock som definierar innehållet i kolumner i en rapport. Precis som raddefinitioner kan grundläggande kolumndefinitioner användas för flera rapporter.
+description: Den här artikeln innehåller information om kolumndefinitioner. En kolumndefinition är en rapportkomponent som definierar innehållet i kolumner i en rapport.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/10/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 611e5cdfd2289bb2c690a72659e9ba47d6309cfe
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 820604fac96f5c86be3f7206ca88b3eb1fc6c32a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687240"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093119"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolumndefinitioner i ekonomiska rapporter
 
@@ -226,7 +226,7 @@ En användare skapar en rapport för en dynamisk sexmånadersprognos. Användare
 | Kolumnbredd        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Utskriftskontroll       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
-Användaren dubbelklickar på en kolumrubrikcell för att öppna dialogrutan **Kolumnrubrik** och anger där följande information.
+Sedan dubbelklickar användaren på kolumrubrikcellen i kolumn B för att öppna dialogrutan **Kolumnrubrik** och där ange följande information.
 
 | Fält              | Värde                 |
 |--------------------|-----------------------|
@@ -236,7 +236,6 @@ Användaren dubbelklickar på en kolumrubrikcell för att öppna dialogrutan **K
 | Motivering      | Inget val har gjorts. |
 | Fördela från        | B                     |
 | Fördela till          | BASE                  |
-| Budgetrubrik      | Kolumnen BASE+1 till slut  |
 
 Efter att ha angett informationen klickar användaren på **OK**. Sedan dubbelklickar användaren på kolumrubrikcellen i kolumn C för att öppna dialogrutan **Kolumnrubrik** och där ange följande information.
 
@@ -246,8 +245,8 @@ Efter att ha angett informationen klickar användaren på **OK**. Sedan dubbelkl
 | Infoga autotext    | Inget val har gjorts. |
 | Formatera alternativ     | Ruta                   |
 | Motivering      | Inget val har gjorts. |
-| Fördela från        | C                     |
-| Fördela till          | BASE+2                |
+| Fördela från        | BAS+1                |
+| Fördela till          | M                     |
 
 Nu när denna rapport skapas kommer ordet "Aktuell" att skrivas ut över kolumnerna, som innehåller aktuella data och att ordet "Budget" kommer att skrivas ut över kolumner som innehåller budgetprognoser. Dessutom kommer antalet kolumner att justeras varje månad.
 
@@ -599,6 +598,3 @@ Du kan dela beloppet i en kolumn med ett specifik antalet perioder. Till exempel
 [Rapportdefinitioner i designer för ekonomiska rapporter](row-definitions-financial-reporting.md)
 
 [Avancerade formateringsalternativ i ekonomiska rapporter](advanced-formatting-options-financial-reporting.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Utforma konfigurationer för att generera rapporter i Office-format med inbäddade bilder
-description: I detta avsnitt finns information steg för steg om hur du skapar konfigurationer för elektronisk rapportering (ER) som skapar elektroniska dokument i Microsoft Office-format (Excel och Word) och som innehåller inbäddade bilder.
+description: Det här ämnet beskriver hur du skapar konfigurationer som genererar elektroniska dokument i Excel- och Word-format som innehåller inbäddade bilder.
 author: NickSelin
 manager: AnnBe
 ms.date: 01/23/2018
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0145565ba060308162620f29a42499b0bffe6496
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b60ed6b07851c44ceb4b8f313bc65f04b802e646
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684413"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093680"
 ---
 # <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Utforma konfigurationer för att generera rapporter i Office-format med inbäddade bilder
 
@@ -90,6 +90,3 @@ För att slutföra stegen i den här proceduren ska du först slutföra stegen i
  30. Välj Ja i fältet Tillåt att reservationer skapas för inaktiva bankkonton:  
  31. Klicka på Spara.  
  32. Stäng sidan.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

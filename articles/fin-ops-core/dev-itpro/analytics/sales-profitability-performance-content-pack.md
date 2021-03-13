@@ -1,6 +1,6 @@
 ---
 title: Försäljnings- och lönsamhetsresultat Power BI-innehåll
-description: Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet Försäljnings- och lönsamhetsresultat. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
+description: Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet Försäljnings- och lönsamhetsresultat.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b5ad461c86f44d880f57c940f6e3a5cb325f7e08
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7aafaa4c974f6b72e78f870eceb266fd0ef71900
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688245"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093573"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Försäljnings- och lönsamhetsresultat Power BI-innehåll
 
@@ -107,6 +107,3 @@ Följande tabell visar nyckeldimensionerna i försäljningskuben som används so
 | Datum            | Datum                                                |
 
 Som standard visar innehållet data för det aktuella kalenderåret. Du kan dock ändra filtret i datumavsnittet i rapportfilteravsnittet. Du kan också ändra filtret för företaget.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,33 +11,22 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5a883011bbff6d82504497d739c07f1ada9e5f69
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4448185"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104239"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Skapa ett Azure Storage-konto och ett nyckelvalv
 
 [!include [banner](../includes/banner.md)]
-
-
-
-Tilläggstjänsten elektronisk fakturering tar ansvar för lagringen av alla dina affärsdata i de Microsoft Azure-resurser som företaget äger. Du måste skapa två huvudresurser för Azure om du vill säkerställa att tjänsten fungerar korrekt och att alla affärsdata som behövs för och genereras av tilläggstjänsten elektronisk fakturering endast används av tillägget.
-
-- Ett Azure Storage-konto (Blob Storage) för att lagra elektroniska fakturor
-- Ett Azure Key-valv för lagring av certifikat och Uniform Resource Identifier (URI) för lagringskontot
-
-> [!NOTE]
-> En särskild nyckelvalvresurs och kundens Blob Storage måste allokeras specifikt för att användas med tillägget för elektronisk fakturering.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -91,6 +80,3 @@ I det här avsnittet ska du utföra två huvudsteg:
 9. I dialogrutan **Primär** välj primär genom att lägga till **tillägget elektronisk fakturering**.
 10. Välj **Lägg till** och välj sedan **Spara ändringar i nyckelvalv**.
 11. På sidan **Översikt** kopiera värdet **DNS-namn** för nyckelvalvet. Det här värdet kommer att användas under installationen av tjänsten i RCS och kallas *nyckelvalv-URI*.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

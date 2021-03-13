@@ -3,24 +3,23 @@ title: Europa – översikt
 description: Det här avsnittet innehåller länkar till Microsoft Dynamics 365 Finance dokumentationsresurser för Europa.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d63d5682521b1991c387604c2cc219c7f147c8d
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.openlocfilehash: aca45011b39240da6634ce604cff49697f95a299
+ms.sourcegitcommit: 7cdec5469ff0da145ac4e01caf3287d0627ae2dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512221"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5099909"
 ---
 # <a name="europe-overview"></a>Europa – översikt
 
@@ -51,8 +50,8 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
   - [Importera konfiguration av ISO20022-kreditöverföring](tasks/import-iso20022-credit-transfer-configuration.md)
   - [Ställ in företagets bankkonton för ISO20022-kreditöverföringar](tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)
   - [Ställ in företagets bankkonton för ISO20022-autogiron](tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
-  - [Ställ in en betalningsmetod för ISO20022-kreditöverföringar](tasks/set-up-method-payment-iso20022-credit-transfer.md)
-  - [Ställ in en betalningsmetod för ISO20022-autogiro](tasks/setup-method-payment-iso20022-direct-debit.md)
+  - [Ställ in ett betalsätt för ISO20022-kreditöverföringar](tasks/set-up-method-payment-iso20022-credit-transfer.md)
+  - [Ställ in ett betalsätt för ISO20022-autogiro](tasks/setup-method-payment-iso20022-direct-debit.md)
   - [Ställ in kunder och kundbankkonton för ISO20022-autogiron](tasks/set-up-bank-accounts-iso20022-direct-debits.md)
   - [Ställ in leverantörer och leverantörsbankkonton för ISO20022-krediteringsöverföringar](tasks/set-up-vendor-iso20022-credit-transfers.md)
   - [Skapa och exportera leverantörsbetalningar med ett ISO20022-betalningsformat](tasks/create-export-vendor-payments-iso20022-payment-format.md)
@@ -65,6 +64,7 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
 - [Fakturabearbetning](emea-invoice-processing.md)
 - [Utfärda ett EU-mottagningskvitto](tasks/eur-00012-issue-eu-entry-certificate.md)
 - [Standarder för elektronisk fakturering som stöds](emea-oioubl-standards-electronic-invoicing.md)
+- [Tvingad generering av elektroniska fakturor](emea-eur-forced-einvoices.md)
 - [Ursprunglig fakturareferens (Östeuropa)](tasks/ee-00004-original-invoice-reference.md)
 - [Partsökning via moms-ID](tasks/eur-00015-party-search-vat-id.md)
 - [Verktyg för generering av betalningsreferens](tasks/ee-00015-payment-reference-generation-tool.md)
@@ -87,7 +87,7 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
 - Mervärdesskatt (moms)
   - [Skapa moms-ID](tasks/eur-00015-vat-id.md)
   - [Registrering av moms-ID för leverantör](tasks/eur-00015-registration-vendor-vat-id.md)
-  - [Momsvalutakurs - översikt](emea-vat-exchange-rate.md)
+  - [Momsvalutakurs – översikt](emea-vat-exchange-rate.md)
   - [Momsavstämningsrapport](tasks/eur-00018-vat-reconciliation-report.md)
   - [Momsregistrera transaktioner för Östeuropa](emea-vat-register-transactions.md)
   - [Momsrapportering](emea-vat-reporting.md)
@@ -99,6 +99,3 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
 
 - [Översikt över elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Hämta konfigurationer för elektronisk rapportering från Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

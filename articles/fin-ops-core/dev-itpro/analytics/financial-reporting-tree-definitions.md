@@ -1,6 +1,6 @@
 ---
 title: Rapportträddefinitioner i ekonomiska rapporter
-description: Den här artikeln innehåller information om rapportdefinitioner. En rapportträdsdefinition är en rapportkomponent eller ett byggblock som bidrar till att definiera strukturen och hierarkin i din organisation.
+description: Det här avsnittet beskriver definitioner av rapportträd. En definition av rapportträd är en rapportkomponent som definierar en organisations struktur.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/07/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 17f749863af3c37658935d5065cf053d0a165c1e
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682684"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093911"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportträddefinitioner i ekonomiska rapporter
 
@@ -220,6 +220,3 @@ Följande exempel visar möjlig information som används i en rapportträddefini
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

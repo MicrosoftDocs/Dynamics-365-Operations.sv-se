@@ -1,6 +1,6 @@
 ---
 title: Generera elektroniska dokument och uppdatera programdata med hjälp av ER
-description: Du kan utforma format för elektronisk rapportering (ER) som kan användas i programmet för att skapa utgående elektroniska dokument. Du kan också utforma ER-format som tolkar inkommande elektroniska dokument och som använder innehållet i dokumenten för att uppdatera programdata.
+description: Du kan utforma format för elektronisk rapportering (ER) som kan användas i programmet för att skapa utgående elektroniska dokument.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b9e17d67c437d384ab941d28b8d5ce2b0e3738f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4ae3405a882ac37fd9758d8ff0902896562fa06b
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688398"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093883"
 ---
-# <a name="generate-electronic-documents-and-update-application-data-by-using-er"></a>Generera elektroniska dokument och uppdatera programdata med hjälp av ER
+# <a name="generate-electronic-documents-and-update-application-data-by-using-er"></a>Generera elektroniska dokument och uppdatera programdata genom att använda ER
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,6 +40,3 @@ Om du vill veta mer om den här funktionen kan du spela upp ER-uppgiftsguiderna 
 - [Konfiguration av ER-datamodell: Intrastat (modell)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [Mappningskonfiguration för ER-modell: Intrastat (mappning)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER-formatkonfiguration: Intrastat (format)](https://go.microsoft.com/fwlink/?linkid=849038)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

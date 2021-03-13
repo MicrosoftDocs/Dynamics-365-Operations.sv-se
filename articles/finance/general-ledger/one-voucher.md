@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cada62078b71dd304e90951ab0f4c1643beaa48c
+ms.sourcegitcommit: bd4763cc6088e114818e80bb1c27c6521b039743
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448063"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5107730"
 ---
 # <a name="one-voucher"></a>En verifikation
 
@@ -55,25 +54,26 @@ Funktionen för en verifikation orsakar problem vid kvittning, beräkning av mom
 
 Du bokför t.ex. följande verifikation med flera rader.
 
-[![Exempel](./media/example.png)](./media/example.png)
+[![Exempel på en flerradsverifikation](./media/example.png)](./media/example.png)
 
 Sedan skapar du rapporten **Utgifter per leverantör** i arbetsytan **Ekonomiska insikter**. På den här rapporten grupperas utgiftskontosaldon under leverantörsgrupp och sedan leverantör. När du genererar rapporten kan systemet inte avgöra vilka leverantörsgrupper/leverantörer som påförde kostnaden på 250,00. Eftersom transaktionsdetaljer saknas, antar systemet att hela utgiften på 250,00 uppstod av den första leverantören som finns i verifikationen. Därför visas utgiften på 250,00 som inkluderades i saldot för huvudkonto 600120 under den leverantörsgruppen/leverantören. Det är emellertid troligt att den första leverantören i verifikationen inte är rätt leverantör. Därför är rapporten antagligen felaktig.
 
-[![Utgifter](./media/expenses.png)](./media/expenses.png)
+[![Utgifter per leverantörsrapport](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Framtiden för en verifikation
 
-På grund av de problem som har angetts tidigare används inte längre funktionen för en verifikation. Men eftersom det finns funktionsluckor som är beroende av den här funktionen kan funktionen inte föråldras samtidigt. I stället används följande schema:
+På grund av de problem som kan uppstå när En verifikation används, kommer denna funktion slutligen att avskaffas. Eftersom det finns funktionsluckor som är beroende av den här funktionen kan avskaffandet emellertid inte ske överallt samtidigt. I stället används följande schema:
 
-- **Version våren 2018** – som standard inaktiveras funktionen via parametern **tillåta flera transaktioner i en verifikation** på fliken **allmänna** på sidan **allmänna redovisningsparametrar**. Men kan du aktivera funktionen om ditt företag har ett scenario som faller inom en av funktionsluckorna som nämns senare i detta avsnitt.
+- **Version våren 2018** – Denna funktion inaktiverades som standard via parametern **Tillåt flera transaktioner i en verifikation** på fliken **Allmänt** på sidan **Redovisningsparametrar**. Du kan emellertid återaktivera funktionen om din organisation har ett scenario som faller inom en av funktionsluckorna som nämns senare i detta ämne.
 
-    - Om kunder har ett affärsscenario som inte kräver en verifikation ska funktionen inte aktiveras. Microsoft åtgärdar inte ”fel” i områden som identifierades senare i det här avsnittet om den här funktionen används även om det finns en annan lösning.
-    - Sluta använda en verifikation för integrering om du inte behöver funktionen för en av de fungerande luckorna.
+    - Om ditt affärsscenario inte kräver En verifikation rekommenderar vi att du låter funktionen vara inaktiverad. Microsoft åtgärdar inte ”buggar” i områden som identifierades senare i detta ämne om du använder den fastän en annan lösning finns.
+    - Vi rekommenderar att du slutar använda En verifikation för integrering, såvida du inte behöver funktionen för en av de dokumenterade funktionsluckorna.
 
-- **Senare versioner** – Alla funktionella luckorna fylls. **När funktionella luckor har fyllt och nya funktioner levereras tar det minst ett år innan funktionen för en verifikation inaktiveras permanent**, eftersom kunder och oberoende programförsäljare (ISV) måste ha tillräckligt med tid att reagera på de nya funktionerna. De kan t.ex. behöva uppdatera sina affärsprocesser, enheter och integration.
+- **Senare versioner** – Ett flertal affärsbehov kan uppfyllas genom att använda En verifikation. Microsoft måste se till att alla identifierade affärsbehov fortfarande kan uppfyllas i systemet efter att funktionen har avskaffats. Därför måste nya funktioner troligen läggas till för att fylla i funktionella luckor. Microsoft kan inte skapa en specifik lösning eftersom varje funktionslucka är unik och måste utvärderas utifrån verksamhetens krav. Vissa funktionella luckor kommer troligen att ersättas med funktioner som hjälper till att uppfylla särskilda affärsbehov. Andra luckor kan emellertid fyllas genom att man fortsätter att tillåta bokföring i en journal - som när En verifikation används - men förbättrar systemet så att detta kan spåra mer detaljerat efter behov.
 
-> [!IMPORTANT]
-> Alternativet **Bara ett verifikationsnummer** har **inte** tagits bort från journalnamnsinställningen. Det här alternativet stöds fortfarande när verifikationen endast innehåller typer av redovisningskonton. Kunder måste vara försiktiga när de använder den här inställningen eftersom verifikationen inte bokförs om de använder alternativet **Bara ett verifikationsnummer** utan att ange mer än en kund, leverantör, bank, anläggningstillgångar eller projekt. Dessutom kan kunder fortfarande ange en blandning av typer av redovisningskontotyper för underordnad bok, såsom betalning inom en enda verifikation med kontotyperna för **Leverantör**/**Bank**.
+När alla funktionella luckor har fyllts i meddelar Microsoft att funktionen kommer att avskaffas. Avskaffandet kommer dock inte att gälla under minst ett år efter det beskedet. Även om Microsoft inte kan ge en uppskattning av när funktionen En verifikation kommer att avskaffas, kommer det troligen att infalla minst två år innan avskrivningen sker. Microsofts policy är att ha minst 12 månaders marginal mellan meddelande av funktionsavskaffning och det faktiska avskaffandet, detta så att kunder och oberoende programvaruleverantörer har tid att reagera på ändringen. En organisation kanske t. ex. behöver uppdatera sina affärsprocesser, entiteter och integrationer.
+
+Avskaffandet av En verifikation är en viktig ändring som kommuniceras allmänt. Som en del av kommunikationen uppdaterar Microsoft detta avsnitt, lägger upp ett bloggpost på Microsoft Dynamics 365 Finance-bloggen, uppdaterar avsnittet "Borttagna eller avskaffade funktioner", kommunicerar ändringen via lämpligt Microsoft-konto, och så vidare.
 
 ## <a name="why-use-one-voucher"></a>Varför använda en verifikation?
 
@@ -84,7 +84,7 @@ Utifrån samtal med våra kunder har Microsoft samlat följande lista med scenar
 Följande scenarier kan endast uppnås genom att använda funktionen för en verifikation. Om din organisation har något av dessa scenarier, måste du aktivera flera transaktioner som ska registreras på en verifikation genom att ändra inställningen av parametern **tillåta flera transaktioner i en verifikation** på sidan **allmänna redovisningsparametrar**. Dessa funktionella luckor fylls med andra funktioner i senare versioner.
 
 > [!Note]
-> [I följande scenarier måste fältet **Tillåt flera transaktioner inom en verifikation** anges till Ja på snabbfliken **Allmänt** på sidan **Redovisningsparametrar**.]
+> [I följande scenarier måste fältet **Tillåt flera transaktioner inom en verifikation** anges till Ja på snabbfliken **Allmänt** på sidan **Allmänna huvudboksparametrar**.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Bokför kund- eller leverantörsbetalningar i sammanfattningsformulär till ett bankkonto
 
@@ -94,7 +94,7 @@ Sammanfattning av leverantörsbetalningar stöds endast genom en verifikation. V
 
 **Scenario** En organisation sätter in kundbetalningar, eller banken sätter in kundbetalningar på organisationens vägnar och insättningen visas som en klumpsumma på bankkontot.
 
-Sammanfattning av kundbetalningar stöds vanligtvis genom funktionen för insättning. Om du använder ”bryggning” på betalningsmetoden stöds det här scenariot endast via en verifikation. Kundbetalningarna anges på samma sätt som beskrivs för sammanfattning av leverantörsbetalning.
+Sammanfattning av kundbetalningar stöds vanligtvis genom funktionen för insättning. Om du använder ”bryggning” på betalsättet stöds det här scenariot endast via en verifikation. Kundbetalningarna anges på samma sätt som beskrivs för sammanfattning av leverantörsbetalning.
 
 ### <a name="mechanism-to-group-transactions-from-a-business-event"></a>Metod för att gruppera transaktioner från en affärshändelse
 
@@ -138,7 +138,7 @@ Följande scenarier kan utföras på annat sätt och bör inte använda funktion
 
 En organisation sätter in kundbetalningar, eller banken sätter in kundbetalningar på organisationens vägnar och insättningen visas som en klumpsumma på bankkontot.
 
-Sammanfattning av kundbetalningar stöds genom insättningsfunktionen när bryggning inte används på betalningsmetoden.
+Sammanfattning av kundbetalningar stöds genom insättningsfunktionen när bryggning inte används på betalsättet.
 
 ### <a name="netting"></a>Netting
 
@@ -156,7 +156,7 @@ Organisationer vill ofta bokföra i redovisningen i sammanfattningsform för att
 
 ### <a name="settle-multiple-unposted-payments-to-the-same-invoice"></a>Kvitta flera ej bokförda betalningar till samma faktura
 
-Det här scenariot finns vanligtvis i organisationer där användare kan använda flera betalningsmetoder för inköp. I det här scenariot måste organisationen kunna registrera flera ej bokförda betalningar och kvitta dem mot den valda kundfakturan.
+Det här scenariot finns vanligtvis i organisationer där användare kan använda flera betalsätt för inköp. I det här scenariot måste organisationen kunna registrera flera ej bokförda betalningar och kvitta dem mot den valda kundfakturan.
 
 En ny funktion lades till i Microsoft Dynamics 365 for Operations version 1611 (november 2016) som tillåter flera ej bokförda betalningar att kvittas mot en enda faktura. +Flera kundbetalningar måste inte längre tas upp i en enda verifikation.
 
@@ -186,6 +186,3 @@ Om en korrigering måste göras för redovisningskonto för Kundreskontra eller 
 ### <a name="the-system-allows-it"></a>”Det är möjligt i systemet”
 
 Organisationer använder ofta funktionen för en verifikation för att systemet låter dem använda det, utan att förstå följderna.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

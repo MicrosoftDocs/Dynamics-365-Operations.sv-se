@@ -1,6 +1,6 @@
 ---
 title: ER mappar datamodeller till utvalda datakällor
-description: I följande steg beskrivs hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan mappa en datamodell för elektronisk rapportering (ER) till valda datakällor i Microsoft Dynamics 365 Finance.
+description: I det här avsnittet beskrivs hur du mappar en elektronisk rapporteringsmodell (ER) till valda Microsoft Dynamics 365 Finance-datakällor.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d2d09370b0e08897799d40c41c20c21b58e885dc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3e2ba94c9ec3ecc33f0c697d9f18f763749e4ba1
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684317"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093758"
 ---
 # <a name="er-map-data-model-to-selected-data-sources"></a>ER mappar datamodeller till utvalda datakällor
 
@@ -146,6 +146,3 @@ I följande steg beskrivs hur en användare i rollen Systemadministratör eller 
 5. Välj den slutförda versionen av den aktuella konfigurationen.
     * Observera att den skapade konfigurationen sparas som slutförd version 1.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

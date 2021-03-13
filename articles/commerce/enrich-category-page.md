@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ca31ec7d2eee7d2b0c863506338341a870ff07ee
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 96fbd7c2ddfcd43e38e9572a60873d5f5930c94c
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415832"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097239"
 ---
 # <a name="enrich-a-category-landing-page"></a>Utöka en kategorilandningssida
 
@@ -66,5 +65,4 @@ Om du vill utöka en kategorisida gör du följande.
 
 [Kontrollera tillgängligheten för sidinnehåll](verify-accessibility.md)
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Skapa dynamiska näthandelssidor baserade på URL-parametrar](create-dynamic-pages.md)

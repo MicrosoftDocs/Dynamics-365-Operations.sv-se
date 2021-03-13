@@ -1,6 +1,6 @@
 ---
 title: Skapa en konfiguration för att generera dokument i Excel-format
-description: Det här avsnittet innehåller information om hur du utformar ett elektroniskt rapporteringsformat (ER) för att fylla i en Excel-mall och sedan generera utgående dokument i Excelformat.
+description: Det här avsnittet beskriver hur du utformar ett elektroniskt rapporteringsformat (ER) för att fylla i en Excel-mall och sedan generera utgående dokument i Excelformat.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/02/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5733e40c67f9c97b04f126f7c3cfea9d4f8f5b5
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c8d6a18741d57829d1929fb8362dc4ba8e03a1bd
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686548"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094039"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Skapa en konfiguration för att generera dokument i Excel-format
 
@@ -189,6 +189,3 @@ När ett utgående dokument i ett Microsoft Excel arbetsboksformat genereras, ka
 [Bädda in bilder och former i dokument som du skapar med ER](electronic-reporting-embed-images-shapes.md)
 
 [Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

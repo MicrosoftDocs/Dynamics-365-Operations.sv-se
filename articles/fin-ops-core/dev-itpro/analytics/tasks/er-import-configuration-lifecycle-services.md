@@ -1,6 +1,6 @@
 ---
 title: Importera en konfiguration från Lifecycle Services
-description: Detta ämne förklarar hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan importera en ny version av en konfiguration för elektronisk rapportering (ER) från Microsoft Dynamics Lifecycle Services (LCS).
+description: I det här avsnittet beskrivs hur du importerar en ny version av konfiguration av elektronisk rapportering (ER) från Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
 ms.date: 09/14/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c43cdce8d073f04a3158c8beb13a5376e669a4c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 602886b0dd729b8ec52940f42bd1c393dac8acda
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684461"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093705"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>Importera en konfiguration från Lifecycle Services
 
@@ -103,6 +103,3 @@ I det här exemplet ska du välja önskad version av ER-konfigurationen och impo
     I det här exemplet väljer du den version av konfigurationen som har status **Delad**.
 
     Observera att den enda delade versionen 1 i den valda konfigurationen av datamodell nu också är tillgänglig.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

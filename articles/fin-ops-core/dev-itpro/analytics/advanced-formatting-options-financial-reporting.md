@@ -1,7 +1,7 @@
 ---
 title: Avancerade formateringsalternativ i ekonomiska rapporter
-description: När du skapar en rapport inom ekonomisk rapportering blir ytterligare formateringsfunktioner tillgängliga, inklusive filter för dimensioner, begränsningar för kolumner och rapportenheter, icke-utskriftsrader samt IF/THEN/ELSE-utdrag i beräkningar.
-author: ryansandness
+description: Det här ämnet beskriver avancerade formateringsfunktioner, inklusive filter, begränsningar, rader som inte skrivs ut och villkorsutdrag i beräkningar.
+author: panolte
 manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3508099dfa3c6671da8dddc9061f737a97e825ce
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f0417ac1007fc94431aeb11d2464ee699e3f3441
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683173"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093172"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avancerade formateringsalternativ i ekonomiska rapporter
 
@@ -310,6 +310,3 @@ Ett **IF/THEN/ELSE**-utdrag gör att en beräkning är beroende av resultaten fr
 Du kan utforma rapporter med hjälp av dimensionsvärden som innehåller ett et-tecken (&).
 
 I fältet **Länk till ekonomiska dimensioner** kan du ange ett värde som **t.ex. "P&L"**. Om du inkluderar enkla citat tecken (' ') på båda sidor av dimensionsvärdet anger att du använder ett litteralt värde, t.ex. et-tecknet (&).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

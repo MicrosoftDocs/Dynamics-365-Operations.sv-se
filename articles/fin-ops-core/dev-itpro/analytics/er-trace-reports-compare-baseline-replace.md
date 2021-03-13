@@ -1,6 +1,6 @@
 ---
 title: Förbättringar i spårning av resultaten från genererade ER-rapporter och jämföra dem med baslinjevärden
-description: Det här avsnittet innehåller information om hur funktionen ER-baslinje har förbättrats i Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (juni 2019).
+description: Det här ämnet beskriver förbättringar av ER-baslinjefunktionen i Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (juni 2019).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 55e821b27f80383d8a8dc7a2d46f87e17c554078
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c00a5d9e2804f6ec0f6cb4c544029a1235ee58d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682857"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094014"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Förbättringar i spårning av resultaten från genererade ER-rapporter och jämföra dem med baslinjevärden
 
@@ -59,7 +59,7 @@ Om du vill slutföra stegen i det här exemplet måste du först slutföra stege
 
 Baslinjen har lagts till för det valda formatet **Format för att lära ER-baslinjer** men baslinjereglerna har ännu inte lagts till för denna baslinje.
 
-![Sidan Baslinjer med elektroniskt rapporteringsformat](media/GER-BaselineSample-AddBaseline2.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
+![Sidan Baslinjer med elektroniskt rapporteringsformat, inga regler ännu](media/GER-BaselineSample-AddBaseline2.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
 
 ### <a name="make-a-new-baseline-rule"></a>Skapa en ny baslinjeregel
 
@@ -72,7 +72,7 @@ Baslinjen har lagts till för det valda formatet **Format för att lära ER-basl
 7. Välj **OK**.
 8. Välj **baslinjer**.
 
-    ![Sidan Baslinjer med elektroniskt rapporteringsformat](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
+    ![Sidan Baslinjer med elektroniskt rapporteringsformat, baslinjer valda](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
 
     Den genererade utgående filen har automatiskt kopplats till baslinjen för det körda ER-formatet. Baslinjeregeln läggs automatiskt till i denna baslinje och innehåller också referensen till den bifogade filen.
 
@@ -130,7 +130,7 @@ Om du vill slutföra stegen i det här exemplet måste du först slutföra stege
 3. I listan över baslinjer väljer du den baslinje som har konfigurerats för formatet **Format för att lära sig ER-baslinjer**.
 4. På snabbfliken **baslinjer** väljer du **ta bort** för att ta bort den baslinjeregel som du konfigurerade tidigare.
 
-![Sidan Baslinjer med elektroniskt rapporteringsformat](media/GER-BaselineSample-AddBaseline3.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
+![Sidan Baslinjer med elektroniskt rapporteringsformat, borttagen](media/GER-BaselineSample-AddBaseline3.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
 
 ### <a name="define-replacements-for-bindings-of-designed-er-format"></a>Definiera ersättningar för bindningar av utformade ER-format
 
@@ -138,7 +138,7 @@ Om du vill slutföra stegen i det här exemplet måste du först slutföra stege
 2. I trädet formatkomponenter expanderar du **Utdata**, expanderar **Utdata\\dokument** och markerar sedan kryssrutan **Utdata\\dokument\\ProcessingDateTime**.
 3. Välj **OK**.
 
-![Sidan Baslinjer med elektroniskt rapporteringsformat](media/GER-BaselineSample-AddBaseline4.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
+![Sidan Baslinjer med elektroniskt rapporteringsformat, komponenter](media/GER-BaselineSample-AddBaseline4.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
 
 Den valda ER-formatkomponenten har lagts till i listan över komponenter på snabbfliken **ersättningar**. När bas-ER-formatet körs i felsökningsläge ersätts formatets bindning för varje komponent med bindningen som visas i kolumnen **bindning**. Om du vill ändra standardbindningen för en komponent som visas på snabbfliken **ersättningar** väljer du **redigera**.
 
@@ -207,6 +207,3 @@ Om du vill importera baslinjeinställningar från en XML-fil som är lagrad på 
 
 - [Spåra genererade rapportresultat och jämför dem med baslinjevärden](er-trace-reports-compare-baseline.md)
 - [Uppgiftsinspelarresurser](../user-interface/task-recorder.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

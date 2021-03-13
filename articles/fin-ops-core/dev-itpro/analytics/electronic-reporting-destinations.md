@@ -1,9 +1,9 @@
 ---
 title: Destinationer för elektronisk rapportering (ER)
-description: I det här avsnittet finns information om hantering av mål för elektroniska rapportering (ER), vilka typer av destinationer som stöds samt säkerhetsaspekter.
+description: I det här avsnittet finns information om hantering av mål för elektroniska rapportering, vilka typer av destinationer som stöds samt säkerhetsaspekter.
 author: nselin
 manager: AnnBe
-ms.date: 04/27/2020
+ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e4da9e09fe9e2c76426a117b6c4d83f5bc33851f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687169"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097291"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer för elektronisk rapportering (ER)
 
@@ -62,7 +62,7 @@ I dialogrutan **Intrastat-rapport** på snabbfliken **Kör i bakgrunden**, om du
 Om du ställer in alternativet **Batchbearbetning** som **Ja** körs ett ER-format i [batchläge](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview). Lämpligt batchjobb skapas enligt de parametrar som du anger på fliken **Kör i bakgrunden** i dialogrutan **ER-parametrar**.
 
 > [!NOTE]
-> Jobbeskrivningen initieras för att informera dig om körning av en ER-formatmappning. Den innehåller även namn på körd ER-komponent.
+> Jobbeskrivningen informerar dig om körning av en ER-formatmappning. Den innehåller även namn på den ER-komponent som körs.
 
 [![Köra ett ER-format](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
@@ -96,7 +96,9 @@ Du kan till exempel använda den här funktionen för att konfigurera filmål f�
 
 [![Konfigurera flera mål för ett enda formatelement](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
-## <a name="destination-types"></a>målstyper
+När du kör ett ER-format körs alltid alla destinationer som konfigurerats för komponenter i formatet. Dessutom i Finance **version 10.0.17 och senare** har R-destinationer förbättrats och du kan nu konfigurera olika destinationsuppsättningar för ett enda ER-format. Denna konfiguration markerar varje uppsättning som konfigurerad för en viss användaråtgärd. ER API har [utökats](er-apis-app10-0-17.md) så att en åtgärd kan ges till användaren genom att köra ett ER-format. Den åtgärdskod som tillhandahålls överförs till ER-destinationer. Du kan köra olika destinationer i ett ER-format, beroende på vilken åtgärdskod som anges. Mer information finns i [Konfigurera åtgärdsberoende ER-destinationer](er-action-dependent-destinations.md).
+
+## <a name="destination-types"></a>Destinationstyper
 
 Följande mål stöds för närvarande för ER-format. Du kan inaktivera eller aktivera alla typer samtidigt. På det här sättet kan du antingen inte göra någonting eller skicka komponenten till alla konfigurerade mål.
 
@@ -154,7 +156,7 @@ Om du avmarkerar kryssrutan **Sluta behandlingen vid misslyckande** för kompone
 
 ## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Konvertera utdata till PDF
 
-Du kan använda konverteringsalternativet för PDF om du vill konvertera konvertera i Microsoft Office-format (Excel/Word) till PDF-format.
+Du kan använda konverteringsalternativet för PDF om du vill konvertera konvertera i Microsoft Office-format (Excel eller Word) till PDF-format.
 
 ### <a name="make-pdf-conversion-available"></a>Gör PDF-konverteringen tillgänglig
 
@@ -164,21 +166,20 @@ För att göra PDF-konverteringsalternativet tillgängligt i den aktuella Financ
 
 ### <a name="applicability"></a>Tillämplighet
 
-Alternativet PDF-konvertering kan bara aktiveras för filkomponenter som används för att generera utdata i Microsoft Office Excel eller Word-format **(Excel-fil**). När det här alternativet är aktiverat konverteras utdata som har genererats i Office-format automatiskt till PDF-format.
+Alternativet PDF-konvertering kan bara aktiveras för filkomponenter som används för att generera utdata i Office (Excel eller Word) format (**Excel-fil**). När det här alternativet är aktiverat konverteras utdata som har genererats i Office-format automatiskt till PDF-format.
 
 ### <a name="limitations"></a>Begränsningar
 
 > [!NOTE]
 > Den här funktionen är en förhandsgranskningsfunktion och används för användningsvillkoren som [Extra användningsvillkor för Microsoft Dynamics 365 förhandsgranskningar](https://go.microsoft.com/fwlink/?linkid=2105274).
 
-> [!NOTE]
-> Alternativet PDF-konvertering är bara tillgängligt för molndistributioner.
->
-> Den producerade PDF-filen är begränsad till ett maximalt antal 300 sidor.
->
-> I Microsoft Dynamics 365 Finance version 10.0.9 (april 2020) stöds endast liggande sidorientering i PDF-dokument som har skapats från en Excel-utdatafil. I Dynamics 365 Finance version 10.0.10 (maj 2020) kan du [ange sidorientering](#SelectPdfPageOrientation) för PDF-dokument som har skapats från ett Excel-format när du konfigurerar ett ER-mål.
->
-> Endast de vanligaste systemteckensnitten i Windows-operativsystemet används vid konvertering av utdata som inte innehåller inbäddade teckensnitt.
+Alternativet PDF-konvertering är bara tillgängligt för molndistributioner.
+
+Det producerade PDF-dokumentet är begränsat till en maximal längd på 300 sidor.
+
+I Finance **version 10.0.9** stöds endast liggande sidorientering i PDF-dokumentet som har skapats från en Excel-utdatafil. I Finance **version 10.0.10 (maj 2020) och senare**, kan du [ange sidorientering](#SelectPdfPageOrientation) för PDF-dokument som har skapats från ett Excel-format när du konfigurerar ett ER-mål.
+
+Endast de vanligaste systemteckensnitten i Windows-operativsystemet används för att konvertera utdata som inte innehåller inbäddade teckensnitt.
 
 ### <a name="use-the-pdf-conversion-option"></a>Använd PDF-konverteringsalternativet
 
@@ -188,16 +189,16 @@ Om du vill aktivera PDF-konvertering för ett filmål markerar du kryssrutan **k
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Välj en sidorientering för PDF-konvertering</a>
 
-Om du skapar en ER-konfiguration i Excel-format och vill konvertera den till PDF-format kan du ange sidorienteringen för PDF-filen. När du markerar kryssrutan **Konvertera till PDF** för att aktivera PDF-konvertering för en fildestination som producerar en utdatafil i Excel-format, den **sidorientering** blir tillänglig **PDF-inställningar för konverteringar**. Välj önskad **sidorientering** i fältet prioriterad orientering.
+Om du skapar en ER-konfiguration i Excel-format och vill konvertera den till PDF-format kan du ange sidorienteringen för PDF-dokument. När du markerar kryssrutan **Konvertera till PDF** för att aktivera PDF-konvertering för en fildestination som producerar en utdatafil i Excel-format, den **sidorientering** blir tillänglig **PDF-inställningar för konverteringar**. Välj önskad **sidorientering** i fältet prioriterad orientering.
 
 [![Välj en sidorientering för PDF-konvertering](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
-> Om du vill välja PDF-sidans orientering måste du installera Microsoft Dynamics 365 Finance version 10.0.10 (maj 2020) eller senare.
+> Om du vill välja PDF-sidans orientering måste du installera Finance version 10.0.10 eller senare.
 >
 > Den valda sidorienteringen tillämpas på alla ER-konfigurationer som genereras i Excel-format och sedan konverteras till PDF-format.
 >
-> Om en konverterad PDF-fil skapas från en ER-konfiguration i Word-format hämtas PDF-filens sidorientering från Word-dokumentet.
+> Om en ER-konfiguration i Word-format konverteras till PDF-format, tas sidorientering för PDF-dokument från Word-dokumentet.
 
 ## <a name="security-considerations"></a>Säkerhetsaspekter
 
@@ -225,7 +226,7 @@ Nr. Standardlagringen för Microsoft Azure Blob som är definierad och används 
 
 ### <a name="what-is-the-purpose-of-the-file-destination-in-the-destination-settings-what-does-that-setting-do"></a>Vad är syftet med filmålen i målsinställningarna? Vad innebär inställningen?
 
-**Fil**-målen används för att styra en dialogruta. Om du aktiverar den här målen eller om ingen mål har definierats för en konfiguration, ser du dialogrutan Öppna eller Spara efter det att en utdatafil har skapats.
+Destinationen **Fil** används för att kontrollera en dialogruta i webbläsaren när du kör ett ER-format i interaktivt läge. Om du aktiverar den här målen eller om ingen mål har definierats för en konfiguration, ser du dialogrutan Öppna eller Spara i din webbläsare efter det att en utdatafil har skapats.
 
 ### <a name="can-you-give-an-example-of-the-formula-that-refers-to-a-vendor-account-that-i-can-send-email-to"></a>Kan du ge ett exempel på en formel som refererar till ett leverantörskonto som jag kan skicka e-postmeddelande till?
 
@@ -239,5 +240,4 @@ Formatet måste först vara tillgängligt i ER konfigurationer. Om denna föruts
 
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[Konfigurera åtgärdsberoende ER-destinationer](er-action-dependent-destinations.md)

@@ -1,6 +1,6 @@
 ---
 title: Få åtkomst till programmets metadata med hjälp av anslutna program
-description: Stegen i det här avsnittet beskriver hur en RCS-användare (Regulatory Configuration Service) kan utforma en ny ER-modellmappning genom att använda metadata i Finance and Operations.
+description: Stegen i det här avsnittet beskriver hur en användare av Regulatory Configuration Service kan utforma en ny modellmappning för elektronisk rapportering genom att använda metadata.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/29/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 751ac21dc056373e1cd89a5149bf38789134e0cc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 457d5760fb704b7a93ce16c081b7c5e6d0ff19c1
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682151"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093340"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Få åtkomst till programmets metadata med hjälp av anslutna program
 
@@ -113,6 +113,3 @@ I följande steg förklaras hur en användare av Regulatory configuration servic
 11. Stäng sidan. 
 
 När du behöver utvärdera den här modellmappningen med hjälp av metadata i ett annat versionsprogram, registrerar du ett annat anslutet program, tilldelar det till den här modellmappningen och validerar det mot nya metadata.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

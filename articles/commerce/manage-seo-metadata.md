@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c7cf9e76ffb30ee5c8bba318b2644e67c757bff0
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415814"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097425"
 ---
 # <a name="manage-seo-metadata"></a>Hantera SEO-metadata
 
@@ -96,5 +95,4 @@ Om du vill ändra metadata, följ dessa steg.
 
 [Kontrollera tillgängligheten för sidinnehåll](verify-accessibility.md)
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Skapa dynamiska näthandelssidor baserade på URL-parametrar](create-dynamic-pages.md)

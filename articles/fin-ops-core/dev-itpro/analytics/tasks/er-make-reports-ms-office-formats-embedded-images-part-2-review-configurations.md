@@ -1,6 +1,6 @@
 ---
 title: Gransa konfigurationer för att generera rapporter i Office-format med inbäddade bilder
-description: 'För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden "ER Skapa rapporter i MS Office-format med inbäddade bilder (Del 1: Ställ in parametrar)".'
+description: Det här ämnet beskriver hur du skapar konfigurationer för rapportering för att skapa elektroniska dokument som innehåller inbäddade bilder. (Del 1 - Ställa in parametrar).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c41ff1ba99411b97ea2b5d9f31bdee7c7701315
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3eee6300350dd96c34f2eab44704d1895e6171ff
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684365"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093655"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Gransa konfigurationer för att generera rapporter i Office-format med inbäddade bilder
 
@@ -91,6 +91,3 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
     * Vissa etiketter som visas i det förtryckta checkformuläret inkluderas i rapporten när den skapas i testsyfte. Dessa etiketter skrivs dock inte ut vid den verkliga utskriften eftersom det förtryckta formuläret redan innehåller dem.  
 15. Stäng sidan.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

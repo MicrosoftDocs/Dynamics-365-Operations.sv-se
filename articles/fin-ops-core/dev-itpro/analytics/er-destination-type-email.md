@@ -1,6 +1,6 @@
 ---
 title: ER-målstyp för e-post
-description: Det här ämnet beskriver hur du konfigurerar en e-postdestination för varje MAPP- eller FIL-komponent i ett ER-format (elektronisk rapportering) som har konfigurerats för att generera utgående dokument.
+description: I det här avsnittet beskrivs hur du konfigurerar en e-post-destination för varje MAPP- eller FIL-komponent i ett elektroniskt rapporteringsformat (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 12/03/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c6242ecb44a206aacc0e1b1b3c4f588eadd18882
-ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
+ms.openlocfilehash: e2e0da1c724269e0956be2f402b34ff376ed1990
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4690136"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094114"
 ---
 # <a name="email-er-destination-type"></a>ER-målstyp för e-post
 
@@ -65,8 +65,6 @@ Om du väljer **Utskriftshanterings-e-post** som e-postadresstyp kan du ange fas
 - I fältet **E-postkälla** väljer du **Ingen**.
 - I fältet **Ytterligare e-postadresser, åtskilda av ";"** anger du de fasta e-postadresserna.
 
-![Konfigurera en fast e-postadress](./media/er_destinations-emailfixedaddress.png)
-
 Du kan också få e-postadresser från kontaktinformationen för den part som du genererar ett utgående dokument för. För att använda e-postadresser som inte är fast väljer du, i fältet **E-postkälla**, [rollen](../../fin-ops/organization-administration/overview-global-address-book.md#party-roles) för parten för fildestinationen. Följande roller stöds:
 
 - Kund
@@ -92,8 +90,6 @@ På sidan **Formeldesigner** anger du i fältet **Formel** en dokumentspecifik r
 
 Om kontonumren för den konfigurerade rollen är unika för hela instansen av Microsoft Dynamics 365 Finance kan fältet **Företag för e-postkälla** i dialogrutan **E-post till** vara tomt.
 
-![Tomt fält Företag för e-postkälla](./media/er_destinations-emaildefineaddresssourceformula.png)
-
 Alternativt kan du ha en situation där olika parter i den [globala adressboken](../../fin-ops/organization-administration/overview-global-address-book.md) har registrerats i olika företag ([juridiska personer](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) på ett sådant sätt att alla använder samma kontonummer för den konfigurerade rollen. I det här fallet är kontonumren för den konfigurerade rollen inte unika för hela ekonomiinstansen. Du kan därför inte uttryckligen välja en part genom bara ange ett kontonummer. Du måste också ange företaget som parten har registrerats i omfattningen för att fylla den konfigurerade rollen. Välj du knappen **Bind** (kedjesymbolen) bredvid fältet **Företag för e-postkälla** i dialogrutan **E-post till** för att öppna [formeldesignern](general-electronic-reporting-formula-designer.md). Du kan sedan använda den här sidan för att konfigurera en formel som, under körning, returnerar koden för det företag som den önskade källan kan hittas i omfattningen för.
 
 > [!TIP]
@@ -109,8 +105,6 @@ Om du vill ange vilken typ av e-postadresser som ska användas vid körning väl
 
 > [!NOTE]
 > Om syften väljs i fältet **Syfte** och alternativet **Primär kontakt** samtidigt är inställt på **Ja** kommer all e-post som uppfyller minst ett konfigurerat kriterium att användas vid körning.
-
-![Konfigurera ett attributkonto för e-postkälla](./media/er_destinations-emaildefineaddresssourceattributes.png)
 
 ### <a name="configuration-email"></a>Konfigurations-e-postmeddelande
 
@@ -145,6 +139,3 @@ Följande illustration visar processen, som beskrivs i det här ämnet, för gru
 - [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

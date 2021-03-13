@@ -1,6 +1,6 @@
 ---
 title: Power BI-innehåll för kostnadsredovisningsanalys
-description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadsredovisning. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
+description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadsredovisning.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/02/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c9a4741c1b09b8e68a9fe95d6f4effa328615d5
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683881"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093396"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-innehåll för kostnadsredovisningsanalys
 
@@ -123,6 +123,3 @@ Följande huvuddimensioner används som filter för att dela upp de sammanlagda 
 | Räkenskapskalendrar                   | Kalender, kalenderbeskrivning                                                                                       |
 | Räkenskapsår                       | Kalenderår                                                                                                        |
 | Räkenskapsperioder                     | Kalenderårsperioder                                                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

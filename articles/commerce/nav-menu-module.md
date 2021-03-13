@@ -3,14 +3,13 @@ title: Modulen navigeringsmeny
 description: Det här avsnittet handlar om modul för navigeringsmenyn och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,22 +17,21 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b0e8168ca9ec9ca68011650a73cc09983deca645
-ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
+ms.openlocfilehash: 65f8b6128b140f3fa776659d8920dfc5e095213f
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4415968"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097400"
 ---
 # <a name="navigation-menu-module"></a>Modulen navigeringsmeny
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Det här avsnittet handlar om modul för navigeringsmenyn och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Översikt
-
-Det primära syftet med moduler för navigeringsmenyn är att låta användarna söka efter produkter och webbplatssidor i enlighet med den hierarki för kanaler som definierats i Dynamics 365 Commerce administration. Objekt som konfigureras i en modul för navigeringsmeny visas som navigering för webbplatshuvud. Moduler för navigeringsmenyn stöder även statiska menyalternativ som länkar till andra sidor på en näthandelsplats.
+Det primära syftet med moduler för navigeringsmenyn är att låta användarna söka efter produkter och webbplatssidor i enlighet med den hierarki för kanaler som definierats i Dynamics 365 Commerce administration. Objekt som konfigureras i en modul för navigeringsmeny visas som navigering för webbplatshuvud. Moduler för navigeringsmenyn stöder även statiska menyalternativ som länkar till andra sidor på en näthandelssajt.
 
 Du kan lägga till modulen navigeringsmeny på en sidhuvudmodul på en sida. I det Fabrikam-temat visar navigeringsmenyn två nivåer som standard. I det Starter-temat visar navigeringsmenyn tre nivåer som standard. Om du vill ändra antalet nivåer måste du ha ett visningstillägg i temat.
 
@@ -46,7 +44,9 @@ Följande illustration visar ett exempel på en navigeringsmeny för Fabrikam-we
 |---------------------------|-----------------------|-------------|
 | Källa                  | **Detaljhandel**, **Manuell redigering**, **Återförsäljning och manuell redigering** | Med värdet **Detaljhandel** kan kanalnavigeringshierarkin från Commerce-administration visas på navigeringsmenyn. Med hjälp av värdet **Manuellt redigering** kan statiska menyalternativ granskas. Värdet **Återförsäljning och manuell redigering** tillåter en blandning av båda. |
 | Visa kategoribilder | **Sant** eller **falskt**    | När den här egenskapen är aktiverad visas kategoribilder på navigeringsmenyn som har definierats i Commerce-administration för varje kategori. Lades till i Commerce version 10.0.14. |
-| Aktivera navigeringsmeny med flera nivåer | **Sant** eller **falskt** | När den här egenskapen är aktiverad kan navigeringsmenyn visa flera nivåer i navigeringsvyn. Den här funktionen är endast i Dynamics 365 Commerce version 10.0.15. |
+| Visa erbjudanden | **Sant** eller **falskt** | När den här egenskapen har aktiverats kan erbjudanden konfigureras med hjälp av bilder, länkar och text. Den här egenskapen har lagts till i version 10.0.17 av Commerce. |
+| Lägg till erbjudanden | Text, bild eller länk | När egenskapen **Visa kampanjer** har aktiverats kan du lägga till text, en bild eller en länk som erbjudandeinnehåll i navigeringsmenyn. |
+| Aktivera navigeringsmeny med flera nivåer | **Sant** eller **falskt** | När den här egenskapen är aktiverad kan navigeringsmenyn visa flera nivåer i navigeringsvyn. Den här funktionen är tillgänglig i Commerce version 10.0.15. |
 | Antal nivåer | heltal | Den här egenskapen definierar antalet nivåer som ska visas om egenskapen **Aktivera navigering i flera nivåer** är inställd på **True**. |
 | Statiskt menyalternativ| Matris med värden| Statiska menyalternativ som associerar ett menyalternativnamn med en länk till en statisk webbplatssida. Du kan skapa menyalternativ under andra menyalternativ. Statiska menyer visas som standard på rotnivå och kommer att läggas till i kanalens navigeringshierarki om den finns. |
 | Visa rotmenyn | **Sant** eller **falskt** | När den här egenskapen är aktiverad kan navigeringsmenyn definieras under en anpassad rot (t.ex. **handla nu**). Den här funktionen är endast i Dynamics 365 Commerce version 10.0.15. |
@@ -72,6 +72,3 @@ Mer information om hur du lägger till en modul för navigeringsmeny i en sidhuv
 [Cookie-kompatibilitet](cookie-compliance.md)
 
 [Modul för sidhuvud](author-header-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Kompensation Power BI-innehåll
-description: Det här avsnittet beskriver kompensation Power BI-innehållet. Det förklarar hur du öppnar rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
+description: Det här avsnittet beskriver kompensation Power BI-innehållet. Här förklaras hur du kommer åt rapporterna och ger information om den använda datamodellen.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 64b4f27b4a1fa3762169a18746c6b0933bddf3ca
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b625ea7dcbb6bd8b80cbcdcc544c59b9839fc19d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687192"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093066"
 ---
 # <a name="compensation-power-bi-content"></a>Kompensation Power BI-innehåll
 
@@ -71,6 +71,3 @@ Följande data används för att fylla i rapporterna i **Kompensation** Power BI
 | Namn på medarbetare            | Förnamn, efternamn och fullständiga namn                                                                       | Aktuell medarbetare, uppsagd, medarbetare, medarbetarutveckling |
 | Medarbetartitel           | Titel och tjänsteålder                                                                                   | Aktuell medarbetare, uppsagd, medarbetare, medarbetarutveckling |
 | Medarbetarutveckling           | Arbetare över tid, antal anställda, företag och befattning                                                        | Företag, kompensation, geografisk plats, medarbetarens namn, rapporter till, förskjutningskalender, datum, medarbetarens titel, demografi, anställning, jobb, förmåner |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

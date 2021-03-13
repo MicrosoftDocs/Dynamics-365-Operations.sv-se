@@ -1,9 +1,9 @@
 ---
 title: 'Tillägg för elektronisk fakturering: översikt'
-description: Det här avsnittet ger information om tillägget för elektroniska fakturor i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management.
+description: Det här avsnittet ger information om tillägget Elektroniska fakturor i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ffd48e173b66cc6d2571e666d5452a5eff05176c
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 2c35b810151349384f105d9ac1d93e1885031450
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4448184"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104218"
 ---
 # <a name="electronic-invoicing-add-on-overview"></a>Tillägg för elektronisk fakturering: översikt
 
@@ -31,7 +30,7 @@ ms.locfileid: "4448184"
 
 Tillägg för elektronisk fakturering för Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management är en skalbar tjänst för flera innehavare som möjliggör konfigurerbar bearbetning av elektroniska fakturadokument och konfigurerbart dokumentutbyte. Bearbetnings- och integrationsreglerna är helt konfigurerbara och logiken körs utanför Finance och Supply Chain Management. Tjänsten är huvudsakligen riktad mot bearbetning av e-faktura i scenarier med företag till myndigheter, men den kan konfigureras för andra ändamål.
 
-Med hjälp av tillägget för elektronisk fakturering kan du uppnå följande mål:
+Med hjälp av tillägget Elektronisk fakturering kan du uppnå följande mål:
 
 - Snabb och enkel antagande av lands-/regionspecifika krav
 - Standardiserade implementeringar av lösningen för tillägg för elektronisk fakturering
@@ -45,9 +44,9 @@ Med hjälp av tillägget för elektronisk fakturering kan du uppnå följande m�
 
 Om du vill använda tillägget elektronisk fakturering måste du installera det från ditt projekt i Microsoft Dynamics Lifecycle Services (LCS). Följ sedan inställningsproceduren för att aktivera integrationen med Finance eller Supply Chain Management. För mer information, se [Kom igång med tillägget elektronisk fakturering](e-invoicing-get-started.md).
 
-## <a name="availability"></a>Tillgänglighet
+## <a name="service-availability"></a><a name="availability"></a>Tjänstetillgänglighet
 
-Inledningsvis är tillägget för elektronisk fakturering tillgängligt för utvalda kunder genom ett förhandsgranskningsprogram. Senare kommer förhandsgranskningen att öppnas för fler kunder. Slutligen blir tjänsten normalt tillgänglig. Eftersom funktioner som åtgärdar lands-/regionspecifika krav kan begränsas till olika faser av versionen, bör du alltid kontrollera den mest aktuella dokumentationen som belyser omfattningen och omfattningen av de lands-/regionspecifika lösningar som stöds.
+För närvarande är tillägget Elektronisk fakturering tillgängligt för kunder via förhandsgranskningsprogrammet, och i nästa fas blir tjänsten allmänt tillgänglig. Eftersom funktioner som åtgärdar lands-/regionspecifika krav kan begränsas till olika faser av versionen, bör du alltid kontrollera den mest aktuella dokumentationen som belyser omfattningen och omfattningen av de lands-/regionspecifika lösningar som stöds.
 
 Tillägg för elektronisk fakturering distribueras i följande Azure-geografiska områden:
 
@@ -76,7 +75,7 @@ Tillägg för elektronisk fakturering kan användas i situationer där du måste
     - Inbyggd, lätt att utöka och konfigurerbar integration med ytterligare innehåll för flera länder
 
     > [!NOTE]
-    > För närvarande stöds ett begränsat antal direktöverföringar. Mer information finns i avsnittet [Tillgänglighet](#availability) tidigare i det här avsnittet. Supporten kommer att utökas i framtiden.
+    > För närvarande stöds ett begränsat antal direktöverföringar. Mer information finns i avsnittet [Tjänstetillgänglighet](#availability) tidigare i det här avsnittet. Supporten kommer att utökas i framtiden.
 
 - Hantering av svar från webbtjänster, inklusive hantering av konfigurerbara undantagsmeddelanden
 - Stöd för elektroniska signaturer (till exempel genom användning av XMLDSig-signeringsalgoritmen)
@@ -84,7 +83,7 @@ Tillägg för elektronisk fakturering kan användas i situationer där du måste
 
 ## <a name="architecture-and-data-flow"></a>Arkitektur och dataflöde
 
-När tillägget för elektronisk fakturering installeras från LCS och de obligatoriska inställningarna har slutförts i alla program som krävs, upprättas en säker anslutning. Tjänsten finns för närvarande i datacenter i USA och i Europa. Därför kan det bero på att tjänstplatsen skiljer sig från platsen för den relaterade Finance eller Supply Chain Management-instansen. När du har slutfört inställningen av tillägget för elektronisk fakturering och aktiverat integrationen, skickas huvuddata och transaktionsdata som hör till ett visst dokument till tillägget för elektronisk fakturering när en elektronisk faktura skickas.
+När tillägget Elektronisk fakturering installeras från LCS och de obligatoriska inställningarna har slutförts i alla program som krävs, upprättas en säker anslutning. Tjänsten finns för närvarande i datacenter i USA och i Europa. Därför kan det bero på att tjänstplatsen skiljer sig från platsen för den relaterade Finance eller Supply Chain Management-instansen. När du har slutfört inställningen av tillägget Elektronisk fakturering och aktiverat integrationen, skickas huvuddata och transaktionsdata som hör till ett visst dokument till tillägget Elektronisk fakturering när en elektronisk faktura skickas.
 
 > [!NOTE]
 > Om den elektroniska fakturan eller något annat dokument innehåller personuppgifter kontrollerar du att din användning av den här funktionen stämmer överens med allmän dataskyddsförordning (GDPR) och andra regler som rör överföring av personuppgifter.
@@ -101,18 +100,12 @@ När tillägget för elektronisk fakturering installeras från LCS och de obliga
 
 Följande illustration visar hur data flödar till och från tillägg för elektronisk fakturering.
 
-![Dataflöde för tillägget för elektronisk fakturering](media/e-invoicing-service-data-flow-diagram-overview.png)
+![Dataflöde för tillägget Elektronisk fakturering](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
-Om du aktiverar och använder elektronisk fakturering kan det krävas att begränsade data skickas, vilket inkluderar organisationens momsregistrerings-ID. Detta kommer att översändas till tredje parts byråer som har tillstånd av skattemyndigheten för att skicka elektroniska fakturor i fördefinierade format som krävs för integrering med den offentliga sektorns webbtjänster. Data som importeras från dessa externa system till denna Dynamics 365 onlinetjänst omfattas av vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=512132). Mer information finns i sektionerna om sekretessmeddelanden i landsspecifik funktionsdokumentation.
+Om du aktiverar och använder tillägget Elektronisk fakturering kan det krävas att begränsade data skickas, vilket inkluderar organisationens momsregistrerings-ID. Detta kommer att översändas till tredje parts byråer som har tillstånd av skattemyndigheten för att skicka elektroniska fakturor i fördefinierade format som krävs för integrering med den offentliga sektorns webbtjänster. Data som importeras från dessa externa system till denna Dynamics 365 onlinetjänst omfattas av vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=512132). Mer information finns i sektionerna om sekretessmeddelanden i landsspecifik funktionsdokumentation.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-
-- [Kom igång med tillägget elektronisk fakturering](e-invoicing-get-started.md)
-- [Kom igång med tillägget elektronisk fakturering för Brasilien](e-invoicing-bra-get-started.md)
-- [Kom igång med tillägget elektronisk fakturering för Mexiko](e-invoicing-mex-get-started.md)
-- [Kom igång med tillägget elektronisk fakturering för Italien](e-invoicing-ita-get-started.md)
-- [Ställ in tillägg för elektroniska fakturor](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Tjänsteadministration](e-invoicing-service-administration.md)
+- [Konfigurera elektroniska fakturor i RCS](e-invoicing-configuration-rcs.md)
+- [Utfärda elektroniska fakturor i Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)

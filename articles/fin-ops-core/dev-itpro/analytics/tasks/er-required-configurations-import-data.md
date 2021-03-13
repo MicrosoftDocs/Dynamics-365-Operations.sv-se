@@ -1,6 +1,6 @@
 ---
 title: ER Skapa erforderliga konfigurationer för att importera data från en extern fil
-description: I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan designa konfigurationer för Elektronisk rapportering (ER) så att dessa importerar data till programmet Microsoft Dynamics 365 Finance, från en extern fil.
+description: Det här avsnittet beskriver hur du designar ER-konfigurationer för elektronisk rapportering som importerar data till Microsoft Dynamics 365 Finance-appen från en extern fil.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0492fae6cfad505fc9fee5cd20f483c9c6d2a061
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684292"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093733"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Skapa erforderliga konfigurationer för att importera data från en extern fil
 
@@ -254,6 +254,3 @@ Kör denna formatmappning i testsyfte. Använd filen 1099entries.xml som du tidi
 27. Stäng sidan.
 28. Stäng sidan.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

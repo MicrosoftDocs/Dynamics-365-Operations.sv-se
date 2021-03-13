@@ -1,6 +1,6 @@
 ---
 title: Skapa rapporter i Office-format som omfattar inbäddade bilder
-description: I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa konfigurationer för Elektronisk rapportering (ER) för att skapa elektroniska dokument i MS Office-format (Excel och Word) som innehåller inbäddade bilder.
+description: Det här ämnet beskriver hur du skapar konfigurationer för elektronisk rapportering (ER) för att skapa elektroniska dokument i Excel och Word som innehåller inbäddade bilder.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78dcdbd83dc717104d437662f7f451c9ecb714cf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7e15162251e5d6fa91c5a938fd846ef5b5c8cd7f
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684389"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093833"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Skapa rapporter i Office-format som omfattar inbäddade bilder
 
@@ -119,6 +119,3 @@ I det här exemplet ska du använda skapade ER-konfigurationer för exempelföre
 23. Klicka på OK.
     * Granska den skapade utleveransen. Utdata har genererats som ett Word-dokument med inbäddade bilder som innehåller företagslogotyp, underskrift av en behörig person och den markerade texten i vattenstämpeln.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

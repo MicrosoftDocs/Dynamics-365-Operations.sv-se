@@ -1,6 +1,6 @@
 ---
 title: ER-målstyp för skrivare
-description: Det här ämnet förklarar hur du konfigurerar en skrivardestination för varje MAPP- eller FIL-komponent i ett ER-format (elektronisk rapportering) som har konfigurerats för att generera utgående dokument i antingen PDF eller Microsoft Office-format (Excel\Word).
+description: I det här avsnittet beskrivs hur du konfigurerar en skrivare för varje MAPP- eller FIL-komponent i ett elektroniskt rapporteringsformat (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 03/17/2020
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b7a279dcb30e7681ae654ab17d898a5364391d57
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c6e298f62ec69f349eb713d66313e535c7e01881
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679616"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094089"
 ---
-# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Utskriftsmål
+# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Skrivardestination
 
 [!include [banner](../includes/banner.md)]
 
@@ -70,6 +70,3 @@ För att använda en specifik [sidorientering](electronic-reporting-destinations
 
 - [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

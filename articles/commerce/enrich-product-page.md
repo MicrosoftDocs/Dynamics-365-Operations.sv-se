@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 12508a80c440894ec6e2073b5e550846480e6c45
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fcb8eda188a6796282a7a800b87a68dfef9d7d62
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415756"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097348"
 ---
 # <a name="enrich-a-product-page"></a>Utöka en produktsida
 
@@ -74,5 +73,4 @@ Om du vill utöka en produktsida följer du stegen nedan.
 
 [Kontrollera tillgängligheten för sidinnehåll](verify-accessibility.md)
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Skapa dynamiska näthandelssidor baserade på URL-parametrar](create-dynamic-pages.md)

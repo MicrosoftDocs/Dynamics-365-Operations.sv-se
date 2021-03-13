@@ -1,6 +1,6 @@
 ---
 title: ER Konfigurera format för inventering och summering (Del 1 - Skapa format)
-description: I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) att utföra inventering och summering baserat på data tillhörande redan skapad textutmatning.
+description: I det här avsnittet beskrivs hur du konfigurerar ett elektroniskt rapporteringsformat för inventering och summering baserat på data i det redan genererade textutdata. (Del 1)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1742582057cc912d8e6f90eb14e9e4cdcd193608
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7a3639b5ac28f8a571642e983906d658dabf05b1
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684725"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093032"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-1---create-format"></a>ER Konfigurera format för inventering och summering (Del 1 - Skapa format)
 
@@ -56,6 +56,3 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 8. Expandera "Intrastat model" i trädet.
 9. Välj "Intrastat modell\Intrastat (DE)" i trädet.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
