@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 23c9062dcc13951792306c955b54cae6f656fec5
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 2bcdea4a2a8f4386b274077cd1e95398fb6fac37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646089"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009382"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Förbättra prediktionsmodellen (förhandsversion)
 
@@ -42,19 +41,19 @@ Om din organisation bara behöver två resultat ändrar du tröskelvärdena **Se
 
 ## <a name="select-fields"></a>Välj fält
 
-När du väljer fält som ska ingå i modellen måste du vara medveten om att listan innehåller alla tillgängliga fält i Common Data Service-entiteten som har mappats till data i Azure-datasjön. Vissa av dessa fält bör **inte** väljas. De fält som inte ska väljas finns i en av tre kategorier:
+När du väljer fält som ska ingå i modellen måste du vara medveten om att listan innehåller alla tillgängliga fält i Microsoft Dataverse-registret som har mappats till datan i Azure-datasjön. Vissa av dessa fält bör **inte** väljas. De fält som inte ska väljas finns i en av tre kategorier:
 
-- Fältet är obligatoriskt för Common Data Service-entiteten, men det finns inga säkerhetskopierade data för det i datasjön.
+- Fältet är obligatoriskt för Dataverse-registret, men det finns inga säkerhetskopierade data för det i datasjön.
 - Fältet är ett ID och passar därför inte för maskininlärningsfunktionen.
 - Fältet visar information som inte är tillgänglig under förutsägelse.
 
 I följande avsnitt visas de fält som är tillgängliga för entiteterna faktura och kund, och där listas de fält som **inte** ska väljas för träning. Kategorin som anges för vart och ett av fälten refererar till kategorierna i föregående lista.
  
-### <a name="invoice-common-data-model-entity"></a>Common Data Model-entiteten Faktura
+### <a name="invoice-dataverse-table"></a>Fakturaregister för Dataverse
 
-I följande illustrationer visar de fält som är tillgängliga för fakturaentiteten.
+I följande illustrationer visar de fält som är tillgängliga för fakturaregistret.
 
-[![Tillgängliga fält för entiteten faktura](./media/available-fields.png)](./media/available-fields.png)
+[![Tillgängliga fält för fakturaregistret](./media/available-fields.png)](./media/available-fields.png)
 
 Följande fält ska inte väljas för träning:
 
@@ -65,11 +64,11 @@ Följande fält ska inte väljas för träning:
 - **Källpost** (kategori 2)
 - **Källtabell** (kategori 2)
 
-### <a name="customer-common-data-model-entity"></a>Common Data Model-entiteten Kund
+### <a name="customer-dataverse-table"></a>Kundregister för Dataverse
 
-I följande illustrationer visar de fält som är tillgängliga för kundentiteten.
+I följande illustrationer visas de fält som är tillgängliga för kundregistret.
 
-[![Tillgängliga fält för entiteten kund](./media/related-entities.png)](./media/related-entities.png)
+[![Tillgängliga fält för kundregistret](./media/related-entities.png)](./media/related-entities.png)
 
 Följande fält ska inte väljas för träning:
 
@@ -83,6 +82,3 @@ Filtren stöder för närvarande inte scenariot för förutsägelser av kundbeta
 
 #### <a name="privacy-notice"></a>Sekretesspolicy
 Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

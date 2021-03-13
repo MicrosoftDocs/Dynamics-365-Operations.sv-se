@@ -11,28 +11,27 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 86be6d4cc0af3f2fd92523d4ecd3825f2383fc48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 91df786ed2298e21e7a3018b915c9bd5458efc32
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448002"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009253"
 ---
 # <a name="online-financial-consolidations"></a>Online ekonomisk konsolidering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver online ekonomiska konsolideringar i redovisning. Innan du läser det här avsnittet bör du läsa avsnittet [finansiell konsolidering och valutaomräkning - översikt](financial-consolidations-currency-translation.md).
+Det här avsnittet beskriver online ekonomiska konsolideringar i redovisning. Innan du läser det här avsnittet bör du läsa avsnittet [finansiell konsolidering och valutaomräkning – översikt](financial-consolidations-currency-translation.md).
 
-När du har slutfört inställningarna kan du ange detaljerna för konsolideringen på sidan **Konsolidera [Online]**. När du är klar kan du klicka på **OK** eller **Batch** för att bearbeta konsolideringen.
+När du har slutfört inställningarna kan du ange detaljerna för konsolideringen på sidan **konsolidera [Online]**. När du är klar kan du klicka på **OK** eller **Batch** för att bearbeta konsolideringen.
 
-## <a name="criteria"></a>Villkor
-På fliken **Kriterier** på sidan **Konsolidera [Online]** kan du definiera kontona, perioder och vilken typ av data som ska konsolideras.
+## <a name="criteria"></a>Kriterier
+I fliken **kriterier** på sidan **konsolidera [Online]** kan du definiera kontona, perioder och vilken typ av data som ska konsolideras.
 
 ![Fliken Kriterier](./media/criteria-consolidate-online.png "Fliken Kriterier")
 
@@ -87,7 +86,7 @@ På fliken **valutaomräkning** definierar du juridisk person, konto och valutak
 
 - **Konsolideringsdatum** – datumet för konsolideringen ska användas för att få valutakursen. Kursen motsvarar punkttariff eller månadsslutets kurs. En förhandsgranskning av kursen visas, men du kan inte redigera den.
 - **Transaktionsdatum** – datumet för varje transaktion som ska användas för att välja en valutakurs. Det här alternativet används oftast för anläggningstillgångar och kallas ofta historisk kurs. Du kan inte förhandsgranska kursen eftersom det kommer att vara många kurser för olika transaktioner i kontointervallet.
-- **Användardefinierad kurs** – När du har valt detta alternativ kan du ange valutakursen som du vill använda. Det här alternativet kan vara användbart för genomsnittliga växelkurser, eller om du konsoliderar mot en fast valutakurs.
+- **Användardefinierad kurs** – När du har valt detta alternativ kan du ange valutakursen som du vill använda. Det här alternativet kan vara användbart för genomsnittliga valutakurser, eller om du konsoliderar mot en fast valutakurs.
 
 ![Fliken Valutaregistrering](./media/currency-translation-cons-online.png "Fliken Valutaregistrering")
 
@@ -96,6 +95,3 @@ På fliken **valutaomräkning** definierar du juridisk person, konto och valutak
 Mer information om konsolidering och valutaöversättning finns i det överordnade avsnittet i det här avsnittet [Översikt över ekonomisk konsolidering och valutaomräkning](./financial-consolidations-currency-translation.md).
 
 För information om scenarier där du kan skapa konsoliderade bokslut, se [skapa konsoliderade bokslut](./generating-consolidated-financial-statements.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

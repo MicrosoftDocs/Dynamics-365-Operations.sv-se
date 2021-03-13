@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,20 +17,20 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 030640ba8907ae52c198ac96ad2c243b533d8c53
-ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
+ms.openlocfilehash: 2a33897d01dd98d446c2fb49e417abd9db9f403a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "4415972"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010034"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Anslut ett experiment och redigera varianter
 
 I det här avsnittet beskrivs hur du ansluter ditt experiment i Commerce och ändrar varianterna så att de överensstämmer med din hypotes. 
 
-I bilden nedan visas alla steg som ingår när du ställer in och kör ett experiment på en näthandelswebbplats i Dynamics 365 Commerce. Ytterligare steg beskrivs i olika avsnitt.
+I bilden nedan visas alla steg som ingår när du ställer in och kör ett experiment på en näthandelssajt i Dynamics 365 Commerce. Ytterligare steg beskrivs i olika avsnitt.
 
-[ ![Experimentets användarresa - anslut och redigera](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
+[ ![Experimentets användarresa – anslut och redigera](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
 När du har [ställt in experimentet](experimentation-setup.md) i en tjänst från tredje part, ska du ansluta experimentet i Dynamics 365 Commerce och redigera experimentets varianter.
 
@@ -95,6 +94,3 @@ Om du har definierat omfattningen av experimentet som **hel** i guiden **Anslut 
 
 ## <a name="next-step"></a>Gå vidare
 [Förhandsgranska och publicera ett experiment](experimentation-preview-publish.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

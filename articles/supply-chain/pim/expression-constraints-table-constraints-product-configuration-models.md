@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc07d5b915e0b878cc7b2ef1d5f3253de8776608
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437866"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007724"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Uttryckbegränsningar och tabellbegränsningar i produktkonfigurationsmodeller.
 
@@ -110,7 +109,7 @@ I följande tabeller visas operatorerna och infixnotationerna som du kan använd
 <tr class="odd">
 <td>Medför</td>
 <td>Detta gäller om det första villkoret är falskt, det andra villkoret är sant eller båda.</td>
-<td>Implies[a, b], infix: a -: b</td>
+<td>Medför[a, b], infix: a -: b</td>
 <td><ul>
 <li><strong>Operatör:</strong> Implies[x != 0, y &gt;= 0]</li>
 <li><strong>Infixnotation:</strong> x != 0 -: y &gt;= 0</li>
@@ -135,7 +134,7 @@ I följande tabeller visas operatorerna och infixnotationerna som du kan använd
 </ul></td>
 </tr>
 <tr class="even">
-<td>Plus</td>
+<td>Plustecken</td>
 <td>Detta summerar dess villkor. Om antalet villkor är 0 (noll), ger det <strong>0</strong>.</td>
 <td>Plus[args], infix: a + b + ... + z</td>
 <td><ul>
@@ -155,7 +154,7 @@ I följande tabeller visas operatorerna och infixnotationerna som du kan använd
 <tr class="even">
 <td>Abs</td>
 <td>Detta tar absolutvärdet av dess villkor. Detta måste ha exakt ett villkor.</td>
-<td>Abs[expr]</td>
+<td>Abs [expr]</td>
 <td><strong>Operatör:</strong> Abs[x]</td>
 </tr>
 <tr class="odd">
@@ -169,7 +168,7 @@ I följande tabeller visas operatorerna och infixnotationerna som du kan använd
 </tr>
 <tr class="even">
 <td>Effekt</td>
-<td>Detta tar en exponential. Detta gäller exponentiering från höger till vänster. (Med andra ord är det&#39;rättighetsförenande.) Därför är, <strong>Power[a, b, c]</strong> det samma som <strong>Power[a, Power[b, c]]</strong>. <strong>Effekt</strong> kan bara användas med en positiv konstant som exponent.</td>
+<td>Detta tar en exponential. Detta gäller exponentiering från höger till vänster. (Med andra ord är det rättighetsförenande) Därför är <strong>Power[a, b, c] </strong>det samma som <strong>Power[a, Power[b, c]].</strong> <strong>Effekt</strong> kan bara användas med en positiv konstant som exponent.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operatör:</strong> Power[x, 2] == y</li>
@@ -177,13 +176,13 @@ I följande tabeller visas operatorerna och infixnotationerna som du kan använd
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Max</td>
+<td>Max.</td>
 <td>Detta ger det största villkoret. Om antalet villkor är 0 (noll), ger det <strong>Oändlighet</strong>.</td>
-<td>Max[args]</td>
+<td>Maximal [args]</td>
 <td><strong>Operatör:</strong> Max[x, y, 2] == z</td>
 </tr>
 <tr class="even">
-<td>Min</td>
+<td>Min.</td>
 <td>Detta ger det minsta villkoret. Om antalet villkor är 0 (noll), ger det <strong>Oändlighet</strong>.</td>
 <td>Min[args]</td>
 <td><strong>Operatör:</strong> Min[x, y, 2] == z</td>
@@ -254,6 +253,3 @@ Du kan inte använda reserverade nyckelord som solvernamn för attribut, kompone
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

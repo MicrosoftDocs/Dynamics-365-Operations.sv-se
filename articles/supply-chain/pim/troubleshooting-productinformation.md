@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-11-04
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 87b04998889b86a79fd8dabde422147c5494b003
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: 4c505ccfd1998acd40dbae715c7fa572e315af2e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516881"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007526"
 ---
 # <a name="troubleshoot-product-information"></a>Felsöka produktinformation
 
@@ -152,6 +151,3 @@ Om en produktvarianten redan har frisläppts i ett företag A och du försöker 
 Knappen **Nytt** på sidan **frisläppta produktvarianter** skapar varianten och släpper den i företagets sammanhang. Om varianten redan har skapats kan du inte använda knappen **Ny** att frisläppa den i ett annat företag.
 
 Du löser problemet genom att öppna sidan **produktmall** och välja **frisläppt produkt** för att frisläppa den befintliga varianten i det önskade företaget.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

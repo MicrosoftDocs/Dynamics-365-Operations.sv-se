@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 234458f865e37a2d962aee8ab218b9521847081d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 7b65c23fc7ac04fc30c0001bee9541a475026018
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438091"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007501"
 ---
 # <a name="troubleshoot-purchase-orders"></a>Felsök inköpsorder
 
@@ -132,7 +131,7 @@ Du kan bara utöka den period som leverantören är godkänd för. Följande reg
 
 I det här scenariot som beskrivs i ärendebeskrivningen, där en post har giltighetsdatumet *01/11/2018* och ett utgångsdatum för *aldrig*, kan du importera en ny post som har ett giltighetsdatum på *01/10/2018* och ett utgångsdatum för *aldrig*. Du kan dock inte förkorta perioden så att giltighetsdatumet uppdateras till *01/12/2018* via datahantering. Du måste göra ändringen genom användargränssnittet.
 
-## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-nameisnt-synced"></a>När jag har ändrat leveransadressen i ett inköpsorderhuvud synkroniseras inte leveransnamnet.
+## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-name-isnt-synced"></a>När jag har ändrat leveransadressen i ett inköpsorderhuvud synkroniseras inte leveransnamnet.
 
 ### <a name="issue-description"></a>Problembeskrivning
 
@@ -145,6 +144,3 @@ Detta beteende är av design. Den valda adressen måste klassificeras som en lev
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>Kan jag hitta användaren som annullerade en inköpsorder?
 
 Den här informationen spåras bara om inköpsordern är föremål för ändringshantering. Om du använder ändringshantering kan du se vem som skickade ändringen (annulleringen) och vem som godkände den.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

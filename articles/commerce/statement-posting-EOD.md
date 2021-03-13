@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 68abef8f28c04a4f6f88e638c8abf944d06a32c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e76a5ad741dca5831b609a5b991aa70e3753c621
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415903"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009653"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Förbättringar av funktionen för bokföring av utdrag
 
@@ -59,8 +58,8 @@ Som del av förbättringarna av funktionerna för bokföring av utdrag har tre n
 Dessutom har följande parametrar införts på snabbfliken **gruppbearbetning** på fliken **bokföring** på sidan för **Commerce-parametrar**: 
 
 - **Maximalt antal parallella utdragsbokföringar** – det här fältet definierar antalet batchjobb som ska användas för att bokföra flera utdrag. 
-- **Max. tråd för orderbearbetning per utdrag** - det här fältet representerar det högsta antalet trådar som används av batch-jobbet utdragsbokföring för att skapa och fakturera försäljningsorder för ett enda utdrag. Det totala antalet trådar som kommer att användas av utdragsbokföringsprocessen beräknas utifrån värdet i den här parametern multiplicerat med värdet i parametern **Maximalt antal parallella utdragsbokföringar**. Om du anger värdet för den här parametern för högt kan prestandan i bokföringsprocessen för utdraget påverkas negativt.
-- **Max. transaktionsrader inkluderade i sammansättning** - det här fältet definierar antalet transaktionsrader som ska inkluderas i en samlad transaktion innan en ny skapas. Aggregerade transaktioner skapas utifrån olika sammansättningskriterier, t.ex. kund, affärsdatum eller ekonomiska dimensioner. Det är viktigt att notera att raderna från en enda transaktion inte delas mellan olika sammansättningstransaktioner. Detta innebär att det finns en risk för att antalet rader i en sammansättningstransaktion är något högre eller lägre baserat på faktorer som antal specifika produkter.
+- **Max. tråd för orderbearbetning per utdrag** – det här fältet representerar det högsta antalet trådar som används av batch-jobbet utdragsbokföring för att skapa och fakturera försäljningsorder för ett enda utdrag. Det totala antalet trådar som kommer att användas av utdragsbokföringsprocessen beräknas utifrån värdet i den här parametern multiplicerat med värdet i parametern **Maximalt antal parallella utdragsbokföringar**. Om du anger värdet för den här parametern för högt kan prestandan i bokföringsprocessen för utdraget påverkas negativt.
+- **Max. transaktionsrader inkluderade i sammansättning** – det här fältet definierar antalet transaktionsrader som ska inkluderas i en samlad transaktion innan en ny skapas. Aggregerade transaktioner skapas utifrån olika sammansättningskriterier, t.ex. kund, affärsdatum eller ekonomiska dimensioner. Det är viktigt att notera att raderna från en enda transaktion inte delas mellan olika sammansättningstransaktioner. Detta innebär att det finns en risk för att antalet rader i en sammansättningstransaktion är något högre eller lägre baserat på faktorer som antal specifika produkter.
 - **Maximalt antal trådar för validering av butikstransaktioner** – det här fältet definierar antalet trådar som ska användas för att validera transaktioner. Validering av transaktioner är ett obligatoriskt steg som måste inträffa innan transaktionerna kan hämtas till kontoutdrag. Du måste definiera en **Presentkortsprodukt** på snabbfliken **presentkort** på fliken **bokföring** på sidan **Commerce-parametrar**. Detta måste definieras även om inga presentkort används i organisationen.
 
 > [!NOTE]
@@ -174,6 +173,3 @@ Andra interna förbättringar som användarna kan se att de har gjorts till funk
 
     - Öppna **Retail och Commerce** \> **Administrationsinställning** \> **Parametrar** \> **Commerce-parametrar**. Klicka sedan på fliken **bokföring** på snabbfliken **lageruppdatering** på fältet **Detaljnivå** och välj **sammanfattning**.
     - Öppna **Retail och Commerce** \> **Administrationsinställning** \> **Parametrar** \> **Commerce-parametrar**. Klicka sedan på fliken **bokföring** på snabbfliken **Sammanslagning** och ställ in alternativet **Verifikationstransaktioner** till **Ja**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

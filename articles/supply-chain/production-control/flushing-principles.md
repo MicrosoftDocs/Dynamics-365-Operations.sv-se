@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: JmgShopSupervisorReleaseOrders
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9f7546b70ddef30d88a79b00fe31d4e82d9bfb9b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 84be2a4646cfc18cd1f25a4ec969acdb62cb2856
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437603"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007251"
 ---
 # <a name="flushing-principles"></a>Avräkningsprinciper
 
@@ -63,6 +62,3 @@ Avslutavräkningsprincipen anger att materialet ska förbrukas automatiskt, när
 
 ### <a name="available-at-location"></a>Tillgänglig på plats
 Tillgänglig på platsen-avräkningsprincipen anger att materialet ska förbrukas automatiskt, när det registreras som plockat för produktion. Materialet har registrerats som plockat från plats när arbetet med råmaterialplockningen har slutförts eller när material finns på platsen för produktionsinleverans och materialraden släppts till lagret. Plocklistan som skapas under processen bokförs i ett batchjobb. Denna princip är användbar om du till exempel har många plockaktiviteter mot en tillverkningsorder. I det här fallet behöver du inte manuellt uppdatera plocklistan och du får en aktuell vy över PIA-saldo.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

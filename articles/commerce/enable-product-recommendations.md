@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,18 +18,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b201e5481cfaf5bb6cd64a89cdb6b5a91f31447f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 59c83409ede5e006ddf030d396934eeb6cd8df76
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415715"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010136"
 ---
 # <a name="enable-product-recommendations"></a>Aktivera produktrekommendationer
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du gör produktrekommendationer som baseras på artificiell intelligens (AI-ML) tillgängligt för Microsoft Dynamics 365 Commerce-kunder. Mer information om produktrekommendationslistor finns i [produktrekommendationer - översikt](product-recommendations.md).
+I det här avsnittet beskrivs hur du gör produktrekommendationer som baseras på artificiell intelligens (AI-ML) tillgängligt för Microsoft Dynamics 365 Commerce-kunder. Mer information om produktrekommendationslistor finns i [produktrekommendationer – översikt](product-recommendations.md).
 
 ## <a name="recommendations-pre-check"></a>Förkontroll av rekommendationer
 
@@ -55,9 +54,9 @@ Det här steget krävs för alla kunder som kör infrastruktur som en tjänst (I
 
 Om posten inte finns lägger du till en ny post med följande information:
 
-- **Klient-ID** - d37b07e8-dd1c-4514-835d-8b918e6f9727
-- **Namn** - RecommendationSystemApplication-1
-- **Användar-ID** - RetailServiceAccount
+- **Klient-ID** – d37b07e8-dd1c-4514-835d-8b918e6f9727
+- **Namn** – RecommendationSystemApplication-1
+- **Användar-ID** – RetailServiceAccount
 
 Spara och stäng formuläret 
 
@@ -74,7 +73,7 @@ Så här aktiverar du produktrekommendationer.
 ![Aktivera rekommendationer](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
-> I den här proceduren inleds processen med att generera listor över produktrekommendationer. Det kan ta flera timmar innan listorna är tillgängliga och kan visas i kassan (POS) eller i Dynamics 365 Commerce.
+> I den här proceduren inleds processen med att generera listor över produktrekommendationer. Det kan ta flera timmar innan listorna är tillgängliga och kan visas i POS eller i Dynamics 365 Commerce.
 
 ## <a name="configure-recommendation-list-parameters"></a>Konfigurera parametrar för rekommendationslista
 
@@ -82,11 +81,11 @@ Som standard innehåller listan AI-ML-baserad produktrekommendation förslagna v
 
 ## <a name="show-recommendations-on-pos-devices"></a>Visa rekommendationer på kassaenheter
 
-När du har aktiverat rekommendationer i backoffice för Handel måste rekommendationspanelen läggas till i kassans kontrollskärm via layoutverktyget. Mer information om den här processen finns i [Lägga till en rekommendationskontroll till transaktionsskärmen på kassaenheter](add-recommendations-control-pos-screen.md). 
+När du har aktiverat rekommendationer i backoffice för Commerce måste rekommendationspanelen läggas till i kassans kontrollskärm via layoutverktyget. Mer information om den här processen finns i [Lägga till en rekommendationskontroll till transaktionsskärmen på kassaenheter](add-recommendations-control-pos-screen.md). 
 
 ## <a name="enable-personalized-recommendations"></a>Aktivera anpassade rekommendationer
 
-I Dynamics 365 Commerce kan återförsäljare göra anpassade produktrekommendationer (även kallade anpassningar) tillgängliga. På detta sätt kan personliga rekommendationer införlivas i kundupplevelsen online och i kassan. När anpassningsfunktionen är aktiverad kan systemet associera en användares inköps- och produktinformation för att skapa enskilda produktrekommendationer.
+I Dynamics 365 Commerce kan återförsäljare göra anpassade produktrekommendationer (även kallade anpassningar) tillgängliga. På detta sätt kan personliga rekommendationer införlivas i kundupplevelsen online och i POS. När anpassningsfunktionen är aktiverad kan systemet associera en användares inköps- och produktinformation för att skapa enskilda produktrekommendationer.
 
 Mer information om anpassade rekommendationer finns i [aktivera anpassade rekommendationer](personalized-recommendations.md).
 
@@ -102,7 +101,7 @@ Mer information om anpassade rekommendationer finns i [aktivera anpassade rekomm
 
 [Avanmäl anpassade rekommendationer](personalization-gdpr.md)
 
-[Lägg till produktrekommendationer i kassan](product.md)
+[Lägg till produktrekommendationer i POS](product.md)
 
 [Lägg till rekommendationer på transaktionsskärmen](add-recommendations-control-pos-screen.md)
 
@@ -114,6 +113,3 @@ Mer information om anpassade rekommendationer finns i [aktivera anpassade rekomm
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

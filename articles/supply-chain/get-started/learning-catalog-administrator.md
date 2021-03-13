@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ba93bdcb64237af627c5a6d5adb834583f08f768
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: a4e158be2d20755e2380d573116383101fd6d07f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516629"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5008191"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Utbildningskatalog för administratörer för Dynamics 365 Supply Chain Management
 
@@ -88,6 +87,3 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | Innehåll  | beskrivning  | Format  |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------|
 | [Dynamics 365 grunder](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Bevisa att du förstår Microsoft Dynamics 365: Power Platform; molnkoncept; licensieringsalternativ; och distribution- och publiceringsalternativ. | Prov; kostnaden varierar beroende på region |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

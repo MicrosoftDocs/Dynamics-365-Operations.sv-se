@@ -1,6 +1,6 @@
 ---
-title: Åtgärden återkalla order i kassan
-description: Det här avsnittet handlar om vilka funktioner som finns för att förbättra sidor för orderåterkallning i kassan.
+title: Åtgärden återkalla order i POS
+description: Det här avsnittet handlar om vilka funktioner som finns för att förbättra sidor för orderåterkallning i POS.
 author: hhainesms
 manager: annbe
 ms.date: 10/09/2020
@@ -10,25 +10,24 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 42b11ff16757d633b868dfdf248341193a44378f
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: 21e8045d754006345f5ad68e1e67579386c6df4a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665308"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010084"
 ---
-# <a name="recall-order-operation-in-pos"></a>Åtgärden återkalla order i kassan
+# <a name="recall-order-operation-in-pos"></a>Åtgärden återkalla order i POS
 
 [!include [banner](includes/banner.md)]
 
-Åtgärden **Återkalla order** i Commerce-kassan (POS) ger uppdaterade funktioner för ordersökning och filtrering, samt orderspecifik information. Den här funktionen är tillgänglig i Commerce versioner 10.0.15 och senare.
+Åtgärden **Återkalla order** i Commerce-POS ger uppdaterade funktioner för ordersökning och filtrering, samt orderspecifik information. Den här funktionen är tillgänglig i Commerce versioner 10.0.15 och senare.
 
-För att aktivera denna funktion, slå på funktionen **Förbättrad åtgärden återkalla order i kassan** i arbetsytan **funktionshantering** i Commerce-administration. När du har aktiverat funktionen kan du överväga att uppdatera [bildskärmslayouter](pos-screen-layouts.md) i kassan för att dra nytta av vissa av de ändrade funktionerna.
+För att aktivera denna funktion, slå på funktionen **Förbättrad åtgärden återkalla order i POS** i arbetsytan **funktionshantering** i Commerce-administration. När du har aktiverat funktionen kan du överväga att uppdatera [bildskärmslayouter](pos-screen-layouts.md) i POS för att dra nytta av vissa av de ändrade funktionerna.
 
 Genom att konfigurera knappen **Återkalla order** kan organisationer distribuera operationen med en fördefinierad visning.
 
@@ -40,7 +39,7 @@ Visningsalternativen är följande.
 - **Order som ska hämtas** – när en användare startar operationen körs en fråga automatiskt för att söka i och visa en lista med order som är konfigurerade för hämtning i butik eller i användarens nuvarande butik.
 - **Order som ska levereras** – när en användare startar operationen körs en fråga automatiskt för att söka i och visa en lista med order som är konfigurerade för leverans från användarens nuvarande butik.
 
-När du startar åtgärden **Återkalla order** från kassan, om bildskärmen har konfigurerats till **ingen** kan en användare söka efter och hämta order på något av följande sätt.
+När du startar åtgärden **Återkalla order** från POS, om bildskärmen har konfigurerats till **ingen** kan en användare söka efter och hämta order på något av följande sätt.
 - Skanna orderstreckkoder. Det här fältet söker efter ordernummer, kanalreferens och kvitto-ID för matchningar.
 - Välj ikonen **Sök order** eller **Sök och filtrera** på AppBar om du vill använda filtreringsfunktionen för att söka efter order som uppfyller filtervillkoren.
 - Välj från ett fördefinierat filter på listrutan **Visa order** (order som ska uppfyllas, order som ska hämtas eller order som ska levereras).
@@ -64,6 +63,3 @@ En användare kan välja en operation i AppBar. Beroende på orderns status kan 
 - **Redigera** – tillåter att användare ändrar den valda kundordern.
 
 - **Hämta** – startar upphämtningsflödet, vilket innebär att användaren kan välja produkter som ska hämtas och skapa en transaktion för upphämtningsförsäljning.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

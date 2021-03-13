@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow, Kanban, KanbanQuantityOverview, KanbanAssignCard, KanbanCirculatingCards, KanbanRules, WHSKanbanWaveTableManagePickingListPool
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63a9856035088642254fd43d14cb324a89bc19d6
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 5ba514a6af360074696814278b51ba41327a294d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438014"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007001"
 ---
 # <a name="lean-manufacturing-overview"></a>Lean manufacturing – översikt
 
@@ -51,7 +50,7 @@ Du skapar en lean manufacturing-grund genom att modellera tillverknings- och log
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a> Använda kanban för att signalera efterfrågebehov
 Ett hämtningssystem producerar bara varor när varorna behövs. Denna metod minskar ledtiderna för leveranser och överflödigt lager. Du kan använda kanban att planera, följa och bearbeta krav som baseras på produktionsflöden. Om du vill skapa ett kanban-ramverk skapar du kanban-regler som definierar när kanban skapas och hur behoven uppfylls. Du kan skapa två typer av kanban-regler. Tillverkningsregler skapar kanban-jobb för processer och kanban-regler för tillbakadragande skapar kanban-jobb för överföringar. Du kan ställa in betalningstyper på lagerpåfyllnadsstrategier:
--   Kanban-regler av typen **Fast kvantitet** är relaterade till ett fast antal hanteringsenheter, vilket innebär att antalet aktiva kanban är konstant. När alla produkter från en kanban förbrukas och hanteringsenheter töms manuellt, skapas en ny kanban av samma typ.När du skapar fasta kanban-regler för kvantitet kan du beräkna de optimala kanban- och produktkvantiteter som används. Beräkningen tar hänsyn till kontoprognosen, faktisk efterfrågan från öppna order, ledtid för att fylla på artiklar och historisk efterfrågan.
+-   Kanban-regler av typen **Fast kvantitet** är relaterade till ett fast antal hanteringsenheter, vilket innebär att antalet aktiva kanban är konstant. När alla produkter från en kanban förbrukas och hanteringsenheter töms manuellt, skapas en ny kanban av samma typ. När du skapar fasta kanban-regler för kvantitet kan du beräkna de optimala kanban- och produktkvantiteter som används. Beräkningen tar hänsyn till kontoprognosen, faktisk efterfrågan från öppna order, ledtid för att fylla på artiklar och historisk efterfrågan.
 -   Kanban-regler av typen **Schemalagda** fyller på behov som beräknas från huvudplaneringen. Huvudplaneringen genererar planerade kanban som kan kopplas till kanban.
 -   Kanban-regler av typen **Händelse** fyller på behov som kommer från försäljningsorderrader, rader i produktionsstrukturlista, kanban-rader och minimilagerinställningar. När händelse-kanban skapas kopplas de till källbehoven.
 
@@ -65,7 +64,7 @@ Lean manufacturing ger insyn i den aktuella statusen för tillverknings- och log
 -   Följ och registrera statusen för kanban-jobb.
 
 I listan nedan beskrivs de specialiserade kanban-tavlorna:
--   Tidsplanering av Kanban-jobb – Ger en översikt över kanban-jobb. Tavlan visar kanban-jobb och deras status för en eller flera arbetsgrupper. Jobben anges enligt planeringsperioderna (dagar eller veckor) som definierats i produktionsflödesmodellen. Tavlan visar också kapacitetsförbrukningen för varje planeringsperiod så att du kan övervaka den schemalagda beläggningen. Du kan ändra status för kanban-jobb, tidsomplanera kanban-jobb till andra planläggningsperioder och utföra andra uppgifter.
+-   Tidsplanering av Kanban-jobb – Ger en översikt över kanban-jobb. Tavlan visar kanban-jobb och deras status för en eller flera arbetsgrupper. Jobben anges enligt planeringsperioderna (dagar eller veckor) som definierats i produktionsflödesmodellen. Tavlan visar också kapacitetsförbrukningen för varje planeringsperiod så att du kan övervaka den schemalagda beläggningen. Du kan ändra status för kanban-jobb, tidsomplanera kanban-jobb till andra planläggningsperioder och utföra andra uppgifter.
 -   Kanban-tavla för överföringsjobb – Den här tavlan ger en översikt över aktuella överföringsjobb. Du kan uppdatera och registrera plocklistor, starta och slutföra överföringsjobb och utföra andra uppgifter.
 -   Kanban-tavla för processjobb – Den här tavlan har utformats för att stödja det normala produktionsflödet och för att ge en översikt över den aktuella situationen i en eller flera arbetsgrupper. Från den här tavlan kan kanban prioriteras, väljas eller tillverkas. Tavlan har också utformats för att stödja skanning av streckkoder för rapporteringen av kanban.
 
@@ -83,6 +82,3 @@ Dessutom stöder lean manufacturing inköps- och faktureringsprocesser för tjä
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
