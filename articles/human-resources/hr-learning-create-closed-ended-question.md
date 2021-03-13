@@ -2,7 +2,7 @@
 title: Skapa en stängd avslutad fråga
 description: Med stängda frågor kan du ange alternativ som den svarande kan välja mellan.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,60 +11,60 @@ ms.technology: ''
 ms.search.form: KMAnswerCollection, KMAnswer, KMQuestion, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2eb53290d39fef0bf439a199dfd774138823ec2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 65d77806498c3a710c00865ad27716f50796cdf5
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420654"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5114966"
 ---
-# <a name="create-a-closed-ended-question"></a><span data-ttu-id="d4d64-103">Skapa en stängd avslutad fråga</span><span class="sxs-lookup"><span data-stu-id="d4d64-103">Create a closed ended question</span></span>
+# <a name="create-a-closed-ended-question"></a><span data-ttu-id="46f31-103">Skapa en stängd avslutad fråga</span><span class="sxs-lookup"><span data-stu-id="46f31-103">Create a closed ended question</span></span>
 
 
 
-<span data-ttu-id="d4d64-104">Med stängda frågor kan du ange alternativ som den svarande kan välja mellan.</span><span class="sxs-lookup"><span data-stu-id="d4d64-104">Closed-ended questions allow you to provide options for the respondent to choose from.</span></span> <span data-ttu-id="d4d64-105">Först måste du skapa svarsgruppen med svaren och sedan skapa frågan som använder svarsgruppen.</span><span class="sxs-lookup"><span data-stu-id="d4d64-105">First, you need to create the Answer group with the answers, then create the question that will use the answer group.</span></span> <span data-ttu-id="d4d64-106">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="d4d64-106">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="46f31-104">Med stängda frågor kan du ange alternativ som den svarande kan välja mellan.</span><span class="sxs-lookup"><span data-stu-id="46f31-104">Closed-ended questions allow you to provide options for the respondent to choose from.</span></span> <span data-ttu-id="46f31-105">Först måste du skapa svarsgruppen med svaren och sedan skapa frågan som använder svarsgruppen.</span><span class="sxs-lookup"><span data-stu-id="46f31-105">First, you need to create the Answer group with the answers, then create the question that will use the answer group.</span></span> <span data-ttu-id="46f31-106">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="46f31-106">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-an-answer-group"></a><span data-ttu-id="d4d64-107">Skapa en svarsgrupp</span><span class="sxs-lookup"><span data-stu-id="d4d64-107">Create an answer group</span></span>
-1. <span data-ttu-id="d4d64-108">Gå till Enkät > Design > Svarsgrupper.</span><span class="sxs-lookup"><span data-stu-id="d4d64-108">Go to Questionnaire > Design > Answer groups.</span></span>
-2. <span data-ttu-id="d4d64-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="d4d64-109">Click New.</span></span>
-3. <span data-ttu-id="d4d64-110">Skriv ett värde i fältet Svarsgrupp.</span><span class="sxs-lookup"><span data-stu-id="d4d64-110">In the Answer group field, type a value.</span></span>
-4. <span data-ttu-id="d4d64-111">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="d4d64-111">In the Description field, type a value.</span></span>
-    * <span data-ttu-id="d4d64-112">Använd slumpfunktionen för att slumpmässigt placera svaren i en annan ordning varje gång svarsgruppen används för en fråga.</span><span class="sxs-lookup"><span data-stu-id="d4d64-112">Use the Randomize functionality to randomly place the answers in a different order each time the answer group is used for a question.</span></span>  
-5. <span data-ttu-id="d4d64-113">Klicka på Svar.</span><span class="sxs-lookup"><span data-stu-id="d4d64-113">Click Answer.</span></span>
-6. <span data-ttu-id="d4d64-114">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="d4d64-114">Click New.</span></span>
-    * <span data-ttu-id="d4d64-115">Sekvensnummerkontrollerar ordern svaren som visas i, om inte Slumpmässigt har valts för svarsgruppen.</span><span class="sxs-lookup"><span data-stu-id="d4d64-115">Sequence number controls the order in which the answers are displayed, unless Randomize is selected for the Answer group.</span></span>  
-    * <span data-ttu-id="d4d64-116">Poäng kan tilldelas svar för att användas vid poängsättning av enkäten.</span><span class="sxs-lookup"><span data-stu-id="d4d64-116">Points can be awarded to answers for use in scoring the questionnaire.</span></span>  
-7. <span data-ttu-id="d4d64-117">Välj ett nummer i fältet Poäng.</span><span class="sxs-lookup"><span data-stu-id="d4d64-117">In the Points field, enter a number.</span></span>
-    * <span data-ttu-id="d4d64-118">Det korrekta svaret kan markeras för att visa att det valda svaret är korrekt.</span><span class="sxs-lookup"><span data-stu-id="d4d64-118">The correct answer can be marked to indicate that the selected answer is the correct one.</span></span> <span data-ttu-id="d4d64-119">Detta kan användas för att poängsätta enkäten.</span><span class="sxs-lookup"><span data-stu-id="d4d64-119">This can be used for scoring the questionnaire.</span></span>  
-8. <span data-ttu-id="d4d64-120">Skriv ett värde i fältet Svar.</span><span class="sxs-lookup"><span data-stu-id="d4d64-120">In the Answer field, type a value.</span></span>
-    * <span data-ttu-id="d4d64-121">Fortsätt att skapa svarsurvalsalternativ för svarsgruppen.</span><span class="sxs-lookup"><span data-stu-id="d4d64-121">Continue to create answer selection options for the answer group.</span></span>  
-9. <span data-ttu-id="d4d64-122">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="d4d64-122">Click New.</span></span>
-10. <span data-ttu-id="d4d64-123">Välj ett nummer i fältet Poäng.</span><span class="sxs-lookup"><span data-stu-id="d4d64-123">In the Points field, enter a number.</span></span>
-11. <span data-ttu-id="d4d64-124">Skriv ett värde i fältet Svar.</span><span class="sxs-lookup"><span data-stu-id="d4d64-124">In the Answer field, type a value.</span></span>
-12. <span data-ttu-id="d4d64-125">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="d4d64-125">Click New.</span></span>
-13. <span data-ttu-id="d4d64-126">Välj ett nummer i fältet Poäng.</span><span class="sxs-lookup"><span data-stu-id="d4d64-126">In the Points field, enter a number.</span></span>
-14. <span data-ttu-id="d4d64-127">Skriv ett värde i fältet Svar.</span><span class="sxs-lookup"><span data-stu-id="d4d64-127">In the Answer field, type a value.</span></span>
-15. <span data-ttu-id="d4d64-128">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="d4d64-128">Click New.</span></span>
-16. <span data-ttu-id="d4d64-129">Välj ett nummer i fältet Poäng.</span><span class="sxs-lookup"><span data-stu-id="d4d64-129">In the Points field, enter a number.</span></span>
-17. <span data-ttu-id="d4d64-130">Skriv ett värde i fältet Svar.</span><span class="sxs-lookup"><span data-stu-id="d4d64-130">In the Answer field, type a value.</span></span>
-18. <span data-ttu-id="d4d64-131">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="d4d64-131">Click New.</span></span>
-19. <span data-ttu-id="d4d64-132">Välj ett nummer i fältet Poäng.</span><span class="sxs-lookup"><span data-stu-id="d4d64-132">In the Points field, enter a number.</span></span>
-20. <span data-ttu-id="d4d64-133">Skriv ett värde i fältet Svar.</span><span class="sxs-lookup"><span data-stu-id="d4d64-133">In the Answer field, type a value.</span></span>
-21. <span data-ttu-id="d4d64-134">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="d4d64-134">Close the page.</span></span>
-22. <span data-ttu-id="d4d64-135">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="d4d64-135">Close the page.</span></span>
+## <a name="create-an-answer-group"></a><span data-ttu-id="46f31-107">Skapa en svarsgrupp</span><span class="sxs-lookup"><span data-stu-id="46f31-107">Create an answer group</span></span>
+1. <span data-ttu-id="46f31-108">Gå till Enkät > Design > Svarsgrupper.</span><span class="sxs-lookup"><span data-stu-id="46f31-108">Go to Questionnaire > Design > Answer groups.</span></span>
+2. <span data-ttu-id="46f31-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="46f31-109">Click New.</span></span>
+3. <span data-ttu-id="46f31-110">Skriv ett värde i fältet Svarsgrupp.</span><span class="sxs-lookup"><span data-stu-id="46f31-110">In the Answer group field, type a value.</span></span>
+4. <span data-ttu-id="46f31-111">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="46f31-111">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="46f31-112">Använd slumpfunktionen för att slumpmässigt placera svaren i en annan ordning varje gång svarsgruppen används för en fråga.</span><span class="sxs-lookup"><span data-stu-id="46f31-112">Use the Randomize functionality to randomly place the answers in a different order each time the answer group is used for a question.</span></span>  
+5. <span data-ttu-id="46f31-113">Klicka på Svar.</span><span class="sxs-lookup"><span data-stu-id="46f31-113">Click Answer.</span></span>
+6. <span data-ttu-id="46f31-114">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="46f31-114">Click New.</span></span>
+    * <span data-ttu-id="46f31-115">Sekvensnummerkontrollerar ordern svaren som visas i, om inte Slumpmässigt har valts för svarsgruppen.</span><span class="sxs-lookup"><span data-stu-id="46f31-115">Sequence number controls the order in which the answers are displayed, unless Randomize is selected for the Answer group.</span></span>  
+    * <span data-ttu-id="46f31-116">Poäng kan tilldelas svar för att användas vid poängsättning av enkäten.</span><span class="sxs-lookup"><span data-stu-id="46f31-116">Points can be awarded to answers for use in scoring the questionnaire.</span></span>  
+7. <span data-ttu-id="46f31-117">Välj ett nummer i fältet Poäng.</span><span class="sxs-lookup"><span data-stu-id="46f31-117">In the Points field, enter a number.</span></span>
+    * <span data-ttu-id="46f31-118">Det korrekta svaret kan markeras för att visa att det valda svaret är korrekt.</span><span class="sxs-lookup"><span data-stu-id="46f31-118">The correct answer can be marked to indicate that the selected answer is the correct one.</span></span> <span data-ttu-id="46f31-119">Detta kan användas för att poängsätta enkäten.</span><span class="sxs-lookup"><span data-stu-id="46f31-119">This can be used for scoring the questionnaire.</span></span>  
+8. <span data-ttu-id="46f31-120">Skriv ett värde i fältet Svar.</span><span class="sxs-lookup"><span data-stu-id="46f31-120">In the Answer field, type a value.</span></span>
+    * <span data-ttu-id="46f31-121">Fortsätt att skapa svarsurvalsalternativ för svarsgruppen.</span><span class="sxs-lookup"><span data-stu-id="46f31-121">Continue to create answer selection options for the answer group.</span></span>  
+9. <span data-ttu-id="46f31-122">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="46f31-122">Click New.</span></span>
+10. <span data-ttu-id="46f31-123">Välj ett nummer i fältet Poäng.</span><span class="sxs-lookup"><span data-stu-id="46f31-123">In the Points field, enter a number.</span></span>
+11. <span data-ttu-id="46f31-124">Skriv ett värde i fältet Svar.</span><span class="sxs-lookup"><span data-stu-id="46f31-124">In the Answer field, type a value.</span></span>
+12. <span data-ttu-id="46f31-125">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="46f31-125">Click New.</span></span>
+13. <span data-ttu-id="46f31-126">Välj ett nummer i fältet Poäng.</span><span class="sxs-lookup"><span data-stu-id="46f31-126">In the Points field, enter a number.</span></span>
+14. <span data-ttu-id="46f31-127">Skriv ett värde i fältet Svar.</span><span class="sxs-lookup"><span data-stu-id="46f31-127">In the Answer field, type a value.</span></span>
+15. <span data-ttu-id="46f31-128">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="46f31-128">Click New.</span></span>
+16. <span data-ttu-id="46f31-129">Välj ett nummer i fältet Poäng.</span><span class="sxs-lookup"><span data-stu-id="46f31-129">In the Points field, enter a number.</span></span>
+17. <span data-ttu-id="46f31-130">Skriv ett värde i fältet Svar.</span><span class="sxs-lookup"><span data-stu-id="46f31-130">In the Answer field, type a value.</span></span>
+18. <span data-ttu-id="46f31-131">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="46f31-131">Click New.</span></span>
+19. <span data-ttu-id="46f31-132">Välj ett nummer i fältet Poäng.</span><span class="sxs-lookup"><span data-stu-id="46f31-132">In the Points field, enter a number.</span></span>
+20. <span data-ttu-id="46f31-133">Skriv ett värde i fältet Svar.</span><span class="sxs-lookup"><span data-stu-id="46f31-133">In the Answer field, type a value.</span></span>
+21. <span data-ttu-id="46f31-134">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="46f31-134">Close the page.</span></span>
+22. <span data-ttu-id="46f31-135">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="46f31-135">Close the page.</span></span>
 
-## <a name="create-the-question"></a><span data-ttu-id="d4d64-136">Skapa frågan</span><span class="sxs-lookup"><span data-stu-id="d4d64-136">Create the question</span></span>
-1. <span data-ttu-id="d4d64-137">Gå till Enkät > Design > Frågor.</span><span class="sxs-lookup"><span data-stu-id="d4d64-137">Go to Questionnaire > Design > Questions.</span></span>
-2. <span data-ttu-id="d4d64-138">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="d4d64-138">Click New.</span></span>
-3. <span data-ttu-id="d4d64-139">Använd fältet Typ för att gruppera relaterade frågor tillsammans.</span><span class="sxs-lookup"><span data-stu-id="d4d64-139">Use the Type field to group related questions together.</span></span>
-    * <span data-ttu-id="d4d64-140">Du kan använda ange indatatyper för kryssrutan, alternativsknappen eller kombinationsrutan för stängda frågor.</span><span class="sxs-lookup"><span data-stu-id="d4d64-140">You can use input types of Check box, Alternative button, or Combo box for closed-ended questions.</span></span>  
-4. <span data-ttu-id="d4d64-141">Välj ett alternativ i fältet Indatatyp.</span><span class="sxs-lookup"><span data-stu-id="d4d64-141">In the Input type field, select an option.</span></span>
-5. <span data-ttu-id="d4d64-142">Ange eller välj ett värde i fältet Svarsgrupper.</span><span class="sxs-lookup"><span data-stu-id="d4d64-142">In the Answer group field, enter or select a value.</span></span>
-6. <span data-ttu-id="d4d64-143">Skriv ett värde i fältet Text.</span><span class="sxs-lookup"><span data-stu-id="d4d64-143">In the Text field, type a value.</span></span>
+## <a name="create-the-question"></a><span data-ttu-id="46f31-136">Skapa frågan</span><span class="sxs-lookup"><span data-stu-id="46f31-136">Create the question</span></span>
+1. <span data-ttu-id="46f31-137">Gå till Enkät > Design > Frågor.</span><span class="sxs-lookup"><span data-stu-id="46f31-137">Go to Questionnaire > Design > Questions.</span></span>
+2. <span data-ttu-id="46f31-138">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="46f31-138">Click New.</span></span>
+3. <span data-ttu-id="46f31-139">Använd fältet Typ för att gruppera relaterade frågor tillsammans.</span><span class="sxs-lookup"><span data-stu-id="46f31-139">Use the Type field to group related questions together.</span></span>
+    * <span data-ttu-id="46f31-140">Du kan använda ange indatatyper för kryssrutan, alternativsknappen eller kombinationsrutan för stängda frågor.</span><span class="sxs-lookup"><span data-stu-id="46f31-140">You can use input types of Check box, Alternative button, or Combo box for closed-ended questions.</span></span>  
+4. <span data-ttu-id="46f31-141">Välj ett alternativ i fältet Indatatyp.</span><span class="sxs-lookup"><span data-stu-id="46f31-141">In the Input type field, select an option.</span></span>
+5. <span data-ttu-id="46f31-142">Ange eller välj ett värde i fältet Svarsgrupper.</span><span class="sxs-lookup"><span data-stu-id="46f31-142">In the Answer group field, enter or select a value.</span></span>
+6. <span data-ttu-id="46f31-143">Skriv ett värde i fältet Text.</span><span class="sxs-lookup"><span data-stu-id="46f31-143">In the Text field, type a value.</span></span>
 
