@@ -1,6 +1,6 @@
 ---
 title: ER Konfigurera format för inventering och summering (Del 1 - Skapa format)
-description: I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) att utföra inventering och summering baserat på data tillhörande redan skapad textutmatning.
+description: I det här avsnittet beskrivs hur du konfigurerar ett elektroniskt rapporteringsformat för inventering och summering baserat på data i det redan genererade textutdata. (Del 1)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,44 +15,44 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1742582057cc912d8e6f90eb14e9e4cdcd193608
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7a3639b5ac28f8a571642e983906d658dabf05b1
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684725"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093032"
 ---
-# <a name="er-configure-format-to-do-counting-and-summing-part-1---create-format"></a><span data-ttu-id="89f42-103">ER Konfigurera format för inventering och summering (Del 1 - Skapa format)</span><span class="sxs-lookup"><span data-stu-id="89f42-103">ER Configure format to do counting and summing (Part 1 - Create format)</span></span>
+# <a name="er-configure-format-to-do-counting-and-summing-part-1---create-format"></a><span data-ttu-id="e9740-104">ER Konfigurera format för inventering och summering (Del 1 - Skapa format)</span><span class="sxs-lookup"><span data-stu-id="e9740-104">ER Configure format to do counting and summing (Part 1 - Create format)</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="89f42-104">I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) att utföra inventering och summering baserat på data tillhörande redan skapad textutmatning.</span><span class="sxs-lookup"><span data-stu-id="89f42-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output.</span></span> <span data-ttu-id="89f42-105">Dessa steg kan utföras på valfritt företag.</span><span class="sxs-lookup"><span data-stu-id="89f42-105">These steps can be performed in any company.</span></span>
+<span data-ttu-id="e9740-105">I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) att utföra inventering och summering baserat på data tillhörande redan skapad textutmatning.</span><span class="sxs-lookup"><span data-stu-id="e9740-105">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output.</span></span> <span data-ttu-id="e9740-106">Dessa steg kan utföras på valfritt företag.</span><span class="sxs-lookup"><span data-stu-id="e9740-106">These steps can be performed in any company.</span></span>
 
-<span data-ttu-id="89f42-106">För att slutföra dessa steg måste du först slutföra stegen i proceduren "Create a configuration provider and mark it as active”.</span><span class="sxs-lookup"><span data-stu-id="89f42-106">To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure.</span></span>
+<span data-ttu-id="e9740-107">För att slutföra dessa steg måste du först slutföra stegen i proceduren "Create a configuration provider and mark it as active”.</span><span class="sxs-lookup"><span data-stu-id="e9740-107">To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure.</span></span>
 
-<span data-ttu-id="89f42-107">Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="89f42-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="e9740-108">Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="e9740-108">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a><span data-ttu-id="89f42-108">Få åtkomst till listan med konfigurationer som tillhandahålls av Microsoft</span><span class="sxs-lookup"><span data-stu-id="89f42-108">Get access to the list of configurations provided by Microsoft</span></span>
-1. <span data-ttu-id="89f42-109">Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="89f42-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-    * <span data-ttu-id="89f42-110">Kontrollera att ”Litware Inc."-leverantören</span><span class="sxs-lookup"><span data-stu-id="89f42-110">Make sure that the "Litware, Inc."</span></span> <span data-ttu-id="89f42-111">är tillgänglig och markerats som aktiv.</span><span class="sxs-lookup"><span data-stu-id="89f42-111">provider is available and marked as active.</span></span>  
-2. <span data-ttu-id="89f42-112">Välj Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="89f42-112">Select the "Litware, Inc."</span></span> <span data-ttu-id="89f42-113">leverantör.</span><span class="sxs-lookup"><span data-stu-id="89f42-113">provider.</span></span>
-3. <span data-ttu-id="89f42-114">Klicka på Databaser.</span><span class="sxs-lookup"><span data-stu-id="89f42-114">Click Repositories.</span></span>
-    * <span data-ttu-id="89f42-115">Om en databas av typen "Operations resources" redan finns, hoppa då över återstående steg för den aktuella underuppgiften.</span><span class="sxs-lookup"><span data-stu-id="89f42-115">If a repository of the "Operations resources" type already exists, skip the remaining steps of the current sub-task.</span></span>  
-4. <span data-ttu-id="89f42-116">Klicka på Lägg till för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="89f42-116">Click Add to open the drop dialog.</span></span>
-5. <span data-ttu-id="89f42-117">Ange "Operations resources" i fältet Configuration repository type.</span><span class="sxs-lookup"><span data-stu-id="89f42-117">In the Configuration repository type field, enter 'Operations resources'.</span></span>
-6. <span data-ttu-id="89f42-118">Klicka på Skapa en databas.</span><span class="sxs-lookup"><span data-stu-id="89f42-118">Click Create repository.</span></span>
-7. <span data-ttu-id="89f42-119">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="89f42-119">Click OK.</span></span>
+## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a><span data-ttu-id="e9740-109">Få åtkomst till listan med konfigurationer som tillhandahålls av Microsoft</span><span class="sxs-lookup"><span data-stu-id="e9740-109">Get access to the list of configurations provided by Microsoft</span></span>
+1. <span data-ttu-id="e9740-110">Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="e9740-110">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="e9740-111">Kontrollera att ”Litware Inc."-leverantören</span><span class="sxs-lookup"><span data-stu-id="e9740-111">Make sure that the "Litware, Inc."</span></span> <span data-ttu-id="e9740-112">är tillgänglig och markerats som aktiv.</span><span class="sxs-lookup"><span data-stu-id="e9740-112">provider is available and marked as active.</span></span>  
+2. <span data-ttu-id="e9740-113">Välj Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="e9740-113">Select the "Litware, Inc."</span></span> <span data-ttu-id="e9740-114">leverantör.</span><span class="sxs-lookup"><span data-stu-id="e9740-114">provider.</span></span>
+3. <span data-ttu-id="e9740-115">Klicka på Databaser.</span><span class="sxs-lookup"><span data-stu-id="e9740-115">Click Repositories.</span></span>
+    * <span data-ttu-id="e9740-116">Om en databas av typen "Operations resources" redan finns, hoppa då över återstående steg för den aktuella underuppgiften.</span><span class="sxs-lookup"><span data-stu-id="e9740-116">If a repository of the "Operations resources" type already exists, skip the remaining steps of the current sub-task.</span></span>  
+4. <span data-ttu-id="e9740-117">Klicka på Lägg till för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="e9740-117">Click Add to open the drop dialog.</span></span>
+5. <span data-ttu-id="e9740-118">Ange "Operations resources" i fältet Configuration repository type.</span><span class="sxs-lookup"><span data-stu-id="e9740-118">In the Configuration repository type field, enter 'Operations resources'.</span></span>
+6. <span data-ttu-id="e9740-119">Klicka på Skapa en databas.</span><span class="sxs-lookup"><span data-stu-id="e9740-119">Click Create repository.</span></span>
+7. <span data-ttu-id="e9740-120">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="e9740-120">Click OK.</span></span>
 
-## <a name="get-the-intrastat-configurations-provided-by-microsoft"></a><span data-ttu-id="89f42-120">Hämta Intrastat-konfigurationerna som tillhandahålls av Microsoft</span><span class="sxs-lookup"><span data-stu-id="89f42-120">Get the Intrastat configurations provided by Microsoft</span></span>
-1. <span data-ttu-id="89f42-121">Klicka på Öppna.</span><span class="sxs-lookup"><span data-stu-id="89f42-121">Click Open.</span></span>
-2. <span data-ttu-id="89f42-122">Välj "Intrastat modell\Intrastat (DE)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="89f42-122">In the tree, select 'Intrastat model\Intrastat (DE)'.</span></span>
-3. <span data-ttu-id="89f42-123">Klicka på Importera.</span><span class="sxs-lookup"><span data-stu-id="89f42-123">Click Import.</span></span>
-    * <span data-ttu-id="89f42-124">Klicka på Import for version 1.1 för den valda konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="89f42-124">Click Import for version 1.1 of the selected configuration.</span></span>  
-4. <span data-ttu-id="89f42-125">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="89f42-125">Click Yes.</span></span>
-5. <span data-ttu-id="89f42-126">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="89f42-126">Close the page.</span></span>
-6. <span data-ttu-id="89f42-127">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="89f42-127">Close the page.</span></span>
-7. <span data-ttu-id="89f42-128">Klicka på Reporting configurations.</span><span class="sxs-lookup"><span data-stu-id="89f42-128">Click Reporting configurations.</span></span>
-8. <span data-ttu-id="89f42-129">Expandera "Intrastat model" i trädet.</span><span class="sxs-lookup"><span data-stu-id="89f42-129">In the tree, expand 'Intrastat model'.</span></span>
-9. <span data-ttu-id="89f42-130">Välj "Intrastat modell\Intrastat (DE)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="89f42-130">In the tree, select 'Intrastat model\Intrastat (DE)'.</span></span>
+## <a name="get-the-intrastat-configurations-provided-by-microsoft"></a><span data-ttu-id="e9740-121">Hämta Intrastat-konfigurationerna som tillhandahålls av Microsoft</span><span class="sxs-lookup"><span data-stu-id="e9740-121">Get the Intrastat configurations provided by Microsoft</span></span>
+1. <span data-ttu-id="e9740-122">Klicka på Öppna.</span><span class="sxs-lookup"><span data-stu-id="e9740-122">Click Open.</span></span>
+2. <span data-ttu-id="e9740-123">Välj "Intrastat modell\Intrastat (DE)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="e9740-123">In the tree, select 'Intrastat model\Intrastat (DE)'.</span></span>
+3. <span data-ttu-id="e9740-124">Klicka på Importera.</span><span class="sxs-lookup"><span data-stu-id="e9740-124">Click Import.</span></span>
+    * <span data-ttu-id="e9740-125">Klicka på Import for version 1.1 för den valda konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="e9740-125">Click Import for version 1.1 of the selected configuration.</span></span>  
+4. <span data-ttu-id="e9740-126">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="e9740-126">Click Yes.</span></span>
+5. <span data-ttu-id="e9740-127">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="e9740-127">Close the page.</span></span>
+6. <span data-ttu-id="e9740-128">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="e9740-128">Close the page.</span></span>
+7. <span data-ttu-id="e9740-129">Klicka på Reporting configurations.</span><span class="sxs-lookup"><span data-stu-id="e9740-129">Click Reporting configurations.</span></span>
+8. <span data-ttu-id="e9740-130">Expandera "Intrastat model" i trädet.</span><span class="sxs-lookup"><span data-stu-id="e9740-130">In the tree, expand 'Intrastat model'.</span></span>
+9. <span data-ttu-id="e9740-131">Välj "Intrastat modell\Intrastat (DE)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="e9740-131">In the tree, select 'Intrastat model\Intrastat (DE)'.</span></span>
 
