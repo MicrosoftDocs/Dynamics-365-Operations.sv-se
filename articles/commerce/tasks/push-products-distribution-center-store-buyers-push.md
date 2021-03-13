@@ -11,45 +11,44 @@ ms.technology: ''
 ms.search.form: RetailBuyersPush, InventLocationIdLookup, InventItemIdLookupSimple, RetailReplenishmentTreeLookup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dad74855ab9a9c225a5cd64a8c27663aedcd21e4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3720945823cf127f776a9ea6a6ad75a72ceec00c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415866"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012351"
 ---
-# <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a><span data-ttu-id="e797b-103"> Skjut produkter från distributionscenter till butik med centraliserad distribution</span><span class="sxs-lookup"><span data-stu-id="e797b-103">Push products from distribution center to store using buyer's push</span></span>
+# <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a><span data-ttu-id="233d0-103"> Skjut produkter från distributionscenter till butik med centraliserad distribution</span><span class="sxs-lookup"><span data-stu-id="233d0-103">Push products from distribution center to store using buyer's push</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="e797b-104">Den här proceduren går igenom stegen för att skapa och bearbeta en centraliserad distribution för att distribuera produkter från en plats till en eller flera butiker.</span><span class="sxs-lookup"><span data-stu-id="e797b-104">This procedure walks through the steps to create and process a Buyer´s push to distribute products from one location to one or many stores.</span></span> <span data-ttu-id="e797b-105">Användaren kan definiera flera konfigurationer och låta systemet att föreslå hur du fördelar produkterna, eller ange manuellt var produkterna fördelas till och hur mycket som distribueras till varje butik.</span><span class="sxs-lookup"><span data-stu-id="e797b-105">The user can define multiple configurations and have the system suggest how to distribute the products, or manually enter where the products are distributed to and how much gets distributed to each store.</span></span> <span data-ttu-id="e797b-106">Den här proceduren inkluderar inte inställningen av data som kan användas i centraliserad distribution, till exempel påfyllnadsregler, organisationshierarkier och butikvikter.</span><span class="sxs-lookup"><span data-stu-id="e797b-106">This procedure doesn't include setup of data that can be used in the Buyer´s push, such as replenishment rules, organizational hierarchies, and store weights.</span></span> <span data-ttu-id="e797b-107">I den här proceduren används demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="e797b-107">This procedure uses the USRT demo company.</span></span>
+<span data-ttu-id="233d0-104">Den här proceduren går igenom stegen för att skapa och bearbeta en centraliserad distribution för att distribuera produkter från en plats till en eller flera butiker.</span><span class="sxs-lookup"><span data-stu-id="233d0-104">This procedure walks through the steps to create and process a Buyer´s push to distribute products from one location to one or many stores.</span></span> <span data-ttu-id="233d0-105">Användaren kan definiera flera konfigurationer och låta systemet att föreslå hur du fördelar produkterna, eller ange manuellt var produkterna fördelas till och hur mycket som distribueras till varje butik.</span><span class="sxs-lookup"><span data-stu-id="233d0-105">The user can define multiple configurations and have the system suggest how to distribute the products, or manually enter where the products are distributed to and how much gets distributed to each store.</span></span> <span data-ttu-id="233d0-106">Den här proceduren inkluderar inte inställningen av data som kan användas i centraliserad distribution, till exempel påfyllnadsregler, organisationshierarkier och butikvikter.</span><span class="sxs-lookup"><span data-stu-id="233d0-106">This procedure doesn't include setup of data that can be used in the Buyer´s push, such as replenishment rules, organizational hierarchies, and store weights.</span></span> <span data-ttu-id="233d0-107">I den här proceduren används demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="233d0-107">This procedure uses the USRT demo company.</span></span>
 
-1. <span data-ttu-id="e797b-108">Gå till Centraliserad distribution.</span><span class="sxs-lookup"><span data-stu-id="e797b-108">Go to Buyer's push.</span></span>
-2. <span data-ttu-id="e797b-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="e797b-109">Click New.</span></span>
-3. <span data-ttu-id="e797b-110">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="e797b-110">In the Description field, type a value.</span></span>
-4. <span data-ttu-id="e797b-111">Ange eller välj ett värde i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="e797b-111">In the Site field, enter or select a value.</span></span>
-5. <span data-ttu-id="e797b-112">I fältet Lagerställe, ange eller välj ett lagerställe som har produkter med lagerbehållning.</span><span class="sxs-lookup"><span data-stu-id="e797b-112">In the Warehouse field, enter or select a warehouse that has products with on-hand quantities.</span></span>
-6. <span data-ttu-id="e797b-113">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="e797b-113">Click Add.</span></span>
-7. <span data-ttu-id="e797b-114">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="e797b-114">In the list, mark the selected row.</span></span>
-8. <span data-ttu-id="e797b-115">I fältet Artikelnummer, ange eller välj en produkt.</span><span class="sxs-lookup"><span data-stu-id="e797b-115">In the Item number field, enter or select a product.</span></span>
-9. <span data-ttu-id="e797b-116">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="e797b-116">Click Add.</span></span>
-10. <span data-ttu-id="e797b-117">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="e797b-117">In the list, mark the selected row.</span></span>
-11. <span data-ttu-id="e797b-118">I fältet Artikelnummer, ange eller välj en variantprodukt.</span><span class="sxs-lookup"><span data-stu-id="e797b-118">In the Item number field, enter or select a variant product.</span></span>
-    * <span data-ttu-id="e797b-119">När du anger en variantprodukt, rader skapas för varje variant.</span><span class="sxs-lookup"><span data-stu-id="e797b-119">When entering a variant product, lines will be created for each variant.</span></span>  
-12. <span data-ttu-id="e797b-120">Markera en rad i listan.</span><span class="sxs-lookup"><span data-stu-id="e797b-120">In the list, mark a row.</span></span>
-13. <span data-ttu-id="e797b-121">I fältet Distribuerad kvantitet, ange hur många av den valda produkten du vill distribuera.</span><span class="sxs-lookup"><span data-stu-id="e797b-121">In the Pushed quantity field, type how many of the selected product you want to distribute.</span></span>
-14. <span data-ttu-id="e797b-122">I fältet Ytterligare kvantitet att distribuera, ange kvantiteten för de produkter som har tillgänglig kvantitet att distribuera.</span><span class="sxs-lookup"><span data-stu-id="e797b-122">In the Additional quantity to push field, enter the quantity of the products that have available quantity to distribute.</span></span>
-15. <span data-ttu-id="e797b-123">I fältet Fördelning, ange Platsvikt.</span><span class="sxs-lookup"><span data-stu-id="e797b-123">In the Distribution field, enter 'Location weight'.</span></span>
-    * <span data-ttu-id="e797b-124">Du kan välja de andra typerna om du vill använda andra regler för fördelningen.</span><span class="sxs-lookup"><span data-stu-id="e797b-124">You can select the other types to use other rules for the distribution.</span></span>  
-16. <span data-ttu-id="e797b-125">I fältet Påfyllnadshierarki, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="e797b-125">In the Replenishment hierarchy field, select a value.</span></span>
-17. <span data-ttu-id="e797b-126">Välj Ja i fältet Respektera sortiment.</span><span class="sxs-lookup"><span data-stu-id="e797b-126">Select Yes in the Respect assortments field.</span></span>
-18. <span data-ttu-id="e797b-127">Klicka på Beräkna kvantiteter och granska de kvantiteter som läggs till för raderna i lagerställeavsnittet.</span><span class="sxs-lookup"><span data-stu-id="e797b-127">Click Calculate quantities and review the quantities that are added to the rows in the Warehouse section.</span></span>
-19. <span data-ttu-id="e797b-128">Klicka på Skapa order.</span><span class="sxs-lookup"><span data-stu-id="e797b-128">Click Create order.</span></span>
-20. <span data-ttu-id="e797b-129">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="e797b-129">Click Yes.</span></span>
+1. <span data-ttu-id="233d0-108">Gå till Centraliserad distribution.</span><span class="sxs-lookup"><span data-stu-id="233d0-108">Go to Buyer's push.</span></span>
+2. <span data-ttu-id="233d0-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="233d0-109">Click New.</span></span>
+3. <span data-ttu-id="233d0-110">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="233d0-110">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="233d0-111">Ange eller välj ett värde i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="233d0-111">In the Site field, enter or select a value.</span></span>
+5. <span data-ttu-id="233d0-112">I fältet Lagerställe, ange eller välj ett lagerställe som har produkter med lagerbehållning.</span><span class="sxs-lookup"><span data-stu-id="233d0-112">In the Warehouse field, enter or select a warehouse that has products with on-hand quantities.</span></span>
+6. <span data-ttu-id="233d0-113">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="233d0-113">Click Add.</span></span>
+7. <span data-ttu-id="233d0-114">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="233d0-114">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="233d0-115">I fältet Artikelnummer, ange eller välj en produkt.</span><span class="sxs-lookup"><span data-stu-id="233d0-115">In the Item number field, enter or select a product.</span></span>
+9. <span data-ttu-id="233d0-116">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="233d0-116">Click Add.</span></span>
+10. <span data-ttu-id="233d0-117">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="233d0-117">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="233d0-118">I fältet Artikelnummer, ange eller välj en variantprodukt.</span><span class="sxs-lookup"><span data-stu-id="233d0-118">In the Item number field, enter or select a variant product.</span></span>
+    * <span data-ttu-id="233d0-119">När du anger en variantprodukt, rader skapas för varje variant.</span><span class="sxs-lookup"><span data-stu-id="233d0-119">When entering a variant product, lines will be created for each variant.</span></span>  
+12. <span data-ttu-id="233d0-120">Markera en rad i listan.</span><span class="sxs-lookup"><span data-stu-id="233d0-120">In the list, mark a row.</span></span>
+13. <span data-ttu-id="233d0-121">I fältet Distribuerad kvantitet, ange hur många av den valda produkten du vill distribuera.</span><span class="sxs-lookup"><span data-stu-id="233d0-121">In the Pushed quantity field, type how many of the selected product you want to distribute.</span></span>
+14. <span data-ttu-id="233d0-122">I fältet Ytterligare kvantitet att distribuera, ange kvantiteten för de produkter som har tillgänglig kvantitet att distribuera.</span><span class="sxs-lookup"><span data-stu-id="233d0-122">In the Additional quantity to push field, enter the quantity of the products that have available quantity to distribute.</span></span>
+15. <span data-ttu-id="233d0-123">I fältet Fördelning, ange Platsvikt.</span><span class="sxs-lookup"><span data-stu-id="233d0-123">In the Distribution field, enter 'Location weight'.</span></span>
+    * <span data-ttu-id="233d0-124">Du kan välja de andra typerna om du vill använda andra regler för fördelningen.</span><span class="sxs-lookup"><span data-stu-id="233d0-124">You can select the other types to use other rules for the distribution.</span></span>  
+16. <span data-ttu-id="233d0-125">I fältet Påfyllnadshierarki, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="233d0-125">In the Replenishment hierarchy field, select a value.</span></span>
+17. <span data-ttu-id="233d0-126">Välj Ja i fältet Respektera sortiment.</span><span class="sxs-lookup"><span data-stu-id="233d0-126">Select Yes in the Respect assortments field.</span></span>
+18. <span data-ttu-id="233d0-127">Klicka på Beräkna kvantiteter och granska de kvantiteter som läggs till för raderna i lagerställeavsnittet.</span><span class="sxs-lookup"><span data-stu-id="233d0-127">Click Calculate quantities and review the quantities that are added to the rows in the Warehouse section.</span></span>
+19. <span data-ttu-id="233d0-128">Klicka på Skapa order.</span><span class="sxs-lookup"><span data-stu-id="233d0-128">Click Create order.</span></span>
+20. <span data-ttu-id="233d0-129">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="233d0-129">Click Yes.</span></span>
 
