@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c84a5f346bae440fb7a0ec6b2c3b813a30e8edd
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: bcf58a7005a8e61c5fba9c5065d75ebae8b909cc
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4695149"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154163"
 ---
 # <a name="help-system"></a>Hjälpsystem
 
@@ -163,7 +163,4 @@ I följande register visas våra webbplatser. Webbplatser som har en asterisk (\
 | [Docs.microsoft.com/tidigare versioner](/previous-versions/dynamics/) | Denna webbplats är värd för innehåll från tidigare versioner. |
 | [Dynamics Community](https://community.dynamics.com/) | Denna webbplats är värd för bloggar, forum och videor. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Denna webbplats ger information om utvärdering och försäljning. |
-| [CustomerSource](https://mbs.microsoft.com/customersource/)\* | Denna webbplats är värd för utbildningsresurser, nedladdningsbara rapporter och dokument, och är den primära supportsidan för serviceplaninnehavare. Åtkomst till vissa resurser kan kräva en serviceplan. |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+| [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | Denna webbplats är värd för utbildningsresurser, nedladdningsbara rapporter och dokument, och är den primära supportsidan för serviceplaninnehavare. Åtkomst till vissa resurser kan kräva en serviceplan. |

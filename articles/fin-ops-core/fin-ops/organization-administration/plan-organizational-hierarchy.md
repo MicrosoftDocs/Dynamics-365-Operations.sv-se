@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 4c779b5948370444b0b474568bb63b347c4a0831
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694699"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154419"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planera en organisationshierarki
 
@@ -166,7 +166,7 @@ Driftenheter använder landssammanhanget för den överordnade juridiska persone
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Om organisationen modelleras som en juridisk person
 
-I länder/regioner som stöds kan de flesta lagstadgade rapporter skapas. Information om vilka rapporter som är tillgängliga för varje land/region finns i [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (En CustomerSource-logo ett obligatoriskt fält.)
+I länder/regioner som stöds kan de flesta lagstadgade rapporter skapas. Information om vilka rapporter som är tillgängliga för varje land/region finns i [Microsoft Dynamics Localization Portal](https://docs.microsoft.com/dynamics/s-e/). (En CustomerSource-logo ett obligatoriskt fält.)
 
 > [!NOTE]
 > Ett bokföringsskikt i redovisningen att du kan göra justeringar poster för ett moderbolag som använder en annan redovisningsstandard än det underordnade företaget. För ett företag som använder allmänt accepterad boföringspraxis i Storbritannien (UK GAAP) kan du göra justeringar i bokföringsskiktet, till exempel. Dessa poster kan konsolideras i ett moderbolag som använder allmänt accepterade redovisningsprinciper (GAAP) i USA. Justeringsposterna påverkar inte UK GAAP-rapporteringen.
@@ -241,6 +241,3 @@ Tänk på följande när du implementerar en organisationshierarki:
 - Innan du utformar stora omstruktureringsscenarier använder du hierarkins giltighetsdatum för att utföra en följdanalys och ett valideringstest.
 - Använd utkastläge för att ändra en hierarki innan du publicerar en ny version i en produktionsmiljö.
 - Begränsa antalet personer som har behörighet att lägga till eller ta bort organisationer från en hierarki i en produktionsmiljö. Ett lägre antal minskar risken för kostsamma misstag och behovet av korrigeringar.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

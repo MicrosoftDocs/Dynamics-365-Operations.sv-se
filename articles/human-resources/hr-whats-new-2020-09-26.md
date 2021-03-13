@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4103c0630b72b9b92a116f7fe702a777dd295e25
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: ac72489c3b2dacfde280606a83221e8514793701
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527420"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152207"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources 26 september 2020
 
@@ -31,7 +30,7 @@ ms.locfileid: "4527420"
 
 Det här ämnet beskriver nya, ändrade, kommer snart funktioner i Dynamics 365 Human Resources. Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
-Mer information om nya funktioner och deras förväntade allmänna tillgänglighetsdatum finns i [Översikt över Dynamics 365 Human Resources 2020 utgivningscykel 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
+Mer information om nya funktioner och deras förväntade allmänna tillgänglighetsdatum finns i [Översikt över Dynamics 365 Human Resources 2020 utgivningscykel 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>I den här versionen
 
@@ -52,13 +51,13 @@ Den här versionen innehåller följande felkorrigeringar.
 
 | Utfärda nummer | Utleverans | beskrivning |
 | --- | --- | --- |
-| 469495 | Uppdatera standardrutnät och dialogruta för ekonomiska dimensioner | Standardrutnätet för ekonomiska dimensioner och dialogruta ärr uppdaterade i Human Resources. |
+| 469495 | Uppdatera standardrutnät och dialogruta för ekonomiska dimensioner | Standardrutnätet för ekonomiska dimensioner och dialogruta ärr uppdaterade i Personal. |
 | 474887 | Arbetsuppgiften för ledighetsansökan öppnar fel länk i ett manuellt beslut | När en arbetsflödeskonfiguration innehåller ett manuellt beslut, öppnar jag fellänken genom att navigera till ledighetsansökan från **arbetsuppgifter som har tilldelats till mig**, med antingen ett tomt formulär eller en ledighetsansökan som har skapats av aktuell användare i stället för den som har tilldelats dem för det manuella beslutet. |
 | 474962 | Entiteten parametrar för tjänstledighet och frånvaro har fält med oklara etiketter | Etiketterna för entiteten parametrar för tjänstledighet och frånvaro uppdateras så att de blir tydligare. |
 | 481401 | Periodiseringsbehandling hänger sig vid utgångsdatum för periodisering efter periodisering startdatum och i slutet av månaden | Periodiseringsbehandling uppdateras till att inte ha en försening när datumet för periodiseringen är efter periodiseringens startdatum och i slutet av månaden. |
 | 447167 | Utgångna postlister inkluderar inaktiva arbetare | Fliken **utgående poster** i **personalhantering** inkluderar inaktiva arbetare. Nu ingår bara aktiva arbetare. |
 | 486840 | Fel tjänstledighetsansökan öppnas från **arbetsuppgifter som tilldelats mig** | Om du väljer en tjänstledighetsansökan från **arbetsuppgifter som har tilldelats till mig** öppnas den senaste tjänstledighetsansökan som tilldelats den aktuella användaren. |
-| 506868 | Common Data Service **Rubrik**-fältet har inte angetts för entiteten **Jobbefattning** | Fältet **Rubrik** i entiteterna **Jobb** och **Jobbefattning** visas som ej specificerade. Fältet **Rubrik** visas nu. |
+| 506868 | Dataverse **Rubrik**-fältet har inte angetts för entiteten **Jobbefattning** | Fältet **Rubrik** i entiteterna **Jobb** och **Jobbefattning** visas som ej specificerade. Fältet **Rubrik** visas nu. |
 | 430359 | Kan inte komma åt checklisteuppgifter för avregistrering med chef och medarbetarroller tilldelade | Arbetare med ett framtida uppsägningsdatum kunde inte komma åt sina rapportuppgifter om de bara hade rollen medarbetare eller chef. Nu kan användare med endast en medarbetare eller chefsroll komma åt avregistreringsuppgifter med ett framtida uppsägningsdatum. |
 | 458102 | Ny medarbetare visas inte på entiteten **Information om arbetarlön** när den skapas | Nya medarbetare tas med i entiteten information om arbetarlön utan att du behöver öppna löneinformationen för medarbetaren innan du exporterar enheten. |
 
@@ -68,7 +67,7 @@ Följande nya funktioner är i förhandsgranskning. Mer information om hur du ak
 
 | Funktion | Utgivningsplan | Dokumentation |
 | --- | --- | --- |
-| Human Resources-app i Microsoft Teams | [Tjänstledighet för medarbetare och frånvaro i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Hantera begäranden om ledighet i Teams](hr-teams-leave-app.md) |
+| Personal-app i Microsoft Teams | [Tjänstledighet för medarbetare och frånvaro i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Personal-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Hantera begäranden om ledighet i Teams](hr-teams-leave-app.md) |
 | Förbättrade arbetsflödesförfrågningar och godkännanden | [Arbetsflöden för organisation och personalhantering](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurationsalternativ för placering av lista över arbetsartiklar tilldelade till mig](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 
 ## <a name="coming-soon"></a>Kommer snart
@@ -81,10 +80,7 @@ En fullständig lista över planerade funktioner och deras schemalagda versioner
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Nyheter eller ändringar i Human Resources](hr-admin-whats-new.md)
+[Nyheter eller ändringar i Personal](hr-admin-whats-new.md)
 [Översikt över Dynamics 365 Human Resources 2020 utgivningscykel 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)
 [Uppdatera process](hr-admin-setup-update-process.md)
 [Hantera funktioner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

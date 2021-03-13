@@ -1,6 +1,6 @@
 ---
 title: Borttagna eller utfasade funktioner i tidigare versioner
-description: I det här ämnet beskrivs funktioner som har tagits bort, eller som planerats för borttagning från Dynamics 365 for Finance and Operations och tidigare versioner av produkten.
+description: I det här ämnet beskrivs funktioner som har tagits bort, eller som planerats för borttagning från Dynamics 365 for Finance and Operations och tidigare versioner.
 author: sericks007
 manager: AnnBe
 ms.date: 09/21/2020
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3b862938ec8226cc963fb8c85fcfc2241684eab7
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679966"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154395"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Borttagna eller utfasade funktioner i tidigare versioner
 
@@ -39,7 +39,7 @@ I det här ämnet beskrivs funktioner som har tagits bort eller utfasat från Dy
 
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
-Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
+Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](https://docs.microsoft.com/dynamics/s-e/). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finans 10.0.7 med plattformsuppdatering 31
 
@@ -970,7 +970,7 @@ Verktyget användes för att integrerar viktiga data från Microsoft Dynamics CR
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Funktionen har ersatts med en annan funktion. |
-| **Ersatt av en annan funktion?**   | Common Data Service                                      |
+| **Ersatt av en annan funktion?**   | Dataverse                                      |
 | **Produktområden som påverkas**         | Koppling för Dynamics                         |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.                           |
 
@@ -1373,6 +1373,3 @@ Windows 8 surfplatteapp gav funktion för utgiftsregistrering och godkännande.
 |     <strong>Produktområden som påverkas</strong>     |                                              Huvudbok                                              |
 |             <strong>Status</strong>             |                                      Borttagen från och med Dynamics AX 2012.                                      |
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

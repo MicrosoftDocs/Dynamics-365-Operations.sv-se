@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fe01a2b82b72bf38bb537ed7b2bf5560235817d9
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 036b43d8730b52bddc93c0fc3b47d9d62649e898
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529838"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152183"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (6 oktober 2020)
 
@@ -31,7 +30,7 @@ ms.locfileid: "4529838"
 
 Det här ämnet beskriver nya, ändrade, kommer snart funktioner i Dynamics 365 Human Resources. Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
-Mer information om nya funktioner och deras förväntade allmänna tillgänglighetsdatum finns i [Översikt över Dynamics 365 Human Resources 2020 utgivningscykel 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
+Mer information om nya funktioner och deras förväntade allmänna tillgänglighetsdatum finns i [Översikt över Dynamics 365 Human Resources 2020 utgivningscykel 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>I den här versionen
 
@@ -54,12 +53,12 @@ Den här versionen innehåller följande felkorrigeringar.
 
 | Utfärda nummer | Utleverans | beskrivning |
 | --- | --- | --- |
-| 448806 | **Standard identifieringstyp** exporterar som **RecId** i HCM-parametrar | Denna ändring i entiteten Human Resources-parametrar lägger till ytterligare en kolumn som visar **standard identifieringstypen**. |
+| 448806 | **Standard identifieringstyp** exporterar som **RecId** i HCM-parametrar | Denna ändring i entiteten Personal-parametrar lägger till ytterligare en kolumn som visar **standard identifieringstypen**. |
 | 492923 | Uppgiftsregistreringar sparas inte i Lifecycle Services (LCS) | Uppgiftsregistreringar kan n u sparas i LCS. |
 | 429950 | Fast kompensation upphör inte korrekt när positionen ändras | När en arbetares position ändras på sidan **Överför arbetare** ställdes datumet för slutkompensation in på en dag före positionens slut. Slutdatum för kompensation är nu samma som positionens slutdatum. |
 | 467214 | **Analys av fast lön** visas endast om **Namn på lönesatskonvertering** anges till **Årlig** | Lönesats för fast lön med ett annat namn än **årligt** visades inte i kompensationsanalysen. Med den här uppdateringen använder nu kompensationsanalys alla lönesatskonverteringar. När du kör rapporterna med hjälp av **Varje timme** eller **Lön** använder lönesatskonvertering en annan period än varje timme i filtret **Lön**. Endast lönesatser med en period av **Varje timme** inkluderas i filtret **Varje timme**. |
 | 482464 | När du tittar i vyn **Granskningar** ändrar inte vyn **Detaljer** till rutnätsvy efter att du har använt ett filter | När du har använt ett filter visas rutnätet som förväntat. |
-| 483184 | Human Resources genererar inte periodiseringar när du väljer **nivåbas** som **justerat startdatum** i posten **Anmälan om tjänstledighet** |**Justerat startdatum** fylls i och används när tjänstledighetsperiodiseringar genereras.  |
+| 483184 | Personal genererar inte periodiseringar när du väljer **nivåbas** som **justerat startdatum** i posten **Anmälan om tjänstledighet** |**Justerat startdatum** fylls i och används när tjänstledighetsperiodiseringar genereras.  |
 | 509731 | Ledighetsansökan för framtida uppsagda medarbetare orsakar problem om de ansöker om ledighet efter uppsägningsdatum | Ledighetsansökningar kan nu skickas för medarbetare med ett framtida uppsägningsdatum så länge som begäran infaller före uppsägningsdatumet. |
 | 510716 | Kompensationsanalys inkluderar både manliga och kvinnliga medarbetare för **genomsnittlig timlön för män** | I kompensationsanalys inkluderar **genomsnittlig timlön för män** i **kompensationens demografiska analys** genomsnittlig lön för kvinnor. Nu omfattar det bara män. |
 | 511348 | Förmånerna självbetjäning ska bara visa förmånsplaner som är giltiga från och med i slutet av förmånsperioden | Utgångna förmånsplaner visas för medarbetare på sidan **förmånsanmälan**. Denna korrigeringsfil tar bort dessa planer. |
@@ -71,17 +70,17 @@ Följande nya funktioner är i förhandsgranskning. Mer information om hur du ak
 
 | Funktion | Utgivningsplan | Dokumentation |
 | --- | --- | --- |
-| Human Resources-app i Microsoft Teams | [Tjänstledighet för medarbetare och frånvaro i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Hantera begäranden om ledighet i Teams](hr-teams-leave-app.md) |
+| Personal-app i Microsoft Teams | [Tjänstledighet för medarbetare och frånvaro i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Personal-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Hantera begäranden om ledighet i Teams](hr-teams-leave-app.md) |
 | Förbättrade arbetsflödesförfrågningar och godkännanden | [Arbetsflöden för organisation och personalhantering](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurationsalternativ för placering av lista över arbetsartiklar tilldelade till mig](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
-| Virtuella enheter i Common Data Service för Human Resources | [Expandera Dynamics 365 Human Resources grundläggande data i Common Data Service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Konfigurera Common Data Service virtuella enheter](hr-admin-integration-common-data-service-virtual-entities.md) |
+| Virtuella enheter i Dataverse för Personal | [Expandera Dynamics 365 Human Resources grundläggande data i Dataverse](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Konfigurera Dataverse virtuella enheter](hr-admin-integration-common-data-service-virtual-entities.md) |
 
 ## <a name="coming-soon"></a>Kommer snart
 
 Följande nya funktioner är schemalagda för framtida versioner:
 
-- **Entiteter för checklista inkluderade i Common Data Service**: Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga i Common Data Service.
+- **Entiteter för checklista inkluderade i Dataverse**: Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga i Dataverse.
 
-- **Orsakskoder för hantering av förmåner**: Orsakskoder för förmånshantering kommer snart att kombineras med befintliga orsakskoder i Human Resources. Om du skapade orsakskoder i en förmånshantering som är över 15 tecken stora måste du ändra namnet på orsakskoden i formuläret för förmåner i förmånshanteringens formulär **orsakskoder** till 15 tecken eller mindre. När du har uppdaterat namnet visas orsakskoden under formuläret befintlig orsakskod i personalhantering. Den här ändringen kommer att vara tillgänglig i framtiden och påverkar inte befintliga funktioner.
+- **Orsakskoder för hantering av förmåner**: Orsakskoder för förmånshantering kommer snart att kombineras med befintliga orsakskoder i Personal. Om du skapade orsakskoder i en förmånshantering som är över 15 tecken stora måste du ändra namnet på orsakskoden i formuläret för förmåner i förmånshanteringens formulär **orsakskoder** till 15 tecken eller mindre. När du har uppdaterat namnet visas orsakskoden under formuläret befintlig orsakskod i personalhantering. Den här ändringen kommer att vara tillgänglig i framtiden och påverkar inte befintliga funktioner.
 
 - **Anpassade länkar i självbetjäning för chef**: för att stödja chefer utökas funktionerna i självbetjäning för chef. Funktionerna läggs till för att lägga till anpassade länkar på fliken **Mitt team**. Den här funktionen liknar funktionen anpassade länkar på **Min informationsfliken** i självbetjäning för medarbetare. Mer information finns i [Anpassade länkar i självbetjäning för chef](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
 
@@ -89,10 +88,7 @@ En fullständig lista över planerade funktioner och deras schemalagda versioner
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
-[Översikt över Dynamics 365 Human Resources 2020 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/)</br>
+[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
+[Översikt över Dynamics 365 Human Resources 2020 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

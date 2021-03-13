@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c66481b1dd8650960cad2947425c1e6c7450afcb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d6ba2e1a3a884d29bff491f914aa2d5f9ece2b84
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437909"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154237"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Importera historikdata för efterfrågeprognoser
 
@@ -36,29 +35,29 @@ I arbetsytan **Datahantering** kan du visa en översikt över alla fält i entit
 1. Öppna arbetsytan **Datahantering**.
 2. Klicka på fliken **Dataenheter**.
 3. Sök enhetslistan för **Historisk extern efterfrågan**.
-4. Klicka på **Målfält**. Följande enhetsfält är obligatoriska: webbplats (**DeliveringSiteId**), datum (**DemandDate**), kvantitet (**DemandQuantity**) samt antingen artikelnummer (**ItemNumber**) eller artikelallokeringsnyckel (**ProductAllocationKeyId**).
+4. Välj **målfält**. Följande enhetsfält är obligatoriska: webbplats (**DeliveringSiteId**), datum (**DemandDate**), kvantitet (**DemandQuantity**) samt antingen artikelnummer (**ItemNumber**) eller artikelallokeringsnyckel (**ProductAllocationKeyId**).
 
 Du måste ha en Microsoft Excel-fil eller kommaseparerade värden (CSV) som innehåller historiska efterfrågeuppgifter data om du vill använda dataenheten. I följande exempel visas hur du importerar data från en CSV-fil.
 
+Mer information om hur du importerar data, bland annat hur du rensar data efter en import, finns i [Översikt över dataimport- och exportjobb](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) samt relaterade ämnen.
+
 ## <a name="example"></a>Exempel
 
-Du kan använda följande fil som exempel. Hämta [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast). Denna fil innehåller historiska efterfrågedata för artikel D0001. Den innehåller endast följande obligatoriska fält: webbplats, kvantitet och efterfrågedatum.
+Du kan använda följande fil som exempel. Hämta [HistoricalDemandData](https://docs.microsoft.com/dynamics/s-e/). Denna fil innehåller historiska efterfrågedata för artikel D0001. Den innehåller endast följande obligatoriska fält: webbplats, kvantitet och efterfrågedatum.
 
 1. Välj det företag som du vill importera de historiska efterfrågeuppgifterna till.
 2. Öppna arbetsytan **Datahantering**.
-3. Klicka på fliken **Importera**.
+3. Välj panelen **Import**.
 4. Namnge importprojektet, exempelvis **Importera historisk efterfrågan för artikeln D0001**.
 5. I fältet **Källdataformat** väljer du filformat för den fil som du importerar. Om du vill importera filen HistoricalDemandData i det här exemplet väljer du **CSV**.
 6. I fältet **Enhetsnamn** väljer du **Historisk extern efterfrågan**.
 7. Spara filen på din dator och överför den sedan.
-8. Klicka på **Importera**.
+8. Välj **Importera**.
 9. Sidan **Utförandesummering** öppnas automatiskt. Kontrollera den importerade informationen på sidan.
 
 När du har importerat efterfrågehistoriken kan du skapa en efterfrågeprognos.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)  
+[Översikt över jobb för import och export av data](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
