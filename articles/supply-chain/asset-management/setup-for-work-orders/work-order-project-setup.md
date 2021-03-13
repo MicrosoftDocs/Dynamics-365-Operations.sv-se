@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjectSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a51837275203dc2d4f31dc4dec9bf970a7ebeba7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 031e61549474745360ac00f9a66bef7a9dbaaf96
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437493"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021564"
 ---
 # <a name="work-order-project-setup"></a>Projektinställningar för arbetsorder
 
@@ -86,6 +85,3 @@ Inställningen möjliggör fullständig integration med modulen **Projekthanteri
 > Varje gång en arbetsorderrad skapas söker Tillgångshantering efter en projektgrupp som ska relateras till jobbprojektet för arbetsordern. Sökningen baseras på inställningarna som beskrivs i det här avsnittet. Varje projektgrupp har en relaterad projekttyp. Projekt grupper som har projekttypen **Tid och material** eller **Fastpris** är endast giltiga för tillgångar som är relaterade till ett kundkonto.
 >
 > När det tillgängliga arbetsorderprojektet eller projektgruppen väljs i systemet för överordnade projekt och projekt grupper, baseras valet på de poster som du skapade med hjälp av föregående procedur. Tillgångshantering går igenom poster som är relaterade till arbetsorderprojektet för att söka efter en eventuell matchning. Den kontrollerar alltid den mest specifika kombinationen först. Med andra ord, för arbetsorderns överordnade projekt söker Tillgångshantering först efter en möjlig matchning för fältet **Tillgång**. Om ingen matchning hittas söker den efter en matchning för fältet **Tillgångstyp**. Om ingen matchning hittas söker den efter en matchning för fältet **Funktionsplats** och så vidare. Som du kan se i layouten på sidan **Projektinställningar för arbetsorder** innebär detta att, för att hitta den mest specifika kombinationen, kontrollerar Tillgångshantering varje post från höger till vänster för en matchning. Om det inte finns någon matchning används den standardpost där endast ett projekt-ID har valts. Du hittar den relaterade projektgruppen på samma sätt. Tillgångshantering kontrollerar först en möjlig matchning för fältet **Tillgång**, sedan fältet **Tillgångstyp** och sedan fältet **Arbetsordertyp**. Om det inte finns någon matchning används den standardpost där endast en projektgrupp har valts.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
