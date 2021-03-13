@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 59d7274c3b40e78209d90960c4514321b736876a
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: b4196532be8ad40bacb8d614c6b0c86215b00bdb
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4420665"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114253"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Förbered publicering av Human Resource
 
@@ -53,28 +53,36 @@ I följande tabell anges alla steg i processen, den förväntade varaktigheten o
 
 ## <a name="completing-the-lcs-methodology"></a>Slutföra den LCS-metoden
 
-En viktig milstolpe i varje implementeringsprojekt är övergången till produktionsmiljön. 
-
-För att säkerställa att produktionsmiljön används för publiceringsåtgärder, tillhandahåller Microsoft produktionsinstansen endast när implementeringsfasen närmar sig fasen **Drift**, efter att de obligatoriska åtgärderna i LCS-metoden har slutförts. Mer information om dina miljöer i abonnemanget finns i  [licensguiden för Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544). 
-
-Kunderna måste slutföra faserna **analys**, **utforma och utveckla** och **testa** i LCS-metoden innan knappen  **Konfigurera**  för att begära att produktionsmiljön blir tillgänglig. Om du vill slutföra en fas i LCS måste du först slutföra alla nödvändiga steg i den fasen. När alla steg i en fas har slutförts kan du slutföra hela fasen. Du kan alltid öppna en fas igen senare om du måste göra ändringar. Mer information finns i  [Lifecycle Services (LCS) för Finance and Operations-appkunder](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
-
-Processen för att slutföra ett steg består av två delar: 
+En viktig milstolpe i varje implementeringsprojekt är övergången till produktionsmiljön. Processen för att slutföra ett steg består av två delar: 
 
 - Utför det verkliga arbetet, t.ex. en bristanalys och ett testning av användargodkännande (UAT). 
 - Markera motsvarande steg i LCS-metoden som slutförd. 
 
-Det är en god idé att slutföra stegen i metodiken när du gör framsteg med implementeringen. Vänta inte förrän den senaste minuten. Klicka inte bara igenom stegen så att du kan få en produktionsmiljö. Det är i kundens bästa intresse att ha en heltäckande implementering. 
+Det är en god idé att slutföra stegen i metodiken när du gör framsteg med implementeringen. Vänta inte förrän den senaste minuten. Det är i kundens bästa intresse att ha en heltäckande implementering. 
 
 ## <a name="uat-for-your-solution"></a>UAT för din lösning
 
 Under UAT-fasen måste du testa alla affärsprocesser som du har implementerat och de anpassningar som du har gjort i en miljö i begränsat läge i implementeringsprojektet. För att säkerställa en lyckad publicering bör du tänka på följande när du fyller i UAT-fasen: 
 
+- Vi rekommenderar att din UAT-process startar med en ren och ny miljö där data från DIN GOLD-konfiguration kopieras till miljön innan UAT-processen startas. Vi rekommenderar att du använder produktionsmiljön som din GULD-miljö tills du går-live, då miljön blir produktion.
 - Testärenden täcker hela kraven. 
 - Testa genom att använda migrerade data. Dessa data bör inkludera huvuddata som arbetare, jobb och befattningar. Ta även med ingående balanser, som periodiseringar av tjänstledighet och frånvaro. Slutligen ska du inkludera öppna transaktioner, t.ex. aktuella förmånsregistrering. Slutför testningen med alla datatyper, även om datauppsättningen inte har slutförts. 
 - Testa genom att använda rätt säkerhetsroller (standardroller och anpassade roller) som tilldelas användare. 
 - Se till att lösningen följer eventuella företags- och branschspecifika föreskrifter. 
 - Dokumentera alla funktioner och få godkännande och undertecknade av kunden. 
+
+## <a name="mock-go-live"></a>Testlansering
+
+Innan du lanserar måste du utföra en testlansering för att testa vilka steg som krävs för att ta steget från dina äldre system till det nya systemet. Du ska utföra din testlansering i en sandbox-miljö och ta med alla steg i din omställningsplan.
+
+- Vi rekommenderar att du använder produktionsmiljön som GULD-konfigurationsmiljö före lansering.
+- Se till att du har en stark styrningsprocess på plats för att skydda produktionsmiljön från oavsiktlgia transaktioner eller uppdateringar före lanseringen.
+- När du är klar att utföra UAT eller testlanseringen uppdaterar du sandbox-miljön från produktionsmiljön. Mer information finns i [Kopiera en isntans](hr-admin-setup-copy-instance.md).
+- Testa varje steg i din övergångsplan i sandbox-miljön och validera den sedan sandbox-miljön genom att utföra stickprov eller tester från dina UAT-skript i miljön.
+  - Testerna ska omfatta alla datamigreringar, inklusive de omvandlingar som behövs för lanseringen.
+  - Processen bör inkludera en övningsavstängning av alla äldre system.
+  - Se till att inkludera alla integrationsövergångssteg eller externa systemsteg i din testövergång.
+- Om det skulle uppstå problem under testomställningen kan det bli nödvändigt med en andra testomställning. Därför rekommenderar vi att du planerar för två testomställningar i projektplanen.
 
 ## <a name="fasttrack-go-live-assessment"></a>FastTrack publiceringsutvärdering
 
@@ -91,5 +99,3 @@ När du har skickat in checklistan granskar din FastTrack lösningsarkitekt proj
 ## <a name="see-also"></a>Se även
 
 [Frågor och svar om publicering](hr-admin-go-live-faq.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

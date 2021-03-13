@@ -2,7 +2,7 @@
 title: Konfigurera berättiganderegler och alternativ
 description: Ange berättiganderegler och optioner för hantering av förmåner i Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70054acafc3aec35fd985c0ca81e928519ddd0a3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2920a03eaec226b306d03ebf8b899113128c410e
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420542"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114283"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurera berättiganderegler och alternativ
 
@@ -69,7 +69,7 @@ Medarbetarna kan välja förmånsplaner under den öppna anmälan. Om de är ol�
    | **Berättigad jobbtyp** | Anger den jobbtyp eller de jobbtyper som uppfyller berättiganderegeln. Till exempel tjänstemän eller chefer. |
    | **Berättigad juridisk person** | Anger den juridiska personen eller de juridiska personer som är giltiga för berättiganderegeln. Till exempel Contoso Entertainment System USA. |
    | **Region för berättigad kompensation** | Anger den medarbetarplats som uppfyller berättiganderegeln. Till exempel centrala USA. |
-   | **Berättigad befattning** | Anger den befattning eller de befattningar som uppfyller berättiganderegeln. Till exempel personalmedarbetare eller personalchef. |
+   | **Berättigad befattning** | Anger den befattning eller de befattningar som uppfyller berättiganderegeln. Till exempel personalmedarbetare eller anställande chef. |
    | **Berättigad befattningstyp** | Anger den befattningstyp eller de befattningstyper som uppfyller berättiganderegeln. Till exempel heltid. |
    | **Berättigad delstat** | Anger de stater eller provinser som uppfyller berättiganderegeln. Till exempel North Dakota USA eller British Columbia, Kanada. |
    | **Berättigande anställningsvillkor** | Anger de anställningsvillkor som uppfyller berättiganderegeln. Till exempel provanställning eller gruppavtal. |
@@ -176,6 +176,3 @@ Program är en uppsättning förmånsplaner som delar en gemensam uppsättning r
    | **Berättiganderegler** | Välj de berättiganderegler som ska användas för förmånsprogrammet. Du definierar reglerna för berättigande på fliken **berättiganderegler** på den här sidan. |
    
 4. Välj **Spara**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

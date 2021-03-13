@@ -1,7 +1,7 @@
 ---
 title: Tillägg för lagersynlighet
 description: I det här avsnittet beskrivs hur du installerar och konfigurerar tillägg för lagersynlighet för Dynamics 365 Supply Chain Management.
-author: chuzheng
+author: sherry-zheng
 manager: tfehr
 ms.date: 10/26/2020
 ms.topic: article
@@ -10,28 +10,28 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 2976153a6a7e4b4130e8f7673ed128945aeabf65
-ms.sourcegitcommit: 03c2e1717b31e4c17ee7bb9004d2ba8cf379a036
+ms.openlocfilehash: 4e6f7e0a3978bbf7e520f8cbcfd27c4cfe507777
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "4625075"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114680"
 ---
 # <a name="inventory-visibility-add-in"></a>Tillägg för lagersynlighet
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 Tillägget för lagersynlighet är en oberoende och mycket skalbar mikrotjänst som möjliggör spårning av lagerbehållning i realtid, vilket ger en global vy över lagersynlighet.
 
 All information som rör lagerbehållning exporteras till tjänsten i nära real tid genom SQL-integration på låg nivå. Externa system kommer åt tjänsten via RESTful-API:er för att fråga efter information om givna dimensionsuppsättningar och på så sätt hämta en lista över tillgängliga lagerbehållningar.
 
-Lagersynlighet är en mikrotjänst som bygger på Common Data Service, vilket innebär att du kan utöka den genom att bygga Power Apps och använda Power BI för att tillgodose dina affärsbehov. Det går också att uppgradera indexet för att göra lagerfrågor.
+Lagersynlighet är en mikrotjänst som bygger på Microsoft Dataverse, vilket innebär att du kan utöka den genom att bygga Power Apps och använda Power BI för att tillgodose dina affärsbehov. Det går också att uppgradera indexet för att göra lagerfrågor.
 
 Lagersynlighet innehåller konfigurationsalternativ som kan integreras med flera system från andra tillverkare. Det stöder standardiserad lagerdimension, anpassad utökning och standardiserade, konfigurerbara kvantiteter som kan konfigureras.
 
@@ -78,30 +78,57 @@ För att installera tillägget för lagersynlighet måste du göra följande:
 
 ### <a name="get-a-security-service-token"></a>Hämta en säkerhetstoken för säkerhetstjänst
 
-Gör så här om du vill hämta en säkerhetstjänsttoken:
+Hämta en säkerhetstjänsttoken genom att göra följande:
 
-1. Hämta `aadToken` och ring upp slutpunkten: https://securityservice.operations365.dynamics.com/token.
-1. Ersätt `client_assertion` i brödtexten med `aadToken`.
-1. Ersätt kontexten i brödtexten med miljön där du vill distribuera tillägget.
-1. Ersätt omfattningen i brödtexten med följande:
+1. Logga in på Azure-portalen och använd den för att hitta `clientId` och `clientSecret` för din Supply Chain Management-app.
+1. Hämta ett Azure Active Directory-token (`aadToken`) genom att skicka en HTTP-begäran med följande egenskaper:
+    - **URL** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+    - **Metod** - `GET`
+    - **Brödtext (formulärdata)**:
 
-    - Omfång för MCK - "https://inventoryservice.operations365.dynamics.cn/.default"  
-    (Du kan hitta Azure Active Directory app-ID och klientorganisations-ID för MCK i `appsettings.mck.json`).
-    - Omfång för PROD - "https://inventoryservice.operations365.dynamics.com/.default"  
-    (Du kan hitta Azure Active Directory app-ID och klientorganisations-ID för PROD i `appsettings.prod.json`).
+        | nyckel | värde |
+        | --- | --- |
+        | klient-ID | ${aadAppId} |
+        | client_secret | ${aadAppSecret} |
+        | grant_type | client_credentials |
+        | resurs | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+1. Du bör få `aadToken` i svar, som liknar följande exempel.
 
-    Resultatet bör likna följande exempel:
+    ```json
+    {
+    "token_type": "Bearer",
+    "expires_in": "3599",
+    "ext_expires_in": "3599",
+    "expires_on": "1610466645",
+    "not_before": "1610462745",
+    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+    "access_token": "eyJ0eX...8WQ"
+    }
+    ```
+
+1. Formulera en JSON-begäran som liknar följande:
 
     ```json
     {
         "grant_type": "client_credentials",
         "client_assertion_type":"aad_app",
-        "client_assertion": "{**Your_AADToken**}",
-        "scope":"**https://inventoryservice.operations365.dynamics.com/.default**",
-        "context": "**5dbf6cc8-255e-4de2-8a25-2101cd5649b4**",
+        "client_assertion": "{Your_AADToken}",
+        "scope":"https://inventoryservice.operations365.dynamics.com/.default",
+        "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
         "context_type": "finops-env"
     }
     ```
+
+    Där:
+    - Värdet `client_assertion` måste vara det `aadToken` du tog emot i föregående steg.
+    - Värdet `context` måste vara det miljö-ID där du vill distribuera tillägget.
+    - Ställ in alla andra värden enligt exemplet.
+
+1. Skicka en HTTP-begäran med följande egenskaper:
+    - **URL** - `https://securityservice.operations365.dynamics.com/token`
+    - **Metod** - `POST`
+    - **HTTP-rubrik** - Inkludera API-versionen (nyckeln är `Api-Version` och värdet är `1.0`)
+    - **Brödtext** - Inkludera den JSON-begäran som du skapade i det föregående steget.
 
 1. Du får ett `access_token` i svar. Detta är vad du behöver som ägartoken för att anropa API för lagersynlighet. Här är ett exempel:
 
@@ -500,6 +527,3 @@ Frågorna som visas i föregående exempel kan returnera resultatet.
 ```
 
 Observera att kvantitetsfälten är strukturerade som en ordlista med mått och tillhörande värden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

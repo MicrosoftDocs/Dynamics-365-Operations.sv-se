@@ -1,5 +1,5 @@
 ---
-title: Skicka fakturor till arbetsflödessystemet och matcha produktinleveransrader (förhandsversion)
+title: Skicka fakturor till arbetsflödessystemet och matcha produktinleveransrader
 description: I det här avsnittet förklaras hur du skickar leverantörsfakturor till arbetsflödessystemet och automatiskt matchar bokförda produktinleveranser på leverantörsfakturor.
 author: abruer
 manager: AnnBe
@@ -11,23 +11,21 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cde164ee89b542d769d81d8d483049fb7ca001c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 03c9f6752a0bb9641f67d65580aca18276e43e9a
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447850"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115666"
 ---
-# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines-preview"></a>Skicka fakturor till arbetsflödessystemet och matcha produktinleveransrader (förhandsversion)
+# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Skicka fakturor till arbetsflödessystemet och matcha produktinleveransrader
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 I det här avsnittet förklaras hur du skickar leverantörsfakturor till arbetsflödessystemet och automatiskt matchar bokförda produktinleveranser på leverantörsfakturor.
 
@@ -47,13 +45,10 @@ Processen kommer att köras tills den matchade kvantiteten för produktinleveran
 
 Fakturarader som har en policy för trevägsmatchning där den avstämda inleveranskvantiteten är mindre än den fakturerade kvantiteten, kommer att inkluderas i den automatiska processen matcha till produktinleverans.
 
-Om du vill visa statusen **senaste matchning** för fakturor som inte ingår i den automatiserade processen skicka till arbetsflöde öppnar du fakturan från sidan **Leverantörsfakturor**. När du visar fakturan uppdateras den matchande valideringsinformationen.
+Om du vill visa statusen **senaste matchning** för fakturor som inte ingår i den automatiserade processen skicka till arbetsflöde öppnar du fakturan från sidan **Leverantörsfakturor**. När du visar fakturan uppdateras den matchande valideringsinformationen. Statusvärdet för **Senaste matchning** an uppdateras automatiskt med hjälp av bakgrundsuppgiften **Validera fakturamatchning**. Du kan konfigurera automatisk uppdatering av statusvärdet **Senaste matchning** på fliken **Bakgrundsprocesser** på sidan **Processautomatiseringar** (**Systemadminstration\> Inställningar\> Processautomatiseringar**).
 
 En fakturarad exkluderas från den automatiska bearbetningen om något av följande villkor uppfylls:
 
 - Värdet **Status för automatisk inleveransmatchning** för fakturaraden är **misslyckades**.
 - Fakturan används.
 - Fakturan är i arbetsflödessystemet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

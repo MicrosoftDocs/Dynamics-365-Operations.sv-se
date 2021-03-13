@@ -2,7 +2,7 @@
 title: Skapa en förmånsplan
 description: Ställ in förmånsplaner i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bcbf4c1a7f136e5563bf1210b6c09228dad95dea
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 05d08862b880271fb4842bd7e77f04208f9c0bed
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420544"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114326"
 ---
 # <a name="create-a-benefits-plan"></a>Skapa en förmånsplan
 
@@ -159,6 +159,3 @@ Du kan ge en beskrivning av planen för att hjälpa de medarbetare som har urval
 1. I arbetsytan **Hantering av förmåner** under **Planer**, välj **förmånsplaner**.
 
 2. Välj **Flexkreditprogram**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

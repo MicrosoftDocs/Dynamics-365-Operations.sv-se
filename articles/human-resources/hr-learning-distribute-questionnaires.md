@@ -2,7 +2,7 @@
 title: Skicka ut och schemalägg enkäter
 description: Den här artikeln beskrivs hur du fördelar de enkäter som du utformar så att de blir tillgängliga för personen eller gruppen med personer som ska fylla i dem.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0329b80615eed6efcc22bb0b140970988f5c306a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 25a53d921f8c0761ec931831810b484cfbd00718
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420651"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115762"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Skicka ut och schemalägg enkäter
 
@@ -131,6 +131,3 @@ När du har utformat och har fördelat en enkät kan den besvaras av valda svara
 Enkäter kan göras tillgängliga för vissa användare eller grupper av användare eller för alla användare i ett nätverk.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

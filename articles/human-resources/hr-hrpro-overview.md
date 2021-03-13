@@ -2,7 +2,7 @@
 title: Översikt
 description: Användarhandboken för Dynamics 365 Human Resources innehåller anvisningar om hur du ställer in personal, ställer in kompensation och fördelar för medarbetarna och hanterar personalen.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 32a7ca7c74b3f84519145d26c6e0461f546dbee3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 78fddd033c777f5be6408d5e2db691ae966edb3a
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420657"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115256"
 ---
 # <a name="overview"></a>Översikt
 
@@ -32,8 +32,8 @@ Användarhandboken för Dynamics 365 Human Resources innehåller anvisningar om 
 ## <a name="set-up-human-resources"></a>Ställ in personal
 
 [Konfigurera personalparametrar](hr-setup-parameters.md)</br>
-[Konfigurera delade Human Resources-parametrar](hr-setup-shared-parameters.md)</br>
-[Ställa in arbetsflöden för Human Resources](hr-setup-workflows.md)</br>
+[Konfigurera delade Personal-parametrar](hr-setup-shared-parameters.md)</br>
+[Ställa in arbetsflöden för Personal](hr-setup-workflows.md)</br>
 [Förstå Datum- och tid-fält](hr-setup-date-time-fields.md)</br>
 
 ## <a name="configure-organization-settings"></a>Konfigurera organisationsinställningar
@@ -60,10 +60,9 @@ Användarhandboken för Dynamics 365 Human Resources innehåller anvisningar om 
 [Ändra rapporteringsrelationer för en befattning](hr-personnel-modify-reporting-relationships-position.md)</br>
 [Ange arbetarinformation](hr-personnel-enter-worker-information.md)</br>
 [Låna ut artiklar till arbetare](hr-personnel-loan-item-worker.md)</br>
-[Ange projekttidrapporter](hr-personnel-enter-project-timesheets.md)</br>
 [Massanställningsprojekt](hr-personnel-mass-hire-projects.md)</br>
 [Ställ in befattningar](hr-personnel-set-up-positions.md)</br>
-[Ställa in information om skador och sjukdomar](hr-personnel-set-up-injury-illness-information.md)</br>
+[Ställ in information om skador och sjukdomar](hr-personnel-set-up-injury-illness-information.md)</br>
 
 ## <a name="set-up-compensation-plans"></a>Ställ in kompensationsplaner
 
@@ -128,6 +127,3 @@ Användarhandboken för Dynamics 365 Human Resources innehåller anvisningar om 
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

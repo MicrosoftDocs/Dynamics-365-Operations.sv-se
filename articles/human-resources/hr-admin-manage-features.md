@@ -1,8 +1,8 @@
 ---
-title: Hantera funktioner
+title: Hantera funktioner i Personal
 description: Läs mer om hur du aktiverar och inaktiverar nya funktioner i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d400604bf1b044de52457b3f7a6eb858220a1972
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420629"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114346"
 ---
-# <a name="manage-features"></a>Hantera funktioner
+# <a name="manage-features-in-human-resources"></a>Hantera funktioner i Personal
 
 Som en del av vår kontinuerliga distribution av ny funktioner för Microsoft Dynamics 365 Human Resources, vill vi att kunder får nya funktioner så snart som möjligt. Vi tillhandahåller förhandsfunktioner som snart är allmänt tillgänglig och har genomgått omfattande testning. Vi söker bara en slutlig runda av feedback från kunder och validering innan vi gör dem allmänt tillgångliga.
 
@@ -94,5 +94,3 @@ Inkludera inte personuppgifter (all information som kan identifiera dig) i feedb
 
 - [Nyheter i Personal](hr-admin-whats-new.md)
 - [Utgivningsplan för Dynamics 365 och Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

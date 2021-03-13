@@ -2,7 +2,7 @@
 title: Uppdatera process
 description: Microsoft Dynamics 365 Human Resources är en äkta programvara som en tjänst (SaaS) som tillhandahåller kontinuerliga, beröringsfria tjänstuppdateringar för app- och plattformsändringar.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d841a026f589d774ec5ada3ac9adcc84dde9aee1
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 4bb5f7dc17c8f4f3a54bd285cb55088f2176db4a
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527822"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114271"
 ---
 # <a name="update-process"></a>Uppdatera process
 
@@ -43,7 +43,7 @@ Personaluppdateringar tillämpas automatiskt på alla miljöer. I personal finns
 
     Alla datacenter som stöds uppdateras varannan vecka, om inget annat anges. Regionerna USA, Australien, Europa, Storbritannien, Asien och Kanada ingår i uppdateringar varannan vecka. 
 
-- **Uppdateringar av Common Data Service-lösning**: dessa uppdateringar sker var sjätte vecka, efter behov. De innehåller nya entiteter och ändringar i befintliga entiteter i Common Data Service. Dessa uppdateringar frisläpps på samma områden som uppdateringar varannan vecka och de tar ungefär sex veckor att replikera genom alla datacenter. Uppdateringar av lösningen kan eventuellt justeras med tjänstuppdateringar varannan vecka.
+- **Uppdateringar av Dataverse-lösning**: dessa uppdateringar sker var sjätte vecka, efter behov. De innehåller nya entiteter och ändringar i befintliga entiteter i Dataverse. Dessa uppdateringar frisläpps på samma områden som uppdateringar varannan vecka och de tar ungefär sex veckor att replikera genom alla datacenter. Uppdateringar av lösningen kan eventuellt justeras med tjänstuppdateringar varannan vecka.
 
 > [!NOTE]
 > Lösningsuppdateringar är tillgängliga på alla datacenter när de har frisläppts. Om du inte vill vänta på att uppdateringarna ska replikeras automatiskt kan du installera dessa uppdateringar manuellt på alla miljöer i datacentret.
@@ -60,8 +60,8 @@ Versioner granskas, testas och valideras i en intern miljö. När versioner har 
 
 För att kunna redovisa helgdagar är publicering av version för november och december 2020 följande:
 
-- November version: 2 november - 13 november
-- December version: 30 november - 11 december
+- November version: 2 november – 13 november
+- December version: 30 november – 11 december
  
 Frisläppningstakten på två veckor kommer att återupptas som vanligt den 11 januari, 2021.
 
@@ -105,6 +105,3 @@ När du testar förhandsgranskningsfunktioner eller försöker med nya funktione
 [Nyheter och ändringar i Dynamics 365 Personal](hr-admin-whats-new.md)</br>
 [Livscykelpolicy för programmet](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

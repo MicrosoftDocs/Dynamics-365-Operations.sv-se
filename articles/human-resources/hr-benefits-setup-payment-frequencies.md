@@ -2,7 +2,7 @@
 title: Ställa in betalningsfrekvenser
 description: Microsoft Dynamics 365 Human Resources använder lönefrekvenser för att beräkna årliga inkomsten av förmånen, avgör vilket förmånsbelopp en medarbetare betalar varje betalningsperiod och definierar hur ofta betalningar görs till providers.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a5d562b64a161891bf34b0dfa94fbf68325e21b5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f5a2ad19d9f9f3a6afa2574d9fdb8841c70d6e6e
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420615"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114321"
 ---
 # <a name="set-up-payment-frequencies"></a>Ställa in betalningsfrekvenser
 
@@ -56,6 +56,3 @@ Fälten konverteringsfaktorer identifierar konverteringsfaktorn från lönefrekv
    | **Timkonverteringsfaktor** | Den årliga konverteringsfaktorn för betalningsfrekvensen. Den årliga konverteringsfaktorn för månadsvis lönefrekvens är t.ex.: </br></br>(12 månadsbetalningar/2080 timmar) = 0,005769
 
 4. Välj **Spara**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

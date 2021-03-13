@@ -2,7 +2,7 @@
 title: Det går inte att skapa en miljö i administrationscentret för Power Apps
 description: Det här avsnittet beskriver vad du gör om administratören inte kan skapa en miljö i Microsoft Power Apps-administrationscenter.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 68e6dbcbbc9811211570e968047f5faa8a2c8bd0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 664c644c9b34e3489b4134040e165d26202dbd38
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420567"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114297"
 ---
 # <a name="cant-create-an-environment-in-the-power-apps-admin-center"></a>Det går inte att skapa en miljö i administrationscentret för Power Apps
 
 **Utleverans**
 
 - Administratören för klientorganisation/miljö kan inte skapa en miljö i Microsoft Power Apps Admin center.
-- En licens som ger användaren rättigheter att utföra steget för att skapa miljö har inte tilldelats direkt till användaren som genomför detta steg.
+- Användaren har ingen licens som ger rätt att skapa miljöer.
 
 **Lösning**
 
-Se till att klientorganisationens administratör har tilldelats en giltig licens för Power Apps P2 direkt till den användare som ska utföra steget för att skapa miljö. Här är de Microsoft Dynamics serviceplaner som tillhandahåller denna rättighet.
+Kontrollera att klientorganisationens administratör ar tilldelat en giltig Power Apps P2-licens till användaren som skapar miljön. Följande Microsoft Dynamics-serviceplaner ger behörigheter att skapa miljöer:
 
 | Total lagerhållningsenhet för produkt (SKU)       | Power Apps P2 serviceplan  |
 |------------------------------------------------|----------------------------|
@@ -44,6 +44,3 @@ Observera att olika Microsoft Office SKU:er också ger rättigheten tillsammans 
 
 1. Gå till [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).
 2. Skapa miljöerna genom att följa instruktionerna i [Etablera Personal](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

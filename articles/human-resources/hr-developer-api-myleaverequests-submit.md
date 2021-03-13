@@ -2,7 +2,7 @@
 title: Skicka en ledighetsansökan till arbetsflödet
 description: I Microsoft Dynamics 365 Human Resources kan du använda API:n MyLeaveRequests submit() (Application Programming Interface) för att skicka en begäran till arbetsflöde.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7552a4c921dc4a88034b5d2c87d5a9b47d699ae3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 51be70edbe1439340377fd01b9760d49d3a75348
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420520"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115522"
 ---
 # <a name="submit-a-leave-request-to-workflow"></a>Skicka en ledighetsansökan till arbetsflödet
 
@@ -31,7 +31,7 @@ I Microsoft Dynamics 365 Human Resources kan du använda API:n MyLeaveRequests s
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Tjänstledighetsförfrågan måste sparas i databasen och måste kunna hämtas via MyLeaveRequests-entiteten.
+Tjänstledighetsbegäran måste sparas i databasen och måste kunna hämtas via MyLeaveRequests-entiteten.
 
 ## <a name="permissions"></a>Behörighet
 
@@ -51,7 +51,7 @@ POST https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/M
 Begäran följer OData-standarder. Parametrarna {requestId}, {leaveType}, {leaveDate} och {dataArea} refererar till de fält som utgör den sammansatta naturliga nyckeln för MyLeaveRequests-enheten.
 
 > [!NOTE]
-> När fälten för MyLeaveRequests-entiteten refererar till en enskild rad i tjänstledighetsförfrågan och anropar AP kommer den att skicka hela tjänstledighetsförfrågan (alla rader) till arbetsflödet.
+> När fälten för MyLeaveRequests-entiteten refererar till en enskild rad i tjänstledighetsbegäran och anropar AP kommer den att skicka hela tjänstledighetsbegäran (alla rader) till arbetsflödet.
 
 ### <a name="request-headers"></a>Rubrik för begäran
 
@@ -94,7 +94,7 @@ POST https://aos-rts-sf-550e5c091f6-prod-westus2.hr.talent.dynamics.com/namespac
 
 ## <a name="validation-and-error-messages"></a>Validerings- och felmeddelanden
 
-Som en del av anropet till inskickade API skickar personal affärslogiken innan den skickas, vilket garanterar att förfrågan befinner sig i ett giltigt tillstånd för att skickas. De felmeddelanden som kan visas i svaret om valideringar misslyckas:
+Som en del av anropet till inskickade API skickar personal affärslogiken innan den skickas, vilket garanterar att begäran befinner sig i ett giltigt tillstånd för att skickas. De felmeddelanden som kan visas i svaret om valideringar misslyckas:
 
  - Denna begäran innebär att saldot för {LeaveTypeId} hamnar under det minsta tillåtna saldot den {date}.
  - Det går inte att skicka ledighetsansökan i slutfört läge.
@@ -102,11 +102,9 @@ Som en del av anropet till inskickade API skickar personal affärslogiken innan 
  - Ledighetsansökan innehåller en eller flera dagar med samma datum och lämnar typ som en befintlig väntande begäran. Du måste återkalla den befintliga begäran för att göra ändringar.
  - Orsakskoden {ReasonCodeId} gäller inte för någon av tjänstledighetstyperna i denna begäran.
  - Tjänstledighetstyp '{LeaveTypeId}' kräver en orsakskod. Välj lämplig typ och orsakskod.
- - Ledig tid skickades inte. Ledig tid har sparats som en utkastförfrågan.
+ - Ledig tid skickades inte. Ledig tid har sparats som en utkastbegäran.
 
 ## <a name="see-also"></a>Se även
 
 - [Översikt över MyLeaveRequests](hr-developer-api-myleaverequests-overview.md)
 - [Autentisering](hr-developer-api-authentication.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
-title: Nyheter och ändringar i Human Resources
+title: Nyheter och ändringar i Personal
 description: Varje vecka tillhandahåller vi en ny lansering för Microsoft Dynamics 365 Human Resources. Ämnena som anges här beskriver ändringarna som görs varje vecka.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 675a3f0faed0ce8be4ce2633585ce8e0cf1c9be7
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: ec952f8c121f97396c135d10258a6431e8f2257e
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669094"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114361"
 ---
-# <a name="whats-new-or-changed-in-human-resources"></a>Nyheter och ändringar i Human Resources
+# <a name="whats-new-or-changed-in-human-resources"></a>Nyheter och ändringar i Personal
 
 Varannan vecka tillhandahåller vi en ny lansering för Microsoft Dynamics 365 Human Resources. Ämnena som anges här beskriver ändringarna som görs med varje version.
 
 >[!NOTE]
 >För att kunna redovisa helgdagar är publicering av version för november och december 2020 följande:
 >
->- November version: 2 november - 13 november
->- December version: 30 november - 11 december
+>- November version: 2 november – 13 november
+>- December version: 30 november – 11 december
 > 
 >Frisläppningstakten på två veckor kommer att återupptas som vanligt den 11 januari, 2021.
 
@@ -49,6 +49,8 @@ Mer information om kommande funktioner eller uppdateringsprocessen för personal
 
 Information om vad som är nytt eller ändrat i varje utgåva varannan vecka av Personal finns i följande artiklar:
 
+[28 januari 2021](hr-whats-new-2021-01-28.md)</br>
+[21 januari 2021](hr-whats-new-2021-01-21.md)</br>
 [02 december 2020](hr-whats-new-2020-12-02.md)</br>
 [22 oktober 2020](hr-whats-new-2020-10-22.md)</br>
 [16 september 2020](hr-whats-new-2020-09-16.md)</br>
@@ -79,6 +81,3 @@ Information om vad som är nytt eller ändrat i varje utgåva varannan vecka av 
 [Översikt över Dynamics 365 Human Resources 2020 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9a35abcb8a2f6aa8031c8d84a44c2a8ad93883ac
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: f615584785ba48a140e4e97991a4594047fea8ee
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669191"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114221"
 ---
 # <a name="recruit-job-candidates"></a>Rekrytera jobbkandidater
 
@@ -31,14 +31,14 @@ ms.locfileid: "4669191"
 
 Dynamics 365 Human Resources hjälper dig att hantera rekryteringsförfrågningar. Den hjälper dig också att på ett smidigt sätt överföra jobbkandidater till medarbetare. Om din organisation använder ett separat rekryteringsprogram kan din rekryteringsprocess innehålla följande steg:
 
-- Ange din rekryteringsförfrågan i Human Resources.
-- Ta emot kandidathänvisningar i Human Resources från programmet för rekrytering.
-- Slutför godkännandeprocessen för kandidater i Human Resources.
+- Ange din rekryteringsbegäran i Personal.
+- Ta emot kandidathänvisningar i Personal från programmet för rekrytering.
+- Slutför godkännandeprocessen för kandidater i Personal.
 
-Om du inte använder ett separat rekryteringsprogram kan du även hantera kandidater manuellt i Human Resources.
+Om du inte använder ett separat rekryteringsprogram kan du även hantera kandidater manuellt i Personal.
 
 >[!NOTE]
->Om du är administratör eller utvecklare och vill integrera Human Resources med ett rekryteringsprogram från tredje part, se [Konfigurera Common Data Service-integration](hr-admin-integration-common-data-service.md) och [Konfigurera Common Data Service virtuella entiteter](hr-admin-integration-common-data-service-virtual-entities.md)
+>Om du är administratör eller utvecklare och vill integrera Personal med ett rekryteringsprogram från tredje part, se [Konfigurera Dataverse-integrering](hr-admin-integration-common-data-service.md) och [Konfigurera virtuella Dataverse-register](hr-admin-integration-common-data-service-virtual-entities.md)
 >
 > Du kan också hitta integrationsappar för rekrytering på [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
@@ -46,27 +46,25 @@ Om du inte använder ett separat rekryteringsprogram kan du även hantera kandid
 
 ## <a name="enable-recruiting-requests"></a>Aktivera rekryteringsbegäranden
 
-Om du vill skicka in rekryteringsförfrågningar i Human Resources måste du först aktivera funktionerna i **personalparametrarna**.
+Om du vill skicka in rekryteringsförfrågningar i Personal måste du först aktivera funktionerna i **Delade parametrar för personal**.
 
 1. I arbetsytan **Personalhantering** väjer du **Länkar**.
 
-2. Under **Inställningar**, välj **Personalparametrar**.
+2. Under **Inställningar**, välj **Delade personalparametrar**.
 
-3. Under fliken **Allmänt**, under **REKRYTERING**, ställer du in **Aktivera rekryteringsförfrågningar** på **Ja**.
+3. Under fliken **Rekrytering**, under **REKRYTERING**, ställer du in **Aktivera rekryteringsförfrågningar** på **Ja**.
 
-   ![Aktivera rekryteringsbegäranden](./media/hr-recruit-0-enable-requests.png)
-
-## <a name="add-a-recruiting-request-location"></a>Lägg till en plats för rekryteringsförfrågan
+## <a name="add-a-recruiting-request-location"></a>Lägg till en plats för rekryteringsbegäran
 
 Om din organisation har flera platser kan du lägga till dem så att de kan välja en plats där den nya rekryteringen ska fungera. Platsen tas med i jobbpubliceringen.
 
-1. I sökfältet anger du **platsen för rekryteringsförfrågan**.
+1. I sökfältet anger du **platsen för rekryteringsbegäran**.
 
 2. Välj **Ny**.
 
-3. I fältet **Plats för rekryteringsförfrågan** anger du platsens namn.
+3. I fältet **Plats för rekryteringsbegäran** anger du platsens namn.
 
-   ![Lägg till en plats för rekryteringsförfrågan](./media/hr-recruit-0a-add-location.png)
+   ![Lägg till en plats för rekryteringsbegäran](./media/hr-recruit-0a-add-location.png)
 
 4. I **Beskrivning** anger du en beskrivning av platsen.
 
@@ -78,9 +76,9 @@ Om din organisation har flera platser kan du lägga till dem så att de kan väl
 
 7. Välj **Spara**.
 
-## <a name="add-a-recruiting-request"></a>Lägg till en rekryteringsförfrågan
+## <a name="add-a-recruiting-request"></a>Lägg till en rekryteringsbegäran
 
-Chefer kan skicka in rekryteringsförfrågningar till Human Resources. Om du använder ett separat rekryteringsprogram skickar du en rekryteringsförfrågan och startar rekryteringsprocessen i det programmet. I annat fall måste du utföra den här proceduren för att starta arbetsflödet för din interna rekryteringsprocess.
+Chefer kan skicka in rekryteringsförfrågningar till Personal. Om du använder ett separat rekryteringsprogram skickar du en rekryteringsbegäran och startar rekryteringsprocessen i det programmet. I annat fall måste du utföra den här proceduren för att starta arbetsflödet för din interna rekryteringsprocess.
 
 1. Välj **Självbetjäning för medarbetare**.
 
@@ -88,25 +86,25 @@ Chefer kan skicka in rekryteringsförfrågningar till Human Resources. Om du anv
 
 3. Välj **Begär att rekrytera**.
 
-   ![Starta en rekryteringsförfrågan](./media/hr-recruit-1-request-to-recruit.png)
+   ![Starta en rekryteringsbegäran](./media/hr-recruit-1-request-to-recruit.png)
 
 4. Fyll i fälten **Beskrivning**, **Jobb** och **Uppskattat startdatum**.
 
-   ![Slutför rekryteringsförfrågan](./media/hr-recruit-2-request-to-recruit.png)
+   ![Slutför rekryteringsbegäran](./media/hr-recruit-2-request-to-recruit.png)
 
-5. Välj **Fortsätt**. Rekryteringsförfrågan för din befattning visas.
+5. Välj **Fortsätt**. Rekryteringsbegäran för din befattning visas.
 
-6. Under **Allmänt** väljer du en rekryterare från listrutan **Rekryterare** och väljer sedan en plats från listrutan **Plats för rekryteringsförfrågan**.
+6. Under **Allmänt** väljer du en rekryterare från listrutan **Rekryterare** och väljer sedan en plats från listrutan **Plats för rekryteringsbegäran**.
 
 7. Under **Jobb** ändrar du informationen efter behov och väljer sedan **Skapa information från jobb**.
 
    ![Skapa information från jobb](./media/hr-recruit-3-create-details-from-job.png)
 
-   Resten av din rekryteringsförfrågan fylls i med standardinformation för det jobb som du har angett.
+   Resten av din rekryteringsbegäran fylls i med standardinformation för det jobb som du har angett.
 
 8. Under **Extern beskrivning** anger du en jobbeskrivning som är riktad utåt.
 
-9. Under **Befattningar** väljer du **Lägg till** och sedan en befattning för den här rekryteringsförfrågan.
+9. Under **Befattningar** väljer du **Lägg till** och sedan en befattning för den här rekryteringsbegäran.
 
    ![Lägg till en befattning](./media/hr-recruit-4-select-position.png)
 
@@ -120,9 +118,9 @@ Chefer kan skicka in rekryteringsförfrågningar till Human Resources. Om du anv
 
 13. Under **Kompensation** väljer du en nivå från listrutan **Nivå** och justerar sedan **Låg tröskel**, **Kontrollpunkt** och **Hög tröskel** efter behov.
 
-14. När din rekryteringsförfrågan är slutförd och du är redo att starta rekryteringsprocessen väljer du **Aktivera** på menyraden.
+14. När din rekryteringsbegäran är slutförd och du är redo att starta rekryteringsprocessen väljer du **Aktivera** på menyraden.
 
-   ![Aktivera rekryteringsförfrågan](./media/hr-recruit-6-activate-recruit-request.png)
+   ![Aktivera rekryteringsbegäran](./media/hr-recruit-6-activate-recruit-request.png)
 
 15. Välj **Spara**.
 
@@ -138,7 +136,7 @@ Om du är chef och vill visa dina egna begäranden:
 
    ![Välj fliken Rekryteringsförfrågningar](./media/hr-recruit-7-recruiting-requests.png)
 
-4. Om du vill visa eller redigera en rekryteringsförfrågan väljer du den i rutnätet.
+4. Om du vill visa eller redigera en rekryteringsbegäran väljer du den i rutnätet.
 
 Om du är HR Pro och vill visa alla rekryteringsförfrågningar:
 
@@ -148,11 +146,11 @@ Om du är HR Pro och vill visa alla rekryteringsförfrågningar:
 
    ![Visa rekryteringsförfrågningar i Personalhantering](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
 
-3. Om du vill visa eller redigera en rekryteringsförfrågan väljer du den i rutnätet.
+3. Om du vill visa eller redigera en rekryteringsbegäran väljer du den i rutnätet.
 
 ## <a name="add-or-edit-a-candidate-profile"></a>Lägga till eller redigera en kandidatprofil
 
-Om din organisation har integrerats med ett annat program för att kunna hantera rekryteringsförfrågningar, vidarebefordras rekryteringsförfrågningar till programmet. Programmet för rekrytering skickar sedan tillbaka informationen till Human Resources. I annat fall kan du följa dina interna rekryteringsprocesser och ange kandidatinformation manuellt.
+Om din organisation har integrerats med ett annat program för att kunna hantera rekryteringsförfrågningar, vidarebefordras rekryteringsförfrågningar till programmet. Programmet för rekrytering skickar sedan tillbaka informationen till Personal. I annat fall kan du följa dina interna rekryteringsprocesser och ange kandidatinformation manuellt.
 
 1. Välj **Personalhantering**.
 
@@ -166,9 +164,9 @@ Om din organisation har integrerats med ett annat program för att kunna hantera
 
 5. Under **Kandidatsammanfattning** anger eller redigerar du kandidatinformationen efter behov.
 
-6. Under **Rekryteringsförfrågan** väljer du en rekryteringsförfrågan som kandidaten ska kopplas till. Fyll sedan i fälten **Uppskattat startdatum**, **Anställande chef**, **Befattning** och **Beskrivning**.
+6. Under **Rekryteringsbegäran** väljer du en rekryteringsbegäran som kandidaten ska kopplas till. Fyll sedan i fälten **Uppskattat startdatum**, **Anställande chef**, **Befattning** och **Beskrivning**.
 
-   ![Länka till rekryteringsförfrågan](./media/hr-recruit-10-link-to-recruiting-request.png)
+   ![Länka till rekryteringsbegäran](./media/hr-recruit-10-link-to-recruiting-request.png)
 
 7. Fyll i all information i följande områden som du vill inkludera i kandidatens post:
    - **Kommentarer**
@@ -224,8 +222,6 @@ Vid behov kan du avvisa en kandidat när du har anställt den. En kandidat kan t
 
 ## <a name="see-also"></a>Se även
 
-[Konfigurera Common Data Service virtuella enheter](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Konfigurera virtuella Dataverse-register](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Organisera personalen](hr-personnel-departments-jobs-positions.md)<br>
 [Ställa in komponenter för ett jobb](hr-personnel-jobs.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Undvika att texten trunkeras i befattningshierarkin och exportera till Visio
 description: Det här avsnittet beskriver hur du löser ett problem där namnen på personer och befattningar trunkeras när kunder visar befattningshierarkin i Microsoft Dynamics 365 Human Resources. Texttrunkering kan göra det svårt att ta en skärmbild eller skriva ut hierarkin.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 02fb0098cc6f5a0b353e827653b1c8c96af2470c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0dc91d3165f14c165f75756dc63a3dc8f63149aa
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420596"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114286"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Undvika att texten trunkeras i befattningshierarkin och exportera till Visio
 
@@ -54,7 +54,7 @@ Gör så här för att exportera till Visio.
 
     ![Exportera till Excel-dialogruta](media/export-excel.png)
 
-4. I Visio, välj **Visio - skapa ny** och välj mallkategorin **Företag**.
+4. I Visio, välj **Visio – skapa ny** och välj mallkategorin **Företag**.
 
     ![Nytt diagram](media/new.png)
 
@@ -104,6 +104,3 @@ Baserat på de fält som du valt att inkludera i diagrammet visar varje nod den 
 **Ytterligare alternativ**
 
 I Personal kanske du också använder arbetsytan **Personer** för att visa hierarkirelaterad information.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

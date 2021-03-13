@@ -2,7 +2,7 @@
 title: Ställa in avrundningsregler
 description: Du kan ange avrundningsregler i Dynamics 365 Human Resources så att de uppfyller behoven hos din organisation.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8a9b0c33d2e0c47b351463b4b3630a91c6bd9999
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8a603c31e3a36072b6456bea212ad176009c8b48
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420620"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114276"
 ---
 # <a name="set-up-rounding-rules"></a>Ställa in avrundningsregler
 
@@ -36,6 +36,3 @@ Du kan ange avrundningsregler i Dynamics 365 Human Resources så att de uppfylle
 3. Ange värden för **Avrunda till närmaste**, **Scenario** och **Avrundningsformulär**.
 
 4. Välj **Spara**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

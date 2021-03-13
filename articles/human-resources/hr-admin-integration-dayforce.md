@@ -2,7 +2,7 @@
 title: Konfigurera integration med Dayforce
 description: Integreringen mellan Microsoft Dynamics 365 Human Resources och Ceridian Dayforce är beroende av flera konfigurationssteg som beskrivs i det här avsnittet. Du måste konfigurera integrationen i både Personal och Dayforce innan du kan bearbeta en betalning.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c66ec772ea66732e042f50081f04a6569852f211
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 044a2d2f632b2c98ce94b6d61c2582a861640b68
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420513"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114288"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurera integration med Dayforce
 
@@ -284,7 +284,7 @@ Medarbetare kan tilldelas en viss inkomst till en viss betalningsfrekvens och ha
 - Arbetstillståndsnummer
 
 > [!NOTE]
-> För betalningsmetoden stöder Mexiko **Kontant**, **Check** (företagets fysiska check), samt **Elektronisk betalning**. Om betalningsmetoden np anges används **Check** som standard.
+> För betalsättet stöder Mexiko **Kontant**, **Check** (företagets fysiska check), samt **Elektronisk betalning**. Om betalsättet np anges används **Check** som standard.
 
 #### <a name="employment-details"></a>Anställningsinformation
 
@@ -466,14 +466,14 @@ Inkomstkoder identifierar individuellt alla typer av arbetstagarintäkter. Koder
 - 1N2N4OFMTH
 - 1N3N4OFMTH
 - 2N3N4OFMTH
-- 1N2N3N4OFMTH - 1N2N3N4OFMTH
-- 2N3N4N5OFMth - 2N3N4N5OFMth
-- 1OFQTR - 1OFQTR
+- 1N2N3N4OFMTH – 1N2N3N4OFMTH
+- 2N3N4N5OFMth – 2N3N4N5OFMth
+- 1OFQTR – 1OFQTR
 - LASTOFQTR – LASTOFQTR
 - LASTMTHOFQTR – LASTMTHOFQTR
-- 1OFYEAR - 1OFYEAR
+- 1OFYEAR – 1OFYEAR
 - LASTOFYEAR – LASTOFYEAR
-- NOVNDECOFYEAR - NOVNDECOFYEAR
+- NOVNDECOFYEAR – NOVNDECOFYEAR
 
 ### <a name="addresses"></a>Adresser
 
@@ -591,9 +591,9 @@ Följande tabell visar hur könsbeteckningar mappas till Dayforce.
 
 ### <a name="payment-method"></a>Betalningsmetod
 
-Betalningsmetoder ger medarbetare och företag ett sätt att beskriva hur medarbetaren ska betalas. Betalningsmetoder mappas till Dayforce och översätts på lämpligt sätt till giltiga värden i samband med integrering.
+Betalsätt ger medarbetare och företag ett sätt att beskriva hur medarbetaren ska betalas. Betalsätt mappas till Dayforce och översätts på lämpligt sätt till giltiga värden i samband med integrering.
 
-Följande tabell visar hur betalningsmetoder mappas till Dayforce.
+Följande tabell visar hur betalsätt mappas till Dayforce.
 
 | Personal             | Dayforce                  |
 |--------------------|---------------------------|
@@ -642,14 +642,14 @@ Inkomstkoder identifierar individuellt alla typer av arbetstagarintäkter. Koder
 - 1N2N4OFMTH
 - 1N3N4OFMTH
 - 2N3N4OFMTH
-- 1N2N3N4OFMTH - 1N2N3N4OFMTH
-- 2N3N4N5OFMth - 2N3N4N5OFMth
-- 1OFQTR - 1OFQTR
+- 1N2N3N4OFMTH – 1N2N3N4OFMTH
+- 2N3N4N5OFMth – 2N3N4N5OFMth
+- 1OFQTR – 1OFQTR
 - LASTOFQTR – LASTOFQTR
 - LASTMTHOFQTR – LASTMTHOFQTR
-- 1OFYEAR - 1OFYEAR
+- 1OFYEAR – 1OFYEAR
 - LASTOFYEAR – LASTOFYEAR
-- NOVNDECOFYEAR - NOVNDECOFYEAR
+- NOVNDECOFYEAR – NOVNDECOFYEAR
 
 ### <a name="addresses"></a>Adresser
 
@@ -676,6 +676,3 @@ Medarbetare kan deklarera passinformation. Denna information bär ID-typen **Pas
 
 Medarbetare kan deklarera flera ID-nummer med ID-typen **Pass**. Endast den aktuella passposten integreras emellertid i Dayforce. Om alla passposter har upphört att gälla kommer det pass som är utfärdat senast att integreras i Dayforce.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

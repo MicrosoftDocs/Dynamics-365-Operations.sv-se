@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cbf00f7428c9b1852a5bf54fd7e30a3bddc1a31e
-ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
+ms.openlocfilehash: c5041d515b261bb3e4b14885e0ec0ce788edf729
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668955"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114279"
 ---
 # <a name="go-live-faq"></a>Frågor och svar om publicering 
 
@@ -52,21 +52,21 @@ Publiceringsutvärdering är en del av  [Microsoft FastTrack-programmet](https
 
 ## <a name="our-sandbox-environments-are-deployed-in-the-central-us-datacenter-we-want-our-production-environments-to-be-deployed-in-the-west-us-datacenter-can-i-select-west-us-as-the-datacenter-in-my-production-configuration"></a>Våra begränsade miljöer distribueras i det centrala amerikanska datacentret. Vi vill att våra produktionsmiljöer distribueras i det västra amerikanska datacentret. Kan jag välja västra USA som datacenter i min produktionskonfiguration? 
 
-LCS begränsar dig inte från att välja ett annat datacenter när du distribuerar Human Resources-miljöer, men vi rekommenderar att du inte väljer ett annat datacenter.  
+LCS begränsar dig inte från att välja ett annat datacenter när du distribuerar Personal-miljöer, men vi rekommenderar att du inte väljer ett annat datacenter.  
 
 Om du vill att din produktionsmiljö ska finnas i det västra amerikanska datacentret bör du först omdistribuera begränsade miljön till det västra amerikanska datacentret, testa dem och sedan godkänna. 
 
 Information om hur du väljer rätt datacenter finns i [nätverkskrav](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements#network-requirements). 
 
-## <a name="what-level-of-access-do-i-have-to-the-azure-resources-for-my-human-resources-environments"></a>Vilken åtkomstnivå till Azure-resurserna för mina Human Resources-miljöer?  
+## <a name="what-level-of-access-do-i-have-to-the-azure-resources-for-my-human-resources-environments"></a>Vilken åtkomstnivå till Azure-resurserna för mina Personal-miljöer?  
 
-Åtkomst till Human Resources-miljöer är begränsad. Du kan inte komma åt den virtuella datorn (VM) eller Microsoft Internet Information Services (IIS). Du kan inte heller komma åt databasen via Microsoft SQL Server Management Studio. 
+Åtkomst till Personal-miljöer är begränsad. Du kan inte komma åt den virtuella datorn (VM) eller Microsoft Internet Information Services (IIS). Du kan inte heller komma åt databasen via Microsoft SQL Server Management Studio. 
 
 Även om du inte kan komma åt dina Azure-resurser eller din Dynamics 365 Human Resources-miljö direkt, finns det fler funktioner som du kan använda för att komma åt dina data:
 
 - Du kan distribuera en Azure SQL-databas i din egen Azure-klient och använda funktionen ta med din egen databas (BYOD) för att synkronisera data. Mer information finns i [ta din egen databas (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database).
 
-- Du kan använda Common Data Service-integrering för att synkronisera valda enheter i Common Data Service-databasen. Mer information finns i [Common Data Service-entiteter](hr-developer-entities.md). 
+- Du kan använda Dataverse-integrering för att synkronisera valda enheter i Dataverse-databasen. Mer information finns i [Dataverse-tabeller](hr-developer-entities.md). 
 
 ## <a name="how-often-is-my-production-database-backed-up"></a>Hur ofta säkerhetskopieras min produktionsdatabas? 
 
@@ -99,6 +99,3 @@ Om du vill rapportera ett produktionsavbrott följer du processen som beskrivs i
  ## <a name="see-also"></a>Se även
 
  [Förbereda publicering](hr-admin-go-live-prepare.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

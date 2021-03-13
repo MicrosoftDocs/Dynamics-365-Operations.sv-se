@@ -2,7 +2,7 @@
 title: Vanliga frågor och svar om personalåtgärder
 description: Det här avsnittet innehåller svar på frågor som du kan ha om din organisation använder personalåtgärder. Personalåtgärder är ytterligare steg du måste vidta när du utför personalrelaterade uppgifter.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 6d52e7e5203a4c311afb56259e9e1800ee0e5161
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 43c727fa8e0508adf66109efd84a66cb31df7ea3
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420581"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115424"
 ---
 # <a name="personnel-actions-faq"></a>Vanliga frågor och svar om personalåtgärder
 
@@ -45,11 +45,11 @@ Personalåtgärder kan ha följande status:
 
 - **Utkast** – Om arbetsflöde används har inte åtgärden skickats in. Om arbetsflöde inte används har inte åtgärden slutförts.
 - **Granskas** – Personalåtgärden har skickats till arbetsflödet, men arbetsflödet har inte slutförts.
-- **Godkänd - väntar** – Arbetsflödet har slutförts, men ändringarna bearbetas fortfarande. Avbröts – Arbetsflödet avbröts eller också återkallades personalåtgärden. Avvisades – Åtgärdsförfrågan avslogs av godkännaren.
-- **Bearbetningsåtgärd** – Åtgärdsförfrågan har godkänts och ändringarna bearbetas.
+- **Godkänd – väntar** – Arbetsflödet har slutförts, men ändringarna bearbetas fortfarande. Avbröts – Arbetsflödet avbröts eller också återkallades personalåtgärden. Avvisades – Åtgärdsbegäran avslogs av godkännaren.
+- **Bearbetningsåtgärd** – Åtgärdsbegäran har godkänts och ändringarna bearbetas.
 - **Arbetsflödet slutfört**  – Arbetsflödet har slutförts och ändringarna har bearbetats. Misslyckades – Arbetsflödet misslyckades eftersom informationen är inaktuell. Klicka på Återaktivera för att visa den senaste informationen och fortsätta.
 - **Slutfördes** – Befattningen har skapats eller ändrats, medarbetaren har anställts, bytt befattning eller sagts upp, eller också har kompensationen ändrats. Fel – Ett problem har uppstått av någon annan orsak än att informationen är inaktuell. Öppna meddelandeloggen för personalåtgärder om du vill fastställa orsaken till felet.
-- **Avslogs** – Åtgärdsförfrågan avslogs av godkännaren.
+- **Avslogs** – Åtgärdsbegäran avslogs av godkännaren.
 
 ## <a name="can-i-delete-a-personnel-action"></a>Kan jag ta bort en personalåtgärd?
 Ja, du kan ta bort personalåtgärder som har statusen **Utkast**, **Fel**, **Misslyckades** eller **Avbröts**.
@@ -92,6 +92,3 @@ Exempel:
 - Giltighetsdatumet i rubriken för en **Anställ arbetstagare**-åtgärd är det datum som du angett i fältet **Startdatum för anställning**.
 - Giltighetsdatumet i rubriken för en **Överför en arbetstagare**-åtgärd är det datum som du angett i fältet **Startdatum för tilldelning**.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

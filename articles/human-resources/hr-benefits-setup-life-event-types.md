@@ -2,7 +2,7 @@
 title: Konfigurera livshändelsetyper
 description: Microsoft Dynamics 365 Human Resources använder livshändelsetyper för att definiera händelser där det är tillåtet att uppdatera medarbetarnas förmånsanmälan.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5286bcd940f4068531bae624876c8a35e64db4c3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c382299014e3f823bc2cd210749aae8c091c5f23
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420576"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114322"
 ---
 # <a name="configure-life-event-types"></a>Konfigurera livshändelsetyper
 
@@ -88,6 +88,3 @@ Du kan välja mellan följande livshändelser när du skapar en livshändelsetyp
 | **Åsidosätt utgång av berättiganderegel (inte USA-specifik)** | Personal avancerade > Förmåner > Planer > Förmåner > Åsidosätt berättiganderegel | Använda bearbetningar av ändring i livshändelse. Om du t.ex. redigerar en plans berättiganderegel, åsidosätt utgångsdatum till 17:00, valfri tid efter 17:00 eller följande dagar och sedan kör bearbetning av livshändelse vid ändring, visas ett meddelande om att åsidosättning av berättiganderegler har upphört att gälla. |
 | **Ny förmånsplan (ej USA-specifik)** | Personal avancerade > Förmåner > Planer > Förmåner > Ny | <ul><li>Alternativ för berättigande läggs till i en aktuell plan</li><li>En ny plan med bifogade berättigandealternativ läggs till</li></ul></br></br>Personal ska köra bearbetning av berättigande för livshändelse i denna instans. |
 | **Åsidosätt regeländring (inte USA-specifik)** | Personal avancerade > Förmåner > Regler/alternativ > Berättiganderegel | Med hjälp av bearbetning av berättigande för livshändelse. Loggas när **EhrBenefitEligibilityRule** poster har ändrats följande värden: **UseEmplCategory**, **UseEmplStatus** eller **UseEmplType**. Uppdaterar endast transaktion för livshändelse som redan finns för en ändrad regel eller ett villkor för berättigande. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

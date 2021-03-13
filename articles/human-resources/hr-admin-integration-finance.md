@@ -2,7 +2,7 @@
 title: Konfigurera integration med Finance
 description: I den här artikeln beskrivs vilka funktioner som är tillgängliga för integration från Dynamics 365 Human Resources och Dynamics 365 Finance.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/26/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b4d6369ab567879e23e1f132265aaff45c8ce47
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 6587b2ced1fdd7a16c6b3f28a34d4a303af9cee5
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527935"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114310"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurera integration med Finance
 
@@ -44,7 +44,7 @@ Lösningen personal till ekonomi innehåller följande typer av datasynkroniseri
 
 Integreringslösningen kräver följande versioner av personal och ekonomi: 
 
-- Dynamics 365 Human Resources den Common Data Service
+- Dynamics 365 Human Resources den Dataverse
 - Dynamics 365 Finance version 7.2 och senare
 
 ## <a name="template-and-tasks"></a>Mall och uppgifter
@@ -55,7 +55,7 @@ Om du vill öppna mallen personal till ekonomi.
 
 2. Välj **Projekt** och välj sedan **Nytt projekt** i det övre högra hörnet. Skapa ett nytt projekt för varje juridisk person som du vill integrera i ekonomi.
 
-3. Välj **Personal (personal Common Data Service till ekonomi)** för att synkronisera poster från personal till ekonomi.
+3. Välj **Personal (personal Dataverse till ekonomi)** för att synkronisera poster från personal till ekonomi.
 
 Mallen använder följande underliggande uppgifter för att synkronisera poster från personal till ekonomi:
 
@@ -81,14 +81,14 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 
 ### <a name="job-functions-to-compensation-job-function"></a>Jobbfunktioner för kompensationsjobbfunktion
 
-| Common Data Service enhet (källa) | Entiteten ekonomi (destination) |
+| Dataverse-register (källa) | Entiteten ekonomi (destination) |
 |-------------------------------------|---------------------------------------------|
 | cdm_name (cdm_Job   Funktionsnamn)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
 | cdm_description   (cdm_description) | BESKRIVNING   (BESKRIVNING)                 |
 
 ### <a name="departments-to-operating-unit"></a>Avdelningar till driftenhet
 
-| Common Data Service enhet (källa)           | Entiteten ekonomi (destination) |
+| Dataverse-register (källa)           | Entiteten ekonomi (destination) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                           | NAME (NAME)                                 |
 | cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
@@ -97,7 +97,7 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 
 ### <a name="job-types-to-compensation-job-type"></a>Jobbtyper för kompensationsjobbtyp
 
-| Common Data Service enhet (källa)   | Entiteten ekonomi (destination) |
+| Dataverse-register (källa)   | Entiteten ekonomi (destination) |
 |---------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_description   (cdm_description)   | BESKRIVNING   (BESKRIVNING)                 |
@@ -105,7 +105,7 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 
 ### <a name="jobs-to-jobs"></a>Jobb till jobb
 
-| Common Data Service enhet (källa)                           | Entiteten ekonomi (destination)           |
+| Dataverse-register (källa)                           | Entiteten ekonomi (destination)           |
 |---------------------------------------------------------------|-------------------------------------------------------|
 | cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
 | cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
@@ -115,7 +115,7 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 
 ### <a name="jobs-to-job-detail"></a>Jobb till jobbdetalj
 
-| Common Data Service enhet (källa)                             | Entiteten ekonomi (destination) |
+| Dataverse-register (källa)                             | Entiteten ekonomi (destination) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
 | cdm_jobtypeid.cdm_name   (Jobbtyp (jobbtypnamn))             | JOBTYPEID   (JOBTYPEID)                     |
@@ -126,7 +126,7 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 
 ### <a name="position-types-to-position-type"></a>Befattningstyper till befattningstyp
 
-| Common Data Service enhet (källa)       | Entiteten ekonomi (destination) |
+| Dataverse-register (källa)       | Entiteten ekonomi (destination) |
 |-------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
 | cdm_description   (cdm_description)       | BESKRIVNING   (BESKRIVNING)                 |
@@ -134,13 +134,13 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 
 ### <a name="job-positions-to-base-position"></a>Jobbefattningar till grundläggande befattning
 
-| Common Data Service enhet (källa)           | Entiteten ekonomi (destination) |
+| Dataverse-register (källa)           | Entiteten ekonomi (destination) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Jobbefattningsnummer) | POSITIONID (POSITIONID)                      |
 
 ### <a name="job-positions-to-position-details"></a>Jobbefattningar till befattningsdetaljer
 
-| Common Data Service enhet (källa)              | Entiteten ekonomi (destination)       |
+| Dataverse-register (källa)              | Entiteten ekonomi (destination)       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
 | cdm_jobpositionnumber  (Jobbefattningsnummer)                            | POSITIONID (POSITIONID)                             |
 | cdm_jobid.cdm_name   (Jobb (Namn))                                        | JOBID (JOBID)                                    |
@@ -154,7 +154,7 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 
 ### <a name="job-positions-to-position-durations"></a>Jobbefattningar till befattningstidslängd
 
-| Common Data Service enhet (källa)             | Entiteten ekonomi (destination) |
+| Dataverse-register (källa)             | Entiteten ekonomi (destination) |
 |-------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Jobbefattningsnummer)   | POSITIONID (POSITIONID)                      |
 | Beräknad     aktivering (beräknad aktivering) | VALIDFROM (VALIDFROM)                        |
@@ -162,7 +162,7 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 
 ### <a name="job-positions-to-position-hierarchies"></a>Jobbefattningar till befattningshierarkier
 
-| Common Data Service enhet (källa)        | Entiteten ekonomi (destination) |
+| Dataverse-register (källa)        | Entiteten ekonomi (destination) |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Jobbefattningsnummer)                                                 | POSITIONID(POSITIONID)                      |
 | cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
@@ -172,7 +172,7 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 
 
 ### <a name="workers-to-worker"></a>Arbetare till arbetare
-| Common Data Service enhet (källa)           | Entiteten ekonomi (destination)       |
+| Dataverse-register (källa)           | Entiteten ekonomi (destination)       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm_birthdate   (cdm_birthdate)               | FÖDELSEDATUM (FÖDELSEDATUM)                           |
 | cdm_gender   (cdm_gender)                     | KÖN (KÖN)                                   |
@@ -191,7 +191,7 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 
 ### <a name="employments-to-employment"></a>Anställning till anställning
 
-| Common Data Service enhet (källa)                             | Entiteten ekonomi (destination) |
+| Dataverse-register (källa)                             | Entiteten ekonomi (destination) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE) |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)     |
@@ -201,7 +201,7 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 
 ### <a name="employments-to-employment-detail"></a>Anställning till anställningsdetalj
 
-| Common Data Service enhet (källa)                             | Entiteten ekonomi (destination)   |
+| Dataverse-register (källa)                             | Entiteten ekonomi (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE)   |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)       |
@@ -219,7 +219,7 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 
 ### <a name="position-worker-assignment-to-position-worker-assignments"></a>Befattningstilldelning för arbetare till Befattningstilldelningar för arbetare
 
-| Common Data Service enhet (källa)                             | Entiteten ekonomi (destination)   |
+| Dataverse-register (källa)                             | Entiteten ekonomi (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_jobpositionnumber   (Jobbefattningsnummer)                   | POSITIONID(POSITIONID)                        |
@@ -228,7 +228,7 @@ I följande mappningstabeller för mallar innehåller namnet på uppgiften de en
 
 ### <a name="worker-addresses-to-worker-postal-address-v2"></a>Adress till arbetare till postadress V2 till arbetare
 
-| Common Data Service enhet (källa)                             | Entiteten ekonomi (destination)   |
+| Dataverse-register (källa)                             | Entiteten ekonomi (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSLOCATIONROLES   (ADDRESSLOCATIONROLES) |
@@ -255,5 +255,3 @@ Det plats-ID som används för arbetaradressen är inte en del av en nummerserie
 I följande illustration visas ett exempel på en mallmappning i Dataintegrerare. 
 
 ![Mallmappning](./media/IntegrationMapping.png)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
