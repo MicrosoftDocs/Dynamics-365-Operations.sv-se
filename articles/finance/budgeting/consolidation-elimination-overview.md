@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerConsolidate
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13151
 ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 566b1ecef3f9e540c651fe214accadcf32f4fbed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ee029e6cf1f271c5839e8d0dc1b1e4b7f91fb9a2
+ms.sourcegitcommit: f51ef395f0c0cb2203ce26b4091bbf0296e7916e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448128"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "5120489"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Översikt över konsolidering och eliminering
 
@@ -60,6 +59,7 @@ Alternativet **Ekonomisk rapportering** har obegränsade rapporteringsvalutor. D
 Alternativet **Ekonomisk rapportering** är lösningen, eftersom detaljer på transaktionsnivån kan visas för så många företag som ingår i rapportträddefinitionen.
 
 4.  Vi använder budgetplanering eller budgetkontroll, och den måste konsolideras.
+
 **Ekonomisk rapportering** är lösningen som konsoliderar alla data i budgetplaneringen eller budgetkontrollen.
 
 5.  Våra dotterbolag finns över hela världen, och därför har vi flera kontoplaner. Vilken är den bästa metoden för konsolidering?
@@ -86,10 +86,10 @@ Alternativet **Ekonomisk rapportering** är lösningen. Organisationshierarkier 
 
 Genom att använda alternativet **Exportera företagsbalanser** för att exportera från en instans och sedan använda **Konsolidera med import** på den andra instansen kan du konsolidera data.
 
+11. Kan jag göra en konsolidering med min budget i statusen **UTKAST**? 
+            
+Du kan inte bearbeta eller slutföra budgetar i konsolideringsföretaget. Vi rekommenderar att du använder Financial Reporting när du konsoliderar utkastbudgetar.
 
 Mer information finns i [Valutaomräkning i ett konsolideringsföretag](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

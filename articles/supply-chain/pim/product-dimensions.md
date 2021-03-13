@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bdfd9482d30bd65cf84fae032df78e1243e05239
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 285e9d2d184a899f1ffa502d59a853ba83cda491
+ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437441"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5118691"
 ---
 # <a name="product-dimensions"></a>Produktdimensioner
 
@@ -122,7 +121,7 @@ Innan du kan använda den här versionsdimension den aktiveras i ditt system. De
 
 ### <a name="areas-where-the-version-dimension-isnt-supported"></a>Områden där versionsdimensionen inte stöds
 
-Följande områden stöder inte dimensionsversion eftersom introduktionen av den här dimensionen skulle leda till ändringar:
+Följande områden stöder inte versionsdimensionen (du kan fortfarande använda dessa områden, men du kan inte lägga till versionerade produkter (produkter där versionsdimensionen används) till dem). Du kan till exempel inte lägga till en version av en artikel i en leverantörskatalog. Det beror på att om du lägger till produkter med versionsdimensionen i dessa områden skulle det leda till icke-bakåtkompatibla ändringar.
 
 - Månadsutdrag för kostnadsbärare
 - Kostnadsobjekt, redovisningscache
@@ -146,6 +145,3 @@ Versionsdimensionen fungerar som de andra produktdimensionerna. På grund av des
 
 > [!IMPORTANT]
 > Om du aktiverar och använder versions dimensionen kan vissa lösningar som refererar till lagerdimensionerna sluta fungera som förväntat. Bekräfta och åtgärda problemen genom att kontakta den oberoende programvaruleverantören (ISV) för dina aktuella lösningar. Mer information finns i [Aktivera versionsdimensionen](#enable-version-dim).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
