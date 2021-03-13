@@ -1,7 +1,7 @@
 ---
 title: Momsrapport för Sverige
 description: I det här avsnittet beskrivs hur du ställer in och genererar momsrapporten för juridiska personer i Sverige.
-author: v-lurodi
+author: anasyash
 manager: AnnBe
 ms.date: 03/13/2020
 ms.topic: article
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 262684
 ms.search.region: Sweden
-ms.author: v-lurodi
+ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b3d34b6c47d6a7b00a34f6f036512ee61b535111
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cf7f88a411f498fec8b1b7f03c2994658b8d59aa
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408627"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017174"
 ---
 # <a name="sales-tax-report-for-sweden"></a>Momsrapport för Sverige
 
@@ -111,7 +110,7 @@ Beräkna momsbeloppen för kvittningsperioden i slutet av momsrapportperioden.
 
 ## <a name="report-sales-tax-for-a-settlement-period"></a>Rapportera moms för en kvittningsperiod
 
-Du kan också skapa en svensk momsrapport genom att använda förfrågan **Rapportera moms för kvittningsperiod**.
+Du kan också skapa en svensk momsrapport genom att använda begäran **Rapportera moms för kvittningsperiod**.
 
 1. Gå till **Moms** \> **Deklarationer** \> **Moms** \> **Rapportera moms för kvittningsperiod**.
 2. Ange fältet **Kvittningsperiod**, **Från datum**, **Momsvaluta** och **Rapporteringsvaluta** enligt beskrivningen i avsnittet [Generera en momsbetalning och skriv ut svensk momsrapport](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/SE-VAT-declaration/articles/finance/localizations/emea-swe-Sales-tax-payment-report-for-Sweden.md#generate-a-sales-tax-payment-and-print-the-swedish-sales-tax-report) tidigare i detta ämne.
@@ -207,6 +206,3 @@ Följande exempel visar hur du kan ställa in momskoder och momsrapporteringskod
 När du har genererat svenska momsrapporten använder du informationen på den för att fylla i momsdeklarationen för den svenska momsmyndigheten i det officiella formatet. Följande illustration visar vad den svenska momsdeklarationen har sett ut sedan 2016.
 
 ![Svensk momsdeklarationsrapport](media/4_Swedish_VAT_declaration.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

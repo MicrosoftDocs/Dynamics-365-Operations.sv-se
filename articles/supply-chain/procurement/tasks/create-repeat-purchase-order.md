@@ -1,7 +1,7 @@
 ---
 title: Skapa en upprepad inköpsorder
 description: I det här avsnittet visas hur du skapar en upprepad inköpsorder (IO) genom att kopiera rader från ett tidigare inköpsorderdokument till en ny IO eller till en befintlig IO.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9bf5e92ad6bc62dd008a51aacca891cb7253a723
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 65eb801fb363ce2484dcce4d086d1b2b5ad3388f
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438019"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017352"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Skapa en upprepad inköpsorder
 
@@ -70,6 +69,3 @@ Istället för att kopiera en hel order är det mer vanligt att kopiera en ny in
 4. Välj raden för den önskade inköpsordern. Observera att även den enskilda orderraden som finns på denna inköpsorder markeras.  
 5. Välj **OK**. Den ytterligare orderraden har lagts till din inköpsorder.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

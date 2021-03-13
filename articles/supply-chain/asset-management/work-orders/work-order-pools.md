@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderTablePoolPart, EntAssetWorkOrderPoolReferenceInfoPart, EntAssetWorkOrderPool, EntAssetWorkOrderPoolPreviewPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3e95a4fdfaf4817867f3d2df7774df6a27ee6599
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: afea5b8d0f958c3ab53d6cef8c9a0e9030d7c67b
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437963"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017527"
 ---
 # <a name="work-order-pools"></a>Arbetsorderpooler
 
@@ -109,6 +108,3 @@ Som beskrivs i avsnittet ovan kan du lägga till arbetsorder till en arbetsorder
 
 Om du vill ta bort en arbetsorder från en arbetsorderpool, upprepa dessa steg men välj **Ta bort** i steg 3.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

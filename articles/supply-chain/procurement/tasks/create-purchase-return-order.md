@@ -1,7 +1,7 @@
 ---
 title: Skapa en inköpsreturorder
 description: I den här proceduren visas hur du skapar en inköpsreturorder med hjälp av åtgärden Kreditfaktura om du vill kopiera rader från ett leverantörsfakturadokument till en ny inköpsorder.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 635e9ffb629a844bc5cccfa5d2a538ef0cf098d9
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 10b3e695ffcd44909be4781eac5d4eaeef199b03
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438020"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017069"
 ---
 # <a name="create-a-purchase-return-order"></a>Skapa en inköpsreturorder
 
@@ -68,6 +67,3 @@ I den här proceduren visas hur du skapar en inköpsreturorder med hjälp av åt
 4. I fältet **Produktinleverans**, skriv ett värde. Det här fältet används för att ange en referens som ska användas som verifikation för produktinleveransjournalen.  
 5. Klicka på **OK**. Varorna har nu registrerats som skickade på inköpsreturordern och en produktinleveransjournal har skapats. Du kan använda åtgärden Produktinleverans om du vill granska journalerna som skapats med inköpsordern och se vad som har inlevererats eller returnerats och när.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

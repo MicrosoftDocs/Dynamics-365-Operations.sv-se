@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetWorkerGroupCopyFromResourceGroup, EntAssetWorkerGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29fb487f02c28dbe940a1e00891f1e7ed20135b2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b81de02f144712786704a46d2096dfb510d5ce68
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437572"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017402"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Underhållsarbetare och arbetargrupper
 
@@ -64,6 +63,3 @@ Du kan också skapa underhållsarbetargrupper och associera underhållsarbetare 
 6. Om en resursgrupp ska relateras till den valda gruppen för underhållsarbetare väljer du **kopiera från resursgrupp**. i fältet **grupp** väljer du den resursgrupp som du vill kopiera kalenderinställningar från. Välj sedan i fältet **arbetargrupp** den arbetargrupp som du vill kopiera resursgruppens kalenderinställningar till. Det här steget är endast relevant om du vill att underhållsarbetare ska använda kalendern som är relaterad till en resurs (produktionsgruppen) vid schemaläggning av arbetsorder.
 
     Fältet på snabbfliken **Detaljer** visar antalet underhållsarbetare som har ställt in den valda underhållsarbetargruppen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

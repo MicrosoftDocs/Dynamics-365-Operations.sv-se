@@ -1,7 +1,7 @@
 ---
 title: Skapa inköpspolicyer
 description: I det här avsnittet visas hur du skapar inköpspolicyer att justera med dina affärsprocesser för inköp.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicyParameters, SysPolicy, RequisitionPurposeRule
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d4ba2a23f84972391283eaf01cef70a161c75226
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 86ffdff4cdb256fdae39de6228555da5fb88c707
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437608"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017044"
 ---
 # <a name="create-purchasing-policies"></a>Skapa inköpspolicyer
 
@@ -57,6 +56,3 @@ I det här avsnittet visas hur du skapar inköpspolicyer att justera med dina af
 4. Välj **Nära**.
 - Nu kan du ställa in andra policyregler för inköpspolicyn. Observera att en policyregeltyp inte kan ha överlappande regler som är aktiva samtidigt inom en enskild anskaffningpolicy.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject, EntAssetObjectProductionStop, EntAssetProductionStopType, EntAssetMaintenanceStop
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 617fca55226e216197c385c88a9d7a8e3de03b03
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 986b2ae4cf7f7819caaf35e009fd4735f35e6928
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437700"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017973"
 ---
 # <a name="maintenance-downtime-activities"></a>Aktiviteter för underhållsstopp
 
@@ -97,6 +96,3 @@ Bilden nedan visar ett exempel på detaljvyn **Aktiviteter för underhållsstopp
 - Du kan kopiera resurser från en aktivitet för underhållsstopp till en annan. I **Alla aktiviteter för underhållsstopp** väljer du knappen **Kopiera aktiviteter för underhållsstopp** och gör dina urval i fälten **Från aktiviteter för underhållsstopp** och **Till aktiviteter för underhållsstopp** och klickar på **OK**.
 - I **Alla aktiviteter för underhållsstopp** klickar du på knappen **Underhållsschemarader** eller knappen **Aktiva arbetsorder** för att öppna relaterade listor och visa raderna som är relaterade till den valda aktiviteten för underhållsstopp.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

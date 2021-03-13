@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: b221bfede5d1db8d7970e1efede85e8dba7fe017
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 889340c13d150ce8e3ad49a08b3d7f0c25a4b77a
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415712"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017903"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Ställ in räkenskapsintegration för handelskanaler
 
@@ -59,7 +58,7 @@ Innan du använder funktionen räkenskapsintegrering bör du konfigurera följan
 
 2. Överför konfigurationer av räkenskapskopplingar och leverantörer av skattedokument.
 
-    En leverantör av skattedokument ansvarar för generering av skattedokument som representerar transaktioner och händelser som har registrerats i kassan i ett format som även används för interaktionen med en räkenskapsenhet eller tjänst. En leverantör av skattedokument kan generera en representation av en kvittoskrivare i XML-format.
+    En leverantör av skattedokument ansvarar för generering av skattedokument som representerar transaktioner och händelser som har registrerats i POS i ett format som även används för interaktionen med en räkenskapsenhet eller tjänst. En leverantör av skattedokument kan generera en representation av en kvittoskrivare i XML-format.
 
     En räkenskapskoppling ansvarar för kommunikationen med en räkenskapsenhet eller tjänst. En räkenskapskoppling kan skicka en kvittoskrivare som en leverantör av skattedokument skapat i XML-format till en kvittoskrivare. Mer information om komponenter för räkenskapsintegration finns i [Process för räkenskapsregistrering och exempel på räkenskapsintegration för kvittoskrivarenheter](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
@@ -138,7 +137,7 @@ Innan du använder funktionen räkenskapsintegrering bör du konfigurera följan
     Räkenskapsregistreringsflöde har definierats av räkenskapsregistreringsprocessen samt av vissa parametrar för räkenskapsintegrationskomponenterna: tillägget Commerce Runtime för leverantören av skattedokument och tillägg för maskinvarustation för räkenskapskopplingen.
 
     - Prenumeration på händelser och transaktioner till räkenskapsregistreringen är fördefinierade i leverantören av skattedokument.
-    - Leverantören av skattedokument ansvarar för att identifiera räkenskapskopplingen som används för räkenskapsregistreringen. Den matchar kopplingens funktionella profiler som ingår i den grupp för räkenskapskoppling som har angetts för det aktuella steget för räkenskapsregistreringsprocessen med den tekniska profil för koppling som tilldelats maskinvaruprofilen för maskinvarustationen som kassan är kopplad till.
+    - Leverantören av skattedokument ansvarar för att identifiera räkenskapskopplingen som används för räkenskapsregistreringen. Den matchar kopplingens funktionella profiler som ingår i den grupp för räkenskapskoppling som har angetts för det aktuella steget för räkenskapsregistreringsprocessen med den tekniska profil för koppling som tilldelats maskinvaruprofilen för maskinvarustationen som POS är kopplad till.
     - Leverantören av skattedokument använder data från konfiguration av leverantör av skattedokument för att omvandla transaktionshändelsen/data såsom skatter och betalningar medan skattedokument genereras.
     - När leverantören av skattedokument genererar ett skattedokument kan räkenskapskopplingen antingen skicka den till räkenskapsenheten som den är, eller analysera den och omvandla den till en sekvens av kommandon i applikationsprogrammeringsgränssnittet (API) beroende på hur kommunikationen hanteras.
 
@@ -156,14 +155,14 @@ Innan du använder funktionen räkenskapsintegrering bör du konfigurera följan
 
 I vissa fall kan måste en särskild text skrivas ut på en kvittoskrivare om en rabatt ska tillämpas. Du kan ställa in räkenskapstexter för rabatter på sidan **Grupp för räkenskapskoppling** (**Butik och handel \> kanalinställning \> räkenskapsintegration \> grupper för räkenskapskoppling**).
 
-- För manuella rabatter som tillämpas i kassan bör du konfigurera en räkenskapstext för den infokod eller infokodgrupp som anges som **produktrabatt**-infokod i funktionsprofil för kassa.
+- För manuella rabatter som tillämpas i POS bör du konfigurera en räkenskapstext för den infokod eller infokodgrupp som anges som **produktrabatt**-infokod i funktionsprofil för kassa.
 
     1. På sidan **Grupp för räkenskapskoppling** anger du **Text för kvittoskrivaren**.
     2. På fliken **infokoder** väljer du **Lägg till** och välj en infokod eller infokodgrupp.
     3. I **Infokodnummer**, välj ett värde.
     4. I fältet **Delkodsnummer** väljer du ett värde om det krävs en delkod för valda infokoden.
     5. I fältet **Text för kvittoskrivare**, anger du en räkenskapstext som ska skrivas ut på en kvittoskrivare.
-    6. Ange alternativet **Skriv ut användarens indata på kvittoskrivare** till **Ja** för att åsidosätta texten på en kvittoskrivare med information som användaren matar in manuellt i kassan. Det här alternativet gäller bara för infokoder som har en indatatyp **Text**.
+    6. Ange alternativet **Skriv ut användarens indata på kvittoskrivare** till **Ja** för att åsidosätta texten på en kvittoskrivare med information som användaren matar in manuellt i POS. Det här alternativet gäller bara för infokoder som har en indatatyp **Text**.
 
     > [!NOTE]
     > Du kan ange en räkenskapstext för flera infokoder för att stödja scenarier där infokodgrupper, länkade infokoder och utlösta infokoder används. I dessa fall innehåller kvittoskrivaren räkenskapstexter från alla infokoder som är kopplade till transaktionsraden där rabatten tillämpades.
@@ -206,9 +205,9 @@ Alternativ för felhantering som finns tillgängliga i räkenskapsintegration st
 
 4. Om operatören ska kunna fortsätta att bearbeta aktuell åtgärd (till exempel skapa eller slutföra en transaktion) efter att ett hälsokontrollfel inträffar, bör du aktivera behörigheten **Tillåt hoppa över hälsokontrollfel** på sidan **Behörighetsgrupper** (**Butik och handel \> Medarbetare \> Behörighetsgrupper**). Mer information om hälsokontrollproceduren finns i [hälsokontroll av räkenskapsregistrering](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
 
-## <a name="set-up-fiscal-xz-reports-from-the-pos"></a>Ställ in räkenskapsrapporter X/Y från kassan
+## <a name="set-up-fiscal-xz-reports-from-the-pos"></a>Ställ in räkenskapsrapporter X/Y från POS
 
-För att aktivera räkenskapsrapporter X/Z att köras från kassan, bör du lägga till nya knappar i kassalayouten.
+För att aktivera räkenskapsrapporter X/Z att köras från POS, bör du lägga till nya knappar i kassalayouten.
 
 - På sidan **knapprutnät**, följer du instruktionerna i [lägga till kassaåtgärder till kassalayouter med knappsatsdesigner](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) för att installera designern och uppdatera en kassalayout.
 
@@ -226,6 +225,3 @@ Om du vill aktivera manuell körning av en senarelagd räkenskapsregistrering b�
     1. Välj layout som ska uppdateras.
     2. Lägg till en ny knapp och ange knappegenskapen **Slutför räkenskapsregistreringsprocess**.
     3. På sidan **Distributionsschemaläggare** kör jobb **1090** för att överföra ändringar till kanaldatabasen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

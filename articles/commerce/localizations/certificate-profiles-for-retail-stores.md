@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 75edc1b683c4ea6c2bac8e509e6f6da8c56c5e6a
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: 81fa3770a137471e3d7f8cab3c7d7f37febe64fa
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665258"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018878"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Användardefinierade certifikatprofiler för butiker
 
@@ -33,7 +32,7 @@ ms.locfileid: "4665258"
 
 Det här avsnittet innehåller en översikt över de certifikatprofiler som är tillgängliga i Microsoft Dynamics 365 Commerce. Den här funktionen utökar funktionen [Hantera hemligheter för butikskanaler](../dev-itpro/manage-secrets.md) genom att lägga till stöd för lokala certifikat.
 
-Medan kassan körs i offlineläge kan den inte komma åt certifikaten som lagras i nyckelvalvet. Det lokala certifikatet ska användas i stället. Följande funktioner stöds:
+Medan POS körs i offlineläge kan den inte komma åt certifikaten som lagras i nyckelvalvet. Det lokala certifikatet ska användas i stället. Följande funktioner stöds:
 
 - Använda lokala certifikat i scenarier med nyckelvalvsreserv
 - Använda lokala certifikat utan nyckelvalv (t.ex. i en lokal installation)
@@ -49,7 +48,7 @@ Funktionen för certifikatprofiler stöder följande scenarier i Commerce-kanale
 
     - Det går inte att komma åt nyckelvalvlagret.
     - Ett certifikat hittas inte i nyckelvalvlagret.
-    - Kassan körs i offline-läge.
+    - POS körs i offline-läge.
 
 - Använda lokala certifikat men utan att lagra dem i nyckelvalv (t.ex. i en lokal installation).
 - Gör en gradvis uppdatering av certifikat, där en ny version av certifikatet bara används i butiker eller på terminaler där den nya versionen redan är tillgänglig.
@@ -122,6 +121,3 @@ Om en ny version av certifikatet introduceras, men det inte kan uppdateras i all
 
 > [!NOTE]
 > I Commerce Runtime kommer den nya versionen av certifikatet att anropas först. Om certifikatet ännu inte har uppdaterats i en specifik butik eller på en specifik terminal kommer den föregående versionen att anropas.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
