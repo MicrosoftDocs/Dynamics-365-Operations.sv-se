@@ -1,8 +1,8 @@
 ---
 title: Konfigurera och hantera databasloggning
 description: Du kan spåra ändringar i register och fält i Dynamics 365 Human Resources med databasloggning.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3dc4658a0a13af95978c66f5aab882902f754a2d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 50346cc495fe08f49137dba59dbcbb3f7f838c7b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420588"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129289"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurera och hantera databasloggning
 
@@ -87,6 +87,3 @@ Följ dessa steg för att ställa in rensning av databaslogg:
    - Skapat datum och klockslag
 
 3. Använd fliken **Rensning i databasloggen** för att bestämma när loggrensningsuppgiften ska köras. Som standard är databasloggar tillgängliga i 30 dagar.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

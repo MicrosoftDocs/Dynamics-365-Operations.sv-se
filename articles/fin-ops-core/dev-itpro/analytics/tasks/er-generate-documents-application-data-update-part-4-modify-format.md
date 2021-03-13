@@ -1,6 +1,6 @@
 ---
 title: Ändra format för att generera dokument som omfattar programdata
-description: 'Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren "ER Skapa dokument med uppdatering av programdata (Del 3: Ändra modell och mappning)".'
+description: Det här ämnet beskriver hur du utformar rapporteringskonfigurationer för att skapa ett elektroniskt dokument och uppdatera programdata.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e820e909bcd80b4747c06ccaaeb05c03f52b6963
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684557"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129407"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Ändra format för att generera dokument som omfattar programdata
 
@@ -149,6 +149,3 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
 46. Stäng sidan.
 47. Stäng sidan.
 48. Stäng sidan.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

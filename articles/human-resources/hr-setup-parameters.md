@@ -2,7 +2,7 @@
 title: Konfigurera resursparametrar för Personal
 description: Inställningarna för vissa Personalparametrar delas av alla företag, medan inställningarna för andra parametrar är företagsspecifika. Den här artikeln innehåller information om hur du ställer in företagsspecifika HR-parametrar.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bac50c5f302797e28df2bc792893c8a682899a93
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 131606ebaff49a2c63d22bcfdb5e523f4df87ec6
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420533"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129135"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurera resursparametrar för Personal
 
@@ -32,7 +32,7 @@ Inställningarna för vissa HR-parametrar delas av alla företag, medan inställ
 Två sidor används för att ställa mänskliga resurser (HR) parametrar. För parametrar som delas mellan företag, kan du använda de **mänskliga resurserna delas parametrar sidan** . För parametrar som är företagsspecifika (med andra ord inställningar tillämpas på ett enda företag) kan du använda den **mänskliga resursen parametrar sidan** . På **mänskliga resurser parametrar sidan** , inställningarna är uppdelade i sex flikar:
 
 -   Allmänt
--   Rekrytering - detta ingår inte i Dynamics 365 Human Resources
+-   Rekrytering – detta ingår inte i Dynamics 365 Human Resources
 -   Kompensation
 -   Nummersekvenser
 -   Familj och medicinska lämnar Act (fmla)
@@ -50,6 +50,3 @@ Inställningarna på **fliken sekvensen** avgör de sekvenser som används för 
 
 > [!NOTE]
 > Det antal timmar som arbetas inte överstiga 1250 och längden på anställningen får inte överskrida 12 månader. Dessa största värden i enlighet med federal lag i USA. Slutligen inställningarna på den **anställde självbetjäning** fliken bestämmer vilken information som en chef kan ange på uppdrag av hans eller hennes anställda.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

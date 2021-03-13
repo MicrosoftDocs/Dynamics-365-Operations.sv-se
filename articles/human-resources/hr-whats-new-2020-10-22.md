@@ -1,6 +1,6 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources 22 oktober 2020
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources.
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 22 oktober 2020.
 author: jcart1106
 manager: tfehr
 ms.date: 10/22/2020
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 513fc3b35f0b6a7f5d9703d2b5eb4109289a189a
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 41b4e92720c6a9f830d940900c3c6e5b0a173de0
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529992"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130841"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources 22 oktober 2020
 
@@ -59,7 +58,7 @@ Den här versionen innehåller följande felkorrigeringar.
 | 437922 | Import av FMLA timmar med DMF-entiteten resulterar i ett skrivskyddat fel. | Om du använder enheten FMLA timmar för att importera timmar som är kopplade till ett FMLA-ärende misslyckades. Vi har lagt till logik för att se till att de importerade timmarna inte överskrider det antal timmar som återstår för ärendet. |
 | 512019 | Felaktigt belopp för **senaste överföring**. | På sidan **Ledighet** visas ett felaktigt **Från och med** till den första dagen i nästa budgetperiod visas ett felaktigt belopp för **senaste överföring** för typ **Årlig ledighet**. Nu visas rätt belopp. |
 | 458639 | Entiteten **Arbetarkontakter** stöder inte ändringsspårningsläge. | Vi uppdaterade entiteten **Arbetarkontakter** så att du kan använda den för att ta med dina egna databas (BYOD) scenarier.|
-| 505347 | Utbildningsansvariga kan skicka en begäran om att lämna en medarbetare när den strömlinjeformade funktionen för arbetare aktiverades. | Andra roller än personal assistenten och personalchef får inte skicka ansökningar om ledighet för medarbetare. |
+| 505347 | Utbildningsansvariga kan skicka en begäran om att lämna en medarbetare när den strömlinjeformade funktionen för arbetare aktiverades. | Andra roller än personal assistenten och anställande chef får inte skicka ansökningar om ledighet för medarbetare. |
 | 513490 | Loggning av fördelarhantering: lägg till loggning för planer utan täckningsalternativ. | Vi aktiverade loggningsresultat för **Planera utan täckningsalternativ**. Nu visas de i tabellen **Processresultat** och de sorteras korrekt så att de visas överst. |
 | 517021 | Det går inte att välja flera planer med samma **plantyp** kod om **plantypen** kan anmäla sig till en per typ. | Vi har ändrat begränsningarna för urvalsplaner där endast en registrering tillåts. Begränsningarna är nu på **plantypskoden** nivå i stället för **plantyp**. Den här ändringen gör det möjligt att planera som HSA och FSA, som är både samma typ, men du kan ge dem en separat **plantypskod**. På så sätt kan du välja båda för samma registreringsperiod. |
 | 444791 | Kan inte se ersättning i självbetjäning för medarbetare när **begränsad åtkomst** är aktiverat i kompensationsplanen. | I kort självbetjäning för medarbetare **Kompensation**, det aktuella ersättningsbeloppet och ökningsprocenten som visas "0" om den anställde var inskriven i en plan med **Begränsa åtkomsten** aktiverat och tilldelats specifika roller. Vi har löst problemet så att medarbetaren och chefen alltid kan se kompensationsdetaljer för sig själva och deras direkt rapporter. |
@@ -74,9 +73,9 @@ Följande nya funktioner är i förhandsgranskning. Mer information om hur du ak
 
 | Funktion | Utgivningsplan | Dokumentation |
 | --- | --- | --- |
-| Human Resources-app i Microsoft Teams | [Tjänstledighet för medarbetare och frånvaro i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Hantera begäranden om ledighet i Teams](hr-teams-leave-app.md) |
+| Personal-app i Microsoft Teams | [Tjänstledighet för medarbetare och frånvaro i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Personal-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Hantera begäranden om ledighet i Teams](hr-teams-leave-app.md) |
 | Förbättrade arbetsflödesförfrågningar och godkännanden | [Arbetsflöden för organisation och personalhantering](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurationsalternativ för placering av lista över arbetsartiklar tilldelade till mig](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
-| Virtuella enheter i Common Data Service för Human Resources | [Expandera Dynamics 365 Human Resources grundläggande data i Common Data Service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Konfigurera Common Data Service virtuella enheter](hr-admin-integration-common-data-service-virtual-entities.md) |
+| Virtuella enheter i Dataverse för Personal | [Expandera Dynamics 365 Human Resources grundläggande data i Dataverse](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Konfigurera Dataverse virtuella enheter](hr-admin-integration-common-data-service-virtual-entities.md) |
 | Integration med LinkedIn Talent Hub | [Integration med LinkedIn Talent Hub](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [Integration med LinkedIn Talent Hub](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-linkedin) |
 | Anpassade länkar i självbetjäning för chef | [Anpassade länkar i självbetjäning för chef](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service) | [Anpassade länkar i självbetjäning för chef](https://aka.ms/MSSCustomLinks) |
 
@@ -87,10 +86,7 @@ En fullständig lista över planerade funktioner och deras schemalagda versioner
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
 [Översikt över Dynamics 365 Human Resources 2020 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

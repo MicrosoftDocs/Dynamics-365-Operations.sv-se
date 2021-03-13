@@ -1,5 +1,5 @@
 ---
-title: Felsöka problem som rör uppgraderingar av Finance and Operations-appar
+title: Felsöka problem från uppgraderingar av Finance and Operations-appar
 description: Det här avsnittet innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem som är relaterade till uppgradering av Finance and Operations-appar.
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c76b35ed3af766f42484a118a4a0407d969b5240
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a11ce426d7f30b6b124bd2022514a0201c2b332c
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683609"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131231"
 ---
-# <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Felsöka problem som rör uppgraderingar av Finance and Operations-appar
+# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Felsöka problem från uppgraderingar av Finance and Operations-appar
 
 [!include [banner](../../includes/banner.md)]
 
@@ -42,7 +42,7 @@ Det här avsnittet innehåller felsökningsinformation för integrering av dubbe
 
 **Den roll som krävs för att åtgärda problemet:** systemadministratör
 
-Ett felmeddelande av följande slag kan visas när du försöker använda entiteten **DualWriteProjectConfiguration** för att uppdatera en Finance and Operations-app till plattformsuppdatering 30.
+Ett felmeddelande av följande slag kan visas när du försöker använda tabellen **DualWriteProjectConfiguration** för att uppdatera en Finance and Operations-app till plattformsuppdatering 30.
 
 ```console
 Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
@@ -62,7 +62,7 @@ Gör så här om du vill åtgärda problemet.
 8. Välj **synkronisera** om du vill utföra en fullständig databassynkronisering.
 9. När den fullständiga databassynkroniseringen lyckas kör du steget för databassynkronisering i Microsoft Dynamics Lifecycle Services (LCS) och använder de manuella uppgraderingsskripten så att du kan fortsätta med uppdateringen.
 
-## <a name="missing-entity-fields-issue-on-maps"></a>Entitetsfält som saknas problem i kartor
+## <a name="missing-table-columns-issue-on-maps"></a>Problem med kolumner i saknade register på kartor
 
 **Den roll som krävs för att åtgärda problemet:** systemadministratör
 
@@ -70,27 +70,24 @@ På sidan **dubbelriktad skrivning** kan du få ett felmeddelande som liknar fö
 
 *Källfält fältnamn \<field name\> saknas i schemat*
 
-![Exempel på felmeddelandet för källfält saknas](media/error_missing_field.png)
+![Exempel på felmeddelandet för källkolumn saknas](media/error_missing_field.png)
 
-Lös problemet genom att först följa de här stegen för att kontrollera att fälten finns i entiteten.
+Lös problemet genom att först följa de här stegen för att kontrollera att kolumnerna finns i tabellen.
 
 1. Logga in på den virtuella datorn för Finance and Operations-appen.
-2. Gå till **Arbetsytor \> Datahantering**, välj panelen **Ramverksparametrar** och sedan på fliken **Tabellinställningar** välj **Uppdatera entitetslistan** för att uppdatera tabellerna.
-3. Gå till **Arbetsytor \> Datahantering**, välj fliken **Datatabeller** och kontrollera att entiteten finns med i listan. Om entiteten inte finns med loggar du in på den virtuella datorn för Finance and Operations-appen och ser till att enheten är tillgänglig.
+2. Gå till **Arbetsytor \> Datahantering**, välj panelen **Ramverksparametrar** och sedan på fliken **Tabellinställningar** välj **Uppdatera tabellistan** för att uppdatera tabellerna.
+3. Gå till **Arbetsytor \> Datahantering**, välj fliken **Datatabeller** och kontrollera att tabellen finns med i listan. Om tabellen inte finns med loggar du in på den virtuella datorn för Finance and Operations-appen och ser till att tabellen är tillgänglig.
 4. Öppna sidan **Tabellmappning** från sidan **Dubbelriktad skrivning** i Finance and Operations-appen.
-5. Markera **Uppdatera entitetslista** om du vill fylla i fälten i tabellmappningarna automatiskt.
+5. Markera **Uppdatera tabellista** om du vill fylla i kolumnerna i tabellmappningarna automatiskt.
 
 Om problemet fortfarande inte är åtgärdat följer du stegen nedan.
 
 > [!IMPORTANT]
-> De här stegen vägleder dig genom processen att ta bort en enhet och sedan lägga till den igen. Se till att du följer stegen exakt om du vill undvika problem.
+> De här stegen vägleder dig genom processen att ta bort en tabell och sedan lägga till den igen. Se till att du följer stegen exakt om du vill undvika problem.
 
 1. I Finance and Operations-appen, gå till **Arbetsytor \> Datahantering** och välj panelen **Datatabeller**.
-2. Sök efter den entitet som saknar attributet. Klicka på **Ändra målmappning** i verktygsfältet.
+2. Sök efter den tabell som saknar attributet. Klicka på **Ändra målmappning** i verktygsfältet.
 3. I fönstret **Mappa mellanlagring till mål**, klicka på **Generera källmappning**.
 4. Öppna sidan **Tabellmappning** från sidan **Dubbelriktad skrivning** i Finance and Operations-appen.
 5. Om attributet inte fylls i automatiskt på kartan lägger du till det manuellt genom att klicka på knappen **Lägg till attribut** och sedan på **Spara**. 
 6. Markera mappningen och klicka på **Kör**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

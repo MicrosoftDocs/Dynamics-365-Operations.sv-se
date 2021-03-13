@@ -1,8 +1,8 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources (3 mars 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 3 mars 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d6f6f4a32e4bf85908f51eb1eed858b704c814dc
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: e4007daa51d661a2a6b67c323cfaf05c22543371
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526861"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128051"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-3-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (3 mars 2020)
 
@@ -31,9 +31,9 @@ ms.locfileid: "4526861"
 
 Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Dynamics 365 Human Resources. Ändringarna tillämpas på versionsnummer 8.1.2955. Siffror inom parenteser i vissa rubriker refererar till LCS-supportnummer för referens.
 
-## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>Common Data Service-lösningen finns nu med följande ändringar:
+## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>Dataverse-lösningen finns nu med följande ändringar:
 
-En ny Common Data Service-lösning kommer snart att vara tillgänglig med följande ändringar:
+En ny Dataverse-lösning kommer snart att vara tillgänglig med följande ändringar:
 
 | Beskrivning | Växel |
 | ----------------------------------------- | --- |
@@ -44,9 +44,9 @@ En ny Common Data Service-lösning kommer snart att vara tillgänglig med följa
 | Inställningsenheter för ny variabelkompensation | **Typ av variabel kompensationsplan**</br>**Variabel kompensationsplan**</br>**Överlåtelseregler**</br>**Variabel kompensationsplannivå** |
 | Ny enhet för **Arbetarkalender anställning** | **Enheten arbetskalender** tillagd |
 | Ny enhet för **lönepositionsuppgift** | **Lönepositionsuppgift** tillagd |
-| Ny enhet för **Rubrik** | **Rubrik** tillagd. Den nya entiteten **Rubrik** kommer att inkluderas i synkroniseringsprocessen mellan personal och Common Data Service. Den kommer då inte från **Jobbefattning** eller **Jobb** enheter. |
+| Ny enhet för **Rubrik** | **Rubrik** tillagd. Den nya entiteten **Rubrik** kommer att inkluderas i synkroniseringsprocessen mellan personal och Dataverse. Den kommer då inte från **Jobbefattning** eller **Jobb** enheter. |
 
-Under de närmaste veckorna kommer dessa enhetsändringar att vara tillgängliga i alla miljöer. Så här installerar du den senaste Common Data Service-lösningen för personal manuellt:
+Under de närmaste veckorna kommer dessa enhetsändringar att vara tillgängliga i alla miljöer. Så här installerar du den senaste Dataverse-lösningen för personal manuellt:
 
 1.  Gå till [Power Platform administrationscenter](https://admin.powerplatform.microsoft.com).
 
@@ -86,15 +86,13 @@ Med den här ändringen upphör alla aktiva fasta kompensationsposter för den g
 
 Följande förhandsgranskningsfunktioner blir tillgängliga den 3 februari 2020:
 
-- **Förhandsgranskningsfunktioner för tjänstledighet och frånvaro** - För mer information, se [Förhandsgranskningsfunktioner för tjänstledighet och frånvaro](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
+- **Förhandsgranskningsfunktioner för tjänstledighet och frånvaro** – För mer information, se [Förhandsgranskningsfunktioner för tjänstledighet och frånvaro](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
-- **Förhandsgranskningsfunktioner för förmånshantering** - För mer information, inklusive kända problem, se [Översikt över förmånshantering](hr-benefits-management-overview.md).
+- **Förhandsgranskningsfunktioner för förmånshantering** – För mer information, inklusive kända problem, se [Översikt över förmånshantering](hr-benefits-management-overview.md).
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
 [Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

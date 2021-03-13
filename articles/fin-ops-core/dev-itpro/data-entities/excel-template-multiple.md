@@ -1,5 +1,5 @@
 ---
-title: Importera data från Excel-datatabellmallar med flera kalkylblad
+title: Datamallar med flera kalkylblad
 description: Det här avsnittet beskriver hur du importerar data med hjälp av Excel-datatabellmallar till Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 618b62364353f409f6971ddd9adc7d55297d09cf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fb505f33e497cf16cd6cdeddee1f88d01797f3ef
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688089"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130591"
 ---
-# <a name="import-data-from-excel-data-entity-templates-that-have-multiple-worksheets"></a>Importera data från Excel-datatabellmallar med flera kalkylblad
+# <a name="data-templates-with-multiple-worksheets"></a>Datamallar med flera kalkylblad
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,6 +49,3 @@ I fall där en ny version av samma fil eller en helt ny fil måste läsas in fö
 ## <a name="upload-a-file-using-run-project"></a>Överför en fil genom att använda Kör projekt
 
 Du kan överföra en Excel-fil när du använder alternativet **Köra projekt** som kör ett importprojekt. Du måste vara noga med att överföra filer som har samma kalkylblad som de befintliga mappningarna för datatabellerna i dataprojektet. Om ett kalkylblad inte finns i den nyligen överförda filen, visas ett fel i systemet och importen avbryts. Om mappningen till kalkylbladet måste ändras för en entitet och mappningarna i dataprojektet måste först uppdateras från i inne i dataprojektet innan du använder filen i upplevelsen **Kör projekt**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

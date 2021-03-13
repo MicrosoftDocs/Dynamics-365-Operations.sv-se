@@ -1,8 +1,8 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources (19 mars 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 19 mars 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 902539a5abecba6ad99718afbb37613838450032
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 6eddce5b8efa1d62dff3238a5a0b69510ed4c387
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526875"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127979"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-19-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (19 mars 2020)
 
@@ -53,7 +53,7 @@ Du kan nu justera saldon för tjänstledighetsplaner som har skapats med funktio
 
 För medarbetare med en avslutad anställning visas den primära befattning som var aktiv vid uppsägningen i enheten. För integrationer skapas inte längre en dubblettpost för medarbetarens befattningstilldelning. 
 
-## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>Common Data Service-lösningen finns nu med följande ändringar:
+## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>Dataverse-lösningen finns nu med följande ändringar:
 
 | beskrivning | Växel |
 | --- | --- |
@@ -65,12 +65,12 @@ För medarbetare med en avslutad anställning visas den primära befattning som 
 | Inställningsenheter för ny variabelkompensation | <ul><li>**Typ av variabel kompensationsplan**</li><li>**Variabel kompensationsplan**</li><li>**Överlåtelseregler**</li><li>**Variabel kompensationsplannivå**</li></ul> |
 | Ny enhet för **Arbetarkalender anställning** | <ul><li>**Enheten arbetskalender** tillagd</li></ul> |
 | Ny enhet för **lönepositionsuppgift** | <ul><li>**Lönepositionsuppgift** tillagd</li></ul> |
-| Ny enhet för **Rubrik** | <ul><li>**Rubrik** tillagd</li></ul>Den nya entiteten **Rubrik** är inkluderad i Common Data Service men refereras inte från entiteterna **Jobbposition** eller **Jobb** för tillfället. |
+| Ny enhet för **Rubrik** | <ul><li>**Rubrik** tillagd</li></ul>Den nya entiteten **Rubrik** är inkluderad i Dataverse men refereras inte från entiteterna **Jobbposition** eller **Jobb** för tillfället. |
 
 > [!NOTE]
-> Ekonomiska dimensioner för både befattningar och sysselsättning ger en enkelriktad integration för uppdateringar Personal till Common Data Service. Uppdateringar av ekonomiska dimensioner synkroniseras från Common Data Service till personal.
+> Ekonomiska dimensioner för både befattningar och sysselsättning ger en enkelriktad integration för uppdateringar Personal till Dataverse. Uppdateringar av ekonomiska dimensioner synkroniseras från Dataverse till personal.
 
-Under de närmaste veckorna kommer dessa enhetsändringar att vara tillgängliga i alla miljöer. Så här installerar du den senaste Common Data Service-lösningen för personal manuellt:
+Under de närmaste veckorna kommer dessa enhetsändringar att vara tillgängliga i alla miljöer. Så här installerar du den senaste Dataverse-lösningen för personal manuellt:
 
 1.  Gå till [Power Platform administrationscenter](https://admin.powerplatform.microsoft.com).
 
@@ -120,15 +120,13 @@ Från och med april kommer frisläppningstakten för personal att flyttas från 
 
 Följande förhandsgranskningsfunktioner är tillgängliga den 3 februari 2020:
 
-- **Förhandsgranskningsfunktioner för tjänstledighet och frånvaro** - För mer information, se [Förhandsgranskningsfunktioner för tjänstledighet och frånvaro](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
+- **Förhandsgranskningsfunktioner för tjänstledighet och frånvaro** – För mer information, se [Förhandsgranskningsfunktioner för tjänstledighet och frånvaro](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
-- **Förhandsgranskningsfunktioner för förmånshantering** - För mer information, inklusive kända problem, se [Översikt över förmånshantering](hr-benefits-management-overview.md).
+- **Förhandsgranskningsfunktioner för förmånshantering** – För mer information, inklusive kända problem, se [Översikt över förmånshantering](hr-benefits-management-overview.md).
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
 [Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

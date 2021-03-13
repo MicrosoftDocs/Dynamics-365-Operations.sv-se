@@ -1,8 +1,8 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources (25 juni 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 23 juni 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 06/25/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 28eecb6289e5e895e860cffa29a55e773c6aadaa
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: ad80e53c0a24d602ac446d3e0765f397dd0fc2d9
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528727"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127507"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-23-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (23 juni 2020)
 
@@ -118,15 +118,13 @@ Nu är en DMF-enhet tillgänglig för periodiserade avstängningar.
 
 Ett nytt alternativ är tillgängligt i **personalparametrarna** för att uppdatera namnet på arbetsytan självbetjäning för medarbetare till självbetjäning.
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Entiteter för checklista inkluderade i Common Data Service
+## <a name="checklist-entities-included-in-dataverse"></a>Entiteter för checklista inkluderade i Dataverse
 
-Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga inom Common Data Service.
+Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga inom Dataverse.
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
 [Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

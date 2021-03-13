@@ -1,8 +1,8 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources (14 maj 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 14 maj 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 76ca497cc7fabf737c8a0ee71363f22fd4201ea8
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: b8d65236d316035722451a871afabedc6ab73f7a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528507"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127859"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (14 maj 2020)
 
@@ -35,13 +35,13 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Human Res
 
 Plattformsändringar ingår i den här veckans version. Mer information finns i [Plattformsuppdateringar för version 10.0.10 av Finance and Operations-appar (maj 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). I den här versionen ingår felkorrigeringar och ändringar i sparade vyer.
  
-## <a name="ensure-common-data-service-picklists-are-consistent-with-leave-enums-436343"></a>Kontrollera att Common Data Service-plocklistor är konsekventa med uppräkningar (enum) för tjänstledighet (436343)
+## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Kontrollera att Dataverse-plocklistor är konsekventa med uppräkningar (enum) för tjänstledighet (436343)
 
-Common Data Service-plocklistor är nu konsekventa med uppräkningar (enum) för tjänstledighet.
+Dataverse-plocklistor är nu konsekventa med uppräkningar (enum) för tjänstledighet.
 
-## <a name="allow-users-to-configure-leave-request-workflow-based-on-the-request-amount-300044"></a>Tillåt användare att konfigurera arbetsflödet för ansökan om tjänstledighet baserat på kvantiteten för förfrågan (300044)
+## <a name="allow-users-to-configure-leave-request-workflow-based-on-the-request-amount-300044"></a>Tillåt användare att konfigurera arbetsflödet för ansökan om tjänstledighet baserat på kvantiteten för begäran (300044)
 
-Användare kan konfigurera arbetsflödet för ansökan om tjänstledighet baserat på kvantiteten för förfrågan
+Användare kan konfigurera arbetsflödet för ansökan om tjänstledighet baserat på kvantiteten för begäran
  
 ## <a name="new-worker-form-exposes-data-through-the-view-menu-when-advanced-security-is-enabled-403185"></a>Formuläret ny medarbetare visar data via Visa-menyn när avancerad säkerhet är aktiverad (403185)
 
@@ -75,7 +75,7 @@ Den här ändringen korrigerar ett fel när en tjänstledighetsplan har tilldela
 
 Med den här ändringen döljs Komma igång-banderollen för användare som inte är systemadministratörer eller datahanteringsadministratörer. 
 
-## <a name="the-common-data-service-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Common Data Service-entiteten för medarbetaradresser fungerar på annorlunda i fråga om giltighetsdatum i personal (425071)
+## <a name="the-dataverse-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Dataverse-entiteten för medarbetaradresser fungerar på annorlunda i fråga om giltighetsdatum i personal (425071)
 
 Den här ändringen innehåller adressinformation som är justerad i vissa scenarier, baserat på adressens datum.
 
@@ -105,9 +105,9 @@ Nu är en DMF-enhet tillgänglig för periodiserade avstängningar.
 
 Orsakskoder har lagts till den periodiserade avstängningen.
 
-## <a name="begin-transitioning-from-human-resources-parameters-to-leave-and-absence-parameters"></a>Påbörja övergång från Human Resources-parametrar till tjänstledighets- och frånvaroparametrar
+## <a name="begin-transitioning-from-human-resources-parameters-to-leave-and-absence-parameters"></a>Påbörja övergång från Personal-parametrar till tjänstledighets- och frånvaroparametrar
 
-Den här versionen börjar kombinera Human Resources-parametrar med parametrar för tjänstledighet och frånvaro.
+Den här versionen börjar kombinera Personal-parametrar med parametrar för tjänstledighet och frånvaro.
 
 ## <a name="carry-forward-rules"></a>Överför regler
 
@@ -115,9 +115,7 @@ Du kan ange en överför tjänstledighetstyp för överföringsaldon där överf
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
 [Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

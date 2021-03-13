@@ -2,7 +2,7 @@
 title: Visa och hantera adressändringar
 description: I det här avsnittet beskrivs hur du kan visa och hantera adressändringar i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 269074
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a69d723b45e834b022491c8eaf2a7fb580e54f1d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8746f449f2b30b2e2119446c1912842c420acbfc
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420534"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152063"
 ---
 # <a name="view-and-manage-address-changes"></a>Visa och hantera adressändringar
 
@@ -125,9 +125,6 @@ Personal kan visa och övervaka adressändringar från arbetsytan **personalhant
 När du väljer panel **adressändringar** visas information om adressändringar på en ny sida. Du kan också välja att **Inkludera framtida adressändringar** i det övre högra hörnet för att visa adressändringar med ett framtida datum.
 
 > [!NOTE]
-> Om du vill få en notifiering eller skicka e-post om dessa adress ändringar, kan du skapa en ny notifieringsregel på fliken **Alternativ** i åtgärdsfönstret. Mer information om hur du skapar varningsregel finns i [Skapa varningsregel](/fin-ops-core/fin-ops/get-started/create-alert-rules.md).<br><br>
+> Om du vill få en notifiering eller skicka e-post om dessa adress ändringar, kan du skapa en ny notifieringsregel på fliken **Alternativ** i åtgärdsfönstret. Mer information om hur du skapar varningsregel finns i [Skapa varningsregel](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
 
-> Om du vill konfigurera ett arbetsflöde för adressändringarna kan du välja alternativet **Skicka externt** i varningsregeln och sedan använda Power Automate för att utlösa affärshändelsen och konfigurera ett arbetsflöde. Mer information finns i [notifieringar som affärshändelser](/fin-ops-core/dev-itpro/business-events/alerts-business-events.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+> Om du vill konfigurera ett arbetsflöde för adressändringarna kan du välja alternativet **Skicka externt** i varningsregeln och sedan använda Power Automate för att utlösa affärshändelsen och konfigurera ett arbetsflöde. Mer information finns i [notifieringar som affärshändelser](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).

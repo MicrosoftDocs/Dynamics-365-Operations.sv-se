@@ -1,8 +1,8 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources (1 maj 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 1 maj 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 05/01/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 074c678d9d8294aabf4e78b2a6ee0fa53efbaf23
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b7e41762e4283d5a4b0c9dd8359c5fb2bdabfc26
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420603"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127883"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-1-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (1 maj 2020)
 
@@ -81,9 +81,9 @@ Nu är en DMF-enhet tillgänglig för periodiserade avstängningar.
 
 Orsakskoder har lagts till den periodiserade avstängningen.
 
-## <a name="begin-transitioning-from-human-resources-parameters-to-leave-and-absence-parameters"></a>Påbörja övergång från Human Resources-parametrar till tjänstledighets- och frånvaroparametrar
+## <a name="begin-transitioning-from-human-resources-parameters-to-leave-and-absence-parameters"></a>Påbörja övergång från Personal-parametrar till tjänstledighets- och frånvaroparametrar
 
-Den här versionen börjar kombinera Human Resources-parametrar med parametrar för tjänstledighet och frånvaro.
+Den här versionen börjar kombinera Personal-parametrar med parametrar för tjänstledighet och frånvaro.
 
 ## <a name="carry-forward-rules"></a>Överför regler
 
@@ -105,9 +105,7 @@ Om förhandsgranska dokument för dokument som lagras i SharePoint inte fungerar
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
 [Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

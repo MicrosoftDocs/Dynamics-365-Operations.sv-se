@@ -1,8 +1,8 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources (28 maj 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 28 maj 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 00a5881ea88749c8553e4c810fb57070f217b01c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 662b34994231727b0d693cac148547b404475346
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420635"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127835"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-28-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (28 maj 2020)
 
@@ -75,7 +75,7 @@ Användarupplevelsen anger nu att periodiseringen har avbrutits för en plan.
 
 ## <a name="database-logging-in-preview-in-june"></a>Databasloggning (i förhandsgranskning i juni)
 
-Med funktionen för databasloggning kan du bestämma vilka register och fält som ska övervakas. Du kan också bestämma vilka händelser som ska utlösa ändringsspårningen. Förfrågankapacitet kan visa dessa ändringar med tiden.
+Med funktionen för databasloggning kan du bestämma vilka register och fält som ska övervakas. Du kan också bestämma vilka händelser som ska utlösa ändringsspårningen. Begärankapacitet kan visa dessa ändringar med tiden.
 
 ## <a name="buy-and-sell-leave-in-preview-june-1"></a>Köpa och sälja tjänstledighet (i förhandsversion 1 juni)
 
@@ -106,9 +106,7 @@ Nu är en DMF-enhet tillgänglig för periodiserade avstängningar.
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
 [Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

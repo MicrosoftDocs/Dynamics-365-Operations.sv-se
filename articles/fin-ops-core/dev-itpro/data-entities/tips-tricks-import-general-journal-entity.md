@@ -1,5 +1,5 @@
 ---
-title: Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal
+title: Importera verifikationer med hjälp av enheten Allmän journal
 description: Det här ämnet innehåller tips för import av data till den allmänna journalen med hjälp av enheten Allmän journal.
 author: rcarlson
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5b36e11bd9ef338334f7ac1b6412edb7754010f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8ccb479cf7bcf86c01ed274a7a39856d538f220f
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687653"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129609"
 ---
-# <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal
+# <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Importera verifikationer med hjälp av enheten Allmän journal
 
 [!include [banner](../includes/banner.md)]
 
@@ -65,6 +65,3 @@ I följande avsnitt beskrivs effekterna av dessa inställningar. De förklarar o
 - Om fältet **Verifikationsnummer** är inställt på **Automatiskt skapad** misslyckas importen. Inställningen **Automatiskt skapad** för fältet **Verifikationsnummer** stöds inte.
 
 Enheten Allmän journal använder uppsättningsbaserad bearbetning. När du utvärderar affärskraven för din organisation kan du ändra inställningen **Uppsättningsbaserad bearbetning** genom att klicka på **Datatabeller** i arbetsytan **Datahantering**. Uppsättningsbaserad bearbetning används för att påskynda importprocessen. Om du inte använder uppsättningsbaserad bearbetning går importen av enheten Allmän journal långsammare.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

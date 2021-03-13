@@ -1,8 +1,8 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources (18 februari 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 18 februari 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 002b1b8b86c4fb40f46c239669cd5dfead251bfe
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: e087095807f587536f2dad7e65fbc8beaa88878e
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526988"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128075"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (18 februari 2020)
 
@@ -43,17 +43,17 @@ Det nya formuläret **arbetare** kommer nu ihåg sökvärden när du ändrar vis
 
 Fasta och variabla kompensationshanteringspaneler visar nu korrekta poster i formuläret **Arbetare**. Gäller endast förhandsgranskningsfunktionen för formulär för förenklad medarbetare. Du kan aktivera den här förhandsgranskningsfunktionen i **funktionshantering**. Mer information finns i [Hantera funktioner](hr-admin-manage-features.md).
 
-## <a name="empty-status-field-for-some-leave-request-records-in-common-data-service-414915"></a>Tomt statusfält för vissa poster för ledighetsansökan i Common Data Service (414915)
+## <a name="empty-status-field-for-some-leave-request-records-in-dataverse-414915"></a>Tomt statusfält för vissa poster för ledighetsansökan i Dataverse (414915)
 
-Den här ändringen åtgärdar ett problem i Common Data Service när fältet **status** i en ledighetsansökan anges till **granskning**. Common Data Service visar nu statusen.
+Den här ändringen åtgärdar ett problem i Dataverse när fältet **status** i en ledighetsansökan anges till **granskning**. Dataverse visar nu statusen.
 
 ## <a name="skill-gap-analysis-only-possible-for-assigned-job-411390"></a>Analys av kompetensluckor är endast möjlig för tilldelat jobb (411390)
 
 Du kan nu utföra en analys av kompetensluckor på alla jobb som definierats i personal.
 
-## <a name="system-currency-doesnt-sync-from-common-data-service-to-human-resources-in-new-environments-418011"></a>Systemvalutan synkroniseras inte från Common Data Service till personal i nya miljöer (418011)
+## <a name="system-currency-doesnt-sync-from-dataverse-to-human-resources-in-new-environments-418011"></a>Systemvalutan synkroniseras inte från Dataverse till personal i nya miljöer (418011)
 
-Systemvalutan i Common Data Service kan nu synkronisera med personal.
+Systemvalutan i Dataverse kan nu synkronisera med personal.
 
 ## <a name="in-preview"></a>I förhandsgranskning
 
@@ -63,9 +63,9 @@ Systemvalutan i Common Data Service kan nu synkronisera med personal.
 
 ## <a name="coming-soon"></a>Kommer snart
 
-### <a name="updated-common-data-service-solution"></a>Uppdaterad Common Data Service-lösning
+### <a name="updated-dataverse-solution"></a>Uppdaterad Dataverse-lösning
 
-En ny Common Data Service-lösning kommer snart att vara tillgänglig med följande ändringar:
+En ny Dataverse-lösning kommer snart att vara tillgänglig med följande ändringar:
 
 | Beskrivning | Växel |
 | ----------------------------------------- | --- |
@@ -76,13 +76,11 @@ En ny Common Data Service-lösning kommer snart att vara tillgänglig med följa
 | Inställningsenheter för ny variabelkompensation | **Typ av variabel kompensationsplan**</br>**Variabel kompensationsplan**</br>**Överlåtelseregler**</br>**Variabel kompensationsplannivå** |
 | Ny enhet för **Arbetarkalender anställning** | **Enheten arbetskalender** tillagd |
 | Ny enhet för **lönepositionsuppgift** | **Lönepositionsuppgift** tillagd |
-| Ny enhet för **Rubrik** | **Rubrik** tillagd. Den nya entiteten **Rubrik** kommer att inkluderas i synkroniseringsprocessen mellan personal och Common Data Service. Den kommer då inte från **Jobbefattning** eller **Jobb** enheter. |
+| Ny enhet för **Rubrik** | **Rubrik** tillagd. Den nya entiteten **Rubrik** kommer att inkluderas i synkroniseringsprocessen mellan personal och Dataverse. Den kommer då inte från **Jobbefattning** eller **Jobb** enheter. |
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
 [Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

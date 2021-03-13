@@ -1,9 +1,9 @@
 ---
 title: Nyheter och ändringar i Dynamics 365 Human Resources (20 augusti 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources 20 augusti 2020.
-author: Darinkramer
-manager: AnnBe
-ms.date: 8/20/2020
+author: andreabichsel
+manager: tfehr
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 46dadb8834195c5dd06cd1c56d79324def7d9f2d
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: b3654617b0e8bc4b586e969913d5dc355b60b882
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527492"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130069"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-20-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (20 augusti 2020)
 
@@ -51,7 +51,7 @@ Tjänstledighetstransaktioner tillåts nu för medarbetare som har avslutats i f
 
 Alternativen för åtgärdsfönster i formuläret **Arbetare** i **Hantera tjänstledighet** kommer inte längre att inaktiveras om anpassade fält har lagts till i det nya formuläret **arbetare**.
 
-## <a name="making-the-leave-comment-field-mandatory-allows-a-leave-request-to-be-submitted-when-no-comment-is-entered-473543"></a>Om du gör fältet lämna kommentarsfält obligatoriskt kan en begäran om att lämna en förfrågan skickas när ingen kommentar har angetts (473543)
+## <a name="making-the-leave-comment-field-mandatory-allows-a-leave-request-to-be-submitted-when-no-comment-is-entered-473543"></a>Om du gör fältet lämna kommentarsfält obligatoriskt kan en begäran om att lämna en begäran skickas när ingen kommentar har angetts (473543)
 
 Kommentarsfält kan nu vara obligatoriska och lämna förfrågningar följer den här inställningen. Obligatoriska fält är en förhandsgranskningsfunktion.
 
@@ -73,19 +73,19 @@ Du kan göra fält obligatoriska genom att använda anpassningsfunktioner för p
 Medarbetare kan visa och begära ledighet från arbetet inom Microsoft Teams. De kan samverka med en bot för att skapa tjänstledighetsansökan. Mer information finns i:
 
 - [Erfarenhet av medarbetares ledighet och frånvaro i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365 2020 utgivningsvåg 1-planen
-- [Human Resources-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
+- [Personal-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
 
 ## <a name="coming-soon"></a>Kommer snart
 
-### <a name="human-resources-app-in-teams-preview-features"></a>Förhandsfunktioner för Human Resources-app i Teams
+### <a name="human-resources-app-in-teams-preview-features"></a>Förhandsfunktioner för Personal-app i Teams
  
--  **Meddelanden**: skicka och granskare av tidsförfrågningar kommer att meddelas i modulen Human Resources-app i Teams. Godkännare kommer att kunna godkänna eller neka förfrågningar om att en begäran har godkänts eller nekats.
+-  **Meddelanden**: skicka och granskare av tidsförfrågningar kommer att meddelas i modulen Personal-app i Teams. Godkännare kommer att kunna godkänna eller neka förfrågningar om att en begäran har godkänts eller nekats.
  
 - **Ledighetskalender för chef**: chefer kommer att kunna se godkänd och väntande ledighet för sina underställda i en kalendervy. Den här vyn gör det enklare att förstå när gruppmedlemmarna är borta från arbetet.
 
-### <a name="checklist-entities-included-in-common-data-service"></a>Entiteter för checklista inkluderade i Common Data Service
+### <a name="checklist-entities-included-in-dataverse"></a>Entiteter för checklista inkluderade i Dataverse
 
-Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga i Common Data Service.
+Entiteter för checklista för registrering, offboard, överföringar och affärsprocesser kommer snart att vara tillgängliga i Dataverse.
 
 ## <a name="known-issues"></a>Kända problem
 
@@ -116,10 +116,7 @@ Vi har nyligen upptäckt två frågor om **BenefitsPlanEmployee**-entiteten. Nä
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
 [Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

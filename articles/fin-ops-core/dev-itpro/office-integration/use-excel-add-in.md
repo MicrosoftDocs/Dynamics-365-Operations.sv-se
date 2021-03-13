@@ -1,9 +1,9 @@
 ---
-title: Öppna entitetsdata i Excel och uppdatera den med hjälp av Excel-tillägget
-description: Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Office-tillägget för Excel.
-author: ChrisGarty
+title: Visa och uppdatera enhetsdata i Excel
+description: Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Excel-tillägget.
+author: jasongre
 manager: AnnBe
-ms.date: 04/11/2018
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -13,38 +13,39 @@ ms.reviewer: sericks
 ms.custom: 267914
 ms.assetid: 4e6c7194-a059-4057-bd62-ec0c802c36fd
 ms.search.region: Global
-ms.author: cgarty
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26d5f165648c1553745e3061cc89bcba42f9636a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0a9486b3d700cdbe19fbcdba431f673d0a03014f
+ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688477"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5141886"
 ---
-# <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Öppna entitetsdata i Excel och uppdatera den med hjälp av Excel-tillägget
+# <a name="view-and-update-entity-data-with-excel"></a>Visa och uppdatera enhetsdata i Excel 
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Office-tillägget för Excel. För att öppna entitetsdata kan du starta från antingen Excel eller Finance and Operations.
+Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Excel-tillägget. För att öppna entitetsdata kan du starta från antingen Excel eller Finance and Operations-appar.
 
-Genom att öppna enhetsdata i Excel kan du snabbt och enkelt visa, uppdatera och redigera data med tillägget för Excel. Det här tillägget kräver Microsoft Excel 2016.
+Genom att öppna enhetsdata i Excel kan du snabbt och enkelt visa, uppdatera och redigera data med tillägget för Excel. Det här tillägget kräver Microsoft Excel 2016 eller senare.
 
 > [!NOTE]
 > Om din Microsoft Azure Active Directory (Azure AD) klientorganisation har konfigurerats för att använda Active Directory Federation Services (ADFS), måste du se till att uppdateringen för Office från maj 2016 har installerats, så att Excel-tilläggen logga in dig korrekt.
 
-Om du vill veta mer om hur du använder Excel-tillägg, titta på den korta videon [Skapa en Excel-mall för rubriker och mönster i Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
+Om du vill veta mer om hur du använder Excel-tillägg, titta på den korta videon [Skapa en Excel-mall för rubriker och mönster](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Öppna entitetsdata i Excel när du startar från Finance and Operations
-1. På en sida i Finance and Operations väljer du **Öppna i Microsoft Office**.
+## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Öppna entitetsdata i Excel när du startar från en Finance and Operations-app
+1. På en sida i Finance and Operations-app väljer du **Öppna i Microsoft Office**.
 
     Om rotdatakällan (register) för sidan är samma som rotdatakällan för alla enheter skapas standardalternativet **öppna i Excel** för sidan. Alternativet **Öppna i Excel** finns på ofta använda sidor, t.ex. **alla leverantörer** och **alla kunder**.
  
 2. Klicka på alternativet **öppnas i Excel** och öppna en arbetsbok som har skapats. Den här arbetsboken har bindningsinformation för enheten, en pekare till din miljö och en länk till Excel-tillägget.
 3. I Excel klickar du på **skrivskyddet** för att tillåta att Excel-tillägget körs. Excel-tillägget körs i ett fönster till höger i Excel-fönstret.
 4. Om du använder Excel-tillägg för första gången klickar du på **Lita på det här tillägget**.
-5. Om du uppmanas att logga in klickar du på **Logga in** och loggar sedan in med samma inloggningsuppgifter som du använde för att logga in till Finance and Operations. Excel-tillägget använder en tidigare inloggningskontext från Internet Explorer och loggar automatiskt in dig, om det kan. Kontrollera därför användarnamnet i det övre högra hörnet av Excel-tillägget.
+5. Om du uppmanas att logga in klickar du på **Logga in** och loggar sedan in med samma inloggningsuppgifter som du använde för att logga in till Finance and Operations-appen. Excel-tillägget använder en tidigare inloggningskontext från webbläsaren och loggar automatiskt in dig, om det kan. (Mer information om webbläsaren som används baserat på operativsystemet finns i [Webbläsare som används av Office-tillägg](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) För att säkerställa att inloggningen lyckades, verifiera användarnamnet i det övre högra hörnet av Excel-tillägget. 
 
 Excel-tillägget läser automatiskt data för enheten som du har valt. Lägg märke till att det finns inga data i arbetsboken förrän Excel-tillägget läser in den.
 
@@ -53,7 +54,7 @@ Excel-tillägget läser automatiskt data för enheten som du har valt. Lägg mä
 2. I Office Store.söker du efter nyckelordet **Dynamics** och väljer sedan **Lägg till** bredvid **Microsoft Dynamics Office-tillägget** (Excel-tillägget).
 3. Om du använder Excel-tillägg för första gången klickar du på **Lita på det här tillägget** för att tillåta att Excel-tillägget körs. Excel-tillägget körs i ett fönster till höger i Excel-fönstret.
 4. Klicka på **lägga till information om server** för att öppna fönstret **alternativ**.
-5. I webbläsaren kopierar du webbadressen från Finance and Operations-instansen, klistrar in den i fältet **Server-URL** och tar bort allt efter värdnamnet. Den resulterande URL:en ska ha bara värdnamnet.
+5. I webbläsaren kopierar du webbadressen från Finance and Operations-appinstansen, klistrar in den i fältet **Server-URL** och tar bort allt efter värdnamnet. Den resulterande URL:en ska ha bara värdnamnet.
 
     Om URL-adressen är till exempel `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, ta bort allt utom `https://xxx.dynamics.com`.
 
@@ -72,7 +73,7 @@ Excel-tillägget läser automatiskt data för enheten som du har valt. Lägg mä
 När Excel-tillägget har läst in enhetsdata i arbetsboken, kan du uppdatera informationen när som helst genom att klicka på **uppdatera** i Excel-tillägget.
 
 ## <a name="edit-entity-data-in-excel"></a>Redigera enhetsdata i Excel
-Du kan ändra enhetsdata som du vill och sedan publicera den igen genom att klicka på **publicera** i Excel-tillägget. Markera en cell i kalkylbladet om du vill redigera en post och ändra värdet i cellen. Om du vill lägga till en ny post, gör du något av följande:
+Du kan ändra enhetsdata som du vill och sedan publicera den igen i Finance and Operations-appen genom att klicka på **publicera** i Excel-tillägget. Markera en cell i kalkylbladet om du vill redigera en post och ändra värdet i cellen. Om du vill lägga till en ny post, gör du något av följande:
 
 - Klicka var som helst i registret för datakällor och klicka sedan på **Ny** i Excel-tillägg.
 - Klicka i den sista raden i registret för datakällor och tryck på TAB tills markören flyttas från den sista kolumnen på samma rad och en ny rad skapas.
@@ -105,6 +106,21 @@ Du kan använda designern för att justera att kolumnerna läggs till automatisk
 4. Gör ändringarna till datakällan genom att klicka på **uppdatering**. Klicka på **Klart** för att stänga designverktyget.
 5. Om du har lagt till ett fält (kolumn) klickar du på **uppdatera** för att ta emot en uppdaterad uppsättning data.
 
+## <a name="change-the-publish-batch-size"></a>Ändra publicera batchstorlek
+När användarna publicerar ändringar i dataposter med hjälp av Excel-tillägget skickas uppdateringarna i batchar. Standardvärdet för publicering av batchstorlek är 100 rader. I version 10.0.17 och senare ger funktionen **Tillåt konfiguration av publiceringen av batchstorleken i Excel-tillägg** dig flexibel kontroll över publicering av batchstorlek.
+
+Systemadministratörer kan ange en systemomfattande gräns för publicering av batchstorlek för "Öppna i Excel"-arbetsböcker genom att ange fältet **Publicera batchgräns** i avsnittet **Apparametrar** på sidan **Office-apparametrar**.
+
+Publicera batchstorlek kan också ändras för en enskild arbetsbok genom att använda Excel-tillägget.
+
+1. Öppna arbetsboken i Excel.
+2. Vöälj knappen **Alternativ** (kugghjul) längst upp till höger i Excel-tillägget.
+3. Ställ in fältet **Publicera batchstorlek** efter behov. Värdet du anger måste vara lägre än den systemövergripande publiceringsgränsen för batch.
+4. Välj **OK**.
+5. Spara arbetsboken. Om du inte sparar arbetsboken efter att du har gjort ändringar i inställningarna för tillägg, finns inte dessa ändringar kvar när arbetsboken öppnas igen.
+
+Författare till Excel-arbetsboksmallar kan använda samma procedur för att ställa in publiceringen av batchstorlek för mallar innan de överför dem till systemet.
+
 ## <a name="copy-environment-data"></a>Kopiera miljödata
 
 De data som läses in i arbetsboken från en miljö kan kopieras till en annan miljö. Du kan inte bara ändra anslutnings-URL eftersom datacachen i arbetsboken fortsätter att hantera informationen som befintliga data. I stället måste du använda funktionen Kopiera miljödata och publicera data till en ny miljö som nya data.
@@ -123,6 +139,4 @@ Det finns några problem som kan lösas genom några enkla steg.
 - **Knappen Läs in appletar visas** – Om Excel-tillägget har knappen **Läs in appletar** är du troligen inte korrekt inloggad som användare. Kontrollera att rätt användarnamn visas i det övre högra hörnet av Excel-tillägget för att lösa problemet. Om ett felaktigt användarnamn visas, klickar du på den, loggar ut och loggar sedan in igen.
 - **Felmeddelandet "Förbjudet" visas** – Om felmeddelandet "Förbjudet" visas medan Excel-tillägget läser in metadata, har det konto som är inloggat i Excel-tillägget inte behörighet att använda den riktade tjänsten, instansen eller databasen. Kontrollera att rätt användarnamn visas i det övre högra hörnet av Excel-tillägget för att lösa problemet. Om ett felaktigt användarnamn visas, klickar du på den, loggar ut och loggar sedan in igen.
 - **En tom webbsida visas över Excel** – Om en tom webbsida öppnas när du loggar in, kräver kontot AD FS, men versionen av Excel som kör Excel-tillägget är inte tillräcklig nytt för att läsa in dialogrutan för inloggning. Uppdatera versionen av Excel som du använder för att lösa problemet. Uppdatera Excel-versionen när du arbetar i ett företag på den uppskjutna kanalen med [Office distributionsverktyg](https://technet.microsoft.com/library/jj219422.aspx) för att [flytta från uppskjuten kanal till den aktuella kanalen](https://technet.microsoft.com/library/mt455210.aspx).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+- **Du får en timeout medan du publicerar dataändringar** - Om du får timeout-meddelanden när du försöker publicera dataändringar till en enhet kan du överväga att minska publiceringsbatchstorleken för den berörda arbetsboken. Enheter som utlöser större mängder logik i poständringar kan kräva uppdateringar som skickas i mindre batchar för att förhindra timeout.

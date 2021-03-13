@@ -2,7 +2,7 @@
 title: Använd arbetsflöden för att hantera medarbetarinformation
 description: Det här avsnittet beskriver hur du kan använda arbetsflödeskapacitet för personal får att hantera medarbetarinformation. Exempelvis kan du koppla ett arbetsflöde till en befattning och konfigurera ett godkännandearbetsflöde som startas när en medarbetare har ändrat deras post.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 269074
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 250b214372a12f99d2ababc97c5edf4456cadcad
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c5bb0a363a3094626d81af3d5ffea38d9a1b12a8
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420637"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129813"
 ---
 # <a name="use-workflows-to-manage-employee-information"></a>Använd arbetsflöden för att hantera medarbetarinformation
 
@@ -73,6 +73,3 @@ Om du vill konfigurera ett grundläggande arbetsflöde som startas när anställ
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

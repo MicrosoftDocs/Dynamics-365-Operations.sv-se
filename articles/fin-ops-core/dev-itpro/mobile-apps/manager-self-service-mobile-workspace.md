@@ -1,6 +1,6 @@
 ---
 title: Mobil arbetsyta för mitt team
-description: Detta avsnitt innehåller information om den mobila arbetsytan för mitt team, som låter chefer se sina underställda och utökad personal. Användare kan också skicka beröm till enskilda personer i sin rapporteringskedja.
+description: Detta avsnitt innehåller information om den mobila arbetsytan för mitt team, som låter chefer se sina underställda och utökad personal.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 12/01/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6ac3bf0a6ce20866f749b0c14030b70770e5589c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 79678c42545a07054af00cd408e04e9d1a42caed
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680980"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127555"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobil arbetsyta för mitt team
 
@@ -97,6 +97,3 @@ Hämta och installera mobilappen Finance and Operations.
 1.  Välj **Skicka beröm**. 
 1. Ange den berömtext som du vill skicka. 
 1. Välj **Klar**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

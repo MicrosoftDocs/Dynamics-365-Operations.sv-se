@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 28518341544327f1983e563b719b0f455b6e1c43
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 948860bb064dde1085fef4a74da2d9a600892294
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4448206"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131015"
 ---
 # <a name="set-up-lease-books"></a>Konfigurera leasingböcker
 
@@ -53,6 +52,4 @@ Följ dessa steg för att skapa en leasingbok.
     | Korttidströskel                     | Ange antalet månader som ska användas som ett tröskelvärde för kortfristig leasing. Om leasingperioden är mindre än eller lika med antalet månader som du anger här, klassificeras leasingen som en kortsiktig leasing och behandlingen med uppskov av leasingavgift kommer att tillämpas. |
     | Lågvärdeströskel                      | Ange ett belopp som ska användas som tröskelvärde för lågvärdesleasing. Om tillgångens verkliga värde är mindre än eller lika med värdet som du anger här, klassificeras leasingen som en lågvärdesleasing och behandlingen med uppskov av leasingavgift kommer att tillämpas. |
     | Betala till leverantör                            | Ställ in det här alternativet **Ja** för att låta leasingbetalningar bokföras, som en faktura, till det leverantörskonto som anges för varje leasing. När en leasingbetalning bokförs kommer leverantörskontot att krediteras. Om det här alternativet är inställt på **Nej**, krediteras det konto som anges för bokföringstypen **Leasingbetalning** på sidan **Parametrar för bokföring av leasing** i stället. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+    | Leasingkonvention                       | Välj praxis för startdatum för leasingavtalet:<ul><li><b>Ingen</b> – Använd leasingavtalets startdatum som startdatum.</li><li><b>Hel månad</b> – Använd den första dag i månaden som leasingavtalets startdatum faller inom som startdatum.</li></ul><p>Om du väljer <b>Ingen</b> finns en risk att scheman för skuldamortering och tillgångsavskrivning kommer att ansamla och bokföra utgifter i mitten av månaden istället för i slutet av densamma. Genom att välja <b>Fullständig månad</b> säkerställer du att systemet börjar att redovisa leasingavtalet den första dagen i månaden, och att hela månadens utgift periodiseras och bokförs den sista dagen i månaden.</p><p><strong>Obs!</strong> Funktionen leasingkonventioner måste aktiveras via funktionshanteringen. I arbetsytan <b>Funktionshantering</b> väljer du funktionen kallad <b>Leasingkonvention för tillgångsleasing</b> och sedan <b>Aktivera nu</b>.</p> |

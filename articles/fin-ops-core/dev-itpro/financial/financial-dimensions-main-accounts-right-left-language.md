@@ -1,6 +1,6 @@
 ---
 title: Ekonomiska dimensioner och huvudkonton i språk som skrivs från höger till vänster
-description: Det här ämnet beskriver några av implementeringsbesluten som du bör beakta när du använder ett språk som skrivs från höger till vänster och du måste ställa in ekonomiska dimensioner och huvudkontona.
+description: Det här ämnet beskriver besluten som du bör göra när du använder ett språk som skrivs från höger till vänster och du måste ställa in ekonomiska dimensioner och huvudkontona.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 192ed371eec24ed4e0532aaca341bb249a4933c7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2bdf1b99ae7be6c9d9c43c91c9273e18ce9b1093
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680492"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127657"
 ---
 # <a name="financial-dimensions-and-main-accounts-in-right-to-left-languages"></a>Ekonomiska dimensioner och huvudkonton i språk som skrivs från höger till vänster
 
@@ -38,6 +38,3 @@ Ekonomiska dimensioner och huvudkonton är viktiga komponenter av planeringsfase
 - Undvik att använda den valda kontoplanavgränsaren i värden frö ekonomisk dimension och huvudkonto.
 
 Genom att följa regelverk, kan du garantera en konsekvent representation av den användardefinierade ordern i hela systemet.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
@@ -19,19 +18,22 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88bce09a6d3bf154592955a6fb2dada6247f1993
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 411a97427bbb16388e0f60b8ecb5dd3e5a79e87e
+ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437884"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5142285"
 ---
-# <a name="install-and-connect-the-warehouse-app"></a>Installera och ansluta lagerställeappen
+# <a name="install-and-connect-the-warehouse-app"></a>Installera och ansluta distributionslagerappen
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Det här ämnet beskriver hur man konfigurerar lagerstyrning för molndistribution. Om du letar efter information om hur du konfigurerar lagerstyrning för lokal distribution, se [Lagerstyrning för lokal distribution](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> Det här avsnittet beskriver hur du konfigurerar den gamla distributionslagerappen. Om du letar efter information om hur du konfigurerar den nya mobilappen Hantering av distributionslager (för närvarande i offentlig förhandsgranskning), se [Installera och anslut mobilappen Hantering av distributionslager](install-configure-warehouse-management-app.md).
+
+> [!NOTE]
+> Det här ämnet beskriver hur man konfigurerar distributionslagerappen för molndistribution. Om du letar efter information om hur du konfigurerar distributionslagerappen för lokal distribution, se [Lagerstyrning för lokal distribution](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 Lagerställeappen kan hämtas från Google Play och i Microsoft Store. Den utgör en fristående komponent. Därför måste du hämta den på varje enskild enhet och sedan konfigurera den för anslutning till din Microsoft Dynamics 365 Supply Chain Management-miljö.
 
@@ -274,6 +276,3 @@ Om en enhet går förlorad eller drabbas av fel, måste du ta bort åtkomsten ti
 1. Kontrollera att klient-ID:t för programmet matchar det klient-ID som du noterade i steg 2.
 1. Välj **Ta bort** i verktygsfältet.
 1. Markera **Ja** i bekräftelsemeddelandet som visas.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

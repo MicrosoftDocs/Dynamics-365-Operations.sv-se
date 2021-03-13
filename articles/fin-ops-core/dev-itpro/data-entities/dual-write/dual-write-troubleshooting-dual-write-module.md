@@ -1,5 +1,5 @@
 ---
-title: Felsöka problem med modulen för dubbelriktad skrivning i Finance and Operations-appar
+title: Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
 description: Det här avsnittet innehåller felsökningsinformation som kan hjälpa dig att åtgärda problem med dubbelriktad skrivning i Finance and Operations-appar.
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2241e7e6219f95115f55bc45a4d94550276e1e21
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3ffeb2de0acc1761bccf62a1a124852c504e2a3a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683633"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131255"
 ---
-# <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Felsöka problem med modulen för dubbelriktad skrivning i Finance and Operations-appar
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,7 +44,7 @@ Om du inte kan öppna sidan **dubbelriktad skrivning** genom att välja panelen 
 
 **Nödvändiga autentiseringsuppgifter för att åtgärda problemet:** Samma användare som ställer in dubbelriktad skrivning.
 
-Följande felmeddelande kan visas när du försöker konfigurera en ny entitet för dubbelriktad skrivning. Den enda användare som kan skapa en karta är den användare som ställer in anslutningen med dubbelriktad skrivning.
+Följande felmeddelande kan visas när du försöker konfigurera en ny tabell för dubbelriktad skrivning. Den enda användare som kan skapa en karta är den användare som ställer in anslutningen med dubbelriktad skrivning.
 
 *Svarsstatuskoden anger inte lyckad: 401 (otillåtet)*
 
@@ -77,7 +77,7 @@ Det här felet uppstår när den länkade Dataverse-miljön inte är tillgängli
 
 Lös problemet genom att skapa en biljett till dataintegrationsteamet. Koppla nätverksspårningen så att dataintegrationsteamet kan markera kartorna som **Inte körs** i servern.
 
-## <a name="error-while-trying-to-start-an-table-mapping"></a>Fel vid försök att starta en tabellmappning
+## <a name="error-while-trying-to-start-a-table-mapping"></a>Fel vid försök att starta en tabellmappning
 
 Du kan få ett felmeddelande som följande när du försöker ange status för en mappning som ska **köras**:
 
@@ -86,7 +86,4 @@ Du kan få ett felmeddelande som följande när du försöker ange status för e
 Korrigeringen för det här felet beror på orsaken till felet:
 
 + Om mappningen har beroende mappningar ska du se till att aktivera de beroende mappningarna för den här tabellmappningen.
-+ Mappningen kanske saknar käll- eller målfält. Om ett fält i Finance and Operations-appen saknas följer du stegen i avsnittet [Entitetsfält som saknas problem i kartor](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Om ett fält i Dataverse saknas klickar du på knappen **Uppdatera tabeller** på mappningen så att fälten automatiskt fylls i igen i mappningen.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
++ Mappningen kanske saknar käll- eller målkolumner. Om en kolumn i Finance and Operations-appen saknas följer du stegen i avsnittet [Tabellkolumner som saknas problem i kartor](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Om en kolumn i Dataverse saknas klickar du på knappen **Uppdatera tabeller** på mappningen så att kolumnerna automatiskt fylls i igen i mappningen.
