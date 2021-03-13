@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ProdTableListPage, ProdParmReportFinished, ProdJournalTransProd, ProdSetupReportFinished
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 93193e6365bcf82fbbf93af81e2581a358899fa1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5d9dcdbcb89df6430fb286c253ebecfc6d885af8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437361"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011157"
 ---
 # <a name="report-a-production-order-as-finished"></a>Rapportera en produktionsorder som färdig
 
@@ -52,6 +51,3 @@ I den här proceduren visas hur du rapporterar en produktionsorder som färdig. 
 4. Klicka på länken på den valda raden i listan.
     * Journalen för rapportering som slutfört bokförs. Om du vill göra justeringar i journalen, kan du manuellt skapa en ny journal där du kan göra ändringar.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

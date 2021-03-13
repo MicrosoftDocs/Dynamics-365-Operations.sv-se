@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CreditCardProcessors, CustTable, SalesTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 3041
 ms.assetid: 678f6899-bfa5-439b-aaca-b4affcc338ba
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0de35934e8bdb160f68f68dab118997d0141bf29
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e615d13abf432705e40e5e33deb46ccab26192ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447873"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012247"
 ---
 # <a name="credit-card-setup-authorization-and-capture"></a>Kreditkortinställning, auktorisering och registrering
 
@@ -59,7 +58,7 @@ Du kan kräva cvv-kod, som ibland refereras till som kortets säkerhetkod. För 
 ### <a name="address-verification"></a>Adressverifiering
 
 Information om adressverifieringen skickas alltid till betalningsleverantören. Du kan bestämma hur mycket information som krävs för att en transaktion ska godkännas. Se till att kontrollera med din leverantör för att avgöra om denne godkänner denna information. Här följer alternativen för adressverifiering:
--   **Acceptera alltid transaktionen** - Acceptera transaktionen oavsett adressverifieringresultat.
+-   **Acceptera alltid transaktionen** – Acceptera transaktionen oavsett adressverifieringresultat.
 -   **Kontohållare** – Jämför kortinnehavarens namn från transaktionen med kreditkortsföretagets information.
 -   **Faktureringsadress** – Jämför kortinnehavarens namn och faktureringsadress från transaktionen med kreditkortsföretagets information.
 -   **Postnummer för fakturering** – Jämför kortinnehavarens namn och faktureringsadress och postnummer från transaktionen med kreditkortsföretagets information.
@@ -74,12 +73,9 @@ För respektive kreditkortstyp som stöds kan du ange datasupportnivån. Denna n
 Om du levererar en delorder kommer beloppet för denna del av ordern att regitreras; tillståndet, som gällde beloppet för hela ordern, stängs. Ett nytt tillstånd skickas sedan för det återstående beloppet för den order som inte har levererats.
 
 ## <a name="voiding-an-authorization"></a>Annullera en auktorisering 
-Om du vill annullera en kreditkortskontroll kan du ändra betalningsmetoden till en annan metod som inte har någon typ av kreditkort.
+Om du vill annullera en kreditkortskontroll kan du ändra betalsättet till en annan metod som inte har någon typ av kreditkort.
 
 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

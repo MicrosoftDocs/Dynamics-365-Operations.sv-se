@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 623c628f3359efc1f76e1d06387905f981deca0b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d9f57d35adac0820d0635ab97a4cb4cefc1d504c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437426"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011682"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Godkännandearbetsflöden för lagerjournal
 
@@ -31,6 +30,13 @@ I det här ämnet beskrivs hur man ställer in och använder arbetsflöden för 
 
 > [!NOTE]
 > Arbetsflöden för godkännande av lagerjournal gäller bara för transaktioner som registrerats med modulen lagerhantering. De fungerar inte med lagerjournaler som aktiverats från modulen för lagerstyrning.
+
+## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Aktivera funktionen godkännandearbetsflöden för lagerjournal
+
+Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+
+- **Modul:** *Hantering av lager och lagerstyrning*
+- **Funktionsnamn:** *journal arbetsflödet för lagerjournal*
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Skapa ditt godkännandearbetsflöde för lagerjournal
 
@@ -112,6 +118,3 @@ Så här granskar du arbetsflödeshistoriken för en journal:
 1. I navigeringsfönstret, expandera **Lagerhantering \> Journalposter \> Artiklar** och välj sedan en lagerjournaltyp.
 1. Öppna relevanta journalen.
 1. Klicka på knappen **arbetsflöde** i åtgärdsfönstret för att öppna en nedrullningsbar dialogruta. Välj **arbetsflödeshistorik**. Mer information finns i [Visa arbetsflödeshistorik](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

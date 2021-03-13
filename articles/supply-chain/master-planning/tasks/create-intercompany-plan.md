@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ReqIntercompanyPlanningGroupSetup,  ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3ae3d8a7c437ffd41a4864bd8548aa84c8ab8f32
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c368e461860a41d0110f5aed79c2aac49c437d68
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437528"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011427"
 ---
 # <a name="create-an-intercompany-plan"></a>Skapa en koncernintern plan
 
@@ -54,6 +53,3 @@ I den här proceduren visas hur du skapar en koncernintern plan. Det demonstrati
 2. Klicka på länken på den valda raden i listan. Klicka på länken för StaticPlan. Du måste vara i företaget USMF.  
 3. Klicka på **Planerade order.**
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

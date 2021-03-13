@@ -10,17 +10,16 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: ef58dbb756c7bed3924010cb33eff27af66cd0bd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c519095d174414d6d4a8c86bc171ea62e1c72582
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415860"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012449"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurera inventeringsbuffertar and lagernivåer
 
@@ -49,7 +48,7 @@ En *lagernivåprofil* avgör om en given kvantitet i en produktkvantitetstatus t
 
 - **Intervall** – varje intervall definieras av en *startkvantitet* och en *slutkvantitet*. Ett värde för kvantitet ligger i ett intervall om det är mer än startkvantiteten för intervallet och inte mer än slutkvantiteten.
 - **Kod** – en kod är en intern förkortning som representerar nivån. Kunder som direkt integrerar med lager-API:er kan använda koder för att skapa ytterligare logik för en given lagernivå. De kan till exempel stänga av inköpsmöjligheterna för en produkt när lagernivåkoden är **OOS** ("slut på lagret").
-- **Etikett** – en etikett är ett meningsfullt kund riktat meddelande som förmedlar en lager nivå till kunder på en näthandelsplats.
+- **Etikett** – en etikett är ett meningsfullt kund riktat meddelande som förmedlar en lager nivå till kunder på en näthandelssajt.
 
 ### <a name="create-an-inventory-level-profile"></a>Skapa en lagernivåprofil
 
@@ -130,7 +129,7 @@ Om du vill synkronisera konfigurationerna för inventeringsbuffertar till kanale
 
 ## <a name="use-inventory-buffers-and-inventory-levels-in-e-commerce-scenario"></a>Använda lagerkvantiteter och lagernivåer i handelsscenario
 
-I Commerce webbplatsskaparen används funktionerna för lagerkvantitet och lager nivå i Commerce-administration för att fastställa meddelanden om lagertillgänglighet på näthandelsplatser. Mer information om [Använd lagerinställningar](inventory-settings.md).
+I Commerce webbplatsskaparen används funktionerna för lagerkvantitet och lager nivå i Commerce-administration för att fastställa meddelanden om lagertillgänglighet på näthandelssajter. Mer information om [Använd lagerinställningar](inventory-settings.md).
 
 Alternativt, om du integrerar med en tredjeparts näthandelslösning, kan du använda **GetEstimatedAvailability** och **GetEstimatedProductWarehouseAvailability** API:er för att visa lagertillgängligheten för en produkt i ditt näthandelsscenario. Mer information om dessa API:er finns i [Beräkna lagerdisposition för butikskanaler](calculated-inventory-retail-channels.md).
 
@@ -149,6 +148,3 @@ Konfigurera svaret på produkttillgänglighet API:erna enligt följande instrukt
 [Använd lagerinställningar](inventory-settings.md)
 
 [Beräkna lagertillgänglighet för butikskanaler](calculated-inventory-retail-channels.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

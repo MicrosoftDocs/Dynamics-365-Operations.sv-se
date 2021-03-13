@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailInfocodeTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 046204d36e2fc7a69129aaf7fe027b2abc7e8dd9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e9f84e3ffc79920fc6ef49a6391f76acdd89252a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415822"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012479"
 ---
 # <a name="info-codes-and-info-code-groups"></a>Infokoder och infokodgrupper
 
@@ -32,7 +31,7 @@ ms.locfileid: "4415822"
 
 Den här artikeln ger en översikt över informationskoder och infokodgrupper och hur du använder dem.
 
-Informationskoder utgör ett sätt att samla in data vid ett kassaregister (POS). Du kan använda informationskoder om du vill uppmana kassören att ange information under olika åtgärder i POS, till exempel artikelförsäljningar, artikelreturer eller val av kunder. Kassörer kan välja indata från en lista eller ange dem som en kod, ett nummer, ett datum eller text. Du kan tilldela infokoder till fördefinierade butiksåtgärder, butiksartiklar, betalningsmetoder, kunder eller specifika kassaaktiviteter. Du kan använda informationskoder för att göra följande:
+Informationskoder utgör ett sätt att samla in data vid ett kassaregister (POS). Du kan använda informationskoder om du vill uppmana kassören att ange information under olika åtgärder i POS, till exempel artikelförsäljningar, artikelreturer eller val av kunder. Kassörer kan välja indata från en lista eller ange dem som en kod, ett nummer, ett datum eller text. Du kan tilldela infokoder till fördefinierade butiksåtgärder, butiksartiklar, betalsätt, kunder eller specifika kassaaktiviteter. Du kan använda informationskoder för att göra följande:
 
 - Registrera ytterligare information vid tidpunkten för transaktionen, till exempel ett flygnummer eller orsaken till en retur.
 - Låt kassaapparen välja från en lista med priser för specifika produkter.
@@ -42,7 +41,7 @@ Informationskoder utgör ett sätt att samla in data vid ett kassaregister (POS)
 
 ## <a name="info-codes-group"></a>Infokodgrupp
 
-I Handel kan du skapa grupper av informationskoder. Informationskodgrupper tillför flexibilitet genom att du kan definiera färre informationskoder och sedan använda dem på ett mer mångsidigt sätt. Du kan använda informationskodgrupper på följande sätt:
+I Commerce kan du skapa grupper av informationskoder. Informationskodgrupper tillför flexibilitet genom att du kan definiera färre informationskoder och sedan använda dem på ett mer mångsidigt sätt. Du kan använda informationskodgrupper på följande sätt:
 
 - Definiera färre informationskoder och återanvänd dem enkelt. Informationskoder som ingår i informationskodgrupper har inga fördefinierade beroenden i andra informationskoder. Du kan ta med samma informationskod i flera informationskodgrupper och sedan använda prioritering för att visa samma informationskoder i den ordning som fungerar för olika situationer.
 - Länka infokoder till andra infokoder eller infokodgrupper för att samla in information om en produkt eller en transaktion så att du inte behöver ange en separat infokod eller den kopplade infokoden för alla scenarier.
@@ -56,6 +55,3 @@ Du kan koppla infokoder så att, när en infokod utlöses, utlöses även en ann
 **Exempel 2: Länka infokoder till  infokodgrupper**
 
 När du säljer vissa produkter, till exempel mobila enheter, vill du alltid samla in specifik information, till exempel telefonnummer, den mobila utrustningsidentifieraren (MEID) och serienummer. Men du vill också hämta in olika information för en Tablet PC kontra en mobiltelefon. Du kan ställa in en informationkodgrupp som innehåller prompt för telefonnummer, MEID och serienummer och sedan informationkodgruppen länkar till en enskild informationskod. När den produktspecifika informationskoden utlöses, kan informationskodgruppen sedan utlösas för att göra det möjligt för dig att samla in gemensamma data, utan att behöva definiera flera uppsättningar av kopplade informationskoder för varje enhet.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

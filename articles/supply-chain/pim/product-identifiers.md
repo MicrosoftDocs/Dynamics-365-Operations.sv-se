@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c16818f1dc52c9e21130539213e7e8d1053fef1d
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f28193f9671bcae1345d5c1085ea3f2446e6e088
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529196"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011381"
 ---
 # <a name="product-identifiers"></a>Produktidentifierare
 
@@ -44,7 +43,7 @@ I många fall skapades inte produktnumret ursprungligen i Dynamics 365 Supply Ch
 
 När du implementerar Supply Chain Management bör du särskilt beakta din strategi för produktnummer. Ett bra numreringssystem förbättrar logistikflöden och förebygger fel. En bra produktidentifierare har högst 15 tecken. Idealiskt har den färre än 10 tecken och innehåller högst fem klassificeringstecken. Du kan också använda söknamn för att aktivera snabbsökning. Ett söknamn är ett ytterligare namn som representerar klassificeringen av en produkt.
 
-När du använder Common Data Service är produktnumret i Supply Chain Management också produktnumret i Common Data Service. Produktvarianter synkroniseras till Common Data Service som olika produkter.
+När du använder Microsoft Dataverse är produktnumret i Supply Chain Management också produktnumret i Microsoft Dataverse. Produktvarianter synkroniseras till Dataverse som olika produkter.
 
 ## <a name="item-number-and-product-dimensions"></a>Artikelnummer och produktdimensioner
 
@@ -167,7 +166,7 @@ Följande tabell ger en översikt över resultaten av import och manuellt skapan
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Identifierare för produktenhet (exportera alla produktidentifierare)
 
-Produktenhetens ID-modell skapades för att möjliggöra att version 1.0 av CDS tillhandahålls med alla identifierare som används för att referera till en produkt. För att förenkla uppgiften samlas alla identifierare i en global identifierartabell så att de kan exporteras som en modell. Observera att den här versionen av CDS inte använder produktidentifierarens modell. Därför har entiteten **Produktentiteten identifierare av common data service** och denna process begränsad praktisk användning och kommer sannolikt att ändras i framtiden.
+Produktenhetens ID-modell skapades för att möjliggöra att version 1.0 av Dataverse tillhandahålls med alla identifierare som används för att referera till en produkt. För att förenkla uppgiften samlas alla identifierare i en global identifierartabell så att de kan exporteras som en modell. Observera att den här versionen av Dataverse inte använder produktidentifierarens modell. Därför har entiteten **Produktentiteten identifierare av common data service** och denna process begränsad praktisk användning och kommer sannolikt att ändras i framtiden.
 
 Tabellen för produktidentifierare är en globalt tabell som är ifylld från alla referenstabeller från den huvudsakliga juridiska personen genom ett återkommande batchjobb. Du måste välja en juridisk person och en produktkategorihierarki som definition av den globala produktmallomfattningen. Generering av den globala tabellen för produktidentifierare begränsas till produkter som övergår till den valda juridiska personen och produkter som ingår i produkthierarkin som har valts för rollen **Common data service** i produktkategorihierarkin.
 
@@ -175,7 +174,7 @@ Den här processen förutsätter att huvuddata för produkt huvudsakligen hålls
 
 Gör på följande sätt när du vill konfigurera miljön.
 
-1. Välj kategorihierarki för CDS. På sidan **Rollassociationer för kategorihierarkier** om ingen hierarki är associerad med rollen **Common data service** måste du skapa en ny association. Välj rollen **Common data service** och associera sedan den kategorihierarki som representerar produktportföljen som ska synkroniseras till CDS.
+1. Välj kategorihierarki för Dataverse. På sidan **Rollassociationer för kategorihierarkier** om ingen hierarki är associerad med rollen **Common data service** måste du skapa en ny association. Välj rollen **Common Data Service** och associera sedan den kategorihierarki som representerar produktportföljen som ska synkroniseras till Dataverse.
 2. Välj juridisk person för globala huvuddata för produkt. På sidan **Parametrar för produktinformationshantering** på fliken **Produktattribut** väljer du det huvudföretag där produkt- och artikelidentifierarna huvudsakligen hålls.
 3. Definiera ID-kodtyper och koder som ska exporteras. Gå till **Produktinformationshantering**&gt;**Inställningar**&gt;**ID-koder för produkt**. Om du vill generera ID-kodtyperna, välj **Generera koder**. En kodtyppost genereras för varje typ för identifierare som finns i den valda juridiska personen.
 
@@ -190,6 +189,3 @@ Nu kan du använda dataentiteterna **Entiteten identifierare av common data serv
 ## <a name="related-topic"></a>Relaterat ämne
 
 [Sök efter produkter och produktvarianter under orderregistrering](search-products-product-variants.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

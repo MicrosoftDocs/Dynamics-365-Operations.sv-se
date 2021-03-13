@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 9d01c577fc33564d3517d242e9b01f73cc8e079c
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438053"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014493"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Rensningsjobb för lagerbehållningsposter för lagerställe
 
@@ -50,7 +49,12 @@ När jobbet körs har det en genomförande storlek på 100. Med andra ord görs 
 
 ## <a name="possible-user-impact"></a>Möjlig användarpåverkan
 
-Användare kan påverkas om rensningsjobbet för behållningstransaktioner tar bort alla poster för en viss nivå (t.ex. ID-nummernivå). I det här fallet kanske funktionen för att se att lagret tidigare var tillgängligt på en ID-numret inte fungerar som förväntat, eftersom de relevanta behållningsposterna inte längre är tillgängliga. (Den funktionen kontrollerar villkoret **Kvantitet \<\> 0** i inställningen **Dimensionsvisning** när användare visar behållningsinformation.) Prestandaförbättringen i rensningsjobbet bör dock utgöra en möjlighet för detta litet att förlora funktionaliteten.
+Användare kan påverkas om rensningsjobbet för behållningstransaktioner tar bort alla poster för en viss nivå (t.ex. ID-nummernivå). I det här fallet kanske funktionen för att se att lagret tidigare var tillgängligt på en ID-numret inte fungerar som förväntat, eftersom de relevanta behållningsposterna inte längre är tillgängliga. Detta kan till exempel upplevas i följande situationer:
+
+- I **Behållningslista**, när användaren avmarkerar villkoret **Kvantitet \<\> 0** eller väljer villkoret **Stängda transaktioner** i inställningarna **Dimensionsvisning**.
+- I en rapport **Fysiskt lager per lagerdimension** för tidigare perioder när användaren ställer in parametern **från och med datum**.
+
+Den prestandaförbättring som rensningsjobbet tillhandahåller bör dock göra att dessa små förluster i funktionen förbättras.
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Gör inställningen för maximal körningstid tillgänglig
 
@@ -58,6 +62,3 @@ Som standard är inställningen för **maximal körningstid** inte är tillgäng
 
 - **Modul:** *Lagerstyrning*
 - **Funktionsnamn:** *Maximal körningstid för rensningsjobbet för lagerhanteringsposter*
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

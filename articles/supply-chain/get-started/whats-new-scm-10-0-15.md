@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 02f343c5351168375eca38893b9d8eef4549dc5a
-ms.sourcegitcommit: 0eb33909a419d526eb84b4e4b64d3595d01731ef
+ms.openlocfilehash: 9b84aaef5348d2cb6bdd6d35e7e26bca9a4e0f6b
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4700967"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014543"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.15 (januari 2021)
 
@@ -84,6 +83,3 @@ De [borttagna eller föråldrade funktionerna i Dynamics 365 Supply Chain Manage
 Innan någon funktion tas bort från produkten visas understrykningsmeddelandet i ämnet [borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före avhämtningen.
 
 För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

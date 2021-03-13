@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 102ea4285407a4f4985cc8dd46ebc1ad21fc6f67
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 754b34d9d522451082ba6010297431788e4151f4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4447880"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012273"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Kreditspärrar för försäljningsorder
 [!include [banner](../includes/banner.md)]
@@ -265,6 +264,3 @@ Försäljningsorder med en påtvingad spärrorsak kan inte frisläppas automatis
 Kredithantering kan endast användas för försäljningsorder. Fritextfakturor, kassaorder och kundtjänstorder använder de tillfälliga kreditgränser och försäkringar/garantier som du lägger till för att justera kreditgränsen. De kommer inte att använda spärrningsreglerna och de kommer inte att placeras i spärrlistan om det finns ett problem med kreditgränsen.
 
 Det finns inget stöd för projektfakturor i kredithantering.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

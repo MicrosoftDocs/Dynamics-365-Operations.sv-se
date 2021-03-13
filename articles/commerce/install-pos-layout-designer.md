@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 219684
 ms.assetid: 2e2c4eea-c6e2-4912-9832-a6b22416e39f
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f9882ae895de926e0da3579ab65a988f2b97f7be
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9ea16cce38cf7385df03c88e35bdb5bcaa8d7715
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415821"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012450"
 ---
 # <a name="install-the-pos-layout-designer"></a>Installera layoutdesignern för kassa
 
@@ -36,10 +35,10 @@ Det grafiska designgränssnittet för MPOS eller Cloud POS styrs av kassalådela
 
 ## <a name="install-the-one-click-designer"></a>Installera enklicksdesignern
 
-1. I Handel använder du menyn i det övre vänstra hörnet för att navigera till **Butik och handel** &gt; **Kanalinställning** &gt; **Kassainställning** &gt; **Kassa** &gt; **Skärmlayouter**.
+1. I Commerce använder du menyn i det övre vänstra hörnet för att navigera till **Butik och handel** &gt; **Kanalinställning** &gt; **Kassainställning** &gt; **Kassa** &gt; **Skärmlayouter**.
 2. Välj en layout med ansökningstypen **Modern POS for Windows** eller **Cloud POS**, och klicka sedan på **layoutdesignern**.
 3. På meddelandefältet som visas längst ner i Internet Explorer klicka på **Öppna** för att starta installationen av enklicksdesignern. (aviseringsfältet kan visas på en annan plats i andra webbläsare).
-4. I meddelanderutan **Körning av program - Säkerhetsvarning** som visas klickar du på **Kör** för att installera värden för Retail designer. An förloppsindikator visar installationsförloppet.
+4. I meddelanderutan **Körning av program – Säkerhetsvarning** som visas klickar du på **Kör** för att installera värden för Retail designer. An förloppsindikator visar installationsförloppet.
 5. När installationen är klar, på sidan **Logga in**, ange ditt handelsanvändarnamn och lösenord och klicka sedan på **Logga in** för att starta designer.
 6. När dina inloggningsuppgifter har validerats och designverktyget startar, kan du utforma din egen layout eller ändra den befintliga.
 
@@ -52,17 +51,14 @@ Det grafiska designgränssnittet för MPOS eller Cloud POS styrs av kassalådela
     **Lösningar:**
 
     - Kontrollera att blockering av popup-fönster avaktiveras för webbplatsen i Internet Explorer. Klicka på **Inställningar** &gt; **Alternativ** &gt; **Sekretess** &gt; **Hitta blockerare för popup-meddelanden** och ändra inställningen vid behov.
-    - I Internet Explorer, lägg till Handel URL till de tillförlitliga platserna. Klicka på **Inställningar** &gt; **Alternativ** &gt; **Säkerhet** &gt; **Säkra platser** &gt; **Platser** &gt; **Lägg till**.
+    - I Internet Explorer, lägg till Commerce URL till de tillförlitliga platserna. Klicka på **Inställningar** &gt; **Alternativ** &gt; **Säkerhet** &gt; **Säkra platser** &gt; **Platser** &gt; **Lägg till**.
 
 - Programmet startar inte, och du uppmanas att kontakta leverantören.
 
-    **Lösning:** I Internet Explorer, lägg till Handel URL till de tillförlitliga platserna. Klick på **Inställning** &gt; **Alternativ** &gt; **Säkerhet** &gt; **Säkra platser** &gt; **Platser** &gt; **Lägg till**.
+    **Lösning:** I Internet Explorer, lägg till Commerce URL till de tillförlitliga platserna. Klick på **Inställning** &gt; **Alternativ** &gt; **Säkerhet** &gt; **Säkra platser** &gt; **Platser** &gt; **Lägg till**.
 
 **Känt problem:** Designverktyget fungerar inte korrekt i webbläsarna Google Chrome och Mozilla Firefox. Vi arbetar på att åtgärda detta problem.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Konfigurera, installera och aktivera Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
