@@ -1,6 +1,6 @@
 ---
 title: ER Använd dokumenthanteringsfiler i formatutmatningar (Del 3 - Skapa format)
-description: I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering för att använda dokumenthanteringsfiler i ER-utmatningar.
+description: I det här avsnittet beskrivs hur du konfigurerar ett elektroniskt rapporteringsformat för användning av dokumenthanteringsfiler i ER-utdata. (Del 3)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfcc03fa7470d4f2fa45ef012e30acef0712bf99
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 432cf4c41a7a223ab07b02edf6da7eac9965cff0
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681863"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092626"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-3---create-format"></a>ER Använd dokumenthanteringsfiler i formatutmatningar (Del 3 - Skapa format)
 
@@ -119,6 +119,3 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 23. Klicka på Spara.
 24. Stäng sidan.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

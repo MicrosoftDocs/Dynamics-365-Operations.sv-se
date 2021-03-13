@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,17 +17,16 @@ ms.search.industry: Retail
 ms.author: gmohanv
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 40c20bf13779f73289e43df21b763e1b864686a7
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 56621bb9658b71551c7312aa47812903914bc888
+ms.sourcegitcommit: da17648c296b22d517eadb2f71c7803672e5648d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4530207"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "5031799"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Konfigurera moms för onlinebeställningar
 
-[!include [banner](../includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 Det här ämnet ger en översikt över momsgruppsval för olika typer av onlinebeställning. 
 
@@ -83,6 +81,3 @@ För orderrader med upphämtning i butik eller drive in-upphämtning anges momsg
 
 [Beräkning av momsbefrielse](tax-exempt-price-inclusive.md) 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

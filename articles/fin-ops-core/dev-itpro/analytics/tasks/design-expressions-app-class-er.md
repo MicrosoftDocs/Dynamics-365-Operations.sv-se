@@ -1,6 +1,6 @@
 ---
 title: Skapa ER-uttryck för att anropa programklassmetoder
-description: Denna guide ger information om hur du återanvänder befintlig programlogik i konfigurationer för elektronisk rapportering (ER) genom att anropa metoder för programklasser i ER-uttryck.
+description: Det här ämnet beskriver hur du återanvänder befintlig programlogik i konfigurationer för elektronisk rapportering genom att anropa metoder för programklasser i ER-uttryck.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3d79d1a4e86731a62de4896a489a13f624ce159f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a2de6464aaceadd60a82a70f428f42cd4f864eb8
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682031"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092095"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Skapa ER-uttryck för att anropa programklassmetoder
 
@@ -157,6 +157,3 @@ För testningsändamål, utför formatmappning med den SampleIncomingMessage.txt
 2. Klicka på OK.
     * Granska utdata i XML-format, vilket representerar de data som har importerats från den valda filen och integrerats i datamodellen. Observera att endast 3 raderna i importerade TXT-filen har bearbetats. IBAN-kod på rad 4 som inte gäller hoppades över och ett felmeddelande ges i informationsloggen.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

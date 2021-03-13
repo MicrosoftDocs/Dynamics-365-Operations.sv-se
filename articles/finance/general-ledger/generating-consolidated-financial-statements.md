@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dda102b993ecc92a5089eb54d2708c2adebc572f
+ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4448059"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5044031"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generera konsoliderade bokslut
 
@@ -67,14 +66,14 @@ Följande bild visar en kolumndefinition i formatet sida vid sida.
 ![Kolumndefinition i ett format som ligger sida vid sida](./media/column-definition-side-by-side-format.png "Kolumndefinition i ett format som ligger sida vid sida")
 
 ## <a name="consolidations-that-use-organization-structures-that-are-created-from-legal-entities"></a>Konsolideringar som använder organisationsstrukturer som skapas från juridiska personer
-Organisationshierarkier med dimensioner eller juridiska personer som dynamiskt skapar rapportträdsdefinitioner i ekonomiska rapporter. Ett enkelt sätt att förenkla konsolideringar är att lägga till en organisationshierarki i rapporten i ekonomisk rapportering. Baserat på rapportdatumet väljer ekonomisk rapportering organisationshierarkin på eller före giltighetsdatumet enligt följande bild.
+Organisationshierarkier med dimensioner eller juridiska personer som dynamiskt skapar rapportträdsdefinitioner i ekonomiska rapporter. Ett enkelt sätt att förenkla konsolideringar är att lägga till en organisationshierarki i rapporten i ekonomisk rapportering. Baserat på rapportdatumet väljer Financial reporting organisationshierarkin på eller före giltighetsdatumet enligt följande bild.
 
 ![Dynamiskt skapa rapportträddefinition](./media/dynamically-create-reporting-tree-definitions.png "Dynamiskt skapa rapportträddefinition")
 
 ## <a name="consolidations-that-involve-eliminations"></a>Konsolideringar som involverar elimineringar
 Elimineringstransaktioner är en vanlig del av konsolideringsprocessen. I det här exemplet tas fem konton bort under konsolideringen: 142600, 211400, 401420, 401180 och 510820. Företag kan ställa in sina koncerninterna konton på olika sätt. Vissa företag ställer t.ex. in den sista siffran på 9 om kontot används i koncerninterna transaktioner. Oavsett vilken metod, om du känner till det koncerninterna konton, kan du visa elimineringar på de konsoliderade bokslut.
 
-Följande bild visar en kolumndefinition för en konsoliderad resultaträkning. Tre koncerninterna resultatkonton definieras med hjälp av dimensionsfiltret för varje företag. Kolumn D innehåller konton för eliminering endast för USMF-företagets och kolumn E innehåller elimineringar endast för DEMF-företaget. Både kolumn D och E är inställda så att de **inte** skrivs ut i bokslutet.
+Följande bild visar en kolumndefinition för en konsoliderad resultaträkning. Tre koncerninterna resultatkonton definieras med hjälp av dimensionsfiltret för varje företag. I kolumnerna F, G och H ingår elimineringskontona endast för företagen USMF, USRT och DEMF. Dessa kolumner är inställda så att de **inte** skrivs ut i bokslutet.
 
 ![Resultatrapport för konsoliderade kolumndefinitioner](./media/column-definition-consolidated-income-statement.png "Resultatrapport för konsoliderade kolumndefinitioner")
 
@@ -140,7 +139,7 @@ Olika juridiska enheter kan ha olika räkenskapskalendrar men måste fortfarande
 - Skapa en kolumndefinition och använd period och år för att mappa lämpliga perioder för varje företag.
 - Vid **inställningar**\>**andra**\>**ytterligare alternativ**, välj om du vill konsolidera med periodens slutdatum eller periodnumret.
 
-När du utformar kolumndefinitionen för flera företag som har olika räkenskapsperioder är det viktigt att du noggrant överväger vilket företag som ska tilldelas till fältet **företagsnamn** i rapportdefinitionen. Räkenskapskalendern som ska användas som räkenskapsårets baskalendern för rapportdefinitionen. Tabellen nedan visar inställningen för räkenskapsperiod för USMF- och INMF-företag. För konsoliderade rapporter vill du använda räkenskapskalendern som USMF använder. Kolumnen ”mappning” visar motsvarande perioder och år för varje företag om en rapport genererats för 30 juni 2018.
+När du utformar kolumndefinitionen för flera företag som har olika räkenskapsperioder är det viktigt att du noggrant överväger vilket företag som ska tilldelas till fältet **företagsnamn** i rapportdefinitionen. Räkenskapskalendern som ska användas som räkenskapsårets baskalendern för rapportdefinitionen. Tabellen nedan visar exempelvis den räkenskapsperiod som ställts in för USMF- och INMF-företag. För konsoliderade rapporter vill du använda räkenskapskalendern som USMF använder. Kolumnen ”mappning” visar motsvarande perioder och år för varje företag om en rapport genererats för 30 juni 2018.
 
 | Företag   | Räkenskapsår                                  | Mappning                     |
 |-----------|----------------------------------------------|-----------------------------|
@@ -168,12 +167,12 @@ För att korrekt beräkna konverterade saldon, kräver ekonomisk rapportering at
 
 På huvudkontot måste fälten **Valutakurstyp för ekonomisk rapportering** och **Valutakonverteringstyp** på snabbfliken **ekonomisk rapportering** måste anges för varje konto enligt följande illustration. Du kan göra detta på grundval av konto för konto eller använda mallarna för att enkelt flytta ned ändringar.
 
-- I fältet **Valutakurstyp för ekonomisk rapportering** välj den valutakurstyp som innehåller de valutor och växelkurser som gäller för kontot. Den här tabellen med valutor och valutakurser tillämpas på verkliga data i redovisning.
+- I fältet **Valutakurstyp för ekonomisk rapportering** välj den valutakurstyp som innehåller de valutor och valutakurser som gäller för kontot. Den här tabellen med valutor och valutakurser tillämpas på verkliga data i redovisning.
 - I fältet **Valutaregistreringstyp**, välj metoden som används för att beräkna kontots valutakurs. Denna valutametod används för både faktiska och budgetdata i ekonomisk rapportering.
 
 ![Huvudkonton för ekonomisk rapportering](./media/Financial-reporting-main-accounts.png "Huvudkonton för ekonomisk rapportering")
 
-För budget, budgetkontroll och budgetplaneringsdata definieras växelkurstyp på sidan **redovisning**. Den tabellen används för att hämta valutakurser och valutakonverteringstyp som tilldelas kontot som kommer att användas.
+För budget, budgetkontroll och budgetplaneringsdata definieras valutakurstyp på sidan **redovisning**. Den tabellen används för att hämta valutakurser och valutakonverteringstyp som tilldelas kontot som kommer att användas.
 
 ### <a name="currency-translation-methods"></a>Valutaregistreringsmetoder
 Det finns fyra alternativ för att beräkna valutakurser i ekonomisk rapportering:
@@ -193,7 +192,7 @@ Det finns fyra alternativ för att beräkna valutakurser i ekonomisk rapporterin
 I ekonomisk rapportering kan alla rapporter visas i ett antal rapporteringsvalutor Följande fält i rapportdefinitionen stöder denna funktion:
 
 - Avsnittet **valutainformation** på sidan **rapportdefinition**. Det här avsnittet beskriver den valuta värdena visas i när en rapport har genererats.
-- En ny kryssruta **Ta med alla rapporteringsvalutor**. När den här kryssrutan är markerad läggs en rapport för varje rapportvaluta till i rapportkön in när rapporten som använder företagets funktionella valuta har genererats. Om kryssrutan är avmarkerad kan du fortfarande välja rapportvaluta i Webbvisning. I det här fallet bearbetas rapporteringsvalutan endast om du markerar den.
+- En ny kryssruta **Ta med alla rapporteringsvalutor**. När denna kryssruta är markerad läggs en rapport för respektive rapportvaluta till i rapportkön när rapporten som använder företagets funktionella valuta har genererats. Om kryssrutan är avmarkerad kan du fortfarande välja rapportvaluta i Webbvisning. I det här fallet bearbetas rapporteringsvalutan endast om du markerar den.
 
 Alternativen i rapportdefinitionen låter dig enkelt konvertera en rapport till rapporteringsvalutor. Därför måste du kanske eliminera dubbla rapportdefinitioner som bara skiljer sig åt i de valutor som används. Om du vill ha en rapport som visar flera valutor sida vid sida, kan du fortsätta att använda fältet **valutavisning** på sidan **kolumndefinition** för att konvertera aktuella kolumnen i rapporten till en alternativ rapporteringsvaluta.
 
@@ -224,6 +223,3 @@ För att få korrekt konverterade belopp när valutor används, använder ekonom
 Mer information om konsolidering och valutaöversättning finns i det överordnade avsnittet i det här avsnittet [Översikt över ekonomisk konsolidering och valutaomräkning](./financial-consolidations-currency-translation.md).
 
 Information om hur du anger information om onlinekonsolideringar finns i [Online ekonomisk konsolidering](./consolidate-online.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

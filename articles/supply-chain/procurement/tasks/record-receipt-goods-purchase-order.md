@@ -1,7 +1,7 @@
 ---
 title: Registrera inleverans av varor på en inköpsorder
 description: Det häravsnittet visar dig hur du registrerar inleverans av varor direkt i en inköpsorder.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bd8ca2cbd24f326c4eaf9cd39e32de0eca81149d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: d016df08850c75858c50b7f9a97b11b566d26cb0
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4438096"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022668"
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>Registrera inleverans av varor på en inköpsorder
 
@@ -49,6 +48,3 @@ Det häravsnittet visar dig hur du registrerar inleverans av varor direkt i en i
 6. Ställ in **kvantiteten** på 4. Här kan du manuellt ange den kvantitet som har inlevererats för varje rad i ordern.  
 7. Välj **OK**. Varorna har nu registrerats som inlevererade på inköpsordern och en produktinleveransjournal har skapats som dokumentet för att återspegla detta. Du kan använda åtgärden Produktinleverans om du vill granska journalerna som skapats med inköpsordern och se vad som har levererats och när.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

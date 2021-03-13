@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SalesLineDeliveryDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 271623
 ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 48cc8974cc8a8769b3d05f47f82166164e877ae5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 829775e36a2d49ebbab5c719436cff4c92984635
+ms.sourcegitcommit: ca7fc46607ae9d07725e1486b43c66d39ec5cdb5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437711"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "5035276"
 ---
 # <a name="delivery-alternatives"></a>Leveransalternativ
 
@@ -35,18 +34,20 @@ Försäljningsordertagare kan använda sidan **Leveransalternativ** för att upp
 Sidlayouten **Leveransalternativ** ger en bättre översikt över alla alternativ. Den gör även att ordertagare kan leta utanför det det aktuella företaget för orderuppfyllelsemöjligheter. De kan nu visa både koncerninterna affärsmöjligheter och affärsmöjligheter från externa leverantörer. Genom sorteringsalternativ per leveransdatum, kan försäljningsordertagare visa en intelligent lista med leveransalternativ. Dessutom hjälper parametrar dem att bättre hantera föreslagna leveranser. Eftersom transporttiden kan påverka leveransdatum, kan försäljningsordertagare utforska de olika transportvalen som transportföretag erbjuder. Eftersom detaljerad information visas för varje förslag kan ordertagare fatta välgrundade beslut direkt från sidan **leveransalternativ**.
 
 ## <a name="open-the-delivery-alternatives-page"></a>Öppna sidan leveransalternativ
+
 Du kan öppna sidan **Leveransalternativ** från försäljningsorderraden.
 
-1.  Klicka på **produkter och leverans** &gt; **leveransalternativ**.
-2.  Klicka på **raddetaljer** &gt; **leverans** &gt; **leveransalternativ.**
+1. Välj **Produkter och leverans \> Leveransalternativ**.
+1. Välj **raddetaljer \> leverans \> leveransalternativ.**
 
-Du kan också öppna sidan **leveransalternativ** genom att öppna arbetsytan **försäljningsorderbearbetning och förfrågan** och sedan klicka på **order och favoriter** &gt; **försenade orderrader** &gt;  **leveransalternativ** **Obs!** Du kan endast öppna sidan **leveransalternativ** om båda följande villkor är uppfyllda:
+Du kan också öppna sidan **leveransalternativ** genom att öppna arbetsytan **försäljningsorderbearbetning och förfrågan** och sedan klicka på **order och favoriter \> försenade orderrader \> leveransalternativ** **Obs!** Du kan endast öppna sidan **leveransalternativ** om båda följande villkor är uppfyllda:
 
--   All obligatorisk försäljningsradinformation fylls i.
--   Fältet **Leveransdatumkontroll** anges till ett värde som är annat än **ingen**.
+- All obligatorisk försäljningsradinformation fylls i.
+- Fältet **Leveransdatumkontroll** anges till ett värde som är annat än **ingen**.
 
 ## <a name="delivery-date-control-methods"></a>Kontrollmetoder för leveransdatum
-Kontrollmetod för leveransdatum bestämmer hur systemet upprättar leveransdatum, hur leveransalternativ beräknas och vilken information som visas. Observera att leveransdatakontroll beaktar kalendrar. Därför kan följande kalendrar påverka det förslagna inleveransdatumet: lagerställekalender, transportkalender, leverantörskalender och kundkalender. I följande tabell beskrivs respektive metod för leveransdatumkontroll.
+
+Kontrollmetod för leveransdatum bestämmer hur systemet upprättar leveransdatum, hur leveransalternativ beräknas och vilken information som visas. Observera att leveransdatumkontroll beaktar kalendrar. Därför kan följande kalendrar påverka det förslagna inleveransdatumet: lagerställekalender, transportkalender, leverantörskalender och kundkalender. I följande tabell beskrivs respektive metod för leveransdatumkontroll.
 
 <table>
 <colgroup>
@@ -59,9 +60,9 @@ Kontrollmetod för leveransdatum bestämmer hur systemet upprättar leveransdatu
 <td><strong>Beskrivning</strong></td>
 </tr>
 <tr class="even">
-<td><strong>Ingen</strong></td>
+<td><strong>None</strong></td>
 <td><ul>
-<li>Leveransalternativ för försäljningsrader stöds inte. Det här alternativet inaktiverar leveransdatakontroll.</li>
+<li>Leveransalternativ för försäljningsrader stöds inte. Det här alternativet inaktiverar leveransdatumkontroll.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -102,57 +103,50 @@ Kontrollmetod för leveransdatum bestämmer hur systemet upprättar leveransdatu
 </table>
 
 ## <a name="view-information-about-delivery-alternatives"></a>Visa information om leveransalternativ
-Det här avsnittet innehåller information om leveransalternativ som finns på alla flikar på sidan **leveransalternativ**.
 
-### <a name="products"></a>Produkter
+Det här avsnittet innehåller information om leveransalternativ som finns på alla snabbflikar på sidan **leveransalternativ**.
 
-Den här fliken visar en sammanfattning av produkten och information om den aktuella försäljningsraden.
+### <a name="the-product-fasttab"></a>Snabbfliken produkt
 
-### <a name="delivery-alternatives"></a>Leveransalternativ
+Den här snabbfliken visar en sammanfattning av produkten och information om den aktuella försäljningsraden.
 
-Den här fliken visar en lista med leveransalternativ som sorteras efter inleveransdata. Du kan välja vilka alternativ som du vill basera förslagen på ovanför listan. Du kan också välja leveranssätt som bestämmer transportdagar. Följande alternativ är tillgängliga:
+### <a name="the-delivery-alternatives-fasttab"></a>Snabbfliken leveransalternativ
 
--   **Inkludera andra produktvarianter** - det här alternativet är tillgängligt för produkter som har produktvarianter. Det innehåller leveransalternativ till andra varianter av produkten. Det här alternativet är inte tillgängligt för CTP.
--   **Inkludera delkvantitet** - som standard inkluderas endast förslag som uppfyller hela kvantiteten på försäljningsraden. Välj detta alternativ om du vill inkludera förslag som bara delvis uppfyller orderraden. Det här alternativet är användbart när kunden begär ett tidigare leveransdatum och tar emot en delleverans.
--   **Inkludera senare datum** - Som standard visas endast förslag som passar bättre (tidigare) än aktuellt datum på försäljningsraden. Välj det här alternativet om du vill inkludera senare datum. Det här alternativet kan vara användbart i situationer där andra parametrar än datumet har prioritet. En viss leverantör eller lagerställe kan exempelvis prioriteras.
--   **Leveranssätt** - Välj föredraget leveranssätt för att optimera transporttiden och kostnader. Du kommer ommedelbart att se effekten av föreslagna leveransalternativ. Därför är det enkelt att jämföra alternativen.
--   **Inkludera anskaffning** - när upphandling väljs föreslagna leverans alternativ innehåller alternativ för att anskaffa både från externa leverantörer och andra företag inom företaget (koncernintern). Alternativet **Inkludera anskaffning** stöds för för ATP och ATP + leveransdatumkontroll för utleveransmarginal. Anskaffningsalternativ från standardinköpsleverantören för produkten och alla godkända leverantörer för produkten ingår.
--   Beräkningen baseras på inköpsproduktionstiden för externa leverantörer.
--   För koncerninterna beaktar beräkningen vad som finns tillgängligt från källföretaget utifrån leveransdatumkontroll i företaget källa.
--   **Leveranstypen** (relevant för inköp)
-    -   **Lager** - produkter levereras från lagerkälla till plats/lagerstället på försäljningsraden. De har levererats från detta lagerställe till kunden.
-    -   **Direktleverans** - produkter levereras direkt från lagerställets källa till kunden.
+Den här snabbfliken visar en lista med leveransalternativ som sorteras efter inleveransdatum. Du kan välja vilka alternativ som du vill basera förslagen på ovanför listan. Du kan också välja leveranssätt som bestämmer transportdagar. Följande alternativ är tillgängliga:
 
-### <a name="availability-information"></a>Information om tillgänglighet
+- **Inkludera andra produktvarianter** - det här alternativet är tillgängligt för produkter som har produktvarianter. Det innehåller leveransalternativ till andra varianter av produkten. Det här alternativet är inte tillgängligt för CTP.
+- **Inkludera delkvantitet** - som standard inkluderas endast förslag som uppfyller hela kvantiteten på försäljningsraden. Välj detta alternativ om du vill inkludera förslag som bara delvis uppfyller orderraden. Det här alternativet är användbart när kunden begär ett tidigare leveransdatum och tar emot en delleverans.
+- **Inkludera senare datum** - Som standard visas endast förslag som passar bättre (tidigare) än aktuellt datum på försäljningsraden. Välj det här alternativet om du vill inkludera senare datum. Det här alternativet kan vara användbart i situationer där andra parametrar än datumet har prioritet. En viss leverantör eller lagerställe kan exempelvis prioriteras.
+- **Leveranssätt** - Välj föredraget leveranssätt för att optimera transporttiden och kostnader. Du kommer ommedelbart att se effekten av föreslagna leveransalternativ. Därför är det enkelt att jämföra alternativen.
+- **Inkludera anskaffning** - när upphandling väljs föreslagna leverans alternativ innehåller alternativ för att anskaffa både från externa leverantörer och andra företag inom företaget (koncernintern). Alternativet **Inkludera anskaffning** stöds för för ATP och ATP + leveransdatumkontroll för utleveransmarginal. Anskaffningsalternativ från standardinköpsleverantören för produkten och alla godkända leverantörer för produkten ingår.
+- Beräkningen baseras på inköpsproduktionstiden för externa leverantörer.
+- För koncerninterna beaktar beräkningen vad som finns tillgängligt från källföretaget utifrån leveransdatumkontroll i företaget källa.
+- **Leveranstypen** (relevant för inköp)
+  - **Lager** - produkter levereras från lagerkälla till plats/lagerstället på försäljningsraden. De har levererats från detta lagerställe till kunden.
+  - **Direktleverans** - produkter levereras direkt från lagerställets källa till kunden.
 
-Information om denna flik som rör den valda leveransalternativraden. Följande information visas beroende på Leveransdatumkontroll för försäljningsraden:
+### <a name="the-availability-information-fasttab"></a>Snabbfliken Tillgänglighetsinformation
 
--   **Produktionstid för försäljning**
-    -   **Tillgänglig just nu** - visa den aktuella fysiska lagerbehållningen och tillgängligt fysiskt lager.
-    -   **Parametrar** - visar lagerenhet och produktionstid för försäljning.
+Information om denna snabbflik som rör den valda leveransalternativraden. Följande information visas beroende på Leveransdatumkontroll för försäljningsraden:
 
--   **ATP and ATP + Utleveransmarginal**
-    -   **Tillgänglig just nu** - visa den aktuella fysiska lagerbehållningen och tillgängligt fysiskt lager.
-    -   **Parametrar** - visar lagerenhet och produktionstid för försäljning.
-    -   **Framtida tillgänglighet** – visar en grafisk representation av nuvarande och framtida tillgänglighet för den valda siten och lagerstället **alternativ leverans**. Om du klickar på kolumnerna i diagrammet får du mer detaljerad information om produktens framtida tillgänglighet. Bilden visar en lista över relevanta efterfråge- och leveransorder inom tidsgränsen för ATP.
+- **Produktionstid för försäljning**
+  - **Tillgänglig just nu** - visa den aktuella fysiska lagerbehållningen och tillgängligt fysiskt lager.
+  - **Parametrar** - visar lagerenhet och produktionstid för försäljning.
 
--   **CTP**
-    -   **Tillgänglig just nu** - visa den aktuella fysiska lagerbehållningen och tillgängligt fysiskt lager.
-    -   **Parametrar** - visar lagerenhet och produktionstid för försäljning.
-    -   **Nedbrytning** - visar leveransnedbrytning av den valda leveransen. Du kan använda **inställningar** för att ändra fälten och lagerdimensioner som ska visas i nedbrytningen.
+- **ATP and ATP + Utleveransmarginal**
+  - **Tillgänglig just nu** - visa den aktuella fysiska lagerbehållningen och tillgängligt fysiskt lager.
+  - **Parametrar** - visar lagerenhet och produktionstid för försäljning.
+  - **Framtida tillgänglighet** – visar en grafisk representation av nuvarande och framtida tillgänglighet för den valda siten och lagerstället **alternativ leverans**. Om du klickar på kolumnerna i diagrammet får du mer detaljerad information om produktens framtida tillgänglighet. Bilden visar en lista över relevanta efterfråge- och leveransorder inom tidsgränsen för ATP.
 
-### <a name="impact-of-selected-alternative"></a>Effekten av valt alternativ
+- **CTP**
+  - **Tillgänglig just nu** - visa den aktuella fysiska lagerbehållningen och tillgängligt fysiskt lager.
+  - **Parametrar** - visar lagerenhet och produktionstid för försäljning.
+  - **Nedbrytning** - visar leveransnedbrytning av den valda leveransen. Du kan använda **inställningar** för att ändra fälten och lagerdimensioner som ska visas i nedbrytningen.
 
-Den här fliken markerar effekten av valt alternativ. Om du klickar på **OK**, uppdateras försäljningsraden med de markerade värdena i markerade kolumner. Observera att, om kvantiteten på valt alternativ är mindre än kvantiteten på försäljningsraden har en leveransplan skapats och orderraden delas upp på två rader: en rad för den valda kvantiteten och en rad för den återstående kvantiteten. Du kan också uppdatera den kommersiella raden så att den matchar planens rader och påverkar priserna.
+### <a name="the-impact-of-selected-alternative-fasttab"></a>Snabbfliken Effekten av valt alternativ
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+Den här snabbfliken markerar effekten av valt alternativ. Om du klickar på **OK**, uppdateras försäljningsraden med de markerade värdena i markerade kolumner. Observera att, om kvantiteten på valt alternativ är mindre än kvantiteten på försäljningsraden har en leveransplan skapats och orderraden delas upp på två rader: en rad för den valda kvantiteten och en rad för den återstående kvantiteten. Du kan också uppdatera den kommersiella raden så att den matchar planens rader och påverkar priserna.
+
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Orderlöfte](delivery-dates-available-promise-calculations.md)
-
-
-
-
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

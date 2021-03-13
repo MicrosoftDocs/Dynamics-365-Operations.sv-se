@@ -1,6 +1,6 @@
 ---
 title: Praxischef Power BI-innehåll
-description: Det här avsnittet beskriver vad som ingår i innehållet för praxischef för Power BI. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
+description: Det här avsnittet beskriver vad som ingår i innehållet för praxischef för Power BI.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/18/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 17a68e5aedb8b085c85d1ed7b6ad87f3eaecfc25
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f01109b360b23adf84673e84e6240f8f4431340d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685715"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092467"
 ---
 # <a name="practice-manager-power-bi-content"></a>Praxischef Power BI-innehåll
 
@@ -117,6 +117,3 @@ Nedanstående avsnitt beskriver de sammanlagda mått som används i respektive e
 | Sammanlagda huvudmått       | Fält               | beskrivning |
 |---------------------------------|---------------------|-------------|
 | Planerad kostnad för slutförd aktivitet | Sum(TotalCostPrice) | Uppskattad total självkostnad för alla projekttransaktionstyper som har slutförda uppgifter. |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

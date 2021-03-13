@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 54ad180b7f4691ead3563b077eadadc3b9b20588
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: a41f69958d84fb67b7cd8b6b4c7de38da23552f3
+ms.sourcegitcommit: 2b76d4443b2867205db156648125a894f395a495
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4438114"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "5091095"
 ---
 # <a name="get-started-with-planning-optimization"></a>Kom igång med planeringsoptimering
 
@@ -41,21 +40,42 @@ Funktionen planeringsoptimering stöder för närvarande inte alla funktioner so
 
 Innan du aktiverar planeringsoptimeringen rekommenderar vi att du utvärderar resultatet av anpassningsanalysen för planeringsoptimering. Mer information finns i [anpassningsanalys för planeringsoptimering](planning-optimization-fit-analysis.md).
 
-### <a name="availability"></a>Tillgänglighet
-Planeringsoptimering är för närvarande tillgänglig i följande Azure-områden: USA, Kanada, Europa, Storbritannien och Australien. Om du försöker installera tillägget från ett annat geografiskt område visas ett meddelande om att detta geografiska område inte stöds.
+## <a name="availability"></a>Tillgänglighet
+
+Planeringsoptimering är för närvarande tillgänglig i följande Azure-områden: USA, Kanada, Europa, Storbritannien, Australien och Asien och stillahavsområdet. Om du försöker installera tillägget från ett annat geografiskt område visas ett meddelande om att detta geografiska område inte stöds.
 
 Observera att planeringsoptimering inte har stöd för lokala distributioner av Dynamics 365 Supply Chain Management.
 
-### <a name="licensing"></a>Licensiering
+## <a name="licensing"></a>Licensiering
 
 Om du kan köra huvudplanering med din nuvarande licens behöver du inte köpa ytterligare en licens för att börja använda planeringsoptimering.
 
-### <a name="install-the-add-in"></a>Installera tillägget
+## <a name="install-and-enable-planning-optimization"></a>Installera och aktivera planeringsoptimeringen
 
-Om du vill använda planeringsoptimering installerar du tillägget för planeringsoptimering för Dynamics 365 Supply Chain Management. Du kan komma åt tillägget från LCS-projektet och aktivera funktionen för planeringsoptimering från användargränssnittet för Supply Chain Management.
+Om du vill använda Planeringsoptimering måste du kontrollera att alla förutsättningar finns i systemet och sedan aktivera licensnyckeln och installera tillägget Planeringsoptimering för Dynamics 365 Supply Chain Management.
 
-> [!NOTE]
-> Kravet på planeringsoptimering är en LCS-aktiverad miljö med hög tillgänglighet, lägst nivå 2, (inte en OneBox-miljö) med Dynamics 365 Supply Chain Management version 10.0.7 eller senare. Om du försöker installera tillägget i en OneBox-miljö kommer installationen inte att slutföras och du måste avbryta installationen.
+### <a name="prerequisites"></a>Förutsättningar
+
+Innan du installerar tillägget Planeringsoptimering måste följande förutsättningar finnas på plats:
+
+- Du måste köra Supply Chain Management på en LCS-aktiverad miljö med hög tillgänglighet, lägst nivå 2, (inte en OneBox-miljö) med Dynamics 365 Supply Chain Management version 10.0.7 eller senare. Om du försöker installera tillägget i en OneBox-miljö kommer installationen inte att slutföras och du måste avbryta installationen.
+
+- Ditt system måste ha ställts in för Power Platform-integration. Mer information finns i [Förutsättningar för att ställa in tillägg](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#prerequisites-for-setting-up-add-ins) och [Ställa in tillägg](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#set-up-add-ins).
+
+### <a name="enable-the-planning-optimization-license"></a>Aktivera licensen för planeringsoptimeringen
+
+Om du vill använda Planeringsoptimering måste du aktivera dess konfigurationsnyckel. Så här går det till:
+
+1. Sätt ditt system i underhållsläge enligt beskrivningen i [underhållsläge](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Öppna **Systemadministration \> Inställningar \> Licenskonfiguration**.
+1. På fliken **Konfigurationsnycklar** markera kryssrutan för **Planeringsoptimering**.
+1. Inaktivera underhållsläge enligt beskrivningen i [underhållsläge](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
+### <a name="install-the-planning-optimization-add-in"></a>Installera tillägget Planeringsoptimering
+
+Du måste installera tillägget från LCS-projektet och aktivera funktionen för planeringsoptimering från användargränssnittet för Supply Chain Management.
+
+För att installera tillägget Planeringsoptimering:
 
 1. Logga in på LCS och öppna den önskade miljön.
 1. Gå till **Fullständiga detaljer**.
@@ -69,11 +89,11 @@ Om du vill använda planeringsoptimering installerar du tillägget för planerin
 
 Det huvudsakliga syftet med tillägget att installera tilläggsprogrammet för planeringsoptimering är att ansluta tjänsten och miljön. Därför måste du installera tillägget separat för varje miljö där du vill använda planeringsoptimering, oavsett vilken kod som flyttas mellan miljöerna.
 
-### <a name="planning-optimization-integration"></a>Planera optimeringsintegration
+## <a name="integrate-planning-optimization-with-your-system"></a>Integrera Planeringsoptimering med systemet
 
 Om du vill konfigurera om tillägget för planeringsoptimering ska användas för huvudplanering går du till **Huvudplanering** \> **Inställningar** \> **Parametrar för planeringsoptimering**.
 
-#### <a name="connection-status"></a>Anslutningsstatus
+### <a name="connection-status"></a>Anslutningsstatus
 
 Anslutningsstatus anger aktuell status för anslutningen mellan hantering av Supply Chain Management och planeringsoptimeringstjänsten. Följande tabell visar de möjliga värdena.
 
@@ -85,7 +105,7 @@ Anslutningsstatus anger aktuell status för anslutningen mellan hantering av Sup
 | Inaktiverar anslutning | En begäran om att inaktivera anslutningen till planeringsoptimeringstjänsten pågår just nu. | Nej |
 | Hämtar status | Systemet väntar på statusinformation från planeringsoptimeringstjänsten. | Nej |
 
-#### <a name="the-use-planning-optimization-option"></a>Alternativet Använd planeringsoptimering
+### <a name="the-use-planning-optimization-option"></a>Alternativet Använd planeringsoptimering
 
 Inställningen av alternativet **Använd planeringsoptimering** avgör vilken planeringsmotor som används för huvudplanering:
 
@@ -112,6 +132,3 @@ Om planeringsoptimeringen är aktiverad görs huvudplanering med tillägget plan
 [Använda filter på en plan](plan-filters.md)
 
 [Annullera ett planeringsjobb](cancel-planning-job.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

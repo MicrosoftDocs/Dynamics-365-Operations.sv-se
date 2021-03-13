@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.openlocfilehash: 4b89e911f3c6eb8ffa0cfe049ef9bfc2ed306021
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4437978"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077641"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hur arbetare använder körningsgränssnittet för produktionsgolvet
 
@@ -41,11 +40,11 @@ I de återstående avsnitten i det här ämnet beskrivs hur arbetare interagerar
 
 ## <a name="all-jobs-tab"></a>Fliken alla jobb
 
-Fliken **Alla jobb** tillhandahåller en jobblista som visar alla produktionsjobb som har statusen *inte startad*, *stoppad* eller *startad*.
+Fliken **Alla jobb** tillhandahåller en jobblista som visar alla produktionsjobb som har statusen *inte startad*, *stoppad* eller *startad*. (Det här fliknamnet är anpassningsbart och kan vara ett annat för systemet.)
 
 ![Fliken alla jobb](media/pfei-all-jobs-tab.png "Fliken alla jobb")
 
-Det finns följande kolumner i jobblistan. (Siffrorna motsvarar siffrorna i föregående illustration.)
+Det finns följande kolumner i jobblistan. Siffrorna motsvarar siffrorna i föregående illustration.
 
 1. **Urvalskolumn** – kolumnen längst till vänster använder en bockmarkering för att visa jobb som har valts av arbetaren. Arbetare kan välja flera jobb i listan samtidigt. Om du vill markera alla jobb i listan markerar du kryssrutan i kolumnrubriken. När ett enstaka jobb väljs visas information om jobbet i den nedre delen av sidan.
 1. **Kolumn för jobbstatus** – i den här kolumnen används symboler för att visa status för varje jobb. Jobb som saknar symbol i den här kolumnen har statusen *inte startad*. En grön triangel anger jobb som har statusen *startat*. Två gula lodräta linjer indikerar jobb som har statusen *stoppad*.
@@ -60,9 +59,11 @@ Det finns följande kolumner i jobblistan. (Siffrorna motsvarar siffrorna i för
 
 ## <a name="active-jobs-tab"></a>Fliken aktiva jobb
 
+Flikarna **Aktiva jobb** visar en lista över alla jobb som den inloggade arbetaren redan har startat. (Det här fliknamnet är anpassningsbart och kan vara ett annat för systemet.)
+
 ![Fliken aktiva jobb](media/pfei-active-jobs-tab.png "Fliken aktiva jobb")
 
-Jobblistan på fliken **Aktiva jobb** har följande kolumner:
+Listan med aktiva jobb har följande kolumner:
 
 - **Urvalskolumn** – kolumnen längst till vänster använder en bockmarkering för att visa jobb som har valts av arbetaren. Arbetare kan välja flera jobb i listan samtidigt. Om du vill markera alla jobb i listan markerar du kryssrutan i kolumnrubriken. När ett enstaka jobb väljs visas information om jobbet i den nedre delen av sidan.
 - **Order** – i den här kolumnen visas produktionsordernumret för ett jobb.
@@ -72,6 +73,28 @@ Jobblistan på fliken **Aktiva jobb** har följande kolumner:
 - **Slutförd** – i den här kolumnen visas den kvantitet som redan har slutförts för ett jobb.
 - **Kasserad** – i den här kolumnen visas den kvantitet som redan har kasserats för ett jobb.
 - **Resterande** – i den här kolumnen visas den kvantitet som återstår att färdigställa för ett jobb.
+
+## <a name="my-machine-tab"></a>Min maskinflik
+
+Fliken **Min maskin** låter arbetare välja en tillgång som är ansluten till en maskinresurs inom filteruppsättningen på fliken **Alla jobb**. Arbetaren kan sedan se tillståndet och hälsan för den valda tillgången genom att läsa värden för upp till fyra valda räknare och listor över senaste underhållsförfrågningar och registrerade driftstopp. Arbetaren kan också begära underhåll av den valda tillgången och registrera och redigera maskiners drifttid. (Det här fliknamnet är anpassningsbart och kan vara ett annat för systemet.)
+ 
+![Min maskinflik](media/pfei-my-machine-tab.png "Min maskinflik")
+
+Fliken **Min maskin** har följande kolumner. Siffrorna motsvarar siffrorna i föregående illustration.
+
+1. **Maskintillgång** - Välj maskintillgången som du vill spåra. Börja skriva ett namn för att välja från en lista med matchande tillgångar, eller välj förstoringsglasikonen för att välja från en lista över alla tillgångar som är associerade med de resurser som finns i jobblistan.
+
+    > [!NOTE]
+    > Användare av Supply Chain Management kan tilldela en resurs till varje tillgång efter behov med hjälp av sidan **Alla tillgångar** (på fliken **Anläggningstillgång** med listrutan **Resurs**). Mer information finns i [Skapa en tillgång](../asset-management/objects/create-an-object.md).
+
+1. **Inställningar** - Välj kugghjulsikonen för att öppna en dialogruta där du kan välja vilka räknare som ska visas för den valda maskintillgången. Värden för dessa räknare visas längst upp på fliken **Tillgångshantering**. Menyn **Inställningar** (visas i följande skärmdump) kan du aktivera upp till fyra räknare. För varje räknare som du vill aktivera använder du sökfältet högst upp i panelen för att välja en räknare. Sökfältet listar alla räknare som är kopplade till tillgången som valts högst upp på sidan **Tillgångshantering**. Ställ in varje räknare till att övervaka antingen det **aggregerade** värdet eller det senaste **faktiska** värdet för räknaren. Om du till exempel ställer in en räknare som spårar hur många timmar maskinen har körts ska du ställa in den på **Aggregerat**. Om du ställer in en räknare för att mäta den senaste uppdaterade temperaturen eller försiktighet, bör du ställa in den på **Faktisk**. Välj **OK** om du vill spara inställningarna och stänga dialogrutan.
+
+    ![Min maskinflik](media/pfei-my-machine-tab-settings.png "Min maskinflik")
+
+1. **Begär underhåll** - Välj den här knappen om du vill öppna en dialogruta där du kan skapa en underhållsbegäran. Du kan ange en beskrivning och en notering. Denna begäran visas för en användare av Supply Chain Management som sedan kan konvertera underhållsbehovet till en underhållsorder.
+1. **Registrera drifttid** - Välj den här knappen om du vill öppna en dialogruta där du kan registrera maskiners drifttid. Du kan välja en orsakskod och ange ett datum/tidsintervall för nedtiden. Registreringen av maskinens drifttid används för att beräkna maskintillgångens effektivitet.
+1. **Visa eller redigera** - Välj den här knappen om du vill öppna en dialogruta där du kan redigera eller visa befintliga nedtidsposter.
+
 
 ## <a name="starting-and-completing-production-jobs"></a>Starta och slutföra produktionsjobb
 
@@ -124,7 +147,7 @@ Till exempel Shannon, en butiksarbetare i Contoso, vill delta i ett företagsmö
 
 När Shannon bekräftar sina val i båda scenarierna, går hon antingen till inloggningssidan eller en sida som väntar på att hon ska bekräfta att hon har returnerat från sin indirekta aktivitet. Vilken sida som visas beror på konfigurationen av körningsgränssnittet för produktionsgolvet. (Mer information finns i [Konfigurera gränssnittet för körning av produktionsstyrning](production-floor-execution-configure.md).)
 
-## <a name="working-on-breaks"></a>Arbeta med raster
+## <a name="registering-breaks"></a>Registrering av raster
 
 Arbetare kan registrera raster. Raster kan definieras flexibelt, vilket beskrivs i [lön baserat på registreringar](pay-based-on-registrations.md).
 
@@ -146,6 +169,3 @@ Arbetare kan öppna ett dokument som är kopplat till ett jobb genom att välja 
 1. Arbetaren går igenom guiden för att lära sig uppgiften.
 
 Mer information om hur du skapar, tilldelar och använder guider för HoloLens finns i [Ange guider för mixad verklighet för arbetare i produktion](instruction-guides-in-production-overview.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

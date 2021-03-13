@@ -1,6 +1,6 @@
 ---
 title: Resultat för lagerställe Power BI-innehåll
-description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för lagerställets prestanda. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
+description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för lagerställets prestanda.
 author: Mirzaab
 manager: AnnBe
 ms.date: 12/18/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 4594c6c09abdac72a03ac1338701d2291b234106
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: be4acbb8eae3fd7d8dd0db4f99c3a2db06808f21
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687411"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092826"
 ---
 # <a name="warehouse-performance-power-bi-content"></a>Resultat för lagerställe Power BI-innehåll
 
@@ -111,6 +111,3 @@ Följande sammanlagda huvudmått används till grund för innehållet:
 | Leveransprestanda        | Leverans efter produkt                       | CustPackingSlipOnTimeStatus           | Tidig, I tid och Sen (se beskrivningarna tidigare i den här tabellen). |
 | Leveransprestanda        | Levererade av kunder                      | CustPackingSlipOnTimeStatus           | Tidig, I tid och Sen (se beskrivningarna tidigare i den här tabellen). |
 | Leveransprestanda        | Levererat per site/lagerställe              | CustPackingSlipOnTimeStatus           | Tidig, I tid och Sen (se beskrivningarna tidigare i den här tabellen). |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

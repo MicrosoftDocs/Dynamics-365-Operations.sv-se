@@ -1,6 +1,6 @@
 ---
 title: ER skapa elektroniska handlingar för betalningar med en formatkonfiguration
-description: I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan använda en ny formatkonfiguration för Elektronisk rapportering (ER) för att skapa elektroniska dokument för bearbetning av betalningar.
+description: I det här avsnittet beskrivs hur du använder en ny konfiguration av elektronisk rapporteringsformat (ER) för att generera elektroniska dokument för bearbetning av betalningar.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e88df5c2f92ee2b9b448ba100c8bc4105eddae4
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 816f98660a5508ada203f49a71e0785548fb9a31
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681743"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092210"
 ---
 # <a name="er-generate-electronic-documents-for-payments-using-a-format-configuration"></a>ER skapa elektroniska handlingar för betalningar med en formatkonfiguration
 
@@ -81,6 +81,3 @@ För att slutföra dessa steg måste du först slutföra stegen i proceduren "Sk
 25. Klicka på OK.
     * Analysera den skapade betalningsfilen i XML-format. Jämför den med den designade dokumentlayouten och de definierade betalningstransaktionsattributen.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: ER Använd dokumenthanteringsfiler i formatutmatningar (Del 5 - ändra och kör format)
-description: I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) för att använda dokumenthanteringsfiler (bilagor) i ER-utmatningar.
+description: I det här avsnittet beskrivs hur du konfigurerar ett elektroniskt rapporteringsformat (ER) för användning av dokumenthanteringsfiler (bilagor) i ER-utdata. (Del 5)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8b949c2629df0e9db8c11322c9d0d090b200edc2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f96189163d5ecac47ade9f713b3fd689e41352d0
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681767"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092498"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-5---modify-and-run-format"></a>ER Använd dokumenthanteringsfiler i formatutmatningar (Del 5 - ändra och kör format)
 
@@ -96,6 +96,3 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 7. Klicka på OK.
     * Granska den genererade utleveransen. Notera att: Utöver fakturameddelandet i XML-format har en enda fil skapats för respektive bilaga. Bilagefilerna fylls i med den zippade utmatningen i binärt format.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

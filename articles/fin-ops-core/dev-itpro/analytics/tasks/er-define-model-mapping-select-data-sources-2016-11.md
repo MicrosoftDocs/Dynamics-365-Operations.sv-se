@@ -1,6 +1,6 @@
 ---
 title: Definiera ER-modellmappningar och välj datakällor för dem
-description: I följande steg beskrivs hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan välja datakällor för en datamodell för elektronisk rapportering.
+description: Detta ämne beskriver hur en Systemadministratör eller Utvecklare för elektronisk rapportering kan välja datakällor för en datamodell för elektronisk rapportering.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d57c191761b8e2367ff8806c1cd98d6d83559e3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7fccdda3ac441630836a0d33f78eb04e9cd26d4a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682127"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092120"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>Definiera ER-modellmappningar och välj datakällor för dem
 
@@ -77,7 +77,7 @@ I följande steg beskrivs hur en användare i rollen Systemadministratör eller 
 17. Välj "Transaktioner\Verifikation" i trädet.
 18. Klicka på Lägg till datakälla.
 19. I formelfältet anger du "CONCATENATE(Transactions.Voucher, "-", ".
-    * Skriv [ , ”, ”-] i slutet av formeln.  
+    * Skriv [ , "-", ] i slutet av formeln.  
 20. Välj "Sträng\TEXT" i trädet.
 21. Klicka på funktionen Lägg till.
 22. Välj "Transaktioner\Post-ID(RecId)" i trädet.
@@ -98,7 +98,7 @@ I följande steg beskrivs hur en användare i rollen Systemadministratör eller 
 32. Välj "Transaktioner\Debet(AmountCurDebit)" i trädet.
 33. Klicka på Lägg till datakälla.
 34. I formelfältet anger du "Transactions.AmountCurDebit - ".
-    * Skriv [ - ] i slutet av formeln.  
+    * Skriv[ - ] i slutet av formeln.  
 35. Välj "Transaktioner\Kredit(AmountCurCredit)" i trädet.
 36. Klicka på Lägg till datakälla.
 37. Klicka på Spara.
@@ -157,6 +157,3 @@ I följande steg beskrivs hur en användare i rollen Systemadministratör eller 
 71. Stäng sidan.
 72. Stäng sidan.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

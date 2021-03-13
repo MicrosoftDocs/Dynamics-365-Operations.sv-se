@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: ff68761ce1cf2174be8ebb9732b9348439a53a32
-ms.sourcegitcommit: d24ebce50421f8656d23bb1e47cd636ad2e2ca0a
+ms.openlocfilehash: e822463ac80be3b1e498f02cb1aad2b214fed815
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664306"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077487"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurera körningsgränssnittet för produktionsgolvet
 
@@ -65,6 +64,12 @@ Den här funktionen lägger till en knapp i körningsgränssnittet för produkti
 
 - Funktion för att låsa jobbkortsenhet och jobbkortsterminal för att anpassas till språk
 
+### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funktionen för tillgångshantering för körningsgränssnittet för produktionsgolvet
+
+Den här funktionen lägger till en flik för tillgångshantering i produktionsstyrningsgränssnittet. Arbetare kan använda den här fliken för att välja en tillgång som är ansluten till en maskinresurs inom det valda filtret för jobblistan. För den valda maskintillgången kan arbetaren visa status och tillstånd för tillgången från räknarvärden i upp till fyra valda räknare. Om du vill använda denna funktion aktiverar du följande funktion i för att aktivera den [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Funktionen för tillgångshantering för körningsgränssnittet för produktionsgolvet
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeta med konfigurationer av körningsgränssnittet för produktionsgolvet
 
 Om du vill skapa och underhålla enhetskonfigurationen går du till **Produktionskontroll \> Inställning \> Tillverkningskörning \> Konfigurera för produktionsgolvet**. På sidan **Konfigurera för produktionsgolvet** visas en lista över befintliga konfigurationer. På den här sidan kan du utföra följande åtgärder:
@@ -94,6 +99,3 @@ Ett batchjobb rensar regelbundet poster i referensregistret för enheter som int
 1. I åtgärdsfönstret, välj **Rensa klientkonfigurationer**.
 1. I dialogrutan **Rensa klientkonfigurationer** ange fältet **Antal dagar** av inaktivitet (före idag). Du tar bort alla konfigurationer och inloggningsposter för enheter som inte har varit aktiva under den tiden.
 1. Välj **OK** om du vill rensa de relevanta konfigurationerna, baserat på **Antal dagar**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

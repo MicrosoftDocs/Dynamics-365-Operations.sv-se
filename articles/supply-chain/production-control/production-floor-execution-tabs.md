@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 81c5c83128bb81523dee6ede549eece7b0d80e30
-ms.sourcegitcommit: d9d1ddce6a334ade8b32b5ea3ac4c1e1a8f72715
+ms.openlocfilehash: 786ea9a3da98e9f1812b007d4301cb47680e6894
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664282"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077588"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Designa körningsgränssnittet för produktionsgolvet
 
@@ -57,7 +56,7 @@ Följ stegen nedan om du vill skapa och konfigurera en ny flik:
 1. Gör följande inställningar i sidans rubrik:
 
     - **Fliknamn** - Ange ett namn på fliken.
-    - **Huvudvisning** - Välj mellan de två fördefinierade jobblistorna (*aktiva jobb* eller *alla jobb*).
+    - **Huvudvisning** - Välj mellan de två fördefinierade jobblistorna (*aktiva jobb*, *alla jobb* eller *min maskin*).
     - **Detaljvy** - Välj mellan ett tomt värde eller **jobbinformation**. Om du väljer det tomma värdet visas ingen detaljerad vy på fliken. Om du väljer **jobbdetaljer** kommer den detaljerade vyn att innehålla en detaljerad beskrivning av det jobb som valts i jobblistan i huvudvyn.
 
 1. I avsnittet för det **primära verktygsfältet** väljer du vilka knappar som ska vara tillgängliga i det primära verktygsfältet. I kolumnen **tillgängliga åtgärder** visas en lista över alla knappar som kan läggas till. I kolumnerna **Valda åtgärderna** visas en lista över alla knappar som ingår i den aktuella konfigurationen. Använd knapparna mellan kolumnerna för att flytta de markerade objekten mellan de kolumner som behövs. Använd knapparna upp och ned bredvid kolumnen **Valda åtgärder** om du vill styra i vilken ordning knapparna visas i användargränssnittet.
@@ -79,6 +78,3 @@ När du har skapat alla flikar du behöver kan du koppla dem till en konfigurati
 1. Fortsätt att lägga till ytterligare flikar om det behövs.
 
 1. Använd knapparna **Flytta upp** och **Flytta ned** i verktygsfältet om du vill ordna flikarna efter behov. Flikarna visas från vänster till höger i den ordning som visas i ovanstående skärmdump (fliken längst upp visas till vänster).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

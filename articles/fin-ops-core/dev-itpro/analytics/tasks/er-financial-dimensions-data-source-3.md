@@ -1,6 +1,6 @@
 ---
 title: ER Använd ekonomiska dimensioner som en datakälla (Del 3 - Designa rapporten)
-description: I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera en modell för elektronisk rapportering (ER) för att använda ekonomiska dimensioner som datakällor för ER-rapporter.
+description: I det här avsnittet beskrivs hur du konfigurerar en elektronisk rapporteringsmodell (ER) för användning av ekonomiska dimensioner som datakälla för ER-rapporter. (Del 3)
 author: NickSelin
 manager: AnnBe
 ms.date: 05/27/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a12f88f1e8b5e451bc8a5c5486d820da61bf3ad0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b0d6da96850e04d5e975b3febbfae2737c8a86af
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684797"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092310"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER Använd ekonomiska dimensioner som en datakälla (Del 3 - Designa rapporten)
 
@@ -145,6 +145,3 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 46. Stäng sidan.
 ![ER-åtgärdsdesignersida](../media/er-financial-dimensions-guides-format2.png)
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

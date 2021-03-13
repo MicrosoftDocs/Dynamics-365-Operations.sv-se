@@ -1,6 +1,6 @@
 ---
 title: ER Uppgradera ditt format genom att implementera en ny basversion för det formatet
-description: I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan behålla en formatkonfiguration för elektronisk rapportering (ER).
+description: I det här avsnittet beskrivs hur du underhåller en formatkonfiguration för elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 17fe6d772040c73959685920743225c128421951
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b76fb09ff961a3100b6a4bf890c1b12e6a0a2771
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684273"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092576"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Uppgradera ditt format genom att implementera en ny basversion för det formatet
 
@@ -243,6 +243,3 @@ För att göra detta måste Proseware, Inc. ändra baskonfigurationversionen fö
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Testa det anpassade formatet för att skapa betalningsfiler
 Slutför stegen i sessionen "Använd skapade format för att generera elektroniska dokument för betalningar" i en parallell Finance and Operations-session. Välj det skapade BACS-formatet (fiktiv kund från Storbritannien) i parametrar för elektronisk betalningsmetod. Kontrollera att den skapade betalningsfilen innehåller den för en tid eftersom Proseware, Inc. introducerade XML-noden som innehåller IBAN-kontokoden i korrespondens till regionala kraven. Filen ska också innehålla nyligen introducerade genom Litware Inc. XML-noden som presenterar SWIFT-bankkoden i enlighet med kraven i landet.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

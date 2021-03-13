@@ -1,6 +1,6 @@
 ---
 title: Rekrytering Power BI-innehåll
-description: Det här avsnittet beskriver rekrytering Power BI-innehållet. Det förklarar hur du öppnar rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
+description: Det här avsnittet beskriver rekrytering Power BI-innehållet.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 524b1c29d204c1b013546008b1be7868cbf8db06
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 237af011229e3d84f54bc601753dc621f8335d2f
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680572"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092751"
 ---
 # <a name="recruiting-power-bi-content"></a>Rekrytering Power BI-innehåll
 
@@ -64,6 +64,3 @@ Följande tabell visar enheterna som **Rekrytering** Power BI baserades på.
 | Resultat          | Värdering, beskrivning och bedömningsmodellen                            | Sökande, anställd sökande, uppsagd sökande |
 | Rekryteringsprojekt  | Projektbeskrivning, projektstatus och lediga jobb                | Sökande, anställd sökande, uppsagd sökande |
 | Uppsagd sökande | Uppsagda sökande, orsak, prestanda och uppsägningsdatum | Företag, kalenderförskjutning, datum, geografisk placering, resultat, befolkning, anställning, media, rekryteringsprojekt, sökandes namn |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

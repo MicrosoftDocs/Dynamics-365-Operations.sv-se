@@ -1,6 +1,6 @@
 ---
 title: Arbetsyta för checklista för datavalidering
-description: Arbetsytan checklista för datavalidering låter dig spåra processer för validering av data mellan företag, områden och personer. Checklistan kan användas under en ny implementering efter uppgradering eller efter en migrering.
+description: Arbetsytan checklista för datavalidering låter dig spåra processer för validering av data mellan företag, områden och personer.
 author: bking
 manager: AnnBe
 ms.date: 01/12/2018
@@ -14,14 +14,14 @@ ms.reviewer: rhaertle
 ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.openlocfilehash: a3ac338670fdc9fc7cb526cdcdc1e7199904da8f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4e50d4c94c0b8468a80ad214a21c8f5e0dedae71
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687585"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092341"
 ---
-# <a name="data-validation-checklist-workspace"></a>Arbetsyta för checklista för datavalidering
+# <a name="data-validation-checklist-workspace"></a>Arbetsyta – checklista för datavalidering
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,8 +39,7 @@ Panelerna **Sammanfattning** ger dig en översikt över processen, och diverse i
 
 I avsnittet **uppgifter och status** visas status på det övergripande datavalideringsprojektet på olika sätt: status efter juridisk person, efter område och efter uppgiftslista. Du kan välja filter för att visa status för ett specifikt företag. Varje statusflik tillhandahåller en uppdelning efter såväl slutförd procent och hur många uppgifter som återstår.
 
-Den sista fliken är för den detaljerade uppgiftslistan. I listan visas hela uppgiftslistan.
-Du kan filtrera uppgiftslistan på flera sätt. Klicka på **Redigera uppgift** för att ändra status för en uppgift eller tilldela en uppgift. Klicka på **bilagor** att visa bilagor för en uppgift.
+Den sista fliken är för den detaljerade uppgiftslistan. I listan visas hela uppgiftslistan. Du kan filtrera uppgiftslistan på flera sätt. Klicka på **Redigera uppgift** för att ändra status för en uppgift eller tilldela en uppgift. Klicka på **bilagor** att visa bilagor för en uppgift.
 
 Aktivitetens namn är en hyperlänk till sidan dit användaren måste bege sig för att slutföra arbetet. Du kan ange denna hyperlänk genom att använda fälten **Menyalternativnamn** när du redigerar eller skapar en uppgift från formuläret **konfigurera datavalideringsprojekt**.
 
@@ -57,6 +56,3 @@ Innan du kan använda arbetsytan **checklista för datavalidering** måste du ko
 Du använder uppgiftområden för att gruppera datavalideringsuppgifter i logiska området baserat på ägarskap i din organisation. Exempelvis kan Leverantörsreskontra, Kundreskontra eller Huvudbok användas som uppgiftområden.
 
 **Menyobjektnamnet** är associerat med uppgiftens arbetsinsats, och kan användas för att gå direkt till motsvarande sida från aktivitetslänken på arbetsytan. Exempelvis en datavalideringsuppgift för att köra rapporten **åldersfördelning i leverantörsreskontra** för leverantörsreskontra kan länkas till sidan **åldersfördelningsrapport för leverantörsreskontra**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
