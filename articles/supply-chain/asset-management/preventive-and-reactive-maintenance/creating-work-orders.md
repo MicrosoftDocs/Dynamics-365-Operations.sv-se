@@ -1,9 +1,9 @@
 ---
 title: Skapa arbetsorder
 description: Det här avsnittet innehåller förklaringar av hur du skapar arbetsorder i Tillgångshantering.
-author: josaw1
+author: johanhoffmann
 manager: tfehr
-ms.date: 08/27/2019
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,44 +11,87 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
-ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f94f8bc20753e38ce1cb6eccdfbc85c2e491ffad
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.17
+ms.openlocfilehash: 876aef9f3f470490bb385e1861c837dcfa82db69
+ms.sourcegitcommit: 1e615288db245f83c5d5e0cd45315400f8946beb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "5131803"
 ---
-# <a name="creating-work-orders"></a><span data-ttu-id="c3869-103">Skapa arbetsorder</span><span class="sxs-lookup"><span data-stu-id="c3869-103">Creating work orders</span></span>
+# <a name="creating-work-orders"></a><span data-ttu-id="4c81e-103">Skapa arbetsorder</span><span class="sxs-lookup"><span data-stu-id="4c81e-103">Creating work orders</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
- 
+<span data-ttu-id="4c81e-104">När du har schemalagt förebyggande underhållsjobb är nästa steg att skapa arbetsorder för jobben.</span><span class="sxs-lookup"><span data-stu-id="4c81e-104">After you've scheduled preventive maintenance jobs, the next step is to create work orders for them.</span></span> <span data-ttu-id="4c81e-105">Du kan genomföra det här steget genom att använda ett av underhållsschemana.</span><span class="sxs-lookup"><span data-stu-id="4c81e-105">You can complete this step by using one of the maintenance schedules.</span></span> <span data-ttu-id="4c81e-106">De schemalagda jobben i ett underhållsschema kan ha olika referenstyper som beskrivs i följande tabell:</span><span class="sxs-lookup"><span data-stu-id="4c81e-106">The scheduled jobs in a maintenance schedule can have different reference types, as described in the following table.</span></span>
 
-<span data-ttu-id="c3869-104">När du har schemalagt förebyggande underhållsjobb är nästa steg att skapa arbetsorder för jobben.</span><span class="sxs-lookup"><span data-stu-id="c3869-104">When you have scheduled preventive maintenance jobs, next step is to create work orders for the jobs.</span></span> <span data-ttu-id="c3869-105">Det gör du i ett av underhållsschemana.</span><span class="sxs-lookup"><span data-stu-id="c3869-105">This is done in one of the maintenance schedules.</span></span> <span data-ttu-id="c3869-106">De schemalagda jobben i ett underhållsschema kan ha olika referenstyper:</span><span class="sxs-lookup"><span data-stu-id="c3869-106">The scheduled jobs in a maintenance schedule can have different reference types:</span></span>
+| <span data-ttu-id="4c81e-107">Referenstyp</span><span class="sxs-lookup"><span data-stu-id="4c81e-107">Reference type</span></span> | <span data-ttu-id="4c81e-108">beskrivning</span><span class="sxs-lookup"><span data-stu-id="4c81e-108">Description</span></span> |
+|---|---|
+| <span data-ttu-id="4c81e-109">Underhållsplaner</span><span class="sxs-lookup"><span data-stu-id="4c81e-109">Maintenance plans</span></span> | <span data-ttu-id="4c81e-110">Förebyggande underhållsjobb baserade på underhållsplanens typer *Tid* eller *Räknare*.</span><span class="sxs-lookup"><span data-stu-id="4c81e-110">Preventive maintenance jobs that are based on the *Time* or *Counter* maintenance plan type.</span></span> |
+| <span data-ttu-id="4c81e-111">Underhållsomgångar</span><span class="sxs-lookup"><span data-stu-id="4c81e-111">Maintenance rounds</span></span> | <span data-ttu-id="4c81e-112">Förebyggande underhållsjobb som innehåller flera tillgångar som kräver en liknande typ av underhåll.</span><span class="sxs-lookup"><span data-stu-id="4c81e-112">Preventive maintenance jobs that contain several assets that require a similar type of maintenance.</span></span> |
+| <span data-ttu-id="4c81e-113">Underhållsbegäran</span><span class="sxs-lookup"><span data-stu-id="4c81e-113">Maintenance request</span></span> | <span data-ttu-id="4c81e-114">En manuellt skapad begäran om underhåll eller reparation av en tillgång.</span><span class="sxs-lookup"><span data-stu-id="4c81e-114">A manually created request for maintenance or repair of an asset.</span></span> <span data-ttu-id="4c81e-115">Denna begäran kan konverteras till en arbetsorder.</span><span class="sxs-lookup"><span data-stu-id="4c81e-115">This request can be converted to a work order.</span></span> |
 
-| <span data-ttu-id="c3869-107">Referenstyp</span><span class="sxs-lookup"><span data-stu-id="c3869-107">Reference type</span></span> | <span data-ttu-id="c3869-108">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="c3869-108">Description</span></span>                    |
-|-----------------------|------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="c3869-109">Underhållsplaner</span><span class="sxs-lookup"><span data-stu-id="c3869-109">Maintenance plans</span></span>     | <span data-ttu-id="c3869-110">Förebyggande underhållsjobb baserade på underhållsplanens typer "Tid" eller "Räknare".</span><span class="sxs-lookup"><span data-stu-id="c3869-110">Preventive maintenance jobs based on maintenance plan types "Time" or "Counter".</span></span>                       |
-| <span data-ttu-id="c3869-111">Underhållsomgångar</span><span class="sxs-lookup"><span data-stu-id="c3869-111">Maintenance rounds</span></span>    | <span data-ttu-id="c3869-112">Förebyggande underhållsjobb som innehåller flera tillgångar som kräver en liknande typ av underhåll.</span><span class="sxs-lookup"><span data-stu-id="c3869-112">Preventive maintenance jobs containing several assets that require a similar type of maintenance.</span></span>           |
-| <span data-ttu-id="c3869-113">Underhållsbegäran</span><span class="sxs-lookup"><span data-stu-id="c3869-113">Maintenance request</span></span>   | <span data-ttu-id="c3869-114">Manuellt skapad begäran om underhåll eller reparation av en tillgång, som kan konverteras till en arbetsorder.</span><span class="sxs-lookup"><span data-stu-id="c3869-114">Manually created request for maintenance or repair of an asset, which can be converted into a work order.</span></span> |
+## <a name="create-work-orders-based-on-your-maintenance-schedule"></a><span data-ttu-id="4c81e-116">Skapa arbetsorder baserat på din underhållsplan</span><span class="sxs-lookup"><span data-stu-id="4c81e-116">Create work orders based on your maintenance schedule</span></span>
 
+<span data-ttu-id="4c81e-117">Skapa arbetsorder som baseras på din underhållsplan genom att följa dessa steg.</span><span class="sxs-lookup"><span data-stu-id="4c81e-117">To create work orders that are based on your maintenance schedule, follow these steps.</span></span>
 
-1. <span data-ttu-id="c3869-115">Klicka på **Tillgångshantering** > **Allmänt** > **Alla underhållsscheman** eller **Öppna rader för underhållsschema** eller **Öppna pooler för underhållsschema**.</span><span class="sxs-lookup"><span data-stu-id="c3869-115">Click **Asset management** > **Common** > **All maintenance schedule** or **Open maintenance schedule lines** or **Open maintenance schedule pools**.</span></span>
+1. <span data-ttu-id="4c81e-118">Öppna någon av följande sidor, beroende på hur du vill välja tidsplaner uppgifter för dina arbetsorder:</span><span class="sxs-lookup"><span data-stu-id="4c81e-118">Open one of the following pages, depending on how you want to select schedule items for your work orders:</span></span>
 
-2. <span data-ttu-id="c3869-116">Välj de schemalagda underhållsjobb som du vill skapa en arbetsorder för och klicka på **Arbetsorder**.</span><span class="sxs-lookup"><span data-stu-id="c3869-116">Select the scheduled maintenance jobs for which you want to create a work order and click **Work order**.</span></span> <span data-ttu-id="c3869-117">I dialogrutan **Skapa arbetsorder** visas det totala antalet prognostimmar för de valda raderna i fältet **Prognostimmar för underhåll**.</span><span class="sxs-lookup"><span data-stu-id="c3869-117">In the **Create work orders** dialog, the total number of forecast hours for the selected lines is shown in the **Maintenance forecast hours** field.</span></span>
+    - <span data-ttu-id="4c81e-119">Alla underhållsscheman (**Hantering av tillgångar \> Hanteringsschema \> Alla underhållsscheman**)</span><span class="sxs-lookup"><span data-stu-id="4c81e-119">All maintenance schedule (**Asset management \> Management schedule \> All maintenance schedule**)</span></span>
+    - <span data-ttu-id="4c81e-120">Öppna underhållsschemarader (**Hantering av tillgångar \> Hanteringsschema \> Öppna underhållsschemarader**)</span><span class="sxs-lookup"><span data-stu-id="4c81e-120">Open maintenance schedule lines (**Asset management \> Management schedule \> Open maintenance schedule lines**)</span></span>
+    - <span data-ttu-id="4c81e-121">Öppna underhållsschemapooler (**Hantering av tillgångar \> Hanteringsschema \> Öppna underhållsschemapooler**)</span><span class="sxs-lookup"><span data-stu-id="4c81e-121">Open maintenance schedule pools (**Asset management \> Management schedule \> Open maintenance schedule pools**)</span></span>
 
-3. <span data-ttu-id="c3869-118">I avsnittet **Parametrar** väljer du hur många arbetsorder du vill skapa.</span><span class="sxs-lookup"><span data-stu-id="c3869-118">In the **Parameters** section, select how many work orders should be created.</span></span> <span data-ttu-id="c3869-119">Du kan skapa en arbetsorder per underhållsschemarad eller ett antal arbetsorder utifrån dina val i avsnittet **En arbetsorder per**.</span><span class="sxs-lookup"><span data-stu-id="c3869-119">You can create one work order per maintenance schedule line, or a number of work orders based on your selections in the **One work order per** section.</span></span>
+1. <span data-ttu-id="4c81e-122">Markera kryssrutan i rutnätet för varje planerat underhållsjobb som du vill skapa en arbetsorder för.</span><span class="sxs-lookup"><span data-stu-id="4c81e-122">In the grid, select the check box for every scheduled maintenance job that you want to create a work order for.</span></span> <span data-ttu-id="4c81e-123">Välj **Arbetsorder** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="4c81e-123">Then, on the Action Pane, select **Work order**.</span></span>
 
-4. <span data-ttu-id="c3869-120">Välj en **arbetsordertyp** som ska användas på alla arbetsorder som du skapar.</span><span class="sxs-lookup"><span data-stu-id="c3869-120">Select a **Work order type** that will be used on all the work orders you create.</span></span> <span data-ttu-id="c3869-121">Illustrationen nedan visar ett exempel på dialogrutan **Skapa arbetsorder**.</span><span class="sxs-lookup"><span data-stu-id="c3869-121">The illustration below shows an example of the **Create work orders** dialog.</span></span>
+    <span data-ttu-id="4c81e-124">Dialogrutan **Skapa arbetsorder** visas.</span><span class="sxs-lookup"><span data-stu-id="4c81e-124">The **Create work orders** dialog box appears.</span></span> <span data-ttu-id="4c81e-125">Det totala antalet prognostimmar för de valda raderna visas i fältet **Prognostimmar för underhåll**.</span><span class="sxs-lookup"><span data-stu-id="4c81e-125">The **Maintenance forecast hours** field shows the total number of forecast hours for the selected lines.</span></span>
 
-![Figur 1](media/18-preventive-maintenance.png)
+    ![Dialogrutan Skapa arbetsorder](media/18-preventive-maintenance.png)
 
-5. <span data-ttu-id="c3869-123">Klicka på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c3869-123">Click **OK**.</span></span> <span data-ttu-id="c3869-124">En eller flera arbetsorder skapas.</span><span class="sxs-lookup"><span data-stu-id="c3869-124">One or more work orders are created.</span></span>
+1. <span data-ttu-id="4c81e-127">I avsnittet **Parametrar** ange antalet arbetsorder som ska skapas.</span><span class="sxs-lookup"><span data-stu-id="4c81e-127">In the **Parameters** section, specify the number of work orders that should be created.</span></span> <span data-ttu-id="4c81e-128">Välj ett av följande alternativ:</span><span class="sxs-lookup"><span data-stu-id="4c81e-128">Select one of the following options:</span></span>
 
+    - <span data-ttu-id="4c81e-129">**En arbetsorder per rad** – Skapa en arbetsorder per underhållsplansrad.</span><span class="sxs-lookup"><span data-stu-id="4c81e-129">**One work order per line** – Create one work order per maintenance schedule line.</span></span>
+    - <span data-ttu-id="4c81e-130">**En arbetsorder per** – Skapa arbetsorder som grupperas enligt inställningarna för de andra alternativen som blir tillgängliga när du väljer det här alternativet.</span><span class="sxs-lookup"><span data-stu-id="4c81e-130">**One work order per** – Create work orders that are grouped according to the settings of the other options that become available when you select this option.</span></span>
+
+1. <span data-ttu-id="4c81e-131">Välj vilken arbetsordertyp som ska användas för alla arbetsorder som du skapar i fältet **Typ av arbetsorder**.</span><span class="sxs-lookup"><span data-stu-id="4c81e-131">In the **Work order type** field, select the work order type to use for all the work orders that you create.</span></span>
+1. <span data-ttu-id="4c81e-132">Välj **OK** för att skapa arbetsorder i enlighet med dina inställningar.</span><span class="sxs-lookup"><span data-stu-id="4c81e-132">Select **OK** to create the work orders according to your settings.</span></span>
+
+## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a><span data-ttu-id="4c81e-133">Gruppera arbetsorderrader som skapas automatiskt när en underhållsplan körs</span><span class="sxs-lookup"><span data-stu-id="4c81e-133">Group work order lines that are automatically created while a maintenance plan runs</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="4c81e-134">Funktionen som beskrivs i det här avsnittet är tillgänglig som en del av en förhandsversion.</span><span class="sxs-lookup"><span data-stu-id="4c81e-134">The functionality that is described in this section is available as part of a preview release.</span></span> <span data-ttu-id="4c81e-135">Funktionen och dess innehåll kan ändras.</span><span class="sxs-lookup"><span data-stu-id="4c81e-135">The content and the functionality are subject to change.</span></span> <span data-ttu-id="4c81e-136">Mer information om förhandsversioner finns i [Frågor och svar om tjänstuppdateringar för en version](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).</span><span class="sxs-lookup"><span data-stu-id="4c81e-136">For more information about preview releases, see [One version service updates FAQ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).</span></span>
+
+<span data-ttu-id="4c81e-137">Med hjälp av den här funktionen kan du definiera regler för gruppering av arbetsorderrader under en enskild arbetsorder när systemet är inställt på att generera arbetsorder automatiskt, baserat på en underhållsplan.</span><span class="sxs-lookup"><span data-stu-id="4c81e-137">This feature lets you define rules for grouping work order lines under a single work order when the system is set up to generate work orders automatically, based on a maintenance plan.</span></span> <span data-ttu-id="4c81e-138">Tidigare kunde automatiskt genererade arbetsorder bara innehålla en rad.</span><span class="sxs-lookup"><span data-stu-id="4c81e-138">Previously, automatically generated work orders could contain only one line.</span></span> <span data-ttu-id="4c81e-139">Du kan nu dock gruppera arbetsorder efter till exempel tillgång, tillgångstyp eller funktionell plats.</span><span class="sxs-lookup"><span data-stu-id="4c81e-139">However, you can now group work orders by, for example, asset, asset type, or functional location.</span></span> <span data-ttu-id="4c81e-140">(Manuellt genererade arbetsorder kan redan grupperas på det här sättet, på det sätt som beskrivs i det föregående avsnittet av det här avsnittet.)</span><span class="sxs-lookup"><span data-stu-id="4c81e-140">(Manually generated work orders could already be grouped in this way, as described in the previous section of this topic.)</span></span>
+
+### <a name="enable-grouping-for-automatically-generated-work-orders"></a><span data-ttu-id="4c81e-141">Aktivera gruppering för automatiskt genererade arbetsorder</span><span class="sxs-lookup"><span data-stu-id="4c81e-141">Enable grouping for automatically generated work orders</span></span>
+
+<span data-ttu-id="4c81e-142">Innan du kan använda den här funktionen den aktiveras i ditt system.</span><span class="sxs-lookup"><span data-stu-id="4c81e-142">Before you can use this feature, it must be turned on in your system.</span></span> <span data-ttu-id="4c81e-143">Administratörer kan använda inställningarna [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den.</span><span class="sxs-lookup"><span data-stu-id="4c81e-143">Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on.</span></span> <span data-ttu-id="4c81e-144">I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:</span><span class="sxs-lookup"><span data-stu-id="4c81e-144">In the **Feature management** workspace, the feature is listed in the following way:</span></span>
+
+- <span data-ttu-id="4c81e-145">**Modul:** *Tillgångshantering*</span><span class="sxs-lookup"><span data-stu-id="4c81e-145">**Module:** *Asset Management*</span></span>
+- <span data-ttu-id="4c81e-146">**Funktionens namn:** *(förhandsversion) Använd regler för att gruppera arbetsorder när du kör en underhållsplan*</span><span class="sxs-lookup"><span data-stu-id="4c81e-146">**Feature name:** *(Preview) Apply rules for grouping work orders while running a maintenance plan*</span></span>
+
+### <a name="set-up-grouping-for-automatically-generated-work-orders"></a><span data-ttu-id="4c81e-147">Ange gruppering för automatiskt genererade arbetsorder</span><span class="sxs-lookup"><span data-stu-id="4c81e-147">Set up grouping for automatically generated work orders</span></span>
+
+<span data-ttu-id="4c81e-148">Ange gruppering för automatiskt genererade arbetsorder med följande steg.</span><span class="sxs-lookup"><span data-stu-id="4c81e-148">To set up grouping for automatically generated work orders, follow these steps.</span></span>
+
+1. <span data-ttu-id="4c81e-149">Gå till **Tillgångshantering \> Inställning \> Förebyggande underhåll \> Underhållsplaner**.</span><span class="sxs-lookup"><span data-stu-id="4c81e-149">Go to **Asset management \> Setup \> Preventative maintenance \> Maintenance plans**.</span></span>
+1. <span data-ttu-id="4c81e-150">Följ de här stegen för varje plan där du vill generera grupperade arbetsorder:</span><span class="sxs-lookup"><span data-stu-id="4c81e-150">For each plan where you want to generate grouped work orders, follow these steps:</span></span>
+
+    1. <span data-ttu-id="4c81e-151">Välj planen i listfönstret.</span><span class="sxs-lookup"><span data-stu-id="4c81e-151">Select the plan in the list pane.</span></span>
+    1. <span data-ttu-id="4c81e-152">På snabbflikarna **Rader** kontrollerar du att kryssrutan **Skapa automatiskt** har markerats på varje rad.</span><span class="sxs-lookup"><span data-stu-id="4c81e-152">On the **Lines** FastTab, make sure that the **Auto create** check box is selected on every line.</span></span>
+
+1. <span data-ttu-id="4c81e-153">Gå till **Tillgångshantering \> Periodisk \> Förebyggande underhåll \> Schemalägg underhållsplaner**.</span><span class="sxs-lookup"><span data-stu-id="4c81e-153">Go to **Asset management \> Periodic \> Preventive maintenance \> Schedule maintenance plans**.</span></span>
+1. <span data-ttu-id="4c81e-154">Ange tidshorisont för planen i dialogrutan **Schemaunderhållsplaner** i avsnittet **Period** (hur långt du kan se framåt när du söker efter planerade underhållsjobb som genererar arbete).</span><span class="sxs-lookup"><span data-stu-id="4c81e-154">In the **Schedule maintenance plans** dialog box, in the **Period** section, specify the time horizon for the plan (how far to look ahead when finding scheduled maintenance jobs to generate work for).</span></span>
+1. <span data-ttu-id="4c81e-155">Ställ in alternativet **Skapa arbetsorder automatiskt från schema** till *Ja*.</span><span class="sxs-lookup"><span data-stu-id="4c81e-155">Set the **Automatically create work order from schedule** option to *Yes*.</span></span>
+1. <span data-ttu-id="4c81e-156">Välj ett av följande alternativ i området **Arbetsorder**:</span><span class="sxs-lookup"><span data-stu-id="4c81e-156">In the **Work order** section, select one of the following options:</span></span>
+
+    - <span data-ttu-id="4c81e-157">**En arbetsorder per rad** – Skapa en arbetsorder per underhållsplansrad.</span><span class="sxs-lookup"><span data-stu-id="4c81e-157">**One work order per line** – Create one work order per maintenance schedule line.</span></span> <span data-ttu-id="4c81e-158">(Det här alternativet ger samma funktion som är tillgänglig när funktionen *Använd regler för att gruppera arbetsorder när du kör en underhållsplan* är avaktiverad.)</span><span class="sxs-lookup"><span data-stu-id="4c81e-158">(This option provides the same functionality that is available when the *Apply rules for grouping work orders while running a maintenance plan* feature is turned off.)</span></span>
+    - <span data-ttu-id="4c81e-159">**En arbetsorder per** – Skapa arbetsorder som grupperas enligt inställningarna för de andra alternativen som blir tillgängliga när du väljer det här alternativet.</span><span class="sxs-lookup"><span data-stu-id="4c81e-159">**One work order per** – Create work orders that are grouped according to the settings of the other options that become available when you select this option.</span></span>
+
+1. <span data-ttu-id="4c81e-160">Om du vill att alternativen ska gälla när du bara kör några av dina underhållsplaner, på snabbfliken **Poster att inkludera** lägg till filter du vill ha som med andra batchjobb i Microsoft Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="4c81e-160">If you want the options to apply when you run only some of your maintenance plans, on the **Records to include** FastTab, add filters as you require, just as you might do for other batch jobs in Microsoft Dynamics 365 Supply Chain Management.</span></span>
+1. <span data-ttu-id="4c81e-161">På snabbfliken **Kör i bakgrunden** ställer du in alternativ för batch och tidsplanering efter behov, på samma sätt som du kan göra för andra batchjobb i Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="4c81e-161">On the **Run in the background** FastTab, set up batch and scheduling options as you require, just as you might do for other batch jobs in Supply Chain Management.</span></span>
+1. <span data-ttu-id="4c81e-162">Välj **OK** för att köra och/eller planera de valda underhållsplanerna.</span><span class="sxs-lookup"><span data-stu-id="4c81e-162">Select **OK** to run and/or schedule the selected maintenance plans.</span></span>
