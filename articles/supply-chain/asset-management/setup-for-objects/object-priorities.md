@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35e7a55b1ba230be6bb72b20fcd805ea061b648e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 83b195add44927d847491e6394e72637323117b3
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437576"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021639"
 ---
 # <a name="asset-service-levels"></a>Tillgångs tjänstenivå
 
@@ -53,6 +52,3 @@ Mer information om den inställning som är relaterad till beräkningen av bedö
 
 > [!NOTE]
 > Om du ändrar en tillgångs tjänstenivåpost på sidan **tillgångs tjänstenivåer** när du redan har använt den på en arbetsorder, uppdateras tjänstenivån på underhållsbegäran och arbetsorder inte i enlighet med detta.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

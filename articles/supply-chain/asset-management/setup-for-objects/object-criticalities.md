@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetCriticality, EntAssetObjectCriticality
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b7d6e3dea1b3c1ef47490df678f639c036cdd5c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c9d2c5e8b6676abf03fe0d3de8b23f125713d6f2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4437578"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021714"
 ---
 # <a name="asset-criticality-types"></a>Allvarlighetsgradtyper för tillgång
 
@@ -62,6 +61,3 @@ Om du vill ställa in allvarlighetsgrad kan du först skapa allvarlighetsgradtyp
 - Allvarlighetsgraden på en arbetsorder beräknas om varje gång en arbetsorderrad läggs till eller tas bort från arbetsordern.
 - Om en arbetsorder innehåller flera arbetsorderjobb, används alltid den högsta allvarlighetsgraden enligt fältet **faktor** på sidan **allvarlighetsgradtyper** på arbetsordern.
 - I allmänhet kan tillgångens allvarlighetsgrad ändras under en period. Allvarlighetsgrad kan påverkas av inköp av ny utrustning, renoveringar, och så vidare. Överväg att omvärdera din tillgångs allvarlighetsgrad med jämna mellanrum (till exempel en gång per år eller vartannat år) för att se till att dina allvarlighetsgraddefinitioner matchar din aktuella produktionsinställning.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
