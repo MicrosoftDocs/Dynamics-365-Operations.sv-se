@@ -72,3 +72,6 @@ I vyn **Orderrader för lagerställe** kan du övervaka förloppet för inkomman
 
 - Gå till **Hantering av distributionslager \> Förfrågningar och rapporter \> Orderrader för lagerställe** och använd filtret för att hitta de rader du letar efter.
 - Gå till **Anskaffning och källa \> Inköpsorder \> Alla inköpsorder** och öppna relevant inköpsorder. I avsnittet **Inköpsorderrader**, markera en eller flera rader och välj sedan **lagerställe \> Inleveransposter för lagerställe** i verktygsfältet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

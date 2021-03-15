@@ -39,3 +39,6 @@ I den här proceduren visas hur du visar orsaker till höga produktionsavvikelse
 6. Klicka på Visa kostnadsjämförelse.
 7. Klicka på Stäng.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

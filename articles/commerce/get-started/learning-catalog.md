@@ -140,3 +140,6 @@ Hitta rätt onlineutbildning, i personliga workshops och evenemang för din roll
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

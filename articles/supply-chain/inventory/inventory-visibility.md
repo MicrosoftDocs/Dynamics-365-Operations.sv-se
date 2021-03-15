@@ -527,3 +527,6 @@ Frågorna som visas i föregående exempel kan returnera resultatet.
 ```
 
 Observera att kvantitetsfälten är strukturerade som en ordlista med mått och tillhörande värden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ En orderspecifik strukturlisteberäkning är en variant på en strukturlisteber�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

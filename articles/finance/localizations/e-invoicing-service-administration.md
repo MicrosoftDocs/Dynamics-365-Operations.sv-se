@@ -138,3 +138,6 @@ Miljön måste konfigureras i fliken **Överföringstjänster** på sidan **Para
 
 - [Konfigurera elektroniska fakturor i RCS](e-invoicing-configuration-rcs.md)
 - [Utfärda elektroniska fakturor i Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

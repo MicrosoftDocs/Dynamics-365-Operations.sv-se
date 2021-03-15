@@ -141,3 +141,6 @@ Hämta och installera mobilappen Finance and Operations.
 4.  Välj kunden.
 5.  Välj **Kontaktinformation** eller **Försäljningsorder**. Om du väljer **Försäljningsorder** visas en lista över försäljningsorder för kunden.
 6.  Välj **Försäljningsorder**. Du kan nu visa information om försäljningsorderrader, information om leveranser, kundkontaktinformation och kontaktinformation för ordermottagaren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

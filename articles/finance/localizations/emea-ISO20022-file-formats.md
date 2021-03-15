@@ -128,3 +128,6 @@ Mer information om elektronisk rapportering finns i [översikt över elektronisk
 - [Ställ in ett betalsätt för ISO20022-kreditöverföringar](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Ställ in ett betalsätt för ISO20022-autogiro](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Ställ in leverantörer och leverantörsbankkonton för ISO20022-krediteringsöverföringar](./tasks/set-up-vendor-iso20022-credit-transfers.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

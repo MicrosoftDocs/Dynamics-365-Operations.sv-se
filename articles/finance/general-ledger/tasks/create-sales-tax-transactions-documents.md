@@ -59,3 +59,6 @@ Moms på dokument beräknas genom att ange en momsgrupp, och en artikelmomsgrupp
 29. Klicka på Moms.
 30. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

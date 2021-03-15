@@ -70,3 +70,6 @@ Skriv upp kundnumren och artikelnumret du har valt för provisionsprocessen, och
 3. Stäng sidan.
 4. Välj **Verifikation**. Du kan granska de verifikationstransaktionerna för provisionsbeloppen som har bokförts på de fördefinierade kontona för provisionsutgiften och provisionsskulden.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

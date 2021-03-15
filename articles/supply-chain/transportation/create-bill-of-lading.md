@@ -42,3 +42,6 @@ Om det finns mer än en leverans i en last kan du skapa en huvudfraktsedel. Denn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -101,3 +101,6 @@ Du kan skapa försäkringsbrev och garantier på sidan **alla kunder** (**kundre
     I det här fallet är den effektiva kreditgränsen 125 000 (= A + \[B × C\]).
     
     Om du däremot markerar kryssrutan **inkluderad i exponering** tas värdet **Uppdatera kreditgräns** på 50 000 (= 50,00 procent av 100 000) bort och exponeringsvärdet är 75 000 (= A + \[B × C\] – B).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

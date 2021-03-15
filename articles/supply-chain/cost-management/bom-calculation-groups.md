@@ -97,3 +97,6 @@ Du kan definiera flera beräkningsgrupper för strukturlistor, beroende på dina
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Det här avsnittet innehåller information om hur du skapar periodiseringsschema
 10. Ange ett värde i fältet **Antal förekomster per period**.
 11. I fältet **Bokför transaktioner** väljer du när transaktionerna ska bokföras, till exempel **Varje månad**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Information om hur du konfigurerar modulen värderingar och recensioner på prod
 [Konfigurera klassificeringar och recensioner av moduler på produktinformationssidor](ratings-reviews-modules.md)
 
 [Synkronisera produktklassificeringar i Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

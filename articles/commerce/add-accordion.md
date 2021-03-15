@@ -86,3 +86,6 @@ Om du vill lägga till en dragspelsmodul på en sida för vanliga frågor och st
 [Flikmodul](add-tab.md)
 
 [Textblockmodul](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

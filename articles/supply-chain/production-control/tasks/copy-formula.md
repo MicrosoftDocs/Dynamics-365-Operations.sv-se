@@ -64,3 +64,6 @@ Den här proceduren fokuserar på att skapa en formel som innehåller samma ingr
 5. Klicka på Välj.
 6. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

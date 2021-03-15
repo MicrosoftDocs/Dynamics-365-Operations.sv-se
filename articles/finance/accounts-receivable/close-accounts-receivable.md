@@ -61,3 +61,6 @@ Skapa och skicka EU-försäljningslistan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

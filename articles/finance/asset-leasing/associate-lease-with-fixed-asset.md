@@ -53,3 +53,6 @@ Anläggningstillgången kan nu skrivas av med hjälp av standardavskrivningsfunk
 
 > [!NOTE]
 > Om du associerar en anläggningstillgång med en leasing inaktiveras knapparna **Avskrivning av tillgång** och **Leasingnedskrivning** i Leasing av tillgångar. Du kan visa tillgångsavskrivningar och transaktioner för leasingnedskrivning från Anläggningstillgångar. Knappen **Transaktioner för tillgångar**, som öppnar ett frågeformulär inaktiveras också. Du kan också öppna föreformuläret **Transaktioner för tillgångar** i Anläggningstillgångar.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

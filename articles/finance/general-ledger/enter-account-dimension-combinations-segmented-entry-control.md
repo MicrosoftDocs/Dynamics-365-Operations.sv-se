@@ -113,3 +113,6 @@ I följande tabell beskrivnings av kortkommandona som kan användas när söknin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

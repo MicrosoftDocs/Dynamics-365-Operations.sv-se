@@ -81,3 +81,6 @@ Fram till dess att Microsoft har frisläppt en lösning på problemet kan du öv
 - Undvika decimalvärden i standardkostnaden. Försök att definiera standardkostnaden så att fältet **Priskvantitet** sätts till *1*. Om du måste ange ett värde för **priskvantitet** som är mer än *1*, försöker du minimera antalet decimaler i enhetens standardkostnad. (Helst bör det finnas färre än två decimaler.) Undvik till exempel att definiera standardkostnadsinställningar som **Pris** = *10* och **Priskvantitet** = *3*, eftersom de skapar en enhetsstandardkostnad på 3,333333 (där decimalvärdet upprepas).
 - Undvik att ha flera rader som innehar samma kombination av produkt och ekonomiska lagerdimensioner i en majoritet av dokumenten.
 - Minska parallelliseringsgraden. (I så fall kanske ditt system snabbare, eftersom färre uppdateringskonflikter och nya försök görs.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

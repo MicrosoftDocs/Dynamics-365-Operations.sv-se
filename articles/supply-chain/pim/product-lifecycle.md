@@ -108,3 +108,6 @@ Använd följande kriterier för att välja och uppdatera frisläppta produkter 
 - [Tilldela ett produktlivscykeltillstånd för en frisläppt produkt](tasks/product-lifecycle-state-released-product.md)
 - [Söka efter föråldrade produktvarianter och tilldela ett produktlivscykeltillstånd](tasks/obsolete-product-variants.md)
 - [Skapa ett produktlivscykeltillstånd för att utesluta produkter från huvudplanering](tasks/exclude-products-master-planning.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -138,3 +138,6 @@ Kassarabattbeloppet reduceras från 10,50 till 10,00. Betalningen och fakturan a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

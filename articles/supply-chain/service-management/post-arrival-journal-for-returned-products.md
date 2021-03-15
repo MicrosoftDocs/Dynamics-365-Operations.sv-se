@@ -57,3 +57,6 @@ När journalen har bokförts registreras de returnerade artiklarna i lagret och 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

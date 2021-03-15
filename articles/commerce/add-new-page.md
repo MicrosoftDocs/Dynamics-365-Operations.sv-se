@@ -92,3 +92,6 @@ Gör så här om du vill lägga till en ny webbplatssida till din webbplats:
 [Kontrollera tillgängligheten för sidinnehåll](verify-accessibility.md)
 
 [Skapa dynamiska näthandelssidor baserade på URL-parametrar](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

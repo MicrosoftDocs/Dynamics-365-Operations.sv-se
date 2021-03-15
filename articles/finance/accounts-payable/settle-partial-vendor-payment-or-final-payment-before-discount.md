@@ -141,3 +141,6 @@ April bokför betalningsjournalen och granskar leverantörstransaktioner på sid
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

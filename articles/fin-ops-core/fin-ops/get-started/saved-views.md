@@ -224,3 +224,6 @@ För sidor med stora visningsväljare (anpassningar och frågor kan sparas i vyn
 
 - Om du navigerar från en panel till en sida, körs frågan oavsett vilken fråga som är kopplad till standardvyn. Om du har skapat den panelen efter att vyer har aktiverats öppnas sidan med den vy som är kopplad till den panelen.
 - Om du navigerar till en sida och den startpunkten inkluderar en fråga kommer den ursprungliga frågan att köras ursprungligen i stället för standardvyfrågan. Du bör varnas när detta sker via via ett informationsmeddelande visas när vyn läses in. Du kan också bekräfta genom att växla till den här vyn efter att sidan har lästs in, eftersom det gör att vyfrågan körs oavsett.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

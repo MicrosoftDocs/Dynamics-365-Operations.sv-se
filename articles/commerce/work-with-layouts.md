@@ -108,3 +108,6 @@ När du har förhandsgranskat ändringarna i din förinställda layout gör du f
 [Översikt över mallar och layouter](templates-layouts-overview.md)
 
 [Arbeta med mallar](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

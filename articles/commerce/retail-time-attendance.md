@@ -138,3 +138,6 @@ En Commerce-användare följer arbetsgången för att beräkna, godkänna och ö
 - Registrera frånvaro
 
 Läs mer om hur du bearbetar registreringar för tid och närvaro i [Bearbeta registreringar för tid och närvaro](https://technet.microsoft.com/library/aa573180.aspx).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

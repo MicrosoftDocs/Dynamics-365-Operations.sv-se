@@ -66,3 +66,6 @@ I bilden nedan visas ett exempel på funktionsprofil online.
 [Ställa in en butikskanal](channel-setup-retail.md)
 
 [Ställa in en kundtjänstkanal](channel-setup-callcenter.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Den här uppgiftsguiden överför den ekonomiska informationen för en tillgång
     * Granska resultaten innan du överför tillgångsförteckningarna.  
 10. Klicka på **Överför**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

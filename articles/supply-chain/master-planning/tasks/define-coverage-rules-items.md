@@ -101,3 +101,6 @@ Det demonstrationsdataföretag som används för att skapa den här proceduren �
 11. Ange "5" i fältet **Inköpstid**.
 12. Klicka på **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

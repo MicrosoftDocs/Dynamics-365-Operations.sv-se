@@ -46,3 +46,6 @@ I den här proceduren visas hur du ställer in och planerar en lastkajstidpunkt 
 6. Klicka på Spara.
 7. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -208,3 +208,6 @@ I guiden anges följande värden för Contoso återförsäljare:
     - **Svar:** "Ja, enligt definitionen i den här huvudplanen." **1 dag** anges.
 
     Contoso använder godkända rekvisitioner från sina butiker för att skapa planerade inköpsorder för att fylla på dessa butiker. Eftersom huvudplaneringen körs varje dag inkluderas rekvisitionerna från den sista dagen i planeringen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

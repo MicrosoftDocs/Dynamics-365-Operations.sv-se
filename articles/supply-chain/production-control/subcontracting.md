@@ -302,3 +302,6 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
     ![Kostnadsjämförelsediagram](./media/subcontract35_cost-comparison-charts.png)
 
 Inställning saknas i data.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

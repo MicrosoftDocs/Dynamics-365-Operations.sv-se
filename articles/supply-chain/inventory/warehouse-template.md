@@ -97,3 +97,6 @@ Om du vill veta mer om hur du använder lagermallar för att kopiera konfigurati
 ## <a name="related-topic"></a>Relaterat ämne
 
 [Konfigurationsdatamallar](../../dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

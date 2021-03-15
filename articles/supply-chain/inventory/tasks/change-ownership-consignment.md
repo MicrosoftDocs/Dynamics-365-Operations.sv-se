@@ -54,3 +54,6 @@ I den här proceduren visas hur du ändrar ägaren till försändelselagret, fr�
 2. Klicka på OK.
 3. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

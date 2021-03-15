@@ -54,3 +54,6 @@ Den här uppgiften vägleder dig genom stegen för att skapa en enhetsbaserad ek
 9. Skriv ett namn som beskriver det ekonomiska dimensionsvärdet i fältet **Dimensionsvärde**.
 10. Skriv en **beskrivning** som beskriver den ekonomiska dimensionens värde i fältet Beskrivning.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

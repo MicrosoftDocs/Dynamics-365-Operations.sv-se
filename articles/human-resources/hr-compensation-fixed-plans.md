@@ -98,3 +98,6 @@ Nu kan du koppla en medarbetare till en plan för fast kompensation. Öppna sida
 
 Systemet kontrollerar att kompensationsbeloppet som anges för en kompensationsplan av typen grad eller band ligger mellan minimi- och maximireferenspunkterna för en viss kompensationsnivå på medarbetarens jobb. Om kompensationsbeloppet ligger utanför det tillåtna intervallet, visas ett felmeddelande eller varningsmeddela, beroende på den toleransnivå som anges i planen för fast kompensation.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

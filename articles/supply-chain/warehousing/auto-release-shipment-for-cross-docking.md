@@ -178,3 +178,6 @@ Observera att följande inträffar:
 - Frisläppningen till ett lagerställe utlöses för den kopplade försäljningsordern.
 - Baserat på frisläppning skapas leverans och direktleverans. Detta arbete instruerar lageroperatören att plocka de kvantiteter som krävs för att uppfylla försäljningsorderraden och placera dem på den utgående plats som har angetts i direktivet för direktleveransplats.
 - Om kvantiteten för tillverkningsorder är mer än den kvantitet som krävs för försäljningsordern skapas regelbundet artikelinförselarbete. Detta arbete instruerar lageroperatören att plocka den mängd färdiga varor som återstår efter direktleverans och flytta den till vanlig lagring, enligt det platsdirektiv som används.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

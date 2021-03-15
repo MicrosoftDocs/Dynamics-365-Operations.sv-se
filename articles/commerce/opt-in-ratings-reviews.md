@@ -63,3 +63,6 @@ Om du vill använda värderingar och recensioner på webbplatsen följer du steg
 [Synkronisera produktklassificeringar i Dynamics 365 Commerce](sync-product-ratings.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

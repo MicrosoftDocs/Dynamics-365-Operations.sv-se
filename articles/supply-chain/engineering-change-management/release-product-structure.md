@@ -159,3 +159,6 @@ Det här problemet gäller bara när en produkt väljs direkt för frisläppning
 Produktens X tilldelas till exempel produktens ägargruppen *Designa skåp*. Produkt X ingår även i strukturlistan för produkt Y, som tilldelas produktägargruppen *Designa högtalare*. Om en användare från en produktägargrupp *Designa högtalare* frisläpper produkt Y och dess strukturlista, frisläpps produkt X tillsammans med produkt Y.
 
 Mer information finns i [Produktägare](product-owner.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

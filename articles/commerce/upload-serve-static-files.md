@@ -105,3 +105,6 @@ För att ändra URL-sökväg, följ stegen nedan.
 [Beskär bilder](dam-crop-images.md)
 
 [Anpassa bildens fokuspunkter](dam-custom-focal-point.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

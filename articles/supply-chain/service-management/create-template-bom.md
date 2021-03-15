@@ -110,3 +110,6 @@ En ny strukturlistemall skapas med hjälp av rader motsvarande raderna i den str
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

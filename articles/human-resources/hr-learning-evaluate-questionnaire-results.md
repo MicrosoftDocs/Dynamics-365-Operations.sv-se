@@ -72,3 +72,5 @@ Du kan använda enkätstatistik om du vill analysera resultaten i en ifylld enk�
 -   Välj eller verifiera kriterier för att analysera resultaten efter svarande- eller enkätegenskaper. Om du väljer till exempel **Postnummer**, kan du analysera korrelationen mellan den svarandes plats och rätta svar.
 
 Inställningar som du definierar sparas så att du kan använda den för att regelbundet räkna om resultat.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

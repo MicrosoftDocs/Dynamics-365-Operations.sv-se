@@ -276,3 +276,6 @@ Momsrapporten för varje land måste uppfylla kraven i landets lagstiftning. Det
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

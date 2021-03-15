@@ -81,3 +81,6 @@ Om du vill använda lösningen Potentiell kund till kontanter måste du installe
 
 - Dynamics 365 Sales, version 1612 (8.2.1.207) (DB 8.2.1.207) online eller en senare version.
 - Lösningen Potentiell kund till kontanter för Dynamics 365 Sales, version 1.15.0.0 eller senare. Lösningen finns att hämta från AppSource. [Hämta Dynamics 365, potentiell kund till kontanter](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

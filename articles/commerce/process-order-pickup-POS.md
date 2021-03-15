@@ -57,3 +57,6 @@ Om du måste ändra upphämtningskvantiteten efter det att du har valt artiklarn
 Om funktionen **Förbättra användarupplevelsen för upphämtning av order i kassan** är aktiverad, kan organisationer lägga till en knapp för åtgärden **Ändras upphämtningsrader** på transaktionens skärmlayout. När du har skapat kundvagnen för upphämtningstransaktion i POS och valt artiklar kan du välja **Ändra upphämtningsrader** om du måste ändra hämtningsartiklar men inte vill annullera hela transaktionen. I dialogrutan **Ändra upphämtningsrader** som visas, kan du ändra upphämtningsartiklarna och kvantiteterna. Transaktionsvagnen uppdateras sedan efter dina ändringar.
 
 ![Ändra dialogrutan Upphämtningsartiklar](media/pickupchange.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

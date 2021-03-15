@@ -201,3 +201,6 @@ Om du vill konsolidera godkända inköpsrekvisitionsrader, följ dessa steg:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

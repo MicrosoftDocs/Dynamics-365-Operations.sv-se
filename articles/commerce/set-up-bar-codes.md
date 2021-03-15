@@ -46,3 +46,6 @@ Du kan skapa streckkoder manuellt eller automatiskt. Slutför följande uppgifte
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ställa in streckkodsmasker](set-up-bar-code-masks.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -207,3 +207,6 @@ Taäckningsinformation för medarbetarens beroenden visas.
 
 > [!NOTE]
 > På sidan visas endast förmånsplaner som är markerade som **pliktiga för sjukförsäkring**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -293,3 +293,6 @@ I det här avsnittet finns en lista över kända problem för den nya rutnätsko
 ### <a name="quality-update-for-1009platform-update-33"></a>Kvalitetsuppdatering för 10.0.9/plattformsuppdatering 33
 
 - [KB 4550367] Tidsvärden formateras inte korrekt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

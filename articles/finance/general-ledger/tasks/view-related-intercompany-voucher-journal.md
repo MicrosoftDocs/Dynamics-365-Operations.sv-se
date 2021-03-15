@@ -53,3 +53,6 @@ Fönstret Relaterad verifikation visar verifikationen från motkontots företag 
 3. Markera vald rad i listan.
 4. Klicka på Verifikation.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

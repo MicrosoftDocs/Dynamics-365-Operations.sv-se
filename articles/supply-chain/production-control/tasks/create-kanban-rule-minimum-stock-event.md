@@ -67,3 +67,6 @@ Den här proceduren fokuserar på inställningarna som krävs för att skapa en 
 5. Expandera avsnittet Kanbans.
     * Observera att en kanban skapades för att överföra det nödvändiga materialet till lagerställe 12.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

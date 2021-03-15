@@ -105,3 +105,6 @@ När du bokför ett dokument tilldelas dokumentet lämplig nummerseriegrupp base
 
 > [!NOTE]
 > För vissa länder finns det en specifik logik som redan har implementerats för dokumentnumrering. I det här fallet åsidosätter landsspecifik logik funktionen **Kronologisk numrering**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

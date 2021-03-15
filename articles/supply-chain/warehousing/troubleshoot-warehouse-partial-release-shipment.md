@@ -41,3 +41,6 @@ En försäljningsorder har till exempel två artiklar: en för leverans och en f
 ### <a name="issue-resolution"></a>Problemlösning
 
 Frisläppningsstatus gäller bara för orderrader där artiklarna är aktiverade för lagerstyrning. Därför fortsätter frisläppningsstatusen att vara *delvis släppts* i det här scenariot. Microsoft har utvärderat det här problemet och har fastställt att det är en funktionsbegränsning. Ett tillägg kan läggas till som en del av följesedeln och faktureringsprocessen för att uppdatera frisläppningsstatus.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Du kan även ange ett bekräftelsemeddelande som visas när guiden har slutfört
 4.  Öppna fliken **Länder/regioner** för att välja det land/den region som konfigurationen ska användas för.
 5.  Slutför konfigurationen genom att följa riktlinjerna för standardkonfigurationen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

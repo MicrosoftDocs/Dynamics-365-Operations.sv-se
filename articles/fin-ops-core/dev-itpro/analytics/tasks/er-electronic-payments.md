@@ -81,3 +81,6 @@ För att slutföra dessa steg måste du först slutföra stegen i proceduren "Sk
 25. Klicka på OK.
     * Analysera den skapade betalningsfilen i XML-format. Jämför den med den designade dokumentlayouten och de definierade betalningstransaktionsattributen.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

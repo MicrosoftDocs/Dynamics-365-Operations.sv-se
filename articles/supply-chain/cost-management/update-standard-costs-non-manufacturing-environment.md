@@ -51,3 +51,6 @@ Utför följande steg om du vill korrigera, justera eller uppdatera standardkost
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Artikeln är nu kopplad till serviceobjektet, och alla lagerdimensioner som ange
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

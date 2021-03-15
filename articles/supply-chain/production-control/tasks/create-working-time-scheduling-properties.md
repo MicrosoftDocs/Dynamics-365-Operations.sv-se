@@ -43,3 +43,6 @@ Planeringsegenskaper för arbetstider används när du kategoriserar arbetstidsi
 3. Ange ett värde i fältet Värde.
 4. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

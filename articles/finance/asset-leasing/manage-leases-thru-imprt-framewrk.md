@@ -82,3 +82,6 @@ Om du använder ramverket för import av leasing för att uppdatera leasingar oc
 
 1. Gå till **Leasing av tillgångar \> Ramverk för import av leasing \> Konfigurera \> Välj fält att uppdatera**.
 2. Välj de fält som ska uppdateras på sidan som visas och välj sedan den gröna pilen för att flytta dem till listan **Valda fält**. Endast fält i listan **Valda fält** kan uppdateras med hjälp av importsviten för leasing.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ I den här proceduren visas hur du skapar nya noder i en anskaffningskategorihie
 4. Välj de produkter som du vill lägga till i anskaffningskategorin.
 5. Välj pilen för att lägga till produkter till tabellen **Valda**.
 6. Välj **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

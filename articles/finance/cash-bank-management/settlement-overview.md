@@ -77,3 +77,6 @@ När du försöker kvitta en transaktion kan det hända att en symbol visas som 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Kvitta rest](settle-remainder.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

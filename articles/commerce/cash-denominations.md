@@ -51,3 +51,6 @@ Vid betalning av kontanter i POS kan användaren använda sedelbenämningar för
 
 - **Större eller lika med det förfallna beloppet** – som standard visar POS endast de sedelbenämningar som är större än beloppet som förfaller till betalning, vilket gör det möjligt för snabb genomföring av transaktionen. Om till exempel det förfallna beloppet är 7,50 visar POS följande benämningar: 10, 20, 50 och 100. Om du rör något av dessa belopp kommer försäljningaen att genomföras automatiskt för detta belopp. Sedlarna 1 och 5 visas inte eftersom dessa belopp är mindre än beloppet som förfaller.
 - **Alla benämningar** – Markera det här alternativet för att alltid visa alla sedelbenämningar i POS, oavsett hur mycket förfaller. Detta innebär att användaren kan använda en kombination av sedlar till det förfallna beloppet. Om till exempel det förfallna beloppet är 25,00 kan användaren välja 20 och 5 för att slutföra försäljningen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

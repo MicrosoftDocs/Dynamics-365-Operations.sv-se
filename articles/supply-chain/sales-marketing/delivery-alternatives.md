@@ -150,3 +150,6 @@ Den här snabbfliken markerar effekten av valt alternativ. Om du klickar på **O
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Orderlöfte](delivery-dates-available-promise-calculations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

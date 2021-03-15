@@ -76,3 +76,6 @@ Om du vill visa meddelanderäkningen på en knapp måste du kontrollera att rät
 Följande bild visar effekterna av att välja **Högst upp till höger** jämfört med **Mitten** i fältet **Innehållsjustering** för knappar med olika storlekar.
 
 ![Levande innehåll på kassaknappar](./media/ButtonsWithLiveContent.png "Levande innehåll på kassaknappar")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

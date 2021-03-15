@@ -38,3 +38,6 @@ I den här proceduren visas hur du visar kostnadsposter för ett kostnadsobjekt.
 7. Använd snabbfiltret för att filtrera fältet Nummer med värdet p000031.
     * Om kostnadsposterna är tomma ställer du in fråndatumet på 31 januari 2012 och tilldatumet på 31 december 2012.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

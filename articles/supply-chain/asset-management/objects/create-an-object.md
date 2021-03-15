@@ -115,3 +115,6 @@ På den här snabbfliken kan du lägga till eller ta bort underhållsomgångar s
 ## <a name="financial-dimensions"></a>Ekonomiska dimensioner
 
 Du kan välja ekonomiska dimensioner för den tillgången.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

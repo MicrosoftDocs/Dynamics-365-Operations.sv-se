@@ -52,3 +52,6 @@ Mer information finns i följande avsnitt:
 [Skapa ett kreditlimitavtal för en remburs](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

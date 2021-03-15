@@ -93,3 +93,6 @@ Innehållet omfattar en uppsättning rapportsidor. Sidorna består av en uppsät
 | Statistik på medarbetare | Utgiftsrapporter per kostnadstyp            |
 |                     | Privata utgifter                       |
 |                     | Utgiftsrapporter enligt statistikgrupp     |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ När du har slutfört underhålls- eller reparationsjobbet kan du registrera til
 2. Markera tillgången eller underhållsbegäran.
 3. Välj **leverera tillgångar**.
 4. I fältet **Levererad** ställer du in datum och tid. Välj sedan **OK**. Posten tas bort från listsidan **utgående tillgångar**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

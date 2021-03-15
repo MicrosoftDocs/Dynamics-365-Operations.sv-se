@@ -429,3 +429,6 @@ Här är ett exempel på en kostnadsfördelningsregel om formelallokeringsunderl
 |    CC002    |     FI      | 3,075.00  | (3 075,00 ÷ 18 162,50) × belopp  |
 |    CC003    |     LÖ      | 13,250.00 | (13 250,00 ÷ 18 162,50) × belopp |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

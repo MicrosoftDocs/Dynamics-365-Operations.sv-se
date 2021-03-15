@@ -59,3 +59,6 @@ När du använder publiceringsgrupper med experiment finns det några viktiga ö
 
 ## <a name="next-step"></a>Gå vidare
 [Köra och övervaka ett experiment](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

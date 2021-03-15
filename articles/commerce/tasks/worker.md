@@ -56,3 +56,6 @@ I den här proceduren visas hur du konfigurerar en medarbetare som en säljare s
 6. Ange eller välj ett värde i fältet Default group.
 7. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

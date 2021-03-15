@@ -61,3 +61,6 @@ Arbetstagare kan göra olika typer av registreringar i formuläret för utföran
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

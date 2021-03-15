@@ -62,3 +62,6 @@ Följande parametrar är tillgängliga:
 
 - **Antal gånger för att försöka med automatisk matchning** – Välj det antal gånger som systemet ska försöka matcha produktinleveranser mot en fakturarad innan det finner att processen misslyckades. När det angivna antalet försök har nåtts tas fakturan bort från automatiseringsbearbetningen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

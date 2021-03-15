@@ -57,3 +57,6 @@ Om du väljer beläggningstyperna **kapacitet** eller **rest** för beräkningen
 
 För information om hur du beräknar kapacitetsbelastning på underhållsscheman och inte schemalagda arbetsordrar, se [Beräkna kapacitetsbeläggning](../capacity-planning/calculate-capacity-load.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

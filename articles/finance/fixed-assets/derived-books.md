@@ -47,3 +47,6 @@ Mer information finns i [Bokföring med härledda böcker](post-derived-value-mo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

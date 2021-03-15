@@ -154,3 +154,6 @@ För närvarande stöder funktionen publiceringsgrupper endast webbplatsinnehål
 [Översikt över mallar och layouter](templates-layouts-overview.md)
 
 [Anpassa webbplatsnavigeringen](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

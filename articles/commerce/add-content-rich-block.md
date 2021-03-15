@@ -88,3 +88,6 @@ Om du vill lägga till en textblockmodul på en ny sida och ställa in de obliga
 
 [Modul för videospelare](add-video-player.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

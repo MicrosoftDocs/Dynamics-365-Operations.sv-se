@@ -43,3 +43,6 @@ Om du vill förenkla importen av dimensionsmedlemmar för kostnadsobjekt, använ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

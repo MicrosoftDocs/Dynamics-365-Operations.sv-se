@@ -64,3 +64,6 @@ Schemalägg en automatisk uppgift för att rensa historiken för batchjobb. Vi r
 
 8. Ändra övriga parametrar under **kör i bakgrunden** om det behövs och välj **OK**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Avgifterna för en tillverkad artikel inkluderas alltid i artikelns enhetskostna
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

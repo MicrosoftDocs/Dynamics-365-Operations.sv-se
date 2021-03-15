@@ -81,3 +81,6 @@ Om du vill ändra ett användar-ID måste du byta namn på nyckeln i databasen. 
 Fler alternativ för att implementera B2B-användare finns i [Exportera B2B-användare till Azure AD](../implement-b2b.md).
 
 Mer information om förkonfigurerade systemkonton finns i [Förkonfigurerade systemkonton](../pre-configured-system-accounts.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

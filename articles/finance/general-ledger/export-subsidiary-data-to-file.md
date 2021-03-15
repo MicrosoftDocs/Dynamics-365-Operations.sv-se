@@ -70,3 +70,6 @@ Använd sidan **Export** (**Systemadministration \> Arbetsytor \> Import/Export*
 5. Klicka på **OK** om du vill köra exporten.
 
 När exporten är slutförd får du ett meddelande som visar antalet poster som sparats i respektive fil. Du kan sedan importera filerna till den konsoliderade juridiska personen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

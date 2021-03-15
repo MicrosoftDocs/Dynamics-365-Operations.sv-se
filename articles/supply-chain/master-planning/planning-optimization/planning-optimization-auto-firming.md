@@ -66,3 +66,6 @@ Både planeringsoptimering och planeringsmotorn som är inbyggd i Microsoft Dyna
 - Automatisk bekräftelse baseras på behovsdatum (slutdatum).
 - För att garantera att order bekräftas i tid måste den bekräftade tidsgränsen vara längre än produktionstiden.
 - Om du vill bekräfta alla order som måste påbörjas under den aktuella veckan måste den bekräftade produktionstid plus en vecka.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

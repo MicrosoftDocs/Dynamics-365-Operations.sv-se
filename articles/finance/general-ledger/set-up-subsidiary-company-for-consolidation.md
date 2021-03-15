@@ -80,3 +80,6 @@ Oavsett om du har mappat konton eller inte ska du avmarkera kryssrutan **Använd
 
 > [!NOTE]
 > Du bör använda den här metoden när du skapar en kontoplan i den konsoliderade juridiska personen utifrån kontoplanerna i en av dotterbolagets juridiska personer. (Mer information finns i [Konsolideringskontogrupper och ytterligare konsolideringskonton](../budgeting/consolidation-account-groups-consolidation-accounts.md) .) Tilldela sedan lämplig konsolideringskonverteringsprincip till respektive konsoliderat huvudkonto och kör sedan konsolideringen för alla juridiska personer i dotterbolaget.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

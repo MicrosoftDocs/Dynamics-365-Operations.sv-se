@@ -87,3 +87,6 @@ Följande åtta uppgiftsguider listas i den ordning som du bör slutföra dem i.
 7.  [Skapa konfigurationsregler](tasks/create-configuration-rules.md)
 8.  [Skapa dimensionsbaserade konfigurationer](tasks/create-dimension-based-configurations.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

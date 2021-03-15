@@ -123,3 +123,6 @@ I följande illustration visas ett exempel på en mallmappning i dataintegrering
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

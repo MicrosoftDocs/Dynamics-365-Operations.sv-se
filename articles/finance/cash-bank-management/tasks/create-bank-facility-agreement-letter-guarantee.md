@@ -56,3 +56,6 @@ Denna uppgift skapar ett bankkreditlimitavtal för att bearbeta en garanti. I de
 5. Klicka på Spara.
 6. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

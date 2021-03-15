@@ -66,3 +66,6 @@ Innan ett register kan tillämpas på en modell för produktkonfiguration måste
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

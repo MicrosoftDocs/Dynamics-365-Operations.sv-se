@@ -102,3 +102,6 @@ Om användaren vill ta bort ett undantag, men gör ytterligare ändringar i orde
 ## <a name="reporting-options"></a>Rapporteringsalternativ
 
 Gå till **Butik och handel** \> **förfrågningar och rapporter** \> **kundtjänstrapporter** \> **Orderspärrrapport** om du vill köra en rapport om orderspärrar efter datumintervall, spärrkod eller andra relaterade kriterier.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

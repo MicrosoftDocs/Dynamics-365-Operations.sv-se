@@ -110,3 +110,6 @@ Du kan skicka meddelanden till andra personer när en automatisk uppgift har kö
     </table>
 
 8. Upprepa stegen 3 till och med 7 för varje enskild händelse du valde i steg 2.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

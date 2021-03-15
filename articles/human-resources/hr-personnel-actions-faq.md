@@ -92,3 +92,6 @@ Exempel:
 - Giltighetsdatumet i rubriken för en **Anställ arbetstagare**-åtgärd är det datum som du angett i fältet **Startdatum för anställning**.
 - Giltighetsdatumet i rubriken för en **Överför en arbetstagare**-åtgärd är det datum som du angett i fältet **Startdatum för tilldelning**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

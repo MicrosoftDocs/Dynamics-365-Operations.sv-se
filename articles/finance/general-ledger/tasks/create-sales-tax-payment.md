@@ -36,3 +36,6 @@ Med proceduren Kvitta och bokför moms kvittas momssaldon på momskontona och mo
 5. I fältet **Transaktionsdatum**, ange ett datum.
 6. Klicka på **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

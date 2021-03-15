@@ -139,3 +139,6 @@ Du kan generera rapporten **Levererade till kunder** när du vill identifiera m�
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Kan jag spåra samprodukter och biprodukter?
 Du kan spåra samprodukter, men du kan inte spåra en biprodukt eftersom spårningsdimensioner vanligtvis inte tilldelas till biprodukter. När du spårar en artikel omfattar spårningsdetaljerna alla relaterade samprodukter. En nod som innehåller en samprodukt inkluderar ordet ”samprodukt” i detaljerna. Du kan även visa information om en samprodukt genom att välja noden i spårningsdetaljerna och sedan klicka på snabbfliken **Produktion**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

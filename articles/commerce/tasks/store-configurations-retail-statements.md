@@ -48,3 +48,6 @@ Den här proceduren går igenom konfigurationer för den butik som påverkar hur
 17. Välj Ja i **Metoden dela efter utdrag** för att få utdrag skapade för varje definierad utdragsmetod. Denna åtgärd kan vara praktiskt om resultatet för bokföringen behöver förbättras för butiker med höga transaktionsvolymer, eftersom den skapar flera mindre utdrag som kan bearbetas parallellt.  
 18. I snabbfliken **Standardkund** på snabbfliken **Allmänt** kan du välja kundkontot som ska användas för försäljning till kunder som gör köp direkt i butiken.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

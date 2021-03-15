@@ -60,3 +60,6 @@ För att ta bort ett experiment i Commerce webbplatsskaparen, följ dessa steg.
 
 ## <a name="previous-step"></a>Föregående steg
 [Köra och övervaka ett experiment](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

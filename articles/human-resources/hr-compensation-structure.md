@@ -113,3 +113,6 @@ Du kan inte tilldela en fast kompensationsplan till en anställd förrän du def
 
 8. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Mer information om den inställning som är relaterad till beräkningen av bedö
 
 > [!NOTE]
 > Om du ändrar en tillgångs tjänstenivåpost på sidan **tillgångs tjänstenivåer** när du redan har använt den på en arbetsorder, uppdateras tjänstenivån på underhållsbegäran och arbetsorder inte i enlighet med detta.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

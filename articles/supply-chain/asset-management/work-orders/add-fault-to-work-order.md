@@ -79,3 +79,6 @@ Från listsidan **Alla tillgångar** kan du skriva ut en rapport över tillgång
 >[!NOTE]
 >Du kan skriva ut en felrapport för flera tillgångar eller tillgångstyper genom att klicka på **Tillgångshantering** > **Rapporter** > **Tillgångar** > **Tillgångsfel**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

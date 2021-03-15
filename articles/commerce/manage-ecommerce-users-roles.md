@@ -70,3 +70,6 @@ När webbplatsen har skapats kan bara användare som finns i de säkerhetsgruppe
 [Språkinformation för sökmotoroptimering (SEO) för din webbplats](search-engine-optimization-considerations.md)
 
 [Hantera säkerhetspolicy för innehåll (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

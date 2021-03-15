@@ -65,3 +65,6 @@ En faktura på 1000 USD med villkor för kassarabatt på 20D2% bokförs den 15 f
 > [!NOTE]
 > Om alternativet Beräkna kassarabatter för delbetalningar har valts på sidan Parametrar för kundreskontra eller sidan Parametrar för leverantörsreskontra används valutakursen som gäller på datumet för respektive delbetalning. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

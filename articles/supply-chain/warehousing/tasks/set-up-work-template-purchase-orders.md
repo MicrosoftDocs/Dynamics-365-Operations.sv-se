@@ -60,3 +60,6 @@ I det här avsnittet beskrivs hur du ställer in en enkel arbetsmall som ska anv
 6. Ange ett värde i fältet **Arbetsklass-ID**. Instruktionerna för plock och plats är en uppsättning. Varje plock/platsuppsättning måste ha samma arbetsklass. Använda samma arbetsklass som du gjorde i plockinstruktionen.  
 7. Välj **Spara**. Observera att kryssrutan **Giltig** nu är markerad.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

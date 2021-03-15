@@ -56,3 +56,6 @@ Om omedelbar lagerpåfyllnad har valts för en platsdirektivrad men inget påfyl
 
 - Kontrollera att påfyllnadsmallen för efterfrågan som används är konfigurerad till att använda rätt platsmallar och arbetsmallar för typen **Lagerpåfyllnad**.
 - Kontrollera att det inte finns tillräcklig lagerbehållning på platser där lagerpåfyllnadsmallen för efterfrågan söker efter lagerbehållning för påfyllnad.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

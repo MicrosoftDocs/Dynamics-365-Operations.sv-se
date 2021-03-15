@@ -45,3 +45,6 @@ Därför kan du skapa separata budgetar för de viktigaste transaktionskontona i
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

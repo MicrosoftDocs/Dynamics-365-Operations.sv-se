@@ -82,3 +82,6 @@ Knapparna i åtgärdsfönstret är ordnade på flikar. I följande tabell beskri
 | Fel                              | Öppna sidan **tillgångsfel** där du kan visa en lista över registreringar av tillgångsfel som är relaterade till den valda funktionsplatsen. |
 | Uppdatera funktionsplatsens tillstånd    | Uppdatera fasen för den valda funktionsplatsen                                                                                        |
 | Logg för livscykeltillstånd                 | Visa en logg som visar faser för den valda funktionsplatsen.                                                                        |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

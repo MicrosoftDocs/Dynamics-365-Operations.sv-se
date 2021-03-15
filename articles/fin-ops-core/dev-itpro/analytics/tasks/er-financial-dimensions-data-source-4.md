@@ -49,3 +49,6 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 ![Sidan ER-konfigurationer](../media/er-financial-dimensions-guides-run3.png)
     * Granska den genererade utleveransen. Ekonomiska dimensioner från den motsvarande dimensioner visas för varje transaktion i den valda batchen. Kör denna rapport och välj olika dimensioner för att se att rapporten inte är beroende av antalet valda dimensioner eller antalet dimensioner som konfigureras för denna instans.  
 ![Sidan ER-konfigurationer](../media/er-financial-dimensions-guides-run4.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

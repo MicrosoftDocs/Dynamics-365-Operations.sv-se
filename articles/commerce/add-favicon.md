@@ -98,3 +98,6 @@ När du förhandsgranskar sidor baserade på den mall som du har lagt till metat
 
 [Lägga till skriptkod på webbsidor för att stödja telemetri](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

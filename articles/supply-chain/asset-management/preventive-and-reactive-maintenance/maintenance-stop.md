@@ -96,3 +96,6 @@ Bilden nedan visar ett exempel på detaljvyn **Aktiviteter för underhållsstopp
 - Du kan kopiera resurser från en aktivitet för underhållsstopp till en annan. I **Alla aktiviteter för underhållsstopp** väljer du knappen **Kopiera aktiviteter för underhållsstopp** och gör dina urval i fälten **Från aktiviteter för underhållsstopp** och **Till aktiviteter för underhållsstopp** och klickar på **OK**.
 - I **Alla aktiviteter för underhållsstopp** klickar du på knappen **Underhållsschemarader** eller knappen **Aktiva arbetsorder** för att öppna relaterade listor och visa raderna som är relaterade till den valda aktiviteten för underhållsstopp.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

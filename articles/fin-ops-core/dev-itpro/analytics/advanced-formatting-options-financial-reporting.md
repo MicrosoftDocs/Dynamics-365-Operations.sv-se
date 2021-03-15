@@ -310,3 +310,6 @@ Ett **IF/THEN/ELSE**-utdrag gör att en beräkning är beroende av resultaten fr
 Du kan utforma rapporter med hjälp av dimensionsvärden som innehåller ett et-tecken (&).
 
 I fältet **Länk till ekonomiska dimensioner** kan du ange ett värde som **t.ex. "P&L"**. Om du inkluderar enkla citat tecken (' ') på båda sidor av dimensionsvärdet anger att du använder ett litteralt värde, t.ex. et-tecknet (&).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

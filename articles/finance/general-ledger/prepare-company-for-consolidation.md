@@ -67,3 +67,6 @@ Den konsoliderade juridiska personen har nu ställts in för det periodiska jobb
 
 > [!NOTE]
 > Innan du kan bearbeta konsolideringen måste du förbereda dotterbolagens juridiska personer för konsolidering. Mer information finns i [Skapa en juridisk person för dotterbolag för konsolidering](set-up-subsidiary-company-for-consolidation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

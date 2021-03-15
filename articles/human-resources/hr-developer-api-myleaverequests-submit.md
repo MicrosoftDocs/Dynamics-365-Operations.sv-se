@@ -108,3 +108,5 @@ Som en del av anropet till inskickade API skickar personal affärslogiken innan 
 
 - [Översikt över MyLeaveRequests](hr-developer-api-myleaverequests-overview.md)
 - [Autentisering](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

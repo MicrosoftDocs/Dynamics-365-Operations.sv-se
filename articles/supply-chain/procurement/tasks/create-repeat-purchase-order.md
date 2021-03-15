@@ -69,3 +69,6 @@ Istället för att kopiera en hel order är det mer vanligt att kopiera en ny in
 4. Välj raden för den önskade inköpsordern. Observera att även den enskilda orderraden som finns på denna inköpsorder markeras.  
 5. Välj **OK**. Den ytterligare orderraden har lagts till din inköpsorder.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

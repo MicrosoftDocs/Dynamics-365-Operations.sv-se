@@ -50,3 +50,6 @@ Följ de här stegen om du vill visa eller tilldela leasingkonventionen.
 3. Välj **Spara**.
 
 När ett leasingavtal skapas, anges startdatum för när respektive bok anges automatiskt baserat på det startdatum som angetts för leasingavtalet och den leasingkonvention som angetts för boken.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Använd den här uppgifthandbok om du vill skapa ett kravbrev sekvens. I den hä
 26. Expandera snabbfliken **Anmärkning**.
 27. Ange den text som ska visas i kravbrevet för den valda kravbrevskoden. Du kan översätta den här texten in på språk med hjälp av översättningsmenyn över anmärkningsasken.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

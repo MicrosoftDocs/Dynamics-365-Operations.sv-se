@@ -50,3 +50,6 @@ En allokeringsregel har fyra huvudsakliga komponenter – allmän, källa, desti
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ I bilden nedan visas ett exempel på funktionsprofil.
 [Översikt över skärmlayout](pos-screen-layouts.md)       
 
 [Konfigurera och installera Retail Hardware Station](retail-hardware-station-configuration-installation.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -152,3 +152,6 @@ I den här proceduren går du igenom hur du ställer in Intrastat-parametrar och
     
 Granska överförda data, inklusive destinationens/utskickets land/region, ursprungsland, vikt, kvantitet, kvantitet i ytterligare enheter, vara, transaktionskod, fakturabelopp och statistiska belopp. Du kan ändra data om det behövs.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

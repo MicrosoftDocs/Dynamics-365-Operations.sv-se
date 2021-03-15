@@ -86,3 +86,6 @@ Om du vill använda den integrerade tjänsten [Microsoft Accessibility Insights]
 [Utöka en kategorilandningssida](enrich-category-page.md)
 
 [Skapa dynamiska näthandelssidor baserade på URL-parametrar](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

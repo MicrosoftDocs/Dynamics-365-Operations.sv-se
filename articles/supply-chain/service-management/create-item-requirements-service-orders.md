@@ -71,3 +71,6 @@ Artikelbehov för serviceorder bearbetas via ett projekt. För att kunna skapa e
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

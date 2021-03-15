@@ -34,3 +34,6 @@ Gör så här när du uppgraderar till Microsoft Dynamics 365 for Operations ver
 1.  Innan du uppgraderar till Finance and Operations kör du processerna för omvärdering i utländsk valuta för Kundreskontra och Leverantörsreskontra. Ange fältet **Metod** till **Fakturadatum**. En omvärderingstransaktion skapas som återför den senaste omvärderingen i utländsk valuta. Därför värderas de öppna transaktionerna till sin ursprungliga redovisningsvaluta.
 2.  Uppgradera till version 1611.
 3.  Kör processerna för omräkning i utländsk valuta för Leverantörsreskontra och Kundreskontra Denna gång ändrar du fältet **Metod** till **Standard**. En ny omvärderingstransaktion skapas som baseras på de aktuella valutakurserna. Den här transaktionen registrerar orealiserad vinst/förlust och korrekt summeringskonto i redovisningen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

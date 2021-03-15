@@ -66,3 +66,6 @@ Som en del av karantänorderprocessen du kan kassera lagerartiklar. När du bear
 --------
 
 [Lagerspärr](inventory-blocking.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -181,3 +181,6 @@ Nedan följer några konsolideringsscenarier som Ekonomisk rapportering stöder:
 
 ## <a name="generating-consolidated-financial-statements"></a>Generera konsoliderade bokslut
 För information om scenarier där du kan skapa konsoliderade bokslut, se [skapa konsoliderade bokslut](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

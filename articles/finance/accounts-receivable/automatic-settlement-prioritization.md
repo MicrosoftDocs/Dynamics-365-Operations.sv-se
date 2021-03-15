@@ -82,3 +82,6 @@ Om det inte finns någon användardefinierad kvittningsprioritet, markeras autom
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

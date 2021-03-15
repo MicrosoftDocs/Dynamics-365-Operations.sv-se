@@ -53,3 +53,6 @@ Följ dessa steg för att ställa in dina mätvärden för framgång.
 
 ## <a name="next-step"></a>Gå vidare
 [Ansluta till och redigera ett experiment](experimentation-connect-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

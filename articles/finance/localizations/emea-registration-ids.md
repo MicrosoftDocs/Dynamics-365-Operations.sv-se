@@ -111,3 +111,6 @@ Mer information om bearbetning av registrerings-ID, inklusive erforderliga föru
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

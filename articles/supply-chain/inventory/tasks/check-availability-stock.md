@@ -59,3 +59,6 @@ Den här proceduren visar hur du kontrollerar lagerbehållning och fysisk lagerb
 5. Klicka på **OK**.
 6. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

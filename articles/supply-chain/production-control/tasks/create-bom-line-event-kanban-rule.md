@@ -82,3 +82,6 @@ Denna uppgift fokuserar på inställningen som krävs för att skapa en kanban-r
     * Observera de kanban som skapats för att leverera M0001 för den uppskattade tillverkningsordern.  
     * Detta är det sista steget!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Det demonstrationsdataföretag som används för att skapa den här proceduren �
 3. Välj **OK**.
 4. Välj **Planerade order**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

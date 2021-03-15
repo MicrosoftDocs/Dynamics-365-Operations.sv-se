@@ -203,3 +203,6 @@ Ange valideringsalternativ:
 1. På fliken **Allmänt** ange **Validering för standardorderkvantitet** till ett av följande värden:
     - **Strikt** – Välj det här alternativet om du vill se till att alla **Standardorderkvantitet** blir en multipel av det **multipla** värdet för varje snabbflik (**inköpsorder**, **lager** och **försäljningsorder**).
     - **Standard** – Välj det här alternativet om du vill använda standardvalidering (som fungerar på samma sätt som funktionen inte aktiverad).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

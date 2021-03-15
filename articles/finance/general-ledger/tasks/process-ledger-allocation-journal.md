@@ -43,3 +43,6 @@ I det här avsnittet beskrivs hur du bearbetar en begäran om tilldelning. Anvä
 9. Vald **bokföring**
 10. Vald **bokföring**
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

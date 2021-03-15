@@ -101,3 +101,6 @@ I den här proceduren visas hur du ställer in en produktnummernomenklatur för 
 43. Stäng sidan.
 44. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

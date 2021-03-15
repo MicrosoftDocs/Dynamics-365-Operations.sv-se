@@ -97,3 +97,6 @@ Hämta och installera mobilappen Finance and Operations.
 1.  Välj **Skicka beröm**. 
 1. Ange den berömtext som du vill skicka. 
 1. Välj **Klar**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

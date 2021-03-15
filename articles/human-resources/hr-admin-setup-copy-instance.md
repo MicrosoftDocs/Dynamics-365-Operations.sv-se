@@ -150,3 +150,6 @@ Mer information om anpassade fält finns i [Skapa och arbeta med anpassade fält
 [Ta bort en instans](hr-admin-setup-remove-instance.md)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

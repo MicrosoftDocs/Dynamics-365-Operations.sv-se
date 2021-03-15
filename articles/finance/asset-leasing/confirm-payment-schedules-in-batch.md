@@ -41,3 +41,6 @@ Om du vill bekräfta flera betalningsplaner följer du dessa steg.
     - Bekräfta alla böcker genom att aktivera parametern **För alla böcker**.
 
 Information för de nyligen bekräftade böckerna visas på sidan **Bekräftade böcker**. När betalningsplanerna har bekräftats kan de ursprungliga redovisningsjournalposterna bokföras mot leasingarna.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

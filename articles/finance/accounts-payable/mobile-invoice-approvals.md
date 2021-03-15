@@ -534,3 +534,6 @@ Följande ändringar kan göras för scenario 1, baserat på kraven för scenari
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

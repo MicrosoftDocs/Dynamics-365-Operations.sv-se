@@ -81,3 +81,6 @@ För att snabbt och enkelt återkalla en pausad transaktion, skanna streckkoden 
 ### <a name="void-a-suspended-transaction"></a>Annullera en pausad transaktion
 
 Du kan annullera pausade transaktioner antingen genom att återkalla transaktionen och sedan utföra operationen **Annullera transaktion**, eller genom att välja transaktionen i listan **återkalla transaktion** och välja **annullera** i appfältet. Alternativt kan butiken konfigureras för att uppmana användare att annullera pausade transaktioner när de har avslutat sina skift.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

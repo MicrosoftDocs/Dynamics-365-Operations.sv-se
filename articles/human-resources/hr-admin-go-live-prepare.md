@@ -99,3 +99,6 @@ När du har skickat in checklistan granskar din FastTrack lösningsarkitekt proj
 ## <a name="see-also"></a>Se även
 
 [Frågor och svar om publicering](hr-admin-go-live-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

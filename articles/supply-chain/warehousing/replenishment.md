@@ -78,3 +78,6 @@ Du kan applicera en omedelbar påfyllnadsstrategi istället för att behöva sam
 |   Platsdirektiv   |                                                       Platsdirektiv krävs för att dirigera arbete till de platser där påfyllnad krävs, samt till de platser lager hämtas ifrån.                                                        |
 |     Arbetsmallar      |                                                   Arbetsmallar av typen <strong>Lagerpåfyllnad</strong> krävs för att skapa lagerpåfyllnadsarbete så att lagret kan flyttas till valfria platser.                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

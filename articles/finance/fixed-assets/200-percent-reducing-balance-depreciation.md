@@ -89,3 +89,6 @@ Den degressiva avskrivningsmetoden på 200 % delar 200 procent med tjänstelivst
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

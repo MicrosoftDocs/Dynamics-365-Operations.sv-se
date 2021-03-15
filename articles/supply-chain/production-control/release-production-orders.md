@@ -63,3 +63,6 @@ Produkter för råvaraplockning genereras under leverans. Arbete genereras endas
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

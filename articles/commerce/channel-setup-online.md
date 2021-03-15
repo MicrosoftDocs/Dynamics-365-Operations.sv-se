@@ -133,3 +133,6 @@ I bilden nedan visas ett exempel på en inställning av tilldelning av uppfyllel
 [Ställa in en kundtjänstkanal](channel-setup-callcenter.md)
 
 [Dynamics 365-betalningskoppling för Adyen](../retail/dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

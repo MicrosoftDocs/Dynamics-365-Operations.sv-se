@@ -83,3 +83,6 @@ Om du vill tilldela konton till leasingböcker och grupper som har skapats måst
     > [!NOTE]
     > Det valda finansiella eller operationella kontot kommer att debiteras när fakturan för den planerade utgiften bokförs.
     > **Motbokning av leasingkostnad** används som bokföringstyp för verkställighetskostnadstransaktioner men bokförs på ett definierat **motkonto** på **raderna för betalningsplanen för verkställighetskostnad** i leasinginformationen eller i leasingbokformuläret.   
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

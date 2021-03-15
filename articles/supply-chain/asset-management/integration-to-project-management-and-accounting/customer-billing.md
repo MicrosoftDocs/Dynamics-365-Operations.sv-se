@@ -177,3 +177,6 @@ I det här avsnittet fortsätter du arbeta med arbetsordern som du arbetade med 
 1. Välj **Fakturering** på fliken **Nytt fakturaförslag** i åtgärdsfönstret.
 1. I dialogrutan **Skapa fakturaförslag** i avsnittet **Projekttransaktioner**, markera kryssrutan **Välj** för varje rad som du vill fakturera.
 1. Välj **OK** för att stänga dialogrutan och visa det nya fakturaförslaget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

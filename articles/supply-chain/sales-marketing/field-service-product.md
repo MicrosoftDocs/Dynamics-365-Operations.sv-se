@@ -72,3 +72,6 @@ I följande illustrationer visas en mallmappning i dataintegrering.
 ### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a>Field Service-produkter (Supply Chain Management till Field Service): produkter - produkter.
 
 [![Mallmappning i dataintegrering](./media/FSProduct.png)](./media/FSProduct.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

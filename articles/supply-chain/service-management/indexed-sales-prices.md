@@ -42,3 +42,6 @@ Om baspriset är 1 000 EUR och index är 110 blir försäljningspriset 1 100 EUR
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -283,3 +283,6 @@ Om du vill ställa in värden för denna specifikation går du till **Produktinf
 Specifikationen *Tunnel för farligt material* begränsar vilka typer av tunnlar som ett farligt material kan transporteras genom att identifiera vilka typer av tunnlar som måste användas. Tunnelkategorier fastställs i tillämpliga förordningar för transport av farligt material. Denna specifikation gäller vanligtvis endast för vägtransporter.
 
 Om du vill ställa in värden för denna specifikation går du till **Produktinformationshantering \> Konfigurera \> Dokumentation för leverans av farligt material \> Tunnel för farliga material**. På sidan **Tunnel för farliga material** kan du skapa ett valfritt antal tunnelidentifierare och konfigurera var och en med en identifieringskod och en kort beskrivning.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

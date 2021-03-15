@@ -129,3 +129,6 @@ Enkättidsplanering gör att du kan planera och distribuera enkäter till flera 
 2. Klicka på Slut.
 3. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

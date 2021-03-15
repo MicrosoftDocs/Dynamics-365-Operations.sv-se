@@ -72,3 +72,6 @@ När du kör det konfigurerade ER-formatet används den kopplade Word-mallen fö
 
 - [Återanvända ER-konfigurationer med Excel-mallar för att generera rapporter i Word-format](./tasks/er-design-configuration-word-2016-11.md)
 - [Bädda in bilder och former i dokument som du skapar med ER](electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

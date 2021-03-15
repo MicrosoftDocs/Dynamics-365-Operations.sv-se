@@ -42,3 +42,6 @@ I det här avsnittet beskrivs hur du skapar en ny delad produkt. Den utförs van
 3. Ange eller välj ett värde i fältet **Spårningsdimensionsgrupp**. Spårningsdimensiongruppen avgör vilka spårningsdimensioner du måste ange för varje transaktion för produkten och hur den ska hanteras i lagret.  
 4. Välj **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

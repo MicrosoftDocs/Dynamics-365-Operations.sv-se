@@ -111,3 +111,6 @@ Följande sammanlagda huvudmått används till grund för innehållet:
 | Leveransprestanda        | Leverans efter produkt                       | CustPackingSlipOnTimeStatus           | Tidig, I tid och Sen (se beskrivningarna tidigare i den här tabellen). |
 | Leveransprestanda        | Levererade av kunder                      | CustPackingSlipOnTimeStatus           | Tidig, I tid och Sen (se beskrivningarna tidigare i den här tabellen). |
 | Leveransprestanda        | Levererat per site/lagerställe              | CustPackingSlipOnTimeStatus           | Tidig, I tid och Sen (se beskrivningarna tidigare i den här tabellen). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

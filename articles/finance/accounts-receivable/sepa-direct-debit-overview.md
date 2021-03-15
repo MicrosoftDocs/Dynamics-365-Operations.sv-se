@@ -83,3 +83,6 @@ Under båda scheman för SEPA-autogiro, har kunder vissa rättigheter till åter
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

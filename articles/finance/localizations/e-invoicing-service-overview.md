@@ -109,3 +109,6 @@ Om du aktiverar och använder tillägget Elektronisk fakturering kan det krävas
 - [Tjänsteadministration](e-invoicing-service-administration.md)
 - [Konfigurera elektroniska fakturor i RCS](e-invoicing-configuration-rcs.md)
 - [Utfärda elektroniska fakturor i Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

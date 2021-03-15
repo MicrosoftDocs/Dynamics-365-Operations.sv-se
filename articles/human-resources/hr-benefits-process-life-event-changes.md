@@ -52,3 +52,6 @@ Bearbeta ändring av livshändelse i Microsoft Dynamics 365 Human Resources för
    4. Välj **OK**. Processen kommer att köras med de parametrar du angett.
 
 4. Välj **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

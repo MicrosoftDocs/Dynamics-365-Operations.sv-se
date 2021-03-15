@@ -69,3 +69,6 @@ Du kan köra en **väntande tillgångsräkning** för att kontrollera väntande 
 3. Du kan ställa in det här jobbet så att det körs som ett batchjobb, till exempel en gång per dag.
 
 **Varning:** om data ändras på en inköpsorder *efter* att du har skapat en tillgång baserat på artikeln, återspeglas inte dessa ändringar på tillgången.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

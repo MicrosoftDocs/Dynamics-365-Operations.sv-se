@@ -174,3 +174,6 @@ Den här guiden visar hur du konfigurerar platsinställningar för ett nytt WMS-
 6. Klicka på länken på den valda raden i listan.
 7. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

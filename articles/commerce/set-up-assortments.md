@@ -54,3 +54,6 @@ När du har slutfört förberedelserna, kan du skapa ett sortiment och tilldela 
 2. Välj de kanalerna eller grupper med kanaler på hög nivå som sortimentet gäller för.
 3. Lägg till produktkategorier, enskilda produkter eller produktvarianter till sortimentet. Du kan inkludera alla produkter i en specifik kategori, eller så kan du utesluta valda produkter från en kategori som ingår i sortimentet.
 4. Publicera sortimentet. När du publicerar sortimentet kommer sortimentsschemaläggaren att köras automatiskt. Den här processen genererar listan med produkter. När den här processen slutförs blir produkterna tillgängliga för de kanaler som produktsortimentet tilldelas. Om ändringar görs i ett sortiment som har publicerats, eller till de kanaler som sortimentet har tilldelats, måste sortimentet uppdateras. Om du vill uppdatera sortimentet när ändringar görs kan du köra en lämpligt sortimentplanerare som ett batchjobb.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

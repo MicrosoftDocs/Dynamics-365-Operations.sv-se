@@ -134,3 +134,6 @@ Följande illustration visar ett exempel på produktvärderingar kundtjänstkana
 [Hantera omdömen och recensioner](manage-reviews.md)
 
 [Konfigurera omdömen och recensioner](configure-ratings-reviews.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

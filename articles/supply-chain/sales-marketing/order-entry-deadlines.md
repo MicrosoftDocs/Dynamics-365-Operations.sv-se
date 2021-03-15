@@ -108,3 +108,6 @@ Följande tabeller visar deadline för order för site A och B konverterat till 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

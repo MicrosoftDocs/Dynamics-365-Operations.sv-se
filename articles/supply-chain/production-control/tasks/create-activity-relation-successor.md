@@ -65,3 +65,6 @@ Förutsättningar:
 12. Stäng sidan.
 13. Uppdatera sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

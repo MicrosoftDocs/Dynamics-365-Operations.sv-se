@@ -118,3 +118,6 @@ Så här granskar du arbetsflödeshistoriken för en journal:
 1. I navigeringsfönstret, expandera **Lagerhantering \> Journalposter \> Artiklar** och välj sedan en lagerjournaltyp.
 1. Öppna relevanta journalen.
 1. Klicka på knappen **arbetsflöde** i åtgärdsfönstret för att öppna en nedrullningsbar dialogruta. Välj **arbetsflödeshistorik**. Mer information finns i [Visa arbetsflödeshistorik](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

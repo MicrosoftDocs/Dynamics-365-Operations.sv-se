@@ -112,3 +112,6 @@ När en reparera problemet är löst kan stänga du reparationsraden. Ange repar
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

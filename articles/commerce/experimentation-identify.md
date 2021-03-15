@@ -39,3 +39,6 @@ För att validera en hypotes bör ett experiments framgång eller misslyckande k
 
 ## <a name="next-step"></a>Gå vidare
 [Konfigurera ett experiment](experimentation-setup.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

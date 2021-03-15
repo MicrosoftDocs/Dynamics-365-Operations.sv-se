@@ -89,3 +89,6 @@ I följande tabell finns exempel som visar hur olika inställningar för en fris
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Inköpsavtal](../../procurement/purchase-agreements.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ Den här proceduren visar hur du ställer in ett bonusprogram med två lojalitet
 39. Stäng sidan.
 40. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ I den här proceduren går vi igenom genereringen av medarbetarnas tjänstledigh
     * Exempel: Tjänstledighet för adoption  
 12. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

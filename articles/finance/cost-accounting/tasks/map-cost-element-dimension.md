@@ -43,3 +43,6 @@ En kostnadscontroller kan använda den här proceduren för att mappa en kostnad
     * Välj dimensionsmedlem 6001004 Telefono.  
 11. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

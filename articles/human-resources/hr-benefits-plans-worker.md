@@ -49,3 +49,6 @@ Du kan skapa pensionsplaner för arbetare i Microsoft Dynamics 365 Human Resourc
    | Planer | Fliken Planer innehåller de planer som uppfyller angivna filterkriterier. De relevanta konfigurationsalternativen som har ställts in av personalen och de registreringar som valts av medarbetare tas med på varje rad. I det kvalificerade fältet anges om det finns en valideringskonflikt med planurvalet. |
 
 4. Välj **Spara**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

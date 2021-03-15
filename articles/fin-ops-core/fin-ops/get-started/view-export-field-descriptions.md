@@ -107,3 +107,6 @@ Information om olika sätt att hitta sidor hittar du i avsnittet "Söka efter si
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Anpassa fältbeskrivningar](../../dev-itpro/user-interface/customize-field-help.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

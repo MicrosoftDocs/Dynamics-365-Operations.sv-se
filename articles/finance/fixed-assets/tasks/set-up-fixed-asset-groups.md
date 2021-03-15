@@ -38,3 +38,6 @@ I det här avsnittet förklaras hur du skapar en ny anläggningstillgångsgrupp.
 8. Välj alternativ i fältet **Avskrivningspraxis**.
 9. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

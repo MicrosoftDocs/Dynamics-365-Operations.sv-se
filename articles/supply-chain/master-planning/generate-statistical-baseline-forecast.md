@@ -77,3 +77,6 @@ Om prognosen inte skapas för en stor grupp objekt, utan (till exempel) för en 
 - [Gör manuella justeringar på baslinjeprognosen](manual-adjustments-baseline-forecast.md)
 
 - [Auktorisera en justerad efterfrågeprognos](authorize-adjusted-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

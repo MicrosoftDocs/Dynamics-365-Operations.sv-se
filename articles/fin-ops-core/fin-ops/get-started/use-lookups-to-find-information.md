@@ -83,3 +83,6 @@ Användaren måste istället radera värdet i sökningskontrollen, öppna den ne
 När filtret har använts (se bilden nedan) kan användaren hitta och markera raden som vanligt.
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

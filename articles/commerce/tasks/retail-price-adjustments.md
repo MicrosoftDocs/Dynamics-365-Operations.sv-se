@@ -52,3 +52,6 @@ Den här proceduren går igenom hur du skapar en handelsprisjustering. En prisju
 14. Stäng sidan.
 15. Uppdatera sidan.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

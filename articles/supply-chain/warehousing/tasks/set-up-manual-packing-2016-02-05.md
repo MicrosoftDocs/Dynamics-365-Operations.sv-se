@@ -94,3 +94,6 @@ Förpackningsprocessen låter dig validera och packa produkter i behållare. I d
 8. Ange eller välj ett värde i fältet Viktenhet.
 9. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

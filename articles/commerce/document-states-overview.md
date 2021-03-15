@@ -60,3 +60,6 @@ I följande tabell visas de möjliga dokumenttillstånden för sidelement i hand
 [Översikt över mallar och layouter](templates-layouts-overview.md)
 
 [Anpassa webbplatsnavigeringen](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

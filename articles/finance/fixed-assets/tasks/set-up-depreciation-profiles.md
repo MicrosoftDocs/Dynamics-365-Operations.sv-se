@@ -39,3 +39,6 @@ Avskrivningsprofiler bestämmer typ och frekvens av avskrivning för en tillgån
 7. Välj ett alternativ i fältet **Periodfrekvens**.
 8. Stäng formuläret.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

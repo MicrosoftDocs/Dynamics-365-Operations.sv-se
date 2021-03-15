@@ -630,3 +630,6 @@ Migreringsprocessen bör bestå av följande steg.
 #### <a name="create-deployable-packages"></a>Skapa driftfärdiga paket
 
 Kör **msbuild** för hela Retail SDK för att skapa distribuerbara paket. Tillämpa paketen via LCS eller manuellt. Mer information finns i [Retail SDK-paket](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

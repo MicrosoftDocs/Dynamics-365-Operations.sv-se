@@ -130,3 +130,6 @@ Det här scenariot visar hur funktionen fungerar för lagerställen som är inst
 
 > [!NOTE]
 > Samma resultat förväntas när den andra raden reserveras delvis. I det här fallet kommer arbetet att skapas för den reserverade radkvantiteten men inte för den icke reserverade kvantiteten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

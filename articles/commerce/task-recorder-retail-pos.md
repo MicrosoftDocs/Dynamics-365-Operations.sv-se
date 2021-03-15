@@ -145,3 +145,6 @@ När du klickar på en uppgiftsguide i sökresultaten kan du antingen se stegen 
 
 > [!NOTE]
 > Hjälp i Retail Modern POS och Cloud POS visar inte aktivitetsguiderna i enlighet med det formulär du använder eller den åtgärd du utför. Skriv in processnamnet i sökrutan och klicka på **Sök**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

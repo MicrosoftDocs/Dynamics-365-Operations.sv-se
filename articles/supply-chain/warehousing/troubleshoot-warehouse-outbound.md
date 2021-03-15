@@ -61,3 +61,6 @@ En artikel läggs till på en försäljningsrad för direktleverans från ett la
 ### <a name="issue-resolution"></a>Problemlösning
 
 Microsoft har utvärderat det här problemet och har fastställt att det är en funktionsbegränsning. För närvarande stöder inte WMS direktleverans. Om du vill använda direktleverans måste du därför välja en icke-WMS artikel och lagerställe.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

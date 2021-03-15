@@ -91,3 +91,6 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
     * Vissa etiketter som visas i det förtryckta checkformuläret inkluderas i rapporten när den skapas i testsyfte. Dessa etiketter skrivs dock inte ut vid den verkliga utskriften eftersom det förtryckta formuläret redan innehåller dem.  
 15. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

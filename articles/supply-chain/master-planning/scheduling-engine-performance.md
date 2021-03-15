@@ -328,3 +328,6 @@ Värdet för **Tidsgräns för optimeringsförsök** styr hur många sekunder so
 
 > [!NOTE]
 > De värden som anges för tidsgräns används både för planering av släppta produktionsorder och planerade order som en del av MPS. Det innebär att om du ställer in mycket höga värden kan du markant lägga till produktionstiden för MPS när den körs för en plan med många planerade tillverkningsorder.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

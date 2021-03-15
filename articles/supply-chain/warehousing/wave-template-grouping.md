@@ -200,3 +200,6 @@ En ny påfyllnad skapades för den här leveransen eftersom den använder en ann
 1. Välj påfyllnads-ID som skapades från den tredje försäljningsordern.
 1. Klicka på påfyllnad ID-länken om du vill öppna sidan med påfyllnadsinformation.
 1. Observera att leveransen har lagts till på snabbfliken **Påfyllnadsrader**, tillsammans med leveransen för den första försäljningsordern.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

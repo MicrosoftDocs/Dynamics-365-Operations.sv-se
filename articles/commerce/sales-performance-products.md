@@ -43,3 +43,6 @@ För denna bedömning kan du använda färdiga **topprodukter** betänkande, som
 - Arbetsytan **Butikshantering** &gt; **Butik och handel** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Främsta produkterna – rapport**
 - Arbetsytan **Kategori- och produkthantering** &gt; **Butik och handel** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Rapport över topprodukter**
 - Avsnitt **Undersökningar och rapporter** &gt; **Butik och handel** &gt; **Undersökningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Översta produkter rapport**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

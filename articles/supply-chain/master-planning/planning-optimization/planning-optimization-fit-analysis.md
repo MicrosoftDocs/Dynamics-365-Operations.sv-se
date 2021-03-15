@@ -113,3 +113,6 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 [Använda filter på en plan](plan-filters.md)
 
 [Annullera ett planeringsjobb](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

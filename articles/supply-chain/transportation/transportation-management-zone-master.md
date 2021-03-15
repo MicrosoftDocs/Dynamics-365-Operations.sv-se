@@ -35,3 +35,6 @@ Transporthantering innebär att du kan dela upp geografiska platser i zoner. Att
 - **Optimera flödesplanering** – genom att tilldela specifika flödesplaner till specifika zoner.
 
 Du definierar zoner baserat på värdena i fältet metadata (t.ex. land, postnummerintervall eller transportföretag) som kvalificerar varje zon. Zondefinitioner behövs inte om din transport prissättning inte använder ett zonbegrepp.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

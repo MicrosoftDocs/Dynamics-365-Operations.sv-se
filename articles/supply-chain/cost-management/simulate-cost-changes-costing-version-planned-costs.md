@@ -58,3 +58,6 @@ När du har registrerat de simulerade kostnadsändringarna ska du beräkna kostn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

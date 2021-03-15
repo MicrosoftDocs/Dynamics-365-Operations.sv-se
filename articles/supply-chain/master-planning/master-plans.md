@@ -56,3 +56,6 @@ Du kan också ställa in den dynamiska planen så att den uppdateras med den nya
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

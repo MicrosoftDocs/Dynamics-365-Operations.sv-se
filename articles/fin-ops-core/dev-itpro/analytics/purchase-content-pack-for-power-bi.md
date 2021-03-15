@@ -154,3 +154,6 @@ Följande huvuddimensioner i innehållet används som filter för att dela upp d
 | Datum                  | Datum, Förskjutning för år                                    |
 
 Som standard visar innehållet data för det aktuella kalenderåret. Du kan dock ändra filtret i datumavsnittet i rapportfilteravsnittet. Du kan också ändra filtret för företaget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

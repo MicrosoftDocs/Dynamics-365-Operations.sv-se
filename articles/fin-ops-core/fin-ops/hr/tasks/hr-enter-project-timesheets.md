@@ -51,3 +51,6 @@ Den här proceduren låter dig skapa en tidrapport genom att använda ett tomt t
 21. Klicka på **Skicka**.
 22. Klicka på **Skicka**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

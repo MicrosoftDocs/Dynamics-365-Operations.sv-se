@@ -109,3 +109,6 @@ När du använder processen *Systemdirigerad klusterplockning* om du konfigurera
 ### <a name="issue-resolution"></a>Problemlösning
 
 Åtgärda problemet genom att redigera klusterprofilen och ställa in alternativet **Aktivera positioner** på *Nej*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

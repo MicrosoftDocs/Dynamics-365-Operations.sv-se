@@ -87,3 +87,6 @@ I POS kan användare konfigurera knappsatser som ingår på skärmar för att ko
 ## <a name="calculating-commissions"></a>Beräkna provisioner
 
 Provisionen beräknas för arbetare inom angivna försäljningsgrupper vid tidpunkten för bokföring av utdrag eller försäljningsorder. Provisionsbeloppet bestäms utifrån medarbetarens provisionsandel enligt definitionen i försäljningsgruppen och tillhörande provisionsberäkningsinställningar för kund och/eller produkter för transaktionen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

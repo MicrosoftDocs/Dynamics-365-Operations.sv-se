@@ -88,3 +88,6 @@ Under andra halvåret upptäcker kunden att servicebesöken inträffar alltför 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

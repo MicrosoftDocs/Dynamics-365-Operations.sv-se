@@ -110,3 +110,6 @@ Följande illustration visar ett exempel på panelen **Uppgifter** på en kassas
 [Tilldela uppgiftslistor till butiker eller medarbetare](task-mgmt-assign-lists.md)
 
 [Uppgiftshantering i POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

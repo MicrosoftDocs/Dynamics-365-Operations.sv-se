@@ -107,3 +107,6 @@ Använd sidan **Certifikat för dubbel användning** när du vill ställa in och
     | Skriv ut på faktura | Markera den här kryssrutan om du vill skriva ut certifikatnumret på fakturor som är adresserade till det angivna landet under det angivna datumintervallet. |
     | Skriv ut på följesedel | Markera den här kryssrutan om du vill skriva ut certifikatnumret på följesedel som är adresserade till det angivna landet under det angivna datumintervallet. |
     | Skriv ut på försäljningsorder | Markera den här kryssrutan om du vill skriva ut certifikatnumret på försäljningsorder som är adresserade till det angivna landet under det angivna datumintervallet. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

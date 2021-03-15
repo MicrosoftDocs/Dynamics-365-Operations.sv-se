@@ -57,3 +57,6 @@ Det finns flera sätt att skapa kostnadselement inom kostnadsredovisning. I den 
 1. Klicka på View dimension members.
     * Visa de importerade redovisningskontona som kostnadselement i ditt företag som kostnader kan flöda till.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

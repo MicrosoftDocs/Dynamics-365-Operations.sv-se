@@ -148,3 +148,6 @@ Konfigurera svaret på produkttillgänglighet API:erna enligt följande instrukt
 [Använd lagerinställningar](inventory-settings.md)
 
 [Beräkna lagertillgänglighet för butikskanaler](calculated-inventory-retail-channels.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

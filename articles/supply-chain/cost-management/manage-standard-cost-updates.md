@@ -51,3 +51,6 @@ Att aktivera ett nytt standardpris omvärderar vanligtvis det aktuella lagervär
 - **Inga** – inga ekonomiska dimensioner bokförs för transaktioner för omräkning. Om in kontostruktur omfattar en obligatorisk ekonomisk dimension i din kontostruktur, körs omvärderingsprocessen fortfarande men kommer att skapa redovisningsposter som saknar ekonomiska dimensioner. I så fall får användarna ett varningsmeddelande först, så att de kan avbryta omvärderingen om det behövs.
 - **Tabell**  – De ekonomiska dimensionerna för artikeln sedan på transaktionerna för omräkning. Detta är standardinställningen och överensstämmer med det ursprungliga systembeteendet utan att funktionen *Alternativ som används som standard i ekonomiska dimensioner för omvärdering av standardkostnad för lager*.
 - **Bokföring** – De ekonomiska dimensionerna för transaktionen som omvärderas bokförs i transaktioner för omräkning. Som standard kommer de ekonomiska dimensionerna från den ursprungliga transaktionens lagerkonto att användas för både lagerkontot och omvärderingskontot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

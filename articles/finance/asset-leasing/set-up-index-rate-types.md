@@ -42,3 +42,6 @@ Du måste välja antingen **Värdedifferens för indexränta** eller **Indexrän
 
 - Välj metoden **Värdedifferens för indexränta** för att beräkna en ny leasingbetalning, baserat på differensen mellan indexräntan på startdatumet och den senaste indexräntan. Indexräntan definieras i fältet **Indexränta (%)**.
 - Välj metoden **Indexräntevärde** om du vill beräkna leasingbetalningen med hjälp av procentsatsen som anges i fältet **Indexränta (%)**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

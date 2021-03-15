@@ -76,3 +76,6 @@ Om du vill lägga till en iframe-modul på en sida för att visa en extern video
 [Översikt över modulbibliotek](starter-kit-overview.md)
 
 [Hantera säkerhetspolicy för innehåll (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

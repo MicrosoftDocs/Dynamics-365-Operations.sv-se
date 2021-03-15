@@ -71,3 +71,6 @@ En modul för leveransadress kan bara läggas till i en betalningsmodul. Mer inf
 [Orderinformationsmodul](order-confirmation-module.md)
 
 [Presentkortsmodul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -92,3 +92,6 @@ Följande procedur garanterar att den påfyllnadsmall som du har skapat kommer a
 6. I fältet **Kod för påfyllnadssteg**, välj koden för påfyllningssteg som du valde i lagerpåfyllnadsmallen.
 
 Du utför dessa steg för varje juridisk person.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ Varje fält har en annan effekt på transaktionen vid redigering:
 - **Redigera villkoren för kassarabatt** – Kassarabatterna ändras utifrån basdatum och kassarabattsvillkoren.
 
 När du är klar med redigeringen av betalningdinställningar väljer du **Stäng** att spara dina ändringar.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

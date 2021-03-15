@@ -83,3 +83,6 @@ Vid planering av scenarier där produktion ingår bör du undvika filtrerade huv
 Underordnade artiklar som är beroende hittas automatiskt och inkluderas i huvudplaneringskörningar när den inbyggda huvudplaneringsmotorn används, men den här åtgärden utförs inte under Planeringsoptimering.
 
 Om till exempel en enda blixt från strukturlistestrukturen för produkt A även används för att tillverka produkt B, måste alla produkter i strukturlistestrukturen för produkter A och B inkluderas i filtret. Eftersom det kan vara mycket komplicerat att säkerställa att alla produkter ingår i filtret rekommenderar vi att du undviker filtrerade huvudplaneringskörningar när tillverkningsorder används.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

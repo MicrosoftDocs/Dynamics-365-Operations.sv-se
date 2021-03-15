@@ -143,3 +143,6 @@ Följande uppgifter och behörigheter har lagts till för automatisering av leve
 | Fråga om förekomster av scheman | Betalningsansvarig för leverantörsreskontra, betalning, ansvarig för centraliserade leverantörsreskontrabetalningar | Denna uppgift ger rätt att visa automatisering av betalningsförslagförekomst via följande privilegier:<ul><li>Visa förekomster av scheman</li><li>Visa endast veckovis vy för förekomster</li></ul> |
 | Fråga om schemaläggningsserier      | None                                                                       | Denna uppgift ger rätt att visa inställningar för serier och förekomster via följande privilegier:<ul><li>Visa förekomster av scheman</li><li>Visa listsidan med förekomster</li><li>Visa endast veckovis vy för förekomster</li></ul>|
 | Underhåll förekomster av scheman     | None                                                                       | Denna uppgift ger rätt att skapa och upprätthålla en förekomst genom följande privilegier:<ul><li>Underhåll förekomster av scheman</li><li>Visa endast veckovis vy för förekomster</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

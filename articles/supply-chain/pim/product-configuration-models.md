@@ -152,3 +152,6 @@ Du kan visa om en frisläppt produkt kan användas som en komponent eller delkom
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

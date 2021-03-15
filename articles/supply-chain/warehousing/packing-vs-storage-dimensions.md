@@ -133,3 +133,6 @@ I denna process skapar du en försändelse baserad på artikelns *förpackningsd
 1. Öppna den mobila enheten, logga in på lagerställe 63 och gå till **Lager \> Justera i**.
 1. Ange **Loc** = *SHORT-01*. Gör ett nytt ID-nummer med **artikel** = *A0001* och **kvantitet** = *1 st*.
 1. Välj **OK**. Du får felmeddelandet "Plats SHORT-01 misslyckades eftersom artikel A0001 inte får plats i platsens angivna dimensioner." Det beror på att produktens *lagringstypdimensioner* är större än de dimensioner som anges i platsprofilen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

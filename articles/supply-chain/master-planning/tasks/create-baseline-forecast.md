@@ -81,3 +81,6 @@ En produktionsplanerare kan skapa en baslinjeprognos, antingen genom att använd
 5. Klicka på Raddetaljer för prognos.
     * På den här sidan kan du se precisionsvärdena, den historiska efterfrågan och prognosen. Du kan fortfarande göra ändringar även i prognosen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

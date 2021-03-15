@@ -133,3 +133,6 @@ Du måste ställa in två nummerserier om du vill använda mallstrukturlistor. S
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

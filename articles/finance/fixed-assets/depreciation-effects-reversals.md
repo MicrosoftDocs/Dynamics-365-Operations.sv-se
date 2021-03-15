@@ -95,3 +95,6 @@ Avskrivningens värde är 16,95 för lågt (983,62 – 966,67).
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

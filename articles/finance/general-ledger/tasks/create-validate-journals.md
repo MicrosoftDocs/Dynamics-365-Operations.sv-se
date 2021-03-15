@@ -42,3 +42,6 @@ Den här proceduren skapar och verifierar journaler och journalrader. Du kan tes
 12. Klicka på **Bokför**.
 13. Klicka på **Verifikation**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -199,3 +199,6 @@ Om du vill få en mer analytisk översikt av de olika resultatmåtten för kampa
 
 Om du vill få en mer analytisk översikt av de olika resultatmåtten för kampanjen kan du använda analysvyn. Gå till analysvyn genom att klicka på **Försäljning och marknadsföring**\>**Handelsavdrag**\>**Handelsavdragsavtal**. Klicka på **Analys** på åtgärdsfönstret. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ När du skriver ut fritext-, kund- och projektkreditfakturor kommer dessa att in
 
 > [!NOTE]
 > Se till att dokumentens utskrivbara format är korrekt konfigurerade, med antagandet att referenser till ursprungliga fakturor skrivs ut.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

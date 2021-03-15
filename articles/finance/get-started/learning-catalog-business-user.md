@@ -60,3 +60,6 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | Innehåll | beskrivning  | Format  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Dynamics 365 grunder](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl)    | Bevisa att du förstår Microsoft Dynamics 365: Power Platform; molnkoncept; licensieringsalternativ; och distribution- och publiceringsalternativ. | Prov; kostnaden varierar beroende på region |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -103,3 +103,6 @@ Anskaffning och källa omfattar alla steg från att identifiera ett behov av pro
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

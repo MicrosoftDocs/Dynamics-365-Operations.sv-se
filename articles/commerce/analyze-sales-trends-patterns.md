@@ -42,3 +42,6 @@ Användare kan även studera försäljningstrender och mönster på timnivå i o
 - Arbetsytan **Butikshantering** &gt; **Butik och handel** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Kanalförsäljning per timme – rapport**
 - Arbetsytan **Butiksekonomi** &gt; **Butik och handel** &gt; **Kanaler** &gt; **Butiksekonomi** &gt; **Rapporter** &gt; **Kanalförsäljning per timme – rapport**
 - Avsnittet **Förfrågningar och rapporter** &gt; **Butik och handel** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Kanalförsäljning per timme – rapport**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -157,3 +157,6 @@ För testningsändamål, utför formatmappning med den SampleIncomingMessage.txt
 2. Klicka på OK.
     * Granska utdata i XML-format, vilket representerar de data som har importerats från den valda filen och integrerats i datamodellen. Observera att endast 3 raderna i importerade TXT-filen har bearbetats. IBAN-kod på rad 4 som inte gäller hoppades över och ett felmeddelande ges i informationsloggen.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

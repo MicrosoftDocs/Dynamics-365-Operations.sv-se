@@ -48,3 +48,6 @@ Uppgiften uppdaterar avskrivningspraxis för en viss grupp av anläggningstillg�
 15. Klicka på OK.
     *  Resultatet av processen visas på massuppdateringrapporten.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

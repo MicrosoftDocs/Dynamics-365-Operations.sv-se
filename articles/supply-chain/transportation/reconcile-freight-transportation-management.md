@@ -105,3 +105,6 @@ Ett sätt att skapa manuell matchning för det här exemplet är att fortsätta 
 1. Matcha Inv1 och Inv 2 med FB en efter en. FB matchas fullständigt.
 
 Som det här exemplet visar bör matchande fraktfakturor med negativa belopp endast göras manuellt. Då går det alltid att matcha fraktfakturor med negativa belopp mot en fraktsedel helt och hållet matchad eftersom du då kan styra matchningssekvensen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

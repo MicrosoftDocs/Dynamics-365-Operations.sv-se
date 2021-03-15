@@ -308,3 +308,6 @@ Om du aktiverar funktionen BR-00053 (NF-e Federal) kan det krävas att begränsa
 - [Tillägg för elektronisk fakturering: översikt](e-invoicing-service-overview.md)
 - [Kom igång med tillägget elektronisk fakturering](e-invoicing-get-started.md)
 - [Ställ in tillägg för elektroniska fakturor](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

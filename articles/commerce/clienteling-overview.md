@@ -132,3 +132,6 @@ När du har uppdaterat fälten väljer du **Validera** för att säkerställa at
 8. På sidan **Commerce-parametrar** i Commerce, på fliken **Klienter** på snabbfliken **Dynamics 365 Customer Insights**, anger du **Program-ID** som "CI_Access_AppID" (från steg 1 ovan). För **Hemligt namn** väljer du namnet på den hemlighet som angavs i steg 7 ovan ("CISecret"). Ange alternativet **Aktivera Customer Insights** till **Ja**. Om inställningen misslyckas visas ett felmeddelande, och detta alternativ anges som **Nej**. 
 
 Du kan ha flera miljöer i Customer Insights, t.ex. test- och produktionsmiljöer. I fältet **miljöinstans-ID** anger du lämplig miljö. I fältet **alternativt kund-ID** anger du egenskapen i Customer Insights som har mappats till kundkontonumret. (I Commerce är kundens kontonummer kundens ID) Återstående tre egenskaper är de mått som anges på kundkortet i klientboken. Du kan välja upp till tre mått som ska visas på kundkortet. Du måste dock inte välja några mått. Som tidigare har nämns visar systemet först dessa värden, för att sedan visa värdena för attributgruppen i klientboken.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

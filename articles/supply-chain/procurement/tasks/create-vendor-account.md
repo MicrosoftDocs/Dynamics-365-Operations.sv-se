@@ -58,3 +58,6 @@ I den här proceduren visas hur du skapar ett leverantörskonto och lägger till
 7. Stäng sidan.
 8. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

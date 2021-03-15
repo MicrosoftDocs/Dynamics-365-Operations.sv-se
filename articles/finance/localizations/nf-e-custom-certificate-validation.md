@@ -35,3 +35,6 @@ Egenskapen **Serverns syfte att autentiseras** från certifikat V5 utfärdas av 
 Den här uppdateringen möjliggör en alternativ lösning för certifikat validering, vilket innebär att det är möjligt att upprätta en säker kommunikation.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

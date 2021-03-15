@@ -150,3 +150,6 @@ Inköpsorderskapande och efterfrågekonsolideringsregeln definierar policyregler
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

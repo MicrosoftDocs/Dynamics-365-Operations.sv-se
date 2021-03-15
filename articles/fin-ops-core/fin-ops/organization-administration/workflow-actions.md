@@ -141,3 +141,6 @@ När en godkännare begär en ändring av ett dokument, skickas det tillbaka til
 Till exempel har Sam skickat en utgiftsrapport på 12 000 USD och detta dokument har tilldelats till Sue. Om Sue begär ändringar skickas utgiftsrapporten tillbaka till Sam.
 
 Sam kan skicka utgiftsrapporten på nytt. Han kan göra nödvändiga ändringar först eller skicka om den ursprungliga versionen av utgiftsrapporten. Om Sam skickar om utgiftsrapporten skickas den till Frank för godkännande eftersom Frank är den första godkännaren i godkännandeprocessen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

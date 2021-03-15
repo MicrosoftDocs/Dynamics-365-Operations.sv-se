@@ -95,3 +95,6 @@ Du kan behöva skjuta upp slutförandet av en inköpsorder. Du kan till exempel 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

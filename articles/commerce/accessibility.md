@@ -113,3 +113,6 @@ Gör så här om du vill ange attributet för **minimiålder** för en videotill
 [Lägga till en sida med sekretesspolicy](add-privacy-page.md)
 
 [Ersätt användar-ID:n som är associerade med spårade innehållsändringar](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

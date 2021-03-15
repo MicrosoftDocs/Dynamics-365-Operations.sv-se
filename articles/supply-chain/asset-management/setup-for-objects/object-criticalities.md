@@ -61,3 +61,6 @@ Om du vill ställa in allvarlighetsgrad kan du först skapa allvarlighetsgradtyp
 - Allvarlighetsgraden på en arbetsorder beräknas om varje gång en arbetsorderrad läggs till eller tas bort från arbetsordern.
 - Om en arbetsorder innehåller flera arbetsorderjobb, används alltid den högsta allvarlighetsgraden enligt fältet **faktor** på sidan **allvarlighetsgradtyper** på arbetsordern.
 - I allmänhet kan tillgångens allvarlighetsgrad ändras under en period. Allvarlighetsgrad kan påverkas av inköp av ny utrustning, renoveringar, och så vidare. Överväg att omvärdera din tillgångs allvarlighetsgrad med jämna mellanrum (till exempel en gång per år eller vartannat år) för att se till att dina allvarlighetsgraddefinitioner matchar din aktuella produktionsinställning.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

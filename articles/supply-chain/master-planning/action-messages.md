@@ -52,3 +52,6 @@ På sidan **Disponeringsgrupper** kan du välja de åtgärdsmeddelanden som du v
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

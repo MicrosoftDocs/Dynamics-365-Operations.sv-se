@@ -113,3 +113,6 @@ Så här inaktiverar du en CSS åsidosättningfil på din webbplats.
 [Lägg till språk på din webbplats](add-languages-to-site.md)
 
 [Lägga till skriptkod på webbsidor för att stödja telemetri](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

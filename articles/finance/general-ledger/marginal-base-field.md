@@ -185,3 +185,6 @@ Mer information finns i [Alternativ för hela belopp och intervallberäkning fö
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -158,3 +158,6 @@ I följande tabeller visas de värden som är inställda på flikarna **Allmänt
 11. Om du vill visa nettoeffekterna av uppsägningen, där tillgången med nyttjanderätt och leasingskulden blir 0 (noll), öppnar du transaktionsregistren för skulder och tillgångar.
 
 Leasingstatusen ska nu vara **Avslutad**. Inga ytterligare journalposter kommer att bokföras mot detta leasingavtal om inte uppsägningen återförs.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

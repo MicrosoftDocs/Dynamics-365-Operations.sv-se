@@ -63,3 +63,6 @@ Innan du kan slutföra denna procedur måste du skapa moms-ID:n. Den här proced
 25. Ange eller välj ett värde i fältet Momsregistreringsnummer.
 26. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

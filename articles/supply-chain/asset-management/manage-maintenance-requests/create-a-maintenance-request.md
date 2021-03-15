@@ -73,3 +73,6 @@ I informationsvyn kan du uppdatera olika information. Nedan följer några exemp
 
 > [!NOTE]
 > Om du väljer en tillgång när du skapar en underhållsbegäran kan du lägga till ett fel till tillgången. När underhållsbegäran har skapats kan du lägga till fler fel, som du behöver. Om du vill lägga till fel väljer du **tillgångsfel** på sidan **alla underhållsbegäran**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -255,3 +255,6 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 
 [Tangentbordsgenvägar för analys av saknade konton](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

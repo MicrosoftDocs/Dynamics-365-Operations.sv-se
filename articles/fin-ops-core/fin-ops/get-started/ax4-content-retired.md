@@ -31,3 +31,6 @@ Microsoft Dynamics AX 4.0-innehållet har tagits bort från TechNet och MSDN. Me
 
 - [Microsoft Lifecycle Policy](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Dynamics%20AX%204.0)
 - [Uppgraderingsvägar som stöds till Dynamics AX 2012](https://technet.microsoft.com/library/dd362093.aspx)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

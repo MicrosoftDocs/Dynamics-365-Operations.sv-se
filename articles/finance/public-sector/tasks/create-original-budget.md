@@ -50,3 +50,6 @@ När du skapar en ursprunglig budgetpost och använder budgetmodellen och dimens
     * Du kan göra ytterligare val genom att klicka på upplåsningsikonen högst upp på skärmen.  
 18. Klicka på Uppdatera.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

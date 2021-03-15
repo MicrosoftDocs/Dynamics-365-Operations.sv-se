@@ -36,3 +36,6 @@ I den här proceduren visas hur du skapar ett menyobjekt för en mobil enhet med
 5. Välj "Indirect" i fältet Model.
 6. Välj "Consolidate license plates" i fältet Activity code.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

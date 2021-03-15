@@ -45,3 +45,6 @@ Den här proceduren fokuserar på att ta bort ett planerat kanban-processjobb fr
 4. Klicka på OK.
     * Då återställs den aktuella jobbstatusen från "Planerad" till "Inte planerad" och tas bort från processtavlan.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

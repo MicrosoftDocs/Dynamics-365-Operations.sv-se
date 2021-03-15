@@ -52,3 +52,6 @@ Du kan skapa preliminära budgetregisterposter för en specifik budgetmodell och
 19. Klicka på Uppdatera.
     * Klicka på Meddelandeinformation i det blå fältet att se resultaten för uppdateringen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

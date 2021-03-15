@@ -35,3 +35,6 @@ Följande avsnitt beskriver hur en användare med rollen systemadministratör ka
 5. I fältet **Tidszon** väljer du ett alternativ iden nedrullningsbara listan.
 6. Välj **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

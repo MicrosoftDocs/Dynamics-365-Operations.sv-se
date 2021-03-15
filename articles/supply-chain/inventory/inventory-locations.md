@@ -65,3 +65,6 @@ Det går att kopiera platser från ett lagerställe till ett annat och skapa pla
 --------
 
 [Skapa en ny layout för lagerställe](tasks/create-new-warehouse-layout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

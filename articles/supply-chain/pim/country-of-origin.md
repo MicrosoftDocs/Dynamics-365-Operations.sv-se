@@ -90,3 +90,6 @@ När du genererar en strukturlisterapport kan du inkludera ursprungslandet för 
 En rapport som visar information om ursprungslandet för varje del genereras och visas. Här följer ett exempel på rapporten.
 
 ![Ursprungsland, rapport](media/country-of-origin-report.png "Ursprungsland, rapport")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

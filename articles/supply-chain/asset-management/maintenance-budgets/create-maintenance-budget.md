@@ -58,3 +58,6 @@ Du kan också skapa en ny underhållsbudget genom att kopiera en befintlig budge
 
 > [!NOTE]
 > Underhållsbudgeten beräknar bara budgetkostnader baserat på underhållsschemarader. Om du vill beräkna faktiska kostnader för samma period kan du göra denna beräkning på sidan **Kostnadskontroll för tillgång**. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

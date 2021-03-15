@@ -93,3 +93,6 @@ Det går att utforma och dela ut enkäter för att samla in information används
 - [Utforma enkäter](../../../talent/design-questionnaires.md)
 - [Skicka ut och schemalägg enkäter](../../../talent/distribute-questionnaires.md)
 - [Visa och utvärdera resultaten av enkäter](../../../talent/evaluate-questionnaire-results.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

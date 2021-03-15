@@ -77,3 +77,6 @@ Använd den här proceduren för att konfigurera elektroniska signaturer. En ele
 10. Klicka på Spara.
 11. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

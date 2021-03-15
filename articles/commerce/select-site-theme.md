@@ -67,3 +67,6 @@ Gör så här för att välja det tema som ska användas på webbplatsen:
 
 [Skapa ett nytt tema](e-commerce-extensibility/create-theme.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

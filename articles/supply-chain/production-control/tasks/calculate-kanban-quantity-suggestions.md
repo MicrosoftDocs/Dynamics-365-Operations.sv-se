@@ -84,3 +84,6 @@ Den här proceduren fokuserar på att optimera kanban-storleken och kvantitetern
     * Observera att detta är den fasta kanban-kvantiteten på 4 från den kanban-kvantitetsberäkningen.  
 5. Klicka på fliken ListPanel.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

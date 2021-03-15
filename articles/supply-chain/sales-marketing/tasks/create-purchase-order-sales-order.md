@@ -68,3 +68,6 @@ Proceduren visar hur du kan skapa en inköpsorder som baseras på en försäljni
     - **Referensparti** garanterar att kostnaden för det aktuella inköpet debiteras den kopplade försäljningsordern.  
     - Du kan navigera till den ursprungliga försäljningsordern genom att öppna länken i fältet **Referensnummer**.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

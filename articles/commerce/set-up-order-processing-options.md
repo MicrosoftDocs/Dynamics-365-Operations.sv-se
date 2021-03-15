@@ -83,3 +83,6 @@ När du är klar med att konfigurera kundtjänstkanalen och definiera kanalanvä
 > [!NOTE]
 > Om du använder kundtjänstfunktionen måste konfigurationsnyckeln **Flera leveransadresser** till aktiveras. Den här konfigurationsnyckeln finns i den konfigurationsnyckel för **handel** under **Systemadministration**\> **Konfiguration** \> **Licenskonfiguration**. Detta krävs på grund av kundtjänstfunktione som utför olika valideringar baserat på leveransadressen som konfigurerats på försäljningsorderradnivå. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ Denna procedur vägleder dig genom stegen i årsbokslutsprocessen som överför 
 23. Årsbokslutets standardvärden som ska köras i batch. Det bästa är att låta långvariga processer köras i batch-läge. Detta är vanligtvis en av dessa processer, vilket är orsaken till att standardinställningen är att använda batch-läge.  
 24. Klicka på **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

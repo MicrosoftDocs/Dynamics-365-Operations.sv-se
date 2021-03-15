@@ -67,3 +67,6 @@ Detta är den femte av fem procedurer av fem som demonstrerar kundbetalningsproc
 11. Klicka på OK.
 12. Klicka på OK.
 13. Klicka på Skapa betalningar.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

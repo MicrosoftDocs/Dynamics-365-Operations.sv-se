@@ -147,3 +147,6 @@ De ytterligare inställningssidorna som används ordnas efter funktion.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

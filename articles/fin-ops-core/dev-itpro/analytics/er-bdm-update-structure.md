@@ -106,3 +106,6 @@ Slutför följande procedurer i [Översikt över hantering av affärsdokument](e
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Hantering av affärsdokument – översikt](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

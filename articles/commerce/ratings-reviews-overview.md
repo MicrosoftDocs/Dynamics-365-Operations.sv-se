@@ -58,3 +58,6 @@ Lösningen för omdömen och recensioner innehåller också en Business Intellig
 [Konfigurera omdömen och recensioner](configure-ratings-reviews.md)
 
 [Synkronisera produktklassificeringar i Dynamics 365 Commerce](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

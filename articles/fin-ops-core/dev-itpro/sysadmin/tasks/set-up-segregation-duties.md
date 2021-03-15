@@ -42,3 +42,6 @@ Du kan ställa in regler för att separera uppgifter som måste utföras av andr
 
 > [!IMPORTANT] 
 > Efterföljanderegler för uppdelning av uppgifter kontrolleras inte när du skapar en regel. Du kan skapa en regel som skapar en konflikt för befintliga roller. Befintliga tilldelningar av användarroller kan också vara i konflikt med den nya regeln. Du måste validera efterföljande när du har skapat eller ändra en regel. För mer information, se [Identifiera och lösa konflikter vid ansvarsfördelning](identify-resolve-conflicts-segregation-duties.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

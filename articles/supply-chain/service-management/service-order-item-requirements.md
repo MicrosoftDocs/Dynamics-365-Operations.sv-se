@@ -69,3 +69,6 @@ Om ett artikelbehov har skapats på en serviceorder kan du inte ta bort serviceo
 
 [Artikelbehov (formulär)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

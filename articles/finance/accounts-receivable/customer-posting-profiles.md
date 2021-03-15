@@ -139,3 +139,6 @@ Ange följande värden om du vill ställa in din bokföringsprofil:
 
 Mer information finns i [Översikt över kundbetalning](../cash-bank-management/tasks/customer-payment-overview.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

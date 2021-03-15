@@ -74,3 +74,6 @@ Serviceuppgiftsrelationer som skapas i en serviceorder är tillgängliga i den s
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

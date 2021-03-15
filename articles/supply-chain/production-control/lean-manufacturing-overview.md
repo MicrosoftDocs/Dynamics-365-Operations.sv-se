@@ -82,3 +82,6 @@ Dessutom stöder lean manufacturing inköps- och faktureringsprocesser för tjä
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

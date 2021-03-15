@@ -241,3 +241,6 @@ Formatet måste först vara tillgängligt i ER konfigurationer. Om denna föruts
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Konfigurera åtgärdsberoende ER-destinationer](er-action-dependent-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

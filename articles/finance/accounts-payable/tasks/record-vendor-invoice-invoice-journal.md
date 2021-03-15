@@ -48,3 +48,6 @@ Den här uppgifthandboken visar hur du registrerar leverantörsfakturor som inte
 12. Klicka på **Bokför**.
 13. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

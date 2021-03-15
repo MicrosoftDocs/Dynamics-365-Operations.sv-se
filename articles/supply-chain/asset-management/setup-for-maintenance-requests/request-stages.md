@@ -80,3 +80,6 @@ När du har skapat de livscykeltillstånd som krävs för dina underhållsbegär
 Följande illustration visar ett exempel på sidan **livscykelmodeller för underhållsbegäran**.
 
 ![Sidan Livscykelmodeller för underhållsbegäran](media/06-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

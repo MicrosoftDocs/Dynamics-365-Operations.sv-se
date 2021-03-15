@@ -42,3 +42,6 @@ Fältet **Status** hjälper dig att spåra dina framsteg med följande värden:
 - **Godkänd:** om du vill fortsätta redigera eller planera att bekräfta en planerad order ändrar du statusvärdet till *godkänd* . Planerade order med status *godkänd* anses vara fasta och förväntad leverans av huvudplaneringen, så att de inte ändras eller tas bort under en senare huvudplaneringskörning. För att uppnå detta kopierar planeringslogiken de *godkända* planerade orderna från den gamla planversionen till den nya planversionen under huvudplaneringen. Observera att *godkända* planerade order endast behandlas som leverans inom den specifika huvudplanen.
 
 Du kan hantera planerade order från arbetsytan **Huvudplanering**, listan **Planerad order** eller listorna **Planerade produktionsorder**, **Planerade inköpsorder** och **Planerad överföring**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

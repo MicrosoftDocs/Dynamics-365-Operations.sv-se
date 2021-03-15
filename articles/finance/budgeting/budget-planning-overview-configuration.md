@@ -204,3 +204,6 @@ Du kan också använda menyn **Åtgärder** för att skapa en ny process att kop
 Ett annat användbart kommando på menyn **Åtgärder** är **Visa budgetprocessens status**. Detta kommando visar grafiskt budgetplanerna i en process, tillsammans med relevanta data, till exempel planernas arbetsflödesstatus, sammanfattningar efter belopp och enhet och enklicksnavigering till själva budgetplanerna.
 
 [![Status för budgetplaneringsprocess](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

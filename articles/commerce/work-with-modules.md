@@ -172,3 +172,6 @@ Om du vill konfigurera en behållarmodul på en sida följer du stegen nedan.
 
 [Arbeta med publiceringsgrupper](publish-groups.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

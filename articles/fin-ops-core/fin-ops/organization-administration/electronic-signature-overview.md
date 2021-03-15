@@ -109,3 +109,6 @@ Följ dessa steg om du vill utse godkännare.
 1. Gå till sidan **Alternativ** och sedan till fliken **Konton** och klicka på **Utse godkännare**.
 2. Välj ID för den användare som ska signera för andra användarens ändringar i fältet **Godkänn användar-ID**.
 3. Välj ID för den användare vars ändringar måste signeras i fältet **Signera för användar-ID**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

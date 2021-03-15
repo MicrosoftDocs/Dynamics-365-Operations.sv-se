@@ -39,3 +39,6 @@ Den här proceduren beskriver hur du konfigurerar länkade produkter. Den här p
 10. Ange ett tal i fältet Kvantitet.
 11. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

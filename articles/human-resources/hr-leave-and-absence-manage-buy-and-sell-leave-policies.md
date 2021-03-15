@@ -80,3 +80,6 @@ Du kan göra det möjligt för medarbetare att sälja tjänstledighet genom att 
 [Periodisera planer för tjänstledighet och frånvaro](hr-leave-and-absence-accrue.md)</br>
 [Köpa och sälja tjänstledighet](hr-employee-self-service-buy-sell-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

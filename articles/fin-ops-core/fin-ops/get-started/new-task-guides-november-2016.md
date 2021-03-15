@@ -547,3 +547,6 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 [Nya eller uppdaterade uppgiftsguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Nya eller uppdaterade uppgiftsguider (augusti 2016)](new-updated-task-guides-available-august-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

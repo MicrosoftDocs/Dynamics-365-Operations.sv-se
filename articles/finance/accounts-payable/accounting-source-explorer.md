@@ -50,3 +50,6 @@ För dessa dokument kan du också navigera till det verkliga källdokumentet fr�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

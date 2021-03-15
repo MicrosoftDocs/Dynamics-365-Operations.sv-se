@@ -62,3 +62,6 @@ När du uppdaterar en befintlig ledighetsansökan kan du lägga till en bilaga. 
 ## <a name="see-also"></a>Se även
 
 - [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -79,3 +79,6 @@ Avskrivningsbeloppet är samma varje år: Innan ÷tjänstelivstid (om anskaffnin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -229,3 +229,6 @@ Du kan också bekräfta att transaktionsrelationerna har uppdaterats på följan
 - Alternativet **Dela kvantitet till ny last** fungerar även när vissa av de återstående arbetsrubrikerna har statusen *Pågår*. Därför kan du fortfarande använda funktionen även om arbetarna redan kör plockningsorder.
 - Om du väljer **Avbryt ej uppfylld kvantitet** när det finns återstående arbete med statusen *Öppen* eller *Pågår* visas följande fel meddelande: "det går inte att avbryta resterande kvantitet för last. Det finns arbete för last."
 - Om du väljer **Avbryt ej uppfylld kvantitet** när det inte finns något återstående arbete men det finns lastrader på ingången, visas följande felmeddelande: "Det gick inte att bekräfta inleveransen eftersom kvantiteten för artikeln överskrider procentsatsen som är definierad för under leveransen." Du undviker felet genom att ange procentsatsen **Under leverans** ej frisläppta raderna till 100 procent. Det går inte att flytta frisläppta rader till en ny last, men den aktuella last bekräftas med under leverans. I det här fallet kommer du inte att kunna frisläppa den ursprungliga ordern igen. Därför måste du hantera den på något annat sätt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

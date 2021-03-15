@@ -238,3 +238,6 @@ En garanti är en tjänst som tillhandahålls för en specifik, unik produkt. I 
 [Ställa in sortiment](set-up-assortments.md)
 
 [Nummerserier – översikt](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

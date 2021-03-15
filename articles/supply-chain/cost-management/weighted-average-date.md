@@ -195,3 +195,6 @@ Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av eko
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

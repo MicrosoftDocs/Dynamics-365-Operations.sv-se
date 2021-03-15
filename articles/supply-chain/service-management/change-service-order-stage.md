@@ -40,3 +40,6 @@ Följ dessa steg för att flytta en serviceorder till nästa steg i servicearbet
 4.  I formulärt **ändra servicefas**, välj lämplig fas.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

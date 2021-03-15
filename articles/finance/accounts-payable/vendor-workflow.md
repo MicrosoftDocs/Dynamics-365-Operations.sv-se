@@ -60,3 +60,6 @@ När du har minst en föreslagen ändring visas två ytterligare flikar i åtgä
     Sidans status ändras till **Ändringar som väntar på godkännande**.
 
 Arbetsflödet följer standard i arbetsflödesprocessen. Godkännaren dirigeras till sidan **Leverantör** där ändringarna kan granskas på sidan **Föreslagna ändringar** och sedan välja **Arbetsflöde \> Godkänn** för att godkänna arbetsflödet. När alla godkännanden har slutförts uppdateras fälten med de värden du har föreslagit.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

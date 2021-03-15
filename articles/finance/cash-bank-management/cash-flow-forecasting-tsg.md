@@ -52,3 +52,6 @@ Kontrollera att mätningarna "Kassaflödesmått V2" och "LedgerCovLiquidityMeasu
 ## <a name="have-the-entity-store-entities-been-refreshed"></a>Har Entitetsarkivets entiteter uppdaterats?
 
 Du måste uppdatera dina entiteter regelbundet för att se till att datan är aktuell och korrekt. Du uppdaterar en specifik entitet manuellt genom att gå till **Systemadministration \> Inställningar \> Entitetsarkiv**, välja eniteten och sedan **Uppdatera**. Det går också att uppdatera data automatiskt. På sidan **Entitetsarkiv** anger du alternativet **Automatisk uppdatering aktiverad** som **Ja**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

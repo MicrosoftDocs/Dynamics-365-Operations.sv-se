@@ -116,3 +116,6 @@ Dessa två lagerjournaler stöder endast scenariot *initiera lager* som en del a
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Datatabeller](../../dev-itpro/data-entities/data-entities.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

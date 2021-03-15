@@ -77,3 +77,6 @@ I den här uppgiften används demonstrationsföretaget USMF.
 10. Klicka på Spara.
 11. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

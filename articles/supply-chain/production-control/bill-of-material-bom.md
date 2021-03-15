@@ -117,3 +117,6 @@ Välj radtypen **Leverantör** om produktionsprocessen använder en underleveran
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Mer information finns i [Samarbeten med externa leverantörer](../../supply-chai
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

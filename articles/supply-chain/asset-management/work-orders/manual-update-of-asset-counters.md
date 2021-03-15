@@ -63,3 +63,6 @@ På sidan **Tillgångsräknare** (**Tillgångshantering** > **Förfrågningar** 
 >[!NOTE]
 >Du kan ställa in ett intervall för att definiera avvikelser i manuella räknarregistreringar. Du kan även ange vilken typ av meddelande som visas om registreringarna ligger utanför det definierade intervallet. Mer information om hur du ställer in räknare finns i [räknare](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

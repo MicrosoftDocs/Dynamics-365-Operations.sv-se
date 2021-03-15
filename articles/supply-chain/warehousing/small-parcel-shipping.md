@@ -279,3 +279,6 @@ Följ dessa steg för att förpacka leveransen.
     ![Exempel på leveransetikett](media/sps-label-example.png "Exempel på leveransetikett")
 
 1. Observera att värdena **Behållarmanifest-ID** och **Total frakt** har lagts till som mottagna från transportföretaget.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

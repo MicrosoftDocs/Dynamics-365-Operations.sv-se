@@ -47,3 +47,6 @@ Dynamics 365 Commerce-webbplatser stöds bäst av följande webbläsare. Gå til
 [Hantera robots.txt-filer](manage-robots-txt-files.md)
 
 [Aktivera platsbaserad butiksidentifiering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Den här proceduren visar hur du skapar ett bakkonto för en leverantör. Du kan
 25. Välj det konto som du nyss skapat i fältet **Bankkonto**.
 26. Klicka på **Spara**. Adressen kan ärvas från bankgruppen, om en sådan har angetts, eller så kan du lägga till den här.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

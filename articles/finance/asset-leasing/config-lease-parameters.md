@@ -45,3 +45,6 @@ Flera konfigurationsinställningar påverkar hur Leasing av tillgångar uppträd
 
     > [!NOTE]
     > Vi rekommenderar att du behåller detta alternativ angivet till **Nej**. Inställningen för det här alternativet används som en validering och kontroll för att förhindra att en stängd boks version avskrivs av misstag. Genom att välja **Nej** kan du hålla det bokförda nettovärdet och framtida avskrivningsberäkningar korrekta.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

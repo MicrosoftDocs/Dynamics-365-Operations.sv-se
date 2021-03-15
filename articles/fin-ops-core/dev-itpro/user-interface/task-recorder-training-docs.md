@@ -123,3 +123,6 @@ Du kan hämta och redigera Microsofts uppgiftsregistreringar för att använda d
 [Uppgiftsinspelare](task-recorder.md)
 
 [Skapa heltäckande hjälpavsnitt med uppgiftsinspelaren (extern länk)](https://mbspartner.microsoft.com/AX/Videos/970)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

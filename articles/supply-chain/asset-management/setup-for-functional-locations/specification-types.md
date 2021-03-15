@@ -63,3 +63,6 @@ Du kan skapa egna attributtyper. Dessutom kan du överföra produktdimensioner t
 9. Spara posten.
 
     I fältet **funktionsplatstyper** visas antalet funktionsplatser som använder attributtypen. Fältet **tillgångstyper** visar antalet tillgångstyper som använder den.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ För att mappa en transportstatus till ett transportföretags status följer du 
 1. Välj den transportstatuskoden som du vill mappa till det valda transportföretagets kod.
 1. Ange den externa kod som används av transportföretaget.
 1. Stäng sidan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

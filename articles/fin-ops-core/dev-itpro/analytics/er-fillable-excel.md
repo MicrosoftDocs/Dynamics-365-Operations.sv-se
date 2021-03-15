@@ -189,3 +189,6 @@ När ett utgående dokument i ett Microsoft Excel arbetsboksformat genereras, ka
 [Bädda in bilder och former i dokument som du skapar med ER](electronic-reporting-embed-images-shapes.md)
 
 [Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

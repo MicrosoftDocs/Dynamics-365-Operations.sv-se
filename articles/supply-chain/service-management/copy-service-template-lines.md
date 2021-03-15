@@ -59,3 +59,6 @@ Servicemallraderna kopieras nu till den nya serviceordern tillsammans med det ko
 [Servicemallar](service-template.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

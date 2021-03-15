@@ -112,3 +112,6 @@ När du har visat den inköpsorder som har tilldelats dig och läst instruktione
 5. Välj lämplig åtgärd.
 6. Skriv en kommentar på sidan **Slutför uppgift**. Observera att om du väljer åtgärden **Delegera** måste du välja den användare du vill delegera uppgiften till.
 7. Välj **Klar**. När du uppdaterar din arbetsyta kommer inköpsordern inte längre att finnas i listan. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

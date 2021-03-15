@@ -53,3 +53,6 @@ I den här proceduren visas hur du skapar en ny förteckning över anläggningst
     * Notera att avskrivningsperioderna beräknas efter det att du har angett tjänstelivslängden.  
     * Du kan ange avskrivningspraxis efter vad som krävs i skattesyfte.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

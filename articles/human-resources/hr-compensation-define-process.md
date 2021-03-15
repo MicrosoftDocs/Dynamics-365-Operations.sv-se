@@ -100,3 +100,6 @@ Kompensationsprocesser används för att bestämma nya kompensationsbelopp och b
 10. Klicka på Godkända.
     * När posten har godkänts kan den läsas in till medarbetarens officiella kompensationspost. Den nya kompensationen blir giltig på det transaktionsdatum som anges i kompensationsprocessen.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

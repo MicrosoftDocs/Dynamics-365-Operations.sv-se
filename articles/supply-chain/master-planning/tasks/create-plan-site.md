@@ -54,3 +54,6 @@ Produktionstadsplaneraren beräknar material- och kapacitetsbehov för att produ
 2. Klicka på Bekräfta.
 3. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

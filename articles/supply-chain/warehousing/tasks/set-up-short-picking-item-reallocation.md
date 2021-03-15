@@ -63,3 +63,6 @@ Demonstrationsdataföretaget USMF har använts för att skapa denna procedur.
 6. I listan väljer du **Användar-ID**. Exempelvis 24.
 7. Expandera snabbfliken **Arbete**.
 8. Välj **Ja** i fältet **Tillåt manuell omallokering av artikel**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

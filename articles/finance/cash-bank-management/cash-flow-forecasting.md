@@ -149,3 +149,6 @@ Dessutom kan du visa kassaflödesprognoser för specifika konton, order och arti
 - **Leveransprognos**: Välj **kassaflödesprognoser** för att visa framtida kassaflöden som är kopplade till den valda artikelleveransprognosen.
 - **Efterfrågeprognos**: Välj **kassaflödesprognoser** för att visa framtida kassaflöden som är kopplade till den valda efterfrågeprognos per artikel.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

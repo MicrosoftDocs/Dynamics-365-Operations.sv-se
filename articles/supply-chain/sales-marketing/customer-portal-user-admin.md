@@ -95,3 +95,6 @@ Följande tabell visar vilka försäljningsorder som användarna i respektive we
 
 > [!NOTE]
 > Även om både Sam och Jane är kontakter som arbetar för kund X, kan de bara se de order som de själva har placerat och inget annat. Även om May kan ha en order i systemet, kan hon inte se ordningen i kundportalen eftersom hon är en obehörig användare. (Dessutom måste hon ha placerat ordern via en annan kanal än kundportalen.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ Beskrivningar av dessa begrepp finns i [nyckelbegrepp för inkassohantering](./c
 [Kreditspärrar för försäljningsorder](./cm-sales-order-credit-holds.md)
 
 [Periodiska kredithanteringsuppgifter för kund](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

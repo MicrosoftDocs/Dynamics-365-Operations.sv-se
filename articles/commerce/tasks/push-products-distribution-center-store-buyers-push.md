@@ -52,3 +52,6 @@ Den här proceduren går igenom stegen för att skapa och bearbeta en centralise
 19. Klicka på Skapa order.
 20. Klicka på Ja.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

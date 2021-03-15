@@ -383,3 +383,6 @@ När alla nödvändiga element är på plats kan du ställa in artikelplacering 
 1. Ställ in upprepning så att körningen sker automatiskt om du vill.
 
 I övningarna i scenariot ska du **inte** ställa in automatisk artikelplacering.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

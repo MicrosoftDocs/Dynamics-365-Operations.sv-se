@@ -129,3 +129,6 @@ Följande lista över affärsdokument styrs av funktionen **Flödesutmatning av 
 [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 
 [Ändringar av API:et för ramverket för elektronisk rapportering för Application update 10.0.17](er-apis-app10-0-17.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

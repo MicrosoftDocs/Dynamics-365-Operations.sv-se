@@ -182,3 +182,6 @@ En artikel har t.ex. produktionstid på en dag och en kvittomarginal på tre dag
 [Kom igång med planeringsoptimering](get-started.md)
 
 [Bristanalys för planeringsoptimering](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

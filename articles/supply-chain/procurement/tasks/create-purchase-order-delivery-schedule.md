@@ -73,3 +73,6 @@ Inköpsordern måste bekräftas före produktinleveransen kan bearbetas. I detta
 6. Komprimera avsnittet **Rader**.
 7. Välj **OK** när du vill bokföra inleveransen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

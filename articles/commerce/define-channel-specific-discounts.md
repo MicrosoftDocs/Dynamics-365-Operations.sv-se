@@ -61,3 +61,6 @@ Följande exempel illustrerar uppgifterna som ingår i konfigurationen av en kan
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Prisjusteringar och rabatter](price-adjustments-discounts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

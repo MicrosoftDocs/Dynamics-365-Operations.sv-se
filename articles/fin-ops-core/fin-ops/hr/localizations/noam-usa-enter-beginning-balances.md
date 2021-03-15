@@ -166,3 +166,6 @@ Det går att återföra och omregistrera transaktioner. Om du vill återföra tr
 2. Klicka på **Ja** när meddelandet ”När du återför detta löneutdrag kommer ett utdrag om löneåterförande att skapas för att kompensera detta löneutdrag. Ingetdera löneutdrag kan redigeras. Vill du återföra detta löneudrag?" visningar. 
 
 När du återför löneutdraget kan du generera ett nytt löneutdrag för arbetaren från inkomstutdrag som du skapade tidigare. Kom ihåg att korrigera felaktiga rader på inkomstutdraget innan du skapar nya löneutdrag och generera sedan nya löneutdrag med korrekt belopp. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

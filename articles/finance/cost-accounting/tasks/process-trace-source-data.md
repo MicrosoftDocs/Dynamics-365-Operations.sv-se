@@ -44,3 +44,6 @@ All databearbetning körs med jobb. För varje jobb och dataprovider skapas en j
     * Välj Fiscal 2017 Period 9 i det här exemplet.  
 14. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

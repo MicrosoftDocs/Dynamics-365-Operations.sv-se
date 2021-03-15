@@ -96,3 +96,6 @@ Så här massöverför du en mapp av bilder i webbplatsskapare.
 [Anpassa bildens fokuspunkter](dam-custom-focal-point.md)
 
 [Ladda upp och betjäna statiska filer](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

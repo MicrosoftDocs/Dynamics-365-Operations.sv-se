@@ -161,3 +161,6 @@ Gör så här om du vill spara hemligheten för Redis-cachens anslutningssträng
 > När du uppdaterar en av anslutningssträngarna måste du också uppdatera de hemliga värdena.
 
 Du har nu slutfört etableringen av de nödvändiga Azure-resurserna. Nästa steg är att [installera IoT-information-tillägget i Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

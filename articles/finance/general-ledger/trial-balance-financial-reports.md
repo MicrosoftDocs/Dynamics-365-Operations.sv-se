@@ -109,3 +109,6 @@ Alla råbalansrapporter använder olika kolumndefinitioner. Dessa kolumndefiniti
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Du kan tilldela serviceobjekt till gruppen med hjälp av formuläret **Serviceob
 [Skapa serviceobjekt](create-service-objects.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Om du kräver att valutaprecisionen för en viss valuta avviker från den valuta
 ### <a name="tables-currency-column"></a>tabeller: valutakolumn
 
 Antalet decimaler som kan konfigureras för särskilda valutakolumner är begränsat till fyra.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

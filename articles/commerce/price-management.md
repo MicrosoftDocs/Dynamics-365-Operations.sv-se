@@ -239,3 +239,6 @@ Dessutom, **endast** prissättningsmotorn stöder följande prissättningsfunkti
 Pris är en av de viktigaste faktorerna som kontrollerar köpbesluten för många kunder och många kunder jämför priserna på olika webbplatser innan de gör ett inköp. För att garantera att de erbjuder konkurrenskraftiga priser håller återförsäljare ett öga på sina konkurrenter och kör ofta erbjudanden. För att hjälpa dessa återförsäljare att locka till sig kunderna är det mycket viktigt att produktsökningen, bläddringsfunktionen, listorna och produktinformation visar de mest exakta priserna.
 
 I en kommande version av Commerce returnerar API:n **GetActivePrices** (Application Programming Interface) priser som innehåller enkla rabatter (t.ex. rabatter på en rad som inte är beroende av andra artiklar i varukorgen). På så sätt ligger priserna som visas nära det faktiska beloppet som kunderna ska betala för artiklar. Denna API kommer att innehålla alla typer av enkla rabatter: anknytningsbaserade, lojalitetsbaserade, katalogbaserade och kanalbaserade rabatter. Dessutom returnerar API:er namn och giltighetsinformation för de rabatter som används, så att detaljhandlare kan ge en mer detaljerad beskrivning av priset och skapa en uppfattning om hur rabatten kommer att förfalla snart.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

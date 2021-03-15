@@ -42,3 +42,5 @@ För varje organisation som erbjuder förmåner måste du konfigurera inställni
    | **E-postavsändarens standardadress** | E-postadressen som ska användas när bekräftelsemeddelandet skickas. |
 
 3. Välj **Spara**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

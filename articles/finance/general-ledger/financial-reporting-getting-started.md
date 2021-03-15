@@ -174,3 +174,6 @@ Problem 3: du kan gå vidare till sidan logga in rapport i ClickOnce rapportdesi
 ## <a name="additional-resources"></a>Ytterligare resurser
 - [Visa ekonomiska rapporter](view-financial-reports.md)
 - [Rapportträddefinitioner i ekonomiska rapporter](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

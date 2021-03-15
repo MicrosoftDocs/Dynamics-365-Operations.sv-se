@@ -53,3 +53,6 @@ Tilldela en dispositionskod när en artikel inlevereras eller under den fysiska 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

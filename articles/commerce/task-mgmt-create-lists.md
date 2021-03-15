@@ -92,3 +92,6 @@ Konfigurera en kassaoperation så att den kan länkas till en uppgift med följa
 [Tilldela uppgiftslistor till butiker eller medarbetare](task-mgmt-assign-lists.md)
 
 [Uppgiftshantering i POS](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

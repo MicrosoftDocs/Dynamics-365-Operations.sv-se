@@ -63,3 +63,6 @@ I den här proceduren visas hur du använder en inköpsavtal när du skapar en i
 3. Stäng sidan.
 4. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

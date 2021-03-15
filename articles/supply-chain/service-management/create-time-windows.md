@@ -39,3 +39,6 @@ Du kan använda tidsfönster för att optimera planeringen av serviceorderradern
 ## <a name="related-topics"></a>Relaterade ämnen
 
 [Tidsfönster](time-windows.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

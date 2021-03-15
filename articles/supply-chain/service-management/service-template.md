@@ -57,3 +57,6 @@ Det är enklare att ta reda på vilka mallrader som du bör kopiera om du gruppe
 ## <a name="related-topics"></a>Relaterade ämnen
 
 [Kopiera servicemallsrader](copy-service-template-lines.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

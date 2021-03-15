@@ -73,3 +73,6 @@ Det här avsnittet visar hur du skapar en inköpsorder manuellt. Den är vanliga
 
 2. Välj **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

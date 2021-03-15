@@ -64,3 +64,6 @@ POS användarens språk är inställd på **Alla arbetare** på sidan **Arbetare
 | **Företag** | Standard                    | Standard                                                       |
 | **Butik**   | Åsidosätter företaget          | Åsidosätter företaget                                             |
 | **Användare**    | Åsidosätter butiken eller företaget | Aldrig                                                         |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

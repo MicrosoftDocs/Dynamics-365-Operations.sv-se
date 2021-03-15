@@ -57,3 +57,6 @@ Du kan ange standardbeskrivningar för koncerninterna kvittningsverifikationer. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

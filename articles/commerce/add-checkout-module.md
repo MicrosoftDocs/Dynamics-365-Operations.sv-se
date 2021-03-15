@@ -126,3 +126,6 @@ Om du vill lägga till en kassamodul på en ny sida och ställa in de obligatori
 [Orderinformationsmodul](order-confirmation-module.md)
 
 [Presentkortsmodul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

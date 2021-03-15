@@ -150,3 +150,6 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 
 3. I fältet **Miljö** anger du namnet på miljön för tillägget Elektronisk fakturering.
 4. Markera **Spara** och stäng sedan sidan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -91,3 +91,6 @@ Följande förutsättningar gäller för körning av proceduren med en annan dat
 12. Stäng sidan.
 13. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

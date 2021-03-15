@@ -154,3 +154,6 @@ I det här exemplet på rörligt genomsnitt skrivs rapporten om lagervärde ut f
 
 > [!NOTE]
 > Du kan inte stämma av redovisningen med lager genom att använda alternativet **Sortering av transaktionstid**. Rapporten måste skrivas ut genom att använda alternativet **Bokföringsdatum**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

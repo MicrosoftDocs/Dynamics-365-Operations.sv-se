@@ -60,3 +60,6 @@ Den här uppgiften leder dig genom stegen för att skapa en kontostruktur. Demof
 29. Klicka på **Aktivera** i **åtgärdsfönstret**.
 30. Klicka på **Aktivera**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

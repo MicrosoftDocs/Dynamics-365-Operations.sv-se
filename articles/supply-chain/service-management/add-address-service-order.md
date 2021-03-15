@@ -74,3 +74,6 @@ Om du vill lägga till en alternativ adress till en serviceorder:
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

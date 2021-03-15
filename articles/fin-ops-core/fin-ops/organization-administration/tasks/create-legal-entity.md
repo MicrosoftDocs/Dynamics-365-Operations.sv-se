@@ -45,3 +45,6 @@ En juridisk person är en organisation som identifieras genom registrering med e
 15. Expandera avsnittet **momsregistrering**. Ange registreringsnumren som används för att rapportera till skattemyndigheten i avsnittet **Momsregistrering**.
 16. Expandera avsnittet **Moms 1099**. Ange 1099-information för juridiska personen i avsnittet **Skatt 1099**.  
 17. Klicka på **Spara**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

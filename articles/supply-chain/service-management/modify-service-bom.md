@@ -71,3 +71,6 @@ Du kan registrera historiken för ett element inom en servicestrukturlista. Varj
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

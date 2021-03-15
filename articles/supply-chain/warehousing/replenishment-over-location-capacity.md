@@ -407,3 +407,6 @@ Du kan nu välja försäljningsorder 2. Den blev spärrad när det påfyllningsa
 - Du kan manuellt åsidosätta lagerpåfyllnadsarbetets tillgänglighet för varje arbetsrubrik från sidan **Arbetsinformation** om du vill.
 - När systemet ställer in tillgänglighet av lagerpåfyllnadsarbete beaktas alla lager som redan finns på platsen innan något arbete har slutförts
 - Varje exemplar av försäljningsorderarbete är kopplat till ett visst påfyllningsarbete. Det finns ingen motsvarande funktion för tillgänglighet av försäljningsresurser.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

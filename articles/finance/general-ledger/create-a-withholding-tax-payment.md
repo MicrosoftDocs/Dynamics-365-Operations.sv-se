@@ -40,3 +40,6 @@ Jobbproceduren för källskatt kvittar källskattssaldon från leverantörsresko
 7. Klicka på **OK**.
 
 ![Parametrar för betalning av källskatt](media/withholding-tax-payment.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

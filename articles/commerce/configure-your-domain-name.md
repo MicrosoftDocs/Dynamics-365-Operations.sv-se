@@ -61,3 +61,6 @@ Om du vill koppla nya domäner till din näthandelsmiljö efter näthandelsiniti
 [Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)
 
 [Aktivera platsbaserad butiksdetektering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

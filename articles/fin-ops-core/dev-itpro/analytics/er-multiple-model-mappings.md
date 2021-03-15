@@ -182,3 +182,6 @@ Modellmappningen **InvoiceProject Copy** för konfiguration **Fakturamodellmappn
 - [Hantera ER-modellmappning i separata ER-konfigurationer](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [Konfigurera ER-modellmappningar som är beroende av landssammanhang](er-country-dependent-model-mapping.md)
 - [Ändringar i ramverks-API för elektroniskt rapportering](er-apis-app10-0-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

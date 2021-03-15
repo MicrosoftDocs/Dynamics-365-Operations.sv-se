@@ -60,3 +60,6 @@ I detta ämne beskrivs hur du förbereder data från externa system så att de k
 8. Ange alternativet **Batchbearbetning** som **Ja** om du vill köra konsolideringen som ett batchjobb vid en viss tidpunkt. Om du vill köra konsolideringen direkt väljer du **OK**. 
 
 De transaktioner och saldon som angetts för konsolideringen i dotterbolagen läggs till i de relevanta kontona i konsoliderad juridisk person.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

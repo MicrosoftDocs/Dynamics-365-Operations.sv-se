@@ -152,3 +152,6 @@ Följ dessa steg för att lägga till rader som representerar den kreditgräns s
 2. Välj den jämförelseoperator som definierar hur poänggruppens informationen ska utvärderas.
 3. Ange det värde som ska jämföras med värdet som angetts för poänggruppen.
 4. Ange den kreditgräns som ska tilldelas om kundinformationen matchar värdet som angetts för poänggruppen. Du kan till exempel skapa en automatisk kreditgräns för den **lägsta** poänggruppen. Om åren i företaget är en av poänggrupperna kan du definiera en rad som tilldelar en 100 000 kreditgräns om kunden har haft verksamheten fem år och en annan rad som tilldelar en 200 000 kreditgräns om kunden har haft verksamheten i 10 år.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

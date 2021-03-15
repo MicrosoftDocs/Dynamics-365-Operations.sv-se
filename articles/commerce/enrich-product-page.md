@@ -74,3 +74,6 @@ Om du vill utöka en produktsida följer du stegen nedan.
 [Kontrollera tillgängligheten för sidinnehåll](verify-accessibility.md)
 
 [Skapa dynamiska näthandelssidor baserade på URL-parametrar](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

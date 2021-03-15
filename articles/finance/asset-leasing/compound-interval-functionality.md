@@ -159,3 +159,6 @@ Följande tabell visar de första tolv månaderna av betalningsplanen. Observera
 
 > [!NOTE]
 > Om annuitetstypen ändras till **Annuitet förfaller**, kommer betalningen att vara i januari i stället för december.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

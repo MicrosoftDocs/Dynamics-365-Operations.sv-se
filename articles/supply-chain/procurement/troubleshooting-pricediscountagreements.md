@@ -124,3 +124,6 @@ Detta är ett förväntat beteende. Eftersom rekvisitioner inte alltid godkänns
 
 Du kan skapa handelsavtal för alla svar på en anbudsförfrågan, oavsett om de har accepterats eller avvisats. För mer information, se [översikt över begära offert (anbudsförfrågan)](request-quotations.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

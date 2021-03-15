@@ -71,3 +71,6 @@ Denna procedur visar hur du ställer in data för automatisk fraktavstämning. D
 11. Ange eller välj ett värde i fältet Underpayment reason code.
 12. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

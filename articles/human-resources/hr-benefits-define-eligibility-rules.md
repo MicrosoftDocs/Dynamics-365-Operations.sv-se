@@ -67,3 +67,6 @@ Detta ämne visar hur du kan skapa förmånsberättigande regler och policyer oc
 10. Välj **Spara**.
 11. Stäng formuläret.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

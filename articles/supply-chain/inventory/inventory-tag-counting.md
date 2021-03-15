@@ -35,3 +35,6 @@ Genom att skapa rader på sidan **Märkesinventering** sätter du ett märkesnum
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Rullande inventering](../warehousing/cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Dessa bör endast användas om avbryt huvudplaneringsjobbet från sidan **oavslu
 4. I **Batchaktiviteter**, välj aktiviteterna som ska avslutas.
 5. Klicka på **Ändra status**, välj **Avbryt** och klicka på **OK**.
 6. På snabbfliken **batchuppgifter** klickar du på **Avbryt**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

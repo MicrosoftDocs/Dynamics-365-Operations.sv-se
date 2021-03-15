@@ -38,3 +38,6 @@ Du kan ställa in kundkreditgrupper på sidan **kundkreditgrupper** (**kredithan
 När du har ställt in en kundkreditgrupp kan du lägga till kunder i den genom att ange deras juridiska person och kundens konto-ID. När du lägger till en ny kund i en kundkreditgrupp söker systemet efter samma kundkonto i alla juridiska personer och ber dig lägga till det i kundkreditgruppen.
 
 Använd menyn **Åldersfördelade saldon** om du vill visa information om åldersfördelade saldon för alla fakturakunder i en kundkreditgrupp. Sidan **Åldersfördelat saldo** visas en översikt över de åldersfördelade saldona för kundkontona för fakturor.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Mer information om fragment och moduler för rubriker finns i [huvudmodul](autho
 [Modul för sidhuvud](author-header-module.md) 
 
 [Cookie-kompatibilitet](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

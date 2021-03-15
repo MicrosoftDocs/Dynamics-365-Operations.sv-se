@@ -383,3 +383,6 @@ Prognostiserat saldo (30) = periodiserad mängd (10x1) + aktuellt saldo (40) –
 - [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)
 - [Konfigurera typer av tjänstledighet och frånvaro](hr-leave-and-absence-types.md)
 - [Periodisera planer för tjänstledighet och frånvaro](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

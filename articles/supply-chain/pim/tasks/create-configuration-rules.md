@@ -54,3 +54,6 @@ Den här proceduren skapar konfigurationsregler som kan användas för dimension
     * Välj det artikelnummer som ska markeras eller avmarkeras beroende på vilken metod som har valts.  
 18. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

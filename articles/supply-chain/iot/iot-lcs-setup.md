@@ -55,3 +55,6 @@ LCS-konfigurationen har nu slutförts. Nästa steg är att [ställa in scenarier
 2. I LCS går du till informationen för Supply Chain Management.
 3. Bläddra till avsnittet **Miljötillägg**.
 4. Välj **Avinstallera** för tilläggsprogrammet för IoT-information.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

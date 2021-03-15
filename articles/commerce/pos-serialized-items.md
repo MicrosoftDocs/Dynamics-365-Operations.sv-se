@@ -135,3 +135,6 @@ Validering av serienummer sker också när en användare utför upphämtningsåt
 [Inkommande lageråtgärder i POS](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [Utgående lageråtgärder i POS](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

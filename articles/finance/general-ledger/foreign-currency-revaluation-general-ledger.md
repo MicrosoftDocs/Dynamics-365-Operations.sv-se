@@ -112,3 +112,6 @@ Du kan ångra resultatet för omvärderingen av datumordning, men du kanske äve
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

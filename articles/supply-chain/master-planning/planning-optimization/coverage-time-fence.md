@@ -85,3 +85,6 @@ När du ställer in tidsgräns för disponering bör du överväga följande pun
 - Den koncerninterna efterfrågan ignoreras om det begärda leveransdatumet som beräknas inte finns innanför tidsgräns för disponering. Observera att, för inbyggd huvudplanering, är koncernintern efterfrågan inte begränsas av tidsgräns för disponering.
 - Behovsprognoser ignoreras om budgetdatumet inte finns innanför tidsgräns för disponering. Observera att, för inbyggd huvudplanering, är efterfrågeprognoser inte begränsade av tidsgräns för disponering.
 - Planeringsoptimering är tidszon–medveten. Den betraktar tidszonen vid tillgångs- och efterfrågeplatserna, och tidpunkten för planeringskörningen. Till exempel, huvudplanering utlöses 11:00 den 15 oktober från en plats i Danmark (GMT +1 tidszon), och en tidsgräns för disponering på tio dagar används. I det här fallet ingår tillgång och efterfrågan från en plats i Seattle (GMT-8 tidszon) fram till 02:00 den 25 oktober (= tio 24-timmars dagar efter att huvudplanering utlöstes, minus tidszonsskillnaden på nio timmar). Observera att den inbyggda huvudplaneringsmotorn endast beaktar datumet för tidsgränsen. Därför kan resultatet skilja sig åt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

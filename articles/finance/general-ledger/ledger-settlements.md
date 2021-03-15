@@ -74,3 +74,6 @@ Du kan återföra en kvittning som har gjorts av misstag.
 ## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Uppdatera listan över konton som ingår i transaktionslistan
 
 Välj **Konton för redovisningskvittning** för att öppna en dialogruta där du kan redigera de konton som ingår i listan över transaktioner. Välj **Ny** om du vill lägga till en ny bild i listan. Listan används för att filtrera listan över transaktioner som visas på sidan **Redovisningskvittningar**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

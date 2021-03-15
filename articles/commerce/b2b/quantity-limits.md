@@ -84,3 +84,6 @@ Följ dessa steg om du vill aktivera funktionen för B2B-orderkvantiteter i Comm
 [Hantera affärspartneranvändare på B2B-näthandelssajter](manage-b2b-users.md)
 
 [Konfigurera betalsätt för kundkonto för B2B-näthandelssajter](payment-method.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ Följande komponenter för ekonomisk rapportering gör det lättare att skapa, v
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 [Generera ekonomiska rapporter](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

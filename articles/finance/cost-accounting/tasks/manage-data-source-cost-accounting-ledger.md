@@ -47,3 +47,6 @@ Använd den här proceduren för att hantera datakällan för redovisning för e
 14. Välj Aktuell i fältet Bokföringsskikt.
 15. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

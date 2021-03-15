@@ -98,3 +98,6 @@ Eftersom data från tabellen **Produkter** har utformats för att flöda ett sä
 ## <a name="quote-and-quote-product-tables"></a>Produktregister för offert och offert
 
 För tabellen **offert**, följ instruktionerna i avsnittet [orderregistret](#order-table) tidigare. För tabellen **offertprodukt**, följ instruktionerna i avsnittet [orderproduktregistret](#order-products-table) tidigare.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -102,3 +102,6 @@ Du kan inte ta bort notifieringar för vissa sekundära datakällor i formulär.
     ```
 2. Skapa en notifiering från formuläret SysTableBrowser.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

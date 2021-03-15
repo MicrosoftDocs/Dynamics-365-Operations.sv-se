@@ -113,3 +113,6 @@ Proceduren har skapats med demodataföretaget DEMF.
     * Välj till exempel "Utförsel".  
 27. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

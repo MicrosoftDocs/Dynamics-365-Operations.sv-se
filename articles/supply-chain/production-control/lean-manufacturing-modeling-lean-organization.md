@@ -66,3 +66,6 @@ För genomförandet av Lean Manufacturing har vi valt ett produktionsflöde och 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

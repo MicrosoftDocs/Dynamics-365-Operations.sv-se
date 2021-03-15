@@ -97,3 +97,6 @@ Använd följande register som hjälper dig att bestämma var du bör tilldela s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

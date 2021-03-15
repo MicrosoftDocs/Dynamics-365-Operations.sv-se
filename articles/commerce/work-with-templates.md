@@ -149,3 +149,6 @@ När du har förhandsgranskat ändringarna i din mall gör du följande för att
 [Översikt över mallar och layouter](templates-layouts-overview.md)
 
 [Arbeta med förinställda layouter](work-with-layouts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

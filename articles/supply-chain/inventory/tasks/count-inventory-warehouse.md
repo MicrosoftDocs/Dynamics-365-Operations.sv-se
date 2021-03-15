@@ -55,3 +55,6 @@ I den här avsnittet beskrivs hur du kan skapa och bokföra en lagerinventerings
 1. Välj **Lager**.
 2. Markera **transaktioner** Här kan du se alla relaterade transaktioner som skapas när du bokför en lagerinventeringsjournal.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

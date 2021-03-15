@@ -45,3 +45,6 @@ I Microsoft Dynamics 365 Human Resources väntedagar på att få en milstolpe at
    | **En dags väntetid** | Välj en väntedag du vill använda vid beräkning av väntedatumet. |
 
 4. Välj **Spara**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

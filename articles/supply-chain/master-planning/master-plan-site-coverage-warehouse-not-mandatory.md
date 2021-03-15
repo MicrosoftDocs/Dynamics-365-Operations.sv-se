@@ -62,3 +62,6 @@ Följande figur illustrerar hur huvudplaneringen fortskrider. Parametrarna som r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

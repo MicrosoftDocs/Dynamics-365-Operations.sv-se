@@ -62,3 +62,6 @@ Användare av Commerce-administrationen kan även söka efter egenskapsvärden f
 [Konfigurera betalsätt för kundkonto för B2B-näthandelssajter](payment-method.md)
 
 [Ange produktkvantitetsgränser för B2B-näthandelssajter](quantity-limits.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

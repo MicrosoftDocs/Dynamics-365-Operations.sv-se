@@ -97,3 +97,6 @@ Konfigurationsversionen tas bort och bekräftelsemeddelandet visas.
 > [!NOTE]
 > Konfigurationer kan bara tas bort av den konfigurationsprovider som skapade dem. Om konfigurationen har delats med en annan organisation måste konfigurationen delas ut innan du kan ta bort den.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

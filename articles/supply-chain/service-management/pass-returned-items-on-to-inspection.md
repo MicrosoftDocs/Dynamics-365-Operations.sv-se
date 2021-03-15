@@ -55,3 +55,6 @@ Då skapas en karantänorder och personen eller avdelningen som utför inspektio
 
 [Ange hur returnerade artiklar ska avyttras](specify-how-to-dispose-of-returned-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

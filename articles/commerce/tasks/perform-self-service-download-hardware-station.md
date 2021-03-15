@@ -36,3 +36,6 @@ Den här proceduren visar hur du laddar ned en fördefinierad maskinvarustation.
 5. Hitta och markera önskad post i listan.
 6. Klicka på Ladda ned.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

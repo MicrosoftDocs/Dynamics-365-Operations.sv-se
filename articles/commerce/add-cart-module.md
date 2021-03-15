@@ -117,3 +117,6 @@ Om du vill lägga till en kundvagnsmodul på en ny sida och ställa in de obliga
 [Beräkna lagertillgänglighet för butikskanaler](calculated-inventory-retail-channels.md)
 
 [Skapa en onlinefunktionsprofil](online-functionality-profile.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

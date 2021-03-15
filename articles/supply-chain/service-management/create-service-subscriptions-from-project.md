@@ -54,3 +54,6 @@ Nu kan du skapa abonnemangstransaktioner för abonnemanget.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

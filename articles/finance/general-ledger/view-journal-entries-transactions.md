@@ -60,3 +60,6 @@ Förutom ekonomiska rapporter kan du använda följande redovisningsrapporter om
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

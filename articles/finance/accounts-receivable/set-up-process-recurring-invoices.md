@@ -66,3 +66,6 @@ När återkommande fakturor bokförs kan du skriva ut fakturorna från sidan med
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

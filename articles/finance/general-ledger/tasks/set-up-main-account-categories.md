@@ -41,3 +41,6 @@ Det här avsnittet innehåller information om hur du ställer in kategorier för
 3. Markera eller avmarkera alternativet **Länkad** för att välja huvudkontona.
 4. Välj **OK**.
 5. Välj **Ja**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

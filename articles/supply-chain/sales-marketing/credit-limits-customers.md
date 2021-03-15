@@ -137,3 +137,6 @@ Ibland kan behöva du kontrollera en kunds kreditgräns manuellt. Du kan exempel
 1.  Klicka på **Försäljning och marknadsföring** \> **Allmänt** \> **Försäljningsorder** \> **Alla försäljningsorder**. Dubbelklicka på en försäljningsorder.
 
 2.  I formuläret **Försäljningsorder**, i fliken **Hantera** i åtgärdsfönstret, klickar du på **Kontrollera kreditgräns**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

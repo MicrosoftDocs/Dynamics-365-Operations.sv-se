@@ -53,3 +53,6 @@ Det här avsnittet förklarar hur du ställer in garantier på tillgångar och t
 
 > [!NOTE]
 > När du skapar en arbetsorder för en tillgång som täcks av en leverantörsgaranti, och arbetsordern har ett förväntat startdatum under garantiperioden, får du ett meddelande om garantiavtalet. Du kan sedan avbryta arbets ordern efter behov.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

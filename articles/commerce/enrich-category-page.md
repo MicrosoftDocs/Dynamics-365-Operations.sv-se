@@ -66,3 +66,6 @@ Om du vill utöka en kategorisida gör du följande.
 [Kontrollera tillgängligheten för sidinnehåll](verify-accessibility.md)
 
 [Skapa dynamiska näthandelssidor baserade på URL-parametrar](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

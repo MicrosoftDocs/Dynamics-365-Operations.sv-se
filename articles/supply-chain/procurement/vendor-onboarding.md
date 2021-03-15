@@ -174,3 +174,6 @@ Genom att tillämpa åtgärden **Ta bort** på registreringsbegäran för en pot
 |         Godkänt         |                                                                               Leverantörsförfrågan godkänns.                                                                               |                                                                                                   Begäran om registrering av potentiell leverantör, de data som angavs i registreringsguiden för leverantör samt leverantörsförfrågan tas bort.                                                                                                    |
 |         Avvisat         |                                                                               Leverantörsförfrågan avvisas.                                                                               |                                                                                                   Begäran om registrering av potentiell leverantör, de data som angavs i registreringsguiden för leverantör samt leverantörsförfrågan tas bort.                                                                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

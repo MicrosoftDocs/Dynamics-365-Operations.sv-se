@@ -54,3 +54,6 @@ Om du vill lägga till en avdelning till avdelning hierarki, följ dessa steg.
 
 ## <a name="steps-for-creating-a-department"></a>Steg för att skapa en avdelning
 Hänvisa till ämnet [Definiera nya avdelningar](../fin-and-ops/hr/tasks/define-new-departments.md) för stegvisa anvisningar om hur du skapar en ny avdelning. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

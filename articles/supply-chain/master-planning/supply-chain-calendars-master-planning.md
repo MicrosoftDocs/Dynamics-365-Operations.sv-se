@@ -142,3 +142,6 @@ För kalender för disponeringsgrupp är det viktigt att beakta som har ett öve
 
 ### <a name="updating-scm-related-calendars"></a>Uppdatera SCM-relaterade kalendrar
 Medan det är viktigt att alla relevanta kalendrar tilldelas på deras respektive plats (leverantör, kund, lager, leveranssätt eller täckningsgrupp), är uppdatering av dem lika viktiga så att de speglar ändringarna. Systemet definierar produktions-, överförings-, inköps- och försäljningsorderdatum beroende på kombinationen av de tilldelade kalendrarna. Det är lämpligt att förtydliga vem som har ansvaret för att tilldela och uppdatera kalendrar i motsvarande områden. Vid en uppdelning eller någon annan ovanlig förändring på arbetsdagarna är det viktigt att uppdatera kalendrarna enligt det. Alla aktiviteter som är beroende av kalendrar, till exempel huvudplanering och produktionsplanering, måste köras när kalendrar uppdateras. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

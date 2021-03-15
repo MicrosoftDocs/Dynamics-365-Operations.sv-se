@@ -72,3 +72,6 @@ Den här proceduren gäller för alla europeiska länder/regioner. Uppgiften ska
 37. Klicka på fliken Allmänt.
     * Sök efter en nyligen skapad rad och kontrollera att avsändaren skickade varorna från Italien.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

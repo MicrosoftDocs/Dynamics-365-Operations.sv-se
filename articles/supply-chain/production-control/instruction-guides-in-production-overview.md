@@ -409,3 +409,6 @@ När Supply Chain Management genererar jobben för produktionsgolvet, samlar det
 - Om du definierar flera flödesoperationsrelationer som omfattar *alla* relationer och tilldelar guider till dem, visas bara guiderna från den mest specifika relationen för jobbet.  
 
 ![Diagram för att lösa relevanta guider](media/instruction-guides-Resolve.png "Diagram för att lösa relevanta guider")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

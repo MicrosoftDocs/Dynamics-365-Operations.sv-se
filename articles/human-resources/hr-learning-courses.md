@@ -137,3 +137,6 @@ Medarbetare som registrerar sig för en kurs via sidan **Självbetjäning för m
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

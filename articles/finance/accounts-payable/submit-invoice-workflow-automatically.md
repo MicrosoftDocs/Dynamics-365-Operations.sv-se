@@ -52,3 +52,6 @@ En fakturarad exkluderas från den automatiska bearbetningen om något av följa
 - Värdet **Status för automatisk inleveransmatchning** för fakturaraden är **misslyckades**.
 - Fakturan används.
 - Fakturan är i arbetsflödessystemet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

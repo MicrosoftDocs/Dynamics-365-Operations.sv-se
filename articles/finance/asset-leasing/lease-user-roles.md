@@ -43,3 +43,6 @@ Följ dessa steg om du vill tilldela användarna roller som används i Leasing a
 1. Gå till **Systemadministration \> Säkerhet \> Tilldela användare till roller**.
 2. Välj rollen **Upprätthålla leasing**, **Leasinghandläggare** eller **Visa leasing** och välj sedan **Tilldela/exkludera användare manuellt**.
 3. Välj användaren som du vill tilldela rollen och välj sedan **Tilldela till roll**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

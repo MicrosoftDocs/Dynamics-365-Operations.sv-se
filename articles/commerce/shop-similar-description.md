@@ -98,3 +98,6 @@ Bilden nedan visar kryssrutan **Aktivera länken Sök efter liknande beskrivning
 [Skapa granskade rekommendationer manuellt](create-editorial-recommendation-lists.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

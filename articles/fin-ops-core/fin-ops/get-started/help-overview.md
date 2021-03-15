@@ -164,3 +164,6 @@ I följande register visas våra webbplatser. Webbplatser som har en asterisk (\
 | [Dynamics Community](https://community.dynamics.com/) | Denna webbplats är värd för bloggar, forum och videor. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Denna webbplats ger information om utvärdering och försäljning. |
 | [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | Denna webbplats är värd för utbildningsresurser, nedladdningsbara rapporter och dokument, och är den primära supportsidan för serviceplaninnehavare. Åtkomst till vissa resurser kan kräva en serviceplan. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

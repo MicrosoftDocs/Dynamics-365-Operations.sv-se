@@ -249,3 +249,6 @@ Det här scenariot visar hur inställningarna som beskrevs tidigare i det här a
 1. I försäljningsordern som du just skapat på snabbfliken **Försäljningsorderrader** väljer du **Lägg till rad** om du vill lägga till ytterligare en rad.
 1. På den nya raden anger du fältet **Artikelnummer** till *M9200* och fältet **Kvantitet** till *1*.
 1. Upprepa raderna 6 till 9 om du vill reservera raden och släppa den på lagerstället. Som tidigare skapar systemet en **ny** leverans för raden som du har lagt till. Eftersom artikeln kommer från artikelgruppen **CarAudio** kommer den att **misslyckas med att klara de begränsningar som du ställer in för grupp med blandad last**. Därför **läggs det till i en ny last**. Om du inte hade angett en grupp med blandad last i lastuppbyggnadsmallen skulle denna leverans ha lagts till i den första lasten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

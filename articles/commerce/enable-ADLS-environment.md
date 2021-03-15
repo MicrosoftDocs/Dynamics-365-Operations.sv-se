@@ -114,3 +114,6 @@ Om det inte redan är klart följer du stegen för [aktivera produktrekommendati
 [Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Parametrar som ställs in i den globala adressboken avgör vilka roller som kan 
     - Om du vill överföra en bild väljer du **Överför ny bild**.
     - Om du vill ta bort en bild markerar du bilden och väljer **ta bort**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

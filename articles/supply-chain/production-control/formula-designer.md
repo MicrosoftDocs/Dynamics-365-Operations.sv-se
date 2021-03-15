@@ -120,3 +120,6 @@ Klicka på **Inställningar** om du vill anpassa informationen som visas i träd
 |     Strukturlista     | Använd kryssrutorna för att välja de kriterier som visas i trädstrukturen. I formeldesignern visas det valda villkoret längst ned på båda flikarna. |
 |    Flöde    |                                           Använd kryssrutorna för att välja de kriterier som visas för flödena.                                           |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

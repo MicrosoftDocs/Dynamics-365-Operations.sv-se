@@ -72,3 +72,6 @@ När en konfiguration har skapats i din konfigurationsleverantör kan du dela de
 Konfigurationen delas med den externa organisationen och är tillgänglig för den organisationen i den globala databasen. Därifrån kan den importeras till organisationens instans av RCS eller till dess instanser av Finance and Operations-appar.
 
 6. Om du vill ta bort delning av en konfiguration som tidigare har delats med en extern organisation, markerar du konfigurationen och klickar på **Ta bort delning** innan du väljer **OK**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

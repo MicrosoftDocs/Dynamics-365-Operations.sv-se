@@ -145,3 +145,6 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 46. Stäng sidan.
 ![ER-åtgärdsdesignersida](../media/er-financial-dimensions-guides-format2.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

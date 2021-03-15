@@ -42,3 +42,6 @@ Detta förfarande anger hur du använder verifikationstransaktionbegäran för a
 12. Klicka på **Ursprungsdokument** i åtgärdsfönstret.
 13. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Kunder kan göra en delbetalning där det resterande beloppet inte betalas men �
 
 
 Mer information finns i [Sätta in kundbetalningar](tasks/deposit-customer-payments.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

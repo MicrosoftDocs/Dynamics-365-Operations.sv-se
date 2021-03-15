@@ -107,3 +107,6 @@ För leverantörsbetalningar använder förfaller till- och förfaller från-tra
 
 ## <a name="withholding-tax"></a>Källskatt
 Leverantörskontot som är associerat till fakturan används för att avgöra om källskatt ska beräknas. Om källskatt gäller beräknas denna i den juridiska person som är associerad med fakturan. Om de juridiska personer använder olika valutor, används valutakursen från den juridiska person som är kopplad till fakturan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

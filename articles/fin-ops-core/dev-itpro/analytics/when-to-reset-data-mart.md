@@ -54,3 +54,6 @@ Det finns vissa omständigheter när vi inte rekommenderar att du återställer 
 > Följande punkter anger två saker som du *inte* gör när du återställer data. <br>
 > - Återställningar rensar inte rapportdesigner. <br>
 > - När du återställer rensas inte företagsdata eller användardata om de inte har valts.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -119,3 +119,6 @@ Den här proceduren visar hur du ställer in en ny process för lagerpåfyllnad 
 11. Klicka på **OK**.
 12. Klicka på **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

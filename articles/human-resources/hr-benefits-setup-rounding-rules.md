@@ -36,3 +36,6 @@ Du kan ange avrundningsregler i Dynamics 365 Human Resources så att de uppfylle
 3. Ange värden för **Avrunda till närmaste**, **Scenario** och **Avrundningsformulär**.
 
 4. Välj **Spara**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

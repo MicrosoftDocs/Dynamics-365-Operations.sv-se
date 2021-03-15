@@ -59,3 +59,6 @@ När du skapar eller tilldelar användare till en roll, verkställs automatiskt 
 
 > [!NOTE]
 > Om flera konflikter finns med för samma användare väljer du användarposten och utvärderar tilldelade roller på sidan **Användare**. Undvik den här konflikten genom att validera varje regel när den har lagts till eller ändrats.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

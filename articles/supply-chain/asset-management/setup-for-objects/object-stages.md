@@ -69,3 +69,6 @@ När du har skapat de nödvändiga livscykeltillstånden för tillgångar kan du
 
 6. Välj **uppdateringar av livscykeltillstånd** för att definiera vilka livscykeltillstånd för tillgångar som kan följa ett valt livscykeltillstånd.
 7. Du kan använda snabbfliken **tillgångstillstånd** om du hanterar tillgångar som du tar emot för reparation. I avsnittet **inkommande/utgående** kan du välja livscykeltillstånd för tillgångar för att indikera arbetsflödet för en tillgång som du tar emot för reparation. Om du erbjuder lånetillgångar till kunder eller avdelningar kan du i avsnittet **lån** välja livscykeltillstånd för lånetillgångar.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

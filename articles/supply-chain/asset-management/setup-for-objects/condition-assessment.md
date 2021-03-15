@@ -65,3 +65,6 @@ När du har gjort en registrering av villkorsutvärdering på en tillgång kan d
 
 >[!NOTE]
 >Du kan också registrera villkorsutvärdering på en arbetsorder (knappen **tillgångshantering** > **allmänt** > **arbetsorder** > **alla arbetsorder** > **villkorsutvärdering**.)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

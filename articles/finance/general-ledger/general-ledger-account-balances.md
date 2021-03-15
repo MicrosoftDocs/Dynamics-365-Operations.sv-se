@@ -50,3 +50,6 @@ Mer information finns i [Visa ekonomiska rapporter](view-financial-reports.md).
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

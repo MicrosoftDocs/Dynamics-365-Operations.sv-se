@@ -70,3 +70,6 @@ Anna kan granska leverantörstransaktionerna på sidan **Leverantörstransaktion
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

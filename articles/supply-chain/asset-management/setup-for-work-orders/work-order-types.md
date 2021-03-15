@@ -51,3 +51,6 @@ Mer information om livscykeltillstånd för arbetsorder och projektfaser finns [
 8. Välj **Spara**.
 
 ![Typer av arbetsorder](media/16-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

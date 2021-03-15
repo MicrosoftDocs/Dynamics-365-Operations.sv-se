@@ -91,3 +91,6 @@ När du har slutfört registreringen väljer du **Klart** för att bokföra jour
 -   Material kan vara överförbrukade. Exempelvis om materialet är beräknat att vara förbrukat med kvantiteten 100 kg kan det sedan vara överförbrukat med samma kvantitet, till exempel 105 kg.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

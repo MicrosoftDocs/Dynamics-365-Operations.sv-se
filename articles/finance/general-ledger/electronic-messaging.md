@@ -535,3 +535,6 @@ Du kan nu ta bort eller uppdatera meddelandestatus. För att uppdatera meddeland
 ![Uppdatera meddelandets status](media/update-status.png)
 
 Meddelandestatus har uppdaterats till **förberedd** och du kan nu skapa rapporten genom att markera **generera rapporten**. Rapporten genereras och meddelandestatus och åtgärdsloggen uppdateras. För att visa den genererade rapporten väljer du knappen **bilaga** (gemsymbolen) i övre högra hörnet på sidan.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ I bilden nedan visas ett exempel på val för skicka ut i dialogrutan **Schemal�
 [!NOTE]
 Om du vill ta bort schemat för en arbetsorder gör du det genom att välja arbetsordern i **Alla arbetsorder** och klicka på **Ta bort schema** på fliken **Allmänt**. Kom ihåg att uppdatera arbetsorderns livscykeltillstånd manuellt om du tar bort schemat.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

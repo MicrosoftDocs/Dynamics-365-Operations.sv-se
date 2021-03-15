@@ -61,3 +61,6 @@ Använd den här proceduren för att skapa en inköpsorder som ska kontrolleras 
 4. Klicka på Fel eller varningar från budgetkontroll.
 5. Klicka på Stäng.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

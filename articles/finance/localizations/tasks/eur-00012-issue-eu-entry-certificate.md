@@ -86,3 +86,6 @@ Den här proceduren beskriver hur du aktiverar ett EU-mottagningskvitto genom at
 4. Klicka på Faktura i åtgärdsfönstret.
 5. Klicka på Visa utfärdade mottagningskvitton.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

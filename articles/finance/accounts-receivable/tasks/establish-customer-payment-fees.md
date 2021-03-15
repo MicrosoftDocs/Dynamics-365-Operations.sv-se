@@ -50,3 +50,6 @@ I den här uppgiften används demonstrationsföretaget USMF.
 18. Välj valuta för avgiften i fältet **Avgiftsvaluta**. Detta är den valuta som avgiften ska skapas i.  
 19. Klicka på **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

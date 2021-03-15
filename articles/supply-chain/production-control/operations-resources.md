@@ -84,3 +84,6 @@ När du definierar en aktivitet som till exempel en flödesoperation eller en ti
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

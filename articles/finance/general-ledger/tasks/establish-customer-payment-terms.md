@@ -56,3 +56,6 @@ I den här proceduren definieras kassarabatt- och förfallodatuminställningar. 
 26. I **Huvudkonto för leverantörsrabatter** anger du det huvudkonto där kassarabatten ska bokföras för leverantörsfakturor.
 27. Klicka på **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

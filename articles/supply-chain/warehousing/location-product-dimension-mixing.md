@@ -238,3 +238,5 @@ Du skapar en inköpsorder med tre rader: två rader för samma produktnummer men
 
 > [!TIP]
 > Du kan upprepa scenariot, men den här gången ändra **Storlek** - *Nej* under snabbfliken **tillåta blandning av produktdimensioner** på *BULK* **platsprofiler**, så att ingen av produkt dimensionerna kan blandas. I det här fallet, när du tar emot inköpsordern, kommer varje produktvariant att placeras på en ny plats.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

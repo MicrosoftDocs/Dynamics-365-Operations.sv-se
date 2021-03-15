@@ -74,3 +74,6 @@ Sidfoten som innehåller copyrightinformationen visas automatiskt längst ner p�
 
 [Lägga till skriptkod på webbsidor för att stödja telemetri](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

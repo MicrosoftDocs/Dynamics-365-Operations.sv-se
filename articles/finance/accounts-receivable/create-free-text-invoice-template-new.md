@@ -67,3 +67,6 @@ För den här genomgången använder du demonstrationsföretaget USMF. Procedure
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Spara en fritextfaktura som en mall
 Du kan också spara en befintlig fritextfaktura som en mall. När du väljer Spara till mall på fliken Faktura, ange ett namn och en beskrivning för mallen. Om det finns redan en mall med namnet, visas ett meddelande om att en mall med samma namn redan finns. Du kan fortfarande klicka på Ok om du vill ersätta den. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

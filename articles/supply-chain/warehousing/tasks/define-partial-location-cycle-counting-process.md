@@ -72,3 +72,6 @@ När du använder planer för rullande inventering för att skapa inventeringsar
 14. Klicka på OK.
 15. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

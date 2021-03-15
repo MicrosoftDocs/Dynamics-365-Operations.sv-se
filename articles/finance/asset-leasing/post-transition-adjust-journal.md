@@ -46,3 +46,6 @@ Om du vill bokföra en övergångsjustering i enlighet med de nya redovisningsst
 
 5. För att visa journalposten väljer du **Journaler för leasing av tillgångar**.
 6. Välj den nya journalen och välj sedan **Bokför**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

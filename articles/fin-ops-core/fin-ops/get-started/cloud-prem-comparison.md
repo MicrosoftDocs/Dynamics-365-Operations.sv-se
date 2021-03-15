@@ -176,3 +176,6 @@ En lista över funktioner som är tillgängliga i lokal distribution finns i [Co
 
 \* I lokala miljöer visar PerfTimer endast resultat för-klienten.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

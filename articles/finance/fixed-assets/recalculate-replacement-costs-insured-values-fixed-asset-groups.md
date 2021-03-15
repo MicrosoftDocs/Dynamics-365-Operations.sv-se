@@ -77,3 +77,6 @@ Nästa dag informerar chefen om att datorerna har minskat 8 procent i stället f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

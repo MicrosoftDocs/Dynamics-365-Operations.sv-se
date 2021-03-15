@@ -44,3 +44,6 @@ Tidigare skapade konfigurationer beaktas inte längre när du återställer åte
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

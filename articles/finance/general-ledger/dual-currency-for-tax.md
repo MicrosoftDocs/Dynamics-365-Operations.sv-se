@@ -143,3 +143,6 @@ Mer information finns i följande avsnitt:
 - [Dubbel valuta](dual-currency.md)
 - [Momsöversikt](indirect-taxes-overview.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

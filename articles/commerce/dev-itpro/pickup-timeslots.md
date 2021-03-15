@@ -127,3 +127,6 @@ I kundtjänstprogrammet kan kundtjänstmedarbetare välja upphämtningsbutik ell
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Informationsmodul för upphämtning](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

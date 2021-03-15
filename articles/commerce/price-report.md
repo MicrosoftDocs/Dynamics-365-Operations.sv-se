@@ -43,3 +43,6 @@ För att aktivera prisrapporten måste parametern **Aktivera prisrapport för bu
 | Visa produkter med prisändringar | Om du anger detta till **Ja** visas priserna endast för de datum då priset har ändrats. Priset för *en dag före* det valda **från datumet** kommer alltid att visas, så att butikschefen enkelt kan identifiera de produkter som inte har ändrade priser under hela valda varaktigheten och kan också visa det aktuella priset. |
 
 När rapporten har skapats kan Excel-filen hämtas för eventuella ytterligare filtreringsbehov. Prisrapporten kan också användas för att kontrollera historiska priser för produkter för tidigare datum.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ I det här avsnittet visas hur du skapar en streckkod manuellt med hjälp av art
 12. Välj **Spara**.
 13. Stäng sidan. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

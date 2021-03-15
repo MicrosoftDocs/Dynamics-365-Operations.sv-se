@@ -110,3 +110,6 @@ Den korrigerade kostnaden per timme samt jobbtiden bokförs i produktionsjournal
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

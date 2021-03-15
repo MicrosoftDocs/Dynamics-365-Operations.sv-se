@@ -58,3 +58,6 @@ På sidan **planerad order** under fliken **Förseningar** är **önskat datum**
 --------
 
 [Disponeringsinställningar](coverage-settings.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

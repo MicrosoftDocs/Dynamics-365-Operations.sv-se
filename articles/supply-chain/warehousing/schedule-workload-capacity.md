@@ -79,3 +79,6 @@ Om den här informationen inte anges korrekt, visas ett meddelande när du gener
 3. På fältet **Ordertyp** välj **planerat och bekräftat**, **planerat**, eller **bekräftat** för att bestämma vilken typ av order till projekt i rapporten.
 4. Välj en beläggningtyp om du vill visa att arbetsbördakapaciteten ska förutses för volym eller vikt, i fältet **Beläggningstyp**.
 5. Välj en inställning för arbetsbelastningskapacitet i fältet **Arbetsbelastningskapacitet**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ I följande illustrationer visas en mallmappning i dataintegrering.
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>Arbetsorder med projekt (Field Service till Supply Chain Management): WorkOrderService
 
 [![Mallmappning i dataintegrering](./media/FSWOP4.png)](./media/FSWOP4.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

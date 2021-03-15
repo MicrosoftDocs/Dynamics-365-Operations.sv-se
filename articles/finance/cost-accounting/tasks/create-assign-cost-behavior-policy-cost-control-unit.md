@@ -85,3 +85,6 @@ Kostnadsbeteende är klassificeringen av kostnader som fasta eller rörliga. En 
 15. Ange eller välj ett värde i fältet Kostnadsstyrenhet.
 16. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

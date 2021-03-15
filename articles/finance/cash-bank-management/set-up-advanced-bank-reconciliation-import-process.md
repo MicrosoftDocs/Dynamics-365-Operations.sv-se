@@ -198,3 +198,6 @@ Om importen lyckades visas ett meddelande om att utdraget har importerats. Om im
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Du kan skapa mål, lägga till aktiviteter för mål, spåra mått och länka m�
     * Det finns ofta ett flertal mål som är ofta desamma eller liknande för teammedlemmar eller för alla medarbetare.     Din personaladministratör eller chef kan skapa målgrupper som innehåller en eller flera målmallar. Du kan lägga till mål från en målgrupp och sedan ändra dem så att de matchar dina tidslinjer.  
     * När du skapar en granskning, kan du lägga till mål till den granskningen. Se uppgiftsguiden för granskningen för att se hur du kan lägga till mål till dina granskningar.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

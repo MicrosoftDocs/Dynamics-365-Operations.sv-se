@@ -300,3 +300,6 @@ Den tydliga avgränsningen mellan **kostnadsallokering** och **Policyer för sam
 -  [Dimensioner för kostnadselement](cost-elements.md)
 -  [Dimensionshierarki](dimension-hierarchy.md)
 -  [Beräkning av indirekta kostnader](overhead-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

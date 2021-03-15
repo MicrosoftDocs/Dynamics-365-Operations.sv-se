@@ -56,3 +56,6 @@ Du kan inkludera en orsakskod och en kommentar när du justerar en medarbetares 
 
 - [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)
 - [Hantera begäranden om ledighet och frånvaro](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

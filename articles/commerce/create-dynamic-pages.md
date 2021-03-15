@@ -96,3 +96,6 @@ När den anpassade sidan har publiceras visas den istället för den dynamiska s
 [Kontrollera tillgängligheten för sidinnehåll](verify-accessibility.md)
 
 [Utbyggbarhet för onlinekanal](e-commerce-extensibility/overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -128,3 +128,6 @@ När du väljer panel **adressändringar** visas information om adressändringar
 > Om du vill få en notifiering eller skicka e-post om dessa adress ändringar, kan du skapa en ny notifieringsregel på fliken **Alternativ** i åtgärdsfönstret. Mer information om hur du skapar varningsregel finns i [Skapa varningsregel](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
 
 > Om du vill konfigurera ett arbetsflöde för adressändringarna kan du välja alternativet **Skicka externt** i varningsregeln och sedan använda Power Automate för att utlösa affärshändelsen och konfigurera ett arbetsflöde. Mer information finns i [notifieringar som affärshändelser](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

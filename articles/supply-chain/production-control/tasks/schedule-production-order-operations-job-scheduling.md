@@ -55,3 +55,6 @@ Det här avsnittet fokuserar på tidsplanering av en produktionsorder med grovpl
 6. Välj **Produktionsorder** i åtgärdsfönstret.
 7. Välj **Alla jobb**. Observera att 5 jobb skapas med jobbplanering baserat på den aktiva rutten.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

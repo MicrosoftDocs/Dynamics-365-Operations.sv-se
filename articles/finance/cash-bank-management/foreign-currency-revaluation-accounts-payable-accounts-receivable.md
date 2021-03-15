@@ -65,3 +65,6 @@ En registrering görs varje gång du kör en omräkning i utländsk valuta. Frå
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

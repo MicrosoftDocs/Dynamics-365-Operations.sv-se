@@ -56,3 +56,6 @@ Allt eftersom organisationen växer måste du börja följdplanera. Vid följdpl
 27. Välj **Resultat**.
 28. Välj **Rapport**. Rapporten listar de bästa matchningarna högst upp i rapporten. Du kan se att en lucka har listats. En lucka är skillnaden mellan färdighetsmappningsnivån och personens färdighetsnivå.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

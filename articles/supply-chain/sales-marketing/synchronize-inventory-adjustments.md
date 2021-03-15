@@ -80,3 +80,6 @@ I följande illustrationer visas en mallmappning i dataintegrering.
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>Lageröverföring (Field Service till Supply Chain Management): Lageröverföring
 
 [![Mallmappning i dataintegrering](./media/FSTrans1.png)](./media/FSTrans1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

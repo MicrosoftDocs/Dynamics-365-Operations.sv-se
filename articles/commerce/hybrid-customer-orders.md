@@ -40,3 +40,6 @@ Om en vagnrad har valts och **Hämta valda**, **Skeppa valda** eller **Leverera 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Kundorder i Modern POS (MPOS)](customer-orders-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

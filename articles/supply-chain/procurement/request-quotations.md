@@ -246,3 +246,6 @@ I exemplet nedan du ser högsta/lägsta status på anbudsförfrågansärenden d�
 | Acceptera ett av buden. (eller minst en rad) |                          Inlevererat                           |                           Accepterade                           |                    Inlevererat                    |                    Accepterade                     |                   Inlevererat                   |                   Accepterade                    |
 |           Avvisa alla de andra buden.           |                          Avvisat                           |                           Accepterade                           |                    Avvisat                    |                    Accepterade                     |                   Avvisat                   |                   Godkänt                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

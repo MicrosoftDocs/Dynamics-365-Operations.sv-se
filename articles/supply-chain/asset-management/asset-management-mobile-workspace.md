@@ -239,3 +239,6 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 1. Välj **Klar**.
 
     ![Lägg till en bilaga till en underhållsbegäran](media/am-mobile-10.png "Lägg till en bilaga till en underhållsbegäran")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

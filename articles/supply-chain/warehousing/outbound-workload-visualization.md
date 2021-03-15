@@ -97,3 +97,6 @@ Följande bild visar ett exempel på det resulterande diagrammet.
 ![Visualisering av zoner kontra arbetsstatus](media/work-viz-chart.png "Visualisering av zoner kontra arbetsstatus")
 
 Det här diagrammet visar två zoner med namnet **VÅNING** och **BULK**, plus en zon som har namnet **Tom**. Den **tomma** zonen representerar alla arbetsrader som inte är medlemmar i några zoner. Diagrammet visar alltid alla icke-relaterade filtrerade data som **tomma** för att ge så mycket synlighet som möjligt. I **GOLVET** visar diagrammet tre stängda rader och fyra öppna rader. I **BULK** visar diagrammet fyra stängda rader, en öppen och 24 annullerade rader. Slutligen visar diagrammet åtta stängda rader som inte ingår i någon zon och därför listas som **tomma**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

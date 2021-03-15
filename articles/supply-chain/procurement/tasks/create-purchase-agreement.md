@@ -71,3 +71,6 @@ I den här avsnittet får du hjälp med att skapa ett inköpsavtal. Detta görs 
 5. Välj **Bekräftelser av inköpsavtal**. Med alternativet **Förhandsgranska/Skriv ut** kan du generera ett dokument för inköpsavtalet som du sedan kan skriva ut eller skicka till leverantören. Om du uppdaterar avtalet senare och bekräftar det på nytt visas båda versionerna här.  
 6. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

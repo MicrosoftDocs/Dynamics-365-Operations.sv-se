@@ -67,3 +67,6 @@ Inköpsprisposterna för artiklar används även som referensinformation. Genom 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

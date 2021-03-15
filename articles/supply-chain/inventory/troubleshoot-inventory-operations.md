@@ -157,3 +157,6 @@ Det här problemet uppstår när lagertransaktionskvantiteten anges som ett deci
 
 > [!IMPORTANT]
 > Vi rekommenderar starkt att du noggrant redigerar skriptet som krävs för din miljö, testar den i en testmiljö och sedan kontrollerar resulterande data innan du kör skriptet i en produktionsmiljö.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

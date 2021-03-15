@@ -37,3 +37,6 @@ Den här proceduren visar hur du visar PIA-utdrag på en produktionsorder. Det d
 6. Ange datumet till "2012-12-01" i fältet Från datum.
 7. Ange datumet till "2012-12-31" i fältet Till datum.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

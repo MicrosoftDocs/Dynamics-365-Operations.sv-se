@@ -42,3 +42,6 @@ I den här proceduren visas hur du använder leverantörssamarbete om du vill vi
 1. Gå till Leverantörssamarbete > Försändelselager > Behållning i försändelselager.
     * Lagersidan för behållningsförsändelse (On-hand consignment inventory) visar det lager som du äger på kundens lagerställe. Du kan visa ytterligare dimensioner, till exempel plats och lagerställe, genom att klicka på fliken Display dimensions.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

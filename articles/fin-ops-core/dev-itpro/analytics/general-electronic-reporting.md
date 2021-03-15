@@ -298,3 +298,6 @@ Listan över ER-konfigurationer för Finance uppdateras regelbundet. Öppna den 
 
 - [Skapa konfigurationer för elektronisk rapportering (ER)](electronic-reporting-configuration.md)
 - [Hantera livscykeln för konfiguration av elektronisk rapportering (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

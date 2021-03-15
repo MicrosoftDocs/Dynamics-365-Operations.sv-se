@@ -47,3 +47,6 @@ I arbetsytan **funktionshantering** aktivera följande funktion: **Generera moms
 Den följande bilden visar ett exempel på den rapport som genereras. Rapporten visar att rapporteringskoden **101** har valutan **EUR** om fältet **momsvaluta** anges till **EUR** för den momskod som rapportkoden är tilldelad till.
 
 ![Exempel på rapporten för momsbetalning per kod](media/Sales-tax-payment-by-code-2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ På snabbfliken **målredovisningskontot** är huvudkontot samma kostnadskonto f
 > Du kan också använda knappen **Kopiera** för att duplicera den valda allokeringen.
 
 När ett allokeringsvillkor skapas för ett huvudkonto kommer systemet automatiskt att bokföra en ny verifikation när en verifikation som matchar ekonomiska källdimensionerna för allokeringsvillkoren bokförs.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ När kolumnerna i Sales fylls i gäller följande begränsningar:
 + Inställningarna för avgifter och debiteringar i Supply Chain Management replikeras inte i Sales.
 + Priserna anser inte vara särskilda detaljhandelspris som är angivna i kolumnen **butikskanal** på sidan försäljningsorderrad i Supply Chain Management.
 + Rabatter som definieras i avsnittet **Hantering av handelsavdrag** i Supply Chain Management beaktas inte.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

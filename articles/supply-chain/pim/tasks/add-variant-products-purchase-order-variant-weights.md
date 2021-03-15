@@ -47,3 +47,6 @@ Den här proceduren går igenom stegen vid användning av variantvikt för att a
 17. Ställ in kvantiteten på 1000.
 18. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

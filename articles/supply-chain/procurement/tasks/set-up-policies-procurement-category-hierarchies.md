@@ -51,3 +51,6 @@ Använd den här proceduren för att ställa in regler för att beställa produk
 6. I fältet **Leverantörsurval** väljer du ett alternativ. Välj en regel för att kontrollera vilken typ av leverantörer som kan väljas för kategorin, när rekvisitioner skapas.  
 7. Klicka på **Stäng**. De policyregler som du har definierat har varit för rekvisitioner av typen Förbrukning. Om du vill definiera policyer för rekvisitioner av typen Återanskaffning, ska du skapa en regel för Policyregeltypen som kallas "Åtkomstpolicyregel för återanskaffningskategori".  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

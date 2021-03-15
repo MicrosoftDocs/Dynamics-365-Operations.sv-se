@@ -40,3 +40,6 @@ Detta avsnitt förklarar hur man ställer in enskilda nummerserier. Nummerserier
 8. Expandera den **allmänna** delen. Ange om nummerserien är manuell och kontinuerlig eller ickekontinuerlig på snabbfliken Allmänt. Ange även lägsta och högsta numret som kan användas i nummerserien. Vi rekommenderar inte att ändra en löpande nummerserie till en kontinuerlig nummerserie. Nummerserien kommer inte att vara korrekt kontinuerlig. Den här ändringen kan även orsaka dubbelnyckelkränkningar i databasen. Dessutom har kontinuerliga nummerserier en större effekt på systemets prestanda.   
 9. Klicka på **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

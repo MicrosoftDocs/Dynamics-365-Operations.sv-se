@@ -172,3 +172,6 @@ Den Commerce-tillhandahållna Azure Front Door-instansen stöder inte apex-domä
   [Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)
 
   [Aktivera platsbaserad butiksdetektering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

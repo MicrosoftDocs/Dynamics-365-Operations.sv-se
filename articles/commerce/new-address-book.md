@@ -56,3 +56,6 @@ Följande bild visar hur en adressbok för medarbetare skapas för en butik.
 [Layoutöversikt för skärm](pos-screen-layouts.md)       
 
 [Konfigurera och installera Retail Hardware Station](retail-hardware-station-configuration-installation.md)  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -100,3 +100,6 @@ Följ dessa steg om du vill konfigurera ett anpassat belopp för ett digitalt pr
 [Skapa en onlinefunktionsprofil](online-functionality-profile.md)
 
 [Stöd för externa presentkort](./dev-itpro/gift-card.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

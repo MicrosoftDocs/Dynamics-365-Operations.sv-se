@@ -58,3 +58,6 @@ I det här avsnittet beskrivs hur du skapar och tilldelar en avancerad regelstru
 17. Stäng sidan.
 18. Välj **aktivera**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

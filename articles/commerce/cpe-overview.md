@@ -63,3 +63,6 @@ Om du vill etablera bedömningsmiljö för Commerce, se [Etablera en bedömnings
 [Konfigurera valfria funktioner för en Dynamics 365 Commerce bedömningsmiljö](cpe-optional-features.md)
 
 [Dynamics 365 Commerce bedömningsmiljö – vanliga frågor](cpe-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

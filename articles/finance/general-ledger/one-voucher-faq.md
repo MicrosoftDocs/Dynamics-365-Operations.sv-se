@@ -51,3 +51,6 @@ Precis som för varje ny funktion måste kunderna studera versionsplanen och dok
 ## <a name="when-the-deprecation-date-is-identified-where-will-it-be-communicated"></a>När avskrivningsdatum identifierats, var kommer detta att kommuniceras?
 
 Avskaffandet av En verifikation är en viktig ändring som kommuniceras allmänt. Detta kommuniceras via produktdokumentationen, ett blogginlägg och meddelanden på tillämpliga Microsoft-konferenser långt innan det datum då avvisningen börjar gälla.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

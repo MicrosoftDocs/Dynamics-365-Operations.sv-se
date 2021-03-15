@@ -63,3 +63,6 @@ I detta avsnitt beskrivs hur du skapar ett kontinuitetsprogram (även känt som 
     * När artikeln säljs hos en kundtjänst tillämpas affärslogik från det valda kontinuitetsprogrammet.  
 7. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

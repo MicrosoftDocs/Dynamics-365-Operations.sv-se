@@ -69,3 +69,6 @@ I den här proceduren visas hur du kan skapa och uppdatera en försäljningsoffe
 13. Klicka på **Försäljningsorder**.
 14. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

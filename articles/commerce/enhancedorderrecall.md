@@ -63,3 +63,6 @@ En användare kan välja en operation i AppBar. Beroende på orderns status kan 
 - **Redigera** – tillåter att användare ändrar den valda kundordern.
 
 - **Hämta** – startar upphämtningsflödet, vilket innebär att användaren kan välja produkter som ska hämtas och skapa en transaktion för upphämtningsförsäljning.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

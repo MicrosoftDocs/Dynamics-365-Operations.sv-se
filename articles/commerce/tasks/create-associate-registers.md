@@ -43,3 +43,6 @@ I den här proceduren visas hur du skapar ett kassaregister (POS). I den här pr
     * EFT-kassanumret används för att informera betalningsprocessorn vilken betalningterminal som skickar auktoriseringförfrågningar. Det här värdet kallas ofta ”Terminal-ID ”eller ”Organisationsnummer”. Organisationsnumret hittas på klistermärke på betalningsenheten.  
 9. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

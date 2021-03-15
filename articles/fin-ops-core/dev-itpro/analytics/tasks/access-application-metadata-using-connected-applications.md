@@ -113,3 +113,6 @@ I följande steg förklaras hur en användare av Regulatory configuration servic
 11. Stäng sidan. 
 
 När du behöver utvärdera den här modellmappningen med hjälp av metadata i ett annat versionsprogram, registrerar du ett annat anslutet program, tilldelar det till den här modellmappningen och validerar det mot nya metadata.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

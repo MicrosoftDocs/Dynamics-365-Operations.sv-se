@@ -145,3 +145,6 @@ Versionsdimensionen fungerar som de andra produktdimensionerna. På grund av des
 
 > [!IMPORTANT]
 > Om du aktiverar och använder versions dimensionen kan vissa lösningar som refererar till lagerdimensionerna sluta fungera som förväntat. Bekräfta och åtgärda problemen genom att kontakta den oberoende programvaruleverantören (ISV) för dina aktuella lösningar. Mer information finns i [Aktivera versionsdimensionen](#enable-version-dim).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

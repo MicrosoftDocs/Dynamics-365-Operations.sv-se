@@ -44,3 +44,6 @@ Visa och ändra listan över fasorsaker för en serviceorder. Använd fasorsaker
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

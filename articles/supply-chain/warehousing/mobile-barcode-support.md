@@ -34,3 +34,6 @@ Dynamics 365 Supply Chain Management - Lagerhållningsappen har testats tillsamm
 
 Som kund bör du testa mobilskanningsappen för lager på vald maskinvara innan du bestämmer dig för den maskinvara som du vill köpa.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

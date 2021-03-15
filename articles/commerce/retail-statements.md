@@ -87,3 +87,6 @@ När du bokför ett utdrag, skapas fakturor för försäljningsorder och försä
 - Försäljning, för vilken en kund lades till i transaktionen i POS genererar separata försäljningsorder och fakturor, en för varje unik kund.
 
 Betalningsjournaler skapas automatiskt för betalningarna i utdraget och lagret uppdateras för kassabutiken.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

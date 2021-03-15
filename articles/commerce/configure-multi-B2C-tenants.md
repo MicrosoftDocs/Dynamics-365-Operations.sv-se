@@ -130,3 +130,6 @@ Den nya Azure AD B2C-innehavaren ska nu visas i listan under **hantera B2C-progr
 [Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)
 
 [Aktivera platsbaserad butiksdetektering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

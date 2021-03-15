@@ -44,3 +44,6 @@ Antalet containrar som bör övervägas för en last beräknas baserat på conta
 -   Klicka på **Lagerhantering** \> **Inställningar** \> **Container** \> **Containertyper** om du vill ange vikt och volym för en container.
 
 -   Klicka på **Lagerhantering** \> **Inställningar** \> **Containrar** \> **Behållargrupper** och ange sedan ett värde i fältet **Nyttjandedel av behållare i procent** om du vill ange nyttjandeandelen för en behållare.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

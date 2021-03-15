@@ -115,3 +115,6 @@ Jag använder version 10.0.16 eller senare och följande felmeddelande visas nä
 > Fyll i följande enkät för att komma igång och om relevant undantag från migreringen till planeringsoptimering.
 
 **Svar:** Nej, huvudplaneringen är inte blockerad. Huvudplaneringskörningen har slutförts och du kan använda resultatet på vanligt sätt. För att undvika att felmeddelandet visas under en framtida huvudplaneringskörning måste du emellertid migrera till planeringsoptimering direkt eller begära ett undantag med hjälp av länken i felmeddelandet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

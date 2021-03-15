@@ -44,3 +44,6 @@ Beroende på företagets riktlinjer kan artiklarna i returförsändelsen skickas
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

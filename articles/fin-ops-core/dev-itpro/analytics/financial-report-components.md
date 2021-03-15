@@ -126,3 +126,6 @@ När du öppnar ett byggblock kan andra användare bara komma åt byggblocket i 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

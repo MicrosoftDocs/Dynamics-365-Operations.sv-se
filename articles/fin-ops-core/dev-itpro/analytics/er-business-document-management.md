@@ -579,3 +579,6 @@ Följande tabell visar en lista över ER-konfigurationer som stöder konfigurerb
 |                             | Följesedel för försäljningsorder (LT) (Excel)           |
 |                             | Följesedel för försäljningsorder (PL) (Excel)           |
 |                             | Följesedel för försäljningsorder (Word)                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

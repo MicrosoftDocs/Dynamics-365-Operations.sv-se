@@ -69,3 +69,6 @@ Du kan ange vilka sorters lagerstatus som är spärrar genom att använda parame
 [Kvalitetshanteringsprocesser](quality-management-processes.md)
 
 [Kontrollera kvaliteten på varor](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

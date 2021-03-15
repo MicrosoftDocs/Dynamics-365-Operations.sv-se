@@ -148,3 +148,6 @@ Arnie bokför journalen och granskar kundtransaktioner på sidan **Kundtransakti
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

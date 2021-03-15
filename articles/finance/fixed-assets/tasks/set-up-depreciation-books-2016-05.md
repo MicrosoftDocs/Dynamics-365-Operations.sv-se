@@ -54,3 +54,6 @@ Den här proceduren guidar genom processen att skapa en ny avskrivningsregel och
 6. I fältet Tjänstelivstid, ange ett tal.
     * Värdet i fältet Avskrivningsperioder beräknas efter att du har angett tjänstelivstid.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

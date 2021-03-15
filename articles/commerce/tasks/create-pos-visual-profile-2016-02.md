@@ -47,3 +47,6 @@ Den här proceduren går igenom hur du skapar en ny visuell kassaprofil. En visu
 17. Klicka på länken på den valda raden i listan.
 18. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

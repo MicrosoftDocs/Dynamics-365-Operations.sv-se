@@ -147,3 +147,6 @@ I den här proceduren används demonstrationsföretaget USMF.
     * Kontrollera de bokförda journalposterna.  
 16. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

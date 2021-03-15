@@ -42,3 +42,6 @@ I den här proceduren visas hur du ändrar prognosen för en artikel. Det demons
 1. Klicka på **Öppna** i Microsoft Office.
 2. Klicka på **Redigera en efterfrågeprognos** i Excel. I Excel kan du lägga till, ta bort och redigera efterfrågeprognosrader. Om du inte kan se data i Excel måste du logga in med alternativet "Håll mig inloggad" aktiverat och du måste lita på dataanslutningsappen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

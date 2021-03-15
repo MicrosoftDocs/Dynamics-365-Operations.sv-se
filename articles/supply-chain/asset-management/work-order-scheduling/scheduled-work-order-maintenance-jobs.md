@@ -51,3 +51,6 @@ I bilden nedan visas ett exempel på sidan **Schemalagda arbetsorder för underh
 
 ![Figur 1](media/07-work-order-scheduling.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

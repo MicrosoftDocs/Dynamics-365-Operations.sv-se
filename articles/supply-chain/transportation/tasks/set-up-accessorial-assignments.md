@@ -49,3 +49,6 @@ I den här proceduren visas hur du ställer in en tilldelning av tillägg. Detta
 14. Ange ett nummer i fältet Tilläggsavgift.
 15. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

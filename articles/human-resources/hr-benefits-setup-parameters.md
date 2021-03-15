@@ -68,3 +68,6 @@ Innan du kan konfigurera förmånsplaner i Microsoft Dynamics 365 Human Resource
 3. Välj **Spara**.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

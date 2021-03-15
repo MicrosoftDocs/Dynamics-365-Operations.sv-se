@@ -66,3 +66,6 @@ Eftersom det tekniska företaget äger tekniskrelevanta data, styr den följande
 
     - När dessa dokument frisläpps till andra juridiska personer, skyddas dokumenten från att tas bort av operativa företaget.
     - Andra juridiska personer kan lägga till helt nya lokala dokument. Det operativa företaget äger och underhåller dessa lokala dokument.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

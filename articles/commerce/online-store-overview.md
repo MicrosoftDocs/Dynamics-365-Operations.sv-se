@@ -120,3 +120,6 @@ För information om hur du hanterar webbplatsinnehåll, se följande ämnen:
 [Aktivera platsbaserad butiksdetektering](enable-store-detection.md)
 
 [Ställa in anpassade sidor för användarinloggningar](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

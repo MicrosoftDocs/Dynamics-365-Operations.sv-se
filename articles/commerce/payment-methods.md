@@ -48,3 +48,6 @@ Om du vill ställa in betalsätten måste du göra följande.
 2. Skapa korttyper och kortnummer för hela organisationen. Om kreditkort eller betalkort tas emot måste du först skapa ett betalsätt för kort, och sedan skapa korttyper och kortnummer för hela organisationen.
 3. Ställ in betalningsmetod för butiken. Associera betalsätten med varje butiker och ange sedan de butiksspecifika inställningarna för varje betalningsmetod.
 4. Ställ in kortbetalsätt för butiker. Slutför kortinställningarna för alla kortbetalsätt som butiken godtar.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

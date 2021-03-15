@@ -54,3 +54,6 @@ Abonnemangets grundpris eller index uppdateras med det angivna värdet.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

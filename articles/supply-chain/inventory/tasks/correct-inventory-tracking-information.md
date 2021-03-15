@@ -63,3 +63,6 @@ Den här proceduren går igenom processen med att skapa och bokföra en lageröv
 2. Klicka på Transaktioner.
     * Här kan du se de transaktioner som skapades när du bokförde din journal.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -251,3 +251,6 @@ Användare av globaliseringstjänster kan hantera miljön för att ställa in en
 10. Välj **publicera** om du vill publicera miljön.
 
     ![Publicerad miljö](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

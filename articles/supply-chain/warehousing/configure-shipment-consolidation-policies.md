@@ -353,3 +353,6 @@ I följande scenarier visas hur du kan använda de konsolideringspolicyer för l
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Policyer för leveranskonsolidering](about-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

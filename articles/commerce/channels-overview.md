@@ -88,3 +88,6 @@ After you create a channel, you may need to complete some of the below tasks:
 [Ställa in en kundtjänstkanal](channel-setup-callcenter.md)
 
 [Ange organisationshierarkier](channels-org-hierarchies.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

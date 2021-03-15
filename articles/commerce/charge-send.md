@@ -41,3 +41,6 @@ Sändningsfunktionen Tillägg använder följande butiksåtgärder: leverera all
 Möjligheten att välja adresser ”leverans till” ändras inte.
 
 Leveransmetoder som kan användas för att uppfylla orderraden baseras på konfigurationen av giltiga leveranssätt för produkter och adresser. Eftersom reglerna om giltiga leveranssätt hanteras i administration (huvudkontor), butiksklienten ringer upp i realtid för att hämta giltiga leveranssätt för en transportrad.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

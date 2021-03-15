@@ -193,3 +193,6 @@ Mer information finns i [Trevägsmatchningspolicyer](three-way-matching-policies
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

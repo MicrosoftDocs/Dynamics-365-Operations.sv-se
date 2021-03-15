@@ -93,3 +93,6 @@ Du kan inte bearbeta eller slutföra budgetar i konsolideringsföretaget. Vi rek
 Mer information finns i [Valutaomräkning i ett konsolideringsföretag](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

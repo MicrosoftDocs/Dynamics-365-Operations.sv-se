@@ -46,3 +46,6 @@ Du kan schemalägga framtida livhändelser i Dynamics 365 Human Resources.
    | Rad | Radnumret för den framtida livshändelsen. |
 
 4. Välj **Spara**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

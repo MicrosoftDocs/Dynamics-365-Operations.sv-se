@@ -76,3 +76,6 @@ För att bekräfta att betalsättet för kundkontot har aktiverats följer du de
 [Ange produktkvantitetsgränser för B2B-näthandelssajter](quantity-limits.md)
 
 [Uppdateringar av SDK och modulbibliotek](../e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

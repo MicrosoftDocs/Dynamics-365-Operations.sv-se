@@ -57,3 +57,6 @@ I den här proceduren visas hur du registrerar artiklar via artikelinförseljour
 2. Klicka på Produktinleverans.
 3. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

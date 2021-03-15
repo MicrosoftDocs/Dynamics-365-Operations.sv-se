@@ -57,3 +57,6 @@ I följande tabell finns information om mått som finns på varje enskild rappor
 | Redovisningar                   | Redovisningar som kan användas för att filtrera rapporten till den aktuella redovisningen              |
 | Budgetkoder              | Budgetkoder att filtrera rapporter efter                                                |
 | Juridiska personer            | Juridiska personer som kan användas för att filtrera rapporten till den aktuella juridiska personen |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

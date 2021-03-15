@@ -72,3 +72,6 @@ Du kan även filtrera kalendern efter chef eller avdelning. Den primära befattn
 
 Information om kalenderinställningar finns i [konfigurera kalenderparametrar](hr-leave-and-absence-parameters.md?configure-calendar-parameters)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Du kan planera ut utrymmesutnyttjande genom att generera rapporten **beläggning
 
 4. I fältet **Beläggningstyp**, välj **Volym** eller **Vikt** när du vill ange lagerställesdriftenhet för planering av utrymme.
 5. I fältet **inställningar av utrymmesutnyttjandet**, välj de inställningar av utrymmesutnyttjandet som planeringen ska baseras på.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

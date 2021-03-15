@@ -68,3 +68,6 @@ Arbetsytan **Leverantörsfakturaregistrering** kan du fokusera på leverantörsf
 
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Automatisering av leverantörs faktura – återuppta automationsbearbetning av flera fakturor
 När en importerad faktura inte har skickats till arbetsflödet via den automatiska processen, tas den bort från vidare automatisk bearbetning. En leverantörsreskontraansvarig kan granska och redigera fakturan innan den automatiska processen skickar den igen till arbetsflödet. Om en felorsak kan lösas med samma korrigering för flera fakturor kan du starta om den automatiska processen på sidan **Återuppta automatisk bearbetning för fakturor**. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

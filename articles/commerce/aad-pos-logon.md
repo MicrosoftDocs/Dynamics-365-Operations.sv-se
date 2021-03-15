@@ -73,3 +73,6 @@ Fälten **Alias**, **UPN** och **Extern underidentifierare** på fliken **Commer
 [Skapa en Retail-funktionsprofil](retail-functionality-profile.md)
 
 [ Konfigurera en arbetare](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

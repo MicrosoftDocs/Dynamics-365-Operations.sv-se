@@ -110,3 +110,6 @@ Följande komponenter är nödvändiga för en sökresultatsida:
 
 [Översikt över sidor för kontohantering](quick-tour-account-management.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

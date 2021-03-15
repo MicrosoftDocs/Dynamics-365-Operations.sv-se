@@ -208,3 +208,6 @@ Katalogen, kategori, medarbetare och kundbilderna, som måste användas i frånk
 5. Följ en liknande process för andra enheter, till exempel kategori, medarbetare och kund.
 
     [![Offlineläge](./media/offline2.png)](./media/offline2.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

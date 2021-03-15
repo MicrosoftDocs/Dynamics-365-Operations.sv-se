@@ -134,3 +134,6 @@ Om du vill begränsa åtkomsten till Personal-appen personal i Microsoft Teams f
 [Microsoft Teams-hjälpcenter](https://support.office.com/teams)</br>
 [Hantera begäranden om ledighet i Teams](hr-teams-leave-app.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

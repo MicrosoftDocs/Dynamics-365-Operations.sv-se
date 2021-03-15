@@ -75,3 +75,6 @@ Tänk även på att den maximala förskjutningen av ditt fysiska lagervärde beg
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

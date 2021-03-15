@@ -39,3 +39,6 @@ En standardplats produktionsutleverans anges när färdiga varor rapporteras fö
 4. Om ingen plats hittas använder du utleveransplatsen som definieras i det lager som definierats för tillverkningsordern.
 
 En standardplats för produktionsutleverans anges endast för produkter som har ställts in med hjälp av avancerade lagerprocesser. När den här typen av artikel har rapporterats som färdig skapas lagerarbete av typen **Plats för slutförda varor** eller **Plats för samprodukt och biprodukt** . Den här typen av arbete använder produktionsutleveransplatsen som plockplats. Artikelinförselplatsen bestäms av platsdirektiv.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

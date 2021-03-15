@@ -55,3 +55,6 @@ När du skapar en arbetsorder kanske du vill definiera servicenivåerna för den
 2. Välj **Ny**.
 3. Ange en beskrivning i fältet **Beskrivning**.
 4. Välj **Spara**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

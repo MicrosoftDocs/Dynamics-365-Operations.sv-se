@@ -67,3 +67,6 @@ I bildskärmen nedan har information om funktionsplatser lagts till. Nu är det 
 
 ![Exempel på en månatlig arbetsbörda med funktionella platser](media/14-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

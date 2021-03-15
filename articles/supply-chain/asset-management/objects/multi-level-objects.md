@@ -61,3 +61,6 @@ Om en tillgång har relaterade undertillgångar kan du endast ta bort den om ing
 
 > [!NOTE]
 > Om du inte kan ta bort en tillgång med hjälp av den här proceduren är ett annat sätt att hantera borttagningen att ställa in ett tillgångs livscykeltillstånd för detta ändamål. Du kan till exempel ställa in ett **Kasserat** eller **Borttaget** livscykeltillstånd på sidan **Tillgångens livscykeltillstånd**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

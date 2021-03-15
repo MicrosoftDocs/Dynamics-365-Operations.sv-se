@@ -105,3 +105,6 @@ Om du vill lägga till en modul för videospelare på en ny sida och ställa in 
 [Textblockmodul](add-content-rich-block.md)
 
 [Innehållsblockmodul](add-hero-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

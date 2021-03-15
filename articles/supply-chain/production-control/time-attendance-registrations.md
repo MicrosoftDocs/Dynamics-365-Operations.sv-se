@@ -118,3 +118,6 @@ Arbetare med jobbuppgifter som inte kräver direkt feedback, vilket är fallet v
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

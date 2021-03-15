@@ -128,3 +128,6 @@ Följande tabell visar nyckeldimensionerna som används som filter för att dela
 | Enheter                  | Id och Namn                                                   |
 | Resurser                 | Resurs-ID, resursnamn, resurstyp och resursgrupp |
 | Produkter                  | Produktnummer, produktnamn, artikel-ID och artikelgrupp         |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

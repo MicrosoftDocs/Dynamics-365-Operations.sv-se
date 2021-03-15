@@ -159,3 +159,6 @@ Gantt-schemat kan öppnas från följande sidor:
 
 [Visuell planering för produktion (demo-skrift)](https://docs.microsoft.com/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

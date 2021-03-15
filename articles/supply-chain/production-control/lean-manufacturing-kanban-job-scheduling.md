@@ -72,3 +72,6 @@ Den tillgängliga kapaciteten per dag eller vecka definieras av den kalender som
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

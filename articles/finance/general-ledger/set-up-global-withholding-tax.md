@@ -47,3 +47,6 @@ Detta ämne ämnet innehåller en lista med steg för att ställa in global käl
 7. Konfigurera källskattegrupper på sidan **Källskattegrupper för artiklar** för en artikel eller tjänst.
 
 8. Ställ in **Minsta fakturabelopp** på sidan **Redovisningsparametrar > Källskatt**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

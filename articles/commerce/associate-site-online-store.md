@@ -57,3 +57,6 @@ När du har skapat webbplatsen kan du kontrollera att den är kopplad till onlin
 [Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)
 
 [Aktivera platsbaserad butiksdetektering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

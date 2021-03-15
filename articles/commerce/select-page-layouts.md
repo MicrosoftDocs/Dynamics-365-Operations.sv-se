@@ -79,3 +79,6 @@ Om du vill välja en annan layouter för en befintlig sida följer du stegen ned
 
 [Skapa dynamiska näthandelssidor baserade på URL-parametrar](create-dynamic-pages.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

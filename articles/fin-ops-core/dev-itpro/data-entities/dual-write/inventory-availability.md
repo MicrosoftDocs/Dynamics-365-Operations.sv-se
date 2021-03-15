@@ -118,3 +118,6 @@ Finance and Operations-fält | Mappningstyp | Customer Engagement-fält | Standa
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ I den här avsnittet beskriver hur du automatiserar skapandet av behållare för
 11. Ange eller välj ett värde i fältet **Välj**.
 12. Välj **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

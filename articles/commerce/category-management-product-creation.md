@@ -56,3 +56,6 @@ Dessutom, i den förbättrade produktkategoristrukturen kan en marknadsföringsc
 Du kan använda den här nya förbättrade strukturen för produktegenskaper för att välja vilka uppdaterade produktegenskaper som måste skickas till associerade produkter. På sidan **Produkthierarki (handel)** på åtgärdsfönstret, välj **Kategori** och välj sedan **Uppdatera produkter** för att öppna dialogrutan **Uppdatera produkter**.
 
 ![Dialogrutan Uppdatera produkter](media/NewUpdateProductsEnhancedView.PNG)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

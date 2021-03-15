@@ -64,3 +64,6 @@ Du kan ändra lagerstatus antingen med hjälp av sidan **Behållning efter plats
 > - På sidan **behållning per plats** kan du gruppera rader baserat på visade dimensioner med hjälp av knappen **Visa dimensioner** och ändra status för de valda raderna.
 > - På sidan **behållning per plats** kan du välja flera poster och sedan använda knappen **Ändra lager status** för att ändra alla på en gång.
 > - I den periodiska uppgiften **Ändring av lagerstatus** kan du filtrera efter spårningsdimensioner.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -292,3 +292,6 @@ På arbetsbelastningen i skalningsenheter kan du hantera följande batchjobb på
 - Bearbeta registerposter för påfyllnad
 - Lagerställehubb till meddelandeprocessorn för skalningsenhet
 - Bearbeta kvantitetsuppdateringsbegäranden för lagerställeorderrader
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

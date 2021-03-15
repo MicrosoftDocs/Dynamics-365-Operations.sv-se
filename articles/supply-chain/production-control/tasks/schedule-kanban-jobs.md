@@ -61,3 +61,6 @@ Den här proceduren fokuserar på att tidsplanera kanban-processjobb för en spe
     * Observera att båda jobben anges till den önskade perioden.  
     * I avsnittet Periodkapacitet kan du visa beläggningen för varje period. I fältet Förbrukning visas den tidsplanerade förbrukningen i denna period. Om den tidsplanerade förbrukningen är högre än den tillgängliga kapaciteten i denna period, kommer den överbelagda förbrukningen att markeras.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

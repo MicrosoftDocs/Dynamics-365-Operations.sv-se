@@ -48,3 +48,6 @@ Denna procedur beskriver hur du beräknar kostnaden för en färdig produkt geno
 11. Stäng sidan.
 12. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,5 @@ MyLeaveRequests-entiteten i Microsoft Dynamics 365 Human Resources tillhandahål
 
 - [Skicka en ledighetsansökan till arbetsflödet](hr-developer-api-myleaverequests-submit.md)
 - [Autentisering](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

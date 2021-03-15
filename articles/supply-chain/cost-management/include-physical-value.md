@@ -59,3 +59,6 @@ När en försäljningsorder bokförs, bokförs beloppet 100,00 kronor eftersom d
 
 > [!NOTE]
 > Jämfört med, om du markerar **Inkludera fysiskt värde**-kryssrutan för den här artikeln, när en försäljningsorder bokförs, det bokförda kostnadsbeloppet är 120,00 kronor.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

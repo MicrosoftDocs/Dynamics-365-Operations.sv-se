@@ -52,3 +52,6 @@ Information om hur du tilldelar en anställd ett team finns i [Ställa in en pri
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

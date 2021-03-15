@@ -330,3 +330,6 @@ I det här exemplet skapas returorderraden med hjälp av funktionen **Sök efter
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -106,3 +106,6 @@ Välj de dokumenttyper som ska vara tillgängliga för utskrift av bilagor relat
 ## <a name="the-number-sequences-tab"></a>Fliken Nummerserie
 
 Välj de nummerserier som krävs i det här avsnittet. Det finns två nummerserier för tillgångar: en för manuellt skapade tillgångar och en för tillgångar som skapats via väntande tillgångar.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

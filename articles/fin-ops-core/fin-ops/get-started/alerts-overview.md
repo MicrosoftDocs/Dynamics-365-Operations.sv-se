@@ -88,3 +88,6 @@ Videon [hur du använder notifieringar för att övervaka filtrerad data](https:
 Videon [Alternativ för notifieringsregel](https://youtu.be/cpzimwOjicM) (visas ovan) inkluderas i [Finance and Operations spellista](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som finns tillgänglig på YouTube.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

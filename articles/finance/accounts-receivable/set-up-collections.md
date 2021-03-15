@@ -114,3 +114,6 @@ Mer information finns i följande avsnitt:
 
  - [Granska inkasseringsinformation](tasks/review-collections-information.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

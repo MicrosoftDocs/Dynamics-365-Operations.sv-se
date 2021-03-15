@@ -46,3 +46,6 @@ I den här proceduren visas hur du kan säga upp eller förlänga en förmån oc
 15. Klicka på Förmåner.
 16. Hitta förmånen och markera posten i listan. Observera det nya disponeringsslutdatumet.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

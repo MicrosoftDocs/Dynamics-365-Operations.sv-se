@@ -295,3 +295,6 @@ Fabrikam tar emot en betalning på 75,00 från kund 4000, Northwind Traders. Bet
 | Kundreskontra (Fabrikam West)    |              | 75,00         |
 | Förfaller från Fabrikam East (Fabrikam West) | 25,00        |               |
 | Kundreskontra (Fabrikam West)    |              | 25,00         |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

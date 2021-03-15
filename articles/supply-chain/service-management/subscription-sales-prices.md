@@ -379,3 +379,6 @@ I den första transaktionen för abonnemang 00020\_135, kommer försäljningspri
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

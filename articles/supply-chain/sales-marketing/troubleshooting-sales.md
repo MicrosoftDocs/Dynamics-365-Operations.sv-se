@@ -112,3 +112,6 @@ Supply Chain Management stöder för närvarande inte beräkningen av provisione
 Buntad artikel är inte tillgänglig för inköpsordern eftersom du, om du granskar försäljningsorderraderna för buntad artikel ser du att kvantiteten är *0* (noll) och statusvärdet *annullerad*. Detta beteende är av design. Försäljningsordern köper endast komponenterna i buntad artikel. Den handlar inte om själva buntade artikeln.
 
 Om du måste köpa en buntad bör du fundera över om du måste markera det som buntad artikel, eftersom denna funktion verkligen är utformad för scenarier för intäktsredovisning. Mer information om buntad artikel, se [buntade](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Den här proceduren ställer in en transportbegränsning för att förhindra att
 10. Klicka på Spara.
 11. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

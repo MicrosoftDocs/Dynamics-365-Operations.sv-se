@@ -101,3 +101,6 @@ I följande tabeller visas de värden som är inställda på flikarna **Allmänt
 7. Om du vill visa nettoeffekten av nedskrivningen går du till tabellerna skuld- och tillgångstransaktioner. Observera att nedskrivningsutgifterna har minskat ROU-tillgången, men det bokförda värdet för leasingskulden inte har ändrats.
 
 Nedskrivningen har en annan effekt som du bör tänka på. Eftersom ROU-tillgångsbeloppet nu är mycket mindre än leasingskulden, måste beloppet avskrivas på ett annat sätt än tidigare. Tillgången avskrivs nu på linjärt sätt under de återstående 84 månaderna av leasingen, med början på transaktionsdatumet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

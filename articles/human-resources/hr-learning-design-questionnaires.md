@@ -236,3 +236,5 @@ Villkorsfrågor gör det möjligt att skapa en frågehierarki i en enkät och at
 En juridisk person erbjuder både artiklar och tjänster till sina kunder. Såsom inträffar normalt i sådana fall köper en del kunder endast artiklar, andra bara tjänster, och en del köper både artiklar och tjänster. Om företaget skickar ut en enkät om kundnöjdhet, använder det en villkorsstruktur i enkäten så att kunder som endast köper tjänster slipper att svara på frågor om artiklar. 
 
 Alternativt kan du skapa en enkät så att om den svarande väljer Svar A på fråga 1 är fråga 2 är nästa fråga i frågesekvensen. Om svarande väljer svar B på fråga 1 följs den av fråga 5.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ I arbetsytan **Datahantering** kan du få en översikt över målentiteter, rela
 
     ![Figur 3](media/03-data-management.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

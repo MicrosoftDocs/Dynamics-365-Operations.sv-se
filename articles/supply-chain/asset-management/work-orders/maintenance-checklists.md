@@ -79,3 +79,6 @@ Bilden nedan visar ett exempel på en underhållschecklista.
 
 ![Figur 1](media/14-work-orders.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

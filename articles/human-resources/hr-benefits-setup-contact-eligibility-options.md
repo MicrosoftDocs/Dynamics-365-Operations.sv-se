@@ -45,3 +45,6 @@ I den här artikeln beskrivs hur du konfigurerar olika typer av personliga konta
    | **Ålder** | Maximal ålder för en berättigad personlig kontakt för förmånsplanen. Det här fältet är bara aktivt om du väljer en relation. Denna ålder jämförs med den beräknade åldern för den personliga kontakten. Beräknad ålder är: (täckningsdatum – personliga kontaktens födelsedatum/365). Det här talet är alltid ett heltal. |
 
 4. Välj **Spara**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -66,3 +66,5 @@ Med rekryteringsprojekt kan du hantera din rekryteringsprocess. När du har skap
 32. Markera **Rekryteringsprojektets status**.
 33. Välj **start**. Statusen **Startad** innebär att projektet är redo att ta emot ansökningar.  
 34. Välj **OK**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

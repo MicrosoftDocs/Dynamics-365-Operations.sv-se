@@ -48,3 +48,6 @@ Du kan annullera en returorder i stället för att ta bort den, om du vill spara
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

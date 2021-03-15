@@ -183,3 +183,6 @@ Följande Dataverse-register baseras på Personal-entiteter.
 [Vanliga frågor och svar om virtuella register i Personal](hr-admin-virtual-entity-faq.md)<br>
 [Vad är Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminologiuppdateringar](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 8. Klicka på OK.
     * Granska den skapade utleveransen. Observera att den nyss skapade Excel-filen innehåller samma antal kolumner som valdes för ekonomiska dimensioner. Rapporthuvudet i dessa kolumner representerar namnen på de ekonomiska dimensionerna. Transaktionsraderna i dessa kolumner representerar ekonomiska dimensioner. Kör denna rapport och välj olika dimensioner för att se att rapporten inte är beroende av antalet valda dimensioner eller antalet dimensioner som konfigureras för denna instans.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

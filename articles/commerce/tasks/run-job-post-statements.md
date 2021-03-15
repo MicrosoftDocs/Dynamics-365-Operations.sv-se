@@ -43,3 +43,6 @@ Den här proceduren går igenom konfigurationen och körning av regelbundet åte
 8. Klicka på OK.
 9. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

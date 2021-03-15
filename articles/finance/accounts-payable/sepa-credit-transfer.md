@@ -125,3 +125,6 @@ När du genererar betalningar genereras betalningsfilen och du ombeds att spara 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

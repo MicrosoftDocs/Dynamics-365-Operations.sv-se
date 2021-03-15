@@ -45,3 +45,6 @@ Den här proceduren visar hur du kan definiera ett konfigureringsflöde som fast
 15. Klicka på länken på den valda raden i listan.
 16. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

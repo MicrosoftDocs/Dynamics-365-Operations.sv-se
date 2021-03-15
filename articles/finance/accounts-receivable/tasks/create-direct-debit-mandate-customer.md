@@ -89,3 +89,6 @@ Den här uppgifthandbok visar hur du skapar ett autogiromedgivande och använder
 3. Välj kunden som du lagt till medgivande för.
 4. Ange eller välj ett värde i fältet **Autogiromedgivande-ID**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Följande tabell visar enheterna som **Rekrytering** Power BI baserades på.
 | Resultat          | Värdering, beskrivning och bedömningsmodellen                            | Sökande, anställd sökande, uppsagd sökande |
 | Rekryteringsprojekt  | Projektbeskrivning, projektstatus och lediga jobb                | Sökande, anställd sökande, uppsagd sökande |
 | Uppsagd sökande | Uppsagda sökande, orsak, prestanda och uppsägningsdatum | Företag, kalenderförskjutning, datum, geografisk placering, resultat, befolkning, anställning, media, rekryteringsprojekt, sökandes namn |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

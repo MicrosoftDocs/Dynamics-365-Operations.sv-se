@@ -66,3 +66,6 @@ Alla standardtabeller för Dataverse utökas med referenser till kolumnen **Inte
 8. Efter **Offerter** utökas, tillämpa ett filter med `CUSTGROUP != "<company>"` som frågesträng.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Redigera frågedialogruta för CDS-försäljningsofferrubrik":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

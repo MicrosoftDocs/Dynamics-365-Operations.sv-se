@@ -92,3 +92,6 @@ Innan du ställer in tjänstledighets- och frånvaroplan i Dynamics 365 Human Re
 ## <a name="see-also"></a>Se även
 
 - [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Exportera en ekonomisk rapport genom att klicka på **Exportera** i åtgärdsfö
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

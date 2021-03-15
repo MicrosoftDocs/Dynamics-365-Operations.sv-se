@@ -82,3 +82,6 @@ Om du ställer in ett batchbearbetningsfönstret skickas en notifiering när not
 
 1. Gå till **Systemadministration**&gt;**Periodiska uppgifter**&gt;**Notifieringar**&gt;**Notifieringar om förfallodatum**.
 2. I dialogrutan **Notifieringar om förfallodatum**, ange lämplig information.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

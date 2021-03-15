@@ -41,3 +41,6 @@ Du kan förhindra den här beräkningen genom att välja flaggan **Stoppa nedbry
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

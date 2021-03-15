@@ -32,3 +32,6 @@ EU-direktiv innehåller bestämmelser som ska följas av alla medlemsstater ang�
 
 > [!NOTE]
 > Kontrollera att fältet **Momsspecifikation** anges till **Registreringsvaluta** eller **Registrerings- och företagsvaluta** på sidan **Formulärinställningar** på fliken **Allmänt** (**Kundreskontra > Inställning > Formulär > Formulärinställningar** eller **Projekthantering och redovisning > Konfigurera > Formulär > Formulärinställningar**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

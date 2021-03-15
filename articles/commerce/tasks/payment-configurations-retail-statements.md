@@ -52,3 +52,6 @@ I den här registreringen används demonstrationsföretaget USRT.
     * Välj det konto du vill bokföra de belopp som lämnats i kassaskåp på.  
 8. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

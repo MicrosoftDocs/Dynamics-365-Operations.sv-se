@@ -32,3 +32,6 @@ Om du vill ställa in rabatter för transporthantering går du till **transporth
 Du kan välja om du vill överföra rabatten till kunden (genom att ställa in rabattyp till kund) eller behålla den i företaget (genom att ställa in rabattyp för speditören). På så sätt kan du definiera en inställning där du erhåller en marginal för de beräknade fraktkostnaderna.
 
 Du kan ställa in flera kvalificerare för varje rabatt, t.ex. transportföretag, transportföretagstjänst, leveransvillkor, kund, destination m.m.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

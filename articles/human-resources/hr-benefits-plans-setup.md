@@ -159,3 +159,6 @@ Du kan ge en beskrivning av planen för att hjälpa de medarbetare som har urval
 1. I arbetsytan **Hantering av förmåner** under **Planer**, välj **förmånsplaner**.
 
 2. Välj **Flexkreditprogram**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ För artiklar som är inställda på att använda befintligt arbete kan **Plocka
 **Varning** och **Tvinga**: en lista över batchen/batcherna med det äldsta utgångsdatumet visas ovanför batchkontrollen när arbetaren väljer en batch. Om platsen är registreringsskyltskontrollerad visas en lista över registreringsskyltar med den äldsta batchen ovanför registreringsskyltskontrollen. 
 -   **Varning**: om en arbetare väljer en registreringsskylt eller en batch som inte finns i listan kommer att kontrollen att nollas och en varning indikerar att det finns en äldre batch att välja. För att kunna fortsätta arbetet kan arbetaren välja samma registreringsskylt eller batch igen.  
 -   **Tvinga**: arbetare fortsätter att få meddelanden om att det inte finns en äldre batch att plocka.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

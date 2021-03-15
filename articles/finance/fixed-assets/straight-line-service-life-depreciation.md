@@ -107,3 +107,6 @@ Anskaffningsjusteringens tjänstelivstid är samma som anläggningstillgångens 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

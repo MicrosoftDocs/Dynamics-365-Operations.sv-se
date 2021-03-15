@@ -55,3 +55,6 @@ Användaren måste läggas till rollen Environment Maker för miljön i Microsof
     ![Knappen Synkronisera](media/get-more.png)
 
     När synkroniseringen är klar visas Personal på startsidan.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

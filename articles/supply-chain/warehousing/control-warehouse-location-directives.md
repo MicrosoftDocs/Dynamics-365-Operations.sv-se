@@ -76,3 +76,6 @@ Platsdirektiv bestämmer *var* artiklar ska plockas och *var* de ska placeras. S
 
 - Video: [konfiguration för lagerstyrning djupdykning](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Hjälpavsnitt: [Skapa platsdirektiv](create-location-directive.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

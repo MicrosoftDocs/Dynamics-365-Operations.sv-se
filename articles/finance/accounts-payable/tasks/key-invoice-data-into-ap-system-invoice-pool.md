@@ -67,3 +67,6 @@ I det här avsnittet beskrivs hur du använder fakturaregister för att skapa fa
 13. Markera **transaktioner**
 14. Välj den faktura som du själv har skapat. Ankomstregistreringaccrualen återfördes och bokförts i lämplig utgiftskonto.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

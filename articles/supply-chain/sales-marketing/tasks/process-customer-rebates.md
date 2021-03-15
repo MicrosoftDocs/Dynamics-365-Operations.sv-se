@@ -81,3 +81,6 @@ Den här proceduren visar hur du vill bearbeta kunden rabatter från krav genera
     - Rabattperiodiseringskontot har krediterats för att representera framtida ansvar mot kunden.
     - Utgiftskontot för rabatt debiterades för att känna igen den kostnad som uppstod i samband med försäljning.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

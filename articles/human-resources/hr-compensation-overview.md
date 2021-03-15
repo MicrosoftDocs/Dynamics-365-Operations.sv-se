@@ -132,3 +132,6 @@ När du har kört en processhändelse kan du rekommendera justeringar av en meda
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

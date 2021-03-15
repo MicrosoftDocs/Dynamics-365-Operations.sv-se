@@ -100,3 +100,6 @@ Proceduren är avsedd för kamrerer.
 7. Klicka på OK.
 8. Välj Stängt i fältet för val.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ När du initierar en strukturlisteberäkning kan du ange flera informationskäll
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Du kan även slutföra följande uppgifter för alla abonnemang som är anslutna
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

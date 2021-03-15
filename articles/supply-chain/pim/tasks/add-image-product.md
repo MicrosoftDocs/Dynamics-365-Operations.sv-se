@@ -36,3 +36,6 @@ I den här proceduren visas hur du lägger till en bild till en produkt. Det dem
 5. Klicka på Ny.
     * Klicka på Bläddra. Hitta den bild som du vill använda, markera den och stäng sedan dialogrutan.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -38,3 +38,6 @@ Ekonomiska dimensioner och huvudkonton är viktiga komponenter av planeringsfase
 - Undvik att använda den valda kontoplanavgränsaren i värden frö ekonomisk dimension och huvudkonto.
 
 Genom att följa regelverk, kan du garantera en konsekvent representation av den användardefinierade ordern i hela systemet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

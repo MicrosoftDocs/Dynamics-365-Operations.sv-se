@@ -162,3 +162,6 @@ Av prestandaskäl och tekniska skäl kan för tillfället endast tabeller som up
 ### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Kan jag referera till anpassade fält från utvecklingsverktygen?  
 
 Anpassade fält kan bara hanteras via användargränssnittet och kan inte refereras via kod. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

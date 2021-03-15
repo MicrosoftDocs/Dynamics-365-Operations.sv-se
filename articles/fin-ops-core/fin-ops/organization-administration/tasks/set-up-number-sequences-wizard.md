@@ -38,3 +38,6 @@ Nummerserier används för att generera läsliga, unika identifierare för huvud
 4. Välj **Nästa**.
 5. Välj **Slutför**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

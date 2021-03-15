@@ -60,3 +60,6 @@ När **Begränsa betalsätt för returer** anges till **Ja**, tillåter inte den
 
 Om en transaktion har en retur med kvitto och en retur utan kvitto, upprätthålls begränsningsvillkoren inte eftersom transaktionen kommer att returnera arbetsflödet med ett kvitto. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

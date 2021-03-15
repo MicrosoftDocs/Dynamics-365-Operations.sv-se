@@ -43,3 +43,6 @@ Redovisningsallokeringsregler kan användas för budgetplaner. När du använder
 > [!NOTE]
 > Du kan inte använda koncerninterna redovisningsallokeringsregler för budgetplanering.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

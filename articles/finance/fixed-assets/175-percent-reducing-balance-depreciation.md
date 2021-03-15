@@ -87,3 +87,6 @@ Den degressiva avskrivningsmetoden på 175 % delar 175 procent med tjänstelivst
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

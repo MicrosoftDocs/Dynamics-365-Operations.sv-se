@@ -44,3 +44,6 @@ Den globala källskattefunktionen förbättras för leverantörs- och kundtransa
 
 > [!NOTE]
 > Funktionen för global källskatt kan inte aktiveras för länder/regioner där det redan finns lokala lösningar för källskatt. Dessa områden omfattar, men är inte begränsade till, Indien, Brasilien, Thailand, Saudiarabien, Irland, Storbritannien och USA.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

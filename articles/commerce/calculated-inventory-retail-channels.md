@@ -113,3 +113,6 @@ Vi rekommenderar att du inte kör dessa batchjobb för ofta (med några minuters
 > Av prestandaskäl används beräkningen av lagerdispositionen för lagertillgänglighetsberäkningar för att göra en begäran om lagertillgänglighet att använda näthandels API: n eller den nya lagerlogiken för kassakanaler, beräkningen använder cache som fastställer om det har gått tillräckligt med tid för att motivera körning av beräkningslogiken igen. Standardcache är inställd på 60 sekunder. Du har till exempel aktiverat en beräkning på kanalsidan för butiken och visat lagerbehållningen för en produkt på sidan **lagersökning**. Om en enhet av produkten sedan säljs kommer sidan **lagersökning** inte att visa det reducerade lagret förrän cachen har rensats. När användarna har bokfört transaktioner i POS ska de vänta 60 sekunder innan de kontrollerar att lagerbehållningen har reducerats.
 
 Om det krävs en mindre cachetid för affärsscenariot kan du kontakta produktsupporten för att få hjälp.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

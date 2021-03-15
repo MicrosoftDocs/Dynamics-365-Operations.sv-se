@@ -144,3 +144,6 @@ Mer information finns i [Översikt över fakturamatchning för leverantörsresko
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

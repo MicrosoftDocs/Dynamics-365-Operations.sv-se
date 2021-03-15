@@ -53,3 +53,6 @@ Det här avsnittet visas hur du använder fakturaregister om du vill skapa faktu
 10. Vald **bokföring**
 11. Välj **Verifikation** om du vill visa poster som bokfördes. Kontot för godkännande av pågående fakturor motbokas och ersätts med det verkliga utgiftskontot.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

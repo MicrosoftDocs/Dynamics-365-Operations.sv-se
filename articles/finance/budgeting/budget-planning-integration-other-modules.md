@@ -146,3 +146,6 @@ Ytterligare rapporter som finns tillgängliga inkluderar **prognosen positioner 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Den här guiden går igenom olika metoder som används för att ange kundbetalni
 21. Ange en betalningsreferens i fältet **Betalningsreferens**. Betalningsreferensen krävs endast om du markerar för att inkludera betalningen på ett insättningskvitto.  
 22. I **åtgärdsfönstret**, klicka på **bokföra** om du vill bokföra kundbetalningarna. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

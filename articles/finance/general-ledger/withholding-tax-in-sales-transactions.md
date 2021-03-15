@@ -63,3 +63,6 @@ Standardkällskattegruppen och artikelkällskattegruppen används som standardpo
 Källskatt beräknas och bokförs i **kundbetalningsjournalen**. Du kan manuellt justera den tillämpliga källskattekoden och det faktiska källskattebeloppet på fliken **Källskatt** på sidan **Kvitta transaktioner**.
 
 Det beräknade källskattebeloppet dras av från kundbetalningen och bokförs på **motkontot för källskatt** i en relaterad verifikation.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -38,3 +38,6 @@ På bilden nedan visas ett exempel på en underhållsarbetare som är relaterad 
 
 Kalenderinställningar för verktyg och tillgångar behövs inte i samband med tidsplanering av arbetsorder. Antagandet är att verktyg och tillgångar är tillgängliga dygnet runt för underhållet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

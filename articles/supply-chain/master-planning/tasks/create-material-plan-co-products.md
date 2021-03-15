@@ -110,3 +110,6 @@ Produktionsplaneraren planerar materialbehoven för de artiklar som är samprodu
 19. Välj Nej i fältet Inaktivera alla planeringsprocesser.
 20. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

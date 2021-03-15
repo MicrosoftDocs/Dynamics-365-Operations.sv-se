@@ -114,3 +114,6 @@ Följ dessa steg för att ta bort en befintlig koppling mellan en underhållstil
 1. Hitta och öppna anläggningstillgången.
 1. På snabbfliken **anläggningstillgång** avmarkerar du värdet från fältet **funktionsplats**.
 1. Klicka på **Spara** i åtgärdsfönstret.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

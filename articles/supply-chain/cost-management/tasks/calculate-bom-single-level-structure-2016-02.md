@@ -43,3 +43,6 @@ Denna procedur beskriver hur du beräknar kostnaden för en färdig produkt geno
     * Du kan behöva klicka på ellipsen (...) om du vill se det här alternativet i huvudmenyn.    Här följer sammansättningen av kostnaden:  *    10 härleds från  ITEM_A, 10 från ITEM_B, 10 from BOM_2. I det här fallet finns ingen information för BOM_2 eftersom denna har registrerats som en standardkostnad på 10, men inte beräkningen.  *    7 härleds från ställtiden, som är en konstant kostnad, och ytterligare 7 härleds från körningen (Process).  *    Det finns också andra belopp som motsvarar indirekta kostnader.  
 9. @SysTaskRecorder:_RequestClose
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

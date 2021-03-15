@@ -86,3 +86,6 @@ När `DATETIMEFORMAT`-funktionen konverterar ett givet datum/tidsvärde, beaktar
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Datum- och tidsfunktioner](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

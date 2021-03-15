@@ -59,3 +59,6 @@ Standardfältvärdet för **Antal arbetsflödesobjekt per batch** på sidan **Ar
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Vad är funktionen utökat fel i arbetsflödet?
 Den utökade felfunktionen i arbetsflödet i version 10.0.13 lägger till felkoder för att skilja mellan olika klasser av arbetsflödesfel. De felmeddelanden som rapporteras är mest likvärdiga med mindre skillnader för att göra dem tydligare.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

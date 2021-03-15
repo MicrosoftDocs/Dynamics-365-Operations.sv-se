@@ -99,3 +99,6 @@ Efter att ha aktiverat produktrekommendationer måste du lägga till rekommendat
 [Skapa granskade rekommendationer manuellt](create-editorial-recommendation-lists.md)
 
 [Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

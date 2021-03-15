@@ -220,3 +220,6 @@ Följ dessa steg för att köra kompatibilitetskontrollen.
 1. I åtgärdsfönstret, på fliken **Laster** i gruppen **Åtgärder** markerar du **Kompatibilitetskontroll**.
 
 Du får ett meddelande som informerar dig om resultatet av kontrollen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

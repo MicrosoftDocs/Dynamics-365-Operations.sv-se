@@ -75,3 +75,6 @@ Källskatt som beräknats i **leverantörsbetalningsjournalen**. Du kan manuellt
 Det härledda källskattebeloppet dras av från leverantörsbetalningen och bokförs på **Källskattekontot** i en relaterad verifikation.
 
 ![Källskattekonto som visar en relaterad verifikation](media/withholding-tax-adjusted.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

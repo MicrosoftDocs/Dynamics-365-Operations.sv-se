@@ -75,3 +75,6 @@ Gör en notering om inköpsordernumret du skapar och anteckna också artikelnumr
     * Kontrollera meddelandefältet när du har klickat på OK. Det bör visas ett meddelande om att åtgärden lyckades.  
 5. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

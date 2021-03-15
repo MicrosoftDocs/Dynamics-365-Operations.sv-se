@@ -246,3 +246,6 @@ C. Navigera till Budgetering &gt; Inställningar &gt; Budgetplanering &gt; Budge
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

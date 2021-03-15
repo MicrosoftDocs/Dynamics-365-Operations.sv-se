@@ -164,3 +164,6 @@ Rapport med viktat genomsnittligt diskonto uppfyller USA:s GAAP-upplysningskrav 
 |     Valuta                          |     Förkortningen för den transaktionsvaluta som används. Alla rapporter kommer att konvertera transaktionsvalutan till rapporteringsvalutan.  |
 |     Resterande leasingbetalningar          |     Det totala beloppet med obetalda leasingbetalningar från betalningsplanen som återstår från **Från och med**-datumet.            |
 |     Återstående vägda betalningar       |     De leasingbetalningar som återstår multiplicerat med den diskontoränta som används.   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

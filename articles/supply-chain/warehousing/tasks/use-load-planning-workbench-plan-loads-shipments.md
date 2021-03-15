@@ -60,3 +60,6 @@ I det här avsnittet visas hur du använder workbench för lastplanering om för
 5. Välj **Tilldela**.
 6. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

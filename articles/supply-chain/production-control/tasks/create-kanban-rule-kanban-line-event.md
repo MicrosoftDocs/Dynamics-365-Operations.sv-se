@@ -68,3 +68,6 @@ Den här proceduren skapar en kanban-regel genom att använda inställningen fö
     * Observera att en kanban för 27 skapades för att bearbeta den aktivitet som baseras på den skapade kanban-regeln.  
     * Detta är det sista steget.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Denna uppgift visar hur du tilldelar en fritextfakturamall till en kund. I denna
     + Årligen – Välj det här alternativet och ange antalet år i fältet Per. Om du till exempel anger 2, kommer en faktura skapas vartannat år för den här kunden.  
 14. I fältet **Per**, ange en siffra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

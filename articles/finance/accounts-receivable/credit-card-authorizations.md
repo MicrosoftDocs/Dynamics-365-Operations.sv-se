@@ -79,3 +79,6 @@ Om du vill annullera en kreditkortskontroll kan du ändra betalsättet till en a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

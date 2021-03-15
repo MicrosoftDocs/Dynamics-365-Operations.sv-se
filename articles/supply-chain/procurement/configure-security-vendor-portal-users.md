@@ -49,3 +49,6 @@ Om samma person kräver tillgång till säljaren portal för flera leverantörer
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Om du vill lägga till en orderbekräftelsemodul på en ny sida och ställa in d
 [Informationsmodul för upphämtning](pickup-info-module.md)
 
 [Presentkortsmodul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

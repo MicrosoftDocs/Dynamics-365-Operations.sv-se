@@ -56,3 +56,6 @@ Denna uppgift har skapats med USSI-datauppsättningen.
 21. Ange ett värde i fältet **Kommentar**.
 22. Klicka på **Skicka**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

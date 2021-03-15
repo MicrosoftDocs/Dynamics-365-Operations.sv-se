@@ -51,3 +51,6 @@ I det här avsnittet visas hur du ställer in attributbaserad prissättning. Som
 8. Ange ett värde i fältet **Uttryck**. Ange till exempel `50`. 
 9. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

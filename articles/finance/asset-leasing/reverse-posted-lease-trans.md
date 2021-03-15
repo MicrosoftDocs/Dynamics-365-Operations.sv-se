@@ -55,3 +55,6 @@ Om du vill återkalla en återförd transaktion följer du stegen nedan.
 När du väljer **Återförd spårning** visas en dialogruta där både de ursprungliga transaktionerna och de återförda transaktionerna visas, tillsammans med ett spårningsnummer.
 
 Du kan också spåra återkallningarna med hjälp av lämplig sida för **planer**. Fältet **Återför** rensas och fältet **Journal bokförd** markeras. Dessutom uppdateras fältet **Senaste journalnummer** med journalnumret för återkallningstransaktionen och fältet **Journalnummer** uppdateras med numret på återföringsjournalen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ I den här proceduren visas hur du tilldelar momsgrupper till handelskanaler. De
 21. Klicka på länken på den valda raden i listan.
 22. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

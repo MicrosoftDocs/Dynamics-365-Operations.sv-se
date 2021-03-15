@@ -67,3 +67,6 @@ I den här proceduren visas hur du skapar en inköpsreturorder med hjälp av åt
 4. I fältet **Produktinleverans**, skriv ett värde. Det här fältet används för att ange en referens som ska användas som verifikation för produktinleveransjournalen.  
 5. Klicka på **OK**. Varorna har nu registrerats som skickade på inköpsreturordern och en produktinleveransjournal har skapats. Du kan använda åtgärden Produktinleverans om du vill granska journalerna som skapats med inköpsordern och se vad som har inlevererats eller returnerats och när.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ Mer information finns i [Momssatser baserat på fälten Marginalbas och Beräkni
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

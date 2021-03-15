@@ -125,3 +125,6 @@ Kör ostnadsredovisning med bakåtavräkning till periodiskt värdet för PIA oc
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

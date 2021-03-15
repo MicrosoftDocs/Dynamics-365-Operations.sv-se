@@ -96,3 +96,6 @@ I den här proceduren visas hur du ställer in ett tariffhuvud. Den logistikansv
     * Ange vilket postnummer som den här tariffbastilldelningen ska gälla från.
 10. Skriv "USA" i fältet **Upphämtningsland/region**.
 11. Välj **Spara**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

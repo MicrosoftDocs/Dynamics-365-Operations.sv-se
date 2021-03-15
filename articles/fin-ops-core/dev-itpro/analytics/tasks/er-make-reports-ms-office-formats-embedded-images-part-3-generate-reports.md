@@ -119,3 +119,6 @@ I det här exemplet ska du använda skapade ER-konfigurationer för exempelföre
 23. Klicka på OK.
     * Granska den skapade utleveransen. Utdata har genererats som ett Word-dokument med inbäddade bilder som innehåller företagslogotyp, underskrift av en behörig person och den markerade texten i vattenstämpeln.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

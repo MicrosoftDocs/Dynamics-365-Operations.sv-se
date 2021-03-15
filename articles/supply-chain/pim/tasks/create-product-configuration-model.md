@@ -82,3 +82,6 @@ I den här proceduren visas hur du skapar en modell för produktkonfiguration oc
 17. Ange ett värde i fältet Per serie.
 18. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

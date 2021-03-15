@@ -187,3 +187,6 @@ För att göra det enklare att se kolumnerna som du arbetar med i raddefinitione
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

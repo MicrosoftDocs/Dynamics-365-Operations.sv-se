@@ -49,3 +49,6 @@ Orsakskoder är valfria. Du kan välja om det ska krävas en orsakskod när du u
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

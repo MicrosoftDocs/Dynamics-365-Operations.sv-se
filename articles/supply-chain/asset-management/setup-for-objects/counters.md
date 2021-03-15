@@ -66,3 +66,6 @@ När tillgångstyper läggs till en räknartyp i **räknare**, läggs den räkna
 
 ![Figur 1](media/071-setup-for-objects.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

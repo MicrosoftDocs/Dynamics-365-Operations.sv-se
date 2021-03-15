@@ -53,3 +53,6 @@ Gör på följande sätt innan du kör en standardkostnadkonvertering:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

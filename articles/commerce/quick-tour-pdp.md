@@ -87,3 +87,6 @@ Om marknadsföringsinnehållet är unikt för en viss produkt kan en marknadsfö
 [Översikt över sidor för kontohantering](quick-tour-account-management.md)
 
 [Utöka en produktdetaljsida](enrich-product-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

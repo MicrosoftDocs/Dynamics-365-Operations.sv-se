@@ -68,3 +68,6 @@ Med stängda frågor kan du ange alternativ som den svarande kan välja mellan. 
 5. Ange eller välj ett värde i fältet Svarsgrupper.
 6. Skriv ett värde i fältet Text.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

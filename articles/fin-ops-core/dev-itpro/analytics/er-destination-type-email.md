@@ -139,3 +139,6 @@ Följande illustration visar processen, som beskrivs i det här ämnet, för gru
 - [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

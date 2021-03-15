@@ -110,3 +110,6 @@ Du kan bearbeta NSF-betalningar, genom att klicka på NSF-betalning på sidan In
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

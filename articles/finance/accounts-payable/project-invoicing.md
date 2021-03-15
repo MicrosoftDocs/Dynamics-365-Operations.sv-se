@@ -131,3 +131,6 @@ Du kan skapa en faktura med negativt belopp, vilken klassificeras som en kreditf
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

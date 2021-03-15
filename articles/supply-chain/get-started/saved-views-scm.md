@@ -112,3 +112,6 @@ I följande tabell beskrivs de sparade vyerna som är tillgängliga för modulen
 | Alla påfyllnader | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparad vy för påfyllnadsbearbetning |
 | Workbench för lastplanering | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparad vy för arbetsplaneringens workbench |
 | Information om arbete | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparad vy för sidan Information om arbete |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

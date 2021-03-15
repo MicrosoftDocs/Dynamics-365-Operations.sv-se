@@ -127,3 +127,6 @@ Gör så här om du vill åtgärda problemet.
 
 3. Kontrollera att kolumnen **externalenvironmentURL** har korrekt Dataverse eller app URL. Radera alla dubblettrader som pekar på fel Dataverse URL. Ta bort motsvarande rader i tabellerna DUALWRITEPROJECTFIELDCONFIGURATION och DUALWRITEPROJECTCONFIGURATION.
 4. Stoppa tabellmappningen och starta sedan om den
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

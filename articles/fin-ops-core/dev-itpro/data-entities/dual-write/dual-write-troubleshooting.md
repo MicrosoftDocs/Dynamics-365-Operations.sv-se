@@ -122,3 +122,6 @@ Så här aktiverar du alternativet för formuläret **informations** igen:
 2. Hitta formuläret **Information** under formulärnoden. 
 3. Markera formuläret **Information** och klicka på **aktivera säkerhetsroller**. 
 4. Ändra säkerhetsinställningarna till **Visa för alla**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

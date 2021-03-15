@@ -39,3 +39,6 @@ Du kan inte använda någon roll förutom administratör för att få åtkomst t
 ### <a name="issue-resolution"></a>Problemlösning
 
 Appemulatorn för den mobila enheten är inställd på att fungera endast med administratörskontot. För alla test- och liveprocess-ändamål rekommenderar vi att du använder själva distributionslagerappen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

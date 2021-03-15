@@ -477,3 +477,6 @@ I det här scenariot kommer inleveransansvarig att inkommande registrera en kvan
     - **Kvantitet** – ange _7_, vilket är den återstående kvantiteten som leverantören är auktoriserad att leverera som en del av den totala kvantiteten i inköpsordern på 12 (där 10 är den ursprungliga orderkvantiteten och 2 är den tillåtna överleveransen på 20 procent). Kom ihåg att fem datorer redan har registrerats mot den första lasten.
 
 Den andra lasten har nu uppdaterats med kvantiteten 7 och kan vara produktinleverans – uppdateras baserat på denna kvantitet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

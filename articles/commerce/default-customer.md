@@ -112,3 +112,6 @@ I bilden nedan visas ett exempel på skapande av kundkonfiguration.
 [Översikt över kanaler](channels-overview.md)
 
 [Förutsättningar för att ställa in kanaler](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

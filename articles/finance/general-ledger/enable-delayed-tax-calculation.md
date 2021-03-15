@@ -64,3 +64,6 @@ Systemet ger företräde åt inställningen för journalrubriken. Som standard h
 4. På fliken **inställningar** ställer du in alternativet **fördröjd momsberäkning** till **ja**.
 
 ![Bild på allmän journalsida](media/delayed-tax-calculation-journal-header.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

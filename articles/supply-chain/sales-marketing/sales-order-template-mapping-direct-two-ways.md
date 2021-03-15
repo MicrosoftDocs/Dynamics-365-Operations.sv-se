@@ -208,3 +208,6 @@ I följande illustrationer visas ett exempel på en mallmappning i dataintegreri
 ## <a name="related-topics"></a>Relaterade ämnen
 
 [Potentiell kund till kontanter](prospect-to-cash.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

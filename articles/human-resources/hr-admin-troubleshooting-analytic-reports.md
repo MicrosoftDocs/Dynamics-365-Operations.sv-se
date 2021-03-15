@@ -43,3 +43,6 @@ Det här problemet kanske bara är fråga om tidmätning. Följ dessa steg om du
 1. Välj **Redigera** överst på sidan och ange det schemalagda startdatumet/tiden som uppdaterar analysen närmare till aktuell tid.
 
 ![Batchjobb](media/batch-jobs.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

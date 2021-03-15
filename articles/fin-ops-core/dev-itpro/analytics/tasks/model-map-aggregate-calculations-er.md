@@ -116,3 +116,6 @@ Den här proceduren har skapats för användare med rollen Systemadministratör 
 68. Klicka på Spara.
     * Observera att fältet "körning på" anger att grupperingen ska utföras vid körning i minnet även om det inte finns några aggregeringar definierade och den valda datakällan av typen ”registerposter” refererar till samma Intrastat-tabell. Detta beror på att datakällan innehåller vissa beräknade fält som ännu inte kan konverteras till SQL-databasnivå.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

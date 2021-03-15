@@ -48,3 +48,6 @@ Dessutom kan två unika rapporter, som används för strukturering av det hierar
 - Arbetsytan **Kategori och produkthantering** &gt; **Butik och handel** &gt; **Produkter och kategorier** &gt; **Butikshantering** &gt; **Rapporter**
 - Arbetsytan **Pris- och rabatthantering** &gt; **Butik och handel** &gt; **Prissättning och rabatter** &gt; **Butikshantering** &gt; **Rapporter**
 - Avsnittet **Förfrågningar och rapporter** &gt; **Butik och handel** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

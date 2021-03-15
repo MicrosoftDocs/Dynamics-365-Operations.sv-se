@@ -43,3 +43,6 @@ Den här proceduren beskriver hur du skapar ett nytt livscykeltillstånd för pr
 5. Markera vald rad i listan.
 6. Ange eller välj ett värde i fältet produktlivscykeltillstånd.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

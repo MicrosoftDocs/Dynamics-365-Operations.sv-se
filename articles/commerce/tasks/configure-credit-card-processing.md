@@ -61,3 +61,6 @@ Den här proceduren går igenom hur du visar en lista med betalningsförmedlare 
 24. Klicka på kryssrutan Standardföretag för nya kreditkort.
 25. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

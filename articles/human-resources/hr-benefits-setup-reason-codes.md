@@ -79,3 +79,5 @@ Du kommer att se en banner på sidan **Länkar** i arbetsytan **Förmånshanteri
 När orsakskoderna migrerar till Personalhantering ställs alternativet för användning av dem i Förmånshantering automatiskt in som **Ja**.
 
 [![Använd orsakskoder i Förmånshantering](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

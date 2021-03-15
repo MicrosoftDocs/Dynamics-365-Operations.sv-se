@@ -368,3 +368,6 @@ När du tar bort en BPM-rad kommer också alla uppgiftsguider som är kopplade t
 **Raderad BPM-rad**
 
 - Flytta tidsplanerade kanban-jobb
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

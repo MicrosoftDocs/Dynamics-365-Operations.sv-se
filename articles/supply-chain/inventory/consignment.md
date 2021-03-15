@@ -102,3 +102,6 @@ Om dina leverantörer använder leverantörsamarbetesgränssnittet, kan du anvä
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

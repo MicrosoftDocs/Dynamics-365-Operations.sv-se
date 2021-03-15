@@ -96,3 +96,6 @@ Om du vill ändra metadata, följ dessa steg.
 [Kontrollera tillgängligheten för sidinnehåll](verify-accessibility.md)
 
 [Skapa dynamiska näthandelssidor baserade på URL-parametrar](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

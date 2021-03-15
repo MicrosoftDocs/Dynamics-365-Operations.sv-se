@@ -223,3 +223,6 @@ För att få korrekt konverterade belopp när valutor används, använder ekonom
 Mer information om konsolidering och valutaöversättning finns i det överordnade avsnittet i det här avsnittet [Översikt över ekonomisk konsolidering och valutaomräkning](./financial-consolidations-currency-translation.md).
 
 Information om hur du anger information om onlinekonsolideringar finns i [Online ekonomisk konsolidering](./consolidate-online.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

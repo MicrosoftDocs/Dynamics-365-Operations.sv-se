@@ -73,3 +73,6 @@ Det finns åsikter, nyheter och annan information om lagerstyrning och andra lö
 
  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

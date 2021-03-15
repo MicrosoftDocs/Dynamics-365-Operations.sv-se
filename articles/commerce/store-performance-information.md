@@ -44,3 +44,6 @@ Denna rapport ger en ögonblicksbild av följande sammanfattningar som en del av
 - Momssammanfattning
 - Priset åsidosätter sammanfattning
 - Rabatter sammanfattning
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

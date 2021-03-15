@@ -121,3 +121,6 @@ Om du vill lägga till ett extern skript direkt på en mall i webbplatsskaparen 
 [Lägg till copyrightmeddelande](add-copyright-notice.md)
 
 [Lägg till språk på din webbplats](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

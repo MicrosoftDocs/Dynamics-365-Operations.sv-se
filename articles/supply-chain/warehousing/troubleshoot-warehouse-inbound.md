@@ -64,3 +64,6 @@ En ny funktion för hantering av inkommande last *Överinleverans av lastkvantit
 1. Överinleverans av beläggningskvantiteter
 
 Mer information finns i [bokföra registrerade produktkvantiteter mot inköpsorder](inbound-load-handling.md#post-registered-quantities).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

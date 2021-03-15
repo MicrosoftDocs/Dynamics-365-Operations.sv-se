@@ -87,3 +87,6 @@ Om du behöver rapportera täckta personer eftersom du tillhandahåller självf�
 
 > [!NOTE]
 > Endast förmånsplaner markerade som **sjukförsäkringspliktiga** visas i förfrågningsfönstret.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

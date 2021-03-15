@@ -666,3 +666,6 @@ Du måste slutföra det sorterade lagerplockningsarbetet. När den är avslutad 
     Arbetet har slutförts.
 
 Från och med denna punkt gäller alla andra lagerprocesser.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

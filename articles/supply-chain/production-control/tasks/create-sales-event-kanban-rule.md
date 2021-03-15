@@ -73,3 +73,6 @@ Den här proceduren fokuserar på inställningarna som krävs för att skapa en 
 2. Klicka på Visa pegging-träd.
     * Lägg märke till att en kanban med samma kvantitet som försäljningsraden skapas. Du kan även se materialet som behövs för att producera L0050. Detta är det sista steget i den här proceduren.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Produkterna som s채ljs av din organisation kan levereras i varianter beroende p�
     Sidan med **summor** visar detaljer om hela ordern. Detta inkluderar delsummabeloppet som 채r summan av alla radnettobelopp justerat med eventuella radrabatter, det totala fakturabeloppet som 채r ett delsummabelopp justerat med eventuella orderniv책rabatter, till채gg och moms, kundkreditgr채nsen med mera. Fakturabeloppet 채r det belopp som ska visas p책 kundens fakturadokument.  
     
 3. V채lj **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

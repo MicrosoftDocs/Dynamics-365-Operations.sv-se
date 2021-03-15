@@ -108,3 +108,6 @@ Alternativt kan en organisation ställa in alternativet **Tillåt åsidosättnin
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Betalsätt i kundcenter](work-with-payments.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

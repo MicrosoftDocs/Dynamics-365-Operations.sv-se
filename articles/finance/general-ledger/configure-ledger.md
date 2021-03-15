@@ -81,3 +81,6 @@ Om du använder två valutor, eller om du använder en enskild valuta men transa
 Realiserade vinster och förluster är vinster och förluster som görs från slutförda transaktioner. De registreras på vinst- och förlusträkningen. Orealiserade vinster och förluster är vinster och förluster som har materialiserats, men transaktionen är inte slutförd. Med andra ord, du har till exempel bokfört en faktura, men fakturan har inte kvittats och betalats ännu. Orealiserade vinster och förluster redovisas i balansräkningen.
 
 Mer information om att använda två valutor finns i [Dubbel valuta](dual-currency.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

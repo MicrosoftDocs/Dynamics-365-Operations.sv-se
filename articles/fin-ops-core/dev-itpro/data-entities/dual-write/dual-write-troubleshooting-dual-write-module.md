@@ -87,3 +87,6 @@ Korrigeringen för det här felet beror på orsaken till felet:
 
 + Om mappningen har beroende mappningar ska du se till att aktivera de beroende mappningarna för den här tabellmappningen.
 + Mappningen kanske saknar käll- eller målkolumner. Om en kolumn i Finance and Operations-appen saknas följer du stegen i avsnittet [Tabellkolumner som saknas problem i kartor](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Om en kolumn i Dataverse saknas klickar du på knappen **Uppdatera tabeller** på mappningen så att kolumnerna automatiskt fylls i igen i mappningen.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Inställningarna på **fliken sekvensen** avgör de sekvenser som används för 
 
 > [!NOTE]
 > Det antal timmar som arbetas inte överstiga 1250 och längden på anställningen får inte överskrida 12 månader. Dessa största värden i enlighet med federal lag i USA. Slutligen inställningarna på den **anställde självbetjäning** fliken bestämmer vilken information som en chef kan ange på uppdrag av hans eller hennes anställda.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

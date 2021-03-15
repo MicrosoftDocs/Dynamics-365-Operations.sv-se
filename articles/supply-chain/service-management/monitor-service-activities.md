@@ -59,3 +59,6 @@ Klicka på **Servicehantering** \> **Periodisk** \> **Utförseltavla**.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

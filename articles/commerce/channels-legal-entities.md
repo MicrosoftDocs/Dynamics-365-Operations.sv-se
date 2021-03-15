@@ -85,3 +85,6 @@ I bilden nedan visas ett detaljer för exempel på en juridisk enhet.
 [Översikt över kanaler](channels-overview.md)
 
 [Förutsättningar för att ställa in kanaler](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

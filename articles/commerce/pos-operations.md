@@ -208,3 +208,6 @@ Följande kolumner anger var operationerna kan startas:
 § När POS är offline kan endast transaktioner i den aktuella offlinedatabasen återställas för retur.
 
 \*\* När POS är offline kan endast transaktioner i den aktuella offlinekanaldatabasen visas i journalen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

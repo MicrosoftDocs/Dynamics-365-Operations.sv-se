@@ -55,3 +55,6 @@ Välj ett funktionsområde för att läsa mer om det.
 - [Hantera din näthandelssajt](online-store-overview.md)
 - [Fraud Protection](dev-itpro/DFP.md)
 - [Utveckling och utbyggbarhet för handel](dev-itpro/dev-retail-home-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

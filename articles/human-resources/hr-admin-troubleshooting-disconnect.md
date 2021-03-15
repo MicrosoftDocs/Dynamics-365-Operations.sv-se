@@ -52,3 +52,6 @@ Microsoft Dynamics 365 Human Resources kopplar från användare när två olika 
 Kontrollera att endast en miljö är öppen i taget för en viss webbläsartyp. Användare kan öppna flera sessioner till samma miljö (det vill säga flera flikar i samma webbläsare).
 
 Användare som vill hoppa mellan två miljöer samtidigt ska öppna varje miljö i olika webbläsartyper. (T.ex. användare A kan visa miljö 1 i Chrome och miljö 2 i Microsoft Edge.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

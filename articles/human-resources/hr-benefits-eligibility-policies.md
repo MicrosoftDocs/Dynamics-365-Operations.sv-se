@@ -49,3 +49,6 @@ Du definierar regelns omfång inom policyn. Om du till exempel skapar en policyr
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

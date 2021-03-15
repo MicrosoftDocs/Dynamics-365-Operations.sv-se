@@ -58,3 +58,6 @@ För den arbetare som ska kunna flytta reserverat lager väljer du kryssrutan **
 Denna funktion har också anpassats i efterhand för Microsoft Dynamics AX 2012 R3 och blir tillgänglig som en del av CU12.
 Den kan också hämtas separat via KB-nummer 3192548. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

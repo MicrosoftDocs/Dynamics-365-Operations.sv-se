@@ -89,3 +89,6 @@ Bilden nedan visar en skärmbild av en KPI-beräkning för fyra till gångar.
 - Du kan välja flera till gångar i **Alla tillgångar** och klicka på knappen **KPI:er för tillgång** på fliken **Allmänt**. Klicka sedan på **OK** i dialogrutan **Beräkna KPI:er för tillgång** för att beräkna KPI:er för de valda tillgångarna.  
 - Resultat från en KPI-beräkning kan eventuellt inte inkludera [registreringar av underhållsstopp](../work-orders/maintenance-downtime.md), beroende på de orsakskoder för underhåll som ställs in och används. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

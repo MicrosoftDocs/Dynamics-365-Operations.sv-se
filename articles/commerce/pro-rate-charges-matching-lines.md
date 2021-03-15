@@ -174,3 +174,6 @@ När denna beräkningsmetod används i ett scenario med delvis retur, om avgifts
 [Avancerade automatiska avgifter för flera kanaler](omni-auto-charges.md)
 
 [Aktivera och konfigurera automatiska avgifter efter kanal](auto-charges-by-channel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

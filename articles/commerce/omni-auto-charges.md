@@ -221,3 +221,6 @@ Om användare åsidosätter beräknade avgifter eller lägger till manuell avgif
 
 [Allokera huvudavgifter för att matcha försäljningsrader](pro-rate-charges-matching-lines.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

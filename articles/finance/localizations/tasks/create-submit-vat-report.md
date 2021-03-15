@@ -34,3 +34,6 @@ I den här proceduren får du hjälp att skapa och skicka in en momsrapport till
 5. Välj Ja i fältet Skapa dokument för elektronisk momsdeklaration.
 6. Klicka på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

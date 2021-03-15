@@ -55,3 +55,6 @@ Den här uppgifthandboken går igenom skapande och anskaffning av en anläggning
 17. Klicka på länken på den valda raden i listan.
 18. Klicka på **Bokför**. Anläggningstillgången skapas och förvärvas när fakturan bokförs.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

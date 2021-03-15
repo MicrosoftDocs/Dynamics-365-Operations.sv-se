@@ -75,3 +75,6 @@ Följande fält är tillgängliga för varje process som visas på snabbfliken *
 | Policy | Välj ett av följande värden om du vill kontrollera om och hur den aktuella processen kan tillåtas för produkter i detta livscykeltillstånd:<ul><li>**Aktiverad** – affärsprocessen är tillåten.</li><li>**Spärrat** – processen är inte tillåten. Om en användare försöker använda processen för en produkt som är i livscykeltillstånd blockeras försöket och ett felmeddelande visas i stället. Du kan t.ex. blockera produkter som har nått slutet av livslängd från att köpas.</li><li>**Aktiverad med varning** – processen är tillåten, men en varning visas. Du kanske till exempel vill att en prototypprodukt ska placeras på en tillverkningsorder som skapas av avdelningen för forsknings- och utvecklingsavdelningen. Andra avdelningar bör dock vara medvetna om att de inte borde producera produkten än.</li></ul> |
 
 Om du lägger till fler livscykeltillståndsregler som en anpassning kan du visa reglerna i användargränssnittet genom att välja **Uppdatera processer** i det övre fönstret. Knappen **Uppdatera processer** är bara tillgänglig för administratörer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

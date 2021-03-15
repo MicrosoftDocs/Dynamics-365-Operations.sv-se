@@ -50,3 +50,6 @@ Du kan identifiera annullerings- och korrigeringsfakturor på två sätt:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

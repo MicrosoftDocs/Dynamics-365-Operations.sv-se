@@ -60,3 +60,5 @@ När du har skapat en plan för tjänstledighet och frånvaro i Dynamics 365 Hum
 
 - [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)
 - [Skapa en plan för tjänstledighet och frånvaro](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

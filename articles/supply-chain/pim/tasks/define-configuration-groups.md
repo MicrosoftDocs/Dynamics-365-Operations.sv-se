@@ -39,3 +39,6 @@ I den här proceduren visas hur du definierar produktkonfigurationsgrupper genom
 7. Skriv ett värde i fältet Namn.
 8. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

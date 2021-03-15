@@ -95,3 +95,6 @@ Innan du kan skicka e-post måste du konfigurera den utgående e-posttjänsten o
 [Förutsättningar för att ställa in kanaler](channels-prerequisites.md)
 
 [Organisationer och organisationshierarkier – översikt](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Mer information finns i [Härledda böcker](derived-books.md) och [Bokföra med 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

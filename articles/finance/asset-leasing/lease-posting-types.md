@@ -153,3 +153,6 @@ Det konto som väljs för varje utgiftstyp debiteras när en betalning för den 
 
 > [!NOTE]
 > Motkontot väljs på leasingnivå på raderna för betalningsplanen för verkställighetskostnad. Det här motkontot kan kopplas till leverantören eller till ett huvudbokskonto.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

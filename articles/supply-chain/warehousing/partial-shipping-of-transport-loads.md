@@ -65,3 +65,6 @@ Denna inställning låter dig bekräfta en transportlast som inkluderar full las
 
 1. Välj **Lagerstyrning**\>**Laster**\>**Transportlaster**.
 2. I Åtgärdsfönster, på fliken **Leverera och ta emot** i gruppen **Bekräfta**, välj **Transport**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

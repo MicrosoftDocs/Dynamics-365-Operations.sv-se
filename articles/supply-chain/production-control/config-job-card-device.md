@@ -94,3 +94,6 @@ Som tidigare nämnts, när du använder en enhetskonfiguration med alternativet 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Rapportera som färdigt från jobbkortsenheten](report-finished-job-device.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

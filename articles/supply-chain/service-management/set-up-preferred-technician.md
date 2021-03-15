@@ -67,3 +67,6 @@ Du kan välja valfri anställd som en prioriterad tekniker för ett serviceavtal
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

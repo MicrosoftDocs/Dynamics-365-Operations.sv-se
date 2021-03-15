@@ -99,3 +99,6 @@ Den här proceduren beskriver hur du skapar en ny handelskanal och definierar ka
 65. Klicka på Spara.
 66. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Mer information om processen för att flytta från grundläggande lagerstyrning 
 - [Migrering av Microsoft Dynamics AX WMS till nya R3 lagerställe- och transportfunktion](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/17/migration-of-microsoft-dynamics-ax-wms-to-new-r3-warehouse-and-transportation-functionality/)
 - [WMSI/WMS2 artikelmigrering](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/05/03/wmsiwms2-item-migration/)
 - [Uppgradera lagerstyrning från Microsoft Dynamics AX 2012 till Supply Chain Management](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/upgrade-migration-warehouse-management-processes)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

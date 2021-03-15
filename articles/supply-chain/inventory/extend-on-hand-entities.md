@@ -68,3 +68,6 @@ public final class InventOnHandAggregatedViewBuilder\_Extension
 ```
 
 När du har slutfört de här stegen kan du utöka lagerbehållningen per webbplats och lagerbehållning med dataentiteter för lagerställen genom att lägga till de nya fälten. På så sätt säkerställer du att de utökade fälten känns igen och tas med vid datamigrering som använder dessa dataentiteter.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

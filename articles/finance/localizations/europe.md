@@ -99,3 +99,6 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
 
 - [Översikt över elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Hämta konfigurationer för elektronisk rapportering från Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

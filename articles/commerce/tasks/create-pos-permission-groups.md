@@ -47,3 +47,6 @@ Det här avsnittet förklarar hur du skapar en kassabehörighetsgrupp. Det demon
 16. I fältet Kassabehörighetsgrupp, ange eller välj ett värde. Alla arbetare i befattningar för det här jobbet ska använda den här kassabehörighetsgruppens inställningar, om inte arbetarnas kassabehörigheter har åsidosatts på deras befattningsnivå.  
 17. Välj **Spara**. När ändringarna har sparats du behöver köra personalfördelningsschemat för att distribuera ändringarna till kanaler.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

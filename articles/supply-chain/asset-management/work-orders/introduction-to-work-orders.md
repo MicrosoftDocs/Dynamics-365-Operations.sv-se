@@ -118,3 +118,6 @@ Knapparna på fliken **Projekt** på fliken **Arbetsorder** i åtgärdsfönstret
 >[!NOTE]
 >Om du vill inkludera prognoser som har skapats i en arbetsordning när du kör huvudplanering använder du den prognosmodell som är vald på sidan **Parametrar för tillgångshantering**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

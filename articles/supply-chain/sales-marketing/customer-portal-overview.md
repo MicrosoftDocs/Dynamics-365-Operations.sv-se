@@ -68,3 +68,6 @@ Kundportalen utgörs av en Power Apps-mall för portaler. Det beror på Power Ap
 ![Kundportalberoenden](media/customer-portal-elements.png "Kundportalberoenden")
 
 Kundportalen fungerar som utgångspunkt för organisationer som vill använda Power Apps-portaler för att skapa en extern webbplats som använder data från en installation av Supply Chain Management. Det hjälper organisationer att ansluta dubbelriktad, Supply Chain Management och Power Apps-portaler.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Denna dubbla konvertering gör att datum ändras mellan program. Till exempel ka
 4. Ändra **Tidszon** till **Coordinated Universal Timezone** och ändra **Språk** till **En-US**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

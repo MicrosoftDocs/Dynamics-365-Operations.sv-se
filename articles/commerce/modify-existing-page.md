@@ -88,3 +88,6 @@ Följande exempel visar hur du ändrar startsidan genom att ändra videon som vi
 [Kontrollera tillgängligheten för sidinnehåll](verify-accessibility.md)
 
 [Skapa dynamiska näthandelssidor baserade på URL-parametrar](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

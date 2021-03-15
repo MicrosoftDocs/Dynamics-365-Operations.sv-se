@@ -57,3 +57,6 @@ Om du vill hitta en kvalificerad pool av kandidater kan det vara svårt att fyll
 24. Stäng sidan.
 25. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

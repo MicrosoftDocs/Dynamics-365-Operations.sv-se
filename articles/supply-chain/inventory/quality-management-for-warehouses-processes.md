@@ -621,3 +621,6 @@ Du har ställt in uppgifterna om arbete och platsdata för lagerställe 51, för
 
 > [!NOTE]
 > Överväg att lägga till posten kvalitet ut på en menyartikel på en mobil enhet där aktivitetskoden är *Visa öppna arbetslista*. Ett exempel finns i menyalternativet på mobila enheten som heter **arbetslista** i demonstrationsdata. Lägg först till arbetsklassen *kvalitetsorder* på ett menyalternativ som användaren anger, eftersom denna arbetsklass krävs för att arbete ska visas i arbetslistan. Lägg sedan till arbetsklassen *Kvalitetsorder* till menyalternativet **arbetslista**. Användare som har tillgång till arbetslistan kan då välja och bearbeta det arbete som skapas automatiskt av valideringen av kvalitetsorder.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

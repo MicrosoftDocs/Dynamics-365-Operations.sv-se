@@ -130,3 +130,6 @@ Mer information finns i följande avsnitt:
 - [avrundningsfunktionen](https://msdn.microsoft.com/library/aa850656.aspx)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ När du skapar återbetalningstransaktioner, skapas en leverantörsfaktura för 
 
 5. Om du vill visa de återbetalningstransaktioner som har skapades använder du rapporten **Återbetalning** (**Kundreskontra \> Förfrågningar och rapporter \> Återbetalning (rapport)**).
 6. Skapa en betalning för leverantörsfakturor som har skapats i återbetalningsprocessen i leverantörsreskontra. Information om hur du betalar leverantörer finns i [Översikt över leverantörsbetalning](../accounts-payable/Vendor-payments-workspace.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

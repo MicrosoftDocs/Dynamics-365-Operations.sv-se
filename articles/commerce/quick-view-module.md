@@ -77,3 +77,6 @@ Om du vill lägga till en snabbvisningsmodul i en produktsamlingsmodul i Commerc
 [Produktsamlingsmodul](product-collection-module-overview.md)
 
 [Sökresultatmodul](search-result-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

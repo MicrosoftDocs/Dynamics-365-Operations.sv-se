@@ -228,3 +228,6 @@ Om du vill begränsa åtkomsten till Personal-appen personal i Microsoft Teams f
 [Ladda ned och installera Microsoft Teams](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Microsoft Teams-hjälpcenter](https://support.office.com/teams)</br>
 [Personal-app i Teams](hr-admin-teams-leave-app.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

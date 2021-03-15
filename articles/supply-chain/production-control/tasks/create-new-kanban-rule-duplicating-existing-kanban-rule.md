@@ -43,3 +43,6 @@ Den här proceduren fokuserar på att skapa en dubblett för en befintlig kanban
 3. Klicka på OK.
     * Observera att en dubblett av kanban-regel 000017 skapas.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

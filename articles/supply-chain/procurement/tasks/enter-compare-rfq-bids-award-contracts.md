@@ -106,3 +106,6 @@ Du kan ange budet som antingen leverantör eller anskaffningsproffs. Mer informa
 ## <a name="view-the-purchase-order-that-is-generated"></a>Visa den inköpsorder som har genererats
 
 Välj **Inköpsorder** på fliken **Allmänt** i åtgärdsfönstret. Sidan som visas visar inköpsordern som genererades, när du godkände budet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -99,3 +99,6 @@ Illustrationen nedan visar ett exempel på sidan **Inköpsorder** med fokus på 
 
 På samma sätt, för att visa eller ange det aktivitetsnummer som är relaterat till en rekvisitionsrad för arbetsorder på listsidan **Inköpsrekvisition för arbetsorder** välj inköpsrekvisitionsposten och sedan i kolumnen **inköpsrekvisition** väljer du länken för inköpsrekvisitionen. Du hittar fältet **aktivitetsnummer** på fliken **projekt** på snabbfliken **radinformation**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

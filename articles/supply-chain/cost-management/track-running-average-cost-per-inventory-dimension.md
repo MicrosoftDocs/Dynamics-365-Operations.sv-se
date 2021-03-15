@@ -55,3 +55,6 @@ Den löpande genomsnittliga självkostnaden för lagerställe GW och batch AAA �
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

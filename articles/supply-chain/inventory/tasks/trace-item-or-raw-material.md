@@ -59,3 +59,6 @@ Den övre noden i trädet representerar lagerbehållningen för den valda artike
 9. Klicka på **Levererade försäljningsorder.**
 10. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

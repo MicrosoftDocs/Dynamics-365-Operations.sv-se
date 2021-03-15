@@ -87,3 +87,6 @@ Transaktionen för omvärdering i utländsk valuta delas också upp mellan de di
 Om du måste återföra omvärderingtransaktionen, välj **Återför transaktion** på åtgärdsfönstret på sidan **Omräkning i utländsk valuta**. En historisk ny post om omräkning i utländsk valuta skapas för att bibehålla den historiska redovisningsspårningen för när omvärdering genomfördes eller återfördes.
 
 Om du vill ångra flera omvärderingar måste du återföra den senaste omvärderingen först. Fortsätt att återföra tidigare omvärderingar i datumordning. Sedan kan du behandla nya omvärderingar för de perioder som du har återförts.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

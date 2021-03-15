@@ -63,3 +63,6 @@ I den här proceduren visas de inställningar som behövs om du vill skapa en ka
     * Detta skapar 2 kanbans.  
     * Observera att 2 kanbans, för 5 vardera, skapades för den här kanban-regeln för uttag.  Detta är det sista steget i den här proceduren.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

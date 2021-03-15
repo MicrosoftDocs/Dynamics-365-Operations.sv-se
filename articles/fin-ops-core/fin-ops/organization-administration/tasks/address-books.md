@@ -41,3 +41,6 @@ Det demonstrationsdataföretag som används för att skapa den här uppgiften ä
 7. Klicka på pilen om du vill lägga till de valda tillgängliga teamen till adressboken.
 8. Klicka på **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

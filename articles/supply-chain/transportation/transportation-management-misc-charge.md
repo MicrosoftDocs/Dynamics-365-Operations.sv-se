@@ -30,3 +30,6 @@ Som med alla andra avgifter måste transportgenererade avgifter associeras med e
 Gå till **Transporthantering > inställningar > klassificering > tillägg** för att definiera de kvalificerings kriterier som avgör när en viss **Avgiftskod** tillämpas på en debitering.
 
 Du bör ha minst en inställning för varje relevant inställning för **Modulen avgifter** (*kund* och *leverantör*) där **Typen övriga avgifter** anges till *ingen*. Om detta saknas kommer tillägget *inte* att läggas till i ordern.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ På sidan **Transaktion för tillgångar** visas de transaktioner som antingen �
 Om du vill visa leasingutgiftstransaktionerna väljer du en leasing på sidan **Sammanfattning av leasing** och väljer sedan **Böcker** för att öppna de leasingböcker som är kopplade till leasingposten. Välj sedan **Utgiftstransaktioner**.
 
 På sidan **Utgiftstransaktioner** visas alla utgifter som har bokförts mot leasingen, till exempel räntekostnader, avskrivningskostnader och eventuella verkställighetskostnader.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

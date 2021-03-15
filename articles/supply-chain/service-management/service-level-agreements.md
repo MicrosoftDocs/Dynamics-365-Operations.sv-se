@@ -80,3 +80,6 @@ När du skapar en ny serviceorder för ett serviceavtal som har tilldelats ett s
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

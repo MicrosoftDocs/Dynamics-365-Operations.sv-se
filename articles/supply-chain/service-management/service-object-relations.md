@@ -77,3 +77,6 @@ Vid ett servicebesök måste du byta ut växellådan på hissen EL-S/1000. Om du
 
 Om en eller flera serviceorder skapas automatiskt för ett serviceavtal överförs även avtalets serviceobjektrelationer till de serviceorder som skapats.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

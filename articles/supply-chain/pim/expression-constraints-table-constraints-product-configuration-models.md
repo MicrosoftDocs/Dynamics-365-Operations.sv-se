@@ -253,3 +253,6 @@ Du kan inte använda reserverade nyckelord som solvernamn för attribut, kompone
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

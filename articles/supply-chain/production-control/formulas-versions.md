@@ -70,3 +70,6 @@ Funktionen Skalbar finns bara om samtliga formelns varukomponenter har angetts s
 
 ## <a name="use-step-consumption"></a>Använd stegförbrukning
 Stegförbrukning eliminerar kravet att ange en kvantitet för en ingrediens på fliken **Formelrad**. Stegförbrukning har istället konfigurerats att ha ett **Från serie**-värde och ett **Kvantitet**-värde. Informationen från den Stegförbrukning per serie-post som uppfyller kvantiteten i batch-ordern väljs. Stegförbrukningen är användbar när förbrukningstakten inte är linjär med avseende på batchorderns storlek, och ökar behovet endast när en viss kvantitetströskel uppnås. Du aktiverar funktionen för en ny formel i gruppen **Förbrukningsberäkning** och ändra formelinställningen för tillämpbar ingrediens från **Standard** till **Steg**. Du anger denna förbrukningsmetod på fliken **Inställningar** på sidan **Formelrad**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

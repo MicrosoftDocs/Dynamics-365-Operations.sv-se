@@ -42,3 +42,6 @@ I tabellen nedan visas det importformat som du bör använda när du gör en kon
 | 6            | Affärsenhet, 1 avdelning, 2 | Attributen för den ekonomiska dimension som har definierats i segmentordningen.<p>På sidan **Exportera** kan du bekräfta attributdefinitionerna.</p> |
 | 7            | 002,1,658 | <ul><li>Värdet för ekonomisk dimension</li><li>Den ekonomiska dimensionen, som det index som anges i RecordDimensions</li><li>Ett tvetydigt, unikt post-ID som är kopplat till det unika post-ID:t från RecordTrans eller RecordTrans2</li></ul> |
 | 8            | 002,1,1 | <ul><li>Dimensionsvärden som associeras med transaktionen från RecordBudget</li><li>Den ekonomiska dimensionen, som det index som anges i RecordDimensions</li><li>Ett tvetydigt post-ID för den rad som är justerad efter transaktionsradernas ordning i filen</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ Om du vill konfigurera ett batchjobb eller bearbeta betalningsfakturor, avskrivn
 > Efterföljande transaktioner, till exempel skuldamorteringsplaner, betalningar, avskrivningar och utgifter bokförs först efter det att första redovisningstillfället för motsvarande leasingar har bokförts.
 >
 > Journalposterna skapas men bokförs inte förrän du väljer kommandot **Kör**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

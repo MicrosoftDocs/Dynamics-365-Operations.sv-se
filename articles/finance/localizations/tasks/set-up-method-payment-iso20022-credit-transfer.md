@@ -47,3 +47,6 @@ Detta är den tredje proceduren av fem som illustrerar leverantörbetalningsproc
 10. Ange värdena "'DEMF OPER" i fältet Betalningskonto.
 11. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

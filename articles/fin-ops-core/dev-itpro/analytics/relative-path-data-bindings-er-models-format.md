@@ -57,3 +57,6 @@ Den här funktionen avbryter inte kompatibiliteten i ER-ramverket. Alla tidigare
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [ER-formelspråk](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

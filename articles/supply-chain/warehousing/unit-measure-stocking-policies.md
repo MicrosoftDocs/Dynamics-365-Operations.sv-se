@@ -49,3 +49,6 @@ Som en del av genereringen av en frisläppt produkter måste du välja standarde
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

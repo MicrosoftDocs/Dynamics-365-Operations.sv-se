@@ -79,3 +79,6 @@ I den övre delen av bilden nedan visas hur gränssnittet ser ut som standard. I
 Som standard används körningsgränssnittet för produktionsgolvet automatiskt för att logga ut om ingen använder det i 12 timmar. En användare av Supply Chain Management måste sedan logga in igen. Du kan dock förlänga tidsgränsen till upp till 90 dagar.
 
 Om du vill förlänga tidsgränsen loggar du in på Supply Chain Management, går till **Systemadministration \> Användare \> Sessionstillägg**. Ange användarkontot för Supply Chain Management som används för att logga in på enheten och antalet timmar som sessionen ska vara aktiv för.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

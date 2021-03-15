@@ -803,3 +803,6 @@ I det här avsnittet skapar du en sparad variabel i det första testfallet, skap
 2. Kontrollera att båda testfallen har godkänts.
 
     ![Resultatfältet har godkänts för båda testfallen](./media/setup_rsa_tool_105.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

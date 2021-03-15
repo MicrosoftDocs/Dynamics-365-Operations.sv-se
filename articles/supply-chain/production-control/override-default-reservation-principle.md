@@ -58,3 +58,6 @@ Innan du kan använda den här funktionen den aktiveras i ditt system. Administr
 Ett material som tillverkats i bulk tillverkas i en 1 000 liters blandning. När bulkmaterialet är klart fylls det av i flera olika påfyllningsstorlekar, där man fyller på flaskor i olika storlekar. När påfyllningen är klar packas flaskorna i lådor. Lådorna packas sedan på lastpallar.
 
 I det här scenariot skapas en batchorder som gör 1 000 liter bulkmaterial. (Den här ordern är bulkordern.) När batchordern är slutförd rapporteras den som färdig till materialindataplatsen för påfyllningen. En batchorder som fyller och paketar varje flaskstorlek skapas sedan. (Dessa order är packorder.) Förpackningsorder har en formel som består av bulkmaterialet, en tom flaska, en etikett och andra förpackningsmaterial. Eftersom bulkmaterialet flödar direkt från lagret till påfyllningen, behövs inget lagerställe arbete för att plocka denna ingrediens och bulkmaterialet förbrukas direkt från inleveransplatsen. Därför ställs reservationsprincipen in till *manuell*. Det andra materialet fasas till ifyllningen genom plockarbete. Därför ställs reservationsprincipen för dessa rader in för *frisläppning* så att reservationen automatiskt inträffar när förpackningsordern frisläpps.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ I det här avsnittet visas hur du spärrar eller permanent stänger ner en perio
 11. Välj **Uppdatera periodstatus** och ställ in statusen **Spärrad**, **Öppen** eller **Permanent stängd**. **Öppen** visar att bokföring kan göras i perioden, förutsatt att användare har åtkomst. **Spärrad** innebär att inga bokföringar till perioden kan genomföras, men den kan öppnas igen. **Permanent stängd** innebär att perioden är stängd och aldrig kan öppnas på nytt. Inga justeringar kan bokföra. Vi rekommenderar ingen att ställa in en period som **Permanent stängd** förrän alla justeringar och revisioner har avslutats.  
 12. Välj **Uppdatera**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

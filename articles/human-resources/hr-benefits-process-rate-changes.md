@@ -48,3 +48,6 @@ Bearbeta förmånens prisändringar i Microsoft Dynamics 365 Human Resources nä
    4. Välj **OK**. Processen kommer att köras med de parametrar du angett.
 
 4. Välj **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

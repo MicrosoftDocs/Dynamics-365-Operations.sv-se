@@ -58,3 +58,6 @@ Mer information finns i [Härledda böcker](derived-books.md).
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Följande procedur visar de steg som systemadministratörer kan använda för at
 6. Gå till **Navigeringsfönster > Moduler > Vanliga > Vanliga > Standardinstrumentpanel**. Du bör se den nya webbannonsen eller logotypbilden på instrumentpanelen.  
     
     Du kan behöva ändra ditt företag, med hjälp av företagsväljaren, till det som du överför webbannonsen för.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

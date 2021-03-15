@@ -41,3 +41,6 @@ Objektverifiering för klusterplockning fungerar på samma sätt som när du kon
 |        Alternativ        |                                    beskrivning                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | Produktbekräftelse | Låter dig kontrollera varje lagerenhet från den mobila enheten när du har skannat. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

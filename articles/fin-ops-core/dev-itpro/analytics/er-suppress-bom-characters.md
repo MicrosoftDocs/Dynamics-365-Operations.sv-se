@@ -66,3 +66,6 @@ Om du vill granska funktionen vid körning ska du gå igenom lämplig procedur. 
 ## <a name="see-also"></a>Se även
 
 - [Skjuta upp körningen av XML-element i ER-format](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ Med tillägget kostnadsredovisningstjänsten för Microsoft Dynamics 365 Supply 
 ## <a name="related-resources"></a>Relaterade resurser
 
 [Kom igång med kostnadsredovisningstjänst](cost-accounting-service-get-started.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

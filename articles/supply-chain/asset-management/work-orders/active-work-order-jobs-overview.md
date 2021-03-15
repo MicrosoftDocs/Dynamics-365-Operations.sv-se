@@ -42,3 +42,6 @@ I bilden nedan visas ett exempel på listsidan **Aktiva arbetsorder för underh�
 
 En kort beskrivning av knapparna på listsidan **Underhållsjobb för aktiva arbetsorder** finns i [Introduktion till arbetsorder](../work-orders/introduction-to-work-orders.md) där identiska knappar beskrivs.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

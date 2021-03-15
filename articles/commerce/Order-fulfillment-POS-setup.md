@@ -130,3 +130,6 @@ Orderuppfyllelse i POS innehåller filter för att hjälpa användaren att enkel
 - Skapades den
 - Leveransdatum
 - Inleveransdatum
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

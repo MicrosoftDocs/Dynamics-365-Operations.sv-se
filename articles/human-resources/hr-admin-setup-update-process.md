@@ -105,3 +105,6 @@ När du testar förhandsgranskningsfunktioner eller försöker med nya funktione
 [Nyheter och ändringar i Dynamics 365 Personal](hr-admin-whats-new.md)</br>
 [Livscykelpolicy för programmet](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Kontrollera att kundens konto innehåller kundnummer US-001
     * Det finns två radrabattavtal för produkten T0012 som anger en rabatt på 5 procent för en orderradskvantitet från mellan 1 till 10 och 7 procents rabatt för orderkvantiteter över 10. Observera att rabatter gäller för en grupp produkter, i det här exemplet gruppkod 01, som produkten T0012 tillhör.  
 4. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

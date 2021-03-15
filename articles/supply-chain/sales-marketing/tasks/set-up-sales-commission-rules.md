@@ -95,3 +95,6 @@ I den här proceduren visas om hur du ställer in och aktiverar försäljningspr
 17. I listan väljer du den provisionsgrupp som du skapade tidigare.
 18. Välj **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

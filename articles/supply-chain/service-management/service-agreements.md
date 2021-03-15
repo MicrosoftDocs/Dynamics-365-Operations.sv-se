@@ -78,3 +78,6 @@ Varje serviceavtalsrad beskriver i detalj vad som ingår i det föreslagna servi
 ## <a name="related-topics"></a>Relaterade ämnen
 
 [Skapa serviceavtal](create-service-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

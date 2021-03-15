@@ -248,3 +248,6 @@ Informationen i följande resurser krävs inte för att aktivera inbäddade rapp
 - [Få åtkomst till analysarbetsytor och rapporter i en 1-rutemiljö](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
 - [Lägg till analyser i arbetsytor genom att använda Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ När du stämmer av en transportföretagsfaktura och en frakträkning görs dett
 5. Klicka för att följa länken i fältet Reference journal number.
 6. Klicka på Rader.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

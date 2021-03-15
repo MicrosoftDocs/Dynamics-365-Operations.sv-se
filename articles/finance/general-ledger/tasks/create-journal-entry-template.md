@@ -62,3 +62,6 @@ Bokförda journalverifikationer kan sparas som verifikationsmallar och tillämpa
 29. Ange det belopp som ska användas för verifikationen i fältet **Belopp**. Fältet **Belopp** visas bara om verifikationsmallen är av typen Procent.  
 30. Klicka på **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

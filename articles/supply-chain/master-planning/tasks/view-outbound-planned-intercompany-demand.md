@@ -42,3 +42,6 @@ I den här proceduren anges hur du visar alla planerade beställningar som ska g
 8. Expandera avsnittet Upstream demand details.
     * I det här avsnittet får du information om hur efterfrågan möts. Du kan behöva vänta på att huvudplanering körs i leveransföretaget innan du kan se ytterligare information här.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

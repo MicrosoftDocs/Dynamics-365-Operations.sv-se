@@ -84,3 +84,6 @@ Med metoden för degressiv avskrivning beräknas 30 procent av avskrivningsbasen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Gör på följande sätt när du vill designa och konfigurera elementen för en 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Skapa arbetsflöden – översikt](create-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

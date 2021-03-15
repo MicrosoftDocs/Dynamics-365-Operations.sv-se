@@ -88,3 +88,6 @@ Följande enheter användes till grund för PowerBI.com-lösningen för **ekonom
 - ChartofAccounts
 
 Dessa enheter används för att skapa beräknade mått i datamodellen. Beräknade åtgärder används för att beräkna huvudindikatorerna för prestanda (KPI) samt de rapporter som används i innehåll. Som standard kommer innehållspaketet med data för de senaste tre åren och ett framtida år. Om du vill ta med ytterligare beräkningar i dina rapporter och din instrumentpanel, kan du ändra arbetsboken i [Microsoft Excel](https://docs.microsoft.com/dynamics/s-e/). Denna arbetsbok är den standarddatamodell som använts för att skapa innehållet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

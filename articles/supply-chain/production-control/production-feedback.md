@@ -35,3 +35,6 @@ Produktionåterkoppling ger arbetarna återrapportering om produktionsjobb. Den 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

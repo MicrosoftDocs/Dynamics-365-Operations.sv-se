@@ -225,3 +225,6 @@ Om du vill aktivera manuell körning av en senarelagd räkenskapsregistrering b�
     1. Välj layout som ska uppdateras.
     2. Lägg till en ny knapp och ange knappegenskapen **Slutför räkenskapsregistreringsprocess**.
     3. På sidan **Distributionsschemaläggare** kör jobb **1090** för att överföra ändringar till kanaldatabasen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

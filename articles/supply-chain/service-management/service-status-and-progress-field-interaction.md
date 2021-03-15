@@ -94,3 +94,6 @@ Om alla rader på en serviceorder markeras som **Bokförd**, är förloppet på 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

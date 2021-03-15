@@ -117,3 +117,6 @@ Om både Adyen- och PayPal-betalningsanslutningar behövs lägger du till båda 
 [Dynamics 365-betalningsanslutning för PayPal](paypal.md)
 
 [Stark kundautentisering med Adyen](adyen_redirect.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

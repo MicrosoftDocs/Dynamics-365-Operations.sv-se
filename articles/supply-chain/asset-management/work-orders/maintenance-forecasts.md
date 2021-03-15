@@ -123,3 +123,6 @@ Om timkostnader, artikelkostnader och utgifter uppdateras i andra moduler i Micr
 I bilden nedan visas ett exempel på sidan dialogrutan **Uppdatera arbetsorderprognos**.
 
 ![Figur 2](media/07-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

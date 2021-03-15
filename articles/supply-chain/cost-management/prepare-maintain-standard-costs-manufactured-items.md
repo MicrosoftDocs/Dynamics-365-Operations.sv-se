@@ -72,3 +72,6 @@ Om du vill använda flödesinformation i kostnadssyfte krävs ytterligare förbe
 
 [Ställ in produkter som antingen kan produceras eller anskaffas](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

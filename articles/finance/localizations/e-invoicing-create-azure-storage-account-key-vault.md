@@ -80,3 +80,6 @@ I det här avsnittet ska du utföra två huvudsteg:
 9. I dialogrutan **Primär** välj primär genom att lägga till **tillägget elektronisk fakturering**.
 10. Välj **Lägg till** och välj sedan **Spara ändringar i nyckelvalv**.
 11. På sidan **Översikt** kopiera värdet **DNS-namn** för nyckelvalvet. Det här värdet kommer att användas under installationen av tjänsten i RCS och kallas *nyckelvalv-URI*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

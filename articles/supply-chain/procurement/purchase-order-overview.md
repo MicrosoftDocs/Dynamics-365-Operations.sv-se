@@ -91,3 +91,6 @@ Fältet **Godkännandestatus** används när en inköpsorder genomgår en gransk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

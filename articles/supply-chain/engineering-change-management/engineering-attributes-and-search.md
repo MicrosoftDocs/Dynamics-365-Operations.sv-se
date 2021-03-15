@@ -93,3 +93,6 @@ Du måste ange den tekniska kategori som produkten tillhör. Kategorin anger all
 Du kan använda teknik för att söka efter produkter genom att söka efter deras tekniska attributvärden. Därför är det lätt att hitta tekniska produkter utifrån deras egenskaper. Du kan söka i de produkter som tillhör en teknisk produktkategori, eller söka bland alla tekniska produkter.
 
 Sökningen är tillgänglig på sidor för produktmalldata och från transaktionsartiklar i systemet, t.ex. försäljningsorder. För en transaktionsartikel kan du använda sidan **Sökning efter tekniska attribut** för att söka efter en produkt. Du kan sedan använda knappen **Lägg till som ny rad** om du vill lägga till produkten på försäljningsorderraderna. Produkter i sökresultatet kan också läggas till direkt på ordern.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

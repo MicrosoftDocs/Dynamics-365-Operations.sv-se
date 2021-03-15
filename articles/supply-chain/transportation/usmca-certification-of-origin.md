@@ -139,3 +139,6 @@ Användaren som signerar intyget måste manuellt ange antalet sidor (för verifi
 ### <a name="page-numbers"></a>Sidnummer
 
 Aktuell sida och antal sidor som skrivs ut längst ned i dokumentet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

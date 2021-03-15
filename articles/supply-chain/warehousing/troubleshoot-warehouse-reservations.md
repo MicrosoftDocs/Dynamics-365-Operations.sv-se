@@ -77,3 +77,6 @@ Men om du använder en artikel som har en "batch under" bokningshierarki (med **
 Detta beteende är av design. Om du placerar en dimension ovanför dimensionen **Plats** i reservationshierarkin måste den anges innan den kan frisläppas till lagerstället. Microsoft har utvärderat det här problemet och har fastställt att det är en begränsning av funktionen under versioner till lagret från workbench för lastplanering. Delkvantiteter kan inte frisläppas om en eller flera dimensioner ovanför **plats** inte har angetts.
 
 För mer information [Flexibel reservationspolicy för dimension på distributionslagernivå](flexible-warehouse-level-dimension-reservation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

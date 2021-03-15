@@ -165,3 +165,6 @@ Gör på följande sätt när du vill ställa in leverantörsfilterkoder.
 ## <a name="see-also"></a>Se även
 
 [För mer information se blogginlägget WMS-filterkoder för lagerställe](http://blog.dynamics-for-operations.com/2017/09/26/wms-warehouse-filter-codes/)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

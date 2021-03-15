@@ -88,3 +88,6 @@ Ett sätt att förbättra prestanda med den inbyggda huvudplaneringsmotorn är a
 
 > [!NOTE]
 > Detta begränsar tidsperioden för nedbrytningar som utförs för denna huvudplan till en enda dag.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

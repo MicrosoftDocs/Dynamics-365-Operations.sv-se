@@ -214,3 +214,5 @@ Chefer kan se alla mål för deras team via panelen **Teamprestationsmål** i av
 På fliken **recensioner** sammanfattas de granskningar som medarbetaren har i varje tillstånd: **pågår**, **klar för granskning** och **slutlig granskning**. Om du vill komma åt en medarbetares granskning väljer du knappen **Detaljer** och väljer sedan granska för att samarbeta på. Beroende på var en granskning är i arbetsflödesprocessen kan du se om granskningen är tillgänglig för uppdatering. 
 
 Du kan se alla recensioner för ditt team genom **Teamprestationsgranskningar** i avsnittet **Sammanfattning** i **Mitt team**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

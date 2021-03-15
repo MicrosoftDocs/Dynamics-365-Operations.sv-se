@@ -64,3 +64,6 @@ För att kunna köra den här proceduren måste du ha rollen systemadministratö
 29. Klicka på OK.
 30. Välj en orsak till varför du stämplar ut tidigt.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

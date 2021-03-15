@@ -110,3 +110,6 @@ Sidan **Information om planerat arbete** (**Lagerstyrning \> Arbete \> Informati
 Om du vill visa batchjobben för påfyllnadsbearbetning, välj **batchjobb** i åtgärdsfönstret på sidan **Alla påfyllnader**.
 
 Här kan du visa alla batchuppgiftsdetaljer för varje batchjobb-ID.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

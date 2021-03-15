@@ -84,3 +84,6 @@ I det här avsnittet beskrivs konfigurationen av grundläggande lagerinventering
 5. Välj en inventeringsgrupp på den nedrullningsbara menyn i fältet **Inventeringsgrupp**. Du kan välja en viss inventeringsgrupp som ska användas för artikeln i den angivna lagerstället, som du har valt. När du vill beräkna är den utförs i lagerstället, kommer denna av policy åsidosätta den allmänna principen för av artikeln.  
 6. Välj **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

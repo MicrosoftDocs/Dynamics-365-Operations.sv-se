@@ -60,3 +60,6 @@ I det här avsnittet beskrivs hur du visar aktiviteter i en serviceorder som int
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -82,3 +82,6 @@ Streckkodsmasker måste tilldelas till streckkoder innan de kan användas. Gör 
 5. Klicka på **Spara**.
 
 Streckkodsmasken kan nu användas för att skapa streckkoder för produkter. Stegen ovan är exempel på hur du skapar streckkodsmasker för produkter, men de visar också hur du kan skapa streckkodsmasker för alla andra streckkodstyper som stöds. Streckkodsmasker, typer och längd ska justeras för användning i din specifika miljö.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

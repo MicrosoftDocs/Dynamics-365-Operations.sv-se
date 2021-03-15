@@ -82,3 +82,6 @@ Klicka på sidan **Massanställningsprojekt**, klicka på **Öppna projekt** ell
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

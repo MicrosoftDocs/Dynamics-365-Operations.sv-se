@@ -54,3 +54,6 @@ Det går att koppla en mallstrukturlista (BOM) till en serviceobjektrelation. Se
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

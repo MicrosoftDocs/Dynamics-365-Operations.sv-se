@@ -72,3 +72,6 @@ Det här avsnittet innehåller information om hur du ställer in leverantörsfak
 16. Välj **OK**.
 17. Stäng sidorna om du vill gå tillbaka till startsidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

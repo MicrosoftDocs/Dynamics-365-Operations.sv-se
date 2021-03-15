@@ -134,3 +134,6 @@ Om en leasing har justerats kan du visa olika versioner av den. Du kan också vi
 
 2. Om du vill visa historiska planer öppnar du den ändrade leasingen från sidan **Sammanfattning av leasing**, väljer önskad bok och väljer sedan **Versionshistorik för bok** i åtgärdsfönstret.
 3. På sidan **Bokversion** väljer du en version och plan att visa.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Du kan använda funktionen **rensa återställningsdatum** för att rensa framti
 
 > [!NOTE]
 > Beroende på vilket återställningsdatum du väljer och kvittoformatet, kan du ha duplicerade kvittonummer. Även om kassasystemet kan hantera dessa situationer, ökar den tid som krävs för att bearbeta returer, eftersom säljare måste välja bland de duplicerade kvittona. Andra komplikationer som rör datarensning kan inträffa om de duplicerade inleveranserna inte är en planerad följd. Därför rekommenderar vi att du använder dynamiska datumtecken (t.ex. **ddd**, **MM**, **DD** och **ÅÅ**) ör att förhindra att kvittonumren dupliceras efter en återställning.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

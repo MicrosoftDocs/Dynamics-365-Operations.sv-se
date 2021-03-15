@@ -115,3 +115,6 @@ Om det finns ett reglerat krav där du använder kontinuerliga nummerserier, rek
 I händelse av strömavbrott, programfel eller annat oväntat fel kan inte systemet återanvända nummer automatiskt för kontinuerliga nummerserier. Du kan köra rensningen manuellt eller automatiskt återställa de förlorade numren.
 
 Tänk noggrant igenom serveranvändningen när du planerar rensningen. Vi rekommenderar att du utför rensningen som ett batchjobb under tider då arbetsbelastningen är låg.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

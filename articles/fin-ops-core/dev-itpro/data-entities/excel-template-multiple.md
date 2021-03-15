@@ -49,3 +49,6 @@ I fall där en ny version av samma fil eller en helt ny fil måste läsas in fö
 ## <a name="upload-a-file-using-run-project"></a>Överför en fil genom att använda Kör projekt
 
 Du kan överföra en Excel-fil när du använder alternativet **Köra projekt** som kör ett importprojekt. Du måste vara noga med att överföra filer som har samma kalkylblad som de befintliga mappningarna för datatabellerna i dataprojektet. Om ett kalkylblad inte finns i den nyligen överförda filen, visas ett fel i systemet och importen avbryts. Om mappningen till kalkylbladet måste ändras för en entitet och mappningarna i dataprojektet måste först uppdateras från i inne i dataprojektet innan du använder filen i upplevelsen **Kör projekt**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

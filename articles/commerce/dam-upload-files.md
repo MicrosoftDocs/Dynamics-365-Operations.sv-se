@@ -97,3 +97,6 @@ Så här överför du en fil till din Commerce-webbplatsskapare.
 [Anpassa bildens fokuspunkter](dam-custom-focal-point.md)
 
 [Ladda upp och betjäna statiska filer](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

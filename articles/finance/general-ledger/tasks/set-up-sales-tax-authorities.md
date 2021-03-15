@@ -40,3 +40,6 @@ Skattemyndigheter är enheter dit den insamlade momsen måste rapporteras och be
 10. Välj ett tal i fältet Avrundning.
 11. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

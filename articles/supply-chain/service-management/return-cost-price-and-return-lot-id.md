@@ -111,3 +111,6 @@ När du använder fältet **returparti-ID** på en returorderrad för att ange r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

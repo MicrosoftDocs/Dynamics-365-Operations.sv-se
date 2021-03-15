@@ -144,3 +144,6 @@ Detta beteende är av design. Den valda adressen måste klassificeras som en lev
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>Kan jag hitta användaren som annullerade en inköpsorder?
 
 Den här informationen spåras bara om inköpsordern är föremål för ändringshantering. Om du använder ändringshantering kan du se vem som skickade ändringen (annulleringen) och vem som godkände den.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -211,3 +211,6 @@ Om några rader i kundtabellen har värden i kolumner **ContactPersonID** och **
     Den inledande synkroniseringen av raderna har nu slutförts.
 
 8. I Finance and Operations-appen, aktivera tillbaka ändringsspårning på tabellen **Kunder V3**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

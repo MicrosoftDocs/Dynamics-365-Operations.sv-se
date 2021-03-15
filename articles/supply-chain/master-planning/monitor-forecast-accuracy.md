@@ -49,3 +49,6 @@ Supply Chain Management beräknar följande typer av prognosprecision:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

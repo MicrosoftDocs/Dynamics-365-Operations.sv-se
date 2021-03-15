@@ -49,3 +49,6 @@ Funktionsvalideringen av ett ERP-program kan inte vara fullständigt dataagnosti
     - Validera endast när du filtrerar efter en viss transaktion i stället för en allmän validering. För antalet poster kan du t.ex. filtrera för transaktionsnumret eller transaktionsdatumet så att valideringen exkluderar alla andra transaktioner. 
     - Om du checkar in ett kundsaldo eller en budgetkontroll sparar du först värdet och lägger sedan till transaktionsvärdet för att validera det förväntade resultatet istället för att validera ett fast förväntat värde. 
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

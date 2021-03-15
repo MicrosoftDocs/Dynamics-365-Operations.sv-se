@@ -127,3 +127,6 @@ Genom att välja avgifter **Transaktionsalternativ \> Avgifter \> Hantera avgift
 [Avancerade automatiska avgifter för flera kanaler](omni-auto-charges.md)
 
 [Allokera huvudavgifter för att matcha försäljningsrader](pro-rate-charges-matching-lines.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

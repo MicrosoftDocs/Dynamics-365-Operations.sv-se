@@ -41,3 +41,6 @@ Moms beräknas och bokförs på huvudkontona som anges i redovisningsbokförings
 11. Välj huvudkontot för att bokföra kassarabatten för **momskoder** som är kopplade till denna **redovisningsbokföringsgrupp** i fältet **Kundkassarabatt**. Det är valfritt och om inget konto anges, ska huvudkontot för **kassarabattkoder** användas. Det kan vara praktiskt att använda andra konton, per **redovisningsbokföringsgrupp**, om du använder alternativet för återföring av moms vid kassarabatter i **Momsgrupper**.  
 12. Klicka på **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

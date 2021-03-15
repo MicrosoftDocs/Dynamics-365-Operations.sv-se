@@ -150,3 +150,6 @@ I tabellen nedan beskrivs de processer som måste köras för att skicka bonusko
 
     > [!NOTE]
     > Till skillnad från andra tidsbegränsade rabatter bl.a kvantitet, enkla, mixa och matcha och tröskelvärde skapar leveransrabatten inte rabattrader, utan snarare redigerar leveransavgifter direkt och lägger till rabattens namn i avgiftsbeskrivningen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

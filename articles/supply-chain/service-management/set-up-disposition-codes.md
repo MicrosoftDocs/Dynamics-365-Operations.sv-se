@@ -56,3 +56,6 @@ Du kan även ange en orsakskod för att förklara varför en artikel har returne
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

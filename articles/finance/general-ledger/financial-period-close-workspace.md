@@ -107,3 +107,6 @@ När ett stängningsschema är slutfört väljer du alternativet **Stängd** fö
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

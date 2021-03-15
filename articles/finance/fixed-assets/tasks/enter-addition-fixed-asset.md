@@ -45,3 +45,6 @@ Här används revisorrollen och demonstrationdata för den juridiska personen US
     * Ange **Ökar tjänstelivstiden** till **Ja** om tillägget förlänger anläggningstillgångens tjänstelivstid.  
     * Det här fältet är endast till för information. Ändra tjänstelivstiden i värdemodellerna och avskrivningsreglerna för tillgången att öka tjänstelivstid.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

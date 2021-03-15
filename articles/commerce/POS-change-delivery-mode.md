@@ -46,3 +46,6 @@ När du har valt det nya leveranssättet visas transaktionssidan. Om du vill gra
 [Skapa kundtjänstorder](tasks/create-call-center-orders.md)
 
 [Anpassa transaktionsmeddelanden via e-post efter leveranssätt](customize-email-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

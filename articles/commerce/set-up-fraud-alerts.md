@@ -68,3 +68,6 @@ Ordern har sparats, men flaggan **bearbeta inte** anges på den. Den här flagga
 Om du vill visa och hantera de order som är spärrade för granskning, gå till **Butik och handel** \> **kunder** \> **Orderspärrar**. På sidan **Orderspärrar** markerar du en post i listan och klickar sedan på **Orderspärr** för att se en mer detaljerad vy som innehåller information om orsaken till spärren. På snabbfliken **bedrägeridetaljer** kan du se systematiskt bedrägerikriterie som befanns vara en matchning för ordern och poäng som har använts. Om ordern har spärrats manuellt, kan du granska eventuella kommentarer som angavs av användaren som spärrats ordern genom att titta på avsnittet **bedrägerianteckningar** på snabbfliken **anteckningar**.
 
 Mer information om hur du arbetar med spärra order, se [orderspärrar](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

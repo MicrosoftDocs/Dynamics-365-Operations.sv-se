@@ -71,3 +71,6 @@ Sidan **Kostnadsposter** aktiverar filtrering efter dokument-ID och dokumentdatu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

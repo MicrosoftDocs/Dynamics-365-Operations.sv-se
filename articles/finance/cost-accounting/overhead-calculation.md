@@ -1414,3 +1414,6 @@ I Affärsredovisning bokförs en kostnad på 10 000,00 för Electricitet på et
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

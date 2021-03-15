@@ -69,3 +69,6 @@ Observera följande:
 
 - Du kan ställa in räknare som är relaterade till en annan räknare. I detta fall uppdateras relaterade räknare automatiskt samtidigt när en räknare uppdateras. Mer information om hur du ställer in relaterade räknare finns i [räknare](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -239,3 +239,6 @@ Använd sidan **Utländska handelsparametrar** för att ställa in parametrarna 
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

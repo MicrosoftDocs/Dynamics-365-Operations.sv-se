@@ -54,3 +54,6 @@ Den här proceduren visar hur förmånsberättigandeprocessen fungerar. När pro
 25. Öppna kolumnfiltret Status.
 26. Sortera A till Z
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

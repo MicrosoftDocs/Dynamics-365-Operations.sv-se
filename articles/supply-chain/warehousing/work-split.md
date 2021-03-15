@@ -154,3 +154,6 @@ Om du försöker använda distributionslagerappen för att köra plockningsarbet
 ## <a name="other-blocked-operations"></a>Andra blockerade operationer
 
 Alla operationer som ändrar arbetsrader, arbetslagertransaktioner eller lagerpåfyllnadslänkar som är relaterade till arbete som delas kommer att misslyckas, och följande felmeddelande visas: "arbetet med ID håller \#\#\#\# just nu på att delas."
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ När du har publicerat det uppdaterade rubrikavsnitt visas din logotyp på alla 
 
 [Lägga till skriptkod på webbsidor för att stödja telemetri](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

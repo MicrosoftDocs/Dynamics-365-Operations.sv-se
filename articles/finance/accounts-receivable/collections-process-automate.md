@@ -117,3 +117,6 @@ I följande register visas de sidor och fält som de angivna snabbflikarna kan n
 |     Parametrar för kundreskontra > automatisering av inkassoprocessen     |     Bokför kravbrev automatiskt           |     För kravbrevs åtgärdstyper kommer brevet att bokföras under automationen.                                      |
 |     Parametrar för kundreskontra > automatisering av inkassoprocessen     |     Skapa aktiviteter automatisering                |     Skapa och stäng aktiviteter för åtgärdstyper som inte är aktiviteter för att visa alla automatiserade steg som har vidtagits för ett konto.        |
 |     Parametrar för kundreskontra > automatisering av inkassoprocessen     |     Antal dagar som insamling av inkassoprocesser ska fortsätta     |     Definierar antalet dagar som inkassohistoriken lagras.                                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

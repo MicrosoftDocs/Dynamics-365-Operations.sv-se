@@ -51,3 +51,6 @@ Detta är den andra proceduren av fem som illustrerar leverantörbetalningsproce
 4. Ange eller välj ett värde i fältet Bankkonto.
 5. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

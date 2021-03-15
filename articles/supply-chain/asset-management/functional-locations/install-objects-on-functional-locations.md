@@ -82,3 +82,6 @@ När inställningsdata är tillgängliga är du redo att skapa en tillgång.
 1. På sidan **alla funktionsplatser** kontrollerar du att den funktionsplats där du vill att tillgången ska skapas automatiskt använder den funktionsplatstyp som du skapade för detta ändamål.
 2. Markera funktionsplatser i listan.
 3. Välj **Uppdatera funktionsplatsens tillstånd** och välj sedan det livscykeltillstånd som du skapade för det här ändamålet. En tillgång installeras nu automatiskt på funktionsplatsen. Den här tillgången har samma namn som funktionsplatsen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

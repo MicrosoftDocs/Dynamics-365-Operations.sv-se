@@ -48,3 +48,6 @@ Mer information finns i [Ställa in och generera betalningskontrollfiler](set-up
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

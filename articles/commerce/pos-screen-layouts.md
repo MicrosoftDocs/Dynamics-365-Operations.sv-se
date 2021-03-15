@@ -207,3 +207,6 @@ Knappsatsdesignern låter dig konfigurera knappsatser som kan användas i kassav
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Installera layoutdesignern för detaljhandelskassa (POS)](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

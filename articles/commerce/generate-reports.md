@@ -137,3 +137,6 @@ För att generera rapporten **Organisationsförsäljning** följ dessa steg.
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Startsidan för Commerce](../retail/index.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

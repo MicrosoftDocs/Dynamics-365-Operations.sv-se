@@ -93,3 +93,6 @@ Instruktioner om hur du lägger till en presentkortsmodul på en betalningssida 
 [Stöd för externa presentkort](./dev-itpro/gift-card.md)
 
 [Uppdateringar av SDK och modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

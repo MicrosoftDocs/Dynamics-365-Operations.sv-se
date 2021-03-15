@@ -52,3 +52,6 @@ Du kan uppdatera mappningdefinitioner för en dimension för kostnadselement nä
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Den här proceduren gäller för alla europeiska länder/regioner. Proceduren sk
 7. Klicka på Find.
     * Alla parter med detta registrerings-ID visas.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

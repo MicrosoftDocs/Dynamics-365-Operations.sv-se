@@ -80,3 +80,6 @@ Vi har lagt till metadatainformation om Intrastat-tabellen med poster.
 3.    Klicka på **OK**. 
     
 Den skapade konfigurationen av ER-metadata har sparats som en XML-fil som kan importeras till RCS och användas som källa för information om metadata för den utländska handelsdomänen. Utifrån den här informationen kan vi ange mappningen mellan programdata och ER-datamodell.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

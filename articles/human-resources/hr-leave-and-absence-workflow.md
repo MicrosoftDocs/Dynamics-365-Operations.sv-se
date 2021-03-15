@@ -81,3 +81,6 @@ Exemplen visar hur du kan skapa olika typer av arbetsflödesvillkor genom att an
 ## <a name="see-also"></a>Se även
 
 - [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -229,3 +229,6 @@ I bilden nedan visas hur den här serien med transaktioner påverkas om du välj
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

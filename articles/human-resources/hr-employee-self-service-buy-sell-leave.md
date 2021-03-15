@@ -53,3 +53,6 @@ Dina saldon kommer antingen att uppdateras automatiskt eller gå igenom en godk�
 
 [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)</br>
 [Hantera principer för köpa och sälja tjänstledighet](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

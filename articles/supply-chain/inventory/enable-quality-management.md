@@ -503,3 +503,6 @@ Du måste definiera en kvalitetsassociation för varje variant i en affärsproce
 [Avvikelsehantering](enable-nonconformance-management.md)
 
 [Kvalitetsstyrning för lagerprocesser](quality-management-for-warehouses-processes.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

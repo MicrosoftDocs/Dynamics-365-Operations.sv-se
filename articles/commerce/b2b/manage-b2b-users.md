@@ -139,3 +139,6 @@ Följ dessa steg om du vill registrera affärspartner och användare i Commerce-
 [Ange produktkvantitetsgränser för B2B-näthandelssajter](quantity-limits.md)
 
 [Nummerserier – översikt](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

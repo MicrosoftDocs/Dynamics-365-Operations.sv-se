@@ -129,3 +129,6 @@ Du kan också skapa och använda pivottabeller och diagram för ytterligare grup
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

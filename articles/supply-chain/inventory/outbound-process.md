@@ -84,3 +84,6 @@ De varor som ännu inte har reserverats kommer att reserveras i samband med att 
 Så fort samtliga plocklinor har plockats på sidan **Registrera plocklist** har tillhörande leverans slutförts. Processen för försäljningsordrarnas packsedlar kan edan initialiseras baserat på plockade varor.
 
 [![Uppdatera utgående leveranser](./media/outbound-shipments.png)](./media/outbound-shipments.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

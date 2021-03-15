@@ -59,3 +59,6 @@ Du kan använda den här guiden i demonstrationsföretaget USMF. Den här proced
 6. Välj **Spara**.
 7. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

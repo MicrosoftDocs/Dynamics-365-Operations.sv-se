@@ -62,3 +62,6 @@ Färdighetsmappningsprofiler låter dig hitta nuvarande anställda eller kandida
 Du kan skapa en analys till färdighetsmappning profil som du vill visa en lista med kompetenserna för en anställd, sökande eller kontaktperson för ett visst datum. Du kan skapa en analys för luckor i kompetens om du vill jämföra en persons kompetenser med de kompetenser som krävs för ett visst jobb.  
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

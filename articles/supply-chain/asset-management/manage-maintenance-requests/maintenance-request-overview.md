@@ -72,3 +72,6 @@ Knapparna i åtgärdsfönstret är ordnade på flikar. I följande tabell beskri
 | Skicka utlåningstillgång                  | Välj en utlåningstillgång som ska vara en temporär ersättning för tillgången som valts i den valda underhållsbegäran. |
 | Lämna tillbaka utlåningstillgång                | Registrera utlåningstillgången som returnerad. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

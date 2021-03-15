@@ -112,3 +112,6 @@ I följande tabell visas de listtyper som är tillgängliga för val i dialogrut
 [Översikt av produktrekommendationer](product-recommendations.md)
 
 [Snabbvisningsmodul](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

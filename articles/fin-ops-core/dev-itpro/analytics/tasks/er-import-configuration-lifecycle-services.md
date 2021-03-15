@@ -103,3 +103,6 @@ I det här exemplet ska du välja önskad version av ER-konfigurationen och impo
     I det här exemplet väljer du den version av konfigurationen som har status **Delad**.
 
     Observera att den enda delade versionen 1 i den valda konfigurationen av datamodell nu också är tillgänglig.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

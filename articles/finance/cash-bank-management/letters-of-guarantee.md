@@ -64,3 +64,6 @@ Mer information finns i följande avsnitt:
 [Ställ in bankkreditlimiter och bokföringsprofiler för garanti](tasks/set-up-bank-facilities-posting-profiles.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

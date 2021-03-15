@@ -88,3 +88,6 @@ Commerce använder organisationshierarkier för att strukturera kanaler. Organis
 > [!NOTE]
 > Om du vill använda Commerce säljfunktioner, måste konfigurationsnyckeln **Flera leveransadresser** till aktiveras. Den här konfigurationsnyckeln finns i den konfigurationsnyckel för **handel** under **Systemadministration**\> **Konfiguration** \> **Licenskonfiguration**. Detta krävs på grund av olika valideringar baserat på leveransadressen som konfigurerats på försäljningsorderradnivå.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

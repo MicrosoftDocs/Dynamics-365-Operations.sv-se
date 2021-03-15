@@ -123,3 +123,6 @@ Arbetsflödet **justering av kreditgräns** kan användas för att skicka kredit
 
 > [!NOTE]
 > När du skapar arbetsflödet **kreditgränsjusteringar** kan du ställa in det så att justeringarna bokförs automatiskt när raderna har godkänts. Ta bara med **bokföra journalen automatiskt** i arbetsflödet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

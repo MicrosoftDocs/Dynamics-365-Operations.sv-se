@@ -82,3 +82,6 @@ En leveransalternativmodul kan bara läggas till i en betalningsmodul. Mer infor
 [Allokera huvudavgifter för att matcha försäljningsrader](pro-rate-charges-matching-lines.md)
 
 [Ställ in leveranssätt](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

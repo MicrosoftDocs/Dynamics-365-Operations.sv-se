@@ -99,3 +99,6 @@ APQC Unified Library (augusti 2016 - alla språk) innehåller de uppgiftsguider 
 [Nya eller uppdaterade uppgiftsguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Nya eller uppdaterade uppgiftsguider (november 2016)](new-task-guides-november-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

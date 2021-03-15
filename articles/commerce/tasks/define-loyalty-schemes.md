@@ -69,3 +69,6 @@ Den här proceduren går igenom hur du definierar ett bonusprogram. Bonusplaner 
 27. Klicka på Spara.
     * Så snart du ändrar kanalerna för ett bonusprogram måste du köra Bearbeta förmånsscheman. Det kanaler uppdateras lojalitetssystem.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ I det här avsnittet beskrivs hur du godkänner leverantörer för särskilda an
 13. Välj **Nej** i fältet **Ärv leverantörer från överordnad kategori:**.
 14. Välj **Ja** i fältet **Ärv leverantörer från överordnad kategori:**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

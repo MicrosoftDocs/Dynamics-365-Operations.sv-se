@@ -109,3 +109,6 @@ När funktionen för farliga material är aktiverad i systemet innehåller rappo
 ## <a name="packing-list-report"></a>Packningslista - rapport
 
 När funktionen för farliga material är aktiverad i systemet innehåller packningslistor ytterligare information som är relaterad till leveransens tryckta text för en artikel. Den här rapporten är tillgänglig på sidan **alla laster** som vanligt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

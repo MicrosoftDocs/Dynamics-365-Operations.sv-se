@@ -163,3 +163,6 @@ För alla allmänna problem bör du alltid läsa händelseloggarna i Modern POS-
 [Spara betalningsinstrument online med Adyen-kopplingen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
 
 [Översikt över betalningar i flera kanaler](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

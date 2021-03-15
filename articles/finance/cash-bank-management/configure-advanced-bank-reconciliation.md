@@ -60,3 +60,6 @@ Alternativet för **Avstämning efter import** kommer automatiskt att validera b
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

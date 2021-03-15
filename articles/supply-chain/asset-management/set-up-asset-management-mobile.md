@@ -84,3 +84,6 @@ Om du vill göra tillgångshanteringsfunktioner tillgängliga i Finance and Oper
 Mer information om hur du arbetar med den mobila arbetsytan **tillgångshantering** finns i [Använda den mobila arbetsytan för tillgångshantering](asset-management-mobile-workspace.md).
 
 Mer information om Finance and Operations (Dynamics 365) mobilappen finns på [startsidan för Mobilappen](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

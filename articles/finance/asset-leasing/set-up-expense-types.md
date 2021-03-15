@@ -58,3 +58,6 @@ Därefter ska du koppla konton till utgiftstyperna. De här kontona kommer att d
 7. Välj huvudkonto för finansiell leasing och huvudkonto för operationell leasing i lämpliga fält.
 
 När du har utfört de här stegen kan du lägga till utgifter via raderna för **betalningsplanen för verkställighetskostnad** på sidan **Leasingdetaljer** för en vald leasing. Du kan också lägga till utgifter när du skapar en ny leasing.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

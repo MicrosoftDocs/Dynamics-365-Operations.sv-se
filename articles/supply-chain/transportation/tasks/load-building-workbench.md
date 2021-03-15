@@ -66,3 +66,6 @@ Du kan nu tilldela lastuppbyggnadsstrategin till en lastuppbyggnadsmall. Alterna
 1. Granska de föreslagna laster och de föreslagna lastraderna.
 1. I åtgärdsfönstret **Skapa laster** för att skapa laster som är baserade på källdokumentraderna på snabbfliken **Föreslagna lastraderna**.
 1. Stäng sidan **Workbench för lastuppbyggnad**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

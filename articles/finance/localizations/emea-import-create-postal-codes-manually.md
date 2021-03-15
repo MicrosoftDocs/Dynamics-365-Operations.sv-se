@@ -46,3 +46,6 @@ I vissa länder måste du använda ramverket för datahantering för att importe
 I stället för att importera koder kan du använda sidan **Adressinställningar** för att manuellt lägga till nya postnummer.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

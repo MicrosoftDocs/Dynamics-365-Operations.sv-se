@@ -62,3 +62,6 @@ Som standard är inställningen för **maximal körningstid** inte är tillgäng
 
 - **Modul:** *Lagerstyrning*
 - **Funktionsnamn:** *Maximal körningstid för rensningsjobbet för lagerhanteringsposter*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

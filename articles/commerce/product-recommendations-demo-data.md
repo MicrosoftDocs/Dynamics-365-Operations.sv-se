@@ -89,3 +89,6 @@ Tillägget innehåller en datafil som heter RecoMockDataset.csv, vilket gör att
 [Skapa granskade rekommendationer manuellt](create-editorial-recommendation-lists.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

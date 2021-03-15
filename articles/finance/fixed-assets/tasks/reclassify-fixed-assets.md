@@ -45,3 +45,6 @@ Följ dessa steg för att omklassificera en anläggningstillgång:
 5. Ange ett datum i fältet **Omklassificeringsdatum**.
 6. Ange eller välj ett värde i fältet **Verifikationsserie**.
 7. Klicka på **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

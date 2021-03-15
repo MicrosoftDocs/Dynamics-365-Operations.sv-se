@@ -166,3 +166,6 @@ Följande fält ändrar beteendet för bokföringsprocessen.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

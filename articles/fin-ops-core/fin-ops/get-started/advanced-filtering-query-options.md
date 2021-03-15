@@ -242,3 +242,6 @@ Se tabellen i nästa avsnittet för ytterligare information om <strong>SysQueryR
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

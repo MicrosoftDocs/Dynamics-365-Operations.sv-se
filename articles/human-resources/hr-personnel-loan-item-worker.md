@@ -44,3 +44,6 @@ I den här proceduren visas hur du lånar ut en artikel till en arbetare och reg
 2. Klicka på Redigera.
 3. Ange ett datum i fältet Faktisk retur.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

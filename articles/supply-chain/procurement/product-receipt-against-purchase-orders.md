@@ -68,3 +68,6 @@ Du kan komma åt den här sidan från åtgärdsgruppen **Inleverans** på sidan 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

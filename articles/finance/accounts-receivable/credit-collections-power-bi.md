@@ -76,3 +76,6 @@ Power BI-innehållet **CustCollectionsBICrossCompany** innehåller ofta en rappo
 | Kravbrev         | <ul><li>Belopp för inkassokod</li><li>Detaljer om belopp för inkassokod</li><li>Belopp för kravbrev per företag</li><li>Belopp för kravbrev per kundgrupp</li><li>Belopp för kravbrev efter region</li></ul> |
 
 Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan också använda funktionen Exportera underliggande data för att exportera underliggande data som summerats i en visualisering.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

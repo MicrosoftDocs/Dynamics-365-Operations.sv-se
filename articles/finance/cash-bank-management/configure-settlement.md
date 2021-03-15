@@ -66,3 +66,6 @@ För att undvika ytterligare redovisningsposter, debet och kredit till samma red
 
 -   Organisationer använder ofta fasta dimensioner som fylls i med nollvärden en finansiell dimension som inte krävs. Detta är ofta fallet för balansräkningskonton, till exempel Kundreskontra/Leverantörsreskontra. Kontostrukturer kan användas för att spåra ekonomiska dimensioner som vanligtvis fylls i med nollvärden.  Du kan ta bort den ekonomiska dimensionen för balansräkningskonton, utan att behöva använda fasta dimensioner.
 -   Om din organisation kräver fasta dimensioner på huvudkontot för Kundreskontra/Leverantörsreskontra, hitta ett sätt att ställa in fast dimension till betalning som standard så att fasta dimensionsvärdet lagras på leverantörstransaktionen för betalningen. På så sätt kan systemet återställa huvudkontona för Kundreskontra/Leverantörsreskontra att inkludera de fasta dimensionsvärdena. Fast dimensionsvärden kan definieras som standard på antingen leverantörer eller journalnamnet för betalningsjournalen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

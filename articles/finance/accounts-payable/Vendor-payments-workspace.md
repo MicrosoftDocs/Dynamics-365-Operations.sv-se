@@ -77,3 +77,6 @@ Följande tabell visar de visulaiseringar som är tillgängliga på varje rapppo
 |    Kund till leverantörssaldo     |                                                                                                                   <ul><li>Kund till leverantörssaldo</li><li>Kund till leverantörssaldo per företag</li><li>Information om kund till leverantörssaldo</li></ul>                                                                                                                    |
 |    Fakturor med betalningsspärr     |                                                                                         <ul><li>Fakturor med betalningsspärr</li><li>Information om fakturor med betalningsspärr</li><li>Fakturor med betalningsspärr per företag</li><li>Fakturor med betalningsspärr per leverantörsgrupp</li></ul>                                                                                          |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

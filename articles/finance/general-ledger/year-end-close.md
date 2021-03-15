@@ -87,3 +87,6 @@ Mer information finns i [Stäng redovisningen vid periodslut](close-general-ledg
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ I följande scenario konfigureras överföringsaktiviteten för uttags-kanban at
 
 När en kanban har förbrukats på platsen för produktionsinleverans rapporteras den som tom, och en ny kanban läggs till i flödet. En påfyllnadsrad läggs till i en kanban-påfyllnad när en kanban skapas. När kanban-påfyllnaden bearbetas, skapas lagerställearbete för kanban-plockning. Lagerarbetaren bearbetar arbetet för kanban-plockning och dirigeras av arbetet för att plocka material för kanban på ett lagerställe. När denna lagerarbetare bekräftar plockningen slutförs kanban automatiskt, och lagerarbetaren vägleds för att förflytta materialet till produktionsinleveransplatsen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

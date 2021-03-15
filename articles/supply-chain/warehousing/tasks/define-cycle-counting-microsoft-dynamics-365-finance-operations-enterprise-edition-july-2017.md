@@ -95,3 +95,6 @@ Rullande inventering är en lagerställesprocess som du kan använda för att ko
 21. Klicka på **OK**.
 22. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

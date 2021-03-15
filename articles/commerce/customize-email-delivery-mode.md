@@ -71,3 +71,6 @@ Följ dessa steg om du vill konfigurera e-postmallar för specifika leveranssät
 [Skapa kundtjänstorder](tasks/create-call-center-orders.md)
 
 [Ändra leveranssätt i POS](pos-change-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

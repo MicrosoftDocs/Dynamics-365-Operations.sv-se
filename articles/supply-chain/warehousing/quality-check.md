@@ -396,3 +396,6 @@ I det här scenariot godkänns lastpall 3.
 1. Markera menyknappen (**≡**) längst upp på sidan och välj sedan **avbryt** för att återgå till menyn.
 
 Nu kan du stänga mobilappen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

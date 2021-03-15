@@ -49,3 +49,6 @@ Det finns till exempel 5 001 anläggningstillgångs-ID:n, tre böcker associera
 
 > [!Note] 
 > Om parametern **Summera avskrivning** är aktiverad när du skapar ett avskrivningsförslag påverkas inte värdet i fältet **Antal böcker per journal – Avskrivningsförslag**. I det här fallet är antalet böcker per journal 6 000, vilket är den internt definierade gränsen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

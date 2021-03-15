@@ -48,3 +48,6 @@ Du kan skapa månatliga fakturor för enskilda leasingar eller använda en batch
 6. När transaktionen har bokförts kan du visa transaktionsinformation och det bokförda värdet för leasingskulden genom att välja **Skuldtransaktioner** i leasingboken.
 
     I betalningsplanen markeras kryssrutan **Journal bokförd** och raden visar fakturajournalnumret. När en betalningsjournal och en post för journalen har skapats, måste du återföra posten innan den kan skapas på nytt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

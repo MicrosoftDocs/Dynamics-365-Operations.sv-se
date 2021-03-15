@@ -58,3 +58,6 @@ I den här proceduren visas hur du skapar handelsavtal för försäljningspris m
 24. Klicka på fliken Kategoriprisregler.
     * Kanalspecifika kategoriprissättningsregler visas i den här listan.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

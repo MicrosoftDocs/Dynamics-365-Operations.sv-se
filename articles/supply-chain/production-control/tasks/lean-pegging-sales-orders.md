@@ -56,3 +56,6 @@ Den här proceduren är avsedd för att validera peggingträdet från en försä
 5. I trädet, välj försäljningsrad 000832\Kanban 000558\Utleverans för L0001\Kanban 000559.
     * Jobbet för den andra kanban planeras även, eftersom hela pegging-trädet planeras. Observera att kanban-jobbets status ändras från Inte planerad till Planerad.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

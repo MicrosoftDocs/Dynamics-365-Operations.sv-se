@@ -71,3 +71,6 @@ När användaren väljer **slutförd** under en kundtjänstorder visas skärmen 
 
 > [!NOTE]
 > När konfigurationen **Förhindra alla rabatter** är inställd på **Ja** tillämpas inga rabatter på produkten. Inte heller betalningsmedelbaserade rabatter kommer att användas.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

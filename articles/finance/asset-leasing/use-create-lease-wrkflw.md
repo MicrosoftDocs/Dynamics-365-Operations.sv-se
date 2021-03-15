@@ -44,3 +44,6 @@ Innan du använder den här proceduren måste du se till att minst ett arbetsfl�
 
 8. Om du vill stoppa ett arbetsflöde väljer du **Återkalla** på sidan **Arbetsflödeshistorik**. I dialogrutan som visas anger du en kommentar och välj **OK**.
 9. Om du vill inaktivera ett arbetsflöde, eller aktivera ett arbetsflöde som har skapats tidigare, kan du gå till **Leasing av tillgångar \> Konfigurera \> Leasingarbetsflöde**. På sidan **Leasingarbetsflöde** väljer du **Arbetsflöde \> Versioner**. Om du vill göra ett aktuellt arbetsflöde inaktivt väljer du den aktiva leasingen i dialogrutan för leasingversion och väljer sedan **Inaktivera**. Om du vill göra ett befintligt arbetsflöde aktivt väljer du arbetsflödet och väljer sedan **Aktivera**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

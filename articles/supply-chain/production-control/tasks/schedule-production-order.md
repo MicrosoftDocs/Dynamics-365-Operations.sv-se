@@ -54,3 +54,6 @@ I den här proceduren visas hur du tidsplanerar en produktionsorder. Det demonst
 6. Stäng sidan.
 7. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

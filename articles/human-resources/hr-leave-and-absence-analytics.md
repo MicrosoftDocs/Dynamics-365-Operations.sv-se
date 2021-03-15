@@ -45,3 +45,5 @@ Dynamics 365 Human Resources ger en analys som hjälper dig att informera om org
 
 - [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)
 - [Skapa en plan för tjänstledighet och frånvaro](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

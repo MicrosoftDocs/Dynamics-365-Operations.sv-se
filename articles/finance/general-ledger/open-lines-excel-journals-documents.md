@@ -54,3 +54,6 @@ Ytterligare ändringar krävs om du vill lägga till ekonomiska dimensioner i en
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

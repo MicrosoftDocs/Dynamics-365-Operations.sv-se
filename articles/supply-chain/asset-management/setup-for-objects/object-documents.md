@@ -49,3 +49,6 @@ I tillgångshantering kan du ställa in dokument så att de automatiskt är rela
 
 4. Välj **bilagor**. Standardsidan **dokumenthantering** visas.
 5. Ställ in de dokument eller noteringar som ska kopplas till tillgångsdokumentposten. När du bifogar dokument visar fältet **bilagor** antalet dokument som är relaterade till posten.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Ange gruppering för automatiskt genererade arbetsorder med följande steg.
 1. Om du vill att alternativen ska gälla när du bara kör några av dina underhållsplaner, på snabbfliken **Poster att inkludera** lägg till filter du vill ha som med andra batchjobb i Microsoft Dynamics 365 Supply Chain Management.
 1. På snabbfliken **Kör i bakgrunden** ställer du in alternativ för batch och tidsplanering efter behov, på samma sätt som du kan göra för andra batchjobb i Supply Chain Management.
 1. Välj **OK** för att köra och/eller planera de valda underhållsplanerna.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

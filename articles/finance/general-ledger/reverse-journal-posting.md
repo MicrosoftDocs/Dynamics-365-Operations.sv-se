@@ -69,3 +69,6 @@ Om antalet verifikationsrader är 100 rader eller färre, kommer återföringspr
 
 Transaktioner kan bara återföras om de uppfyller affärsreglerna för att återföra dem. Leverantörsbetalningar kan inte återföras med funktionen som beskrivs i det här avsnittet. Leverantörsbetalningar måste återföras genom att följa stegen i [återför en leverantörsbetalning](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

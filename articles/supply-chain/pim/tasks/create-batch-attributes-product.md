@@ -54,3 +54,6 @@ I den här proceduren visas hur du skapar ett batchattribut, tilldelar standardv
 22. Klicka på Spara.
 23. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

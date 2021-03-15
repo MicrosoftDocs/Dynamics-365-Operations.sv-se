@@ -60,3 +60,6 @@ Om du tänker vara borta från kontoret eller annars inte kan åtgärda arbetsup
 8. Ange datum och tid i fältet **Slutdatum/-tid**.
 9. Aktivera delegeringsregeln genom att markera kryssrutan **Aktiverad**. 
 10. Ange en kommentar som förklarar varför du delegerar arbetsuppgifterna i fältet **Kommentar**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

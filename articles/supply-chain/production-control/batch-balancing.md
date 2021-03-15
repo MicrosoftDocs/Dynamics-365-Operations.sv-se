@@ -186,3 +186,6 @@ Det finns två undantag från regeln om att batchorder gäller för batchbalanse
 1. Om formelns måttenhet skiljer sig från lagermåttenheten för den aktiva beståndsdelen, kan batchordern inte användas för batchbalansering.
 
 En batchorder inte gäller för batchbalansering genomgår den vanliga processcykeln för batchorder.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

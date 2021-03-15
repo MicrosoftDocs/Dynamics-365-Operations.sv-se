@@ -209,3 +209,6 @@ Utöver de begränsningar som för närvarande gäller för produkter med faktis
 
 > [!NOTE]
 > Den föregående informationen om koderna för faktisk/nominell vikt är endast giltig om produkten med faktisk/nominell vikt har en spårningsmetod för kod för faktisk/nominell vikt som är helt spårad (det vill säga om parametern **spårningsmetod för kod för faktisk/nominell vikt** för hanteringspolicyn anges till **produktdimensioner, spårningsdimensioner och alla lagerdimensioner**). Om artikeln med faktisk/nominell vikt endast delvis kodspåras (det vill säga om parametern **spårningsmetod för kod för faktisk/nominell vikt** för hanteringspolicyn för faktisk/nominell vikt anges till **produktdimensioner, spårningsdimensioner och lagerstatus**), gäller ytterligare begränsningar. Eftersom visningen går förlorad mellan koden och lagret i det här fallet, stöds inte vissa ytterligare scenarier.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -522,3 +522,6 @@ När alla dessa journalposter har skapats och bokförts visas följande "anpassa
 | 11         | Ackumulerad avskrivning |                                                   |                                                   |                                                   | 0\.00                   |   |                                                 |                                                |                                                |                                                | \-949\.75                                      | \-949\.75                               |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

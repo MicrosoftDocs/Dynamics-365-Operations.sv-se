@@ -197,3 +197,6 @@ Under ett steg under konfigurationsprocessen föreslår systemet ett konfigurati
 
 [Skapa en produktnummerterminologi för konfigurerade produktvarianter](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

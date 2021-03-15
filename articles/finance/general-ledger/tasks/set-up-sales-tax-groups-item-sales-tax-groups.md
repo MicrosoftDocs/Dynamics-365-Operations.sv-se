@@ -49,3 +49,6 @@ Registreringen av den här uppgiften omfattar inställningarna för moms och art
 19. Klicka på länken på den valda raden i listan.
 20. Klicka på **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

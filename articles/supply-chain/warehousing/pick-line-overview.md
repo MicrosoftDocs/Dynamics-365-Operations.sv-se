@@ -68,3 +68,6 @@ För att konfigurera ett menyalternativ för mobila enheter för att visa en öv
     - Använd de återstående fälten **Visa fält** för att lägga till upp till sju ytterligare visningsfält efter behov. I varje fält **Visningsfält** väljer du namnet på ett fält i arbetsraden. På varje rad visas sedan ett värde för det fältet. Värdena kommer att visas i den ordning du väljer här. Du kan lämna några av fälten **Visningsfält** tomma om du inte behöver alla sju värden.
 
 1. I åtgärdsfönstret, välj **Spara** och stäng sedan sidan **Fältlista**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

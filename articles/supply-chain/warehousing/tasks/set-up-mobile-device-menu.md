@@ -68,3 +68,6 @@ I det här avsnittet visas hur du ställer in ett menyalternativet för mobila e
 5. Välj pilen som pekar åt höger.
 6. Välj **Spara**.
 7. Stäng sidan.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

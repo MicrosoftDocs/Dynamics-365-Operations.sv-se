@@ -48,3 +48,6 @@ I det här avsnittet beskrivs några sätt att visa bokförda momstransaktioner.
 2. Välj **Momskod** i åtgärdsfönstret.
 3. Välj **Bokförd moms**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

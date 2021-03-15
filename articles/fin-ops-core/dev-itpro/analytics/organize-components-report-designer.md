@@ -148,3 +148,6 @@ Endast standardbasperiodinställningar sparas tillsammans med rapportdefinitione
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

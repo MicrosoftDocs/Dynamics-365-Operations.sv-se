@@ -40,3 +40,6 @@ För att slutföra giltigheten och bearbetningen av en produktionsflödesversion
 6. I fältet Utgångsdatum anger du datum och tid.
     * För utgångsdatumet kommer ingen ny version att startas eller aktiveras. Du kan heller inte längre skapa eller starta jobb för detta produktionsflöde. Du kan fortfarande utföra startade jobb efter utgångsdatumet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

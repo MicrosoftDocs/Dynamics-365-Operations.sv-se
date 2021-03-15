@@ -101,3 +101,6 @@ Rapporten **Utdrag för avvikelseanalys** kan analysera omvärderingsavvikelse o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

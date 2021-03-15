@@ -102,3 +102,5 @@ Den här administratörsguiden hjälper dig att konfigurera, hantera och felsök
 - [Nyheter och ändringar i Personal](hr-admin-whats-new.md)
 - [Utvecklarguide](hr-developer-overview.md)
 - [Användarhandbok](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

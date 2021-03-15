@@ -169,3 +169,6 @@ All ändringar som har gjorts av responsen på orderraden visas. Dock visas inte
 
 ### <a name="open-confirmed-orders"></a>Öppna bekräftade order
 När inköpsordern har bekräftats av kunden (dvs. när statusen för inköpsordern har ändrats till **Bekräftad**) visas den i den öppna bekräftade ordern. Den finns kvar i listan tills den registreras som mottagen av kunden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

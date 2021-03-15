@@ -63,3 +63,6 @@ Datumen på prognospositionens kostnadselementrad måste vara inom följande int
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

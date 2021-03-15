@@ -93,3 +93,6 @@ Förutsättningar:
 12. Klicka på Avsluta.
 13. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

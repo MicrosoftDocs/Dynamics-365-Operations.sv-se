@@ -98,3 +98,6 @@ Metadata för transporthanteringsmotorer konfigureras olika för olika typer av 
 | 3        | Destination – från postnummer | Uppdrag | Sträng    | Postnummer    | Markerad  |
 | 4        | Destination – till postnummer   | Uppdrag | Sträng    | Postnummer    | Markerad  |
 | 5        | Destinationsland           | Uppdrag | Sträng    | Land/region |           |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

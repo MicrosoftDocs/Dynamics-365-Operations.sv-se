@@ -66,3 +66,6 @@ När panelen är markerad öppnas sidan **Alla produktionspåfyllnader**. Den h�
 Panelen **Öppet lagerarbete som behöver åtgärdas** visar antalet strukturliste- och formelrader som har frisläppts till lagret på obearbetat arbete och som har ett råmaterialdatum som infaller tidigare än eller samtidigt som arbetsytans datum. Raderna måste också förbrukas av en verksamhetsresurs som tillämpas på arbetsytans filter.
 
 När panelen är markerad öppnas sidan **Allat arbete**. Den här sidan filtreras av antalet öppna arbetsrubriker som innehåller arbetsrader från frisläppt strukturliste- och formelrader som uppfyller villkoren för panelen. Från sidan **Allt arbete** kan du manuellt behandla arbetet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ Använd den här proceduren när du vill visa eller ta bort historik för en RFM
 2. På sidan **RFM-analys**, välj den post som du vill visa.
 3. Klicka på snabbfliken **Historik** om du vill visa posthistoriken.
 4. Klicka på snabbfliken **Rensa historik** om du vill rensa posthistoriken.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

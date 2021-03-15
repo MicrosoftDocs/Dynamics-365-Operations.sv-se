@@ -54,3 +54,6 @@ När du klickar på knappen kamera på kamerasidan visas den nedtonad under iden
 
 För bästa resultat håller du kameran i linje när du riktar den över streckkoden. När en streckkod har skannats bearbetas informationen och du kommer till nästa steg. Om nästa steg innehåller ytterligare ett inmatningsfält med inmatningsläge skanning, startar kamerasidan igen. Om nästa steg inte är skanning, kommer kamerasidan inte att startas.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

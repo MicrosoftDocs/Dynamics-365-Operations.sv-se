@@ -126,3 +126,6 @@ Färgen visas endast på den lägsta nivån i Gantt-diagrammet. Välj **expander
 1. I rutnätet väljer du den rad där fältet **fält** är inställt på **artikelnummer**.
 1. I fältet **Kriterier** anger du ett värde.
 1. Välj **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

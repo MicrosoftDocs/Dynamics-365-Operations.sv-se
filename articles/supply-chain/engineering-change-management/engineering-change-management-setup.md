@@ -90,3 +90,6 @@ För varje regeluppsättning anger du följande fält:
 - **Allvarlighetsgrad** – Välj den allvarlighetsgrad som du vill fastställa regler för. Du använder sidan **Allvarlighetsgrader för teknisk ändring** när du vill skapa och namnge nivåerna. (För mer information, se föregående avsnitt).
 
 Använd knapparna på snabbfliken **regler** om du vill lägga till eller ta bort en regel för den aktuella allvarlighetsinställningen. Varje regel har ett fält för **regel** och ett fält för **namn**. Reglerna upprättas i systemet och anger vilka typer av ändringar som en produkt kan ha. Namnet anger typen av ändring.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

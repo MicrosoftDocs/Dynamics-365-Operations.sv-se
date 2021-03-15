@@ -80,3 +80,6 @@ I det här exemplet kodar datakällan **\#MediaAsBase64String** det binära inne
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Behållarfunktioner](er-functions-category-container.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -250,3 +250,6 @@ För att garantera att rätt värden registreras för ditt företag måste du t�
 ## <a name="see-also"></a>Se även
 
 Mer information finns i ursprungliga blogginlägget [mer om (dynamiska) negativa dagar](https://blogs.msdn.microsoft.com/axmfg/2015/02/19/more-about-dynamic-negative-days/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

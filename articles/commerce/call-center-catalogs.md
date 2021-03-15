@@ -100,3 +100,6 @@ På fliken **kataloger**, finns även alternativ för att konfigurera en **betal
 ## <a name="additional-notes"></a>Ytterligare noteringar
 
 När en källkod-ID gäller för en försäljningsorder i kundtjänst, används den för närvarande för att skapa priser, erbjudanden, skript och merförsäljning/korsförsäljnings som är katalogspecifika. Systemet kommer inte att förbjuda eller hindra att en produkt som inte finns i katalogen beställs på försäljningsordern. Om en artikel är beställd som inte tillhör katalogen, kommer systemet först att använda prisgrupp som definieras i kundtjänstkanalen **Prisgrupp** som definieras i kundtjänstkanalen (**Butik och handel** \> **Kanaler** \> **Kundtjänst** \> **Alla kundtjänster**) för artikelpris eller erbjudanden. Om du inte hittar något specifikt kanalpris, används det grundläggande försäljningspriset för artikeln.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

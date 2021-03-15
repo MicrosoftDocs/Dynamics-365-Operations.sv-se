@@ -97,3 +97,6 @@ Du måste bearbeta några av dina ändringar för att göra dem aktiva.
 - [Bearbetning av berättigande för livshändelse](hr-benefits-process-life-event-eligibility.md)
 - [Behandla prisändringar](hr-benefits-process-rate-changes.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

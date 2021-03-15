@@ -144,3 +144,6 @@ Prissimuleringen påverkar enbart raden som den tillämpas på och minskar summa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

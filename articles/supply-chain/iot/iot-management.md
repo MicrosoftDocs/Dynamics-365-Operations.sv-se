@@ -61,3 +61,6 @@ Du kan simulera fabriksdatorsignaler. Mer information finns i följande ämnen:
 + [Anslut IoT DevKit AZ3166 till Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
 + [Anslut Raspberryte PI online Simulator till Azure IoT-navet (Node.js)](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
 + [Översikt över lösningsaccelerator för enhetssimulering](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

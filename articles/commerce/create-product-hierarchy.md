@@ -79,3 +79,6 @@ Grupper av kategoriattribut kan också tilldelas till varje grupp efter behov.
 [Hantera produktkategorier och produkter](category-management-product-creation.md)
 
 [Ändra sorteringsordning för marknadsföringsentiteter](custom-order-categories-nav-retail-prod-hierarchy.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

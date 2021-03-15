@@ -226,3 +226,6 @@ När du väljer **transaktioner - reduceringsnyckel** eller **transaktioner - dy
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Huvudplaner – översikt](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

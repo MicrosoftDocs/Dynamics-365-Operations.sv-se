@@ -238,3 +238,6 @@ Du kan konfigurera systemet att automatiskt återställa en räknare varje gång
 1. Gå till **Tillgångshantering \> Inställningar \> Arbetsorder \> Livscykeltillstånd**.
 1. Välj i listfönstret vilket livscykeltillstånd för arbetsorder som den relevanta räknaren ska återställas vid.
 1. På snabbfliken **Allmänt** ställer du in **Återställ räknare** till *Ja*.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

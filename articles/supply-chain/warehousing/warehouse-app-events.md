@@ -77,3 +77,6 @@ Så här återställer du ett misslyckat meddelande för händelse för lagerst�
 1. Fortsätt arbeta tills alla relevanta meddelanden har återställts.
 
 Du kan också ta bort **misslyckat** händelsemeddelande genom att använda alternativet **ta bort** i verktygsfältet **meddelande om händelse för lagerställe**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

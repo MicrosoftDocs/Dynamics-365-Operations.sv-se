@@ -295,3 +295,6 @@ Klustret måste vara stängt innan artiklarna i klustret kan föras in.
 ## <a name="notes-and-tips"></a>Anteckningar och tips
 
 För fall där kluster-ID blir det överordnade ID-numret för en kapslad lastpall, anges automatiskt placeringspositionen när kluster-ID skannas. Inget ytterligare ID-nummer måste skannas, även om ID-numren generation är inställd på manuell.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

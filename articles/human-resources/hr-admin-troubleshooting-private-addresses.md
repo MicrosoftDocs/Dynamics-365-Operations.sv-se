@@ -39,3 +39,6 @@ För att lösa problemet måste kunden följa instruktionerna på den dubblerade
 3. Välj **Spara**.
 
 ![Sidan Parametrar för global adressbok](media/GAD-parameters.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

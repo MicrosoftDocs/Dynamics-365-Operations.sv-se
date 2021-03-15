@@ -226,3 +226,6 @@ Produktionstid + negativa dagar + aktuellt datum – behovsdatum
 Systemet använder bara de planerade leveransorder som finns inom denna tidsgräns och skapar en ny planerad order utanför den. Fördelen med dynamiska negativa dagar är att den enskilda produktens produktionstid kommer att inkluderas, för att återanvända befintliga order och undvika att skapa nya planerade order som kommer att bli längre än en senare dag, på grund av förseningar som orsakas av produktionstiden. 
 
 Mer information finns i [negativa dagar och dynamiska negativa dagar](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

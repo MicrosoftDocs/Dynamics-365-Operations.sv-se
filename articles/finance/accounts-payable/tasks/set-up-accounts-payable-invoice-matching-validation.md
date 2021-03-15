@@ -97,3 +97,6 @@ Gå till **Leverantörsreskontra > Inställningar > Fakturamatchningsinställnin
 
 1. För att ange toleranserna för enskilda leverantörer som åsidosätter standardtoleransen, välj ett **Leverantörskonto**.
 2. Ange avvikelseprocent som du accepterar för den här leverantör.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

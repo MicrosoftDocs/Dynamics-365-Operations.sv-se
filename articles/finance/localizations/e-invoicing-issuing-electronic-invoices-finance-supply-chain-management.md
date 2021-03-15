@@ -93,3 +93,6 @@ Inlämningsloggarna innehåller följande ytterligare funktioner:
 - **Annullera inlämningar** – Med denna funktion möjliggörs en särskild sändningsprocess i scenarier där den elektroniska fakturan måste godkännas av en extern webbtjänst. Funktionen instruerar tillägget Elektronisk fakturering att skicka ett specifikt meddelande till webbtjänsten med avsikten att annullera statusen för en godkänd elektronisk faktura i webbtjänstdatabasen.
 - **Skicka om dokument** – Skicka om ett elektroniskt dokument som redan har skickats till tillägget Elektronisk fakturering. En helt ny logg skapas på sidan **Sändningsdetaljer**.
 - **Skicka relaterade överföringar**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

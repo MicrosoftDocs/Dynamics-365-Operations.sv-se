@@ -48,3 +48,6 @@ När du uppdaterar en följesedel för en returnerad artikel från ett försälj
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

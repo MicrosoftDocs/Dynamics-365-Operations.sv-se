@@ -208,3 +208,6 @@ I redovisningskonsolidering har ett nytt alternativ lagts till för att konsolid
 -  Du kan nu välja om redovisningsvalutan eller rapportvalutan från källföretaget ska användas som transaktionsvaluta i konsolideringsföretaget.
 
 - Redovisnings- eller rapportvalutabeloppen från källföretaget kopieras direkt till redovisnings- eller rapporteringsvalutabeloppen i konsolideringsföretaget om någon av valutorna är samma. Redovisnings- och rapportvalutabeloppen i konsolideringsföretaget beräknas med valutakursen om ingen av valutorna är samma.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

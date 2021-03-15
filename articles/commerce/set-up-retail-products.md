@@ -39,3 +39,6 @@ Innan det går att erbjuda produkter för vidareförsäljning i handelskanalerna
 4. **Lägg till produkter i sortimentet.** Ett sortiment representerar en samling av produkter som du erbjuder i dina kanaler. Du kan definiera en eller flera sortiment, och varje produkt kan tilldelas en eller flera sortiment. Om du vill tilldela produkter i kanaler tilldelar du sortimenten till dessa kanaler. När du skapar ett sortiment kan du lägga till produkter som ännu inte har frisläppts till en juridisk person. Men du måste frisläppa produkterna till en juridisk person innan dessa produkter kan göras tillgängliga i kanalerna.
 5. **Lägg till produkter i navigeringshierarkier.** Innan produkter kan bläddras i online eller i butiker (POS), måste de kategoriseras i en handelsnavigeringhierarki.
 6. **Lägg till produkter i kataloger** Även om detta steg är valfritt för butiker, kräver onlinebutiker att produkter inkluderas i minst en katalog.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

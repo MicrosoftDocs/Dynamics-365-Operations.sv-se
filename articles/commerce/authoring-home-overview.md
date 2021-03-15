@@ -121,3 +121,6 @@ När utvecklingsverktyget har lästs in kan du välja **Start** för att gå til
 [Språkinformation för sökmotoroptimering (SEO) för din webbplats](search-engine-optimization-considerations.md)
 
 [Hantera säkerhetspolicy för innehåll (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

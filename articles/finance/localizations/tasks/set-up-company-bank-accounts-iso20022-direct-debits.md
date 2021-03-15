@@ -59,3 +59,6 @@ Detta är den andra av fem procedurer som demonstrerar kundbetalningsprocessen m
     * Välj till exempel bankkontot "DEMF OPER".  
 6. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

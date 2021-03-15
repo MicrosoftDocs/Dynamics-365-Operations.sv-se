@@ -72,3 +72,6 @@ Skicka e-post till [Kundbetalningsinsikter (förhandsversion)](mailto:fiap@micro
 Förhandsversioner (1) kan dessutom använda mindre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations de (2) ingår inte i servicenivåavtalet för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterföljande krav, samt (4) har begränsad support.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

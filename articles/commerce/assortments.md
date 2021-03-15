@@ -106,3 +106,6 @@ Sortiment som har definierats i Commerce måste bearbetas innan de träder i kra
 - **Försäljning och returer utanför sortiment** – denna kunskap hjälper återförsäljare att effektivt hantera sina sortiment genom att låta dem begränsa antalet produkter till produkter som tillhör butikens grundläggande produktkombination. Den här funktionen hjälper dig också återförsäljare att hantera situationer där en produkt utelämnades av misstag från ett sortiment och om en produkt har returnerats utanför giltighetsdatumen för sortimentet.
 
 Om produktdata inte finns i kanaldatabasen ringer POS huvudkontoret i realtid för att hämta den information som krävs så att produkten kan säljas, returneras eller sättas på en kundorder. Produktinformation som hämtas på det här sättet finns endast under tillämpningsområdet för den aktuella transaktionen. Produkten läggs inte till i sortimentdefinitionen. Därför görs följande samtal i realtid om det behövs.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

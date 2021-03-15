@@ -103,3 +103,6 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 21. Klicka på Öppna.
     * Förhandsvisa den skapade XML-filen som innehåller inventerings- och summeringsinformation som samlades in i samband med körningen av den valda konfigurationen.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

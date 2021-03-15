@@ -204,3 +204,6 @@ Utdrag för vyer för chefer som är ansvariga för att kontrollera kostnader. U
 Versioner används för att simulera, visa och jämföra olika resultat. Som standard visas alla faktiska kostnader i en basversion som kallas för *faktisk* För budgetar och beräkningar kan du efter behov arbeta med valfritt antal versioner. Du kan till exempel importera budgetdata till en ursprunglig version och sedan ändra budgeten i en reviderad version. För beräkningar kan du skapa flera versioner. I dessa olika versioner kan du sedan skapa beräkningar genom att använda olika beräkningsregler som ska tillämpas för kostnadsallokering.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

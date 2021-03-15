@@ -57,3 +57,6 @@ Innan du kan använda funktionen *Ytterligare platszon* den aktiveras i ditt sys
 7. Markera **Skapa**.
 8. Du får meddelanden om att nya platser har lagts till. Välj knappen **Visa meddelanden** om du vill visa meddelandena.
 9. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Platser**. De nya platserna visas i listan och alla zonfält är tillgängliga (det vill säga det befintliga zonfältet och de nya ytterligare zonfälten).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

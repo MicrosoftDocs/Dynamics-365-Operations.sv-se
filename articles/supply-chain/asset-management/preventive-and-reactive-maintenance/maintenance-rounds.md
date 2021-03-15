@@ -116,3 +116,6 @@ De två bilderna nedan visar ett schemajobb i dialogrutan **Schemalägg underhå
 - Du kan ställa in ett batchjobb på snabbfliken **Kör i bakgrunden** för att schemalägga omgångar med regelbundna intervall.  
 - Om en omgång ingår i flera arbetsorderpooler (se [Arbetsorderpooler](../work-orders/work-order-pools.md)) visas en post för varje pool i **Öppna pooler för underhållsschema**. Detta görs för att optimera filtreringsalternativen för arbetsorderpooler.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

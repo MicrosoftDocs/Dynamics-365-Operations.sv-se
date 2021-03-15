@@ -37,3 +37,6 @@ En periodkod indikerar omfattningen av abonnemangsavgiftsperioden, eller hur oft
 Periodkoden definieras i gruppen för serviceabonnemang. Den definieras för abonnemang genom gruppen för serviceabonnemang. Alla nya abonnemangsavgifter som du skapar har ett föreslaget startdatum. Detta är periodens startdatum, om det är den första period som skapas, eller slutet på den föregående perioden om det är den andra eller därefter följande perioden.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

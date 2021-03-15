@@ -78,3 +78,6 @@ Arbetstidsmallar definierar arbetstiden under en vecka och används för att gen
 3. Expandera alternativet Söndag.
 4. Välj Ja i fältet Stängd för upphämtning.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Skapa en produktmall för de fördefinierade varianterna. Det demonstrationsdata
 10. Klicka på **Spara**.
 11. Stäng sidan.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

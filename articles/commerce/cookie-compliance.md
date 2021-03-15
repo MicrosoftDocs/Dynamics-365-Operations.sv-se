@@ -72,3 +72,6 @@ Om en användare av en näthandelssajt eller en modul använder en icke-väsentl
 [Modul för cookie-samtycke](cookie-consent-module.md) 
  
 [Modul för sidhuvud](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

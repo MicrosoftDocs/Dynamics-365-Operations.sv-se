@@ -71,3 +71,6 @@ Berika kanalen genom att lägga till kanal- och produktattribut. Du måste lägg
 33. Klicka på OK.
 34. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Modulen webbplatsväljare kan läggas till i [huvudmodul](author-header-module.m
 [Modul för navigeringssökväg](add-breadcrumb.md)
 
 [Modul för navigeringsmeny](nav-menu-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

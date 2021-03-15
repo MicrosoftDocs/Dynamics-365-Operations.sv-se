@@ -50,3 +50,6 @@ Information om vad som är nytt eller ändrat i varje utgåva av Lifecycle Servi
 - [Nyheter och ändringar i Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

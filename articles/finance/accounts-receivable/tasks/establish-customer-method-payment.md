@@ -45,3 +45,6 @@ Det här avsnittet förklarar hur du skapar en metod för betalning av kundbetal
 15. Använd fliken **Betalningsattribut** för att definiera betalningsattribut som du vill använda för den här betalsättet.
 16. Välj **Spara**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

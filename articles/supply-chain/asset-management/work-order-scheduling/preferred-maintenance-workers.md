@@ -67,3 +67,6 @@ Du kan också ställa in *ansvariga* underhållsarbetare som kan väljas när en
 
 Under tidsplaneringen av arbetsordern beräknas olika poäng för att fastställa vilka arbetare som ska utföra jobben som hör till en arbetsorder (dessa poäng ställs in i **Parametrar för tillgångshantering** > **länken Schemaläggning av arbetsorder**). Om två eller fler prioriterade underhållsarbetare eller ansvariga underhållsarbetare får samma poäng vid tidsplaneringen av arbetsordern väljs en av dem slumpmässigt. I annat fall är det alltid arbetaren med högst poäng som allokeras för att slutföra en arbetsorder.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

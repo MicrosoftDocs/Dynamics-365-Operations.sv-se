@@ -57,3 +57,6 @@ När du har skapat den globala adressboken, kan du skapa ytterligare adressböck
 **Beslut:**
 
 - Hur många ytterligare adressböcker ska du skapa?
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

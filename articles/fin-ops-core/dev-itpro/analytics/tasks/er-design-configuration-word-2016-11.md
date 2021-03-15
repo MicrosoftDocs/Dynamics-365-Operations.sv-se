@@ -164,3 +164,6 @@ Om du vill köra utkastversionen för det redigerbara formatet måste du göra d
 
 - [Utforma en ny ER-konfiguration för att generera rapporter i Word-format](../er-design-configuration-word.md)
 - [Bädda in bilder och former i dokument som du skapar med ER](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

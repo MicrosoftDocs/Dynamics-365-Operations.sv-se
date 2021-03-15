@@ -48,3 +48,6 @@ Kundservice omfattar följande funktioner:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

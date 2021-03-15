@@ -99,3 +99,6 @@ En arbetsgrupp är en viss form av resursgrupp som går att använda i lean manu
 ## <a name="save"></a>Spara
 1. Klicka på Spara.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

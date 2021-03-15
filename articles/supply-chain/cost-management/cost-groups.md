@@ -53,3 +53,6 @@ En kostnadsgrupp kan tilldelas en kostnadsgruppstyp och ett beteende för extra 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

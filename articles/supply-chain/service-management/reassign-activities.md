@@ -57,3 +57,6 @@ Använd något av följande steg för att tilldela en aktivitet till en annan ar
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

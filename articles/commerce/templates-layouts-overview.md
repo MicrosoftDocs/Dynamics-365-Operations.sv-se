@@ -111,3 +111,6 @@ Information om hur du använder förinställda layouter finns i [arbeta med för
 [Arbeta med förinställda layouter](work-with-layouts.md)
 
 [Arbeta med publiceringsgrupper](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

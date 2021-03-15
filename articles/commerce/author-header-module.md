@@ -118,3 +118,6 @@ Om du vill garantera att ett sidhuvud visas på varje sida följer du stegen ned
 [Modul för webbplatsväljare](site-selector.md)
 
 [Modul för butiksväljare](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

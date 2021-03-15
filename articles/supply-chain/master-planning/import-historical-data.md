@@ -61,3 +61,6 @@ När du har importerat efterfrågehistoriken kan du skapa en efterfrågeprognos.
 
 [Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)  
 [Översikt över jobb för import och export av data](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Följande utbildningsöversikt anger de huvudsakliga koncept och uppgifter som u
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

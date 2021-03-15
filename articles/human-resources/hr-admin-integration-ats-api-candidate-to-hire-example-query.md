@@ -113,3 +113,6 @@ OData-EntityId: [Organization URI]/api/data/v9.1/mshr_hcmcandidatetohireentities
 ## <a name="see-also"></a>Se även
 
 [Introduktion av API för integrering av system för sökandespårning](hr-admin-integration-ats-api-introduction.md)<br>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

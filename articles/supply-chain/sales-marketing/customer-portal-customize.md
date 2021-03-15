@@ -175,3 +175,6 @@ Mer information om hur du kan ställa in och anpassa kundportalen finns i följa
 - [Uppgradera en portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Migrera portalkonfiguration](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Hantering av lösningens livscykel: Dynamics 365 for Customer Engagement-appar](https://www.microsoft.com/download/details.aspx?id=57777)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

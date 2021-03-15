@@ -302,3 +302,6 @@ Om du vill skapa en fakturainformationssida i webbplatsskaparen följer du stege
 [Innehållsblockmodul](../add-hero-module.md)
 
 [Produktsamling](../product-collection-module-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

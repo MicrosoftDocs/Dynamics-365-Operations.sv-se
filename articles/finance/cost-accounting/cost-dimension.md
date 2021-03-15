@@ -54,3 +54,6 @@ När datan väl har importerats till kostnadsredovisningen kan du använda den f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

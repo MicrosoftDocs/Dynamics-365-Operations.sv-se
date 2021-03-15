@@ -43,3 +43,6 @@ Denna artikel skapades med FIFO-lagermodellen (först in, först ut), och lagers
 -   5 februari: en kvantitet på 1 till en kostnad av 130 SEK.
 
 Ange kostnaden för dessa två artiklar till SEK 150,00 med hjälp av alternativet för justering av lagerbehållning så att de öppna behållningarna justeras per den sista lagerstängningsperioden. **Obs!** Bokföringsdatumet för transaktionen för behållningsjustering är datumet för den senaste lagerstängningen. Datumet går inte att ändra.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
