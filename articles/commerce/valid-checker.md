@@ -1,6 +1,6 @@
 ---
 title: Konsekvenskontroll av butikstransaktion
-description: I det här avsnittet beskrivs funktionen för konsekvenskontroll av transaktioner i Dynamics 365 Commerce.
+description: Det här ämnet beskriver funktionen för konsekvenskontroll av transaktioner i Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
 ms.date: 10/07/2020
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 869230c0003735c1e9f48170a16ca9409a9edc19
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: cce0d408ac6d372fb726eff8fa4b0358ec200243
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976549"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211005"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsekvenskontroll av butikstransaktion
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs funktionen för konsekvenskontroll av butikstransaktioner i Microsoft Dynamics 365 Commerce. Konsekvenskontrollen identifierar och isolerar inkonsekventa transaktioner innan de används i bokföringsprocessen för utdrag.
+Det här ämnet beskriver funktionen för konsekvenskontroll av transaktioner i Microsoft Dynamics 365 Commerce. Konsekvenskontrollen identifierar och isolerar inkonsekventa transaktioner innan de används i bokföringsprocessen för utdrag.
 
 Det går inte att bokföra utdrag om det finns inkonsekventa data i handelstransaktionsregistren. Dataproblemet kan bero på oförutsedda problem i kassaprogrammet, eller om transaktioner har importerats felaktigt från kassasystem från tredje part. Dessa inkonsekvenser kan till exempel uppenbara sig på följande sätt: 
 

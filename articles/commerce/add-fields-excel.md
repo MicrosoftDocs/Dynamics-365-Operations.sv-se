@@ -1,6 +1,6 @@
 ---
 title: Lägga till fält i en Excel-arbetsbok för att redigera butikstransaktioner
-description: I det här avsnittet beskrivs hur du lägger till fält i en Microsoft Excel-arbetsbok så att du kan redigera butikstransaktioner i Microsoft Dynamics 365 Commerce.
+description: Det här ämnet beskriver hur du lägger till fält i en Microsoft Excel-arbetsbok så att du kan redigera butikstransaktioner i Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
 ms.date: 11/04/2020
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 443e5e9931498799f9a96fc55c6e5d5c9f6750c6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fb0435a617585689a87caa76f80e9774182576cc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980416"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206329"
 ---
 # <a name="add-fields-to-an-excel-workbook-to-edit-retail-transactions"></a>Lägga till fält i en Excel-arbetsbok för att redigera butikstransaktioner
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du lägger till fält i en Microsoft Excel-arbetsbok så att du kan redigera butikstransaktioner i Microsoft Dynamics 365 Commerce.
+Det här ämnet beskriver hur du lägger till fält i en Microsoft Excel-arbetsbok så att du kan redigera butikstransaktioner i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Översikt
 

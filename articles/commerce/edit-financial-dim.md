@@ -1,6 +1,6 @@
 ---
 title: Redigera ekonomiska dimensioner för butikstransaktioner
-description: I det här avsnittet beskrivs hur du redigerar ekonomiska dimensioner för butikstransaktioner i Microsoft Dynamics 365 Commerce.
+description: Det här ämnet beskriver hur du redigerar ekonomiska dimensioner för butikstransaktioner i Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
 ms.date: 11/04/2020
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5a5a82adbad16d8fea2ccf60ae0dbfbd2fd9f3c1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4d4b7e383ca2089ee98e70d23ccd890d0e6a86c5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010185"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5221808"
 ---
 # <a name="edit-financial-dimensions-for-retail-transactions"></a>Redigera ekonomiska dimensioner för butikstransaktioner
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du redigerar ekonomiska dimensioner för butikstransaktioner i Microsoft Dynamics 365 Commerce.
+Det här ämnet beskriver hur du redigerar ekonomiska dimensioner för butikstransaktioner i Microsoft Dynamics 365 Commerce.
 
 ## <a name="edit-financial-dimensions"></a>Redigera ekonomiska dimensioner
 

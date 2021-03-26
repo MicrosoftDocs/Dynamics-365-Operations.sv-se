@@ -1,6 +1,6 @@
 ---
 title: Skapa en Excel-arbetsbok för att redigera butikstransaktioner
-description: I det här avsnittet beskrivs hur du skapar en Excel-arbetsbok så att du kan redigera butikstransaktioner i Microsoft Dynamics 365 Commerce.
+description: Det här ämnet beskriver hur du skapar en Excel-arbetsbok för att redigera butikstransaktioner i Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
 ms.date: 11/04/2020
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 73a3387d1e7251168002ff683b5b58e0c82a620c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3a4bc0a91ee2215dcde2f18575d58ab1ef2f5581
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965387"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207953"
 ---
 # <a name="create-an-excel-workbook-to-edit-retail-transactions"></a>Skapa en Excel-arbetsbok för att redigera butikstransaktioner
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skapar en Excel-arbetsbok så att du kan redigera butikstransaktioner i Microsoft Dynamics 365 Commerce.
+Det här ämnet beskriver hur du skapar en Excel-arbetsbok för att redigera butikstransaktioner i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Översikt
 

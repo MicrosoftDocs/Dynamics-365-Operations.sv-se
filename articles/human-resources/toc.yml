@@ -5,6 +5,10 @@
       items:
         - name: Nyheter och ändringar i Human Resources
           href: hr-admin-whats-new.md
+        - name: 8 mars 2021
+          href: hr-whats-new-2021-03-08.md
+        - name: 22 februari 2021
+          href: hr-whats-new-2021-02-22.md
         - name: 28 januari 2021
           href: hr-whats-new-2021-01-28.md
         - name: 21 januari 2021
@@ -89,9 +93,9 @@
               href: hr-admin-integration-common-data-service.md
             - name: Dataverse-tabeller
               href: hr-developer-entities.md
-            - name: Konfigurera virtuella Dataverse-enheter
+            - name: Konfigurera virtuella Dataverse-register
               href: hr-admin-integration-common-data-service-virtual-entities.md
-            - name: Vanliga frågor och svar om virtuella enheter i Human Resources
+            - name: Vanliga frågor och svar om virtuella register i Human Resources
               href: hr-admin-virtual-entity-faq.md
             - name: Konfigurera integration med Finance
               href: hr-admin-integration-finance.md
@@ -623,6 +627,8 @@
               items:
                 - name: Hantering av förmåner – översikt
                   href: hr-benefits-management-overview.md
+                - name: Arbetsyta för förmånshantering
+                  href: hr-benefits-management-workspace.md
                 - name: Konfigurera förmånshantering
                   items:
                     - name: Konfigurera parametrar för förmånshantering per företag
@@ -783,3 +789,5 @@
               href: hr-employee-self-service-workspace-name.md
             - name: Redigera personliga uppgifter
               href: hr-employee-manager-self-service-edit-personal-information.md
+            - name: Begränsa redigering av personlig information
+              href: hr-employee-self-service-restrict-editing.md
