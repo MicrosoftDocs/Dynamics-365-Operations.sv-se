@@ -72,7 +72,9 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Finance
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.17 (mars 2021)
+                    - name: Finance 10.0.18 (maj 2021)
+                      href: get-started/whats-new-changed-10-0-18.md
+                    - name: Finance 10.0.17 (april 2021)
                       href: get-started/whats-new-changed-10-0-17.md
                     - name: Finance 10.0.16 (februari 2021)
                       href: get-started/whats-new-changed-10-0-16.md
@@ -80,6 +82,8 @@
                       href: get-started/whats-new-changed-10-0-15.md
             - name: Borttagna eller utfasade funktioner
               items:
+                - name: Borttagna eller utfasade funktioner – startsida
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
                 - name: Borttagna eller utfasade funktioner i Dynamics 365 Finance
                   href: get-started/removed-deprecated-features-finance.md
                 - name: Borttagna eller utfasade funktioner i tidigare versioner
@@ -474,6 +478,8 @@
               href: accounts-receivable/tasks/create-collection-letter-sequence.md
             - name: Bearbeta kravbrev
               href: accounts-receivable/tasks/process-collection-letters.md
+            - name: Bearbeta kravbrev – exempel
+              href: accounts-receivable/process-collection-letters-example.md
             - name: Ställ in och generera åldersfördelningsinformation för kundreskontra
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
             - name: Åldersfördelningsrapport för kunder
@@ -486,6 +492,8 @@
               href: accounts-receivable/original-invoice-numbers-credit-notes.md
             - name: Numrera dokument och verifikationer i kronologisk ordning
               href: accounts-receivable/chrono-numbers.md
+            - name: Arkivera utskrivna kundfakturor med hash-nummer
+              href: accounts-receivable/archive-printed-invoices.md
         - name: Budgetering
           items:
             - name: Startsidan Budgetering
@@ -1318,6 +1326,8 @@
                   href: public-sector/tasks/create-vendor-certification-type-public-sector.md
                 - name: Importera och skapa flera engångsleverantörer och fakturor för offentliga sektorn
                   href: public-sector/tasks/import-multiple-one-time-vendors.md
+                - name: Begränsa redigering av redovisningsfördelningar på fakturor
+                  href: public-sector/restrict-edit-accounting-distributions.md
                 - name: Planera för engångsleverantörer i offentlig sektor
                   href: public-sector/plan-one-time-vendors-public-sector.md
                 - name: Kontrollera åtkomsten till inköpsavtal i den offentliga sektorn
@@ -1428,8 +1438,8 @@
                       href: localizations/e-invoicing-get-started.md
                     - name: Kom i gång med tillägget för elektronisk fakturering för Brasilien
                       href: localizations/e-invoicing-bra-get-started.md
-                    - name: Elektroniska kundfakturor i Egypten
-                      href: localizations/emea-egy-e-invoices.md
+                    - name: Kom i gång med tillägget för elektronisk fakturering för Egypten
+                      href: localizations/e-invoicing-eg-get-started.md
                     - name: Kom i gång med tillägget för elektronisk fakturering för Italien
                       href: localizations/e-invoicing-ita-get-started.md
                     - name: Kom i gång med tillägget för elektronisk fakturering för Mexiko
@@ -1580,7 +1590,9 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: Ställa in NF-e-parametrar för skattemyndighet
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
-                    - name: NT 2019.001 – skatteförmåner och skattebefrielseregler för NF-e/NFC-e
+                    - name: NT2020.006 – digital plattform för mellanliggande försäljning för NF-e
+                      href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
+                    - name: NT2019.001 – skatteförmåner och skattebefrielseregler för NF-e/NFC-e
                       href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
                   href: localizations/latam-bra-sped-ecd.md
@@ -1784,6 +1796,8 @@
                   href: localizations/emea-egy-reg-numbers.md
                 - name: Konfigurera fakturalayout för Egypten
                   href: localizations/emea-egy-invoice-layout.md
+                - name: Elektroniska kundfakturor i Egypten
+                  href: localizations/emea-egy-e-invoices.md
             - name: Estland
               items:
                 - name: Estland – översikt
@@ -2008,12 +2022,14 @@
                   items:
                     - name: Tysk verifieringsfil – översikt
                       href: localizations/emea-deu-gdpdu-audit-data-export.md
-                    - name: Anpassa konfiguration av verifieringsfil
-                      href: localizations/tasks/customize-german-audit-file-configuration.md
-                    - name: Generera verifieringsfil
-                      href: localizations/tasks/german-audit-file.md
                     - name: Importera konfiguration av verifieringsfil
                       href: localizations/tasks/import-german-audit-file-configuration.md
+                    - name: Generera verifieringsfil
+                      href: localizations/tasks/german-audit-file.md
+                    - name: Anpassa konfiguration av verifieringsfil
+                      href: localizations/tasks/customize-german-audit-file-configuration.md
+                    - name: Lägga till filter i en konfiguration av verifieringsfil
+                      href: localizations/emea-deu-gdpdu-data-filtering.md
                 - name: Avskrivningsjusteringar för ytterligare anskaffning under det andra året
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: Överföring av elektronisk momsdeklaration (ELSTER)
@@ -2306,7 +2322,7 @@
                   href: localizations/emea-ita-quarterly-vat-communication.md
                 - name: Rapport med svarta listan
                   href: localizations/emea-ita-black-list-report.md
-                - name: Bokföringsdatum
+                - name: Bokföringsdatum och skattejournal
                   href: localizations/emea-ita-competence-date.md
                 - name: Avskrivning av anläggningstillgångar
                   href: localizations/emea-ita-depreciation-of-fixed-assets.md
@@ -3249,11 +3265,11 @@
                   href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: Medarbetarutveckling
                   href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/finance/toc.json
-                - name: Utläggshantering Power BI - innehåll
+                - name: Utgiftshantering Power BI-innehåll
                   href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: Finansiellt resultat
                   href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
-                - name: Ekonomiska insikter
+                - name: Ekonomisk analys
                   href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/finance/toc.json
                 - name: Hantering av anläggningstillgångar
                   href: fixed-assets/Fixed-asset-management-workspace.md
@@ -3493,12 +3509,18 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/finance/toc.json
                         - name: Case
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/finance/toc.json
+                        - name: Contains
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/finance/toc.json
+                        - name: EndsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/finance/toc.json
                         - name: If
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/finance/toc.json
                         - name: Not
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/finance/toc.json
                         - name: Or
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
+                        - name: StartsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/finance/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
                         - name: ValueInLarge
@@ -3675,6 +3697,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/finance/toc.json
                     - name: Återanvända ER-konfigurationer med Excel-mallar för att generera rapporter i Word-format
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Ignorera Word-innehållskontroller i genererade rapporter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/finance/toc.json
                 - name: Utforma konfigurationer för att fylla i PDF-mallar
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
                 - name: Bädda in bilder och former
@@ -3759,6 +3783,8 @@
                           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                         - name: Dela konfigurationer i GR
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                        - name: Avbryt konfigurationer i den globala lagringsplatsen RCS
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: Snabbstartsguider
               items:
                 - name: Justera ett ER-format för att skapa ett anpassat elektroniskt dokument
