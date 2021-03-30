@@ -16,54 +16,57 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 89b75936ea9c0f25f82175a1871088da8fd74ad6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6210cdeed99f26a6b58b75d9f5405c0e1ee5aef1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980941"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213340"
 ---
-# <a name="configure-a-worker-using-the-mobile-job-device"></a><span data-ttu-id="51074-103">Konfigurera en arbetare med den mobila jobbenheten</span><span class="sxs-lookup"><span data-stu-id="51074-103">Configure a worker using the mobile job device</span></span>
+# <a name="configure-a-worker-using-the-mobile-job-device"></a><span data-ttu-id="94851-103">Konfigurera en arbetare med den mobila jobbenheten</span><span class="sxs-lookup"><span data-stu-id="94851-103">Configure a worker using the mobile job device</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="51074-104">I det här avsnittet visas hur du tilldelar de korrekta rollerna till användarkontot för en arbetare och sedan aktiverar arbetaren för att göra arbetsregistreringar.</span><span class="sxs-lookup"><span data-stu-id="51074-104">This topic explains how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations.</span></span>
+<span data-ttu-id="94851-104">I det här avsnittet visas hur du tilldelar de korrekta rollerna till användarkontot för en arbetare och sedan aktiverar arbetaren för att göra arbetsregistreringar.</span><span class="sxs-lookup"><span data-stu-id="94851-104">This topic explains how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations.</span></span>
 
-## <a name="verify-that-a-worker-is-assigned-a-certain-role"></a><span data-ttu-id="51074-105">Kontrollera att en arbetstagare har tilldelats en viss roll</span><span class="sxs-lookup"><span data-stu-id="51074-105">Verify that a worker is assigned a certain role</span></span>
+## <a name="verify-that-a-worker-is-assigned-a-certain-role"></a><span data-ttu-id="94851-105">Kontrollera att en arbetstagare har tilldelats en viss roll</span><span class="sxs-lookup"><span data-stu-id="94851-105">Verify that a worker is assigned a certain role</span></span>
 
-<span data-ttu-id="51074-106">I det här exemplet kontrollerar du att användaren "SHANNON" har tilldelats rollen maskinoperatör innan du konfigurerar arbetarkontot.</span><span class="sxs-lookup"><span data-stu-id="51074-106">For this example, verify that user "SHANNON" is assigned the machine operator role before you configure the worker account.</span></span>
+<span data-ttu-id="94851-106">I det här exemplet kontrollerar du att användaren "SHANNON" har tilldelats rollen maskinoperatör innan du konfigurerar arbetarkontot.</span><span class="sxs-lookup"><span data-stu-id="94851-106">For this example, verify that user "SHANNON" is assigned the machine operator role before you configure the worker account.</span></span>
 
-1. <span data-ttu-id="51074-107">Gå till **Navigeringsfönster > Moduler > Systemadministration > Användare > Användare**.</span><span class="sxs-lookup"><span data-stu-id="51074-107">Go to **Navigation pane > Modules > System administration > Users > Users**.</span></span>
-2. <span data-ttu-id="51074-108">Sök efter en användare i snabbfiltret.</span><span class="sxs-lookup"><span data-stu-id="51074-108">Search for a user in the quick filter.</span></span> <span data-ttu-id="51074-109">Ange `shannon` i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="51074-109">For this example, enter `shannon`.</span></span>
-3. <span data-ttu-id="51074-110">Markera länken i kolumnen **användar-ID** för det användarkonto som visas.</span><span class="sxs-lookup"><span data-stu-id="51074-110">Select the link in the **User ID** column of the user account that appears.</span></span>
-4. <span data-ttu-id="51074-111">I trädet **Användares roller** väljer du **Roller > Maskinoperatör**.</span><span class="sxs-lookup"><span data-stu-id="51074-111">In the **User's roles** tree, select **Roles > Machine operator**.</span></span>
-5. <span data-ttu-id="51074-112">Stäng sidorna **användarinformation** och **användare** för att gå tillbaka till startsidan.</span><span class="sxs-lookup"><span data-stu-id="51074-112">Close the **user details** and **users** pages to return to the home page.</span></span>
+1. <span data-ttu-id="94851-107">Gå till **Navigeringsfönster > Moduler > Systemadministration > Användare > Användare**.</span><span class="sxs-lookup"><span data-stu-id="94851-107">Go to **Navigation pane > Modules > System administration > Users > Users**.</span></span>
+2. <span data-ttu-id="94851-108">Sök efter en användare i snabbfiltret.</span><span class="sxs-lookup"><span data-stu-id="94851-108">Search for a user in the quick filter.</span></span> <span data-ttu-id="94851-109">Ange `shannon` i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="94851-109">For this example, enter `shannon`.</span></span>
+3. <span data-ttu-id="94851-110">Markera länken i kolumnen **användar-ID** för det användarkonto som visas.</span><span class="sxs-lookup"><span data-stu-id="94851-110">Select the link in the **User ID** column of the user account that appears.</span></span>
+4. <span data-ttu-id="94851-111">I trädet **Användares roller** väljer du **Roller > Maskinoperatör**.</span><span class="sxs-lookup"><span data-stu-id="94851-111">In the **User's roles** tree, select **Roles > Machine operator**.</span></span>
+5. <span data-ttu-id="94851-112">Stäng sidorna **användarinformation** och **användare** för att gå tillbaka till startsidan.</span><span class="sxs-lookup"><span data-stu-id="94851-112">Close the **user details** and **users** pages to return to the home page.</span></span>
 
-## <a name="configure-worker-account"></a><span data-ttu-id="51074-113">Konfigurera arbetarkonto.</span><span class="sxs-lookup"><span data-stu-id="51074-113">Configure worker account</span></span>
-1. <span data-ttu-id="51074-114">Gå till **navigeringsfönstret > moduler > personal > arbetare > arbetare**.</span><span class="sxs-lookup"><span data-stu-id="51074-114">Go to **Navigation pane > Modules > Human resources > Workers > Workers**.</span></span>
-2. <span data-ttu-id="51074-115">Sök efter en användare i snabbfiltret.</span><span class="sxs-lookup"><span data-stu-id="51074-115">Search for a user in the quick filter.</span></span> <span data-ttu-id="51074-116">Ange `shannon` i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="51074-116">For this example, enter `shannon`.</span></span>
-3. <span data-ttu-id="51074-117">Markera länken i kolumnen **Namn** för det användarkonto som visas.</span><span class="sxs-lookup"><span data-stu-id="51074-117">Select the link in the **Name** column of the user account that appears.</span></span>
-4. <span data-ttu-id="51074-118">Välj fliken **tidsregistrering**.</span><span class="sxs-lookup"><span data-stu-id="51074-118">Select the **Time registration** tab.</span></span>
-5. <span data-ttu-id="51074-119">Välj **Aktivera på registreringsterminaler**</span><span class="sxs-lookup"><span data-stu-id="51074-119">Select **Activate on registration terminals**.</span></span>
-6. <span data-ttu-id="51074-120">Ange eller välj värden i följande fält:</span><span class="sxs-lookup"><span data-stu-id="51074-120">Enter or select values in the following fields:</span></span>  
+## <a name="configure-worker-account"></a><span data-ttu-id="94851-113">Konfigurera arbetarkonto.</span><span class="sxs-lookup"><span data-stu-id="94851-113">Configure worker account</span></span>
+1. <span data-ttu-id="94851-114">Gå till **navigeringsfönstret > moduler > personal > arbetare > arbetare**.</span><span class="sxs-lookup"><span data-stu-id="94851-114">Go to **Navigation pane > Modules > Human resources > Workers > Workers**.</span></span>
+2. <span data-ttu-id="94851-115">Sök efter en användare i snabbfiltret.</span><span class="sxs-lookup"><span data-stu-id="94851-115">Search for a user in the quick filter.</span></span> <span data-ttu-id="94851-116">Ange `shannon` i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="94851-116">For this example, enter `shannon`.</span></span>
+3. <span data-ttu-id="94851-117">Markera länken i kolumnen **Namn** för det användarkonto som visas.</span><span class="sxs-lookup"><span data-stu-id="94851-117">Select the link in the **Name** column of the user account that appears.</span></span>
+4. <span data-ttu-id="94851-118">Välj fliken **tidsregistrering**.</span><span class="sxs-lookup"><span data-stu-id="94851-118">Select the **Time registration** tab.</span></span>
+5. <span data-ttu-id="94851-119">Välj **Aktivera på registreringsterminaler**</span><span class="sxs-lookup"><span data-stu-id="94851-119">Select **Activate on registration terminals**.</span></span>
+6. <span data-ttu-id="94851-120">Ange eller välj värden i följande fält:</span><span class="sxs-lookup"><span data-stu-id="94851-120">Enter or select values in the following fields:</span></span>  
 
-    - <span data-ttu-id="51074-121">**Beräkningsgrupp**</span><span class="sxs-lookup"><span data-stu-id="51074-121">**Calculation group**</span></span>  
-    - <span data-ttu-id="51074-122">**Standardberäkningsgrupp**</span><span class="sxs-lookup"><span data-stu-id="51074-122">**Default calculation group**</span></span>  
-    - <span data-ttu-id="51074-123">**Godkännandegrupp**</span><span class="sxs-lookup"><span data-stu-id="51074-123">**Approval group**</span></span>  
-    - <span data-ttu-id="51074-124">**Standardprofil**</span><span class="sxs-lookup"><span data-stu-id="51074-124">**Standard profile**</span></span>  
-    - <span data-ttu-id="51074-125">**Profilgrupp**</span><span class="sxs-lookup"><span data-stu-id="51074-125">**Profile group**</span></span>  
+    - <span data-ttu-id="94851-121">**Beräkningsgrupp**</span><span class="sxs-lookup"><span data-stu-id="94851-121">**Calculation group**</span></span>  
+    - <span data-ttu-id="94851-122">**Standardberäkningsgrupp**</span><span class="sxs-lookup"><span data-stu-id="94851-122">**Default calculation group**</span></span>  
+    - <span data-ttu-id="94851-123">**Godkännandegrupp**</span><span class="sxs-lookup"><span data-stu-id="94851-123">**Approval group**</span></span>  
+    - <span data-ttu-id="94851-124">**Standardprofil**</span><span class="sxs-lookup"><span data-stu-id="94851-124">**Standard profile**</span></span>  
+    - <span data-ttu-id="94851-125">**Profilgrupp**</span><span class="sxs-lookup"><span data-stu-id="94851-125">**Profile group**</span></span>  
 
-7. <span data-ttu-id="51074-126">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="51074-126">Select **OK**.</span></span>
-8. <span data-ttu-id="51074-127">Klicka på **Redigera** för att ange ett bricknummer för den nya tidsregistreringsarbetaren.</span><span class="sxs-lookup"><span data-stu-id="51074-127">Select **Edit** to enter a badge number for the new time registration worker.</span></span> <span data-ttu-id="51074-128">Ange ett värde i fältet **ID-bricka**.</span><span class="sxs-lookup"><span data-stu-id="51074-128">Enter a value in the **Badge ID** field.</span></span>
-9. <span data-ttu-id="51074-129">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="51074-129">Select **Save**.</span></span>
-10. <span data-ttu-id="51074-130">Stäng sidorna **arbetardetaljer** och **arbetare**.</span><span class="sxs-lookup"><span data-stu-id="51074-130">Close the **Worker details** and **Workers** pages.</span></span>
+7. <span data-ttu-id="94851-126">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="94851-126">Select **OK**.</span></span>
+8. <span data-ttu-id="94851-127">Klicka på **Redigera** för att ange ett bricknummer för den nya tidsregistreringsarbetaren.</span><span class="sxs-lookup"><span data-stu-id="94851-127">Select **Edit** to enter a badge number for the new time registration worker.</span></span> <span data-ttu-id="94851-128">Ange ett värde i fältet **ID-bricka**.</span><span class="sxs-lookup"><span data-stu-id="94851-128">Enter a value in the **Badge ID** field.</span></span>
+9. <span data-ttu-id="94851-129">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="94851-129">Select **Save**.</span></span>
+10. <span data-ttu-id="94851-130">Stäng sidorna **arbetardetaljer** och **arbetare**.</span><span class="sxs-lookup"><span data-stu-id="94851-130">Close the **Worker details** and **Workers** pages.</span></span>
 
-## <a name="assign-worker-to-device-group"></a><span data-ttu-id="51074-131">Tilldela arbetare till enhetsgrupp.</span><span class="sxs-lookup"><span data-stu-id="51074-131">Assign worker to device group</span></span>
-1. <span data-ttu-id="51074-132">Gå till **Produktionskontroll > Inställningar > Tillverkningskörning > Konfigurera jobbkort för enheter**.</span><span class="sxs-lookup"><span data-stu-id="51074-132">Go to **Production control > Setup > Manufacturing execution > Configure job card for devices**.</span></span>
-2. <span data-ttu-id="51074-133">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="51074-133">Select **Add**.</span></span>
-3. <span data-ttu-id="51074-134">Välj önskad arbetare i listan.</span><span class="sxs-lookup"><span data-stu-id="51074-134">In the list, select the desired worker.</span></span> <span data-ttu-id="51074-135">Välj **SHANNON** i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="51074-135">For this example, select **SHANNON**.</span></span>
-4. <span data-ttu-id="51074-136">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="51074-136">Select **OK**.</span></span>
-5. <span data-ttu-id="51074-137">Välj **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="51074-137">Select **Edit**.</span></span>
-6. <span data-ttu-id="51074-138">I fältet **Produktionsenhet** kan du ställa in standardfiltret för arbetaren.</span><span class="sxs-lookup"><span data-stu-id="51074-138">In the **Production unit** field, you can set the default filter for the worker.</span></span> <span data-ttu-id="51074-139">Då säkerställs att endast produktionsjobb för den valda produktionsenheten visas när arbetaren loggar in på enheten.</span><span class="sxs-lookup"><span data-stu-id="51074-139">This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device.</span></span> <span data-ttu-id="51074-140">Ange önskat värde.</span><span class="sxs-lookup"><span data-stu-id="51074-140">Enter the desired value.</span></span>
-7. <span data-ttu-id="51074-141">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="51074-141">Close the page.</span></span>
+## <a name="assign-worker-to-device-group"></a><span data-ttu-id="94851-131">Tilldela arbetare till enhetsgrupp.</span><span class="sxs-lookup"><span data-stu-id="94851-131">Assign worker to device group</span></span>
+1. <span data-ttu-id="94851-132">Gå till **Produktionskontroll > Inställningar > Tillverkningskörning > Konfigurera jobbkort för enheter**.</span><span class="sxs-lookup"><span data-stu-id="94851-132">Go to **Production control > Setup > Manufacturing execution > Configure job card for devices**.</span></span>
+2. <span data-ttu-id="94851-133">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="94851-133">Select **Add**.</span></span>
+3. <span data-ttu-id="94851-134">Välj önskad arbetare i listan.</span><span class="sxs-lookup"><span data-stu-id="94851-134">In the list, select the desired worker.</span></span> <span data-ttu-id="94851-135">Välj **SHANNON** i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="94851-135">For this example, select **SHANNON**.</span></span>
+4. <span data-ttu-id="94851-136">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="94851-136">Select **OK**.</span></span>
+5. <span data-ttu-id="94851-137">Välj **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="94851-137">Select **Edit**.</span></span>
+6. <span data-ttu-id="94851-138">I fältet **Produktionsenhet** kan du ställa in standardfiltret för arbetaren.</span><span class="sxs-lookup"><span data-stu-id="94851-138">In the **Production unit** field, you can set the default filter for the worker.</span></span> <span data-ttu-id="94851-139">Då säkerställs att endast produktionsjobb för den valda produktionsenheten visas när arbetaren loggar in på enheten.</span><span class="sxs-lookup"><span data-stu-id="94851-139">This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device.</span></span> <span data-ttu-id="94851-140">Ange önskat värde.</span><span class="sxs-lookup"><span data-stu-id="94851-140">Enter the desired value.</span></span>
+7. <span data-ttu-id="94851-141">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="94851-141">Close the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
