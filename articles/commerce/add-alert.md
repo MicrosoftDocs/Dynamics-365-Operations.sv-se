@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a77196be69bb71d917bf84c633199a3af3fbf478
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0b9325ef31fc61d451584930b09c2039156c0c05
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986039"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206593"
 ---
-# <a name="promo-banner-module"></a>Annonsbanderollmodul
+# <a name="promo-banner-module"></a>Modul med kampanjbanderoll
 
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet handlar om annonsbanderollmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 Annonsbanderollmoduler används för att visa infogade informationsmeddelanden på en sida. De kan användas för att visa erbjudanden på hela webbplatsen som visas på alla sidor på en näthandelssajt. 
 

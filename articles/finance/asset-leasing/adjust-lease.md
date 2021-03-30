@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 32d99d9e90b65f7cac74176d21fa4b053ae8f62c
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: f11dbd6dc67ffccb087f67f5ce6267fe94e0ee65
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130765"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219997"
 ---
 # <a name="adjust-leases"></a>Justera leasingar
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ämnet förklarar hur du justerar en leasing. Justering kan krävas om leasingvillkoren ändras, leasingen utökas eller andra omständigheter ändras. Leasing av tillgång följer riktlinjerna i Accounting Standards Codification Topic 842 (ASC 842) och International Financial Reporting Standard 16 (IFRS 16) om ändringar av leasing. ASC 842-20-15-1 definierar en leasingändring precis som alla ändringar av villkoren för ett kontrakt som orsakar en ändring av omfattningen av eller ersättningen av en leasing. Punkt 39 i IFRS 16 anger att en leasetagare måste omvärdera leasingskulden så att den återspeglar ändringar av leasingbetalningarna.
 

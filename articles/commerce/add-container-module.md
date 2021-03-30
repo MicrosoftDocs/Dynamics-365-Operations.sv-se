@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 23d81eaee6684ff2b041f93edd05076af66d322d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 43017cbb76c38eed6951a9e87c763cf919c3bd93
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980541"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206425"
 ---
-# <a name="container-module"></a>Behållaremodul
+# <a name="container-module"></a>Behållarmodul
 
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet handlar om behållarmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 En behållarmodul är en modul som är värd för andra moduler inne i den. Det primära syftet med en behållare är att definiera, via de egenskaper som är inställda för den, layouten för modulerna som den innehåller. Dessa moduler kan till exempel visas sida vid sida i en layout med två kolumner, tre kolumner, fyra kolumner och sex kolumner. De kan också begränsas till behållarens bredd, eller så att de fyller skärmen. En rubrik kan också läggas till i varje behållarmodul.
 

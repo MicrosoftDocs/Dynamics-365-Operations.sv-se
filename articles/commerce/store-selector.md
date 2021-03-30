@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 74dbad4cb348f19b51ba8b84a1cd41fc5049708e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 785ff004adcd94e7c4c6c5918d632ce662aa7989
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006345"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205132"
 ---
 # <a name="store-selector-module"></a>Modul för butiksväljare
 
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet handlar om modulen för butiksväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 Kunder kan använda modulen butiksväljare för att hämta en produkt i en vald butik efter ett onlineinköp. I Commerce version 10.0.13 inkluderar modulen butiksväljare ytterligare funktioner som kan visa sidan **Visa en butik** som visar närliggande butiker.
 

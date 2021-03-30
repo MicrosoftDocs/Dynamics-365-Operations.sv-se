@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7fde19ad1a58616672de72fb5e5cbeea39138b46
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2a2e48b15bedd25b685686fa18a91f30b600331c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4995200"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5217396"
 ---
 # <a name="dimension-hierarchy"></a>Dimensionshierarki
 
@@ -52,7 +52,7 @@ En dimensionshierarki kan skapas för följande typer av dimensioner:
 > [!NOTE]
 > - Du kan skapa flera dimensionshierarkier för samma dimension om olika perspektiv krävs.
 > - En dimensionshierarki kan endast associeras med en dimension.
-> - En dimensionshierarki kan ha obegränsat antal nivåer i strukturen. Alla nivåer ska vara tillgängliga i arbetsytan **kostnadskontroll**. Endast de första 15 nivåerna i dimensionshierarkin exporteras när du använder Microsoft Excel eller Power BI för rapporteringsändamål. Denna begränsning beror på att både Excel och Power BI kräver ett fast schema.
+> - En dimensionshierarki kan ha obegränsat antal nivåer i strukturen. Alla nivåer ska vara tillgängliga i arbetsytan **kostnadskontroll**. Endast de första 15 nivåerna i dimensionshierarkin exporteras när du använder Microsoft Excel eller Microsoft Power BI för rapporteringsändamål. Denna begränsning beror på att både Excel och Power BI kräver ett fast schema.
 > - En dimensionshierarki har inget giltighetsdatum. Därför sparas alla ändringar i en dimensionshierarki omedelbart till posten och kan du inte jämföra före- och efter-datum.
 
 ## <a name="dimension-hierarchy-type"></a>Typ av dimensionshierarki

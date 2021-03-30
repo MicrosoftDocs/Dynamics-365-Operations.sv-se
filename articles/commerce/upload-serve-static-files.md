@@ -1,5 +1,5 @@
 ---
-title: Ladda upp och betjäna statiska filer
+title: Ladda upp och hantera statiska filer
 description: I det här avsnittet beskrivs hur du överför en statisk fil till webbplatsskaparen för Microsoft Dynamics 365 Commerce, samt hur du skapar en anpassad URL och ett filnamn som kan användas för att begära den filen.
 author: StuHarg
 manager: annbe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 1d709d99737ad05af1fb19d9f3ef7b87a8db80d3
-ms.sourcegitcommit: da17648c296b22d517eadb2f71c7803672e5648d
+ms.openlocfilehash: aba9dde2ed9d5fa09e92fcdd784a53f208930eda
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "5031830"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211029"
 ---
-# <a name="upload-and-serve-static-files"></a>Ladda upp och betjäna statiska filer
+# <a name="upload-and-serve-static-files"></a>Ladda upp och hantera statiska filer
 
 [!include [banner](includes/banner.md)]
 

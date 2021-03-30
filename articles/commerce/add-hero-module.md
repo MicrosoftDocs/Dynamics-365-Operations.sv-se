@@ -17,21 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a6359c915d053bb00c969b166325f675c0003ead
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ad95dc943f075e088f5e13b507fa08f11548282f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980367"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206281"
 ---
 # <a name="content-block-module"></a>Innehållsblockmodul
-
 
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet handlar om innehållsblockmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 En innehållsblockmodul används för att marknadsföra produkter eller erbjudanden genom en kombination av bilder och text. En återförsäljare kan till exempel lägga till en innehållsblockmodul på startsidan för en näthandelssajt för att marknadsföra en ny produkt och locka kundernas uppmärksamhet.
 
