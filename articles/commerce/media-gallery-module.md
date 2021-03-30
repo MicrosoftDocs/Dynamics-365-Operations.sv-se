@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 045568797722a621ea4e6c82d10dbb266b9e8162
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e9b5a8123c64dce2ba65758f0312a899646cf948
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982476"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252568"
 ---
 # <a name="media-gallery-module"></a>Modul för mediegalleri
 
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet handlar om modul för mediegalleri och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 I modul för mediegalleri visas en eller flera bilder i en vy i ett galleri. Modul för mediegalleri stöder miniatyrbilderna som antingen ordnas vågrätt (som en rad under bilden) eller lodrätt (som en kolumn bredvid bilden). Moduler för mediagalleri ger också möjligheter som gör att bilder kan zoomas in (förstoras) eller visas i helskärmsläge. För att återges i modulen mediegalleri måste en bild vara tillgänglig i webbplatsskaparen för Commerce mediebibliotek. För närvarande stöder modulen mediegalleri endast bilder.
 

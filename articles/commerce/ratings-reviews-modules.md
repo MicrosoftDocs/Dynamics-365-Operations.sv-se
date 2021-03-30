@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: b17e986c2e30134c334cd547a85a1dd682172a0e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 26658ebdbc70613baf30c344664133b9cf5911ca
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979813"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5243779"
 ---
-# <a name="ratings-and-reviews-modules"></a>Moduler för omdömen och moduler
+# <a name="ratings-and-reviews-modules"></a>Moduler för omdömen och recensioner
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs klassificeringar och recensioner som används på produktinformationssidor (PDP) i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
+I det här avsnittet beskrivs klassificeringar och recensioner som används på produktinformationssidor (PDPs) i Microsoft Dynamics 365 Commerce.
 
 Omdömen och recensioner på webbplatser för näthandel hjälper kunder lära sig mer om produkter innan de fattar ett inköpsbeslut, och är också en mekanism för att samla in feedback från kunder om produkter. 
 
