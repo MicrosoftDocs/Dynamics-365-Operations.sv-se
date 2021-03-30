@@ -16,49 +16,52 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b516d51210604a5813d637aa342dc7e269c60d89
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 132b3133bd75cd2b47a96a60e943ff96e686fecf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972260"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5229898"
 ---
-# <a name="design-the-relationships-between-organizational-units"></a><span data-ttu-id="f7784-103"> Utforma relationerna mellan organisationsenheter</span><span class="sxs-lookup"><span data-stu-id="f7784-103">Design the relationships between organizational units</span></span>
+# <a name="design-the-relationships-between-organizational-units"></a><span data-ttu-id="079f6-103"> Utforma relationerna mellan organisationsenheter</span><span class="sxs-lookup"><span data-stu-id="079f6-103">Design the relationships between organizational units</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f7784-104">I den här proceduren går vi igenom hur du utformar relationen mellan organisationsenheter.</span><span class="sxs-lookup"><span data-stu-id="f7784-104">This procedure walks through how to design the relationship between organizational units.</span></span> <span data-ttu-id="f7784-105">Du måste skapa ett nytt organisationsyfte innan du definierar relationen, eller använda det befintliga organisationsyftet.</span><span class="sxs-lookup"><span data-stu-id="f7784-105">You must create a new organization purpose before defining the relationship, or you can use the existing organization purpose.</span></span> <span data-ttu-id="f7784-106">Demonstrationsdataföretaget som används för att utföra den här proceduren är USRT.</span><span class="sxs-lookup"><span data-stu-id="f7784-106">The demo data company used to complete this procedure is USRT.</span></span> <span data-ttu-id="f7784-107">Den här uppgiften är avsedd för administratörsrollen.</span><span class="sxs-lookup"><span data-stu-id="f7784-107">This task is intended for the administrator role.</span></span>
+<span data-ttu-id="079f6-104">I den här proceduren går vi igenom hur du utformar relationen mellan organisationsenheter.</span><span class="sxs-lookup"><span data-stu-id="079f6-104">This procedure walks through how to design the relationship between organizational units.</span></span> <span data-ttu-id="079f6-105">Du måste skapa ett nytt organisationsyfte innan du definierar relationen, eller använda det befintliga organisationsyftet.</span><span class="sxs-lookup"><span data-stu-id="079f6-105">You must create a new organization purpose before defining the relationship, or you can use the existing organization purpose.</span></span> <span data-ttu-id="079f6-106">Demonstrationsdataföretaget som används för att utföra den här proceduren är USRT.</span><span class="sxs-lookup"><span data-stu-id="079f6-106">The demo data company used to complete this procedure is USRT.</span></span> <span data-ttu-id="079f6-107">Den här uppgiften är avsedd för administratörsrollen.</span><span class="sxs-lookup"><span data-stu-id="079f6-107">This task is intended for the administrator role.</span></span>
 
-1. <span data-ttu-id="f7784-108">Gå till Organisationsadministration > Organisationer > Organisationshierarkier.</span><span class="sxs-lookup"><span data-stu-id="f7784-108">Go to Organization administration > Organizations > Organization hierarchies.</span></span>
-2. <span data-ttu-id="f7784-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f7784-109">Click New.</span></span>
-3. <span data-ttu-id="f7784-110">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="f7784-110">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="f7784-111">Klicka på Tilldela syfte.</span><span class="sxs-lookup"><span data-stu-id="f7784-111">Click Assign purpose.</span></span>
-5. <span data-ttu-id="f7784-112">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="f7784-112">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="f7784-113">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="f7784-113">Click Add.</span></span>
-7. <span data-ttu-id="f7784-114">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="f7784-114">In the list, find and select the desired record.</span></span>
-8. <span data-ttu-id="f7784-115">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="f7784-115">Click OK.</span></span>
-    * <span data-ttu-id="f7784-116">Du kan välja så många organisationsyften som krävs för din organisation.</span><span class="sxs-lookup"><span data-stu-id="f7784-116">You can select as many organization purposes as required for your organization.</span></span>  
-9. <span data-ttu-id="f7784-117">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="f7784-117">In the list, find and select the desired record.</span></span>
-10. <span data-ttu-id="f7784-118">Klicka på Ange som standard.</span><span class="sxs-lookup"><span data-stu-id="f7784-118">Click Set as default.</span></span>
-11. <span data-ttu-id="f7784-119">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="f7784-119">Close the page.</span></span>
-12. <span data-ttu-id="f7784-120">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f7784-120">Click Save.</span></span>
-13. <span data-ttu-id="f7784-121">Klicka på Visa.</span><span class="sxs-lookup"><span data-stu-id="f7784-121">Click View.</span></span>
-14. <span data-ttu-id="f7784-122">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="f7784-122">Click Edit.</span></span>
-15. <span data-ttu-id="f7784-123">Klicka på Infoga.</span><span class="sxs-lookup"><span data-stu-id="f7784-123">Click Insert.</span></span>
-16. <span data-ttu-id="f7784-124">Klicka på Affärsenhet.</span><span class="sxs-lookup"><span data-stu-id="f7784-124">Click Business unit.</span></span>
-17. <span data-ttu-id="f7784-125">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="f7784-125">In the list, find and select the desired record.</span></span>
-18. <span data-ttu-id="f7784-126">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="f7784-126">In the list, click the link in the selected row.</span></span>
-19. <span data-ttu-id="f7784-127">Klicka på Infoga.</span><span class="sxs-lookup"><span data-stu-id="f7784-127">Click Insert.</span></span>
-20. <span data-ttu-id="f7784-128">Klicka på handelskanal.</span><span class="sxs-lookup"><span data-stu-id="f7784-128">Click Commerce channel.</span></span>
-21. <span data-ttu-id="f7784-129">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="f7784-129">In the list, find and select the desired record.</span></span>
-22. <span data-ttu-id="f7784-130">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="f7784-130">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="f7784-131">Du kan lägga till så många organisationsenheter som krävs.</span><span class="sxs-lookup"><span data-stu-id="f7784-131">You can add as many organization units as is required.</span></span>  
-23. <span data-ttu-id="f7784-132">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f7784-132">Click Save.</span></span>
-24. <span data-ttu-id="f7784-133">Klicka på Stäng.</span><span class="sxs-lookup"><span data-stu-id="f7784-133">Click Close.</span></span>
-25. <span data-ttu-id="f7784-134">Klicka på Publicera om du vill öppna formuläret med listrutan för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="f7784-134">Click Publish to open the drop dialog.</span></span>
-26. <span data-ttu-id="f7784-135">Ange datum och tid i fältet Giltighetsdatum.</span><span class="sxs-lookup"><span data-stu-id="f7784-135">In the Effective date field, enter a date and time.</span></span>
-27. <span data-ttu-id="f7784-136">Ange datum och tid i fältet Giltighetsdatum.</span><span class="sxs-lookup"><span data-stu-id="f7784-136">In the Effective date field, enter a date and time.</span></span>
-28. <span data-ttu-id="f7784-137">Skriv ett värde i fältet Beskriv ändringar.</span><span class="sxs-lookup"><span data-stu-id="f7784-137">In the Describe changes field, type a value.</span></span>
-29. <span data-ttu-id="f7784-138">Klicka på Publicera.</span><span class="sxs-lookup"><span data-stu-id="f7784-138">Click Publish.</span></span>
-30. <span data-ttu-id="f7784-139">Klicka på Stäng.</span><span class="sxs-lookup"><span data-stu-id="f7784-139">Click Close.</span></span>
+1. <span data-ttu-id="079f6-108">Gå till Organisationsadministration > Organisationer > Organisationshierarkier.</span><span class="sxs-lookup"><span data-stu-id="079f6-108">Go to Organization administration > Organizations > Organization hierarchies.</span></span>
+2. <span data-ttu-id="079f6-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="079f6-109">Click New.</span></span>
+3. <span data-ttu-id="079f6-110">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="079f6-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="079f6-111">Klicka på Tilldela syfte.</span><span class="sxs-lookup"><span data-stu-id="079f6-111">Click Assign purpose.</span></span>
+5. <span data-ttu-id="079f6-112">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="079f6-112">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="079f6-113">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="079f6-113">Click Add.</span></span>
+7. <span data-ttu-id="079f6-114">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="079f6-114">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="079f6-115">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="079f6-115">Click OK.</span></span>
+    * <span data-ttu-id="079f6-116">Du kan välja så många organisationsyften som krävs för din organisation.</span><span class="sxs-lookup"><span data-stu-id="079f6-116">You can select as many organization purposes as required for your organization.</span></span>  
+9. <span data-ttu-id="079f6-117">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="079f6-117">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="079f6-118">Klicka på Ange som standard.</span><span class="sxs-lookup"><span data-stu-id="079f6-118">Click Set as default.</span></span>
+11. <span data-ttu-id="079f6-119">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="079f6-119">Close the page.</span></span>
+12. <span data-ttu-id="079f6-120">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="079f6-120">Click Save.</span></span>
+13. <span data-ttu-id="079f6-121">Klicka på Visa.</span><span class="sxs-lookup"><span data-stu-id="079f6-121">Click View.</span></span>
+14. <span data-ttu-id="079f6-122">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="079f6-122">Click Edit.</span></span>
+15. <span data-ttu-id="079f6-123">Klicka på Infoga.</span><span class="sxs-lookup"><span data-stu-id="079f6-123">Click Insert.</span></span>
+16. <span data-ttu-id="079f6-124">Klicka på Affärsenhet.</span><span class="sxs-lookup"><span data-stu-id="079f6-124">Click Business unit.</span></span>
+17. <span data-ttu-id="079f6-125">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="079f6-125">In the list, find and select the desired record.</span></span>
+18. <span data-ttu-id="079f6-126">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="079f6-126">In the list, click the link in the selected row.</span></span>
+19. <span data-ttu-id="079f6-127">Klicka på Infoga.</span><span class="sxs-lookup"><span data-stu-id="079f6-127">Click Insert.</span></span>
+20. <span data-ttu-id="079f6-128">Klicka på handelskanal.</span><span class="sxs-lookup"><span data-stu-id="079f6-128">Click Commerce channel.</span></span>
+21. <span data-ttu-id="079f6-129">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="079f6-129">In the list, find and select the desired record.</span></span>
+22. <span data-ttu-id="079f6-130">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="079f6-130">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="079f6-131">Du kan lägga till så många organisationsenheter som krävs.</span><span class="sxs-lookup"><span data-stu-id="079f6-131">You can add as many organization units as is required.</span></span>  
+23. <span data-ttu-id="079f6-132">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="079f6-132">Click Save.</span></span>
+24. <span data-ttu-id="079f6-133">Klicka på Stäng.</span><span class="sxs-lookup"><span data-stu-id="079f6-133">Click Close.</span></span>
+25. <span data-ttu-id="079f6-134">Klicka på Publicera om du vill öppna formuläret med listrutan för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="079f6-134">Click Publish to open the drop dialog.</span></span>
+26. <span data-ttu-id="079f6-135">Ange datum och tid i fältet Giltighetsdatum.</span><span class="sxs-lookup"><span data-stu-id="079f6-135">In the Effective date field, enter a date and time.</span></span>
+27. <span data-ttu-id="079f6-136">Ange datum och tid i fältet Giltighetsdatum.</span><span class="sxs-lookup"><span data-stu-id="079f6-136">In the Effective date field, enter a date and time.</span></span>
+28. <span data-ttu-id="079f6-137">Skriv ett värde i fältet Beskriv ändringar.</span><span class="sxs-lookup"><span data-stu-id="079f6-137">In the Describe changes field, type a value.</span></span>
+29. <span data-ttu-id="079f6-138">Klicka på Publicera.</span><span class="sxs-lookup"><span data-stu-id="079f6-138">Click Publish.</span></span>
+30. <span data-ttu-id="079f6-139">Klicka på Stäng.</span><span class="sxs-lookup"><span data-stu-id="079f6-139">Click Close.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

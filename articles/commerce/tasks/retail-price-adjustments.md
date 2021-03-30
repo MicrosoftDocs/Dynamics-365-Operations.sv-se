@@ -16,39 +16,42 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7443f69473c0aad478d47f80f284b1156bad9c24
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: dbd2f818930424313e1d76aea4a257efa7c7b3be
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962995"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232795"
 ---
-# <a name="retail-price-adjustments"></a><span data-ttu-id="cab5a-103"> Underhåll butiksprisjusteringar</span><span class="sxs-lookup"><span data-stu-id="cab5a-103">Retail price adjustments</span></span>
+# <a name="retail-price-adjustments"></a><span data-ttu-id="73c63-103"> Underhåll butiksprisjusteringar</span><span class="sxs-lookup"><span data-stu-id="73c63-103">Retail price adjustments</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="cab5a-104">Den här proceduren går igenom hur du skapar en handelsprisjustering.</span><span class="sxs-lookup"><span data-stu-id="cab5a-104">This procedure will walk through creating a commerce price adjustment.</span></span> <span data-ttu-id="cab5a-105">En prisjustering kan ange en artikels försäljningspris direkt eller ändra dess basförsäljningspris eller handelsavtalsförsäljningspris.</span><span class="sxs-lookup"><span data-stu-id="cab5a-105">A price adjustment can set an item's sale price directly, or modify its base sale price or trade agreement sale price.</span></span> <span data-ttu-id="cab5a-106">I proceduren används demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="cab5a-106">This procedure uses the USRT demo data company.</span></span>
+<span data-ttu-id="73c63-104">Den här proceduren går igenom hur du skapar en handelsprisjustering.</span><span class="sxs-lookup"><span data-stu-id="73c63-104">This procedure will walk through creating a commerce price adjustment.</span></span> <span data-ttu-id="73c63-105">En prisjustering kan ange en artikels försäljningspris direkt eller ändra dess basförsäljningspris eller handelsavtalsförsäljningspris.</span><span class="sxs-lookup"><span data-stu-id="73c63-105">A price adjustment can set an item's sale price directly, or modify its base sale price or trade agreement sale price.</span></span> <span data-ttu-id="73c63-106">I proceduren används demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="73c63-106">This procedure uses the USRT demo data company.</span></span>
 
-1. <span data-ttu-id="cab5a-107">Klicka på prissättning och rabatter.</span><span class="sxs-lookup"><span data-stu-id="cab5a-107">Click Pricing and discount management.</span></span>
-2. <span data-ttu-id="cab5a-108">Klicka på fliken Prisjusteringar.</span><span class="sxs-lookup"><span data-stu-id="cab5a-108">Click the Price adjustments tab.</span></span>
-3. <span data-ttu-id="cab5a-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="cab5a-109">Click New.</span></span>
-    * <span data-ttu-id="cab5a-110">Härifrån kan du skapa alla de flesta vanliga regler för prissättning och rabatter, inklusive rabatter, prisjusteringar, handelsavtalsjournaler och kategoriprissättningsregler.</span><span class="sxs-lookup"><span data-stu-id="cab5a-110">From here you can create all of the most commonly used price and discount rules, including discounts, price adjustments, trade agreement journals, and category pricing rules.</span></span>  
-4. <span data-ttu-id="cab5a-111">Klicka på Prisjustering.</span><span class="sxs-lookup"><span data-stu-id="cab5a-111">Click Price adjustment.</span></span>
-5. <span data-ttu-id="cab5a-112">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="cab5a-112">In the Name field, type a value.</span></span>
-6. <span data-ttu-id="cab5a-113">Expandera avsnittet Rader.</span><span class="sxs-lookup"><span data-stu-id="cab5a-113">Expand the Lines section.</span></span>
-7. <span data-ttu-id="cab5a-114">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="cab5a-114">Click Add.</span></span>
-    * <span data-ttu-id="cab5a-115">Ange 81126 i fältet Produkt i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="cab5a-115">For this example, enter '81126' in the Product field.</span></span> <span data-ttu-id="cab5a-116">Ange sedan värdet 10,0 i fältet Rabattprocent.</span><span class="sxs-lookup"><span data-stu-id="cab5a-116">Then, enter '10.0' in the Discount percentage field.</span></span>  
-    * <span data-ttu-id="cab5a-117">En prisjustering för typ av rabattprocent minskar ett basförsäljningspris eller handelsavtalsförsäljningspris.</span><span class="sxs-lookup"><span data-stu-id="cab5a-117">A discount percentage type price adjustment will reduce a base sales price or trade agreement sales price.</span></span>  
-8. <span data-ttu-id="cab5a-118">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="cab5a-118">Click Add.</span></span>
-    * <span data-ttu-id="cab5a-119">Ange 81125 i fältet Produkt i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="cab5a-119">For this example, enter '81125' in the Product field.</span></span> <span data-ttu-id="cab5a-120">Välj sedan Kassarabattbelopp i fältet Rabattmetod.</span><span class="sxs-lookup"><span data-stu-id="cab5a-120">Then, select 'Cash discount amount' in the Discount method field.</span></span>    <span data-ttu-id="cab5a-121">Ange slutligen 5,0 i fältet Kassarabattbelopp.</span><span class="sxs-lookup"><span data-stu-id="cab5a-121">Finally, enter '5.0' in the Cash discount amount field.</span></span>  
-    * <span data-ttu-id="cab5a-122">En rabattyp för kassarabatt i beloppsform är ett belopp som dras av från ett baspris eller ett handelsavtalspris.</span><span class="sxs-lookup"><span data-stu-id="cab5a-122">A Cash discount amount discount type is an amount taken off from a base price or a trade agreement price.</span></span>  
-9. <span data-ttu-id="cab5a-123">Klicka på prisgrupper.</span><span class="sxs-lookup"><span data-stu-id="cab5a-123">Click Price groups.</span></span>
-    * <span data-ttu-id="cab5a-124">Välj RP-Houston i fältet Prisgrupp.</span><span class="sxs-lookup"><span data-stu-id="cab5a-124">Select 'RP-Houston' in the Price group field.</span></span>  
-    * <span data-ttu-id="cab5a-125">Det kopplar prisjusteringen till Houston-butiken.</span><span class="sxs-lookup"><span data-stu-id="cab5a-125">This will associate the Price adjustment to the Houston store.</span></span>  
-10. <span data-ttu-id="cab5a-126">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="cab5a-126">Click Save.</span></span>
-11. <span data-ttu-id="cab5a-127">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="cab5a-127">Close the page.</span></span>
-12. <span data-ttu-id="cab5a-128">Välj Aktiverad i fältet Status.</span><span class="sxs-lookup"><span data-stu-id="cab5a-128">In the Status field, select 'Enabled'.</span></span>
-13. <span data-ttu-id="cab5a-129">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="cab5a-129">Click Save.</span></span>
-14. <span data-ttu-id="cab5a-130">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="cab5a-130">Close the page.</span></span>
-15. <span data-ttu-id="cab5a-131">Uppdatera sidan.</span><span class="sxs-lookup"><span data-stu-id="cab5a-131">Refresh the page.</span></span>
+1. <span data-ttu-id="73c63-107">Klicka på prissättning och rabatter.</span><span class="sxs-lookup"><span data-stu-id="73c63-107">Click Pricing and discount management.</span></span>
+2. <span data-ttu-id="73c63-108">Klicka på fliken Prisjusteringar.</span><span class="sxs-lookup"><span data-stu-id="73c63-108">Click the Price adjustments tab.</span></span>
+3. <span data-ttu-id="73c63-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="73c63-109">Click New.</span></span>
+    * <span data-ttu-id="73c63-110">Härifrån kan du skapa alla de flesta vanliga regler för prissättning och rabatter, inklusive rabatter, prisjusteringar, handelsavtalsjournaler och kategoriprissättningsregler.</span><span class="sxs-lookup"><span data-stu-id="73c63-110">From here you can create all of the most commonly used price and discount rules, including discounts, price adjustments, trade agreement journals, and category pricing rules.</span></span>  
+4. <span data-ttu-id="73c63-111">Klicka på Prisjustering.</span><span class="sxs-lookup"><span data-stu-id="73c63-111">Click Price adjustment.</span></span>
+5. <span data-ttu-id="73c63-112">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="73c63-112">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="73c63-113">Expandera avsnittet Rader.</span><span class="sxs-lookup"><span data-stu-id="73c63-113">Expand the Lines section.</span></span>
+7. <span data-ttu-id="73c63-114">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="73c63-114">Click Add.</span></span>
+    * <span data-ttu-id="73c63-115">Ange 81126 i fältet Produkt i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="73c63-115">For this example, enter '81126' in the Product field.</span></span> <span data-ttu-id="73c63-116">Ange sedan värdet 10,0 i fältet Rabattprocent.</span><span class="sxs-lookup"><span data-stu-id="73c63-116">Then, enter '10.0' in the Discount percentage field.</span></span>  
+    * <span data-ttu-id="73c63-117">En prisjustering för typ av rabattprocent minskar ett basförsäljningspris eller handelsavtalsförsäljningspris.</span><span class="sxs-lookup"><span data-stu-id="73c63-117">A discount percentage type price adjustment will reduce a base sales price or trade agreement sales price.</span></span>  
+8. <span data-ttu-id="73c63-118">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="73c63-118">Click Add.</span></span>
+    * <span data-ttu-id="73c63-119">Ange 81125 i fältet Produkt i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="73c63-119">For this example, enter '81125' in the Product field.</span></span> <span data-ttu-id="73c63-120">Välj sedan Kassarabattbelopp i fältet Rabattmetod.</span><span class="sxs-lookup"><span data-stu-id="73c63-120">Then, select 'Cash discount amount' in the Discount method field.</span></span>    <span data-ttu-id="73c63-121">Ange slutligen 5,0 i fältet Kassarabattbelopp.</span><span class="sxs-lookup"><span data-stu-id="73c63-121">Finally, enter '5.0' in the Cash discount amount field.</span></span>  
+    * <span data-ttu-id="73c63-122">En rabattyp för kassarabatt i beloppsform är ett belopp som dras av från ett baspris eller ett handelsavtalspris.</span><span class="sxs-lookup"><span data-stu-id="73c63-122">A Cash discount amount discount type is an amount taken off from a base price or a trade agreement price.</span></span>  
+9. <span data-ttu-id="73c63-123">Klicka på prisgrupper.</span><span class="sxs-lookup"><span data-stu-id="73c63-123">Click Price groups.</span></span>
+    * <span data-ttu-id="73c63-124">Välj RP-Houston i fältet Prisgrupp.</span><span class="sxs-lookup"><span data-stu-id="73c63-124">Select 'RP-Houston' in the Price group field.</span></span>  
+    * <span data-ttu-id="73c63-125">Det kopplar prisjusteringen till Houston-butiken.</span><span class="sxs-lookup"><span data-stu-id="73c63-125">This will associate the Price adjustment to the Houston store.</span></span>  
+10. <span data-ttu-id="73c63-126">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="73c63-126">Click Save.</span></span>
+11. <span data-ttu-id="73c63-127">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="73c63-127">Close the page.</span></span>
+12. <span data-ttu-id="73c63-128">Välj Aktiverad i fältet Status.</span><span class="sxs-lookup"><span data-stu-id="73c63-128">In the Status field, select 'Enabled'.</span></span>
+13. <span data-ttu-id="73c63-129">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="73c63-129">Click Save.</span></span>
+14. <span data-ttu-id="73c63-130">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="73c63-130">Close the page.</span></span>
+15. <span data-ttu-id="73c63-131">Uppdatera sidan.</span><span class="sxs-lookup"><span data-stu-id="73c63-131">Refresh the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
