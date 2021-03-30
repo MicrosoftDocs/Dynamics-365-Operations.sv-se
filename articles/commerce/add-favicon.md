@@ -16,85 +16,88 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f249348fac526fc7814045b1b1b71c898430c0f2
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 786ba02c312b7cdb3cf7f0689737084887d536bc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980441"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206353"
 ---
-# <a name="add-a-favicon"></a><span data-ttu-id="c88d6-103">Lägg till en favicon</span><span class="sxs-lookup"><span data-stu-id="c88d6-103">Add a favicon</span></span>
+# <a name="add-a-favicon"></a><span data-ttu-id="733fe-103">Lägg till en favicon</span><span class="sxs-lookup"><span data-stu-id="733fe-103">Add a favicon</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="c88d6-104">I det här avsnittet beskrivs hur du lägger till en favicon på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="c88d6-104">This topic explains how to add a favicon to your site.</span></span>
+<span data-ttu-id="733fe-104">I det här avsnittet beskrivs hur du lägger till en favicon på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="733fe-104">This topic explains how to add a favicon to your site.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="c88d6-105">Översikt</span><span class="sxs-lookup"><span data-stu-id="c88d6-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="733fe-105">Översikt</span><span class="sxs-lookup"><span data-stu-id="733fe-105">Overview</span></span>
 
-<span data-ttu-id="c88d6-106">En favicon är en liten grafisk fil som visas på en flik i webbläsaren, i adressfältet, i webbhistoriken och i bokmärken eller favoriter, bland annat.</span><span class="sxs-lookup"><span data-stu-id="c88d6-106">A favicon is a small graphics file that is shown on a web browser tab, in the Address bar, in the browsing history, and in bookmarks or favorites, among other places.</span></span> <span data-ttu-id="c88d6-107">Vi rekommenderar att du lägger till en favicon på din webbplats, eftersom den representerar och stärker ditt varumärke och hjälper till att skilja din webbplats från andra webbplatser som dina kunder besöker.</span><span class="sxs-lookup"><span data-stu-id="c88d6-107">We recommend that you add a favicon to your site, because it represents and reinforces your brand, and helps distinguish your site from other sites that your customers visit.</span></span>
+<span data-ttu-id="733fe-106">En favicon är en liten grafisk fil som visas på en flik i webbläsaren, i adressfältet, i webbhistoriken och i bokmärken eller favoriter, bland annat.</span><span class="sxs-lookup"><span data-stu-id="733fe-106">A favicon is a small graphics file that is shown on a web browser tab, in the Address bar, in the browsing history, and in bookmarks or favorites, among other places.</span></span> <span data-ttu-id="733fe-107">Vi rekommenderar att du lägger till en favicon på din webbplats, eftersom den representerar och stärker ditt varumärke och hjälper till att skilja din webbplats från andra webbplatser som dina kunder besöker.</span><span class="sxs-lookup"><span data-stu-id="733fe-107">We recommend that you add a favicon to your site, because it represents and reinforces your brand, and helps distinguish your site from other sites that your customers visit.</span></span>
 
-<span data-ttu-id="c88d6-108">Även om du kan lägga till flera favicons av olika storlekar och filtyper på din webbplats, visar det här avsnittet hur du lägger till en enskild favicon.</span><span class="sxs-lookup"><span data-stu-id="c88d6-108">Although you can add multiple favicons of various sizes and file types to your site, this topic shows how to add a single favicon.</span></span> <span data-ttu-id="c88d6-109">Samma process och plats används dock för att lägga till fler favicons.</span><span class="sxs-lookup"><span data-stu-id="c88d6-109">However, the same process and location are used to add more favicons.</span></span>
+<span data-ttu-id="733fe-108">Även om du kan lägga till flera favicons av olika storlekar och filtyper på din webbplats, visar det här avsnittet hur du lägger till en enskild favicon.</span><span class="sxs-lookup"><span data-stu-id="733fe-108">Although you can add multiple favicons of various sizes and file types to your site, this topic shows how to add a single favicon.</span></span> <span data-ttu-id="733fe-109">Samma process och plats används dock för att lägga till fler favicons.</span><span class="sxs-lookup"><span data-stu-id="733fe-109">However, the same process and location are used to add more favicons.</span></span>
 
-## <a name="upload-a-favicon-to-your-sites-asset-collection"></a><span data-ttu-id="c88d6-110">Överför en favicon till webbplatsens tillgångssamling</span><span class="sxs-lookup"><span data-stu-id="c88d6-110">Upload a favicon to your site's asset collection</span></span>
+## <a name="upload-a-favicon-to-your-sites-asset-collection"></a><span data-ttu-id="733fe-110">Överför en favicon till webbplatsens tillgångssamling</span><span class="sxs-lookup"><span data-stu-id="733fe-110">Upload a favicon to your site's asset collection</span></span>
 
-<span data-ttu-id="c88d6-111">Överför en favicon till webbplatsens tillgångssamling genom att följa dessa steg.</span><span class="sxs-lookup"><span data-stu-id="c88d6-111">To upload a favicon to your site's asset collection, follow these steps.</span></span>
+<span data-ttu-id="733fe-111">Överför en favicon till webbplatsens tillgångssamling genom att följa dessa steg.</span><span class="sxs-lookup"><span data-stu-id="733fe-111">To upload a favicon to your site's asset collection, follow these steps.</span></span>
 
-1. <span data-ttu-id="c88d6-112">I vänstra navigeringsfönstret, välj **mediebibliotek**.</span><span class="sxs-lookup"><span data-stu-id="c88d6-112">In the left navigation pane, select **Media Library**.</span></span>
-1. <span data-ttu-id="c88d6-113">I kommandofältet, välj **Överför \> Överför medieartiklar**.</span><span class="sxs-lookup"><span data-stu-id="c88d6-113">On the command bar, select **Upload \> Upload Media Items**.</span></span>
-1. <span data-ttu-id="c88d6-114">I fönstret Utforskaren bläddrar du till avbildningsfilen favicon som du vill överföra, markerar den och väljer sedan **Öppna**.</span><span class="sxs-lookup"><span data-stu-id="c88d6-114">In the File Explorer window, browse to the favicon image file that you want to upload, select it, and then select **Open**.</span></span>
-1. <span data-ttu-id="c88d6-115">I dialogrutan **Överför medieartiklar** ange önskad titel och alt text.</span><span class="sxs-lookup"><span data-stu-id="c88d6-115">In the **Upload Media Item** dialog box, enter the required title and alt text.</span></span>
-1. <span data-ttu-id="c88d6-116">Om du vill publicera bilden omedelbart efter överföring markerar du kryssrutan **Publicera medieobjekt efter uppladdning**.</span><span class="sxs-lookup"><span data-stu-id="c88d6-116">If you want to publish the image immediately after upload, select the **Publish media items after upload** check box.</span></span>
+1. <span data-ttu-id="733fe-112">I vänstra navigeringsfönstret, välj **mediebibliotek**.</span><span class="sxs-lookup"><span data-stu-id="733fe-112">In the left navigation pane, select **Media Library**.</span></span>
+1. <span data-ttu-id="733fe-113">I kommandofältet, välj **Överför \> Överför medieartiklar**.</span><span class="sxs-lookup"><span data-stu-id="733fe-113">On the command bar, select **Upload \> Upload Media Items**.</span></span>
+1. <span data-ttu-id="733fe-114">I fönstret Utforskaren bläddrar du till avbildningsfilen favicon som du vill överföra, markerar den och väljer sedan **Öppna**.</span><span class="sxs-lookup"><span data-stu-id="733fe-114">In the File Explorer window, browse to the favicon image file that you want to upload, select it, and then select **Open**.</span></span>
+1. <span data-ttu-id="733fe-115">I dialogrutan **Överför medieartiklar** ange önskad titel och alt text.</span><span class="sxs-lookup"><span data-stu-id="733fe-115">In the **Upload Media Item** dialog box, enter the required title and alt text.</span></span>
+1. <span data-ttu-id="733fe-116">Om du vill publicera bilden omedelbart efter överföring markerar du kryssrutan **Publicera medieobjekt efter uppladdning**.</span><span class="sxs-lookup"><span data-stu-id="733fe-116">If you want to publish the image immediately after upload, select the **Publish media items after upload** check box.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="c88d6-117">Om du inte markerar kryssrutan **Publicera medieobjekt efter överföring** måste du gå tillbaka till sidan **Medieobjekt** och publicera favicon manuellt senare.</span><span class="sxs-lookup"><span data-stu-id="c88d6-117">If you don't select the **Publish media items after upload** check box, you must return to **Media items** page and manually publish the favicon later.</span></span>
+    > <span data-ttu-id="733fe-117">Om du inte markerar kryssrutan **Publicera medieobjekt efter överföring** måste du gå tillbaka till sidan **Medieobjekt** och publicera favicon manuellt senare.</span><span class="sxs-lookup"><span data-stu-id="733fe-117">If you don't select the **Publish media items after upload** check box, you must return to **Media items** page and manually publish the favicon later.</span></span>
 
-1. <span data-ttu-id="c88d6-118">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="c88d6-118">Select **OK**.</span></span>
-1. <span data-ttu-id="c88d6-119">Kopiera den offentliga URL:en för favicon i egenskapsrutan till höger.</span><span class="sxs-lookup"><span data-stu-id="c88d6-119">In the property pane on the right, copy the public URL of the favicon.</span></span> <span data-ttu-id="c88d6-120">Du kommer att använda denna URL senare.</span><span class="sxs-lookup"><span data-stu-id="c88d6-120">You will use this URL later.</span></span>
+1. <span data-ttu-id="733fe-118">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="733fe-118">Select **OK**.</span></span>
+1. <span data-ttu-id="733fe-119">Kopiera den offentliga URL:en för favicon i egenskapsrutan till höger.</span><span class="sxs-lookup"><span data-stu-id="733fe-119">In the property pane on the right, copy the public URL of the favicon.</span></span> <span data-ttu-id="733fe-120">Du kommer att använda denna URL senare.</span><span class="sxs-lookup"><span data-stu-id="733fe-120">You will use this URL later.</span></span>
 
-## <a name="create-the-html-for-your-favicon"></a><span data-ttu-id="c88d6-121">Skapa HTML för din favicon</span><span class="sxs-lookup"><span data-stu-id="c88d6-121">Create the HTML for your favicon</span></span>
+## <a name="create-the-html-for-your-favicon"></a><span data-ttu-id="733fe-121">Skapa HTML för din favicon</span><span class="sxs-lookup"><span data-stu-id="733fe-121">Create the HTML for your favicon</span></span>
 
-<span data-ttu-id="c88d6-122">Om du vill skapa HTML för favicon använder du följande HTML-sträng.</span><span class="sxs-lookup"><span data-stu-id="c88d6-122">To create the HTML for the favicon, use the following HTML string.</span></span> <span data-ttu-id="c88d6-123">För attributet **href**, ersätt **Public\_URL\_for\_your\_favicon** med den offentliga URL som du kopierade tidigare.</span><span class="sxs-lookup"><span data-stu-id="c88d6-123">For the **href** attribute, replace **Public\_URL\_for\_your\_favicon** with the public URL that you copied earlier.</span></span>
+<span data-ttu-id="733fe-122">Om du vill skapa HTML för favicon använder du följande HTML-sträng.</span><span class="sxs-lookup"><span data-stu-id="733fe-122">To create the HTML for the favicon, use the following HTML string.</span></span> <span data-ttu-id="733fe-123">För attributet **href**, ersätt **Public\_URL\_for\_your\_favicon** med den offentliga URL som du kopierade tidigare.</span><span class="sxs-lookup"><span data-stu-id="733fe-123">For the **href** attribute, replace **Public\_URL\_for\_your\_favicon** with the public URL that you copied earlier.</span></span>
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="create-a-fragment-that-contains-a-metatag-for-your-favicon"></a><span data-ttu-id="c88d6-124">Skapa ett fragment som innehåller en metatagg för din favicon</span><span class="sxs-lookup"><span data-stu-id="c88d6-124">Create a fragment that contains a metatag for your favicon</span></span>
+## <a name="create-a-fragment-that-contains-a-metatag-for-your-favicon"></a><span data-ttu-id="733fe-124">Skapa ett fragment som innehåller en metatagg för din favicon</span><span class="sxs-lookup"><span data-stu-id="733fe-124">Create a fragment that contains a metatag for your favicon</span></span>
 
-<span data-ttu-id="c88d6-125">För att skapa ett fragment som innehåller en metatagg för din favicon ska du följa dessa steg.</span><span class="sxs-lookup"><span data-stu-id="c88d6-125">To create a fragment that contains a metatag for your favicon, follow these steps.</span></span>
+<span data-ttu-id="733fe-125">För att skapa ett fragment som innehåller en metatagg för din favicon ska du följa dessa steg.</span><span class="sxs-lookup"><span data-stu-id="733fe-125">To create a fragment that contains a metatag for your favicon, follow these steps.</span></span>
 
-1. <span data-ttu-id="c88d6-126">Gå till **Fragment** och välj sedan **Nytt**.</span><span class="sxs-lookup"><span data-stu-id="c88d6-126">Go to **Fragments**, and select **New**.</span></span>
-1. <span data-ttu-id="c88d6-127">I dialogrutan **Nytt fragment** markerar du **Metataggar** som modulen fragment är baserat på.</span><span class="sxs-lookup"><span data-stu-id="c88d6-127">In the **New fragment** dialog box, select **Metatags** as the module that the fragment is based on.</span></span>
-1. <span data-ttu-id="c88d6-128">Ange ett namn på fragment och välj sedan **OK**.</span><span class="sxs-lookup"><span data-stu-id="c88d6-128">Enter a name for the fragment, and then select **OK**.</span></span>
-1. <span data-ttu-id="c88d6-129">I trädet för fragmentets hierarki väljer du underordnade **Standard metataggar**.</span><span class="sxs-lookup"><span data-stu-id="c88d6-129">In the fragment hierarchy tree, select the **Default metatags** child.</span></span>
-1. <span data-ttu-id="c88d6-130">I det högra fönstret, under **Metataggar**, väljer du **Lägg till** och anger sedan den HTML-sträng som du skapade tidigare för favicon.</span><span class="sxs-lookup"><span data-stu-id="c88d6-130">In the right pane, under **Meta Tags**, select **Add**, and then enter the HTML string that you created earlier for the favicon.</span></span> 
-1. <span data-ttu-id="c88d6-131">Välj **Slutför redigering** och välj sedan **Publicera** för att publicera fragment.</span><span class="sxs-lookup"><span data-stu-id="c88d6-131">Select **Finish editing**, and then select **Publish** to publish the fragment.</span></span>
+1. <span data-ttu-id="733fe-126">Gå till **Fragment** och välj sedan **Nytt**.</span><span class="sxs-lookup"><span data-stu-id="733fe-126">Go to **Fragments**, and select **New**.</span></span>
+1. <span data-ttu-id="733fe-127">I dialogrutan **Nytt fragment** markerar du **Metataggar** som modulen fragment är baserat på.</span><span class="sxs-lookup"><span data-stu-id="733fe-127">In the **New fragment** dialog box, select **Metatags** as the module that the fragment is based on.</span></span>
+1. <span data-ttu-id="733fe-128">Ange ett namn på fragment och välj sedan **OK**.</span><span class="sxs-lookup"><span data-stu-id="733fe-128">Enter a name for the fragment, and then select **OK**.</span></span>
+1. <span data-ttu-id="733fe-129">I trädet för fragmentets hierarki väljer du underordnade **Standard metataggar**.</span><span class="sxs-lookup"><span data-stu-id="733fe-129">In the fragment hierarchy tree, select the **Default metatags** child.</span></span>
+1. <span data-ttu-id="733fe-130">I det högra fönstret, under **Metataggar**, väljer du **Lägg till** och anger sedan den HTML-sträng som du skapade tidigare för favicon.</span><span class="sxs-lookup"><span data-stu-id="733fe-130">In the right pane, under **Meta Tags**, select **Add**, and then enter the HTML string that you created earlier for the favicon.</span></span> 
+1. <span data-ttu-id="733fe-131">Välj **Slutför redigering** och välj sedan **Publicera** för att publicera fragment.</span><span class="sxs-lookup"><span data-stu-id="733fe-131">Select **Finish editing**, and then select **Publish** to publish the fragment.</span></span>
 
-## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a><span data-ttu-id="c88d6-132">Lägg till fragment med metatagg i HTML-huvudet på dina sidor</span><span class="sxs-lookup"><span data-stu-id="c88d6-132">Add the metatag fragment to the HTML head section of your pages</span></span>
+## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a><span data-ttu-id="733fe-132">Lägg till fragment med metatagg i HTML-huvudet på dina sidor</span><span class="sxs-lookup"><span data-stu-id="733fe-132">Add the metatag fragment to the HTML head section of your pages</span></span>
 
-<span data-ttu-id="c88d6-133">För att lägga till fragment med metatagg i HTML-**huvudet** på dina sidor ska du följa dessa steg</span><span class="sxs-lookup"><span data-stu-id="c88d6-133">To add the metatag fragment to the HTML **head** section of your pages, follow these steps.</span></span>
+<span data-ttu-id="733fe-133">För att lägga till fragment med metatagg i HTML-**huvudet** på dina sidor ska du följa dessa steg</span><span class="sxs-lookup"><span data-stu-id="733fe-133">To add the metatag fragment to the HTML **head** section of your pages, follow these steps.</span></span>
 
-1. <span data-ttu-id="c88d6-134">Gå till **Mallar** och öppna mallen för sidorna som du vill lägga till din favicon i och välj sedan **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="c88d6-134">Go to **Templates**, open the template for the pages that you want to add your favicon to, and then select **Edit**.</span></span>
-1. <span data-ttu-id="c88d6-135">I trädet för mallhierarkin väljer du ellipsknappen (**...**) till höger om behållaren för **HTML-huvud** och väljer **Lägg till fragment**.</span><span class="sxs-lookup"><span data-stu-id="c88d6-135">In the template hierarchy tree, select the ellipsis (**...**) button to the right of the **HTML head** container, and then select **Add fragment**.</span></span>
-1. <span data-ttu-id="c88d6-136">I dialogrutan **Välj fragment** väljer du det metatagfragment som du skapade tidigare och väljer sedan **OK**.</span><span class="sxs-lookup"><span data-stu-id="c88d6-136">In the **Select fragment** dialog box, select the metatag fragment that you created earlier, and then select **OK**.</span></span>
-1. <span data-ttu-id="c88d6-137">Välj **Slutför redigering** och välj sedan **Publicera** för att publicera mallen.</span><span class="sxs-lookup"><span data-stu-id="c88d6-137">Select **Finish editing**, and then select **Publish** to publish the template.</span></span>
+1. <span data-ttu-id="733fe-134">Gå till **Mallar** och öppna mallen för sidorna som du vill lägga till din favicon i och välj sedan **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="733fe-134">Go to **Templates**, open the template for the pages that you want to add your favicon to, and then select **Edit**.</span></span>
+1. <span data-ttu-id="733fe-135">I trädet för mallhierarkin väljer du ellipsknappen (**...**) till höger om behållaren för **HTML-huvud** och väljer **Lägg till fragment**.</span><span class="sxs-lookup"><span data-stu-id="733fe-135">In the template hierarchy tree, select the ellipsis (**...**) button to the right of the **HTML head** container, and then select **Add fragment**.</span></span>
+1. <span data-ttu-id="733fe-136">I dialogrutan **Välj fragment** väljer du det metatagfragment som du skapade tidigare och väljer sedan **OK**.</span><span class="sxs-lookup"><span data-stu-id="733fe-136">In the **Select fragment** dialog box, select the metatag fragment that you created earlier, and then select **OK**.</span></span>
+1. <span data-ttu-id="733fe-137">Välj **Slutför redigering** och välj sedan **Publicera** för att publicera mallen.</span><span class="sxs-lookup"><span data-stu-id="733fe-137">Select **Finish editing**, and then select **Publish** to publish the template.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c88d6-138">Om mer än en mall används på webbplatsen måste du lägga till metatagfragmentet på alla.</span><span class="sxs-lookup"><span data-stu-id="c88d6-138">If your site uses more than one template, you must add the metatags fragment to all of them.</span></span>
+> <span data-ttu-id="733fe-138">Om mer än en mall används på webbplatsen måste du lägga till metatagfragmentet på alla.</span><span class="sxs-lookup"><span data-stu-id="733fe-138">If your site uses more than one template, you must add the metatags fragment to all of them.</span></span>
 
-<span data-ttu-id="c88d6-139">När du förhandsgranskar sidor baserade på den mall som du har lagt till metatagfragmentet till ska du nu se favicon på fliken i webbläsaren.</span><span class="sxs-lookup"><span data-stu-id="c88d6-139">When you preview pages that are based on the template that you added the metatags fragment to, you should now see the favicon on the browser tab.</span></span>
+<span data-ttu-id="733fe-139">När du förhandsgranskar sidor baserade på den mall som du har lagt till metatagfragmentet till ska du nu se favicon på fliken i webbläsaren.</span><span class="sxs-lookup"><span data-stu-id="733fe-139">When you preview pages that are based on the template that you added the metatags fragment to, you should now see the favicon on the browser tab.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="c88d6-140">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="c88d6-140">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="733fe-140">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="733fe-140">Additional resources</span></span>
 
-[<span data-ttu-id="c88d6-141">Lägga till en logotyp</span><span class="sxs-lookup"><span data-stu-id="c88d6-141">Add a logo</span></span>](add-logo.md)
+[<span data-ttu-id="733fe-141">Lägga till en logotyp</span><span class="sxs-lookup"><span data-stu-id="733fe-141">Add a logo</span></span>](add-logo.md)
 
-[<span data-ttu-id="c88d6-142">Välja ett tema för webbplatsen</span><span class="sxs-lookup"><span data-stu-id="c88d6-142">Select a site theme</span></span>](select-site-theme.md)
+[<span data-ttu-id="733fe-142">Välja ett tema för webbplatsen</span><span class="sxs-lookup"><span data-stu-id="733fe-142">Select a site theme</span></span>](select-site-theme.md)
 
-[<span data-ttu-id="c88d6-143">Arbeta med CSS åsidosättningsfiler</span><span class="sxs-lookup"><span data-stu-id="c88d6-143">Work with CSS override files</span></span>](css-override-files.md)
+[<span data-ttu-id="733fe-143">Arbeta med CSS åsidosättningsfiler</span><span class="sxs-lookup"><span data-stu-id="733fe-143">Work with CSS override files</span></span>](css-override-files.md)
 
-[<span data-ttu-id="c88d6-144">Lägg till ett välkomstmeddelande</span><span class="sxs-lookup"><span data-stu-id="c88d6-144">Add a welcome message</span></span>](add-welcome-message.md)
+[<span data-ttu-id="733fe-144">Lägg till ett välkomstmeddelande</span><span class="sxs-lookup"><span data-stu-id="733fe-144">Add a welcome message</span></span>](add-welcome-message.md)
 
-[<span data-ttu-id="c88d6-145">Lägg till copyrightmeddelande</span><span class="sxs-lookup"><span data-stu-id="c88d6-145">Add a copyright notice</span></span>](add-copyright-notice.md)
+[<span data-ttu-id="733fe-145">Lägg till copyrightmeddelande</span><span class="sxs-lookup"><span data-stu-id="733fe-145">Add a copyright notice</span></span>](add-copyright-notice.md)
 
-[<span data-ttu-id="c88d6-146">Lägg till språk på din webbplats</span><span class="sxs-lookup"><span data-stu-id="c88d6-146">Add languages to your site</span></span>](add-languages-to-site.md)
+[<span data-ttu-id="733fe-146">Lägg till språk på din webbplats</span><span class="sxs-lookup"><span data-stu-id="733fe-146">Add languages to your site</span></span>](add-languages-to-site.md)
 
-[<span data-ttu-id="c88d6-147">Lägga till skriptkod på webbsidor för att stödja telemetri</span><span class="sxs-lookup"><span data-stu-id="c88d6-147">Add script code to site pages to support telemetry</span></span>](add-telemetry.md)
+[<span data-ttu-id="733fe-147">Lägga till skriptkod på webbsidor för att stödja telemetri</span><span class="sxs-lookup"><span data-stu-id="733fe-147">Add script code to site pages to support telemetry</span></span>](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
