@@ -17,36 +17,39 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b450dde5e9028d4a1eab671bbec240fd33dfb7e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: aec2344c27bc645ada53dcec61f519920838c604
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006551"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5220714"
 ---
-# <a name="prioritize-service-orders"></a><span data-ttu-id="876bb-103">Prioritera serviceorder</span><span class="sxs-lookup"><span data-stu-id="876bb-103">Prioritize service orders</span></span> 
+# <a name="prioritize-service-orders"></a><span data-ttu-id="57c1f-103">Prioritera serviceorder</span><span class="sxs-lookup"><span data-stu-id="57c1f-103">Prioritize service orders</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="876bb-104">Klicka på **Servicehantering** \> **Periodisk** \> **Utförseltavla**.</span><span class="sxs-lookup"><span data-stu-id="876bb-104">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
+1.  <span data-ttu-id="57c1f-104">Klicka på **Servicehantering** \> **Periodisk** \> **Utförseltavla**.</span><span class="sxs-lookup"><span data-stu-id="57c1f-104">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
 
-2.  <span data-ttu-id="876bb-105">Klicka på **Advancerad** för att visa Gantt-duagrammet överst i formuläret och flikarna i det nedre fönstret.</span><span class="sxs-lookup"><span data-stu-id="876bb-105">Click **Advanced** to display the Gantt chart at the top of the form and the tabs in the lower pane.</span></span>
+2.  <span data-ttu-id="57c1f-105">Klicka på **Advancerad** för att visa Gantt-duagrammet överst i formuläret och flikarna i det nedre fönstret.</span><span class="sxs-lookup"><span data-stu-id="57c1f-105">Click **Advanced** to display the Gantt chart at the top of the form and the tabs in the lower pane.</span></span>
 
-3.  <span data-ttu-id="876bb-106">Expandera de olika serviceteamlistorna.</span><span class="sxs-lookup"><span data-stu-id="876bb-106">Expand each dispatch team list.</span></span>
+3.  <span data-ttu-id="57c1f-106">Expandera de olika serviceteamlistorna.</span><span class="sxs-lookup"><span data-stu-id="57c1f-106">Expand each dispatch team list.</span></span>
 
-4.  <span data-ttu-id="876bb-107">Markera den färgkodade grafik som representerar en serviceaktivitet.</span><span class="sxs-lookup"><span data-stu-id="876bb-107">Select the color-coded graphic that represents a service activity.</span></span>
+4.  <span data-ttu-id="57c1f-107">Markera den färgkodade grafik som representerar en serviceaktivitet.</span><span class="sxs-lookup"><span data-stu-id="57c1f-107">Select the color-coded graphic that represents a service activity.</span></span>
 
-5.  <span data-ttu-id="876bb-108">På fliken **Alla** fliken **Team** fliken **Ej skickad** eller fliken **Relaterad** ändra valet i fältet **Prioritet**.</span><span class="sxs-lookup"><span data-stu-id="876bb-108">On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, change the selection in the **Priority** field.</span></span>
+5.  <span data-ttu-id="57c1f-108">På fliken **Alla** fliken **Team** fliken **Ej skickad** eller fliken **Relaterad** ändra valet i fältet **Prioritet**.</span><span class="sxs-lookup"><span data-stu-id="57c1f-108">On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, change the selection in the **Priority** field.</span></span>
 
-6.  <span data-ttu-id="876bb-109">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="876bb-109">Click **Save**.</span></span>
+6.  <span data-ttu-id="57c1f-109">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="57c1f-109">Click **Save**.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="876bb-110">Se även</span><span class="sxs-lookup"><span data-stu-id="876bb-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="57c1f-110">Se även</span><span class="sxs-lookup"><span data-stu-id="57c1f-110">See also</span></span>
 
-[<span data-ttu-id="876bb-111">Utförseltavla</span><span class="sxs-lookup"><span data-stu-id="876bb-111">Dispatch board</span></span>](dispatch-board.md)
+[<span data-ttu-id="57c1f-111">Utförseltavla</span><span class="sxs-lookup"><span data-stu-id="57c1f-111">Dispatch board</span></span>](dispatch-board.md)
 
-[<span data-ttu-id="876bb-112">Visa status för serviceorder</span><span class="sxs-lookup"><span data-stu-id="876bb-112">View the status of service orders</span></span>](view-the-status-of-service-orders.md)
+[<span data-ttu-id="57c1f-112">Visa status för serviceorder</span><span class="sxs-lookup"><span data-stu-id="57c1f-112">View the status of service orders</span></span>](view-the-status-of-service-orders.md)
 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

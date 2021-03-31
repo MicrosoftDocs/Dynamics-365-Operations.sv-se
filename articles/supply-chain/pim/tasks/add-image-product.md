@@ -15,24 +15,27 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd18d93c53a213b1b110da27c601590cabd17d4d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f36ea345a436a4ea24e6a57f3b9364a9095beb4b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987089"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218667"
 ---
-# <a name="add-an-image-to-a-product"></a><span data-ttu-id="05818-103">Lägg till en bild till en produkt</span><span class="sxs-lookup"><span data-stu-id="05818-103">Add an image to a product</span></span>
+# <a name="add-an-image-to-a-product"></a><span data-ttu-id="6187f-103">Lägg till en bild till en produkt</span><span class="sxs-lookup"><span data-stu-id="6187f-103">Add an image to a product</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="05818-104">I den här proceduren visas hur du lägger till en bild till en produkt. Det demonstrationdataföretag som använts för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="05818-104">This procedure shows how to add an image to a product The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="6187f-104">I den här proceduren visas hur du lägger till en bild till en produkt. Det demonstrationdataföretag som använts för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="6187f-104">This procedure shows how to add an image to a product The demo data company used to create this task is USMF.</span></span>
 
-1. <span data-ttu-id="05818-105">Gå till Produktinformationshantering > Produkter > Frisläppta produkter.</span><span class="sxs-lookup"><span data-stu-id="05818-105">Go to Product information management > Products > Released products.</span></span>
-2. <span data-ttu-id="05818-106">Expandera faktaboxen för produktbilden.</span><span class="sxs-lookup"><span data-stu-id="05818-106">Expand the Product image FactBox.</span></span>
-3. <span data-ttu-id="05818-107">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="05818-107">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="05818-108">Välj exempelvis artikelnummer C0002.</span><span class="sxs-lookup"><span data-stu-id="05818-108">For example, select the item number C0002.</span></span>  
-4. <span data-ttu-id="05818-109">Klicka på Change image.</span><span class="sxs-lookup"><span data-stu-id="05818-109">Click Change image.</span></span>
-5. <span data-ttu-id="05818-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="05818-110">Click New.</span></span>
-    * <span data-ttu-id="05818-111">Klicka på Bläddra.</span><span class="sxs-lookup"><span data-stu-id="05818-111">Click Browse.</span></span> <span data-ttu-id="05818-112">Hitta den bild som du vill använda, markera den och stäng sedan dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="05818-112">Find the image that you want to use, select it, and then close the dialog box.</span></span>    
+1. <span data-ttu-id="6187f-105">Gå till Produktinformationshantering > Produkter > Frisläppta produkter.</span><span class="sxs-lookup"><span data-stu-id="6187f-105">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="6187f-106">Expandera faktaboxen för produktbilden.</span><span class="sxs-lookup"><span data-stu-id="6187f-106">Expand the Product image FactBox.</span></span>
+3. <span data-ttu-id="6187f-107">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="6187f-107">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="6187f-108">Välj exempelvis artikelnummer C0002.</span><span class="sxs-lookup"><span data-stu-id="6187f-108">For example, select the item number C0002.</span></span>  
+4. <span data-ttu-id="6187f-109">Klicka på Change image.</span><span class="sxs-lookup"><span data-stu-id="6187f-109">Click Change image.</span></span>
+5. <span data-ttu-id="6187f-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="6187f-110">Click New.</span></span>
+    * <span data-ttu-id="6187f-111">Klicka på Bläddra.</span><span class="sxs-lookup"><span data-stu-id="6187f-111">Click Browse.</span></span> <span data-ttu-id="6187f-112">Hitta den bild som du vill använda, markera den och stäng sedan dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="6187f-112">Find the image that you want to use, select it, and then close the dialog box.</span></span>    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
