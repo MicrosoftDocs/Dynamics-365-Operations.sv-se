@@ -13,12 +13,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 6b69e36e77ecc8c4a3ab9cc1a20ae0f5beaface5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d48aab4692dd61080c7887301ee78ee5b986498f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978368"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5223960"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-administrators"></a>Utbildningskatalog för administratörer för Dynamics 365 Finance
 
@@ -71,7 +71,7 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | Innehåll  | beskrivning   | Format  | Längd    |
 |----------|---------------|---------|-----------|
 | [Finance and Operations: Funktionshantering (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | Tekniksnack om funktionshanteringsupplevelsen. Här finns en arbetsyta där du kan visa, aktivera, inaktivera och schemalägga funktioner som har levererats i varje utgåva. Nya funktionen är avstängda som standard. Du kan använda arbetsytan för att aktivera dem och visa dokumentationen för dem. Delta i det här mötet för att se vad som levereras i 10.0.3 och våra planer för framtida versioner. | Fri registrering av en webbkonferens | 47 minuter |
-| [Finance and Operations: Underhåll, support och underhåll av produktion (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Tekniksnack om hur du effektivt kan stödja, underhålla och använda din Dynamics 365 for Finance and Operations produktionsmiljö. | Fri registrering av en webbkonferens | 53 minuter |
+| [Finance and Operations: Underhåll, support och underhåll av produktion (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Tekniksnack om hur du effektivt kan stödja, underhålla och serva din Dynamics 365 for Finance and Operations produktionsmiljö. | Fri registrering av en webbkonferens | 53 minuter |
 | [Finance And Operations: Microsoft hanterar kontinuerliga uppdateringar (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Den kontinuerliga uppdateringsmiljön för Finance and Operations har startat! Var med oss under denna timme för att diskutera Microsoft hanterar kontinuerliga uppdateringar, användarupplevelsen som redan finns i Lifecycle Services och kommande uppdateringar. | Fri registrering av en webbkonferens | 61 minuter |
 | [Microsoft hanterar kontinuerliga uppdateringar: Nyheter (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | Under denna tid ska vi förklara vad som är nytt sedan våra ursprungliga meddelanden om Microsoft hanterade kontinuerliga uppdateringar. Vi kommer att diskutera uppdateringstakt, hur vi har svarat på din värdefulla feedback om processen och ta en titt på den kommande Lifecycle Services-användarupplevelsen som du kan använda för att hantera dina uppdateringar. | Fri registrering av en webbkonferens | 56 minuter |
 | [Microsoft hanterar kontinuerliga uppdateringar (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | Vi kommer att diskutera Microsofts planer för att hålla ditt system aktuellt med den senaste versionen. Vi kommer att täcka tidsrader, regelbundet för större och mindre uppdateringar, planerade procedurer, följder och vad du bör göra för optimala resultat. | Fri registrering av en webbkonferens | 62 minuter |
