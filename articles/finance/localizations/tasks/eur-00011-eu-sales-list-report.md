@@ -15,88 +15,91 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4d2f2b0232666694788abb08b05408f725a1f8e5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fdedf153ae17ac90032e8998ce3b97ba9b734b64
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5009086"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227987"
 ---
-# <a name="eur-00011-generate-the-eu-sales-list-report"></a><span data-ttu-id="8b5d2-103">EUR-00011 Skapa rapport med lista över försäljning inom EU</span><span class="sxs-lookup"><span data-stu-id="8b5d2-103">EUR-00011 Generate the EU sales list report</span></span>
+# <a name="eur-00011-generate-the-eu-sales-list-report"></a><span data-ttu-id="f3277-103">EUR-00011 Skapa rapport med lista över försäljning inom EU</span><span class="sxs-lookup"><span data-stu-id="f3277-103">EUR-00011 Generate the EU sales list report</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="8b5d2-104">Den här proceduren går igenom hur du kan skapa en EU-försäljningslisterapport.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-104">This procedure walks you through generating the EU sales list report.</span></span> <span data-ttu-id="8b5d2-105">Detta inkluderar överföring av transaktioner för inomeuropeisk handel till EU-försäljningslistan och körning av rapporten.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-105">This includes transferring intra-community trade transactions to the EU sales list and running the report.</span></span> <span data-ttu-id="8b5d2-106">Proceduren innehåller även generering av en transaktion för inomeuropeisk handel för demonstration.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-106">This procedure also includes creating an intra-community trade transaction for demo purposes.</span></span> <span data-ttu-id="8b5d2-107">Mer information om rapportering av EU-säljlista, inklusive nödvändiga krav, finns i hjälpen.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-107">For more information about EU Sales list reporting, including required prerequisites, refer to Help.</span></span>
+<span data-ttu-id="f3277-104">Den här proceduren går igenom hur du kan skapa en EU-försäljningslisterapport.</span><span class="sxs-lookup"><span data-stu-id="f3277-104">This procedure walks you through generating the EU sales list report.</span></span> <span data-ttu-id="f3277-105">Detta inkluderar överföring av transaktioner för inomeuropeisk handel till EU-försäljningslistan och körning av rapporten.</span><span class="sxs-lookup"><span data-stu-id="f3277-105">This includes transferring intra-community trade transactions to the EU sales list and running the report.</span></span> <span data-ttu-id="f3277-106">Proceduren innehåller även generering av en transaktion för inomeuropeisk handel för demonstration.</span><span class="sxs-lookup"><span data-stu-id="f3277-106">This procedure also includes creating an intra-community trade transaction for demo purposes.</span></span> <span data-ttu-id="f3277-107">Mer information om rapportering av EU-säljlista, inklusive nödvändiga krav, finns i hjälpen.</span><span class="sxs-lookup"><span data-stu-id="f3277-107">For more information about EU Sales list reporting, including required prerequisites, refer to Help.</span></span>
 
-<span data-ttu-id="8b5d2-108">Den här proceduren gäller för alla europeiska länder/regioner.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-108">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="8b5d2-109">Proceduren skapades med hjälp av demonstrationsföretaget DEMF och därför används Tyskland som exempelursprungsland.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-109">The procedure was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region.</span></span> <span data-ttu-id="8b5d2-110">Proceduren använder också Portugal som exempel på ett EU-land.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-110">The procedure also uses Portugal as an exemplar EU country/region.</span></span> <span data-ttu-id="8b5d2-111">Innan du kan slutföra proceduren, måste du konfigurera rapporteringen av EU-försäljningslistan.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-111">Before you can complete this procedure, you must configure EU sales list reporting.</span></span>
+<span data-ttu-id="f3277-108">Den här proceduren gäller för alla europeiska länder/regioner.</span><span class="sxs-lookup"><span data-stu-id="f3277-108">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="f3277-109">Proceduren skapades med hjälp av demonstrationsföretaget DEMF och därför används Tyskland som exempelursprungsland.</span><span class="sxs-lookup"><span data-stu-id="f3277-109">The procedure was created using the demo data company DEMF and consequently Germany as an exemplar domestic country/region.</span></span> <span data-ttu-id="f3277-110">Proceduren använder också Portugal som exempel på ett EU-land.</span><span class="sxs-lookup"><span data-stu-id="f3277-110">The procedure also uses Portugal as an exemplar EU country/region.</span></span> <span data-ttu-id="f3277-111">Innan du kan slutföra proceduren, måste du konfigurera rapporteringen av EU-försäljningslistan.</span><span class="sxs-lookup"><span data-stu-id="f3277-111">Before you can complete this procedure, you must configure EU sales list reporting.</span></span>
 
-<span data-ttu-id="8b5d2-112">Proceduren är avsedd för kamrerer.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-112">This procedure is intended for accountants.</span></span>
+<span data-ttu-id="f3277-112">Proceduren är avsedd för kamrerer.</span><span class="sxs-lookup"><span data-stu-id="f3277-112">This procedure is intended for accountants.</span></span>
 
 
-## <a name="create-an-intra-community-sales-transaction-for-demo-purposes"></a><span data-ttu-id="8b5d2-113">Skapa en inomeuropeisk försäljningstransaktion för demonstration</span><span class="sxs-lookup"><span data-stu-id="8b5d2-113">Create an intra-community sales transaction for demo purposes</span></span>
-1. <span data-ttu-id="8b5d2-114">Gå till Leverantörsreskontra > Order > Alla försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-114">Go to Accounts receivable > Orders > All sales orders.</span></span>
-2. <span data-ttu-id="8b5d2-115">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-115">Click New.</span></span>
-3. <span data-ttu-id="8b5d2-116">Skriv PRT-001 i fältet Kundkonto.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-116">In the Customer account field, type 'PRT-001'.</span></span>
-4. <span data-ttu-id="8b5d2-117">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-117">Click OK.</span></span>
-5. <span data-ttu-id="8b5d2-118">Skriv "D0001" i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-118">In the Item number field, type 'D0001'.</span></span>
-6. <span data-ttu-id="8b5d2-119">Expandera avsnittet Radinformation.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-119">Expand the Line details section.</span></span>
-7. <span data-ttu-id="8b5d2-120">Klicka på fliken Inställningar.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-120">Click the Setup tab.</span></span>
-8. <span data-ttu-id="8b5d2-121">Skriv FULL i fältet Artikelmomsgrupp.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-121">In the Item sales tax group field, type 'FULL'.</span></span>
-9. <span data-ttu-id="8b5d2-122">Klicka på Lägg till rad.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-122">Click Add line.</span></span>
-10. <span data-ttu-id="8b5d2-123">Skriv "D0003" i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-123">In the Item number field, type 'D0003'.</span></span>
-11. <span data-ttu-id="8b5d2-124">Skriv RED i fältet Artikelmomsgrupp.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-124">In the Item sales tax group field, type 'RED'.</span></span>
-12. <span data-ttu-id="8b5d2-125">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-125">Click Save.</span></span>
-13. <span data-ttu-id="8b5d2-126">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-126">On the Action Pane, click Invoice.</span></span>
-14. <span data-ttu-id="8b5d2-127">Klicka på Faktura.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-127">Click Invoice.</span></span>
-15. <span data-ttu-id="8b5d2-128">Expandera avsnittet Parametrar.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-128">Expand the Parameters section.</span></span>
-16. <span data-ttu-id="8b5d2-129">Välj Alla i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-129">In the Quantity field, select 'All'.</span></span>
-17. <span data-ttu-id="8b5d2-130">Expandera avsnittet Inställningar.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-130">Expand the Setup section.</span></span>
-18. <span data-ttu-id="8b5d2-131">Ange datumet 01-11-2016 i fältet Fakturadatum.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-131">In the Invoice date field, set the date to '01/11/2016'.</span></span>
-19. <span data-ttu-id="8b5d2-132">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-132">Click OK.</span></span>
-20. <span data-ttu-id="8b5d2-133">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-133">Click OK.</span></span>
+## <a name="create-an-intra-community-sales-transaction-for-demo-purposes"></a><span data-ttu-id="f3277-113">Skapa en inomeuropeisk försäljningstransaktion för demonstration</span><span class="sxs-lookup"><span data-stu-id="f3277-113">Create an intra-community sales transaction for demo purposes</span></span>
+1. <span data-ttu-id="f3277-114">Gå till Leverantörsreskontra > Order > Alla försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="f3277-114">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="f3277-115">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f3277-115">Click New.</span></span>
+3. <span data-ttu-id="f3277-116">Skriv PRT-001 i fältet Kundkonto.</span><span class="sxs-lookup"><span data-stu-id="f3277-116">In the Customer account field, type 'PRT-001'.</span></span>
+4. <span data-ttu-id="f3277-117">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="f3277-117">Click OK.</span></span>
+5. <span data-ttu-id="f3277-118">Skriv "D0001" i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="f3277-118">In the Item number field, type 'D0001'.</span></span>
+6. <span data-ttu-id="f3277-119">Expandera avsnittet Radinformation.</span><span class="sxs-lookup"><span data-stu-id="f3277-119">Expand the Line details section.</span></span>
+7. <span data-ttu-id="f3277-120">Klicka på fliken Inställningar.</span><span class="sxs-lookup"><span data-stu-id="f3277-120">Click the Setup tab.</span></span>
+8. <span data-ttu-id="f3277-121">Skriv FULL i fältet Artikelmomsgrupp.</span><span class="sxs-lookup"><span data-stu-id="f3277-121">In the Item sales tax group field, type 'FULL'.</span></span>
+9. <span data-ttu-id="f3277-122">Klicka på Lägg till rad.</span><span class="sxs-lookup"><span data-stu-id="f3277-122">Click Add line.</span></span>
+10. <span data-ttu-id="f3277-123">Skriv "D0003" i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="f3277-123">In the Item number field, type 'D0003'.</span></span>
+11. <span data-ttu-id="f3277-124">Skriv RED i fältet Artikelmomsgrupp.</span><span class="sxs-lookup"><span data-stu-id="f3277-124">In the Item sales tax group field, type 'RED'.</span></span>
+12. <span data-ttu-id="f3277-125">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f3277-125">Click Save.</span></span>
+13. <span data-ttu-id="f3277-126">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="f3277-126">On the Action Pane, click Invoice.</span></span>
+14. <span data-ttu-id="f3277-127">Klicka på Faktura.</span><span class="sxs-lookup"><span data-stu-id="f3277-127">Click Invoice.</span></span>
+15. <span data-ttu-id="f3277-128">Expandera avsnittet Parametrar.</span><span class="sxs-lookup"><span data-stu-id="f3277-128">Expand the Parameters section.</span></span>
+16. <span data-ttu-id="f3277-129">Välj Alla i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="f3277-129">In the Quantity field, select 'All'.</span></span>
+17. <span data-ttu-id="f3277-130">Expandera avsnittet Inställningar.</span><span class="sxs-lookup"><span data-stu-id="f3277-130">Expand the Setup section.</span></span>
+18. <span data-ttu-id="f3277-131">Ange datumet 01-11-2016 i fältet Fakturadatum.</span><span class="sxs-lookup"><span data-stu-id="f3277-131">In the Invoice date field, set the date to '01/11/2016'.</span></span>
+19. <span data-ttu-id="f3277-132">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="f3277-132">Click OK.</span></span>
+20. <span data-ttu-id="f3277-133">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="f3277-133">Click OK.</span></span>
 
-## <a name="transfer-intra-community-trade-transactions-to-the-eu-sales-list"></a><span data-ttu-id="8b5d2-134">Överför transaktioner för inomeuropeisk handel till listan över försäljning inom EU</span><span class="sxs-lookup"><span data-stu-id="8b5d2-134">Transfer intra-community trade transactions to the EU sales list</span></span>
-1. <span data-ttu-id="8b5d2-135">Gå till Moms > Deklarationer > Utländsk handel > Lista över försäljning inom EU.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-135">Go to Tax > Declarations > Foreign trade > EU sales list.</span></span>
-2. <span data-ttu-id="8b5d2-136">Klicka på Överför.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-136">Click Transfer.</span></span>
-3. <span data-ttu-id="8b5d2-137">Välj Ja i fältet Artikel om du vill överföra artikeltransaktioner.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-137">Select Yes in the Item field to transfer item transactions.</span></span>
-4. <span data-ttu-id="8b5d2-138">Välj Ja i fältet Tjänst om du vill överföra tjänsttransaktioner.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-138">Select Yes in the Service field to transfer service transactions.</span></span>
-    * <span data-ttu-id="8b5d2-139">Du kan även ange ytterligare filter för transaktioner i inomeuropeisk handel du vill överföra.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-139">You can also specify additional filters on intra-community trade transactions to transfer.</span></span>  
-5. <span data-ttu-id="8b5d2-140">Klicka på Överför.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-140">Click Transfer.</span></span>
-    * <span data-ttu-id="8b5d2-141">Kontrollera att den inomeuropeiska försäljningstransaktionen överförs till EU-försäljningslistan.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-141">Verify that the intra-community sales transaction is successfully transferred to the EU sales list.</span></span>  
+## <a name="transfer-intra-community-trade-transactions-to-the-eu-sales-list"></a><span data-ttu-id="f3277-134">Överför transaktioner för inomeuropeisk handel till listan över försäljning inom EU</span><span class="sxs-lookup"><span data-stu-id="f3277-134">Transfer intra-community trade transactions to the EU sales list</span></span>
+1. <span data-ttu-id="f3277-135">Gå till Moms > Deklarationer > Utländsk handel > Lista över försäljning inom EU.</span><span class="sxs-lookup"><span data-stu-id="f3277-135">Go to Tax > Declarations > Foreign trade > EU sales list.</span></span>
+2. <span data-ttu-id="f3277-136">Klicka på Överför.</span><span class="sxs-lookup"><span data-stu-id="f3277-136">Click Transfer.</span></span>
+3. <span data-ttu-id="f3277-137">Välj Ja i fältet Artikel om du vill överföra artikeltransaktioner.</span><span class="sxs-lookup"><span data-stu-id="f3277-137">Select Yes in the Item field to transfer item transactions.</span></span>
+4. <span data-ttu-id="f3277-138">Välj Ja i fältet Tjänst om du vill överföra tjänsttransaktioner.</span><span class="sxs-lookup"><span data-stu-id="f3277-138">Select Yes in the Service field to transfer service transactions.</span></span>
+    * <span data-ttu-id="f3277-139">Du kan även ange ytterligare filter för transaktioner i inomeuropeisk handel du vill överföra.</span><span class="sxs-lookup"><span data-stu-id="f3277-139">You can also specify additional filters on intra-community trade transactions to transfer.</span></span>  
+5. <span data-ttu-id="f3277-140">Klicka på Överför.</span><span class="sxs-lookup"><span data-stu-id="f3277-140">Click Transfer.</span></span>
+    * <span data-ttu-id="f3277-141">Kontrollera att den inomeuropeiska försäljningstransaktionen överförs till EU-försäljningslistan.</span><span class="sxs-lookup"><span data-stu-id="f3277-141">Verify that the intra-community sales transaction is successfully transferred to the EU sales list.</span></span>  
 
-## <a name="generate-the-eu-sales-list-report"></a><span data-ttu-id="8b5d2-142">Generera rapport med lista över försäljning inom EU</span><span class="sxs-lookup"><span data-stu-id="8b5d2-142">Generate the EU sales list report</span></span>
-1. <span data-ttu-id="8b5d2-143">Klicka på Rapportering.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-143">Click Reporting.</span></span>
-2. <span data-ttu-id="8b5d2-144">Markera Varje månad i fältet Rapporteringsperiod.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-144">In the Reporting period field, select 'Monthly'.</span></span>
-3. <span data-ttu-id="8b5d2-145">Ange datumet 01-01-2016 i fältet Från datum.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-145">In the From date field, set the date to '01/01/2016'.</span></span>
-4. <span data-ttu-id="8b5d2-146">Välj Ja i fältet Generera fil.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-146">Select Yes in the Generate file field.</span></span>
-5. <span data-ttu-id="8b5d2-147">Välj Ja i fältet Generera rapport.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-147">Select Yes in the Generate report field.</span></span>
-6. <span data-ttu-id="8b5d2-148">Skriv EUSalesList (EU-försäljningslista) i fältet Filnamn.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-148">In the File name field, type 'EUSalesList'.</span></span>
-7. <span data-ttu-id="8b5d2-149">Skriv EUSalesList (EU-försäljningslista) i fältet Rapportfilnamn.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-149">In the Report file name field, type 'EUSalesList'.</span></span>
-8. <span data-ttu-id="8b5d2-150">Skriv 123 i fältet Registrerings-ID för EU-försäljningslista.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-150">In the EU Sales List Registration ID field, type '123'.</span></span>
-    * <span data-ttu-id="8b5d2-151">Det här fältet är bara tillgängligt för Tyskland.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-151">This field is only available for Germany.</span></span>  
-    * <span data-ttu-id="8b5d2-152">Du kan även ange ytterligare filter för transaktioner för inomeuropeisk handel du vill ta med i rapporten.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-152">You can also specify additional filters on intra-community trade transactions to include in the report.</span></span>  
-9. <span data-ttu-id="8b5d2-153">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-153">Click OK.</span></span>
-    * <span data-ttu-id="8b5d2-154">Kontrollera att popup-fönster visas du vill bekräfta att filen och kontrollrapporten hämtas.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-154">Verify that pop-up windows appear to confirm that the file and the control report are being downloaded.</span></span>  
+## <a name="generate-the-eu-sales-list-report"></a><span data-ttu-id="f3277-142">Generera rapport med lista över försäljning inom EU</span><span class="sxs-lookup"><span data-stu-id="f3277-142">Generate the EU sales list report</span></span>
+1. <span data-ttu-id="f3277-143">Klicka på Rapportering.</span><span class="sxs-lookup"><span data-stu-id="f3277-143">Click Reporting.</span></span>
+2. <span data-ttu-id="f3277-144">Markera Varje månad i fältet Rapporteringsperiod.</span><span class="sxs-lookup"><span data-stu-id="f3277-144">In the Reporting period field, select 'Monthly'.</span></span>
+3. <span data-ttu-id="f3277-145">Ange datumet 01-01-2016 i fältet Från datum.</span><span class="sxs-lookup"><span data-stu-id="f3277-145">In the From date field, set the date to '01/01/2016'.</span></span>
+4. <span data-ttu-id="f3277-146">Välj Ja i fältet Generera fil.</span><span class="sxs-lookup"><span data-stu-id="f3277-146">Select Yes in the Generate file field.</span></span>
+5. <span data-ttu-id="f3277-147">Välj Ja i fältet Generera rapport.</span><span class="sxs-lookup"><span data-stu-id="f3277-147">Select Yes in the Generate report field.</span></span>
+6. <span data-ttu-id="f3277-148">Skriv EUSalesList (EU-försäljningslista) i fältet Filnamn.</span><span class="sxs-lookup"><span data-stu-id="f3277-148">In the File name field, type 'EUSalesList'.</span></span>
+7. <span data-ttu-id="f3277-149">Skriv EUSalesList (EU-försäljningslista) i fältet Rapportfilnamn.</span><span class="sxs-lookup"><span data-stu-id="f3277-149">In the Report file name field, type 'EUSalesList'.</span></span>
+8. <span data-ttu-id="f3277-150">Skriv 123 i fältet Registrerings-ID för EU-försäljningslista.</span><span class="sxs-lookup"><span data-stu-id="f3277-150">In the EU Sales List Registration ID field, type '123'.</span></span>
+    * <span data-ttu-id="f3277-151">Det här fältet är bara tillgängligt för Tyskland.</span><span class="sxs-lookup"><span data-stu-id="f3277-151">This field is only available for Germany.</span></span>  
+    * <span data-ttu-id="f3277-152">Du kan även ange ytterligare filter för transaktioner för inomeuropeisk handel du vill ta med i rapporten.</span><span class="sxs-lookup"><span data-stu-id="f3277-152">You can also specify additional filters on intra-community trade transactions to include in the report.</span></span>  
+9. <span data-ttu-id="f3277-153">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="f3277-153">Click OK.</span></span>
+    * <span data-ttu-id="f3277-154">Kontrollera att popup-fönster visas du vill bekräfta att filen och kontrollrapporten hämtas.</span><span class="sxs-lookup"><span data-stu-id="f3277-154">Verify that pop-up windows appear to confirm that the file and the control report are being downloaded.</span></span>  
 
-## <a name="mark-eu-sales-list-lines-as-reported"></a><span data-ttu-id="8b5d2-155">Markera rader i EU-försäljningslistan som rapporterade</span><span class="sxs-lookup"><span data-stu-id="8b5d2-155">Mark EU sales list lines as Reported</span></span>
-1. <span data-ttu-id="8b5d2-156">Klicka på Markera.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-156">Click Mark.</span></span>
-2. <span data-ttu-id="8b5d2-157">Klicka på Markera som rapporterad.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-157">Click Mark as reported.</span></span>
-3. <span data-ttu-id="8b5d2-158">Välj raden för fältet Fakturadatum i listan.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-158">In the list, select the row for the Invoice date field.</span></span>
-4. <span data-ttu-id="8b5d2-159">Skriv 01/01/2016..01/31/2016 i fältet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-159">In the Criteria field, type '01/01/2016..01/31/2016'.</span></span>
-5. <span data-ttu-id="8b5d2-160">Välj raden för fältet Rapporteringsstatus i listan.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-160">In the list, select the row for the Reporting status field.</span></span>
-6. <span data-ttu-id="8b5d2-161">Markera Inkluderat i fältet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-161">In the Criteria field, select 'Included'.</span></span>
-    * <span data-ttu-id="8b5d2-162">Du kan även ange ytterligare filter för transaktioner för inomeuropeisk handel du vill markera som rapporterade.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-162">You can also specify additional filters on intra-community trade transactions to mark as Reported.</span></span>  
-7. <span data-ttu-id="8b5d2-163">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-163">Click OK.</span></span>
-8. <span data-ttu-id="8b5d2-164">Välj Rapportet i fältet för val.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-164">In the Selection field, select 'Reported'.</span></span>
+## <a name="mark-eu-sales-list-lines-as-reported"></a><span data-ttu-id="f3277-155">Markera rader i EU-försäljningslistan som rapporterade</span><span class="sxs-lookup"><span data-stu-id="f3277-155">Mark EU sales list lines as Reported</span></span>
+1. <span data-ttu-id="f3277-156">Klicka på Markera.</span><span class="sxs-lookup"><span data-stu-id="f3277-156">Click Mark.</span></span>
+2. <span data-ttu-id="f3277-157">Klicka på Markera som rapporterad.</span><span class="sxs-lookup"><span data-stu-id="f3277-157">Click Mark as reported.</span></span>
+3. <span data-ttu-id="f3277-158">Välj raden för fältet Fakturadatum i listan.</span><span class="sxs-lookup"><span data-stu-id="f3277-158">In the list, select the row for the Invoice date field.</span></span>
+4. <span data-ttu-id="f3277-159">Skriv 01/01/2016..01/31/2016 i fältet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="f3277-159">In the Criteria field, type '01/01/2016..01/31/2016'.</span></span>
+5. <span data-ttu-id="f3277-160">Välj raden för fältet Rapporteringsstatus i listan.</span><span class="sxs-lookup"><span data-stu-id="f3277-160">In the list, select the row for the Reporting status field.</span></span>
+6. <span data-ttu-id="f3277-161">Markera Inkluderat i fältet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="f3277-161">In the Criteria field, select 'Included'.</span></span>
+    * <span data-ttu-id="f3277-162">Du kan även ange ytterligare filter för transaktioner för inomeuropeisk handel du vill markera som rapporterade.</span><span class="sxs-lookup"><span data-stu-id="f3277-162">You can also specify additional filters on intra-community trade transactions to mark as Reported.</span></span>  
+7. <span data-ttu-id="f3277-163">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="f3277-163">Click OK.</span></span>
+8. <span data-ttu-id="f3277-164">Välj Rapportet i fältet för val.</span><span class="sxs-lookup"><span data-stu-id="f3277-164">In the Selection field, select 'Reported'.</span></span>
 
-## <a name="mark-eu-sales-list-lines-as-closed"></a><span data-ttu-id="8b5d2-165">Markera rader i EU-försäljningslistan som stängda</span><span class="sxs-lookup"><span data-stu-id="8b5d2-165">Mark EU sales list lines as Closed</span></span>
-1. <span data-ttu-id="8b5d2-166">Klicka på Markera.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-166">Click Mark.</span></span>
-2. <span data-ttu-id="8b5d2-167">Klicka på Markera som stängd.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-167">Click Mark as closed.</span></span>
-3. <span data-ttu-id="8b5d2-168">Markera raden för fältet Fakturadatum i listan.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-168">In the list, mark the row for the Invoice date field.</span></span>
-4. <span data-ttu-id="8b5d2-169">Skriv 01/01/2016..01/31/2016 i fältet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-169">In the Criteria field, type '01/01/2016..01/31/2016'.</span></span>
-5. <span data-ttu-id="8b5d2-170">Markera raden för fältet Rapporteringsstatus i listan.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-170">In the list, mark the row for the Reporting status field.</span></span>
-6. <span data-ttu-id="8b5d2-171">Markera Rapporterat i fältet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-171">In the Criteria field, select 'Reported'.</span></span>
-    * <span data-ttu-id="8b5d2-172">Du kan även ange ytterligare filter för transaktioner för inomeuropeisk handel du vill markera som stängda.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-172">You can also specify additional filters on intra-community trade transactions to mark as Closed.</span></span>  
-7. <span data-ttu-id="8b5d2-173">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-173">Click OK.</span></span>
-8. <span data-ttu-id="8b5d2-174">Välj Stängt i fältet för val.</span><span class="sxs-lookup"><span data-stu-id="8b5d2-174">In the Selection field, select 'Closed'.</span></span>
+## <a name="mark-eu-sales-list-lines-as-closed"></a><span data-ttu-id="f3277-165">Markera rader i EU-försäljningslistan som stängda</span><span class="sxs-lookup"><span data-stu-id="f3277-165">Mark EU sales list lines as Closed</span></span>
+1. <span data-ttu-id="f3277-166">Klicka på Markera.</span><span class="sxs-lookup"><span data-stu-id="f3277-166">Click Mark.</span></span>
+2. <span data-ttu-id="f3277-167">Klicka på Markera som stängd.</span><span class="sxs-lookup"><span data-stu-id="f3277-167">Click Mark as closed.</span></span>
+3. <span data-ttu-id="f3277-168">Markera raden för fältet Fakturadatum i listan.</span><span class="sxs-lookup"><span data-stu-id="f3277-168">In the list, mark the row for the Invoice date field.</span></span>
+4. <span data-ttu-id="f3277-169">Skriv 01/01/2016..01/31/2016 i fältet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="f3277-169">In the Criteria field, type '01/01/2016..01/31/2016'.</span></span>
+5. <span data-ttu-id="f3277-170">Markera raden för fältet Rapporteringsstatus i listan.</span><span class="sxs-lookup"><span data-stu-id="f3277-170">In the list, mark the row for the Reporting status field.</span></span>
+6. <span data-ttu-id="f3277-171">Markera Rapporterat i fältet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="f3277-171">In the Criteria field, select 'Reported'.</span></span>
+    * <span data-ttu-id="f3277-172">Du kan även ange ytterligare filter för transaktioner för inomeuropeisk handel du vill markera som stängda.</span><span class="sxs-lookup"><span data-stu-id="f3277-172">You can also specify additional filters on intra-community trade transactions to mark as Closed.</span></span>  
+7. <span data-ttu-id="f3277-173">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="f3277-173">Click OK.</span></span>
+8. <span data-ttu-id="f3277-174">Välj Stängt i fältet för val.</span><span class="sxs-lookup"><span data-stu-id="f3277-174">In the Selection field, select 'Closed'.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
