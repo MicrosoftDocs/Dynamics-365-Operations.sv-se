@@ -15,12 +15,12 @@ ms.search.region: Sweden
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86915a0bc1b7a9399be95f69a5babc15fa32b19d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ba9012c041bc6516eeba06c615894ca74d5f5ef2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012015"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5228053"
 ---
 # <a name="sweden-overview"></a>Sverige – översikt
 
