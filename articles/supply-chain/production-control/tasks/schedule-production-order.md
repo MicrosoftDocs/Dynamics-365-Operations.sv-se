@@ -16,41 +16,44 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2fa0f0f38dcb93aff9b3a1d8130fba0a0c836b3b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 93ec5bd6984dd1a8f970834070fd77873078b3b0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4981116"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237141"
 ---
-# <a name="schedule-a-production-order"></a><span data-ttu-id="e6fed-103">Tidsplanera en produktionsorder</span><span class="sxs-lookup"><span data-stu-id="e6fed-103">Schedule a production order</span></span>
+# <a name="schedule-a-production-order"></a><span data-ttu-id="0cce8-103">Tidsplanera en produktionsorder</span><span class="sxs-lookup"><span data-stu-id="0cce8-103">Schedule a production order</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="e6fed-104">I den här proceduren visas hur du tidsplanerar en produktionsorder.</span><span class="sxs-lookup"><span data-stu-id="e6fed-104">This procedure shows how to schedule a production order.</span></span> <span data-ttu-id="e6fed-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="e6fed-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="e6fed-106">Detta är den tredje proceduren av sju som förklarar produktionsorderns livscykel.</span><span class="sxs-lookup"><span data-stu-id="e6fed-106">This is the third procedure out of seven which explains the production order lifecycle.</span></span>
+<span data-ttu-id="0cce8-104">I den här proceduren visas hur du tidsplanerar en produktionsorder.</span><span class="sxs-lookup"><span data-stu-id="0cce8-104">This procedure shows how to schedule a production order.</span></span> <span data-ttu-id="0cce8-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="0cce8-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="0cce8-106">Detta är den tredje proceduren av sju som förklarar produktionsorderns livscykel.</span><span class="sxs-lookup"><span data-stu-id="0cce8-106">This is the third procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="schedule-a-production-order"></a><span data-ttu-id="e6fed-107">Tidsplanera en produktionsorder</span><span class="sxs-lookup"><span data-stu-id="e6fed-107">Schedule a production order</span></span>
-1. <span data-ttu-id="e6fed-108">Gå till Produktionskontroll > Produktionsorder > Alla produktionsorder.</span><span class="sxs-lookup"><span data-stu-id="e6fed-108">Go to Production control > Production orders > All production orders.</span></span>
-    * <span data-ttu-id="e6fed-109">Välj en produktionsorder som har statusen Uppskattad.</span><span class="sxs-lookup"><span data-stu-id="e6fed-109">Select a production order that has the Estimated status.</span></span>  
-2. <span data-ttu-id="e6fed-110">Klicka på Tidsplanera i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="e6fed-110">On the Action Pane, click Schedule.</span></span>
-3. <span data-ttu-id="e6fed-111">Klicka på Tidsplanera jobb.</span><span class="sxs-lookup"><span data-stu-id="e6fed-111">Click Schedule jobs.</span></span>
-    * <span data-ttu-id="e6fed-112">Parametrarna för schemaläggning ställs in på den här sidan.</span><span class="sxs-lookup"><span data-stu-id="e6fed-112">The parameters for scheduling are set up on this page.</span></span> <span data-ttu-id="e6fed-113">Du kan ställa in parametrarna för vissa användare eller alla användare.</span><span class="sxs-lookup"><span data-stu-id="e6fed-113">You can set up the parameters for specific users or all users.</span></span>  
-4. <span data-ttu-id="e6fed-114">Välj Framåt från idag i fältet Planeringsriktning.</span><span class="sxs-lookup"><span data-stu-id="e6fed-114">In the Scheduling direction field, select 'Forward from today'.</span></span>
-5. <span data-ttu-id="e6fed-115">Ange ett datum i fältet Planeringsdatum.</span><span class="sxs-lookup"><span data-stu-id="e6fed-115">In the Scheduling date field, enter a date.</span></span>
-6. <span data-ttu-id="e6fed-116">Markera eller avmarkera kryssrutan Begränsad kapacitet.</span><span class="sxs-lookup"><span data-stu-id="e6fed-116">Select or clear the Finite capacity check box.</span></span>
-7. <span data-ttu-id="e6fed-117">Markera eller avmarkera kryssrutan Begränsat material.</span><span class="sxs-lookup"><span data-stu-id="e6fed-117">Select or clear the Finite material check box.</span></span>
-8. <span data-ttu-id="e6fed-118">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="e6fed-118">Click OK.</span></span>
+## <a name="schedule-a-production-order"></a><span data-ttu-id="0cce8-107">Tidsplanera en produktionsorder</span><span class="sxs-lookup"><span data-stu-id="0cce8-107">Schedule a production order</span></span>
+1. <span data-ttu-id="0cce8-108">Gå till Produktionskontroll > Produktionsorder > Alla produktionsorder.</span><span class="sxs-lookup"><span data-stu-id="0cce8-108">Go to Production control > Production orders > All production orders.</span></span>
+    * <span data-ttu-id="0cce8-109">Välj en produktionsorder som har statusen Uppskattad.</span><span class="sxs-lookup"><span data-stu-id="0cce8-109">Select a production order that has the Estimated status.</span></span>  
+2. <span data-ttu-id="0cce8-110">Klicka på Tidsplanera i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="0cce8-110">On the Action Pane, click Schedule.</span></span>
+3. <span data-ttu-id="0cce8-111">Klicka på Tidsplanera jobb.</span><span class="sxs-lookup"><span data-stu-id="0cce8-111">Click Schedule jobs.</span></span>
+    * <span data-ttu-id="0cce8-112">Parametrarna för schemaläggning ställs in på den här sidan.</span><span class="sxs-lookup"><span data-stu-id="0cce8-112">The parameters for scheduling are set up on this page.</span></span> <span data-ttu-id="0cce8-113">Du kan ställa in parametrarna för vissa användare eller alla användare.</span><span class="sxs-lookup"><span data-stu-id="0cce8-113">You can set up the parameters for specific users or all users.</span></span>  
+4. <span data-ttu-id="0cce8-114">Välj Framåt från idag i fältet Planeringsriktning.</span><span class="sxs-lookup"><span data-stu-id="0cce8-114">In the Scheduling direction field, select 'Forward from today'.</span></span>
+5. <span data-ttu-id="0cce8-115">Ange ett datum i fältet Planeringsdatum.</span><span class="sxs-lookup"><span data-stu-id="0cce8-115">In the Scheduling date field, enter a date.</span></span>
+6. <span data-ttu-id="0cce8-116">Markera eller avmarkera kryssrutan Begränsad kapacitet.</span><span class="sxs-lookup"><span data-stu-id="0cce8-116">Select or clear the Finite capacity check box.</span></span>
+7. <span data-ttu-id="0cce8-117">Markera eller avmarkera kryssrutan Begränsat material.</span><span class="sxs-lookup"><span data-stu-id="0cce8-117">Select or clear the Finite material check box.</span></span>
+8. <span data-ttu-id="0cce8-118">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="0cce8-118">Click OK.</span></span>
 
-## <a name="view-the-scheduling-results"></a><span data-ttu-id="e6fed-119">Visa resultaten av tidsplaneringen</span><span class="sxs-lookup"><span data-stu-id="e6fed-119">View the scheduling results</span></span>
-1. <span data-ttu-id="e6fed-120">Klicka på Produktionsorder i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="e6fed-120">On the Action Pane, click Production order.</span></span>
-2. <span data-ttu-id="e6fed-121">Klicka på Alla jobb.</span><span class="sxs-lookup"><span data-stu-id="e6fed-121">Click All jobs.</span></span>
-    * <span data-ttu-id="e6fed-122">På den här sidan visas schemalagda jobb som du precis har genererat.</span><span class="sxs-lookup"><span data-stu-id="e6fed-122">This page displays the scheduled jobs that you have just generated.</span></span>  
-3. <span data-ttu-id="e6fed-123">Utöka eller komprimera avsnittet Tidsplanering.</span><span class="sxs-lookup"><span data-stu-id="e6fed-123">Expand or collapse the Scheduling section.</span></span>
-    * <span data-ttu-id="e6fed-124">På snabbfliken Tidsplanering kan du visa det schemalagda datumet och tiden.</span><span class="sxs-lookup"><span data-stu-id="e6fed-124">On the Scheduling FastTab, you can view the scheduled date and time.</span></span>  
-4. <span data-ttu-id="e6fed-125">Klicka på Förfrågningar.</span><span class="sxs-lookup"><span data-stu-id="e6fed-125">Click Inquiries.</span></span>
-5. <span data-ttu-id="e6fed-126">Klicka på Kapacitetsbeläggning.</span><span class="sxs-lookup"><span data-stu-id="e6fed-126">Click Capacity load.</span></span>
-    * <span data-ttu-id="e6fed-127">Sidan Kapacitetsbeläggning visar den kapacitet som reserverats genom finplanering, det totala antalet timmar som är reserverat för närvarande för resursen och antalet timmar som återstår för finplanering för resursen.</span><span class="sxs-lookup"><span data-stu-id="e6fed-127">The Capacity load page displays the capacity that is reserved through job scheduling, the total number of hours that are currently reserved on the resource, and the number of hours that remain available for job scheduling on the resource.</span></span>  
-6. <span data-ttu-id="e6fed-128">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="e6fed-128">Close the page.</span></span>
-7. <span data-ttu-id="e6fed-129">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="e6fed-129">Close the page.</span></span>
+## <a name="view-the-scheduling-results"></a><span data-ttu-id="0cce8-119">Visa resultaten av tidsplaneringen</span><span class="sxs-lookup"><span data-stu-id="0cce8-119">View the scheduling results</span></span>
+1. <span data-ttu-id="0cce8-120">Klicka på Produktionsorder i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="0cce8-120">On the Action Pane, click Production order.</span></span>
+2. <span data-ttu-id="0cce8-121">Klicka på Alla jobb.</span><span class="sxs-lookup"><span data-stu-id="0cce8-121">Click All jobs.</span></span>
+    * <span data-ttu-id="0cce8-122">På den här sidan visas schemalagda jobb som du precis har genererat.</span><span class="sxs-lookup"><span data-stu-id="0cce8-122">This page displays the scheduled jobs that you have just generated.</span></span>  
+3. <span data-ttu-id="0cce8-123">Utöka eller komprimera avsnittet Tidsplanering.</span><span class="sxs-lookup"><span data-stu-id="0cce8-123">Expand or collapse the Scheduling section.</span></span>
+    * <span data-ttu-id="0cce8-124">På snabbfliken Tidsplanering kan du visa det schemalagda datumet och tiden.</span><span class="sxs-lookup"><span data-stu-id="0cce8-124">On the Scheduling FastTab, you can view the scheduled date and time.</span></span>  
+4. <span data-ttu-id="0cce8-125">Klicka på Förfrågningar.</span><span class="sxs-lookup"><span data-stu-id="0cce8-125">Click Inquiries.</span></span>
+5. <span data-ttu-id="0cce8-126">Klicka på Kapacitetsbeläggning.</span><span class="sxs-lookup"><span data-stu-id="0cce8-126">Click Capacity load.</span></span>
+    * <span data-ttu-id="0cce8-127">Sidan Kapacitetsbeläggning visar den kapacitet som reserverats genom finplanering, det totala antalet timmar som är reserverat för närvarande för resursen och antalet timmar som återstår för finplanering för resursen.</span><span class="sxs-lookup"><span data-stu-id="0cce8-127">The Capacity load page displays the capacity that is reserved through job scheduling, the total number of hours that are currently reserved on the resource, and the number of hours that remain available for job scheduling on the resource.</span></span>  
+6. <span data-ttu-id="0cce8-128">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="0cce8-128">Close the page.</span></span>
+7. <span data-ttu-id="0cce8-129">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="0cce8-129">Close the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
