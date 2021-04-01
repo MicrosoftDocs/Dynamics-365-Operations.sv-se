@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 314ca8c325205bd8f489daf46498e9586603eaf3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c66871d07bdfd949e29a704f53b3e5698d996c2d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010457"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254225"
 ---
-# <a name="service-status-and-progress-field-interaction"></a><span data-ttu-id="46f0a-103">Samband mellan servicestatus och förloppsfält</span><span class="sxs-lookup"><span data-stu-id="46f0a-103">Service status and progress field interaction</span></span> 
+# <a name="service-status-and-progress-field-interaction"></a><span data-ttu-id="8b4c1-103">Samband mellan servicestatus och förloppsfält</span><span class="sxs-lookup"><span data-stu-id="8b4c1-103">Service status and progress field interaction</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="46f0a-104">I formuläret **Serviceorder**, fältet **Förlopp** i serviceorderns huvud statusvärdet för hela serviceordern, och **Status** anger statusvärdet för enskilda serviceorderrader.</span><span class="sxs-lookup"><span data-stu-id="46f0a-104">In the **Service orders** form, the **Progress** field on the service order header reflects the status of the whole service order, and the **Status** reports the status of individual service order lines.</span></span>
+<span data-ttu-id="8b4c1-104">I formuläret **Serviceorder**, fältet **Förlopp** i serviceorderns huvud statusvärdet för hela serviceordern, och **Status** anger statusvärdet för enskilda serviceorderrader.</span><span class="sxs-lookup"><span data-stu-id="8b4c1-104">In the **Service orders** form, the **Progress** field on the service order header reflects the status of the whole service order, and the **Status** reports the status of individual service order lines.</span></span>
 
 <table>
 <colgroup>
@@ -40,57 +40,60 @@ ms.locfileid: "5010457"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="46f0a-105">Förlopp</span><span class="sxs-lookup"><span data-stu-id="46f0a-105">Progress</span></span></p></th>
-<th><p><span data-ttu-id="46f0a-106">Status för rad 1</span><span class="sxs-lookup"><span data-stu-id="46f0a-106">Line 1 Status</span></span></p></th>
-<th><p><span data-ttu-id="46f0a-107">Status för rad 2</span><span class="sxs-lookup"><span data-stu-id="46f0a-107">Line 2 Status</span></span></p></th>
-<th><p><span data-ttu-id="46f0a-108">Status för rad 3</span><span class="sxs-lookup"><span data-stu-id="46f0a-108">Line 3 Status</span></span></p></th>
+<th><p><span data-ttu-id="8b4c1-105">Förlopp</span><span class="sxs-lookup"><span data-stu-id="8b4c1-105">Progress</span></span></p></th>
+<th><p><span data-ttu-id="8b4c1-106">Status för rad 1</span><span class="sxs-lookup"><span data-stu-id="8b4c1-106">Line 1 Status</span></span></p></th>
+<th><p><span data-ttu-id="8b4c1-107">Status för rad 2</span><span class="sxs-lookup"><span data-stu-id="8b4c1-107">Line 2 Status</span></span></p></th>
+<th><p><span data-ttu-id="8b4c1-108">Status för rad 3</span><span class="sxs-lookup"><span data-stu-id="8b4c1-108">Line 3 Status</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="46f0a-109"><strong>Pågår</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-109"><strong>In process</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-110"><strong>Skapat</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-110"><strong>Created</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-111"><strong>Skapat</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-111"><strong>Created</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-112"><strong>Skapat</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-112"><strong>Created</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-109"><strong>Pågår</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-109"><strong>In process</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-110"><strong>Skapat</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-110"><strong>Created</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-111"><strong>Skapat</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-111"><strong>Created</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-112"><strong>Skapat</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-112"><strong>Created</strong></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="46f0a-113"><strong>Pågår</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-113"><strong>In process</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-114"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-114"><strong>Canceled</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-115"><strong>Skapat</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-115"><strong>Created</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-116"><strong>Skapat</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-116"><strong>Created</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-113"><strong>Pågår</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-113"><strong>In process</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-114"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-114"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-115"><strong>Skapat</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-115"><strong>Created</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-116"><strong>Skapat</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-116"><strong>Created</strong></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="46f0a-117"><strong>Pågår</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-117"><strong>In process</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-118"><strong>Skapat</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-118"><strong>Created</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-119"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-119"><strong>Canceled</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-120"><strong>Bokförd</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-120"><strong>Posted</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-117"><strong>Pågår</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-117"><strong>In process</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-118"><strong>Skapat</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-118"><strong>Created</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-119"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-119"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-120"><strong>Bokförd</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-120"><strong>Posted</strong></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="46f0a-121"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-121"><strong>Canceled</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-122"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-122"><strong>Canceled</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-123"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-123"><strong>Canceled</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-124"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-124"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-121"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-121"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-122"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-122"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-123"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-123"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-124"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-124"><strong>Canceled</strong></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="46f0a-125"><strong>Bokförd</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-125"><strong>Posted</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-126"><strong>Bokförd</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-126"><strong>Posted</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-127"><strong>Bokförd</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-127"><strong>Posted</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-128"><strong>Bokförd</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-128"><strong>Posted</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-125"><strong>Bokförd</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-125"><strong>Posted</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-126"><strong>Bokförd</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-126"><strong>Posted</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-127"><strong>Bokförd</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-127"><strong>Posted</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-128"><strong>Bokförd</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-128"><strong>Posted</strong></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="46f0a-129"><strong>Bokförd</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-129"><strong>Posted</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-130"><strong>Bokförd</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-130"><strong>Posted</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-131"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-131"><strong>Canceled</strong></span></span></p></td>
-<td><p><span data-ttu-id="46f0a-132"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="46f0a-132"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-129"><strong>Bokförd</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-129"><strong>Posted</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-130"><strong>Bokförd</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-130"><strong>Posted</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-131"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-131"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="8b4c1-132"><strong>Annullerad</strong></span><span class="sxs-lookup"><span data-stu-id="8b4c1-132"><strong>Canceled</strong></span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="46f0a-133">En serviceorders förlopp är pågående om alla rader har statusvärdet **Skapad**; och det pågår fortfarande om några av raderna har statusvärdet **Avbruten** eller **Bokförd**.</span><span class="sxs-lookup"><span data-stu-id="46f0a-133">The progress of a service order is in process if all lines have the status **Created**; it is still in process if some of the lines have a status of **Canceled** or **Posted**.</span></span>
+<span data-ttu-id="8b4c1-133">En serviceorders förlopp är pågående om alla rader har statusvärdet **Skapad**; och det pågår fortfarande om några av raderna har statusvärdet **Avbruten** eller **Bokförd**.</span><span class="sxs-lookup"><span data-stu-id="8b4c1-133">The progress of a service order is in process if all lines have the status **Created**; it is still in process if some of the lines have a status of **Canceled** or **Posted**.</span></span>
 
-<span data-ttu-id="46f0a-134">Om alla rader på en serviceorder markeras som **Bokförd**, är förloppet på statusordern **Bokförd**.</span><span class="sxs-lookup"><span data-stu-id="46f0a-134">If all lines in a service order are marked as **Posted**, the progress of the status order is **Posted**.</span></span> <span data-ttu-id="46f0a-135">Om några rader är **Bokförd** och vissa är **Avbruten**, är förloppet fortfarande **Bokförd**.</span><span class="sxs-lookup"><span data-stu-id="46f0a-135">If some lines are **Posted** and some are **Canceled**, the progress is still **Posted**.</span></span>
+<span data-ttu-id="8b4c1-134">Om alla rader på en serviceorder markeras som **Bokförd**, är förloppet på statusordern **Bokförd**.</span><span class="sxs-lookup"><span data-stu-id="8b4c1-134">If all lines in a service order are marked as **Posted**, the progress of the status order is **Posted**.</span></span> <span data-ttu-id="8b4c1-135">Om några rader är **Bokförd** och vissa är **Avbruten**, är förloppet fortfarande **Bokförd**.</span><span class="sxs-lookup"><span data-stu-id="8b4c1-135">If some lines are **Posted** and some are **Canceled**, the progress is still **Posted**.</span></span>
 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
