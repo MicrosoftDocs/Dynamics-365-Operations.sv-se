@@ -16,27 +16,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdf6335bd333569e278ccd9cf3972c0ec57d4e6c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a8e0deadaeb403e1f645309a141c5678fbe3f716
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4989678"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232897"
 ---
-# <a name="pick-oldest-batch-on-a-mobile-device"></a><span data-ttu-id="deff6-103">Plocka den äldsta batchen på en mobil enhet</span><span class="sxs-lookup"><span data-stu-id="deff6-103">Pick oldest batch on a mobile device</span></span>
+# <a name="pick-oldest-batch-on-a-mobile-device"></a><span data-ttu-id="ac377-103">Plocka den äldsta batchen på en mobil enhet</span><span class="sxs-lookup"><span data-stu-id="ac377-103">Pick oldest batch on a mobile device</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="deff6-104">Du kan komma åt konfigurationen **Plocka äldsta batchen** via menyn för en mobil enhet och du kan tvinga eller varna lagerarbetare att plocka den äldsta batchen på deras nuvarande plats.</span><span class="sxs-lookup"><span data-stu-id="deff6-104">You can access the configuration **Pick oldest batch** via a mobile device menu and it allows you to force or warn warehouse workers to pick the oldest batch in their current location.</span></span>  
+<span data-ttu-id="ac377-104">Du kan komma åt konfigurationen **Plocka äldsta batchen** via menyn för en mobil enhet och du kan tvinga eller varna lagerarbetare att plocka den äldsta batchen på deras nuvarande plats.</span><span class="sxs-lookup"><span data-stu-id="ac377-104">You can access the configuration **Pick oldest batch** via a mobile device menu and it allows you to force or warn warehouse workers to pick the oldest batch in their current location.</span></span>  
 
-## <a name="where-it-applies"></a><span data-ttu-id="deff6-105">Tillämpning</span><span class="sxs-lookup"><span data-stu-id="deff6-105">Where it applies</span></span>
-<span data-ttu-id="deff6-106">Plocka den äldsta batchen konfigureras på en mobil enhets menyalternativ och påverkar plockningen av batchen under artiklar.</span><span class="sxs-lookup"><span data-stu-id="deff6-106">Pick oldest batch is configured on mobile device menu items and effects the pick for batch below items.</span></span>
+## <a name="where-it-applies"></a><span data-ttu-id="ac377-105">Tillämpning</span><span class="sxs-lookup"><span data-stu-id="ac377-105">Where it applies</span></span>
+<span data-ttu-id="ac377-106">Plocka den äldsta batchen konfigureras på en mobil enhets menyalternativ och påverkar plockningen av batchen under artiklar.</span><span class="sxs-lookup"><span data-stu-id="ac377-106">Pick oldest batch is configured on mobile device menu items and effects the pick for batch below items.</span></span>
 
-## <a name="how-to-set-up-the-configuration-for-pick-oldest-batch"></a><span data-ttu-id="deff6-107">Hur du ställer in konfigurationen för Plocka äldsta batchen</span><span class="sxs-lookup"><span data-stu-id="deff6-107">How to set up the configuration for Pick oldest batch</span></span> 
-<span data-ttu-id="deff6-108">För artiklar som är inställda på att använda befintligt arbete kan **Plocka äldsta batchen** ställas in på **Ingen**, **Varna** eller **Tvinga** från menyn i en mobil enhet.</span><span class="sxs-lookup"><span data-stu-id="deff6-108">For items that are set to use existing work, **Pick oldest batch** can be set to **None**, **Warn**, or **Force** from a mobile device menu.</span></span>
+## <a name="how-to-set-up-the-configuration-for-pick-oldest-batch"></a><span data-ttu-id="ac377-107">Hur du ställer in konfigurationen för Plocka äldsta batchen</span><span class="sxs-lookup"><span data-stu-id="ac377-107">How to set up the configuration for Pick oldest batch</span></span> 
+<span data-ttu-id="ac377-108">För artiklar som är inställda på att använda befintligt arbete kan **Plocka äldsta batchen** ställas in på **Ingen**, **Varna** eller **Tvinga** från menyn i en mobil enhet.</span><span class="sxs-lookup"><span data-stu-id="ac377-108">For items that are set to use existing work, **Pick oldest batch** can be set to **None**, **Warn**, or **Force** from a mobile device menu.</span></span>
 
-<span data-ttu-id="deff6-109">**Ingen**: arbetare får inga meddelanden och tillåts plocka valfri batch på sin plats.</span><span class="sxs-lookup"><span data-stu-id="deff6-109">**None**: Workers will not receive any messages and they will be allowed to pick any batch in their location.</span></span>
+<span data-ttu-id="ac377-109">**Ingen**: arbetare får inga meddelanden och tillåts plocka valfri batch på sin plats.</span><span class="sxs-lookup"><span data-stu-id="ac377-109">**None**: Workers will not receive any messages and they will be allowed to pick any batch in their location.</span></span>
 
-<span data-ttu-id="deff6-110">**Varning** och **Tvinga**: en lista över batchen/batcherna med det äldsta utgångsdatumet visas ovanför batchkontrollen när arbetaren väljer en batch.</span><span class="sxs-lookup"><span data-stu-id="deff6-110">**Warn** and **Force**:  A list of the batch(es) with the oldest expiration date will be displayed above the batch control when the worker selects a batch.</span></span> <span data-ttu-id="deff6-111">Om platsen är registreringsskyltskontrollerad visas en lista över registreringsskyltar med den äldsta batchen ovanför registreringsskyltskontrollen.</span><span class="sxs-lookup"><span data-stu-id="deff6-111">If the location is license plate controlled, a list of license plates that have the oldest batch will be displayed above the license plate control.</span></span> 
--   <span data-ttu-id="deff6-112">**Varning**: om en arbetare väljer en registreringsskylt eller en batch som inte finns i listan kommer att kontrollen att nollas och en varning indikerar att det finns en äldre batch att välja.</span><span class="sxs-lookup"><span data-stu-id="deff6-112">**Warn**: If a worker chooses a license plate or batch that is not on the shown list, the control will be blanked and a warning will be shown that there is an older batch to select.</span></span> <span data-ttu-id="deff6-113">För att kunna fortsätta arbetet kan arbetaren välja samma registreringsskylt eller batch igen.</span><span class="sxs-lookup"><span data-stu-id="deff6-113">To be allowed to continue the work, the worker can select the same license plate or batch again.</span></span>  
--   <span data-ttu-id="deff6-114">**Tvinga**: arbetare fortsätter att få meddelanden om att det inte finns en äldre batch att plocka.</span><span class="sxs-lookup"><span data-stu-id="deff6-114">**Force**: Workers will continue to receive the message that there is an older batch to pick.</span></span>
+<span data-ttu-id="ac377-110">**Varning** och **Tvinga**: en lista över batchen/batcherna med det äldsta utgångsdatumet visas ovanför batchkontrollen när arbetaren väljer en batch.</span><span class="sxs-lookup"><span data-stu-id="ac377-110">**Warn** and **Force**:  A list of the batch(es) with the oldest expiration date will be displayed above the batch control when the worker selects a batch.</span></span> <span data-ttu-id="ac377-111">Om platsen är registreringsskyltskontrollerad visas en lista över registreringsskyltar med den äldsta batchen ovanför registreringsskyltskontrollen.</span><span class="sxs-lookup"><span data-stu-id="ac377-111">If the location is license plate controlled, a list of license plates that have the oldest batch will be displayed above the license plate control.</span></span> 
+-   <span data-ttu-id="ac377-112">**Varning**: om en arbetare väljer en registreringsskylt eller en batch som inte finns i listan kommer att kontrollen att nollas och en varning indikerar att det finns en äldre batch att välja.</span><span class="sxs-lookup"><span data-stu-id="ac377-112">**Warn**: If a worker chooses a license plate or batch that is not on the shown list, the control will be blanked and a warning will be shown that there is an older batch to select.</span></span> <span data-ttu-id="ac377-113">För att kunna fortsätta arbetet kan arbetaren välja samma registreringsskylt eller batch igen.</span><span class="sxs-lookup"><span data-stu-id="ac377-113">To be allowed to continue the work, the worker can select the same license plate or batch again.</span></span>  
+-   <span data-ttu-id="ac377-114">**Tvinga**: arbetare fortsätter att få meddelanden om att det inte finns en äldre batch att plocka.</span><span class="sxs-lookup"><span data-stu-id="ac377-114">**Force**: Workers will continue to receive the message that there is an older batch to pick.</span></span>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

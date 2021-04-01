@@ -15,49 +15,52 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 611cc49d2373247da141d2fafc149d05f3bd13b0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d365dfce8e8fbd332111d96eeb2a431151d7a342
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006120"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234231"
 ---
-# <a name="configure-credit-card-processing"></a><span data-ttu-id="ae956-103"> Konfigurera kreditkortsbearbetning</span><span class="sxs-lookup"><span data-stu-id="ae956-103">Configure credit card processing</span></span>
+# <a name="configure-credit-card-processing"></a><span data-ttu-id="2e3b0-103"> Konfigurera kreditkortsbearbetning</span><span class="sxs-lookup"><span data-stu-id="2e3b0-103">Configure credit card processing</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ae956-104">Den här proceduren går igenom hur du visar en lista med betalningsförmedlare och hur du konfigurerar ett betalningskonto för kundreskontra.</span><span class="sxs-lookup"><span data-stu-id="ae956-104">This procedure walks through how to view the list of payment providers and how to configure a payment account for accounts receivable.</span></span> <span data-ttu-id="ae956-105">I den här proceduren används i USRT-företaget med demodata och är avsedda för administratörer och IT-ansvariga.</span><span class="sxs-lookup"><span data-stu-id="ae956-105">This procedure uses the USRT company in demo data and is intended for Administrators and IT Professionals.</span></span>
+<span data-ttu-id="2e3b0-104">Den här proceduren går igenom hur du visar en lista med betalningsförmedlare och hur du konfigurerar ett betalningskonto för kundreskontra.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-104">This procedure walks through how to view the list of payment providers and how to configure a payment account for accounts receivable.</span></span> <span data-ttu-id="2e3b0-105">I den här proceduren används i USRT-företaget med demodata och är avsedda för administratörer och IT-ansvariga.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-105">This procedure uses the USRT company in demo data and is intended for Administrators and IT Professionals.</span></span>
 
 
-## <a name="view-a-list-of-payment-providers"></a><span data-ttu-id="ae956-106">Visa en lista med betalningsförmedlare</span><span class="sxs-lookup"><span data-stu-id="ae956-106">View a list of payment providers</span></span>
-1. <span data-ttu-id="ae956-107">Gå till kundfordringar > Betalningar inställning > betaltjänster.</span><span class="sxs-lookup"><span data-stu-id="ae956-107">Go to Accounts receivable > Payments setup > Payment services.</span></span>
-2. <span data-ttu-id="ae956-108">Klicka på Visa tillgängliga leverantörer.</span><span class="sxs-lookup"><span data-stu-id="ae956-108">Click View available providers.</span></span>
+## <a name="view-a-list-of-payment-providers"></a><span data-ttu-id="2e3b0-106">Visa en lista med betalningsförmedlare</span><span class="sxs-lookup"><span data-stu-id="2e3b0-106">View a list of payment providers</span></span>
+1. <span data-ttu-id="2e3b0-107">Gå till kundfordringar > Betalningar inställning > betaltjänster.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-107">Go to Accounts receivable > Payments setup > Payment services.</span></span>
+2. <span data-ttu-id="2e3b0-108">Klicka på Visa tillgängliga leverantörer.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-108">Click View available providers.</span></span>
 
-## <a name="configure-payment-account"></a><span data-ttu-id="ae956-109">Konfigurera betalningskonto</span><span class="sxs-lookup"><span data-stu-id="ae956-109">Configure payment account</span></span>
-1. <span data-ttu-id="ae956-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="ae956-110">Click New.</span></span>
-2. <span data-ttu-id="ae956-111">Skriv ett värde i fältet Betalningstjänst.</span><span class="sxs-lookup"><span data-stu-id="ae956-111">In the Payment service field, type a value.</span></span>
-3. <span data-ttu-id="ae956-112">Välj ett alternativ i fältet Betalningskoppling.</span><span class="sxs-lookup"><span data-stu-id="ae956-112">In the Payment connector field, select an option.</span></span>
-4. <span data-ttu-id="ae956-113">Växla utökningen av avsnittet Konto för betaltjänster.</span><span class="sxs-lookup"><span data-stu-id="ae956-113">Toggle the expansion of the Payment service account section.</span></span>
-5. <span data-ttu-id="ae956-114">I fältet Miljö, skriv PROD.</span><span class="sxs-lookup"><span data-stu-id="ae956-114">In the Environment: field, type 'PROD'.</span></span>
-6. <span data-ttu-id="ae956-115">Klicka på Kreditkortstyper.</span><span class="sxs-lookup"><span data-stu-id="ae956-115">Click Credit card types.</span></span>
-7. <span data-ttu-id="ae956-116">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Betalningsjournal.</span><span class="sxs-lookup"><span data-stu-id="ae956-116">In the Payment journal field, click the drop-down button to open the lookup.</span></span>
-8. <span data-ttu-id="ae956-117">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="ae956-117">In the list, click the link in the selected row.</span></span>
-9. <span data-ttu-id="ae956-118">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="ae956-118">Click Add.</span></span>
-10. <span data-ttu-id="ae956-119">Ange ett värde i fältet Valuta.</span><span class="sxs-lookup"><span data-stu-id="ae956-119">In the Currency field, type a value.</span></span>
-11. <span data-ttu-id="ae956-120">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="ae956-120">In the list, find and select the desired record.</span></span>
-12. <span data-ttu-id="ae956-121">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Betalningsjournal.</span><span class="sxs-lookup"><span data-stu-id="ae956-121">In the Payment journal field, click the drop-down button to open the lookup.</span></span>
-13. <span data-ttu-id="ae956-122">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="ae956-122">In the list, click the link in the selected row.</span></span>
-14. <span data-ttu-id="ae956-123">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="ae956-123">Click Add.</span></span>
-15. <span data-ttu-id="ae956-124">Ange ett värde i fältet Valuta.</span><span class="sxs-lookup"><span data-stu-id="ae956-124">In the Currency field, type a value.</span></span>
-16. <span data-ttu-id="ae956-125">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="ae956-125">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="ae956-126">Du kan upprepa dessa steg för så många korttyper som du behöver.</span><span class="sxs-lookup"><span data-stu-id="ae956-126">You can repeat these steps for as many card types as you need.</span></span>  
-17. <span data-ttu-id="ae956-127">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Betalningsjournal.</span><span class="sxs-lookup"><span data-stu-id="ae956-127">In the Payment journal field, click the drop-down button to open the lookup.</span></span>
-18. <span data-ttu-id="ae956-128">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="ae956-128">In the list, click the link in the selected row.</span></span>
-19. <span data-ttu-id="ae956-129">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="ae956-129">Click Add.</span></span>
-20. <span data-ttu-id="ae956-130">Ange ett värde i fältet Valuta.</span><span class="sxs-lookup"><span data-stu-id="ae956-130">In the Currency field, type a value.</span></span>
-21. <span data-ttu-id="ae956-131">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="ae956-131">Click Save.</span></span>
-22. <span data-ttu-id="ae956-132">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="ae956-132">Close the page.</span></span>
-23. <span data-ttu-id="ae956-133">Klicka på Validera.</span><span class="sxs-lookup"><span data-stu-id="ae956-133">Click Validate.</span></span>
-24. <span data-ttu-id="ae956-134">Klicka på kryssrutan Standardföretag för nya kreditkort.</span><span class="sxs-lookup"><span data-stu-id="ae956-134">Click the Default processor for new credit cards checkbox.</span></span>
-25. <span data-ttu-id="ae956-135">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="ae956-135">Click Save.</span></span>
+## <a name="configure-payment-account"></a><span data-ttu-id="2e3b0-109">Konfigurera betalningskonto</span><span class="sxs-lookup"><span data-stu-id="2e3b0-109">Configure payment account</span></span>
+1. <span data-ttu-id="2e3b0-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-110">Click New.</span></span>
+2. <span data-ttu-id="2e3b0-111">Skriv ett värde i fältet Betalningstjänst.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-111">In the Payment service field, type a value.</span></span>
+3. <span data-ttu-id="2e3b0-112">Välj ett alternativ i fältet Betalningskoppling.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-112">In the Payment connector field, select an option.</span></span>
+4. <span data-ttu-id="2e3b0-113">Växla utökningen av avsnittet Konto för betaltjänster.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-113">Toggle the expansion of the Payment service account section.</span></span>
+5. <span data-ttu-id="2e3b0-114">I fältet Miljö, skriv PROD.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-114">In the Environment: field, type 'PROD'.</span></span>
+6. <span data-ttu-id="2e3b0-115">Klicka på Kreditkortstyper.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-115">Click Credit card types.</span></span>
+7. <span data-ttu-id="2e3b0-116">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Betalningsjournal.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-116">In the Payment journal field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="2e3b0-117">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="2e3b0-118">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-118">Click Add.</span></span>
+10. <span data-ttu-id="2e3b0-119">Ange ett värde i fältet Valuta.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-119">In the Currency field, type a value.</span></span>
+11. <span data-ttu-id="2e3b0-120">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-120">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="2e3b0-121">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Betalningsjournal.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-121">In the Payment journal field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="2e3b0-122">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-122">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="2e3b0-123">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-123">Click Add.</span></span>
+15. <span data-ttu-id="2e3b0-124">Ange ett värde i fältet Valuta.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-124">In the Currency field, type a value.</span></span>
+16. <span data-ttu-id="2e3b0-125">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-125">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="2e3b0-126">Du kan upprepa dessa steg för så många korttyper som du behöver.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-126">You can repeat these steps for as many card types as you need.</span></span>  
+17. <span data-ttu-id="2e3b0-127">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Betalningsjournal.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-127">In the Payment journal field, click the drop-down button to open the lookup.</span></span>
+18. <span data-ttu-id="2e3b0-128">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-128">In the list, click the link in the selected row.</span></span>
+19. <span data-ttu-id="2e3b0-129">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-129">Click Add.</span></span>
+20. <span data-ttu-id="2e3b0-130">Ange ett värde i fältet Valuta.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-130">In the Currency field, type a value.</span></span>
+21. <span data-ttu-id="2e3b0-131">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-131">Click Save.</span></span>
+22. <span data-ttu-id="2e3b0-132">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-132">Close the page.</span></span>
+23. <span data-ttu-id="2e3b0-133">Klicka på Validera.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-133">Click Validate.</span></span>
+24. <span data-ttu-id="2e3b0-134">Klicka på kryssrutan Standardföretag för nya kreditkort.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-134">Click the Default processor for new credit cards checkbox.</span></span>
+25. <span data-ttu-id="2e3b0-135">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="2e3b0-135">Click Save.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
