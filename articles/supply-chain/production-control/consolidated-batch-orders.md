@@ -18,30 +18,33 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2098cb458821146f6d1bf029591493ac745626f1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ed722ba0c79afa038f1af7b4491f3ff18b052067
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966465"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246391"
 ---
-# <a name="consolidated-batch-orders"></a><span data-ttu-id="6b8d6-103">Konsoliderade batchorder</span><span class="sxs-lookup"><span data-stu-id="6b8d6-103">Consolidated batch orders</span></span>
+# <a name="consolidated-batch-orders"></a><span data-ttu-id="c0142-103">Konsoliderade batchorder</span><span class="sxs-lookup"><span data-stu-id="c0142-103">Consolidated batch orders</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="6b8d6-104">Det här avsnittet beskriver begreppet konsoliderade batchorder.</span><span class="sxs-lookup"><span data-stu-id="6b8d6-104">This article describes the concept of consolidated batch orders.</span></span>
+<span data-ttu-id="c0142-104">Det här avsnittet beskriver begreppet konsoliderade batchorder.</span><span class="sxs-lookup"><span data-stu-id="c0142-104">This article describes the concept of consolidated batch orders.</span></span>
 
-<span data-ttu-id="6b8d6-105">En bulkartikel som produceras anses vara en överordnad artikel, och en packad artikel anses vara en underordnad artikel.</span><span class="sxs-lookup"><span data-stu-id="6b8d6-105">A bulk item that is produced is considered a parent item, whereas a packed item is considered a child item.</span></span> <span data-ttu-id="6b8d6-106">Relationen mellan bulkartikeln och den bokförda artikeln uttrycks i en bulkartikelkonvertering.</span><span class="sxs-lookup"><span data-stu-id="6b8d6-106">The relation between the bulk item and the packed item is expressed in a bulk item conversion.</span></span> <span data-ttu-id="6b8d6-107">Den här bulkartikelkonverteringen definieras på själva bulkartikeln.</span><span class="sxs-lookup"><span data-stu-id="6b8d6-107">This bulk item conversion is defined on the bulk item itself.</span></span>  
+<span data-ttu-id="c0142-105">En bulkartikel som produceras anses vara en överordnad artikel, och en packad artikel anses vara en underordnad artikel.</span><span class="sxs-lookup"><span data-stu-id="c0142-105">A bulk item that is produced is considered a parent item, whereas a packed item is considered a child item.</span></span> <span data-ttu-id="c0142-106">Relationen mellan bulkartikeln och den bokförda artikeln uttrycks i en bulkartikelkonvertering.</span><span class="sxs-lookup"><span data-stu-id="c0142-106">The relation between the bulk item and the packed item is expressed in a bulk item conversion.</span></span> <span data-ttu-id="c0142-107">Den här bulkartikelkonverteringen definieras på själva bulkartikeln.</span><span class="sxs-lookup"><span data-stu-id="c0142-107">This bulk item conversion is defined on the bulk item itself.</span></span>  
 
-<span data-ttu-id="6b8d6-108">Packade artiklar kan förpackas i behållare med en eller flera storlekar som anses vara en enhet.</span><span class="sxs-lookup"><span data-stu-id="6b8d6-108">Packed items can be packaged into containers of either a single size or multiple sizes that are considered one unit.</span></span> <span data-ttu-id="6b8d6-109">Genom att konsolidera order för en bulkartikel kan du se alla relaterade batchordrar i en enda vy, vilket hjälper dig att fastställa återstående arbete som måste slutföras.</span><span class="sxs-lookup"><span data-stu-id="6b8d6-109">By consolidating the orders for a bulk item, you can see all the related batch orders in a single view that can help you determine any remaining work that must be completed.</span></span>  
+<span data-ttu-id="c0142-108">Packade artiklar kan förpackas i behållare med en eller flera storlekar som anses vara en enhet.</span><span class="sxs-lookup"><span data-stu-id="c0142-108">Packed items can be packaged into containers of either a single size or multiple sizes that are considered one unit.</span></span> <span data-ttu-id="c0142-109">Genom att konsolidera order för en bulkartikel kan du se alla relaterade batchordrar i en enda vy, vilket hjälper dig att fastställa återstående arbete som måste slutföras.</span><span class="sxs-lookup"><span data-stu-id="c0142-109">By consolidating the orders for a bulk item, you can see all the related batch orders in a single view that can help you determine any remaining work that must be completed.</span></span>  
 
-<span data-ttu-id="6b8d6-110">En konsoliderad batchorder kan innehålla en kombination av följande order:</span><span class="sxs-lookup"><span data-stu-id="6b8d6-110">A consolidated batch order can contain any combination of the following orders:</span></span>
+<span data-ttu-id="c0142-110">En konsoliderad batchorder kan innehålla en kombination av följande order:</span><span class="sxs-lookup"><span data-stu-id="c0142-110">A consolidated batch order can contain any combination of the following orders:</span></span>
 
--   <span data-ttu-id="6b8d6-111">En enskild bulkorder och flera packade order</span><span class="sxs-lookup"><span data-stu-id="6b8d6-111">A single bulk order and multiple packed orders</span></span>
--   <span data-ttu-id="6b8d6-112">Flera bulkorder och flera packade order</span><span class="sxs-lookup"><span data-stu-id="6b8d6-112">Multiple bulk orders and multiple packed orders</span></span>
--   <span data-ttu-id="6b8d6-113">Flera bulkorder och en enskild packad order</span><span class="sxs-lookup"><span data-stu-id="6b8d6-113">Multiple bulk orders and a single packed order</span></span>
--   <span data-ttu-id="6b8d6-114">Enbart packade order</span><span class="sxs-lookup"><span data-stu-id="6b8d6-114">Only packed orders</span></span>
-
-
+-   <span data-ttu-id="c0142-111">En enskild bulkorder och flera packade order</span><span class="sxs-lookup"><span data-stu-id="c0142-111">A single bulk order and multiple packed orders</span></span>
+-   <span data-ttu-id="c0142-112">Flera bulkorder och flera packade order</span><span class="sxs-lookup"><span data-stu-id="c0142-112">Multiple bulk orders and multiple packed orders</span></span>
+-   <span data-ttu-id="c0142-113">Flera bulkorder och en enskild packad order</span><span class="sxs-lookup"><span data-stu-id="c0142-113">Multiple bulk orders and a single packed order</span></span>
+-   <span data-ttu-id="c0142-114">Enbart packade order</span><span class="sxs-lookup"><span data-stu-id="c0142-114">Only packed orders</span></span>
 
 
+
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

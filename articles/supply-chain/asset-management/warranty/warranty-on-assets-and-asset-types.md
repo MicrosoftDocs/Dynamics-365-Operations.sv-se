@@ -17,39 +17,42 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8c0359bfe31b3d01f28028bb17d5d30af39a1db9
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 78ac93b1e681fca7d7eefd921f282a8496aa9d0a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021614"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5245333"
 ---
-# <a name="warranties-on-assets-and-asset-types"></a><span data-ttu-id="963a3-103">Garanti på tillgångar och tillgångstyper</span><span class="sxs-lookup"><span data-stu-id="963a3-103">Warranties on assets and asset types</span></span>
+# <a name="warranties-on-assets-and-asset-types"></a><span data-ttu-id="8d06a-103">Garanti på tillgångar och tillgångstyper</span><span class="sxs-lookup"><span data-stu-id="8d06a-103">Warranties on assets and asset types</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
 
-<span data-ttu-id="963a3-104">Det här avsnittet förklarar hur du ställer in garantier på tillgångar och tillgångstyper i Tillgångshantering.</span><span class="sxs-lookup"><span data-stu-id="963a3-104">This topic explains how to set up warranties on assets and asset types in Asset Management.</span></span>
+<span data-ttu-id="8d06a-104">Det här avsnittet förklarar hur du ställer in garantier på tillgångar och tillgångstyper i Tillgångshantering.</span><span class="sxs-lookup"><span data-stu-id="8d06a-104">This topic explains how to set up warranties on assets and asset types in Asset Management.</span></span>
 
-## <a name="set-up-a-warranty-on-an-asset-type"></a><span data-ttu-id="963a3-105">Ställa in garanti på en tillgångstyp</span><span class="sxs-lookup"><span data-stu-id="963a3-105">Set up a warranty on an asset type</span></span>
+## <a name="set-up-a-warranty-on-an-asset-type"></a><span data-ttu-id="8d06a-105">Ställa in garanti på en tillgångstyp</span><span class="sxs-lookup"><span data-stu-id="8d06a-105">Set up a warranty on an asset type</span></span>
 
-1. <span data-ttu-id="963a3-106">Välj **tillgångshantering** \> **inställningar** \> **tillgångstyper** \> **tillgångstyper**.</span><span class="sxs-lookup"><span data-stu-id="963a3-106">Select **Asset management** \> **Setup** \> **Asset types** \> **Asset types**.</span></span>
-2. <span data-ttu-id="963a3-107">I det vänstra fönstret väljer du den tillgångstyp att koppla ett leverantörsgarantiavtal till och väljer sedan **Standardtyp för tillgång**.</span><span class="sxs-lookup"><span data-stu-id="963a3-107">In the left pane, select the asset type to attach a vendor warranty agreement to, and then select **Asset type defaults**.</span></span>
-3. <span data-ttu-id="963a3-108">Välj avtalet på snabbfliken **Allmänt**, i fältet **Leverantörsgaranti**.</span><span class="sxs-lookup"><span data-stu-id="963a3-108">On the **General** FastTab, in the **Vendor warranty** field, select the agreement.</span></span>
+1. <span data-ttu-id="8d06a-106">Välj **tillgångshantering** \> **inställningar** \> **tillgångstyper** \> **tillgångstyper**.</span><span class="sxs-lookup"><span data-stu-id="8d06a-106">Select **Asset management** \> **Setup** \> **Asset types** \> **Asset types**.</span></span>
+2. <span data-ttu-id="8d06a-107">I det vänstra fönstret väljer du den tillgångstyp att koppla ett leverantörsgarantiavtal till och väljer sedan **Standardtyp för tillgång**.</span><span class="sxs-lookup"><span data-stu-id="8d06a-107">In the left pane, select the asset type to attach a vendor warranty agreement to, and then select **Asset type defaults**.</span></span>
+3. <span data-ttu-id="8d06a-108">Välj avtalet på snabbfliken **Allmänt**, i fältet **Leverantörsgaranti**.</span><span class="sxs-lookup"><span data-stu-id="8d06a-108">On the **General** FastTab, in the **Vendor warranty** field, select the agreement.</span></span>
 
-## <a name="set-up-a-warranty-on-an-asset"></a><span data-ttu-id="963a3-109">Ställa in garanti på en tillgång</span><span class="sxs-lookup"><span data-stu-id="963a3-109">Set up a warranty on an asset</span></span>
+## <a name="set-up-a-warranty-on-an-asset"></a><span data-ttu-id="8d06a-109">Ställa in garanti på en tillgång</span><span class="sxs-lookup"><span data-stu-id="8d06a-109">Set up a warranty on an asset</span></span>
 
-1. <span data-ttu-id="963a3-110">Välj **Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillgångar**</span><span class="sxs-lookup"><span data-stu-id="963a3-110">Select **Asset management** \> **Common** \> **Assets** \> **All assets**.</span></span>
-2. <span data-ttu-id="963a3-111">Välj tillgången och välj **Redigera.**</span><span class="sxs-lookup"><span data-stu-id="963a3-111">Select the asset, and then select **Edit**.</span></span>
-3. <span data-ttu-id="963a3-112">På snabbfliken **Leverantör** i avsnittet **Leverantörsgaranti** väljer du garantiavtalet i fältet **Garanti**.</span><span class="sxs-lookup"><span data-stu-id="963a3-112">On the **Vendor** FastTab, in the **Vendor warranty** section, in the **Warranty** field, select the warranty agreement.</span></span>
-4. <span data-ttu-id="963a3-113">Välj start- och slutdatum i fälten **Garantistart** och **Garantislut**.</span><span class="sxs-lookup"><span data-stu-id="963a3-113">In the **Warranty start** and **Warranty end** fields, select the start and end dates.</span></span>
+1. <span data-ttu-id="8d06a-110">Välj **Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillgångar**</span><span class="sxs-lookup"><span data-stu-id="8d06a-110">Select **Asset management** \> **Common** \> **Assets** \> **All assets**.</span></span>
+2. <span data-ttu-id="8d06a-111">Välj tillgången och välj **Redigera.**</span><span class="sxs-lookup"><span data-stu-id="8d06a-111">Select the asset, and then select **Edit**.</span></span>
+3. <span data-ttu-id="8d06a-112">På snabbfliken **Leverantör** i avsnittet **Leverantörsgaranti** väljer du garantiavtalet i fältet **Garanti**.</span><span class="sxs-lookup"><span data-stu-id="8d06a-112">On the **Vendor** FastTab, in the **Vendor warranty** section, in the **Warranty** field, select the warranty agreement.</span></span>
+4. <span data-ttu-id="8d06a-113">Välj start- och slutdatum i fälten **Garantistart** och **Garantislut**.</span><span class="sxs-lookup"><span data-stu-id="8d06a-113">In the **Warranty start** and **Warranty end** fields, select the start and end dates.</span></span>
 
     > [!IMPORTANT]
-    > <span data-ttu-id="963a3-114">Om ett datum har valts i fältet **Garantistart** på en arbetsorder, blir garantin giltigt för arbetsordern på det datumet.</span><span class="sxs-lookup"><span data-stu-id="963a3-114">If a date is selected in the **Warranty start** field on a work order, the warranty becomes valid for the work order on that date.</span></span> <span data-ttu-id="963a3-115">När du skapar en arbetsorder anges fältet **Garantistart** automatiskt till skapandedatumet.</span><span class="sxs-lookup"><span data-stu-id="963a3-115">When you create a work order, the **Warranty start** field is automatically set to the date of creation.</span></span> <span data-ttu-id="963a3-116">Du kan dock ändra datumet så att det motsvarar t.ex. startdatum för ett garantiavtal.</span><span class="sxs-lookup"><span data-stu-id="963a3-116">However, you can change the date so that it corresponds to, for example, the start date of a warranty agreement.</span></span>
+    > <span data-ttu-id="8d06a-114">Om ett datum har valts i fältet **Garantistart** på en arbetsorder, blir garantin giltigt för arbetsordern på det datumet.</span><span class="sxs-lookup"><span data-stu-id="8d06a-114">If a date is selected in the **Warranty start** field on a work order, the warranty becomes valid for the work order on that date.</span></span> <span data-ttu-id="8d06a-115">När du skapar en arbetsorder anges fältet **Garantistart** automatiskt till skapandedatumet.</span><span class="sxs-lookup"><span data-stu-id="8d06a-115">When you create a work order, the **Warranty start** field is automatically set to the date of creation.</span></span> <span data-ttu-id="8d06a-116">Du kan dock ändra datumet så att det motsvarar t.ex. startdatum för ett garantiavtal.</span><span class="sxs-lookup"><span data-stu-id="8d06a-116">However, you can change the date so that it corresponds to, for example, the start date of a warranty agreement.</span></span>
     >
     > ![Sidan Arbetsorder](media/02-warranty.png)
 
 > [!NOTE]
-> <span data-ttu-id="963a3-118">När du skapar en arbetsorder för en tillgång som täcks av en leverantörsgaranti, och arbetsordern har ett förväntat startdatum under garantiperioden, får du ett meddelande om garantiavtalet.</span><span class="sxs-lookup"><span data-stu-id="963a3-118">When you create a work order for an asset that is covered by a vendor warranty, if the work order has an expected start date during the warranty period, you receive a notification about the warranty agreement.</span></span> <span data-ttu-id="963a3-119">Du kan sedan avbryta arbets ordern efter behov.</span><span class="sxs-lookup"><span data-stu-id="963a3-119">You can then cancel the work order, as you require.</span></span>
+> <span data-ttu-id="8d06a-118">När du skapar en arbetsorder för en tillgång som täcks av en leverantörsgaranti, och arbetsordern har ett förväntat startdatum under garantiperioden, får du ett meddelande om garantiavtalet.</span><span class="sxs-lookup"><span data-stu-id="8d06a-118">When you create a work order for an asset that is covered by a vendor warranty, if the work order has an expected start date during the warranty period, you receive a notification about the warranty agreement.</span></span> <span data-ttu-id="8d06a-119">Du kan sedan avbryta arbets ordern efter behov.</span><span class="sxs-lookup"><span data-stu-id="8d06a-119">You can then cancel the work order, as you require.</span></span>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

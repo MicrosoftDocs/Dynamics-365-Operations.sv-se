@@ -15,26 +15,29 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7caa146532d2bce06b009c45da635327766a88d1
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: cf93307600aac6fa6e45524092ec4811742010e4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020715"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5244049"
 ---
-# <a name="search-for-vendors"></a><span data-ttu-id="6fa4f-103">Sök efter leverantörer</span><span class="sxs-lookup"><span data-stu-id="6fa4f-103">Search for vendors</span></span>
+# <a name="search-for-vendors"></a><span data-ttu-id="21494-103">Sök efter leverantörer</span><span class="sxs-lookup"><span data-stu-id="21494-103">Search for vendors</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="6fa4f-104">Läs hur du vill söka efter leverantörer baserat på specifika kriterier.</span><span class="sxs-lookup"><span data-stu-id="6fa4f-104">Learn how to search for vendors based on specific criteria.</span></span> <span data-ttu-id="6fa4f-105">I det här exemplet visas hur du söker efter leverantörer som har godkänts för en viss anskaffningskategori och har sin primära adress i ett visst land.</span><span class="sxs-lookup"><span data-stu-id="6fa4f-105">This example shows you how to search for vendors that are approved for a particular procurement category and have their primary address in a specific country.</span></span> <span data-ttu-id="6fa4f-106">Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.</span><span class="sxs-lookup"><span data-stu-id="6fa4f-106">You can run this procedure in demo data company USMF, or on your own data.</span></span> <span data-ttu-id="6fa4f-107">Den här uppgiften utförs vanligtvis av ett anskaffningsproffs.</span><span class="sxs-lookup"><span data-stu-id="6fa4f-107">This task would usually be carried out by a procurement professional.</span></span>
+<span data-ttu-id="21494-104">Läs hur du vill söka efter leverantörer baserat på specifika kriterier.</span><span class="sxs-lookup"><span data-stu-id="21494-104">Learn how to search for vendors based on specific criteria.</span></span> <span data-ttu-id="21494-105">I det här exemplet visas hur du söker efter leverantörer som har godkänts för en viss anskaffningskategori och har sin primära adress i ett visst land.</span><span class="sxs-lookup"><span data-stu-id="21494-105">This example shows you how to search for vendors that are approved for a particular procurement category and have their primary address in a specific country.</span></span> <span data-ttu-id="21494-106">Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.</span><span class="sxs-lookup"><span data-stu-id="21494-106">You can run this procedure in demo data company USMF, or on your own data.</span></span> <span data-ttu-id="21494-107">Den här uppgiften utförs vanligtvis av ett anskaffningsproffs.</span><span class="sxs-lookup"><span data-stu-id="21494-107">This task would usually be carried out by a procurement professional.</span></span>
 
-1. <span data-ttu-id="6fa4f-108">Gå till Anskaffning och källa > Leverantörer > Leverantörssökning.</span><span class="sxs-lookup"><span data-stu-id="6fa4f-108">Go to Procurement and sourcing > Vendors > Vendor search.</span></span>
-2. <span data-ttu-id="6fa4f-109">Klicka på plusikonen om du vill öppna sidan Val av anskaffningskategori.</span><span class="sxs-lookup"><span data-stu-id="6fa4f-109">Click on the Plus icon to open the Procurement category selection page.</span></span>  
-3. <span data-ttu-id="6fa4f-110">Välj "ANSKAFFNINGSKATEGORIER FÖR FÖRETAG\OFFICE-DATORER" i trädet.</span><span class="sxs-lookup"><span data-stu-id="6fa4f-110">In the tree, select 'CORP PROCUREMENT CATEGORIES\OFFICE MACHINES'.</span></span>
-    * <span data-ttu-id="6fa4f-111">Om du kör den här proceduren som en uppgiftsguide, måste du klicka på fliken Lås upp innan du kan välja korrekt nod.</span><span class="sxs-lookup"><span data-stu-id="6fa4f-111">If you're running this procedure as a task guide, you may have to click the Unlock button before you can select the correct node.</span></span> <span data-ttu-id="6fa4f-112">Om du inte använder USMF väljer du en av de kategorier som du har.</span><span class="sxs-lookup"><span data-stu-id="6fa4f-112">If you're not using USMF, select one of the categories that you have.</span></span>  
-4. <span data-ttu-id="6fa4f-113">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="6fa4f-113">Click Add.</span></span>
-    * <span data-ttu-id="6fa4f-114">Det går att välja fler än en kategori här.</span><span class="sxs-lookup"><span data-stu-id="6fa4f-114">It's possible to select more than one category here.</span></span> <span data-ttu-id="6fa4f-115">Om du gör det kommer alla leverantörer som har godkänts för minst en av kategorierna att hittas vid sökningen.</span><span class="sxs-lookup"><span data-stu-id="6fa4f-115">If you do so, the search will find all the vendors that are approved for at least one of the categories.</span></span>  
-5. <span data-ttu-id="6fa4f-116">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="6fa4f-116">Click OK.</span></span>
-6. <span data-ttu-id="6fa4f-117">Skriv ett värde i fältet Land/region.</span><span class="sxs-lookup"><span data-stu-id="6fa4f-117">In the Country/region field, type a value.</span></span>
-7. <span data-ttu-id="6fa4f-118">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="6fa4f-118">Click OK.</span></span>
+1. <span data-ttu-id="21494-108">Gå till Anskaffning och källa > Leverantörer > Leverantörssökning.</span><span class="sxs-lookup"><span data-stu-id="21494-108">Go to Procurement and sourcing > Vendors > Vendor search.</span></span>
+2. <span data-ttu-id="21494-109">Klicka på plusikonen om du vill öppna sidan Val av anskaffningskategori.</span><span class="sxs-lookup"><span data-stu-id="21494-109">Click on the Plus icon to open the Procurement category selection page.</span></span>  
+3. <span data-ttu-id="21494-110">Välj "ANSKAFFNINGSKATEGORIER FÖR FÖRETAG\OFFICE-DATORER" i trädet.</span><span class="sxs-lookup"><span data-stu-id="21494-110">In the tree, select 'CORP PROCUREMENT CATEGORIES\OFFICE MACHINES'.</span></span>
+    * <span data-ttu-id="21494-111">Om du kör den här proceduren som en uppgiftsguide, måste du klicka på fliken Lås upp innan du kan välja korrekt nod.</span><span class="sxs-lookup"><span data-stu-id="21494-111">If you're running this procedure as a task guide, you may have to click the Unlock button before you can select the correct node.</span></span> <span data-ttu-id="21494-112">Om du inte använder USMF väljer du en av de kategorier som du har.</span><span class="sxs-lookup"><span data-stu-id="21494-112">If you're not using USMF, select one of the categories that you have.</span></span>  
+4. <span data-ttu-id="21494-113">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="21494-113">Click Add.</span></span>
+    * <span data-ttu-id="21494-114">Det går att välja fler än en kategori här.</span><span class="sxs-lookup"><span data-stu-id="21494-114">It's possible to select more than one category here.</span></span> <span data-ttu-id="21494-115">Om du gör det kommer alla leverantörer som har godkänts för minst en av kategorierna att hittas vid sökningen.</span><span class="sxs-lookup"><span data-stu-id="21494-115">If you do so, the search will find all the vendors that are approved for at least one of the categories.</span></span>  
+5. <span data-ttu-id="21494-116">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="21494-116">Click OK.</span></span>
+6. <span data-ttu-id="21494-117">Skriv ett värde i fältet Land/region.</span><span class="sxs-lookup"><span data-stu-id="21494-117">In the Country/region field, type a value.</span></span>
+7. <span data-ttu-id="21494-118">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="21494-118">Click OK.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
