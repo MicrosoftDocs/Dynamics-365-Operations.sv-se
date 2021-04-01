@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e93358a9c76e8eb7bfb4ade4f772dece2aa5f7d3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 74991a2979540dab344f39976005250637fab29c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982501"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252592"
 ---
 # <a name="map-module"></a>Kartmodul
 
@@ -30,8 +30,6 @@ ms.locfileid: "4982501"
 
 
 Det här avsnittet mappar kartmoduler och beskriver hur du konfigurerar dem i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 En kartmodul visar platserna för butikerna i en interaktiv karta som återges med hjälp av [Bing Maps-V8 webbkontroll](https://docs.microsoft.com/bingmaps/v8-web-control/). En Bing Maps API-nyckel krävs och måste läggas till på sidan för delade Commerce-administration. I kartmoduler finns olika vyer, till exempel väg, flyg och gata som användarna kan välja för att visa kartplatser. De tillåter också interaktioner som att zooma in och använda användarens plats.
 

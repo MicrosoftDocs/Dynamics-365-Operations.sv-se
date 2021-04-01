@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b3338e1837496605ce94a54eb57a32b1b83145b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d0338447cba847f3677f5e3de7144fc75da01ddf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016941"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237386"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Anbudsförfrågningar (RFQ) – översikt
 
@@ -80,23 +80,23 @@ På sidan **Anskaffnings- och källparametrar** väljer du mallen för e-postmed
 - %Orsak till att buden returneras%
 - %Orsak till ändring%
 - %Ändringen har förberetts av%
-- %Företag%
+- %Company%
 - %anbudsförfrågansärendets namn%
 - %Utgångsdatum%
-- %Datum%
+- %Date%
 
-Token för %Orsak till att buden returneras% och %Orsak till ändring% ersätts av text som prokuristen kan ange, när han eller hon avslutar ändringen i guiden **Ändring**. Värdena för token %Ändring förberedd av%, och %Företag% hämtas automatiskt från anbudsförfrågan. Token %Datum% ersätts av det innevarande datumet.
+Token för %Orsak till att buden returneras% och %Orsak till ändring% ersätts av text som prokuristen kan ange, när han eller hon avslutar ändringen i guiden **Ändring**. Värdena för token %Ändring förberedd av%, och %Company% hämtas automatiskt från anbudsförfrågan. Token %Date% ersätts av det innevarande datumet.
 
 Om du vill avbryta en anbudsförfrågan när den har skickats, kan du göra detta från anbudsförfrågansärendet. För annullering krävs en e-postmall för att skicka meddelande om annullering till leverantörens kontaktpersoner. Mallen måste markeras på sidan **Anskaffnings- och källparametrar**. När mallen skapas, kan den innehålla följande utbytestoken:
 
 - %Orsak till annullering%
 - %Anbudsförfrågansärende%
 - %Anbudsförfrågan annullerad av%
-- %Företag%
+- %Company%
 - %anbudsförfrågansärendets namn%
-- %Datum%
+- %Date%
 
-Token %Orsak till annulleringen% ersättas med text som anskaffningsproffset kan ange i guiden **annullering**. Token %Datum% ersätts av det innevarande datumet.
+Token %Orsak till annulleringen% ersättas med text som anskaffningsproffset kan ange i guiden **annullering**. Token %Date% ersätts av det innevarande datumet.
 
 Om du vill använda orsakskoder för ett anbud för att ange varför det accepterades eller avvisades, måste du ställa in orsakskoder på sidan **Leverantöranledningar**.
 
