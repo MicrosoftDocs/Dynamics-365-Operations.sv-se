@@ -16,12 +16,12 @@ ms.search.region: Belgium, Netherlands, Sweden
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7ef7d8d042c9c0d78c1ea3e56eda2ff3597a9781
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 355cdf28229721607660ee6e06c746e45a1d90a1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962680"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5248859"
 ---
 # <a name="import-or-manually-create-postal-codes"></a>Importera eller skapa postnummer manuellt
 

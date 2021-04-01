@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 457c547947ce6182d03e7a8276b380bc08535bca
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 30506b17331d15e1164f513b34ff71f612828f8b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985122"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5256701"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Lägg till ekonomiska dimensioner i arbetsyta för ekonomichef
 
@@ -33,7 +33,7 @@ Det här avsnittet beskriver hur du lägger till ekonomiska dimensioner till arb
 1. I Finance på sidan **Entitetsbutiken** kan du uppdatera måtten **LedgerActivityMeasure** och **BudgetActivityMeasure**.
 2. Öppna Programutforskaren i Visual Studio och sök efter **LedgerCFO**.
 3. Under **resurser** öppnar du **LedgerCFOWorkspacePBIX**.
-4. När resursen öppnas i desktop Microsoft Power BI väljer du **Hämta data**, väljer **SQL Server database** och väljer sedan **Anslut**.
+4. När resursen öppnas i Microsoft Power BI Desktop väljer du **Hämta data**, väljer **SQL Server database** och väljer sedan **Anslut**.
 5. Ange servernamn och ange **AxDW** som databasen. Välj **DirectQuery** och sedan **OK**.
 6. Leta upp och markera **LedgerActivityMeasure\_DimensionCombination**, och välj sedan **lasta**.
 
