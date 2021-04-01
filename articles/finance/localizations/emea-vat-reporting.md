@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ff1d7fb2c770ef2ce1ac4fb4ad39961f8483ed5b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 444726e6295fb127316af9c8382ccb4d25d28ce3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5005889"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232008"
 ---
 # <a name="vat-reporting-for-europe"></a>Momsrapporter för Europa
 
