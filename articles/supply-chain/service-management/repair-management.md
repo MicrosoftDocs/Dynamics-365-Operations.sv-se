@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ebb9833be5e51fe59e9895e67cd8e55058078aa
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 265709f298d9310d5d647eaa029ece778d2e226e
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001359"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470651"
 ---
 # <a name="repair-management"></a>Reparationshantering       
 
@@ -37,15 +37,11 @@ Du kan ställa in symptom, diagnos och upplösning. Dessa kan senare användas n
 
 Använd följande inställningsformulär när du anger information som används för att ange symptomen, diagnosen och lösningen för reparationen.
 
-1.  Klicka på **servicehantering**\>**inställningar**\>**reparation**\>**villkor**.
-
-2.  Klicka på **servicehantering**\>**inställningar**\>**reparation**\>**symptomområden**.
-
-3.  Klicka på **servicehantering**\>**inställningar**\>**reparation**\>**diagnosområden**.
-
-4.  Klicka på **servicehantering**\>**inställningar**\>**reparation**\>**lösningar**.
-
-5.  Klicka på **servicehantering**\>**inställningar**\>**reparation**\>**reparationssteg**.
+- **Servicehantering** \> **inställningar** \> **reparation** \> **villkor**.
+- **Servicehantering** \> **inställningar** \> **reparation** \> **symptomområden**.
+-  **Servicehantering** \> **inställningar** \> **reparation** \> **diagnosområden**.
+- **Servicehantering** \> **inställningar** \> **reparation** \> **lösningar**.
+- **Servicehantering** \> **inställningar** \> **reparation** \> **reparationssteg**.
 
 ## <a name="symptoms-and-conditions"></a>Symptom och villkor
 
@@ -81,19 +77,19 @@ Du kan skapa reparationsrader för varje steg i reparationsprocessen.
 
 ## <a name="create-a-repair-line-on-a-service-order"></a>Skapa en reparationsrad på en serviceorder
 
-1.  Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.
+1.  Klicka på **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.
 
 2.  Markera serviceordern med serviceobjektet som behöver repareras.
 
-3.  Klicka på **reparation**\>**reparationsrader** för att öppna formuläret **reparationsrader**.
+3.  Klicka på **reparation** \> **reparationsrader** för att öppna formuläret **reparationsrader**.
 
-4.  Skapa en ny rad genom att trycka på CTRL+N.
+4.  Skapa en ny rad genom att välja **Nytt**.
 
 5.  Markera ett serviceobjekt. Du kan välja valfritt serviceobjekt som har ställts in med en objektrelation på serviceordern.
 
 6.  Markera någon av de förinställda symptomen, diagnoserna och utförandevärdena som är relevanta på reparationsraden och, om det behövs, klicka på fliken **anteckning** om du vill skapa en anteckning på reparationsraden.
 
-7.  Spara den nya reparationsraden genom att trycka på CTRL+S. Fältet **skapat datum och klockslag** på fliken **allmänt** i formuläret **reparationsrader** uppdateras med tidpunkten då raden sparas.
+7.  Välj **Spara** för att spara den nya reparationsraden. Fältet **skapat datum och klockslag** på fliken **allmänt** i formuläret **reparationsrader** uppdateras med tidpunkten då raden sparas.
 
 ## <a name="tracking-progress-and-resolving-a-repair-issue"></a>Uppföljning och lösa ett problem med reparation
 

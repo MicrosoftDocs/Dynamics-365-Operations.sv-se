@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: fb598b3ac7dd72e8c500f0c2eaf07462009c67f7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 722b004e607cb2e6b7de292d92b67b18c2024696
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970316"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556276"
 ---
 # <a name="planned-cross-docking"></a>Planerad direktleverans
 
@@ -37,14 +37,14 @@ Vid tiden för inleverans av inkommande order identifierar inställningen för d
 > [!NOTE]
 > Lagertransaktioner avregistreras **inte** när jobbet för direktleverans avbryts, även om inställningen för denna funktion aktiveras i parametrar för lagerstyrning.
 
-## <a name="turn-on-the-planned-cross-docking-feature"></a>Aktivera funktionen planerad direktleverans
+## <a name="turn-on-the-planned-cross-docking-features"></a>Aktivera funktionen planerad direktleverans
 
-Innan du kan använda funktionen avancerad direktleverans måste funktionen aktiveras i ditt system. Administratörer kan använda arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
+Om systemet inte redan har de funktioner som beskrivs i det här avsnittet går du till [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar följande funktioner i följande ordning:
 
-- **Modul:** *Lagerstyrning*
-- **Funktionens namn:** *Planerad direktleverans*
+1. *Planerad direktleverans*
+2. *Mallar för direktleverans med platsdirektiv*
 
-## <a name="setup"></a>Konfigurera
+## <a name="setup"></a>Ställ in
 
 ### <a name="regenerate-load-posting-methods"></a>Generera om lastbokföringsmetoder
 
@@ -89,6 +89,10 @@ Planerad direktleverans är implementerad som en lastbokföringsmetod. När du h
     - **Validera på leveranskvitto igen:** *Nej*
 
         Det här alternativet anger om leveransen ska omvalideras under inleverans. Om det här alternativet har värdet *Ja* kontrolleras både det maximala tidsfönstret och intervallet för utgångsdagar.
+
+    - **Direktivkod** Lämna det här fältet tomt
+
+        Med det här alternativet kan platsdirektiv användas för att avgöra vilken som är den bästa platsen att flytta direktutleverans av lager till. Du kan ställa in den genom att tilldela en direktivkod till varje relevant direktutleveransmall. Varje kod till direktiv identifierar ett unikt platsdirektivet.
 
     - **Validera tidsfönster:** *Ja*
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 09b5770190fea9591f422b61ce6deedb2b9fa790
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1fe285f05e5f1ddcb7bd206290b9954cbdaffc75
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994013"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487107"
 ---
 # <a name="troubleshoot-warehouse-configuration"></a>Felsöka distributionslagerkonfiguration
 
@@ -109,5 +109,32 @@ Om du vill att arbetare ska kunna göra denna ändring kan du skapa ett menyalte
 
 Du kan ställa in andra fält på sidan efter behov.
 
+## <a name="the-dock-management-profile-of-a-location-profile-is-not-preventing-inventory-types-from-being-mixed"></a>Dockhanteringsprofilen för en platsprofil förhindrar inte att lagertyper blandas.
+
+### <a name="issue-description"></a>Problembeskrivning
+
+Om du använder *policyer för leveranskonsolidering*. Du har ställt in en *dockningshanteringsprofil* för en *platsprofil*, men när arbete skapas blandas lagertyperna på den slutliga platsen.
+
+### <a name="issue-resolution"></a>Problemlösning
+
+Dockhanteringsprofiler kräver att arbetet delas upp i förväg. Med andra ord förväntar sig dockhanteringsprofilen att en arbetsrubrik inte har flera platser.
+
+För att dockhanteringsprofilen ska fungera effektivt måste en arbetsrubriksbrytning ställas in.
+
+I det här exemplet konfigureras vår dockningshanteringsprofil så att **lagertyper som inte ska blandas** ställs in på *Leverans-ID* och vi ställer in en arbetsrubriksbrytning för det:
+
+1. Gå till **Lagerstyrning \> Inställningar \> Arbete \> Arbetsmallar**.
+1. Välj vilken **arbetsordertyp** du vill redigera (t.ex. *inköpsorder*).
+1. Välj arbetsmallen som du vill redigera.
+1. I åtgärdsfönstret väljer du **Redigera fråga**.
+1. Öppna fliken **Sortering** och lägg till en rad med följande inställningar:
+    - **Tabell** - *Tillfälliga arbetstransaktioner*
+    - **Härlett register** - *Tillfälliga arbetstransaktioner*
+    - **Fält** - *leverans-ID*
+1. Välj **OK**.
+1. Du går tillbaka till sidan **Arbetsmallar**. Klicka på **Arbetsuppgiftshuvudet delas** i åtgärdsfönstret.
+1. I åtgärdsfönstret väljer du **Redigera**.
+1. Markera kryssrutan som är kopplad till **fältnamnet** *leverans-ID*.
+1. Klicka på **Spara** i åtgärdsfönstret.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

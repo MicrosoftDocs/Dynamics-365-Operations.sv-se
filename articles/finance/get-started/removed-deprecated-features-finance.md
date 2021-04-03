@@ -3,7 +3,7 @@ title: Borttagna och utfasade funktioner i Dynamics 365 Finance
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 Finance.
 author: roschlom
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,15 +11,15 @@ ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: sericks
+ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7090a7461c7b77d74f081afd8f22db100cdf0792
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 14428491383883c1fc2a8cdcd1975e1f1cb71b40
+ms.sourcegitcommit: e9d19f25e64cf4d1c1d07c8031a7081454a6f79e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154187"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5474073"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Borttagna och utfasade funktioner i Dynamics 365 Finance
 
@@ -33,7 +33,19 @@ I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerat
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
 > [!NOTE]
-> Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](https://docs.microsoft.com/dynamics/s-e/). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
+> Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.17 utgåva
+
+### <a name="lcs-repository-as-a-storage-option-for-electronic-reporting-configurations"></a>LCS-databas som ett lagringsalternativ för elektroniska rapporteringskonfigurationer
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Utbytt med den nya globala databasen Regulatory Configuration Service (RCS) |
+| **Ersatt av en annan funktion?**   | Ja |
+| **Produktområden som påverkas**         | Dynamics 365 Finance, Supply Chain Management och Project Operations-produkter|
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell: Senast den 1 april 2022 planerar vi att inte längre stödja Microsoft Dynamics Lifecycle Services-databasen (LCS) som lagringsalternativ för konfigurationer av elektronisk rapportering (ER). Nya Microsoft ER-konfigurationer kommer att publiceras för hämtning exklusivt från den globala databasen. Du öppnar den globala databasen från Dynamics 365-produkterna och RCS. Mer information finns i [Importera konfigurationer för elektronisk rapportering (ER) från RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.16 utgåva
 

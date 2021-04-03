@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fe009de3a94bf3ea7885f8f794879e16c36a3266
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: ed215c4577484269ddf5de20ad93417f8eef38d6
+ms.sourcegitcommit: 45d10d0c25b3ec585323709bb97ba1895b500429
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115352"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "5502998"
 ---
 # <a name="edit-personal-information"></a>Redigera personliga uppgifter
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan redigera dina personuppgifter i Dynamics 365 Human Resources i **arbetsytan Självbetjäning för medarbetare**.
 
@@ -38,13 +40,16 @@ De personuppgifter du kan redigera innehåller:
 - Betalningsmetod
 - Bild som används i personal
 
+>[!NOTE]
+>Du kanske inte kan redigera vissa typer av personlig information, till exempel affärskontaktinformation. Mer information finns i [Begränsa redigering av personlig information](hr-employee-self-service-restrict-editing.md).
+
 Parametrar som ställs in i den globala adressboken avgör vilka roller som kan se dina personuppgifter.
 
 1. I personal, väljer du **Självbetjäning för medarbetare**.
 
 2. Välj **redigera personuppgifter**.
 
-3. Om du vill ändra din adress väljer du fliken **adresser**. Ändringar du gör visas i arbetsytan **personalhantering** för att avisera HR. 
+3. Om du vill ändra din adress väljer du fliken **adresser**. Ändringar du gör visas i arbetsytan **personalhantering** för att avisera HR.
 
     - För att lägga till en ny adress, välj **Lägg till**.
     - Om du vill redigera en befintlig adress markerar du adressen och väljer sedan **redigera**.
@@ -52,11 +57,13 @@ Parametrar som ställs in i den globala adressboken avgör vilka roller som kan 
     - Om du vill lägga till eller ta bort en kontakt väljer du **fler alternativ** och väljer sedan **Avancerat**. Under **Kontaktinformation**, välj **Lägg till** eller **Ta bort** och redigera fälten vid behov.
     - Om du vill ange tidszon, välj **fler alternativ** och väljer sedan **Avancerat**. Under **allmänt** redigerar du fälten om det behövs.
 
-4. Om du vill ändra din kontaktinformation väljer du fliken **kontaktinformation**. Du kan tillhandahålla olika typer av kontaktinformation, t.ex. telefon, e-post och länkar till sociala medier. Du kan ange en kontaktinformation som primär, men du kan bara ställa in en av varje typ som primär. 
+4. Om du vill ändra din kontaktinformation väljer du fliken **kontaktinformation**. Du kan tillhandahålla olika typer av kontaktinformation, t.ex. telefon, e-post och länkar till sociala medier. Du kan ange en kontaktinformation som primär, men du kan bara ställa in en av varje typ som primär.
 
     - För att lägga till en ny kontaktinformation, välj **Lägg till**. Redigera fälten efter behov.
     - Om du vill redigera en befintlig kontaktinformation väljer du artikeln och väljer sedan **redigera**. Redigera fälten efter behov.
     - Om du vill ange en kontaktinformation som privat markerar du artikeln, väljer **Avancerat** och ställer sedan in växlingsknappen på **privat** till **ja**. Välj **OK**.
+      >[!NOTE]
+      >Knappen **Avancerad** är inte tillgänglig om din administratör har aktiverat funktion **(förhandsversion) begränsa anställda från att lägga till eller redigera adress- och kontaktinformation för utvalda syften** i din miljö. Mer information finns i [Begränsa redigering av personlig information](hr-employee-self-service-restrict-editing.md).
   
 5. Om du vill ändra dina personliga kontakter väljer du fliken **personliga kontakter**. Du kan ange nödkontakter, mottagare och beroenden. En kontakt kan vara en person eller en organisation. Funktionen **Hantering av förmåner** använder personlig kontaktinformation. För mer information, se [Konfigurera berättigandealternativ för personlig kontakt](hr-benefits-setup-contact-eligibility-options.md).
 

@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
@@ -16,18 +15,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: f01109b360b23adf84673e84e6240f8f4431340d
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 757c9bea86d0cba9b67c40ed5afd19804e01778c
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092467"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564445"
 ---
 # <a name="practice-manager-power-bi-content"></a>Praxischef Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vad som ingår i **praxischef** Microsoft Power BI-innehåll. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
+Det här avsnittet beskriver vad som ingår i innehållet för **praxischef** för Microsoft Power BI. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
 
 ## <a name="overview"></a>Översikt
 
