@@ -3,7 +3,7 @@ title: Skapa e-postmallar för transaktionshändelser
 description: I det här avsnittet beskrivs hur du skapar, överför och konfigurerar e-postmallar för transaktionshändelser i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 245ca998ef3e6d172df3525f06d7901f3f41b650
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 756e2a64ef4c33c347106968eb6bc79a413c3ff7
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000800"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555255"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Skapa e-postmallar för transaktionshändelser
 
@@ -39,7 +39,7 @@ Innan du kan mappa en specifik transaktionshändelse till en e-postmall måste d
 
 Gör så här om du vill skapa en e-postmall.
 
-1. I Commerce-administration, gå till **Organisationens e-postmallar**, som är under **Retail och Commerce \> Administrationsinställning \> Organisationens e-postmallar** eller **Organisationsadministration \> Konfigurera \> Organisation e-postmallar**.
+1. I Commerce-administration, gå till **Retail och Commerce \> Headquarters setup \> Organisationens e-postmallar** eller **Organisationsadministration \> Konfigurera \> Organisationens e-postmallar**.
 1. Välj **Ny**.
 1. Under **Allmänt** anger du följande fält:
 
@@ -78,28 +78,29 @@ Här är ett exempel:
 
 Följande platshållare hämtar och visar data som definieras på försäljningsordernivå (i motsats till försäljningsradnivå).
 
-| Namn på platshållare    | Platshållarens värde                                                |
-|---------------------|------------------------------------------------------------------|
-| customername        | Namnet på den kund som lade beställningen.                   |
-| salesid             | Försäljningsorderns ID.                                       |
-| deliveryaddress     | Leveransadressen för levererade order.                         |
-| customeraddress     | Kundens adress.                                     |
-| deliverydate        | Leveransdatum.                                               |
-| shipdate            | Transportdatum.                                                   |
-| modeofdelivery      | Leveranssätt för ordern.                                  |
-| avgifter             | Orderns totala kostnader.                                 |
-| moms                 | Orderns totala moms.                                     |
-| summa               | Orderns totala belopp.                                  |
-| ordernetamount      | Det totala beloppet för ordern, minus total moms.             |
-| rabatt            | Orderns totala rabatt.                                |
-| storename           | Namnet på den butik som lade beställningen.                |
-| storeaddress        | Adressen till den butik som lade beställningen.                  |
-| storeopenfrom       | Öppningstiden för den butik som lade beställningen.             |
-| storeopento         | Stängningstiden för den butik som lade beställningen.             |
-| pickupstorename     | Namnet på den butik där ordern kommer att hämtas upp.         |
-| pickupstoreaddress  | Adressen till den butik där ordern kommer att hämtas upp.      |
-| pickupopenstorefrom | Öppningstiden för den butik där ordern kommer att hämtas upp. |
-| pickupopenstoreto   | Stängningstiden för den butik där ordern kommer att hämtas upp. |
+| Namn på platshållare     | Platshållarens värde                                            |
+| -------------------- | ------------------------------------------------------------ |
+| customername         | Namnet på den kund som lade beställningen.               |
+| salesid              | Försäljningsorderns ID.                                   |
+| deliveryaddress      | Leveransadressen för levererade order.                     |
+| customeraddress      | Kundens adress.                                 |
+| customeremailaddress | E-postadressen som kunden angav i kassan.     |
+| deliverydate         | Leveransdatum.                                           |
+| shipdate             | Transportdatum.                                               |
+| modeofdelivery       | Leveranssätt för ordern.                              |
+| avgifter              | Orderns totala kostnader.                             |
+| moms                  | Orderns totala moms.                                 |
+| summa                | Orderns totala belopp.                              |
+| ordernetamount       | Det totala beloppet för ordern, minus total moms.         |
+| rabatt             | Orderns totala rabatt.                            |
+| storename            | Namnet på den butik som lade beställningen.            |
+| storeaddress         | Adressen till den butik som lade beställningen.              |
+| storeopenfrom        | Öppningstiden för den butik som lade beställningen.         |
+| storeopento          | Stängningstiden för den butik som lade beställningen.         |
+| pickupstorename      | Namnet på den butik där ordern kommer att hämtas upp.     |
+| pickupstoreaddress   | Adressen till den butik där ordern kommer att hämtas upp.  |
+| pickupopenstorefrom  | Öppningstiden för den butik där ordern kommer att hämtas upp. |
+| pickupopenstoreto    | Stängningstiden för den butik där ordern kommer att hämtas upp. |
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Platshållare för orderrad (försäljningsradnivå)
 
@@ -169,11 +170,8 @@ Här är ett exempel:
 
 Kvitton kan skickas via e-post till kunder som köper in i detaljhandelsbutik (POS). I allmänhet är stegen för att skapa mallen för e-post densamma som stegen för att skapa mallar för andra transaktionshändelser. Följande ändringar måste dock utföras:
 
-- E-postmallens ID måste vara **emailRecpt**.
 - Kvittotexten infogas i e-postmeddelandet med hjälp av platshållaren **%message%**. Om du vill vara säker på att kvittoinnehållet återges korrekt omger du platshållaren **%message%** med HTML-taggarna **&lt;pre&gt;** och **&lt;/pre&gt;**.
-- Radbrytningar i HTML-kodens sidhuvud och sidfot konverteras till **&lt;br /&gt;**-taggar i HTML så att kvittotexten återges på rätt sätt. Om du vill ta bort det oönskade lodräta utrymmet i e-postkvittot tar du bort radbrytningar från alla platser i HTML-koden där det inte behövs något mellanrum.
-
-För mer information om hur du konfigurerar e-postkvitton, se [Konfigurera e-postkvitton](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts).
+- Platshållaren **%receiptid%** kan användas för att visa en QR-kod eller en streckkod som representerar inleverans-ID:t. (QR-koder och streckkoder genereras dynamiskt och serveras av en tredje parts tjänst.) Mer information om hur du visar en QR-kod eller streckkod i ett e-postkvitto finns i [Lägg till en QR-kod eller streckkod i transaktions- och mottagnings-e-postmeddelanden](add-qr-code-barcode-email.md).
 
 ## <a name="upload-the-email-html"></a>Överför HTML-koden för e-post
 

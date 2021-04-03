@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CostingVersion, InventItemPrice
+ms.search.form: CostingVersion, InventItemPrice, InventParameters
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 69992
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 166d12d707deabc59f7613a5016851b30fcc42d8
-ms.sourcegitcommit: 41baf654a2553cfe5c715feb9cc03e48cfc12598
+ms.openlocfilehash: fc4ae40e9740ce76e79b76c2bff2c690568abff2
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "5024680"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500608"
 ---
 # <a name="manage-standard-cost-updates"></a>Hantera standardkostnadsuppdateringar
 
@@ -45,6 +45,8 @@ Följande exempel visas hur enversionssättet och tvåversionssättet kan använ
 Detta exempel använde en extra kostnadsversion för hantering av uppdateringar under hela år 2020. Mer än en extra kostnadsversion kan användas, till exempel en separat version för varje uppdateringsbatch. När fler än en ytterligare kostnadsredovisning används, måste reserven uttryckas som de aktiva kostnaderna, eftersom de aktiva kostnaderna fördelas över flera kostnadsversioner.
 
 ## <a name="financial-dimensions-for-the-standard-cost-revaluation"></a>Ekonomiska dimensioner för omvärdering av standardkostnad
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Att aktivera ett nytt standardpris omvärderar vanligtvis det aktuella lagervärdet genom transaktioner för omvärdering av standardkostnad. Vanligtvis bokförs de ekonomiska dimensionerna för artikeln sedan på transaktionerna. Om du däremot skulle vilja styra om och hur de ekonomiska dimensionerna bokförs använder du [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera funktionen med namnet *Alternativ som används som standard i ekonomiska dimensioner för omvärdering av standardkostnad för lager*. När du har aktiverat den här funktionen går du till **Kostnadshantering > Policyinställningar för lagerredovisning > Parametrar** och anger den nya listrutan **Ursprunget till den ekonomiska dimensionen** till ett av följande värden:
 
