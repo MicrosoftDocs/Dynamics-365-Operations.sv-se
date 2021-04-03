@@ -16,48 +16,51 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7082f9e7640e8ef1b2873a954327b61a440e8ad0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8a037cb31e297926b1bcb66bff91bdd7eb5c40b7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000016"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264858"
 ---
-# <a name="monitor-and-manage-iot-intelligence"></a><span data-ttu-id="a97ae-103">Övervaka och hantera IoT-information</span><span class="sxs-lookup"><span data-stu-id="a97ae-103">Monitor and manage IoT Intelligence</span></span>
+# <a name="monitor-and-manage-iot-intelligence"></a><span data-ttu-id="3d3d5-103">Övervaka och hantera IoT-information</span><span class="sxs-lookup"><span data-stu-id="3d3d5-103">Monitor and manage IoT Intelligence</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="a97ae-104">I det här avsnittet beskrivs hur du övervakar och hanterar IoT-information.</span><span class="sxs-lookup"><span data-stu-id="a97ae-104">This topic explains how to monitor and manage IoT Intelligence.</span></span>
+<span data-ttu-id="3d3d5-104">I det här avsnittet beskrivs hur du övervakar och hanterar IoT-information.</span><span class="sxs-lookup"><span data-stu-id="3d3d5-104">This topic explains how to monitor and manage IoT Intelligence.</span></span>
 
-## <a name="monitor-scenarios-in-microsoft-dynamics-365-supply-chain-management"></a><a id="monitor-scenarios"></a><span data-ttu-id="a97ae-105">Övervaka scenarier i Microsoft Dynamics 365 Supply Chain Management</span><span class="sxs-lookup"><span data-stu-id="a97ae-105">Monitor scenarios in Microsoft Dynamics 365 Supply Chain Management</span></span>
+## <a name="monitor-scenarios-in-microsoft-dynamics-365-supply-chain-management"></a><a id="monitor-scenarios"></a><span data-ttu-id="3d3d5-105">Övervaka scenarier i Microsoft Dynamics 365 Supply Chain Management</span><span class="sxs-lookup"><span data-stu-id="3d3d5-105">Monitor scenarios in Microsoft Dynamics 365 Supply Chain Management</span></span>
 
-<span data-ttu-id="a97ae-106">Du kan övervaka IoT-information-bearbetningen från flera olika platser:</span><span class="sxs-lookup"><span data-stu-id="a97ae-106">You can monitor IoT Intelligence processing from several places:</span></span>
+<span data-ttu-id="3d3d5-106">Du kan övervaka IoT-information-bearbetningen från flera olika platser:</span><span class="sxs-lookup"><span data-stu-id="3d3d5-106">You can monitor IoT Intelligence processing from several places:</span></span>
 
-+ <span data-ttu-id="a97ae-107">**Moduler \> Tillverkningsstyrning \> Förfrågningar och rapporter \> IoT-information \> Meddelanden** – Visa listan över olösta meddelanden.</span><span class="sxs-lookup"><span data-stu-id="a97ae-107">**Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Notifications** – View the list of unresolved notifications.</span></span>
-+ <span data-ttu-id="a97ae-108">**Moduler \> Tillverkningsstyrning \> Förfrågningar och rapporter \> IoT-information \> Stängda meddelanden** – Visa listan över meddelanden som har lösts eller stängts.</span><span class="sxs-lookup"><span data-stu-id="a97ae-108">**Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Closed notifications** – View the list of notifications that have been resolved or dismissed.</span></span>
-+ <span data-ttu-id="a97ae-109">**Moduler \> Tillverkningsstyrning \> Förfrågningar och rapporter \> IoT-information \> Metriska nycklar** – Visa måttnycklarna för **Resursstatus**-diagrammen för tidsserier.</span><span class="sxs-lookup"><span data-stu-id="a97ae-109">**Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys** – View the metric keys for the **Resource Status** times series charts.</span></span>
-+ <span data-ttu-id="a97ae-110">**Moduler \> Tillverkningsstyrning \> Tillverkning \> Resursstatus** – Spåra specifika mått med hjälp av dialogrutan **Konfigurera**.</span><span class="sxs-lookup"><span data-stu-id="a97ae-110">**Modules \> Production control \> Manufacturing execution \> Resource status** – Track specific metrics by using the **Configure** dialog box.</span></span> <span data-ttu-id="a97ae-111">Om ett scenario upptäcker ett undantag, visar ett meddelande information om undantaget.</span><span class="sxs-lookup"><span data-stu-id="a97ae-111">If a scenario detects an exception, a notification shows the details of the exception.</span></span>
-+ <span data-ttu-id="a97ae-112">**Arbetsytor \> Tillverkningsgolvsledning \> Meddelanden** – Visa listan över olösta meddelanden.</span><span class="sxs-lookup"><span data-stu-id="a97ae-112">**Workspaces \> Production floor management \> Notifications** – View the list of unresolved notifications.</span></span>
++ <span data-ttu-id="3d3d5-107">**Moduler \> Tillverkningsstyrning \> Förfrågningar och rapporter \> IoT-information \> Meddelanden** – Visa listan över olösta meddelanden.</span><span class="sxs-lookup"><span data-stu-id="3d3d5-107">**Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Notifications** – View the list of unresolved notifications.</span></span>
++ <span data-ttu-id="3d3d5-108">**Moduler \> Tillverkningsstyrning \> Förfrågningar och rapporter \> IoT-information \> Stängda meddelanden** – Visa listan över meddelanden som har lösts eller stängts.</span><span class="sxs-lookup"><span data-stu-id="3d3d5-108">**Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Closed notifications** – View the list of notifications that have been resolved or dismissed.</span></span>
++ <span data-ttu-id="3d3d5-109">**Moduler \> Tillverkningsstyrning \> Förfrågningar och rapporter \> IoT-information \> Metriska nycklar** – Visa måttnycklarna för **Resursstatus**-diagrammen för tidsserier.</span><span class="sxs-lookup"><span data-stu-id="3d3d5-109">**Modules \> Production control \> Inquiries and reports \> IoT Intelligence \> Metric keys** – View the metric keys for the **Resource Status** times series charts.</span></span>
++ <span data-ttu-id="3d3d5-110">**Moduler \> Tillverkningsstyrning \> Tillverkning \> Resursstatus** – Spåra specifika mått med hjälp av dialogrutan **Konfigurera**.</span><span class="sxs-lookup"><span data-stu-id="3d3d5-110">**Modules \> Production control \> Manufacturing execution \> Resource status** – Track specific metrics by using the **Configure** dialog box.</span></span> <span data-ttu-id="3d3d5-111">Om ett scenario upptäcker ett undantag, visar ett meddelande information om undantaget.</span><span class="sxs-lookup"><span data-stu-id="3d3d5-111">If a scenario detects an exception, a notification shows the details of the exception.</span></span>
++ <span data-ttu-id="3d3d5-112">**Arbetsytor \> Tillverkningsgolvsledning \> Meddelanden** – Visa listan över olösta meddelanden.</span><span class="sxs-lookup"><span data-stu-id="3d3d5-112">**Workspaces \> Production floor management \> Notifications** – View the list of unresolved notifications.</span></span>
 
-## <a name="modify-a-running-iot-intelligence-scenario"></a><span data-ttu-id="a97ae-113">Ändra ett IoT-information-scenario som körs</span><span class="sxs-lookup"><span data-stu-id="a97ae-113">Modify a running IoT Intelligence scenario</span></span>
+## <a name="modify-a-running-iot-intelligence-scenario"></a><span data-ttu-id="3d3d5-113">Ändra ett IoT-information-scenario som körs</span><span class="sxs-lookup"><span data-stu-id="3d3d5-113">Modify a running IoT Intelligence scenario</span></span>
 
-<span data-ttu-id="a97ae-114">När ett scenario körs kan du göra följande ändringar:</span><span class="sxs-lookup"><span data-stu-id="a97ae-114">When a scenario is running, you can make these changes:</span></span>
+<span data-ttu-id="3d3d5-114">När ett scenario körs kan du göra följande ändringar:</span><span class="sxs-lookup"><span data-stu-id="3d3d5-114">When a scenario is running, you can make these changes:</span></span>
 
-+ <span data-ttu-id="a97ae-115">Lägg till nya definitioner för sensorschema.</span><span class="sxs-lookup"><span data-stu-id="a97ae-115">Add new sensor schema definitions.</span></span>
-+ <span data-ttu-id="a97ae-116">Välj nya värden för signaldata.</span><span class="sxs-lookup"><span data-stu-id="a97ae-116">Select new signal data values.</span></span>
-+ <span data-ttu-id="a97ae-117">Avbryt urvalet av befintliga signaldatavärden.</span><span class="sxs-lookup"><span data-stu-id="a97ae-117">Cancel the selection of existing signal data values.</span></span>
-+ <span data-ttu-id="a97ae-118">Lägg till och mappa nya värden för signaldata.</span><span class="sxs-lookup"><span data-stu-id="a97ae-118">Add and map new signal data values.</span></span>
-+ <span data-ttu-id="a97ae-119">Uppdatera tröskelvärden.</span><span class="sxs-lookup"><span data-stu-id="a97ae-119">Update threshold values.</span></span>
++ <span data-ttu-id="3d3d5-115">Lägg till nya definitioner för sensorschema.</span><span class="sxs-lookup"><span data-stu-id="3d3d5-115">Add new sensor schema definitions.</span></span>
++ <span data-ttu-id="3d3d5-116">Välj nya värden för signaldata.</span><span class="sxs-lookup"><span data-stu-id="3d3d5-116">Select new signal data values.</span></span>
++ <span data-ttu-id="3d3d5-117">Avbryt urvalet av befintliga signaldatavärden.</span><span class="sxs-lookup"><span data-stu-id="3d3d5-117">Cancel the selection of existing signal data values.</span></span>
++ <span data-ttu-id="3d3d5-118">Lägg till och mappa nya värden för signaldata.</span><span class="sxs-lookup"><span data-stu-id="3d3d5-118">Add and map new signal data values.</span></span>
++ <span data-ttu-id="3d3d5-119">Uppdatera tröskelvärden.</span><span class="sxs-lookup"><span data-stu-id="3d3d5-119">Update threshold values.</span></span>
 
-<span data-ttu-id="a97ae-120">När ett scenario körs är följande ändringar förbjudna:</span><span class="sxs-lookup"><span data-stu-id="a97ae-120">When a scenario is running, these changes are prohibited:</span></span>
+<span data-ttu-id="3d3d5-120">När ett scenario körs är följande ändringar förbjudna:</span><span class="sxs-lookup"><span data-stu-id="3d3d5-120">When a scenario is running, these changes are prohibited:</span></span>
 
-+ <span data-ttu-id="a97ae-121">Ta bort eller ändra alla schemadefinitioner som för närvarande används av ett aktiverat scenario.</span><span class="sxs-lookup"><span data-stu-id="a97ae-121">Delete or modify any schema definitions that are currently consumed by an enabled scenario.</span></span>
-+ <span data-ttu-id="a97ae-122">Ändra det aktiverade scenariots valda schemasökvägar.</span><span class="sxs-lookup"><span data-stu-id="a97ae-122">Change the enabled scenario's selected schema paths.</span></span>
++ <span data-ttu-id="3d3d5-121">Ta bort eller ändra alla schemadefinitioner som för närvarande används av ett aktiverat scenario.</span><span class="sxs-lookup"><span data-stu-id="3d3d5-121">Delete or modify any schema definitions that are currently consumed by an enabled scenario.</span></span>
++ <span data-ttu-id="3d3d5-122">Ändra det aktiverade scenariots valda schemasökvägar.</span><span class="sxs-lookup"><span data-stu-id="3d3d5-122">Change the enabled scenario's selected schema paths.</span></span>
 
-## <a name="simulation-options"></a><span data-ttu-id="a97ae-123">Simuleringsalternativ</span><span class="sxs-lookup"><span data-stu-id="a97ae-123">Simulation options</span></span>
+## <a name="simulation-options"></a><span data-ttu-id="3d3d5-123">Simuleringsalternativ</span><span class="sxs-lookup"><span data-stu-id="3d3d5-123">Simulation options</span></span>
 
-<span data-ttu-id="a97ae-124">Du kan simulera fabriksdatorsignaler.</span><span class="sxs-lookup"><span data-stu-id="a97ae-124">You can simulate factory machine signals.</span></span> <span data-ttu-id="a97ae-125">Mer information finns i följande ämnen:</span><span class="sxs-lookup"><span data-stu-id="a97ae-125">For more information, see these topics:</span></span>
+<span data-ttu-id="3d3d5-124">Du kan simulera fabriksdatorsignaler.</span><span class="sxs-lookup"><span data-stu-id="3d3d5-124">You can simulate factory machine signals.</span></span> <span data-ttu-id="3d3d5-125">Mer information finns i följande ämnen:</span><span class="sxs-lookup"><span data-stu-id="3d3d5-125">For more information, see these topics:</span></span>
 
-+ [<span data-ttu-id="a97ae-126">Anslut IoT DevKit AZ3166 till Azure IoT Hub</span><span class="sxs-lookup"><span data-stu-id="a97ae-126">Connect IoT DevKit AZ3166 to Azure IoT Hub</span></span>](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
-+ [<span data-ttu-id="a97ae-127">Anslut Raspberryte PI online Simulator till Azure IoT-navet (Node.js)</span><span class="sxs-lookup"><span data-stu-id="a97ae-127">Connect Raspberry Pi online simulator to Azure IoT Hub (Node.js)</span></span>](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
-+ [<span data-ttu-id="a97ae-128">Översikt över lösningsaccelerator för enhetssimulering</span><span class="sxs-lookup"><span data-stu-id="a97ae-128">Device Simulation solution accelerator overview</span></span>](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
++ [<span data-ttu-id="3d3d5-126">Anslut IoT DevKit AZ3166 till Azure IoT Hub</span><span class="sxs-lookup"><span data-stu-id="3d3d5-126">Connect IoT DevKit AZ3166 to Azure IoT Hub</span></span>](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
++ [<span data-ttu-id="3d3d5-127">Anslut Raspberryte PI online Simulator till Azure IoT-navet (Node.js)</span><span class="sxs-lookup"><span data-stu-id="3d3d5-127">Connect Raspberry Pi online simulator to Azure IoT Hub (Node.js)</span></span>](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
++ [<span data-ttu-id="3d3d5-128">Översikt över lösningsaccelerator för enhetssimulering</span><span class="sxs-lookup"><span data-stu-id="3d3d5-128">Device Simulation solution accelerator overview</span></span>](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

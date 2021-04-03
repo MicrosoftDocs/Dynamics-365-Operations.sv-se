@@ -16,45 +16,50 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 13e32c9bc77470d6b8e157e7a7805d3d72850478
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: cb56d11cb3acd1e8e39765284269234fc632f17f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5114262"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465112"
 ---
-# <a name="enroll-and-remove-benefits-from-workers"></a><span data-ttu-id="c675e-103">Registrera och ta bort förmåner för arbetare</span><span class="sxs-lookup"><span data-stu-id="c675e-103">Enroll and remove benefits from workers</span></span>
+# <a name="enroll-and-remove-benefits-from-workers"></a><span data-ttu-id="4e9ee-103">Registrera och ta bort förmåner för arbetare</span><span class="sxs-lookup"><span data-stu-id="4e9ee-103">Enroll and remove benefits from workers</span></span>
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-<span data-ttu-id="c675e-104">I den här proceduren visas hur en enskild anställd kan omfattas av en eller flera förmåner, samt flera anställd kan omfattas av en förmån.</span><span class="sxs-lookup"><span data-stu-id="c675e-104">This procedure demonstrates how a single worker can be enrolled in one or more benefits, as well as multiple workers can be enrolled in a benefit.</span></span> <span data-ttu-id="c675e-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="c675e-105">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="4e9ee-104">I den här proceduren visas hur en enskild anställd kan omfattas av en eller flera förmåner, samt flera anställd kan omfattas av en förmån.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-104">This procedure demonstrates how a single worker can be enrolled in one or more benefits, as well as multiple workers can be enrolled in a benefit.</span></span> <span data-ttu-id="4e9ee-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-105">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="enroll-a-single-worker-in-benefits"></a><span data-ttu-id="c675e-106">Anmäl en enstaka medarbetare till förmåner</span><span class="sxs-lookup"><span data-stu-id="c675e-106">Enroll a single worker in benefits</span></span>
-1. <span data-ttu-id="c675e-107">Gå till Personal > Arbetare > Medarbetare</span><span class="sxs-lookup"><span data-stu-id="c675e-107">Go to Human resources > Workers > Employees</span></span>
-2. <span data-ttu-id="c675e-108">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="c675e-108">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="c675e-109">Klicka på Förmåner.</span><span class="sxs-lookup"><span data-stu-id="c675e-109">Click Benefits.</span></span>
-4. <span data-ttu-id="c675e-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="c675e-110">Click New.</span></span>
-5. <span data-ttu-id="c675e-111">Ange eller välj ett värde i fältet Förmån.</span><span class="sxs-lookup"><span data-stu-id="c675e-111">In the Benefit field, enter or select a value.</span></span>
-6. <span data-ttu-id="c675e-112">Ange datum och tid i fältet Giltighetsstartdatum.</span><span class="sxs-lookup"><span data-stu-id="c675e-112">In the Coverage start date field, enter a date and time.</span></span>
-7. <span data-ttu-id="c675e-113">Ange datum och tid i fältet Giltighetsslutdatum.</span><span class="sxs-lookup"><span data-stu-id="c675e-113">In the Coverage end date field, enter a date and time.</span></span>
-8. <span data-ttu-id="c675e-114">Expandera avsnittet Mottagare om mottagare ska läggas till i förmånen.</span><span class="sxs-lookup"><span data-stu-id="c675e-114">Expand the Beneficiaries section if beneficiaries need to be added to the benefit.</span></span> <span data-ttu-id="c675e-115">Du kan också lägga till beroenden från den här sidan, om det behövs för förmånen.</span><span class="sxs-lookup"><span data-stu-id="c675e-115">You can also add dependents from this page if applicable to the benefit.</span></span>
-9. <span data-ttu-id="c675e-116">Du kan också redigera informationen om en förmånsregistrering och ta bort en registrering på den här sidan.</span><span class="sxs-lookup"><span data-stu-id="c675e-116">You can also edit the details of a benefit enrollment or delete an enrollment on this page.</span></span> <span data-ttu-id="c675e-117">När du är klar med ändringarna av förmånregistreringen, stängs sidan.</span><span class="sxs-lookup"><span data-stu-id="c675e-117">When you have finished making changes to the benefit enrollment, close the page.</span></span>
+## <a name="enroll-a-single-worker-in-benefits"></a><span data-ttu-id="4e9ee-106">Anmäl en enstaka medarbetare till förmåner</span><span class="sxs-lookup"><span data-stu-id="4e9ee-106">Enroll a single worker in benefits</span></span>
+1. <span data-ttu-id="4e9ee-107">Gå till Personal > Arbetare > Medarbetare</span><span class="sxs-lookup"><span data-stu-id="4e9ee-107">Go to Human resources > Workers > Employees</span></span>
+2. <span data-ttu-id="4e9ee-108">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="4e9ee-109">Klicka på Förmåner.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-109">Click Benefits.</span></span>
+4. <span data-ttu-id="4e9ee-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-110">Click New.</span></span>
+5. <span data-ttu-id="4e9ee-111">Ange eller välj ett värde i fältet Förmån.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-111">In the Benefit field, enter or select a value.</span></span>
+6. <span data-ttu-id="4e9ee-112">Ange datum och tid i fältet Giltighetsstartdatum.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-112">In the Coverage start date field, enter a date and time.</span></span>
+7. <span data-ttu-id="4e9ee-113">Ange datum och tid i fältet Giltighetsslutdatum.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-113">In the Coverage end date field, enter a date and time.</span></span>
+8. <span data-ttu-id="4e9ee-114">Expandera avsnittet Mottagare om mottagare ska läggas till i förmånen.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-114">Expand the Beneficiaries section if beneficiaries need to be added to the benefit.</span></span> <span data-ttu-id="4e9ee-115">Du kan också lägga till beroenden från den här sidan, om det behövs för förmånen.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-115">You can also add dependents from this page if applicable to the benefit.</span></span>
+9. <span data-ttu-id="4e9ee-116">Du kan också redigera informationen om en förmånsregistrering och ta bort en registrering på den här sidan.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-116">You can also edit the details of a benefit enrollment or delete an enrollment on this page.</span></span> <span data-ttu-id="4e9ee-117">När du är klar med ändringarna av förmånregistreringen, stängs sidan.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-117">When you have finished making changes to the benefit enrollment, close the page.</span></span>
 
-## <a name="enroll-multiple-workers-in-a-benefit"></a><span data-ttu-id="c675e-118">Anmäl flera arbetare till en förmån</span><span class="sxs-lookup"><span data-stu-id="c675e-118">Enroll multiple workers in a benefit</span></span>
-1. <span data-ttu-id="c675e-119">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="c675e-119">Close the page.</span></span>
-2. <span data-ttu-id="c675e-120">Gå till Personal > Arbetare > Medarbetare</span><span class="sxs-lookup"><span data-stu-id="c675e-120">Go to Human resources > Workers > Employees</span></span>
-3. <span data-ttu-id="c675e-121">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="c675e-121">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="c675e-122">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="c675e-122">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="c675e-123">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="c675e-123">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="c675e-124">Klicka på Anmälan för förmån.</span><span class="sxs-lookup"><span data-stu-id="c675e-124">Click Enroll in benefits.</span></span>
-7. <span data-ttu-id="c675e-125">Ange eller välj ett värde i fältet Förmån.</span><span class="sxs-lookup"><span data-stu-id="c675e-125">In the Benefit field, enter or select a value.</span></span>
-8. <span data-ttu-id="c675e-126">Ange datum och tid i fältet Giltighetsstartdatum.</span><span class="sxs-lookup"><span data-stu-id="c675e-126">In the Coverage start date field, enter a date and time.</span></span>
-9. <span data-ttu-id="c675e-127">Ange datum och tid i fältet Giltighetsslutdatum.</span><span class="sxs-lookup"><span data-stu-id="c675e-127">In the Coverage end date field, enter a date and time.</span></span>
-10. <span data-ttu-id="c675e-128">Klicka på Anmäl.</span><span class="sxs-lookup"><span data-stu-id="c675e-128">Click Enroll.</span></span>
-11. <span data-ttu-id="c675e-129">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="c675e-129">Close the page.</span></span>
-12. <span data-ttu-id="c675e-130">Gå till Personal > Förmåner > Anmälning > Resultat från förmånsanmälan</span><span class="sxs-lookup"><span data-stu-id="c675e-130">Go to Human Resources > Benefits > Enrollment > Benefit enrollment results</span></span>
-13. <span data-ttu-id="c675e-131">Hitta förmånresultatsposten du söker efter.</span><span class="sxs-lookup"><span data-stu-id="c675e-131">Find the benefit results record that you are looking for.</span></span>
-14. <span data-ttu-id="c675e-132">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="c675e-132">In the list, click the link in the selected row.</span></span>
-15. <span data-ttu-id="c675e-133">På den här sidan kan du visa vilka medarbetare som har anmälts till förmånen, samt vilka medarbetare som inte har anmälts.</span><span class="sxs-lookup"><span data-stu-id="c675e-133">This page allows you to view which employees have been enrolled in the benefit, as well as any employees who were not enrolled.</span></span>
+## <a name="enroll-multiple-workers-in-a-benefit"></a><span data-ttu-id="4e9ee-118">Anmäl flera arbetare till en förmån</span><span class="sxs-lookup"><span data-stu-id="4e9ee-118">Enroll multiple workers in a benefit</span></span>
+1. <span data-ttu-id="4e9ee-119">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-119">Close the page.</span></span>
+2. <span data-ttu-id="4e9ee-120">Gå till Personal > Arbetare > Medarbetare</span><span class="sxs-lookup"><span data-stu-id="4e9ee-120">Go to Human resources > Workers > Employees</span></span>
+3. <span data-ttu-id="4e9ee-121">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-121">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="4e9ee-122">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-122">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="4e9ee-123">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-123">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="4e9ee-124">Klicka på Anmälan för förmån.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-124">Click Enroll in benefits.</span></span>
+7. <span data-ttu-id="4e9ee-125">Ange eller välj ett värde i fältet Förmån.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-125">In the Benefit field, enter or select a value.</span></span>
+8. <span data-ttu-id="4e9ee-126">Ange datum och tid i fältet Giltighetsstartdatum.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-126">In the Coverage start date field, enter a date and time.</span></span>
+9. <span data-ttu-id="4e9ee-127">Ange datum och tid i fältet Giltighetsslutdatum.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-127">In the Coverage end date field, enter a date and time.</span></span>
+10. <span data-ttu-id="4e9ee-128">Klicka på Anmäl.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-128">Click Enroll.</span></span>
+11. <span data-ttu-id="4e9ee-129">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-129">Close the page.</span></span>
+12. <span data-ttu-id="4e9ee-130">Gå till Personal > Förmåner > Anmälning > Resultat från förmånsanmälan</span><span class="sxs-lookup"><span data-stu-id="4e9ee-130">Go to Human Resources > Benefits > Enrollment > Benefit enrollment results</span></span>
+13. <span data-ttu-id="4e9ee-131">Hitta förmånresultatsposten du söker efter.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-131">Find the benefit results record that you are looking for.</span></span>
+14. <span data-ttu-id="4e9ee-132">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-132">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="4e9ee-133">På den här sidan kan du visa vilka medarbetare som har anmälts till förmånen, samt vilka medarbetare som inte har anmälts.</span><span class="sxs-lookup"><span data-stu-id="4e9ee-133">This page allows you to view which employees have been enrolled in the benefit, as well as any employees who were not enrolled.</span></span>
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

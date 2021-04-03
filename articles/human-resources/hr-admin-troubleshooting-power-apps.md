@@ -17,30 +17,35 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 664c644c9b34e3489b4134040e165d26202dbd38
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: ec63148364022fe5b8c40d855856eec232af3e48
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5114297"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463970"
 ---
-# <a name="cant-create-an-environment-in-the-power-apps-admin-center"></a><span data-ttu-id="901a7-103">Det går inte att skapa en miljö i administrationscentret för Power Apps</span><span class="sxs-lookup"><span data-stu-id="901a7-103">Can't create an environment in the Power Apps Admin center</span></span>
+# <a name="cant-create-an-environment-in-the-power-apps-admin-center"></a><span data-ttu-id="695f6-103">Det går inte att skapa en miljö i administrationscentret för Power Apps</span><span class="sxs-lookup"><span data-stu-id="695f6-103">Can't create an environment in the Power Apps Admin center</span></span>
 
-<span data-ttu-id="901a7-104">**Utleverans**</span><span class="sxs-lookup"><span data-stu-id="901a7-104">**Issue**</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-- <span data-ttu-id="901a7-105">Administratören för klientorganisation/miljö kan inte skapa en miljö i Microsoft Power Apps Admin center.</span><span class="sxs-lookup"><span data-stu-id="901a7-105">The tenant/environment admin can't create an environment in the Microsoft Power Apps Admin center.</span></span>
-- <span data-ttu-id="901a7-106">Användaren har ingen licens som ger rätt att skapa miljöer.</span><span class="sxs-lookup"><span data-stu-id="901a7-106">The user doesn't have a license that gives the right to create environments.</span></span>
+<span data-ttu-id="695f6-104">**Utleverans**</span><span class="sxs-lookup"><span data-stu-id="695f6-104">**Issue**</span></span>
 
-<span data-ttu-id="901a7-107">**Lösning**</span><span class="sxs-lookup"><span data-stu-id="901a7-107">**Solution**</span></span>
+- <span data-ttu-id="695f6-105">Administratören för klientorganisation/miljö kan inte skapa en miljö i Microsoft Power Apps Admin center.</span><span class="sxs-lookup"><span data-stu-id="695f6-105">The tenant/environment admin can't create an environment in the Microsoft Power Apps Admin center.</span></span>
+- <span data-ttu-id="695f6-106">Användaren har ingen licens som ger rätt att skapa miljöer.</span><span class="sxs-lookup"><span data-stu-id="695f6-106">The user doesn't have a license that gives the right to create environments.</span></span>
 
-<span data-ttu-id="901a7-108">Kontrollera att klientorganisationens administratör ar tilldelat en giltig Power Apps P2-licens till användaren som skapar miljön.</span><span class="sxs-lookup"><span data-stu-id="901a7-108">Make sure the tenant admin has assigned a valid Power Apps P2 license to the user creating the environment.</span></span> <span data-ttu-id="901a7-109">Följande Microsoft Dynamics-serviceplaner ger behörigheter att skapa miljöer:</span><span class="sxs-lookup"><span data-stu-id="901a7-109">The following Microsoft Dynamics service plans provide permissions to create environments:</span></span>
+<span data-ttu-id="695f6-107">**Lösning**</span><span class="sxs-lookup"><span data-stu-id="695f6-107">**Solution**</span></span>
 
-| <span data-ttu-id="901a7-110">Total lagerhållningsenhet för produkt (SKU)</span><span class="sxs-lookup"><span data-stu-id="901a7-110">Overall product stockkeeping unit (SKU)</span></span>       | <span data-ttu-id="901a7-111">Power Apps P2 serviceplan</span><span class="sxs-lookup"><span data-stu-id="901a7-111">Power Apps P2 service plan</span></span>  |
+<span data-ttu-id="695f6-108">Kontrollera att klientorganisationens administratör ar tilldelat en giltig Power Apps P2-licens till användaren som skapar miljön.</span><span class="sxs-lookup"><span data-stu-id="695f6-108">Make sure the tenant admin has assigned a valid Power Apps P2 license to the user creating the environment.</span></span> <span data-ttu-id="695f6-109">Följande Microsoft Dynamics-serviceplaner ger behörigheter att skapa miljöer:</span><span class="sxs-lookup"><span data-stu-id="695f6-109">The following Microsoft Dynamics service plans provide permissions to create environments:</span></span>
+
+| <span data-ttu-id="695f6-110">Total lagerhållningsenhet för produkt (SKU)</span><span class="sxs-lookup"><span data-stu-id="695f6-110">Overall product stockkeeping unit (SKU)</span></span>       | <span data-ttu-id="695f6-111">Power Apps P2 serviceplan</span><span class="sxs-lookup"><span data-stu-id="695f6-111">Power Apps P2 service plan</span></span>  |
 |------------------------------------------------|----------------------------|
-| <span data-ttu-id="901a7-112">Microsoft Dynamics 365 for Operations</span><span class="sxs-lookup"><span data-stu-id="901a7-112">Microsoft Dynamics 365 for Operations</span></span>          | <span data-ttu-id="901a7-113">Power Apps for Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="901a7-113">Power Apps for Dynamics 365</span></span> |
-| <span data-ttu-id="901a7-114">Microsoft Dynamics 365 planen Enterprise Edition</span><span class="sxs-lookup"><span data-stu-id="901a7-114">Microsoft Dynamics 365 Plan Enterprise Edition</span></span> | <span data-ttu-id="901a7-115">Power Apps for Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="901a7-115">Power Apps for Dynamics 365</span></span> |
+| <span data-ttu-id="695f6-112">Microsoft Dynamics 365 for Operations</span><span class="sxs-lookup"><span data-stu-id="695f6-112">Microsoft Dynamics 365 for Operations</span></span>          | <span data-ttu-id="695f6-113">Power Apps for Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="695f6-113">Power Apps for Dynamics 365</span></span> |
+| <span data-ttu-id="695f6-114">Microsoft Dynamics 365 planen Enterprise Edition</span><span class="sxs-lookup"><span data-stu-id="695f6-114">Microsoft Dynamics 365 Plan Enterprise Edition</span></span> | <span data-ttu-id="695f6-115">Power Apps for Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="695f6-115">Power Apps for Dynamics 365</span></span> |
 
-<span data-ttu-id="901a7-116">Observera att olika Microsoft Office SKU:er också ger rättigheten tillsammans med fristående Power Apps plan 2 SKU:er.</span><span class="sxs-lookup"><span data-stu-id="901a7-116">Note that various Microsoft Office SKUs also provide the right, together with standalone Power Apps Plan 2 SKUs.</span></span> <span data-ttu-id="901a7-117">Det viktiga är att en av dessa SKU:er måste finnas.</span><span class="sxs-lookup"><span data-stu-id="901a7-117">The important point is that one of these SKUs must be present.</span></span>
+<span data-ttu-id="695f6-116">Observera att olika Microsoft Office SKU:er också ger rättigheten tillsammans med fristående Power Apps plan 2 SKU:er.</span><span class="sxs-lookup"><span data-stu-id="695f6-116">Note that various Microsoft Office SKUs also provide the right, together with standalone Power Apps Plan 2 SKUs.</span></span> <span data-ttu-id="695f6-117">Det viktiga är att en av dessa SKU:er måste finnas.</span><span class="sxs-lookup"><span data-stu-id="695f6-117">The important point is that one of these SKUs must be present.</span></span>
 
-1. <span data-ttu-id="901a7-118">Gå till [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).</span><span class="sxs-lookup"><span data-stu-id="901a7-118">Go to [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).</span></span>
-2. <span data-ttu-id="901a7-119">Skapa miljöerna genom att följa instruktionerna i [Etablera Personal](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).</span><span class="sxs-lookup"><span data-stu-id="901a7-119">Create the environments by following the instructions in [Provision Human Resources](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).</span></span>
+1. <span data-ttu-id="695f6-118">Gå till [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).</span><span class="sxs-lookup"><span data-stu-id="695f6-118">Go to [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).</span></span>
+2. <span data-ttu-id="695f6-119">Skapa miljöerna genom att följa instruktionerna i [Etablera Personal](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).</span><span class="sxs-lookup"><span data-stu-id="695f6-119">Create the environments by following the instructions in [Provision Human Resources](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
