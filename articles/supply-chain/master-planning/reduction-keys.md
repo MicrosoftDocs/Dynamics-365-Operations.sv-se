@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8732d0a032b7dd44918955354c56321d065d4a77
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4d16de8c339fadff074ef8ec30b0b4d6e3412569
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001859"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470779"
 ---
 # <a name="forecast-reduction-keys"></a>Prognosreduceringnycklar
 
@@ -198,7 +198,7 @@ Därför skapas följande planerade order.
 En prognosreduceringsnyckel används i metoderna **transaktioner - reduceringsnyckel** och **procent - reduceringsnyckel** för att minska prognosbehoven. Följ dessa steg om du vill skapa och ställa in en reduceringsnyckel.
 
 1. Gå till **huvudplanering \> inställningar \> täckning \> reduceringsnycklar**.
-2. Välj **ny** eller tryck på **Ctrl+N** för att skapa en reduceringsnyckel.
+2. Skapa en reduceringsnyckel genom att välja **Nytt**.
 3. I fältet **reduceringsnyckeln** anger ett unikt ID för prognosreduceringsnyckeln. Ange sedan ett namn i fältet **Namn**. 
 4. Definiera perioder och procentandel av reduktionsnyckel i varje period:
 

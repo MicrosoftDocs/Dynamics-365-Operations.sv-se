@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6b21d4d631bcdf603b38212f5f76bb78937d3d3c
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: f1c3ced43b1f5693c5d5466fd97a20beb358fa20
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115086"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463344"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurera typer av tjänstledighet och frånvaro
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Tjänstledighetstyper i Dynamics 365 Human Resources definierar olika typer av frånvaro som medarbetare kan rapportera. Du kan skräddarsy tjänstledighetstyper enligt organisationens behov. Exempel på tjänstledighetstyper:
 
@@ -72,8 +74,7 @@ Tjänstledighetstyper i Dynamics 365 Human Resources definierar olika typer av f
    
  3. Ange **Överför tjänstledighetstyp** för tjänstledighetstypen. När du väljer det här alternativet överförs alla överförda saldon till den angivna tjänstledighetstypen. Tjänstledighetstypen måste också inkluderas i planen för tjänstledighet och frånvaro. 
  
- 4. Definiera **utgångsregler** för tjänstledighetstypen. När du konfigurerar det här alternativet kan du välja en enhet med dagar eller månader och ange varaktighet för förfallodatum. Du kan också ange giltighetsdatum för utgångsregeln. Alla tjänstledighetssaldon som finns vid förfallotiden kommer att dras från tjänstledighetstypen och återspeglas i tjänstledighetssaldot. 
- 
+ 4. Definiera **utgångsregler** för tjänstledighetstypen. När du konfigurerar det här alternativet kan du välja en enhet med dagar eller månader och ange varaktighet för förfallodatum. Du kan också ange giltighetsdatum för utgångsregeln. Giltighetsdatumet används för att bestämma när batchjobbet ska köras som bearbetar utgångsdatumet för tjänstledighet eller det datum då regeln börjar gälla. Själva utgångsdatumet inträffar alltid på startdatumet för tjänstledighetsplanen när batchjobbet är inställt på att bearbeta. Startdatumet för planen kan till exempel vara den 1 januari 2020, men regeln gäller bara för 2020-06-1. Genom att ange giltighetsdatumet till 2020-06-1 bearbetas regeln vid nästa års gräns, så 2021-01-1. Alla tjänstledighetssaldon som finns vid förfallotiden kommer att dras från tjänstledighetstypen och återspeglas i tjänstledighetssaldot. 
  
 ## <a name="see-also"></a>Se även
 

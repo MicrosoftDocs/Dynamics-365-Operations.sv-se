@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 518b70223b2f6bf86809ccce77a2cf67c30e4168
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bcfca0ddd52245ae2206f15ef9fa979675fca825
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977548"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470701"
 ---
 # <a name="set-up-disposition-codes"></a>Ställ in dispositionskoder 
 
@@ -33,9 +33,9 @@ Du kan du ställa in dispositionskoder för att ange hur man arbetar med en arti
 
 Du kan även ange en orsakskod för att förklara varför en artikel har returnerats. Mer information om orsakskoder finns [skapa returorsakskoder](set-up-return-reason-code.md).
 
-1.  Klicka på noden **Försäljning och marknadsföring** \> **Inställningar** \> **Försäljningsorder** \> **Returer** \> **Dispositionskoder**.
+1.  Klicka på **Försäljning och marknadsföring** \> **Inställningar** \> **Försäljningsorder** \> **Returer** \> **Dispositionskoder**.
 
-2.  Klicka på **Ny** eller tryck på CTRL+N om du vill skapa en ny dispositionskod.
+2.  Välj **Nytt** för att skapa en ny dispositionskod.
 
 3.  Ange ett unikt beskrivande namn, välj en åtgärd och ange en beskrivning för dispositionskoden.
 

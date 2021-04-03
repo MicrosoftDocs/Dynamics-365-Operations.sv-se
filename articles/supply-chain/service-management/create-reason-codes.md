@@ -17,29 +17,24 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89e6010440599c5e60415c1261927de73f520034
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 254a94548bc75ee6d1eae1d1c9f3ae4bdbf58855
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965985"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470987"
 ---
-# <a name="create-reason-codes"></a>Skapa orsakskoder    
+# <a name="create-reason-codes"></a>Skapa orsakskoder
 
 [!include [banner](../includes/banner.md)]
 
+1. Klicka på **servicehantering**\>**inställningar**\>**serviceorder**\>**Ange orsakskoder**.
 
-1.  Klicka på **servicehantering**\>**inställningar**\>**serviceorder**\>**Ange orsakskoder**.
+1. Välj **Nytt** för att skapa en ny orsakskod.
 
-2.  Tryck på CTRL+N för att skapa en ny orsakskod.
-
-3.  Tryck på CTRL+S om du vill spara orsakskoden.
+1. Välj **Spara** för att spara den nya orsakskod.
 
 När du blir ombedd att ange en orsakskod för att förklara varför du uppdaterar en serviceorderfas kan du välja bland de orsakskoder du skapat här.
 
-  
-
-
-
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

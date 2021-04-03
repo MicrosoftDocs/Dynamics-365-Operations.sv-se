@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0cd101bfe88ae1acb051ba11a676da66ef6a3db6
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 50be7631ec303171640b7fa9e6d283a198bd1a52
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115472"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465016"
 ---
 # <a name="distribute-questionnaires-using-scheduling"></a>Distribuera en enkät med hjälp av tidsplanering
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Enkättidsplanering gör att du kan planera och distribuera enkäter till flera svaranden. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 
@@ -55,7 +57,7 @@ Enkättidsplanering gör att du kan planera och distribuera enkäter till flera 
 
 11. I textrutan skriver du brödtexten i ditt e-postmeddelande. Notera att variabeln kan användas för att byta ut värdena i systemet.
 
-    * Exempel: Bästa %P%, vänligen logga in på Employee Self Service för att slutföra personalhälsoenkäten.  Contoso  
+    * Exempel: Bästa %P%, vänligen logga in på Självbetjäning för medarbetare för att slutföra personalhälsoenkäten.  Contoso  
 
 12. Klicka på Spara.
 

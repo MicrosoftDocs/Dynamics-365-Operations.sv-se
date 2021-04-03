@@ -1,5 +1,5 @@
 ---
-title: Etablera en bedömningsmiljön för Dynamics 365 Commerce
+title: Tillhandahåll en Dynamics 365 Commerce utvärderingsmiljö
 description: Det här avsnittet förklarar hur du etablerar en bedömningsmiljö för Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
@@ -17,14 +17,14 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a57cc02c6d62f288f14b65191c2f4927a019963c
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969911"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478174"
 ---
-# <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Etablera en bedömningsmiljön för Dynamics 365 Commerce
+# <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Tillhandahåll en Dynamics 365 Commerce utvärderingsmiljö
 
 [!include [banner](includes/banner.md)]
 
@@ -34,8 +34,6 @@ Innan du börjar rekommenderar vi att du tar en snabbgenomgång genom det här a
 
 > [!NOTE]
 > Commerce bedömningsmiljöer är i allmänhet inte tillgängliga och ges till partners och kunder för varje enskild begäran. För mer information, kontakta din Microsoft-partnerkontakt.
-
-## <a name="overview"></a>Översikt
 
 För att kunna etablera din bedömningsmiljö för Commerce måste du skapa ett projekt som har ett specifikt produktnamn och en viss typ. Miljön och Commerce Scale Unit (CSU) har även del specifika parametrar som du måste använda för att kunna förvänta dig att etablera näthandel senare. Instruktionerna i det här avsnittet beskriver alla nödvändiga steg för att slutföra etablering och de parametrar som du måste använda.
 

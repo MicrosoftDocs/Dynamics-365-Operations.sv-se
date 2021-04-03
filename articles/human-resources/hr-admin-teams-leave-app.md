@@ -3,7 +3,7 @@ title: Personal-app i Teams
 description: Detta avsnitt introducerar Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: tfehr
-ms.date: 09/30/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba520f873de5b20111f9134e87281bcdf4025785
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 86abe32f76f2cc21c773727be07a44be49cdbac7
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5114301"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487883"
 ---
 # <a name="human-resources-app-in-teams"></a>Personal-app i Teams
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Med hjälp av Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan personalen snabbt begära ledighet och visa information om sitt ledighetssaldo i Microsoft Teams. Personalen kan interagera med en robot för att begära information. Fliken **Ledighet** visar mer detaljerad information. Dessutom kan de skicka personuppgifter om kommande ledighet i team och chattar utanför Personal-appen.
 
-![Personal Teams-approbot för tjänstledighet](./media/hr-admin-teams-leave-app-bot.png)
+![Personal Teams-approbot för tjänstledighet](./media/hr-teams-leave-app-bot.png)
 
 ![Fliken Ledighet i Personal Teams-appen för ledighet](./media/hr-teams-leave-app-timeoff-tab.png)
 
@@ -39,16 +39,18 @@ Med hjälp av Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan
 
 ## <a name="install-and-setup"></a>Installera och konfigurera
 
-Du hittar appen Personal i Teams-butiken. Mer information om hur du installerar Teams-appen finns i [Hantera tjänstledighetsansökningar i Teams](hr-teams-leave-app.md).
+Du hittar appen Dynamics 365 Human Resources i Teams-butiken. Mer information om hur du installerar Teams-appen finns i [Hantera tjänstledighetsansökningar i Teams](hr-teams-leave-app.md).
 
 Information om hur du hanterar appbehörigheter i Teams finns i [Hantera policyer för appbehörigheter i Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
+Om du vill att användarna ska visa tjänstledighets- och frånvarokalendern i programmet måste du aktivera **tjänstledighets- och frånvarokalendern i Teams** i funktionshanteringen. Mer information om hur du aktiverar funktioner finns i [Hantera funktioner](hr-admin-manage-features.md).
+
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Aktivera meddelanden för Personal-appen i Teams
 
-Om du vill att användarna ska få lämna meddelanden i appen Teams måste du aktivera meddelanden i Personal.
+Om du vill att användarna ska få lämna meddelanden i appen Teams måste du aktivera meddelanden i Dynamics 365 Human Resources.
 
 >[!NOTE]
->Endast användare som är inloggade i Teams och som använder Personal Teams-appen får meddelandena.
+>Endast användare som är inloggade i Teams och som använder Dynamics 365 Human Resources Teams-appen får meddelandena.
 
 1. I Personal, välj **Systemadministration**.
 
@@ -66,7 +68,7 @@ Om du vill att användarna ska få lämna meddelanden i appen Teams måste du ak
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Aktivera eller inaktivera Teams-meddelanden för enskilda användare
 
-När du har aktiverat meddelanden för Personal Teams-appen kan du aktivera eller inaktivera meddelanden för enskilda användare.
+När du har aktiverat meddelanden för Dynamics 365 Human Resources Teams-appen kan du aktivera eller inaktivera meddelanden för enskilda användare.
 
 1. I Personal, välj **Systemadministration**.
 
@@ -82,9 +84,28 @@ När du har aktiverat meddelanden för Personal Teams-appen kan du aktivera elle
 
 6. Välj **Spara**.
 
-## <a name="known-issues"></a>Kända problem
+## <a name="supported-languages"></a>Språk som stöds
 
-| Utleverans | Status |
+Dynamics 365 Human Resources-appen i Teams har stöd för följande språk:
+
+| Språk-ID | Språk |
+| --- | --- |
+| de-DE | Tyska (Tyskland) |
+| es-ES | Spanska (Spanien) |
+| es-MX | Spanska (Mexiko) |
+| fr-CA | Franska (Kanada) |
+| fr-FR | Franska (Frankrike) |
+| it-IT | Italienska (Italien) |
+| nl-NL | Nederländska (Nederländerna) |
+| pt-BR | Portugisiska (Brasilien) |
+| tr-TR | Turkiska (Turkiet) |
+| zh-CN | Kinesiska (förenklad) |
+
+## <a name="notes"></a>Anteckningar
+
+Följande arbetsobjekt planeras för kommande versioner:
+
+| Arbetsuppgift | Status |
 | --- | --- |
 | Saldot är felaktigt när ledighet skickas in för ett framtida datum. | Prognosticering är ännu ej tillgänglig. Saldot visas för det aktuella datumet. |
 | Det går inte att avbryta en **Granskas**-begäran. | Den här funktionen stöds för närvarande inte, men kommer att läggas till i en framtida version. |
@@ -96,7 +117,7 @@ Om en användare har problem med att logga in på eller använda appen Personal 
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Det går inte att logga in på Personal-appen i Teams
 
-Om en användare kontaktar dig eftersom de inte kan logga in i appen, kontrollerar du att användaren har en associerad medarbetarpost i Personal.
+Om en användare kontaktar dig eftersom de inte kan logga in i appen, kontrollerar du att de har en associerad medarbetarpost i Personal.
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Fel vid godkännande av tjänstledighetsbegäranden i Personal-appen i Teams
 

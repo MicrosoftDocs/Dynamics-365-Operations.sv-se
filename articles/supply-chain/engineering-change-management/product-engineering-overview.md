@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b081cd8d56217b8cf76db824c29482d453fc9ea3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3fde9194ece4774c4d39785e337caf2413052159
+ms.sourcegitcommit: ee7a890e3e4ed6436898e5ab6eff309082a073f8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001958"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476685"
 ---
 # <a name="engineering-change-management-overview"></a>Konstruktionsändringshantering – översikt
 
@@ -44,20 +44,24 @@ Konstruktionsändringshantering hjälper dig att planera och hantera produktvers
 
 Föregående video ([ändra hanteringsfunktioner i Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) finns med i [Finance and Operations spellistan](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som är tillgänglig på YouTube.
 
-## <a name="turn-on-engineering-change-management-for-your-system"></a>Aktivera konstruktionsändringshantering för ditt system
+## <a name="turn-on-the-engineering-change-management-and-version-dimension-features-for-your-system"></a>Aktivera funktionerna för hantering av tekniska ändringar och versionsdimensioner för ditt system
 
-Börja med att aktivera konstruktionsändringshantering genom att följa stegen nedan.
+Innan du kan använda hantering av tekniska ändringar måste du aktivera både funktionen *konstruktionsändringshantering* och dess konfigurationsnyckel. Om du även vill spåra versionsdimensionen för produkter i transaktioner (valfritt), måste du också aktivera funktionen för *produktversionsdimension* och dess konfigurationsnyckel.
+
+Sätt först på funktionerna genom att följa dessa steg.
 
 1. Gå till [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Sök efter uppdateringar.
 1. Aktivera funktionen med namnet **konstruktionsändringshantering**.
+1. Om du vill använda den, ska du även aktivera funktionen med namnet **Produktdimensionsversion**.
 
-Aktivera sedan konfigurationsnyckeln för **konstruktionsändringshantering** genom att följa stegen nedan.
+Sätt sedan på konfigurationstangenterna genom att följa dessa steg.
 
 1. Sätt ditt system i underhållsläge enligt beskrivningen i [underhållsläge](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Öppna **Systemadministration \> Inställningar \> Licenskonfiguration**.
-1. Expandera noden **Handel** och markera kryssrutan **konstruktionsändringshantering**.
+1. Expandera noden **Handel**
+1. Markera kryssrutan **konstruktionsändringshantering**.
+1. Om du vill använda den ska du också markera kryssrutan **Produktdimension - Version**.
 1. Inaktivera underhållsläge enligt beskrivningen i [underhållsläge](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

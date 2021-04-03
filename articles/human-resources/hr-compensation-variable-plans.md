@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f99bff8846cf95bc25f0396444a3920c48f73b1e
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 4bf2c6525f245a72811f4f239479be360c0c434c
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115858"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465664"
 ---
 # <a name="create-variable-compensation-plans"></a>Skapa planer för variabel kompensation
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Variabel kompensation utgör en medarbetares oregelbundna lön såsom bonusar och aktieutdelning. Det här avsnittet beskriver komponenterna som måste ställas in innan du kan använda variabel kompensation och anmäla en medarbetare i planen för variabel kompensation.
 

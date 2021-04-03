@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 1dd4dfc5b8ca7af66941d081b4c20be0f5d6001d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f988732549ce82919f02c87b320623d8d4218735
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993410"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477910"
 ---
 # <a name="create-a-default-customer"></a>Skapa en standardskund
-
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du skapar en standardkund som kan användas för att skapa en kanal i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 När du skapar en kanal måste du ange en standardkund. En standardkund kan enkelt skapas efter att du först har skapat kundgruppen och kundadressboken.
 
