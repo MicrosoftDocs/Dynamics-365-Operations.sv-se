@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 48e368fe69443a5105ddba78a887bf9159bfe52a
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 61d8502a8f420d387b5b7f48fca2f8a680f6f3f8
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125603"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464042"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Introduktion av API för integrering av system för sökandespårning
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Detta ämne beskriver API för integrering av system för sökandespårning (ATS) för Dynamics 365 Human Resources. Syftet med API:et är att möjliggöra effektiviserad integrering mellan Dynamics 365 Human Resources och ATS-partner.
 
