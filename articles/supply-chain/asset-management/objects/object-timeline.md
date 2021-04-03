@@ -17,34 +17,37 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea71dee6f653f73a86d31e82cf3541b4447bd552
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1bcec99b811c67eca5473242820d8539758a5872
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019528"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253144"
 ---
-# <a name="asset-event-history"></a><span data-ttu-id="1a868-103">Historik för tillgångshändelse</span><span class="sxs-lookup"><span data-stu-id="1a868-103">Asset event history</span></span>
+# <a name="asset-event-history"></a><span data-ttu-id="25d5b-103">Historik för tillgångshändelse</span><span class="sxs-lookup"><span data-stu-id="25d5b-103">Asset event history</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="1a868-104">Det här avsnittet beskriver hur du öppnar tillgången historik för tillgångshändelse i tillgångshantering.</span><span class="sxs-lookup"><span data-stu-id="1a868-104">This topic explains how to access asset event history in Asset Management.</span></span> <span data-ttu-id="1a868-105">Sidan **Historik för tillgångshändelse** visar registreringshistoriken som har gjorts under en tillgångs livstid.</span><span class="sxs-lookup"><span data-stu-id="1a868-105">The **Asset event history** page shows the registration history that has been made during the lifetime of an asset.</span></span> <span data-ttu-id="1a868-106">Du kan komma åt den här sidan från menyartiklarna **alla tillgångar**, **aktiva tillgångar** och **mina aktiva tillgångar**.</span><span class="sxs-lookup"><span data-stu-id="1a868-106">You can access this page from the **All assets**, **Active assets**, and **My active assets** menu items.</span></span> <span data-ttu-id="1a868-107">Välj en tillgång och välj sedan **Händelsehistorik**.</span><span class="sxs-lookup"><span data-stu-id="1a868-107">Select an asset, and then select **Event history**.</span></span>
+<span data-ttu-id="25d5b-104">Det här avsnittet beskriver hur du öppnar tillgången historik för tillgångshändelse i tillgångshantering.</span><span class="sxs-lookup"><span data-stu-id="25d5b-104">This topic explains how to access asset event history in Asset Management.</span></span> <span data-ttu-id="25d5b-105">Sidan **Historik för tillgångshändelse** visar registreringshistoriken som har gjorts under en tillgångs livstid.</span><span class="sxs-lookup"><span data-stu-id="25d5b-105">The **Asset event history** page shows the registration history that has been made during the lifetime of an asset.</span></span> <span data-ttu-id="25d5b-106">Du kan komma åt den här sidan från menyartiklarna **alla tillgångar**, **aktiva tillgångar** och **mina aktiva tillgångar**.</span><span class="sxs-lookup"><span data-stu-id="25d5b-106">You can access this page from the **All assets**, **Active assets**, and **My active assets** menu items.</span></span> <span data-ttu-id="25d5b-107">Välj en tillgång och välj sedan **Händelsehistorik**.</span><span class="sxs-lookup"><span data-stu-id="25d5b-107">Select an asset, and then select **Event history**.</span></span>
 
-<span data-ttu-id="1a868-108">På snabbfliken **Detaljer** på sidan **Historik för tillgångshändelse** kan du göra en sökning på all tillgänglig information.</span><span class="sxs-lookup"><span data-stu-id="1a868-108">On the **Details** FastTab of the **Asset event history** page, you can do a search on all the available information.</span></span> <span data-ttu-id="1a868-109">Du kan till exempel använda historik för tillgångshändelse för att hitta följande information:</span><span class="sxs-lookup"><span data-stu-id="1a868-109">For example, you can use the asset event history to find the following information:</span></span>
+<span data-ttu-id="25d5b-108">På snabbfliken **Detaljer** på sidan **Historik för tillgångshändelse** kan du göra en sökning på all tillgänglig information.</span><span class="sxs-lookup"><span data-stu-id="25d5b-108">On the **Details** FastTab of the **Asset event history** page, you can do a search on all the available information.</span></span> <span data-ttu-id="25d5b-109">Du kan till exempel använda historik för tillgångshändelse för att hitta följande information:</span><span class="sxs-lookup"><span data-stu-id="25d5b-109">For example, you can use the asset event history to find the following information:</span></span>
 
-- <span data-ttu-id="1a868-110">När en jobbtyp senast användes på en tillgång</span><span class="sxs-lookup"><span data-stu-id="1a868-110">When a job type was last used on an asset</span></span>
-- <span data-ttu-id="1a868-111">När en viss arbetstagare har angett en kommentar på ett arbetsorderjobb</span><span class="sxs-lookup"><span data-stu-id="1a868-111">When a specific worker entered a remark on a work order job</span></span>
+- <span data-ttu-id="25d5b-110">När en jobbtyp senast användes på en tillgång</span><span class="sxs-lookup"><span data-stu-id="25d5b-110">When a job type was last used on an asset</span></span>
+- <span data-ttu-id="25d5b-111">När en viss arbetstagare har angett en kommentar på ett arbetsorderjobb</span><span class="sxs-lookup"><span data-stu-id="25d5b-111">When a specific worker entered a remark on a work order job</span></span>
 
-<span data-ttu-id="1a868-112">Tidslinjen uppdateras varje gång sidan öppnas.</span><span class="sxs-lookup"><span data-stu-id="1a868-112">The timeline is updated every time that the page is opened.</span></span> <span data-ttu-id="1a868-113">Det innehåller följande information:</span><span class="sxs-lookup"><span data-stu-id="1a868-113">It contains the following information:</span></span>
+<span data-ttu-id="25d5b-112">Tidslinjen uppdateras varje gång sidan öppnas.</span><span class="sxs-lookup"><span data-stu-id="25d5b-112">The timeline is updated every time that the page is opened.</span></span> <span data-ttu-id="25d5b-113">Det innehåller följande information:</span><span class="sxs-lookup"><span data-stu-id="25d5b-113">It contains the following information:</span></span>
 
-- <span data-ttu-id="1a868-114">Ändringar som har gjorts på tillgången: tillgångens plats, tillgångs-ID, namn och leverantörsgaranti</span><span class="sxs-lookup"><span data-stu-id="1a868-114">Changes that have been made on the asset: asset location, asset ID, name, and vendor warranty</span></span>
-- <span data-ttu-id="1a868-115">Överordnad tillgång</span><span class="sxs-lookup"><span data-stu-id="1a868-115">Asset parent</span></span>
-- <span data-ttu-id="1a868-116">Tillgångens strukturlista (BOM)</span><span class="sxs-lookup"><span data-stu-id="1a868-116">Asset bill of materials (BOM)</span></span>
-- <span data-ttu-id="1a868-117">Logg för tillgångens livscykeltillstånd</span><span class="sxs-lookup"><span data-stu-id="1a868-117">Asset lifecycle state log</span></span>
-- <span data-ttu-id="1a868-118">funktionsplats</span><span class="sxs-lookup"><span data-stu-id="1a868-118">Functional location</span></span>
-- <span data-ttu-id="1a868-119">Begäran om underhåll</span><span class="sxs-lookup"><span data-stu-id="1a868-119">Maintenance requests</span></span>
-- <span data-ttu-id="1a868-120">Arbetsorder, inklusive bokförda artiklar och noteringar</span><span class="sxs-lookup"><span data-stu-id="1a868-120">Work orders, including posted item and notes</span></span>
-- <span data-ttu-id="1a868-121">Fel</span><span class="sxs-lookup"><span data-stu-id="1a868-121">Faults</span></span>
-- <span data-ttu-id="1a868-122">Tillståndsbedömningar</span><span class="sxs-lookup"><span data-stu-id="1a868-122">Condition assessments</span></span>
+- <span data-ttu-id="25d5b-114">Ändringar som har gjorts på tillgången: tillgångens plats, tillgångs-ID, namn och leverantörsgaranti</span><span class="sxs-lookup"><span data-stu-id="25d5b-114">Changes that have been made on the asset: asset location, asset ID, name, and vendor warranty</span></span>
+- <span data-ttu-id="25d5b-115">Överordnad tillgång</span><span class="sxs-lookup"><span data-stu-id="25d5b-115">Asset parent</span></span>
+- <span data-ttu-id="25d5b-116">Tillgångens strukturlista (BOM)</span><span class="sxs-lookup"><span data-stu-id="25d5b-116">Asset bill of materials (BOM)</span></span>
+- <span data-ttu-id="25d5b-117">Logg för tillgångens livscykeltillstånd</span><span class="sxs-lookup"><span data-stu-id="25d5b-117">Asset lifecycle state log</span></span>
+- <span data-ttu-id="25d5b-118">funktionsplats</span><span class="sxs-lookup"><span data-stu-id="25d5b-118">Functional location</span></span>
+- <span data-ttu-id="25d5b-119">Begäran om underhåll</span><span class="sxs-lookup"><span data-stu-id="25d5b-119">Maintenance requests</span></span>
+- <span data-ttu-id="25d5b-120">Arbetsorder, inklusive bokförda artiklar och noteringar</span><span class="sxs-lookup"><span data-stu-id="25d5b-120">Work orders, including posted item and notes</span></span>
+- <span data-ttu-id="25d5b-121">Fel</span><span class="sxs-lookup"><span data-stu-id="25d5b-121">Faults</span></span>
+- <span data-ttu-id="25d5b-122">Tillståndsbedömningar</span><span class="sxs-lookup"><span data-stu-id="25d5b-122">Condition assessments</span></span>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

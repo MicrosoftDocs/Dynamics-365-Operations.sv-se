@@ -17,52 +17,55 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 1977dac4a3ab66cca2248dc0124d3a06d6963f40
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2de75962f5b8a71c8f7138289078b5c669ae1daa
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978774"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5250588"
 ---
-# <a name="enable-cash-flow-forecasting-preview"></a><span data-ttu-id="1d511-103">Aktivera kassaflödesprognoser (förhandsversion)</span><span class="sxs-lookup"><span data-stu-id="1d511-103">Enable cash flow forecasting (preview)</span></span>
+# <a name="enable-cash-flow-forecasting-preview"></a><span data-ttu-id="bfcc2-103">Aktivera kassaflödesprognoser (förhandsversion)</span><span class="sxs-lookup"><span data-stu-id="bfcc2-103">Enable cash flow forecasting (preview)</span></span>
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-<span data-ttu-id="1d511-104">I det här ämnet beskrivs hur du aktiverar funktionen för kassaflödesprognoser i Finance-insikter.</span><span class="sxs-lookup"><span data-stu-id="1d511-104">This topic explains how to turn on the Cash flow forecasts feature in Finance Insights.</span></span>
+<span data-ttu-id="bfcc2-104">I det här ämnet beskrivs hur du aktiverar funktionen för kassaflödesprognoser i Finance-insikter.</span><span class="sxs-lookup"><span data-stu-id="bfcc2-104">This topic explains how to turn on the Cash flow forecasts feature in Finance Insights.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1d511-105">Om du vill använda betalningsförutsägelser i kassaflödet måste du ställa in funktionen Prediktioner av kundbetalning enligt beskrivningen i [Aktivera prediktioner av kundbetalning](enable-cust-paymnt-prediction.md).</span><span class="sxs-lookup"><span data-stu-id="1d511-105">To use payment predictions in the cash flow, you must set up the Customer payment predictions feature as described in [Enable customer payment predictions](enable-cust-paymnt-prediction.md).</span></span>
+> <span data-ttu-id="bfcc2-105">Om du vill använda betalningsförutsägelser i kassaflödet måste du ställa in funktionen Prediktioner av kundbetalning enligt beskrivningen i [Aktivera prediktioner av kundbetalning](enable-cust-paymnt-prediction.md).</span><span class="sxs-lookup"><span data-stu-id="bfcc2-105">To use payment predictions in the cash flow, you must set up the Customer payment predictions feature as described in [Enable customer payment predictions](enable-cust-paymnt-prediction.md).</span></span>
 
-1. <span data-ttu-id="1d511-106">Använd information från miljösidan i Microsoft Dynamics Lifecycle Services (LCS) för att ansluta till den primära instansen av Azure SQL för den miljön.</span><span class="sxs-lookup"><span data-stu-id="1d511-106">Use information from the environment page in Microsoft Dynamics Lifecycle Services (LCS) to connect to the primary instance of Azure SQL for that environment.</span></span> <span data-ttu-id="1d511-107">Kör följande Transact-SQL-kommando (T-SQL) för att aktivera förhandsversioner för sandbox-miljön.</span><span class="sxs-lookup"><span data-stu-id="1d511-107">Run the following Transact-SQL (T-SQL) command to turn on flights for the sandbox environment.</span></span> <span data-ttu-id="1d511-108">(Du kanske måste aktivera åtkomst för din IP-adress i LCS innan du kan fjärransluta till Application Object Server \[AOS\].)</span><span class="sxs-lookup"><span data-stu-id="1d511-108">(You might have to turn on access for your IP address in LCS before you can connect remotely to Application Object Server \[AOS\].)</span></span>
+1. <span data-ttu-id="bfcc2-106">Använd information från miljösidan i Microsoft Dynamics Lifecycle Services (LCS) för att ansluta till den primära instansen av Azure SQL för den miljön.</span><span class="sxs-lookup"><span data-stu-id="bfcc2-106">Use information from the environment page in Microsoft Dynamics Lifecycle Services (LCS) to connect to the primary instance of Azure SQL for that environment.</span></span> <span data-ttu-id="bfcc2-107">Kör följande Transact-SQL-kommando (T-SQL) för att aktivera förhandsversioner för sandbox-miljön.</span><span class="sxs-lookup"><span data-stu-id="bfcc2-107">Run the following Transact-SQL (T-SQL) command to turn on flights for the sandbox environment.</span></span> <span data-ttu-id="bfcc2-108">(Du kanske måste aktivera åtkomst för din IP-adress i LCS innan du kan fjärransluta till Application Object Server \[AOS\].)</span><span class="sxs-lookup"><span data-stu-id="bfcc2-108">(You might have to turn on access for your IP address in LCS before you can connect remotely to Application Object Server \[AOS\].)</span></span>
 
     `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)`
 
     > [!NOTE]
-    > <span data-ttu-id="1d511-109">Om din distribution av Microsoft Dynamics 365 Finance är en Service Fabric-distribution kan du hoppa över det här steget.</span><span class="sxs-lookup"><span data-stu-id="1d511-109">If your deployment of Microsoft Dynamics 365 Finance is a Service Fabric deployment, you can skip this step.</span></span> <span data-ttu-id="1d511-110">Teamet för Finance-insikter ska redan ha aktiverat förhandsversionen för dig.</span><span class="sxs-lookup"><span data-stu-id="1d511-110">The Finance Insights team should already have turned on the flight for you.</span></span> <span data-ttu-id="1d511-111">Om funktionerna inte visas på arbetsytan **Funktionshantering**, eller om det uppstår problem när du försöker att aktivera dem, kontaktar du <fiap@microsoft.com>.</span><span class="sxs-lookup"><span data-stu-id="1d511-111">If you don't see the features in the **Feature management** workspace, or if experience issues when you try to turn them on, contact <fiap@microsoft.com>.</span></span>
+    > <span data-ttu-id="bfcc2-109">Om din distribution av Microsoft Dynamics 365 Finance är en Service Fabric-distribution kan du hoppa över det här steget.</span><span class="sxs-lookup"><span data-stu-id="bfcc2-109">If your deployment of Microsoft Dynamics 365 Finance is a Service Fabric deployment, you can skip this step.</span></span> <span data-ttu-id="bfcc2-110">Teamet för Finance-insikter ska redan ha aktiverat förhandsversionen för dig.</span><span class="sxs-lookup"><span data-stu-id="bfcc2-110">The Finance Insights team should already have turned on the flight for you.</span></span> <span data-ttu-id="bfcc2-111">Om funktionerna inte visas på arbetsytan **Funktionshantering**, eller om det uppstår problem när du försöker att aktivera dem, kontaktar du <fiap@microsoft.com>.</span><span class="sxs-lookup"><span data-stu-id="bfcc2-111">If you don't see the features in the **Feature management** workspace, or if experience issues when you try to turn them on, contact <fiap@microsoft.com>.</span></span>
   
-2. <span data-ttu-id="1d511-112">Öppna arbetsytan **Funktionshantering** och gör så här:</span><span class="sxs-lookup"><span data-stu-id="1d511-112">Open the **Feature management** workspace, and follow these steps:</span></span>
+2. <span data-ttu-id="bfcc2-112">Öppna arbetsytan **Funktionshantering** och gör så här:</span><span class="sxs-lookup"><span data-stu-id="bfcc2-112">Open the **Feature management** workspace, and follow these steps:</span></span>
 
-    1. <span data-ttu-id="1d511-113">Välj **Sök efter uppdateringar**.</span><span class="sxs-lookup"><span data-stu-id="1d511-113">Select **Check for updates**.</span></span>
-    2. <span data-ttu-id="1d511-114">Aktivera följande funktioner:</span><span class="sxs-lookup"><span data-stu-id="1d511-114">Turn on the following features:</span></span>
+    1. <span data-ttu-id="bfcc2-113">Välj **Sök efter uppdateringar**.</span><span class="sxs-lookup"><span data-stu-id="bfcc2-113">Select **Check for updates**.</span></span>
+    2. <span data-ttu-id="bfcc2-114">Aktivera följande funktioner:</span><span class="sxs-lookup"><span data-stu-id="bfcc2-114">Turn on the following features:</span></span>
 
-        - <span data-ttu-id="1d511-115">Ny rutnätskontroll</span><span class="sxs-lookup"><span data-stu-id="1d511-115">New grid control</span></span>
-        - <span data-ttu-id="1d511-116">Gruppering i rutnät (förhandsversion)</span><span class="sxs-lookup"><span data-stu-id="1d511-116">Grouping in grids (preview)</span></span> 
-        - <span data-ttu-id="1d511-117">Kundbetalningsförutsägelser (förhandsversion)</span><span class="sxs-lookup"><span data-stu-id="1d511-117">Customer payment predictions (preview)</span></span>
-        - <span data-ttu-id="1d511-118">Kassaflödesprognoser (förhandsversion)</span><span class="sxs-lookup"><span data-stu-id="1d511-118">Cash flow forecasts (preview)</span></span>
+        - <span data-ttu-id="bfcc2-115">Ny rutnätskontroll</span><span class="sxs-lookup"><span data-stu-id="bfcc2-115">New grid control</span></span>
+        - <span data-ttu-id="bfcc2-116">Gruppering i rutnät (förhandsversion)</span><span class="sxs-lookup"><span data-stu-id="bfcc2-116">Grouping in grids (preview)</span></span> 
+        - <span data-ttu-id="bfcc2-117">Kundbetalningsförutsägelser (förhandsversion)</span><span class="sxs-lookup"><span data-stu-id="bfcc2-117">Customer payment predictions (preview)</span></span>
+        - <span data-ttu-id="bfcc2-118">Kassaflödesprognoser (förhandsversion)</span><span class="sxs-lookup"><span data-stu-id="bfcc2-118">Cash flow forecasts (preview)</span></span>
 
-3. <span data-ttu-id="1d511-119">Gå till **Kassa- och bankhantering \> Kassaflödesprognosinställningar** och lägg till likviditetskontona som ska inkluderas i prognoserna.</span><span class="sxs-lookup"><span data-stu-id="1d511-119">Go to **Cash and bank management \> Cash flow forecast setup**, and add the liquidity accounts that should be included in the forecasts.</span></span>
+3. <span data-ttu-id="bfcc2-119">Gå till **Kassa- och bankhantering \> Kassaflödesprognosinställningar** och lägg till likviditetskontona som ska inkluderas i prognoserna.</span><span class="sxs-lookup"><span data-stu-id="bfcc2-119">Go to **Cash and bank management \> Cash flow forecast setup**, and add the liquidity accounts that should be included in the forecasts.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="1d511-120">Om likviditetskonton inte har konfigurerats kan kassaflödet inte genereras.</span><span class="sxs-lookup"><span data-stu-id="1d511-120">If liquidity accounts aren't set up, the cash flow can't be generated.</span></span>
+    > <span data-ttu-id="bfcc2-120">Om likviditetskonton inte har konfigurerats kan kassaflödet inte genereras.</span><span class="sxs-lookup"><span data-stu-id="bfcc2-120">If liquidity accounts aren't set up, the cash flow can't be generated.</span></span>
 
-4. <span data-ttu-id="1d511-121">Gå till **Kassa- och bankhantering \> Konfigurera \> Finance-insikter (förhandsversion) \> Kassaflödesprognoser (förhandsversion)** och gör så här:</span><span class="sxs-lookup"><span data-stu-id="1d511-121">Go to **Cash and bank management \> Setup \> Finance Insights (preview) \> Cash flow forecasts (preview)**, and follow these steps:</span></span>
+4. <span data-ttu-id="bfcc2-121">Gå till **Kassa- och bankhantering \> Konfigurera \> Finance-insikter (förhandsversion) \> Kassaflödesprognoser (förhandsversion)** och gör så här:</span><span class="sxs-lookup"><span data-stu-id="bfcc2-121">Go to **Cash and bank management \> Setup \> Finance Insights (preview) \> Cash flow forecasts (preview)**, and follow these steps:</span></span>
 
-    1. <span data-ttu-id="1d511-122">På fliken **Kassaflödesprognos** väljer du **Aktivera funktion**.</span><span class="sxs-lookup"><span data-stu-id="1d511-122">On the **Cash flow forecast** tab, select **Enable feature**.</span></span>
-    2. <span data-ttu-id="1d511-123">Välj **Skapa förutsägelsemodell**.</span><span class="sxs-lookup"><span data-stu-id="1d511-123">Select **Create prediction model**.</span></span>
+    1. <span data-ttu-id="bfcc2-122">På fliken **Kassaflödesprognos** väljer du **Aktivera funktion**.</span><span class="sxs-lookup"><span data-stu-id="bfcc2-122">On the **Cash flow forecast** tab, select **Enable feature**.</span></span>
+    2. <span data-ttu-id="bfcc2-123">Välj **Skapa förutsägelsemodell**.</span><span class="sxs-lookup"><span data-stu-id="bfcc2-123">Select **Create prediction model**.</span></span>
 
-<span data-ttu-id="1d511-124">Mer information om funktionen för kassaflödesprognoser finns i [Kassaflödesprognoser](cash-flow-forecast-intro.md).</span><span class="sxs-lookup"><span data-stu-id="1d511-124">For more information about the cash flow forecasting capability, see [Cash flow forecasting](cash-flow-forecast-intro.md).</span></span>
+<span data-ttu-id="bfcc2-124">Mer information om funktionen för kassaflödesprognoser finns i [Kassaflödesprognoser](cash-flow-forecast-intro.md).</span><span class="sxs-lookup"><span data-stu-id="bfcc2-124">For more information about the cash flow forecasting capability, see [Cash flow forecasting](cash-flow-forecast-intro.md).</span></span>
 
-## <a name="privacy-notice"></a><span data-ttu-id="1d511-125">Sekretesspolicy</span><span class="sxs-lookup"><span data-stu-id="1d511-125">Privacy notice</span></span>
+## <a name="privacy-notice"></a><span data-ttu-id="bfcc2-125">Sekretesspolicy</span><span class="sxs-lookup"><span data-stu-id="bfcc2-125">Privacy notice</span></span>
 
-<span data-ttu-id="1d511-126">Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.</span><span class="sxs-lookup"><span data-stu-id="1d511-126">Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.</span></span>
+<span data-ttu-id="bfcc2-126">Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.</span><span class="sxs-lookup"><span data-stu-id="bfcc2-126">Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.</span></span>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
