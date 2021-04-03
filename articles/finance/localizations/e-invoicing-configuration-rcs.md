@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: bb4a426bb54ee21197f9954d946d60ea55f5eb76
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 99fac9a42dc2b180c220612c66fe753d43e5bd7f
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104441"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592632"
 ---
 # <a name="configure-the-electronic-invoicing-add-on-in-regulatory-configuration-services-rcs"></a>Konfigurera tillägget Elektronisk fakturering i Regulatory Configuration Services (RCS)
 
@@ -64,7 +64,6 @@ Följande tabell visar de elektroniska faktureringsfunktioner som för närvaran
 | Belgien        | Belgisk elektronisk faktura (BE)      | Försäljnings- och projektfakturor |
 | Brasilien         | Brasiliansk NF-e (BR)                  | Skattedokumentmodell 55, korrigeringsbrev, annulleringar och kasseringar |
 | Brasilien         | Brasiliansk NFS-e ABRASF Curitiba (BR) | Skattedokument för tjänster |
-| Brasilien         | Brasiliansk NFS-e São Paulo (BR)       | Skattedokument för tjänster |
 | Danmark        | Dansk elektronisk faktura (DK)       | Försäljnings- och projektfakturor |
 | Egypten          | Egyptisk elektronisk faktura (EG) | Försäljnings- och projektfakturor |
 | Estland        | Estnisk elektronisk faktura (EE)     | Försäljnings- och projektfakturor |
@@ -119,10 +118,6 @@ Följande listor visar de ER-formatkonfigurationer som är tillgängliga för de
 
 - NFS-e ABRASF Curitiba (BR)
 - NFS-e ABRASF Inquire Curitiba (BR)
-
-#### <a name="brazilian-br-nfs-e-nfs-e-so-paulo-city"></a>Brasiliansk (BR) NFS-e: NFS-e São Paulo city
-
-- NFS-e Sao Paulo (BR)
 
 #### <a name="danish-dk-electronic-invoice-sales-and-project-invoices-for-denmark"></a>Elektronisk faktura för Danmark (DK): Försäljnings- och projektfakturor för Danmark
 

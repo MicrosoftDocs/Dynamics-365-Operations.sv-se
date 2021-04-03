@@ -16,12 +16,12 @@ ms.search.region: Sweden
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5aafba4e3a307ad1dd18eda6041878944cfe2b41
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bd1a84f64f39b8fb0a703425c014fb3173735f82
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5005865"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236203"
 ---
 # <a name="import-payment-formats-for-sweden"></a>Importformat för betalning för Sverige
 
