@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,67 +13,70 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2643c85e64373e30aab16be686c50cd224490fe
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7c474f4bc7940a429ed62870e00302c93581eb9a
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684485"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569591"
 ---
-# <a name="generate-documents-that-have-application-data"></a><span data-ttu-id="63ab9-103">Skapa dokument som omfattar programdata</span><span class="sxs-lookup"><span data-stu-id="63ab9-103">Generate documents that have application data</span></span>
+# <a name="generate-documents-that-have-application-data"></a><span data-ttu-id="3776b-103">Skapa dokument som omfattar programdata</span><span class="sxs-lookup"><span data-stu-id="3776b-103">Generate documents that have application data</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="63ab9-104">Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren "ER Generera dokument med uppdatering av programdata (Del 4: Ändra format)".</span><span class="sxs-lookup"><span data-stu-id="63ab9-104">To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 4: Modify format)".</span></span>
+<span data-ttu-id="3776b-104">Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren "ER Generera dokument med uppdatering av programdata (Del 4: Ändra format)".</span><span class="sxs-lookup"><span data-stu-id="3776b-104">To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 4: Modify format)".</span></span>
 
 
 
-<span data-ttu-id="63ab9-105">Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elektronisk rapportering) för att skapa ett elektroniskt dokument och uppdatera programdata.</span><span class="sxs-lookup"><span data-stu-id="63ab9-105">The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document and update application data.</span></span> <span data-ttu-id="63ab9-106">I den här proceduren ska du köra ER-formatkonfigurationen för att generera Intrastat-rapporten och uppdatera programdata för arkivering av information om rapporteringen.</span><span class="sxs-lookup"><span data-stu-id="63ab9-106">In this procedure, you execute the ER format configuration to generate the Intrastat report and update application data for archiving details of the reporting process.</span></span>
+<span data-ttu-id="3776b-105">Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elektronisk rapportering) för att skapa ett elektroniskt dokument och uppdatera programdata.</span><span class="sxs-lookup"><span data-stu-id="3776b-105">The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document and update application data.</span></span> <span data-ttu-id="3776b-106">I den här proceduren ska du köra ER-formatkonfigurationen för att generera Intrastat-rapporten och uppdatera programdata för arkivering av information om rapporteringen.</span><span class="sxs-lookup"><span data-stu-id="3776b-106">In this procedure, you execute the ER format configuration to generate the Intrastat report and update application data for archiving details of the reporting process.</span></span>
 
 
 
-<span data-ttu-id="63ab9-107">Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="63ab9-107">This procedure is created for users with the assigned role of system administrator or electronic reporting developer.</span></span> <span data-ttu-id="63ab9-108">Stegen kan utföras med hjälp av datauppsättningen DEMF.</span><span class="sxs-lookup"><span data-stu-id="63ab9-108">These steps can be completed using the DEMF dataset.</span></span> <span data-ttu-id="63ab9-109">Innan du börjar ska du se till att landet för företaget DEMF är BEL (Belgien).</span><span class="sxs-lookup"><span data-stu-id="63ab9-109">Before you begin, make sure that the country context for the DEMF company is BEL (Belgium).</span></span>
+<span data-ttu-id="3776b-107">Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="3776b-107">This procedure is created for users with the assigned role of system administrator or electronic reporting developer.</span></span> <span data-ttu-id="3776b-108">Stegen kan utföras med hjälp av datauppsättningen DEMF.</span><span class="sxs-lookup"><span data-stu-id="3776b-108">These steps can be completed using the DEMF dataset.</span></span> <span data-ttu-id="3776b-109">Innan du börjar ska du se till att landet för företaget DEMF är BEL (Belgien).</span><span class="sxs-lookup"><span data-stu-id="3776b-109">Before you begin, make sure that the country context for the DEMF company is BEL (Belgium).</span></span>
 
 
-## <a name="set-up-foreign-trade-parameters"></a><span data-ttu-id="63ab9-110">Konfigurera utländska handelsparametrar</span><span class="sxs-lookup"><span data-stu-id="63ab9-110">Set up foreign trade parameters</span></span>
-1. <span data-ttu-id="63ab9-111">Gå till Moms > Inställningar > Utländsk handel > Utländska handelsparametrar.</span><span class="sxs-lookup"><span data-stu-id="63ab9-111">Go to Tax > Setup > Foreign trade > Foreign trade parameters.</span></span>
-2. <span data-ttu-id="63ab9-112">Klicka på fliken Nummersekvenser.</span><span class="sxs-lookup"><span data-stu-id="63ab9-112">Click the Number sequences tab.</span></span>
+## <a name="set-up-foreign-trade-parameters"></a><span data-ttu-id="3776b-110">Konfigurera utländska handelsparametrar</span><span class="sxs-lookup"><span data-stu-id="3776b-110">Set up foreign trade parameters</span></span>
+1. <span data-ttu-id="3776b-111">Gå till Moms > Inställningar > Utländsk handel > Utländska handelsparametrar.</span><span class="sxs-lookup"><span data-stu-id="3776b-111">Go to Tax > Setup > Foreign trade > Foreign trade parameters.</span></span>
+2. <span data-ttu-id="3776b-112">Klicka på fliken Nummersekvenser.</span><span class="sxs-lookup"><span data-stu-id="3776b-112">Click the Number sequences tab.</span></span>
 
-    <span data-ttu-id="63ab9-113">För att kunna arkivera information om Intrastat-rapporteringen måste vi identifiera poster för varje arkiv vi skapar.</span><span class="sxs-lookup"><span data-stu-id="63ab9-113">Archiving details of Intrastat reporting process, we need to identify records of each archive we created.</span></span> <span data-ttu-id="63ab9-114">För detta måste en särskild nummerserie konfigureras.</span><span class="sxs-lookup"><span data-stu-id="63ab9-114">A special number sequence must be configured for that.</span></span>  
+    <span data-ttu-id="3776b-113">För att kunna arkivera information om Intrastat-rapporteringen måste vi identifiera poster för varje arkiv vi skapar.</span><span class="sxs-lookup"><span data-stu-id="3776b-113">Archiving details of Intrastat reporting process, we need to identify records of each archive we created.</span></span> <span data-ttu-id="3776b-114">För detta måste en särskild nummerserie konfigureras.</span><span class="sxs-lookup"><span data-stu-id="3776b-114">A special number sequence must be configured for that.</span></span>  
 
-3. <span data-ttu-id="63ab9-115">Välj referensen Arkiv-ID - Intrastat.</span><span class="sxs-lookup"><span data-stu-id="63ab9-115">Select the 'Intrastat archive ID' reference.</span></span>
-4. <span data-ttu-id="63ab9-116">Skriv ett värde i fältet Nummerseriekod.</span><span class="sxs-lookup"><span data-stu-id="63ab9-116">In the Number sequence code field, type a value.</span></span>
+3. <span data-ttu-id="3776b-115">Välj referensen Arkiv-ID - Intrastat.</span><span class="sxs-lookup"><span data-stu-id="3776b-115">Select the 'Intrastat archive ID' reference.</span></span>
+4. <span data-ttu-id="3776b-116">Skriv ett värde i fältet Nummerseriekod.</span><span class="sxs-lookup"><span data-stu-id="3776b-116">In the Number sequence code field, type a value.</span></span>
 
-    <span data-ttu-id="63ab9-117">Ange eller välj värdet Fore_2 i fältet Nummerseriekod.</span><span class="sxs-lookup"><span data-stu-id="63ab9-117">In the 'Number sequence code' field, enter or select the value 'Fore_2'.</span></span>  
+    <span data-ttu-id="3776b-117">Ange eller välj värdet Fore_2 i fältet Nummerseriekod.</span><span class="sxs-lookup"><span data-stu-id="3776b-117">In the 'Number sequence code' field, enter or select the value 'Fore_2'.</span></span>  
 
-5. <span data-ttu-id="63ab9-118">ResolveChanges nummerseriekoden.</span><span class="sxs-lookup"><span data-stu-id="63ab9-118">ResolveChanges the Number sequence code.</span></span>
-6. <span data-ttu-id="63ab9-119">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="63ab9-119">Click Save.</span></span>
-7. <span data-ttu-id="63ab9-120">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="63ab9-120">Close the page.</span></span>
+5. <span data-ttu-id="3776b-118">ResolveChanges nummerseriekoden.</span><span class="sxs-lookup"><span data-stu-id="3776b-118">ResolveChanges the Number sequence code.</span></span>
+6. <span data-ttu-id="3776b-119">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="3776b-119">Click Save.</span></span>
+7. <span data-ttu-id="3776b-120">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3776b-120">Close the page.</span></span>
 
-## <a name="run-modified-er-format"></a><span data-ttu-id="63ab9-121">Kör det ändrade ER-formatet</span><span class="sxs-lookup"><span data-stu-id="63ab9-121">Run modified ER format</span></span>
-1. <span data-ttu-id="63ab9-122">Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="63ab9-122">Go to Organization administration > Electronic reporting > Configurations.</span></span>
-2. <span data-ttu-id="63ab9-123">Expandera Intrastat (model) i trädet.</span><span class="sxs-lookup"><span data-stu-id="63ab9-123">In the tree, expand 'Intrastat (model)'.</span></span>
-3. <span data-ttu-id="63ab9-124">Välj Intrastat Intrastat (model)\Intrastat (format) i trädet.</span><span class="sxs-lookup"><span data-stu-id="63ab9-124">In the tree, select 'Intrastat (model)\Intrastat (format)'.</span></span>
-4. <span data-ttu-id="63ab9-125">Klicka på Kör.</span><span class="sxs-lookup"><span data-stu-id="63ab9-125">Click Run.</span></span>
-5. <span data-ttu-id="63ab9-126">Skriv "intrastat2.xml" i fältet Ange filnamn.</span><span class="sxs-lookup"><span data-stu-id="63ab9-126">In the Enter file name field, type 'intrastat2.xml'.</span></span>
-6. <span data-ttu-id="63ab9-127">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="63ab9-127">Click OK.</span></span>
+## <a name="run-modified-er-format"></a><span data-ttu-id="3776b-121">Kör det ändrade ER-formatet</span><span class="sxs-lookup"><span data-stu-id="3776b-121">Run modified ER format</span></span>
+1. <span data-ttu-id="3776b-122">Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="3776b-122">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="3776b-123">Expandera Intrastat (model) i trädet.</span><span class="sxs-lookup"><span data-stu-id="3776b-123">In the tree, expand 'Intrastat (model)'.</span></span>
+3. <span data-ttu-id="3776b-124">Välj Intrastat Intrastat (model)\Intrastat (format) i trädet.</span><span class="sxs-lookup"><span data-stu-id="3776b-124">In the tree, select 'Intrastat (model)\Intrastat (format)'.</span></span>
+4. <span data-ttu-id="3776b-125">Klicka på Kör.</span><span class="sxs-lookup"><span data-stu-id="3776b-125">Click Run.</span></span>
+5. <span data-ttu-id="3776b-126">Skriv "intrastat2.xml" i fältet Ange filnamn.</span><span class="sxs-lookup"><span data-stu-id="3776b-126">In the Enter file name field, type 'intrastat2.xml'.</span></span>
+6. <span data-ttu-id="3776b-127">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="3776b-127">Click OK.</span></span>
 
-## <a name="review-er-format-executions-results"></a><span data-ttu-id="63ab9-128">Granska resultatet från körningen av ER-formatet</span><span class="sxs-lookup"><span data-stu-id="63ab9-128">Review ER format execution's results</span></span>
-<span data-ttu-id="63ab9-129">Granska den skapade XML-filen.</span><span class="sxs-lookup"><span data-stu-id="63ab9-129">Review the generated XML file.</span></span>  
-1. <span data-ttu-id="63ab9-130">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="63ab9-130">Close the page.</span></span>
-2. <span data-ttu-id="63ab9-131">Gå till Skatt > Deklarationer > Utländsk handel > Intrastat.</span><span class="sxs-lookup"><span data-stu-id="63ab9-131">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
+## <a name="review-er-format-executions-results"></a><span data-ttu-id="3776b-128">Granska resultatet från körningen av ER-formatet</span><span class="sxs-lookup"><span data-stu-id="3776b-128">Review ER format execution's results</span></span>
+<span data-ttu-id="3776b-129">Granska den skapade XML-filen.</span><span class="sxs-lookup"><span data-stu-id="3776b-129">Review the generated XML file.</span></span>  
+1. <span data-ttu-id="3776b-130">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3776b-130">Close the page.</span></span>
+2. <span data-ttu-id="3776b-131">Gå till Skatt > Deklarationer > Utländsk handel > Intrastat.</span><span class="sxs-lookup"><span data-stu-id="3776b-131">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
 
-    <span data-ttu-id="63ab9-132">Öppna detta formulär som innehåller Intrastat-transaktionerna som har inkluderats i det genererade elektroniska dokumentet.</span><span class="sxs-lookup"><span data-stu-id="63ab9-132">Open this form containing Intrastat transactions that have been included to the generated electronic document.</span></span>  
+    <span data-ttu-id="3776b-132">Öppna detta formulär som innehåller Intrastat-transaktionerna som har inkluderats i det genererade elektroniska dokumentet.</span><span class="sxs-lookup"><span data-stu-id="3776b-132">Open this form containing Intrastat transactions that have been included to the generated electronic document.</span></span>  
 
-3. <span data-ttu-id="63ab9-133">Klicka på Intrastat-arkiv.</span><span class="sxs-lookup"><span data-stu-id="63ab9-133">Click Intrastat archive.</span></span>
+3. <span data-ttu-id="3776b-133">Klicka på Intrastat-arkiv.</span><span class="sxs-lookup"><span data-stu-id="3776b-133">Click Intrastat archive.</span></span>
 
-    <span data-ttu-id="63ab9-134">Eftersom det ER-formatet nu innehåller inställningarna för uppdatering av programdata, har informationen om den slutförda Intrastat-rapporteringen arkiverats.</span><span class="sxs-lookup"><span data-stu-id="63ab9-134">Since the executed ER format contains now settings for application data update, the details of the completed Intrastat reporting have been archived.</span></span> <span data-ttu-id="63ab9-135">I det här formuläret visas rubrikposten för det skapade arkivet.</span><span class="sxs-lookup"><span data-stu-id="63ab9-135">In this form, you can see the header record of the created archive.</span></span>  
+    <span data-ttu-id="3776b-134">Eftersom det ER-formatet nu innehåller inställningarna för uppdatering av programdata, har informationen om den slutförda Intrastat-rapporteringen arkiverats.</span><span class="sxs-lookup"><span data-stu-id="3776b-134">Since the executed ER format contains now settings for application data update, the details of the completed Intrastat reporting have been archived.</span></span> <span data-ttu-id="3776b-135">I det här formuläret visas rubrikposten för det skapade arkivet.</span><span class="sxs-lookup"><span data-stu-id="3776b-135">In this form, you can see the header record of the created archive.</span></span>  
 
-4. <span data-ttu-id="63ab9-136">Klicka på Detaljer.</span><span class="sxs-lookup"><span data-stu-id="63ab9-136">Click Details.</span></span>
+4. <span data-ttu-id="3776b-136">Klicka på Detaljer.</span><span class="sxs-lookup"><span data-stu-id="3776b-136">Click Details.</span></span>
 
-    <span data-ttu-id="63ab9-137">I det här formuläret visas detaljerna för det skapade arkivet.</span><span class="sxs-lookup"><span data-stu-id="63ab9-137">In this form, you can see the details for the created archive.</span></span>  
+    <span data-ttu-id="3776b-137">I det här formuläret visas detaljerna för det skapade arkivet.</span><span class="sxs-lookup"><span data-stu-id="3776b-137">In this form, you can see the details for the created archive.</span></span>  
 
-5. <span data-ttu-id="63ab9-138">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="63ab9-138">Close the page.</span></span>
-6. <span data-ttu-id="63ab9-139">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="63ab9-139">Close the page.</span></span>
-7. <span data-ttu-id="63ab9-140">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="63ab9-140">Close the page.</span></span>
+5. <span data-ttu-id="3776b-138">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3776b-138">Close the page.</span></span>
+6. <span data-ttu-id="3776b-139">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3776b-139">Close the page.</span></span>
+7. <span data-ttu-id="3776b-140">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3776b-140">Close the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -18,30 +18,34 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 488745388312f0a2ef936dac2f8252431123fe33
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: c20d0da62724202e5b6c750e646bc205542191aa
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5116078"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468165"
 ---
-# <a name="view-analytics-for-leave-and-absence"></a><span data-ttu-id="32085-103">Visa analys för tjänstledighet och frånvaro</span><span class="sxs-lookup"><span data-stu-id="32085-103">View analytics for leave and absence</span></span>
+# <a name="view-analytics-for-leave-and-absence"></a><span data-ttu-id="532d9-103">Visa analys för tjänstledighet och frånvaro</span><span class="sxs-lookup"><span data-stu-id="532d9-103">View analytics for leave and absence</span></span>
 
-<span data-ttu-id="32085-104">Dynamics 365 Human Resources ger en analys som hjälper dig att informera om organisationens tjänstledighets- och frånvarotrender.</span><span class="sxs-lookup"><span data-stu-id="32085-104">Dynamics 365 Human Resources provides analytics to help give you insight into your organization's leave and absence trends.</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-## <a name="view-leave-and-absence-analytics"></a><span data-ttu-id="32085-105">Visa analys för tjänstledighet och frånvaro</span><span class="sxs-lookup"><span data-stu-id="32085-105">View Leave and absence analytics</span></span>
+<span data-ttu-id="532d9-104">Dynamics 365 Human Resources ger en analys som hjälper dig att informera om organisationens tjänstledighets- och frånvarotrender.</span><span class="sxs-lookup"><span data-stu-id="532d9-104">Dynamics 365 Human Resources provides analytics to help give you insight into your organization's leave and absence trends.</span></span>
 
-1. <span data-ttu-id="32085-106">I arbetsytan **tjänstledighet och frånvaro** välj fliken **Analys**.</span><span class="sxs-lookup"><span data-stu-id="32085-106">In the **Leave and absence** workspace, select the **Analytics** tab.</span></span>
+## <a name="view-leave-and-absence-analytics"></a><span data-ttu-id="532d9-105">Visa analys för tjänstledighet och frånvaro</span><span class="sxs-lookup"><span data-stu-id="532d9-105">View Leave and absence analytics</span></span>
 
-2. <span data-ttu-id="32085-107">Välj en av följande vyer på flikarna utmed nederkanten:</span><span class="sxs-lookup"><span data-stu-id="32085-107">Choose one of the following views from the tabs along the bottom:</span></span>
+1. <span data-ttu-id="532d9-106">I arbetsytan **tjänstledighet och frånvaro** välj fliken **Analys**.</span><span class="sxs-lookup"><span data-stu-id="532d9-106">In the **Leave and absence** workspace, select the **Analytics** tab.</span></span>
 
-   - <span data-ttu-id="32085-108">**Översikt över tjänstledighet och frånvaro** – Visa procentsatser för anmälan och utnyttjandegrad för tjänstledighetsplaner, periodiseringar och saldon samt ledighetssaldon per chef.</span><span class="sxs-lookup"><span data-stu-id="32085-108">**Leave and Absence Overview** - View enrollment percentages and utilization rates for your leave plans, monthly accruals and balances, and time-off balances by manager.</span></span>
+2. <span data-ttu-id="532d9-107">Välj en av följande vyer på flikarna utmed nederkanten:</span><span class="sxs-lookup"><span data-stu-id="532d9-107">Choose one of the following views from the tabs along the bottom:</span></span>
 
-   - <span data-ttu-id="32085-109">**Aktuell saldoanalys** – Visa detaljerad information om att tjänstledighetssaldon och periodiseringar.</span><span class="sxs-lookup"><span data-stu-id="32085-109">**Current Balance Analysis** - View detailed information about leave balances and accruals.</span></span>
+   - <span data-ttu-id="532d9-108">**Översikt över tjänstledighet och frånvaro** – Visa procentsatser för anmälan och utnyttjandegrad för tjänstledighetsplaner, periodiseringar och saldon samt ledighetssaldon per chef.</span><span class="sxs-lookup"><span data-stu-id="532d9-108">**Leave and Absence Overview** - View enrollment percentages and utilization rates for your leave plans, monthly accruals and balances, and time-off balances by manager.</span></span>
 
-   - <span data-ttu-id="32085-110">**Analys av saldotrender** – Visa trender för tjänstledighetssaldon per månad och år och visa trender under de senaste 12 månaderna.</span><span class="sxs-lookup"><span data-stu-id="32085-110">**Balance Trend Analysis** - View trends in leave balances by month and by year, and view trends over the past 12 months.</span></span>
+   - <span data-ttu-id="532d9-109">**Aktuell saldoanalys** – Visa detaljerad information om att tjänstledighetssaldon och periodiseringar.</span><span class="sxs-lookup"><span data-stu-id="532d9-109">**Current Balance Analysis** - View detailed information about leave balances and accruals.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="32085-111">Se även</span><span class="sxs-lookup"><span data-stu-id="32085-111">See also</span></span>
+   - <span data-ttu-id="532d9-110">**Analys av saldotrender** – Visa trender för tjänstledighetssaldon per månad och år och visa trender under de senaste 12 månaderna.</span><span class="sxs-lookup"><span data-stu-id="532d9-110">**Balance Trend Analysis** - View trends in leave balances by month and by year, and view trends over the past 12 months.</span></span>
 
-- [<span data-ttu-id="32085-112">Översikt över tjänstledighet och frånvaro</span><span class="sxs-lookup"><span data-stu-id="32085-112">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
-- [<span data-ttu-id="32085-113">Skapa en plan för tjänstledighet och frånvaro</span><span class="sxs-lookup"><span data-stu-id="32085-113">Create a leave and absence plan</span></span>](hr-leave-and-absence-plans.md)
+## <a name="see-also"></a><span data-ttu-id="532d9-111">Se även</span><span class="sxs-lookup"><span data-stu-id="532d9-111">See also</span></span>
+
+- [<span data-ttu-id="532d9-112">Översikt över tjänstledighet och frånvaro</span><span class="sxs-lookup"><span data-stu-id="532d9-112">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
+- [<span data-ttu-id="532d9-113">Skapa en plan för tjänstledighet och frånvaro</span><span class="sxs-lookup"><span data-stu-id="532d9-113">Create a leave and absence plan</span></span>](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
