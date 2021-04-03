@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d91f377af2514af932ea585adb75a56bdee13871
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ec7417d44a7c2aa413a9cda75996c153727632dd
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988498"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592656"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Kom igång med tillägget elektronisk fakturering för Mexiko
 
@@ -291,7 +291,7 @@ När du har aktiverat funktionen **konfigurerbara integreringstillägg för elek
     ![Visa information om överföringsloggar för annullering](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
-Om du aktiverar funktionerna MX-00010 och MX-00016 (CFDI-faktura och CFDI-annullering) kan kräva sändning av begränsad data, som inkluderar organisationens skatteregistrerings-ID. Detta kommer att översändas till tredje parts byråer som har tillstånd av skattemyndigheten för att skicka elektroniska fakturor till denna skattemyndighet i det fördefinierade format som krävs för integrering med den offentliga sektorns webbtjänster. En administratör kan aktivera och inaktivera funktionen MX-00010 och MX-00016 (CFDI-faktura och CFDI-annullering) genom att navigera till **Organisationsadministration \> Inställningar \> Parametrar för elektroniskt dokument**. Välj fliken **Funktioner**, markera de rader som innehåller funktionerna MX-00010 och MX-00016 och välj sedan lämpligt alternativ. Data som importeras från dessa externa system till denna Dynamics 365 onlinetjänst omfattas av vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=512132). Mer information finns i sektionerna om sekretessmeddelanden i landsspecifik funktionsdokumentation.
+Om du aktiverar funktionen **CFDI mexikansk elektronisk faktura (MX)** kan det krävas att begränsade data skickas, vilket inkluderar organisationens momsregistrerings-ID. Detta kommer att översändas till tredje parts byråer som har tillstånd av skattemyndigheten för att skicka elektroniska fakturor till denna skattemyndighet i det fördefinierade format som krävs för integrering med den offentliga sektorns webbtjänster. En administratör kan aktivera och inaktivera funktionen **CFDI mexikansk elektronisk faktura (MX)** genom att navigera till **Organisationsadministration \> Inställningar \> Parametrar för elektroniskt dokument**. Välj fliken **Funktioner**, markera de rader som innehåller funktionerna **CFDI mexikansk elektronisk faktura (MX)** och välj sedan lämpligt alternativ. Data som importeras från dessa externa system till denna Dynamics 365 onlinetjänst omfattas av vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=512132). Mer information finns i sektionerna om sekretessmeddelanden i landsspecifik funktionsdokumentation.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

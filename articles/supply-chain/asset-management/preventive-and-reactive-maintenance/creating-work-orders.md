@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 876aef9f3f470490bb385e1861c837dcfa82db69
-ms.sourcegitcommit: 1e615288db245f83c5d5e0cd45315400f8946beb
+ms.openlocfilehash: 76306fb31e7e5297e6a5d64b97b5bd09b64349ee
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "5131803"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500584"
 ---
 # <a name="creating-work-orders"></a>Skapa arbetsorder
 
@@ -62,8 +62,7 @@ Skapa arbetsorder som baseras på din underhållsplan genom att följa dessa ste
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>Gruppera arbetsorderrader som skapas automatiskt när en underhållsplan körs
 
-> [!IMPORTANT]
-> Funktionen som beskrivs i det här avsnittet är tillgänglig som en del av en förhandsversion. Funktionen och dess innehåll kan ändras. Mer information om förhandsversioner finns i [Frågor och svar om tjänstuppdateringar för en version](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 Med hjälp av den här funktionen kan du definiera regler för gruppering av arbetsorderrader under en enskild arbetsorder när systemet är inställt på att generera arbetsorder automatiskt, baserat på en underhållsplan. Tidigare kunde automatiskt genererade arbetsorder bara innehålla en rad. Du kan nu dock gruppera arbetsorder efter till exempel tillgång, tillgångstyp eller funktionell plats. (Manuellt genererade arbetsorder kan redan grupperas på det här sättet, på det sätt som beskrivs i det föregående avsnittet av det här avsnittet.)
 

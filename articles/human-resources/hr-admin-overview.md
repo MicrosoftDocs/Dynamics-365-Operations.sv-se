@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 38a8845ec4ae4c61ea969efdee60a12cfb644a3b
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: f55977fc45424ea7e514a741f9dd7f8f9306b015
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5114356"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466938"
 ---
 # <a name="administration-overview"></a>Administreringsöversikt
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -83,7 +85,7 @@ Den här administratörsguiden hjälper dig att konfigurera, hantera och felsök
   - [Uppgiftsinspelare](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
   - [Skapa dokumentation eller utbildning med Uppgiftsinspelare](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
-- Felsöka Personal
+- Felsöka Human Resources
   - [Få support](hr-admin-troubleshooting-support.md)
   - [Optimera prestanda med automatiska rensningsuppgifter](hr-admin-troubleshooting-batch-history.md)
   - [Analysrapporter uppdateras inte](hr-admin-troubleshooting-analytic-reports.md)

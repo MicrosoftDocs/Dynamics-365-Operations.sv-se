@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1d9482a45cb8f2ea52e7f58d55e30cfe56694d04
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985964"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582729"
 ---
-# <a name="add-support-for-a-content-delivery-network-cdn"></a>Lägga till stöd för ett innehållsleveransnätverk (CDN)
-
+# <a name="add-support-for-a-content-delivery-network-cdn"></a>Lägga till stöd för nätverk för innehållsleverans
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du lägger till ett innehållsleveransnätverk (CDN) på Microsoft Dynamics 365 Commerce-miljön.
-
-## <a name="overview"></a>Översikt
 
 När du konfigurerar en näthandelsmiljö i Dynamics 365 Commerce kan du konfigurera den så att den fungerar med ditt CDN-tjänst. 
 
@@ -96,8 +93,8 @@ Så här skapar du en flödesregel i Azure Front Door Service:
 1. Skriv **Dokument** i fältet **Standard**.
 1. I fältet **accepterat protokoll**, välj **HTTP och HTTPS**.
 1. I fältet **Klientvärd** ange **dynamics-ecom-tenant-name.azurefd.net**.
-1. Under **Mönster att matcha** i det övre fältet anger du **/\** _.
-1. Under **Flödesdetaljer** anger du alternativet **Flödestyp** som **Framåt**.
+1. Under **Mönster att matcha**, i det övre fältet anger du **/\***.
+1. Under **Flödesdetaljer**, ange alternativet **Flödestyp** till **Framåt**.
 1. I fältet **Serverpool** välj **ecom-backend**.
 1. I fältgruppen **Vidarebefordringsprotokoll** välj alternativet **Matcha begäran**. 
 1. Ange alternativet **URL-omskrivning** till **inaktiverad**.
@@ -109,8 +106,8 @@ Så här skapar du en cachelagringsregel i Azure Front Door Service:
 1. Skriv **statisk** i fältet **namn**.
 1. I fältet **accepterat protokoll**, välj **HTTP och HTTPS**.
 1. I fältet **Klientvärd** ange **dynamics-ecom-tenant-name.azurefd.net**.
-1. Under **Mönster att matcha** i det övre fältet, ange **/\_msdyn365/\_scnr/\** _.
-1. Under **Flödesdetaljer** anger du alternativet **Flödestyp** som **Framåt**.
+1. Under **Mönster att matcha**, i det övre fältet, **/\_msdyn365/\_scnr/\***.
+1. Under **Flödesdetaljer**, ange alternativet **Flödestyp** till **Framåt**.
 1. I fältet **Serverpool** välj **ecom-backend**.
 1. I fältgruppen **Vidarebefordringsprotokoll** välj alternativet **Matcha begäran**.
 1. Ange alternativet **URL-omskrivning** till **inaktiverad**.
@@ -143,25 +140,7 @@ Din CDN ska nu vara korrekt konfigurerad så att den kan användas med din näth
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Konfigurera ditt domännamn](configure-your-domain-name.md)
-
-[Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md)
-
-[Skapa en näthandelssajt](create-ecommerce-site.md)
-
-[Associera en Dynamics 365 Commerce-webbplats med en onlinekanal](associate-site-online-store.md)
-
-[Hantera robots.txt-filer](manage-robots-txt-files.md)
-
-[Överför URL-omdirigeringar i bulk](upload-bulk-redirects.md)
-
-[Ställa in en B2C-innehavare i Commerce](set-up-B2C-tenant.md)
-
-[Ställa in anpassade sidor för användarinloggningar](custom-pages-user-logins.md)
-
-[Konfigurera flera B2C-innehavare i en Commerce-miljö](configure-multi-B2C-tenants.md)
-
-[Aktivera platsbaserad butiksdetektering](enable-store-detection.md)
+[Implementeringsalternativ för Content Delivery Network](cdn-options.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

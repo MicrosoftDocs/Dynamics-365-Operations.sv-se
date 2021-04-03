@@ -3,7 +3,7 @@ title: Skapa ett Azure Storage-konto och ett nyckelvalv
 description: I det här avsnittet beskrivs hur du skapar ett Azure Storage-konto och nyckelvalv.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 14463abe7782d786d286fcc619dee00ce85bb620
+ms.sourcegitcommit: 4adc57b0e43d9627dca70762ac941762ec4934e2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104239"
+ms.lasthandoff: 02/22/2021
+ms.locfileid: "5479355"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Skapa ett Azure Storage-konto och ett nyckelvalv
 
@@ -77,9 +77,12 @@ I det här avsnittet ska du utföra två huvudsteg:
 
     ![Bevilja certifikatbehörighet](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
-9. I dialogrutan **Primär** välj primär genom att lägga till **tillägget elektronisk fakturering**.
-10. Välj **Lägg till** och välj sedan **Spara ändringar i nyckelvalv**.
-11. På sidan **Översikt** kopiera värdet **DNS-namn** för nyckelvalvet. Det här värdet kommer att användas under installationen av tjänsten i RCS och kallas *nyckelvalv-URI*.
+9. I fältet **Välj huvudkonto**, välj **Inget valt**.
+10. I dialogrutan **Primär** välj primär genom att lägga till **Tjänst för e-fakturering**.
+11. Välj **Lägg till** och välj sedan **Spara ändringar i nyckelvalv**.
+12. På sidan **Översikt** kopiera värdet **DNS-namn** för nyckelvalvet. Det här värdet kommer att användas under installationen av tjänsten i RCS och kallas *nyckelvalv-URI*.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

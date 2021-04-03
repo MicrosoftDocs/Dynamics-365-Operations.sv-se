@@ -8,18 +8,19 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecutionConfiguration, JmgProductionFloorExecutionConfigurationTab
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 786ea9a3da98e9f1812b007d4301cb47680e6894
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 282785799b6d61a00a356fcc2ae86ff0e3b7b39f
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077588"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501040"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Designa körningsgränssnittet för produktionsgolvet
 
@@ -45,7 +46,7 @@ Följande element visas i bilden:
 
 Följ stegen nedan om du vill skapa och konfigurera en ny flik:
 
-1. Gå till **Produktionskontroll &gt; Konfigurera &gt; Tillverkningskörning**.
+1. Gå till **Produktionskontroll \> Inställningar \> Tillverkningskörning \> Konfigurera körningsgränssnittet för produktionsgolvet**.
 
 1. Välj **Designa flikar** i åtgärdsfönstret för att **Designa flikar**.
 
@@ -67,7 +68,7 @@ Följ stegen nedan om du vill skapa och konfigurera en ny flik:
 
 När du har skapat alla flikar du behöver kan du koppla dem till en konfiguration.
 
-1. Gå till **Produktionskontroll &gt; Inställningar &gt; Konfigurera för produktionsgolvet**.
+1. Gå till **Produktionskontroll \> Inställningar \> Tillverkningskörning \> Konfigurera körningsgränssnittet för produktionsgolvet**.
 
     ![Konfigurera körning på produktionsgolv](media/pfe-config-prod-floor-execution.png "Konfigurera körning på produktionsgolv")
 
