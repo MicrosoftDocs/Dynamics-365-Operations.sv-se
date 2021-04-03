@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 285e9d2d184a899f1ffa502d59a853ba83cda491
-ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
+ms.openlocfilehash: ca0a7233004522de2af7281416169f0393feeb11
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5118691"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260657"
 ---
 # <a name="product-dimensions"></a>Produktdimensioner
 
@@ -106,7 +106,7 @@ När du testar dina lösningar för att få kompatibilitet med versionsdimension
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Kartor:** Om några kartor använder lagerdimensionerna måste motsvarande relationskartläggning till dessa kartor uppdateras så att de inkluderar versionsdimension. I utökade modell- eller registertillägg kan du söka efter register där fälten inkluderar lagerdimensioner.
-1. **Microsoft Dynamics 365 Commerce-funktioner:** när den är aktiverad kommer versionsdimensionen att visas i den Commerce-specifika koden i Dynamics 365 Supply Chain Management. Versionsdimensionen stöds dock ännu inte av Commerce-kanaldatabasen eller i kassaprogrammen (POS) eller e-handelsprogram. Dessa Commerce-specifika appar stöder inte användare som säljer/levererar eller returnerar/tar emot lager efter versionsdimension. Sökfunktionerna för lagertillgänglighet kommer inte att urskilja lager per versionsdimension i Commerce-appar. Detta beteende liknar det aktuella beteendet för konfigurationsdimensionen i hela Commerce.
+1. **Microsoft Dynamics 365 Commerce funktioner:** när den är aktiverad kommer versionsdimensionen att visas i den Commerce-specifika koden i Dynamics 365 Supply Chain Management. Versionsdimensionen stöds dock ännu inte av Commerce-kanaldatabasen eller i kassaprogrammen (POS) eller e-handelsprogram. Dessa Commerce-specifika appar stöder inte användare som säljer/levererar eller returnerar/tar emot lager efter versionsdimension. Sökfunktionerna för lagertillgänglighet kommer inte att urskilja lager per versionsdimension i Commerce-appar. Detta beteende liknar det aktuella beteendet för konfigurationsdimensionen i hela Commerce.
 
 #### <a name="turn-on-the-version-dimension"></a>Aktivera versionsdimension
 
