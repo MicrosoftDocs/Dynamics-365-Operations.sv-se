@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 07/07/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56b6666310309817ff30ccb3902721880b829ee0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0c2600ad8f441e6b73b143c27afa08ad0a5c2748
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679824"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5571015"
 ---
 # <a name="import-users-from-azure-active-directory"></a>Importera användare från Azure Active Directory
 
@@ -46,11 +45,11 @@ Observera att det inte är möjligt att välja användare när du använder alte
 2. Gå till **Systemadministration > Användare > Användare**.
 3. Klicka på **Batchimport**.
 4. Expandera avsnittet **Kör i bakgrunden**.
-4. Välj **Ja i fältet **Batchbearbetning**.
+4. Välj **Ja** i fältet **Batchbearbetning**.
 6. Ange eller välj ett värde i fältet **Batchgrupp**. Detta steg är valfritt.  
 7. Välj **Ja** i fältet **Privat**. Detta steg är valfritt.  
 8. Välj **Ja** i fältet **Kritiskt jobb**. Detta steg är valfritt.  
-9. Välj ett alternativ i fältet **Övervakningskategori.
+9. Välj ett alternativ i fältet **Övervakningskategori**.
 10. Klicka på **OK**.
 
 När importen är klar måste användare tilldelas roller.

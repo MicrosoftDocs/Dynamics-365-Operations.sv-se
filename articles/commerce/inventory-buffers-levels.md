@@ -14,20 +14,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c519095d174414d6d4a8c86bc171ea62e1c72582
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ea6844307e63b351ef914134b7d8392b0910019a
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012449"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478398"
 ---
-# <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurera inventeringsbuffertar and lagernivåer
+# <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurera lagerkvantiteter och lagernivåer
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du konfigurerar lagerkvantiteter och lagernivåer som bestämmer hur meddelanden om lager tillgänglighet kan anges på Microsoft Dynamics 365 Commerce-webbplatser.
-
-## <a name="overview"></a>Översikt
 
 Dynamics 365 Commerce huvudkontoret innehåller lagerdata och olika kanaler som kassaapplikationer, näthandelsbutiker och andra anpassade integrerade applikationer som drar och skjuter omkring inventering på ett asynkront sätt. Därför är de tillgängliga lagervärden som hämtas via sidan för lagerbehållning i Commerce-administration via kassaanvändargränssnittet och via näthandelslager. API:er för lagertillgänglighet är inte alltid 100 procent korrekt i realtid.
 

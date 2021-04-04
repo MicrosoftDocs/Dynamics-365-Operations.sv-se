@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f8d5e4d82c66d178ceafcdbfb3eb9a941172aa01
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9107a14a79883dc0e33de311baeec5fd6d692a35
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5004637"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500512"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Platsdirektiv för plockning i åldersfördelat lager
 
@@ -119,7 +119,7 @@ FIFO-strategin söker efter platsen som innehåller det äldsta åldersdatumet o
 1. På sidan **Försäljningsorder** i åtgärdsfönstret väljer du **Lagerställe** i gruppen **Åtgärder** välj **Släpp till distributionslager**. Du får informativa meddelanden. Systemet skapar en leverans, lägger till den i en ny last och skapar det begärda arbetet.
 1. På snabbfliken **Försäljningsorderrader** på menyn **Lagerställe** välj **Arbetsdetaljer** för att öppna det arbete som har skapats för den här försäljningsordern. Observera att raden där värdet för **Arbetstyp** är *Plocka* visar ett värde för **Plats** för *FL-002*. Den här platsen innehåller det ID-nummer som har det äldsta åldersdatumet (FIFO).
 1. Välj **Lagerställe \> Leveransdetaljer**.
-1. På snabbfliken **_Allmänt_** noterar du påfyllnad-ID, så att du kan använda det i scenario 2.
+1. På snabbfliken **Allmänt** noterar du påfyllnad-ID, så att du kan använda det i scenario 2.
 
 ### <a name="scenario-2-set-up-and-use-lifo-location-aging"></a>Scenario 2: Ställ in och använd LIFO-platsåldrande
 
