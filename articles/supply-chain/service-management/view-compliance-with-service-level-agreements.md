@@ -17,34 +17,37 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0359e7d314610901c331419ab49a3d1cb446dc5e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 79caf95cf33697dfd3156b2a7a1fa66acf37f111
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965740"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5259612"
 ---
-# <a name="view-compliance-with-service-level-agreements"></a><span data-ttu-id="b81fe-103">Visa efterlevnad av servicenivåavtal</span><span class="sxs-lookup"><span data-stu-id="b81fe-103">View compliance with service level agreements</span></span>    
+# <a name="view-compliance-with-service-level-agreements"></a><span data-ttu-id="1c625-103">Visa efterlevnad av servicenivåavtal</span><span class="sxs-lookup"><span data-stu-id="1c625-103">View compliance with service level agreements</span></span>    
 
 [!include [banner](../includes/banner.md)]
 
 
-## <a name="view-compliance-with-a-service-level-agreement"></a><span data-ttu-id="b81fe-104">Visa efterlevnad av ett servicenivåavtal</span><span class="sxs-lookup"><span data-stu-id="b81fe-104">View compliance with a service level agreement</span></span>
+## <a name="view-compliance-with-a-service-level-agreement"></a><span data-ttu-id="1c625-104">Visa efterlevnad av ett servicenivåavtal</span><span class="sxs-lookup"><span data-stu-id="1c625-104">View compliance with a service level agreement</span></span>
 
-1.  <span data-ttu-id="b81fe-105">Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.</span><span class="sxs-lookup"><span data-stu-id="b81fe-105">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="b81fe-106">Välj en serviceorder och dubbelklicka för att öppna detaljformuläret för ordern.</span><span class="sxs-lookup"><span data-stu-id="b81fe-106">Select a service order and double-click to open the details form for the order.</span></span>
+1.  <span data-ttu-id="1c625-105">Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.</span><span class="sxs-lookup"><span data-stu-id="1c625-105">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="1c625-106">Välj en serviceorder och dubbelklicka för att öppna detaljformuläret för ordern.</span><span class="sxs-lookup"><span data-stu-id="1c625-106">Select a service order and double-click to open the details form for the order.</span></span>
 
-2.  <span data-ttu-id="b81fe-107">Klicka på **Allmänt** i fältet **Regelefterlevnad** hur stor procent av tiden som ägnades åt serviceordern jämfört med den tidsram som angetts i servicenivåavtalet.</span><span class="sxs-lookup"><span data-stu-id="b81fe-107">On the **General** tab, in the **Compliance** field, view the percentage of time that was spent on the service order compared to the time frame specified in the service level agreement.</span></span>
+2.  <span data-ttu-id="1c625-107">Klicka på **Allmänt** i fältet **Regelefterlevnad** hur stor procent av tiden som ägnades åt serviceordern jämfört med den tidsram som angetts i servicenivåavtalet.</span><span class="sxs-lookup"><span data-stu-id="1c625-107">On the **General** tab, in the **Compliance** field, view the percentage of time that was spent on the service order compared to the time frame specified in the service level agreement.</span></span>
 
 
 > [!TIP]
-> <span data-ttu-id="b81fe-108">Om värdet i fältet <STRONG>Regelefterlevnad</STRONG> hur stor procent av tiden som ägnades åt serviceordern jämfört med den tidsram som angetts i servicenivåavtalet</span><span class="sxs-lookup"><span data-stu-id="b81fe-108">If the value in the <STRONG>Compliance</STRONG> field is larger than 100, the time limit of the service level agreement has been exceeded.</span></span>
+> <span data-ttu-id="1c625-108">Om värdet i fältet <STRONG>Regelefterlevnad</STRONG> hur stor procent av tiden som ägnades åt serviceordern jämfört med den tidsram som angetts i servicenivåavtalet</span><span class="sxs-lookup"><span data-stu-id="1c625-108">If the value in the <STRONG>Compliance</STRONG> field is larger than 100, the time limit of the service level agreement has been exceeded.</span></span>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="b81fe-109">Se även</span><span class="sxs-lookup"><span data-stu-id="b81fe-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1c625-109">Se även</span><span class="sxs-lookup"><span data-stu-id="1c625-109">See also</span></span>
 
-[<span data-ttu-id="b81fe-110">Servicenivåavtal – översikt</span><span class="sxs-lookup"><span data-stu-id="b81fe-110">Service level agreements overview</span></span>](service-level-agreements.md)
+[<span data-ttu-id="1c625-110">Servicenivåavtal – översikt</span><span class="sxs-lookup"><span data-stu-id="1c625-110">Service level agreements overview</span></span>](service-level-agreements.md)
 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
