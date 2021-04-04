@@ -17,96 +17,99 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b34cc2e9921df6e3ef619e2b2adaf8d2069fbac
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5afcb8171b674281faf8100d5c01fdff8d6ff764
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974570"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470795"
 ---
-# <a name="create-a-template-bom"></a><span data-ttu-id="d005d-103">Skapa en strukturlistemall</span><span class="sxs-lookup"><span data-stu-id="d005d-103">Create a template BOM</span></span>   
+# <a name="create-a-template-bom"></a><span data-ttu-id="b6165-103">Skapa en strukturlistemall</span><span class="sxs-lookup"><span data-stu-id="b6165-103">Create a template BOM</span></span>   
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="d005d-104">Du kan skapa en strukturlistemall med följande metoder.</span><span class="sxs-lookup"><span data-stu-id="d005d-104">You can create a template BOM by using any of the following methods.</span></span> <span data-ttu-id="d005d-105">För samtliga metoder gäller att fälten **Från datum** och **Till datum** är valfria och endast till för information.</span><span class="sxs-lookup"><span data-stu-id="d005d-105">For all methods, the **From date** and **To date** fields are optional and for information only.</span></span>
+<span data-ttu-id="b6165-104">Du kan skapa en strukturlistemall med följande metoder.</span><span class="sxs-lookup"><span data-stu-id="b6165-104">You can create a template BOM by using any of the following methods.</span></span> <span data-ttu-id="b6165-105">För samtliga metoder gäller att fälten **Från datum** och **Till datum** är valfria och endast till för information.</span><span class="sxs-lookup"><span data-stu-id="b6165-105">For all methods, the **From date** and **To date** fields are optional and for information only.</span></span>
 
-## <a name="create-a-template-bom-manually"></a><span data-ttu-id="d005d-106">Skapa en strukturlistemall manuellt</span><span class="sxs-lookup"><span data-stu-id="d005d-106">Create a template BOM manually</span></span>
+## <a name="create-a-template-bom-manually"></a><span data-ttu-id="b6165-106">Skapa en strukturlistemall manuellt</span><span class="sxs-lookup"><span data-stu-id="b6165-106">Create a template BOM manually</span></span>
 
-1.  <span data-ttu-id="d005d-107">Klicka på **servicehantering**\>**inställningar**\>**serviceobjekt**\>**Mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="d005d-107">Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
+1.  <span data-ttu-id="b6165-107">Klicka på **servicehantering**\>**inställningar**\>**serviceobjekt**\>**Mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="b6165-107">Go to **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
 
-2.  <span data-ttu-id="d005d-108">Tryck på CTRL+N om du vill öppna formuläret **Skapa mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="d005d-108">Press CTRL+N to open the **Create template BOM** form.</span></span>
+2.  <span data-ttu-id="b6165-108">Välj **Ny** om du vill öppna formuläret **Skapa mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="b6165-108">Select **New** to open the **Create template BOM** form.</span></span>
 
-3.  <span data-ttu-id="d005d-109">Under **Kopiera strukturlisterader från referens** markerar du alternativ **manuell**.</span><span class="sxs-lookup"><span data-stu-id="d005d-109">Under **Copy BOM lines from reference**, select the **Manual** option.</span></span>
+3.  <span data-ttu-id="b6165-109">Under **Kopiera strukturlisterader från referens** markerar du alternativ **manuell**.</span><span class="sxs-lookup"><span data-stu-id="b6165-109">Under **Copy BOM lines from reference**, select the **Manual** option.</span></span>
 
-4.  <span data-ttu-id="d005d-110">I fältet **Artikelnummer** anger du en artikel av typen **Strukturlista**.</span><span class="sxs-lookup"><span data-stu-id="d005d-110">In the **Item number** field, enter an item of the type **BOM**.</span></span>
+4.  <span data-ttu-id="b6165-110">I fältet **Artikelnummer** anger du en artikel av typen **Strukturlista**.</span><span class="sxs-lookup"><span data-stu-id="b6165-110">In the **Item number** field, enter an item of the type **BOM**.</span></span>
 
-5.  <span data-ttu-id="d005d-111">Ange ett namn för mallen i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="d005d-111">In the **Name** field, enter a name for the template.</span></span>
+5.  <span data-ttu-id="b6165-111">Ange ett namn för mallen i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="b6165-111">In the **Name** field, enter a name for the template.</span></span>
 
-6.  <span data-ttu-id="d005d-112">I fälten **Från datum** och **Till datum** anger du ett datumintervall under vilket strukturlistemallen är aktiv.</span><span class="sxs-lookup"><span data-stu-id="d005d-112">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
+6.  <span data-ttu-id="b6165-112">I fälten **Från datum** och **Till datum** anger du ett datumintervall under vilket strukturlistemallen är aktiv.</span><span class="sxs-lookup"><span data-stu-id="b6165-112">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
 
-7.  <span data-ttu-id="d005d-113">Klicka på **OK**.</span><span class="sxs-lookup"><span data-stu-id="d005d-113">Click **OK**.</span></span>
+7.  <span data-ttu-id="b6165-113">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="b6165-113">Select **OK**.</span></span>
 
-<span data-ttu-id="d005d-114">En ny tom strukturlistemall skapas.</span><span class="sxs-lookup"><span data-stu-id="d005d-114">A new, blank template BOM is created.</span></span>
+<span data-ttu-id="b6165-114">En ny tom strukturlistemall skapas.</span><span class="sxs-lookup"><span data-stu-id="b6165-114">A new, blank template BOM is created.</span></span>
 
-## <a name="create-a-template-bom-based-on-another-template-bom"></a><span data-ttu-id="d005d-115">Skapa en strukturlistemall som baseras på en annan strukturlistemall</span><span class="sxs-lookup"><span data-stu-id="d005d-115">Create a template BOM based on another template BOM</span></span>
+## <a name="create-a-template-bom-based-on-another-template-bom"></a><span data-ttu-id="b6165-115">Skapa en strukturlistemall som baseras på en annan strukturlistemall</span><span class="sxs-lookup"><span data-stu-id="b6165-115">Create a template BOM based on another template BOM</span></span>
 
-1.  <span data-ttu-id="d005d-116">Klicka på **servicehantering**\>**inställningar**\>**serviceobjekt**\>**Mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="d005d-116">Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
+1.  <span data-ttu-id="b6165-116">Klicka på **servicehantering**\>**inställningar**\>**serviceobjekt**\>**Mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="b6165-116">Select **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
 
-2.  <span data-ttu-id="d005d-117">Tryck på CTRL+N om du vill öppna formuläret **Skapa mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="d005d-117">Press CTRL+N to open the **Create template BOM** form.</span></span>
+2.  <span data-ttu-id="b6165-117">Välj **Ny** om du vill öppna formuläret **Skapa mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="b6165-117">Select **New** to open the **Create template BOM** form.</span></span>
 
-3.  <span data-ttu-id="d005d-118">Under **Kopiera strukturlisterader från referens** markerar du alternativ **Mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="d005d-118">Under **Copy BOM lines from reference**, select the **Template BOM** option.</span></span>
+3.  <span data-ttu-id="b6165-118">Under **Kopiera strukturlisterader från referens** markerar du alternativ **Mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="b6165-118">Under **Copy BOM lines from reference**, select the **Template BOM** option.</span></span>
 
-4.  <span data-ttu-id="d005d-119">I fältet **Referensnummer** väljer du en befintlig strukturlistemall att kopiera till din nya strukturlistemall.</span><span class="sxs-lookup"><span data-stu-id="d005d-119">In the **Reference number** field, select an existing template BOM to copy to your new template BOM.</span></span>
+4.  <span data-ttu-id="b6165-119">I fältet **Referensnummer** väljer du en befintlig strukturlistemall att kopiera till din nya strukturlistemall.</span><span class="sxs-lookup"><span data-stu-id="b6165-119">In the **Reference number** field, select an existing template BOM to copy to your new template BOM.</span></span>
 
-5.  <span data-ttu-id="d005d-120">Ange ett namn för mallen i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="d005d-120">In the **Name** field, enter a name for the template.</span></span>
+5.  <span data-ttu-id="b6165-120">Ange ett namn för mallen i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="b6165-120">In the **Name** field, enter a name for the template.</span></span>
 
-6.  <span data-ttu-id="d005d-121">I fälten **Från datum** och **Till datum** anger du ett datumintervall under vilket strukturlistemallen är aktiv.</span><span class="sxs-lookup"><span data-stu-id="d005d-121">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
+6.  <span data-ttu-id="b6165-121">I fälten **Från datum** och **Till datum** anger du ett datumintervall under vilket strukturlistemallen är aktiv.</span><span class="sxs-lookup"><span data-stu-id="b6165-121">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
 
-7.  <span data-ttu-id="d005d-122">Klicka på **OK**.</span><span class="sxs-lookup"><span data-stu-id="d005d-122">Click **OK**.</span></span>
+7.  <span data-ttu-id="b6165-122">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="b6165-122">Select **OK**.</span></span>
 
-<span data-ttu-id="d005d-123">En ny strukturlistemall skapas med rader som motsvarar raderna i den ursprungliga strukturlistemallen.</span><span class="sxs-lookup"><span data-stu-id="d005d-123">A new template BOM is created by using lines that correspond to the lines in the original template BOM.</span></span>
+<span data-ttu-id="b6165-123">En ny strukturlistemall skapas med rader som motsvarar raderna i den ursprungliga strukturlistemallen.</span><span class="sxs-lookup"><span data-stu-id="b6165-123">A new template BOM is created by using lines that correspond to the lines in the original template BOM.</span></span>
 
-## <a name="create-a-template-bom-based-on-an-item-bom"></a><span data-ttu-id="d005d-124">Skapa en strukturlistemall som baseras på en artikelstrukturlista</span><span class="sxs-lookup"><span data-stu-id="d005d-124">Create a template BOM based on an item BOM</span></span>
+## <a name="create-a-template-bom-based-on-an-item-bom"></a><span data-ttu-id="b6165-124">Skapa en strukturlistemall som baseras på en artikelstrukturlista</span><span class="sxs-lookup"><span data-stu-id="b6165-124">Create a template BOM based on an item BOM</span></span>
 
-1.  <span data-ttu-id="d005d-125">Klicka på **servicehantering**\>**inställningar**\>**serviceobjekt**\>**Mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="d005d-125">Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
+1.  <span data-ttu-id="b6165-125">Klicka på **servicehantering**\>**inställningar**\>**serviceobjekt**\>**Mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="b6165-125">Select **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
 
-2.  <span data-ttu-id="d005d-126">Tryck på CTRL+N om du vill öppna formuläret **Skapa mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="d005d-126">Press CTRL+N to open the **Create template BOM** form.</span></span>
+2.  <span data-ttu-id="b6165-126">Välj **Ny** om du vill öppna formuläret **Skapa mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="b6165-126">Select **New** to open the **Create template BOM** form.</span></span>
 
-3.  <span data-ttu-id="d005d-127">Under **Kopiera strukturlisterader från referens** väljer du **Strukturlista**.</span><span class="sxs-lookup"><span data-stu-id="d005d-127">Under **Copy BOM lines from reference**, select **BOM**.</span></span>
+3.  <span data-ttu-id="b6165-127">Under **Kopiera strukturlisterader från referens** väljer du **Strukturlista**.</span><span class="sxs-lookup"><span data-stu-id="b6165-127">Under **Copy BOM lines from reference**, select **BOM**.</span></span>
 
-4.  <span data-ttu-id="d005d-128">I fältet **referensnummer** väljer du en strukturlisteversion.</span><span class="sxs-lookup"><span data-stu-id="d005d-128">In the **Reference number** field, select a BOM version.</span></span> <span data-ttu-id="d005d-129">En artikel av typen Strukturlista kopieras till **artikelnummer**.</span><span class="sxs-lookup"><span data-stu-id="d005d-129">An item of the type BOM is copied to the **Item number**.</span></span>
+4.  <span data-ttu-id="b6165-128">I fältet **referensnummer** väljer du en strukturlisteversion.</span><span class="sxs-lookup"><span data-stu-id="b6165-128">In the **Reference number** field, select a BOM version.</span></span> <span data-ttu-id="b6165-129">En artikel av typen Strukturlista kopieras till **artikelnummer**.</span><span class="sxs-lookup"><span data-stu-id="b6165-129">An item of the type BOM is copied to the **Item number**.</span></span>
 
-5.  <span data-ttu-id="d005d-130">Ange ett namn för mallen i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="d005d-130">In the **Name** field, enter a name for the template.</span></span>
+5.  <span data-ttu-id="b6165-130">Ange ett namn för mallen i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="b6165-130">In the **Name** field, enter a name for the template.</span></span>
 
-6.  <span data-ttu-id="d005d-131">I fälten **Från datum** och **Till datum** anger du ett datumintervall under vilket strukturlistemallen är aktiv.</span><span class="sxs-lookup"><span data-stu-id="d005d-131">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
+6.  <span data-ttu-id="b6165-131">I fälten **Från datum** och **Till datum** anger du ett datumintervall under vilket strukturlistemallen är aktiv.</span><span class="sxs-lookup"><span data-stu-id="b6165-131">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
 
-7.  <span data-ttu-id="d005d-132">Klicka på **OK**.</span><span class="sxs-lookup"><span data-stu-id="d005d-132">Click **OK**.</span></span>
+7.  <span data-ttu-id="b6165-132">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="b6165-132">Select **OK**.</span></span>
 
-<span data-ttu-id="d005d-133">En ny strukturlistemall skapas med hjälp av rader motsvarande raderna i den strukturlista som listas i **strukturlistor**.</span><span class="sxs-lookup"><span data-stu-id="d005d-133">A new template BOM is created by using lines that correspond to the lines of the BOM listed in **Bills of materials**.</span></span>
+<span data-ttu-id="b6165-133">En ny strukturlistemall skapas med hjälp av rader motsvarande raderna i den strukturlista som listas i **strukturlistor**.</span><span class="sxs-lookup"><span data-stu-id="b6165-133">A new template BOM is created by using lines that correspond to the lines of the BOM listed in **Bills of materials**.</span></span>
 
-## <a name="create-a-template-bom-based-on-a-production-bom"></a><span data-ttu-id="d005d-134">Skapa en strukturlistemall som baseras på en produktionsstrukturlista</span><span class="sxs-lookup"><span data-stu-id="d005d-134">Create a template BOM based on a production BOM</span></span>
+## <a name="create-a-template-bom-based-on-a-production-bom"></a><span data-ttu-id="b6165-134">Skapa en strukturlistemall som baseras på en produktionsstrukturlista</span><span class="sxs-lookup"><span data-stu-id="b6165-134">Create a template BOM based on a production BOM</span></span>
 
-1.  <span data-ttu-id="d005d-135">Klicka på **servicehantering**\>**inställningar**\>**serviceobjekt**\>**Mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="d005d-135">Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
+1.  <span data-ttu-id="b6165-135">Klicka på **servicehantering**\>**inställningar**\>**serviceobjekt**\>**Mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="b6165-135">Select **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
 
-2.  <span data-ttu-id="d005d-136">Tryck på CTRL+N om du vill öppna formuläret **Skapa mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="d005d-136">Press CTRL+N to open the **Create template BOM** form.</span></span>
+2.  <span data-ttu-id="b6165-136">Välj **Ny** om du vill öppna formuläret **Skapa mallstrukturlista**.</span><span class="sxs-lookup"><span data-stu-id="b6165-136">Select **New** to open the **Create template BOM** form.</span></span>
 
-3.  <span data-ttu-id="d005d-137">Under **Kopiera strukturlisterader från referens** väljer du **Produktion**.</span><span class="sxs-lookup"><span data-stu-id="d005d-137">Under **Copy BOM lines from reference**, select **Production**.</span></span>
+3.  <span data-ttu-id="b6165-137">Under **Kopiera strukturlisterader från referens** väljer du **Produktion**.</span><span class="sxs-lookup"><span data-stu-id="b6165-137">Under **Copy BOM lines from reference**, select **Production**.</span></span>
 
-4.  <span data-ttu-id="d005d-138">I fältet **referensnummer** väljer du en produktionsstrukturlista.</span><span class="sxs-lookup"><span data-stu-id="d005d-138">In the **Reference number** field, select a production BOM.</span></span>
+4.  <span data-ttu-id="b6165-138">I fältet **referensnummer** väljer du en produktionsstrukturlista.</span><span class="sxs-lookup"><span data-stu-id="b6165-138">In the **Reference number** field, select a production BOM.</span></span>
 
-5.  <span data-ttu-id="d005d-139">Ange ett namn för mallen i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="d005d-139">In the **Name** field, enter a name for the template.</span></span>
+5.  <span data-ttu-id="b6165-139">Ange ett namn för mallen i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="b6165-139">In the **Name** field, enter a name for the template.</span></span>
 
-6.  <span data-ttu-id="d005d-140">I fälten **Från datum** och **Till datum** anger du ett datumintervall under vilket strukturlistemallen är aktiv.</span><span class="sxs-lookup"><span data-stu-id="d005d-140">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
+6.  <span data-ttu-id="b6165-140">I fälten **Från datum** och **Till datum** anger du ett datumintervall under vilket strukturlistemallen är aktiv.</span><span class="sxs-lookup"><span data-stu-id="b6165-140">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
 
-7.  <span data-ttu-id="d005d-141">Klicka på **OK**.</span><span class="sxs-lookup"><span data-stu-id="d005d-141">Click **OK**.</span></span>
+7.  <span data-ttu-id="b6165-141">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="b6165-141">Select **OK**.</span></span>
 
-<span data-ttu-id="d005d-142">En ny strukturlistemall skapas med hjälp av rader motsvarande raderna i den strukturlista som listas i **strukturlista**.</span><span class="sxs-lookup"><span data-stu-id="d005d-142">A new template BOM is created by using lines that correspond to the lines of the BOM listed in **BOM**.</span></span>
+<span data-ttu-id="b6165-142">En ny strukturlistemall skapas med hjälp av rader motsvarande raderna i den strukturlista som listas i **strukturlista**.</span><span class="sxs-lookup"><span data-stu-id="b6165-142">A new template BOM is created by using lines that correspond to the lines of the BOM listed in **BOM**.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="d005d-143">Se även</span><span class="sxs-lookup"><span data-stu-id="d005d-143">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b6165-143">Se även</span><span class="sxs-lookup"><span data-stu-id="b6165-143">See also</span></span>
 
-[<span data-ttu-id="d005d-144">Strukturlistemallar </span><span class="sxs-lookup"><span data-stu-id="d005d-144">Template BOMs</span></span>](template-boms.md)
+[<span data-ttu-id="b6165-144">Strukturlistemallar </span><span class="sxs-lookup"><span data-stu-id="b6165-144">Template BOMs</span></span>](template-boms.md)
 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,48 +16,51 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 08a806514a92a99a9f0b18b36817f49a09516ab8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ecf6fe97287fcfb3c070215b563542878175789c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964855"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264294"
 ---
-# <a name="create-call-center-orders"></a><span data-ttu-id="ae0fd-103"> Skapa kundtjänstorder</span><span class="sxs-lookup"><span data-stu-id="ae0fd-103">Create call center orders</span></span>
+# <a name="create-call-center-orders"></a><span data-ttu-id="ecced-103"> Skapa kundtjänstorder</span><span class="sxs-lookup"><span data-stu-id="ecced-103">Create call center orders</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ae0fd-104">Den här proceduren går igenom hur du söker efter en kund, skapar en ny order, söker efter en produkt och tar emot betalningen från kunden.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-104">This procedure walks through looking up a customer, creating a new order, searching for a product, and collecting payment from the customer.</span></span> <span data-ttu-id="ae0fd-105">I den här proceduren används demonstrationsdataföretaget USRT och är avsedd för Försäljningsorderansvarig.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-105">This procedure uses demo data company USRT and is intended for the Sales Order Clerk.</span></span> <span data-ttu-id="ae0fd-106">Förutsättningar: Användaren som utför proceduren ställs in som kundtjänstanvändare och halvårsutgåvan av Fabrikam-katalogen publiceras med minst en källkod på den.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-106">Pre-requisites:  The user who completes the procedure is set up as a Call center user and the Fabrikam Semi-Annual Catalog is published with at least one Source code on it.</span></span>
+<span data-ttu-id="ecced-104">Den här proceduren går igenom hur du söker efter en kund, skapar en ny order, söker efter en produkt och tar emot betalningen från kunden.</span><span class="sxs-lookup"><span data-stu-id="ecced-104">This procedure walks through looking up a customer, creating a new order, searching for a product, and collecting payment from the customer.</span></span> <span data-ttu-id="ecced-105">I den här proceduren används demonstrationsdataföretaget USRT och är avsedd för Försäljningsorderansvarig.</span><span class="sxs-lookup"><span data-stu-id="ecced-105">This procedure uses demo data company USRT and is intended for the Sales Order Clerk.</span></span> <span data-ttu-id="ecced-106">Förutsättningar: Användaren som utför proceduren ställs in som kundtjänstanvändare och halvårsutgåvan av Fabrikam-katalogen publiceras med minst en källkod på den.</span><span class="sxs-lookup"><span data-stu-id="ecced-106">Pre-requisites:  The user who completes the procedure is set up as a Call center user and the Fabrikam Semi-Annual Catalog is published with at least one Source code on it.</span></span>
 
-1. <span data-ttu-id="ae0fd-107">Gå till **Butik och handel \> Kunder \> Kundtjänst**.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-107">Go to **Retail and Commerce \> Customers \> Customer service**.</span></span>
-2. <span data-ttu-id="ae0fd-108">För **Söktext**, ange sökkriterierna för att hitta kunden.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-108">For **SearchText**, enter the search criteria to look up the customer.</span></span>
-    * <span data-ttu-id="ae0fd-109">För den här exempelproceduren, skriv ”karen” och tryck på **flik**.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-109">For this example procedure, enter "Karen" and select **Tab**.</span></span>  
-3. <span data-ttu-id="ae0fd-110">Välj Sök.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-110">Select Search.</span></span>
-    * <span data-ttu-id="ae0fd-111">Eftersom det bara finns en kund med namnet Karen i demodata, kommer resultatet automatiskt markeras.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-111">Since there is only one customer named "Karen" in demo data, the result will be automatically selected.</span></span>  
-4. <span data-ttu-id="ae0fd-112">Välj **Ny försäljningsorder**.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-112">Select **New sales order**.</span></span>
-5. <span data-ttu-id="ae0fd-113">Expandera eller komprimera avsnittet **Försäljningsorderhuvud**.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-113">Expand or collapse the **Sales order** header section.</span></span>
-6. <span data-ttu-id="ae0fd-114">Välj källkoden för katalogen.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-114">Select the source code for the catalog.</span></span>
-    * <span data-ttu-id="ae0fd-115">Om det inte finns några aktiva källkoder kan du hoppa över det här steget.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-115">If there are no active source codes you can skip this step.</span></span>  
-7. <span data-ttu-id="ae0fd-116">Välj **Markera rad**.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-116">Select **Add line**.</span></span>
-8. <span data-ttu-id="ae0fd-117">För **Artikelnummer** ange artikelsöktermen.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-117">For **Item number**, enter the item search term.</span></span>
-    * <span data-ttu-id="ae0fd-118">För den här exempelproceduren, ange ett delvis artikelnummer 8111 och tryck på fliken. Denna åtgärd öppnar artikelsökningsfönstret.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-118">For this sample procedure, enter a partial item number of '8111' and press tab. This action will bring up the item search window.</span></span>  
-9. <span data-ttu-id="ae0fd-119">Välj produkten att lägga till försäljningsordern.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-119">Select the product to add to the sales order.</span></span>
-10. <span data-ttu-id="ae0fd-120">Ange försäljningskvantiteten.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-120">Enter the sales quantity.</span></span>
-11. <span data-ttu-id="ae0fd-121">Markera **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-121">Select **Create**.</span></span>
-12. <span data-ttu-id="ae0fd-122">Klicka på **Slutför** för att registrera kundbetalningen.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-122">Select **Complete** to capture the customer payment.</span></span>
-13. <span data-ttu-id="ae0fd-123">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-123">Select **Add**.</span></span>
-    * <span data-ttu-id="ae0fd-124">Lägg till länk finns på betalningsfliken. Expandera fliken Betalning om den är komprimerad.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-124">The Add link is in the Payments tab. Expand the Payments tab if it is collapsed.</span></span>  
-14. <span data-ttu-id="ae0fd-125">Välj betalningsmetod.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-125">Select the payment method.</span></span>
-    * <span data-ttu-id="ae0fd-126">Välj betalsättet kontant för den här proceduren.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-126">For this procedure, select the cash payment method.</span></span>  
-15. <span data-ttu-id="ae0fd-127">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-127">Close the page.</span></span>
-16. <span data-ttu-id="ae0fd-128">Ange belopp.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-128">Enter the amount.</span></span>
-    * <span data-ttu-id="ae0fd-129">För den här proceduren, ange ett belopp lika med ordersaldot som kan visas på sammanfattningssidan för försäljningsorder till vänster om beloppsfältet.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-129">For this procedure, enter an amount equal to the order balance that can be seen in the Sales order summary page to the left of the amount field.</span></span> <span data-ttu-id="ae0fd-130">Denna åtgärd gör att du slutför ordern som helt betald.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-130">This action will allow you to complete the order as fully paid.</span></span>  
-17. <span data-ttu-id="ae0fd-131">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-131">Select **OK**.</span></span>
-18. <span data-ttu-id="ae0fd-132">Välj **skicka**.</span><span class="sxs-lookup"><span data-stu-id="ae0fd-132">Select **Submit**.</span></span>
+1. <span data-ttu-id="ecced-107">Gå till **Butik och handel \> Kunder \> Kundtjänst**.</span><span class="sxs-lookup"><span data-stu-id="ecced-107">Go to **Retail and Commerce \> Customers \> Customer service**.</span></span>
+2. <span data-ttu-id="ecced-108">För **Söktext**, ange sökkriterierna för att hitta kunden.</span><span class="sxs-lookup"><span data-stu-id="ecced-108">For **SearchText**, enter the search criteria to look up the customer.</span></span>
+    * <span data-ttu-id="ecced-109">För den här exempelproceduren, skriv ”karen” och tryck på **flik**.</span><span class="sxs-lookup"><span data-stu-id="ecced-109">For this example procedure, enter "Karen" and select **Tab**.</span></span>  
+3. <span data-ttu-id="ecced-110">Välj Sök.</span><span class="sxs-lookup"><span data-stu-id="ecced-110">Select Search.</span></span>
+    * <span data-ttu-id="ecced-111">Eftersom det bara finns en kund med namnet Karen i demodata, kommer resultatet automatiskt markeras.</span><span class="sxs-lookup"><span data-stu-id="ecced-111">Since there is only one customer named "Karen" in demo data, the result will be automatically selected.</span></span>  
+4. <span data-ttu-id="ecced-112">Välj **Ny försäljningsorder**.</span><span class="sxs-lookup"><span data-stu-id="ecced-112">Select **New sales order**.</span></span>
+5. <span data-ttu-id="ecced-113">Expandera eller komprimera avsnittet **Försäljningsorderhuvud**.</span><span class="sxs-lookup"><span data-stu-id="ecced-113">Expand or collapse the **Sales order** header section.</span></span>
+6. <span data-ttu-id="ecced-114">Välj källkoden för katalogen.</span><span class="sxs-lookup"><span data-stu-id="ecced-114">Select the source code for the catalog.</span></span>
+    * <span data-ttu-id="ecced-115">Om det inte finns några aktiva källkoder kan du hoppa över det här steget.</span><span class="sxs-lookup"><span data-stu-id="ecced-115">If there are no active source codes you can skip this step.</span></span>  
+7. <span data-ttu-id="ecced-116">Välj **Markera rad**.</span><span class="sxs-lookup"><span data-stu-id="ecced-116">Select **Add line**.</span></span>
+8. <span data-ttu-id="ecced-117">För **Artikelnummer** ange artikelsöktermen.</span><span class="sxs-lookup"><span data-stu-id="ecced-117">For **Item number**, enter the item search term.</span></span>
+    * <span data-ttu-id="ecced-118">För den här exempelproceduren, ange ett delvis artikelnummer 8111 och tryck på fliken. Denna åtgärd öppnar artikelsökningsfönstret.</span><span class="sxs-lookup"><span data-stu-id="ecced-118">For this sample procedure, enter a partial item number of '8111' and press tab. This action will bring up the item search window.</span></span>  
+9. <span data-ttu-id="ecced-119">Välj produkten att lägga till försäljningsordern.</span><span class="sxs-lookup"><span data-stu-id="ecced-119">Select the product to add to the sales order.</span></span>
+10. <span data-ttu-id="ecced-120">Ange försäljningskvantiteten.</span><span class="sxs-lookup"><span data-stu-id="ecced-120">Enter the sales quantity.</span></span>
+11. <span data-ttu-id="ecced-121">Markera **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="ecced-121">Select **Create**.</span></span>
+12. <span data-ttu-id="ecced-122">Klicka på **Slutför** för att registrera kundbetalningen.</span><span class="sxs-lookup"><span data-stu-id="ecced-122">Select **Complete** to capture the customer payment.</span></span>
+13. <span data-ttu-id="ecced-123">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="ecced-123">Select **Add**.</span></span>
+    * <span data-ttu-id="ecced-124">Lägg till länk finns på betalningsfliken. Expandera fliken Betalning om den är komprimerad.</span><span class="sxs-lookup"><span data-stu-id="ecced-124">The Add link is in the Payments tab. Expand the Payments tab if it is collapsed.</span></span>  
+14. <span data-ttu-id="ecced-125">Välj betalningsmetod.</span><span class="sxs-lookup"><span data-stu-id="ecced-125">Select the payment method.</span></span>
+    * <span data-ttu-id="ecced-126">Välj betalsättet kontant för den här proceduren.</span><span class="sxs-lookup"><span data-stu-id="ecced-126">For this procedure, select the cash payment method.</span></span>  
+15. <span data-ttu-id="ecced-127">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="ecced-127">Close the page.</span></span>
+16. <span data-ttu-id="ecced-128">Ange belopp.</span><span class="sxs-lookup"><span data-stu-id="ecced-128">Enter the amount.</span></span>
+    * <span data-ttu-id="ecced-129">För den här proceduren, ange ett belopp lika med ordersaldot som kan visas på sammanfattningssidan för försäljningsorder till vänster om beloppsfältet.</span><span class="sxs-lookup"><span data-stu-id="ecced-129">For this procedure, enter an amount equal to the order balance that can be seen in the Sales order summary page to the left of the amount field.</span></span> <span data-ttu-id="ecced-130">Denna åtgärd gör att du slutför ordern som helt betald.</span><span class="sxs-lookup"><span data-stu-id="ecced-130">This action will allow you to complete the order as fully paid.</span></span>  
+17. <span data-ttu-id="ecced-131">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="ecced-131">Select **OK**.</span></span>
+18. <span data-ttu-id="ecced-132">Välj **skicka**.</span><span class="sxs-lookup"><span data-stu-id="ecced-132">Select **Submit**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="ae0fd-133">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="ae0fd-133">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="ecced-133">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="ecced-133">Additional resources</span></span>
 
-[<span data-ttu-id="ae0fd-134">Anpassa transaktionsmeddelanden via e-post efter leveranssätt</span><span class="sxs-lookup"><span data-stu-id="ae0fd-134">Customize transactional emails by mode of delivery</span></span>](../customize-email-delivery-mode.md)
+[<span data-ttu-id="ecced-134">Anpassa transaktionsmeddelanden via e-post efter leveranssätt</span><span class="sxs-lookup"><span data-stu-id="ecced-134">Customize transactional emails by mode of delivery</span></span>](../customize-email-delivery-mode.md)
 
-[<span data-ttu-id="ae0fd-135">Ändra leveranssätt i POS</span><span class="sxs-lookup"><span data-stu-id="ae0fd-135">Change mode of delivery in POS</span></span>](../pos-change-delivery-mode.md)
+[<span data-ttu-id="ecced-135">Ändra leveranssätt i POS</span><span class="sxs-lookup"><span data-stu-id="ecced-135">Change mode of delivery in POS</span></span>](../pos-change-delivery-mode.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
