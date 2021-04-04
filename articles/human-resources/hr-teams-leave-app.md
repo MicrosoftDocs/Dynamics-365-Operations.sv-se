@@ -3,7 +3,7 @@ title: Hantera ansökningar om ledighet i Teams
 description: I det här avsnittet beskrivs hur du begär ledighet i Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: tfehr
-ms.date: 10/28/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 342106ad09db3a5d9c2dec8ab18e824d70e0f6bf
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 79bded5a241a8d5de1847adff3e663359ce1b26f
+ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128171"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5571738"
 ---
-# <a name="manage-leave-requests-in-teams"></a>Hantera ansökningar om ledighet i Teams
+# <a name="manage-leave-requests-in-teams"></a>Hantera begäranden om ledighet i Teams
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Med hjälp av Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan du snabbt begära ledighet och visa information om ditt ledighetssaldo direkt i Microsoft Teams. Du kan använda en robot för att begära information och påbörja en begäran om att lämna en begäran. Fliken **Ledighet** visar mer detaljerad information. Du kan dessutom skicka personuppgifter om din kommande ledighet i team och chattar utanför Personal-appen.
+Med hjälp av Dynamics 365 Human Resources-appen i Microsoft Teams kan du snabbt begära ledighet och visa information om ditt ledighetssaldo direkt i Microsoft Teams. Du kan använda en robot för att begära information och påbörja en begäran om att lämna en begäran. Fliken **Ledighet** visar mer detaljerad information. Du kan dessutom skicka personuppgifter om din kommande ledighet i Teams och chattar utanför Personal-appen.
 
 ## <a name="install-the-app"></a>Installera appen
 
-Du hittar appen Personal i Teams-butiken.
+Du hittar appen Dynamics 365 Human Resources i Teams-butiken.
 
 1. I Microsoft Teams väljer du de tre punkterna (...).
 
@@ -70,29 +70,21 @@ När appen har installerats visas ett välkomstmeddelande som anger vilka typer 
 
 Du kan be roboten att:
 
-- Visa saldoinformation om ledighet för varje tjänstledighetstyp som du är anmäld till.
-
-   ![Visa saldo i Personal Teams-appen för tjänstledighet](./media/hr-teams-leave-app-bot-balances.png)
- 
-- Visa ytterligare information om en viss tjänstledighetstyp.
-
-   ![Visa information i Personal Teams-appen för tjänstledighet](./media/hr-teams-leave-app-bot-details.png)
-
 - Påbörja en ledighetsbegäran åt dig.
 
-   ![Begär tjänstledighet i Personal Teams-appen för tjänstledighet](./media/hr-teams-leave-app-bot-request.png)
- 
-När du har startat en ledighetsansökan kan du justera dagarna direkt på kortet.
+  ![Starta en tjänstledighetsbegäran i Teams-chatt](./media/hr-teams-leave-app-initiate.png)
 
-![Redigera begäran i Personal Teams-appen för tjänstledighet](./media/hr-teams-leave-app-bot-edit.png)
- 
-När du är klar med att mata in information väljer du **Skicka in** för att skicka in den för godkännande. Du kan också välja **Spara som utkast** om du vill komma tillbaka till den senare.
+- Chattroboten fyller i en tjänstledighetsbegäran för dig. Välj **Begär ledig tid** och redigera informationen för din förfrågan.
 
-![Skicka in begäran i Personal Teams-appen för tjänstledighet](./media/hr-teams-leave-app-bot-submit.png)
+  ![Redigera information om ledighetsansökan](./media/hr-teams-leave-app-details.png)
+
+- När du har redigerat informationen om din tjänstledighet väljer du **Skicka** för att skicka den för godkännande.
+
+  ![Skicka ledighetsbegäran](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Hantera din ledighet i Teams
 
-På fliken **Ledighet** kan du visa:
+På fliken **Ledighet** kan du visa: 
 
 - Saldoinformation om ledighet för varje tjänstledighetstyp som du är anmäld till
 
@@ -164,21 +156,51 @@ Om du är chef med underställda kan du visa teamets godkända och väntande led
 
 1. I Personal-appen i Teams, välj **Ledighet**.
 
-2. Välj **teamkalender** .
+2. Välj **teamkalender** . Kalendern visar dina underställdas godkända och väntande ledighet.
 
    ![Visa kalender i Personal Teams-app](./media/hr-teams-leave-app-view-calendar.png)
 
-Kalendern visar dina underställdas godkända och väntande ledighet.
+   > [!NOTE]
+   > Om du inte kan se teamkalendern ber du administratören att aktivera den. För mer information, se [Installera och konfigurera](hr-admin-teams-leave-app.md#install-and-setup).
 
-![Ledighetskalender i Personal Teams-app](./media/hr-teams-leave-app-calendar.png)
+## <a name="supported-languages"></a>Språk som stöds
+
+Dynamics 365 Human Resources-appen i Teams har stöd för följande språk:
+
+| Språk-ID | Språk |
+| --- | --- |
+| de-DE | Tyska (Tyskland) |
+| es-ES | Spanska (Spanien) |
+| es-MX | Spanska (Mexiko) |
+| fr-CA | Franska (Kanada) |
+| fr-FR | Franska (Frankrike) |
+| it-IT | Italienska (Italien) |
+| nl-NL | Nederländska (Nederländerna) |
+| pt-BR | Portugisiska (Brasilien) |
+| tr-TR | Turkiska (Turkiet) |
+| zh-CN | Kinesiska (förenklad) |
 
 ## <a name="troubleshooting"></a>Felsökning
 
-Om du har problem med att logga in på eller använda appen Personal Teams kan du försöka följa dessa instruktioner för felsökning. Om du fortfarande har problem efter felsökningen kontaktar du supporten. För mer information, se [Få support](hr-admin-troubleshooting-support.md).
+Om du har problem med att logga in på eller använda Teams-appen Dynamics 365 Human Resources kan du försöka följa dessa instruktioner för felsökning. Om du fortfarande har problem efter felsökningen kontaktar du supporten. För mer information, se [Få support](hr-admin-troubleshooting-support.md).
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Det går inte att logga in på Personal-appen i Teams
 
 Om du inte kan logga in i appen är det möjligt att det konto du använder för att logga in i Microsoft Teams inte är associerat med en medarbetarpost i Dynamics 365 Human Resources. Kontakta systemadministratören för att se till att din medarbetarpost är korrekt associerad.
+
+### <a name="translations-dont-display-correctly"></a>Översättningarna visas inte korrekt
+
+Om översättningarna inte visas som förväntat ser du till att det språk du väljer i Teams matchar det språk som valts i personal **Användaralternativ**.
+
+I Teams, titta på **Appspråket** i **Inställningar**.
+
+![Teams-inställningar](./media/hr-teams-leave-app-settings.png)
+
+I personal, välj **Inställningar** och sedan **Användaralternativ**. Kontrollera att fältet **Språk** matchar fältet i fältet **Appspråk** i Teams.
+
+![Användaralternativ för personal](./media/hr-teams-leave-app-user-options.png)
+
+Hör av dig om du fortfarande upplever översättningsproblem. Mer information finns i [Få support för Finance and Operations-appar eller Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-support?toc=/dynamics365/human-resources/toc.json).
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Fel vid godkännande av tjänstledighetsbegäranden i Personal-appen i Teams
 
@@ -198,7 +220,6 @@ Appen Personal i Team har följande tillgänglighetsproblem som vi arbetar med a
 | Under fliken **Ledighet** tillkännager VoiceOver en knappåtgärd samtidigt som rubriken för ledighetsrutnätet läses upp. | Rubriken och elementen i rutnätet är grupperade efter år och de är döljbara. Med VoiceOver tolkas detta som en åtgärdsbar artikel, men det är inte det. |
 | Under fliken **Ledighet** finns en extra svepgest när du navigerar till **Orsakskod** i en ny begäran. | Det finns ingen dold kontroll som svepnavigeringen försöker nå. |
 | Under fliken **Ledighet**, om du sveper när kalendern är öppen, hamnar du utanför kontrollen istället för längst upp i en ny begäran eller när du redigerar en begäran. | När du kommer till **Gå till idag**, se det som slutet på kontrollen och svep i motsatt riktning för att komma tillbaka till toppen. |
-| VoiceOver läser inte etiketterna för datum. | Datumen i par är alltid **startdatum** och **Slutdatum**. |
 | Under fliken **Chatt** hoppar fokus tillbaka till toppen när du anger ett datum samtidigt som du använder hjälpverktyget eller tangentbordsnavigeringen. | TABB tills du kommer till inmatningsområdet igen. |
 
 ## <a name="privacy-notice"></a>Sekretesspolicy

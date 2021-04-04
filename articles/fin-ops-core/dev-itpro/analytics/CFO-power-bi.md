@@ -1,12 +1,11 @@
 ---
 title: Översikt över ekonomichef Power BI-innehåll
-description: Det här avsnittet beskriver översikt över ekonomichef Power BI-innehåll.
+description: Det här avsnittet beskriver översikt över ekonomichef Microsoft Power BI-innehåll.
 author: kweekley
 manager: AnnBe
 ms.date: 10/02/2010
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: kfend
@@ -14,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5970f5c333803c45426b75d09b4f07c26bf892de
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7f97187f4afb228ad2028e0be7cf55b6154372f8
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688159"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5568528"
 ---
 # <a name="cfo-overview-power-bi-content"></a>Översikt över ekonomichef Power BI-innehåll
 
 [!include [banner](../includes/banner.md)] 
 
-Det här avsnittet beskriver **översikt över ekonomichef** Power BI-innehåll. Detta Power BI-innehåll riktar sig till de som använder Microsoft Dynamics 365 for Finance and Operations version 7.2. Om du använder version 7.3 eller senare läs [Ekonomiska insikter](financial-insights.md).
+Det här avsnittet beskriver **översikt över ekonomichef** Microsoft Power BI-innehåll. Detta Power BI-innehåll riktar sig till de som använder Microsoft Dynamics 365 for Finance and Operations version 7.2. Om du använder version 7.3 eller senare läs [Ekonomiska insikter](financial-insights.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
 

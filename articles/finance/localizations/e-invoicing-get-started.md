@@ -3,7 +3,7 @@ title: Kom igång med tillägget elektronisk fakturering
 description: Det här avsnittet innehåller information som hjälper dig att komma igång med tillägget elektronisk fakturering i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 02/03/2021
+ms.date: 02/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 07954c5c96f390bc651794f8b6c61f2a1a17ab8b
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 56227e031f8205836bcae9ce26006fc8091c2863
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5111230"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592560"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Kom igång med tillägget elektronisk fakturering
 
@@ -38,7 +38,6 @@ I tabellen nedan visas funktionerna för elektronisk fakturering och de affärsd
 | Belgisk elektronisk faktura (BE)      | <p>Försäljningsfaktura</p><p>Projektfaktura</p> |
 | Brasiliansk NF-e (BR)                  | <p>Skattedokument modell 55</p><p>Rättelsebrev</p> |
 | Brasiliansk NFS-e ABRASF Curitiba (BR) | Skattedokument för tjänster |
-| Brasiliansk NFS-e São Paulo (BR)       | Skattedokument för tjänster |
 | Dansk elektronisk faktura (DK)       | <p>Försäljningsfaktura</p><p>Projektfaktura</p> |
 | Egyptisk elektronisk faktura (EG)     | <p>Försäljningsfaktura</p><p>Projektfaktura</p> |
 | Estnisk elektronisk faktura (EE)     | <p>Försäljningsfaktura</p><p>Projektfaktura</p> |
@@ -64,14 +63,14 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 ## <a name="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider"></a>Importera en elektronisk faktureringsfunktion från Microsofts konfigurationsleverantör 
 
 1. Logga in på ditt konto för Regelkonfigurationstjänst (RCS).
-2. I arbetsytan **Globaliseringsfunktioner** i avsnittet **Funktioner** väljer du panelen **e-fakturering**.
+2. I arbetsytan **globaliseringsfunktion** i avsnittet **Funktioner**, välj panelen **Tillägg för elektroniska fakturor**.
 3. Välj **Import** och sedan **Synkronisera**.
 4. Filtrera kolumnen **Konfigurationsleverantör** med termen **Microsoft**.
 5. Välj namnet på en elektronisk faktureringsfunktion i tabellen i början av det här ämnet och välj sedan **Importera**.
 
 ## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Skapa en funktion för elektronisk fakturering för organisationsleverantören
 
-1. I RCS, i avsnittet **Funktioner** i arbetsytan **Globaliseringsfunktion** väljer du panelen för **e-fakturering**.
+1. I RCS, avsnittet **globaliseringsfunktion** i arbetsytan **Globaliseringsfunktioner**, välj panelen **Tillägg för elektroniska fakturor**.
 2. Välj **Lägg till** > **Baserat på befintlig funktion** innan du i fältet **Namn** anger namnet på den elektroniska faktureringsfunktionen.
 3. I fältet **Beskrivning** anger du en beskrivning av funktionen.
 4. I **Fältet basfunktion** väljer du den importerade funktionen för elektronisk fakturering från Microsofts konfigurationsleverantör.
@@ -79,7 +78,9 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 
 ## <a name="configure-the-electronic-invoicing-feature"></a>Konfigurera den elektroniska faktureringsfunktionen
 
-Beroende på land eller region kan den elektroniska faktureringsfunktionen kräva ytterligare konfiguration. Specifika steg finns i dokumentationen "Kom igång" som är tillgänglig för ditt land eller din region.
+Beroende på land eller region kan den elektroniska faktureringsfunktionen kräva ytterligare konfiguration. 
+
+Specifika steg finns i dokumentationen "Kom igång" som är tillgänglig för ditt land eller din region.
 
 ## <a name="configure-the-application-setup"></a>Konfigurera programmets inställningar
 
@@ -100,7 +101,6 @@ Beroende på land eller region kan den elektroniska faktureringsfunktionen kräv
     | Belgisk elektronisk faktura (BE)      | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kundfakturajournal</p><p>Projektfaktura</p> |
     | Brasiliansk NF-e (BR)                  | <p>Skattedokument</p><p>Rättelsebrev</p> | Skattedokument |
     | Brasiliansk NFS-e ABRASF Curitiba (BR) | Skattedokument för tjänster | Skattedokument |
-    | Brasiliansk NFS-e São Paulo (BR)       | Skattedokument för tjänster | Skattedokument |
     | Dansk elektronisk faktura (DK)       | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kundfakturajournal</p><p>Projektfaktura</p> |
     | Egyptisk elektronisk faktura (EG)     | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kundfakturajournal</p><p>Projektfaktura</p> |
     | Estnisk elektronisk faktura (EE)     | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kundfakturajournal</p><p>Projektfaktura</p> |
@@ -122,7 +122,6 @@ Beroende på land eller region kan den elektroniska faktureringsfunktionen kräv
     | Belgisk elektronisk faktura (BE)      | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kontextmodell för kundfaktura – kontext för kundfaktura</p><p>Kontextmodell för kundfaktura – kontext för projektfaktura</p> |
     | Brasiliansk NF-e (BR)                  | <p>Skattedokument</p><p>Rättelsebrev</p> | <p>Kontextmodell för kundfaktura – kontext för skattedokument</p><p>Kontextmodell för kundfaktura – kontext för FD-korrigeringsbrev</p> |
     | Brasiliansk NFS-e ABRASF Curitiba (BR) | Skattedokument för tjänster| Kontextmodell för kundfaktura – kontext för skattedokument |
-    | Brasiliansk NFS-e São Paulo (BR)       | Skattedokument för tjänster| Kontextmodell för kundfaktura – kontext för skattedokument |
     | Dansk elektronisk faktura (DK)       | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kontextmodell för kundfaktura – kontext för kundfaktura</p><p>Kontextmodell för kundfaktura – kontext för projektfaktura</p> |
     | Egyptisk elektronisk faktura (EG)     | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kontextmodell för kundfaktura – kontext för kundfaktura</p><p>Kontextmodell för kundfaktura – kontext för projektfaktura</p> |
     | Estnisk elektronisk faktura (EE)     | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Kontextmodell för kundfaktura – kontext för kundfaktura</p><p>Kontextmodell för kundfaktura – kontext för projektfaktura</p> |
@@ -144,7 +143,6 @@ Beroende på land eller region kan den elektroniska faktureringsfunktionen kräv
     | Belgisk elektronisk faktura (BE)      | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Fakturamodellmappning – Kundfaktura</p><p>Fakturamodellmappning – Projektfaktura</p> |
     | Brasiliansk NF-e (BR)                  | <p>Skattedokument</p><p>Rättelsebrev</p> | <p>Mappning av skattedokument – Mappning av skattedokument</p><p>Mappning av skattedokument – mappning av korrigeringsbrev</p> |
     | Brasiliansk NFS-e ABRASF Curitiba (BR) | Skattedokument för tjänster | Mappning av skattedokument – Mappning av skattedokument |
-    | Brasiliansk NFS-e São Paulo (BR)       | Skattedokument för tjänster | Mappning av skattedokument – Mappning av skattedokument |
     | Dansk elektronisk faktura (DK)       | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Fakturamodellmappning – Kundfaktura</p><p>Fakturamodellmappning – Projektfaktura</p> |
     | Egyptisk elektronisk faktura (EG)     | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Fakturamodellmappning – Kundfaktura</p><p>Fakturamodellmappning – Projektfaktura</p> |
     | Estnisk elektronisk faktura (EE)     | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Fakturamodellmappning – Kundfaktura</p><p>Fakturamodellmappning – Projektfaktura</p> |
@@ -158,7 +156,9 @@ Beroende på land eller region kan den elektroniska faktureringsfunktionen kräv
     | Spansk elektronisk faktura (ES)      | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Fakturamodellmappning – Kundfaktura</p><p>Fakturamodellmappning – Projektfaktura</p> |
     | PEPPOL-elektronisk faktura            | <p>Försäljningsfaktura</p><p>Projektfaktura</p> | <p>Fakturamodellmappning – Kundfaktura</p><p>Fakturamodellmappning – Projektfaktura</p> |
 
-Beroende på land eller region kan den elektroniska faktureringsfunktionen kräva ytterligare konfiguration. Specifika steg finns i den "Kom igång"-dokumentation som är tillgänglig för ditt land eller din region.
+Beroende på land eller region kan den elektroniska faktureringsfunktionen kräva ytterligare konfiguration.
+
+Specifika steg finns i den "Kom igång"-dokumentation som är tillgänglig för ditt land eller din region.
 
 ## <a name="deploy-the-electronic-invoicing-feature"></a>Distribuera den elektroniska faktureringsfunktionen
 
@@ -177,27 +177,26 @@ Beroende på land eller region kan den elektroniska faktureringsfunktionen kräv
 
 1. Logga in i Finance eller Supply Chain Management och kontrollera att du befinner dig i rätt juridisk person.
 2. Gå till **Organisationsadministration** \> **Inställningar** \> **Parametrar för elektroniskt dokument**.
-3. På fliken **Funktioner** väljer du den/de funktionsreferens(er) som anges i följande register om du vill aktivera funktionen Elektronisk fakturering för Finance eller Supply Chain Management.
+3. På fliken **Funktioner** väljer du den lands-/regionspecifika funktionen för att aktivera funktionen Elektronisk fakturering för Finance eller Supply Chain Management. I följande tabell finns en lista över de elektroniska faktureringsfunktionerna som är tillgängliga för specifika land/regioner. 
 
-    | Funktionsnamn                         | Land/region  | Funktionsreferens |
-    |--------------------------------------|-----------------|-------------------|
-    | Österrikiska elektroniska fakturor (AT)    | Österrike         | EUR-00023 |
-    | Belgisk elektronisk faktura (BE)      | Belgien         | EUR-00023 |
-    | Brasiliansk NF-e (BR)                  | Brasilien          | BR-00053 |
-    | Brasiliansk NFS-e ABRASF Curitiba (BR) | Brasilien          | BR-00095 |
-    | Brasiliansk NFS-e São Paulo (BR)       | Brasilien          | BR-00095 |
-    | Dansk elektronisk faktura (DK)       | Danmark         | <p>EUR-00023</p><p>DK-00001</p> |
-    | Holländsk elektronisk faktura (NL)        | Nederländerna | EUR-00023 |
-    | Egyptisk elektronisk faktura (EG)     | Egypten           | EG-00008 |
-    | Estnisk elektronisk faktura (EE)     | Estland         | EUR-00023 |
-    | Finsk elektronisk faktura (FI)      | Finland         | EUR-00023 |
-     Fransk elektronisk faktura (FR)       | Frankrike           | EUR-00023 |
-    | Tysk elektronisk faktura (DE)       | Tyskland         | EUR-00023 |
-    | Mexikansk CFDI Interfactura (MX)       | Mexiko          | <p>MX-00010</p><p>MX-00016</p> |
-    | Norsk elektronisk faktura (NO)    | Norge          | <p>EUR-00023</p><p>NO-00010</p> |
-    | Spansk elektronisk faktura (ES)      | Spanien           | <p>EUR-00023</p><p>ES-00025</p> |
-    | Italiensk elektronisk faktura (IT)      | Italien           | <p>EUR-00023</p><p>IT-00036</p> |
-    | PEPPOL-elektronisk faktura            | Europa          | EUR-00023 |
+    | Funktionsnamn                                          | Land/region  |
+    |-------------------------------------------------------|-----------------|
+    | Österrikiska elektroniska fakturor (AT)                     | Österrike         |
+    | Belgisk elektronisk faktura (BE)                       | Belgien         |
+    | CFDI Mexikansk elektronisk faktura (MX)                  | Mexiko          |
+    | Dansk elektronisk faktura (DK)                        | Danmark         |
+    | Holländsk elektronisk faktura (NL)                         | Nederländerna |
+    | Egyptisk elektronisk faktura (EG)                      | Egypten           |
+    | Estnisk elektronisk faktura (EE)                      | Estland         |
+    | Finsk elektronisk faktura (FI)                       | Finland         |
+    | Fransk elektronisk faktura (FR)                        | Frankrike          |
+    | Tysk elektronisk faktura (DE)                        | Tyskland         |
+    | Italiensk elektronisk faktura (IT)                       | Italien           |
+    | NF-e Federal – brasiliansk elektronisk faktura (BR)      | Brasilien          |
+    | NFS-e – brasiliansk elektronisk faktura   | Brasilien          |
+    | Norsk elektronisk faktura (NO)                     | Norge          |
+    | PEPPOL-elektronisk faktura                             | Globalt          |
+    | Spansk elektronisk faktura (ES)                       | Spanien           |
 
 4. Välj **Spara**.
 
@@ -226,11 +225,11 @@ Beroende på land eller region kan den elektroniska faktureringsfunktionen kräv
 
 3. Välj en faktura u rutnätet och välj sedan **Sök** \> **Sändningsinformation**.
 
-Beroende på land eller region kan den elektroniska faktureringsfunktionen kräva ytterligare konfiguration. Specifika steg finns i den "Kom igång"-dokumentation som är tillgänglig för ditt land eller din region.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
 - [Tillägg för elektronisk fakturering – översikt](e-invoicing-service-overview.md)
+- [Kom i gång med tjänstadministration för tillägget för elektronisk fakturering](e-invoicing-get-started-service-administration.md)
 - [Kom igång med tillägget elektronisk fakturering för Brasilien](e-invoicing-bra-get-started.md)
 - [Kom igång med tillägget elektronisk fakturering för Mexiko](e-invoicing-mex-get-started.md)
 - [Kom igång med tillägget elektronisk fakturering för Italien](e-invoicing-ita-get-started.md)

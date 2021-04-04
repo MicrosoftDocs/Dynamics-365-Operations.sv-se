@@ -3,7 +3,7 @@ title: Visa ordermeddelanden i POS
 description: Det här avsnittet beskriver hur du aktiverar ordermeddelanden i POS och ramverket för meddelanden.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,46 +16,54 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c3b8e2774a189f2afefa757e7c4f3885b674918c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5ea902b5d65f806fc88e688d10bdad9ae75611ef
+ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976798"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5585092"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Visa ordermeddelanden i POS
 
 [!include [banner](includes/banner.md)]
 
-I dagens moderna butiksmiljö tilldelas butikens personal olika uppgifter, till exempel att hjälpa kunder, registrera transaktioner, lagerinventeringar och ta emot order i butiken. Kassaklienten ger en enda applikation där medarbetare kan utföra alla dessa uppgifter och många andra. Eftersom olika aktiviteter måste utföras under dagen kan personalen behöva meddelas när något kräver deras uppmärksamhet. Ramverket för meddelanden i POS hjälper till genom att låta återförsäljarna konfigurera rollbaserade meddelanden. Från och med Dynamics 365 for Retail med programuppdatering 5, kan dessa meddelanden konfigureras för kassaoperationer.
+Butikspersonal kan ha olika uppgifter i butiken, till exempel att uppfylla order eller utföra lagerinleverans eller lagerinventering. Kassaklienten ger en enda applikation där medarbetare kan meddelas om dessa uppgifter. Ramverket för meddelanden i POS hjälper till genom att låta återförsäljarna konfigurera rollbaserade meddelanden. Med start i Dynamics 365 Retail med programuppdatering 5, kan dessa meddelanden konfigureras för kassaoperationer.
 
+Systemet kan visa meddelanden för operationen *orderuppfyllelse* och startar i Commerce-version 10.0.18 meddelanden kan även visas för operationen *orderuppfyllelse*. Men eftersom ramverket är utformat för att vara utdragbart kan utvecklare göra det [skriva en meddelandehanterare](dev-itpro/extend-pos-notification.md) för alla operationer och visa meddelanden för den operationen i kassan.
 
-Systemet kan för närvarande endast visa meddelanden för orderuppföljningsåtgärder. Men eftersom ramverket är utformat till att vara utbyggbart kommer utvecklare så småningom kunna skriva en meddelandehanterare för alla åtgärder och visa meddelanden för den åtgärden i POS.
+## <a name="enable-notifications-for-order-fulfillment-or-recall-order-operations"></a>Aktivera meddelanden för utförande eller återkalla orderoperationer
 
-## <a name="enable-notifications-for-order-fulfillment-operations"></a>Aktivera meddelanden för utförande av orderuppfyllelse
+Om du vill aktivera meddelanden för utförande av orderuppfyllelse, eller återkalla orderoperationer, följ dessa steg.
 
-Om du vill aktivera meddelanden för utförande av orderuppfyllelse, se följande steg:
+1. Gå till **Retail och Commerce \> Kanalinställningar \> Kassainställningar \> Kassa \> Åtgärder**.
+1. Sök antingen efter åtgärden **Orderuppfyllelse** eller åtgärden **Återkalla order** och välj sedan **Aktivera meddelanden** för åtgärden att specificera att anmälningsramen ska lyssna på hanteraren för den här åtgärden. Om hanteraren implementeras visas meddelanden för den här åtgärden i POS.
+1. Gå till **Retail och Commerce \> Medarbetare \> Arbetare**.
+1. Välj fliken **Commerce**, välj en arbetarrad och **kassabehörigheter**. Markera snabbfliken **Meddelanden** om du vill utöka den och lägg sedan till de åtgärder som du har aktiverat meddelanden för. Om du konfigurerar ett enda meddelande till en arbetare måste värdet **Visningsorder** är inställt på **1**. Om du konfigurerar fler än en åtgärd ställer du in värdena för **visningsordning** för att ange i vilken ordning meddelandena ska visas. 
 
-1. Navigera till **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassa** &gt; **Åtgärder**.
-2. Sök efter åtgärden **Orderuppfyllelse** och markera kryssrutan **Aktivera meddelanden** för att ange att ramverket för meddelanden ska lyssna på hanteraren för den här åtgärden. Om hanteraren implementeras visas meddelanden för den här åtgärden i POS.
-3. Gå till **Butik och handel** &gt; **Medarbetare** &gt; **Medarbetare** &gt;, under fliken Commerce, öppna de kassabehörigheter som är kopplade till medarbetaren. Expandera snabbfliken **meddelanden**, lägg till åtgärden **orderuppfyllande** och ange fältet **visningsordning** till **1**. Om fler än ett meddelande har konfigurerats används det här fältet för att ordna meddelanden. Meddelanden som har ett lägre värde för **visningsordning** visas ovanför de meddelanden som har ett högre värde. Meddelanden som har ett värde för **visningsordning** av **1** visas överst.
-
-    Meddelandena visas endast för åtgärder som läggs till på snabbfliken **meddelanden** och du kan bara lägga till åtgärder där om kryssrutan **Aktivera meddelanden** för dessa åtgärder är markerad på sidan **Kassaåtgärder**. Dessutom visas meddelanden för en åtgärd för medarbetare endast om åtgärden läggs till i kassabehörigheterna för dessa medarbetare.
+      Meddelanden visas bara för åtgärder som läggs till på snabbfliken **Meddelanden**. Du kan bara lägga till åtgärder där om **Aktivera meddelanden** för dessa åtgärder har markerats på sidan **kassaåtgärder**. Dessutom visas meddelanden för en åtgärd för medarbetare endast om åtgärden läggs till i kassabehörigheterna för dessa medarbetare.
 
     > [!NOTE]
     > Meddelanden kan åsidosättas på användarnivå. Öppna medarbetarens post, markera **Kassabehörigheter** och redigera sedan användarens meddelandeabonnemang.
 
-4. Gå till **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Funktionsprofiler**. I fältet **meddelandeintervall**, anger du hur ofta meddelanden ska dras. För vissa meddelanden måste POS ringa samtal i realtid till backoffice-programmet. Dessa samtal tar upp datorkapacitet i backoffice-programmets. Därför när du anger meddelandeintervallet bör du både beakta ditt företags behov och effekten av samtal i realtid till backoffice-programmet. Värdet **0** (noll) stänger av meddelandefunktionen.
-5. Gå till **Butik och handel** &gt; **Butik och handel-IT** &gt; **Distributionsschema**. Välj schemat **1060** (**Personal**) för att synkronisera inställningar av meddelandeabonnemang och välj sedan **Kör nu**. Välj sedan schemat **1070** (**kanalkonfiguration**) för att synkronisera behörighetsintervallet och välj sedan **Kör nu**.
+1. Gå till **Butik och handel \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Funktionsprofiler**. I fältet **meddelandeintervall**, anger du hur ofta meddelanden ska dras. För vissa meddelanden måste POS ringa samtal i realtid till backoffice-programmet. Dessa samtal tar upp datorkapacitet i backoffice-programmets. Därför när du anger meddelandeintervallet bör du både beakta ditt företags behov och effekten av samtal i realtid till backoffice-programmet. Värdet **0** (noll) stänger av meddelandefunktionen.
+1. Gå till **Butik och handel \> Butik och handel-IT \> Distributionsschema**. Välj schemat **1060** (**Personal**) för att synkronisera inställningar av meddelandeabonnemang och välj sedan **Kör nu**. Välj sedan schemat **1070** (**kanalkonfiguration**) för att synkronisera behörighetsintervallet och välj sedan **Kör nu**.
 
 ## <a name="view-notifications-in-the-pos"></a>Visa meddelanden i POS
 
-När du har slutfört föregående steg ska medarbetare kunna visa meddelanden i POS. För att visa meddelanden, tryck på meddelandeikonen i det övre högra hörnet av POS. Ett meddelandecenter visas och visar meddelanden för utförandet av orderuppfyllelse. Meddelancecentret ska visa följande grupper inom utförandet av orderuppfyllelse:
+När du har slutfört föregående steg ska medarbetare kunna visa meddelanden i POS. För att visa meddelanden, tryck på meddelandeikonen i det övre högra hörnet av POS. En meddelandepanel visas och visar meddelanden för de åtgärder som konfigurerats för arbetaren. 
 
-- **Upphämtning i butik** Den här gruppen visar antalet order som har leveranssättet **upphämtning** och upphämtning kommer från den aktuella butiken. Du kan trycka på numret i gruppen så öppnas sidan **orderuppfyllelse**. I det här fallet filtreras sidan så att den endast visar de aktiva order som har ställts in för upphämtning från den aktuella butiken.
-- **Leverera från butik** Den här gruppen visar antalet order som har leveranssättet **Leverans** och leverans är planerad från den aktuella butiken. Du kan trycka på numret i gruppen så öppnas sidan **orderuppfyllelse**. I det här fallet filtreras sidan så att den endast visar de aktiva order som har ställts in för försändelse från den aktuella butiken.
+För åtgärden **orderuppfyllelse** visar meddelandepanelen följande grupper:
 
-När nya order tilldelats butiken för uppfyllelse kommer meddelandeikonen att ändras för att indikera att det finns nya meddelanden och antalet för lämpliga grupper uppdateras. Även om grupperna uppdateras med jämna mellanrum kan kassaanvändare uppdatera grupperna manuellt när som helst genom att välja knappen **uppdatera** bredvid gruppen. Slutligen, om en grupp har en ny artikel som den aktuella medarbetaren inte har sett visar gruppen en explosionsikon som indikerar nytt innehåll.
+- **Upphämtning i butik** – Den här gruppen visar antalet individuella orderrader som är schemalagda för upphämtning från den aktuella butiken. Du kan välja numret i gruppen som du vill öppna åtgärden **Orderuppfyllelse** med ett filter så att det bara visar de aktiva orderraderna som är inställda för hämtning från den aktuella butiken.
+- **Leverera från butik** – I den här gruppen visas räkningen av enskilda orderrader som har konfigurerats att levereras från användarens aktuella butik. Du kan välja numret i gruppen som du vill öppna åtgärden **Orderuppfyllelse** med ett filter så att det bara visar de aktiva orderraderna som är inställda för leverans från den aktuella butiken.
+
+För åtgärden **återkalla order** visar meddelandepanelen följande grupper:
+
+- **Order som ska uppfyllas** – I den här gruppen visas antalet order som har konfigurerats för upphämtning eller leverans av användarens aktuella butik. Du kan välja numret i gruppen för att öppna åtgärden **Återkalla order** med en filtrerad vy som bara visar de öppna order som måste uppfyllas av användarens aktuella butik för antingen hämtning i butik eller leverans från butiksscenarier.
+- **Order som ska hämtas** – Den här gruppen visar antalet order som är schemalagda för upphämtning från den aktuella butiken. Du kan välja numret i gruppen för att öppna åtgärden **Återkalla order** med en filtrerad vy som bara visar de öppna order som måste uppfyllas för kunden att hämta från användarens nuvarande butik..
+- **Order som ska levereras** – I den här gruppen visas antalet order som ska levereras från användarens aktuella butik. Du kan välja numret i gruppen för att öppna åtgärden **Återkalla order** med en filtrerad vy som bara visar de öppna order som måste uppfyllas för leverans från användarens nuvarande butik..
+
+För både orderuppfyllelse och återkallande orderaviseringar, eftersom nya order plockas upp av processen kommer meddelandeikonen att ändras för att indikera att det finns nya meddelanden och antalet för lämpliga grupper uppdateras. Även om grupperna uppdateras med jämna mellanrum kan kassaanvändare uppdatera grupperna manuellt när som helst genom att välja knappen **uppdatera** bredvid gruppen. Slutligen, om en grupp har en ny artikel som den aktuella medarbetaren inte har sett visar gruppen en explosionsikon som indikerar nytt innehåll.
 
 ## <a name="enable-live-content-on-pos-buttons"></a>Aktivera levande innehåll på kassaknappar
 
@@ -70,12 +78,10 @@ Följande bild visar inställningarna för levande innehåll i knappsatsen för 
 
 Om du vill visa meddelanderäkningen på en knapp måste du kontrollera att rätt skärmlayout håller på att uppdateras. Om du vill ta reda på vilken skärmlayout som används i POS väljer du ikonen **Inställningar** i övre högra hörnet och noterar **Skärmlayout-ID** och **Layoutupplösning.** Nu använder du Edge-webbläsaren, gå till sidan **skärmlayout**, leta reda på **bildskärms-ID** och **Layoutupplösning** som identifieras ovan och markera kryssrutan **Aktivera live-innehåll**. Gå **Butik och handel \> Butiken och handel-IT \> Distributionsschema** och kör 1090-jobbet (journaler) för att synkronisera layoutändringar.
 
-
 ![Hitta den skärmlayout som används i POS](./media/Choose_screen_layout.png "Hitta skärmlayouten")
 
 Följande bild visar effekterna av att välja **Högst upp till höger** jämfört med **Mitten** i fältet **Innehållsjustering** för knappar med olika storlekar.
 
 ![Levande innehåll på kassaknappar](./media/ButtonsWithLiveContent.png "Levande innehåll på kassaknappar")
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

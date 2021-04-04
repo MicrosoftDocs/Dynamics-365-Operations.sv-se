@@ -18,12 +18,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 91e614889c719ae700b13e54150e5025d64e2b97
-ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
+ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104950"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580975"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
 
@@ -86,6 +86,13 @@ Navet äger följande data:
 > Det inkommande inköpsorderflödet skiljer sig begreppen från det utgående flödet. Du kan använda samma lagerställe på antingen skalningsenhet eller hubb beroende på om inköpsordern har frisläppts till lagerstället eller inte. När du har frisläppt en order till lagerstället kan du bara arbeta med den ordern när du är inloggad på skalningsenhet.
 
 Om du använder processen *frisläppning till lagerställe*, [*lagerställeorder*](cloud-edge-warehouse-order.md) skapas lagerställeorder och ägarskapet för det relaterade mottagningsflödet tilldelas till skalningsenheten. Navet kommer inte att kunna registrera inkommande inleveranser.
+
+Du måste logga in på navet för att använda processen *Släpp till distributionslager*. Gå till någon av följande sidor om du vill köra eller schemalägga den:
+
+- **Anskaffning och källa > Inköpsorder > All inköpsorder > Distributionslager > Åtgärder > Släpp till distributionslager**
+- **Lagerstyrning > Släpp till lagerställe > Automatiskt släpp av försäljningsorder**
+
+När du använder **Automatiskt släpp av försäljningsorder**, du kan välja specifika inköpsorderrader baserat på en fråga. Ett vanligt scenario är att ställa in ett återkommande batchjobb som frisläpper alla bekräftade inköpsorderrader som förväntas komma in nästa dag.
 
 Arbetaren kan köra mottagningsprocessen med hjälp av en distributionslagerapp som är ansluten till skalningsenhet. Data registreras sedan av skalningsenheten och rapporteras mot inkommande lagerorder. Skapandet och bearbetningen av efterföljande borttagning kommer också att hanteras av skalningsenheten.
 
@@ -222,7 +229,7 @@ I följande tabell visas vilka ingående funktioner som stöds och var de stöds
 | Överför orderrad inleverans och inlagring                        | Ja | Nr |
 | Avbryt arbete (inkommande)                                              | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | <p>Ja men endast när alternativet <b>Avregistreringskvitto vid annullering av arbete</b> (på sidan <b>parametrar för lagerstyrning</b>) är avmarkerat.</p> |
 | Inköpsorder, bearbetning av produktinleverans                          | Ja | Nr |
-| Inköpsorder som tas emot med underleverans                        | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nej, eftersom du bara kan annullera fullständiga radkvantiteter för lagerställeordern. |
+| Inköpsorder som tas emot med underleverans                        | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Ja, men bara genom att göra en annulleringsbegäran från navet |
 | Inköpsorder som tas emot med överleverans                        | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Ja  |
 | Ta emot med skapande av *Direktleveransarbete*                   | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
 | Ta emot med skapande av *Kvalitetsorder*                  | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |

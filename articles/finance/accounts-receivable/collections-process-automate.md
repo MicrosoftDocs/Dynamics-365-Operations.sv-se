@@ -1,9 +1,9 @@
 ---
 title: Automatisering av inkassoprocess
-description: I det här avsnittet beskrivs hur du ställer in processtrategier för inkasso som automatiskt identifierar kundfakturor som kräver en e-postpåminnelse, inkassoaktivitet (t.ex. ett telefonsamtal) eller ett kravbrev som ska skickas till kunden.
+description: I det här avsnittet beskrivs hur du ställer in processtrategier för inkasso som automatiskt identifierar kundfakturor som kräver en e-postpåminnelse, inkassoaktivitet eller ett kravbrev som ska skickas till kunden.
 author: panolte
 manager: AnnBe
-ms.date: 08/26/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: a63058904df72a7fda5a67ed1e6a846eed393ce0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a5f5d65f3f757163b22d35c3c99b4d6b7fbdfafb
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969711"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582761"
 ---
 # <a name="collections-process-automation"></a>Automatisering av inkassoprocess
 
@@ -28,10 +28,12 @@ ms.locfileid: "4969711"
 
 I det här avsnittet beskrivs hur du ställer in processtrategier för inkasso som automatiskt identifierar kundfakturor som kräver en e-postpåminnelse, inkassoaktivitet (t.ex. ett telefonsamtal) eller ett kravbrev som ska skickas till kunden. 
 
-Organisationer ägnar en lång tid på sig att undersöka föråldrade saldorapporter, kundkonton och öppna fakturor för att avgöra vilka kunder som måste kontaktas om en öppen faktura eller ett kontosaldo. Den här forskningen tar tid från en inkassohandläggare som används för att kommunicera med kunder för att samla in förfallna saldon eller lösa tvister om fakturan. Med automatisering av inkassoprocesser kan du ställa in ett strategibaserade tillvägagångssätt för din insamlingsprocess. På så sätt kan du utföra inkassoaktiviteter på ett konsekvent sätt genom att tillhandahålla anpassade e-postpåminnelser eller en programmerad process för sändning av kravbrev. 
+Organisationer ägnar en lång tid på att undersöka föråldrade saldorapporter, kundkonton och öppna fakturor för att lära dig vilka kunder som måste kontaktas om en öppen faktura eller ett kontosaldo. Den här forskningen tar tid från en inkassohandläggare som används för att kommunicera med kunder för att samla in förfallna saldon eller lösa tvister om fakturan. Med automatisering av inkassoprocesser kan du ställa in ett strategibaserade tillvägagångssätt för din insamlingsprocess. På så sätt kan du utföra inkassoaktiviteter på ett konsekvent sätt genom att tillhandahålla anpassade e-postpåminnelser eller en programmerad process för sändning av kravbrev. 
 
 ## <a name="collections-process-setup"></a>Inställningar för insamlingsprocess
 På sidan **Inställningar för insamlingsprocess** (**Kredit och inkasso > Inställningar > Inställningar för insamlingsprocess**) för att skapa en automatiserad inkassoprocess som schemalägger aktiviteter, skickar e-postmeddelanden och skapar och bokför kundkravbrev. Processtegen baseras på den första eller äldsta öppna fakturan. I varje steg används den här fakturan för att fastställa vilken kommunikation eller aktivitet som ska utföras med en viss kund.  
+
+Inkassoteam skickar vanligtvis ut ett tidigt meddelande om varje utestående faktura så att en kund meddelas när fakturan är på väg att förfalla. Valet för **förkrav** kan ställas in så att ett steg i varje processhierarki kan användas på varje faktura när fakturatidsinställningen når detta steg.
 
 ### <a name="process-hierarchy"></a>Processhierarki
 Varje kundpool kan bara tilldelas en processmall. Rankningen av hierarkin för det här steget identifierar vilken process som ska prioriteras om en kund ingår i fler än en pool som har tilldelats en processmall. Pool-ID bestämmer vilka kunder som ska tilldelas processen. 
@@ -82,6 +84,7 @@ I följande register visas de sidor och fält som de angivna snabbflikarna kan n
 |                                                           |     Affärsdokument                           |     Definierar aktivitets eller e-postmallen som används under processteget.                                                                        |
 |                                                           |     När                                          |     Definierar om processteget ska inträffa före eller efter det inledande fakturans förfallodatum tillsammans med **dagarna i relation till fältet förfallodatum för faktura**.        |
 |                                                           |     Dagar i relation till fakturans förfallodatum        |     Tillsammans med fältet **när** anger tidssteget för processteget.                                                                          |
+|                                                           |     För-återkrav                                   |     Med det här urvalet kan ett steg per processhierarki ställas in och köras mot varje faktura när den når tidmätningskriteriet.                                                |
 |                                                           |     Mottagare                                     |     Anger om ett e-postmeddelande ska skickas till en kontaktperson för kund, säljgrupp eller inkasso.                                                   |
 |                                                           |     Kontakt för affärssyfte                    |     Avgör vilken mottagares e-postadress som används i e-postkommunikationer.                                                                                 |
 
@@ -100,7 +103,7 @@ I följande register visas de sidor och fält som de angivna snabbflikarna kan n
 ### <a name="collections-history"></a>Inkassohistorik 
 |     Sida                              |     Fält     |      beskrivning                                                          |
 |------------------------------------   |-------------- |---------------------------------------------------------------------  |
-|     Inställningar för insamlingsprocess       |               |     Visa den senaste historiken för den valda processhierarkin.     |
+|     Inställningar för insamlingsprocess       |               |     Visa den senaste historiken för den valda processhierarkin.       |
 
 ### <a name="collection-process-assignment"></a>Insamlingsprocessuppgift
 |     Sida                              |     Fält     |      beskrivning                                                  |
@@ -110,6 +113,11 @@ I följande register visas de sidor och fält som de angivna snabbflikarna kan n
 |     Förhandsgranska processtilldelning      |               |     Förhandsgranska de kunder som ska tilldelas en strategi när den körs.   |
 |     Förhandsgranska kundtilldelning     |               |     Visa strategin som en viss kund är tilldelad.    |
  
+ ### <a name="process-simulation"></a>Processsimulering
+|     Sida                              |     Fält     |      beskrivning                                                  |
+|------------------------------------   |-------------- |-----------------------------------------------------------    |
+|    Processsimulering                 |               |     Förhandsgranska de åtgärder som kommer att skapas om den valda processautomatiseringsprocessen körs just nu. |
+
 ### <a name="parameters"></a>Parameters
 |     Sida                                                                  |     Fält                                             |      beskrivning                              |
 |-------------------------------------------------------------------------- |------------------------------------------------------ |-------------------------------------  |
@@ -117,6 +125,7 @@ I följande register visas de sidor och fält som de angivna snabbflikarna kan n
 |     Parametrar för kundreskontra > automatisering av inkassoprocessen     |     Bokför kravbrev automatiskt           |     För kravbrevs åtgärdstyper kommer brevet att bokföras under automationen.                                      |
 |     Parametrar för kundreskontra > automatisering av inkassoprocessen     |     Skapa aktiviteter automatisering                |     Skapa och stäng aktiviteter för åtgärdstyper som inte är aktiviteter för att visa alla automatiserade steg som har vidtagits för ett konto.        |
 |     Parametrar för kundreskontra > automatisering av inkassoprocessen     |     Antal dagar som insamling av inkassoprocesser ska fortsätta     |     Definierar antalet dagar som inkassohistoriken lagras.                                                       |
+|     Parametrar för kundreskontra > automatisering av inkassoprocessen     |     Exkludera faktura efter aktivering av senaste processsteg    |     En faktura som når det sista steget i inkassoprocessen används inte för att skapa åtgärdstyper för framtida processautomatisering. Den nästa äldsta fakturan fastställer nästa processautomatiseringssteg för att se till att insamlingsprocessens automationsåtgärder fortsätter.                                                        |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

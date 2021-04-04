@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c1304d3277e12bc602fa5bc25a61e1f95edba59c
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967242"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580925"
 ---
 # <a name="release-product-structures"></a>Frisläppa produktstrukturer
 
@@ -76,8 +76,6 @@ Ett exempel på hur du accepterar en produkt finns i [Granska och acceptera prod
 ## <a name="release-policies"></a>Utgivningsprinciper
 
 Alla operativa företag behöver inte ha samma produkt data. I allmänhet kräver drift företag som tillverkar tekniska produkter en strukturlista, medan operativa företag som bara säljer tekniska produkter behöver inte ha en strukturlista. Du kan använda frisläppnings principer för att fastställa vilka parametrar som används för frisläppning av produkt.
-
-För tekniska produkter tilldelas frisläppningspolicyn i kategorin teknisk produkt, och fältet är obligatoriskt. För standardprodukter tilldelas policyn till den delade produkten, och fältet är valfritt.
 
 Mer information om tekniska produktkategorier finns i [Konstruktionsversioner och kategorier av konstruktionsprodukter](engineering-versions-product-category.md).
 

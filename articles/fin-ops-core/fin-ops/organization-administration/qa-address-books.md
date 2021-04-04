@@ -3,10 +3,9 @@ title: FAQ – adressbok
 description: Det här avsnittet finns svar på vanliga frågor som rör adressböcker.
 author: msftbrking
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
@@ -17,16 +16,17 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: ad2be27d406928222ca00fe696f49b8578fc8cb3
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796908"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559951"
 ---
 # <a name="address-books-faq"></a>Vanliga frågor och svar om adressböcker
 
 [!include [banner](../includes/banner.md)]
+[!include [preview-banner](../includes/preview-banner.md)]
 
 ## <a name="how-do-i-check-for-duplicate-records"></a>Hur leta efter dubletter av poster?
 
@@ -68,5 +68,10 @@ Du kan ange partposter antingen i den globala adressboken eller på lämplig enh
 
 Du kan ställa in översättningar av adressinformation så att informationen visas i ditt användarspråk (systemspråk) i ditt program men på ett annat språk för dokument såsom försäljningsorder. Du kan ange översättningar för land/regionnamn, i adressyften och namnsekvenser. Ditt systemspråk är till exempel danska och du skapar en försäljningsorder för en kund i Frankrike. I detta fall kan du visa kundposten på danska i programmet, men visa adressinformation på franska på den utskrivna försäljningsordern. När du ställer in översättningar måste du ange en översättning för varje artikel på listan. Alla artiklar som du inte anger någon översättning för visas på systemspråket. Ditt systemspråk är till exempel danska och du skickar ett dokument till en kund i Spanien. Om du inte har angett spanska (ESP) översättningar för adressinformationen, visas den informationen på danska både i programmet och på det utskrivna dokumentet.
 
+## <a name="after-importing-addresses-when-i-access-the-records-why-am-i-unable-to-edit-imported-addresses"></a>Efter att importerat adresser, när jag får åtkomst till posterna varför jag inte kan redigera importerade adresser?
+
+När du importerar adresser finns det ett fält märkt **IsLocationOwner**, vilket anger om den part som är associerad till platsen (adressen) är adressens ägare. Om parten är ägare till adressen kan adressen redigeras när den används med hjälp av parten i den globala adressboken eller från huvudpostformuläret (till exempel kund, leverantör eller arbetare). Om parten inte är ägare till adressen kan posten inte redigeras från de formulär som tidigare listats. När du importerar adresser ska **IsLocationOwner** ska du ställa in **Ja** om du vill att adressen ska kunna redigeras med den associerade parten. Det finns emellertid tidpunkter då det här fältet importeras felaktigt. Problemet kan åtgärdas genom att platsägaren uppdateras i den globala adressboken från partposten eller från sidan **Bekräfta platsägare**. Om du vill uppdatera en enskild part går du till den **Globala adressboken > Adress**. Välj **Redigera** om du vill starta sidan **Redigera adress** om du vill ändra platsens ägare. Välj **Ändra platsägare** för att se den tidigare platsägaren med den aktuella valda parten som den nya platsägaren. Om den föregående platsägaren inte är tom innebär det att en platsägare inte har upprättat något. Om du alternativet **Avancerat** öppnas sidan **Hantera adresser** där platsägaren också kan ställas in. Välj den plats som ska uppdateras och välj **Ange platsägare** på menyn. Om du vill uppdatera platsägaren för flera poster går du till **Global adressbok > Platser > Bekräfta platsägare**. Listan innehåller platser som är länkade till en part, men den parten inte är ägaren. Om du väljer **Bekräfta ägare** anges **Föreslagen ägarpartiets ID** som ägare till den länkade adressen. När parten har angetts som ägare kan den länkade adressen redigeras från partposten. Om du vill ändra platsens ägare måste du tilldela behörigheten **Ange platsägare** på sidan **Säkerhetskonfiguration**.  Systemadministratören har som standard den här behörigheten.
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

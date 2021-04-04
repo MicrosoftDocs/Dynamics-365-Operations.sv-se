@@ -3,10 +3,9 @@ title: Skapa en konfiguration för att generera dokument i Excel-format
 description: Det här avsnittet beskriver hur du utformar ett elektroniskt rapporteringsformat (ER) för att fylla i en Excel-mall och sedan generera utgående dokument i Excelformat.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/02/2020
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8d6a18741d57829d1929fb8362dc4ba8e03a1bd
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: a82afcdeb45bad79a008c3135ef332cf01c0b580
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094039"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574183"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Skapa en konfiguration för att generera dokument i Excel-format
 
@@ -54,7 +53,7 @@ Du måste lägga till en **Excel\\fil**-komponent i det konfigurerade ER-formate
 Om du vill ange layouten för det utgående dokumentet bifogar du en Excel-arbetsbok med filnamnstillägget .xlsx till komponenten **Excel\\fil** som mall för utgående dokument.
 
 > [!NOTE]
-> När du bifogar en mall manuellt måste du använda en [dokumenttyp](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) som har konfigurerats för detta syfte i [ER-parametrarna](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+> När du bifogar en mall manuellt måste du använda en [dokumenttyp](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types) som har konfigurerats för detta syfte i [ER-parametrarna](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 ![Lägga till en bilaga i Excel\fil-komponenten](./media/er-excel-format-add-file-component2.png)
 
@@ -140,6 +139,36 @@ Mer information om hur du bäddar in bilder och former finns i [Bädda in bilder
 
 Komponenten **PageBreak** tvingar Excel att påbörja en ny sida. Den här komponenten behövs inte om du vill använda Excels standardsidindelning, men du bör använda den när du vill att Excel följer ditt ER-format för att strukturera sidindelning.
 
+## <a name="footer-component"></a>Sidfotskomponent
+
+Komponenten **Sidfot** används för att fylla i sidfötter längst ned i ett genererat kalkylblad i en Excel-arbetsbok.
+
+> [!NOTE]
+> Du kan lägga till den här komponenten för varje **ark** komponent om du vill ange olika sidfötter för olika kalkylblad i en genererad Excel-arbetsbok.
+
+När du konfigurerar en individ komponenten **Sidfot** kan du använda egenskapen **Sidhuvud/sidfot utseende** för att specificera de sidor som komponenten används till. Följande värden finns:
+
+- **Alla** – Kör den konfigurerade komponenten **Sidfot** för vilken sida som helst i det överordnade Excel-kalkylbladet.
+- **Först** – Kör den konfigurerade komponenten **Sidfot** för endast första sidan som helst i det överordnade Excel-kalkylbladet.
+- **Jämn** – Kör den konfigurerade komponenten **Sidfot** för endast jämna sidor i överordnade Excel-kalkylbladet.
+- **Udda** – Kör den konfigurerade komponenten **Sidfot** för endast udda sidor i överordnade Excel-kalkylbladet.
+
+För en enskild **Ark**-komponent, kan du lägga till flera **Sidfot**-komponenter, var och en har olika värde för egenskapen **Sidhuvud/Sidfot utseende**. På det här sättet kan du generera olika sidfötter för olika typer av sidor i ett Excel-kalkylblad.
+
+> [!NOTE]
+> Se till att varje **Sidfot**-komponent som du lägger till i en enkel **Ark**-komponent har ett annat värde för egenskapen **Sidhuvud/Sidfot utseende**. Annars inträffar [ett valideringsfel](er-components-inspections.md#i16). Felmeddelandet som du får informerar dig om inkonsekvensen.
+
+Under den tillagda **Sidfot**-komponent, lägg till de nödvändiga kapslade komponenterna i **Text\\Sträng**, **Text\\DateTime** eller annan typ. Konfigurera bindande element för dessa komponenter om du vill ange hur sidfoten ska fyllas i.
+
+Du kan också använda särskilda [formatkoder](https://docs.microsoft.com/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) om du vill formatera innehållet i en genererad sidfot korrekt. Om du vill lära dig använda denna metod, följ stegen i [exempel 1](#example-1) senare i detta ämne.
+
+> [!NOTE]
+> Tänk på Excel när du konfigurerar ER [gräns](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) och det maximala antalet tecken för en enda sidhuvud eller sidfot.
+
+## <a name="header-component"></a>Sidhuvudkomponent
+
+Komponenten **Sidhuvud** används för att fylla i sidhuvud längst upp i ett genererat kalkylblad i en Excel-arbetsbok. Den används som komponenten **Sidfot**.
+
 ## <a name="edit-an-added-er-format"></a>Redigera ett tillagt ER-format
 
 ### <a name="update-a-template"></a>Uppdatera en mall
@@ -175,6 +204,48 @@ När ett utgående dokument i ett Microsoft Excel arbetsboksformat genereras, ka
     >[!NOTE]
     > Omräkning av formel utförs påtvingat manuellt när ett genererat dokument öppnas för förhandsgranskning med Excel.
     > Använd inte det här alternativet om du konfigurerar en ER-destination som förutsätter användning av ett genererat dokument utan förhandsgranskning i Excel (PDF-konvertering, e-post osv.) eftersom det genererade dokumentet kanske inte innehåller värden i celler med formler.
+
+## <a name="example-1-format-footer-content"></a><a name="example-1"></a>Exempel 1: Formatera sidfotsinnehåll
+
+1. Använd de angivna ER-konfigurationerna för att [generera](er-generate-printable-fti-forms.md) ett utskrivbart dokument med fritextfaktura (FTI).
+2. Granska sidfoten för det genererade dokumentet. Lägg märke till att det innehåller information om det aktuella sidnumret och det totala antalet sidor i dokumentet.
+
+    ![Granska sidfoten för ett genererat dokument i Excel-format](./media/er-fillable-excel-footer-1.gif)
+
+3. I ER-formatdesigner, [öppna](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) exemplet ER-format för granskning.
+
+    Sidfoten i kalkylbladet **Faktura** genereras baserat på inställningarna för två komponenter **Sträng** som finns under komponenten **Sidfot**:
+
+    - Den första **Sträng** komponent fyller i följande speciella formateringskoder för att tvinga Excel att tillämpa specifik formatering:
+
+        - **&C** – Anpassa sidfotstexten i mitten.
+        - **&"Segoe UI,Vanlig"&8** – Visa sidfotstexten i teckensnittet med "Segoe UI Regular" teckensnitt med en storlek på 8 poäng.
+
+    - Den andra komponenten **Sträng** fyller i texten som innehåller det aktuella sidnumret och det totala antalet sidor i det aktuella dokumentet.
+
+    ![Granska sidfoten ER-formatkomponenten på sidan Formatdesigner](./media/er-fillable-excel-footer-2.png)
+
+4. Anpassa exempelformatet för ER för att ändra den aktuella sidfoten:
+
+    1. [Skapa](er-quick-start2-customize-report.md#DeriveProvidedFormat) ett härlett **Fritextfaktura (Excel) anpassad** ER-format som baseras på exempelformatet för ER.
+    2. Lägg till det första nya paret **Sträng** komponenter för **Sidfot** komponent för kalkylbladet **Faktura**:
+
+        1. Lägg till en **Sträng** komponent som justerar företagsnamnet till vänster och presenterar det i åtta punkter "Segoe UI Regular" teckensnitt (**"&L&"Segoe UI,Vanlig"&8"**).
+        2. Lägg till **Sträng** komponent som fyller i företagsnamnet (**model.InvoiceBase.CompanyInfo.Name**).
+
+    3. Lägg till det andra nya paret **Sträng** komponenter för **Sidfot** komponent för kalkylbladet **Faktura**:
+
+        1. Lägg till en **Sträng** komponent som justerar bearbetningsdatumet till höger och presenterar det i åtta punkter "Segoe UI Regular" teckensnitt (**"&R&"Segoe UI,Vanlig"&8"**).
+        2. Lägg till en **Sträng** komponent som fyller i bearbetningsdatumet i ett anpassat format (**"&nbsp;"&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**).
+
+        ![Granska sidfoten ER-formatkomponenten på sidan Formatdesigner](./media/er-fillable-excel-footer-3.png)
+
+    4. [Slutför](er-quick-start2-customize-report.md#CompleteDerivedFormat) utkastversionen av den härledda **fritextfakturan (Excel) anpassade** ER-format.
+
+5. [Konfigurera](er-generate-printable-fti-forms.md#configure-print-management) utskriftshantering för att använda det härledda **fritextfakturan (Excel) anpassade** ER-format istället för ER-exempelformatet.
+6. Generera ett utskrivbart FTI-dokument och granska sidfoten för det genererade dokumentet.
+
+    ![Granska sidfoten för ett genererat dokument i Excel-format](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

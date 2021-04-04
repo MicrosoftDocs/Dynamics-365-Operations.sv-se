@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f0417ac1007fc94431aeb11d2464ee699e3f3441
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 08659bac84b07f6e95a83b84612cb035b51cf28d
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093172"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5568476"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avancerade formateringsalternativ i ekonomiska rapporter
 
@@ -283,10 +282,10 @@ Om du vill begränsa en beräkning för en enskild rapportenhet i ett rapporttr�
 > [!NOTE]
 > Om du vill använda denna funktion, måste ett rapportträd associeras till raddefinitionen.
 
-Beräkningsraden kan referera till en beräkningsrad eller till en ekonomisk datarad. Beräkningen registreras i cellen **Relaterade formler/rader/enheter** i raddefinitionen och den ekonomiska data-typbegränsningen. Beräkningen måste använda en villkorsstyrd beräkning som inleds med en **IF @Unit**-konstruktion. Här är ett exempel: IF @Unit(SALES) THEN @100 ELSE 0 Denna beräkning innehåller beloppet från rad 100 i varje kolumn av rapporten, men bara för försäljningsenheten. Om flera enheter kallas FÖRSÄLJNING kommer beloppet att visas i var och en av dessa enheter. Eventuellt kan rad 100 vara en ekonomisk datarad och kan definieras som icke utskriftsbar. I detta fall förhindras beloppet från att visas i alla enheter i trädet. Du kan även begränsa beloppet till en viss kolumn i rapporten, till exempel kolumn H, med hjälp av en kolumnbegränsning om du bara vill skriva ut värdet i den kolumnen i rapporten. Du kan inkludera **OR**-kombinationer i ett **IF**-utdrag. Här är ett exempel: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 kan du ange en enhet i en beräkning-typbegränsning på något av följande sätt:
+Beräkningsraden kan referera till en beräkningsrad eller till en ekonomisk datarad. Beräkningen registreras i cellen **Relaterade formler/rader/enheter** i raddefinitionen och den ekonomiska data-typbegränsningen. Beräkningen måste använda en villkorsstyrd beräkning som inleds med en **IF \@Unit**-konstruktion. Här är ett exempel: IF @Unit(SALES) THEN @100 ELSE 0 Denna beräkning innehåller beloppet från rad 100 i varje kolumn av rapporten, men bara för försäljningsenheten. Om flera enheter kallas FÖRSÄLJNING kommer beloppet att visas i var och en av dessa enheter. Eventuellt kan rad 100 vara en ekonomisk datarad och kan definieras som icke utskriftsbar. I detta fall förhindras beloppet från att visas i alla enheter i trädet. Du kan även begränsa beloppet till en viss kolumn i rapporten, till exempel kolumn H, med hjälp av en kolumnbegränsning om du bara vill skriva ut värdet i den kolumnen i rapporten. Du kan inkludera **OR**-kombinationer i ett **IF**-utdrag. Här är ett exempel: **IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100**. Du kan ange en enhet i en begränsning av beräkningstyp på något av följande sätt:
 
-- Ange ett enhetsnamn om du vill inkludera enheter som matchar. Till exempel **IF @Unit(SALES)** aktiverar beräkningen för en enhet med namnet FÖRSÄLJNING, även om det finns flera försäljningsenheter i rapportträdet.
-- Ange företags- och enhetsnamn för att begränsa beräkningen till specifika enheter i ett visst företag. Ange t.ex. **IF @Unit(ACME:SALES**) för att begränsa beräkningen till försäljningsenhet i ACME-företag.
+- Ange ett enhetsnamn om du vill inkludera enheter som matchar. Till exempel, **IF \@Unit(SALES)** aktiverar beräkningen för en enhet med namnet FÖRSÄLJNING, även om det finns flera försäljningsenheter i rapportträdet.
+- Ange företags- och enhetsnamn för att begränsa beräkningen till specifika enheter i ett visst företag. Ange t.ex. **IF @Unit (ACME:SALES)** för att begränsa beräkningen till försäljningsenhet i ACME-företag.
 - Ange fullständig hierarkikod från rapportträdet för att begränsa beräkningen till en viss enhet. Ange till exempel **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**.
 
 > [!NOTE]
@@ -296,7 +295,7 @@ Beräkningsraden kan referera till en beräkningsrad eller till en ekonomisk dat
 
 1. Klicka på **Raddefinitioner** i Report Designer och öppna den raddefinition som du vill ändra.
 2. Dubbelklicka på cellen **Formatkod** och markera sedan **CAL**.
-3. Klicka på cellen **Relaterade formler/rader/enheter** och ange sedan en villkorsstyrd beräkning som inleds med en **IF @Unit**.
+3. Klicka på cellen **Relaterade formler/rader/enheter** och ange sedan en villkorsstyrd beräkning som inleds med en **IF \@Unit**-konstruktion.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>IF/THEN/ELSE-utdrag i en kolumndefinition
 
@@ -310,6 +309,5 @@ Ett **IF/THEN/ELSE**-utdrag gör att en beräkning är beroende av resultaten fr
 Du kan utforma rapporter med hjälp av dimensionsvärden som innehåller ett et-tecken (&).
 
 I fältet **Länk till ekonomiska dimensioner** kan du ange ett värde som **t.ex. "P&L"**. Om du inkluderar enkla citat tecken (' ') på båda sidor av dimensionsvärdet anger att du använder ett litteralt värde, t.ex. et-tecknet (&).
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

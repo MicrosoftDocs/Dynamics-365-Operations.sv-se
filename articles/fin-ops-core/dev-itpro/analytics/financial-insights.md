@@ -1,12 +1,11 @@
 ---
-title: Ekonomiska insikter
-description: Ekonomiska insikter använder Microsoft Power BI för att sammanföra bokslut, diagram och ekonomiska nyckeltal (KPI).
+title: Ekonomisk analys
+description: Ekonomiska analys använder Microsoft Power BI för att sammanföra bokslut, diagram och ekonomiska nyckeltal (KPI).
 author: kweekley
 manager: AnnBe
 ms.date: 05/22/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,20 +15,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9aaf24147900c890a14c60ab969da7124c538911
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 22de5f3e2e475aa681be2d8868fb1d939f3f8638
+ms.sourcegitcommit: 4c57c16fe7ecd2a9840158aa69646ee47152e5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115738"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5572376"
 ---
-# <a name="financial-insights"></a>Ekonomiska insikter
+# <a name="financial-analysis"></a>Ekonomisk analys
 
 [!include [banner](../includes/banner.md)]
 
-**Ekonomiska insikter** använder Microsoft Power BI för att sammanföra bokslut, diagram och ekonomiska nyckeltal (KPI). Power BI är inbäddad i appen. Tyngdpunkten i **Ekonomiska insikter** är analytisk rapportering. All personal i organisationen kan läsa, undersöka, förstå och agera. 
+**Ekonomiska analys** använder Microsoft Power BI för att sammanföra bokslut, diagram och ekonomiska nyckeltal (KPI). Power BI är inbäddad i appen. Tyngdpunkten i **Ekonomisk analys** är analytisk rapportering. All personal i organisationen kan läsa, undersöka, förstå och agera. 
 
-**Ekonomiska insikter** kombinerar data från redovisningen och reskontran för att ge en mer fullständig bild av den ekonomiska situationen i en organisation.
+**Ekonomiska analys** kombinerar data från redovisningen och reskontran för att ge en mer fullständig bild av den ekonomiska situationen i en organisation.
 
 > [!NOTE]
 > Det här dokumentet använder följande termer från Power BI:
@@ -38,14 +37,14 @@ ms.locfileid: "5115738"
 > - **Sida** – en flik i en enda .pbix-fil. Varje sida kan innehålla en eller flera visuella element.
 > - **Visuellt element** – en enda datakälla, till exempel kort, KPI, diagram, matris eller bokslut. En sida som har ett bokslut som ett visuellt element kan inte ha andra visuella element, på grund av storleken på de data som rapporteras.
 
-För närvarande används **Ekonomiska insikter** för att visa data för den aktiva juridiska personen eller alla juridiska personer. I framtida versioner kommer arbetsytan att utvecklas till den plats där du kan använda Power BI för att redigera och skapa visuella element.
+För närvarande används **Ekonomisk analys** för att visa data för den aktiva juridiska personen eller alla juridiska personer. I framtida versioner kommer arbetsytan att utvecklas till den plats där du kan använda Power BI för att redigera och skapa visuella element.
 
-Arbetsytan **Översikt över ekonomichef** visar samma visuella element som **Ekonomiska insikter**, men fokuserar på att du kan visa och filtrera data i befintliga rapporter. I framtida versioner kommer du att kunna lägga till nya bilder till arbetsytan **Ekonomiska insikter**. De nya visuella elementen kan också bli tillgängliga på arbetsytor som är särskilt avsedda för andra roller, till exempel projektledare eller ekonomichefer. Arbetsytan **Översikt över ekonomichef** visar fortsättningsvis data för alla juridiska personer, oavsett vilken roll de juridiska personerna har tillgång till.
+Arbetsytan **Översikt över ekonomichef** visar samma visuella element som **Ekonomisk analys**, men fokuserar på att du kan visa och filtrera data i befintliga rapporter. I framtida versioner kommer du att kunna lägga till nya bilder till arbetsytan **Ekonomisk analys**. De nya visuella elementen kan också bli tillgängliga på arbetsytor som är särskilt avsedda för andra roller, till exempel projektledare eller ekonomichefer. Arbetsytan **Översikt över ekonomichef** visar fortsättningsvis data för alla juridiska personer, oavsett vilken roll de juridiska personerna har tillgång till.
 
 ## <a name="dynamics-365-finance-setup"></a>Dynamics 365 Finance-konfiguration
 **Redovisning**
 
-Huvudkontotypen och huvudkontonas kategorier används för att fylla i lämpliga standardkonton i **balansräkning**, bokslut och de olika **resultaträkningarna** och boksluten i **Ekonomiska insikter**.
+Huvudkontotypen och huvudkontonas kategorier används för att fylla i lämpliga standardkonton i **balansräkning**, bokslut och de olika **resultaträkningarna** och boksluten i **Ekonomisk analys**.
 
 På sidan för **huvudkonton** måste du definiera ditt huvudkonto så att en av följande typer tilldelas kontot:
 
@@ -57,14 +56,14 @@ På sidan för **huvudkonton** måste du definiera ditt huvudkonto så att en av
 
 Tilldela inte kontot någon annan huvudkontotyp, t ex **balansräkning** eller **resultat**. Rapporteringen kan inte avgöra typ av huvudkonto när andra typer av huvudkontotyper tilldelas kontot, eftersom de inte är tillräckligt detaljerade. Typ av huvudkonto måste bestämmas för att skulder och intäkter ska visas som positiva belopp i ekonomiska rapporter.
 
-För att visas i bokslut och inkluderas i andra visuella element, t ex KPI:er, måste varje huvudkonto tilldelas en huvudkontokategori. Kategorier för huvudkonton har förbättrats så att de omfattar en visningsordning. Ordningen används särskilt för bokslut i **Ekonomiska insikter**. När du redigerar eller lägger till en ny huvudkontokategori kan du ändra värdet på den **visningsordning** som definierar vilken ordning kategorier för huvudkonton ska visas i ett bokslut. Om du behöver ändra visningsordningen för många huvudkontokategorier använder du funktionen för att öppna i Excel för att snabbt redigera och publicera ändringarna i appen.
+För att visas i bokslut och inkluderas i andra visuella element, t ex KPI:er, måste varje huvudkonto tilldelas en huvudkontokategori. Kategorier för huvudkonton har förbättrats så att de omfattar en visningsordning. Ordningen används särskilt för bokslut i **Ekonomisk analys**. När du redigerar eller lägger till en ny huvudkontokategori kan du ändra värdet på den **visningsordning** som definierar vilken ordning kategorier för huvudkonton ska visas i ett bokslut. Om du behöver ändra visningsordningen för många huvudkontokategorier använder du funktionen för att öppna i Excel för att snabbt redigera och publicera ändringarna i appen.
 
 ## <a name="entity-store"></a>Enhetslagring
-Data för **Ekonomiska insikter** hämtas från enhetsbutiken (**systemadministration** \> **inställningar** \> **enhetsbutik**). Om du öppnar arbetsytorna för **Översikt över ekonomichef** eller **Ekonomiska insikter** och följande varningsmeddelande visas måste du uppdatera enheterna.
+Data för **Ekonomiska analys** hämtas från enhetsbutiken (**systemadministration** \> **inställningar** \> **enhetsbutik**). Om du öppnar arbetsytorna för **Översikt över ekonomichef** eller **Ekonomiska analys** och följande varningsmeddelande visas måste du uppdatera enheterna.
 
 ![Varning](./media/Cantdisplay.png)
 
-Du måste uppdatera följande enheter om du vill se data i arbetsytorna **Ekonomiska insikter** och **Översikt över ekonomichef**:
+Du måste uppdatera följande enheter om du vill se data i arbetsytan **Ekonomisk analys**:
 
 - BudgetActivityMeasure
 - Transaktionsdata version 3 för ekonomiska rapporter 
@@ -74,8 +73,6 @@ Du måste uppdatera följande enheter om du vill se data i arbetsytorna **Ekonom
 - Inköpskub
 - Försäljningskub
 
-I tidigare utgåva användes enheterna LedgerActivityMeasure och VendPaymentBIMeasure för data i arbetsytan **Översikt över ekonomichef**. Men dessa används inte i den nuvarande versionen.
-
 Du kan definiera ett återkommande batchjobb för att regelbundet uppdatera data i enheterna. Eftersom varje enhet återskapas fullständigt under en uppdatering ska du noggrant välja tid och frekvens för uppdateringar. Den primära enhet som används för bokslut är enheten FinancialReportingTransactionData. Därför kanske du vill uppdatera just den enheten oftare.
 
 ## <a name="security"></a>Säkerhet
@@ -83,18 +80,17 @@ För närvarande kan inte data i inbäddade Power BI-rapporter begränsas till d
 
 | Tullavgift                                    | Roller | beskrivning |
 |-----------------------------------------|-------|------------|
-| Visa arbetsyta för ekonomichefsöversikt             | Ekonomichef | Behörigheten ger åtkomst till arbetsytan Översikt över ekonomichef. Normalt används det aktiva företaget som ett filter. Du kan emellertid lägga till alla juridiska personer, oavsett om användaren har åtkomst till de övriga juridiska personerna. |
-| Visa aktuellt företag för ekonomiska insikter | <ul><li>Redovisare</li><li>Redovisningschef</li><li>Redovisningsansvarig</li><li>Revisor</li><li>Budgetchef</li><li>Verkställande direktör</li><li>Ekonomichef</li><li>Ekonomicontroller</li></ul> | Behörigheten ger tillgång till Ekonomiska insikter. Normalt används det aktiva företaget som ett filter. Du kan inte lägga till andra juridiska personer. |
-| Visa korsföretag för ekonomiska insikter   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, uppgiften inte är tilldelade till en roll. I nästa utgåva kommer behörigheten att tilldelas rollen ekonomichef. | Behörigheten ger åtkomst till menyn för arbetsytan Översikt över ekonomichef. Normalt används det aktiva företaget som ett filter. Du kan emellertid lägga till alla juridiska personer, oavsett om användaren har åtkomst till de övriga juridiska personerna. |
+| Visa aktuellt företag för ekonomisk analys | <ul><li>Redovisare</li><li>Redovisningschef</li><li>Redovisningsansvarig</li><li>Revisor</li><li>Budgetchef</li><li>Verkställande direktör</li><li>Ekonomichef</li><li>Ekonomicontroller</li></ul> | Behörigheten ger tillgång till Ekonomisk analys. Normalt används det aktiva företaget som ett filter. Du kan inte lägga till andra juridiska personer. |
+| Visa alla företag för ekonomisk analys   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, uppgiften inte är tilldelade till en roll. I nästa utgåva kommer behörigheten att tilldelas rollen ekonomichef. | Behörigheten ger åtkomst till menyn för arbetsytan Översikt över ekonomichef. Normalt används det aktiva företaget som ett filter. Du kan emellertid lägga till alla juridiska personer, oavsett om användaren har åtkomst till de övriga juridiska personerna. |
 
 
-## <a name="financial-reporting-vs-financial-insights"></a>Ekonomisk rapportering jämfört med ekonomisk information
-Även om **ekonomiska insikter** innehåller bokslut ersätter det inte ekonomisk rapportering i appen. Standardbokslut i **ekonomiska insikter** är begränsade och innehåller inte alla typer av bokslut. Ekonomiska rapporter är fortfarande huvudverktyget för att utforma, skapa och generera lagstadgade bokslut.
+## <a name="financial-reporting-vs-financial-analysis"></a>Financial reporting jämfört med ekonomisk analys
+Även om **ekonomiska analys** innehåller bokslut ersätter det inte Financial reporting i appen. Standardbokslut i **ekonomisk analys** är begränsade och innehåller inte alla typer av bokslut. Ekonomiska rapporter är fortfarande huvudverktyget för att utforma, skapa och generera lagstadgade bokslut.
 
 Jämförelsediagrammet nedan hjälper dig att skilja de två alternativen:
 
 
-|                                                          | Ekonomisk rapportering                                               | Ekonomiska insikter |
+|                                                          | Financial Reporting                                               | Ekonomisk analys |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
 | **Redigera standardrapporter**                                 | Ja                                                               | Nr |
 | **Skapa nya rapporter**                                   | Ja                                                               | Nr |
@@ -108,7 +104,7 @@ Jämförelsediagrammet nedan hjälper dig att skilja de två alternativen:
 | **rapport för externa data**                              | Nr                                                                | Nr |
 | **Ge stöd till konsolideringar**                               | Ja                                                               | Begränsad Kan rapportera om flera företag men endast använda redovisningsvalutan |
 
-Utöver användargränssnittet i den ursprungliga arbetsytan **Översikt för ekonomichef** är diagram, nya KPI: er och bokslut nu också tillgängliga. Följande bokslut är tillgängliga:
+Följande bokslut är tillgängliga:
 
 - Råbalans
 - Balansräkning
@@ -121,7 +117,7 @@ Utöver användargränssnittet i den ursprungliga arbetsytan **Översikt för ek
 - Försäljning per kund
 
 ## <a name="edit-visuals"></a>Redigera visuella element
-I den ursprungliga versionen av **Ekonomiska insikter** kunde inga visuella element redigeras. I framtida versioner kommer användare som har lämplig behörighet kunna skapa nya visuella element, kopiera befintliga och redigera elementen. Även om .pbix-filer som innehåller rapporter är tillgängliga som resurser, rekommenderas inte att du ändrar i standardrapporterna. Ytterligare ändringar kommer att göras i de visuella element för egna bokslut, standardrapport och datamodell som används för bokslut. För att dra nytta av nya funktioner och ändringar i nästa versions datamodell måste du göra om alla ändringar som du gjort i standardrapporterna via Microsoft Power BI Desktop.
+I tidigare versioner av **Ekonomiska analys** kunde inga visuella element redigeras. I framtida versioner kommer användare som har lämplig behörighet kunna skapa nya visuella element, kopiera befintliga och redigera elementen. Även om .pbix-filer som innehåller rapporter är tillgängliga som resurser, rekommenderas inte att du ändrar i standardrapporterna. Ytterligare ändringar kommer att göras i de visuella element för egna bokslut, standardrapport och datamodell som används för bokslut. För att dra nytta av nya funktioner och ändringar i nästa versions datamodell måste du göra om alla ändringar som du gjort i standardrapporterna via Microsoft Power BI Desktop.
 
 ## <a name="filtering"></a>Filtrering
 Användare kan filtrera rapporten med hjälp av fönstret **Filter** till vänster. Det här fönstret är detsamma som det som finns på skrivbordet för Power BI Desktop. Det finns olika nivåer av filtrering, varav en del kanske inte är tillgängliga, beroende på vad du har markerat på en sida (flik) eller om du använder funktionerna för detaljgranskning:
@@ -168,7 +164,7 @@ Följande dimensioner används i standardrapporter. Inga av dessa dimensioner ä
 - Ort
 
 > [!IMPORTANT] 
-> Om du har summerat transaktioner för flera leverantörer eller kunder i en enda verifikation med hjälp av de ekonomiska journalerna blir dessa data felaktiga. Rapporteringen kan inte avgöra vilken leverantör eller kund som hör till ett visst redovisningskonto i en journalpost eftersom informationen inte underhålls någonstans. Därför rekommenderar vi inte att du anger flera leverantörer, kunder, anläggningstillgångar och projekt i en enda verifikation.
+> Om du har summerat transaktioner för flera leverantörer eller kunder i en enda verifikation med hjälp av de ekonomiska journalerna blir dessa data felaktiga. Rapporteringsprocessen kan inte avgöra vilken leverantör eller kund som hör till ett visst redovisningskonto i en journalpost eftersom informationen inte underhålls någonstans. Därför rekommenderar vi inte att du anger flera leverantörer, kunder, anläggningstillgångar och projekt i en enda verifikation.
 
 ## <a name="drill-on-data"></a>Granska data
 
@@ -243,7 +239,7 @@ Power BI har inte något alternativ för att visa och dölja tomma rader. Om en 
 
 ## <a name="additional-resources-for-power-bi"></a>Ytterligare resurser för Power BI
 
-Informationen i följande resurser krävs inte för att aktivera inbäddade rapporter i arbetsytan för **Översikt över ekonomichef** eller **Ekonomiska insikter** i en produktionsmiljö. Däremot är de användbara för dev och om du vill bädda in Power BI rapporterna.
+Informationen i följande resurser krävs inte för att aktivera inbäddade rapporter i arbetsytan för **Ekonomisk analys** i en produktionsmiljö. Däremot är de användbara för dev och om du vill bädda in Power BI rapporterna.
 
 - [Få åtkomst till analysarbetsytor och rapporter i en 1-rutemiljö](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
