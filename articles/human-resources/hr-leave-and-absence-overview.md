@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3de3de5a93c700526645c248b54783b64d77f2e7
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 1192a45d0d2fffbe2ecba65551641c090c08db8e
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115982"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463440"
 ---
 # <a name="leave-and-absence-overview"></a>Översikt över tjänstledighet och frånvaro
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources hjälper dig att ge dina arbetare bra fördelar. Arbetsytan **tjänstledighet** och frånvaro en flexibel struktur för att skapa nya tjänstledighetsplaner. Den innehåller också arbetsflöden för hantering av förfrågningar och en intuitiv sida för självbetjäningstjänster för medarbetare som ber om ledighet. Analyser hjälper ditt företag att mäta och övervaka ledighetssaldon och förbrukning för dina tjänstledighetsplaner.
 
