@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 66ba73ab5c790aa4a67419842f63f6f741bf0d3a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7c20d3d0540f8f1a05928df9aff5253745982da9
+ms.sourcegitcommit: 4ecc1bf82fbb04882d7ef5e1994ef3c07ef953dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973770"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5558272"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Layout för dokumentflöde för ID-nummeretiketter
 
 [!include [banner](../includes/banner.md)]
+
 
 Layouten för dokumentflöde definierar layouten för etiketter för ID-nummer och de data som skrivs ut på dem. Du konfigurerar utlösningspunkterna för utskrivning när du ställer in menyalternativ för mobilenheter och arbetsmallar.
 
@@ -51,6 +52,10 @@ Som en del av etikettens utskriftsprocess kommer texten `$LicensePlateId$` i det
 Om du vill se vilka värden som kommer att skrivas ut **Lagerstyrning \> Förfrågningar och rapporter \> ID-nummeretiketter**.
 
 Många av de vanligaste verktygen för att skapa etiketter kan användas för att formatera texten i etikettexten. Många av dessa verktyg stöder `$FieldName$`-formatet. Dessutom använder Microsoft Dynamics 365 Supply Chain Management särskild formatlogik som en del av fältmappningen för layouten för dokumentflödet.
+
+## <a name="turn-on-this-feature-for-your-system"></a>Aktivera funktionen i systemet
+
+Om ditt system inte redan innehåller funktionerna som beskrivs i det här avsnittet, gå till [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktivera funktionen *Förbättrade etikettlayouter på registreringsskyltar*.
 
 ## <a name="custom-number-formats"></a>Anpassade nummerformat
 

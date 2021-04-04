@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9491feb004366a02155225bfb323773e130f3dc9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 016b67631a53139d12d65dfaf594f49b030326b1
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993613"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478222"
 ---
 # <a name="create-legal-entities"></a>Skapa juridiska personer
-
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du skapar juridiska personer i Microsoft Dynamics 365 Commerce, som måste skapas och konfigureras innan kanaler skapas.
-
-## <a name="overview"></a>Översikt
 
 En juridisk person är en organisation som har en registrerad eller lagstiftad juridisk struktur. Juridiska personer kan ingå juridiska kontrakt och måste förbereda utdrag som rapporterar deras resultat.
 

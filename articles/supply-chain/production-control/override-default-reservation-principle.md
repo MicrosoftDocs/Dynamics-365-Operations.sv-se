@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8756dc22ffd64f836740124ce08dadca84207147
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 2391ec11bd497c69ddb19e29533f5441d7374877
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5078307"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501112"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Åsidosätt standardreservationsprincipen för material i produktionen.
 
@@ -38,11 +39,11 @@ Om du till exempel har råmaterial eller ingredienser som kräver plockarbete, s
 Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 
 - **Modul:** *produktionskontroll*
-- **Funktionsnamn:** *Åsidosätt standardproduktionsreservation*
+- **Funktionsnamn:** *(förhandsversion) Åsidosätt standardproduktionsreservation*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Tilldela en policy för produktionsreservation till en artikelmodellgrupp
 
-1. Gå till **Kostnadshantering &gt; Policyinställningar för lagerredovisning &gt; Artikelmodellgrupper**.
+1. Gå till **Kostnadshantering \> Policyinställningar för lagerredovisning \> Artikelmodellgrupper**.
 1. Skapa eller välj en artikelmodellgrupp.
 1. På snabbfliken **Lagerpolicyer**, markera kryssrutan **Åsidosätt artikelproduktionsreservation**.
 1. I fältet **Reservation**, välj reservationsprincip för objekt som tillhör vald modellgrupp. (Dessa artiklar omfattar artiklar som finns på en strukturlista eller receptrad.)

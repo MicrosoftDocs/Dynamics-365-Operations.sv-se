@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
+ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963320"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470529"
 ---
 # <a name="work-with-location-directives"></a>Arbeta med platsdirektiv
 
@@ -239,7 +239,7 @@ Du kan definiera flera plats direktiv åtgärder för varje linje. Återigen anv
     - **Avrunda till fullständigt LP och FEFO-batch** – den här strategin kombinerar elementen i *FEFO-batchreservation* och *avrundar upp till en fullständig LP* strategi. Det är bara giltigt för grupperade artiklar och platsdirektiv med jobbtypen *plocka*. Raden måste vara aktiverad för att använda strategin *FEFO-batchreservation* och strategin *avrundning till fullständig LP* kan bara användas för påfyllnad. Om den här strategin har konfigurerats tillsammans med en platsgräns för lager, kan det medföra att den valda arbetsplatsen för placering överbelastas och att gränsvärdena för lagring ignoreras.
     - **Avrunda uppåt till full LP** - Denna strategi avrundar lagerkvantiteten för att matcha den registreringsskyltskvantitet som tilldelas artiklarna som ska plockas. Du kan bara använda den här strategin för påfyllningsdirektiv av typen *Plocka*. Om den här strategin har konfigurerats tillsammans med en platsgräns för lager, kan det medföra att den valda arbetsplatsen för placering överbelastas och att gränsvärdena för lagring ignoreras.
     - **Guidat ID-nummer** – Använd denna strategi när du släpper ordern till lagret för att skapa plocka och inlagra arbete. Du kan använda denna metod för flera ID-nummer. Denna strategi kommer att försöka reservera och skapa plockningsarbete mot de platser som innehåller de begärda registreringsskylt som har associerats med överföringsorderraderna. Om dessa åtgärder inte kan slutföras men du ändå vill skapa plockningsarbete, bör du gå tillbaka till en annan strategi för platsdirektivåtgärder. Beroende på vilka affärsprocess behov du har kan du även söka efter lager i ett annat område i lagerstället.
-    - **Tom plats utan inkommande arbetsuppgifter** – Använd denna strategi för att söka tomma platser. Platsen anses vara tom om den inte har något fysiskt lager och inget förväntat inkommande arbete. Du kan bara använda denna strategi för platsdirektiv som har en arbetstyp av *Plocka*.
+    - **Tom plats utan inkommande arbetsuppgifter** – Använd denna strategi för att söka tomma platser. Platsen anses vara tom om den inte har något fysiskt lager och inget förväntat inkommande arbete. Du kan bara använda denna strategi för platsdirektiv som har en arbetstyp av *Placera*.
     - **Platsåldrande FIFO** – Använd strategin först in, först ut (FIFO) för att skicka både batchspårade artiklar och icke batchspårade artiklar, baserat på datumet då lagret kom in i distributionslagret. Den här funktionen kan vara särskilt användbar vid icke-spårade lager, där inget utgångsdatum kan användas för sortering. FIFO-strategin söker efter platsen som innehåller det äldsta åldersdatumet och allokerar plockning utifrån detta åldersdatum.
     - **Platsåldrande LIFO** – Använd strategin sist in, sist ut (LIFO) för att skicka både batchspårade artiklar och icke batchspårade artiklar, baserat på datumet då lagret kom in i distributionslagret. Den här funktionen kan vara särskilt användbar vid icke-spårade lager, där inget utgångsdatum kan användas för sortering. LIFO-strategin söker efter platsen som innehåller det nyaste åldersdatumet och allokerar plockning utifrån detta åldersdatum.
 

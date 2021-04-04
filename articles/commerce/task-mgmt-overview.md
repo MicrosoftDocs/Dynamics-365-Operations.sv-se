@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 6fbd0ead6d73f4b032bdc3805fce87ec9c802535
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0b7756aebac2b8f0881c95b27e5a7c845557be4c
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006170"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477570"
 ---
 # <a name="task-management-overview"></a>Översikt över uppgiftshantering
 
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet innehåller en översikt över uppgiftshantering för chefer och arbetare i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 I en butiksmiljö är det alltid svårt att se till att uppgifter utförs av rätt person vid rätt tidpunkt. Återförsäljare måste kunna meddela arbetare om kommande uppgifter och tillhandahålla relaterad affärskontext, så att uppgifterna kan utföras på rätt sätt och i tid.
 

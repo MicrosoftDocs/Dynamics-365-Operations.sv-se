@@ -19,12 +19,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c04127b9fe621d962be2d7fe06358b3bd1b78916
-ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
+ms.openlocfilehash: 9102f53ab1b63d08b8bba7b0ae505416ec5a83fd
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5105730"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556372"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Lagerställeorder för moln- och kantskalningsenheter
 
@@ -51,6 +51,8 @@ Följ dessa steg för att skapa en lagerorder.
 1. Gå till **Anskaffning och källa \> Inköpsorder \> Alla inköpsorder**.
 1. I åtgärdsfönstret **Lagerställe**, flik **åtgärder**, välj **Släpp till lagerställe**.
 1. För att se relaterade orderrader för lagerställe, öppna relevant inköpsorder, välj en rad i avsnittet **Inköpsorderrader** och sedan i verktygsfältet, välj **lagerställe \> orderrader för lagerställe**. Om du vill visa alla raderna går du till **Hantering av distributionslager \> Förfrågningar och rapporter \> Orderrader för lagerställe**.
+
+Du kan också utlösa processen *Frisläpp till lagerställe* från ett batchjobb genom att gå till **Lagerstyrning > Frisläpp till lagerställe > Automatisk frisläppning av inköpsorder**. När du ställer in batchjobbet kan du välja specifika inköpsorderrader baserade på en fråga. Ett vanligt scenario är att ställa in ett återkommande batchjobb som frisläpper alla bekräftade inköpsorderrader som förväntas komma in nästa dag.
 
 ## <a name="cancel-a-warehouse-order"></a>Annullera en lagerorder
 

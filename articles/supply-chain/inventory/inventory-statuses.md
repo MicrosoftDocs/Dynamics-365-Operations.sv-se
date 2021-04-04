@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c4cad56389c7a8fd6d37591c1ff335fff715707
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0b5e693bc1c9f4b822543d812f722bc8ea9f7025
+ms.sourcegitcommit: ee7a890e3e4ed6436898e5ab6eff309082a073f8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001834"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476709"
 ---
 # <a name="inventory-statuses"></a>Lagerstatus
 
@@ -45,6 +45,9 @@ En lagerstatus är en av dimensionerna i lagringsdimensionsgruppen. Lagerstatusa
 
 Du kan använda lagerställeartiklar med tillgänglig eller inte tillgänglig lagerstatus för inkommande arbete. Till exempel skapar du en tillgänglig status med namnet *Klart*, en otillgänglig status med namnet *Skadat* och en blockerad status med namnet *Spärrad*. När du skapar en inköpsorder för inlevererade eller returnerade artiklar och om sådana artiklar skadas, kan du ändra lagerstatus på de artiklarna till *Skadat* på inköpsorderraden. När artiklarna har kommit, anges statusen automatiskt till *Spärrad*. Om du skanna de skadade artiklarna med hjälp av en mobil enhet, kan Supply Chain Management använda platsdirektiv och arbetsmallar för att visa information om en lämplig plats eller intervall av platser där du kan placera artiklarna. För returnerade artiklar skapas utleveranstypen *Reservation* på sidan **Lagertransaktioner**.
 
+> [!NOTE]
+> Du kan inte ändra statusen för lager på platser där det finns öppet arbete. Om du till exempel gjorde ett inköp för en artikel, men inte gjorde det, skulle öppna arbetet finnas för inleveransplatsen och du får ett felmeddelande om du försöker ändra status på lagret på den platsen. Om du slutför eller annullerar det relaterade arbetet kan du ändra status.
+ 
 För utgående arbete, använd artiklar med tillgänglig lagerstatus. Om det finns artiklar med statusen *Trasig* och huvudplaneringen körs på dessa artiklar, betraktas artiklarna som saknade och lagret fylls automatiskt på.
 
 När du har ställt in lagerstatusarna kan du ange standardlagerstatus för en plats, en artikel och ett lagerställe. Du kan även ange en standardstatus för försäljningsorder, överföring och inköpsorder. Standardstatusen för försäljningsorder och utgående överföringsorder kan inte ha alternativet **Lagerspärr** med värdet *Ja*. Lagerstatusen, som ärvs från standardinställningarna för en plats, ett lagerställe, en artikel, en inköpsorder, överföringsorder eller försäljningsorder, kan ändras genom att använda den mobila enheten eller på försäljningsorderraden, inköpsorderraden eller överföringsorderraden.

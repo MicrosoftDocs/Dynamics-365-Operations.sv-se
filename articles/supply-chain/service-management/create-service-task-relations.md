@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e5fd978c1e9db7e7ce3c06bbeb45b59854f1582
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ea5952376fe30f489d385c8f8295fbf86f2af085
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974670"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470747"
 ---
 # <a name="create-service-task-relations"></a>Skapa serviceuppgiftsrelationer    
 
@@ -32,13 +32,13 @@ Du kan koppla serviceuppgifter till serviceavtal eller serviceorder för att bes
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Skapa en relation med ett serviceavtal
 
-1.  Klicka på **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**.
+1.  Gå till **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**.
 
 2.  Välj ett befintligt serviceavtal eller skapa ett nytt serviceavtal.
 
 3.  Klicka på knappen **Serviceuppgifter**.
 
-4.  I formuläret **serviceuppgifter** tryck på CTRL+N för att skapa en ny rad och välj sedan en serviceuppgift i listan **serviceuppgift** för att koppla serviceuppgiften till serviceavtalet.
+4.  I formuläret **serviceuppgifter** tryck på **Ny** för att skapa en ny rad och välj sedan en serviceuppgift i listan **serviceuppgift** för att koppla serviceuppgiften till serviceavtalet.
 
 5.  På fliken **Beskrivning** anger du eventuella interna eller externa anteckningar i fritextfälten.
 
@@ -50,13 +50,13 @@ En serviceuppgiftsrelation som skapas i ett serviceavtal är tillgänligt från 
 
 ## <a name="create-a-relation-with-a-service-order"></a>Skapa en relation med en serviceorder
 
-1.  Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.
+1.  Klicka på **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.
 
 2.  Välj en befintlig serviceorder eller skapa en ny serviceorder.
 
 3.  Klicka på knappen **Serviceuppgifter**.
 
-4.  Från formuläret **serviceuppgifter** tryck på CTRL+N för att skapa en ny rad och välj sedan en serviceuppgift i listan **serviceuppgift** för att koppla serviceuppgifterna till serviceordern.
+4.  I formuläret **serviceuppgifter** tryck på **Ny** för att skapa en ny rad och välj sedan en serviceuppgift i listan **serviceuppgift** för att koppla serviceuppgiften till serviceorder.
 
 5.  På fliken **Beskrivning** anger du eventuella interna eller externa anteckningar i fritextfälten.
 

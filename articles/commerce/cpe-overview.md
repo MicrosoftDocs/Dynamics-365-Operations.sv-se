@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Commerce bedömningsmiljö – översikt
+title: Ställ in en Dynamics 365 Commerce utvärderingsmiljö – översikt
 description: Det här ämnet ger en översikt över bedömningsmiljö i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8e08c2f327771d7731b836840006d63b6ecb7dfc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: cc6bffba6ee402c6b48d6a3c8f8356eb32b5423b
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000960"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478030"
 ---
-# <a name="dynamics-365-commerce-evaluation-environment-overview"></a>Dynamics 365 Commerce bedömningsmiljö – översikt
+# <a name="dynamics-365-commerce-evaluation-environment-overview"></a>Ställ in en Dynamics 365 Commerce utvärderingsmiljö – översikt
 
 [!include [banner](includes/banner.md)]
 
@@ -31,8 +31,6 @@ Det här ämnet ger en översikt över bedömningsmiljö i Microsoft Dynamics 36
 
 > [!NOTE]
 > Commerce bedömningsmiljöer är i allmänhet inte tillgängliga och ges till partners och kunder för varje enskild begäran. För mer information, kontakta din Microsoft-partnerkontakt.
-
-## <a name="overview"></a>Översikt
 
 Commerce bedömningsmiljö är en valfri komplett miljö av Dynamics 365 Commerce som låter partners och potentiella kunder prova Commerce-produkten.
 

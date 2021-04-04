@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cb696c365e02ab3e3b28da19b8b33f1975c142f8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7bd1268893d0869d2414b944493c8b8859f27abc
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983554"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501136"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Huvudplanering med efterfrågeprognoser
 
@@ -249,7 +249,7 @@ Därför skapas följande planerade order.
 En prognosreduceringsnyckel används i metoderna **transaktioner - reduceringsnyckel** och **procent - reduceringsnyckel** för att minska prognosbehoven. Följ dessa steg om du vill skapa och ställa in en reduceringsnyckel.
 
 1. Gå till **huvudplanering \> inställningar \> täckning \> reduceringsnycklar**.
-2. Välj **ny** eller tryck på **Ctrl+N** för att skapa en reduceringsnyckel.
+2. Skapa en reduceringsnyckel genom att välja **Nytt**.
 3. I fältet **reduceringsnyckeln** anger ett unikt ID för prognosreduceringsnyckeln. Ange sedan ett namn i fältet **Namn**. 
 4. Definiera perioder och procentandel av reduktionsnyckel i varje period:
 
@@ -265,8 +265,8 @@ En prognosreduceringsnyckel måste tilldelas artikelns disponeringsgrupp. Följ 
 2. På snabbfliken **Övrigt** i fältet **reduceringsnyckel** väljer du reduceringsnyckeln som ska tilldelas disponeringsgruppen. Reduceringsnyckeln gäller för alla objekt som hör till disponeringsgruppen.
 3. Om du vill använda en reduceringsnyckel för att beräkna prognosreducering under huvudplaneringen måste du definiera inställningen av prognosplanen eller huvudplanen. Gå till en av följande platser:
 
-    - Huvudplanering \> Inställning \> Planer \> Prognosplaner
-    - Huvudplanering \> Inställningar \> Planer \> Huvudplaner
+    - **Huvudplanering \> Inställning \> Planer \> Prognosplaner**
+    - **Huvudplanering \> Inställningar \> Planer \> Huvudplaner**
 
 4. På sidan **Prognosplaner** eller **Huvudplaner** på snabbfliken **Allmänt** i fältet **Metod som används för att minska prognosbehov** väljer du antingen **Procent - reduceringsnyckel** eller **transaktioner - reduceringsnyckel**.
 
@@ -274,5 +274,69 @@ En prognosreduceringsnyckel måste tilldelas artikelns disponeringsgrupp. Följ 
 
 När du väljer **transaktioner - reduceringsnyckel** eller **transaktioner - dynamisk period** som metod för att minska prognosbehoven kan du ange vilka transaktioner som reducerar prognosen. På sidan **Disponeringsgrupper** på transaktioner **Övrigt** i fältet **reducera prognos efter** väljer du **alla transaktioner** om alla transaktioner ska reducera prognosen eller **order** om bara försäljningsorder ska reducera prognosen.
 
+## <a name="forecast-models-and-submodels"></a>Prognosmodeller med undermodeller
+
+I det här avsnittet beskrivs hur du skapar prognosmodeller och hur du kombinerar flera prognosmodeller genom att ställa in delmodeller.
+
+En *prognosmodell* namnger och identifierar en viss prognos. När du har skapat prognosmodellen kan du lägga till prognosrader i den. Om du vill lägga till prognosrader för flera artiklar använder du sidan **Efterfrågeprognosrader**. Om du vill lägga till prognosrader för en specifik vald artikel använder du sidan **Frisläppta produkter**.
+
+En prognosmodell kan innehålla prognoser från andra prognosmodeller. För att uppnå detta resultat lägger du till andra prognosmodeller som *delmodeller* till en överordnad prognosmodell. Du måste skapa varje relevant modell innan du kan lägga till den som en delmodell till en överordnad prognosmodell.
+
+Den resulterande strukturen ger dig ett kraftfullt sätt att kontrollera prognoser, eftersom du kan kombinera (aggregera) indata från flera enskilda prognoser. Från planeringssynpunkt är det därför enkelt att kombinera prognoser för simuleringar. Du kan till exempel ställa in en simulering som baseras på kombinationen av en vanlig prognos och prognosen för ett återkommande erbjudande.
+
+### <a name="submodel-levels"></a>Delmodellnivåer
+
+Det finns ingen gräns för hur många delmodeller som kan läggas till i en överordnad prognosmodell. Strukturen kan dock bara vara en nivå djup. Med andra ord kan en prognosmodell som är en delmodell till en annan prognosmodell inte ha sina egna delmodeller. När du lägger till delmodeller till en prognosmodell kontrollerar systemet om denna prognosmodell redan är en delmodell till en annan prognosmodell.
+
+Om en delmodell med sina egna delmodeller påträffas i huvudplaneringen får du ett felmeddelande.
+
+#### <a name="submodel-levels-example"></a>Exempel på delmodellnivåer
+
+Prognosmodell A har prognosmodell B som delmodell. Därför kan prognosmodellen B inte ha sina egna delmodeller. Om du försöker lägga till en delmodell till prognosmodell B visas följande felmeddelande: "Prognosmodell B är en delmodell för modell A."
+
+### <a name="aggregating-forecasts-across-forecast-models"></a>Sammanställa prognoser för flera prognosmodeller
+
+Prognosrader som inträffar samma dag aggregeras över prognosmodellen och dess delmodeller.
+
+#### <a name="aggregation-example"></a>Aggregering, exempel
+
+Prognosmodell A har prognosmodeller B och C som delmodeller.
+
+- Prognosmodell A innehåller en efterfrågeprognos för 2 enheter (delar) den 15 juni.
+- Prognosmodell B innehåller en efterfrågeprognos för 3 enheter den 15 juni.
+- Prognosmodell C innehåller en efterfrågeprognos för 4 enheter den 15 juni.
+
+Den resulterande efterfrågeprognosen blir ett enda behov på 9 procent (2 + 3 + 4) den 15 juni.
+
+> [!NOTE]
+> Varje delmodell har egna parametrar och använder inte parameter av den överordnade prognosmodellen.
+
+### <a name="create-a-forecast-model"></a>Skapa en prognosmodell
+
+Gör så här om du vill skapa en prognosmodell.
+
+1. Gå till **Huvudplanering \> Inställningar \> Efterfrågeprognosticering \> Prognosmodeller**.
+1. Klicka på **Ny** i åtgärdsfönstret.
+1. Ställ in följande fält för den nya prognosmodellen:
+
+    - **Modell** – Ange en unik identifierare för värderingsmodellen.
+    - **Namn** – Ange ett beskrivande namn för modell.
+    - **Stoppat** – Vanligtvis ska du ställa in detta alternativ till *Nej*. Ställ in *Ja* bara om du vill förhindra redigering av alla prognosrader som tilldelas modellen.
+
+    > [!NOTE]
+    > Fältet **Inkludera i kassaflödesprognoser** och fälten på **Projekt** hör inte till huvudplaneringen. Därför kan du ignorera dem i det här sammanhanget. Du måste endast ta hänsyn till dem när du arbetar med prognoser för modulen **Projekthantering och redovisning**.
+
+### <a name="assign-submodels-to-a-forecast-model"></a>Tilldela undermodeller till en prognosmodell
+
+Följ dessa steg för att tilldela undermodeller till en prognosmodell.
+
+1. Gå till **Lagerhantering \> Inställningar \> Prognos \> Prognosmodeller**.
+1. Välj den prognosmodell som du vill ställa in en undermodell för i listfönstret.
+1. På snabbfliken **Delmodeller**, välj **Lägg till** om du vill lägga till rutnätet.
+1. I den nya raden anger du följande fält:
+
+    - **Delmodell** – Välj prognosmodellen som ska läggas till som delmodell. Prognosmodellen måste redan finnas och får inte ha några egna delmodeller.
+    - **Namn** – Ange ett beskrivande namn för delmodell. Det här namnet kan till exempel indikera delmodellens relation till den överordnade prognosmodellen.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

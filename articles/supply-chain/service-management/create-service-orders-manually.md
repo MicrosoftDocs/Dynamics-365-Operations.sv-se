@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2c10990f96fecf55e005650257f83c28423203b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 72b600bc59119a6304fa043240a34051435f8691
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001429"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470963"
 ---
 # <a name="create-service-orders-manually"></a>Skapa en serviceorder manuellt    
 
@@ -36,7 +36,7 @@ Du kan skapa serviceorder manuellt med hjälp av ett serviceavtal eller med form
 
 ## <a name="create-a-service-order-manually-from-a-service-agreement"></a>Skapa en serviceorder manuellt från serviceavtalet
 
-1.  Klicka på **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**.
+1.  Gå till **servicehantering** \> **allmänt** \> **serviceavtal** \> **serviceavtal**.
 
 2.  Välj ett serviceavtal eller skapa ett nytt.
 
@@ -46,7 +46,7 @@ Du kan skapa serviceorder manuellt med hjälp av ett serviceavtal eller med form
 
 1.  Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.
 
-2.  Tryck på CTRL+N om du vill skapa en ny serviceorder.
+2.  Välj **Ny** för att skapa en ny serviceorder.
 
 3.  Skapa serviceorderrader för serviceordern.
 
@@ -90,7 +90,7 @@ Du kan skapa en serviceorder från formuläret **försäljningsorder** genom att
     
       - I fältet **Kontakt-ID** väljer du person i kundens företag som ska kontaktas för denna serviceorder.
 
-6.  Klicka på **Nästa\>** och klicka sedan på **Slutför**.
+6.  Välj **Nästa \>** och välj sedan **Slutför**.
 
 
 ## <a name="see-also"></a>Se även

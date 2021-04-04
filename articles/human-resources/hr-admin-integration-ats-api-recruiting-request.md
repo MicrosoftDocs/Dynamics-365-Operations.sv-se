@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 572ee0755e331d19b41442e3614effb92db95a92
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: b89d257e3874ad7395c0a2c02f259c2f063aa8d0
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125435"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500632"
 ---
 # <a name="recruiting-request"></a>Rekryteringsbegäran
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Detta ämne beskriver entiteten Rekryteringsbegäran för Dynamics 365 Human Resources.
 
@@ -98,7 +100,8 @@ Beskriver en rekryteringsbegäran för ett jobb.
 | **ID-värde för jobbtyp**<br>_mshr_fk_jobtype_id_value<br>*GUID* | Skrivskydd<br>Valfritt<br>Sekundärnyckel: mshr_hcmjobtypeentityid tillhörande entiteten mshr_hcmjobtypenentity | Den systemgenererade, unika identifieraren för den jobbtyp som associeras med jobbet för rekryterandebegäran. |
 | **Befrielsestatus**<br>mshr_exemptstatus<br>Alternativuppsättningen *JobExemptStatus* | Skrivskydd<br>Valfritt | Status för FLSA-undantaget som baseras på jobbtypen. |
 | **Uppskattat startdatum**<br>mshr_estimatedstartdate<br>*Datum* | Skrivskydd<br>Obligatoriskt | Det uppskattade datum då en kandidat skulle påbörja arbetet. |
-| **Extern beskrivning**<br>mshr_externaldescription<br>*Sträng* | Skrivskydd<br>Valfritt | En beskrivning av jobbet/befattningen riktad till kandidaten. | Låg kompensationströskel<br>mshr_compensationlowthreshold<br>*Dubbel* | Skrivskydd<br>Valfritt | Nedre begränsning för kompensationsnivån. |
+| **Extern beskrivning**<br>mshr_externaldescription<br>*Sträng* | Skrivskydd<br>Valfritt | En beskrivning av jobbet/befattningen riktad till kandidaten. | 
+| **Låg kompensationströskel**<br>mshr_compensationlowthreshold<br>*Dubbel* | Skrivskydd<br>Valfritt | Nedre begränsning för kompensationsnivån. |
 | **Kontrollpunkt för kompensation**<br>mshr_compensationcontrolpoint<br>*Dubbel* | Skrivskydd<br>Valfritt | Kontrollpunkt för kompensationsnivån. |
 | **Hög kompensationströskel**<br>mshr_compensationhighthreshold<br>*Dubbel* | Skrivskydd<br>Valfritt | Övre begränsning för kompensationsnivån. |
 | **Kompensationsnivå**<br>mshr_compensationlevelid<br>*Sträng* | Skrivskydd<br>Valfritt | Kompensationsnivån för jobbet. Ett jobb kan konfigurera med flera kompensationsnivåer. Detta attribut anger den valda jobbkompensationsnivån för denna begäran. |
