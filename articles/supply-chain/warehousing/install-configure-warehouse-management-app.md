@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e2ffd12011b133bb13b69b49d6e894c6a887a8a0
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: e1e8c8b1464a38a0145cbdcdcb4882db00d3c4c1
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142333"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487035"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installera och ansluta mobilappen Hantering av distributionslager
 
@@ -31,11 +31,9 @@ ms.locfileid: "5142333"
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> I det här avsnittet beskrivs hur du konfigurerar den nya mobilappen Hantering av distributionslager, som för närvarande är en offentlig förhandsversion. Mer information om hur du konfigurerar en gamla distributionslagerappen finns i [Installera och koppla in distributionslagerappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Det här ämnet beskriver hur man konfigurerar mobilappen för distributionslagerhantering. Mer information om hur du konfigurerar en gamla distributionslagerappen finns i [Installera och koppla in distributionslagerappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-Den offentliga förhandsgranskningen av mobilappen Hantering av distributionslager finns tillgänglig för hämtning på Microsoft App Center. Den utgör en fristående komponent. Därför måste du hämta den på varje enskild enhet och sedan konfigurera den för anslutning till din Microsoft Dynamics 365 Supply Chain Management-miljö.
-
-I det här avsnittet beskrivs hur du installerar mobilappen Hantering av distributionslager på alla dina mobila enheter och konfigurerar den för anslutning till din Supply Chain Management-miljö. Du kan konfigurera varje enhet manuellt eller också kan du importera anslutningsinställningar via en fil eller genom att skanna en QR-kod.
+I det här avsnittet beskrivs hur du laddar ner och installerar mobilappen Hantering av distributionslager på alla dina mobila enheter och konfigurerar appen den för anslutning till din Supply Chain Management-miljö. Du kan konfigurera varje enhet manuellt eller också kan du importera anslutningsinställningar via en fil eller genom att skanna en QR-kod.
 
 ## <a name="system-requirements"></a>Systemkrav
 
@@ -53,17 +51,27 @@ Innan du kan använda appen måste relaterad funktion aktiveras i ditt system. A
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Skaffa mobilappen Hantering av distributionslager
 
-Använd någon av följande länkar för att hämta appen:
+För mindre distributioner kanske du vill installera appen från den relevanta butiken på respektive enhet och sedan manuellt konfigurera anslutningen till de miljöer du använder.
 
-- **Windows (UWP):** [App Center förhandsversion - Windows](https://go.microsoft.com/fwlink/?linkid=2154406)
+Vid större distributioner kan du automatisera appdistributionen och/eller konfigurationen, vilket kan vara bättre om du hanterar många enheter. Du kan till exempel använda en mobil enhetshantering och en lösning för mobilapphantering som [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Information om hur du använder Intune för att lägga till program finns i [Lägga till appar i Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
-    Eftersom det här programmet är en förhandsgranskning av programmet måste du göra några extra steg för att installera det. Mer information finns i [Installera en version från App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+### <a name="install-the-app-from-an-app-store"></a>Installera programmet från en appbutik
 
-- **Android:** [Förhandsgranskningsprogram för App Center - Android](https://go.microsoft.com/fwlink/?linkid=2154613)
+Det enklaste sättet att installera programmet på en enskild enhet är att installera det från en appbutik, som alltid innehåller den senaste, generellt tillgängliga versionen. Microsoft Intune kan också hämta program från appbutikerna. Använd någon av följande länkar när du installerar programmet från en appbutik:
 
-    Eftersom det här programmet är en förhandsgranskning av programmet måste du göra några extra steg för att installera det. Mer information finns i [Testa Android-appar](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+- **Windows (UWP):** [Lagerstyrning i Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 
-För mindre distributioner kanske du vill installera appen från den relevanta butiken på respektive enhet och sedan manuellt konfigurera anslutningen till de miljöer du använder. Du kan dock även automatisera appdistributionen och/eller konfigurationen. Den här metoden kan vara praktisk om du hanterar många enheter och använder en hanteringslösning för mobila enheter och mobil apphantering, t.ex. [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Information om hur du använder Intune för att lägga till program finns i [Lägga till appar i Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+- **Android:** [Lagerstyrning på Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
+
+### <a name="download-the-app-from-microsoft-app-center"></a>Hämta programmet från Microsoft App Center
+
+Ett alternativ till att installera från en appbutik är att hämta programmet från Microsoft App Center. App Center innehåller avinstallationsbara paket som du kan separat inläsning. Utöver den aktuella versionen kan du även hämta tidigare versioner med App Center, och du kan förse förhandsgranskningsversioner med kommande funktioner som du kan prova. Om du vill hämta aktuella, tidigare eller förhandsgranskningsversioner av mobilapplikationen Lagerstyrning från Microsoft App Center använder du någon av följande länkar:
+
+- **Windows (UWP):** [Lagerstyrning (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+    För instruktioner om hur du installerar ett nedladdat paket på en Windows-enhet och sedan ställer in nödvändiga certifikat, se [Installera en version från App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+
+- **Android:** [distributionslagerhantering (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+    Om du laddar ner en förhandsgranskningsversion krävs några extra steg för att installera den. Mer information finns i [Testa Android-appar](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Skapa ett webbtjänstprogram i Azure Active Directory
 

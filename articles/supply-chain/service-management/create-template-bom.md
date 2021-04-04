@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b34cc2e9921df6e3ef619e2b2adaf8d2069fbac
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5afcb8171b674281faf8100d5c01fdff8d6ff764
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974570"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470795"
 ---
 # <a name="create-a-template-bom"></a>Skapa en strukturlistemall   
 
@@ -35,7 +35,7 @@ Du kan skapa en strukturlistemall med följande metoder. För samtliga metoder g
 
 1.  Klicka på **servicehantering**\>**inställningar**\>**serviceobjekt**\>**Mallstrukturlista**.
 
-2.  Tryck på CTRL+N om du vill öppna formuläret **Skapa mallstrukturlista**.
+2.  Välj **Ny** om du vill öppna formuläret **Skapa mallstrukturlista**.
 
 3.  Under **Kopiera strukturlisterader från referens** markerar du alternativ **manuell**.
 
@@ -45,7 +45,7 @@ Du kan skapa en strukturlistemall med följande metoder. För samtliga metoder g
 
 6.  I fälten **Från datum** och **Till datum** anger du ett datumintervall under vilket strukturlistemallen är aktiv.
 
-7.  Klicka på **OK**.
+7.  Välj **OK**.
 
 En ny tom strukturlistemall skapas.
 
@@ -53,7 +53,7 @@ En ny tom strukturlistemall skapas.
 
 1.  Klicka på **servicehantering**\>**inställningar**\>**serviceobjekt**\>**Mallstrukturlista**.
 
-2.  Tryck på CTRL+N om du vill öppna formuläret **Skapa mallstrukturlista**.
+2.  Välj **Ny** om du vill öppna formuläret **Skapa mallstrukturlista**.
 
 3.  Under **Kopiera strukturlisterader från referens** markerar du alternativ **Mallstrukturlista**.
 
@@ -63,7 +63,7 @@ En ny tom strukturlistemall skapas.
 
 6.  I fälten **Från datum** och **Till datum** anger du ett datumintervall under vilket strukturlistemallen är aktiv.
 
-7.  Klicka på **OK**.
+7.  Välj **OK**.
 
 En ny strukturlistemall skapas med rader som motsvarar raderna i den ursprungliga strukturlistemallen.
 
@@ -71,7 +71,7 @@ En ny strukturlistemall skapas med rader som motsvarar raderna i den ursprunglig
 
 1.  Klicka på **servicehantering**\>**inställningar**\>**serviceobjekt**\>**Mallstrukturlista**.
 
-2.  Tryck på CTRL+N om du vill öppna formuläret **Skapa mallstrukturlista**.
+2.  Välj **Ny** om du vill öppna formuläret **Skapa mallstrukturlista**.
 
 3.  Under **Kopiera strukturlisterader från referens** väljer du **Strukturlista**.
 
@@ -81,7 +81,7 @@ En ny strukturlistemall skapas med rader som motsvarar raderna i den ursprunglig
 
 6.  I fälten **Från datum** och **Till datum** anger du ett datumintervall under vilket strukturlistemallen är aktiv.
 
-7.  Klicka på **OK**.
+7.  Välj **OK**.
 
 En ny strukturlistemall skapas med hjälp av rader motsvarande raderna i den strukturlista som listas i **strukturlistor**.
 
@@ -89,7 +89,7 @@ En ny strukturlistemall skapas med hjälp av rader motsvarande raderna i den str
 
 1.  Klicka på **servicehantering**\>**inställningar**\>**serviceobjekt**\>**Mallstrukturlista**.
 
-2.  Tryck på CTRL+N om du vill öppna formuläret **Skapa mallstrukturlista**.
+2.  Välj **Ny** om du vill öppna formuläret **Skapa mallstrukturlista**.
 
 3.  Under **Kopiera strukturlisterader från referens** väljer du **Produktion**.
 
@@ -99,7 +99,7 @@ En ny strukturlistemall skapas med hjälp av rader motsvarande raderna i den str
 
 6.  I fälten **Från datum** och **Till datum** anger du ett datumintervall under vilket strukturlistemallen är aktiv.
 
-7.  Klicka på **OK**.
+7.  Välj **OK**.
 
 En ny strukturlistemall skapas med hjälp av rader motsvarande raderna i den strukturlista som listas i **strukturlista**.
 
