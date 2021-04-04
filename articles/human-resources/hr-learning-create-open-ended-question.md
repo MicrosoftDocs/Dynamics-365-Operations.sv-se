@@ -16,25 +16,30 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ff0d604175916df290e5ee8695c36608aee871ca
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: f140690f3abe32ab3ba8b8ff4b5fca30b9fa51b2
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5114990"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467877"
 ---
-# <a name="create-an-open-ended-question"></a><span data-ttu-id="0af99-103">Skapa en öppen avslutad fråga</span><span class="sxs-lookup"><span data-stu-id="0af99-103">Create an open ended question</span></span>
+# <a name="create-an-open-ended-question"></a><span data-ttu-id="62443-103">Skapa en öppen avslutad fråga</span><span class="sxs-lookup"><span data-stu-id="62443-103">Create an open ended question</span></span>
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-<span data-ttu-id="0af99-104">Öppna frågor gör det möjligt för svarande att skriva ett eget svar.</span><span class="sxs-lookup"><span data-stu-id="0af99-104">Open-ended questions enable respondents to provide their own response.</span></span> <span data-ttu-id="0af99-105">Du kan kontrollera om att svaret är ett nummer, ett decimaltecken, ett datum, en kommentarer och så vidare.</span><span class="sxs-lookup"><span data-stu-id="0af99-105">You can control whether that response is a number, decimal, date, comment and so on.</span></span> <span data-ttu-id="0af99-106">I den här proceduren går vi igenom processen för att skapa en viss typ av fråga, en öppen fråga.</span><span class="sxs-lookup"><span data-stu-id="0af99-106">This procedure walks through the process of creating a specific type of question, an open-ended question.</span></span> <span data-ttu-id="0af99-107">Gå till Enkät > Design > Frågor för att initiera den här proceduren.</span><span class="sxs-lookup"><span data-stu-id="0af99-107">To begin this procedure, go to Questionnaire > Design > Questions.</span></span> <span data-ttu-id="0af99-108">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="0af99-108">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="62443-104">Öppna frågor gör det möjligt för svarande att skriva ett eget svar.</span><span class="sxs-lookup"><span data-stu-id="62443-104">Open-ended questions enable respondents to provide their own response.</span></span> <span data-ttu-id="62443-105">Du kan kontrollera om att svaret är ett nummer, ett decimaltecken, ett datum, en kommentarer och så vidare.</span><span class="sxs-lookup"><span data-stu-id="62443-105">You can control whether that response is a number, decimal, date, comment and so on.</span></span> <span data-ttu-id="62443-106">I den här proceduren går vi igenom processen för att skapa en viss typ av fråga, en öppen fråga.</span><span class="sxs-lookup"><span data-stu-id="62443-106">This procedure walks through the process of creating a specific type of question, an open-ended question.</span></span> <span data-ttu-id="62443-107">Gå till Enkät > Design > Frågor för att initiera den här proceduren.</span><span class="sxs-lookup"><span data-stu-id="62443-107">To begin this procedure, go to Questionnaire > Design > Questions.</span></span> <span data-ttu-id="62443-108">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="62443-108">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="0af99-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="0af99-109">Click New.</span></span>
-2. <span data-ttu-id="0af99-110">Välj en typ för att gruppera relaterade frågor.</span><span class="sxs-lookup"><span data-stu-id="0af99-110">Select a Type to group related questions.</span></span>
-3. <span data-ttu-id="0af99-111">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="0af99-111">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="0af99-112">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="0af99-112">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="0af99-113">Indatatyperna Text, Heltal, Realtal, datum, Tid och Notering används för öppna frågor.</span><span class="sxs-lookup"><span data-stu-id="0af99-113">Input types of Text, Integer, Real, Date, Time, and Note are used for open-ended questions.</span></span>  
-5. <span data-ttu-id="0af99-114">Välj ett alternativ i fältet Indatatyp.</span><span class="sxs-lookup"><span data-stu-id="0af99-114">In the Input type field, select an option.</span></span>
-    * <span data-ttu-id="0af99-115">Indatatyperna Text eller Notering används för en öppen fråga.</span><span class="sxs-lookup"><span data-stu-id="0af99-115">An input type of Text or Note is used for an open-ended question.</span></span>  
-6. <span data-ttu-id="0af99-116">Ange din fråga i fältet Text.</span><span class="sxs-lookup"><span data-stu-id="0af99-116">In the Text field, enter your question.</span></span>
+1. <span data-ttu-id="62443-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="62443-109">Click New.</span></span>
+2. <span data-ttu-id="62443-110">Välj en typ för att gruppera relaterade frågor.</span><span class="sxs-lookup"><span data-stu-id="62443-110">Select a Type to group related questions.</span></span>
+3. <span data-ttu-id="62443-111">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="62443-111">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="62443-112">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="62443-112">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="62443-113">Indatatyperna Text, Heltal, Realtal, datum, Tid och Notering används för öppna frågor.</span><span class="sxs-lookup"><span data-stu-id="62443-113">Input types of Text, Integer, Real, Date, Time, and Note are used for open-ended questions.</span></span>  
+5. <span data-ttu-id="62443-114">Välj ett alternativ i fältet Indatatyp.</span><span class="sxs-lookup"><span data-stu-id="62443-114">In the Input type field, select an option.</span></span>
+    * <span data-ttu-id="62443-115">Indatatyperna Text eller Notering används för en öppen fråga.</span><span class="sxs-lookup"><span data-stu-id="62443-115">An input type of Text or Note is used for an open-ended question.</span></span>  
+6. <span data-ttu-id="62443-116">Ange din fråga i fältet Text.</span><span class="sxs-lookup"><span data-stu-id="62443-116">In the Text field, enter your question.</span></span>
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
