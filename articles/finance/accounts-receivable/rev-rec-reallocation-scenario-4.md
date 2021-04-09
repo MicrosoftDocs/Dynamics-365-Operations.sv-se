@@ -2,11 +2,9 @@
 title: Omallokering vid intäktsredovisning – scenario 4
 description: Det här avsnittet innehåller en genomgång av ett omallokeringsscenario där en rad tas bort från en befintlig, delvis fakturerad försäljningsorder. Det här scenariot ger samma resultat, oavsett om raden tas bort från försäljningsordern eller anges till annullerad status.
 author: kweekley
-manager: aolson
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 50a2d0d2ca28d9b62713502700f2c4bd2e42751e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2b53145ac1ef4b277afadb4262fd1e704a2e7662
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5238314"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830674"
 ---
 # <a name="revenue-recognition-reallocation--scenario-4"></a>Omallokering vid intäktsredovisning – scenario 4
 
