@@ -20,15 +20,13 @@
                   href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: Platform updates för 10.0.16 (februari 2021)
                   href: get-started/whats-new-platform-updates-10-0-16.md
-                - name: Platform updates för 10.0.15 (januari 2021)
-                  href: get-started/whats-new-platform-updates-10-0-15.md
-            - name: Borttagna eller utfasade funktioner
+            - name: Borttagna eller inaktuella funktioner
               items:
-                - name: Borttagna eller utfasade funktioner – startsida
+                - name: Borttagna eller inaktuella funktioner – startsida
                   href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
                 - name: Borttagna eller utfasade plattformsfunktioner
                   href: get-started/removed-deprecated-features-platform-updates.md
-                - name: Borttagna eller utfasade funktioner i tidigare versioner
+                - name: Borttagna eller inaktuella funktioner i tidigare versioner
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: AX 2012-funktioner som har senarelagts
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
@@ -226,6 +224,10 @@
                               href: data-entities/dual-write/inventory-availability.md
                             - name: 'Integrerad arbetare, jobb och befattning'
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: Part och global adressbok
+                              href: data-entities/dual-write/party-gab.md
+                            - name: Använda Power Portal med datamodellen för part
+                              href: data-entities/dual-write/party-gab-portal.md
                             - name: Note-integration
                               href: data-entities/dual-write/notes-integration.md
                             - name: Mappningsreferens
@@ -526,13 +528,15 @@
                   items:
                     - name: Konfigurera lokala projekt i LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Konfigurera och distribuera lokala miljöer
+                    - name: Ställa in och distribuera lokala miljöer (Platform update 41 och senare)
+                      href: deployment/setup-deploy-on-premises-pu41.md
+                    - name: Ställa in och distribuera lokala miljöer (Platform update 12 till och med 40)
                       href: deployment/setup-deploy-on-premises-pu12.md
-                    - name: Installationsanvisningar för kanalkomponenter i Retail i en lokal miljö
+                    - name: Installationssteg för kanalkomponenter i Retail i en lokal miljö
                       href: deployment/deploy-retail-onprem.md
                     - name: Utveckla och distribuera anpassade modeller i lokala miljöer
                       href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: Miljöunderhåll
+                - name: Miljöåtgärder
                   items:
                     - name: Uppdatera en lokal distribution
                       href: deployment/apply-updates-on-premises.md
@@ -542,6 +546,8 @@
                       href: user-interface/client-disconnected.md
                     - name: Konfigurera endast batchvisa och interaktiva AOS-noder i lokala distributioner
                       href: deployment/onprem-batchonly.md
+                    - name: Konfigurera hög tillgänglighet för SSRS-noder (SQL Server Reporting Services)
+                      href: deployment/onprem-SSRSHA.md
                     - name: Konfigurera proxyservrar för lokala miljöer
                       href: deployment/onprem-reverseproxy.md
                     - name: Lokal diagnostik
@@ -1060,7 +1066,7 @@
                   href: lifecycle-services/whats-new-lcs.md
                 - name: Kända problem
                   href: lifecycle-services/known-issues.md
-                - name: Borttagna eller utfasade funktioner i Lifecycle Services (LCS)
+                - name: Borttagna eller inaktuella funktioner i Lifecycle Services (LCS)
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Användarhandbok för Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
@@ -1136,27 +1142,31 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform-integration
           items:
-            - name: Microsoft Power Platform-integration med Finance and Operations
-              href: power-platform/overview.md
-            - name: Översikt över tillägg
-              href: power-platform/add-ins-overview.md
-            - name: Enhetsmodellering
-              href: power-platform/entity-modeling.md
-            - name: Livscykelhantering för program
-              href: power-platform/application-lifecycle-management.md
-            - name: Finance and Operations- och Dataverse-administratörsreferens
-              href: power-platform/admin-reference.md
-            - name: Power Apps-portaler med Finance and Operations
-              href: power-platform/power-portal-reference.md
-            - name: Vanliga frågor om virtuella Finance and Operations-enheter
-              href: power-platform/faq.md
-        - name: Mobilplattform
+            - name: Virtuella enheter
+              items:
+                - name: Microsoft Power Platform-integration med Finance and Operations
+                  href: power-platform/overview.md
+                - name: Enhetsmodellering
+                  href: power-platform/entity-modeling.md
+                - name: Livscykelhantering för program
+                  href: power-platform/application-lifecycle-management.md
+                - name: Finance and Operations- och Dataverse-administratörsreferens
+                  href: power-platform/admin-reference.md
+                - name: Power Apps-portaler med Finance and Operations
+                  href: power-platform/power-portal-reference.md
+                - name: Vanliga frågor om virtuella Finance and Operations-enheter
+                  href: power-platform/faq.md
+            - name: Tillägg
+              items:
+                - name: Översikt över tillägg
+                  href: power-platform/add-ins-overview.md
+        - name: Mobil plattform
           items:
-            - name: Mobila plattformsresurser
+            - name: Resurser för mobil plattform
               href: mobile-apps/platform/mobile-platform-home-page.md
             - name: Kom i gång
               items:
-                - name: Kom i gång med mobilplattformen
+                - name: Kom i gång med mobila plattformen
                   href: mobile-apps/platform/mobile-platform-getting-started.md
                 - name: Överväganden vid arkitektur och design
                   href: mobile-apps/platform/mobile-platform-architecture.md
@@ -1390,6 +1400,8 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Självstudier för Regression Suite Automation Tool
               href: perf-test/rsat/rsat-tutorial.md
+            - name: Konfigurera icke-administratörsanvändare
+              href: perf-test/rsat/rsat-configure-nonadmin.md
             - name: Bästa praxis
               href: perf-test/rsat/rsat-best-practices.md
             - name: Dataagnostiska tester med hjälp av Regression Suite Automation Tool
@@ -1660,7 +1672,7 @@
                   href: dev-tools/update-development-tools.md
             - name: Utfasningar
               items:
-                - name: Borttagna eller utfasade funktioner
+                - name: Borttagna eller inaktuella funktioner
                   href: migration-upgrade/deprecated-features.md
                 - name: Avskrivning av metoder och metadataelement
                   href: migration-upgrade/deprecation-deletion-apis.md
