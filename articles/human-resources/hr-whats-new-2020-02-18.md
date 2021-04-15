@@ -2,11 +2,9 @@
 title: Nyheter och ändringar i Dynamics 365 Human Resources (18 februari 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 18 februari 2020.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 66ffd9d0ffcf0e8466be785274ef5fb0fceda7a9
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 6c28d0dc76195cc0aedc132f348a229af0421c43
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5463800"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5790438"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (18 februari 2020)
 

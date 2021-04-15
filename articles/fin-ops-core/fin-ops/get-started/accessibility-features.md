@@ -2,7 +2,6 @@
 title: Hjälpmedelsfunktioner
 description: Det här avsnittet beskriver de funktioner som hjälper användare med olika handikapp.
 author: TLeforMicrosoft
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 45395113944af6f02d0afb67284dc0d42bdedca4
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 4cf5a5fc2d40e66d189d281b343d1525edf7e8c5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562445"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744133"
 ---
 # <a name="accessibility-features"></a>Hjälpmedelsfunktioner
 
@@ -53,7 +52,7 @@ Varje åtgärd som finns på en sida kan nås från tangentbordet via fliksekven
 
 Du ska köra åtgärden **Meddelandelogg för e-post** som visas i gruppen **E-postmeddelande** på fliken **Försäljningsorder** i åtgärdsfönstret.
 
-![Meddelandeloggåtgärd för e-post i åtgärdsfönstret](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg ""Meddelandeloggåtgärd" för e-post i åtgärdsfönstret")
+![Meddelandeloggåtgärd för e-post i åtgärdsfönstret](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "&quot;Meddelandeloggåtgärd&quot; för e-post i åtgärdsfönstret")
 
 Ett alternativ är att använda tangentbordet. Tryck på Ctrl+F6 för att flytta fokus till åtgärdsfönstret och tryck sedan på Tabb flera gånger för att bläddra igenom alla flikar och åtgärder tills åtgärden **Meddelandelogg för e-post** är i fokus.
 
@@ -79,7 +78,7 @@ Vid vardaglig systemanvändning krävs inte alla fält för att utföra vanliga 
 
 Du upptäcker emellertid kanske att vissa fält som du ofta använder för att utföra uppgifter som inte finns med i den förvalda fliksekvensen. Om du använder Windows skärmläsare kan du då använda tangentbordskommandon i Windows skärmläsare för att nå dessa fält och granska innehållet. Alternativt kan du aktivera alternativet **Utökad fliksekvens** på sidan **Alternativ**. Det här alternativet inkluderar samtliga redigerbara och skrivskyddade fält i fliksekvensen. Du kan sedan använda sidoanpassningen för att skapa en anpassad fliksekvens och utelämna fält som inte behöver ingå i fliksekvensen. Mer information om anpassning finns i [Anpassa användarupplevelsen](personalize-user-experience.md).
 
-!["Utökade alternativ för tabbsekvens"](media/8c0f12bbb3f26032997ef0ba95d89b6a.png ""Utökade alternativ för tabbsekvens"")
+!["Utökade alternativ för tabbsekvens"](media/8c0f12bbb3f26032997ef0ba95d89b6a.png "&quot;Utökade alternativ för tabbsekvens&quot;")
 
 ## <a name="form-patterns"></a>Formulärmönster
 

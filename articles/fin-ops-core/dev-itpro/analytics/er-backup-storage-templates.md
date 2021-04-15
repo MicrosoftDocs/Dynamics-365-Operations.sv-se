@@ -2,7 +2,6 @@
 title: Säkerhetslagring av ER-mallar
 description: Det här avsnittet innehåller information om hur du använder säkerhetslagring för elektroniska rapporter (ER) för återställning av mallar.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d1bf2f13833b4441812b1c5326f897415c752091
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: b41760bb58cbef66146b3f1af6f30c6a35a18727
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5565635"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743857"
 ---
 # <a name="backup-storage-of-er-templates"></a>Säkerhetslagring av ER-mallar
 

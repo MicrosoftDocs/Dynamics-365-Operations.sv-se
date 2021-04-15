@@ -1,8 +1,7 @@
 ---
 title: Konfigurera adressböcker
-description: Använd den här proceduren och besluten, som du har gjort i planeringen av konfigurationen för den globala adressboken och det ytterligare adressbokavsnittet för att ställa in ytterligare adressböcker för din organisation.
+description: Använd den här proceduren när du vill ställa in fler adressböcker för din organisation.
 author: msftbrking
-manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e3f415c7e1c05d36d22baf7a4e6119a25b1e9916
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 176492186a1b0dd589b284269656f8aa28e1eaec
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570298"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747523"
 ---
 # <a name="configure-address-books"></a>Konfigurera adressböcker
 

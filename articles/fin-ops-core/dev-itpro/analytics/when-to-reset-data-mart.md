@@ -2,7 +2,6 @@
 title: När du ska återställa en data mart
 description: Det här avsnittet innehåller en lista med de omständigheter som kan förbättras genom att du återställer data och omständigheter där det är viktigt att återställa data.
 author: jinniew
-manager: AnnBe
 ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 71324d4aa2d20dd6ae4729412a017d130ab0144f
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: c88994a336528650bf8ab6e239c873fa6cd36c46
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563750"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754154"
 ---
 # <a name="when-to-reset-a-data-mart"></a>När du ska återställa en data mart
 
