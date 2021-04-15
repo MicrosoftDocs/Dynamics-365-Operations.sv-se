@@ -2,11 +2,9 @@
 title: Skicka vidare returnerade artiklar för inspektion
 description: När du registrerar en returnerad artikel kan du fastställa att den ska skickas på inspektion innan den returneras till ett lager eller avyttras på något annat sätt.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSJournalTable
 audience: Application User
@@ -17,43 +15,43 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04b27a5560b6126fde3028f653a89059bb765844
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bdee1ed2c7e98843e5dcfe9669e6a7c1eb11173c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254975"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810688"
 ---
-# <a name="pass-returned-items-on-to-inspection"></a><span data-ttu-id="17f77-103">Skicka vidare returnerade artiklar för inspektion</span><span class="sxs-lookup"><span data-stu-id="17f77-103">Pass returned items on to inspection</span></span> 
+# <a name="pass-returned-items-on-to-inspection"></a><span data-ttu-id="61e21-103">Skicka vidare returnerade artiklar för inspektion</span><span class="sxs-lookup"><span data-stu-id="61e21-103">Pass returned items on to inspection</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="17f77-104">När du registrerar en returnerad artikel kan du fastställa att den ska skickas på inspektion innan den returneras till ett lager eller avyttras på något annat sätt.</span><span class="sxs-lookup"><span data-stu-id="17f77-104">When registering a returned item, you may determine that an item should be sent for inspection before it is returned to inventory or disposed of in some other way.</span></span>
+<span data-ttu-id="61e21-104">När du registrerar en returnerad artikel kan du fastställa att den ska skickas på inspektion innan den returneras till ett lager eller avyttras på något annat sätt.</span><span class="sxs-lookup"><span data-stu-id="61e21-104">When registering a returned item, you may determine that an item should be sent for inspection before it is returned to inventory or disposed of in some other way.</span></span>
 
-1.  <span data-ttu-id="17f77-105">Klicka på **Lagerhantering** \> **Journaler** \> **Artikelinförsel** \> **Artikelinförsel**.</span><span class="sxs-lookup"><span data-stu-id="17f77-105">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Item arrival**.</span></span>
+1.  <span data-ttu-id="61e21-105">Klicka på **Lagerhantering** \> **Journaler** \> **Artikelinförsel** \> **Artikelinförsel**.</span><span class="sxs-lookup"><span data-stu-id="61e21-105">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Item arrival**.</span></span>
     
-    <span data-ttu-id="17f77-106">\-eller-</span><span class="sxs-lookup"><span data-stu-id="17f77-106">\-or-</span></span>
+    <span data-ttu-id="61e21-106">\-eller-</span><span class="sxs-lookup"><span data-stu-id="61e21-106">\-or-</span></span>
     
-    <span data-ttu-id="17f77-107">Klicka på **Lagerhantering** \> **Journaler** \> **Artikelinförsel** \> **Produktionsinleverans**.</span><span class="sxs-lookup"><span data-stu-id="17f77-107">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Production input**.</span></span>
+    <span data-ttu-id="61e21-107">Klicka på **Lagerhantering** \> **Journaler** \> **Artikelinförsel** \> **Produktionsinleverans**.</span><span class="sxs-lookup"><span data-stu-id="61e21-107">Click **Inventory management** \> **Journals** \> **Item arrival** \> **Production input**.</span></span>
 
-2.  <span data-ttu-id="17f77-108">I formuläret **Platsjournal** registrera inleveransen av en artikel på normalt sätt</span><span class="sxs-lookup"><span data-stu-id="17f77-108">On the **Location journal** form, register the receipt of an item as usual.</span></span>
+2.  <span data-ttu-id="61e21-108">I formuläret **Platsjournal** registrera inleveransen av en artikel på normalt sätt</span><span class="sxs-lookup"><span data-stu-id="61e21-108">On the **Location journal** form, register the receipt of an item as usual.</span></span>
     
 
     > [!NOTE]
-    > <P><span data-ttu-id="17f77-109">Information om hur du registrerar inleverans av returnerade artiklar finns i <A href="register-the-receipt-of-returned-items.md">registrera inleverans av returnerade artiklar</A></span><span class="sxs-lookup"><span data-stu-id="17f77-109">For information about registering the receipt of returned items, see <A href="register-the-receipt-of-returned-items.md">Register the receipt of returned items</A></span></span></P>
+    > <P><span data-ttu-id="61e21-109">Information om hur du registrerar inleverans av returnerade artiklar finns i <A href="register-the-receipt-of-returned-items.md">registrera inleverans av returnerade artiklar</A></span><span class="sxs-lookup"><span data-stu-id="61e21-109">For information about registering the receipt of returned items, see <A href="register-the-receipt-of-returned-items.md">Register the receipt of returned items</A></span></span></P>
 
 
 
-3.  <span data-ttu-id="17f77-110">På fliken **standardvärden** i området **Hanteringssätt** markerar du rutan **karantänhantering**.</span><span class="sxs-lookup"><span data-stu-id="17f77-110">On the **Default values** tab, in the **Mode of handling** area, select the **Quarantine management** box.</span></span>
+3.  <span data-ttu-id="61e21-110">På fliken **standardvärden** i området **Hanteringssätt** markerar du rutan **karantänhantering**.</span><span class="sxs-lookup"><span data-stu-id="61e21-110">On the **Default values** tab, in the **Mode of handling** area, select the **Quarantine management** box.</span></span>
 
-<span data-ttu-id="17f77-111">Då skapas en karantänorder och personen eller avdelningen som utför inspektioner svarar på ordern via formuläret **Karantänorder**.</span><span class="sxs-lookup"><span data-stu-id="17f77-111">This will prompt the system to create a quarantine order, and the person or department that performs inspections will respond to this order using the **Quarantine order** form.</span></span>
+<span data-ttu-id="61e21-111">Då skapas en karantänorder och personen eller avdelningen som utför inspektioner svarar på ordern via formuläret **Karantänorder**.</span><span class="sxs-lookup"><span data-stu-id="61e21-111">This will prompt the system to create a quarantine order, and the person or department that performs inspections will respond to this order using the **Quarantine order** form.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="17f77-112">Se även</span><span class="sxs-lookup"><span data-stu-id="17f77-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="61e21-112">Se även</span><span class="sxs-lookup"><span data-stu-id="61e21-112">See also</span></span>
 
-[<span data-ttu-id="17f77-113">Föra returnerade artiklar genom inspektionen</span><span class="sxs-lookup"><span data-stu-id="17f77-113">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
+[<span data-ttu-id="61e21-113">Föra returnerade artiklar genom inspektionen</span><span class="sxs-lookup"><span data-stu-id="61e21-113">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
 
-[<span data-ttu-id="17f77-114">Ange hur returnerade artiklar ska avyttras</span><span class="sxs-lookup"><span data-stu-id="17f77-114">Specify how to dispose of returned items</span></span>](specify-how-to-dispose-of-returned-items.md)
+[<span data-ttu-id="61e21-114">Ange hur returnerade artiklar ska avyttras</span><span class="sxs-lookup"><span data-stu-id="61e21-114">Specify how to dispose of returned items</span></span>](specify-how-to-dispose-of-returned-items.md)
 
 
 

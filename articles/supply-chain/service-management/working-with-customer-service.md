@@ -2,11 +2,9 @@
 title: Arbeta med kundtjänst – översikt
 description: Kundservice ger stöd åt yrkesorganisationer, serviceföretag och tillverkningsserviceföretag.
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable, SMADispatchBoard
 audience: Application User
@@ -17,33 +15,33 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 654c33c890197f458c0cfb32bedeaf2a24cd073a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1b83b36102cc1c0f8ed9c08920ac3817435a6b24
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5239336"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5807762"
 ---
-# <a name="work-with-customer-service-overview"></a><span data-ttu-id="9f88c-103">Arbeta med kundtjänst – översikt</span><span class="sxs-lookup"><span data-stu-id="9f88c-103">Work with customer service overview</span></span>
+# <a name="work-with-customer-service-overview"></a><span data-ttu-id="76056-103">Arbeta med kundtjänst – översikt</span><span class="sxs-lookup"><span data-stu-id="76056-103">Work with customer service overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="9f88c-104">Kundservice ger stöd åt yrkesorganisationer, serviceföretag och tillverkningsserviceföretag.</span><span class="sxs-lookup"><span data-stu-id="9f88c-104">Customer service supports professional, service-based companies and manufacturing service organizations.</span></span>
+<span data-ttu-id="76056-104">Kundservice ger stöd åt yrkesorganisationer, serviceföretag och tillverkningsserviceföretag.</span><span class="sxs-lookup"><span data-stu-id="76056-104">Customer service supports professional, service-based companies and manufacturing service organizations.</span></span>
 
-<span data-ttu-id="9f88c-105">Kundservice omfattar följande funktioner:</span><span class="sxs-lookup"><span data-stu-id="9f88c-105">Customer service includes the following functionality:</span></span>
+<span data-ttu-id="76056-105">Kundservice omfattar följande funktioner:</span><span class="sxs-lookup"><span data-stu-id="76056-105">Customer service includes the following functionality:</span></span>
 
-  - <span data-ttu-id="9f88c-106">Viktiga processer för servicehantering såsom att arbeta med serviceavtal, serviceorder och hantering av returer.</span><span class="sxs-lookup"><span data-stu-id="9f88c-106">Key processes for service management, such as service agreements, service orders, and return management</span></span>
+  - <span data-ttu-id="76056-106">Viktiga processer för servicehantering såsom att arbeta med serviceavtal, serviceorder och hantering av returer.</span><span class="sxs-lookup"><span data-stu-id="76056-106">Key processes for service management, such as service agreements, service orders, and return management</span></span>
 
-  - <span data-ttu-id="9f88c-107">Avancerad inställning för reparationshantering som omfattar reparationsspårning och strukturlisteversioner.</span><span class="sxs-lookup"><span data-stu-id="9f88c-107">An advanced setup for repair management that includes tracking of repairs and versioning for bills of materials (BOMs)</span></span>
+  - <span data-ttu-id="76056-107">Avancerad inställning för reparationshantering som omfattar reparationsspårning och strukturlisteversioner.</span><span class="sxs-lookup"><span data-stu-id="76056-107">An advanced setup for repair management that includes tracking of repairs and versioning for bills of materials (BOMs)</span></span>
 
-  - <span data-ttu-id="9f88c-108">Stöd för medarbetarroller, till exempel servicechef, klarerare och servicetekniker eller servicekonsult.</span><span class="sxs-lookup"><span data-stu-id="9f88c-108">Support for employee roles, such as service manager, dispatcher, and service technician or service consultant</span></span>
+  - <span data-ttu-id="76056-108">Stöd för medarbetarroller, till exempel servicechef, klarerare och servicetekniker eller servicekonsult.</span><span class="sxs-lookup"><span data-stu-id="76056-108">Support for employee roles, such as service manager, dispatcher, and service technician or service consultant</span></span>
 
-  - <span data-ttu-id="9f88c-109">Serviceabonnemang som genererar återkommande intäkter oberoende av servicefrekvens.</span><span class="sxs-lookup"><span data-stu-id="9f88c-109">Service subscriptions, which can generate periodic streams of revenue that are independent of the frequency of service</span></span>
+  - <span data-ttu-id="76056-109">Serviceabonnemang som genererar återkommande intäkter oberoende av servicefrekvens.</span><span class="sxs-lookup"><span data-stu-id="76056-109">Service subscriptions, which can generate periodic streams of revenue that are independent of the frequency of service</span></span>
 
-  - <span data-ttu-id="9f88c-110">Avtal om servicenivåer till stöd för en differentierad kundbas.</span><span class="sxs-lookup"><span data-stu-id="9f88c-110">Service-level agreements that support a differentiated customer base</span></span>
+  - <span data-ttu-id="76056-110">Avtal om servicenivåer till stöd för en differentierad kundbas.</span><span class="sxs-lookup"><span data-stu-id="76056-110">Service-level agreements that support a differentiated customer base</span></span>
 
-<span data-ttu-id="9f88c-111">Ämnena i det här avsnittet ger en översikt av affärsprocesserna för kund och varje affärsprocesskomponent.</span><span class="sxs-lookup"><span data-stu-id="9f88c-111">The topics in this section provide an overview of the Customer service business process and each business process component.</span></span> <span data-ttu-id="9f88c-112">Det anger även formulär som är kopplade till respektive affärsprocesskomponent och beskriverassociera de uppgifter som är associerande med de olika affärsprocesskomponenterna.</span><span class="sxs-lookup"><span data-stu-id="9f88c-112">They also list the forms that are associated with each business process component, and they discuss the tasks that are associated with each business process component.</span></span>
+<span data-ttu-id="76056-111">Ämnena i det här avsnittet ger en översikt av affärsprocesserna för kund och varje affärsprocesskomponent.</span><span class="sxs-lookup"><span data-stu-id="76056-111">The topics in this section provide an overview of the Customer service business process and each business process component.</span></span> <span data-ttu-id="76056-112">Det anger även formulär som är kopplade till respektive affärsprocesskomponent och beskriverassociera de uppgifter som är associerande med de olika affärsprocesskomponenterna.</span><span class="sxs-lookup"><span data-stu-id="76056-112">They also list the forms that are associated with each business process component, and they discuss the tasks that are associated with each business process component.</span></span>
 
 
 
