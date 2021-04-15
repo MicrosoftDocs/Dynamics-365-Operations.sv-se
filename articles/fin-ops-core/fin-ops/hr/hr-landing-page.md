@@ -1,8 +1,7 @@
 ---
-title: Personal – översikt
-description: Personal förenklar många vanliga arkiveringsaktiviteter och automatiserar ett antal processer relaterade till personalen i organisationen. Den innehåller också ett ramverk för personal för hantering av tillsynsområden. Dessa områden inkluderar rekrytering och personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering.
+title: Human Resources – översikt
+description: Mänskliga resurser effektiviserar rutinmässiga bokföringsuppgifter, automatiserar processer relaterade till bemanning i din organisation och ger ett ramverk för personalavdelningens hantering av de områden de ansvarar för.
 author: andreabichsel
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -14,14 +13,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fb04ed91c28dc87bdcf4e218cbeaf99f5442ab4
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: d6f70e7626100646feb12e8544b5ab943097b1a3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566708"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752190"
 ---
-# <a name="human-resources-overview"></a>Personal – översikt
+# <a name="human-resources-overview"></a>Human Resources – översikt
 
 [!include [banner](../includes/banner.md)]
 

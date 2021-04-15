@@ -2,11 +2,9 @@
 title: Sidor och moduler för kontohantering
 description: Det här ämnet omfattar för kontohantering och moduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 29523d03fb687684dae7d0ce08208905cce702df
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: df4959a61f1b2948c62a558523a848ff8b2fe0a8
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206641"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796304"
 ---
 # <a name="account-management-pages-and-modules"></a>Sidor och moduler för kontohantering
 
@@ -51,9 +49,9 @@ På sidan för orderhistorik används modulen orderhistorik för att visa alla n
 
 Sidan orderdetaljer innehåller detaljerad information för varje order och du öppnar den från sidan orderhistorik. Den använder modulen orderdetaljer, som kräver försäljnings-ID eller transaktions-ID för att hämta orderdetaljer.
 
-### <a name="user-profile-page"></a>Sidan användarprofil
+### <a name="my-profile-page"></a>Min profilsida
 
-På sidan användarprofil visas information om användarkonton, t.ex. användarens namn och e-postadress. Den använder informationen från användarprofilen och redigeringsmodulerna för användarprofiler. Även om e-postadressen inte kan tas bort, kan den redigera. På sidan användarprofil visas även användarinställningar som gör det möjligt för en användare att anmäla sig eller välja bort vissa funktioner, till exempel anpassning av rekommendationslistor. 
+På min profilsida visas användarens kontoprofilinformation med hjälp av kontoprofilmodulen. På sidan visas den e-postadress som är kopplad till användarens konto, samt vilka inställningar som har ställts in för kontot. Om du ställer in anpassade kundattribut visas även dessa attribut i avsnittet "Ytterligare information". Användarna kan redigera sina namn, inställningar eller ytterligare information (om sådan finns tillgänglig).
 
 ### <a name="user-address-page"></a>Sidan användaradress
 

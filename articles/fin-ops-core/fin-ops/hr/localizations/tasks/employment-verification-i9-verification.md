@@ -2,7 +2,6 @@
 title: Anställningverifiering av i9-verifiering
 description: Immigration Reform and Control Act kräver att amerikanska arbetsgivare verifierar nyanställdas anställningskvalifikationer.
 author: ShielaSogge
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8bfd6a5c26c6e68d10918bdc4e4144b640035b32
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 92480a8800571d477fcf00063e3303172274e595
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566000"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752114"
 ---
 # <a name="employment-verification-i9-verification"></a>Anställningverifiering av i9-verifiering
 

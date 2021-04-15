@@ -2,11 +2,9 @@
 title: Översikt över startsidan
 description: Det här ämnet innehåller en översikt över startsidan i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 11c440663214f4991770390c0757c92ef02755f5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f083115f5dc0cfe0e9ba4786bf79ec4083ab7e78
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244776"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792205"
 ---
 # <a name="home-page-overview"></a>Översikt över startsidan
 
 [!include [banner](includes/banner.md)]
 
 Det här ämnet innehåller en översikt över startsidan i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 Startsidan är den standardsida som köparen går till när han eller hon besöker en näthandelssajt. Den här sidan visar vanligtvis produkter och erbjudanden med hjälp av en kombination av marknadsföringsmoduler. Startsidan ska vara rik med bilder och text för att hålla köparen sysselsatt.
 

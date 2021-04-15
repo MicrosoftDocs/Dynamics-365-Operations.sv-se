@@ -2,7 +2,6 @@
 title: Konfigurera ER-modellmappningar som är beroende av landkontext
 description: I det här avsnittet beskrivs hur du kan ställa in ER-modellmappningar så att de är beroende av land/region i den juridiska personen som styr deras användning.
 author: NickSelin
-manager: AnnBe
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 48d2e3c81d038cc55f6f100f3081561506946199
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 83cd99350f58a56d121d694393edc4eb98af728a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562296"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753778"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Konfigurera ER-modellmappningar som är beroende av landkontext
 

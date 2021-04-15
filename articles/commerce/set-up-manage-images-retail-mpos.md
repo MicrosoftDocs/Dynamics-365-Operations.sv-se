@@ -2,11 +2,9 @@
 title: Ställa in och hantera bilder för Modern POS (MPOS)
 description: Den här artikeln beskriver stegen som ingår i hur du ställer in och hanterar avbildningar för de olika entiteterna som visas i Modern POS (MPOS).
 author: athinesh99
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1139d4c826b6c35f1a6660d3880449e495473441
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e066deedcdb02237d6f492047e19100255dab84e
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5264514"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795559"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Ställa in och hantera bilder för Modern POS (MPOS)
 

@@ -2,7 +2,6 @@
 title: Utforma konfigurationer för att skapa dokument som omfattar programdata
 description: Det här ämnet beskriver hur du utformar elektroniska rapporteringskonfigurationer (ER) för att skapa ett elektroniskt dokument. (Del 1 - Importera konfigurationer).
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 217eca9bd1502d4327857720fb2d32a3ec3508ef
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 9d3f528d48f345ec4b5cc2a46d7740cb6d0a36cd
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563184"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751092"
 ---
 # <a name="design-configurations-to-generate-documents-that-have-application-data"></a>Utforma konfigurationer för att skapa dokument som omfattar programdata
 
