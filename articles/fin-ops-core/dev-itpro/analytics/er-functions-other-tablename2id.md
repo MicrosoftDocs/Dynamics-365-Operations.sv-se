@@ -2,7 +2,6 @@
 title: TABLENAME2ID ER-funktion
 description: Det här avsnittet innehåller information om hur funktionen TABLENAME2ID elektronisk rapportering (ER) används.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
@@ -16,48 +15,48 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 49370af4ebb7552dd3aff4512890fd93fa67c72d
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 0f94d00d9d40830d895e906ffbaa2a236f1efc43
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563280"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746565"
 ---
-# <a name="tablename2id-er-function"></a><span data-ttu-id="1fb9c-103">TABLENAME2ID ER-funktion</span><span class="sxs-lookup"><span data-stu-id="1fb9c-103">TABLENAME2ID ER function</span></span>
+# <a name="tablename2id-er-function"></a><span data-ttu-id="02db1-103">TABLENAME2ID ER-funktion</span><span class="sxs-lookup"><span data-stu-id="02db1-103">TABLENAME2ID ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="1fb9c-104">`TABLENAME2ID`-funktionen returnerar en numerisk representation av tabell-ID för det angivna tabellnamnet som värdet *heltal*.</span><span class="sxs-lookup"><span data-stu-id="1fb9c-104">The `TABLENAME2ID` function returns a numeric representation of the table ID for the specified table name as an *Integer* value.</span></span>
+<span data-ttu-id="02db1-104">`TABLENAME2ID`-funktionen returnerar en numerisk representation av tabell-ID för det angivna tabellnamnet som värdet *heltal*.</span><span class="sxs-lookup"><span data-stu-id="02db1-104">The `TABLENAME2ID` function returns a numeric representation of the table ID for the specified table name as an *Integer* value.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="1fb9c-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="1fb9c-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="02db1-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="02db1-105">Syntax</span></span>
 
 ```vb
 TABLENAME2ID (text)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="1fb9c-106">Argument</span><span class="sxs-lookup"><span data-stu-id="1fb9c-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="02db1-106">Argument</span><span class="sxs-lookup"><span data-stu-id="02db1-106">Arguments</span></span>
 
-<span data-ttu-id="1fb9c-107">`text`: *Sträng*</span><span class="sxs-lookup"><span data-stu-id="1fb9c-107">`text`: *String*</span></span>
+<span data-ttu-id="02db1-107">`text`: *Sträng*</span><span class="sxs-lookup"><span data-stu-id="02db1-107">`text`: *String*</span></span>
 
-<span data-ttu-id="1fb9c-108">Ett textvärde som representerar ett giltigt tabellnamn.</span><span class="sxs-lookup"><span data-stu-id="1fb9c-108">A text value that represents a valid table name.</span></span>
+<span data-ttu-id="02db1-108">Ett textvärde som representerar ett giltigt tabellnamn.</span><span class="sxs-lookup"><span data-stu-id="02db1-108">A text value that represents a valid table name.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="1fb9c-109">Returvärden</span><span class="sxs-lookup"><span data-stu-id="1fb9c-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="02db1-109">Returvärden</span><span class="sxs-lookup"><span data-stu-id="02db1-109">Return values</span></span>
 
-<span data-ttu-id="1fb9c-110">*Heltal*</span><span class="sxs-lookup"><span data-stu-id="1fb9c-110">*Integer*</span></span>
+<span data-ttu-id="02db1-110">*Heltal*</span><span class="sxs-lookup"><span data-stu-id="02db1-110">*Integer*</span></span>
 
-<span data-ttu-id="1fb9c-111">Det resulterande numeriska värdet.</span><span class="sxs-lookup"><span data-stu-id="1fb9c-111">The resulting numeric value.</span></span>
+<span data-ttu-id="02db1-111">Det resulterande numeriska värdet.</span><span class="sxs-lookup"><span data-stu-id="02db1-111">The resulting numeric value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="1fb9c-112">Användningsanteckningar</span><span class="sxs-lookup"><span data-stu-id="1fb9c-112">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="02db1-112">Användningsanteckningar</span><span class="sxs-lookup"><span data-stu-id="02db1-112">Usage notes</span></span>
 
-<span data-ttu-id="1fb9c-113">Körningen av den här funktionen kan ha olika resultat i olika instanser av Microsoft Dynamics 365 Finance, även om samma företagsnamn används.</span><span class="sxs-lookup"><span data-stu-id="1fb9c-113">Execution of this function can have different results in different instances of Microsoft Dynamics 365 Finance, even if the same company name is used.</span></span>
+<span data-ttu-id="02db1-113">Körningen av den här funktionen kan ha olika resultat i olika instanser av Microsoft Dynamics 365 Finance, även om samma företagsnamn används.</span><span class="sxs-lookup"><span data-stu-id="02db1-113">Execution of this function can have different results in different instances of Microsoft Dynamics 365 Finance, even if the same company name is used.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1fb9c-114">Exempel</span><span class="sxs-lookup"><span data-stu-id="1fb9c-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="02db1-114">Exempel</span><span class="sxs-lookup"><span data-stu-id="02db1-114">Example</span></span>
 
-<span data-ttu-id="1fb9c-115">`TABLENAME2ID ("Intrastat")` returnerar **1510**.</span><span class="sxs-lookup"><span data-stu-id="1fb9c-115">`TABLENAME2ID ("Intrastat")` returns **1510**.</span></span>
+<span data-ttu-id="02db1-115">`TABLENAME2ID ("Intrastat")` returnerar **1510**.</span><span class="sxs-lookup"><span data-stu-id="02db1-115">`TABLENAME2ID ("Intrastat")` returns **1510**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="1fb9c-116">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="1fb9c-116">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="02db1-116">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="02db1-116">Additional resources</span></span>
 
-[<span data-ttu-id="1fb9c-117">Andra (företagsdomänspecifika) funktioner</span><span class="sxs-lookup"><span data-stu-id="1fb9c-117">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="02db1-117">Andra (företagsdomänspecifika) funktioner</span><span class="sxs-lookup"><span data-stu-id="02db1-117">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
