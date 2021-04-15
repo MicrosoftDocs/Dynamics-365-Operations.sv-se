@@ -2,11 +2,9 @@
 title: Ytterligare platszoner
 description: Det här ämnet ger en översikt över de nya platszoner som har lagts till i Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationBuild, WHSZone
 audience: Application User
@@ -17,46 +15,46 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 4e8d8ddb65ea49f3d5278db0cac6ae891ab40ecf
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ee6e0b824ff16bf757159da5198a4215f4f5d121
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233233"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808952"
 ---
-# <a name="additional-location-zones"></a><span data-ttu-id="e96ca-103">Ytterligare platszoner</span><span class="sxs-lookup"><span data-stu-id="e96ca-103">Additional location zones</span></span>
+# <a name="additional-location-zones"></a><span data-ttu-id="9372d-103">Ytterligare platszoner</span><span class="sxs-lookup"><span data-stu-id="9372d-103">Additional location zones</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="e96ca-104">Tre nya zonfält finns tillgängliga i Microsoft Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="e96ca-104">Three new zone fields are available in Microsoft Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="e96ca-105">Lagerchefer kan använda dem för att definiera ytterligare lagerorganisationer eller layouter.</span><span class="sxs-lookup"><span data-stu-id="e96ca-105">Warehouse managers can use them to define additional warehouse organizations or layouts.</span></span> <span data-ttu-id="e96ca-106">De nya zonfälten kan ställas in antingen manuellt eller med hjälp guiden **platsinställning**.</span><span class="sxs-lookup"><span data-stu-id="e96ca-106">The new zone fields can be set either manually or by using the **Location setup** wizard.</span></span> <span data-ttu-id="e96ca-107">De kan användas i alla frågor eller filter som använder tabellen lagerställen.</span><span class="sxs-lookup"><span data-stu-id="e96ca-107">They can be used in any query or filtering that uses the Locations table.</span></span>
+<span data-ttu-id="9372d-104">Tre nya zonfält finns tillgängliga i Microsoft Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="9372d-104">Three new zone fields are available in Microsoft Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="9372d-105">Lagerchefer kan använda dem för att definiera ytterligare lagerorganisationer eller layouter.</span><span class="sxs-lookup"><span data-stu-id="9372d-105">Warehouse managers can use them to define additional warehouse organizations or layouts.</span></span> <span data-ttu-id="9372d-106">De nya zonfälten kan ställas in antingen manuellt eller med hjälp guiden **platsinställning**.</span><span class="sxs-lookup"><span data-stu-id="9372d-106">The new zone fields can be set either manually or by using the **Location setup** wizard.</span></span> <span data-ttu-id="9372d-107">De kan användas i alla frågor eller filter som använder tabellen lagerställen.</span><span class="sxs-lookup"><span data-stu-id="9372d-107">They can be used in any query or filtering that uses the Locations table.</span></span>
 
-<span data-ttu-id="e96ca-108">Det krävs inga ytterligare inställningar för att använda zonfälten.</span><span class="sxs-lookup"><span data-stu-id="e96ca-108">No additional setup is required to use the zone fields.</span></span>
+<span data-ttu-id="9372d-108">Det krävs inga ytterligare inställningar för att använda zonfälten.</span><span class="sxs-lookup"><span data-stu-id="9372d-108">No additional setup is required to use the zone fields.</span></span>
 
-## <a name="turn-on-the-additional-location-zone-feature"></a><span data-ttu-id="e96ca-109">Aktivera funktionen ytterligare platszoner</span><span class="sxs-lookup"><span data-stu-id="e96ca-109">Turn on the Additional location zone feature</span></span>
+## <a name="turn-on-the-additional-location-zone-feature"></a><span data-ttu-id="9372d-109">Aktivera funktionen ytterligare platszoner</span><span class="sxs-lookup"><span data-stu-id="9372d-109">Turn on the Additional location zone feature</span></span>
 
-<span data-ttu-id="e96ca-110">Innan du kan använda funktionen *Ytterligare platszon* den aktiveras i ditt system.</span><span class="sxs-lookup"><span data-stu-id="e96ca-110">Before you can use the *Additional location zone* feature, it must be turned on in your system.</span></span> <span data-ttu-id="e96ca-111">Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs.</span><span class="sxs-lookup"><span data-stu-id="e96ca-111">Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required.</span></span> <span data-ttu-id="e96ca-112">I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:</span><span class="sxs-lookup"><span data-stu-id="e96ca-112">In the **Feature management** workspace, the feature is listed in the following way:</span></span>
+<span data-ttu-id="9372d-110">Innan du kan använda funktionen *Ytterligare platszon* den aktiveras i ditt system.</span><span class="sxs-lookup"><span data-stu-id="9372d-110">Before you can use the *Additional location zone* feature, it must be turned on in your system.</span></span> <span data-ttu-id="9372d-111">Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs.</span><span class="sxs-lookup"><span data-stu-id="9372d-111">Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required.</span></span> <span data-ttu-id="9372d-112">I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:</span><span class="sxs-lookup"><span data-stu-id="9372d-112">In the **Feature management** workspace, the feature is listed in the following way:</span></span>
 
-- <span data-ttu-id="e96ca-113">**Modul:** *Lagerstyrning*</span><span class="sxs-lookup"><span data-stu-id="e96ca-113">**Module:** *Warehouse management*</span></span>
-- <span data-ttu-id="e96ca-114">**Funktionsnamn:** *Ytterligare platszon*</span><span class="sxs-lookup"><span data-stu-id="e96ca-114">**Feature name:** *Additional location zone*</span></span>
+- <span data-ttu-id="9372d-113">**Modul:** *Lagerstyrning*</span><span class="sxs-lookup"><span data-stu-id="9372d-113">**Module:** *Warehouse management*</span></span>
+- <span data-ttu-id="9372d-114">**Funktionsnamn:** *Ytterligare platszon*</span><span class="sxs-lookup"><span data-stu-id="9372d-114">**Feature name:** *Additional location zone*</span></span>
 
-## <a name="use-location-zones"></a><span data-ttu-id="e96ca-115">Använda platszoner</span><span class="sxs-lookup"><span data-stu-id="e96ca-115">Use location zones</span></span>
+## <a name="use-location-zones"></a><span data-ttu-id="9372d-115">Använda platszoner</span><span class="sxs-lookup"><span data-stu-id="9372d-115">Use location zones</span></span>
 
-1. <span data-ttu-id="e96ca-116">Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Guide för platsinställning**.</span><span class="sxs-lookup"><span data-stu-id="e96ca-116">Go to **Warehouse management \> Setup \> Warehouse \> Location setup wizard**.</span></span>
-2. <span data-ttu-id="e96ca-117">Ange följande värden.</span><span class="sxs-lookup"><span data-stu-id="e96ca-117">Set the following values:</span></span>
+1. <span data-ttu-id="9372d-116">Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Guide för platsinställning**.</span><span class="sxs-lookup"><span data-stu-id="9372d-116">Go to **Warehouse management \> Setup \> Warehouse \> Location setup wizard**.</span></span>
+2. <span data-ttu-id="9372d-117">Ange följande värden.</span><span class="sxs-lookup"><span data-stu-id="9372d-117">Set the following values:</span></span>
 
-    - <span data-ttu-id="e96ca-118">I fältet **Lagerställe**, välj _62_.</span><span class="sxs-lookup"><span data-stu-id="e96ca-118">In the **Warehouse** field, select _62_.</span></span>
-    - <span data-ttu-id="e96ca-119">I fältet **Zon-ID** välj _FLOOR_.</span><span class="sxs-lookup"><span data-stu-id="e96ca-119">In the **Zone ID** field, select _FLOOR_.</span></span>
-    - <span data-ttu-id="e96ca-120">I fältet **Ytterligare Zon 1** välj _PICKZONE1_.</span><span class="sxs-lookup"><span data-stu-id="e96ca-120">In the **Additional Zone 1** field, select _PICKZONE1_.</span></span>
-    - <span data-ttu-id="e96ca-121">I fältet **Ytterligare Zon 2** välj _WEBSHOP1_.</span><span class="sxs-lookup"><span data-stu-id="e96ca-121">In the **Additional Zone 2** field, select _WEBSHOP1_.</span></span>
-    - <span data-ttu-id="e96ca-122">I fältet **Platsprofil-ID**, välj _FLOOR_.</span><span class="sxs-lookup"><span data-stu-id="e96ca-122">In the **Location profile ID** field, select _FLOOR_.</span></span>
+    - <span data-ttu-id="9372d-118">I fältet **Lagerställe**, välj _62_.</span><span class="sxs-lookup"><span data-stu-id="9372d-118">In the **Warehouse** field, select _62_.</span></span>
+    - <span data-ttu-id="9372d-119">I fältet **Zon-ID** välj _FLOOR_.</span><span class="sxs-lookup"><span data-stu-id="9372d-119">In the **Zone ID** field, select _FLOOR_.</span></span>
+    - <span data-ttu-id="9372d-120">I fältet **Ytterligare Zon 1** välj _PICKZONE1_.</span><span class="sxs-lookup"><span data-stu-id="9372d-120">In the **Additional Zone 1** field, select _PICKZONE1_.</span></span>
+    - <span data-ttu-id="9372d-121">I fältet **Ytterligare Zon 2** välj _WEBSHOP1_.</span><span class="sxs-lookup"><span data-stu-id="9372d-121">In the **Additional Zone 2** field, select _WEBSHOP1_.</span></span>
+    - <span data-ttu-id="9372d-122">I fältet **Platsprofil-ID**, välj _FLOOR_.</span><span class="sxs-lookup"><span data-stu-id="9372d-122">In the **Location profile ID** field, select _FLOOR_.</span></span>
 
-3. <span data-ttu-id="e96ca-123">Välj rad **Våning**.</span><span class="sxs-lookup"><span data-stu-id="e96ca-123">Select the **Floor** line.</span></span>
-4. <span data-ttu-id="e96ca-124">I fältet **Från nummer**, ange _1_.</span><span class="sxs-lookup"><span data-stu-id="e96ca-124">In the **From number** field, enter _1_.</span></span> <span data-ttu-id="e96ca-125">I fältet **Till nummer**, ange _3_.</span><span class="sxs-lookup"><span data-stu-id="e96ca-125">In the **To number** field, enter _3_.</span></span>
-5. <span data-ttu-id="e96ca-126">Välj rad **Gång**.</span><span class="sxs-lookup"><span data-stu-id="e96ca-126">Select the **Aisle** line.</span></span>
-6. <span data-ttu-id="e96ca-127">I fältet **Från nummer**, ange _1_.</span><span class="sxs-lookup"><span data-stu-id="e96ca-127">In the **From number** field, enter _1_.</span></span> <span data-ttu-id="e96ca-128">I fältet **Till nummer**, ange _5_.</span><span class="sxs-lookup"><span data-stu-id="e96ca-128">In the **To number** field, enter _5_.</span></span>
-7. <span data-ttu-id="e96ca-129">Markera **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="e96ca-129">Select **Create**.</span></span>
-8. <span data-ttu-id="e96ca-130">Du får meddelanden om att nya platser har lagts till.</span><span class="sxs-lookup"><span data-stu-id="e96ca-130">You receive messages that state that new locations have been added.</span></span> <span data-ttu-id="e96ca-131">Välj knappen **Visa meddelanden** om du vill visa meddelandena.</span><span class="sxs-lookup"><span data-stu-id="e96ca-131">Select the **Show messages** button to view the messages.</span></span>
-9. <span data-ttu-id="e96ca-132">Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Platser**.</span><span class="sxs-lookup"><span data-stu-id="e96ca-132">Go to **Warehouse management \> Setup \> Warehouse \> Locations**.</span></span> <span data-ttu-id="e96ca-133">De nya platserna visas i listan och alla zonfält är tillgängliga (det vill säga det befintliga zonfältet och de nya ytterligare zonfälten).</span><span class="sxs-lookup"><span data-stu-id="e96ca-133">The new locations appear in the list, and all zone fields are available (that is, the existing zone field and the new additional zone fields).</span></span>
+3. <span data-ttu-id="9372d-123">Välj rad **Våning**.</span><span class="sxs-lookup"><span data-stu-id="9372d-123">Select the **Floor** line.</span></span>
+4. <span data-ttu-id="9372d-124">I fältet **Från nummer**, ange _1_.</span><span class="sxs-lookup"><span data-stu-id="9372d-124">In the **From number** field, enter _1_.</span></span> <span data-ttu-id="9372d-125">I fältet **Till nummer**, ange _3_.</span><span class="sxs-lookup"><span data-stu-id="9372d-125">In the **To number** field, enter _3_.</span></span>
+5. <span data-ttu-id="9372d-126">Välj rad **Gång**.</span><span class="sxs-lookup"><span data-stu-id="9372d-126">Select the **Aisle** line.</span></span>
+6. <span data-ttu-id="9372d-127">I fältet **Från nummer**, ange _1_.</span><span class="sxs-lookup"><span data-stu-id="9372d-127">In the **From number** field, enter _1_.</span></span> <span data-ttu-id="9372d-128">I fältet **Till nummer**, ange _5_.</span><span class="sxs-lookup"><span data-stu-id="9372d-128">In the **To number** field, enter _5_.</span></span>
+7. <span data-ttu-id="9372d-129">Markera **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="9372d-129">Select **Create**.</span></span>
+8. <span data-ttu-id="9372d-130">Du får meddelanden om att nya platser har lagts till.</span><span class="sxs-lookup"><span data-stu-id="9372d-130">You receive messages that state that new locations have been added.</span></span> <span data-ttu-id="9372d-131">Välj knappen **Visa meddelanden** om du vill visa meddelandena.</span><span class="sxs-lookup"><span data-stu-id="9372d-131">Select the **Show messages** button to view the messages.</span></span>
+9. <span data-ttu-id="9372d-132">Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Platser**.</span><span class="sxs-lookup"><span data-stu-id="9372d-132">Go to **Warehouse management \> Setup \> Warehouse \> Locations**.</span></span> <span data-ttu-id="9372d-133">De nya platserna visas i listan och alla zonfält är tillgängliga (det vill säga det befintliga zonfältet och de nya ytterligare zonfälten).</span><span class="sxs-lookup"><span data-stu-id="9372d-133">The new locations appear in the list, and all zone fields are available (that is, the existing zone field and the new additional zone fields).</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Artikelbehov för serviceorder
 description: Om du behöver reservera specifika artiklar för en serviceorder kan du skapa lagerartikelkrav för den.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjSalesItemReq
 audience: Application User
@@ -17,57 +15,57 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a0ce40c26e3d3028064b73a80a247180d6a9009
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4bbd15ca83ab116286a3d681887f076896653c76
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226675"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810592"
 ---
-# <a name="service-order-item-requirements"></a><span data-ttu-id="722ef-103">Artikelbehov för serviceorder</span><span class="sxs-lookup"><span data-stu-id="722ef-103">Service order item requirements</span></span>   
+# <a name="service-order-item-requirements"></a><span data-ttu-id="3d397-103">Artikelbehov för serviceorder</span><span class="sxs-lookup"><span data-stu-id="3d397-103">Service order item requirements</span></span>   
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="722ef-104">Du kan du skapa en serviceorder för att följa och hantera tjänster som du tillhandahåller dina kunder.</span><span class="sxs-lookup"><span data-stu-id="722ef-104">You can create a service order to track and manage services that you provide to your customers.</span></span> <span data-ttu-id="722ef-105">Om du behöver reservera specifika artiklar för en serviceorder kan du skapa lagerartikelkrav för den.</span><span class="sxs-lookup"><span data-stu-id="722ef-105">If you need to reserve specific items for a service order, you can create inventory item requirements for it.</span></span> <span data-ttu-id="722ef-106">Ett artikelbehov kan förbrukas omedelbart från lagret eller så kan det initiera en produktionsorder för artikeln.</span><span class="sxs-lookup"><span data-stu-id="722ef-106">An item requirement can be immediately consumed from inventory, or it can initiate a production order for the item.</span></span>
+<span data-ttu-id="3d397-104">Du kan du skapa en serviceorder för att följa och hantera tjänster som du tillhandahåller dina kunder.</span><span class="sxs-lookup"><span data-stu-id="3d397-104">You can create a service order to track and manage services that you provide to your customers.</span></span> <span data-ttu-id="3d397-105">Om du behöver reservera specifika artiklar för en serviceorder kan du skapa lagerartikelkrav för den.</span><span class="sxs-lookup"><span data-stu-id="3d397-105">If you need to reserve specific items for a service order, you can create inventory item requirements for it.</span></span> <span data-ttu-id="3d397-106">Ett artikelbehov kan förbrukas omedelbart från lagret eller så kan det initiera en produktionsorder för artikeln.</span><span class="sxs-lookup"><span data-stu-id="3d397-106">An item requirement can be immediately consumed from inventory, or it can initiate a production order for the item.</span></span>
 
-<span data-ttu-id="722ef-107">Genom att använda ett artikelbehov i stället för en artikeltransaktion kan du planera för inleverans precis innan artikeln verkligen används, skapa en inköpsorder, ta med artikeln i handelsavtalsramverket och ta med artikelbehovet i produktionsplaneringen.</span><span class="sxs-lookup"><span data-stu-id="722ef-107">By using an item requirement instead of an item transaction, you can plan for delivery just before the item is actually used, create a purchase order, include the item in the trade-agreement framework, and include the item requirement in production planning.</span></span>
+<span data-ttu-id="3d397-107">Genom att använda ett artikelbehov i stället för en artikeltransaktion kan du planera för inleverans precis innan artikeln verkligen används, skapa en inköpsorder, ta med artikeln i handelsavtalsramverket och ta med artikelbehovet i produktionsplaneringen.</span><span class="sxs-lookup"><span data-stu-id="3d397-107">By using an item requirement instead of an item transaction, you can plan for delivery just before the item is actually used, create a purchase order, include the item in the trade-agreement framework, and include the item requirement in production planning.</span></span>
 
-<span data-ttu-id="722ef-108">Artikelbehov för serviceorder bearbetas via ett projekt.</span><span class="sxs-lookup"><span data-stu-id="722ef-108">Item requirements for service orders are processed through a project.</span></span> <span data-ttu-id="722ef-109">För att kunna skapa ett artikelbehov på en serviceorder måste serviceordern ha kopplats till ett projekt.</span><span class="sxs-lookup"><span data-stu-id="722ef-109">To create an item requirement on a service order, the service order must be attached to a project.</span></span>
+<span data-ttu-id="3d397-108">Artikelbehov för serviceorder bearbetas via ett projekt.</span><span class="sxs-lookup"><span data-stu-id="3d397-108">Item requirements for service orders are processed through a project.</span></span> <span data-ttu-id="3d397-109">För att kunna skapa ett artikelbehov på en serviceorder måste serviceordern ha kopplats till ett projekt.</span><span class="sxs-lookup"><span data-stu-id="3d397-109">To create an item requirement on a service order, the service order must be attached to a project.</span></span>
 
-<span data-ttu-id="722ef-110">Så snart ett artikelbehov har skapats för en serviceorder kan det visas från **Projekt** på den enskilda serviceordern eller via formuläret **Försäljningsorder**.</span><span class="sxs-lookup"><span data-stu-id="722ef-110">As soon as an item requirement is created for a service order, it can be viewed from **Project** in the individual service order or through the **Sales order** form.</span></span>
+<span data-ttu-id="3d397-110">Så snart ett artikelbehov har skapats för en serviceorder kan det visas från **Projekt** på den enskilda serviceordern eller via formuläret **Försäljningsorder**.</span><span class="sxs-lookup"><span data-stu-id="3d397-110">As soon as an item requirement is created for a service order, it can be viewed from **Project** in the individual service order or through the **Sales order** form.</span></span>
 
-## <a name="view-an-item-requirement-from-a-service-order"></a><span data-ttu-id="722ef-111">Visa ett artikelbehov från en serviceorder</span><span class="sxs-lookup"><span data-stu-id="722ef-111">View an item requirement from a service order</span></span>
+## <a name="view-an-item-requirement-from-a-service-order"></a><span data-ttu-id="3d397-111">Visa ett artikelbehov från en serviceorder</span><span class="sxs-lookup"><span data-stu-id="3d397-111">View an item requirement from a service order</span></span>
 
-1.  <span data-ttu-id="722ef-112">Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.</span><span class="sxs-lookup"><span data-stu-id="722ef-112">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="3d397-112">Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.</span><span class="sxs-lookup"><span data-stu-id="3d397-112">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="722ef-113">Klicka på **Varuutförsel**, och klicka sedan på **artikelbehov** öppna formuläret **artikelbehov**.</span><span class="sxs-lookup"><span data-stu-id="722ef-113">Click **Dispatch**, and then click **Item requirement** to open the **Item requirements** form.</span></span>
+2.  <span data-ttu-id="3d397-113">Klicka på **Varuutförsel**, och klicka sedan på **artikelbehov** öppna formuläret **artikelbehov**.</span><span class="sxs-lookup"><span data-stu-id="3d397-113">Click **Dispatch**, and then click **Item requirement** to open the **Item requirements** form.</span></span>
 
-3.  <span data-ttu-id="722ef-114">Klicka på fliken **Projekt** och markera fältet **Serviceorder** om du vill visa serviceorder för artikelbehovet.</span><span class="sxs-lookup"><span data-stu-id="722ef-114">Click the **Project** tab, and check the **Service order** field to see the service orders of the item requirement.</span></span>
+3.  <span data-ttu-id="3d397-114">Klicka på fliken **Projekt** och markera fältet **Serviceorder** om du vill visa serviceorder för artikelbehovet.</span><span class="sxs-lookup"><span data-stu-id="3d397-114">Click the **Project** tab, and check the **Service order** field to see the service orders of the item requirement.</span></span>
 
-## <a name="delete-service-orders-with-item-requirements"></a><span data-ttu-id="722ef-115">Ta bort serviceorder med artikelbehov</span><span class="sxs-lookup"><span data-stu-id="722ef-115">Delete service orders with item requirements</span></span>
+## <a name="delete-service-orders-with-item-requirements"></a><span data-ttu-id="3d397-115">Ta bort serviceorder med artikelbehov</span><span class="sxs-lookup"><span data-stu-id="3d397-115">Delete service orders with item requirements</span></span>
 
-<span data-ttu-id="722ef-116">Om ett artikelbehov har skapats på en serviceorder kan du inte ta bort serviceordern.</span><span class="sxs-lookup"><span data-stu-id="722ef-116">If an item requirement is created on a service order, you cannot delete the service order.</span></span> <span data-ttu-id="722ef-117">Du måste ta bort artikelbehovet innan du kan ta bort serviceordern.</span><span class="sxs-lookup"><span data-stu-id="722ef-117">You must delete the item requirement before you can delete the service order.</span></span>
+<span data-ttu-id="3d397-116">Om ett artikelbehov har skapats på en serviceorder kan du inte ta bort serviceordern.</span><span class="sxs-lookup"><span data-stu-id="3d397-116">If an item requirement is created on a service order, you cannot delete the service order.</span></span> <span data-ttu-id="3d397-117">Du måste ta bort artikelbehovet innan du kan ta bort serviceordern.</span><span class="sxs-lookup"><span data-stu-id="3d397-117">You must delete the item requirement before you can delete the service order.</span></span>
 
-1.  <span data-ttu-id="722ef-118">Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.</span><span class="sxs-lookup"><span data-stu-id="722ef-118">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="3d397-118">Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.</span><span class="sxs-lookup"><span data-stu-id="3d397-118">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="722ef-119">Klicka på **Varuutförsel**, och klicka sedan på **artikelbehov** öppna formuläret **artikelbehov**.</span><span class="sxs-lookup"><span data-stu-id="722ef-119">Click **Dispatch**, and then click **Item requirement** to open the **Item requirements** form.</span></span> <span data-ttu-id="722ef-120">Detta formulär visar en lista med alla artikelbehov som har skapats på serviceordern.</span><span class="sxs-lookup"><span data-stu-id="722ef-120">This form lists the item requirements that are created on the service order.</span></span>
+2.  <span data-ttu-id="3d397-119">Klicka på **Varuutförsel**, och klicka sedan på **artikelbehov** öppna formuläret **artikelbehov**.</span><span class="sxs-lookup"><span data-stu-id="3d397-119">Click **Dispatch**, and then click **Item requirement** to open the **Item requirements** form.</span></span> <span data-ttu-id="3d397-120">Detta formulär visar en lista med alla artikelbehov som har skapats på serviceordern.</span><span class="sxs-lookup"><span data-stu-id="3d397-120">This form lists the item requirements that are created on the service order.</span></span>
 
-3.  <span data-ttu-id="722ef-121">Välj det artikelbehov som ska tas bort och klicka sedan på **Ta bort**.</span><span class="sxs-lookup"><span data-stu-id="722ef-121">Select the item requirement to delete, and then click **Delete**.</span></span>
+3.  <span data-ttu-id="3d397-121">Välj det artikelbehov som ska tas bort och klicka sedan på **Ta bort**.</span><span class="sxs-lookup"><span data-stu-id="3d397-121">Select the item requirement to delete, and then click **Delete**.</span></span>
 
-<span data-ttu-id="722ef-122">–eller–</span><span class="sxs-lookup"><span data-stu-id="722ef-122">–or–</span></span>
+<span data-ttu-id="3d397-122">–eller–</span><span class="sxs-lookup"><span data-stu-id="3d397-122">–or–</span></span>
 
-1.  <span data-ttu-id="722ef-123">Klicka på **Projekthantering och redovisning** \> **Vanligt** \> **Projekt** \> **Alla projekt**.</span><span class="sxs-lookup"><span data-stu-id="722ef-123">Click **Project management and accounting** \> **Common** \> **Projects** \> **All projects**.</span></span>
+1.  <span data-ttu-id="3d397-123">Klicka på **Projekthantering och redovisning** \> **Vanligt** \> **Projekt** \> **Alla projekt**.</span><span class="sxs-lookup"><span data-stu-id="3d397-123">Click **Project management and accounting** \> **Common** \> **Projects** \> **All projects**.</span></span>
 
-2.  <span data-ttu-id="722ef-124">Öppna projektet som har serviceordern där ett artikelbehov har skapats.</span><span class="sxs-lookup"><span data-stu-id="722ef-124">Open the project that has the service order in which an item requirement is created.</span></span>
+2.  <span data-ttu-id="3d397-124">Öppna projektet som har serviceordern där ett artikelbehov har skapats.</span><span class="sxs-lookup"><span data-stu-id="3d397-124">Open the project that has the service order in which an item requirement is created.</span></span>
 
-3.  <span data-ttu-id="722ef-125">I formuläret **projekt** i det högra fönstret klickar du på **artikelbehov**.</span><span class="sxs-lookup"><span data-stu-id="722ef-125">In the **Projects** form, in the right pane, click **Item requirements**.</span></span> <span data-ttu-id="722ef-126">Formuläret **Artikelbehov** öppnas och visar en lista med artikelbehov som associeras med det valda projektet.</span><span class="sxs-lookup"><span data-stu-id="722ef-126">The **Item requirements** form lists the item requirements that are associated with the selected project.</span></span>
+3.  <span data-ttu-id="3d397-125">I formuläret **projekt** i det högra fönstret klickar du på **artikelbehov**.</span><span class="sxs-lookup"><span data-stu-id="3d397-125">In the **Projects** form, in the right pane, click **Item requirements**.</span></span> <span data-ttu-id="3d397-126">Formuläret **Artikelbehov** öppnas och visar en lista med artikelbehov som associeras med det valda projektet.</span><span class="sxs-lookup"><span data-stu-id="3d397-126">The **Item requirements** form lists the item requirements that are associated with the selected project.</span></span>
 
-4.  <span data-ttu-id="722ef-127">Välj det artikelbehov som ska tas bort och klicka sedan på **Ta bort**.</span><span class="sxs-lookup"><span data-stu-id="722ef-127">Select the item requirement to delete, and then click **Delete**.</span></span>
+4.  <span data-ttu-id="3d397-127">Välj det artikelbehov som ska tas bort och klicka sedan på **Ta bort**.</span><span class="sxs-lookup"><span data-stu-id="3d397-127">Select the item requirement to delete, and then click **Delete**.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="722ef-128">Se även</span><span class="sxs-lookup"><span data-stu-id="722ef-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3d397-128">Se även</span><span class="sxs-lookup"><span data-stu-id="3d397-128">See also</span></span>
 
-<span data-ttu-id="722ef-129">[Artikelbehov (formulär)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="722ef-129">[Item requirements (form)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))</span></span>
+<span data-ttu-id="3d397-129">[Artikelbehov (formulär)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="3d397-129">[Item requirements (form)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))</span></span>
 
 
 
