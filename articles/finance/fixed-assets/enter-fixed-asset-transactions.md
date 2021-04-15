@@ -2,11 +2,9 @@
 title: Alternativ för transaktion för anläggningstillgång
 description: Det här avsnittet innehåller en beskrivning av andra tillgängliga metoder för att skapa transaktioner för anläggningstillgångar.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 02/07/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, PurchCreateOrder
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd1de441cd8c5de9d3684cfe644c33dadb44f5dc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3540cf17050a953a97c7291a1bcbe5ebf6fb670e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241108"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815726"
 ---
 # <a name="fixed-asset-transaction-options"></a>Alternativ för transaktion för anläggningstillgång
 

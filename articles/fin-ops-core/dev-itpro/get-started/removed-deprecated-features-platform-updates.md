@@ -2,7 +2,6 @@
 title: Borttagna eller avskrivna plattformsfunktioner
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning i plattformsuppdatering av Finance and Operations-appar.
 author: sericks007
-manager: AnnBe
 ms.date: 02/16/2021
 ms.topic: article
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f363b122e30990f5b36e69fd8fe271bdc15e2e79
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: ac3b5274aaea2e267685e80d051c81489ece50eb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564004"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814330"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller avskrivna plattformsfunktioner
 
@@ -37,7 +36,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ### <a name="batch-job-to-handle-sql-index-defragmentation"></a>Batchjobbet ska hantera defragmentering av SQL-index
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Den här funktionen har tagits bort för att minska omkostnaderna för hantering, övervakning och underhåll av indexhanteringen för kunder. |
 | **Ersatt av en annan funktion?**   | Framåt kommer indexunderhållet att utföras av Microsoft-tjänster. Detta sker kontinuerligt utan att användararbetsbelastningarna påverkas. |
@@ -48,12 +47,10 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.17 för Finance and Operations-appar
 
-> [!IMPORTANT]
-> Version 10.0.17 finns tillgänglig i en förhandsversion. Funktionen och dess innehåll kan ändras. Mer information om förhandsversioner finns i [Frågor och svar om tjänstuppdateringar för en version](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | För att stödja de senaste versionerna av Visual Studio måste vissa ändringar göras i tilläggen X++ Visual Studio. Dessa ändringar är inkompatibla med Visual Studio 2015. |
 | **Ersatt av en annan funktion?**   | Visual Studio 2017 ersätter Visual Studio 2015 som den distribuerade och begärda versionen. |
@@ -63,7 +60,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ### <a name="user-avatar"></a>Användaravatar 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Användaravatar som visas till höger om navigeringsfältet har hämtats med ett API från rubrikkontrollen Dynamics 365 är utfasad. |
 | **Ersatt av en annan funktion?**   | Användarna ser sina initialer i en cirkel i navigeringsfältet istället. Detta är samma visuella som för närvarande används på utvecklingsmaskiner. |
@@ -73,7 +70,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ### <a name="enterprise-portal-ep-deprecation"></a>Enterprise Portal (EP) inaktuell  
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Metadata som är associerade med Dynamics AX 2012 Enterprise Portal (EP) är utfasad, eftersom EP aldrig har stöds i Finance and Operations-appar. |
 | **Ersatt av en annan funktion?**   | Nr |
@@ -85,7 +82,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11-stöd för Dynamics 365 är inaktuellt
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Från och med december 2020 kommer Microsoft Internet Explorer 11-stöd för samtliga Dynamics 365-produkter att betraktas som inaktuellt, och Internet Explorer 11 kommer inte att stödjas efter augusti 2021.<br><br>Detta påverkar kunder som använder Dynamics 365-produkter som har utformats för användning med ett Internet Explorer 11-gränssnitt. Efter augusti 2021 stöds inte Internet Explorer 11 för sådana Dynamics 365-produkter. |
 | **Ersatt av en annan funktion?**   | Vi rekommenderar våra kunder att övergå till Microsoft Edge.|
@@ -96,7 +93,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio tillägg för att tillämpa snabbkorrigeringar för metadata
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Snabbkorrigeringar för metadata stöds inte längre med [en version](../../fin-ops/get-started/one-version.md) tjänst uppdatering som introducerades i juli 2018 med version 8.1. |
 | **Ersatt av en annan funktion?**   | Enskilda snabbkorrigeringar för metadata är inte tillgängliga för versioner som stöds. Kumulativa kvalitetsuppdateringar tillämpas i stället. |
@@ -109,7 +106,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ### <a name="online-users-page"></a>Sidan Onlineanvändare 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Det här är en äldre sida som skapats för tidigare klient/server-arkitektur. Informationen på den här sidan är inte alltid korrekt, vilket kan vara förvirrande och missvisande. |
 | **Ersatt av en annan funktion?**   | Vi kommer att tillhandahålla en ny sida i en framtida uppdatering.|
@@ -123,7 +120,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ### <a name="custom-code-defined-in-ssrs-report-properties"></a>Anpassad kod som definierats i SSRS-rapportens egenskaper 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | I allmänhet erbjuder anpassad kod begränsade fördelar men kräver samtidigt avsevärd resurshantering och beräkning för stöd. Anpassad kod används främst av rapportförfattare för att anropa offentliga metoder från en anpassad kodsammansättning. Den molnbaserade tjänsten stöder dock inte referenser till anpassade sammansättningar för SSRS-rapporter. |
 | **Ersatt av en annan funktion?**   | Rapportförfattare kan välja att fortsätta att referera till offentliga .NET API:er för matematik-, konverterings- och formatåtgärder från valfritt textruteuttryck. Mer information finns i [Lägga till kod i en rapport (SSRS)](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
@@ -133,7 +130,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>Uppgradering av tre jQuery-komponentbibliotek 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Tre jQuery-komponentbibliotek uppdateras för säkerhetskorrigeringar och för att bibehålla valutan.   
 | **Ersatt av en annan funktion?**   | Följande bibliotekpåverkas: jQuery (till version 3.5.0 från version 2.1.4), jQuery UI (till version 1.12.1 från version 1.11.4), jQuery qTip (till version 3.0.3 från 2.2.1). Vägledningen för migreringen har tillhandahållits online av jQuery.  |
@@ -143,7 +140,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ### <a name="existing-grid-controlforcelegacygrid-api"></a>Befintlig rutnätskontroll/forceLegacyGrid() API
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Den befintliga rutnätskontrollen ersätts av den nya rutnätskontrollen. |
 | **Ersatt av en annan funktion?**   | Den [nya rutnätskontrollen](../..//fin-ops/get-started/grid-capabilities.md) |
@@ -153,7 +150,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ### <a name="personalization-without-saved-views"></a>Anpassning utan sparade vyer 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Undersystemet för anpassning har dragits av med funktionen Sparade vyer så att den har bättre prestanda och erbjuder ytterligare funktioner. |
 | **Ersatt av en annan funktion?**   | Sparade vyer |
@@ -166,7 +163,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Formulärtillägg för rutnät- eller gruppkontroll som innehåller ogiltiga fältreferenser
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Datagruppegenskapen för rutnäts- eller gruppkontroller används för att automatiskt visa alla fält i en fältgrupp. En rutnäts- eller gruppkontroll som läggs till av tillägget kan innehålla fält som inte längre definieras i fältgruppen, eller saknas fält som är definierade i fältgruppen. Detta kan orsaka inkonsekvent beteende vid körning. Plattformsuppdateringar för version 10.0.12 av Finance and Operations-appar kategoriserar nu det här problemet som ett kompilator *varning*. Du åtgärdar det här problemet genom att öppna formulärtillägget och spara det.
 | **Ersatt av en annan funktion?**   | Den här kompilatorvarningen kommer att ersättas med ett kompileringsfel i en framtida uppdatering. |
@@ -178,7 +175,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ### <a name="explicit-safe-lists-for-self-service-environments"></a>Explicita säkra listor för självbetjäningsmiljöer
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Processen för att flytta IP till säkra listor har ändrats. Självbetjäning stöder inte längre IP säkra listor. |
 | **Ersatt av en annan funktion?**   | Mer information finns i [Konfigurera Azure Active Directory villkorlig åtkomst](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
@@ -188,7 +185,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | För att stödja de senaste versionerna av Visual Studio måste vissa ändringar göras i tilläggen X++ Visual Studio. Dessa ändringar är inkompatibla med Visual Studio 2015. |
 | **Ersatt av en annan funktion?**   | Visual Studio 2017 ersätter Visual Studio 2015 som den distribuerade och begärda versionen. |
@@ -198,7 +195,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ### <a name="field-groups-containing-invalid-field-references"></a>Fältgrupper innehåller ogiltiga fältreferenser
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Fältgrupper i definitioner av registermetadata kan innehålla fältreferenser som inte är giltiga. Om dessa fältgrupper distribueras kan de orsaka körningsfel i Financial Reporting och Microsoft SQL Server Reporting Services (SSRS). Plattformsuppdatering 23 introducerade kompileraren *varning* om att detta problem med metadata har åtgärdats. Plattformsuppdateringar för version 10.0.11 av Finance and Operations-appar kategoriserar det här problemet som ett kompilator *fel*.<p>Gör så här om du vill åtgärda problemet.</p><ol><li>Ta bort den ogiltiga fältreferensen från tabellens fältgruppdefinition.</li><li>Kompilera om.</li><li>Kontrollera att eventuella fel har åtgärdats.</li></ol> |
 | **Ersatt av en annan funktion?**   | Detta kompilatorfel ersätter kompilatorvarningen permanent.  |
@@ -208,7 +205,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>ISV-licenser som skapats med hjälp av SHA1-hashing-algoritm
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Processen för att skapa oberoende program varu leverantörslicenser (ISV) har ändrats. Mer information finns i [oberoende programvaruleverantör (ISV)-licensiering](../dev-tools/isv-licensing.md#appendix-create-self-signed-certificates-for-test-purposes). |
 | **Ersatt av en annan funktion?**   | Ja. Skapa licenser med hjälp av Windows PowerShell. |
@@ -219,7 +216,8 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 ## <a name="platform-update-32"></a>Plattform update 32
 
 ### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>Dialogrutan ändra arbetsflödesförfrågan innehåller inte längre listrutan för användarval
-|   |  |
+
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Detta är ett säkerhetsproblem eftersom begäran om ändring kan skickas till en oavsiktlig användare. Detta var också ett användbarhetsproblem eftersom det tvingade användaren att avgöra vem som har skapat arbetsflödet och manuellt välja dem manuellt.  |
 | **Ersatt av en annan funktion?**   | Nej |
@@ -228,7 +226,8 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Status**                         | Listrutan för användarval har tagits bort från dialogrutan ändring av begäran i plattformsuppdatering 32. Begäranden om ändring av begäran kommer att skickas automatiskt till upphovspersonen som avsett. Mer information om den här funktionen finns i [åtgärder i godkännandeprocesser för arbetsflöde](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change). |
 
 ### <a name="embedded-drill-through-links-are-no-longer-supported-in-paginated-documents-rendered-by-the-cloud-hosted-service"></a>Inbäddade länkar för detaljerad visning stöds inte längre i sidbrytningsdokument som renderas av den molnbaserade tjänsten 
-|   |  |
+
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Navigerings-URL:er som är inbäddade i dokument som tillhandahålls av tjänsten kan innehålla känsliga affärsdata. Vi tar bort stöd för inbäddade detaljgranskningslänkar i dokument som en säkerhetsåtgärd för att skydda kundens data ytterligare. Användarna får också nytta av förbättrad prestanda samtidigt som de skapar dokument som ett resultat av ändringen.  |
 | **Ersatt av en annan funktion?**   | Nr |

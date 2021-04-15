@@ -2,11 +2,9 @@
 title: Rapportera som färdigt från jobbkortsenheten
 description: I det här avsnittet beskrivs hur du konfigurerar systemet så att användarna av en jobbkort kan rapportera färdiga produkter från en tillverkningsorder till lagret.
 author: johanhoffmann
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistrationSetupTouch
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7eabcb23681a9b2427fa1065b045e639cc98f9d7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bd21bdf532e1e607e66bb8f5ef032f0855c99612
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262151"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811640"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Rapportera som färdigt från jobbkortsenheten
 
@@ -64,7 +62,7 @@ Jobbkortsenheten stöder tre scenarier för rapportering av batch-artiklar. Dess
 Om du vill att dina jobbkortsenheter ska kunna acceptera ett batchnummer när de rapporteras som färdiga, måste du använda [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera följande funktioner (i den här ordningen):
 
 1. Förbättrad användarupplevelse för dialogrutan Rapportförlopp i jobbkortenheten
-1. Aktivera för att ange batch- och serienummer vid rapportering som färdiga från jobbkortenheten (förhandsversion)
+1. Aktivera för att ange batch- och serienummer vid rapportering som färdigt från jobbkortenheten
 
 ### <a name="configure-products-that-require-batch-number-reporting"></a>Konfigurera produkter som kräver rapportering av batchnummer
 
@@ -142,7 +140,7 @@ Jobbkortsenheten stöder tre scenarier för rapportering av seriekontrollerade a
 Om du vill att dina jobbkortsenheter ska kunna acceptera ett serienummer när de rapporteras som färdiga, måste du använda [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera följande funktioner (i den här ordningen):
 
 1. Förbättrad användarupplevelse för dialogrutan Rapportförlopp i jobbkortenheten
-1. Aktivera för att ange batch- och serienummer vid rapportering som färdiga från jobbkortenheten (förhandsversion)
+1. Aktivera för att ange batch- och serienummer vid rapportering som färdigt från jobbkortenheten
 
 ### <a name="configure-products-that-require-serial-number-reporting"></a>Konfigurera produkter som kräver rapportering av serienummer
 

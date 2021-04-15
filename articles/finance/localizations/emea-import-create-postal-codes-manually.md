@@ -2,11 +2,9 @@
 title: Importera eller skapa postnummer manuellt
 description: Det här ämnet beskriver hur du importerar och manuellt skapar postnummer i rätt format.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LogisticsAddressSetup
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Belgium, Netherlands, Sweden
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 355cdf28229721607660ee6e06c746e45a1d90a1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f07f58e0ff91019ea960c6244919fbf3062cd989
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248859"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815005"
 ---
 # <a name="import-or-manually-create-postal-codes"></a>Importera eller skapa postnummer manuellt
 

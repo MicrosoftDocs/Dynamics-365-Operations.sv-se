@@ -2,11 +2,9 @@
 title: Dimensionshierarki
 description: Det här ämnet innehåller information om dimensionshierarkier. Du använder en hierarki för att definiera rapporteringsstruktur, kostnadspolicyer och säkerhetsinställningar i kostnadsredovisning.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2a2e48b15bedd25b685686fa18a91f30b600331c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fdf280031e2ad2356a1a2ef3bba75d1f74c8e4de
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217396"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810184"
 ---
 # <a name="dimension-hierarchy"></a>Dimensionshierarki
 
@@ -124,12 +122,13 @@ En dimensionshierarki som uppfyller rapporteringskraven för organisationen kan 
 
 Dimensionshierarkin för rapportering kan ställas in enligt följande.
 
-|                   | Dimensionsmedlemsintervall   |                         |
+**Dimensionsmedlemsintervall**
+
+|   Noder           |   Från dimensionsmedlem   |   Till dimensionsmedlem   |
 |-------------------|---------------------------|-------------------------|
-| **Noder**         | **Från dimensionsmedlem** | **Till dimensionsmedlem** |
 | Organisation      |                           |                         |
 | &nbsp;&nbsp;Admin         |                           |                         |
-|&nbsp;&nbsp;&nbsp;&nbsp;Finansiellt   | CC002                     | CC003                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;Finansiellt   | CC002                     | CC003                   |
 |                   | CC007                     | CC007                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;Personal        | CC001                     | CC001                   |
 | &nbsp;&nbsp;Produktion    |                           |                         |
@@ -146,12 +145,13 @@ En dimensionshierarki som uppfyller policykraven kan ställas in på följande s
 
 Dimensionshierarkin för policyn kan ställas in enligt följande.
 
-|                   | Dimensionsmedlemsintervall   |                         |
+**Dimensionsmedlemsintervall**
+
+|   Noder           |   Från dimensionsmedlem   |   Till dimensionsmedlem   |
 |-------------------|---------------------------|-------------------------|
-| **Noder**         | **Från dimensionsmedlem** | **Till dimensionsmedlem** |
 | Kostnadsbeteende     |                           |                         |
 | &nbsp;&nbsp;Fast kostnad    | 10001                     | 10011                   |
-|&nbsp;&nbsp;Variabel kostnad | 40001                     | 40010                   |
+| &nbsp;&nbsp;Variabel kostnad | 40001                     | 40010                   |
 
 > [!NOTE]
 > Under **Dimensionsmedlemsintervall**, kan en nod innehålla 1:_n_ dimensionsmedlemsintervall. Du kan infoga dimensionsmedlem-ID som ännu inte finns som dimensionsmedlemmar. Den här metoden gör hierarkin flexibel för framtiden.  
@@ -297,9 +297,10 @@ I praktiken kan alla chefer komma åt känslig affärsinformation, som t.ex. int
 
 En ny snabbflik **användare** finns i hierarkidesigner. Här kan du infoga ett eller flera användar-ID:n på varje nod i hierarkin.
 
-|                 | Användare            | Dimensionsmedlemsintervall   |                         |
+**Användare och dimensionsmedlemsintervall**
+
+|   Noder         |   Användar-ID        |   Från dimensionsmedlem   |   Till dimensionsmedlem   |
 |-----------------|------------------|---------------------------|-------------------------|
-| **Noder**       | **Användar-ID**      | **Från dimensionsmedlem** | **Till dimensionsmedlem** |
 | Organisation    | Benjamin Claire |                           |                         |
 | &nbsp;&nbsp;Admin         | april            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finansiellt   | Alicia           | CC002                     | CC003                   |

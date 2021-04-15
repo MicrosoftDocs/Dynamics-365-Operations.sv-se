@@ -2,11 +2,9 @@
 title: Bearbeta rabatter för betalning
 description: I den här proceduren visas hur du konverterar godkända och bearbetade kundrabatter till kreditfakturor.
 author: omulvad
-manager: tfehr
 ms.date: 11/10/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 617b5d99973e630cca2973227c2e54a63bd1ec4d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c617abd6ad715fff658451a7af3e775cf5e83292
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5263310"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816470"
 ---
 # <a name="process-rebates-for-payment"></a>Bearbeta rabatter för betalning
 

@@ -2,11 +2,9 @@
 title: Konfigurera och hantera databasloggning
 description: Du kan spåra ändringar i register och fält i Dynamics 365 Human Resources med databasloggning.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8057ebd0bc061c6bf78d8674c45e0885ffce681c
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: d22ff9f3ce68c81f37840342c795d7d162eb027b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467659"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801345"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurera och hantera databasloggning
 
@@ -68,7 +66,22 @@ För att förbättra prestanda begränsar du loggposter genom att välja specifi
 Du kan använda guiden **Loggar databasändringar** när du vill konfigurera databasloggning. Med hjälp av guiden kan du på ett flexibelt sätt ställa in loggning för register eller fält.
 
 1. Gå till **Systemadministration > Länkar > Databasen > Inställningar för databaslogg**. Välj **Ny** om du vill starta guiden **Loggar databasändringar**.
-2. Slutför guiden.
+2. Välj **Nästa**. 
+3. På sidan **Tabeller och fälten**, markera de tabeller och fält som du vill aktivera databasloggning på och välj **Nästa**.
+
+   > [!Note]
+   > Databasloggning är inte tillgänglig för alla register i Personal-databasen. Välj **Visa alla tabeller** nedanför listan utvidgas listan med tabeller och fält för att visa alla databastabeller för vilka databasloggning är tillgänglig, men detta kommer att vara en delmängd av den fullständiga listan över databastabeller.
+
+4. På sidan **Typer av ändringar** på sidan för guiden, välj de datafunktioner som du vill spåra ändringar för varje tabell och fält och välj **Nästa**. I tabellen nedan finns en beskrivning av de dataoperationer som är tillgängliga för loggning.
+5. På sidan **Slutför**, granska ändringarna som kommer att göras och välj **Slutför**.
+
+| Operation | beskrivning |
+| -- | -- |
+| Spåra nya transaktioner | Skapa en logg för nya poster som skapas i registret. |
+| Uppdatera | Skapa en logg för uppdateringar av registerposter eller uppdateringar av individuellt valda fält i registret. Om du väljer att logga uppdateringar av registret skapas en loggpost varje gång en uppdatering görs i något av posterna i registret. Om du väljer att logga uppdateringar för specifika fält, skapas en loggpost bara när uppdateringar görs av dessa fält i registerposterna. |
+| Delete | Skapa en logg för poster som raderats från registret. |
+| Ändra namn på nyckel | Skapa en loggpost när du byter namn på en registernyckel. |
+
 
 ## <a name="clean-up-database-logs"></a>Rensa databasloggar
 

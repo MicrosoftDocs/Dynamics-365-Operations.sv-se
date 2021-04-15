@@ -2,11 +2,9 @@
 title: Zontröskel för lagerpåfyllnad
 description: Vid en zonbaserad lagerpåfyllnad används en återanskaffningsstrategi av minsta/högsta (min/max), men den utvärderar hela lagerzoner istället för bara enskilda platser. Därför kan lagerchefer lära sig snabbare om ytterligare lager krävs i en plockzon.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable, WHSRequestType
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6aaa139fb206c035b25b7056e681d086fde6447f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d0a97ed7b01a32e9276433713448a672f83f7d02
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245068"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814378"
 ---
 # <a name="zone-threshold-replenishment"></a>Zontröskel för lagerpåfyllnad
 
