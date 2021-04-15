@@ -2,11 +2,9 @@
 title: Exempelfråga för rekryteringsbegäran
 description: Detta ämne utgör en exempelfråga för entiteten för rekryteringsförfrågningar i Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -16,28 +14,28 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec8b881282d3e79f83cc7205e4742f7e6c5c3464
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: e3bba96988f3ccef9ef54c1dad2a4c63e829198f
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466000"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5789718"
 ---
-# <a name="example-query-for-recruiting-request"></a><span data-ttu-id="36af8-103">Exempelfråga för rekryteringsbegäran</span><span class="sxs-lookup"><span data-stu-id="36af8-103">Example query for Recruiting request</span></span>
+# <a name="example-query-for-recruiting-request"></a><span data-ttu-id="567de-103">Exempelfråga för rekryteringsbegäran</span><span class="sxs-lookup"><span data-stu-id="567de-103">Example query for Recruiting request</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="36af8-104">Detta ämne utgör en exempelfråga för entiteten för rekryteringsförfrågningar i Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="36af8-104">This topic provides an example query for the Recruiting request entity in Dynamics 365 Human Resources.</span></span>
+<span data-ttu-id="567de-104">Detta ämne utgör en exempelfråga för entiteten för rekryteringsförfrågningar i Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="567de-104">This topic provides an example query for the Recruiting request entity in Dynamics 365 Human Resources.</span></span>
 
-<span data-ttu-id="36af8-105">Följande fråga visar hur du kan använda frågealternativet $expand i en GET-åtgärd för att hämta en angiven rekryteringsbegärandepost och alla associerade befattningar, obligatoriska färdigheter och utbildningskrav för den angivna begäran.</span><span class="sxs-lookup"><span data-stu-id="36af8-105">The following query shows how you can use the $expand query option in a GET operation to retrieve a specified recruiting request record and all associated positions, required skills, and educational requirements for the specified request.</span></span> <span data-ttu-id="36af8-106">Exempelsvaret visar en rekryteringsbegäran för två befattningar, samt de färdigheter och den utbildning som krävs för de begärda befattningarna.</span><span class="sxs-lookup"><span data-stu-id="36af8-106">The example response shows a recruiting request for two positions, and the required skills and education for the requested positions.</span></span>
+<span data-ttu-id="567de-105">Följande fråga visar hur du kan använda frågealternativet $expand i en GET-åtgärd för att hämta en angiven rekryteringsbegärandepost och alla associerade befattningar, obligatoriska färdigheter och utbildningskrav för den angivna begäran.</span><span class="sxs-lookup"><span data-stu-id="567de-105">The following query shows how you can use the $expand query option in a GET operation to retrieve a specified recruiting request record and all associated positions, required skills, and educational requirements for the specified request.</span></span> <span data-ttu-id="567de-106">Exempelsvaret visar en rekryteringsbegäran för två befattningar, samt de färdigheter och den utbildning som krävs för de begärda befattningarna.</span><span class="sxs-lookup"><span data-stu-id="567de-106">The example response shows a recruiting request for two positions, and the required skills and education for the requested positions.</span></span>
 
-<span data-ttu-id="36af8-107">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="36af8-107">**Request**</span></span>
+<span data-ttu-id="567de-107">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="567de-107">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/mshr_hcmrecruitingrequestentities(<recruiting request entity ID>)?$expand=mshr_FK_HcmRecruitingRequestPositionEntity_RecruitingRequest,mshr_FK_HcmRecruitingRequestSkillEntity_RecruitingRequest,mshr_FK_HcmRecruitingRequestEducationEntity_RecruitingRequest
 ```
 
-<span data-ttu-id="36af8-108">**Svar**</span><span class="sxs-lookup"><span data-stu-id="36af8-108">**Response**</span></span>
+<span data-ttu-id="567de-108">**Svar**</span><span class="sxs-lookup"><span data-stu-id="567de-108">**Response**</span></span>
 
 ```json
 {
@@ -182,8 +180,8 @@ GET [Organizaton URI]/api/data/v9.1/mshr_hcmrecruitingrequestentities(<recruitin
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="36af8-109">Se även</span><span class="sxs-lookup"><span data-stu-id="36af8-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="567de-109">Se även</span><span class="sxs-lookup"><span data-stu-id="567de-109">See also</span></span>
 
-[<span data-ttu-id="36af8-110">Introduktion av API för integrering av system för sökandespårning</span><span class="sxs-lookup"><span data-stu-id="36af8-110">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
+[<span data-ttu-id="567de-110">Introduktion av API för integrering av system för sökandespårning</span><span class="sxs-lookup"><span data-stu-id="567de-110">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
