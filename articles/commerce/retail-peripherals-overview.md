@@ -2,11 +2,9 @@
 title: Kringutrustning
 description: Det här avsnittet förklarar koncepten som är relaterade till kringutrustning i handel.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 64033f0e1568ae88aef6617592243ac7d0b21ab7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d2cbab3177756fbf5df4f07350a6449f0b22e028
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254949"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791957"
 ---
 # <a name="peripherals"></a>Kringutrustning
 
@@ -126,12 +124,12 @@ För att garantera att den största mängden enheter kan användas med Commerce 
 > [!NOTE]
 > OPOS-stöd garanterar inte stöd för alla enheter som har OPOS-drivrutiner. Commerce måste först ge stöd för denna enhetstyp eller klass via OPOS. Dessutom kanske serviceobjekt inte alltid är uppdaterade med den senaste versionen av dessa CCO. Du bör också vara medveten om att i allmänhet varierar kvaliteten på serviceobjekten.
 
-### <a name="windows"></a>Windows
+### <a name="windows&quot;></a>Windows
 
 Kvittoutskrift i POS optimeras för OPOS. OPOS brukar vara betydligt snabbare än utskrift genom Windows. Därför är det en bra idé att använda OPOS, särskilt i miljöer där 40-kolumnkvitton skrivs ut och transaktionstiderna måste vara snabba. För de flesta enheter används OPOS-kontroller. Vissa OPOS kvittoskrivare stöder emellertid Windows-drivrutiner. Genom att använda en Windows-drivrutin kan du komma åt de senaste teckensnitten och en nätverksskrivare för flera kassor. Det finns emellertid nackdelar med Windows-drivrutiner. Här följer några exempel på dessa nackdelar:
 
 -   När Windows-drivrutiner används återges bilder innan utskrift sker. Därför brukar utskrifter vara långsammare än på skrivare med OPOS-kontroller.
--   Enheter som är anslutna till skrivaren ("daisy-fastkedjad") fungerar inte när Windows-drivrutiner används. Exempelvis går det inte att öppna kassalådan eller kvittoskrivaren kanske inte skriver som förväntat.
+-   Enheter som är anslutna till skrivaren (&quot;daisy-fastkedjad") fungerar inte när Windows-drivrutiner används. Exempelvis går det inte att öppna kassalådan eller kvittoskrivaren kanske inte skriver som förväntat.
 -   OPOS stöder även en mer omfattande uppsättning variabler som avser kvittoskrivare, som t.ex. pappersskärning eller kvittoutskrift.
 -   Windows-skrivare stöds inte via IIS maskinvarustation. 
 

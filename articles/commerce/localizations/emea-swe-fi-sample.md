@@ -2,11 +2,9 @@
 title: Exempel på integration av kontrollenhet för Sverige
 description: I det här avsnittet finns en översikt över exemplet på räkenskapsintegration för Sverige.
 author: sepism
-manager: annbe
 ms.date: 10/08/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: sepism
 ms.search.validFrom: 2019-10-08
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8deaabe1a6ae79b2292549a41a61c13e9162db3e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8ed84afd75f70e060e9669df5cfa0c2b209eee0e
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250846"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798795"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Exempel på integration av kontrollenhet för Sverige
 

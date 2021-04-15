@@ -2,11 +2,9 @@
 title: Skapa en standardskund
 description: I det här avsnittet beskrivs hur du skapar en standardkund som kan användas för att skapa en kanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f988732549ce82919f02c87b320623d8d4218735
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: ecdf4e5618d3397527bf83977857fbe3f8dbb265
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477910"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799189"
 ---
 # <a name="create-a-default-customer"></a>Skapa en standardskund
 
@@ -67,14 +65,14 @@ I bilden nedan visas ett exempel på adressbok.
 
 ![Adressbok](media/address-book.png)
 
-## <a name="create-a-default-customer"></a>Skapa en standardskund
+## <a name="create-a-default-customer&quot;></a>Skapa en standardskund
 
 Gör så här om du vill skapa en standardkund.
 
 1. I navigeringsfönstret, gå till **Moduler \> Butik och handel \> Kunder \> Alla kunder**.
 1. Klicka på **Ny** i åtgärdsfönstret.
-1. I listrutan **Typ** väljer du "Person".
-1. I listrutan **kundkonto** väljer du eller anger ett kontonummer (t.ex. "100001").
+1. I listrutan **Typ** väljer du &quot;Person&quot;.
+1. I listrutan **kundkonto** väljer du eller anger ett kontonummer (t.ex. &quot;100001").
 1. I listrutan **Förnamn** väljer du eller anger ett namn (till exempel "standard").
 1. I listrutan **Mellannamn** väljer du eller anger ett namn (till exempel "butik").
 1. I listrutan **Efternamn** väljer du eller anger ett namn (till exempel "kund").

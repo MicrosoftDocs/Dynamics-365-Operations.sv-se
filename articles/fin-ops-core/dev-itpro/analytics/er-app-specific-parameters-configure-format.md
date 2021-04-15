@@ -2,8 +2,7 @@
 title: Konfigurera ER-format för användning av parametrar som anges per juridisk person
 description: I det här avsnittet beskrivs hur du kan konfigurera format för elektroniska rapporter (ER) att använda parametrar som anges per juridisk person.
 author: NickSelin
-manager: AnnBe
-ms.date: 10/26/2019
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 9253191f9cd10e0b3c87d61991598f9b791c35d9
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 16eab3ffa7d4a780ec9709f5c8a5c263b1e75365
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570744"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751188"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Konfigurera ER-format för användning av parametrar som anges per juridisk person
 
@@ -48,14 +47,14 @@ Vi rekommenderar att du slutför stegen i avsnittet [supportparametersamtal för
 
 ## <a name="import-er-configurations-into-rcs"></a>Importera ER-konfigurationer till RCS
 
-Från [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=851448), hämta den komprimerade filen **Stödparameteranrop till ER-datakällor för typen BERÄKNAT FÄLT**. Denna zip-fil innehåller följande ER-konfigurationer som måste extraheras och lagras lokalt.
+Hämta och lagra följande ER-konfigurationer lokalt.
 
 | **Beskrivning av innehåll**                        | **Filnamn**                                        |
 |------------------------------------------------|------------------------------------------------------|
-| Konfigurationsfil av exempel på **ER-datamodell**.    | Modell för att lära dig parameteranrop.version.1.xml     |
-| Konfigurationsfil av exempel på **ER-metadata**.      | Metadata för att lära dig parameteranrop.version.1.xml  |
-| Konfigurationsfil av exempel på **ER-modellmappning** | Mappning för att lära dig parameteranrop.version.1.1.xml |
-| Konfiguration av exempel på **ER-format**.             | Format för att lära dig parameteranrop.version.1.1.xml  |
+| Konfigurationsfil av exempel på **ER-datamodell**.    | [Modell för att lära dig parameteranrop.version.1.xml](https://download.microsoft.com/download/2/d/b/2db913a0-3622-494e-91a2-97fc494af9b9/Modeltolearnparameterizedcalls.version.1.xml)     |
+| Konfigurationsfil av exempel på **ER-metadata**.      | [Metadata för att lära dig parameteranrop.version.1.xml](https://download.microsoft.com/download/1/b/3/1b343968-5a47-4000-b5a8-6487698ef4c0/Metadatatolearnparameterizedcalls.version.1.xml)  |
+| Konfigurationsfil av exempel på **ER-modellmappning** | [Mappning för att lära dig parameteranrop.version.1.1.xml](https://download.microsoft.com/download/8/6/6/866e0ab6-2e05-4d98-9d52-d2da2038f6e4/Mappingtolearnparameterizedcalls.version.1.1.xml) |
+| Konfiguration av exempel på **ER-format**.             | [Format för att lära dig parameteranrop.version.1.1.xml](https://download.microsoft.com/download/e/3/9/e392eadc-b9b4-4834-95c3-b8066dd00b9c/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 Logga sedan in på RCS-instansen.
 
@@ -79,17 +78,17 @@ I det här exemplet ska du skapa en konfiguration för exempelföretaget, Litwar
 
     ER-formatet **Formatet för att lära sig parameteranrop** är utformat för att generera en momsrapport i XML-format som visar flera momsnivåer (vanlig, reducerad och ingen). Varje nivå har ett annat antal detaljer.
 
-    ![ER-åtgärdsdesignersida](./media/RCS-AppSpecParms-ReviewFormat.PNG)
+    ![Flera nivåer av ER-format, format för att lära sig parameteriserade anrop](./media/RCS-AppSpecParms-ReviewFormat.PNG)
 
 5.  På fliken **mappning** expanderar du objekten **modell**, **data** och **sammanfattnings**.
 
     Datakällan **Model.Data.Summar** returnerar listan över momstransaktioner. Transaktionernas sammanfattas per momskod. För den här datakällan har det beräknade fältet **Model.Data.Summary.Level** konfigurerats att returnera koden för momsnivån för varje summerad post. För alla momskoder som kan hämtas från datakällan **Model.Data.Summary** vid körning returnerar det beräknade fältet beskattningsnivåskod (**normal**, **reducerad**, **ingen** eller **annan**) som textvärde. Det beräknade fältet **Model.Data.Summary.Level** används för att filtrera poster av datakällan **Model.Data.Summary** och ange de filtrerade data i varje XML-element representerar en beskattningsnivå genom att använda fältet **Model.Data2.Level1**, **Model.Data2.Level2** och **Model.Data2.Level3**.
 
-    ![ER-åtgärdsdesignersida](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
+    ![Datakällan Model.Data.Summar listan över momstransaktioner](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
     Det beräknade fältet **Model.Data.Summary.Level** har konfigurerats så att det innehåller ett ER-uttryck. Observera att momskoder (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** och **InVAT0**) är hårdkodad i den här konfigurationen. Därför beror detta ER-format på den juridiska person där dessa momskoder har konfigurerats.
 
-    ![ER-åtgärdsdesignersida](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
+    ![Beräknat fält Model.Data.Summary.Level med hårdkodade momskoder](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
     Om du vill stödja en annan uppsättning momskoder för varje juridisk person måste du göra följande:
 
@@ -129,7 +128,7 @@ Nu ska du lägga till en ny uppräkning för ER-format. Värdena i detta formatu
 12. Välj **Lägg till** igen.
 13. Skriv **Utdata** i fältet **Andra**.
 
-    ![ER-åtgärdsdesignersida](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
+    ![Ny post på sidan formatuppräkningar](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
 
     Eftersom olika språk används i affärsanvändarna för att ange uppsättningar av momskoder som är beroende av den juridiska personen rekommenderar vi att du översätter värdena för denna uppräkning till de språk som är konfigurerade som prioriterade språk för dessa användare i Finance.
 
@@ -142,7 +141,7 @@ Nu ska du lägga till en ny uppräkning för ER-format. Värdena i detta formatu
 20. I fältet **Översatt text** anger du **keine Besteuerung**.
 21. Välj **översätt**.
 
-    ![ER-åtgärdsdesignersida](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
+    ![Textöversättningsbild ut](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
 
 22. Välj **Spara**.
 23. Stäng sidan **formatuppräkningar**.
@@ -169,13 +168,13 @@ Därefter ska du lägga till en ny datakälla som anger hur affärsanvändare sk
 10. Välj objektet **Model.Data.Tax.Code**.
 11. Välj knappen **Lägg till** (högerpilen).
 
-    ![ER-åtgärdsdesignersida](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
+    ![Kolumner bild ut](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
 
     Du har precis angett att för varje regel som anges i denna datakälla för erkännande av beskattningsnivå måste en företagsanvändare välja en av skattekoderna som villkor. Listan över momskoder som affärsanvändaren kan välja returneras av datakällan **Model.Data.Tax**. Eftersom datakällan innehåller fältet **namn** visas namnet på momskoden för varje momskodvärde i sökningen som visas för affärsanvändaren.
     
 12. Välj **OK**.
 
-    ![ER-åtgärdsdesignersida](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
+    ![Sökdesignersida](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
 
     Affärsanvändare kan lägga till flera regler som poster i den här datakällan. Varje post kommer att numreras med en radkod. Regler kommer att utvärderas i stigande ordning på radnumret.
 
@@ -189,13 +188,13 @@ Därefter ska du lägga till en ny datakälla som anger hur affärsanvändare sk
 
     Lägg märke till att du har lagt till en ny datakälla som returnerar momsnivån som värdet i **listan över beskattningsnivåer** formatberäkning för eventuella momskoder som skickas till datakällan som argument till parametern **Kod** för datatypen **sträng**.
     
-    ![ER-åtgärdsdesignersida](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
+    ![Formatdesignersida med ny datakälla](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
     Observera att utvärderingen av konfigurerade regler beror på datatypen för de fält som har valts för att definiera villkoren för dessa regler. När du väljer ett fält som är konfigurerat som ett fält av datatypen **numerisk** eller **datum**, skiljer sig villkoren från kriterierna som beskrevs tidigare för datatypen **sträng**. För fälten **numerisk** och **datum** måste regeln anges som ett värdeintervall. Regelns villkor kommer då att betraktas som uppfyllt när ett värde som skickas till datakällan finns i det konfigurerade intervallet.
     
     Följande illustration visar ett exempel på den här typen av inställning. Förutom fältet **Model.Data.Tax.Code** för datatypen **Sträng** används fältet **Model.Tax.Summary.Base** för datatypen **Real** används för att ange villkor för en datakälla för sökning.
     
-    ![ER-åtgärdsdesignersida](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
+    ![Sökdesignersida med ytterligare kolumner](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
 
     Eftersom fälten **Model.Data.Tax.Code** och **Model.Tax.Summary.Base** markeras för den här datakälla för sökning konfigureras varje regel för den här datakällan på följande sätt:
     
@@ -224,7 +223,7 @@ Eftersom olika språk används i affärsanvändarna för att ange uppsättningar
 9.  Välj **översätt**.
 10. Välj **OK**.
 
-    ![ER-åtgärdsdesignersida](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
+    ![Datakällsegenskaper bild ut](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
 
 ### <a name="add-a-new-field-to-consume-the-configured-lookup"></a>Lägg till ett nytt fält för att förbruka det konfigurerade uppslaget
 
@@ -237,16 +236,16 @@ Eftersom olika språk används i affärsanvändarna för att ange uppsättningar
 7.  I **fältet formel**, ange **Model.Selector(Model.Data.Summary.Code)**.
 8.  Välj **Spara**.
 
-    ![ER-åtgärdsdesignersida](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
+    ![Lägga till Model.Selector(Model.Data.Summary.Code) till sidan Formeldesigner](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
 
 9.  Stäng sidan **receptredigering**.
 10. Välj **OK**.
 
-    ![ER-åtgärdsdesignersida](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
+    ![Formatdesignersida med ny formel tillagd](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
 
     Observera att det beräknade fältet **LevelByLookup** som du har lagt till kommer att återge beskattningsnivån som värdet på formatuppräkningen **Lista över beskattningsnivåer** för varje sammanfattad skattetransaktionspost. Momskoden för posten skickas till datakälla för sökning **Model.Selector** och uppsättningen med regler för den här datakällan används för att välja korrekt beskattningsnivå.
 
-### <a name="add-a-new-format-enumeration-based-data-source"></a>Lägg till ett nytt format med beräkningsbaserad datakälla.
+### <a name="add-a-new-format-enumeration-based-data-source&quot;></a>Lägg till ett nytt format med beräkningsbaserad datakälla.
 
 Därefter ska du lägga till en ny datakälla som refererar till uppräkningen av format som du lade till tidigare. Värden för denna datakälla kommer att användas i ett formatuttryck för ER-formatering senare.
 
@@ -256,7 +255,7 @@ Därefter ska du lägga till en ny datakälla som refererar till uppräkningen a
 4.  I fältet **Formatuppräkning** anger du **Lista över beskattningsnivåer**.
 5.  Välj **Spara**.
 
-### <a name="modify-an-existing-field-to-start-to-use-the-lookup"></a>Ändra ett befintligt fält till start om du vill använda sökningen
+### <a name=&quot;modify-an-existing-field-to-start-to-use-the-lookup&quot;></a>Ändra ett befintligt fält till start om du vill använda sökningen
 
 Därefter ska du ändra det befintliga beräknade fältet så att det använder den konfigurerade datakälla för sökning för att returnera rätt momsnivåvärde, beroende på momskoden.
 
@@ -266,7 +265,7 @@ Därefter ska du ändra det befintliga beräknade fältet så att det använder 
 
     Observera att det aktuella uttrycket för fältet **Model.Data.Summary.Level** innehåller följande hårdkodade momskoder:
     
-    CASE (@.Code, "VAT19", "Regular", "InVAT19", "Regular", "VAT7", "Reduced", "InVAT7", "Reduced", "THIRD", "None", "InVAT0", "None", "Other")
+    CASE (@.Code, &quot;VAT19&quot;, &quot;Regular&quot;, &quot;InVAT19&quot;, &quot;Regular&quot;, &quot;VAT7&quot;, &quot;Reduced&quot;, &quot;InVAT7&quot;, &quot;Reduced&quot;, &quot;THIRD&quot;, &quot;None&quot;, &quot;InVAT0&quot;, &quot;None&quot;, &quot;Other")
 
 4.  I fältet **Formula** ange **CASE(@.LevelByLookup, TaxationLevel.'Regular taxation', "Regular", TaxationLevel.'Reduced taxation', "Reduced", TaxationLevel.'No taxation', "None", "Other")**.
 

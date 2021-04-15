@@ -2,8 +2,7 @@
 title: Lokal distribution – startsida
 description: Det här avsnittet innehåller information och länkar till innehåll om lokal distribution.
 author: sericks007
-manager: AnnBe
-ms.date: 11/23/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: dc9642ee224290891c738c9d0d2b96ff119a1622
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: caa3fccd9dcdfb3950958e793057131e77676d91
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564070"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749315"
 ---
 # <a name="on-premises-deployment-home-page"></a>Lokal distribution – startsida
 
@@ -38,14 +37,16 @@ Du kan distribuera Dynamics 365 Finance + Operations (lokal). När du väljer en
 
 ## <a name="onboard"></a>Integrera
 - [Ställ in lokala projekt i Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Ställ in och distribuera lokala miljöer på (Plattformuppdatering 12 och senare)](setup-deploy-on-premises-pu12.md)
+- [Ställ in och distribuera lokala miljöer på (Plattformuppdatering 41 och senare)](setup-deploy-on-premises-pu41.md)
+- [Ställa in och distribuera lokala miljöer (plattformsuppdatering 12 och 40)](setup-deploy-on-premises-pu12.md)
 - [Installera nätverksskrivare i lokala miljöer](../analytics/install-network-printer-onprem.md)
 - [Konfigurera SQL Server Reporting Services för lokal distribution](../analytics/configure-ssrs-on-premises.md)
 - [Utveckla och distribuera anpassade modeller i lokala miljöer](develop-deploy-custom-models-on-premises.md)
 
 ## <a name="work-in-your-on-premises-deployment"></a>Arbeta i lokal distribution
+- [Konfigurera hög tillgänglighet för SSRS-noder (SQL Server Reporting Services)](onprem-SSRSHA.md)
 - [Konfigurera dokumenthantering](../../fin-ops/organization-administration/configure-document-management.md)
-- [Importera konfigurationer för (ER) elektronisk rapportering](../analytics/electronic-reporting-import-ger-configurations.md)
+- [Importera konfigurationer för elektronisk rapportering (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Skapa, publicera och skriva ut dokument i lokala distributioner](../analytics/printing-capabilities-on-premises.md)
 - [Konfigurera proxyservrar för lokala miljöer](onprem-reverseproxy.md)
 - [Ställa in teknisk support för Finance and Operations-appar](../lifecycle-services/support-experience.md)
