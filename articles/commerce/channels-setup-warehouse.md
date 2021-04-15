@@ -2,11 +2,9 @@
 title: Ställ in ett lagerställen
 description: I det här avsnittet beskrivs hur du ställer in ett lagerställe som ska användas med en ny kanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 772c7584549b30a34e371a7911131edc01214ed8
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 154ec719e16e4826b0e24deb5ecadf587d938e3c
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477644"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800505"
 ---
 # <a name="warehouse-set-up"></a>Inställning av lagerställe
 
@@ -49,7 +47,7 @@ I bilden nedan visas ett exempel på lagerställeplats.
 
 ![Exempel på lagerställeplats](media/warehouse-site.png)
 
-## <a name="set-up-a-warehouse"></a>Ställ in ett lagerställen
+## <a name="set-up-a-warehouse&quot;></a>Ställ in ett lagerställen
 
 Så här ställer du in ett lagerställe.
 
@@ -63,14 +61,14 @@ Så här ställer du in ett lagerställe.
     - Om du vill ställa in ett **Transitlager** måste du först följa stegen nedan för att skapa ett ytterligare lagerställe där **Typ** ställs in på **Transit**.
 1. Klicka på **Spara** i åtgärdsfönstret.
 
-## <a name="set-up-inventory-aisles"></a>Ställ in lagergångar
+## <a name=&quot;set-up-inventory-aisles&quot;></a>Ställ in lagergångar
 
 Så här ställer du in lagergångar.
 
 1. I navigeringsfönstret, gå till **Moduler \> Butik och handel \> Kanalsinställning \> Platsinställning \> Lagergångar**.
 1. Klicka på **Ny** i åtgärdsfönstret.
 1. I listrutan **Lagerställe** väljer du det lagerställe som du skapade tidigare.
-1. I fältet **Gång** anger du ett namn (till exempel "Def").
+1. I fältet **Gång** anger du ett namn (till exempel &quot;Def").
 1. I fältet **Namn** anger du ett namn (till exempel "Standardgång").
 1. Klicka på **Spara** i åtgärdsfönstret.
 

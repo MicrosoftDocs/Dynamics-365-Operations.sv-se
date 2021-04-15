@@ -2,11 +2,9 @@
 title: Kvitta en delbetalning före rabattdatum och slutbetalning efter rabattdatum
 description: Det här avsnittet innehåller en genomgång av ett scenario där flera delbetalningar görs. Vissa av dem inom kassarabattperioden och andra utanför den.
 author: abruer
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e125ca5fbebcf062eb17f56a2ef6669d1b6d6ae3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d34a9dd53b6a287ef512a5479c0ad1a51211577b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227338"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810352"
 ---
 # <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Kvitta en delbetalning före rabattdatum och slutbetalning efter rabattdatum
 
@@ -48,9 +46,9 @@ Den 2 juli vill April kvitta 300,00 av den här fakturan. Betalningen är berät
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
-|                              |           |
+| Fält                        | Värde     |
 |------------------------------|-----------|
-| Kassarabattdatum           | 7/09/2015 |
+| Kassarabattdatum           | 2015/07/09 |
 | Kassarabattbelopp         | -10.00    |
 | Använd kassarabatt            | Normal    |
 | Utnyttjad kassarabatt          | 0,00      |
@@ -73,9 +71,9 @@ April betalar resten av fakturan den 15 juli, vilket är efter rabattperioden. P
 
 Information om rabatten visas längst ned på sidan **Kvitta transaktioner**. April ser att hon redan har tagit emot 3,00 rabatt.
 
-|                              |           |
+| Fält                        | Värde     |
 |------------------------------|-----------|
-| Kassarabattdatum           | 7/09/2015 |
+| Kassarabattdatum           | 2015/07/09 |
 | Kassarabattbelopp         | 0,00      |
 | Använd kassarabatt            | Normal    |
 | Utnyttjad kassarabatt          | -3,00     |
@@ -99,10 +97,10 @@ Om leverantören låter April göra en rabatt trots att hon betalar efter rabatt
 
 Information om rabatten visas längst ned på sidan **Kvitta transaktioner**.
 
-|                              |           |
+| Fält                        | Värde     |
 |------------------------------|-----------|
-| Kassarabattdatum           | 7/09/2015 |
-| Kassarabattbelopp         | 07:00      |
+| Kassarabattdatum           | 2015/07/09 |
+| Kassarabattbelopp         | 7.00      |
 | Använd kassarabatt            | Alltid    |
 | Utnyttjad kassarabatt          | -3,00     |
 | Kassarabattbelopp att utnyttja | -7,00     |

@@ -2,11 +2,9 @@
 title: Vad är nytt och ändrat i Dynamics 365 Human Resources (13 april 2020)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Human Resources för 13 april 2020.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8fdf23b735700009c97c02c0b53b370773d0acce
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 3b7822782fda3c20d57df96af59e18b1725e4f9f
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465352"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800199"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-13-2020"></a>Vad är nytt och ändrat i Dynamics 365 Human Resources (13 april 2020)
 

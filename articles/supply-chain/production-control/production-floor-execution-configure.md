@@ -2,11 +2,9 @@
 title: Konfigurera körningsgränssnittet för produktionsgolvet
 description: I det här avsnittet beskrivs hur du skapar en eller flera konfigurationer för körningsgränssnittet för produktionsgolvet. När du öppnar körningsgränssnittet för produktionsgolvet läser det automatiskt in ett valt konfigurations- och jobbfilter som är specifikt för webbläsaren och enheten. I konfigurationen ställer du in de principer som måste tillämpas för en viss användning.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d34f9c235df480658a0935d731f7267a87894067
-ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
+ms.openlocfilehash: 79e21977e4ef8bce88c97a8fb253345ccc8d6b4f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "5556324"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814740"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurera körningsgränssnittet för produktionsgolvet
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Verkstadsarbetare använder körningsgränssnittet för produktionsgolvet för att registrera sitt dagliga arbete, till exempel när de börjar ett jobb, rapporterar feedback om jobb, registrerar indirekta aktiviteter och rapporterar frånvaro. Dessa registreringar är grunden för spårning av framsteg och kostnader på tillverkningsorder och för beräkning av grunden för arbetares lön.
 
@@ -67,6 +64,8 @@ Den här funktionen lägger till en knapp i körningsgränssnittet för produkti
 - Funktion för att låsa jobbkortsenhet och jobbkortsterminal för att anpassas till språk
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funktionen för tillgångshantering för körningsgränssnittet för produktionsgolvet
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Den här funktionen lägger till en flik för tillgångshantering i produktionsstyrningsgränssnittet. Arbetare kan använda den här fliken för att välja en tillgång som är ansluten till en maskinresurs inom det valda filtret för jobblistan. För den valda maskintillgången kan arbetaren visa status och tillstånd för tillgången från räknarvärden i upp till fyra valda räknare. Om du vill använda denna funktion aktiverar du följande funktion i för att aktivera den [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

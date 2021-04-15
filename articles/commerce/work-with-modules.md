@@ -2,11 +2,9 @@
 title: Arbeta med moduler
 description: I det här avsnittet beskrivs hur och när du ska använda moduler i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eddee09fa81c18bc464b7768921981e6b5159a3e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6d872719d3b1aa27ccfdcf36d7739c883e7b4996
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210909"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801371"
 ---
 # <a name="work-with-modules"></a>Arbeta med moduler
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur och när du ska använda moduler i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 Moduler är logiska byggblock som utgör sidans struktur och har olika syfte och omfång. Vissa moduler är behållare på hög nivå, och de är bara avsedda att innehålla och organisera andra moduler (underordnade moduler). Andra moduler, t.ex. en enkel bildplaceringsmodul, har ett mycket specifikt syfte. Andra moduler, till exempel en karusellmodul, ligger någonstans mellan dessa två kategorier.
 
