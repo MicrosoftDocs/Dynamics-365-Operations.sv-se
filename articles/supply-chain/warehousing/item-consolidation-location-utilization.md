@@ -2,11 +2,9 @@
 title: Artikelkonsolidering – platsutnyttjande
 description: I det här avsnittet finns information om funktioner som gör det enkelt för lagerchefer att visa och filtrera platsens användning över hela lagerstället. Chefer kan välja platser och skapa lagerförflyttningar direkt från sidan artikelkonsolidering för att konsolidera artiklar och därmed bättre utnyttja lagerställets utrymme.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 3b20b41d27e5faeac7ea88940c086ae33390dc29
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 892190ea7bad34dfd308796b93a1828e0e8e11b9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217015"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835591"
 ---
 # <a name="item-consolidation---location-utilization"></a>Artikelkonsolidering – platsutnyttjande
 
@@ -149,7 +147,7 @@ I det här avsnittet beskrivs hur du förbereder systemet för att använda arti
 
 ## <a name="example-scenario"></a>Exempelscenario
 
-I följande scenario används lagerställeappen på en mobil enhet för att göra en lager *justering in* på två platser i lagerstället.
+I följande scenario används mobilappen för distributionslagerhantering för att göra en lager *justering in* på två platser i lagerstället.
 
 ### <a name="add-inventory-to-locations"></a>Lägg till lager till platser
 

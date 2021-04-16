@@ -2,11 +2,9 @@
 title: Räkna om ersättningskostnader och försäkrade värden för Anläggningstillgångsgrupper
 description: Den här artikeln beskriver processen för att uppdatera ersättningskostnaden och de försäkrade värdena för anläggningstillgångar.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9a6db9942e9d9b63d89c56ec4a03612917772c1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c0509c0ea2fe6e4d04aeec451969a81eb33b1d19
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240844"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826309"
 ---
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Räkna om ersättningskostnader och försäkrade värden för Anläggningstillgångsgrupper
 

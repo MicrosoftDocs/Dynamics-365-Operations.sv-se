@@ -2,11 +2,9 @@
 title: Customer payment insights (förhandsversion)
 description: I det här ämnet beskrivs funktioner för betalningsinsikter som hjälper dig att bättre förstå en enskild kunds typiska betalningspraxis. Funktionen kan också hjälpa dig att identifiera omständigheter gör att du bör starta inkassoprocesser tidigare än vad du annars skulle ha gjort.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 11/06/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 21516cb7ef6e95dcef27638ddb72520f492958a5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a1b3b6540a03dc85d5dcd813e8c41ac49ab36728
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207337"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822405"
 ---
 # <a name="customer-payment-insights-preview"></a>Customer payment insights (förhandsversion)
 

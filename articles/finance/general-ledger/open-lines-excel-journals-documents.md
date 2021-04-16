@@ -2,11 +2,9 @@
 title: Publicera journalrader och dokument från Excel
 description: I det här avsnittet beskrivs hur du anger och publicerar rader för allmänna journaler från Microsoft Excel. Det innehåller information om de olika mallar som du kan använda beroende på vilken typ av transaktioner som du har angett.
 author: kweekley
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f87ce1dcbae779f875abcbffd1781bbf076b1b7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2211f666b2b1dc7600639007794ab8133b58b2cb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5230260"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834486"
 ---
 # <a name="publish-journal-lines-and-documents-from-excel"></a>Publicera journalrader och dokument från Excel
 
@@ -32,9 +30,8 @@ I det här avsnittet beskrivs hur du anger och publicerar rader för allmänna j
 
 Användarna kan ange och publicera rader för redovisningsjournaler från Microsoft Excel. När en användare skapar en journal visar knappen **Öppna rader i Excel** de mallar som är tillgängliga. Mallar är utformade för att stödja speciella scenarier, men alla kombinationer av kontotypen i journalen stöds dock inte. Följande tabell visar de mallar som finns tillgängliga och kontotyper som de stöder.
 
-|                          |                                                                                                                         |                                                                                         |
+| Mall             | Kontotyper som stöds | Så här öppnar du mallen                                                          |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| **Mall**             | **Kontotyper som stöds**                                                                                             | **Så här öppnar du mallen**                                                          |
 | Redovisningsjournalrader     | Konto: Redovisning, kund, leverantör, bankmotkonto: redovisning, kund, leverantör, Bank koncernintern stöds.       | Allmän journal                                                                         |
 | Fakturaregister         | Konto: Leverantör motkonto: koncernintern redovisning stöds inte.                                                    | LR-fakturaregister                                                                     |
 | Fakturajournal          | Konton: Leverantörsmotkonto: koncernintern redovisning stöds.                                                      | Fakturajournal för LR                                                                      |

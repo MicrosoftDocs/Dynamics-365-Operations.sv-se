@@ -2,11 +2,9 @@
 title: Arbetsbelastningar för distributionslagerhantering för moln- och molnskalningsenheter
 description: Det här avsnittet innehåller information om funktionen som gör att enheterna kan köra valda processer från din arbetsbelastningar för distributionslagerhantering.
 author: perlynne
-manager: tfeyr
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, SysSecRolesEditUsers
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
-ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
+ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5580975"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832404"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
 
@@ -70,7 +68,7 @@ Navet äger följande data:
 - Orderallokering och utgående lastbearbetning
 - Processerna frisläpp till lager, skapande av försändelse, skapande av påfyllnad och slutförande av påfyllnad
 
-Skalningsenheterna som äger den faktiska påfyllnadsbearbetningen (t.ex. arbetsfördelning, lagerpåfyllnadsarbete och skapande av efterfrågan) efter att påfyllnad har frisläppts. Därför kan lagerarbetare bearbeta utgående arbete genom att använda en distributionslagerappen som är kopplad till skalningsenheten.
+Skalningsenheterna som äger den faktiska påfyllnadsbearbetningen (t.ex. arbetsfördelning, lagerpåfyllnadsarbete och skapande av efterfrågan) efter att påfyllnad har frisläppts. Därför kan lagerarbetare bearbeta utgående arbete genom att använda en mobilappen för distributionslagerhantering som är kopplad till skalningsenheten.
 
 ![Påfyllnadsbearbetningsflöde](./media/wes-wave-processing-ga.png "Påfyllnadsbearbetningsflöde")
 
@@ -94,7 +92,7 @@ Du måste logga in på navet för att använda processen *Släpp till distributi
 
 När du använder **Automatiskt släpp av försäljningsorder**, du kan välja specifika inköpsorderrader baserat på en fråga. Ett vanligt scenario är att ställa in ett återkommande batchjobb som frisläpper alla bekräftade inköpsorderrader som förväntas komma in nästa dag.
 
-Arbetaren kan köra mottagningsprocessen med hjälp av en distributionslagerapp som är ansluten till skalningsenhet. Data registreras sedan av skalningsenheten och rapporteras mot inkommande lagerorder. Skapandet och bearbetningen av efterföljande borttagning kommer också att hanteras av skalningsenheten.
+Arbetaren kan köra mottagningsprocessen med hjälp av en mobilappen för distributionslagerhantering som är ansluten till skalningsenhet. Data registreras sedan av skalningsenheten och rapporteras mot inkommande lagerorder. Skapandet och bearbetningen av efterföljande borttagning kommer också att hanteras av skalningsenheten.
 
 Om du inte använder processen *frisläppning till lager* och därför inte använder *lagerställeorder*, kan navet bearbeta inleverans och bearbetning av lager oberoende från skalningsenheter.
 
@@ -117,10 +115,10 @@ Användare som fungerar som lagerchefer på både nav- och skalningsenheterna b�
 Följande processer för lagerkörning kan aktiveras för en WES arbetsbelastning på en skalningsenhet:
 
 - Valda påfyllningsmetoder för försäljnings- och överföringsorder (allokering, efterfrågepåfyllnad, skapande av behållare, skapande av arbete och utskrift av påfyllnadsetikett)
-- Bearbeta lagerställearbete för försäljnings- och överföringsorder med hjälp av lagerställeprogrammet (inklusive påfyllnadsarbete)
-- Fråga om lagerbehållning med hjälp av distributionslagerappen
-- Skapa och köra lagerrörelser med hjälp av distributionslagerappen
-- Registrera inköpsorder och utföra inlagringsarbete med hjälp av distributionslagerappen
+- Bearbeta lagerställearbete för försäljnings- och överföringsorder med hjälp av mobilappen för distributionslagerhantering (inklusive påfyllnadsarbete)
+- Fråga om lagerbehållning med hjälp av mobilappen för distributionslagerhantering
+- Skapa och köra lagerrörelser med hjälp av mobilappen för distributionslagerhantering
+- Registrera inköpsorder och utföra inlagringsarbete med hjälp av mobilappen för distributionslagerhantering
 
 Följande arbetsordertyper stöds för närvarande för WES-arbetsbelastningar vid distributioner av skalningsenhet:
 
@@ -133,7 +131,7 @@ Följande arbetsordertyper stöds för närvarande för WES-arbetsbelastningar v
 Inga andra typer av källdokumenthantering eller lagerarbete stöds för närvarande på skalningsenheter. För WES-arbetsbelastning på en skalningsenhet kan du till exempel inte utföra en mottagningsprocess för överföringsorder (överföringsinleverans) eller bearbeta arbetsuppgift för rullande inventering.
 
 > [!NOTE]
-> Menyalternativ och knappar för mobila enheter för funktioner som inte stöds visas inte i _distributionslagerapp_ när den är ansluten till en distribution av skalningsenhet.
+> Menyalternativ och knappar för mobila enheter för funktioner som inte stöds visas inte i _mobilappen för distributionslagerhantering_ när den är ansluten till en distribution av skalningsenhet.
 
 > [!WARNING]
 > När du kör en arbetsbelastning på en skalningsenhet kan du inte köra processer som inte stöds för det specifika lagerstället i navet. De tabeller som finns längre fram i det här avsnittet innehåller de funktioner som stöds.
@@ -164,7 +162,7 @@ Följande funktioner för lagerstyrning stöds för närvarande inte i arbetslas
 - Bearbetning av lagerställe med leveransnoteringar
 - Bearbetning av lagerställe med tröskelvärde för rullande inventering som utlöser
 - Bearbetning av distributionslagerarbete med materialhantering/Warehouse Automation
-- Användning av bilden av huvuddata för produkt (t.ex. på distributionslagerappen)
+- Användning av bilden av huvuddata för produkt (t.ex. på mobilappen för distributionslagerhantering)
 
 > [!WARNING]
 > Vissa lagerställefunktioner är inte tillgängliga för lagerställen som kör lagerstyrningsarbetsbelastningar på en skalningsenhet, och den har inte heller stöd för hantering av lagerställen eller på arbetsbelastningen vid lagerstyrning.
@@ -253,7 +251,7 @@ I följande tabell visas vilka funktioner för lagerställeåtgärder och hanter
 | Rörelse                                           | Ja | Ja                          |
 | Förflyttning efter registreringsskylt                               | Ja | Ja                          |
 | Överföring lagerställe                                 | Ja | Nr                           |
-| Skapa överföringsorder från distributionslagerappen           | Ja | Nr                           |
+| Skapa överföringsorder från mobilappen för distributionslagerhantering           | Ja | Nr                           |
 | Justering (in/ut)                                | Ja | Nr                           |
 | Ändring av lagerstatus                            | Ja | Nr                           |
 | Rullande inventering och inventering av avvikelsebearbetning | Ja | Nr                           |

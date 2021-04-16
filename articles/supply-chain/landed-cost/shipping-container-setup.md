@@ -2,7 +2,6 @@
 title: Fraktcontainrar
 description: I det här avsnittet beskrivs hur du ställer in leveransbehållare för modulen hemtagningskostnad.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/09/2020
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-09
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ca712aa7f07792861d5ba36afd8d7b63cc9ce8fb
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 2f7e9435aa3d0d06e1cc51457a6343b807d76dc7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500968"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833723"
 ---
 # <a name="shipping-container-setup"></a>Inställningar för leveransbehållare
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 I det här avsnittet beskrivs hur du ställer in leveransbehållare för modulen **hemtagningskostnad**.
 

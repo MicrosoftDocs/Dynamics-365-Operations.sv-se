@@ -1,12 +1,10 @@
 ---
-title: Kom i gång med tillägget för elektronisk fakturering för Egypten
-description: Det här avsnittet innehåller information som hjälper dig att komma igång med tillägget elektronisk fakturering för Egypten i Finance och Supply Chain Management.
+title: Kom i gång med elektronisk fakturering för Egypten
+description: Det här avsnittet innehåller information som hjälper dig att komma igång med elektronisk fakturering för Egypten i Finance och Supply Chain Management.
 author: gionoder
-manager: AnnBe
-ms.date: 02/26/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,34 +15,35 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 68ee08226f440e850a080600dbf5e16768b45e43
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: f6175a50a88d2d636bfafc5988265b8657630758
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592608"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840206"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on-for-egypt"></a>Kom i gång med tillägget för elektronisk fakturering för Egypten
+# <a name="get-started-with-electronic-invoicing-for-egypt"></a>Kom i gång med elektronisk fakturering för Egypten
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-Det här avsnittet innehåller information som hjälper dig att komma igång med tillägget elektronisk fakturering för Egypten. Ämnena vägleder dig genom konfigurationsstegen som är landsberoende i Regulatory Configuration Services (RCS) och kompletterar stegen som beskrivs i avsnittet, [Kom igång med tillägget Elektronisk fakturering](e-invoicing-get-started.md).
+Det här avsnittet innehåller information som hjälper dig att komma igång med elektronisk fakturering för Egypten. Ämnena vägleder dig genom konfigurationsstegen som är landsberoende i Regulatory Configuration Services (RCS) och kompletterar stegen som beskrivs i [Kom igång med Elektronisk fakturering](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-for-egyptian-electronic-invoice-eg-electronic-invoicing-feature"></a>Landsspecifik konfiguration för egyptisk elektronisk faktura (EG) Elektronisk faktureringsfunktion
 
-För att konfigurera egyptisk elektronisk fakturafunktion (EG), finns det några steg att slutföra. Vissa av parametrarna från konfigurationerna publiceras med standardvärden, så de måste granskas och uppdateras för att bättre passa din verksamhet.
+Vissa av parametrarna från **funktionen Egyptisk elektronisk faktura (EG)** publiceras med standardvärden. Granska värdena om det behövs, uppdatera dem så att de bättre återspeglar verksamhetens behov innan du distribuerar den elektroniska faktureringsfunktionen till tjänstemiljön.
+
+Detta avsnitt kompletterar avsnittet **Landsspecifik konfiguration för funktionen elektronisk fakturering** i ämnet [Kom igång med Elektronisk fakturering](e-invoicing-get-started.md).
 
 ### <a name="prerequisites"></a>Förutsättningar
 
 Innan du kan slutföra denna procedur i detta avsnitt måste du:
 
-- Skapa en digital certifikatshemlighet, som beskrivs i avsnittet **Skapa digitalt certifikatshemlighet** i [Kom igång med tillägget Elektronisk fakturering](e-invoicing-get-started-service-administration.md). För teständamål tillhandahåller den egyptiska skattemyndigheten specifika digitala testcertifikat som endast får användas under test- och lösningsvalideringsfaser. För mer information, besök den egyptiska skattemyndighetens webbplats med länken i [Egyptisk e-fakturering SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
-- Skapa en egyptisk elektronisk faktura (EG) elektronisk faktureringsfunktion för din organisation, som beskrivs i avsnittet **Skapa en elektronisk faktureringsfunktion under din organisationsleverantör** i ämnet [Kom igång med tillägget Elektronisk fakturering](e-invoicing-get-started.md).
+- Skapa en digital certifikatshemlighet, som beskrivs i avsnittet **Skapa digitalt certifikatshemlighet** i [Kom igång med Elektronisk fakturering](e-invoicing-get-started-service-administration.md). För teständamål tillhandahåller den egyptiska skattemyndigheten specifika digitala testcertifikat som endast får användas under test- och lösningsvalideringsfaser. För mer information, besök den egyptiska skattemyndighetens webbplats med länken i [Egyptisk e-fakturering SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
 
-1. I RCS, avsnittet **globaliseringsfunktion** i arbetsytan **Globaliseringsfunktioner**, välj panelen **Tillägg för elektroniska fakturor**.
-2. På sidan **funktioner för tillägget elektronisk fakturering** kontrollerar du att funktionen **Egyptisk elektronisk faktura (EG)** elektronisk fakturering du skapat är vald.
+1. I RCS, avsnittet **Funktioner** i arbetsytan **Globaliseringsfunktioner**, välj panelen **Elektroniska fakturor**.
+2. På sidan **funktioner för elektronisk fakturering** kontrollerar du att funktionen **Egyptisk elektronisk faktura (EG)** elektronisk fakturering du skapat är vald.
 3. I fliken **Versioner** bekräftar du att versionen **Utkast** har valts.
 4. På fliken **Inställningar** i rutnätet väljer du funktionsinställningen **Försäljningsfaktura**.
 5. Välj **Redigera** och på fliken **Åtgärder** i fältgruppen **Åtgärder**, välj **Signera json-dokument för egyptisk skattemyndighet**.
@@ -52,18 +51,16 @@ Innan du kan slutföra denna procedur i detta avsnitt måste du:
 7. I fältgruppen **Åtgärder**, välj **Integrera med egyptisk ETA-tjänst**. Upprepa det här steget för de två förekomsterna av åtgärden.
 8. I fältgruppen **Parametrar**, välj **Webbtjänst-URL** och **Inloggningstjänst-URL** och om nödvändigt granska URL-parametrarna. Gå till den egyptiska skattemyndighetens webbplats för att få URL för testning och produktion med hjälp av länken i [Egyptisk e-fakturering SDK](https://sdk.sit.invoicing.eta.gov.eg/faq/).
 9. Markera **Spara** och stäng sedan sidan.
-10. För att konfigurera programinställningarna, se [Komma igång med tillägget elektronisk fakturering](e-invoicing-get-started.md).
+10. Om du vill distribuera funktionen Elektronisk fakturering till tjänstmiljön, se [Kom igång med Elektronisk fakturering](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-of-the-application-setup-for-the-egyptian-electronic-invoice-eg-electronic-invoicing-feature"></a>Landsspecifik konfiguration av appinställningen för egyptisk elektronisk fakturafunktion (EG)
 
-Konfigurationen av appinställningen för **Egyptisk elektronisk faktura (EG)** elektronisk faktureringsfunktion kräver att specifika steg utförs. Du måste utföra dessa steg innan du distribuerar din funktion för elektronisk fakturering i din elektroniska faktureringsmiljö.
+Genomför de här stegen innan du distribuerar programinställningarna till det anslutna programmet Finance eller Supply Chain Management.
 
-### <a name="prerequisites"></a>Förutsättningar
+Detta avsnitt kompletterar avsnittet **Landsspecifik konfiguration för programkonfiguration** i ämnet [Kom igång med Elektronisk fakturering](e-invoicing-get-started.md).
 
-Innan du slutför proceduren i detta avsnitt, skapa och initiera en **Egyptisk elektronisk faktura (EG)** Elektronisk faktureringsfunktion för att konfigurera appinställningen för **Egyptisk elektronisk faktura (EG)** Elektronisk faktureringsfunktion, som beskrivs i avsnittet **Konfigurera appinställningarna** i ämnet, [Kom i gång med tillägget för elektronisk fakturering](e-invoicing-get-started.md).
-
-1. I RCS, avsnittet **globaliseringsfunktion** i arbetsytan **Globaliseringsfunktioner**, välj panelen **Tillägg för elektroniska fakturor**.
-2. På sidan **funktioner för tillägget elektronisk fakturering** kontrollerar du att funktionen **Egyptisk elektronisk faktura (EG)** elektronisk fakturering är vald.
+1. I RCS, avsnittet **Funktioner** i arbetsytan **Globaliseringsfunktioner**, välj panelen **Elektroniska fakturor**.
+2. På sidan **funktioner för elektronisk fakturering** kontrollerar du att funktionen **Egyptisk elektronisk faktura (EG)** elektronisk fakturering är vald.
 3. I fliken **Versioner** bekräftar du att versionen **Utkast** har valts.
 4. På fliken **Inställningar** väljer du **Programinställningar** och i fältet **Kopplat program** väljer du det program som du vill distribuera till.
 5. I fältet **Tabellnamn**, verifiera att kundfakturajournalen är vald.
@@ -75,7 +72,7 @@ Innan du slutför proceduren i detta avsnitt, skapa och initiera en **Egyptisk e
 11. I fältet **Överföringsstatus** välj **Väntande**.
 12. I fältet **Namn på dataenhet**, välj **Försäljningsfakturahuvuden V2**.
 13. I fältet **Modellmappning** välj **Egypten import av svarsdata** med **(förhandsversion) Egypten import för svarsdata** och sedan **Spara**.
-14. Om du vill distribuera funktionen Elektronisk fakturering ska du gå till [Kom igång med tillägget Elektronisk fakturering](e-invoicing-get-started.md).
+14. För att distribuera appinställningarna till Finance eller Supply Chain Management ansluten app, se [Kom igång med elektronisk fakturering](e-invoicing-get-started.md).
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
 
@@ -83,9 +80,9 @@ Om du aktiverar funktionen **Egyptisk elektronisk faktura (EG)** kan det krävas
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-- [Tillägg för elektronisk fakturering – översikt](e-invoicing-service-overview.md)
-- [Kom i gång med tjänstadministration för tillägget för elektronisk fakturering](e-invoicing-get-started-service-administration.md)
-- [Kom i gång med tillägget för elektronisk fakturering](e-invoicing-get-started.md)
+- [Elektronisk fakturering – översikt](e-invoicing-service-overview.md)
+- [Kom i gång med tjänstadministration för elektronisk fakturering](e-invoicing-get-started-service-administration.md)
+- [Kom i gång med elektronisk fakturering](e-invoicing-get-started.md)
 - [Elektroniska kundfakturor i Egypten](emea-egy-e-invoices.md)
 
 

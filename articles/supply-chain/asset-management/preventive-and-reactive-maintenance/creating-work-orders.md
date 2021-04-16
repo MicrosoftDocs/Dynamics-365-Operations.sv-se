@@ -2,11 +2,9 @@
 title: Skapa arbetsorder
 description: Det här avsnittet innehåller förklaringar av hur du skapar arbetsorder i Tillgångshantering.
 author: johanhoffmann
-manager: tfehr
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 76306fb31e7e5297e6a5d64b97b5bd09b64349ee
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 3982232e5008d6f8c283d6cecfaf2fa6e66150a1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500584"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836744"
 ---
 # <a name="creating-work-orders"></a>Skapa arbetsorder
 
@@ -62,8 +60,6 @@ Skapa arbetsorder som baseras på din underhållsplan genom att följa dessa ste
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>Gruppera arbetsorderrader som skapas automatiskt när en underhållsplan körs
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 Med hjälp av den här funktionen kan du definiera regler för gruppering av arbetsorderrader under en enskild arbetsorder när systemet är inställt på att generera arbetsorder automatiskt, baserat på en underhållsplan. Tidigare kunde automatiskt genererade arbetsorder bara innehålla en rad. Du kan nu dock gruppera arbetsorder efter till exempel tillgång, tillgångstyp eller funktionell plats. (Manuellt genererade arbetsorder kan redan grupperas på det här sättet, på det sätt som beskrivs i det föregående avsnittet av det här avsnittet.)
 
 ### <a name="enable-grouping-for-automatically-generated-work-orders"></a>Aktivera gruppering för automatiskt genererade arbetsorder
@@ -71,7 +67,7 @@ Med hjälp av den här funktionen kan du definiera regler för gruppering av arb
 Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 
 - **Modul:** *Tillgångshantering*
-- **Funktionens namn:** *(förhandsversion) Använd regler för att gruppera arbetsorder när du kör en underhållsplan*
+- **Funktionens namn:** *Använd regler för att gruppera arbetsorder när du kör en underhållsplan*
 
 ### <a name="set-up-grouping-for-automatically-generated-work-orders"></a>Ange gruppering för automatiskt genererade arbetsorder
 

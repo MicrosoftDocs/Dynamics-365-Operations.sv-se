@@ -2,11 +2,9 @@
 title: Bokföringstyper för leasing
 description: Det här ämnet beskriver de bokföringstyper som används för leasingtransaktioner för tillgångar.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9b7d8c545c1addaa570d54855bbad6c576783007
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ddc229f3ab8e048390f27503e2c6c26bd1a6f24f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229512"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841151"
 ---
 # <a name="lease-posting-types"></a>Bokföringstyper för leasing
 
@@ -90,15 +88,6 @@ Kontot är kopplat till motkontot för ROU-tillgången. Det här kontot krediter
 **Exempel på journalposter:** Upplupen avskrivning<br>
 **Debet:** Avskrivningskostnad XXX<br>
 **Kredit:** Ackumulerad avskrivning XXX
-
-## <a name="retained-earnings"></a>Balanserade vinstmedel
-
-Kontot är kopplat till balanserade vinstmedel. Detta konto kan antingen debiteras eller krediteras i en journalpost för en övergångsjustering genom att använda den fullständiga retrospektiva metoden eller den kumulativa "catch-up A"-metoden. Skillnaden mellan den ursprungliga ROU-tillgången och leasingskulden bokförs på balanserade vinstmedel. I sällsynta fall kan de balanserade vinstmedlen också påverkas när leasingavtalet ändras, om klassificeringen av ett leasingavtal ändras från finansiellt till operationellt för att skriva upp eller ner ROU-tillgången så att den motsvarar leasingskulden.
-
-**Exempel på journalposter:** Övergångsjustering (metoden fullständigt retroaktivt eller kumulativt "catch-up option A")<br>
-**Debet:** Leasingskuld XXX<br>
-**Kredit:** Leasingtillgång XXX<br>
-**Kredit:** Balanserade vinstmedel XXX
 
 ## <a name="variable-payment"></a>Variabel betalning
 

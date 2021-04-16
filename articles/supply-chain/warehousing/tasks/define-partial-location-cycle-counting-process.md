@@ -2,11 +2,9 @@
 title: 'Definiera rullande inventering av del av platser '
 description: När du använder planer för rullande inventering för att skapa inventeringsarbete kan du styra den faktiska inventeringen genom att begära att enbart vissa produkter eller produktvarianter inventeras i stället för all lagerbehållning på platsen.
 author: ShylaThompson
-manager: tfehr
 ms.date: 06/23/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSWorkTemplateTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfea71459b80712c924912d909a0fdfa5fad09ad
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fcda301934c6ccc06f17ed8ae13c52754336d2ce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5238952"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830917"
 ---
 # <a name="define-partial-location-cycle-counting-process"></a>Definiera rullande inventering av del av platser  
 

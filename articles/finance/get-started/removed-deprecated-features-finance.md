@@ -2,11 +2,9 @@
 title: Borttagna och utfasade funktioner i Dynamics 365 Finance
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 Finance.
 author: roschlom
-manager: AnnBe
 ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 14428491383883c1fc2a8cdcd1975e1f1cb71b40
-ms.sourcegitcommit: e9d19f25e64cf4d1c1d07c8031a7081454a6f79e
+ms.openlocfilehash: 5a8f5dbc52eab78697de0d3a48d8cceb42c36540
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5474073"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836923"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Borttagna och utfasade funktioner i Dynamics 365 Finance
 
@@ -39,7 +37,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ### <a name="lcs-repository-as-a-storage-option-for-electronic-reporting-configurations"></a>LCS-databas som ett lagringsalternativ för elektroniska rapporteringskonfigurationer
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Utbytt med den nya globala databasen Regulatory Configuration Service (RCS) |
 | **Ersatt av en annan funktion?**   | Ja |
@@ -51,7 +49,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ### <a name="vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic"></a>Elektroniska rapporteringsformat "Momsdeklaration (CZ)" och "Export av kontrollutdrag (CZ)" för Tjeckien
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Ersatta med nya format |
 | **Ersatt av en annan funktion?**   | Ja |
@@ -61,7 +59,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>"Exportformat för redovisningstransaktioner (BE)" Elektroniskt rapporteringsformat och respektive "Export av redovisningstransaktion (BE)"-modell för Belgien
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Ersätts med ett nytt ER-format enligt modellen "Standardverifieringsfil för skatt (SAF-T)".  |
 | **Ersatt av en annan funktion?**   | Ja |
@@ -71,7 +69,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ### <a name="vat-100-report-for-the-united-kingdom-in-ssrs-format"></a>"VAT 100"-rapport för Storbritannien i SSRS-format
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Ersätts med nytt ER-format – "Momsdeklaration Excel (UK)" under "Momsdeklarationsmodell".  |
 | **Ersatt av en annan funktion?**   | Ja |
@@ -83,7 +81,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11-stöd för Dynamics 365 är inaktuellt
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Från och med december 2020 kommer Microsoft Internet Explorer 11-stöd för samtliga Dynamics 365-produkter att betraktas som inaktuellt, och Internet Explorer 11 kommer inte att stödjas efter augusti 2021.<br><br>Detta påverkar kunder som använder Dynamics 365-produkter som har utformats för användning med ett Internet Explorer 11-gränssnitt. Efter augusti 2021 stöds inte Internet Explorer 11 för sådana Dynamics 365-produkter. |
 | **Ersatt av en annan funktion?**   | Vi rekommenderar våra kunder att övergå till Microsoft Edge.|
@@ -95,7 +93,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ### <a name="polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Polsk SSRS-rapporter: utgående momsregister, ingående momsregister, sammanfattande EU-momsregister – funktionsreferens PL-00014
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Krävs inte enligt lag.  |
 | **Ersatt av en annan funktion?**   | Ja (Excel-format för standardgranskningsfil med momsdeklaration – JPK_VDEK) |
@@ -107,7 +105,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ### <a name="norwegian-standard-main-accounts"></a>Norska standardhuvudkonton
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Omformat  |
 | **Ersatt av en annan funktion?**   | Ja (ersatt med programspecifika parametrar för ER-format) |
@@ -118,7 +116,8 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.7 utgåva
 
 ### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>Dialogrutan ändra arbetsflödesbegäran innehåller inte längre listrutan för användarval
-|   |  |
+
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Ändras till funktionen med kontogruppsurval.  |
 | **Ersatt av en annan funktion?**   | Ja |

@@ -2,11 +2,9 @@
 title: Installera och ansluta mobilappen Hantering av distributionslager
 description: I det här avsnittet beskrivs hur du installerar mobilappen Hantering av distributionslager på alla dina mobila enheter och konfigurerar den för anslutning till din Microsoft Dynamics 365 Supply Chain Management-miljö.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
@@ -18,20 +16,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e1e8c8b1464a38a0145cbdcdcb4882db00d3c4c1
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: 378fff6274902025b1fca487874f37ed30df25ed
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5487035"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835616"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installera och ansluta mobilappen Hantering av distributionslager
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Det här ämnet beskriver hur man konfigurerar mobilappen för distributionslagerhantering. Mer information om hur du konfigurerar en gamla distributionslagerappen finns i [Installera och koppla in distributionslagerappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Det här ämnet beskriver hur man konfigurerar mobilappen för distributionslagerhantering. Mer information om hur du konfigurerar en gamla distributionslagerappen (nu inaktuell) finns i [Installera och koppla in distributionslagerappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
 I det här avsnittet beskrivs hur du laddar ner och installerar mobilappen Hantering av distributionslager på alla dina mobila enheter och konfigurerar appen den för anslutning till din Supply Chain Management-miljö. Du kan konfigurera varje enhet manuellt eller också kan du importera anslutningsinställningar via en fil eller genom att skanna en QR-kod.
 

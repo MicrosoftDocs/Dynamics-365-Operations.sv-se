@@ -2,11 +2,9 @@
 title: En verifikation med flera kund- eller leverantörsposter
 description: Det här avsnittet innehåller en översikt över vad som händer när du bokför en enskild verifikation med flera kund- eller leverantörsposter. Den här funktionen ska annulleras i kommande versioner av Microsoft Dynamics 365 Finance och därför rekommenderar vi att inte använda denna metod för bokföring på grund av redovisningens inverkan på kvittningsbehandling.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bca422d7c79bef2155b84e3da964c5e47af8ac8f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a4e12eb3162d00c76254582c0621c9dd567df562
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231600"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837307"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>En verifikation med flera kund- eller leverantörsposter
 
