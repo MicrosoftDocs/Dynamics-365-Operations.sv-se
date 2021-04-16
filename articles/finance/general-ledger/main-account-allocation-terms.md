@@ -2,11 +2,9 @@
 title: Allokeringsvillkor
 description: Det här ämnet ger information om hur du använder allokeringsvillkor på ett huvudkonto.
 author: rachel-profitt
-manager: AnnBe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AccountingDistribution, LedgerAllocationRule, MainAccount, AllocationTerms
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-06-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60b995216eed2eda740cb4cd9be79d15d46789e4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5735cbdd4c8b137d01a56be0009b60d32c21e94e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248937"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823678"
 ---
 # <a name="allocation-terms"></a>Allokeringsvillkor
 

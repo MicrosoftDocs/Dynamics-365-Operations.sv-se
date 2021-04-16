@@ -2,11 +2,9 @@
 title: Arbeta med platsdirektiv
 description: I det här avsnittet beskrivs hur du arbetar med platsdirektiv. Platsdirektiv är användardefinierade regler som hjälper till att identifiera plockning och inlagringsplatser för lagerrörelse.
 author: Mirzaab
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
-ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
+ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470529"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838404"
 ---
 # <a name="work-with-location-directives"></a>Arbeta med platsdirektiv
 
@@ -152,7 +150,7 @@ Fälten på snabbfliken **platsdirektiv** är specifika för arbetsordertypen so
     > [!IMPORTANT]
     > Om du vill kunna utföra placeringar av flera artiklar och placeringar av en SKU måste du ange två rader som har samma struktur och inställning, men du måste ställa in alternativet **Flera SKU-enheter** till *Ja* för en rad och *Nej* för den andra. För placeringsoperationer måste du därför ha två identiska platsdirektiv, även om du inte behöver skilja enskilda SKU:er och flera SKU:er på ett arbets-ID. Om du inte ställer in båda dessa platsdirektiv kommer oväntade platser för affärsprocesser från det tillämpliga platsdirektivet. Du måste använda en liknande inställning för plats direktiv som har **arbetstypen** *plocka* om du behöver bearbeta order som innehåller flera SKU:er.
 
-    Använd alternativet **Flera SKU-enheter** för arbetsrader som hanterar fler än ett artikelnummer. (Artikelnumret kommer att vara tomt i arbetsuppgifterna och visas som **Flera** på bearbetningssidorna i distributionslagerappen.)
+    Använd alternativet **Flera SKU-enheter** för arbetsrader som hanterar fler än ett artikelnummer. (Artikelnumret kommer att vara tomt i arbetsuppgifterna och visas som **Flera** på bearbetningssidorna i mobilappen för distributionslagerhantering.)
 
     I ett typiskt exempelscenario har en arbetsmall ställts in så att den har fler än ett plocknings-/placeringspar. I det här fallet vill du kanske söka efter en viss mellanlagringsplats att använda för rader med **arbetstypen** *placera*.
 
@@ -171,7 +169,7 @@ Fälten på snabbfliken **platsdirektiv** är specifika för arbetsordertypen so
     > [!NOTE]
     > Det här fältet är endast tillgängligt för de valda arbetsordertyperna där lagerpåfyllnad är tillåtet. En fullständig lista finns i [fält som är specifika för avsnittet arbetsordertyper](#fields-specific-types).
 
-- **Dispositionskod** – Det här fältet används för platsdirektiv som har en arbetsordertyp *Inköpsorder orders*, *Plats för slutförda varor* eller *Returorders* och arbetstypen *Placera*. Använd den för att vägleda flödet att använda ett visst platsdirektiv, beroende på dispositionskoden som en arbetare har valts i distributionslagerappen. Du kan till exempel dirigera returnerade varor till en inspektionsplats innan de returneras till lagret. En dispositionskod kan kopplas till en lagerstatus. På så sätt kan den användas för att ändra lagerstatus som en del i en inleveransprocess. Du har till exempel en dispositionskod, *kvalitetskontroll* svar, som anger lagerstatus till *kvalitetskontroll*. Du kan sedan ha ett separat platsdirektiv för att flytta det lagret till en karantänplats.
+- **Dispositionskod** – Det här fältet används för platsdirektiv som har en arbetsordertyp *Inköpsorder orders*, *Plats för slutförda varor* eller *Returorders* och arbetstypen *Placera*. Använd den för att vägleda flödet att använda ett visst platsdirektiv, beroende på dispositionskoden som en arbetare har valts i mobilappen för distributionslagerhantering. Du kan till exempel dirigera returnerade varor till en inspektionsplats innan de returneras till lagret. En dispositionskod kan kopplas till en lagerstatus. På så sätt kan den användas för att ändra lagerstatus som en del i en inleveransprocess. Du har till exempel en dispositionskod, *kvalitetskontroll* svar, som anger lagerstatus till *kvalitetskontroll*. Du kan sedan ha ett separat platsdirektiv för att flytta det lagret till en karantänplats.
 
     > [!NOTE]
     > Det här fältet är endast tillgängligt för de valda arbetsordertyperna där lagerpåfyllnad är tillåtet. En fullständig lista finns i [fält som är specifika för avsnittet arbetsordertyper](#fields-specific-types).

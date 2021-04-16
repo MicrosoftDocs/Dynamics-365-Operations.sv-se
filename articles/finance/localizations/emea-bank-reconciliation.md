@@ -2,11 +2,9 @@
 title: Bankutdrag och betalningsavstämning för EU
 description: Det här avsnittet innehåller en översikt över funktioner med vilka du kan stämma av betalningsinformation från banker i format som används av europeiska länder.
 author: neserovleo
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankAccountTable, CustPaymMode, VendPaymMode
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Belgium, Norway, Sweden, Switzerland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5410cd29c59c6c655c22e82eca43b5132b98ff0f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 41f294539d9b906df8ddcc0851d7facd1f7d46d2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209880"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839913"
 ---
 # <a name="bank-statement-and-payment-reconciliation-for-the-eu"></a>Bankutdrag och betalningsavstämning för EU
 

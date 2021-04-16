@@ -2,11 +2,9 @@
 title: Översikt över sidor med produktinformation
 description: Det här ämnet innehåller en översikt över sidor för produktdetaljer (PDP) i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 020c2a72515eb112adb33c6b58e3a5084339d040
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e4a61383c790b63aa1c07f7004f264495171441a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243850"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792229"
 ---
 # <a name="product-details-pages-overview"></a>Översikt över sidor med produktinformation
 
 [!include [banner](includes/banner.md)]
 
 Det här ämnet innehåller en översikt över sidor för produktdetaljer (PDP) i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 En PDP innehåller detaljerad information om en produkt och kunder kan välja produktalternativ som storlek, stil och färg. En PDP ska visa all produktinformation som en kund behöver för att fatta ett köpbeslut.
 

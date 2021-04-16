@@ -2,7 +2,6 @@
 title: Hantera resor
 description: I det här avsnittet beskrivs hur du arbetar med resor. En resa representerar vanligtvis ett fartyg. Beroende på vad du använder och vilka procedurer du har kan det dock representera en leverantör, en inköpsorder eller någon annan artikel som för är vettig för din organisation.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/14/2020
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 850fbb2077a592ec4ba8578cab4795d573464f54
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 0b1414efbdde77af5d7fa15ff066e4ddcfd6bad2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501016"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833795"
 ---
 # <a name="manage-voyages"></a>Hantera färder
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 En resa representerar vanligtvis ett fartyg. Beroende på vad du använder och vilka procedurer du har kan det dock representera en leverantör, en inköpsorder eller någon annan artikel som för är vettig för din organisation.
 
@@ -74,9 +72,9 @@ I följande tabell beskrivs de åtgärder som finns tillgängliga på fliken **H
 | Bokför faktura | Bokför en faktura för alla inköpsorderrader i färden. Om varorna i färden går igenom bearbetningen av varor på väg, kommer inköpsorderraderna att faktureras innan inleveransen är klar. När den ursprungliga inköpsordern faktureras skapas de varor på väg som är associerade med de ursprungliga inköpsorderraderna. Dessa order kan sedan tas emot på lagerstället. Om multiföretagsleverans används öppnas en ny dialogruta för bokföring av faktura för varje företag. |
 | Leverera överföringsorder | Bokför en överföringsorderfärd för alla överföringsorderrader i färden. När den här knappen är vald är endast överföringsorder tillgängliga för uppdatering. |
 | Inleverera överföringsorder | Bokför en inleverans av överföringsorder för alla överföringsorderrader i färden. |
-| Inleverera varor på väg | Ta emot alla orderrader som är på väg i färden. Den här knappen är ett av de tre alternativ som är tillgängliga för mottagning av varor på väg i en färd. (De övriga två alternativen är knappen **Skapa införseljournal** som beskrivs senare i denna tabell och distributionslagerappen.) Det här alternativet är det enklaste alternativet och kommer att behandla varorna i transit från varulageret och till det slutliga destinationslagret. Om du vill ha mer kontroll över processen kan du använda införseljournalen eller en mobil enhet för att bearbeta inleveransen av varor. |
+| Inleverera varor på väg | Ta emot alla orderrader som är på väg i färden. Den här knappen är ett av de tre alternativ som är tillgängliga för mottagning av varor på väg i en färd. (De övriga två alternativen är knappen **Skapa införseljournal** som beskrivs senare i denna tabell och mobilappen för distributionslagerhantering.) Det här alternativet är det enklaste alternativet och kommer att behandla varorna i transit från varulageret och till det slutliga destinationslagret. Om du vill ha mer kontroll över processen kan du använda införseljournalen eller en mobil enhet för att bearbeta inleveransen av varor. |
 | Sök efter automatiska kostnader | Hitta alla relevanta kostnader. Om dessa kostnader redan har hittats eller uppdaterats visas följande meddelande: "Ej fakturerade kostnadsrader finns. Vill du skriva över dem? Alla kostnader som inte är associerade med den tidpunkten då den skapades kommer att finnas. Färdkostnader som är kopplade till en färd och som har fakturerats kommer inte att skrivas över. |
-| Skapa införseljournal | <p>Öppna dialogrutan **Skapa införseljournal**, där du kan skapa en införseljournal som anger en plats. Den här dialogrutan innehåller följande alternativ:</p><ul><li>**Skapa från varor på väg** eller **Skapa från överföringsorder** – Etiketten för det här alternativet ändras beroende på om du använder vara på väg-processen. Ställ in det till *Ja* för att öppna en införseljournalsida där du kan bearbeta en standardinföringsjournal för de varor på väg som är associerade med färden. Om artikeln redan har inkommit till lagerstället vid slutdestinationen läggs den inte till på raderna i införseljournalen.</li><li>**Initiera kvantitet** – Ange det här alternativet till *Ja* om du vill initiera den kvantitet som ska tas emot, baserat på den kvantitet av varor som angetts på färdraden. Om färdraden är delvis inlevererad kommer denna kvantitet att vara den återstående kvantiteten. Vi rekommenderar att du ställer in detta alternativ på *Ja*.</li><li>**Skapa från orderrader** – Ange det här alternativet till *Ja* om du vill ta värdet från orderraderna.</li></ul><p>Den här knappen är ett av de tre alternativ som är tillgängliga för mottagning av varor i en färd. (De övriga alternativen är knappen **Ta emot varor på väg** som beskrivs tidigare i det här registret och distributionslagerappen.)</p> |
+| Skapa införseljournal | <p>Öppna dialogrutan **Skapa införseljournal**, där du kan skapa en införseljournal som anger en plats. Den här dialogrutan innehåller följande alternativ:</p><ul><li>**Skapa från varor på väg** eller **Skapa från överföringsorder** – Etiketten för det här alternativet ändras beroende på om du använder vara på väg-processen. Ställ in det till *Ja* för att öppna en införseljournalsida där du kan bearbeta en standardinföringsjournal för de varor på väg som är associerade med färden. Om artikeln redan har inkommit till lagerstället vid slutdestinationen läggs den inte till på raderna i införseljournalen.</li><li>**Initiera kvantitet** – Ange det här alternativet till *Ja* om du vill initiera den kvantitet som ska tas emot, baserat på den kvantitet av varor som angetts på färdraden. Om färdraden är delvis inlevererad kommer denna kvantitet att vara den återstående kvantiteten. Vi rekommenderar att du ställer in detta alternativ på *Ja*.</li><li>**Skapa från orderrader** – Ange det här alternativet till *Ja* om du vill ta värdet från orderraderna.</li></ul><p>Den här knappen är ett av de tre alternativ som är tillgängliga för mottagning av varor i en färd. (De övriga alternativen är knappen **Ta emot varor på väg** som beskrivs tidigare i det här registret och mobilappen för distributionslagerhantering.)</p> |
 | Periodisera kostnader | Du kan periodisera kostnader där en kostnadstyp har ett redovisningskonto angivet för debet. Den här knappen används normalt när lagret är under transport eller när varor har tagits emot och fakturerats. |
 | Aggregera kostnader | Flytta kostnader från nivån för leveransbehållare till färdnivån. Du kan använda den här knappen i ett delat tjänst-/leveransscenario, där flera enheter delar en leveransbehållare eller ett kartongutrymme. Den har till exempel en 40 meters leveransbehållare och en 20 meters leveransbehållare, och fördelningen görs efter volym. I det här fallet kan varorna/enheterna som delar eller använder utrymmet i den 20 meter långa leveransbehållaren bestraffas. Om du vill fördela kostnaderna korrekt, kanske vissa organisationer vill överföra kostnaderna till den och fördela dem baserat på fördelningsmetoden på färdnivå. |
 | Ändra resemallen | Öppna en dialogruta där du kan ändra en resmall. När du har ändrat mallen tas färdkostnaderna bort. Därför måste du kanske välja **Sök efter automatiska kostnader** (se beskrivningen tidigare i den här tabellen) eller manuellt lägga till kostnader igen. |

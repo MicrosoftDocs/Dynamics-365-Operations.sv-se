@@ -2,11 +2,9 @@
 title: Lagerhantering av inkommande laster för inköpsorder
 description: Det här ämnet beskriver lagerhanteringsprocessen för inkommande laster för inköpsorder.
 author: omulvad
-manager: tfehr
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: fec2e7f39569c52ec17c5d0b2474eca720e0180a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 095ef3bb9fff26915bf4fbeb7e240ae9175e315c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235350"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835640"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhantering av inkommande laster för inköpsorder
 
@@ -66,7 +64,7 @@ När en inkommande last först inkommer till lagret måste lagerarbetarna regist
 
 - **En meny för mobila enheter som har konfigurerats för att stödja lastmottagning**
 
-    [Lagerställeapp](install-configure-warehousing-app.md) för mobila enheter stöder följande processer för att skapa arbetsprocesser:
+    [Mobilappen för distributionslagerhantering](../warehousing/install-configure-warehouse-management-app.md) för mobila enheter stöder följande processer för att skapa arbetsprocesser:
 
     - Mottagande av lastartikel
     - Mottagande och inleverans av lastartikel
@@ -285,7 +283,7 @@ Om du vill arbeta genom dessa scenarier med hjälp av de angivna exempelposterna
 
 Innan mottagande av inleveransansvarig kan använda en mobil enhet för att registrera inkommande lager som är länkat till en last, måste du skapa menyalternativet mobilenhet för det syftet.
 
-I det här avsnittet skapar du ett menyalternativ för mobila enheter och lägger till dem på en befintlig meny. Lagerarbetaren kan sedan välja menyalternativet i appen lagerstyrning.
+I det här avsnittet skapar du ett menyalternativ för mobila enheter och lägger till dem på en befintlig meny. Lagerarbetaren kan sedan välja menyalternativet i mobilappen för distributionslagerhantering.
 
 1. Gå till **Lagerstyrning \> Inställningar \> Mobil enhet \> Menyobjekt för mobil enhet** och kontrollera att menyn på din mobila enhet innehåller ett menyobjekt med följande inställningar:
 

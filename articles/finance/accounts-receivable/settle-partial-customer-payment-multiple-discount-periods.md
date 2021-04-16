@@ -2,11 +2,9 @@
 title: Kvitta en delkundsbetalning som har flera rabattperioder
 description: Det inlägg visar hur delvisa kundbetalningar kvittas om det finns flera rabattperioder.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c5047debd0f3d035ec5fc8bc24745183b28e9f0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1a15f952671152ac9e8b88e7394ec41220f964c0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241724"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835110"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Kvitta en delkundsbetalning som har flera rabattperioder
 
@@ -56,7 +54,7 @@ Den 28 juni gör kund 4031 en delbetalning på 294,00. Eftersom 28 juni infaller
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**. Om du inte ändrar värdet för **Kvitta transaktioner** till **294,00**, kommer värdet för **Kassarabattbelopp** att skilja sig. Men 6,00 kommer att utnyttjas som kassarabatt när betalningen bokförs, eftersom kvittningen justerar automatiskt värdet för **Belopp att kvitta**.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Kassarabattdatum           | 2015/06/30 |
 | Kassarabattbelopp         | 20,00     |
@@ -75,7 +73,7 @@ Kunden betalar resten av fakturabeloppet den 8 juli. En rabatt på 7,00 utnyttja
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Kassarabattdatum           | 2015/07/09 |
 | Kassarabattbelopp         | 30,00     |

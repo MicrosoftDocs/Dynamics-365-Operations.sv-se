@@ -2,7 +2,6 @@
 title: Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.18 (maj 2021)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.18.
 author: kamaybac
-manager: annbe
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0a75cd0b02c48421edebac0b83576095bea65bb6
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: dc53d2c40414993e43ac90ce4f878c7d1c425eb2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571798"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832140"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.18 (maj 2021)
 
@@ -36,17 +35,17 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
-Den här versionen innehåller följande nya funktioner: Vissa av funktionerna visas fortfarande i en förhandsversion, men andra användare kan redan vara tillgängliga i allmänhet. Följ länkarna till [Utgivningsplan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) för att se de officiella datumen för varje funktion.
+Den här versionen innehåller följande nya funktioner: Följ länkarna till [Utgivningsplan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) för att se de officiella datumen för varje funktion.
 
 - Automatisk frisläppning av inköpsorder (förbättring för [lagerställekörning med skalenheter i molnet](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - För mer information, se [Arbetsbelastningar för hantering av distributionslager för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-warehousing.md).
 
 - [Förbättringar och arkivering i företagsskala för lagerprestanda](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - För mer information, se [Arkivera lagertransaktioner](../inventory/archive-inventory-transactions.md)
 
-- [Rabatthantering](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)
+- [Rabatthantering](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Mer information finns i [översikt över rabatthanteringsmodul](../rebate-management/rebate-management-overview.md)
 
 - Förenklat gränssnitt endast för in- och utstämpling (förbättring för [Förbättrat körningsgränssnitt för produktionsgolvet för tillverkning](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Mer information finns i [Konfigurera gränssnittet för körning av produktionsstyrning](../production-control/production-floor-execution-configure.md).
 
-De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
+De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem. Vissa av funktionerna visas fortfarande i en förhandsversion, men andra användare kan redan vara tillgängliga i allmänhet. 
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
 

@@ -1,12 +1,10 @@
 ---
-title: Kom i gång med tjänsteadministreringen för tillägget Elektronisk fakturering
-description: I det här avsnittet beskrivs hur du kommer igång med tillägget Elektronisk fakturering.
+title: Kom i gång med tjänstadministration för elektronisk fakturering
+description: I det här avsnittet beskrivs hur du kommer igång med Elektronisk fakturering.
 author: gionoder
-manager: AnnBe
-ms.date: 03/12/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,18 +15,16 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 05b00380cec7511adad2467d3f252799a4aaee5c
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: ec431cb4a3620459d905f64a80fd820a2113290f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592536"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840158"
 ---
-# <a name="get-started-with-electronic-invoicing-add-on-service-administration"></a>Kom i gång med tjänsteadministreringen för tillägget Elektronisk fakturering
+# <a name="get-started-with-electronic-invoicing-service-administration"></a>Kom i gång med tjänstadministration för elektronisk fakturering
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -46,7 +42,7 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 - Du måste aktivera globaliseringsfunktionen för ditt RCS-konto i funktionshanteringen. Mer information finns i [Regulatory Configuration Services (RCS) – globaliseringsfunktioner](rcs-globalization-feature.md).
 - Du måste skapa ett nyckelvalv och ett lagringskonto i Azure. Mer information finns i [Skapa ett Azure-lagringskonto och ett nyckelvalv](e-invoicing-create-azure-storage-account-key-vault.md).
 
-## <a name="install-the-add-on-for-microservices-in-lifecycle-services"></a>Installera tillägget för mikrotjänster i Lifecycle Services
+## <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Installera tillägget för mikrotjänster i Lifecycle Services
 
 1. Logga in på LCS-kontot.
 2. Välj panelen **Hantera förhandsgranskning**.
@@ -54,13 +50,14 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 4. Se till att alternativet **Förhandsgranskning aktiverad** är inställt på **Ja**.
 5. Välj ditt LCS-distributionsprojekt på LCS-instrumentpanelen. LCS-projektet måste köras.
 7. På fliken **Miljötillägg** välj **Installera ett nytt tillägg**.
-8. Välj **e-faktureringstjänster** och i fältet **AAD-program-ID** ange **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Detta är ett fast värde.
+8. Välj **e-faktureringstjänster**.
+9. I fältet **AAD-program-ID**, ange **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Detta är ett fast värde.
 10. I fältet **AAD innehavar-ID** anger du innehavar-ID för ditt Azure abonnemangskonto.
 11. Granska villkoren och markera sedan kryssrutan.
 12. Välj **Installera**.
 
 
-## <a name="set-up-the-parameters-for-rcs-integration-with-the-electronic-invoicing-add-on"></a>Ställ in parametrarna för RCS-integrationen med tillägget Elektronisk fakturering
+## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Ställ in parametrarna för RCS-integrationen med Elektronisk fakturering
 
 1. Logga in på RCS-kontot.
 2. I arbetsytan **elektronisk rapportering** i avsnittet **Relaterade länkar** väljer du **parametrar för elektronisk rapportering**.
@@ -74,58 +71,56 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
     | Västra EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
 
 4. Kontrollera att fältet **Program-ID** är inställt på **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Det här värdet är ett fast värde.
-5. I fältet **ID för LCS-miljö** anger du ID för ditt LCS-abonnemangskonto.
+5. I fältet **ID för LCS-miljö** anger du ID för ditt LCS-miljö.
 6. Markera **Spara** och stäng sedan sidan.
 
-## <a name="create-key-vault-secret"></a>Skapa nyckelvalvshemlighet
+## <a name="create-key-vault-references"></a>Skapa en nyckelvalvsreferens
 
 1. Logga in på RCS-kontot.
-2. I arbetsytan **globaliseringsfunktion** i avsnittet **Miljöer**, välj panelen **Tillägg för elektroniska fakturor**.
+2. I arbetsytan **globaliseringsfunktion** i avsnittet **Miljöer**, välj panelen **Elektroniska fakturor**.
 3. På sidan **Miljökonfigurationer** väljer du i åtgärdsfönstret **Tjänstemiljö** och sedan **Parametrar för nyckelval**.
-4. Välj **Ny** för att skapa en nyckelvalvshemlighet.
-5. I fältet **Namn** anger du namnet för nyckelvalvshemligheten. Ange en beskrivning i fältet **beskrivning**.
-6. I fältet **URI för nyckelvalv** klistrar du in hemligheten från Azure Key Vault.
+4. Välj **Ny** för att skapa en nyckelvalvsreferens.
+5. I fältet **Namn** anger du namnet för nyckelvalvsreferens. Ange en beskrivning i fältet **beskrivning**.
+6. I fältet **URI för nyckelvalv** klistrar du in nyckelvalvshemlighet från Azure Key Vault. Mer information finns i [Skapa ett Azure-lagringskonto och ett nyckelvalv](e-invoicing-create-azure-storage-account-key-vault.md).
 7. Välj **Spara**.
 
 ## <a name="create-storage-account-secret"></a>Skapa hemlighet för lagringskonto
 
-1. Gå till **Systemadministration** > **Inställningar** > **Key Vault-parametrar** och välj en Key Vault-hemlighet.
-2. I avsnittet **Certifikat** välj **Lägg till**.
-3. I fältet **Namn**, ange namnet på lagringskontohemligheten och i fältet **Beskrivning**, ange en beskrivning.
-4. I fältet **Typ** väljer du **Certifikat**.
-5. Markera **Spara** och stäng sedan sidan.
+1. På sidan **Miljökonfigurationer** väljer du i åtgärdsfönstret **Tjänstemiljö** > **Parametrar för nyckelval**.
+2. Välj en **Nyckelvalvsreferens** och i avsnittet **Certifikat**, välj **Lägg till**.
+3. I fältet **Namn** anger du namnet för lagringskontots hemlighet. Mer information finns i [Skapa ett Azure-lagringskonto och ett nyckelvalv](e-invoicing-create-azure-storage-account-key-vault.md).
+4. Ange en beskrivning i fältet **beskrivning**.
+5. Välj **Typ** i fältet **Hemlighet**.
+6. Markera **Spara** och stäng sedan sidan.
 
 ## <a name="create-a-digital-certificate-secret"></a>Skapa en hemlighet för digitalt certifikat
 
-1. Gå till **Systemadministration** > **Inställningar** > **Key Vault-parametrar** och välj en Key Vault-hemlighet.
-2. I avsnittet **Certifikat** välj **Lägg till**.
-3. I fältet **Namn**, ange namnet på hemlighet för digitalt certifikat och i fältet **Beskrivning**, ange en beskrivning.
-4. I fältet **Typ** väljer du **Certifikat**.
-5. Markera **Spara** och stäng sedan sidan.
-
-## <a name="create-an-electronic-invoicing-add-on-environment"></a>Skapa en miljö för Elektronisk fakturering
-
-1. Logga in på RCS-kontot.
-2. I arbetsytan **globaliseringsfunktion** i avsnittet **Miljöer**, välj panelen **Tillägg för elektroniska fakturor**.
+1. På sidan **Miljökonfigurationer** väljer du i åtgärdsfönstret **Tjänstemiljö** och sedan **Parametrar för nyckelval**.
+2. Välj en **Nyckelvalvsreferens** och i avsnittet **Certifikat**, välj **Lägg till**.
+3. I fältet **Namn** anger du namnet för hemlighet för digitalt certifikat. Mer information finns i [Skapa ett Azure-lagringskonto och ett nyckelvalv](e-invoicing-create-azure-storage-account-key-vault.md).
+4. Ange en beskrivning i fältet **beskrivning**.
+5. I fältet **Typ** väljer du **Certifikat**.
+6. Markera **Spara** och stäng sedan sidan.
 
 ## <a name="create-a-service-environment"></a>Skapa en tjänstemiljö
 
-1. På sidan **Miljökonfigurationer** väljer du **Tjänstemiljö** i åtgärdsfönstret.
-2. Välj **Ny** för att skapa en ny tjänstemiljö.
-3. I fältet **Namn** anger du namnet på miljön för e-fakturering. Ange en beskrivning i fältet **beskrivning**.
-4. I fältet **Lagringshemlighet för SAS-token** väljer du namnet på lagringskontots hemlighet som måste användas för att ge åtkomst till lagringskontot.
-5. I avsnittet **Användare** väljer du **Lägg till** om du vill lägga till en användare som är behörig att skicka in elektroniska fakturor via miljön samt även ansluta till lagringskontot.
-6. I fältet **Användar-ID** anger du användarens alias. I fältet **E-postadress** anger du användarens e-postadress.
-7. Välj **Spara**.
-8. Om dina lands-/regionspecifika fakturor kräver en certifikatkedja för att kunna tillämpa digitala signaturer, väljer du **Parametrar för nyckelvalv** och sedan **Certifikatkedja** i åtgärdsfönstret och följer sedan dessa steg:
-
+1. Logga in på RCS-kontot.
+2. I arbetsytan **globaliseringsfunktion** i avsnittet **Miljöer**, välj panelen **Elektroniska fakturor**.
+3. På sidan **Miljökonfigurationer** väljer du **Tjänstemiljö** i åtgärdsfönstret.
+4. Välj **Ny** för att skapa en ny tjänstemiljö.
+5. I fältet **Namn** anger du namnet på miljön för e-fakturering. Ange en beskrivning i fältet **beskrivning**.
+6. I fältet **Lagringshemlighet för SAS-token** väljer du namnet på lagringskontots hemlighet som måste användas för att ge åtkomst till lagringskontot.
+7. I avsnittet **Användare** väljer du **Lägg till** om du vill lägga till en användare som är behörig att skicka in elektroniska fakturor via miljön samt även ansluta till lagringskontot.
+8. I fältet **Användar-ID** anger du användarens alias. I fältet **E-postadress** anger du användarens e-postadress.
+9. Välj **Spara**.
+10. Om dina lands-/regionspecifika fakturor kräver en certifikatkedja för att kunna tillämpa digitala signaturer, väljer du **Parametrar för nyckelvalv** och sedan **Certifikatkedja** i åtgärdsfönstret och följer sedan dessa steg:
     1. Välj **Ny** för att skapa en certifikatkedja.
     2. I fältet **Namn** anger du namnet på certifikatkedjan. Ange en beskrivning i fältet **beskrivning**.
     3. I avsnittet **Certifikat** väljer du **Lägg till** för att lägga till ett certifikat i kedjan.
     4. Använd knappen **Upp** eller **Ner** för att byta certifikatets position i kedjan.
     5. Markera **Spara** och stäng sedan sidan.
     6. Stäng sidan.
-9. I åtgärdsfönstret på sidan **Tjänstemiljö** väljer du **Publicera** om du vill publicera miljön i molnet. Värdet i fältet **Status** ändras till **Publicerad**.
+11. I åtgärdsfönstret på sidan **Tjänstemiljö** väljer du **Publicera** om du vill publicera miljön i molnet. Värdet i fältet **Status** ändras till **Publicerad**.
 
 ## <a name="create-a-connected-application"></a>Skapa ett anslutet program.
 
@@ -144,12 +139,12 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 3. I fältet **Tjänstemiljö** väljer du en tjänstemiljö.
 4. Markera **Spara** och stäng sedan sidan.
 
-## <a name="set-up-the-electronic-invoicing-add-on-integration-in-finance-and-supply-chain-management"></a>Ställa in integrering av tillägget Elektronisk fakturering i Finance och Supply Chain Management
+## <a name="set-up-electronic-invoicing-integration-in-finance-and-supply-chain-management"></a>Ställa in integrering av elektronisk fakturering i Finance och Supply Chain Management
 
-### <a name="turn-on-the-electronic-invoicing-add-on-integration-feature"></a>Aktivera integrationsfunktionen för tillägget Elektronisk fakturering
+### <a name="turn-on-the-electronic-invoicing-integration-feature"></a>Aktivera integrationsfunktionen för Elektronisk fakturering
 
 1. Logga in på din instans för Finance eller Supply Chain Management.
-2. I arbetsytan **Funktionshantering** söker du efter den nya funktionen **Integrering av tillägg för elektronisk fakturering**. Om den här funktionen inte visas på sidan väljer du **Sök efter uppdateringar**.
+2. I arbetsytan **Funktionshantering** söker du efter den nya funktionen **Integrering av för elektronisk fakturering**. Om den här funktionen inte visas på sidan väljer du **Sök efter uppdateringar**.
 3. Välj funktionen och välj sedan **aktivera nu**.
 
 ### <a name="set-up-the-service-endpoint-url"></a>Ställ in URL för tjänstslutpunkt
@@ -164,8 +159,18 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
     | Norra EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
     | Västra EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
 
-3. I fältet **Miljö** anger du namnet på miljön för tillägget Elektronisk fakturering.
+3. I fältet **Miljö** anger du namnet på miljön för tjänstemiljö publicerad i Elektronisk fakturering.
 4. Markera **Spara** och stäng sedan sidan.
 
+### <a name="enable-flighting-keys"></a>Aktivera flygnycklar
+
+Aktivera flygnycklar för Microsoft Dynamics 365 Finance eller Microsoft Dynamics 365 Supply Chain Management-versioner 10.0.17 eller tidigare. 
+1. Kör följande SQL-kommando:
+
+    INFOGA I SYSFLIGHTING (FLIGHTNAME, ENABLED) VÄRDEN ('BusinessDocumentSubmissionServiceEnabled', 1)
+    
+    INFOGA I SYSFLIGHTING (FLIGHTNAME, ENABLED) VÄRDEN ('ElectronicInvoicingServiceIntegrationFeature', 1)
+
+2. Utför ett IISreset-kommando för alla AOS:er.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
