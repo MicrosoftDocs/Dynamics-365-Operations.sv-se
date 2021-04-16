@@ -2,11 +2,9 @@
 title: Skapa månadsvisa poster i redovisningsjournal i en batch
 description: I det här ämnet beskrivs hur du skapar journalposter i ett batchjobb för att öka effektiviteten när månadsutgifter för leasing registreras.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,25 +15,25 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6fd1815620095909e290fd03c404d964baa04a94
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 664001dd6e9da449dec65750da53d58bd27438b4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241572"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816038"
 ---
-# <a name="create-monthly-journal-entries-in-a-batch"></a><span data-ttu-id="7952e-103">Skapa månadsvisa poster i redovisningsjournal i en batch</span><span class="sxs-lookup"><span data-stu-id="7952e-103">Create monthly journal entries in a batch</span></span>
+# <a name="create-monthly-journal-entries-in-a-batch"></a><span data-ttu-id="833ea-103">Skapa månadsvisa poster i redovisningsjournal i en batch</span><span class="sxs-lookup"><span data-stu-id="833ea-103">Create monthly journal entries in a batch</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="7952e-104">I det här ämnet beskrivs hur du skapar journalposter i ett batchjobb för att öka effektiviteten när månadsutgifter för leasing registreras.</span><span class="sxs-lookup"><span data-stu-id="7952e-104">This topic explains how to create journal entries in a batch to help increase efficiency when monthly lease expenses are recorded.</span></span> <span data-ttu-id="7952e-105">Batchbearbetning kan användas för att skapa journalposter från flera planer.</span><span class="sxs-lookup"><span data-stu-id="7952e-105">Batch processing can be used to create journal entries from multiple schedules.</span></span> <span data-ttu-id="7952e-106">Dessa journalposter kan vara leasingbetalningar, skuldamorteringar, amortering av ROU-tillgångar samt utgifter för verkställighetskostnader.</span><span class="sxs-lookup"><span data-stu-id="7952e-106">These journal entries can include lease payments, liability amortization, right-of-use (ROU) asset amortization, and executory cost expenses.</span></span> <span data-ttu-id="7952e-107">Du kan också använda batchbearbetning för att utföra den första redovisningen av flera leasingar samtidigt, eller för att skapa övergångsjusteringar för flera leasingar samtidigt.</span><span class="sxs-lookup"><span data-stu-id="7952e-107">You can also use batch processing to do the initial recognition of multiple leases at the same time, or to create transition adjustments for multiple leases at the same time.</span></span>
+<span data-ttu-id="833ea-104">I det här ämnet beskrivs hur du skapar journalposter i ett batchjobb för att öka effektiviteten när månadsutgifter för leasing registreras.</span><span class="sxs-lookup"><span data-stu-id="833ea-104">This topic explains how to create journal entries in a batch to help increase efficiency when monthly lease expenses are recorded.</span></span> <span data-ttu-id="833ea-105">Batchbearbetning kan användas för att skapa journalposter från flera planer.</span><span class="sxs-lookup"><span data-stu-id="833ea-105">Batch processing can be used to create journal entries from multiple schedules.</span></span> <span data-ttu-id="833ea-106">Dessa journalposter kan vara leasingbetalningar, skuldamorteringar, amortering av ROU-tillgångar samt utgifter för verkställighetskostnader.</span><span class="sxs-lookup"><span data-stu-id="833ea-106">These journal entries can include lease payments, liability amortization, right-of-use (ROU) asset amortization, and executory cost expenses.</span></span> <span data-ttu-id="833ea-107">Du kan också använda batchbearbetning för att utföra den första redovisningen av flera leasingar samtidigt, eller för att skapa övergångsjusteringar för flera leasingar samtidigt.</span><span class="sxs-lookup"><span data-stu-id="833ea-107">You can also use batch processing to do the initial recognition of multiple leases at the same time, or to create transition adjustments for multiple leases at the same time.</span></span>
 
-<span data-ttu-id="7952e-108">Om du vill konfigurera ett batchjobb eller bearbeta betalningsfakturor, avskrivningar eller räntor för flera leasingar går du till **Leasing av tillgångar \> Periodisk \> Batchgenerering av journal**.</span><span class="sxs-lookup"><span data-stu-id="7952e-108">To set up a batch job, or to process payment invoices, depreciation, or interest for multiple leases, go to **Asset leasing \> Periodic \> Batch journal creation**.</span></span> <span data-ttu-id="7952e-109">I dialogrutan som visas kan du välja den plan som journalposterna ska skapas från.</span><span class="sxs-lookup"><span data-stu-id="7952e-109">In the dialog box that appears, you can select the schedule that the journal entries should be created from.</span></span> <span data-ttu-id="7952e-110">Du kan även ange om batchprocessen ska köras för specifika entiteter, leasinggrupper eller leasingböcker.</span><span class="sxs-lookup"><span data-stu-id="7952e-110">You can also specify whether the batch process should be run for specific entities, lease groups, or lease books.</span></span>
+<span data-ttu-id="833ea-108">Om du vill konfigurera ett batchjobb eller bearbeta betalningsfakturor, avskrivningar eller räntor för flera leasingar går du till **Leasing av tillgångar \> Periodisk \> Batchgenerering av journal**.</span><span class="sxs-lookup"><span data-stu-id="833ea-108">To set up a batch job, or to process payment invoices, depreciation, or interest for multiple leases, go to **Asset leasing \> Periodic \> Batch journal creation**.</span></span> <span data-ttu-id="833ea-109">I dialogrutan som visas kan du välja den plan som journalposterna ska skapas från.</span><span class="sxs-lookup"><span data-stu-id="833ea-109">In the dialog box that appears, you can select the schedule that the journal entries should be created from.</span></span> <span data-ttu-id="833ea-110">Du kan även ange om batchprocessen ska köras för specifika entiteter, leasinggrupper eller leasingböcker.</span><span class="sxs-lookup"><span data-stu-id="833ea-110">You can also specify whether the batch process should be run for specific entities, lease groups, or lease books.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="7952e-111">Efterföljande transaktioner, till exempel skuldamorteringsplaner, betalningar, avskrivningar och utgifter bokförs först efter det att första redovisningstillfället för motsvarande leasingar har bokförts.</span><span class="sxs-lookup"><span data-stu-id="7952e-111">Subsequent transactions, such as liability amortization schedules, payments, depreciation, and expenses, will be posted only after the initial recognition for corresponding leases is posted.</span></span>
+> <span data-ttu-id="833ea-111">Efterföljande transaktioner, till exempel skuldamorteringsplaner, betalningar, avskrivningar och utgifter bokförs först efter det att första redovisningstillfället för motsvarande leasingar har bokförts.</span><span class="sxs-lookup"><span data-stu-id="833ea-111">Subsequent transactions, such as liability amortization schedules, payments, depreciation, and expenses, will be posted only after the initial recognition for corresponding leases is posted.</span></span>
 >
-> <span data-ttu-id="7952e-112">Journalposterna skapas men bokförs inte förrän du väljer kommandot **Kör**.</span><span class="sxs-lookup"><span data-stu-id="7952e-112">The journal entries are created, but they won't be posted until you select the **Run** command.</span></span>
+> <span data-ttu-id="833ea-112">Journalposterna skapas men bokförs inte förrän du väljer kommandot **Kör**.</span><span class="sxs-lookup"><span data-stu-id="833ea-112">The journal entries are created, but they won't be posted until you select the **Run** command.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
