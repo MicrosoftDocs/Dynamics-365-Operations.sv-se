@@ -2,11 +2,9 @@
 title: Uppdatera process
 description: Microsoft Dynamics 365 Human Resources är en äkta programvara som en tjänst (SaaS) som tillhandahåller kontinuerliga, beröringsfria tjänstuppdateringar för app- och plattformsändringar.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 27561bfd9cb4f115cc507954c837ea93f9c93b72
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 4069e369b1a9f15372d1e29e3809198b90b12c7e
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466842"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791543"
 ---
 # <a name="update-process"></a>Uppdatera process
 
@@ -58,14 +56,14 @@ Vid behov innehåller personal även följande typer av korrigeringar:
 
 Versioner granskas, testas och valideras i en intern miljö. När versioner har signerats distribueras de till produktion.
 
-## <a name="release-cadence-exceptions-in-2020"></a>Frisläppningstakt undantag i 2020
+## <a name="release-cadence-exceptions-in-2021"></a>Frisläppningstakt undantag i 2021
 
-För att kunna redovisa helgdagar är publicering av version för november och december 2020 följande:
+För att kunna redovisa helgdagar är publicering av version för november och december 2021 följande:
 
-- November version: 2 november – 13 november
-- December version: 30 november – 11 december
+- November version: 1 november – 14 november
+- December version: 29 november – 12 december
  
-Frisläppningstakten på två veckor kommer att återupptas som vanligt den 11 januari, 2021.
+Frisläppningstakten på två veckor kommer att återupptas som vanligt den 10 januari, 2022.
 
 ## <a name="communications"></a>Kommunikationer
 

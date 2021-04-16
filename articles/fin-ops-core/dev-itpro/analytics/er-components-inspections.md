@@ -2,7 +2,6 @@
 title: Granska den konfigurerade ER-komponenten för att förhindra körningsproblem
 description: Det här avsnittet innehåller information om hur du granskar de konfigurerade komponenterna för elektroniska rapporter (ER) för att förhindra problem som kan uppstå vid körning.
 author: NickSelin
-manager: AnnBe
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86db6dc27a8a76e90494e3dc7a7cc9c828f9ec37
-ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
+ms.openlocfilehash: d164dfe10c9736d8b4529a32ffba765f94ad37d9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5574135"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753850"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Granska den konfigurerade ER-komponenten för att förhindra körningsproblem
 
@@ -666,19 +665,19 @@ Följande bild visar det körningsfel som uppstår om du ignorerar varningen och
 
 ![Körningsfel som uppstod under formatmappningskörning på sidan Formatdesigner](./media/er-components-inspections-10b.png)
 
-### <a name="automatic-resolution"></a>Automatisk lösning
+### <a name="automatic-resolution&quot;></a>Automatisk lösning
 
 Det finns inget alternativ för automatisk korrigering av det här problemet.
 
-### <a name="manual-resolution"></a>Manuell lösning
+### <a name=&quot;manual-resolution&quot;></a>Manuell lösning
 
-#### <a name="option-1"></a>Alternativ 1
+#### <a name=&quot;option-1&quot;></a>Alternativ 1
 
 Ta bort **Cache**-flaggan från datakällan **Leverantör**. Datakällan **FilteredVendor** blir då körbar, men datakällan **Leverantör** som refereras i VendTable-tabellen kommer att öppnas varje gång datakällan **FilteredVendor** anropas.
 
-#### <a name="option-2"></a>Alternativ 2
+#### <a name=&quot;option-2&quot;></a>Alternativ 2
 
-Ändra uttrycket för datakällan **FilteredVendor** från `FILTER(Vendor, Vendor.AccountNum="US-101")` till `WHERE(Vendor, Vendor.AccountNum="US-101")`. I detta fall kommer datakällan **Leverantör** som det refereras till i VendTable-tabellen enbart att öppnas vid första anropet för datakällan **Leverantör**. Urvalet av poster kommer dock att göras i minnet. Därför kan den här metoden orsaka dålig prestanda.
+Ändra uttrycket för datakällan **FilteredVendor** från `FILTER(Vendor, Vendor.AccountNum=&quot;US-101")` till `WHERE(Vendor, Vendor.AccountNum="US-101")`. I detta fall kommer datakällan **Leverantör** som det refereras till i VendTable-tabellen enbart att öppnas vid första anropet för datakällan **Leverantör**. Urvalet av poster kommer dock att göras i minnet. Därför kan den här metoden orsaka dålig prestanda.
 
 ## <a name="missing-binding"></a><a id="i11"></a>Bindning saknas
 

@@ -2,7 +2,6 @@
 title: Konfigurera dataimport från SharePoint
 description: Det här avsnittet beskriver hur du importerar data från Microsoft SharePoint.
 author: NickSelin
-manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 5cf136f40a1f787b2388d648c475d4fdf1a0f9ca
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 582a59f72e0e59f58191aeb00a7605b0ea08b2d3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562320"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753802"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurera dataimport från SharePoint
 
