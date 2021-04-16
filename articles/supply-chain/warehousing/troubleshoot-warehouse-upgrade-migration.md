@@ -2,11 +2,9 @@
 title: Felsöka uppgradering och migrering till avancerad distributionslagerhantering
 description: I det här avsnittet beskrivs hur du åtgärdar vanliga problem som kan uppstå när du uppgraderar och migrerar till avancerad lagerhantering.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f5bfee31ce27e919086f978fb3ff88ca61a65eba
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 953b828667a01157767c3ca79349fe972b0fbe9b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208097"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826405"
 ---
 # <a name="troubleshoot-upgrade-and-migration-to-advanced-warehouse-management"></a>Felsöka uppgradering och migrering till avancerad distributionslagerhantering
 
@@ -34,11 +32,11 @@ I det här avsnittet beskrivs hur du åtgärdar vanliga problem som kan uppstå 
 
 ### <a name="issue-description"></a>Problembeskrivning
 
-Det här felmeddelandet visas i distributionslagerappen eftersom självsignerade certifikat inte är betrodda i Android 8+ i lokala miljöer.
+Det här felmeddelandet visas i mobilappen för distributionslagerhantering eftersom självsignerade certifikat inte är betrodda i Android 8+ i lokala miljöer.
 
 ### <a name="issue-resolution"></a>Problemlösning
 
-Använd en extern (offentlig) certifikatutfärdare (CA). En korrigeringsfil för det här problemet finns tillgänglig i version 1.9.0.0 av distributionslagerappen. Mer information om det här problemet och hur du åtgärdar det finns i [felsökning av anslutningsproblem för distributionslagerappen](troubleshoot-warehouse-app-connection.md).
+Använd en extern (offentlig) certifikatutfärdare (CA). En korrigeringsfil för det här problemet finns tillgänglig i version 1.9.0.0 av distributionslagerappen. Mer information om det här problemet och hur du åtgärdar det finns i [felsökning av anslutningsproblem för mobilappen för distributionslagerhantering](troubleshoot-warehouse-app-connection.md).
 
 ## <a name="what-is-the-approved-process-for-moving-from-basic-warehousing-to-advanced-warehousing"></a>Vad är den godkända processen att flytta från grundläggande lagerstyrning till avancerad lagerstyrning?
 

@@ -2,11 +2,9 @@
 title: Ställ in mobil arbetsyta för tillgångshantering
 description: I det här avsnittet beskrivs hur du ställer in Microsoft Dynamics 365 Supply Chain Management och Finance and Operations (Dynamics 365) mobilappen för att köra en tillgångshantering mobil arbetsyta som arbetstagare kan använda för att utföra uppgifter för hantering av tillgångar.
 author: johanhoffmann
-manager: tfehr
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 54da27a022dcc800438b96224370228aa8eed261
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bc170df2fc58ae6b42fbc8834caad0bb7cd16f69
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226157"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837787"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Ställ in mobil arbetsyta för tillgångshantering
 

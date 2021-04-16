@@ -2,11 +2,9 @@
 title: Skapa en kanban-regel för ersättning
 description: Den här proceduren fokuserar på att ersätta en befintlig kanban-regel med en ny kanban-regel vid ett visst datum.
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, KanbanRuleDuplicate
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: de048577ac372474b72728d7774e3159a159afc9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d5aebd88dee9621d2c85af3a4fb5bf76ae8e6b80
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5221833"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828956"
 ---
 # <a name="create-a-replacement-kanban-rule"></a>Skapa en kanban-regel för ersättning
 

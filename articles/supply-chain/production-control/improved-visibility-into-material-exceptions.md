@@ -2,13 +2,11 @@
 title: Insyn i materialundantag
 description: Det här avsnittet beskriver hur du kan få bättre insyn i undantag för råmaterial för produktionsorder och batchorder.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 1705903
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 87f82733388501f2f902e7ebba8b547d9ae5ed16
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d06bd5baeb6b8b6995fe1ae47f14bab458b8ecc2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246175"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831996"
 ---
 # <a name="visibility-into-material-exceptions"></a>Insyn i materialundantag
 
@@ -59,7 +57,11 @@ När du väljer panelen öppnas sidan **Frisläppning till lagerställe**. Denna
 
 När du frisläpper strukturliste- eller formelrad läggs den till i en ny produktionspåfyllnad eller en befintlig öppen påfyllnad, beroende på produktionspåfyllnadsmallen. Genom konfigurationen av påfyllnadsmallen kan du också ställa in en påfyllnad att bearbetas automatiskt när du frisläpper strukturliste- eller formelraden. När påfyllnaden bearbetas, genereras lagerställearbete för plockning av råmaterial. Om påfyllnadsmallen är konfigurerad så att påfyllnad inte bearbetas vid tiden för frisläppningen kommer påfyllnaden att kvarstå i ett obearbetat tillstånd. Panelen **Obearbetade påfyllnader behöver åtgärdas** visar antalet strukturliste- och formelrader som har frisläppts till lagret på obearbetade påfyllningar och som har ett råmaterialdatum som infaller tidigare än eller samtidigt som arbetsytans datum. Raderna måste också förbrukas av en verksamhetsresurs som tillämpas på arbetsytans filter.
 
-När panelen är markerad öppnas sidan **Alla produktionspåfyllnader**. Den här sidan filtreras av antalet öppna påfyllningar som innehåller påfyllnadsrader från frisläppt strukturliste- och formelrader som uppfyller villkoren för panelen. Från sidan **Alla produktionspåfyllnader** kan du manuellt behandla påfyllnaden.
+När panelen är markerad öppnas sidan **Alla produktionspåfyllnader**. Den här sidan filtreras av antalet öppna påfyllningar som innehåller påfyllnadsrader från frisläppt strukturliste- och formelrader som uppfyller villkoren för panelen.
+
+### <a name="manually-maintain-production-waves"></a>Underhålla produktionspåfyllnader manuellt
+
+På sidan **Alla produktionspåfyllnader** kan du använda knappar på fliken **Påfyllnad** i åtgärdsfönstret för att manuellt **bearbeta** och **frisläppa** en påfyllnad. Du kan också använda alternativet **Underhåll produktioner** för att visa och underhålla **Prod strukturlistepool** data, som för att hantera påfyllnadsprocessen.
 
 ## <a name="open-warehouse-work-needing-attention"></a>Öppet lagerarbete som behöver åtgärdas
 

@@ -2,7 +2,6 @@
 title: Över-/undertransaktioner
 description: Det här ämnet innehåller information som hjälper dig att ställa in information om principer för över-/undertransaktioner så att systemet kan bestämma hur överbearbetning och underbearbetning av varor ska hanteras vid inleverans.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9027d5dc73ebd78a65429f7bc63a1ebf8ef60dac
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: c7e75e39877b36e482dd4aaa5cc7c8f84d57d81b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500992"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833747"
 ---
 # <a name="overunder-transactions"></a>Över-/undertransaktioner
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 När beställningarna i en färd behandlas förväntar sig systemet att artikelkvantiteten som mottas i slutdestinationslagret för konsumtion ska matcha den kvantitet som anges på inköpsorderraderna som är associerade med färden. Eftersom den exakta kvantiteten på inköpsorderraderna inte alltid tas emot i lagret, kommer dock modulen **Hemtagningskostnad** definierar en uppsättning regler som används för att hantera övermottagande och undermottagande av varor. Dessa regler är särskilt viktiga eftersom den ursprungliga inköpsordern har fakturerats och inte längre kan ändras. Genom att ställa in detaljerna för över/undertransaktionspolicyer aktiverar du systemet för att bestämma hur överbearbetning och underbearbetning av varor ska hanteras vid inleverans. Du kan också manuellt hantera över- och underlager genom att använda sidan **Över/undertransaktioner**.
 

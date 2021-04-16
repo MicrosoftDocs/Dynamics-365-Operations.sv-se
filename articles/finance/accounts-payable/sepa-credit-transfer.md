@@ -2,11 +2,9 @@
 title: Översikt över SEPA-kreditöverföring
 description: Artikeln innehåller allmän information om ISO 20022 kreditöverföringar, som inkluderar SEPA-kreditöverföringar ( Single Euro Payments Area) och andra elektroniska betalningar för leverantörer. En SEPA-kreditöverföring är specifik typ av betalning i euro från ett företag eller en person till ett annat företag eller annan person. Ämnet beskriver även hur du ställer in och överför en fil för betalning med kreditöverföring.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 277f11bc6aa74ac9bb9f476b07be7bbf29025342
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 760763078d10c56c8bc485601a2f14979d28ac11
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227410"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830746"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Översikt över SEPA-kreditöverföring
 

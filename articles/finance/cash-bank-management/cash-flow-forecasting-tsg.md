@@ -2,11 +2,9 @@
 title: Felsöka inställningar för kassaflödesprognoser
 description: Detta ämne innehåller svar på frågor som du kan ha när du konfigurerar kassaflödesprognoser. Det avhandlar vanliga frågor och svar (FAQ) om hur du ställer in kassaflöde, uppdateringar av kassaflöde och Power BI-kassaflöde.
 author: panolte
-manager: AnnBe
-ms.date: 12/03/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2020-12-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d1cde9321259753bd0cacab3706c7f8455598ff3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7b4760d7a0d0c14e2df8df20c2f81ec41e077cc0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232499"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827324"
 ---
 # <a name="troubleshoot-cash-flow-forecasting-setup"></a>Felsöka inställningar för kassaflödesprognoser
 
@@ -47,11 +45,19 @@ Flera steg måste utföras innan kassaflödesprognoser kan visas i Power BI-vyer
 
 ## <a name="why-did-cash-flow-power-bi-work-in-previous-versions-but-is-now-blank"></a>Varför fungerade kassaflödet i Power BI i tidigare versioner men är nu tomt?
 
-Kontrollera att mätningarna "Kassaflödesmått V2" och "LedgerCovLiquidityMeasurement" från Entitetsarkivet har konfigurerats. Mer information om hur du arbetar med data i Entitetsarkivet finns i [Power BI-integrering med Entitetsarkivet](../../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md) Kontrollera att alla steg som behövs för att visa Power BI-innehåll har slutförts. Mer information finns i [Kassaöversikt Power BI-innehåll](Cash-Overview-Power-BI-content.md).
+Kontrollera att mätningarna "Kassaflödesmått V2" och "LedgerCovLiquidityMeasurement" från Entitetsarkivet har konfigurerats. Mer information om hur du gör en arbeta med data i enhetslagring, se [Power BI-integrering med enhetslagring](../../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md). Kontrollera att alla steg som behövs för att visa Power BI innehåll har slutförts. Mer information finns i [Kassaöversikt Power BI-innehåll](Cash-Overview-Power-BI-content.md).
 
 ## <a name="have-the-entity-store-entities-been-refreshed"></a>Har Entitetsarkivets entiteter uppdaterats?
 
 Du måste uppdatera dina entiteter regelbundet för att se till att datan är aktuell och korrekt. Du uppdaterar en specifik entitet manuellt genom att gå till **Systemadministration \> Inställningar \> Entitetsarkiv**, välja eniteten och sedan **Uppdatera**. Det går också att uppdatera data automatiskt. På sidan **Entitetsarkiv** anger du alternativet **Automatisk uppdatering aktiverad** som **Ja**.
 
+## <a name="which-calculation-method-should-be-used-when-calculating-cash-flow-forecasts"></a>Vilken beräkningsmetod ska användas vid beräkning av kassaflödesprognoser?
+
+Beräkningsmetod för kassaflödesprognos har två viktiga alternativ. Med alternativet **Nytt** beräknas kassaflödesprognoser för nya dokument och dokument som har ändrats sedan det senaste batchjobbet kördes. Det här alternativet gör att processen blir snabbare eftersom den bearbetar en mindre delmängd av dokumenten. Alternativet **Summa** beräknar om kassaflödesprognoser för varje dokument i systemet. Det här alternativet tar längre tid eftersom det har mer arbete att slutföra.
+
+### <a name="how-do-i-improve-the-performance-of-the-cash-flow-forecasting-recurring-batch-job"></a>Hur kan jag förbättra prestandan för kassaflödesprognoser för återkommande batchjobb?
+
+Vi rekommenderar att du kör kassaflödesprognosen en gång om dagen när belastningen är låg med den **Nytt** beräkningsmetoden. Vi rekommenderar att du använder den här metoden sex dagar per vecka. Kör sedan en kassaflödesprognos en gång per vecka med hjälp av beräkningsmetoden **Summa** för dagen med den minsta aktivitetsmängden.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

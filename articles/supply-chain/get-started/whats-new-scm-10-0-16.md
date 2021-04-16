@@ -2,11 +2,9 @@
 title: Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.16 (februari 2021)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.16.
 author: kamaybac
-manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: f9eb0685fcefe5d0734dc01fa82971958c3952d2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 070e1a763977a9b5aad1a4f1336f6202f9f332cc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236085"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829993"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.16 (februari 2021)
 
@@ -35,11 +33,13 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
-Den här versionen innehåller följande nya funktioner: Vissa av funktionerna visas fortfarande i en förhandsversion, men andra användare kan redan vara tillgängliga i allmänhet. Följ länkarna till [Utgivningsplan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) för att se de officiella datumen för varje funktion.
+Den här versionen innehåller följande nya funktioner: Följ länkarna till [Utgivningsplan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) för att se de officiella datumen för varje funktion.
 
 - [Anpassningsbart gränssnittet för arbetsstyrningskörning](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - För mer information, se [Ställa in en enhet för att köra körningsgränssnittet för produktionsgolvet](../production-control/production-floor-execution-setup.md).
 
 - [Tillägg för lagersynlighet för Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Mer information finns i [tillägget lagersynlighet](../inventory/inventory-visibility.md)
+
+- Enhetlig nummerserie för jobb-ID:n<br> - Mer information finns i [Enhetlig nummerserie för jobb-ID](../production-control/unified-job-ids.md).
 
 - [Validera ID-nummer på källdokumentrader](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Mer information finns i [Konfiguration av distributionslager - översikt](../warehousing/warehouse-configuration.md).
 
@@ -75,7 +75,7 @@ Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De
 - [Felsöka försäljningsorder](../sales-marketing/troubleshooting-sales.md)
 - [Felsöka försäljningsofferter](../sales-marketing/troubleshooting-salesquotation.md)
 - [Felsöka uppgradering och migrering till avancerad distributionslagerhantering](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Felsöka anslutningsproblem i distributionslagerappen](../warehousing/troubleshoot-warehouse-app-connection.md)
+- [Felsöka anslutningsproblem med mobilappen för distributionslagerhantering](../warehousing/troubleshoot-warehouse-app-connection.md)
 - [Felsöka distributionslagerkonfiguration](../warehousing/troubleshoot-warehouse-configuration.md)
 - [Felsöka lagerpåfyllnad](../warehousing/troubleshoot-warehouse-replenishment.md)
 - [Felsöka distributionslagerinställningar](../warehousing/troubleshoot-warehouse-setup.md)

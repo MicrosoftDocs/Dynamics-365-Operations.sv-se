@@ -2,11 +2,9 @@
 title: Felsöka befattningsbudgetering
 description: Den här artikeln innehåller svar på frågor som du kan ha när du konfigurerar befattningsbudgetering. Det handlar om vanliga frågor och svar om hur du skapar budgetkostnadselement, kompensationsgrupper och kompensationsrutnät.
 author: panolte
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBudgetPurposeType, HcmPositionForecast
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f03ab1437d7b4af38b3594892310e27771c829d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f3e3c2f8a69d620bd2babe0d8d55858d01b25436
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241452"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833123"
 ---
 # <a name="position-budgeting-troubleshooting"></a>Felsöka befattningsbudgetering
 

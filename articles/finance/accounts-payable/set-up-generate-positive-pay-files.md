@@ -2,11 +2,9 @@
 title: Ställ in och generera betalningskontrollfiler
 description: Det här ämnet innehåller information om hur du ställer och genererar betalningskontrollfiler.
 author: panolte
-manager: AnnBe
 ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankPositivePayFormat
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7d1520828bc626784f1555d8878a1fdad1bd5b9e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9f96e34b8d94f9e83afb39d6ad97aca85386b458
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227386"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830722"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Ställ in och generera betalningskontrollfiler
 
@@ -140,6 +138,9 @@ Betalningskontrollfiler skapas genom att använda dataentiteter. Innan du kan ge
   </xsl:template>
 </xsl:stylesheet>
 ```
+
+> [!NOTE]
+> XML-namn i XSLT måste matcha förse med noderna i XML. Både XSLT- och XML-filerna är skiftlägeskänsliga. 
 
 ## <a name="assign-the-positive-pay-format-to-a-bank-account"></a>Tilldela formatet för kontrollfil till ett bankkonto
 För varje bankkonto som du vill skapa information om lönebetalningskontroll för måste du tilldela lönebetalningskontrollformatet som har angetts i föregående avsnitt. På sidan **Bankkonton**, välj det format för betalningskontrollfil som motsvarar bankkontot. I fältet **Betalningskontrollens startdatum**, ange det första datumet då betalningskontrollfiler ska genereras. Det är viktigt att du anger ett datum i det här fältet. Annars kommer den första betalningskontrollfil som du skapar inkludera alla checkar som någonsin har skapats för detta bankkonto.

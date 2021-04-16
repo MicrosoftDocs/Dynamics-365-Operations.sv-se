@@ -2,11 +2,9 @@
 title: Kvalitetskontroll
 description: Det här ämnet innehåller information om funktionen för kvalitetskontroll. Med den här funktionen kan lagerarbetarna göra snabba stickprov för att kontrollera kvaliteten medan de tar emot artiklar på inlastningsplatsen.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 31afcfcb9d8dbb91f4ea4e3e7a7282c2a87328d4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 60d566e3ef1fa4bc0cea960f7c75094f51823550
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228475"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838236"
 ---
 # <a name="quality-check"></a>Kvalitetskontroll
 
@@ -301,7 +299,7 @@ När inköps ordern har skapats kan den tas emot med hjälp av menyalternativet 
 
 #### <a name="receive-pallet-1"></a>Inleverera lastpall 1
 
-1. Logga in på distributionslagerappen en användare i lagerställe *51*. (Ange *51* som användar-ID och *1* som lösenord.)
+1. Logga in på mobilappen för distributionslagerhantering en användare i lager ställe *51*. (Ange *51* som användar-ID och *1* som lösenord.)
 1. Gå till **inkommande \> inleverans av inköpsorderrader**.
 1. I fältet **PONUM** anger du inköpsordernummer.
 1. Bekräfta inköpsordernummer.

@@ -2,11 +2,9 @@
 title: Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.12 augusti 2020
 description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.12.
 author: kamaybac
-manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 8fdd831bd774f65e1737d5dec3046fa5ea978390
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0513dffb6395eaf00f4c71df91938a5db6486daf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258981"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832212"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.12 augusti 2020
 
@@ -47,9 +45,9 @@ Den här versionen innehåller följande nya funktioner: Funktionstitlarna länk
 
 - [Kärninsikter för IoT-intelligens](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - Mer information finns i [Startsida för IoT-intelligens](../iot/iot-intelligence-home-page.md).
 
-- [Förbättringar av inleverans av ID-nummer med distributionslagerappen (fortsättning)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Mer information finns i [Inleverans av ID-nummer du via distributionslagerappen](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Förbättringar av inleverans av ID-nummer med distributionslagerappen (fortsättning)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Mer information finns i [Inleverans av ID-nummer du via mobilappen för distributionslagerhantering](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Massdistribution för Warehouse mobile app](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Mer information finns i [Installera och konfigurera översikt över lagerställeappen](../warehousing/install-configure-warehousing-app.md).
+- [Massdistribution för Warehouse mobile app](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Mer information finns i [Installera och anslut  mobilappen för distributionslagerhantering](../warehousing/install-configure-warehouse-management-app.md).
 
 - [Maximal körningstid för jobbet Rensning av behållningsposter för lagerstyrning](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - För mer information, se [Jobbet Rensning av behållningsposter för distributionslagerhantering](../warehousing/onhand-cleanup.md).
 
