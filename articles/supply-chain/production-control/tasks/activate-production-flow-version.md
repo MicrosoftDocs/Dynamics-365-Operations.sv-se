@@ -2,11 +2,9 @@
 title: Aktivera en produktionsflödesversion
 description: Innan kanban-jobb kan skapas och aktiviteter bearbetas för en produktionsflödesversion måste du aktivera versionen.
 author: cvocph
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
@@ -16,29 +14,29 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 14032f86bcb66e9b6a1f097ffb74ab79d250ed08
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a5ebdc4b42fb71a13076f86c24018e7c1ef5e6ca
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255527"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825144"
 ---
-# <a name="activate-a-production-flow-version"></a><span data-ttu-id="ee3f3-103">Aktivera en produktionsflödesversion</span><span class="sxs-lookup"><span data-stu-id="ee3f3-103">Activate a production flow version</span></span>
+# <a name="activate-a-production-flow-version"></a><span data-ttu-id="c595a-103">Aktivera en produktionsflödesversion</span><span class="sxs-lookup"><span data-stu-id="c595a-103">Activate a production flow version</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="ee3f3-104">Innan kanban-jobb kan skapas och aktiviteter bearbetas för en produktionsflödesversion måste du aktivera versionen.</span><span class="sxs-lookup"><span data-stu-id="ee3f3-104">Before kanban jobs can be created and activities can be processed for a production flow version, you should activate the version.</span></span> <span data-ttu-id="ee3f3-105">Vi rekommenderar att du aktiverar versionen före dess effektiva startdatum och starttid.</span><span class="sxs-lookup"><span data-stu-id="ee3f3-105">As a best practice, activate the version before its effective start date and time expire.</span></span> <span data-ttu-id="ee3f3-106">För att slutföra uppgiften måste du ha en produktionsflödesversion som har Utkaststatus om du vill att aktivera versionen.</span><span class="sxs-lookup"><span data-stu-id="ee3f3-106">To complete this task, you must have a production flow version that has the Draft status in order to activate the version.</span></span> 
+<span data-ttu-id="c595a-104">Innan kanban-jobb kan skapas och aktiviteter bearbetas för en produktionsflödesversion måste du aktivera versionen.</span><span class="sxs-lookup"><span data-stu-id="c595a-104">Before kanban jobs can be created and activities can be processed for a production flow version, you should activate the version.</span></span> <span data-ttu-id="c595a-105">Vi rekommenderar att du aktiverar versionen före dess effektiva startdatum och starttid.</span><span class="sxs-lookup"><span data-stu-id="c595a-105">As a best practice, activate the version before its effective start date and time expire.</span></span> <span data-ttu-id="c595a-106">För att slutföra uppgiften måste du ha en produktionsflödesversion som har Utkaststatus om du vill att aktivera versionen.</span><span class="sxs-lookup"><span data-stu-id="c595a-106">To complete this task, you must have a production flow version that has the Draft status in order to activate the version.</span></span> 
 
 
-## <a name="find-and-activate-a-production-flow-version"></a><span data-ttu-id="ee3f3-107">Hitta och aktivera en produktionsflödesversion</span><span class="sxs-lookup"><span data-stu-id="ee3f3-107">Find and activate a production flow version</span></span>
-1. <span data-ttu-id="ee3f3-108">Gå till Produktionsflöden.</span><span class="sxs-lookup"><span data-stu-id="ee3f3-108">Go to Production flows.</span></span>
-2. <span data-ttu-id="ee3f3-109">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="ee3f3-109">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="ee3f3-110">Välj en produktionsflödesversion som har Utkast i fältet Planstatus.</span><span class="sxs-lookup"><span data-stu-id="ee3f3-110">Select a production flow version that has Draft in the Plan status field.</span></span>  
-3. <span data-ttu-id="ee3f3-111">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="ee3f3-111">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="ee3f3-112">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="ee3f3-112">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="ee3f3-113">Välj en produktionsflödesversion som har Utkast i fältet Planstatus.</span><span class="sxs-lookup"><span data-stu-id="ee3f3-113">Select a production flow version that has Draft in the Plan status field.</span></span>  
-5. <span data-ttu-id="ee3f3-114">Klicka på Aktivera.</span><span class="sxs-lookup"><span data-stu-id="ee3f3-114">Click Activate.</span></span>
-6. <span data-ttu-id="ee3f3-115">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="ee3f3-115">Click OK.</span></span>
+## <a name="find-and-activate-a-production-flow-version"></a><span data-ttu-id="c595a-107">Hitta och aktivera en produktionsflödesversion</span><span class="sxs-lookup"><span data-stu-id="c595a-107">Find and activate a production flow version</span></span>
+1. <span data-ttu-id="c595a-108">Gå till Produktionsflöden.</span><span class="sxs-lookup"><span data-stu-id="c595a-108">Go to Production flows.</span></span>
+2. <span data-ttu-id="c595a-109">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="c595a-109">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="c595a-110">Välj en produktionsflödesversion som har Utkast i fältet Planstatus.</span><span class="sxs-lookup"><span data-stu-id="c595a-110">Select a production flow version that has Draft in the Plan status field.</span></span>  
+3. <span data-ttu-id="c595a-111">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="c595a-111">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="c595a-112">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="c595a-112">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="c595a-113">Välj en produktionsflödesversion som har Utkast i fältet Planstatus.</span><span class="sxs-lookup"><span data-stu-id="c595a-113">Select a production flow version that has Draft in the Plan status field.</span></span>  
+5. <span data-ttu-id="c595a-114">Klicka på Aktivera.</span><span class="sxs-lookup"><span data-stu-id="c595a-114">Click Activate.</span></span>
+6. <span data-ttu-id="c595a-115">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="c595a-115">Click OK.</span></span>
 
 
 

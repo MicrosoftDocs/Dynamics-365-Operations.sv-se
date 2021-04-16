@@ -2,11 +2,9 @@
 title: Synkronisera produkter med lagerenhet från Supply Chain Management till Field Service
 description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter med lagerenhet från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.
 author: ChristianRytt
-manager: tfehr
 ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,50 +16,50 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 87daaa3d2b516581e9925fe6b769683942893ff6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0ecb03d7d826fc6d79f1df800da22dc913177ee4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206929"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824880"
 ---
-# <a name="synchronize-products-with-inventory-unit-from-supply-chain-management-to-field-service"></a><span data-ttu-id="1ca32-103">Synkronisera produkter med lagerenhet från Supply Chain Management till Field Service</span><span class="sxs-lookup"><span data-stu-id="1ca32-103">Synchronize products with inventory unit from Supply Chain Management to Field Service</span></span>
+# <a name="synchronize-products-with-inventory-unit-from-supply-chain-management-to-field-service"></a><span data-ttu-id="1972b-103">Synkronisera produkter med lagerenhet från Supply Chain Management till Field Service</span><span class="sxs-lookup"><span data-stu-id="1972b-103">Synchronize products with inventory unit from Supply Chain Management to Field Service</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="1ca32-104">Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter med lagerenhet från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.</span><span class="sxs-lookup"><span data-stu-id="1ca32-104">This topic discusses the templates and underlying task that are used to synchronize products with inventory unit from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.</span></span>
+<span data-ttu-id="1972b-104">Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter med lagerenhet från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.</span><span class="sxs-lookup"><span data-stu-id="1972b-104">This topic discusses the templates and underlying task that are used to synchronize products with inventory unit from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.</span></span>
 
-<span data-ttu-id="1ca32-105">[![Synkronisering av affärsprocesser mellan Supply Chain Management och Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)</span><span class="sxs-lookup"><span data-stu-id="1ca32-105">[![Synchronization of business processes between Supply Chain Management and Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)</span></span>
+<span data-ttu-id="1972b-105">[![Synkronisering av affärsprocesser mellan Supply Chain Management och Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)</span><span class="sxs-lookup"><span data-stu-id="1972b-105">[![Synchronization of business processes between Supply Chain Management and Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)</span></span>
 
-<span data-ttu-id="1ca32-106">Den använda mallen **Field Service-produkter med lagerenhet (Supply Chain Management till Field Service)** baseras på mallen **Field Service-produkter (Supply Chain Management till Field Service)**.</span><span class="sxs-lookup"><span data-stu-id="1ca32-106">The used **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template is based on the **Field Service Products (Supply Chain Management to Field Service)** template.</span></span> <span data-ttu-id="1ca32-107">Mer information finns i [Synkronisera produkter i Supply Chain Management till produkter i Field Service](field-service-product.md).</span><span class="sxs-lookup"><span data-stu-id="1ca32-107">For more information, see [Synchronize products in Supply Chain Management to products in Field Service](field-service-product.md).</span></span>
+<span data-ttu-id="1972b-106">Den använda mallen **Field Service-produkter med lagerenhet (Supply Chain Management till Field Service)** baseras på mallen **Field Service-produkter (Supply Chain Management till Field Service)**.</span><span class="sxs-lookup"><span data-stu-id="1972b-106">The used **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template is based on the **Field Service Products (Supply Chain Management to Field Service)** template.</span></span> <span data-ttu-id="1972b-107">Mer information finns i [Synkronisera produkter i Supply Chain Management till produkter i Field Service](field-service-product.md).</span><span class="sxs-lookup"><span data-stu-id="1972b-107">For more information, see [Synchronize products in Supply Chain Management to products in Field Service](field-service-product.md).</span></span>
 
-<span data-ttu-id="1ca32-108">Det här avsnittet beskriver endast skillnaderna mellan två mallar:</span><span class="sxs-lookup"><span data-stu-id="1ca32-108">This topic only describes the differences between the two templates:</span></span> 
-- <span data-ttu-id="1ca32-109">**Field Service produkter med lagerenhet (Supply Chain Management till Sales)**</span><span class="sxs-lookup"><span data-stu-id="1ca32-109">**Field Service Products with Inventory unit (Supply Chain Management to Sales)**</span></span>
-- <span data-ttu-id="1ca32-110">**Field Service-produkter (Supply Chain Management till Field Service)**.</span><span class="sxs-lookup"><span data-stu-id="1ca32-110">**Field Service Products (Supply Chain Management to Field Service)**</span></span> 
+<span data-ttu-id="1972b-108">Det här avsnittet beskriver endast skillnaderna mellan två mallar:</span><span class="sxs-lookup"><span data-stu-id="1972b-108">This topic only describes the differences between the two templates:</span></span> 
+- <span data-ttu-id="1972b-109">**Field Service produkter med lagerenhet (Supply Chain Management till Sales)**</span><span class="sxs-lookup"><span data-stu-id="1972b-109">**Field Service Products with Inventory unit (Supply Chain Management to Sales)**</span></span>
+- <span data-ttu-id="1972b-110">**Field Service-produkter (Supply Chain Management till Field Service)**.</span><span class="sxs-lookup"><span data-stu-id="1972b-110">**Field Service Products (Supply Chain Management to Field Service)**</span></span> 
 
-## <a name="templates-and-tasks"></a><span data-ttu-id="1ca32-111">Mallar och uppgifter</span><span class="sxs-lookup"><span data-stu-id="1ca32-111">Templates and tasks</span></span>
+## <a name="templates-and-tasks"></a><span data-ttu-id="1972b-111">Mallar och uppgifter</span><span class="sxs-lookup"><span data-stu-id="1972b-111">Templates and tasks</span></span>
 
-<span data-ttu-id="1ca32-112">**Namnet på mallen i dataintegreringen**</span><span class="sxs-lookup"><span data-stu-id="1ca32-112">**Name of the template in Data integration:**</span></span>
+<span data-ttu-id="1972b-112">**Namnet på mallen i dataintegreringen**</span><span class="sxs-lookup"><span data-stu-id="1972b-112">**Name of the template in Data integration:**</span></span>
 
-- <span data-ttu-id="1ca32-113">Field Service produkter med lagerenhet (Supply Chain Management till Sales)</span><span class="sxs-lookup"><span data-stu-id="1ca32-113">Field Service Products with Inventory unit (Supply Chain Management to Sales)</span></span>
+- <span data-ttu-id="1972b-113">Field Service produkter med lagerenhet (Supply Chain Management till Sales)</span><span class="sxs-lookup"><span data-stu-id="1972b-113">Field Service Products with Inventory unit (Supply Chain Management to Sales)</span></span>
 
-<span data-ttu-id="1ca32-114">**Namnen på uppgiften i dataintegreringsprojektet:**</span><span class="sxs-lookup"><span data-stu-id="1ca32-114">**Name of the task in the Data integration project:**</span></span>
+<span data-ttu-id="1972b-114">**Namnen på uppgiften i dataintegreringsprojektet:**</span><span class="sxs-lookup"><span data-stu-id="1972b-114">**Name of the task in the Data integration project:**</span></span>
 
-- <span data-ttu-id="1ca32-115">Produkter</span><span class="sxs-lookup"><span data-stu-id="1ca32-115">Products</span></span>
+- <span data-ttu-id="1972b-115">Produkter</span><span class="sxs-lookup"><span data-stu-id="1972b-115">Products</span></span>
 
-<span data-ttu-id="1ca32-116">Mallen **Field Service-produkter med lagerenhet (Supply Chain Management till Field Service)** innehåller en mappning som inte är inkluderad i mallen **Field Service-produkter (Supply Chain Management till Field Service)**.</span><span class="sxs-lookup"><span data-stu-id="1ca32-116">The **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template includes one mapping that isn't included in the **Field Service Products (Supply Chain Management to Field Service)** template.</span></span> <span data-ttu-id="1ca32-117">Den här mappningen garanterar att den lagerenhet som behövs för synkronisering på nivå lager ingår.</span><span class="sxs-lookup"><span data-stu-id="1ca32-117">This mapping ensures that the Inventory unit needed for inventory level synchronization is included.</span></span>
+<span data-ttu-id="1972b-116">Mallen **Field Service-produkter med lagerenhet (Supply Chain Management till Field Service)** innehåller en mappning som inte är inkluderad i mallen **Field Service-produkter (Supply Chain Management till Field Service)**.</span><span class="sxs-lookup"><span data-stu-id="1972b-116">The **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template includes one mapping that isn't included in the **Field Service Products (Supply Chain Management to Field Service)** template.</span></span> <span data-ttu-id="1972b-117">Den här mappningen garanterar att den lagerenhet som behövs för synkronisering på nivå lager ingår.</span><span class="sxs-lookup"><span data-stu-id="1972b-117">This mapping ensures that the Inventory unit needed for inventory level synchronization is included.</span></span>
 
 ```plaintext
 INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryunit.name [Inventory Unit(Name)] 
 ```
 
-## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="1ca32-118">Mallmappning i dataintegrering</span><span class="sxs-lookup"><span data-stu-id="1ca32-118">Template mapping in Data integration</span></span>
+## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="1972b-118">Mallmappning i dataintegrering</span><span class="sxs-lookup"><span data-stu-id="1972b-118">Template mapping in Data integration</span></span>
 
-<span data-ttu-id="1ca32-119">I följande illustrationer visas en mallmappning i dataintegrering.</span><span class="sxs-lookup"><span data-stu-id="1ca32-119">The following illustrations show the template mapping in Data integration.</span></span>
+<span data-ttu-id="1972b-119">I följande illustrationer visas en mallmappning i dataintegrering.</span><span class="sxs-lookup"><span data-stu-id="1972b-119">The following illustrations show the template mapping in Data integration.</span></span>
 
-### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a><span data-ttu-id="1ca32-120">Field Service-produkter med lagerenhet (Supply Chain Management till Field Service): produkter</span><span class="sxs-lookup"><span data-stu-id="1ca32-120">Field Service Products with Inventory unit (Supply Chain Management to Field Service): Products</span></span>
+### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a><span data-ttu-id="1972b-120">Field Service-produkter med lagerenhet (Supply Chain Management till Field Service): produkter</span><span class="sxs-lookup"><span data-stu-id="1972b-120">Field Service Products with Inventory unit (Supply Chain Management to Field Service): Products</span></span>
 
-<span data-ttu-id="1ca32-121">[![Mallmappning i dataintegrering](./media/FSProduct1.png)](./media/FSProduct1.png)</span><span class="sxs-lookup"><span data-stu-id="1ca32-121">[![Template mapping in Data integration](./media/FSProduct1.png)](./media/FSProduct1.png)</span></span>
+<span data-ttu-id="1972b-121">[![Mallmappning i dataintegrering](./media/FSProduct1.png)](./media/FSProduct1.png)</span><span class="sxs-lookup"><span data-stu-id="1972b-121">[![Template mapping in Data integration](./media/FSProduct1.png)](./media/FSProduct1.png)</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
