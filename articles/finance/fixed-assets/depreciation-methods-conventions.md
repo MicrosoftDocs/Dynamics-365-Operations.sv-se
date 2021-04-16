@@ -2,11 +2,9 @@
 title: Avskrivningsmetoder och praxis
 description: Den här artikeln ger en översikt över avskrivningspraxis och avskrivningsmetoder som stöds av Microsoft Dynamics 365 Finance.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile, AssetGroupBookSetup, AssetGroupDepBookSetup
 audience: Application User
@@ -17,76 +15,76 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1aacc57051f21b992d9f7feb44c99511fc2a65bb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: afd771f3f2f0434aa3663a9f99512f0c31adbb78
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241300"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826940"
 ---
-# <a name="depreciation-methods-and-conventions"></a><span data-ttu-id="4db59-103">Avskrivningsmetoder och praxis</span><span class="sxs-lookup"><span data-stu-id="4db59-103">Depreciation methods and conventions</span></span>
+# <a name="depreciation-methods-and-conventions"></a><span data-ttu-id="43721-103">Avskrivningsmetoder och praxis</span><span class="sxs-lookup"><span data-stu-id="43721-103">Depreciation methods and conventions</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="4db59-104">Den här artikeln ger en översikt över avskrivningspraxis och avskrivningsmetoder som stöds.</span><span class="sxs-lookup"><span data-stu-id="4db59-104">This article provides an overview of the supported depreciation conventions and depreciation methods.</span></span>
+<span data-ttu-id="43721-104">Den här artikeln ger en översikt över avskrivningspraxis och avskrivningsmetoder som stöds.</span><span class="sxs-lookup"><span data-stu-id="43721-104">This article provides an overview of the supported depreciation conventions and depreciation methods.</span></span>
 
-<span data-ttu-id="4db59-105">Du kan välja olika avskrivningsmetoder och -praxis.</span><span class="sxs-lookup"><span data-stu-id="4db59-105">You can select various depreciation methods and conventions.</span></span> <span data-ttu-id="4db59-106">Syftet med metoderna är att fördela anläggningstillgångens avskrivbara värde i räkenskapsperioder.</span><span class="sxs-lookup"><span data-stu-id="4db59-106">The purpose of the methods is to allocate the depreciable value of the fixed asset into fiscal periods.</span></span> <span data-ttu-id="4db59-107">Anläggningstillgångens avskrivbara värde är anskaffningspriset minus eventuellt kassationsvärde.</span><span class="sxs-lookup"><span data-stu-id="4db59-107">The depreciable value of the fixed asset is the acquisition price, reduced by a scrap value, if any.</span></span> 
+<span data-ttu-id="43721-105">Du kan välja olika avskrivningsmetoder och -praxis.</span><span class="sxs-lookup"><span data-stu-id="43721-105">You can select various depreciation methods and conventions.</span></span> <span data-ttu-id="43721-106">Syftet med metoderna är att fördela anläggningstillgångens avskrivbara värde i räkenskapsperioder.</span><span class="sxs-lookup"><span data-stu-id="43721-106">The purpose of the methods is to allocate the depreciable value of the fixed asset into fiscal periods.</span></span> <span data-ttu-id="43721-107">Anläggningstillgångens avskrivbara värde är anskaffningspriset minus eventuellt kassationsvärde.</span><span class="sxs-lookup"><span data-stu-id="43721-107">The depreciable value of the fixed asset is the acquisition price, reduced by a scrap value, if any.</span></span> 
 
-<span data-ttu-id="4db59-108">Om du använder avskrivningspraxis och ändrar senaste körningsdatum för avskrivning för en tillgång, som orsakar att vissa avskrivningar hoppas över, kan avskrivningen för förra året bli högre eller lägre än förväntat.</span><span class="sxs-lookup"><span data-stu-id="4db59-108">If you are using depreciation conventions and you modify the last depreciation run date for an asset, which then causes some depreciations to be skipped, the depreciation for the last year might be more than or less than is expected.</span></span> <span data-ttu-id="4db59-109">Avskrivningen justeras med antalet avskrivningsperioder som påverkas av ändringen av senaste körningsdatum för avskrivning.</span><span class="sxs-lookup"><span data-stu-id="4db59-109">The depreciation is adjusted by the number of depreciation periods affected by the modification of the last depreciation run date.</span></span>
+<span data-ttu-id="43721-108">Om du använder avskrivningspraxis och ändrar senaste körningsdatum för avskrivning för en tillgång, som orsakar att vissa avskrivningar hoppas över, kan avskrivningen för förra året bli högre eller lägre än förväntat.</span><span class="sxs-lookup"><span data-stu-id="43721-108">If you are using depreciation conventions and you modify the last depreciation run date for an asset, which then causes some depreciations to be skipped, the depreciation for the last year might be more than or less than is expected.</span></span> <span data-ttu-id="43721-109">Avskrivningen justeras med antalet avskrivningsperioder som påverkas av ändringen av senaste körningsdatum för avskrivning.</span><span class="sxs-lookup"><span data-stu-id="43721-109">The depreciation is adjusted by the number of depreciation periods affected by the modification of the last depreciation run date.</span></span>
 
-<span data-ttu-id="4db59-110">Om du till exempel använder praxis för halvårsavskrivning över tre år sker avskrivning normalt över 3 1/2 år.</span><span class="sxs-lookup"><span data-stu-id="4db59-110">For example, if you are using the Half year depreciation convention over three years, depreciation ordinarily occurs over 3 1/2 years.</span></span> <span data-ttu-id="4db59-111">Om du ändrar senaste körningsdatum för avskrivning under de 3 1/2 åren, flyttar det senaste avskrivningsåret ut antalet perioder som påverkas.</span><span class="sxs-lookup"><span data-stu-id="4db59-111">If you change the last depreciation run date during the 3 1/2 years, the last year of depreciation moves out the number of periods affected.</span></span> <span data-ttu-id="4db59-112">Om du flyttar datumet tre månader har förra året nio månaders avskrivning, medan det normalt skulle vara sex månaders avskrivning.</span><span class="sxs-lookup"><span data-stu-id="4db59-112">If you move the date by three months, the last year will have nine months’ worth of depreciation, when ordinarily there would be six months’ worth of depreciation.</span></span>
+<span data-ttu-id="43721-110">Om du till exempel använder praxis för halvårsavskrivning över tre år sker avskrivning normalt över 3 1/2 år.</span><span class="sxs-lookup"><span data-stu-id="43721-110">For example, if you are using the Half year depreciation convention over three years, depreciation ordinarily occurs over 3 1/2 years.</span></span> <span data-ttu-id="43721-111">Om du ändrar senaste körningsdatum för avskrivning under de 3 1/2 åren, flyttar det senaste avskrivningsåret ut antalet perioder som påverkas.</span><span class="sxs-lookup"><span data-stu-id="43721-111">If you change the last depreciation run date during the 3 1/2 years, the last year of depreciation moves out the number of periods affected.</span></span> <span data-ttu-id="43721-112">Om du flyttar datumet tre månader har förra året nio månaders avskrivning, medan det normalt skulle vara sex månaders avskrivning.</span><span class="sxs-lookup"><span data-stu-id="43721-112">If you move the date by three months, the last year will have nine months’ worth of depreciation, when ordinarily there would be six months’ worth of depreciation.</span></span>
 
-<span data-ttu-id="4db59-113">Du kan välja bland följande avskrivningspraxis.</span><span class="sxs-lookup"><span data-stu-id="4db59-113">You can select from the following depreciation conventions.</span></span>
-
-
--   <span data-ttu-id="4db59-114">Halvår</span><span class="sxs-lookup"><span data-stu-id="4db59-114">Half year</span></span>
--   <span data-ttu-id="4db59-115">Hel månad</span><span class="sxs-lookup"><span data-stu-id="4db59-115">Full month</span></span>
--   <span data-ttu-id="4db59-116">Mellankvartal</span><span class="sxs-lookup"><span data-stu-id="4db59-116">Mid quarter</span></span>
--   <span data-ttu-id="4db59-117">Mitt i månaden (första i månaden)</span><span class="sxs-lookup"><span data-stu-id="4db59-117">Mid month (1st of month)</span></span>
--   <span data-ttu-id="4db59-118">Mitt i månaden (15:e i månaden)</span><span class="sxs-lookup"><span data-stu-id="4db59-118">Mid month (15th of month)</span></span>
--   <span data-ttu-id="4db59-119">Halvår (start på året)</span><span class="sxs-lookup"><span data-stu-id="4db59-119">Half year (start of year)</span></span>
--   <span data-ttu-id="4db59-120">Halvår (nästa år)</span><span class="sxs-lookup"><span data-stu-id="4db59-120">Half year (next year)</span></span>
-
-<span data-ttu-id="4db59-121">Du kan välja mellan följande avskrivningsmetoder.</span><span class="sxs-lookup"><span data-stu-id="4db59-121">You can select from the following depreciation methods.</span></span>
--   <span data-ttu-id="4db59-122">Linjär tjänstelivstid</span><span class="sxs-lookup"><span data-stu-id="4db59-122">Straight line service life</span></span>
--   <span data-ttu-id="4db59-123">Degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="4db59-123">Reducing balance</span></span>
--   <span data-ttu-id="4db59-124">Manuell</span><span class="sxs-lookup"><span data-stu-id="4db59-124">Manual</span></span>
--   <span data-ttu-id="4db59-125">Faktor</span><span class="sxs-lookup"><span data-stu-id="4db59-125">Factor</span></span>
--   <span data-ttu-id="4db59-126">Förbrukning</span><span class="sxs-lookup"><span data-stu-id="4db59-126">Consumption</span></span>
--   <span data-ttu-id="4db59-127">Linjär återstående livstid</span><span class="sxs-lookup"><span data-stu-id="4db59-127">Straight line life remaining</span></span>
--   <span data-ttu-id="4db59-128">200 % degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="4db59-128">200% reducing balance</span></span>
--   <span data-ttu-id="4db59-129">175 % degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="4db59-129">175% reducing balance</span></span>
--   <span data-ttu-id="4db59-130">150 % degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="4db59-130">150% reducing balance</span></span>
--   <span data-ttu-id="4db59-131">125 % degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="4db59-131">125% reducing balance</span></span>
+<span data-ttu-id="43721-113">Du kan välja bland följande avskrivningspraxis.</span><span class="sxs-lookup"><span data-stu-id="43721-113">You can select from the following depreciation conventions.</span></span>
 
 
+-   <span data-ttu-id="43721-114">Halvår</span><span class="sxs-lookup"><span data-stu-id="43721-114">Half year</span></span>
+-   <span data-ttu-id="43721-115">Hel månad</span><span class="sxs-lookup"><span data-stu-id="43721-115">Full month</span></span>
+-   <span data-ttu-id="43721-116">Mellankvartal</span><span class="sxs-lookup"><span data-stu-id="43721-116">Mid quarter</span></span>
+-   <span data-ttu-id="43721-117">Mitt i månaden (första i månaden)</span><span class="sxs-lookup"><span data-stu-id="43721-117">Mid month (1st of month)</span></span>
+-   <span data-ttu-id="43721-118">Mitt i månaden (15:e i månaden)</span><span class="sxs-lookup"><span data-stu-id="43721-118">Mid month (15th of month)</span></span>
+-   <span data-ttu-id="43721-119">Halvår (start på året)</span><span class="sxs-lookup"><span data-stu-id="43721-119">Half year (start of year)</span></span>
+-   <span data-ttu-id="43721-120">Halvår (nästa år)</span><span class="sxs-lookup"><span data-stu-id="43721-120">Half year (next year)</span></span>
+
+<span data-ttu-id="43721-121">Du kan välja mellan följande avskrivningsmetoder.</span><span class="sxs-lookup"><span data-stu-id="43721-121">You can select from the following depreciation methods.</span></span>
+-   <span data-ttu-id="43721-122">Linjär tjänstelivstid</span><span class="sxs-lookup"><span data-stu-id="43721-122">Straight line service life</span></span>
+-   <span data-ttu-id="43721-123">Degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="43721-123">Reducing balance</span></span>
+-   <span data-ttu-id="43721-124">Manuell</span><span class="sxs-lookup"><span data-stu-id="43721-124">Manual</span></span>
+-   <span data-ttu-id="43721-125">Faktor</span><span class="sxs-lookup"><span data-stu-id="43721-125">Factor</span></span>
+-   <span data-ttu-id="43721-126">Förbrukning</span><span class="sxs-lookup"><span data-stu-id="43721-126">Consumption</span></span>
+-   <span data-ttu-id="43721-127">Linjär återstående livstid</span><span class="sxs-lookup"><span data-stu-id="43721-127">Straight line life remaining</span></span>
+-   <span data-ttu-id="43721-128">200 % degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="43721-128">200% reducing balance</span></span>
+-   <span data-ttu-id="43721-129">175 % degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="43721-129">175% reducing balance</span></span>
+-   <span data-ttu-id="43721-130">150 % degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="43721-130">150% reducing balance</span></span>
+-   <span data-ttu-id="43721-131">125 % degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="43721-131">125% reducing balance</span></span>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="4db59-132">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="4db59-132">Additional resources</span></span>
+
+
+<a name="additional-resources"></a><span data-ttu-id="43721-132">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="43721-132">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="4db59-133">Avskrivning av anläggningstillgång</span><span class="sxs-lookup"><span data-stu-id="4db59-133">Fixed asset depreciation</span></span>](fixed-asset-depreciation.md)
+[<span data-ttu-id="43721-133">Avskrivning av anläggningstillgång</span><span class="sxs-lookup"><span data-stu-id="43721-133">Fixed asset depreciation</span></span>](fixed-asset-depreciation.md)
 
-[<span data-ttu-id="4db59-134">Linjär avskrivning av tjänstelivstid</span><span class="sxs-lookup"><span data-stu-id="4db59-134">Straight line service life depreciation</span></span>](Straight-line-service-life-depreciation.md)
+[<span data-ttu-id="43721-134">Linjär avskrivning av tjänstelivstid</span><span class="sxs-lookup"><span data-stu-id="43721-134">Straight line service life depreciation</span></span>](Straight-line-service-life-depreciation.md)
 
-[<span data-ttu-id="4db59-135">Minska balans för avskrivning</span><span class="sxs-lookup"><span data-stu-id="4db59-135">Reduce balance depreciation</span></span>](reduce-balance-depreciation.md)
+[<span data-ttu-id="43721-135">Minska balans för avskrivning</span><span class="sxs-lookup"><span data-stu-id="43721-135">Reduce balance depreciation</span></span>](reduce-balance-depreciation.md)
 
-[<span data-ttu-id="4db59-136">Manuell avskrivning</span><span class="sxs-lookup"><span data-stu-id="4db59-136">Manual depreciation</span></span>](manual-depreciation.md)
+[<span data-ttu-id="43721-136">Manuell avskrivning</span><span class="sxs-lookup"><span data-stu-id="43721-136">Manual depreciation</span></span>](manual-depreciation.md)
 
-[<span data-ttu-id="4db59-137">Faktoravskrivning</span><span class="sxs-lookup"><span data-stu-id="4db59-137">Factor depreciation</span></span>](factor-depreciation.md)
+[<span data-ttu-id="43721-137">Faktoravskrivning</span><span class="sxs-lookup"><span data-stu-id="43721-137">Factor depreciation</span></span>](factor-depreciation.md)
 
-[<span data-ttu-id="4db59-138">Förbrukningsavskrivning</span><span class="sxs-lookup"><span data-stu-id="4db59-138">Consumption depreciation</span></span>](consumption-depreciation.md)
+[<span data-ttu-id="43721-138">Förbrukningsavskrivning</span><span class="sxs-lookup"><span data-stu-id="43721-138">Consumption depreciation</span></span>](consumption-depreciation.md)
 
-[<span data-ttu-id="4db59-139">Linjär avskrivning kvarstående livstid</span><span class="sxs-lookup"><span data-stu-id="4db59-139">Straight line life remaining depreciation</span></span>](straight-line-life-remaining-depreciation.md)
+[<span data-ttu-id="43721-139">Linjär avskrivning kvarstående livstid</span><span class="sxs-lookup"><span data-stu-id="43721-139">Straight line life remaining depreciation</span></span>](straight-line-life-remaining-depreciation.md)
 
-[<span data-ttu-id="4db59-140">125 procent degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="4db59-140">125 percent reducing balance depreciation</span></span>](125-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="43721-140">125 procent degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="43721-140">125 percent reducing balance depreciation</span></span>](125-percent-reducing-balance-depreciation.md)
 
-[<span data-ttu-id="4db59-141">150 procent degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="4db59-141">150 percent reducing balance depreciation</span></span>](150-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="43721-141">150 procent degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="43721-141">150 percent reducing balance depreciation</span></span>](150-percent-reducing-balance-depreciation.md)
 
-[<span data-ttu-id="4db59-142">175 procent degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="4db59-142">175 percent reducing balance depreciation</span></span>](175-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="43721-142">175 procent degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="43721-142">175 percent reducing balance depreciation</span></span>](175-percent-reducing-balance-depreciation.md)
 
-[<span data-ttu-id="4db59-143">200 procent degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="4db59-143">200 percent reducing balance depreciation</span></span>](200-percent-reducing-balance-depreciation.md)
+[<span data-ttu-id="43721-143">200 procent degressiv avskrivning</span><span class="sxs-lookup"><span data-stu-id="43721-143">200 percent reducing balance depreciation</span></span>](200-percent-reducing-balance-depreciation.md)
 
 
 
