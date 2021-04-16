@@ -2,7 +2,6 @@
 title: Funktionen CONVERTCURRENCY ER
 description: Det här avsnittet innehåller information om hur funktionen CONVERTCURRENCY elektronisk rapportering (ER) används.
 author: NickSelin
-manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: ''
@@ -16,60 +15,60 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f0d5bace9b62cf6f0d7576744a6cc271666bf73
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: fb8f7f28f5a9bb27402544efcffa6393238e38d8
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567650"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744377"
 ---
-# <a name="convertcurrency-er-function"></a><span data-ttu-id="6f060-103">Funktionen CONVERTCURRENCY ER</span><span class="sxs-lookup"><span data-stu-id="6f060-103">CONVERTCURRENCY ER function</span></span>
+# <a name="convertcurrency-er-function"></a><span data-ttu-id="75b44-103">Funktionen CONVERTCURRENCY ER</span><span class="sxs-lookup"><span data-stu-id="75b44-103">CONVERTCURRENCY ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="6f060-104">`CONVERTCURRENCY`-funktionen returnerar ett *Realtal*-värde som representerar resultatet av att konvertera det angivna monetära beloppet från den angivna källvalutan till den angivna målvalutan genom att använda inställningarna för det angivna företaget på det angivna datumet.</span><span class="sxs-lookup"><span data-stu-id="6f060-104">The `CONVERTCURRENCY` function returns a *Real* value that represents the result of converting the specified monetary amount from the specified source currency to the specified target currency by using the settings of the specified company on the specified date.</span></span>
+<span data-ttu-id="75b44-104">`CONVERTCURRENCY`-funktionen returnerar ett *Realtal*-värde som representerar resultatet av att konvertera det angivna monetära beloppet från den angivna källvalutan till den angivna målvalutan genom att använda inställningarna för det angivna företaget på det angivna datumet.</span><span class="sxs-lookup"><span data-stu-id="75b44-104">The `CONVERTCURRENCY` function returns a *Real* value that represents the result of converting the specified monetary amount from the specified source currency to the specified target currency by using the settings of the specified company on the specified date.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="6f060-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="6f060-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="75b44-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="75b44-105">Syntax</span></span>
 
 ```vb
 CONVERTCURRENCY (amount, source currency, target currency, date, company)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="6f060-106">Argument</span><span class="sxs-lookup"><span data-stu-id="6f060-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="75b44-106">Argument</span><span class="sxs-lookup"><span data-stu-id="75b44-106">Arguments</span></span>
 
-<span data-ttu-id="6f060-107">`amount`: *Heltal* eller *Realtal*</span><span class="sxs-lookup"><span data-stu-id="6f060-107">`amount`: *Integer* or *Real*</span></span>
+<span data-ttu-id="75b44-107">`amount`: *Heltal* eller *Realtal*</span><span class="sxs-lookup"><span data-stu-id="75b44-107">`amount`: *Integer* or *Real*</span></span>
 
-<span data-ttu-id="6f060-108">Ett numeriskt värde som representerar det monetära belopp som måste konverteras.</span><span class="sxs-lookup"><span data-stu-id="6f060-108">A numeric value that represents the monetary amount that must be converted.</span></span>
+<span data-ttu-id="75b44-108">Ett numeriskt värde som representerar det monetära belopp som måste konverteras.</span><span class="sxs-lookup"><span data-stu-id="75b44-108">A numeric value that represents the monetary amount that must be converted.</span></span>
 
-<span data-ttu-id="6f060-109">`source currency`: *Sträng*</span><span class="sxs-lookup"><span data-stu-id="6f060-109">`source currency`: *String*</span></span>
+<span data-ttu-id="75b44-109">`source currency`: *Sträng*</span><span class="sxs-lookup"><span data-stu-id="75b44-109">`source currency`: *String*</span></span>
 
-<span data-ttu-id="6f060-110">Koden för källvalutan.</span><span class="sxs-lookup"><span data-stu-id="6f060-110">The code of the source currency.</span></span>
+<span data-ttu-id="75b44-110">Koden för källvalutan.</span><span class="sxs-lookup"><span data-stu-id="75b44-110">The code of the source currency.</span></span>
 
-<span data-ttu-id="6f060-111">`target currency`: *Sträng*</span><span class="sxs-lookup"><span data-stu-id="6f060-111">`target currency`: *String*</span></span>
+<span data-ttu-id="75b44-111">`target currency`: *Sträng*</span><span class="sxs-lookup"><span data-stu-id="75b44-111">`target currency`: *String*</span></span>
 
-<span data-ttu-id="6f060-112">Koden för målvalutan.</span><span class="sxs-lookup"><span data-stu-id="6f060-112">The code of the target currency.</span></span>
+<span data-ttu-id="75b44-112">Koden för målvalutan.</span><span class="sxs-lookup"><span data-stu-id="75b44-112">The code of the target currency.</span></span>
 
-<span data-ttu-id="6f060-113">`date`: *Datum*</span><span class="sxs-lookup"><span data-stu-id="6f060-113">`date`: *Date*</span></span>
+<span data-ttu-id="75b44-113">`date`: *Datum*</span><span class="sxs-lookup"><span data-stu-id="75b44-113">`date`: *Date*</span></span>
 
-<span data-ttu-id="6f060-114">Ett *datum*-värde som representerar det datum som används för att bestämma valutakursen för konverteringen.</span><span class="sxs-lookup"><span data-stu-id="6f060-114">A *Date* value that represents the date that is used to determine the exchange rate for the conversion.</span></span>
+<span data-ttu-id="75b44-114">Ett *datum*-värde som representerar det datum som används för att bestämma valutakursen för konverteringen.</span><span class="sxs-lookup"><span data-stu-id="75b44-114">A *Date* value that represents the date that is used to determine the exchange rate for the conversion.</span></span>
 
-<span data-ttu-id="6f060-115">`company`: *Sträng*</span><span class="sxs-lookup"><span data-stu-id="6f060-115">`company`: *String*</span></span>
+<span data-ttu-id="75b44-115">`company`: *Sträng*</span><span class="sxs-lookup"><span data-stu-id="75b44-115">`company`: *String*</span></span>
 
-<span data-ttu-id="6f060-116">Ett *sträng*-värde som representerar koden för ett företag som tillhandahåller de inställningar som används för konverteringen.</span><span class="sxs-lookup"><span data-stu-id="6f060-116">A *String* value that represents the code of a company that supplies the settings that are used for the conversion.</span></span>
+<span data-ttu-id="75b44-116">Ett *sträng*-värde som representerar koden för ett företag som tillhandahåller de inställningar som används för konverteringen.</span><span class="sxs-lookup"><span data-stu-id="75b44-116">A *String* value that represents the code of a company that supplies the settings that are used for the conversion.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="6f060-117">Returvärden</span><span class="sxs-lookup"><span data-stu-id="6f060-117">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="75b44-117">Returvärden</span><span class="sxs-lookup"><span data-stu-id="75b44-117">Return values</span></span>
 
-<span data-ttu-id="6f060-118">*Realtal*</span><span class="sxs-lookup"><span data-stu-id="6f060-118">*Real*</span></span>
+<span data-ttu-id="75b44-118">*Realtal*</span><span class="sxs-lookup"><span data-stu-id="75b44-118">*Real*</span></span>
 
-<span data-ttu-id="6f060-119">Det resulterande numeriska värdet.</span><span class="sxs-lookup"><span data-stu-id="6f060-119">The resulting numeric value.</span></span>
+<span data-ttu-id="75b44-119">Det resulterande numeriska värdet.</span><span class="sxs-lookup"><span data-stu-id="75b44-119">The resulting numeric value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6f060-120">Exempel</span><span class="sxs-lookup"><span data-stu-id="6f060-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="75b44-120">Exempel</span><span class="sxs-lookup"><span data-stu-id="75b44-120">Example</span></span>
 
-<span data-ttu-id="6f060-121">`CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")` returnerar motsvarigheten för en euro i US-dollar för det aktuella sessionsdatumet baserat på inställningarna för **DEMF**-företaget.</span><span class="sxs-lookup"><span data-stu-id="6f060-121">`CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")` returns the equivalent of one euro in US dollars on the current session date, based on settings for the **DEMF** company.</span></span>
+<span data-ttu-id="75b44-121">`CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")` returnerar motsvarigheten för en euro i US-dollar för det aktuella sessionsdatumet baserat på inställningarna för **DEMF**-företaget.</span><span class="sxs-lookup"><span data-stu-id="75b44-121">`CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")` returns the equivalent of one euro in US dollars on the current session date, based on settings for the **DEMF** company.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="6f060-122">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="6f060-122">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="75b44-122">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="75b44-122">Additional resources</span></span>
 
-[<span data-ttu-id="6f060-123">Andra (företagsdomänspecifika) funktioner</span><span class="sxs-lookup"><span data-stu-id="6f060-123">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="75b44-123">Andra (företagsdomänspecifika) funktioner</span><span class="sxs-lookup"><span data-stu-id="75b44-123">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
