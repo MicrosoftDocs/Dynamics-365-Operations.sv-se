@@ -1,12 +1,10 @@
 ---
 title: Tillgångstillverkare och-modeller
 description: Det här avsnittet förklarar hur du ställer in tillgångstillverkare och relaterade modeller i Tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetProductLookup, EntAssetModelLookup, EntAssetProduct
 audience: Application User
@@ -14,51 +12,51 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cec4f644af4a087464635d9a7ca825eb354747eb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 80900301262a0a19ade7c699891a0918921b4104
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259972"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825696"
 ---
-# <a name="asset-manufacturers-and-models"></a><span data-ttu-id="ba8e4-103">Tillgångstillverkare och-modeller</span><span class="sxs-lookup"><span data-stu-id="ba8e4-103">Asset manufacturers and models</span></span>
+# <a name="asset-manufacturers-and-models"></a><span data-ttu-id="3e4e6-103">Tillgångstillverkare och-modeller</span><span class="sxs-lookup"><span data-stu-id="3e4e6-103">Asset manufacturers and models</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="ba8e4-104">Det här avsnittet förklarar hur du ställer in tillgångstillverkare och relaterade modeller i Tillgångshantering.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-104">This topic explains how to set up asset manufacturers and related models in Asset Management.</span></span> <span data-ttu-id="ba8e4-105">Modeller kan relateras till tillgångstyper.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-105">Models can be related to asset types.</span></span>
+<span data-ttu-id="3e4e6-104">Det här avsnittet förklarar hur du ställer in tillgångstillverkare och relaterade modeller i Tillgångshantering.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-104">This topic explains how to set up asset manufacturers and related models in Asset Management.</span></span> <span data-ttu-id="3e4e6-105">Modeller kan relateras till tillgångstyper.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-105">Models can be related to asset types.</span></span>
 
-## <a name="set-up-product-model-relations"></a><span data-ttu-id="ba8e4-106">Ställ in produktmodellrelationer</span><span class="sxs-lookup"><span data-stu-id="ba8e4-106">Set up product-model relations</span></span>
+## <a name="set-up-product-model-relations"></a><span data-ttu-id="3e4e6-106">Ställ in produktmodellrelationer</span><span class="sxs-lookup"><span data-stu-id="3e4e6-106">Set up product-model relations</span></span>
 
-1. <span data-ttu-id="ba8e4-107">Välj **Tillgångshantering** \> **Inställning** \> **Tillgångar** \> **Tillverkare och modell**.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-107">Select **Asset management** \> **Setup** \> **Assets** \> **Manufacturer and model**.</span></span>
-2. <span data-ttu-id="ba8e4-108">Skapa en ny produkt genom att välja **Nytt**.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-108">Select **New** to create a new product.</span></span>
-3. <span data-ttu-id="ba8e4-109">I fältet **tillverkare**,ange ett namn för tillgångstillverkaren.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-109">In the **Manufacturer** field, enter a name for the asset manufacturer.</span></span>
-4. <span data-ttu-id="ba8e4-110">Ange en beskrivning i fältet **beskrivning**.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-110">In the **Description** field, enter a description.</span></span>
-5. <span data-ttu-id="ba8e4-111">På snabbfliken **Modeller** väljer du **Lägg till** för att skapa en tillgångsmodell som ska relateras till tillgångstillverkaren.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-111">On the **Models** FastTab, select **Add** to create an asset model that should be related to the asset manufacturer.</span></span>
-6. <span data-ttu-id="ba8e4-112">I fältet **Modell**,ange ett namn för tillgångsmodellen.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-112">In the **Model** field, enter a name for the asset model.</span></span>
-7. <span data-ttu-id="ba8e4-113">Ange en beskrivning i fältet **beskrivning**.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-113">In the **Description** field, enter a description.</span></span>
-8. <span data-ttu-id="ba8e4-114">I fältet **tillgångstyp** väljer du den tillgångstyp som tillverkarmodellen ska relateras till.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-114">In the **Asset type** field, select the asset type that the manufacturer model should be related to.</span></span>
+1. <span data-ttu-id="3e4e6-107">Välj **Tillgångshantering** \> **Inställning** \> **Tillgångar** \> **Tillverkare och modell**.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-107">Select **Asset management** \> **Setup** \> **Assets** \> **Manufacturer and model**.</span></span>
+2. <span data-ttu-id="3e4e6-108">Skapa en ny produkt genom att välja **Nytt**.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-108">Select **New** to create a new product.</span></span>
+3. <span data-ttu-id="3e4e6-109">I fältet **tillverkare**,ange ett namn för tillgångstillverkaren.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-109">In the **Manufacturer** field, enter a name for the asset manufacturer.</span></span>
+4. <span data-ttu-id="3e4e6-110">Ange en beskrivning i fältet **beskrivning**.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-110">In the **Description** field, enter a description.</span></span>
+5. <span data-ttu-id="3e4e6-111">På snabbfliken **Modeller** väljer du **Lägg till** för att skapa en tillgångsmodell som ska relateras till tillgångstillverkaren.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-111">On the **Models** FastTab, select **Add** to create an asset model that should be related to the asset manufacturer.</span></span>
+6. <span data-ttu-id="3e4e6-112">I fältet **Modell**,ange ett namn för tillgångsmodellen.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-112">In the **Model** field, enter a name for the asset model.</span></span>
+7. <span data-ttu-id="3e4e6-113">Ange en beskrivning i fältet **beskrivning**.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-113">In the **Description** field, enter a description.</span></span>
+8. <span data-ttu-id="3e4e6-114">I fältet **tillgångstyp** väljer du den tillgångstyp som tillverkarmodellen ska relateras till.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-114">In the **Asset type** field, select the asset type that the manufacturer model should be related to.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="ba8e4-115">Du kan också ställa in relationer för tillgångstyper, tillverkare och modeller i sökningen **tillgångstyper**.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-115">You can also set up relations for asset types, manufacturers, and models in the **Asset types** lookup.</span></span> <span data-ttu-id="ba8e4-116">Mer information finns i [Tillgångstyper](../setup-for-objects/object-types.md).</span><span class="sxs-lookup"><span data-stu-id="ba8e4-116">For more information, see [Asset types](../setup-for-objects/object-types.md).</span></span>
+    > <span data-ttu-id="3e4e6-115">Du kan också ställa in relationer för tillgångstyper, tillverkare och modeller i sökningen **tillgångstyper**.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-115">You can also set up relations for asset types, manufacturers, and models in the **Asset types** lookup.</span></span> <span data-ttu-id="3e4e6-116">Mer information finns i [Tillgångstyper](../setup-for-objects/object-types.md).</span><span class="sxs-lookup"><span data-stu-id="3e4e6-116">For more information, see [Asset types](../setup-for-objects/object-types.md).</span></span>
 
-    <span data-ttu-id="ba8e4-117">På snabbfliken **Detaljer** visar fältet **Modeller** antalet tillgångsmodeller som har ställts in på den valda tillgångstillverkaren.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-117">In the **Details** FastTab, the **Models** field shows the number of asset models that are set up on the selected asset manufacturer.</span></span> <span data-ttu-id="ba8e4-118">Fältet **tillgångar** visar antalet tillgångar som använder den valda tillverkaren.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-118">The **Assets** field shows the number of assets that are using the selected manufacturer.</span></span>
+    <span data-ttu-id="3e4e6-117">På snabbfliken **Detaljer** visar fältet **Modeller** antalet tillgångsmodeller som har ställts in på den valda tillgångstillverkaren.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-117">In the **Details** FastTab, the **Models** field shows the number of asset models that are set up on the selected asset manufacturer.</span></span> <span data-ttu-id="3e4e6-118">Fältet **tillgångar** visar antalet tillgångar som använder den valda tillverkaren.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-118">The **Assets** field shows the number of assets that are using the selected manufacturer.</span></span>
     
-    <span data-ttu-id="ba8e4-119">Fältet **tillgångar** visar antalet objekt som använder den valda tillverkarmodellen.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-119">The **Assets** field shows the number of objects that are using the manufacturer model.</span></span>
+    <span data-ttu-id="3e4e6-119">Fältet **tillgångar** visar antalet objekt som använder den valda tillverkarmodellen.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-119">The **Assets** field shows the number of objects that are using the manufacturer model.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="ba8e4-120">En tillgångstyp kan inte ha någon modellrelation för tillgångstillverkare, den kan relateras till en modell för tillgångstillverkare, eller så kan den relateras till flera tillgångstillverkares modeller.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-120">An asset type can have no asset manufacturer model relations, it can be related to one asset manufacturer model, or it can be related multiple asset manufacturer models.</span></span> <span data-ttu-id="ba8e4-121">Om en tillgångstyp är relaterad till minst en tillverkarmodell, kan endast de kombinationer som har ställts in i sökningen **Tillverkarmodell** väljas på dessa tillgångshanteringssidor där en kombination av en tillgångstyp, tillverkare och modell kan ställas in.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-121">If an asset type is related to at least one manufacturer model, only the combinations that are set up in the **Manufacturer model** lookup can be selected on those Asset Management pages where a combination of an asset type, manufacturer, and model can be set up.</span></span> <span data-ttu-id="ba8e4-122">Dessa sidor innehåller **Alla tillgångar**, **servicenivåer för tillgång**, **standarder för jobbtyp** och **budgetrader för underhåll**.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-122">These pages include **All assets**, **Asset service levels**, **Job type defaults**, and **Maintenance budget lines**.</span></span> <span data-ttu-id="ba8e4-123">Om vissa tillgångstyper inte är relaterade till någon tillverkarmodell visas endast de tillgångstyper och tillverkarmodeller som också har någon relation till tillgångstyper på sidorna.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-123">If some asset types aren't related to any manufacturer model, only those asset types, and manufacturer models that also have no relation to asset types, are shown on the pages.</span></span>
+> <span data-ttu-id="3e4e6-120">En tillgångstyp kan inte ha någon modellrelation för tillgångstillverkare, den kan relateras till en modell för tillgångstillverkare, eller så kan den relateras till flera tillgångstillverkares modeller.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-120">An asset type can have no asset manufacturer model relations, it can be related to one asset manufacturer model, or it can be related multiple asset manufacturer models.</span></span> <span data-ttu-id="3e4e6-121">Om en tillgångstyp är relaterad till minst en tillverkarmodell, kan endast de kombinationer som har ställts in i sökningen **Tillverkarmodell** väljas på dessa tillgångshanteringssidor där en kombination av en tillgångstyp, tillverkare och modell kan ställas in.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-121">If an asset type is related to at least one manufacturer model, only the combinations that are set up in the **Manufacturer model** lookup can be selected on those Asset Management pages where a combination of an asset type, manufacturer, and model can be set up.</span></span> <span data-ttu-id="3e4e6-122">Dessa sidor innehåller **Alla tillgångar**, **servicenivåer för tillgång**, **standarder för jobbtyp** och **budgetrader för underhåll**.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-122">These pages include **All assets**, **Asset service levels**, **Job type defaults**, and **Maintenance budget lines**.</span></span> <span data-ttu-id="3e4e6-123">Om vissa tillgångstyper inte är relaterade till någon tillverkarmodell visas endast de tillgångstyper och tillverkarmodeller som också har någon relation till tillgångstyper på sidorna.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-123">If some asset types aren't related to any manufacturer model, only those asset types, and manufacturer models that also have no relation to asset types, are shown on the pages.</span></span>
 
-## <a name="select-a-manufacturer-and-model-on-an-object"></a><span data-ttu-id="ba8e4-124">Välja en tillverkare och modell på ett objekt</span><span class="sxs-lookup"><span data-stu-id="ba8e4-124">Select a manufacturer and model on an object</span></span>
+## <a name="select-a-manufacturer-and-model-on-an-object"></a><span data-ttu-id="3e4e6-124">Välja en tillverkare och modell på ett objekt</span><span class="sxs-lookup"><span data-stu-id="3e4e6-124">Select a manufacturer and model on an object</span></span>
 
-1. <span data-ttu-id="ba8e4-125">Välj **Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillgångar**</span><span class="sxs-lookup"><span data-stu-id="ba8e4-125">Select **Asset management** \> **Common** \> **Assets** \> **All assets**.</span></span>
-2. <span data-ttu-id="ba8e4-126">I kolumnen **tillgång**, välj länken för tillgången.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-126">In the **Asset** column, select the link for the asset.</span></span> <span data-ttu-id="ba8e4-127">Sidan **Detaljer** visas.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-127">The **Details** page appears.</span></span>
-3. <span data-ttu-id="ba8e4-128">Välj **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-128">Select **Edit**.</span></span>
-4. <span data-ttu-id="ba8e4-129">På snabbfliken **allmänt** väljer du värden i fälten **tillverkare** och **modell**.</span><span class="sxs-lookup"><span data-stu-id="ba8e4-129">On the **General** FastTab, select values in the **Manufacturer** and **Model** fields.</span></span>
+1. <span data-ttu-id="3e4e6-125">Välj **Tillgångshantering** \> **Allmänt** \> **Tillgångar** \> **Alla tillgångar**</span><span class="sxs-lookup"><span data-stu-id="3e4e6-125">Select **Asset management** \> **Common** \> **Assets** \> **All assets**.</span></span>
+2. <span data-ttu-id="3e4e6-126">I kolumnen **tillgång**, välj länken för tillgången.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-126">In the **Asset** column, select the link for the asset.</span></span> <span data-ttu-id="3e4e6-127">Sidan **Detaljer** visas.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-127">The **Details** page appears.</span></span>
+3. <span data-ttu-id="3e4e6-128">Välj **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-128">Select **Edit**.</span></span>
+4. <span data-ttu-id="3e4e6-129">På snabbfliken **allmänt** väljer du värden i fälten **tillverkare** och **modell**.</span><span class="sxs-lookup"><span data-stu-id="3e4e6-129">On the **General** FastTab, select values in the **Manufacturer** and **Model** fields.</span></span>
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

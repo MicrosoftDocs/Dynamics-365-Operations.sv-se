@@ -2,11 +2,9 @@
 title: Ändra en efterfrågeprognos manuellt
 description: I den här proceduren visas hur du ändrar prognosen för en artikel.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, ForecastSales
 audience: Application User
@@ -15,32 +13,32 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 31c057d686edc97a11027f156b9c14ff453294ec
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 518a49441a9d73d9da5ab90400e0b7482692d374
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240399"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829676"
 ---
-# <a name="modify-a-demand-forecast-manually"></a><span data-ttu-id="b71a2-103">Ändra en efterfrågeprognos manuellt</span><span class="sxs-lookup"><span data-stu-id="b71a2-103">Modify a demand forecast manually</span></span>
+# <a name="modify-a-demand-forecast-manually"></a><span data-ttu-id="2436f-103">Ändra en efterfrågeprognos manuellt</span><span class="sxs-lookup"><span data-stu-id="2436f-103">Modify a demand forecast manually</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="b71a2-104">I den här proceduren visas hur du ändrar prognosen för en artikel.</span><span class="sxs-lookup"><span data-stu-id="b71a2-104">This procedure shows how to modify the forecast for an item.</span></span> <span data-ttu-id="b71a2-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="b71a2-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="b71a2-106">Registreringen är avsedd för produktionsplaneraren.</span><span class="sxs-lookup"><span data-stu-id="b71a2-106">This recording is intended for the production planner.</span></span> 
+<span data-ttu-id="2436f-104">I den här proceduren visas hur du ändrar prognosen för en artikel.</span><span class="sxs-lookup"><span data-stu-id="2436f-104">This procedure shows how to modify the forecast for an item.</span></span> <span data-ttu-id="2436f-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="2436f-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="2436f-106">Registreringen är avsedd för produktionsplaneraren.</span><span class="sxs-lookup"><span data-stu-id="2436f-106">This recording is intended for the production planner.</span></span> 
 
 
-## <a name="modify-the-forecast-for-an-item"></a><span data-ttu-id="b71a2-107">Ändra en prognos för en artikel</span><span class="sxs-lookup"><span data-stu-id="b71a2-107">Modify the forecast for an item</span></span>
-1. <span data-ttu-id="b71a2-108">I **navigeringsfönstret**, gå till **Moduler > Produktinformationshantering > Produkter > Frisläppta produkter**.</span><span class="sxs-lookup"><span data-stu-id="b71a2-108">In the **Navigation pane**, go to **Modules > Product information management > Products > Released products**.</span></span>
-2. <span data-ttu-id="b71a2-109">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="b71a2-109">In the list, find and select the desired record.</span></span> <span data-ttu-id="b71a2-110">Välj den artikel om du vill ändra prognosen för.</span><span class="sxs-lookup"><span data-stu-id="b71a2-110">Select the item for which you want to modify the forecast.</span></span> <span data-ttu-id="b71a2-111">Du kan till exempel välja artikel D0001.</span><span class="sxs-lookup"><span data-stu-id="b71a2-111">For example, you can select item D0001.</span></span>  
-3. <span data-ttu-id="b71a2-112">Klicka på **Plan** i **åtgärdsfönstret**.</span><span class="sxs-lookup"><span data-stu-id="b71a2-112">On the **Action Pane**, click **Plan**.</span></span>
-4. <span data-ttu-id="b71a2-113">Klicka på **Efterfrågeprognos**.</span><span class="sxs-lookup"><span data-stu-id="b71a2-113">Click **Demand forecast**.</span></span>
-5. <span data-ttu-id="b71a2-114">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="b71a2-114">In the list, mark the selected row.</span></span> <span data-ttu-id="b71a2-115">Om det inte finns några prognosrader skapar du en ny rad genom att klicka på Ny i appfältet.</span><span class="sxs-lookup"><span data-stu-id="b71a2-115">If there are no forecast lines, create a new line by clicking New on the app bar.</span></span>  
-6. <span data-ttu-id="b71a2-116">Ange ett nummer i fältet **Försäljningskvantitet**.</span><span class="sxs-lookup"><span data-stu-id="b71a2-116">In the **Sales quantity** field, enter a number.</span></span> <span data-ttu-id="b71a2-117">Det här numret representerar den prognosticerade kvantiteten för artikeln.</span><span class="sxs-lookup"><span data-stu-id="b71a2-117">This number represents the forecasted quantity for the item.</span></span>  
-7. <span data-ttu-id="b71a2-118">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="b71a2-118">Click Save.</span></span>
+## <a name="modify-the-forecast-for-an-item"></a><span data-ttu-id="2436f-107">Ändra en prognos för en artikel</span><span class="sxs-lookup"><span data-stu-id="2436f-107">Modify the forecast for an item</span></span>
+1. <span data-ttu-id="2436f-108">I **navigeringsfönstret**, gå till **Moduler > Produktinformationshantering > Produkter > Frisläppta produkter**.</span><span class="sxs-lookup"><span data-stu-id="2436f-108">In the **Navigation pane**, go to **Modules > Product information management > Products > Released products**.</span></span>
+2. <span data-ttu-id="2436f-109">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="2436f-109">In the list, find and select the desired record.</span></span> <span data-ttu-id="2436f-110">Välj den artikel om du vill ändra prognosen för.</span><span class="sxs-lookup"><span data-stu-id="2436f-110">Select the item for which you want to modify the forecast.</span></span> <span data-ttu-id="2436f-111">Du kan till exempel välja artikel D0001.</span><span class="sxs-lookup"><span data-stu-id="2436f-111">For example, you can select item D0001.</span></span>  
+3. <span data-ttu-id="2436f-112">Klicka på **Plan** i **åtgärdsfönstret**.</span><span class="sxs-lookup"><span data-stu-id="2436f-112">On the **Action Pane**, click **Plan**.</span></span>
+4. <span data-ttu-id="2436f-113">Klicka på **Efterfrågeprognos**.</span><span class="sxs-lookup"><span data-stu-id="2436f-113">Click **Demand forecast**.</span></span>
+5. <span data-ttu-id="2436f-114">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="2436f-114">In the list, mark the selected row.</span></span> <span data-ttu-id="2436f-115">Om det inte finns några prognosrader skapar du en ny rad genom att klicka på Ny i appfältet.</span><span class="sxs-lookup"><span data-stu-id="2436f-115">If there are no forecast lines, create a new line by clicking New on the app bar.</span></span>  
+6. <span data-ttu-id="2436f-116">Ange ett nummer i fältet **Försäljningskvantitet**.</span><span class="sxs-lookup"><span data-stu-id="2436f-116">In the **Sales quantity** field, enter a number.</span></span> <span data-ttu-id="2436f-117">Det här numret representerar den prognosticerade kvantiteten för artikeln.</span><span class="sxs-lookup"><span data-stu-id="2436f-117">This number represents the forecasted quantity for the item.</span></span>  
+7. <span data-ttu-id="2436f-118">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="2436f-118">Click Save.</span></span>
 
-## <a name="modify-the-forecast-in-excel"></a><span data-ttu-id="b71a2-119">Ändra prognosen i Excel</span><span class="sxs-lookup"><span data-stu-id="b71a2-119">Modify the forecast in Excel</span></span>
-1. <span data-ttu-id="b71a2-120">Klicka på **Öppna** i Microsoft Office.</span><span class="sxs-lookup"><span data-stu-id="b71a2-120">Click **Open** in Microsoft Office.</span></span>
-2. <span data-ttu-id="b71a2-121">Klicka på **Redigera en efterfrågeprognos** i Excel.</span><span class="sxs-lookup"><span data-stu-id="b71a2-121">Click **Edit Demand forecast** in Excel.</span></span> <span data-ttu-id="b71a2-122">I Excel kan du lägga till, ta bort och redigera efterfrågeprognosrader.</span><span class="sxs-lookup"><span data-stu-id="b71a2-122">In Excel, you can add, delete and edit demand forecast lines.</span></span> <span data-ttu-id="b71a2-123">Om du inte kan se data i Excel måste du logga in med alternativet "Håll mig inloggad" aktiverat och du måste lita på dataanslutningsappen.</span><span class="sxs-lookup"><span data-stu-id="b71a2-123">If you are not able to see the data in Excel, you need to sign in with the "Keep me signed in" option enabled and you need to trust the data connection app.</span></span>  
+## <a name="modify-the-forecast-in-excel"></a><span data-ttu-id="2436f-119">Ändra prognosen i Excel</span><span class="sxs-lookup"><span data-stu-id="2436f-119">Modify the forecast in Excel</span></span>
+1. <span data-ttu-id="2436f-120">Klicka på **Öppna** i Microsoft Office.</span><span class="sxs-lookup"><span data-stu-id="2436f-120">Click **Open** in Microsoft Office.</span></span>
+2. <span data-ttu-id="2436f-121">Klicka på **Redigera en efterfrågeprognos** i Excel.</span><span class="sxs-lookup"><span data-stu-id="2436f-121">Click **Edit Demand forecast** in Excel.</span></span> <span data-ttu-id="2436f-122">I Excel kan du lägga till, ta bort och redigera efterfrågeprognosrader.</span><span class="sxs-lookup"><span data-stu-id="2436f-122">In Excel, you can add, delete and edit demand forecast lines.</span></span> <span data-ttu-id="2436f-123">Om du inte kan se data i Excel måste du logga in med alternativet "Håll mig inloggad" aktiverat och du måste lita på dataanslutningsappen.</span><span class="sxs-lookup"><span data-stu-id="2436f-123">If you are not able to see the data in Excel, you need to sign in with the "Keep me signed in" option enabled and you need to trust the data connection app.</span></span>  
 
 
 
