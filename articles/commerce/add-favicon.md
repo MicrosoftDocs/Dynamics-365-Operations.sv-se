@@ -2,11 +2,9 @@
 title: Lägg till en favicon
 description: I det här avsnittet beskrivs hur du lägger till en favicon på webbplatsen.
 author: bicyclingfool
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,20 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 786ba02c312b7cdb3cf7f0689737084887d536bc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9268bc74a4131256f5a2e88df833104db271b56a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206353"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797729"
 ---
-# <a name="add-a-favicon"></a>Lägg till en favicon
+# <a name="add-a-favicon"></a>Lägga till en favoritikon
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du lägger till en favicon på webbplatsen.
-
-## <a name="overview"></a>Översikt
 
 En favicon är en liten grafisk fil som visas på en flik i webbläsaren, i adressfältet, i webbhistoriken och i bokmärken eller favoriter, bland annat. Vi rekommenderar att du lägger till en favicon på din webbplats, eftersom den representerar och stärker ditt varumärke och hjälper till att skilja din webbplats från andra webbplatser som dina kunder besöker.
 

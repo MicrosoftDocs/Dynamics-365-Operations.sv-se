@@ -2,11 +2,9 @@
 title: Ställ in en produktkonfigurationsmodell
 description: Den här artikeln beskriver hur du ställer in och skapar en modell för produktkonfiguration.
 author: cvocph
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCProductConfigurationModelListPage
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ad6b8b7f3111f44b725de07d2541411e4145884
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 190deb01685f7ae100c491befb1c958e86e6950d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5204650"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812773"
 ---
 # <a name="set-up-a-product-configuration-model"></a>Ställ in en produktkonfigurationsmodell
 

@@ -2,11 +2,9 @@
 title: Åtkomsträttigheter för en kostnadsobjektcontroller
 description: Det här avsnittet innehåller information om åtkomsträttigheter för kostnadsobjektcontroller.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/24/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspace, CAMParameters
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 08eb9048cf3c8a51e23da2413c5d6c387593146d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a3639c05b24de31cfa09d2d9d0cf427122f51eae
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5224008"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810208"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Åtkomsträttigheter för en kostnadsobjektcontroller
 

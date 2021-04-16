@@ -2,11 +2,9 @@
 title: Kassaapparatfunktioner för Sverige
 description: Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sverige.
 author: EvgenyPopovMBS
-manager: annbe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailHardwareProfile, RetailFiscalPrinterConfigTable
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ae5591e93272af881aae72ae5837892d9f60e99b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 870139a141cc7b2a676d004bf97a2f89b2812218
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211060"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798797"
 ---
 # <a name="cash-register-functionality-for-sweden"></a>Kassaapparatfunktioner för Sverige
 

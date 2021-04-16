@@ -2,11 +2,9 @@
 title: Formler och formelversioner
 description: Det här avsnittet innehåller information om formler och formelversioner. En formel definierar material, komponenter och resultat för en viss process i processtillverkning. Formler används för att planera och framställa produkter i processtillverkning.
 author: cvocph
-manager: tfehr
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule, EcoResProductProdTypeFormulaNoActiveFormulaFormPart
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ee15fc2a3edd9d0cc8cff17123981bc90ceeff2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e8a168da2309709baaf9f8006880d738f754751d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246199"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809120"
 ---
 # <a name="formulas-and-formula-versions"></a>Formler och formelversioner
 

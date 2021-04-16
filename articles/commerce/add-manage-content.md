@@ -2,11 +2,9 @@
 title: Sätt att lägga till innehåll
 description: Det här ämnet ger en översikt och väljer länkar för var och hur du börjar hantera innehåll med hjälp av Microsoft Dynamics 365 Commerce redigeringsverktyg för webbplatsskapare.
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb0b1c3f77bb71ba04c9110ed25fb80c2f2e61f4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e6794e528d9fa6066d7246e99a3307bb1bdc9c78
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208073"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797585"
 ---
 # <a name="ways-to-add-content"></a>Sätt att lägga till innehåll
 
 [!include [banner](includes/banner.md)]
 
 Det här ämnet ger en översikt och väljer länkar för dokumentation om hur hanterar innehåll med hjälp av Microsoft Dynamics 365 Commerce redigeringsverktyg för webbplatsskapare.
-
-## <a name="overview"></a>Översikt
 
 Det finns många sätt att ändra utseende, känsla och innehåll på din webbplats. Beroende på vilken anpassningsnivå som krävs kan många av dessa ändringar genomföras av icke-utvecklare i webbplatsskaparen, webbredigeringsverktyget som ingår i Dynamics 365 Commerce. Med webbplatsskapare kan du skapa mallar, välja teman och välja och konfigurera moduler utan att behöva skriva någon kod. Utvecklingskunskaper krävs däremot för att skapa ett nytt tema eller en ny modul, eftersom programutvecklingskit (SDK) frö näthandel och Microsoft Dynamics Lifecycle Services (LCS) måste användas för distribution arbetsflöde.
 

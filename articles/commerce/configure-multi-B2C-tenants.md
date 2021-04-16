@@ -2,11 +2,9 @@
 title: Konfigurera flera B2C-innehavare i en Commerce-miljö
 description: Det här avsnittet beskriver när och hur du ställer in flera Microsoft Azure Active Directory (Azure AD) B2C-innehavare för användarautentisering i en dedikerad Dynamics 365 Commerce-miljö.
 author: BrianShook
-manager: annbe
-ms.date: 03/02/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ddc8cea42ab0b5a319d4725ce8c75e57529cc63
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 4e50855368a3fa86c38c756492fc7e6cd518f497
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477766"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796109"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Konfigurera flera B2C-innehavare i en Commerce-miljö
 
@@ -55,10 +53,6 @@ I bilden nedan visas flera B2C-innehavare i en Commerce-miljö.
 
 Om du bestämmer dig för att ditt företag kräver distinkta B2C-innehavare per kanal i samma Commerce-miljö, måste du utföra procedurerna i följande avsnitt för att kunna begära den här funktionen.
 
-## <a name="request-that-b2c-per-channel-be-enabled-in-your-environment"></a>Begär att B2C per kanal aktiveras i din miljö
-
-För närvarande, om du vill att olika B2C-innehavare per kanal ska vara tillgängliga i samma Commerce-miljö, måste du skicka en begäran till Dynamics 365 Commerce. Mer information finns i [få support för Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) eller diskutera det här problemet med din kontakt för Commerce-lösningen.
-
 ## <a name="configure-b2c-tenants-in-your-environment"></a>Konfigurera B2C-innehavare i miljön
 
 Om du vill konfigurera B2C-innehavare i miljön ska du slutföra de relevanta procedurerna i det här avsnittet.
@@ -79,11 +73,11 @@ Följ stegen nedan för att lägga till en Azure AD B2C-innehavare i din miljö.
     - **Klient-GUID**: Ange Azure AD B2C innehavar-ID så som det visas i Azure-portalen (inte program-ID för B2C-innehavare).
     - **Redigera profil för policy-ID**: Ange policy-ID (namnet på principen i Azure-portalen).
 
-1. När du har angett den här informationen väljer du **OK** för att spara ändringarna.
+1. När du har angett den här informationen väljer du **OK** för att spara ändringarna. Den nya Azure AD B2C-innehavaren ska nu visas i listan under **hantera B2C-program**.
 
 > [!NOTE]
 > Du bör lämna fält som **Omfattning**, **Icke-interaktivt policy-ID**, **Icke-interaktivt klient-ID**, **Anpassad domän för inloggning** och **Policy-ID för registrering** tomma om inte teamet för Dynamics 365 Commerce uppmanar dig att ställa in dem.
-Den nya Azure AD B2C-innehavaren ska nu visas i listan under **hantera B2C-program**.
+
 
 ### <a name="manage-or-delete-an-azure-ad-b2c-tenant"></a>Hantera eller ta bort Azure AD B2C-innehavare
 
@@ -97,6 +91,7 @@ Den nya Azure AD B2C-innehavaren ska nu visas i listan under **hantera B2C-progr
 > När en B2C-innehavare har konfigurerats för en pågående/publicerad plats, kan användare ha registrerat sig genom att använda konton som finns på innehavaren. Om du tar bort en konfigurerad innehavare på menyn **innehavarinställningar \> B2C-innehavare** tar du bort kopplingen till den B2C-innehavare från webbplatser som är associerade med eventuella kanaler hos innehavaren. I det här fallet kanske användarna inte längre kan logga in på sina konton. Använd därför yttersta försiktighet när du tar bort en konfigurerad innehavare.
 >
 > När en konfigurerad innehavare tas bort kommer B2C-innehavaren och posterna att fortsätta underhållas, men systemkonfigurationen för den innehavaren kommer att ändras eller tas bort. Användare som försöker registrera sig eller logga in på webbplatsen skapar en ny kontopost i den standard- eller B2C-innehavare som har konfigurerats för webbplatsens kanal.
+
 ## <a name="configure-your-channel-with-a-b2c-tenant"></a>Konfigurera kanalen med en B2C-innehavare
 
 1. Logga in på Commerce webbplatsskapare för din miljö som systemadministratör. Om du vill konfigurera Azure AD B2C-innehavare måste du vara systemadministratör för Commerce-miljön.

@@ -2,11 +2,9 @@
 title: Arbeta med CSS-åsidosättningsfiler
 description: Det här avsnittet beskriver varför, när och hur du använder Cascading Style Sheets (CSS) åsidosätta filer i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,21 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 41fb0be51f7af25faba1b860319aea84ae7a8b56
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ef96070fe77b46622667301c7c7c402909ee7dfc
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207809"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799503"
 ---
 # <a name="work-with-css-override-files"></a>Arbeta med CSS-åsidosättningsfiler
-
 
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet beskriver varför, när och hur du använder Cascading Style Sheets (CSS) åsidosätta filer i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 Permanenta webbplatsstilar bör vanligtvis hanteras via webbplatsens tema. Teman ger grundläggande CSS och stilinställningar för modulerna på alla sidor på din webbplats. Teman skapas med hjälp av Dynamics 365 Commerce online Software Development Kit (SDK) och de distribueras till dina webbplatser via Microsoft Dynamics Lifecycle Services (LCS). Tema felsökningsfunktioner och konfigurationer av modulgränssnitt i SDK hjälp webbplatsutvecklare skapar anpassningsbara och sammanhängande designpaket för webbplatsen. När dessa designpaket distribueras till en webbplats kan webbplatsförfattarna fokusera på att skapa, redigera och publicera innehåll i stället för webbplatsutveckling.
 

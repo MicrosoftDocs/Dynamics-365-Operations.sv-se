@@ -2,11 +2,9 @@
 title: Lägga till stöd för ett innehållsleveransnätverk (CDN)
 description: I det här avsnittet beskrivs hur du lägger till ett innehållsleveransnätverk (CDN) på Microsoft Dynamics 365 Commerce-miljön.
 author: brianshook
-manager: annbe
-ms.date: 07/31/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
-ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
+ms.openlocfilehash: a56f675b1fb43160625101a067c74e9fcf4f714a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5582729"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797849"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Lägga till stöd för nätverk för innehållsleverans
 
@@ -39,13 +37,9 @@ Värdnamnet eller slutpunkten som genereras under etableringsprocessen har stöd
 
 Dessutom behandlas *statik* (JavaScript eller övergripande formatmallar \[CSS\]-filer) från handel från den slutpunkt som genereras av handel (\*.commerce.dynamics.com). Statisk kan endast cachelagras om värdnamnet eller slutpunkten som genereras av handel placeras bakom CDN.
 
-## <a name="set-up-ssl"></a>Ställa in SSL
+## <a name="set-up-ssl"></a>Ställ in SSL
 
-För att garantera att SSL konfigureras och att statisk cachelagras måste du konfigurera ditt CDN så att det är associerat med det värdnamn som skapas i handel för miljön. Du måste också cachelagra följande mönster för statisk: 
-
-/\_msdyn365/\_scnr/\*
-
-När du har etablerat din handelsmiljö med den anpassade domänen som tillhandahålls, eller när du har angett den anpassade domänen för din miljö med hjälp av en servicebegäran, pekar du på den anpassade domänen efter det värdnamn eller den slut punkt som skapas av handel.
+När du har etablerat din handelsmiljö med den anpassade domänen som tillhandahålls, eller när du har angett den anpassade domänen för din miljö med hjälp av en servicebegäran, du måste arbeta med Commerce-registreringsteamet för att planera DNS-ändringarna.
 
 Som tidigare nämnts har det genererade värdnamnet eller slutpunkten endast stöd för ett SSL-certifikat för \*.commerce.dynamics.com. Det stöder inte SSL för anpassade domäner.
 
@@ -62,7 +56,7 @@ Inställningen av CDN består av följande allmänna steg:
 
 1. Lägg till en klientvärd.
 1. Konfigurera en serverpool.
-1. Ställ in regler för flöde och cachelagring.
+1. Ställ in regler för dirigering.
 
 ### <a name="add-a-front-end-host"></a>Lägg till en klientvärd
 
@@ -74,8 +68,9 @@ Information om hur du ställer in Azure Front Door Service finns i [snabbstart: 
 
 För att konfigurera en serverpool i Azure Front Door Service, följ dessa steg.
 
-1. Lägg till **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** till en serverpool som en anpassad värd som har en tom servervärdrubrik.
+1. Lägg till **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** till en serverpool som en anpassad värd som har en servervärdrubrik som är densamma som **&lt;ecom-tenant-name&gt;.commerce.dynamics.com**.
 1. Under **belastningsutjämning** lämna standardvärdena.
+1. Inaktivera hälsokontroller för serverpool.
 
 I följande bild visas dialogrutan **Lägg till en serverpool** i Azure Front Door Service med serverpoolens värdnamn angivet.
 
@@ -84,6 +79,10 @@ I följande bild visas dialogrutan **Lägg till en serverpool** i Azure Front Do
 I följande bild visar dialogrutan **Lägg till en serverpool** i Azure Front Door Service med standardvärden för belastningsutjämning.
 
 ![Lägga till en dialogruta för en serverpool fortsatt](./media/CDN_BackendPool_2.png)
+
+> [!NOTE]
+> Se till att du inaktiverar **hälsosonder** när du ställer in din egen Azure Front Door-tjänst för Commerce.
+
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Ställ in regler i Azure Front Door Service
 
@@ -100,24 +99,6 @@ Så här skapar du en flödesregel i Azure Front Door Service:
 1. Ange alternativet **URL-omskrivning** till **inaktiverad**.
 1. Ange alternativet **cachelagring** till **inaktiverad**.
 
-Så här skapar du en cachelagringsregel i Azure Front Door Service:
-
-1. Lägg till en cachelagringsregel.
-1. Skriv **statisk** i fältet **namn**.
-1. I fältet **accepterat protokoll**, välj **HTTP och HTTPS**.
-1. I fältet **Klientvärd** ange **dynamics-ecom-tenant-name.azurefd.net**.
-1. Under **Mönster att matcha**, i det övre fältet, **/\_msdyn365/\_scnr/\***.
-1. Under **Flödesdetaljer**, ange alternativet **Flödestyp** till **Framåt**.
-1. I fältet **Serverpool** välj **ecom-backend**.
-1. I fältgruppen **Vidarebefordringsprotokoll** välj alternativet **Matcha begäran**.
-1. Ange alternativet **URL-omskrivning** till **inaktiverad**.
-1. Ange alternativet **cachelagring** till **inaktiverad**.
-1. I fältet **Fråga strängcachelagring** välj **cachelagra varje unik URL**.
-1. I fältgruppen **dynamisk komprimering** välj alternativet **aktiverad**.
-
-I följande bild visas dialogrutan **Lägg till en regel** i Azure Front Door Service.
-
-![Dialogrutan Lägg till en regel](./media/CDN_CachingRule.png)
 
 > [!WARNING]
 > Om den domän som du ska använda redan är aktiv och publicerad, skapar du ett supportärende från panelen **Support** i [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) för att få hjälp med nästa steg. Mer information finns i [Få support för Finance and Operations-appar eller Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).

@@ -2,11 +2,9 @@
 title: Välj mellan Modern POS (MPOS) och Cloud POS
 description: Det här avsnittet beskriver viktiga skillnader mellan Modern POS och Cloud POS. Här beskrivs också olika faktorer som återförsäljare som implementerar Dynamics 365 Commerce bör överväga i syfte att hjälpa dem göra det bästa valet för just deras behov.
 author: jblucher
-manager: AnnBe
 ms.date: 10/13/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d636e80ba853191516b970ff3f1dece02ee771ac
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 84ee7c82fa6aaa819798f4bc052b12b06a51c025
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206881"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796520"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Välj mellan Modern POS (MPOS) och Cloud POS
 

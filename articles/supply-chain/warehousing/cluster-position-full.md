@@ -2,11 +2,9 @@
 title: Klusterposition full
 description: Det här ämnet innehåller information om funktionen klusterposition. Den här funktionen erbjuder ett alternativ till en striktare tillämpning av regler för arbetsavbrott när klusterplockning används, eftersom det möjliggör en större felmarginal i volymetriska begränsningar för behållare eller last.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b6a7cad070377de58d21a8eb91ee3e1ffaf1c660
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ad0f8e2fa6b3767c6b5d5549a36d52990f871531
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233017"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808856"
 ---
 # <a name="cluster-position-full"></a>Klusterposition full
 
@@ -213,7 +211,7 @@ Två arbets-ID ska ha skapats, där alla har två plockningsrader. Följ dessa s
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Flödeskörning av mobila enheter – arbetsbekräftelse inställningar för produkten
 
-1. Logga in på distributionslagerappen en användare i lager ställe *61*.
+1. Logga in på mobilappen för distributionslagerhantering en användare i lager ställe *61*.
 1. Gå till **utgående \> Skapa klusterplockning**.
 
     Sidan **UPPGIFT: tilldela arbete till kluster** visas.
