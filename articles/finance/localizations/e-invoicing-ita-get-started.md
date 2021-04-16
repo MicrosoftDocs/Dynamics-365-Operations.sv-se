@@ -1,12 +1,10 @@
 ---
-title: Kom igång med tillägget elektronisk fakturering för Italien
-description: Det här avsnittet innehåller information som hjälper dig att komma igång med tillägget elektronisk fakturering för Italien i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management.
+title: Kom i gång med elektronisk fakturering för Italien
+description: Det här avsnittet innehåller information som hjälper dig att komma igång med elektronisk fakturering för Italien.
 author: gionoder
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,26 +15,26 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9c50000c98bdde2c9da43b3110686aa5d01e8081
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 23cb0523b6d6d065ad19f6c3bddf881b0dc82a7d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259230"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840110"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Kom igång med tillägget elektronisk fakturering för Italien
+# <a name="get-started-with-electronic-invoicing-for-italy"></a>Kom i gång med elektronisk fakturering för Italien
 
 [!include [banner](../includes/banner.md)]
 
 
 > [!IMPORTANT]
-> Tillägget elektronisk fakturering för Italien kanske för närvarande inte stöder alla funktioner som är tillgängliga för elektroniska fakturor i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management. 
+> Elektronisk fakturering för Italien kanske för närvarande inte stöder alla funktioner som är tillgängliga för elektroniska fakturor i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management. 
 
-Det här avsnittet innehåller information som hjälper dig att komma igång med tillägget elektronisk fakturering för Italien. Den guidar dig genom de konfigurationssteg som är beroende av RCS (Regulatory Configuration Services) och Finance. Det guidar dig också genom processen att skicka elektroniska fakturor som genereras i det italienska formatet **FatturaPA** via tjänsten och den förklarar hur du granskar resultaten av bearbetningen.
+Det här avsnittet innehåller information som hjälper dig att komma igång med elektronisk fakturering för Italien. Den guidar dig genom de konfigurationssteg som är beroende av RCS (Regulatory Configuration Services) och Finance. Det guidar dig också genom processen att skicka elektroniska fakturor som genereras i det italienska formatet **FatturaPA** via tjänsten och den förklarar hur du granskar resultaten av bearbetningen.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Innan du slutför stegen i det här avsnittet måste du slutföra stegen i [komma igång med tillägget elektronisk fakturering](e-invoicing-get-started.md).
+Innan du slutför stegen i det här avsnittet måste du slutföra stegen i [komma igång med elektronisk fakturering](e-invoicing-get-started.md).
 
 ## <a name="rcs-setup"></a>Inställning av RCS
 
@@ -48,7 +46,7 @@ Under RCS-inställningar ska du utföra följande uppgifter:
 4. Publicera e-faktureringsfunktionen.
 
 > [!NOTE]
-> "e-faktureringsfunktionen" är det allmänna namnet för resursen som är konfigurerad och publicerad för att använda tilläggsservern för elektronisk fakturering. I detta fall, export av kunders elektroniska fakturor är den e-faktureringsfunktion som du ställer in.
+> "e-faktureringsfunktionen" är det allmänna namnet för resursen som är konfigurerad och publicerad för att använda servern för elektronisk fakturering. I detta fall, export av kunders elektroniska fakturor är den e-faktureringsfunktion som du ställer in.
 
 ## <a name="import-the-e-invoicing-feature"></a>Importera e-faktureringsfunktion
 
@@ -153,7 +151,7 @@ Du kan publicera e-faktureringsfunktionen genom att ändra versionsstatus till *
 
 ![Ändra status för e-faktureringsfunktionen](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
-## <a name="set-up-the-electronic-invoicing-add-on-integration-in-finance"></a>Ställ in integrering av elektroniskt i Finance
+## <a name="set-up-electronic-invoicing-integration-in-finance"></a>Ställ in integrering av elektronisk fakturering i Finance
 
 Under inställningar av Finance ska du utföra följande uppgifter:
 
@@ -193,17 +191,17 @@ Under inställningar av Finance ska du utföra följande uppgifter:
 
 Under bearbetningen i Finance ska du utföra följande uppgifter:
 
-1. Skapa italienska e-fakturor via tillägget Elektronisk fakturering
+1. Skapa italienska e-fakturor via Elektronisk fakturering
 2. Visa körningsloggarna och granska resultaten av bearbetningen
 
 ### <a name="generate-electronic-invoices"></a>Generera elektroniska fakturor
 
-När du har aktiverat funktionen **konfigurerbara integreringstillägg för elektronisk fakturering** och aktiverat funktionen **IT00036** kommer den gamla Finance-processen för att generera italienska e-fakturor inte längre kunna användas. Den ersätts med en ny process som kallas **skicka elektroniska dokument**.
+När du har aktiverat funktionen **konfigurerbara integrering för elektronisk fakturering** och aktiverat funktionen **IT00036** kommer den gamla Finance-processen för att generera italienska e-fakturor inte längre kunna användas. Den ersätts med en ny process som kallas **skicka elektroniska dokument**.
 
 Du kan skicka dokumenten manuellt, baserat på efterfrågan på e-fakturadokument.
 
 > [!NOTE]
-> Innan du fortsätter kontrollerar du att inställningarna som krävs för italienska e-fakturorna är slutförda. Mer information finns i [Elektroniska kundfakturor](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Tänk på att vissa av de inställningssteg som beskrivs i det ämnet kanske inte är tillgängliga på grund av aktivering av tillägget Elektronisk fakturering.
+> Innan du fortsätter kontrollerar du att inställningarna som krävs för italienska e-fakturorna är slutförda. Mer information finns i [Elektroniska kundfakturor](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Tänk på att vissa av de inställningssteg som beskrivs i det ämnet kanske inte är tillgängliga på grund av aktivering av Elektronisk fakturering.
 
 1. Gå till **organisationsadministration \> periodisk \> elektroniska dokument \> skicka elektroniska dokument**.
 2. Ställ alltid in alternativet **Skicka dokument igen** till **Nej** för första inlämningen av ett dokument. Om du måste skicka ett dokument på nytt via tjänsten ställer du in det här alternativet på **Ja**.
@@ -220,7 +218,7 @@ Du kan skicka dokumenten manuellt, baserat på efterfrågan på e-fakturadokumen
 2. Välj **OK** för att stänga dialogrutan **Förfrågning**.
 3. Välj **OK** för att skicka de valda dokumenten.
 
-> [OBS!] Under ditt första försök att skicka ett dokument via tjänsten uppmanas du att bekräfta anslutningen med tillägget Elektronisk fakturering. Välj **Klicka här för att ansluta till tjänsten inlämning av elektroniska dokument**.
+> ![OBS] Under ditt första försök att skicka ett dokument via tjänsten uppmanas du att bekräfta anslutningen med Elektronisk fakturering. Välj **Klicka här för att ansluta till tjänsten inlämning av elektroniska dokument**.
 
 #### <a name="view-submission-logs"></a>Visa överföringsloggar
 
@@ -242,9 +240,9 @@ Du kan visa överföringsloggar för alla skickade dokument.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Tillägg för elektronisk fakturering: översikt](e-invoicing-service-overview.md)
-- [Kom igång med tillägget elektronisk fakturering](e-invoicing-get-started.md)
-- [Ställ in tillägg för elektroniska fakturor](e-invoicing-setup.md)
+- [Elektronisk fakturering – översikt](e-invoicing-service-overview.md)
+- [Kom i gång med elektronisk fakturering](e-invoicing-get-started.md)
+- [Ställ in elektronisk fakturering](e-invoicing-setup.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Analys av kostnad för produktionsorder
 description: Den här artikeln innehåller information om den kostnadsanalys som du kan göra för slutförda och aktuella tillverkningsorder. Du kan analysera de uppskattade och faktiska kostnaderna med hjälp av prisberäkningssidan eller rapporten Kostnadsuppskattningar och kostnadsredovisningar. Information om uppskattade och faktiska kostnader (och kvantitet) visas för varje komponentartikel, flödesoperationen och den indirekta kostnaden.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage, ProdSetupHistoricalCost
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 90145c07ac4f0273288f6d1dddb0d99e9cd4cfd6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 50df2a63584d3db0d3b91fabd224e12dffa809d4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245309"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809648"
 ---
 # <a name="production-order-cost-analysis"></a>Analys av kostnad för produktionsorder
 

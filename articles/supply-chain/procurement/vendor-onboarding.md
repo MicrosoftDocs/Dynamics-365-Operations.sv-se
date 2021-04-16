@@ -1,26 +1,24 @@
 ---
 title: Integrera leverantörer
 description: Det här avsnittet beskriver processen för att integrera nya leverantörer. Det förklarar de åtgärder som krävs av olika roller under denna process.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 7cb6baefb9880ac0135405c4a3b2449814afd4a6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 12be18aa245757991daa418d5875d7497939d223
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246631"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841441"
 ---
 # <a name="onboard-vendors"></a>Integrera leverantörer
 

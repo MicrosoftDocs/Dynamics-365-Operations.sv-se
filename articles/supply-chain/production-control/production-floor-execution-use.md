@@ -2,11 +2,9 @@
 title: Hur arbetare använder körningsgränssnittet för produktionsgolvet
 description: I det här avsnittet beskrivs hur du använder körningsgränssnittet för produktionsgolvet från en arbetares synvinkel.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProductionFloorExecution
 audience: Application User
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 38bc07d37b5c51f143846110c87cff9952d52b0e
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 02046da5e2487e203c9658c255f95a7c403d0b10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500800"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814666"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hur arbetare använder körningsgränssnittet för produktionsgolvet
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Körningsgränssnittet för produktionsgolvet är optimerat för beröringsinteraktion. Dess design ger visuell kontrast som uppfyller tillgänglighetskraven för verkstadsmiljöer. Den erbjuder alla funktioner som jobbkortsenhet. Det gör dock också att flera jobb startas parallellt från en jobblista. (Den här funktionen kallas även för *buntning av jobb*.) Från en jobblista kan arbetare dessutom öppna en guide som har skapats i Microsoft Dynamics 365-guiden. På så sätt kan de visa visuella instruktioner för en HoloLens.
 
@@ -90,7 +87,7 @@ Fliken **Min maskin** har följande kolumner. Siffrorna motsvarar siffrorna i f�
 
 1. **Inställningar** - Välj kugghjulsikonen för att öppna en dialogruta där du kan välja vilka räknare som ska visas för den valda maskintillgången. Värden för dessa räknare visas längst upp på fliken **Tillgångshantering**. Menyn **Inställningar** (visas i följande skärmdump) kan du aktivera upp till fyra räknare. För varje räknare som du vill aktivera använder du sökfältet högst upp i panelen för att välja en räknare. Sökfältet listar alla räknare som är kopplade till tillgången som valts högst upp på sidan **Tillgångshantering**. Ställ in varje räknare till att övervaka antingen det **aggregerade** värdet eller det senaste **faktiska** värdet för räknaren. Om du till exempel ställer in en räknare som spårar hur många timmar maskinen har körts ska du ställa in den på **Aggregerat**. Om du ställer in en räknare för att mäta den senaste uppdaterade temperaturen eller försiktighet, bör du ställa in den på **Faktisk**. Välj **OK** om du vill spara inställningarna och stänga dialogrutan.
 
-    ![Min maskinflik](media/pfei-my-machine-tab-settings.png "Min maskinflik")
+    ![Inställningar för Min maskinflik](media/pfei-my-machine-tab-settings.png "Inställningar för Min maskinflik")
 
 1. **Begär underhåll** - Välj den här knappen om du vill öppna en dialogruta där du kan skapa en underhållsbegäran. Du kan ange en beskrivning och en notering. Denna begäran visas för en användare av Supply Chain Management som sedan kan konvertera underhållsbehovet till en underhållsorder.
 1. **Registrera drifttid** - Välj den här knappen om du vill öppna en dialogruta där du kan registrera maskiners drifttid. Du kan välja en orsakskod och ange ett datum/tidsintervall för nedtiden. Registreringen av maskinens drifttid används för att beräkna maskintillgångens effektivitet.

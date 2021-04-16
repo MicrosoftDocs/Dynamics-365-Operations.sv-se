@@ -2,11 +2,9 @@
 title: Felsöka distributionslagerkonfiguration
 description: I det här avsnittet beskrivs hur du åtgärdar vanliga problem som kan uppstå när du konfigurerar i Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1fe285f05e5f1ddcb7bd206290b9954cbdaffc75
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: 1dbd947f0740d22e0f79e6d5c272beb64715c8a5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5487107"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814402"
 ---
 # <a name="troubleshoot-warehouse-configuration"></a>Felsöka distributionslagerkonfiguration
 
@@ -38,7 +36,7 @@ Det här felmeddelandet visas när du skannar ett ID-nummer eller en plats.
 
 ### <a name="issue-resolution"></a>Problemlösning
 
-Se till att licensens ID-nummer inte har reserverats av något annat. Det här problemet uppstår när värdet som en användare skannade i lagerstället var både en giltig plats och ett giltigt licensens ID-nummer. Det här problemet löstes emellertid i versionen 10.0.11.
+Se till att licensens ID-nummer inte har reserverats av något annat. Det här problemet uppstår när värdet som en användare skannade i mobilappen för distributionslagerhantering var både en giltig plats och ett giltigt licensens ID-nummer. Det här problemet löstes emellertid i versionen 10.0.11.
 
 ## <a name="i-receive-the-following-error-message-license-plate-must-be-specified-for-this-location"></a>Jag får följande felmeddelande: "ID-nummer måste anges för denna för denna plats".
 
@@ -82,7 +80,7 @@ Plats direktiv av typen arbetsorder *försäljningsorder* och arbetstypen *Place
 
 En ny funktion *Utvärdera alla åtgärder för platsdirektiv med flera SKU-enheter* har lagts till i version 10.0.15 (se [KB 4579866](https://fix.lcs.dynamics.com/Issue/Details?kb=4579866&bugId=475946&dbType=3&qc=1bc41a56de7a3ee419fa76397a6bf282fce5be9b93e427c08a6d916d1dfa3091)). Den här funktionen utvärderar alla åtgärder för platsdirektiv med flera SKU-enheter. Om du vill ha denna funktion använd [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att aktivera den.
 
-## <a name="i-cant-use-the-warehouse-app-to-do-partial-picking"></a>Jag kan inte använda distributionslagerappen för delplockning.
+## <a name="i-cant-use-the-warehouse-management-mobile-app-to-do-partial-picking"></a>Jag kan inte använda mobilappen för distributionslagerhantering för delplockning.
 
 ### <a name="issue-description"></a>Problembeskrivning
 
@@ -100,7 +98,7 @@ Du vill utföra en lagerstatusändring för en delkvantitet av en batch.
 
 ### <a name="issue-resolution"></a>Problemlösning
 
-Om du vill att arbetare ska kunna göra denna ändring kan du skapa ett menyalternativ för lagerstället. På sidan **Menyalternativ på mobil enhet** skapa (eller redigera) ett menyalternativ för följande inställningar:
+Om du vill att arbetare ska kunna göra denna ändring kan du skapa ett menyalternativ för mobilappen för distributionslagerhantering. På sidan **Menyalternativ på mobil enhet** skapa (eller redigera) ett menyalternativ för följande inställningar:
 
 - **Läge:** *arbete*
 - **Använd befintligt arbete:** *Nej*

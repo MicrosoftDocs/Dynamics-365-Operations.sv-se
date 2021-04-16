@@ -2,11 +2,9 @@
 title: Sverige – översikt
 description: Det här avsnittet innehåller länkar till dokumentationsresurser för Sverige.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -15,12 +13,12 @@ ms.search.region: Sweden
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba9012c041bc6516eeba06c615894ca74d5f5ef2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4632a7e7d6d1f72cc896839fddf11cfc0adfb90f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228053"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832578"
 ---
 # <a name="sweden-overview"></a>Sverige – översikt
 

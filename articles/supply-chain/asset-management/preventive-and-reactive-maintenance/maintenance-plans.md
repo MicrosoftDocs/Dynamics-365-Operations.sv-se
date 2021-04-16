@@ -1,12 +1,10 @@
 ---
 title: Underhållsplaner
 description: I det här avsnittet beskrivs underhållsplaner i Tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 09ae8b0ce56b08db0ba400b19676bd698c90a561
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500824"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839617"
 ---
 # <a name="maintenance-plans"></a>Underhållsplaner
 
@@ -195,8 +193,6 @@ Följande illustration visar ett exempel på underhållsplaner som anges på en 
 
 ## <a name="counter-based-maintenance-enhancements"></a>Förbättringar av räknarbaserat underhåll
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 Funktionen *Förbättringar av räknarbaserat underhåll* innehåller följande funktioner:
 
 - Alternativet för att automatiskt infoga en räknare som har värdet *0* (noll) när en tillgång skapas. Det här alternativet kan vara användbart när du använder förutsägande underhåll som baseras på räknare. När funktionen *Förbättringar av räknarbaserat underhåll* inte används måste räknare som har värdet *0* (noll) infogas manuellt.
@@ -209,7 +205,7 @@ Funktionen *Förbättringar av räknarbaserat underhåll* innehåller följande 
 Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 
 - **Modul:** *Tillgångshantering*
-- **Funktionsnamn:** *(förhandsversion) funktionen för förbättringar av räknarbaserat underhåll*
+- **Funktionsnamn:** *Funktionen för förbättringar av räknarbaserat underhåll*
 
 ### <a name="create-and-initialize-counters-when-an-asset-is-created"></a>Skapa och initiera räknare när en tillgång skapas
 

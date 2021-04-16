@@ -2,11 +2,9 @@
 title: Mappa dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar
 description: Genom att mappa olika dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar för kostnadselement slår du samman data till ett gemensamt format för analysändamål.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimension, CAMDimensionMember, CAMDimensionMapping
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: eb752ef853aedbe492dc2880b90d1683c5433a12
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3ce207b74c9515c72f4fce7680ee9eea50edd0f8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217372"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810160"
 ---
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Mappa dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar
 

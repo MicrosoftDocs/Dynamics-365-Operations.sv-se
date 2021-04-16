@@ -2,11 +2,9 @@
 title: Skriva ut rapporten för momsbetalning per kod
 description: Det här avsnittet innehåller information om de inställningar och åtgärder som krävs för att skriva ut rapporten momsbetalning per kod i redovisnings- eller skattekodsvalutan.
 author: anasyash
-manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6f66db74867bdd3e9b4364e247058e0534191f2e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: eb3ee4a12d2d29c2769f1ae22e11dc05608b47c1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205070"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815462"
 ---
 # <a name="print-the-sales-tax-payment-by-code-report"></a>Skriva ut rapporten för momsbetalning per kod 
 
