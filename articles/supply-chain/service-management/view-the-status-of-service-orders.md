@@ -2,11 +2,9 @@
 title: Visa status för serviceorder
 description: Du kan använda formuläret utförseltavla för att visa status för serviceaktiviteter i serviceorder.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMADispatchBoard
 audience: Application User
@@ -17,39 +15,39 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 429e1cf525854a87f55e4d4f900931f61223e0d1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 61486ca37de890dd990f2f36a2d3d3f228b63758
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231331"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824136"
 ---
-# <a name="view-the-status-of-service-orders"></a><span data-ttu-id="25578-103">Visa status för serviceorder</span><span class="sxs-lookup"><span data-stu-id="25578-103">View the status of service orders</span></span> 
+# <a name="view-the-status-of-service-orders"></a><span data-ttu-id="59eb4-103">Visa status för serviceorder</span><span class="sxs-lookup"><span data-stu-id="59eb4-103">View the status of service orders</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="25578-104">Du kan använda formuläret **utförseltavla** för att visa status för serviceaktiviteter i serviceorder.</span><span class="sxs-lookup"><span data-stu-id="25578-104">You can use the **Dispatch board** form to view the status of service activities in service orders.</span></span>
+<span data-ttu-id="59eb4-104">Du kan använda formuläret **utförseltavla** för att visa status för serviceaktiviteter i serviceorder.</span><span class="sxs-lookup"><span data-stu-id="59eb4-104">You can use the **Dispatch board** form to view the status of service activities in service orders.</span></span>
 
-## <a name="more-information-about-service-orders"></a><span data-ttu-id="25578-105">Mer information om serviceorder</span><span class="sxs-lookup"><span data-stu-id="25578-105">More information about service orders</span></span>
+## <a name="more-information-about-service-orders"></a><span data-ttu-id="59eb4-105">Mer information om serviceorder</span><span class="sxs-lookup"><span data-stu-id="59eb4-105">More information about service orders</span></span>
 
-<span data-ttu-id="25578-106">Formuläret ger även verktyg för att spåra flödet av serviceorder och innehåller mer information som kan hjälpa dig att utvärdera hur viktig en serviceorder är, t.ex. vilket serviceavtal och vilket servicenivåavtal som den är associerad med.</span><span class="sxs-lookup"><span data-stu-id="25578-106">The form also provides tools to track the flow of service orders and includes additional details to help you evaluate the urgency of a service order, such the service agreement and service level agreement that it is associated with.</span></span>
+<span data-ttu-id="59eb4-106">Formuläret ger även verktyg för att spåra flödet av serviceorder och innehåller mer information som kan hjälpa dig att utvärdera hur viktig en serviceorder är, t.ex. vilket serviceavtal och vilket servicenivåavtal som den är associerad med.</span><span class="sxs-lookup"><span data-stu-id="59eb4-106">The form also provides tools to track the flow of service orders and includes additional details to help you evaluate the urgency of a service order, such the service agreement and service level agreement that it is associated with.</span></span>
 
-<span data-ttu-id="25578-107">För att du snabbt ska kunna bedöma hur viktig en serviceorder är, stöder Gantt-diagrammet användningen av färger.</span><span class="sxs-lookup"><span data-stu-id="25578-107">In order to help you quickly gauge the urgency of a service order, the Gantt chart supports the use of colors.</span></span> <span data-ttu-id="25578-108">Färger som används för att särskilja prioriteten för ett servicebesök.</span><span class="sxs-lookup"><span data-stu-id="25578-108">Colors are used to distinguish the priority of a service call.</span></span> <span data-ttu-id="25578-109">Som standard betyder rött hög prioritet, gult normal och grönt låg prioritet.</span><span class="sxs-lookup"><span data-stu-id="25578-109">By default, these colors are red for high priority, yellow for typical priority, and green for low priority.</span></span>
+<span data-ttu-id="59eb4-107">För att du snabbt ska kunna bedöma hur viktig en serviceorder är, stöder Gantt-diagrammet användningen av färger.</span><span class="sxs-lookup"><span data-stu-id="59eb4-107">In order to help you quickly gauge the urgency of a service order, the Gantt chart supports the use of colors.</span></span> <span data-ttu-id="59eb4-108">Färger som används för att särskilja prioriteten för ett servicebesök.</span><span class="sxs-lookup"><span data-stu-id="59eb4-108">Colors are used to distinguish the priority of a service call.</span></span> <span data-ttu-id="59eb4-109">Som standard betyder rött hög prioritet, gult normal och grönt låg prioritet.</span><span class="sxs-lookup"><span data-stu-id="59eb4-109">By default, these colors are red for high priority, yellow for typical priority, and green for low priority.</span></span>
 
 
 > [!TIP]
-> <P><span data-ttu-id="25578-110">Du kan ändra färgerna på fliken <STRONG>utförsel</STRONG> i formuläret <STRONG>Servicehanteringsparametrar</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="25578-110">You can change the colors on the <STRONG>Dispatching</STRONG> tab in the <STRONG>Service management parameters</STRONG> form.</span></span></P>
+> <P><span data-ttu-id="59eb4-110">Du kan ändra färgerna på fliken <STRONG>utförsel</STRONG> i formuläret <STRONG>Servicehanteringsparametrar</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="59eb4-110">You can change the colors on the <STRONG>Dispatching</STRONG> tab in the <STRONG>Service management parameters</STRONG> form.</span></span></P>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="25578-111">Se även</span><span class="sxs-lookup"><span data-stu-id="25578-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="59eb4-111">Se även</span><span class="sxs-lookup"><span data-stu-id="59eb4-111">See also</span></span>
 
-[<span data-ttu-id="25578-112">Prioritera serviceorder</span><span class="sxs-lookup"><span data-stu-id="25578-112">Prioritize service orders</span></span>](prioritize-service-orders.md)
+[<span data-ttu-id="59eb4-112">Prioritera serviceorder</span><span class="sxs-lookup"><span data-stu-id="59eb4-112">Prioritize service orders</span></span>](prioritize-service-orders.md)
 
-[<span data-ttu-id="25578-113">Övervaka serviceaktiviteter</span><span class="sxs-lookup"><span data-stu-id="25578-113">Monitor service activities</span></span>](monitor-service-activities.md)
+[<span data-ttu-id="59eb4-113">Övervaka serviceaktiviteter</span><span class="sxs-lookup"><span data-stu-id="59eb4-113">Monitor service activities</span></span>](monitor-service-activities.md)
 
-<span data-ttu-id="25578-114">[Utförseltavla (formulär)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="25578-114">[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span></span>
+<span data-ttu-id="59eb4-114">[Utförseltavla (formulär)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="59eb4-114">[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))</span></span>
 
   
 

@@ -2,11 +2,9 @@
 title: Ställ in bankkreditlimiter och bokföringsprofiler för garanti
 description: Denna uppgift skapar en bankkreditlimit och en bokföringsprofil som behövs för att bearbeta en garanti.
 author: kweekley
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankParameters, DefaultDashboard, BankDocumentSetup, BankDocumentPosting
 audience: Application User
@@ -15,67 +13,67 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0b72a412aaaf1c70b4414d00e99b923380f7dd86
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1147650944ba40d1c8054444c09db9c5ee97bde3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225307"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834630"
 ---
-# <a name="set-up-bank-facilities-and-posting-profiles-for-letters-of-guarantee"></a><span data-ttu-id="01dcc-103">Ställ in bankkreditlimiter och bokföringsprofiler för garanti</span><span class="sxs-lookup"><span data-stu-id="01dcc-103">Set up bank facilities and posting profiles for letters of guarantee</span></span>
+# <a name="set-up-bank-facilities-and-posting-profiles-for-letters-of-guarantee"></a><span data-ttu-id="6bc82-103">Ställ in bankkreditlimiter och bokföringsprofiler för garanti</span><span class="sxs-lookup"><span data-stu-id="6bc82-103">Set up bank facilities and posting profiles for letters of guarantee</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="01dcc-104">Denna uppgift skapar en bankkreditlimit och en bokföringsprofil som behövs för att bearbeta en garanti.</span><span class="sxs-lookup"><span data-stu-id="01dcc-104">This task creates a Bank facility and posting profile that is needed to process a letter of guarantee.</span></span>
+<span data-ttu-id="6bc82-104">Denna uppgift skapar en bankkreditlimit och en bokföringsprofil som behövs för att bearbeta en garanti.</span><span class="sxs-lookup"><span data-stu-id="6bc82-104">This task creates a Bank facility and posting profile that is needed to process a letter of guarantee.</span></span>
 
 
 
-<span data-ttu-id="01dcc-105">I den här uppgiften används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="01dcc-105">This task uses the USMF demo company.</span></span> 
+<span data-ttu-id="6bc82-105">I den här uppgiften används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="6bc82-105">This task uses the USMF demo company.</span></span> 
 
 
 
 
-## <a name="general-ledger-parameter"></a><span data-ttu-id="01dcc-106">Redovisningsparameter</span><span class="sxs-lookup"><span data-stu-id="01dcc-106">General ledger parameter</span></span>
-1. <span data-ttu-id="01dcc-107">Gå till Kassa- och bankhantering > Inställningar > Parametrar för kassa- och bankhantering.</span><span class="sxs-lookup"><span data-stu-id="01dcc-107">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
-2. <span data-ttu-id="01dcc-108">Expandera bankdokumentavsnittet.</span><span class="sxs-lookup"><span data-stu-id="01dcc-108">Expand the Bank document section.</span></span>
-3. <span data-ttu-id="01dcc-109">Välj alternativet Aktivera garanti.</span><span class="sxs-lookup"><span data-stu-id="01dcc-109">Select the Enable letter of guarantee option.</span></span>
-4. <span data-ttu-id="01dcc-110">I fältet Transaktionsjournal, öppna sökningen genom att klicka på den nedrullningsbara knappen.</span><span class="sxs-lookup"><span data-stu-id="01dcc-110">In the Transaction journal field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="01dcc-111">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="01dcc-111">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="01dcc-112">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="01dcc-112">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="01dcc-113">Klicka på fliken Nummersekvenser.</span><span class="sxs-lookup"><span data-stu-id="01dcc-113">Click the Number sequences tab.</span></span>
-    * <span data-ttu-id="01dcc-114">Definiera nummerseriekoden för referenserna Garantinummer och Transaktionsnummer för garanti</span><span class="sxs-lookup"><span data-stu-id="01dcc-114">Define number sequence code for Letter of guarantee number and Letter of guarantee transaction references</span></span>  
-8. <span data-ttu-id="01dcc-115">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="01dcc-115">Click Save.</span></span>
-9. <span data-ttu-id="01dcc-116">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="01dcc-116">Close the page.</span></span>
+## <a name="general-ledger-parameter"></a><span data-ttu-id="6bc82-106">Redovisningsparameter</span><span class="sxs-lookup"><span data-stu-id="6bc82-106">General ledger parameter</span></span>
+1. <span data-ttu-id="6bc82-107">Gå till Kassa- och bankhantering > Inställningar > Parametrar för kassa- och bankhantering.</span><span class="sxs-lookup"><span data-stu-id="6bc82-107">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
+2. <span data-ttu-id="6bc82-108">Expandera bankdokumentavsnittet.</span><span class="sxs-lookup"><span data-stu-id="6bc82-108">Expand the Bank document section.</span></span>
+3. <span data-ttu-id="6bc82-109">Välj alternativet Aktivera garanti.</span><span class="sxs-lookup"><span data-stu-id="6bc82-109">Select the Enable letter of guarantee option.</span></span>
+4. <span data-ttu-id="6bc82-110">I fältet Transaktionsjournal, öppna sökningen genom att klicka på den nedrullningsbara knappen.</span><span class="sxs-lookup"><span data-stu-id="6bc82-110">In the Transaction journal field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="6bc82-111">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="6bc82-111">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="6bc82-112">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="6bc82-112">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="6bc82-113">Klicka på fliken Nummersekvenser.</span><span class="sxs-lookup"><span data-stu-id="6bc82-113">Click the Number sequences tab.</span></span>
+    * <span data-ttu-id="6bc82-114">Definiera nummerseriekoden för referenserna Garantinummer och Transaktionsnummer för garanti</span><span class="sxs-lookup"><span data-stu-id="6bc82-114">Define number sequence code for Letter of guarantee number and Letter of guarantee transaction references</span></span>  
+8. <span data-ttu-id="6bc82-115">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="6bc82-115">Click Save.</span></span>
+9. <span data-ttu-id="6bc82-116">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="6bc82-116">Close the page.</span></span>
 
-## <a name="create-bank-facility"></a><span data-ttu-id="01dcc-117">Skapa bankkreditlimit</span><span class="sxs-lookup"><span data-stu-id="01dcc-117">Create Bank facility</span></span>
-1. <span data-ttu-id="01dcc-118">Gå till Kassa- och bankhantering > Inställningar > Bankkreditlimiter.</span><span class="sxs-lookup"><span data-stu-id="01dcc-118">Go to Cash and bank management > Setup > Bank facilities.</span></span>
-2. <span data-ttu-id="01dcc-119">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="01dcc-119">Click New.</span></span>
-3. <span data-ttu-id="01dcc-120">I fältet Kreditlimitgrupp, ange bankkreditlimitgruppens namn för garantitransaktionen.</span><span class="sxs-lookup"><span data-stu-id="01dcc-120">In the Facility group field, enter the bank facility group name for the letter of guarantee transaction.</span></span>
-4. <span data-ttu-id="01dcc-121">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="01dcc-121">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="01dcc-122">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="01dcc-122">Click Save.</span></span>
-6. <span data-ttu-id="01dcc-123">Klicka på fliken Kreditlimittyper.</span><span class="sxs-lookup"><span data-stu-id="01dcc-123">Click the Facility types tab.</span></span>
-7. <span data-ttu-id="01dcc-124">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="01dcc-124">Click New.</span></span>
-8. <span data-ttu-id="01dcc-125">I fältet Kreditlimittyp, ange namnet på bankkreditlimittypen som är relaterad till bankkreditlimitavtalet.</span><span class="sxs-lookup"><span data-stu-id="01dcc-125">In the Facility type field, enter the name of the bank facility type that is related to the bank facility agreement.</span></span>
-9. <span data-ttu-id="01dcc-126">Skriv ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="01dcc-126">In the Description field, type a value.</span></span>
-10. <span data-ttu-id="01dcc-127">I fältet Kreditlimittyp, öppna sökningen genom att klicka på den nedrullningsbara knappen.</span><span class="sxs-lookup"><span data-stu-id="01dcc-127">In the Facility group field, click the drop-down button to open the lookup.</span></span>
-11. <span data-ttu-id="01dcc-128">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="01dcc-128">In the list, find and select the desired record.</span></span>
-12. <span data-ttu-id="01dcc-129">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="01dcc-129">In the list, click the link in the selected row.</span></span>
-13. <span data-ttu-id="01dcc-130">I fältet Kreditlimitens natur, välj ett alternativ.</span><span class="sxs-lookup"><span data-stu-id="01dcc-130">In the Facility nature field, select an option.</span></span>
-14. <span data-ttu-id="01dcc-131">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="01dcc-131">Click Save.</span></span>
-15. <span data-ttu-id="01dcc-132">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="01dcc-132">Close the page.</span></span>
+## <a name="create-bank-facility"></a><span data-ttu-id="6bc82-117">Skapa bankkreditlimit</span><span class="sxs-lookup"><span data-stu-id="6bc82-117">Create Bank facility</span></span>
+1. <span data-ttu-id="6bc82-118">Gå till Kassa- och bankhantering > Inställningar > Bankkreditlimiter.</span><span class="sxs-lookup"><span data-stu-id="6bc82-118">Go to Cash and bank management > Setup > Bank facilities.</span></span>
+2. <span data-ttu-id="6bc82-119">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="6bc82-119">Click New.</span></span>
+3. <span data-ttu-id="6bc82-120">I fältet Kreditlimitgrupp, ange bankkreditlimitgruppens namn för garantitransaktionen.</span><span class="sxs-lookup"><span data-stu-id="6bc82-120">In the Facility group field, enter the bank facility group name for the letter of guarantee transaction.</span></span>
+4. <span data-ttu-id="6bc82-121">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="6bc82-121">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="6bc82-122">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="6bc82-122">Click Save.</span></span>
+6. <span data-ttu-id="6bc82-123">Klicka på fliken Kreditlimittyper.</span><span class="sxs-lookup"><span data-stu-id="6bc82-123">Click the Facility types tab.</span></span>
+7. <span data-ttu-id="6bc82-124">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="6bc82-124">Click New.</span></span>
+8. <span data-ttu-id="6bc82-125">I fältet Kreditlimittyp, ange namnet på bankkreditlimittypen som är relaterad till bankkreditlimitavtalet.</span><span class="sxs-lookup"><span data-stu-id="6bc82-125">In the Facility type field, enter the name of the bank facility type that is related to the bank facility agreement.</span></span>
+9. <span data-ttu-id="6bc82-126">Skriv ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="6bc82-126">In the Description field, type a value.</span></span>
+10. <span data-ttu-id="6bc82-127">I fältet Kreditlimittyp, öppna sökningen genom att klicka på den nedrullningsbara knappen.</span><span class="sxs-lookup"><span data-stu-id="6bc82-127">In the Facility group field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="6bc82-128">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="6bc82-128">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="6bc82-129">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="6bc82-129">In the list, click the link in the selected row.</span></span>
+13. <span data-ttu-id="6bc82-130">I fältet Kreditlimitens natur, välj ett alternativ.</span><span class="sxs-lookup"><span data-stu-id="6bc82-130">In the Facility nature field, select an option.</span></span>
+14. <span data-ttu-id="6bc82-131">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="6bc82-131">Click Save.</span></span>
+15. <span data-ttu-id="6bc82-132">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="6bc82-132">Close the page.</span></span>
 
-## <a name="bank-posting-profile"></a><span data-ttu-id="01dcc-133">Bokföringsprofil för bank</span><span class="sxs-lookup"><span data-stu-id="01dcc-133">Bank posting profile</span></span>
-1. <span data-ttu-id="01dcc-134">Gå till Kassa- och bankhantering > Inställningar > Bokföringsprofil för bankdokument.</span><span class="sxs-lookup"><span data-stu-id="01dcc-134">Go to Cash and bank management > Setup > Bank documents posting profile.</span></span>
-2. <span data-ttu-id="01dcc-135">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="01dcc-135">Click New.</span></span>
-3. <span data-ttu-id="01dcc-136">I fältet Konto-/gruppnummer, öppna sökningen genom att klicka på den nedrullningsbara knappen.</span><span class="sxs-lookup"><span data-stu-id="01dcc-136">In the Account/Group number field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="01dcc-137">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="01dcc-137">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="01dcc-138">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="01dcc-138">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="01dcc-139">I fältet Kvittningskonto, välj huvudkontot för kvittning.</span><span class="sxs-lookup"><span data-stu-id="01dcc-139">In the Settle account field, select the main account for settlement.</span></span>
-7. <span data-ttu-id="01dcc-140">I fältet Avgiftskonto, välj kontot för utgiftstransaktioner.</span><span class="sxs-lookup"><span data-stu-id="01dcc-140">In the Charges account field, select the account for expense transactions.</span></span>
-8. <span data-ttu-id="01dcc-141">I fältet Marginalkonto, välj kontot för marginaltransaktionen.</span><span class="sxs-lookup"><span data-stu-id="01dcc-141">In the Margin account field, select the account for the margin transaction.</span></span>
-9. <span data-ttu-id="01dcc-142">I fältet Likvideringskonto, välj likvideringkontot för garantitransaktionen.</span><span class="sxs-lookup"><span data-stu-id="01dcc-142">In the Liquidation account field, select the liquidation account for the letter of guarantee transaction.</span></span> 
-10. <span data-ttu-id="01dcc-143">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="01dcc-143">Click Save.</span></span>
-11. <span data-ttu-id="01dcc-144">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="01dcc-144">Close the page.</span></span>
+## <a name="bank-posting-profile"></a><span data-ttu-id="6bc82-133">Bokföringsprofil för bank</span><span class="sxs-lookup"><span data-stu-id="6bc82-133">Bank posting profile</span></span>
+1. <span data-ttu-id="6bc82-134">Gå till Kassa- och bankhantering > Inställningar > Bokföringsprofil för bankdokument.</span><span class="sxs-lookup"><span data-stu-id="6bc82-134">Go to Cash and bank management > Setup > Bank documents posting profile.</span></span>
+2. <span data-ttu-id="6bc82-135">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="6bc82-135">Click New.</span></span>
+3. <span data-ttu-id="6bc82-136">I fältet Konto-/gruppnummer, öppna sökningen genom att klicka på den nedrullningsbara knappen.</span><span class="sxs-lookup"><span data-stu-id="6bc82-136">In the Account/Group number field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="6bc82-137">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="6bc82-137">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="6bc82-138">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="6bc82-138">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="6bc82-139">I fältet Kvittningskonto, välj huvudkontot för kvittning.</span><span class="sxs-lookup"><span data-stu-id="6bc82-139">In the Settle account field, select the main account for settlement.</span></span>
+7. <span data-ttu-id="6bc82-140">I fältet Avgiftskonto, välj kontot för utgiftstransaktioner.</span><span class="sxs-lookup"><span data-stu-id="6bc82-140">In the Charges account field, select the account for expense transactions.</span></span>
+8. <span data-ttu-id="6bc82-141">I fältet Marginalkonto, välj kontot för marginaltransaktionen.</span><span class="sxs-lookup"><span data-stu-id="6bc82-141">In the Margin account field, select the account for the margin transaction.</span></span>
+9. <span data-ttu-id="6bc82-142">I fältet Likvideringskonto, välj likvideringkontot för garantitransaktionen.</span><span class="sxs-lookup"><span data-stu-id="6bc82-142">In the Liquidation account field, select the liquidation account for the letter of guarantee transaction.</span></span> 
+10. <span data-ttu-id="6bc82-143">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="6bc82-143">Click Save.</span></span>
+11. <span data-ttu-id="6bc82-144">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="6bc82-144">Close the page.</span></span>
 
 
 
