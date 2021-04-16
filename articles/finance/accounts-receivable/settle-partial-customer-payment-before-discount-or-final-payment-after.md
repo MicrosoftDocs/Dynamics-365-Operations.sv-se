@@ -2,11 +2,9 @@
 title: Kvitta en delbetalning före rabattdatum med slutbetalning efter rabattdatum
 description: Den här artikeln diskuterar effekten av kvittning av betalningar till fakturor för kunder. Scenariot fokuserar på effekterna i reskontran, inte i redovisningen.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87408e864ab8e6101fc908e744231f10d0d2e664
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dd10e0c6e426d95aa5e96c4b9b59a8a81017b540
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250564"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835158"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Kvitta en delbetalning före rabattdatum med slutbetalning efter rabattdatum
 
@@ -48,9 +46,9 @@ Den 2 juli betalar kund 4027 en delbetalning på 297,00 för fakturan. Betalning
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**. Om du inte ändrar värdet för **Kvitta transaktioner** till **297,00**, kommer värdet för Kassarabattbelopp att skilja sig. Men 3,00 kommer att utnyttjas som kassarabatt när betalningen bokförs, eftersom kvittningen justerar automatiskt värdet **Belopp att kvitta**.
 
-|                              |           |
+| Fält                        | Värde     |
 |------------------------------|-----------|
-| Kassarabattdatum           | 7/09/2015 |
+| Kassarabattdatum           | 2015/07/09 |
 | Kassarabattbelopp         | 10,00     |
 | Använd kassarabatt            | Normal    |
 | Utnyttjad kassarabatt          | 0,00      |
@@ -73,7 +71,7 @@ Den 11 april betalar kund 4027 resten av fakturan, vilket är efter rabattperiod
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
-|                              |           |
+| Fält                        | Värde     |
 |------------------------------|-----------|
 | Kassarabattdatum           | 2015/07/09 |
 | Kassarabattbelopp         | 0,00      |
@@ -89,10 +87,10 @@ Om Arnie ändrar värdet i fältet **Använd kassarabatt** till **Alltid**, komm
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
-|                              |           |
+| Fält                        | Värde     |
 |------------------------------|-----------|
 | Kassarabattdatum           | 2015/07/09 |
-| Kassarabattbelopp         | 07:00      |
+| Kassarabattbelopp         | 7.00      |
 | Använd kassarabatt            | Alltid    |
 | Utnyttjad kassarabatt          | 3,00      |
 | Kassarabattbelopp att utnyttja | 07:00      |
