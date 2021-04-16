@@ -2,11 +2,9 @@
 title: Felsöka åtgärder för mottagande distributionslager
 description: I det här avsnittet beskrivs hur du åtgärdar vanliga problem som kan uppstå när du arbetar med mottagande distributionslager i Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6875c3c644b9993a384ba4d8623640536d7307e1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0ea2ee208cdbb8f9fa6668bbcb6e15252a7c1b1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250892"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828236"
 ---
 # <a name="troubleshoot-inbound-warehouse-operations"></a>Felsöka åtgärder för mottagande distributionslager
 
@@ -65,5 +63,22 @@ En ny funktion för hantering av inkommande last *Överinleverans av lastkvantit
 
 Mer information finns i [bokföra registrerade produktkvantiteter mot inköpsorder](inbound-load-handling.md#post-registered-quantities).
 
+## <a name="when-i-register-inbound-orders-i-receive-the-following-error-message-the-quantity-is-not-valid"></a>När jag registrerar inkommande order får jag följande felmeddelande: "Kvantiteten är inte giltig."
+
+### <a name="issue-description"></a>Problembeskrivning
+
+Om fältet **Grupperingspolicy för ID-nummer** anges till *Användardefinierad* för ett mobilt enhetsmenyalternativ som används för att registrera inkommande beställningar får du ett felmeddelande ("Antalet är inte giltigt") och du kan inte slutföra registreringen.
+
+### <a name="issue-cause"></a>Problemorsak
+
+När *Användardefinierad* används som licens för grupperingspolicy, delar systemet upp det inkommande lagret i separat ID-nummer, enligt enhetssekvensgruppen. Om batch- eller serienummer används för att spåra artikeln som levereras måste kvantiteterna för varje batch eller serienummer anges per ID-nummer den som registreras. Om kvantiteten som har angetts för ett ID-nummer överskrider den kvantitet som fortfarande måste tas emot för de aktuella dimensionerna, visas felmeddelandet.
+
+### <a name="issue-resolution"></a>Problemlösning
+
+När du registrerar ett objekt med hjälp av ett mobilt enhetsmenyalternativ där fältet **Grupperingspolicy för ID-nummer** anges till *Användardefinierad*, kan systemet kräva att du bekräftar eller anger ID-nummer, batch-nummer eller serienummer.
+
+På sidan för ID-nummer bekräftelse visar systemet den kvantitet som har tilldelats för det aktuella ID-numret. På batch- eller seriebekräftelsesidorna visar systemet den kvantitet som fortfarande måste mottas på det aktuella ID-numret. Det kommer även att innehålla ett fält där du kan ange den kvantitet som ska registreras för kombinationen av ID- och batch- eller serienummer. Se då till att kvantiteten som registreras för ID-numret inte överstiger den kvantitet som fortfarande måste tas emot.
+
+Alternativt, om för många ID-nummer genereras vid inkommande orderregistrering kan värdet på fältet **Grupperingspolicy för ID-nummer** ändras till *Gruppering av ID-nummer*, en ny enhetssekvensgrupp kan tilldelas objektet eller alternativet **Gruppering av ID-nummer** för enhetsseriegruppen kan inaktiveras.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Sammanfogning av värdemodell för anläggningstillgångar och avskrivningsregler
 description: 'I tidigare versioner fanns två bedömningsbegrepp för anläggningstillgångar: värdemodeller och avskrivningsregler. I versionen Microsoft Dynamics 365 for Operations (1611), har värdemodellfunktionen och funktionen för avskrivningsregel slagits ihop till ett enda begrepp som kallas för "bok".'
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 26409b6416a5b4e93ccd051b1625633ea12e22ac
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f027a856dbd596ede84c39e30ee2227aab9329f2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212479"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826748"
 ---
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Sammanfogning av värdemodell för anläggningstillgångar och avskrivningsregler
 
@@ -34,9 +32,8 @@ Den nya funktionen för avskrivningsregel baseras på tidigare värdemodellfunkt
 ## <a name="setup"></a>Inställningar
 Som standard bokförs böcker i både huvudboken (GL) och i anläggningstillgångar. Böcker har ett nytt alternativ **Bokför i redovisningen** som låter dig inaktivera bokföring till huvudboken och bara bokföra till anläggningstillgångar. Denna funktion liknar det tidigare bokföringbeteendet för avskrivningsregler. Inställningen av journalnamn har ett nytt bokföringsskikt som kallas Inga. Detta bokföringsskikt lades specifikt till för anläggningstillgångar. Om du vill bokföra transaktioner för böcker som inte bokförs till huvudboken måste du använda ett journalnamn som har bokföringsskiktet inställt på **Ingen**.
 
-|                                                  |                                 |                                 |                                                         |
+| &nbsp;                                           | Förteckning över avskrivningsregler               | Värdemodell                     | Bok (ny)                                              |
 |--------------------------------------------------|---------------------------------|---------------------------------|---------------------------------------------------------|
-|                                                  | Förteckning över avskrivningsregler               | Värdemodell                     | Bok (ny)                                              |
 | Bokför till huvudboken                                   | Aldrig                           | Alltid                          | Alternativ att bokföra till huvudboken                                |
 | Bokföringsskikt                                   | Inte tillämpligt                  | 3. Aktuella, operationer och moms | 11: Aktuella, operationer, moms, 7 anpassade skikt och Inga |
 | Journalnamn                                    | Journalnamn för avskrivningsregel | Huvudbok – Journalnamn              | Huvudbok – Journalnamn                                      |
@@ -46,9 +43,8 @@ Som standard bokförs böcker i både huvudboken (GL) och i anläggningstillgån
 ## <a name="processes"></a>Processer
 Processer använder nu en gemensam sida. Vissa processer tillåts bara om alternativet **Bokför till huvudboken** inställd på **Nej** i bokinställningar.
 
-|                                |                           |                     |                                          |
+| &nbsp;                                           | Förteckning över avskrivningsregler               | Värdemodell                     | Bok (ny)                                              |
 |--------------------------------|---------------------------|---------------------|------------------------------------------|
-|                                | Förteckning över avskrivningsregler         | Värdemodell         | Bok (ny)                               |
 | Transaktionspost              | Journal för avskrivningsregel | Journal för anläggningstillgångar | Journal för anläggningstillgångar                      |
 | Bonusavskrivning             | Tillåts                   | Inte tillåtet         | Tillåts                                  |
 | Radera historiska transaktioner | Tillåts                   | Inte tillåtet         | Tillåtet, om du inte bokför i huvudboken |
@@ -57,9 +53,8 @@ Processer använder nu en gemensam sida. Vissa processer tillåts bara om altern
 ## <a name="inquiries-and-reports"></a>Förfrågningar och rapporter
 Förfrågningar och rapporter stöder alla böcker. Rapporter som inte ingår i följande tabell gav tidigare stöd för både avskrivningsregler och värdemodeller och ska nu fortsätta att stödja alla boktyper. Fältet **Bokföringsskikt** har också lagts till rapporterna, så att du enkelt kan identifiera bokföring av transaktioner.
 
-|                                       |                                |                          |                          |
+| &nbsp;                                           | Förteckning över avskrivningsregler               | Värdemodell                     | Bok (ny)                                              |
 |---------------------------------------|--------------------------------|--------------------------|--------------------------|
-|                                       | Förteckning över avskrivningsregler              | Värdemodell              | Bok (ny)               |
 | Förfrågningar                             | Transaktioner för avskrivningsregel | Transaktioner för anläggningstillgång | Transaktioner för anläggningstillgång |
 | Kontoutdrag för anläggningstillgång                 | Tillåts inte                    | Tillåts                  | Tillåts                  |
 | Underlag för anläggningstillgång                     | Tillåts                        | Tillåts inte              | Tillåts                  |

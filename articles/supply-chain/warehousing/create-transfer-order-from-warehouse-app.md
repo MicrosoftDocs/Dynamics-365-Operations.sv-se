@@ -1,12 +1,10 @@
 ---
 title: Skapa överföringsorder från distributionslagerappen
-description: I det här avsnittet beskrivs hur du skapar och bearbetar överföringsorder från funktionen för distributionslagerappen
+description: I det här avsnittet beskrivs hur du skapar och bearbetar överföringsorder från funktionen för mobilappen för distributionslagerhantering
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
@@ -15,20 +13,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 855b057706bc2f8315084a3cebec6f855a4d01e7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0238f46d28205fd6d0906030a1660ab3aa7225a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5214140"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838380"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Skapa överföringsorder från distributionslagerappen
 
 [!include [banner](../includes/banner.md)]
 
-Denna funktion låter lagerarbetare skapa och bearbeta överföringsorder direkt från lagerställeappen. Lagerarbetarna börjar med att välja destinationslager stället och kan sedan skanna en eller flera licensskyltar med hjälp av appen för att lägga till registreringsskyltar till överföringsordern. När lagerarbetaren väljer **slutför order**, kommer ett batch-jobb att skapa de överföringsorder och orderrader som krävs baserat på den lagerbehållning som har registrerats för dessa registreringsskyltar.
+Denna funktion låter lagerarbetare skapa och bearbeta överföringsorder direkt från mobilappen för distributionslagerhantering. Arbetaren börjar med att välja destinationslager stället och kan sedan skanna en eller flera licensskyltar med hjälp av appen för att lägga till registreringsskyltar till överföringsordern. När lagerarbetaren väljer **slutför order**, kommer ett batch-jobb att skapa de överföringsorder och orderrader som krävs baserat på den lagerbehållning som har registrerats för dessa registreringsskyltar.
 
-## <a name="enable-the-create-transfer-orders-from-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Aktivera skapa överföringsorder från funktionen för distributionslagerappen
+## <a name="enable-the-create-transfer-orders-from-the-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Aktivera skapa överföringsorder från funktionen för distributionslagerappen
 
 Innan du kan använda den här funktionen måste både den och dess förutsättningar aktiveras i ditt system. Administratörer kan använda sidan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs.
 
@@ -50,8 +48,8 @@ Här följer allmänna riktlinjer för hur du skapar ett menyalternativ för mob
 1. Välj **Nytt** för att lägga till ett nytt menyalternativ. Gör följande inställningar för att komma igång:
 
     - **Menyalternativnamn** - tilldela ett namn som det ska visas i Supply Chain Management.
-    - **Titel** - tilldela ett menynamn som det ska visas för arbetare i distributionslagerappen.
-    - **Läge** - inställt på *indirekt* (den här lagerställeappen kommer inte att skapa arbete).
+    - **Titel** - tilldela ett menynamn som det ska visas för arbetare i mobilappen för distributionslagerhantering.
+    - **Läge** - inställt på *indirekt* (den här menyartikeln kommer inte att skapa arbete).
     - **Aktivitetskod** - Ställ in *Skapa överföringsorder från registreringsskyltar* för att göra det möjligt för lagerarbetarna att skapa en överföringsorder baserat på en eller flera skannade registreringsskyltar.
 
 1. Använd inställningen **Policy för skapande av överföringsrader** för att styra hur överföringsorderrader skapas av detta menyalternativ. Raderna skapas/uppdateras baserat på den registrerade lagerbehållningen för skannade registreringsskyltar. Välj ett av följande värden:
@@ -74,7 +72,7 @@ Här följer allmänna riktlinjer för hur du skapar ett menyalternativ för mob
 
 ## <a name="create-a-transfer-order-based-on-license-plates"></a>Skapa en överföringsorder baserat på registreringsskyltar
 
-Distributionslagerappen har en enkel process för att skapa överföringsorder baserat på registreringsskyltar. För att du ska kunna göra detta gör arbetaren följande med hjälp av distributionslagerappen:
+Mobilappen för distributionslagerhantering har en enkel process för att skapa överföringsorder baserat på registreringsskyltar. För att du ska kunna göra detta gör arbetaren följande med hjälp av mobilappen för distributionslagerhantering:
 
 1. Skapa överföringsordern och identifiera lagerstället.
 1. Identifiera varje registreringsskylt som ska levereras.
@@ -258,9 +256,9 @@ För nämnda exempel två **Händelser för lagerställeapp** (*Skapa överföri
 
 ### <a name="inquire-the-warehouse-app-events"></a><a name="#inquire-the-warehouse-app-events"></a>Fråga om händelser i lagerställeapp
 
-Du kan visa den händelsekön och de händelsemeddelanden som har genererats av lagerställeappen genom att gå till **Hantering av distributionslager \> Frågor och rapporter \> Loggar för mobil enhet \> Lagerställeapp händelser**.
+Du kan visa den händelsekön och de händelsemeddelanden som har genererats av mobilappen för distributionslagerhantering genom att gå till **Hantering av distributionslager \> Frågor och rapporter \> Loggar för mobil enhet \> Lagerställeapp händelser**.
 
-Händelsemeddelandena *Skapa överföringsorder* kommer att få status *Vänta*, vilket innebär att batch-jobbet **Bearbeta lagerställeapp händelser** inte kommer att hämtas och bearbeta händelsemeddelandena. Så snart händelsemeddelandet uppdateringar till status *i kö* bearbetar batch-jobbet händelserna. Detta kommer att ske samtidigt som skapandet av händelsen *Slutför överföringsorder* (när en arbetare väljer knappen **Slutför order** på distributionslagerappen). När händelsemeddelandena *skapa överföringsorder* har bearbetats uppdateras statusen till *slutförd* eller *misslyckad*. När status *Slutför överföringsorder* uppdateras till *Slutförd* tas alla relaterade händelser bort från kön.
+Händelsemeddelandena *Skapa överföringsorder* kommer att få status *Vänta*, vilket innebär att batch-jobbet **Bearbeta lagerställeapp händelser** inte kommer att hämtas och bearbeta händelsemeddelandena. Så snart händelsemeddelandet uppdateringar till status *i kö* bearbetar batch-jobbet händelserna. Detta kommer att ske samtidigt som skapandet av händelsen *Slutför överföringsorder* (när en arbetare väljer knappen **Slutför order** på mobilappen för distributionslagerhantering). När händelsemeddelandena *skapa överföringsorder* har bearbetats uppdateras statusen till *slutförd* eller *misslyckad*. När status *Slutför överföringsorder* uppdateras till *Slutförd* tas alla relaterade händelser bort från kön.
 
 Eftersom **Händelser för lagerställeapp** för skapandet av överföringsorderdata kommer inte bearbetas av batchjobbet innan meddelandena uppdateras till status *I kö* måste du slå upp de begärda numren för överföringsorder som en del av fältet **Identifierare**. Fältet **Identifierare** finns i rubriken på sidan för **händelser för lagerställeapp**.
 
@@ -276,11 +274,11 @@ Mer information finns i [händelsebearbetning för lagerställe](warehouse-app-e
 
 Under detta scenario inträffade följande:
 
-1. Med lagerställeappen valde du ett menyalternativ som använder aktivitetskoden **skapa överföringsorder från registreringsskyltar**.
+1. Med mobilappen för distributionslagerhantering valde du ett menyalternativ som använder aktivitetskoden **skapa överföringsorder från registreringsskyltar**.
 1. Appen ber dig välja destinations lagerställe för överföringsordern. Käll lagerstället är alltid det som du för närvarande är inloggat som arbetare.
 1. På val av destination lagerställe reserverades ett ID-nummer för den kommande överföringsordern (baserat på nummerserien för överföringsorder som definierats i systemet) men det gick inte att skapa ännu en överföringsorder.
 1. När du skannar registreringsskylt *LP10* som innehåller lagerbehållning som ska flyttas till det nya lagerstället, lades **händelse för lagerställeapp** i kön som bearbetas senare. Lagerställehändelsen innehöll meddelandeinformation om sökningen, inklusive det avsedda överföringsordernumret.
-1. I lagerställeappen när knappen **Slutför order** är vald skapas en ny händelse för lagerställeapp **Slutför överföringsorder** skapas och relaterad befintlig händelse **Skapa överföringsorder**, ändra status till **I kön**.
+1. I mobilappen för distributionslagerhantering när knappen **Slutför order** är vald skapas en ny händelse för lagerställeapp **Slutför överföringsorder** skapas och relaterad befintlig händelse **Skapa överföringsorder**, ändra status till **I kön**.
 1. I servern plockade **Bearbeta batch-jobb distributionslagerappen** upp händelsen **I kö** samlar den behållning som är relaterad till den skannade ID-nummer. Baserat på behållning den faktiska överföringsorder posten och tillhörande rader skapades. Jobbet fyllde också i fältet **Utgående leveransprincip** för överföringsorder med värdet baserat på konfigurerat *Släpp- och levereransbekräftelse* och länkade registreringsskylten mot linjerna för strategi **Registrerad skylt**.
 1. Baserat på överföringsordern fältet **Utgående leveransprincip** värde resulterade nu frågan **Automatisk frisättning av överföringsorder batchjobb** i att släppa överföringsordern till leveranslagret. Och på grund av inställningarna för den använda **påfyllnadsmallen**, **arbetsmallen** och **platsdirektiven** beror automatiska processer på att **Laststatus** uppdaterades till *Lastad*.
 1. **Batchjobbet för behandla utgående leverans** körs för lasten, vilket resulterar i att överföringsordern som levereras och leveransavisering (ASN) genereras.
@@ -294,13 +292,13 @@ Under detta scenario inträffade följande:
 
 Funktionen *Skapa och bearbeta överföringsorder från lagerställeappen* måste aktiveras. Mer information finns i [Aktivera skapa överföringsorder från lagerställeapp](#enable-create-transfer-order-from-warehouse-app).
 
-### <a name="warehouse-app-processes"></a>Lagerställeappprocesser
+### <a name="warehouse-management-mobile-app-processes"></a>Processer för mobilappen för distributionslagerhantering
 
 #### <a name="why-cant-i-see-the-menu-button-complete-order"></a>Varför visas inte meny knappen "Slutför beställning"?
 
 Du måste ha minst ett ID-nummer tilldelat till överföringsordern.
 
-#### <a name="can-several-warehouse-app-users-add-license-plates-to-the-same-transfer-order-at-the-same-time"></a>Kan flera användare av lagerställeappen lägga till ID-nummer för samma överföringsorder samtidigt?
+#### <a name="can-several-warehouse-management-mobile-app-users-add-license-plates-to-the-same-transfer-order-at-the-same-time"></a>Kan flera användare av mobilappen för distributionslagerhantering lägga till ID-nummer för samma överföringsorder samtidigt?
 
 Ja, flera lagerarbetare kan skanna ID-nummer till samma överföringsorder.
 
@@ -312,11 +310,11 @@ Nej, ett ID-nummer kan bara läggas till på en överföringsorder åt gången.
 
 Nej, du kan inte lägga till fler ID-nummer till en överföringsorder som har en händelse för lagerställeapp **Slutförd överföringorder**.
 
-#### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Hur söker jag efter befintliga överföringsorder som ska användas via knappen "Välj överföringsorder" i lagerställeappen om ordern ännu inte har skapats i serversystemet?
+#### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-management-mobile-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Hur söker jag efter befintliga överföringsorder som ska användas via knappen "Välj överföringsorder" i mobilappen för distributionslagerhantering om ordern ännu inte har skapats i serversystemet?
 
 Du kan för närvarande inte söka efter överföringsorder i appen, men du hittar överföringsordernumren på sidan **händelser för lagerställeapp**. Mer information finns i [Fråga om händelser i lagerställeapp](#inquire-the-warehouse-app-events).
 
-#### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-app"></a>Kan jag manuellt välja överföringsordernumret som ska användas från lagerställeapp?
+#### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-management-mobile-app"></a>Kan jag manuellt välja överföringsordernumret som ska användas från mobilappen för distributionslagerhantering?
 
 Det går bara att använda automatiskt genererade överföringsordernummer via nummerserier.
 

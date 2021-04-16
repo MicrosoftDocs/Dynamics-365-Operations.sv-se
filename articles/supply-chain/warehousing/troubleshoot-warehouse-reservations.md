@@ -2,11 +2,9 @@
 title: Felsöka reservationer i distributionslagerhantering
 description: I det här avsnittet beskrivs hur du åtgärdar vanliga problem som kan uppstå när du arbetar med lagerreservationer i Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,18 +15,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a9a5d20732a802fc58c392853af8334bbc07de73
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d0d73396772ed9e8397797d6685fb550d911303b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248725"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828116"
 ---
 # <a name="troubleshoot-reservations-in-warehouse-management"></a>Felsöka reservationer i distributionslagerhantering
 
 [!include [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du åtgärdar vanliga problem som kan uppstå när du arbetar med lagerreservationer i Microsoft Dynamics 365 Supply Chain Management.
+
+Avsnitt som är relaterade till batch- och serienummerregistreringar finns i [Felsöka batch- och seriereservationhierarkier för lagerställen](troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md).
 
 ## <a name="i-receive-the-following-error-message-reservations-cannot-be-removed-because-there-is-work-created-which-relies-on-the-reservations"></a>Jag får följande felmeddelande: "reservationer kan inte tas bort eftersom det finns ett arbete skapat som använder reservationerna".
 
@@ -63,20 +63,6 @@ Det här problemet kan uppstå om systemet inte kan uppdatera en lagerkvantitet 
 ### <a name="issue-resolution"></a>Problemlösning
 
 Det här problemet orsakas troligen av öppet arbete. Antingen slutför du arbetet eller tar emot det utan att arbetet skapas. Se till att inga lagertransaktioner fysiskt reserverar kvantiteten. Dessa transaktioner kan till exempel öppna kvalitetsorder, lagerspärrposter och utleveransorder.
-
-## <a name="i-receive-the-following-error-message-to-be-assigned-to-wave-load-lines-must-specify-the-dimensions-above-the-location-to-assign-these-dimensions-reserve-and-recreate-the-load-line"></a>Följande felmeddelande visas: "För att tilldelas en cykel måste lastlinjer ange dimensionerna ovanför platsen. För att tilldela dessa dimensioner, reservera och återskapa lastraden".
-
-### <a name="issue-description"></a>Problembeskrivning
-
-När du använder ett objekt som har en "batch ovan" bokningshierarki (med dimensionen **Batchnummer** placerad *ovan* dimensionen **Plats**), kommandot **Släppa till distributionslager** på sidan **Workbench för lastplanering** för en delkvantitet fungerar inte. Det här felmeddelandet visas och inget arbete skapas för delkvantiteten.
-
-Men om du använder en artikel som har en "batch under" bokningshierarki (med **Batchnummer** placerad *under* dimensionen **Plats** dimension), kan du frisläppa en last från **Workbench för lastplanering** för en delkvantitet.
-
-### <a name="issue-resolution"></a>Problemlösning
-
-Detta beteende är av design. Om du placerar en dimension ovanför dimensionen **Plats** i reservationshierarkin måste den anges innan den kan frisläppas till lagerstället. Microsoft har utvärderat det här problemet och har fastställt att det är en begränsning av funktionen under versioner till lagret från workbench för lastplanering. Delkvantiteter kan inte frisläppas om en eller flera dimensioner ovanför **plats** inte har angetts.
-
-För mer information [Flexibel reservationspolicy för dimension på distributionslagernivå](flexible-warehouse-level-dimension-reservation.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

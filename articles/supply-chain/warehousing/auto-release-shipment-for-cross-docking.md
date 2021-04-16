@@ -2,11 +2,9 @@
 title: Automatisk frisläppning av försändelse för direktutleverans
 description: Det här ämnet beskriver en direktutleveransstrategi som gör att du automatiskt kan frisläppa en efterfrågeorder till lagerstället när tillverkningsordern som tillhandahåller efterfrågade kvantiteter rapporteras som färdig, så att kvantiteten flyttas direkt från produktionsutleveransplatsen till den utgående platsen.
 author: omulvad
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 619133cb1ef5f85222a42a08fd5fb77250c3d911
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1c831030659b38b52932e504f744d24d999958a5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233185"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831444"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatisk frisläppning av försändelse för direktutleverans
 
@@ -163,7 +161,7 @@ Om du vill direktleverera kvantiteten av färdiga varor till den utgående plats
 8. På sidan **Produktionsorder** i åtgärdsfönstret, på fliken **Produktionsorder** i grupp **Process** välj **Uppskatta** och välj sedan **OK**. Ordern är uppskattad och råmaterialkvantiteten reserveras för produktionen.
 9. I åtgärdsfönstret, på fliken **Produktionsorder** i gruppen **Process** välj **Frisläpp** och välj sedan **OK**. Lagerplockningsarbete skapas för råmaterialen.
 10. Öppna och granska arbetet. I åtgärdsfönstret, på fliken **Lagerställe**, i gruppen **Allmänt**, väljer du **Arbetsdetaljer**. Gör en notering av arbets-ID.
-11. Logga in på lagerställeappen för att köra arbete i lager 51.
+11. Logga in på mobilappen för distributionslagerhantering för att köra arbete i lager 51.
 12. Gå till **Produktion** \> **Produktionsplockning**.
 13. Ange arbets-ID:t för att starta och slutföra plockningen av råmaterial. 
 

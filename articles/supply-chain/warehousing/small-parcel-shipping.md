@@ -2,11 +2,9 @@
 title: Leverans av små paket
 description: Det här ämnet innehåller information om funktionen leverans av små paket (SPS). Med denna funktion kan Microsoft Dynamics 365 Supply Chain Management skicka uppgifter om en förpackad behållare till transportföretaget och sedan ta emot en leveransetikett, basleveranstariff och spårningsnummer tillbaka från det transportföretaget.
 author: Mirzaab
-manager: tfehr
 ms.date: 01/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSRateEngine, TMSCarrier, CustTable, TMSShippingCarrierCustomerAccount, TMSSmallParcelShippingFeature
 audience: Application User
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 37f07139853c30da25c067a3d736b4b9bf4eb361
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 3969ee6b46f38fe2650881fb0183c60aadce6c8a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501184"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831180"
 ---
 # <a name="small-parcel-shipping"></a>Leverans av små paket
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Funktionen leverans av små paket (SPS) gör att Microsoft Dynamics 365 Supply Chain Management kan kommunicera direkt med transportföretag genom att tillhandahålla ett ramverk för kommunikation via transportföretags-API:er. Den här funktionen är användbar när du levererar enskilda försäljningsorder via kommersiella transportföretag i stället för att använda leverans av behållare eller LTL-leverans (mindre än lastbilslasten).
 

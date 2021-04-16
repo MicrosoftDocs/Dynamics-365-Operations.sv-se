@@ -2,11 +2,9 @@
 title: Legotillverkning
 description: Det här avsnittet hjälper dig att skapa en genomgång av legotillverkning i produktionen i Dynamics 365 Supply Chain Management.
 author: christophernread
-manager: tfehr
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f771c15d98abe3689054d43cc8b33632121522a3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 053dff19da6e51d23383d667c340c49f3eff1b27
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255551"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825192"
 ---
 # <a name="subcontracting"></a>Legotillverkning
 
@@ -210,7 +208,7 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
 
     ![Två uppsättningar arbete för råmaterialplockning på sidan Arbete.](./media/subcontract22_work-page.png)
 
-26. Starta lagerställeappen för att bearbeta lagerställearbetet för operation 10.
+26. Starta mobilappen för distributionslagerhantering för att bearbeta lagerställearbetet för operation 10.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -222,13 +220,13 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
     - I fältet **Från oper.nr.** välj **10**.
     - I fältet **Till oper.nr.** välj **10**.
 
-    ![Värden som har angetts på fliken Allmänt](./media/subcontract23_start-dialog.png)
+    ![Värden som har angetts på fliken Allmänt 1](./media/subcontract23_start-dialog.png)
 
 31. Välj **OK** för att stänga dialogrutan **Starta** och återgå till sidan **alla produktionsorder**.
 
     Observera att statusen för produktionsordern nu är **startad**. Materialen för en operation 10 förbrukas av en automatisk bokföring av plocklistejournalen. Tidsförbrukning för operationen 10 redovisas enligt en automatisk bokföring av en flödeskortjournal.
 
-32. Starta lagerställeappen för att bearbeta lagerställearbetet för operation 20.
+32. Starta mobilappen för distributionslagerhantering för att bearbeta lagerställearbetet för operation 20.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -240,7 +238,7 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
     - I fältet **Kvantitet**, ange **10**.
     - Ange alternativet **Bokför plocklista nu** till **Nej**.
 
-    ![Värden som har angetts på fliken Allmänt](./media/subcontract24_general-tab.png)
+    ![Värden som har angetts på fliken Allmänt 2](./media/subcontract24_general-tab.png)
 
 35. Välj **OK** för att stänga dialogrutan **Starta** och återgå till sidan **alla produktionsorder**.
 

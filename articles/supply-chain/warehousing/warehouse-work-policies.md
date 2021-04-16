@@ -2,11 +2,9 @@
 title: Arbetspolicyer
 description: Det här avsnittet innehåller information om hur du ställer in arbetspolicyer.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
@@ -15,20 +13,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 3e7814790bce0aee648421e3a69d702fd0012404
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248557"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838140"
 ---
 # <a name="work-policies"></a>Arbetspolicyer
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in systemet och lagerställeappen så att de stöder arbetspolicyer. Du kan använda den här funktionen för att snabbt registrera lager utan att skapa inlagringsarbete när du tar emot inköps- eller överföringsorder, eller när du avslutar tillverkningsprocesser. Det här avsnittet innehåller allmän information. Detaljerad information som är relaterad till det mottagna ID-numret finns i [Inleverans av ID-nummer som erhålls via lagerställeappen](warehousing-mobile-device-app-license-plate-receiving.md).
+I det här avsnittet beskrivs hur du ställer in systemet och mobilappen för distributionslagerhantering så att de stöder arbetspolicyer. Du kan använda den här funktionen för att snabbt registrera lager utan att skapa inlagringsarbete när du tar emot inköps- eller överföringsorder, eller när du avslutar tillverkningsprocesser. Det här avsnittet innehåller allmän information. Detaljerad information som är relaterad till det mottagna ID-numret finns i [Inleverans av ID-nummer som erhålls via mobilappen för distributionslagerhantering](warehousing-mobile-device-app-license-plate-receiving.md).
 
-En arbetspolicy styr om lagerarbete ska skapas när en tillverkad artikel rapporteras som färdig eller när varor tas emot med hjälp av lagerställeapp. Du ställer in varje arbetspolicy genom att definiera villkoren där den gäller: arbetsordertyper och processer, lagerstället och (valfritt) produkterna. En inköpsorder för produkt *A0001* måste tas emot på plats *RECV* i lagerstället *24*. Senare förbrukas produkten i en annan process vid platsen *RECV*. I det här fallet kan du ställa in en arbetspolicy för att förhindra att inlagringsarbete skapas när en arbetare rapporterar produkt *A0001* som inlevererad på plats *RECV*.
+En arbetspolicy styr om lagerarbete ska skapas när en tillverkad artikel rapporteras som färdig eller när varor tas emot med hjälp av mobilappen för distributionslagerhantering. Du ställer in varje arbetspolicy genom att definiera villkoren där den gäller: arbetsordertyper och processer, lagerstället och (valfritt) produkterna. En inköpsorder för produkt *A0001* måste tas emot på plats *RECV* i lagerstället *24*. Senare förbrukas produkten i en annan process vid platsen *RECV*. I det här fallet kan du ställa in en arbetspolicy för att förhindra att inlagringsarbete skapas när en arbetare rapporterar produkt *A0001* som inlevererad på plats *RECV*.
 
 > [!NOTE]
 > - Om en arbetspolicy ska vara aktiv måste du definiera minst en plats för den på snabbfliken **lagerplatser** på sidan **Arbetspolicyer**. 
@@ -297,7 +295,7 @@ När tillverkningsordern rapporterades som färdig, genererades inget arbete fö
 
 Mer information om menyartiklar för mobila enheter finns i [ställa in mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md).
 
-Detaljerad information om det mottagna ID-numret och arbetspolicyer finns i [Inleverans av ID-nummer som erhålls via lagerställeappen](warehousing-mobile-device-app-license-plate-receiving.md).
+Detaljerad information om det mottagna ID-numret och arbetspolicyer finns i [Inleverans av ID-nummer som erhålls via mobilappen för distributionslagerhantering](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Mer information om inkommande belastningshantering finns i [Lagerhantering av inkommande laster för inköpsorder](inbound-load-handling.md).
 

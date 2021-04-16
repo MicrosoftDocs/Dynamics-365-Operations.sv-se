@@ -2,11 +2,9 @@
 title: Uppgradera lagerstyrning från Microsoft DynamicsAX 2012 till Supply Chain Management
 description: I det här avsnittet finns en översikt över produkt- och lagerhantering samt migreringsalternativ.
 author: perlynne
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cca089e424b617fe4075d0cdbdfd23ef0bb86be
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fe8969345b8499bacfeecb0a1535174ce988eabc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248701"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837427"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Uppgradera lagerstyrning från Microsoft DynamicsAX 2012 till Supply Chain Management 
 

@@ -2,11 +2,9 @@
 title: Kluster för artikelinförsel
 description: Kluster för artikelinförsel erbjuder ett sätt att välja flera ID-nummer samtidigt och sedan ta dem till artikelinförsel på olika platser. De kan vara mycket användbara för butiker, där ID-nummer vanligtvis inte är fullständiga lastpallar med lager.
 author: Mirzaab
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5552959068d109bffe32b8074666bcd63b57183a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b3a7d1b7109b83b26c8187a7f0d271f1c82f6d63
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228451"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840375"
 ---
 # <a name="putaway-clusters"></a>Kluster för artikelinförsel
 
@@ -230,7 +228,7 @@ Det här scenariot simulerar bearbetning av kluster för artikelinförsel.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>Ta emot och sortera lagret i ett kluster
 
-1. Logga in på lagerställeappen som en användare som är konfigurerad för lagerstället *61*.
+1. Logga in på mobilappen för distributionslagerhantering som en användare som är konfigurerad för lagerstället *61*.
 1. I huvudmenyn, välj **ingående**.
 1. I menyn **Ingående** välj **Ta emot och sortera kluster**.
 1. I fältet **Ponum** anger du inköpsordernummer.
@@ -272,7 +270,7 @@ Klustret måste vara stängt innan artiklarna i klustret kan föras in.
 
 #### <a name="put-the-cluster-away"></a>Placera klustret
 
-1. Logga in på lagerställeappen som en användare som är konfigurerad för lagerstället *61*.
+1. Logga in på mobilappen för distributionslagerhantering som en användare som är konfigurerad för lagerstället *61*.
 1. I huvudmenyn, välj **ingående**.
 1. I menyn **ingående** välj **kluster för artikelinförsel**.
 1. Välj **kluster-ID** och ange det kluster-ID som du angav tidigare för det stängda klustret.

@@ -2,11 +2,9 @@
 title: Lagerställeapphändelser
 description: Det här ämnet beskriver den bearbetning av apphändelse i distributionslagret som används för att bearbeta apphändelse meddelanden för lagerstället som en del av ett batchjobb.
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 0bafcbd5306860cb80d6e813aabf83853a9011c1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d63cdea8917bed762bf8d970a408e5931aec48b7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248653"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837403"
 ---
 # <a name="warehouse-app-event-processing"></a>Händelsebearbetning i distributionslagerappen
 
 [!include [banner](../includes/banner.md)]
 
-Batchjobb som körs i Supply Chain Management kan använda data från en kö för bearbetning av händelser som utfärdats av distributionslagerappen för att vid behov reagera på signalerade händelser. Den här funktionen lägger till relevanta händelser i kön som svar på vissa typer av åtgärder som utförs av medarbetarna som använder appen. Ett exempel: när du använder funktionen **Skapa och bearbeta överföringsorder från lagerställeappen** skapas och uppdateras överföringsorderrubriken och -raderna i servern när du kör batchjobbet **Bearbeta händelser för lagerställeapp**.
+Batchjobb som körs i Supply Chain Management kan använda data från en kö för bearbetning av händelser som utfärdats av mobilappen för distributionslagerhantering för att vid behov reagera på signalerade händelser. Den här funktionen lägger till relevanta händelser i kön som svar på vissa typer av åtgärder som utförs av medarbetarna som använder appen. Ett exempel: när du använder funktionen *Skapa och bearbeta överföringsorder från lagerställeappen* skapas och uppdateras överföringsorderrubriken och -raderna i servern när du kör batchjobbet **Bearbeta händelser för lagerställeapp**.
 
 ## <a name="enable-the-process-warehouse-app-events-feature"></a>Aktivera funktionen bearbeta händelser för lagerställeapp
 
@@ -50,7 +48,7 @@ Ställ in ett schemalagt batchjobb för bearbetning händelser för lagerställe
 
 ## <a name="query-warehouse-app-events"></a>Fråga händelser för lagerställeapp
 
-Du kan visa den händelsekön och de händelsemeddelanden som har genererats av lagerställeappen genom att gå till **Hantering av distributionslager \> Frågor och rapporter \> Loggar för mobil enhet \> Lagerställeapp händelser**.
+Du kan visa den händelsekön och de händelsemeddelanden som har genererats av mobilappen för distributionslagerhantering genom att gå till **Hantering av distributionslager \> Frågor och rapporter \> Loggar för mobil enhet \> Lagerställeapp händelser**.
 
 ## <a name="the-standard-event-queue-process"></a>Standardkö för händelser för lagerställeapp
 
