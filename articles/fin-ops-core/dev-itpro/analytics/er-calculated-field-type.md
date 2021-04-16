@@ -2,7 +2,6 @@
 title: Stödparameteranrop till ER-datakällor för typen beräknat fält
 description: Det här avsnittet innehåller information om hur du använder typen beräknat fält för ER-datakällor.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1c2c13cd3f165826e0d5b5ac901ffa61895301e7
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 897133a27f9d3da2f576ce675c0949f824cde881
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569211"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749499"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Stödparameteranrop till ER-datakällor för typen beräknat fält
 
@@ -194,7 +193,7 @@ På sidan **formatdesigner** kräver det konfigurerade parametriserade beräknad
 
 ![Utökad lista över beräknade fältnivåer](media/er-calculated-field-type-08.png)
 
-### <a name="use-the-configured-calculated-field-for-binding-format-elements"></a>Använd det konfigurerade beräknade fältet för bindningsformatelement
+### <a name="use-the-configured-calculated-field-for-binding-format-elements&quot;></a>Använd det konfigurerade beräknade fältet för bindningsformatelement
 
 1. Välj **Model.Data2.Levels** för att välja det konfigurerade beräknade fältet.
 2. Välj formatelementet **Statement.Taxation.Regular**.
@@ -215,7 +214,7 @@ På sidan **formatdesigner** kräver det konfigurerade parametriserade beräknad
 9. Välj **bind**.
 10. Välj **ja** om du vill ersätta den för tillfället använda datakällan, **level3**, med den nya datakällan, **nivåer** i alla kapslade formatelement under det valda formatelementet.
 
-   Om du anger argumentet för det parametriserade beräknade fältet för XML-elementet som representerar beskattningsnivån (t.ex. **Model.Data2.Levels("Reduced")** som ett textvärde), behöver du inte göra samma sak för kapslade XML-attribut, dvs. bindningar ärver automatiskt värdet för argumentet som definieras på den överordnade nivån (**Model.Data2.Levels.aggregated.Base**, inte **Model.Data2.Levels("Reduced").aggregated.Base**).
+   Om du anger argumentet för det parametriserade beräknade fältet för XML-elementet som representerar beskattningsnivån (t.ex. **Model.Data2.Levels(&quot;Reduced")** som ett textvärde), behöver du inte göra samma sak för kapslade XML-attribut, dvs. bindningar ärver automatiskt värdet för argumentet som definieras på den överordnade nivån (**Model.Data2.Levels.aggregated.Base**, inte **Model.Data2.Levels("Reduced").aggregated.Base**).
 
 Återkommande anrop av valfritt parametriserat beräknat fält stöds inte.
 
@@ -223,10 +222,10 @@ Du kan välja **Redigera formel** och ändra det argument som används som stand
 
 ![Varningsmeddelande för validering](media/er-calculated-field-type-10.png)
 
-## <a name="configure-a-parameterized-calculated-field-to-return-a-record"></a>Konfigurera ett parameter beräknat fält som returnera en post
+## <a name="configure-a-parameterized-calculated-field-to-return-a-record&quot;></a>Konfigurera ett parameter beräknat fält som returnera en post
 När ett parametiserat beräknat fält returnerar en post måste du stödja bindningar av enskilda fält i den här posten för att kunna formatera element. I sådana fall kommer det inte att finnas någon överordnad bindning som innehåller värdet för ett argument för anrop av ett parameteriserat beräknat fält, det här värdet måste definieras i bindningen av en enskild posts fält.
 
-### <a name="start-adding-a-new-calculated-field"></a>Börja lägga till ett nytt beräknat fält
+### <a name=&quot;start-adding-a-new-calculated-field&quot;></a>Börja lägga till ett nytt beräknat fält
 
 1. Välj objektet **Model.Data2**.
 2. Markera **Lägg till**.
@@ -234,7 +233,7 @@ När ett parametiserat beräknat fält returnerar en post måste du stödja bind
 4. Skriv **Dokument** i fältet **LevelRecord**.
 5. Välj **Redigera recept**.
 
-### <a name="define-a-parameter-for-adding-a-calculated-field"></a>Definiera en parameter för att lägga till ett beräknat fält
+### <a name=&quot;define-a-parameter-for-adding-a-calculated-field&quot;></a>Definiera en parameter för att lägga till ett beräknat fält
 
 1. Välj **parametrar**.
 2. Välj **Ny**.
@@ -242,7 +241,7 @@ När ett parametiserat beräknat fält returnerar en post måste du stödja bind
 4. Välj **Typ** i fältet **Artikeltyp**.
 5. Välj **OK**.
 
-### <a name="define-an-expression-for-adding-a-calculated-field"></a>Definiera ett uttryck för att lägga till ett beräknat fält
+### <a name=&quot;define-an-expression-for-adding-a-calculated-field&quot;></a>Definiera ett uttryck för att lägga till ett beräknat fält
 
 1. I fältet **formel** anger du följande:  
     
@@ -250,7 +249,7 @@ När ett parametiserat beräknat fält returnerar en post måste du stödja bind
 
 2. Välj parametern **skattenivå**.
 3. Välj **Lägg till datakälla**.
-4. I fältet **formel** lägger du till **"momsnivå"))** till det som du angav i steg 1 för att färdigställa uttrycket till:  
+4. I fältet **formel** lägger du till **&quot;momsnivå"))** till det som du angav i steg 1 för att färdigställa uttrycket till:  
     
     **FIRSTORNULL(\@.Levels('Taxation Level'))**
 

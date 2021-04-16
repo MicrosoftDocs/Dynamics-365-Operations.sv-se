@@ -2,11 +2,9 @@
 title: Justera personalfärdigheter med verksamhetens behov
 description: Du kan spåra de färdigheter som anställda, kandidater eller kontaktpersoner har eller bör ha för att genomföra deras roller på ett effektivt sätt. Du kan även ange de färdigheter som krävs för ett visst jobb.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType, HcmEmployeeDevelopmentWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f3d64fa519cf4156adce43056c1c22362f0d7591
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: fc9996c31c3575ccf942907a66e59b00a344f3d1
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465568"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793715"
 ---
 # <a name="align-workforce-skills-with-business-needs"></a>Justera personalfärdigheter med verksamhetens behov
 
