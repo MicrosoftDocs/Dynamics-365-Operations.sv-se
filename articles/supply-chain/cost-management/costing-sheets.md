@@ -2,11 +2,9 @@
 title: Kostnadsredovisningar
 description: När du ställer in kostnadsredovisning har du två mål. För det första ska du definiera visningsformatet för information om kostnader för sålda varor för en tillverkad artikel eller tillverkningsorder. Den formaterade visningen kallas för kostnadsredovisning. För det andra ska du definiera grunden för hur indirekta kostnader beräknas. Inställningarna för kostnadsredovisningen bygger på kostnadsgruppsfunktionen för visningsinformation och på beräkningsformler för indirekta kostnader. De två målen med inställningarna för kostnadsredovisning beskrivs i den här artikeln.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostSheetDesigner, CostSheetCalculationFactor
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34924491b92a043354354d6421df7e9af2dda68d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: aba67903639804fb5c345a713073a5a46f37d91f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232384"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839329"
 ---
 # <a name="costing-sheets"></a>Kostnadsredovisningar
 

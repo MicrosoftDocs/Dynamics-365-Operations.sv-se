@@ -2,11 +2,9 @@
 title: Borttagna och utfasade funktioner i Dynamics 365 Supply Chain Management
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning i Dynamics 365 Supply Chain Management.
 author: kamaybac
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9c91ffcb03793db2f2ef3a9631ab549ace3f735d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2e41510f1f5810dde9683235384f89008f888471
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259101"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821283"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Borttagna och utfasade funktioner i Dynamics 365 Supply Chain Management
 
@@ -34,6 +32,18 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 > [!NOTE]
 > Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](https://docs.microsoft.com/dynamics/s-e/). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
+
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Borttagna eller föråldrade funktioner i Supply Chain Management version 10.0.18
+
+### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations - Lagerhållning (distributionslagerappen)
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Gäller från april 2021, *Dynamics  365 for Finance and Operations - Lagerhållning* (distributionslagerappen) är inaktuell och stöds inte efter april 2022. Den ersätts nu av *Mobilappen för distributionslagerhantering*, som släpps med version 10.0.17 av Supply Chain Management. Den nya appen är en fullständig ersättning, men använder samma underliggande ramverk, vilket gör migreringen enkel. De två apparna kan vid behov användas sida vid sida för att hjälpa användarna att gradvis justera när de lär sig använda det nya programmet.<br><br>För mer information om den nya mobilappen för distributionslagerhantering, se [Mobilappen för distributionslagerhantering](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) och [Installera och anslut mobilappen för distributionslagerhantering](../warehousing/install-configure-warehouse-management-app.md). |
+| **Ersatt av en annan funktion?**   | Ja, ersätts av det nya mobilappen för distributionslagerhantering. |
+| **Produktområden som påverkas**         | Supply Chain Management - distributionslagerapp |
+| **Distribueringsalternativ**              | Moln och lokal |
+| **Status**                         | Inaktuell. Distributionslagerappen får stöd med åtgärds- och säkerhetskorrigeringar, men funktionsutökningar tillhandahålls inte längre. Efter april 2022 stöds inte längre den gamla istributionslagerappen och kunderna uppmanas att flytta till den nya mobilappen för distributionslagerhantering. Det gamla distributionslagerappen tas då bort från Microsoft Store och Google Play store.  |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10015-release"></a>Borttagna eller föråldrade funktioner i Supply Chain Management version 10.0.15
 

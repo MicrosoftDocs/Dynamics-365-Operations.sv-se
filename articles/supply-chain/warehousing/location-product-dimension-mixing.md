@@ -2,11 +2,9 @@
 title: Blandning av produktstorlekar på plats
 description: Det här avsnittet innehåller information om hur du hanterar blandning av produktdimension för plats. Den här platsprofilfunktionen hjälper till att förbättra platshanteringen när produktvarianter eller produkter som har dimensioner används, t.ex. inom modebranschen. Med den kan du bestämma om konfigurationer, färger, utföranden och storlekar kan blandas för en viss platsprofil, eller om bara en av dessa dimensioner eller en kombination av dem kan placeras på samma plats.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: b0309c7a7240d7cac9e5b5724a028f2dc70199e4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 28f59052a74b6d8b263c7a8a8b6061f2c4b34c89
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217039"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831300"
 ---
 # <a name="location-product-dimension-mixing"></a>Blandning av produktstorlekar på plats
 
@@ -206,9 +204,9 @@ Du skapar en inköpsorder med tre rader: två rader för samma produktnummer men
 
 1. Välj **Spara**.
 
-### <a name="receive-purchase-order-lines-in-the-warehouse-app"></a>Ta emot inköpsorderrader i lagerställeappen
+### <a name="receive-purchase-order-lines-in-the-warehouse-management-mobile-app"></a>Ta emot inköpsorderrader i mobilappen för distributionslagerhantering
 
-1. Logga in på lagerställeappen som en användare som är aktiverad för lagerstället *24*.
+1. Logga in på mobilappen för distributionslagerhantering som en användare som är aktiverad för lagerstället *24*.
 1. Välj menyn **Inkommande**.
 1. Välj **Inleverans av inköpsorderrad**.
 1. Markera fältet **PONUM**, ange inköpsordernummer och bekräfta.

@@ -2,11 +2,9 @@
 title: Skapa en produkt
 description: Den här proceduren visar hur en ny produkt skapas i Handel produkthierarkin.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetails, EcoResProductCreate, EcoResCategorySingleLookup
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 90b5d086e2a1bdcd2d915f084a96b329e42b0210
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fdab1bdd36330c717c64fcacbd811dd11b1569d1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258861"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812605"
 ---
 # <a name="create-a-product"></a>Skapa en produkt
 

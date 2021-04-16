@@ -2,10 +2,8 @@
 title: Skriv ut på nytt och annullera påfyllnadsetiketter
 description: I det här avsnittet beskrivs hur du makulerar och skriver ut om befintliga påfyllnadsetiketter.
 author: GarmMSFT
-manager: PJacobse
 ms.date: 07/09/2020
 ms.topic: article
-ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
 ms.reviewer: PJacobse
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3d67052d47cf23acbb51354773fbd306545bbfa7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0b309a0e40541463db4d71fa9e7cac5db2d799be
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228379"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817375"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Skriv ut på nytt och annullera påfyllnadsetiketter
 
@@ -218,5 +216,8 @@ Arbetsundantag styr funktionen för kortplockning. Följ dessa steg för att ska
 1. Välj den arbetsundantagskod som du har skapat för det här scenariot.
 1. Om du har valt rätt undantag ska kryssrutan **annullera och skriv ut igen** vara tillgänglig. Markera rutan och bekräfta. När det är bekräftat räknas den serie som identifieras av fältet **etikettversions-ID** omberäknas baserat på den ändrade kvantiteten för arbetsraden. Sedan skrivs den om på den angivna skrivaren.
 
+## <a name="additional-resources"></a>Ytterligare resurser
+
+- [Utskrift av påfyllnadsetikett](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

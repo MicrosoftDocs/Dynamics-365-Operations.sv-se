@@ -2,11 +2,9 @@
 title: Lagerpåfyllnad över platskapacitet
 description: Det här avsnittet innehåller information om funktionen påfyllnad över lagerställekapacitet. Den här funktionen gör att allt påfyllningsarbete som krävs för dagen skapas och kan användas för att se till att plockplatsen varken hamnar utanför lagret eller går över kapacitet.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 1e4acfea3484acaafd982d0f22c2303f921f909f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 309df56671bf258e1669ae6d5393de01e2b500f0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228403"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823249"
 ---
 # <a name="replenishment-over-location-capacity"></a>Lagerpåfyllnad över platskapacitet
 
@@ -241,7 +239,7 @@ Beroende på behållningskvantitet kan de skapade arbetskvantiteterna skilja sig
 
 #### <a name="on-hand-inventory-license-plate-id"></a>ID-nummer för lagerbehållning
 
-Senare i det här scenariot använder du distributionslagerappen (eller en emulator), där du måste identifiera ID-numret för att slutföra scenarier med plockning och lagerpåfyllnad.
+Senare i det här scenariot använder du mobilappen för distributionslagerhantering (eller en emulator), där du måste identifiera ID-numret för att slutföra scenarier med plockning och lagerpåfyllnad.
 
 Följ instruktionerna nedan för att hitta de ID-nummer som du kommer att behöva senare.
 
@@ -266,7 +264,7 @@ Du kommer att utföra återanskaffningen av distributionslagret för de första 
 
 #### <a name="replenishment"></a>Lagerpåfyllnad
 
-1. Logga in på distributionslagerappen en användare i lager ställe *61*. (Ange *61* som användar-ID och *1* som lösenord.)
+1. Logga in på mobilappen för distributionslagerhantering en användare i lager ställe *61*. (Ange *61* som användar-ID och *1* som lösenord.)
 1. Gå till **Lager \> Lagerpåfyllnad**.
 
     Du uppmanas att slutföra det första påfyllningsarbetet. Artikelnummer, kvantitet och plats att plocka från visas.
@@ -296,7 +294,7 @@ Tills tillräckligt med lager plockas från platsen för att få plats under tr�
 
 Innan lagerpåfyllnadsarbetet kan slutföras måste plockningsplatsen vara tom för lagret till en nivå där det återstående påfyllningsarbetet kan avbrytas. Med andra ord kan summan av lagerbehållningen på platsen och den påfyllningskvantitet som anges inte överskrida värdet för **Överfyllnadskvantitet**. När den här summan är mindre än överfyllnadskvantitet, kommer det återstående lagerpåfyllnadsarbetet att spärras.
 
-1. Logga in på distributionslagerappen en användare i lager ställe *61*. (Ange *61* som användar-ID och *1* som lösenord.)
+1. Logga in på mobilappen för distributionslagerhantering en användare i lager ställe *61*. (Ange *61* som användar-ID och *1* som lösenord.)
 1. Gå till **Utgående \> Försäljningsplockning**.
 1. Ange det första arbets-ID:t för försäljningsorder 1.
 

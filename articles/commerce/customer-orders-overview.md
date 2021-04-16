@@ -2,11 +2,9 @@
 title: Kundorder i kassa (POS)
 description: Det här avsnittet innehåller information om kundorder i POS. Kundorder kallas även specialorder. Avsnittet innehåller en beskrivning av relaterade parametrar och transaktionsflöden.
 author: josaw1
-manager: AnnBe
 ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: f60e07c1faae9bc3cb6d3c843e72e6000cff7591
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a310c7067b399fb35ccc8a1b17d8bd6822a27a62
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220520"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821018"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundorder i kassa (POS)
 
@@ -61,7 +59,8 @@ I Commerce version 10.0.12 och senare kan organisationer ange huruvida lagerstä
 
 När du arbetar med kundorder i POS måste du tänka på några av inställningarna för butikskanalen. Dessa inställningar finns på sidan **butiker** i Commerce-administration.
 
-- **Lagerställe** – det här fältet anger det lager som används för att uppfylla order som har konfigurerats för leverans från butiken.
+- **Lagerställe** – Det här fältet anger det lager som kommer att användas vid minskning av lager för kontant- och transport- och kundhämtningsorder kopplade till denna butik. Vi rekommenderar att unika lagerställen används för varje butikskanal för att förhindra att affärslogikproblem uppstår i olika butiker.
+- **Fraktlager** – Det här fältet anger det lager som kommer att användas vid minskning lager för kundorder som ska skickas från den valda butiken. Om funktionen **Möjlighet att ange platser som "Frakt" eller "Hämtning" aktiverat inom Uppfyllningsgrupp** har aktiverats i din miljö kan kassaanvändare välja ett specifikt lager att skicka från i kassa istället för att välja en butik att skicka från. När den funktionen är aktiverad används därför inte längre leveranslagerstället eftersom användaren plockar det specifika lagerstället som ordern skickas från när ordern skapas.
 - **Tilldelning av uppfyllelsegrupp** – Välj den här knappen (på fliken **Inställningar** i åtgärdsfönstret) om du vill länka de uppfyllelsegrupper som refereras till visa alternativ för upphämtningsplatser eller leveransursprung när kundorder skapas i kassa.
 - **Använd målbaserad moms** – detta alternativ anger om leveransadressen används för att bestämma vilken momsgrupp som ska användas på orderrader som levereras till kundens adress.
 - **Använd kundbaserad moms** – det här alternativet anger om momsgruppen som definieras för kundens leveransadress används för att momsorder för kund som skapas i POS för leverans till kundens hem.

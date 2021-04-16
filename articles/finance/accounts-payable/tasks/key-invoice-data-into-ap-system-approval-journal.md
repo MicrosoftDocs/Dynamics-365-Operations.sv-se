@@ -2,11 +2,9 @@
 title: Mata in fakturadata i leverantörsreskontra genom att använda en godkänd journal
 description: Det här avsnittet visas hur du använder fakturaregister om du vill skapa fakturor och sedan använda godkännandejournalen för att uppdatera utgiftskontona.
 author: abruer
-manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransInvoiceRegister, HcmWorkerLookUp, LedgerJournalTransApprove, LedgerJournalTransApproveFetchVouchers, LedgerTransVoucher
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0fee32d9fd1ab89b1a8cedb2e1965674586d4e7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d01c04fcf707109cd7bc6f056846506914e96dec
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227194"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838895"
 ---
 # <a name="key-invoice-data-into-accounts-payable-using-an-approval-journal"></a>Mata in fakturadata i leverantörsreskontra genom att använda en godkänd journal
 

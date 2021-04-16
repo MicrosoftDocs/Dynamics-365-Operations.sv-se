@@ -2,11 +2,9 @@
 title: Arbeta med serialiserade artiklar i kassa
 description: I det här avsnittet beskrivs hur du hanterar serialiserade artiklar i programmet kassa (POS).
 author: boycezhu
-manager: annbe
 ms.date: 01/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -14,12 +12,12 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: ee79fef3300ebea476ea37adc4cc61a9bbadb5d6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 39135111a8e7bf16d1e56ca42726ae8a8e130c5d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231258"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798691"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Arbeta med serialiserade artiklar i kassa
 
