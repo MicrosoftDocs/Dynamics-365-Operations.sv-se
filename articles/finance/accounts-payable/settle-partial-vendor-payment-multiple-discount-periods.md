@@ -2,11 +2,9 @@
 title: Kvitta en delleverantörsbetalning som har flera rabattperioder
 description: Den här artikeln går igenom ett scenario där flera delbetalningar görs till en leverantör som erbjuder flera kassarabatter.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbcaca97203c47bf7eac02ba410763a4e1a7b34a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 56e2b3a8dadd824fa0170a1db19fffeaecb47775
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227290"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827876"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Kvitta en delleverantörsbetalning som har flera rabattperioder
 
@@ -56,7 +54,7 @@ Den 2 juli vill April betala 300,00 mot den här fakturan. Hon skapar en enstaka
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
-|                              |           |
+| Fält                        | Värde     |
 |------------------------------|-----------|
 | Kassarabattdatum           | 2015/07/02 |
 | Kassarabattbelopp         | -20,00    |
@@ -72,7 +70,7 @@ Eftersom en kassarabatt är tillgänglig, vill April ändra betalningsbeloppet, 
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
-|                              |           |
+| Fält                        | Värde     |
 |------------------------------|-----------|
 | Kassarabattdatum           | 2015/07/02 |
 | Kassarabattbelopp         | -20,00    |
@@ -105,9 +103,9 @@ April bestämmer dig för att betala 495,00 och ta kassarabatten 5,00. Därför 
 
 Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**.
 
-|                              |           |
+| Fält                        | Värde     |
 |------------------------------|-----------|
-| Kassarabattdatum           | 2015/07/12 |
+| Kassarabattdatum           | 2015/07/15 |
 | Kassarabattbelopp         | -10.00    |
 | Använd kassarabatt            | Normal    |
 | Utnyttjad kassarabatt          | -6,00     |

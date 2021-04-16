@@ -2,11 +2,9 @@
 title: Linjär avskrivning kvarstående livstid
 description: Det här avsnittet ger en översikt över metoden för linjär återstående livstid för avskrivning.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 823b2569670adfbf04038abca656e34f0199fce1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bd7bc6d773d85a1ba02151b96bf80f970845d4a9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210105"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818522"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Linjär avskrivning kvarstående livstid
 
@@ -57,9 +55,9 @@ Om du väljer **Räkenskapsår** i fältet **Avskrivningsår** används linjär 
 ## <a name="example-of-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Exempel på linjär avskrivning av en oförändrad anläggningstillgång
 En anläggningstillgång har följande egenskaper.
 
-|                     |        |
+| Fält               | Värde  |
 |---------------------|--------|
-| Anskaffningskostnad    | 11 000 |
+| Anskaffningskostnad    | 11,000 |
 | Skrotvärde       | 1 000  |
 | Avskrivningsbas   | 10 000 |
 | Antal tjänsteår  | 5      |

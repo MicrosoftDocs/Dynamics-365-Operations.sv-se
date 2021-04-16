@@ -1,12 +1,10 @@
 ---
 title: Enhetsplockningsbekräftelse
-description: Det här avsnittet beskriver hur du ställer in och använder bekräftelse av komponentplockning från en mobil enhet.
+description: Med enhetsplockning kan du bekräfta varje lagerenhet via plocknings- eller inventeringsarbete på en mobil enhet.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFAutoConfirm, WHSRFMenuItem
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 852bd29ae18b4903906aa7fb97a06389cd7cd3bc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3f9da533998341de60d210e196baae64d285d372
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232873"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818858"
 ---
 # <a name="piece-picking-confirmation"></a>Enhetsplockningsbekräftelse
 
@@ -29,7 +27,7 @@ ms.locfileid: "5232873"
 
 Med enhetsplockning kan du bekräfta varje lagerenhet via plocknings- eller inventeringsarbete på en mobil enhet. För plockning, kan du bekräfta mängden arbete ska hanteras upp till den kvantitet som anges på det arbete som ska plockas. För inventeringsarbete kan du skanna lagret du inventerar och spåra det totala antalet.
 
-Bekräftelse av produkten väljs automatiskt när du aktiverar enhetsplockning. För arbetstypen Plockning aktiveras maximalt antal enheter. På så sätt kan du ange maximalt antal enheter som måste bekräftas under arbetsprocessen. Den maximala kvantiteten är baserad på den aktuella arbetsenheten som bearbetas. Arbetstypen Inventering tillåter inte ett maximum.
+Bekräftelse av produkten väljs automatiskt när du aktiverar enhetsplockning. För arbetstypen kan du ange maximalt antal enheter. På så sätt kan du ange maximalt antal enheter som måste bekräftas under arbetsprocessen. Den maximala kvantiteten är baserad på den aktuella arbetsenheten som bearbetas. Arbetstypen Inventering tillåter inte ett maximum.
 
 Du kan också använda kvantitet och måttenhet (UOM) som är associerad med en skannad streckkod. Den här metoden fungerar för inleverans på inkommande flöden inklusive inleverans av blandad registreringsskylt, artikel för inköpsorder, artikel för överföringsorder och lastartikel. Den fungerar även för enhetsplockning där skanning av streckkoden lägger till kvantiteten till det totala antalet bekräftade enheter som konverteras mellan måttenheten på streckkoden och arbetsenheten. Vid bekräftelse på att kvantiteten är godkänd för inventering i sekvensgruppen i samband med inventering av måttenheten på streckkoden läggs kvantiteten till i det totala antalet.
 

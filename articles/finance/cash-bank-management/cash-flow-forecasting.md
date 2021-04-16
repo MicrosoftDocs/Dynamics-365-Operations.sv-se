@@ -1,12 +1,10 @@
 ---
 title: Kassaflödesprognoser
 description: Det här avsnittet innehåller en översikt över kassaflödeprognosprocess. Dessutom beskrivs hur kassaflödesprognos är integrerad med andra moduler i systemet.
-author: saraschi2
-manager: AnnBe
-ms.date: 08/03/2020
+author: JodiChristiansen
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 98bf906569f99c74fef747381e8f27b1d9f91a5f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2a0bcb5266472b3d0e936d27c9f599d2c6b16d7a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232475"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819660"
 ---
 # <a name="cash-flow-forecasting"></a>Kassaflödesprognoser
 
@@ -45,8 +43,7 @@ Kassaflödesprognos kan integreras med Redovisning, Leverantörsreskontra, Kundr
 - **Budgetregisterposter** – budgetregisterposter som har valts för kassaflödesprognoser.
 - **Efterfrågeprognoser** – lagerprognosmodellrader som valts för kassaflödesprognoser.
 - **Leveransprognoser** – lagerprognosmodellrader som valts för kassaflödesprognoser.
-
-Även om det inte finns någon direkt integration med projekthantering och redovisning, finns det flera sätt att inkludera projekttransaktioner i kassaflödesprognosen. Bokförda projektfakturor ingår som en del av öppna kundtransaktioner i prognosen. Projekt som initierats av försäljnings- och inköpsorder ingår i prognosen som öppna order när de registreras i systemet. Du kan också överföra projektprognoser till en redovisningsbudgetmodell. Den här redovisningsbudgetmodellen inkluderas sedan i kassaflödesprognosen som en del av budgetregisterposterna.
+- **Projektprognoser** - Projekthantering och redovisningsprognoser med hjälp av prognosmodell.
 
 ## <a name="configuration"></a>Inställningar
 
@@ -96,6 +93,14 @@ Lagerleverans och efterfråganprognoser kan inkluderas i kassaflödesprognoser. 
 Med en ny flik på sidan **Konfiguration av kassaflödesprognos** kan du kontrollera vilka ekonomiska dimensioner som ska användas för filtreringen i arbetsytan **Kassaflödesprognoser**. Den här fliken visas endast om funktionen Kassaflödesprognoser är aktiverad. 
 
 På fliken **Dimensioner** väljer du i listan med dimensioner som ska användas för filtrering och flyttar dem till den högra kolumnen med piltangenterna. Endast två dimensioner kan väljas för filtrering av kassaflödesprognosdata. 
+
+### <a name="project-management-and-accounting"></a>Projekthantering och redovisning
+
+I version 10.0.17 möjliggör en ny funktion integration med projekthantering och redovisning och kassaflödesprognoser. I arbetsytan **Funktionshantering**, aktivera funktionen **Kassaflöde, projektprognos** för att inkludera de prognostiserade kostnaderna och intäkterna i kassaflödesprognosen. På fliken **Projekthantering och redovisning** på sidan **Kassaflödesprognosinställningar** välj projekttyper och transaktionstyper som ska inkluderas i kassaflödesprognosen. Välj sedan modellen för projektprognos. En reduceringstyp delmodell fungerar bäst. Likviditetskontona som angetts i inställningarna för kundreskontra används som standardlikviditetskonton. Därför behöver du inte ange standardlikviditetskonton när du ställer in kassaflödesprognosen. En budgetmodell kan också användas, men endast en typ kan väljas på sidan **Inställning för kassaflödesprognos** för Projekthantering och redovisning. En prognosmodell är den mest flexibla när projekthantering och redovisning eller projektoperationer används.
+
+När funktionen Kassaflödesprojektprognos är aktiverad kan kassaflödesprognosen visas för varje projekt på sidan **Alla projekt**. I åtgärdsfönstret, på fliken **Plan** i gruppen **Prognos** väljer du **Kassaflödesprognos**. I arbetsytan **Kassaöversikt** (se avsnittet [Rapportering](#reporting) senare i detta ämne) visar transaktionstypen Projektprognos inflöden (projektprognosintäkter) och utflöden (projektprognoskostnader). Beloppen kan bara inkluderas om fältet **Projektfas** i arbetsytan **Kassaöversikt** har ställts in på **Pågår**.
+
+Projekttransaktioner inkluderas fortfarande i kassaflödesprognosen på flera sätt, oavsett om funktionen för **Prognos för kassaflödesprojekt** är aktiverad eller inte. Bokförda projektfakturor ingår som en del av öppna kundtransaktioner i prognosen. Projekt som initierats av försäljnings- och inköpsorder ingår i prognosen som öppna order när de registreras i systemet. Du kan också överföra projektprognoser till en redovisningsbudgetmodell. Den här redovisningsbudgetmodellen inkluderas sedan i kassaflödesprognosen som en del av budgetregisterposterna. Om du har aktiverat funktionen **Prognos för kassaflödesprojekt** ska du inte överföra projektprognoser till en redovisningsbudgetmodell, eftersom denna åtgärd gör att projektprognoserna inventeras två gånger.
 
 ### <a name="calculation"></a>Beräkning
 

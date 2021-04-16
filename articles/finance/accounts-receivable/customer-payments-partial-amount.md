@@ -2,11 +2,9 @@
 title: Kundbetalningar för ett delbelopp
 description: Ibland kan kunder betala ett belopp som är mindre än beloppet i en faktura. Det här avsnittet innehåller en beskrivning av de olika alternativen för att hantera den här situationen. Vilka alternativ som är tillgängliga för dig beror på dina affärskrav och konfigurationer.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymEntry
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef43e6bafcd6a049111701032efbe5474dfaa9f6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4f89b3d94fd16aa9cf27931d11fd8fff22048d40
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236948"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824038"
 ---
 # <a name="customer-payments-for-a-partial-amount"></a>Kundbetalningar för ett delbelopp
 

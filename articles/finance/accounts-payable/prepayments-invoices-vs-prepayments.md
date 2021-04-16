@@ -1,12 +1,10 @@
 ---
 title: Förskottsfakturor kontra förskottsbetalningar
-description: Den här ämnet beskriver och kontrasterar de två metoderna som organisationer kan använda för förskottsbetalningar. I den ena metoden måste du skapa en förskottsfaktura som är kopplad till en inköpsorder. I den andra metoden skapar du verifikationer för förskottsbetalningsjournal genom att skapa journalposter och välja dem som verifikationer för förskottsbetalningsjournal.
+description: Den här ämnet beskriver och kontrasterar de två metoderna som organisationer kan använda för förskottsbetalningar.
 author: abruer
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8e882cb2063133324005a8e4585daa1c6a0752b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 64301ac540ce2e6e914b6b23668fddeb295ef84c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227484"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827996"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Förskottsfakturor kontra förskottsbetalningar
 
 [!include [banner](../includes/banner.md)]
 
-Den här ämnet beskriver och kontrasterar de två metoderna som organisationer kan använda för förskottsbetalningar. I den ena metoden måste du skapa en förskottsfaktura som är kopplad till en inköpsorder. I den andra metoden skapar du verifikationer för förskottsbetalningsjournal genom att skapa journalposter och välja dem som verifikationer för förskottsbetalningsjournal.
+Den här ämnet beskriver och kontrasterar de två metoderna som organisationer kan använda för förskottsbetalningar. En metod skapar en förskottsfaktura som är kopplad till en inköpsorder. I den andra metoden skapar du verifikationer för förskottsbetalningsjournal genom att skapa journalposter och välja dem som verifikationer för förskottsbetalningsjournal.
 
 Organisationer kan utfärda förskottsbetalningar till leverantörer för varor och tjänster, innan dessa varor eller tjänster är uppfyllda. Två metoder kan användas för att utfärda förskottsbetalningar till leverantörer. För att minimera risk kan du följa förskottsbetalningar, genom att definiera förskottsbetalningen i en inköpsorder. För den här metoden måste du skapa en förskottsfaktura som är kopplad till en inköpsorder. Denna metod kallas för förskottsbetalningsfakturering. Organisationer som inte vill följa förskottsbetalningar lika nära eller inte får en förskottsfaktura från deras leverantör, kan använda verifikationer för förskottsbetalningsjournal i stället för metoden förskottsbetalningsfakturering. Du kan skapa verifikationer för förskottsbetalningsjournal, genom att skapa journalposter och välja dem som verifikationer för förskottsbetalningsjournal. För den här metoden kan du inte följa vilka förskottsbetalningar till en leverantör som görs mot inköpsorder. Du kan dock välja en bokförd förskottsbetalning för kvittning mot en inköpsorder.
 
@@ -37,7 +35,7 @@ Organisationer kan utfärda förskottsbetalningar till leverantörer för varor 
 | Förskottsfaktura                                                                | Förskottsbetalningar                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Definiera förskottsbetalningsvärde på inköpsordern.                                    | Inget förskottsbetalningsvärde är definierat på inköpsordern.                    |
-| Nyckel: En förskottsfaktura och en slutfaktura måste bokföras.                       | Ingen förskottsfaktura måste bokföras.                                    |
+| En förskottsfaktura och en slutfaktura måste bokföras.                       | Ingen förskottsfaktura måste bokföras.                                    |
 | Skulder för förskottsbetalningen hålls på kontot för förskottsbetalning, inte AP-kontot. | Skulder för förskottsbetalningen hålls på AP-kontot.                  |
 | Leverantörssaldot återspeglar inte förskottsbetalningvärdet genom hela processen.     | Leverantörssaldot återspeglar förskottsbetalningvärdet genom hela processen. |
 | Förskottsbetalningsfakturering är tillgänglig i leverantörsreskontra.                         | Förskottsbetalning är tillgänglig i leverantörsreskontra och kundreskontra.    |
@@ -59,11 +57,41 @@ Förskottsfakturor är en vanlig affärspraxis. En leverantör utfärdar försko
 1.  Inköpsagenten skapar, bekräftar och skickar sedan in en inköpsorder som leverantören har begärt förskottsbetalningen för. Förskottsbetalningvärdet definieras på inköpsordern som en del i avtalet.
 2.  Leverantören skickar in en förskottsfaktura.
 3.  Leverantörsreskontrakoordinatorn registrerar förskottsfakturan mot inköpsorder, och sedan betalas förskottsfakturan.
-4.  När leverantören har levererat varorna eller tjänsterna, och de relaterade leverantörsfakturorna har kommit, använder leverantörsreskontrakoordinatorn förskottsbetalningsbeloppet som redan har betalats mot fakturan.
-5.  Leverantörsreskontrakoordinatorn betalar och kvittar det resterande beloppet på fakturan.
+4.  Leverantören skickar en begäran om betalning (som kallas standardleverantörsfaktura). När leverantören har levererat varorna eller tjänsterna, och de relaterade standard leverantörsfakturorna har kommit, använder leverantörsreskontrakoordinatorn förskottsbetalningsbeloppet som redan har betalats mot standardfakturan.
+5.  Leverantörsreskontrakoordinatorn betalar och kvittar det resterande beloppet på standardfakturan.
 
+## <a name="set-up-parameters-to-enable-the-prepayment-invoicing-process"></a>Ställ in parametrar för att aktivera faktureringsprocessen för förskottsbetalningen
+Ett förskottsbetalningskonto måste definieras på fliken **Inköpsorder** på sidan **Lagerbokföring** (**Lagerhantering \> Inställningar \> Bokföring \> Bokföring**). Förskottsbetalningskontot uppdateras, vanligtvis debiteras, när förskottsbetalningsfakturan bokförs. Saldot på förskottsbetalningskontot återförs när standardfakturan som används på förskottsbetalningsfakturan bokförs. Om du inte kvittar förskottsbetalningsfakturan mot en betalning innan du tillämpar förskottsbetalningsfakturan på standardfakturan, kommer redovisningsposterna från den bokförda förskottsbetalningsfakturan att återföras när standardfakturan bokförs.
 
+Motbokning av sammanfattning konto för kundreskontra definieras i profilen för **leverantörsbokföring**. Klicka på för att definiera standardinläggsprofilen **Leverantörsreskontra \>Inställningar \> Parametrar för leverantörsreskontra \>fliken Redovisning och moms \> Bokföringsprofil med leverantörsfaktura för förskottsbetalning**.
 
+**Policy för förskottsansökan** anger om systemet automatiskt kommer att tillämpa avvecklade förskottsfakturor på den slutliga fakturan som skapades manuellt. Fakturor som skapas med hjälp av en dataenhet refererar inte till **programpolicyn för förskottsbetalning**. Du måste använda kvittade förskottsbetalningsfakturor manuellt på fakturor som har skapats med en dataenhet. Om du vill definiera policyn går du till **Leverantörsreskontra \>Inställningar \> Parametrar för leverantörsreskontra \> fliken Redovisning och moms \> Programpolicyn för förskottsbetalning**. Om fältet **Programpolicyn för förskottsbetalning** anges till **Automatisk**, förskottsfakturan markeras automatiskt för avräkning med den slutliga fakturan. Om fältet är inställt på **Meddelande** visas en visuell indikation av att en förskottsbetalningsfaktura är tillgänglig för användning när den slutgiltiga fakturan skapas.
+
+## <a name="create-a-purchase-order-that-contains-prepayment-invoice-information"></a>Skapa en inköpsorder som innehåller information om förskottsbetalningsfaktura
+När en leverantör säger att han eller hon behöver förskottsbetalning av varor och tjänster som finns på en inköpsorder, måste du definiera förskottsbetalningsvärdet för den associerade inköpsordern. Gå till **Leverantörsreskontra \> Vanliga \> Inköpsorder \> Alla inköpsorder** och hitta leverantörens inköpsorder. I åtgärdsfönstret, välj fliken **Inköp** och välj sedan **Förskottsbetalningar**. Ange information för förskottsfakturan, inklusive en beskrivning, värdet på förskottet, om förskottet är ett fast belopp eller en procentsats och ett förskottskategori-ID. 
+
+Observera att flera förskottsbetalningsdefinitioner på en inköpsorder inte är tillåtna. Om du behöver tillåta flera förskottsbetalningar på en inköpsorder bokför du betalningarna med hjälp av betalningsjournalen istället för en förskottsbetalningsfaktura.
+
+Förskottsbetalningen kan tas bort från inköpsordern om du inte redan har kvittat en betalning mot den bokförda förskottsbetalningsfakturan eller bokfört standardfakturan. Välj om du vill ta bort information om förskottsbetalning från inköpsordern **Leverantörsreskontra \> Vanliga \> Purchase orders \> Alla inköpsorder** och hitta leverantörens inköpsorder. I åtgärdsfönstret, välj fliken **Inköp** och välj sedan **Ta bort betalningar**.
+
+## <a name="create-and-post-a-prepayment-invoice"></a>Skapa och bokföra en förskottsfaktura
+Om du vill registrera leverantörens förskottsbetalningsfaktura går du till sidan **Leverantörsfaktura** genom att välja alternativet **Förskottsbetalningsfaktura** på sidan **Inköpsorder** (**Leverantörsreskontra \> Vanliga \> Inköpsorder \> Alla inköpsorder \> fliken Faktura \> Förskottsbetalningsfaktura**). Ange information om förskottsfakturan, bland annat fakturanumret. Du kan inte ändra kvantiteter för en förskottsfaktura. Om leverantören har fakturerat ett delbelopp av förskottsbetalningsvärdet som har definierats på inköpsordern kan du uppdatera enhetspriset så att det återspeglar delvärdet.
+
+När förskottsfakturan bokförs kommer leverantörsbalansen och förskottskontot att uppdateras. Värde **förskottsbetalningsprogram** på förskottsdefinitionen i inköpsordern kommer också att uppdateras. De ekonomiska standarddimensionsposterna för den bokförda förskottsbetalningsverifikationen tas från huvudinformationen på inköpsordern.
+
+## <a name="post-and-settle-payments-for-the-prepayment-invoice"></a>Bokföra och kvitta betalningar för förskottsbetalningsfakturan
+Fakturan förskottsbetalningen betalas sedan från sidan **Betalningsjournal**. Om du vill öppna betalningsjournaler klickar du på **Leverantörsreskontra \> Journaler \> Betalningar \> Betalningsjournal**. Efter att betalningen har betalats till förskottsfakturan, inköpsorderns värde **Återstående ansökning om förskottsbetalning** kommer att uppdateras.
+
+Innan du bokför standardfakturan för förskottsbetalningsfakturan kan du återföra kvittningen av betalningen från förskottsbetalningsfakturan. Efter att en standardfaktura tillämpats på förskottsfakturan kan betalningsavräkningen dock inte återföras från förskottsfakturan.
+
+## <a name="post-the-standard-vendor-invoice-for-the-purchase-order-and-apply-the-prepayment-invoice-to-the-standard-invoice"></a>Bokför standardleverantörsfakturan för inköpsordern och använd förskottsbetalningsfakturan på standardfakturan
+Registrera standardfakturan som du får från leverantören. Som en del av den här processen kan du tillämpa den kvittade förskottsbetalningsfakturan på leverantörsfakturan så att värdet på fakturan reduceras med beloppet som redan har betalats. Om du använder förskottsbetalningsfakturan på leverantörsfakturan kommer redovisningsposter från förskottsbetalningsfakturan att återföras.
+
+## <a name="application-of-the-prepayment-invoice-after-posting-the-standard-invoice"></a>Tillämpning av förskottsbetalningsfaktura efter bokföring av standardfakturan
+Om du glömmer att tillämpa förskottsbetalningen på standardleverantörsfakturan vid bokningstillfället för leverantörsfakturan kommer den avräknade förskottsbetalningen att vara tillgänglig för andra fakturor från denna leverantör från sidan **Leverantör** (**Leverantörsreskontra \> Vanliga \> Leverantörer \> Alla leverantörer \> fliken Faktura \> Använd**).
+
+## <a name="reversal-of-the-prepayment-application-process"></a>Återföring av ansökningsprocessen för förskottsbetalning
+Om du behöver avaktivera eller omvända tillämpningen av en förskottsfaktura från en standardfaktura väljer du åtgärden **Återför** från sidan **Leverantörer** (**Leverantörsreskontra \> Vanliga \> Leverantörer \> Alla leverantörer \> fliken Faktura \> Återför**). När förskottsbetalningsansökan har återförts kan du använda förskottsbetalningen på en annan standardfaktura. 
 
 
 

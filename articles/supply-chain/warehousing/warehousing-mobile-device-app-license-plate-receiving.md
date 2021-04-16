@@ -1,12 +1,10 @@
 ---
-title: Inleverans av ID-nummer via lagerställeappen
-description: I det här avsnittet beskrivs hur du ställer in lagerställeappen så att du kan använda en mottagningsprocess med ID-nummer som tar emot en process som tar emot fysiskt lager.
+title: ID-nummer tar emot via mobilappen för distributionslagerhantering
+description: I det här avsnittet beskrivs hur du ställer in mobilappen för distributionslagerhantering så att du kan använda en mottagningsprocess med ID-nummer som tar emot en process som tar emot fysiskt lager.
 author: perlynne
-manager: tfehr
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: f921d08572038d2ac53948825a8ca2459103b7f7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8c662da296bea7def443cb166bd3f7e501c9abcc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245164"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823201"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-app"></a>Inleverans av ID-nummer via lagerställeappen
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>ID-nummer tar emot via mobilappen för distributionslagerhantering
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in lagerställeappen så att du kan använda en mottagningsprocess med ID-nummer som tar emot en process som tar emot fysiskt lager.
+I det här avsnittet beskrivs hur du ställer in mobilappen för distributionslagerhantering för lager så att du kan använda en mottagningsprocess med ID-nummer som tar emot en process som tar emot fysiskt lager.
 
 Du kan använda den här funktionen för att snabbt registrera inleveranser av ankommande lager som är relaterat till en leveransavisering (ASN). Systemet skapar automatiskt ett ASN när lagerstyrningsprocesser används för att leverera en överföringsorder. För inköpsorderprocessen kan ett ASN registreras manuellt, eller importeras automatiskt med hjälp av en inkommande ASN-dataenhetsprocess.
 
@@ -72,7 +70,7 @@ Om du vill göra den här funktionen tillgänglig i systemet måste du aktivera 
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Visa eller hoppa över sidan för sammanfattning av inleveranser
 
-Du kan använda funktionen *kontrollera om du vill visa en sida för sammanfattning av inleveranser* för att dra nytta av ett ytterligare detaljerat lagerställeflöde som en del av inleveransprocessen av ID-numret.
+Du kan använda funktionen *kontrollera om du vill visa en sida för sammanfattning av inleveranser* för att dra nytta av ett ytterligare detaljerat mobilappen för distributionslagerhantering som en del av inleveransprocessen av ID-numret.
 
 När den här funktionen är aktiverad visas ett menyalternativ för mobila enheter för inleverans av ID-nummer eller inleverans av ID-nummer och artikelinförsel ger inställningen **sidan för sammanfattning av inleveranser**. Den här inställningen har följande alternativ:
 

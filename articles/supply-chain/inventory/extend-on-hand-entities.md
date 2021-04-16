@@ -2,11 +2,9 @@
 title: Utöka datatabeller för lagerbehållning
 description: Det här avsnittet innehåller ett exempel som visar hur du lägger till utökade fält i vyerna INVENTORSITEONHANDENTITY och INVENTWAREHOUSEONHANDENTITY så att funktionerna i de dataentiteter för lagerbehållning kan fungera med tilläggen.
 author: sherry-zheng
-manager: tfehr
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 0f48e424a9ab3349d3c114ecbd01424005b9a9c6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7863f37e66727e2e80ea8c8b013ee49930e7c684
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219351"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829918"
 ---
 # <a name="extend-inventory-on-hand-data-entities"></a>Utöka datatabeller för lagerbehållning
 

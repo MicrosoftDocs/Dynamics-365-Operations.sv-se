@@ -2,11 +2,9 @@
 title: Budgetöversikt
 description: I stort sett alla företag som använder funktionen ekonomi i Microsoft Dynamics 365 Finance måste kunna skapa rapporter över budget kontra faktiska värden. Den här artikeln beskriver den minimikonfiguration som krävs för att skapa budgetar i Finance and Operations eller läsa in dem från ett tredjepartsprogram.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetParameters
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d0c3f44924e9c49ac93eda728fa7e6197f4a45d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 70428d6603939d8a36c0d3452e6ffdc6e3864865
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249495"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827468"
 ---
 # <a name="budgeting-overview"></a>Budgetöversikt
 

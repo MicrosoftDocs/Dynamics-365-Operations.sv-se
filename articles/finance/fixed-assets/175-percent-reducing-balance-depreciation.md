@@ -2,11 +2,9 @@
 title: 175 procent degressiv avskrivning
 description: Det här ämnet ger en översikt över 175-procentsmetoden för degressiv avskrivning.
 author: saraschi2
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8138003971ace280b08760df718671b1779bd101
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0747c34a4b28340227209adadf367f672deb1ab
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5230356"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827156"
 ---
 # <a name="175-percent-reducing-balance-depreciation"></a>175 procent degressiv avskrivning
 
@@ -66,9 +64,9 @@ Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ 
 
 ## <a name="example-of-175-reducing-balance-depreciation"></a>Exempel på en degressiv avskrivning på 175 %
 
-|                                |        |
+| Fält                          | Värde  |
 |--------------------------------|--------|
-| Anskaffningskostnad               | 11 000 |
+| Anskaffningskostnad               | 11,000 |
 | Skrotvärde                  | 1 000  |
 | Avskrivningsbas              | 10 000 |
 | Antal tjänsteår             | 5      |

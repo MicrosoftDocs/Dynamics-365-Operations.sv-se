@@ -1,12 +1,10 @@
 ---
 title: Livscykeltillstånd för arbetsorder
 description: Det här avsnittet innehåller förklaringar av arbetsorderns livscykeltillstånd i Tillgångshantering.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderLifecycleState, EntAssetWorkOrderLifecycleModel
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e72c56765ad51a4f43fb01d842f5940a4d1a025e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 04e0bb3b1b99299c344a393e72cbe6f380e380af
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248849"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825624"
 ---
 # <a name="work-order-lifecycle-states"></a>Livscykeltillstånd för arbetsorder
 
