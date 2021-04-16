@@ -2,11 +2,9 @@
 title: Synkronisera konton direkt från Sales till kunder i Supply Chain Management
 description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera kontakter från Dynamics 365 Sales till Supply Chain Management.
 author: ChristianRytt
-manager: tfehr
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: adde8975c709b8037a05e8edf6da8574c7b3cc55
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1bf0da5ba5274b61758bc0efdc2f2167327966ad
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5215827"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831660"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Synkronisera konton direkt från Sales till kunder i Supply Chain Management
 

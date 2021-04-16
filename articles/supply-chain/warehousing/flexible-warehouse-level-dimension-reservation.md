@@ -2,11 +2,9 @@
 title: Flexibel reservationspolicy för dimension på lagernivå
 description: I det här avsnittet beskrivs den reservationspolicy för lager som gör det möjligt för företag att sälja batchspårade produkter och köra sin logistik som WMS-aktiverade operationer reservera specifika batchar för kundförsäljningsorder, även om den reservationssekvens som är kopplad till produkterna inte tillåter reservation av specifika batchar.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReservationHierarchy, WHSWorkTrans, WHSWorkInventTrans, WHSInventTableReservationHierarchy, WHSReservationHierarchyCreate, WHSInventTableReservationHierarchy
 audience: Application User
@@ -15,33 +13,33 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b7d855914e59d90dd082c9e9a027604579a2f411
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 17ae3cc788c60917807acece2fc21f6c52d8ffe0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235422"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835688"
 ---
-# <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexibel reservationspolicy för dimension på lagernivå
+# <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexibel reservationspolicy för dimension på distributionslagernivå
 
 [!include [banner](../includes/banner.md)]
 
-När en hierarki för lagerreservationer av typen "batch-under\[plats\]" associeras med produkter kan företag som säljer spårade produkter och kör sin logistik när operationer som har aktiverats för Microsoft Dynamics 365 lagerställehanteringssystem (WMS) inte kan reservera specifika partier för dessa produkter för kundförsäljningsorder.
+När en hierarki för lagerreservationer av typen *batch-under\[plats\]* associeras med produkter kan företag som säljer spårade produkter och kör sin logistik när operationer som har aktiverats för Microsoft Dynamics 365 lagerställehanteringssystem (WMS) inte kan reservera specifika partier för dessa produkter för kundförsäljningsorder.
 
 På samma sätt kan särskilda ID-nummer inte reserveras för produkter på försäljningsorder när dessa produkter associeras med standardhierarkin för reservationer.
 
-I det här avsnittet beskrivs den reservationspolicy för lager som gör det möjligt för dessa företag att reservera specifika batchar eller ID-nummer, även om produkterna är kopplade till reservationshierarkin "Batch-under\[plats\]".
+I det här avsnittet beskrivs den reservationspolicy för lager som gör det möjligt för dessa företag att reservera specifika batchar eller ID-nummer, även om produkterna är kopplade till reservationshierarkin *Batch-under\[plats\]*.
 
 ## <a name="inventory-reservation-hierarchy"></a>Lagerreservationshierarki
 
 Det här avsnittet sammanfattar den befintliga lagerreservationshierarkin.
 
-Lagerreservationshierarkin avgör att när det gäller lagringsdimensioner har efterfrågeordern de obligatoriska dimensionerna för plats, lager och lagerstatus, medan lagerställelogiken är ansvarig för att tilldela en plats till de begärda kvantiteterna och reservera platsen. Med andra ord förväntas en efterfrågeorder i interaktionen mellan efterfrågeorder ordern och lagerställeåtgärder för att ange var ordern måste levereras från (dvs. vilken plats och lagerställe). Lagerstället använder sig av sin logik för att hitta den begärda kvantiteten i dessa lagerlokaler.
+Hierarkin för lagerreservation anger att efterfrågeordern, när det gäller lagringsdimensioner, har de obligatoriska dimensionerna webbplats, lagerställe och lagerstatus. Med andra ord är de obligatoriska dimensionerna alla dimensioner ovanför platsdimensionen i reservationshierarkin, medan lagerställelogiken ansvarar för att tilldela en plats till de begärda kvantiteterna och reservera platsen. I efterfrågeorder i interaktionen mellan efterfrågeorder ordern och lagerställeåtgärder för att ange var ordern måste levereras från (dvs. vilken plats och lagerställe). Lagerstället använder sig av sin logik för att hitta den begärda kvantiteten i dessa lagerlokaler.
 
 Om du vill återspegla affärsverksamhetens driftsmodell, kan spårningsdimensioner (batch- och serienummer) bli mer flexibla. En hierarki för lagerreservationer kan innehålla scenarier där följande villkor gäller:
 
-- Företaget använder sina lageroperationer för att hantera plockning av kvantiteter som har batch- eller serienummer efter det att kvantiteterna har hittats i lagringsutrymmet på lagringsplatsen. Den här modellen kallas ofta för en *Batch-under\[plats\]*. Den används vanligtvis när en produkts batch- eller serienummer-ID inte är viktig för de kunder som gör efterfrågan från det säljande företaget.
-- Om batch- eller serienummer är en del av en kundsorderspecifikation och registreras på efterfrågeorder, begränsas lageroperationerna som hittar kvantiteterna i lagerstället till de specifika nummer som krävs och tillåts inte att ändra dem. Den här modellen kallas en *Batch-ovan\[plats\]*.
+- Företaget använder sina lageroperationer för att hantera plockning av kvantiteter som har batch- eller serienummer *efter* det att kvantiteterna har hittats i lagringsutrymmet på lagringsplatsen. Den här modellen kallas ofta för en *Batch-under\[plats\]* eller *Serie-under\[plats\]*. Den används vanligtvis när en produkts batch- eller serienummer-ID inte är viktig för de kunder som gör efterfrågan från det säljande företaget.
+- Företaget använder sina lageroperationer för att hantera plockning av kvantiteter som har batch- eller serienummer *före* det att kvantiteterna har hittats i lagringsutrymmet på lagringsplatsen. Om batch- eller serienummer är nödvändiga som en del av en kunds beställningsspecifikation, registreras de på beställningen och lageroperationer som hittar kvantiteterna i lagret får inte ändra dem. Den här modellen kallas för en *Batch-över\[plats\]* eller *Serie-över\[plats\]*. Eftersom dimensionerna ovanför platsen är de specifika kraven för de behov som måste uppfyllas fördelas inte lagerställelogiken. Dessa dimensioner **måste** alltid anges på efterfrågeordern eller i relaterade reservationer.
 
 I dessa scenarier är utmaningen att bara en hierarki med lagerreservationer kan tilldelas varje frisläppt produkt. För att WMS ska hantera spårade objekt, efter att hierarkitilldelningen bestämmer när batch- eller serienumret ska reserveras (antingen när efterfrågan beställs eller under lagerplockningsarbetet), kan denna timing inte ändras på ad-hoc-basis.
 
@@ -49,16 +47,16 @@ I dessa scenarier är utmaningen att bara en hierarki med lagerreservationer kan
 
 ### <a name="business-scenario"></a>Affärsscenario
 
-I det här scenariot använder ett företag en lagerstrategi där färdiga varor spåras efter batchnummer. Det här företaget använder också WMS-arbetsbelastning. Eftersom den här arbetsbelastningen har en välutrustad logik för planering och transport av lagerplocknings- och leveransoperationer för batchaktiverade artiklar, associeras de flesta av de färdiga artiklarna med en batch-under\[plats\] lagerreservationshierarki. Fördelen med den här typen av driftsinställningar är att beslut (som är effektiva reservationsbeslut) om vilka batchar som ska plockas och var de ska skjutas upp tills lagerplockningsoperationer har startat. De görs inte när kundens order har placerats.
+I det här scenariot använder ett företag en lagerstrategi där färdiga varor spåras efter batchnummer. Det här företaget använder också WMS-arbetsbelastning. Eftersom den här arbetsbelastningen har en välutrustad logik för planering och transport av lagerplocknings- och leveransoperationer för batchaktiverade artiklar, associeras de flesta av de färdiga artiklarna med en *batch-under\[plats\]* lagerreservationshierarki. Fördelen med den här typen av driftsinställningar är att beslut (som är effektiva reservationsbeslut) om vilka batchar som ska plockas och var de ska skjutas upp tills lagerplockningsoperationer har startat. De görs inte när kundens order har placerats.
 
-Även om reservationshierarkin "batch-under\[plats\]" "betjänar företagets affärsmål", kräver många av företagets etablerade kunder samma batch som de tidigare köpte när de beställer om produkter. Därför söker företaget efter flexibilitet på det sätt som reglerna för batchreservation hanteras, så att, beroende på kundernas efterfrågan för samma artikel, uppstår följande problem.
+Även om reservationshierarkin *batch-under\[plats\]* "betjänar företagets affärsmål", kräver många av företagets etablerade kunder samma batch som de tidigare köpte när de beställer om produkter. Därför söker företaget efter flexibilitet på det sätt som reglerna för batchreservation hanteras, så att, beroende på kundernas efterfrågan för samma artikel, uppstår följande problem.
 
 - Ett batchnummer kan registreras och reserveras när ordern görs av försäljningsbehandlaren och kan inte ändras under lageroperationer och/eller tas av andra behov. Det här beteendet garanterar att det batchnummer som beställs levereras till kunden.
 - Om batchnumret inte är viktigt för kunden, kan lageroperationerna bestämma ett batchnummer under plockningsarbetet efter att registrering och reservation av försäljningsordern har utförts.
 
 ### <a name="allowing-reservation-of-a-specific-batch-on-the-sales-order"></a>Tillåta reservation av en specifik batch på försäljningsordern
 
-För att tillgodose önskad flexibilitet i batchreservationens beteende för artiklar som är associerade med en "Batch-under\[plats\]" lagerreservationshierarki måste chefer markera kryssrutan **Tillåt reservation av efterfrågeorder** för nivån **Batch-nummer** på sidan **lagerreservationshierarkier**.
+För att tillgodose önskad flexibilitet i batchreservationens beteende för artiklar som är associerade med en *Batch-under\[plats\]* lagerreservationshierarki måste chefer markera kryssrutan **Tillåt reservation av efterfrågeorder** för nivån **Batch-nummer** på sidan **lagerreservationshierarkier**.
 
 ![Göra lagerreservationshierarkin flexibel](media/Flexible-inventory-reservation-hierarchy.png)
 
@@ -69,25 +67,25 @@ När nivån **Batch-nummer** i hierarkin väljs kommer alla dimensioner över de
 >
 > **Batchnummer** och **ID-nummer** är de enda nivåerna i hierarkin som är öppen för den flexibla reservationsprincipen. Med andra ord kan du inte markera kryssrutan **Tillåt reservation på efterfrågeorder** för nivån **Plats** eller **Serienummer**.
 >
-> Om din reservationshierarki innehåller dimensionen för serienummer (som alltid måste vara under nivån **Batch-nummer**), och om du har aktiverat batch-specifik reservation för batch-numret kommer systemet att fortsätta hantera reservations- och plockningsoperationer för serienummer baserat på de regler som gäller för reservationsprincipen "Serie-under\[plats\]".
+> Om din reservationshierarki innehåller dimensionen för serienummer (som alltid måste vara under nivån **Batch-nummer**), och om du har aktiverat batch-specifik reservation för batch-numret kommer systemet att fortsätta hantera reservations- och plockningsoperationer för serienummer baserat på de regler som gäller för reservationsprincipen *Serie-under\[plats\]*.
 
-Du kan när som helst tillåta batch-specifik reservation för en befintlig "batch-under\[plats\]" reservationshierarki i distributionen. Den här ändringen påverkar inte reservationer och öppna jobb i lagerställe som har skapats innan ändringen gjordes. Men kryssrutan **Tillåt reservation på efterfrågeorder** kan inte vara avmarkerad om lagertransaktioner för utleveranstyper **Reserverat beställt**, **Fysiskt reserverat** eller **Beställt** finns för en eller flera artiklar som är associerade med den reservationshierarkin.
+Du kan när som helst tillåta batch-specifik reservation för en befintlig *batch-under\[plats\]* reservationshierarki i distributionen. Den här ändringen påverkar inte reservationer och öppna jobb i lagerställe som har skapats innan ändringen gjordes. Men kryssrutan **Tillåt reservation på efterfrågeorder** kan inte vara avmarkerad om lagertransaktioner för utleveranstyper **Reserverat beställt**, **Fysiskt reserverat** eller **Beställt** finns för en eller flera artiklar som är associerade med den reservationshierarkin.
 
 > [!NOTE]
 > Om en artikels befintliga reservationshierarki inte tillåter kommandospecifikation på ordern kan du tilldela om den till en reservationshierarki som tillåter batch-specifikation, förutsatt att hierarkinivåstrukturen är densamma i båda hierarkierna. Använd funktionen **ändra reservationshierarki för artiklar** för att utföra omtilldelningen. Den här ändringen kan vara relevant när du vill förhindra flexibel batch-reservation för en delmängd av batch-spårade artiklar, men tillåter den för resten av produktportföljen.
 
-Oavsett om du har markerat kryssrutan **Tillåt reservation på efterfrågeorder** om du inte vill reservera ett specifikt batchnummer för artikeln på en orderrad, gäller standardoperationslogiken för lagerställe som är giltig för en "Batch-under\[location\]" reservationhierarkin.
+Oavsett om du har markerat kryssrutan **Tillåt reservation på efterfrågeorder** om du inte vill reservera ett specifikt batchnummer för artikeln på en orderrad, gäller standardoperationslogiken för lagerställe som är giltig för en *Batch-under\[location\]* reservationhierarkin.
 
 ### <a name="reserve-a-specific-batch-number-for-a-customer-order"></a>Reservera ett specifikt batchnummer för en kundorder
 
-När en batch-spårad artikels "Batch-under\[plats\]" lagerreservationshierarki har ställts in för att tillåta reservation av specifika batchnummer på försäljningsorder, kan behandlare av försäljningsorder ta kundorder för samma artikel på något av följande sätt, beroende på kundens begäran:
+När en batch-spårad artikels *Batch-under\[plats\]* lagerreservationshierarki har ställts in för att tillåta reservation av specifika batchnummer på försäljningsorder, kan behandlare av försäljningsorder ta kundorder för samma artikel på något av följande sätt, beroende på kundens begäran:
 
 - **Ange orderdetaljer utan att ange ett batchnummer** – det här tillvägagångssättet ska användas när produktens batch-specifikation inte är viktig för kunden. Alla befintliga processer som associeras med hantering av en order av den här typen i systemet förblir oförändradet. Det behövs ingen ytterligare hänsyn till användarna.
 - **Ange orderdetaljer och reservera ett specifikt batchnummer** – den här metoden bör användas när kunden begär en specifik batch. Vanligtvis begär kunder en särskild batch när de ombeställer en produkt som de tidigare har köpt. Denna typ av batch-specifik reservation kallas för *orderallokerad reservation*.
 
 Följande regler gäller när kvantiteter bearbetas och ett batchnummer allokeras till en specifik order:
 
-- Om du vill tillåta reservation av ett specifikt batchnummer för en artikel under reservationsprincipen "Batch-under\[plats\]" måste systemet reservera alla dimensioner via platsen. I detta intervall ingår vanligtvis dimensionen registreringsskylt.
+- Om du vill tillåta reservation av ett specifikt batchnummer för en artikel under reservationsprincipen *Batch-under\[plats\]* måste systemet reservera alla dimensioner via platsen. I detta intervall ingår vanligtvis dimensionen registreringsskylt.
 - Platsdirektiv används inte när plockningsarbete skapas för en försäljningsrad som använder orderallokerad batch-reservation.
 - Under lagerbearbetning av arbete för orderallokerade batchar, tillåts varken användaren eller systemet att ändra batchnumret. (Bearbetningen omfattar undantagshantering.)
 
@@ -131,19 +129,19 @@ För det här exemplet måste demonstrationsdata vara installerade och du måste
 2. Välj **Ny**.
 3. I försäljningsorderns rubrik, i fältet **Kundkonto** ange **US-003**.
 4. Lägg till en rad för den nya artikeln och ange **10** som kvantitet. Se till att fältet **Lagerställe** anges till **24**.
-5. På snabbfliken **försäljningsorderrader** välj **lager** och sedan i gruppen **underhåll** välj **Batch-reservation**. Sidan **Batch-reservation** visar en lista över batchar som är tillgängliga för reservation för orderraden. I det här exemplet visas ett antal på **20** för batchnummer **B11** och kvantiteten **10** för batchnummer **B22**. Observera att du inte kan komma åt sidan **Batch-reservation** från en rad om den raden är associerad med "Batch-under\[plats\]" reservationshierarki om den inte har ställts in för att tillåta batch-specifik reservation.
+5. På snabbfliken **försäljningsorderrader** välj **lager** och sedan i gruppen **underhåll** välj **Batch-reservation**. Sidan **Batch-reservation** visar en lista över batchar som är tillgängliga för reservation för orderraden. I det här exemplet visas ett antal på **20** för batchnummer **B11** och kvantiteten **10** för batchnummer **B22**. Observera att du inte kan komma åt sidan **Batch-reservation** från en rad om den raden är associerad med *Batch-under\[plats\]* reservationshierarki om den inte har ställts in för att tillåta batch-specifik reservation.
 
     > [!NOTE]
     > Om du vill reservera en specifik batch för en försäljningsorder måste du använda sidan **Batch-reservation**.
     >
-    > Om du anger batchnumret direkt på försäljningsorderraden, kommer systemet att fungera som om du har angett ett specifikt batchvärde för ett objekt som omfattas av "Batch-under\[plats\]" reservationspolicy. När du sparar raden visas ett varningsmeddelande. Om du bekräftar att batchnumret ska anges direkt på orderraden hanteras inte raden av den normala lagerstyrningslogiken.
+    > Om du anger batchnumret direkt på försäljningsorderraden, kommer systemet att fungera som om du har angett ett specifikt batchvärde för ett objekt som omfattas av *Batch-under\[plats\]* reservationspolicy. När du sparar raden visas ett varningsmeddelande. Om du bekräftar att batchnumret ska anges direkt på orderraden hanteras inte raden av den normala lagerstyrningslogiken.
     >
-    > Om du reserverar kvantiteten från sidan **Reservation** kommer ingen specifik batch att reserveras och körningen av lagerställeoperationer för raden följer reglerna som är tillämpliga under reservationspolicyn "Batch-under\[plats\]".
+    > Om du reserverar kvantiteten från sidan **Reservation** kommer ingen specifik batch att reserveras och körningen av lagerställeoperationer för raden följer reglerna som är tillämpliga under reservationspolicyn *Batch-under\[plats\]*.
 
-    Den här sidan fungerar vanligtvis på samma sätt och interagerar med artiklar som har en associerad reservationssekvens för typen "Batch-ovan\[plats\]". Följande undantag gäller emellertid:
+    Den här sidan fungerar vanligtvis på samma sätt och interagerar med artiklar som har en associerad reservationssekvens för typen *Batch-ovan\[plats\]*. Följande undantag gäller emellertid:
 
     - Snabbfliken **batchnummer för källrad** visar de batchnummer som har reserverats för orderraden. Batchvärdet i rutnätet visas under hela orderradens uppfyllandecykel, inklusive faserna för lagerbearbetning. På snabbfliken **översikt** visas däremot en reservation på ordinarie orderrad (dvs. reservation som görs för dimensionerna över nivån **plats**) i rutnätet upp till punkten när lagerarbete skapas. Arbetsenheten tar över radreservationen och radreservationen visas inte längre på sidan. Snabbfliken **batchnummer för källrader** används för att garantera att försäljningsorderns handläggare kan visa de batchnummer som har utfästs till kundens order när som helst under livscykeln, upp till fakturering.
-    - Förutom att reservera en viss batch kan han eller hon manuellt välja batchens specifika plats och licensskylt i stället för att låta systemet automatiskt välja dem. Denna kapacitet är relaterad till designen av mekanismen för orderallokerad batch-reservation. Som nämnts tidigare, när ett specifikt batchnummer reserveras för en artikel under reservationsprincipen "Batch-under\[plats\]" måste systemet reservera alla dimensioner via platsen. Därför kommer lagerstället att ha samma lagringsdimensioner som har reserverats av de användare som arbetade med ordern, och den kanske inte alltid representerar den placering av artikellagring som är praktiskt eller till och med möjlig för plockningsoperationer. Om orderhandläggarna känner till begränsningarna i lagerställena, kanske de vill välja de specifika platserna och licensskyltarna manuellt när de reserverar en batch. I det här fallet måste användaren använda funktionen för **visningsdimensioner** i sidhuvudet och måste lägga till platsen och licensskylten i rutnätet på snabbfliken **översikt**.
+    - Förutom att reservera en viss batch kan han eller hon manuellt välja batchens specifika plats och licensskylt i stället för att låta systemet automatiskt välja dem. Denna kapacitet är relaterad till designen av mekanismen för orderallokerad batch-reservation. Som nämnts tidigare, när ett specifikt batchnummer reserveras för en artikel under reservationsprincipen *Batch-under\[plats\]* måste systemet reservera alla dimensioner via platsen. Därför kommer lagerstället att ha samma lagringsdimensioner som har reserverats av de användare som arbetade med ordern, och den kanske inte alltid representerar den placering av artikellagring som är praktiskt eller till och med möjlig för plockningsoperationer. Om orderhandläggarna känner till begränsningarna i lagerställena, kanske de vill välja de specifika platserna och licensskyltarna manuellt när de reserverar en batch. I det här fallet måste användaren använda funktionen för **visningsdimensioner** i sidhuvudet och måste lägga till platsen och licensskylten i rutnätet på snabbfliken **översikt**.
 
 6. På sidan **Batch-reservation** välj raden för batch **B11** och välj sedan **reservera rad**. Det finns ingen särskild logik för att tilldela platser och licensskyltarna vid automatisk reservation. Du kan ange kvantiteten manuellt i fältet **reservation**. Observera att snabbfliken **batchnummer för källrad**, batch **B11** visas som **utfäst**.
 
@@ -172,7 +170,7 @@ För det här exemplet måste demonstrationsdata vara installerade och du måste
     Det arbete som hanterar plockoperationen för batchkvantiteter som har bekräftats till försäljningsorderraden har följande egenskaper:
 
     - Om du vill skapa arbete använder systemet arbetsmallar men inte platsdirektiv. Alla standardinställningar som definieras för arbetsmallar, t.ex. ett maximalt antal plockningsrader eller en specifik måttenhet, används för att bestämma när nytt arbete ska skapas. Reglerna som är kopplade till platsdirektiv för identifiering av plockningsplatser beaktas dock inte eftersom den order som genomförts redan anger alla lagerdimensioner. Dessa lagerdimensioner inkluderar dimensionerna på lagerställets lagernivå. Därför ärver arbetet dessa dimensioner utan att behöva konsultera platsdirektiv.
-    - Batchnumret visas inte på plockningsraden (som är fallet för den arbetsrad som skapas för en artikel som har en motsvarande "batch-ovan\[plats\]" reservationshierarki.) I stället visas batchnummer från och alla andra lagringsdimensioner på arbetsradens jobblagertransaktion som refereras från de associerade lagertransaktionerna.
+    - Batchnumret visas inte på plockningsraden (som är fallet för den arbetsrad som skapas för en artikel som har en motsvarande *batch-ovan\[plats\]* reservationshierarki.) I stället visas batchnummer från och alla andra lagringsdimensioner på arbetsradens jobblagertransaktion som refereras från de associerade lagertransaktionerna.
 
         ![Lagerställets lagertransaktion för arbete som härrör från en reservation som har genomförts av order](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
@@ -215,7 +213,7 @@ Du kan aktivera reservation av ID-nummer på ordern när som helst i distributio
 
 Även om kryssrutan **Tillåt reservation på efterfrågeorder** har markerat nivån **ID-nummer** är det fortfarande möjligt att *inte* reservera ett specifikt ID-nummer på order. I det här fallet gäller standardlogiken för lageråtgärder som är giltig för den här reservationshierarkin.
 
-Om du vill reservera ett visst ID-nummer måste du använda en process med [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md). I appen kan du göra denna reservation direkt från en försäljningsorder med hjälp av alternativet **orderallokerade reservation av ID-nummer** för kommandot **Öppna i Excel**. I enhets data som öppnas i Excel-tillägget måste du ange följande reservationsrelaterade data och sedan välja **publicera** för att skicka tillbaka data till Supply Chain Management:
+Om du vill reservera en specifik licens måste du använda en process för [Öppen dataprotokoll (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md). I programmet kan du göra reservationen direkt från en försäljningsorder genom att använda alternativet **orderallokerade reservation av ID-nummer** i kommandot **Öppna i Excel**. I enhets data som öppnas i Excel-tillägget måste du ange följande reservationsrelaterade data och sedan välja **publicera** för att skicka tillbaka data till Supply Chain Management:
 
 - Referens (endast *försäljningsordern* värde stöds.)
 - Ordernummer (värdet kan härledas från partiet.)
@@ -409,7 +407,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Ja</td>
 <td>
 <ol>
-<li>Välj menyalternativ <strong>Åsidosätt plats</strong> i lagerställeappen när du startar plockningsarbete.</li>
+<li>Välj menyalternativ <strong>Åsidosätt plats</strong> i mobilappen för distributionslagerhantering när du startar plockningsarbete.</li>
 <li>Välj <strong>föreslå</strong>.</li>
 <li>Bekräfta den nya platsen som föreslås baserat på tillgängligheten för batchkvantitet.</li>
 </ol>
@@ -420,13 +418,13 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <li>Om kvantiteten finns på fler än en registreringsskylt på den nya platsen, delas den ursprungliga plockningsraden på flera rader för att matcha varje registreringsskylt.</li>
 </ul>
 </td>
-<td>Inte tillämpligt</td>
+<td>Inte aktuellt</td>
 </tr>
 <tr>
 <td>Nr</td>
 <td>
 <ol>
-<li>Välj menyalternativ <strong>Åsidosätt plats</strong> i lagerställeappen när du startar plockningsarbete.</li>
+<li>Välj menyalternativ <strong>Åsidosätt plats</strong> i mobilappen för distributionslagerhantering när du startar plockningsarbete.</li>
 <li>Ange en plats manuellt.</li>
 </ol>
 </td>
@@ -451,10 +449,10 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <tbody>
 <tr>
 <td>Alternativet <strong>Tillåt delning av arbete</strong> är aktiverat på menyalternativet för mobil enhet.</td>
-<td>Inte tillämpligt</td>
+<td>Inte aktuellt</td>
 <td>
 <ol>
-<li>Välj menyalternativet <strong>Full</strong> i lagerställeappen när du bearbetar plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Full</strong> i mobilappen för distributionslagerhantering när du bearbetar plockningsarbete.</li>
 <li>I fältet <strong>Plockkvantitet</strong> ange den delkvantitet för att ange den fullständiga kapaciteten.</li>
 </ol>
 </td>
@@ -529,7 +527,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Ja</td>
 <td>
 <ol>
-<li>Starta en rörelse på lagerställeappen.</li>
+<li>Starta en rörelse på mobilappen för distributionslagerhantering.</li>
 <li>Ange "från-" och "till"-platser.</li>
 </ol></td>
 <td>
@@ -645,7 +643,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Ja</td>
 <td>
 <ol>
-<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerställeappen när du utför plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i mobilappen för distributionslagerhantering när du kör plockningsarbete.</li>
 <li>I fältet <strong>Plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>Orsak</strong> anger du <strong>Ingen omallokering</strong>.</li>
 </ol>
@@ -674,7 +672,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Ja</td>
 <td>
 <ol>
-<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerställeappen när du utför plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i mobilappen för distributionslagerhantering när du kör plockningsarbete.</li>
 <li>I fältet <strong>Plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>Orsak</strong> anger du <strong>Ingen omallokering</strong>.</li>
 </ol>
@@ -698,7 +696,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Ja</td>
 <td>
 <ol>
-<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerställeappen när du utför plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i mobilappen för distributionslagerhantering när du kör plockningsarbete.</li>
 <li>I fältet <strong>Kort plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>orsak</strong> väljer du <strong>Kort plockning med manuell omallokering</strong>.</li>
 <li>Välj plats/registreringsskylt i listan.</li>
@@ -724,7 +722,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Nr</td>
 <td>
 <ol>
-<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerställeappen när du utför plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i mobilappen för distributionslagerhantering när du kör plockningsarbete.</li>
 <li>I fältet <strong>Kort plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>orsak</strong> väljer du <strong>Kort plockning med manuell omallokering</strong>.</li>
 </ol>
@@ -737,7 +735,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Nr</td>
 <td>
 <ol>
-<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerställeappen när du utför plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i mobilappen för distributionslagerhantering när du kör plockningsarbete.</li>
 <li>I fältet <strong>Kort plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>orsak</strong> väljer du <strong>Kort plockning med manuell omallokering</strong>.</li>
 <li>Välj plats/registreringsskylt i listan.</li>
@@ -758,10 +756,10 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 </tr>
 <tr>
 <td>Ett arbetsundantag från typen <strong>Kort plockning</strong> konfigureras där <strong>Omallokering av artikel</strong> = <strong>Automatisk</strong>, <strong>Justera lager</strong> = <strong>Ja/Nej</strong> och <strong>Ta bort reservationer</strong> = <strong>Ja/Nej</strong>.</td>
-<td>Inte tillämpligt</td>
+<td>Inte aktuellt</td>
 <td>
 <ol>
-<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerställeappen när du utför plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i mobilappen för distributionslagerhantering när du kör plockningsarbete.</li>
 <li>I fältet <strong>Kort plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>orsak</strong> väljer du <strong>Kort plockning med automatisk omallokering</strong>.</li>
 </ol>
@@ -853,6 +851,14 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
     - Överföringsorder och plockning av råmaterial
 
 - Behållarens konsolideringsregel för paketering av direktivenhet har begränsningar. För orderallokerade reservationer rekommenderar vi att du inte använder uppbyggnadsmallar för behållare där fältet **Packa efter enhet för direktiv** är aktiverad. I den aktuella designen används inte platsdirektiv när lagerarbete skapas. Det innebär att endast den minsta enheten i enhetssekvensgruppen (lagerenheten) används under påfyllnadssteget skapande av behållare.
+
+## <a name="see-also"></a>Se även
+
+- [Batchnummer i Lagerstyrning](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
+- [Reservera samma batch för en försäljningsorder](../sales-marketing/reserve-same-batch-sales-order.md)
+- [Plocka den äldsta batchen på en mobil enhet](pick-oldest-batch.md)
+- [Bekräftelse av batch och ID-nummer](batch-and-license-plate-confirmation.md)
+- [Felsöka reservationer i distributionslagerhantering](troubleshoot-warehouse-reservations.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

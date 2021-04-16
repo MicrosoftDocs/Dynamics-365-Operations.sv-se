@@ -2,11 +2,9 @@
 title: Felsöka distributionslagerarbete
 description: I det här avsnittet beskrivs hur du åtgärdar vanliga problem som kan uppstå när du arbetar med lagerarbete i Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b1814f7b23efda2cabdb7bfc7bea4de6e3d6ec2f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 08cc074fe851b952ebfc942ae3d1cb05240d3b91
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5237069"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837451"
 ---
 # <a name="troubleshoot-warehouse-work"></a>Felsöka distributionslagerarbete
 
@@ -40,11 +38,11 @@ Du kan inte flytta ett ID-nummer genom att använda menyartikeln **Rörelse** om
 
 Det här problemet kommer att åtgärdas genom ändringar som distribueras i [KB-4571546](https://fix.lcs.dynamics.com/Issue/Details?kb=4571546&bugId=467880&dbType=3&qc=5b46d7faa9cc326cebfe9854cb30be8ea30b21ef33d3572c325fbb21202de687). Dessa ändringar gör fältet **serienummer** valfritt när en tom inleverans och en tom utleverans är tillåten.
 
-## <a name="i-receive-the-following-error-message-in-the-warehouse-app-when-i-process-movements-the-inventory-owner-1-is-not-allowed-in-this-process"></a>Jag får följande felmeddelande i modulen lagerställe när jag bearbetar transporter: "lagrets ägare %1 är inte tillåten i den här processen".
+## <a name="i-receive-the-following-error-message-in-the-warehouse-management-mobile-app-when-i-process-movements-the-inventory-owner-1-is-not-allowed-in-this-process"></a>Jag får följande felmeddelande i modulen mobilappen för distributionslagerhantering när jag bearbetar transporter: "lagrets ägare %1 är inte tillåten i den här processen".
 
 ### <a name="issue-description"></a>Problembeskrivning
 
-Spårningsdimensionen **Ägare** spårningsdimension saknas när distributionslagerappen används för att göra rörelser. En vanlig lageröverföringsjournal från klienten Supply Chain Management visas som avsett arbete och kan endast bokföras om dimensionen **Ägare** fylls i.
+Spårningsdimensionen **Ägare** spårningsdimension saknas när mobilappen för distributionslagerhantering används för att göra rörelser. En vanlig lageröverföringsjournal från klienten Supply Chain Management visas som avsett arbete och kan endast bokföras om dimensionen **Ägare** fylls i.
 
 ### <a name="issue-resolution"></a>Problemlösning
 

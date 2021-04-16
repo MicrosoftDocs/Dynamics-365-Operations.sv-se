@@ -2,11 +2,9 @@
 title: Ställ in ett betalsätt för ISO20022-kreditöverföringar
 description: I denna procedur visas hur du ställer in leverantörbetalsättet för ISO20022-kreditöverföring eller någon annan betalningstyp med hjälp av elektronisk rapportering, om du vill skapa en fil.
 author: mrolecki
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendPaymMode
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8ae91ce361ab3e4e799ec82ca9e05c9e11d81ed1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 643be31db625d0db12f1df18b9e797013da98ece
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5256580"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832482"
 ---
 # <a name="set-up-method-of-payment-for-iso20022-credit-transfer"></a>Ställ in ett betalsätt för ISO20022-kreditöverföringar
 

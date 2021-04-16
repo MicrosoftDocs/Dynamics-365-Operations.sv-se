@@ -2,7 +2,6 @@
 title: Hemtagningskostnad jämfört med Transporthantering
 description: Microsoft Dynamics 365 Supply Chain Management tillhandahåller två olika moduler för att arbeta med transport, Transporthantering (TMS) och Hemtagningskostnad. I det här avsnittet sammanfattas de funktioner som de två modulerna har gemensamt och skillnaderna mellan dem beskrivs.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
@@ -15,17 +14,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9349537754d7e6fd0e278c55d5d762267953800c
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500728"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833867"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Hemtagningskostnad jämfört med Transporthantering
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management tillhandahåller två olika moduler för att arbeta med transport, **Transporthantering** (TMS) och **Hemtagningskostnad**. I det här avsnittet sammanfattas de funktioner som de två modulerna har gemensamt och skillnaderna mellan dem beskrivs. Du kan använda den här informationen för att avgöra vilken modul som passar bäst för din verksamhet. Du kanske tycker att vissa av affärsrutinerna fungerar bättre med TMS, medan andra fungerar bäst med hemtagningskostnad. Därefter kan du, beroende på företagets verksamhetsbehov, välja att använda en modul exklusivt, eller kombinera de två modulerna.
 
@@ -158,15 +156,15 @@ Både TMS och en hemtagningskostnad innehåller funktioner för hantering av inl
 
 ### <a name="tms-receiving-by-container-features"></a>TMS inleverans med behållare, funktioner
 
-TMS stöd för inkommande ASN, alla varianter av mottagning via lagerställeappen samt alla mottagningsmetoder via Supply Chain Management-klienten.
+TMS stöd för inkommande ASN, alla varianter av mottagning via mobilappen för distributionslagerhantering samt alla mottagningsmetoder via Supply Chain Management-klienten.
 
 ### <a name="landed-cost-receiving-by-container-features"></a>Hemtagningskostnad inleverans med behållare, funktioner
 
 För att stödja mottagning av behållare skapar hemtagningskostnad poster för leveransbehållare och associerar inköpsorder med en specifik behållare genom att använda dess behållar-ID. Omkostnader kan sedan tillämpas på den leveransbehållaren och brytas ned så att de associeras med relevanta inköpsorder.
 
-Behållare i hemtagningskostnad kan tas emot via en ny typ av inleverans som kallas för *inleverans av varor på väg*, via införseljournaler eller via mottagning av mobila enheter. När införseljournaler används kan kvantiteterna initieras från order för varorna på väg eller från de ursprungliga inköpsorderraderna i behållaren. Hemtagningskostnad tillhandahåller två arbetstyper som kan tas emot via lagerställeappen.
+Behållare i hemtagningskostnad kan tas emot via en ny typ av inleverans som kallas för *inleverans av varor på väg*, via införseljournaler eller via mottagning av mobila enheter. När införseljournaler används kan kvantiteterna initieras från order för varorna på väg eller från de ursprungliga inköpsorderraderna i behållaren. Hemtagningskostnad tillhandahåller två arbetstyper som kan tas emot via mobilappen för distributionslagerhantering.
 
-Hemtagningskostnad ger inte något ASN för elektronisk inleverans av varor. Det har inte stöd för lagerställe appflöden som bearbetar inläsning, inleverans av ID-nummer eller inleverans mixat ID-nummer.
+Hemtagningskostnad ger inte något ASN för elektronisk inleverans av varor. Det har inte stöd för flöden mobilappen för distributionslagerhantering som bearbetar inläsning, inleverans av ID-nummer eller inleverans mixat ID-nummer.
 
 ## <a name="rate-shopping-by-vendor"></a>Fraktprissökning per leverantör
 
