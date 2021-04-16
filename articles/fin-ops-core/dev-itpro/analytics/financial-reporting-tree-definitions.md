@@ -1,27 +1,26 @@
 ---
 title: Rapportträddefinitioner i ekonomiska rapporter
 description: Det här avsnittet beskriver definitioner av rapportträd. En definition av rapportträd är en rapportkomponent som definierar en organisations struktur.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/07/2019
+author: jinniew
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 367df467d20fb7c60821c9de1f86758196f4faf3
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 42612a14b81f78199aa5678d6f8525e4bd87ca8c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568785"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819948"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportträddefinitioner i ekonomiska rapporter
 
@@ -74,7 +73,7 @@ Om du vill skapa en rapportträddefinition, följ dessa steg:
     | Inkludera/teckenbefattning       | Det här avsnittet visar dimensionerna som definieras i ekonomiska data och antalet tecken i det längsta värdet som definieras för varje dimension. Välj kryssrutan för en dimension om du vill inkludera dimensionen i rapportträdhierarkin. |
     | Segmentera hierarkin och intervaller     | Det här avsnittet visar dimensionshierarkin. Du kan flytta dimensionerna i listan om du vill ändra deras rapporteringorder. Du kan ange många olika värden för varje dimension i fälten **Från dimension** och **Till dimension**. Om du inte anger ett intervall kommer alla dimensionsvärden att infogas i rapportträdet.<blockquote>[!NOTE] Om du använder fler än en dimension är det bara dimensionskombinationer till vilka något har bokförts som returneras i resultatet.</blockquote> |
 
-    Om du vill se en skärmbild som visar ett exempel på dialogrutan **Infoga rapportenheter från dimensioner** kan du titta i avsnittet "Exempel på Infoga rapportenheter från dialogrutan dimensioner" senare i den här artikeln.
+    För en illustration som visar ett exempel på dialogrutan **Infoga rapportenheter från dimensioner** kan du titta i avsnittet "Exempel på Infoga rapportenheter från dialogrutan dimensioner" senare i den här artikeln.
 
 5. Om du vill skapa fler segment (såsom dela ett segment i två kortare delar) ska du klicka på den rätta platsen i fältet **Teckenposition** och sedan klicka på **Dela segment**.
 6. Om du vill slå ihop två segment till ett klickar du på någon av segmentrutorna som ska slås ihop och sedan på **Kombinera segment**.
@@ -186,23 +185,23 @@ Här är strukturen för rapportenheter i följande rapportträd:
 - Detaljrapportenheterna på lägsta nivån (Home Sales, Auto Sales, Client Services och Operations) representerar avdelningar i ekonomiska data. Dessa rapportenheter är det skuggade i området i diagrammet.
 - Summeringsenheterna på högre nivå sammanfattar informationen från detaljenheterna.
 
-[![ContosoEntertainmentSummaryReportStructure](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Contoso- sammanfattningsrapportstruktur - exempel 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Rapportenhetsstruktur – Exempel 2
 
 Följande diagram visar ett rapportträd för en organisationsstruktur som är uppdelad efter affärsfunktioner.
 
-[![summaryofallunitscontoso](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Contoso- sammanfattningsrapportstruktur - exempel 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Exempel på dialogrutan Infoga Rapportenheter från Dimensioner
 
 Det här illustrationen visar ett exempel på dialogrutan **Infoga Rapportenheter från Dimensioner**. I det här exemplet returnerar resultaten en kombination av affärsenheter, kostnadsställen och avdelningar.
 
-[![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Infoga rapportenheter](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 Den resulterande rapportträdsdefinitionen är sorterad efter affärsenheter därefter efter kostnadsställe och sedan efter avdelning. Dimensionen för den femte rapportenheten är **Affärsenhet = \[001\], Kostnadsställe =\[\], Avdelning = \[022\]** och identifierar en rapportenhet för konton som är specifika för affärsenheten 001 och avdelningen 022.
 
-[![Rapporteringsträd](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Illustration av rapportträdet](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Exempel på rulla upp data
 
@@ -210,11 +209,11 @@ Följande exempel visar möjlig information som används i en rapportträddefini
 
 #### <a name="example-1"></a>Exempel 1
 
-[![MutliCompanyRollUp](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Sammanslagning av flera företag](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>Exempel 2
 
-[![CrossCompanyDepartmentRollUp](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Sammanslagning av avdelning för flera företag](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

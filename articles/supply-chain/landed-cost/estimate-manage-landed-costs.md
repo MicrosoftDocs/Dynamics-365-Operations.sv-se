@@ -2,7 +2,6 @@
 title: Uppskatta och hantera hemtagningskostnader
 description: I systemet används dina automatiska kostnadsinställningar för att beräkna en uppskattning av hemtagningskostnaden. I det här avsnittet beskrivs hur du definierar olika scenarier när du vill leverera en mer korrekt uppskattning.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/26/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-26
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: cbd652f2b29f7a78ad9e4e1d3dda4a3ef8a9f3f3
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 510f5fc4910dde2f91fe2d666abb23a9bd7381f1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501280"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823443"
 ---
 # <a name="estimate-and-manage-landed-costs"></a>Uppskatta och hantera hemtagningskostnader
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 I systemet används dina [automatiska kostnadsinställningar](auto-cost-setup.md) för att beräkna en uppskattning av hemtagningskostnaden. Dessutom kan du definiera olika scenarier när du vill leverera en mer korrekt uppskattning. Dessa scenarier lagras. Därför kan du granska dem senare och jämföra dem med faktiska värden i en rapport. Du kan även uppdatera artikelpriset.
 

@@ -2,11 +2,9 @@
 title: Standardvyer för Supply Chain Management
 description: I det här avsnittet beskrivs de standardvyer som finns tillgängliga, samt information om hur du aktiverar dem.
 author: kamaybac
-manager: annbe
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 08002a1ff40c8baca475bc19a1220fe4c4b23bcd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 1636d37b40c826fb9b922636d68c56963a791af5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500704"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821259"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standardvyer för Supply Chain Management
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management innehåller flera sparade vyer som du kan aktivera och använda efter behov. Vissa av dessa standardvyer optimeras och namnges för en viss roll eller uppgift (till exempel "Kvalitetskontroll" eller "Mottagning"). Andra optimeras så att de bara inkluderar de fält och inställningar som Microsofts användningsstatistik anger används oftast av kunder. Dessa sparade vyer kallas vanligtvis för *förenklade* vyer. I det här avsnittet beskrivs de standardvyer som finns tillgängliga, samt information om hur du aktiverar och anpassar dem.
 
@@ -82,14 +79,16 @@ I följande tabell beskrivs de sparade vyerna som är tillgängliga för modulen
 
 ## <a name="saved-views-for-the-production-control-module"></a>Sparade vyer för modulen Produktionskontroll
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 I följande tabell beskrivs de sparade vyerna som är tillgängliga för modulen Produktionskontroll.
 
 | Sida | Vynamn | Visa beskrivningen | Funktionsnamn |
 |---|---|---|---|
-| Strukturlistesidan för produktionsorder | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparade vyer för produktionskontroll |
-| Sidan Produktionsorderdetaljer | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparade vyer för produktionskontroll |
-| Plocklistesida för tillverkningsorder | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparade vyer för produktionskontroll |
-| Listsidan för produktionsorder | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparade vyer för produktionskontroll |
+| Strukturlistesidan för produktionsorder | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | (Förhandsversion) Sparade vyer för produktionskontroll |
+| Sidan Produktionsorderdetaljer | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | (Förhandsversion) Sparade vyer för produktionskontroll |
+| Plocklistesida för tillverkningsorder | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | (Förhandsversion) Sparade vyer för produktionskontroll |
+| Listsidan för produktionsorder | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | (Förhandsversion) Sparade vyer för produktionskontroll |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Sparade vyer för modulen Försäljning och marknadsföring
 

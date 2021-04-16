@@ -2,11 +2,9 @@
 title: Placera på vägg – placera i butik
 description: Det här avsnittet innehåller information om funktionen Placera på vägg – placera i butik. Med den här funktionen kan du hantera situationer där du måste konsolidera en produkt till ett förpackat mellanlagringsområdet, baserat på konfigurerbara kriterier. Den hjälper till att minska plocktiden eftersom den möjliggör plockning på en målnummer-ID och kan använda fler befattningar än klusterplockning.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: e2dcfa18af457ea21618704bafa2ed81c615d952
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cf34a61d0b3f784b5a424473588d05bf8703635c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228523"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823297"
 ---
 # <a name="put-to-wall---put-to-store"></a>Placera på vägg – placera i butik
 
@@ -524,7 +522,7 @@ Nu när hela lagret har placerats på sorteringsplatsen måste det vara sorterat
 
 Om sorteringspositionerna ska stängas manuellt måste alternativet **Automatiskt stängning av sorteringsordning** för mallen för utgående sortering ställas in på *Nej* och stängning måste göras innan lagret kan flyttas till vikdörren. Positioner kan stängas på olika sätt:
 
-- Via lagerställeappen:
+- Via mobilappen Hantering av distributionslager:
 
     - Användaren kan skanna ett av artiklarna som redan finns på befattningen och sedan välja **Stäng** för att stänga position.
     - Om användaren skannar en behållare som redan har sorterats som behållare visas ett felmeddelande. Användaren kan dock fortfarande fortsätta att stänga positionen.

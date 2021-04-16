@@ -2,11 +2,9 @@
 title: Frågor och rapporter gällande farliga material
 description: I det här avsnittet beskrivs hur du arbetar med olika rapporter som rör farliga material. Många av dessa rapporter krävs så att du blir kompatibel med olika regler för farligt material vid leverans och lagring.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,17 +12,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: cee824e9e8f7577d1d4a6c0a21c7341608e1f588
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 07f103680cacc1273b2b28f6e4e905d6dabb006a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243139"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820332"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Frågor och rapporter gällande farliga material
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management tillhandahåller olika rapporter som är relaterade till farliga material. Många av dessa rapporter krävs så att du blir kompatibel med olika regler för farligt material vid leverans och lagring.
 

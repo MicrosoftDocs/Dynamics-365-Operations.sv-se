@@ -1,12 +1,10 @@
 ---
 title: Hantera lagerställearbetare
-description: Denna artikel beskriver hur du kan använda lagerställeappen för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda i ditt lager.
+description: Denna artikel beskriver hur du kan använda mobilappen för distributionslagerhantering för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda i ditt lager.
 author: perlynne
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage, WHSResetUserPassword
 audience: Application User
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18dbcf32f85bca51bf48e5ed8c64fedc99f66082
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9f5676879f631fce9c9c674250a07723131906fa
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216845"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818978"
 ---
 # <a name="manage-warehouse-workers"></a>Hantera lagerställearbetare
 
 [!include [banner](../includes/banner.md)]
 
-Denna artikel beskriver hur du kan använda lagerställeappen för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda i ditt lager.
+Denna artikel beskriver hur du kan använda mobilappen för distributionslagerhantering för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda i ditt lager.
 
 Om du använder funktionerna i lagerhantering, alla lagerarbetare operationer som *arbete*. Arbetet såsom plockning, flytta och räknar lagersaldot registreras med hjälp av mobila enheter. Innan en lagerarbetare kan utföra arbete, han eller hon måste vara associerad med en arbetstagare i mänskliga resurser. Varje **arbetstagare** kan ha flera lagerarbetet användare som är associerade med den. Dessa arbeten kan användarna arbeta i olika lager och kan ha olika nivåer av åtkomst till olika mobila enheten menyer. Du kan tänker av lagerarbetet användare som flera inloggningar för vald anställd. Varje användare har en standard lager, och specifika arbetsflöden exponeras genom menyerna tillgängliga alternativ som fungerar. 
 

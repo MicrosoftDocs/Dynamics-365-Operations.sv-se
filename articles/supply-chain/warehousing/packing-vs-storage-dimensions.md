@@ -2,11 +2,9 @@
 title: Ställ in olika dimensioner för förpackning och lagring
 description: I det här avsnittet visas hur du anger vilken process (förpackning, lagring eller kapslad förpackning) som varje dimension används för.
 author: mirzaab
-manager: tfehr
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 audience: Application User
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: aa5cbf807e809238489c539d3ad8c0bc34421774
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: e997f8bccde7856303d8b3c6407143598ccc6030
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501304"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818930"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Ställ in olika dimensioner för förpackning och lagring
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Vissa artiklar packas eller lagras på ett sådant sätt att du kan behöva spåra fysiska dimensioner olika för vart och ett av flera olika processer. Funktionen *Dimensioner för förpackningsprodukt* gör att du kan ställa in en eller flera typer av dimensioner för varje produkt. Varje dimensionstyp tillhandahåller en uppsättning fysiska mått (vikt, bredd, djup och höjd) och använder den process där de fysiska mätningsvärdena gäller. När den här funktionen är aktiverad har ditt system stöd för följande typer av dimensioner:
 

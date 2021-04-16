@@ -2,7 +2,6 @@
 title: Bearbetning av varor på väg
 description: Det här avsnittet beskriver hur du arbetar med beställningar av varor på väg. När en order eller ett färd har ställts in för att använda bearbetning av varor på väg, kan varor faktureras innan de har inkommit i lagerstället för förbrukning.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 77e30f8679c9422e895432c023997b5ff4768ebd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500414"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823419"
 ---
 # <a name="goods-in-transit-processing"></a>Bearbetning av varor på väg
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Det här avsnittet beskriver hur du arbetar med beställningar av varor på väg. Den här ordertypen används bara i modulen **Hemtagningskostnad**. När en order eller ett färd har ställts in för att använda bearbetning behöver du inte vänta tills varor tas emot i lagret innan du kan fakturera dem. Istället faktureras varorna när de lämnar leverantörens lagerställe eller ursprungsport och de ekonomiska kostnaderna redovisas när färden börjar. Med den här funktionen kan du ta ansvar för lager på rätt sätt, eftersom varor ofta blir organisationens egendom när de lämnar leveransporten.
 
@@ -135,7 +133,7 @@ Hemtagningskostnad lägger till följande arbetsgenereringsprocesser i menyn fö
 
 Konfigurationsinställningarna för dessa processer liknar inställningarna för de [processer som används för att skapa arbetsprocesser för inköpsorder](https://technet.microsoft.com/library/dn553216.aspx). I processen *Varor på väg som mottagande och inleverans* läggs även följande fält till.
 
-- **Aktivera fullständig leveransbehållare** – Om det här alternativet är inställt på *Ja*, när inlagringsarbete är slutfört, tillhandahåller lagerställeappen ett ytterligare alternativ som kallas **fullständig leveransbehållare**. När det alternativet har valts kan arbetaren bekräfta att behållaren är slutförd. Då behandlas alla korta inleveranser som en undertransaktion.
+- **Aktivera fullständig leveransbehållare** – Om det här alternativet är inställt på *Ja*, när inlagringsarbete är slutfört, tillhandahåller mobilappen för distributionslagerhantering ett ytterligare alternativ som kallas **fullständig leveransbehållare**. När det alternativet har valts kan arbetaren bekräfta att behållaren är slutförd. Då behandlas alla korta inleveranser som en undertransaktion.
 
 ### <a name="location-directives"></a>Platsdirektiv
 
