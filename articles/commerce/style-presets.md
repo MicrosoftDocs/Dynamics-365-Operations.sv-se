@@ -2,11 +2,9 @@
 title: Arbeta med format för inställningar
 description: I det här avsnittet beskrivs hur du arbetar med förinställda stilar i Microsoft Dynamics 365 Commerce webbplatsskapare.
 author: phinneyridge
-manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,20 +14,18 @@ ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 55d333c3ae94b17dabaef3c697c698f068a06543
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7279b52f801c2cb2f156d220d1a456b773d10f33
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226601"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791761"
 ---
 # <a name="work-with-style-presets"></a>Arbeta med format för inställningar
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du arbetar med förinställda stilar i Microsoft Dynamics 365 Commerce webbplatsskapare.
-
-## <a name="overview"></a>Översikt
 
 En format för inställning är en lagrad uppsättning av alla redigeringsbara formatmallar i en webbplatstema. Du kan använda den för att omedelbart ändra utseendet på en webbplats från webbplatsskaparen. Förinställningar av stil låter Commerce webbplatsskapare snabbt ändra, förhandsgranska och aktivera en uppsättning av stilvärden på sin webbplats utan att behöva använda sammanhängande formatmallar (CSS) eller distribuera teman. Teckensnittsstilar, knappformat och webbplatsfärger är typiska exempel på formatvariabler som kan hanteras via format för inställningar.
 

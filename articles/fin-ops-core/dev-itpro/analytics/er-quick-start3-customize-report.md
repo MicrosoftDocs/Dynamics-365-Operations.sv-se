@@ -2,7 +2,6 @@
 title: Anpassa konfigurationer av elektronisk rapportering så att ett elektroniskt dokument skapas
 description: Det här avsnittet innehåller information om hur du anpassar konfigurationer av elektronisk rapportering (ER) från Microsoft som används för att generera ett anpassat elektroniskt dokument.
 author: NickSelin
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2a0cc308e2e3c7f42295a6170c4f709a835c5c84
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 46b232da404fe2106ce4b5455ea4d682a08aaa53
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566136"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743639"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Anpassa konfigurationer av elektronisk rapportering så att ett elektroniskt dokument skapas
 

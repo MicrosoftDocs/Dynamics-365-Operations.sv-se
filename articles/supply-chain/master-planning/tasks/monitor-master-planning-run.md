@@ -2,11 +2,9 @@
 title: Övervaka en huvudplaneringskörning
 description: Det här ämnet förklarar hur produktionsplanerare kan se om en huvudplaneringskörning pågår.
 author: josaw1
-manager: tfehr
 ms.date: 11/04/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, InventItemIdLookupSimple, ReqLog, ReqProcessTaskTrace
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2dea87ac106e79339b8cb6bb2c28e36e35de4a1a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a1733562768b3fe869f326bbfb47b6135a91b5cb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226109"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829652"
 ---
 # <a name="monitor-a-master-planning-run"></a>Övervaka en huvudplaneringskörning
 

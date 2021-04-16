@@ -2,11 +2,9 @@
 title: Arbeta med fragment
 description: I det här avsnittet beskrivs varför, när och hur du ska använda fragment i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3df2d99ef10f909cedef16167fb8d5a0024683b3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1fa55ab83562983273768895db61032ec7199fa6
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210957"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793955"
 ---
 # <a name="work-with-fragments"></a>Arbeta med fragment 
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs varför, när och hur du ska använda fragment i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 Fragment gör det möjligt att använda en central redigeringsupplevelse för modulkonfigurationer som måste återanvändas på hela din webbplats. Sidhuvuden, sidfötter och banderoller är ofta konfigurerade som fragment, eftersom de delas på många sidor. Du kan betrakta fragment som miniatyrer av webbsidor som kan infogas på andra sidor på webbplatsen. Fragment har sin egen livscykel. Det innebär att de skapas, refereras, uppdateras och tas bort som oberoende enheter i redigeringsverktygen.
 

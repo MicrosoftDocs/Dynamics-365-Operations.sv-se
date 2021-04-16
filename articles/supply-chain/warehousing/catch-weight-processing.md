@@ -2,30 +2,27 @@
 title: Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
 description: Detta avsnitt beskriver hur man använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret.
 author: perlynne
-manager: tfehr
 ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench, WHSCatchWeightTagRegistration, WHSCatchWeightTagFullDimDiscrepancies, WHSCatchWeightTagChangeWeightDropDownDialog, WHSCatchWeightLinkWorkLineTagDropDownDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 45f8d53b5ac212866a9c693e0039631507e14dd7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3882e40b4083f9246a03db3078cae8e18bec3c1e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233089"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808928"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
 
 [!include [banner](../includes/banner.md)]
-
 
 ## <a name="feature-exposure"></a>Funktionen exponering
 
@@ -52,7 +49,7 @@ Eftersom vikten av lagret när det gäller i ett lagerställe kan skilja sig fr�
 > [!NOTE]
 > Den mobila enhetens aktivitet utlöser transaktionsjusteringarna endast om avvikelsemetoden för utgående vikt i artikelns hanteringsprincip för faktisk/nominell vikt är **Tillåt viktavvikelse**.
 
-**Exempel 1**
+### <a name="example-1"></a>Exempel 1
 
 Under produktionsprocessen **rapportera som färdig** måste den inkommande vikten av en registreringsskylt som innehåller åtta rutor hos en produkt faktisk/nominell vikt registreras som 80,1 kg. Registreringsskylt lagras direkt i området för färdiga varor och under lagringsperioden, försvinner viss vikt i luften.
 
@@ -60,7 +57,7 @@ Vikten av samma registreringsskylt fångas senare som en del av en process, ploc
 
 I det här fallet justeras skillnaden automatiskt genom att bokföra en transaktion för saknade 0,3 kg.
 
-**Exempel 2**
+### <a name="example-2"></a>Exempel 2
 
 I dess definition ställs en produkt in för att klara en lägsta vikt på 8 kg och en maximal vikt på 12 kg för enhet för faktisk/nominell vikt **låda**.
 
@@ -106,7 +103,7 @@ När en artikel är en kod, spåras dessutom en parameter för **Inhämtningsmet
 **När spårning av taggar för faktisk/nominell vikt används** måste taggen alltid skapas för varje faktisk/nominell viktenhet som tas emot och varje tagg måste alltid associeras med en vikt.
 
 Till exempel **Låda** är faktisk/nominell viktenheten och du får en lastpall med åtta lådor. I det här fallet måste åtta unika taggar för faktisk/nominell vikt skapas och en vikt måste vara associerad med varje tagg. Beroende på taggen för inkommande faktisk/nominell vikt måste antingen vikten för alla åtta lådor registreras och den genomsnittliga vikten som sedan kan distribueras till varje låda eller en unik vikt registreras in för varje låda.
-När du använder funktionen **Använd befintliga koder för faktisk/nominell vikt vid rapportering av tillverkningsorder som färdiga** med processen aktiverad via en menyartikel på en mobil enhet, uppdateras lagret baserat på den befintliga informationen på fliken om faktisk/nominell vikt. Detta innebär att modulen för lagerstyrning inte ber om att fånga upp taggdata för faktisk/nominell vikt som en del av en produktions rapport som en avslutad operation.
+När du använder funktionen **Använd befintliga koder för faktisk/nominell vikt vid rapportering av tillverkningsorder som färdiga** med processen aktiverad via en menyartikel på en mobil enhet, uppdateras lagret baserat på den befintliga informationen på fliken om faktisk/nominell vikt. Detta innebär att mobilappen för distributionslagerhantering inte ber om att fånga upp taggdata för faktisk/nominell vikt som en del av en produktions rapport som en avslutad operation.
 
 **När spårning av tagg för faktisk/nominell vikt inte används** registreras vikten för varje dimensionsuppsättning (till exempel för varje registreringsskylt och spårningsdimension). Du kan också registrera vikten in baserat på aggregerad nivå, t.ex. fem registreringsskyltar (lastpallar).
 
@@ -194,7 +191,11 @@ Alla arbetsflöden stöder inte bearbetning av produkt i faktisk/nominell vikt m
 
 ### <a name="catch-weight-tags"></a>Koder för faktisk/nominell vikt
 
-En kod för faktisk/nominell vikt kan skapas med en lagerstyrningsapprocess, skapas manuellt i formuläret eller skapas med en dataentitetsprocess. Om en kod för nominell vikt blir associerad med en inkommande källdokumentrad, till exempel inköpsorderrad, kommer koden att registreras. Om raden används för utgående bearbetning kommer märket att uppdateras som levererat.
+En kod för faktisk/nominell vikt kan skapas med en mobilapprocessen för distributionslagerhantering, skapas manuellt i formuläret **Hantering av distributionslager > Förfrågningar och rapporter > Tagg för faktisk/nominell vikt** eller så kan den skapas med hjälp av en dataenhetsprocess. Om en kod för nominell vikt blir associerad med en inkommande källdokumentrad, till exempel inköpsorderrad, kommer koden att registreras. Om raden används för utgående bearbetning kommer märket att uppdateras som levererat. Du kan se alla historiska registreringshändelser för fångstvikt via alternativet **Registrera registrering av faktisk/nominell vikt** från sidan **Tagg för faktisk/nominell vikt** .
+
+Du kan använda alternativet **Ändra tagg fångad vikt** möjlighet att manuellt uppdatera viktvärdet för en faktisk/nominell vikt. Observera att vikten för inventeringen inte justeras som en del av den här manuella processen, men du kan enkelt använda sidan **Avvikelser artiklar för faktisk/nominell vikt** för att leta upp eventuella avvikelser mellan de för närvarande aktiva taggarna för faktisk/nominell vikt och det aktuella lagret.
+
+Andra manuella alternativ är att **Registrera tagg** för en källdokumentrad och **Registrera arbeta** ett befintligt lagerarbete.
 
 Utöver de begränsningar som för närvarande gäller för produkter med faktisk/nominell vikt har kodade produkter med faktisk/nominell vikt andra begränsningar som gäller för närvarande.
 

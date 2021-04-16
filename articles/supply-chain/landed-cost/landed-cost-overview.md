@@ -2,7 +2,6 @@
 title: Modul för hemtagningskostnad
 description: Modulen hemtagningskostnad gör det enklare för företagen att strömlinjeforma inkommande leveransoperationer genom att ge användarna fullständig ekonomisk kontroll och kontroll över importerade frakter, från tillverkare till lagerstället.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
@@ -15,17 +14,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9d04c377080a1d301efb771b98c249f610a3289d
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 524fcdbcf9ba607fe9bcec1f1e894beb45f265e6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500342"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823347"
 ---
 # <a name="landed-cost-module"></a>Modul för hemtagningskostnad
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Modulen **hemtagningskostnad** gör det enklare för företagen att strömlinjeforma inkommande leveransoperationer genom att ge användarna fullständig ekonomisk kontroll och kontroll över importerade frakter, från tillverkare till lagerstället. För importerade varor kan hemtagningskostnader redovisa 40 procent eller mer av den totala kostnaden för varje importerad artikel. Därför ska företaget tillhandahålla korrekta uppskattningar av hemtagningskostnader.
 

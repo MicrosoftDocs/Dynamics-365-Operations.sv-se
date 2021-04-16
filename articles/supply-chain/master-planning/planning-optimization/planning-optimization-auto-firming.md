@@ -2,11 +2,9 @@
 title: Automatisk bekräftelse med planeringsoptimering
 description: I det här avsnittet beskrivs hur du använder automatisk bekräftelse för planeringsoptimering.
 author: ChristianRytt
-manager: tfehr
 ms.date: 11/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 9106137fe6dd097beea9914cdde541e581946f46
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3542e343de29c9fd9d19ed99cab4b4eebacd2899
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227808"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813013"
 ---
 # <a name="autofirming-with-planning-optimization"></a>Automatisk bekräftelse med planeringsoptimering
 
@@ -33,6 +31,8 @@ Med automatisk bekräftelse kan du bekräfta (dvs frisläppa) planerade order so
 
 > [!NOTE]
 > Automatisk bekräftelse av en planerad inköpsorder kan endast äga rum om artikel kopplades till en leverantör.
+> 
+> Bekräftade härledda beställningar (inköpsorder i underleverantörer) visar statusen *Undergår granskning* ärende ändras aktiveras.
 
 ## <a name="turn-on-autofirming"></a>Aktivera automatisk bekräftelse
 

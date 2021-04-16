@@ -2,11 +2,9 @@
 title: Omklassificera den kortfristiga delen av en leasingskuld
 description: I det här ämnet beskrivs hur du skapar en månatlig journalpost som klassificerar en del av leasingskulden som kortsiktig.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9189033987a3072c7122e1a198768d9de6aa2a52
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7d98d66b5fe9d32a86eb75d937fedfdca6773ac4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254093"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823105"
 ---
 # <a name="reclassify-the-short-term-portion-of-lease-liability"></a>Omklassificera den kortfristiga delen av leasingskuld
 
@@ -38,8 +36,7 @@ Om du vill skapa och bokföra journalposten för omklassificering av kortfristig
 2. I dialogrutan **Batchgenerering av journal**, i fältet **Välj plan**, väljer du **Omklassificering av kortfristig leasingskuld**.
 3. Välj en leasinggrupp i fältet **Leasinggrupp**. Du kan också välja bok-ID i fältet **Bok-ID**.
 4. Aktivera parametern **Bokför**. Om posten ska skapas men inte bokföras lämnar du den här parametern inaktiverad.
-5. Aktivera parametern **Förhandsgranska före bokföring** för att visa posten innan den bokförs.
-6. Välj **OK**.
+5. Välj **OK**.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
