@@ -2,11 +2,9 @@
 title: Hantering av kredit och inkasso Power BI-innehåll
 description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kredit- och inkassohantering. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: dfa79b3fb4099d64390c17b39508deaac63deb1c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: aa7056f080fb855894f8b32f667dc3c3062c3c8b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235171"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833171"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Hantering av kredit och inkasso Power BI-innehåll
 

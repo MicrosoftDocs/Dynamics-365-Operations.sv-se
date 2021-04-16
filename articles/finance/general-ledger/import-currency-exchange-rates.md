@@ -2,11 +2,9 @@
 title: Importera valutakurser
 description: Det här avsnittet innehåller information om kraven för att importera referensvalutakurser för utländsk valuta som publiceras av valutakursleverantörer.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 37f3897f9f2a0db0bb7ccb6851fba36814ab0c7b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 20b8496bc3074eae6535eea4cfe0b254f2773e6a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249129"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823750"
 ---
 # <a name="import-currency-exchange-rates"></a>Importera valutakurser
 
@@ -35,9 +33,8 @@ Följande avsnitt beskriver det allmänna informationsflödet som används för 
 ## <a name="configure-an-exchange-rate-provider"></a>Ställ in en valutakursleverantör
 Innan du kan importera valutakurser måste du ställa in den information som krävs av de leverantörer som erbjuder valutakurser. Använd sidan **Konfigurera valutakursleverantörer** för att välja valutakursleverantörer. Vissa valutakursleverantörer medföljer demonstrationsdatan i Dynamics 365 Finance. I följande tabell finns beskrivningar av kontrollerna på denna sida.
 
-|           |                                                                                                                                                                                                                             |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Fält** | **Beskrivning**                                                                                                                                                                                                             |
+| Fält | beskrivning                   |
+|-----------|-----------------------------------|
 | **Namn**  | Valutakursleverantörens namn.                                                                                                                                                                                     |
 | **Nyckel**   | Det unika id:t för varje konfigurationsuppgift som krävs av leverantören. Den här informationen läggs till automatiskt för varje valutakursleverantör som du lägger till. |
 | **Value** | Information för varje nyckel. Den här informationen läggs till för varje valutakursleverantör som du lägger till.                                                                                         |
@@ -45,9 +42,8 @@ Innan du kan importera valutakurser måste du ställa in den information som kr�
 ## <a name="import-currency-exchange-rates"></a>Importera valutakurser
 Du kan importera valutakurser från valutakursleverantörskällan och lägga till dem på sidan **Valutakurser**. Använd sidan **Importera valutakurser** om du vill importera valutakurser. I följande tabell beskrivs de fält som krävs för att genomföra importen.
 
-|                                        |                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Fält**                              | **Beskrivning**                                                                                                                                                                                                                                                                                                                                                             |
+| Fält | beskrivning                   |
+|-----------|-----------------------------------|
 | **Valutakurstyp**                 | En valutakurstyp.                                                                                                                                                                                                                                                                                                                                                      |
 | **Valutakursleverantör**             | En valutakursleverantör.                                                                                                                                                                                                                                                                                                                                                  |
 | **Importera från**                       | Denna parameter styr huruvida import ska ske från och med aktuellt datum eller för ett specifikt datumintervall. Ange start- och slutdatum för att använda eller välja start- och slutdatum.                                                                                                                                                                                                                |

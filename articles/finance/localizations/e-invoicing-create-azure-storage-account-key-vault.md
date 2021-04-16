@@ -2,11 +2,9 @@
 title: Skapa ett Azure Storage-konto och ett nyckelvalv
 description: I det här avsnittet beskrivs hur du skapar ett Azure Storage-konto och nyckelvalv.
 author: gionoder
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 14463abe7782d786d286fcc619dee00ce85bb620
-ms.sourcegitcommit: 4adc57b0e43d9627dca70762ac941762ec4934e2
+ms.openlocfilehash: b7df4933c1373893e00f48ea3a21bd5af40719a9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/22/2021
-ms.locfileid: "5479355"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840230"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Skapa ett Azure Storage-konto och ett nyckelvalv
 
@@ -44,7 +42,7 @@ I det här avsnittet ska du utföra två huvudsteg:
 
 ## <a name="set-up-the-azure-storage-account-to-get-the-storage-account-uri"></a>Konfigurera Azure Storage-kontot för att hämta lagringskontots URI
 
-1. Öppna det lagringskonto som du vill använda med tillägget elektroniska fakturering.
+1. Öppna det lagringskonto som du vill använda med tillägget elektronisk fakturering.
 2. Gå till **Blob Service** \> **Behållare** och skapa en ny behållare.
 3. Ange ett namn på behållaren och ställ in fältet **Offentlig åtkomstnivå** på **Privat (ingen anonym åtkomst)**.
 4. Öppna behållaren och gå till **Inställningar \> Åtkomstpolicy**.
@@ -63,12 +61,12 @@ I det här avsnittet ska du utföra två huvudsteg:
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>Ställ in nyckelvalvet för att lagra lagringskontots URI
 
-1. Öppna det nyckelvalv som du vill använda med tillägget elektroniska fakturering.
+1. Öppna det nyckelvalv som du vill använda med elektronisk fakturering.
 2. Gå till **Inställning** \> **Hemligheter** och välj sedan **Generera/importera** om du vill skapa en ny hemlighet.
 3. På sidan **Skapa en hemlighet** i fältet **Överföringsalternativ** välj **Manuell**.
 4. Ange namnet på hemligheten. Det här namnet används under installationen av tjänsten i RCS (Regulatory Configuration Service) och kommer att kallas *nyckelvalvets hemliga namn*.
 5. I fältet **Värde** markera **Signatur för delad åtkomst URI** och välj sedan **Skapa**.
-6. Ställ in åtkomstprincipen så att tillägget elektronisk fakturering på den korrekta nivån för säker åtkomst till den hemlighet som du har skapat. Gå till **Inställningar \> Åtkomstprinciper** och välj **Lägg till åtkomstprincip**.
+6. Ställ in åtkomstprincipen så att elektronisk fakturering på den korrekta nivån för säker åtkomst till den hemlighet som du har skapat. Gå till **Inställningar \> Åtkomstprinciper** och välj **Lägg till åtkomstprincip**.
 7. Ange de hemliga behörigheterna för åtgärderna **Hämta** och **Lista**.
 
     ![Bevilja tjänståtkomst](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)

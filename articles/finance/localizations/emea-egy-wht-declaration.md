@@ -2,7 +2,6 @@
 title: Källskattedeklaration för Egypten
 description: I det här avsnittet beskrivs hur du konfigurerar och genererar formuläret källskattedeklaration moms för Egypten.
 author: sndray
-manager: AnnBe
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: cec903c56439957bcafb77c3da774a903d4433a1
-ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
+ms.openlocfilehash: 4e3d68ac003fabaa504ffe81b8bf2f7ff8d7538d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5574350"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839802"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Källskattedeklaration för Egypten (EG-00005)
 
@@ -115,7 +114,7 @@ Gör på följande sätt när du vill generera momsdeklarationsrapporten.
 1. Gå till **Skatt** > **Deklarationer** > **Källskatt** > **Betalning av källskatt*.
 2. Välj kvittningsperiod och sedan från-datum för rapporten. 
 3. Ange transaktionsdatum och klicka sedan på **OK**.
-4. I dialogrutan som öppnas väljer du en eller flera av formulärtyperna ** Formulär nr. 41 **, **Formulär nr. 11** eller **Ingen**. Om du väljer **Ingen** genereras standardrapporten. 
+4. I dialogrutan som öppnas väljer du en eller flera av formulärtyperna **Formulär nr. 41**, **Formulär nr. 11** eller **Ingen**. Om du väljer **Ingen** genereras standardrapporten. 
 5. Välj språk. Alla rapporter översätts i **en-us** och **ar-eg**.
 6. Ange filial och namn för den bank där momsbetalningen ska betalas.
 7. Välj affärstyp och ange sedan check- och dokumentnummer. 

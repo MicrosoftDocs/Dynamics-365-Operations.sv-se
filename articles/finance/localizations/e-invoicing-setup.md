@@ -1,12 +1,10 @@
 ---
-title: Ställ in tillägg för elektroniska fakturor
-description: I det här avsnittet beskrivs hur du ställer in tillägget Elektroniska fakturor i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management.
+title: Ställ in elektronisk fakturering
+description: I det här avsnittet beskrivs hur du ställer in Elektroniska fakturor i Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management.
 author: gionoder
-manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,62 +15,62 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5821a512b2beaf7ba2b8015355f04562f7b3b38a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fd0dda0adb292c10eea0a770ae0eae33d5f91f17
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209956"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840014"
 ---
-# <a name="set-up-the-electronic-invoicing-add-on"></a>Ställ in tillägg för elektroniska fakturor
+# <a name="set-up-electronic-invoicing"></a>Ställ in elektronisk fakturering
 
 [!include [banner](../includes/banner.md)]
 
 
-Installation av funktionen för tillägget elektronisk fakturering är processen att skapa den konfiguration som krävs genom RCS-miljön (Regulatory Configuration Services) och publicera den konfigurationen på tilläggsservern för elektronisk fakturering. Med hjälp av installationsprogrammet kan du skapa de konfigurerbara reglerna som gör det möjligt för tillägget Elektronisk fakturering att använda ett säkert protokoll via Internet för att kommunicera och utbyta data med en tredje parts enhet via webbtjänster.
+Installation av funktionen för elektronisk fakturering är processen att skapa den konfiguration som krävs genom RCS-miljön (Regulatory Configuration Services) och publicera den konfigurationen på servern för elektronisk fakturering. Med hjälp av installationsprogrammet kan du skapa de konfigurerbara reglerna som gör det möjligt för Elektronisk fakturering att använda ett säkert protokoll via Internet för att kommunicera och utbyta data med en tredje parts enhet via webbtjänster.
 
 Konfigureringsmöjligheter är beroende av formatkonfigurationen för elektronisk rapportering (ER) som ett sätt att skapa och ta emot innehåll som skickas och tas emot via digitala filer. Den använder också samordningen av kommunikationsåtgärder för att skicka förfrågningar till och ta emot svar från tredje parts webbtjänster utan att behöva skriva kod.
 
 ## <a name="overview"></a>Översikt
 
-"Funktionen tillägg för elektronisk fakturering är det allmänna namnet för resursen som är konfigurerad och publicerad för att använda tilläggsservern för elektronisk fakturering. Inställningen av funktionen kombinerar bland annat användningen av ER-konfigurationsformat för att skapa konfigurerbara export- och importfiler och användningen av åtgärder och åtgärdsflöden för att möjliggöra skapandet av konfigurerbara regler för att skicka förfrågningar , importera svar och analysera svarsinnehållet.
+"Funktionen elektronisk faktura" är det allmänna namnet för resursen som är konfigurerad och publicerad för att använda servern för elektronisk fakturering. Inställningen av funktionen kombinerar bland annat användningen av ER-konfigurationsformat för att skapa konfigurerbara export- och importfiler och användningen av åtgärder och åtgärdsflöden för att möjliggöra skapandet av konfigurerbara regler för att skicka förfrågningar , importera svar och analysera svarsinnehållet.
 
-Följande bild visar huvudkomponenterna i funktionen tillägg för elektronisk fakturering.
+Följande bild visar huvudkomponenterna i funktionen för elektronisk fakturering.
 
-![Funktionen tillägg för elektronisk fakturering: översikt](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
+![Funktionen för elektronisk fakturering: översikt](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
 På grund av variationer i fakturaformat och åtgärdsflöden kan funktionsinställningarna variera beroende på land eller region eller efter affärsbehov.
 
-## <a name="set-up-the-electronic-invoicing-add-on-feature"></a>Ställ in funktionen tillägg för elektroniska fakturor
+## <a name="set-up-the-electronic-invoicing-feature"></a>Ställa in funktionen elektronisk fakturering
 
-Installationsprocessen måste utföras i din RCS-miljö. Följ de här stegen om du vill skapa en ny funktion för tillägg för elektronisk fakturering.
+Installationsprocessen måste utföras i din RCS-miljö. Följ de här stegen om du vill skapa en ny funktion för elektronisk fakturering.
 
 1. Logga in på RCS-miljön.
-2. I arbetsytan **globaliseringsfunktioner** i avsnittet **Funktioner**, välj panelen **Tillägg för elektroniska fakturor**.
-3. På sidan **Funktioner för tillägg för elektronisk fakturering** välj **Importera** för att importera konfiguration av ER-datamodell från den globala databasen.
-4. Välj **Lägg till** om du vill skapa en funktion för tillägg för elektronisk fakturering. Du kan antingen skapa funktionen från början eller härleda den från en befintlig funktion för tillägg för elektronisk fakturering.
+2. I arbetsytan **globaliseringsfunktioner** i avsnittet **Funktioner**, välj panelen **Elektronisk faktura**.
+3. På sidan **Funktioner för elektronisk fakturering** välj **Importera** för att importera konfiguration av ER-datamodell från den globala databasen.
+4. Välj **Lägg till** om du vill skapa en funktion för elektronisk fakturering. Du kan antingen skapa funktionen från början eller härleda den från en befintlig funktion för elektronisk fakturering.
 
-    ![Lägg till en funktion för tillägg för elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
+    ![Lägg till en funktion för elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
 > [!NOTE]
-> När du skapar en ny funktion för tillägg för elektronisk fakturering har den ett versionsnummer och standardstatus är inställd på **utkast**.
+> När du skapar en ny funktion för elektronisk fakturering har den ett versionsnummer och standardstatus är inställd på **utkast**.
 
 ### <a name="configurations"></a>Konfigurationer
 
-Konfigurationer innehåller de ER-formatkonfigurationer som krävs för omvandling och för att skapa de filer som ska bytas ut under kommunikationen med webbtjänster från andra leverantörer. En funktion för tillägg för elektronisk fakturering kan ha så många ER-filformatkonfigurationer som behövs, baserat på den tekniska specifikation som tillhandahålls av webbtjänstleverantören.
+Konfigurationer innehåller de ER-formatkonfigurationer som krävs för omvandling och för att skapa de filer som ska bytas ut under kommunikationen med webbtjänster från andra leverantörer. En funktion för elektronisk fakturering kan ha så många ER-filformatkonfigurationer som behövs, baserat på den tekniska specifikation som tillhandahålls av webbtjänstleverantören.
 
-Följ de här stegen om du vill lägga till ER-format till en funktion för tillägg för elektronisk fakturering.
+Följ de här stegen om du vill lägga till ER-format till en funktion för elektronisk fakturering.
 
-1. På sidan **Funktioner för tillägg för elektronisk fakturering** på fliken **Konfigurationer** välj **Lägg till** för att lägga till ER-filformatkonfigurationer för funktion för tillägg för elektronisk fakturering.
+1. På sidan **Funktioner för elektronisk fakturering** på fliken **Konfigurationer** välj **Lägg till** för att lägga till ER-filformatkonfigurationer för funktion för elektronisk fakturering.
 
-    ![Lägg till konfigurationer för funktion för tillägg för elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
+    ![Lägg till konfigurationer för funktion för elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
-    > När du skapar en funktion för tillägg för elektronisk fakturering från början måste du lägga till alla konfigurationer för ER-filformat manuellt. När du härleder en funktion för tillägg för elektronisk fakturering från en befintlig funktion, skapas konfigurationerna för ER-filformat automatiskt eftersom de ärvs från den ursprungliga funktionen för tillägg för elektronisk fakturering.
+    > När du skapar en funktion för elektronisk fakturering från början måste du lägga till alla konfigurationer för ER-filformat manuellt. När du härleder en funktion för elektronisk fakturering från en befintlig funktion, skapas konfigurationerna för ER-filformat automatiskt eftersom de ärvs från den ursprungliga funktionen för elektronisk fakturering.
 
 2. Välj **Redigera** om du vill öppna sidan **Formatdesigner**, där du kan redigera konfigurationen för ER-filformat.
 
-    ![Redigera konfigurationer för funktion för tillägg för elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
+    ![Redigera konfigurationer för funktion för elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > När du redigerar formatet är status för konfigurationsversionen inställd på **utkast**.
@@ -83,20 +81,20 @@ Följ de här stegen om du vill lägga till ER-format till en funktion för till
 
 ### <a name="feature-setups"></a>Funktionsinställningar
 
-Funktionsinställningar inkapslar reglerna för kommunikation och säkerhet med en tredje parts webbtjänst. En funktion för tillägg för elektronisk fakturering kan ha så många funktionsinställningar som krävs, baserat på den affärsregel du vill uppnå.
+Funktionsinställningar inkapslar reglerna för kommunikation och säkerhet med en tredje parts webbtjänst. En funktion för elektronisk fakturering kan ha så många funktionsinställningar som krävs, baserat på den affärsregel du vill uppnå.
 
-Följ de här stegen om du vill lägga funktionsinställningar till en funktion för tillägg för elektronisk fakturering.
+Följ de här stegen om du vill lägga funktionsinställningar till en funktion för elektronisk fakturering.
 
-1. På sidan **Funktioner för tillägg för elektronisk fakturering** på fliken **Inställningar** välj **Lägg till** för att lägga till funktionsinställningar till funktionen för tillägg för elektronisk fakturering.
+1. På sidan **Funktioner för elektronisk fakturering** på fliken **Inställningar** välj **Lägg till** för att lägga till funktionsinställningar till funktionen för elektronisk fakturering.
 
-    ![Lägg till inställning av en funktion för tillägg för elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
+    ![Lägg till inställning av en funktion för elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
-    > När du skapar en funktion för tillägg för elektronisk fakturering från början måste du lägga till alla funktionsinställningar som du behöver. När du härleder en funktion för tillägg för elektronisk fakturering från en befintlig funktion, skapas alla funktionsinställningar automatiskt eftersom de ärvs från den ursprungliga funktionen för tillägg för elektronisk fakturering.
+    > När du skapar en funktion för elektronisk fakturering från början måste du lägga till alla funktionsinställningar som du behöver. När du härleder en funktion för elektronisk fakturering från en befintlig funktion, skapas alla funktionsinställningar automatiskt eftersom de ärvs från den ursprungliga funktionen för elektronisk fakturering.
 
 2. Välj **Redigera** om du vill redigera inställning av funktionsversion.
 
-    ![Redigera inställning av en funktion för tillägg för elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
+    ![Redigera inställning av en funktion för elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
 3. Använd sidan **Inställning av funktionsversion** för att konfigurera åtgärder, tillämpningsreglerna och variabler.
 
@@ -104,7 +102,7 @@ Följ de här stegen om du vill lägga funktionsinställningar till en funktion 
 
 ### <a name="actions"></a>Åtgärder
 
-Åtgärder är en fördefinierad lista med operationer som körs i sekventiell ordning. Den här listan representerar fördelningen av steg som krävs för fullständig körning av funktionen tillägg för elektronisk fakturering. Åtgärderna kan inkapslas i samma funktionen tillägg för elektronisk fakturering, kommunikationen i båda riktningarna: skickar en begäran om mål och tar emot ett svar och tolkar dess innehåll.
+Åtgärder är en fördefinierad lista med operationer som körs i sekventiell ordning. Den här listan representerar fördelningen av steg som krävs för fullständig körning av funktionen för elektronisk fakturering. Åtgärderna kan inkapslas i samma funktionen för elektronisk fakturering, kommunikationen i båda riktningarna: skickar en begäran om mål och tar emot ett svar och tolkar dess innehåll.
 
 Varje åtgärd innehåller en fördefinierad lista med parametrar som krävs för att åtgärden ska kunna utföras. Ytterligare parametrar kan valfritt anges.
 
@@ -255,7 +253,7 @@ Vilka parametrar som är tillgängliga varierar beroende på vilken åtgärd som
 
 ### <a name="applicability-rules"></a>Tillämplighetsregler
 
-Med tillämplighetsregler kan du skapa logiska regler som bestämmer användningskontexten för funktionsinställningarna. Således bestämmer matchningen mellan det sammanhang som ges av affärsdokumentet som skickas för behandling, tillsammans med kriterierna för tillämpbarhetsregeln vilken tilläggsfunktion för elektronisk fakturering som används för att behandla den inlämningen.
+Med tillämplighetsregler kan du skapa logiska regler som bestämmer användningskontexten för funktionsinställningarna. Således bestämmer matchningen mellan det sammanhang som ges av affärsdokumentet som skickas för behandling, tillsammans med kriterierna för tillämpbarhetsregeln vilken funktion för elektronisk fakturering som används för att behandla den inlämningen.
 
 #### <a name="set-up-applicability-rules"></a>Ställ in tillämplighetsregler
 
@@ -290,7 +288,7 @@ Följande register beskriver de fält som är tillgängliga på fliken **Tilläm
 
 ### <a name="variables"></a>Variabler
 
-Du kan skapa variabler och sedan använda dem som indatavärde för en parameter för en viss åtgärd. Du kan också använda dem för att utbyta, mellan tillägget Elektronisk fakturering och klienten, information som är resultatet av att en viss åtgärd utförs som en del i flödet av överföringar.
+Du kan skapa variabler och sedan använda dem som indatavärde för en parameter för en viss åtgärd. Du kan också använda dem för att utbyta, mellan Elektronisk fakturering och klienten, information som är resultatet av att en viss åtgärd utförs som en del i flödet av överföringar.
 
 #### <a name="set-up-variables"></a>Ställ in variabler
 
@@ -318,45 +316,45 @@ Vid valideringen kontrolleras konsekvensen i hela konfigurationen. Om till exemp
 
 ## <a name="environments"></a>Miljöer
 
-En miljö för tillägg för elektronisk fakturering måste vara kopplad till funktionen för tillägg för elektronisk fakturering och aktiveras för den. Miljöer för tillägg för elektronisk fakturering måste skapas och publiceras i förväg, genom konfigurationen av globaliseringsfunktionerna i organisationens RCS-konto.
+En miljö för elektronisk fakturering måste vara kopplad till funktionen för elektronisk fakturering och aktiveras för den. Miljöer för elektronisk fakturering måste skapas och publiceras i förväg, genom konfigurationen av globaliseringsfunktionerna i organisationens RCS-konto.
 
-Följ dessa steg för att aktivera en miljö för tillägg för elektronisk fakturering för funktionen för tillägg för elektronisk fakturering.
+Följ dessa steg för att aktivera en miljö för elektronisk fakturering för funktionen för elektronisk fakturering.
 
-1. På sidan **Funktioner för tillägg för elektronisk fakturering** på fliken **Miljöer** välj **Aktivera** för att lägga till miljö för tillägg för elektronisk fakturering.
+1. På sidan **Funktioner för elektronisk fakturering** på fliken **Miljöer** välj **Aktivera** för att lägga till miljö för elektronisk fakturering.
 2. I fältet **gäller från** anger du det datum då den nya miljön ska börja gälla.
 
 ![Aktivera en miljö för elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
 ## <a name="organizations"></a>Organisationer
 
-Funktionen tillägg för elektronisk fakturering kan delas mellan flera organisationer.
+Funktionen för elektronisk fakturering kan delas mellan flera organisationer.
 
-- På sidan **Funktioner för tillägg för elektronisk fakturering** på **Organisationer** väljer du **Dela med** om du vill lägga till den organisation som du vill dela funktionen tillägg för elektronisk fakturering med.
+- På sidan **Funktioner för elektronisk fakturering** på **Organisationer** väljer du **Dela med** om du vill lägga till den organisation som du vill dela funktionen för elektronisk fakturering med.
 
-Om du vill sluta dela funktionen tillägg för elektronisk fakturering med organisationen väljer du **ta bort delning**.
+Om du vill sluta dela funktionen för elektronisk fakturering med organisationen väljer du **ta bort delning**.
 
 ## <a name="versions"></a>Versioner
 
-Versioner hjälper till att styra livscykeln för den elektroniska faktureringsfunktionen genom att hantera dess status. Du kan skapa en ny version av en befintlig tilläggsfunktion för elektronisk fakturering, eller när all konfiguration för tilläggsfunktionen för elektronisk fakturering är klar kan du ändra funktionens status till **Slutför** och sedan **Publicera**.
+Versioner hjälper till att styra livscykeln för den elektroniska faktureringsfunktionen genom att hantera dess status. Du kan skapa en ny version av en befintlig funktion för elektronisk fakturering, eller när all konfiguration för funktionen för elektronisk fakturering är klar kan du ändra funktionens status till **Slutför** och sedan **Publicera**.
 
-### <a name="create-a-new-version-of-an-existing-electronic-invoicing-add-on-feature"></a>Skapa en ny version av en befintlig funktion för tillägg för elektronisk fakturering
+### <a name="create-a-new-version-of-an-existing-electronic-invoicing-feature"></a>Skapa en ny version av en befintlig funktion för elektronisk fakturering
 
-1. På sidan **Funktioner för tillägg för elektronisk fakturering** i rutnätet till vänster välj funktion för tillägg för elektronisk fakturering.
-2. På **versioner** välj **Ny** om du vill lägga till en ny version av funktionen tillägg för elektronisk fakturering.
+1. På sidan **Funktioner för elektronisk fakturering** i rutnätet till vänster välj funktion för elektronisk fakturering.
+2. På **versioner** välj **Ny** om du vill lägga till en ny version av funktionen för elektronisk fakturering.
 
-### <a name="change-the-status-of-the-electronic-invoicing-add-on-feature"></a>Ändra status för den funktionen tillägg för elektronisk fakturering
+### <a name="change-the-status-of-the-electronic-invoicing-feature"></a>Ändra status för den funktionen för elektronisk fakturering
 
-Följ de här stegen om du vill hantera livscykeln för en funktion för tillägg för elektronisk fakturering.
+Följ de här stegen om du vill hantera livscykeln för en funktion för elektronisk fakturering.
 
-1. På sidan **Funktioner för tillägg för elektronisk fakturering** i rutnätet till vänster välj funktion för tillägg för elektronisk fakturering.
+1. På sidan **Funktioner för elektronisk fakturering** i rutnätet till vänster välj funktion för elektronisk fakturering.
 2. På fliken **versioner** välj **Ändra status** och ändrar sedan statusen från **utkast** till **slutförd**.
-3. Du uppmanas att bekräfta att du vill slutföra funktionen tillägg för elektronisk fakturering och alla dess komponenter. Välj **Ja** om du vill bekräfta åtgärden eller **Nej** om du vill avbryta åtgärden.
+3. Du uppmanas att bekräfta att du vill slutföra funktionen för elektronisk fakturering och alla dess komponenter. Välj **Ja** om du vill bekräfta åtgärden eller **Nej** om du vill avbryta åtgärden.
 
     > [!NOTE]
-    > När du väljer **Ja** ändras statusen för konfigurationsversioner, som är komponenter i funktionen tillägg för elektronisk fakturering automatiskt från **Utkast** till **Slutförd**.
+    > När du väljer **Ja** ändras statusen för konfigurationsversioner, som är komponenter i funktionen för elektronisk fakturering automatiskt från **Utkast** till **Slutförd**.
 
 4. Välj **Ändra status** och ändrar sedan statusen från **Slutför** till **Publicera**.
-5. Du uppmanas att bekräfta att du vill publicera funktionen tillägg för elektronisk fakturering och alla dess komponenter till den globala databasen. Välj **Ja** om du vill bekräfta åtgärden eller **Nej** om du vill avbryta åtgärden.
+5. Du uppmanas att bekräfta att du vill publicera funktionen för elektronisk fakturering och alla dess komponenter till den globala databasen. Välj **Ja** om du vill bekräfta åtgärden eller **Nej** om du vill avbryta åtgärden.
 
     > [!NOTE]
     > När du väljer **Ja** ändras status för konfigurationsversioner automatiskt från **slutförd** till **delad**.

@@ -1,12 +1,10 @@
 ---
-title: Registrera artiklar för en avancerad lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
-description: I den här proceduren visas hur du registrerar artiklar via artikelinförseljournalen när du använder avancerade processer för lagerlagerstyrning.
+title: Registrera artiklar för en artikel som är aktiverad för avancerad distributionslagerhantering med hjälp av en artikelinförseljournal
+description: Det här ämnet presenterar ett scenario som visar hur du registrerar artiklar via artikelinförseljournalen när du använder avancerade processer för lagerstyrning.
 author: ShylaThompson
-manager: tfehr
-ms.date: 08/29/2018
+ms.date: 03/24/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSJournalTable, WMSJournalCreate, WHSLicensePlate
 audience: Application User
@@ -16,65 +14,66 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c25fb55afb01ed59b66045f24400e03e2ec60b2a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c58aa1cec6c0bfe33fa1ef90267dcd8ac1218157
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5238904"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830844"
 ---
-# <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrera artiklar för en avancerad lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
+# <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrera artiklar för en artikel som är aktiverad för avancerad distributionslagerhantering med hjälp av en artikelinförseljournal
 
 [!include [banner](../../includes/banner.md)]
 
-I den här proceduren visas hur du registrerar artiklar via artikelinförseljournalen när du använder avancerade processer för lagerlagerstyrning. Detta görs vanligtvis av en inleveransansvarig. 
+Det här ämnet presenterar ett scenario som visar hur du registrerar artiklar via artikelinförseljournalen när du använder avancerade processer för lagerstyrning. Detta görs vanligtvis av en inleveransansvarig.
 
-Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Du måste ha en bekräftad inköpsorder med en öppen inköpsorderrad innan du startar den här guiden. Artikeln på raden måste finnas i lager och får inte innehålla produktvarianter och spårningsdimensioner. Och artikeln måste associeras med en lagerstyrningsprocess för lagringsdimensionsgrupp. Lagerstället som används måste aktiveras för lagerstyrningsprocesser och lagerplatsen som du använder för inleveranser måste vara id-nummerstyrd. Om du använder USMF, kan du använda företagskontot 1001, lagerställe 51 och artikeln M9200 när du skapar inköpsordern. 
+## <a name="enable-sample-data"></a>Aktivera exempeldata
 
-Gör en notering om inköpsordernumret du skapar och anteckna också artikelnumret och lagerplatsen för inköpsorderraden.
+Om du vill gå igenom det här scenariot med hjälp av de exempelposter och värden som anges i det här avsnittet måste du använda ett system där standard demodata är installerad och du måste välja den juridiska personen *USMF* innan du börjar.
 
+Du kan istället arbeta dig igenom det här scenariot genom att använda värderingsvärden från dina egna data under förutsättning att du har följande tillgängliga data:
 
-## <a name="create-an-item-arrival-journal-header"></a>Skapa ett artikelinförseljournalhuvud
-1. Gå till Artikelinförsel.
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Namn.
-    * Om du använder USMF kan du skriva WHS. Om du använder andra data måste journalen vars namn du väljer ha följande egenskaper: Kontrollera plockplats måste anges till Nej och Karantänhantering måste anges till Nej.  
-4. Ange ett värde i fältet Antal.
-5. Ange ett värde i fältet Plats.
-    * Markera platsen du använde till inköpsorderraden. Den fungerar som standardplats som blir förvalt värde för alla rader i journalen. Om du använder lagerställe 51 i USMF, välj plats 5.  
-6. Ange ett värde i fältet Lagerställe.
-    * Välj ett giltigt lagerställe för den plats som du har valt. Den fungerar som standardplats som blir förvalt värde för alla rader i journalen. Om du använder exempelvärdena i USMF, välj 51.  
-7. Skriv ett värde i fältet Plats.
-    * Välj en giltig lagerplats på lagerstället du har valt. Platsen måste vara kopplade till en platsprofil som styrs av id-numret. Den fungerar som standardplats som blir förvalt värde för alla rader i journalen. Om du använder exempelvärdena i USMF, välj Bulk-008.  
-8. Högerklicka på nedrullningspilen i id-nummerfältet och välj sedan Visa detaljer.
-9. Klicka på Ny.
-10. Ange ett värde i fältet för id-numret.
-    * Gör en notering av värdet.  
-11. Klicka på Spara.
-12. Stäng sidan.
-13. Ange ett värde i fältet för id-numret.
-    * Ange värdet för den registreringsskylt du just skapade. Den fungerar som standardplats som blir förvalt värde för alla rader i journalen.  
-14. Klicka på OK.
+- Du måste ha en bekräftad inköpsorder med en öppen inköpsorderrad.
+- Artikeln på raden måste lagras. Den får inte använda produktvarianter och får inte ha spårningsdimensioner.
+- Objektet måste associeras med en lagringsdimensionsgrupp som har lagerhanteringsprocessen aktiverad.
+- Lagerstället som används måste aktiveras för lagerstyrningsprocesser och lagerplatsen som du använder för inleveranser måste vara id-nummerstyrd.
 
-## <a name="add-a-line"></a>Lägga till en rad
-1. Klicka på Lägg till rad.
-2. Skriv ett värde i fältet Artikelnummer.
-    * Ange artikelnumret som du använde på inköpsorderraden.  
-3. Ange ett tal i fältet Kvantitet.
-    * Ange den kvantitet som du vill registrera.  
-    * Datumfältet bestämmer datumet då lagerbehållningen för artikeln ska registreras i lagret.  
-    * Parti-id:t fylls i av systemet, om det kan identifieras av den tillhandahållna informationen. Annars måste du lägga till det manuellt. Detta är ett obligatoriskt fält, som kopplar den här registreringen till en viss källdokumentrad.  
+## <a name="create-an-item-arrival-journal-header-that-uses-warehouse-management"></a>Skapa en journalrubrik för artikelinförleverans som använder lagerstyrning
 
-## <a name="complete-the-registration"></a>Slutför registreringen
-1. Klicka på Validera.
-    * Detta kontrollerar att journalen är klar att bokföras. Om valideringen misslyckas måste du korrigera felen innan du kan bokföra journalen.  
-2. Klicka på OK.
-    * Kontrollera meddelandet när du har klickat på OK. Det bör visas ett meddelande om att journalen är OK.  
-3. Klicka på Bokför.
-4. Klicka på OK.
-    * Kontrollera meddelandefältet när du har klickat på OK. Det bör visas ett meddelande om att åtgärden lyckades.  
-5. Stäng sidan.
+I följande scenario visas hur du skapar en artikelinföringsjournalrubrik där lagerstyrning används:
 
+1. Kontrollera att systemet innehåller en bekräftad inköpsorder som uppfyller kraven i det föregående avsnittet. I det här scenariot används en inköpsorder för företaget *USMF*, leverantörskonto *1001*, lagerställe *51* med en orderrad för *10 PL* (10 lastpallar) för artikelnummer *M9200*.
+1. Anteckna inköpsordernumret som du vill använda.
+1. Gå till **Lagerhantering \> Poster i redovisningsjournal \> Artikelinförsel \> Artikelinförsel**.
+1. Välj **Ny** i åtgärdsfönstret.
+1. Dialogrutan **Skapa lagerhanteringsjournal** öppnas. Välj ett journalnamn i fältet **Namn**.
+    - Om du använder exempeldata för *USMF*, välj *WHS*.
+    - Om du använder dina egna uppgifter måste den journal du väljer ha **Kontrollera plockplats** inställt på *Nej* och **Karantänhantering** anges till *Nej*.
+1. Ange **Referens** till *Inköpsorder*.
+1. Ange **Kontonummer** till *1001*.
+1. Ange **Nummer** till numret inköpsordern som du identifierade i det här arbetet.
+
+    ![Artikelinförseljournal](../media/item-arrival-journal-header.png "Artikelinförseljournal")
+
+1. Välj **OK** för att skapa journalrubriken.
+1. I avsnittet **Journalrader**, välj **Lägg till rad** och ange följande data:
+    - **Artikelnummer** – Ange till *M9200*. **Webbplatsen**, **lagerstället** och **kvantiteten** kommer att ställas in baserat på lagertransaktionsdata för de 10 lastpallar (1000 st).
+    - **Plats** – Ställ in på *001*. Den här platsen spårar inte licensinnehavare.
+
+    ![Artikelinförseljournalrad](../media/item-arrival-journal-line.png "Artikelinförseljournalrad")
+
+    > [!NOTE]
+    > Fältet **Datum** bestämmer datumet då lagerbehållningen för artikeln ska registreras i lagret.  
+    >
+    > **Parti-ID** fylls i av systemet, om det kan identifieras av den tillhandahållna informationen. Annars måste du ange det manuellt. Detta är ett obligatoriskt fält, som kopplar den här registreringen till en viss källdokumentrad.  
+
+1. Välj **Validera** i åtgärdsfönstret. Detta kontrollerar att journalen är klar att bokföras. Om valideringen misslyckas måste du korrigera felen innan du kan bokföra journalen.  
+1. Dialogrutan **Kontrollera journal** öppnas. Välj **OK**.
+1. Granska meddelandefältet. Det bör visas ett meddelande om att åtgärden lyckades.  
+1. Klicka på **Bokföra** i åtgärdsfönstret.
+1. Dialogrutan **Bokför journal** öppnas. Välj **OK**.
+1. Granska meddelandefältet. Det bör visas ett meddelande om att åtgärden lyckades.
+1. Välj **Funktioner > Produktinleverans** i åtgärdsfönstret om du vill uppdatera inköpsorderraden och bokföra en produktinleverans.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
