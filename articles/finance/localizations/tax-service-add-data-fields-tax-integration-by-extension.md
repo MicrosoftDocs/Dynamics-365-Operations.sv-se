@@ -37,9 +37,9 @@ Data i datamodellen transporteras av objekt och implementeras av klasser.
 
 Här är en lista över huvudobjekt:
 
-* AxClass/TaxIntegration **Dokument** Objekt
-* AxClass/TaxIntegration **Rad** Objekt
-* AxClass/TaxIntegration **TaxLine** Objekt
+* AxClass/TaxIntegration **Document** Object
+* AxClass/TaxIntegration **Line** Object
+* AxClass/TaxIntegration **TaxLine** Object
 
 I följande bild visas hur de här objekten är relaterade.
 
@@ -59,7 +59,7 @@ Data i flödet hanteras av aktiviteter.
 
 ### <a name="key-activities"></a>Huvudaktiviteter
 
-* AxClass/TaxIntegration **Beräkning** ActivityOnDocument
+* AxClass/TaxIntegration **Calculation** ActivityOnDocument
 * AxClass/TaxIntegration **CurrencyExchange** ActivityOnDocument
 * AxClass/TaxIntegration **DataPersistence** ActivityOnDocument
 * AxClass/TaxIntegration **DataRetrieval** ActivityOnDocument
