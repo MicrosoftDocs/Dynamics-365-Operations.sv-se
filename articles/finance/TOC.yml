@@ -934,6 +934,8 @@
                   href: general-ledger/tasks/define-financial-dimensions.md
                 - name: Underhåll standardmallar för ekonomisk dimension
                   href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                - name: Ekonomiska dimensionsuppsättningar
+                  href: general-ledger/financial-dimension-sets.md
                 - name: Skapa kontostrukturer
                   href: general-ledger/tasks/create-account-structures.md
                 - name: Ekonomiska dimensioner och bokföring
@@ -1408,44 +1410,72 @@
               href: public-sector/tasks/create-fund-type-public-sector.md
             - name: Lägga till en leverantörscertifieringstyp i den offentliga sektorn
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
-            - name: 'Beräkna kanadensisk HST (Harmonised Sales Tax, harmoniserad moms)'
+            - name: Beräkna kanadensisk harmoniserad moms
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Globalisering
           items:
             - name: Globaliseringsresurser
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
+            - name: Globaliseringstjänster
+              items:
+                - name: Översikt över globaliseringstjänster
+                  href: localizations/globalization-services-overview.md
+                - name: Regulatory Configuration Service
+                  items:
+                    - name: Översikt över Regulatory configuration service
+                      href: localizations/rcs-overview.md
+                    - name: Regulatory configuration service – Globaliseringsfunktioner
+                      href: localizations/rcs-globalization-feature.md
+                    - name: Skapa ER-konfigurationer i Regulatory configuration service och överföra dem till den globala databasen
+                      href: localizations/rcs-global-repo-upload.md
+                - name: Elektronisk fakturering
+                  items:
+                    - name: Översikt över elektronisk fakturering
+                      href: localizations/e-invoicing-service-overview.md
+                    - name: Administrationskomponenter i elektronisk fakturering
+                      href: localizations/e-invoicing-service-administration.md
+                    - name: Konfigurera elektronisk fakturering i Regulatory Configuration Services (RCS)
+                      href: localizations/e-invoicing-configuration-rcs.md
+                    - name: Utfärda elektroniska fakturor i Finance och Supply Chain Management
+                      href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
+                    - name: Skapa ett Azure-lagringskonto och ett nyckelvalv
+                      href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+                    - name: Kom i gång
+                      items:
+                        - name: Kom i gång med tjänstadministration för elektronisk fakturering
+                          href: localizations/e-invoicing-get-started-service-administration.md
+                        - name: Kom i gång med elektronisk fakturering
+                          href: localizations/e-invoicing-get-started.md
+                        - name: Kom i gång med elektronisk fakturering för Brasilien
+                          href: localizations/e-invoicing-bra-get-started.md
+                        - name: Kom i gång med elektronisk fakturering för Egypten
+                          href: localizations/e-invoicing-eg-get-started.md
+                        - name: Kom i gång med elektronisk fakturering för Italien
+                          href: localizations/e-invoicing-ita-get-started.md
+                        - name: Kom i gång med elektronisk fakturering för Mexiko
+                          href: localizations/e-invoicing-mex-get-started.md
+                        - name: Ställ in elektronisk fakturering
+                          href: localizations/e-invoicing-setup.md
+                    - name: Vanliga frågor och svar om elektronisk fakturering
+                      href: localizations/e-invoicing-faq.md
+                - name: Momsberäkning
+                  items:
+                    - name: Översikt över momsberäkning
+                      href: localizations/global-tax-calcuation-service-overview.md
+                    - name: Kom i gång med momsberäkning
+                      href: localizations/global-get-started-with-tax-calculation-service.md
+                    - name: Momsfunktionstöd för överföringsorder
+                      href: localizations/tasks/Tax-feature-support-for-transfer-order.md
+                    - name: Lägga till datafält i momskonfigurationer
+                      href: localizations/tax-service-add-data-fields-tax-configurations.md
+                    - name: Lägga till datafält i momsintegreringen genom att använda tillägg
+                      href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md
+                    - name: Flera momsregistreringsnummer
+                      href: localizations/emea-multiple-vat-registration-numbers.md
+                    - name: Ställa in en miljö för att söka efter huvuddata
+                      href: localizations/tax-service-set-up-environment-master-data-lookup.md
             - name: Regeluppdateringar
               href: localizations/regulatory-updates.md
-            - name: Elektronisk fakturering
-              items:
-                - name: Översikt över elektronisk fakturering
-                  href: localizations/e-invoicing-service-overview.md
-                - name: Administrationskomponenter i elektronisk fakturering
-                  href: localizations/e-invoicing-service-administration.md
-                - name: Konfigurera elektronisk fakturering i Regulatory Configuration Services (RCS)
-                  href: localizations/e-invoicing-configuration-rcs.md
-                - name: Utfärda elektroniska fakturor i Finance och Supply Chain Management
-                  href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
-                - name: Skapa ett Azure-lagringskonto och ett nyckelvalv
-                  href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
-                - name: Kom i gång
-                  items:
-                    - name: Kom i gång med tjänstadministration för elektronisk fakturering
-                      href: localizations/e-invoicing-get-started-service-administration.md
-                    - name: Kom i gång med elektronisk fakturering
-                      href: localizations/e-invoicing-get-started.md
-                    - name: Kom i gång med elektronisk fakturering för Brasilien
-                      href: localizations/e-invoicing-bra-get-started.md
-                    - name: Kom i gång med elektronisk fakturering för Egypten
-                      href: localizations/e-invoicing-eg-get-started.md
-                    - name: Kom i gång med elektronisk fakturering för Italien
-                      href: localizations/e-invoicing-ita-get-started.md
-                    - name: Kom i gång med elektronisk fakturering för Mexiko
-                      href: localizations/e-invoicing-mex-get-started.md
-                    - name: Ställ in elektronisk fakturering
-                      href: localizations/e-invoicing-setup.md
-                - name: Vanliga frågor och svar om elektronisk fakturering
-                  href: localizations/e-invoicing-faq.md
             - name: Australien
               items:
                 - name: Australien – översikt
@@ -1468,6 +1498,8 @@
                   href: localizations/emea-aut-packing-material-fee-calculation.md
                 - name: Momsutdrag
                   href: localizations/emea-aut-vat-statement-details.md
+                - name: Rapport för gränsöverskridande tjänster
+                  href: localizations/emea-aut-cross-border-services-report.md
             - name: Bahrain
               items:
                 - name: Bahrain – översikt
@@ -1492,6 +1524,8 @@
                   href: localizations/emea-bel-intervat-tax-declaration.md
                 - name: Avstämningsrapporter
                   href: localizations/emea-bel-reconciliation-reports.md
+                - name: Journalrapporter
+                  href: localizations/emea-bel-journal-reports.md
                 - name: Ställa in rapportering av betalningsbalans
                   href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: Ställ in och underhåll PRODCOM
@@ -1692,7 +1726,7 @@
               items:
                 - name: Kina – översikt
                   href: localizations/china.md
-                - name: Finance and Operations som drivs av 21Vianet i Kina
+                - name: Finance and Operations – drivs av 21Vianet i Kina
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
                 - name: Jämförelse av strukturlista
                   href: localizations/apac-chn-bom-comparison.md
@@ -2118,32 +2152,6 @@
                       href: localizations/ind-news-letter-10-0-13.md
                     - name: Nyheter och ändringar i 10.0.14
                       href: localizations/apac-ind-news-letter-10-0-14.md
-                - name: Anläggningstillgångar
-                  items:
-                    - name: Indiska anläggningstillgångar – översikt
-                      href: localizations/apac-ind-fixed-assets.md
-                    - name: Koppla en dagsbaserad kalender till en förteckning över anläggningstillgångar
-                      href: localizations/tasks/apac-ind-attach-day-based-calendar.md
-                    - name: Beräkna skiftavskrivning
-                      href: localizations/tasks/apac-ind-shift-depreciation-rates.md
-                    - name: Skapa en lagermodellgrupp för kapitalvaror
-                      href: localizations/tasks/apac-ind-create-inventory-model-group.md
-                    - name: Skapa och bokföra avskrivning
-                      href: localizations/apac-ind-calculate-post-depreciation.md
-                    - name: Definiera typ av växling och bransch för böcker och koppla till anläggningstillgång
-                      href: localizations/tasks/apac-ind-books-shift-industry-types.md
-                    - name: Återföring av transaktioner för anläggningstillgångar
-                      href: localizations/apac-ind-reverse-fixed-assets-transactions.md
-                    - name: Beräkning av skiftavskrivning
-                      href: localizations/apac-ind-calculation-shift-depreciation.md
-                    - name: Ställ in en dagsbaserad räkenskapskalender
-                      href: localizations/tasks/apac-ind-day-based-calendar.md
-                    - name: Ställ in parametrar för att beräkna avskrivningar
-                      href: localizations/tasks/apac-ind-set-up-depreciation.md
-                    - name: Ställ in avskrivningsregel för tillgångsgrupp
-                      href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
-                    - name: Överför kapitalvaror till anläggningstillgången
-                      href: localizations/tasks/apac-ind-transfer-capital-items.md
                 - name: Indirekt moms
                   items:
                     - name: 'GST (moms), Indien'
@@ -2300,6 +2308,10 @@
                                   href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
                                 - name: Återbetalningar till kund
                                   href: localizations/apac-ind-GST-customer-payment-refund.md
+                            - name: Projekthanteringstransaktioner
+                              items:
+                                - name: Mervärdesskatt (GST) projekttransaktioner
+                                  href: localizations/apac-ind-gst-project-transactions.md
                             - name: Momsjustering
                               items:
                                 - name: Justeringsbelopp för moms
@@ -2336,6 +2348,32 @@
                           href: localizations/apac-ind-tax-thresholds.md
                         - name: TCS vid försäljning av varor
                           href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                - name: Anläggningstillgångar
+                  items:
+                    - name: Indiska anläggningstillgångar – översikt
+                      href: localizations/apac-ind-fixed-assets.md
+                    - name: Koppla en dagsbaserad kalender till en förteckning över anläggningstillgångar
+                      href: localizations/tasks/apac-ind-attach-day-based-calendar.md
+                    - name: Beräkna skiftavskrivning
+                      href: localizations/tasks/apac-ind-shift-depreciation-rates.md
+                    - name: Skapa en lagermodellgrupp för kapitalvaror
+                      href: localizations/tasks/apac-ind-create-inventory-model-group.md
+                    - name: Skapa och bokföra avskrivning
+                      href: localizations/apac-ind-calculate-post-depreciation.md
+                    - name: Definiera typ av växling och bransch för böcker och koppla till anläggningstillgång
+                      href: localizations/tasks/apac-ind-books-shift-industry-types.md
+                    - name: Återföring av transaktioner för anläggningstillgångar
+                      href: localizations/apac-ind-reverse-fixed-assets-transactions.md
+                    - name: Beräkning av skiftavskrivning
+                      href: localizations/apac-ind-calculation-shift-depreciation.md
+                    - name: Ställ in en dagsbaserad räkenskapskalender
+                      href: localizations/tasks/apac-ind-day-based-calendar.md
+                    - name: Ställ in parametrar för att beräkna avskrivningar
+                      href: localizations/tasks/apac-ind-set-up-depreciation.md
+                    - name: Ställ in avskrivningsregel för tillgångsgrupp
+                      href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
+                    - name: Överför kapitalvaror till anläggningstillgången
+                      href: localizations/tasks/apac-ind-transfer-capital-items.md
             - name: Italien
               items:
                 - name: Italien – översikt
@@ -2958,6 +2996,8 @@
                       href: localizations/rus-cash-flow-tax-registers.md
                     - name: Klassade utgiftsregister
                       href: localizations/rus-rated-expenses-registers.md
+                    - name: Leverantörsreskontra – skatteskuldregister och skuldavskrivningar
+                      href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
             - name: Saudiarabien
               items:
                 - name: Saudiarabien – översikt
@@ -3034,14 +3074,20 @@
                   href: localizations/thailand.md
                 - name: Lagerkortsrapporter
                   href: localizations/apac-tha-stock-card-reports.md
+                - name: Momsfakturor
+                  href: localizations/apac-tha-tax-invoices.md
                 - name: Momsfaktura för ersättning/justering
                   href: localizations/apac-tha-substitution-and-adjustment-invoices.md
                 - name: Orealiserad moms
                   href: localizations/apac-tha-unrealized-vat.md
+                - name: Genomsnittlig moms för inköpstransaktioner
+                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Grendimensioner för skatt
                   href: localizations/apac-tha-tax-branch-dimensions.md
                 - name: Momsrapport
                   href: localizations/apac-tha-sales-vat-report.md
+                - name: Genomsnittlig moms för inköpstransaktioner
+                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Källskatt
                   href: localizations/apac-tha-withholding-tax.md
             - name: Förenade Arabemiraten (UAE)
@@ -3869,10 +3915,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
                         - name: Ändra och kör format för att använda dokumenthanteringsfiler
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
-                    - name: Felsök datakällor
-                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Generera streckkods bilder med BARCODE
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurera sökningsdatakällor att använda programspecifika parametrar för ER
+                      href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Felsök datakällor
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurera modellmappningar
                   items:
                     - name: Konfigurera ER-modellmappningar som är beroende av landssammanhang

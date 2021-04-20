@@ -228,6 +228,8 @@
                               href: data-entities/dual-write/party-gab.md
                             - name: Använda Power Portal med datamodellen för part
                               href: data-entities/dual-write/party-gab-portal.md
+                            - name: Uppgradera till part- och globala adressboksmodellen
+                              href: data-entities/dual-write/upgrade-party-gab.md
                             - name: Note-integration
                               href: data-entities/dual-write/notes-integration.md
                             - name: Mappningsreferens
@@ -714,6 +716,8 @@
               items:
                 - name: X++ och felsökningsfunktioner
                   href: dev-tools/new-x-debugger-features.md
+                - name: Visual Studio 2017 krav för X++
+                  href: dev-tools/developer-tools-vs2017.md
                 - name: Felsöka kod av typen X++
                   href: dev-tools/debug-xpp.md
                 - name: EventHandlerResult-klasser i scenarier med begäran eller svar
@@ -1026,10 +1030,14 @@
                       href: perf-test/atl-faq.md
             - name: Gäller från
               href: dev-tools/date-effectivity.md
-            - name: ISV-licensiering
-              href: dev-tools/isv-licensing.md
-            - name: Lokal ISV-licensiering
-              href: dev-tools/isv-licensing-on-prem.md
+            - name: Utveckling för oberoende programvaruleverantörer
+              items:
+                - name: Länka X++-moduler till paket med hjälp av ISV Studio
+                  href: dev-tools/isv-studio-solutions.md
+                - name: ISV-licensiering
+                  href: dev-tools/isv-licensing.md
+                - name: Lokal ISV-licensiering
+                  href: dev-tools/isv-licensing-on-prem.md
         - name: Allmänna dataskyddsförordningen (GDPR)
           items:
             - name: Allmänna dataskyddsförordningen – översikt
@@ -1142,10 +1150,10 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform-integration
           items:
+            - name: Microsoft Power Platform-integration med Finance and Operations
+              href: power-platform/overview.md
             - name: Virtuella enheter
               items:
-                - name: Microsoft Power Platform-integration med Finance and Operations
-                  href: power-platform/overview.md
                 - name: Enhetsmodellering
                   href: power-platform/entity-modeling.md
                 - name: Livscykelhantering för program
@@ -1454,11 +1462,13 @@
               href: lifecycle-services/support-experience.md
             - name: Hantera supportupplevelser för Finance and Operations-appar
               href: lifecycle-services/cloud-powered-support-lcs.md
+            - name: Produktionssupport och övervakning
+              href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
         - name: Systemadministration
           items:
             - name: Systemadministration – startsida
               href: sysadmin/system-administration-home-page.md
-            - name: Lägga till länkar till juridiska villkor och sekretesspolicy
+            - name: Lägg till länkar till formella villkor och sekretesspolicy
               href: sysadmin/legal-terms-privacy-statement.md
             - name: Rapport med licenskoder och konfigurationsnycklar
               href: sysadmin/license-codes-configuration-keys-report.md
