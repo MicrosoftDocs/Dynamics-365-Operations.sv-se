@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9590213ef73f7623aff10d4c8ee3efbea0e7984b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e227cabdd205b7a0c1fe784fc719b538e6ea4443
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823467"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907701"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migrering till planeringsoptimering för huvudplanering
 
@@ -63,10 +63,14 @@ För närvarande är undantag för migrering av planeringsoptimering endast rele
 
 När de nödvändiga funktionerna blir tillgängliga kommer Microsoft att tillhandahålla en respitperiod tills undantaget upphör att gälla. Miljöadministratören kommer att informeras när de nödvändiga funktionerna har blivit tillgängliga och respitperiod har inletts.
 
-> [!NOTE]
-> Du kan bara begära ett undantag för produktionsmiljöer, inte för begränsade miljöer. Om du behöver inaktivera undantagsfelet för planeringsoptimeringen i en infrastruktur som en service (IaaS) miljö med begränsat läge kör du SQL-frågan i [begränsade miljöer](#faq-sandbox).
+Flödesschemat nedan sammanfattar informationen i detta avsnitt så att du snabbt kan ta reda på om du bör begära ett undantag. Om du behöver begära ett undantag kan du fylla i och skicka in enkäten [Planera optimeringsmigrering och undantag](https://go.microsoft.com/fwlink/?linkid=2144962).
 
-## <a name="frequently-asked-questions"></a>Vanliga frågor
+![Flödesschema för undantag](media/exception-diagram.png "Flödesschema för undantag")
+
+> [!NOTE]
+> Du kan endast begära ett undantag för klientorganisationer som för närvarande inkluderar, eller kommer att omfatta, en produktionsmiljö, ej endast klientorganisationer med enbart sandbox-miljöer. Om du behöver inaktivera undantagsfelet för planeringsoptimeringen i en infrastruktur som en service (IaaS) miljö med begränsat läge kör du SQL-frågeställningen i [begränsade miljöer](#faq-sandbox).
+
+## <a name="frequently-asked-questions"></a>Vanliga frågeställningar
 
 ### <a name="sandbox-environments"></a><a name="faq-sandbox"></a>Miljö i begränsade lägen
 

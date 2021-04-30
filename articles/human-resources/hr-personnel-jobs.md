@@ -16,12 +16,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1c481a468b2d624f029082fe27e7f14ecf7c068d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ad7feb837594186f4282103881745c4cfc944d52
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803499"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891064"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Ställ in komponenter för ett jobb
 
@@ -86,7 +86,7 @@ Du kan underhålla jobbuppgifter med hjälp av sidan **Jobbuppgifter**. På sida
 Använd ansvarsområden för att indikera arbetsroller, processer och produkter som en arbetare i en befattning bär ansvar för. Till exempel: För ett jobb vid namn "Revisor" kan ett ansvarsområde vara "Ekonomisk rapporteringen för produkt A”. Du underhåller ansvarsområden med hjälp av sidan **Ansvarsområden**, som du hittar genom att använda sökfunktionen. På sidan **Ansvarsområden** anger du ett namn och en beskrivning för ansvarsområdet. Om du vill kan du ange ytterligare information i fältet **Anteckningar**. Anteckningarna kan uppdateras för ett specifikt projekt utan att ändra de anteckningar som du har angett.
 
 ## <a name="steps-for-creating-a-job"></a>Steg för att skapa ett jobb
-Hänvisa till ämnet [Definiera nya jobb](../fin-and-ops/hr/tasks/define-new-jobs.md) för stegvisa anvisningar om hur du skapar ett nytt jobb. 
+Hänvisa till ämnet [Definiera nya jobb](./hr-personnel-define-jobs.md) för stegvisa anvisningar om hur du skapar ett nytt jobb. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

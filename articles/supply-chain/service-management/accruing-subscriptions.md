@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d6f2f69b7093e5408b016f4a69792b28c70f57f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6a2b581c8ae52f4c379e8e511dc898a8d106d149
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824688"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908070"
 ---
 # <a name="accruing-subscriptions"></a>Periodisera abonnemang 
 
@@ -41,7 +41,7 @@ Om du krediterar fakturerade abonnemangsbelopp kan du använda två olika metode
 
   - Du kan låta de periodiserade summorna återföras på det datum då kreditfakturan bokförs eller på det ursprungliga bokföringsdatumet för periodiseringen.
 
-Mer information finns i [Abonnemangsparametrar (formulär)](https://technet.microsoft.com/library/aa619615.aspx).
+Mer information finns i [Abonnemangsparametrar (formulär)](/dynamicsax-2012//subscription-parameters-form).
 
 ## <a name="setup-requirements"></a>Installationskrav
 
@@ -139,7 +139,7 @@ Du kan kontrollera antalet redovisningstransaktioner som skapas när du bokför 
 
 1.  Klicka på **Projekthantering och redovisning** \> **Inställningar** \> **Parametrar för projekthantering och redovisning**.
 
-2.  På fliken **Ekonomi** i fältet **Faktura**, välj **Total** eller **Rad**.
+2.  På fliken **Finance** i fältet **Faktura**, välj **Total** eller **Rad**.
 
 
 ## <a name="see-also"></a>Se även

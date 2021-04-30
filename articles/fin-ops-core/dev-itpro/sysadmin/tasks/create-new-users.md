@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b994473b4535c255f87551a6d97e197516fc2a9c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 88d3f1fba05d944e78e4595018d190c3dc41e076
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745847"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907921"
 ---
 # <a name="create-new-users"></a>Skapa nya användare
 
@@ -29,10 +29,10 @@ Innan du får åtkomst till Finance and Operations-appar måste du först lägga
 Mer information om hur du köper och licens för Finance and Operations-appar, se [Microsoft Dynamics 365 licenshandboken](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Tilldela en licens till en användare.
-Systemadministratörer kan [tilldela licenser till användare](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) i [Microsoft 365 administrationscenter](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide)
+Systemadministratörer kan [tilldela licenser till användare](/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) i [Microsoft 365 administrationscenter](/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide)
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Lägg till en extern användare i Azure AD och tilldela en licens 
-Externa användare måste finnas med i klientkatalogen (Azure Active Directory (Azure AD)) så att de kan tilldelas licenser. Dessa externa användare ska läggas till i innehavaren av Azure AD som gästanvändare och sedan tilldelas de lämpliga licenserna. Ett krav för Finance and Operations-appar är att gästanvändarens företag måste använda Azure AD. Mer information finns i [lägga till Azure Active Directory B2B samarbetsanvändare i Azure-portalen](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+Externa användare måste finnas med i klientkatalogen (Azure Active Directory (Azure AD)) så att de kan tilldelas licenser. Dessa externa användare ska läggas till i innehavaren av Azure AD som gästanvändare och sedan tilldelas de lämpliga licenserna. Ett krav för Finance and Operations-appar är att gästanvändarens företag måste använda Azure AD. Mer information finns i [lägga till Azure Active Directory B2B samarbetsanvändare i Azure-portalen](/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="import-new-users-from-azure-ad"></a>Importera ny användare från Azure AD 
 1. Gå till **Systemadministration** \> **Användare** \> **Användare**.
@@ -57,7 +57,7 @@ Externa användare måste finnas med i klientkatalogen (Azure Active Directory (
 7. I fältet **Företag** välj standardstartföretag för användaren. 
 8. Välj **Spara**.
 
-Värdena för identitetsleverantör och telemetri-ID kommer att uppdateras baserat på en [Microsoft Graph](https://docs.microsoft.com/graph/overview)-samtal när användarposten sparas. Telemetr-ID:t baseras på användarens objekt-ID/säkerhetsidentifierare (SID) i Azure AD.
+Värdena för identitetsleverantör och telemetri-ID kommer att uppdateras baserat på en [Microsoft Graph](/graph/overview)-samtal när användarposten sparas. Telemetr-ID:t baseras på användarens objekt-ID/säkerhetsidentifierare (SID) i Azure AD.
 
 > [!NOTE]
 > När du har lagt till en användare måste du tilldela roller och organisationer, enligt vad som är tillämpligt. För mer information, se [Tilldela användare till säkerhetsroller](assign-users-security-roles.md). Enligt vissa villkor kan det även vara obligatoriskt att koppla användaren till en **person** och uppdatera **användaralternativ**, till exempel språk.

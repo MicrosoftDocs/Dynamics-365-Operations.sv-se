@@ -13,12 +13,12 @@ ms.search.region: Sweden
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4632a7e7d6d1f72cc896839fddf11cfc0adfb90f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a0fc2a7d2cb047ad460a668a4d3f50d1e7fb8235
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832578"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890589"
 ---
 # <a name="sweden-overview"></a>Sverige – översikt
 
@@ -28,7 +28,7 @@ Det här avsnittet innehåller länkar till dokumentationsresurser för Sverige.
 
 - [Exportera ekonomisk information för revisorer i Sverige](emea-swe-sie-standard-report.md)
 - [Importera betalningsformat](emea-swe-payment-formats-import.md)
-- [Funktioner för kassaapparat](../../retail/localizations/emea-swe-cash-registers.md)
+- [Funktioner för kassaapparat](../../commerce/localizations/emea-swe-cash-registers.md)
 - [Momsbetalningsrapport för Sverige](emea-swe-sales-tax-payment-report-sweden.md)
 
 

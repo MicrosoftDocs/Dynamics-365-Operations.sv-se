@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3954660e04b4da26908b9b981fa043474e62bf59
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 382cfc3eaacd0610491646f32e8c7684e0451d7f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832630"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892383"
 ---
 # <a name="europe-overview"></a>Europa – översikt
 
@@ -62,7 +62,7 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
 - [Tidsgräns för fakturautfärdande](emea-invoice-issue-deadline.md)
 - [Fakturabearbetning](emea-invoice-processing.md)
 - [Utfärda ett EU-mottagningskvitto](tasks/eur-00012-issue-eu-entry-certificate.md)
-- [Standarder för elektronisk fakturering som stöds](emea-oioubl-standards-electronic-invoicing.md)
+- [Standarder för e-fakturering som stöds](emea-oioubl-standards-electronic-invoicing.md)
 - [Tvingad generering av elektroniska fakturor](emea-eur-forced-einvoices.md)
 - [Ursprunglig fakturareferens (Östeuropa)](tasks/ee-00004-original-invoice-reference.md)
 - [Partsökning via moms-ID](tasks/eur-00015-party-search-vat-id.md)
@@ -96,8 +96,8 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-- [Översikt över elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Hämta konfigurationer för elektronisk rapportering från Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Översikt över elektronisk rapportering](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Hämta konfigurationer för elektronisk rapportering från Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

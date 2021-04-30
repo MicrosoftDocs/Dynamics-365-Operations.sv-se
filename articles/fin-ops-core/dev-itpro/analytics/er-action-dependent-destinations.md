@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ac0efbbe645969cdf0419bf533d34e38b76fb67a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7decdb1d759284c616ecf928c10f99098627472d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751242"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893588"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurera åtgärdsberoende ER-destinationer
 
@@ -60,7 +60,7 @@ Om du väljer dokumenttyp **Någon** väljs **Automatisk identifiering** automat
     - När åtgärden **Skicka** anges under körning används ER-destinationen **e-post** används.
     - När åtgärden **Skriva ut** anges under körning används ER-destinationen **Skrivare** används.
 
-Du kan till exempel använda ER-formatet **Fritextfaktura (Excel)** för att skriva ut en [fritextfaktura](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) när du bokför den. Om du vill dirigera ett genererat dokument måste du konfigurera ER-destinationer för det här ER-formatet. Du kanske till exempel måste konfigurera dessa ER-destinationer så att du kan utföra följande på ett genererat dokument:
+Du kan till exempel använda ER-formatet **Fritextfaktura (Excel)** för att skriva ut en [fritextfaktura](../../../finance/accounts-receivable/create-free-text-invoice-new.md) när du bokför den. Om du vill dirigera ett genererat dokument måste du konfigurera ER-destinationer för det här ER-formatet. Du kanske till exempel måste konfigurera dessa ER-destinationer så att du kan utföra följande på ett genererat dokument:
 
 - Arkivera dokumentet om ER-formatet körs men ingen åtgärdskod anges (till exempel när dokumentet skickas elektroniskt).
 - Förhandsgranska dokumentet i en webbläsare när en användare utför **vy**-åtgärden.
@@ -82,7 +82,7 @@ I följande bild visas hur du kan uppnå detta konfigurerar ER-destinationer som
 
 När ett ER-format körs, om användaråtgärder har tillhandahållits av användare som har rätt [behörigheter](electronic-reporting-destinations.md#security-considerations) för att ändra konfigurerade destinationsinställningar vid körning visas en dialogruta som ger möjlighet att ändra de konfigurerade destinationsinställningarna. Den här dialogrutan är valfri och utseendet beror på hur anropet som ER-ramverket gör för att köra ett ER-format har implementerats. Om den här dialogrutan visas kommer ER-destinationer i den att aktiveras enligt den användaråtgärd som tillhandahålls.
 
-Följande illustration visar ett exempel på dialogrutan **destinationer i elektroniskt rapporteringsformat** som visas när en fritextfaktura [bokförs](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) och ER-formatet **fritextfaktura invoice (Excel)** körs för att skapa dokumentet om åtgärden **skrivare** tillhandahölls och ER-destinationer konfigurerades för det här formatet som visas tidigare i detta ämne.
+Följande illustration visar ett exempel på dialogrutan **destinationer i elektroniskt rapporteringsformat** som visas när en fritextfaktura [bokförs](../../../finance/accounts-receivable/create-free-text-invoice-new.md) och ER-formatet **fritextfaktura invoice (Excel)** körs för att skapa dokumentet om åtgärden **skrivare** tillhandahölls och ER-destinationer konfigurerades för det här formatet som visas tidigare i detta ämne.
 
 ![Dialogruta som ger möjlighet att ändra de initialt konfigurerade ER-destinationera för det körande ER-formatet](./media/er-destination-action-dependent-02.gif)
 

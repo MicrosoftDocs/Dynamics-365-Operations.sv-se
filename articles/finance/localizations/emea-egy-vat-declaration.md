@@ -8,18 +8,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: kfend
 ms.search.scope: ''
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3ebb78f3fa481cc63376b7d6428cf4944bbf6f4c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cfbcffd6d9401394cd3089977680500806edd663
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839826"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881456"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Momsdeklaration för Egypten (EG-00002)
 
@@ -41,7 +41,7 @@ Formuläret momsretur i Dynamics 365 Finance innehåller följande rapporter:
 Den primära adressen för den juridiska personen måste dock finnas i Egypten.
 I arbetsytan **utgiftshantering** aktiverar du följande funktion:
 
-   - (Egypten) Kategorihierarki för rapporten moms för försäljning och inköp.
+   - (Egypten) Kategorihierarki för rapporten Skatt på försäljning och inköp.
 
 Mer information om hur du aktiverar funktioner finns i [Översikt över funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -50,7 +50,7 @@ I arbetsytan **Elektroniskt rapportering**, importera följande elektroniskt rap
 - Momsdeklaration Excel (EG)
 
 > [!NOTE]
-> Formatet ovan är baserat på **Momsdeklarationsmodell** och använder **Momsdeklarationsmodell mappning**. Ytterligare konfigurationer importeras automatiskt.
+> Formatet ovan är baserat på **Skattedeklarationsmodell** och använder **Mappning för skattedeklarationsmodell**. Ytterligare konfigurationer importeras automatiskt.
 
 Mer information om hur du importerar konfigurationer för elektronisk rapportering finns i [Hämta konfigurationer för elektronisk rapportering från Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
@@ -62,9 +62,9 @@ Information om hur du testar produktion och användares godkännande (UAT) finns
 
 Ladda upp följande konfigurationer för att generera momsdeklarationsformuläret och relaterade rapporter i en juridisk enhet i Egypten:
 
-- Momsdeklarationsmodell.version.70.xml eller senare version
-- Momsdeklarationsmodell mappning.version.70.120.xml eller senare version
-- Momsdeklaration Excel (EG).version.70.32 eller en senare version
+- Skattedeklarationsmodell.version.70.xml eller senare version
+- Skattedeklarationsmodell mappning.version.70.120.xml eller senare version
+- Skattedeklaration Excel (EG).version.70.32 eller en senare version
 
 När du har hämtat ER-konfigurationerna från Lifecycle Services (LCS) eller den globala databasen gör du så här.
 
@@ -74,7 +74,7 @@ När du har hämtat ER-konfigurationerna från Lifecycle Services (LCS) eller de
 
 ## <a name="set-up-application-specific-parameters"></a>Ställa in appspecifika parametrar
 
-Med hjälp av de programspecifika parametrarna kan du ange kriterier för hur momstransaktioner ska klassificeras och beräknas på varje rad när rapporten genereras. Bestämmandet baseras på konfigurationen av artikelmomsgruppen, momsgruppen, momskoden och andra kriterier som upprättats i sökdefinitionen.
+Med hjälp av de programspecifika parametrarna kan du ange kriterier för hur skattetransaktioner ska klassificeras och beräknas på varje rad när rapporten genereras. Bestämmandet baseras på konfigurationen av artikelmomsgruppen, momsgruppen, momskoden och andra kriterier som upprättats i sökdefinitionen.
 
 Rapporterna för försäljnings- och inköpsbok för Egypten innehåller en uppsättning kolumner som motsvarar specifika transaktionsklassificeringar som typer av operationer, produkter och dokument som är specifika för Egypten. I stället för att inkludera dessa nya klassificeringar som ny postdata när transaktionerna publiceras kommer klassificeringarna att bestämmas baserat på olika uppslag som introducerades i **Konfigurationer** > **ställa in programspecifika parametrar** > **inställning** för att uppfylla kraven för momsrapporterna för Egypten. 
 
@@ -95,7 +95,7 @@ Gör på följande sätt om du vill ställa in de olika sökningar som används 
 2. Markera den aktuella versionen och på snabbfliken **Uppslag** markera söknamnet. Till exempel **SalesItemTypeLookup**. Vid den här sökningen identifieras den lista över klassificeringar i momsboken som krävs av skattemyndigheten.
 3. På snabbfliken **Villkor** markerar du **Lägg till** och på den nya raden i kolumnen **Sökresultat** markerar du den relaterade rad som representerar klassificeringen i **Kolumn O**.
 4. I kolumnen **Momsgrupp** väljer du den momsgrupp som används för att identifiera klassificeringen. Till exempel, **lokal försäljningsfaktura**. Du kan också använda artikelmomsgrupp, momskod eller kombinationen av trädattribut om konfigurationen har definierats på ett annat sätt. 
-5. I kolumnen **Namn**, välj momstransaktionsklassificering.
+5. I kolumnen **Namn**, välj skattetransaktionsklassificering.
 6. Upprepa steg 3–5 för alla tillgängliga sökningar.
 7. Välj **Lägg till** för att inkludera den sista postraden och i kolumnen **Sökresultat** välj **Inte aktuellt**. 
 8. Välj i de återstående kolumnerna **Ej tom**. 
@@ -107,7 +107,7 @@ Följande register ger ett exempel på den föreslagna konfigurationen för de b
 
 **SalesItemTypeLookup**
 
-| Sökningsresultat         | Rad | Momsgrupp    | Artikelmomsgrupp    | Momskod (kod) | Namn                  |
+| Sökningsresultat         | Rad | Momsgrupp    | Artikelmomsgrupp    | Skattekod (kod) | Namn                  |
 |-----------------------|------|--------------------|-------------------------|-----------------|-----------------------|
 | Lokal              | 1    | VAT_LOCAL          | *Inte tom*             | *Inte tom*     | Försäljning                 |
 | Lokal              | 2    | VAT_LOCAL          | *Inte tom*             | *Inte tom*     | SalesCreditNote       |
@@ -128,7 +128,7 @@ Följande register ger ett exempel på den föreslagna konfigurationen för de b
 
  **SalesOperationTypeLookup**
 
-| Sökningsresultat  | Rad | Artikelmomsgrupp    | Momskod    | Namn                  |
+| Sökningsresultat  | Rad | Artikelmomsgrupp    | Skattekod    | Namn                  |
 |----------------|------|-------------------------|-------------|-----------------------|
 | Varor          | 1    | VAT_GOODS               | *Inte tom* | Försäljning                 |
 | Varor          | 2    | VAT_GOODS               | *Inte tom* | SalesCreditNote       |
@@ -144,7 +144,7 @@ Följande register ger ett exempel på den föreslagna konfigurationen för de b
 
 **PurchaseItemTypeLookup**
 
-| Sökningsresultat          | Rad | Artikelmomsgrupp    | Momskod    | Namn                     |
+| Sökningsresultat          | Rad | Artikelmomsgrupp    | Skattekod    | Namn                     |
 |------------------------|------|-------------------------|-------------|--------------------------|
 | Varor                  | 1    | VAT_GOODS               | *Inte tom* | Inköp                 |
 | Varor                  | 2    | VAT_GOODS               | *Inte tom* | PurchaseCreditNote       |
@@ -162,7 +162,7 @@ Följande register ger ett exempel på den föreslagna konfigurationen för de b
 
 **PurchaseOperationTypeLookup**
 
-| Sökningsresultat  | Rad | Momsgrupp  | Momskod    | Namn                     |
+| Sökningsresultat  | Rad | Momsgrupp  | Skattekod    | Namn                     |
 |----------------|------|------------------|-------------|--------------------------|
 | Lokal       | 1    | VAT_LOCAL        | *Inte tom* | Inköp                 |
 | Lokal       | 2    | VAT_LOCAL        | *Inte tom* | PurchaseCreditNote       |
@@ -178,7 +178,7 @@ Följande register ger ett exempel på den föreslagna konfigurationen för de b
 
 **VATRateTypeLookup**
 
-| Sökningsresultat  | Rad | Momskod (kod) |
+| Sökningsresultat  | Rad | Skattekod (kod) |
 |----------------|------|-----------------|
 | GeneralGoods   | 1    | VAT_ST          |
 | GeneralGoods   | 2    | VAT_RD          |
@@ -201,7 +201,7 @@ Om du vill generera en formulärrapport för momsretur i Microsoft Excel-format 
 ## <a name="generate-a-vat-return-report"></a>Generera en momsrapport
 Processen för att förbereda och skicka in en momsreturrapport för en period baseras på momsbetalningstransaktioner som har bokförts under jobbet Kvitta och bokför moms. Mer information om hur du kvitta och rapportera moms finns i [Momsöversikt](../general-ledger/indirect-taxes-overview.md).
 
-Gör på följande sätt när du vill generera momsdeklarationsrapporten.
+Gör på följande sätt när du vill generera skattedeklarationsrapporten.
 
 1. Gå till **Skatt** > **Deklarationer** > **Moms** > **Rapportera moms för kvittningsperiod** eller **Kvitta och bokför moms**.
 2. Välj **Kvittningsperiod**.

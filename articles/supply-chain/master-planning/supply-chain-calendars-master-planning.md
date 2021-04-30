@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dcc66549bf6bdd67438bea9ac3c29c3f01e2674e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7a53efb753a75916c85dc4a45a3c64872a7f5d32
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841777"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908381"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendrar och huvudplanering
 
@@ -90,7 +90,7 @@ För att ange datum då en kund kan acceptera leveranser kan du tilldela en inle
 
 Observera att det går bara att inkludera en kalender per kund. Om du vill inkludera en kalender för en annan adress för en kund måste du skapa en kund per adress och tilldela deras respektive kalender. 
 
-Det begärda inleveransdatumet på försäljningsorderraderna påverkas av kundkalendern och kontrollmetoden för leveransdatum. Du kan läsa mer om hur det tidigaste leveransdatumet beräknas i [Orderlöfte](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+Det begärda inleveransdatumet på försäljningsorderraderna påverkas av kundkalendern och kontrollmetoden för leveransdatum. Du kan läsa mer om hur det tidigaste leveransdatumet beräknas i [Orderlöfte](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Leveranskalender för en bestämd juridisk person
 Om du vill ange de datum då en juridisk person kan leverera varor kan du ställa in en leveranskalender under **Organisationsadministration > organisationer > juridiska personer**. Välj den juridiska personen och lägg till kalendern på fliken **Utländsk handel och logistik** i fältet **Leveranskalender**. Leveranskalendern fungerar som standard för alla kalendrar i lagerstället i den juridiska personen. 

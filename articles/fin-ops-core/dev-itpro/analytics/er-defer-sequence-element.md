@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 59a421b5e81366845901c44486acb3dfa3781850
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cdcbc828fadce641cbee2cc6135be819a03275c9
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753658"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894110"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Skjut upp körningen av serie element i ER-format
 
@@ -42,7 +42,7 @@ Alternativet **uppskjuten körning** körning är inte tillämpligt på sekvense
 
 ## <a name="example-defer-the-execution-of-a-sequence-element-in-an-er-format"></a><a name="Example"></a>Exempel: Skjut upp körningen av serieelement i ER-format
 
-Följande steg förklarar hur en användare i systemadministratören eller funktionell konsult för elektronisk rapportering [roll](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) kan konfigurera ett ER-format som innehåller ett sekvenselement där exekveringsordningen skiljer sig från ordningen i formathierarkin.
+Följande steg förklarar hur en användare i systemadministratören eller funktionell konsult för elektronisk rapportering [roll](../sysadmin/tasks/assign-users-security-roles.md) kan konfigurera ett ER-format som innehåller ett sekvenselement där exekveringsordningen skiljer sig från ordningen i formathierarkin.
 
 Dessa steg kan utföras i **USMF**-nivå i Microsoft Dynamics 365 Finance.
 
@@ -99,7 +99,7 @@ Innan du börjar måste du också hämta och spara följande konfiguration av ex
 
 ### <a name="review-the-imported-model-mapping"></a>Granska den importerade modellmappningen
 
-Granska inställningarna för komponenten ER-modellmappning komponenten är konfigurerad för att få åtkomst till momstransaktioner och visa tillgängliga data på begäran.
+Granska inställningarna för komponenten ER-modellmappning komponenten är konfigurerad för att få åtkomst till skattetransaktioner och visa tillgängliga data på begäran.
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. Välj **rapporteringskonfigurationer**.
@@ -108,13 +108,13 @@ Granska inställningarna för komponenten ER-modellmappning komponenten är konf
 5. Välj **designer** om du vill öppna listan över mappningar.
 6. Välj **Designer** för att granska mappningsinformationen.
 7. Välj **Visa detaljer**.
-8. Granska de datakällor som är konfigurerade att få åtkomst till momstransaktioner:
+8. Granska de datakällor som är konfigurerade att få åtkomst till skattetransaktioner:
 
     - Datakällor **Transaktion** typen *registerpost* är konfigurerad för att få åtkomst till poster i programregistret **TaxTrans**.
     - Datakällan **Verifikationer** av typen *beräknade fältet* typen är konfigurerad för att returnera de obligatoriska kupongkoderna (**INV-10000349** och **INV-10000350**) som en lista av poster.
-    - Datakällan **filtrerade** av typen *beräknade fält* är konfigureras för att välja, från datakällan **Transaktioner** endast momstransaktioner för de verifikationer som krävs.
-    - Fältet **\$TaxAmount** av typen *beräknade typen* läggs till datakällan **filtrerade** för att visa det momsvärde som har motsatt tecken.
-    - Datakällan **Grupperade** typ *Gruppera efter* är konfigurerad för att gruppera filtrerade momstransaktioner för den filtrerade **datakällan**.
+    - Datakällan **filtrerade** av typen *beräknade fält* är konfigureras för att välja, från datakällan **Transaktioner** endast skattetransaktioner för de verifikationer som krävs.
+    - Fältet **\$TaxAmount** av typen *beräknade typen* läggs till datakällan **filtrerade** för att visa det skattevärde som har motsatt tecken.
+    - Datakällan **Grupperade** typ *Gruppera efter* är konfigurerad för att gruppera filtrerade skattetransaktioner för den filtrerade **datakällan**.
     - Sammansättningsfältet **TotalSum** för datakällan **Gruppera** konfigurerad för att sammanfatta värden på fälten **\$TaxAmount** datakällan **filtrerade** datakälla för alla filtrerade skattetransaktioner för den datakällan.
 
         ![TotalSum aggregeringsfält på sidan redigera 'GroupBy'-parametrar](./media/ER-DeferredSequence-GroupByParameters.png)
@@ -134,7 +134,7 @@ Granska inställningarna för komponenten ER-modellmappning komponenten är konf
 1. Sidan **konfigurationen** i konfigurationsträdet, välj konfigurationer **Formatera för att lära dig uppskjutna sekvenser**.
 2. Välj **Designer** för att granska formatinformationen.
 3. Välj **Visa detaljer**.
-4. Granska inställningarna för komponenter i ER-format som har konfigurerats för att generera ett utgående dokument i textformat som innehåller information om momstransaktionerna:
+4. Granska inställningarna för komponenter i ER-format som har konfigurerats för att generera ett utgående dokument i textformat som innehåller information om skattetransaktionerna:
 
     - Elementet för sekvensformat **Rapport\\Rader** är konfigurerat för att fylla det utgående dokumentet med en enda rad som genereras från den kapslade sekvenselement (**Rubrik**, **Post** och **Sammanfattning**).
 
@@ -153,13 +153,13 @@ Granska inställningarna för komponenten ER-modellmappning komponenten är konf
     - Elementet **Prefix1** genererar **P1** symboler för att visa att raden som läggs till är rapportrubrikrad.
     - Elementet **ExecutionDateTime** genereras datum och tid (inklusive millisekunder) när rubrikraden läggs till.
     - Elementet **Rapport\\Rader\\Post** är bundet listan **model.Data.List** för att generera en enda rad för varje post från den bundna listan.
-    - Elementet **Prefix2** genererar **P2** symboler för att visa att raden som läggs till är momstransaktionsdetaljer.
-    - Elementet **TaxAmount** är bundet till **model.Data.List.Value** (som visas som **\@.Value** i vyn relativ sökväg) för att generera skattevärde för den aktuella momstransaktionen.
+    - Elementet **Prefix2** genererar **P2** symboler för att visa att raden som läggs till är skattetransaktionsdetaljer.
+    - Elementet **TaxAmount** är bundet till **model.Data.List.Value** (som visas som **\@.Value** i vyn relativ sökväg) för att generera skattevärde för den aktuella skattetransaktionen.
     - Elementet **RunningTotal** är en platshållare för det totala skattevärdet. För närvarande har det här elementet inga utdata, eftersom varken bindning eller standardvärde har konfigurerats.
     - Elementet **ExecutionDateTime** genereras datum och tid (inklusive millisekunder) när den aktuella transaktionen bearbetas i den här rapporten.
     - Element **Rapport\\Rader\\Sammanfattning** behöver inte vara bundet till en datakälla för att generera en enda rad i ett utgående dokument.
     - Elementet **Prefix3** genererar **P3** symboler för att visa att raden som läggs till är innehåller det totala skattevärdet.
-    - Element **TotalTaxAmount** är bundet till **model.Data.Summary.Total** för att generera summan av momsvärden för de bearbetade skattetransaktionerna.
+    - Element **TotalTaxAmount** är bundet till **model.Data.Summary.Total** för att generera summan av skattevärden för de bearbetade skattetransaktionerna.
     - Elementet **ExecutionDateTime** genereras datum och tid (inklusive millisekunder) när sammanfattningsraden läggs till.
 
     ![Fliken Mappning på sidan Formatdesigner](./media/ER-DeferredSequence-Format2.png)
@@ -171,11 +171,11 @@ Granska inställningarna för komponenten ER-modellmappning komponenten är konf
 
     ![Hämta fil](./media/ER-DeferredSequence-Run.png)
 
-Observera att sammanfattningsraden 22 visar summan av momsvärden för de bearbetade transaktionerna. Eftersom formatet konfigureras för att använda **model.Data.Summary.Total** bindning om du vill returnera den här summan beräknas summan genom att den **TotalSum** aggregering av datakällan **Grupperad** av typen *GroupBy* som använder modellmappningen. För att beräkna denna modellmappning itererar modellmappningen över alla transaktioner som har valts i datakällan **filtrerade**. Genom att jämföra körningstiderna för raderna 21 och 22 kan du bestämma att beräkningen av summan tog 10 millisekunder (ms). Genom att jämföra körningstiderna för raderna 2 och 21 kan du bestämma att genereringen av alla transaktionsrader tog 7 ms. Därför krävdes totalt 17 ms.
+Observera att sammanfattningsraden 22 visar summan av skattevärden för de bearbetade transaktionerna. Eftersom formatet konfigureras för att använda **model.Data.Summary.Total** bindning om du vill returnera den här summan beräknas summan genom att den **TotalSum** aggregering av datakällan **Grupperad** av typen *GroupBy* som använder modellmappningen. För att beräkna denna modellmappning itererar modellmappningen över alla transaktioner som har valts i datakällan **filtrerade**. Genom att jämföra körningstiderna för raderna 21 och 22 kan du bestämma att beräkningen av summan tog 10 millisekunder (ms). Genom att jämföra körningstiderna för raderna 2 och 21 kan du bestämma att genereringen av alla transaktionsrader tog 7 ms. Därför krävdes totalt 17 ms.
 
 ### <a name="modify-the-format-so-that-the-summing-is-based-on-generated-output"></a>Ändra formatet så att summeringen baseras på genererade utdata
 
-Om transaktionsvolymen är mycket större än volymen i det aktuella exemplet kan summeringstiden öka och orsaka prestandaproblem. Genom att ändra formatets inställningar kan du förhindra dessa prestandaproblem. Eftersom du får tillgång till momsvärden för att inkludera dem i den genererade rapporten kan du återanvända den här informationen för att summera momsvärden. Mer information finns i [konfigurera format för inventering och summering](./tasks/er-format-counting-summing-1.md).
+Om transaktionsvolymen är mycket större än volymen i det aktuella exemplet kan summeringstiden öka och orsaka prestandaproblem. Genom att ändra formatets inställningar kan du förhindra dessa prestandaproblem. Eftersom du får tillgång till skattevärden för att inkludera dem i den genererade rapporten kan du återanvända den här informationen för att summera skattevärden. Mer information finns i [konfigurera format för inventering och summering](./tasks/er-format-counting-summing-1.md).
 
 1. På sidan **Formatdesigner** på fliken **Format** välj filelementet **Rapport** i formatträdet.
 2. Ställ in alternativet **Samla in utdatadetaljer** till **Ja**. Du kan nu konfigurera det här formatet genom att använda innehållet i en befintlig rapport som en datakälla som du öppnar genom att använda de fördefinierade ER-funktionerna i kategorin [datainsamling](er-functions-category-data-collection.md).
@@ -190,7 +190,7 @@ Om transaktionsvolymen är mycket större än volymen i det aktuella exemplet ka
 
     ![TaxAmount numeriskt element på sidan formatdesigner](./media/ER-DeferredSequence-Format4.png)
 
-    Du kan fundera på att ange att ett virtuellt kalkylblad ska uppfyllas, där värdet i cell A1 läggs till med värdet för momsbeloppet från alla bearbetade momstransaktioner.
+    Du kan fundera på att ange att ett virtuellt kalkylblad ska uppfyllas, där värdet i cell A1 läggs till med värdet för skattebeloppet från alla bearbetade skattetransaktioner.
 
 8. Markera **rapport\\rader\\posten\\RunningTotal** numeriskt element och välj **redigera formel**.
 9. Konfigurera `SUMIF(SummingAmountKey, WsColumn, WsRow)` uttrycket med hjälp av den inbyggda [SUMIF](er-functions-datacollection-sumif.md) ER-funktionen.
@@ -204,7 +204,7 @@ Om transaktionsvolymen är mycket större än volymen i det aktuella exemplet ka
 
     ![Hämta fil](./media/ER-DeferredSequence-Run1.png)
 
-    Rad 21 innehåller den löpande summan av momsvärden som beräknas för alla bearbetade transaktioner genom att använda den genererade utmatningen som en datakälla. Den här datakällan startar från rapportens början och fortsätter genom den senaste momstransaktionen. Rad 22 innehåller summan av alla momsvärden för alla bearbetade transaktioner som beräknas i modellmappningen med hjälp av datakällan för typen *GroupBy*. Observera att dessa värden är lika. Därför kan du använda den utmatnings summeringen i stället **GroupBy**. Genom att jämföra körningstiderna för raderna 2 och 21 kan du bestämma att genereringen av alla transaktionsrader och summering tog 9 ms. Därför är det ändrade formatet ungefär två gånger snabbare än det ursprungliga formatet när det gäller genereringen av detaljerade rader och summering av momsvärden.
+    Rad 21 innehåller den löpande summan av skattevärden som beräknas för alla bearbetade transaktioner genom att använda den genererade utmatningen som en datakälla. Den här datakällan startar från rapportens början och fortsätter genom den senaste skattetransaktionen. Rad 22 innehåller summan av alla skattevärden för alla bearbetade transaktioner som beräknas i modellmappningen med hjälp av datakällan för typen *GroupBy*. Observera att dessa värden är lika. Därför kan du använda den utmatnings summeringen i stället **GroupBy**. Genom att jämföra körningstiderna för raderna 2 och 21 kan du bestämma att genereringen av alla transaktionsrader och summering tog 9 ms. Därför är det ändrade formatet ungefär två gånger snabbare än det ursprungliga formatet när det gäller genereringen av detaljerade rader och summering av skattevärden.
 
 14. Markera **rapport\\rader\\sammanfattning\\TotalTaxAmount** numeriskt element och välj **redigera formel**.
 15. Ange `SUMIF(SummingAmountKey, WsColumn, WsRow)`uttrycket i stället för det befintliga uttrycket.
@@ -213,11 +213,11 @@ Om transaktionsvolymen är mycket större än volymen i det aktuella exemplet ka
 
     ![Hämta fil](./media/ER-DeferredSequence-Run2.png)
 
-    Observera att den totala momsvärden som körs på den sista raden i transaktionsdetaljer nu är lika med summan på sammanfattningsraden.
+    Observera att den totala skattevärden som körs på den sista raden i transaktionsdetaljer nu är lika med summan på sammanfattningsraden.
 
 ### <a name="put-values-of-output-based-summing-in-the-report-header"></a>Placera värden för utflöde baserad summering i rapporthuvudet
 
-Om du till exempel vill visa summan av momsvärden i rapportens rubrik kan du ändra formatet.
+Om du till exempel vill visa summan av skattevärden i rapportens rubrik kan du ändra formatet.
 
 1. På sidan **Formatdesigner** på fliken **Format**, välj sekvenselement **Rapport\\Rader\\Sammanfattning**.
 2. Välj **Flytta upp**.
@@ -226,7 +226,7 @@ Om du till exempel vill visa summan av momsvärden i rapportens rubrik kan du ä
 
     ![Hämta fil](./media/ER-DeferredSequence-Run3.png)
 
-    Observera att summan av momsvärden på sammanfattningsrad 2 nu är lika med 0 (noll), eftersom summan nu beräknas baserat på den genererade utleveransen. När rad 2 genereras, innehåller den genererade utflödet inte ännu rader som har transaktionsdetaljer. Du kan konfigurera det här formatet för att skjuta upp körningen sekvenselement **Rapport\\Rader\\Sammanfattning** tills sekvenselement **Rapport\\Rader\\Post** har körts för alla momstransaktioner.
+    Observera att summan av skattevärden på sammanfattningsrad 2 nu är lika med 0 (noll), detta eftersom summan nu beräknas baserat på den genererade utleveransen. När rad 2 genereras, innehåller den genererade utflödet inte ännu rader som har transaktionsdetaljer. Du kan konfigurera det här formatet för att skjuta upp körningen sekvenselement **Rapport\\Rader\\Sammanfattning** tills sekvenselement **Rapport\\Rader\\Post** har körts för alla skattetransaktioner.
 
 ### <a name="defer-the-execution-of-the-summary-sequence-so-that-the-calculated-total-is-used"></a>Skjut upp körningen av sammanfattningsserien så att den beräknade summan används
 

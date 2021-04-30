@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e294ada8dd3e764987aa363adb2614416986575b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d09c7be5de75511b10d7a69d4b8ac12917b0dbe8
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821139"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910435"
 ---
 # <a name="inventory-visibility-add-in"></a>Tillägg för lagersynlighet
 
@@ -29,7 +29,7 @@ Tillägget för lagersynlighet är en oberoende och mycket skalbar mikrotjänst 
 
 All information som rör lagerbehållning exporteras till tjänsten i nära real tid genom SQL-integration på låg nivå. Externa system kommer åt tjänsten via RESTful-API:er för att fråga efter information om givna dimensionsuppsättningar och på så sätt hämta en lista över tillgängliga lagerbehållningar.
 
-Lagersynlighet är en mikrotjänst som bygger på Microsoft Dataverse, vilket innebär att du kan utöka den genom att bygga Power Apps och använda Power BI för att tillgodose dina affärsbehov. Det går också att uppgradera indexet för att göra lagerfrågor.
+Lagersynlighet är en mikrotjänst som bygger på Microsoft Dataverse, vilket innebär att du kan utöka den genom att bygga Power Apps och använda Power BI för att tillgodose dina affärsbehov. Det går också att uppgradera indexet för att göra lagerfrågeställningar.
 
 Lagersynlighet innehåller konfigurationsalternativ som kan integreras med flera system från andra tillverkare. Det stöder standardiserad lagerdimension, anpassad utökning och standardiserade, konfigurerbara kvantiteter som kan konfigureras.
 
@@ -39,7 +39,7 @@ I det här avsnittet beskrivs hur du installerar och konfigurerar tillägget fö
 
 Du måste installera tillägget för lagersynlighet med hjälp av Microsoft Dynamics Lifecycle Services (LCS). LCS är en samarbetsportal som tillhandahåller en miljö och en uppsättning regelbundet uppdaterade tjänster som hjälper dig att hantera programlivscykeln för dina Dynamics 365 Finance and Operations-appar.
 
-Mer information finns i [Lifecycle Services, resurser](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs).
+Mer information finns i [Lifecycle Services, resurser](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
 ### <a name="prerequisites"></a>Förutsättningar
 
@@ -48,15 +48,18 @@ Innan du installerar tillägget för lagersynlighet måste du göra följande:
 - Skaffa ett LCS implementeringsprojekt med åtminstone en miljö distribuerad.
 - Se till att kraven för att ställa in tillägg som finns i [översikt över tillägg](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) har slutförts. Lagersynlighet kräver inte länkning av dubbelriktad skrivning.
 - Kontakta lagersynlighetsteamet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) för att få följande tre filer:
-
     - `Inventory Visibility Dataverse Solution.zip`
     - `Inventory Visibility Configuration Trigger.zip`
     - `Inventory Visibility Integration.zip` (om versionen av Supply Chain Management som du kör är tidigare än version 10.0.18)
+- Följ instruktionerna i [Snabbstart: Registrera ett program med Microsofts identitetsplattform](/azure/active-directory/develop/quickstart-register-app) om du vill registrera ett program och lägga till en klienthemlighet i AAD i samband med din Azure-prenumeration.
+    - [Registrera ett program](/azure/active-directory/develop/quickstart-register-app)
+    - [Lägg till en klienthemlighet](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
+    - I följande steg används **ID för program (klient)**, **Klienthemlighet** samt **ID för klientorganisation**.
 
 > [!NOTE]
 > De länder och regioner som för närvarande stöds är Kanada, USA och Europeiska unionen (EU).
 
-Om du har några frågor om dessa förutsättningar kontaktar du produktteamet för lagersynlighet.
+Om du har några frågeställningar om dessa förutsättningar kontaktar du produktteamet för lagersynlighet.
 
 ### <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Ställ in Dataverse
 
@@ -64,7 +67,7 @@ Följ dessa steg för att konfigurera Dataverse.
 
 1. Lägg till en serviceprincip för din innehavare:
 
-    1. Installera Azure AD PowerShell modul v2 enligt beskrivningen i [Installera Azure Active Directory PowerShell för Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+    1. Installera Azure AD PowerShell modul v2 enligt beskrivningen i [Installera Azure Active Directory PowerShell för Graph](/powershell/azure/active-directory/install-adv2).
     1. Kör följande PowerShell-kommando.
 
         ```powershell
@@ -80,7 +83,12 @@ Följ dessa steg för att konfigurera Dataverse.
     1. Välj **Ny**. Ange app-ID till *3022308a-b9bd-4a18-b8ac-2ddedb2075e1*. (Objekt-ID:t läses in automatiskt när du sparar ändringarna.) Du kan anpassa namnet. Du kan till exempel ändra den till *Lagersynlighet*. Välj **Spara** när du är klar.
     1. Välj **Tilldela roll** och välj sedan **Systemadministratör**. Om det finns en roll med namnet **Common Data Service Användare** väljer du den också.
 
-    Mer information finns i [Skapa en appanvändare](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+    Mer information finns i [Skapa en appanvändare](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+
+1. Om standardspråket för ditt Dataverse inte är **Engelska**:
+
+    1. Gå till **Avancerad inställning \> Administration \> Språk**,
+    1. Välj **Engelska (LanguageCode=1033)** och sedan **Verkställ**.
 
 1. Importera `Inventory Visibility Dataverse Solution.zip` filen, inklusive Dataverse konfigurationsrelaterade enheter och Power Apps:
 
@@ -158,12 +166,12 @@ Kontrollera att följande funktioner är aktiverat i din Supply Chain Management
 
     Sök efter din LCS-miljös Azure-region och ange sedan URL-adressen. URL-adressen har följande formulär:
 
-    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com`
 
     Om du till exempel är i Europa har din miljö någon av följande URL-adresser:
 
-    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
-    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com`
 
     Följande regioner är för närvarande tillgängliga.
 
@@ -212,13 +220,13 @@ Hämta en säkerhetstjänsttoken genom att göra följande:
 
     ```json
     {
-    "token_type": "Bearer",
-    "expires_in": "3599",
-    "ext_expires_in": "3599",
-    "expires_on": "1610466645",
-    "not_before": "1610462745",
-    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
-    "access_token": "eyJ0eX...8WQ"
+        "token_type": "Bearer",
+        "expires_in": "3599",
+        "ext_expires_in": "3599",
+        "expires_on": "1610466645",
+        "not_before": "1610462745",
+        "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+        "access_token": "eyJ0eX...8WQ"
     }
     ```
 
@@ -256,6 +264,43 @@ Hämta en säkerhetstjänsttoken genom att göra följande:
     }
     ```
 
+### <a name="sample-request"></a><a name="inventory-visibility-sample-request"></a>Exempelbegäran
+
+För din referens följer här ett exempel på en http-begäran- du kan använda valfritt verktyg eller kodspråk för att skicka denna, begäran, exempelvis ``Postman``.
+
+```json
+# Url
+# replace {RegionShortName} and {EnvironmentId} with your value
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
+
+# Method
+Post
+
+# Header
+# replace {access_token} with the one get from security service
+Api-version: "1.0"
+Content-Type: "application/json"
+Authorization: "Bearer {access_token}"
+
+# Body
+{
+    "id": "id-bike-0001",
+    "organizationId": "usmf",
+    "productId": "Bike",
+    "quantities": {
+        "pos": {
+            "inbound": 5
+        }  
+    },
+    "dimensions": {
+        "SizeId": "Small",
+        "ColorId": "Red",
+        "SiteId": "1",
+        "LocationId": "11"
+    }
+}
+```
+
 ### <a name="configure-the-inventory-visibility-api"></a><a name="inventory-visibility-configuration"></a>Konfigurera API för lagersynlighet
 
 Innan du använder tjänsten måste du slutföra de konfigurationer som beskrivs i följande underavsnitt. Konfigurationen kan variera beroende på vad som gäller för din miljö. Den omfattar huvudsakligen fyra delar:
@@ -267,7 +312,7 @@ Innan du använder tjänsten måste du slutföra de konfigurationer som beskrivs
 
 #### <a name="partitioning"></a>Partitionering
 
-Partitionering kan i stor grad påverka prestandan för API för lagersynlighet. Det är en god idé att definiera ett schema som gör det möjligt att göra små grupperade data samtidigt som det går att ändå göra meningsfulla datafrågor.
+Partitionering kan i stor grad påverka prestandan för API för lagersynlighet. Det är en god idé att definiera ett schema som gör det möjligt att göra små grupperade data samtidigt som det går att ändå göra meningsfulla datafrågeställningar.
 
 `organizationId` (`dataAreaId` i Supply Chain Management) är alltid en del av partitionering och som standard är lagersynlighet inställt på partition per dimension som *Webbplats + plats*. Detta innebär att tjänsten alltid måste tillfrågas med dessa dimensioner definierade i filtren.
 
@@ -307,7 +352,7 @@ Måldimensionerna måste vara en av följande:
 - Standarddimensioner vid lagersynlighet
 - Anpassade dimensioner
 
-Syftet med dimensionskonfigurationen är att standardisera integrationen av flera system för frågan på dimensioner och bokföringshändelsen med dimensioner.
+Syftet med dimensionskonfigurationen är att standardisera integrationen av flera system för frågeställningen på dimensioner och bokföringshändelsen med dimensioner.
 
 #### <a name="indexing"></a>Indexering
 
@@ -338,7 +383,7 @@ Här är en exempel fråga på produkten med kombinationen färg och storlek.
 {
     "filters": {
         "OrganizationId": ["usmf"],
-        "ProductId": ["MyProduct"],
+        "ProductId": ["MyProduct1", "MyProduct2"],
         "LocationId": ["21"],
         "SiteId": ["2"],
         "ColorId": ["Red"]
@@ -351,9 +396,11 @@ Här är en exempel fråga på produkten med kombinationen färg och storlek.
 }
 ```
 
+För fältet `filters` stöder för närvarande bara `ProductId` flera värden. Om matrisen `ProductId` är tom kommer alla produkter att efterfrågas.
+
 #### <a name="custom-measurement"></a>Anpassat mått
 
-Standardmåttkvantiteterna är kopplade till Supply Chain Management. Det kan dock vara en bra kvantitet som består av en kombination av standardmåtten. För att kunna göra detta kan du konfigurera anpassade kvantiteter som läggs till i utmatningen av behållningsfrågorna.
+Standardmåttkvantiteterna är kopplade till Supply Chain Management. Det kan dock vara en bra kvantitet som består av en kombination av standardmåtten. För att kunna göra detta kan du konfigurera anpassade kvantiteter som läggs till i utmatningen av behållningsfrågeställningarna.
 
 Med hjälp av funktionen kan du definiera en uppsättning mått som ska läggas till, och/eller en uppsättning mått som subtraheras, för att från det anpassade måttet.
 
@@ -402,7 +449,7 @@ Med följande frågevillkor konfigurerar du till exempel den anpassade måttkvan
 | `CustomChannel` | `MyCustomAvailableforReservation` | `exterchannel` | `issued` | Subtraktion |
 | `CustomChannel` | `MyCustomAvailableforReservation` | `exterchannel` | `reserved` | Subtraktion |
 
-Med detta kommer frågan för den anpassade måttkvantiteten att returnera följande resultat.
+Med detta kommer frågeställningen för den anpassade måttkvantiteten att returnera följande resultat.
 
 ```json
 [
@@ -465,7 +512,7 @@ Använd följande fråga för att konfigurera dimensionsmappningen i Power Apps:
 }
 ```
 
-Nu kan du ange `dimensionDataSource` och använda anpassade dimensioner i dina frågor. Systemet konverterar automatiskt anpassade dimensioner till basdimensioner.
+Nu kan du ange `dimensionDataSource` och använda anpassade dimensioner i dina frågeställningar. Systemet konverterar automatiskt anpassade dimensioner till basdimensioner.
 
 ```json
 {
@@ -512,7 +559,7 @@ I det här exemplet visas ett scenario där inga mappningar har ställts in för
 
 #### <a name="json-document-field-properties"></a>JSON dokumentfältegenskaper
 
-De fält från exempel för JSON-frågor som tidigare har angetts har de egenskaper som anges i följande tabell.
+De fält från exempel för JSON-frågeställningar som tidigare har angetts har de egenskaper som anges i följande tabell.
 
 | Fält-ID | beskrivning |
 |---|---|
@@ -520,7 +567,7 @@ De fält från exempel för JSON-frågor som tidigare har angetts har de egenska
 | `organizationId` | Identifierare för den organisation som är kopplad till händelsen. Detta mappar till Supply Chain Management organisations eller dataområdes-ID. |
 | `productId` | Den unika identifieraren av produkten i fråga. |
 | `quantity` | Kvantiteten som behållningen måste ändras med. Om till exempel 10 nya bagels har lagts till i en hylla är detta värde 10. Om 3 bagels sedan togs bort från hyllan eller sålde skulle detta värde vara -3. |
-| `dimensionDataSource` | Datakällan för de dimensioner som används vid ändring av bokföringshändelse och fråga. Om du anger datakällan kan du använda de anpassade dimensionerna från den angivna datakällan. Med dimensions konfigurationen kan lagersynlighet mappa de anpassade dimensionerna till de allmänna standarddimensionerna. Om `dimensionDataSource` inte anges kan du bara använda de allmänna standarddimensionerna i frågorna.   |
+| `dimensionDataSource` | Datakällan för de dimensioner som används vid ändring av bokföringshändelse och fråga. Om du anger datakällan kan du använda de anpassade dimensionerna från den angivna datakällan. Med dimensions konfigurationen kan lagersynlighet mappa de anpassade dimensionerna till de allmänna standarddimensionerna. Om `dimensionDataSource` inte anges kan du bara använda de allmänna standarddimensionerna i frågeställningarna.   |
 | `dimensions` | En dynamisk uppsättning nyckel/värde-par. Dessa mappar till några av dimensionerna i Supply Chain Management, men du kan också lägga till anpassade dimensioner (t.ex. *källa*) som kan ange om händelsen kommer från Supply Chain Management eller ett externt system. |
 
 ### <a name="querying-current-on-hand"></a>Fråga aktuell behållning
@@ -546,7 +593,7 @@ Använd följande fråga för att konfigurera dimensionsmappningen i Power Apps:
 }
 ```
 
-Nu kan du ange `dimensionDataSource` och använda anpassade dimensioner i dina frågor. Systemet konverterar automatiskt anpassade dimensioner till basdimensioner. Du kan ange `DimensionDataSource` i `filters` och ange anpassade dimensioner i både `filters` och `groupByValues`. Systemet konverterar automatiskt anpassade dimensioner till basdimensioner.
+Nu kan du ange `dimensionDataSource` och använda anpassade dimensioner i dina frågeställningar. Systemet konverterar automatiskt anpassade dimensioner till basdimensioner. Du kan ange `DimensionDataSource` i `filters` och ange anpassade dimensioner i både `filters` och `groupByValues`. Systemet konverterar automatiskt anpassade dimensioner till basdimensioner.
 
 ```json
 {
@@ -589,7 +636,7 @@ I det här exemplet visas ett scenario där inga mappningar har ställts in för
 
 #### <a name="example-return-result"></a>Exempel på returresultat
 
-Frågorna som visas i föregående exempel kan returnera resultatet.
+Frågeställningarna som visas i föregående exempel kan returnera resultatet.
 
 ```json
 [

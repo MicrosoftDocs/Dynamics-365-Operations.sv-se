@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2f6dbcbd92a99699ce8d7e91c1a7e89a6063035f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: df2c55a8a69efa20c6d8c41e97c9e1f80ee1640d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795151"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892763"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Förbered publicering av Human Resource
 
@@ -41,9 +41,9 @@ I följande tabell anges alla steg i processen, den förväntade varaktigheten o
 | --- | --- | --- | --- |--- |
 | 1 | Uppdatera publiceringsdatum i LCS | Senast 2-3 månader i förväg | Partner/kund | Datumen för milstolparna bör ständigt uppdateras. |
 | 2 | Slutför och skicka checklista | Efter testning av användargodkännande (UAT) har slutförts | Partner/kund | Följ de instruktioner som finns i [FastTrack publiceringsutvärdering](hr-admin-go-live-prepare.md#fasttrack-go-live-assessment). |
-| 3 | Projektutvärdering (FastTrack) | FastTrack-arkitekt* | Arkitekten levererar en bedömning när checklistan har tagits emot och fortsätter med granskningen tills frågorna är förtydligade och eventuella begränsningar. |
+| 3 | Projektutvärdering (FastTrack) | FastTrack-arkitekt* | Arkitekten levererar en bedömning när checklistan har tagits emot och fortsätter med granskningen tills frågeställningarna är förtydligade och eventuella begränsningar. |
 | 4 | Projekt studiegrupp (FastTrack) | FastTrack-arkitekt* | |
-| 5 | Importer av datapaket | Beror på projektet | Partner/kund | Följ instruktionerna i [översikt över datahantering](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).|
+| 5 | Importer av datapaket | Beror på projektet | Partner/kund | Följ instruktionerna i [översikt över datahantering](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).|
 | 6 | Produktionsredo | När alla föregående steg har slutförts | Partner/kund | Partner/kund kan ta kontroll över produktionsmiljön.|
 | 7 | Övergångsaktiviteter | Beror på projektet | Partner/kund | |
 | 8 | Publicera | Beror på projektet | Kund | |
@@ -66,7 +66,7 @@ Under UAT-fasen måste du testa alla affärsprocesser som du har implementerat o
 
 - Vi rekommenderar att din UAT-process startar med en ren och ny miljö där data från DIN GOLD-konfiguration kopieras till miljön innan UAT-processen startas. Vi rekommenderar att du använder produktionsmiljön som din GULD-miljö tills du går-live, då miljön blir produktion.
 - Testärenden täcker hela kraven. 
-- Testa genom att använda migrerade data. Dessa data bör inkludera huvuddata som arbetare, jobb och befattningar. Ta även med ingående balanser, som periodiseringar av tjänstledighet och frånvaro. Slutligen ska du inkludera öppna transaktioner, t.ex. aktuella förmånsregistrering. Slutför testningen med alla datatyper, även om datauppsättningen inte har slutförts. 
+- Testa genom att använda migrerade data. Dessa bör inkludera data som exempelvis medarbetare, jobb och befattningar. Ta även med ingående balanser, som periodiseringar av tjänstledighet och frånvaro. Slutligen ska du inkludera öppna transaktioner, t.ex. aktuella förmånsregistrering. Slutför testningen med alla datatyper, även om datauppsättningen inte har slutförts. 
 - Testa genom att använda rätt säkerhetsroller (standardroller och anpassade roller) som tilldelas användare. 
 - Se till att lösningen följer eventuella företags- och branschspecifika föreskrifter. 
 - Dokumentera alla funktioner och få godkännande och undertecknade av kunden. 
@@ -86,7 +86,7 @@ Innan du lanserar måste du utföra en testlansering för att testa vilka steg s
 
 ## <a name="fasttrack-go-live-assessment"></a>FastTrack publiceringsutvärdering
 
-Kunder som är kvalificerade för FastTrack och som är engagerade i en FastTrack lösningsarkitekt slutför en publiceringsutvärdering med Microsoft FastTrack. Mer information:  [Microsoft FastTrack](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview). 
+Kunder som är kvalificerade för FastTrack och som är engagerade i en FastTrack lösningsarkitekt slutför en publiceringsutvärdering med Microsoft FastTrack. Mer information:  [Microsoft FastTrack](/dynamics365/fasttrack/). 
 
 Ungefär åtta veckor före publiceringen uppmanas du att fylla i en [checklista för publiceringen i FastTrack](https://go.microsoft.com/fwlink/?linkid=2146013).
 
@@ -98,7 +98,7 @@ När du har skickat in checklistan granskar din FastTrack lösningsarkitekt proj
 
 ## <a name="see-also"></a>Se även
 
-[Frågor och svar om publicering](hr-admin-go-live-faq.md)
+[Frågeställningar och svar om publicering](hr-admin-go-live-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

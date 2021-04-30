@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3dad97e13624449d287ded74e7e25f94eb0dbde3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f571f80330d2cc7858ef11271b0466d71aa9709c
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838332"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908021"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Uppskjuten bearbetning av lagerhållningsarbete
 
@@ -28,7 +28,7 @@ I det här avsnittet beskrivs de funktioner som gör att uppskjuten bearbetning 
 
 Funktionen uppskjuten bearbetning låter lagerarbetare fortsätta att göra annat arbete medan placeringsoperationen bearbetas i bakgrunden. Uppskjuten bearbetning är användbart när många arbetsrader måste bearbetas och arbetaren kan låta det arbetet bearbetas asynkront. Det är också användbart när servern kan ha ad hoc- eller oplanerade ökningar i bearbetningstiden, och den ökade bearbetningstiden kan påverka användarens produktivitet.
 
-Bakgrundsbearbetning uppnås med hjälp av SysOperation-ramverket. Mer information finns i [Översikt över SysOperation-ramverk](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview).
+Bakgrundsbearbetning uppnås med hjälp av SysOperation-ramverket. Mer information finns i [Översikt över SysOperation-ramverk](/dynamicsax-2012/developer/sysoperation-framework-overview).
 
 ## <a name="configuring-the-work-processing-policies"></a>Konfigurera arbetsbearbetningspolicyer
 

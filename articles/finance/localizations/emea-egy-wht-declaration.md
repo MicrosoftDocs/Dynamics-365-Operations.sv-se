@@ -1,6 +1,6 @@
 ---
 title: Källskattedeklaration för Egypten
-description: I det här avsnittet beskrivs hur du konfigurerar och genererar formuläret källskattedeklaration moms för Egypten.
+description: I det här avsnittet beskrivs hur du konfigurerar och genererar formuläret för källskattedeklaration för Egypten.
 author: sndray
 ms.date: 03/08/2021
 ms.topic: article
@@ -8,18 +8,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: kfend
 ms.search.scope: ''
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4e3d68ac003fabaa504ffe81b8bf2f7ff8d7538d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e0d13a2de9acaa8b1c896e130b4dabb222e45dcb
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839802"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881432"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Källskattedeklaration för Egypten (EG-00005)
 
@@ -52,7 +52,7 @@ Mer information om hur du aktiverar funktioner finns i [Översikt över funktion
     - Momsdeklaration Excel (EG)
 
     > [!NOTE]
-    > Formatet ovan är baserat på **Momsdeklarationsmodell** och använder **Momsdeklarationsmodell mappning**. Denna ytterligare konfiguration importeras automatiskt.
+    > Formatet ovan är baserat på **Skattedeklarationsmodell** och använder **Mappning för skattedeklarationsmodell**. Denna ytterligare konfiguration importeras automatiskt.
 
 Mer information om hur du importerar konfigurationer för elektronisk rapportering finns i [Hämta konfigurationer för elektronisk rapportering från Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
@@ -64,9 +64,9 @@ Information om hur du testar produktion och användares godkännande (UAT), föl
 
 Om du vill generera källskattedeklarationerna i en egyptisk juridisk person som är här måste du föra över följande konfigurationer:
 
-- Momsdeklarationsmodell.version.82.xml eller senare version
-- Momsdeklarationsmodell mappning.version.82.133.xml eller senare version
-- Momsdeklaration Excel (EG).version.82.21 eller en senare version
+- Skattedeklarationsmodell.version.82.xml eller senare version
+- Skattedeklarationsmodell mappning.version.82.133.xml eller senare version
+- Skattedeklaration Excel (EG).version.82.21 eller en senare version
 
 När nedladdningen är klar av ER-konfigurationerna från Lifecycle Services (LCS) eller den globala databasen gör du så här.
 
@@ -109,14 +109,14 @@ Om du vill generera en rapport för deklarationsformulär i Microsoft Excel-form
 ## <a name="generate-the-withholding-declaration-forms"></a>Generera källdeklarationsformulären
 Processen för att förbereda och skicka ett källskattedeklarationsformulär för en viss period baseras på källskattetransaktionerna som bokförs under kvittnings- och redovisningsjobbet. Mer information om global källskatt finns i [Global källskatt](../general-ledger/global-withholding-tax-overview.md).
 
-Gör på följande sätt när du vill generera momsdeklarationsrapporten.
+Gör på följande sätt när du vill generera skattedeklarationsrapporten.
 
 1. Gå till **Skatt** > **Deklarationer** > **Källskatt** > **Betalning av källskatt*.
 2. Välj kvittningsperiod och sedan från-datum för rapporten. 
 3. Ange transaktionsdatum och klicka sedan på **OK**.
 4. I dialogrutan som öppnas väljer du en eller flera av formulärtyperna **Formulär nr. 41**, **Formulär nr. 11** eller **Ingen**. Om du väljer **Ingen** genereras standardrapporten. 
 5. Välj språk. Alla rapporter översätts i **en-us** och **ar-eg**.
-6. Ange filial och namn för den bank där momsbetalningen ska betalas.
+6. Ange filial och namn för den bank där skattebetalningen ska betalas.
 7. Välj affärstyp och ange sedan check- och dokumentnummer. 
 8. Ange enhetstyp. 
 9. Ange namnet på den person som har registrerats för att tilldela formuläret och välj **OK** för att bekräfta rapportgenereringen. 

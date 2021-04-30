@@ -1,45 +1,54 @@
 ---
 title: Ändra en efterfrågeprognos manuellt
-description: I den här proceduren visas hur du ändrar prognosen för en artikel.
-author: ShylaThompson
+description: Detta ämne beskriver hur du ändrar prognosen för en artikel
+author: ChristianRytt
 ms.date: 08/12/2019
 ms.topic: business-process
-ms.prod: ''
-ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, ForecastSales
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 518a49441a9d73d9da5ab90400e0b7482692d374
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5da1d5b1fbd91964e695a704681b1c9ee513a2f1
+ms.sourcegitcommit: 4016c223a985c46e33f9941bf91ba5e1583e1cfd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829676"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889034"
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Ändra en efterfrågeprognos manuellt
 
 [!include [banner](../../includes/banner.md)]
 
-I den här proceduren visas hur du ändrar prognosen för en artikel. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Registreringen är avsedd för produktionsplaneraren. 
+I den här proceduren visas hur du ändrar prognosen för en artikel. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Den här proceduren är avsedd för produktionsplaneraren.
 
+## <a name="modify-the-forecast-for-a-selected-item"></a>Ändra en prognosen för en vald artikel
 
-## <a name="modify-the-forecast-for-an-item"></a>Ändra en prognos för en artikel
-1. I **navigeringsfönstret**, gå till **Moduler > Produktinformationshantering > Produkter > Frisläppta produkter**.
-2. Hitta och markera önskad post i listan. Välj den artikel om du vill ändra prognosen för. Du kan till exempel välja artikel D0001.  
-3. Klicka på **Plan** i **åtgärdsfönstret**.
-4. Klicka på **Efterfrågeprognos**.
-5. Markera vald rad i listan. Om det inte finns några prognosrader skapar du en ny rad genom att klicka på Ny i appfältet.  
-6. Ange ett nummer i fältet **Försäljningskvantitet**. Det här numret representerar den prognosticerade kvantiteten för artikeln.  
-7. Klicka på Spara.
+För att ändra prognosen för en vald artikel:
 
-## <a name="modify-the-forecast-in-excel"></a>Ändra prognosen i Excel
-1. Klicka på **Öppna** i Microsoft Office.
-2. Klicka på **Redigera en efterfrågeprognos** i Excel. I Excel kan du lägga till, ta bort och redigera efterfrågeprognosrader. Om du inte kan se data i Excel måste du logga in med alternativet "Håll mig inloggad" aktiverat och du måste lita på dataanslutningsappen.  
+1. Gå till **Moduler \> Hantering av produktinformation \> Produkter \> Frisläppta produkter**.
+1. Hitta och markera önskad post i listan. Välj den artikel om du vill ändra prognosen för.
+1. I åtgärdsfönstret öppnar du fliken **Plan** och väljer **Efterfrågeprognos**.
+1. Välj en rad i listan. Om det inte finns några prognosrader skapar du en ny rad genom att välja **Ny** i åtgärdsfönstret.  
+1. I fältet **Försäljningskvantitet** anger du ett positivt värde. Det här numret representerar den prognosticerade kvantiteten för artikeln. Ett fel visas om du anger ett negativt tal.
+1. Fyll i övriga fält efter behov.
+1. Välj **Spara** i åtgärdsfönstret.
 
+## <a name="modify-the-forecast-for-one-or-more-items-microsoft-excel"></a>Ändra prognosen för en eller flera artiklar i Microsoft Excel
+
+För att ändra prognosen för en eller flera artiklar i Microsoft Excel:
+
+1. Gör något av följande:
+    - Öppna sidan **Efterfrågeprognos** för valfri artikel (det spelar ingen roll vilken) som beskrivs i föregående avsnitt.
+    - Gå till **Huvudplanering \> Prognosticering \> Manuell prognosangivelse \> Rader för efterfrågeprognos**.
+1. I åtgärdsfönstret väljer du **Öppna i Microsoft Office \> Poster för efterfrågeprognos**.
+1. Välj en hämtningsplats, spara och öppna sedan den hämtade filen i Excel.
+1. Om en varning visas väljer du **Aktivera redigering**.
+1. Logga in i Supply Chain Management med hjälp av Microsoft Dynamics-åtgärdsfönstret. Du måste logga in med alternativet **Håll mig inloggad** aktiverat, och du måste lita på programmet för dataanslutning.
+1. I Excel-kalkylbladet visas nu alla aktuella rader i efterfrågeprognosen för ditt företag.  Lägg till, ta bort och redigera efterfrågeprognosrader efter behov.
+1. Välj **Publicera** i Microsoft Dynamics-åtgärdsfönstret om du vill föra över ändringarna tillbaka till Supply Chain Management.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

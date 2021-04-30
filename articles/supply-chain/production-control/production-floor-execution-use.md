@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 02046da5e2487e203c9658c255f95a7c403d0b10
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0ece83a20a33a8f23e8700d1b5d680a11d64fea0
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814666"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907727"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hur arbetare använder körningsgränssnittet för produktionsgolvet
 
@@ -136,9 +136,9 @@ Arbetaren väljer det tredje jobbet på fliken **Alla jobb** och väljer sedan *
 
 ## <a name="working-on-indirect-activities"></a>Arbeta på indirekta aktiviteter
 
-Indirekta aktiviteter är aktiviteter som inte är direkt relaterade till en produktionsorder. Indirekta aktiviteter kan anges på ett flexibelt sätt, enligt beskrivningen i [ställa in indirekta aktiviteter för tid och närvaro](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
+Indirekta aktiviteter är aktiviteter som inte är direkt relaterade till en produktionsorder. Indirekta aktiviteter kan anges på ett flexibelt sätt, enligt beskrivningen i [ställa in indirekta aktiviteter för tid och närvaro](/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
 
-Till exempel Shannon, en butiksarbetare i Contoso, vill delta i ett företagsmöte och möten betraktas som en indirekt aktivitet. Ett av följande två scenarier gäller:
+Shannon, en medarbetare på grundnivå Contoso vill delta i ett företagsmöte, och möten betraktas som en indirekt aktivitet. Ett av följande två scenarier gäller:
 
 - **Shannon arbetar med ett eller flera aktiva jobb.** Shannon väljer **aktivitet**, identifierar aktiviteten (mötet) och bekräftar valet. Ett meddelande som visas med information om att hon har jobb som pågår. Med hjälp av meddelandet kan Shannon välja att slutföra eller stoppa jobb som hon arbetar med innan hon går till mötet.
 - **Shannon har inga aktiva jobb.** Shannon väljer **aktivitet**, identifierar aktiviteten (mötet) och bekräftar valet. Hon är nu registrerad som på mötet.

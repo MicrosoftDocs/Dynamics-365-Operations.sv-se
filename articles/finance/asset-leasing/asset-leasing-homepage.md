@@ -2,11 +2,11 @@
 title: Startsida för leasing av tillgångar
 description: Det här ämnet innehåller en översikt över dokumentationen om leasing av tillgångar samt länkar till specifika ämnen.
 author: moaamer
-ms.date: 10/27/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 532601d08d52e9edaf97253df4efd2fc10985dc0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 202a353929fbcd8d81593db155d7bfeebb8f3021
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816158"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898120"
 ---
 # <a name="asset-leasing-home-page"></a>Startsida för leasing av tillgångar
 
@@ -28,7 +28,9 @@ ms.locfileid: "5816158"
 
 Det här ämnet visar en lista med de hjälpavsnitt som är tillgängliga för leasing av till gångar och innehåller länkar till specifika avsnitt. 
 
-Leasing av tillgångar är en avancerad funktion för hantering, spårning och automatisering av finansiella transaktioner för leasade tillgångar i Microsoft Dynamics 365 Finance. Leasing av tillgångar uppfyller IAS (IFRS 16) och US GAAP standard (ASC 842). Leasing av tillgångar samlar in och bearbetar information om leasing och genererar journalposter för leasingens livscykel från första redovisningstillfället, månatliga journalposter, till nedskrivningar och uppsägningar av leasingavtalet.  
+Leasing av tillgångar är en avancerad funktion för hantering, spårning och automatisering av finansiella transaktioner för leasade tillgångar i Microsoft Dynamics 365 Finance. Leasing av tillgångar uppfyller IAS (IFRS 16) och US GAAP standard (ASC 842). Leasing av tillgångar samlar in och bearbetar information om leasing och genererar journalposter för leasingens livscykel från första redovisningstillfället, månatliga journalposter, till nedskrivningar och uppsägningar av leasingavtalet.
+
+Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda arbetsytan **funktionshantering** för att kontrollera funktionens status och aktivera den om det behövs. I arbetsytan **Funktionshantering** väljer du funktionen kallad **Tillgångsleasing** innan du klickar på knappen **Aktivera nu**.
 
 ## <a name="asset-leasing-topics"></a>Ämnen om tillgångsleasing
 Följande hjälpavsnitt är tillgängligt som hjälp för konfigurering och användning av Leasing av tillgångar. 
@@ -82,11 +84,11 @@ I det här ämnet beskrivs de rapporter som är tillgängliga för leasing av ti
 
 ### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
-Gå till [Utgivningsplaner för Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner har planerats. 
+Gå till [Utgivningsplaner för Microsoft Dynamics 365](/dynamics365/release-plans/) för att se vilka nya funktioner har planerats. 
 
 ### <a name="blogs"></a>Bloggar
 
-Det finns åsikter, nyheter och annan information i [bloggen om Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [bloggen om Microsoft Dynamics 365 Finance and Operations – Ekonomi](https://community.dynamics.com/365/financeandoperations/b/financials).
+Det finns åsikter, nyheter och annan information i [bloggen om Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [bloggen om Microsoft Dynamics 365 Finance and Operations – Finance](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i Dynamics 365.
 

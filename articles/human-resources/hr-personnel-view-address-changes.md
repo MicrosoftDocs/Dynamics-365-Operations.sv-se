@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5eca902ee7df7eb6835caf6f64b17f3f004b0776
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 387caeee3ba44e1fbc661e2c31915b75dd80c31e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802465"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892139"
 ---
 # <a name="view-and-manage-address-changes"></a>Visa och hantera adressändringar
 
@@ -125,9 +125,9 @@ Personal kan visa och övervaka adressändringar från arbetsytan **personalhant
 När du väljer panel **adressändringar** visas information om adressändringar på en ny sida. Du kan också välja att **Inkludera framtida adressändringar** i det övre högra hörnet för att visa adressändringar med ett framtida datum.
 
 > [!NOTE]
-> Om du vill få en notifiering eller skicka e-post om dessa adress ändringar, kan du skapa en ny notifieringsregel på fliken **Alternativ** i åtgärdsfönstret. Mer information om hur du skapar varningsregel finns i [Skapa varningsregel](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
+> Om du vill få en notifiering eller skicka e-post om dessa adress ändringar, kan du skapa en ny notifieringsregel på fliken **Alternativ** i åtgärdsfönstret. Mer information om hur du skapar varningsregel finns i [Skapa varningsregel](../fin-ops-core/fin-ops/get-started/create-alerts.md).<br><br>
 
-> Om du vill konfigurera ett arbetsflöde för adressändringarna kan du välja alternativet **Skicka externt** i varningsregeln och sedan använda Power Automate för att utlösa affärshändelsen och konfigurera ett arbetsflöde. Mer information finns i [notifieringar som affärshändelser](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).
+> Om du vill konfigurera ett arbetsflöde för adressändringarna kan du välja alternativet **Skicka externt** i varningsregeln och sedan använda Power Automate för att utlösa affärshändelsen och konfigurera ett arbetsflöde. Mer information finns i [notifieringar som affärshändelser](../fin-ops-core/fin-ops/get-started/create-alerts.md#alerts-as-business-events).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

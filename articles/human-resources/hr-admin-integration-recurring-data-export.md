@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3d7fc01906a017d4214d4794097a11b4a3416b95
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b117f408b8ac8baabf7e8af3b383526f404441a4
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801129"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889870"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Skapa en app för återkommande dataexport
 
@@ -43,12 +43,12 @@ I den här självstudien används följande tekniker:
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)**– Huvuddatakällan för arbetare som ska exporteras.
 - **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – tekniken som tillhandahåller dirigering och schemaläggning av den återkommande exporten.
 
-    - **[Kopplingar](https://docs.microsoft.com/azure/connectors/apis-list)** – tekniken som används för att ansluta logikappen till de obligatoriska slutpunkterna.
+    - **[Kopplingar](/azure/connectors/apis-list)** – tekniken som används för att ansluta logikappen till de obligatoriska slutpunkterna.
 
-        - [HTTP med Azure AD](https://docs.microsoft.com/connectors/webcontents/)koppling
-        - [OneDrive för företag](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness) koppling
+        - [HTTP med Azure AD](/connectors/webcontents/)koppling
+        - [OneDrive för företag](/azure/connectors/connectors-create-api-onedriveforbusiness) koppling
 
-- **[DMF-paket REST API](../dev-itpro/data-entities/data-management-api.md)** – den teknik som används för att utlösa exporten och övervakningen av dess förlopp.
+- **[DMF-paket REST API](../fin-ops-core/dev-itpro/data-entities/data-management-api.md)** – den teknik som används för att utlösa exporten och övervakningen av dess förlopp.
 - **[OneDrive för företag](https://onedrive.live.com/about/business/)** – målet för de exporterade arbetarna.
 
 ## <a name="prerequisites"></a>Förutsättningar
@@ -84,11 +84,11 @@ Den stora delen av övningen innebär att skapa logikappen.
     ![Sidan för att skapa logikapp](media/integration-logic-app-creation-1.png)
 
 2. Starta med en tom logikapp i modulen Logic Apps Designer.
-3. Lägg till en [utlösare för upprepningsschema](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) om du vill köra logikappen var 24:e timme (eller enligt ett schema som du väljer).
+3. Lägg till en [utlösare för upprepningsschema](/azure/connectors/connectors-native-recurrence) om du vill köra logikappen var 24:e timme (eller enligt ett schema som du väljer).
 
     ![Dialogrutan Upprepning](media/integration-logic-app-recurrence-step.png)
 
-4. Anropa [ExportToPackage](../dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API för att schemalägga exporten av ditt datapaket.
+4. Anropa [ExportToPackage](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API för att schemalägga exporten av ditt datapaket.
 
     1. Använd åtgärden **anropa en HTTP-begäran** från HTTP med Azure AD-koppling.
 
@@ -122,13 +122,13 @@ Den stora delen av övningen innebär att skapa logikappen.
     > [!TIP]
     > Du kanske vill byta namn på varje steg så att det blir mer meningsfullt än standardnamnet **Anropa en HTTP-begäran**. Du kan till exempel byta namn på det här steget **ExportToPackage**.
 
-5. [Initiera en variabel](https://docs.microsoft.com/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) för att lagra körningsstatusen för **ExportToPackage**-begäran.
+5. [Initiera en variabel](/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) för att lagra körningsstatusen för **ExportToPackage**-begäran.
 
     ![Åtgärden Initiera variabel](media/integration-logic-app-initialize-variable-step.png)
 
 6. Vänta tills körningsstatusen för dataexporten har **slutförts**.
 
-    1. Lägg till en [Till slinga](https://docs.microsoft.com/azure/logic-apps/logic-apps-control-flow-loops#until-loop) som upprepas tills värdet av **ExecutionStatus**-variabeln är **slutförd**.
+    1. Lägg till en [Till slinga](/azure/logic-apps/logic-apps-control-flow-loops#until-loop) som upprepas tills värdet av **ExecutionStatus**-variabeln är **slutförd**.
     2. Lägg till åtgärden **fördröjning** som väntar fem sekunder innan den avsöker den aktuella körningsstatusen för exporten.
 
         ![Fram till slinga-behållare](media/integration-logic-app-until-loop-step.png)
@@ -136,9 +136,9 @@ Den stora delen av övningen innebär att skapa logikappen.
         > [!NOTE]
         > Ställ in gränsvärdet till **15** om du vill vänta i högst 75 sekunder (15 iterationer × 5 sekunder) för att exporten ska kunna slutföras. Om exporten tar längre tid, kan du justera antalet så att det blir lämpligt.        
 
-    3. Lägg till åtgärden **Anropa HTTP-begäran** för att anropa [GetExecutionSummaryStatus](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API, och ange **ExecutionStatus**-variabeln till resultatet av **GetExecutionSummaryStatus**-svar.
+    3. Lägg till åtgärden **Anropa HTTP-begäran** för att anropa [GetExecutionSummaryStatus](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus) DMF REST API, och ange **ExecutionStatus**-variabeln till resultatet av **GetExecutionSummaryStatus**-svar.
 
-        > Det här exemplet utför ingen felkontroll. **GetExecutionSummaryStatus** API:n kan returnera terminaltillstånd som har misslyckats (dvs. andra lägen än **slutförd**). Mer information finns i [API-dokumentationen](../dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus).
+        > Det här exemplet utför ingen felkontroll. **GetExecutionSummaryStatus** API:n kan returnera terminaltillstånd som har misslyckats (dvs. andra lägen än **slutförd**). Mer information finns i [API-dokumentationen](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexecutionsummarystatus).
 
         - **Metod:** POST
         - **Url för begäran:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
@@ -156,7 +156,7 @@ Den stora delen av övningen innebär att skapa logikappen.
 
 7. Skaffa hämtnings-URL för det exporterade paketet.
 
-    - Lägg till åtgärden **Anropa HTTP-begäran** för att anropa [GetExportedPackageUrl](../dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST API.
+    - Lägg till åtgärden **Anropa HTTP-begäran** för att anropa [GetExportedPackageUrl](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#getexportedpackageurl) DMF REST API.
 
         - **Metod:** POST
         - **Url för begäran:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
@@ -166,7 +166,7 @@ Den stora delen av övningen innebär att skapa logikappen.
 
 8. Hämta det exporterade paketet.
 
-    - Lägg till en HTTP **GET**-begäran (en inbyggd [åtgärd för HTTP-koppling](https://docs.microsoft.com/azure/connectors/connectors-native-http)) för att hämta paketet från den URL som returnerades i föregående steg.
+    - Lägg till en HTTP **GET**-begäran (en inbyggd [åtgärd för HTTP-koppling](/azure/connectors/connectors-native-http)) för att hämta paketet från den URL som returnerades i föregående steg.
 
         - **Metod:** GET
         - **URI:** body('Invoke\_an\_HTTP\_request\_3').value
@@ -179,9 +179,9 @@ Den stora delen av övningen innebär att skapa logikappen.
         > [!NOTE]
         > Denna begäran kräver ingen ytterligare autentisering eftersom den URL som **GetExportedPackageUrl** API:n returnerar innehåller en token för delad åtkomst för signaturer som beviljar åtkomst för att hämta filen.
 
-9. Spara det hämtade paketet med hjälp av [OneDrive för företag](https://docs.microsoft.com/azure/connectors/connectors-create-api-onedriveforbusiness)-kopplingen.
+9. Spara det hämtade paketet med hjälp av [OneDrive för företag](/azure/connectors/connectors-create-api-onedriveforbusiness)-kopplingen.
 
-    - Lägg till en åtgärd för OneDrive för företag [Skapa fil](https://docs.microsoft.com/connectors/onedriveforbusinessconnector/#create-file).
+    - Lägg till en åtgärd för OneDrive för företag [Skapa fil](/connectors/onedriveforbusinessconnector/#create-file).
     - Anslut till ditt OneDrive för företag-konto efter behov.
 
         - **Mappsökväg:** en mapp som du väljer

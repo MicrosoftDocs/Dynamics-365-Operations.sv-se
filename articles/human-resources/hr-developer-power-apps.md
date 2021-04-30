@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ad55de4b660de89d323f32a1ce2911d880c24ec5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b5032c0996ef0dfb80a129deb32b4526794ca228
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793571"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892163"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Utöka med Power Apps och Power Automate
 
@@ -49,16 +49,16 @@ För att hämta appen **Integrering med Microsoft 365, Power Automate** gå till
 
 ## <a name="power-automate--sql-connect-and-execute"></a>Power Automate – anslut och kör SQL
 
-Mallen **Power Automate – anslut och kör SQL** ansluter till Microsoft SQL Server och gör att SQL-frågor kan köras.
+Mallen **Power Automate – anslut och kör SQL** ansluter till Microsoft SQL Server och gör att SQL-frågeställningar kan köras.
 
 Även om den här mallen läser och uppdaterar SQL-register kan du utöka den och använda den för andra scenarier. Den kan exempelvis användas för att fylla på ett mellanlagringsregister i Dataverse med poster från SQL Server och regelbundet synkronisera mellanlagringsregister med hjälp av en stegvis distribution från SQL Server.
 
-Den avancerade frågan är integrerad med flödet för att aktivera datatransformation och stegvis distribution.
+Den avancerade frågeställningen är integrerad med flödet för att aktivera datatransformation och stegvis distribution.
 
 För att hämta mallen **Power Automate – ansluta och köra SQL** gå till [Power Automate – ansluta och köra SQL](https://go.microsoft.com/fwlink/?linkid=2081789) på Microsoft Download Center.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Appen Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
+[Appen Microsoft Power Platform](/power-platform/admin/admin-documentation)</br>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Videoklipp
 description: Den här sidan anger Microsoft-skapade videor med instruktioner och tekniksnack om Finance and Operations-appar som är tillgängliga på YouTube och andra webbplatser.
 author: sericks007
-ms.date: 02/11/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: eae8e95d39a5b9ade24e7fe9c9407d29e67a8727
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fc34f1691447b9c34e1572229f9c545913039626
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754714"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881746"
 ---
 # <a name="videos"></a>Videoklipp 
 
@@ -84,6 +84,9 @@ På [Microsoft Dynamics 365 YouTube kanal](https://www.youtube.com/channel/UCJGC
 
 ## <a name="videos-for-dynamics-365-finance"></a>Videor för Dynamics 365 Finance
 
+### <a name="business-document-management"></a>Hantering av affärsdokument
+- [Skapa ett nytt affärsdokument med hjälp av Hantering av affärsdokument](https://www.youtube.com/watch?v=gAIYl-mM_pw)
+
 ### <a name="customize-the-app"></a>Anpassa appen
 - [Lägg till anpassade fält](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Bädda in Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
@@ -113,9 +116,12 @@ På [Microsoft Dynamics 365 YouTube kanal](https://www.youtube.com/channel/UCJGC
 
 ## <a name="videos-for-dynamics-365-supply-chain-management"></a>Videor för Dynamics 365 Supply Chain Management
 
+### <a name="business-document-management"></a>Hantering av affärsdokument
+- [Skapa ett nytt affärsdokument med hjälp av Hantering av affärsdokument](https://www.youtube.com/watch?v=gAIYl-mM_pw)
+
 ### <a name="costs"></a>Kostnader
 - [Mobil arbetsyta för kostnadskontroll](https://youtu.be/imsuTg8rUVk)
-- [Kom igång med Kostnadsredovisning](https://youtu.be/1pUDtJQZ8FU)
+- [Kom i gång med Kostnadsredovisning](https://youtu.be/1pUDtJQZ8FU)
 - [Använd Excel för kostnadsanalys](https://youtu.be/-HKHYdClvx8)
 
 ### <a name="customer-portal"></a>Kundportal

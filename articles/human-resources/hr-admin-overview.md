@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3eb5d686ff6edf11cdbde6c4799a99815719da71
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7a5f6ff75667f79894fce09b4fafeeaf31eea31e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801153"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889774"
 ---
 # <a name="administration-overview"></a>Administreringsöversikt
 
@@ -46,10 +46,10 @@ Den här administratörsguiden hjälper dig att konfigurera, hantera och felsök
   - [Konfigurera integration med Dayforce](hr-admin-integration-dayforce.md)
   - [Skapa en app för återkommande dataexport](hr-admin-integration-recurring-data-export.md)
   - Integration med Office
-    - [Office-integration – självstudier](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Uppdatera enhetsdata i Excel](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Skapa Öppna i Excel-upplevelse](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Felsöka Office-integration](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Office-integration – självstudier](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Uppdatera enhetsdata i Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Skapa Öppna i Excel-upplevelse](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Felsöka Office-integration](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
 
 - [Hantera funktioner](hr-admin-manage-features.md)
 
@@ -59,7 +59,7 @@ Den här administratörsguiden hjälper dig att konfigurera, hantera och felsök
   - [Användargränssnittselement](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)
   - [Hjälpmedelsfunktioner](../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json)
   - [Översikt över funktionshantering](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json)
-  - [Frågor och svar för klient](../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json)
+  - [Frågeställningar och svar för klient](../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json)
   - [Åtgärdssökning](../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json)
   - [Avancerad filtrerings- och frågesyntax](../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json)
   - [Konfigurera och filtrera arbetsytor](../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json)
@@ -83,8 +83,8 @@ Den här administratörsguiden hjälper dig att konfigurera, hantera och felsök
   - [Uppgiftsinspelare](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
   - [Skapa dokumentation eller utbildning med Uppgiftsinspelare](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
-- Felsöka Human Resources
-  - [Få support](hr-admin-troubleshooting-support.md)
+- Felsöka Personal
+  - [Få support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
   - [Optimera prestanda med automatiska rensningsuppgifter](hr-admin-troubleshooting-batch-history.md)
   - [Analysrapporter uppdateras inte](hr-admin-troubleshooting-analytic-reports.md)
   - [Det går inte att skapa en miljö i administrationscentret för Power Apps](hr-admin-troubleshooting-power-apps.md)
@@ -95,7 +95,7 @@ Den här administratörsguiden hjälper dig att konfigurera, hantera och felsök
   - [Få åtkomst till privata adresser efter säkerhetsroll](hr-admin-troubleshooting-private-addresses.md)
   - [Personalresurser visas inte i Dynamics 365-appar](hr-admin-troubleshooting-not-in-apps.md)
   - [Rapporteringsalternativ](hr-admin-troubleshooting-reporting.md)
-  - [Integrering av frågor och svar](hr-admin-troubleshooting-integration.md)
+  - [Integrering av frågeställningar och svar](hr-admin-troubleshooting-integration.md)
 
 ## <a name="see-also"></a>Se även
 

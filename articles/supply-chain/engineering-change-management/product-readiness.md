@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 23ee82922a2103d02a4c1fe0c364fa381c4984c3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3acdde483cb997b4a16a497f145c7c087c6906b5
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842024"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909729"
 ---
 # <a name="product-readiness"></a>Produktberedskap
 
@@ -33,7 +33,7 @@ Det finns tre typer av beredskapskontroller:
 
 - **Systemkontroll** – systemet kontrollerar om det finns en giltig post. Posten kan till exempel vara en aktiv strukturlista.
 - **Manuell kontroll** – en användare verifierar om posten är giltig. En beredskapskontroll kan till exempel kräva validering av standard orderinställningarna. I vissa fall, t.ex. när produkten fortfarande är konstruerad och därför inte kommer att placeras i lager, krävs inga standard orderinställningar. Standard orderinställningar kan dock krävas för en annan produkt av samma typ, eftersom produkten kan hållas i lager. Användaren är ansvarig för att veta hur man korrekt fattar beslut om en beredskapskontroll krävs.
-- **Kontrollista** – användaren svarar på en serie frågor från en kontrollista och systemet avgör om svaren möter förväntningarna. Kontrollistan kan ha vilket ämne som helst. Det kan till exempel användas för att avgöra om marknadsföringsmaterial eller produktdokumentation är slutförd.
+- **Kontrollista** – användaren svarar på en serie frågeställningar från en kontrollista och systemet avgör om svaren möter förväntningarna. Kontrollistan kan ha vilket ämne som helst. Det kan till exempel användas för att avgöra om marknadsföringsmaterial eller produktdokumentation är slutförd.
 
 ## <a name="how-readiness-checks-are-created-for-a-new-product-variant-or-version"></a>Hur beredskapskontroller skapas för en ny produkt, variant eller version
 
@@ -142,7 +142,7 @@ Ange följande fält för varje rad du lägger till.
 | Företag | Om du ställer in fältet **Köra i** till *Enskilt företag* väljer du företaget. |
 | Ägartyp | Välj om beredskapskontroller som rad genereras ska tilldelas till en person eller ett team. |
 | Ägare | Välj om beredskapskontroller som rad genereras ska tilldelas till en person eller ett team. |
-| Enkät | Välj den enkät som ska användas för kontrollista. Check listan är en lokal kontrollista i företaget där beredskapskontrollen är klar. Systemet måste kunna bedöma om kontrollistan är korrekt besvarad. Därför måste kontrollistan ställas in så att en utvärdering görs baserat på korrekta svar. Mer information om hur du skapar enkäter finns i [använda enkäter](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) och den närliggande informationen. |
+| Enkät | Välj den enkät som ska användas för kontrollista. Check listan är en lokal kontrollista i företaget där beredskapskontrollen är klar. Systemet måste kunna bedöma om kontrollistan är korrekt besvarad. Därför måste kontrollistan ställas in så att en utvärdering görs baserat på korrekta svar. Mer information om hur du skapar enkäter finns i [använda enkäter](/dynamicsax-2012/appuser-itpro/using-questionnaires) och den närliggande informationen. |
 | Automatiskt godkännande | Beredskapskontroll poster inkluderar en kryssruta **godkänd** som visar godkännandestatus. Markera kryssrutan **automatiskt godkännande** för kontroller som ska ställas in på godkänd omedelbart efter att den tilldelade användaren har slutfört dem. Avmarkera den här kryssrutan om du vill att explicit godkännande ska krävas som ett ytterligare steg. |
 | Obligatoriskt | Markera den här kryssrutan för kontroller som måste slutföras av den tilldelade användaren. Obligatoriska kontroller kan inte hoppas över. |
 

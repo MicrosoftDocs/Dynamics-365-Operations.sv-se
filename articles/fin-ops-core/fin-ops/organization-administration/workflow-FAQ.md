@@ -1,6 +1,6 @@
 ---
-title: Vanliga frågor om arbetsflöde
-description: Detta avsnitt besvarar några vanliga frågor om arbetsflödessystemet.
+title: Vanliga frågeställningar om arbetsflöde
+description: Detta avsnitt besvarar några vanliga frågeställningar om arbetsflödessystemet.
 author: ChrisGarty
 ms.date: 09/21/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11604389ff598c70e15709c9e3e04b6ec436f6a6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 64ce34cf38e4d6f37d9d417b70843a8308a408a8
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747211"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890367"
 ---
-# <a name="workflow-faq"></a>Vanliga frågor om arbetsflöde
+# <a name="workflow-faq"></a>Vanliga frågeställningar om arbetsflöde
 
 [!include [banner](../includes/banner.md)]
 
-Detta avsnitt besvarar några vanliga frågor om arbetsflödessystemet.
+Detta avsnitt besvarar några vanliga frågeställningar om arbetsflödessystemet.
 
 ## <a name="why-are-multiple-notifications-received-when-a-work-item-is-rejected"></a>Varför tas flera meddelanden emot när en arbetsuppgift avvisas?
 När en arbetsuppgift har avvisats kommer detta arbetsobjekt slutföras som avvisat. En annan arbetsuppgift skapas och tilldelas till upphovsmannen. Detta innebär att det finns ett meddelande till upphovsmannen för den avvisade arbetsuppgiften och ett separat meddelande till användaren som är tilldelad till den nya ”ändringsbegärda” arbetsuppgiften. 
@@ -45,9 +45,9 @@ Här följer några viktiga områden som du kan använda för att lägga till no
     - I en framtida uppdatering kommer vi att lägga till ett meddelande från åtgärdscenter så att en användare tilldelas en arbetsflödesuppgift. 
 - Lägga till meddelanden till arbetsflöden
     - Meddelanden i åtgärdscentret kan skapas för specifika användare, t.ex. ett meddelande som skapats från ett arbets flöde i X++.
-    - [Arbetsflöden har affärshändelser](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) som kunden kan använda för att utlösa flöden med de aviseringar som de letar efter.   
+    - [Arbetsflöden har affärshändelser](../../dev-itpro/business-events/business-events-workflow.md) som kunden kan använda för att utlösa flöden med de aviseringar som de letar efter.   
 
-Sammanfattningsvis, om en användare inte får rätt meddelanden från åtgärdscentret när de tilldelas en arbetsflödesuppgift, och sedan använder [affärshändelser för arbetsflöden](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) med Microsoft Power Automate för att ge ytterligare eller andra meddelanden.
+Sammanfattningsvis, om en användare inte får rätt meddelanden från åtgärdscentret när de tilldelas en arbetsflödesuppgift, och sedan använder [affärshändelser för arbetsflöden](../../dev-itpro/business-events/business-events-workflow.md) med Microsoft Power Automate för att ge ytterligare eller andra meddelanden.
 
 ## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>Varför kan inte arbetsflödesredigeraren starta under AD FS?
 När du kör under Active Directory Federation Services (AD FS) i en uppgraderad miljö kan arbetsflödesredigeraren ha problem med att starta. Om den gör det, kontrollera att URL "https://dynamicsaxworkfloweditor/" läggs till egenskapen **Microsoft Dynamics 365 for Operations lokalt - arbetsflöde - internt program** i ADFS-inställningar.

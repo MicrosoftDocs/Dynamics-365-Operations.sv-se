@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: bacc27c1a9066892c51110d28ba9a2ad26bebe77
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b740da1a8a349f4a1a80b41bf717c388fd3db0c0
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839305"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881842"
 ---
 # <a name="archive-inventory-transactions"></a>Arkivera lagertransaktioner
 
 [!include [banner](../../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Med tiden fortsätter lagertransaktionsregistret (`InventTrans`) att växa och förbruka mer databasutrymme. Därför kommer frågor som görs mot registret att gradvis bli besvarade. Det här ämnet beskriver användning av funktionen *arkiv för lagertransaktioner* för att arkivera data om lagertransaktioner för att förbättra systemets prestanda.
+Med tiden fortsätter lagertransaktionsregistret (`InventTrans`) att växa och förbruka mer databasutrymme. Därför kommer frågeställningar som görs mot registret att gradvis bli besvarade. Det här ämnet beskriver användning av funktionen *arkiv för lagertransaktioner* för att arkivera data om lagertransaktioner för att förbättra systemets prestanda.
 
 > [!NOTE]
 > Endast ekonomiskt uppdaterade lagertransaktioner kan arkiveras i en vald stängd redovisningsperiod. För att kunna arkiveras måste ekonomiskt uppdaterade utgående lagertransaktioner ha utleveransstatus *Såld* och inkommande lagertransaktioner måste ha inleveransstatus *Inköpt* .
@@ -38,7 +38,7 @@ Om en `itemId` och `inventDimId` kombinationen bara innehåller en inleverans- e
 
 ## <a name="turn-on-the-feature-in-your-system"></a>Aktivera funktionen i systemet
 
-Om ditt system inte redan innehåller de funktioner som beskrivs i det här avsnittet, gå till [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktivera funktionen *arkiv för lagertransaktioner*.
+Om ditt system inte redan innehåller de funktioner som beskrivs i det här avsnittet, gå till [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktivera funktionen *arkiv för lagertransaktioner*. Observera att denna funktion inte kan inaktiveras när den väl har aktiverats.
 
 ## <a name="things-to-consider-before-you-archive-inventory-transactions"></a>Saker du bör tänka på innan du arkiverar lagertransaktioner
 

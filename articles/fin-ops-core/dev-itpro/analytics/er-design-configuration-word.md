@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 4885caf017fa0f9d36d293fa32aad53c21d3f162
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7790d7e581b9b4260a4c57af84b02a182dde953d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753586"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894086"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Utforma en ny ER-konfiguration för att generera rapporter i Word-format
 
@@ -38,7 +38,7 @@ Om du vill använda ett Word-dokument som mall för rapporter i Word-format kan 
 ER-formatkomponenten i lösningen måste innehålla ormatelementet **Excel\\Fil** och det formatelementet måste länkas till det Word-dokument som ska användas som mall för genererade rapporter vid körning. Om du vill konfigurera ER-formatkomponenten måste du öppna [utkast](general-electronic-reporting.md#component-versioning) versionen för den skapade ER-konfigurationen i ER-formatdesignern. Lägg sedan till elementet **Excel\\Fil**, koppla Word-mallen till det redigerbara ER-formatet och länka mallen till **Excel\\Fil** som du har lagt till.
 
 > [!NOTE]
-> När du bifogar en mall manuellt måste du använda en [dokumenttyp](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) som tidigare har [konfigurerats](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) i ER-parametrar för att lagra mallar i ER-format.
+> När du bifogar en mall manuellt måste du använda en [dokumenttyp](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) som tidigare har [konfigurerats](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) i ER-parametrar för att lagra mallar i ER-format.
 
 ![Koppla en mall på sidan Formatdesigner](./media/er-design-configuration-word-image3.gif)
 
@@ -46,11 +46,11 @@ Du kan lägga till **Excel\\Intervall** och **Excel\\Cell** kapslade element fö
 
 ![Lägga till kapslade element på sidan Format designer](./media/er-design-configuration-word-image4.gif)
 
-När du sparar ändringarna i ER-formatet vid tid för designen, lagras den hierarkiska formatstrukturen i den kopplade Word-mallen som en [anpassad XML-del](https://docs.microsoft.com/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) med namnet **Rapport**. Du måste komma åt den ändrade mallen, hämta den från Finance, lagra den lokalt och öppna den i Word-skrivbordsprogrammet. I följande bild visas den lokalt lagrade exempelmallen för kontrollrapporten som innehåller den **rapport** anpassade XML-delen.
+När du sparar ändringarna i ER-formatet vid tid för designen, lagras den hierarkiska formatstrukturen i den kopplade Word-mallen som en [anpassad XML-del](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) med namnet **Rapport**. Du måste komma åt den ändrade mallen, hämta den från Finance, lagra den lokalt och öppna den i Word-skrivbordsprogrammet. I följande bild visas den lokalt lagrade exempelmallen för kontrollrapporten som innehåller den **rapport** anpassade XML-delen.
 
 ![Granska exempel rapportmallen i Word-skrivbordsprogrammet](./media/er-design-configuration-word-image5.gif)
 
-När bindningar av formatelementen **Excel\\Intervall** och **Excel\\Cell** körs vid körning, data som varje bindning levererar kommer till det genererade Word-dokumentet som ett enskilt fält i anpassade XML-delen för **Rapport**. För att ange värdena från fälten för den anpassade XML-delen i ett genererat dokument måste du lägga till lämpligt Word [innehållskontroller](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) till din Word-mall som fungerar som platshållare för data som ska fyllas i när de körs. När du vill ange hur innehållskontroller ska fyllas i mappar du alla innehållskontroller till lämpligt fält i den anpassade XML-delen för **Rapport**.
+När bindningar av formatelementen **Excel\\Intervall** och **Excel\\Cell** körs vid körning, data som varje bindning levererar kommer till det genererade Word-dokumentet som ett enskilt fält i anpassade XML-delen för **Rapport**. För att ange värdena från fälten för den anpassade XML-delen i ett genererat dokument måste du lägga till lämpligt Word [innehållskontroller](/office/client-developer/word/content-controls-in-word) till din Word-mall som fungerar som platshållare för data som ska fyllas i när de körs. När du vill ange hur innehållskontroller ska fyllas i mappar du alla innehållskontroller till lämpligt fält i den anpassade XML-delen för **Rapport**.
 
 ![Lägga till och mappa innehållskontroller i Word-skrivbordprogrammet](./media/er-design-configuration-word-image6.gif)
 
@@ -60,7 +60,7 @@ Du måste sedan ersätta den ursprungliga Word-mallen i det redigerbara ER-forma
 
 När du kör det konfigurerade ER-formatet används den kopplade Word-mallen för att generera en ny rapport. De faktiska data lagras i Word-rapporten som en anpassad XML-del med namnet **Rapport**. När den genererade rapporten öppnas fylls Word-innehållskontroller i med data från den anpassade XML-delen för **Rapport**.
 
-## <a name="frequently-asked-questions"></a>Vanliga frågor
+## <a name="frequently-asked-questions"></a>Vanliga frågeställningar
 
 **Fråga:** Jag konfigurerat ett ER-format för att skriva ut ett Word-dokument som innehåller en företagsadress. I Word-mallen för det här ER-formatet infogade jag en RTF-innehållskontroll för att presentera en företagsadress. I Finance har jag angett företagsadressen som flerradstext och valt **Retur** om du vill lägga till en transportretur för varje rad jag angav. Därför förväntar jag mig att företagsadressen visas som flerradstext i genererade dokument. Adressen visas dock som en enskild textrad som innehåller särskilda symboler istället för returer. Vad är det för fel med inställningarna?
 

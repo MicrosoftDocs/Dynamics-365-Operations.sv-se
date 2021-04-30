@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5c9ab724034a9bb40cfe155b748a0c7e25978add
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e6fff06cb6194f17444025f7ea1f9dbb46e4f3ea
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833363"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907653"
 ---
 # <a name="intercompany-planning"></a>Koncernintern planering
 
@@ -35,9 +35,9 @@ I det här avsnittet används följande viktiga koncerninterna termer:
 
 - **Uppström** – en relativ referens i en firma eller leveranskedja. Den visar rörelsen i råvaruleverantörens riktning.
 - **Nedström** – en relativ referens i en firma eller leveranskedja. Den visar rörelsen i kundens riktning.
-- **Planerad koncernintern efterfrågan** – planerad efterfrågan för en produkt i ett företag, baserat på planerad efter frågan för produkten från ett underordnat företag.
+- **Planerad koncernintern efterfrågan** – planerad efterfrågan för en produkt i ett företag, baserat på planerad efter frågeställningen för produkten från ett underordnat företag.
 
-Vid huvudplanering kan en plan i ett företag inkludera planerad koncernintern efter frågan som är relaterad till planerade order från en plan i ett annat företag. Den här funktionen är användbar eftersom den ger full insyn i planerade order mellan företag. Det säkerställer också att alla begärda planerade leveransorder skapas, utan att kräva att planerade order måste bekräftas för det koncerninterna behovet.
+Vid huvudplanering kan en plan i ett företag inkludera planerad koncernintern efter frågeställningen som är relaterad till planerade order från en plan i ett annat företag. Den här funktionen är användbar eftersom den ger full insyn i planerade order mellan företag. Det säkerställer också att alla begärda planerade leveransorder skapas, utan att kräva att planerade order måste bekräftas för det koncerninterna behovet.
 
 Om du kör huvudplaneringen från en huvudplan som inkluderar planerad efterföljande efterfrågan, tas planerade inköpsorder från de relaterade koncerninterna leverantörerna med i planen som efterfrågan.
 
@@ -45,8 +45,8 @@ Om du kör huvudplaneringen från en huvudplan som inkluderar planerad efterföl
 
 Om du vill använda koncernintern planering måste du förbereda systemet på följande sätt:
 
-1. De relevanta produkterna måste frisläppas på alla berörda företag. Mer information finns i [Konfigurera och använd koncernintern handel i Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
-1. Efterföljande efterfrågan måste täckas av inköp från en leverantör som har en koncernintern relation till det överordnade företaget och relevanta standard lagerdimensioner (webbplats och lagerställe) för kunden. Mer information finns i [Konfigurera och använd koncernintern handel i Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
+1. De relevanta produkterna måste frisläppas på alla berörda företag. Mer information finns i [Konfigurera och använd koncernintern handel i Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
+1. Efterföljande efterfrågan måste täckas av inköp från en leverantör som har en koncernintern relation till det överordnade företaget och relevanta standard lagerdimensioner (webbplats och lagerställe) för kunden. Mer information finns i [Konfigurera och använd koncernintern handel i Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
 1. Huvudplanen i det överordnade företaget måste inkludera planerad efterföljande efterfrågan och det relevanta företaget och huvudplanen måste anges i de efterföljande planerna.
 
 ## <a name="include-planned-downstream-demand"></a>Inkludera underordnad planerad efterfrågan

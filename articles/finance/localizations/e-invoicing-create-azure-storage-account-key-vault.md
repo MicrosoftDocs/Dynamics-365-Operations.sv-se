@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b7df4933c1373893e00f48ea3a21bd5af40719a9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2786d350fde2399aadb35dc653bc15123e0e6d91
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840230"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893812"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Skapa ett Azure Storage-konto och ett nyckelvalv
 
@@ -30,8 +30,8 @@ ms.locfileid: "5840230"
 
 Innan du kan slutföra stegen i det här ämnet måste du se till att följande uppgifter har slutförts:
 
-- Skapa en nyckelvalvresurs i Azure. Mer information om mått finns i [Om Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview).
-- Skapa ett Azure Storage-konto (Blob Storage). Mer information finns i [Underhålla Azure Storage-kontot](https://docs.microsoft.com/azure/storage/blobs/).
+- Skapa en nyckelvalvresurs i Azure. Mer information om mått finns i [Om Azure Key Vault](/azure/key-vault/general/overview).
+- Skapa ett Azure Storage-konto (Blob Storage). Mer information finns i [Underhålla Azure Storage-kontot](/azure/storage/blobs/).
 
 ## <a name="overview"></a>Översikt
 
@@ -42,7 +42,7 @@ I det här avsnittet ska du utföra två huvudsteg:
 
 ## <a name="set-up-the-azure-storage-account-to-get-the-storage-account-uri"></a>Konfigurera Azure Storage-kontot för att hämta lagringskontots URI
 
-1. Öppna det lagringskonto som du vill använda med tillägget elektronisk fakturering.
+1. Öppna det lagringskonto som du vill använda med tillägget e-fakturering.
 2. Gå till **Blob Service** \> **Behållare** och skapa en ny behållare.
 3. Ange ett namn på behållaren och ställ in fältet **Offentlig åtkomstnivå** på **Privat (ingen anonym åtkomst)**.
 4. Öppna behållaren och gå till **Inställningar \> Åtkomstpolicy**.
@@ -61,12 +61,12 @@ I det här avsnittet ska du utföra två huvudsteg:
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>Ställ in nyckelvalvet för att lagra lagringskontots URI
 
-1. Öppna det nyckelvalv som du vill använda med elektronisk fakturering.
+1. Öppna det nyckelvalv som du vill använda med e-fakturering.
 2. Gå till **Inställning** \> **Hemligheter** och välj sedan **Generera/importera** om du vill skapa en ny hemlighet.
 3. På sidan **Skapa en hemlighet** i fältet **Överföringsalternativ** välj **Manuell**.
 4. Ange namnet på hemligheten. Det här namnet används under installationen av tjänsten i RCS (Regulatory Configuration Service) och kommer att kallas *nyckelvalvets hemliga namn*.
 5. I fältet **Värde** markera **Signatur för delad åtkomst URI** och välj sedan **Skapa**.
-6. Ställ in åtkomstprincipen så att elektronisk fakturering på den korrekta nivån för säker åtkomst till den hemlighet som du har skapat. Gå till **Inställningar \> Åtkomstprinciper** och välj **Lägg till åtkomstprincip**.
+6. Ställ in åtkomstprincipen så att e-fakturering på den korrekta nivån för säker åtkomst till den hemlighet som du har skapat. Gå till **Inställningar \> Åtkomstprinciper** och välj **Lägg till åtkomstprincip**.
 7. Ange de hemliga behörigheterna för åtgärderna **Hämta** och **Lista**.
 
     ![Bevilja tjänståtkomst](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
@@ -83,4 +83,3 @@ I det här avsnittet ska du utföra två huvudsteg:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

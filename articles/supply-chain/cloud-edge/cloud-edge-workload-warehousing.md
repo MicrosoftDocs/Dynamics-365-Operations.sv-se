@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d6dffb1ea03b8d11519087163d2837d6cfe3df4e
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832404"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899177"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
 
@@ -33,13 +33,13 @@ ms.locfileid: "5832404"
 
 ## <a name="warehouse-execution-on-scale-units"></a>Lagerkörning på skalningsenheter
 
-Den här funktionen gör det möjligt för skalningsenheter att köra valda processer från kapacitet för lagerstyrning. Molnskalningsenheter kör sina arbetsbelastningar i molnet genom att använda dedikerad bearbetningskapacitet i det valda Microsoft Azure-området. För molnskalningsenheter kan du köra vissa arbetsbelastningar oberoende av varandra, även om skalningsenheterna tillfälligt kopplas bort från molnet.
+Den här funktionen gör det möjligt för skalningsenheter att köra valda processer från kapacitet för lagerstyrning.
 
 I det här avsnittet kallas lagerstyrningskörningar i ett lagerställe som definieras som en enhet för *lagerkörningssystem* (*WES*).
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Du måste ha ett Dynamics 365 Supply Chain Management nav och en skalningsenhet som har distribuerats med arbetsbelastningen för lagerstyrning. Mer information om arkitektur och distributionsprocess finns i [moln och kantskalningsenhet med arbetsbelastning för tillverkning och distributionslagerhantering](cloud-edge-landing-page.md).
+Du måste ha ett Dynamics 365 Supply Chain Management nav och en skalningsenhet som har distribuerats med arbetsbelastningen för lagerstyrning. Mer information om arkitektur och distributionsprocess finns i [Använda skalningsenheter för att öka flexibiliteten inom arbetsbelastningen i samband med hantering av underleverantörer](cloud-edge-landing-page.md).
 
 ## <a name="how-the-wes-workload-works-on-scale-units"></a>Så här arbetar WES-arbetsbelastning på skalningsenheter
 
@@ -90,7 +90,7 @@ Du måste logga in på navet för att använda processen *Släpp till distributi
 - **Anskaffning och källa > Inköpsorder > All inköpsorder > Distributionslager > Åtgärder > Släpp till distributionslager**
 - **Lagerstyrning > Släpp till lagerställe > Automatiskt släpp av försäljningsorder**
 
-När du använder **Automatiskt släpp av försäljningsorder**, du kan välja specifika inköpsorderrader baserat på en fråga. Ett vanligt scenario är att ställa in ett återkommande batchjobb som frisläpper alla bekräftade inköpsorderrader som förväntas komma in nästa dag.
+När du använder **Automatiskt släpp av försäljningsorder**, du kan välja specifika inköpsorderrader baserat på en frågeställning. Ett vanligt scenario är att ställa in ett återkommande batchjobb som frisläpper alla bekräftade inköpsorderrader som förväntas komma in nästa dag.
 
 Arbetaren kan köra mottagningsprocessen med hjälp av en mobilappen för distributionslagerhantering som är ansluten till skalningsenhet. Data registreras sedan av skalningsenheten och rapporteras mot inkommande lagerorder. Skapandet och bearbetningen av efterföljande borttagning kommer också att hanteras av skalningsenheten.
 
@@ -264,7 +264,7 @@ I följande tabell visas vilka funktioner för lagerställeåtgärder och hanter
 | Ändra batchdispositionskod                      | Ja | Ja                          |
 | Visa lista över öppet arbete                             | Ja | Ja                          |
 | Konsolidera ID-nummer                         | Ja | Nr                           |
-| Bearbetning av minimi-/max- och zontröskeln| Ja <p>Rekommendationen ska inte inkludera samma platser som en del av frågorna</p>| Ja                          |
+| Bearbetning av minimi-/max- och zontröskeln| Ja <p>Rekommendationen ska inte inkludera samma platser som en del av frågeställningarna</p>| Ja                          |
 | Bearbetning av artikelplacering för lagerpåfyllnad                  | Ja  | Ja<p>Observera att inställningen måste göras på skalningsenhet.</p>                           |
 | Blockera och låsa upp arbete                             | Ja | Ja                          |
 | Ändra användare                                        | Ja | Ja                          |
@@ -297,6 +297,8 @@ På arbetsbelastningen i skalningsenheter kan du hantera följande batchjobb på
 - Bearbeta registerposter för påfyllnad
 - Lagerställehubb till meddelandeprocessorn för skalningsenhet
 - Bearbeta kvantitetsuppdateringsbegäranden för lagerställeorderrader
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

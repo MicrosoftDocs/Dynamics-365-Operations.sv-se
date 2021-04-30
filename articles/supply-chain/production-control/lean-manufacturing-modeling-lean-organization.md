@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfc0497286ae0286cde05412c82fcaac76f4042a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 476dfd6be55ce484cb9bc101ac27dc6181f3c010
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837643"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910387"
 ---
 # <a name="modeling-a-lean-organization"></a>Utforma en smidig organisation
 
@@ -51,7 +51,7 @@ En framtida värdeström kan modelleras som en produktionsflödesversion. Alla p
 
 Värdetströmmen i sig modelleras som en driftenhet. Värdeströmmen kan därför användas som en ekonomisk dimension.
 
-Mer information om hur du skapar driftenheter finns i [Skapa en driftenhet](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md).
+Mer information om hur du skapar driftenheter finns i [Skapa en driftenhet](../../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md).
 
 ## <a name="costing-for-lean-manufacturing-based-on-the-production-flow"></a>Kostnadsredovisning för lean manufacturing baseras på produktionsflödet.
 Den periodiska sammanställningen av kostnaden för ett produktionsflöde korrigerar det relaterade PIA-kontot och möjliggör att varianser kan fastställas för de produkter som levereras via produktionsflödet.

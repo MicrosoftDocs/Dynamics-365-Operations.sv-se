@@ -13,12 +13,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a95dd6caf01e2c1079d6d9690b52e9ef65d87ea8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0df3f840162cf93c9e9f5f34a22e8b49171ea71f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839967"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891168"
 ---
 # <a name="import-iso20022-files"></a>Importera ISO20022-filer
 
@@ -114,7 +114,7 @@ När du importerar en formatkonfigurationen från LCS importerar du hela konfigu
  - **Pain.002** – det här formatet ska användas tillsammans med betalningsmodellmappning till destination ISO20022 för att importera filen pain.002 till överföringsjournalen för leverantörsbetalningar
  - **Camt.054** – det här formatet ska användas tillsammans med betalningsmodellmappning till destination ISO20022 för att importera filen camt.054 till överföringsjournalen för leverantörsbetalningar Samma formatkonfiguration används i kundens betalningsimporteringsfunktion men olika mappning ska användas i en betalningsmodellmappning till destinationskonfigurationen ISO20022.
 
-Mer information om elektronisk rapportering finns i [översikt över elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md).
+Mer information om elektronisk rapportering finns i [översikt över elektronisk rapportering](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 - [Skapa och exportera leverantörbetalningar med ett ISO20022-betalningsformat](./tasks/create-export-vendor-payments-iso20022-payment-format.md)

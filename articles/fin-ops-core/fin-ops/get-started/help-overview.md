@@ -2,7 +2,7 @@
 title: Hjälpsystem
 description: Det här ämnet innehåller en översikt över hjälpsystemet för Finance and Operations-appar.
 author: edupont04
-ms.date: 05/11/2020
+ms.date: 04/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46168dd9001921471114c219c57856b7bedf6465
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e33a2d4c50d17125a91b3b55b46626c6199575c8
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749838"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897826"
 ---
 # <a name="help-system"></a>Hjälpsystem
 
@@ -54,7 +54,7 @@ Om du vill prenumerera på en RSS-feed (Really Simple Syndication) för alla upp
 
 ### <a name="leave-us-feedback"></a>Skicka feedback till oss
 
-Om du har kommentarer eller frågor om ett ämne lämna kommentarer längst ned på sidan.
+Om du har kommentarer eller frågeställningar om ett ämne lämna kommentarer längst ned på sidan.
 
 1. Välj **Feedback** för att komma till kommentarerna längst ned på sidan. Välj sedan antingen **Produktfeedback** eller **Logga in för att ge feedback på dokumentationen**.
 
@@ -108,7 +108,7 @@ Om du vill öppna hjälpinnehållet väljer du knappen **Hjälp** (**?**) och v�
 Via **Hjälp**-fönstret får du åtkomst till ämnen som avser klienten. När du först öppnar **Hjälp**-fönstret visar fliken **Hjälp** de ämnen som gäller den sida du för tillfället befinner dig på. Om inga ämnen hittas kan du ange nyckelord för att begränsa sökningen. När du markerar ett avsnitt i **Hjälp**-fönstret öppnas det på en ny flik i din webbläsare.
 
 > [!IMPORTANT]
-> Det här avsnittet gäller inte för Dynamics 365 Human Resources. Hjälpsystemet för Human Resources ansluts automatiskt till uppgiftsguider för produkten. Du kan heller inte skapa anpassade uppgiftsguider för Human Resources.
+> Det här avsnittet gäller inte för Dynamics 365 Human Resources. Hjälpsystemet för Personal ansluts automatiskt till uppgiftsguider för produkten. Du kan heller inte skapa anpassade uppgiftsguider för Personal.
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Öppna uppgiftsguider i hjälpfönstret
 
@@ -161,7 +161,7 @@ I följande register visas våra webbplatser. Webbplatser som har en asterisk (\
 | [Docs.microsoft.com/tidigare versioner](/previous-versions/dynamics/) | Denna webbplats är värd för innehåll från tidigare versioner. |
 | [Dynamics Community](https://community.dynamics.com/) | Denna webbplats är värd för bloggar, forum och videor. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Denna webbplats ger information om utvärdering och försäljning. |
-| [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | Denna webbplats är värd för utbildningsresurser, nedladdningsbara rapporter och dokument, och är den primära supportsidan för serviceplaninnehavare. Åtkomst till vissa resurser kan kräva en serviceplan. |
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

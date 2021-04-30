@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4d80680f66d8669425482a54066f48af8ebcfbc8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ae36f1436ddd7f41bf0c3510b47cbc440224f484
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805116"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890062"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurera virtuella Dataverse-register
 
@@ -34,7 +34,7 @@ Dynamics 365 Human Resources är en virtuell datakälla i Microsoft Dataverse. D
 Om du vill aktivera CRUD-åtgärder i Personal-entiteter från Dataverse måste du göra entiteterna tillgängliga som virtuella register i Dataverse. På så sätt kan du utföra CRUD operationer från Dataverse och Microsoft Power Platform på data i personal. Operationerna stöder även de affärslogik valideringar av personal som garanterar data integritet när data skrivs till enheterna.
 
 > [!NOTE]
-> Personal-entiteter motsvarar Dataverse-register. Mer information om Dataverse (tidigare Common Data Service) och terminologiuppdateringar finns i [Vad är Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Personal-entiteter motsvarar Dataverse-register. Mer information om Dataverse (tidigare Common Data Service) och terminologiuppdateringar finns i [Vad är Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 ## <a name="available-virtual-tables-for-human-resources"></a>Tillgängliga virtuella register för Personal
 
@@ -51,7 +51,7 @@ Virtuella register Personal är inte samma sak som de inbyggda Dataverse-registe
 De inbyggda registren för Personal genereras separat och underhålls i den gemensamma HCM-lösningen i Dataverse. Med inbyggda register lagras data i Dataverse och måste synkroniseras med programdatabasen för Personal.
 
 > [!NOTE]
-> En lista över de inbyggda Dataverse-registren för Personal finns i [Dataverse-register](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
+> En lista över de inbyggda Dataverse-registren för Personal finns i [Dataverse-register](./hr-developer-entities.md).
 
 ## <a name="setup"></a>Ställ in
 
@@ -71,7 +71,7 @@ Mer information om att aktivera och inaktivera funktioner finns i [Hantera funkt
 
 ### <a name="register-the-app-in-microsoft-azure"></a>Registrera appen i Microsoft Azure
 
-Du måste registrera din Human Resource-instans i Azure-portalen så att Microsofts identitetsplattform kan tillhandahålla autentisering och auktoriseringstjänster för appen och användarna. Mer information om registrering av program i Azure finns i [snabbstart: registrera ett app med Microsoft identitetsplattform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Du måste registrera din Human Resource-instans i Azure-portalen så att Microsofts identitetsplattform kan tillhandahålla autentisering och auktoriseringstjänster för appen och användarna. Mer information om registrering av program i Azure finns i [snabbstart: registrera ett app med Microsoft identitetsplattform](/azure/active-directory/develop/quickstart-register-app).
 
 1. Öppna [Microsoft Azure-portal](https://portal.azure.com).
 
@@ -93,7 +93,7 @@ Du måste registrera din Human Resource-instans i Azure-portalen så att Microso
 
 10. Ange en beskrivning, välj en varaktighet och välj sedan **Lägg till**.
 
-11. Registrera hemlighetens värde. Du anger denna information när du [konfigurerar det virtuella registrets datakälla](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
+11. Registrera hemlighetens värde från egenskapen **Värde** för registret. Du anger denna information när du [konfigurerar det virtuella registrets datakälla](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
     > [!IMPORTANT]
     > Se till att du noterar hemlighetens värde just nu. Hemligheten visas aldrig igen när du har lämnat den här sidan.
@@ -215,12 +215,11 @@ I det utfällbara fönstret visas de senaste körningsresultaten för processen.
 
 ## <a name="see-also"></a>Se även
 
-[Vad är Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
-[Register i Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
-[Översikt över registerrelationer](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
-[Skapa och redigera virtuella register som innehåller data från en extern datakälla](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
-[Vad är Power Apps-portaler?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
-[Översikt över att skapa appar i Power Apps](https://docs.microsoft.com/powerapps/maker/)
-
+[Vad är Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)<br>
+[Register i Dataverse](/powerapps/maker/common-data-service/entity-overview)<br>
+[Översikt över registerrelationer](/powerapps/maker/common-data-service/relationships-overview)<br>
+[Skapa och redigera virtuella register som innehåller data från en extern datakälla](/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
+[Vad är Power Apps-portaler?](/powerapps/maker/portals/overview)<br>
+[Översikt över att skapa appar i Power Apps](/powerapps/maker/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

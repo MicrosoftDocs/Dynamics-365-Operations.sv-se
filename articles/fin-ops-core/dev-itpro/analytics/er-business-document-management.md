@@ -2,7 +2,7 @@
 title: Översikt över hantering av affärsdokument
 description: Det här avsnittet innehåller information om hur du använder funktionen för hantering av affärsdokument i ER-ramverket.
 author: NickSelin
-ms.date: 12/15/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f5589925b7bfba3d9315c3828fd1ec5993a09a59
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 01067a253651bbeddcc5f02c8c15c916b25b6684
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749547"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891315"
 ---
 # <a name="business-document-management-overview"></a>Översikt över hantering av affärsdokument
 
@@ -45,9 +45,9 @@ Om du vill använda hantering av affärsdokument för att redigera mallar i Exce
 
 ## <a name="business-document-availability"></a>Affärsdokuments tillgänglighet
 
-En fullständig lista över alla rapporter planerade för oktober 2019-utgåvan finns i [Konfigurerbar affärsdokumentrapportering i Word och Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
+En fullständig lista över alla rapporter planerade för oktober 2019-utgåvan finns i [Konfigurerbar affärsdokumentrapportering i Word och Excel](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-En fullständig lista över alla rapporter planerade för oktober 2020-utgåvan finns i [Konfigurerbar affärsdokumentrapportering – Word-mallar](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
+En fullständig lista över alla rapporter planerade för oktober 2020-utgåvan finns i [Konfigurerbar affärsdokumentrapportering – Word-mallar](/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
 Fler rapporter blir tillgängliga i framtida versioner. Särskilda meddelanden om ytterligare rapporter kommer att skickas separat. Mer information om hur du granskar listan över tillgängliga rapporter finns i avsnittet [Lista över ER-konfigurationer som har frisläppts i Finance för att stödja konfigurerbara affärsdokument](#list-of-configurations-cbd) nedan.
 
@@ -272,7 +272,23 @@ Alternativet **Redigera mall** är tillgängligt för den valda mallen. Det här
 
 ![Bekräfta början på redigeringsprocessen om du vill skapa en ny mall](./media/BDM-Overview-EditingTemplate4.png)
 
+Om det inte finns någon leverantör kommer ett erbjudande om att skapa en sådan. Om det inte finns någon aktiv leverantör får du möjlighet att välja en för aktivering.
+
+Om du vill skapa en leverantör ändrar du namnet på leverantören i fältet **Namn**, uppdaterar internetadressen för den nya leverantören i fältet **Internetadress** och väljer sedan **OK** för att bekräfta.
+
+   ![Skapa ny leverantör i BDM](./media/bdm_create_provider.png)
+
+Om du vill aktivera befintlig leverantör väljer du namnet på leverantören i fältet **Konfigurationsleverantör** och väljer sedan **OK** för att ange leverantören som aktiv.
+
+   ![Aktivera leverantör i BDM](./media/bdm_choose_provider.png)
+
+> [!NOTE]
+> Varje BDM-mall refererar till leverantören som författare av konfigurationen. Därför krävs en aktiv leverantör för mallen.
+
+
 Alternativet **Nytt dokument** är alltid tillgängligt för en mall i en ER-formatkonfiguration som tillhandahålla av en aktuell och en annan leverantör (Microsoft i det här exemplet) som inte har någon ändring. Den redigerade mallen kommer sedan att lagras i en ny konfiguration för ER-format som skapas automatiskt.
+
+
 
 ### <a name="start-editing-a-template"></a>Börja redigera en mall
 
@@ -386,7 +402,7 @@ När du redigerar mallen från ett ER-format som ägs av den aktuella aktiva lev
 1. På sidan **BDM-mallredigerare**, på fliken **Mall**, välj **Publicera**.
 2. Om du väljer **OK** för att bekräfta publiceringen markeras utkastversionen av det härledda ER-formatet **Kopia av FTI-rapport för kund (GER)** som innehåller den ändrade mallen som slutförd. Den ändrade mallen blir tillgänglig för andra användare. I de slutförda versionerna av det här ER-formatet sparas endast den senaste aktiva versionen av mallen. Övriga versioner tas bort. Välj **Avbryt** om du vill utforska andra alternativ.
 
-## <a name="frequently-asked-questions"></a>Vanliga frågor
+## <a name="frequently-asked-questions"></a>Vanliga frågeställningar
 
 ### <a name="i-selected-edit-document-but-instead-of-going-to-the-bdm-template-editor-page-in-finance-i-was-sent-to-the-microsoft-365-webpage"></a>Jag valde Redigera dokument, men i stället för att gå till sidan BDM-mallredigeraren i Finance skickades jag till Microsoft 365 webbsidan.
 
@@ -419,7 +435,7 @@ Troligen loggade du in på den aktuella instansen av appen i Azure AD-domänen s
 
 ## <a name="list-of-er-configurations-that-have-been-released-in-finance-to-support-configurable-business-documents"></a><a name="list-of-configurations-cbd"></a>Lista över ER-konfigurationer som har lanserats i Finance för att stödja konfigurerbara affärsdokument
 
-[Listan](general-electronic-reporting.md#list-of-configurations) över ER-konfigurationer för Finance uppdateras regelbundet. Öppna den [globala databasen](er-download-configurations-global-repo.md) för att granska listan över ER-konfigurationer som för närvarande stöds. Du kan [filtrera](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) den globala databasen för att granska listan med ER-konfigurationer som används för att stödja konfigurerbara affärsdokument.
+[Listan](general-electronic-reporting.md#list-of-configurations) över ER-konfigurationer för Finance uppdateras regelbundet. Öppna den [globala databasen](er-download-configurations-global-repo.md) för att granska listan över ER-konfigurationer som för närvarande stöds. Du kan [filtrera](../../../finance/localizations/enhanced-filtering-global-repo.md) den globala databasen för att granska listan med ER-konfigurationer som används för att stödja konfigurerbara affärsdokument.
 
 ![Filtrera innehållet i den globala databasen på sidan Konfigurationsdatabas](./media/bdm-overview-filterglobalrepo.gif)
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0a8c39977dacd78afc3bec977501abaf8081dc7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c6829f24b8efa29b39f5ed742d8ca99e09bcef01
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839353"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910363"
 ---
 # <a name="cost-objects"></a>Kostnadsobjekt
 
@@ -67,13 +67,13 @@ Följande tabell visar vad som är ett kostnadsobjekt och vad som är ett lagero
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Produktdimensionsgrupp](https://technet.microsoft.com/library/aa499382.aspx)
+[Produktdimensionsgrupp](/dynamicsax-2012/appuser-itpro/about-product-dimensions)
 
-[Lagringsdimensionsgrupp](https://technet.microsoft.com/library/hh209317.aspx)
+[Lagringsdimensionsgrupp](/dynamicsax-2012//storage-dimension-groups-form)
 
-[Spårningsdimensionsgrupp](https://technet.microsoft.com/library/hh209465.aspx)
+[Spårningsdimensionsgrupp](/dynamicsax-2012//tracking-dimension-groups-form)
 
-[Nyheter eller ändringar](../../fin-and-ops/get-started/whats-new-changed.md)
+[Nyheter eller ändringar](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 
 [Kostnadsposter](cost-entries.md)
 

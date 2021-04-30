@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 915815d6be726141aa78d55c4fe98b75ae762189
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f1d7c6960dc48bb1bb780ecbbb36a58a1bbd7352
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835904"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908218"
 ---
 # <a name="service-management-overview"></a>Tjänsthantering – översikt
 
@@ -39,7 +39,7 @@ Du kan skapa serviceorder du vill hantera information om schemalagda och icke ti
 
 4.  Utgifter och avgifter som är relaterade till tjänsten eller reparationen
 
-Du kan ta emot, behandla och skicka ut tjänstefrågor. När du har skapat en serviceorder kan du använda servicefaser för att övervaka förlopp och ange regler som styr vilka åtgärder som ska aktiveras i varje fas. När en serviceorder är avslutad, kan du godkänna ordern för att bekräfta att den är slutförd, och sedan bokföra ordern för att starta fakturaprocessen.
+Du kan ta emot, behandla och skicka ut tjänstefrågeställningar. När du har skapat en serviceorder kan du använda servicefaser för att övervaka förlopp och ange regler som styr vilka åtgärder som ska aktiveras i varje fas. När en serviceorder är avslutad, kan du godkänna ordern för att bekräfta att den är slutförd, och sedan bokföra ordern för att starta fakturaprocessen.
 
 Använd rapporteringsverktygen för att övervaka serviceordermarginaler och abonnemangstransaktioner, och skriva ut arbetsbeskrivningar och arbetsinleveranser.
 
@@ -64,7 +64,7 @@ I bilden nedan visas högnivåaffärsprocesserna för Servicehantering och var *
 Servicehantering kan integreras med följande moduler:
 
   - [Försäljning och marknadsföring – översikt](../sales-marketing/overview-sales-marketing.md)
-  - [Personal](https://docs.microsoft.com/dynamics365/unified-operations/talent/index)
+  - [Personal](/dynamics365/unified-operations/talent/index)
 
   
 

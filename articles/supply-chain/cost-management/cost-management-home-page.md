@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a1594babd6f27a6af867267d2ae745549355d3c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a42709621c692bb9a20ade0d1835893f534ec4e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839377"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908792"
 ---
 # <a name="cost-management-home-page"></a>Startsida för kostnadshantering
 
@@ -43,7 +43,7 @@ Du når lagerredovisning och tillverkningsredovisning från arbetsytorna **kostn
 
 Tillverkningsredovisning låter dig hantera [kostnadsberäkning för jobborder](production-order-cost-analysis.md) i tillverkningsorder och batchorder samt [kostnadskalkylering med automatisk lageravräkning](backflush-costing.md) i lean manufacturing.
 
-[Innehållet i Power BI kostnadshantering](../../dev-itpro/analytics/cost-management-content-pack.md) ger ledare inblick i lager och PIA-lager (projekt i arbete), samt hur kostnader flödar genom dem per kategori och över tid. Informationen kan också användas som ett detaljerat komplement till bokslutet.
+[Innehållet i Power BI kostnadshantering](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) ger ledare inblick i lager och PIA-lager (projekt i arbete), samt hur kostnader flödar genom dem per kategori och över tid. Informationen kan också användas som ett detaljerat komplement till bokslutet.
 
 ### <a name="additional-resources"></a>Ytterligare resurser
 
@@ -57,7 +57,7 @@ Tillverkningsredovisning låter dig hantera [kostnadsberäkning för jobborder](
 
 #### <a name="blogs"></a>Bloggar
 
-Du hittar åsikter, nyheter och annan information om kostnadshantering i [teambloggen Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg) och [teambloggen Supply Chain Management in Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm). En del av inläggen skrevs för den föregående versionen av kostnadshantering, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
+Du hittar åsikter, nyheter och annan information om kostnadshantering i [teambloggen Dynamics AX Manufacturing R&D](/archive/blogs/axmfg/) och [teambloggen Supply Chain Management in Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm). En del av inläggen skrevs för den föregående versionen av kostnadshantering, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
 
 #### <a name="task-guides"></a>Uppgiftsguider
 

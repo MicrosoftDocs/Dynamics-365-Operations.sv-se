@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45c8b1d0ea12c8e42f3a4383f16105b0b0cfb5c6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0b173f856c79973eec6ce884e7b8e44420c93fc7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825336"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909142"
 ---
 # <a name="purchase-order-overview"></a>Översikt över inköpsorder
 
@@ -41,7 +41,7 @@ Följande artiklar innehåller en översikt över de olika stegen som en inköps
 -   [Skapa inköpsorder](purchase-order-creation.md)
 -   [Godkänn och bekräfta inköpsorder](purchase-order-approval-confirmation.md)
 -   [Produktinleverans mot inköpsorder](product-receipt-against-purchase-orders.md)
--   [Översikt över leverantörsfakturor](../../financials/accounts-payable/vendor-invoices-overview.md)
+-   [Översikt över leverantörsfakturor](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Typer av inköpsorder
 Det finns tre typer av inköpsorder. Du måste ange typ när du skapar en inköpsorder. Du kan ställa in en standardordertyp för nya order på sidan **Anskaffnings- och källparametrar**.
@@ -85,7 +85,7 @@ Fältet **Godkännandestatus** används när en inköpsorder genomgår en gransk
 
 [Produktinleverans mot inköpsorder](product-receipt-against-purchase-orders.md)
 
-[Översikt över leverantörsfakturor](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Översikt över leverantörsfakturor](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

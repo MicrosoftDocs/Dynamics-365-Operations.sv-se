@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 502205f76f1519153caf6e976ffbb5eb9412c4ea
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1f034017c2cd8736c1e3ce286924bf305961390
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818570"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898070"
 ---
 # <a name="finance-insights-home-page-preview"></a>Finance-insikter – startsida (förhandsversion)
 
@@ -31,7 +31,7 @@ Finance-insikter ger konfigurerbara och utökningsbara modeller för att hjälpa
 
 Förhandsversionen av Finance-insikter finns tillgänglig för bedömningsdistribution i USA, Europa och Storbritannien. Microsoft lägger stegvis till support för fler regioner.
 
-Förhandsversionsfunktionerna kan och ska bara aktiveras i nivå-2-sandbox-miljöer. Konfiguration och AI-modeller (artificiell intelligens) som skapas i en sandbox-miljö kan inte migreras till en produktionsmiljö. Mer information finns i [Tilläggsavtal för Microsoft Dynamics 365 förhandsversioner](https://docs.microsoft.com/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+Förhandsversionsfunktionerna kan och ska bara aktiveras i nivå-2-sandbox-miljöer. Konfiguration och AI-modeller (artificiell intelligens) som skapas i en sandbox-miljö kan inte migreras till en produktionsmiljö. Mer information finns i [Tilläggsavtal för Microsoft Dynamics 365 förhandsversioner](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
 
 ## <a name="prerequisites"></a>Förutsättningar
 
@@ -43,7 +43,7 @@ Om du vill ansöka om att använda förhandsversionen av programmet fyller du i 
 
 ### <a name="system-requirements"></a>Systemkrav
 
-En nivå-2-sandbox-miljö (multibox) krävs för att förhandsgranska Finance-insikter. Mer bakgrundsinformation om miljöer finns i [Miljöplanering](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
+En nivå-2-sandbox-miljö (multibox) krävs för att förhandsgranska Finance-insikter. Mer bakgrundsinformation om miljöer finns i [Miljöplanering](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### <a name="version-requirements"></a>Versionskrav
 
@@ -79,7 +79,7 @@ Du måste skapa ett projekt för dataintegrerare så att data som skapas i maski
 När du har slutfört konfigurationsstegen och konfigurerat demodata måste du aktivera och ställa in varje funktion som du vill använda: kundbetalningsförutsägelser, kassaflödesprognoser och budgetförslag.
 
 ### <a name="enable-customer-payment-predictions"></a>Aktivera prediktioner av kundbetalning
-Om du använder demodata för att testa kundbetalningsförutsägelser måste du kanske importera ytterligare demodata för att kunna skapa din AI-modell. Mer information om hur du importerar demodata finns i [Konfigurera demodata för betalningsförutsägelser](set-up-demo-data.md).
+Om du använder demodata för att testa kundbetalningsförutsägelser måste du kanske importera ytterligare demodata för att kunna skapa din AI-modell. 
 
 Om du vill aktivera kundbetalningsförutsägelser måste du utföra en uppsättning steg för att bygga en maskininlärningsmodell som använder organisationens data för att generera förutsägelser om när det är sannolikt att kunder betalar utestående fakturor, och när specifika fakturor sannolikt kommer att betalas. Mer information och de olika stegen finns i [Aktivera prediktioner av kundbetalning](enable-cust-paymnt-prediction.md). 
 

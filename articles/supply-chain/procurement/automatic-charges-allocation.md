@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: a167e6ba4a3b4161e964e5018944af0901000b01
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4e8d65cc1f946f921523607eff850b29f9ff9bf1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841489"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910171"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatisk allokering av tillägg
 
@@ -41,7 +41,7 @@ Om du vill fördela tillägg måste du först definiera tilläggskoder.
 
     - **Kod för tillägg** – ange en kod för tilläggen.
     - **Beskrivning** – Ange en beskrivning av tilläggen.
-    - **Artikel moms grupp** – Välj en artikelmomsgrupp, om det är tillämpligt.
+    - **Momsgrupp för artikel** – Välj en artikelmomsgrupp, om detta är tillämpligt.
     - **Fördela** – Ange värdet för det här alternativet till *Ja* om du vill bedöma dina debiteringar. Det här alternativet är endast tillgängligt för försäljningsorder.
     - **Högsta beloppet** – Ange det högsta tillåtna beloppet för tilläggskoden. Det här fältet används för att validera tillägg för leverantörsfakturor. Den är bara tillgänglig för inköpsorder.
 
@@ -144,7 +144,7 @@ När dina tilläggskoder har ställts in följer du dessa steg för att definier
     - **Plats** och **Lagerställe** – Ange en plats och ett lagerställe om tillägg endast ska tas ut för en specifik plats och lager.
     - **Behåll** – Markera den här kryssrutan för att behålla avgiftstransaktionerna efter att faktureringen har slutförts, så att avgiften tillämpas varje gång du skapar en ny faktura för det valda kundkontot.
 
-1. **Endast för försäljningsorder:** om du vill beräkna lageravgifter bör du gå till lager [skiftindelade avgifter på försäljningsorder](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) för att få information.
+1. **Endast för försäljningsorder:** om du vill beräkna lageravgifter bör du gå till lager [skiftindelade avgifter på försäljningsorder](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) för att få information.
 
 ## <a name="allocate-charges-from-the-header-to-a-line"></a>Fördela avgifter från huvudet till en rad
 

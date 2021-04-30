@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d2cbab3177756fbf5df4f07350a6449f0b22e028
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
+ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791957"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "5857283"
 ---
 # <a name="peripherals"></a>Kringutrustning
 
@@ -62,7 +62,7 @@ Kringutrustning för kassa är enheter som uttryckligen har stöd för kassafunk
 
 ### <a name="hardware-station"></a>Hardware Station
 
-Navigering: Klicka på **Retail och Commerce** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker**. Markera en butik och klicka på snabbfliken **Maskinvarustationer**. Inställningen **Maskinvarustation** är en inställning på kanalnivå som används för att definiera instanser där logiken för kringutrustning i butik ska distribueras. Inställningen på kanalnivå används för att bestämma egenskaperna hos maskinvarustationen. Den används också för att lista maskinvarustationer som är tillgängliga för en Modern POS-instans i en viss butik. Maskinvarustationen ingår i Modern POS-programmet för Windows och Android. Maskinvarustationen kan också distribueras separat som ett fristående Microsoft Internet Information Services-program (IIS). I detta fall får du åtkomst till det via ett nätverk.
+Navigering: Klicka på **Butik och handel** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker**. Markera en butik och klicka på snabbfliken **Maskinvarustationer**. Inställningen **Maskinvarustation** är en inställning på kanalnivå som används för att definiera instanser där logiken för kringutrustning i butik ska distribueras. Inställningen på kanalnivå används för att bestämma egenskaperna hos maskinvarustationen. Den används också för att lista maskinvarustationer som är tillgängliga för en Modern POS-instans i en viss butik. Maskinvarustationen ingår i Modern POS-programmet för Windows och Android. Maskinvarustationen kan också distribueras separat som ett fristående Microsoft Internet Information Services-program (IIS). I detta fall får du åtkomst till det via ett nätverk.
 
 ### <a name="hardware-profile"></a>Maskinvaruprofil
 
@@ -142,6 +142,9 @@ UWP, när det gäller kringutrustning är relaterat till Windows stöd för Plug
 ### <a name="keyboard-wedge"></a>Tangentbords-wedge
 
 Tangentbords-wedgeenheter skickar data till datorn som om informationen har skrivits på ett tangentbord. Därför kommer som standard fältet som är aktiverat i POS att ta emot data som skannas eller dras. I vissa fall kan detta orsaka att fel typ av data skannas till fel fält. Exempelvis kan en streckkod läsas in i ett fält som är avsett för inmatning av data för kreditkort. I de flesta fall finns en logik i POS som avgör om data som skannas eller dras är en streckkod eller ett gortdragning. Därför hanteras data på rätt sätt. Men när enheterna ställs in som OPOS i stället för tangentbord-wedge-enheter finns det mer kontroll över hur data från dessa enheter kan förbrukas, eftersom man "känner till" mer om enheten som informationen kommer från. Exempelvis data från en streckkodsskanner identifieras automatiskt som en streckkod och den associerade posten i databasen hittas enklare och snabbare än om en generisk söksträng användes, vilket gäller för tangentbord-wedge-enheter.
+
+> [!NOTE]
+> När wedge-skannrar med tangentbord används i kassan måste de vara programmerade att skicka en transportretur - eller en **Ange**-händelse - efter det senast skannade tecknet. Om denna konfiguration inte slutförs kan inte wedge-skannrar för tangentbord fungera som de ska. Läs igenom dokumentationen från din enhetstillverkare om du vill ha mer information om hur du bifogar returhändelsen.  
 
 ### <a name="native-printer"></a>Inbyggd skrivare
 
@@ -483,7 +486,7 @@ Den här konfigurationen är de vanligaste konfigurationen för traditionella, f
     > [!NOTE]
     > Du behöver inte ange andra egenskaper för maskinvarustationen. Alla övriga uppgifter som krävs till exempel maskinvaruprofilen kommer från själva POS.
 
-4.  Klicka på **Retail och Commerce** &gt; **Retail och Commerce-IT** &gt; **Distributionsschema**.
+4.  Klicka på **Butik och handel** &gt; **Butik och handel-IT** &gt; **Distributionsschema**.
 5.  Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
 6.  Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
 7.  Installera och aktivera Modern POS för Windows.
@@ -510,7 +513,7 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som har en 
     -   **EFT-POS-nummer** – det EFT terminal-ID som används när EFT-tillstånd skickas. Detta ID tillhandahålls av kreditkortsföretaget.
     -   **Paketnamnet** – maskinvarustationspaketet att använda när maskinvarustationen distribueras.
 
-4.  Klicka på **Retail och Commerce** &gt; **Retail och Commerce-IT** &gt; **Distributionsschema**.
+4.  Klicka på **Butik och handel** &gt; **Butik och handel-IT** &gt; **Distributionsschema**.
 5.  Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
 6.  Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
 7.  Installation av maskinvarustation. Mer information om hur du installerar maskinvarustationen finns [Konfiguration och installation av Retail hardware station](retail-hardware-station-configuration-installation.md).
@@ -538,7 +541,7 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som delar m
     -   **Paketnamnet** – maskinvarustationspaketet att använda när maskinvarustationen distribueras.
 
 4.  Upprepa steg 2 och 3 för varje ytterligare maskinvarustation som krävs i butiken.
-5.  Klicka på **Retail och Commerce** &gt; **Retail och Commerce-IT** &gt; **Distributionsschema**.
+5.  Klicka på **Butik och handel** &gt; **Butik och handel-IT** &gt; **Distributionsschema**.
 6.  Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
 7.  Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i POS.
 8.  Installera maskinvarustationen på varje värddator som du angav i steg 2 och 3. Mer information om hur du installerar maskinvarustationen finns [Konfiguration och installation av Retail hardware station](retail-hardware-station-configuration-installation.md).
@@ -554,7 +557,7 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som delar m
 17. På maskinvarustationen urvalssida klickar du på den nyligen valda maskinvarustationen för att aktivera den. 
 
 > [!NOTE]
-> Om enheter ofta använder olika maskinvarustationer rekommenderar vi att du konfigurerar Modern POS för att uppmana kassörer att välja en maskinvarustation när de börjar offertprocessen. Klicka på **Retail och Commerce** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassor**. Markera POS och ange alternativet **Välj i samband med offert** till **Ja**. Använd distributionsschema **1090** för att synkronisera ändringar i databasen för kanalen.
+> Om enheter ofta använder olika maskinvarustationer rekommenderar vi att du konfigurerar Modern POS för att uppmana kassörer att välja en maskinvarustation när de börjar offertprocessen. Klicka på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassor**. Markera POS och ange alternativet **Välj i samband med offert** till **Ja**. Använd distributionsschema **1090** för att synkronisera ändringar i databasen för kanalen.
 
 ## <a name="extensibility"></a>Utbyggbarhet
 Information om tilläggsscenarier för maskinvarustationen finns i [maskinvarustationstillägg](dev-itpro/hardware-station-extensibility.md).

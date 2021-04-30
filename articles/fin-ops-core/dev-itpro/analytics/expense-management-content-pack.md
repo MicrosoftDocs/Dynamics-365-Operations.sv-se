@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: aadf43d478eb4bf5af20df02dcc6399a7a2e71a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8e95fa06745840a6ba1782f135af0e7625c934aa
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743517"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893262"
 ---
 # <a name="expense-management-power-bi-content"></a>Utläggshantering Power BI - innehåll
 
@@ -41,7 +41,7 @@ Två Power BI-innehållspaket är tillgängliga för användning med utgiftshant
 Alla belopp visas i företagsvalutan. Data för alla företag visas, men om det behövs kan du lägga till ett företagsfilter. 
 
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
-Du hittar innehåll för Expense Admin Dashboard.pbix och Expense Personal Dashboard.pbix Power BI i det deladeresursbiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+Du hittar innehåll för Expense Admin Dashboard.pbix och Expense Personal Dashboard.pbix Power BI i det deladeresursbiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 Innehållet finns tillgängligt från arbetsytan utgiftshantering som inbäddat Power Bi-innehåll. Varje utgiftsägare kan komma åt privata utgifter för dem själva, medan endast leverantörsreskontraansvariga och chefer har åtkomst till administratörsinnehållet för att visa användares utgiftsdata.
 
 ## <a name="refreshing-the-power-bi-content"></a>Uppdatera Power BI-innehållet

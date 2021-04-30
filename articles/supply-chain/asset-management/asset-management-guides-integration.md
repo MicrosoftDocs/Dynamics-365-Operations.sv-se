@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 4af14a66c839ccee02008057ad1de8ef5b9d291b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813927"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908577"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrera Dynamics 365 Supply Chain Management (tillgångshantering) med Dynamics 365 Guides
 
@@ -30,12 +30,12 @@ Innan du kan koppla guider till arbetsorder för tillgångshantering måste föl
 - [Ställ in Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) version 10.0.9 eller senare.
 - [Aktivera dubbelriktad skrivning för Supply Chain Management-appar](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
 - [Aktivera flight](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) för funktionen **MRGuidesFeature**. (För produktionsmiljöer måste du först skicka in ett supportärende så att din klientorganisation läggs till i flightgruppen.)
-- [Aktivera följande konfigurationsnycklar](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) på sidan **Licenskonfiguration**:
+- [Aktivera följande konfigurationsnycklar](/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) på sidan **Licenskonfiguration**:
 
     - Tillgångshantering \> Tillgångshantering mixed reality
     - Mixed reality \> Mixed reality-guide
 
-- [Ställ in Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 200.0.0.96 eller senare.
+- [Ställ in Dynamics 365 Guides](/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) version 200.0.0.96 eller senare.
 
 ## <a name="use-dynamics-365-guides-with-asset-management"></a>Använd Dynamics 365 Guides med tillgångshantering
 
@@ -47,8 +47,8 @@ För att associera en guide med en mall för underhållschecklista ska du följa
 
 1. Skapa en guide med Dynamics 365 Guides för dator och HoloLens-apparna. För information om hur du skapar en guide, se följande ämnen:
 
-    - [Skapa guiden med hjälp av datorappen](https://docs.microsoft.com/dynamics365/mixed-reality/guides/pc-app-overview)
-    - [Använd HoloLens-appen för att placera dina hologram](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-overview)
+    - [Skapa guiden med hjälp av datorappen](/dynamics365/mixed-reality/guides/pc-app-overview)
+    - [Använd HoloLens-appen för att placera dina hologram](/dynamics365/mixed-reality/guides/hololens-app-overview)
 
 1. I Supply Chain Management [skapar du en mall för underhållschecklista](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-checklist-template).
 1. Associera guiden som du skapade med en underhållschecklistrad i den nya mallen för underhållschecklista:

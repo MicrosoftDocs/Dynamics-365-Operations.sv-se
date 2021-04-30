@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d5051bbf9e550add6a0cfc5e23f3aeb7b379ef03
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9a285e3c60df713ceaee1fae72b2a1d54fa5c431
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5789646"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890757"
 ---
 # <a name="performance-management"></a>Prestandahantering
 
@@ -93,7 +93,7 @@ Du kan också använda avsnittet **Kompetenser** om du vill diskutera, granska o
 
 Du kan skapa nya granskningar som baseras på mallar som du har skapat. Du kan till exempel ha en mall för personliga möten, utvecklingsplaner och periodiska granskningar. Du kan välja mallen när du skapar en ny granskning.
 
-Om du vill skriva ut recensioner väljer du knappen **skriv ut granskning**. Om du inte ser knappen på sidan **Granska** kontrollerar du att du har aktiverat funktionen i arbetsytan **funktionshantering**. Mer information om hur du aktiverar Funktionshantering finns i [Översikt över funktionshantering](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Om du vill skriva ut recensioner väljer du knappen **skriv ut granskning**. Om du inte ser knappen på sidan **Granska** kontrollerar du att du har aktiverat funktionen i arbetsytan **funktionshantering**. Mer information om hur du aktiverar Funktionshantering finns i [Översikt över funktionshantering](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!NOTE]
 > Möjligheten att skriva ut resultatgranskningar är bara tillgänglig i personal. Den är inte tillgänglig i Dynamics 365 Finance.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4679ce27b248770b9998914407cd2eb21d7dd16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b19c01afa162cce309443c9270ee1b39aeb0328
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825408"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909166"
 ---
 # <a name="create-purchase-orders"></a>Skapa inköpsorder
 
@@ -62,10 +62,10 @@ En inköpsorderrad som används för att returnera en produkt till leverantören
 
 Ibland kanske du vill dela upp kvantiteten du har beställt så att olika delar av den levereras vid olika tidpunkter. Du kan ställa in dessa leveranser med hjälp av åtgärden **Leveransplan** som finns i menyn **Inköpsorderrad** i vyn **Rader**.  
 
-Avgifter kan läggas till på inköpsorderrader automatiskt om automatiska avgifter har ställts in för leverantören eller avgiftsgruppen för leverantören och för artikeln eller avgiftsgruppen för artikeln. Kostnader läggs dock oftast till manuellt på orderradnivå. Om du vill lägga till en avgift kan du öppna sidan **Underhåll avgifter** med hjälp av åtgärden **Underhåll avgifter** i menyn **Ekonomi** i vyn **Rader**. Fördelen med att lägga till avgifter direkt på orderradnivå är att avgiften kan allokeras som en lagerkostnad. Använd debetalternativet **Artikel** för att ställa in avgiftskoder för kontoproduktkostnader. Dessa typer av avgifter ska allokeras från inköpsorderhuvudet till raderna innan ordern kan bekräftas. Du kanske vill allokera tillägg baserat på kvantiteten på varje rad. Avgiftskategorin påverkar även hur avgifter redovisas. Fasta avgifter till exempel anger ett fast belopp och avgifter i procent beräknas som en procentsats av nettobeloppet för orderraden. Inköpsorder kan tilldelas till en last och lasten kan innehålla en uppskattning av den förväntade utgiften för transportkostnader. Du kan allokera den här kostnaden från lasten tillbaka till inköpsorderraderna.
+Avgifter kan läggas till på inköpsorderrader automatiskt om automatiska avgifter har ställts in för leverantören eller avgiftsgruppen för leverantören och för artikeln eller avgiftsgruppen för artikeln. Kostnader läggs dock oftast till manuellt på orderradnivå. Om du vill lägga till en avgift kan du öppna sidan **Underhåll avgifter** med hjälp av åtgärden **Underhåll avgifter** i menyn **Finance** i vyn **Rader**. Fördelen med att lägga till avgifter direkt på orderradnivå är att avgiften kan allokeras som en lagerkostnad. Använd debetalternativet **Artikel** för att ställa in avgiftskoder för kontoproduktkostnader. Dessa typer av avgifter ska allokeras från inköpsorderhuvudet till raderna innan ordern kan bekräftas. Du kanske vill allokera tillägg baserat på kvantiteten på varje rad. Avgiftskategorin påverkar även hur avgifter redovisas. Fasta avgifter till exempel anger ett fast belopp och avgifter i procent beräknas som en procentsats av nettobeloppet för orderraden. Inköpsorder kan tilldelas till en last och lasten kan innehålla en uppskattning av den förväntade utgiften för transportkostnader. Du kan allokera den här kostnaden från lasten tillbaka till inköpsorderraderna.
 
 ## <a name="purchase-order-actions"></a>Inköpsorderåtgärder
-När du har lagt till huvudet och raderna i inköpsordern måste du ofta utföra ytterligare steg innan ordern är klar att bekräftas. Eftersom det finns så många alternativ kan det vara praktiskt att använda [Åtgärdssökning](../../fin-and-ops/get-started/action-search.md) för att hitta relevant menyalternativ.  
+När du har lagt till huvudet och raderna i inköpsordern måste du ofta utföra ytterligare steg innan ordern är klar att bekräftas. Eftersom det finns så många alternativ kan det vara praktiskt att använda [Åtgärdssökning](../../fin-ops-core/fin-ops/get-started/action-search.md) för att hitta relevant menyalternativ.  
 
 Du kan konfigurera produkter på ordern så att de har tilläggsartiklar. Tilläggsartiklar är produkter som måste eller kan köpas tillsammans med andra produkter. Tilläggsprodukter kan läggas till kostnadsfritt som medföljande produkter. Du kan även själv bestämma om du vill lägga till dem i ordern eller inte. Du kan granska tilläggsartiklarna efter att varje orderrad har lagts till. Du kommer dock troligtvis att tycka att det är enklare att granska och lägga till relevanta tilläggsartiklar för alla orderrader med hjälp av sidan **Tilläggsartiklar** som du kan öppna från åtgärdsfönstret.  
 

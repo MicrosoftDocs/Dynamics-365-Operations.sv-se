@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a81e5c56e219ec9d7fb95ac6cc053fb13601f0f2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ac4c15b4dbf60f378ba325adedb377e12585481a
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801177"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889966"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurera integration med Finance
 
@@ -29,7 +29,7 @@ ms.locfileid: "5801177"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-För att integrera Dynamics 365 Human Resources med Dynamics 365 Finance kan du använda mallen personal för finansiering i [Dataintegrerare](https://docs.microsoft.com/powerapps/administrator/data-integrator). Med mallen personal till ekonomi kan dataflöden för jobb, befattningar och arbetare användas. Med hjälp av mallen kan dataflöda från personal till ekonomi, men tillåter inte att data flödar från ekonomi till personal.
+För att integrera Dynamics 365 Human Resources med Dynamics 365 Finance kan du använda mallen personal för finansiering i [Dataintegrerare](/powerapps/administrator/data-integrator). Med mallen personal till ekonomi kan dataflöden för jobb, befattningar och arbetare användas. Med hjälp av mallen kan dataflöda från personal till ekonomi, men tillåter inte att data flödar från ekonomi till personal.
 
 ![Personal till ekonomi integrationsflöde](./media/hr-admin-integration-finance-flow.png)
 
@@ -248,7 +248,7 @@ Integration från personal för ekonomi försöker matcha poster baserat på ID.
 
 Det här problemet kan uppstå med **arbetare** som använder **personalnummer** för att göra matchningen och **befattningar**. I jobb används inte nummerserier. Om samma jobb-ID finns i både personal och ekonomi kommer informationen i personal att skriva över Dynamics 365 Finance informationen. 
 
-Om du vill undvika problem med dubbla ID kan du antingen lägga till ett prefix [nummerserien](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json), eller ställa in ett inledande nummer på nummerserien som ligger utanför det andra systemets intervall. 
+Om du vill undvika problem med dubbla ID kan du antingen lägga till ett prefix [nummerserien](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json), eller ställa in ett inledande nummer på nummerserien som ligger utanför det andra systemets intervall. 
 
 Det plats-ID som används för arbetaradressen är inte en del av en nummerserie. När du integrerar en arbetaradress från personal till ekonomi, kan en adresspost skapas om det redan finns en postadress i ekonomi. 
 

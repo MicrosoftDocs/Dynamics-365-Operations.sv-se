@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 586c0f807cf45908bacd88ff4e4d5793db054e4d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5ab53f4b8888f77cd41ccbd7956ed307ba1b54ff
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815414"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897146"
 ---
 # <a name="reverse-journal-posting"></a>Återför journalbokföring
 
@@ -65,7 +65,7 @@ Om det finns fler än 100 verifikationsrader, kommer återföringsprocessen att 
 
 Om antalet verifikationsrader är 100 rader eller färre, kommer återföringsprocessen att köras omedelbart. Resultaten visas i en dialogruta som visar en verifikation som inte kan återföras och orsaken till varför. Välj **OK** för att stänga dialogrutan.
 
-Transaktioner kan bara återföras om de uppfyller affärsreglerna för att återföra dem. Leverantörsbetalningar kan inte återföras med funktionen som beskrivs i det här avsnittet. Leverantörsbetalningar måste återföras genom att följa stegen i [återför en leverantörsbetalning](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment).
+Transaktioner kan bara återföras om de uppfyller affärsreglerna för att återföra dem. Leverantörsbetalningar kan inte återföras med funktionen som beskrivs i det här avsnittet. Leverantörsbetalningar måste återföras genom att följa stegen i [återför en leverantörsbetalning](../accounts-payable/reverse-vendor-payment.md).
 
 
 

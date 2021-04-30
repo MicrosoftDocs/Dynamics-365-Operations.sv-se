@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2443bb057a8b7fe280ed26ecae4e50f671b5e082
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 54117c009cfeb7307938cc6bd43e774ccfedcfb1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818810"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908840"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Konfiguration för Finance-insikter (förhandsversion)
 
@@ -38,7 +38,7 @@ Följ dessa steg för att distribuera miljöerna.
 
 1. I Microsoft Dynamics Lifecycle Services (LCS), skapa eller uppdatera en Dynamics 365 Finance-miljö. Miljön kräver programversion 10.0.11/Platform update 35 eller senare.
 2. Miljön måste vara en miljö med hög tillgänglighet (HA) i sandbox-miljö. (Den här typen av miljö kallas också för en Nivå-2-miljö.) Mer information finns i [Miljöplanering](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. Om du använder Contoso-demo data behöver du ytterligare exempeldata för att kunna använda funktionerna för kundbetalningsförutsägelser, kassaflödesprognoser och budgetprognoser. 
+3. Om du använder Contoso-demodata behöver du ytterligare exempeldata för att kunna använda funktionerna för kundbetalningsförutsägelser, kassaflödesprognoser och budgetprognoser. 
 
 ## <a name="configure-dataverse"></a>Konfigurera Dataverse
 
@@ -69,7 +69,7 @@ Du kan slutföra de manuella konfigurationsstegen som följer eller så kan du p
     13. Välj **Resurser \> Alla äldre inställningar**.
     14. Välj **Inställningar** i det övre navigeringsfältet och välj **Anpassningar**.
     15. Välj **Utvecklarresurser**.
-    16. Ställ in fältet för **instansens referensensinformations-ID** till organisations-ID-värdet för Dataverse som du noterade tidigare.
+    16. Kopiera värdet för **Organisations-ID för Dataverse**.
     17. Notera URL:en till Dataverse-organisationen i webbläsarens adressfält. URL-adressen kan till exempel vara `https://org42b2b3d3.crm.dynamics.com`.
 
 2. Om du planerar att använda kassaflödesprognoser eller budgetprognoser, följer du dessa steg för att uppdatera anteckningsgränsen för organisationen till minst 50 MB:
@@ -286,12 +286,12 @@ catch {
 
 # <a name="use-a-windows-powershell-script"></a>[Använd ett Windows PowerShell-skript](#tab/use-a-powershell-script)
 
-Ett Windows PowerShell-skript har angetts så att du enkelt kan ställa in de Azure-resurser som beskrivs i [Konfigurera export till Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake). Om du föredrar att göra manuella inställningar hoppar du över den här proceduren och fortsätter med proceduren i avsnittet [Manuell konfiguration](#manual-setup).
+Ett Windows PowerShell-skript har angetts så att du enkelt kan ställa in de Azure-resurser som beskrivs i [Konfigurera export till Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md). Om du föredrar att göra manuella inställningar hoppar du över den här proceduren och fortsätter med proceduren i avsnittet [Manuell konfiguration](#manual-setup).
 
 > [!NOTE]
 > Kör PowerShell-skriptet genom att följa stegen nedan. Azure CLI-alternativet "Pröva" eller att köra skriptet på datorn fungerar kanske inte.
 
-Följ dessa steg för att konfigurera Azure med hjälp av Windows PowerShell-skriptet. Du måste ha behörighet att skapa en Azure-resursgrupp, Azure-resurser och ett Azure AD-program. Information om vilka behörigheter som krävs finns i [Kontrollera Azure AD-behörigheter](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
+Följ dessa steg för att konfigurera Azure med hjälp av Windows PowerShell-skriptet. Du måste ha behörighet att skapa en Azure-resursgrupp, Azure-resurser och ett Azure AD-program. Information om vilka behörigheter som krävs finns i [Kontrollera Azure AD-behörigheter](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
 
 1. I [Azure-portalen](https://portal.azure.com), gå till din mål-Azure-prenumeration. Välj knappen **Cloud Shell** till höger om fältet **Sök**.
 2. Välj **PowerShell**.
@@ -943,18 +943,7 @@ finally {
 ```
 ---
 
-## <a name="configure-the-entity-store"></a>Konfigurera entitetsarkivet
 
-Följ dessa steg för att konfigurera entitetsarkivet i Finance-miljön.
-
-1. Gå till **Systemadministration \> Konfigurera \> Systemparametrar \> Dataanslutningar**.
-2. Ange alternativet **Aktivera Data Lake-integrering** till **Ja**.
-3. Ange följande nyckelvalvsfält:
-
-    - **Program-ID (klient)** – Ange programmets klient-ID som du skapade tidigare.
-    - **Programhemlighet** – Ange hemligheten som du sparade för programmet du skapade tidigare.
-    - **DNS-namn** – Du hittar DNS-namnet (Domain Name System) på sidan med programinformation för programmet som du skapade tidigare.
-    - **Hemligt namn** – Ange **lagringskontots anslutningssträng**.
 
 ## <a name="configure-the-data-lake"></a>Konfigurera datasjön
 
@@ -991,6 +980,19 @@ Tillägget kommer att installeras inom några minuter.
     | CDS klientorganisations-ID (katalog-ID från AAD)               | Klientorganisations-ID för Dataverse-instansen. Du hittar det här värdet genom att öppna [Azure-portalen](https://portal.azure.com), gå till **Azure Active Directory** och kopiera värdet för **Klientorganisations-ID**. |
     | Ange användarobjekt-ID som har rollen systemadministratör | Azure AD-användarobjekt-ID för användaren i Dataverse. Den här användaren måste vara systemadministratör för Dataverse-instansen. Du hittar det här värdet genom att öppna [Azure-portalen](https://portal.azure.com), gå till **Azure Active Directory \> Användare**, välja användaren och i avsnittet **Identitet** kopiera värdet för **Objekt-ID**. |
     | Är det här standard-CDS-miljön för klientorganisationen?      | Markera den här kryssrutan om Dataverse-instansen var den första produktionsinstans som skapades. Avmarkera den här kryss rutan om Dataverse-instansen skapades manuellt. |
+
+## <a name="configure-the-entity-store"></a>Konfigurera entitetsarkivet
+
+Följ dessa steg för att konfigurera entitetsarkivet i Finance-miljön.
+
+1. Gå till **Systemadministration \> Konfigurera \> Systemparametrar \> Dataanslutningar**.
+2. Ange alternativet **Aktivera Data Lake-integrering** till **Ja**.
+3. Ange följande nyckelvalvsfält:
+
+    - **Program-ID (klient)** – Ange programmets klient-ID som du skapade tidigare.
+    - **Programhemlighet** – Ange hemligheten som du sparade för programmet du skapade tidigare.
+    - **DNS-namn** – Du hittar DNS-namnet (Domain Name System) på sidan med programinformation för programmet som du skapade tidigare.
+    - **Hemligt namn** – Ange **lagringskontots anslutningssträng**.
 
 ## <a name="feedback-and-support"></a>Feedback och support
 

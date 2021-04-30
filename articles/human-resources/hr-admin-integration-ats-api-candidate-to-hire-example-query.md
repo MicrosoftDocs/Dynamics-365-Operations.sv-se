@@ -1,6 +1,6 @@
 ---
-title: Exempelfråga för kandidat att anställa
-description: Detta ämne utgör en exempelfråga för entiteten för Kandidat att anställa i Dynamics 365 Human Resources.
+title: Exempelfrågeställning för kandidat att anställa
+description: Detta ämne utgör en exempelfrågeställning för entiteten för Kandidat att anställa i Dynamics 365 Human Resources.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ea6fc745ffb5892a32196394cb28cb5e646b7639
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a8c3655e7ff609eedbf92fa90a36b65002f40306
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795079"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893482"
 ---
-# <a name="example-query-for-candidate-to-hire"></a>Exempelfråga för kandidat att anställa
+# <a name="example-query-for-candidate-to-hire"></a>Exempelfrågeställning för kandidat att anställa
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Detta ämne utgör en exempelfråga för entiteten för Kandidat att anställa i Dynamics 365 Human Resources.
+Detta ämne utgör en exempelfrågeställning för entiteten för Kandidat att anställa i Dynamics 365 Human Resources.
 
-Detta ämne innehåller ett exempel som demonstrerar hur du kan använda *djupgående infogningar* för att skapa alla detaljer för en ny kandidatpost i en enskild API-åtgärd. Mer information om djupgående infogningar finns i [Skapa relaterade entitetsposter i en och samma åtgärd](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).
+Detta ämne innehåller ett exempel som demonstrerar hur du kan använda *djupgående infogningar* för att skapa alla detaljer för en ny kandidatpost i en enskild API-åtgärd. Mer information om djupgående infogningar finns i [Skapa relaterade entitetsposter i en och samma åtgärd](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).
 
 Entiteten **mshr_hcmcandidatetohireentity** är unik på grund av sin relation till entiteten **mshr_dirpersonentity**. Många av egenskaperna i **mshr_hcmcandidatetohireentity** (till exempel **mshr_firstname**, **mshr_lastname** och **mshr_birthdate**) hämtas från posten **mshr_dirpersonentity**. Om du bokför en ny kandidatpost i **mshr_hcmcandidatetohireentity** utan att använda djupgående infogningar kan du definiera värden för dessa egenskaper direkt i posten **mshr_hcmcandidatetohireentity**. Den associerade posten **mshr_dirpersonentity** skapas automatiskt med de definierade värdena för egenskaperna. Du kan sedan skapa alla andra relaterade entitetsposter (till exempel färdigheter eller utbildning) som separata API-anrop.
 
