@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fff3c3cfe5d0628fd4df6e719b72bc134c9d9c0a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823419"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909461"
 ---
 # <a name="goods-in-transit-processing"></a>Bearbetning av varor på väg
 
@@ -40,7 +40,7 @@ När du aktiverar **Hemtagningskostnad** förbättras standard *leveransvillkor*
 
 När alternativet **Hantering av varor på väg** anges till *Ja* för tillämpliga leveransvillkorsposten placeras varorna i lager för varor på väg. Den här åtgärden initieras bara om lagerinleveransen inte bearbetas innan en faktura bearbetas. När leveransvillkoren för en order har ställts in för att använda varor på väg, kan användarna inte längre bokföra en produktinleverans för inköpsordern. Om de försöker uppstår ett fel. Felmeddelandet visar att de måste använda funktionen för varor på väg när de går vidare.
 
-Om du vill arbeta med leveransvillkor för varor på väg går du till **Anskaffning och inköp \> Inställningar \> Distribution \> Leveransvillkor**. I tabellen nedan beskrivs de fält som modulen **Hemtagningskostnad** lägger till på sidan **Leveransvillkor** för att ge stöd till funktionen varor på väg. Båda fälten finns på snabbfliken **Allmänt**. Mer information om de andra fälten på den här sidan finns [i Leveransvillkor (formulär)](https://technet.microsoft.com/library/aa575567.aspx).
+Om du vill arbeta med leveransvillkor för varor på väg går du till **Anskaffning och inköp \> Inställningar \> Distribution \> Leveransvillkor**. I tabellen nedan beskrivs de fält som modulen **Hemtagningskostnad** lägger till på sidan **Leveransvillkor** för att ge stöd till funktionen varor på väg. Båda fälten finns på snabbfliken **Allmänt**. Mer information om de andra fälten på den här sidan finns [i Leveransvillkor (formulär)](/dynamicsax-2012//terms-of-delivery-form).
 
 | Fält | beskrivning |
 |---|---|
@@ -55,7 +55,7 @@ Hemtagningskostnad lägger till två nya typer av lagerställe: *varor på väg*
 
 Lagerställetypen *varor på väg* kommer att associeras med ditt lagerställe för varor på väg och det lagerstället kommer att användas för att behandla varorna på beställningen för varor på väg innan de tas emot på det slutliga destinationslagret. I allmänhet räcker ett lagerställe för varor på väg för varje plats om Plats och Lagerställe är de enda lagerdimensioner som används för lagerhantering. Om lagerdimensionen Plats används, måste ett lager för varor på väg ställas in för varje kombination av en plats och ett lagerställe, så att standardplatsen också kan anges.
 
-Om du vill arbeta med inställningar för varor på väg för dina lagerställen går du till **Lagerhantering \> Inställningar \> Lageruppdelning \> Lagerställen**. I tabellen nedan beskrivs de fält som modulen **Hemtagningskostnad** lägger till på sidan **Lagerställen** för att ge stöd till funktionen varor på väg. Båda fälten finns på snabbfliken **Allmänt**. Mer information om övriga fält på snabbfliken finns i [Lagerställen (formulär)](https://technet.microsoft.com/library/aa620570.aspx).
+Om du vill arbeta med inställningar för varor på väg för dina lagerställen går du till **Lagerhantering \> Inställningar \> Lageruppdelning \> Lagerställen**. I tabellen nedan beskrivs de fält som modulen **Hemtagningskostnad** lägger till på sidan **Lagerställen** för att ge stöd till funktionen varor på väg. Båda fälten finns på snabbfliken **Allmänt**. Mer information om övriga fält på snabbfliken finns i [Lagerställen (formulär)](/dynamicsax-2012//warehouses-form).
 
 | Fält | beskrivning |
 |---|---|
@@ -109,7 +109,7 @@ Du kan också ta emot varor genom att skapa en införseljournal. Du kan skapa en
     - **Skapa från varor på väg** - Ange det här alternativet till *Ja* för att ta kvantiteter från de valda transitraderna för den markerade färden, behållare eller folio.
     - **Skapa från orderrader** – Ange det här alternativet till *Ja* om du vill ange standardkvantiteten i införseljournalen från inköpsorderraderna. Standardkvantiteten i införseljournalen kan endast anges på det här sättet om kvantiteten på inköpsorderraden matchar kvantiteten på order för varor på väg.
 
-1. Bearbeta införseljournalen enligt beskrivningen i [Registrera artikelinleveranser med en artikelinföringsjournal](https://technet.microsoft.com/library/aa571129.aspx).
+1. Bearbeta införseljournalen enligt beskrivningen i [Registrera artikelinleveranser med en artikelinföringsjournal](/dynamicsax-2012/appuser-itpro/register-item-receipts-with-an-item-arrival-journal).
 
 > [!NOTE]
 > Införseljournalen används vanligtvis i situationer där platser och batch-/seriespårning används, men lagerstyrning används inte.
@@ -131,15 +131,14 @@ Hemtagningskostnad lägger till följande arbetsgenereringsprocesser i menyn fö
 - Artikelinleverans av varor på väg
 - Varor på väg som mottagande och inleverans
 
-Konfigurationsinställningarna för dessa processer liknar inställningarna för de [processer som används för att skapa arbetsprocesser för inköpsorder](https://technet.microsoft.com/library/dn553216.aspx). I processen *Varor på väg som mottagande och inleverans* läggs även följande fält till.
+Konfigurationsinställningarna för dessa processer liknar inställningarna för de [processer som används för att skapa arbetsprocesser för inköpsorder](/dynamicsax-2012/appuser-itpro/configure-mobile-devices-for-warehouse-work). I processen *Varor på väg som mottagande och inleverans* läggs även följande fält till.
 
 - **Aktivera fullständig leveransbehållare** – Om det här alternativet är inställt på *Ja*, när inlagringsarbete är slutfört, tillhandahåller mobilappen för distributionslagerhantering ett ytterligare alternativ som kallas **fullständig leveransbehållare**. När det alternativet har valts kan arbetaren bekräfta att behållaren är slutförd. Då behandlas alla korta inleveranser som en undertransaktion.
 
 ### <a name="location-directives"></a>Platsdirektiv
 
-Hemtagningskostnad lägger till en ny arbetsordertyp som heter *Varor på väg* på sidan **Platsdirektiv**. Denna arbetsordertyp ska konfigureras på samma sätt som [arbetsordertyperna för inköpsorder](https://technet.microsoft.com/library/dn553184.aspx).
+Hemtagningskostnad lägger till en ny arbetsordertyp som heter *Varor på väg* på sidan **Platsdirektiv**. Denna arbetsordertyp ska konfigureras på samma sätt som [arbetsordertyperna för inköpsorder](/dynamicsax-2012/appuser-itpro/create-a-work-template).
 
 ### <a name="work-templates"></a>Arbetsmallar
 
-Hemtagningskostnad lägger till en ny arbetsordertyp som heter *Varor på väg* på sidan **Arbetsmallar**. Denna arbetsordertyp ska konfigureras på samma sätt som [arbetsordermallar för inköpsorder](https://technet.microsoft.com/library/dn553184.aspx).
-
+Hemtagningskostnad lägger till en ny arbetsordertyp som heter *Varor på väg* på sidan **Arbetsmallar**. Denna arbetsordertyp ska konfigureras på samma sätt som [arbetsordermallar för inköpsorder](/dynamicsax-2012/appuser-itpro/create-a-work-template).

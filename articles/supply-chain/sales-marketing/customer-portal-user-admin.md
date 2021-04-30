@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4d6d88f69f9b958c9e8f49695d07d0b593da2258
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 453c6f18c689bb8bf2f6208d9181b23a2792f41a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840711"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907775"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Skapa och hantera kundportal användare
 
@@ -44,26 +44,26 @@ Innan du börjar bjuda in nya kunder måste du kontrollera att du har aktiverat 
 
 ## <a name="the-invitation-process"></a>En inbjudningsprocess
 
-Om du vill bjuda in en befintlig kontakt till kundportalen följer du stegen i [Bjud in kontakter till portalerna ](https://docs.microsoft.com/powerapps/maker/portals/configure/invite-contacts) i Power Apps-portal dokumentationen.
+Om du vill bjuda in en befintlig kontakt till kundportalen följer du stegen i [Bjud in kontakter till portalerna ](/powerapps/maker/portals/configure/invite-contacts) i Power Apps-portal dokumentationen.
 
-Innan du bjuder in en kund att gå med i kundportalen, se till att kunden är det [kontaktpost](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) är bättre och ställa på följande sätt:
+Innan du bjuder in en kund att gå med i kundportalen, se till att kunden är det [kontaktpost](/powerapps/maker/portals/configure/configure-contacts) är bättre och ställa på följande sätt:
 
 1. Ange fältet **Företag** till den juridiska person i som du vill att kunden ska tillhöra i Supply Chain Management.
 2. Ange fältet **Kontonummer** till kundens kontonummer som du vill att användaren ska ha i Supply Chain Management.
 
 När en kontakt har skapats bör du kunna se den i Supply Chain Management.
 
-Mer information finns i [Konfigurera en kontakt för användning på en portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) i dokumentationen till Power Apps-portalerna.
+Mer information finns i [Konfigurera en kontakt för användning på en portal](/powerapps/maker/portals/configure/configure-contacts) i dokumentationen till Power Apps-portalerna.
 
 ## <a name="out-of-box-web-roles-and-table-permissions"></a>Medföljande webbroller och tabellbehörigheter
 
-Användarroller i Power Apps-portaler definieras av [webbroller](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) och [tabellbehörigheter](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Ett par roller har definierats för medföljande kundportalen. Du kan skapa nya roller och du kan ändra eller ta bort befintliga roller.
+Användarroller i Power Apps-portaler definieras av [webbroller](/powerapps/maker/portals/configure/create-web-roles) och [tabellbehörigheter](/powerapps/maker/portals/configure/assign-entity-permissions). Ett par roller har definierats för medföljande kundportalen. Du kan skapa nya roller och du kan ändra eller ta bort befintliga roller.
 
 ### <a name="out-of-box-web-roles"></a>Medföljande webbroller
 
 I det här avsnittet beskrivs de webbroller som levereras med kundportalen.
 
-Mer information om hur du ändrar medföljande användarrollerna finns i [skapa webbroller för portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) och [lägga till postbaserad säkerhet med hjälp av tabellbehörigheter för portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) i dokumentationen för Power Apps-portaler.
+Mer information om hur du ändrar medföljande användarrollerna finns i [skapa webbroller för portaler](/powerapps/maker/portals/configure/create-web-roles) och [lägga till postbaserad säkerhet med hjälp av tabellbehörigheter för portaler](/powerapps/maker/portals/configure/assign-entity-permissions) i dokumentationen för Power Apps-portaler.
 
 #### <a name="administrator"></a>Administratör
 

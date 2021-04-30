@@ -2,8 +2,7 @@
 title: Ekonomisk analys
 description: Ekonomiska analys använder Microsoft Power BI för att sammanföra bokslut, diagram och ekonomiska nyckeltal (KPI).
 author: kweekley
-manager: AnnBe
-ms.date: 05/22/2019
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 22de5f3e2e475aa681be2d8868fb1d939f3f8638
-ms.sourcegitcommit: 4c57c16fe7ecd2a9840158aa69646ee47152e5f1
+ms.openlocfilehash: 71fd1ad15320fda162a289e9c5741aec2ce76778
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5572376"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894918"
 ---
 # <a name="financial-analysis"></a>Ekonomisk analys
 
@@ -65,10 +64,9 @@ Data för **Ekonomiska analys** hämtas från enhetsbutiken (**systemadministrat
 
 Du måste uppdatera följande enheter om du vill se data i arbetsytan **Ekonomisk analys**:
 
-- BudgetActivityMeasure
 - Transaktionsdata version 3 för ekonomiska rapporter 
+- Kredit och inkasso v2
 - CustCollectionsBIMeasurements
-- LedgerActivityMeasure
 - LedgerCovLiquidityMeasurement
 - Inköpskub
 - Försäljningskub
@@ -241,9 +239,9 @@ Power BI har inte något alternativ för att visa och dölja tomma rader. Om en 
 
 Informationen i följande resurser krävs inte för att aktivera inbäddade rapporter i arbetsytan för **Ekonomisk analys** i en produktionsmiljö. Däremot är de användbara för dev och om du vill bädda in Power BI rapporterna.
 
-- [Få åtkomst till analysarbetsytor och rapporter i en 1-rutemiljö](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
+- [Få åtkomst till analysarbetsytor och rapporter i en 1-rutemiljö](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment)
 
-- [Lägg till analyser i arbetsytor genom att använda Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+- [Lägg till analyser i arbetsytor genom att använda Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

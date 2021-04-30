@@ -13,25 +13,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9fabc308b1b0682c6fdce3e81e7335417846bebd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d5ada93c0192aadac70c38c8c8c4f3af86ff6fc3
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743543"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893286"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Designa ER-konfigurationer för att ignorera strukturlistetecken i genererade filer
 
 [!include [banner](../includes/banner.md)]
 
-Du kan utforma [elektronisk rapportering (ER)](general-electronic-reporting.md) [lösning](er-quick-start1-new-solution.md) för att skapa utgående dokument. Om du vill generera dokumenten som text- eller XML-filer måste lösningen innehålla en ER [konfiguration](general-electronic-reporting.md#Configuration) som innehåller en komponent för ER [format](general-electronic-reporting.md#FormatComponentOutbound). Om du vill ange den [teckenkodning](https://docs.microsoft.com/windows/win32/intl/character-sets) som representerar uppsättningen tecken i genererade filer måste ER-formatet innehålla formatelementet **Vanlig\\Fil**. Om du vill konfigurera ER-formatkomponenten måste du öppna versionen [utkast](general-electronic-reporting.md#component-versioning) för ER-konfigurationen i ER-formatdesignern och lägga till elementet **Vanlig\\Fil**. I fältet **kodning** ange kodning av utgående filer som genereras när programmet körs med hjälp av komponenten.
+Du kan utforma [elektronisk rapportering (ER)](general-electronic-reporting.md) [lösning](er-quick-start1-new-solution.md) för att skapa utgående dokument. Om du vill generera dokumenten som text- eller XML-filer måste lösningen innehålla en ER [konfiguration](general-electronic-reporting.md#Configuration) som innehåller en komponent för ER [format](general-electronic-reporting.md#FormatComponentOutbound). Om du vill ange den [teckenkodning](/windows/win32/intl/character-sets) som representerar uppsättningen tecken i genererade filer måste ER-formatet innehålla formatelementet **Vanlig\\Fil**. Om du vill konfigurera ER-formatkomponenten måste du öppna versionen [utkast](general-electronic-reporting.md#component-versioning) för ER-konfigurationen i ER-formatdesignern och lägga till elementet **Vanlig\\Fil**. I fältet **kodning** ange kodning av utgående filer som genereras när programmet körs med hjälp av komponenten.
 
 > [!NOTE]
 > Om formatet innehåller fel kodningsnamn uppstår ett fel när du sparar ändringarna av formatets inställningar.
 
 ![Lägga till rotelement på sidan Formatdesigner](./media/er-suppress-bom-characters-image1.gif)
 
-Om du anger **UTF-8**, **UTF-16** eller **UTF-32** som kodning blir alternativet **Undertryck strukturlistetecken** tillgängligt. Ställ in det här alternativet på **Ja** för att undertrycka [byteordningsmärke (strukturlista) tecken](https://docs.microsoft.com/globalization/encoding/byte-order-mark) i utgående filer som genereras vid körning när det redigerbara ER-formatet körs.
+Om du anger **UTF-8**, **UTF-16** eller **UTF-32** som kodning blir alternativet **Undertryck strukturlistetecken** tillgängligt. Ställ in det här alternativet på **Ja** för att undertrycka [byteordningsmärke (strukturlista) tecken](/globalization/encoding/byte-order-mark) i utgående filer som genereras vid körning när det redigerbara ER-formatet körs.
 
 > [!NOTE]
 > Om du lämnar fältet **Kodning** används standardvärdet **UTF-8**.

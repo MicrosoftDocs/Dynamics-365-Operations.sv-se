@@ -1,6 +1,6 @@
 ---
-title: Vanliga frågor och svar om Dynamics 365 Commerce och Microsoft Teams-integration
-description: Det här avsnittet finns svar på vanliga frågor som rör Microsoft Dynamics 365 Commerce och Microsoft Teams-integration.
+title: Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integration
+description: Det här avsnittet finns svar på vanliga frågeställningar som rör Microsoft Dynamics 365 Commerce och Microsoft Teams-integration.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 03/31/2021
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 26e1dc53126c0615332457aa785415c4c7112bbd
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bf9aebb1c8ba7cf4fee3f0471a10872de1e23ce6
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842749"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908866"
 ---
-# <a name="dynamics-365-commerce-and-microsoft-teams-integration-faq"></a>Vanliga frågor och svar om Dynamics 365 Commerce och Microsoft Teams-integration
+# <a name="dynamics-365-commerce-and-microsoft-teams-integration-faq"></a>Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integration
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
-Det här avsnittet finns svar på vanliga frågor som rör Microsoft Dynamics 365 Commerce och Microsoft Teams-integration.
+Det här avsnittet finns svar på vanliga frågeställningar som rör Microsoft Dynamics 365 Commerce och Microsoft Teams-integration.
 
 ### <a name="who-in-the-store-becomes-an-owner-of-a-team-while-provisioning-teams-from-commerce"></a>Vem i butiken blir ägare till ett team när Teams etableras från Commerce? 
 
@@ -39,7 +38,7 @@ Kommunikationschefer i Microsoft Teams har förmågan att skapa och publicera up
 
 Om du vill tilldela en medarbetare rollen som butiksuppgiftschef i Commerce-administration följer du dessa steg.
 
-1. Gå till **Retail och Commerce \> Anställda \> Användare**.
+1. Gå till **Butik och handel \> Anställda \> Användare**.
 1. Välj en medarbetare.
 1. På snabbfliken **Användarens roller** klicka på **Tilldela roller**.
 1. I dialogrutan **Tilldela roller till användare**, välj rollen **butikshanterarens roll** och klicka sedan på **OK**.

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: fe7ff2ab877182dd3145e39574aa7229c48b6057
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e30b02a6f98f638954adc7ec335babd518b92bf4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833411"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909413"
 ---
 # <a name="set-up-master-planning"></a>Ställ in huvudplanering
 
@@ -35,7 +35,7 @@ Huvudplanering har två typer av planer: statiska och dynamiska. Varje typ har u
 
 ### <a name="static-plan"></a>Statisk plan
 
-Den statiska planen förblir oförändrad, oavsett eventuella ändringar i tillgången och efter frågan, till nästa gång huvudplaneringen körs.
+Den statiska planen förblir oförändrad, oavsett eventuella ändringar i tillgången och efter frågeställningen, till nästa gång huvudplaneringen körs.
 
 Den statiska planen används för att godkänna och bekräfta de order som föreslås. Det är en verksamhetsplan som olika anställda, till exempel en inköpare eller produktionsplanerare, kan använda för att basera sina beslut på och utföra sina dagliga uppgifter och aktiviteter.
 
@@ -106,11 +106,11 @@ För varje plan, på snabbfliken **allmänt** på sidan **huvudplaner** (**huvud
 
 ### <a name="operations-scheduling"></a>Grovplanering
 
-Du kan använda grovplaneringen för att ange en allmän uppskattning av produktionsprocessen över en viss tid. Grovplanering bryter inte ned verksamheten för produktionsflödet till jobb. Mer information om grovplanering finns i [grovplanering](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
+Du kan använda grovplaneringen för att ange en allmän uppskattning av produktionsprocessen över en viss tid. Grovplanering bryter inte ned verksamheten för produktionsflödet till jobb. Mer information om grovplanering finns i [grovplanering](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
 
 ### <a name="job-scheduling"></a>Finplanering
 
-Finplanering är en mer detaljerad planeringsmetod där varje operation delas in i sina individuella uppgifter eller jobb. Finplanering omfattar information om kapacitet. Den används som regel för att planera enskilda jobb för en omedelbar eller kortsiktig tidsram. Mer information om finplanering finns i [finplanering](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Finplanering är en mer detaljerad planeringsmetod där varje operation delas in i sina individuella uppgifter eller jobb. Finplanering omfattar information om kapacitet. Den används som regel för att planera enskilda jobb för en omedelbar eller kortsiktig tidsram. Mer information om finplanering finns i [finplanering](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="time-fences-in-days"></a>Frystidsgräns i dagar
 
@@ -121,7 +121,7 @@ För varje plan kan du välja hur långt i framtiden de olika behoven och andra 
 
 ### <a name="coverage"></a>Disponering
 
-Tidsgränsen för disponering representerar planeringsperioden eller hur långt upp efter frågan ska inkluderas. Med andra ord anger den planeringshorisonten.
+Tidsgränsen för disponering representerar planeringsperioden eller hur långt upp efter frågeställningen ska inkluderas. Med andra ord anger den planeringshorisonten.
 
 Genom att ställa in alternativet **Disponering** till **Ja** kan du åsidosätta den tidsgräns för disponering som har definierats för artikeln under huvudplaneringen. I detta fall anger du nu antalet dagar som huvudplaneringens beräkning ska täcka behoven. Tidsgränsen för disponering beräknas framåt från dagens datum. Behov som ligger före dagens datum bearbetas alltid.
 
@@ -158,7 +158,7 @@ Genom att ställa in alternativet **Kapacitet** till **Ja** kan du åsidosätta 
 
 Genom att ställa in alternativet **Åtgärdsmeddelanden** till **Ja** kan du åsidosätta den åtgärdstidsgräns som har definierats för artikeln under huvudplaneringen. I detta fall anger du antalet dagar som huvudplaneringen ska generera åtgärdsmeddelanden för behov. Åtgärdstidsgränsen beräknas framåt från dagens datum.
 
-Mer information om åtgärdsmeddelanden finns i [åtgärdsmeddelanden](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
+Mer information om åtgärdsmeddelanden finns i [åtgärdsmeddelanden](/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
 
 > [!NOTE]
 > Beräkningen av åtgärdsmeddelanden gör att en tid körs längre för huvudplaneringen. Om åtgärdsmeddelanden inte analyseras och tillämpas regelbundet (varje dag, vecka o.s.v.) bör du överväga att inaktivera beräkningen under huvudplaneringskörningen. Du inaktiverar beräkningen på sidan **huvudplaner**, ange **åtgärdstidsgräns** till **0** (noll) för huvudplanen som du kör. Kontrollera också att inställningen **åtgärdsmeddelande** är inaktiverad för alla disponeringsgrupper.
@@ -207,7 +207,7 @@ Som regel anges de positiva dagarna som en siffra mellan den längsta produktion
 
 ### <a name="negative-days"></a>Negativa dagar
 
-Negativa dagar anger hur sena inleveranser av artiklar kommer att tillåtas. De representerar antalet dagar som du är villig att vänta innan du beställer ny påfyllnad när du har negativt lager eller inte har tillräckligt med lager. Negativa dagar svara på frågan, ska vi skapa en ny inköpsorder för artikeln, eller använda ett befintligt inköp, även om vi vet att artikeln kommer att vara sen?
+Negativa dagar anger hur sena inleveranser av artiklar kommer att tillåtas. De representerar antalet dagar som du är villig att vänta innan du beställer ny påfyllnad när du har negativt lager eller inte har tillräckligt med lager. Negativa dagar svara på frågeställningen, ska vi skapa en ny inköpsorder för artikeln, eller använda ett befintligt inköp, även om vi vet att artikeln kommer att vara sen?
 
 Du har till exempel en försäljningsorder för en artikel som är 15 dagar från det aktuella datumet. Du har också en inköpsorder för samma artikel. Denna inköpsorder kommer att inlevereras om 20 dagar från det aktuella datumet. Vill du att en inköpsorder skapas för den försäljningsordern, eller vill du använda den befintliga ordern även om du inte kan slutföra försäljningsordern i tid? Om de negativa dagarna är inställda på mindre än **5** för att ange att artikeln kan försenas maximalt fem dagar, skapar systemet en ny planerad inköpsorder för att tillfredsställa försäljningsordern. Om de negativa dagarna är inställda på fler än **5**, använder systemet den befintliga ordern för artikeln.
 
@@ -223,7 +223,7 @@ Produktionstid + negativa dagar + aktuellt datum – behovsdatum
 
 Systemet använder bara de planerade leveransorder som finns inom denna tidsgräns och skapar en ny planerad order utanför den. Fördelen med dynamiska negativa dagar är att den enskilda produktens produktionstid kommer att inkluderas, för att återanvända befintliga order och undvika att skapa nya planerade order som kommer att bli längre än en senare dag, på grund av förseningar som orsakas av produktionstiden. 
 
-Mer information finns i [negativa dagar och dynamiska negativa dagar](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+Mer information finns i [negativa dagar och dynamiska negativa dagar](/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

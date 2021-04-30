@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 7d5768a6cb2b3623333fab93a42ac5840e87ec68
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ddfc0670a5fca24d996e9ab605e267f9f3f26f19
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818635"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897898"
 ---
 # <a name="use-external-data-in-cash-flow-forecasts-preview"></a>Använd externa data i kassaflödesprognoser (förhandsversion)
 
@@ -33,7 +33,7 @@ Externa data kan anges i eller importeras till kassaflödesprognoser. I det här
 
 Använd fliken **Extern källa** på sidan **Kassaflödesprognosinställningar** (**Kassa- och bankhantering \> Kassaflödeprognoser**) om du vill ange inställningar som stöder användning av externa data i kassaflödesprognoser.
 
-Mer information om konfigurationen finns i [Kassaflödesprognoser](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting).
+Mer information om konfigurationen finns i [Kassaflödesprognoser](../cash-bank-management/cash-flow-forecasting.md).
 
 Om du vill ange externa data för kassaflödesprognoser kan du använda Öppna i Excel-upplevelsen för att ange och ändra externa data. Välj knappen **Externa data** och välj sedan antingen **Lägg till externa data** eller **Redigera befintliga externa data**. När Microsoft Excel-filen öppnas kan du ange information i följande fält:
 

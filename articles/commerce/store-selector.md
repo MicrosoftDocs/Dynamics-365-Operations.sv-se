@@ -2,7 +2,8 @@
 title: Modul för butiksväljare
 description: Det här avsnittet handlar om modulen för butiksväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e73338666c0bd8c0dc8df840b308ec758ee812dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798643"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853427"
 ---
 # <a name="store-selector-module"></a>Modul för butiksväljare
 
@@ -32,11 +33,32 @@ Kunder kan använda modulen butiksväljare för att hämta en produkt i en vald 
 
 Med modulen butiksväljare kan användarna ange en plats (ort, delstat, adress och så vidare) för att söka efter butiker inom en sökradie. När modulen öppnas använder den kundens webbläsare och söker efter butiker (om medgivande finns).
 
-## <a name="store-selector-module-usage-in-e-commerce"></a>Användning av modul för butiksväljare i näthandel
+## <a name="store-selector-module-usage"></a>Användning av modul för butiksväljare
 
 - En modul för butiksväljare kan användas på en produktinformationssida (PDP) för att välja en butik för upphämtning.
 - En modul för butiksväljare kan användas på en kundvagnssida för att välja en butik för upphämtning.
 - En modul för butiksväljare kan användas på en fristående sida där alla tillgängliga butiker visas.
+
+## <a name="fulfillment-group-setup-in-commerce-headquarters"></a>Konfigurera uppfyllelsegrupper i Commerce-administrationen
+
+För att butiksväljaren ska visa tillgängliga butiker måste uppfyllelsegruppen ha ställts in i Commerce-administrationen. För mer information, se [Konfigurera uppfyllelsegrupper](customer-orders-overview.md#set-up-fulfillment-groups).
+
+Dessutom måste, för varje butik i uppfyllelsegruppen, butiksplatsens latitud och longitud definieras i administrationen.
+
+Följ dessa steg för att ange värden för latitud och longitud för en butiksplats i Commerce-administrationen.
+
+1. Gå till **Lagerhantering \> Inställningar \> Lageruppdelning**.
+1. Välj lagrets plats i vänster ruta.
+1. På snabbfliken **Adresser** väljer du **Avancerat**.
+
+    ![Exempel på butiksinformation i administrationen](./media/Store-address.png)
+
+1. I åtgärdsfönstret väljer du **Redigera**.
+1. På snabbfliken **Allmänt** anger du värden för **Latitud** och **Longitud**.
+
+    ![Exempel på konfiguration av latitud och longitud i administrationen](./media/Store-latitude-longitude.png)
+
+1. Klicka på **Spara** i åtgärdsfönstret. 
 
 ## <a name="bing-maps-integration"></a>Bing Maps-integrering
 
@@ -48,6 +70,7 @@ För REST API för automatiska förslag måste du se till att följande URL:er t
 - Till direktivet **img-src** lägger du till **&#42;.virtualearth.net**.
 - Till direktivet **script-src** **lägg till &#42;.bing.com, &#42;.virtualearth.net**.
 - Till direktivet **script style-src** lägger du till **&#42;.bing.com**.
+
  
 ## <a name="pickup-in-store-mode"></a>upphämta i butiksläge
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 50c9ac9106487fe04ccf704907c59b9a414b6cc8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9a85cd2590bd9c6cabcd0001d5de81746c1d4f63
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840759"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907849"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Kundportal för Dynamics 365 Supply Chain Management – översikt
 
@@ -25,9 +25,9 @@ ms.locfileid: "5840759"
 
 ## <a name="what-is-the-customer-portal"></a>Vad är kundportalen?
 
-Moderna försörjningskedjesystem är beroende av integration. De kräver att lager, kund efter frågan och försäljningsavdelningen integreras i olika silor. Kundportalen hjälper organisationer som kör Microsoft Dynamics 365 Supply Chain Management förbättra integrationen och effektivare hålla kunderna underrättade.
+Moderna försörjningskedjesystem är beroende av integration. De kräver att lager, kund efter frågeställningen och försäljningsavdelningen integreras i olika silor. Kundportalen hjälper organisationer som kör Microsoft Dynamics 365 Supply Chain Management förbättra integrationen och effektivare hålla kunderna underrättade.
 
-Kundportalen är en [Power Apps](https://docs.microsoft.com/powerapps/maker/portals/overview)-mall för portaler som gör det möjligt för företag att skapa en externt tillverkande webbplats (B2B) för scenarier som rör bearbetning av försäljningsorder. Mallen använder [dubbelriktad skrivning](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page), Supply Chain Management och Power Apps-portaler för att göra det möjligt för externa företagskunder att visa och skapa data från företagets Dynamics 365-miljö.
+Kundportalen är en [Power Apps](/powerapps/maker/portals/overview)-mall för portaler som gör det möjligt för företag att skapa en externt tillverkande webbplats (B2B) för scenarier som rör bearbetning av försäljningsorder. Mallen använder [dubbelriktad skrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md), Supply Chain Management och Power Apps-portaler för att göra det möjligt för externa företagskunder att visa och skapa data från företagets Dynamics 365-miljö.
 
 Kundportalmallen har alla anpassningsmöjligheter som de portalfunktioner Power Apps erbjuder. Mallen kan enkelt ändras för att representera företagets varumärke, lägga till fler funktioner och ändra användarupplevelsen. Alla funktioner som mallen ger ut från rutan kan ändras efter behov.
 
@@ -48,20 +48,20 @@ Kundportalmallen har alla anpassningsmöjligheter som de portalfunktioner Power 
 Kundportalen är utformad för företag som kör Supply Chain Management och har följande egenskaper:
 
 - De vill skapa en extern webbplats som förmedlar orderbearbetningsinformation (t.ex. orderstatus eller kontoinformation) direkt från systemet för Supply Chain Management-system till sina företagskunder.
-- De övergår från Dynamics AX 2012 till Supply Chain Management och tidigare använt [AX 2012 Customer Self Service-portal](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-the-customer-self-service-portal).
+- De övergår från Dynamics AX 2012 till Supply Chain Management och tidigare använt [AX 2012 Customer Self Service-portal](/dynamicsax-2012/appuser-itpro/about-the-customer-self-service-portal).
 
 Följande typer av organisationer är **inte** bra kandidater för att implementera kundportalen:
 
-- Företag som vill bygga en webbplats för andra än företagskunder. Dessa företag bör överväga att skapa en [Dynamics 365 Commerce näthandelswebbplats](https://docs.microsoft.com/dynamics365/commerce/create-ecommerce-site).
+- Företag som vill bygga en webbplats för andra än företagskunder. Dessa företag bör överväga att skapa en [Dynamics 365 Commerce näthandelswebbplats](../../commerce/create-ecommerce-site.md).
 - Företag som redan använder en webbplats med en befintlig Power Apps-portal för ett liknande syfte. Dessa företag tar inte emot några ytterligare förmåner från kundportalen. Kundportalen levereras som en mall som fungerar som en mall och är en utgångspunkt för kunder som vill "ansluta punkter" mellan dubbelriktad skrivning, Supply Chain Management och Power Apps-portaler. Om du redan har ställt in en webbplats som tjänar det kanske du inte får mycket värde från att använda kundportal mal len för att återupprätta webbplatsen.
 
 ## <a name="how-does-it-work"></a>Hur fungerar det?
 
 Kundportalen utgörs av en Power Apps-mall för portaler. Det beror på Power Apps-portaler och dubbelriktad skrivning.
 
-[Power Apps-portaler](https://docs.microsoft.com/powerapps/maker/portals/overview) är en funktion som gör att användarna kan skapa webbplatser på en extern webbplats som personer utanför företaget kan logga in på. Liten till ingen kod krävs för att göra portaler. Kundportalen är en av många [Dynamics 365-portalmallar](https://docs.microsoft.com/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365) som är tillgängliga från Microsoft.
+[Power Apps-portaler](/powerapps/maker/portals/overview) är en funktion som gör att användarna kan skapa webbplatser på en extern webbplats som personer utanför företaget kan logga in på. Liten till ingen kod krävs för att göra portaler. Kundportalen är en av många [Dynamics 365-portalmallar](/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365) som är tillgängliga från Microsoft.
 
-[Dubbelriktad skrivning](https://docs.microsoft.com/powerapps/maker/portals/overview) är en medföljande infrastrukturptodukt som ger nära realtidssamverkan mellan kundengagemangsappar och Finance and Operations-appar. Dubbelriktad skrivning ger dubbelriktad integration mellan Finance and Operations-appar och Microsoft Dataverse. Därför ger den ett integrerat användargränssnitt mellan programmen. Kundportalen är beroende av tabeller som har synkroniserats med dubbelriktad skrivning. Innan data från Supply Chain Management kan placeras i kundportalen måste dubbelriktade skrivfunktioner aktiveras för alla lämpliga tabeller.
+[Dubbelriktad skrivning](/powerapps/maker/portals/overview) är en medföljande infrastrukturptodukt som ger nära realtidssamverkan mellan kundengagemangsappar och Finance and Operations-appar. Dubbelriktad skrivning ger dubbelriktad integration mellan Finance and Operations-appar och Microsoft Dataverse. Därför ger den ett integrerat användargränssnitt mellan programmen. Kundportalen är beroende av tabeller som har synkroniserats med dubbelriktad skrivning. Innan data från Supply Chain Management kan placeras i kundportalen måste dubbelriktade skrivfunktioner aktiveras för alla lämpliga tabeller.
 
 ![Kundportalberoenden](media/customer-portal-elements.png "Kundportalberoenden")
 

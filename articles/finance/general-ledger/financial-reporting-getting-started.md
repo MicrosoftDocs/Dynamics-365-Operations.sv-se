@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d37af06a33667f7cfe5df182d5197dee5edc912b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4de7f7f5f501024b7698736ded80405b9291cb58
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811305"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897046"
 ---
 # <a name="get-started-with-financial-reporting"></a>Kom i gång med Financial reporting 
 
@@ -148,7 +148,7 @@ Problem 1: Rapportdesigner startar inte när du väljer **ny** eller **Redigera*
 * I Internet Explorer, välj **inställningar** och sedan **Internetalternativ**. Välj fliken **säkerhet**. Välj tillförlitliga platser. Ändra alternativet till i området märkt Säkerhetsnivå för denna zon till **Medel-låg**.
 * Inaktivera blockering av popup-fönster i webbläsaren.
 * Arbetsstationer måste installera Microsoft .NET ramverk 4.6.2 eller senare. Den här versionen av Microsoft .NET Framework kan hämtas och installeras från [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* Om du använder webbläsaren Chrome måste du installera tillägget ClickOnce för att hämta rapportdesignerklienten. Om du använder Chrome i osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge. Mer information om Chrome ClickOnce-tillägget finns i [Systemkrav för molnbaserad distribution](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
+* Om du använder webbläsaren Chrome måste du installera tillägget ClickOnce för att hämta rapportdesignerklienten. Om du använder Chrome i osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge. Mer information om Chrome ClickOnce-tillägget finns i [Systemkrav för molnbaserad distribution](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * Om du använder Microsoft Edge med en Chrome-webbläsare behöver du inte installera ett ClickOnce-tillägg för Edge Chromium. Du måste dock aktivera alternativet ClickOnce för att kunna hämta Report Designer-klienten. Om du använder osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge.
      1. Öppna en ny webbläsare i Microsoft Edge.
      2. Ange **edge://flags** och välj **Retur**.

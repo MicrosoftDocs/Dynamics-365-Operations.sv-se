@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 56ec9795f0eb8b15dd00578bf35739eaa9e3d086
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 266f94b6a32c88307258aa99f2ac0c6bf9c50a84
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818641"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897922"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Utvärdera den första förutsägelsemodellen för kundbetalning (förhandsversion)
 
@@ -41,7 +41,7 @@ Med den här länken kommer du till AI Builder, där du kan lära dig mer om den
 
 Den sida som öppnas visar följande information:
 
-- I avsnittet **Prestanda** ger modellens prestandapoäng ett perspektiv på modellens kvalitet. Mer information om den här poängen finns i [Förutsägelsemodellens prestanda](https://docs.microsoft.com/ai-builder/prediction-performance) i dokumentationen för AI Builder.
+- I avsnittet **Prestanda** ger modellens prestandapoäng ett perspektiv på modellens kvalitet. Mer information om den här poängen finns i [Förutsägelsemodellens prestanda](/ai-builder/prediction-performance) i dokumentationen för AI Builder.
 - Avsnittet **Mest inflytelserika data** visar hur viktiga olika indatatyper var för din modell. Du kan utvärdera den här listan och motsvarande procentsatser för att avgöra om informationen är överensstämmer med vad du känner till om ditt företag och din marknad.
 
     [![Avsnitten Prestanda och Mest inflytelserika data för förutsägelsemodellen](./media/models.png)](./media/models.png)

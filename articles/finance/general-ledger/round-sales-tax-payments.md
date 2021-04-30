@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 6134
 ms.assetid: 7dcd3cf5-ebdf-4a9f-806c-1296c7da0331
 ms.search.region: Global
-ms.author: riluan
+ms.author: pacheren
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edbe92d009c77702a21d32afb5aebe93bc5e2ee0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 97f1a30c541a302755826bb8f77205bc060ec159
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815390"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897196"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Momsbetalningar och avrundningregler
 
@@ -28,7 +28,7 @@ ms.locfileid: "5815390"
 
 Den här artikeln beskriver hur avrundningsregelinställningar på skattemyndigheter fungerar och avrundning av momssaldot under jobbet Kvitta och bokför moms.
 
-Moms måste regelbundet rapporteras och betalas till skattemyndigheten. Detta gör du genom att köra kvittnings- och bokföringsmomsprocess på sidan Moms. Moms för en period kommer att kvittas mot momskontona och momssaldot kommer att bokföras på momskvittningskontot. Momssaldot som bokförs på momskvittningskontot, kan avrundas enligt som krävs av skattemyndigheten genom att ställa in en avrundningsregel på sidan Moms. 
+Moms måste regelbundet rapporteras och betalas till skattemyndigheten. Detta gör du genom att köra kvittnings- och bokföringsmomsprocess på sidan Moms. Moms för en period kommer att kvittas mot momskontona och momssaldot kommer att bokföras på momskvittningskontot. Momssaldot som bokförs på momskvittningskontot kan avrundas enligt som krävs av skattemyndigheten genom att ställa in en avrundningsregel på sidan Moms. 
 
 Avrundningsdifferensen bokförs på Momsavrundningkontot som valts i fältet Konton för automatisk transaktion i huvudboken.
 
@@ -40,12 +40,12 @@ Det totala momsen för en period visar ett kreditsaldo på -98 765,43. Den jurid
 
 Den juridiska personen vill använda en avrundningsmetod som rundar av saldot till närmaste hela 1,00. Användaren som ansvarar för momsredovisningen måste då göra följande steg.
 
-1. Klicka på **Skatt** > **Indirekt moms** > **Moms** > **Skattemyndigheter**.
+1. Klicka på **Skatt** > **Indirekt moms** > **Moms** > **Momsmyndigheter**.
 2. I snabbfliken **Allmän** i fältet **Avrundningssätt**, välj **Normal**.
 3. I fältet **Avrundning** anger du 1,00.
 4. När det är dags att betala moms till skattemyndigheten, gå till **Skatt** > **Deklarationer** > **Moms** > **Kvitta och bokför moms**. På momskvittningskontot kan du se att skatteskuldbeloppet på **98 765,43** avrundas till **98 765**.
 
-Följande tabell visar hur ett belopp på 98 765,43 avrundas med hjälp av varje avrundningsmetod som är tillgänglig i fältet **Avrundningsätt** på sidan **Skattemyndigheten**.
+Följande tabell visar hur ett belopp på 98 765,43 avrundas med hjälp av varje avrundningsmetod som är tillgänglig i fältet **Avrundningsätt** på sidan **Momsmyndigheter**.
 
 > [!NOTE]                                                                                  
 > Om värdet för avrunda är inställt på 0,00 är:
@@ -125,7 +125,7 @@ Mer information finns i följande avsnitt:
 - [Skapa en momsbetalning](tasks/create-sales-tax-payment.md)
 - [Skapa momstransaktioner i dokument](tasks/create-sales-tax-transactions-documents.md)
 - [Visa bokförda momstransaktioner](tasks/view-posted-sales-tax-transactions.md)
-- [avrundningsfunktionen](https://msdn.microsoft.com/library/aa850656.aspx)
+- [avrundningsfunktionen](/previous-versions/dynamics/ax-2012/reference/aa850656(v=ax.60))
 
 
 

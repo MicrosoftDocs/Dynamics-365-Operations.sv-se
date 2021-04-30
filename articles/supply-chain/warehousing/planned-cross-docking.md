@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 49807c90c145eee55fae2d515fd19925eb2d944c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 11e044e04e05c68af676bf97e6085e9975da5c1d
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810424"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911258"
 ---
 # <a name="planned-cross-docking"></a>Planerad direktleverans
 
@@ -28,19 +28,21 @@ I det här avsnittet beskrivs avancerad, planerad direktleverans. Direktleverans
 
 Direktleverans låter medarbetare hoppa över inkommande artikelinförsel och utgående plockning av lager som redan har markerats för en utgående order. Därför minimeras antalet gånger som lagret vidrörs, om det är möjligt. Eftersom det är mindre interaktion med systemet ökas dessutom tid och utrymmesbesparingar på lagret.
 
-Innan direktleverans kan köras måste användaren konfigurera en ny mall för direktleverans där leveranskällan och andra uppsättningar krav för direktleverans har angetts. När den utgående ordern skapas måste raden markeras mot en inkommande order som innehåller samma artikel.
+Innan du kan köra direktleverans måste du konfigurera en ny mall för direktleverans där leveranskällan och andra uppsättningar krav för direktleverans har angetts. När den utgående ordern skapas måste raden markeras mot en inkommande order som innehåller samma artikel. Du kan välja kodfältet för direktiv i direktutleveransmallen, på liknande sätt som du konfigurerar lagerpåfyllnads- och inköpsorder.
 
 Vid tiden för inleverans av inkommande order identifierar inställningen för direktleverans automatiskt behovet av direktleverans och skapar flyttningsarbetet för den begärda kvantiteten, baserat på inställningen för platsdirektivet.
 
 > [!NOTE]
-> Lagertransaktioner avregistreras **inte** när jobbet för direktleverans avbryts, även om inställningen för denna funktion aktiveras i parametrar för lagerstyrning.
+> Lagertransaktioner avregistreras *inte* när jobbet för direktleverans avbryts, även om inställningen för denna funktion aktiveras i parametrar för lagerstyrning.
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>Aktivera funktionen planerad direktleverans
 
 Om systemet inte redan har de funktioner som beskrivs i det här avsnittet går du till [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar följande funktioner i följande ordning:
 
 1. *Planerad direktleverans*
-2. *Mallar för direktleverans med platsdirektiv*
+1. *Mallar för direktleverans med platsdirektiv*
+    > [!NOTE]
+    > Med hjälp av denna funktion kan fältet **Direktivkod** anges i direktleveransmallen, på liknande sätt som du ställer in påfyllnadsmallar. Genom att aktivera den här funktionen förhindrar du att du lägger till en kod för direktiv på direktleveransens arbetsmallrader för den slutgiltiga *Placera*-raden. På så sätt ser du till att den slutliga placeringsplatsen kan fastställas under skapandet av arbetet innan arbetsmallar övervägs.
 
 ## <a name="setup"></a>Ställ in
 
@@ -74,7 +76,7 @@ Planerad direktleverans är implementerad som en lastbokföringsmetod. När du h
 
     - **Krav på begäran:** *Inga*
 
-        Det här fältet definierar kraven för efterfrågelager. Om behovet måste kopplas till leveransen före frisläppning väljer du markera *markering*. Om efter frågan måste vara orderreserverad mot försörjningen före frisläppning väljer du *Orderreservation*.
+        Det här fältet definierar kraven för efterfrågelager. Om behovet måste kopplas till leveransen före frisläppning väljer du markera *markering*. Om efter frågeställningen måste vara orderreserverad mot försörjningen före frisläppning väljer du *Orderreservation*.
 
     - **Söka efter typ:** *utleveransplatser*
 
@@ -88,9 +90,9 @@ Planerad direktleverans är implementerad som en lastbokföringsmetod. När du h
 
         Det här alternativet anger om leveransen ska omvalideras under inleverans. Om det här alternativet har värdet *Ja* kontrolleras både det maximala tidsfönstret och intervallet för utgångsdagar.
 
-    - **Direktivkod** Lämna det här fältet tomt
+    - **Direktivkod:** Lämna det här fältet tomt
 
-        Med det här alternativet kan platsdirektiv användas för att avgöra vilken som är den bästa platsen att flytta direktutleverans av lager till. Du kan ställa in den genom att tilldela en direktivkod till varje relevant direktutleveransmall. Varje kod till direktiv identifierar ett unikt platsdirektivet.
+        Detta alternativ aktiveras med hjälp av funktionen *Mallar för direktutleverans med platsdirektiv*. Systemet använder platsdirektiv för att avgöra vilken som är den bästa platsen att flytta lager för direktleverans till. Du kan ställa in den genom att tilldela en direktivkod till varje relevant direktutleveransmall. Om en direktivkod ställs in kommer systemet att söka efter platsdirektiv med direktivkod när arbete genereras. På detta sätt kan du begränsa platsdirektiv som används för en viss direktleveransmall.
 
     - **Validera tidsfönster:** *Ja*
 

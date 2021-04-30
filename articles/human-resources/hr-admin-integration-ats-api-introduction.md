@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 599f9728019cd6bc59c59a4f08df06c6c9c9ac31
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f70e377d6844b5c4f9201f0a561ad9cfcab2eda1
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798443"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890135"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Introduktion av API för integrering av system för sökandespårning
 
@@ -45,28 +45,28 @@ Detta API bygger på Microsoft Dataverse (tidigare Common Data Service). All RES
 
 Mer allmän information om webb-API för Microsoft Dataverse finns här:
 
-- [Vad är Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
-- [Använd webb-API för Microsoft Dataverse](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)
-- [Utvecklarguide för Microsoft Dataverse](https://docs.microsoft.com/powerapps/developer/data-platform)
+- [Vad är Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
+- [Använd webb-API för Microsoft Dataverse](/powerapps/developer/data-platform/webapi/overview)
+- [Utvecklarguide för Microsoft Dataverse](/powerapps/developer/data-platform)
 
-Dokumentationen ovan innehåller information och utvecklarvägledning om hur du använder webb-API för Dataverse, exempelvis [hanterar autentiseringar](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/authenticate-web-api), [genomför åtgärder](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/perform-operations-web-api), [använder Postman med API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/use-postman-web-api) samt [använder ändringsspårnings- eller delta-tokens](https://docs.microsoft.com/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) med API:t.
+Dokumentationen ovan innehåller information och utvecklarvägledning om hur du använder webb-API för Dataverse, exempelvis [hanterar autentiseringar](/powerapps/developer/data-platform/webapi/authenticate-web-api), [genomför åtgärder](/powerapps/developer/data-platform/webapi/perform-operations-web-api), [använder Postman med API](/powerapps/developer/data-platform/webapi/use-postman-web-api) samt [använder ändringsspårnings- eller delta-tokens](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) med API:t.
 
 ### <a name="option-sets"></a>Alternativuppsättningar
 
-Datamodellen för den API för ATS-integrering som beskrivs i det här dokumentet innehåller alternativuppsättningar som tillhandahåller fasta värden associerade med entitetsegenskaper. Mer information om hur du arbetar med alternativuppsättningar i webb-API för Dataverse finns i [Skapa och uppdatera alternativuppsättningar med hjälp av webb-API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets). Alternativuppsättningar definieras för respektive Dataverse-miljö.
+Datamodellen för den API för ATS-integrering som beskrivs i det här dokumentet innehåller alternativuppsättningar som tillhandahåller fasta värden associerade med entitetsegenskaper. Mer information om hur du arbetar med alternativuppsättningar i webb-API för Dataverse finns i [Skapa och uppdatera alternativuppsättningar med hjälp av webb-API](/powerapps/developer/data-platform/webapi/create-update-optionsets). Alternativuppsättningar definieras för respektive Dataverse-miljö.
 
 ### <a name="virtual-tables-for-human-resources-in-dataverse"></a>Virtuella register för Personal i Dataverse
 
 Slutpunkterna för API för ATS-integration använder plattformsfunktionerna för det virtuella registret i Microsoft Dataverse. Som standard distribueras inte de virtuella registren och deras associerade API-slutpunkter för Personal-miljöer, vilket låter organisationer att avgöra vilka OData-slutpunkter som ska visas för miljön. Om du vill använda API:t måste de virtuella registren för Personal-entiteterna genereras för miljön. 
 
-Information om hur du genererar virtuella register för API:et finns i [Konfigurera virtuella Dataverse-register](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+Information om hur du genererar virtuella register för API:et finns i [Konfigurera virtuella Dataverse-register](./hr-admin-integration-common-data-service-virtual-entities.md).
 
 ## <a name="data-model"></a>Datamodell
 
 Datamodellen centreras kring två huvudentiteter:
 
-- **RecruitingRequest** representerar en begäran till en ATS att rekrytera för en eller flera öppna befattningar. En exempelfråga finns i [Exempelfråga för Rekryteringsbegäran](hr-admin-integration-ats-api-recruiting-request-example-query.md).
-- **CandidateToHire** representerar detaljer om en kandidat som har accepterat ett erbjudande om en befattning. **Person** representerar den person som är kandidat. En person kan ha flera roller i företaget, till exempel kandidat, medarbetare, anställd eller entreprenör. För en exempelfråga, se [Exempelfråga för Kandidat att anställa](hr-admin-integration-ats-api-candidate-to-hire-example-query.md).
+- **RecruitingRequest** representerar en begäran till en ATS att rekrytera för en eller flera öppna befattningar. En exempelfrågeställning finns i [Exempelfrågeställning för Rekryteringsbegäran](hr-admin-integration-ats-api-recruiting-request-example-query.md).
+- **CandidateToHire** representerar detaljer om en kandidat som har accepterat ett erbjudande om en befattning. **Person** representerar den person som är kandidat. En person kan ha flera roller i företaget, till exempel kandidat, medarbetare, anställd eller entreprenör. För en exempelfrågeställning, se [Exempelfrågeställning för Kandidat att anställa](hr-admin-integration-ats-api-candidate-to-hire-example-query.md).
 
 Följande diagram visar relationer inom API:t. Flera typer har utländska nycklar till andra, befintliga entiteter i Personal som inte visas här. Detta dokument innehåller information om entiteter som är specifika för rekryteringintegreringsscenarier. Det finns dock många andra entiteter i webb-API:t för Dataverse för Dynamics 365 Human Resources som också kan vara relevanta för din integrering. Du kanske till exempel också behöver detaljer för medarbetare, jobb, befattningar eller andra entiteter som inte har definierats här. Många av dessa entiteter refereras i relationer med utländska nycklar eller navigeringsegenskaper.
 
@@ -74,9 +74,9 @@ Följande diagram visar relationer inom API:t. Flera typer har utländska nyckla
 
 ## <a name="recruiting-request-and-related-entities-and-option-sets"></a>Rekryteringsbegäran och relaterade entiteter och alternativuppsättningar
 
-Exempelfråga: 
+Exempelfrågeställning: 
 
-- [Exempelfråga för rekryteringsbegäran](hr-admin-integration-ats-api-recruiting-request-example-query.md)
+- [Exempelfrågeställning för rekryteringsbegäran](hr-admin-integration-ats-api-recruiting-request-example-query.md)
 
 Enheter:
 
@@ -95,9 +95,9 @@ Alternativuppsättningar:
 
 ## <a name="candidate-to-hire-and-related-entities-and-option-sets"></a>Kandidat att anställa och relaterade enheter och alternativuppsättningar
 
-Exempelfråga:
+Exempelfrågeställning:
 
-- [Exempelfråga för kandidat att anställa](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+- [Exempelfrågeställning för kandidat att anställa](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
 
 Enheter:
 
@@ -134,8 +134,8 @@ Alternativuppsättningar:
 ## <a name="see-also"></a>Se även
 
 [Rekrytera jobbkandidater](hr-personnel-recruit.md)<br>
-[Vad är Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Använd webb-API för Microsoft Dataverse](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)<br>
-[Skapa och uppdatera alternativuppsättningar med hjälp av webb-API:t](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
+[Vad är Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Använd webb-API för Microsoft Dataverse](/powerapps/developer/data-platform/webapi/overview)<br>
+[Skapa och uppdatera alternativuppsättningar med hjälp av webb-API:t](/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

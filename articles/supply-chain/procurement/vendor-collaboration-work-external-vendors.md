@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d8d2b1f98803bc159d3164d4a7c883e088ca7e56
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f0ed7d3344b43c477923ebd8c69acfb6630e6f4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837667"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910411"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverantörssamarbete med externa leverantörer
 
@@ -33,7 +33,7 @@ För mer information om vad externa leverantörer kan göra i gränssnittet för
 > [!NOTE]
 > Informationen i det här avsnittet om samarbete för leverantör gäller bara för den aktuella versionen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februari 2016) och Microsoft Dynamics AX programversion 7.0.1 (maj 2016) kan du samarbeta med leverantörer med hjälp av modulen **Leverantörsportal**. För information om modulen **Leverantörsportal**, se [Samarbeta med leverantörer genom leverantörsportalen](collaborate-vendors-vendor-portal.md).
 
-För mer information om hur leverantörer kan använda leverantörssamarbeten i faktureringsprocessen, se [Arbetsyta för leverantörssamarbetesfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). För mer information hur du reserverar nya användare av leverantörssamarbeten, se [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md).
+För mer information om hur leverantörer kan använda leverantörssamarbeten i faktureringsprocessen, se [Arbetsyta för leverantörssamarbetesfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). För mer information hur du reserverar nya användare av leverantörssamarbeten, se [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md).
 
 ## <a name="defining-the-information-that-is-shown-to-vendors-when-they-respond-to-pos"></a>Definiera information som visas för leverantörer när dessa svarar på inköpsorder
 

@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: c0dbf7a3c7fa3532e35cac240c1abb8adbdbe489
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c4d596f27ffe15a97dc04e2ce7e85d21f8e7161f
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842745"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908405"
 ---
 # <a name="enable-dynamics-365-commerce-and-microsoft-teams-integration"></a>Aktivera Dynamics 365 Commerce och Microsoft Teams-integration
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 I det här avsnittet beskrivs hur du aktiverar Microsoft Dynamics 365 Commerce och Microsoft Teams-integrerar.
 
@@ -46,7 +45,7 @@ Registrera Teams-programmet hos din innehavare i Azure-portal genom att följa d
 
 För att möjliggöra Teams-integrering i Commerce-administration.
 
-1. Öppna **Retail och Commerce \> Kanalinställningar \> Microsoft Teams integrationskonfiguration**.
+1. Öppna **Butik och handel \> Kanalinställningar \> Microsoft Teams integrationskonfiguration**.
 1. I åtgärdsfönstret väljer du **Redigera**.
 1. Ange alternativet **Aktivera Microsoft Teams-integration** till **Ja**.
 1. I fälten **Program-ID** och **Programnyckel**, ange de värden du fick när du registrerade Teams-appen i Azure-portalen.
@@ -60,7 +59,7 @@ I följande bild visas ett exempel på konfigurationen av Teams-integration i Co
 
 För att inaktivera Microsoft Teams-integrering i Commerce-administration.
 
-1. Öppna **Retail och Commerce \> Kanalinställningar \> Microsoft Teams integrationskonfiguration**.
+1. Öppna **Butik och handel \> Kanalinställningar \> Microsoft Teams integrationskonfiguration**.
 1. I åtgärdsfönstret väljer du **Redigera**.
 3. Ange alternativet **Aktivera Microsoft Teams-integration** till **Nej**.
 4. Rensa värdena från fälten för **program-ID** och **programnyckel**.
@@ -81,4 +80,4 @@ För att inaktivera Microsoft Teams-integrering i Commerce-administration.
 
 [Mappa butiker och team om det finns befintliga team i Microsoft Teams](map-stores-existing-teams.md)
 
-[Vanliga frågor och svar om Dynamics 365 Commerce och Microsoft Teams-integration](teams-integration-faq.md)
+[Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integration](teams-integration-faq.md)

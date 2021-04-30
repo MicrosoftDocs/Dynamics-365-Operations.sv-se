@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2a0bcb5266472b3d0e936d27c9f599d2c6b16d7a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7642b26be08427ccbef3929f2a2e083ce43d4e75
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819660"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897414"
 ---
 # <a name="cash-flow-forecasting"></a>Kassaflödesprognoser
 
@@ -144,7 +144,7 @@ Arbetsytan **kassaöversikt – alla företag** visar kassaflödesanalys i syste
 
 Arbetsytan **kassaöversikt – aktuellt företag** visar kassaflödesprognosanalyser i företagets definierade redovisningsvaluta. Redovisningsvalutan som används för analysen definieras på sidan **redovisning**. Den här arbetsytan visar en översikt över kassaflödesprognos och bankkontosaldon för det aktuella företaget. Ett diagram över kassainflöden och kassautflöden ger en översikt över framtida kassaflödesrörelser och saldon i redovisningsvalutan tillsammans med detaljerad information om de prognostiserade transaktionerna. Du kan också se prognostiserade valutasaldon.
 
-Mer information om kassaflödesprognosanalys finns i [kassaöversikt Power BI-innehåll](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content) topic.
+Mer information om kassaflödesprognosanalys finns i [kassaöversikt Power BI-innehåll](./cash-overview-power-bi-content.md) topic.
 
 Dessutom kan du visa kassaflödesprognoser för specifika konton, order och artiklar på följande sidor:
 

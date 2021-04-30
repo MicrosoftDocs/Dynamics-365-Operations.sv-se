@@ -1,5 +1,5 @@
 ---
-title: Vanliga frågor integration med Finance
+title: Vanliga frågeställningar integration med Finance
 description: Det här artikel beskriver vilken information som synkroniseras i en Personal- och Finance-integrering.
 author: andreabichsel
 ms.date: 02/03/2020
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d2d590c95aa4069a1bed306910486c47200cdfd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5befac6c72153332319eefc1aaeab30c33f4c69
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794863"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892261"
 ---
-# <a name="integration-with-finance-faq"></a>Vanliga frågor integration med Finance
+# <a name="integration-with-finance-faq"></a>Vanliga frågeställningar integration med Finance
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Det här avsnittet svarar på vanliga frågor om vilken information som synkroniseras när Dynamics 365 Human Resources är integrerad med Dynamics 365 Finance.
+Det här avsnittet svarar på vanliga frågeställningar om vilken information som synkroniseras när Dynamics 365 Human Resources är integrerad med Dynamics 365 Finance.
 
 ## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Kan jag redigera Dynamics 365 Talent-programanvändaren i Power Apps?
 
@@ -50,7 +50,7 @@ Som standard är Dataverse-integrationen inaktiverad i nya miljöer som inte inn
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Kan jag skapa en ny mappning utan att använda mallarna?
 
-Mallar är startpunkten. Du kan skapa en egen mall, men det behövs alltid en mall när du skapar ett projekt för integration. Mer information om projekt, mallar och dataintegration (DI) finns i [integrera data i Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+Mallar är startpunkten. Du kan skapa en egen mall, men det behövs alltid en mall när du skapar ett projekt för integration. Mer information om projekt, mallar och dataintegration (DI) finns i [integrera data i Microsoft Dataverse](/powerapps/administrator/data-integrator).
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-human-resources-and-finance"></a>Kan jag mappa ekonomiska dimensioner för överföring mellan Personal och Finance?
 
@@ -145,7 +145,7 @@ Integrering med Finance är en tvåstegsprocess. Kontrollera först att Personal
 
 Om data inte visas som förväntat i Dataverse, kontrollerar du att enheten stöds i integrationen. Om du vill inkludera ytterligare information i Dataverse krävs en ändring på Microsoft-sidan.
 
-Om enheten stöds och data som finns på Dataverse, verifiera att mappningen är korrekt i dataintegrerare. Om integratormappningen ser bra ut, verifiera att datahanteringsjobb har körts. Fel kan uppstå vid körning av batch-jobb. Mer information om hur du använder datahantering finns i [Datahantering](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Om enheten stöds och data som finns på Dataverse, verifiera att mappningen är korrekt i dataintegrerare. Om integratormappningen ser bra ut, verifiera att datahanteringsjobb har körts. Fel kan uppstå vid körning av batch-jobb. Mer information om hur du använder datahantering finns i [Datahantering](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Adresser för mina medarbetare är felaktiga när jag har importerat dem till Finance. Vad ska jag göra?
 
@@ -172,15 +172,15 @@ Uppdatera datatabellerna i Finance genom att gå till **datahantering \> ramverk
 
 - Dataintegrerare (DI): 
 
-  - [Integrera data i Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator)
+  - [Integrera data i Microsoft Dataverse](/powerapps/administrator/data-integrator)
 
-  - [dataintegrerare felhantering och felsökning](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
+  - [dataintegrerare felhantering och felsökning](/powerapps/administrator/data-integrator-error-management)
 
-  - [Svara på DSR-förfrågningar för systemgenererade loggar i Power Apps, Microsoft Power Automate och Dataverse](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Svara på DSR-förfrågningar för systemgenererade loggar i Power Apps, Microsoft Power Automate och Dataverse](/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Datahantering
 
-  - [Datahantering](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Datahantering](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 378fff6274902025b1fca487874f37ed30df25ed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46c5d4ec78a1e5ed708687e8da6eb379697d5f4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835616"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908962"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installera och ansluta mobilappen Hantering av distributionslager
 
@@ -50,7 +50,7 @@ Innan du kan använda appen måste relaterad funktion aktiveras i ditt system. A
 
 För mindre distributioner kanske du vill installera appen från den relevanta butiken på respektive enhet och sedan manuellt konfigurera anslutningen till de miljöer du använder.
 
-Vid större distributioner kan du automatisera appdistributionen och/eller konfigurationen, vilket kan vara bättre om du hanterar många enheter. Du kan till exempel använda en mobil enhetshantering och en lösning för mobilapphantering som [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Information om hur du använder Intune för att lägga till program finns i [Lägga till appar i Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+Vid större distributioner kan du automatisera appdistributionen och/eller konfigurationen, vilket kan vara bättre om du hanterar många enheter. Du kan till exempel använda en mobil enhetshantering och en lösning för mobilapphantering som [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). Information om hur du använder Intune för att lägga till program finns i [Lägga till appar i Microsoft Intune](/mem/intune/apps/apps-add).
 
 ### <a name="install-the-app-from-an-app-store"></a>Installera programmet från en appbutik
 
@@ -65,10 +65,10 @@ Det enklaste sättet att installera programmet på en enskild enhet är att inst
 Ett alternativ till att installera från en appbutik är att hämta programmet från Microsoft App Center. App Center innehåller avinstallationsbara paket som du kan separat inläsning. Utöver den aktuella versionen kan du även hämta tidigare versioner med App Center, och du kan förse förhandsgranskningsversioner med kommande funktioner som du kan prova. Om du vill hämta aktuella, tidigare eller förhandsgranskningsversioner av mobilapplikationen Lagerstyrning från Microsoft App Center använder du någon av följande länkar:
 
 - **Windows (UWP):** [Lagerstyrning (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
-    För instruktioner om hur du installerar ett nedladdat paket på en Windows-enhet och sedan ställer in nödvändiga certifikat, se [Installera en version från App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+    För instruktioner om hur du installerar ett nedladdat paket på en Windows-enhet och sedan ställer in nödvändiga certifikat, se [Installera en version från App Center](/appcenter/distribution/installation).
 
 - **Android:** [distributionslagerhantering (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
-    Om du laddar ner en förhandsgranskningsversion krävs några extra steg för att installera den. Mer information finns i [Testa Android-appar](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+    Om du laddar ner en förhandsgranskningsversion krävs några extra steg för att installera den. Mer information finns i [Testa Android-appar](/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Skapa ett webbtjänstprogram i Azure Active Directory
 
@@ -103,11 +103,11 @@ Om du vill att mobilappen Hantering av distributionslager ska interagera med en 
 
 Mer information om hur du ställer in webbtjänstprogram i Azure AD finns i följande resurser:
 
-- Instruktioner som visar hur du använder Windows PowerShell för att skapa webbtjänstprogram i Azure AD finns i [Så här använder du Azure PowerShell för att skapa ett tjänstekonto med ett certifikat](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- Instruktioner som visar hur du använder Windows PowerShell för att skapa webbtjänstprogram i Azure AD finns i [Så här använder du Azure PowerShell för att skapa ett tjänstekonto med ett certifikat](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - Mer information om hur du manuellt skapar ett webbtjänstprogram i Azure AD finns i följande avsnitt:
 
-    - [Snabbstart: Registrera ett program med Microsofts identitetsplattform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [Så här använder du portalen för att skapa ett Azure AD-program och ett tjänstekonto som har åtkomst till resurser](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [Snabbstart: Registrera ett program med Microsofts identitetsplattform](/azure/active-directory/develop/quickstart-register-app)
+    - [Så här använder du portalen för att skapa ett Azure AD-program och ett tjänstekonto som har åtkomst till resurser](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Skapa och konfigurera ett användarkonto i Supply Chain Management
 
@@ -135,7 +135,7 @@ Autentisering med Azure AD är ett säkert sätt att ansluta en mobil enhet till
 
 Certifikat kan användas som hemligheter för att bevisa programmets identitet när en token begärs. Den offentliga delen av certifikatet överförs till app-registreringen i Azure-portalen, medan det fullständiga certifikatet måste distribueras på varje enskild enhet där mobilappen Hantering av distributionslager installeras. Organisationen ansvarar för att hantera certifikatet i fråga om rotation osv.. Du kan använda självsignerade certifikat, men du bör alltid använda icke-exporterbara certifikat.
 
-Du måste göra certifikatet tillgängligt lokalt på varje enskild enhet där du kör mobilappen Hantering av distributionslager. Information om hur du hanterar certifikat för Intune-styrda enheter om du använder Intune finns i [Använda certifikat för autentisering i Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+Du måste göra certifikatet tillgängligt lokalt på varje enskild enhet där du kör mobilappen Hantering av distributionslager. Information om hur du hanterar certifikat för Intune-styrda enheter om du använder Intune finns i [Använda certifikat för autentisering i Microsoft Intune](/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurera programmet genom att importera anslutningsinställningar
 

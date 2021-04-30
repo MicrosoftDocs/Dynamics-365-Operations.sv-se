@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: fa6a57266838fff4c34384337200fc6f24cbe640
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b66fd7c0ca79f21ff51beee22e4fc57c37a1904
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821187"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909607"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.11 (juli 2020)
 
@@ -33,19 +33,19 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
-Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](https://docs.microsoft.com/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
+Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
 
-- [Lagring av lagerbehållningsrapport](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
+- [Lagring av lagerbehållningsrapport](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
 
-- [Förbättringar av inleverans av ID-nummer med distributionslagerappen](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Mer information finns i [Inleverans av ID-nummer du via mobilappen för distributionslagerhantering](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Förbättringar av inleverans av ID-nummer med distributionslagerappen](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Mer information finns i [Inleverans av ID-nummer du via mobilappen för distributionslagerhantering](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Förbättringar av radreservationen för reservationsformuläret batchnummer](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Mer information finns i [Reservera samma batch för en försäljningsorder](../sales-marketing/reserve-same-batch-sales-order.md).
+- [Förbättringar av radreservationen för reservationsformuläret batchnummer](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Mer information finns i [Reservera samma batch för en försäljningsorder](../sales-marketing/reserve-same-batch-sales-order.md).
 
-- [Nya dataenheter för tillverkningsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+- [Nya dataenheter för tillverkningsområdet](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 
-- [Överinleverans av lastkvantiteter](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Mer information finns i [Lagerhantering av inkommande laster för inköpsorder](../warehousing/inbound-load-handling.md).
+- [Överinleverans av lastkvantiteter](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Mer information finns i [Lagerhantering av inkommande laster för inköpsorder](../warehousing/inbound-load-handling.md).
 
-- [Rapportera som färdig för batchnummer från jobbkortsenheten](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - Mer information finns i [Rapportera som färdig från jobbkortenhet](../production-control/report-finished-job-device.md).
+- [Rapportera som färdig för batchnummer från jobbkortsenheten](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - Mer information finns i [Rapportera som färdig från jobbkortenhet](../production-control/report-finished-job-device.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
@@ -59,9 +59,9 @@ Om du vill ha information om felkorrigeringar som ingår i varje uppdatering som
 
 ### <a name="dynamics-365-2020-release-wave-1-plan"></a>Dynamics 365: 2020 utgivningsvåg 1 plan
 
-Har du frågor om nya och kommande funktioner i våra affärsappar eller plattformen?
+Har du frågeställningar om nya och kommande funktioner i våra affärsappar eller plattformen?
 
-Se [Dynamics 365: 2020 utgivningsvåg 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). Vi har sammanställt all information som du kan tänkas behöva på ett enskilt dokument som du kan använda för din planering.
+Se [Dynamics 365: 2020 utgivningsvåg 1 plan](/dynamics365-release-plan/2020wave1/index). Vi har sammanställt all information som du kan tänkas behöva på ett enskilt dokument som du kan använda för din planering.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Borttagna och inaktuella funktioner för Supply Chain Management
 

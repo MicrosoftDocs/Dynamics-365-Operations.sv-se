@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4b4e551f5c687f0021ddba0c9f5b73af528b7140
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3faffad2bff18278a54a26f77c1423f2246d086e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813181"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907973"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Vad är nytt och ändrat i Dynamics 365 Supply Chain Management (10.0.17 april 2021)
 
@@ -33,65 +33,65 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
-Den här versionen innehåller följande nya funktioner:  Följ länkarna till [Utgivningsplan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) för att se de officiella datumen för varje funktion.
+Den här versionen innehåller följande nya funktioner:  Följ länkarna till [Utgivningsplan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) för att se de officiella datumen för varje funktion.
 
 De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem. Vissa av funktionerna kan fortfarande visas i en förhandsversion, men de flesta är nu tillgängliga i allmänhet.
 
 ### <a name="asset-management"></a>Tillgångshantering
 
-- [Använd regler för att gruppera arbetsorder när du kör en underhållsplan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)<br> - Mer information finns i [Skapa arbetsorder](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md).
+- [Använd regler för att gruppera arbetsorder när du kör en underhållsplan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/apply-rules-grouping-work-orders-while-running-maintenance-plan)<br> - Mer information finns i [Skapa arbetsorder](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md).
 
-- [Fakturera kunder för underhållsarbete](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)<br> - Mer information finns i [Faktura för underhåll av kundägda tillgångar](../asset-management/integration-to-project-management-and-accounting/customer-billing.md).
+- [Fakturera kunder för underhållsarbete](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/bill-customers-maintenance-work)<br> - Mer information finns i [Faktura för underhåll av kundägda tillgångar](../asset-management/integration-to-project-management-and-accounting/customer-billing.md).
 
-- [Planera underhåll baserat på ackumulerade värden för tillgångsräknare](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/plan-maintenance-based-accumulated-asset-counter-values)<br> - Mer information finns i [Underhållsplaner](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md).
+- [Planera underhåll baserat på ackumulerade värden för tillgångsräknare](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/plan-maintenance-based-accumulated-asset-counter-values)<br> - Mer information finns i [Underhållsplaner](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md).
 
 ### <a name="inventory-and-logistics"></a>Lager och logistik
 
-- [Integrationsramverket för materialhanteringsutrustning för automatiska lagerprocesser (tidigare MHAX)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)<br> - Mer information finns i [Materialhanteringsutrustningens gränssnitt (MHAX)](../warehousing/mhax.md).
+- [Integrationsramverket för materialhanteringsutrustning för automatiska lagerprocesser (tidigare MHAX)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/integration-framework-material-handling-equipment-automated-warehouse-processes-previously-mhax)<br> - Mer information finns i [Materialhanteringsutrustningens gränssnitt (MHAX)](../warehousing/mhax.md).
 
-- [Hemtagningskostnad](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - Mer information finns i [Modul för hemtagningskostnad](../landed-cost/landed-cost-overview.md).
+- [Hemtagningskostnad](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - Mer information finns i [Modul för hemtagningskostnad](../landed-cost/landed-cost-overview.md).
 
-- [Förpackning jämfört med lagringsdimensioner](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - Mer information finns i [Ange olika dimensioner för förpackning och lagring](../warehousing/packing-vs-storage-dimensions.md).
+- [Förpackning jämfört med lagringsdimensioner](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - Mer information finns i [Ange olika dimensioner för förpackning och lagring](../warehousing/packing-vs-storage-dimensions.md).
 
-- [Sparade vyer för lager och logistik](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - Mer information finns i [Standardvyer för Supply Chain Management](saved-views-scm.md).
+- [Sparade vyer för lager och logistik](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - Mer information finns i [Standardvyer för Supply Chain Management](saved-views-scm.md).
 
-- [Tidsplanera att skapa lagerarbete](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - Mer information finns i [Planera skapande av arbete under påfyllnad](../warehousing/configure-wave-schedule-work-creation.md).
+- [Tidsplanera att skapa lagerarbete](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - Mer information finns i [Planera skapande av arbete under påfyllnad](../warehousing/configure-wave-schedule-work-creation.md).
 
-- [Ange ekonomiska standarddimensioner för verifikationer för omvärdering av standardkostnad för lager](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - Mer information finns i [Hantera standardkostnadsuppdateringar](../cost-management/manage-standard-cost-updates.md).
+- [Ange ekonomiska standarddimensioner för verifikationer för omvärdering av standardkostnad för lager](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/set-default-financial-dimensions-inventory-standard-cost-revaluation-vouchers)<br> - Mer information finns i [Hantera standardkostnadsuppdateringar](../cost-management/manage-standard-cost-updates.md).
 
-- [Leverans av små paket (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/small-parcel-shipping-sps)<br> - Mer information finns i [Leverans av små paket](../warehousing/small-parcel-shipping.md).
+- [Leverans av små paket (SPS)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/small-parcel-shipping-sps)<br> - Mer information finns i [Leverans av små paket](../warehousing/small-parcel-shipping.md).
 
-- [Lagerkörning med skalenheter i molnet](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud)<br> - För mer information, se [Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-warehousing.md) och [Lagerställeorder för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-warehouse-order.md).
+- [Lagerkörning med skalenheter i molnet](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud)<br> - För mer information, se [Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-warehousing.md) och [Lagerställeorder för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-warehouse-order.md).
 
-- [Mobilappen lagerställe](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - Mer information finns i [Installera och anslut lagerställeappen](../warehousing/install-configure-warehouse-management-app.md) och [Användarinställningar för mobil enhet](../warehousing/mobile-device-user-settings.md).
+- [Mobilappen lagerställe](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application)<br> - Mer information finns i [Installera och anslut lagerställeappen](../warehousing/install-configure-warehouse-management-app.md) och [Användarinställningar för mobil enhet](../warehousing/mobile-device-user-settings.md).
 
 - Meddelanden för påfyllnadskörning<br> - För mer information, se [Meddelande påfyllnadskörning](../warehousing/wave-execution-notifications.md)
 
 ### <a name="manufacturing"></a>Tillverkning
 
-- [Funktionerna för tillgångshantering i gränssnittet för utförande av produktionsstyrning](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Mer information finns i [Konfigurera gränssnittet för körning av produktionsstyrning](../production-control/production-floor-execution-configure.md).
+- [Funktionerna för tillgångshantering i gränssnittet för utförande av produktionsstyrning](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Mer information finns i [Konfigurera gränssnittet för körning av produktionsstyrning](../production-control/production-floor-execution-configure.md).
 
 - Enhetlig nummerserie för jobb-ID:n<br> - Mer information finns i  
 
-- [Åsidosätta standardreservationsprincipen för material i produktion](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Mer information finns i [Åsidosätt standardreservationsprincipen för material i produktionen](../production-control/override-default-reservation-principle.md).
+- [Åsidosätta standardreservationsprincipen för material i produktion](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Mer information finns i [Åsidosätt standardreservationsprincipen för material i produktionen](../production-control/override-default-reservation-principle.md).
 
-- [Sparade vyer för produktionskontroll](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Mer information finns i [Standardvyer för Supply Chain Management](saved-views-scm.md).
+- [Sparade vyer för produktionskontroll](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Mer information finns i [Standardvyer för Supply Chain Management](saved-views-scm.md).
 
-- [Tillverkningskörning med skalenheter i molnet](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - För mer information, se [Arbetsbelastningar för tillverkningskörning för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-manufacturing.md).
+- [Tillverkningskörning med skalenheter i molnet](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - För mer information, se [Arbetsbelastningar för tillverkningskörning för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-manufacturing.md).
 
 ### <a name="planning"></a>Planering
 
-- [Tidsgräns för disponering för planeringsoptimering](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - Mer information finns i [tidsgränser för disponering](../master-planning/planning-optimization/coverage-time-fence.md).
+- [Tidsgräns för disponering för planeringsoptimering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/coverage-time-fence-support-planning-optimization)<br> - Mer information finns i [tidsgränser för disponering](../master-planning/planning-optimization/coverage-time-fence.md).
 
-- [Prognosunderstöd för planeringsoptimering](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/forecast-submodel-support-planning-optimization)<br> - För mer information, se [Huvudplanering med efterfrågeprognoser](../master-planning/planning-optimization/demand-forecast.md).
+- [Prognosunderstöd för planeringsoptimering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/forecast-submodel-support-planning-optimization)<br> - För mer information, se [Huvudplanering med efterfrågeprognoser](../master-planning/planning-optimization/demand-forecast.md).
 
-- [Stöd för inköpsrekvisition för planeringsoptimering](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/purchase-requisition-support-planning-optimization)<br> - Mer information finns i [inköpsrekvisition](../master-planning/planning-optimization/purchase-requisitions.md).
+- [Stöd för inköpsrekvisition för planeringsoptimering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/purchase-requisition-support-planning-optimization)<br> - Mer information finns i [inköpsrekvisition](../master-planning/planning-optimization/purchase-requisitions.md).
 
-- [Sparade vyer för planerade order](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)<br> - Mer information finns i [Standardvyer för Supply Chain Management](saved-views-scm.md).
+- [Sparade vyer för planerade order](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-planned-orders)<br> - Mer information finns i [Standardvyer för Supply Chain Management](saved-views-scm.md).
 
 ### <a name="product-information-management"></a>Produktinformationshantering
 
-- [Aktivera ändringshantering för befintliga produkter](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)<br> - För mer information, se [Aktivera förändringshantering på befintliga produkter](../engineering-change-management/change-management-existing-products.md).
+- [Aktivera ändringshantering för befintliga produkter](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enable-change-management-existing-products)<br> - För mer information, se [Aktivera förändringshantering på befintliga produkter](../engineering-change-management/change-management-existing-products.md).
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
 
@@ -143,9 +143,9 @@ Om du vill ha information om felkorrigeringar som ingår i varje uppdatering som
 
 ### <a name="dynamics-365-2021-release-wave-1-plan"></a>Dynamics 365: 2021 utgivningsvåg 1 plan
 
-Har du frågor om nya och kommande funktioner i våra affärsappar eller plattformen?
+Har du frågeställningar om nya och kommande funktioner i våra affärsappar eller plattformen?
 
-Se [Dynamics 365: 2021 utgivningsvåg 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). Vi har sammanställt all information som du kan tänkas behöva på ett enskilt dokument som du kan använda för din planering.
+Se [Dynamics 365: 2021 utgivningsvåg 1 plan](/dynamics365-release-plan/2021wave1/). Vi har sammanställt all information som du kan tänkas behöva på ett enskilt dokument som du kan använda för din planering.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Borttagna och inaktuella funktioner för Supply Chain Management
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2db444d4a5e40c1bbfdab9e044aff43031b6e9f4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0c0eab7b0b1325d18f77ab5b8c9704781beba856
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826700"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897874"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generera konsoliderade bokslut
 
@@ -34,7 +34,7 @@ Den enklaste metoden för att konsolidera data med hjälp av ekonomisk rapporter
 3. Skapa ett rapporteringsträd som innehåller en rapporteringsnod för varje företag som du använder på konsoliderade rapporter.
 
 > [!TIP]
-> Mer information om hur du skapar och hanterar raddefinitioner och kolumndefinitioner och rapporteringsträd, se[Komponenter för ekonomisk rapport](../../dev-itpro/analytics/financial-report-components.md).
+> Mer information om hur du skapar och hanterar raddefinitioner och kolumndefinitioner och rapporteringsträd, se[Komponenter för ekonomisk rapport](../../fin-ops-core/dev-itpro/analytics/financial-report-components.md).
 
 Följande bild visar hur du kan använda rapporteringsträdsdefinitioner i ekonomisk rapportering för att identifiera varje företag som du ska konsolidera.
 
@@ -97,7 +97,7 @@ I rapportträdsdefinitionen, ange procentandelen av ägarskap i kolumnen **samma
 
 ![Använda procent för rapportträdsdefinition](./media/Using-reporting-tree-definition-percentage.png "Använda procent för rapportträdsdefinition")
 
-När rapporten skapas, visar Contoso Tyskland-rapporten 100 procent av det totala försäljningsbeloppet och 80 procent av beloppet ska fördelas och slås samman med den konsoliderade nivån för försäljning.
+När rapporten skapas visar Contoso Tyskland-rapporten 100 procent av det totala försäljningsbeloppet, och 80 procent av beloppet fördelas och slås samman med den konsoliderade nivån för försäljning.
 
 Om du äger mindre än 1 procent av ett företag kan du markera kryssrutan **Tillåt sammanslagning lägre än 1%** på fliken **ytterligare alternativ** på sidan **rapportinställningar** enligt följande illustration. I det här fallet behandlas värden i kolumnen **sammanslagning %** i rapportträdet som mindre än 1 procent. Om du till exempel anger **.8**, kommer 0,8 procent slås samman upp till den konsoliderade nivån, inte 80 procent. Alternativt kan du uppnå samma resultat genom att lämna kryssrutan **Tillåt sammanslagning lägre än 1%** tom och ange **,008** i kolumnen **sammanslagning %**.
 

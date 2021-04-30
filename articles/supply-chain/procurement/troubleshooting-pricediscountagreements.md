@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 12bc3cbccb1577c278489f640299510b3ced17e7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ccc1d52b83f9319af1c6336c1876c795c70028a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811096"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908529"
 ---
 # <a name="troubleshoot-prices-discounts-agreements-and-rebates"></a>Felsöka priser, rabatter, avtal och avdrag
 
@@ -37,7 +37,7 @@ När du ändrar leveransdatumet kan du få ett meddelande om att "uppdatera pris
 
 Meddelandet utlöses när något av datumen eller några andra parametrar ändras. Syftet med meddelandet är att säkerställa att du är medveten om de prisändringar som kan uppstå på grund av dessa ändringar.
 
-Meddelandet är TAE-dialog (handelsavtalets utvärdering). En fullständig beskrivning finns i [policyer för utvärdering av handelsavtal](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper).
+Meddelandet är TAE-dialog (handelsavtalets utvärdering). En fullständig beskrivning finns i [policyer för utvärdering av handelsavtal](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper).
 
 ## <a name="a-purchase-order-receipt-doesnt-include-all-charges"></a>En inleverans för inköpsorder inkluderar inte alla avgifter.
 

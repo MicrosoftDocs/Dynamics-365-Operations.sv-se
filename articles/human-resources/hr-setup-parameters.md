@@ -1,5 +1,5 @@
 ---
-title: Konfigurera Human Resources-parametrar
+title: Konfigurera Personal-parametrar
 description: Det här ämnet innehåller information om hur du ställer in företagsspecifika parametrar i Dynamics 365 Human Resources.
 author: andreabichsel
 ms.date: 02/03/2020
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 74bdf891ffa7a9d875e23cf46aeee1dbaf86db48
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: cd66cb4f5ac02407250e15ae134b36f5ccd4d290
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802417"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889942"
 ---
-# <a name="configure-human-resources-parameters"></a>Konfigurera Human Resources-parametrar
+# <a name="configure-human-resources-parameters"></a>Konfigurera Personal-parametrar
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -92,7 +92,7 @@ Inställningarna på fliken **Nummerserie** bestämmer vilka sekvenser som anvä
 
 För att bibehålla nummersekvensreferenser och koder, använd listsidan **Nummersekvenser** (klicka på **Organisationsadministration > Nummersekvenser > Nummersekvenser**).
 
-Mer information finns i [Nummerserier (översikt)](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/human-resources/toc.json).
+Mer information finns i [Nummerserier (översikt)](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 > [!NOTE]
 > Det antal timmar som arbetas inte överstiga 1250 och längden på anställningen får inte överskrida 12 månader. Dessa största värden i enlighet med federal lag i USA.

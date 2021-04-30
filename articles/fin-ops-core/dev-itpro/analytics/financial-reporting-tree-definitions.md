@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 42612a14b81f78199aa5678d6f8525e4bd87ca8c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1a884031905e59e7bfedab9af7b97a7c54e40895
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819948"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866312"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportträddefinitioner i ekonomiska rapporter
 
@@ -52,9 +52,7 @@ En rapportträddefinition innehåller de kolumner som beskrivs i följande tabel
 | Enhetsbeskrivning      | Rapportenhetsrubriken visas i rapportens sidhuvudet eller sidfoten om du anger **UnitDesc** som kod i fliken **Sidhuvud och Sidfot** på rapportdefinitionen. Rubriken visas i rapportradbeskrivningen om du anger **UnitDesc** i cellen **Beskrivning** på raddefinitionen . |
 | Dimensioner            | En rapportenhet om du vill ställa ut information direkt från ekonomiska data. Den definierar den logiska placeringen och längderna för kontot och de relaterade segmenten. Varje rapportenhetsrad måste ha en dimension i den här kolumnen. Du kan också placera en dimension på en rad för en summeringsenhet (till exempel för utgifter som är direkt kopplade till enheten). Om du anger en dimension på en rad för en summeringsenhet ska konton som används i överordnade enheter inte användas i underordnade. I annat fall kan belopp dubbleras. |
 | Raddefinitioner       | Namnet på raddefinitionen för rapportenheten. Samma på raddefinition används för alla enheter i rapportträdet. När du genererar en rapport används den här raddefinitionen för alla rapportenheter. Raddefinitionen kan innehålla flera ekonomiska dimensionslänkar. Om en raddefinition är specificerad i rapportträdet markerar du kryssrutan **Använd raddefinition från rapportträd** på fliken **Rapport** i rapportdefinitionen. |
-| Radlänk              | Radlänken som ska användas för rapportenheten. Radlänkar definieras för raddefinitionen för att identifiera vilka ekonomiska dimensioner som ska länkas till. |
-| Extern länk         | Radlänken som ska användas för den här rapportenheten. Radlänkar definieras för att raddefinitionen ska kunna identifiera den rapport du vill länka till. |
-| Extern fil         | Sökvägen till kalkylbladet för den ekonomiska rapporten som data hämtas från. |
+| Koppling till ekonomiska dimensioner| Kopplingen till de ekonomiska dimensioner som ska användas för rapportenheten. Kopplingar till ekonomiska dimensioner definieras för raddefinitionen i syfte att identifiera vilka ekonomiska dimensioner som ska länkas till. |
 | Sidalternativ          | Den här kolumnen styr om detaljer för rapportenheten ska ignoreras när rapporten visas eller skrivs ut. |
 | Samlad uppdatering för %              | Den procentandel av rapportenheten som ska tilldelas till den överordnade enheten. Den procentandel som du anger i den här kolumnen gäller för varje rad i raddefinitionen innan värdet i raden läggs till den överordnade rapporten. Om till exempel en underordnad enhet ska fördelas jämnt mellan två avdelningar multipliceras beloppet på varje rad med 50 procent innan det läggs till i avdelningsrapporten. En rapportenhet kan inte ha två överordnade enheter. om du vill fördela beloppen från en rapportenhet till två överordnade enheter ska du skapa en annan rapportenhet med samma dimension för att samla de ytterligare 50 procenten. Ange hela procenttalet utan decimaltecken. **25** exempelvis representerar 25 procent allokering till den överordnade enheten. Om du inkluderar ett decimaltecken (**,25**) allokeras 0,25 procent till den överordnade enheten. Om du vill använda en procentsats som är mindre än 1 procent ska du använda alternativet **Tillåt samlad uppdatering &lt;1%** i rapportdefinitionen. Detta alternativ är på fliken **Ytterligare alternativ** i dialogrutan **Rapportinställningar**. Du kommer åt den här dialogrutan från knappen **Övrigt** på fliken **Inställningar** i rapportdefinitionen. |
 | Enhetssäkerhet         | Begränsningar för hur användare och grupper kan komma åt informationen för rapportenheten. |
@@ -103,7 +101,7 @@ När du använder ett rapportträd kan du slå samman belopp från underordnade 
     > När du registrerar dimensioner för både överordnade och underordnade enheter kan detta orsaka fördubbling av data i rapporten.
 
 - Rapportenheter som innehåller dimensioner i rapportträdet motsvarar de dimensioner som används i rad- och kolumndefinitioner. Kombinationen av dimensioner bestämmer de belopp som ska returneras för den enheten. I exempel 2 senare i den här artikeln till exempel returneras enbart raderna 6 och 7 för avdelningarna 00 respektive 01.
-- Beloppen för de överordnade rapportenheterna som inte innehåller dimensioner i rapportträdet fastställs utifrån den underordnade rapportenheten och rullar upp beloppet till den angivna överordnade enheten. Om till exempel den överordnade enheten (se Contoso USA i exempel 2 i rullande data-exempel) har två underordnade enheter (022 och 023) och inte innehåller dimensioner, genereras en rapport för varje underordnad enhet och den överordnade enheten. Överordnad summan är summan av de två underordnade beloppen.
+- Beloppen för de överordnade rapportenheterna som inte innehåller dimensioner i rapportträdet fastställs utifrån den underordnade rapportenheten och rullar upp beloppet till den angivna överordnade enheten. Om till exempel den överordnade enheten (se Contoso USA i exempel 2 på rullande data) har två underordnade enheter (022 och 023) och inte innehåller dimensioner, genereras en rapport för varje underordnad enhet och den överordnade enheten. Överordnad summan är summan av de två underordnade beloppen.
 
 ### <a name="manage-reporting-units"></a>Hantera rapportenheter
 
@@ -113,10 +111,10 @@ Varje rapportträddefinition visas i separata vyer. Det finns en grafisk vy för
 
 Följande typer av rapportenheter används i ekonomisk rapportering:
 
-- En detaljenhet hämtar information direkt från ekonomiska data från ett Excel-kalkylblad eller från ett annat kalkylblad för ekonomisk rapportering.
+- En informationsenhet hämtar information direkt från ekonomiska data.
 - En summeringsenhet sammanfattar data från enheter på lägre nivå.
 
-En överordnad rapportenhet är en summeringsenhet som samlar in sammanfattande information från en detaljenhet. En summeringsenhet kan vara både en detalj- och en summeringsenhet. Därför kan en summeringsenhet hämta information från en enhet på lägre nivå, från ekonomiska data eller från ett Excel-kalkylblad. En överordnad enhet kan vara en underordnad enhet till en högre överordnad enhet. En underordnad rapportenhet kan vara en detaljenhet som hämtar information direkt från ekonomiska data eller från ett Excel-kalkylblad. En underordnad rapportenhet kan även vara en mellanliggande summeringsenhet. Med andra ord kan den vara en överordnad enhet till en enhet på en lägre nivå och även vara en underordnad enhet till en summeringsenhet på en högre nivå. Det vanligaste scenariot för rapportenheter är att överordnade enheter har en tom cell i kolumnen **Dimensioner** och att underordnade enheter har länkar till dimensionskombinationer för specifika tecken eller jokertecken.
+En överordnad rapportenhet är en summeringsenhet som samlar in sammanfattande information från en detaljenhet. En summeringsenhet kan vara både en detalj- och en summeringsenhet. Därför kan en summeringsenhet hämta information från en enhet på lägre nivå eller från ekonomiska data. En överordnad enhet kan vara en underordnad enhet till en högre överordnad enhet. En underordnad rapportenhet kan vara en informationsenhet som hämtar information direkt från ekonomiska data. En underordnad rapportenhet kan även vara en mellanliggande summeringsenhet. Med andra ord kan den vara en överordnad enhet till en enhet på en lägre nivå och även vara en underordnad enhet till en summeringsenhet på en högre nivå. Det vanligaste scenariot för rapportenheter är att överordnade enheter har en tom cell i kolumnen **Dimensioner** och att underordnade enheter har länkar till dimensionskombinationer för specifika tecken eller jokertecken.
 
 ### <a name="organize-reporting-units"></a> Ordna rapportenheter
 
@@ -162,36 +160,23 @@ Du kan förhindra vissa användare och grupper från åtkomst till en rapportenh
 3. I dialogrutan **Enhetssäkerhet** väljer du ett namn och klickar sedan på **Ta bort.**.
 4. Klicka på **OK**.
 
-### <a name="link-to-reports"></a>Länk till rapporter
-
-Efter att du har skapat kolumnen **Rapport** i raddefinitionen och angett vilken rapport som ska inkluderas i rapporten måste du uppdatera rapportträdet med den länkade kolumnen och informationen om rapporten. En rapport kan importeras till alla enheter i rapportträdet.
-
-### <a name="identify-the-report-in-a-reporting-tree"></a>Identifiera rapporten i ett rapportträd
-
-1. Öppna rapportträddefinitionen i Report Designer för att ändra den.
-2. Kolumnen **Raddefinitioner** visar informationen i cellerna som baseras på information i den valda raden eftersom samma raddefinition måste användas i alla enheter i rapportträdet. Dubbelklicka på cellen **Raddefinitioner** och välj sedan den raddefinition som innehåller information om rapporten.
-3. I cellen **Länk till kalkylblad** för en rapportenhet väljer du det länknamn som motsvarar rapporten.
-4. Ange namnet på rapporten eller sök för att välja rapporten i cellen **Arbetsbok eller rapportsökväg**.
-5. Om du vill ange ett kalkylblad i rapporten skriver du in namnet på kalkylbladet i cellen **Kalkylbladsnamn**.
-6. Upprepa steg 3–5 för varje rapportenhet som ska ta emot data från en rapport. För att förhindra felaktiga data från att visas i din rapport ska du se till att korrekta rapportnamn visas för motsvarande enhet i rapportträdet
-
 ## <a name="examples"></a>Exempel
 ### <a name="reporting-unit-structure--example-1"></a>Rapportenhetsstruktur – Exempel 1
 
 Här är strukturen för rapportenheter i följande rapportträd:
 
 - Rapporteringsenheten för Contoso Japan är överordnad enhet till de underordnade enheterna Contoso Japan Sales och Contoso Japan Consulting.
-- Enheten för Contoso Japan Sales division är både en underordnad enhet till enheten Contoso Japan och en överordnad enhet till enheterna Home Sales och Auto Sales.
+- Enheten för Contoso Japan Sales division är både en underordnad enhet tillhörande enheten Contoso Japan och en överordnad enhet till enheterna Home Sales och Auto Sales.
 - Detaljrapportenheterna på lägsta nivån (Home Sales, Auto Sales, Client Services och Operations) representerar avdelningar i ekonomiska data. Dessa rapportenheter är det skuggade i området i diagrammet.
 - Summeringsenheterna på högre nivå sammanfattar informationen från detaljenheterna.
 
-[![Contoso- sammanfattningsrapportstruktur - exempel 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Struktur i sammanfattningsrapport för Contoso - Exempel 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Rapportenhetsstruktur – Exempel 2
 
 Följande diagram visar ett rapportträd för en organisationsstruktur som är uppdelad efter affärsfunktioner.
 
-[![Contoso- sammanfattningsrapportstruktur - exempel 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Struktur i sammanfattningsrapport för Contoso - Exempel 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Exempel på dialogrutan Infoga Rapportenheter från Dimensioner
 

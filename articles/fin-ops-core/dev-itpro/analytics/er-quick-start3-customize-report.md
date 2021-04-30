@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46b232da404fe2106ce4b5455ea4d682a08aaa53
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5ec5b8d0ad1e85a9c4fc7c3eb762c2c7b0b52e8d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743639"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893310"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Anpassa konfigurationer av elektronisk rapportering så att ett elektroniskt dokument skapas
 
@@ -30,21 +30,21 @@ Med [ramverket för elektronisk rapportering (ER)](general-electronic-reporting.
 
 ## <a name="overview"></a>Översikt
 
-I exemplet i det här avsnittet måste du ange federal tax identification-kod som ett nytt eget attribut för varje kund som du fakturerar elektroniskt. Därför måste du anpassa strukturen för fakturan som för närvarande används genom att lägga till en ny artikel som måste fyllas med momskoden i alla e-fakturor som genereras.
+I exemplet i det här avsnittet måste du ange federal tax identification-kod som ett nytt eget attribut för varje kund som du fakturerar elektroniskt. Därför måste du anpassa strukturen för fakturan som för närvarande används genom att lägga till en ny artikel som måste fyllas med skattekoden i alla e-fakturor som genereras.
 
-Procedurerna i det här avsnittet förklarar hur en användare i rollen systemadministratör, utvecklare av elektronisk rapportering eller funktionell konsult för elektronisk rapportering kan utföra uppgifter i ekonomiinstansen:
+Procedurerna i det här avsnittet förklarar hur en användare i rollen systemadministratör, utvecklare av elektronisk rapportering eller funktionell konsult för elektronisk rapportering kan utföra uppgifter i Finance-instansen:
 
 - [Konfigurera den minimala uppsättningen ER-parametrar som krävs för att börja använda ER-ramverket](#ConfigureER).
 - [Importera de ursprungliga versionerna av standard-ER-konfigurationerna som används för att generera e-fakturor](#ImportERConfigurations1).
 - [Konfigurera Parametrar för kundreskontra så att de börjar använda standard-ER-konfigurationerna](#ConfigureAR1).
 - [Konfigurera parametrar för juridisk person på fakturakunder](#ConfigureLE).
-- [Förbered en kundpost för elektronisk fakturering](#ConfigureCustomer1).
+- [Förbered en kundpost för e-fakturering](#ConfigureCustomer1).
 - [Lägg till, bokför och skicka en kundfaktura med hjälp av standard-ER-konfigurationerna](#ProcessInvoice1).
 - [Lägg till ett anpassat databasfält om du vill hantera en federal tax identification-kod för kunder](#AddCustomField).
 - [Uppdatera ER-metadata för att aktivera databasändringar för ER-modellmappningsdesigner](#RefreshERMetadata).
-- [Utforma de anpassade ER-konfigurationerna för att skapa e-fakturor som innehåller den nya momskoden](#DesignCustomERConfigurations).
+- [Utforma de anpassade ER-konfigurationerna för att skapa e-fakturor som innehåller den nya skattekoden](#DesignCustomERConfigurations).
 - [Konfigurera Parametrar för kundreskontra så att de börjar använda anpassad ER-konfigurationerna](#ConfigureAR2).
-- [Uppdatera en kundpost för elektronisk fakturering](#ConfigureCustomer2).
+- [Uppdatera en kundpost för e-fakturering](#ConfigureCustomer2).
 - [Lägg till, bokför och skicka en kundfaktura med hjälp av anpassade ER-konfigurationerna](#ProcessInvoice2).
 - [Importera de nya versionerna av standard-ER-konfigurationerna som används för att generera e-fakturor](#ImportERConfigurations2).
 - [Tillämpa ändringarna på de nya versionerna av standard-ER-konfigurationen i dina anpassade ER-konfigurationer](#RebaseCustomERConfigurations).
@@ -97,7 +97,7 @@ Mer information om ER-konfigurationsleverantörer finns i [Skapa konfigurationsl
 
 ## <a name="import-the-initial-versions-of-standard-er-configurations"></a><a name="ImportERConfigurations1"></a>Importera ursprungliga versioner av ER-standardkonfigurationer
 
-Om du vill lägga till standard-ER-konfigurationer i din aktuella ekonomiinstansen måste du importera dem från [databasen](general-electronic-reporting.md#Repository) som har konfigurerats för den instansen.
+Om du vill lägga till standard-ER-konfigurationer i din aktuella Finance-instansen måste du importera dem från [databasen](general-electronic-reporting.md#Repository) som har konfigurerats för den instansen.
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. På sidan **lokaliseringskonfiguration** i avsnittet **konfigurationsleverantörer** välj panelen **Microsoft** och markera sedan **databaser** om du vill visa listan över databaser för Microsoft-leverantören.
@@ -122,7 +122,7 @@ Observera att förutom det valda **Peppol-försäljningsfaktura** ER-format, har
 
 ![Sidan Konfigurationer](./media/er-quick-start3-imported-solution1a.png)
 
-För att simulera tillståndet som ER-konfigurationer i den aktuella ekonomiinstansen skulle vara om du importerade versionen **11.2.2** av **Peppol-försäljningsfakturan** ER-format i det förflutna (t.ex. 7 augusti 2019) följer du dessa steg.
+För att simulera tillståndet som ER-konfigurationer i den aktuella Finance-instansen skulle vara om du importerade versionen **11.2.2** av **Peppol-försäljningsfakturan** ER-format i det förflutna (t.ex. 7 augusti 2019) följer du dessa steg.
 
 - I åtgärdsfönstret, välj **Ta bort** för att ta bort alla ER-konfigurationer som publicerades efter den 7 augusti 2019. Den enda **Fakturamodellen**, **Mappning av fakturamodell** (från början kallad **Modellmappning av kundfaktura**), **UBL försäljningsfaktura** och **Peppol-försäljningsfaktura**-konfigurationer måste finnas kvar.
 - För de återstående ER-konfigurationerna, på snabbfliken **Versioner**, välj **Ta bort** för att ta bort alla versioner av ER-konfigurationer som publicerades efter den 7 augusti 2019.
@@ -252,10 +252,10 @@ Mer information finns i [Skapa fritextfaktura](../../../finance/accounts-receiva
 
 ## <a name="add-a-custom-database-field"></a><a name="AddCustomField"></a>Lägga till ett anpassat databasfält
 
-Du kan använda funktionen [anpassat fält](../../fin-ops/get-started/user-defined-fields.md) för att utföra följande anpassning i den aktuella ekonomiinstansen:
+Du kan använda funktionen [anpassat fält](../../fin-ops/get-started/user-defined-fields.md) för att utföra följande anpassning i den aktuella Finance-instansen:
 
 - Anpassa databasstrukturen genom att lägga till ett nytt anpassat databasfält som lagrar en federal tax identification-kod för varje kund.
-- Anpassa sidan **kund** genom att lägga till ett nytt fält för inmatning som kan användas för att ange ett momskodvärde i det nya anpassade databasfältet.
+- Anpassa sidan **kund** genom att lägga till ett nytt fält för inmatning som kan användas för att ange ett skattekodvärde i det nya anpassade databasfältet.
 
 Utför anpassningarna enligt följande steg.
 
@@ -273,7 +273,7 @@ Utför anpassningarna enligt följande steg.
     > [!NOTE]
     > Hela fältnamnet har definierats automatiskt som **FederalTaxID\_Anpassat**.
 
-8. I fältet **Etikett** anger du **skatte-ID**.
+8. I fältet **Etikett** anger du **Skatte-ID**.
 9. I fältet **Typ**, välj **Text**.
 10. I fältet **Längd** anger du **20**.
 11. Välj **Spara**.
@@ -293,7 +293,7 @@ Du måste uppdatera ER-metadata för att göra det anpassade fältet som du har 
 
 ## <a name="design-the-custom-er-configurations"></a><a name="DesignCustomERConfigurations"></a>Designa de anpassade ER-konfigurationerna
 
-Du kan använda Microsofts ER-konfigurationer för att utforma dina anpassade ER-konfigurationer så att de genererar e-fakturor som innehåller den nya momskoden.
+Du kan använda Microsofts ER-konfigurationer för att utforma dina anpassade ER-konfigurationer så att de genererar e-fakturor som innehåller den nya skattekoden.
 
 ### <a name="customize-the-data-model-configuration"></a>Anpassa konfigurationen av datamodellen
 
@@ -403,7 +403,7 @@ Status för version 50.19.1 ändras från **utkast** till **slutfört** och vers
 ![Version 50.19.1 slutförd på sidan konfigurationer](./media/er-quick-start3-completed-custom-mapping1.png)
 
 > [!NOTE]
-> Den konfiguration som stöds [livscykel](general-electronic-reporting-manage-configuration-lifecycle.md) omfattar inte databasändringarnas livscykel. Om du exporterar version 50.19.1 av konfigurationen **mappning av fakturamodell (Litware)** från den aktuella ekonomiinstansen och försöker att importera den till en annan instans som inte innehåller det anpassade fältet **FederalTaxID\_Custom** i tabellen **CustTable** kommer ett undantag att uppstå. Undantaget kommer att ange att den importerade ER-konfigurationen inte är kompatibel med metadata för målekonomiinstansen.
+> Den konfiguration som stöds [livscykel](general-electronic-reporting-manage-configuration-lifecycle.md) omfattar inte databasändringarnas livscykel. Om du exporterar version 50.19.1 av konfigurationen **mappning av fakturamodell (Litware)** från den aktuella Finance-instansen och försöker att importera den till en annan instans som inte innehåller det anpassade fältet **FederalTaxID\_Custom** i tabellen **CustTable** kommer ett undantag att uppstå. Undantaget kommer att ange att den importerade ER-konfigurationen inte är kompatibel med metadata för målFinance-instansen.
 
 ### <a name="customize-the-format-configuration"></a>Anpassa formatkonfiguration
 
@@ -483,7 +483,7 @@ Status för version 11.2.2.1 ändras från **utkast** till **slutfört** och ver
 
 1. Gå till **Leverantörsreskontra** \> **Kunder** \> **Alla kunder**.
 2. På sidan **Alla kunder** välj länken **DE-014** kundkonto.
-3. På snabbfliken **Allmänt** i fältet **skatte-ID** anger du **LITWARE-6789**.
+3. På snabbfliken **Allmänt** i fältet **Skatte-ID** anger du **LITWARE-6789**.
 4. Välj **Spara**.
 
     ![DE-014 sidan kundinformation](./media/er-quick-start3-added-tax-id-value.png)
@@ -511,7 +511,7 @@ Status för version 11.2.2.1 ändras från **utkast** till **slutfört** och ver
 
 ## <a name="import-the-latest-versions-of-standard-er-configurations"></a><a name="ImportERConfigurations2"></a>Importera den senaste versioner av ER-standardkonfigurationer
 
-Om du vill behålla standard-ER-konfigurationerna i din ekonomiinstans [uppdaterad](general-electronic-reporting-manage-configuration-lifecycle.md)måste du importera nya versioner av dem när de blir tillgängliga i ER [lagringsplats](general-electronic-reporting.md#Repository) som konfigurerades för den instansen.
+Om du vill behålla standard-ER-konfigurationerna i din Finance-instans [uppdaterad](general-electronic-reporting-manage-configuration-lifecycle.md)måste du importera nya versioner av dem när de blir tillgängliga i ER [lagringsplats](general-electronic-reporting.md#Repository) som konfigurerades för den instansen.
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. På sidan **lokaliseringskonfiguration** i avsnittet **konfigurationsleverantörer** välj panelen **Microsoft** och markera sedan **databaser** om du vill visa listan över databaser för Microsoft-leverantören.
@@ -667,8 +667,8 @@ Status för version 32.6.7.2 ändras från **utkast** till **slutfört** och ver
 - [Översikt över elektronisk rapportering](general-electronic-reporting.md)
 - [Ladda ned ER-konfigurationer från Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 - [Hämta ER-konfigurationer från den globala databasen med konfigurationstjänster](er-download-configurations-global-repo.md)
-- [Skapa en fritextfaktura](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
-- [Skapa och arbeta med anpassade fält](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)
+- [Skapa en fritextfaktura](../../../finance/accounts-receivable/create-free-text-invoice-new.md)
+- [Skapa och arbeta med anpassade fält](../../fin-ops/get-started/user-defined-fields.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 18c662fee0cedaa55f63ffeb25b0d61ee7baffda
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 079eda04fcc41fc637419a83452db10b89ed1ab9
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753538"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894038"
 ---
 # <a name="archive-er-destination-type"></a>Arkivera ER-målstyp
 
@@ -28,7 +28,7 @@ ms.locfileid: "5753538"
 
 Du kan konfigurera en arkivdestination för varje **Mapp**- eller **Fil**-komponent i ett ER-format (elektronisk rapportering) som har konfigurerats för att generera utgående dokument. Baserat på destinationsinställningen lagras ett genererat dokument som en bilaga till en post i ER-jobblistan. Visa resultaten genom att gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Arkiverade elektroniska rapporteringsjobb**.
 
-Du kan använda detta alternativ för att skicka de genererade dokumentet till en Microsoft SharePoint-mapp eller till Microsoft Azure Storage. Ställ in **Aktiverad** till **Ja** för att skicka utdata till en mål som definierats av den valda dokumenttypen. Endast dokumenttyper där gruppen är inställd på **Fil** kan väljas. Du kan ange dokument [typer](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) på **Organisationsadministration** \> **Dokumenthantering** \> **Dokumenttyper**. Konfigurationen för ER-mål är samma som konfigurationen för dokumenthanteringssystemet.
+Du kan använda detta alternativ för att skicka de genererade dokumentet till en Microsoft SharePoint-mapp eller till Microsoft Azure Storage. Ställ in **Aktiverad** till **Ja** för att skicka utdata till en mål som definierats av den valda dokumenttypen. Endast dokumenttyper där gruppen är inställd på **Fil** kan väljas. Du kan ange dokument [typer](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) på **Organisationsadministration** \> **Dokumenthantering** \> **Dokumenttyper**. Konfigurationen för ER-mål är samma som konfigurationen för dokumenthanteringssystemet.
 
 [![Sida för dokumenttyper](./media/ER_Destinations-SharePointDocuType.png)](./media/ER_Destinations-SharePointDocuType.png)
 

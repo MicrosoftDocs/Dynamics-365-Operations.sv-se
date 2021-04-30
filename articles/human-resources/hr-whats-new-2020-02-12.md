@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c4453b5507f9972a4bfbc18a92f98b90b8e9c983
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 0d5991f23723056d7ee766c00ed0f4ee16ff0f85
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790486"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890944"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-12-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (12 februari 2020)
 
@@ -55,7 +55,7 @@ Följande förhandsgranskningsfunktioner är tillgängliga den 3 februari 2020:
 
 ### <a name="platform-update-32"></a>Plattform update 32 
 
-Plattformsuppdatering 32 kommer snart att vara tillgänglig. [Få mer information om plattformsuppdatering 32 här](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
+Plattformsuppdatering 32 kommer snart att vara tillgänglig. [Få mer information om plattformsuppdatering 32 här](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
 
 ### <a name="updated-dataverse-solution"></a>Uppdaterad Dataverse-lösning
 
@@ -75,7 +75,7 @@ En ny Dataverse-lösning kommer snart att vara tillgänglig med följande ändri
 ## <a name="see-also"></a>Se även
 
 [Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
-[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91c8df8a111132d75ec02b79912c66e02aef4ea6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 36471cf76615e22c2ca80163756e2fd05aaf6a0f
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831324"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911282"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv
 
@@ -42,7 +42,7 @@ Använd knappen **Arbetsuppgiftshuvudet delas** för att definiera när nya arbe
 
 Arbetet linjerna representerar det fysiska uppgifter som krävs för att bearbeta. För exempelvis ett utgående lager, det kan vara en rad för att plocka upp föremål i lagerstället och en annan rad för dessa poster till en mellanlagringsplats. Det kan alltså vara en extra rad för plockning från mellanlagring och en annan rad för att objekten i en lastbil som en del av laddningen. Du kan ställa in ett *direktiv kod* på arbetsmall linjer. Ett direktiv som är kopplad till en plats och därför hjälper till att säkra att lagerarbetet bearbetas på rätt plats i lagret.
 
-Du kan ställa in en fråga för att kontrollera när en särskild mall används. Du kan till exempel ställa in en begränsning så att en viss mall kan användas för arbete i ett särskilt lager. Alternativt kan du ha flera mallar som används för att skapa arbete för utgående orderhantering, beroende på försäljningen ursprung. Systemet använder fältet **Sekvensnummer** för att avgöra den ordning som de tillgängliga arbetsmallarna värderas i. Därför bör du, om du har en specifik fråga för en specifik arbetsmall, tilldela den ett lågt ordningsnummer. Frågan kommer sedan att utvärderas innan andra, mer allmänna frågor.
+Du kan ställa in en frågeställning för att kontrollera när en särskild mall används. Du kan till exempel ställa in en begränsning så att en viss mall kan användas för arbete i ett särskilt lager. Alternativt kan du ha flera mallar som används för att skapa arbete för utgående orderhantering, beroende på försäljningen ursprung. Systemet använder fältet **Sekvensnummer** för att avgöra den ordning som de tillgängliga arbetsmallarna värderas i. Därför bör du, om du har en specifik fråga för en specifik arbetsmall, tilldela den ett lågt ordningsnummer. Frågeställningen kommer sedan att utvärderas innan andra, mer allmänna frågeställningar.
 
 > [!NOTE]
 > Om du vill förhindra att ordningen för mallar för arbetsmallar skrivs över automatiskt *sekvensnummer* efter att en mall har tagits bort, aktivera funktionen *Bevara sekvensnummer för arbetsmallen vid borttagning* i [Funktionshanteringen](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
@@ -55,17 +55,17 @@ Placering av direktiven är regler som hjälper till att identifiera och sätta 
 
 På huvudet, varje plats direktiv måste vara associerad med en *arbetsorder typ* som anger typ av lagertransaktionen som direktivet kommer att användas för, såsom beställningar, återfyllnad, eller råmaterial plockning. Den *arbetstyp* anger platsen direktiv kommer att användas för plockning eller arbete, eller för vissa andra lagret process, såsom inventering eller lager status ändras. Du måste också ange en *ort* och ett *lager*. Ett *direktiv kod* som du anger på skärbordet kan användas för att länka placering direktiv till en eller flera arbetsmallar. 
 
-För arbete mallar, du kan sätter upp en fråga att avgöra när en viss plats direktiv används. Du kan till exempel ange att när e-handeln är ursprunget till en försäljningsorder, lager måste plockas upp från ett särskilt område i lagret. Systemet använder fältet **Löpnummer** för att avgöra den ordning som de tillgängliga platsdirektiven värderas i.
+För arbete mallar, du kan sätter upp en frågeställning att avgöra när en viss plats direktiv används. Du kan till exempel ange att när e-handeln är ursprunget till en försäljningsorder, lager måste plockas upp från ett särskilt område i lagret. Systemet använder fältet **Löpnummer** för att avgöra den ordning som de tillgängliga platsdirektiven värderas i.
 
 Platsdirektivraderna anger ytterligare begränsningar för tillämpningen av reglerna för platssökning. Du kan ange en minsta kvantitet och en maximal kvantitet att direktivet bör gälla, och du kan ange att direktivet bör vara en viss lagerenhet. Till exempel, om enheten är pallar, poster i pallar kan placeras i en specifik placering. Du kan också ange om kvantiteten kan delas upp över flera platser. Precis som platsdirektivrubriken har varje platsdirektivrad ett serienummer som bestämmer den ordning som raderna värderas i.
 
-Platsdirektiv har en ytterligare detaljnivå: *platsdirektivåtgärder*. Du kan definiera flera plats direktiv åtgärder för varje linje. Återigen används ett ordningsnummer för att avgöra i vilken ordning åtgärderna bedöms. På den här nivån kan du skapa en fråga för att definiera hur du hittar den bästa platsen i lagerstället. Du kan också använda fördefinierade **inställningar för strategi för** att finna en optimal placering.
+Platsdirektiv har en ytterligare detaljnivå: *platsdirektivåtgärder*. Du kan definiera flera plats direktiv åtgärder för varje linje. Återigen används ett ordningsnummer för att avgöra i vilken ordning åtgärderna bedöms. På den här nivån kan du skapa en frågeställning för att definiera hur du hittar den bästa platsen i lagerstället. Du kan också använda fördefinierade **inställningar för strategi för** att finna en optimal placering.
 
 Mer information om hur du skapar och konfigurerar platsdirektiv finns i [skapa ett platsdirektiv](create-location-directive.md).
 
 ### <a name="how-location-directives-work"></a>Hur platsdirektiv fungerar
 
-Platsdirektiv bestämmer *var* artiklar ska plockas och *var* de ska placeras. Systemet utvärderar ett platsdirektiv mot varje arbetsrad och väljer sedan en platsbaserad på arbetsradens detaljer. Systemet hittar först alla platsdirektiv som matchar en viss arbetsrad (t.ex. för det korrekta lagerstället och matchar frågan). Därefter utvärderas de direktiv som har hittats sekventiellt.
+Platsdirektiv bestämmer *var* artiklar ska plockas och *var* de ska placeras. Systemet utvärderar ett platsdirektiv mot varje arbetsrad och väljer sedan en platsbaserad på arbetsradens detaljer. Systemet hittar först alla platsdirektiv som matchar en viss arbetsrad (t.ex. för det korrekta lagerstället och matchar frågeställningen). Därefter utvärderas de direktiv som har hittats sekventiellt.
 
 > [!NOTE]
 > Det finns särskilda fall där plockningsplatsen eller artikelns lagerställe har valts på förhand. T.ex. under _inköpsregistrering_, är den första plockningen alltid från den plats där registreringen sker. Ett annat exempel är *inventeringsrörelse efter mall*, där lagerarbetaren väljer plockningsplats, och endast inlagringsplatser hittas genom platsdirektiv.
@@ -73,7 +73,7 @@ Platsdirektiv bestämmer *var* artiklar ska plockas och *var* de ska placeras. S
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - Video: [konfiguration för lagerstyrning djupdykning](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Hjälpavsnitt: [Skapa platsdirektiv](create-location-directive.md)
+- Hjälpämne: [Arbeta med platsdirektiv](create-location-directive.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

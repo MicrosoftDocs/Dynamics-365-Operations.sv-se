@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 42896c85fe72690aadafb878eb7e899c6fe10c32
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dd49edeb92e6a23723b1b6b6ea7800b69a81bd0f
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823798"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897610"
 ---
 # <a name="electronic-messaging"></a>Elektroniska meddelanden
 
@@ -29,7 +29,7 @@ Myndigheter och rättsliga myndigheter i olika länder och regioner i världen h
 
 Funktionen för elektroniska meddelanden i Finance stöder olika processer för elektroniska driftskompatibilitet mellan Finance och de system som myndigheter och rättsliga myndigheter för rapportering, avsändning och mottagning av officiell information.
 
-Funktionen för elektroniska meddelanden ingår i modulen **elektronisk rapportering** (ER). Därför kan du ställa in ER-format för elektroniska meddelanden. Mer information finns i [Elektronisk rapportering (ER)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+Funktionen för elektroniska meddelanden ingår i modulen **elektronisk rapportering** (ER). Därför kan du ställa in ER-format för elektroniska meddelanden. Mer information finns i [Elektronisk rapportering (ER)](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
 
 Elektroniska meddelanden utifrån följande enheter:
 
@@ -56,7 +56,7 @@ Funktionen för elektroniska meddelanden stöder följande scenarier:
 
 ## <a name="set-up-electronic-messaging"></a>Ställa in elektroniska meddelanden
 
-Elektroniska meddelanden kan hjälpa dig att underhålla olika processer för elektronisk rapportering för olika typer av dokument. I vissa komplexa scenarier ställs elektroniska meddelanden in med en kombination av många meddelandestatus, status för meddelandeartiklar, åtgärder. extra, fält och körbara klasser. För dessa scenarier finns paket med datatabeller tillgängliga för import. Om du använder dessa paket med datatabeller bör du importera dem till en juridisk person med hjälp av verktyget för datahantering. Mer information om hur du använder verktyget för datahantering finns i [Datahantering](../../dev-itpro/data-entities/data-entities-data-packages.md).
+Elektroniska meddelanden kan hjälpa dig att underhålla olika processer för elektronisk rapportering för olika typer av dokument. I vissa komplexa scenarier ställs elektroniska meddelanden in med en kombination av många meddelandestatus, status för meddelandeartiklar, åtgärder. extra, fält och körbara klasser. För dessa scenarier finns paket med datatabeller tillgängliga för import. Om du använder dessa paket med datatabeller bör du importera dem till en juridisk person med hjälp av verktyget för datahantering. Mer information om hur du använder verktyget för datahantering finns i [Datahantering](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 Om du inte importerar ett paket för datatabeller kan du manuellt ställa in funktionen för elektroniska meddelanden. I detta fall måste du ställa in följande element:
 
@@ -163,7 +163,7 @@ På snabbfliken **Inställningar för datakällor**, lägg till en rad för varj
 | Dokumentnummerfält  | Markera fältet som dokumentnumret ska tas från i det valda registret. |
 | Dokumentdatumfält    | Markera fältet som dokumentdatum ska tas från i det valda registret. |
 | Dokumentkontofält | Markera fältet som dokumentkonto ska tas från i det valda registret. |
-| Användarfråga             | Om den här kryssrutan är markerad kan du skapa en fråga genom att markera **Redigera fråga** ovanför rutnätet. Annars fylls alla poster i från den valda datakällan. |
+| Användarfråga             | Om den här kryssrutan är markerad kan du skapa en frågeställning genom att markera **Redigera fråga** ovanför rutnätet. Annars fylls alla poster i från den valda datakällan. |
 
 ### <a name="web-applications"></a>Webbprogram
 
@@ -292,7 +292,7 @@ Följande register visar resultatstatus som måste ställas in för olika åtgä
 
 ### <a name="electronic-message-processing"></a>Elektronisk meddelandebearbetning
 
-Elektronisk meddelandebearbetning är ett grundläggande begrepp för funktionen för elektroniska meddelanden. Den sammanställer åtgärder som ska utvärderas för det elektroniska meddelandet. Åtgärderna kan kopplas via en inledande status och resulterande status. Alternativt kan åtgärder av typen **Användarbearbetning** startas oberoende av varandra. På sidan **Elektronisk meddelandebearbetning** (**Moms** \> **Inställningar** \> **Elektroniska meddelanden** \> **Elektronisk meddelandebearbetning**), kan du också välja ytterligare fält som ska användas för bearbetning antingen på meddelandenivå eller meddelandeartikelnivå.
+Elektronisk meddelandebearbetning är ett grundläggande begrepp för funktionen för elektroniska meddelanden. Den sammanställer åtgärder som ska utvärderas för det elektroniska meddelandet. Åtgärderna kan kopplas via en inledande status och resulterande status. Alternativt kan åtgärder av typen **Användarbearbetning** startas oberoende av varandra. På sidan **Elektronisk meddelandebearbetning** (**Skatt** \> **Inställningar** \> **Elektroniska meddelanden** \> **Elektronisk meddelandebearbetning**), kan du också välja ytterligare fält som ska användas för bearbetning antingen på meddelandenivå eller meddelandeartikelnivå.
 
 Snabbfliken **Åtgärd** låter dig lägga till fördefinierade åtgärder till bearbetningen. Du kan ange om en åtgärd måste köras separat, eller om den kan startas av bearbetningen. Om vill ange att en åtgärd i bearbetningen endast kan initieras av en användare anger du **kör separat** till **Ja** för åtgärden. Om en åtgärd bör startas av behandlingen för meddelanden eller meddelandeposter som är i status som definieras som den ursprungliga statusen för åtgärden, ställer du in **Kör separat** till **Nej**. Åtgärder av typen **Användaråtgärd** måste alltid köras separat.
 
@@ -308,7 +308,7 @@ Snabbfliken **Batch** låter dig ställa in bearbetning för att arbeta i ett sy
 
 ## <a name="work-with-the-electronic-messages-functionality"></a>Arbeta med funktioner för elektroniska meddelanden
 
-Om du arbetar på meddelandenivån är sidan **elektroniska meddelanden** (**moms** \> **förfrågningar och rapporter** \> **elektroniska meddelanden** \> **elektroniska meddelanden**)mer användbar. Om du arbetar på datainsamlingsnivån (meddelandeobjekt) är sidan **elektroniska meddelanden** (**skatt** \> **förfrågningar och rapporter** \> **elektroniska meddelanden** \> **elektroniska meddelanden**) mer användbar.
+Om du arbetar på meddelandenivån är sidan **elektroniska meddelanden** (**Skatt** \> **förfrågningar och rapporter** \> **elektroniska meddelanden** \> **elektroniska meddelanden**)mer användbar. Om du arbetar på datainsamlingsnivån (meddelandeobjekt) är sidan **elektroniska meddelanden** (**skatt** \> **förfrågningar och rapporter** \> **elektroniska meddelanden** \> **elektroniska meddelanden**) mer användbar.
 
 ### <a name="electronic-messages"></a>Elektroniska meddelanden
 
@@ -463,7 +463,7 @@ När du skapar bearbetning, är det viktigt att du först definierar åtgärder 
 
 #### <a name="create-message-statuses"></a>Skapa meddelandestatus
 
-1. Gå till **moms \> inställningar \> elektroniska meddelanden \> meddelandestatus**.
+1. Gå till **Skatt \> inställningar \> elektroniska meddelanden \> meddelandestatus**.
 2. Skapa följande meddelandestatusar:
 
     - Ny
@@ -476,7 +476,7 @@ När du skapar bearbetning, är det viktigt att du först definierar åtgärder 
 
 #### <a name="create-additional-fields"></a>Skapa ytterligare fält
 
-1. Gå till **moms \> inställningar \> elektroniska meddelanden \> ytterligare fält**.
+1. Gå till **Skatt \> inställningar \> elektroniska meddelanden \> ytterligare fält**.
 2. Lägg till ytterligare fält och dess värden. Här är ett exempel:
 
     ![Ytterligare fält](media/additional-fields.png)
@@ -492,7 +492,7 @@ I det här exemplet skapas följande åtgärder:
 - **Generera rapport**
 - **Uppdatera till ursprunglig status** (valfritt)
 
-1. Gå till **moms \> inställningar \> elektroniska meddelanden \> åtgärder för meddelandebearbetning**.
+1. Gå till **Skatt \> inställningar \> elektroniska meddelanden \> åtgärder för meddelandebearbetning**.
 2. Skapa en åtgärd med namnet **Skapa meddelande**. På snabbfliken **allmänna** i fältet **åtgärdstyp** väljer du **skapa ett meddelande**.
 3. Skapa en åtgärd med namnet **uppdatera till förberedd** och ange följande fält:
 
@@ -518,10 +518,10 @@ I det här exemplet skapas följande åtgärder:
 
 I det här exemplet ska alla åtgärder konfigureras så att de körs separat. Förutsättningen är att användaren initierar varje åtgärd.
 
-1. Gå till **moms \> inställningar \> elektroniska meddelanden \> Elektronisk meddelandebearbetning**.
+1. Gå till **Skatt \> inställningar \> elektroniska meddelanden \> Elektronisk meddelandebearbetning**.
 2. Lägg till en post för din bearbetning och lägg till alla tidigare definierade åtgärder och ett ytterligare fält.
 3. Valfritt: På snabbfliken **säkerhetsroller**, definiera säkerhetsroller för din bearbetning för att begränsa åtkomsten till särskild rapportering.
-4. Gå till **skatt \> frågor och rapporter \> elektroniska meddelanden \> elektroniska meddelanden**.
+4. Gå till **skatt \> frågeställningar och rapporter \> elektroniska meddelanden \> elektroniska meddelanden**.
 5. Välj **Ny** för att skapa ett meddelande. Nu kan du lägga till datum och en beskrivning. Du kan också uppdatera värdet för ytterligare fält som du behöver.
 
     ![Skapa ett elektroniskt meddelande](media/create-electronic-message.png)

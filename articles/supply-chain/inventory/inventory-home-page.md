@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2bdf4a1ae691e50f7e41374db6c2dde10b9329cb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 40d443e52a2b781a40e2db1dbccd2351405ffff1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809576"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909753"
 ---
 # <a name="inventory-management-overview"></a>Lagerhantering – översikt
 
@@ -51,7 +51,7 @@ Följande inlärningskarta anger de huvudsakliga koncept och uppgifter som utgö
 Mer information finns i [Lagerstängning](../cost-management/inventory-close.md).
 
 ### <a name="manufacturing-and-supply-chain-management-blogs"></a>Bloggar om Supply Chain Management
-Det finns åsikter, nyheter och annan information om kassa- och bankhantering och andra lösningar i teambloggen [teambloggen Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg) och [teambloggen Supply Chain Management in Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+Det finns åsikter, nyheter och annan information om kassa- och bankhantering och andra lösningar i teambloggen [teambloggen Dynamics AX Manufacturing R&D](/archive/blogs/axmfg/) och [teambloggen Supply Chain Management in Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Uppgiftsguider
 Mer hjälp är tillgänglig som uppgiftsguider. Klicka på knappen **Hjälp** på valfri sida för att få åtkomst till uppgiftsguiderna.

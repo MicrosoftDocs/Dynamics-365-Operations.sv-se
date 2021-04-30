@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a4a2cfb7754a0074e37f1a5b4b99594b2b0861d3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1693df7d535a340306d2b817ce008c292bad521
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827108"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897682"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Uppdateringsrapport över anläggningstillgångar
 
 [!include [banner](../includes/banner.md)]
 
-**Uppdateringsrapport över anläggningstillgångar** ger detaljerade data, i ett lättläst Microsoft Excel-format, för periodens stängning, bokslut och momsrapportering. Rapporten innehåller start- och slutsaldon för anläggningstillgångar, samt en värderingen av rörelser för perioden, och ny anskaffning och avyttring som uppstått under perioden. Data rapporteras för enskilda anläggningstillgångar och sammanfattas även för grupper av anläggningstillgångar och juridisk person.
+**Uppdateringsrapport över anläggningstillgångar** ger detaljerade data, i ett lättläst Microsoft Excel-format, för periodens stängning, bokslut och skatterapportering. Rapporten innehåller start- och slutsaldon för anläggningstillgångar, samt en värderingen av rörelser för perioden, och ny anskaffning och avyttring som uppstått under perioden. Data rapporteras för enskilda anläggningstillgångar och sammanfattas även för grupper av anläggningstillgångar och juridisk person.
 
-**Uppdateringsrapporten för anläggningstillgångar** använder ramverket för elektronisk rapportering (ER). Innan du kan köra rapporten måste konfigurationen för modellen för anläggningstillgångar och uppdateringsrapporten för anläggningstillgångar importeras från Microsoft Dynamics Lifecycle Services (LCS). Instruktioner finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
+**Uppdateringsrapporten för anläggningstillgångar** använder ramverket för elektronisk rapportering (ER). Innan du kan köra rapporten måste konfigurationen för modellen för anläggningstillgångar och uppdateringsrapporten för anläggningstillgångar importeras från Microsoft Dynamics Lifecycle Services (LCS). Instruktioner finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
 
 Den här rapporten finns i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, 7.3 eller som en snabbkorrigering för Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017). Tre snabbkorrigeringar måste implementeras för miljöer som har versionen från juli 2017:
 

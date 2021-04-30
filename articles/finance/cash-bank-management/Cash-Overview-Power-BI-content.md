@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 794a8b19224858a690f2b857c0d7278ed177d531
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d070ddd350bc1ca9edb311cfd9f015aca1e7cc78
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830602"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897462"
 ---
 # <a name="cash-overview-power-bi-content"></a>Kassaöversikt Power BI-innehåll
 
@@ -38,7 +38,7 @@ Följande inställningar måste slutföras för att data ska kunna visas i **kas
 2. Gå till **Redovisning > kalendrar > räkenskapskalendrar** om du vill validera räkenskapskalender datum som tilldelats den aktiva tidsperioden.
 3. Gå till **redovisning > Inställningar > redovisning** om du vill ange **redovisningsvaluta** och **valutakurstyp**.
 4. Definiera valutakurser mellan transaktionsvalutor och redovisningsvaluta, redovisningsvaluta och systemvaluta samt redovisningsvaluta och bankvalutor. Det gör du genom att gå till **redovisning > valutor > valutakurser**.
-5. Konfigurera och kör kassaflödesprognoser. Mer information om hur du ställer in prognoser för kassaflöden finns i [Kassaflödesprognoser](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
+5. Konfigurera och kör kassaflödesprognoser. Mer information om hur du ställer in prognoser för kassaflöden finns i [Kassaflödesprognoser](./cash-flow-forecasting.md). 
 6. Gå till **Systemadministration > Inställningar > Enhetslagring** för att uppdatera sammanlagda måtten **LedgerCovLiquidityMeasurement**.
 
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll

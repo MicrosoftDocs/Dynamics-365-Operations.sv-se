@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce180c28be2cea1115937b1b1fbdf2323903e4ad
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 953f477e7e00cde7f814ff28d3dfd8ed7075dafc
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743387"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893236"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Innehållspaket för ekonomiska resultat för PowerBI.com
 
@@ -85,7 +85,7 @@ Följande enheter användes till grund för PowerBI.com-lösningen för **ekonom
 - Redovisningar
 - ChartofAccounts
 
-Dessa enheter används för att skapa beräknade mått i datamodellen. Beräknade åtgärder används för att beräkna huvudindikatorerna för prestanda (KPI) samt de rapporter som används i innehåll. Som standard kommer innehållspaketet med data för de senaste tre åren och ett framtida år. Om du vill ta med ytterligare beräkningar i dina rapporter och din instrumentpanel, kan du ändra arbetsboken i [Microsoft Excel](https://docs.microsoft.com/dynamics/s-e/). Denna arbetsbok är den standarddatamodell som använts för att skapa innehållet.
+Dessa enheter används för att skapa beräknade mått i datamodellen. Beräknade åtgärder används för att beräkna huvudindikatorerna för prestanda (KPI) samt de rapporter som används i innehåll. Som standard kommer innehållspaketet med data för de senaste tre åren och ett framtida år. Om du vill ta med ytterligare beräkningar i dina rapporter och din instrumentpanel, kan du ändra arbetsboken i [Microsoft Excel](/dynamics/s-e/). Denna arbetsbok är den standarddatamodell som använts för att skapa innehållet.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

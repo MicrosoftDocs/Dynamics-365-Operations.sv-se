@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 743298a1c32f5fc706ad7a47d9b559569946889b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: efa9be4a5243444c2bf0b154836efbf8cfa76de9
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832666"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894672"
 ---
 # <a name="vat-reporting-for-europe"></a>Momsrapporter för Europa
 
@@ -76,164 +76,164 @@ Momsrapporteringskoder är rutkoder i momsrapporten eller taggnamn i XML-format.
 </tr>
 <tr class="even">
 <td><strong>Momspliktig försäljning</strong></td>
-<td>Summan av <strong>Momsunderlagsbelopp</strong> för momstransaktioner som uppfyller följande villkor:
+<td>Summan av <strong>Skatteunderlagsbelopp</strong> för skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden/</li>
-<li>Försäljningen är lokal (<strong>Momsriktning</strong> är <strong>Momsskuld</strong>).</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &lt; 0.</li>
+<li>Försäljningen är lokal (<strong>Skatteriktning</strong> är <strong>Momsskuld</strong>).</li>
+<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><strong>Skattefri försäljning</strong></td>
-<td>Summan av <strong>Momsunderlagsbelopp</strong> för momstransaktioner som uppfyller följande villkor:
+<td>Summan av <strong>Skatteunderlagsbelopp</strong> för skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li>Försäljningen är export (<strong>Momsriktning</strong> är <strong>Skattefri försäljning</strong>).</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &lt; 0.</li>
+<li>Försäljningen är export (<strong>Skatteriktning</strong> är <strong>Skattefri försäljning</strong>).</li>
+<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><strong>Momsskuld</strong></td>
-<td>Summan av <strong>Momsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Summan av <strong>Skattebeloppen</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li>Försäljningen är lokal (<strong>Momsriktning</strong> är <strong>Momsskuld</strong>).</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &lt; 0.</li>
+<li>Försäljningen är lokal (<strong>Skatteriktningen</strong> är <strong>Momsskuld</strong>).</li>
+<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><strong>Momspliktiga försäljningskreditfakturor</strong></td>
-<td>Summan av <strong>Momsunderlagsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Summan av <strong>Skatteunderlagsbeloppen</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li>Försäljningen är lokal (<strong>Momsriktning</strong> är <strong>Momsskuld</strong>).</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &gt; 0.</li>
+<li>Försäljningen är lokal (<strong>Skatteriktningen</strong> är <strong>Momsskuld</strong>).</li>
+<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><strong>Momsbefriad försäljningskreditfaktura</strong></td>
-<td>Summan av <strong>Momsunderlagsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Summan av <strong>Skatteunderlagsbelopp</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li>Försäljningen är export (<strong>Momsriktning</strong> är <strong>Skattefri försäljning</strong>).</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &gt; 0.</li>
+<li>Försäljningen är export (<strong>Skatteriktningen</strong> är <strong>Skattefri försäljning</strong>).</li>
+<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><strong>Moms på försäljningskreditfaktura</strong></td>
-<td>Summan av <strong>Momsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Summan av <strong>Skattebeloppen</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li>Försäljningen är lokal (<strong>Momsriktning</strong> är <strong>Momsskuld</strong>).</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &gt; 0.</li>
+<li>Försäljningen är lokal (<strong>Skatteriktningen</strong> är <strong>Momsskuld</strong>).</li>
+<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><strong>Skattepliktiga inköp</strong></td>
-<td>Summan av <strong>Momsunderlagsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Summan av <strong>Skatteunderlagsbelopp</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li>Försäljningen är inhemsk (<strong>Momsriktning</strong> är <strong>Momsfordran</strong>).</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &gt; 0.</li>
+<li>Försäljningen är inhemsk (<strong>Skatteriktningen</strong> är <strong>Momsfordran</strong>).</li>
+<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><strong>Skattefritt inköp</strong></td>
-<td>Summan av <strong>Momsunderlagsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Summan av <strong>Skatteunderlagsbelopp</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li>Inköpet är import (<strong>Momsriktning</strong> är <strong>Skattefritt inköp</strong>).</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &gt; 0.</li>
+<li>Inköpet är import (<strong>Skatteriktningen</strong> är <strong>Skattefritt inköp</strong>).</li>
+<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><strong>Momsfordran</strong></td>
-<td>Summan av <strong>Momsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Summan av <strong>Skattebeloppen</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li>Försäljningen är inhemsk (<strong>Momsriktning</strong> är <strong>Momsfordran</strong>).</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &gt; 0.</li>
+<li>Försäljningen är inhemsk (<strong>Skatteriktning</strong> är <strong>Momsfordran</strong>).</li>
+<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><strong>Momspliktig inköpskreditfaktura</strong></td>
-<td>Summan av <strong>Momsunderlagsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Summan av <strong>Skatteunderlagsbelopp</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li>Försäljningen är inhemsk (<strong>Momsriktning</strong> är <strong>Momsfordran</strong>).</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &lt; 0.</li>
+<li>Försäljningen är inhemsk (<strong>Skatteriktning</strong> är <strong>Momsfordran</strong>).</li>
+<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><strong>Momsbefriad inköpskreditfaktura</strong></td>
-<td>Summan av <strong>Momsunderlagsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Summan av <strong>Skatteunderlagsbelopp</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li>Inköpet är import (<strong>Momsriktning</strong> är <strong>Skattefritt inköp</strong>).</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &lt; 0.</li>
+<li>Inköpet är import (<strong>Skatteriktning</strong> är <strong>Skattefritt inköp</strong>).</li>
+<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><strong>Moms på inköpskreditfaktura</strong></td>
-<td>Summan av <strong>Momsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Summan av <strong>Skattebelopp</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li>Försäljningen är inhemsk (<strong>Momsriktning</strong> är <strong>Momsfordran</strong>).</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &lt; 0.</li>
+<li>Försäljningen är inhemsk (<strong>Skatteriktning</strong> är <strong>Momsfordran</strong>).</li>
+<li>Transaktionens <strong>Skattbasbelopp</strong> eller <strong>Skattebelopp</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><strong>Skattepliktig import</strong></td>
-<td>Summan av <strong>Momsunderlagsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Summan av <strong>Skatteunderlagsbelopp</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li><strong>Momsriktningen</strong> är <strong>Importavgift</strong></li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &gt; 0.</li>
+<li><strong>Skatteriktningen</strong> är <strong>Importavgift</strong></li>
+<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><strong>Motbokning momspliktig import</strong></td>
-<td>Återförd summa för <strong>Momsunderlagsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Återförd summa för <strong>Skatteunderlagsbelopp</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li><strong>Momsriktningen</strong> är <strong>Importavgift</strong>.</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &gt; 0.</li>
+<li><strong>Skatteriktningen</strong> är <strong>Importavgift</strong>.</li>
+<li>Transaktionens <strong>Skattbasbelopp</strong> eller <strong>Skattebelopp</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><strong>Momspliktig importkreditfaktura</strong></td>
-<td>Summan av <strong>Momsunderlagsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Summan av <strong>Skatteunderlagsbelopp</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-e<li><strong>Momsriktningen</strong> är <strong>Importavgift</strong>.</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &lt; 0.</li>
+e<li><strong>Skatteriktningen</strong> är <strong>Importavgift</strong>.</li>
+<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><strong>Motbokad momspliktig importkreditfaktura</strong></td>
-<td>Återförd summa för <strong>Momsunderlagsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Återförd summa för <strong>Skatteunderlagsbelopp</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li>Momsriktningen är <strong>Importavgift</strong>.</li>
-d<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &lt; 0.</li>
+<li>Skatteriktningen är <strong>Importavgift</strong>.</li>
+d<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><strong>Importavgift</strong></td>
-<td>Summan av <strong>Momsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Summan av <strong>Skattebelopp</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li><strong>Momsriktningen</strong> är <strong>Importavgift</strong>.</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &gt; 0.</li>
+<li><strong>Skatteriktningen</strong> är <strong>Importavgift</strong>.</li>
+<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><strong>Motbokning av importavgift</strong></td>
-<td>Återförd summa för <strong>Momsbelopp</strong> för de momstransaktioner som uppfyller följande villkor:
+<td>Återförd summa för <strong>Skattebelopp</strong> för de skattetransaktioner som uppfyller följande villkor:
 <ul>
 <li>Transaktionsdatumet ligger i den valda perioden.</li>
-<li><strong>Momsriktningen</strong> är <strong>Importavgift</strong>.</li>
-<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</strong> &gt; 0.</li>
+<li><strong>Skatteriktningen</strong> är <strong>Importavgift</strong>.</li>
+<li>Transaktionens <strong>Skatteunderlagsbelopp</strong> eller <strong>Skattebelopp</strong> &gt; 0.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -241,16 +241,16 @@ d<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</str
 
 > [!NOTE]
 > För tabellen ovan förutsätts att följande kriterier uppfylls: 
-> -   Momsunderlagsbeloppet är ett transaktionsbelopp från fältet **Ursprung i redovisningsvaluta**.
-> -   Momsbeloppet är ett transaktionsbelopp från fältet **Faktiskt momsbelopp i redovisningsvaluta**.
+> -   Skatteunderlagsbeloppet är ett transaktionsbelopp från fältet **Ursprung i redovisningsvaluta**.
+> -   Skattebeloppet är ett transaktionsbelopp från fältet **Faktiskt skattebelopp i redovisningsvaluta**.
 
 ### <a name="configure-the-er-model-and-format-for-the-report"></a>Konfigurera ER-modell och format för rapporten
 
 Du kan använda elektronisk rapportering (ER) för att konfigurera utdrag och rapporter, samt för att exportera datavarierande elektroniska format utan att ändra X++ -koden. För mer information:
 
--   [Översikt över elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md)
--   [Hämta konfigurationer för elektronisk rapportering från Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
--   [Lokaliseringskrav – Skapa en GER-konfiguration](../../dev-itpro/analytics/electronic-reporting-configuration.md)
+-   [Översikt över elektronisk rapportering](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+-   [Hämta konfigurationer för elektronisk rapportering från Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+-   [Lokaliseringskrav – Skapa en GER-konfiguration](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
 
 ## <a name="countryspecific-resources-for-vat-statements"></a>Landspecifika resurser för momsrapporter
 Momsrapporten för varje land måste uppfylla kraven i landets lagstiftning. Det finns fördefinierade allmänna modeller och format för momsrapporter för de länder som anges i tabellen nedan.

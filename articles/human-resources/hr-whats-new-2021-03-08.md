@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7029f1dab1f10c2b237fafb7b5d8eeff9fa7a543
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 890d7a2e671d6365cd1f6e23e399166541c04496
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790294"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890637"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-08-2021"></a>Nyheter och ändringar i Dynamics 365 Human Resources 08 mars 2021
 
@@ -32,7 +32,7 @@ Det här ämnet beskriver nya, ändrade, kommer snart funktioner i Dynamics 365 
 
 Mer information om uppdateringsprocessen och schema finns i [uppdateringsprocessen](hr-admin-setup-update-process.md).
 
-Mer information om nya funktioner och deras förväntade allmänna tillgänglighetsdatum finns i [Översikt över Dynamics 365 Human Resources 2021 utgivningscykel 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
+Mer information om nya funktioner och deras förväntade allmänna tillgänglighetsdatum finns i [Översikt över Dynamics 365 Human Resources 2021 utgivningscykel 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>I den här versionen
 
@@ -44,7 +44,7 @@ Följande funktioner är i allmänhet tillgänglig i den här versionen.
 
 | Funktion | Utgivningsplan | Dokumentation |
 | --- | --- | --- |
-| Företagsövergripande vy av tjänstledighet för chefer | [Företagsövergripande vy av medarbetares tjänstledighet för chefer](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Konfigurera parametrar för ledighet och frånvaro](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
+| Företagsövergripande vy av tjänstledighet för chefer | [Företagsövergripande vy av medarbetares tjänstledighet för chefer](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Konfigurera parametrar för ledighet och frånvaro](./hr-leave-and-absence-parameters.md) |
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 
@@ -69,8 +69,8 @@ Följande nya funktioner är i förhandsgranskning. Mer information om hur du ak
 
 | Funktion | Utgivningsplan | Dokumentation |
 | --- | --- | --- |
-| Arbetsyta för förmånshantering | [Arbetsyta för hantering av förmåner (förhandsversion)](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Arbetsyta för förmånshantering](hr-benefits-management-workspace.md) |
-| Hindra medarbetare från att redigera affärskontaktinformation | [Hindra medarbetare från att redigera affärskontaktinformation](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Begränsa redigering av personlig information](hr-employee-self-service-restrict-editing.md)|
+| Arbetsyta för förmånshantering | [Arbetsyta för hantering av förmåner (förhandsversion)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Arbetsyta för förmånshantering](hr-benefits-management-workspace.md) |
+| Hindra medarbetare från att redigera affärskontaktinformation | [Hindra medarbetare från att redigera affärskontaktinformation](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Begränsa redigering av personlig information](hr-employee-self-service-restrict-editing.md)|
 
 ## <a name="coming-soon"></a>Kommer snart
 
@@ -78,12 +78,12 @@ Följande nya funktioner är i förhandsgranskning. Mer information om hur du ak
 | --- | --- |
 | Färdigheter som en chef har angett för sina medarbetare kan godkännas automatiskt av ett arbetsflöde | Kommer snart. |
 
-En fullständig lista över planerade funktioner och deras schemalagda versioner finns i [Översikt över Dynamics 365 Human Resources 2021 utgivningscykel 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
+En fullständig lista över planerade funktioner och deras schemalagda versioner finns i [Översikt över Dynamics 365 Human Resources 2021 utgivningscykel 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
 ## <a name="see-also"></a>Se även
 
-[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
-[Översikt över Dynamics 365 Human Resources 2021 utgivningsvåg 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
+[Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
+[Översikt över Dynamics 365 Human Resources 2021 utgivningsvåg 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
 
