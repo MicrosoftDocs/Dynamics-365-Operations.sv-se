@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a3639c05b24de31cfa09d2d9d0cf427122f51eae
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fa8faf0f0f45f901151b3b20a1792b3d8f264fa6
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810208"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897634"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Åtkomsträttigheter för en kostnadsobjektcontroller
 
@@ -62,9 +62,8 @@ I följande exempel visas hur en dimensionshierarki kan se ut.
 
 Du kan använda snabbfliken **användare** i hierarkidesignern för att infoga minst ett användar-ID på varje nod.
 
-|                                   | Användare            | Dimensionsmedlemsintervall   |                         |
+|             Noder                 | Användare            | Från dimensionsmedlem     |   Till dimensionsmedlem   |
 |-----------------------------------|------------------|---------------------------|-------------------------|
-| **Noder**                         | **Användar-ID**      | **Från dimensionsmedlem** | **Till dimensionsmedlem** |
 | Organisation                      | Benjamin Claire |                           |                         |
 | &nbsp;&nbsp;Admin                 | april            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finansiellt   | Alicia           | CC002                     | CC003                   |
@@ -95,14 +94,14 @@ Inställningar för Hierarki för åtkomstlista används för att bestämma vilk
     - Data Power BI visuella effekter som är inbäddade i Dynamics 365 Finance-klienten
 
 > [!IMPORTANT]
-> - Innan Hierarki för åtkomstlista kan påverka data i Power BI måste hierarkiåtkomst och säkerhet på radnivå i Power BI paras ihop. Mer information finns i [ställa in säkerhet för kostnadsredovisningens innehållspaket](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Innan Hierarki för åtkomstlista kan påverka data i Power BI måste hierarkiåtkomst och säkerhet på radnivå i Power BI paras ihop. Mer information finns i [ställa in säkerhet för kostnadsredovisningens innehållspaket](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Det här avsnittet visar kraven som måste vara på plats innan du kan använda arbetsytan **kostnadskontroll**.
 
 Ytterligare resurser
 
 - [Arbetsyta för kostnadskontroll](cost-control-workspace.md)
 - [Dimensionshierarki](dimension-hierarchy.md)
-- [Ställa in säkerhet för kostnadsredovisningsinnehållspaket](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+- [Ställa in säkerhet för kostnadsredovisningsinnehållspaket](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

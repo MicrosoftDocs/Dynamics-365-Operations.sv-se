@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: faf54fec2885f868c66987a7b481559d0c5615d0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b5bf6815f225dcca8f9e89e2c85942ce8a2ccd7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838284"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907997"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Layout för dokumentflöde för ID-nummeretiketter
 
@@ -73,7 +73,7 @@ Följande exempel visar hur du kan anpassa fältet arbetskvantitet (**antal**):
 - Om du alltid vill visa fyra siffror (genom att använda nollor som platshållare) ska du använda `$Qty:0000$`. Om kvantiteten till exempel är 10 visas etiketten "0010".
 - Om du alltid vill visa två decimaler använder du `$Qty:0.00$`. Om kvantiteten till exempel är 10 visas etiketten "10,00".
 
-En fullständig lista över tillgängliga nummerformatsträngar finns i [Anpassade nummerformatsträngar](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).
+En fullständig lista över tillgängliga nummerformatsträngar finns i [Anpassade nummerformatsträngar](/dotnet/standard/base-types/custom-numeric-format-strings).
 
 ## <a name="custom-string-formats"></a>Anpassade strängformat
 
@@ -95,7 +95,7 @@ $PrintedDate:dd-MM-yyyy$
 
 I det här exemplet skrivs 30 april 2020 ut som "30-04-2020".
 
-En fullständig lista över tillgängliga datum-/tidsformat finns i [Anpassade formatsträngar för datum och tid](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).
+En fullständig lista över tillgängliga datum-/tidsformat finns i [Anpassade formatsträngar för datum och tid](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="print-individual-lines-from-multiline-data"></a>Skriva ut enskilda rader från samköpsdata
 

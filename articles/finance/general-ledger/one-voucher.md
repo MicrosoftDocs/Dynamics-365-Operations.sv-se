@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: e98f1803e43df0fbd5ab700b959faaeee017b7a9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8229dc84040b1f3bd46d75c13795f0dc9b7e71f1
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834510"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897778"
 ---
 # <a name="one-voucher"></a>En verifikation
 
@@ -48,7 +48,7 @@ Den befintliga funktionaliteten för redovisningsjournaler (allmän journal, jou
 
 ## <a name="issues-with-one-voucher"></a>Problem med en verifikation
 
-Funktionen för en verifikation orsakar problem vid kvittning, beräkning av moms, återföring av transaktion, avstämning av en redovisningsjournal i redovisningen, ekonomisk rapportering och mycket mer. (Exempelvis finns mer information om problem som kan uppstå under betalningen i [En verifikation med flera kund- eller leverantörsposter](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records).) För att fungera och rapportera korrekt kräver dessa processer och rapporter transaktionsdetaljer. Även om vissa fall ändå fungerar korrekt, baserat på organisationens konfiguration, finns ofta problem när flera transaktioner registreras i en verifikation.
+Funktionen för en verifikation orsakar problem vid kvittning, beräkning av skatt, återföring av transaktion, avstämning av en redovisningsjournal i redovisningen, ekonomisk rapportering och mycket mer. (Exempelvis finns mer information om problem som kan uppstå under betalningen i [En verifikation med flera kund- eller leverantörsposter](../accounts-payable/single-voucher-multiple-customer-vendor-records.md).) För att fungera och rapportera korrekt kräver dessa processer och rapporter transaktionsdetaljer. Även om vissa fall ändå fungerar korrekt, baserat på organisationens konfiguration, finns ofta problem när flera transaktioner registreras i en verifikation.
 
 Du bokför t.ex. följande verifikation med flera rader.
 
@@ -106,7 +106,7 @@ Om en organisation måste visa redovisningsposter från en affärshändelse till
 
 ### <a name="customer-prepayment-payment-journal-that-has-taxes-on-multiple-lines"></a>Betalningsjournal för förskottsbetalning som har skatter på flera "rader"”
 
-I det här scenariot är kunder i en verifikation samma kund eftersom transaktionen simulerar raderna i en kundorder. Förskottsbetalningen måste anges i en verifikation eftersom momsberäkningen måste göras på "raderna" för en betalning som kunden har gjort.
+I det här scenariot är kunder i en verifikation samma kund eftersom transaktionen simulerar raderna i en kundorder. Förskottsbetalningen måste anges i en verifikation eftersom skatteberäkningen måste göras på "raderna" för en betalning som kunden har gjort.
 
 ### <a name="customer-reimbursement"></a>Kundåterbetalning
 

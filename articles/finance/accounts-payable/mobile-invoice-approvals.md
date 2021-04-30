@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5d3b85e076292b9d41de6a4cf3198ed9b38d27c8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9e6138ccd92019f52afab0d8ed4b8cf64d66ff24
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828044"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897706"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobila fakturagodkännanden
 
@@ -32,7 +32,7 @@ Med mobila funktioner kan en affärsanvändare skapa mobila funktioner. För ava
 
 | Förutsättning                                                                                            | beskrivning                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobil handbok – före läsning                                                                                |[Mobilplattform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
+| Mobil handbok – före läsning                                                                                |[Mobilplattform](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | En miljö som har version 1611 och plattformsuppdatering 3 (november 2016)                   |
 | Installera snabbkorrigering KB 3204341.                                                                              | Uppgiftsinspelaren kan felaktigt spela in två Stäng-kommandon för listrutans dialogrutor. Detta ingår i plattformsuppdatering 3 (uppdatering november 2016). |
 | Installera snabbkorrigering KB 3207800.                                                                              | Denna snabbkorrigering gör att bifogade filer kan visas på mobila klienten. Detta ingår i plattformsuppdatering 3 (uppdatering november 2016).           |
@@ -47,7 +47,7 @@ Alla organisationer orkestrerar och definierar sin affärsprocess för leverant�
 -   Vilka fält från fakturahuvudet vill användaren ha i mobilupplevelsen, och i vilken ordning?
 -   Vilka fält från fakturaraderna vill användaren ha i mobilupplevelsen, och i vilken ordning?
 -   Hur många rader finns det i en faktura? Använd 80-20-regeln här och optimera för 80 procent.
--   Vill användarna ha redovisningsfördelningar (fakturakodning) på den mobila enheten vid granskningar? Om svaret på frågan är Ja, beakta följande:
+-   Vill användarna ha redovisningsfördelningar (fakturakodning) på den mobila enheten vid granskningar? Om svaret på frågeställningen är Ja, beakta följande:
     -   Hur många redovisningsfördelningar (slutligt pris, moms, avgifter, delningar, och så vidare) finns det för en fakturarad? Återigen, använd 80-20-regeln.
     -   Har fakturorna också redovisningsfördelningar i fakturahuvudet? Om så är fallet ska dessa redovisningsfördelningar finnas på enheten?
 
@@ -56,7 +56,7 @@ Alla organisationer orkestrerar och definierar sin affärsprocess för leverant�
 
 -   Vill användarna se bilagor för fakturan på enheten?
 
-Utformningen av den mobila upplevelsen för fakturagodkännanden varierar beroende på svaren på dessa frågor. Målet är att optimera användarupplevelsen för affärsprocessen på mobil i organisationen. I resten av det här avsnittet beskrivs två varianter av scenario som baseras på olika svar på föregående frågor. 
+Utformningen av den mobila upplevelsen för fakturagodkännanden varierar beroende på svaren på dessa frågeställningar. Målet är att optimera användarupplevelsen för affärsprocessen på mobil i organisationen. I resten av det här avsnittet beskrivs två varianter av scenario som baseras på olika svar på föregående frågeställningar. 
 
 Som en allmän vägledning, när du arbetar med mobildesignern, se till att du "publicerar" ändringarna för att inte förlora uppdateringarna.
 
@@ -213,7 +213,7 @@ Använd sidan **VendMobileInvoiceHeaderDetails** när du designar sidan med fakt
 
 11. När alla fält från de två föregående stegen har lagts till, klickar du på **Klart**. Sidan måste likna följande illustration.
     
-    [![Sidan när fält har lagts till](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Illustration som visar ytterligare tillagda fält](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. Klicka på **Klart** för att avsluta redigeringsläge.
 

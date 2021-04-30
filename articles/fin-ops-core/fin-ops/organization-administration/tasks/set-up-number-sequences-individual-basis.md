@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 74422a9f2b737053288d21ba7a578c854cab1335
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 83ebcf96aa6a5b5c757285be1c5602ac4e8f50fc
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747331"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890868"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Ställa in enskilda nummerserier
 
@@ -30,7 +30,7 @@ Detta avsnitt förklarar hur man ställer in enskilda nummerserier. Nummerserier
 2. Välj **nummerserier**
 3. Skriv ett värde i fältet **Nummerseriekod**.
 4. Skriv ett värde i fältet **Namn**.
-5. Välj ett omfång för nummerserien och de valda omfångvärdena från listrutan på snabbfliken **Områdesparametrar**. Omfånget definierar vilka organisationer använder nummerserien. Dessutom kan nummerserier som har ett annat omfång än **Delad** ha segment som motsvarar deras omfång. Till exempel kan en nummerserie med omfånget **Juridisk person** innehålla ett segment med en juridisk person. Mer information om omfång finns i hjälpavsnittet [Översikt över nummerserier](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). 
+5. Välj ett omfång för nummerserien och de valda omfångvärdena från listrutan på snabbfliken **Områdesparametrar**. Omfånget definierar vilka organisationer använder nummerserien. Dessutom kan nummerserier som har ett annat omfång än **Delad** ha segment som motsvarar deras omfång. Till exempel kan en nummerserie med omfånget **Juridisk person** innehålla ett segment med en juridisk person. Mer information om omfång finns i hjälpavsnittet [Översikt över nummerserier](../number-sequence-overview.md). 
 6. Expandera avsnittet **Segment**.
     - Definiera formatet för nummerserien genom att lägga till, ta bort och ordna om segment.  
     - Nummerserier för alla områden kan innehålla *Konstanta segment* och *Alfanumeriska segment*. Konstanta segment innehåller en uppsättning alfanumeriska tecken som inte ändras. Använd den här segmenttypen om du vill lägga till ett bindestreck eller andra avgränsare mellan nummerseriesegment. Alfanumeriska segment innehåller en kombination av nummertecken (#) och et-tecken (&). Dessa representerar bokstäver och siffror som ökar varje gång som ett nummer i serien används. Använd ett nummertecken (#) om du vill ange att öka nummer och en et-tecken (&) om du vill ange att öka bokstäver. Med formatet `#####_2014` skapas till exempel serien `00001_2014`, `00002_2014`, osv. Minst ett alfanumeriskt segment måste vara närvarande. Omfångsegment som till exempel företag eller juridisk person, är inte obligatoriska. Men om du inte inkluderar omfångsegment i formatet, genereras ändå nummer för den valda referensen per omfång.  

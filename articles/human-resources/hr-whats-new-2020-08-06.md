@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 263650cae4b8408f1f7a4a27c43294d2f51c1444
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: edbfad387496cb3381c6298b9141129c6a878335
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800151"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891851"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (06 augusti 2020)
 
@@ -33,23 +33,23 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Human Res
 
 ## <a name="platform-update-1001236-is-now-available"></a>Plattformsuppdateringen 10.0.12(36) finns nu tillgänglig.
 
-Mer information finns i [Plattformsuppdateringar för version 10.0.12 av Finance and Operations-appar (augusti 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12).
+Mer information finns i [Plattformsuppdateringar för version 10.0.12 av Finance and Operations-appar (augusti 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>DMF-enheter (Data Management Framework) för förmånshantering
  
 Entiteter för hantering av förmåner släpps. DMF-enheter gör det möjligt att importera och exportera data för att enkelt konfigurera hantering av förmåner. En mall för hantering av förmåner kan användas för att flytta data. Mallen exporterar och importerar data sekventiellt för att respektera databeroenden. Mer information finns i:
 
-- [Stöd för DMF-entitet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support) i Dynamics 365 2020 utgivningsvåg 1-planen
-- [Översikt över datahantering](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages)
+- [Stöd för DMF-entitet](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support) i Dynamics 365 2020 utgivningsvåg 1-planen
+- [Översikt över datahantering](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)
 
 
 ## <a name="claire-creates-a-workflow-for-buying-and-selling-leave-requests-446557"></a>Claire skapar ett arbetsflöde för att köpa och sälja begäranden om ledighet (446557)
 
 Mer information finns i:
 
-- [Tillåt medarbetare att köpa och sälja sin ledighet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) i Dynamics 365 2020 utgivningsvåg 2-planen
-- [Hantera principer för köpa och sälja tjänstledighet](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
-- [Köpa och sälja tjänstledighet](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
+- [Tillåt medarbetare att köpa och sälja sin ledighet](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) i Dynamics 365 2020 utgivningsvåg 2-planen
+- [Hantera principer för köpa och sälja tjänstledighet](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [Köpa och sälja tjänstledighet](./hr-employee-self-service-buy-sell-leave.md)
 
 
 ## <a name="worker-postal-addresses-v2-entity-has-access-across-legal-entities-with-restricted-access-459126"></a>Entiteten adress till arbetare till postadress V2 har åtkomst över juridiska entiteter med begränsad åtkomst (459126)
@@ -62,7 +62,7 @@ När du använder platshållaren för att öppna en resultatöversyn i gransknin
 
 ## <a name="new-entities-for-buying-and-selling-leave-473180"></a>Nya entiteter för köpa och sälja ledighet (473180)
 
-Entiteter för ramverk för datahantering finns nu tillgängliga för att köpa och sälja tjänstledighet. Mer information finns i [Översikt över datahantering](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
+Entiteter för ramverk för datahantering finns nu tillgängliga för att köpa och sälja tjänstledighet. Mer information finns i [Översikt över datahantering](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 ## <a name="when-viewing-record-information-and-using-advanced-filters-a-user-could-gain-access-to-other-employees-records-472490"></a>När en användare visar postinformation och använder avancerade filter kan han eller hon få tillgång till andra medarbetares poster (472490)
 
@@ -96,9 +96,9 @@ Med den här ändringen begränsas cirkelreferens identifieringen för positions
 
 Vissa organisationer ger en förmån som gör det möjligt för medarbetare att köpa eller sälja sin tjänstledighet. Den här processen hanteras ofta manuellt. Med den här funktionen automatiseras hanteringen av principer och begäranden för personalavdelningen. Det effektiviserar hanteringsprocessen och hjälper till att eliminera misstag. Mer information finns i:
 
-- [Tillåt medarbetare att köpa och sälja sin ledighet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) i Dynamics 365 2020 utgivningsvåg 2-planen
-- [Hantera principer för köpa och sälja tjänstledighet](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
-- [Köpa och sälja tjänstledighet](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
+- [Tillåt medarbetare att köpa och sälja sin ledighet](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) i Dynamics 365 2020 utgivningsvåg 2-planen
+- [Hantera principer för köpa och sälja tjänstledighet](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [Köpa och sälja tjänstledighet](./hr-employee-self-service-buy-sell-leave.md)
 
 ## <a name="leave-accrual-for-a-single-company-or-single-plan"></a>Lämna periodisering för ett enskilt företag eller en plan
 
@@ -126,15 +126,15 @@ Du kan skapa en regel för att pausa tjänstledighetsperiodiseringar för medarb
 
 Du kan göra fält obligatoriska genom att använda anpassningsfunktioner för personal. Den här funktionen kräver **sparade vyer**. Mer information om sparade vyer, se.
 
-- [Sparade vyer-allmän tillgänglighet](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) i Dynamics 365 2020 utgivningsvåg 2-plan
-- [Skapa formulär som fullt ut utnyttjar sparade vyer](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
+- [Sparade vyer-allmän tillgänglighet](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) i Dynamics 365 2020 utgivningsvåg 2-plan
+- [Skapa formulär som fullt ut utnyttjar sparade vyer](../fin-ops-core/dev-itpro/user-interface/understanding-saved-views.md)
 
 ### <a name="human-resources-application-in-teams"></a>Personalapp i Teams
 
 Medarbetare kan visa och begära ledighet från arbetet inom Microsoft Teams. De kan samverka med en bot för att skapa tjänstledighetsansökan. Mer information finns i:
 
-- [Erfarenhet av medarbetares ledighet och frånvaro i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365 2020 utgivningsvåg 1-planen
-- [Personal-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
+- [Erfarenhet av medarbetares ledighet och frånvaro i Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365 2020 utgivningsvåg 1-planen
+- [Personal-app i Teams](./hr-admin-teams-leave-app.md)
 
 ### <a name="dmf-entity-available-for-accrual-suspensions"></a>DMF-enhet tillgänglig för periodiserade avstängningar
 
@@ -172,7 +172,7 @@ Arbetsytan **funktionshantering** visas funktioner som har inaktiverats som för
 ## <a name="see-also"></a>Se även
 
 [Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
-[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
 

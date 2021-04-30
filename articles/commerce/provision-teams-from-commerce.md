@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 96382c072e03506294d72899072a358091bda8ab
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ba7c74942735b723d1015dc4da0068fbb631bc6b
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842750"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908914"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Provision Microsoft Teams från Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 I det här avsnittet beskrivs hur du etablerar Microsoft Teams med hjälp av organisationsdata från Dynamics 365 Commerce.
 
@@ -45,7 +44,7 @@ Innan du provision Microsoft Teams måste du utföra följande uppgifter:
 
 Följ de här stegen om du vill etablera Teams i Commerce-administration.
 
-1. Öppna **Retail och Commerce \> Kanalinställningar \> Microsoft Teams integrationskonfiguration**.
+1. Öppna **Butik och handel \> Kanalinställningar \> Microsoft Teams integrationskonfiguration**.
 1. Klicka på **Provision Teams** i åtgärdsfönstret. Ett batchjobb som kallas **Teams Provision** skapas.
 1. Gå till **Systemadministration \> Förfrågningar \> Batch-jobb** och hitta det senaste jobbet som har beskrivningen **Teams-etablering**. Vänta tills körningen är klar för det här jobbet.
 
@@ -74,7 +73,7 @@ Commerce organisationshierarki kan användas för Microsoft Teams för att publi
 
 Så här överför du en Commerce organisationshierarki till Teams.
     
-1. I Commerce-administration, gå till **Retail och Commerce \> Kanalinställning \> Microsoft Teams integrationskonfiguration**.
+1. I Commerce-administration, gå till **Butik och handel \> Kanalinställning \> Microsoft Teams integrationskonfiguration**.
 1. Välj **Hämta målhierarki** och välj sedan **Retail Stores by Region** om du vill hämta filen med kommaavgränsade värden (CSV) i organisationshierarkin.
 1. Installera modulen Microsoft TeamsPowerShell genom att följa stegen i [Installera Microsoft Teams PowerShell](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
 1. När du uppmanas i Teams PowerShell-fönster, logga in med administratörskontot för din Azure AD klientorganisation.
@@ -103,4 +102,4 @@ Kontrollera att organisationshierarkin har överförts till Microsoft Teams med 
 
 [Mappa butiker och team om det finns befintliga team i Microsoft Teams](map-stores-existing-teams.md)
 
-[Vanliga frågor och svar om Dynamics 365 Commerce och Microsoft Teams-integration](teams-integration-faq.md)
+[Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integration](teams-integration-faq.md)

@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fbf5ed3d0f83619746ae66ae7008940f4600060c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6aede26fb7d371806624742792ded5be23ad0e51
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824928"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908094"
 ---
 # <a name="credit-limits-for-customers"></a>Kreditgränser för kunder
 
 [!include [banner](../includes/banner.md)]
 
-Med en kreditgräns kan du ange maxgränsen för den kredit du beviljar dina kunder. Om en kreditgräns har angetts, kommer denna att kontrolleras automatiskt när en användare försöker uppdatera ett dokument. Om kreditgränsen överskrids visas ett meddelande för användaren. Den här varan innehåller en översikt över hur kreditgränser fungerar och besvarar följande frågor:
+Med en kreditgräns kan du ange maxgränsen för den kredit du beviljar dina kunder. Om en kreditgräns har angetts, kommer denna att kontrolleras automatiskt när en användare försöker uppdatera ett dokument. Om kreditgränsen överskrids visas ett meddelande för användaren. Den här varan innehåller en översikt över hur kreditgränser fungerar och besvarar följande frågeställningar:
 
 -   Vilka dokument och processer kan jag kontrollera kreditgränsen för?
 
@@ -90,7 +90,7 @@ Använd formuläret **Parametrar för kundreskontra** för att ange vilken infor
 
 **Var används information om kundens återstående kredit?**
 
-Information om kundens saldo och återstående kredit beräknas och sparas när du skapar en ögonblicksbild av åldersfördelningen, och visas i formuläret **Samlingar**. De belopp som visas i formuläret **Samlingar** kanske inte innehåller alla transaktionsaktiviteter tills en ny ögonblicksbild av åldersfördelningen skapas. Mer information finns i [Inkasso och kredit i kundreskontra](https://technet.microsoft.com/library/hh209221.aspx).
+Information om kundens saldo och återstående kredit beräknas och sparas när du skapar en ögonblicksbild av åldersfördelningen, och visas i formuläret **Samlingar**. De belopp som visas i formuläret **Samlingar** kanske inte innehåller alla transaktionsaktiviteter tills en ny ögonblicksbild av åldersfördelningen skapas. Mer information finns i [Inkasso och kredit i kundreskontra](/dynamicsax-2012/appuser-itpro/collections-and-credit-in-accounts-receivable).
 
 Information om kundens saldo och återstående kredit beräknas beroende på dokumenten som väljs när försäljningsorder, kundens fakturor och följesedlar ska uppdateras. Om beloppet för det dokument som du arbetar med orsakar att kreditgränsen överskrids, visas ett meddelande.
 

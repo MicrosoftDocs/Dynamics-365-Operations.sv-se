@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 3c4382336e53bc09c51dd845446af9a20a2ba8af
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c43b45c7919be4673224b0f83606c390d0bb6265
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794479"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891088"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Skapa avdelningar och inkludera dessa i avdelningshierarkin
 
@@ -53,7 +53,7 @@ Om du vill lägga till en avdelning till avdelning hierarki, följ dessa steg.
 6.  När du är klar klickar du på **Publicera** i hierarkidesignern. Du kan ange ett giltighetsdatum som anger när hierarkin ska publiceras. Om du exempelvis vill lägga till en ny avdelning i början av nästa kalenderår, ställ in datumet 1 januari på det nya kalenderåret. Ändringarna i hierarkin kommer att träda i kraft den dagen.
 
 ## <a name="steps-for-creating-a-department"></a>Steg för att skapa en avdelning
-Hänvisa till ämnet [Definiera nya avdelningar](../fin-and-ops/hr/tasks/define-new-departments.md) för stegvisa anvisningar om hur du skapar en ny avdelning. 
+Hänvisa till ämnet [Definiera nya avdelningar](./hr-personnel-define-departments.md) för stegvisa anvisningar om hur du skapar en ny avdelning. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

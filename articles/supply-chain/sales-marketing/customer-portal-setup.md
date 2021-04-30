@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: dcb952ccc68f5f19119f8b72285667e259b00429
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5c4cad305e3d130b3283ca3424c84f60e2d13307
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840735"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907825"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Installera, ställ in och uppdatera kundportalen
 
@@ -27,7 +27,7 @@ ms.locfileid: "5840735"
 
 Om du vill implementera kundportalen måste du ha följande licenser:
 
-- **Power Apps-portaler** – den här licensen krävs för att vara värd för kundportalen. Portaler är licensierade utifrån användning. Mer information finns i avsnittet om [Power Apps licenskrav för portaler](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals).
+- **Power Apps-portaler** – den här licensen krävs för att vara värd för kundportalen. Portaler är licensierade utifrån användning. Mer information finns i avsnittet om [Power Apps licenskrav för portaler](/power-platform/admin/powerapps-flow-licensing-faq#portals).
 - **Dubbelriktad skrivning** – du måste ha de licenser som krävs för att möjliggöra dubbelriktad skrivning för tabeller för Supply Chain Management. För mer information, se [systemkrav för dubbelriktad skrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## <a name="dependencies-on-dual-write-and-power-apps-portals"></a>Beroenden på dubbelriktad skrivning och Power Apps-portaler
@@ -40,7 +40,7 @@ Till skillnad från andra funktioner från Supply Chain Management, kundportalma
 
 ## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>Obligatorisk inställning för att aktivera kundportalen
 
-När du har installerat de nödvändiga licenserna kan du ställa in dubbelriktad skrivning enligt beskrivningen i [inledande synkroniseringsinställningarna för dubbelriktad skrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md).
+När du har installerat de nödvändiga licenserna kan du ställa in dubbelriktad skrivning enligt beskrivningen i [inledande synkroniseringsinställningarna för dubbelriktad skrivning](/dynamics365/supply-chain/sales-marketing/enable-entity-map).
 
 Se till att aktivera följande tabellmappningar i dubbelriktad skrivning:
 
@@ -74,14 +74,14 @@ Fler funktioner kan läggas till kundportalen senare. Alla ändringar som Micros
 
 Om du vill veta hur du kan ställa in och anpassa kundportalen bör du börja med att granska följande dokumentation för den underliggande tekniken:
 
-- [Power Apps-portaldokumentation](https://docs.microsoft.com/powerapps/maker/portals/overview)
+- [Power Apps-portaldokumentation](/powerapps/maker/portals/overview)
 - [Dokumentation för dubbelriktad skrivning](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
 Om du vill hantera portalerna effektivt måste du känna till Power Apps-portalerna och Microsoft Dataverse livscykeln. Mer information finns i följande resurser:
 
-- [Om portalens livscykel](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
-- [Uppgradera en portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
-- [Migrera portalkonfiguration](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [Om portalens livscykel](/powerapps/maker/portals/admin/portal-lifecycle)
+- [Uppgradera en portal](/powerapps/maker/portals/admin/upgrade-portal)
+- [Migrera portalkonfiguration](/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Hantering av lösningens livscykel: Dynamics 365 for Customer Engagement-appar](https://www.microsoft.com/download/details.aspx?id=57777)
 
 

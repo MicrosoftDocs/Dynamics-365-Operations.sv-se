@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 244d378316caf639c3520a1179dd82955d94220a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833867"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909485"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Hemtagningskostnad jämfört med Transporthantering
 
@@ -51,8 +51,8 @@ TMS och hemtagningskostnad delar inte referensdata för enheter som kostnadsinst
 
 Följande rapporter fungerar inte tillsammans med funktionen varor på väg som hemtagningskostnad tillhandahåller:
 
-- [Rapporten Summor för koncerninterna varor på väg](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
-- [Rapporten Summor för koncerninterna varor på väg](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Rapporten Summor för koncerninterna varor på väg](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Rapporten Summor för koncerninterna varor på väg](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
 
 Dessa rapporter förutsätter att varor sätts i transit så snart du utfärdar en följesedel och att de förs in i lagret från transit vid inleverans. Varor på väg bearbetas emellertid inte på det här sättet. Om du använder varorna på väg och koncerninterna funktioner tillsammans, blir därför resultatet för båda dessa rapporter fel.
 

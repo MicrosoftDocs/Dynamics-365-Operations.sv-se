@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 080f66e4e13df44a77f0499c6d69686f0e3d7021
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bf406a954f5bb8b49627b58a901d0721cdad407b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801201"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890038"
 ---
 # <a name="configure-dataverse-integration"></a>Konfigurera Dataverse-integrering
 
@@ -30,7 +30,7 @@ ms.locfileid: "5801201"
 Du kan aktivera eller inaktivera integration mellan Microsoft Dataverse och Dynamics 365 Human Resources. Du kan också visa synkroniseringsinformationen, rensa spårningsdata och synkronisera om ett register för att hjälpa till att felsöka dataproblem från de två miljöerna.
 
 > [!NOTE]
-> Mer information om Dataverse (tidigare Common Data Service) och terminologiuppdateringar finns i [Vad är Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Mer information om Dataverse (tidigare Common Data Service) och terminologiuppdateringar finns i [Vad är Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 När du stänger av integrationen kan användarna göra ändringar i personal eller Dataverse, men dessa ändringar synkroniseras inte mellan de två miljöerna.
 
@@ -123,9 +123,9 @@ Så här kör du en fullständig synkronisering på ett register mellan Personal
 
 [Dataverse-register](hr-developer-entities.md)<br>
 [Konfigurera virtuella Dataverse-register](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Vanliga frågor och svar om virtuella register i Personal](hr-admin-virtual-entity-faq.md)<br>
-[Vad är Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Terminologiuppdateringar](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+[Vanliga frågeställningar och svar om virtuella register i Personal](hr-admin-virtual-entity-faq.md)<br>
+[Vad är Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Terminologiuppdateringar](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

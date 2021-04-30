@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 770800e63de73c60e0e811734d4273ff2392620f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c55c36358b8acf93ab25a358d4d7cd6a4212c2b2
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829702"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909437"
 ---
 # <a name="master-planning-setup-wizard"></a>Installationsguide för huvudplanering
 
@@ -36,7 +36,7 @@ Det här avsnittet innehåller en guide för **Installationsguide för huvudplan
 
 ## <a name="specific-requirements-of-your-company"></a>Specifika krav för ditt företag
 
-Den första sidan i guiden frågar om de specifika kraven för ditt företag. Dina svar på dessa frågor behöver inte vara exakta, men du bör kunna ge ungefärligt antal artiklar och planerade order som det kommer att finnas för den juridiska personen. Dina svar används för att konfigurera parametrar som gäller för din juridiska person, inte bara för den huvudplan som du har valt. I följande avsnitt beskrivs de parametrar som beräknas och formlerna som används.
+Den första sidan i guiden frågar om de specifika kraven för ditt företag. Dina svar på dessa frågeställningar behöver inte vara exakta, men du bör kunna ge ungefärligt antal artiklar och planerade order som det kommer att finnas för den juridiska personen. Dina svar används för att konfigurera parametrar som gäller för din juridiska person, inte bara för den huvudplan som du har valt. I följande avsnitt beskrivs de parametrar som beräknas och formlerna som används.
 
 ### <a name="number-of-threads"></a>Antal trådar
 
@@ -45,13 +45,13 @@ Den första sidan i guiden frågar om de specifika kraven för ditt företag. Di
 
 Om antalet trådar som beräknas överskrider 75 procent av det tillgängliga antalet trådar, är det begränsat till 75 procent av antalet trådar som är tillgängliga för varje kund. (Antalet tillgängliga trådar kommer att bestämmas för varje kund.)
 
-För mer information, se [Antal trådar](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
+För mer information, se [Antal trådar](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
 
 ### <a name="bundle-size"></a>Buntstorlek
 
 Buntstorleken kommer att ställas in på **1**. Det här värdet är ofta det bästa värdet, eftersom det bidrar till att förbättra prestanda för huvudplaneringen.
 
-Mer information finns i [antal aktiviteter i hjälpen för uppgiftsbunt](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
+Mer information finns i [antal aktiviteter i hjälpen för uppgiftsbunt](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
 
 ### <a name="firming-bundle-size"></a>Bekräftelsebuntstorlek
 
@@ -64,7 +64,7 @@ Buntberäkning = (Antal planerade order × (Bekräfta tidsgräns ÷ Disponerings
 
 Cachestorleken kommer att ställas in på **Maximum**. Det här värdet är ofta det bästa värdet, eftersom det bidrar till att förbättra prestanda för huvudplaneringen.
 
-Mer information finns i [Allokera tid till jobb i en jobbunt](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
+Mer information finns i [Allokera tid till jobb i en jobbunt](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
 
 ### <a name="manufacturing-setup"></a>Inställning av tillverkning
 
@@ -72,7 +72,7 @@ Om du tillverkar artiklar kommer en sida för **Inställning av tillverkning** a
 
 ## <a name="scope-of-the-current-plan"></a>Omfattning av den aktuella planen
 
-På sidan **omfattningen av den aktuella planen** i guiden svarar du på frågor som är relaterade till hur långt i framtiden olika krav kommer att övervägas och beräknas i huvudplaneringen. Varje fråga frågar om du vill använda en funktion och hur du vill konfigurera den.
+På sidan **omfattningen av den aktuella planen** i guiden svarar du på frågeställningar som är relaterade till hur långt i framtiden olika krav kommer att övervägas och beräknas i huvudplaneringen. Varje fråga frågar om du vill använda en funktion och hur du vill konfigurera den.
 
 För till exempel funktionen prognosplan frågar guiden "vill du använda en prognosplan i huvudplaneringen så att planerade order föreslås för att uppfylla den prognostiserade efterfrågan?"
 
@@ -82,28 +82,28 @@ Följande alternativ är tillgängliga:
 - **Ja, enligt definitionen i den här huvudplanen** – ett fält blir tillgängligt, där du kan ange antalet dagar som huvudplaneringen kommer att föreslå planerade order för att uppfylla den prognostiserade efterfrågan. Guiden anger alternativet **Prognosplan (tidsgräns)** till **Ja** och anger antal dagar som anges i **Prognosplan** på fliken **Tidsgränser** på sidan **Huvudplaner**. Den här inställningen åsidosätter de värden som anges i disponeringsgrupperna.
 - **Ja, enligt definitionen i disponeringen** – guiden kommer att ange alternativet **prognosplan (tidsgräns)** till **nej**. Tidsgränser som anges i disponeringsgruppen kommer att användas för att ange hur länge du planerar för prognosen.
 
-De återstående frågorna på den här sidan och deras svar följer samma schema:
+De återstående frågeställningarna på den här sidan och deras svar följer samma schema:
 
 - **Nej** – alternativet **prognosplan (tidsgräns)** kommer att anges till **Ja** och antalet dagar anges till **0** (noll).
 - **Ja, enligt definitionen i denna huvudplan** – alternativet **prognosplan (tidsgräns)** anges till **ja**. Antalet dagar som du anger kommer att användas och åsidosätter de värden som anges i disponeringsgrupperna.
 - **Ja, enligt definitionen i disponeringsgruppen** – alternativet **prognosplan (tidsgräns)** anges till **nej**.
 
-För mer information, se [finplanering](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+För mer information, se [finplanering](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="scheduling-options"></a>Planeringsalternativ
 
 Sidan **Planeringsalternativ** visas bara om du svarade **ja** på "tillverkar du något av de planerade artiklarna?" fråga på den första sidan i guiden.
 
-Ditt svar på den första frågan på den här sidan ("behöver du tidsplanera åtgärder uppdelade i enskilda jobb?") bestämmer tidsplaneringsmetoden på fliken **Allmänt** på sidan **huvudplaner**.
+Ditt svar på den första frågeställningen på den här sidan ("behöver du tidsplanera åtgärder uppdelade i enskilda jobb?") bestämmer tidsplaneringsmetoden på fliken **Allmänt** på sidan **huvudplaner**.
 
 - **Ja** – finplanering kommer att användas.
 - **Nej** – grovplaneringen kommer att användas.
 
-För mer information, se [grovplanering](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) och [finplanering](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+För mer information, se [grovplanering](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) och [finplanering](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="updates-of-demand-and-supply"></a>Uppdateringar av efterfrågan och tillgång
 
-Frågorna på sidan **uppdateringar av efterfrågan och tillgång** är relaterade till bekräftelse, åtgärdsmeddelanden och fördröjningar.
+Frågeställningarna på sidan **uppdateringar av efterfrågan och tillgång** är relaterade till bekräftelse, åtgärdsmeddelanden och fördröjningar.
 
 Inställningen av huvudplanering kommer att uppdateras baserat på dina svar, enligt samma schema som beskrivs i föregående avsnitt:
 
@@ -111,7 +111,7 @@ Inställningen av huvudplanering kommer att uppdateras baserat på dina svar, en
 - **Ja, enligt definitionen i denna huvudplan** – alternativet **tidsgräns** anges till **ja**. Antalet dagar som du anger kommer att användas och åsidosätter de värden som anges i disponeringsgrupperna.
 - **Ja, enligt definitionen i disponeringsgruppen** – alternativet **tidsgräns** anges till **nej**.
 
-För beräknade **fördröjningar kommer dina svar på frågorna i guiden att uppdatera motsvarande parametrar på fliken beräknade förseningar** på sidan **huvudplaner**.
+För beräknade **fördröjningar kommer dina svar på frågeställningarna i guiden att uppdatera motsvarande parametrar på fliken beräknade förseningar** på sidan **huvudplaner**.
 
 ## <a name="summary-of-your-changes"></a>Sammanfattning av dina ändringar
 
@@ -125,9 +125,9 @@ Slutligen, när du väljer **Slutför**, tillämpas den nya konfigurationen. Om 
 
 I det här avsnittet beskrivs hur du ställer in två fiktiva företag för att visa hur installationen kan ändras efter varje företags behov.
 
-### <a name="example-1-contoso-manufacturer"></a>Exempel 1: Contoso tillverkare
+### <a name="example-1-contoso-manufacturer"></a>Exempel 1: Contoso-tillverkare
 
-Contoso tillverkare är ett tillverkande företag som producerar högtalare. Det köper de olika råmaterial och komponenter som används för slutliga högtalare från olika leverantörer. Här är några av de egenskaper som det är leverans och tillverkning:
+Contoso Manufacturing är ett tillverkningsföretag som tillverkar högtalare. Det köper de olika råmaterial och komponenter som används för slutliga högtalare från olika leverantörer. Här är några av de egenskaper som det är leverans och tillverkning:
 
 - De slutgiltiga artiklar som företaget tillverkar har en strukturlistestruktur.
 - Alla slutgiltiga artiklar och komponenter planeras av huvudplaneringen. Manuell planering är inte klar.
@@ -135,14 +135,14 @@ Contoso tillverkare är ett tillverkande företag som producerar högtalare. Det
 - Tillverkningsanläggningen producerar slutgiltiga produkter. Den har ett definierat antal fräs- och borrmaskiner som används för att bearbeta komponenterna. De olika komponenterna måste bearbetas av dessa maskiner.
 - Det finns många leverantörer. Genomsnittlig ledtid för artiklar är en vecka. En grupp av artiklar från samma leverantör kommer att ha en ledtid på sju veckor.
 
-I guiden anges följande värden för Contoso tillverkare:
+I guiden anges följande värden för Contoso Manufacturing:
 
 - **Disponering:**
 
     - **Fråga:** "vill du ange antalet dagar i planeringshorisonten?"
     - **Svar:** "Ja, enligt definitionen i disponeringsgrupperna."
 
-    Eftersom ledtiden för artiklar är mycket olika, behöver Contoso inte planera alla artiklar för samma period i framtiden. Disponeringsgrupper för artiklarna skapas. Artiklar som har en liknande ledtid tilldelas samma disponeringsgrupp. Planeringshorisonten för varje disponeringsgrupp (som är tidsgränsen för disponering) är ungefär ledtiden plus en marginal på en vecka. Huvudplaneringen ser sedan till att artiklarna planeras i förväg, baserat på deras produktionstid.
+    Eftersom ledtiden för artiklar är mycket olika behöver Contoso inte planera alla artiklar för samma period i framtiden. Disponeringsgrupper för artiklarna skapas. Artiklar som har en liknande ledtid tilldelas samma disponeringsgrupp. Planeringshorisonten för varje disponeringsgrupp (som är tidsgränsen för disponering) är ungefär ledtiden plus en marginal på en vecka. Huvudplaneringen ser sedan till att artiklarna planeras i förväg, baserat på deras produktionstid.
 
     Därför kommer två disponeringsgrupper att skapas för det här exemplet. En disponeringsgrupp kommer att ha en disponeringstidsgräns på två veckor och den andra kommer att ha en disponeringstidsgräns på åtta veckor.
 
@@ -153,7 +153,7 @@ I guiden anges följande värden för Contoso tillverkare:
     - **Fråga:** "behöver du schemalägga operationer uppdelade i enskilda jobb?"
     - **Svar:** "Ja".
 
-    Contoso tillverkning måste planera och schemalägga enskilda jobb som ska utföras på verkstadsgolvet. Därför kommer det att använda finplanering.
+    Contoso Manufacturing måste planera och schemalägga de enskilda jobb som ska utföras på verkstadsgolvet. Därför kommer det att använda finplanering.
 
 - **Kapacitet:**
 
@@ -176,36 +176,36 @@ I guiden anges följande värden för Contoso tillverkare:
 
     Alla artiklar som används för produktionen måste planeras. Eftersom artiklarna har mycket olika ledtider, kommer huvudplaneringen att ha bättre prestanda när disponeringsgrupperna används. Återigen kan en marginal på en vecka anges, och explosion kan göras för samma tid som disponeringen.
 
-### <a name="example-2-contoso-retailer"></a>Exempel 2: Contoso återförsäljare
+### <a name="example-2-contoso-retailer"></a>Exempel 2: Contoso Retailer
 
-Contoso återförsäljare är ett distributionsföretag inom modebranschen. Den använder huvudplanering för att beräkna när inköpsorder ska placeras, baserat på den prognostiserade försäljningen. Här är några av dess egenskaper:
+Contoso Retailer är ett distributionsföretag inom modebranschen. Den använder huvudplanering för att beräkna när inköpsorder ska placeras, baserat på den prognostiserade försäljningen. Här är några av dess egenskaper:
 
-- Contoso återförsäljare använder en efterfrågeprognos för att förutsäga försäljning. Inköpsorder kommer att planeras enligt prognosen.
+- Contoso Retailer använder en efterfrågeprognos för att förutsäga sin försäljning. Inköpsorder kommer att planeras enligt prognosen.
 - Butiker används rekvisitioner för påfyllnad.
 - Produktionstiden från huvudlagerställe till varje butik är ungefär två veckor för alla artiklar.
 
-I guiden anges följande värden för Contoso återförsäljare:
+I guiden anges följande värden för Contoso Retailer:
 
 - **Efterfrågeprognos:**
 
     - **Fråga:** "vill du använda en prognosplan i huvudplaneringen så att planerade order kommer att föreslås för att uppfylla prognostiserade efterfrågan?"
     - **Svar:** "Ja, enligt definitionen i den här huvudplanen."
 
-    Contoso har inkluderat en efterfrågeprognos för att förutsäga dess försäljning. Därför måste huvudplaneringen rekommendera planerade order för att uppfylla prognosen.
+    Contoso har inkluderat en efterfrågeprognos för att förutsäga sin försäljning. Därför måste huvudplaneringen rekommendera planerade order för att uppfylla prognosen.
 
 - **Bekräftelse:**
 
     - **Fråga:** "vill du att huvudplaneringen automatiskt ska bekräfta planerade order i orderdokument, till exempel produktions- eller inköpsorder?"
     - **Svar:** "Ja, enligt definitionen i den här huvudplanen." **1 dag** anges.
 
-    Eftersom Contoso återförsäljare skapar inköpsorder direkt från de planerade inköpsorder, är det användbart om de planerade inköpsorder bekräftas automatiskt. Eftersom företaget kör huvudplanering varje dag kommer en bekräftelsetidsgräns på en dag automatiskt bekräfta alla beställningar som krävs för nästa dag.
+    Eftersom Contoso Retailer skapar inköpsorder direkt från planerade inköpsorder är det praktiskt om planerade inköpsorder bekräftas automatiskt. Eftersom företaget kör huvudplanering varje dag kommer en bekräftelsetidsgräns på en dag automatiskt bekräfta alla beställningar som krävs för nästa dag.
 
 - **Godkända rekvisitioner:**
 
     - **Fråga:** "vill du inkludera efterfrågan från godkända rekvisitioner för att fylla på butiker?"
     - **Svar:** "Ja, enligt definitionen i den här huvudplanen." **1 dag** anges.
 
-    Contoso använder godkända rekvisitioner från sina butiker för att skapa planerade inköpsorder för att fylla på dessa butiker. Eftersom huvudplaneringen körs varje dag inkluderas rekvisitionerna från den sista dagen i planeringen.
+    Contoso använder godkända rekvisitioner från sina butiker för att skapa planerade inköpsorder i syfte att fylla på lagren i dessa butiker. Eftersom huvudplaneringen körs varje dag inkluderas rekvisitionerna från den sista dagen i planeringen.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,17 +16,16 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-02-16
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: f8d9408090846799c1bb421c4b6e5e248d37fa07
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 791b244c867ea4263f08250abf220a1b75784cad
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797513"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907873"
 ---
 # <a name="add-a-qr-code-or-bar-code-to-transactional-and-receipt-emails"></a>Lägga till en QR-kod eller streckkod i transaktions- och kvittomeddelanden
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Det här avsnittet förklarar hur man infogar QR-koder och streckkoder som representerar order-ID i transaktions- och kvittomeddelanden i Microsoft Dynamics 365 Commerce.
 
@@ -51,7 +50,7 @@ Om du vill infoga en QR-kod eller streckkod i ett transaktionsmeddelande via e-p
 
     - **param1** och **param2** representerar ytterligare valfria parametrar.
 
-1. Gå till **Retail och Commerce \> Administrationsinställning \> Parametrar \> Organisationens e-postmallar** och ladda upp den uppdaterade HTML-filen till lämplig transaktionsmall.
+1. Gå till **Butik och handel \> Administrationsinställning \> Parametrar \> Organisationens e-postmallar** och ladda upp den uppdaterade HTML-filen till lämplig transaktionsmall.
 
 > [!NOTE]
 > Parametrarna kan skilja sig mellan leverantörer av QR-kod och streckkodstjänster. Kontakta därför din serviceleverantör för att bekräfta de parametrar som du måste tilldela värden till.
@@ -75,7 +74,7 @@ Om du vill infoga en QR-kod eller streckkod i ett kvittomeddelande som kan skick
 
     - **param1** och **param2** representerar ytterligare valfria parametrar.
 
-1. Gå till **Retail och Commerce \> Administrationsinställning \> Parametrar \> Organisationens e-postmallar** och ladda upp den uppdaterade HTML till e-postmallen som har e-post-ID **emailrecpt**.
+1. Gå till **Butik och handel \> Administrationsinställning \> Parametrar \> Organisationens e-postmallar** och ladda upp den uppdaterade HTML till e-postmallen som har e-post-ID **emailrecpt**.
 
 > [!NOTE]
 > Parametrarna kan skilja sig mellan leverantörer av QR-kod och streckkodstjänster. Kontakta därför din serviceleverantör för att bekräfta de parametrar som du måste tilldela värden till.

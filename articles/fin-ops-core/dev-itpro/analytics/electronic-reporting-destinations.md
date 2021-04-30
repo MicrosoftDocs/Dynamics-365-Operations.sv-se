@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 03dd6f81185e8944019eaadbb77690e4cd9ba9a1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751326"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893614"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer för elektronisk rapportering (ER)
 
@@ -57,7 +57,7 @@ Standardbeteende för en ER-formatkonfiguration beror på vilken körningstyp du
 
 I dialogrutan **Intrastat-rapport** på snabbfliken **Kör i bakgrunden**, om du ställer in alternativet **Batchbearbetning** som **Nej**,körs ett ER-format omedelbart i interaktivt läge. När körningen har slutförts blir ett genererat utgående dokument tillgängligt för hämtning.
 
-Om du ställer in alternativet **Batchbearbetning** som **Ja** körs ett ER-format i [batchläge](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview). Lämpligt batchjobb skapas enligt de parametrar som du anger på fliken **Kör i bakgrunden** i dialogrutan **ER-parametrar**.
+Om du ställer in alternativet **Batchbearbetning** som **Ja** körs ett ER-format i [batchläge](../sysadmin/batch-processing-overview.md). Lämpligt batchjobb skapas enligt de parametrar som du anger på fliken **Kör i bakgrunden** i dialogrutan **ER-parametrar**.
 
 > [!NOTE]
 > Jobbeskrivningen informerar dig om körning av en ER-formatmappning. Den innehåller även namn på den ER-komponent som körs.
@@ -70,7 +70,7 @@ Du kan hitta information om jobbet på flera ställen:
 - Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Elektroniska rapporteringsjobb** för att kontrollera status för det schemalagda jobbet och körningsresultatet för det slutförda jobbet. När jobbet har körts klart väljer du **Visa filer** på sidan **Elektroniska rapporteringsjobb** för att hämta ett genererat utgående dokument.
 
     > [!NOTE]
-    > Dokumentet lagras som en bilaga till den aktuella jobbposten och styrs av ramverket för [dokumenthantering](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management). [Dokumenttypen](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) som används för att lagra ER-artefakter av den här typen konfigureras i [ER-parametrar](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+    > Dokumentet lagras som en bilaga till den aktuella jobbposten och styrs av ramverket för [dokumenthantering](../../fin-ops/organization-administration/configure-document-management.md). [Dokumenttypen](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) som används för att lagra ER-artefakter av den här typen konfigureras i [ER-parametrar](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 - På sidan **Elektroniska rapporteringsjobb** väljer du **Visa filer** för att visa en lista över eventuella fel och varningar som genererats under jobbkörningen.
 
@@ -214,7 +214,7 @@ Två typer av behörigheter och uppgifter används för ER-mål. En typ styr en 
 > [!NOTE]
 > Två privilegier används i föregående programbehörigheter. De här privilegierna har samma namn som motsvarande uppgifter: **ERFormatmålConfigure** och **ERFormatmålRuntimeConfigure**.
 
-## <a name="frequently-asked-questions"></a>Vanliga frågor
+## <a name="frequently-asked-questions"></a>Vanliga frågeställningar
 
 ### <a name="i-have-imported-electronic-configurations-and-i-see-them-on-the-electronic-reporting-configurations-page-but-why-dont-i-see-them-on-the-electronic-reporting-destinations-page"></a>Jag har importerat elektroniska konfigurationer och jag ser dem på sidan Konfigurationer för elektronisk rapportering. Varför ser jag dem då inte på sidan mål för elektronisk rapportering?
 

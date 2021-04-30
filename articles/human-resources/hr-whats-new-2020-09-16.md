@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bf0e2d90b07cb488429311d04dfbc4d1d3520842
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b07bfb27bbe5e546dac9d72666b3225cc202670
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800103"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890709"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (16 september 2020)
 
@@ -33,7 +33,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Human Res
 
 ## <a name="included-in-this-release"></a>Ingår i den här versionen
 
--  [Sparade vyer – allmän tillgänglighet](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- För mer information, se [Sparade vyer](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/saved-views). 
+-  [Sparade vyer – allmän tillgänglighet](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- För mer information, se [Sparade vyer](../fin-ops-core/fin-ops/get-started/saved-views.md). 
 
 - Formuläret **Positionsåtgärder** har uppdaterade dimensionsrutnät och ny dialog (469495).
 
@@ -76,21 +76,21 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Human Res
 
 Medarbetare kan visa och begära ledighet från arbetet inom Microsoft Teams. De kan samverka med en bot för att skapa tjänstledighetsansökan. Mer information finns i:
 
-- [Erfarenhet av medarbetares ledighet och frånvaro i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365 2020 utgivningsvåg 1-planen
-- [Personal i Teams](https://go.microsoft.com/fwlink/?linkid=2127841) i Personal-dokumentation
+- [Erfarenhet av medarbetares ledighet och frånvaro i Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365 2020 utgivningsvåg 1-planen
+- [Personal i Teams](./hr-admin-teams-leave-app.md) i Personal-dokumentation
 
 ### <a name="human-resources-app-in-teams-preview-features"></a>Förhandsfunktioner för Personal-app i Teams
  
 -  **Meddelanden**: skicka och granskare av tidsförfrågningar kommer att meddelas i modulen Personal-app i Teams. Godkännare kan godkänna eller neka förfrågningar om ledighet. Avsändare kommer att meddelas om begäran har godkänts eller avslagits. Mer information finns i:
-   - [Erfarenhet av medarbetares ledighet och frånvaro i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365 2020 utgivningsvåg 2-planen
-   - [Aktivera meddelanden för Personal-appar i Teams](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#enable-notifications-for-the-human-resources-app-in-teams) i Personal-dokumentation
-   - [Aktivera eller inaktivera Teams-meddelanden för enskilda användare](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#turn-teams-notifications-on-or-off-for-individual-users) i Personal
-   - [Team meddelanden](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#teams-notifications) i Personal-dokumentation
-   - [Visa gruppens tjänstledighetskalender](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) i Personal dokumentation
+   - [Erfarenhet av medarbetares ledighet och frånvaro i Microsoft Teams](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365 2020 utgivningsvåg 2-planen
+   - [Aktivera meddelanden för Personal-appar i Teams](./hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams) i Personal-dokumentation
+   - [Aktivera eller inaktivera Teams-meddelanden för enskilda användare](./hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users) i Personal
+   - [Team meddelanden](./hr-teams-leave-app.md#respond-to-teams-notifications) i Personal-dokumentation
+   - [Visa gruppens tjänstledighetskalender](./hr-teams-leave-app.md#view-your-teams-leave-calendar) i Personal dokumentation
  
 - **Ledighetskalender för chef**: chefer kommer att kunna se godkänd och väntande ledighet för sina underställda i en kalendervy. Den här vyn gör det enklare att förstå när gruppmedlemmarna är borta från arbetet. Mer information finns i:
-   - [Erfarenhet av medarbetares ledighet och frånvaro i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365 2020 utgivningsvåg 2-planen
-   - [Visa gruppens tjänstledighetskalender](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) i Personal dokumentation
+   - [Erfarenhet av medarbetares ledighet och frånvaro i Microsoft Teams](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365 2020 utgivningsvåg 2-planen
+   - [Visa gruppens tjänstledighetskalender](./hr-teams-leave-app.md#view-your-teams-leave-calendar) i Personal dokumentation
 
 ### <a name="configuration-option-to-position-work-items-assigned-to-me-list-477004"></a>Konfigurationsalternativ för placering av lista över arbetsartiklar tilldelade till mig (477004)
 
@@ -98,7 +98,7 @@ Det finns nu ett nytt alternativ för att placera **Arbetsuppgifter som tilldela
 
 Den här funktionen främjar också de arbetsflödesalternativ som visas i formuläret personalåtgärder. Arbetsflödesalternativen visas även ovanför åtgärdens snabbflik för snabbåtkomst. Mer information finns i: 
 
-- [Arbetsflöde för organisation och personalhantering](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) i Dynamics 365 2020 utgivningsvåg 2-planen
+- [Arbetsflöde för organisation och personalhantering](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) i Dynamics 365 2020 utgivningsvåg 2-planen
 
 ![Arbetsuppgifter som tilldelats till mig](./media/hr-workflow-work-items-assigned-to-me.png)
 
@@ -106,7 +106,7 @@ Den här funktionen främjar också de arbetsflödesalternativ som visas i formu
 
 ### <a name="leave-and-absence-calendar"></a>Kalender för ledighet och frånvaro
 
-Den här versionen innehåller ytterligare kalenderalternativ för tjänstledighets- och frånvarokalendrar. Mer information finns i [Visa team- och företagskalendrar](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-calendar).
+Den här versionen innehåller ytterligare kalenderalternativ för tjänstledighets- och frånvarokalendrar. Mer information finns i [Visa team- och företagskalendrar](./hr-employee-self-service-calendar.md).
 
 ## <a name="coming-soon"></a>Kommer snart
 
@@ -121,7 +121,7 @@ Orsakskoder för förmånshantering kommer snart att kombineras med befintliga o
 ## <a name="see-also"></a>Se även
 
 [Nyheter och ändringar i Personal](hr-admin-whats-new.md)</br>
-[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Uppdatera process](hr-admin-setup-update-process.md)</br>
 [Hantera funktioner](hr-admin-manage-features.md)
 

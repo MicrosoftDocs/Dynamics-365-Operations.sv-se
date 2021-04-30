@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96e112432ba79d2657a8d440e8e040fca45392a2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d94426580d65dc1639de4b2dd1b3f283724a1a9e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825528"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909214"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Startsidan för Anskaffning och källa
 
@@ -83,12 +83,12 @@ Anskaffning och källa omfattar alla steg från att identifiera ett behov av pro
 ## <a name="prices-and-discounts"></a>Priser och rabatter
 -   [Inköpsavtal](purchase-agreements.md)
 -   [Skapa ett nytt inköpsavtal](tasks/create-purchase-agreement.md)
--   [Leverantörens rabatter](https://docs.microsoft.com/dynamics/s-e/) (vitbok)
+-   [Leverantörens rabatter](/dynamics/s-e/) (vitbok)
 
 ## <a name="product-receipt-and-invoicing"></a>Produkt inleverans och fakturering
 -   [Produktinleverans mot inköpsorder](product-receipt-against-purchase-orders.md)
--   [Översikt över leverantörsfakturor](../../financials/accounts-payable/vendor-invoices-overview.md)
--   [Bokföringsprofiler för leverantörer](../../financials/accounts-payable/vendor-posting-profiles.md)
+-   [Översikt över leverantörsfakturor](../../finance/accounts-payable/vendor-invoices-overview.md)
+-   [Bokföringsprofiler för leverantörer](../../finance/accounts-payable/vendor-posting-profiles.md)
 
 ## <a name="procurement-and-sourcing-workflows"></a>Anskaffnings- och källarbetsflöden
 -   [Upphandling och inköp – översikt](procurement-sourcing-overview.md)

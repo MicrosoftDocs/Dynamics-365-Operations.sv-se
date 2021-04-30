@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7783c22659c5a2b070648c82a8b72e49e17b8e34
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 46e8fba0c1269aa8b81e0df8d415fe11b2307924
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823870"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897318"
 ---
 # <a name="financial-dimensions-and-posting"></a>Ekonomiska dimensioner och bokföring 
 
@@ -50,7 +50,7 @@ Standarddimensioner kommer från olika platser, t.ex. huvudposter (exempelvis ku
 
 ## <a name="order-in-which-default-dimensions-are-applied-during-posting"></a>Ordning som standarddimensionerna använder vid bokföring
 
-Användare har ofta frågor om ordningen som olika komponenter körs i. Det är viktigt att du förstår ordningen som standarddimensioner tillämpas i, eftersom detta påverkar den metod som du använder för att ställa in.
+Användare har ofta frågeställningar om ordningen som olika komponenter körs i. Det är viktigt att du förstår ordningen som standarddimensioner tillämpas i, eftersom detta påverkar den metod som du använder för att ställa in.
 
 > [!NOTE]
 > Denna information gäller bara för användning av standarddimensioner i programmet. Om du importerar data med hjälp av Microsoft Excel eller Data Management Framework skiljer sig beteendet.
@@ -83,17 +83,17 @@ Standarddimensionen på journalrubrik medför att avdelning 023 använd som stan
 
 När raden bokförs används fast dimension och raden bokförs till avdelning 022. Följande illustration visar bokförda verifikationer där fast dimension används för försäljningskontot.
 
-[![Verifikationstransaktioner](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Verifikationstransaktioner med fast dimension tillämpas](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Exempel 2
 
 Det här exemplet använder samma inställningar som i det första exemplet. Men vi lägger ytterligare en andra komponent och använder avdelningsdimensionen som balanserande dimension. I följande illustration anges **avdelning** som den balanserande ekonomiska dimensionen för USMF-redovisningen.
 
-[![Huvudbok](./media/ledger.png)](./media/ledger.png)
+[![Illustration som visar Avdelning som den balanserade ekonomiska dimensionen](./media/ledger.png)](./media/ledger.png)
 
 Om samma konfiguration av journalrubrik används och samma transkation bokförs används den fasta dimension först. Sedan används mottransaktionen för att garantera att varje avdelning har en balanserad transaktion. Följande illustration visar verifikationstransaktioner med mottransaktionen efter att den fasta dimensionen används.
 
-[![Verifikationstransaktioner](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Verifikationstransaktioner efter det att balanseringsposten har använts](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Exempel 3
 
@@ -119,11 +119,11 @@ Några av följande resurser hänvisar till en tidigare version av vår programv
 
 [Planera kontoplanen](plan-chart-of-accounts.md) 
 
-[Planera din kontoplan i bloggen AX 2012](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – den här länken leder till del 1 av 7.
+[Planera din kontoplan i bloggen AX 2012](/archive/blogs/axsa/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7) – den här länken leder till del 1 av 7.
 
-[Dimension som används som standard i redovisningsfördelningar](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
+[Dimension som används som standard i redovisningsfördelningar](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-in-accounting-distributions-part-1-introduction)
 
-[Standardvärden i dimensionsramverket](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+[Standardvärden i dimensionsramverket](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

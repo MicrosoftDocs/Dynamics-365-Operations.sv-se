@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3edd176788b24a5f5246e9b7bcb3c6fbcdca2254
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5a711c1057b87bd792755ef91a84d1c28879c590
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842746"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908505"
 ---
 # <a name="map-stores-and-teams-if-there-are-pre-existing-teams-in-microsoft-teams"></a>Mappa butiker och team om det finns befintliga team i Microsoft Teams
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Detta ämne beskriver hur man kan kartlägga butiker och motsvarande team i Dynamics 365 Commerce-administration om din organisation redan har skapat team i Microsoft Teams före Commerce-integration.
 
@@ -47,7 +46,7 @@ Mappa butiker och motsvarande team i Commerce-administration, följer dessa steg
 1. Under **Bearbetningsstatus för entitet**, välj **Hämta fil**.
 1. I den exporterade CSV-filen, ange värden för **SOURCETYPE**, **SOURCEID** och **TEAMID** enligt följande:
     - För **SOURCETYPE**, ange "RetailStore". 
-    - För **SOURCEID**, ange butiksnumret (till exempel "000135" för San Francisco-butiken). Du hittar butiksnummer på **Retail och Commerce \> Kanaler \> Butiker**.
+    - För **SOURCEID**, ange butiksnumret (till exempel "000135" för San Francisco-butiken). Du hittar butiksnummer på **Butik och handel \> Kanaler \> Butiker**.
     - För **TEAMID** anger du motsvarande team-ID från Microsoft Teams (till exempel "5f8bc92b-6aa8-451e-85d1-3949c01ddc6c"). Du hittar ID-information på [admin.teams.microsoft.com](https://admin.teams.microsoft.com).
 1. Spara CSV-filen på den lokala datorn.
 1. Gå till **Systemadministration \> Arbetsyta \> Datahantering** och välj sedan **Importera**.
@@ -77,4 +76,4 @@ Följande exempelbild visar **Exportera Teams-mappning** gruppen i Commerce med 
 
 [Hantera användarroller i Microsoft Teams](manage-user-roles-teams.md)
 
-[Vanliga frågor och svar om Dynamics 365 Commerce och Microsoft Teams-integration](teams-integration-faq.md)
+[Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integration](teams-integration-faq.md)

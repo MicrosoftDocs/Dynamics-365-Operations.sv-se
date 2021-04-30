@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 725bce4b3aa7feb61bd7d7ded1be07f803424e57
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7c6e4dcbd854cfadbc34f0040dcffd277d32a8d9
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745207"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909044"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Självstudie för att ställa in och installera Regression Suite Automation Tool
 
@@ -54,7 +54,7 @@ Det här avsnittet är en vägledning som hjälper dig att få installationsprog
 
 ### <a name="user-eligibility"></a>Användarberättigande
 
-Se till att användaren har skapats i Azure DevOps och har en prenumerationsnivå som ger åtkomst till Azure testplaner. En Azure DevOps Test Plans-licens krävs endast om användaren ska skapa och hantera testfall (dvs. inte alla RSAT-användare behöver denna licens). Mer information om licens kraven finns i [licenskrav](https://docs.microsoft.com/azure/devops/test/manual-test-permissions#license-requirements).
+Se till att användaren har skapats i Azure DevOps och har en prenumerationsnivå som ger åtkomst till Azure testplaner. En Azure DevOps Test Plans-licens krävs endast om användaren ska skapa och hantera testfall (dvs. inte alla RSAT-användare behöver denna licens). Mer information om licens kraven finns i [licenskrav](/azure/devops/test/manual-test-permissions#license-requirements).
 
 ### <a name="create-a-new-azure-devops-project"></a>Skapa ett nytt Azure DevOps-projekt
 
@@ -69,7 +69,7 @@ I RSAT använder Azure DevOps för testfall och testpaket hantering, rapporterin
 
 ![Felmeddelande med en lista över metodtips](./media/setup_rsa_tool_02.png)
 
-I den här självstudien rekommenderar vi annars att du skapar ett nytt Azure DevOps-projekt. Mer information finns i [frågor vid synkronisering till BPM med hjälp av en anpassad Azure DevOps (VSTS) processmall](https://blogs.msdn.microsoft.com/lcs/2018/11/28/issues-when-syncing-to-bpm-using-a-custom-azure-devops-vsts-process-template/).
+I den här självstudien rekommenderar vi annars att du skapar ett nytt Azure DevOps-projekt. Mer information finns i [frågeställningar vid synkronisering till BPM med hjälp av en anpassad Azure DevOps (VSTS) processmall](https://blogs.msdn.microsoft.com/lcs/2018/11/28/issues-when-syncing-to-bpm-using-a-custom-azure-devops-vsts-process-template/).
 
 1. Öppna Azure DevOps-URL (`https://dev.azure.com/<Azure DevOps Name>`).
 2. Klicka på knappen **Skapa projekt** längst upp till höger på Azure DevOps-sidan.

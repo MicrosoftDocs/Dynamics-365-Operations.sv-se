@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6be472336ce8ea58973e897c42f6ee9ae92c0761
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 484a80d9eeb0b652a8363a9ea49f58f9780b6968
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819290"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908938"
 ---
 # <a name="routes-and-operations"></a>Flöden och operationer
 
@@ -79,7 +79,7 @@ Ett flöde måste godkännas innen det kan användas i planeringen eller tillver
 
 Varje flöde och formel går att godkänna och upphäva separat. Observera att om ett flöde inte är godkänd är alla relaterade flödesversioner heller inte godkända. I produktionsstyrningsparametrarna kan du ange om flöden kan godkännas och om godkända flöden kan ändras.  
 
-Om du måste hålla en logg som registrerar vem som godkänner varje flöde, kan du kräva elektroniska signaturer för flödeskännande. Användare måste sedan bekräfta sin identitet med hjälp av en [elektronisk signatur](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
+Om du måste hålla en logg som registrerar vem som godkänner varje flöde, kan du kräva elektroniska signaturer för flödeskännande. Användare måste sedan bekräfta sin identitet med hjälp av en [elektronisk signatur](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md).
 
 ## <a name="operations"></a>Operations
 En operation är ett steg i produktionsprocessen, t.ex. Varje operation har ett ID och en kort beskrivning. I följande tabell visas vanliga exempel på operationer från en maskinaffär.
@@ -185,7 +185,7 @@ När du aktiverar en flödesversion måste ange du den som standardflödesversio
 
 ### <a name="electronic-signatures"></a>Elektronisk signatur
 
-Om du måste hålla en logg som registrerar vem som godkänner och aktiverar varje flödesversion, kan du kräva elektroniska signaturer för flödeskännande. Användare som kan godkänna och aktivera flödesversioner måste sedan bekräfta sin identitet med hjälp av en [elektronisk signatur](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
+Om du måste hålla en logg som registrerar vem som godkänner och aktiverar varje flödesversion, kan du kräva elektroniska signaturer för flödeskännande. Användare som kan godkänna och aktivera flödesversioner måste sedan bekräfta sin identitet med hjälp av en [elektronisk signatur](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md).
 
 ### <a name="product-change-that-uses-case-management"></a>Produktändring med ärendehantering
 
@@ -253,7 +253,7 @@ Därför när aktivering väljs för överlappning kommer resten av inställning
 
 - [Resurskunskaper](resource-capabilities.md)
 
-- [Översikt över elektroniska underskrifter](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+- [Översikt över elektroniska underskrifter](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
 
 
 

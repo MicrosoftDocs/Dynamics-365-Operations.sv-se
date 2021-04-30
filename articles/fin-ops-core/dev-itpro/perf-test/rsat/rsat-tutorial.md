@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 5a9f19168093f24a7f152b2b5b23b3728ca80222
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a194e14c76827650e6752f331081ebe0c2130a13
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745175"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866166"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Självstudie för Regression Suite Automation Tool
 
@@ -100,7 +100,7 @@ När du kör testärendet genererar RSAT ögonblicksbilder (bilder) av stegen i 
 4. Försäljningsteamet får en på fyra enheter av den nya produkten. Därför uppdaterar försäljningsteamet nettokraven via den dynamiska planen. Eftersom ingen ytterligare kapacitet finns tillgänglig, anges standardorderprincipen till köp istället för tillverka. Därför kapas en planerad inköpsorder.
 5. Köparen lägger till en leverantör, signerar den planerade inköpsordern och bekräftar sedan inköpsordern.
 6. När varorna som köpts in anländer till butiken söker butiksoperatören efter den relaterade inköpsordern och tar emot varorna. Eftersom ordern nu är slutförd kan varor plockas och förpackas mot försäljningsordern.
-7. Ekonomi bokför inköpsfakturan och försäljningsfakturan.
+7. Finance bokför inköpsfakturan och försäljningsfakturan.
 
 Följande bild visar flödet för det här scenariot.
 

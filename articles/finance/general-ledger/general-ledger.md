@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60ebe19d53e87e385af8e32c32b9c0cc43291eba
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 403cd616faef2f856c21a771d46607c41987f0bb
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832884"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897539"
 ---
 # <a name="general-ledger-home-page"></a>Startsida för redovisning
 
@@ -40,7 +40,7 @@ Du kan allokera, eller fördela, monetära belopp på ett eller flera konton ell
 [![Affärsprocess](./media/GL-process.PNG)](./media/GL-process.PNG)
 
 ## <a name="sales-tax"></a>Moms
-Alla företag samlar in och betalar moms till olika skattemyndigheter. Reglerna och satserna varierar efter land/region, delstat, kommun och ort.
+Alla företag samlar in och betalar skatt till olika skattemyndigheter. Reglerna och satserna varierar efter land/region, delstat, kommun och ort.
 Dessutom måste reglerna uppdateras regelbundet när skattemyndigheter ändrar sina krav. Momskoderna innehåller grundläggande information om hur mycket du samlar in och betalar till myndigheterna. När du ställer in momskoder, definierar du de belopp eller procentsatser som ska samlas in. Du anger även olika metod med de belopp eller procentsatser av tillämpas på transaktionsbelopp. Det här avsnittet innehåller information om hur du ställer in momskoder för de metoder och satser som skattemyndigheterna kräver.
 
  - [Momsöversikt](indirect-taxes-overview.md)
@@ -52,7 +52,7 @@ Dessutom måste reglerna uppdateras regelbundet när skattemyndigheter ändrar s
 
 #### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
-Gå till [Utgivningsplaner för Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner har planerats. 
+Gå till [Utgivningsplaner för Microsoft Dynamics 365](/dynamics365/release-plans/) för att se vilka nya funktioner har planerats. 
 
 #### <a name="financial-reporting"></a>Ekonomisk rapportering
 Gå till avsnittet [översikt över Financial reporting](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) om du vill ha information om ekonomiska rapporter.

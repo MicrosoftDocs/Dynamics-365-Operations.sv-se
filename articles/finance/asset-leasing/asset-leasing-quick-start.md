@@ -2,11 +2,11 @@
 title: Kom i gång med tillgångsleasing
 description: I det här avsnittet beskrivs funktionen tillgångsleasing och visar information för dessa lån genom att följa stegen för att skapa ett tillgångsleasing.
 author: moaamer
-ms.date: 10/16/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6d5b51e89ec0e64182671872573ec0140939a836
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814138"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892443"
 ---
 # <a name="asset-leasing-get-started"></a>Kom i gång med tillgångsleasing
 
 [!include [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs funktionen tillgångsleasing och visar information för dessa lån genom att följa stegen för att skapa ett tillgångsleasing. Avsnittet definierar också vilken terminologi som används i användargränssnittet och i dokumentationen. Leasing av tillgångar är en avancerad funktion för hantering, spårning och automatisering av finansiella transaktioner för leasade tillgångar i Microsoft Dynamics 365 Finance. Leasing av tillgångar uppfyller IAS (IFRS 16) och US GAAP standard (ASC 842). Leasing av tillgångar samlar in och bearbetar information om leasing och genererar journalposter för leasingens livscykel från första redovisningstillfället, månatliga journalposter, till nedskrivningar och uppsägningar av leasingavtalet. Leasing av tillgångar integreras sömlöst med andra komponenter i Dynamics 365 Finance, inklusive anläggningstillgångar, leverantörsreskontra och redovisning.
+
+Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda arbetsytan **funktionshantering** för att kontrollera funktionens status och aktivera den om det behövs. I arbetsytan **Funktionshantering** väljer du funktionen kallad **Tillgångsleasing** innan du klickar på knappen **Aktivera nu**.
 
 Mer information om redovisningsstandarder finns i standarddokumentationen för IFRS 16 och US GAAP ASC 842.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 986beb6d46ac69192206c86fc3660c2e2345d6a9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6a3e0e4a8389fdd6580f66004d86ef4b1980dd9f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743737"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891803"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Skapa en ny ER-lösning för att skriva ut en egen rapport
 
@@ -76,7 +76,7 @@ Följande steg beskriver hur en roll för användare i en systemadministratör, 
 - [Justera ett utformat format](#TuneFormat)
 
     - [Ändra ett format för att ändra namnet på ett skapat dokument](#ModifyToChangeName)
-    - [Ändra ett format för att ändra ordning på frågorna](#ModifyToOrder)
+    - [Ändra ett format för att ändra ordning på frågeställningarna](#ModifyToOrder)
     - [Kör ett ändrat format från ER](#RunFormatFromER2)
     - [Slutför formatdesignen](#CompleteFormat)
 
@@ -119,7 +119,7 @@ Följande steg beskriver hur en roll för användare i en systemadministratör, 
 
 - [Ytterligare resurser](#References)
 
-I det här exemplet ska du skapa en ny ER-lösning för modulen [enkät](https://docs.microsoft.com/dynamics365/human-resources/hr-learning-questionnaires). Med den nya ER-lösningen kan du utforma en rapport genom att använda ett Microsoft Excel kalkylblad som en mall. Du kan sedan generera **enkät**-rapport i Excel-eller PDF-format, förutom att generera den befintliga rapporten från SQL Server Reporting Services (SSRS). Du kan också senare ändra den nya rapporten vid begäran. Ingen kod behövs.
+I det här exemplet ska du skapa en ny ER-lösning för modulen [enkät](../../../human-resources/hr-learning-questionnaires.md). Med den nya ER-lösningen kan du utforma en rapport genom att använda ett Microsoft Excel kalkylblad som en mall. Du kan sedan generera **enkät**-rapport i Excel-eller PDF-format, förutom att generera den befintliga rapporten från SQL Server Reporting Services (SSRS). Du kan också senare ändra den nya rapporten vid begäran. Ingen kod behövs.
 
 1. Om du vill köra den befintliga rapporten går du till **enkät** \> **design** \> **enkätrapport**.
 
@@ -256,14 +256,14 @@ Om du vill fortsätta hoppar du över nästa procedur, [skapa en ny konfiguratio
     | Root\\Questionnaire\\ResultsGroup\\Code                       | Sträng      | Identifieringskoden för den aktuella resultatgruppen. |
     | Root\\Questionnaire\\ResultsGroup\\Description                | Sträng      | Beskrivning för aktuella resultatgruppen. |
     | Root\\Questionnaire\\ResultsGroup\\MaxNumberOfPoints          | Realtal        | Det maximala antal poäng som kan intjänas. |
-    | Root\\Questionnaire\\Question                                 | Postlista | Listan med frågor för den aktuella enkäten. |
+    | Root\\Questionnaire\\Question                                 | Postlista | Listan med frågeställningar för den aktuella enkäten. |
     | Root\\Questionnaire\\Question\\CollectionSequenceNumber       | Heltal     | Sekvensnumret för den aktuella svarssamlingen. |
-    | Root\\Questionnaire\\Question\\Id                             | Sträng      | Identifieringskoden för den aktuella frågan. |
-    | Root\\Questionnaire\\Question\\MustBeCompleted                | Sträng      | En flagga som anger om den aktuella frågan måste besvaras. |
-    | Root\\Questionnaire\\Question\\PrimaryQuestion                | Sträng      | En flagga som anger om den aktuella frågan är primär. |
-    | Root\\Questionnaire\\Question\\SequenceNumber                 | Heltal     | Sekvensnumret för den aktuella frågan. |
-    | Root\\Questionnaire\\Question\\Text                           | Sträng      | Texten för den aktuella frågan. |
-    | Root\\Questionnaire\\Question\\Answer                         | Postlista | Listan med svar för den aktuella frågan. |
+    | Root\\Questionnaire\\Question\\Id                             | Sträng      | Identifieringskoden för den aktuella frågeställningen. |
+    | Root\\Questionnaire\\Question\\MustBeCompleted                | Sträng      | En flagga som anger om den aktuella frågeställningen måste besvaras. |
+    | Root\\Questionnaire\\Question\\PrimaryQuestion                | Sträng      | En flagga som anger om den aktuella frågeställningen är primär. |
+    | Root\\Questionnaire\\Question\\SequenceNumber                 | Heltal     | Sekvensnumret för den aktuella frågeställningen. |
+    | Root\\Questionnaire\\Question\\Text                           | Sträng      | Texten för den aktuella frågeställningen. |
+    | Root\\Questionnaire\\Question\\Answer                         | Postlista | Listan med svar för den aktuella frågeställningen. |
     | Root\\Questionnaire\\Question\\Answer\\CorrectAnswer          | Sträng      | En flagga som anger om det aktuella svaret är korrekt. |
     | Root\\Questionnaire\\Question\\Answer\\Points                 | Realtal        | De poäng som intjänas när det aktuella svaret väljs. |
     | Root\\Questionnaire\\Question\\Answer\\SequenceNumber         | Heltal     | Sekvensnumret för det aktuella svaret. |
@@ -352,7 +352,7 @@ Du måste konfigurera datakällor för att få åtkomst till programtabellerna s
     4. Klicka på **OK** om du vill lägga till den nya datakällan.
 
 5. I fönstret **Datakälltyper** välj **Dynamics 365 for Operations\\registerposter**.
-6. Lägg till en ny datakälla som ska användas för att komma åt KMAnswer-registret, där varje post representerar ett enda svar på en fråga i en enkät:
+6. Lägg till en ny datakälla som ska användas för att komma åt KMAnswer-registret, där varje post representerar ett enda svar på en frågeställning i en enkät:
 
     1. I fönstret **Datakällor** välj **Lägg till rot**.
     2. I fältet **Namn** ange **Svar**.
@@ -550,7 +550,7 @@ ER-ramverket använder fördefinierade mallar för att generera rapporter i Micr
 1. Hämta filen [enkätrapportmall.xslx](https://go.microsoft.com/fwlink/?linkid=851448) och spara den på den lokala datorn.
 2. Öppna filen i Excel och granska arbetsbokens struktur.
 
-Som visas i bilden nedan har den hämtade mallen utformats för att skriva ut angivna enkäter som visar en enkätfrågor tillsammans med lämpliga svar.
+Som visas i bilden nedan har den hämtade mallen utformats för att skriva ut angivna enkäter som visar en enkätfrågeställningar tillsammans med lämpliga svar.
 
 ![Excel-mall för att skriva ut angivna enkäter](./media/er-quick-start1-template-layout.png)
 
@@ -754,9 +754,9 @@ Som standard namnges ett genererat dokument med hjälp av den aktuella användar
 4. Markera **Spara** och stäng sedan formelredigeraren.
 5. Välj **Spara**.
 
-### <a name="modify-a-format-to-change-the-order-of-questions"></a><a name="ModifyToOrder"></a>Ändra ett format för att ändra ordning på frågorna
+### <a name="modify-a-format-to-change-the-order-of-questions"></a><a name="ModifyToOrder"></a>Ändra ett format för att ändra ordning på frågeställningarna
 
-Frågorna ordnas inte korrekt i en genererad rapport. Du kan ändra ordningen genom att ändra formatet.
+Frågeställningarna ordnas inte korrekt i en genererad rapport. Du kan ändra ordningen genom att ändra formatet.
 
 1. På sidan **Formatdesigner** välj rotobjekt **Rapport**.
 2. På fliken **Mappning** i formatträdet, expandera **Report\\Questionnaire\\Question**.
@@ -766,7 +766,7 @@ Frågorna ordnas inte korrekt i en genererad rapport. Du kan ändra ordningen ge
 3. På fliken **Mappning** välj **model.Questionnaire**.
 4. Välj **Lägg till** \> **funktioner\\beräknat fält** och skriv sedan i fältet **Name** **OrderedQuestions**.
 5. Välj **Redigera recept**.
-6. I formelredigeraren i fältet **Formel** anger du **ORDERBY (model.Questionnaire.Question, model.Questionnaire.Question.SequenceNumber)** om du vill beställa en lista med frågor i den aktuella enkäten utifrån sekvensordernumret.
+6. I formelredigeraren i fältet **Formel** anger du **ORDERBY (model.Questionnaire.Question, model.Questionnaire.Question.SequenceNumber)** om du vill beställa en lista med frågeställningar i den aktuella enkäten utifrån sekvensordernumret.
 7. Markera **Spara** och stäng sedan formelredigeraren.
 8. Välj **OK** för att slutföra posten för ett nytt beräknat fält.
 9. På fliken **Mappning** välj **model.Questionnaire.OrderedQuestions**.
@@ -786,9 +786,9 @@ Du kan nu köra ett ändrat format för testning från ER-ramverket.
 4. Klicka på **OK** om du vill köra rapporten.
 5. Granska den genererade rapporten.
 
-Följande bild visar en genererad rapport i Excel-format där frågorna har beställts på rätt sätt.
+Följande bild visar en genererad rapport i Excel-format där frågeställningarna har beställts på rätt sätt.
 
-![Genererad rapport i Excel-format med korrekt ordnade frågor](./media/er-quick-start1-report2.png)
+![Genererad rapport i Excel-format med korrekt ordnade frågeställningar](./media/er-quick-start1-report2.png)
 
 ### <a name="complete-the-format-design"></a><a name="CompleteFormat"></a>Slutför formatdesignen
 

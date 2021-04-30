@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14a5e1cea5a249b6087ef87560dd06bc026dd129
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ed56920ca1b4f2ac1313f7025b7a3c7245e9913
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822141"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898220"
 ---
 # <a name="budget-planning-overview"></a>Översikt över budgetplanering
 
@@ -75,7 +75,7 @@ Följande illustration visar ett exempel där företagets huvudkontor uppskattar
 
 På sidan **Organisationshierarki** kan du välja en organisationshierarki som budgetplaneringshierarki för varje budgetplaneringsprocess. Budgetplaneringshierarkin måste inte matcha den vanliga organisationshierarkin som används för andra ändamål. Eftersom den här hierarkin används för att sammanställa och fördela data, kanske du vill att den ska ha en annan struktur. I exempelschemat är försäljningsavdelningarna under huvudkontorsnivån som innefattar budgetavdelningen och ekonomiavdelningen. Strukturen skiljer sig antagligen från strukturen som används för att hantera driften på försäljningsavdelningarna. Endast en organisationshierarki kan tilldelas varje budgetplaneringsprocess.
 
-Mer information finns i [Organisationer och organisationens hierarkier](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
+Mer information finns i [Organisationer och organisationens hierarkier](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Användarsäkerhet
 
@@ -163,7 +163,7 @@ Förutom kolumner för budgetbelopp kan du definiera kolumner för projektet, f�
 
 I exempelschemat kan det vara en bra idé att skapa kolumner för scenarierna "kopiera försäljning", "kontrakt" och "prognos". (Följande bild visar den relevanta delen av schemat.) Du kan sedan bryta ut ett eller alla dessa scenarier till separata kolumner för varje kvartal av räkenskapsåret, så att försäljningschefen kan ange exakt prognosbelopp för varje period.
 
-[![Kolumner](./media/columns.png)](./media/columns.png)
+[![Illustration av avsnitt i schemat för att lägga till kolumner](./media/columns.png)](./media/columns.png)
 
 Du kan också ange om respektive layoutelement (kolumn) ska gå att redigera och om det finns tillgängligt i alla kalkylbladsmallar som skapas för layouten. För exempelschemat i layouten som används för uppskattningsfasen är prognoskolumnerna redigerbara, men kolumnerna för försäljning och kontrakt är skrivskyddade.
 

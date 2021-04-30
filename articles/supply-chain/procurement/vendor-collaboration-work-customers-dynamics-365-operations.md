@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: c734b62dff6fc6151e192f239ad319b78f8faa8f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5931d718d34db81ebd032eda821f071d9d329a26
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825216"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908045"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Leverantörssamarbete med kunder
 
@@ -31,7 +31,7 @@ I det här avsnittet beskrivs hur du kan använda leverantörssamarbete när du 
 - **Bekräftelse av inköpsorder** – Övervaka och svara på inköpsorder.
 - **Budgivning av leverantör** – Visa anbudsförfrågningar och svara på dem genom att lämna anbud.
 - **Leverantörsinformation** – Visa och uppdatera huvuddata för leverantör.
-- **Fakturera** – Arbeta med fakturor. Det här avsnittet omfattar inte arbetsytan **Fakturering**. Mer information om den här arbetsytan finns i [Arbetsyta för leverantörssamarbetesfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Fakturera** – Arbeta med fakturor. Det här avsnittet omfattar inte arbetsytan **Fakturering**. Mer information om den här arbetsytan finns i [Arbetsyta för leverantörssamarbetesfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Leverantörer kan också övervaka information om försändelsen.
 
@@ -138,7 +138,7 @@ Du måste lämna ett nytt bud om en anbudsförfrågan ändras. Du hittar informa
 
 Som leverantör kan du komma åt en del av den information som kunden underhåller i leverantörens huvudpost. Därför kan du hålla informationen uppdaterad. Om du vill uppdatera informationen måste du ha rollen Leverantörsadmin (extern).
 
-De tillgängliga uppgifterna är leverantörens namn, adress, kontaktinformation, kontaktpersoner och deras kontaktinformation, ID-nummer, momsregistreringsnummer, anskaffningskategorier som leverantören har godkänts för att sälja till kunden samt och information om certifikat.
+De tillgängliga uppgifterna är leverantörens namn, adress, kontaktinformation, kontaktpersoner och deras kontaktinformation, ID-nummer, skatteregistreringsnummer, anskaffningskategorier som leverantören har godkänts för att sälja till kunden samt och information om certifikat.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

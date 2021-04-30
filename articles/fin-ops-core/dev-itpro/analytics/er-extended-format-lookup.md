@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ff00b577428c96804af5af29a91c7048bf736400
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 62bc6587ad80fd318038f5dfc5ff68821b2a65cd
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753346"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893942"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Tillåt användare att ställa in en ER-formatreferens som frågar ett format från den globala databasen
 
@@ -30,7 +30,7 @@ Du kan använda [ramverket för Elektronisk rapportering](general-electronic-rep
 
 Vanligtvis måste du ange vad ER-format som ska användas i en viss affärsprocess. Det gör du genom att välja ett enskilt ER-format i ett uppslagsfält som är konfigurerat som en del av affärsprocessens specifika parametrar. Dessa uppslagsfält implementeras vanligtvis med hjälp av lämplig API för ER-ramverk. Mer information finns i [ER-ramverkets API-kod för att visa en formatmappningssökning](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
-När du till exempel konfigurerar [parametrar för utländsk handel](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters) måste du ställa in referenserna för enskilda ER-format som ska användas för att generera Intrastat-deklarationen och Intrastat-deklarationen för kontroll. Skärmdumparna nedan visar hur uppslagsfältet för ER-format ser ut på sidan **Utländska handelsparametrar**.
+När du till exempel konfigurerar [parametrar för utländsk handel](../../../finance/localizations/emea-intrastat.md#set-up-foreign-trade-parameters) måste du ställa in referenserna för enskilda ER-format som ska användas för att generera Intrastat-deklarationen och Intrastat-deklarationen för kontroll. Skärmdumparna nedan visar hur uppslagsfältet för ER-format ser ut på sidan **Utländska handelsparametrar**.
 
 Om den aktuella Finance-instansen inte innehåller några affärsprocessrelaterade ER-format för Intrastat, är det här uppslagsfältet tomt.
 
@@ -78,7 +78,7 @@ Följande skärmbild visar hur det här privilegiet kan beviljas användare som 
 
 Åtkomsten till GR i ER-formatsökningen stöds för närvarande bara för val av ER-format som används för att generera utgående dokument.
 
-## <a name="frequently-asked-questions"></a>Vanliga frågor
+## <a name="frequently-asked-questions"></a>Vanliga frågeställningar
 
 ### <a name="why-cant-i-access-the-global-repository-from-the-er-format-lookup"></a>Varför kan jag inte komma åt den globala databasen från sökning efter ER-format?
 

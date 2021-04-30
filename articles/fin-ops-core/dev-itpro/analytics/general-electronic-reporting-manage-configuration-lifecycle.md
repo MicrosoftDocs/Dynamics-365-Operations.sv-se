@@ -1,8 +1,8 @@
 ---
 title: Hantera livscykeln för konfiguration av elektronisk rapportering (ER)
-description: Den här avsnittet beskriver hur du hanterar livscykeln för elektronisk rapportering (ER) konfigurationer för Microsoft Dynamics 365 Finance-lösningen.
+description: Detta ämne beskriver hur du hanterar konfigurationer för elektronisk rapportering (ER) konfigurationer för Dynamics 365 Finance.
 author: NickSelin
-ms.date: 06/20/2017
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 165f2c981b550f8a6fd4d2ce08763e6fa3c8b6e7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 52aba53b5323a9c6c4331cd8de7e932bb9c3547e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750116"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893211"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Hantera livscykeln för konfiguration av elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
 
-Den här avsnittet beskriver hur du hanterar livscykeln för elektronisk rapportering (ER) konfigurationer för Microsoft Dynamics 365 Finance.
+Detta ämne beskriver hur du hanterar konfigurationer för elektronisk rapportering (ER) konfigurationer för Dynamics 365 Finance.
 
 ## <a name="overview"></a>Översikt
 
@@ -45,7 +45,7 @@ Elektronisk rapportering (ER) är en motor som stöder lagstadgade behov och lan
 
 - Gör en mall tillgänglig så att den kan användas i andra instanser:
 
-    - Omforma en dokumentmall som har skapats till en ER-konfiguration och exportera konfigurationen från den aktuella appinstansen som ett XML-paket som antingen kan lagras lokalt eller i LCS.
+    - Omforma en dokumentmall som har skapats till en ER-konfiguration, och exportera konfigurationen från den aktuella programinstansen som ett XML-paket som antingen kan lagras lokalt eller i Lifecycle Services (LCS).
     - Omforma en ER-konfiguration till en dokumentmall för appar.
     - Importera ett XML-paket som lagras lokalt antingen eller i LCS till den aktuella instansen.
 
@@ -78,9 +78,20 @@ För följande ER-relaterade orsaker rekommenderas att du designar ER-konfigurat
 - Användare i antingen rollen **elektronisk rapportering utvecklare** eller **elektronisk rapportering funktionella konsult** kan redigera konfigurationer och köra dem för teständamål. Det här scenariot kan orsaka anrop av metoder för klasser och tabeller som kan vara skadliga för affärsdata och instansens prestanda.
 - Anrop av metoder för klasser och tabeller som ER-datakällor eller ER-konfigurationer är inte begränsade av startpunkter och loggat företagsinnehåll. Därför känslig affärsinformation kan nås av användarna i antingen **elektronisk rapportering utvecklare** eller **elektronisk rapportering funktionella konsult**.
 
-ER-konfigurationer som utformas i utvecklingsmiljön kan överföras till testmiljön för utvärdering av konfigurationen (rätt process integration, korrekta resultat, prestanda) och kvalitetssäkring, till exempel korrektheten i rollen som drivs av åtkomsträttigheter och uppdelning av uppgifter. Funktionerna som aktiverar ER-konfigurationsutbyte kan användas i detta syfte. Slutligen kan beprövade ER-konfigurationer överföras antingen till LCS där de kan delas med abonnenter eller till produktionsmiljön för intern användning, som visas i följande bild.
+ER-konfigurationer som utformas i utvecklingsmiljön kan [laddas upp](#data-persistence-consideration) till testmiljön för utvärdering av konfigurationen (korrekt processintegrering, korrekta resultat samt prestanda) och kvalitetssäkring, till exempel korrektheten i rollbaserad åtkomsträttigheter och ansvarsfördelning. Funktionerna som aktiverar ER-konfigurationsutbyte kan användas i detta syfte. Beprövade ER-konfigurationer kan laddas upp till LCS i syfte att dela dem med tjänsteprenumeranter, eller också kan de [importeras](#data-persistence-consideration) till produktionsmiljön för internt bruk.
 
 ![Livscykel för ER-konfiguration](./media/ger-configuration-lifecycle.png)
+
+## <a name="data-persistence-consideration"></a><a name="data-persistence-consideration" />Beaktande av databeständighet
+
+Du kan [importera](tasks/er-import-configuration-lifecycle-services.md) olika [versioner](general-electronic-reporting.md#component-versioning) av en ER-[konfiguration](general-electronic-reporting.md#Configuration) individuellt till din Finance-instans. När en ny version av en ER-konfiguration importeras, kontrollerar systemet innehållet i utkastversionen av denna konfiguration:
+
+   - När den importerade versionen är lägre än den högsta versionen av denna konfiguration i den aktuella Finance-instansen, förblir innehållet i utkastversionen för denna konfiguration oförändrat.
+   - När den importerade versionen är högre än någon annan version av den här konfigurationen i den aktuella Finance-instansen kopieras innehållet i den importerade versionen till utkastversionen av den här konfigurationen så att du kan fortsätta att redigera den senast ifyllda versionen.
+
+Om den här konfigurationen ägs av konfigurations [leverantören](general-electronic-reporting.md#Provider) som för tillfället är aktiverad, visas utkastversionen för den här konfigurationen för dig på snabbfliken **Versioner** på sidan **Konfigurationer** (**Organisationsadministrering** > **Elektronisk rapportering** > **Konfigurationer**). Du kan välja utkastversionen av konfigurationen och [ändra](er-quick-start2-customize-report.md#ConfigureDerivedFormat) ess innehåll genom att använda relevant ER-designer. När du har redigerat utkastversionen av en ER-konfiguration matchar denna inte längre innehållet i den högsta versionen av denna konfiguration i aktuell Finance-instans. För att förhindra att dina ändringar går förlorade visas ett felmeddelande om att importen inte kan fortsätta, detta eftersom versionen av denna konfiguration är högre än den högsta versionen av konfigurationen i den aktuella Finance-instansen. När detta inträffar, till exempel med formatkonfiguration **X**, visas felet **Versionen Format "X" har ej slutförts**.
+
+Om du vill ångra de ändringar som du infört i utkastversionen väljer du den högsta slutförda eller delade versionen av ER-konfigurationen i Finance på snabbfliken **Versioner** och sedan alternativet **Hämta denna version**. Innehållet i den valda versionen kopieras till utkastversionen.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

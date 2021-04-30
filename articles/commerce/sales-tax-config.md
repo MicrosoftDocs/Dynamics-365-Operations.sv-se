@@ -2,7 +2,8 @@
 title: Konfigurera moms för onlinebeställningar
 description: Det här ämnet ger en översikt över momsgruppsval för olika typer av onlinebeställning i Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 11/16/2020
+manager: AnnBe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,59 +16,62 @@ ms.search.industry: Retail
 ms.author: gmohanv
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 68b7e59a1e1ea18bdcd4e7a9117e4892407f40ff
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8df939c1a566fb63bc53e455cc6c2aa85956ac79
+ms.sourcegitcommit: 583801af75c50915ea5ffc60e831fb617d045533
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791857"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853821"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Konfigurera moms för onlinebeställningar
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet ger en översikt över momsgruppsval för olika typer av onlinebeställning. 
+Detta ämne ger en översikt över momsgruppsurval för olika onlineordertyper med hjälp av antingen destinationsbaserade eller kundkontobaserade skatteinställningar. 
 
-Din näthandelskanal kanske vill stödja alternativ som leverans eller upphämtning för onlinebeställningar. Momstillämpbarheten baseras på det alternativ som valts av dina onlineanvändare. När en webbplatskund väljer att köpa en artikel online och får den levererad till en adress bestäms momsen utifrån kundens inställning för momsgrupp för leveransadress. När en kund väljer att hämta en inköpt artikel i en butik bestäms momsen baserat på upphämtningsbutikens inställning för momsgrupp. 
+Det kan vara en god idé att låta näthandelskanal stödja alternativ som leverans eller upphämtning för onlinebeställningar. Momstillämpbarheten baseras på det alternativ som valts av dina onlinekunder. 
 
-## <a name="orders-shipped-to-a-customer-address"></a>Order som levereras till en kundadress 
+## <a name="destination-based-taxes-for-online-orders"></a>Målbaserade skatter för onlineorder
 
-I allmänhet definieras moms för onlineorder som levereras till kundadresser av målet. Varje momsgrupp har en konfiguration för målbaserad momskonfiguration där ditt företag kan definiera destinationsinformation som exempelvis land/region, delstat, region och ort i ett hierarkiskt formulär. När en onlineorder har lagts använder skattemotorn för Commerce leveransadressen för respektive radartikel i ordern och söker efter momsgrupper med matchande destinationsbaserade momskriterier. För en onlinebeställning med en leveransadress för en radartikel till San Francisco, Kalifornien, kommer skattemotorn att hitta momsgrupp och momskod för Kalifornien och sedan beräkna momsen för respektive radartikel därefter.  
+I allmänhet definieras skatter för onlineorder som levereras till kundadresser av målet. Varje momsgrupp har en konfiguration för målbaserad skattekonfiguration där ditt företag kan definiera destinationsinformation som exempelvis land eller region, delstat, region och ort i ett hierarkiskt formulär.
 
-## <a name="customer-based-tax-groups"></a>Kundbaserade momsgrupper
+### <a name="orders-delivered-to-customer-address"></a>Order som levereras till en kundadress
 
-I Commerce-administrationen finns två platser där kundmomsgrupper konfigureras:
+När en onlineorder har lagts använder skattemotorn för Commerce leveransadressen för respektive radartikel i ordern och söker efter momsgrupper med matchande destinationsbaserade skattekriterier. För en onlinebeställning med en leveransadress för en radartikel till San Francisco, Kalifornien, kommer skattemotorn att hitta momsgrupp och momskod för Kalifornien och sedan beräkna skatten för respektive radartikel därefter.
 
-- **Kundprofil**
-- **Kundens leveransadress**
+### <a name="order-pick-up-in-store"></a>Orderupphämtning i butik
 
-### <a name="if-a-customers-profile-has-a-tax-group-configured"></a>Om en kundprofil har en momsgrupp konfigurerad
+För orderrader med upphämtning i butik eller drive in-upphämtning anges skattegruppen från den valda upphämtningsbutiken. Mer information om hur du konfigurerar moms för en viss butik finns i [Ställa in andra skattealternativ för butiker](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
 
-En kunds profilpost i administrationen kan ha en konfigurerad momsgrupp, men för onlinebeställningar kan momsgruppen som konfigurerats i en kundprofil inte användas av skattemotorn. 
+## <a name="customer-account-based-taxes-for-online-orders"></a>Kundkonto-baserade skatter för onlineorder
 
-### <a name="if-a-customers-shipping-address-has-a-tax-group-configured"></a>Om en kunds leveransadress har en momsgrupp konfigurerad
+Det kan finnas ett affärsscenario där du vill konfigurera en momsgrupp för ett visst kundkonto i Commerce Headquarters. Det finns två platser i huvudkontoret där du kan konfigurera moms på ett kundkonto. För att komma åt dessa måste du först gå till en kundinformationssida genom att gå till **Butik och handel \> Kunder \> Alla kunder** och välja en kund.
 
-Om en kunds leveransadresspost har en konfigurerad momsgrupp och en onlinebeställning (eller radartikel) levereras till kundens leveransadress, används den momsgrupp som konfigurerats i kundens adresspost av skattemotorn för momsberäkningar.
+De två platser där du kan konfigurera moms för ett kundkonto är följande:
 
-#### <a name="configure-a-tax-group-for-a-customers-shipping-address-record"></a>Konfigurera en momsgrupp för en kunds leveransadresspost
+- **Momsgruppen** på snabbfliken **Faktura och leveran** på kundinformationssidan. 
+- **Moms** på snabbfliken **Allmänt** på sidan **Hantera adresser**. Du kommer dit från sidan Kundinformation genom att välja en specifik adress under snabbfliken **Adresser** och sedan **Avancerat**.
 
-Om du vill konfigurera en momsgrupp för en kunds leveransadresspost i Commerce-administrationen följer du stegen nedan.
+> [!TIP]
+> Om du endast vill tillämpa målbaserade skatter och undvika kundkontobaserade skatter på online-kundorder måste du kontrollera att fältet **Momsgrupp** är tomt på snabbfliken **Faktura och leverans** på sidan för kundinformation. Om du vill vara säker på att nya kunder som registrerar sig via onlinekanalen inte ärver momsgruppsinställningarna från standardinställningarna för kund eller kundgrupp, måste du se till att fältet **Momsgrupp** är tomt även för onlinekanalinställningarna för standardkund och kundgruppsinställningar (**Butik och handel \> Kunder \> Kundgrupper**).
 
-1. Gå till **Alla kunder** och välj önskad kund. 
-1. I snabbfliken **Adresser** väljer du önskad adress och sedan **Fler alternativ \> Avancerat**. 
-1. Under fliken **Allmänt** på sidan **Hantera adresser** anger du önskat momsvärde.
+## <a name="determine-destination-based-tax-or-customer-account-based-tax-applicability"></a>Fastställa målbaserad skatt eller kundkontobaserad tillämpbarhet för skatt 
 
-> [!NOTE]
-> Momsgruppen definieras med hjälp av leveransadressen för orderraden, och de målbaserade momssatserna konfigureras i själva momsgruppen. Mer information finns i [Konfigurera moms för onlinebutiker baserat på destination](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
+I följande tabell beskrivs huruvida målbaserade skatter eller kundkontobaserade skatter används för onlineorder. 
 
-## <a name="order-pickup-in-store"></a>Orderupphämtning i butik
-
-För orderrader med upphämtning i butik eller drive in-upphämtning anges momsgruppen från den valda upphämtningsbutiken. Mer information om hur du konfigurerar momsgruppen för en viss butik finns i [Ställa in andra momsalternativ för butiker](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
-
-> [!NOTE]
-> När en orderrad hämtas i en butik ignoreras skatteinställningarna för kundens adress (om dessa ställts in) av skattemotorn, och upphämtningsbutikens skattekonfiguration tillämpas. 
+| Kundtyp | Transportadress                   | Kund > Faktura och leverans > Momsgrupp? | Adress för kundkonto i administrationen? | Kundadress > Avancerat > Allmänt > Momsgrupp?                                              | Tillämpad momsgrupp      |
+|---------------|------------------------------------|-----------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------|
+| Gäst         | Manhattan, NY                      | Nej (tom)                                                | Nej (tom)                              | Nej (tom)                                                                                                   | NY (målbaserade skatter) |
+| Inloggad     | Austin, TX                          | Nej (tom)                                             | Ja                               | None<br/><br/>Ny adress som läggs till via online-kanal.                                                            | TX (målbaserade skatter) |
+| Inloggad     | San Francisco, CA (upphämtning i butik) | Ja (NY)                                            | Inte aktuellt                              | Inte aktuellt                                                                                                    | CA (målbaserade skatter) |
+| Inloggad     | Houston, TX                         | Ja (NY)                                            | Ja                               | Ja (NY)<br/><br/>Ny adress som läggs till via online-kanal och momsgrupp ärvd från kundkonto. | NY (kundkontobaserade skatter)  |
+| Inloggad     | Austin, TX                          | Ja (NY)                                            | Ja                               | Ja (NY)<br/><br/>Ny adress som läggs till via online-kanal och momsgrupp ärvd från kundkonto. | NY (kundkontobaserade skatter)  |
+| Inloggad     | Sarasota, FL                       | Ja (NY)                                            | Ja                               | Ja (WA)<br/><br/>Manuellt inställt på WA.                                                                          | WA (kundkontobaserade skatter)  |
+| Inloggad     | Sarasota, FL                       | Nej (tom)                                                | Ja                               | Ja (WA)<br/><br/>Manuellt inställt på WA.                                                                          | WA (kundkontobaserade skatter)  |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
+
+[Ställ in skatter för onlinebutiker baserat på destination](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
 
 [Momsöversikt](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json) 
 
@@ -77,7 +81,7 @@ För orderrader med upphämtning i butik eller drive in-upphämtning anges momsg
 
 [Beräkningsalternativ för hela beloppet och intervall för momskoder](https://docs.microsoft.com/dynamics365/finance/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/commerce/toc.json) 
 
-[Beräkning av momsbefrielse](tax-exempt-price-inclusive.md) 
+[Beräkning av skattebefrielse](tax-exempt-price-inclusive.md) 
 
 
 

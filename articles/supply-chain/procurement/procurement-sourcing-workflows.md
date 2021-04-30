@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd9ee69e180f2ff605c4f373a95d2346ccc73c0e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 126e9969f312ff7f6a6c64b733708754e7659214
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807954"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909241"
 ---
 # <a name="procurement-and-sourcing-workflows"></a>Anskaffnings- och källarbetsflöden
 
@@ -47,7 +47,7 @@ Följande arbetsflödestyper är tillgängliga för Anskaffning och källa.
 | Ansökningsarbetsflöde för leverantörstillägg | Att granska och godkänna arbetsflöden för att lägga till nya leverantörer via leverantörsförfrågningar. |
 
 > [!IMPORTANT]
-> När du lägger till ett nytt arbetsflöde kan du också se följande föråldrade arbetsflöden i dialogrutan **Skapa arbetsflöde**. Dessa är relaterade till funktionen *bekräftelse av kvitto* som fanns i [Dynamics AX 2012](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows), men som nu är föråldrade. Dessa arbetsflöden stöds för närvarande inte.
+> När du lägger till ett nytt arbetsflöde kan du också se följande föråldrade arbetsflöden i dialogrutan **Skapa arbetsflöde**. Dessa är relaterade till funktionen *bekräftelse av kvitto* som fanns i [Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows), men som nu är föråldrade. Dessa arbetsflöden stöds för närvarande inte.
 > 
 > - Meddelandearbetsflöde för leveransens förfallodatum
 > - Meddelandearbetsflöde för mottagen faktura

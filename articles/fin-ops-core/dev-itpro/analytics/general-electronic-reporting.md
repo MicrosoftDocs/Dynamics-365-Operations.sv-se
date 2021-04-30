@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f172e4d3e9c175a93d6fd64f0aa1933a48860bca
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d22a6fc336708028ce4953df50360c233398303d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750068"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893187"
 ---
 # <a name="electronic-reporting-er-overview"></a>Översikt över elektronisk rapportering (ER)
 
@@ -183,11 +183,11 @@ Observera att den här databasen är tillgänglig i följande miljöer:
 
 Mer information finns i [Importera konfigurationer för elektronisk rapportering (ER)](./electronic-reporting-import-ger-configurations.md).
 
-En **RCS**-databasen ger åtkomst till listan över konfigurationerna för en viss instans som valdes i [Regulatory Configuration Service (RCS)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) som valdes i registreringssteget för datalagret. ER låter dig importera slutförda eller delade konfigurationer från valda RCS-instansen till den aktuella instansen så att du kan använda dem för elektronisk rapportering.
+En **RCS**-databasen ger åtkomst till listan över konfigurationerna för en viss instans som valdes i [Regulatory Configuration Service (RCS)](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) som valdes i registreringssteget för datalagret. ER låter dig importera slutförda eller delade konfigurationer från valda RCS-instansen till den aktuella instansen så att du kan använda dem för elektronisk rapportering.
 
 Mer information finns i [Importera konfigurationer för elektronisk rapportering från RCS](./rcs-download-configurations.md).
 
-En **Global databas** ger åtkomst till listan över konfigurationer i den globala databasen i [Regulatory Configuration Services](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Den här typen av ER-databas kan endast registreras för Microsoft-leverantören. Från den globala databasen kan du importera de senaste versionerna av ER-konfigurationer till den aktuella instansen.
+En **Global databas** ger åtkomst till listan över konfigurationer i den globala databasen i [Regulatory Configuration Services](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Den här typen av ER-databas kan endast registreras för Microsoft-leverantören. Från den globala databasen kan du importera de senaste versionerna av ER-konfigurationer till den aktuella instansen.
 
 För mer information, se [Importera e-rapporteringskonfigurationer från global databas från Regulatory Configuration Services](./er-download-configurations-global-repo.md).
 
