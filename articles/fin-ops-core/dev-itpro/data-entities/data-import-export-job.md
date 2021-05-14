@@ -2,7 +2,7 @@
 title: Översikt över jobb för import och export av data
 description: Använda arbetsytan Datahantering för att skapa och hantera dataimport- och dataexportjobb.
 author: Sunil-Garg
-ms.date: 11/02/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cb38c812aed60bddadce25f66ec77f4e428be71
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751010"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937340"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Översikt över jobb för import och export av data
 
@@ -161,19 +161,7 @@ För att påskynda importen av data kan parallell bearbetning av import av en fi
     - I fältet **Importera antal för tröskelvärdepost** anger du antal för tröskelvärdepost för import. Detta bestämmer antalet poster som ska bearbetas av en tråd. Om en fil har 10 000 poster innebär detta att antalet poster på 2 500 med antalet uppgifter är 4 och varje tråd bearbetar 2 500 poster.
     - I fältet **Import uppgiftsantal** anger du antalet importerade uppgifter. Detta får inte överskrida de maximalt antal trådar som allokerats för batchbearbetning i **Systemadministration \>Serverkonfiguration**.
 
-## <a name="clean-up-the-staging-tables"></a>Rensa mellanlagringsregister
-Från och med plattformsuppdatering 29 har den här funktionen ersatts. Detta ersätts av en ny version av funktionen för jobbhistorikrensning som förklaras nedan.
-
-Du kan rensa mellanlagringstabeller genom att använda funktionen **Mellanlagringsrensning** i arbetsytan **Datahantering**. Du kan använda följande alternativ för att välja vilka poster som ska tas bort från vilka mellanlagringsregister:
-
-- **Enhet** – Om bara en enhet är tillgänglig kommer samtliga poster i den enhetens mellanlagringstabell att raderas. Välj detta alternativ om du vill rensa alla data för enheten mellan alla dataprojekt och alla jobb.
-- **Jobb-ID** – Om bara ett jobb-ID tillhandahålls, kommer alla poster för alla enheter i det valda jobbet att tas bort från tillhörande mellanlagringstabeller.
-- **Dataprojekt** – Om bara ett dataprojekt har markerats kommer alla poster för alla entiteter och över alla jobb för det valda dataprojektet att tas bort.
-
-Du kan också kombinera alternativen för att ytterligare begränsa den postuppsättning som raderas.
-
-## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Rensa jobbhistoriken (tillgänglig i plattformsuppdatering 29 och senare)
-
+## <a name="job-history-clean-up"></a>Rensa jobbhistorik 
 Rensningsfunktionen för jobbhistoriken i datahantering måste användas för att schemalägga en periodisk rensning av körningshistoriken. Den här funktionen ersätter den tidigare mellanlagringsfunktionen, som nu är inaktuell. Följande tabeller kommer att rensas upp av rensningsprocessen.
 
 -   Alla mellanlagringsregister

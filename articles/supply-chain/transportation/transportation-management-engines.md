@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6ec8714ef208b25284f218e81dda0ff94ed49d7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bf9c256c4b9ade408111a46899ee266b2eb0d651
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828380"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920119"
 ---
 # <a name="transportation-management-engines"></a>Transporthanteringsmotorer
 
@@ -96,6 +96,12 @@ Metadata för transporthanteringsmotorer konfigureras olika för olika typer av 
 | 3        | Destination – från postnummer | Uppdrag | Sträng    | Postnummer    | Markerad  |
 | 4        | Destination – till postnummer   | Uppdrag | Sträng    | Postnummer    | Markerad  |
 | 5        | Destinationsland           | Uppdrag | Sträng    | Land/region |           |
+
+### <a name="whitepaper"></a>Dokumentation
+
+För mer information, ladda ner följande dokumentation (skriven till stöd för AX2012, men gäller fortfarande Dynamics 365 Supply Chain Management)
+
+- [Transporthanteringsmotorer](https://download.microsoft.com/download/e/0/9/e0957665-c12f-43c7-94c0-611cc49d7d61/TransportationManagementEnginesInAX.pdf)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

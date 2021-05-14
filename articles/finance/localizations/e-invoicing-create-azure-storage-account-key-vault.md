@@ -2,7 +2,7 @@
 title: Skapa ett Azure Storage-konto och ett nyckelvalv
 description: I det här avsnittet beskrivs hur du skapar ett Azure Storage-konto och nyckelvalv.
 author: gionoder
-ms.date: 02/12/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2786d350fde2399aadb35dc653bc15123e0e6d91
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5c2ddad10f9cbedd77a04fe0f42bdc217fd43344
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893812"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963249"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Skapa ett Azure Storage-konto och ett nyckelvalv
 
@@ -80,6 +80,10 @@ I det här avsnittet ska du utföra två huvudsteg:
 11. Välj **Lägg till** och välj sedan **Spara ändringar i nyckelvalv**.
 12. På sidan **Översikt** kopiera värdet **DNS-namn** för nyckelvalvet. Det här värdet kommer att användas under installationen av tjänsten i RCS och kallas *nyckelvalv-URI*.
 
+> [!NOTE]
+> Om du vill ha mer säkerhet på lagringskontot konfigurerar du Azure Azure for Storage.
+> 
+> Mer information finns i [Introduktion till Azure Defender for Storage](/azure/security-center/defender-for-storage-introduction).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

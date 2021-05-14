@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad1221bb57aea4c93cb60fc29caec2d3b41798f9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 592b3d0265a3be92a5a823c6aabdd40b4e3f0a27
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836408"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5919951"
 ---
 # <a name="create-a-new-trade-agreement"></a>Skapa ett nytt handelsavtal
 
@@ -26,8 +26,8 @@ ms.locfileid: "5836408"
 
 I den här proceduren visas hur du skapar ett handelsavtal där du registrerar ett nytt produktförsäljningspris som du har avtalat med en viss kund. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Om du använder dina egna data måste du se till att det finns ett namn på handelsavtalsjournalen där standardrelationen har angetts till "Pris (försäljning)" innan du startar den här guiden.
 
-
 ## <a name="create-and-post-a-new-trade-agreement-journal"></a>Skapa och bokför en ny handelsavtalsjournal.
+
 1. Gå till **Navigeringsrutan > Moduler > Försäljning och marknadsföring > Priser och rabatter > Handelsavtalsjournaler**.
 2. Klicka på **Ny**.
 3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Namn**.
@@ -58,22 +58,26 @@ I den här proceduren visas hur du skapar ett handelsavtal där du registrerar e
 20. Klicka på **OK**.
 
 ## <a name="view-trade-agreements-for-a-product"></a>Visa handelsavtal för en produkt.
+
 1. Gå till **Navigeringsfönster > Moduler > Produktinformationshantering > Produkter > Frisläppta produkter**.
 2. Hitta och markera den produkt vars pris du precis har uppdaterat.
 3. Klicka på **Sälj** i **åtgärdsfönstret**.
 4. Klicka på **Visa handelsavtal**.
     
-    Granska informationen i prishandelsavtalet som du precis har skapat.    
+    Granska informationen i prishandelsavtalet som du precis har skapat.
 
 5. Stäng sidan.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 ### <a name="whitepaper"></a>Dokumentation
+
 För mer information, ladda ner följande dokumentation (skriven till stöd för AX2012, men gäller fortfarande Dynamics 365 Supply Chain Management)
-- [Handelsavtal](https://mbs.microsoft.com/files/public/CS/AX2012R3/TradeagreementsinAX.pdf)
+
+- [Handelsavtal](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
 
 ### <a name="community-blogs"></a>Community-bloggar
+
 - [Försäljningspriser i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
 
 

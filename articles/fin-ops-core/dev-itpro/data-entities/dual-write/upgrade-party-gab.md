@@ -10,12 +10,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 76e64d483e833782733277a64d8dc37cbeba6130
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 32128d48bfac195530d70b60e67cfd4921fc001e
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857380"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941093"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Uppgradera till part- och globala adressboksmodellen.
 
@@ -52,11 +52,11 @@ Följande förutsättningar krävs:
 
 2. Logga in på [Microsoft Azure](https://portal.azure.com/).
 
-3. Skapa en [resursgrupp](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal).
+3. Skapa en [resursgrupp](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
-4. Skapa ett [lagringskonto](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal) i resursgruppen som du skapade.
+4. Skapa ett [lagringskonto](/azure/storage/common/storage-account-create?tabs=azure-portal) i resursgruppen som du skapade.
 
-5. Skapa en [datafabrik](https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-portal) i resursgruppen som du skapade ovan.
+5. Skapa en [datafabrik](/azure/data-factory/quickstart-create-data-factory-portal) i resursgruppen som du skapade ovan.
 
 6. Öppna datafabriken och välj panelen **Skapa och övervaka**.
 
@@ -81,7 +81,7 @@ Följande förutsättningar krävs:
     FO Linked Service_properties_type Properties_service Principal Id | Ange programmets klient-ID.
     Dynamics Crm Linked Service_properties_type Properties_username | Användarnamnet som ska kopplas till Dynamics.
 
-    Mer information finns i [Flytta upp en Resource Manager-mall för respektive miljö manuellt](https://docs.microsoft.com/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Kopplade tjänsteegenskaper](https://docs.microsoft.com/azure/data-factory/connector-dynamics-ax#linked-service-properties) samt [Kopiera data med hjälp av Azure Data Factory](https://docs.microsoft.com/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    Mer information finns i [Flytta upp en Resource Manager-mall för respektive miljö manuellt](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Kopplade tjänsteegenskaper](/azure/data-factory/connector-dynamics-ax#linked-service-properties) samt [Kopiera data med hjälp av Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. Efter distributionen kan du validera datauppsättningarna, dataflödet och länkad tjänst för datafabriken.
 
@@ -158,7 +158,7 @@ Följande förutsättningar krävs:
 8. Importera de nya **Part**-posterna i Finance and Operations-programmet.
 
     + Hämta filen `FONewParty.csv` från Azure blob-lagring. Sökvägen är `partybootstrapping/output/FONewParty.csv`.
-    + Konvertera filen `FONewParty.csv` till en Excel-fil och importera Excel-filen till Finance and Operations-programmet.  Om CSV-importen fungerar kan du importera CSV-filen direkt. Importen kan ta ett par timmar att köra, beroende på datavolymen. Mer information finns i [Översikt över dataimport- och exportjobb](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job).
+    + Konvertera filen `FONewParty.csv` till en Excel-fil och importera Excel-filen till Finance and Operations-programmet.  Om CSV-importen fungerar kan du importera CSV-filen direkt. Importen kan ta ett par timmar att köra, beroende på datavolymen. Mer information finns i [Översikt över dataimport- och exportjobb](../data-import-export-job.md).
 
     ![Importera poster för Datavers-parten](media/data-factory-import-party.png)
 

@@ -2,7 +2,8 @@
 title: Konfigurera en B2B-näthandelssajt
 description: I detta ämne beskrivs hur du ställer in en B2B-näthandelssajt ("business-to-business") i Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/20/2021
+manager: AnnBe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +15,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3c6ea6118c3ba0ab77fea91b2eafa75c89b8d71d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: db33bf941303c6a74f9c6b2d5a782762f7180f1b
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799767"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937516"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Konfigurera en näthandelsplats för B2B
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 näthandelssajter mellan företag (B2B) innehåller ett antal viktiga funktioner som optimerar arbetsflödet för en B2B-användare. I detta ämne beskrivs hur du ställer in en B2B-näthandelssajt ("business-to-business") i Microsoft Dynamics 365 Commerce. Ämnet avhandlar de moduler och webbplatsinställningar som måste konfigureras för att B2B-specifika scenarier ska kunna aktiveras.
 
@@ -283,9 +285,35 @@ Om du vill skapa en fakturainformationssida i webbplatsskaparen följer du stege
 1. Välj **Spara**, välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 1. Publicera sidans webbadress (URL).
 
+## <a name="add-a-quick-add-module-to-the-cart-page"></a>Lägga till en modul för snabbtillägg i vagnen
+
+Med hjälp av modulen för snabblägg kan du snabbt lägga till flera artiklar i vagnen med hjälp av artikel-ID:n (kallas även lagerhållningsenhet\[SKU\]-ID:n). Modulen för snabbtillägg läggs till på en kundvagnsidan på en webbplats.
+
+Om du vill lägga till en snabbtilläggsmodul på en kundvagnssida i Commerce-webbplatsbyggaren följer du stegen nedan.
+
+1. Gå till **Mallar** och välj webbplatsens mall för kundvagnssida.
+1. Välj **Redigera**.
+1. I platsen **Huvud** i modulen **Standardsida** markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
+1. I facket **behållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul** väljer du modulen **Snabbtillägg** och sedan **OK**.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
+1. Gå till **Sidor** och välj webbplatsens kundvagnssida.
+1. I platsen **Huvud** i modulen **Standardsida** markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
+1. I egenskapsfönstret för modulen **Behållare**, under **Bredd**, väljer du **Fyll behållare**.
+1. I facket **behållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul** väljer du modulen **Snabbtillägg** och sedan **OK**.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
+
+> [!NOTE] 
+> Snabbtilläggsmodulen är tillgänglig i från och med Commerce-version 10.0.17. Om du uppdaterar från en äldre version av Commerce måste du uppdatera filen appsettings.json manuellt. För instruktioner, se [SDK- och modulbiblioteksuppdateringar](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Modulbibliotek – översikt](../starter-kit-overview.md)
+
+[Uppdateringar av SDK och modulbibliotek](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)
 
 [Översikt över redigeringssidan](../authoring-home-overview.md)
 
@@ -299,7 +327,7 @@ Om du vill skapa en fakturainformationssida i webbplatsskaparen följer du stege
 
 [Innehållsblockmodul](../add-hero-module.md)
 
-[Produktsamling](../product-collection-module-overview.md)
+[Produktsamlingsmodul](../product-collection-module-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

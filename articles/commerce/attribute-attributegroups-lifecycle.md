@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 9d1d511fa83655dfcb383bdf2c1da84eb4e0ed3e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a49a0d05a55e72b5dae17933d38d03287a01d5ee
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797267"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936814"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Hantera attribut och attributsgrupper
 
@@ -101,7 +101,7 @@ Nedan följer de återstående alternativen för attributmetadata på sidan **At
 
 De här alternativen var ursprungligen avsedda till att förbättra sökfunktionen för onlinebutiken. Även om Commerce inte inkluderar skyltfönster online, inkluderar den eCommerce Publishing Software Development Kit (SDK). Kunderna kan använda denna SDK för att lägga in produkter i ett valfritt sökindex. Även om produktdata importeras bör kunder ändå kunna skilja mellan sökbar data, data som kan efterfrågas och så vidare. På så sätt kan de skapa ett optimalt index för att se till att de bara indexerar attribut som *enligt deras mening* bör indexeras.
 
-Information om syftet med dessa återstående alternativ finns i [Översikt över sökschemat i SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
+Information om syftet med dessa återstående alternativ finns i [Översikt över sökschemat i SharePoint Server 2013](/SharePoint/search/search-schema-overview).
 
 ## <a name="filter-settings-for-attributes"></a>Filterinställningar för attribut
 
@@ -160,7 +160,7 @@ En eller flera attributgrupper kan kopplas till kategorinoder i följande typer 
 Gör så här om du vill tilldela attributgrupper till kategorier i produkthierarki.
 
 1. Logga in på backoffice-klienten som marknadsföringschef.
-2. Gå till **Butik och handel** &gt; **Kategori- och produkthantering** &gt; **Produkthierarki och handel**.
+2. Gå till **Retail and Commerce** &gt; **Kategori- och produkthantering** &gt; **Produkthierarki och handel**.
 3. Välj **Modenavigeringshierarkin**.
 4. Under **Herrkläder** markerar du kategorin **Byxor** och sedan på snabbfliken **Produktattributgrupper** lägger du till en attributgrupp med namnet **Herrbälten**.
 5. Välj kategorin **Modesolglasögon** och kontrollera de nya attributen i attributgruppen **Modesolglasögon** genom att markera **Visa attributen**.
@@ -174,15 +174,15 @@ Gör så här om du vill tilldela attributgrupper till kategorier i produkthiera
 > [!NOTE]
 > Den här proceduren kan också användas för att tilldela attributgrupper till kategorier i kanalens navigeringskategorihierarki och tillägg för produktkategorihierarki. Använd följande sökvägar i steg 2:
 >
-> - Butik och handel &gt; Kategori- och produkthantering &gt; Navigeringskategorier för kanal
-> - Butik och handel &gt; Kategori- och produkthantering &gt; Ytterligare produktkategorier.
+> - Retail and Commerce &gt; Kategori- och produkthantering &gt; Navigeringskategorier för kanal
+> - Retail and Commerce &gt; Kategori- och produkthantering &gt; Ytterligare produktkategorier.
 
 ### <a name="assign-attribute-groups-to-stores"></a>Tilldela attributgrupper till butiker
 
 En eller flera attributgrupper som kan förknippas med en eller flera butiker i butikskategorihierarkin. När produkterna har förädlats för specifika butiker, de ärver de attribut som ingår i attributgrupper.
 
 1. Logga in på backoffice-klienten som marknadsföringschef.
-2. Gå till **Butik och handel** &gt; **Kanalinställningar** &gt; **Kanalkategorier och produktattribut**.
+2. Gå till **Retail and Commerce** &gt; **Kanalinställningar** &gt; **Kanalkategorier och produktattribut**.
 3. Tilldela attributgrupper till Houston-kanalen:
 
     1. Välj kanalen **Houston**.
@@ -209,7 +209,7 @@ Standardvärden för attribut kan åsidosättas för enskilda produkter på prod
 ### <a name="override-the-attribute-values-of-an-individual-product"></a>Åsidosätt attributvärdena för en enskild produkt
 
 1. Logga in på backoffice-klienten som marknadsföringschef.
-2. Gå till **Butik och handel** &gt; **Kategori- och produkthantering** &gt; **Frisläppta produkter efter kategori**.
+2. Gå till **Retail and Commerce** &gt; **Kategori- och produkthantering** &gt; **Frisläppta produkter efter kategori**.
 3. Välj kategorinoden **Mode**&gt;**Modeaccessoarer**&gt;**Modesolglasögon**.
 4. Välj den nödvändiga produkten i rutnätet. I åtgärdsfönstret, på fliken **Produkt**, i gruppen **Inställning**, markerar du sedan **Produktattribut**.
 5. Välj ett attribut i det vänstra fönstret och uppdatera dess värde i den högra rutan.
@@ -219,7 +219,7 @@ Standardvärden för attribut kan åsidosättas för enskilda produkter på prod
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>Åsidosätt attributvärdena för produkterna i en katalog
 
 1. Logga in på backoffice-klienten som marknadsföringschef.
-2. Gå till **Butik och handel** &gt; **kataloghantering** &gt; **alla kataloger**.
+2. Gå till **Retail and Commerce** &gt; **kataloghantering** &gt; **alla kataloger**.
 3. Välj katalogen **Fabrikam baskatalogen**.
 4. Välj kategorinoden **Mode**&gt;**Modeaccessoarer**&gt;**Modesolglasögon**.
 5. På snabbfliken **Produkter** väljer du den produktkvalitet som behövs och väljer sedan **Attribut** ovanför produktrutnätet.
@@ -238,7 +238,7 @@ Standardvärden för attribut kan åsidosättas för enskilda produkter på prod
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>Åsidosätt attributvärdena för produkterna i en kanal
 
 1. Logga in på backoffice-klienten som marknadsföringschef.
-2. Gå till **Butik och handel** &gt; **Kanalinställningar** &gt; **Kanalkategorier och produktattribut**.
+2. Gå till **Retail and Commerce** &gt; **Kanalinställningar** &gt; **Kanalkategorier och produktattribut**.
 3. Välj kanalen **Houston**.
 4. På snabbfliken **Produkter** väljer du den produktkvalitet som behövs och väljer sedan **Attribut** ovanför produktrutnätet.
 

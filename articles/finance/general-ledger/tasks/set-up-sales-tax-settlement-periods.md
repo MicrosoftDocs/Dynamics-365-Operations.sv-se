@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd11068a31b5324d87416e7c00f75a59743f695a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 83587df3963d215fec020150e6b707e431c1b6eb
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813517"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944787"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Ställ in momskvittningsperioder
 
@@ -37,9 +37,7 @@ I den här uppgiften används demonstrationsföretaget USMF.
 7. I fältet **Betalningsvillkor** väljer du önskad post i den nedrullningsbara menyn. Den relaterade skattemyndigheten kan ställas in som en leverantör och vid momskvittningen skapas en öppen leverantörsfaktura. Förfallodatumet för den öppna leverantörsfakturan definieras i betalningsvillkoren.  
 8. Välj en typ av kvittningsperiodintervall.
 9. Ange antalet periodintervallenheter per period. Till exempel har ett kvartal 3 månader.
-10. Markera eller avmarkera kryssrutan **Använd batchbearbetning för momskvittning**. Kvittningprocessen för kvittningsperioden kan behandlas som batchjobb i bakgrunden. Detta rekommenderas för ett stort antal momstransaktioner inom ett periodintervall.  
-    > [!NOTE]
-    > För närvarande stöds detta inte i Spanien, Japan och Nederländerna.
+10. Markera eller avmarkera kryssrutan **Använd batchbearbetning för momskvittning**. Kvittningprocessen för kvittningsperioden kan behandlas som batchjobb i bakgrunden. Detta rekommenderas för ett stort antal momstransaktioner inom ett periodintervall.
 11. Markera eller avmarkera kryssrutan **Förhindra att motbokade momstransaktioner genereras**. Som standard genereras motbokade momstransaktioner under kvittningsprocessen som kan orsaka prestandaproblem om det finns ett stort antal momstransaktioner inom ett periodintervall. Markera denna kryssruta för att förhindra att motbokade momstransaktioner genereras.
 12. Expandera fliken **Periodintervall**.
 13. Markera **Lägg till**.

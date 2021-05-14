@@ -1,8 +1,8 @@
 ---
-title: Hantera måttenhet
-description: I den här proceduren visas hur du definierar en måttenhet, anger översättningar för enheten och dess beskrivning och definierar konverteringsregler för relaterade enheter.
+title: Hantera måttenheter
+description: Detta ämne beskriver hur du definierar en måttenhet, anger översättningar för enheten och dess beskrivning, samt definierar konverteringsregler för relaterade enheter.
 author: sorenva
-ms.date: 07/08/2018
+ms.date: 04/09/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,53 +13,115 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 966e189e7395bec15d2c62735c6df3df2ab34b8a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d36839cd8e3398225d3421bf0f268068599ca49f
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817975"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921351"
 ---
-# <a name="manage-unit-of-measure"></a>Hantera måttenhet
+# <a name="manage-units-of-measure"></a>Hantera måttenheter
 
 [!include [banner](../../includes/banner.md)]
 
-I den här proceduren visas hur du definierar en måttenhet, anger översättningar för enheten och dess beskrivning och definierar konverteringsregler för relaterade enheter. Du kan gå igenom den här proceduren med hjälp av demodata eller använda egna data.
+Detta ämne beskriver hur du definierar en måttenhet, anger översättningar för enheten och dess beskrivning, samt definierar konverteringsregler för relaterade enheter.
 
-1. Gå till **Navigeringsfönster > Moduler > Produktinformationshantering > Underhåll av frisläppt produkt**.
-2. Klicka på **Enheter**.
+## <a name="open-the-units-page"></a>Öppna enhetssidan
 
-## <a name="create-a-unit-of-measure"></a>Skapa en måttenhet
-1. Klicka på **Ny**.
-2. Fältet **Enhet** anger du ett värde. Ange ID eller symbolen som ska användas när du refererar till måttenheten.  
-3. I fältet **Beskrivning** anger du ett värde. Ange ett beskrivande namn för måttenheten i systemspråket.  
-4. Välj ett alternativ i fältet **Enhetsklass**. Enhetsklassen definierar vilken logisk gruppering, till exempel område, massa eller kvantitet som måttenheten ingår i.  
-5. Ange ett nummer i fältet **Decimalprecision**. Ange antalet decimaler som den konverterade måttenheten måste avrundas till när en beräkning slutförs för måttenheten.  
-6. Klicka på **Spara**.
+Om du vill skapa och arbeta med tillgängliga måttenheter i systemet går du till **Organisationsadministration \> Inställningar \> Enheter \> Enheter**.
+
+I de återstående avsnitten i detta ämne beskrivs vad du kan göra på sidan **Enheter**.
+
+## <a name="create-standard-units-and-conversions"></a>Skapa standardenheter och konverteringar
+
+Om ditt system inte redan omfattar de mest använda måttenheterna för det metriska måttsystemet och/eller det amerikanska systemet (USCS) kan guiden för enhetsinställningar hjälpa dig att snabbt komma igång med grundläggande enhetsdefinitioner och konverteringar. Slutför guiden genom att välja **guiden för enhetsskapande** i åtgärdsfönstret och sedan följa instruktionerna på skärmen.
+
+## <a name="create-or-edit-a-unit-of-measure"></a>Skapa eller redigera en måttenhet
+
+Följ de här stegen om du vill skapa eller redigera en måttenhet.
+
+1. Gör något av följande:
+
+    - Om du vill redigera en befintlig enhet markerar du den i listfönstret.
+    - Om du vill skapa en ny enhet väljer du **Ny** i åtgärdsfönstret.
+
+1. Ange följande fält i den nya postrubriken:
+
+    - **Enhet** – Ange det ID eller den symbol som ska användas för att referera till enheten i systemspråket. Detta ID eller denna symbol är vanligtvis en vanlig förkortning för enheten, till exempel för *ea* för "each" ("varje") eller *cm* för centimeter.
+    - **Beskrivning** – Ange ett beskrivande namn för enheten i systemspråket. Detta är vanligtvis det fullständiga namnet på enheten, till exempel *Varje* eller *Centimeter*.
+
+1. På snabbfliken **Allmänt** ange följande fält:<!-- KFM: confirm this:    - **Fixed unit assignment** and **Fixed unit** – These fields have an effect only if you're using the Microsoft Retail Essentials product. If the current unit can be mapped to one of the fixed units that are used by Retail Essentials, set the **Fixed unit assignment** option to *Yes*. Then select the fixed unit in the **Fixed unit** field. -->
+
+    - **Enhetsklass** – Välj den egenskap som enheten mäter (t.ex. längd, område, massa eller kvantitet).
+    - **System med enheter** – Välj det måttsystem som enheten tillhör (*Metriska enheter* eller *USA-anpassade enheter*).
+    - **Basenhet** – Ange det här alternativet som *Ja* om du vill använda den aktuella enheten som basenhet för dess enhetsklass. I detta fall behöver du bara ange konverteringsfaktorn mellan basenheten och varje ytterligare enhet i enhetsklassen. Systemet kan sedan konvertera mellan alla enheter i denna enhetsklass. Därför är det enklare att ställa in konverteringar.
+
+        Om liter till exempel är basenhet för enhetsklassen *Volym*, behöver du bara ställa in konverteringsfaktorer från exempelvis quart till liter och från pint till liter. Systemet kan sedan även konvertera från quart till pint.
+
+        Du kan endast ha en basenhet per enhetsklass.
+
+    - **Systemenhet** – Ange det här alternativet som *Ja* om du vill använda den aktuella enheten som antagen enhet för alla icke-specificerade mått i dess enhetsklass. Om till exempel ett fält som används för att ange en kvantitet inte tillåter att en enhet anges (om användaren inte väljer någon enhet) använder systemet den enhet som har ställts in som systemenhet för enhetsklassen *Kvantitet*. Du kan endast ha en systemenhet per enhetsklass.
+    - **Decimalprecision** – Ange det antal decimaler som värden som anges för den aktuella enheten eller konverteras till ska avrundas till.
+
+1. Klicka på **Spara** i åtgärdsfönstret.
 
 ## <a name="define-unit-translations"></a>Definiera enhetsöversättningar
-1. Klicka på **Enhetstexter** i **åtgärdsfönstret**.
-2. Klicka på **Ny**. Använd enhettext om du vill skapa en översättning av ID:t eller en symbol som representerar måttenheten för användning på externa dokument i kund - eller leverantörsspecifika språk.  
-3. Ange eller välj ett värde i fältet **Språk**.
-4. Skriv ett värde i fältet **Text**.
-5. Klicka på **Spara**.
-6. Stäng sidan.
-7. Klicka på **Översatta enhetsbeskrivningar** i **åtgärdsfönstret**.
-8. Klicka på **Ny**. Definiera språkspecifika beskrivningar för måttenheten.  
-9. Ange eller välj ett värde i fältet **Språk**.
-10. I fältet **Beskrivning** anger du ett värde.
-11. Klicka på **Spara**.
-12. Stäng sidan.
+
+Gör på följande sätt om du vill definiera översättningar av ID:t eller symbolen samt beskrivningen av en måttenhet.
+
+1. Skapa eller välj enheten som översättningar ska skapas för.
+1. Välj **Enhetstexter** i åtgärdsfönstret.
+
+    Sidan **Enhetstexter** visas. På den här sidan definierar du översättningar av ID eller symbol för den valda enheten. Dessa översättningar kan sedan användas på externa dokument på kundspecifika eller leverantörsspecifika språk.
+
+1. Klicka på **Ny** i åtgärdsfönstret.
+1. I fältet **Språk** väljer du det språk du vill översätta enhetens ID eller symbol till.
+1. I fältet **Text** anger du översättningen av enhets-ID:t eller symbolen på det valda språket.
+1. Klicka på **Spara** i åtgärdsfönstret.
+1. Stäng sidan.
+1. Välj **Översatta enhetsbeskrivningar** i **åtgärdsfönstret**.
+
+    Sidan **Beskrivningar av den översatta enheten** visas. Du använder den här sidan när du vill definiera språkspecifika beskrivningar för den valda enheten.
+
+1. Klicka på **Ny** i åtgärdsfönstret.
+1. I fältet **Språk** väljer du det språk du vill översätta enhetens beskrivning till.
+1. I fältet **Beskrivning** anger du översättningen av enhetens beskrivning på det valda språket.
+1. Klicka på **Spara** i åtgärdsfönstret.
+1. Stäng sidan.
 
 ## <a name="define-unit-conversion-rules"></a>Definiera enhetskonverteringsregler
-1. Klicka på **Enhetskonversationer** i **åtgärdsfönstret**. Definiera regler för att konvertera måttenheten till och från andra enheter i den valda enhetsklassen.  
-2. Klicka på **Nytt** om du vill öppna dialogrutan.
-3. Ange ett nummer i fältet **Faktor**. Konverteringsfaktor mellan Från enhet och Till enhet. Till exempel är konverteringsfaktorn från centimeter till meter 100, eftersom det går 100 centimeter på en meter.  
-4. Ange eller välj ett värde i fältet **Till enhet**.
-5. Markera ett alternativ i fältet **Avrundning**. Definiera hur det konverterade värdet ska avrundas.  
-6. Klicka på **OK**.
-7. Stäng sidan.
 
+Följ de här stegen om du vill definiera regler för konvertering mellan måttenheter.
 
+1. Skapa eller välj den enhet som konverteringsregler ska definieras för.
+1. Välj **Enhetskonverteringar** i åtgärdsfönstret.
+
+    Sidan **Enhetskonverteringar** visas. Du kan använda denna sida för att definiera regler för att konvertera den valda enheten till och från andra enheter i enhetsklassen.
+
+1. Välj en av följande flikar, beroende på vilken typ av konvertering som du vill ställa in:
+
+    - **Standardkonverteringar** – Ställ in standardkonverteringsregler för alla produkter.
+    - **Konverteringar inom klass** – Ställ in produktspecifika konverteringsregler för enheter i samma enhetsklass.
+    - **Konverteringar mellan klasser** – Ställ in produktspecifika konverteringsregler för enheter i flera olika enhetsklasser.
+
+1. Gör något av följande:
+
+    - Om du vill skapa en ny konvertering väljer du **Ny** i verktygsfältet.
+    - Om du vill redigera en befintlig konvertering markerar du konverteringen i rutnätet och väljer sedan **Redigera** i verktygsfältet.
+
+1. Ställ in följande fält i dialogrutan för listrutan som visas:
+
+    - **Produkt** – Välj den specifika produkt som konverteringen gäller för. Detta fält är endast tillgängligt för konverteringar inom klass och mellan klasser.
+    - **Formellayout** – Lämna det här fältet inställt på *Enkelt* om du vill ange en enkel konvertering som har en enda faktor. Ställ in den *Avancerat* för att ställa in en mer komplex formel. Formatet för avancerade formler varierar beroende på enhetsklassen.
+    - **Från enhet** – I det här fältet visas den valda enheten. Vanligtvis ska du inte ändra värdet. (Om du ändrar värdet måste du öppna sidan **Enhetskonverteringar** för den valda enheten, detta om du vill visa den nya konverteringen när du har sparat den.)
+    - **Till enhet** – Välj enheten du vill konvertera till.
+    - **Avrundning** – Välj hur en del ska avrundas, baserat på det **decimalvärde** som den valda enheten har (*Till närmaste*, *Upp* eller *Ned*).
+    - **Konverteringsformel** – Använd de återstående fälten högst upp i listrutans dialogruta för att ange formeln för konvertering mellan de två enheterna. Vilka fält som finns tillgängliga varierar beroende på den enhetsklass och receptlayout som du har valt.
+
+1. Välj **OK**.
+1. Stäng sidan.
+
+> [!TIP]
+> Du kan även ställa in enhetskonverteringar per produktvariant. Mer information finns i [Måttenhetskonvertering per produktvariant](../uom-conversion-per-product-variant.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

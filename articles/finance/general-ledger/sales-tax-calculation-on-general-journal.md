@@ -2,25 +2,25 @@
 title: Momsberäkning för allmänna journalrader
 description: Det här ämnet förklarar hur moms beräknas för olika typer av konton (leverantör, kund, redovisning och projekt) på allmänna journalrader.
 author: EricWang
-ms.date: 08/14/2019
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: roschlom
+ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: e4d367fe6cb729c9c5658a9bbbac04e53fdf9644
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815342"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937316"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Momsberäkning för allmänna journalrader
 [!include [banner](../includes/banner.md)]
@@ -117,7 +117,7 @@ I det här avsnittet beskrivs hur tecknet för momsbelopp beräknas.
 
 ![Sidan momstransaktioner](media/sales-tax-amount-sign.jpg)
 
-I följande tabell visas den allmänna regeln för bestämning av momsbelopp i det tillfälliga momsregistret.
+I följande register visas den allmänna regeln för bestämning av momsriktning och tecken på momsbelopp i det tillfälliga momsregistret.
 
 | Journalradsbelopp | Momsriktning  | Momsbelopptecken |
 |---------------------|----------------------|-----------------------|
@@ -126,7 +126,7 @@ I följande tabell visas den allmänna regeln för bestämning av momsbelopp i d
 | Negativa            | Ingående moms | Negativa              |
 | Negativa            | Utgående moms    | Positiva              |
 
-Det finns en särskild regel för verifikationer som bara har raderna **Projekt** eller **Redovisning** när en moms grupp eller artikelmomsgrupp har valts på raden **Redovisning**. Den här regeln styrs genom aktivering av oberoende momsberäkningsfunktion för allmänna journaler. När den här funktionen inaktiveras använder momsbeloppet för raden **redovisning** debet-/kreditriktningen för raden **projekt**. När den här funktionen aktiveras använder momsbeloppet för raden **redovisning** debet-/kreditriktningen. I följande tabeller visas regeln för varje scenario. 
+Det finns en särskild regel för verifikationer som bara har raderna **Projekt** eller **Redovisning** när en moms grupp eller artikelmomsgrupp har valts på raden **Redovisning**. Denna regel styrs genom funktionen **Aktivera funktionen för oboeroende momsberäkning för allmänna journaler**. När den här funktionen inaktiveras använder momsbeloppet för raden **redovisning** debet-/kreditriktningen för raden **projekt**. När den här funktionen aktiveras använder momsbeloppet för raden **redovisning** debet-/kreditriktningen. I följande tabeller visas regeln för varje scenario. 
 
 **Regel när funktionen är aktiverad**
 

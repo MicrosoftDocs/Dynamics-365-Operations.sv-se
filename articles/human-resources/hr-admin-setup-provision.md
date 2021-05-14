@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 177586068ddb86943f8013722e1be9e63c53fa0f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: fee496157db581bf77f444674ca858aa4383e27c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889798"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963226"
 ---
 # <a name="provision-human-resources"></a>Reservera Personal
 
@@ -37,7 +37,7 @@ För att komma igång måste en global administratör logga in på [Microsoft Dy
 
 Innan du skapar din första Personal-miljö bör du noggrant planera miljöbehoven för ditt projekt. Ett basabonnemang på Personal innehåller två miljöer: en produktionsmiljö och en sandbox-miljö. Beroende på hur komplext ditt projekt är, kanske du måste köpa in ytterligare sandbox-miljöer för att kunna stödja projektaktiviteter. 
 
-Att tänka på vid ytterligare miljöer är - men begränsas inte till - följande:
+Att tänka på vid ytterligare miljöer är – men begränsas inte till – följande:
 
 - **Datamigrering**: Du kan komma att behöva överväga en ytterligare miljö för datamigreringsaktiviteter så att din sandbox-miljö kan användas i testsyfte under hela projektets gångf. Om det finns ytterligare en miljö kan datamigreringsaktiviteter fortsätta samtidigt som tester och konfigurationsaktiviteter sker i en annan miljö.
 - **Integrering**: Du kanske måste överväga att skapa ytterligare en miljö för att konfigurera och testa integrationer. Detta kan innefatta inbyggda integrationer som Ceridian Dayforce LinkedIn Talent Hub-integreringar eller anpassade integreringar som exempelvis för löne-, sökandespårningssystem eller förmånssystem och leverantörer.
@@ -55,6 +55,9 @@ Att tänka på vid ytterligare miljöer är - men begränsas inte till - följan
 För att hantera dina Personal-miljöer med LCS måste först skapa ett LCS-projekt.
 
 1. Logga in på [LCS](https://lcs.dynamics.com/Logon/Index) med det konto som du använder för din Personal-prenumeration.
+
+   > [!NOTE]
+   > För att säkerställa ett lyckat tillhandahållande måste det konto som du använder för att tillhandahålla Personal-miljön tilldelas antingen rollen **Systemadministratör** eller rollen **Systemanpassare** i den Power Apps-miljö som är kopplad till Personal-miljön. Se [Konfigurera användarsäkerhet för resurser](https://docs.microsoft.com/power-platform/admin/database-security) för mer information om hur du tilldelar säkerhetsroller till användare i Power Platform.
 
 2. Klicka på plustecknet (**+**) för att skapa ett projekt.
 
@@ -115,13 +118,30 @@ Använd följande riktlinjer när du bestämmer vilka Power Apps-miljöer som sk
    
     - **Testmiljöer** – dessa miljöer skapas med ett utgångsdatum. Efter förfallodatum kommer din miljö och alla personalinstanser som finns i den att tas bort automatiskt.
    
-    - **Regioner som inte stöds** För närvarande stöds bara Personal i följande regioner: USA, Europa, Storbritannien, Australien, Kanada och Asien.
-
-    > [!NOTE]
-    > Personal är etablerad i samma region där Power Apps-miljön har etablerats. Migrering av personalmiljöer till en annan region stöds inte.
+    - **Ej stödda områden** - Miljön måste finnas i ett geografiskt område som stöds. Mer information finns i [Områden som stöds](hr-admin-setup-provision.md#supported-geographies).
 
 6. När du har kontrollerat den korrekta miljön kan du fortsätta med etableringsprocessen. 
- 
+
+### <a name="supported-geographies"></a>Områden som stöds
+
+Personal har för närvarande stöd för följande områden:
+
+- USA
+- Europa
+- Storbritannien
+- Australien
+- Kanada
+- Asien 
+
+När du skapar en Personal-miljö väljer du en Power Apps-miljö att koppla till Personal-miljön. Personal-miljön tillhandahålls sedan i samma Azure-område som den valda Power Apps-miljön. Du kan välja var Personal-miljön och -databasen finns rent fysiskt genom att välja område när du skapar den Power Apps-miljö som ska associeras med Personal-miljön.
+
+Du kan välja det Azure-*område* där miljön tillhandahålls, men du kan inte välja den specifika Azure-*-regionen*. Vid automation fastställs den specifika region inom den område där miljön skapas i syfte att optimera belastningsutjämning och prestanda. Du hittar information om Azure-områden och -regioner i dokumentationen om [Azure-områden](https://azure.microsoft.com/global-infrastructure/geographies).
+
+Datan för Personal-miljön finns alltid i det Azure-område som den skapas i. Den finns dock inte alltid inom samma Azure-region. I haveriberedskapssyfte replikeras datan både i den primära Azure-regionen och i en sekundär redundansregion inom området.
+
+ > [!NOTE]
+ > Migrering av Personal-miljöer från en Azure-region till en annan stöds inte.
+
 ## <a name="grant-access-to-the-environment"></a>Bevilja åtkomst till miljön.
 
 Som standard har den globala administratör som skapade miljön åtkomst till den. Du måste uttryckligen bevilja åtkomst till ytterligare appanvändare. Du måste lägga till användare och tilldela dem lämpliga roller i Personal-miljön. Global administratör som har distribuerat Personal måste också starta både Attract och Onboard för att slutföra initieringen och aktivera åtkomst för andra innehavare. Tills detta inträffar kan andra användare inte komma åt Onboard och Attract och får åtkomstfel. Mer information finns i [skapa nya användare](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) och [tilldela användare till säkerhetsroller](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

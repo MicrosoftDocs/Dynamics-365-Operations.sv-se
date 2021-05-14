@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f7e412b7365901e18f476758aa3c5d43de590b2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f8489cc8eac8013041d4c138930feab57e43b81d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811616"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920915"
 ---
 # <a name="create-working-time-scheduling-properties"></a>Skapa planeringsegenskaper för arbetstider
 
@@ -27,19 +27,21 @@ ms.locfileid: "5811616"
 
 Planeringsegenskaper för arbetstider används när du kategoriserar arbetstidsintervall och definierar inställningar som operatörer måste ta med i beräkningen. I proceduren visas definition av en planeringsegenskap för arbetstid och tillhörande egenskapsvärden. Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data.
 
-1. Gå till Alla arbetsytor > Livscykelhantering för resurs.
-2. Klicka på Egenskaper.
+1. Gå till **Arbetsytor \> Livscykelhantering för resurser**.
+2. Välj **Egenskaper**.
 
 ## <a name="create-property"></a>Skapa egenskap
-1. Klicka på Ny.
-2. Ange ett värde i fältet Egenskap.
-3. Skriv ett värde i fältet Namn.
+
+1. Välj **Ny**.
+2. Ange ett värde i fältet **Egenskap**.
+3. Skriv ett värde i fältet **Namn**.
 
 ## <a name="create-property-values"></a>Skapa egenskapsvärden
+
 1. Markera vald rad i listan.
-2. Skriv ett värde i fältet Namn.
-3. Ange ett värde i fältet Värde.
-4. Klicka på Spara.
+2. Skriv ett värde i fältet **Namn**.
+3. Ange ett värde i fältet **Värde**.
+4. Välj **Spara**.
 
 
 

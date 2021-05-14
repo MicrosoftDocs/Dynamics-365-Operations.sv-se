@@ -1,8 +1,8 @@
 ---
 title: Budgetöversikt
 description: I stort sett alla företag som använder funktionen ekonomi i Microsoft Dynamics 365 Finance måste kunna skapa rapporter över budget kontra faktiska värden. Den här artikeln beskriver den minimikonfiguration som krävs för att skapa budgetar i Finance and Operations eller läsa in dem från ett tredjepartsprogram.
-author: ShylaThompson
-ms.date: 01/11/2018
+author: panolte
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
-ms.author: sigitac
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70428d6603939d8a36c0d3452e6ffdc6e3864865
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 02122d9145552952412c239a7f541e6a727f061e
+ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827468"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5960059"
 ---
 # <a name="budgeting-overview"></a>Budgetöversikt
 
@@ -71,7 +71,7 @@ Funktioner som introducerades i Microsoft Dynamics 365 Finance version 10.0.7 (2
 
 Med funktionen endast **budgetregisterposter för kvantitet** kan du bokföra en budgetregisterpost med endast belopp. Du kan till exempel bokföra en budgettransaktion med kvantiteten 32 och priset noll, vilket resulterar i ett belopp på noll. Du kan sedan använda den här kvantiteten inom ramen för en ekonomisk rapport för att fastställa ett pris per kvantitet. Observera att inga förfrågningar eller rapporter har uppdaterats som en del av den här funktionen. med hjälp av funktionen kan du bara bokföra ett belopp på noll.
 
-Funktionen **Budgetregisterposter som är standard med beloppstyp** tillåter att standardbeloppstypen i en budgetregisterpost är en annan beloppstyp än utgift. Budgetregisterpostraden används nu som standard för utgift när huvudkontotypen är utgift. Blir standardvärdet för intäkter när huvudkontotypen är utgift. Blir standardkostnad görs för alla andra kontotyper.
+Funktionen **Budgetregisterposter som är standard med beloppstyp** tillåter att standardbeloppstypen i en budgetregisterpost är en annan beloppstyp än utgift. Budgetregisterpostraden används nu som standard för utgift när huvudkontotypen är utgift. Den återställs till intäkt när huvudkontotypen är intäkt, och återställs till utgift för alla andra kontotyper.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Med hjälp av arbetsytor och utredning sidor till bana budget vs. actuals
 Den budgetansvarige kan granska det aktuella tillståndet för en budget i **huvudboken budgetar och prognoser som** arbetsyta. **Kostnader över budget** och **intäkterna under budget** flikar ger en snabb överblick över den ekonomiska dimensionen kombinationer där budgetmål inte uppfylls eller närmar sig gränsen. Du kan anpassa budgeten tröskelprocentsats och finansiella mått som används på dessa flikar genom att klicka på **Konfigurera min arbetsyta**. Du kan klicka på **enheten chefer** att se de anställda som är ansvariga för specifik ekonomisk dimension kombinationer som är vald på dessa flikar. Om du till exempel ser att budget för den operativa avdelningen går över budget tröskelvärde kan du enkelt hitta och kontakta avdelningen för att diskutera frågan. 

@@ -2,7 +2,8 @@
 title: Modul för mediegalleri
 description: Det här avsnittet handlar om modul för mediegalleri och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +15,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b0b1ec7324ff60ee7cdd01c97c8c08260bd8c947
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de0bc650393b035adea4570c5e64ecb76283117e
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802825"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937396"
 ---
 # <a name="media-gallery-module"></a>Modul för mediegalleri
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Det här avsnittet handlar om modul för mediegalleri och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 
@@ -49,11 +51,13 @@ I exemplet nedan är en inköpsrruta på ett PDP-program värd för produktbilde
 |---------------|--------|-------------|
 | Bildkälla | **Sidkontext** eller **produkt-ID** | Standardvärdet är **sidkontext**. Om **sidkontext** väljs förväntar modulen att sidan med produkt-ID-information. Om **produkt-ID** väljs måste produkt-ID:t för en avbildning anges som värdet för egenskapen **produkt-ID**. Den här funktionen är tillgänglig i Commerce version 10.0.12. |
 | Produkt-ID | En produkt ID | Den här egenskapen används endast om värdet på egenskapen **bildkälla** är **produkt-ID**. |
-| Bildzoomning | **Infogad** eller **behållare** | Med den här egenskapen kan användaren zooma bilder i modulen mediegalleri. En bild kan antingen zoomas in eller i en separat behållare bredvid bilden. Den här egenskapen är inte tillgänglig 10.0.12 |
-| Zoomningsskala | Ett decimalnummer | Den här egenskapen anger skalningsfaktorn för zoomning av bilder. Om värdet till exempel är inställt på **2,5** blir bilderna för stora än 2,5 gånger.|
-| Helskärm | **Sant** eller **falskt** | Den här egenskapen anger om bilder kan visas i helskärmsläge. I helskärmsläge kan bilder också förstoras ytterligare om zoomningsfunktionen är aktiverad. Den här funktionen är tillgänglig i Commerce version 10.0.13. |
+| Bildzoomning | **Infogad** eller **behållare** | Med den här egenskapen kan användaren zooma bilder i modulen mediegalleri. En bild kan antingen zoomas in eller i en separat behållare bredvid bilden. Denna funktion blir 10.0.12. |
+| Zoomningsfaktor | Ett decimalnummer | Den här egenskapen anger skalningsfaktorn för zoomning av bilder. Om värdet till exempel är inställt på **2,5** blir bilderna för stora än 2,5 gånger. |
+| Helskärm | **Sant** eller **falskt** | Den här egenskapen anger om bilder kan visas i helskärmsläge. I helskärmsläge kan bilder också förstoras ytterligare om zoomningsfunktionen är aktiverad. Denna funktion är tillgänglig i Commerce version 10.0.13. |
+| Zoomad bildkvalitet | Ett värde från 1 till 100 som motsvarar en procentsats och som väljs med hjälp av ett styrfält. | Egenskapen definierar bildkvaliteten för inzoomade bilder. Denna kan ställas in på 100 procent om du vill att en zoomad bild alltid ska använda den högsta möjliga upplösningen. Denna egenskap kan inte användas på PNG-filer eftersom dessa använder ett förlustfritt format. Denna funktion är tillgänglig från och med Commerce-versionen 10.0.19. |
 | Bilder | Bilder som väljs från webbplatsskaparen för mediebibliotek | Förutom att de återges från en produkt kan bilder granskas för en modulen mediegalleriet. Dessa bilder kommer att läggas till alla produktbilder som finns tillgängliga. Den här funktionen är tillgänglig i Commerce version 10.0.12. |
 | Miniatyrorientering | **Lodrät** eller **vågrät** | Den här egenskapen anger om miniatyrbilder ska visas i en lodrät remsa eller som en vågrät remsa. |
+| Dölj huvudproduktbilder för variant | **Sant** eller **falskt** | Om denna egenskap anges som **True** kommer, när en variant väljs, bilder på huvudprodukten att döljas såvida varianten inte är bildfri. Egenskapen påverkar inte produkter som inte har några varianter. |
 
 Följande illustration visar ett exempel på en modul mediegalleri där helskärms- och zoomningsalternativen är tillgängliga.
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: e0db5c35e58ab7a7cbf31642072d25ee5d8ba868
-ms.sourcegitcommit: 04817103dc8e87a679d371575927284b8ce080b6
+ms.openlocfilehash: 93d025759f86ffeb0ee1f1e6e6e2aeb3ab341b75
+ms.sourcegitcommit: 4ba25601eba295bd9057f7fb5e85f1f6764f5a27
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5898297"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5965320"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Borttagna och utfasade funktioner i Dynamics 365 Finance
 
@@ -104,7 +104,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10012-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.12 utgåva
 
-### <a name="polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Polsk SSRS-rapporter: utgående momsregister, ingående momsregister, sammanfattande EU-momsregister – funktionsreferens PL-00014
+### <a name="not-deprecated-polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Ej inaktuella: polska SSRS-rapporter: utgående momsregister, ingående momsregister, sammanfattande EU-momsregister – funktionsreferens PL-00014
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -112,7 +112,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 | **Ersatt av en annan funktion?**   | Ja (Excel-format för standardgranskningsfil med momsdeklaration – JPK_VDEK) |
 | **Produktområden som påverkas**         | Ansökning |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Föråldrad: den 1 juli 2021 planerar vi att inte längre stödja SSRS-rapporter: **utgående momsregister, ingående momsregister, sammanfattande EU-momsregister – funktionsreferens PL-00014**. Excel-format exempel för standard granskningsfil med momsdeklaration (JPK_VDEK) kommer att införas i stället. |
+| **Status**                         | Ej inaktuella: Per den 27 juli 2021 planerar vi att fortsätta stödja SSRS-rapporter: **utgående momsregister, ingående momsregister, sammanfattande EU-momsregister – funktionsreferens PL-00014**. Excel-formatexempel för standardverifieringsfil med momsdeklaration (JPK_VDEK) har också införts. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.11 utgåva
 

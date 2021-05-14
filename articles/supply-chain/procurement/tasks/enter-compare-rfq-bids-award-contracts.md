@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e7abe133c4d2c7a515c75709bd5616c83ebbcc6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0acff4165ef4d61fb0d14a8f365273ea43fac7d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812000"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920591"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Ange och jämför anbudsförfråganbud och tilldela kontrakt
 
@@ -32,7 +32,7 @@ Du kan ange budet som antingen leverantör eller anskaffningsproffs. Mer informa
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Ange ett svar som leverantör
 
-1. På instrumentpanelen väljer du **Budgivning av leverantör**.
+1. Gå till **Leverantörssamarbete \> Arbetsytor \> Leverantörsbudgivning**.
 2. I listan **Nya budinbjudningar**, hitta en anbudsförfrågan som precis skickades. Välj anbudsförfrågan som ska granskas efter önskemål.
 3. Markera **bifogade anbudsförfrågan** för att granska bilagor som har lagts till.
 4. Välj **bud** om du vill göra fälten redigerbara. Observera att fältet **budförlopp** är inställt **leverantören uppdaterar**.
@@ -74,7 +74,7 @@ Du kan ange budet som antingen leverantör eller anskaffningsproffs. Mer informa
 1. Välj **Jämför svar** på fliken **Allmänt** i åtgärdsfönstret.
 2. I fältet **Rangordning** anger du ett nummer.  
     - På den här sidan visas buden med rubriken och radinformationen och den totala på poängen på rubriknivån. Du kan jämföra raderna genom att sortera i rutnätet så att jämförbara rader finns bredvid varandra. I det här avsnittet ingår även följande information:
-    - **Kvantitet** - Kvantiteten som leverantören angav. Denna kvantitet kanske inte är lika med kvantiteten som specificerats i anbudsförfrågan.
+    - **Kvantitet** – Kvantiteten som leverantören angav. Denna kvantitet kanske inte är lika med kvantiteten som specificerats i anbudsförfrågan.
     - **Nettobelopp**: priset som anges av en leverantör för artiklarna på raden minus eventuella rabatter.
     - **Avvikelse**: Antal dagar som leveransdatumet i budhuvud eller raden avviker från det begärda leveransdatumet i huvudet för anbudsförfrågan eller anbudsförfråganraden. Du kan ange en ranking för varje bud.  
 3. Välj rubrikrad för det andra budet som du vill rangordna.

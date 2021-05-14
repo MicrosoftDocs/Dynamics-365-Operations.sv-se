@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: a63ff89a6fcbffc57eff14f310a080a35521ef34
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0c29d68b29475c2c7040d06e60f7624c49a42002
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890086"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951942"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>Optimera planerade BYOD batchjobb
 
@@ -89,6 +89,12 @@ BYOD-funktionen har följande begränsningar:
 **Utfärda:** när en fullständig push-överföring görs för en entitet visas en stor uppsättning poster i BYOD när du använder uttrycket **Select**. När du gör en stegvis push-överföring ser du dock bara några få poster i BYOD. Det verkar som om den stegvisa push-överföringen tog bort alla posterna och bara lagt till de ändrade posterna i BYOD.
 
 **Lösning:** Tabellen SQL ändringsspårning kanske inte är i förväntat tillstånd. I fall av den här typen rekommenderar vi att du inaktiverar spårning av ändringar för enheten och sedan slår på den igen. Mer information finns i [Aktivera ändringsspårning för entiteter](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+
+### <a name="staging-tables-arent-clearing"></a>Mellanlagringsregister rensas inte
+
+**Problem:** När du använder mellanlagring för projektet rensas inte mellanlagringsregistren på rätt sätt. Datan i registren fortsätter sedan att växa, vilket leder till prestandaproblem.
+
+**Lösning:** Sju dagars historik bibehålls i mellanlagringsregistren. Historiska data som är äldre än sju dagar tas automatiskt bort från mellanlagringsregistren av batchjobbet **Importera/exportera rensning av mellanlagring**. Om detta jobb fastnar kommer registren inte att rensas korrekt. Om du startar om batchjobbet fortsätter processen så att mellanlagringsregistren rensas automatiskt.
 
 ## <a name="see-also"></a>Se även
 

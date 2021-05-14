@@ -1,8 +1,8 @@
 ---
 title: Karantänorder
-description: Den här ämnet beskriver hur karantänorder används för att blockera lagret.
+description: Detta ämne beskriver hur du använder karantänorder för att blockera lager.
 author: perlynne
-ms.date: 11/02/2017
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,31 +15,48 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a44909a7880b0cd53e39ccbadf8b79ae5c9dafc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5e1eed14b7d38cf569af7192dec9580e771f06df
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834227"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956192"
 ---
 # <a name="quarantine-orders"></a>Karantänorder
 
 [!include [banner](../includes/banner.md)]
 
-Den här ämnet beskriver hur karantänorder används för att blockera lagret.
+Detta ämne beskriver hur du använder karantänorder för att blockera lager.
 
-Karantänorder kan användas för att blockera lagret. Du kanske vill sätta artiklar i karantän på grund av kvalitetskontroll. Lager som har varit i karantän överförs till ett karantänlagerställe. **Obs!** Om du använder avancerade lagerstyrningsprocesser (i Lagerstyrning) används bearbetning i karantänorder endast för returförsäljningsorder.
+Med karantänorder kan du spärra lager. Du kanske vill sätta artiklar i karantän på grund av kvalitetskontroll. Lager som har varit i karantän överförs till ett karantänlagerställe.
+
+> [!NOTE]
+> Om du använder avancerade lagerstyrningsprocesser (i Lagerstyrning) används bearbetning i karantänorder endast för returförsäljningsorder.
 
 ## <a name="quarantine-on-hand-inventory-items"></a>Sätta lagerbehållningsartiklar i karantän
-När du sätter objekt i karantän kan du antingen skapa karantänorder manuellt eller ställa in systemet för att skapa karantänorder automatiskt under inkommande bearbetning. Skapa karantänorder automatiskt genom att välja alternativet **Karantänhantering** på fliken **Lagerpolicyer** på sidan **Artikelmodellgrupper**. Du måste även ange ett standardkarantänlagerställe i **Karantänlagerställe**-fältet för mottagande lagerställen. När fysiskt lager registreras i en inköpsorder eller produktionsorder, objekt i karantän flyttas automatisk till ett karantänlagerställe i Supply Chain Management. Dessa förflyttningar inträffar eftersom karantänorderns status ändras till **Startat**. När du skapar karantänorder manuellt, artikeln måste inte vara inställd för karantänhantering i den associerade artikelmodellgruppen. För den här processen måste du ange lagerbehållning som ska finns i karantän och karantänlagerstället som ska användas. Du kan använda karantänorderstatusen för att planera processen.
+
+När du sätter objekt i karantän kan du antingen skapa karantänorder manuellt eller ställa in systemet för att skapa dem automatiskt under inkommande bearbetning.
+
+Om du vill ställa in systemet att automatiskt generera karantänorder följer du dessa steg.
+
+1. Gå till **Lagerhantering \> Inställningar \> Lager \> Modellgrupper för artiklar**.
+1. Välj en relevant modellgrupp i listfönstret eller skapa en ny modellgrupp.
+1. På snabbfliken **Lagerpolicyer** väljer du kryssrutan **Karantänhantering**.
+1. Stäng sidan.
+1. I fältet **Karantänlagerställe** för mottagande lagerställen anger du ett förvalt karantänlagerställe.
+
+När en artikel som registreras som inleverans på lagerstället tillhör en modellgrupp där kryssrutan **Karantänhantering** har valts, kommer systemet att generera en karantänorder för den. Karantänordern ger medarbetare instruktioner att flytta artikeln till karantänlagerstället.
+
+När du skapar karantänorder manuellt på sidan **Karantänorder** måste inte artikeln vara inställd för karantänhantering i den associerade artikelmodellgruppen. För den här processen måste du ange lagerbehållning som ska finns i karantän och karantänlagerstället som ska användas. Du kan använda karantänorderstatusen för att planera processen.
 
 ## <a name="quarantine-order-statuses"></a>Karantänorder status
+
 Karantänorder kan ha följande status:
 
--   Skapad
--   Startat
--   Rapporterat som färdigt
--   Avslutat
+- Skapad
+- Startat
+- Rapporterat som färdigt
+- Avslutat
 
 ### <a name="created"></a>Skapad
 
@@ -51,19 +68,18 @@ När en karantänorder har statusen **Startat** lagret överförs från det vanl
 
 ### <a name="reported-as-finished"></a>Rapporterat som färdigt
 
-Genom att klicka på **rapportera som färdiga**, du kan rapportera en började karantänorder som färdiga. Posten är frisläppt från karantänen men ännu inte flyttad tillbaka till den vanliga lager. Förflyttningen tillbaka till det vanliga lagret kan vara bearbetad via en alternativ artikelinförsel som kan initieras under processen Rapportera som färdig.
+Om du vill rapportera en startad karantänorder som färdig, öppnar du ordern och väljer **Rapportera som färdig** i åtgärdsfönstret. Posten är frisläppt från karantänen men ännu inte flyttad tillbaka till det vanliga lagerstället. Förflyttningen tillbaka till det vanliga lagerstället kan bearbetas via en journal för artikelinförsel som kan initieras under rapporteringen som en färdig process.
 
 ### <a name="ended"></a>Avslutat
 
-När en karantänorder avslutas, objektet flyttas från karantänlagerstället tillbaka till vanliga lagret. Status för objekt transaktion **säljs** på karantänlagerställe och **köpas** på regelbundna lager.
+När en karantänorder avslutas, objektet flyttas från karantänlagerstället tillbaka till vanliga lagret. Status för objekt transaktion *säljs* på karantänlagerställe och *köpas* på regelbundna lager.
 
 ## <a name="quarantine-order-scrap"></a>Karantänorder skrot
-Som en del av karantänorderprocessen du kan kassera lagerartiklar. När du bearbetar kassationer, lagerstatusen kommer att sättas till **Sålt** genom en inleveranstransaktion från karantänlagerstället.
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+Som en del av karantänorderprocessen du kan kassera lagerartiklar. När du bearbetar kassationer kommer lagerstatusen att anges som *Sålt* genom en ärendetransaktion från karantänlagerstället.
 
-[Lagerspärr](inventory-blocking.md)
+## <a name="additional-resources"></a>Ytterligare resurser
 
+- [Lagerspärr](inventory-blocking.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

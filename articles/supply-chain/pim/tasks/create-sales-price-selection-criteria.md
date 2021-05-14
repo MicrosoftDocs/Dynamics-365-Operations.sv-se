@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5a616dcfdd755efc9bf0473e9239acb9127f11f8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 69d22c3321beaa2667ee20bff00acd746714b993
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818167"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920541"
 ---
 # <a name="create-sales-price-selection-criteria"></a>Skapa urvalskriterier för försäljningspris
 
@@ -26,30 +26,30 @@ ms.locfileid: "5818167"
 
 I den här proceduren visas hur du skapar ett kriterier för urval för försäljningspris för attributbaserade försäljningsprismodeller. Denna procedur kräver att minst en modell för försäljningspris är tillgänglig. I det här exemplet används prismodellen för försäljningsprismodellen Speaker solution i demonstrationdataföretaget USMF. Vanligtvis använder en produktchef denna procedur.
 
-
 ## <a name="add-a-new-criterion-for-an-existing-sales-price-model"></a>Lägga till ett nytt kriterium för en befintlig försäljningsprismodell
-1. Klicka på Definition av produktvariantmodell.
-2. Klicka på Modeller för produktkonfiguration.
-3. Markera raden för produktmodellen för Speaker solution i listan, men inte klicka på länken för modellnamn.
-4. Klicka på Modell i åtgärdsfönstret.
-5. Klicka på Price model criteria.
-6. Klicka på Ny.
-7. Ange "Customer group 10" i namnfältet.
+
+1. Gå till **Produktinformationshantering \> Produkter \> Produktkonfigurationsmodeller**.
+1. Markera raden för produktmodellen för högtalarlösning i listan, men markera inte länken för modellnamn.
+1. Klicka på **Modell** i åtgärdsfönstret.
+1. Välj **Prismodellkriterier**.
+1. Välj **Ny**.
+1. I fältet **Namn** anger du "Kundgrupp 10".
     * Namnet på prismodellvillkoret används för att hjälpa dig identifiera underliggande urvalskriterier.  
-8. Ange eller välj ett värde i fältet Price model.
-9. Välj Sales order i fältet Order type.
+1. Ange eller välj ett värde i fältet **Prismodell**.
+1. I fältet **Ordertyp** väljer du *Försäljningsorder*.
     * Ordertypen bestämmer vilka databasfält som ska vara tillgängliga för urvalsförfrågan.  
-10. Ange ett datum i fältet för Valid from.
-11. Ange ett datum i fältet Expire by.
-12. Klicka på Spara.
+1. Ange ett datum i fältet **Giltigt från**.
+1. Ange ett datum i fältet **Löp ut den**.
+1. Välj **Spara**.
 
 ## <a name="create-the-query-for-the-selection-criteria"></a>Skapa frågan för urvalskriterierna
-1. Klicka på Redigera.
-2. Markera Customers i fältet Table. 
-3. Välj Customer Group i fältet Field.
+
+1. Välj **Redigera**.
+2. I fältet **Register** väljer du *Kunder*.
+3. I fältet **Fält** väljer du *Kundgrupp*.
     * I det här exemplet används en specifik kundgrupp för urvalskriterierna.  
-4. Välj Customer group 10 i fältet Criteria. 
-5. Klicka på OK.
+4. I fältet **Kriterier** väljer du *Kundgrupp 10*.
+5. Välj **OK**.
 
 
 

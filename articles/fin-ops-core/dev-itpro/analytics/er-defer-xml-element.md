@@ -2,7 +2,7 @@
 title: Skjut upp körningen av XML-element i ER-format
 description: I det här avsnittet beskrivs hur du uppskjuta körningen av ett XML-element i ett format för elektronisk rapportering (ER).
 author: NickSelin
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 361e16b0dba3aa46c71477efaa89a2661a3bcd75
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 07b1d95572fb0b6bbfd34756bf1ecded7b9ff35c
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894062"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944495"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Skjut upp körningen av XML-element i ER-format
 
@@ -59,14 +59,14 @@ Om du inte redan har fyllt i exemplet i [avsnittet om körning av serieelement i
 
 | Beskrivning av innehåll            | Filnamn |
 |--------------------------------|-----------|
-| Exempel på konfiguration av ER-datamodell.    | [Modell för att lära dig uppskjutna element.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Konfiguration och ER-modellmappning | [Mappning för att lära dig uppskjutna element.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Exempel på konfiguration av ER-datamodell.    | [Modell för att lära dig uppskjutna element.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| Konfiguration och ER-modellmappning | [Mappning för att lära dig uppskjutna element.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 Innan du börjar måste du också hämta och spara följande konfiguration av exempel ER-lösningen till din lokala dator.
 
 | Beskrivning av innehåll     | Filnamn |
 |-------------------------|-----------|
-| Konfiguration för ER-fomat | [Format för att lära dig uppskjutna XML-element.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Konfiguration för ER-fomat | [Format för att lära dig uppskjutna XML-element.version.1.1.xml](https://download.microsoft.com/download/4/7/8/478fa846-22e9-4fa0-89b1-d3aeae660067/FormattolearndeferredXMLelements.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>Importera ER-exempelkonfigurationer
 
@@ -114,9 +114,9 @@ Granska inställningarna för komponenten ER-modellmappning komponenten är konf
 
     - Datakällor **Transaktion** typen *registerpost* är konfigurerad för att få åtkomst till poster i programregistret **TaxTrans**.
     - Datakällan **Verifikationer** av typen *beräknade fältet* typen är konfigurerad för att returnera de obligatoriska kupongkoderna (**INV-10000349** och **INV-10000350**) som en lista av poster.
-    - Datakällan **filtrerade** av typen *beräknade fält* konfigureras från datakällan **Transaktioner** endast välja skattetransaktioner för de verifikationer som krävs.
-    - Fältet **\$TaxAmount** av typen *beräknat fält* läggs till för datakällan **filtrerade** för att visa det skattevärde som har motsatt tecken.
-    - Datakällan **Grupperade** för typen *Gruppera efter* är konfigurerad för att gruppera filtrerade skattetransaktioner datakällan **Filtrerad**.
+    - Datakällan **filtrerade** av typen *beräknade fält* är konfigureras för att välja, från datakällan **Transaktioner** endast skattetransaktioner för de verifikationer som krävs.
+    - Fältet **\$TaxAmount** av typen *beräknade typen* läggs till datakällan **filtrerade** för att visa det skattevärde som har motsatt tecken.
+    - Datakällan **Grupperade** typ *Gruppera efter* är konfigurerad för att gruppera filtrerade skattetransaktioner för den filtrerade **datakällan**.
     - Sammansättningsfältet **TotalSum** för datakällan **Gruppera** konfigurerad för att sammanfatta värden på fälten **\$TaxAmount** datakällan **filtrerade** datakälla för alla filtrerade skattetransaktioner för den datakällan.
 
         ![TotalSum aggregeringsfält på sidan redigera 'GroupBy'-parametrar](./media/ER-DeferredXml-GroupByParameters.png)
@@ -164,7 +164,7 @@ Granska inställningarna för komponenten ER-modellmappning komponenten är konf
 1. Välj **Formatdesigner** på sidan **Kör**.
 2. Hämta filen som webbläsaren erbjuder och öppna den för granskning.
 
-    ![Hämta fil](./media/ER-DeferredXml-Run.png)
+    ![Hämtad fil med importerat format](./media/ER-DeferredXml-Run.png)
 
 Observera att sammanfattningsnoden visar summan av skattevärden för de bearbetade transaktionerna. Eftersom formatet konfigureras för att använda **model.Data.Summary.Total** bindning om du vill returnera den här summan beräknas summan genom att den **TotalSum** aggregering av datakällan **Grupperad** av typen *GroupBy* som använder modellmappningen. För att beräkna denna modellmappning itererar modellmappningen över alla transaktioner som har valts i datakällan **filtrerade**. Genom att jämföra körningstiderna för sammanfattningsnoden och den sista postnoden kan du bestämma att beräkningen av summan tog 12 millisekunder (ms). Genom att jämföra körningstiderna för första och sista postnoderna kan du bestämma att genereringen av alla postnoder tog 9 ms. Därför krävdes totalt 21 ms.
 
@@ -196,7 +196,7 @@ Om transaktionsvolymen är mycket större än volymen i det aktuella exemplet ka
 11. Välj **spara** och välj sedan **kör**.
 12. Hämta och granska filen som webbläsaren erbjuder.
 
-    ![Hämta fil](./media/ER-DeferredXml-Run1.png)
+    ![Genererad lista över momsvärde med löpande summa](./media/ER-DeferredXml-Run1.png)
 
     Den sista postnoden innehåller den löpande summan av skattevärden som beräknas för alla bearbetade transaktioner genom att använda den genererade utmatningen som en datakälla. Den här datakällan startar från rapportens början och fortsätter genom den senaste skattetransaktionen. Sammanfattningsnoden innehåller summan av alla skattevärden för alla bearbetade transaktioner som beräknas i modellmappningen med hjälp av datakällan för typen *GroupBy*. Observera att dessa värden är lika. Därför kan du använda den utmatnings summeringen i stället **GroupBy**. Genom att jämföra körningstiderna för första postnoden och sammanfattningsnoden kan du bestämma att genereringen av postnoder och sammanfattningsnoder tog 11 ms. Därför är det ändrade formatet ungefär två gånger snabbare än det ursprungliga formatet när det gäller genereringen av postnoder och summering av skattevärden.
 
@@ -205,7 +205,7 @@ Om transaktionsvolymen är mycket större än volymen i det aktuella exemplet ka
 15. Välj **spara** och välj sedan **kör**.
 16. Hämta och granska filen som webbläsaren erbjuder.
 
-    ![Hämta fil](./media/ER-DeferredXml-Run2.png)
+    ![Genererad lista över momsvärden med redigerad formel](./media/ER-DeferredXml-Run2.png)
 
     Observera att den totala skattevärden som körs på den sista raden i sista postnoden nu är lika med sammanfattningsnoden.
 
@@ -218,7 +218,7 @@ Om du till exempel vill visa summan av skattevärden i rapportens rubrik kan du 
 3. Välj **spara** och välj sedan **kör**.
 4. Hämta och granska filen som webbläsaren erbjuder.
 
-    ![Hämta fil](./media/ER-DeferredXml-Run3.png)
+    ![Hämtad fil med momsvärden för rapportrubrik](./media/ER-DeferredXml-Run3.png)
 
     Observera att summan av skattevärden på sammanfattningsnod nu är lika med 0 (noll), eftersom summan nu beräknas baserat på den genererade utleveransen. När den första postnoden genereras, innehåller den genererade utflödet inte ännu postnoder som har transaktionsdetaljer. Du kan konfigurera det här formatet för att skjuta upp körningen element **Rapport\\Meddelande\\Sammanfattning** tills sekvenselement **Rapport\\Meddelande\\Post** har körts för alla skattetransaktioner.
 
@@ -232,7 +232,7 @@ Om du till exempel vill visa summan av skattevärden i rapportens rubrik kan du 
 3. Välj **spara** och välj sedan **kör**.
 4. Hämta och granska filen som webbläsaren erbjuder.
 
-    ![Hämta fil](./media/ER-DeferredXml-Run4.png)
+    ![Hämtad fil med uppskjuten körning](./media/ER-DeferredXml-Run4.png)
 
     Sekvenselementet **Rapport\\Meddelande\\Sammanfattning** körs nu bara efter alla andra objekt som är kapslade under dess överordnade element **Rapport\\Meddelande** har körts. Därför körs det efter att elementet **Rapport\\Meddelande\\Post** har elementet har körts för alla skattetransaktioner i **model.Data.List**. Körningstiderna för de första och sista postnoderna, och för huvud- och sammanfattningsnoderna, avslöjar detta faktum.
 

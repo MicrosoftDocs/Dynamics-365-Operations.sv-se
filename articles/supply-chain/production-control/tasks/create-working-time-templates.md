@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1885aba11b5c6878cc9dca615cea98b77b4df63f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ed1981b7c1427c902f237f0aa95f63e89bc345ab
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811592"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920939"
 ---
 # <a name="create-working-time-templates"></a>Skapa operationstidsmallar
 
@@ -27,55 +27,58 @@ ms.locfileid: "5811592"
 
 Arbetstidsmallar definierar arbetstiden under en vecka och används för att generera arbetstider för en tidsperiod. I den här proceduren visas om hur du definierar en arbetstidsmall med hjälp av arbetstidsplaneringsegenskaper för att kategorisera arbetstidintervall. Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data.
 
-1. Gå till Alla arbetsytor > Livscykelhantering för resurs.
-2. Klicka på Arbetstidsmallar.
+1. Gå till **Arbetsytor > Livscykelhantering för resurser**.
+1. Välj **Arbetstidmallar**.
 
 ## <a name="create-working-time-template"></a>Skapa arbetstidsmall
-1. Klicka på Ny.
-2. Skriv ett värde i fältet Arbetstidsmall.
-3. Skriv ett värde i fältet Namn.
-4. Expandera alternativet Måndag.
-5. Klicka på Lägg till.
-6. Ange en tid i fältet Från.
+
+1. Välj **Ny**.
+1. I fältet **Arbetstidmall** anger du ett värde.
+1. Skriv ett värde i fältet **Namn**.
+1. Expandera avsnittet **Måndag**.
+1. Markera **Lägg till**.
+1. Ange en tidpunkt i fältet **Från**.
     * Ange tiden då arbetet börjar på morgonen.  
-7. Ange en tid i fältet Till.
+1. Ange en tidpunkt i fältet **Till**.
     * Ange tiden när medarbetare tar lunch.  
-8. Klicka på Lägg till.
-9. Ange en tid i fältet Från.
+1. Markera **Lägg till**.
+1. Ange en tidpunkt i fältet **Från**.
     * Ange tiden då arbetet återupptas efter efter lunch.  
-10. Ange en tid i fältet Till.
+1. Ange en tidpunkt i fältet **Till**.
     * Ange när arbetsdagen slutar.  
 
 ## <a name="replicate-working-times-to-all-week-days"></a>Replikera arbetstider till alla veckodagar
-1. Klicka på Kopiera dag.
+
+1. Välj **Kopiera dag**.
     * Kopiera arbetstidsdefinitioner från måndag till tisdag.  
-2. Klicka på OK.
-3. Klicka på Kopiera dag.
+1. Välj **OK**.
+1. Välj **Kopiera dag**.
     * Kopiera arbetstidsdefinitioner från måndag till onsdag.  
-4. Markera ett alternativ i fältet Till veckodag.
-5. Klicka på OK.
-6. Klicka på Kopiera dag.
+1. Välj ett alternativ i fältet **Till veckodag**.
+1. Välj **OK**.
+1. Välj **Kopiera dag**.
     * Kopiera arbetstidsdefinitioner från måndag till torsdag.  
-7. Markera ett alternativ i fältet Till veckodag.
-8. Klicka på OK.
-9. Klicka på Kopiera dag.
+1. Välj ett alternativ i fältet **Till veckodag**.
+1. Välj **OK**.
+1. Välj **Kopiera dag**.
     * Kopiera arbetstidsdefinitioner från måndag till fredag.  
-10. Markera ett alternativ i fältet Till veckodag.
-11. Klicka på OK.
+1. Välj ett alternativ i fältet **Till veckodag**.
+1. Välj **OK**.
 
 ## <a name="define-time-slots-for-special-operations"></a>Definiera tidsluckor för särskilda operationer
-1. Expandera alternativet Fredag.
-2. Hitta och markera önskad post i listan.
-3. Ange eller välj ett värde i fältet Egenskap.
-4. Hitta och markera önskad post i listan.
-5. Ange eller välj ett värde i fältet Egenskap.
+
+1. Expandera avsnittet **Fredag**.
+1. Hitta och markera önskad post i listan.
+1. Ange eller välj ett värde i fältet **Egenskap**.
+1. Hitta och markera önskad post i listan.
+1. Ange eller välj ett värde i fältet **Egenskap**.
 
 ## <a name="mark-weekend-days-as-closed-for-pickup"></a>Markera helgdagar som stängda för upphämtning
-1. Expandera alternativt Lördag.
-2. Välj Ja i fältet Stängd för upphämtning.
-3. Expandera alternativet Söndag.
-4. Välj Ja i fältet Stängd för upphämtning.
 
+1. Expandera avsnittet **Lördag**.
+1. Välj *Ja* i fältet **Stängd för avhämtning**.
+1. Expandera avsnittet **Söndag**.
+1. Välj *Ja* i fältet **Stängd för avhämtning**.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

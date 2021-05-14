@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7a2fd383944a96a073f12399e1a29d0fcf520e3c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9cd5475e48cbcd8dcee6b228297f58e364ac503d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812653"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920891"
 ---
 # <a name="add-an-expression-constraint-to-a-product-configuration-model"></a>Lägg till en uttrycksbegränsning i en produktkonfigurationsmodell
 
@@ -26,27 +26,27 @@ ms.locfileid: "5812653"
 
 I den här proceduren visas hur du kan lägga till ett nytt begränsningsuttryck i en modell för produktkonfiguration. Här visas hur du kan bestämma att hörnskyddet måste användas på en högtalare om användaren har valt ett frontgaller i metall. Proceduren använder högtalarkomponenten i demonstrationsföretaget USMF.
 
-
 ## <a name="create-an-expression-constraint"></a>Skapa en uttrycksbegränsning
-1. Klicka på Definition av produktvariantmodell.
-2. Klicka på Modeller för produktkonfiguration.
+
+1. Gå till **Produktinformationshantering \> Produkter \> Produktkonfigurationsmodeller**.
 3. Hitta och markera önskad post i listan.
     * I det här exemplet används den avancerade högtalarmodellen.  
-4. Klicka på länken på den valda raden i listan.
-5. Expandera avsnittet Begränsningar.
-6. Klicka på Lägg till.
-7. Klicka på Skapa.
-8. Skriv ett värde i fältet Namn.
+4. Klicka på länken på önskad rad i valda listan.
+5. Visa avsnittet **Begränsningar**.
+6. Markera **Lägg till**.
+7. Markera **Skapa**.
+8. Skriv ett värde i fältet **Namn**.
 
 ## <a name="enter-expression"></a>Skriv uttryck
-1. Klicka på Redigera uttryck.
+
+1. Välj **Redigera uttryck**.
     * Om du låser upp användargränssnittet i uppgiften som registrerar i detta skede, kan du använda IntelliSense och listan över symboler för att skapa begränsningsuttrycket.  
-2. I fältet ConstraintBody anger du Implies[FrontGrill=="Metal", CornerProtection].
+2. I fältet **ConstraintBody** anger du "Implies[FrontGrill=="Metal", CornerProtection]" (utan citattecken före och efter).
     * Uttryckslogiken betyder: om frontgallret är av metall, måste hörnskyddsalternativet markeras.  
-3. Klicka på Validera.
+3. Välj **validera**.
     * Verifierafunktionen körs igenom begränsningsuttrycket och söker efter syntaxfel.  
-4. Klicka på Stäng.
-5. Klicka på OK.
+4. Välj **Nära**.
+5. Välj **OK**.
 
 
 

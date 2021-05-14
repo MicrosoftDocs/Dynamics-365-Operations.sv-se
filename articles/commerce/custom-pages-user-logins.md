@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0318814f421ab862559965bb4b003308d6279812
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d4a1c2f45d77c3ff9a7bb4dffaf12d877dc04e69
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799455"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936790"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Ställa in anpassade sidor för användarinloggningar
 
@@ -32,7 +32,7 @@ Om du vill använda anpassade sidor som har skapats i Dynamics 365 Commerce för
 De anpassade handelssidorna kan skapas med hjälp av modulen logga in, registrera, kontoprofil eller återställ lösenord eller generiska AAD-moduler. De sid-URL:er som publiceras för dessa anpassade sidor bör sedan refereras i Azure AD B2C policykonfigurationer i Azure-portalen.
 
 > [!WARNING] 
-> Azure AD B2C drar tillbaka gamla (äldre) användarflöden senast den 1 augusti 2021. Därför bör du planera att flytta dina användarflöden till den nya rekommenderade versionen. Den nya versionen innehåller funktionen paritet och nya funktioner. Mer information finns i [Arbetsflöden i Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-overview).
+> Azure AD B2C drar tillbaka gamla (äldre) användarflöden senast den 1 augusti 2021. Därför bör du planera att flytta dina användarflöden till den nya rekommenderade versionen. Den nya versionen innehåller funktionen paritet och nya funktioner. Mer information finns i [Arbetsflöden i Azure Active Directory B2C](/azure/active-directory-b2c/user-flow-overview).
 
 >Modulbiblioteket för Commerce version 10.0.15 eller högre ska användas med de rekommenderade B2C-användarflödena. De standardanvändarpolicysidor som finns i Azure AD B2C kan också användas, och tillåta tillagda bakgrundsbild, logotyp och bakgrundsfärgändringar relaterade till företagets märke. De mer begränsade designfunktionerna gör att standardanvändarpolicysidorna tillhandahåller Azure AD B2C-policyfunktioner utan att de dedikerade anpassade sidorna skapas och konfigureras. 
 

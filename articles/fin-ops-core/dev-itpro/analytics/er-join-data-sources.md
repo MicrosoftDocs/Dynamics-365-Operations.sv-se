@@ -2,7 +2,7 @@
 title: Använd sammanfogningsdatakällor i ER-modellmappningar för att hämta data från flera programtabeller
 description: Det här avsnittet beskriver hur du kan använda datakällor av sammanfogningstyp i elektronisk rapportering (ER).
 author: NickSelin
-ms.date: 05/04/2020
+ms.date: 04/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: d42016b914d7992b6f4ae1c573eb8f867ba87e22
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: be5646eaf395310c8b34586ef1274a41b5b97029
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743987"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944737"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Använd sammanfogningsdatakällor för att hämta data från flera programtabeller i ER-modellmappningar (elektronisk rapportering)
 
@@ -64,13 +64,13 @@ Om du vill slutföra exemplen i det här avsnittet måste du ha åtkomst till n�
 
 Du måste först slutföra dessa steg i proceduren [Skapa en konfigurationsleverantör och välj den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-I förväg måste du även hämta från [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=000000) och spara det lokalt som ER-exempelkonfigurationsfil:
+I förväg måste du också hämta och spara följande exempelkonfigurationsfiler för ER:
 
 | **Beskrivning av innehåll**  | **Filnamn**   |
 |--------------------------|-----------------|
-| Exempelkonfigurationsfil för **ER-datamodell** som används som datakälla för exemplen.| [Modell för att lära dig sammanfogningsdatakällor.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Konfigurationsfil för **ER-modelmappning** som implementerar ER-datamodellen för exemplen. | [Mappning för att lära dig sammanfogningsdatakällor.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Exempelkonfigurationsfil för **ER-format**. Den här filen beskriver de data som ska fyllas i ER-formatkomponenten för exemplen. | [Format för att lära dig sammanfogningsdatakällor.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Exempelkonfigurationsfil för **ER-datamodell** som används som datakälla för exemplen.| [Modell för att lära dig sammanfogningsdatakällor.version.1.1.xml](https://download.microsoft.com/download/5/c/1/5c1d8a57-6ebd-425b-bc5d-c71dde92c6af/ModeltolearnJOINdatasources.version.1.xml) |
+| Konfigurationsfil för **ER-modelmappning** som implementerar ER-datamodellen för exemplen. | [Mappning för att lära dig sammanfogningsdatakällor.version.1.1.xml](https://user-images.githubusercontent.com/19827601/115923048-86b10400-a432-11eb-9e57-c37a02effcb4.png)|
+| Exempelkonfigurationsfil för **ER-format**. Den här filen beskriver de data som ska fyllas i ER-formatkomponenten för exemplen. | [Format för att lära dig sammanfogningsdatakällor.version.1.1.xml](https://download.microsoft.com/download/f/f/8/ff8f1b48-14d0-4c73-9145-bcdf8b5265bc/FormattolearnJOINdatasources.version.1.1.xml) |
 
 ### <a name="activate-a-configurations-provider"></a>Aktivera en konfigurationsprovider
 
@@ -99,7 +99,7 @@ I förväg måste du även hämta från [Microsoft Download Center](https://go.m
     3. Välj **Bläddra** om du vill söka efter filen **Format för att lära dig sammanfogningsdatakällor.1.1.xml**.
     4. Välj **OK**.
 5. I konfigurationsträdet expanderar du artikeln **Modell för att lära dig sammanfogningsdatakällor** och även andra modellobjekt (om de är tillgängliga).
-6. Studera listan med ER-konfigurationer i trädet och versionsinformation på snabbfliken **versioner** – de används som datakälla för exempelrapporten.
+6. Studera listan med ER-konfigurationer i trädet samt versionsinformationen i snabbfliken **Versioner** – de används som datakälla för exempelrapporten.
 
     ![Sidan konfigurationer för elektronisk rapportering](./media/GER-JoinDS-ConfigurationsTree.PNG)
 
@@ -123,18 +123,18 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
 4. Välj **Visa detaljer**.
 5. I konfigurationsträdet expanderar du datamodellobjektet **Set1** och **Set1.Details**:
 
-    1. Bindning **Detaljer: postlista = Versioner** anger att artikeln **Set1.Details** är bunden till datakällan **Versioner** returnerade poster för tabellen **ERSolutionVersionTable**. Varje post i den här tabellen motsvarar en enda version av en ER-konfiguration. Innehållet i den här tabellen visas på fliken **versioner** på sidan **konfigurationer**.
+    1. Bindning **Detaljer: postlista = Versioner** anger att artikeln **Set1.Details** är bunden till datakällan **Versioner** returnerade poster för tabellen **ERSolutionVersionTable**. Varje post i den här tabellen motsvarar en enda version av en ER-konfiguration. Innehållet i detta register visas på snabbfliken **Versioner** på sidan **Konfigurationer**.
     2. Bindning **ConfigurationVersion: String = @.PublicVersionNumber** innebär att värdet för den offentliga versionen av varje återställnings konfigurations version hämtas från fältet **PublicVersionNumber** i tabellen **ERSolutionVersionTable** och placeras i artikeln **ConfigurationVersion**.
     3. Bindning **ConfigurationTitle: String = @.'>Relations'.Solution.Name** anger att namnet på en ER-konfiguration hämtas från fältet **Namn** i tabellen **ERSolutionTable** med hjälp av många-till-en-relation (**'>Relationer'**) mellan tabellerna **ERSolutionVersionTable** och **ERSolutionTable** . Namn på ER-konfigurationer för den aktuella programinstansen visas i konfigurations trädet på sidan **konfigurationer**.
     4. Bindning **@.'>Relations'.Solution.'>Relations'.SolutionVendor.Name** innebär att namnet på konfigurationsprovider som äger den nuvarande konfigurationen hämtas från fältet **Namn** i tabellen **ERVendorTable** med hjälp av många-till-en-relation mellan tabellerna **ERSolutionTable** och **ERVendorTable**. Namn på ER-konfigurationsprovider visas i konfigurations trädet på sidan **konfigurationer** på sidhuvudet för varje konfiguration. Hela listan med konfigurationsprovider hittas på tabellsidan **Organisationsadministration \> Elektronisk rapportering \> Konfigurationsprovider**.
 
-    ![Sidan ER-modellmappningsdesigner](./media/GER-JoinDS-Set1Review.PNG)
+    ![Designersida för ER-modellmappning, lista över bundna datamodellartiklar](./media/GER-JoinDS-Set1Review.PNG)
 
 6. I konfigurationsträdet expanderar du datamodellobjektet **Set1.Summary**:
 
     1. Bindning **VersionsNumber: Integer = VersionsSummary.aggregated.VersionsNumber** anger att objektet **Set1.Summary.VersionsNumber** är bundet till sammansättningsfältet **VersionsNumber** för datakällan **VersionsSummary** av typen **GroupBy** typ som konfigurerades för att returnera antalet poster för tabellen **ERSolutionVersionTable** via datakällan **Versioner**.
 
-    ![Sidan för parametrar för datakälla för GROUPBY](./media/GER-JoinDS-Set1GroupByReview.PNG)
+    ![Redigera parametersidan för "Gruppera efter"](./media/GER-JoinDS-Set1GroupByReview.PNG)
 
 7. Stäng sidan.
 
@@ -144,11 +144,11 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
 
 1. I konfigurationsträdet expanderar du datamodellobjektet **Set2** och **Set2.Details**. Bindningen **Detaljer: Postlista = Detaljer** anger att objektet **Set2.Details** är bundet till datakällan **Detaljer** konfigurerad som datakälla av typen **Koppling**.
 
-    ![Sidan ER-modellmappningsdesigner](./media/GER-JoinDS-Set2Review.PNG)
+    ![Designersidan för ER-modellmappning som visar expanderade Uppsättning 2-modellartiklar för postdata.](./media/GER-JoinDS-Set2Review.PNG)
 
     Datakällan **Sammanfoga** kan läggas till genom att välja datakällan **Functions\Join**:
 
-    ![Sidan ER-modellmappningsdesigner](./media/GER-JoinDS-AddJoinDS.PNG)
+    ![Designersida för ER-modellmappning, sammanfoga typ av datakälla](./media/GER-JoinDS-AddJoinDS.PNG)
 
 2. Välj datakällan **Information**.
 3. Välj **redigera** i fönstret **datakällor**.
@@ -196,21 +196,21 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
 
     Det här formatet har utformats för att fylla en genererad textfil med en ny rad för varje version av en ER-konfiguration (ordning för **Version**). Varje genererad rad innehåller namnet på en konfigurationsprovider som äger den aktuella konfigurationen, konfigurationsnamnet och konfigurationsversionen som är åtskilda med semikolon. Den sista raden med genererade filer kommer att innehålla antalet upptäckta versioner av ER-konfigurationer (sekvens **sammanfattning**).
 
-    ![ER-formatdesignersida](./media/GER-JoinDS-FormatReview.PNG)
+    ![Designersida för ER-format, fliken Format](./media/GER-JoinDS-FormatReview.PNG)
 
     Datakällorna **Data** och **Sammanfattning** används för att fylla i information om konfigurationsversion till den genererade filen:
 
     - Information från datamodellen **Set1** används när du väljer **Nej** för datakällan **Väljare** vid körning på användardialogsidan när du kör ER-format.
     - Information från datamodellen **Set2** används när du väljer **Ja** för datakällan **Väljare** vid körning på användardialogsidan.
 
-    ![ER-formatdesignersida](./media/GER-JoinDS-FormatMappingReview.PNG)
+    ![Designersida för ER-format, fliken Mappa](./media/GER-JoinDS-FormatMappingReview.PNG)
 
 9. Välj **kör**.
 10. På dialogsidan väljer du **Nej** i fältet **Använd sammanfogningsdatakälla**.
 11. Välj **OK**.
 12. Granska genererad fil
 
-    ![Dialogsidan ER-användare](./media/GER-JoinDS-Set1Run.PNG)
+    ![Fil genererad av elektroniska rapportparametrar som inte använder JOIN-datakälla](./media/GER-JoinDS-Set1Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a>Analysera körningsspårning för ER-format
 
@@ -224,7 +224,7 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
     - **ERSolutionTable** har anropats så många gånger som du har konfigurationsversionsposter i tabellen **ERSolutionVersionTable** medan antalet sådana samtal kan minskas i tid för prestandaförbättring.
     - **ERVendorTable** har anropats två gånger för varje konfigurationsversionspost som upptäcktes i tabellen **ERSolutionVersionTable** medan antalet sådana samtal kan minskas i tid för prestandaförbättring.
 
-    ![Sidan ER-modellmappningsdesigner](./media/GER-JoinDS-Set1Run2.PNG)
+    ![Körningsstatistik designersidan för ER-modellmappning](./media/GER-JoinDS-Set1Run2.PNG)
 
 5. Stäng sidan.
 
@@ -236,7 +236,7 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
 4. Välj **OK**.
 5. Granska genererad fil
 
-    ![Dialogsidan ER-användare](./media/GER-JoinDS-Set2Run.PNG)
+    ![Fil genererad av elektroniska rapportparametrar som använder JOIN-datakälla](./media/GER-JoinDS-Set2Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Analysera körningsspårning för ER-format
 
@@ -249,11 +249,11 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
 
     - Programdatabasen har anropats en gång för att hämta poster från tabellerna **ERVendorTable**, **ERSolutionTable** och **ERSolutionVersionTable** för åtkomst till obligatoriska fält.
 
-    ![Sidan ER-modellmappningsdesigner](./media/GER-JoinDS-Set2Run2.PNG)
+    ![Information om prestandastatistik för designersida för ER-modellmappning](./media/GER-JoinDS-Set2Run2.PNG)
 
     - Programdatabasen har anropats en gång för att beräkna antalet konfigurationsversioner med hjälp av sammanfogningar som konfigurerats i datakällan **Information**.
 
-    ![Sidan ER-modellmappningsdesigner](./media/GER-JoinDS-Set2Run3.PNG)
+    ![Designersida för ER-modellmappning som visar anrop i programdatabasen](./media/GER-JoinDS-Set2Run3.PNG)
 
 ## <a name="limitations"></a>Begränsningar
 

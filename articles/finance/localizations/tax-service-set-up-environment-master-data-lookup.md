@@ -2,7 +2,7 @@
 title: Ställa in en miljö för att söka efter huvuddata
 description: I det här avsnittet beskrivs hur du ställer in din miljön att använda sökfunktionen huvuddata för skatteberäkning.
 author: kai-cloud
-ms.date: 03/31/2021
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,31 +16,43 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: eda093a75898bace2f3c7968933b83ccafa7fabb
-ms.sourcegitcommit: 66095f1b7e0fd2756aa29fd7deb9ce5392b7e0b2
+ms.openlocfilehash: 9f9b385df1db60b27698d90281c43fabb574af49
+ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "5869100"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924164"
 ---
 # <a name="set-up-an-environment-for-master-data-lookup"></a>Ställa in en miljö för att söka efter huvuddata
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 I det här avsnittet beskrivs hur du ställer in din miljön att använda sökfunktionen huvuddata för skatteberäkning.
 
-1. Konfigurera Power Platform-integrering i Lifecycle Services (LCS). Mer information finns i [Microsoft Power Platform-integrering - tilläggsöversikt](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
+1. Konfigurera Power Platform-integrering i Lifecycle Services (LCS). Mer information finns i [Microsoft Power Platform-integrering – tilläggsöversikt](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
 2. Konfigurera Dynamics 365 Finance och Microsoft Dataverse. Mer information finns i [Skaffa lösningen](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution) samt i [Autentisering och auktorisering](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
-3. Importera *Virtuell entitetslösning för erforderlig skattetjänst* från [Virtuell entitet för skattetjänst](https://go.microsoft.com/fwlink/?linkid=2158160).
+3. Ställ in följande entiteter: Mer information finns i [Aktivera virtuella entiteter](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#enabling-virtual-entities).
+      - CompanyInfoEntity
+      - CurrencyEntity
+      - CustCustomerV3Entity
+      - DeliveryTermsEntity
+      - EcoResProductCategoryEntity
+      - EcoResReleasedProductV2Entity
+      - LogisticsAddressCityEntity
+      - LogisticsAddressCountryRegionTranslationEntity
+      - LogisticsAddressStateEntity
+      - PurchProcurementChargeCDSEntity
+      - SalesChargeCDSEntity
+      - TaxGroupEntity
+      - TaxItemGroupHeadingEntity
+      - VendVendorV2Entity
 4. Konfigurera Dynamics 365 Regulatory Configuration Service (RCS). 
 5. Skapa en tjänstebegäran för Microsoft i syfte att aktivera förhandsversioner av följande funktioner:
 
       - ERCdsFeature
       - TaxServiceCDSFeature
 
-6. I arbetsytan **Funktionshantering** aktiverar du följande funktioner:
+6. Gå till arbetsytan **Funktionshantering** och aktivera följande funktioner:
 
       - (Förhandsgranskning) Dataverse-datakällor för elektronisk rapportering
       - (Förhandsversion) Stöd för Dataverse-datakällor

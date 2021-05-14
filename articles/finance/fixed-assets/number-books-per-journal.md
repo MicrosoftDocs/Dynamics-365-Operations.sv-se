@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fb2a25d9e2ffc26f0a37a09cdf3e28a7ca4b84bc
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c56b5a333854c9a95fdc74b8f98a3552ff0f7719
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892417"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944811"
 ---
 # <a name="number-of-books-per-journal"></a>Antal böcker per journal
 
@@ -47,9 +47,5 @@ I batchbearbetningsjobbet exkluderas stängda böcker. Till exempel, i ett batch
 Gränsen för antalet böcker tillämpas om det inte finns dubbletter av tillgångs-ID i samma journal. Om tillgångs-ID:t är samma som bok-ID:t, kan antalet böcker per journal överskridas för att behålla tillgångs-ID:t i samma journal.
 
 Det finns till exempel 5 001 anläggningstillgångs-ID:n, tre böcker associeras med varje anläggningstillgångs-ID och varje tillgångsbok bokförs på samma bokföringsskikt. Du kör avskrivningen under tre på varandra följande månader, utan summering.  Avskrivningsjournalen kommer att skapas via ett batchjobb, och i systemet skapas sju journaler med 667 anläggningstillgångs-ID:n och tre böcker för varje anläggningstillgångs-ID. Resultatet blir 2 001 böcker. Därför kommer det att finnas 6 003 journalrader om tre månader för att behålla samma tillgångs-ID:n i samma journal. Systemet kommer också att skapa en journal med 332 anläggningstillgångs-ID:n och tre böcker för varje anläggningstillgångs-ID. Om tre månader kommer det att finnas 2 988 rader.
-
-> [!NOTE] 
-> Om parametern **Summera avskrivning** är aktiverad när du skapar ett avskrivningsförslag påverkas inte värdet i fältet **Antal böcker per journal – Avskrivningsförslag**. I det här fallet är antalet böcker per journal 6 000, vilket är den internt definierade gränsen.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

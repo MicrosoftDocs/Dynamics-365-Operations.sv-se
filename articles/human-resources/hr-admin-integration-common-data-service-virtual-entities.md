@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ae36f1436ddd7f41bf0c3510b47cbc440224f484
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 04997aba427ae6013c8154593b09ae1a45a580c3
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890062"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935763"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurera virtuella Dataverse-register
 
@@ -102,27 +102,15 @@ Du måste registrera din Human Resource-instans i Azure-portalen så att Microso
 
 Installera appen Dynamics 365 HR Virtual Table i din Power Apps-miljö för att distribuera lösningspaketet för virtuellt register till Dataverse.
 
-1. Öppna [Power Platform administrationscenter](https://admin.powerplatform.microsoft.com).
+1. I Personal öppnar du sidan **Microsoft Dataverse-integrering**.
 
-2. I listan **miljöer**, välj Power Apps-miljö som är kopplad till personalinstansen.
+2. Välj fliken **Virtuella register**.
 
-3. I avsnittet **resurser** på sidan väljer du **Dynamics 365-appar**.
+3. Välj **Installera program för virtuellt register**.
 
-4. Välj åtgärden **Installera app**.
+### <a name="configure-the-virtual-table-data-source"></a>Konfigurera den virtuella datakällan för register
 
-5. Välj **Dynamics 365 HR Virtual Table** och sedan **Nästa**.
-
-6. Granska och markera det här alternativet om du vill godkänna tjänstvillkoren.
-
-7. Välj **Installera**.
-
-Installationen tar några minuter. När den är klar fortsätter du till nästa steg.
-
-![Installera appen Dynamics 365 HR Virtual Table från administrationscentret för Power Platform](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
-
-### <a name="configure-the-virtual-table-data-source"></a>Konfigurera den virtuella datakällan för register 
-
-Nästa steg är att konfigurera datakällan för det virtuella registret i Power Apps-miljön. 
+Nästa steg är att konfigurera datakällan för det virtuella registret i Power Apps-miljön.
 
 1. Öppna [Power Platform administrationscenter](https://admin.powerplatform.microsoft.com).
 
@@ -133,6 +121,9 @@ Nästa steg är att konfigurera datakällan för det virtuella registret i Power
 4. I **Lösning hälsocenter**, välj ikonen **Avancerad sökning** längst upp till höger på appsidan.
 
 5. På sidan **Avancerad sökning** i listrutan **Sök efter** välj **Konfiguration av virtuella enhetens datakälla i Finance and Operations**.
+
+   > [!NOTE]
+   > Installationen av det virtuella registerprogrammet från föregående inställningssteg kan ta några minuter. Om **Källkonfigurationer för virtuella Finance and Operations-data** inte är tillgängligt i listan ska du vänta en minut och sedan uppdatera listan.
 
 6. Välj **resultat**.
 
@@ -186,7 +177,7 @@ Bevilja behörigheter för de två Azure AD-apparna i Personal:
 
 När installationsprogrammet är slutfört kan du välja vilka virtuella register du vill generera och aktivera i din Dataverse-instans.
 
-1. I Personal öppnar du sidan **Dataverse-integrering**.
+1. I Personal öppnar du sidan **Microsoft Dataverse-integrering**.
 
 2. Välj fliken **Virtuella register**.
 
@@ -197,7 +188,7 @@ När installationsprogrammet är slutfört kan du välja vilka virtuella registe
 
 4. Välj **generera/uppdatera**.
 
-![Dataverse-integration](./media/hr-admin-integration-common-data-service-integration.jpg)
+![Dataverse-integration](./media/hr-admin-integration-dataverse-integration.png)
 
 ## <a name="check-table-generation-status"></a>Kontrollera registrets genereringsstatus
 

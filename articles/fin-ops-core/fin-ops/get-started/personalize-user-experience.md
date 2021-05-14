@@ -2,7 +2,7 @@
 title: Anpassa användarupplevelsen
 description: Det här avsnittet beskriver hur du kan anpassa appen.
 author: jasongre
-ms.date: 09/11/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efc5afc9d685954bf736686bbed3e7575f76e7e7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 764444442aedcbf0934f1c636d7440bc0d277043
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744703"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944543"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
@@ -38,7 +38,7 @@ I det här avsnittet beskrivs hur du kan anpassa appen och omfattar följande ä
 
 Sidan **användaralternativ** innehåller flera systeminställningar för den aktuella användaren. Dessa alternativ är tillgängliga för alla användare, även användare som inte har fått åtkomst till personlig anpassning. För att öppna sidan **användaralternativ**, välj knappen **inställningar** i navigeringsfältet, och välj sedan **användaralternativ**. Sidan **användaralternativ** har fyra flikar med olika användarinställningar:
 
-- **Visuellt** - Välj en färg för att välja ett färgtema och standardstorleken för element på dina sidor.
+- **Visuellt** – Välj en färg för att välja ett färgtema och standardstorleken för element på dina sidor.
 - **Inställningar** – Välj standardvärden som används varje gång du öppnar systemet. Dessa värden inkluderar standardföretaget, den första sidan och standardläget visa/redigera. (Det/redigeringsläget bestämmer om en sida är låst för visning eller öppnas för redigering i varje gång du öppnar den.) Den här fliken innehåller också alternativ för språk, tidszon, och datum, tid och nummerformat. Den här fliken innehåller dessutom flera diverse inställningar som kan variera från version till version.
 - **Konto:** – Visa eller justera ditt användarnamn och andra kontorelaterade inställningar.
 - **Arbetsflöde** – Välj arbetsflöderelaterade alternativ.
@@ -54,9 +54,9 @@ På nivån **Begränsad anpassningsåtkomst** sparas de användaråtgärder som 
 
 Här följer en lista över de åtgärder som ligger under normal sidanvändning och som täcks av begränsad anpassningsåtkomst: 
 
-- **Bredd på rutnätskolumner** - Du kan justera bredden på en kolumn i ett rutnät genom att välja storleksfältet till vänster eller till höger om kolumnrubriken och skjuta det åt vänster eller höger tills kolumnen har önskad bredd. Appen lagrar den bredd som du anger för en kolumn. Sedan ändras storleken på kolumnen till den bredden varje gång du öppnar sidan.
+- **Bredd på rutnätskolumner** – Du kan justera bredden på en kolumn i ett rutnät genom att välja storleksfältet till vänster eller till höger om kolumnrubriken och skjuta det åt vänster eller höger tills kolumnen har önskad bredd. Appen lagrar den bredd som du anger för en kolumn. Sedan ändras storleken på kolumnen till den bredden varje gång du öppnar sidan.
 - **Summa för rutnätets sidfot och kolumn** – *(endast tillgängligt när den nya rutnätskontrollen är aktiverad)* du kan bestämma om en summa ska visas längst ned i en numerisk kolumn i ett rutnät och om rutnätssidfoten ska visas. Programmet lagrar dessa data och använder dem nästa gång du öppnar sidan. Mer information finns i [Rutnätsmöjligheter](grid-capabilities.md). 
-- **Snabbflikar** - Vissa sidor har expanderbara avsnitt som kallas *snabbflikar*. Appen lagrar information om snabbflikar som du har utökat och komprimerat. Nästa gång du öppnar sidan kommer samma snabbflikar att visas eller döljs, utifrån din senaste interaktion med sidan. I vissa fall kan du hjälpa till att förbättra systemet genom att komprimera en snabbflik eftersom appen inte behöver hämta informationen för snabbflikar förrän de expanderas. Såsom beskrivs senare i det här avsnittet kan du också ändra ordning på snabbflikarna på en sida.
+- **Snabbflikar** – Vissa sidor har expanderbara avsnitt som kallas *snabbflikar*. Appen lagrar information om snabbflikar som du har utökat och komprimerat. Nästa gång du öppnar sidan kommer samma snabbflikar att visas eller döljs, utifrån din senaste interaktion med sidan. I vissa fall kan du hjälpa till att förbättra systemet genom att komprimera en snabbflik eftersom appen inte behöver hämta informationen för snabbflikar förrän de expanderas. Såsom beskrivs senare i det här avsnittet kan du också ändra ordning på snabbflikarna på en sida.
 - **Faktaboxar** – vissa sidor har rutan **relaterad information** som visar skrivskyddad information som är relaterad till sidans aktuella ämne. Varje avsnitt i rutan **relaterad information** kallas en *faktabox*. Du kan utöka eller komprimera rutan **relaterad information** och du kan också visa eller dölja enskilda faktaboxar. Appen lagrar dessa inställningar. Nästa gång du öppnar sidan kommer rutan **relaterad information** och de enskilda faktaboxar antingen utökas eller komprimeras baserat på din senaste interaktion med sidan. I vissa fall kan du hjälpa till att förbättra systemet genom att komprimera ett fönster eller faktabox för **relaterad information** eftersom appen inte behöver hämta informationen för faktaboxar förrän de expanderas.
 - **Åtgärdsfönster** – Ett *åtgärdsfönstret* visas längst upp på de flesta sidor. Åtgärdsfönstret innehåller knappar för många av de åtgärder som du kan utföra på den aktuella sidan. Knapparna ordnas ofta på flikarna. Du kan *öppna* hela åtgärdsfönstret och du kan konfigurera den så att den komprimeras som standard. Nästa gång du öppnar sidan kommer åtgärdsfönstret antingen att visas eller döljas, utifrån din senaste interaktion med sidan. Om du har öppnat åtgärdsfönstret visas den sista fliken som du använde.
 - **Snabbfilter** – Ett *snabbfilter* visas ovanför många rutnät. Snabbfilter låter dig filtrera rutnät, baserat på en kolumn som du väljer. Appen lagrar den kolumn som du filtrerade på. Nästa gång som du öppnar sidan kommer det rutnätet att använda samma kolumn för filtrering som standard. Du kan sedan välja en annan kolumn att filtrera rutnätet på.
@@ -98,7 +98,7 @@ Du kan använda egenskapsfönstret för att anpassa ett element på följande s�
 
 Egenskapsfönstret kan omfatta andra anpassningsfunktioner, beroende på vilket element. Exempelvis egenskapsfönstret för en panel kan låta dig flytta upp den panelen till en instrumentpanel och egenskapsfönster för element på standardpanelen kan låta dig skapa ett nytt anpassat arbetsområde.
 
-### <a name="the-personalization-toolbar"></a>Verktygsfält för anpassning
+### <a name="personalization-toolbar"></a>Verktygsfält för anpassning
 
 Om du vill göra flera ändringar på en sida eller göra ändringar som inte är tillgängliga genom andra metoder (till exempel ändra ordning på element), kan du använda verktygsfältet **anpassning**. För att öppna verktygsfältet **anpassning**, följ något av dessa steg:
 
@@ -173,7 +173,90 @@ En unik anpassningskapacitet som är tillgänglig på instrument panelen är mö
 
 ## <a name="sharing-personalizations"></a>Dela anpassningar
 
-När du anpassar en sida kan du dela dina anpassningar med andra användare genom att exportera den anpassade sidan. Du kan sedan be andra användare att importera anpassningsfilen. Alternativt kan du ge dina anpassningar till en användare med administratörsbehörighet. Användaren kan sedan använda din anpassningsfil för många användare samtidigt genom att använda administrationssidan **anpassning**.
+När du anpassar en sida finns det ett antal metoder du kan använda dig av i syfte att dela dina anpassningar med andra användare: I följande lista är metoderna sorterade i ordning, från de högst rekommenderade till lägst rekommenderade.
+
+1. Publicera vyer för användarna.
+2. Kopiera vyer eller anpassningar till användarna.
+3. Exportera och importera vyer eller anpassningar.
+
+### <a name="publish-views-to-users"></a>Publicera vyer för användarna
+
+Om funktionen [Sparade vyer](saved-views.md) är aktiverad – och sidan har stöd för vyer – är det bästa sättet att dela anpassningar med andra användare att publicera vyn för användare med en eller flera säkerhetsroller. För mer information, se [Publicera vyer](saved-views.md#publishing-views).
+
+### <a name="copy-views-or-personalizations-to-users"></a>Kopiera vyer eller anpassningar till användarna
+
+Om funktionen [Sparade vyer](saved-views.md) är inaktiverad, eller om sidan inte har stöd för vyer, bör du kopiera anpassningarna mellan användarna. Denna metod är bara tillgänglig för privilegierade användare (till exempel systemadministratörer). Administratörer kan dock söka efter en viss användares personliga anpassning i systemet (inklusive användarens personliga vy, om sparade vyer har aktiverats) och kopiera konfigurationen till andra användare.
+
+Om sparade vyer har aktiverats följer du dessa steg för att kopiera personliga anpassningar.
+
+1. Gå till **Systemadministration \> Inställningar \> Anpassning**.
+2. Följ de här stegen när du vill kopiera personliga vyer:
+
+    1. Välj **Personliga vyer**.
+    2. Välj önskade vyer i listan.
+    3. Markera **Kopiera till användare**.
+    4. Markera de användare som du vill fördela vyerna till.
+
+    Följ anvisningarna nedan om du vill kopiera anpassningar på sidor som inte har stöd för vyer:
+
+    1. Välj **Användarinställningar**.
+    2. Välj den användare som har den anpassning som du vill distribuera.
+    3. Välj **Hantera alla anpassningar**.
+    4. Välj önskade anpassningar i listan.
+    5. Markera **Kopiera till användare**.
+    6. Markera de användare som du vill distribuera anpassningarna till.
+
+Om sparade vyer har aktiverats följer du dessa steg för att kopiera en anpassning.
+
+1. Gå till **Systemadministration \> Inställningar \> Anpassning**.
+2. Välj **Tillämpa**.
+3. Markera de användare som du vill distribuera anpassningen till.
+4. Välj **Befintlig personanpassning**.
+5. Hitta och välj den (enskilda) personanpassning som du är intresserad av.
+6. Välj **OK**.
+
+### <a name="export-and-import-views-or-personalizations"></a>Exportera och importera vyer eller anpassningar
+
+Ett annat sätt att dela anpassningar är genom export och import. Enskilda användare, eller en administratör som agerar för deras räkning, kan använda den här metoden för att exportera sina anpassningar eller vyer och sedan ge den exporterade filen till andra användare som ska importeras. Alternativt kan användare ge sina exporterade personanpassningar till en användare som har administratörsbehörighet, och den användaren kan sedan använda administrationssidan **Anpassning** för att tillämpa personanpassningsfilen på många användare samtidigt.
+
+#### <a name="export"></a>Export
+
+I allmänhet kan du exportera en av dina egna vyer eller anpassningar genom att öppna lämplig sida, öppna verktygsfältet **Personanpassning** och sedan välja **Exportera**. Mer information om verktygsfältet finns i avsnittet [Verktygsfält för anpassning](#personalization-toolbar) tidigare i det här avsnittet. Om [sparade vyer](saved-views.md) har aktiverats kan du även gå till **Inställningar \> Användaralternativ \> Anpassningar** för att visa en lista över samtliga dina anpassningar i systemet. Därifrån kan du välja vilka vyer eller personanpassningar som ska exporteras, och sedan välja **Exportera**.
+
+Dessutom kan administratörer exportera andra användares passningar genom att följa stegen nedan.
+
+1. Gå till **Systemadministration \> Inställningar \> Anpassningar**.
+2. På fliken **Användare** väljer du önskad användare.
+3. Hitta och välj den vy eller anpassning som du är intresserad av.
+4. Välj **Exportera**.
+
+#### <a name="import"></a>Import
+
+Om du vill importera en vy eller anpassning öppnar du bara verktygsfältet **Anpassning** och väljer **Importera**. Dessutom kan administratörer importera en fil och omedelbart ge den till en eller flera användare.
+
+Om sparade vyer har aktiverats följer du dessa steg.
+
+1. Gå till **Systemadministration \> Inställningar \> Anpassningar**.
+2. I åtgärdsfönstret väljer du **Importera vyer \> Användarvyer**.
+3. Välj importläget.
+
+    - **Markera specifika användare** – Ge vyn eller anpassningen till valda användare.
+    - **Importera i befintligt skick** – Importera vyn eller personanpassningen till samma användare som exporterade den.
+
+4. Välj **Bläddra** och leta sedan upp och välj den anpassning du vill importera.
+5. Välj **Nästa**.
+6. Om du väljer **Välj specifika användare** i steg 3 ska du markera de användare som anpassningen ska importeras till.
+7. Välj **Importera**.
+8. Lös konflikter vid behov.
+
+Om sparade vyer inte har aktiverats följer du dessa steg.
+
+1. Gå till **Systemadministration \> Inställningar \> Anpassningar**.
+2. Välj **Tillämpa**.
+3. Markera de användare som du vill distribuera anpassningen till.
+4. Välj **Importera anpassningar från en fil**.
+5. Välj **Bläddra** och leta sedan upp och välj den anpassning du vill importera.
+6. Välj **OK**.
 
 ## <a name="administration-of-personalizations"></a>Administration av anpassning
 
@@ -184,8 +267,11 @@ Information om kunder som har aktiverat funktionen **Sparade vyer** finns i avsn
 För kunder som inte har aktiverat funktionen [sparade vyer](saved-views.md) har den här sidan fyra flikar:
 
 - **Tillämpa** – Du kan importera eller välja en anpassning för en eller flera användare. Om du vill använda en anpassning till en eller flera användare, markerar du först en roll och användare som har rollen. Välj sedan en befintlig anpassning som gäller för de valda användare eller importera en anpassningsfil. Anpassningen valideras och gäller för de alla valda användare nästa gång de öppnar den markerade sidan.
+
 - **Rensa** – Du kan rensa alla anpassningar för arbetsyta för en eller flera användare. Välj först en sida eller arbetsyta för att se en lista över de användare som har anpassat den. Sedan väljer du de användare vars anpassningar för den aktuella sidan eller arbetsytan ska avmarkeras och välj **Rensa**. Alla anpassningar som de valda användarna har kopplat till den valda sidan eller arbetsytan tas bort. Denna åtgärd kan inte ångras. Om en anpassning sparades för sidan eller arbetsytan, kan den anpassningen emellertid återimporteras.
+
 - **Användare** – Välj en användare för att visa listan över sidor som användaren har anpassat. Du kan sedan aktivera eller inaktivera den valda användarens förmåga att använda anpassningar för specifika sidor eller för hela systemet. D kan också importera, exportera eller rensa anpassningar för denna användare. Du kan dessutom återställa en användares bildtexter för funktioner. I detta fall, om användaren tidigare stängde alla popup-fönster som introducerar nya funktioner visas det i detta fall igen nästa gång användaren påträffar dessa funktioner.
+
 - **System** – Du kan temporärt inaktivera alla anpassningar för samtliga användare i systemet. I det här fallet tas alla anpassningar bort för alla användare, och alla sidor återställs till standardtillståndet. Om du senare aktiverar anpassningen igen kommer alla anpassningar att återappliceras. Du kan också ta bort alla anpassningar permanent för samtliga användare i systemet. Det går inte att återställa anpassningar som har tagits bort. Se därför till att du har exporterat den här uppgiften för att exportera alla anpassningar som du kanske vill ha senare.
 
 ## <a name="personalizing-inventory-dimensions"></a>Anpassning av lagerdimensioner

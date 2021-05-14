@@ -1,5 +1,5 @@
 ---
-title: Arbetsyta för registrering av leverantörsfaktura
+title: Arbetsyta för automatisering av leverantörsfaktura
 description: I det här avsnittet beskrivs hur du ställer in en arbetsyta som är relaterad till leverantörsfakturor och som visar den information som är tillgänglig via Microsoft Power BI.
 author: abruer
 ms.date: 09/28/2020
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: bac57056af6d85bb30600e13628279801508741d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7216c2f6e593e3ca11d78903f318d5f217b19674
+ms.sourcegitcommit: 375dd11a9e4076394a33e99f11371ab53e80c337
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837275"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954145"
 ---
-# <a name="vendor-invoice-entry-workspace"></a>Arbetsyta för registrering av leverantörsfaktura
+# <a name="vendor-invoice-automation-workspace"></a>Arbetsyta för automatisering av leverantörsfaktura
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -30,11 +30,11 @@ I det här avsnittet beskrivs hur du ställer in en arbetsyta som är relaterad 
 
 ## <a name="overview"></a>Översikt
 
-Arbetsytan **registrering av leverantörsfaktura** visar information kopplad till behandling av leverantörsfaktura. Den innehåller vyn **Mitt arbete** och sidan **Analyser – alla företag**. Vyn **Mitt arbete** visar sammanfattningsrutor, rutnät för leverantörstransaktioner och relaterad leverantörsinformation. Sidan **Analyser – alla företag** använder funktionerna i Power BI för att visa visualiseringar relaterade till leverantörsfakturor.
+Arbetsytan **Automatisera leverantörsfaktura** visar information kopplad till behandling av leverantörsfaktura. Den innehåller vyn **Mitt arbete** och sidan **Analyser – alla företag**. Vyn **Mitt arbete** visar sammanfattningsrutor, rutnät för leverantörstransaktioner och relaterad leverantörsinformation. Sidan **Analyser – alla företag** använder funktionerna i Power BI för att visa visualiseringar relaterade till leverantörsfakturor.
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>Ställ in arbetsytan för att visa Power BI-innehåll
 
-Du måste slutföra den här inställningen innan data kan visas i Power BI-visualiseringar på arbetsytan **registrering av leverantörsfaktura**.
+Du måste slutföra den här inställningen innan data kan visas i Power BI-visualiseringar på arbetsytan **Automatisera leverantörsfaktura**.
 
 1. I arbetsytan **funktionshantering** filtrerar du listan för att hitta funktionen **automatisering av leverantörsfakturor**.
 3. Välj **Aktivera nu**.

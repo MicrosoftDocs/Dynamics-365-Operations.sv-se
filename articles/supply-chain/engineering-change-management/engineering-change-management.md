@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: fb71d941a5cd58701f723e56a07c6b6cca6689bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
+ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830038"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954655"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Hantera ändringar av konstruktionsprodukter
 
 [!include [banner](../includes/banner.md)]
 
-Konstruktionsändringshantering innehåller strukturerade processer för hantering av ändringar av konstruktionsprodukter. Du kan använda processen *begäran om konstruktionsändring* för att föreslå och begära ändringar och sedan använda processen *teknisk ändringsorder* för att faktiskt göra ändringarna. Användarna kan skapa begäran om teknisk ändring eller tekniska ändringsorder, och då har du en process för att granska och godkänna dem, bedöma deras inverkan på befintliga transaktioner och följa upp dem.
+Konstruktionsändringshantering innehåller strukturerade processer för hantering av ändringar av konstruktionsprodukter. Du kan använda processen *begäran om konstruktionsändring* för att föreslå och begära ändringar och sedan använda processen *konstruktionsändringsorder* för att faktiskt göra ändringarna. Användarna kan skapa begäran om konstruktionsändring eller konstruktionsändringsorder, och då har du en process för att granska och godkänna dem, bedöma deras inverkan på befintliga transaktioner och följa upp dem.
 
 ## <a name="engineering-change-requests"></a>Begäranden om konstruktionsändring
 
-Med processen för begäran om teknisk ändring kan du registrera en begäran om ändringar från alla relevanta avdelningar i ditt företag. Det spelar ingen roll om du arbetar som en tekniker eller i tillverknings-, anskaffnings-, lager- eller försäljningsavdelningen: alla kan använda en begäran om teknisk ändringsbegäran för att begära en ändring. Den här ändringen kan vara en idé för en ny produkt, ett problem som du har upptäckt medan du arbetade med en befintlig produkt, ett förslag till förbättringar av en befintlig produkt eller något annat.
+Med processen för begäran om konstruktionsändring kan du registrera en begäran om ändringar från alla relevanta avdelningar i ditt företag. Det spelar ingen roll om du arbetar som en tekniker eller i tillverknings-, anskaffnings-, lager- eller försäljningsavdelningen: alla kan använda en begäran om konstruktionsändringsbegäran för att begära en ändring. Den här ändringen kan vara en idé för en ny produkt, ett problem som du har upptäckt medan du arbetade med en befintlig produkt, ett förslag till förbättringar av en befintlig produkt eller något annat.
 
 När någon har skickat en begäran om ändring hanteras processen för *granskning och godkännande* av ett arbetsflöde som identifieras vem som måste godkänna ändringen (t.ex. produktägaren).
 
-Om du vill ställa in ett arbetsflöde för konstruktionsändringsorder eller tekniska ändrings begäran, gå till **Konstruktionsändringshantering \> Tekniska arbetssflöden**. Välj **ny**, välj om arbetsflödet ska användas för att granska konstruktionsändringsorder eller tekniska ändringsbegäran och konfigurera sedan arbetsflödet.
+Om du vill ställa in ett arbetsflöde för konstruktionsändringsorder eller konstruktionsändrings begäran, gå till **Konstruktionsändringshantering \> Konstruktionsarbetssflöden**. Välj **ny**, välj om arbetsflödet ska användas för att granska konstruktionsändringsorder eller konstruktionsändringsbegäran och konfigurera sedan arbetsflödet.
 
 För mer information om arbetsflöden, se [arbetsflödessystem, översikt](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md). Mer information om produktägare, se [Produktägare](product-owner.md).
 
@@ -40,8 +40,8 @@ För mer information om arbetsflöden, se [arbetsflödessystem, översikt](../..
 
 Gör något av följande om du vill skapa en begäran om konstruktionsändring:
 
-- Gå till **Konstruktionsändringshantering \> Vanlig \> Konstruktionsändringshantering \> Begäran om teknisk ändring** och välj **Ny** i åtgärdsfönstret.
-- Öppna sidan **produktinformation** för en befintlig teknisk produkt. Sedan på åtgärdsfönstret, på fliken **Konstruera** i gruppen **Konstruktionsändringshantering** välj **Begäran om teknisk ändring \> Ny begäran om teknisk ändring**.
+- Gå till **Konstruktionsändringshantering \> Vanlig \> Konstruktionsändringshantering \> Begäran om konstruktionsändring** och välj **Ny** i åtgärdsfönstret.
+- Öppna sidan **produktinformation** för en befintlig konstruktionsprodukt. Sedan på åtgärdsfönstret, på fliken **Konstruera** i gruppen **Konstruktionsändringshantering** välj **Begäran om konstruktionsändring \> Ny begäran om konstruktionsändring**.
 
 En ny ändringsbegäran skapas. Du kan du ange fälten på varje snabbflik som beskrivs i följande underavsnitt.
 
@@ -51,7 +51,7 @@ På snabbfliken **Allmänt** kan du ange en grundläggande beskrivning av ändri
 
 | Fält | beskrivning |
 |---|---|
-| Ändringsbegäran | Ange ett beskrivande begäran om teknisk ändring. |
+| Ändringsbegäran | Ange ett beskrivande begäran om konstruktionsändring. |
 | Befattning | Ange en kort beskrivning eller identifierar ändringarna i förfrågan. |
 | Prioritet | Välj ett värde som anger hur hög prioriteten för ändringen är. Du kan anpassa de tillgängliga värdena för ditt företag efter behov. (För mer information, se [Fastställa gemensamma värden för konstruktionsändringshantering](engineering-change-management-setup.md).) |
 | Kategori | Välj ett värde som beskriver den typ av ändring du begär. Du kan anpassa de tillgängliga värdena för ditt företag efter behov. (För mer information, se [Fastställa gemensamma värden för konstruktionsändringshantering](engineering-change-management-setup.md).) |
@@ -96,7 +96,7 @@ På snabbfliken **källa** kan du spåra startpunkten för ändringsbegäran. De
 
 När du granskar en begäran om ändring kan du söka efter beroenden. På det här sättet kan du bedöma effekten av den begärda ändringen på öppna transaktioner, till exempel försäljningsorder, tillverkningsorder och lagerbehållning.
 
-1. Gå till **Konstruktionsändringshantering \> Vanlig \> Konstruktionsändringshantering \> Begäran om teknisk ändring**.
+1. Gå till **Konstruktionsändringshantering \> Vanlig \> Konstruktionsändringshantering \> Begäran om konstruktionsändring**.
 1. Du kan antingen öppna en befintlig ändringsbegäran eller välja **ny** i åtgärdsfönstret för att skapa en ny ändringsbegäran.
 1. I åtgärdsfönstret på fliken **Ändringsbegäran** i gruppen **Affärspåverkan**, välj en av följande knappar:
 
@@ -107,13 +107,13 @@ När du granskar en begäran om ändring kan du söka efter beroenden. På det h
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Skapa en ändringsorder från en ändringsbegäran
 
-En tekniker som granskar en teknisk ändringsbegäran kan skapa en teknisk ändringsorder direkt från sidan **Begäran om teknisk ändring**. I åtgärdsfönstret på fliken **Ändringsbegäran** i gruppen **Teknisk ändringsorder** väljer du **Kopiera länk och produkter**.
+En tekniker som granskar en konstruktionsändringsbegäran kan skapa en konstruktionsändringsorder direkt från sidan **Begäran om konstruktionsändring**. I åtgärdsfönstret på fliken **Ändringsbegäran** i gruppen **Konstruktionsändringsorder** väljer du **Kopiera länk och produkter**.
 
 ## <a name="engineering-change-orders"></a>Konstruktionsändringsorder
 
-Orderändringar för teknik ger en strukturerad process för att göra ändringar i tekniska produkter. Du föreslår ändringar genom att använda en kopia av de tekniska data som behövs. Den verkliga huvudinformationen påverkas inte. Mer information om teknikrelevanta data finns i [Konstruktionsversioner och kategorier av konstruktionsprodukter](engineering-versions-product-category.md).
+Konstruktionsorderändringar ger en strukturerad process för att göra ändringar i konstruktionsprodukter. Du föreslår ändringar genom att använda en kopia av de konstruktionsdata som behövs. Den verkliga huvudinformationen påverkas inte. Mer information om konstruktionsrelevanta data finns i [Konstruktionsversioner och kategorier av konstruktionsprodukter](engineering-versions-product-category.md).
 
-Du kan skapa en teknisk ändringsorder som baseras på en godkänd begäran om teknisk ändring. Teknikerna kan också skapa tekniska ändringsorder från grunden. Du kan inkludera flera produkter i en enskild tekniska ändringsorder genom att följa de här stegen:
+Du kan skapa en konstruktionsändringsorder som baseras på en godkänd begäran om konstruktionsändring. Teknikerna kan också skapa konstruktionsändringsorder från grunden. Du kan inkludera flera produkter i en enskild konstruktionsändringsorder genom att följa de här stegen:
 
 - Välj produkter manuellt.
 - Använd strukturlistan om du vill inkludera produkter som är lägre i produktstrukturen (dvs. underordnade).
@@ -121,55 +121,56 @@ Du kan skapa en teknisk ändringsorder som baseras på en godkänd begäran om t
 
 När förslaget till ändringar har slutförts hanteras gransknings- och godkännandeprocessen av ett arbetsflöde. Du kan skapa olika arbetsflöden utifrån prioritet och allvarlighetsgrad.
 
-Om du vill ställa in ett arbetsflöde för konstruktionsändringsorder eller tekniska ändrings begäran, gå till **Konstruktionsändringshantering \> Tekniska arbetssflöden**. Välj **ny**, välj om arbetsflödet ska användas för att granska konstruktionsändringsorder eller tekniska ändringsbegäran och konfigurera sedan arbetsflödet.
+Om du vill ställa in ett arbetsflöde för konstruktionsändringsorder eller konstruktionsändrings begäran, gå till **Konstruktionsändringshantering \> Konstruktionsarbetssflöden**. Välj **ny**, välj om arbetsflödet ska användas för att granska konstruktionsändringsorder eller konstruktionsändringsbegäran och konfigurera sedan arbetsflödet.
 
 För mer information om arbetsflöden, se [arbetsflödessystem, översikt](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 
-Här är några typiska intressenter som kanske måste godkänna en teknisk ändringsorder:
+Här är några typiska intressenter som kanske måste godkänna en konstruktionsändringsorder:
 
 - **Produktägare** – För mer information om produktägare, se [Produktägare](product-owner.md).
-- **Ansvarigt teamlead** – Fältet **tekniker** i vyn the **huvud** över teknisk ändringsorder visar teknikern som skapade teknisk ändringsorder. Om teknikern tillhör ett team som har definierats i systemet visar fältet **ansvarig** ledaren för det teamet.
+- **Ansvarigt teamlead** – Fältet **tekniker** i vyn the **huvud** över konstruktionsändringsorder visar teknikern som skapade konstruktionsändringsorder. Om teknikern tillhör ett team som har definierats i systemet visar fältet **ansvarig** ledaren för det teamet.
 - **Ekonomiavdelning** – ekonomiavdelningen kan behöva granska ärenden där ändringen medför höga kostnader.
 
-Du kan välja om den tekniska ändringsordern ska bearbetas direkt efter att den har godkänts, som en del av arbetsflödet, eller om bearbetningen ska utföras senare, som ett manuellt steg. Under bearbetningen av en teknisk ändringsorder uppdateras teknik data på den faktiska produkten.
+Du kan välja om den konstruktionsändringsordern ska bearbetas direkt efter att den har godkänts, som en del av arbetsflödet, eller om bearbetningen ska utföras senare, som ett manuellt steg. Under bearbetningen av en konstruktionsändringsorder uppdateras teknik data på den faktiska produkten.
 
 När du granskar en begäran om ändring, går du till åtgärdsfönstret på fliken **ändringsbegäran** i gruppen **affärspåverkan** väljer **söka** för att bedöma effekterna av den föreslagna ändringen på öppna transaktioner, såsom försäljningsorder, produktionsorder och lager. Resultaten visas i dialogrutan **Affärspåverkan till öppna transaktioner** där du kan välja påverkade transaktioner och sedan använda kommandon i verktygsfältet för att visa mer information, meddela den ansvariga användaren eller blockera transaktionen.
 
-### <a name="engineering-change-orders-in-engineering-or-operational-companies"></a>Teknisk ändringsändringsorder i tekniska eller operativa företag
+### <a name="engineering-change-orders-in-engineering-or-operational-companies"></a>Konstruktionsändringsändringsorder i konstruktionseller operativa företag
 
-Som beskrivs i [teknikföretag och regler för dataägarskap](engineering-org-data-ownership-rules.md) kan de produktdata som du kan redigera variera beroende på vilken typ av juridisk person du arbetar med (ett teknikföretag jämfört med ett driftföretag). Regler för dataägarskap används också för teknisk ändringsorder. Beroende på den juridiska personen där du skapar en teknisk ändringsorder, kan olika typer av ändringar göras. Nedan följer några exempel:
+Som beskrivs i [konstruktionsföretag och regler för dataägarskap](engineering-org-data-ownership-rules.md) kan de produktdata som du kan redigera variera beroende på vilken typ av juridisk person du arbetar med (ett konstruktionsföretag jämfört med ett driftföretag). Regler för dataägarskap används också för konstruktionsändringsorder. Beroende på den juridiska personen där du skapar en konstruktionsändringsorder, kan olika typer av ändringar göras. Nedan följer några exempel:
 
-- För tekniska ändringsorder i ett **tekniskt företag** kan du göra grundläggande ändringar i tekniska data. Du kan till exempel skapa nya versioner av en produkt, ändra en produkts struktur via strukturlistan och ändra tekniska attributvärden. För varje produkt som påverkas väljer du ett av följande värden i fältet **påverkan**:
+- För konstruktionsändringsorder i ett *tekniskt företag* kan du göra grundläggande ändringar i konstruktionsdata. Du kan till exempel skapa nya versioner av en produkt, ändra en produkts struktur via strukturlistan och ändra konstruktionsattributvärden. För varje produkt som påverkas väljer du ett av följande värden i fältet **påverkan**:
 
     - **Ingen** – Uppdatera den befintliga produktversionen (i versionsuppdateringen).
     - **Ny version** – skapa en ny version baserad på den valda produktversionen.
-    - **Ny produkt** – skapa en helt ny produkt- eller produktvariant som baseras på den valda produktversionen.
+    - **Ny produkt** – Skapa en helt ny produkt som baseras på den valda produktversionen.
+    - **Ny variant** – Skapa en ny variant baserad på den valda produktversionen. Strukturliste- och flödesinformationen kopieras.
 
-- För tekniska ändringsorder i ett **operationellt företag** kan du ändra produktens logistiska data. Du kan till exempel utöka den befintliga strukturlistan med inställningar för källa, lägga till lokala flöden eller lokala struktur listor och till och med utöka en strukturlista genom att lägga till nya strukturlisterader för lokala förpackningsmaterial, smörjvätskor eller instruktioner på det lokala språket. Berikningar som användarna gör i operationella företaget bevaras när nya uppdateringar skickas från tekniska företaget. Mer information finns i [regler för tekniska företag och dataägarskap](engineering-org-data-ownership-rules.md).
+- För konstruktionsändringsorder i ett *operationellt företag* kan du ändra produktens logistiska data. Du kan till exempel utöka den befintliga strukturlistan med inställningar för källa, lägga till lokala flöden eller lokala struktur listor och till och med utöka en strukturlista genom att lägga till nya strukturlisterader för lokala förpackningsmaterial, smörjvätskor eller instruktioner på det lokala språket. Berikningar som användarna gör i operationella företaget bevaras när nya uppdateringar skickas från konstruktionsföretaget. Mer information finns i [regler för konstruktionsföretag och dataägarskap](engineering-org-data-ownership-rules.md).
 
-    När tekniska ändringsorder bearbetas i det tekniska företaget skapas och/eller uppdateras bara produkterna i det tekniska företaget. Om produktens huvuddata ska också uppdateras måste du också frisläppa produkterna till operativa företag.
+    När konstruktionsändringsorder bearbetas i konstruktionsföretaget skapas och/eller uppdateras bara produkterna i konstruktionsföretaget. Om produktens huvuddata ska också uppdateras måste du också frisläppa produkterna till operativa företag.
 
-- Du kan frisläppa produkter direkt från teknisk ändringsorder. Öppna ändringsordningen och sedan på åtgärdsfönstret på fliken **Ändringsorder** i gruppen **Produktversioner** välj **Frisläppa produktstruktur**. Processen fungerar precis som den fungerar när du släpper produkter från sidan **frisläppta produkter**. Mer information finns i [Frisläppa produktstruktur](release-product-structure.md).
-- Du kan automatiskt frisläppa produkter från teknisk ändringsorder, baserat på följande faktorer:
+- Du kan frisläppa produkter direkt från konstruktionsändringsorder. Öppna ändringsordningen och sedan på åtgärdsfönstret på fliken **Ändringsorder** i gruppen **Produktversioner** välj **Frisläppa produktstruktur**. Processen fungerar precis som den fungerar när du släpper produkter från sidan **frisläppta produkter**. Mer information finns i [Frisläppa produktstruktur](release-product-structure.md).
+- Du kan automatiskt frisläppa produkter från konstruktionsändringsorder, baserat på följande faktorer:
 
     - Återutgivning till företag där produkter tidigare har frisläppts. Välj **Sök** för att söka igenom alla tidigare versioner och välj sedan **Visa** för att visa resultaten. På sidan **Visa** visas de tidigare produktlanseringarna, och du kan välja vilka produkter som ska återlämnas. Stäng sedan sidan **Visa** och välj **Process** för att släppa valda produkter på nytt.
-    - Inställningar för automatisk publicering av teknisk produktkategori i frisläppningskontrollen. Du kan göra den här versionen som en del av arbetsflödet. När blocket **samla ut frisläppningsförslag** används kommer förslaget att släppas att fyllas i med frisläppning på nytt (se föregående lista) och produkter kommer att släppas till företag om kryssrutan **Automatisk frisläppning** vald i frisläppningskontrollen för den tekniska produktkategorin. Du kan välja **vy** för att visa resultaten på det sätt som beskrivs i föregående listobjekt. Produkterna frigörs också när blocket **process frisläppningsförslag** används. Om du bara väljer att samla in frisläppningsförslaget som en del av arbetsflödet, kan du starta frisläppningen manuellt genom att välja **process**, som beskrivs i det föregående listobjektet.
+    - Inställningar för automatisk publicering av konstruktionsproduktkategori i frisläppningskontrollen. Du kan göra den här versionen som en del av arbetsflödet. När blocket **samla ut frisläppningsförslag** används kommer förslaget att släppas att fyllas i med frisläppning på nytt (se föregående lista) och produkter kommer att släppas till företag om kryssrutan **Automatisk frisläppning** vald i frisläppningskontrollen för den konstruktionsproduktkategorin. Du kan välja **vy** för att visa resultaten på det sätt som beskrivs i föregående listobjekt. Produkterna frigörs också när blocket **process frisläppningsförslag** används. Om du bara väljer att samla in frisläppningsförslaget som en del av arbetsflödet, kan du starta frisläppningen manuellt genom att välja **process**, som beskrivs i det föregående listobjektet.
 
-## <a name="follow-up-on-an-engineering-change-request-via-an-engineering-change-order"></a>Följa upp en teknisk ändringsbegäran via en teknisk ändringsorder
+## <a name="follow-up-on-an-engineering-change-request-via-an-engineering-change-order"></a>Följa upp en konstruktionsändringsbegäran via en konstruktionsändringsorder
 
-Så snart en teknisk ändringsbegäran godkänns kan du följa upp den via en teknisk ändringsorder. Du kan kombinera flera tekniska ändrings begäran i en enda teknisk ändringsorder. En enskild teknisk ändringsorder kan till och med innehålla flera produkter. (Vanligtvis använder du den här metoden när samma ändring måste tillämpas på flera produkter). Du kan dock inte skapa flera tekniska ändringsorder från en enskild teknisk ändringsbegäran.
+Så snart en konstruktionsändringsbegäran godkänns kan du följa upp den via en konstruktionsändringsorder. Du kan kombinera flera konstruktionsändrings begäran i en enda konstruktionsändringsorder. En enskild konstruktionsändringsorder kan till och med innehålla flera produkter. (Vanligtvis använder du den här metoden när samma ändring måste tillämpas på flera produkter). Du kan dock inte skapa flera konstruktionsändringsorder från en enskild konstruktionsändringsbegäran.
 
-Om du vill följa upp en ändringsbegäran via en ändringsorder öppnar du begäran och väljer sedan i åtgärdsfönstret på fliken **Ändringsorder** i gruppen **Teknisk ändringsorder** välj **Kopiera länk och produkter**. Du kan sedan välja en befintlig ändringsorder för att ansluta ändringsbegäran till, eller så kan du skapa en ny teknik ändringsorder för den specifika förfrågan.
+Om du vill följa upp en ändringsbegäran via en ändringsorder öppnar du begäran och väljer sedan i åtgärdsfönstret på fliken **Ändringsorder** i gruppen **konstruktionsändringsorder** välj **Kopiera länk och produkter**. Du kan sedan välja en befintlig konstruktionsändringsorder för att ansluta ändringsbegäran till, eller så kan du skapa en ny konstruktionsändringsorder för den specifika förfrågan.
 
 ## <a name="engineering-change-order-report"></a>Rapport om konstruktionsändringsorder
 
-Tekniska ändringsorder rapporter beskriver de ändringar som har gjorts i en teknisk ändringsorder. De är användbara både under och efter gransknings- och godkännandeprocessen.
+Konstruktionsändringsorder rapporter beskriver de ändringar som har gjorts i en konstruktionsändringsorder. De är användbara både under och efter gransknings- och godkännandeprocessen.
 
-Om du vill visa en rapport för teknisk ändringsorder öppnar du relevant ändringsorder och i åtgärdspanelen, på fliken **ändringsorder** i gruppen **vy** väljer du **Rapport för teknisk ändringsorder**.
+Om du vill visa en rapport för konstruktionsändringsorder öppnar du relevant ändringsorder och i åtgärdspanelen, på fliken **ändringsorder** i gruppen **vy** väljer du **Rapport för konstruktionsändringsorder**.
 
-## <a name="fields-on-an-engineering-change-order"></a>Fält på en teknisk ändringsorder
+## <a name="fields-on-an-engineering-change-order"></a>Fält på en konstruktionsändringsorder
 
-De flesta fält på teknik ändringsorder är samma fält för frisläppta produkter, tekniska versioner, dokument, strukturlistor (rader) och flöden (operationer). Fälten i följande tabell är dock unika för ändringsorder.
+De flesta fält på konstruktionsändringsorder är samma fält för frisläppta produkter, konstruktionsversioner, dokument, strukturlistor (rader) och flöden (operationer). Fälten i följande tabell är dock unika för ändringsorder.
 
 | Fält | beskrivning |
 |---|---|

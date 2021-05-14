@@ -2,7 +2,7 @@
 title: Begär ledig tid
 description: Begär ledig tid i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0159935e98e720d401923230dd7b69e22581df84
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4885c91eb0406acda2cf60ed4e30f494ebaa2a99
+ms.sourcegitcommit: 36b3fa236734a387f42c87e9b7b0ddd638ce4302
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790702"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924864"
 ---
 # <a name="request-time-off"></a>Begär ledig tid
 
@@ -45,7 +45,7 @@ Du kan skicka in en begäran om ledighet, visa semestern och lämna saldon och s
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Lägg till en bilaga i en befintlig begäran
 
-När du uppdaterar en befintlig ledighetsansökan kan du lägga till en bilaga. Du kan också se alla relaterade begäran för ett visst datum. 
+När du uppdaterar en befintlig ledighetsansökan kan du lägga till en bilaga. Du kan också se alla relaterade begäran för ett visst datum.
 
 ## <a name="view-leave-balances"></a>Visa ledighetssaldon
 
@@ -58,6 +58,20 @@ När du uppdaterar en befintlig ledighetsansökan kan du lägga till en bilaga. 
 1. I arbetsyta **Självbetjäning för medarbetare**, välj **Fler** (...) panelen **ledighetssaldon**.
 
 2. Om du vill visa godkända ledighetsansökningar väljer du **Godkänd ledighet**. Om du vill visa väntande ledighetsansökningar väljer du **Ledighetsansökningar**.
+
+## <a name="cancel-time-off-requests"></a>Avbryt ansökningar om ledighet
+
+[!include [Preview feature](includes/preview-feature.md)]
+
+1. I arbetsytan **Självbetjäning för medarbetare** väljer du **Visa ledig tid** i panelen **Ledighetssaldon**.
+
+2. I formuläret **Ledighet** väljer du en eller flera förfrågningar om ledighet att avbryta.
+
+3. Välj knappen **Avbryt**.
+
+4. Skriv en kommentar i fönstret **Annulleringsinformation** och välj sedan **Skicka**.
+
+   ![Avbryta ledighetsbegäran](media/hr-leave-and-absence-cancel.png)
 
 ## <a name="see-also"></a>Se även
 

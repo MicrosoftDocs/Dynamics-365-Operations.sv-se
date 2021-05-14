@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 219504da62fd4637ed01f9acbab32f873cef81b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 56319035ac092a376f0766c20eee71af6256b6f9
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795965"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936921"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö
 
@@ -29,7 +29,7 @@ I det här avsnittet beskrivs hur du konfigurerar hämta i butik (BOPIS) i en Mi
 
 ## <a name="prerequisite"></a>Förutsättning
 
-Slutför procedurerna i det här avsnittet först när bedömningsmiljö för Commerce har etablerats och konfigurerats. Information om hur du etablerar och konfigurerar din miljö, se [Etablera en bedömningsmiljö av Dynamics 365 Commerce](provisioning-guide.md) och [Konfigurera en bedömningsmiljö av Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
+Slutför procedurerna i det här avsnittet först när bedömningsmiljö för Commerce har etablerats och konfigurerats. Information om hur du etablerar och konfigurerar din miljö, se [Etablera en bedömningsmiljö av Dynamics 365 Commerce](provisioning-guide.md) och [Konfigurera en bedömningsmiljö av Dynamics 365 Commerce](./cpe-post-provisioning.md).
 
 När hela Commerce-miljön har etablerats och konfigurerats kan du använda det här avsnittet för att aktivera BOPIS-scenarier.
 
@@ -37,7 +37,7 @@ När hela Commerce-miljön har etablerats och konfigurerats kan du använda det 
 
 ### <a name="configure-modern-pos"></a>Konfigurera Modern POS
 
-BOPIS-scenarier som involverar en kreditkortsbetalning kräver en maskinvarustation. Maskinvarustationen ingår i Modern POS för Windows och Android-klienter. Om du använder Cloud POS eller Modern POS för iOS måste POS kombineras med en delad maskinvarustation. I det här avsnittet beskrivs hur du konfigurerar BOPIS för Windows och Android-klienter. Mer information om hur du konfigurerar en delad maskinvarustation finns i [Konfiguration och installation av Retail Hardware Station](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation).
+BOPIS-scenarier som involverar en kreditkortsbetalning kräver en maskinvarustation. Maskinvarustationen ingår i Modern POS för Windows och Android-klienter. Om du använder Cloud POS eller Modern POS för iOS måste POS kombineras med en delad maskinvarustation. I det här avsnittet beskrivs hur du konfigurerar BOPIS för Windows och Android-klienter. Mer information om hur du konfigurerar en delad maskinvarustation finns i [Konfiguration och installation av Retail Hardware Station](./retail-hardware-station-configuration-installation.md).
 
 1. Gå till **Retail och Commerce \> Kanalinställningar \> Kassainställning \> Kassor**.
 2. Välj kassa **SANFRAN-5** och välj sedan **redigera**.
@@ -87,7 +87,7 @@ BOPIS-scenarier som involverar en kreditkortsbetalning kräver en maskinvarustat
 
 ### <a name="create-a-storefront-order-for-in-store-pickup"></a>Skapa en referensbutiken för upphämtning i butik
 
-1. Gå till den URL som du angav i steget [Initiera e-Commerce](https://docs.microsoft.com/dynamics365/commerce/provisioning-guide#initialize-e-commerce) under konfigurationen av miljön.
+1. Gå till den URL som du angav i steget [Initiera e-Commerce](./provisioning-guide.md#initialize-e-commerce) under konfigurationen av miljön.
 2. Välj en artikel och välj **Lägg till i kundvagn**.
 3. På sidan för shoppingväska väljer du **Hämta den här** för den orderrad som du just har lagt till.
 4. I dialogrutan **Välj en butik** anger du **San Francisco** och välj sedan knappen **Sök**.
@@ -112,7 +112,7 @@ BOPIS-scenarier som involverar en kreditkortsbetalning kräver en maskinvarustat
 
 ### <a name="synchronize-online-orders-to-the-back-office"></a>Synkronisera onlinebeställningar till backoffice
 
-Information om hur du synkroniserar onlinebeställningar finns i [bokföra online försäljning och betalningar](https://docs.microsoft.com/dynamics365/commerce/tasks/posting-online-sales-payments).
+Information om hur du synkroniserar onlinebeställningar finns i [bokföra online försäljning och betalningar](./tasks/posting-online-sales-payments.md).
 
 ### <a name="pick-up-an-order-in-the-store"></a>Hämta en beställning i butik
 
@@ -148,19 +148,19 @@ För alla allmänna problem bör du alltid läsa händelseloggarna i Modern POS-
 
 [Dynamics 365 Commerce bedömningsmiljö – vanliga frågor](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce webbplatsen](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Adyen-betalningskoppling](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
+[Adyen-betalningskoppling](./dev-itpro/adyen-connector.md?tabs=8-1-3)
 
-[Spara betalningsinstrument online med Adyen-kopplingen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
+[Spara betalningsinstrument online med Adyen-kopplingen](./dev-itpro/adyen-connector-listpi.md)
 
-[Översikt över betalningar i flera kanaler](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+[Översikt över betalningar i flera kanaler](./omni-channel-payments.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

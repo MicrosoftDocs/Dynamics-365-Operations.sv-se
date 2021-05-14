@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: b75743a64fef53f79159a1476c99a7035b7e4f3b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3c2e638aeed967db055948dc3addcb4d59f210a5
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839183"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920095"
 ---
 # <a name="rebate-management-deals"></a>Rabatthanteringserbjudanden
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Rabatthanteringserbjudanden används för att kontrollera olika metoder och baser för beräkning av rabatter och royalties. De omfattar regler för inkludering och undantag. Det finns tre typer av rabatthanteringserbjudanden: kundrabatter, kundroyalties och leverantörsrabatter. Alla tre typerna använder liknande inställningar. I det här avsnittet visas skillnader mellan de länder där de finns.
 
@@ -164,7 +163,7 @@ Följande register beskriver de fält som är tillgängliga för varje datumrad.
 | Typ av anspråksperiod | Det här fältet är endast tillgängligt om fältet **Anspråk efter** anges till *Anpassad period*. De värden som är tillgängliga för urval kommer från de periodtyper som är definierade i redovisningen. |
 | Process vid bokföring | Markera den här kryssrutan om anspråksraden ska behandlas vid bokföringstid. Detta alternativ är endast tillgängligt för erbjudanderader där fältet **Transaktionstyp** på fliken **Allmänt** är inställt på *Levererad* eller *Faktura*. För reservering bokförs provisionen när leveransfakturan eller fakturan genereras. |
 | Garanti per | Det här fältet gäller endast royaltyerbjudanden. Ange hur ofta garantin för royaltyn ska beräknas under perioden som definieras i inställningen **Ackumulera efter**. Ange ett heltal här och välj sedan en betalningsenhet i fältet **Garanti betald**. |
-| Garanti betald | <p>Det här fältet gäller endast royaltyerbjudanden. Det fungerar tillsammans med fältet **Garanti per** för att definiera att frekvensen för garantiberäkningen. Välj ett av följande värden:</p><ul><li><p>*Början på perioden* – Garantin betalas i början av avtalsperioden som är definierad för datumraden. Den fullständiga garantin behandlas först. Bara värdet av royalties som överstiger beloppen bokförs som en royalty. Här är ett exempel:</p><ul><li>**Garantiminimum:** 10 000 USD mer än två månader.</li><li>**Månad 1:** 10 000 USD bokfördes som en garanti och 0 USD i royalties bokfördes.</li><li>**Månad 2:** 2 000 USD bokfördes till royalties och 0 USD i garantier bokfördes.</li><li>**Arbetsberäkning:** *Resterande garanti* – *Bokförda royalties* = 0 - 2 000 =-2 000 USD.</li></ul><p>Eftersom en royaltybetalning på 2 000 USD krävs, skapas en journal för 2 000 USD.</p><p>**Obs!** Garantin ska beräknas och bokföras tillsammans med avdragsavsättningen för den första perioden.</p></li><li><p>*Periodslut* – Garantin ska inte betalas förrän i slutet av avdragsavtalet, enligt vad som definierats på datumraden. Här är ett exempel:</p><ul><li>**Garantiminimum:** 10 000 USD mer än två månader.</li><li>**Månad 1:** 5 000 USD har bokförts som en royalty och en journal har skapats.</li><li>**Månad 2:** 7 000 USD har bokförts som en royalty och en journal har skapats.</li><li>**Arbetsberäkning:** Eftersom royalties överstiger garantibeloppet bokförs 0 USD bokföras på garantin.</li></ul><p>**Obs!** Garantin ska beräknas och bokföras endast tillsammans med avdrag och rabattransaktion för den sista perioden.</p></li></ul> |
+| Garanti betald | <p>Det här fältet gäller endast royaltyerbjudanden. Det fungerar tillsammans med fältet **Garanti per** för att definiera att frekvensen för garantiberäkningen. Välj ett av följande värden:</p><ul><li><p>*Början på perioden* – Garantin betalas i början av avtalsperioden som är definierad för datumraden. Den fullständiga garantin behandlas först. Bara värdet av royalties som överstiger beloppen bokförs som en royalty. Här är ett exempel:</p><ul><li>**Garantiminimum:** 10 000 USD mer än två månader.</li><li>**Månad 1:** 10 000 USD bokfördes som en garanti och 0 USD i royalties bokfördes.</li><li>**Månad 2:** 2 000 USD bokfördes till royalties och 0 USD i garantier bokfördes.</li><li>**Arbetsberäkning:** *Resterande garanti* – *Bokförda royalties* = 0 – 2 000 =-2 000 USD.</li></ul><p>Eftersom en royaltybetalning på 2 000 USD krävs, skapas en journal för 2 000 USD.</p><p>**Obs!** Garantin ska beräknas och bokföras tillsammans med avdragsavsättningen för den första perioden.</p></li><li><p>*Periodslut* – Garantin ska inte betalas förrän i slutet av avdragsavtalet, enligt vad som definierats på datumraden. Här är ett exempel:</p><ul><li>**Garantiminimum:** 10 000 USD mer än två månader.</li><li>**Månad 1:** 5 000 USD har bokförts som en royalty och en journal har skapats.</li><li>**Månad 2:** 7 000 USD har bokförts som en royalty och en journal har skapats.</li><li>**Arbetsberäkning:** Eftersom royalties överstiger garantibeloppet bokförs 0 USD bokföras på garantin.</li></ul><p>**Obs!** Garantin ska beräknas och bokföras endast tillsammans med avdrag och rabattransaktion för den sista perioden.</p></li></ul> |
 | Garantiminimum | Det här fältet gäller endast royaltyerbjudanden. Ange minimibeloppet för garantin för en royalty, i den valuta som är definierad i erbjudanderubriken. |
 
 ### <a name="settings-on-the-lines-tab"></a>Inställningar på fliken Rader
@@ -217,7 +216,7 @@ En avtalsrad ställs till exempel in så att fältet **Beräkningsmetod** får v
 Om värdet av de varor som köpts in eller sålts 2 000 USD, beräknas den resulterande 350 USD på följande sätt:
 
 - **Rabatt (A):** *Tröskel (A)* × *Procent (A)* = 1 000 USD × 10 procent = 100 USD
-- **Rabatt (B):** (*Värde såld* – *Tröskel (A)*) × *Procent (B)* = (2 000 USD - 1 000 USD) × 25 procent = 250 USD
+- **Rabatt (B):** (*Värde såld* – *Tröskel (A)*) × *Procent (B)* = (2 000 USD – 1 000 USD) × 25 procent = 250 USD
 - **Total rabatt:** *Rabatt (A)* + *Rabatt (B)* = 100 + 250 = 350 USD
 
 Om fältet **Bas** ställs in på *Kvantitet* istället för *Värde*, stegvisa beräkningsmetoden på liknande sätt. Det första steget används för den identifierade kvantiteten tills det andra steget uppnås. Det andra steget används sedan för all kvantitet över det första steget tills det tredje steget uppnås. Den här processen fortsätter sedan genom alla efterföljande steg.

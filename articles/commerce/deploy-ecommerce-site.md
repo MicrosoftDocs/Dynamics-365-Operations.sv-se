@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fff5d47d6eb3e08288d17853fcd94f9eab843c3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b228babfd32a4191eeed2a6d924a8b99f1a5311
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801959"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936716"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Distribuera en ny klientorganisation för näthandel
 
@@ -29,13 +29,13 @@ I det här avsnittet beskrivs hur du distribuerar en ny Dynamics 365 Commerce-n�
 
 Microsoft Dynamics Lifecycle Services (LCS) är en molnbaserad samarbetsyta som partners och kunder kan använda för att hantera sina projekt och miljöer, visa den senaste informationen om Microsoft Dynamics produkter och funktioner samt skapa, spåra och bläddra i supporthändelser. Administreringsfunktionerna för näthandel integreras i LCS.
 
-Mer information om LCS finns i [användarhandboken för Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
+Mer information om LCS finns i [användarhandboken för Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
     
 ## <a name="get-started"></a>Kom i gång
 
 Innan du kan initiera näthandel måste du initiera ett projekt, en miljö och en Retail Cloud Scale Unit (RCSU). Om du vill utföra initieringen i LCS måste du ha behörighet till rollen som projektägare eller som en miljöhanterare. Topologierna för tillverkning och begränsat läge stöds.
 
-Mer information om miljöer finns i [miljöplanering](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning). Mer information om RCSU finns i [Initiera Retail Cloud Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels).
+Mer information om miljöer finns i [miljöplanering](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning). Mer information om RCSU finns i [Initiera Retail Cloud Scale Unit](/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels).
 
 ## <a name="initialize-e-commerce"></a>Initiera näthandel
 

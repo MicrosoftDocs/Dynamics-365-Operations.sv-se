@@ -2,7 +2,7 @@
 title: Designa flerspråkiga rapporter i elektronisk rapportering
 description: I det här avsnittet beskrivs hur du kan använda elektronisk rapporteringsetiketter för att skapa flerspråkiga rapporter.
 author: NickSelin
-ms.date: 09/14/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5a2e8cca441189020e6274248a48c5e9dd80e00
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 50156b8c6b3553b02d092fad9c72e90c1f70ff78
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753562"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951995"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Designa flerspråkiga rapporter i elektronisk rapportering
 
@@ -158,6 +158,31 @@ ER har olika sätt att ange ett språk för en genererad rapport. I fältet **Sp
 - **Definierade under körning** – Generera en rapport på ett språk som anges i körning. Om du väljer det här värdet ska du i fältet **Språk** konfigurera ett ER-uttryck som returnerar språk koden för språket, som det språk som tillhör motsvarande kund.
 
     ![Ange i ER-åtgärdsdesigner en körning definieras språket i en genererad rapport](./media/er-multilingual-labels-language-context-runtime.png)
+
+## <a name="culture-specific-formatting"></a>Språkspecifik formatering
+
+ER har olika sätt att specificera språket för en genererad rapport. Därför kan korrekt språkspecifik formatering användas för datum, tid och numeriska värden. När du utformar ett ER-format kan du, på fliken **Format**, i fältet **Språkinställningar**, välja ett av följande värden för respektive formatkomponent av typen **Common\\Fil**, **Excel\\Fil**, **PDF\\Fil** eller **PDF\\Sammanslagning**:
+
+- **Användarinställningar** – Formatera värdena efter användarens prioriterade språk. Det språket definieras i fältet **Datum, tid och nummerformat** på fliken **Inställningar** på sidan **Användaralternativ**.
+
+    ![Definiera användarens prioriterade språk som språk för en genererad rapport i ER-funktionsdesignern](./media/er-multilingual-labels-culture-context-user-preferred.png)
+
+- **Explicit definierade** – Formatera värdena enligt det språk som anges vid designtidpunkten.
+
+    ![Definiera det språk som angetts i samband med utformningen som språk för en genererad rapport i ER-funktionsdesignern](./media/er-multilingual-labels-culture-context-fixed.png)
+
+- **Definieras vid körning** – Formatera värdena enligt det språk som anges vid körningstidpunkten. Om du väljer detta värde ska du på fliken **Mappning**, i fältet **Format för datum, tid och nummer** konfigurera ett ER-uttryck som returnerar språkkoden för språket, exempelvis tillhörande kunds språk.
+
+    ![Definiera det språk som definierats i samband med körningen som språk för en genererad rapport i ER-funktionsdesignern](./media/er-multilingual-labels-culture-context-runtime.png)
+
+> [!NOTE]
+> En ER-komponent som du definierar en specifik konstnad för kan innehålla underordnade ER-komponenter som konfigurerats för att fylla i ett textvärde. Som standard används den överordnade komponenten när värdena för dessa komponenter formateras. Du kan använda följande inbyggda ER-funktioner när du konfigurerar bindande element för dessa komponenter och tillämpar ett alternativt språk för värdeformatering:
+>
+> - [DATEFORMAT](er-functions-datetime-dateformat.md#syntax-2)
+> - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
+> - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
+>
+> I version 10.0.20 och senare används språken för formatkomponenter av typen **Common\\Fil** och **Excel\\Fil** för att formatera värden i samband med [PDF-konvertering](electronic-reporting-destinations.md#OutputConversionToPDF) av ett genererat dokument.
 
 ## <a name="translation"></a>Översättning
 

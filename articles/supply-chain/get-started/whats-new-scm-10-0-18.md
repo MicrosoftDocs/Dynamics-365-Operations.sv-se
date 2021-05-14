@@ -1,5 +1,5 @@
 ---
-title: Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.18 (maj 2021)
+title: Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.18 (maj 2021)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.18.
 author: kamaybac
 ms.date: 03/01/2021
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae65afbcaca1f2f390520e1108d8363c3e248c60
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d84520b8f551df847cb5d77d8dcbce1701d3795b
+ms.sourcegitcommit: d77b2175a3364694b5c74e0062e317f612416796
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909363"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5934977"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.18 (maj 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10018-may-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.18 (maj 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management förhandsversion 10.0.18. Den här versionen har ett versionsnummer för 10.0.793 och är tillgänglig enligt följande:
+Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management 10.0.18. Den här versionen har ett versionsnummer för 10.0.793 och är tillgänglig enligt följande:
 
 - **Förhandsversion:** mars 2021
 - **Allmän tillgänglighet för frisläppning (självuppdatering):** april 2021
@@ -43,9 +42,17 @@ Den här versionen innehåller följande nya funktioner: Följ länkarna till [U
 
 - [Rabatthantering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Mer information finns i [översikt över rabatthanteringsmodul](../rebate-management/rebate-management-overview.md)
 
+- [Exportkonfigurationspolicy för försäljningsdataenhet](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-data-entity-export-setup-policy)
+
+- [Registrering av försäljningsreturorderrad med decimalprecision med och utan faktisk/nominell vikt](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight)
+
+- [Bekräftelse av försäljningsorder med ett enda klick](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation)
+
+- [Raderingspolicy för försäljningsorder till inköpsorderrad](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-purchase-order-line-deletion-policy)
+
 - Förenklat gränssnitt endast för in- och utstämpling (förbättring för [Förbättrat körningsgränssnitt för produktionsgolvet för tillverkning](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Mer information finns i [Konfigurera gränssnittet för körning av produktionsstyrning](../production-control/production-floor-execution-configure.md).
 
-De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem. Vissa av funktionerna visas fortfarande i en förhandsversion, men andra användare kan redan vara tillgängliga i allmänhet. 
+De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
 

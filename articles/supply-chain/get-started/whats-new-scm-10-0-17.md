@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3faffad2bff18278a54a26f77c1423f2246d086e
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: fd8c306dd6c3aeb7ef41b4eb3f6f8bad040035c2
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907973"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935615"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Vad är nytt och ändrat i Dynamics 365 Supply Chain Management (10.0.17 april 2021)
 
@@ -35,7 +35,7 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 Den här versionen innehåller följande nya funktioner:  Följ länkarna till [Utgivningsplan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) för att se de officiella datumen för varje funktion.
 
-De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem. Vissa av funktionerna kan fortfarande visas i en förhandsversion, men de flesta är nu tillgängliga i allmänhet.
+De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
 
 ### <a name="asset-management"></a>Tillgångshantering
 
@@ -71,13 +71,13 @@ De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fi
 
 - [Funktionerna för tillgångshantering i gränssnittet för utförande av produktionsstyrning](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Mer information finns i [Konfigurera gränssnittet för körning av produktionsstyrning](../production-control/production-floor-execution-configure.md).
 
-- Enhetlig nummerserie för jobb-ID:n<br> - Mer information finns i  
+- [Tillverkningskörning med skalenheter i molnet](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - För mer information, se [Arbetsbelastningar för tillverkningskörning för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-manufacturing.md).
 
 - [Åsidosätta standardreservationsprincipen för material i produktion](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Mer information finns i [Åsidosätt standardreservationsprincipen för material i produktionen](../production-control/override-default-reservation-principle.md).
 
 - [Sparade vyer för produktionskontroll](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Mer information finns i [Standardvyer för Supply Chain Management](saved-views-scm.md).
 
-- [Tillverkningskörning med skalenheter i molnet](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - För mer information, se [Arbetsbelastningar för tillverkningskörning för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-manufacturing.md).
+- Enhetlig nummerserie för jobb-ID:n<br> - Mer information finns i [Enhetlig nummerserie för jobb-ID](../production-control/unified-job-ids.md).
 
 ### <a name="planning"></a>Planering
 

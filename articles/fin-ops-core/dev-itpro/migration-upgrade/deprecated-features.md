@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0389548b7867cc9505c9b8fe70c880959f6783b0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745273"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921433"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Borttagna eller utfasade funktioner i tidigare versioner
 
@@ -37,7 +37,7 @@ I det här ämnet beskrivs funktioner som har tagits bort eller utfasat från Dy
 
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
-Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
+Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finans 10.0.7 med plattformsuppdatering 31
 
@@ -147,7 +147,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Justering av rubrik med andra Dynamics- och Office-produkter. Mer information finns i [uppdaterat navigeringsfält som justeras mot Office-rubriken.](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar)
+| **Orsak till inaktuell/borttagning** | Justering av rubrik med andra Dynamics- och Office-produkter. Mer information finns i [uppdaterat navigeringsfält som justeras mot Office-rubriken.](/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar)
 | **Ersatt av en annan funktion?**   | Från och med plattformsuppdatering 24, ett omformaterat navigeringsfält med sökfunktionen införd. |
 | **Produktområden som påverkas**         | Webbklient |
 | **Distribueringsalternativ**              | Allt |
@@ -161,7 +161,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Äldre standardbeteende för åtgärd i rutnät resulterar i en oväntad kolumn med standardåtgärdslänken efter att rutnätskolumner har beställts om via anpassning. Den nya tröga standardåtgärdsfunktionen korrigerar detta. Mer information finns i [Tröga standardåtgärder i rutnät](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Orsak till inaktuell/borttagning** | Äldre standardbeteende för åtgärd i rutnät resulterar i en oväntad kolumn med standardåtgärdslänken efter att rutnätskolumner har beställts om via anpassning. Den nya tröga standardåtgärdsfunktionen korrigerar detta. Mer information finns i [Tröga standardåtgärder i rutnät](/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
 | **Ersatt av en annan funktion?**   | Med start i plattformsuppdatering 21 infördes en funktion för ”tröga standardåtgärder”. Den här funktionen kan aktiveras på sidan **Prestandaalternativ för klient**. |
 | **Produktområden som påverkas**         | Rutnät i webbklienten |
 | **Distribueringsalternativ**              | Allt |
@@ -172,7 +172,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 |&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Filtreringsupplevelsen ”är någon av” har gått igenom en ny utformning av plattformsuppdatering 22, med planen att så småningom blir den enda ”är någon av”-filtreringsupplevelsen. |
-| **Ersatt av en annan funktion?**   | Med start i plattformsuppdatering 22, är en förbättrad ”är någon av”-filtreringserfarenhet tillgänglig på sidan **Prestandaalternativ för klient**. För mer information, se [Optimerad "är någon av" filtreringsupplevelse](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Ersatt av en annan funktion?**   | Med start i plattformsuppdatering 22, är en förbättrad ”är någon av”-filtreringserfarenhet tillgänglig på sidan **Prestandaalternativ för klient**. För mer information, se [Optimerad "är någon av" filtreringsupplevelse](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
 | **Produktområden som påverkas**         | Webbklient |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell: Från och med april 2020 blir den förbättrade "är någon av"-upplevelsen standardbeteendet, utan en mekanism för att återgå till äldre funktion. |
@@ -211,7 +211,7 @@ Stöd för att skapa projektbaserade försäljningsorder där projektkontraktet 
 | **Ersatt av en annan funktion?**   | Kompilerarens varning ersätts av ett fel i plattformsuppdatering 26. Ändringen är bakåtkompatibel vid körning, vilket innebär att om du kör plattformsuppdatering 25 eller senare kan detta distribueras i begränsad eller produktionsmiljö utan att behöva ändra anpassad kod. Denna ändring påverkar endast utveckling och kompileringstid.|
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell - Varningen blir ett kompileringsfel i en kommande plattformsuppdatering 26. |
+| **Status**                         | Inaktuell – Varningen blir ett kompileringsfel i en kommande plattformsuppdatering 26. |
 
 #### <a name="overriding-internal-methods-is-deprecated"></a>Åsidosätta interna metoder är inaktuellt
 
@@ -221,7 +221,7 @@ Stöd för att skapa projektbaserade försäljningsorder där projektkontraktet 
 | **Ersatt av en annan funktion?**   | Denna varning ersätts av ett kompileringsfel i plattformsuppdatering 26. Ändringen är bakåtkompatibel vid körning, vilket innebär att om du kör plattformsuppdatering 25 eller senare kan detta distribueras i begränsad eller produktionsmiljö utan att behöva ändra anpassad kod. Denna ändring påverkar endast utveckling och kompileringstid. |
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell - Varningen blir ett kompileringsfel i en kommande plattformsuppdatering 26. |
+| **Status**                         | Inaktuell – Varningen blir ett kompileringsfel i en kommande plattformsuppdatering 26. |
 
 ## <a name="finance-and-operations-1000-with-platform-update-24"></a>Finance and Operations 10.0.0 med plattformsuppdatering 24
 
@@ -476,7 +476,7 @@ Warehouse mobile devices portalen (WMDP) är en fristående komponent som är av
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Dubblettfunktion.       |
-| **Ersatt av en annan funktion?**   | Ja. Funktionen har ersatts med Finance and Operations - lagerhållning. Mer information om inställningar, och förutsättningar finns i [Installera och konfigurera lagerstyrningsappen - översikt](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Ersatt av en annan funktion?**   | Ja. Funktionen har ersatts med Finance and Operations – lagerhållning. Mer information om inställningar, och förutsättningar finns i [Installera och konfigurera lagerstyrningsappen – översikt](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Produktområden som påverkas**         | Lager- och transporthantering     |
 | **Distribueringsalternativ**              | Warehouse mobile devices portalen (WMDP) är en fristående komponent som är avsedd för eget lokal distribution.               |
 | **Status**                         | Inaktuell: Måltidsramen för att ta bort funktioner är Q4 2019.   |
@@ -561,7 +561,7 @@ DTA-/EZAG-format integreras i ESR-systemet, eftersom de kan ha ett referensnumme
 | **Produktområden som påverkas**         | Leverantörsreskontra                                               |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
 
-### <a name="edifact-dirdeb-payment-format-for-austria"></a>EDIFACT - DIRDEB-betalningformat för Österrike
+### <a name="edifact-dirdeb-payment-format-for-austria"></a>EDIFACT – DIRDEB-betalningformat för Österrike
 
 EDIFACT-DIRDEB-betalningsformat för betalningsinsamling (autogiro).
 
@@ -1246,7 +1246,7 @@ Product Builder användes för att dynamiskt konfigurera artiklar från en förs
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Product Builder exponerade X++-kod till slutanvändare och stöds inte i den aktuella versionen av Dynamics AX. Den har tagits bort för att undvika dubbelt underhållsarbete med överlappande, ansenliga kodbaser.  |
-| **Ersatt av en annan funktion?**   | Ja. Begränsningsbaserad konfiguration infördes i Dynamics AX 2012 där avskrivningen av Product Builder i kommande versioner har tillkännagivits. Den begränsningsbaserade konfigurationstekniken väljs på produktmallarna för att möjliggöra konfigurationen. Mer information finns i [Produktkonfiguration - översikt](../../../supply-chain/pim/build-product-configuration-model.md). |
+| **Ersatt av en annan funktion?**   | Ja. Begränsningsbaserad konfiguration infördes i Dynamics AX 2012 där avskrivningen av Product Builder i kommande versioner har tillkännagivits. Den begränsningsbaserade konfigurationstekniken väljs på produktmallarna för att möjliggöra konfigurationen. Mer information finns i [Produktkonfiguration – översikt](../../../supply-chain/pim/build-product-configuration-model.md). |
 | **Produktområden som påverkas**         | Produktinformationshantering, Försäljning och marknadsföring  |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.      |
 
@@ -1333,7 +1333,7 @@ Med hjälp av webbplatstjänster kan du utöka dina affärsprocesser till Intern
 
 ### <a name="virtual-company-accounts"></a>Virtuella företagskonton
 
-Funktionen för virtuella företag stöds inte längre i Dynamics AX. Funktionen för virtuella företag gjorde att användarna kunde ställa in register som kunde delas av en uppsättning företag. Du kan hitta en beskrivning av funktionen här: [Företagskonton och konton för virtuella företag](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Funktionen fungerar genom att gruppera register i samlingar som tilldelas till virtuella företag, som är grupper med befintliga ”verkliga” företag. Frågor skapas så att alla företag i det virtuella företaget kan komma åt data i registren för de associerade registersamlingarna.
+Funktionen för virtuella företag stöds inte längre i Dynamics AX. Funktionen för virtuella företag gjorde att användarna kunde ställa in register som kunde delas av en uppsättning företag. Du kan hitta en beskrivning av funktionen här: [Företagskonton och konton för virtuella företag](../../fin-ops/get-started/ax4-content-retired.md). Funktionen fungerar genom att gruppera register i samlingar som tilldelas till virtuella företag, som är grupper med befintliga ”verkliga” företag. Frågor skapas så att alla företag i det virtuella företaget kan komma åt data i registren för de associerade registersamlingarna.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

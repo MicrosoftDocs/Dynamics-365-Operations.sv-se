@@ -2,7 +2,7 @@
 title: Översikt över elektronisk rapportering (ER)
 description: Det här ämnet ger en översikt till verktyget Elektronisk rapportering. Det beskriver viktiga begrepp, scenarier som stöds och format som är en del av lösningen.
 author: NickSelin
-ms.date: 12/07/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d22a6fc336708028ce4953df50360c233398303d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 26088a01b0e849a5df559631591ec65d7885452b
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893187"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944375"
 ---
 # <a name="electronic-reporting-er-overview"></a>Översikt över elektronisk rapportering (ER)
 
@@ -236,7 +236,7 @@ Spela upp ER-uppgiftsguiden för **Skapa domänspecifika format** (del av affär
 
 ER-formatdesignern kan användas för att skapa ett elektroniskt dokument i OPENXML-kalkylbladsformat. 
 
-Spela upp ER-uppgiftsguiden för **Skapa en konfiguration för rapporter i OPENXML-format** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i det här scenariot. Som ett led i uppgiftsguiden för att importera en mall använder du Excel-filen [Mall för betalningsrapport (SampleVendPaymWsReport.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202) som en mall.
+Spela upp ER-uppgiftsguiden för **Skapa en konfiguration för rapporter i OPENXML-format** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i det här scenariot. Som ett led i uppgiftsguiden för att importera en mall använder du Excel-filen [Mall för betalningsrapport (SampleVendPaymWsReport.xlsx)](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx) som en mall.
 
 ### <a name="building-a-configuration-to-generate-electronic-documents-in-a-word-document-format"></a>Skapa en konfiguration för att skapa elektroniska dokument i ett Word-dokumentformat
 
@@ -244,8 +244,8 @@ ER-formatdesignern kan användas för att skapa ett elektroniskt dokument i ett 
 
 Kör ER-uppgiftsguiden för Designa en konfiguration för att skapa rapporter i Microsoft WORD-format (ingår i affärsprocessen 7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677) för att bekanta dig med detaljerna i det här scenariot). Använd följande Word-filer som mallar för ER-formatet som ett led i uppgiftsguidesteget för att importera en mall:
 
-- [Mall för betalningsrapport (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
-- [Bunden mall för betalningsrapport (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
+- [Mall för betalningsrapport (SampleVendPaymDocReport.docx)](https://download.microsoft.com/download/0/d/e/0de5a87c-95fc-4dfa-958f-285cb28b5b2b/SampleVendPaymDocReport.docx)
+- [Bunden mall för betalningsrapport (SampleVendPaymDocReportBounded.docx)](https://download.microsoft.com/download/a/1/2/a126cb43-6281-4f7b-bde0-25e03ff9bc1e/SampleVendPaymDocReportBounded.docx)
 
 ### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Skapa en konfiguration för att importera data från inkommande elektroniska dokument
 
@@ -253,10 +253,10 @@ ER-formatdesignern kan användas för att beskriva ett elektroniskt dokument som
 
 Kör uppgiftsguiden Skapa erforderlig ER för att importera data från en extern fil (ingår affärsprocessen 7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677) för att bekanta dig med detaljerna i det här scenariot). Använd följande filer för att köra den här guiden:
 
-- [Konfiguration av ER-datamodell (1099model.xml)](https://go.microsoft.com/fwlink/?linkid=845202)
-- [ER-formatkonfiguration (1099model.xml)](https://go.microsoft.com/fwlink/?linkid=845202)
-- [Exempel på det inkommande dokumentet i XML-format (1099entries.xml)](https://go.microsoft.com/fwlink/?linkid=845202)
-- [Exempel på arbetsboken för att hantera data för inkommande dokument (1099entries.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202)
+- [Konfiguration av ER-datamodell (1099model.xml)](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml)
+- [ER-formatkonfiguration (1099model.xml)](https://download.microsoft.com/download/e/8/7/e87154b0-b53f-431f-8e1e-0b7f7c9805a9/1099format.xml)
+- [Exempel på det inkommande dokumentet i XML-format (1099entries.xml)](https://download.microsoft.com/download/4/0/3/403a4958-df24-476a-b8b0-6843a9fa7f89/1099entries.xml)
+- [Exempel på arbetsboken för att hantera data för inkommande dokument (1099entries.xlsx)](https://download.microsoft.com/download/6/0/0/6001abab-a331-48db-a939-41851fb0f5d0/1099entries.xlsx)
 
 ### <a name="storing-a-designed-format-component-in-a-format-configuration"></a>Spara en skapad formatkomponent i en formatkonfiguration
 

@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d5d5303b6d81ad182e0e28a51790166b833bee7b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 438e8ba38726a25a2464490f4098f96095b4d5c6
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754810"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923317"
 ---
 # <a name="feature-management-overview"></a>Översikt över funktionshantering
 
@@ -46,7 +46,7 @@ Arbetsytan **Funktionshantering** funktionshantering innehåller också flera fl
 
 - **Ny** – denna flik visar alla funktioner som har lagts till sedan den senaste månadsuppdateringen. Om du har hoppat över några månatliga uppdateringar visas alla nya funktioner som har lagts till sedan senaste gången du uppdaterade på fliken. De nyaste funktionerna visas högst upp i listan. Det totala antalet nya funktioner visas också på en sida högst upp på sidan.
 - **Inte aktiverad** – på den här fliken visas alla funktioner som inte har aktiverats. De nyaste funktionerna visas högst upp i listan. Det totala antalet nya funktioner som inte har aktiverats visas också på en sida högst upp på sidan.
-- **Tidsplanerad** - denna flik visar alla funktioner som har tidsplanerats att aktiveras för framtida datum. De funktioner som har det tidigaste tidsplanerade datumet visas överst i listan. Det totala antalet tidsplaneringar av nya funktioner visas också på en sida högst upp på sidan.
+- **Tidsplanerad** – denna flik visar alla funktioner som har tidsplanerats att aktiveras för framtida datum. De funktioner som har det tidigaste tidsplanerade datumet visas överst i listan. Det totala antalet tidsplaneringar av nya funktioner visas också på en sida högst upp på sidan.
 - **Alla** – på den här fliken visas alla funktioner. De nyaste funktionerna visas högst upp i listan.
 
 ## <a name="turn-on-a-feature"></a>Aktivera en funktion
@@ -140,7 +140,7 @@ Med funktionshantering kan du styra de funktioner som levereras i varje utgåva.
 
 ## <a name="new-features-are-optional-for-12-months"></a>Nya funktioner är valfria i 12 månader
 
-När en ny icke-kritisk funktion installeras, är den valfri under en 12-månaders period. Detta gör att du och din organisations tid planerar framåt för att kunna utsätta en funktion och låta den testas mot dina dagliga operationer. Mer information i [Frågor och svar om tjänstuppdateringar för en version](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
+När en ny icke-kritisk funktion installeras, är den valfri under en 12-månaders period. Detta gör att du och din organisations tid planerar framåt för att kunna utsätta en funktion och låta den testas mot dina dagliga operationer. Mer information i [Frågor och svar om tjänstuppdateringar för en version](../one-version.md#what-about-new-features).
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Använda funktionshantering för att aktivera ISV-funktioner eller anpassade funktioner
 
@@ -161,7 +161,7 @@ Policyn är att alla nya funktioner kommer att ingå i en 12-månaders period oc
 Tidpunkten för uppdateringsfrisläppning är variabel, tidsinställning för miljön är variabel och kunderna kan välja att hoppa över vissa uppdateringar. Därför är det svårt att fastställa särskilda datum. 
 
 ### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Var är dokumentationen till de funktioner som görs obligatoriska? 
-Denna dokumentation hämtas från programteamen. Dessa nämns ofta i [borttagna eller inaktuella funktioner](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
+Denna dokumentation hämtas från programteamen. Dessa nämns ofta i [borttagna eller inaktuella funktioner](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Finns det ett produkt- eller signalmeddelande om att en funktion ska vara obligatorisk aktiverad? 
 En meddelandefunktion som är relaterad till att utföra en funktion som är obligatorisk finns inte idag.
@@ -197,8 +197,8 @@ internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMet
 
 ### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Vad är IFeatureLifecycle implementerad av vissa funktionsklasser?
 IFeatureLifecycle är en Microsoft-intern mekanism för att indikera livscykelfasen för funktionen. Funktioner kan vara:
-- `PrivatePreview` - en förhandsversion måste vara synlig.
-- `PublicPreview` - visas som standard men med en varning om att funktionen är i förhandsversion.
+- `PrivatePreview` – en förhandsversion måste vara synlig.
+- `PublicPreview` – visas som standard men med en varning om att funktionen är i förhandsversion.
 - `Released`- Helt släppt.
 
 

@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d37644d9dd124e8894197c56cc585cc6f805b54
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 06735ce7c876234da263316a6481781f8baa9edd
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820188"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921097"
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a>Klassificera en produkt med hjälp av kategorihierarkier
 
@@ -27,18 +27,17 @@ ms.locfileid: "5820188"
 
 I det här avsnittet beskrivs hur du klassificerar en produkt med hjälp av kategorihierarkier. Använd kategorihierarkier för att klassificera produkter för export, anskaffning, försäljning eller andra syften. Denna uppgift utförs vanligtvis av en produktchef. Exemplet använder produktnumret M0009 i demonstrationdataföretaget USMF.
 
-1. Välj **Underhåll av frisläppt produkt**.
-2. Välj **Alla frisläppta produkter**.
-3. Hitta och markera önskad post i listan.
-4. Välj **Produkt** i åtgärdsfönstret.
-5. Välj **Produktkategorier**.
-6. Välj **Ny**.
-7. I fältet **Kategorihierarki**, ange eller välj ett värde.
-8. I fältet **Kategori**, ange eller välj ett värde.
-9. Välj **Ny**.
-10. I fältet **Kategorihierarki**, ange eller välj ett värde.
-11. I fältet **Kategori**, ange eller välj ett värde.
-12. Stäng sidan.
+1. Gå till **Produktinformationshantering \> Produkter \> Frisläppta produkter**.
+1. Hitta och markera önskad post i listan.
+1. Välj **Produkt** i åtgärdsfönstret.
+1. Välj **Produktkategorier**.
+1. Välj **Ny**.
+1. I fältet **Kategorihierarki**, ange eller välj ett värde.
+1. I fältet **Kategori**, ange eller välj ett värde.
+1. Välj **Ny**.
+1. I fältet **Kategorihierarki**, ange eller välj ett värde.
+1. I fältet **Kategori**, ange eller välj ett värde.
+1. Stäng sidan.
 
 
 

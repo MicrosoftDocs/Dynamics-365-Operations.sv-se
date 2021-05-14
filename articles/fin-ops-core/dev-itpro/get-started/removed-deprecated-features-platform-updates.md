@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ac3b5274aaea2e267685e80d051c81489ece50eb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 782a147794bc30251ad60f5d788d1255a9d02b5f
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814330"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923548"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller avskrivna plattformsfunktioner
 
@@ -30,7 +30,7 @@ I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerat
 
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
-Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
+Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
 
 ## <a name="feature-removed-effective-january-28-2021"></a>Funktion borttagen 28 januari 2021
 
@@ -123,7 +123,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | I allmänhet erbjuder anpassad kod begränsade fördelar men kräver samtidigt avsevärd resurshantering och beräkning för stöd. Anpassad kod används främst av rapportförfattare för att anropa offentliga metoder från en anpassad kodsammansättning. Den molnbaserade tjänsten stöder dock inte referenser till anpassade sammansättningar för SSRS-rapporter. |
-| **Ersatt av en annan funktion?**   | Rapportförfattare kan välja att fortsätta att referera till offentliga .NET API:er för matematik-, konverterings- och formatåtgärder från valfritt textruteuttryck. Mer information finns i [Lägga till kod i en rapport (SSRS)](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Ersatt av en annan funktion?**   | Rapportförfattare kan välja att fortsätta att referera till offentliga .NET API:er för matematik-, konverterings- och formatåtgärder från valfritt textruteuttryck. Mer information finns i [Lägga till kod i en rapport (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
 | **Produktområden som påverkas**         | Delmängd av design för programrapport som definierats i RDL som innehåller anpassad kod. |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Med version 10.0.13 börjar kompileraren att utfärda en varning för instanser där anpassad kod identifieras i en rapportdefinition för SSRS. Lös problemet genom att öppna rapportdesignens definition och ta bort alla anpassade kodartefakter. Den här varningen kommer att ersättas med ett kompileringsfel i en framtida uppdatering.   |
@@ -178,7 +178,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Processen för att flytta IP till säkra listor har ändrats. Självbetjäning stöder inte längre IP säkra listor. |
-| **Ersatt av en annan funktion?**   | Mer information finns i [Konfigurera Azure Active Directory villkorlig åtkomst](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
+| **Ersatt av en annan funktion?**   | Mer information finns i [Konfigurera Azure Active Directory villkorlig åtkomst](/appcenter/general/configuring-aad-conditional-access).|
 | **Produktområden som påverkas**         | Säkerhet |
 | **Distribueringsalternativ**              | Moln |
 | **Status**                         | **Inaktuell:** Den här funktionen är helt utfasad för självbetjäningsdistributioner. |
@@ -223,7 +223,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Ersatt av en annan funktion?**   | Nej |
 | **Produktområden som påverkas**         | Arbetsflöde |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Listrutan för användarval har tagits bort från dialogrutan ändring av begäran i plattformsuppdatering 32. Begäranden om ändring av begäran kommer att skickas automatiskt till upphovspersonen som avsett. Mer information om den här funktionen finns i [åtgärder i godkännandeprocesser för arbetsflöde](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change). |
+| **Status**                         | Listrutan för användarval har tagits bort från dialogrutan ändring av begäran i plattformsuppdatering 32. Begäranden om ändring av begäran kommer att skickas automatiskt till upphovspersonen som avsett. Mer information om den här funktionen finns i [åtgärder i godkännandeprocesser för arbetsflöde](../../fin-ops/organization-administration/workflow-actions.md?toc=%2fdynamics365%2fcommerce%2ftoc.json#request-change). |
 
 ### <a name="embedded-drill-through-links-are-no-longer-supported-in-paginated-documents-rendered-by-the-cloud-hosted-service"></a>Inbäddade länkar för detaljerad visning stöds inte längre i sidbrytningsdokument som renderas av den molnbaserade tjänsten 
 
@@ -233,7 +233,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Ersatt av en annan funktion?**   | Nr |
 | **Produktområden som påverkas**         | Rapportering |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Den här funktionen tas aktivt bort från tjänsten.<br><br>Den moderna klienten erbjuder flera alternativ för att producera vyer som innehåller automatiskt genererade länkar som hjälper dig att navigera i programmet. Sidbrytningsdokument som renderas av tjänsten rekommenderas för extern kommunikation som har e-post, arkiverats och skrivits ut för mottagare. Vi har förbättrat upplevelsen att förhandsgranska dokument direkt i webbläsaren, som ger direkt åtkomst till lokala skrivare. Mer information finns i [Förhandsgranska PDF-dokument med ett inbäddat visningsprogram](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/preview-pdf-documents). |
+| **Status**                         | Den här funktionen tas aktivt bort från tjänsten.<br><br>Den moderna klienten erbjuder flera alternativ för att producera vyer som innehåller automatiskt genererade länkar som hjälper dig att navigera i programmet. Sidbrytningsdokument som renderas av tjänsten rekommenderas för extern kommunikation som har e-post, arkiverats och skrivits ut för mottagare. Vi har förbättrat upplevelsen att förhandsgranska dokument direkt i webbläsaren, som ger direkt åtkomst till lokala skrivare. Mer information finns i [Förhandsgranska PDF-dokument med ett inbäddat visningsprogram](../analytics/preview-pdf-documents.md). |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Tidigare meddelanden om borttagna eller inaktuella funktioner
 Om du vill veta mer om funktioner som har tagits bort eller ersatts i tidigare versioner, se [borttagna eller inaktuella funktioner i tidigare versioner](../migration-upgrade/deprecated-features.md).

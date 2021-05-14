@@ -2,7 +2,7 @@
 title: Administrationskomponenter för Elektronisk fakturering
 description: Detta ämne innehåller information om de komponenter som är relaterade till administrationen av Elektronisk fakturering.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2e859875e124796e49000cd5ea94cfb75ecd768a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3ac4a03d75898680b5655421f3024dc6f666464c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840038"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963201"
 ---
 # <a name="electronic-invoicing-administration-components"></a>Administrationskomponenter för Elektronisk fakturering
 
@@ -85,12 +85,14 @@ Tjänstemiljöer kan hanteras via status. Möjliga alternativ är:
 Tjänsten Elektronisk fakturering bär ansvar för lagringen av alla dina affärsdata i de Azure-resurser som företaget äger. Du måste skapa två huvudresurser för Azure om du vill säkerställa att tjänsten fungerar korrekt och att alla affärsdata som behövs för och genereras av tjänsten elektronisk fakturering endast används av tillägget.
 
 - Ett Azure Storage-konto (Blob Storage) som lagrar elektroniska fakturor
-- Ett Azure-nyckelvalv som lagrar certifikat, samt lagringskontots "uniform resource identifier (URI)"
+- Ett Azure-nyckelvalv som lagrar certifikat samt lagringskontots "uniform resource identifier (URI)"
 
-> [!NOTE]
-> Ett särskilt nyckelvalv och kundlagringskonto måste allokeras specifikt för att användas med Elektronisk fakturering.
 
-Mer information finns i [Skapa ett Azure-lagringskonto och ett nyckelvalv](e-invoicing-create-azure-storage-account-key-vault.md).
+Ett särskilt nyckelvalv och kundlagringskonto måste allokeras specifikt för att användas med Elektronisk fakturering. Mer information finns i [Skapa ett Azure-lagringskonto och ett nyckelvalv](e-invoicing-create-azure-storage-account-key-vault.md).
+
+Om du vill övervaka dina nyckelvalv och ta emot notifieringar konfigurerar du Azure Monitor för nyckelvalv. Genom att aktivera nyckelvalvsloggning kan du övervaka hur, när och av vem dina nyckelvalv ska användas. Mer information finns i [Övervakning och notifiering för Azure-nyckelvalv](/azure/key-vault/general/alert) och [Så här aktiverar du nyckelvalvsloggning](/azure/key-vault/general/howto-logging?tabs=azure-cli).
+
+Det rekommenderas att regelbundet ändra hemligheterna. Mer information finns i [Hemlighetsdokumentationen](/azure/key-vault/secrets/).
 
 #### <a name="users"></a>Användare
 

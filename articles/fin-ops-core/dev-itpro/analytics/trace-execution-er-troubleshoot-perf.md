@@ -2,7 +2,7 @@
 title: Spåra körningen av ER-format för att felsöka prestandaproblem
 description: Det här avsnittet innehåller information om hur du använder funktionen för prestandaspårning i elektronisk rapportering (ER) för att felsöka prestandaproblem.
 author: NickSelin
-ms.date: 06/12/2019
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0cf76a9b9af0fc648cb61cefbe92dc7aaa436692
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754227"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944663"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spåra körning av ER-format för att felsöka prestanda problem
 
@@ -47,10 +47,10 @@ Du måste också hämta följande filer och lagra dem lokalt.
 
 | Fil                                  | Innehåll                               |
 |---------------------------------------|---------------------------------------|
-| Prestandaspårningsmodell.version. 1     | [Konfiguration av exempel på ER-datamodell.](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
-| Prestandaspårningsmetadata.version.1  | [Konfiguration av exempel på ER-metadata.](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)      |
-| Prestandaspårningsmappning.version.1.1 | [Konfiguration av exempel på ER-modellmappning](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Prestandaspårningsformat.version.1.1  | [Konfiguration av exempel på ER-format.](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)       |
+| Prestandaspårningsmodell.version. 1     | [Konfiguration av exempel på ER-datamodell.](https://download.microsoft.com/download/0/a/a/0aa84e48-8040-4c46-b542-e3bf15c9b2ad/Performancetracemodelversion.1.xml)    |
+| Prestandaspårningsmetadata.version.1  | [Konfiguration av exempel på ER-metadata.](https://download.microsoft.com/download/a/9/3/a937e8c4-1f8a-43e4-83ee-7d599cf7d983/Performancetracemetadataversion.1.xml)      |
+| Prestandaspårningsmappning.version.1.1 | [Konfiguration av exempel på ER-modellmappning](https://download.microsoft.com/download/7/7/3/77379bdc-7b22-4cfc-9b64-a9147599f931/Performancetracemappingversion1.1.xml) |
+| Prestandaspårningsformat.version.1.1  | [Konfiguration av exempel på ER-format.](https://download.microsoft.com/download/8/6/8/868ba581-5a06-459e-b173-fb00f038b37f/Performancetraceformatversion1.1.xml)       |
 
 ### <a name="configure-er-parameters"></a>Konfigurera ER-parametrar
 
@@ -84,7 +84,7 @@ För att vara tillgänglig i sökfältet **Övriga** måste en DM-dokumenttyp ko
 Anta att du har börjat designa en ny ER-lösning för att skapa en ny rapport som visar leverantörstransaktioner. För närvarande kan du hitta transaktionerna för en vald leverantör på sidan **leverantörstransaktioner** (gå till **leverantörsreskontra\> leverantörer \> alla leverantörer**, välj en leverantörer och sedan i åtgärdspanelen på fliken **leverantörer** i gruppen **transaktioner** väljer du **transaktioner**). Du vill dock ha alla leverantörstransaktioner samtidigt i ett elektroniskt dokument i XML-format. Den här lösningen består av flera ER-konfigurationer som innehåller den nödvändiga datamodellen, metadata, modellmappning och formatkomponenter.
 
 1. Logga in på den instans av RCS som har etablerats för ditt företag.
-2. I den här självstudien ska du skapa och ändra konfigurationer för exempelföretaget **Litware, Inc**. Kontrollera därför att denna konfigurationsleverantör har lagts till i RCS och valts som aktiv. Instruktioner finns i proceduren [skapa konfigurationsleverantörer och markera dem som aktiva](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. I den här självstudien ska du skapa och ändra konfigurationer för exempelföretaget **Litware, Inc**. Kontrollera därför att denna konfigurationsleverantör har lagts till i RCS och valts som aktiv. Instruktioner finns i proceduren [skapa konfigurationsleverantörer och markera dem som aktiva](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. På arbetsytan **Elektronisk rapportering** väljer du panelen **Rapporteringskonfiguration**.
 4. På sidan **konfigurationer** importerar du de ER-konfigurationer som du hämtade som en förutsättning i RCS i följande ordning: datamodell, metadata, modellmappning, format. Följ dessa steg för varje konfiguration:
 
@@ -101,7 +101,7 @@ Anta att du har skapat den första versionen av ER-lösningen. Du vill nu testa 
 ### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importera ER-konfigurationer från RCS till Finance and Operations
 
 1. Logga in på programinstansen.
-2. För den här självstudien ska du importera konfigurationer från din RCS-instans (där du utformar dina ER-komponenter) instansen (där du testar och slutligen använder dem.) Därför måste du se till att alla nödvändiga artefakter har förberetts. För mer information, se proceduren [Importera e-rapporteringskonfigurationer från Regulatory Configuration Services (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).
+2. För den här självstudien ska du importera konfigurationer från din RCS-instans (där du utformar dina ER-komponenter) instansen (där du testar och slutligen använder dem.) Därför måste du se till att alla nödvändiga artefakter har förberetts. För mer information, se proceduren [Importera e-rapporteringskonfigurationer från Regulatory Configuration Services (RCS)](rcs-download-configurations.md).
 3. Följ dessa steg för att importera konfigurationerna från RCS till programmet:
 
     1. I arbetsytan **elektronisk rapportering** på panelen för konfigurationsleverantören **Litware, Inc.** väljer du **Databaser**.

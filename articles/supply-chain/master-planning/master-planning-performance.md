@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 73ef52580ffe80c6c5cc9f77c2088d071a749ca7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 27c1f910fc9fa533877726562c45a9eaa13e2858
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833459"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935819"
 ---
 # <a name="improve-master-planning-performance"></a>Förbättra huvudplaneringens prestanda
 
@@ -79,14 +79,14 @@ Du kan ange parametern **användning av cachelagring** i avsnittet **prestanda**
 
 ### <a name="number-of-orders-in-firming-bundle"></a>Antal order i bekräftelsebunten
 
-Parametern **antal eller order i bekräftelsebunt** anger det totala antalet order som kommer att bearbetas åt gången av varje tråd/batch. Det gör parallellisering av autobekräftelsen.
+Parametern **antal eller order i bekräftelsebunt** anger det totala antalet order som kommer att bearbetas åt gången av varje tråd/batch. Detta genererar parallellisering av den automatiska bekräftelseprocessen.
 
-Du kan ange parametern **antal eller order i bekräftelsebunt** i avsnittet **prestanda** på fliken **allmänt** på sidan **huvudplaneringsparametrar** (**huvudplanering \> inställning \> huvudplaneringsparametrar**). Parallellisering för autobekräftelseprocessen baseras på de order som måste behandlas tillsammans. Om denna parameter är inställd på **50**, till exempel, hämtar varje tråd eller batchuppgiften 50 order åt gången och bearbetar dem tillsammans. Vi rekommenderar att du använder en försöks- och misstagsprocessen för att hitta det bästa värdet. Du kan dock använda följande formler för att beräkna ett startvärde:
+Du kan ange parametern **antal eller order i bekräftelsebunt** i avsnittet **prestanda** på fliken **allmänt** på sidan **huvudplaneringsparametrar** (**huvudplanering \> inställning \> huvudplaneringsparametrar**). Parallellisering för den automatiska bekräftelseprocessen baseras på de order som måste behandlas tillsammans. Om denna parameter är inställd på **50**, till exempel, hämtar varje tråd eller batchuppgiften 50 order åt gången och bearbetar dem tillsammans. Vi rekommenderar att du använder en försöks- och misstagsprocessen för att hitta det bästa värdet. Du kan dock använda följande formler för att beräkna ett startvärde:
 
 (Antal order per bunt) = (antal efter efterfrågeobjekt ÷ antalet trådar)
 
 > [!NOTE]
-> Om du anger parametern **Antal order i bekräftelsebunten** till **0** (noll), görs ingen parallellisering av autobekräftelsen. Hela processen körs på en enskild batchuppgift och har en kumulativ körtid. Därför kommer körningstiden för huvudplaneringen att öka. Därför rekommenderar vi att du ställer in den här parametern på ett värde som är större än **0** (noll).
+> Om du anger parametern **Antal order i bekräftelsebunten** som **0** (noll) görs ingen parallellisering av den automatiska bekräftelseprocessen. Hela processen körs på en enskild batchuppgift och har en kumulativ körtid. Därför kommer körningstiden för huvudplaneringen att öka. Därför rekommenderar vi att du ställer in den här parametern på ett värde som är större än **0** (noll).
 
 ### <a name="time-fences"></a>Tidsgränser
 

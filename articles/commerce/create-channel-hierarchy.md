@@ -2,7 +2,7 @@
 title: Skapa en navigeringshierarki för kanal
 description: I det här avsnittet beskrivs hur du skapar en navigeringshierarki för kanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 01/27/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 358f3d40c7a21184c20da342d6b2bf72dd4e7bbd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5df46de9dadfa0b7160a9b340ef36fdf963a0ad3
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795845"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951918"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>Skapa en kanalnavigeringshierarki
 
@@ -36,7 +36,7 @@ En navigeringshierarki för kanal används för att gruppera och ordna produkter
 
 Följ stegen nedan om du vill skapa en navigeringshierarki för kanaler.
 
-1. I Navigeringsfönstret, gå till **Moduler \> Butik och handel \> Produkter och kategorier \> Navigeringskategorier för kanal**.
+1. I Navigeringsfönstret, gå till **Moduler \> Retail and Commerce \> Produkter och kategorier \> Navigeringskategorier för kanal**.
 1. Klicka på **Ny** i åtgärdsfönstret.
 1. Ange sedan ett namn i rutan **Namn**.
 1. Ange en beskrivning i rutan **beskrivning**.
@@ -77,7 +77,7 @@ Följ stegen nedan om du vill lägga till produkter till kategorinoder.
 1. Klicka på **Spara** i åtgärdsfönstret.
 
 > [!NOTE]
-> Det räcker inte att lägga till produkter i en nod i modulen för kanalnavigering för att produkterna ska visas på en vald kanal, produkterna måste också vara utvalda för en produkt.
+> Det räcker inte att lägga till produkter i en nod i modulen för kanalnavigering för att produkterna ska visas på en vald kanal – produkterna måste också vara utvalda för en kanal. Mer information om urval finns i [Urvalshantering](assortments.md).
 
 Följande bild visar en exempelnod med produkter som läggs till.
 

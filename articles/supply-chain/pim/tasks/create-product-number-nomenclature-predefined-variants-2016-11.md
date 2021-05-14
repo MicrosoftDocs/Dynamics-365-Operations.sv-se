@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8c69dc3f8e70c3b0a760f54d2251757ac997a432
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4bb73854f52525c0722683086d1b4f1dd7173306
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841633"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920667"
 ---
 # <a name="create-a-product-number-nomenclature-for-predefined-product-variants"></a>Skapa en produktnummernomenklatur för fördefinierade produktvarianter
 
@@ -28,33 +28,33 @@ Detta avsnitt visar dig hur du skapar en produktnummernomenklatur för fördefin
 
 
 ## <a name="create-a-product-number-nomenclature"></a>Skapa en nomenklatur för produktnummer
-1. Välj **Definition av produktvariantmodell**.
-2. Välj **Produktnomenklatur**.
-3. Välj **Ny**.
-4. I fältet **Namn** anger du ett nomenklatursnamn som gör det enkelt att identifiera målproduktdimensionsgruppen, till exempel `ColorSize`.
-5. I fältet **Beskrivning** anger du ett värde.
-6. Markera **Lägg till**.
-7. Välj **Produktmallsnummer**.
-8. Markera **Lägg till**.
-9. Välj **Textkonstant**.
-10. Skriv ett värde i fältet **Text**.
-11. Markera **Lägg till**.
-12. Välj **Färg**.
-13. Markera **Lägg till**.
-14. Välj **Textkonstant**.
-15. Skriv ett värde i fältet **Text**.
-16. Markera **Lägg till**.
-17. Välj **Storlek**.
-18. Stäng sidan.
+
+1. Gå till **Hantering av produktinformation \> Inställningar \> Produktnomenklatur**.
+1. Välj **Ny**.
+1. I fältet **Namn** anger du ett nomenklatursnamn som gör det enkelt att identifiera målproduktdimensionsgruppen, till exempel `ColorSize`.
+1. I fältet **Beskrivning** anger du ett värde.
+1. Markera **Lägg till**.
+1. Välj **Produktmallsnummer**.
+1. Markera **Lägg till**.
+1. Välj **Textkonstant**.
+1. Skriv ett värde i fältet **Text**.
+1. Markera **Lägg till**.
+1. Välj **Färg**.
+1. Markera **Lägg till**.
+1. Välj **Textkonstant**.
+1. Skriv ett värde i fältet **Text**.
+1. Markera **Lägg till**.
+1. Välj **Storlek**.
+1. Stäng sidan.
 
 ## <a name="assign-the-nomenclature-to-a-product-master"></a>Tilldela nummernomenklaturen till en produktmall
+
 1. Välj **Produktdimensionsgrupper**.
 2. Välj **produktdimensionsgruppen SizeCol**.
 3. Välj **Redigera**.
 4. Välj **Ja** i fältet **Använd nomenklatur**.
 5. I fältet **Nomenklatur för produktvariantnummer**, ange eller välj ett värde.
 6. Stäng sidan.
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

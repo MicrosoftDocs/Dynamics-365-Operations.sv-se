@@ -2,7 +2,7 @@
 title: Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI
 description: I det här avsnittet beskrivs hur du kan använda konfigurationen för Elektronisk rapportering (ER) om du vill ordna överföringen av data från till Power BI-tjänster.
 author: NickSelin
-ms.date: 06/20/2017
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8a53c1c3e1850dabc05a47df6d8cc785a13f6f86
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b37bc608b3b987016622d9cd0abc66e420025d26
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750092"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944447"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI
 
@@ -68,10 +68,10 @@ För att slutföra exemplet i det här avsnittet måste du ha följande åtkomst
 ## <a name="use-an-er-data-model-as-the-source-of-data"></a>Använd en ER-datamodell som källa för data
 Du måste ha en ER-datamodell som källa för affärsdata som ska användas för Power BI-rapporter. Den här datamodellen överförs från ER-konfigurationens databas. For more information, see [Hämta Konfigurationer för elektronisk rapportering för Lifecycle Services](download-electronic-reporting-configuration-lcs.md) eller spela upp uppgiftsguiden **ER importera en konfiguration från Lifecycle Services**. Välj **Intrastat** som datamodellen som ska överföras från den valda ER-konfigurationens databas. (I det här exemplet används version 1 av modellen.) Du kan använda den **Intrastat** ER modellkonfiguration på **konfigurationer** sidan.
 
-[![Sidan Konfigurationer](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+[![Konfigurationen för Intrastat ER-modell på sidan Konfigurationer](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>Designa en konfiguration för ER-format
-Du måste skapa en ny konfiguration för ER-format som använder datamodellen **Intrastat** som källa för affärsdata. Den här formatkonfigurationen måste skapa utdataresultat som elektroniska dokument i OpenXML-format (Excel-fil). För mer information kan du spela upp uppgiftsguiden **ER Skapa en konfiguration för rapporter i OPENXML-format**. Ange ett namn på den nya konfigurationen **Importera/exportera aktiviteter** som visas i följande bild. Använd [Excel-filen ER-data - importera och exportera detaljer](https://go.microsoft.com/fwlink/?linkid=845208) som en mall när du utformar ER-formatet. (För mer information om hur du importerar ett mallformat, kan du spela upp uppgiftsguiden).
+Du måste skapa en ny konfiguration för ER-format som använder datamodellen **Intrastat** som källa för affärsdata. Den här formatkonfigurationen måste skapa utdataresultat som elektroniska dokument i OpenXML-format (Excel-fil). För mer information kan du spela upp uppgiftsguiden **ER Skapa en konfiguration för rapporter i OPENXML-format**. Ange ett namn på den nya konfigurationen **Importera/exportera aktiviteter** som visas i följande bild. Använd [Excel-filen ER-data – importera och exportera detaljer](https://download.microsoft.com/download/f/7/5/f755c0fd-025c-4aa9-920b-909abb8302ad/ER-data-import-and-export-details.xlsx) som en mall när du utformar ER-formatet. (För mer information om hur du importerar ett mallformat, kan du spela upp uppgiftsguiden).
 
 [![Konfiguration av Importera/exportera aktiviteter](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
 
@@ -126,7 +126,7 @@ Klicka på knappen **Inställningar** för den nya målposten. Följ sedan dessa
 1. På sidan **Konfigurationer** (**Organisationadministration** &gt; **Elektronisk rapportering** &gt; **Konfigurationer**), i konfigurationsträdet väljer du konfigurationen **Importera/exportera aktiviteter** som du skapade tidigare.
 2. Ändra status för version 1.1 från **Utkast** till **Slutför** om du vill göra detta format tillgängligt för användning.
 
-    [![Sidan Konfigurationer](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
+    [![Konfiguration av import-/exportaktiviteter på sidan Konfigurationer](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
 
 3. Välj den slutförda versionen av konfigurationen **Importera/exportera aktiviteter** och klicka sedan på **Kör**. Observera att den konfigurerade målen tillämpas på utleveransresultatet som skapas i Excel-formatet.
 4. Ange alternativet **Batchbearbetning** till **Ja** till att köra den här rapporten i obevakat läge.
@@ -187,7 +187,7 @@ Konfigurera integration med Power BI. Mer information finns i [Konfigurera Power
 2. Välj Power BI-rapporten för **Importera och exportera** detaljer som du skapade om du vill visa den rapporten som en åtgärdsartikel på den valda sidan.
 3. Klicka på åtgärdsartikeln för att öppna den sida som visar rapporten som du utformade i Power BI.
 
-    [![Importera och exportera detaljer-rapport](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+    [![Importera och exportera detaljrapport som utformats i Power BI](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

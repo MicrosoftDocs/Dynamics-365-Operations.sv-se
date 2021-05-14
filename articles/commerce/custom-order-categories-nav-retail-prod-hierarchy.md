@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 54929f924bd9c2b59dec453cf580e0b2bc149d38
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 31798508e4cc71e31a30dc91acebfdde8226b16c
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799479"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937072"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Ändra sorteringsordning för marknadsföringsenheter
 
@@ -41,7 +41,7 @@ I tidigare versioner av Retail än version 10.0.5 var sorteringsordningen för k
 
 Innan du kan slutföra den här proceduren måste demonstrationsdata vara installerade i din miljö.
 
-1. Gå till **Butik och handel \> Produkter och kategorier \> Produkthierarki och handel**.
+1. Gå till **Retail and Commerce \> Produkter och kategorier \> Produkthierarki och handel**.
 2. Klicka på **Redigera kategorihierarki**.
 3. Klicka på **Redigera**.
 4. Expandera **ALLA \> Actionsporter** i trädet.
@@ -59,7 +59,7 @@ Visningsordningen för kanalensnavigeringshierarkin kommer att avspeglas i huvud
 
 Innan du kan slutföra den här proceduren måste demonstrationsdata vara installerade i din miljö.
 
-1. Gå till **Butik och handel \> Produkter och kategorier \> Navigeringskategorier för kanal**.
+1. Gå till **Retail and Commerce \> Produkter och kategorier \> Navigeringskategorier för kanal**.
 2. Välj hierarkin **Modenavigering** i listan.
 3. Klicka på **Redigera kategorihierarki**.
 4. Klicka på **Redigera**.
@@ -84,7 +84,7 @@ Visningsordningen för kanalnavigeringshierarkin visas i huvudkontor, katalog oc
 ![Kassa med anpassade, sorterade kategorier](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> Funktionen för anpassad sorteringsordning är avstängd som standard. Mer information om hur du aktiverar den här funktionen och andra funktioner finns i [Funktionshantering](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+> Funktionen för anpassad sorteringsordning är avstängd som standard. Mer information om hur du aktiverar den här funktionen och andra funktioner finns i [Funktionshantering](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

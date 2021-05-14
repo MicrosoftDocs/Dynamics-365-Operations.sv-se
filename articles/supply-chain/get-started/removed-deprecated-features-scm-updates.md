@@ -2,7 +2,7 @@
 title: Borttagna och utfasade funktioner i Dynamics 365 Supply Chain Management
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning i Dynamics 365 Supply Chain Management.
 author: kamaybac
-ms.date: 12/07/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 785f9055c44110d88b9494b5066647511840b646
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a7a06b5476302e43d107c448c139c235ea57b05b
+ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909657"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5947554"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Borttagna och utfasade funktioner i Dynamics 365 Supply Chain Management
 
@@ -33,15 +33,28 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 > [!NOTE]
 > Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](/dynamics/s-e/). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
 
+
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Borttagna eller föråldrade funktioner i Supply Chain Management version 10.0.19
+
+### <a name="job-card-device"></a>Jobbkortenhet
+
+|   |   |
+|---|---|
+| **Orsak till inaktuell/borttagning** | [Jobbkortsenheten](../production-control/config-job-card-device.md) ersätts av det nya [körningsgränssnittet för produktionsgolvet](../production-control/production-floor-execution-configure.md). |
+| **Ersatt av en annan funktion?**   | Ja, [jobbkortsenheten](../production-control/config-job-card-device.md) ersätts av det nya [körningsgränssnittet för produktionsgolvet](../production-control/production-floor-execution-configure.md). |
+| **Produktområden som påverkas** | Supply Chain Management – produktionskontroll |
+| **Distribueringsalternativ** | Moln och lokal |
+| **Status** | Inaktuell. Jobbkortsenheten får stöd med bugg- och säkerhetskorrigeringar, men funktionsutökningar tillhandahålls inte längre. Efter april 2022 stöds inte längre den gamla jobbkortsenheten, och kunderna uppmanas att flytta till det nya körningsgränssnittet för produktionsgolvet. |
+
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Borttagna eller föråldrade funktioner i Supply Chain Management version 10.0.18
 
-### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations - Lagerhållning (distributionslagerappen)
+### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations – Lagerhållning (distributionslagerappen)
 
 |   |  |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Gäller från april 2021, *Dynamics  365 for Finance and Operations - Lagerhållning* (distributionslagerappen) är inaktuell och stöds inte efter april 2022. Den ersätts nu av *Mobilappen för distributionslagerhantering*, som släpps med version 10.0.17 av Supply Chain Management. Den nya appen är en fullständig ersättning, men använder samma underliggande ramverk, vilket gör migreringen enkel. De två apparna kan vid behov användas sida vid sida för att hjälpa användarna att gradvis justera när de lär sig använda det nya programmet.<br><br>För mer information om den nya mobilappen för distributionslagerhantering, se [Mobilappen för distributionslagerhantering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) och [Installera och anslut mobilappen för distributionslagerhantering](../warehousing/install-configure-warehouse-management-app.md). |
+| **Orsak till inaktuell/borttagning** | Gäller från april 2021, *Dynamics  365 for Finance and Operations – Lagerhållning* (distributionslagerappen) är inaktuell och stöds inte efter april 2022. Den ersätts nu av *Mobilappen för distributionslagerhantering*, som släpps med version 10.0.17 av Supply Chain Management. Den nya appen är en fullständig ersättning, men använder samma underliggande ramverk, vilket gör migreringen enkel. De två apparna kan vid behov användas sida vid sida för att hjälpa användarna att gradvis justera när de lär sig använda det nya programmet.<br><br>För mer information om den nya mobilappen för distributionslagerhantering, se [Mobilappen för distributionslagerhantering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) och [Installera och anslut mobilappen för distributionslagerhantering](../warehousing/install-configure-warehouse-management-app.md). |
 | **Ersatt av en annan funktion?**   | Ja, ersätts av det nya mobilappen för distributionslagerhantering. |
-| **Produktområden som påverkas**         | Supply Chain Management - distributionslagerapp |
+| **Produktområden som påverkas**         | Supply Chain Management – distributionslagerapp |
 | **Distribueringsalternativ**              | Moln och lokal |
 | **Status**                         | Inaktuell. Distributionslagerappen får stöd med åtgärds- och säkerhetskorrigeringar, men funktionsutökningar tillhandahålls inte längre. Efter april 2022 stöds inte längre den gamla istributionslagerappen och kunderna uppmanas att flytta till den nya mobilappen för distributionslagerhantering. Det gamla distributionslagerappen tas då bort från Microsoft Store och Google Play store.  |
 

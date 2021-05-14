@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6f70e7626100646feb12e8544b5ab943097b1a3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 67fcadac93f757fb535105154cb06a3549cccc7f
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752190"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923578"
 ---
 # <a name="human-resources-overview"></a>Human Resources – översikt
 
@@ -42,38 +42,38 @@ Personal går att använda till att slutföra följande uppgifter:
 
 När du arbetar med personal bestämmer du hur organisationen struktureras med hjälp av element, till exempel avdelningar, jobb och befattningar. De är de grundläggande elementen som konfigureras under Personal. Enskilda medarbetare tilldelas till befattningar som är associerade med jobb.
 
-- [Organisera personalen efter avdelningar, jobb och befattningar](../../../talent/departments-jobs-positions.md)
-- [Ställ in företagsspecifika personalparametrar](../../../talent/set-up-company-specific-hr-parameters.md)
-- [Ställ in personalparametrar bland juridiska personer](../../../talent/set-up-hr-parameters-across-legal-entities.md)
+- [Organisera personalen efter avdelningar, jobb och befattningar](../../../human-resources/hr-personnel-departments-jobs-positions.md)
+- [Ställ in företagsspecifika personalparametrar](../../../human-resources/hr-setup-parameters.md)
+- [Ställ in personalparametrar bland juridiska personer](../../../human-resources/hr-setup-shared-parameters.md)
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Rekrytera, anställa och motivera medarbetare
 
 Rekryteringsprojekt hanterar innehåll som används i annonser om lediga befattningar och hjälper dig att hantera jobbansökningar. Det går att använda till att följa upp svar på jobbannonser för ett visst rekryteringsprojekt eller specifika sökande och uppdatera status för lediga befattningar. Det år även att anställa enstaka sökande eller hantera "massanställningsprojekt" som gör det lättare att anställa flera arbetare för att täcka säsongsbetonade behov.
 
 - [Hantera rekryteringsprocesser](manage-recruiting-process.md)
-- [Massanställningsprojekt](mass-hire-projects.md) 
+- [Massanställningsprojekt](../../../human-resources/hr-personnel-mass-hire-projects.md) 
 
 När du har anställt personal kan du skapa planer som effektivt och rättvist hanterar såväl kompensation som objekt, såsom datorer eller telefoner som organisationen förser personalen med. Det går att skapa fasta och variabla kompensationsplaner samt definiera regler som använder kompensationsplanen som uppfyller villkoren för planen.
 
-- [Kompensationsplaner](../../../talent/compensation-plans.md)
-- [Skapa planer för fast kompensation](../../../talent/create-fixed-compensation-plans.md)
-- [Skapa planer för variabel kompensation](../../../talent/create-variable-compensation-plans.md)
+- [Kompensationsplaner](../../../human-resources/hr-compensation-overview.md)
+- [Skapa planer för fast kompensation](../../../human-resources/hr-compensation-fixed-plans.md)
+- [Skapa planer för variabel kompensation](../../../human-resources/hr-compensation-variable-plans.md)
 
 ## <a name="develop-and-train-employees"></a>Utveckla och utbilda medarbetare
 
 För att hjälpa personalen att uppnå karriärsmålen samtidigt som vi tillhandahåller viktiga affärsbehov kan du ställa in mål, skapa prestationsgranskning och spåra feedback. För att hjälpa anställda att skaffa nödvändiga kompetenser, kan du ställa in lärare, kurstyper, kurser, kursbeskrivningar, agendor, spårningar och sessioner innan du tilldelar en instruktör till en kurs eller anmäler någon till en kurs. Lärare måste redan finnas som anställda, sökande eller kontakter.
 
-- [Prestationshantering](../../../talent/performance-management-overview.md)
-- [Anpassa personalens kompetens efter affärsbehov](../../../talent/skills.md)
-- [Skapa utbildningar](../../../talent/courses.md)
+- [Prestationshantering](../../../human-resources/hr-develop-performance-management-overview.md)
+- [Anpassa personalens kompetens efter affärsbehov](../../../human-resources/hr-develop-skills.md)
+- [Skapa utbildningar](../../../human-resources/hr-learning-courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Skapa och underhålla förmåner
 
 Utöver att kompensera din personal i form av löner och bonusar går det att utforma ett förmånsprogram där exempelvis sjuk- eller pensionsförsäkring ingår. Det går även att hantera förmåner såsom låneprogram, där företaget lånar ut objekt såsom datorer eller telefoner till sina anställda.
 
-- [Definiera och hantera ett förmånsprogram](../../../talent/manage-benefit-program.md)
-- [Policyer för förmånsberättigande](../../../talent/benefit-eligibility-policies.md)
-- [Hantera artiklar som lånas ut till medarbetare](../../../talent/loan-items.md)
+- [Definiera och hantera ett förmånsprogram](../../../human-resources/hr-benefits-management-overview.md)
+- [Policyer för förmånsberättigande](../../../human-resources/hr-benefits-eligibility-policies.md)
+- [Hantera artiklar som lånas ut till medarbetare](../../../human-resources/hr-personnel-loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Underhålla arbetsplatssäkerhet och efterlevnad
 
@@ -87,10 +87,10 @@ Microsoft Dynamics AX kan hjälpa dig att upprätthålla en säker arbetsmiljö 
 
 Det går att utforma och dela ut enkäter för att samla in information används för olika ändamål. Funktionen Enkät gör det möjligt att utforma och skapa enkäter. När en enkät är klar går den att distribuera till alla eller till en viss svarsgrupp. När de svarande lämnar in svaren går resultaten att granska och analysera.
 
-- [Enkäter](../../../talent/questionnaires.md)
-- [Utforma enkäter](../../../talent/design-questionnaires.md)
-- [Skicka ut och schemalägg enkäter](../../../talent/distribute-questionnaires.md)
-- [Visa och utvärdera resultaten av enkäter](../../../talent/evaluate-questionnaire-results.md)
+- [Enkäter](../../../human-resources/hr-learning-questionnaires.md)
+- [Utforma enkäter](../../../human-resources/hr-learning-design-questionnaires.md)
+- [Skicka ut och schemalägg enkäter](../../../human-resources/hr-learning-distribute-questionnaires.md)
+- [Visa och utvärdera resultaten av enkäter](../../../human-resources/hr-learning-evaluate-questionnaire-results.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

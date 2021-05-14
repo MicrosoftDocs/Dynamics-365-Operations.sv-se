@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f54d0ea87d8ce5ffdf5600995004e558ddd86fa
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0c30c520e7265c2676937f5191844f6789c364e6
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833267"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921251"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Ställ in attributbaserad prissättning för konfigurerbara produkter
 
@@ -28,17 +28,18 @@ I det här avsnittet visas hur du ställer in attributbaserad prissättning. Som
 
 
 ## <a name="create-a-new-price-model"></a>Skapa en ny prismodell
-1. Välj **Definition av produktvariantmodell** på startsidan.
-2. Välj **Modeller för produktkonfiguration** i avsnitet **Länkar**.
-3. Välj raden **High End Speaker** i listan, men välj inte länken för namn.
-4. Klicka på **Modell** i åtgärdsfönstret.
-5. Välj **Prismodeller**.
-6. Välj **Ny**.
-7. Ange ett värde i fältet **Prismodellnamn**. Använd ett namn som gör modellen enkel att identifiera.  
-8. I fältet **Beskrivning** anger du ett värde.
-9. Välj **Spara**.
+
+1. Gå till **Produktinformationshantering \> Produkter \> Produktkonfigurationsmodeller**.
+1. Välj raden **High End Speaker** i listan, men välj inte länken för namn.
+1. Klicka på **Modell** i åtgärdsfönstret.
+1. Välj **Prismodeller**.
+1. Välj **Ny**.
+1. Ange ett värde i fältet **Prismodellnamn**. Använd ett namn som gör modellen enkel att identifiera.  
+1. I fältet **Beskrivning** anger du ett värde.
+1. Välj **Spara**.
 
 ## <a name="add-price-elements"></a>Lägg till priselement
+
 1. Välj **Redigera**. Varje komponent i en produktmodell kan ha ett grundpriselement och ett valfritt antal prisuttrycksregler. Du kan också lägga till priser i olika valutor.  
 2. Ange ett värde i fältet **Grundprisuttryck**. Ange till exempel 100. Ett grundprisuttryck kan utgöras av ett numeriskt värde eller bestå av en aritmetisk beräkning som gäller ett eller flera attribut.  
 3. Markera **Lägg till**.

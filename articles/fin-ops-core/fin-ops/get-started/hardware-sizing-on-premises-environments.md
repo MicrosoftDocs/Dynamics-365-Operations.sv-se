@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 55dc237629b7b595b03d48adabc6b31492171e25
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c5e6e96ea1ce821233d7104bb9a7af8e793f4264
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748755"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923490"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav för beräkning av maskinvara för lokala miljöer
 
@@ -42,7 +42,7 @@ Sett från vänster till höger, är den första och viktigaste faktorn som krä
 
 När du förstår den belastning som påverkar din infrastruktur måste du också ta reda mer om dessa faktorer:
 
-- **Transaktioner** - Transaktioner har normalt vissa toppar under dagen/veckan. Detta beror oftast på transaktionstypen. Tids- och kostnadsposterna visar vanligtvis toppar en gång i veckan och försäljningsorderposter levereras ofta i bulk via integrering eller droppar in under dagen.
+- **Transaktioner** – Transaktioner har normalt vissa toppar under dagen/veckan. Detta beror oftast på transaktionstypen. Tids- och kostnadsposterna visar vanligtvis toppar en gång i veckan och försäljningsorderposter levereras ofta i bulk via integrering eller droppar in under dagen.
 - **Antalet samtidiga användare** – Antalet samtidiga användare är den näst viktigaste beräkningsfaktorn. Du kan inte tillförlitligt få beräkningsuppskattningar utifrån antalet samtidiga användare, så om detta är de enda data som finns, beräknar du ett ungefärligt nummer och ångrar detta om det finns mer data. En exakt samtidig användardefinition innebär:
 
     - Namngivna användare är inte samtidiga användare.
@@ -134,11 +134,11 @@ En SSRS-nod kan användas för normal tillgänglighet. Övervaka din SSRS-nod me
 
 ## <a name="environment-orchestrator"></a>Orchestrator-miljö
 
-Orchestrator-tjänsten är en tjänst som hanterar distributionen och relaterad kommunikation med LCS. Denna tjänst används som primär Service Fabric-tjänst och kräver minst tre virtuella maskiner. Denna tjänst är samlokaliserad med Service Fabric-orchestrationtjänsterna. Detta bör beräknas till toppbelastning för klustret. För mer information, se [planera och förbereda ditt fristående kluster med Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Orchestrator-tjänsten är en tjänst som hanterar distributionen och relaterad kommunikation med LCS. Denna tjänst används som primär Service Fabric-tjänst och kräver minst tre virtuella maskiner. Denna tjänst är samlokaliserad med Service Fabric-orchestrationtjänsterna. Detta bör beräknas till toppbelastning för klustret. För mer information, se [planera och förbereda ditt fristående kluster med Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisering och överabonnemang
 
-Missionskritiska tjänster som AOS bör finnas på virtuella värdar som har dedikerade resurser - kärnor, minne och disk.
+Missionskritiska tjänster som AOS bör finnas på virtuella värdar som har dedikerade resurser – kärnor, minne och disk.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

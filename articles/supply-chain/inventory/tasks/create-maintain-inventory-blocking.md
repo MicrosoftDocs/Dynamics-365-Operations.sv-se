@@ -1,8 +1,8 @@
 ---
 title: Skapa och underhålla en lagerspärr
-description: I den här proceduren visas hur du kan förhindra den fysiska lagerbehållningen från att reserveras av andra utgående källdokument genom att använda lagerspärren.
+description: I detta ämne beskrivs hur du kan använda en lagerspärr i syfte att förhindra att fysiskt lager reserveras av andra utgående källdokument.
 author: perlynne
-ms.date: 08/08/2019
+ms.date: 03/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,41 +14,47 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 319ae6da1e0e504316b2d96001d582e835cef20c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e9aa38ca52da577fff258bb330922ad7f4044330
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834011"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956168"
 ---
 # <a name="create-and-maintain-an-inventory-blocking"></a>Skapa och underhålla en lagerspärr
 
 [!include [banner](../../includes/banner.md)]
 
-I den här proceduren visas hur du kan förhindra den fysiska lagerbehållningen från att reserveras av andra utgående källdokument genom att använda lagerspärren. Du kan köra proceduren i demonstrationsdataföretaget USMF med hjälp av exempelvärdena som visas. Du behöver ha en artikel med fysisk lagerbehållning tillgänglig innan du startar den här proceduren.
+I detta ämne beskrivs hur du kan använda en lagerspärr i syfte att förhindra att fysiskt lager reserveras av andra utgående källdokument. Innan du inleder förfarandena i detta ämne måste du ha en artikel för vilken fysiskt lager finns att tillgå.
 
+## <a name="block-inventory"></a>Spärra lager
 
-## <a name="create-an-inventory-blocking"></a>Skapa en lagerspärr
-1. I **navigeringsfönstret**, gå till **Moduler > Lagerhantering >Periodiska uppgifter > Lagerspärr**.
-2. Klicka på **Ny**.
-3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Artikelnummer**.
-4. Välj den artikel som du vill ha i listan. Välj ett artikelnummer med fysisk lagerbehållning som du vill spärra. Om du använder USMF kan du välja artikeln M9201.  
-5. Ange ett nummer i fältet **Kvantitet**. Om du använder artikeln M9201 måste du välja lägre än 200.
-6. Expandera snabbfliken **Lagerdimensioner.**
-7. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Lagerställe**.
-8. Hitta och markera önskad post i listan. Om du använder artikeln M9201 kan du välja lager 51.  
-9. Klicka på **Spara**.
+Följ de här stegen om du vill skapa en lagerspärrpost så att lagret spärras.
+
+1. Gå till **Lagerhantering \> Periodiska uppgifter \> Lagerspärr**.
+1. Klicka på **Ny** i åtgärdsfönstret.
+1. I rubriken för den nya spärrposten anger du fältet **Artikelnummer** som den artikel som du vill spärra och anger en beskrivning.
+1. På snabbfliken **Allmänt**, i fältet **Kvantitet**, anger du antalet artiklar som ska spärras.
+1. På snabbfliken **Lagerdimensioner** anger du den plats och det lagerställe där artiklarna som du vill spärra finns för närvarande.
+1. Klicka på **Spara** i åtgärdsfönstret.
 
 ## <a name="update-the-conditions-of-the-inventory-blocking"></a>Uppdatera villkoren för lagerspärrren
-1. Ange ett nummer på snabbfliken **Allmänt**, i fältet **Kvantitet**. Uppdatera lagerkvantitetsfältet som speglar kvantiteten som ska spärras.  
-2. Ange ett datum i fältet **Förväntat datum.** Du kanske vill ange när det spärrade lagret förväntas bli tillgängligt för reservation genom att tilldela ett förväntat datum. Om du väljer alternativet Förväntade inleveranser för lagerspärren som anges som standard när du skapar en spärr manuellt, kommer detta datum visas på den förväntade transaktionen.  
-3. Klicka på **Spara**.
 
-## <a name="remove-the-inventory-blocking"></a>Ta bort lagerspärren
-1. Klicka på **Ta bort** i **åtgärdsfönstret**.
-2. Klicka på **Ja**.
-3. Stäng sidan.
+Följ de här stegen om du vill uppdatera en lagerspärrpost.
 
+1. Gå till **Lagerhantering \> Periodiska uppgifter \> Lagerspärr**.
+1. I listfönstret väljer du relevant spärrpost.
+1. Redigera posten efter behov. Exempelvis kanske du ändrar värdet för fältet **Förväntat datum** i syfte att indikera när det spärrade lagret förväntas bli tillgängligt för reservation. Om alternativet **Förväntade inleveranser** har valts visas datumet på den förväntade transaktionen. (Alternativet **Förväntade inleveranser** väljs som standard när du manuellt skapar en spärrpost.)
+1. Klicka på **Spara** i åtgärdsfönstret.
 
+## <a name="unblock-inventory"></a>Lås upp lager
+
+Följ de här stegen om du vill ta bort en lagerspärrpost så att lagret låses upp.
+
+1. Gå till **Lagerhantering \> Periodiska uppgifter \> Lagerspärr**.
+1. I listfönstret väljer du relevant spärrpost.
+1. Välj sedan **Ta bort** i åtgärdsfönstret.
+1. Du uppmanas att bekräfta funktionen. Klicka på **Ja** när du vill fortsätta.
+1. Stäng sidan.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

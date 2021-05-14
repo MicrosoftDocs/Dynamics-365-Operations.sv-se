@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2f235726d163b9262fabee4d0a1118600a60eee1
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 275a51620fad50f725dad7a37bd8ee776cf0ce4c
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890786"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941150"
 ---
 # <a name="regulatory-updates"></a>Regeluppdateringar
 
@@ -41,13 +41,14 @@ För de senaste kravuppdateringsplanerna, se följande tabell.
 |--------------------|---------------|-------|-------|
 |      Österrike         |   2020 september      | 10.0.15      |   U30 för momsdeklarationsformat har uppdaterats för 2020-rapportering   |
 |      Belgien         |   2020 december      | 10.0.16      |   Belgien: "Exportera redovisningstransaktioner" rapporterar prestandaförbättringar i Dynamics 365 Finance   |   
-|      Brasilien         |   November 2020      | 10.0.15HF      |   SPED skatt ICMS/IPI - post C176 - RS status   |
+|      Brasilien         |   November 2020      | 10.0.15HF      |   SPED skatt ICMS/IPI – post C176 – RS status   |
 |      Brasilien         |   2020 oktober      | 10.0.16, 10.0.15HF      |   NF-e NT2019.001 v1.51 – Antagande av valideringsreglerna hos en förmånskod från Distrito Federal   |
 |      Brasilien         |   Oktober 2020, november 2020      | 10.0.16, 10.0.15HF      |   SPED Fiscal – Layout 015   |
 |      Brasilien         |   2020 oktober      | 10.0.16      |   DRCST-deklaration SC – SEF 262/2020   |
 |      Brasilien         |   2020 oktober      | 10.0.16      |   SPED Fiscal ICMS/IPI-post C176   |
-|      Brasilien         |   2020 december      | 10.0.17, 10.0.16HF, 10.0.15HF      |   NF-e NT2020.006 - Identifiering av mellanhand för digital plattform (uppdatering av layout- och valideringsregler)   |
-|      Europa        |   2021 januari       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit - - Nordirlands inverkan på gemenskapsintern handelsrapportering i EU-länder  |
+|      Brasilien         |   2020 december      | 10.0.17, 10.0.16HF, 10.0.15HF      |   NF-e NT2020.006 – Identifiering av mellanhand för digital plattform (uppdatering av layout- och valideringsregler)   |
+|      Brasilien         |   2021 mars         | 10.0.17, 10.0.18, 10.0.19         |    SPED REINF-layout 1.5.1
+|      Europa        |   2021 januari       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit – – Nordirlands inverkan på gemenskapsintern handelsrapportering i EU-länder  |
 |      Tyskland        |   2021 januari       | 10.0.16HF      |   Meddelandeformat ELSTER UstVA för momsförskott utökades med två nya rutor 37,50 för avskrivning av oåterkalleliga skulder  |
 |      Tyskland        |   2021 januari       | 10.0.17      |   Ändringar i XML-strukturen för momsförskott för ELSTER (UstVA)  |
 |      Globalt        |   2021 januari       | 10.0.16      |   Aktivera mekanismen för återfört tillägg för moms/GST-schema  |
@@ -66,8 +67,8 @@ För de senaste kravuppdateringsplanerna, se följande tabell.
 |      Ryssland          |   2020 oktober     | 10.0.16    |   Förändringar i PBU18 för redovisningsrapportering för 2020|
 |      Ryssland          |   2021 januari     | 10.0.17    |   Ett nytt format för deklaration av egendomsskatt (teknisk version 5.07 istället för 5.06) för rapporteringen 2020|
 |      Spanien          |   November 2020     | 10.0.17    |   SII-uppdatering, validering och fel v.2.1(bis) från 1 januari 2021|
-|      Storbritannien         |   2020 december     | 10.0.17, 10.0.16, 10.0.15    |   Skatteregistrering av företag i kundfakturor (Brexit - Nordirland-protokoll)|
-|      Storbritannien          |   2020 december     | 10.0.17, 10.0.16HF. 10.0.15HF    |   Brexit - Nordirland-protokollets inverkan på företags handelsvaror i såväl Storbritannien som Nordirland|
+|      Storbritannien         |   2020 december     | 10.0.17, 10.0.16, 10.0.15    |   Skatteregistrering av företag i kundfakturor (Brexit – Nordirland-protokoll)|
+|      Storbritannien          |   2020 december     | 10.0.17, 10.0.16HF. 10.0.15HF    |   Brexit – Nordirland-protokollets inverkan på företags handelsvaror i såväl Storbritannien som Nordirland|
 
 
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0ea2ee208cdbb8f9fa6668bbcb6e15252a7c1b1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6f6d689c596b4ec924cb50ec3bea8ce907e6dc6b
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828236"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920997"
 ---
 # <a name="troubleshoot-inbound-warehouse-operations"></a>Felsöka åtgärder för mottagande distributionslager
 
@@ -56,7 +56,7 @@ När du har kört den periodiska uppgiften *Uppdatera produktinleveranser* bekr�
 
 ### <a name="issue-resolution"></a>Problemlösning
 
-En ny funktion för hantering av inkommande last *Överinleverans av lastkvantiteter* åtgärdar problemet. För att aktivera denna funktion, gå till [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktivera följande funktioner (i den ordning de är listade i):
+En ny funktion för hantering av inkommande last *Överinleverans av lastkvantiteter* åtgärdar problemet. För att aktivera denna funktion, gå till arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktivera följande funktioner (i den ordning dessa listas i):
 
 1. Associera lagertransaktioner för inköpsorder med last
 1. Överinleverans av beläggningskvantiteter

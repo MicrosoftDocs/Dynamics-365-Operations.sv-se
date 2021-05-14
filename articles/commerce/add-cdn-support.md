@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a56f675b1fb43160625101a067c74e9fcf4f714a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 59277323e0995f59d3a451395a038fa3708274eb
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797849"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936840"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Lägga till stöd för nätverk för innehållsleverans
 
@@ -47,7 +47,7 @@ Som tidigare nämnts har det genererade värdnamnet eller slutpunkten endast st�
 
 Alla CDN-tjänster kan användas med en handelsmiljö. Nedan följer två exempel:
 
-- **Microsoft Azure Front Door Service** – Azure CDN-lösningen. Mer information om Azure Front Door Service finns i [dokumentationen för Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor/).
+- **Microsoft Azure Front Door Service** – Azure CDN-lösningen. Mer information om Azure Front Door Service finns i [dokumentationen för Azure Front Door Service](/azure/frontdoor/).
 - **Akamai Dynamic Site Accelerator** – mer information finns i [Dynamic Site Accelerator](https://www.akamai.com/us/en/products/performance/dynamic-site-accelerator.jsp)
 
 ## <a name="cdn-setup"></a>Inställning av CDN
@@ -62,7 +62,7 @@ Inställningen av CDN består av följande allmänna steg:
 
 Alla CDN-tjänster kan användas, men i det här avsnittet används Azure Front Door Service. 
 
-Information om hur du ställer in Azure Front Door Service finns i [snabbstart: skapa en Front Door för ett mycket tillgängligt globalt webbprogram](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
+Information om hur du ställer in Azure Front Door Service finns i [snabbstart: skapa en Front Door för ett mycket tillgängligt globalt webbprogram](/azure/frontdoor/quickstart-create-front-door).
 
 ### <a name="configure-a-backend-pool-in-azure-front-door-service"></a>Konfigurera en serverpool i Azure Front Door Service
 
@@ -115,7 +115,7 @@ I följande bild visas dialogrutan **anpassade domän-HTTPS** i Azure Front Door
 
 ![Dialogrutan anpassad domän-HTTPS](./media/Custom_Domain_HTTPS.png)
 
-Detaljerad information om hur du lägger till en anpassad domän i din Azure Front Door Service finns i [lägga till en anpassad domän i din Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
+Detaljerad information om hur du lägger till en anpassad domän i din Azure Front Door Service finns i [lägga till en anpassad domän i din Front Door](/azure/frontdoor/front-door-custom-domain).
 
 Din CDN ska nu vara korrekt konfigurerad så att den kan användas med din näthandelssajt.
 

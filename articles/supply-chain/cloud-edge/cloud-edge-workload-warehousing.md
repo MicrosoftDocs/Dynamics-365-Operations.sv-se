@@ -2,7 +2,7 @@
 title: Arbetsbelastningar för distributionslagerhantering för moln- och molnskalningsenheter
 description: Det här avsnittet innehåller information om funktionen som gör att enheterna kan köra valda processer från din arbetsbelastningar för distributionslagerhantering.
 author: perlynne
-ms.date: 10/06/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,17 @@ ms.search.region: global
 ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d6dffb1ea03b8d11519087163d2837d6cfe3df4e
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.dyn365.ops.version: 10.0.19
+ms.openlocfilehash: 9bdb9529c8b630182a2036e9d116909f9e92bb83
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899177"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944423"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
 > Alla affärsfunktioner för lagerstyrning stöds inte fullt ut för lagerställen som kör en arbetsbelastning på en skalningsenhet. Se till att bara använda de processer som det här ämnet explicit beskriver som det stöds.
@@ -49,15 +48,16 @@ En skalningsenhet kan endast bevara de data som den äger. Konceptet för dataä
 
 Skalningsenheterna äger följande data:
 
-- **Påfyllnadsbearbetningsdata** – valda metoder för påfyllnadsprocess hanteras som en del av skalningsenhetens påfyllnadsbearbetning.
-- **Data om arbetsbearbetning** – följande typer av bearbetning av arbetsorder stöds:
+- **Bearbetningsdata för leveranscykel** – Valda metoder för cykelprocess hanteras som en del av skalningsenhetens cykelbearbetning.
+- **Data för bearbetning av arbete** – Lagerställesarbete som skapats på en skalningsenhet kommer att ägas av denna specifika skalningshet. Följande typer av bearbetning av arbetsorder stöds:
 
   - **Lagerrörelser** (manuell förflyttning och förflyttning per mallarbete)
+  - **Rullande inventering** och godkännande-/avvisandeprocessen som en del av inventeringsfunktioner
   - **Inköpsorder** (artikelinförselarbetet via en lagerställeorder när inköpsorder inte är kopplade till läses in)
   - **Försäljningsorder** (enkelt plocknings- och lastningsarbete)
   - **Överföringsorder** (bara utgående med enkel plockning och inläsning av arbete)
 
-- **Mottagningsdata för lagerorder** – dessa data används bara för inköpsorder som manuellt frigörs till ett lagerställe.
+- **Mottagningsdata för lagerorder** – Dessa data används bara för inköpsorder som har frisläppts till ett lagerställe.
 - **ID-nummerdata** – ID-nummer kan skapas på navet och skalningsenheten. En dedikerad konflikthantering har tillhandahållits. Observera att dessa data inte är lagerställespecifika.
 
 ## <a name="outbound-process-flow"></a>Utgående processflöde
@@ -72,6 +72,14 @@ Skalningsenheterna som äger den faktiska påfyllnadsbearbetningen (t.ex. arbets
 
 ![Påfyllnadsbearbetningsflöde](./media/wes-wave-processing-ga.png "Påfyllnadsbearbetningsflöde")
 
+### <a name="process-work-and-ship"></a>Bearbeta arbete och skeppa
+
+Så snart som den slutliga arbetsprocessen för in lagret på en slutgiltig leveransplats ("Baydoor") kommer skalningsenhetens signaler att uppdatera källdokumentets lagertransaktioner som *Plockade*. Fram tills dess att processen körs och återsynkroniseras kommer lagerbehållningen för skalningsenhetens arbetsbelastning att reserveras fysiskt på lagerställenivå.
+
+Så snart som navet har uppdaterat transaktionerna till *Plockade* kan det bearbeta den utgående försändelsebekräftelsen, samt beläggningens tillhörande försäljningsordersedel eller överföringsorderleverans.
+
+![Utgående processflöde](./media/WES-outbound-processing-19.png "Utgående processflöde")
+
 ## <a name="inbound-process-flow"></a>Ingående processflöde
 
 Navet äger följande data:
@@ -82,8 +90,8 @@ Navet äger följande data:
 
 > [!NOTE]
 > Det inkommande inköpsorderflödet skiljer sig begreppen från det utgående flödet. Du kan använda samma lagerställe på antingen skalningsenhet eller hubb beroende på om inköpsordern har frisläppts till lagerstället eller inte. När du har frisläppt en order till lagerstället kan du bara arbeta med den ordern när du är inloggad på skalningsenhet.
-
-Om du använder processen *frisläppning till lagerställe*, [*lagerställeorder*](cloud-edge-warehouse-order.md) skapas lagerställeorder och ägarskapet för det relaterade mottagningsflödet tilldelas till skalningsenheten. Navet kommer inte att kunna registrera inkommande inleveranser.
+>
+> Om du använder processen *frisläppning till lagerställe*, [*lagerställeorder*](cloud-edge-warehouse-order.md) skapas lagerställeorder och ägarskapet för det relaterade mottagningsflödet tilldelas till skalningsenheten. Navet kommer inte att kunna registrera inkommande inleveranser.
 
 Du måste logga in på navet för att använda processen *Släpp till distributionslager*. Gå till någon av följande sidor om du vill köra eller schemalägga den:
 
@@ -97,6 +105,10 @@ Arbetaren kan köra mottagningsprocessen med hjälp av en mobilappen för distri
 Om du inte använder processen *frisläppning till lager* och därför inte använder *lagerställeorder*, kan navet bearbeta inleverans och bearbetning av lager oberoende från skalningsenheter.
 
 ![Ingående processflöde](./media/wes-inbound-ga.png "Ingående processflöde")
+
+När inkommande registreringar genomförs via en mottagningsprocess som sker via en lager-app mot skalningsenhetens lagerställeorder, kommer skalningsenhetens arbetsbelastning säga till navet att uppdatera relaterade radtransaktioner för inköpsorder till *Registrerad*. Så snart denna är färdig kommer du att kunna köra en produktinleverans för inköpsorder på navet.
+
+![Inkommande processflöde](./media/WES-inbound-processing-19.png "Inkommande processflöde")
 
 ## <a name="supported-processes-and-roles"></a>Processer och roller som stöds
 
@@ -115,10 +127,13 @@ Användare som fungerar som lagerchefer på både nav- och skalningsenheterna b�
 Följande processer för lagerkörning kan aktiveras för en WES arbetsbelastning på en skalningsenhet:
 
 - Valda påfyllningsmetoder för försäljnings- och överföringsorder (allokering, efterfrågepåfyllnad, skapande av behållare, skapande av arbete och utskrift av påfyllnadsetikett)
-- Bearbeta lagerställearbete för försäljnings- och överföringsorder med hjälp av mobilappen för distributionslagerhantering (inklusive påfyllnadsarbete)
-- Fråga om lagerbehållning med hjälp av mobilappen för distributionslagerhantering
-- Skapa och köra lagerrörelser med hjälp av mobilappen för distributionslagerhantering
-- Registrera inköpsorder och utföra inlagringsarbete med hjälp av mobilappen för distributionslagerhantering
+
+- Bearbeta lagerställearbete för försäljnings- och överföringsorder med hjälp av lagerställeprogrammet (inklusive påfyllnadsarbete)
+- Fråga om lagerbehållning med hjälp av distributionslagerappen
+- Skapa och köra lagerrörelser med hjälp av distributionslagerappen
+- Skapa och bearbeta inventeringsarbete med hjälp av lagerställeprogrammet
+- Göra lagerjusteringar med hjälp av lagerställeprogrammet
+- Registrera inköpsorder och utföra inlagringsarbete med hjälp av distributionslagerappen
 
 Följande arbetsordertyper stöds för närvarande för WES-arbetsbelastningar vid distributioner av skalningsenhet:
 
@@ -126,9 +141,10 @@ Följande arbetsordertyper stöds för närvarande för WES-arbetsbelastningar v
 - Överför leverans
 - Lagerpåfyllnad
 - Lagerrörelse
+- Rullande inventering
 - Inköpsorder (som är kopplade till lagerorder)
 
-Inga andra typer av källdokumenthantering eller lagerarbete stöds för närvarande på skalningsenheter. För WES-arbetsbelastning på en skalningsenhet kan du till exempel inte utföra en mottagningsprocess för överföringsorder (överföringsinleverans) eller bearbeta arbetsuppgift för rullande inventering.
+Inga andra typer av källdokumenthantering eller lagerarbete stöds för närvarande på skalningsenheter. För en WES-arbetsbelastning på en skalningsenhet kan du till exempel inte utföra en mottagningsprocess för överföringsorder (överföringsinleverans) - denna måste istället bearbetas via navinstansen.
 
 > [!NOTE]
 > Menyalternativ och knappar för mobila enheter för funktioner som inte stöds visas inte i _mobilappen för distributionslagerhantering_ när den är ansluten till en distribution av skalningsenhet.
@@ -160,7 +176,6 @@ Följande funktioner för lagerstyrning stöds för närvarande inte i arbetslas
 - Bearbetning av negativ lagerbehållning
 - Bearbetning av lagerställe med anpassade arbetstyper
 - Bearbetning av lagerställe med leveransnoteringar
-- Bearbetning av lagerställe med tröskelvärde för rullande inventering som utlöser
 - Bearbetning av distributionslagerarbete med materialhantering/Warehouse Automation
 - Användning av bilden av huvuddata för produkt (t.ex. på mobilappen för distributionslagerhantering)
 
@@ -186,14 +201,14 @@ I följande tabell visas vilka utgående funktioner som stöds och var de stöds
 | Underhålla försändelser för cykel                                  | Ja | Nr |
 | Arbetsprocess för lager (inkl. tryck på ID-nummer)        | Nr  | <p>Ja, men endast för de ovan nämnda funktionerna. |
 | Klusterplockning                                              | Nr  | Ja|
-| Manuell förpackningsbearbetning, inklusive bearbetning av "Plockning för packad behållare"                                           | Nr <P>Viss bearbetning kan utföras efter en ursprunglig plockningsprocess som hanteras av en vågenhet, men du rekommenderas inte på grund av följande spärrade operationer.</p>  | Nr  |
-| Ta bort behållare från grupp                        | Nr  | Nr                           |
+| Manuell förpackningsbearbetning, inklusive bearbetning av "Plockning för packad behållare" | Nr <P>Viss bearbetning kan utföras efter en ursprunglig plockningsprocess som hanteras av en vågenhet, men du rekommenderas inte på grund av följande spärrade operationer.</p>  | Nr |
+| Ta bort behållare från grupp                                  | Nr  | Nr |
 | Utgående sorteringsbearbetning                                  | Nr  | Nr |
 | Utskrift av läsrelaterade dokument                           | Ja | Nr |
 | Fraktsedel och ASN-generering                            | Ja | Nr |
-| Försändelsebekräftelse                    | Ja  | Nr |
-| Försändelsebekräftelse med "Bekräfta och överför"                    | Nr  | Nr |
-| Följesedel- och faktureringsbearbetning                | Ja | Nr |
+| Försändelsebekräftelse                                             | Ja | Nr |
+| Försändelsebekräftelse med "Bekräfta och överför"            | Nr  | Nr |
+| Följesedel- och faktureringsbearbetning                        | Ja | Nr |
 | Kort plockning (försäljnings- och överföringsorder)                    | Nr  | Nr |
 | Överplockning (försäljnings- och överföringsorder)                     | Nr  | Nr |
 | Ändring av arbetsplatser (försäljnings- och överföringsorder)         | Nr  | Ja|
@@ -201,7 +216,7 @@ I följande tabell visas vilka utgående funktioner som stöds och var de stöds
 | Skriv ut arbetsrapport                                            | Ja | Nr |
 | Påfyllnadsetikett                                                   | Nr  | Ja|
 | Arbetsdelning                                                   | Nr  | Ja|
-| Bearbetning av arbete - Styrt av "Transportlastning"            | Nr  | Nr |
+| Bearbetning av arbete – Styrt av "Transportlastning"            | Nr  | Nr |
 | Minska plockad kvantitet                                       | Nr  | Nr |
 | Återför arbete                                                 | Nr  | Nr |
 | Återför leveransbekräftelse                                | Ja | Nr |
@@ -212,31 +227,31 @@ I följande tabell visas vilka ingående funktioner som stöds och var de stöds
 
 | Process                                                          | Hubb | WES arbetsbelastning på en skalningsenhet<BR>*(Artiklar som markerats "Ja" gäller endast för lagerställeorder)*</p> |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Käll&nbsp;dokument&nbsp;bearbetning                                       | Ja | Nr |
+| Käll&nbsp;dokument&nbsp;bearbetning                             | Ja | Nr |
 | Last- och transporthanteringsprocesser                    | Ja | Nr |
-| Inkommande försändelsebekräftelse                                            | Ja | Nr |
+| Inkommande försändelsebekräftelse                                    | Ja | Nr |
 | Frisläppning av inköpsorder till lagerställe (bearbetning av lagerorder) | Ja | Nr |
-| Annullering av orderrader för lagerställe<p>Observera att detta endast stöds om ingen registrering har skett mot raden</p>          | Ja | Nr |
+| Annullering av orderrader för lagerställe<p>Observera att detta endast stöds om ingen registrering har skett mot raden</p> | Ja | Nr |
 | Inleverans och inlagring av inköpsorderartikel                       | <p>Ja,&nbsp;när&nbsp;det&nbsp;inte finns lagerorder</p><p>Nej, när det finns en lagerorder</p> | <p>Ja, när en inköpsorder inte ingår i en <i>last</i></p> |
-| Inköpsorderrad har inlevererats och inlagrats                        | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | <p>Ja, när en inköpsorder inte ingår i en <i>last</i></p></p> |
-| Returorder mottagning och inleverans                               | Ja | Nr |
-| Plats och mottagning för blandat ID-nummer                        | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
-| Mottagande av lastartikel                                             | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
-| Plats och mottagning av registreringsskylt                              | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
-| Inleverans och inlagring av överföringsorderartikel                        | Ja | Nr |
-| Överför orderrad inleverans och inlagring                        | Ja | Nr |
-| Avbryt arbete (inkommande)                                              | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | <p>Ja men endast när alternativet <b>Avregistreringskvitto vid annullering av arbete</b> (på sidan <b>parametrar för lagerstyrning</b>) är avmarkerat.</p> |
-| Inköpsorder, bearbetning av produktinleverans                          | Ja | Nr |
-| Inköpsorder som tas emot med underleverans                        | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Ja, men bara genom att göra en annulleringsbegäran från navet |
-| Inköpsorder som tas emot med överleverans                        | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Ja  |
-| Ta emot med skapande av *Direktleveransarbete*                   | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
+| Inköpsorderrad har inlevererats och inlagrats                       | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | <p>Ja, när en inköpsorder inte ingår i en <i>last</i></p></p> |
+| Returorder mottagning och inleverans                              | Ja | Nr |
+| Plats och mottagning för blandat ID-nummer                       | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
+| Mottagande av lastartikel                                              | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
+| Plats och mottagning av registreringsskylt                             | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
+| Inleverans och inlagring av överföringsorderartikel                       | Ja | Nr |
+| Överför orderrad inleverans och inlagring                       | Ja | Nr |
+| Avbryt arbete (inkommande)                                            | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | <p>Ja men endast när alternativet <b>Avregistreringskvitto vid annullering av arbete</b> (på sidan <b>parametrar för lagerstyrning</b>) är avmarkerat.</p> |
+| Inköpsorder, bearbetning av produktinleverans                        | Ja | Nr |
+| Inköpsorder som tas emot med underleverans                      | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Ja, men bara genom att göra en annulleringsbegäran från navet |
+| Inköpsorder som tas emot med överleverans                       | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Ja  |
+| Ta emot med skapande av *Direktleveransarbete*                 | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
 | Ta emot med skapande av *Kvalitetsorder*                  | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
 | Ta emot med skapande av *Sampling av kvalitetsartikel*          | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
 | Ta emot med skapande av *Kvalitet på kvalitetskontroll*       | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
 | Ta emot med skapande av kvalitetsorder                            | <p>Ja, när det inte finns en lagerorder</p><p>Nej, när det finns en lagerorder</p> | Nr |
-| Bearbetning av arbete - Dirigerad av *kluster för artikelinförsel*                             | Ja | Nr |
-| Bearbetning av arbete med *kort plockning*                                           | Ja | Nr |
-| Läs in registreringsskylt                                           | Ja | Nr |
+| Bearbetning av arbete – Dirigerad av *kluster för artikelinförsel*                 | Ja | Nr |
+| Bearbetning av arbete med *kort plockning*                               | Ja | Nr |
+| Läs in registreringsskylt                                           | Ja | Ja |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Lageroperationer och hantering av undantag
 
@@ -251,10 +266,10 @@ I följande tabell visas vilka funktioner för lagerställeåtgärder och hanter
 | Rörelse                                           | Ja | Ja                          |
 | Förflyttning efter registreringsskylt                               | Ja | Ja                          |
 | Överföring lagerställe                                 | Ja | Nr                           |
-| Skapa överföringsorder från mobilappen för distributionslagerhantering           | Ja | Nr                           |
-| Justering (in/ut)                                | Ja | Nr                           |
+| Skapa överföringsorder från distributionslagerappen           | Ja | Nr                           |
+| Justering (in/ut)                                | Ja | Ja, men inte för justeringsscenariot där lagerreservation måste tas bort med hjälp av inställningen **Ta bort reservationer** för lagerjusteringstyperna.</p>                           |
 | Ändring av lagerstatus                            | Ja | Nr                           |
-| Rullande inventering och inventering av avvikelsebearbetning | Ja | Nr                           |
+| Rullande inventering och inventering av avvikelsebearbetning | Ja | Ja                           |
 | Skriv ut etikett igen (utskrift av ID-nummer)             | Ja | Ja                          |
 | Skapa registreringsskylt                                | Ja | Nr                           |
 | Avbrott för registreringsskylt                                | Ja | Nr                           |
@@ -286,11 +301,9 @@ Flera batchjobb körs på både nav och skalningsenheterna.
 
 På navdistributionen kan du manuellt underhålla batch-jobben. Du kan hantera följande batchjobb i **lagerstyrning \> periodiska uppgifter \> hantering av backoffice-arbetsbelastning**:
 
-- Uppdateringshändelse för status för processarbete
 - Meddelandeprocessor för skalningsenhet till hubb
 - Registrera inleveranser av källorder
 - Slutför lagerställeorder
-- Bearbeta kvantitetsuppdateringssvar för lagerställeorderrader
 
 På arbetsbelastningen i skalningsenheter kan du hantera följande batchjobb på **lagerstyrning \> periodiska uppgifter \> hantering av arbetsbelastning**:
 
@@ -299,6 +312,5 @@ På arbetsbelastningen i skalningsenheter kan du hantera följande batchjobb på
 - Bearbeta kvantitetsuppdateringsbegäranden för lagerställeorderrader
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

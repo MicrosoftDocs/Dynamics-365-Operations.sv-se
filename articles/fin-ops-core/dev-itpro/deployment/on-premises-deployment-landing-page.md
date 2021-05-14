@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: caa3fccd9dcdfb3950958e793057131e77676d91
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4de916fcd09b4eaa041dea0a1d1f843ce0e8f10a
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749315"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5940971"
 ---
 # <a name="on-premises-deployment-home-page"></a>Lokal distribution – startsida
 
@@ -56,10 +56,10 @@ Du kan distribuera Dynamics 365 Finance + Operations (lokal). När du väljer en
 - [Återanvänd samma AD FS-instans för flera miljöer](onprem-reuseadfs.md)
 
 ## <a name="commerce"></a>Commerce
-- [Commerce-funktioner som finns i lokala distributioner](../../../retail/retail-onprem.md)
+- [Commerce-funktioner som finns i lokala distributioner](../../../commerce/retail-onprem.md)
 - [Installationsanvisningar för kanalkomponenter i Retail i en lokal miljö](deploy-retail-onprem.md)
-- [Konfigurera, installera och aktivera Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md)
-- [Konfigurera och installera Commerce Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Konfigurera, installera och aktivera Modern POS (MPOS)](../../../commerce/retail-modern-pos-device-activation.md)
+- [Konfigurera och installera Commerce Scale Unit](../../../commerce/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
 ## <a name="upgrade"></a>Uppgradera
 - [Uppgraderingsprocessen för lokala miljöer](../migration-upgrade/on-prem-upgrade.md)

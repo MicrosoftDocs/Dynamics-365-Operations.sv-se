@@ -2,7 +2,7 @@
 title: Skjut upp körningen av serie element i ER-format
 description: I det här avsnittet beskrivs hur du uppskjuta körningen av ett sekvenselement i ett format för elektronisk rapportering (ER).
 author: NickSelin
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: cdcbc828fadce641cbee2cc6135be819a03275c9
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: a7904924d1c2830287e26eb9fb71bd9a03f210d9
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894110"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944519"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Skjut upp körningen av serie element i ER-format
 
@@ -57,14 +57,14 @@ Om du inte redan har fyllt i exemplet i [avsnittet om körning av XML-element i 
 
 | Beskrivning av innehåll            | Filnamn |
 |--------------------------------|-----------|
-| Exempel på konfiguration av ER-datamodell.    | [Modell för att lära dig uppskjutna element.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Konfiguration och ER-modellmappning | [Mappning för att lära dig uppskjutna element.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Exempel på konfiguration av ER-datamodell.    | [Modell för att lära dig uppskjutna element.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| Konfiguration och ER-modellmappning | [Mappning för att lära dig uppskjutna element.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 Innan du börjar måste du också hämta och spara följande konfiguration av exempel ER-lösningen.
 
 | Beskrivning av innehåll     |Filnamn |
 |-------------------------|----------|
-| Konfiguration för ER-fomat | [Format för att lära sig uppskjutna sekvenser.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Konfiguration för ER-fomat | [Format för att lära sig uppskjutna sekvenser.version.1.1.xml](https://download.microsoft.com/download/0/f/5/0f55c341-8285-4d92-a46d-475d9a010927/Formattolearndeferredsequences.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>Importera ER-exempelkonfigurationer
 
@@ -169,7 +169,7 @@ Granska inställningarna för komponenten ER-modellmappning komponenten är konf
 1. Välj **Formatdesigner** på sidan **Kör**.
 2. Hämta filen som webbläsaren erbjuder och öppna den för granskning.
 
-    ![Hämta fil](./media/ER-DeferredSequence-Run.png)
+    ![Hämtad exempelrapportfil](./media/ER-DeferredSequence-Run.png)
 
 Observera att sammanfattningsraden 22 visar summan av skattevärden för de bearbetade transaktionerna. Eftersom formatet konfigureras för att använda **model.Data.Summary.Total** bindning om du vill returnera den här summan beräknas summan genom att den **TotalSum** aggregering av datakällan **Grupperad** av typen *GroupBy* som använder modellmappningen. För att beräkna denna modellmappning itererar modellmappningen över alla transaktioner som har valts i datakällan **filtrerade**. Genom att jämföra körningstiderna för raderna 21 och 22 kan du bestämma att beräkningen av summan tog 10 millisekunder (ms). Genom att jämföra körningstiderna för raderna 2 och 21 kan du bestämma att genereringen av alla transaktionsrader tog 7 ms. Därför krävdes totalt 17 ms.
 
@@ -202,7 +202,7 @@ Om transaktionsvolymen är mycket större än volymen i det aktuella exemplet ka
 12. Välj **spara** och välj sedan **kör**.
 13. Hämta och granska filen som webbläsaren erbjuder.
 
-    ![Hämta fil](./media/ER-DeferredSequence-Run1.png)
+    ![Hämtad fil – summerade momsvärden](./media/ER-DeferredSequence-Run1.png)
 
     Rad 21 innehåller den löpande summan av skattevärden som beräknas för alla bearbetade transaktioner genom att använda den genererade utmatningen som en datakälla. Den här datakällan startar från rapportens början och fortsätter genom den senaste skattetransaktionen. Rad 22 innehåller summan av alla skattevärden för alla bearbetade transaktioner som beräknas i modellmappningen med hjälp av datakällan för typen *GroupBy*. Observera att dessa värden är lika. Därför kan du använda den utmatnings summeringen i stället **GroupBy**. Genom att jämföra körningstiderna för raderna 2 och 21 kan du bestämma att genereringen av alla transaktionsrader och summering tog 9 ms. Därför är det ändrade formatet ungefär två gånger snabbare än det ursprungliga formatet när det gäller genereringen av detaljerade rader och summering av skattevärden.
 
@@ -211,7 +211,7 @@ Om transaktionsvolymen är mycket större än volymen i det aktuella exemplet ka
 16. Välj **spara** och välj sedan **kör**.
 17. Hämta och granska filen som webbläsaren erbjuder.
 
-    ![Hämta fil](./media/ER-DeferredSequence-Run2.png)
+    ![Hämtad fil med redigerad formel](./media/ER-DeferredSequence-Run2.png)
 
     Observera att den totala skattevärden som körs på den sista raden i transaktionsdetaljer nu är lika med summan på sammanfattningsraden.
 
@@ -224,7 +224,7 @@ Om du till exempel vill visa summan av skattevärden i rapportens rubrik kan du 
 3. Välj **spara** och välj sedan **kör**.
 4. Hämta och granska filen som webbläsaren erbjuder.
 
-    ![Hämta fil](./media/ER-DeferredSequence-Run3.png)
+    ![Hämtad fil för summering i rapportrubriken](./media/ER-DeferredSequence-Run3.png)
 
     Observera att summan av skattevärden på sammanfattningsrad 2 nu är lika med 0 (noll), detta eftersom summan nu beräknas baserat på den genererade utleveransen. När rad 2 genereras, innehåller den genererade utflödet inte ännu rader som har transaktionsdetaljer. Du kan konfigurera det här formatet för att skjuta upp körningen sekvenselement **Rapport\\Rader\\Sammanfattning** tills sekvenselement **Rapport\\Rader\\Post** har körts för alla skattetransaktioner.
 
@@ -238,7 +238,7 @@ Om du till exempel vill visa summan av skattevärden i rapportens rubrik kan du 
 3. Välj **spara** och välj sedan **kör**.
 4. Hämta och granska filen som webbläsaren erbjuder.
 
-    ![Hämta fil](./media/ER-DeferredSequence-Run4.png)
+    ![Hämtad fil – uppskjuten körning](./media/ER-DeferredSequence-Run4.png)
 
     Sekvenselementet **Rapport\\Rader\\Sammanfattning** körs nu bara efter alla andra objekt som är kapslade under dess överordnade element **Rapport\\Rader** har körts. Därför körs det efter att sekvenselementet **Rapport\\Rader\\Post** har elementet har körts för alla skattetransaktioner i **model.Data.List**. Körningstiderna för raderna 1, 2 och 3 och på den sista raden, 22, avslöjar detta faktum.
 

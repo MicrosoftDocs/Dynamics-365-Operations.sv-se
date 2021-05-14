@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6539bf6acf0216f1491cbf852f2c9a7063fbe26e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9fffe8aa99641846c0052dfa4a42856c8dddb8a5
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752876"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923235"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheter och ändringar i Dynamics AX 7.0 (februari 2016)
 
@@ -145,7 +145,7 @@ Den här funktionen fungerar oberoende av kostnadsredovisningsmetoder som tillde
 </tr>
 <tr>
 <td>Visa redovisning och avancerade regelstrukturer som associeras med en kontostruktur på en sida.</td>
-<td> Användaren måste navigera till flera formulär för att visa redovisnings - och kontostrukturen som används.</td>
+<td> Användaren måste navigera till flera formulär för att visa redovisnings – och kontostrukturen som används.</td>
 <td>Faktarutor har lagts till på kontostruktursidan.</td>
 <td>Det är enklare att komma åt viktig information när kontostrukturer definieras och redigeras.</td>
 </tr>
@@ -320,7 +320,7 @@ Den här funktionen fungerar oberoende av kostnadsredovisningsmetoder som tillde
 <td>Komma åt guidad procedurbaserad hjälp (uppgiftsguider) och begreppsbaserade avsnitt genom att klicka på <strong>Hjälp</strong>.</td>
 <td>AX 2012-hjälpsystemet pekar på HTML-avsnitt som lagras på en lokal webbserver. Kunder och partner kan skapa sin egen hjälp.</td>
 <td>Hjälpsystemet i den aktuella versionen av Dynamics AX visar uppgiftsguider som lagras i BPM för Microsoft Dynamics Lifecycle Services (LCS). Hjälpsystemet visar också avsnitt från webbsidan för Microsoft-dokument. Mer information finns i <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">hjälpsystem</a> och <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">nya uppgiftsguider (februari 2016)</a>.</td>
-<td>Uppgiftsguider tillhandahåller en guidad, interaktiv upplevelse som leder dig genom stegen för en uppgifts- eller affärsprocess. Du kan hämta och anpassa uppgiftsguider som Microsoft tillhandahåller. Det här avsnittet låter dig skapa, distribuera och uppdatera produktinformation på ett snabbare och mer flexibelt sätt. Därför garanterar den att du har tillgång till den senaste tekniska informationen.</td>
+<td>Uppgiftsguider tillhandahåller en guidad, interaktiv upplevelse som leder dig genom stegen för en uppgifts- eller affärsprocess. Du kan hämta och anpassa uppgiftsguider som Microsoft tillhandahåller. Det här avsnittet låter dig skapa, distribuera och uppdatera produktinformation på ett snabbare och mer flexibelt sätt. Därför garanterar den att du har tillgång till den senaste konstruktionsinformationen.</td>
 </tr>
 </tbody>
 </table>
@@ -602,7 +602,7 @@ Arbetsytan <strong>Priser och rabatthantering</strong> har följande funktioner:
 <ul>
 <li>Pris- och rabatthantering för en given kanal och kategori.</li>
 <li>Hantering av kategoriprisregel.</li>
-<li>Pris - och rabattprioriteter, som gör att du kan tilldela prioritet till prisgrupper och rabatter, så att du kan kontrollera i vilken ordning de tillämpas.</li>
+<li>Pris – och rabattprioriteter, som gör att du kan tilldela prioritet till prisgrupper och rabatter, så att du kan kontrollera i vilken ordning de tillämpas.</li>
 <li>Hantering av anknytning och katalograbatt.</li>
 </ul>
 Arbetsytan <strong>Kataloghantering</strong> aktiverar följande funktioner:
@@ -732,7 +732,7 @@ Retail Server och datahantering låter konsumenter och företag skapa en shoppin
 </tr>
 <tr>
 <td>Flytta data mellan Microsoft Dynamics AX backoffice och kanaler med Commerce Data Exchange.</td>
-<td>Commerce Data Exchange är ett system som överför data mellan Microsoft Dynamics AX och detaljhandelskanaler, till exempel onlinebutiker eller fysiska butiker. Mer information finns i <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
+<td>Commerce Data Exchange är ett system som överför data mellan Microsoft Dynamics AX och detaljhandelskanaler, till exempel onlinebutiker eller fysiska butiker. Mer information finns i <a href="/dynamicsax-2012/appuser-itpro/commerce-data-exchange">Commerce Data Exchange [AX 2012]</a>.</td>
 <td>Det är samma funktioner med Microsoft Dynamics AX 2012 CU8. Observera dock följande information:
 <ul>
 <li>Commerce Data Exchange har anpassats för molnet.</li>

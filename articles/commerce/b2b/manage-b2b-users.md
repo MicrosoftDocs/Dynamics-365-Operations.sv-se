@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7c1bd8d9cb494cef78fa7c14f6c391821d48749a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6beee4cc4c0dd36f49a38ee49a1a23ad9b513360
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799863"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936666"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Hantera affärspartnersanvändare på B2B-näthandelssajter
 
@@ -38,17 +38,17 @@ Med funktionen för B2B-näthandel i Commerce-administrationen kan organisatione
 Följ dessa steg om du vill aktivera funktionen för B2B-näthandel i Commerce-administrationen.
 
 1. Gå till **Arbetsytor \> Funktionshantering**.
-1. I fliken **Alla** filtrerar du fältet **Modul** genom att använda villkoret **Butik och handel**.
+1. I fliken **Alla** filtrerar du fältet **Modul** genom att använda villkoret **Retail and Commerce**.
 1. Sök efter och markera funktionen **Aktivera användning av B2B-funktioner för näthandel** och välj sedan **Aktivera nu**.
 
 ## <a name="create-a-number-sequence-and-add-it-to-commerce-shared-parameters"></a>Skapa en nummerserie och lägga till den i gemensamma parametrar för handel
 
-Nummerserier används för att generera läsliga unika identifierare för huvuddataposter och transaktionsposter och som kräver identifierare. Mer information om nummerserier, se [Översikt över nummerserier](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
+Nummerserier används för att generera läsliga unika identifierare för huvuddataposter och transaktionsposter och som kräver identifierare. Mer information om nummerserier, se [Översikt över nummerserier](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
 
 Om du vill skapa en nummerserie och lägga till den i gemensamma parametrar för Commerce i Commerce-administrationen följer du dessa steg.
 
-1. Gå till **Butik och handel \> Administrationsinställningar \> Nummerserier \> Nummerserier** och skapar sedan en nummerserie.
-1. Gå till **Butik och handel \> Administrationsinställningar \> Parametrar \> Delade parametrar för handel** och lägger till den nya nummerserien i referensen **ID för kundhierarki**.
+1. Gå till **Retail and Commerce \> Administrationsinställningar \> Nummerserier \> Nummerserier** och skapar sedan en nummerserie.
+1. Gå till **Retail and Commerce \> Administrationsinställningar \> Parametrar \> Delade parametrar för handel** och lägger till den nya nummerserien i referensen **ID för kundhierarki**.
 
 ## <a name="set-up-the-administrator-user-for-a-new-business-partner"></a>Ställ in administratörsanvändare för en ny affärspartner
 
@@ -56,16 +56,16 @@ Potentiella affärspartner kan initiera registreringsprocessen till en B2B-näth
 
 Om du vill godkänna och ställa in en administratörsanvändare för en affärspartner i Commerce-administreringen följer du dessa steg.
 
-1. Gå till **IT för butik och handel \> Distributionsschema**.
+1. Gå till **IT för Retail and Commerce \> Distributionsschema**.
 1. Kör jobbet **P-0001** om du vill hämta alla begäranden om affärspartnerregistrering i Commerce-administreringen.
-1. När **P-0001**-jobbet har körts går du till **IT för butik och handel \> Kund** och kör jobbet **Synkronisera kunder och affärspartner från asynkront läge**. När det här jobbet har körts skapas de inbyggda förfrågningarna som potentiella poster i Commerce-administrationen. Fältet **Typ-ID** för dessa poster ställs in som **Potentiell B2B-kund**.
+1. När **P-0001**-jobbet har körts går du till **IT för Retail and Commerce \> Kund** och kör jobbet **Synkronisera kunder och affärspartner från asynkront läge**. När det här jobbet har körts skapas de inbyggda förfrågningarna som potentiella poster i Commerce-administrationen. Fältet **Typ-ID** för dessa poster ställs in som **Potentiell B2B-kund**.
 1. Gå till **Kunder \> Alla potentiella** och öppna sidan för potentiella kunder.
 1. Välj posten för potentiell kund för den nya affärspartnern om du vill öppna detaljsidan för potentiell kund.
 1. På fliken **Allmänt** väljer du **Konvertera \> Godkänn/Avvisa** om du vill godkänna eller avvisa registreringsbegäran. När ett bekräftelsemeddelande visas bekräftar du att du vill fortsätta med processen samt godkänner begäran. Ett e-postmeddelande skickas sedan till den begärandes e-postadress för att bekräfta att deras organisation har godkänts som affärspartner.
 
     När du har godkänt ansökan får fältet **Status** för potentiell kund statusen **Godkänd**. Två nya kundposter skapas dessutom i systemet: en kundpost av **typen Organisation** för affärspartnerorganisationen, samt en kundpost av **typen Person** för begäranden. En kundhierarkipost för affärspartnern skapas också. <!--(Please refer to the Org modeling of B2B customer section in this document for more information)-->
 
-1. Gå till **IT för butik och handel \> Distributionsschema** och kör jobbet **1010** (**Kunder**) för att förflytta de nya kund- och kundhierarkiposterna till kanaldatabasen.
+1. Gå till **IT för Retail and Commerce \> Distributionsschema** och kör jobbet **1010** (**Kunder**) för att förflytta de nya kund- och kundhierarkiposterna till kanaldatabasen.
 
 När en begäran har godkänts och kund- och kundhierarkiposterna har synkroniserats med kanaldatabasen kan begäranden logga in på B2B-näthandelssajten med den e-postadress som han eller hon angav när han/hon skickade begäran. Användarna kan använda inloggningsflödet för att definiera lösenordet för sitt konto.
 
@@ -136,7 +136,7 @@ Följ dessa steg om du vill registrera affärspartner och användare i Commerce-
 
 [Ange produktkvantitetsgränser för B2B-näthandelssajter](quantity-limits.md)
 
-[Nummerserier – översikt](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+[Nummerserier – översikt](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

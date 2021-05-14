@@ -1,8 +1,8 @@
 ---
-title: Använd skalningsenheter för att öka flexibiliteten hos Supply Chain Management-arbetsbelastningar
+title: Moln- och kantskalningsenheter för arbetsbelastning i tillverknings och distributionslagerhantering
 description: Detta ämne ger information, se moln och kantskalningsenhet med arbetsbelastning för tillverkning och distributionslagerhantering.
 author: cabeln
-ms.date: 04/13/2021
+ms.date: 04/22/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: c47088edd89413d196e904bc7eaa115585bf8464
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.openlocfilehash: 86f231b9ae85d136b0e963757d9561a7abda4edc
+ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899153"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5938310"
 ---
-# <a name="use-scale-units-to-help-increase-resilience-for-supply-chain-management-workloads"></a>Använd skalningsenheter för att öka flexibiliteten hos Supply Chain Management-arbetsbelastningar
+# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Moln- och kantskalningsenheter för arbetsbelastning i tillverknings och distributionslagerhantering
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,11 +39,11 @@ Arbetsbelastningsfunktionerna frisläpps kontinuerligt genom stegvisa förbättr
 
 ## <a name="scale-units-and-dedicated-workloads"></a>Skalningsenheter och dedikerade arbetsbelastning
 
-Skalningsenheter utökas med Supply Chain Management navmiljö genom att lägga till dedikerad bearbetningskapacitet. Skalningsenheter kan köras i molnet. De kan också köras "on the edge" - i utkanten av nätverket istället för som annars centralt - på plats på din lokala anläggning.
+Skalningsenheter utökas med Supply Chain Management navmiljö genom att lägga till dedikerad bearbetningskapacitet. Skalningsenheter kan köras i molnet. De kan också köras "on the edge" – i utkanten av nätverket istället för som annars centralt – på plats på din lokala anläggning.
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 med skalningsenheter":::
 
-Skalningsenheter tillhandahåller effektivitet, tillförlitlighet och skalning för de tilldelade arbetsbelastningarna. Kantskalenheter kan tillfälligt kopplas ned från den molnbaserade miljön, och medarbetarna fortsätter att arbeta i de tilldelade arbetsbelastningarna "on the edge" - i utkanten av nätverket istället för som annars centralt.
+Skalningsenheter tillhandahåller effektivitet, tillförlitlighet och skalning för de tilldelade arbetsbelastningarna. Kantskalenheter kan tillfälligt kopplas ned från den molnbaserade miljön, och medarbetarna fortsätter att arbeta i de tilldelade arbetsbelastningarna "on the edge" – i utkanten av nätverket istället för som annars centralt.
 
 En *arbetsbelastning* är en definierad uppsättning affärsfunktioner som kan beaktas och delegeras till en skalningsenhet. Trots att arbetsbelastningen för lagerstyrning har frisläppts befinner sig arbetsbelastningen för tillverkningskörning fortfarande i förhandsgranskningsstadiet.
 
@@ -70,13 +70,13 @@ Den första versionen av tillverkningsarbetsbelastningen befinner sig för närv
 - Maskinoperatörer och arbetsledare kan komma åt den operationella produktionsplanen.
 - Maskinoperatörer kan hålla planen aktuell genom att köra separata jobb för bearbetning och processtillverkning.
 - Arbetsledaren kan justera driftsplanen.
-- Arbetare kan få åtkomst till tid och närvaro för in- och utstämpling "on the edge" - i utkanten av nätverket istället för som annars centralt - detta för att säkerställa korrekt löneberäkning för medarbetarna.
+- Arbetare kan få åtkomst till tid och närvaro för in- och utstämpling "on the edge" – i utkanten av nätverket istället för som annars centralt – detta för att säkerställa korrekt löneberäkning för medarbetarna.
 
 För mer information, se [Arbetsbelastningar för tillverkningskörning för moln- och kantskalningsenheter](cloud-edge-workload-manufacturing.md).
 
 ## <a name="considerations-before-you-enable-the-distributed-hybrid-topology-for-supply-chain-management"></a>Att tänka på innan du aktiverar distribuerad, hybridtopologi för Supply Chain Management
 
-Genom att aktivera den distribuerade hybridtopologin överför du din molnbaserade Supply Chain Management-miljö så att den fungerar som ett nav. Du kan också associera ytterligare miljöer som konfigureras som skalningsenheter i molnet eller "on the edge" - i utkanten av nätverket istället för som annars centralt.
+Genom att aktivera den distribuerade hybridtopologin överför du din molnbaserade Supply Chain Management-miljö så att den fungerar som ett nav. Du kan också associera ytterligare miljöer som konfigureras som skalningsenheter i molnet eller "on the edge" – i utkanten av nätverket istället för som annars centralt.
 
 ### <a name="prerequisites-and-limitations-for-cloud-scale-units"></a><a name="cloud-scale-unit-prerequisites"></a>Förutsättningar och begränsningar för molnskalningsenheter
 
@@ -104,7 +104,7 @@ Din aktuella produktionsmiljö måste vara taggad med typen **Självbetjäning**
 
 Microsoft arbetar med att överföra alla molnbaserade miljöer inom Supply Chain Management från en IaaS-modell till en topologi som finns i Service Fabric. Denna flytt ger en större skalbarhet och gör servicehanteringen enklare. Därför går det snabbare att distribuera och underhålla åtgärder. Servicekomponenter migreras på samma sätt till begreppet mikrotjänster, och värdmodellen för tjänsten kommer att [övergå](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm) från en virtuell maskinmodell (VM) till en lättare containerarkitektur.
 
-I slutändan kommer samma Service Fabric-baserade containerinfrastruktur för tjänster att driva såväl molnbaserade som kantinstanser av tjänsten, oavsett om en instans är ett nav i molnet eller en skalningsenhet i molnet eller "on the edge" - i utkanten av nätverket istället för som annars centralt.
+I slutändan kommer samma Service Fabric-baserade containerinfrastruktur för tjänster att driva såväl molnbaserade som kantinstanser av tjänsten, oavsett om en instans är ett nav i molnet eller en skalningsenhet i molnet eller "on the edge" – i utkanten av nätverket istället för som annars centralt.
 
 Innan du kan ta steget över till den hybridtopologi som stöder skalningsenheter måste projektets klientorganisation överföras till modellen med Service Fabric som värd. Alla miljöer som fungerar som nav måste dessutom konverteras.
 

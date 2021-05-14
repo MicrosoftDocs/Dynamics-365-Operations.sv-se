@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 48bf6f7997d6159077419bcd05d27fd711c8fb4b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2ea495259ba29f302753991e260d5a8fa990322b
+ms.sourcegitcommit: e3f11fc9a9dae416a490437678bb482a0094f9a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891040"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5953422"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Hantera begäranden om ledighet i Teams
 
@@ -207,6 +207,14 @@ Om du får ett fel när du försöker godkänna tjänstledighetsbegäranden i Te
 1. Kontrollera att det konto som du använder för att logga in Microsoft Teams är det som du använder för att komma åt Dynamics 365 Human Resources.
 
 2. Kontrollera att de är giltiga godkännare för begäran genom att kontrollera arbetsflödesinställningarna för att godkännande av tjänstledighet. Mer information om att lämna arbetsflöden för förfrågningar finns i [skapa ett arbetsflöde för tjänstledighetsbegäran](hr-leave-and-absence-workflow.md).
+
+### <a name="leave-approvers-dont-receive-teams-chat-messages-to-approve-leave-requests"></a>Låt godkännare inte ta emot Teams-chattmeddelanden med syfte att godkänna tjänstledighetsansökningar
+
+1. Kontrollera att meddelanden har aktiverats för miljön och användaren. Mer information finns i [Aktivera meddelanden för appen Personal i Teams](hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams) och [Slå på/stäng av aviseringar för Teams för enskilda användare](hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users).
+
+2. Se till att användarna är inloggade på fliken **Chattar** med samma autentiseringsuppgifter som när de godkänner tjänstledighetsansökningar. Använd meddelandena "logga ut" och sedan "logga in" för att logga in med rätt autentiseringsuppgifter.
+
+3. Om problemet kvarstår kontrollerar du statusen för batchjobbet i Business Events-systemet som systemadministratör. Om denna befinner sig i en väntande eller en utförande fast försöker du igen om några minuter. Om statusen inte ändras skapar du en supportbegäran så att vårt team kan hjälpa till att lösa problemet.
 
 ## <a name="known-accessibility-issues"></a>Kända tillgänglighetsproblem
 

@@ -2,7 +2,7 @@
 title: Ställa in en butikskanal
 description: I det här avsnittet beskrivs hur du skapar en ny butikskanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 01/27/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 713cbe68c151b6893519843611089941cabf0e70
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3f1f5dc2c8402d9b6b68a049f804932812eb74c0
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800601"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937544"
 ---
 # <a name="set-up-a-retail-channel"></a>Ställa in en återförsäljarkanal
 
@@ -68,7 +68,7 @@ I bilden nedan visas ett exempel på konfiguration av butikskanal.
 
 ## <a name="additional-channel-set-up"></a>Konfiguration av ytterligare kanal
 
-Det finns ytterligare objekt som måste konfigureras för en kanal som kan hittas i **åtgärdsfönstret** under avsnittet **inställningar**.
+Det finns ytterligare artiklar som måste konfigureras för en kanal som kan hittas i åtgärdsfönstret under avsnittet **Inställningar**.
 
 Ytterligare uppgifter som krävs för online-kanalkonfigurering inkluderar inställning av betalsätt, kontantdeklaration, leveranssätt, inkomst/utgiftskonto, avsnitt, tilldelning av uppfyllelsegrupp och kassaskåp.
 
@@ -80,7 +80,7 @@ Följande bild visar olika ytterligare alternativ för inställning av butikskan
 
 Om du vill ställa in betalsätt följer du dessa steg för varje betalningstyp som stöds på den här kanalen.
 
-1. I åtgärdsfönstret, välj fliken **Inställningar** och välj sedan **betalningssätt**.
+1. I åtgärdsfönstret väljer du fliken **Inställningar** och sedan **Betalningsmetod**.
 1. Klicka på **Ny** i åtgärdsfönstret.
 1. I navigeringsfönstret väljer du önskad betalningsmetod.
 1. I avsnittet **Allmänt** anger du ett **åtgärdsnamn** och konfigurerar andra önskade inställningar.
@@ -93,8 +93,8 @@ I bilden nedan visas ett exempel på en kontantbetalningsmetod.
 
 ### <a name="set-up-cash-declaration"></a>Inställningar för kontantavstämning
 
-1. I åtgärdsfönstret, välj fliken **Inställningar** och välj sedan **Kontantavstämning**.
-1. I åtgärdsfönstret, välj **Ny** och skapa sedan alla beteckningar för **mynt** och **anteckning** som kan användas.
+1. I åtgärdsfönstret väljer du fliken **Inställningar** och sedan **Kontantavstämning**.
+1. I åtgärdsfönstret, väljer du **Ny** och skapar sedan alla beteckningar för **Mynt** och **Sedlar** som kan användas.
 
 I bilden nedan visas ett exempel på en kontantavstämning.
 
@@ -102,12 +102,12 @@ I bilden nedan visas ett exempel på en kontantavstämning.
 
 ### <a name="set-up-modes-of-delivery"></a>Ställ in leveranssätt
 
-Du kan visa de konfigurerade leveranssätten genom att välja **Leveranssätt** från fliken **Inställningar** i **Åtgärdsfönstret**.  
+Du kan visa de konfigurerade leveranssätten genom att välja **Leveranssätt** i fliken **Inställningar** i åtgärdsfönstret.  
 
 Om du vill ändra eller lägga till ett leveranssätt följer du stegen nedan.
 
 1. I navigeringsfönstret, gå till **Moduler \> Lagerhantering \> Leveranssätt**.
-1. I åtgärdsfönstret, välj **Ny** om du vill skapa ett nytt leverans sätt, eller välj ett befintligt läge.
+1. I åtgärdsfönstret väljer du **Ny** om du vill skapa ett nytt leveranssätt, eller också väljer du ett befintligt läge.
 1. I avsnittet **butikskanaler**, välj **lägg till rad** om du vill lägga till kanalen. Lägga till kanaler med hjälp av organisationsnoder istället för att lägga till varje kanal individuellt kan lägga till kanaler effektivare.
 
 I bilden nedan visas ett exempel på ett leveranssätt.
@@ -118,7 +118,7 @@ I bilden nedan visas ett exempel på ett leveranssätt.
 
 Så här ställer du in intäkts-/utgiftskonto.
 
-1. I åtgärdsfönstret, välj fliken **Inställningar** och välj sedan **intäkts-/utgiftskonto**.
+1. I åtgärdsfönstret väljer du fliken **Inställningar** och sedan **Intäkts-/utgiftskonto**.
 1. Klicka på **Ny** i åtgärdsfönstret.
 1. Under **Namn**, ange ett namn.
 1. Under **Söknamn**, ange ett söknamn.
@@ -135,7 +135,7 @@ I följande bild visas ett exempel på ett intäkts-/utgiftskonto.
 
 Så här ställer du in avsnitt.
 
-1. I åtgärdsfönstret, välj fliken **Inställningar** och välj sedan **avsnitt**.
+1. I åtgärdsfönstret väljer du fliken **Inställningar** och väljer sedan **Avsnitt**.
 1. Klicka på **Ny** i åtgärdsfönstret.
 1. Under **avsnittsnummer**, ange ett avsnittsnummer.
 1. Under **beskrivning** ange en beskrivning.
@@ -147,7 +147,7 @@ Så här ställer du in avsnitt.
 
 Så här ställer du in en tilldelning av uppfyllelsegrupp.
 
-1. I åtgärdsfönstret, välj fliken **Inställningar** och välj sedan **Tilldelning av uppfyllelsegrupp**.
+1. I åtgärdsfönstret väljer du fliken **Inställningar** och sedan **Tilldelning av uppfyllelsegrupp**.
 1. Klicka på **Ny** i åtgärdsfönstret.
 1. I listrutan **uppfyllelsegrupp** väljer du en uppfyllelsegrupp.
 1. I listrutan **Beskrivning**, ange en beskrivning.
@@ -161,16 +161,47 @@ I bilden nedan visas ett exempel på en inställning av tilldelning av uppfyllel
 
 Så här ställer du in kassaskåp.
 
-1. I åtgärdsfönstret, välj fliken **Inställningar** och välj sedan **Kassaskåp**.
+1. I åtgärdsfönstret väljer du fliken **Inställningar** och klickar sedan på **Kassaskåp**.
 1. Klicka på **Ny** i åtgärdsfönstret.
 1. Ange ett namn på kassaskåp.
 1. Klicka på **Spara** i åtgärdsfönstret.
+
+### <a name="ensure-unique-transaction-ids"></a>Säkerställa unika transaktions-ID
+
+Från och med Commerce-versionen 10.0.18 genereras transaktions-ID för kassan (POS) sekventiellt och inkluderar följande delar:
+
+- En fast del, som utgör en sammanslagning av butiks-ID och terminal-ID. 
+- En sekventiell del som är en nummerserie. 
+
+Mer specifikt är formatet *{store}-{terminal}-{numbersequence}*. 
+
+Eftersom transaktions-ID:n kan skapas i offline- och onlinelägen har det hänt att instanser med dubbletter av transaktions-ID:n skapas. Att undvika dubbletter av transaktions-ID:er kräver omfattande manuella datakorrigeringar. 
+
+I och med Commerce-version 10.0.19 har transaktions-ID-formatet uppdaterats i syfte att ta bort den sekventiella delen, och använder istället ett 13-siffrigt nummer som genererats genom beräkning av tiden i millisekunder sedan 1970. Genom denna ändring blir det nya transaktions-ID-formatet *{store}-{terminal}-{millisecondsSince1970}*. Genom denna uppdatering blir transaktions-ID:t icke-sekventiellt och säkerställer att transaktions-ID:n alltid blir unika. 
+
+> [!NOTE]
+> Transaktions-ID:n är endast avsedda för interna system, varför de måste inte vara löpande. Många länder kräver dock att inleverans-ID:n är sekventiella.
+
+Den nya formatfunktionen för transaktions-ID kan aktiveras från arbetsytan **Funktionshantering**. 
+
+Gör på följande sätt om du vill aktivera användning av nya transaktions-ID:n:
+
+1. I Commerce-administrationen går du till **Systemadministration \> Arbetsytor \> Funktionshantering**.
+1. Filtrera fram modulen "Retail och Commerce".
+1. Sök efter funktionsnamnet **Aktivera nytt transaktions-ID i syfte att undvika dubbletter av transaktions-ID:n**.
+1. Välj funktionen och sedan **Aktivera nu** i det högra fönstret.  
+1. Gå till **Retail and Commerce \> Retail and Commerce-IT \> Distributionsschema**.
+1. Kör jobben **1070 Kanalkonfiguration** och **1170 Uppgiftsinspelare för kassa** i syfte att synkronisera den aktiverade funktionen med butikerna.
+1. När ändringarna har skickats till butikerna måste kassaterminalerna stängas och öppnas igen för att det nya transaktions-ID-formatet ska kunna användas. 
+
+> [!NOTE]
+> När den nya formatfunktionen för transaktions-ID har aktiverats kan du inte inaktivera funktionen. Om denna måste inaktiveras kan du kontakta Commerce Support.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över kanaler](channels-overview.md)
 
-[Förutsättningar för att ställa in kanaler](channels-prerequisites.md)
+[Förutsättningar för kanalinställningar](channels-prerequisites.md)
 
 [Ställ in en onlinekanal](channel-setup-online.md)
 
