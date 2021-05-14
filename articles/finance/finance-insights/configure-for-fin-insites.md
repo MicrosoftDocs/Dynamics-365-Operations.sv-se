@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 54117c009cfeb7307938cc6bd43e774ccfedcfb1
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 60e4d69157d7b73bd9e47310adae320687230080
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908840"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941236"
 ---
-# <a name="configuration-for-finance-insights-preview"></a><span data-ttu-id="e5722-103">Konfiguration för Finance-insikter (förhandsversion)</span><span class="sxs-lookup"><span data-stu-id="e5722-103">Configuration for Finance insights (preview)</span></span>
+# <a name="configuration-for-finance-insights-preview"></a><span data-ttu-id="53ef7-103">Konfiguration för Finance-insikter (förhandsversion)</span><span class="sxs-lookup"><span data-stu-id="53ef7-103">Configuration for Finance insights (preview)</span></span>
 
 [!include [banner](../includes/banner.md)]
 
@@ -30,420 +30,231 @@ ms.locfileid: "5908840"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-<span data-ttu-id="e5722-104">Ekonomiska insikter kombinerar funktioner från Microsoft Dynamics 365 Finance med Microsoft Dataverse, Azure och AI Builder för att tillhandahålla kraftfulla prognosverktyg för organisationen.</span><span class="sxs-lookup"><span data-stu-id="e5722-104">Finance insights combines functionality from Microsoft Dynamics 365 Finance with Microsoft Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization.</span></span> <span data-ttu-id="e5722-105">I det här avsnittet beskrivs de konfigurationssteg som gör att systemet kan använda de funktioner som finns i Ekonomiska insikter.</span><span class="sxs-lookup"><span data-stu-id="e5722-105">This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.</span></span>
+<span data-ttu-id="53ef7-104">Ekonomiska insikter kombinerar funktioner från Microsoft Dynamics 365 Finance med Microsoft Dataverse, Azure och AI Builder för att tillhandahålla kraftfulla prognosverktyg för organisationen.</span><span class="sxs-lookup"><span data-stu-id="53ef7-104">Finance insights combines functionality from Microsoft Dynamics 365 Finance with Microsoft Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization.</span></span> <span data-ttu-id="53ef7-105">I det här avsnittet beskrivs de konfigurationssteg som gör att systemet kan använda de funktioner som finns i Ekonomiska insikter.</span><span class="sxs-lookup"><span data-stu-id="53ef7-105">This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.</span></span>
 
-## <a name="deploy-dynamics-365-finance"></a><span data-ttu-id="e5722-106">Distribuera Dynamics 365 Finance</span><span class="sxs-lookup"><span data-stu-id="e5722-106">Deploy Dynamics 365 Finance</span></span>
+## <a name="deploy-dynamics-365-finance"></a><span data-ttu-id="53ef7-106">Distribuera Dynamics 365 Finance</span><span class="sxs-lookup"><span data-stu-id="53ef7-106">Deploy Dynamics 365 Finance</span></span>
 
-<span data-ttu-id="e5722-107">Följ dessa steg för att distribuera miljöerna.</span><span class="sxs-lookup"><span data-stu-id="e5722-107">Deploy the environments by following these steps.</span></span>
+<span data-ttu-id="53ef7-107">Följ dessa steg för att distribuera miljöerna.</span><span class="sxs-lookup"><span data-stu-id="53ef7-107">Deploy the environments by following these steps.</span></span>
 
-1. <span data-ttu-id="e5722-108">I Microsoft Dynamics Lifecycle Services (LCS), skapa eller uppdatera en Dynamics 365 Finance-miljö.</span><span class="sxs-lookup"><span data-stu-id="e5722-108">In Microsoft Dynamics Lifecycle Services (LCS), create or update a Dynamics 365 Finance environment.</span></span> <span data-ttu-id="e5722-109">Miljön kräver programversion 10.0.11/Platform update 35 eller senare.</span><span class="sxs-lookup"><span data-stu-id="e5722-109">The environment requires app version 10.0.11/Platform update 35 or later.</span></span>
-2. <span data-ttu-id="e5722-110">Miljön måste vara en miljö med hög tillgänglighet (HA) i sandbox-miljö.</span><span class="sxs-lookup"><span data-stu-id="e5722-110">The environment must be a high-availability (HA) environment in Sandbox.</span></span> <span data-ttu-id="e5722-111">(Den här typen av miljö kallas också för en Nivå-2-miljö.) Mer information finns i [Miljöplanering](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).</span><span class="sxs-lookup"><span data-stu-id="e5722-111">(This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).</span></span>
-3. <span data-ttu-id="e5722-112">Om du använder Contoso-demodata behöver du ytterligare exempeldata för att kunna använda funktionerna för kundbetalningsförutsägelser, kassaflödesprognoser och budgetprognoser.</span><span class="sxs-lookup"><span data-stu-id="e5722-112">If you're using Contoso demo data, you will require additional sample data to use the Customer payment predictions, Cash flow forecasts, and Budget forecasts features.</span></span> 
+1. <span data-ttu-id="53ef7-108">I Microsoft Dynamics Lifecycle Services (LCS), skapa eller uppdatera en Dynamics 365 Finance-miljö.</span><span class="sxs-lookup"><span data-stu-id="53ef7-108">In Microsoft Dynamics Lifecycle Services (LCS), create or update a Dynamics 365 Finance environment.</span></span> <span data-ttu-id="53ef7-109">Miljön kräver programversion 10.0.11/Platform update 35 eller senare.</span><span class="sxs-lookup"><span data-stu-id="53ef7-109">The environment requires app version 10.0.11/Platform update 35 or later.</span></span>
+2. <span data-ttu-id="53ef7-110">Miljön måste vara en miljö med hög tillgänglighet (HA) i sandbox-miljö.</span><span class="sxs-lookup"><span data-stu-id="53ef7-110">The environment must be a high-availability (HA) environment in Sandbox.</span></span> <span data-ttu-id="53ef7-111">(Den här typen av miljö kallas också för en Nivå-2-miljö.) Mer information finns i [Miljöplanering](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).</span><span class="sxs-lookup"><span data-stu-id="53ef7-111">(This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).</span></span>
+3. <span data-ttu-id="53ef7-112">Om du använder Contoso-demodata behöver du ytterligare exempeldata för att kunna använda funktionerna för kundbetalningsförutsägelser, kassaflödesprognoser och budgetprognoser.</span><span class="sxs-lookup"><span data-stu-id="53ef7-112">If you're using Contoso demo data, you will require additional sample data to use the Customer payment predictions, Cash flow forecasts, and Budget forecasts features.</span></span> 
 
-## <a name="configure-dataverse"></a><span data-ttu-id="e5722-113">Konfigurera Dataverse</span><span class="sxs-lookup"><span data-stu-id="e5722-113">Configure Dataverse</span></span>
+## <a name="configure-dataverse"></a><span data-ttu-id="53ef7-113">Konfigurera Dataverse</span><span class="sxs-lookup"><span data-stu-id="53ef7-113">Configure Dataverse</span></span>
 
-<span data-ttu-id="e5722-114">Du kan slutföra de manuella konfigurationsstegen som följer eller så kan du påskynda konfigurationen med hjälp av det Windows PowerShell-skript som tillhandahålls.</span><span class="sxs-lookup"><span data-stu-id="e5722-114">You can complete the manual configuration steps that follow, or you can speed up the configuration process by using the Windows PowerShell script that is provided.</span></span> <span data-ttu-id="e5722-115">När PowerShell-skriptet har körts klart får du tillgång till värden som används för att konfigurera Ekonomiska insikter.</span><span class="sxs-lookup"><span data-stu-id="e5722-115">When the PowerShell script has finished running, it will give you values to use to configure Finance insights.</span></span> 
+<span data-ttu-id="53ef7-114">Använd följande steg för att konfigurera Dataverse för Finance insights.</span><span class="sxs-lookup"><span data-stu-id="53ef7-114">Use the following steps to configure Dataverse for Finance insights.</span></span>
+
+1. <span data-ttu-id="53ef7-115">Öppna miljösidan i LCS och kontrollera att avsnittet **Power Platform**-integration redan har ställts in.</span><span class="sxs-lookup"><span data-stu-id="53ef7-115">Open the environment page in LCS and verify that the **Power Platform Integration** section is already setup.</span></span>
+    1. <span data-ttu-id="53ef7-116">Om den redan är inställd ska Dataverse-miljön som är länkat till Dynamics 365 Finance-miljön visas i listan.</span><span class="sxs-lookup"><span data-stu-id="53ef7-116">If it is already set up, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed.</span></span> <span data-ttu-id="53ef7-117">Kopiera namnet på Dataverse-miljön.</span><span class="sxs-lookup"><span data-stu-id="53ef7-117">Copy the Dataverse environment name.</span></span>
+    2. <span data-ttu-id="53ef7-118">Om den inte är inställd följer du dessa steg:</span><span class="sxs-lookup"><span data-stu-id="53ef7-118">If it is not set up, follow these steps:</span></span>
+        1. <span data-ttu-id="53ef7-119">Välj knappen **Inställningar** i avsnittet Power Platform-integrering.</span><span class="sxs-lookup"><span data-stu-id="53ef7-119">Select the **Setup** button in the Power Platform Integration section.</span></span> <span data-ttu-id="53ef7-120">Det kan ta upp till en timme innan miljön kan ställas in.</span><span class="sxs-lookup"><span data-stu-id="53ef7-120">It may take up to an hour for the environment to be set up.</span></span>
+        2. <span data-ttu-id="53ef7-121">Om Dataverse-miljön har ställts in bör det Dataverse-miljönamn som kopplats till Dynamics 365 Finance-miljön listas.</span><span class="sxs-lookup"><span data-stu-id="53ef7-121">If the Dataverse environment is successfully set up, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed.</span></span> <span data-ttu-id="53ef7-122">Kopiera namnet på Dataverse-miljön.</span><span class="sxs-lookup"><span data-stu-id="53ef7-122">Copy the Dataverse environment name.</span></span>
+> [!NOTE]
+> <span data-ttu-id="53ef7-123">När miljön är klar väljer du **INTE** knappen **Koppla till CDS for Apps**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-123">After completing the environment set up, **DO NOT** select the **Link to CDS for Apps** button.</span></span> <span data-ttu-id="53ef7-124">Detta behövs inte för Finance Insights och kommer att inaktivera möjligheten att slutföra de erforderliga miljötilläggen i LCS.</span><span class="sxs-lookup"><span data-stu-id="53ef7-124">This is not needed for Finance Insights and will disable the ability to complete the required Environment Add-ins in LCS.</span></span>
+
+2. <span data-ttu-id="53ef7-125">Öppna [Power Platform administrationscenter](https://admin.powerplatform.microsoft.com/) och skapa en ny Dataverse-miljö i samma Active Directory-klientorganisation genom att följa stegen nedan:</span><span class="sxs-lookup"><span data-stu-id="53ef7-125">Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and follow these steps to create a new Dataverse environment in the same Active Directory tenant:</span></span>
+
+    1. <span data-ttu-id="53ef7-126">Öppna sidan **Miljöer**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-126">Open the **Environments** page.</span></span>
+
+        <span data-ttu-id="53ef7-127">[![Sidan Miljöer](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)</span><span class="sxs-lookup"><span data-stu-id="53ef7-127">[![Environments page](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)</span></span>
+
+    2. <span data-ttu-id="53ef7-128">Välj Dataverse-miljön som skapats ovan och välj sedan **Inställningar**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-128">Select the Dataverse environment created above and then select **Settings**.</span></span>
+    3. <span data-ttu-id="53ef7-129">Välj **Resurser \> Alla äldre inställningar**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-129">Select **Resources \> All Legacy Settings**.</span></span>
+    4. <span data-ttu-id="53ef7-130">Välj **Inställningar** i det övre navigeringsfältet och välj **Anpassningar**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-130">On the top navigation bar, select **Settings**, and then select **Customizations**.</span></span>
+    5. <span data-ttu-id="53ef7-131">Välj **Utvecklarresurser**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-131">Select **Developer Resources**.</span></span>
+    6. <span data-ttu-id="53ef7-132">Kopiera värdet för **Organisations-ID för Dataverse**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-132">Copy the **Dataverse organization ID** value.</span></span>
+    7. <span data-ttu-id="53ef7-133">Notera URL:en till Dataverse-organisationen i webbläsarens adressfält.</span><span class="sxs-lookup"><span data-stu-id="53ef7-133">In the browser's address bar, make a note of the URL for the Dataverse organization.</span></span> <span data-ttu-id="53ef7-134">URL-adressen kan till exempel vara `https://org42b2b3d3.crm.dynamics.com`.</span><span class="sxs-lookup"><span data-stu-id="53ef7-134">For example, the URL might be `https://org42b2b3d3.crm.dynamics.com`.</span></span>
+
+3. <span data-ttu-id="53ef7-135">Om du planerar att använda kassaflödesprognoser eller budgetprognoser, följer du dessa steg för att uppdatera anteckningsgränsen för organisationen till minst 50 MB:</span><span class="sxs-lookup"><span data-stu-id="53ef7-135">If you plan to use the Cash flow forecasts or Budget forecasts feature, follow these steps to update the annotation limit for your organization to at least 50 megabytes (MB):</span></span>
+
+    1. <span data-ttu-id="53ef7-136">Öppna [Power Apps-portal](https://make.powerapps.com).</span><span class="sxs-lookup"><span data-stu-id="53ef7-136">Open the [Power Apps portal](https://make.powerapps.com).</span></span>
+    2. <span data-ttu-id="53ef7-137">Välj den miljö som du just har skapat och välj sedan **Avancerade inställningar**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-137">Select the environment that you just created, and then select **Advanced settings**.</span></span>
+    3. <span data-ttu-id="53ef7-138">Välj **Inställningar \> E-postkonfiguration**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-138">Select **Settings \> Email Configuration**.</span></span>
+    4. <span data-ttu-id="53ef7-139">Ändra värdet för fältet **Maximal filstorlek** till **51 200**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-139">Change the value of the **Maximum file size** field to **51,200**.</span></span> <span data-ttu-id="53ef7-140">(Värdet uttrycks i kilobyte \[KB\].)</span><span class="sxs-lookup"><span data-stu-id="53ef7-140">(The value is expressed in kilobytes \[KB\].)</span></span>
+    5. <span data-ttu-id="53ef7-141">Välj **OK** för att spara ändringarna.</span><span class="sxs-lookup"><span data-stu-id="53ef7-141">Select **OK** to save your changes.</span></span>
+
+## <a name="configure-the-azure-setup"></a><span data-ttu-id="53ef7-142">Konfigurera Azure-inställningen</span><span class="sxs-lookup"><span data-stu-id="53ef7-142">Configure the Azure setup</span></span>
+
+### <a name="enter-the-dataverse-directory-id-and-the-users-azure-ad-object-id"></a><span data-ttu-id="53ef7-143">Ange Dataverse-katalog-ID och användarens Azure AD-objekt-ID</span><span class="sxs-lookup"><span data-stu-id="53ef7-143">Enter the Dataverse directory ID and the user's Azure AD object ID</span></span>
+
+1. <span data-ttu-id="53ef7-144">Ange Dataverse-katalog-ID:</span><span class="sxs-lookup"><span data-stu-id="53ef7-144">Enter the Dataverse directory ID:</span></span>
+
+    1. <span data-ttu-id="53ef7-145">Öppna [Azure-portalen](https://portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="53ef7-145">Open the [Azure portal](https://portal.azure.com).</span></span>
+    2. <span data-ttu-id="53ef7-146">Logga in genom att använda det användar-ID som användes för att skapa Dataverse-miljön.</span><span class="sxs-lookup"><span data-stu-id="53ef7-146">Sign in by using the user ID that was used to create the Dataverse environment.</span></span>
+    3. <span data-ttu-id="53ef7-147">Gå till **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-147">Go to **Azure Active Directory**.</span></span>
+    4. <span data-ttu-id="53ef7-148">Kopiera värdet för **Klientorganisations-ID**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-148">Copy the **Tenant ID** value.</span></span>
+
+2. <span data-ttu-id="53ef7-149">Ange användarens Azure Active Directory-objekt-ID (Azure AD):</span><span class="sxs-lookup"><span data-stu-id="53ef7-149">Enter the user's Azure Active Directory (Azure AD) object ID:</span></span>
+
+    1. <span data-ttu-id="53ef7-150">I [Azure-portalen](https://portal.azure.com), gå till **Användare** och sök efter användaren via e-postadressen.</span><span class="sxs-lookup"><span data-stu-id="53ef7-150">In the [Azure portal](https://portal.azure.com), go to **Users**, and search for the user by email address.</span></span>
+    2. <span data-ttu-id="53ef7-151">Välj användarens namn.</span><span class="sxs-lookup"><span data-stu-id="53ef7-151">Select the user's name.</span></span>
+    3. <span data-ttu-id="53ef7-152">Kopiera värdet för **Objekt-ID**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-152">Copy the **Object ID** value.</span></span>
+
+### <a name="use-azure-cloud-shell-to-set-up-finance-insights-data-lake-resources"></a><span data-ttu-id="53ef7-153">Använd Azure Cloud Shell för att konfigurera Ekonomiska insikters Data Lake-resurser</span><span class="sxs-lookup"><span data-stu-id="53ef7-153">Use Azure Cloud Shell to set up Finance insights Data Lake resources</span></span>
+
+# <a name="use-a-windows-powershell-script"></a>[<span data-ttu-id="53ef7-154">Använd ett Windows PowerShell-skript</span><span class="sxs-lookup"><span data-stu-id="53ef7-154">Use a Windows PowerShell script</span></span>](#tab/use-a-powershell-script)
+
+<span data-ttu-id="53ef7-155">Ett Windows PowerShell-skript har angetts så att du enkelt kan ställa in de Azure-resurser som beskrivs i [Konfigurera export till Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).</span><span class="sxs-lookup"><span data-stu-id="53ef7-155">A Windows PowerShell script has been provided, so that you can easily set up the Azure resources that are described in [Configure export to Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).</span></span> <span data-ttu-id="53ef7-156">Om du föredrar att göra manuella inställningar hoppar du över den här proceduren och fortsätter med proceduren i avsnittet [Manuell konfiguration](#manual-setup).</span><span class="sxs-lookup"><span data-stu-id="53ef7-156">If you prefer to do manual setup, skip this procedure, and continue with the procedure in the [Manual setup](#manual-setup) section.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="e5722-116">Kör skriptet genom att öppna PowerShell på datorn.</span><span class="sxs-lookup"><span data-stu-id="e5722-116">Open PowerShell on your PC to run the script.</span></span> <span data-ttu-id="e5722-117">Du kan behöva PowerShell version 5.</span><span class="sxs-lookup"><span data-stu-id="e5722-117">You may need PowerShell version 5.</span></span> <span data-ttu-id="e5722-118">Microsoft Azure CLI-alternativet "Pröva" kanske inte fungerar.</span><span class="sxs-lookup"><span data-stu-id="e5722-118">The Microsoft Azure CLI "Try it" option may not work.</span></span>
+> <span data-ttu-id="53ef7-157">Kör PowerShell-skriptet genom att följa stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="53ef7-157">Follow the steps below to run the PowerShell script.</span></span> <span data-ttu-id="53ef7-158">Azure CLI-alternativet "Pröva" eller att köra skriptet på datorn fungerar kanske inte.</span><span class="sxs-lookup"><span data-stu-id="53ef7-158">The Azure CLI "Try it" option, or running the script on your PC may not work.</span></span>
 
-# <a name="manual-configuration-steps"></a>[<span data-ttu-id="e5722-119">Manuella konfigurationssteg</span><span class="sxs-lookup"><span data-stu-id="e5722-119">Manual configuration steps</span></span>](#tab/configuration-steps)
+<span data-ttu-id="53ef7-159">Följ dessa steg för att konfigurera Azure med hjälp av Windows PowerShell-skriptet.</span><span class="sxs-lookup"><span data-stu-id="53ef7-159">Follow these steps to configure Azure by using the Windows PowerShell script.</span></span> <span data-ttu-id="53ef7-160">Du måste ha behörighet att skapa en Azure-resursgrupp, Azure-resurser och ett Azure AD-program.</span><span class="sxs-lookup"><span data-stu-id="53ef7-160">You must have rights to create an Azure resource group, Azure resources, and an Azure AD application.</span></span> <span data-ttu-id="53ef7-161">Information om vilka behörigheter som krävs finns i [Kontrollera Azure AD-behörigheter](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).</span><span class="sxs-lookup"><span data-stu-id="53ef7-161">For information about the required permissions, see [Check Azure AD permissions](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).</span></span>
 
-1. <span data-ttu-id="e5722-120">Öppna [Power Platform administrationscenter](https://admin.powerplatform.microsoft.com/) och skapa en ny Dataverse-miljö i samma Active Directory-klientorganisation genom att följa stegen nedan:</span><span class="sxs-lookup"><span data-stu-id="e5722-120">Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and follow these steps to create a new Dataverse environment in the same Active Directory tenant:</span></span>
+1. <span data-ttu-id="53ef7-162">I [Azure-portalen](https://portal.azure.com), gå till din mål-Azure-prenumeration.</span><span class="sxs-lookup"><span data-stu-id="53ef7-162">In the [Azure portal](https://portal.azure.com), go to your target Azure subscription.</span></span> <span data-ttu-id="53ef7-163">Välj knappen **Cloud Shell** till höger om fältet **Sök**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-163">Select the **Cloud Shell** button to the right of the **Search** field.</span></span>
+2. <span data-ttu-id="53ef7-164">Välj **PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-164">Select **PowerShell**.</span></span>
+3. <span data-ttu-id="53ef7-165">Skapa lagringsutrymme om du uppmanas göra det.</span><span class="sxs-lookup"><span data-stu-id="53ef7-165">Create storage if you're prompted to do so.</span></span>
+4. <span data-ttu-id="53ef7-166">Gå till fliken **Azure CLI** och välj **Kopiera**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-166">Go to the **Azure CLI** tab and select **Copy**.</span></span>  
+5. <span data-ttu-id="53ef7-167">Öppna Anteckningar och klistra in PowerShell-skriptet.</span><span class="sxs-lookup"><span data-stu-id="53ef7-167">Open Notepad and paste the PowerShell script.</span></span> <span data-ttu-id="53ef7-168">Spara filen som ConfigureDataLake.ps1.</span><span class="sxs-lookup"><span data-stu-id="53ef7-168">Save the file as ConfigureDataLake.ps1.</span></span>
+6. <span data-ttu-id="53ef7-169">Ladda upp Windows PowerShell-skriptet till sessionen med hjälp av menyalternativet för uppladdning Cloud Shell.</span><span class="sxs-lookup"><span data-stu-id="53ef7-169">Upload the Windows PowerShell script to the session using the menu option for upload in Cloud Shell.</span></span>
+7. <span data-ttu-id="53ef7-170">Kör skriptet .\ConfigureDataLake.ps1.</span><span class="sxs-lookup"><span data-stu-id="53ef7-170">Run the script .\ConfigureDataLake.ps1.</span></span>
+8. <span data-ttu-id="53ef7-171">Kör skriptet genom att följa anvisningarna.</span><span class="sxs-lookup"><span data-stu-id="53ef7-171">Follow the prompts to run the script.</span></span>
+9. <span data-ttu-id="53ef7-172">Installera tillägget **Exportera till Data Lake** i LCS med hjälp av informationen i skriptets utdata.</span><span class="sxs-lookup"><span data-stu-id="53ef7-172">Use the information from the script output to install the **Export to Data Lake** add-in in LCS.</span></span>
+10. <span data-ttu-id="53ef7-173">Använd informationen från skriptets utdata för att aktivera entitetsarkivet på sidan **Dataanslutningar** i Finance (**Systemadministration \> Systemparametrar \> Dataanslutningar**).</span><span class="sxs-lookup"><span data-stu-id="53ef7-173">Use the information from the script output to enable the entity store on the **Data connections** page in Finance (**System administration \> System parameters \> Data connections**).</span></span>
 
-    1. <span data-ttu-id="e5722-121">Öppna sidan **Miljöer**.</span><span class="sxs-lookup"><span data-stu-id="e5722-121">Open the **Environments** page.</span></span>
+### <a name="manual-setup"></a><span data-ttu-id="53ef7-174">Manuell konfiguration</span><span class="sxs-lookup"><span data-stu-id="53ef7-174">Manual setup</span></span>
 
-        <span data-ttu-id="e5722-122">[![Sidan Miljöer](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)</span><span class="sxs-lookup"><span data-stu-id="e5722-122">[![Environments page](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)</span></span>
+#### <a name="add-applications-to-the-azure-ad-tenant"></a><span data-ttu-id="53ef7-175">Lägg till program i Azure AD-klientorganisationen</span><span class="sxs-lookup"><span data-stu-id="53ef7-175">Add applications to the Azure AD tenant</span></span>
 
-    2. <span data-ttu-id="e5722-123">Välj **Ny miljö**.</span><span class="sxs-lookup"><span data-stu-id="e5722-123">Select **New environment**.</span></span>
-    3. <span data-ttu-id="e5722-124">I fältet **Typ**, välj **Sandbox**.</span><span class="sxs-lookup"><span data-stu-id="e5722-124">In the **Type** field, select **Sandbox**.</span></span>
-    4. <span data-ttu-id="e5722-125">Ange alternativet **Skapa databas** till **Ja**.</span><span class="sxs-lookup"><span data-stu-id="e5722-125">Set the **Create Database** option to **Yes**.</span></span>
-    5. <span data-ttu-id="e5722-126">Välj **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="e5722-126">Select **Next**.</span></span>
-    6. <span data-ttu-id="e5722-127">Välj språk och valuta för organisationen.</span><span class="sxs-lookup"><span data-stu-id="e5722-127">Select the language and currency for your organization.</span></span>
-    7. <span data-ttu-id="e5722-128">Acceptera standardvärden i övriga fält.</span><span class="sxs-lookup"><span data-stu-id="e5722-128">Accept the default values for the other fields.</span></span>
-    8. <span data-ttu-id="e5722-129">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="e5722-129">Select **Save**.</span></span>
-    9. <span data-ttu-id="e5722-130">Uppdatera sidan **Miljöer**.</span><span class="sxs-lookup"><span data-stu-id="e5722-130">Refresh the **Environments** page.</span></span>
-    10. <span data-ttu-id="e5722-131">Vänta tills värdet i **Tillstånd** har uppdaterats till **Klart**.</span><span class="sxs-lookup"><span data-stu-id="e5722-131">Wait until the value of the **State** field is updated to **Ready**.</span></span>
-    11. <span data-ttu-id="e5722-132">Gör en notering om Dataverse-organisations-ID.</span><span class="sxs-lookup"><span data-stu-id="e5722-132">Make a note of the Dataverse organization ID.</span></span>
-    12. <span data-ttu-id="e5722-133">Välj miljön och välj **Inställningar**.</span><span class="sxs-lookup"><span data-stu-id="e5722-133">Select the environment, and then select **Settings**.</span></span>
-    13. <span data-ttu-id="e5722-134">Välj **Resurser \> Alla äldre inställningar**.</span><span class="sxs-lookup"><span data-stu-id="e5722-134">Select **Resources \> All Legacy Settings**.</span></span>
-    14. <span data-ttu-id="e5722-135">Välj **Inställningar** i det övre navigeringsfältet och välj **Anpassningar**.</span><span class="sxs-lookup"><span data-stu-id="e5722-135">On the top navigation bar, select **Settings**, and then select **Customizations**.</span></span>
-    15. <span data-ttu-id="e5722-136">Välj **Utvecklarresurser**.</span><span class="sxs-lookup"><span data-stu-id="e5722-136">Select **Developer Resources**.</span></span>
-    16. <span data-ttu-id="e5722-137">Kopiera värdet för **Organisations-ID för Dataverse**.</span><span class="sxs-lookup"><span data-stu-id="e5722-137">Copy the **Dataverse organization ID** value.</span></span>
-    17. <span data-ttu-id="e5722-138">Notera URL:en till Dataverse-organisationen i webbläsarens adressfält.</span><span class="sxs-lookup"><span data-stu-id="e5722-138">In the browser's address bar, make a note of the URL for the Dataverse organization.</span></span> <span data-ttu-id="e5722-139">URL-adressen kan till exempel vara `https://org42b2b3d3.crm.dynamics.com`.</span><span class="sxs-lookup"><span data-stu-id="e5722-139">For example, the URL might be `https://org42b2b3d3.crm.dynamics.com`.</span></span>
+1. <span data-ttu-id="53ef7-176">I [Azure-portalen](https://portal.azure.com), gå till **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-176">In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**.</span></span>
+2. <span data-ttu-id="53ef7-177">Välj **Hantera \> Företagsprogram**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-177">Select **Manage \> Enterprise applications**.</span></span>
+3. <span data-ttu-id="53ef7-178">Sök efter följande program med app-ID.</span><span class="sxs-lookup"><span data-stu-id="53ef7-178">Search for the following applications by app ID.</span></span>
 
-2. <span data-ttu-id="e5722-140">Om du planerar att använda kassaflödesprognoser eller budgetprognoser, följer du dessa steg för att uppdatera anteckningsgränsen för organisationen till minst 50 MB:</span><span class="sxs-lookup"><span data-stu-id="e5722-140">If you plan to use the Cash flow forecasts or Budget forecasts feature, follow these steps to update the annotation limit for your organization to at least 50 megabytes (MB):</span></span>
-
-    1. <span data-ttu-id="e5722-141">Öppna [Power Apps-portal](https://make.powerapps.com).</span><span class="sxs-lookup"><span data-stu-id="e5722-141">Open the [Power Apps portal](https://make.powerapps.com).</span></span>
-    2. <span data-ttu-id="e5722-142">Välj den miljö som du just har skapat och välj sedan **Avancerade inställningar**.</span><span class="sxs-lookup"><span data-stu-id="e5722-142">Select the environment that you just created, and then select **Advanced settings**.</span></span>
-    3. <span data-ttu-id="e5722-143">Välj **Inställningar \> E-postkonfiguration**.</span><span class="sxs-lookup"><span data-stu-id="e5722-143">Select **Settings \> Email Configuration**.</span></span>
-    4. <span data-ttu-id="e5722-144">Ändra värdet för fältet **Maximal filstorlek** till **51 200**.</span><span class="sxs-lookup"><span data-stu-id="e5722-144">Change the value of the **Maximum file size** field to **51,200**.</span></span> <span data-ttu-id="e5722-145">(Värdet uttrycks i kilobyte \[KB\].)</span><span class="sxs-lookup"><span data-stu-id="e5722-145">(The value is expressed in kilobytes \[KB\].)</span></span>
-    5. <span data-ttu-id="e5722-146">Välj **OK** för att spara ändringarna.</span><span class="sxs-lookup"><span data-stu-id="e5722-146">Select **OK** to save your changes.</span></span>
-
-# <a name="windows-powershell-configuration-script"></a>[<span data-ttu-id="e5722-147">Konfigurationsskript för Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="e5722-147">Windows PowerShell configuration script</span></span>](#tab/powershell-configuration-script)
-
-```azurecli-interactive
-Write-Output 'The following modules need to be present for execution of this script:'
-Write-Output '  Microsoft.PowerApps.Administration.PowerShell'
-Write-Output '  Microsoft.PowerApps.PowerShell'
-Write-Output '  Microsoft.Xrm.Tooling.CrmConnector.PowerShell'
-
-try {
-    $moduleConsent = Read-Host 'Is it ok to install or update these modules as needed? (yes/no)'
-    if ($moduleConsent -ne 'yes' -and $moduleConsent -ne 'y') {
-        Write-Warning 'User declined to install required modules.'
-        return
-    }
-
-    $module = 'Microsoft.PowerApps.Administration.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '2.0.61' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '2.0.61' -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    $module = 'Microsoft.PowerApps.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '1.0.9' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '1.0.9' -AllowClobber -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    $module = 'Microsoft.Xrm.Tooling.CrmConnector.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '3.3.0.892' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '3.3.0.892' -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    Write-Output '================================================================================='
-
-    $useMfa = $false
-    $useMfaPrompt = Read-Host "Does your organization require the use of multi-factor authentication? (yes/no)"
-    if ($useMfaPrompt -eq 'yes' -or $useMfaPrompt -eq 'y') {
-        $useMfa = $true
-    }
-    if(-not $useMfa) {
-        $credential = Get-Credential -Message 'Power Apps Credential'
-    }
-
-    $orgFriendlyName = Read-Host "Enter the name of the CDS Organization to use or create: (blank for 'FinanceInsightsOrg')"
-    if ($orgFriendlyName.Trim() -eq '') {
-        $orgFriendlyName = 'FinanceInsightsOrg'
-    }
-
-    $isDefaultOrgPrompt = Read-Host ("Is '" + $orgFriendlyName + "' the default organization for your tenant? (yes/no)")
-    if ($isDefaultOrgPrompt -eq 'yes' -or $isDefaultOrgPrompt -eq 'y') {
-        $isDefaultOrg = $true
-    }
-
-    if ($credential) {
-        Add-PowerAppsAccount -Username $credential.UserName -Password $credential.Password
-    }
-    else {
-        Add-PowerAppsAccount
-    }
-
-    if ($isDefaultOrg) {
-        $orgMatch = ('(default)')
-        $environment = (Get-AdminPowerAppEnvironment | Where-Object { $_.IsDefault -eq $true })
-    }
-    else {
-        $orgMatch = ('{0} (*)' -f $orgFriendlyName)
-        $environment = (Get-AdminPowerAppEnvironment | Where-Object { ($_.IsDefault -eq $false -and ($_.DisplayName -eq $orgFriendlyName -or $_.DisplayName -like $orgMatch)) })
-    }
-
-    $getCrmOrgParams = @{ 'OnlineType' = 'Office365' }
-    if ($credential) {
-        $getCrmOrgParams.Credential = $credential
-    }
-
-    if ($null -eq $environment) {
-        Write-Output '================================================================================='
-        Write-Output 'PowerApps environment not found. A new one will be provisioned.'
-
-        $invalid = 'invalid'
-
-        $location = $invalid
-        $cdsLocations = (Get-AdminPowerAppEnvironmentLocations | Select-Object LocationName).LocationName
-        while (-not ($location -in $cdsLocations)) {
-            $location = (Read-Host -Prompt "Enter the location in which to create the new PowerApps environment: ('help' to see values)")
-            if ($location -eq 'help') {
-                $cdsLocations
-            }
-        }
-
-        $currency = $invalid
-        $cdsCurrencies = (Get-AdminPowerAppCdsDatabaseCurrencies -Location $location | Select-Object CurrencyName).CurrencyName
-        while ($currency -ne '' -and -not ($currency -in $cdsCurrencies)) {
-            $currency = (Read-Host -Prompt "Enter the currency to use for the new PowerApps environment: ('help' to see values, blank for default)")
-            if ($currency -eq 'help') {
-                $cdsCurrencies
-            }
-        }
-
-        $language = $invalid
-        $cdsLanguages = (Get-AdminPowerAppCdsDatabaseLanguages -Location $location | Select-Object LanguageName, LanguageDisplayName)
-        while ($language -ne '' -and -not ($language -in $cdsLanguages.LanguageName)) {
-            $language = (Read-Host -Prompt "Enter the language name to use for the new PowerApps environment: ('help' to see values, blank for default)")
-            if ($language -eq 'help') {
-                $cdsLanguages | Format-Table -Property LanguageName, LanguageDisplayName
-            }
-        }
-
-        Write-Output 'Provisioning PowerApps environment. This may take several minutes.'
-
-        $sleep = 15
-
-        $envParams = @{ 'DisplayName' = $orgFriendlyName; 'EnvironmentSku' = 'Sandbox'; 'ProvisionDatabase' = $true; 'Location' = $location; 'WaitUntilFinished' = $true }
-        if ($language.Trim() -ne '') {
-            $envParams.LanguageName = $language
-        }
-        if ($currency.Trim() -ne '') {
-            $envParams.CurrencyName = $currency
-        }
-        $newEnvResult = New-AdminPowerAppEnvironment @envParams
-        if (($null -eq $newEnvResult) -or ($newEnvResult.CommonDataServiceDatabaseProvisioningState -ne 'Succeeded')) {
-            Write-Warning 'Failed to create to PowerApps environment'
-            if ($null -ne $newEnvResult) {
-                $newEnvResult
-            }
-        }
-        else {
-            $environment = $null
-            $retryCount = 0
-            while (($null -eq $environment) -and ($retryCount -lt 5)) {
-                Start-Sleep -Seconds $sleep
-                $environment = (Get-AdminPowerAppEnvironment | Where-Object { ($_.DisplayName -like $orgMatch) })
-            }
-            Write-Output ("Provisioned PowerApps environment with name: '" + $environment.DisplayName + "'")
-        }
-
-        Write-Output 'Waiting for CDS organization provisioning. This may take several minutes.'
-        if (-not $credential) {
-            $sleep = 120
-            Write-Output 'You may be prompted for credentials multiple times while checking the status of the provisioning.'
-        }
-
-        while ($null -eq $crmOrg) {
-            Start-Sleep -Seconds $sleep
-            $crmOrg = (Get-CrmOrganizations @getCrmOrgParams) | Where-Object { $_.FriendlyName -eq $orgFriendlyName }
-        }
-    }
-    else {
-        $crmOrgs = Get-CrmOrganizations @getCrmOrgParams
-        if ($UseDefaultOrganization -eq $true) {
-            $crmOrg = $crmOrgs | Where-Object { $_.FriendlyName -match $orgMatch }
-        }
-        else {
-            $crmOrg = $crmOrgs | Where-Object { $_.FriendlyName -eq $orgFriendlyName }
-        }
-    }
-
-    Write-Output '================================================================================='
-    Write-Output 'Values for PowerAI LCS Add-In:'
-    Write-Output ("  CDS organization url:             " + $crmOrg.WebApplicationUrl)
-    Write-Output ("  CDS organization ID:              " + $crmOrg.OrganizationId)
-}
-catch {
-    Write-Error $_.Exception.Message
-    Write-Warning $_.Exception.StackTrace
-    $inner = $_.Exception.InnerException
-    while ($null -ne $inner) {
-        Write-Output 'Inner Exception:'
-        Write-Error $_.Exception.Message
-        Write-Warning $_.Exception.StackTrace
-        $inner = $inner.InnerException
-    }
-}
-```
----
-
-## <a name="configure-the-azure-setup"></a><span data-ttu-id="e5722-148">Konfigurera Azure-inställningen</span><span class="sxs-lookup"><span data-stu-id="e5722-148">Configure the Azure setup</span></span>
-
-### <a name="enter-the-dataverse-directory-id-and-the-users-azure-ad-object-id"></a><span data-ttu-id="e5722-149">Ange Dataverse-katalog-ID och användarens Azure AD-objekt-ID</span><span class="sxs-lookup"><span data-stu-id="e5722-149">Enter the Dataverse directory ID and the user's Azure AD object ID</span></span>
-
-1. <span data-ttu-id="e5722-150">Ange Dataverse-katalog-ID:</span><span class="sxs-lookup"><span data-stu-id="e5722-150">Enter the Dataverse directory ID:</span></span>
-
-    1. <span data-ttu-id="e5722-151">Öppna [Azure-portalen](https://portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="e5722-151">Open the [Azure portal](https://portal.azure.com).</span></span>
-    2. <span data-ttu-id="e5722-152">Logga in genom att använda det användar-ID som användes för att skapa Dataverse-miljön.</span><span class="sxs-lookup"><span data-stu-id="e5722-152">Sign in by using the user ID that was used to create the Dataverse environment.</span></span>
-    3. <span data-ttu-id="e5722-153">Gå till **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="e5722-153">Go to **Azure Active Directory**.</span></span>
-    4. <span data-ttu-id="e5722-154">Kopiera värdet för **Klientorganisations-ID**.</span><span class="sxs-lookup"><span data-stu-id="e5722-154">Copy the **Tenant ID** value.</span></span>
-
-2. <span data-ttu-id="e5722-155">Ange användarens Azure Active Directory-objekt-ID (Azure AD):</span><span class="sxs-lookup"><span data-stu-id="e5722-155">Enter the user's Azure Active Directory (Azure AD) object ID:</span></span>
-
-    1. <span data-ttu-id="e5722-156">I [Azure-portalen](https://portal.azure.com), gå till **Användare** och sök efter användaren via e-postadressen.</span><span class="sxs-lookup"><span data-stu-id="e5722-156">In the [Azure portal](https://portal.azure.com), go to **Users**, and search for the user by email address.</span></span>
-    2. <span data-ttu-id="e5722-157">Välj användarens namn.</span><span class="sxs-lookup"><span data-stu-id="e5722-157">Select the user's name.</span></span>
-    3. <span data-ttu-id="e5722-158">Kopiera värdet för **Objekt-ID**.</span><span class="sxs-lookup"><span data-stu-id="e5722-158">Copy the **Object ID** value.</span></span>
-
-### <a name="use-azure-cloud-shell-to-set-up-finance-insights-data-lake-resources"></a><span data-ttu-id="e5722-159">Använd Azure Cloud Shell för att konfigurera Ekonomiska insikters Data Lake-resurser</span><span class="sxs-lookup"><span data-stu-id="e5722-159">Use Azure Cloud Shell to set up Finance insights Data Lake resources</span></span>
-
-# <a name="use-a-windows-powershell-script"></a>[<span data-ttu-id="e5722-160">Använd ett Windows PowerShell-skript</span><span class="sxs-lookup"><span data-stu-id="e5722-160">Use a Windows PowerShell script</span></span>](#tab/use-a-powershell-script)
-
-<span data-ttu-id="e5722-161">Ett Windows PowerShell-skript har angetts så att du enkelt kan ställa in de Azure-resurser som beskrivs i [Konfigurera export till Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).</span><span class="sxs-lookup"><span data-stu-id="e5722-161">A Windows PowerShell script has been provided, so that you can easily set up the Azure resources that are described in [Configure export to Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).</span></span> <span data-ttu-id="e5722-162">Om du föredrar att göra manuella inställningar hoppar du över den här proceduren och fortsätter med proceduren i avsnittet [Manuell konfiguration](#manual-setup).</span><span class="sxs-lookup"><span data-stu-id="e5722-162">If you prefer to do manual setup, skip this procedure, and continue with the procedure in the [Manual setup](#manual-setup) section.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="e5722-163">Kör PowerShell-skriptet genom att följa stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="e5722-163">Follow the steps below to run the PowerShell script.</span></span> <span data-ttu-id="e5722-164">Azure CLI-alternativet "Pröva" eller att köra skriptet på datorn fungerar kanske inte.</span><span class="sxs-lookup"><span data-stu-id="e5722-164">The Azure CLI "Try it" option, or running the script on your PC may not work.</span></span>
-
-<span data-ttu-id="e5722-165">Följ dessa steg för att konfigurera Azure med hjälp av Windows PowerShell-skriptet.</span><span class="sxs-lookup"><span data-stu-id="e5722-165">Follow these steps to configure Azure by using the Windows PowerShell script.</span></span> <span data-ttu-id="e5722-166">Du måste ha behörighet att skapa en Azure-resursgrupp, Azure-resurser och ett Azure AD-program.</span><span class="sxs-lookup"><span data-stu-id="e5722-166">You must have rights to create an Azure resource group, Azure resources, and an Azure AD application.</span></span> <span data-ttu-id="e5722-167">Information om vilka behörigheter som krävs finns i [Kontrollera Azure AD-behörigheter](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).</span><span class="sxs-lookup"><span data-stu-id="e5722-167">For information about the required permissions, see [Check Azure AD permissions](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).</span></span>
-
-1. <span data-ttu-id="e5722-168">I [Azure-portalen](https://portal.azure.com), gå till din mål-Azure-prenumeration.</span><span class="sxs-lookup"><span data-stu-id="e5722-168">In the [Azure portal](https://portal.azure.com), go to your target Azure subscription.</span></span> <span data-ttu-id="e5722-169">Välj knappen **Cloud Shell** till höger om fältet **Sök**.</span><span class="sxs-lookup"><span data-stu-id="e5722-169">Select the **Cloud Shell** button to the right of the **Search** field.</span></span>
-2. <span data-ttu-id="e5722-170">Välj **PowerShell**.</span><span class="sxs-lookup"><span data-stu-id="e5722-170">Select **PowerShell**.</span></span>
-3. <span data-ttu-id="e5722-171">Skapa lagringsutrymme om du uppmanas göra det.</span><span class="sxs-lookup"><span data-stu-id="e5722-171">Create storage, if you're prompted to do so.</span></span> <span data-ttu-id="e5722-172">Ladda sedan upp Windows PowerShell-skriptet till sessionen.</span><span class="sxs-lookup"><span data-stu-id="e5722-172">Then upload the Windows PowerShell script to the session.</span></span>
-4. <span data-ttu-id="e5722-173">Kör skriptet.</span><span class="sxs-lookup"><span data-stu-id="e5722-173">Run the script.</span></span>
-5. <span data-ttu-id="e5722-174">Kör skriptet genom att följa anvisningarna.</span><span class="sxs-lookup"><span data-stu-id="e5722-174">Follow the prompts to run the script.</span></span>
-6. <span data-ttu-id="e5722-175">Installera tillägget **Exportera till Data Lake** i LCS med hjälp av informationen i skriptets utdata.</span><span class="sxs-lookup"><span data-stu-id="e5722-175">Use the information from the script output to install the **Export to Data Lake** add-in in LCS.</span></span>
-7. <span data-ttu-id="e5722-176">Använd informationen från skriptets utdata för att aktivera entitetsarkivet på sidan **Dataanslutningar** i Finance (**Systemadministration \> Systemparametrar \> Dataanslutningar**).</span><span class="sxs-lookup"><span data-stu-id="e5722-176">Use the information from the script output to enable the entity store on the **Data connections** page in Finance (**System administration \> System parameters \> Data connections**).</span></span>
-
-### <a name="manual-setup"></a><span data-ttu-id="e5722-177">Manuell konfiguration</span><span class="sxs-lookup"><span data-stu-id="e5722-177">Manual setup</span></span>
-
-#### <a name="add-applications-to-the-azure-ad-tenant"></a><span data-ttu-id="e5722-178">Lägg till program i Azure AD-klientorganisationen</span><span class="sxs-lookup"><span data-stu-id="e5722-178">Add applications to the Azure AD tenant</span></span>
-
-1. <span data-ttu-id="e5722-179">I [Azure-portalen](https://portal.azure.com), gå till **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="e5722-179">In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**.</span></span>
-2. <span data-ttu-id="e5722-180">Välj **Hantera \> Företagsprogram**.</span><span class="sxs-lookup"><span data-stu-id="e5722-180">Select **Manage \> Enterprise applications**.</span></span>
-3. <span data-ttu-id="e5722-181">Sök efter följande program med app-ID.</span><span class="sxs-lookup"><span data-stu-id="e5722-181">Search for the following applications by app ID.</span></span>
-
-    | <span data-ttu-id="e5722-182">Ansökning</span><span class="sxs-lookup"><span data-stu-id="e5722-182">Application</span></span>                              | <span data-ttu-id="e5722-183">App-ID</span><span class="sxs-lookup"><span data-stu-id="e5722-183">App ID</span></span>                               |
+    | <span data-ttu-id="53ef7-179">Ansökning</span><span class="sxs-lookup"><span data-stu-id="53ef7-179">Application</span></span>                              | <span data-ttu-id="53ef7-180">App-ID</span><span class="sxs-lookup"><span data-stu-id="53ef7-180">App ID</span></span>                               |
     |------------------------------------------|--------------------------------------|
-    | <span data-ttu-id="e5722-184">Microsoft Dynamics ERP Microservices</span><span class="sxs-lookup"><span data-stu-id="e5722-184">Microsoft Dynamics ERP Microservices</span></span>     | <span data-ttu-id="e5722-185">0cdb527f-a8d1-4bf8-9436-b352c68682b2</span><span class="sxs-lookup"><span data-stu-id="e5722-185">0cdb527f-a8d1-4bf8-9436-b352c68682b2</span></span> |
-    | <span data-ttu-id="e5722-186">Microsoft Dynamics ERP Microservices CDS</span><span class="sxs-lookup"><span data-stu-id="e5722-186">Microsoft Dynamics ERP Microservices CDS</span></span> | <span data-ttu-id="e5722-187">703e2651-d3fc-48f5-942c-74274233dba8</span><span class="sxs-lookup"><span data-stu-id="e5722-187">703e2651-d3fc-48f5-942c-74274233dba8</span></span> |
-    | <span data-ttu-id="e5722-188">AI Builder Authorization Service</span><span class="sxs-lookup"><span data-stu-id="e5722-188">AI Builder Authorization Service</span></span>         | <span data-ttu-id="e5722-189">ad40333e-9910-4b61-b281-e3aeeb8c3ef3</span><span class="sxs-lookup"><span data-stu-id="e5722-189">ad40333e-9910-4b61-b281-e3aeeb8c3ef3</span></span> |
+    | <span data-ttu-id="53ef7-181">Microsoft Dynamics ERP Microservices</span><span class="sxs-lookup"><span data-stu-id="53ef7-181">Microsoft Dynamics ERP Microservices</span></span>     | <span data-ttu-id="53ef7-182">0cdb527f-a8d1-4bf8-9436-b352c68682b2</span><span class="sxs-lookup"><span data-stu-id="53ef7-182">0cdb527f-a8d1-4bf8-9436-b352c68682b2</span></span> |
+    | <span data-ttu-id="53ef7-183">Microsoft Dynamics ERP Microservices CDS</span><span class="sxs-lookup"><span data-stu-id="53ef7-183">Microsoft Dynamics ERP Microservices CDS</span></span> | <span data-ttu-id="53ef7-184">703e2651-d3fc-48f5-942c-74274233dba8</span><span class="sxs-lookup"><span data-stu-id="53ef7-184">703e2651-d3fc-48f5-942c-74274233dba8</span></span> |
+    | <span data-ttu-id="53ef7-185">AI Builder Authorization Service</span><span class="sxs-lookup"><span data-stu-id="53ef7-185">AI Builder Authorization Service</span></span>         | <span data-ttu-id="53ef7-186">ad40333e-9910-4b61-b281-e3aeeb8c3ef3</span><span class="sxs-lookup"><span data-stu-id="53ef7-186">ad40333e-9910-4b61-b281-e3aeeb8c3ef3</span></span> |
 
-<span data-ttu-id="e5722-190">Om du inte hittar något av ovanstående program gör du på följande sätt.</span><span class="sxs-lookup"><span data-stu-id="e5722-190">If you can't find any of the preceding applications, try the following steps.</span></span>
+<span data-ttu-id="53ef7-187">Om du inte hittar något av ovanstående program gör du på följande sätt.</span><span class="sxs-lookup"><span data-stu-id="53ef7-187">If you can't find any of the preceding applications, try the following steps.</span></span>
 
-1. <span data-ttu-id="e5722-191">Välj **Start**-menyn och sök efter **powershell** på den lokala datorn.</span><span class="sxs-lookup"><span data-stu-id="e5722-191">On your local machine, select the **Start** menu, and search for **powershell**.</span></span>
-2. <span data-ttu-id="e5722-192">Markera och håll (eller högerklicka) på **Windows PowerShell** och välj **Kör som administratör**.</span><span class="sxs-lookup"><span data-stu-id="e5722-192">Select and hold (or right-click) **Windows PowerShell**, and then select **Run as administrator**.</span></span>
-3. <span data-ttu-id="e5722-193">Kör följande kommando för att installera modulen **AzureAD**.</span><span class="sxs-lookup"><span data-stu-id="e5722-193">Run the following command to install the **AzureAD** module.</span></span>
+1. <span data-ttu-id="53ef7-188">Välj **Start**-menyn och sök efter **powershell** på den lokala datorn.</span><span class="sxs-lookup"><span data-stu-id="53ef7-188">On your local machine, select the **Start** menu, and search for **powershell**.</span></span>
+2. <span data-ttu-id="53ef7-189">Markera och håll (eller högerklicka) på **Windows PowerShell** och välj **Kör som administratör**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-189">Select and hold (or right-click) **Windows PowerShell**, and then select **Run as administrator**.</span></span>
+3. <span data-ttu-id="53ef7-190">Kör följande kommando för att installera modulen **AzureAD**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-190">Run the following command to install the **AzureAD** module.</span></span>
 
     `Install-Module -Name AzureAD`
 
-4. <span data-ttu-id="e5722-194">Om en NuGet-leverantör krävs för att du ska kunna fortsätta väljer **Y** för att installera den.</span><span class="sxs-lookup"><span data-stu-id="e5722-194">If a NuGet provider is required to continue, select **Y** to install it.</span></span>
-5. <span data-ttu-id="e5722-195">Om meddelandet "Untrusted repository" (Ej betrodd lagringsplats) visas väljer du **Y** för att fortsätta.</span><span class="sxs-lookup"><span data-stu-id="e5722-195">If an "Untrusted repository" message appears, select **Y** to continue.</span></span>
-6. <span data-ttu-id="e5722-196">Kör följande kommandon för varje program som måste läggas till för att du ska kunna lägga till programmet i Azure AD.</span><span class="sxs-lookup"><span data-stu-id="e5722-196">For each application that must be added, run the following commands to add the application to Azure AD.</span></span> <span data-ttu-id="e5722-197">Logga in som Azure AD-administratör när du uppmanas till det.</span><span class="sxs-lookup"><span data-stu-id="e5722-197">When you're prompted, sign in as the Azure AD administrator.</span></span>
+4. <span data-ttu-id="53ef7-191">Om en NuGet-leverantör krävs för att du ska kunna fortsätta väljer **Y** för att installera den.</span><span class="sxs-lookup"><span data-stu-id="53ef7-191">If a NuGet provider is required to continue, select **Y** to install it.</span></span>
+5. <span data-ttu-id="53ef7-192">Om meddelandet "Untrusted repository" (Ej betrodd lagringsplats) visas väljer du **Y** för att fortsätta.</span><span class="sxs-lookup"><span data-stu-id="53ef7-192">If an "Untrusted repository" message appears, select **Y** to continue.</span></span>
+6. <span data-ttu-id="53ef7-193">Kör följande kommandon för varje program som måste läggas till för att du ska kunna lägga till programmet i Azure AD.</span><span class="sxs-lookup"><span data-stu-id="53ef7-193">For each application that must be added, run the following commands to add the application to Azure AD.</span></span> <span data-ttu-id="53ef7-194">Logga in som Azure AD-administratör när du uppmanas till det.</span><span class="sxs-lookup"><span data-stu-id="53ef7-194">When you're prompted, sign in as the Azure AD administrator.</span></span>
 
     `Connect-AzureAD`
 
     `New-AzureADServicePrincipal –AppId <AppId>`
 
-#### <a name="create-azure-resources"></a><span data-ttu-id="e5722-198">Skapa Azure-resurser</span><span class="sxs-lookup"><span data-stu-id="e5722-198">Create Azure resources</span></span>
+#### <a name="create-azure-resources"></a><span data-ttu-id="53ef7-195">Skapa Azure-resurser</span><span class="sxs-lookup"><span data-stu-id="53ef7-195">Create Azure resources</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="e5722-199">Se till att du skapar följande resurser i samma Azure AD-instans som Dataverse-miljön.</span><span class="sxs-lookup"><span data-stu-id="e5722-199">Make sure that you create the following resources in the same Azure AD instance as the Dataverse environment.</span></span> <span data-ttu-id="e5722-200">Du kan inte använda resurser från en annan Azure AD-instans.</span><span class="sxs-lookup"><span data-stu-id="e5722-200">You can't use resources from a different Azure AD instance.</span></span>
+> <span data-ttu-id="53ef7-196">Se till att du skapar följande resurser i samma Azure AD-instans som Dataverse-miljön.</span><span class="sxs-lookup"><span data-stu-id="53ef7-196">Make sure that you create the following resources in the same Azure AD instance as the Dataverse environment.</span></span> <span data-ttu-id="53ef7-197">Du kan inte använda resurser från en annan Azure AD-instans.</span><span class="sxs-lookup"><span data-stu-id="53ef7-197">You can't use resources from a different Azure AD instance.</span></span>
 
-1. <span data-ttu-id="e5722-201">Skapa ett nytt lagringskonto:</span><span class="sxs-lookup"><span data-stu-id="e5722-201">Create a new storage account:</span></span>
+1. <span data-ttu-id="53ef7-198">Skapa ett nytt lagringskonto:</span><span class="sxs-lookup"><span data-stu-id="53ef7-198">Create a new storage account:</span></span>
 
-    1. <span data-ttu-id="e5722-202">Skapa ett lagringskonto i [Azure-portalen](https://portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="e5722-202">In the [Azure portal](https://portal.azure.com), create a storage account.</span></span>
-    2. <span data-ttu-id="e5722-203">I dialogrutan **Skapa lagringskonto**, ställ in följande fält:</span><span class="sxs-lookup"><span data-stu-id="e5722-203">In the **Create storage account** dialog box, set the following fields:</span></span>
+    1. <span data-ttu-id="53ef7-199">Skapa ett lagringskonto i [Azure-portalen](https://portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="53ef7-199">In the [Azure portal](https://portal.azure.com), create a storage account.</span></span>
+    2. <span data-ttu-id="53ef7-200">I dialogrutan **Skapa lagringskonto**, ställ in följande fält:</span><span class="sxs-lookup"><span data-stu-id="53ef7-200">In the **Create storage account** dialog box, set the following fields:</span></span>
 
-        - <span data-ttu-id="e5722-204">**Plats** – Välj det datacenter där din miljö finns.</span><span class="sxs-lookup"><span data-stu-id="e5722-204">**Location** – Select the data center where your environment is located.</span></span>
-        - <span data-ttu-id="e5722-205">**Prestanda** – Vi rekommenderar att du väljer **Standard**.</span><span class="sxs-lookup"><span data-stu-id="e5722-205">**Performance** – We recommend that you select **Standard**.</span></span>
-        - <span data-ttu-id="e5722-206">**Kontotyp** – Du måste välja **StorageV2**.</span><span class="sxs-lookup"><span data-stu-id="e5722-206">**Account kind** – You must select **StorageV2**.</span></span>
+        - <span data-ttu-id="53ef7-201">**Plats** – Välj det datacenter där din miljö finns.</span><span class="sxs-lookup"><span data-stu-id="53ef7-201">**Location** – Select the data center where your environment is located.</span></span>
+        - <span data-ttu-id="53ef7-202">**Prestanda** – Vi rekommenderar att du väljer **Standard**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-202">**Performance** – We recommend that you select **Standard**.</span></span>
+        - <span data-ttu-id="53ef7-203">**Kontotyp** – Du måste välja **StorageV2**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-203">**Account kind** – You must select **StorageV2**.</span></span>
 
-    3. <span data-ttu-id="e5722-207">I dialogrutan **Avancerade alternativ**, för alternativet **Data Lake Storage Gen2** väljer du **Aktivera** under funktionen **Hierarkiska namnrymder**.</span><span class="sxs-lookup"><span data-stu-id="e5722-207">In the **Advanced options** dialog box, for the **Data Lake storage Gen2** option, select **Enable** under the **Hierarchical namespaces** feature.</span></span> <span data-ttu-id="e5722-208">Om du inaktiverar den här funktionen kan du inte använda data som Finance and Operations-appar skriver med hjälp av tjänster som Power BI-dataflöden.</span><span class="sxs-lookup"><span data-stu-id="e5722-208">If you disable this feature, you can't consume data that Finance and Operations apps write by using services such as Power BI data flows.</span></span>
-    4. <span data-ttu-id="e5722-209">Välj **Granska och skapa**.</span><span class="sxs-lookup"><span data-stu-id="e5722-209">Select **Review and create**.</span></span> <span data-ttu-id="e5722-210">När distributionen har slutförts visas den nya resursen i Azure-portalen.</span><span class="sxs-lookup"><span data-stu-id="e5722-210">When the deployment is completed, the new resource will be shown in the Azure portal.</span></span>
-    5. <span data-ttu-id="e5722-211">Gå till det lagringskonto som du har skapat.</span><span class="sxs-lookup"><span data-stu-id="e5722-211">Go to the storage account that you created.</span></span>
-    6. <span data-ttu-id="e5722-212">Välj **Åtkomstnycklar** i menyn till vänster.</span><span class="sxs-lookup"><span data-stu-id="e5722-212">On the left menu, select **Access keys**.</span></span>
-    7. <span data-ttu-id="e5722-213">Kopiera och spara anslutningssträngen för antingen **Key1** eller **Key2**.</span><span class="sxs-lookup"><span data-stu-id="e5722-213">Copy and save the connection string for either **Key1** or **Key2**.</span></span>
-    8. <span data-ttu-id="e5722-214">Kopiera och spara namnet på lagringskontot.</span><span class="sxs-lookup"><span data-stu-id="e5722-214">Copy and save the storage account name.</span></span>
+    3. <span data-ttu-id="53ef7-204">I dialogrutan **Avancerade alternativ**, för alternativet **Data Lake Storage Gen2** väljer du **Aktivera** under funktionen **Hierarkiska namnrymder**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-204">In the **Advanced options** dialog box, for the **Data Lake storage Gen2** option, select **Enable** under the **Hierarchical namespaces** feature.</span></span> <span data-ttu-id="53ef7-205">Om du inaktiverar den här funktionen kan du inte använda data som Finance and Operations-appar skriver med hjälp av tjänster som Power BI-dataflöden.</span><span class="sxs-lookup"><span data-stu-id="53ef7-205">If you disable this feature, you can't consume data that Finance and Operations apps write by using services such as Power BI data flows.</span></span>
+    4. <span data-ttu-id="53ef7-206">Välj **Granska och skapa**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-206">Select **Review and create**.</span></span> <span data-ttu-id="53ef7-207">När distributionen har slutförts visas den nya resursen i Azure-portalen.</span><span class="sxs-lookup"><span data-stu-id="53ef7-207">When the deployment is completed, the new resource will be shown in the Azure portal.</span></span>
+    5. <span data-ttu-id="53ef7-208">Gå till det lagringskonto som du har skapat.</span><span class="sxs-lookup"><span data-stu-id="53ef7-208">Go to the storage account that you created.</span></span>
+    6. <span data-ttu-id="53ef7-209">Välj **Åtkomstnycklar** i menyn till vänster.</span><span class="sxs-lookup"><span data-stu-id="53ef7-209">On the left menu, select **Access keys**.</span></span>
+    7. <span data-ttu-id="53ef7-210">Kopiera och spara anslutningssträngen för antingen **Key1** eller **Key2**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-210">Copy and save the connection string for either **Key1** or **Key2**.</span></span>
+    8. <span data-ttu-id="53ef7-211">Kopiera och spara namnet på lagringskontot.</span><span class="sxs-lookup"><span data-stu-id="53ef7-211">Copy and save the storage account name.</span></span>
 
-2. <span data-ttu-id="e5722-215">Skapa en ny nyckelvalvresurs:</span><span class="sxs-lookup"><span data-stu-id="e5722-215">Create a new key vault:</span></span>
+2. <span data-ttu-id="53ef7-212">Skapa en ny nyckelvalvresurs:</span><span class="sxs-lookup"><span data-stu-id="53ef7-212">Create a new key vault:</span></span>
 
-    1. <span data-ttu-id="e5722-216">Skapa ett nyckelvalv i [Azure-portalen](https://portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="e5722-216">In the [Azure portal](https://portal.azure.com), create a key vault.</span></span>
-    2. <span data-ttu-id="e5722-217">I dialogrutan **Skapa nyckelvalv**, i fältet **Plats**, välj det datacenter där din miljö finns.</span><span class="sxs-lookup"><span data-stu-id="e5722-217">In the **Create key vault** dialog box, in the **Location** field, select the data center where your environment is located.</span></span>
-    3. <span data-ttu-id="e5722-218">När nyckelvalvet har skapats väljer du det i listan och väljer sedan **Hemligheter**.</span><span class="sxs-lookup"><span data-stu-id="e5722-218">After key vault is created, select it in the list, and then select **Secrets**.</span></span>
-    4. <span data-ttu-id="e5722-219">Välj **Generera/Importera**.</span><span class="sxs-lookup"><span data-stu-id="e5722-219">Select **Generate/Import**.</span></span>
-    5. <span data-ttu-id="e5722-220">I dialogrutan **Skapa en hemlighet** i fältet **Överföringsalternativ** välj **Manuell**.</span><span class="sxs-lookup"><span data-stu-id="e5722-220">In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.</span></span>
-    6. <span data-ttu-id="e5722-221">Ange ett namn på hemligheten.</span><span class="sxs-lookup"><span data-stu-id="e5722-221">Enter a name for the secret.</span></span> <span data-ttu-id="e5722-222">Anteckna namnet eftersom du kommer att behöva ange det senare.</span><span class="sxs-lookup"><span data-stu-id="e5722-222">Make a note of the name, because you will have to provide it later.</span></span>
-    7. <span data-ttu-id="e5722-223">I fältet **Värde** anger du den anslutningssträng som du hämtade från lagringskontot i föregående procedur.</span><span class="sxs-lookup"><span data-stu-id="e5722-223">In the **Value** field, enter the connection string that you obtained from the storage account in the previous procedure.</span></span>
-    8. <span data-ttu-id="e5722-224">Välj **Aktiverat** och välj sedan **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="e5722-224">Select **Enabled**, and then select **Create**.</span></span> <span data-ttu-id="e5722-225">Hemligheten skapas och läggs till i nyckelvalvet.</span><span class="sxs-lookup"><span data-stu-id="e5722-225">The secret is created and added to Key Vault.</span></span>
-    9. <span data-ttu-id="e5722-226">Gå till **nyckelvalvöversikten** och anteckna DNS-namnet.</span><span class="sxs-lookup"><span data-stu-id="e5722-226">Go to the **Key Vault Overview**, and make a note of the DNS name.</span></span>
+    1. <span data-ttu-id="53ef7-213">Skapa ett nyckelvalv i [Azure-portalen](https://portal.azure.com).</span><span class="sxs-lookup"><span data-stu-id="53ef7-213">In the [Azure portal](https://portal.azure.com), create a key vault.</span></span>
+    2. <span data-ttu-id="53ef7-214">I dialogrutan **Skapa nyckelvalv**, i fältet **Plats**, välj det datacenter där din miljö finns.</span><span class="sxs-lookup"><span data-stu-id="53ef7-214">In the **Create key vault** dialog box, in the **Location** field, select the data center where your environment is located.</span></span>
+    3. <span data-ttu-id="53ef7-215">När nyckelvalvet har skapats väljer du det i listan och väljer sedan **Hemligheter**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-215">After key vault is created, select it in the list, and then select **Secrets**.</span></span>
+    4. <span data-ttu-id="53ef7-216">Välj **Generera/Importera**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-216">Select **Generate/Import**.</span></span>
+    5. <span data-ttu-id="53ef7-217">I dialogrutan **Skapa en hemlighet** i fältet **Överföringsalternativ** välj **Manuell**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-217">In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.</span></span>
+    6. <span data-ttu-id="53ef7-218">Ange ett namn på hemligheten.</span><span class="sxs-lookup"><span data-stu-id="53ef7-218">Enter a name for the secret.</span></span> <span data-ttu-id="53ef7-219">Anteckna namnet eftersom du kommer att behöva ange det senare.</span><span class="sxs-lookup"><span data-stu-id="53ef7-219">Make a note of the name, because you will have to provide it later.</span></span>
+    7. <span data-ttu-id="53ef7-220">I fältet **Värde** anger du den anslutningssträng som du hämtade från lagringskontot i föregående procedur.</span><span class="sxs-lookup"><span data-stu-id="53ef7-220">In the **Value** field, enter the connection string that you obtained from the storage account in the previous procedure.</span></span>
+    8. <span data-ttu-id="53ef7-221">Välj **Aktiverat** och välj sedan **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-221">Select **Enabled**, and then select **Create**.</span></span> <span data-ttu-id="53ef7-222">Hemligheten skapas och läggs till i nyckelvalvet.</span><span class="sxs-lookup"><span data-stu-id="53ef7-222">The secret is created and added to Key Vault.</span></span>
+    9. <span data-ttu-id="53ef7-223">Gå till **nyckelvalvöversikten** och anteckna DNS-namnet.</span><span class="sxs-lookup"><span data-stu-id="53ef7-223">Go to the **Key Vault Overview**, and make a note of the DNS name.</span></span>
 
-3. <span data-ttu-id="e5722-227">Skapa och registrera ett Azure AD-program:</span><span class="sxs-lookup"><span data-stu-id="e5722-227">Create and register an Azure AD application:</span></span>
+3. <span data-ttu-id="53ef7-224">Skapa och registrera ett Azure AD-program:</span><span class="sxs-lookup"><span data-stu-id="53ef7-224">Create and register an Azure AD application:</span></span>
 
-    1. <span data-ttu-id="e5722-228">I [Azure-portalen](https://portal.azure.com), gå till **Azure Active Directory** och välj **Appregistreringar**.</span><span class="sxs-lookup"><span data-stu-id="e5722-228">In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and then select **App registrations**.</span></span>
-    2. <span data-ttu-id="e5722-229">Välj **Ny programregistrering** och ange följande fält:</span><span class="sxs-lookup"><span data-stu-id="e5722-229">Select **New application registration**, and set the following fields:</span></span>
+    1. <span data-ttu-id="53ef7-225">I [Azure-portalen](https://portal.azure.com), gå till **Azure Active Directory** och välj **Appregistreringar**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-225">In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and then select **App registrations**.</span></span>
+    2. <span data-ttu-id="53ef7-226">Välj **Ny programregistrering** och ange följande fält:</span><span class="sxs-lookup"><span data-stu-id="53ef7-226">Select **New application registration**, and set the following fields:</span></span>
 
-        - <span data-ttu-id="e5722-230">**Namn** – Ange namnet på appen.</span><span class="sxs-lookup"><span data-stu-id="e5722-230">**Name** – Enter the name of the app.</span></span>
-        - <span data-ttu-id="e5722-231">**Programtyp** – Välj **Webb-API**.</span><span class="sxs-lookup"><span data-stu-id="e5722-231">**Application type** – Select **Web API**.</span></span>
-        - <span data-ttu-id="e5722-232">**Inställning av omdirigerings-URI** – Ange URL:en för din Dynamics 365-instans, till exempel `https://yourdynamicsinstance.dynamics.com/auth`.</span><span class="sxs-lookup"><span data-stu-id="e5722-232">**Redirect URI setup** – Enter the URL for your Dynamics 365 instance, such as, `https://yourdynamicsinstance.dynamics.com/auth`.</span></span>
+        - <span data-ttu-id="53ef7-227">**Namn** – Ange namnet på appen.</span><span class="sxs-lookup"><span data-stu-id="53ef7-227">**Name** – Enter the name of the app.</span></span>
+        - <span data-ttu-id="53ef7-228">**Programtyp** – Välj **Webb-API**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-228">**Application type** – Select **Web API**.</span></span>
+        - <span data-ttu-id="53ef7-229">**Inställning av omdirigerings-URI** – Ange URL:en för din Dynamics 365-instans, till exempel `https://yourdynamicsinstance.dynamics.com/auth`.</span><span class="sxs-lookup"><span data-stu-id="53ef7-229">**Redirect URI setup** – Enter the URL for your Dynamics 365 instance, such as, `https://yourdynamicsinstance.dynamics.com/auth`.</span></span>
 
-    3. <span data-ttu-id="e5722-233">Gå till den app som du just skapade och kopiera och spara dess värde för **Program-ID (klient)**.</span><span class="sxs-lookup"><span data-stu-id="e5722-233">Go to the app that you just created, and copy and save its **Application (client) ID** value.</span></span> <span data-ttu-id="e5722-234">Du måste ange det här värdet senare när du konfigurerar nyckelvalvet.</span><span class="sxs-lookup"><span data-stu-id="e5722-234">You will have to provide this value later, when you set up the key vault.</span></span>
-    4. <span data-ttu-id="e5722-235">Gå till **API-behörigheter** och gör så här:</span><span class="sxs-lookup"><span data-stu-id="e5722-235">Go to **API permissions**, and follow these steps:</span></span>
+    3. <span data-ttu-id="53ef7-230">Gå till den app som du just skapade och kopiera och spara dess värde för **Program-ID (klient)**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-230">Go to the app that you just created, and copy and save its **Application (client) ID** value.</span></span> <span data-ttu-id="53ef7-231">Du måste ange det här värdet senare när du konfigurerar nyckelvalvet.</span><span class="sxs-lookup"><span data-stu-id="53ef7-231">You will have to provide this value later, when you set up the key vault.</span></span>
+    4. <span data-ttu-id="53ef7-232">Gå till **API-behörigheter** och gör så här:</span><span class="sxs-lookup"><span data-stu-id="53ef7-232">Go to **API permissions**, and follow these steps:</span></span>
 
-        1. <span data-ttu-id="e5722-236">Välj **Lägg till behörighet**.</span><span class="sxs-lookup"><span data-stu-id="e5722-236">Select **Add a permission**.</span></span>
-        2. <span data-ttu-id="e5722-237">Välj **Azure Key Vault**.</span><span class="sxs-lookup"><span data-stu-id="e5722-237">Select **Azure Key vault**.</span></span>
-        3. <span data-ttu-id="e5722-238">När du har valt delegerade behörigheter väljer du **användare\_personifiering**.</span><span class="sxs-lookup"><span data-stu-id="e5722-238">After you select delegated permissions, select **user\_impersonation**.</span></span>
-        4. <span data-ttu-id="e5722-239">Välj **Lägg till behörigheter**.</span><span class="sxs-lookup"><span data-stu-id="e5722-239">Select **Add permissions**.</span></span>
+        1. <span data-ttu-id="53ef7-233">Välj **Lägg till behörighet**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-233">Select **Add a permission**.</span></span>
+        2. <span data-ttu-id="53ef7-234">Välj **Azure Key Vault**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-234">Select **Azure Key vault**.</span></span>
+        3. <span data-ttu-id="53ef7-235">När du har valt delegerade behörigheter väljer du **användare\_personifiering**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-235">After you select delegated permissions, select **user\_impersonation**.</span></span>
+        4. <span data-ttu-id="53ef7-236">Välj **Lägg till behörigheter**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-236">Select **Add permissions**.</span></span>
 
-    5. <span data-ttu-id="e5722-240">På menyn för appen väljer du **Certifikat \& hemligheter** och följer sedan stegen nedan för att skapa nyckelvalvhemligheter:</span><span class="sxs-lookup"><span data-stu-id="e5722-240">On the menu for the app, select **Certificates \& secrets**, and then follow these steps to create Key Vault secrets:</span></span>
+    5. <span data-ttu-id="53ef7-237">På menyn för appen väljer du **Certifikat \& hemligheter** och följer sedan stegen nedan för att skapa nyckelvalvhemligheter:</span><span class="sxs-lookup"><span data-stu-id="53ef7-237">On the menu for the app, select **Certificates \& secrets**, and then follow these steps to create Key Vault secrets:</span></span>
 
-        1. <span data-ttu-id="e5722-241">Välj **Ny klienthemlighet**.</span><span class="sxs-lookup"><span data-stu-id="e5722-241">Select **New client secret**.</span></span>
-        2. <span data-ttu-id="e5722-242">Ange ett namn i fältet **Nyckelbeskrivning**.</span><span class="sxs-lookup"><span data-stu-id="e5722-242">In the **Key Description** field, enter a name.</span></span>
-        3. <span data-ttu-id="e5722-243">Markera en varaktighet och välj sedan **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="e5722-243">Select a duration, and then select **Add**.</span></span> <span data-ttu-id="e5722-244">En hemlighet genereras i fältet **Värde**.</span><span class="sxs-lookup"><span data-stu-id="e5722-244">A secret is generated in the **Value** field.</span></span>
-        4. <span data-ttu-id="e5722-245">Kopiera och spara det hemliga värdet.</span><span class="sxs-lookup"><span data-stu-id="e5722-245">Copy and save the secret value.</span></span>
+        1. <span data-ttu-id="53ef7-238">Välj **Ny klienthemlighet**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-238">Select **New client secret**.</span></span>
+        2. <span data-ttu-id="53ef7-239">Ange ett namn i fältet **Nyckelbeskrivning**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-239">In the **Key Description** field, enter a name.</span></span>
+        3. <span data-ttu-id="53ef7-240">Markera en varaktighet och välj sedan **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-240">Select a duration, and then select **Add**.</span></span> <span data-ttu-id="53ef7-241">En hemlighet genereras i fältet **Värde**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-241">A secret is generated in the **Value** field.</span></span>
+        4. <span data-ttu-id="53ef7-242">Kopiera och spara det hemliga värdet.</span><span class="sxs-lookup"><span data-stu-id="53ef7-242">Copy and save the secret value.</span></span>
 
-4. <span data-ttu-id="e5722-246">Skapa nyckelvalvhemligheter:</span><span class="sxs-lookup"><span data-stu-id="e5722-246">Create Key Vault secrets:</span></span>
+4. <span data-ttu-id="53ef7-243">Skapa nyckelvalvhemligheter:</span><span class="sxs-lookup"><span data-stu-id="53ef7-243">Create Key Vault secrets:</span></span>
 
-    1. <span data-ttu-id="e5722-247">Gå till det nyckelvalv som du skapade tidigare och välj **Hemligheter**.</span><span class="sxs-lookup"><span data-stu-id="e5722-247">Go to the key vault that you created earlier, and select **Secrets**.</span></span>
-    2. <span data-ttu-id="e5722-248">Gör så här för varje hemligt namn i följande tabell:</span><span class="sxs-lookup"><span data-stu-id="e5722-248">For each secret name in the following table, follow these steps:</span></span>
+    1. <span data-ttu-id="53ef7-244">Gå till det nyckelvalv som du skapade tidigare och välj **Hemligheter**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-244">Go to the key vault that you created earlier, and select **Secrets**.</span></span>
+    2. <span data-ttu-id="53ef7-245">Gör så här för varje hemligt namn i följande tabell:</span><span class="sxs-lookup"><span data-stu-id="53ef7-245">For each secret name in the following table, follow these steps:</span></span>
 
-        1. <span data-ttu-id="e5722-249">Välj **Generera/Importera**.</span><span class="sxs-lookup"><span data-stu-id="e5722-249">Select **Generate/Import**.</span></span>
-        2. <span data-ttu-id="e5722-250">I dialogrutan **Skapa en hemlighet** i fältet **Överföringsalternativ** välj **Manuell**.</span><span class="sxs-lookup"><span data-stu-id="e5722-250">In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.</span></span>
-        3. <span data-ttu-id="e5722-251">Skapa det hemliga namnet och värdet från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="e5722-251">Create the secret name and value from the following table.</span></span>
-        4. <span data-ttu-id="e5722-252">Välj **Aktiverat** och välj sedan **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="e5722-252">Select **Enabled**, and then select **Create**.</span></span> <span data-ttu-id="e5722-253">Hemligheten skapas och läggs till i nyckelvalvet.</span><span class="sxs-lookup"><span data-stu-id="e5722-253">The secret is created and added to Key Vault.</span></span>
+        1. <span data-ttu-id="53ef7-246">Välj **Generera/Importera**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-246">Select **Generate/Import**.</span></span>
+        2. <span data-ttu-id="53ef7-247">I dialogrutan **Skapa en hemlighet** i fältet **Överföringsalternativ** välj **Manuell**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-247">In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.</span></span>
+        3. <span data-ttu-id="53ef7-248">Skapa det hemliga namnet och värdet från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="53ef7-248">Create the secret name and value from the following table.</span></span>
+        4. <span data-ttu-id="53ef7-249">Välj **Aktiverat** och välj sedan **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-249">Select **Enabled**, and then select **Create**.</span></span> <span data-ttu-id="53ef7-250">Hemligheten skapas och läggs till i nyckelvalvet.</span><span class="sxs-lookup"><span data-stu-id="53ef7-250">The secret is created and added to Key Vault.</span></span>
 
-        | <span data-ttu-id="e5722-254">Hemligt namn</span><span class="sxs-lookup"><span data-stu-id="e5722-254">Secret name</span></span>                       | <span data-ttu-id="e5722-255">Hemligt värde</span><span class="sxs-lookup"><span data-stu-id="e5722-255">Secret value</span></span>                                                                                |
+        | <span data-ttu-id="53ef7-251">Hemligt namn</span><span class="sxs-lookup"><span data-stu-id="53ef7-251">Secret name</span></span>                       | <span data-ttu-id="53ef7-252">Hemligt värde</span><span class="sxs-lookup"><span data-stu-id="53ef7-252">Secret value</span></span>                                                                                |
         |-----------------------------------|---------------------------------------------------------------------------------------------|
-        | <span data-ttu-id="e5722-256">program-ID</span><span class="sxs-lookup"><span data-stu-id="e5722-256">app-id</span></span>                            | <span data-ttu-id="e5722-257">App-ID för programmet som du skapade tidigare</span><span class="sxs-lookup"><span data-stu-id="e5722-257">The app ID of the application that you created earlier</span></span>                                      |
-        | <span data-ttu-id="e5722-258">programhemlighet</span><span class="sxs-lookup"><span data-stu-id="e5722-258">app-secret</span></span>                        | <span data-ttu-id="e5722-259">Klienthemligheten som du sparade tidigare</span><span class="sxs-lookup"><span data-stu-id="e5722-259">The client secret that you saved earlier</span></span>                                                    |
-        | <span data-ttu-id="e5722-260">lagringskontonamn</span><span class="sxs-lookup"><span data-stu-id="e5722-260">storage-account-name</span></span>              | <span data-ttu-id="e5722-261">Namnet på lagringskontot som du skapade tidigare, t.ex. **lagringskonto1**</span><span class="sxs-lookup"><span data-stu-id="e5722-261">The name of the storage account that you created earlier, such as **storageaccount1**</span></span>       |
-        | <span data-ttu-id="e5722-262">lagringskontots anslutningssträng</span><span class="sxs-lookup"><span data-stu-id="e5722-262">storage-account-connection-string</span></span> | <span data-ttu-id="e5722-263">Den anslutningssträng som du kopierade från sidan **Åtkomstnycklar** för lagringskontot</span><span class="sxs-lookup"><span data-stu-id="e5722-263">The connection string that you copied from the **Access keys** page for the storage account</span></span> |
+        | <span data-ttu-id="53ef7-253">program-ID</span><span class="sxs-lookup"><span data-stu-id="53ef7-253">app-id</span></span>                            | <span data-ttu-id="53ef7-254">App-ID för programmet som du skapade tidigare</span><span class="sxs-lookup"><span data-stu-id="53ef7-254">The app ID of the application that you created earlier</span></span>                                      |
+        | <span data-ttu-id="53ef7-255">programhemlighet</span><span class="sxs-lookup"><span data-stu-id="53ef7-255">app-secret</span></span>                        | <span data-ttu-id="53ef7-256">Klienthemligheten som du sparade tidigare</span><span class="sxs-lookup"><span data-stu-id="53ef7-256">The client secret that you saved earlier</span></span>                                                    |
+        | <span data-ttu-id="53ef7-257">lagringskontonamn</span><span class="sxs-lookup"><span data-stu-id="53ef7-257">storage-account-name</span></span>              | <span data-ttu-id="53ef7-258">Namnet på lagringskontot som du skapade tidigare, t.ex. **lagringskonto1**</span><span class="sxs-lookup"><span data-stu-id="53ef7-258">The name of the storage account that you created earlier, such as **storageaccount1**</span></span>       |
+        | <span data-ttu-id="53ef7-259">lagringskontots anslutningssträng</span><span class="sxs-lookup"><span data-stu-id="53ef7-259">storage-account-connection-string</span></span> | <span data-ttu-id="53ef7-260">Den anslutningssträng som du kopierade från sidan **Åtkomstnycklar** för lagringskontot</span><span class="sxs-lookup"><span data-stu-id="53ef7-260">The connection string that you copied from the **Access keys** page for the storage account</span></span> |
 
-5. <span data-ttu-id="e5722-264">Auktorisera programmet för att få åtkomst till nyckelvalvet:</span><span class="sxs-lookup"><span data-stu-id="e5722-264">Authorize the application to access the key vault:</span></span>
+5. <span data-ttu-id="53ef7-261">Auktorisera programmet för att få åtkomst till nyckelvalvet:</span><span class="sxs-lookup"><span data-stu-id="53ef7-261">Authorize the application to access the key vault:</span></span>
 
-    1. <span data-ttu-id="e5722-265">I [Azure-portalen](https://portal.azure.com), öppna nyckelvalvet som du skapade tidigare.</span><span class="sxs-lookup"><span data-stu-id="e5722-265">In the [Azure portal](https://portal.azure.com), open the key vault that you created earlier.</span></span>
-    2. <span data-ttu-id="e5722-266">Välj åtkomstprinciper.</span><span class="sxs-lookup"><span data-stu-id="e5722-266">Select the access policies.</span></span>
-    3. <span data-ttu-id="e5722-267">Gör så här för varje program i följande tabell:</span><span class="sxs-lookup"><span data-stu-id="e5722-267">For each application in the following table, follow these steps:</span></span>
+    1. <span data-ttu-id="53ef7-262">I [Azure-portalen](https://portal.azure.com), öppna nyckelvalvet som du skapade tidigare.</span><span class="sxs-lookup"><span data-stu-id="53ef7-262">In the [Azure portal](https://portal.azure.com), open the key vault that you created earlier.</span></span>
+    2. <span data-ttu-id="53ef7-263">Välj åtkomstprinciper.</span><span class="sxs-lookup"><span data-stu-id="53ef7-263">Select the access policies.</span></span>
+    3. <span data-ttu-id="53ef7-264">Gör så här för varje program i följande tabell:</span><span class="sxs-lookup"><span data-stu-id="53ef7-264">For each application in the following table, follow these steps:</span></span>
 
-        1. <span data-ttu-id="e5722-268">Välj **Lägg till åtkomstprincip** för att skapa en åtkomstprincip.</span><span class="sxs-lookup"><span data-stu-id="e5722-268">Select **Add Access Policy** to create an access policy.</span></span>
-        2. <span data-ttu-id="e5722-269">I fältet **Hemliga behörigheter**, välj behörigheterna från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="e5722-269">In the **Secret permissions** field, select the permissions from the following table.</span></span>
-        3. <span data-ttu-id="e5722-270">I fältet **Välj huvudnamn**, sök efter programmets visningsnamn från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="e5722-270">In the **Select principal** field, search for the application display name from the following table.</span></span>
-        4. <span data-ttu-id="e5722-271">Välj **Välj**.</span><span class="sxs-lookup"><span data-stu-id="e5722-271">Select **Select**.</span></span>
-        5. <span data-ttu-id="e5722-272">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="e5722-272">Select **Add**.</span></span>
-        6. <span data-ttu-id="e5722-273">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="e5722-273">Select **Save**.</span></span>
+        1. <span data-ttu-id="53ef7-265">Välj **Lägg till åtkomstprincip** för att skapa en åtkomstprincip.</span><span class="sxs-lookup"><span data-stu-id="53ef7-265">Select **Add Access Policy** to create an access policy.</span></span>
+        2. <span data-ttu-id="53ef7-266">I fältet **Hemliga behörigheter**, välj behörigheterna från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="53ef7-266">In the **Secret permissions** field, select the permissions from the following table.</span></span>
+        3. <span data-ttu-id="53ef7-267">I fältet **Välj huvudnamn**, sök efter programmets visningsnamn från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="53ef7-267">In the **Select principal** field, search for the application display name from the following table.</span></span>
+        4. <span data-ttu-id="53ef7-268">Välj **Välj**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-268">Select **Select**.</span></span>
+        5. <span data-ttu-id="53ef7-269">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-269">Select **Add**.</span></span>
+        6. <span data-ttu-id="53ef7-270">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-270">Select **Save**.</span></span>
 
-        | <span data-ttu-id="e5722-274">Ansökning</span><span class="sxs-lookup"><span data-stu-id="e5722-274">Application</span></span>                                              | <span data-ttu-id="e5722-275">Behörighet</span><span class="sxs-lookup"><span data-stu-id="e5722-275">Permissions</span></span> |
+        | <span data-ttu-id="53ef7-271">Ansökning</span><span class="sxs-lookup"><span data-stu-id="53ef7-271">Application</span></span>                                              | <span data-ttu-id="53ef7-272">Behörighet</span><span class="sxs-lookup"><span data-stu-id="53ef7-272">Permissions</span></span> |
         |----------------------------------------------------------|-------------|
-        | <span data-ttu-id="e5722-276">Visningsnamnet för det nya program som du skapade</span><span class="sxs-lookup"><span data-stu-id="e5722-276">The display name of the new application that you created</span></span> | <span data-ttu-id="e5722-277">Get, List</span><span class="sxs-lookup"><span data-stu-id="e5722-277">Get, List</span></span>   |
-        | <span data-ttu-id="e5722-278">**Microsoft Dynamics ERP Microservices**</span><span class="sxs-lookup"><span data-stu-id="e5722-278">**Microsoft Dynamics ERP Microservices**</span></span>                 | <span data-ttu-id="e5722-279">Get, List</span><span class="sxs-lookup"><span data-stu-id="e5722-279">Get, List</span></span>   |
+        | <span data-ttu-id="53ef7-273">Visningsnamnet för det nya program som du skapade</span><span class="sxs-lookup"><span data-stu-id="53ef7-273">The display name of the new application that you created</span></span> | <span data-ttu-id="53ef7-274">Get, List</span><span class="sxs-lookup"><span data-stu-id="53ef7-274">Get, List</span></span>   |
+        | <span data-ttu-id="53ef7-275">**Microsoft Dynamics ERP Microservices**</span><span class="sxs-lookup"><span data-stu-id="53ef7-275">**Microsoft Dynamics ERP Microservices**</span></span>                 | <span data-ttu-id="53ef7-276">Get, List</span><span class="sxs-lookup"><span data-stu-id="53ef7-276">Get, List</span></span>   |
 
-6. <span data-ttu-id="e5722-280">Tilldela roller för åtkomst till lagringskontot:</span><span class="sxs-lookup"><span data-stu-id="e5722-280">Assign roles to access the storage account:</span></span>
+6. <span data-ttu-id="53ef7-277">Tilldela roller för åtkomst till lagringskontot:</span><span class="sxs-lookup"><span data-stu-id="53ef7-277">Assign roles to access the storage account:</span></span>
 
-    1. <span data-ttu-id="e5722-281">I [Azure-portalen](https://portal.azure.com), öppna lagringskontot som du skapade tidigare.</span><span class="sxs-lookup"><span data-stu-id="e5722-281">In the [Azure portal](https://portal.azure.com), open the storage account that you created earlier.</span></span>
-    2. <span data-ttu-id="e5722-282">Välj **Åtkomstkontroll (IAM)** och välj **Rolltilldelningar**.</span><span class="sxs-lookup"><span data-stu-id="e5722-282">Select **Access Control (IAM)**, and then select **Role Assignments**.</span></span>
-    3. <span data-ttu-id="e5722-283">Välj **Lägg till, Lägg till rolltilldelning**.</span><span class="sxs-lookup"><span data-stu-id="e5722-283">Select **Add, Add Role Assignment**.</span></span>
-    4. <span data-ttu-id="e5722-284">Gör så här för varje program i följande tabell:</span><span class="sxs-lookup"><span data-stu-id="e5722-284">For each application in the following table, follow these steps:</span></span>
+    1. <span data-ttu-id="53ef7-278">I [Azure-portalen](https://portal.azure.com), öppna lagringskontot som du skapade tidigare.</span><span class="sxs-lookup"><span data-stu-id="53ef7-278">In the [Azure portal](https://portal.azure.com), open the storage account that you created earlier.</span></span>
+    2. <span data-ttu-id="53ef7-279">Välj **Åtkomstkontroll (IAM)** och välj **Rolltilldelningar**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-279">Select **Access Control (IAM)**, and then select **Role Assignments**.</span></span>
+    3. <span data-ttu-id="53ef7-280">Välj **Lägg till, Lägg till rolltilldelning**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-280">Select **Add, Add Role Assignment**.</span></span>
+    4. <span data-ttu-id="53ef7-281">Gör så här för varje program i följande tabell:</span><span class="sxs-lookup"><span data-stu-id="53ef7-281">For each application in the following table, follow these steps:</span></span>
 
-        1. <span data-ttu-id="e5722-285">Välj rollen bland i följande tabell.</span><span class="sxs-lookup"><span data-stu-id="e5722-285">Select the role from the following table.</span></span>
-        2. <span data-ttu-id="e5722-286">Låt fältet **Tilldela åtkomst till** vara inställt på **Azure AD-användare, -grupp eller -tjänstens huvudnamn**.</span><span class="sxs-lookup"><span data-stu-id="e5722-286">Leave the **Assign access to** field set to **Azure AD user, group, or service principal**.</span></span>
-        3. <span data-ttu-id="e5722-287">I fältet **Välj**, ange programmet från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="e5722-287">In the **Select** field, enter the application from the following table.</span></span>
-        4. <span data-ttu-id="e5722-288">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="e5722-288">Select **Save**.</span></span>
+        1. <span data-ttu-id="53ef7-282">Välj rollen bland i följande tabell.</span><span class="sxs-lookup"><span data-stu-id="53ef7-282">Select the role from the following table.</span></span>
+        2. <span data-ttu-id="53ef7-283">Låt fältet **Tilldela åtkomst till** vara inställt på **Azure AD-användare, -grupp eller -tjänstens huvudnamn**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-283">Leave the **Assign access to** field set to **Azure AD user, group, or service principal**.</span></span>
+        3. <span data-ttu-id="53ef7-284">I fältet **Välj**, ange programmet från följande tabell.</span><span class="sxs-lookup"><span data-stu-id="53ef7-284">In the **Select** field, enter the application from the following table.</span></span>
+        4. <span data-ttu-id="53ef7-285">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-285">Select **Save**.</span></span>
 
-        | <span data-ttu-id="e5722-289">Ansökning</span><span class="sxs-lookup"><span data-stu-id="e5722-289">Application</span></span>                                              | <span data-ttu-id="e5722-290">Roll</span><span class="sxs-lookup"><span data-stu-id="e5722-290">Role</span></span>                        |
+        | <span data-ttu-id="53ef7-286">Ansökning</span><span class="sxs-lookup"><span data-stu-id="53ef7-286">Application</span></span>                                              | <span data-ttu-id="53ef7-287">Roll</span><span class="sxs-lookup"><span data-stu-id="53ef7-287">Role</span></span>                        |
         |----------------------------------------------------------|-----------------------------|
-        | <span data-ttu-id="e5722-291">Visningsnamnet för det nya program som du skapade</span><span class="sxs-lookup"><span data-stu-id="e5722-291">The display name of the new application that you created</span></span> | <span data-ttu-id="e5722-292">Ägare</span><span class="sxs-lookup"><span data-stu-id="e5722-292">Owner</span></span>                       |
-        | <span data-ttu-id="e5722-293">Visningsnamnet för det nya program som du skapade</span><span class="sxs-lookup"><span data-stu-id="e5722-293">The display name of the new application that you created</span></span> | <span data-ttu-id="e5722-294">Deltagare</span><span class="sxs-lookup"><span data-stu-id="e5722-294">Contributor</span></span>                 |
-        | <span data-ttu-id="e5722-295">Visningsnamnet för det nya program som du skapade</span><span class="sxs-lookup"><span data-stu-id="e5722-295">The display name of the new application that you created</span></span> | <span data-ttu-id="e5722-296">Lagringskontodeltagare</span><span class="sxs-lookup"><span data-stu-id="e5722-296">Storage Account Contributor</span></span> |
-        | <span data-ttu-id="e5722-297">Visningsnamnet för det nya program som du skapade</span><span class="sxs-lookup"><span data-stu-id="e5722-297">The display name of the new application that you created</span></span> | <span data-ttu-id="e5722-298">Storage Blob Data-ägare</span><span class="sxs-lookup"><span data-stu-id="e5722-298">Storage Blob Data Owner</span></span>     |
-        | <span data-ttu-id="e5722-299">**AI Builder Authorization Service**</span><span class="sxs-lookup"><span data-stu-id="e5722-299">**AI Builder Authorization Service**</span></span>                     | <span data-ttu-id="e5722-300">Storage Blob Data-läsare</span><span class="sxs-lookup"><span data-stu-id="e5722-300">Storage Blob Data Reader</span></span>    |
+        | <span data-ttu-id="53ef7-288">Visningsnamnet för det nya program som du skapade</span><span class="sxs-lookup"><span data-stu-id="53ef7-288">The display name of the new application that you created</span></span> | <span data-ttu-id="53ef7-289">Ägare</span><span class="sxs-lookup"><span data-stu-id="53ef7-289">Owner</span></span>                       |
+        | <span data-ttu-id="53ef7-290">Visningsnamnet för det nya program som du skapade</span><span class="sxs-lookup"><span data-stu-id="53ef7-290">The display name of the new application that you created</span></span> | <span data-ttu-id="53ef7-291">Deltagare</span><span class="sxs-lookup"><span data-stu-id="53ef7-291">Contributor</span></span>                 |
+        | <span data-ttu-id="53ef7-292">Visningsnamnet för det nya program som du skapade</span><span class="sxs-lookup"><span data-stu-id="53ef7-292">The display name of the new application that you created</span></span> | <span data-ttu-id="53ef7-293">Lagringskontodeltagare</span><span class="sxs-lookup"><span data-stu-id="53ef7-293">Storage Account Contributor</span></span> |
+        | <span data-ttu-id="53ef7-294">Visningsnamnet för det nya program som du skapade</span><span class="sxs-lookup"><span data-stu-id="53ef7-294">The display name of the new application that you created</span></span> | <span data-ttu-id="53ef7-295">Storage Blob Data-ägare</span><span class="sxs-lookup"><span data-stu-id="53ef7-295">Storage Blob Data Owner</span></span>     |
+        | <span data-ttu-id="53ef7-296">**AI Builder Authorization Service**</span><span class="sxs-lookup"><span data-stu-id="53ef7-296">**AI Builder Authorization Service**</span></span>                     | <span data-ttu-id="53ef7-297">Storage Blob Data-läsare</span><span class="sxs-lookup"><span data-stu-id="53ef7-297">Storage Blob Data Reader</span></span>    |
 
-# <a name="azure-cli"></a>[<span data-ttu-id="e5722-301">Azure CLI</span><span class="sxs-lookup"><span data-stu-id="e5722-301">Azure CLI</span></span>](#tab/azure-azure-cli)
+# <a name="azure-cli"></a>[<span data-ttu-id="53ef7-298">Azure CLI</span><span class="sxs-lookup"><span data-stu-id="53ef7-298">Azure CLI</span></span>](#tab/azure-azure-cli)
 
 ```
 function New-FinanceDataLakeAzureResources {
@@ -945,62 +756,62 @@ finally {
 
 
 
-## <a name="configure-the-data-lake"></a><span data-ttu-id="e5722-302">Konfigurera datasjön</span><span class="sxs-lookup"><span data-stu-id="e5722-302">Configure the data lake</span></span>
+## <a name="configure-the-data-lake"></a><span data-ttu-id="53ef7-299">Konfigurera datasjön</span><span class="sxs-lookup"><span data-stu-id="53ef7-299">Configure the data lake</span></span>
 
-<span data-ttu-id="e5722-303">Följ dessa steg för att använda LCS för att lägga till Azure Data Lake-tillägget i miljön.</span><span class="sxs-lookup"><span data-stu-id="e5722-303">Follow these steps to use LCS to add the Azure Data Lake add-in to the environment.</span></span>
+<span data-ttu-id="53ef7-300">Följ dessa steg för att använda LCS för att lägga till Azure Data Lake-tillägget i miljön.</span><span class="sxs-lookup"><span data-stu-id="53ef7-300">Follow these steps to use LCS to add the Azure Data Lake add-in to the environment.</span></span>
 
-1. <span data-ttu-id="e5722-304">Logga in på LCS och välj sedan **Fullständig information** under miljönamnet till höger på sidan.</span><span class="sxs-lookup"><span data-stu-id="e5722-304">Sign in to LCS, and then, under the environment name on the right side of the page, select **Full Details**.</span></span>
-2. <span data-ttu-id="e5722-305">I avsnittet **Miljötillägg**, välj **Installera ett nytt tillägg**.</span><span class="sxs-lookup"><span data-stu-id="e5722-305">In the **Environment add-ins** section, select **Install a new add-in**.</span></span>
-3. <span data-ttu-id="e5722-306">Välj tillägget **Exportera till data Lake**.</span><span class="sxs-lookup"><span data-stu-id="e5722-306">Select the **Export to Data Lake** add-in.</span></span>
-4. <span data-ttu-id="e5722-307">Ange följande värden.</span><span class="sxs-lookup"><span data-stu-id="e5722-307">Enter the following values.</span></span>
+1. <span data-ttu-id="53ef7-301">Logga in på LCS och välj sedan **Fullständig information** under miljönamnet till höger på sidan.</span><span class="sxs-lookup"><span data-stu-id="53ef7-301">Sign in to LCS, and then, under the environment name on the right side of the page, select **Full Details**.</span></span>
+2. <span data-ttu-id="53ef7-302">I avsnittet **Miljötillägg**, välj **Installera ett nytt tillägg**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-302">In the **Environment add-ins** section, select **Install a new add-in**.</span></span>
+3. <span data-ttu-id="53ef7-303">Välj tillägget **Exportera till data Lake**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-303">Select the **Export to Data Lake** add-in.</span></span>
+4. <span data-ttu-id="53ef7-304">Ange följande värden.</span><span class="sxs-lookup"><span data-stu-id="53ef7-304">Enter the following values.</span></span>
 
-    | <span data-ttu-id="e5722-308">Värde</span><span class="sxs-lookup"><span data-stu-id="e5722-308">Value</span></span>                                                              | <span data-ttu-id="e5722-309">beskrivning</span><span class="sxs-lookup"><span data-stu-id="e5722-309">Description</span></span> |
+    | <span data-ttu-id="53ef7-305">Värde</span><span class="sxs-lookup"><span data-stu-id="53ef7-305">Value</span></span>                                                              | <span data-ttu-id="53ef7-306">beskrivning</span><span class="sxs-lookup"><span data-stu-id="53ef7-306">Description</span></span> |
     |--------------------------------------------------------------------|-------------|
-    | <span data-ttu-id="e5722-310">Klientorganisations-ID för Azure-prenumerationen där nyckelvalvet finns</span><span class="sxs-lookup"><span data-stu-id="e5722-310">Tenant ID of the Azure Subscription where the Key Vault is located</span></span> | <span data-ttu-id="e5722-311">Det klientorganisations-ID där lagringskontot, programmen och nyckelvalven finns.</span><span class="sxs-lookup"><span data-stu-id="e5722-311">The tenant ID where the storage account, apps, and key vaults are located.</span></span> <span data-ttu-id="e5722-312">Du hittar det här värdet genom att öppna [Azure-portalen](https://portal.azure.com), gå till **Azure Active Directory** och kopiera värdet för **Klientorganisations-ID**.</span><span class="sxs-lookup"><span data-stu-id="e5722-312">To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value.</span></span> |
-    | <span data-ttu-id="e5722-313">Ange DNS-namnet på ditt Key Vault</span><span class="sxs-lookup"><span data-stu-id="e5722-313">Provide the DNS name of your Key Vault</span></span>                             | <span data-ttu-id="e5722-314">Nyckelvalvets DNS-namn, till exempel `https://customkeyvault.vault.azure.net/`.</span><span class="sxs-lookup"><span data-stu-id="e5722-314">The DNS name of the key vault, such as `https://customkeyvault.vault.azure.net/`.</span></span> <span data-ttu-id="e5722-315">(Det här värdet matchar DNS-namnet som används i entitetsarkivet.)</span><span class="sxs-lookup"><span data-stu-id="e5722-315">(This value matches the DNS name that is used in the entity store.)</span></span> |
-    | <span data-ttu-id="e5722-316">Ange hemligheten som innehåller namnet på lagringskontot</span><span class="sxs-lookup"><span data-stu-id="e5722-316">Provide the secret that contains the name of the storage account</span></span>   | <span data-ttu-id="e5722-317">**lagringskontonamn**</span><span class="sxs-lookup"><span data-stu-id="e5722-317">**storage-account-name**</span></span> |
-    | <span data-ttu-id="e5722-318">Hemligt namn för det program-ID som ska användas för åtkomst till Data Lake</span><span class="sxs-lookup"><span data-stu-id="e5722-318">Secret Name for App ID to be used for accessing Data Lake</span></span>          | <span data-ttu-id="e5722-319">**program-ID**</span><span class="sxs-lookup"><span data-stu-id="e5722-319">**app-id**</span></span> |
-    | <span data-ttu-id="e5722-320">Hemligt namn som ska användas med program-ID</span><span class="sxs-lookup"><span data-stu-id="e5722-320">Secret name to be used with App ID</span></span>                                 | <span data-ttu-id="e5722-321">**programhemlighet**</span><span class="sxs-lookup"><span data-stu-id="e5722-321">**app-secret**</span></span> |
+    | <span data-ttu-id="53ef7-307">Klientorganisations-ID för Azure-prenumerationen där nyckelvalvet finns</span><span class="sxs-lookup"><span data-stu-id="53ef7-307">Tenant ID of the Azure Subscription where the Key Vault is located</span></span> | <span data-ttu-id="53ef7-308">Det klientorganisations-ID där lagringskontot, programmen och nyckelvalven finns.</span><span class="sxs-lookup"><span data-stu-id="53ef7-308">The tenant ID where the storage account, apps, and key vaults are located.</span></span> <span data-ttu-id="53ef7-309">Du hittar det här värdet genom att öppna [Azure-portalen](https://portal.azure.com), gå till **Azure Active Directory** och kopiera värdet för **Klientorganisations-ID**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-309">To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value.</span></span> |
+    | <span data-ttu-id="53ef7-310">Ange DNS-namnet på ditt Key Vault</span><span class="sxs-lookup"><span data-stu-id="53ef7-310">Provide the DNS name of your Key Vault</span></span>                             | <span data-ttu-id="53ef7-311">Nyckelvalvets DNS-namn, till exempel `https://customkeyvault.vault.azure.net/`.</span><span class="sxs-lookup"><span data-stu-id="53ef7-311">The DNS name of the key vault, such as `https://customkeyvault.vault.azure.net/`.</span></span> <span data-ttu-id="53ef7-312">(Det här värdet matchar DNS-namnet som används i entitetsarkivet.)</span><span class="sxs-lookup"><span data-stu-id="53ef7-312">(This value matches the DNS name that is used in the entity store.)</span></span> |
+    | <span data-ttu-id="53ef7-313">Ange hemligheten som innehåller namnet på lagringskontot</span><span class="sxs-lookup"><span data-stu-id="53ef7-313">Provide the secret that contains the name of the storage account</span></span>   | <span data-ttu-id="53ef7-314">**lagringskontonamn**</span><span class="sxs-lookup"><span data-stu-id="53ef7-314">**storage-account-name**</span></span> |
+    | <span data-ttu-id="53ef7-315">Hemligt namn för det program-ID som ska användas för åtkomst till Data Lake</span><span class="sxs-lookup"><span data-stu-id="53ef7-315">Secret Name for App ID to be used for accessing Data Lake</span></span>          | <span data-ttu-id="53ef7-316">**program-ID**</span><span class="sxs-lookup"><span data-stu-id="53ef7-316">**app-id**</span></span> |
+    | <span data-ttu-id="53ef7-317">Hemligt namn som ska användas med program-ID</span><span class="sxs-lookup"><span data-stu-id="53ef7-317">Secret name to be used with App ID</span></span>                                 | <span data-ttu-id="53ef7-318">**programhemlighet**</span><span class="sxs-lookup"><span data-stu-id="53ef7-318">**app-secret**</span></span> |
 
-5. <span data-ttu-id="e5722-322">Godkänn villkoren och välj **Installera**.</span><span class="sxs-lookup"><span data-stu-id="e5722-322">Agree to the terms, and select **Install**.</span></span>
+5. <span data-ttu-id="53ef7-319">Godkänn villkoren och välj **Installera**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-319">Agree to the terms, and select **Install**.</span></span>
 
-<span data-ttu-id="e5722-323">Tillägget kommer att installeras inom några minuter.</span><span class="sxs-lookup"><span data-stu-id="e5722-323">The add-in will be installed within a few minutes.</span></span>
+<span data-ttu-id="53ef7-320">Tillägget kommer att installeras inom några minuter.</span><span class="sxs-lookup"><span data-stu-id="53ef7-320">The add-in will be installed within a few minutes.</span></span>
 
-## <a name="configure-ai-builder"></a><span data-ttu-id="e5722-324">Konfigurera AI Builder</span><span class="sxs-lookup"><span data-stu-id="e5722-324">Configure AI Builder</span></span>
+## <a name="configure-ai-builder"></a><span data-ttu-id="53ef7-321">Konfigurera AI Builder</span><span class="sxs-lookup"><span data-stu-id="53ef7-321">Configure AI Builder</span></span>
 
-1. <span data-ttu-id="e5722-325">Logga in på LCS och öppna sidan **Miljöinformation**.</span><span class="sxs-lookup"><span data-stu-id="e5722-325">Sign in to LCS, and open the **Environment details** page.</span></span>
-2. <span data-ttu-id="e5722-326">Bläddra till avsnittet **Miljötillägg**.</span><span class="sxs-lookup"><span data-stu-id="e5722-326">Scroll to the **Environment add-ins** section.</span></span> <span data-ttu-id="e5722-327">De tillägg som redan är installerade i den här miljön bör visas.</span><span class="sxs-lookup"><span data-stu-id="e5722-327">You should see the add-ins that are already installed in this environment.</span></span> <span data-ttu-id="e5722-328">Om tillägget **Exportera till Data Lake** inte är bland dem konfigurerar du det här tillägget.</span><span class="sxs-lookup"><span data-stu-id="e5722-328">If the **Export to Data Lake** add-in isn't among them, configure this add-in.</span></span>
-3. <span data-ttu-id="e5722-329">Välj tillägget **Hämta insikter**.</span><span class="sxs-lookup"><span data-stu-id="e5722-329">Select the **Get insights** add-in.</span></span>
-4. <span data-ttu-id="e5722-330">Ange följande värden på informationssidan för tillägget **Hämta insikter**.</span><span class="sxs-lookup"><span data-stu-id="e5722-330">On the **Get insights** add-in details page, enter the following values.</span></span>
+1. <span data-ttu-id="53ef7-322">Logga in på LCS och öppna sidan **Miljöinformation**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-322">Sign in to LCS, and open the **Environment details** page.</span></span>
+2. <span data-ttu-id="53ef7-323">Bläddra till avsnittet **Miljötillägg**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-323">Scroll to the **Environment add-ins** section.</span></span> <span data-ttu-id="53ef7-324">De tillägg som redan är installerade i den här miljön bör visas.</span><span class="sxs-lookup"><span data-stu-id="53ef7-324">You should see the add-ins that are already installed in this environment.</span></span> <span data-ttu-id="53ef7-325">Om tillägget **Exportera till Data Lake** inte är bland dem konfigurerar du det här tillägget.</span><span class="sxs-lookup"><span data-stu-id="53ef7-325">If the **Export to Data Lake** add-in isn't among them, configure this add-in.</span></span>
+3. <span data-ttu-id="53ef7-326">Välj tillägget **Hämta insikter**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-326">Select the **Get insights** add-in.</span></span>
+4. <span data-ttu-id="53ef7-327">Ange följande värden på informationssidan för tillägget **Hämta insikter**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-327">On the **Get insights** add-in details page, enter the following values.</span></span>
 
-    | <span data-ttu-id="e5722-331">Värde</span><span class="sxs-lookup"><span data-stu-id="e5722-331">Value</span></span>                                                    | <span data-ttu-id="e5722-332">beskrivning</span><span class="sxs-lookup"><span data-stu-id="e5722-332">Description</span></span> |
+    | <span data-ttu-id="53ef7-328">Värde</span><span class="sxs-lookup"><span data-stu-id="53ef7-328">Value</span></span>                                                    | <span data-ttu-id="53ef7-329">beskrivning</span><span class="sxs-lookup"><span data-stu-id="53ef7-329">Description</span></span> |
     |----------------------------------------------------------|-------------|
-    | <span data-ttu-id="e5722-333">URL för CDS-organisations</span><span class="sxs-lookup"><span data-stu-id="e5722-333">CDS Organization URL</span></span>                                     | <span data-ttu-id="e5722-334">Dataverse-organisationens URL för Dataverse-instansen.</span><span class="sxs-lookup"><span data-stu-id="e5722-334">The Dataverse organization URL of the Dataverse instance.</span></span> <span data-ttu-id="e5722-335">Du hittar det här värdet genom att öppna [Power Apps-portalen](https://make.powerapps.com), välja knappen **Inställningar** (kugghjulet) i det övre högra hörnet, välja **Avancerade inställningar** och kopiera URL-adressen.</span><span class="sxs-lookup"><span data-stu-id="e5722-335">To find this value, open the [Power Apps portal](https://make.powerapps.com), select the **Settings** button (gear symbol) in the upper-right upper corner, select **Advanced settings**, and copy the URL.</span></span> <span data-ttu-id="e5722-336">(URL:en slutar med "dynamics.com.")</span><span class="sxs-lookup"><span data-stu-id="e5722-336">(The URL ends with "dynamics.com.")</span></span> |
-    | <span data-ttu-id="e5722-337">CDS Org-ID</span><span class="sxs-lookup"><span data-stu-id="e5722-337">CDS Org ID</span></span>                                               | <span data-ttu-id="e5722-338">Miljö-ID för Dataverse-instansen.</span><span class="sxs-lookup"><span data-stu-id="e5722-338">The environment ID of the Dataverse instance.</span></span> <span data-ttu-id="e5722-339">Du hittar det här värdet genom att öppna [Power Apps-portalen](https://make.powerapps.com), välja knappen **Inställningar** (kugghjulet) i det övre högra hörnet, välja **Anpassningar \> Utvecklarresurser \> Instansens referensinformation** och kopiera **ID**-värdet.</span><span class="sxs-lookup"><span data-stu-id="e5722-339">To find this value, open the [Power Apps portal](https://make.powerapps.com), select the **Settings** button (gear symbol) in the upper-right upper corner, select **Customizations \> Developer resources \> Instance Reference Information**, and copy the **ID** value.</span></span> |
-    | <span data-ttu-id="e5722-340">CDS klientorganisations-ID (katalog-ID från AAD)</span><span class="sxs-lookup"><span data-stu-id="e5722-340">CDS Tenant ID (Directory ID from AAD)</span></span>               | <span data-ttu-id="e5722-341">Klientorganisations-ID för Dataverse-instansen.</span><span class="sxs-lookup"><span data-stu-id="e5722-341">The tenant ID of the Dataverse instance.</span></span> <span data-ttu-id="e5722-342">Du hittar det här värdet genom att öppna [Azure-portalen](https://portal.azure.com), gå till **Azure Active Directory** och kopiera värdet för **Klientorganisations-ID**.</span><span class="sxs-lookup"><span data-stu-id="e5722-342">To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value.</span></span> |
-    | <span data-ttu-id="e5722-343">Ange användarobjekt-ID som har rollen systemadministratör</span><span class="sxs-lookup"><span data-stu-id="e5722-343">Provide user object ID who has system administrator role</span></span> | <span data-ttu-id="e5722-344">Azure AD-användarobjekt-ID för användaren i Dataverse.</span><span class="sxs-lookup"><span data-stu-id="e5722-344">The Azure AD user object ID of the user in Dataverse.</span></span> <span data-ttu-id="e5722-345">Den här användaren måste vara systemadministratör för Dataverse-instansen.</span><span class="sxs-lookup"><span data-stu-id="e5722-345">This user must be a system administrator of the Dataverse instance.</span></span> <span data-ttu-id="e5722-346">Du hittar det här värdet genom att öppna [Azure-portalen](https://portal.azure.com), gå till **Azure Active Directory \> Användare**, välja användaren och i avsnittet **Identitet** kopiera värdet för **Objekt-ID**.</span><span class="sxs-lookup"><span data-stu-id="e5722-346">To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory \> Users**, select the user, and then, in the **Identity** section, copy the **Object ID** value.</span></span> |
-    | <span data-ttu-id="e5722-347">Är det här standard-CDS-miljön för klientorganisationen?</span><span class="sxs-lookup"><span data-stu-id="e5722-347">Is this the default CDS environment for the tenant?</span></span>      | <span data-ttu-id="e5722-348">Markera den här kryssrutan om Dataverse-instansen var den första produktionsinstans som skapades.</span><span class="sxs-lookup"><span data-stu-id="e5722-348">If the Dataverse instance was the first production instance that was created, select this check box.</span></span> <span data-ttu-id="e5722-349">Avmarkera den här kryss rutan om Dataverse-instansen skapades manuellt.</span><span class="sxs-lookup"><span data-stu-id="e5722-349">If the Dataverse instance was manually created, clear this check box.</span></span> |
+    | <span data-ttu-id="53ef7-330">URL för CDS-organisations</span><span class="sxs-lookup"><span data-stu-id="53ef7-330">CDS Organization URL</span></span>                                     | <span data-ttu-id="53ef7-331">Dataverse-organisationens URL kopierat från ovan.</span><span class="sxs-lookup"><span data-stu-id="53ef7-331">The Dataverse organization URL copied from above.</span></span> |
+    | <span data-ttu-id="53ef7-332">CDS Org-ID</span><span class="sxs-lookup"><span data-stu-id="53ef7-332">CDS Org ID</span></span>                                               | <span data-ttu-id="53ef7-333">Dataverse-organisationens ID kopierat från ovan.</span><span class="sxs-lookup"><span data-stu-id="53ef7-333">The Dataverse organization ID copied from above.</span></span> |
+5. <span data-ttu-id="53ef7-334">Aktivera **Är detta standardmiljön för din klientorganisation**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-334">Enable **Is this the default environment for you Tenant**.</span></span>
+    
+## <a name="configure-the-entity-store"></a><span data-ttu-id="53ef7-335">Konfigurera entitetsarkivet</span><span class="sxs-lookup"><span data-stu-id="53ef7-335">Configure the entity store</span></span>
 
-## <a name="configure-the-entity-store"></a><span data-ttu-id="e5722-350">Konfigurera entitetsarkivet</span><span class="sxs-lookup"><span data-stu-id="e5722-350">Configure the entity store</span></span>
+<span data-ttu-id="53ef7-336">Följ dessa steg för att konfigurera entitetsarkivet i Finance-miljön.</span><span class="sxs-lookup"><span data-stu-id="53ef7-336">Follow these steps to set up the entity store in your Finance environment.</span></span>
 
-<span data-ttu-id="e5722-351">Följ dessa steg för att konfigurera entitetsarkivet i Finance-miljön.</span><span class="sxs-lookup"><span data-stu-id="e5722-351">Follow these steps to set up the entity store in your Finance environment.</span></span>
+1. <span data-ttu-id="53ef7-337">Gå till **Systemadministration \> Konfigurera \> Systemparametrar \> Dataanslutningar**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-337">Go to **System administration \> Setup \> System parameters \> Data connections**.</span></span>
+2. <span data-ttu-id="53ef7-338">Ange följande nyckelvalvsfält:</span><span class="sxs-lookup"><span data-stu-id="53ef7-338">Set the following key vault fields:</span></span>
 
-1. <span data-ttu-id="e5722-352">Gå till **Systemadministration \> Konfigurera \> Systemparametrar \> Dataanslutningar**.</span><span class="sxs-lookup"><span data-stu-id="e5722-352">Go to **System administration \> Setup \> System parameters \> Data connections**.</span></span>
-2. <span data-ttu-id="e5722-353">Ange alternativet **Aktivera Data Lake-integrering** till **Ja**.</span><span class="sxs-lookup"><span data-stu-id="e5722-353">Set the **Enable Data Lake integration** option to **Yes**.</span></span>
-3. <span data-ttu-id="e5722-354">Ange följande nyckelvalvsfält:</span><span class="sxs-lookup"><span data-stu-id="e5722-354">Set the following key vault fields:</span></span>
+    - <span data-ttu-id="53ef7-339">**Program-ID (klient)** – Ange programmets klient-ID som du skapade tidigare.</span><span class="sxs-lookup"><span data-stu-id="53ef7-339">**Application (client) ID** – Enter the application client ID that you created earlier.</span></span>
+    - <span data-ttu-id="53ef7-340">**Programhemlighet** – Ange hemligheten som du sparade för programmet du skapade tidigare.</span><span class="sxs-lookup"><span data-stu-id="53ef7-340">**Application Secret** – Enter the secret that you saved for the application that you created earlier.</span></span>
+    - <span data-ttu-id="53ef7-341">**DNS-namn** – Du hittar DNS-namnet (Domain Name System) på sidan med programinformation för programmet som du skapade tidigare.</span><span class="sxs-lookup"><span data-stu-id="53ef7-341">**DNS name** – You can find the Domain Name System (DNS) name on the application details page for the application that you created earlier.</span></span>
+    - <span data-ttu-id="53ef7-342">**Hemligt namn** – Ange **lagringskontots anslutningssträng**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-342">**Secret name** – Enter **storage-account-connection-string**.</span></span>
+3. <span data-ttu-id="53ef7-343">Aktivera **Aktivera Data Lake-integrering**.</span><span class="sxs-lookup"><span data-stu-id="53ef7-343">Enable **Enable Data Lake integration**.</span></span>
+4. <span data-ttu-id="53ef7-344">Välj **Testa Azure Key Vault** och kontrollera att det inte finns några fel.</span><span class="sxs-lookup"><span data-stu-id="53ef7-344">Select **Test Azure Key Vault** and verify there are no errors.</span></span>
+5. <span data-ttu-id="53ef7-345">Välj **Testa Azure-lagring** och kontrollera att det inte finns några fel.</span><span class="sxs-lookup"><span data-stu-id="53ef7-345">Select **Test Azure storage** and verify there are no errors.</span></span>
 
-    - <span data-ttu-id="e5722-355">**Program-ID (klient)** – Ange programmets klient-ID som du skapade tidigare.</span><span class="sxs-lookup"><span data-stu-id="e5722-355">**Application (client) ID** – Enter the application client ID that you created earlier.</span></span>
-    - <span data-ttu-id="e5722-356">**Programhemlighet** – Ange hemligheten som du sparade för programmet du skapade tidigare.</span><span class="sxs-lookup"><span data-stu-id="e5722-356">**Application Secret** – Enter the secret that you saved for the application that you created earlier.</span></span>
-    - <span data-ttu-id="e5722-357">**DNS-namn** – Du hittar DNS-namnet (Domain Name System) på sidan med programinformation för programmet som du skapade tidigare.</span><span class="sxs-lookup"><span data-stu-id="e5722-357">**DNS name** – You can find the Domain Name System (DNS) name on the application details page for the application that you created earlier.</span></span>
-    - <span data-ttu-id="e5722-358">**Hemligt namn** – Ange **lagringskontots anslutningssträng**.</span><span class="sxs-lookup"><span data-stu-id="e5722-358">**Secret name** – Enter **storage-account-connection-string**.</span></span>
+## <a name="feedback-and-support"></a><span data-ttu-id="53ef7-346">Feedback och support</span><span class="sxs-lookup"><span data-stu-id="53ef7-346">Feedback and support</span></span>
 
-## <a name="feedback-and-support"></a><span data-ttu-id="e5722-359">Feedback och support</span><span class="sxs-lookup"><span data-stu-id="e5722-359">Feedback and support</span></span>
+<span data-ttu-id="53ef7-347">Skicka ett e-postmeddelande till [Kundbetalningsinsikter (förhandsversion)](mailto:fiap@microsoft.com) om du är intresserad av att ge feedback eller behöver support.</span><span class="sxs-lookup"><span data-stu-id="53ef7-347">Please send an email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) if you are interested in providing feedback or need support.</span></span>
 
-<span data-ttu-id="e5722-360">Skicka ett e-postmeddelande till [Kundbetalningsinsikter (förhandsversion)](mailto:fiap@microsoft.com) om du är intresserad av att ge feedback eller behöver support.</span><span class="sxs-lookup"><span data-stu-id="e5722-360">Please send an email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) if you are interested in providing feedback or need support.</span></span>
+## <a name="privacy-notice"></a><span data-ttu-id="53ef7-348">Sekretesspolicy</span><span class="sxs-lookup"><span data-stu-id="53ef7-348">Privacy notice</span></span>
 
-## <a name="privacy-notice"></a><span data-ttu-id="e5722-361">Sekretesspolicy</span><span class="sxs-lookup"><span data-stu-id="e5722-361">Privacy notice</span></span>
-
-<span data-ttu-id="e5722-362">Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.</span><span class="sxs-lookup"><span data-stu-id="e5722-362">Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.</span></span>
+<span data-ttu-id="53ef7-349">Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.</span><span class="sxs-lookup"><span data-stu-id="53ef7-349">Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
