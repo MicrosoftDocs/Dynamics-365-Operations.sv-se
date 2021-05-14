@@ -1,6 +1,6 @@
 ---
 title: Startsidan Anläggningstillgångar
-description: Anläggningstillgångar är artiklar av värde, t.ex. fastigheter, fordon, mark eller utrustning, som ägs av en privatperson eller en organisation.
+description: Anläggningstillgångar är artiklar av värde som ägs av en person eller en organisation. Artiklarna omfattar byggnader, fordon, mark och utrustning.
 author: ShylaThompson
 ms.date: 08/31/2017
 ms.topic: index-page
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1825ee4617d14b421d4a7e6151d645a653a9fcbb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0356837b96fd21f763c9a60926ba1bc982cf2024
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815678"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897998"
 ---
 # <a name="fixed-assets-home-page"></a>Startsidan Anläggningstillgångar
 
 [!include [banner](../includes/banner.md)]
 
-Anläggningstillgångar är artiklar av värde, t.ex. fastigheter, fordon, mark eller utrustning, som ägs av en privatperson eller en organisation. 
+Anläggningstillgångar är artiklar av värde som ägs av en person eller en organisation. Artiklarna omfattar byggnader, fordon, mark och utrustning. 
 
-Det går att ställa in och ange anskaffningsinformation för anläggningstillgångar och sedan hantera dem genom att skriva av dem och ställa in en kapitaliseringströskel för att bestämma avskrivningen. Det går att beräkna justeringar för anläggningstillgångarna och även avyttra dem. När du använder Redovisning tillsammans med Anläggningstillgångar går det att visa anläggningstillgångarnas aktuella värde. Sättet på vilket anläggningstillgångar hanteras måste motsvara både internationella redovisningsstandarder och redovisningslagarna i varje land/region. Kraven kan omfatta regler för att registrera anskaffnings- och avyttringstransaktioner, avskrivningar, livstid samt uppskrivningar och nedskrivningar av anläggningstillgångar. Funktionen Anläggningstillgångar införlivar flera av dessa standarder och regler.
+Det går att ställa in och ange anskaffningsinformation för anläggningstillgångar och sedan hantera tillgångarna genom att skriva av dem och ställa in en kapitaliseringströskel för att bestämma avskrivningen. Det går att beräkna justeringar för anläggningstillgångarna och även avyttra dem. När du använder Redovisning tillsammans med Anläggningstillgångar går det att visa anläggningstillgångarnas aktuella värde. Sättet på vilket anläggningstillgångar hanteras måste motsvara både internationella redovisningsstandarder och redovisningslagarna i varje land/region. Kraven kan omfatta regler för att registrera anskaffnings- och avyttringstransaktioner, avskrivningar, livstid samt uppskrivningar och nedskrivningar av anläggningstillgångar. Funktionen Anläggningstillgångar införlivar flera av dessa standarder och regler.
 
 [![Affärsprocess](./media/FA-process.PNG)](./media/FA-process.PNG)
 
@@ -38,7 +38,7 @@ Det går att ställa in och ange anskaffningsinformation för anläggningstillg�
 
 #### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
-Gå till [Utgivningsplaner för Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner har planerats. 
+Gå till [Utgivningsplaner för Microsoft Dynamics 365](/dynamics365/release-plans/) för att se vilka nya funktioner har planerats. 
 
 #### <a name="blogs"></a>Bloggar
 

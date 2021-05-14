@@ -94,12 +94,12 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.19 (juli 2021)
+                      href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (maj 2021)
                       href: get-started/whats-new-commerce-10-0-18.md
                     - name: Commerce 10.0.17 (april 2021)
                       href: get-started/whats-new-commerce-10-0-17.md
-                    - name: Commerce 10.0.16 (februari 2021)
-                      href: get-started/whats-new-commerce-10-0-16.md
                 - name: Borttagna eller inaktuella funktioner
                   items:
                     - name: Borttagna eller inaktuella funktioner – startsida
@@ -184,6 +184,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
                 - name: Bädda in arbetsyteappar från Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
+                - name: Bädda in program från tredje part
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/commerce/toc.json
                 - name: Hitta information med hjälp av sökningar
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
                 - name: Ändra datumet för en session
@@ -280,6 +282,8 @@
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Konfiguration och installation av Retail Hardware Station
                   href: retail-hardware-station-configuration-installation.md
+                - name: Massdistribution av stängda Commerce-självbetjäningskomponenter
+                  href: dev-itpro/Enhanced-Mass-Deployment.md
                 - name: Massdistribution av äldre självbetjäningskomponenter
                   href: dev-itpro/retail-mass-deployment.md
                 - name: Commerce-komponenthändelser för diagnostik och felsökning
@@ -368,7 +372,7 @@
                       href: pos-operations.md
                     - name: Enhetsaktivering av en anpassad Modern POS
                       href: dev-itpro/retail-POS-activation-changes.md
-                    - name: Aktivera Azure Active Directory-autentisering för kassainloggning
+                    - name: Konfigurera Azure Active Directory-autentisering för kassainloggning
                       href: aad-pos-logon.md
                     - name: Produkt- och kundsökning i kassan
                       href: POS-search-improvements.md
@@ -634,6 +638,8 @@
                   href: tender_based_discounts.md
                 - name: Översikt av transportrabatter
                   href: retail-shipping-discount.md
+                - name: Konfigurera present med inköpserbjudanden
+                  href: gift-with-purchase.md
                 - name: Ställa in kuponger
                   href: retail-coupons.md
                 - name: Visa rabatter i kassan
@@ -760,6 +766,8 @@
                   href: notifications-pos.md
                 - name: Sälja kontinuitetsprogram och bearbeta försäljningsorder
                   href: tasks/use-continuity-program.md
+                - name: Aktivera incheckningsmeddelanden för kunder i kassan
+                  href: enable-customer-check-in.md
             - name: Returer
               items:
                 - name: Länkade återbetalningar
@@ -922,6 +930,8 @@
                   href: manage-csp.md
                 - name: Välj bort insamling av webbaktivitetshändelser
                   href: web-activity-opt-out.md
+                - name: Använd måttenhetsinställningar
+                  href: unit-of-measure.md
             - name: Hantera webbplatsens innehåll
               items:
                 - name: Sätt att lägga till innehåll
@@ -1092,6 +1102,8 @@
                       href: delivery-options-module.md
                     - name: Modul för upphämtningsinformation
                       href: pickup-info-module.md
+                    - name: Incheckning för upphämtningsmodul
+                      href: check-in-pickup-module.md
                     - name: Orderinformationsmodul
                       href: order-confirmation-module.md
                     - name: Presentkortsmodul
@@ -1194,6 +1206,8 @@
               href: store-performance-information.md
             - name: 'Ställa in Recency-, frekvens- och penninganalys (RFM)'
               href: set-up-rfm-analysis.md
+            - name: Ställa in Microsoft Clarity i Dynamics 365 Commerce
+              href: set-up-clarity.md
         - name: Globalisering
           items:
             - name: Översikt över räkenskapsintegration för Commerce-kanal
@@ -1202,6 +1216,14 @@
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
             - name: Användardefinierade certifikatprofiler för butiker
               href: localizations/certificate-profiles-for-retail-stores.md
+            - name: Regulatory Configuration Service
+              items:
+                - name: Översikt över Regulatory configuration service
+                  href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory configuration service – Globaliseringsfunktioner
+                  href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
+                - name: Skapa ER-konfigurationer i Regulatory configuration service och överföra dem till den globala databasen
+                  href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
             - name: Österrike
               items:
                 - name: Exempel på skatteregistreringstjänsten för Österrike
@@ -2210,6 +2232,8 @@
                       href: e-commerce-extensibility/module-test-file.md
                     - name: Modul props.autogenerated.ts fil
                       href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
+                    - name: Förinställda modulkonfigurationer
+                      href: e-commerce-extensibility/module-config-presets.md
                 - name: Utveckla moduler
                   items:
                     - name: Skapa ny modul
@@ -2416,6 +2440,18 @@
                   href: dev-itpro/cart-view-handlers.md
                 - name: Lägga till anpassade knappar i kassans rubrikfält
                   href: dev-itpro/pos-header-bar.md
+                - name: SDK för kassaoberoende förpackning
+                  items:
+                    - name: Översikt över kassatillägg
+                      href: dev-itpro/pos-extension/pos-extension-overview.md
+                    - name: Komma igång med kassatillägg
+                      href: dev-itpro/pos-extension/pos-extension-getting-started.md
+                    - name: Skapa ett projekt för tilläggspaket för kassa
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
+                    - name: Skapa en appx-fil för Modern POS-tillägg
+                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                    - name: Felsöka ett kassatillägg
+                      href: dev-itpro/pos-extension/debug-pos-extension.md
             - name: Utbyggbarhet för Hardware Station
               items:
                 - name: Hardware Station och utbyggbarhet

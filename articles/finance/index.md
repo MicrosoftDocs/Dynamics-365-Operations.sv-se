@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fcd7be16d20d93adaa81e6183912c89be0a301d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 33c12fc47dc5781867ad6872a8be2a9ae1f28a2d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813493"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890339"
 ---
 # <a name="finance-home-page"></a>Finance – startsida
 
@@ -38,11 +38,11 @@ Välj ett funktionsområde för att läsa mer om det.
         - [Kostnadsredovisning](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Utläggshantering](expense-management/expense-management.md)
-        - [Ekonomisk rapportering](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
+        - [Utläggshantering](/dynamics365/project-operations/prod-exp/expense-management)
+        - [Ekonomisk rapportering](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
         - [Anläggningstillgångar](fixed-assets/fixed-assets.md)
         - [Redovisning och ekonomisk rapportering](general-ledger/general-ledger.md) 
-        - [Projekthantering och redovisning](project-management/overview-project-management-accounting.md)
+        - [Projekthantering och redovisning](/dynamics365/project-operations/prod-pma/overview-project-management-accounting)
         - [Offentlig sektor](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
@@ -65,7 +65,7 @@ Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen 
 
 ### <a name="countryregion-functionality"></a>Funktionsland/-region
 
-Regleringar för land/region påverkar momsinställningarna och andra områden inom ekonomisk styrning. Mer information om lands- och regionspecifika funktioner finns i avsnittet [Lokaliserings- och regelfunktioner](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) i hjälpinnehållet.
+Regleringar för land/region påverkar momsinställningarna och andra områden inom ekonomisk styrning. Mer information om lands- och regionspecifika funktioner finns i avsnittet [Lokaliserings- och regelfunktioner](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json) i hjälpinnehållet.
 
 ### <a name="additional-content"></a>Ytterligare innehåll
 
@@ -73,6 +73,6 @@ Funktionerna för hantering av leveranskedjan omfattar delar av procure-to-pay-p
 
 ## <a name="elearning-courses"></a>E-utbildningskurser
 
-Information om onlinekurser och utbildning finns i [Dynamics 365 Finance om Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-finance&resource_type=learning%20path).
+Information om onlinekurser och utbildning finns i [Dynamics 365 Finance om Microsoft Learn](/learn/browse/?products=dynamics-finance&resource_type=learning+path).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

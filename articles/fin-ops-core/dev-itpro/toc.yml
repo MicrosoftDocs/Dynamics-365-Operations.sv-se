@@ -14,12 +14,12 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Platform updates
                   href: get-started/whats-new-home-page.md
+                - name: Platform updates för 10.0.19 (juli 2021)
+                  href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Platform updates för 10.0.18 (maj 2021)
                   href: get-started/whats-new-platform-updates-10-0-18.md
                 - name: Platform updates för 10.0.17 (april 2021)
                   href: get-started/whats-new-platform-updates-10-0-17.md
-                - name: Platform updates för 10.0.16 (februari 2021)
-                  href: get-started/whats-new-platform-updates-10-0-16.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -303,19 +303,19 @@
                         - name: Konfigurera Project Service Automation-integration
                           items:
                             - name: Översikt över Project Service Automation
-                              href: ../../finance/project-management/PSA-integration.md
+                              href: /dynamics365/project-operations/prod-pma/PSA-integration
                             - name: Parametrar för Project Service Automation-integration
-                              href: ../../finance/project-management/PSA-parameters.md
+                              href: /dynamics365/project-operations/prod-pma/PSA-parameters
                             - name: Synkronisera projektkontrakt och projekt
-                              href: ../../finance/project-management/project-contracts-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-contracts-templates
                             - name: Synkronisera projektuppgifter
-                              href: ../../finance/project-management/project-tasks-template.md
+                              href: /dynamics365/project-operations/prod-pma/project-tasks-template
                             - name: Synkronisera utgiftskategorier för projekt
-                              href: ../../finance/project-management/project-categories-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-categories-templates
                             - name: Synkronisera projektuppskattningar med projektprognoser
-                              href: ../../finance/project-management/project-estimates-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-estimates-templates
                             - name: Synkronisera projektutfall med projektets integrationsjournal
-                              href: ../../finance/project-management/project-actuals-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-actuals-templates
             - name: Konsumera externa webbtjänster
               href: data-entities/consume-external-web-service.md
             - name: Elektroniska meddelanden
@@ -691,7 +691,7 @@
                     - name: Skapa modeller och datamodellelement – översikt
                       href: dev-tools/create-data-model-elements.md
                     - name: Riktlinjer för namngivning av tillägg
-                      href: extensibility/NamingGuidelines.md
+                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
                     - name: Inaktivera modellanpassning och avskrivningsfunktioner
                       href: dev-tools/lock-models.md
                 - name: Rapport med anpassningsanalys
@@ -1072,8 +1072,6 @@
                   href: lifecycle-services/getting-started-lcs.md
                 - name: Nyheter och ändringar i Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
-                - name: Kända problem
-                  href: lifecycle-services/known-issues.md
                 - name: Borttagna eller inaktuella funktioner i Lifecycle Services (LCS)
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Användarhandbok för Lifecycle Services
@@ -1400,12 +1398,16 @@
               href: perf-test/rsat/rsat-install-configure.md
             - name: Använda Regression Suite Automation Tool
               href: perf-test/rsat/rsat-run.md
+            - name: Underhålla testfall i Regression Suite Automation Tool
+              href: perf-test/rsat/rsat-maintain-test-cases.md
             - name: Validera förväntade värden
               href: perf-test/rsat/rsat-validate-expected.md
             - name: Kedja testfall
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Härledda testfall
               href: perf-test/rsat/rsat-derived-test-cases.md
+            - name: Uppgradera parameterfilerna
+              href: perf-test/rsat/rsat-upgrade-parameter-files.md
             - name: Självstudier för Regression Suite Automation Tool
               href: perf-test/rsat/rsat-tutorial.md
             - name: Konfigurera icke-administratörsanvändare
@@ -1582,6 +1584,8 @@
                   href: migration-upgrade/prepare-data-upgrade.md
                 - name: AX 2012-uppgradering – Datauppgradering i sandbox-miljöer med dacpac-process
                   href: migration-upgrade/upgrade-data-sandbox-dacpac.md
+                - name: Uppgradera från AX 2012 – SQL Transactional Replication
+                  href: database/replication-setup.md
                 - name: AX 2012-uppgradering – Datauppgradering i sandbox-miljöer
                   href: migration-upgrade/upgrade-data-sandbox.md
                 - name: AX 2012-uppgradering – Lokala miljöer

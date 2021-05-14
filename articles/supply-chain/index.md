@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d82f31212245044f27558c3cdea78fbcf4988afb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e8b92dc975fdae74e134d86169a2b9ceffe63b62
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829966"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909801"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management – startsida
 
@@ -94,16 +94,16 @@ I följande inspelningar från en teknisk konferens diskuteras funktionaliteten 
 
 ## <a name="blogs"></a>Bloggar
 
-Det finns många avsnitt om tillverkning och hantering av underleverantörer i [teambloggen Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg/) och [teambloggen Supply Chain Management i Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De flesta av inläggen skrevs för den föregående versionen, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
+Det finns många avsnitt om tillverkning och hantering av underleverantörer i [teambloggen Dynamics AX Manufacturing R&D](/archive/blogs/axmfg/) och [teambloggen Supply Chain Management i Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De flesta av inläggen skrevs för den föregående versionen, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
 
 ## <a name="white-papers"></a>White paper
 
-- [Lean Manufacturing: CTP (Capable To Promise) och tidsplanering av kanban-jobb](https://docs.microsoft.com/dynamics/s-e/)
+- [Lean Manufacturing: CTP (Capable To Promise) och tidsplanering av kanban-jobb](/dynamics/s-e/)
 - [Strukturlisteberäkning med hjälp av kostnadsredovisningsblad](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## <a name="elearning-courses"></a>E-utbildningskurser
 
-Information om onlinekurser och utbildning finns [Dynamics 365 Supply Chain Management i Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
+Information om onlinekurser och utbildning finns [Dynamics 365 Supply Chain Management i Microsoft Learn](/learn/browse/?products=dynamics-scm&resource_type=learning+path).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -14,78 +14,57 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0718db77399901acc8c88278c5b373b77b3cb16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 023354b0e2973f63411bf81cbeb0344333c49112
+ms.sourcegitcommit: d63e7e0593084a61362a6cad3937b1fd956c384f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811320"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923035"
 ---
 # <a name="financial-reporting-faq"></a>Frågor och svar om ekonomisk rapportering 
 
-Det här avsnittet finns en lista med frågor om ekonomisk rapportering som andra användare har haft. 
-
+Det här avsnittet innehåller svar på vanliga frågor om ekonomisk rapportering. 
 
 ## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a>Hur begränsar jag åtkomsten till en rapport med hjälp av trädsäkerhet?
 
-Scenario: Demoföretaget USMF har en balansräkningsrapport som alla användare av Ekonomisk rapportering inte ska kunna visa i D365. Lösning: Du kan använda trädsäkerhet för att begränsa åtkomsten till en enskild rapport så att bara vissa användare kan komma åt rapporten. 
+Följande exempel visar hur du begränsar åtkomsten till en rapport med hjälp av trädsäkerhet.
 
-1.  Logga in på Rapportdesignern i ekonomisk rapportering
+Demonstrationsföretaget USMF har en balansräkningsrapport som inte alla användare av ekonomisk rapportering ska ha åtkomst till. Du kan använda trädsäkerhet för att begränsa åtkomsten till en enskild rapport så att bara vissa användare kan komma åt rapporten. Gör på följande sätt om du vill begränsa åtkomsten: 
 
-2.  Skapa en ny träddefinition (Arkiv | Nytt | Träddefinition) a.    Dubbelklicka på **Sammanfattning** i kolumnen **Enhetssäkerhet**.
-  i.    Klicka på Användare och grupper.  
-          1. Välj de användare eller grupper som ska ha tillgång till rapporten. 
-          
-[![användarskärm](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
+1. Logga in i Financial Reporter Report Designer.
+2. Skapa en ny träddefinition. Gå till **Arkiv > Ny > Träddefinition**.
+3. Dubbelklicka på **Sammanfattning** i kolumnen **Enhetssäkerhet**.
+4. Välj **Användare och grupper**.  
+5. Välj de användare eller grupper som behöver ha åtkomst till rapporten. 
+6. Välj **Spara**.
+7. Lägg till den nya träddefinitionen i rapportdefinitionen.
+8. Välj Inställning i **träddefinitionen**. Välj **Ta med alla enheter** under **Val av rapportenhet**.
 
-[![säkerhetsskärm](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)
+## <a name="how-do-i-identify-which-accounts-do-not-match-my-balances"></a>Hur identifierar jag vilka konton som inte matchar mina saldon?
 
-  b.    Klicka på **Spara**.
-  
-[![knappen Spara](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)
+Om du har en rapport som inte har matchande saldon kan du vidta följande åtgärder för att identifiera dessa konton och avvikelser. 
 
-3.  Lägg till den nya träddefinitionen i rapportdefinitionen
+**Financial Reporter Report Designer**
+1. Skapa en ny raddefinition i Financial Reporter Report Designer 
+2. Välj **Redigera > Infoga rader från dimensioner**.
+3. Välj **Huvudkonto**.  
+4. Välj **OK**.
+5. Spara raddefinitionen.
+6. Skapa en ny kolumndefinition
+7. Skapa en ny rapportdefinition.
+8. Välj **Inställningar** och avmarkera det här alternativet.  
+9. Skapa rapporten. 
+10. Exportera rapporten till Microsoft Excel.
 
-[![formulär för träddefinition](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)
+**Dynamics 365 Finance** 
+1. I Dynamics 365 Finance, gå till **Redovisning > Förfrågningar och rapporter > Råbalans**.
+2. Ställ in följande parametrar:
+   - **Från datum** – Ange räkenskapsårets början.
+   - **Till datum** – Ange det datum som du genererar rapporten för.
+   - **Ekonomisk dimension** – Ange detta fält till **huvudkontouppsättning**.
+ 3. Välj **Beräkna**.
+ 4. Exportera rapporten till Microsoft Excel.
 
-A.  När du är i träddefinitionen klickar du på Inställningar och under "Val av rapportenhet" i "Ta med alla enheter"
-
-[![formuläret Val av rapportenhet](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)
-
-**Före:** [![skärmdump för före](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)
-
-**Efter:** [![skärmdump för efter](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)
-
-Obs! Orsaken till meddelandet ovan är att min användare inte har tillgång till rapporten efter att ha tillämpat enhetssäkerhet.
-
-
-
-## <a name="how-do-i-determine-which-accounts-do-not-matching-my-balances-in-d365"></a>Hur kan jag ta reda på vilka konton som inte matchar mina saldon i D365?
-
-När du har en rapport som inte matchar vad du förväntade dig i D365, kan du följa några steg som beskrivs här för att identifiera dessa konton och avvikelserna. 
-
-### <a name="in-financial-reporter-report-designer"></a>I Rapportdesignern i ekonomisk rapportering
-
-1.  Skapa en ny raddefinition a.    Klicka på Redigera | Infoga rader från Dimensioner i.  Välj MainAccount [![Välj huvudskärmen_](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)
-    
-    ii. Klicka på OK b.    Spara raddefinitionen
-
-2.  Skapa en ny kolumndefinition     [![Skapa en ny kolumndefinition](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)
-
-3.  Skapa en ny rapportdefinition a.    Klicka på Inställningar och avmarkera [![formuläret Inställningar](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png)
-   
-4.  Skapa rapporten. 
-
-5.  Exportera rapporten till Excel.
-
-### <a name="in-d365"></a>I D365: 
-1.  Klicka på Redovisning | Förfrågningar och rapporter | Råbalans a.    Parametrar i.  Från datum: Räkenskapsårets början ii. Till datum: Datumet du genererade rapporten för iii.    Ekonomisk dimensionsuppsättning "Huvudkontouppsättning" [![Huvudkontoformulär](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)
-      
-  b.    Klicka på Beräkna
-
-2.  Exportera rapporten till Excel
-
-Du bör nu kunna kopiera data från Excel-rapporten i ekonomisk rapportering och till D365-råbalansrapporten och jämföra kolumnerna "Utgående balans".
-
+Du bör nu kunna kopiera data från Excel-rapporten i ekonomisk rapportering till råbalansrapporten så att du kan jämföra kolumnerna **Utgående balans**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95989a395781e790da6aedc9079c3aaebf98f9ae
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b3e7ba3405b6113bf612c685c4cccd9cf50f1187
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748475"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920867"
 ---
 # <a name="globalization-resources"></a>Globaliseringsresurser
 
 ## <a name="local-and-regional-deployments"></a>Lokala och regionala distributioner
 Om dina myndighetsregleringar kräver att data lagras på ett annat sätt eller att de underhålls på ett annat sätt vad som krävs för andra länder/regioner, kan det finnas lands-/regionspecifika krav som du måste ta hänsyn till under distributionen. Följande resurser kan vara relevanta för dig:
 
-[Finance and Operations-appar som drivs av 21Vianet i Kina](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Finance and Operations-apparna av 21Vianet i Kina](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Lokaliserings- och regelfunktioner
 
@@ -60,7 +60,7 @@ Följande resurser innehåller information om planerade och nya lokaliseringsfun
 -   [Skicka notifieringar om lands-/regionspecifika regelfunktioner](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Utgivningsplaner för Dynamics 365
-[Utgivningsplaner för Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) innehåller beskrivningar av förbättrade funktioner som planeras för affärsapparna och applattformen för Dynamics 365. 
+[Utgivningsplaner för Dynamics 365](/business-applications-release-notes/) innehåller beskrivningar av förbättrade funktioner som planeras för affärsapparna och applattformen för Dynamics 365. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations-appar – Nyheter
 [Nyheter och ändringar på startsidan för Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) innehåller de funktioner som ingår i olika versioner av Finance and Operations-apparna.
