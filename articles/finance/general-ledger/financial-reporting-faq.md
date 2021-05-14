@@ -14,78 +14,57 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0718db77399901acc8c88278c5b373b77b3cb16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 023354b0e2973f63411bf81cbeb0344333c49112
+ms.sourcegitcommit: d63e7e0593084a61362a6cad3937b1fd956c384f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811320"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923035"
 ---
-# <a name="financial-reporting-faq"></a><span data-ttu-id="0cff4-103">Frågor och svar om ekonomisk rapportering</span><span class="sxs-lookup"><span data-stu-id="0cff4-103">Financial reporting FAQ</span></span> 
+# <a name="financial-reporting-faq"></a><span data-ttu-id="cb9ba-103">Frågor och svar om ekonomisk rapportering</span><span class="sxs-lookup"><span data-stu-id="cb9ba-103">Financial reporting FAQ</span></span> 
 
-<span data-ttu-id="0cff4-104">Det här avsnittet finns en lista med frågor om ekonomisk rapportering som andra användare har haft.</span><span class="sxs-lookup"><span data-stu-id="0cff4-104">This topic lists questions related to financial reporting that other users have had.</span></span> 
+<span data-ttu-id="cb9ba-104">Det här avsnittet innehåller svar på vanliga frågor om ekonomisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-104">This topic provides answers to frequently asked questions about financial reporting.</span></span> 
 
+## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a><span data-ttu-id="cb9ba-105">Hur begränsar jag åtkomsten till en rapport med hjälp av trädsäkerhet?</span><span class="sxs-lookup"><span data-stu-id="cb9ba-105">How do I restrict access to a report using tree security?</span></span>
 
-## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a><span data-ttu-id="0cff4-105">Hur begränsar jag åtkomsten till en rapport med hjälp av trädsäkerhet?</span><span class="sxs-lookup"><span data-stu-id="0cff4-105">How do I restrict access to a report using Tree security?</span></span>
+<span data-ttu-id="cb9ba-106">Följande exempel visar hur du begränsar åtkomsten till en rapport med hjälp av trädsäkerhet.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-106">The following example shows how to restrict access to a report using tree security.</span></span>
 
-<span data-ttu-id="0cff4-106">Scenario: Demoföretaget USMF har en balansräkningsrapport som alla användare av Ekonomisk rapportering inte ska kunna visa i D365.</span><span class="sxs-lookup"><span data-stu-id="0cff4-106">Scenario: The USMF demo company has a Balance sheet report that it doesn’t want all Financial reporting users to be able to view in D365.</span></span> <span data-ttu-id="0cff4-107">Lösning: Du kan använda trädsäkerhet för att begränsa åtkomsten till en enskild rapport så att bara vissa användare kan komma åt rapporten.</span><span class="sxs-lookup"><span data-stu-id="0cff4-107">Solution: You can utilize Tree security to restrict access to a single report so that only certain users can access the report.</span></span> 
+<span data-ttu-id="cb9ba-107">Demonstrationsföretaget USMF har en balansräkningsrapport som inte alla användare av ekonomisk rapportering ska ha åtkomst till.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-107">The USMF demo company has a Balance sheet report that not all Financial reporting users should have access to.</span></span> <span data-ttu-id="cb9ba-108">Du kan använda trädsäkerhet för att begränsa åtkomsten till en enskild rapport så att bara vissa användare kan komma åt rapporten.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-108">To restrict access, you can use tree security to restrict access to a single report so that only certain users can access the report.</span></span> <span data-ttu-id="cb9ba-109">Gör på följande sätt om du vill begränsa åtkomsten:</span><span class="sxs-lookup"><span data-stu-id="cb9ba-109">Follow these steps to restrict access:</span></span> 
 
-1.  <span data-ttu-id="0cff4-108">Logga in på Rapportdesignern i ekonomisk rapportering</span><span class="sxs-lookup"><span data-stu-id="0cff4-108">Log into Financial Reporter Report Designer</span></span>
+1. <span data-ttu-id="cb9ba-110">Logga in i Financial Reporter Report Designer.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-110">Sign in to Financial Reporter Report Designer.</span></span>
+2. <span data-ttu-id="cb9ba-111">Skapa en ny träddefinition.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-111">Create a new tree definition.</span></span> <span data-ttu-id="cb9ba-112">Gå till **Arkiv > Ny > Träddefinition**.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-112">Go to **File > New > Tree Definition**.</span></span>
+3. <span data-ttu-id="cb9ba-113">Dubbelklicka på **Sammanfattning** i kolumnen **Enhetssäkerhet**.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-113">Double-click the **Summary** line in the **Unit Security** column.</span></span>
+4. <span data-ttu-id="cb9ba-114">Välj **Användare och grupper**.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-114">Select **Users and Groups**.</span></span>  
+5. <span data-ttu-id="cb9ba-115">Välj de användare eller grupper som behöver ha åtkomst till rapporten.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-115">Select the users or groups that need access to this report.</span></span> 
+6. <span data-ttu-id="cb9ba-116">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-116">Select **Save**.</span></span>
+7. <span data-ttu-id="cb9ba-117">Lägg till den nya träddefinitionen i rapportdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-117">In the report definition, add your new tree definition.</span></span>
+8. <span data-ttu-id="cb9ba-118">Välj Inställning i **träddefinitionen**.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-118">In the tree definition, select **Setting**.</span></span> <span data-ttu-id="cb9ba-119">Välj **Ta med alla enheter** under **Val av rapportenhet**.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-119">Under **Reporting unit selection**, select **Include all units**.</span></span>
 
-2.  <span data-ttu-id="0cff4-109">Skapa en ny träddefinition (Arkiv | Nytt | Träddefinition) a.</span><span class="sxs-lookup"><span data-stu-id="0cff4-109">Create a new Tree Definition (File | New | Tree Definition) a.</span></span>    <span data-ttu-id="0cff4-110">Dubbelklicka på **Sammanfattning** i kolumnen **Enhetssäkerhet**.</span><span class="sxs-lookup"><span data-stu-id="0cff4-110">Double-click the **Summary** line in the **Unit Security** column.</span></span>
-  <span data-ttu-id="0cff4-111">i.</span><span class="sxs-lookup"><span data-stu-id="0cff4-111">i.</span></span>    <span data-ttu-id="0cff4-112">Klicka på Användare och grupper.</span><span class="sxs-lookup"><span data-stu-id="0cff4-112">Click Users and Groups.</span></span>  
-          <span data-ttu-id="0cff4-113">1. Välj de användare eller grupper som ska ha tillgång till rapporten.</span><span class="sxs-lookup"><span data-stu-id="0cff4-113">1.    Select the User(s) or Group that would like to access this report.</span></span> 
-          
-<span data-ttu-id="0cff4-114">[![användarskärm](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)</span><span class="sxs-lookup"><span data-stu-id="0cff4-114">[![user screen](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)</span></span>
+## <a name="how-do-i-identify-which-accounts-do-not-match-my-balances"></a><span data-ttu-id="cb9ba-120">Hur identifierar jag vilka konton som inte matchar mina saldon?</span><span class="sxs-lookup"><span data-stu-id="cb9ba-120">How do I identify which accounts do not match my balances?</span></span>
 
-<span data-ttu-id="0cff4-115">[![säkerhetsskärm](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)</span><span class="sxs-lookup"><span data-stu-id="0cff4-115">[![security screen](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)</span></span>
+<span data-ttu-id="cb9ba-121">Om du har en rapport som inte har matchande saldon kan du vidta följande åtgärder för att identifiera dessa konton och avvikelser.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-121">If you have a report that doesn't have matching balances, here are some steps you can take to identify each of the accounts and variances.</span></span> 
 
-  <span data-ttu-id="0cff4-116">b.</span><span class="sxs-lookup"><span data-stu-id="0cff4-116">b.</span></span>    <span data-ttu-id="0cff4-117">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="0cff4-117">Click **Save**.</span></span>
-  
-<span data-ttu-id="0cff4-118">[![knappen Spara](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)</span><span class="sxs-lookup"><span data-stu-id="0cff4-118">[![save button](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)</span></span>
+<span data-ttu-id="cb9ba-122">**Financial Reporter Report Designer**</span><span class="sxs-lookup"><span data-stu-id="cb9ba-122">**Financial Reporter Report Designer**</span></span>
+1. <span data-ttu-id="cb9ba-123">Skapa en ny raddefinition i Financial Reporter Report Designer</span><span class="sxs-lookup"><span data-stu-id="cb9ba-123">In Financial Reporter Report Designer, create a new row definition.</span></span> 
+2. <span data-ttu-id="cb9ba-124">Välj **Redigera > Infoga rader från dimensioner**.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-124">Select **Edit > Insert Rows from Dimensions**.</span></span>
+3. <span data-ttu-id="cb9ba-125">Välj **Huvudkonto**.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-125">Select **MainAccount**.</span></span>  
+4. <span data-ttu-id="cb9ba-126">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-126">Select **OK**.</span></span>
+5. <span data-ttu-id="cb9ba-127">Spara raddefinitionen.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-127">Save the row definition.</span></span>
+6. <span data-ttu-id="cb9ba-128">Skapa en ny kolumndefinition</span><span class="sxs-lookup"><span data-stu-id="cb9ba-128">Create a new column definition</span></span>
+7. <span data-ttu-id="cb9ba-129">Skapa en ny rapportdefinition.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-129">Create a new report definition.</span></span>
+8. <span data-ttu-id="cb9ba-130">Välj **Inställningar** och avmarkera det här alternativet.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-130">Select **Settings** and unmark this option.</span></span>  
+9. <span data-ttu-id="cb9ba-131">Skapa rapporten.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-131">Generate the report.</span></span> 
+10. <span data-ttu-id="cb9ba-132">Exportera rapporten till Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-132">Export the report to Microsoft Excel.</span></span>
 
-3.  <span data-ttu-id="0cff4-119">Lägg till den nya träddefinitionen i rapportdefinitionen</span><span class="sxs-lookup"><span data-stu-id="0cff4-119">In your Report Definition add your new Tree Definition</span></span>
+<span data-ttu-id="cb9ba-133">**Dynamics 365 Finance**</span><span class="sxs-lookup"><span data-stu-id="cb9ba-133">**Dynamics 365 Finance**</span></span> 
+1. <span data-ttu-id="cb9ba-134">I Dynamics 365 Finance, gå till **Redovisning > Förfrågningar och rapporter > Råbalans**.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-134">In Dynamics 365 Finance, go to **General Ledger > Inquiries and Reports > Trial Balance**.</span></span>
+2. <span data-ttu-id="cb9ba-135">Ställ in följande parametrar:</span><span class="sxs-lookup"><span data-stu-id="cb9ba-135">Set the following parameters:</span></span>
+   - <span data-ttu-id="cb9ba-136">**Från datum** – Ange räkenskapsårets början.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-136">**From Date** - Enter the start of the fiscal year.</span></span>
+   - <span data-ttu-id="cb9ba-137">**Till datum** – Ange det datum som du genererar rapporten för.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-137">**To Date** - Enter the date you are generating the report for.</span></span>
+   - <span data-ttu-id="cb9ba-138">**Ekonomisk dimension** – Ange detta fält till **huvudkontouppsättning**.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-138">**Financial Dimension** - Set this field to **Main Account set**.</span></span>
+ 3. <span data-ttu-id="cb9ba-139">Välj **Beräkna**.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-139">Select **Calculate**.</span></span>
+ 4. <span data-ttu-id="cb9ba-140">Exportera rapporten till Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-140">Export the report to Microsoft Excel.</span></span>
 
-<span data-ttu-id="0cff4-120">[![formulär för träddefinition](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)</span><span class="sxs-lookup"><span data-stu-id="0cff4-120">[![tree definition form](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)</span></span>
-
-<span data-ttu-id="0cff4-121">A.</span><span class="sxs-lookup"><span data-stu-id="0cff4-121">A.</span></span>  <span data-ttu-id="0cff4-122">När du är i träddefinitionen klickar du på Inställningar och under "Val av rapportenhet" i "Ta med alla enheter"</span><span class="sxs-lookup"><span data-stu-id="0cff4-122">While in the Tree Definition click on Setting and under “Reporting unit selection” check “Include all units”</span></span>
-
-<span data-ttu-id="0cff4-123">[![formuläret Val av rapportenhet](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)</span><span class="sxs-lookup"><span data-stu-id="0cff4-123">[![reporting unit selection form](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)</span></span>
-
-<span data-ttu-id="0cff4-124">**Före:** [![skärmdump för före](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)</span><span class="sxs-lookup"><span data-stu-id="0cff4-124">**Before:** [![before screenshot](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)</span></span>
-
-<span data-ttu-id="0cff4-125">**Efter:** [![skärmdump för efter](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)</span><span class="sxs-lookup"><span data-stu-id="0cff4-125">**After:** [![after screenshot](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)</span></span>
-
-<span data-ttu-id="0cff4-126">Obs! Orsaken till meddelandet ovan är att min användare inte har tillgång till rapporten efter att ha tillämpat enhetssäkerhet.</span><span class="sxs-lookup"><span data-stu-id="0cff4-126">Note: Reason for the above message is my user does not have access to that report after applying Unit Security</span></span>
-
-
-
-## <a name="how-do-i-determine-which-accounts-do-not-matching-my-balances-in-d365"></a><span data-ttu-id="0cff4-127">Hur kan jag ta reda på vilka konton som inte matchar mina saldon i D365?</span><span class="sxs-lookup"><span data-stu-id="0cff4-127">How do I determine which account(s) do not matching my balances in D365?</span></span>
-
-<span data-ttu-id="0cff4-128">När du har en rapport som inte matchar vad du förväntade dig i D365, kan du följa några steg som beskrivs här för att identifiera dessa konton och avvikelserna.</span><span class="sxs-lookup"><span data-stu-id="0cff4-128">When you have a report that doesn't match what you would expect in D365, here are some steps you could take to identify those accounts and the variances.</span></span> 
-
-### <a name="in-financial-reporter-report-designer"></a><span data-ttu-id="0cff4-129">I Rapportdesignern i ekonomisk rapportering</span><span class="sxs-lookup"><span data-stu-id="0cff4-129">In Financial Reporter Report Designer</span></span>
-
-1.  <span data-ttu-id="0cff4-130">Skapa en ny raddefinition a.</span><span class="sxs-lookup"><span data-stu-id="0cff4-130">Create a new Row Definition a.</span></span>    <span data-ttu-id="0cff4-131">Klicka på Redigera | Infoga rader från Dimensioner i.</span><span class="sxs-lookup"><span data-stu-id="0cff4-131">Click Edit | Insert Rows from Dimensions i.</span></span>  <span data-ttu-id="0cff4-132">Välj MainAccount [![Välj huvudskärmen_](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)</span><span class="sxs-lookup"><span data-stu-id="0cff4-132">Select MainAccount [![Select Main screen_](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)</span></span>
-    
-    <span data-ttu-id="0cff4-133">ii.</span><span class="sxs-lookup"><span data-stu-id="0cff4-133">ii.</span></span> <span data-ttu-id="0cff4-134">Klicka på OK b.</span><span class="sxs-lookup"><span data-stu-id="0cff4-134">Click Ok b.</span></span>    <span data-ttu-id="0cff4-135">Spara raddefinitionen</span><span class="sxs-lookup"><span data-stu-id="0cff4-135">Save the Row Definition</span></span>
-
-2.  <span data-ttu-id="0cff4-136">Skapa en ny kolumndefinition     [![Skapa en ny kolumndefinition](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)</span><span class="sxs-lookup"><span data-stu-id="0cff4-136">Create a new Column Definition     [![Create a new column definition](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)</span></span>
-
-3.  <span data-ttu-id="0cff4-137">Skapa en ny rapportdefinition a.</span><span class="sxs-lookup"><span data-stu-id="0cff4-137">Create a new Report Definition a.</span></span>    <span data-ttu-id="0cff4-138">Klicka på Inställningar och avmarkera [![formuläret Inställningar](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png)</span><span class="sxs-lookup"><span data-stu-id="0cff4-138">Click Settings and uncheck [![Settings form](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png)</span></span>
-   
-4.  <span data-ttu-id="0cff4-139">Skapa rapporten.</span><span class="sxs-lookup"><span data-stu-id="0cff4-139">Generate the Report.</span></span> 
-
-5.  <span data-ttu-id="0cff4-140">Exportera rapporten till Excel.</span><span class="sxs-lookup"><span data-stu-id="0cff4-140">Export the Report to Excel.</span></span>
-
-### <a name="in-d365"></a><span data-ttu-id="0cff4-141">I D365:</span><span class="sxs-lookup"><span data-stu-id="0cff4-141">In D365:</span></span> 
-1.  <span data-ttu-id="0cff4-142">Klicka på Redovisning | Förfrågningar och rapporter | Råbalans a.</span><span class="sxs-lookup"><span data-stu-id="0cff4-142">Click General Ledger | Inquiries and Reports | Trial Balance a.</span></span>    <span data-ttu-id="0cff4-143">Parametrar i.</span><span class="sxs-lookup"><span data-stu-id="0cff4-143">Parameters i.</span></span>  <span data-ttu-id="0cff4-144">Från datum: Räkenskapsårets början ii.</span><span class="sxs-lookup"><span data-stu-id="0cff4-144">From Date: Start of Fiscal Year ii.</span></span> <span data-ttu-id="0cff4-145">Till datum: Datumet du genererade rapporten för iii.</span><span class="sxs-lookup"><span data-stu-id="0cff4-145">To Date: Date you generated the report for iii.</span></span>    <span data-ttu-id="0cff4-146">Ekonomisk dimensionsuppsättning "Huvudkontouppsättning" [![Huvudkontoformulär](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)</span><span class="sxs-lookup"><span data-stu-id="0cff4-146">Financial Dimension Set “Main Account set” [![Main Account Form](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)</span></span>
-      
-  <span data-ttu-id="0cff4-147">b.</span><span class="sxs-lookup"><span data-stu-id="0cff4-147">b.</span></span>    <span data-ttu-id="0cff4-148">Klicka på Beräkna</span><span class="sxs-lookup"><span data-stu-id="0cff4-148">Click Calculate</span></span>
-
-2.  <span data-ttu-id="0cff4-149">Exportera rapporten till Excel</span><span class="sxs-lookup"><span data-stu-id="0cff4-149">Export the report to Excel</span></span>
-
-<span data-ttu-id="0cff4-150">Du bör nu kunna kopiera data från Excel-rapporten i ekonomisk rapportering och till D365-råbalansrapporten och jämföra kolumnerna "Utgående balans".</span><span class="sxs-lookup"><span data-stu-id="0cff4-150">You should now be able to copy the data from the FR Excel Report and to the D365 Trial Balance report and compare the “Closing Balance” columns.</span></span>
-
+<span data-ttu-id="cb9ba-141">Du bör nu kunna kopiera data från Excel-rapporten i ekonomisk rapportering till råbalansrapporten så att du kan jämföra kolumnerna **Utgående balans**.</span><span class="sxs-lookup"><span data-stu-id="cb9ba-141">You should now be able to copy the data from the Financial Reporter Excel report to the Trial Balance report, so you can compare the **Closing Balance** columns.</span></span>
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
