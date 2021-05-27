@@ -78,8 +78,6 @@
                       href: get-started/whats-new-changed-10-0-18.md
                     - name: Finance 10.0.17 (april 2021)
                       href: get-started/whats-new-changed-10-0-17.md
-                    - name: Finance 10.0.16 (februari 2021)
-                      href: get-started/whats-new-changed-10-0-16.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -428,6 +426,8 @@
                   href: accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md
                 - name: Kvitta en kunddelbetalning som har flera rabattperioder
                   href: accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
+                - name: Förskottsbetalningar från kunder
+                  href: accounts-receivable/customer-prepayments.md
                 - name: Återbetala kunder
                   href: accounts-receivable/reimburse-customers.md
                 - name: Kundbetalningar för ett delbelopp
@@ -484,6 +484,8 @@
               href: accounts-receivable/process-collection-letters-example.md
             - name: Ställ in och generera åldersfördelningsinformation för kundreskontra
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Ögonblicksbild av åldersfördelningen för kunder
+              href: accounts-receivable/customer-aging-snapshot.md
             - name: Åldersfördelningsrapport för kunder
               href: accounts-receivable/customer-aging.md
             - name: Skapa en avskrivningsjournal för en kund
@@ -510,8 +512,10 @@
               href: budgeting/position-forecasting.md
             - name: Motiveringsdokument för budgetplanering
               href: budgeting/budget-planning-justification-docs.md
-            - name: Skapa en budget från transaktionskonton och totalkonton
+            - name: Skapa en budget från transaktionskonton och saldokonton
               href: budgeting/create-budget-transaction-accounts-total-accounts.md
+            - name: Budgetplanberättelse
+              href: budgeting/budget-narrative.md
             - name: Budgetplaneringsmallar för Excel
               href: budgeting/budget-planning-excel-templates.md
             - name: Utöka budgetplaneringens layout
@@ -1146,6 +1150,16 @@
                   href: general-ledger/audit-policy-violations-cases.md
                 - name: Definiera granskningspolicyer för källdokument
                   href: general-ledger/tasks/define-audit-policies-source-documents.md
+            - name: Felsökning
+              items:
+                - name: Ändra redovisnings- eller rapporteringsvaluta
+                  href: general-ledger/add-change-acctg-rprtg-crrncy.md
+                - name: Ändra eller tilldela om en redovisningskalender
+                  href: general-ledger/change-mdfy-clndr-to-ledger.md
+                - name: Omvända inställningar i journaler och på rader
+                  href: general-ledger/rvrs-settgs-on-jrnls-lines.md
+                - name: Ingående balanser saknas i årsbokslut
+                  href: general-ledger/yec-mssng-open-blnces.md
         - name: Ekonomisk rapportering
           items:
             - name: Kom i gång med ekonomisk rapportering
@@ -1648,8 +1662,16 @@
                       href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
                   href: localizations/latam-bra-sped-ecd.md
-                - name: SPED-Reinf skattedeklaration
-                  href: localizations/latam-bra-sped-reinf.md
+                - name: SPED-Reinf
+                  items:
+                    - name: SPED-Reinf – översikt
+                      href: localizations/latam-bra-sped-reinf-overview.md
+                    - name: Ställ in elektronisk meddelande
+                      href: localizations/latam-bra-sped-reinf-electronic-messages.md
+                    - name: Ställ in skatteböcker
+                      href: localizations/latam-bra-sped-reinf-setup-fiscal-books.md
+                    - name: Händelser
+                      href: localizations/latam-bra-sped-reinf.md
                 - name: SPED-skattelösning 13/2019 RJ
                   href: localizations/latam-bra-resolution-13-2019-RJ.md
                 - name: SPED-skatt 2020 – kompletterande information om ICMS-ST för SPED-skattelayout 014
@@ -1782,9 +1804,11 @@
                   href: localizations/tasks/user-operation-log-china-working-rule.md
                 - name: Vanliga frågor om momskundfakturor
                   href: localizations/apac-chn-tax-integration-vat-customer-invoices.md
-            - name: Tjeckien
+                - name: GB/T 24589-2010 export
+                  href: localizations/apac-chn-gbt-24589-2010.md
+            - name: Republiken Tjeckien
               items:
-                - name: Tjeckien – översikt
+                - name: Republiken Tjeckien
                   href: localizations/czech-republic.md
                 - name: Kreditfaktura för kassarabatt
                   href: localizations/emea-cze-credit-note-cash-discount.md
@@ -2038,8 +2062,18 @@
                   href: localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
                 - name: Kronologiska fakturor och verifikationer
                   href: localizations/emea-fra-chronological-invoices-vouchers.md
-                - name: Skapa en standardverifieringsfil för Frankrike (FEC)
-                  href: localizations/emea-fra-fec-audit-file.md
+                - name: Verifieringsfil för Frankrike
+                  items:
+                    - name: Verifieringsfil för Frankrike – översikt
+                      href: localizations/emea-fra-fec-audit-file.md
+                    - name: Förutsättningar för att skapa en FEC-verifieringsfil i Frankrike
+                      href: localizations/emea-fra-fec-audit-file-pre-requisites.md
+                    - name: Struktur för finansdatakällor för FEC
+                      href: localizations/emea-fra-fec-audit-file-structure.md
+                    - name: Förbered din miljö för att generera en FEC
+                      href: localizations/emea-fra-fec-audit-file-setup.md
+                    - name: Generera en FEC i Dynamics 365 Finance
+                      href: localizations/emea-fra-fec-audit-file-generation.md
                 - name: Kontoutdrag för kund och leverantör
                   href: localizations/tasks/fr-00002-customer-vendor-account-statements.md
                 - name: Daglig ränteberäkning för sen betalning och engångsbelopp på faktura och kravbrev
@@ -2392,6 +2426,84 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: Överför kapitalvaror till anläggningstillgången
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
+                - name: 'TDS (moms), Indien'
+                  items:
+                    - name: Översikt över Tax Deducted at Source (TDS) i Indien
+                      href: localizations/apac-ind-TDS-India-TDS-overview.md
+                    - name: Grundinställning för TDS
+                      items:
+                        - name: Ställ in TDS-parametrar
+                          href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+                        - name: Ställa in huvudbokskonton för TDS
+                          href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+                        - name: Ställ in TDS-registreringsnummer för juridiska personer
+                          href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                        - name: Ställ in källskattemyndigheter för skattetypen TDS
+                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                        - name: Ställ in skattekomponenter för skattetypen TDS
+                          href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+                        - name: Ställ in källskattekoder för skattetypen TDS
+                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                        - name: Ställ in kvittningsperiod för källskatt för skattetypen TDS
+                          href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+                        - name: Ställ in rapporteringskoder för källskatt för skattetypen TDS
+                          href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+                        - name: Ställ in källskattekoder för skattetypen TDS
+                          href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
+                        - name: Bifoga TDS-momskoder till TDS-momsgrupper och definiera formeln för beräkning av TDS
+                          href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+                        - name: Registrera TDS-koncessionscertifikatnummer
+                          href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+                        - name: Ange TDS-parametrar i Leverantörsreskontra och Kundreskontra
+                          href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+                        - name: Ställ in betalningsplaner med TDS-allokering
+                          href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+                        - name: Ställ in betalningsavgifter för TDS-myndighetsbetalningar
+                          href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+                        - name: 'Informationsinställning för TDS-grupp, PAN och TAN för leverantörer och kunder'
+                          href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+                    - name: Formeldesigner och tröskelvärdegräns för TDS-beräkning
+                      items:
+                        - name: Formeldesigner för TDS-beräkningar
+                          href: localizations/apac-ind-TDS-Formula-designer.md
+                        - name: Tröskelvärde och tröskelvärdegräns för undantag
+                          href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
+                    - name: TDS-beräkning på fakturor
+                      items:
+                        - name: TDS-beräkning på fakturor
+                          href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+                        - name: Beräkna TDS på fakturor med hjälp av journaler
+                          href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
+                        - name: Beräkna TDS-fakturor med inköpsorderformulär och försäljningsorderformulär
+                          href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
+                        - name: TDS-beräkning på fakturor på sidan Fritextfaktura
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
+                        - name: Funktionen Dela faktura
+                          href: localizations/apac-ind-TDS-Split-invoice-functionality.md
+                    - name: TDS-beräkning av betalningar och skuldsedlar
+                      href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                    - name: TDS-beräkning av koncerninterna transaktioner
+                      href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                    - name: TDS-kvittningsprocess
+                      items:
+                        - name: TDS-beräkning av betalningar och skuldsedlar
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                        - name: TDS-beräkning av koncerninterna transaktioner
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                        - name: TDS-kvittningsprocess
+                          items:
+                            - name: Kör den periodiska TDS-kvittningsprocessen
+                              href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
+                            - name: Kvitta TDS-betalningar till TDS-myndighetsleverantörer och generera TDS-challan
+                              href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
+                            - name: Visa bokförda TDS-betalningar och transaktioner för en TDS-kvittningsperiod
+                              href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
+                        - name: Registrera och uppdatera TDS-certifikatnummer och datum
+                          items:
+                            - name: Registrera återkallningsbara TDS-certifikatnummer
+                              href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
+                            - name: Uppdatera certifikatnummer och datum för TDS-transaktioner
+                              href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
             - name: Italien
               items:
                 - name: Italien – översikt
