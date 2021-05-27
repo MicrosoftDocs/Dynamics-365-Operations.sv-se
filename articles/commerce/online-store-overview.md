@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b0c7aa3bc1d4eef7b557bd9b07b31196faab273d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791088"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022482"
 ---
 # <a name="e-commerce-site-overview"></a>Näthandelsplats – översikt
 
@@ -37,11 +37,11 @@ I Dynamics 365 Commerce använder du en onlinebutikskanal för att fastställa p
 
 Endast en onlinebutikskanal måste ställas in innan du kan komma igång med Dynamics 365 Commerce. En enda näthandelssajt kan emellertid tillhandahålla online-upplevelsen för flera onlinebutiker. Om flera onlinebutiker exempelvis har ställts in för att stödja olika geografiska regioner, kan en enda uppsättning näthandelssidor användas för att tillhandahålla de unika upplevelser som definieras av respektive butik. Mer information om hur du konfigurerar en plats för att stödja flera onlinebutiker finns [i associera en onlinewebbplats med en kanal](associate-site-online-store.md).
 
-När en onlinebutik har ställts in kan den associeras med Dynamics 365 Commerce webbplatsen fungerar som ditt onlineskyltfönster. Mer information om onlinebutiker och hur du konfigurerar dem finns [Konfigurera onlinebutiker](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores).
+När en onlinebutik har ställts in kan den associeras med Dynamics 365 Commerce webbplatsen fungerar som ditt onlineskyltfönster. Mer information om onlinebutiker och hur du konfigurerar dem finns [Konfigurera onlinebutiker](/dynamics365/unified-operations/retail/online-stores).
 
 ## <a name="deploy-a-new-e-commerce-tenant"></a>Distribuera en ny klientorganisation för näthandel
 
-Under initieringen av en näthandelssajt uppmanas du att ange ett domännamn. Mer information om domäner i Commerce finns i [Konfigurera ditt domännamn](configure-your-domain-name.md) och [Domäner i Dynamics 365 Commerce](domains-commerce.md). Om du vill distribuera en ny klientorganisation för näthandel genom att använda [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide) följer du stegen i [Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md). När din klientorganisation för näthandel har konfigurerats i LCS skapas en länk till Commerce-webbplatsbyggaren. Du kan sedan använda Commerce-webbplatsbyggaren för att initiera och konfigurera dina näthandelssajter.
+Under initieringen av en näthandelssajt uppmanas du att ange ett domännamn. Mer information om domäner i Commerce finns i [Konfigurera ditt domännamn](configure-your-domain-name.md) och [Domäner i Dynamics 365 Commerce](domains-commerce.md). Om du vill distribuera en ny klientorganisation för näthandel genom att använda [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide) följer du stegen i [Distribuera en ny klientorganisation för näthandel](deploy-ecommerce-site.md). När din klientorganisation för näthandel har konfigurerats i LCS skapas en länk till Commerce-webbplatsbyggaren. Du kan sedan använda Commerce-webbplatsbyggaren för att initiera och konfigurera dina näthandelssajter.
 
 ## <a name="initialize-your-e-commerce-site"></a>Initiera din näthandelssajt
 

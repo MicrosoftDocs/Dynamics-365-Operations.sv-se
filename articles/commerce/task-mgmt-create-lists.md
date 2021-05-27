@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: a0e49d1eced3bb62e78c630b137a5b86121682f3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f3fcfae9f4ab458b4f14f18859f22fc25bf98623
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795247"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027634"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Skapa uppgiftslistor och lägga till uppgifter
 
@@ -49,7 +49,7 @@ Om du vill lägga till uppgifter till en uppgiftslista gör du följande.
 1. I dialogrutan **Skapa en ny uppgift** i fältet **Namn** anger du ett namn för uppgiften.
 1. I fältet **Förfallen data förskjuten från måldatum** anger du ett positivt eller negativt heltalsvärde. Ange till exempel, ange **-2** om uppgiften ska vara slutförd två dagar före förfallodatum för uppgiftslistan.
 1. Ange detaljerade instruktioner i fältet **Anteckningar**.
-1. I fältet **kontaktperson** anger du namnet på en ämnesexpert som uppgiftsägaren kan kontakta om han eller hon behöver hjälp.
+1. I fältet **Kontaktperson** anger du namnet på en ämnesexpert som uppgiftsägaren kan kontakta om uppgiftsägaren behöver hjälp.
 1. I fältet **Uppgiftslänk**, ange en länk baserat på uppgiftens natur.
 
 > [!TIP]

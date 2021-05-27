@@ -5,7 +5,6 @@ author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -17,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: beab7f2fc4fd96ce7a28734d2449445b3b5d4451
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ed068f4264269334babec9acd59d9d58551333b4
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750846"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018396"
 ---
 # <a name="note-integration"></a>Integrering av anteckning
 
@@ -34,9 +33,9 @@ Under affärsprocesser samlar Microsoft Dynamics 365 användare ofta in informat
 
 Kundinformation kan klassificeras på följande sätt:
 
-+ **Handlingsbar information som en Dynamics 365-användare hanterar för en kunds räkning** – Exempelvis genomför Contoso (en Dynamics 365-användare) en spelshow. En av Contosos kunder (en kund) vill delta i programmet. Kunden ber en Contoso-medarbetare att boka en plats i ett show-program för dem. Denna reservation sker i Contosos kalender för händelse deltagaren.
-+ **Åtgärdsbar information för en Dynamics 365-användare** – En kund som köper en Surface-enhet anger speciella instruktioner som anger att enheten ska vara gift förpackad före leverans. Instruktionerna är åtgärdsbar information som ska hanteras av Contoso-medarbetaren som ansvarar för förpackning.
-+ **Icke-åtgärdsbar information** – En kund besöker till exempel Contoso-butiken och uttrycker under sin dialog med en butiksrelation, intresse för *Halo* spel och speltillbehör. Butikens personal gör en notering om den här informationen. Produktrekommendationsmotorn använder sedan den för att göra rekommendationer till kunden.
++ **Handlingsbar information som en Dynamics 365-användare hanterar för en kunds räkning** – Till exempel Contoso (en Dynamics 365-användare) genomför ett spelprogram. En av Contosos kunder (en kund) vill delta i programmet. Kunden ber en Contoso-medarbetare att boka en plats i ett spelprogram för dem. Denna reservation sker i Contosos kalender för händelsedeltagaren.
++ **Åtgärdsbar information för en Dynamics 365-användare** – En kund som köper en Surface-enhet anger speciella instruktioner som anger att enheten ska vara gift förpackad före leverans. Instruktionerna är handlingsbar information som ska hanteras av Contoso-medarbetaren som ansvarar för förpackning.
++ **Icke-handlingsbar information** – En kund besöker till exempel Contoso-butiken och uttrycker under sin dialog med en butiksrelation, intresse för *Halo*-spel och speltillbehör. Butikens personal gör en notering om den här informationen. Produktrekommendationsmotorn använder sedan den för att göra rekommendationer till kunden.
 
 I allmänhet fångas handlingsbar information in som *aktiviteter* i Finance and Operations-appar och kundengagemangsappar. Ej handlingsbar information fångas som *anteckningar* i Finance and Operations-appar *kommentarer* i kundengagemangsappar.
 

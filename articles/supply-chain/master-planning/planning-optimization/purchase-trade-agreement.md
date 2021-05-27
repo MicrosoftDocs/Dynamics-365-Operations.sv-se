@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 4f50dfa5c2914ce2131cdc44582588be69b35335
-ms.sourcegitcommit: 2eb7a9ae544f504155657c5c584cbac66c21dba4
+ms.openlocfilehash: 570b0995821dcaa2e180b48c25facee01e98f8e3
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5961715"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015911"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Huvudplanering med inköpshandelsavtal
 
@@ -67,7 +67,7 @@ När systemet har beretts enligt beskrivningen i föregående avsnitt ska du se 
 1. Upprepa den här proceduren för varje relevanta produkter.
 
 > [!NOTE]
-> Planeringsoptimeringen stöder inköpshandelsavtal med flera valutor. När systemet söker efter ett handelsavtal med alternativet **Lägsta enhetspris** överväger systemet inköpshandelsavtalsrader med olika valutor under förutsättning att en valutakurs har definierats mellan handelsavtalsradens valuta och redovisningsvalutan för den juridiska personen. I annat fall ignoreras handelsavtalsraden och ett fel visas under huvudplaneringen. Huvudplaneringen kommer därför att innehålla information från alla relevanta inköpshandelsavtalsrader där priser kan konverteras till redovisningsvalutan.
+> Planeringsoptimeringen stöder inköpshandelsavtal med flera valutor. När systemet söker efter ett handelsavtal med alternativet **Lägsta enhetspris** överväger systemet inköpshandelsavtalsrader med olika valutor under förutsättning att en valutakurs har definierats mellan handelsavtalsradens valuta och redovisningsvalutan för den juridiska personen. I annat fall ignoreras handelsavtalsraden och ett fel visas under huvudplaneringen. Huvudplaneringen kommer därför att innehålla information från alla relevanta inköpshandelsavtalsrader där priser kan konverteras till redovisningsvalutan. Det är viktigt att notera att avrundningsreglerna inte kommer att beaktas under omräkningen av handelsavtalets radpris.
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Exempel på hur planeringsoptimering hittar leverantörs- och produktionstider
 
@@ -75,14 +75,14 @@ I följande tabell finns exempel som visar hur olika inställningar för en fris
 
 | Frisläppt produkt: Leverantör | Standardorderinställningar: Ledtid | Artikeldisponering: åsidosätta leverantör | Artikeldisponering: åsidosätta ledtid | Handelsavtal: Leverantör | Handelsavtal: ledtid | Handelsavtal: ignorera ledtid | Resulterande leverantör | Resulterande ledtid |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001** _ | _*_1_*_ | Nr | Nr | US003 | 3 | Nr | **US001** | **1** |
-| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Nr | **US002** | **2** |
-| *(Tom)* | 1 | Nr | Nr | ***US003** _ | _*_3_*_ | Nr | **US003** | **3** |
-| *(Tom)* | ***1** _ | Nr | Nr | _*_US003_*_ | 3 | Ja | **US003** | **1** |
-| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Nr | US003 | 3 | Nr | **US002** | **1** |
-| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Nr | US003 | 3 | Nr | **US002** | **1** |
-| *(Tom)* | 1 | Nr | Ja: 2 | ***US003** _ | _*_3_*_ | Nr | **US003** | **3** |
-| *(Tom)* | 1 | Nr | ***Ja: 2** _ | _*_US003_*_ | 3 | Ja | **US003** | **2** |
+| ***US001** _ | _*_1_*_ | Nr | Nr | US003 | 3 | Nr | _ *US001** | **1** |
+| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Nr | _ *US002** | **2** |
+| *(Tom)* | 1 | Nr | Nr | ***US003** _ | _*_3_*_ | Nr | _ *US003** | **3** |
+| *(Tom)* | ***1** _ | Nr | Nr | _*_US003_*_ | 3 | Ja | _ *US003** | **1** |
+| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Nr | US003 | 3 | Nr | _ *US002** | **1** |
+| *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Nr | US003 | 3 | Nr | _ *US002** | **1** |
+| *(Tom)* | 1 | Nr | Ja: 2 | ***US003** _ | _*_3_*_ | Nr | _ *US003** | **3** |
+| *(Tom)* | 1 | Nr | ***Ja: 2** _ | _*_US003_*_ | 3 | Ja | _ *US003** | **2** |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

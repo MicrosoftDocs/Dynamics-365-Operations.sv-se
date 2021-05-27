@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ad75430c606f959b17c887531fb62bd37caec624
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8a3c7eb9580f9155dd33f6351f37eb1edd269a3d
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804317"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018643"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedikerade betalningsterminaler och fråga om skrivare och kassalåda
 
@@ -50,13 +50,13 @@ Funktionen som beskrivs i det här avsnittet stöds av Modern POS för Windows 
 
 Den här funktionen stöder nätaktiverade betalningsterminaler och kvittoskrivare. Du kan tillhandahålla stöd för kassalådan genom att ansluta kassalådan till den nätverksanslutna kvittoskrivaren via d/k-porten.
 
-Medföljande stöd för den här funktionen finns i [Dynamics 365 betalningskoppling för Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Andra betalningskopplingar kan dock stödjas via Commerce programutvecklingskit (SDK) för betalningar. Skrivare med stöd för kvitton inkluderar nätverksanslutna kvittoskrivare från Star Micronics och Epson.
+Medföljande stöd för den här funktionen finns i [Dynamics 365 betalningskoppling för Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3). Andra betalningskopplingar kan dock stödjas via Commerce programutvecklingskit (SDK) för betalningar. Skrivare med stöd för kvitton inkluderar nätverksanslutna kvittoskrivare från Star Micronics och Epson.
 
 Om du vill installera kvittoskrivare använder du verktyget för Star Micronics-skrivaren för att konfigurera enheten så att den kan användas i nätverket. Detta verktyg kommer också att tillhandahålla enhetens IP-adress.
 
 Om du vill ställa in Epson-kvittoskrivare använder du verktyget Epson ePOS-Print för att konfigurera enheten för nätverksprotokoll.
 
-Mer information om hur du konfigurerar kringutrustning i nätverk finns i [Översikt över stöd för kringutrustning](https://go.microsoft.com/fwlink/?linkid=2129965).
+Mer information om hur du konfigurerar kringutrustning i nätverk finns i [Översikt över stöd för kringutrustning](./dev-itpro/network-peripherals.md).
 
 ## <a name="set-up-a-dedicated-payment-terminal-and-a-prompt-for-a-printer-and-cash-drawer"></a>Dedikerade betalningsterminaler och fråga om skrivare och kassalåda
 
@@ -75,9 +75,9 @@ Om du vill ställa in maskinvaruprofilen som är kopplad till kassaapparaten fö
 
     | Enhet | Typ | Enhetsnamn | Ytterligare detaljer |
     |---|---|---|---|
-    | Skrivare | Reserv | *Något* | Enhetsnamnet är skiftlägeskänsligt. **Kvittoprofil-ID** ska vara detsamma som **kvittoprofil-ID** som mappas till nätverksskrivaren som har ställts in i maskinvaruprofilen som har tilldelats maskinvarustationen på kanalnivå. |
-    | Kassalåda | Reserv | *Något* | Enhetsnamnet är skiftlägeskänsligt. Ange alternativet **Använda delade skift** till **Ja**. |
-    | EFT-tjänst | Adyen | Inte tillämpligt | Information om hur du konfigurerar den medföljande Adyen-anslutningen, se [Dynamics 365 betalningsanslutning för Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3) Andra betalningskopplingar kan dock stödjas via [Commerce programutvecklingskit (SDK) för betalningar](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). |
+    | Skrivare | Nätverk | *Något* | Enhetsnamnet är skiftlägeskänsligt. **Kvittoprofil-ID** ska vara detsamma som **kvittoprofil-ID** som mappas till nätverksskrivaren som har ställts in i maskinvaruprofilen som har tilldelats maskinvarustationen på kanalnivå. |
+    | Kassalåda | Nätverk | *Något* | Enhetsnamnet är skiftlägeskänsligt. Ange alternativet **Använda delade skift** till **Ja**. |
+    | EFT-tjänst | Adyen | Inte tillämpligt | Information om hur du konfigurerar den medföljande Adyen-anslutningen, se [Dynamics 365 betalningsanslutning för Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3) Andra betalningskopplingar kan dock stödjas via [Commerce programutvecklingskit (SDK) för betalningar](./dev-itpro/end-to-end-payment-extension.md). |
     | PIN-knappsats | Nätverk | **MicrosoftAdyenDeviceV001** | Ingen. |
 
 5. I Dynamics 365 Commerce söker du efter **register**.
@@ -85,7 +85,7 @@ Om du vill ställa in maskinvaruprofilen som är kopplad till kassaapparaten fö
 7. Tilldela den maskinvaruprofil som du just har skapat i POS som ska använda en särskild betalningsterminal. Enheten som mappas till den här POS måste använda antingen Modern POS för Windows eller Modern POS för Android-programmet.
 8. Välj **Spara**.
 9. I åtgärdsfönstret på fliken **Kassor** välj **Konfigurera IP-adresser**.
-10. På snabbfliken **PIN-knappsats** anger du IP-adressen för betalningsterminalen. Information om hur du hämtar IP-adressen för betalningsterminalen med hjälp av Adyen-anslutaren finns i [Dynamics 365-betalningskoppling för Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3).
+10. På snabbfliken **PIN-knappsats** anger du IP-adressen för betalningsterminalen. Information om hur du hämtar IP-adressen för betalningsterminalen med hjälp av Adyen-anslutaren finns i [Dynamics 365-betalningskoppling för Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3).
 11. Välj **Spara**.
 
 #### <a name="set-up-a-hardware-profile-for-the-receipt-printer-and-cash-drawer"></a>Ställa in en maskinvaruprofil för kvittoskrivaren och kassalådan
@@ -99,8 +99,8 @@ Om du vill ställa in maskinvaruprofilen som används för att gruppera skrivare
 
     | Enhet | Typ | beskrivning | Ytterligare detaljer |
     |---|---|---|---|
-    | Skrivare | Nätverk | **Epson** eller **Star** | Enhetsnamnet är skiftlägeskänsligt. **Kvittoprofil-ID** ska vara detsamma som **kvittoprofil-ID** som mappas till skrivaren som har ställts in i maskinvaruprofilen som har tilldelats POS. |
-    | Kassalåda | Nätverk | **Epson** eller **Star** | Enhetsnamnet är skiftlägeskänsligt. ange alternativet **Använda delade skift** till **Ja**. |
+    | Skrivare | Nätverk | **Epson** eller **Star** | Enhetsnamnet är skiftlägeskänsligt. **Kvittoprofil-ID** ska vara detsamma som **kvittoprofil-ID** som mappas till skrivaren som har ställts in i maskinvaruprofilen som har tilldelats kassan. |
+    | Kassalåda | Reserv | **Epson** eller **Star** | Enhetsnamnet är skiftlägeskänsligt. ange alternativet **Använda delade skift** till **Ja**. |
 
 5. Välj **Spara**.
 
@@ -148,9 +148,9 @@ Butikspersonalen ombeds att välja en maskinvarustation bara en gång per transa
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Konfigurera POS Hybrid-app på Android och iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
-- [Dynamics 365-betalningskoppling för Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Nätverkskringutrustning för nätverk](https://go.microsoft.com/fwlink/?linkid=2129965)
+- [Konfigurera POS Hybrid-app på Android och iOS](./dev-itpro/hybridapp.md)
+- [Dynamics 365-betalningskoppling för Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3)
+- [Nätverkskringutrustning för nätverk](./dev-itpro/network-peripherals.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Aktivera Dynamics 365 Commerce och Microsoft Teams-integration
 description: I det här avsnittet beskrivs hur du aktiverar Microsoft Dynamics 365 Commerce och Microsoft Teams-integrerar.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: c4d596f27ffe15a97dc04e2ce7e85d21f8e7161f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: eb0b8b419b302fbd0bc107bca22f8b26774ba3c7
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908405"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019845"
 ---
 # <a name="enable-dynamics-365-commerce-and-microsoft-teams-integration"></a>Aktivera Dynamics 365 Commerce och Microsoft Teams-integration
 
@@ -39,9 +37,9 @@ Innan du kan aktivera Microsoft Teams-integreringen med Commerce måste du regis
 
 Registrera Teams-programmet hos din innehavare i Azure-portal genom att följa dessa steg.
 
-1. Följ stegen i [Snabbstart: Registrera en app i Microsoft identitetsplattform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) för att registrera Teams-applikationen med din klient i Azure-portalen.
+1. Följ stegen i [Snabbstart: Registrera en app i Microsoft identitetsplattform](/azure/active-directory/develop/quickstart-register-app) för att registrera Teams-applikationen med din klient i Azure-portalen.
 1. Kopiera värdet **App (klient) ID** från **Översikt** för den registrerade appen. Det här värdet använder du när du aktiverar Teams-integration i Commerce-administration.
-1. Kopiera intygsvärdet som angavs när du [lade till ett intyg](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-certificate) i steg 1. Certifikatet kallas också för offentlig nyckel eller programnyckel. Det här värdet använder du när du aktiverar Teams-integration i Commerce-administration.
+1. Kopiera intygsvärdet som angavs när du [lade till ett intyg](/azure/active-directory/develop/quickstart-register-app#add-a-certificate) i steg 1. Certifikatet kallas också för offentlig nyckel eller programnyckel. Det här värdet använder du när du aktiverar Teams-integration i Commerce-administration.
 
 För att möjliggöra Teams-integrering i Commerce-administration.
 

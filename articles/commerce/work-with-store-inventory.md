@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c4891f9dcb031f4cb8dfb91f3fe1a301aad9838e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 64106cb1aeea01f1f227247d32b8b1dfdea98362
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793883"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020205"
 ---
 # <a name="commerce-inventory-management"></a>Hantering av Commerce-lager
 
@@ -39,11 +39,11 @@ De Commerce-program som körs på CSU stöder för närvarande inte följande sp
 
 - Kassaprogrammet (POS) kan erbjuda begränsat stöd för följande dimensioner. Med andra ord kan POS komma att automatiskt ange vissa av dessa dimensioner i lagertransaktioner, baserat på konfigurationen för lagerställe eller butik. POS stöder emellertid inte dimensionerna fullt ut i den mening att de stöds om en säljtransaktion anges manuellt i Commerce-administrationen. 
 
-- **Plats för lagerställe** – När användarna använder de nya [inkommande](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) och [utgående funktionerna](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation) för kassa kan de välja en lagerplats för lagerställe som de vill ta emot artiklar i eller skicka utgående orderartiklar från. Om de använder den föråldrade åtgärden **Välja och ta emot** finns begränsat hanteringsstöd att tillgå på plats för att ta emot och skicka utgående överföringar. Detta stöd är endast tillgängligt om alternativet **Använd hanteringsprocess för lagerställe** har aktiverats för artikeln samt för butikens lagerställe. En lagerplats kan för närvarande inte användas med åtgärderna **Inventering** eller **Lagersökning**.
+- **Plats för lagerställe** – När användarna använder de nya [inkommande](./pos-inbound-inventory-operation.md) och [utgående funktionerna](./pos-outbound-inventory-operation.md) för kassa kan de välja en lagerplats för lagerställe som de vill ta emot artiklar i eller skicka utgående orderartiklar från. Om de använder den föråldrade åtgärden **Välja och ta emot** finns begränsat hanteringsstöd att tillgå på plats för att ta emot och skicka utgående överföringar. Detta stöd är endast tillgängligt om alternativet **Använd hanteringsprocess för lagerställe** har aktiverats för artikeln samt för butikens lagerställe. En lagerplats kan för närvarande inte användas med åtgärderna **Inventering** eller **Lagersökning**.
 
-- **Registreringsskylt** – Registreringsskyltar gäller endast när alternativet **Använd lagerhanteringsprocess** har aktiverats för artikeln och den butikslagerstället. I POS: Om lagerinlevereras sker till ett butikslagerställe med hjälp av åtgärden **Inkommande åtgärd** eller **Plockning och inleverans** där lagerstyrningsprocessen har aktiverats, och om den plats som har valts för att ta emot artikeln i är kopplad till en platsprofil som kräver kontroll av registreringsskylt, använder kassaprogrammet (POS) systematiskt en registreringsskylt för den mottagande raden. Kassaanvändare (POS) kan inte ändra eller hantera denna information om registreringsskylten. Om fullständig hantering av registreringsskyltar krävs, rekommenderar vi att affären använder [appen](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/install-configure-warehousing-app) för lagerställe eller backoffice-klienten för att hantera mottagningen av dessa artiklar.
+- **Registreringsskylt** – Registreringsskyltar gäller endast när alternativet **Använd lagerhanteringsprocess** har aktiverats för artikeln och den butikslagerstället. I POS: Om lagerinlevereras sker till ett butikslagerställe med hjälp av åtgärden **Inkommande åtgärd** eller **Plockning och inleverans** där lagerstyrningsprocessen har aktiverats, och om den plats som har valts för att ta emot artikeln i är kopplad till en platsprofil som kräver kontroll av registreringsskylt, använder kassaprogrammet (POS) systematiskt en registreringsskylt för den mottagande raden. Kassaanvändare (POS) kan inte ändra eller hantera denna information om registreringsskylten. Om fullständig hantering av registreringsskyltar krävs, rekommenderar vi att affären använder [appen](../supply-chain/warehousing/install-configure-warehousing-app.md) för lagerställe eller backoffice-klienten för att hantera mottagningen av dessa artiklar.
 
-- **Serienummer** – Kassaprogrammet ger begränsat stöd för registrering av ett enda serienummer på en försäljningstransaktionsrad för order som skapas i POS och omfattar serialiserade artiklar. Det här serienumret valideras inte mot registrerade serienummer som redan finns i lagret. Om en försäljningsorder skapas i kundtjänstkanalen eller expedieras genom ERP (enterprise resource planering; resursplanering för företag) och flera serienummer registreras på en enda försäljningsrad under expedieringsprocessen i ERP, kan dessa serienummer inte användas eller valideras om en retur behandlas i POS för ordern. När lagret tas emot med hjälp av åtgärden **Inkommande åtgärd** kan användarna [registrera eller bekräfta serienumren som har mottagits](https://docs.microsoft.com/dynamics365/commerce/pos-serialized-items).
+- **Serienummer** – Kassaprogrammet ger begränsat stöd för registrering av ett enda serienummer på en försäljningstransaktionsrad för order som skapas i POS och omfattar serialiserade artiklar. Det här serienumret valideras inte mot registrerade serienummer som redan finns i lagret. Om en försäljningsorder skapas i kundtjänstkanalen eller expedieras genom ERP (enterprise resource planering; resursplanering för företag) och flera serienummer registreras på en enda försäljningsrad under expedieringsprocessen i ERP, kan dessa serienummer inte användas eller valideras om en retur behandlas i POS för ordern. När lagret tas emot med hjälp av åtgärden **Inkommande åtgärd** kan användarna [registrera eller bekräfta serienumren som har mottagits](./pos-serialized-items.md).
 
 - **Batch-ID** - POS-programmet ger begränsat stöd vid utdragsbokföring om en batchkontrollerad artikel säljs, men POS-användare kan inte definiera det batch-ID som säljs eller plockas när de använder POS-programmet.
 
@@ -56,11 +56,11 @@ De Commerce-program som körs på CSU stöder för närvarande inte följande sp
 
 ## <a name="purchase-orders"></a>Inköpsorder
 
-Inköpsorder skapas i Commerce Headquarters. Om ett lagerställe för butik ingår i inköpsorderns rubrik eller på inköpsorderrader, kan raderna tas emot i butiken genom att använda åtgärden [Inkommande åtgärd](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) i POS. 
+Inköpsorder skapas i Commerce Headquarters. Om ett lagerställe för butik ingår i inköpsorderns rubrik eller på inköpsorderrader, kan raderna tas emot i butiken genom att använda åtgärden [Inkommande åtgärd](./pos-inbound-inventory-operation.md) i POS. 
 
 ## <a name="transfer-orders"></a>Överföringsorder
 
-Överföringsorder kan skapas i Commerce Headquarters eller genom antingen den [inkommande åtgärden](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) eller den [utgående åtgärden](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation) i POS. Använd kassaåtgärden (POS) **Inkommande åtgärd** för att skapa en överföringsorderbegäran om att lagret ska skickas till butiken från ett annat lagerställe eller en annan lagerplats. Använd kassaåtgärden (POS) **Utgående åtgärd** för att skapa en överföringsorderbegäran om att lagret ska levereras från butiken från ett annat lagerställe eller en annan lagerplats. När en överföringsorder för en butik har skapats kan denna butik hantera mottagandet av lager för överföringsordern via åtgärden **Inkommande åtgärd** i POS. Om butiken levererar lager till en annan plats, används åtgärden **Utgående åtgärd** i POS för att hantera butikens utgående leveransprocess.
+Överföringsorder kan skapas i Commerce Headquarters eller genom antingen den [inkommande åtgärden](./pos-inbound-inventory-operation.md) eller den [utgående åtgärden](./pos-outbound-inventory-operation.md) i POS. Använd kassaåtgärden (POS) **Inkommande åtgärd** för att skapa en överföringsorderbegäran om att lagret ska skickas till butiken från ett annat lagerställe eller en annan lagerplats. Använd kassaåtgärden (POS) **Utgående åtgärd** för att skapa en överföringsorderbegäran om att lagret ska levereras från butiken från ett annat lagerställe eller en annan lagerplats. När en överföringsorder för en butik har skapats kan denna butik hantera mottagandet av lager för överföringsordern via åtgärden **Inkommande åtgärd** i POS. Om butiken levererar lager till en annan plats, används åtgärden **Utgående åtgärd** i POS för att hantera butikens utgående leveransprocess.
 
 ## <a name="stock-counts"></a>Lagerinventeringar
 
@@ -68,7 +68,7 @@ Lagerinventeringar kan antingen vara tidsplanerade eller ej tidsplanerade. Plane
 
 ## <a name="inventory-lookup"></a>Lagersökning
 
-Den aktuella produktkvantiteten som för tillfället finns att tillgå för flera butiker och lagerställen kan beskådas på sidan **Lagersökning**. Utöver det aktuella saldot kan framtida ATP-kvantiteter ("available-to-promise") visas för varje enskild butik. Välj butiken som du vill visa ATP-kvantiteter för och välj sedan **Visa tillgänglighet för butik**. Mer information om vilka konfigurationsalternativ som är tillgängliga finns i [Beräkna lagertillgänglighet för butikskanaler](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+Den aktuella produktkvantiteten som för tillfället finns att tillgå för flera butiker och lagerställen kan beskådas på sidan **Lagersökning**. Utöver det aktuella saldot kan framtida ATP-kvantiteter ("available-to-promise") visas för varje enskild butik. Välj butiken som du vill visa ATP-kvantiteter för och välj sedan **Visa tillgänglighet för butik**. Mer information om vilka konfigurationsalternativ som är tillgängliga finns i [Beräkna lagertillgänglighet för butikskanaler](./calculated-inventory-retail-channels.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

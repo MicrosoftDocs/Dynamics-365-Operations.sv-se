@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dc4ae56be1740f0160b4e4777f8db93a6bc4e704
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c61686615495ac64efccf84c697e0e1d594dcaf9
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792277"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027973"
 ---
 # <a name="account-management-pages-overview"></a>Översikt över sidor för kontohantering
 
@@ -39,7 +39,7 @@ Följande illustration visar ett exempel på landningssidan kontohantering.
 
 ### <a name="my-profile-page"></a>Min profilsida
 
-På sidan **Min profil** visas kundens kontoinformation, till exempel namn och telefonnummer till kunder. Kunden kan uppdatera profilinformationen på den här sidan. Den här sidan kan anpassas så att den innehåller ytterligare kundkontoinställningar, till exempel ett alternativ för att registrera sig för marknadsföring via e-post.
+På sidan **Min profil** visas kundens kontoinformation, till exempel namn och telefonnummer. Kunden kan uppdatera profilinformationen på den här sidan. Den här sidan kan anpassas så att den innehåller ytterligare kundkontoinställningar, till exempel ett alternativ för att registrera sig för marknadsföring via e-post.
 
 Följande illustration visar ett exempel på sidan **Min profil** som har skapats med hjälp av modulbibliotek.
 
@@ -47,7 +47,7 @@ Följande illustration visar ett exempel på sidan **Min profil** som har skapat
 
 ### <a name="addresses-page"></a>Adressida
 
-Sidan **Adresser** låter kunden lägga till adresser till hans eller hennes konto. Det visar även adresslistan som kunden tidigare har lagt till eller sparat på kontot. Dessa adresser är adresser som kunden har angett på den här sidan eller när en order placeras.
+Sidan **Adresser** låter kunden lägga till adresser till sitt konto. Det visar även adresslistan som kunden tidigare har lagt till eller sparat på kontot. Dessa adresser är adresser som kunden har angett på den här sidan eller när en order placeras.
 
 Följande illustration visar ett exempel på sidan **Adresser**.
 
@@ -75,7 +75,7 @@ Illustrationen nedan visar ett exempel på sidan **Bonusprogram**.
 
 ### <a name="wishlist-page"></a>Sida med önskelista
 
-Sidan **önskelista** visar en lista över artiklar som kunden har lagt till i sin önskelista. Både produkter och produktvarianter kan läggas till i önskelistan. Från den här sidan kan kunden ta bort en artikel från önskelistan eller lägga till en artikel direkt i vagnen.
+Sidan **Önskelista** visar en lista över artiklar som kunden har lagt till i sin önskelista. Både produkter och produktvarianter kan läggas till i önskelistan. Från den här sidan kan kunden ta bort en artikel från önskelistan eller lägga till en artikel direkt i vagnen.
 
 Illustrationen nedan visar ett exempel på sidan **Önskelista**.
 

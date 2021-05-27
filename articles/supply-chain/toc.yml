@@ -361,13 +361,11 @@
                   href: asset-management/objects/object-timeline.md
                 - name: Tillgångsvy
                   href: asset-management/objects/object-view.md
-                - name: Översikt av tillgångsattribut
+                - name: Översikt över tillgångsattribut
                   href: asset-management/objects/object-specification-overview.md
             - name: Inställning för underhållsbegäran
               items:
-                - name: Underhållsbegäranden
-                  href: asset-management/setup-for-maintenance-requests/requests.md
-                - name: Underhållsbegärans livscykeltillstånd
+                - name: Livscykeltillstånd för underhållsbegäran
                   href: asset-management/setup-for-maintenance-requests/request-stages.md
                 - name: Typer av underhållsbegäran
                   href: asset-management/setup-for-maintenance-requests/request-types.md
@@ -3343,9 +3341,95 @@
               href: inventory/extend-on-hand-entities.md
         - name: Felsökning
           items:
+            - name: Kostnadshantering
+              items:
+                - name: Fältinställningar saknas vid kopiering av artikelmodellgrupper till en annan juridisk person
+                  href: troubleshooting/costing/copying-item-model-groups.md
+                - name: Rapporten Pågående indirekta kostnader innehåller borttagna produktionsorder
+                  href: troubleshooting/costing/indirect-costs-in-pr.md
+                - name: Inköpsperiodisering bokförd med beloppet noll för produktinleverans med värdet noll
+                  href: troubleshooting/costing/posting-to-purchase.md
+                - name: Fysiskt mottagna inköpsorder visas inte i lagerstängningsrapporten
+                  href: troubleshooting/costing/purchase-orders-rece.md
+                - name: Det finns inget Från-datum på fliken Aktiva priser på sidan Artikelpris
+                  href: troubleshooting/costing/there-is-no-from-dat.md
+            - name: Lagerhantering
+              items:
+                - name: Flera lagertransaktioner för batchnummer utan Vid fysisk uppdatering
+                  href: troubleshooting/inventory/multiple-inventory-t.md
+                - name: Om du återför en rapport som slutförd skapas en oväntad öppen transaktion
+                  href: troubleshooting/inventory/reverse-report-as-fi.md
+                - name: Det går inte att visa nya anteckningar bifogade till en journal i plocklisterapporten
+                  href: troubleshooting/inventory/unable-to-print-the.md
+                - name: Kvantitet på en startad karantänorder uppdateras inte när ordern delas
+                  href: troubleshooting/inventory/quantity-on-a-start.md
+                - name: Fältet Senast testdatum uppdateras inte när flera kvalitetsorder skapas
+                  href: troubleshooting/inventory/the-field-last-test.md
+                - name: Vid uppdelning av en faktisk/nominell viktkvantitet används minimum i stället för nominell kvantitet
+                  href: troubleshooting/inventory/while-splitting-the.md
+            - name: Huvudplanering
+              items:
+                - name: Direkt härledda bekräftade order bearbetas av ett arbetsflöde i granskning
+                  href: troubleshooting/planning/firmed-directly-deri.md
+                - name: Huvudplanering genererar planerade order på fiktiva produkter
+                  href: troubleshooting/planning/planned-orders-are-g.md
+                - name: Planerad inköpsorder skapas när ett inköp finns inom negativa dagar
+                  href: troubleshooting/planning/planning-optimisatio.md
+                - name: Det går inte att ladda upp självkostnaden i efterfrågeprognosposter
+                  href: troubleshooting/planning/unable-to-upload-the.md
+                - name: Det går inte att ta bort efterfrågeprognosdimension från prognosrader
+                  href: troubleshooting/planning/warehouse-removal-fr.md
+            - name: Anskaffning
+              items:
+                - name: Det går inte att fakturera en kundutställd försäljningsorder i VEL-företaget
+                  href: troubleshooting/procurement/not-able-to-invoice-.md
+                - name: Det går inte att lägga till en rad i en inköpsrekvisition efter begärd ändring
+                  href: troubleshooting/procurement/purchase-requisition.md
+            - name: Produktinformationshantering
+              items:
+                - name: Det går inte att använda en mall för att skapa en frisläppt produkt
+                  href: troubleshooting/products/apply-template-in-re.md
+                - name: Det går inte att importera ett objekt genom entiteten Frisläppta produkter V2
+                  href: troubleshooting/products/cannot-import-with-r.md
+                - name: Inköpsorder visar inte översatt produkttext
+                  href: troubleshooting/products/when-the-customer-ad.md
+            - name: Produktionskontroll
+              items:
+                - name: Inställningarna för Avräkningsprincip på strukturlisterader respekteras inte
+                  href: troubleshooting/production/flushing-principle-n.md
+                - name: Batchnummer rensas när du väljer ett nytt parti-ID
+                  href: troubleshooting/production/when-customer-is-try.md
+                - name: Sent urval respekteras inte vid återställning av produktionsorder genom batchjobb
+                  href: troubleshooting/production/late-selection-is-no.md
+                - name: Användare kan annullera materialrader för produkter rapporterade som slutförda
+                  href: troubleshooting/production/raw-material-lines-a.md
+                - name: Fel vid bokföring av rapport som slutförd journal
+                  href: troubleshooting/production/posting-report-as-.md
+                - name: Lagret i plocklistejournalen uppdateras inte på en strukturlisterad
+                  href: troubleshooting/production/the-warehouse-in-pic.md
+            - name: Rabatthantering
+              items:
+                - name: Det går inte att ackumulera kundrabatter med artikelrabattgrupper
+                  href: troubleshooting/rebates/cumulating-customer-.md
+            - name: Försäljning och marknadsföring
+              items:
+                - name: Systemadministratörer kan inte rensa orderspärrar eftersom de inte är auktoriserade
+                  href: troubleshooting/sales/system-administrator.md
+            - name: Transporthantering
+              items:
+                - name: Det går endast att lägga till huvudkontot som kreditkonto av avstämningsorsaker
+                  href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Hantering av distributionslager
               items:
-                - name: Du kan inte bekräfta en leverans på grund av ett problem med kalendern
+                - name: Ett fel uppstår när du väljer plats under plocklisteregistrering
+                  href: troubleshooting/warehousing/error-cannot-update.md
+                - name: Förpackningsstationen visar inte produktanteckningar
+                  href: troubleshooting/warehousing/packing-station-not-.md
+                - name: 'Platsprofil tillåter inte negativt lager, men negativ lagerbehållning är tillåten'
+                  href: troubleshooting/warehousing/location-profile-set.md
+                - name: Endast en etikett skrivs ut för flera arbetsrubriker på ett enda kvitto
+                  href: troubleshooting/warehousing/when-receipting-prod.md
+                - name: Det går inte att bekräfta en leverans på grund av ett problem med kalendern
                   href: troubleshooting/warehousing/load-has-active-appo.md
                 - name: Du kan inte bekräfta en leverans på grund av att arbetet inte är slutfört eller saknas
                   href: troubleshooting/warehousing/open-or-no-work-exis.md

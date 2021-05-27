@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: bd93744cf947dcc343d2b31d3d52b2b748c062a9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 212f425dc3603f838ce030d9ed86f2e418bef29a
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792881"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019943"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Digitala presentkort för näthandel
 
@@ -51,12 +51,12 @@ Digitala presentkortprodukter bör konfigureras i Commerce-administrationen. Pro
 
     ![Produktfält för presentkort i Commerce-administrationen](./media/PostGiftcard.png)
 
-- Om ett presentkort måste ha stöd för flera fördefinierade belopp (till exempel 25, 50 respektive 100 USD) ska dimensionen **Storlek** användas för att konfigurera dessa fördefinierade belopp. Varje enskilt fördefinierat belopp kommer att vara en variant. Mer information finns i [Produktdimensioner](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json).
+- Om ett presentkort måste ha stöd för flera fördefinierade belopp (till exempel 25, 50 respektive 100 USD) ska dimensionen **Storlek** användas för att konfigurera dessa fördefinierade belopp. Varje enskilt fördefinierat belopp kommer att vara en variant. Mer information finns i [Produktdimensioner](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
 - Om kunderna måste kunna ange ett anpassat belopp för ett presentkort måste du först skapa en variant som tillåter ett anpassat belopp. Öppna sedan produkten från sidan **Frisläppta produkter i kategori** innan du på snabbfliken **Commerce** anger fältet **Ange pris** som **Måste ange nytt pris**, enligt följande illustration. Denna inställning garanterar att kunderna kan ange ett pris när de bläddrar i produkten på en PDP.
 
     ![Fältet Ange pris i Commerce-administrationen](./media/KeyInPrice.png)
 
-- Leveranssättet för ett digitalt presentkort måste vara **Elektroniskt**. På sidan **Leveranssätt** (**Retail och commerce \> Kanalinställningar \> Leveranssätt**) väljer du leveranssättet **Elektroniskt** i listpanelen innan du lägger till den digitala presentkortprodukten i rutnätet på snabbfliken **Produkter** enligt följande illustration. Mer information finns i [Konfigurera leveranssätt](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+- Leveranssättet för ett digitalt presentkort måste vara **Elektroniskt**. På sidan **Leveranssätt** (**Retail och commerce \> Kanalinställningar \> Leveranssätt**) väljer du leveranssättet **Elektroniskt** i listpanelen innan du lägger till den digitala presentkortprodukten i rutnätet på snabbfliken **Produkter** enligt följande illustration. Mer information finns i [Konfigurera leveranssätt](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
     ![Digitala presentkortprodukter på sidan Leveranssätt i Commerce-administrationen](./media/ElectronicMode.PNG)
 
@@ -89,9 +89,9 @@ Följ dessa steg om du vill konfigurera ett anpassat belopp för ett digitalt pr
 
 [Skapa en ny produkt i Commerce](create-new-product-commerce.md)
 
-[Ställ in leveranssätt](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Ställ in leveranssätt](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
-[Produktdimensioner](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json)
+[Produktdimensioner](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json)
 
 [Ställa in en meddelandeprofil för e-post](email-notification-profiles.md)
 

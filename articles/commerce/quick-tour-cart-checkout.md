@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d0b5a74a9880a5cabfdbc124f557998540c94a4d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a574494784e9a534307cceff584e047d870dc401
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792253"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027949"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Översikt över sidor för kundvagn och kassa
 
@@ -83,7 +83,7 @@ En kund kan slutföra kassaprocessen som en gästanvändare eller som en inlogga
 
 ### <a name="order-summary"></a>Orderöversikt
 
-POS visar en sammanfattning av radartiklarna i kundvagnen, så att kunden kan verifiera ordern innan han eller hon placerar den. Radartiklarna kan inte redigeras under kassaflödet. En länk till kundvagnen tillhandahålls dock om användaren vill gå tillbaka och redigerar radartiklarna.
+Kassan visar en sammanfattning av radartiklarna i kundvagnen, så att kunden kan verifiera ordern innan den placeras. Radartiklarna kan inte redigeras under kassaflödet. En länk till kundvagnen tillhandahålls dock om användaren vill gå tillbaka och redigerar radartiklarna.
 
 När kunden har angett leverans- och faktureringsinformation, visar ordersammanfattningen beloppet som förfaller efter förmånspoäng, presentkort och andra betalningar som har tillämpats.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 421fae6eab20eea50b9ce677a1ae7993add6cb93
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8bb3d5848b7e2c50a8fdaba1c6a1a7c0087d1390
+ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842067"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6016966"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Produktens livscykeltillstånd och transaktioner
 
@@ -74,5 +74,24 @@ Följande fält är tillgängliga för varje process som visas på snabbfliken *
 
 Om du lägger till fler livscykeltillståndsregler som en anpassning kan du visa reglerna i användargränssnittet genom att välja **Uppdatera processer** i det övre fönstret. Knappen **Uppdatera processer** är bara tillgänglig för administratörer.
 
+## <a name="lifecycle-states-for-released-products-and-product-variants"></a>Livscykeltillstånd för frisläppta produkter och produktvarianter
+
+För en produkt som har varianter (huvud och varianter) har produkten (huvud) ett livscykeltillstånd och var och en av varianterna kan också ha ett annat livscykeltillstånd.
+
+För specifika processer, om antingen varianten eller produkten är blockerad, kommer processen också att blockeras. För att avgöra om en process är blockerad kommer systemet att göra följande kontroller:
+
+- För teknikstyrda produkter:
+  - Om den aktuella tekniska versionen är blockerad blockerar du processen.
+  - Om den aktuella varianten är blockerad blockerar du processen.
+  - Om den frisläppta produkten är blockerad blockerar du processen.
+- För standardprodukter:
+  - Om den aktuella varianten är blockerad blockerar du processen.
+  - Om den frisläppta produkten är blockerad blockerar du processen.
+
+Anta till exempel att du bara vill sälja en variant (röd) av en viss produkt (t-shirt) och blockera försäljningen av alla andra varianter för tillfället. Du kan implementera detta med följande inställningar:
+
+- Tilldela produkten ett livscykeltillstånd som tillåter processen. Tilldela till exempel t-shirtprodukten ett livscykeltillstånd *Säljbar*, vilket möjliggör affärsprocessen *Försäljningsorder*.
+- Tilldela den säljbara varianten ett livscykeltillstånd som tillåter processen. Tilldela till exempel också den röda varianten ett livscykeltillstånd *Säljbar*.
+- Alla andra varianter tilldelas ett annat livscykeltillstånd där processen blockeras. Tilldela till exempel den vita varianten (och alla andra varianter) ett livscykeltillstånd *Inte säljbar*, vilket blockerar affärsprocessen *Försäljningsorder*.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

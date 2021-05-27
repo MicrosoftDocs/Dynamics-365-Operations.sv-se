@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2adb8b969a6e86becaa3c0a3b59d8f8f259e5a64
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0d4afd74f9a0f9018629fa92ab6595bfa94f973
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834606"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026215"
 ---
 # <a name="set-up-postdated-checks"></a>Ställ in efterdaterade checkar
 
@@ -53,7 +53,11 @@ Rollen för den här proceduren är Kassaförvaltare. I den här proceduren anv�
     * Välj det bankkonto som används för att dra av fakturabeloppet.  
 18. Klicka på Spara.
 19. Stäng sidan.
-
-
+> [!NOTE]
+> Om du vill kunna bokföra en bokförd check på ett bankkonto när sessionsdatumet är större än eller lika med förfallodagen, måste du aktivera funktionen **Förfallodatumvalidering för bokföring av betalningsjournal med bokförda checkar på bankkonto**. Med den här funktionen kan du bokföra betalningsjournaler för leverantörer eller kunder med efterbokade checkar när sessionsdatum är större än eller lika med förfallodatumet.
+> 
+> När du ställer in **Betalningsmetod** (**leverantörsreskontra > Betalningsinställning > Betalningsmetoder**) ska du inte fylla i **Bryggningskonto**. I det här fallet fylls motkontot i med bankkontot, som ställs in i **Betalningsmetod**.
+>  
+> När funktionen är aktiverad och sessionsdatum är mindre än förfallodagen visas följande felmeddelande när en betalningsjournal bokförs, "Förfallodagen måste vara mindre eller lika med sessionsdatum om motkontotypen är Bank". Om funktionen inte är aktiverad kan du bokföra en betalningsjournal med en bokförd check när sessionsdatum är mindre än förfallodatumet.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

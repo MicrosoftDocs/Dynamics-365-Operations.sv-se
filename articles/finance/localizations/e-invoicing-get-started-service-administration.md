@@ -2,7 +2,7 @@
 title: Kom i gång med tjänstadministration för elektronisk fakturering
 description: I det här avsnittet beskrivs hur du kommer igång med Elektronisk fakturering.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ec431cb4a3620459d905f64a80fd820a2113290f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f389e111006327fe8d82581d01140b4cff2e200d
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840158"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980986"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Kom i gång med tjänstadministration för elektronisk fakturering
 
@@ -33,10 +33,10 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 - Du måste ha tillgång till ditt Microsoft Dynamics Lifecycle Services-konto (LCS).
 - Du måste ha ett LCS-projekt som innehåller version 10.0.17 eller senare av Microsoft Dynamics 365 Finance och Dynamics 365 Supply Chain Management. Dessa program måste dessutom distribueras i något av följande Azure-områden:
 
-    - Östra USA
-    - Västra USA
-    - Norra EU
-    - Västra EU
+    - USA
+    - Europa
+    - Storbritannien
+    - Asien
 
 - Du måste ha tillgång till ditt Dynamics 365 Regulatory Configuration Services-konto (RCS).
 - Du måste aktivera globaliseringsfunktionen för ditt RCS-konto i funktionshanteringen. Mer information finns i [Regulatory Configuration Services (RCS) – globaliseringsfunktioner](rcs-globalization-feature.md).
@@ -46,11 +46,12 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 
 1. Logga in på LCS-kontot.
 2. Välj panelen **Hantera förhandsgranskning**.
-3. I avsnittet **Funktioner i allmänt tillgänglig förhandsversion** väljer du **Tjänst för e-fakturering**.
+3. I avsnittet **Funktioner i allmänt tillgänglig förhandsversion** väljer du **Elektronisk fakturering**.
 4. Se till att alternativet **Förhandsgranskning aktiverad** är inställt på **Ja**.
-5. Välj ditt LCS-distributionsprojekt på LCS-instrumentpanelen. LCS-projektet måste köras.
-7. På fliken **Miljötillägg** välj **Installera ett nytt tillägg**.
-8. Välj **e-faktureringstjänster**.
+5. Välj ett LCS-projekt på LCS-projektinstrumentpanelen.
+6. Välj ditt LCS-distributionsprojekt i LCS-projektet på LCS-miljöinstrumentpanelen. LCS-distributionsprojektet måste köras.
+7. Under fliken **Power Platform-integrering**, i fältgruppen **Miljötillägg**, väljer du **Installera ett nytt tillägg**.
+8. Välj **Elektronisk fakturering**.
 9. I fältet **AAD-program-ID**, ange **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Detta är ett fast värde.
 10. I fältet **AAD innehavar-ID** anger du innehavar-ID för ditt Azure abonnemangskonto.
 11. Granska villkoren och markera sedan kryssrutan.
@@ -65,10 +66,10 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 
     | Azure-område för datacenter | URI för tjänstslutpunkt                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | Östra USA                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | Västra USA                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | Norra EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | Västra EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | USA              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Europa                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Storbritannien             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Asien                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 4. Kontrollera att fältet **Program-ID** är inställt på **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Det här värdet är ett fast värde.
 5. I fältet **ID för LCS-miljö** anger du ID för ditt LCS-miljö.
@@ -152,12 +153,12 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 1. Gå till **organisationsadministration \> inställning \> parametrar för elektroniska dokument**.
 2. På fliken **Överföringstjänst**, i fältet **URL för tjänsteslutpunkt** anger du relevant tjänsteslutpunkt för ditt Azure-område enligt följande tabell.
 
-    | Azure-område för datacenter | URL för tjänstslutpunkt                                                       |
+    | Azure-område för datacenter | URI för tjänstslutpunkt                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | Östra USA                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | Västra USA                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | Norra EU                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | Västra EU                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | USA              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Europa                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Storbritannien             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Asien                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 3. I fältet **Miljö** anger du namnet på miljön för tjänstemiljö publicerad i Elektronisk fakturering.
 4. Markera **Spara** och stäng sedan sidan.

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 25f02517bf333716bdb7c74ce1decebcd4e30c6d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a1ee19a052c4a64995e6fcaa4afbe04b3e95fa55
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801901"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027562"
 ---
 # <a name="loyalty-overview"></a>Lojalitetsöversikt
 
@@ -78,7 +78,7 @@ I tabellen nedan beskrivs de processer som måste köras för att skicka bonusko
 - Som en del av ett bonusprogram kan återförsäljare skapa olika regler för inkomst och inlösen genom nivåer för att skilja belöningar för kunder på olika nivåer. Återförsäljare kan även inkludera ”anknytningar” som en del av reglerna för inkomst och inlösen så att viss grupp av kunder kan tillhöra en befintlig nivå, men fortfarande belönas på ett annat sätt. Detta tar bort behovet av att skapa fler nivåer.
     
     > [!NOTE]
-    > Inkomstregler inom ett bonusprogram är extra. Till exempel om du skapar en regel som belönar guldmedlem med 10 poäng för varje USD och du även skapar en regel för en kund med ”veteran”-anknytning till en belöning på 5 poäng för varje USD, skulle en veterananvändare som även ingår i guldnivån få 15 poäng för 1 USD eftersom kunden uppfyller kraven för båda raderna. Men om veterankunden inte var guldmedlem skulle han får 5 poäng för varje USD. För att reflektera ändringarna i kanalerna, kör **Bearbeta förmånsscheman** och **1050** (information om förmåner) jobb.
+    > Inkomstregler inom ett bonusprogram är extra. Till exempel om du skapar en regel som belönar guldmedlem med 10 poäng för varje USD och du även skapar en regel för en kund med ”veteran”-anknytning till en belöning på 5 poäng för varje USD, skulle en veterananvändare som även ingår i guldnivån få 15 poäng för 1 USD eftersom kunden uppfyller kraven för båda raderna. Men om veterankunden inte var guldmedlem skulle kunden få 5 poäng för varje USD. För att reflektera ändringarna i kanalerna, kör **Bearbeta förmånsscheman** och **1050** (information om förmåner) jobb.
     
     ![Anknytningsbaserad inkomst](./media/Affiliation-based-earning.png "Anknytningsbaserad inkomst")
 
@@ -142,7 +142,7 @@ I tabellen nedan beskrivs de processer som måste köras för att skicka bonusko
     > För närvarande tvingar systemet användare att ställa in en nummerserie för ”andra aktivitetstyper”, men detta blir inte ett obligatoriskt steg i framtida versioner. Om du vill ställa in en nummerserie gå till **Delade handelsparametrar** \> **Nummerserier** och välj en nummerserie för **Lojalitets-ID för annan aktivitetstyp**.
 
 - För att ge bra kundservice och effektivt lösa kundfrågor är det viktigt för kassörerna att få tillgång till fullständig kundprofil. Med version 10.0 kommer kassörerna kunna se historikinformation tillsammans med den associerade lojalitetsprogrammet och nivåinformation för kassa.
-- Gratis eller rabatterad leverans är en mycket motiverande faktor för kunderna att handla online. Om du vill aktivera återförsäljare för att ställa in leveranserbjudanden introducerar vi med version 10.0 en ny typ av kampanj kallad "Tröskelrabatt för leverans" där återförsäljaren kan definiera de tröskelvärden som, när de uppfylls, berättigar kunderna till gratis eller rabatterad leverans. Spendera till exempel 35 $ för gratis "två dagars leverans" eller "två dagars leverans" för alla förmånskunder. Den här funktionen använder den nya funktionen för avancerade automatiska avgifter. Se [dokumentationen för avancerade automatiska avgifter](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges). Dessa avancerade automatiska avgifter måste aktiveras för att leveranserbjudandet ska fungera. Dessa kan aktiveras från fliken **kundorder** på sidan **Handelsparametrar** och aktivera konfigurationen ”Använd avancerade automatiska avgifter”. Dessutom, eftersom en återförsäljare kan ställa in flera typer av avgifter, till exempel hantering eller installation måste den ange vilka avgifter anses vara leveransavgifter. Leveransrabatterna används bara i leveransavgifterna. För att ange avgifter som leveransavgifter, gå till formuläret **avgiftskoder** som finns under **Butik och handel** \> **Butik och handel-IT** \> **Kanalinställning** \> **Avgifter** och markera kryssrutan ”leveransavgifter” för önskade avgifter. Nu kan du gå till formuläret **Tröskelrabatt för leverans** för att ställa in rabatten.
+- Gratis eller rabatterad leverans är en mycket motiverande faktor för kunderna att handla online. Om du vill aktivera återförsäljare för att ställa in leveranserbjudanden introducerar vi med version 10.0 en ny typ av kampanj kallad "Tröskelrabatt för leverans" där återförsäljaren kan definiera de tröskelvärden som, när de uppfylls, berättigar kunderna till gratis eller rabatterad leverans. Spendera till exempel 35 $ för gratis "två dagars leverans" eller "två dagars leverans" för alla förmånskunder. Den här funktionen använder den nya funktionen för avancerade automatiska avgifter. Se [dokumentationen för avancerade automatiska avgifter](/dynamics365/unified-operations/retail/omni-auto-charges). Dessa avancerade automatiska avgifter måste aktiveras för att leveranserbjudandet ska fungera. Dessa kan aktiveras från fliken **kundorder** på sidan **Handelsparametrar** och aktivera konfigurationen ”Använd avancerade automatiska avgifter”. Dessutom, eftersom en återförsäljare kan ställa in flera typer av avgifter, till exempel hantering eller installation måste den ange vilka avgifter anses vara leveransavgifter. Leveransrabatterna används bara i leveransavgifterna. För att ange avgifter som leveransavgifter, gå till formuläret **avgiftskoder** som finns under **Butik och handel** \> **Butik och handel-IT** \> **Kanalinställning** \> **Avgifter** och markera kryssrutan ”leveransavgifter” för önskade avgifter. Nu kan du gå till formuläret **Tröskelrabatt för leverans** för att ställa in rabatten.
 
     Liksom produktrabatter, godkänner den här rabatten alla befintliga standardrabatter, till exempel att återförsäljaren kan begränsa rabatterna med kuponger så att bara kunder med kuponger får rabatterna. Dessutom utnyttjar rabatterna prisgrupper för att avgöra berättigande till sådana rabatter. Exempelvis kan återförsäljaren välja att endast köra dessa erbjudanden i online-kanaler och/eller i kanaler för vissa kundgrupper, exempelvis förmånskunder. När orderrader med angivet leveranssätt uppfyller det definierade tröskelvärdet tillämpas leveransrabatten och minskar leveranskostnaden baserat på den rabatt som anges. 
 

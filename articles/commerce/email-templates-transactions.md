@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 55597e83a930fc7d8bcc4c0cf09abc82cb666b25
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bfc773bec035ceee151e2e2dd8925aa772747452
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792641"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019893"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Skapa e-postmallar för transaktionshändelser
 
@@ -195,7 +195,7 @@ För mer information om hur du konfigurerar e-post i Dynamics 365 Commerce, se [
 
 [Konfigurera och skicka e-post](../fin-ops-core/fin-ops/organization-administration/configure-email.md)
 
-[Ställ in e-postinleveranser](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
+[Ställ in e-postinleveranser](/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
 [Skicka e-postkvitton från Modern POS ](email-receipts.md)
 

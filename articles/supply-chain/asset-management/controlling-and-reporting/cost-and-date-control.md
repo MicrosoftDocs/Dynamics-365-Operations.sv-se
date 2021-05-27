@@ -15,20 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d6f0a155b38b1d732d17bd2f964677862ff363e2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808674"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016165"
 ---
 # <a name="cost-and-date-control"></a>Kostnads- och datumkontroll
 
 [!include [banner](../../includes/banner.md)]
 
- 
-
-I Tillgångshantering kan du beräkna kostnader för att få en översikt över de faktiska kostnaderna jämfört med budgetkostnader för tillgångar, funktionsplatser och arbetsorder. Faktiska kostnader baseras på bokförda transaktioner. 
+I Tillgångshantering kan du beräkna kostnader för att få en översikt över de faktiska kostnaderna jämfört med budgetkostnader för tillgångar, funktionsplatser och arbetsorder. Faktiska kostnader baseras på bokförda transaktioner.
 
 Du kan också göra en datumberäkning om du vill jämföra planerade start- och slutdatum med faktiska start- och slutdatum på arbetsorder.
 
@@ -46,8 +44,8 @@ De beräkningar som görs för tillgångar, funktionsplatser och arbetsorder är
 
 5. Du kan använda fältet **Nivå** för att indikera hur detaljerad kostnadskontrollraderna ska vara gällande funktionsplatser. 
 
-    Om du till exempel infogar siffran "1" i fältet och har en funktionsplatshierarki med flera nivåer, visas alla kostnadskontrollrader för en funktionsplats på den översta nivån, och därmed kan också de timmar som finns på en rad läggas till från funktionsplatser på en lägre nivå. 
-    
+    Om du till exempel infogar siffran "1" i fältet och har en funktionsplatshierarki med flera nivåer, visas alla kostnadskontrollrader för en funktionsplats på den översta nivån, och därmed kan också de timmar som finns på en rad läggas till från funktionsplatser på en lägre nivå.
+
     Om du infogar siffran "0" i fältet **Nivå** visas ett detaljerat resultat med alla kostnadskontrollrader på alla den funktionsplatsnivå som de är relaterade till.
 
 6. Välj "Ja" på växlingsknappen **Visa öppen utfäst kostnad** om du vill inkludera den kolumnen i beräkningen.
@@ -64,7 +62,7 @@ De beräkningar som görs för tillgångar, funktionsplatser och arbetsorder är
 
 10. På sidan **Kostnadskontroll för tillgång**, välj knapparna **Gruppera efter** för att visa den obligatoriska detaljnivån för beräkningen. De valda knapparna **Gruppera efter** markeras. Klicka på en knapp för att aktivera och inaktivera den.
 
-## <a name="example"></a>Exempel
+## <a name="example-of-calculation-results-in-asset-cost-control"></a>Exempel på beräkningsresultat i kostnadskontroll för tillgång
 
 I skärmbilden nedan visas ett exempel på beräkningsresultat i **Kostnadskontroll för tillgång**.
 
@@ -76,7 +74,6 @@ I skärmbilden nedan visas ett exempel på beräkningsresultat i **Kostnadskontr
 ![Exempel på beräkningsresultat i Kostnadskontroll för tillgång](media/02-controlling-and-reporting.png)
 
 Ett annat sätt att göra en kostnadsberäkning är att använda flera tillgångar i **Alla tillgångar** eller **Aktiva tillgångar**. Klicka sedan på knappen **Kostnadskontroll** på fliken **Allmänt**. I dialogrutan **Kostnadskontroll för tillgång** infogas de valda tillgångarna automatiskt i fältet **Tillgång** på snabbfliken **Poster som ska ingå**. Klicka på **OK** och en kostnadsberäkning för valda tillgångar visas. Samma procedur kan utföras för funktionsplatser i **Alla funktionsplatser** eller **Aktiva funktionsplatser**, och för arbetsorder i **Alla arbetsorder** eller **Aktiva arbetsorder**.
-
 
 ## <a name="work-order-date-control"></a>Datumkontroll för arbetsorder
 
@@ -94,7 +91,7 @@ Använd den här sidan om du vill få en översikt över förväntade start- och
 
 6. Klicka på knapparna **Gruppera efter...** för att visa den obligatoriska detaljnivån för beräkningen. De valda knapparna **Gruppera efter** markeras. Klicka på en knapp för att aktivera och inaktivera den.
 
-## <a name="example"></a>Exempel
+## <a name="example-of-calculation-results-in-work-order-date-control"></a>Exempel på beräkningsresultat i datumkontroll för arbetsorder
 
 I bildskärmen nedan visas ett exempel på beräkningsresultat i **Datumkontroll för arbetsorder**.
 

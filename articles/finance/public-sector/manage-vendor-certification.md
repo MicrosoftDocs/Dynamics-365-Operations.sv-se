@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 480fdd99abeea731802dbe5bc5e1da9c1ceec6b7
-ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
+ms.openlocfilehash: 06f4a0feda82d20e5ec01fd75e4bb8a597a6d09b
+ms.sourcegitcommit: 5916ea2a94ab9af7aac21f0fc44e194d5ce82917
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5956892"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "5989026"
 ---
 # <a name="maintain-vendor-certification"></a>Underhålla leverantörscertifieringar
 
@@ -23,6 +23,8 @@ ms.locfileid: "5956892"
 [!include [preview banner](../includes/preview-banner.md)]
 
 I detta ämne beskrivs vilka steg som dina leverantörer kan vidta när de underhåller sina certifieringar med hjälp av **arbetstytan för leverantörssamarbeten**. Exempel på certifieringar kan till exempel vara ett WBE (Woman Business Enterprise) eller ett företag med certifieringen Energy and Environment Design (LEED). Leverantörer måste ange certifieringsinformation i arbetsytan **Leverantörsinformation**. Därifrån väljer leverantörerna **Mer information** och sedan **Certifieringar**.
+
+## <a name="add-a-new-certification"></a>Lägga till en ny certifiering
 
 Lägg till ett nytt certifikat genom att välja knappen **Lägg** som finns ovanför rutnätet **Certifiering** i arbetsytan **Leverantörsinformation**. Ange följande information:
  
@@ -40,3 +42,10 @@ Om det finns dokument som hör till den specifika certifieringen kan du koppla d
 Certifieringar som anges av dina leverantörer på den här sidan kommer att tilldelas en källa tillhörande "Leverantör". Du kan ange intygsinformation för leverantörens räkning under leverantörsbankkonton. Informationen visas här och källan visas som **Kund**.
 
 Leverantörer kan redigera eller ta bort sina certifieringar efter behov.
+
+## <a name="vendor-collaboration-generated-certification-records"></a>Certifieringsposter som genereras genom leverantörssamarbete 
+ 
+När certifieringsinformationen har lagts till av en leverantör visas informationen på sidan **Certifieringar som genereras genom leverantörssamarbete**. Öppna sidan genom att gå till **Leverantörsreskontra > Förfrågningar > Leverantörsrapporter > Certifieringar som genereras genom leverantörssamarbete**. Som standard visas alla nya eller ändrade certifieringsposter. En leverantörsreskontraansvarig kan granska ändringarna och validera informationen via sin bekräftelseprocess för validering. När informationen har bekräftats kan certifieringsposten som visas på sidan väljas och markeras som granskad. Om du markerar posten som granskad tas den bort från standardlistan.
+ 
+Alla certifieringsändringar visas på sidan **Certifieringar som genereras genom leverantörssamarbete**. Om en ändring inte visas på sidan kan du visa den genom att justera filtren för leverantörskontot, giltighetsdatumintervallet eller välja om du vill ta med information för certifieringsändringar som har granskats. 
+

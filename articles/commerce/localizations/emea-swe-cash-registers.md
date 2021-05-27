@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 870139a141cc7b2a676d004bf97a2f89b2812218
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 15aec832ef2795f6d573601914709de1059ed6e1
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798797"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021866"
 ---
 # <a name="cash-register-functionality-for-sweden"></a>Kassaapparatfunktioner för Sverige
 
@@ -101,7 +101,7 @@ Du måste ange följande allmänna inställningar för Sverige.
     - Artikelmomsgrupper
     - Momsinställningar i artiklar (artikelmomsgrupper för försäljning)
 
-    Mer information om hur du ställer in och använder moms finns i [Momsöversikt](../../financials/general-ledger/indirect-taxes-overview.md).
+    Mer information om hur du ställer in och använder moms finns i [Momsöversikt](../../finance/general-ledger/indirect-taxes-overview.md).
 
 
 2. På sidan **Alla butiker** uppdaterar du butiksinformation. Du måste speciellt ställa in följande parametrar:

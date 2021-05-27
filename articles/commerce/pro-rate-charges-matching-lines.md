@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 22939e8fd63a355effecf0c16fecd20377faa3a6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c36948cc58291b56c1bbe8a3d5c3db52dccc8399
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791064"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018616"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Allokera huvudavgifter för att matcha försäljningsrader
 
@@ -30,7 +30,7 @@ ms.locfileid: "5791064"
 
 Det här avsnittet beskriver funktionen för gruppering av automatiska avgifter på huvudnivå och -tillägg och allokera dem till handelsförsäljningsrader. Denna funktion är tillgänglig för transaktioner som skapas i POS i Retail version 10.0.1 och försäljning som skapas i kundtjänst i Retail version 10.0.2.
 
-Denna funktion är endast tillgänglig om funktionen [avancerade automatiska avgifter](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) har aktiverats med hjälp av alternativet på sidan **Handelsparametrar**. Förbättrade beräkningsmetoden för automatiska avgifter kan dessutom tillämpas endast till försäljningsorder som skapas via handelskanaler (POS, en kundtjänst och Dynamics näthandelsplattform).
+Denna funktion är endast tillgänglig om funktionen [avancerade automatiska avgifter](/dynamics365/unified-operations/retail/omni-auto-charges) har aktiverats med hjälp av alternativet på sidan **Handelsparametrar**. Förbättrade beräkningsmetoden för automatiska avgifter kan dessutom tillämpas endast till försäljningsorder som skapas via handelskanaler (POS, en kundtjänst och Dynamics näthandelsplattform).
 
 Denna nya funktion ger organisationer större flexibilitet i sättet som automatiska avgifter på huvudnivå beräknas och tillämpas på försäljningstransaktioner.
 
@@ -38,7 +38,7 @@ I versioner av appen som är tidigare än version 10.0.1 beräknas automatiska a
 
 Exempelvis definieras automatiska avgifter på huvudnivå **99** och leveranssätt **11**. En försäljningsorder skapas och leveranssätt **99** definieras i orderrubriken. Men vissa försäljningsrader är inställda på att levereras med hjälp av leveranssättet **11**. I det här fallet beaktas och tillämpas endast avgifter på huvudnivå som är kopplade till leveranssätt **99** på försäljningsorder.
 
-I Commerce har avgifter på huvudnivå ytterligare en funktion som gör det möjligt att definiera en [skiftindelad avgiftskonfiguration](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) som baseras på ordervärdet. Till exempel om ordervärdet är mellan 50,00 $ och 200,00 $ kanske organisationen vill debitera en fraktavgift på 5,00 $. Om ordervärdet är mellan 200,01 $ och 500,00 $ kan fraktkostnaden vara 4,00 $.
+I Commerce har avgifter på huvudnivå ytterligare en funktion som gör det möjligt att definiera en [skiftindelad avgiftskonfiguration](/dynamics365/unified-operations/retail/configure-call-center-delivery) som baseras på ordervärdet. Till exempel om ordervärdet är mellan 50,00 $ och 200,00 $ kanske organisationen vill debitera en fraktavgift på 5,00 $. Om ordervärdet är mellan 200,01 $ och 500,00 $ kan fraktkostnaden vara 4,00 $.
 
 Vissa organisationer vill ha fördelarna med skiftindelad avgiftsberäkning som medföljer avgifter på huvudnivå. I scenarier som avser blandade leveranssätt kan de också vilja se till att de avgifter som beräknas baseras på matchning med leveranssättet som har definierats på varje försäljningsrad.
 
@@ -72,7 +72,7 @@ En försäljningsorder skapas i kundtjänst och leveranssätt anges till **99**.
 
 I detta scenario utvärderas hela beställningen mot tabellen med automatiska avgifter för leveranssätt **99**. Den totala summan av alla försäljningsrader används för att bestämma en matchande nivå i konfigurationen av automatisk avgift och denna avgift tillämpas på orderhuvudnivån. I det här exemplet är ordersumman 165,00 $ och fraktkostnaden 15,00 $ tillämpas i orderrubriken. Automatiska avgifter som är konfigurerade för leveranssätt **11** refereras eller tillämpas aldrig.
 
-I detta scenario, om en kund returnerar vissa av artiklarna på ordern, och om [avgiftskoden har konfigurerats så att den ska återbetalas](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), kommer den totala avgiften på huvudnivå systematiskt tillämpas återbetalningen, även om endast vissa av artiklarna returneras.
+I detta scenario, om en kund returnerar vissa av artiklarna på ordern, och om [avgiftskoden har konfigurerats så att den ska återbetalas](/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), kommer den totala avgiften på huvudnivå systematiskt tillämpas återbetalningen, även om endast vissa av artiklarna returneras.
 
 ### <a name="scenario-2"></a>Scenario 2
 
