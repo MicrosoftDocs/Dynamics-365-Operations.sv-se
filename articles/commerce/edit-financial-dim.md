@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ff16d8e2e75a877e5ca7de604c7915e908473da6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 381d8bb0939f6c4c163477990e49382201487375
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792715"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019917"
 ---
 # <a name="edit-financial-dimensions-for-retail-transactions"></a>Redigera ekonomiska dimensioner för butikstransaktioner
 
@@ -34,7 +34,7 @@ Följ de här stegen om du vill redigera ekonomiska dimensioner för butikstrans
 
 1. Öppna sidan **Konfiguration av ekonomisk dimension för integrering av program**.
 1. Välj den aktiva posten för **Integration med standarddimension**.
-1. Gå till snabbfliken **Ekonomiska dimensioner** och se till att alla de dimensioner som du vill redigera i Excel-kalkylbladet finns i listan **Valda**. Mer information finns i [Datatabeller](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration#data-entities).
+1. Gå till snabbfliken **Ekonomiska dimensioner** och se till att alla de dimensioner som du vill redigera i Excel-kalkylbladet finns i listan **Valda**. Mer information finns i [Datatabeller](../fin-ops-core/dev-itpro/financial/financial-dimension-configuration-integration.md#data-entities).
 1. Ladda ned och öppna Excel-filen från sidan **Utdrag**, sidan **Butikstransaktioner** eller panelen **Transaktionsvalideringsfel** i arbetsytan **Butiksekonomi**.
 1. Om du vill ändra transaktionens ekonomiska dimension väljer **Design** och väljer sedan pennsymbolen bredvid raden **Transaktion (granskningsbar)**.
 1. Sök efter och markera fältet **FinancialDimensionDisplayValue**, markera en cell i huvuddelen i Excel-kalkylbladet och välj sedan **Lägg till etikett**.

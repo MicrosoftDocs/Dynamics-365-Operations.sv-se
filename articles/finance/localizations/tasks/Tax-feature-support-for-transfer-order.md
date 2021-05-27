@@ -5,7 +5,6 @@ author: kailiang
 ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d1b99046b0e439c9dadbb240050e270a7b2a6914
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 3a5c2b6fb48d98ba045c77ed034d976f7d89af98
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920965"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021379"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Momsfunktionens stöd för överföringsorder
 
@@ -41,7 +40,7 @@ Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. 
 
 1. På sidan **Momsfunktioner**, på fliken **Versioner**, välj versionen av utkastfunktionen och välj sedan **Redigera**.
 
-    ![Välja Redigera](../media/image1.png)
+    ![Välja Redigera](../media/tax-feature-support-01.png)
 
 2. På sidan **Inställning av momsfunktioner** på fliken **Momskoder**, välj **Lägg till** för att skapa nya momskoder. I det här exemplet skapas tre momskoder: **NL-undantagen**, **BE-RC-21** och **BE-RC+21**.
 
@@ -54,7 +53,7 @@ Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. 
         4. Välj **Lägg till** i tabellen **Kurs**.
         5. Växla **Är undantagen** till **Ja** i avsnittet **Allmänt**.
 
-        ![NL-undantagen momskod](../media/image2.png)
+        ![NL-undantagen momskod](../media/tax-feature-support-02.png)
 
     - När en överföringsorder tas emot på ett belgiskt lagerställe används omvänd momsmekanism med hjälp av momskoderna **BE-RC-21** och **BE-RC+21**.
         
@@ -67,7 +66,7 @@ Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. 
         6. Växla **Är återförd avgift** till **Ja** i avsnittet **Allmänt**.
         7. Välj **Spara**.
 
-        ![BE-RC-21-momskod för omvänd moms](../media/image3.png)
+        ![BE-RC-21-momskod för omvänd moms](../media/tax-feature-support-03.png)
         
         Skapa momskoden **BE-RC+21**.
         1. Välj **Lägg till**, ange **BE-RC-21** i fältet **Momskod**.
@@ -77,7 +76,7 @@ Följ dessa steg för att ställa in momsen som ingår i en överföringsorder. 
         5. Ange **21** i fältet **Momssats**.
         6. Välj **Spara**.
 
-        ![BE-RC+21-momskod för omvänd moms](../media/image4.png)
+        ![BE-RC+21-momskod för omvänd moms](../media/tax-feature-support-04.png)
 
 3. Definiera tillämplighet för momskoderna.
 

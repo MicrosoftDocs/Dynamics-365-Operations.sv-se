@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ff1cf8619bc94c35e416b2c7dcf2350d2238dbf5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f7ab0aadb9ef99e2a8f7263434ddbc2f4813926a
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793907"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027442"
 ---
 # <a name="payment-methods-in-call-centers"></a>Betalsätt i kundcenter
 
@@ -49,7 +49,7 @@ När betalsätt definieras ska de länkas till ett redovisnings- eller bankkonto
 
 För scenarier för bearbetning av återbetalning använder kundtjänst även vissa av de betalsätt som definierats i Kundreskontra. Om du vill konfigurera dessa betalsätt, gå till **Butik och handel** \> **Kanalinställning** \> **Kundtjänstinställning** \> **Återbetalsätt för kundtjänst**. Du måste slutföra den här konfigurationen om du vill bearbeta återbetalning av checkar till kunder. Exempelvis om en kund ursprungligen har betalat för en order med kontanter eller check kanske användaren vill skicka kunden en återbetalningscheck via Kundreskontra. I det här fallet måste betalningstyperna kontanter och check i kundtjänst mappas till korrekt betalningsmetod i Kundreskontra för att säkerställa att återbetalningen behandlas på rätt sätt.
 
-Dessutom, om en användare bearbetar en returorder som en kundtjänstanvändare i Commerce men han eller hon inte kan länka returen till en ursprunglig försäljning måste betalsättet **Retur** definieras i kundtjänstparametrarna. Gå till **Butik och handel** \> **Kanalinställning** \> **Kundtjänstinställning** \> **Kundtjänstparametrar** och sedan till fliken **RMA/retur** i fältet **Betalningsmetod** och se till att du har angett ett betalsätt. Betalsättet kommer att bli det betalsätt som används för återbetalningar. Vanligtvis definieras den som antingen en checkmetod eller en kundkontometod.
+Dessutom, om en användare bearbetar en returorder som en kundtjänstanvändare i Commerce men användaren inte kan länka returen till en ursprunglig försäljning, måste betalsättet **Retur** definieras i kundtjänstparametrarna. Gå till **Butik och handel** \> **Kanalinställning** \> **Kundtjänstinställning** \> **Kundtjänstparametrar** och sedan till fliken **RMA/retur** i fältet **Betalningsmetod** och se till att du har angett ett betalsätt. Betalsättet kommer att bli det betalsätt som används för återbetalningar. Vanligtvis definieras den som antingen en checkmetod eller en kundkontometod.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

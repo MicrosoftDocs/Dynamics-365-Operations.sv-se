@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bb0e646cc4be5fa7fbb8a0ef47b524612a6f9a46
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f9d8889581e2e11fa5261805c866a6014df57611
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792501"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027586"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Ställa in utökad inloggningsfunktion för MPOS och molnbaserad kassa
 
@@ -51,7 +51,7 @@ När **personalen kort inloggning kräver lösenord** alternativ är aktiverat p
 
 ## <a name="assigning-an-extended-logon"></a>Tilldela en utökad inloggning
 
-Som standard är endast chefer kan tilldela utökade inloggning till arbetstagarna. Tilldela utökad inloggning genom att navigera till **Utökad inloggning** i POS. Sök sedan efter en anställd genom att ange hans eller hennes operatörs-ID i sökfältet. Välj anställd och klicka sedan på **Tilldela**. På nästa sida, nallar eller skanna utökade inloggning tilldelas arbetaren. Om nallar eller skanna finnas framgångsrikt lydde, **OK-** knappen blir tillgänglig. Klicka på **OK för** att spara det utökade inloggning för arbetstagaren.
+Som standard är endast chefer kan tilldela utökade inloggning till arbetstagarna. Tilldela utökad inloggning genom att navigera till **Utökad inloggning** i POS. Sök sedan efter en anställd genom att ange den anställdes operatörs-ID i sökfältet. Välj anställd och klicka sedan på **Tilldela**. På nästa sida, nallar eller skanna utökade inloggning tilldelas arbetaren. Om nallar eller skanna finnas framgångsrikt lydde, **OK-** knappen blir tillgänglig. Klicka på **OK för** att spara det utökade inloggning för arbetstagaren.
 
 ## <a name="deleting-an-extended-logon"></a>Ta bort en utökad inloggning
 
@@ -63,7 +63,7 @@ Inloggning tjänsten kan utökas för att stödja ytterligare utökade inloggnin
 
 ## <a name="using-extended-logon"></a>Med hjälp av utökade inloggning
 
-När utökad inloggning är konfigurerad, och arbetstagaren har tilldelats en streckkod eller den magnetiska stripen, arbetaren bara nallar eller skanna hans eller hennes kort medan POS inloggningssidan visas. Om ett lösenord krävs också före inloggning kan fortsätta, arbetstagaren uppmanas du att ange sitt lösenord.
+När utökad inloggning är konfigurerad, och arbetstagaren har tilldelats en streckkod eller magnetremsa, behöver arbetstagaren bara dra eller skanna sitt kort medan POS-inloggningssidan visas. Om ett lösenord krävs före inloggning kan fortsätta, uppmanas arbetstagaren att ange sitt lösenord.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

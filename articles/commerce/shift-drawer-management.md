@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9d6fa36d7bb45e1cd9f8c3fbc1e60ac521f1f9b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d9d36bcb05cf466d34d921d8cd5266b6c12a63d7
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795463"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028261"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Hantering av skift och kassalåda
 
@@ -45,7 +45,7 @@ Tidigare har det här scenariot använts oftast. Det används fortfarande ofta. 
 
 I ”flytande till”-skift kan skift och kassalåda flyttas från en kassa till en annan. Även om en kassa endast kan ha ett aktivt skift per kassalåda kan skift avbrytas tillfälligt och sedan fortsätta senare eller i en annan kassa.
 
-T.ex. en butik har två kassor. Varje kassa öppnas i början av den dag när kassören öppnar ett nytt skift och ger startbeloppet. När en kassör tar en paus, skjuter kassören upp skiftet och tar bort det från kassalådan. POS blir då tillgänglig för andra kassörerna. En annan kassör kan logga in och öppna sitt eget skift i POS. Efter första kassörens rast har avslutats kan den kassören återuppta sitt skift när någon av de andra kassorna blir tillgängliga. ”Flytande till”-skift kräver inte någon särskild konfiguration eller behörighet.
+T.ex. en butik har två kassor. Varje kassa öppnas i början av den dag när kassören öppnar ett nytt skift och ger startbeloppet. När en kassör tar en paus, skjuter kassören upp skiftet och tar bort kassalådan från kassan. POS blir då tillgänglig för andra kassörerna. En annan kassör kan logga in och öppna sitt eget skift i kassan. Efter första kassörens rast har avslutats kan den kassören återuppta sitt skift när någon av de andra kassorna blir tillgängliga. ”Flytande till”-skift kräver inte någon särskild konfiguration eller behörighet.
 
 ### <a name="single-user"></a>Enskild användare
 
@@ -84,7 +84,7 @@ Den här åtgärden är ofta den första åtgärden som vidtas i ett nyligen öp
 
 ### <a name="tender-removal"></a>Borttagning av betalningsmedel
 
-*Borttagning av betalningsmedel* är ej försäljningstransaktioner som utförs i ett aktivt skift för att minska kontantbeloppet i kassalådan. Denna åtgärd används oftast tillsammans med en växelpost i ett annat skift. Till exempel Kassa 1 börjar få slut på växel så användaren av Kassa 2 utför en borttagning av betalningsmedel för att minska beloppet i kassalådan. Användaren i POS 1 gör sedan en växelpost för att öka hans eller hennes kassalåda.
+*Borttagning av betalningsmedel* är ej försäljningstransaktioner som utförs i ett aktivt skift för att minska kontantbeloppet i kassalådan. Denna åtgärd används oftast tillsammans med en växelpost i ett annat skift. Till exempel Kassa 1 börjar få slut på växel så användaren av Kassa 2 utför en borttagning av betalningsmedel för att minska beloppet i kassalådan. Användaren i Kassa 1 gör sedan en växelpost för att öka kassalådan.
 
 ### <a name="suspend-shift"></a>Skjut upp skift
 
@@ -154,7 +154,7 @@ Gå till **Butik och handel \> kanaler \> butiker \> alla butiker \> utdrag/stä
 
 Den här inställningen kan garantera att backoffice-rapporterna innehåller samma transaktioner som skift i POS och att informationen summeras genom det skiftet.
 
-Mer information om utdrag och stängningsmetoder finns i [spara konfigurationer för butiksutdrag](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+Mer information om utdrag och stängningsmetoder finns i [spara konfigurationer för butiksutdrag](/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

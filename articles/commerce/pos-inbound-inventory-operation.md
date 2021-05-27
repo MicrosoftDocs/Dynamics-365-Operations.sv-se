@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 6efc20de5309bc7ec209a557a4bc12c6a0a42a43
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a14b98cab78896d3a6c2e567cadc1ff9a991a278
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804341"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018964"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Inkommande lageråtgärder i kassan
 
@@ -70,7 +70,7 @@ De batchjobb som du skapar kommer att användas för att bearbeta dokument som m
 
 ## <a name="prerequisite-add-inbound-operation-to-the-pos-screen-layout"></a>Förutsättning: Lägg till inkommande operation i kassaskärmlayout
 
-Innan din organisation kan använda funktionen för inkommande åtgärd måste den konfigurera kassaåtgärden **inkommande åtgärd** på en eller flera av dina [kassaskärmlayouter](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Innan du distribuerar den nya operationen i en produktionsmiljö bör du kontrollera att du testar den och träna dina användare att använda den.
+Innan din organisation kan använda funktionen för inkommande åtgärd måste den konfigurera kassaåtgärden **inkommande åtgärd** på en eller flera av dina [kassaskärmlayouter](/dynamics365/unified-operations/retail/pos-screen-layouts). Innan du distribuerar den nya operationen i en produktionsmiljö bör du kontrollera att du testar den och träna dina användare att använda den.
 
 ## <a name="overview"></a>Översikt
 
@@ -159,9 +159,9 @@ I Commerce version 10.0.14 och senare kan användare ta emot en produkt som inte
 
 Den här funktionen fungerar bara för inleverans av inköpsorder. Det går inte att ta emot artiklar mot överföringsorder när artiklarna inte tidigare har beställts och levererats från det utgående lagerstället.
 
-Användare kan inte lägga till nya produkter i inköpsordern under kassamottagning om [arbetsflödet för ändringshantering av inköpsorder](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) är aktiverat i Commerce-administration (HQ). Om du vill aktivera ändringshantering måste alla ändringar av en inköpsorder först godkännas innan mottagning tillåts. Eftersom den här processen tillåter att en mottagare lägger till nya rader i inköpsordern misslyckas inleveransen om arbetsflödet för ändringshantering aktiveras. Om ändringshantering aktiveras för alla inköpsorder eller för den leverantör som är kopplad till inköpsordern aktivt som inlevereras i POS, kan användaren inte lägga till nya produkter i inköpsordern under inleverans i kassa.
+Användare kan inte lägga till nya produkter i inköpsordern under kassamottagning om [arbetsflödet för ändringshantering av inköpsorder](../supply-chain/procurement/purchase-order-approval-confirmation.md) är aktiverat i Commerce-administration (HQ). Om du vill aktivera ändringshantering måste alla ändringar av en inköpsorder först godkännas innan mottagning tillåts. Eftersom den här processen tillåter att en mottagare lägger till nya rader i inköpsordern misslyckas inleveransen om arbetsflödet för ändringshantering aktiveras. Om ändringshantering aktiveras för alla inköpsorder eller för den leverantör som är kopplad till inköpsordern aktivt som inlevereras i POS, kan användaren inte lägga till nya produkter i inköpsordern under inleverans i kassa.
 
-Funktionen som gör det möjligt att lägga till rader kan inte användas som en lösning för att ta emot ytterligare kvantiteter av produkter som redan finns på inköpsordern. Överleverans hanteras via standardinställningarna för [Överleverans](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) för produktraden på inköpsordern.
+Funktionen som gör det möjligt att lägga till rader kan inte användas som en lösning för att ta emot ytterligare kvantiteter av produkter som redan finns på inköpsordern. Överleverans hanteras via standardinställningarna för [Överleverans](#over-receiving-validations) för produktraden på inköpsordern.
 
 Om **Lägg till rader i inköpsordern under den tidpunkt då inleveransen** är aktiverad och en användare tar emot den **inkommande operationen** i POS, om användaren läser in eller nycklar för en produktstreckkod eller ett produktnummer som inte är identifierat som en artikel på den aktuella inköpsordern, men som är identifierad som en giltig artikel, får användaren ett meddelande om att artikeln läggs till Om användaren lägger till artikeln på inköpsordern beaktas den kvantitet som angetts i **inleverans nu** den beställda kvantiteten för inköpsorderraden.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd10e0c6e426d95aa5e96c4b9b59a8a81017b540
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4df5ebaf6e8ae8414515bd11087adcd05a88e581
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835158"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027538"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Kvitta en delbetalning före rabattdatum med slutbetalning efter rabattdatum
 
@@ -95,7 +95,7 @@ Information om rabatten visas längst ned på sidan **Kvitta öppna transaktione
 | Utnyttjad kassarabatt          | 3,00      |
 | Kassarabattbelopp att utnyttja | 07:00      |
 
-Arnie ändrar värdet i fältet **Använd kassarabatt** tillbaka till **Normal**, eftersom han inte låter den här kunden utnyttja den återstående kassarabatten på 7,00. Arnie bokför sedan betalningen. När han öppnar sidan **Kundtransaktioner** ser han att fakturan har ett saldo på 0,00. Han ser också att det finns två betalningar. En betalning på 297,00 och med 3,00 kassarabatt och den andra betalningen på 700,00.
+Arnie ändrar värdet i fältet **Använd kassarabatt** tillbaka till **Normal**, eftersom han inte låter den här kunden utnyttja den återstående kassarabatten på 7,00. Arnie bokför sedan betalningen. När Arnie öppnar sidan **Kundtransaktioner** ser han att fakturan har ett saldo på 0,00. Det finns två betalningar. En betalning på 297,00 och med 3,00 kassarabatt och den andra betalningen på 700,00.
 
 | Verifikation    | transaktionstyp | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

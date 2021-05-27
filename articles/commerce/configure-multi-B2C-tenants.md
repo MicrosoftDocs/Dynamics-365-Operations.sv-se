@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4e50855368a3fa86c38c756492fc7e6cd518f497
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c813adb79ae1b78a052332e077393f125830633f
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796109"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027732"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Konfigurera flera B2C-innehavare i en Commerce-miljö
 
@@ -27,7 +27,7 @@ ms.locfileid: "5796109"
 
 Det här avsnittet beskriver när och hur du ställer in flera Microsoft Azure Active Directory (Azure AD) B2C-innehavare per kanal för användarautentisering i en dedikerad Dynamics 365 Commerce-miljö.
 
-Dynamics 365 Commerce använder Azure AD B2C molnidentitetstjänst för att stödja autentiseringsuppgifter och verifikationsflöden. Användare kan använda verifikationsflöden för att registrera, logga in och återställa sitt lösenord. Azure AD B2C lagrar känslig en användares känsliga autentiseringsinformation, t.ex. hans eller hennes namn och lösenord. Användarposten är unik för varje B2C-innehavare och använder antingen användarnamn (e-postadress) autentiseringsuppgifter eller autentiseringsuppgifter för social identitet.
+Dynamics 365 Commerce använder Azure AD B2C molnidentitetstjänst för att stödja autentiseringsuppgifter och verifikationsflöden. Användare kan använda verifikationsflöden för att registrera, logga in och återställa sitt lösenord. Azure AD B2C lagrar en användares känsliga autentiseringsinformation, t.ex. användarnamn och lösenord. Användarposten är unik för varje B2C-innehavare och använder antingen användarnamn (e-postadress) autentiseringsuppgifter eller autentiseringsuppgifter för social identitet.
 
 I de flesta fall används en enda Azure AD B2C-innehavare i en Commerce-miljö. Commerce-kunder kan sedan skapa och publicera flera webbplatser i samma Commerce-miljö och samma kundautentiseringsuppgifter kommer att användas på dessa webbplatser. Om webbplatserna i miljön ska behandlas som olika varumärken och visas för användarna som separata företag, kan en B2C-innehavare konfigureras för den kanal som används för webbplatsens/varumärkets separation.
 

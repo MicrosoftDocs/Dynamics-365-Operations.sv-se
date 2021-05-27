@@ -6,7 +6,7 @@ ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: PurchTable, SysSecRolesEditUsers
+ms.search.form: PurchTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 9bdb9529c8b630182a2036e9d116909f9e92bb83
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944423"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980960"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
 
@@ -58,7 +58,10 @@ Skalningsenheterna äger följande data:
   - **Överföringsorder** (bara utgående med enkel plockning och inläsning av arbete)
 
 - **Mottagningsdata för lagerorder** – Dessa data används bara för inköpsorder som har frisläppts till ett lagerställe.
-- **ID-nummerdata** – ID-nummer kan skapas på navet och skalningsenheten. En dedikerad konflikthantering har tillhandahållits. Observera att dessa data inte är lagerställespecifika.
+- **ID-nummerdata** – ID-nummer kan skapas både på navet och åpå skalningsenheterna. Dedikerad konflikthantering tillhandahålls. 
+
+    > [!IMPORTANT]
+    > ID-nummerdata inte är lagerställespecifika. Om samma ID-nummer skapas på både hubben och en skalningsenhet under samma synkroniseringscykel misslyckas nästa synkronisering. Om detta inträffar går du till **Systemadministration > förfrågningar > Arbetsbelastningsförfrågningar > Duplicerade poster**, där du kan visa och sammanslå data.
 
 ## <a name="outbound-process-flow"></a>Utgående processflöde
 

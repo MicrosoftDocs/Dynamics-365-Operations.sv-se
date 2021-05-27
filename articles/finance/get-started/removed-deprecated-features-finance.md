@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 93d025759f86ffeb0ee1f1e6e6e2aeb3ab341b75
-ms.sourcegitcommit: 4ba25601eba295bd9057f7fb5e85f1f6764f5a27
+ms.openlocfilehash: 8cacf2fbef8873288493f71b43d22dc186e6d18e
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5965320"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980908"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Borttagna och utfasade funktioner i Dynamics 365 Finance
 
@@ -35,7 +35,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.20 utgåva
 
-### <a name="rtir-query-invoice-data-request-hu-format-configuration"></a>Formatkonfiguration för begäran om fakturadata genom RTIR-fråga (HU)
+### <a name="rtir-query-invoice-data-request-hu-electronic-reporting-er-format-configuration"></a>Formatkonfiguration för "begäran om fakturadata genom RTIR-fråga" – elektronisk rapportering (ER)
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -45,6 +45,15 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell: Från och med den 15 april 2022 planerar vi att inte längre stödja formatkonfigurationen "RTFV Query Invoice Data Request (HU)." |
 
+### <a name="french-fec-audit-file-electronic-reporting-er-format-for-france-under-german-audit-file-output-format"></a>"Fransk FEC-verifieringsfil" Elektronisk rapportering (ER) för Frankrike under formatet "Tysk verifieringsfil utdata"
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Ersätts med det nya formatet för "FEC-verifieringsfil (FR)" |
+| **Ersatt av en annan funktion?**   | Ja |
+| **Produktområden som påverkas**         | Ansökning |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell: den 1 maj 2022 planerar vi att inte längre stödja "French FEC audit file" Elektronisk rapportering (ER) för Frankrike under formatet "Tysk verifieringsfil utdata". Nytt FEC-verifieringsfilformat (FR) presenteras istället under "Dataexportmodellen". |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.17 utgåva
 

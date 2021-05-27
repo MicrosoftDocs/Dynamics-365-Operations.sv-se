@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d4bb8ce1abc07bc57e90e893e7e327761131d52a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 02e8bb1bfb088a877ef23b7a81982868700f4ae2
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795223"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028117"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Uppgiftsinspelare och hjälp för Retail Modern POS (MPOS) och molnbaserad kassa
 
@@ -127,7 +127,7 @@ Du kan använda fälten **Texter** och **Anteckningar** om du vill lägga till t
 
 #### <a name="text"></a>Text
 
-Text som du anger i fältet **Text** visas *ovanför* stegtexten i uppgiftsguiden. Den här platsen är lämplig för den text som du vill att användaren ska läsa innan han eller hon slutför ett steg.
+Text som du anger i fältet **Text** visas *ovanför* stegtexten i uppgiftsguiden. Den här platsen är lämplig för den text som du vill att användaren ska läsa innan användaren slutför ett steg.
 
 #### <a name="notes"></a>Anteckningar
 
@@ -135,7 +135,7 @@ Text som du anger i fältet **Anteckningar** visas *under* stegtexten i uppgifts
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Hjälp i Retail Modern POS och Cloud POS
 
-Om du vill visa dina egna anpassade uppgiftsinspelningar i hjälpfönstret för Retail Modern POS och Cloud POS så att de kan spelas upp text, så måste du spara dina uppgiftsinspelningar i ditt eget BPM-bibliotek och sedan uppdatera hjälpsystemparametrarna så att de pekar mot ditt BPM-bibliotek. Mer information finns i [Ansluta hjälpsystemet](../fin-and-ops/get-started/help-connect.md). Retail Modern POS och Cloud POS Help söker LCS i realtid. Det söker igenom alla BPM-bibliotek som valts i hjälpsystemparametrarna för Commerce och visar relevanta resultat. För att få åtkomst till menyn **Hjälp** klickar du på knappen **Hjälp** (frågetecken) högst upp på skärmen. Ange sedan ditt processnamn i sökrutan och tryck på sökknappen.
+Om du vill visa dina egna anpassade uppgiftsinspelningar i hjälpfönstret för Retail Modern POS och Cloud POS så att de kan spelas upp text, så måste du spara dina uppgiftsinspelningar i ditt eget BPM-bibliotek och sedan uppdatera hjälpsystemparametrarna så att de pekar mot ditt BPM-bibliotek. Mer information finns i [Ansluta hjälpsystemet](../fin-ops-core/fin-ops/get-started/help-connect.md). Retail Modern POS och Cloud POS Help söker LCS i realtid. Det söker igenom alla BPM-bibliotek som valts i hjälpsystemparametrarna för Commerce och visar relevanta resultat. För att få åtkomst till menyn **Hjälp** klickar du på knappen **Hjälp** (frågetecken) högst upp på skärmen. Ange sedan ditt processnamn i sökrutan och tryck på sökknappen.
 
 [![Knappen Hjälp](./media/help.jpg)](./media/help.jpg)
 

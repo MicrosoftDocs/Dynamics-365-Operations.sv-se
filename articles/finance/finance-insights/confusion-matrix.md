@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d6e8f63ef00f714109ae650d3cedaf19e5159325
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818762"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028213"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Resultat av maskininlärningsmodeller (förhandsversion)
 
@@ -63,8 +63,8 @@ För att börja besvara den här frågan bör du beakta hur korrekt en naiv giss
 
 En annan aspekt är värt att notera. Beakta ett scenario där ett medicinskt test används för att upptäcka en sjukdom i en patient. Det här problemet är ett problem med binära klassificeringar där ett positivt resultat anger att patienten har sjukdomen. I det här scenariot måste du tänka på konsekvenserna av följande fel:
 
-- Falska positiva, där testet anger att en patient har sjukdomen, men patienten inte har sjukdomen
-- Falska negativa, där testet anger att en patient inte har sjukdomen, men patienten har sjukdomen
+- Falska positiva, där testet anger att en patient har sjukdomen, men patienten inte har sjukdomen.
+- Falska negativa, där testet anger att en patient inte har sjukdomen, men patienten har sjukdomen.
 
 Det är uppenbart att båda typerna av fel är oönskade, men vilket fel är värst? Det beror på. När det gäller en livshotande sjukdom som kräver snabb behandling, är minimering falska negativa (förhoppningsvis följda av ytterligare tester) en högre prioritet. I andra mindre kritiska situationer kan den som skapar modellen minimera falska positiva i stället. Oavsett är det en rimlig slutsats att för att effektivt fastställa modellens kvalitet måste du ha mer information än ett noggrannhetsmått.
 

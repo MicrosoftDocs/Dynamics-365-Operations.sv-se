@@ -5,7 +5,6 @@ author: sherry-zheng
 ms.date: 12/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ITMPortTable, ITMLeadTimeTable, ITMLegTable
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-09
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 4cb1207916c40a18cf5b295baa913ae2d7198a05
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5d20f732f02140204d67e5602acaf42f9d9df424
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841919"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021598"
 ---
 # <a name="delivery-information-setup"></a>Inställningar för leveransinformation
 
@@ -56,7 +55,7 @@ Följande tabell visar de fält som är tillgängliga för alla tre typerna i sp
 | Källregister, källfält | Dessa fält identifierar ett källregister och ett källfält i databasen. Regeln läser in värdet i fältet och använder det på det sätt som har definierats av andra inställningar för regeln. |
 | Målregister, målfält | Dessa fält identifierar en destinationsregister och ett källfält i databasen. Regeln läser in värdet i fältet och använder det (eller skriver över) på det sätt som har definierats av andra inställningar för regeln. |
 | Aktivitet | Det här fältet identifierar den typ av aktivitet som ska användas för en leveransbehållare som matchas av en regel. |
-| Matchningskriterier | Det här fältet avgör hur systemet identifierar en matchning för en regel. I varje instans granskas data i käll- och destinationsregistren för att avgöra om och när ett fält ska uppdateras i målregistret.<p>Källregistret är till exempel *Färder* och målregistret är *Inköpsrubrik* eller *Inköpsrader*. Tabellen *Färder* har ett värde för **Från port** på *Hong Kong* och *Inköpsrubrik* har **Från port** värdet *Shanghai*. En regel skapas sedan som har *Hongkong* som "från"-port. I det här fallet fungerar värdena i fältet **Matchningskriterier** på följande sätt:</p><ul><li>**Båda** – Målfältet uppdateras inte eftersom en av de två portarna inte matchar.</li><li>**Källa** – Målfältet uppdateras eftersom källregistrets "från"-port är *Hongkong*.</li><li>**Mål** – Målfältet uppdateras inte eftersom destinationsregistrets "från"-port är *Hongkong* (inte *Hongkong*).</li></ul> |
+| Matchningskriterier | Det här fältet avgör hur systemet identifierar en matchning för en regel. I varje instans granskas data i käll- och destinationsregistren för att avgöra om och när ett fält ska uppdateras i målregistret.<p>Källregistret är till exempel *Färder* och målregistret är *Inköpsrubrik* eller *Inköpsrader*. Tabellen *Färder* har ett värde för **Från port** på *Hongkong* och *Inköpsrubrik* har **Från port** värdet *Shanghai*. En regel skapas sedan som har *Hongkong* som "från"-port. I det här fallet fungerar värdena i fältet **Matchningskriterier** på följande sätt:</p><ul><li>**Båda** – Målfältet uppdateras inte eftersom en av de två portarna inte matchar.</li><li>**Källa** – Målfältet uppdateras eftersom källregistrets "från"-port är *Hongkong*.</li><li>**Mål** – Målfältet uppdateras inte eftersom destinationsregistrets "från"-port är *Shanghai* (inte *Hongkong*).</li></ul> |
 | Kopiera åtgärd | Tillgängliga värden är *Kopiera* och *Standard*. Välj *Kopiera* om du vill kopiera värdet i källfältet till destinationsfältet. Välj *Standard* om du vill ange ett statiskt värde för destinationsfältet. |
 | Standardvärde | När fältet **Kopiera åtgärd** är inställt som *Standard* definierar fältet **Standard** standardvärdet för destinationsfältet. Om åtgärden till exempel är relaterad till en portuppdatering och fältet **Kopiera åtgärd** är inställt som *Standard*, identifierar **Standard** en port. |
 | Etapp | Det här fältet identifierar den del av såret som den angivna åtgärden ska vidtas för, t.ex. inläsning eller tull. |

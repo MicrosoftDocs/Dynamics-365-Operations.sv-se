@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 91f1963f2bbc01fc4d3a9282d6ac7705bc5287c2
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857283"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018841"
 ---
 # <a name="peripherals"></a>Kringutrustning
 
@@ -158,7 +158,7 @@ Nätverkets adresserbara kassalådor, kvittoskrivare och betalningsterminaler ka
 
 ### <a name="dedicated"></a>Dedikerad
 
-Modern POS-klienter för Windows och Android inkluderar **dedikerade** eller inbyggda maskinvarustationer. Dessa klienter kan kommunicera direkt med kringutrustning med hjälp av affärslogik som är inbyggd i programmen. Android-appen har endast stöd för nätverksenheter. Mer information om kringutrustningsstöd för Android finns på [konfigurera en POS Hybrid-app för Android och iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)-artikel.
+Modern POS-klienter för Windows och Android inkluderar **dedikerade** eller inbyggda maskinvarustationer. Dessa klienter kan kommunicera direkt med kringutrustning med hjälp av affärslogik som är inbyggd i programmen. Android-appen har endast stöd för nätverksenheter. Mer information om kringutrustningsstöd för Android finns på [konfigurera en POS Hybrid-app för Android och iOS](./dev-itpro/hybridapp.md)-artikel.
 
 Om du vill använda dedikerad maskinvarustationen tilldelar du en maskinvaruprofil till en kassa som kommer att använda Modern POS för Android-program. Skapa en maskinvarustation av typen **Dedikerad** för butiken som POS ska användas i. Starta Modern POS i icke-användarläge och använd funktionen **hantera maskinvarustationer** för att aktivera maskinvarustationens kapacitet. Den dedikerade maskinvarustationens aktiveras som standard. Därefter kan du logga ut från Modern POS och sedan logga in igen och öppna en skift och kringutrustning som har konfigurerats i maskinvaruprofilen kan användas. 
 
@@ -199,7 +199,7 @@ För information, se [Konfigurera, installera och aktivera Modern POS (MPOS)](re
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Modern POS för Android och iOS-installation och konfiguration
 
-För information, se [Ange POS Hybrid-app på Android och iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+För information, se [Ange POS Hybrid-app på Android och iOS](./dev-itpro/hybridapp.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS inställning och konfiguration av enheter
 
@@ -494,7 +494,7 @@ Den här konfigurationen är de vanligaste konfigurationen för traditionella, f
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS för Android med en IPC maskinvarustation (inbyggt)
 
-**Nytt för 10.0.8** Epson nätverksskrivare och kassalådor som är anslutna till dessa skrivare via DK-porten stöds nu för Modern POS Android-appen. Mer information finns på [Konfigurera POS Hybrid-app på Android och iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)-artikel.
+**Nytt för 10.0.8** Epson nätverksskrivare och kassalådor som är anslutna till dessa skrivare via DK-porten stöds nu för Modern POS Android-appen. Mer information finns på [Konfigurera POS Hybrid-app på Android och iOS](./dev-itpro/hybridapp.md)-artikel.
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Alla Modern POS-klienter som har en utfäst "delad" IIS maskinvarustation
 
@@ -614,6 +614,9 @@ Följande kringutrustning som har testats med IPC maskinvarustation som ingår i
 | Stjärna         | TSP650II | Anpassat    | Ansluten via nätverket   |
 | Stjärna         | mPOP     | OPOS      | Ansluten via Bluetooth |
 | HP           | F7M67AA  | OPOS      | Strömförsörjd USB             |
+
+> [!NOTE]
+> Det går inte att använda STAR TSP 100-skrivaren för den inbyggda maskinvaran. Den inbyggda maskinvarukonfigurationen använder en 64-bitars process, som inte är kompatibel med befintliga Star TP 100-drivrutiner. 
 
 #### <a name="bar-code-scanner"></a>Streckkodsläsare
 

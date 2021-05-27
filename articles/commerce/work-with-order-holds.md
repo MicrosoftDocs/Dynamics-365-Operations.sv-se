@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 61a73f10c8a8b3386826f08184028d8d5e6508a4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2066e0841658917cb0e6ddc0fbacf98d52098da8
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800393"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027466"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurera och arbeta med orderspärrar för kundtjänst
 
@@ -43,7 +43,7 @@ Order som kundtjänst skapar i back officnäthandelsprogrammet kan spärras manu
 
 Under orderregistreringen och innan beställningen gjordes och bekräftades ska användare kunna lägga order manuellt eller spärra för att förhindra att de övergår till distributionslagret för vidare bearbetning. Till exempel om kunden som gör beställningen inte är redo eller viktiga data som krävs för att bearbeta ordern kanske saknas.
 
-På orderns startsida kan användaren av kundtjänst spärra en order med hjälp av alternativet **Orderspärrar** på fliken **försäljningsorder** på orderregistreringsmenyn. Alternativt kan du välja menyobjektet **spärra** på sidan **sammanfattning av försäljningsorder** som visas när han eller hon väljer **slutförd** på en kundtjänsts försäljningsorder.
+På orderns startsida kan användaren av kundtjänst spärra en order med hjälp av alternativet **Orderspärrar** på fliken **försäljningsorder** på orderregistreringsmenyn. Alternativt kan användaren välja menyobjektet **Spärra** på sidan **Sammanfattning av försäljningsorder** som visas när användaren väljer **Slutförd** på en kundtjänsts försäljningsorder.
 
 I båda fallen visas sidan **Orderspärrar**. Användaren kan sedan välja **Ny** för att skapa ett undantag för ordern. I fältet **spärrkod** ska användaren välja den kod som bäst beskriver orsaken till spärrningen. I fältet **orsakskod** kan användaren också välja en ytterligare kod för att skapa en andra beskrivning av spärrningen.
 
@@ -53,7 +53,7 @@ När spärrningsinformation registrerats och sparats, kan användaren stänga si
 
 Om flaggan **aktiverar slutförande av order** är aktiverad i kundtjänstkanalen behöver betalningen inte gälla för en order som har spärrats. Däremot för en försäljningsorder som inte är spärrad kan användarna inte lämna startsidan för försäljningsorder förrän betalningen görs. Betalning kommer förstås att krävas innan orderspärren frisläpps.
 
-Kundtjänst kan dessutom lägga en manuell bedrägerispärr för order som av någon anledning är osäkra. Order kan också spärras automatiskt när de matchar aktiva bedrägerikriterier och regler. Mer information om den här typen av orderspärr, se [ställa in bedrägerivarningar](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+Kundtjänst kan dessutom lägga en manuell bedrägerispärr för order som av någon anledning är osäkra. Order kan också spärras automatiskt när de matchar aktiva bedrägerikriterier och regler. Mer information om den här typen av orderspärr, se [ställa in bedrägerivarningar](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Visa och hantera de order som har spärrats
 

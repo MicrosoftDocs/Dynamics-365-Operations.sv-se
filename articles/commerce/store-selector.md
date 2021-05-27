@@ -2,7 +2,6 @@
 title: Modul för butiksväljare
 description: Det här avsnittet handlar om modulen för butiksväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
-ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
+ms.openlocfilehash: 5a9311435264119e8287f1b7da2d0456552231f3
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "5853427"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021474"
 ---
 # <a name="store-selector-module"></a>Modul för butiksväljare
 
@@ -62,7 +61,7 @@ Följ dessa steg för att ange värden för latitud och longitud för en butiksp
 
 ## <a name="bing-maps-integration"></a>Bing Maps-integrering
 
-Modulen butiks väljare är integrerad med [Bing Maps REST-API:er (Application Programming Interfaces)](https://docs.microsoft.com/bingmaps/rest-services/) för att använda funktionerna Bing geokodning och automatiska förslag. En Bing Maps API-nyckel krävs och måste läggas till på sidan för delade Commerce-administration. Geokodnings-API används för att konvertera en plats till latitud- och longitudvärden. Integrationen med API för automatiska förslag används för att visa sökförslag när användare anger platser i sökfältet.
+Modulen butiks väljare är integrerad med [Bing Maps REST-API:er (Application Programming Interfaces)](/bingmaps/rest-services/) för att använda funktionerna Bing geokodning och automatiska förslag. En Bing Maps API-nyckel krävs och måste läggas till på sidan för delade Commerce-administration. Geokodnings-API används för att konvertera en plats till latitud- och longitudvärden. Integrationen med API för automatiska förslag används för att visa sökförslag när användare anger platser i sökfältet.
 
 För REST API för automatiska förslag måste du se till att följande URL:er tillåts per din webbplats säkerhetsprinciper för innehåll (CSP). Den här inställningen görs i Commerce webbplatsskapare genom att lägga till tillåtna URL:er för webbplatsens CSP-direktiv (till exempel **img-src**). Mer information finns i [säkerhetsprinciper för innehåll](manage-csp.md). 
 
@@ -78,14 +77,14 @@ Modulen för butiksväljare stöder läget **Hämta i butik** som visar en lista
 
 Modulen butiksväljare kan läggas till i en modul för inköpsruta på en PDP för att visa butiker där en produkt är tillgänglig för upphämtning. Den kan också läggas till i en vagnmodul. I det här fallet visar modulen butiksväljare upphämtningsalternativ för varje radartikel i vagnen. Modulen butiksväljare kan också läggas till andra sidor eller moduler via tillägg och anpassningar.
 
-För att detta scenario ska fungera bör produkter konfigureras så att leveranssättet **hämta** används. Annars visas modulen inte på respektive produktsidor. Mer information om hur du konfigurerar leveranssättet finns i [ställa in leveransmetod](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+För att detta scenario ska fungera bör produkter konfigureras så att leveranssättet **hämta** används. Annars visas modulen inte på respektive produktsidor. Mer information om hur du konfigurerar leveranssättet finns i [ställa in leveransmetod](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Följande bild visar ett exempel på en modul för butiksväljare som används på ett PDP.
 
 ![Exempel på en modul för butiksväljare som används på PDP](./media/BOPIS.PNG)
 
 > [!NOTE]
-> I version 10.0.16 och senare kan en ny funktion aktiveras, detta så att en organisation kan definiera flera olika hämtningslägen för kunder.  Om den här funktionen aktiveras kommer butiksväljaren och andra näthandelsmoduler att förbättras så att konsumenten eventuellt kan välja mellan olika leveransalternativ.  Mer information om den här funktionen finns i [den här dokumentationen](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
+> I version 10.0.16 och senare kan en ny funktion aktiveras, detta så att en organisation kan definiera flera olika hämtningslägen för kunder.  Om den här funktionen aktiveras kommer butiksväljaren och andra näthandelsmoduler att förbättras så att konsumenten eventuellt kan välja mellan olika leveransalternativ.  Mer information om den här funktionen finns i [den här dokumentationen](./multiple-pickup-modes.md). 
 
 ## <a name="find-stores-mode"></a>Sök efter butiksläge
 
@@ -157,11 +156,11 @@ Om du vill konfigurera modulen för butiksväljaren att visa tillgängliga butik
 
 [Guidad visning av kundvagn och kassa](quick-tour-cart-checkout.md)
 
-[Ställ in leveranssätt](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Ställ in leveranssätt](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 [Hantera Bing-kartor för din organisation](dev-itpro/manage-bing-maps.md)
 
-[Bing Maps REST API:er](https://docs.microsoft.com/bingmaps/rest-services/)
+[Bing Maps REST API:er](/bingmaps/rest-services/)
 
 [Kartmodul](map-module.md)
 

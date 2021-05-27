@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 45376e43c00116d403f00c58772aefba6fa33eeb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fbd1d9c71ece77cbf4c6ecb741eb6d5e3e3455d9
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794029"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028165"
 ---
 # <a name="point-of-sale-pos-improvements-for-serialized-products"></a>Kassaförbättringar för serialiserade produkter
 
@@ -30,7 +30,7 @@ Baserat på inställningarna i administration för Commerce kan produkterna klas
 
 ## <a name="pos-improvements"></a>Kassaförbättringar
 
-- **Serienummer krävs inte före POS** – Tidigare måste en kassör som lade till en serialiserad produkt i transaktionen även ange ett serienummer. Detta krav blev ett problem i samband med kundmöten då kassörer och säljmedarbetare hade möjlighet till merförsäljning. Före betalsteget uppdaterades produkterna ofta i kundvagnen. Varje gång en kassör lade till en ny produkt efterfrågade systemet därför serienumret. Dialogrutan för serienummer innehåller nu knappen **Lägg till senare**. Säljmedarbetarna kan därför lägga till varan i transaktionen, men kan ange serienumret senare. Säljmedarbetarna kan snabbt lägga till och byta ut serialiserade varor i kundvagnen och sedan kan ange serienumret precis före POS. Om serienumret inte anges för en serialiserad produkt kommer an kassör som försöker slutföra transaktionen att få ett felmeddelande. Detta meddelande anger att kassören måste ange de serienummer som saknas innan han eller hon kan fortsätta.
+- **Serienummer krävs inte före POS** – Tidigare måste en kassör som lade till en serialiserad produkt i transaktionen även ange ett serienummer. Detta krav blev ett problem i samband med kundmöten då kassörer och säljmedarbetare hade möjlighet till merförsäljning. Före betalsteget uppdaterades produkterna ofta i kundvagnen. Varje gång en kassör lade till en ny produkt efterfrågade systemet därför serienumret från kassören. Dialogrutan för serienummer innehåller nu knappen **Lägg till senare**. Säljmedarbetarna kan därför lägga till varan i transaktionen, men kan ange serienumret senare. Säljmedarbetarna kan snabbt lägga till och byta ut serialiserade varor i kundvagnen och sedan kan ange serienumret precis före POS. Om serienumret inte anges för en serialiserad produkt kommer an kassör som försöker slutföra transaktionen att få ett felmeddelande. Detta meddelande anger att kassören måste ange de serienummer som saknas innan kassören kan fortsätta.
 
     En kommentar visas under transaktionsraden för varje enskild serialiserad vara där serienumret hoppades över. Denna kommentar anger att serienumret inte har angetts för varan. Kassören kan därför snabbt hitta varor som saknar ett serienummer.
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d09c7be5de75511b10d7a69d4b8ac12917b0dbe8
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
+ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910435"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6017016"
 ---
 # <a name="inventory-visibility-add-in"></a>Tillägg för lagersynlighet
 
@@ -41,20 +41,23 @@ Du måste installera tillägget för lagersynlighet med hjälp av Microsoft Dyna
 
 Mer information finns i [Lifecycle Services, resurser](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
-### <a name="prerequisites"></a>Förutsättningar
+### <a name="inventory-visibility-add-in-prerequisites"></a>Förutsättningar för tillägg för lagersynlighet
 
 Innan du installerar tillägget för lagersynlighet måste du göra följande:
 
 - Skaffa ett LCS implementeringsprojekt med åtminstone en miljö distribuerad.
 - Se till att kraven för att ställa in tillägg som finns i [översikt över tillägg](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) har slutförts. Lagersynlighet kräver inte länkning av dubbelriktad skrivning.
 - Kontakta lagersynlighetsteamet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) för att få följande tre filer:
-    - `Inventory Visibility Dataverse Solution.zip`
-    - `Inventory Visibility Configuration Trigger.zip`
-    - `Inventory Visibility Integration.zip` (om versionen av Supply Chain Management som du kör är tidigare än version 10.0.18)
+  - `Inventory Visibility Dataverse Solution.zip`
+  - `Inventory Visibility Configuration Trigger.zip`
+  - `Inventory Visibility Integration.zip` (om versionen av Supply Chain Management som du kör är tidigare än version 10.0.18)
+- Alternativt kan du kontakta lagersynlighetsteamet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) för att få Package Deployer-paketen. Dessa paket kan användas av ett officiellt Package Deployer-verktyg.
+  - `InventoryServiceBase.PackageDeployer.zip`
+  - `InventoryServiceApplication.PackageDeployer.zip`(det här paketet innehåller alla ändringar i paketet `InventoryServiceBase`, plus ytterligare programkomponenter för användargränssnittet)
 - Följ instruktionerna i [Snabbstart: Registrera ett program med Microsofts identitetsplattform](/azure/active-directory/develop/quickstart-register-app) om du vill registrera ett program och lägga till en klienthemlighet i AAD i samband med din Azure-prenumeration.
-    - [Registrera ett program](/azure/active-directory/develop/quickstart-register-app)
-    - [Lägg till en klienthemlighet](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
-    - I följande steg används **ID för program (klient)**, **Klienthemlighet** samt **ID för klientorganisation**.
+  - [Registrera ett program](/azure/active-directory/develop/quickstart-register-app)
+  - [Lägg till en klienthemlighet](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
+  - I följande steg används **ID för program (klient)**, **Klienthemlighet** samt **ID för klientorganisation**.
 
 > [!NOTE]
 > De länder och regioner som för närvarande stöds är Kanada, USA och Europeiska unionen (EU).
@@ -63,18 +66,49 @@ Om du har några frågeställningar om dessa förutsättningar kontaktar du prod
 
 ### <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Ställ in Dataverse
 
-Följ dessa steg för att konfigurera Dataverse.
+Om du vill konfigurera Dataverse för användning med Lagersynlighet måste du först förbereda förutsättningarna och sedan bestämma om du vill konfigurera Dataverse med antingen Package Deployer-verktyget eller genom att importera lösningarna manuellt (du behöver inte göra båda). Installera sedan tillägget för lagersynlighet. Följande delgrupper beskriver hur du slutför varje uppgift.
 
-1. Lägg till en serviceprincip för din innehavare:
+#### <a name="prepare-dataverse-prerequisites"></a>Förbered Dataverse-förutsättningar
 
-    1. Installera Azure AD PowerShell modul v2 enligt beskrivningen i [Installera Azure Active Directory PowerShell för Graph](/powershell/azure/active-directory/install-adv2).
-    1. Kör följande PowerShell-kommando.
+Innan du börjar konfigurera Dataverse lägger du till en tjänstprincip i din klientorganisation genom att göra följande:
 
-        ```powershell
-        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+1. Installera Azure AD PowerShell modul v2 enligt beskrivningen i [Installera Azure Active Directory PowerShell för Graph](/powershell/azure/active-directory/install-adv2).
 
-        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
-        ```
+1. Kör följande PowerShell-kommando:
+
+    ```powershell
+    Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+    
+    New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+    ```
+
+#### <a name="set-up-dataverse-using-the-package-deployer-tool"></a>Konfigurera Dataverse med hjälp av Package Deployer-verktyget
+
+När du har ställt in förutsättningarna använder du följande procedur om du föredrar att konfigurera Dataverse med hjälp av Package Deployer-verktyget. Se nästa avsnitt för information om hur du importerar lösningarna manuellt istället (gör inte båda).
+
+1. Installera utvecklarverktyg enligt beskrivningen i [Hämta verktyg från NuGet](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget).
+
+1. Baserat på dina affärsförutsättningar väljer du `InventoryServiceBase`- eller `InventoryServiceApplication`-paketet.
+
+1. Importera lösningarna:
+    1. För `InventoryServiceBase`-paketet:
+        - Packa upp `InventoryServiceBase.PackageDeployer.zip`
+        - Sök efter mappen `InventoryServiceBase`, filen `[Content_Types].xml`, filen `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll`, filen `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config` och filen `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`. 
+        - Kopiera var och en av dessa mappar och filer till katalogen `.\Tools\PackageDeployment`, som skapades när du installerade utvecklarverktygen.
+    1. För `InventoryServiceApplication`-paketet:
+        - Packa upp `InventoryServiceApplication.PackageDeployer.zip`
+        - Sök efter mappen `InventoryServiceApplication`, filen `[Content_Types].xml`, filen `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`, filen `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config` och filen `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`.
+        - Kopiera var och en av dessa mappar och filer till katalogen `.\Tools\PackageDeployment`, som skapades när du installerade utvecklarverktygen.
+    1. Kör `.\Tools\PackageDeployment\PackageDeployer.exe`. Importera lösningarna genom att följa anvisningarna på skärmen.
+
+1. Tilldela programanvändaren säkerhetsroller.
+    1. Öppna URL-adressen för din Dataverse miljö.
+    1. Gå till **Avancerade inställningar \> System \> Säkerhet \> Användare** och hitta användaren med namnet **# InventoryVisibility**.
+    1. Välj **Tilldela roll** och välj sedan **Systemadministratör**. Om det finns en roll med namnet **Common Data Service-användare** väljer du den också.
+
+#### <a name="set-up-dataverse-manually-by-importing-solutions"></a>Konfigurera Dataverse manuellt genom att importera lösningar
+
+När du har ställt in förutsättningarna använder du följande procedur om du föredrar att konfigurera Dataverse manuellt genom att importera lösningar. Se föregående avsnitt för information om hur du använder Package Deployer-verktyget i stället (gör inte båda).
 
 1. Skapa en programanvändare för lagersynlighet i Dataverse:
 

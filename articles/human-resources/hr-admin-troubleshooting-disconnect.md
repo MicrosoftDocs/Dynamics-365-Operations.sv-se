@@ -1,6 +1,6 @@
 ---
 title: Klienten kopplas från
-description: Det här avsnittet beskriver vad du gör om kunden kopplas från sin miljö och inte vet varför.
+description: Det här avsnittet beskriver vad du gör om kunden kopplas från miljön och inte vet varför.
 author: andreabichsel
 ms.date: 02/03/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e9ec43ad0a7d121eb247d81d4b506556a0fa2214
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: db0e8efec1a5a6f01c9b7c4d9334a959fc42886b
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794911"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027997"
 ---
 # <a name="client-disconnects"></a>Klienten kopplas från
 
@@ -32,7 +32,7 @@ Detta problem kan inträffa i alla miljöer.
  
 **Symptom** 
 
-Kunden kopplas från sin miljö och inte vet varför. Kunden får ett av följande felmeddelanden:
+Kunden kopplas från miljön och vet inte varför. Kunden får ett av följande felmeddelanden:
 
 - Anslutningen har kopplats från. Klicka på Stäng om du vill fortsätta arbeta.
 - Det verkar som att du tappat anslutningen till nätverket. Klicka på Försök igen.

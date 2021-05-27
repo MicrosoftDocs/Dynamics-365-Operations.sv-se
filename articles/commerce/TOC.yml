@@ -380,8 +380,6 @@
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
                     - name: Förbättringar av likviditetsstyrning
                       href: cash-mgmt.md
-                    - name: Lagersökning i kassan
-                      href: product-variants-POS.md
                     - name: Pausa och återuppta transaktioner i kassan
                       href: pos-suspend-recall-transactions.md
                     - name: Offlinefunktioner för kassan
@@ -714,6 +712,8 @@
                       href: pos-outbound-inventory-operation.md
                     - name: Beräkna lagertillgänglighet för butikskanaler
                       href: calculated-inventory-retail-channels.md
+                    - name: Lagersökningsåtgärd i kassan
+                      href: pos-inventory-lookup-operation.md
                 - name: Inköpsorder
                   items:
                     - name: Översikt av inköpsorder
@@ -2444,14 +2444,38 @@
                   items:
                     - name: Översikt över kassatillägg
                       href: dev-itpro/pos-extension/pos-extension-overview.md
-                    - name: Komma igång med kassatillägg
+                    - name: Komma i gång med kassatillägg
                       href: dev-itpro/pos-extension/pos-extension-getting-started.md
                     - name: Skapa ett projekt för tilläggspaket för kassa
                       href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Skapa en appx-fil för Modern POS-tillägg
+                    - name: Skapa en .appx-fil för ett Modern POS-tilläggspaket
                       href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: Felsöka ett kassatillägg
+                    - name: Felsöka kassatillägg
                       href: dev-itpro/pos-extension/debug-pos-extension.md
+                    - name: Förpackning och distribution av tillägg
+                      items:
+                        - name: Skapa ett Modern POS-tilläggspaket
+                          href: dev-itpro/pos-extension/mpos-extension-packaging.md
+                        - name: Kodsignering av ett Modern POS-tilläggspaket (MSIX)
+                          href: dev-itpro/pos-extension/mpos-extension-signing.md
+                        - name: Skapa ett paket för Cloud POS-tillägg
+                          href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Migrera ett kassatillägg till den oberoende förpackningsmodellen
+                      href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Utvecklingsguide för kassatillägg
+                      items:
+                        - name: Grunderna om kassatillägg
+                          href: dev-itpro/pos-extension/pos-extension-basics.md
+                        - name: Skapa en anpassad vy i kassa
+                          href: dev-itpro/pos-extension/custom-pos-view.md
+                        - name: Använd kassakontroller i tillägg
+                          href: dev-itpro/pos-extension/controls-pos-extension.md
+                        - name: Uppgifter
+                          items:
+                            - name: Använd Knockout.js i kassatillägg
+                              href: dev-itpro/pos-extension/knockout-pos-extension.md
+                            - name: Använda anpassad fjärradministrerad Commerce API
+                              href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: Utbyggbarhet för Hardware Station
               items:
                 - name: Hardware Station och utbyggbarhet

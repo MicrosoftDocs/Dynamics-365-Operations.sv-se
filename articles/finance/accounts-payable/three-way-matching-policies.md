@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 829c9c5549c337c5c2b118f3027111831f2632ca
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41f863d85a1ad52d8fa11a458054728728858d27
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814306"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027804"
 ---
 # <a name="three-way-matching-policies"></a>Trevägsmatchningspolicyer
 
@@ -37,9 +37,9 @@ Fabrikam arbetar med flera juridiska personer och medarbetare i hela världen. N
 
 Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande roller att uppnå sina mål:
 
--   Ken är kontrollanten för företaget Fabrikam. Han kan hjälpa människor i sin organisation att identifiera och korrigera problem med beställning, mottagning och betalning av artiklar (varor och tjänster) från leverantörer.
+-   Ken är kontrollanten för företaget Fabrikam. Ken kan hjälpa människor i organisationen att identifiera och korrigera problem med beställning, mottagning och betalning av artiklar (varor och tjänster) från leverantörer.
 -   Phyllis och April är redovisningchefer på ekonomiavdelningen i Fabrikams amerikanska avdelning. De kan tillämpa företagets policy och kontrollera att fakturor betalas, endast efter att fakturorna matchas med inköpsordern och mottagning av varor och tjänster.
--   Tony är produktionchefen för Fabrikams amerikanska avdelning. Han och annan produktionpersonal kan kontrollera att artiklar tas emot som de har beställts från leverantörerna och dessutom bokförs så att personalen har vad de behöver för att kunna utföra sitt arbete.
+-   Tony är produktionchefen för Fabrikams amerikanska avdelning. Tony och annan produktionpersonal kan kontrollera att artiklar tas emot som de har beställts från leverantörerna och dessutom bokförs så att personalen har vad de behöver för att kunna utföra sitt arbete.
 
 ### <a name="prerequisites"></a>Förutsättningar
 
@@ -47,17 +47,17 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 -   Ken anger Automatiskt uppdatering av växling av huvudmatchningsstatus för den juridiska personen till Ja.
 -   Ken anger fältet Matchprissummor för den juridiska personen till Procentsats och anger 15 % som toleransprocent.
 -   Ken anger matchningspolicyn på artikelnivån för artikel 1500 – CNC Milicron-datorn till trevägsmatchning. Denna artikel är en tillgångsartikel som används för tillverkning på Fabrikam. Fakturor för artikeln matchas med inköpsorderrader för priser och med produktinleveranser för kvantiteter.
--   Tony anger en rekvisition för fem CNC Milicron-datorer. Alicia, en inköpsorderansvarig på Fabrikam, visar en inköpsorder för en juridisk person som heter Contoso för att leverera artiklarna.
+-   Tony anger en rekvisition för fem CNC Milicron-datorer. Alicia, en inköpsorderansvarig på Fabrikam, utfärdar en inköpsorder till en juridisk person som heter Contoso för att leverera artiklarna.
 
-    | Artikelnummer                 | Kvantitet | Enhetspris | Nettobelopp | Kod för avgifter        | Avgiftsvärde |
+    | Artikelnummer                 | Antal | Enhetspris | Nettobelopp | Kod för avgifter        | Avgiftsvärde |
     |-----------------------------|----------|------------|------------|---------------------|---------------|
-    | 1500 – CNC Milicron-dator | 5        | 8 000,00   | 40 000,00  | Transport och hantering | 3 000,00      |
+    | 1500 – CNC Milicron-dator | 5        | 8 000,00   | 40 000,00  | Transport och hantering | 3,000.00      |
 
 -   Arnie, en kundreskontraansvarig på Contoso, granskar veckans försändelser. Arnie väljer försändelsetransaktioner för att fakturera Fabrikam för leverans av CNC Milicron-datorerna. Arnie inkluderar en avgift för distribution och hantering. Fabrikam ska beakta om avgiften ska ingå i kostnaden för tillgången.
 
 ### <a name="scenario"></a>Scenario
 
-1.  Sammy, en anställd på inleveransavdelninen på Fabrikam, tar emot den totala kvantiteten av datorer som levereras från Contoso. Han anger en kvantitet på 5 på en produktinleverans. Eftersom inköpsordern har inlevererats helt, ändras statusen för inköpsordern till Inlevererad.
+1.  Sammy, en anställd på inleveransavdelninen på Fabrikam, tar emot den totala kvantiteten av maskiner som levereras från Contoso. Sammy anger en kvantitet på 5 på en produktinleverans. Eftersom inköpsordern har inlevererats helt, ändras statusen för inköpsordern till Inlevererad.
 2.  April, leverantörsreskontrakoordinatorn på Fabrikam, matar in och verifierar fakturan som skickas in av Contoso. Hon verifierar följande information:
     -   För artiklar, som kräver trevägsmatchning, matchar kvantiteten på fakturaraden den kvantitet som har tagits emot. Den mottagna kvantiteten anges på produktinleveransen som är matchad till fakturan.
     -   För artiklar som kräver tvåvägs- eller trevägsmatchning ligger priserna på fakturaraden inom toleranserna som definieras i Microsoft Dynamics 365 Finance. Detta omfattar följande typer av prismatchning:
@@ -66,7 +66,7 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 
 Pappersfakturan från Contoso innehåller följande information.
 
-| Artikel                        | Kvantitet | Enhetspris | Nettobelopp |
+| Artikel                        | Antal | Enhetspris | Nettobelopp |
 |-----------------------------|----------|------------|------------|
 | 1500 – CNC Milicron-dator | 5        | 8 100,00   | 40,500.00  |
 | Transport och hantering       |          |            | 4,000.00   |
@@ -87,7 +87,7 @@ Sammanfattning: Ken är kontrollant på högkvarteret för av en juridisk person
 Volymen och beloppen är små och det har funnit har problem vid leverans från alla leverantörer i Malaysia. Av denna anledning anger Cassie kontrollnivån för vissa artiklar och leverantörskombinationer som anskaffas i Malaysia till trevägsmatchning. 
 
 Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande roller att uppnå sina mål:
--   Ken är kontrollanten för företaget Fabrikam. Han kan hjälpa människor i sin organisation att identifiera och korrigera problem med beställning, mottagning och betalning av artiklar (varor och tjänster) från leverantörer.
+-   Ken är kontrollanten för företaget Fabrikam. Ken kan hjälpa människor i organisationen att identifiera och korrigera problem med beställning, mottagning och betalning av artiklar (varor och tjänster) från leverantörer.
 -   Cassie är bokföringsansvarig för Fabrikans malaysiska avdelning. Hon kan tillämpa företagets policy och kontrollera att fakturor betalas, endast efter att de matchas med inköpsorderrader och produktinleveranser som representerar inleverans av varor och tjänster. Hon kan även öka kontrollnivån för trevägsmatchning för specifika artiklar för att kontrollera driftskostnader.
 
 ### <a name="prerequisites"></a>Förutsättningar
@@ -96,7 +96,7 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 -   Ken anger fältet Matchprissummor för den juridiska personen till Procentsats och anger 10 % som toleransprocent.
 -   Ken kan ange pristoleransinformation för alla artiklar 2 %.
 -   Cassie anger matchningspolicyn på artikeln och leverantörkombinationsnivån för artikeln PH2500 – dator och leverantör Contoso till trevägsmatchning.
--   Alicia, en inköpsordeansvarig på Fabrikams malaysiska avdelning, utfärdar inköpsorder till Contoso för att leverera tre artiklar som visas i följande tabell. När hon skapar inköpsordern åsidosätter hon matchningspolicyn för att den trådlösa musen ska vara trevägsmatchning i stället för tvåvägsmatchning.
+-   Alicia, en inköpsorderansvarig på Fabrikams malaysiska avdelning, utfärdar inköpsorder till Contoso för att leverera tre artiklar som visas i följande tabell. När hon skapar inköpsordern åsidosätter hon matchningspolicyn för att den trådlösa musen ska vara trevägsmatchning i stället för tvåvägsmatchning.
 
     | Artikelnummer           | Kvantitet | Enhetspris | Nettobelopp | Matchningspolicy (standardvärde) | Matchningspolicy (på inköpsorderraden) |
     |-----------------------|----------|------------|------------|---------------------------------|----------------------------------------------|
@@ -115,7 +115,7 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 
 Pappersfakturan från Contoso innehåller följande information.
 
-| Artikel                  | Kvantitet | Enhetspris | Nettobelopp |
+| Artikel                  | Antal | Enhetspris | Nettobelopp |
 |-----------------------|----------|------------|------------|
 | PH2500 – dator     | 2        | 2 500,00   | 5 000,00   |
 | MM01 – Trådlös mus | 2        | 41.00      | 82.00      |

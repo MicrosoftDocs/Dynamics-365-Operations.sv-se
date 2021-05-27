@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0eece0678335caa789f0b2c4a324deab6832b53c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f1f91a67ebac212f72b5524723ec0b8b4e0e3e99
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795487"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028285"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Ställ in aktualitets-, frekvens- och monetär (RFM) analys
 
@@ -33,13 +33,13 @@ Aktualitet, frekvens och monetär (RFM) analys är ett marknadsföringsverktyg s
 
 - Den första siffran är kundens aktualitetsklassificering, d.v.s. hur nyligen kunden gjorde ett inköp från din organisation.
 - Den andra siffran är kundens frekvensbedömning, d.v.s. hur ofta kunden gör inköp från din organisation.
-- Den tredje siffran är kundens monetära värdering, d.v.s. hur mycket kunden spenderar när den gör inköp från din organisation.
+- Den tredje siffran är kundens monetära värdering, d.v.s. hur mycket kunden spenderar när kunden gör inköp från din organisation.
 
 Till exempel, din organisation har satt betyg på en skala från 1 till 5, där 5 är högsta betyg. I detta fall en kund värdering av 535 berättar dig följande information om kunden:
 
 - **Aktualitet värdering av 5** – kunden har nyligen gjort ett köp.
 - **Bedömning av frekvens av 3** – Kunden köper produkter från din organisation måttligt ofta.
-- **Monetär värdering 5** – När kunden gör ett köp spenderar den en avsevärd summa pengar.
+- **Monetär värdering 5** – När kunden gör ett köp spenderar kunden en avsevärd summa pengar.
 
 Om din organisation använder en sammanlagd siffra för tjoget, den individuella betyg läggs ihop. För samma exempel, kunden har en värdering av 13 (5 + 3 + 5).
 

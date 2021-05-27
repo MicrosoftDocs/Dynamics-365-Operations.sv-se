@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03a195c725854eff1fe6d6fa20bb815673e2e307
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3ff7ac15a64196d7839177ded5515386184e268
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827357"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028237"
 ---
 # <a name="position-forecasting"></a>Befattningsprognos
 
@@ -67,9 +67,9 @@ Jodis organisation ger ett utbildningsavdrag på 5 procent av en medarbetares g
 
 Jodi inte vill att chefer ska ändra beloppet av förmånen. Därför markerar hon **Tillåt aktivering inte ändringar** i **Prognostisera befattningåsidosätt** fältet. Organisationen vill att den här kostnad ska fördelas jämnt till varje månad. Därför ska Jodi **Kvartalsvis** i **Allokeringsmetod** fältet. 
 
-Därefter lägger till anger anger Jodi en beräkningsrad kostnader, datum och en huvudkonto och procent **5.00** . Hennes organisation har ett lock av $5,000 per år för den här förmån. Därför skapar Jodi det belopp som den årliga gränsen. 
+Därefter lägger till anger anger Jodi en beräkningsrad kostnader, datum och en huvudkonto och procent **5.00** . Organisationen har ett tak på 5 000 dollar per år för den här förmånen. Därför skapar Jodi det belopp som den årliga gränsen. 
 
-Slutligen lägger till Jodi alla kostnader för att tjäna som används för grundlön som beräkningsbaser. Hennes budgeterade kostnader element är nu går det att användas.
+Slutligen lägger till Jodi alla kostnader för att tjäna som används för grundlön som beräkningsbaser. Budgetens kostnadselement är nu redo att användas.
 
 ### <a name="compensation-groups"></a>Kompensationsgrupper
 
@@ -137,7 +137,7 @@ De budgeterade kostnader elementraderna måste räknas om när FTE-värdet, änd
 
 **Exempel** 
 
-Organisationen beaktar två alternativ för att minska kostnaden för en revisorbefattning. En väljare ska fylla i befattningdelen av sätt genom året. Övrig väljaren är att ändra befattningen till halvtid för hela året. Golvspiken har skapat en prognos befattning för den befintliga revisorbefattningen i ett scenario jämföra. Han kopierar den här baslinjeprognosbefattning till scenario A, Lista avyttringsdatumet maj till 31 och omberäkna. Golvspiken kopierar till baslinjeprognosbefattningen scenariot B, ändras till FTE-värdet och omberäkna **0.50**. Golvspiken har nu tre versioner, som vart och ett har kostnad summor, som stämmer överens med hans väljare.
+Organisationen beaktar två alternativ för att minska kostnaden för en revisorbefattning. En väljare ska fylla i befattningdelen av sätt genom året. Övrig väljaren är att ändra befattningen till halvtid för hela året. Golvspiken har skapat en prognos befattning för den befintliga revisorbefattningen i ett scenario jämföra. Brad kopierar denna baslinjeprognosposition till scenario A, sätter indragningsdatumet på 31 maj och omberäknar. Golvspiken kopierar till baslinjeprognosbefattningen scenariot B, ändras till FTE-värdet och omberäkna **0.50**. Brad har nu tre versioner, som var och en har en total kostnad som stämmer överens med alternativen.
 
 #### <a name="assigning-a-compensation-group"></a>Tilldela en kompensationsgrupp
 

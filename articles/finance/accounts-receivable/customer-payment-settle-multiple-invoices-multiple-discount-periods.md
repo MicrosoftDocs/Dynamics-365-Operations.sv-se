@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e68ef15fed1841bcbf006929f3c6441d62798fc8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 56d74b6700b48a8c523d02a1affc421ee370215e
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819924"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027756"
 ---
 # <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Använd en (1) betalning för att kvitta flera fakturor som omfattar flera rabattperioder
 
@@ -66,7 +66,7 @@ Om Arnie skapar en betalningsjournal helt för att kvitta dessa fakturor den 1 j
 | Vald och markerad | Normal            | FTI-10042 | 4032    | 2015/06/25 | 2015/07/25 | 10042   | 1 000,00                             |                                       | USD      | 990,00           |
 
 ## <a name="partial-settlement-on-june-29"></a>Delkvittning den 29 juni
-Kund 4032 kan betala ett delbelopp som till exempel halva av varje faktura. Arnie skapar en betalning för kund 4032 och öppnar sedan sidan **Kvitta transaktioner**. På sidan **Kvitta transaktioner** väljer Arnie alla tre fakturaraderna för kvittning. På varje rad anger han kvittningsbeloppet baserat på instruktionerna som kunden har tillhandahållit. När Arnie väljer en rad ser han rabattbeloppet för raden och det kassarabattsbelopp som utnyttjas. Eftersom kunden betalar halva fakturan ser Arnie att värdet i fältet **Kassarabattbelopp** för FTI-10042 är **20,00**, men värdet i **Utnyttjad kassarabatt** är **10,00**. Betalningsbeloppet är 1 485,00.
+Kund 4032 kan betala ett delbelopp som till exempel halva av varje faktura. Arnie skapar en betalning för kund 4032 och öppnar sedan sidan **Kvitta transaktioner**. På sidan **Kvitta transaktioner** väljer Arnie alla tre fakturaraderna för kvittning. På varje rad anger Arnie kvittningsbeloppet baserat på instruktionerna som kunden har tillhandahållit. När Arnie väljer en rad ser han rabattbeloppet för raden och det kassarabattsbelopp som utnyttjas. Eftersom kunden betalar halva fakturan ser Arnie att värdet i fältet **Kassarabattbelopp** för FTI-10042 är **20,00**, men värdet i **Utnyttjad kassarabatt** är **10,00**. Betalningsbeloppet är 1 485,00.
 
 | Markera                     | Använd kassarabatt | Verifikation   | Konto | Datum      | Förfallodatum  | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Valuta | Belopp att kvitta |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
@@ -74,7 +74,7 @@ Kund 4032 kan betala ett delbelopp som till exempel halva av varje faktura. Arni
 | Markerad                 | Normal            | FTI-10041 | 4032    | 2015/06/15 | 2015/07/25 | 10041   | 1 000,00                             |                                       | USD      | 495,00           |
 | Vald och markerad | Normal            | FTI-10042 | 4032    | 2015/06/25 | 2015/07/25 | 10042   | 1 000,00                             |                                       | USD      | 490,00           |
 
-Arnie kan även manuellt ange betalningsbeloppet för 1,485.00 innan han öppnar **kvitta transaktioner** sidan. Om Arnie registrerar betalningsbeloppet manuellt och markerar alla tre transaktioner, men han justerar inte värdet i fältet **kvittningsbeloppet** för varje transaktion, får han följande meddelande när han stänger sidan:
+Arnie kan även manuellt ange betalningsbeloppet på 1 485,00 innan han öppnar sidan **Kvitta transaktioner**. Om Arnie registrerar betalningsbeloppet manuellt och markerar alla tre transaktioner, men inte justerar värdet i fältet **Kvittningsbelopp** för varje transaktion, får han följande meddelande när sidan stängs:
 
 > Det total beloppet av markerade transaktioner skiljer sig från journalbeloppet. Vill du ändra journalbeloppet?
 

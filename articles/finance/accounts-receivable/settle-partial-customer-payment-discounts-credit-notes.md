@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e785d591c25669d90c91ca1b676388522da3da36
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1296dc994e43d75fd9b834acf345134494b4810
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835182"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027514"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Kvitta en delkundbetalning som har rabatter på kreditfakturor.
 
@@ -39,7 +39,7 @@ Kund 4035 har en faktura på 1 000,00 och en kreditfaktura på 100,00. Alla doku
 | CCRN-10050 | Kreditfaktura      | 2015/06/28 | CR-10050 |                                      | 100,00                                | -100,00  | USD      |
 
 ## <a name="settle-a-credit-note-with-an-invoice"></a>Kvitta en kreditfaktura med en faktura
-Från sidan **Kundtransaktioner** öppnar Arnie sidan **Kvitta transaktioner**. Han kan använda sidan **Kvitta transaktioner** för att kvitta både kreditnotan och fakturan. Som en del av kvittningsprocessen visar han kassarabattdatum och belopp. Han väljer de två dokumenten och klickar på **Bokför** för att kvitta transaktionerna. Det finns en rabatt på -1,00 på kreditfakturan eftersom Fabrikam tillåter rabatter på kreditfakturor.
+Från sidan **Kundtransaktioner** öppnar Arnie sidan **Kvitta transaktioner**. Arnie kan använda sidan **Kvitta transaktioner** för att kvitta både kreditnotan och fakturan. Som en del av kvittningsprocessen visar Arnie kassarabattdatum och belopp. Arnie väljer de två dokumenten och klickar på **Bokför** för att kvitta transaktionerna. Det finns en rabatt på -1,00 på kreditfakturan eftersom Fabrikam tillåter rabatter på kreditfakturor.
 
 | Markera     | Använd kassarabatt | Verifikation    | Konto | Datum      | Förfallodatum  | Faktura  | Belopp i transaktionsvalutan | Valuta | Belopp att kvitta |
 |----------|-------------------|------------|---------|-----------|-----------|----------|--------------------------------|----------|------------------|
