@@ -5,6 +5,8 @@
       items:
         - name: Nyheter och ändringar i Human Resources
           href: hr-admin-whats-new.md
+        - name: 20 maj 2021
+          href: hr-whats-new-2021-05-20.md
         - name: 3 maj 2021
           href: hr-whats-new-2021-05-03.md
         - name: 19 april 2021
@@ -785,8 +787,14 @@
           items:
             - name: Översikt över prestationshantering
               href: hr-develop-performance-management-overview.md
-            - name: Anpassa personalens kompetenser
-              href: hr-develop-skills.md
+            - name: Kompetenser
+              items:
+                - name: Konfigurera färdigheter
+                  href: hr-develop-skills.md
+                - name: Ange färdigheter
+                  href: hr-develop-enter-skills.md
+                - name: Mappa färdigheter
+                  href: hr-develop-map-skills.md
             - name: Lägga till i din resultatjournal
               href: hr-develop-add-performance-journal.md
             - name: Skapa ett mål

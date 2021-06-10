@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 38b2cdb618d92dca7909a145e7fc07ddfc5f4d45
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 0435deb009173684c7faaf5340e8095c019ec71c
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017065"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085484"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Ändra redovisnings- eller rapporteringsvaluta
 
@@ -31,16 +31,16 @@ Det här avsnittet förklarar hur du ändrar redovisnings- eller rapporteringsva
 Du vill ändra redovisnings- eller rapporteringsvalutan eller lägger till en rapporteringsvaluta i redovisningsinställningarna. Det här inträffar vanligen i följande scenarier:
 
 - Fel redovisnings- eller rapporteringsvaluta angavs när en juridisk person konfigurerades. Nu vill du ändra den valutan.
-- Ingen redovisnings- eller rapporteringsvaluta angavs när en juridisk person konfigurerades. (Rapporteringsvaluta är valfritt.) Nu vill du lägga till en rapporteringsvaluta.
-
-En organisation som inte använder funktionen Dubbla valutor vill börja använda den. Det här problemet inträffar vanligen i följande scenarier.
-
 - En rapporteringsvaluta angavs när en juridisk person konfigurerades, men organisationen vill nu ta bort rapporteringsvalutan.
 - Organisationen uppgraderar eller migrerar till Microsoft Dynamics 365 Finance och vill ändra redovisnings- eller rapporteringsvalutan.
 
+En organisation som inte använder funktionen Dubbla valutor vill börja använda den. Det här problemet inträffar vanligen i följande scenarier.
+
+- Ingen rapporteringsvaluta angavs när en juridisk person konfigurerades. (Rapporteringsvaluta är valfritt.) Nu vill du lägga till en rapporteringsvaluta.
+
 ## <a name="resolution"></a>Lösning
 
-Den viktigaste är om transaktioner (faktiska eller budget) har bokförts i den juridiska personen för redovisningsinställningarna. **Det går inte att ändra redovisnings- eller rapporteringsvalutan eller lägga till en rapporteringsvaluta om transaktioner (faktiska eller budget) har bokförts i den juridiska personen.** Följ stegen i något av följande avsnitt, beroende på om transaktioner har bokförts.
+Det viktigaste att fundera på är om några transaktioner (faktiska eller budget) har bokförts i den juridiska personen för redovisningsinställningarna. **Det går inte att ändra redovisnings- eller rapporteringsvalutan eller lägga till en rapporteringsvaluta om transaktioner (faktiska eller budget) har bokförts i den juridiska personen.** Följ stegen i något av följande avsnitt, beroende på om transaktioner har bokförts.
 
 ### <a name="no-transactions-have-been-posted"></a>Inga transaktioner har bokförts
 

@@ -14,7 +14,9 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Platform updates
                   href: get-started/whats-new-home-page.md
-                - name: Platform updates för 10.0.19 (juli 2021)
+                - name: Platform updates för version 10.0.20 (juli 2021)
+                  href: get-started/whats-new-platform-updates-10-0-20.md
+                - name: Platform updates för 10.0.19 (juni 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Platform updates för 10.0.18 (maj 2021)
                   href: get-started/whats-new-platform-updates-10-0-18.md
@@ -940,8 +942,6 @@
                   href: lifecycle-services/getting-started-lcs.md
                 - name: Nyheter och ändringar i Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
-                - name: Borttagna eller inaktuella funktioner i Lifecycle Services (LCS)
-                  href: lifecycle-services/removed-deprecated-features.md
             - name: Användarhandbok för Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
             - name: Projektregistrering
@@ -1064,6 +1064,10 @@
                       href: data-entities/dual-write/errors-and-alerts.md
                     - name: Livscykelhantering för program
                       href: data-entities/dual-write/app-lifecycle-management.md
+                    - name: Användarspecificerad teamägare
+                      href: data-entities/dual-write/user-specified-team-owner.md
+                    - name: Ta bort länkning och omlänkning av miljöer med dubbelriktad skrivning
+                      href: data-entities/dual-write/relink-environments.md
                 - name: Mappa koncept mellan appar
                   items:
                     - name: Integrerad kundmaster
@@ -1160,12 +1164,14 @@
                   href: power-platform/admin-reference.md
                 - name: Power Apps-portaler med Finance and Operations
                   href: power-platform/power-portal-reference.md
-                - name: Vanliga frågor om virtuella Finance and Operations-enheter
+                - name: Vanliga frågor om virtuella Finance and Operations-entiteter
                   href: power-platform/faq.md
             - name: Tillägg
               items:
                 - name: Översikt över tillägg
                   href: power-platform/add-ins-overview.md
+            - name: Policyer och kommunikation
+              href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: Mobil plattform
           items:
             - name: Resurser för mobil plattform

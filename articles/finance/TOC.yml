@@ -72,6 +72,8 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.20 (juli 2021)
+                      href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (juli 2021)
                       href: get-started/whats-new-changed-10-0-19.md
                     - name: Finance 10.0.18 (maj 2021)
@@ -1160,6 +1162,8 @@
                   href: general-ledger/rvrs-settgs-on-jrnls-lines.md
                 - name: Ingående balanser saknas i årsbokslut
                   href: general-ledger/yec-mssng-open-blnces.md
+                - name: Öppna mallar för redovisningsjournaler i Office
+                  href: general-ledger/open-fincl-jrnls-in-office.md
         - name: Ekonomisk rapportering
           items:
             - name: Kom i gång med ekonomisk rapportering
@@ -1502,10 +1506,20 @@
                       href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Lägga till datafält i momsintegreringen genom att använda tillägg
                       href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-                    - name: Flera momsregistreringsnummer
-                      href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
                     - name: Ställa in en miljö för att söka efter huvuddata
                       href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                    - name: Flera momsregistreringsnummer
+                      href: localizations/emea-multiple-vat-registration-numbers.md
+                    - name: Rapportering av flera momsregistreringar
+                      items:
+                        - name: Rapportering av flera momsregistreringar
+                          href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Rapportering i Nederländerna
+                          items:
+                            - name: Momsdeklaration
+                              href: localizations/emea-nl-vat-declaration-netherlands.md
+                            - name: Lista över försäljning inom EU
+                              href: localizations/emea-nl-eu-sales-list.md
             - name: Regeluppdateringar
               href: localizations/regulatory-updates.md
             - name: Australien
@@ -2388,6 +2402,20 @@
                               href: localizations/apac-ind-GST-tax-returns.md
                             - name: Aktivera bearbetning av flera batchar för GSTR-rapporter
                               href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+                        - name: Felsökning GST (moms)
+                          items:
+                            - name: Felaktigt momsbelopp efter beräkning
+                              href: localizations/apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md
+                            - name: Konfigurationsfel för moms
+                              href: localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md
+                            - name: Moms beräknas inte
+                              href: localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md
+                            - name: Det tar längre tid än förväntat att aktivera reglerna för kvittning
+                              href: localizations/apac-ind-GST-troubleshooting-setoff-rule-activate-take-long-time.md
+                            - name: TaxTrans eller verifikation som inte genereras
+                              href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
+                            - name: Momstransaktions-ID är fel
+                              href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
                 - name: Direkt moms
                   items:
                     - name: 'Källskatt, Indien'
@@ -2844,6 +2872,10 @@
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
                 - name: Verifieringsfil (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
+                - name: Momsdeklaration (Nederländerna)
+                  href: localizations/emea-nl-vat-declaration-netherlands.md
+                - name: Lista över försäljning inom EU
+                  href: localizations/emea-nl-EU-sales-list.md
             - name: Norge
               items:
                 - name: Norge – översikt
@@ -4123,7 +4155,7 @@
                   items:
                     - name: Spåra genererade rapportresultat och jämföra dem med baslinjevärden
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
-                    - name: Förbättringar i spårningsresultat av genererade ER-rapporter och jämförelser med originalvärden
+                    - name: Förbättra spårningsresultat av genererade ER-rapporter för att jämföra med originalvärden
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
                     - name: Automatisera testning med ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
