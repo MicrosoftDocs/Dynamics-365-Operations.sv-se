@@ -94,7 +94,9 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Commerce
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.19 (juli 2021)
+                    - name: Commerce 10.0.20 (juli 2021)
+                      href: get-started/whats-new-commerce-10-0-20.md
+                    - name: Commerce 10.0.19 (juni 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (maj 2021)
                       href: get-started/whats-new-commerce-10-0-18.md
@@ -556,6 +558,8 @@
                   href: dev-itpro/manage-bing-maps.md
                 - name: Skapa och uppdatera tider för hämtning av kund
                   href: dev-itpro/pickup-timeslots.md
+                - name: Konfigurera värden för produktdimensioner som ska visas som färgrutor
+                  href: dev-itpro/dimensions-swatch.md
         - name: Marknadsföra dina produkter och tjänster
           items:
             - name: 'Kategorier, produkter och sortiment'
@@ -932,6 +936,8 @@
                   href: web-activity-opt-out.md
                 - name: Använd måttenhetsinställningar
                   href: unit-of-measure.md
+                - name: Använd visningsinställningar för produktdimensioner
+                  href: dimension-settings.md
             - name: Hantera webbplatsens innehåll
               items:
                 - name: Sätt att lägga till innehåll
@@ -1946,7 +1952,7 @@
                   items:
                     - name: Spåra genererade rapportresultat och jämföra dem med baslinjevärden
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commercetoc.json
-                    - name: Förbättringar i spårningsresultat av genererade ER-rapporter och jämförelser med originalvärden
+                    - name: Förbättra spårningsresultat av genererade ER-rapporter för att jämföra med originalvärden
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
                     - name: Automatisera testning med ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
@@ -2262,6 +2268,8 @@
                       href: e-commerce-extensibility/request-properties-object.md
                     - name: Appinställningar
                       href: e-commerce-extensibility/app-settings.md
+                    - name: Konfigurera globala konfigurationsinställningar för webbplatsskaparen baserat på aktiverade funktioner
+                      href: e-commerce-extensibility/config-settings-for-features.md
                     - name: Fil för plattformsinställningar
                       href: e-commerce-extensibility/platform-settings.md
                     - name: Utöka en moduldefinition
@@ -2366,6 +2374,8 @@
                   href: dev-itpro/UpcomingSDKChanges.md
                 - name: Utveckling och ALM-ändringar från version 10.0.10 till 10.0.13
                   href: dev-itpro/dev-changes-10-13.md
+                - name: Konfigurera en bygg-pipeline för oberoende förpacknings-SDK
+                  href: dev-itpro/build-pipeline.md
                 - name: Slå samman versionssystemen för Commerce och Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: Migrera SDK för Retail från Visual Studio 2015 till Visual Studio 2017
@@ -2386,6 +2396,8 @@
               items:
                 - name: Kassaskärmslayouter
                   href: pos-screen-layouts.md
+                - name: Store Commerce-appen i Microsoft Dynamics 365 Commerce
+                  href: dev-itpro/store-commerce.md
                 - name: Öppna URL i kassa
                   href: Open-URL-in-POS.md
                 - name: Installera layoutdesignern för kassa

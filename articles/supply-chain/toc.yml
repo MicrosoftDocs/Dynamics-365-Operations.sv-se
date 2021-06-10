@@ -72,7 +72,9 @@
                   items:
                     - name: Nyheter eller ändringar av startsidan till Supply Chain Management
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.19 (juli 2021)
+                    - name: Supply Chain Management 10.0.20 (juli 2021)
+                      href: get-started/whats-new-scm-10-0-20.md
+                    - name: Supply Chain Management 10.0.19 (juni 2021)
                       href: get-started/whats-new-scm-10-0-19.md
                     - name: Supply Chain Management 10.0.18 (maj 2021)
                       href: get-started/whats-new-scm-10-0-18.md
@@ -387,7 +389,7 @@
                   href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
             - name: Inställningar för arbetsorder
               items:
-                - name: 'Kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor'
+                - name: 'Typer, kategorier, varianter, yrkesgrenar och checklistor av underhållsjobb'
                   href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
                 - name: Livscykeltillstånd för arbetsorder
                   href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
@@ -1371,7 +1373,7 @@
                   items:
                     - name: Spåra genererade rapportresultat och jämföra dem med baslinjevärden
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Förbättringar i spårningsresultat av genererade ER-rapporter och jämförelser med originalvärden
+                    - name: Förbättra spårningsresultat av genererade ER-rapporter för att jämföra med originalvärden
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Automatisera testning med ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
@@ -2225,6 +2227,8 @@
               href: engineering-change-management/engineering-attributes-and-search.md
             - name: Konstruktionsversioner och kategorier av konstruktionsprodukter
               href: engineering-change-management/engineering-versions-product-category.md
+            - name: Hantera ändringar i formler och deras ingredienser
+              href: engineering-change-management/manage-formula-changes.md
             - name: Aktivera ändringshantering för befintliga produkter
               href: engineering-change-management/change-management-existing-products.md
             - name: Produktens livscykeltillstånd och transaktioner
@@ -2247,6 +2251,8 @@
               href: production-control/manage-subcontract-work-production.md
             - name: 'Enhetlig nummerserie för jobb-ID:n'
               href: production-control/unified-job-ids.md
+            - name: Anropa processautomatiseringsflöden för att skapa kvalitetsorder
+              href: production-control/process-automation-quality-orders.md
             - name: Diskret tillverkning
               items:
                 - name: Underhåll produktionshuvuddata
@@ -2337,7 +2343,7 @@
                           href: production-control/production-floor-execution-setup.md
                         - name: Hur arbetare använder körningsgränssnittet för produktionsgolvet
                           href: production-control/production-floor-execution-use.md
-                        - name: Kontrollstilar i användargränssnittet för körning av produktionsgolvet
+                        - name: Välj stil på körningsgränssnittet för produktionsgolvet
                           href: production-control/production-floor-execution-styles.md
                     - name: Konfigurera jobbkort för enheter
                       href: production-control/config-job-card-device.md
@@ -3139,11 +3145,11 @@
                       href: warehousing/about-shipment-consolidation-policies.md
                     - name: Konfigurera policyer för leveranskonsolidering
                       href: warehousing/configure-shipment-consolidation-policies.md
-                    - name: Scenario 1 – konsolidera leveranser när de frisläpps till lagret med hjälp av Automatisk frisläppning av försäljningsorder
+                    - name: Scenario 1 – konsolidera leveranser som frisläpps till lagret med hjälp av automatisk frisläppning av försäljningsorder
                       href: warehousing/consolidate-shipments-automatic.md
-                    - name: Scenario 2 – konsolidera leveranser när policyn för leveranskonsolidering åsidosätts från sidan Frisläpp till lager
+                    - name: Scenario 2 – konsolidera leveranser när policyn för leveranskonsolidering åsidosätts
                       href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-                    - name: Scenario 3 – konsolidera leveranser genom att använda Frisläpp till lager från workbench för lastplanering
+                    - name: Scenario 3 – konsolidera leveranser genom att frisläppa till lager från workbench för lastplanering
                       href: warehousing/consolidate-shipments-load-planning-workbench.md
                     - name: Scenario 4 – konsolidera leveranser genom att använda workbench för leveranskonsolidering
                       href: warehousing/consolidate-shipments-manual-workbench.md
@@ -3297,13 +3303,15 @@
                       href: warehousing/install-configure-warehousing-app.md
                     - name: Skanna streckkoder med kamera i mobilappen för distributionslagerhantering
                       href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Konfigurera fält för mobilappen för distributionslagerhantering
+                    - name: Konfigurera fält för Warehouse Management-mobilappen
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Ställa in mobila enheter för distributionslagerarbete
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Tilldela stegikoner och titlar
+                      href: warehousing/step-icons-titles.md
                     - name: Händelsebearbetning i distributionslagerappen
                       href: warehousing/warehouse-app-events.md
-                    - name: Inleverans av ID-nummer via mobilappen för distributionslagerhantering
+                    - name: Inleverans av ID-nummer via Warehouse Management-mobilappen
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Ställa in ett menyalternativ för mobil enhet för att slutföra arbete i en inköpsorder
                       href: warehousing/tasks/set-up-mobile-device-menu.md
@@ -3359,37 +3367,41 @@
                   href: troubleshooting/inventory/multiple-inventory-t.md
                 - name: Om du återför en rapport som slutförd skapas en oväntad öppen transaktion
                   href: troubleshooting/inventory/reverse-report-as-fi.md
-                - name: Det går inte att visa nya anteckningar bifogade till en journal i plocklisterapporten
+                - name: Plocklisterapporten visar inte nya anteckningar som är bifogade till en journal
                   href: troubleshooting/inventory/unable-to-print-the.md
                 - name: Kvantitet på en startad karantänorder uppdateras inte när ordern delas
                   href: troubleshooting/inventory/quantity-on-a-start.md
                 - name: Fältet Senast testdatum uppdateras inte när flera kvalitetsorder skapas
                   href: troubleshooting/inventory/the-field-last-test.md
-                - name: Vid uppdelning av en faktisk/nominell viktkvantitet används minimum i stället för nominell kvantitet
+                - name: När en faktisk/nominell viktkvantitet delas upp används minsta kvantitet i stället för nominell kvantitet
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Huvudplanering
               items:
                 - name: Direkt härledda bekräftade order bearbetas av ett arbetsflöde i granskning
                   href: troubleshooting/planning/firmed-directly-deri.md
+                - name: Du kan inte filtrera huvudplaneringsartiklar efter relaterade disponeringsgruppvärden
+                  href: troubleshooting/planning/master-planning-batc.md
                 - name: Huvudplanering genererar planerade order på fiktiva produkter
                   href: troubleshooting/planning/planned-orders-are-g.md
                 - name: Planerad inköpsorder skapas när ett inköp finns inom negativa dagar
                   href: troubleshooting/planning/planning-optimisatio.md
-                - name: Det går inte att ladda upp självkostnaden i efterfrågeprognosposter
+                - name: Det går inte att uppdatera den prognostiserade enhetskostnaden när du importerar poster för efterfrågeprognoser
                   href: troubleshooting/planning/unable-to-upload-the.md
-                - name: Det går inte att ta bort efterfrågeprognosdimension från prognosrader
+                - name: Det går inte att ta bort lagerefterfrågans prognosticeringsdimension från prognosrader
                   href: troubleshooting/planning/warehouse-removal-fr.md
+                - name: Du uppmanas att spara inställningarna för artikeldisponering även om du inte gör några ändringar
+                  href: troubleshooting/planning/when-importing-to-th.md
             - name: Anskaffning
               items:
-                - name: Det går inte att fakturera en kundutställd försäljningsorder i VEL-företaget
+                - name: Du kan inte fakturera en kundutställd försäljningsorder
                   href: troubleshooting/procurement/not-able-to-invoice-.md
                 - name: Det går inte att lägga till en rad i en inköpsrekvisition efter begärd ändring
                   href: troubleshooting/procurement/purchase-requisition.md
             - name: Produktinformationshantering
               items:
-                - name: Det går inte att använda en mall för att skapa en frisläppt produkt
+                - name: Du kan inte att använda en mall för att skapa en frisläppt produkt
                   href: troubleshooting/products/apply-template-in-re.md
-                - name: Det går inte att importera ett objekt genom entiteten Frisläppta produkter V2
+                - name: Du kan inte att importera en artikel genom att använda enheten Frisläppta produkter V2
                   href: troubleshooting/products/cannot-import-with-r.md
                 - name: Inköpsorder visar inte översatt produkttext
                   href: troubleshooting/products/when-the-customer-ad.md
@@ -3403,7 +3415,7 @@
                   href: troubleshooting/production/late-selection-is-no.md
                 - name: Användare kan annullera materialrader för produkter rapporterade som slutförda
                   href: troubleshooting/production/raw-material-lines-a.md
-                - name: Fel vid bokföring av rapport som slutförd journal
+                - name: Fel när journalen Rapportera som klar bokförs
                   href: troubleshooting/production/posting-report-as-.md
                 - name: Lagret i plocklistejournalen uppdateras inte på en strukturlisterad
                   href: troubleshooting/production/the-warehouse-in-pic.md
@@ -3445,19 +3457,19 @@
                   href: troubleshooting/warehousing/the-last-closed-work.md
                 - name: Viktfälten på beläggningsrader matchar inte viktfälten på beläggningen
                   href: troubleshooting/warehousing/the-weight-fields-on.md
-                - name: Påfyllnaden är inte berättigad till rensning
+                - name: Cykeln är inte berättigad till rensning
                   href: troubleshooting/warehousing/wave-is-not-eligible.md
                 - name: Vikten måste vara positiv
                   href: troubleshooting/warehousing/weight-must-be-posit.md
-                - name: Arbetet kan inte avbrytas eftersom det är spärrat
+                - name: Arbetsuppgiften kan inte avbrytas eftersom den är spärrat
                   href: troubleshooting/warehousing/work-cannot-be-canceled-blocked.md
-                - name: Arbetet kan inte avbrytas på grund av status
+                - name: Arbetsuppgiften kan inte avbrytas på grund av status
                   href: troubleshooting/warehousing/work-cannot-be-canceled-status.md
-                - name: Arbetet är inte blockerat
+                - name: Arbetsuppgiften är inte blockerad
                   href: troubleshooting/warehousing/work-is-not-blocked.md
-                - name: Arbetet fortsätter vara blockerat
+                - name: Arbetsuppgiften fortsätter vara blockerad
                   href: troubleshooting/warehousing/work-remains-blocked.md
-                - name: Du kan inte avbryta arbete som en användare har
+                - name: Du kan inte avbryta en arbetsuppgift som en användare har
                   href: troubleshooting/warehousing/you-cannot-cancel-wo.md
     - name: Utveckling och administration av Finance and Operations-appar
       href: ../fin-ops-core/dev-itpro/index.md
