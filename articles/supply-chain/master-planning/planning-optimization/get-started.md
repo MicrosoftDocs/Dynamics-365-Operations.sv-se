@@ -2,7 +2,7 @@
 title: Kom igång med planeringsoptimering
 description: Det här avsnittet beskriver hur du använder funktionen planeringsoptimering.
 author: ChristianRytt
-ms.date: 10/09/2020
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d346251e82737624edfce88dc7b2ee10280f6877
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d12e1908e234c841fb705266b2255c6c5e2140e1
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907677"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103603"
 ---
 # <a name="get-started-with-planning-optimization"></a>Kom igång med planeringsoptimering
 
@@ -58,7 +58,7 @@ Innan du installerar tillägget Planeringsoptimering måste följande förutsät
 
 - Du måste köra Supply Chain Management på en LCS-aktiverad miljö med hög tillgänglighet, lägst nivå 2, (inte en OneBox-miljö) med Dynamics 365 Supply Chain Management version 10.0.7 eller senare. Om du försöker installera tillägget i en OneBox-miljö kommer installationen inte att slutföras och du måste avbryta installationen.
 
-- Ditt system måste ha ställts in för Power Platform-integration. Mer information finns i [Förutsättningar för att ställa in tillägg](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#prerequisites-for-setting-up-add-ins) och [Ställa in tillägg](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#set-up-add-ins).
+- Ditt system måste ha ställts in för Power Platform-integration. Mer information finns i [Microsoft Power Platform-integrering med Finance and Operations-appar](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ### <a name="enable-the-planning-optimization-license"></a>Aktivera licensen för planeringsoptimeringen
 

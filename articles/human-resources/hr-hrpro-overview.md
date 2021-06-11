@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9bec501fdc1736d044585609e21b5bb47b8d6879
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 42c3735b14d506ce6a8cd3318ed32eb93bce87ae
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893135"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6057344"
 ---
 # <a name="overview"></a>Översikt
 
@@ -32,8 +31,8 @@ Användarhandboken för Dynamics 365 Human Resources innehåller anvisningar om 
 ## <a name="set-up-human-resources"></a>Ställ in personal
 
 [Konfigurera personalparametrar](hr-setup-parameters.md)</br>
-[Konfigurera delade Personal-parametrar](hr-setup-shared-parameters.md)</br>
-[Ställa in arbetsflöden för Personal](./hr-workflow-manage-employee-information.md)</br>
+[Konfigurera delade Human Resources-parametrar](hr-setup-shared-parameters.md)</br>
+[Ställa in arbetsflöden för Human Resources](./hr-workflow-manage-employee-information.md)</br>
 [Förstå Datum- och tid-fält](hr-setup-date-time-fields.md)</br>
 
 ## <a name="configure-organization-settings"></a>Konfigurera organisationsinställningar

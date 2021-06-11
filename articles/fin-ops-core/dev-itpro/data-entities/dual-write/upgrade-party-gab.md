@@ -9,35 +9,36 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 95472a00d34ba939ac89b4e2484f34d50bee3088
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018322"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112683"
 ---
-# <a name="upgrade-to-the-party-and-global-address-book-model"></a>Uppgradera till part- och globala adressboksmodellen.
+# <a name="upgrade-to-the-party-and-global-address-book-model"></a>Uppgradera till part- och globala adressboksmodellen
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Mallen [Azure Data Factory](https://aka.ms/dual-write-gab-adf) hjälper dig att uppgradera befintliga registerdata för dubbel skrivning för **Konto**, **Kontakt** och **Leverantör** till parten samt till den globala adressboksmodellen. I mallen stäms data från både Finance and Operations-program och program för kundrelationer av. I slutet av processen skapas fälten **Part** och **Kontakt** för **Part**-poster, som sedan associeras med poster för **Konto**, **Kontakt** och **Leverantör** i program för kundengagemang. En .csv-fil ( `FONewParty.csv`) genereras för att skapa nya **Part**-poster inuti Finance and Operations-programmet. I detta ämne finns instruktioner om hur du använder Data Factory-mallen och uppgraderar dina data.
+[Mallen Microsoft Azure Data Factory](https://aka.ms/dual-write-gab-adf) hjälper dig att uppgradera befintliga registerdata för dubbel skrivning för **Konto**, **Kontakt** och **Leverantör** till parten samt till den globala adressboksmodellen. I mallen stäms data från både Finance and Operations-program och program för kundrelationer av. I slutet av processen skapas fälten **Part** och **Kontakt** för **Part**-poster, som sedan associeras med poster för **Konto**, **Kontakt** och **Leverantör** i program för kundengagemang. En .csv-fil (`FONewParty.csv`) genereras för att skapa nya **Part**-poster inuti Finance and Operations-appen. I detta ämne finns instruktioner om hur du använder Data Factory-mallen och uppgraderar dina data.
 
 Om du inte har några anpassningar kan du använda mallen som den är. Om du har anpassningar för **Konto**, **Kontakt** och **Leverantör** måste du ändra mallen med hjälp av följande instruktioner.
 
-> [!Note]
-> Mallen underlättar uppgraderingen av endast **Partsdata**. I en framtida version inkluderas postnummer och elektroniska adresser.
+> [!NOTE]
+> Mallen uppgraderar endast **Partsdata**. I en framtida version inkluderas postnummer och elektroniska adresser.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Följande förutsättningar krävs:
+Följande förutsättningar krävs för att du ska kunna uppgradera till den part och den globala adressboksmodellen:
 
 + [Azure-abonnemang](https://portal.azure.com/)
 + [Åtkomst till mallen](https://aka.ms/dual-write-gab-adf)
-+ Du är en befintlig kund.
++ Du måste vara en befintlig kund.
 
 ## <a name="prepare-for-the-upgrade"></a>Förbereda uppgraderinge
+Följande aktiviteter behövs för att förbereda uppgraderingen:
 
 + **Fullt synkroniserat**: Båda miljöerna är helt synkroniserade för **Konto (kund)**, **Kontakt** och **Leverantör**.
 + **Integreringsnycklar**: Registren **Konto (Kund)**, **Kontakt** och **Leverantör** i program för kundengagemang använder de integreringsnycklar som levererades färdiga. Om du anpassar integreringsnycklarna måste du anpassa mallen.
@@ -78,15 +79,19 @@ Följande förutsättningar krävs:
     FO Linked Service_properties_type Properties_tenant | Ange information om klientorganisation (domännamn eller ID för klientorganisation) under vilket programmet finns.
     FO Linked Service_properties_type Properties_aad Resource Id | `https://sampledynamics.sandboxoperationsdynamics.com`
     FO Linked Service_properties_type Properties_service Principal Id | Ange programmets klient-ID.
-    Dynamics Crm Linked Service_properties_type Properties_username | Användarnamnet som ska kopplas till Dynamics.
+    Dynamics Crm Linked Service_properties_type Properties_username | Användarnamnet som ska kopplas till Dynamics 365.
 
-    Mer information finns i [Flytta upp en Resource Manager-mall för respektive miljö manuellt](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Kopplade tjänsteegenskaper](/azure/data-factory/connector-dynamics-ax#linked-service-properties) samt [Kopiera data med hjälp av Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    Mer information finns i följande ämnen: 
+    
+    - [Manuellt främja en Resource Manager-mall för varje miljö](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment)
+    - [Länkade tjänsteegenskaper](/azure/data-factory/connector-dynamics-ax#linked-service-properties)
+    - [Kopiera data med Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. Efter distributionen kan du validera datauppsättningarna, dataflödet och länkad tjänst för datafabriken.
 
    ![Datauppsättningar, dataflöde och länkad tjänst](media/data-factory-validate.png)
 
-11. Navigera till **Hantera**. Under **Anslutningar** väljer du **Kopplad tjänst**. Välj **DynamicsCrmLinkedService**. Ange följande värden i formuläret **Redigera kopplad tjänst (Dynamics CRM)**:
+11. Navigera till **Hantera**. Under **Anslutningar** väljer du **Kopplad tjänst**. Välj **DynamicsCrmLinkedService**. Ange följande värden i formuläret **Redigera kopplad tjänst (Dynamics CRM)**.
 
     Fält | Värde
     ---|---
@@ -102,7 +107,7 @@ Följande förutsättningar krävs:
 
 ## <a name="run-the-template"></a>Kör mallen
 
-1. Stoppa följande dubbelskrivning för **Konto**, **Kontakt** och **Leverantör** med hjälp av Finance and Operations-programmet.
+1. Stoppa följande dubbelriktade mappningar för **Konto**, **Kontakt** och **Leverantör** med hjälp av Finance and Operations-programmet.
 
     + Kunder V3 (konton)
     + Kunder V3 (kontakter)
@@ -157,7 +162,7 @@ Följande förutsättningar krävs:
 8. Importera de nya **Part**-posterna i Finance and Operations-programmet.
 
     + Hämta filen `FONewParty.csv` från Azure blob-lagring. Sökvägen är `partybootstrapping/output/FONewParty.csv`.
-    + Konvertera filen `FONewParty.csv` till en Excel-fil och importera Excel-filen till Finance and Operations-programmet.  Om CSV-importen fungerar kan du importera CSV-filen direkt. Importen kan ta ett par timmar att köra, beroende på datavolymen. Mer information finns i [Översikt över dataimport- och exportjobb](../data-import-export-job.md).
+    + Konvertera filen `FONewParty.csv` till en Excel-fil och importera Excel-filen till Finance and Operations-programmet. Om CSV-importen fungerar kan du importera CSV-filen direkt. Importen kan ta ett par timmar att köra, beroende på datavolymen. Mer information finns i [Översikt över dataimport- och exportjobb](../data-import-export-job.md).
 
     ![Importera poster för Datavers-parten](media/data-factory-import-party.png)
 
@@ -198,4 +203,4 @@ Följande förutsättningar krävs:
 
 ## <a name="learn-more-about-the-template"></a>Läs mer om mallen
 
-Det finns kommentarer för mallen i filen [readme.md](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).
+Mer information om mallen finns i [Kommentarer för Azure Data Factory-mallen readme](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).

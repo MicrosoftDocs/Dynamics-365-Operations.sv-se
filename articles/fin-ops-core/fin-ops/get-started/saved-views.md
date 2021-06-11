@@ -2,7 +2,7 @@
 title: Sparade vyer
 description: I det här avsnittet beskrivs hur du använder funktionerna för sparade vyer.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 25b59400cdd62f8728f03683d51c86c671edd9de
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8a5daee72f4f339fbebffb5c1d64814959775340
+ms.sourcegitcommit: 13fa6385d8f3bb18df5a52fd2b0f4ad3484ad0ba
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744625"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6050566"
 ---
 # <a name="saved-views"></a>Sparade vyer
 
@@ -126,17 +126,26 @@ Gör så här om du vill publicera en vy:
 5. **Uppdatera 10.0.17 eller senare:** Om funktionen **(Förhandsgranska) Översättning till organisationsvyer** aktiveras kan du lägga till översättningar för ditt vynamn på så många språk som din organisation kräver genom att välja knappen **Översättningar** bredvid fältet **Namn**. Visningsnamnet visas sedan för användarna på det aktuella språket. Du kan också ställa in standardspråket och ange vilken översättning som ska visas för de användare som kör de språk som ingen översättning har definierats för.
 5. Valfritt: Ange en beskrivning av vyn så att användare som tar emot vyn bättre kan förstå syftet. 
 6. Bestämmer om vyn ska publiceras som standardvy för de valda användarna. När en vy görs till standardvy kommer användarna kommer att se nästa gång de öppnar målsidan. Den enkla, globala standardvyn för varje målanvändare kommer att ändras. Användare kan dock fortfarande ändra standardvyn när publicering har skett.
-7. Lägg till de säkerhetsroller som motsvarar de användare som inriktas mot denna vy. 
-8. Bestäm om du vill publicera vyn till de underordnade rollerna för varje vald säkerhetsroll. Om du gör det, markerar du kryssrutan **Inkludera underordnade roller** i raden för lämpliga säkerhetsroller. Observera att den här kryssrutan inte är tillgänglig för roller som saknar underordnade roller.
-9. Lägg till de juridiska personer som den här vyn ska vara tillgänglig för. 
-10. Markera **Publicera**.
+
+    > [!NOTE]
+    > Tänk på följande när du publicerar en vy som standardvy: 
+    > -  Om du publicerar en vy som standardvy till alla eller vissa juridiska personer ändrar du den enkla, **globala** standardvyn för varje målanvändare. 
+    > -  Om en användare har roller där flera vyer publiceras som standardvy, används den senast publicerade vyn som användarens standardvy. 
+
+8. Lägg till de säkerhetsroller som motsvarar de användare som inriktas mot denna vy. 
+9. Bestäm om du vill publicera vyn till de underordnade rollerna för varje vald säkerhetsroll. Om du gör det, markerar du kryssrutan **Inkludera underordnade roller** i raden för lämpliga säkerhetsroller. Observera att den här kryssrutan inte är tillgänglig för roller som saknar underordnade roller.
+10. Lägg till de juridiska personer som den här vyn ska vara tillgänglig för. 
+
+    > [!NOTE]
+    > Tänk på följande förväntningar när du publicerar en vy för en juridisk person.
+    > 
+    > Om du publicerar en vy till en juridisk person, men inte publicerar den som standardvy, visas användarna först i vyn väljaren för de juridiska personer som anges. När vyn har lästs in för första gången kommer den emellertid alltid att finnas i användarens visnings väljare för den sidan, oavsett vilken juridisk person de tillhör.
+
+11. Markera **Publicera**.
 
 Observera att i vissa miljöer kan det ta en stund (upp till en timme) innan användarna ser den publicerade vyn.
 
-> [!NOTE]
-> Tänk på följande förväntningar när du publicerar en vy till en juridisk person, eller när du publicerar en vy som standardvy.
-> - Om du publicerar en vy som standardvy till alla eller vissa juridiska personer ändrar du den enkla, globala standardvyn för varje målanvändare. Om en användare har roller där flera vyer publiceras som standardvy, används den senast publicerade vyn som användarens standardvy. 
-> - Om du publicerar en vy till en juridisk person, men inte publicerar den som standardvy, visas användarna först i vyn väljaren för de juridiska personer som anges. När vyn har lästs in för första gången kommer den emellertid alltid att finnas i användarens visnings väljare för den sidan, oavsett vilken juridisk person de tillhör. 
+ 
 
 ## <a name="modifying-a-published-view"></a>Ändra en publicerad vy
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: af67d320f14fc6c3d28eec47de402ba645eea06d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 147388d5052bd14851bbddfbb7fe25297a43f104
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836792"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102984"
 ---
 # <a name="create-maintenance-requests"></a>Skapa underhållsbegäranden
 
@@ -30,7 +30,7 @@ ms.locfileid: "5836792"
 
 Underhållsbegäran kan användas om underhållsarbetare eller produktionsarbetare upptäcker att utrustning behöver repareras, men reparationsjobbet inte kan utföras direkt.
 
-**Exempel:** när en underhållsarbetare gör en reparation, upptäcker hon att en annan tillgång på samma plats måste servas. Underhållsarbetaren har dock inte tid eller nödvändiga reservdelar för att utföra reparationsjobbet. Därför skapar hon en underhållsbegäran på tillgången och anger en kort beskrivning av problemet.
+**Exempel:** när en underhållsarbetare gör en reparation, upptäcker de att en annan tillgång på samma plats måste servas. Underhållsarbetaren har dock inte tid eller nödvändiga reservdelar för att utföra reparationsjobbet. Därför skapar de en underhållsbegäran på tillgången och anger en kort beskrivning av problemet.
 
 Avsnittet **aktiva underhållsbegäran** i rutan **relaterad information** till höger på sidan **alla tillgångar** eller **aktiva tillgångar** (**tillgångshantering** \> **allmänt** \> **tillgångar** \> **alla tillgångar** eller **aktiva tillgångar**) visar aktiva underhållsbegäran som är kopplade till den valda tillgången.
 

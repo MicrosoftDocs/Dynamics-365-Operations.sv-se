@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e9cd90d74b92754d4a5432485d5dd59c31e34c61
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 45763d5e602946fc3328cc3b565777fb7e549c61
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841995"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115107"
 ---
 # <a name="release-product-structures"></a>Frisläppa produktstrukturer
 
@@ -103,6 +103,7 @@ Ange följande fält i snabbfliken **Allmänt** i en produktfrisläppningspolicy
 | Fält | beskrivning |
 |---|---|
 | Produkttyp | Välj om policyn gäller för produkter av typen *artikel* eller *tjänst*. Du kan inte ändra den här inställningen när du har sparat posten. |
+| Produktionstyp | Det här fältet visas bara när du har aktiverat [hantering av formeländring](manage-formula-changes.md) i systemet. Välj den typ av produktion som denna utgivningsprincip används:<ul><li>**Samprodukt** – Använd den här frisläppningsprincipen när du hanterar samprodukter. Samprodukter produceras under processtillverkning och är inte versionerade eller tekniska produkter. Frisläppningsprinciper för samprodukter kan säkerställa att viktiga inställningar, som **Lagringsdimensionsgrupp** och **Spårningsdimensionsgrupp**, skapas med hjälp av en släppt produktmall innan de släpps till ett företag.</li><li>**Biprodukt** – Använd den här frisläppningsprincipen när du hanterar biprodukter. Biprodukter produceras under processtillverkning och är inte versionerade eller tekniska produkter. Frisläppningsprinciper för biprodukter kan säkerställa att viktiga inställningar, som **Lagringsdimensionsgrupp** och **Spårningsdimensionsgrupp**, skapas med hjälp av en släppt produktmall innan de släpps till ett företag.</li><li>**Ingen** – Använd denna policy för att hantera standardprodukter som inte är versionerade eller tekniska produkter, eller samprodukter eller biprodukter.</li><li>**Planering av artikel** – Använd den här frisläppningsprincipen när du vill hantera planeringsartiklar som produceras med hjälp av processtillverkning. I planeringsartiklar används formler. De liknar receptartiklar, men används för att endast producera samprodukter och biprodukter, inte färdiga produkter.</li><li>**Strukturlista** – Använd den här utgivningsprincipen för att hantera tekniska produkter som inte använder formler och som vanligtvis (men inte nödvändigtvis) innehåller strukturlistor.</li><li>**Formel** – Använd den här frisläppningsprincipen när du vill hantera slutförda artiklar som produceras med hjälp av processtillverkning. Dessa artiklar kommer att ha en formel men inte en strukturlista.</li></ul> |
 | Använd mallar | Välj ett av följande alternativ för att ange om och hur mallar för produktfrisläppningsmallar ska användas när en princip används:<ul><li>**Alltid** – en av de frisläppta produkterna måste alltid användas för frisläppning. Om du väljer det här alternativet använder du snabbfliken **Alla produkter** för att ange den mall som används för varje företag som du släpper upp till. Om du inte anger en mall för varje företag som visas på snabbfliken **Alla produkter** visas ett felmeddelande när du försöker spara policyn.</li><li>**Valfri** – om en frisläppt produkt har angetts för ett företag som anges på snabbfliken **Alla produkter** kommer den mallen att användas när du släpper upp det företaget. Annars kommer ingen mall att användas. Om du väljer det här alternativet kan du spara policyn utan att tilldela mallar till alla företag. (Ingen varning visas.)</li><li>**Aldrig** – Ingen frisläppt produkt kommer att användas för alla företag som du frisläpper till, även om en mall anges för företag som är listad på snabbfliken **Alla produkter**. Mallkolumner kommer inte att vara tillgängliga.</li></ul> |
 | Aktiva | Använd det här alternativet för att upprätthålla dina frisläppningsprinciper. Ange värdet *Ja* för alla frisläppningsprinciper som du använder. Ställ in den på *Nej* för att markera att en frisläppningsprincip är inaktiv när den inte används. Observera att du inte kan inaktivera en frisläppningsprincip som är tilldelad en teknisk produktkategori, och du bara kan ta bort inaktiva frisläppningsprinciper. |
 

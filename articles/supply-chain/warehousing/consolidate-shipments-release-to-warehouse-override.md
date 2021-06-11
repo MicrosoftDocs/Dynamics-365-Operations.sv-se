@@ -1,5 +1,5 @@
 ---
-title: Konsolidera leveranser när policyn för leveranskonsolidering åsidosätts från sidan Släpp till lagerställe
+title: Konsolidera försändelser när försändelsekonsolideringspolicyn åsidosätts
 description: Detta ämne innehåller ett scenario där en eller flera försäljningsrader måste släppas manuellt till lagerstället från sidan Släpp till lagerställe, och den systemdefinierade policyn för leveranskonsolidering måste åsidosättas före frisläppandet.
 author: GarmMSFT
 ms.date: 05/12/2020
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: dcd619ad2906d4224966e2696712ed0e71886eb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6928375c88a199bd9c6b48f05b38343463762920
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837499"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117019"
 ---
-# <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden-from-the-release-to-warehouse-page"></a>Konsolidera leveranser när policyn för leveranskonsolidering åsidosätts från sidan Släpp till lagerställe
+# <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden"></a>Konsolidera försändelser när försändelsekonsolideringspolicyn åsidosätts
 
 [!include [banner](../includes/banner.md)]
 

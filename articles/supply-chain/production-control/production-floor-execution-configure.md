@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 79e21977e4ef8bce88c97a8fb253345ccc8d6b4f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 84d845055e175e6f4b8078fabeb3307ee96826f2
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814740"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115033"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurera körningsgränssnittet för produktionsgolvet
 
@@ -71,6 +71,14 @@ Den här funktionen lägger till en flik för tillgångshantering i produktionss
 
 - Funktionen för tillgångshantering för körningsgränssnittet för produktionsgolvet
 
+### <a name="enable-job-search"></a>Aktivera jobbsökning
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Med denna funktion går det att lägga till ett sökfält i jobblistan. En arbetare kan hitta ett visst jobb genom att ange jobb-ID eller söka efter alla jobb för en viss order genom att ange order-ID:t. Arbetare kan ange ID:t med hjälp av ett tangentbord eller genom att skanna en streckkod. Om du vill använda den aktiverar du följande funktion i för att aktivera den [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Jobbsökning för produktionsgolvets körningsgränssnitt
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeta med konfigurationer av körningsgränssnittet för produktionsgolvet
 
 Om du vill skapa och underhålla enhetskonfigurationen går du till **Produktionskontroll \> Inställning \> Tillverkningskörning \> Konfigurera för produktionsgolvet**. På sidan **Konfigurera för produktionsgolvet** visas en lista över befintliga konfigurationer. På den här sidan kan du utföra följande åtgärder:
@@ -81,6 +89,7 @@ Om du vill skapa och underhålla enhetskonfigurationen går du till **Produktion
 Konfigurera sedan de olika inställningarna för den valda enhetskonfigurationen. Följande fält är tillgängliga:
 
 - **Clock in and out only** - Ange det här alternativet *Ja* för att skapa ett förenklat gränssnitt som bara ger in- och urklockningsfunktionalitet. Då inaktiveras de flesta andra alternativ på den här sidan. Du måste ta bort alla rader från snabbflikarna **Flikmarkering** innan du kan aktivera det här alternativet.
+- **Aktivera sökning** - Ange detta alternativ till *Ja* om du vill inkludera ett sökfält i jobblistan. En arbetare kan hitta ett visst jobb genom att ange jobb-ID eller söka efter alla jobb för en viss order genom att ange order-ID:t. Arbetare kan ange ID:t med hjälp av ett tangentbord eller genom att skanna en streckkod.
 - **Rapportera kvantitet vid utstämpling** – Ange detta alternativ till *Ja* för att be arbetare att rapportera återrapportering om pågående jobb när han eller hon stämplar ut. Om detta alternativ anges till *Nej* kommer medarbetarna inte att uppmanas.
 - **Lås medarbetare** – när det här alternativet är inställt på *Nej* kommer arbetstagarna att loggas ut omedelbart efter att de har gjort en registrering (t.ex. ett nytt jobb). Enheten kommer sedan tillbaka till inloggningssidan. När det här alternativet är inställt på *Ja* kommer varje medarbetare att vara inloggad på jobbkortsenheten. En arbetare kan dock manuellt logga ut så att en annan arbetare kan logga in medan en jobbkortsenhet fortsätter att köras under samma systemanvändarkonto. Mer information om dessa typer av konton finns i [Tilldela användare](config-job-card-device.md#assigned-users).
 - **Använd den faktiska tiden för registrering** – Ställ in detta alternativ på *Ja* att ställa in tiden för varje ny registrering till den exakta tidpunkt då arbetstagaren lämnade in registreringen. När alternativet är inställt på *Nej*, används inloggningstiden istället. Du vill vanligtvis ange alternativet till *Ja* om du anger **Lås medarbetare** och/eller **Enskild arbetare** till *Ja* i fall där arbetstagare ofta förblir inloggade under längre perioder.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b1f034017c2cd8736c1e3ce286924bf305961390
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 3a78a162469790d797344ce9311c55bfcecd19f4
+ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5898070"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "6086999"
 ---
 # <a name="finance-insights-home-page-preview"></a>Finance-insikter – startsida (förhandsversion)
 
@@ -123,10 +123,5 @@ Demonstrationsdata för budgetförslag:
 ## <a name="feedback-and-support"></a>Feedback och support
 
 Skicka ett e-postmeddelande till [Kundbetalningsinsikter (förhandsversion)](mailto:fiap@microsoft.com) om du är intresserad av att ge feedback eller behöver support.
-
-## <a name="privacy-notice"></a>Sekretesspolicy
-
-Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

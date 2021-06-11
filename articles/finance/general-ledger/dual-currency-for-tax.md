@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0a3245febe31857181d17bba42e12b65f4ebb40f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3673642729aa41fa3c00a09fe8fe205edd0624c7
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832980"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088475"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Stöd för moms på dubbel valuta
 [!include [banner](../includes/banner.md)]
@@ -42,8 +42,9 @@ Mer information om dubbla valutor finns i [dubbla valutor](dual-currency.md).
 Som en följd av stöd för dubbla valutor finns två nya funktioner i funktionshantering: 
 
 - Momskonvertering (nyhet i version 10.0.13)
+- Ange finansiella dimensioner i kontona för realiserade valutajusteringsresultat för momsavräkning (ny i version 10.0.17)
 
-Stöd till dubbel valuta för moms garanterar att moms beräknas korrekt i momsvalutan och att saldot för momskvittningen beräknas korrekt i både redovisningsvalutan och rapporteringsvalutan. 
+Stöd till dubbel valuta för moms garanterar att moms beräknas korrekt i momsvalutan och att saldot för momskvittningen beräknas korrekt i både redovisningsvalutan och rapporteringsvalutan.
 
 ## <a name="sales-tax-conversion"></a>Momskonvertering
 
@@ -88,6 +89,10 @@ Den här funktionen kan endast användas för nya transaktioner. För att momstr
 
 För att förhindra föregående scenario rekommenderar vi att du ändrar detta parameter värde i en ny (ren) momskvittningsperiod som inte innehåller några oreglerade momstransaktioner. Om du vill ändra detta värde i mitten av en momskvittningsperiod kör du programmet "kvitta och bokför moms" för aktuell momskvittningsperiod innan du ändrar detta parametervärde.
 
+Den här funktionen lägger till redovisningsposter som klargör vinster och förluster från valutautbyten. Inmatningarna görs i de realiserade vinst- och förlustkontona för valutajusteringar när omvärdering görs vid momskvittning. Mer information finns i avsnittet [Automatiskt saldo för momskvittning i rapporteringsvaluta](#tax-settlement-auto-balance-in-reporting-currency) senare i det här avsnittet.
+
+> [!NOTE]
+> Vid kvittningen tas informationen för ekonomiska dimensioner från momskonton, som är balansräkningskonton, och anges i valutajusteringsvinst- och förlustkonton, som är resultatkonton. Eftersom restriktioner för värdet av ekonomiska dimensioner skiljer sig mellan balansräkningskonton och resultatkonton, kan ett fel inträffa under processen Kvitta och bokföra moms. För att undvika att behöva ändra kontostrukturer kan du aktivera funktionen "Fyll i ekonomiska dimensioner till realiserade valutajusteringskonton för vinst/förlust för momskvittning". Den här funktionen tvingar ekonomiska dimensioner att använda valutajusteringskonton för vinst/förlust. 
 
 ## <a name="track-reporting-currency-tax-amount"></a>Spåra momsbelopp i rapporteringsvaluta
 
@@ -114,7 +119,7 @@ Med hjälp av föregående exempel kan du visa den här funktionen, anta att dat
 | Redovisningsvaluta             | 100                        | 111                       | 83                       | **83.25**          |
 | Rapporteringsvaluta              | 100                        | 111                       | 83                       | **83**             |
 
-När du kör programmet momskvittning vid ett månadsslut kommer redovisningsposten att vara följande:.
+När du kör programmet momskvittning vid ett månadsslut kommer redovisningsposten att vara följande.
 #### <a name="scenario-sales-tax-conversion--accounting-currency"></a>Scenario: momskonvertering = "redovisningsvaluta"
 
 | Huvudkonto           | Transaktionsvaluta (GBP) | Redovisningsvaluta (USD) | Rapporteringsvaluta (GBP) |

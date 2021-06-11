@@ -1,7 +1,7 @@
 ---
 title: Ekonomiska dimensioner och huvudkonton i språk som skrivs från höger till vänster
 description: Det här ämnet beskriver besluten som du bör göra när du använder ett språk som skrivs från höger till vänster och du måste ställa in ekonomiska dimensioner och huvudkontona.
-author: aprilolson
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: rhaertle
 ms.custom: 222564
 ms.assetid: 875dcebb-1bbb-4841-a8c6-9e134da07e96
 ms.search.region: global
-ms.author: aolson
+ms.author: rcarlson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 508f4ed4de367770acddc77a6ff5e7e36fd20729
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 26fd186415db0adf01b8c53b188171fcf86fbc88
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748147"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111672"
 ---
 # <a name="financial-dimensions-and-main-accounts-in-right-to-left-languages"></a>Ekonomiska dimensioner och huvudkonton i språk som skrivs från höger till vänster
 

@@ -2,13 +2,12 @@
 title: Hantera ansökningar om ledighet i Teams
 description: I det här avsnittet beskrivs hur du begär ledighet i Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
-ms.date: 02/23/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2ea495259ba29f302753991e260d5a8fa990322b
-ms.sourcegitcommit: e3f11fc9a9dae416a490437678bb482a0094f9a9
+ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5953422"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097269"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Hantera begäranden om ledighet i Teams
 
@@ -33,21 +32,13 @@ Med hjälp av Dynamics 365 Human Resources-appen i Microsoft Teams kan du snabbt
 
 Du hittar appen Dynamics 365 Human Resources i Teams-butiken.
 
-1. I Microsoft Teams väljer du de tre punkterna (...).
-
-   ![Punkter i Personal Teams-appen för tjänstledighet](./media/hr-teams-leave-app-ellipses.png)
+1. I Microsoft Teams, navigera till listan med appar.
  
 2. Sök efter Dynamics 365 Human Resources och välj sedan panelen **Personal**.
 
-   ![HR-panel i Personal Teams-appen för tjänstledighet](./media/hr-teams-leave-app-human-resources-tile.png)
-
 3. Välj knappen **Lägg till** om du vill installera appen.
 
-   ![Instalaltion av Personal Teams-appen för tjänstledighet](./media/hr-teams-leave-app-in-store.png)
-
 Om appen inte logga in dig automatiskt väljer du fliken **Inställningar** för att logga in.
-
-![Fliken Inställningar i Personal Teams-appen för tjänstledighet](./media/hr-teams-leave-app-settings-tab.png)
 
 > [!NOTE]
 > Om du inte ser någon dialogruta för inloggning kontrollerar du att webbläsarinställningarna tillåter popup-fönster. 
@@ -61,20 +52,24 @@ Om du har till gång till mer än en instans av Personal kan du välja vilken mi
 
 När appen har installerats visas ett välkomstmeddelande som anger vilka typer av åtgärder roboten kan vidta för din räkning.
 
-![Robotvälkomstmeddelande i Personal Teams-appen för tjänstledighet](./media/hr-teams-leave-app-bot.png)
- 
 > [!NOTE]
 > När du interagerar med roboten för första gången måste du kanske logga in. Om du inte ser någon dialogruta för inloggning kontrollerar du att webbläsarinställningarna tillåter popup-fönster.
 
 Du kan be roboten att:
 
-- Påbörja en ledighetsbegäran åt dig.
+- Visa aktuella tjänstledighetssaldon. Skicka till exempel ett meddelande där det står "Visa tjänstledighetssaldon".
+
+- Påbörja en ledighetsbegäran åt dig. Skicka till exempel ett meddelande där det står: "Ta ledigt" eller "Jag vill ta semester nästa torsdag och fredag" som är mer specifik för att begära tjänstledighet för semestertypen. 
 
   ![Starta en tjänstledighetsbegäran i Teams-chatt](./media/hr-teams-leave-app-initiate.png)
 
 - Chattroboten fyller i en tjänstledighetsbegäran för dig. Välj **Begär ledig tid** och redigera informationen för din förfrågan.
 
-  ![Redigera information om ledighetsansökan](./media/hr-teams-leave-app-details.png)
+   Om du vill skicka tjänstledighetsansökningar för flera tjänstledighetstyper för samma datum väljer du alternativet **Dela dag med** från menyn **Fler alternativ**. 
+
+   Om du väljer en halvdagsledighet när tjänstledighetsenheten är i dagar, kan du ange om du vill begära ledighet från den första halvan av dagen eller den andra halvan av dagen genom att välja alternativet **Halvdagsdefinition** på menyn **Fler alternativ**.
+   
+   ![Halvdagsdefinitioner](./media/HalfDayDefinitions.png)
 
 - När du har redigerat informationen om din tjänstledighet väljer du **Skicka** för att skicka den för godkännande.
 
@@ -91,42 +86,36 @@ På fliken **Ledighet** kan du visa:
 - Ansökningar om ledighet
 
 - Utkast till ansökan om tjänstledighet
-
-![Fliken Ledighet i Personal Teams-appen för ledighet](./media/hr-teams-leave-app-timeoff-tab.png)
  
 ### <a name="create-a-new-request"></a>Skapa en ny ansökan
 
 1. Skapa en ny ledighetsansökan genom att välja **Ny ansökan**.
 
-   ![Ny ansökan i Personal Teams-appen för tjänstledighet](./media/hr-teams-leave-app-timeoff-tab-new.png)
-
 2. Ange den dag eller de dagar som du vill ta ledigt och välj sedan **Lägg till**.
 
-   ![Lägg till ledighet i Personal Teams-appen för ledighet](./media/hr-teams-leave-app-timeoff-tab-add.png)
+   ![Lägg till ledighet i Personal Teams-appen för ledighet](./media/TimeOffHours.png)
 
 3. Ange en orsakskod vid behov. Skriv även eventuella kommentarer och lägg till eventuella bifogade filer.
 
-4. När du är klar med att mata in information skriver du **Skicka in** för att skicka in den för godkännande. Du kan också skriva **Spara som utkast** om du vill komma tillbaka till den senare.
+4. Välj alternativ **Dela dag med** från menyn **Fler alternativ** om du vill skicka flera ledighetsförfrågningar för samma datum för olika ledighetstyper.
+
+5. Välj alternativet **Halvdagsdefinition** om du vill ange om du vill begära ledigt den första halvan av dagen eller den andra arbetsdagen. Det här alternativet är tillgängligt när enheten för ledighetsförfrågan är i dagar och beloppet som begärts är 0,5 dagar.
+
+6. När du är klar med att mata in information väljer du **Skicka in** för att skicka in den för godkännande. Du kan också skriva **Spara som utkast** om du vill komma tillbaka till den senare.
 
 ### <a name="manage-draft-requests"></a>Hantera ansökningsutkast
 
 1. Välj fliken **Utkast**.
 
-   ![Fliken Utkast i Personal Teams-appen för ledighet](./media/hr-teams-leave-app-drafts-tab.png)
-
 2. Välj blyertspennan om du vill redigera ansökan, eller välj papperskorgen om du vill ta bort ansökan.
 
 3. Utför erforderliga ändringar. När du är klar med att mata in information skriver du **Skicka in** för att skicka in den för godkännande. Du kan också välja **Spara som utkast** om du vill komma tillbaka till den senare.
-
-   ![Redigera utkast i Personal Teams-appen för tjänstledighet](./media/hr-teams-leave-app-drafts-edit.png)
    
 ### <a name="respond-to-teams-notifications"></a>Svara på Teams-meddelanden
 
 När du eller en arbetare är godkännare för att skicka en begäran om ledighet får du ett meddelande i Personal-appen i Teams. Du kan välja meddelandet om du vill visa det. Meddelanden visas också i området **Chatt** .
 
 Om du är en godkännare kan du välja **Godkänn** eller **Neka** i meddelandet. Du kan också ange ett valfritt meddelande.
-
-![Meddelande om ledighetsansökan i Personal Teams-appen](./media/hr-teams-leave-app-notification.png)
 
 ## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Skicka kommande ledighetsinformation till dina medarbetare
 
@@ -138,15 +127,9 @@ När du har installerat Personal-appen för Teams kan du enkelt skicka informati
 
 2. Välj den begäran som du vill dela. Om du vill dela ett utkast till en ledighetsansökan väljer du **utkast** först.
 
-   ![Välj en kommande ledighetsansökan att dela](./media/hr-teams-leave-app-chat-search.png)
-
 Din ledighetsansökan visas i chatten.
 
-![Kort för ledighetsansökan i Personal](./media/hr-teams-leave-app-chat-card.png)
-
-Om du har delat en utkastbegäran visas det som ett utkast:
-
-![Utkast av kort för ledighetsansökan i Personal](./media/hr-teams-leave-app-chat-draft-card.png)
+Om du har delat en utkastbegäran visas det som ett utkast.
 
 ## <a name="view-your-teams-leave-calendar"></a>Visa ditt teams ledighetskalender
 
@@ -155,8 +138,6 @@ Om du är chef med underställda kan du visa teamets godkända och väntande led
 1. I Personal-appen i Teams, välj **Ledighet**.
 
 2. Välj **teamkalender** . Kalendern visar dina underställdas godkända och väntande ledighet.
-
-   ![Visa kalender i Personal Teams-app](./media/hr-teams-leave-app-view-calendar.png)
 
    > [!NOTE]
    > Om du inte kan se teamkalendern ber du administratören att aktivera den. För mer information, se [Installera och konfigurera](hr-admin-teams-leave-app.md#install-and-setup).

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d6e5725255c43b808d656a46cbcdeca4d200b768
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: 3509763c03ecc0e847c72828d14b172401df75b0
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920167"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115155"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Konstruktionsversioner och kategorier av konstruktionsprodukter
 
@@ -48,7 +48,8 @@ När du använder konstruktionsprodukter har varje produkt minst en konstruktion
 - Det konstruktionsföretag som skapade och äger produkten (mer information finns i [konstruktionsföretag och dataägarskapsregler](engineering-org-data-ownership-rules.md)).
 - Relaterade konstruktionsdokument, t.ex. en monteringsmanual, användarinstruktioner, bilder och länkar
 - De konstruktionsattributen (mer information finns i [Konstruktionsattribut och sökning efter konstruktionsattribut](engineering-attributes-and-search.md)).
-- Konstruktionsstrukturlistor
+- Strukturlista för tekniska produkter
+- Formler för produkter för processtillverkning
 - Konstruktionsrutter
 
 Du kan uppdatera dessa data på en befintlig version, eller skapa en ny version, genom att använda en *konstruktionsändringsorder*. (Mer information finns i [Hantera ändringar av konstruktionsprodukter](engineering-change-management.md)). Om du skapar en ny version av en produkt kopierar systemet alla konstruktionsrelevanta data till den nya versionen. Du kan sedan ändra informationen för den nya versionen. På det här sättet kan du spåra specifika data för varje version i följd. Om du vill jämföra skillnaderna mellan olika konstruktionsversioner, inspekterar du den konstruktionsändringsordern, som inkluderar ändringstyper som anger alla ändringar.
@@ -110,6 +111,8 @@ Ange följande fält snabbfliken **Detaljer** en konstruktionsproduktkategori.
 | Fält | beskrivning |
 |---|---|
 | Produkttyp | Välj om kategorin gäller för produkter eller tjänster. |
+| Produktionstyp | Det här fältet visas bara när du har aktiverat [hantering av formeländring](manage-formula-changes.md) i systemet. Välj den typ av produktion som denna konstruktionsproduktkategori används:<ul><li>**Planering av artikel** – Använd den här tekniska kategorin om du vill hantera receptändring för planering av artiklar. I planeringsartiklar används formler. De liknar receptartiklar, men används för att endast producera samprodukter och biprodukter, inte färdiga produkter. Formler används under processtillverkning.</li><li>**Strukturlista** – Använd den här tekniska kategori för att hantera tekniska produkter som inte använder formler och som vanligtvis (men inte nödvändigtvis) innehåller strukturlistor.</li><li>**Formel** – Använd den här tekniska kategorin om du vill hantera receptändring för avslutade produkter. Dessa artiklar kommer att ha en formel men inte en strukturlista. Formler används under processtillverkning.</li></ul> |
+| Faktisk/nominell vikt | Det här alternativet visas bara när du har aktiverat [hantering av formeländring](manage-formula-changes.md) i systemet. Den är bara tillgänglig om fältet **Produktionstyp** är inställt på *Planering av artikel* eller *Formel*. Ställ in det här alternativet till *Ja* om du ska använda den här tekniska kategorin för att hantera artiklar som kräver support för faktisk/nominell vikt. |
 | Spåra versioner i transaktioner | Välj om versionen av produkten ska märkas med alla transaktioner (logistisk påverkan). Om du till exempel spårar versionen i transaktioner kommer varje försäljningsorder att visa vilken specifik version av produkten som såldes i den försäljningsordern. Om du inte spårar versionen i transaktioner visar inte försäljningsorder vilken specifik version som såldes. De visar i stället alltid den senaste versionen.<ul><li>Om det här alternativet är inställt på *Ja* skapas en produktmall för produkten och varje version av produkten är en variant som använder *version* produktdimensionen. Fältet **Delprodukttyp** ställs automatiskt in på *Produktmall*, och i fältet **Produktdimensionsgrupp** måste du välja en produktdimensionsgrupp där dimensionen *version* är aktiv. Endast produktdimensionsgrupper där *version* är en aktiv dimension visas. Du kan skapa nya produktdimensionsgrupper genom att klicka på knappen **Redigera** (pennsymbol).</li><li>Om det här alternativet är inställt på *Nej* används inte produktdimensionen *version*. Du kan sedan välja om du vill skapa en produkt eller en produktmall som använder de andra dimensionerna.</li></ul><p>Det här alternativet används ofta för produkter som har en kostnadsskillnad mellan versioner, eller produkter där olika villkor gäller i relation till kunden. Därför är det viktigt att ange vilken version som användes i varje transaktion.</p> |
 | Delprodukttyp | Välj om kategorin ska innehålla produkter eller produktmallar. För produktmallar kommer produktdimensioner att användas.
 | Produktdimensionsgrupp | Inställningarna för **Spåra versioner i transaktioner** hjälper dig att välja produktens dimensionsgrupp. Om du har angett att du vill spåra versionen bland transaktionerna kommer de produktdimensionsgrupper där dimensionen *version* används att visas. Annars är endast produktdimensionsgrupper där dimensionen *version* som inte används visas. |
@@ -139,7 +142,10 @@ Ange följande fält för varje rad som du lägger till i rutnätet:
 
 ### <a name="readiness-policy-fasttab"></a>Snabbfliken beredskapspolicy
 
-Använd fältet **produktberedskapspolicy** för att välja den beredskapspolicy som gäller för produkter som tillhör den här kategorin. Mer information finns i [Produktberedskap](product-readiness.md).
+Använd fältet **produktberedskapspolicy** för att välja den beredskapspolicy som gäller för produkter som skapas på denna teknikkategorin. Mer information finns i [Produktberedskap](product-readiness.md).
+
+> [!NOTE]
+> Fältet **Produktberedskapspolicy** fungerar något annat om du har aktiverat funktionen *Produkt beredskapskontroller* i ditt system. (Med hjälp av den funktionen kan du tillämpa beredskapspolicy på standardprodukter för \[icke-konstruktion\]). För mer information, se [Tilldela en beredskapspolicy till standardprodukter och konstruktionprodukter](product-readiness.md#assign-policy).
 
 ### <a name="release-policy-fasttab"></a>Snabbfliken frisläppningspolicy
 

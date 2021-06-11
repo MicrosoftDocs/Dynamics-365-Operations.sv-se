@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d7c0839ffbea80904ca12d1cba7ba9880f721cdd
-ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
+ms.openlocfilehash: d9430fe02abe58f37d2bfd1431b4da61527d0834
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947530"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115059"
 ---
 # <a name="engineering-change-management-overview"></a>Konstruktionsändringshantering – översikt
 
@@ -50,15 +50,20 @@ Sätt först på funktionerna genom att följa dessa steg.
 
 1. Gå till arbetsytan [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Sök efter uppdateringar.
-1. Aktivera funktionen med namnet **Konstruktionsändringshantering**.
-1. Om du vill använda den, ska du även aktivera funktionen med namnet **Produktdimensionsversion**.
+1. Aktivera funktionen med namnet *Konstruktionsändringshantering*.
+1. Om du vill använda den, ska du även aktivera funktionen med namnet *Produktdimensionsversion*.
 
 Sätt sedan på konfigurationstangenterna genom att följa dessa steg.
 
 1. Sätt ditt system i underhållsläge enligt beskrivningen i [underhållsläge](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Öppna **Systemadministration \> Inställningar \> Licenskonfiguration**.
 1. Expandera noden **Commerce**.
-1. Aktivera konfigurationsnyckeln för huvudfunktionen genom att markera kryssrutan **Konstruktionsändringshantering**. (Det är inte nödvändigt att expandera noden om du inte även vill inaktivera en eller båda av dess delfunktioner.)
+1. Aktivera konfigurationsnyckeln för huvudfunktionen genom att markera kryssrutan **Konstruktionsändringshantering**.
+1. Expandera noden **Tillägg för teknik för ändringshantering** och markera eller avmarkera följande kryssrutor efter behov (beroende på vilka funktioner du vill använda):
+
+    - **Attributsökning** – Markera den här kryssrutan om du vill aktivera [attributsökningsfunktionen](engineering-attributes-and-search.md). Vi rekommenderar att du aktiverar funktionen, men du kan avmarkera kryssrutan om du inte vill använda den.
+    - **Ändringshantering för processtillverkning** – Markera den här kryssrutan om du vill använda funktioner för teknikändringshantering för att hantera ändringar i formler för processtillverkning. Om du inte behöver hantera recept kan du avmarkera den här kryssrutan. Mer information finns i [Hantera ändringar i formler och deras ingredienser](manage-formula-changes.md).
+
 1. Om du även vill använda versionsdimensionen ska du välja kryssrutan **Produktdimension – Version**. (Denna kryssruta finns längre ned i listan, inte inkapslad under noden **Konstruktionsändringshantering**.)
 1. Inaktivera underhållsläge enligt beskrivningen i [underhållsläge](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 

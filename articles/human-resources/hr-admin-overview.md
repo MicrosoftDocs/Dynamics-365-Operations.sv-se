@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7a5f6ff75667f79894fce09b4fafeeaf31eea31e
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2009b3965f032ae54b83835ae481c47b0234a231
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889774"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053741"
 ---
 # <a name="administration-overview"></a>Administreringsöversikt
 
@@ -59,7 +58,7 @@ Den här administratörsguiden hjälper dig att konfigurera, hantera och felsök
   - [Användargränssnittselement](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)
   - [Hjälpmedelsfunktioner](../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json)
   - [Översikt över funktionshantering](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json)
-  - [Frågeställningar och svar för klient](../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json)
+  - [Frågor och svar för klient](../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json)
   - [Åtgärdssökning](../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json)
   - [Avancerad filtrerings- och frågesyntax](../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json)
   - [Konfigurera och filtrera arbetsytor](../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json)
@@ -83,7 +82,7 @@ Den här administratörsguiden hjälper dig att konfigurera, hantera och felsök
   - [Uppgiftsinspelare](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
   - [Skapa dokumentation eller utbildning med Uppgiftsinspelare](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
-- Felsöka Personal
+- Felsöka Human Resources
   - [Få support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
   - [Optimera prestanda med automatiska rensningsuppgifter](hr-admin-troubleshooting-batch-history.md)
   - [Analysrapporter uppdateras inte](hr-admin-troubleshooting-analytic-reports.md)

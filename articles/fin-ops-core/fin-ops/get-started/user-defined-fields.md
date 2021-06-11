@@ -2,7 +2,7 @@
 title: Skapa och arbeta med anpassade fält
 description: Det här avsnittet visar hur du skapar anpassade fält via användargränssnittet för att anpassa programmet så att det passar verksamheten.
 author: jasongre
-ms.date: 03/09/2020
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: a07c1a81f0436664acdfd23975a99c6670c6fb1c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1acbcbc49be6b764481e151d0fb3f12bf3cf5554
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754762"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092358"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Skapa och arbeta med anpassade fält
 
@@ -26,7 +26,7 @@ ms.locfileid: "5754762"
 
 Trots att det finns en omfattande uppsättning av färdiga fält för hantering av en mängd olika affärsprocesser, kan ibland företag ha behov av att söka ytterligare information i systemet. Även om programmerare kan användas för att lägga till dessa fält som tillägg i utvecklingsverktygen, tillåter funktionen anpassade fält att fält läggs till direkt från användargränssnittet, så att du kan skräddarsy programmet så att det passar ditt företag med webbläsaren.
 
-Möjligheten att lägga till egna fält finns i plattformsuppdatering 13 och senare. Endast användare med särskilda behörigheter har åtkomst till den här funktionen.
+*Endast användare med särskilda behörigheter har åtkomst till den här funktionen.*
 
 Det här videoklippet visar hur enkelt det är att lägga till ett anpassat fält på en sida: [Lägga till anpassade fält](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
@@ -46,8 +46,9 @@ Följande steg beskriver processen för att skapa ett anpassat fält och placera
     Om du inte ser knappen **Skapa nytt fält** har du inte behörighet att använda den här funktionen.
 
 7. Ange följande information i dialogrutan **Skapa nytt fält**.
-
+   
     1. Markera databastabellen där fältet ska läggas till. Observera att bara de tabeller som har stöd för anpassade fält visas i rullgardinsmenyn. Se avsnittet nedan för teknisk information om tabeller som stöds.
+
     2. Välj datatyp för det nya fältet. Tillgängliga datatyper är kryssruta, datum, datum/tid, decimal, nummer, plocklista och text.
 
         - Om du väljer datatypen text kan du också ange maxlängden för den text som kan skrivas in i fältet.
@@ -60,11 +61,15 @@ Följande steg beskriver processen för att skapa ett anpassat fält och placera
 10. Klicka på **infoga** för att infoga markerade fält i det utvalda området på formuläret.
 11. **Valfritt:** Aktivera läget **flytta** från verktygsfältet för anpassning för att flytta de nya fälten till önskad plats i det markerade området. Se [anpassa användarupplevelsen](personalize-user-experience.md) för mer information om hur du använder olika funktioner för anpassning om du vill optimera ett formulär för din personliga användning.
 
+> [!WARNING]
+> Möjligheten att ange värden i ett eget fält som läggs till på en sida beror på om registret som är kopplat till det anpassade fältet kan redigeras eller vara skrivskyddbart. När det associerade registret är skrivskyddat är alla fält som är länkade till det registret, inklusive eventuella anpassade fält, skrivskyddade.
+
+
 ## <a name="sharing-custom-fields-with-other-users"></a>Dela anpassade fält med andra användare
 
-När du har skapat ett anpassat fält och det visas i ett formulär, vill du kanske tillhandahålla denna uppdaterade sida som innehåller det nya fältet för andra användare i systemet. Det kan du göra på två olika sätt genom att använda funktionerna för anpassning av produkten:
+När du har skapat ett anpassat fält och det visas på en sida, vill du kanske tillhandahålla denna uppdaterade sida som innehåller det nya fältet för andra användare i systemet. Det kan du göra på två olika sätt genom att använda funktionerna för anpassning av produkten:
 
-- Det rekommenderade flödet är via den systemadministratör som kan skicka en anpassning till alla användare eller en grupp användare. Mer information i [Anpassa användarupplevelsen](personalize-user-experience.md).
+- Det rekommenderade flödet är att **publicera en [sparad vy](saved-views.md)** med det anpassade fältet tillagt på sidan i lämplig uppsättning användare. Om funktionen för sparade vyer inte är aktiverad kan systemadministratören personanpassningen för önskade användare från formuläret Personanpassning. Mer information finns i [Anpassa användarupplevelsen](personalize-user-experience.md).
 - Du kan också exportera dina ändringar (kallas *anpassningar*), skicka dem till en eller flera användare och låta var och en av dessa användare importera ändringarna. Alternativet **hantera** verktygsfältet för anpassning låter dig exportera och importera anpassningar.
 
 ## <a name="managing-custom-fields"></a>Hantera anpassade fält
@@ -134,6 +139,10 @@ I sällsynta fall kanske du bestämmer att ett anpassat fält inte längre behö
 > Den här åtgärden kan inte ångras och innebär att data som hör till fältet tas bort permanent från databasen.
 
 ## <a name="appendix"></a>Bilaga
+
+### <a name="why-cant-i-enter-a-value-in-my-custom-field"></a>Varför kan jag inte ange ett värde i mitt eget fält? 
+
+Om du inte kan ange något värde i det anpassade fältet när sidan är i redigeringsläge kan det beror på att registret som fältet lades till i för tillfället är skrivskyddade. Alla fält i en tabell blir skrivskyddade om bakomliggande registret för närvarande är konfigurerat som skrivskyddat på sidan.   
 
 ### <a name="who-can-create-custom-fields"></a>Vem kan skapa anpassade fält?
 

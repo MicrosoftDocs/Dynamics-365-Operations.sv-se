@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f46c5d4ec78a1e5ed708687e8da6eb379697d5f4
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 810592bcbe11b03753c12ab7bfe6160d3e9233ee
+ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908962"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049326"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installera och ansluta mobilappen Hantering av distributionslager
 
@@ -295,5 +295,9 @@ Om en enhet går förlorad eller drabbas av fel, måste du ta bort åtkomsten ti
 1. Välj **Ta bort** i verktygsfältet.
 1. Markera **Ja** i bekräftelsemeddelandet som visas.
 
+## <a name="additional-resources"></a>Ytterligare resurser
+
+- [Användarinställningar för mobil enhet](mobile-device-user-settings.md)
+- [Tilldela stegikoner och titlar för mobilappen för Warehouse Management](step-icons-titles.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b765ae63cfb17e26439758f2a0ed64770ef70881
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a94df9dd706c2540779db70e794e4a0a3f2dd186
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809288"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103032"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>Frånvaroregistrering i Tid och närvaro
 
@@ -31,7 +31,7 @@ Det här avsnittet beskriver begreppen för frånvaro och hur du hanterar frånv
 
 Arbetare anses vara frånvarande för det antal timmar som de inte arbetar under deras vanliga arbetstider. Vanliga arbetstimmar anges i profilen för en arbetares standardtid.
 
-Exempelvis arbetar en arbetare med en dagprofil som stämplar in klockan 7:00 och stämplar ut kl 15:00. Om arbetaren stämplar in klockan 9:00 anses han frånvarande från 7:00 till 9:00 den dagen.
+Exempelvis arbetar en arbetare med en dagprofil som stämplar in klockan 7:00 och stämplar ut kl 15:00. Om arbetaren stämplar in klockan 9:00 anses de frånvarande från 7:00 till 9:00 den dagen.
 
 I det här fallet uppmanas arbetare att ange en orsak till frånvaron. De kan ange en orsak genom att välja en frånvarokod.
 
@@ -101,7 +101,7 @@ Tidsregistreringar för arbetare måste beräknas och godkännas innan de kan ö
 
 En godkännare kan ändra tidsregistreringar för en arbetare. Godkännaren kan även ändra eventuell frånvaro som arbetaren har registrerat. Om godkännaren manuellt anger en tidsperiod som har en frånvarokod, åsidosätts frånvarokoden för den perioden inte av standardfrånvarokoden från parametrarna Tid och närvaro.
 
-En arbetare stämplar t.ex. in klockan 10:00 och väljer en frånvarokod som indikerar att hon är sen. Arbetaren informerar senare sin arbetsledare att hon hade ett läkarbesök mellan 08:00 till 10:00. Ett läkarbesök bör inte medföra avdrag på arbetarens lön. Därför kan i detta fall chefen justera två timmar av frånvaro mellan 08:00 till 10:00 manuellt genom att ange en frånvarokod som anger sjukdom under de två timmar.
+En arbetare stämplar t.ex. in klockan 10:00 och väljer en frånvarokod som indikerar att de är sena. Arbetaren informerar senare sin arbetsledare att hon hade ett läkarbesök mellan 08:00 till 10:00. Ett läkarbesök bör inte medföra avdrag på arbetarens lön. Därför kan i detta fall chefen justera två timmar av frånvaro mellan 08:00 till 10:00 manuellt genom att ange en frånvarokod som anger sjukdom under de två timmar.
 
 ### <a name="calculate-and-approve-absence"></a>Beräkna och godkänn frånvaro
 

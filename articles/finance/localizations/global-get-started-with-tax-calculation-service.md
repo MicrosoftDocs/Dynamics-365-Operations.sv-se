@@ -2,7 +2,7 @@
 title: Kom i gång med skatteberäkning
 description: Detta ämne förklarar hur du ställer in skatteberäkningen.
 author: wangchen
-ms.date: 04/12/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 43a7c7133156d199da7b5ba16d48652359098c74
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 3f8aa791cee1926afe6be347331d47902a3b7304
+ms.sourcegitcommit: f4dc09601bceb5cdc88ee184ce7c8f369e3e6e86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018889"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "6060573"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>Kom igång med skatteberäkning (förhandsversion)
 
@@ -41,7 +41,7 @@ Inställningen består av fyra huvudsteg:
 
 Innan du kan slutföra procedurerna i detta ämne måste följande förutsättningar finnas på plats:
 
-- Du har tillgång till ditt LCS-konto och har distribuerat ett LCS-projekt med en nivå 2-miljö (eller högre) som kör Dynamics 365 version 10.0.18 eller senare.
+- Du har tillgång till ditt LCS-konto och har distribuerat ett LCS-projekt med en nivå 2-miljö (eller högre) som kör Dynamics 365 version 10.0.18 med [KB4616360](https://fix.lcs.dynamics.com/Issue/Details?kb=4616360&bugId=568738&dbType=3&qc=1f1c04ff39adad74ef871f539e8d73e14c1893ef7cc4b6e3f7d5c5864ec2781a), eller senare.
 - Du har åtkomst till ditt RCS-konto.
 - Du har kontaktat Microsoft för att aktivera flyget i din distribuerade Finance eller Supply Chain Management-miljö.
 

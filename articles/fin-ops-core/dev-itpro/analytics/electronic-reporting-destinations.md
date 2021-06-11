@@ -2,7 +2,7 @@
 title: Destinationer för elektronisk rapportering (ER)
 description: I det här avsnittet finns information om hantering av mål för elektroniska rapportering, vilka typer av destinationer som stöds samt säkerhetsaspekter.
 author: nselin
-ms.date: 02/24/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893614"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085510"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer för elektronisk rapportering (ER)
 
@@ -199,6 +199,34 @@ Om du skapar en ER-konfiguration i Excel-format och vill konvertera den till PDF
 > Den valda sidorienteringen tillämpas på alla ER-konfigurationer som genereras i Excel-format och sedan konverteras till PDF-format.
 >
 > Om en ER-konfiguration i Word-format konverteras till PDF-format, tas sidorientering för PDF-dokument från Word-dokumentet.
+
+## <a name="output-unfolding"></a>Utdata som viks ut
+
+När du konfigurerar en destination för komponenten **Mapp** i ditt ER-format kan du ange hur utdata från den komponenten levereras till den konfigurerade destinationen.
+
+### <a name="make-output-unfolding-available"></a>Gör utdata som viks ut tillgänglig
+
+För att göra alternativet för utfällning av utdata tillgängligt i den aktuella Finance-instansen, öppna arbetsytan **Funktionshanteringt** och aktivera funktionen **Tillåt att konfigurera ER-destinationer för att skicka mappinnehåll som separata filer**.
+
+### <a name="applicability"></a>Tillämplighet
+
+Alternativet utdata som viks ut kan bara konfigureras för formatkomponenter av typen **Mapp**. När du börjar konfigurera en komponent för **Mapp** blir snabbfliken **Allmänt** tillgänglig på sidan **Destination för elektronisk rapportering**. 
+
+### <a name="use-the-output-unfolding-option"></a>Använda alternativet för utdata som viks ut
+
+På snabbfliken **Allmänt** i fältet **Skicka en mapp som** , välj ett av följande värde:
+
+- **ZIP-arkiv** – Leverera en genererad fil som zip-fil.
+- **Separata filer** – Leverera alla filer i en genererad zip-fil som en enskild fil.
+
+    > [!NOTE]
+    > När du väljer **Separata filer** samlas den genererade utdata in i minnet i zip-läge. Därför tillämpas den maximala [filstorleksgränsen](er-compress-outbound-files.md) tillämpas för zippad utdata när den verkliga filstorleken kan överskrida denna gräns. Vi rekommenderar att du väljer detta värde när du förväntar dig att även storleken på den genererade utleveransen ska vara rätt stor.
+
+[![Konfigurera en destination för en formatkomponent för mapp](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+
+### <a name="limitations"></a>Begränsningar
+
+Om du ställer in fältet **Skicka mappen som** till **Separata filer** för en komponent för **Mapp** som innehåller andra kapslade komponenter för **Mapp** tillämpas inställningen inte på de kapslade komponenterna för **Mapp**.
 
 ## <a name="security-considerations"></a>Säkerhetsaspekter
 

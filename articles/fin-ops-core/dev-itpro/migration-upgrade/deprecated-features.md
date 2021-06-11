@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921433"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112631"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Borttagna eller utfasade funktioner i tidigare versioner
 
@@ -104,6 +104,39 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell: 1 oktober 2020, men vi planerar inte längre att stödja **Inhemsk momsrapport – funktionsreferens IT-00003**. |
 
+## <a name="october-2019-deprecation-announcement"></a>Oktober 2019 avskrivningsmeddelande
+
+### <a name="flowchart-diagrams-in-business-process-modeler"></a>Flödesschemadiagram i affärsprocessmodelleraren
+
+<table>
+<tbody>
+<tr>
+<td><strong>Orsak till inaktuell/borttagning</strong></td>
+<td>Vi använder inte komponenten flödesschema i Affärsprocessmodelleraren (BPM), eftersom äldre designen orsakade låg användning.</td>
+</tr>
+<tr>
+<td><strong>Ersatt av en annan funktion?</strong></td>
+<td>Nej</td>
+</tr>
+<tr>
+<td><strong>Områden som påverkas</strong></td>
+<td>Affärsprocessmodelleraren</td>
+</tr>
+<tr>
+<td><strong>Status</strong></td>
+<td>Inaktuell: komponenten flödesschema i BPM förväntas tas bort år 2020. Följande funktion kommer att bli otillgänglig:
+<ul>
+<li>Alla flödesscheman blir skrivskyddade och kan inte redigeras. Formegenskaperna som är kopplade till flödesscheman kommer heller inte att vara tillgängliga. Dessa flödesscheman innehåller både standardflödesscheman som genereras automatiskt och anpassade flödesscheman som ändras baserat på dessa standard flödesscheman.</li>
+<li>Processteg blir skrivskyddade och kan inte redigeras.</li>     
+<li>Den inaktuella funktionen Bristanalys kommer inte att vara tillgänglig. Därför skapas ingen lista över luckor automatiskt eller tillgänglig för export.
+<p><strong>Obs!</strong> Den här funktionen hade tidigare ersatts av Microsoft Azure DevOps-integreringar.</p>
+</li>
+<li>Versionshistoriken för flödesschemat kommer inte att vara tillgänglig.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 med plattformsuppdatering 29
 

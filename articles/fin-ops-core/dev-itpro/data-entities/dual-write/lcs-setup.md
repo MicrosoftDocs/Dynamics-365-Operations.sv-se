@@ -2,26 +2,20 @@
 title: Inställning av dubbelriktad skrivning från Lifecycle Services
 description: I det här avsnittet beskrivs hur du ställer in en dubbelriktad anslutning från Microsoft Dynamics Lifecycle Services (LCS).
 author: RamaKrishnamoorthy
-ms.date: 01/06/2020
+ms.date: 05/11/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e51b4ef1e309e5f89dc82a3776b88c505dc6593d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748551"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103579"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Inställning av dubbelriktad skrivning från Lifecycle Services
 
@@ -29,64 +23,48 @@ ms.locfileid: "5748551"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in en dubbelriktad anslutning i en ny Finance and Operations-miljö och en ny Dataverse-miljö från Microsoft Dynamics Lifecycle Services (LCS).
+I det här avsnittet beskrivs hur du aktiverar en dubbelriktad skrivning från Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Du måste vara administratör för att kunna konfigurera en anslutning med dubbelriktad anslutning.
+Du måste slutföra Power Platform-integrationen enligt beskrivningen i följande avsnitt:
 
-+ Du måste ha åtkomst till innehavare.
-+ Du måste vara administratör i både Finance and Operations-miljöer och Dataverse-miljöer.
++ [Power Platform-integration - Aktivera under utveckling av miljön](../../power-platform/overview.md#enable-during-environment-deployment)
++ [Power Platform-integration - Ställ in efter utveckling av miljön](../../power-platform/overview.md#set-up-after-environment-deployment)
 
-## <a name="set-up-a-dual-write-connection"></a>Konfigurera en dubbelriktad anslutning
+## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Ställ in dubbelriktad skrivning för nya Dataverse-miljöer
 
-Följ dessa steg för att konfigurera dubbelriktad anslutning.
+Följ dessa steg när du vill ställa in dubbelriktad skrivning från LCS **miljöinformation**:
 
-1. I LCS till ditt projekt.
-2. Välj **konfigurera** om du vill distribuera en ny miljö.
-3. Välj version. 
-4. Välj topologi. Om det bara finns en tillgänglig topologi väljs den automatiskt.
-5. Slutför de första stegen i guiden **distributionsinställningar**.
-6. På fliken **Dataverse** följ stegen:
+1. På sidan **Miljöinformation** visa avsnittet **Power Platform-integration**.
 
-    - Om en Dataverse-miljö redan har etablerats för din klientorganisation kan du välja den.
+2. Välj knappen **dubbelriktad skrivning för app**.
 
-        1. Ange alternativet **Konfigurera Dataverse** till **Ja**.
-        2. I kolumnen **Tillgängliga miljöer** välj miljön som ska integreras med dina Finance and Operations data. Listan innehåller alla miljöer där du har administratörsbehörighet.
-        3. Markera kryssrutan **acceptera** för att ange att du godkänner villkoren.
+    ![Power Platform-integration](media/powerplat_integration_step2.png)
 
-        ![Fliken Dataverse när en Dataverse-miljö redan har etablerats för din klientorganisation](../dual-write/media/lcs_setup_1.png)
+3. Granska villkoren och markera sedan **Konfigurera**.
 
-    - Om din klientorganisation inte redan har en Dataverse-miljö, kommer en ny miljö att etableras.
+4. Välj **OK** om du vill fortsätta.
 
-        1. Ange alternativet **Konfigurera Dataverse** till **Ja**.
-        2. Ange ett namn på Dataverse-miljön.
-        3. Välj regionen som miljön ska distribueras till.
-        4. Välj standardspråk och valuta för miljön.
+5. Du kan övervaka förloppet genom att regelbundet uppdatera sidan för miljöinformation. Inställningen tar normalt 30 minuter eller mindre.  
 
-            > [!NOTE]
-            > Du kan inte ändra språk och valuta senare.
+6. När inställningen är slutförd visas ett meddelande om processen lyckades eller om fel uppstår. Om inställningen misslyckades visas ett relaterat felmeddelande. Du måste åtgärda eventuella fel innan du går vidare till nästa steg.
 
-        5. Markera kryssrutan **acceptera** för att ange att du godkänner villkoren.
+7. Välj **Länk till Power Platform miljö** om du vill skapa en länk mellan Dataverse och den aktuella miljöns databaser. Detta tar normalt mindre än 5 minuter.
 
-        ![Dataverse fliken när din klientorganisation inte redan har Dataverse-miljö](../dual-write/media/lcs_setup_2.png)
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Länka till Power Platform miljö":::
 
-7. Slutför de kvarstående stegen i guiden **distributionsinställningar**.
-8. När miljön har statusen **distribuerad** ska du öppna sidan miljöinformation. I avsnittet **Power Platform-integration** visas namnen på Finance and Operations-miljön och Dataverse-miljön som är länkade.
+8. När länkningen är slutförd visas en hyperlänk. Använd länken för att logga in på administrationsområdet för dubbelriktad skrivning i Finance and Operations-miljön. Därifrån kan du ställa in enhetsmappningar.
 
-    ![Power Platform-integrationsavsnitt](../dual-write/media/lcs_setup_3.png)
+## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Ställ in dubbelriktad skrivning för en befintlig Dataverse-miljö
 
-9. En administratör för Finance and Operations-miljön måste logga in på LCS och välja **länka till CDS-skivor för appar** för att slutföra länken. På sidan miljöinformation visas kontaktinformationen för administratören.
+Om du vill ställa in dubbelriktad skrivning för en befintlig Dataverse-miljö måste du skapa ett Microsoft [supportärende](../../lifecycle-services/lcs-support.md). Ärendet måste innehålla:
 
-    När länken är slutförd uppdateras status till **Miljölänkning har slutförts**.
-
-10. Öppna arbetsytan **Dataintegration** i Finance and Operations-miljön och kontrollera vilka mallar som är tillgängliga, välj **Länk till CDS för appar**.
-
-    ![Knappen länk till CDS för appar i avsnittet Power Platform-integration](../dual-write/media/lcs_setup_4.png)
++ Ditt Finance and Operations miljö-ID.
++ Ditt miljönamn från Lifecycle Services.
++ Dataverse organisations-ID eller Power Platform miljö-ID från Power Platform administrationscenter. Begär att ID:t ska vara den instans som används för integration på din Power Platform-integration.
 
 > [!NOTE]
 > Du kan inte avlänka miljöer med hjälp av LCS. Om du vill ta bort länken för en miljö, öppna arbetsytan **Dataintegration** i Finance and Operations-miljön och välj sen **Ta bort länk**.
-
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Cookie-kompatibilitet
 description: I det här avsnittet beskrivs överväganden för cookie-efterlevnad och standardprinciper som ingår i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/16/2021
+ms.date: 05/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: efc84bcea2fb6c28c0b13d4469e858e82cc1c073
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908194"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088397"
 ---
 # <a name="cookie-compliance"></a>Cookie-kompatibilitet
 
@@ -52,8 +52,7 @@ I följande tabell visas den aktuella referenslistan över cookies som placerats
 | x-ms-cpim-trans                             | Används för att spåra transaktioner (antalet öppna flikar som autentiserar mot en B2C-webbplats), inklusive den aktuella transaktionen. |
 | \_msdyn365___muid_                            | Används om Experimentering har aktiverats för miljön; används som userId i experimenteringssyfte. |
 | \_msdyn365___exp_                             | Används om Experimentering har aktiverats för miljön; används för att mäta belastningsutjämning.         |
-
-
+| d365mkt                                       | Används om platsbaserad identifiering för att spåra en användares IP-adress för förslag till butiksplats aktiveras i Commerce webbplatsskaparen **Webbplatsinställningar > Allmänt > Aktivera platsbaserad butiksdetektering**.      |
 
 Om en webbplatsanvändare väljer några sociala medialänkar på en webbplats kommer cookies i följande register även att spåras i webbläsaren.
 
@@ -61,12 +60,12 @@ Om en webbplatsanvändare väljer några sociala medialänkar på en webbplats k
 | Domän                      | Cookie               | beskrivning                                                  | Källa                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | .linkedin.com                | UserMatchHistory         | ID-synkronisering av LinkedIn-annonser                                      | LinkedIn-flöde och insiktstagg                                |
-| .linkedin.com               | li_sugr                  | Webbläsar-ID                                           | Insiktstagg för LinkedIn om IP-adressen inte finns i ett anvisat land |
+| .linkedin.com               | li_sugr                  | Webbläsar-ID                                           | Insiktstagg för LinkedIn om IP-adressen inte finns i anvisat land |
 | .linkedin.com               | BizographicsOptOut       | Bestämmer avanmälningsstatus för tredjepartsspårning.              | LinkedIn-gästkontroller och avanmälningssidor för bransch           |
 | .linkedin.com               | \_guid                    | Webbläsar-ID för Google Ads-annonser.                            | LinkedIn-flöde                                                |
 | .linkedin.com               | li_oatml                 | Medlem som har ett indirekt ID för konverteringsspårning, ominriktning och analys. | LinkedIn-annonser och insiktstaggar                                |
 | Olika första part-domäner | li_fat_id                | Medlem som har ett indirekt ID för konverteringsspårning, ominriktning och analys. | LinkedIn-annonser och insiktstaggar                                |
-| .adsymptotic.com            | U                        | Webbläsar-ID                                           | Insiktstagg för LinkedIn om IP-adressen inte finns i ett anvisat land |
+| .adsymptotic.com            | U                        | Webbläsar-ID                                           | Insiktstagg för LinkedIn om IP-adressen inte finns i anvisat land |
 | .linkedin.com                | bCookie                  | Cookie för webbläsar-ID                                            | Förfrågningar till LinkedIn                                         |
 | .linkedin.com                | bscookie                 | Säker webbläsarcookie                                        | Förfrågningar till LinkedIn                                         |
 | .linkedin.com               | lang                     | Anger standardinställningar och -språk.                                 | Förfrågningar till LinkedIn                                         |

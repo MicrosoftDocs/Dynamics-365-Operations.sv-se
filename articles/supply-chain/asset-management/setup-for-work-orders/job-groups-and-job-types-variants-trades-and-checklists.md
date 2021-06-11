@@ -1,5 +1,5 @@
 ---
-title: Kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor
+title: Underhållsjobbtyper, kategorier, varianter, handel och checklistor
 description: I detta avsnitt beskrivs kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor i Tillgångshantering.
 author: johanhoffmann
 ms.date: 08/13/2019
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb73fb36ee31d93b2121437d57d959ba6c01a337
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d2a2bcff302814903959f78d6435abd540b46ef5
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842283"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117093"
 ---
-# <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor
+# <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>Underhållsjobbtyper, kategorier, varianter, handel och checklistor
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 En tillgångstyp är kopplad till varje tillgång. Tillgångstyper definierar jobbtyperna för underhåll (och därmed underhållsjobben) som kan utföras på tillgångar. När du skapar en arbetsorder måste du välja en underhållsjobbtyp. Du kan bara välja de typer av underhållsjobb som är relaterade till inställningarna för den tillgångstyp som används för tillgången.
 

@@ -1,8 +1,8 @@
 ---
 title: Ekonomiska råbalansrapporter
 description: Den här artikeln beskriver standardrapporter för råbalanser. Det beskriver även de byggstenar som är associerade med dessa rapporter och hur du kan ändra rapporterna så att de passar ditt företags behov.
-author: jcart1106
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a9902471101b752c4b09d8ae28eb673743b7a53
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 26ec03422315a280f7e779f992cf694eb5f845ea
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816941"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103668"
 ---
 # <a name="trial-balance-financial-reports"></a>Ekonomiska råbalansrapporter
 
@@ -28,8 +28,7 @@ ms.locfileid: "5816941"
 
 Den här artikeln beskriver standardrapporter för råbalanser. Det beskriver även de byggstenar som är associerade med dessa rapporter och hur du kan ändra rapporterna så att de passar ditt företags behov. 
 
-<a name="default-trial-balance-reports"></a>Standardrapporter för råbalans
------------------------------
+## <a name="default-trial-balance-reports"></a>Standardrapporter för råbalans
 
 Tre råbalansrapporter är tillgängliga i ekonomisk rapportering.
 
@@ -47,6 +46,9 @@ Råbalansrapporterna använder följande byggstenar.
 | Detaljerad råbalans – standardinställning               | Råbalans – standardinställning | Detaljerad råbalans – standardinställning               |
 | Råbalanssammanfattning – standardinställning                | Råbalans – standardinställning | Råbalanssammanfattning – standardinställning                |
 | Summerad råbalans på årsbasis – standardinställning | Råbalans – standardinställning | Summerad råbalans på årsbasis – standardinställning |
+
+> [!NOTE] 
+> När du kör rapporten **Råbalans** i Financial Reporting ska du markera kryssrutorna för **Visa rader utan belopp** och **Visa rapporter utan aktiva rader** på fliken **Inställningar**.
 
 ### <a name="row-definition"></a>Raddefinition
 
@@ -94,10 +96,7 @@ Alla råbalansrapporter använder olika kolumndefinitioner. Dessa kolumndefiniti
     -   **FD** – ekonomisk data som bara innehåller debet för det senaste året
     -   **FD** – ekonomisk data som bara innehåller kredit för det senaste året
 
-
-
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över ekonomisk rapportering](financial-reporting-getting-started.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: c511558735e89db32e88f6efdd2d0cc88a04b61c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 39786323e1ea11a960332e6e0a01f6ef8de1838d
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814836"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103009"
 ---
 # <a name="pay-based-on-registrations"></a>Lön baserat på registreringar
 
@@ -168,7 +168,7 @@ Om du vill konfigurera systemet för att tydligt skilja standardtid och övertid
 
 På sidan **Beräkningsparametrar**, välj **Övertid** som profilspecifikationstypen och ange alternativet **Betald tid** till **Nr**, som visas här.
 
-| Reg.specifikation | Typ av profilspecifikation | Beräkning   |     | Betalad         |     |
+| Reg.specifikation | Typ av profilspecifikation | Beräkning   | Inställning | Betald         | Inställning |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
 | Arbetstid       | Övertid                   | Standardtid | Ja | Betald tid     | Nr  |
 |                    |                            | Betald tid      | Ja | Betald övertid | Ja |
@@ -559,7 +559,7 @@ Om däremot kryssrutan **Dra av övertid** avmarkeras för den valda frånvaroko
 
 I följande exempel visas hur en arbetares flexkonto kan minskas genom att konvertera frånvaroperioden till en Flex--period.
 
-Arbetaren stämplar in klockan 07:00 och stämplar ut 13:00. Hon har nått en överenskommelse med sin chef så att hon kan gå hem för helgen om hon drar av timmarna från sin flexkonto. När medarbetaren stämplar ut klockan 13:00 uppmanas hon att välja en frånvarokod eftersom perioden för frånvaron för den återstående delen av arbetsdagen som påverkas är inte inom en planerad flexperiod. Om du vill konvertera den återstående delen av arbetsdagen till en Flex--period kan arbetaren välja en frånvarokod som har ställts in för att minska sitt flexkonto.
+Arbetaren stämplar in klockan 07:00 och stämplar ut 13:00. Arbetaren har ett avtal som de kan gå hem för veckoslutet om de drar av dessa timmar från flexkontot. När medarbetaren stämplar ut klockan 13:00 uppmanas hon att välja en frånvarokod eftersom perioden för frånvaron för den återstående delen av arbetsdagen som påverkas är inte inom en planerad flexperiod. Om du vill konvertera den återstående delen av arbetsdagen till en Flexperiod kan arbetaren välja en frånvarokod som har ställts in för att minska sitt flexkonto.
 
 För att minska saldot för flextimmar för arbetare som registrerar frånvaro på en arbetsdag, markera **Tid och närvaro**&gt;**Inställningar**&gt;**Grupper**&gt;**Frånvarogrupper** och markera kryssrutan **Minska flex**.
 

@@ -1,5 +1,5 @@
 ---
-title: Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.19 (juli 2021)
+title: Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.19 (juni 2021)
 description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.19.
 author: kamaybac
 ms.date: 04/23/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 8bb4a7c8085b40ab3eca72675dbe7a3be412d8c1
-ms.sourcegitcommit: 2eb7a9ae544f504155657c5c584cbac66c21dba4
+ms.openlocfilehash: f0af22dc07e8045546f11d9e58a10c7cb0bfea90
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5961691"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6114985"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10019-july-2021"></a>Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.19 (juli 2021)
+# <a name="preview-of-dynamics-365-supply-chain-management-10019-june-2021"></a>Förhandsgranskning av Dynamics 365 Supply Chain Management 10.0.19 (juni 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -26,23 +26,35 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 - **Förhandgranskning av version:** april 2021
 - **Allmän tillgänglighet för version (självuppdatering):** juni 2021
-- **Allmän tillgänglighet för version (automatisk uppdatering):** juli 2021
+- **Allmän tillgänglighet för version (automatisk uppdatering):** juni 2021
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
-Följande register lista de funktioner som ingår i denna version: Kolumnen *Funktion* innehåller länkar till [versionsplanen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), där du kan se de officiella frisläppningsdatumen för respektive funktion. Kolumnen *Mer information* innehåller länkar till relaterad dokumentation.
+Följande register lista de funktioner som ingår i denna version: Kolumnen *Funktion* innehåller länkar till [versionsplanen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), där du kan se de officiella frisläppningsdatumen för respektive funktion. Kolumnen *Mer information* innehåller mer information och/eller länkar till relaterad dokumentation.
 
 De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem. Vissa av funktionerna visas fortfarande i en förhandsversion, men andra användare kan redan vara tillgängliga i allmänhet.
 
 | Funktionsområde | Funktion | Mer information |
 |---|---|---|
-| Lager och logistik | [Optimering av kontaktpersons datatabellsexport](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | *Inte tillgänglig* |
+| Lager och logistik | [Optimering av kontaktpersons datatabellsexport](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | När denna funktion aktiveras orsakar ändringar i refererade data inte att relaterade kontakter inkluderas i nästa stegvisa export. När denna funktion inaktiveras orsakar ändringar i refererade data att relaterade kontakter inkluderas i nästa stegvisa export. |
 | Lager och logistik | [Stegvisa förbättringar av lagerställekörningskapaciteter med skalningsenheter](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Meddelandeprocessormeddelanden](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Lagerställets lagerjustering](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter](../cloud-edge/cloud-edge-workload-warehousing.md) |
-| Lager och logistik | [Sökfunktion för dokumentintroduktion och fält för dokumentsammanfattning på sidan dör försäljningsoffert](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | *Inte tillgänglig* |
+| Lager och logistik | [Sökfunktion för dokumentintroduktion och fält för dokumentsammanfattning på sidan dör försäljningsoffert](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Den här funktionen lägger till sökfunktionalitet för fälten **dokumentintroduktion** och **dokumentsammanfattning** på sidan **försäljningsoffert**.<br><br>Den här funktionen aktiveras som standard. |
 | Lager och logistik | [Lagerställekörning med kantskalningsenheter på din anpassade maskinvara](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [Distribuera kantskalningsenheter på anpassad maskinvara med HJÄLP LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Tillverkning | [Tillverkningskörning med kantskalningsenheter på din anpassade maskinvara](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Distribuera kantskalningsenheter på anpassad maskinvara med HJÄLP LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
+| Tillverkning | [Tillverkningskörning med kantskalningsenheter på din anpassade maskinvara](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Distribuera kantskalenheter på anpassad maskinvara med hjälp av LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
+| Planering | [Planering av oändlig kapacitet för planeringsoptimering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | Med denna funktion möjliggörs kapacitetsplanering med oändlig kapacitet för planeringsoptimering. Om den här funktionen inte har den här funktionen får planerade tillverkningsorder sin produktionstid från produktionstiden för de frisläppta produkterna, oavsett tidsgränsen för tidsplaneringen. |
 | Planering | Frågebaserad planerad order som bekräftar | [Bekräfta planerade order](../master-planning/planning-optimization/planned-order-firming.md) |
 | Produktinformationshantering | [Förbättringar av sidan med variantförslag](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Skapa fördefinierade produktvarianter](../pim/tasks/create-predefined-product-variants.md) |
+
+## <a name="feature-enhancements-included-in-this-release"></a>Funktionsförbättringar som ingår i den här versionen
+
+Följande register lista de funktionsförbättringar som ingår i denna version: Var och en av dessa tillhandahåller en stegvis förbättring av en befintlig funktion. Eftersom de bara är förbättringar visas de inte i [frisläppningsplanen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). För att säkerställa att dessa förbättringar inte står i konflikt med dina befintliga anpassningar eller inställningar stängs var och en av dem av som standard (om inget annat anges). Om du vill använda någon av dessa funktioner måste du explicit aktivera dem i [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+| Funktionsområde | Funktionsnamn&nbsp;&nbsp;i&nbsp;funktionshantering | Mer information |
+|---|---|---|
+| Försäljning och marknadsföring | Förbättringar i försäljningshistorik | Rensningen av försäljningshistorik kan ta lång tid om den körs sällan i miljöer med stora försäljningsuppdateringar. Om du vill minska tidslängden och förbättra tillförlitligheten, delar den här funktionen upp rensningen i batchar som körs under en begränsad tid. Om det är möjligt kommer databaskapaciteter att användas för att minimera låsning och undvika att transaktionsregister sammanfogas under rensningen. |
+| Försäljning och marknadsföring | Uppdatera begärt inleveransdatum med bekräftat datum för koncerninterna order | Med denna funktion kan du kontrollera vad som ska hända med fältvärden för försäljning och inköpsdatum vid koncernintern direktleverans. Du kan välja om systemet ska uppdatera de begärda datumen eller hoppa över att uppdatera dem. Om du hoppar över uppdateringen representerar de begärda datumen det som kunden har begärt. Om du aktiverar uppdatering representerar de begärda datumen (vid användning av leveransdatumkontroll) endast det som kunden begärt. Leveransdatumkontrollen, som skiljer sig från *Ingen*, går före det som ursprungligen begärdes. Du kan ställa in detta alternativ med hjälp av den nya inställningen **Uppdatera begärt inleveransdatum med bekräftat datum** i inställningarna för koncernintern leverantör eller kund.<br><br>Om funktionen inaktiveras skriver systemet över begärt inleveransdatum på ursprungliga försäljningsorder baserat på kontrollregeln för leveransdatum, men det begärda leveransdatumet förblir som det är. |
+| Lagerstyrning | Avrunda kvantiteter neråt till närmaste försäljningsenhet vid frisläpp till lagerställe | Med den här funktionen läggs ett alternativ till som kan begränsa orderkvantiteter vid frisläppning till lagerställe. När den här aktiveras avrundas orderkvantiteter nedåt till närmaste hela försäljningsenhet, och order som inkluderar kvantiteter för mindre än en försäljningsenhet avvisas för frisläppning. |
+| Lagerstyrning | Påfyllnadsmetoden "Schemalägg skapande av arbete" för hela organisationen | När du aktiverar den här funktionen, *Skapa tidsplan för arbete* läggs till och konfigureras att köra parallellt över alla juridiska enheter. Flera ytterligare inställningar påverkas också. Mer information finns i [Planera skapande av arbete under påfyllnad](../warehousing/configure-wave-schedule-work-creation.md). |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
 
@@ -62,7 +74,7 @@ Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdateringar för Finance and Operations-appar
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.19 inkluderar plattformsuppdateringar. Mer information finns i [plattformsuppdateringar för version 10.0.19 av Finance and Operations appar (juli 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.19 inkluderar plattformsuppdateringar. Mer information finns i [plattformsuppdateringar för version 10.0.19 av Finance and Operations appar (juni 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md).
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 

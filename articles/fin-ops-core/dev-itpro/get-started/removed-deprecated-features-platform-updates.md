@@ -2,7 +2,7 @@
 title: Borttagna eller avskrivna plattformsfunktioner
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning i plattformsuppdatering av Finance and Operations-appar.
 author: sericks007
-ms.date: 02/16/2021
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 782a147794bc30251ad60f5d788d1255a9d02b5f
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 435f7f0090ca16a9e8cfee2d1ceb65bec8457d09
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923548"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111734"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller avskrivna plattformsfunktioner
 
@@ -31,6 +31,19 @@ I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerat
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
 Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
+
+## <a name="feature-deprecation-notice-effective-may-2021"></a>Meddelande om funktionsavskrivning som gäller maj 2021
+
+### <a name="globalization-portal-in-lifecycle-services-lcs"></a>Globaliseringsportal i Lifecycle Services (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Vi avaktar globaliseringsportalen i LCS eftersom den här funktionen har ersatts av andra LCS-baserade tjänster. |
+| **Ersatt av en annan funktion?**   | Ja, den här funktionen ersätts av LCS [Problemsökning](../lifecycle-services/issue-search-lcs.md) och [Tjänst för inlämning av dynamiska regler](../lcs-solutions/submit-localization-alerts.md). |
+| **Produktområden som påverkas**         | Globaliseringsportal i LCS|
+| **Distribueringsalternativ**              | Molndistribution |
+| **Status**                         | Inaktuell: Planerat borttagningsdatum i maj 2022. |
+
 
 ## <a name="feature-removed-effective-january-28-2021"></a>Funktion borttagen 28 januari 2021
 
@@ -56,7 +69,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Ersatt av en annan funktion?**   | Visual Studio 2017 ersätter Visual Studio 2015 som den distribuerade och begärda versionen. |
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell. Vid uppdatering tas de föregående X++-verktygen bort från Visual Studio 2015 och de uppdaterade verktygen installeras inte i Visual Studio 2015. Det påverkar inte värden för byggen. För att bygga virtuella maskiner måste bygg-pipeline (byggdefinition) uppdateras manuellt för att ändra beroendet från MSBuild 14.0 (Visual Studio 2015) till MSBuild 15.0 (Visual Studio 2017) som beskrivs i [Uppdatera en äldre pipeline i Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
+| **Status**                         | Inaktuell: Vid uppdatering tas de föregående X++-verktygen bort från Visual Studio 2015 och de uppdaterade verktygen installeras inte i Visual Studio 2015. Det påverkar inte värden för byggen. För att bygga virtuella maskiner måste bygg-pipeline (byggdefinition) uppdateras manuellt för att ändra beroendet från MSBuild 14.0 (Visual Studio 2015) till MSBuild 15.0 (Visual Studio 2017) som beskrivs i [Uppdatera en äldre pipeline i Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
 
 ### <a name="user-avatar"></a>Användaravatar 
 
@@ -76,7 +89,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Ersatt av en annan funktion?**   | Nr |
 | **Produktområden som påverkas**         | Webbklient |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell. All EP-kod ska tas bort i versionen för oktober 2021. |
+| **Status**                         | Inaktuell: All EP-kod ska tas bort i versionen för oktober 2021. |
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.15 för Finance and Operations-appar
 
@@ -88,7 +101,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Ersatt av en annan funktion?**   | Vi rekommenderar våra kunder att övergå till Microsoft Edge.|
 | **Produktområden som påverkas**         | Alla Dynamics 365-produkter |
 | **Distribueringsalternativ**              | Allt|
-| **Status**                         | Inaktuell. Internet Explorer 11 kommer inte att stödjas efter augusti 2021.|
+| **Status**                         | Inaktuell: Internet Explorer 11 kommer inte att stödjas efter augusti 2021.|
 
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio tillägg för att tillämpa snabbkorrigeringar för metadata
@@ -181,7 +194,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Ersatt av en annan funktion?**   | Mer information finns i [Konfigurera Azure Active Directory villkorlig åtkomst](/appcenter/general/configuring-aad-conditional-access).|
 | **Produktområden som påverkas**         | Säkerhet |
 | **Distribueringsalternativ**              | Moln |
-| **Status**                         | **Inaktuell:** Den här funktionen är helt utfasad för självbetjäningsdistributioner. |
+| **Status**                         | Inaktuell: Den här funktionen är helt utfasad för självbetjäningsdistributioner. |
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
 
@@ -201,7 +214,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Ersatt av en annan funktion?**   | Detta kompilatorfel ersätter kompilatorvarningen permanent.  |
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | **Inaktuell:** kompilatorvarningen är ett kompileringsfel i plattformsuppdateringar för version 10.0.11 av Finance and Operations-appar. |
+| **Status**                         | Inaktuell: kompilatorvarningen är ett kompileringsfel i plattformsuppdateringar för version 10.0.11 av Finance and Operations-appar. |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>ISV-licenser som skapats med hjälp av SHA1-hashing-algoritm
 
@@ -211,7 +224,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Ersatt av en annan funktion?**   | Ja. Skapa licenser med hjälp av Windows PowerShell. |
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | <strong>Inaktuella:</strong> ISV-licenser som skapats med hjälp av SHA1-hashing-algoritmen. Den här algoritmen är beroende av certifikat som har skapats med verktyget MakeCert och detta verktyg är inaktuellt.<p><strong>Inaktuell:</strong> SHA1 för säkerhets- eller hashing-syfte används. SHA1 kommer att upphöra att fungera i början av 2021. Därför bör den inte längre användas.<p><strong>Borttaget</strong> : stöd för inkommande eller utgående begäran via TLS (Transport Layer Security) 1.0 och TLS 1.1. |
+| **Status**                         | Inaktuella: ISV-licenser som skapats med hjälp av SHA1-hashing-algoritmen. Den här algoritmen är beroende av certifikat som har skapats med verktyget MakeCert och detta verktyg är inaktuellt.<br><br>Inaktuell: SHA1 för säkerhets- eller hashing-syfte används. SHA1 kommer att upphöra att fungera i början av 2021. Därför bör den inte längre användas.<br><br>Borttaget : stöd för inkommande eller utgående begäran via TLS (Transport Layer Security) 1.0 och TLS 1.1. |
 
 ## <a name="platform-update-32"></a>Plattform update 32
 

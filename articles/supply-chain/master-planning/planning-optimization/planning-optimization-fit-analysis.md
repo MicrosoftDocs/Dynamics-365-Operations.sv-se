@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 871ac40ea73c8a72e20ff495b9b7e6fe5a12159e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 60f63a49222b3d0f13850b0f39764c6c848aba15
+ms.sourcegitcommit: 3c15a26e9708adc9a75082dc551f0a3a0a7d89f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812989"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049446"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Bristanalys för planeringsoptimering
 
@@ -89,13 +89,13 @@ I följande tabell visas de olika resultat som kan visas efter en bristanalys. N
 | Produktion | Planer med ordningsföljd: _\#_ | Denna funktion väntar. För närvarande ignoreras ordningsföljd när planeringsoptimeringen är aktiverad, oavsett den här inställningen. | Oktober 2021 - april 2022 |
 | Produktion | Släppta eller startade produktionsorder som inte är startade, där planerad start är tidigare än: _\#_ | Denna funktion väntar. För närvarande, om en tillverkningsorder är försenad, kommer huvudplaneringen att förutsätta att den slutförs i dag. Detta är relevant för släppta produktionsorder där ett leveransdatum har passerats men ännu inte slutförts. | Oktober 2021 - april 2022 |
 | Produktion | Planerade resurser med begränsad kapacitet: _\#_ | Denna funktion väntar. För närvarande kommer resurser som har planerats med begränsad kapacitet att ignoreras när planeringsoptimering är aktiverad. Tidsplaneringen görs baserat på standardproduktionstiden från produkten. | Obegränsad: 2021 juni, begränsad: oktober 2021 |
-| Produktion | Flöden använda i planering: _\#_ | Denna funktion väntar. För närvarande ignoreras flöden när planeringsoptimering aktiveras. Standardproduktionstiden för produkten används. | 2021 juni |
+| Produktion | Flöden använda i planering: _\#_ | Denna funktion väntar. För närvarande ignoreras flöden när planeringsoptimering aktiveras. Standardproduktionstiden för produkten används. | Juli 2021 |
 | Produktion | Reservation av försäljningsrad med nedbrytning: _\#_ | Reservation av försäljningsrad med nedbrytning stöds inte när planeringsoptimering aktiveras. | 2021 oktober |
 | Produktion | Planering med nedbrytning av produktionsorder: _\#_ | Tidsplanering som använder nedbrytning av produktionsorder stöds inte när planeringsoptimering aktiveras. Tillverkningsorder kan tidsplaneras individuellt. | 2021 oktober |
 | Anbudsförfrågningar | Huvudplaner med anbudsförfrågningar aktiverat: _\#_ | Denna funktion väntar. För närvarande anses inte anbudsförfrågningar vara efterfrågan när planeringsoptimering är aktiverad. De kommer att ignoreras oavsett den här inställningen. | Oktober 2021 - april 2022 |
 | Rekvisitioner | Huvudplaner med rekvisitioner aktiverat: _\#_ | Denna funktion stöds nu. Mer information finns i [inköpsrekvisition](purchase-requisitions.md) | Stöds |
-| Säkerhetsmarginaler | Disponeringsgrupper med säkerhetsmarginal: _\#_ | Denna funktion stöds nu delvis. Mer information finns i [Säkerhetsmarginaler](safety-margins.md) | Inleveransmarginal: Stöds. Ombeställningsmarginal och utleveransmarginal: april 2021 |
-| Säkerhetsmarginaler | Huvudplaner med säkerhetsmarginal: _\#_ | Denna funktion stöds nu delvis. Mer information finns i [Säkerhetsmarginaler](safety-margins.md) | Inleveransmarginal: Stöds. Ombeställningsmarginal och utleveransmarginal: april 2021 |
+| Säkerhetsmarginaler | Disponeringsgrupper med säkerhetsmarginal: _\#_ | Denna funktion stöds nu delvis. Mer information finns i [Säkerhetsmarginaler](safety-margins.md) | Inleveransmarginal: Stöds. Ombeställningsmarginal och utleveransmarginal: april - oktober 2021 |
+| Säkerhetsmarginaler | Huvudplaner med säkerhetsmarginal: _\#_ | Denna funktion stöds nu delvis. Mer information finns i [Säkerhetsmarginaler](safety-margins.md) | Inleveransmarginal: Stöds. Ombeställningsmarginal och utleveransmarginal: april - oktober 2021 |
 | Uppfyllelse av säkerhetslager | Poster för artikeldisponering med "uppfyllda minimum" som skiljer sig från "dagens datum + anskaffningstid": _\#_ | Planeringsoptimering använder alltid *dagens datum + anskaffningstid*. Den här ändringen görs för att förbereda för en förenklad planeringsinställning i framtiden och för att ge ett åtgärdbart resultat. Om anskaffningstiden inte finns med i säkerhetslagret försenas planerade order som skapas för aktuell lagerbehållning alltid på grund av produktionstiden. Det här beteendet kan orsaka betydande brus och oönskade planerade order. Det bästa tillvägagångssättet är att ändra inställningen så att *dagens datum + anskaffningstid* används. Uppdatera huvuddata för att undvika varningar. | Inte tillämpligt |
 | Försäljningsofferter | Huvudplaner med försäljningsofferter aktiverade: _\#_ | Denna funktion väntar. För närvarande betraktas inte offerter när planeringsoptimering aktiveras. De kommer att ignoreras oavsett den här inställningen. | Oktober 2021 - april 2022 |
 | Hållbarhetstid | Huvudplaner med hållbarhetstid aktiverat: _\#_ | Denna funktion väntar. För närvarande beaktas inte hållbarhetstid när planeringsoptimeringen är aktiverad, oavsett den här inställningen. | 2021 oktober |

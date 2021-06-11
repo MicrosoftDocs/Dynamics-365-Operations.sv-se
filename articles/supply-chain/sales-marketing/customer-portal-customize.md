@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6d4cc52a90b25406080032c7a98caa59f53ce188
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ea1fe6ba374c77784c88cf8202bff2eace217b6a
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909010"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102720"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Anpassa och använda kundportalen
 
@@ -44,7 +44,7 @@ Följande avsnitt innehåller information om grunderna i Power Apps-portaler och
 
 ## <a name="customize-the-order-creation-process"></a>Anpassa processen för att skapa order
 
-När en användare skickar en order med hjälp av kundportalen, synkroniseras ordern automatiskt till motsvarande Dynamics 365 Supply Chain Management-miljö. Eftersom användaren är en extern kund, döljs vissa nödvändiga uppgifter avsiktligt från honom. Denna information fylls i automatiskt när formuläret skickas.
+När en användare skickar en order med hjälp av kundportalen, synkroniseras ordern automatiskt till motsvarande Dynamics 365 Supply Chain Management-miljö. Eftersom användaren är en extern kund, döljs vissa nödvändiga uppgifter avsiktligt från dem. Denna information fylls i automatiskt när formuläret skickas.
 
 I det här avsnittet visas hur du bör ställa in kontakter för att undvika fel. Den förklarar fält som ställs in automatiskt och hur du kan ändra värdet på dessa fält om du måste.
 
@@ -82,7 +82,7 @@ Här följer de här standardstegen för att skicka en order från kundportalen.
 1. När du har lagt till alla artiklar väljer du **Nästa** på sidan **Artiklar**.
 1. På sidan **Orderinformation** finns en sammanfattning av ordern. Granska orderinnehåll och leveransinformation. Om allting ser korrekt ut väljer du **Skicka** för att skicka ordern.
 
-    ![Sidan orderinformation](media/customer-portal-order-submit.png "Sidan orderinformation")
+    ![Sidan slutförd orderinformation](media/customer-portal-order-submit.png "Sidan slutförd orderinformation")
 
 ### <a name="standard-data-setup"></a>Ställa in standarddata
 

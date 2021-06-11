@@ -2,7 +2,7 @@
 title: Kundhantering i butiker
 description: Det här avsnittet förklarar hur återförsäljare kan aktivera kundhanteringsfunktioner vid kassan (POS) i Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 03/05/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e43f8f5b91f729dc93eccb9e9e4ee21b5a5d1596
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: dd17593d84a8bf262712a84b11829f8ec6c49049
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019997"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097218"
 ---
 # <a name="customer-management-in-stores"></a>Kundhantering i butiker
 
@@ -35,7 +35,10 @@ Säljare kan också samla in sekundära e-postadresser och telefonnummer. De kan
 
 ## <a name="default-customer-properties"></a>Standardkundegenskaper
 
-Detaljhandlare kan använda sidan **Alla butiker** i Commerce-administration (**Retail och Commerce \> Kanaler \> Butiker**) för att associera en standardkund till varje butik. I Commerce kopieras sedan de egenskaper som har definierats för standardkunden till alla nya kundposter som skapas. Till exempel visar dialogrutan **Skapa kund** egenskaper som ärvs från standardkunden som är associerad med butiken. Dessa egenskaper omfattar kundtyp, kundgrupp, kvittoinställning, valuta och språk. Eventuella anknytningar (gruppering av kunder) ärvs också från standardkunden. Ekonomiska dimensioner ärvs dock från den kundgrupp som associeras med standardkunden, inte från standardkunden.
+Detaljhandlare kan använda sidan **Alla butiker** i Commerce-administration (**Retail och Commerce \> Kanaler \> Butiker**) för att associera en standardkund till varje butik. I Commerce kopieras sedan de egenskaper som har definierats för standardkunden till alla nya kundposter som skapas. Till exempel visar dialogrutan **Skapa kund** egenskaper som ärvs från standardkunden som är associerad med butiken. Dessa egenskaper omfattar **kundtyp**, **kundgrupp**, **kvittoalternativ**, **kvittomeddelande**, **valuta** och **språk**. Eventuella **anknytningar** (gruppering av kunder) ärvs också från standardkunden. **Ekonomiska dimensioner** ärvs dock från den kundgrupp som associeras med standardkunden, inte från standardkunden.
+
+> [!NOTE]
+> Värdet via e-postkvittot kopieras från standardkunden bara om **kvitto-e-post-ID** inte anges för de nya kunderna. Detta innebär att om kvitto-e-post-ID finns på standardkunden får alla kunder som skapats från e-handelsplatsen samma kvitto-e-post-ID eftersom det inte finns något användargränssnitt för att samla in kvitto-e-post-ID från kunden. Vi rekommenderar att du håller fältet **e-postkvitto** tomt för standardkunden i butiken och bara använder det om du har en affärsprocess som beror på att det finns en e-postadress med kvitto. 
 
 Säljare kan fånga in flera adresser för en kund. Kundens namn och telefonnummer ärvs från den kontaktinformation som är kopplad till varje adress. Snabbflikarna **Adresser** för en kundpost innehåller ett fält för **Syfte** som säljarna kan redigera. Om kundtypen är **Person** är standardvärdet **Start**. Om kundtypen är **Organisation** är standardvärdet **Företag**. Andra värden som det här fältet stöder **Start**, **Kontor** och **Brevlåda**. Värdet i fältet **Land** för en adress ärvs från den primära adressen som anges på sidan **Driftenhet** i Commerce-administration i **Organisationsadministration \> Organisationer \> Driftenheter**.
 

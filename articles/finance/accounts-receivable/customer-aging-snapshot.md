@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7761366c0372c105ecbd4281c7bafa44bf6cf7b5
-ms.sourcegitcommit: 905a8c7a0c1bc06ada2acfba913dfe5f7b44ea16
+ms.openlocfilehash: b88d3fe97d14d3e2f766367de501148063582000
+ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "6039937"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6123372"
 ---
 # <a name="customer-aging-snapshots"></a>Ögonblicksbild av åldersfördelningen för kunder
 
@@ -28,6 +28,8 @@ ms.locfileid: "6039937"
 Det här avsnittet innehåller information om ögonblicksbilder av kunders åldersfördelning. En ögonblicksbild av åldersfördelning beräknar åldersfördelningssaldon för en grupp av kunder vid en viss tidpunkt. Du kan skapa ögonblicksbild av åldersfördelningposter för antingen alla kunder eller för kunderna i en kundpool.
 
 Information från ögonblicksbilder av åldersfördelning visas på listsidan **Åldersfördelade saldon** och på sidan **Inkasso**. Du måste skapa en ögonblicksbild av åldersfördelning innan du kan använda listsidan **Åldersfördelade saldon**. Listsidan visar bara kunder som en ögonblicksbild av åldersfördelning har skapats för.
+
+I arbetsytan **Kundkredit och inkasso** visas också kunders åldersfördelning. Mer information finns i innehållet [i Kredit- och inkassohantering Power BI](credit-collections-power-bi.md).
 
 > [!NOTE]
 > Du minskar den tid som krävs för att skapa en ögonblicksbild av åldersfördelningen genom att aktivera funktionen **Förbättrad prestanda för kunders åldersfördelning** i arbetsytan **Funktionshantering**. Du ska däremot inte använda kundpooler när den här funktionen är aktiverad. Om en kundpool väljs kommer funktionen inte att fungera, men du kan fortfarande skapa en ögonblicksbild av åldersfördelning.
@@ -62,4 +64,3 @@ Vi rekommenderar att du planerar den här processen så att den körs i en batch
 > [!NOTE]
 > För att bidra till förbättrad batchprestanda när ögonblicksbilder av åldersfördelning skapas anger du ett nummer i fältet **Maximalt antal batchuppgifter** under snabbfliken **Inkassostandard** under fliken **Inkasso** på sidan **kundreskontraparametrar**. I fältet **Åldersfördelat kundsaldo** rekommenderar vi att du börjar med standardvärdet på **100** och sedan justerar värdet för att optimera bearbetningen för din situation.
 
-I arbetsytan **Kundkredit och inkasso** visas också kunders åldersfördelning. Mer information finns i innehållet [i Kredit- och inkassohantering Power BI](credit-collections-power-bi.md).

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a4f882f1abc9f758aca77b137b28aa973f925ea9
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019504"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103638"
 ---
 # <a name="firm-planned-orders"></a>Bekräfta planerade order
 
@@ -77,6 +77,7 @@ Om du vill bekräfta planerade order manuellt hittar och väljer du de planerade
 
     - **Gruppera efter leverantör** – Ange detta alternativ som *Ja* om du vill gruppera planerade inköpsorder och skapa en inköpsorder per leverantör i sambandmed bekräftelse. Du kan också skapa en inköpsorder som har en rad för respektive planerad order.
     - **Gruppera efter köpargrupp** – Ange detta alternativ som *Ja* för att gruppera ihop planerade inköpsorder och skapa en enda inköpsorder där du slår samman leverantören och köpargruppen. Om du vill använda det här alternativet måste du också ange alternativet **Gruppera efter leverantör** som *Ja*.
+    - **Gruppera efter inköpsavtal** – Ange det här alternativet till *Ja* om du vill gruppera planerade inköpsorder som har samma leverantör som befintliga inköpsavtal och skapa en inköpsorder per inköpsavtal. Det här alternativet aktiveras automatiskt när **Gruppera efter leverantör** aktiveras. Om du vill använda **Gruppera efter inköpsavtal**, **Sök efter inköpsavtal** måste anges till *Ja* på sidan **Huvudplaneringsparametrar**.
     - **Gruppera efter period** (i avsnittet **Inköpsorder**) – Välj den period som planerade inköpsorder ska grupperas efter. Om du vill använda det här alternativet måste du också välja alternativet **Gruppera efter leverantör**.
     - **Gruppera efter period** (i avsnittet **Överföringar**) – Välj den period som planerade överföringsorder ska grupperas efter. Orderna grupperas efter värdena i **Från lagerställe** och **Till lagerställe**.
 

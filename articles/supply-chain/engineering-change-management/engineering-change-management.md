@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
-ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
+ms.openlocfilehash: d31c73964877aeb1556c93b03d276698e8d84d30
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5954655"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115009"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Hantera ändringar av konstruktionsprodukter
 
@@ -92,9 +92,13 @@ Den här listan är bara avsett för information. Därför kan du lägga till s�
 
 På snabbfliken **källa** kan du spåra startpunkten för ändringsbegäran. Det är användbart om du t.ex. vill se om ändringsbegäran har skapats från en försäljningsorder, vem som skapade den och vilket företag den skapades i.
 
-### <a name="evaluate-the-business-impact-of-a-change-request"></a>Utvärdera en ändringsbegärans affärspåverkan
+### <a name="evaluate-the-business-impact-of-a-change-request-and-send-notifications"></a>Utvärdera en ändringsbegärans affärspåverkan och skicka meddelanden
 
-När du granskar en begäran om ändring kan du söka efter beroenden. På det här sättet kan du bedöma effekten av den begärda ändringen på öppna transaktioner, till exempel försäljningsorder, tillverkningsorder och lagerbehållning.
+När du granskar en begäran om ändring kan du söka efter beroenden. På det här sättet kan du bedöma effekten av den begärda ändringen på öppna transaktioner, till exempel försäljningsorder, tillverkningsorder och lagerbehållning. När du granskar ändringsbegäranden kan du skicka meddelanden till dem som ansvarar för att uppfylla olika typer av relaterade order.
+
+#### <a name="review-affected-transactions-block-selected-transactions-and-send-notifications"></a>Granska berörda transaktioner, blockera valda transaktioner och skicka meddelanden
+
+Granska berörda transaktioner, blockera valda transaktioner och skicka relaterade meddelanden, följ dessa steg.
 
 1. Gå till **Konstruktionsändringshantering \> Vanlig \> Konstruktionsändringshantering \> Begäran om konstruktionsändring**.
 1. Du kan antingen öppna en befintlig ändringsbegäran eller välja **ny** i åtgärdsfönstret för att skapa en ny ändringsbegäran.
@@ -103,7 +107,30 @@ När du granskar en begäran om ändring kan du söka efter beroenden. På det h
     - **Sök** – Skannar alla öppna transaktioner och öppnar sedan dialogrutan **Affärspåverkan till öppna transaktioner** som listar alla transaktioner som kommer att påverkas av ändringen.
     - **Visa föregående sökning** – Öppna dialogrutan **Affärspåverkan till öppna transaktioner** som visar resultatet av den föregående sökningen. (En ny sökning utförs inte.)
 
-1. Om problemet som kräver en ändring har visat sig vara kritiskt kan du spärra de öppna transaktionerna eller meddela den ansvariga användaren med hjälp av knapparna i verktygsfältet i dialogrutan **Affärspåverkan till öppna transaktioner**.
+1. Dialogrutan **Affärspåverkan till öppna transaktioner** innehåller en uppsättning flikar, som alla visar en lista över berörda transaktioner av en viss typ (**försäljningsorder**, **inköpsorder**, **tillverkningsorder**, **lager** och så vidare). På varje flik visas även ett nummer som anger antalet berörda transaktioner av den typen. Välj en flik för att visa relevant lista.
+1. Arbeta med en transaktion i listan genom att markera den och sedan välja en av följande knappar i verktygsfältet:
+
+    - **Visa transaktion** – Öppna den valda transaktionsposten.
+    - **Spärra order** – Den här knappen är endast tillgänglig på fliken **Försäljningsorder**. Markera den om du vill spärra den valda försäljningsordern.
+    - **Spärra rad** – Den här knappen är endast tillgänglig på fliken **Inköpsorder**. Markera den om du vill spärra den valda inköpsorderraden.
+    - **Meddela ansvarig** – Den här knappen är endast tillgänglig på fliken **Försäljningsorder**. Välj den om du vill skicka ett ändringsmeddelande till användaren som anges som ansvarig för den valda försäljningsordern.
+    - **Meddela beställare** – Den här knappen är endast tillgänglig på fliken **Inköpsorder**. Välj den om du vill skicka ett ändringsmeddelande till användaren som anges som beställare för den valda inköpsordern.
+    - **Meddela produktion** – Den här knappen är endast tillgänglig på fliken **Produktionsorder**. Till skillnad från försäljningsorder och inköpsorder har produktionsorder inte en enda användare som ställs som ansvarig för dem från fram och tillbaka. Istället tar olika arbetsledare eller planerare vanligtvis ansvar för en viss resursplats eller för en viss del av produktionen (till exempel för specifika resurser eller resursgrupper). När du väljer den här knappen får därför alla användare som ansvarar för alla resurser som är relaterade till den valda tillverkningsordern ett ändringsmeddelande.
+    - **Meddela förberedare** – Den här knappen är endast tillgänglig på fliken **inköpsrekvisition**. Välj den om du vill skicka ett ändringsmeddelande till användaren som anges som förberedare för den valda inköpsrekvisitionen.
+    - **Meddela försäljningsansvarig** – Den här knappen är endast tillgänglig på fliken **Offerter**. Välj den om du vill skicka ett ändringsmeddelande till användaren som anges som ansvarig för den valda offerten.
+    - **Kassation** – Den här knappen är endast tillgänglig på fliken **Lager**. Välj den om du vill kassera det valda lagret.
+    - **Visa historik** – Öppna en historik över åtgärder som har genomförts på den valda transaktionen genom att använda dialogrutan **Affärspåverkan till öppna transaktioner**. (Historiken visar till exempel om meddelanden har skickats eller om transaktioner har spärrats.) 
+    - **Visa alla transaktioner** – Öppna den fullständiga listan över alla transaktioner, inte bara de öppna transaktionerna.
+
+#### <a name="review-and-process-change-notifications-for-transactions"></a>Granska och bearbeta meddelanden för transaktioner
+
+Du kan läsa och bearbeta de ändringsmeddelanden som du får på följande sätt:
+
+- Vid tillverkningsorder visas även ändringsmeddelanden för de transaktioner som du är ansvarig för i Åtgärdscentret. Knappen **Visa meddelanden** (klocksymbol) till höger om navigeringsfältet anger när ett åtgärdscenter meddelande är tillgängligt för den aktuella användaren. Välj knappen **Visa meddelanden** om du vill öppna Åtgärdscentret och granska meddelandena.
+- Om du vill visa alla tillverkningsorder som ett teknikmeddelande har skickats för går du till **Tillverkningsorder \> Tillverkningsorder \> Alla tillverkningsorder**. På fliken **Produktionsorder**, i gruppen **Begäran om konstruktionsändring** i åtgärdsfönstret, väljer du **Teknikmeddelanden** för att öppna sidan **Teknikmeddelanden**.
+- För tillverkningsorder kan du välja att endast granska de ändringsmeddelanden som gäller för de produktionsresurser som du hanterar. I arbetsytan **Produktionsgolvsledning** i åtgärdsfönstret välj **Konfigurera min arbetsyta** för att filtrera sidan så att den bara visar information om de produktionsenheter, grupper och/eller resurser som du hanterar. I avsnittet **Sammanfattning** visar en panel som kallas **Produktionsorder med ändrade produkter** visar ett antal meddelanden som matchar dina filterinställningar. Markera den här panelen om du vill öppna sidan **Tekniska meddelanden**, där hela listan med transaktioner som uppfyller kriterierna i filtret visas.
+
+När du granskar tillverkningsordermeddelanden på sidan **Tekniska meddelanden**, kan du följa länkar till relaterade ändringsorder eller tillverkningsorder genom att välja kolumnvärden eller använda relaterade kommandon i åtgärdsfönstret. När du är klar med en utvärdering av en ändring, och efter att du har annullerat eller ändrat tillverkningsorder efter behov, kan du markera ett meddelande som löst. Välj aviseringen och välj sedan i åtgärdsfönstret **Lös**. Meddelandet tas bort från alla användares vyer.
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Skapa en ändringsorder från en ändringsbegäran
 

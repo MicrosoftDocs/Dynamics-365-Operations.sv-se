@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 36eb939d2539653fdcde78a6044cf1a87e8e3280
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cf9d3fd905a90a2937bfac97c8e44ea13be4f42e
+ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811397"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6123400"
 ---
 # <a name="cash-position-preview"></a>Kassaposition (förhandsversion)
 
@@ -31,7 +31,7 @@ Kassaposition är projektionen av kassaflödet som prognosticeras på kort sikt.
 
 När systemet förutsäger kundbetalningar använder det betalningsförutsägelser från funktionen för kundbetalningsförutsägelse. Utan betalningsförutsägelser används den genomsnittliga tid som krävs för att konvertera en kundfaktura till en betalning för varje kund för att beräkna ett betalningsdatum. För öppna kundorder beräknar systemet fakturadatumet genom att använda det genomsnittliga antalet dagar för orderrader per kund som ska faktureras. Sedan används fakturadatumet som indata för funktionen för betalningsförutsägelse. Funktionen för kundbetalningsförutsägelse beräknar ett betalningsdatum för varje orderrad. 
 
-<*Behöver text från Jarek eller Dave om hur betalningsförutsägelser konverteras till ett datum*> Betalningsdatumet för utestående fakturor uppskattas [*beräknas*] från betalningsförutsägelserna genom att välja ett datum som motsvarar 50 procent av den kumulativa fördelningsfunktionen som erhålls från den förutsagda gruppens (bucket) sannolikhet.
+Betalningsdatumet för utestående fakturor uppskattas [beräknas] från betalningsförutsägelserna genom att välja ett datum som motsvarar 50 procent av den kumulativa fördelningsfunktionen som erhålls från den förutsagda gruppens (bucket) sannolikhet.
 
 Ett liknande tillvägagångssätt används för att förutsäga betalningar till leverantörer. För varje leverantör beräknar systemet den genomsnittliga tid som krävs för att konvertera en leverantörsfaktura till en betalning. Det antalet dagar används sedan för att beräkna betalningsdatumet. För öppna leverantörsorder beräknar systemet fakturadatumet genom att beakta det genomsnittliga antalet dagar som krävs för att konvertera orderrader till en faktura för varje leverantör. För varje leverantör beräknar systemet sedan betalningsdatumet genom att använda den genomsnittliga tid som krävs för att konvertera en leverantörsfaktura till en betalning.
 
