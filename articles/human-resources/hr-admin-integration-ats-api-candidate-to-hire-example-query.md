@@ -7,38 +7,37 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a8c3655e7ff609eedbf92fa90a36b65002f40306
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: efec8c0a8eb75f818acd4ed02632f1db96719d81
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893482"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6054726"
 ---
-# <a name="example-query-for-candidate-to-hire"></a><span data-ttu-id="4447c-103">Exempelfrågeställning för kandidat att anställa</span><span class="sxs-lookup"><span data-stu-id="4447c-103">Example query for Candidate to hire</span></span>
+# <a name="example-query-for-candidate-to-hire"></a><span data-ttu-id="0494a-103">Exempelfrågeställning för kandidat att anställa</span><span class="sxs-lookup"><span data-stu-id="0494a-103">Example query for Candidate to hire</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="4447c-104">Detta ämne utgör en exempelfrågeställning för entiteten för Kandidat att anställa i Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="4447c-104">This topic provides an example query for the Candidate to hire entity in Dynamics 365 Human Resources.</span></span>
+<span data-ttu-id="0494a-104">Detta ämne utgör en exempelfrågeställning för entiteten för Kandidat att anställa i Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="0494a-104">This topic provides an example query for the Candidate to hire entity in Dynamics 365 Human Resources.</span></span>
 
-<span data-ttu-id="4447c-105">Detta ämne innehåller ett exempel som demonstrerar hur du kan använda *djupgående infogningar* för att skapa alla detaljer för en ny kandidatpost i en enskild API-åtgärd.</span><span class="sxs-lookup"><span data-stu-id="4447c-105">This topic provides an example demonstrating how you can use *deep inserts* to create all the detail of a new candidate record in a single API operation.</span></span> <span data-ttu-id="4447c-106">Mer information om djupgående infogningar finns i [Skapa relaterade entitetsposter i en och samma åtgärd](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).</span><span class="sxs-lookup"><span data-stu-id="4447c-106">For more information about deep inserts, see [Create related entity records in one operation](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).</span></span>
+<span data-ttu-id="0494a-105">Detta ämne innehåller ett exempel som demonstrerar hur du kan använda *djupgående infogningar* för att skapa alla detaljer för en ny kandidatpost i en enskild API-åtgärd.</span><span class="sxs-lookup"><span data-stu-id="0494a-105">This topic provides an example demonstrating how you can use *deep inserts* to create all the detail of a new candidate record in a single API operation.</span></span> <span data-ttu-id="0494a-106">Mer information om djupgående infogningar finns i [Skapa relaterade entitetsposter i en och samma åtgärd](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).</span><span class="sxs-lookup"><span data-stu-id="0494a-106">For more information about deep inserts, see [Create related entity records in one operation](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).</span></span>
 
-<span data-ttu-id="4447c-107">Entiteten **mshr_hcmcandidatetohireentity** är unik på grund av sin relation till entiteten **mshr_dirpersonentity**.</span><span class="sxs-lookup"><span data-stu-id="4447c-107">The **mshr_hcmcandidatetohireentity** entity is unique because of its relationship to the **mshr_dirpersonentity** entity.</span></span> <span data-ttu-id="4447c-108">Många av egenskaperna i **mshr_hcmcandidatetohireentity** (till exempel **mshr_firstname**, **mshr_lastname** och **mshr_birthdate**) hämtas från posten **mshr_dirpersonentity**.</span><span class="sxs-lookup"><span data-stu-id="4447c-108">Many of the properties on the **mshr_hcmcandidatetohireentity** (for example, **mshr_firstname**, **mshr_lastname**, and **mshr_birthdate**) are derived from the **mshr_dirpersonentity** record.</span></span> <span data-ttu-id="4447c-109">Om du bokför en ny kandidatpost i **mshr_hcmcandidatetohireentity** utan att använda djupgående infogningar kan du definiera värden för dessa egenskaper direkt i posten **mshr_hcmcandidatetohireentity**.</span><span class="sxs-lookup"><span data-stu-id="4447c-109">If you post a new candidate record to **mshr_hcmcandidatetohireentity** without using deep inserts, you can define values for these properties directly on the **mshr_hcmcandidatetohireentity** record.</span></span> <span data-ttu-id="4447c-110">Den associerade posten **mshr_dirpersonentity** skapas automatiskt med de definierade värdena för egenskaperna.</span><span class="sxs-lookup"><span data-stu-id="4447c-110">The associated **mshr_dirpersonentity** record is created implicitly with the defined values for the properties.</span></span> <span data-ttu-id="4447c-111">Du kan sedan skapa alla andra relaterade entitetsposter (till exempel färdigheter eller utbildning) som separata API-anrop.</span><span class="sxs-lookup"><span data-stu-id="4447c-111">You can then create any other related entity records (such as skills or education) as separate API calls.</span></span>
+<span data-ttu-id="0494a-107">Entiteten **mshr_hcmcandidatetohireentity** är unik på grund av sin relation till entiteten **mshr_dirpersonentity**.</span><span class="sxs-lookup"><span data-stu-id="0494a-107">The **mshr_hcmcandidatetohireentity** entity is unique because of its relationship to the **mshr_dirpersonentity** entity.</span></span> <span data-ttu-id="0494a-108">Många av egenskaperna i **mshr_hcmcandidatetohireentity** (till exempel **mshr_firstname**, **mshr_lastname** och **mshr_birthdate**) hämtas från posten **mshr_dirpersonentity**.</span><span class="sxs-lookup"><span data-stu-id="0494a-108">Many of the properties on the **mshr_hcmcandidatetohireentity** (for example, **mshr_firstname**, **mshr_lastname**, and **mshr_birthdate**) are derived from the **mshr_dirpersonentity** record.</span></span> <span data-ttu-id="0494a-109">Om du bokför en ny kandidatpost i **mshr_hcmcandidatetohireentity** utan att använda djupgående infogningar kan du definiera värden för dessa egenskaper direkt i posten **mshr_hcmcandidatetohireentity**.</span><span class="sxs-lookup"><span data-stu-id="0494a-109">If you post a new candidate record to **mshr_hcmcandidatetohireentity** without using deep inserts, you can define values for these properties directly on the **mshr_hcmcandidatetohireentity** record.</span></span> <span data-ttu-id="0494a-110">Den associerade posten **mshr_dirpersonentity** skapas automatiskt med de definierade värdena för egenskaperna.</span><span class="sxs-lookup"><span data-stu-id="0494a-110">The associated **mshr_dirpersonentity** record is created implicitly with the defined values for the properties.</span></span> <span data-ttu-id="0494a-111">Du kan sedan skapa alla andra relaterade entitetsposter (till exempel färdigheter eller utbildning) som separata API-anrop.</span><span class="sxs-lookup"><span data-stu-id="0494a-111">You can then create any other related entity records (such as skills or education) as separate API calls.</span></span>
 
-<span data-ttu-id="4447c-112">Om du vill använda djupinfogningar för att skapa alla relaterade entiteter i en och samma åtgärd måste egenskaperna som är specifika för entiteten **mshr_dirpersonentity** definieras på åtgärdens kapslade nivå.</span><span class="sxs-lookup"><span data-stu-id="4447c-112">If, however, you want to use deep inserts to create all related entities in one operation, the properties specific to the **mshr_dirpersonentity** entity must be defined on that nested level of the operation.</span></span>
+<span data-ttu-id="0494a-112">Om du vill använda djupinfogningar för att skapa alla relaterade entiteter i en och samma åtgärd måste egenskaperna som är specifika för entiteten **mshr_dirpersonentity** definieras på åtgärdens kapslade nivå.</span><span class="sxs-lookup"><span data-stu-id="0494a-112">If, however, you want to use deep inserts to create all related entities in one operation, the properties specific to the **mshr_dirpersonentity** entity must be defined on that nested level of the operation.</span></span>
 
-<span data-ttu-id="4447c-113">Detta exempel visar hur du kan skapa en kandidatpost, associerad personpost och personens färdigheter och utbildning på tre kapslade nivåer med hjälp av djupgående infogning i en enskild API-åtgärd.</span><span class="sxs-lookup"><span data-stu-id="4447c-113">This example shows how you can create a candidate record, the associated person record, and the person's skills and education in three nested levels using deep inserts in a single API operation.</span></span>
+<span data-ttu-id="0494a-113">Detta exempel visar hur du kan skapa en kandidatpost, associerad personpost och personens färdigheter och utbildning på tre kapslade nivåer med hjälp av djupgående infogning i en enskild API-åtgärd.</span><span class="sxs-lookup"><span data-stu-id="0494a-113">This example shows how you can create a candidate record, the associated person record, and the person's skills and education in three nested levels using deep inserts in a single API operation.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="4447c-114">Exemplet inkluderar inte alla egenskaper för respektive API-entitet.</span><span class="sxs-lookup"><span data-stu-id="4447c-114">The example does not include all properties of each of the API entities.</span></span> <span data-ttu-id="4447c-115">Den är förenklad i demonstrationssyfte.</span><span class="sxs-lookup"><span data-stu-id="4447c-115">It is simplified for demonstration purposes.</span></span>
+> <span data-ttu-id="0494a-114">Exemplet inkluderar inte alla egenskaper för respektive API-entitet.</span><span class="sxs-lookup"><span data-stu-id="0494a-114">The example does not include all properties of each of the API entities.</span></span> <span data-ttu-id="0494a-115">Den är förenklad i demonstrationssyfte.</span><span class="sxs-lookup"><span data-stu-id="0494a-115">It is simplified for demonstration purposes.</span></span>
 
-<span data-ttu-id="4447c-116">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="4447c-116">**Request**</span></span>
+<span data-ttu-id="0494a-116">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="0494a-116">**Request**</span></span>
 
 ```http
 
@@ -100,7 +99,7 @@ Accept: application/json
 }
 ```
 
-<span data-ttu-id="4447c-117">**Svar**</span><span class="sxs-lookup"><span data-stu-id="4447c-117">**Response**</span></span>
+<span data-ttu-id="0494a-117">**Svar**</span><span class="sxs-lookup"><span data-stu-id="0494a-117">**Response**</span></span>
 
 ```http
 
@@ -110,9 +109,9 @@ OData-EntityId: [Organization URI]/api/data/v9.1/mshr_hcmcandidatetohireentities
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="4447c-118">Se även</span><span class="sxs-lookup"><span data-stu-id="4447c-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0494a-118">Se även</span><span class="sxs-lookup"><span data-stu-id="0494a-118">See also</span></span>
 
-[<span data-ttu-id="4447c-119">Introduktion av API för integrering av system för sökandespårning</span><span class="sxs-lookup"><span data-stu-id="4447c-119">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
+[<span data-ttu-id="0494a-119">Introduktion av API för integrering av system för sökandespårning</span><span class="sxs-lookup"><span data-stu-id="0494a-119">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

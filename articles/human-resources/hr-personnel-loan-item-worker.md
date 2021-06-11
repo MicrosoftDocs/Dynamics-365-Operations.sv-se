@@ -8,41 +8,40 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmPersonLoan, HcmPersonLookup, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e32fdf90e75d3201678fb7def8efd71706c6ded9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 0b55d1031c72618fc1c5d2fd4c887950898deddb
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803475"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6056526"
 ---
-# <a name="loan-item-to-a-worker"></a><span data-ttu-id="d196f-103">Låneartikel till en arbetare</span><span class="sxs-lookup"><span data-stu-id="d196f-103">Loan item to a worker</span></span>
+# <a name="loan-item-to-a-worker"></a><span data-ttu-id="1e405-103">Låneartikel till en arbetare</span><span class="sxs-lookup"><span data-stu-id="1e405-103">Loan item to a worker</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-<span data-ttu-id="d196f-104">I den här proceduren visas hur du lånar ut en artikel till en arbetare och registrerar den arbetare som returnerar en artikel.</span><span class="sxs-lookup"><span data-stu-id="d196f-104">This procedure shows how to loan an item to a worker and record the worker returning an item.</span></span> <span data-ttu-id="d196f-105">Arbetare kan också begära låneartiklar via sina självbetjäningssidor för medarbetare.</span><span class="sxs-lookup"><span data-stu-id="d196f-105">Workers can also request loan items through their Employee self-service pages.</span></span> <span data-ttu-id="d196f-106">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="d196f-106">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="1e405-104">I den här proceduren visas hur du lånar ut en artikel till en arbetare och registrerar den arbetare som returnerar en artikel.</span><span class="sxs-lookup"><span data-stu-id="1e405-104">This procedure shows how to loan an item to a worker and record the worker returning an item.</span></span> <span data-ttu-id="1e405-105">Arbetare kan också begära låneartiklar via sina självbetjäningssidor för medarbetare.</span><span class="sxs-lookup"><span data-stu-id="1e405-105">Workers can also request loan items through their Employee self-service pages.</span></span> <span data-ttu-id="1e405-106">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="1e405-106">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="loan-item-to-a-worker"></a><span data-ttu-id="d196f-107">Låneartikel till en arbetare</span><span class="sxs-lookup"><span data-stu-id="d196f-107">Loan item to a worker</span></span>
-1. <span data-ttu-id="d196f-108">Gå till Personal > Arbetare > Låneartiklar > Lånad utrustning.</span><span class="sxs-lookup"><span data-stu-id="d196f-108">Go to Human resources > Workers > Loan items > Loaned equipment.</span></span>
-2. <span data-ttu-id="d196f-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="d196f-109">Click New.</span></span>
-3. <span data-ttu-id="d196f-110">Ange eller välj ett värde i fältet Person.</span><span class="sxs-lookup"><span data-stu-id="d196f-110">In the Person field, enter or select a value.</span></span>
-4. <span data-ttu-id="d196f-111">Ange eller välj ett värde i fältet Låneartikel.</span><span class="sxs-lookup"><span data-stu-id="d196f-111">In the Loan item field, enter or select a value.</span></span>
-5. <span data-ttu-id="d196f-112">Ange det datum då medarbetaren måste returnera låneartikeln i fältet Planerad retur.</span><span class="sxs-lookup"><span data-stu-id="d196f-112">In the Planned return field, enter the date the employee needs to return the loan item.</span></span>
-6. <span data-ttu-id="d196f-113">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="d196f-113">Click Save.</span></span>
-7. <span data-ttu-id="d196f-114">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="d196f-114">Close the page.</span></span>
+## <a name="loan-item-to-a-worker"></a><span data-ttu-id="1e405-107">Låneartikel till en arbetare</span><span class="sxs-lookup"><span data-stu-id="1e405-107">Loan item to a worker</span></span>
+1. <span data-ttu-id="1e405-108">Gå till Personal > Arbetare > Låneartiklar > Lånad utrustning.</span><span class="sxs-lookup"><span data-stu-id="1e405-108">Go to Human resources > Workers > Loan items > Loaned equipment.</span></span>
+2. <span data-ttu-id="1e405-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="1e405-109">Click New.</span></span>
+3. <span data-ttu-id="1e405-110">Ange eller välj ett värde i fältet Person.</span><span class="sxs-lookup"><span data-stu-id="1e405-110">In the Person field, enter or select a value.</span></span>
+4. <span data-ttu-id="1e405-111">Ange eller välj ett värde i fältet Låneartikel.</span><span class="sxs-lookup"><span data-stu-id="1e405-111">In the Loan item field, enter or select a value.</span></span>
+5. <span data-ttu-id="1e405-112">Ange det datum då medarbetaren måste returnera låneartikeln i fältet Planerad retur.</span><span class="sxs-lookup"><span data-stu-id="1e405-112">In the Planned return field, enter the date the employee needs to return the loan item.</span></span>
+6. <span data-ttu-id="1e405-113">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="1e405-113">Click Save.</span></span>
+7. <span data-ttu-id="1e405-114">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="1e405-114">Close the page.</span></span>
 
-## <a name="return-a-loan-item"></a><span data-ttu-id="d196f-115">Returnera en låneartikel</span><span class="sxs-lookup"><span data-stu-id="d196f-115">Return a loan item</span></span>
-1. <span data-ttu-id="d196f-116">Gå till Personal > Arbetare > Låneartiklar > Lånad utrustning.</span><span class="sxs-lookup"><span data-stu-id="d196f-116">Go to Human resources > Workers > Loan items > Loaned equipment.</span></span>
-2. <span data-ttu-id="d196f-117">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="d196f-117">Click Edit.</span></span>
-3. <span data-ttu-id="d196f-118">Ange ett datum i fältet Faktisk retur.</span><span class="sxs-lookup"><span data-stu-id="d196f-118">In the Actual return field, enter a date.</span></span>
+## <a name="return-a-loan-item"></a><span data-ttu-id="1e405-115">Returnera en låneartikel</span><span class="sxs-lookup"><span data-stu-id="1e405-115">Return a loan item</span></span>
+1. <span data-ttu-id="1e405-116">Gå till Personal > Arbetare > Låneartiklar > Lånad utrustning.</span><span class="sxs-lookup"><span data-stu-id="1e405-116">Go to Human resources > Workers > Loan items > Loaned equipment.</span></span>
+2. <span data-ttu-id="1e405-117">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="1e405-117">Click Edit.</span></span>
+3. <span data-ttu-id="1e405-118">Ange ett datum i fältet Faktisk retur.</span><span class="sxs-lookup"><span data-stu-id="1e405-118">In the Actual return field, enter a date.</span></span>
 
 
 
