@@ -94,7 +94,7 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Commerce
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.20 (juli 2021)
+                    - name: Commerce 10.0.20 (augusti 2021)
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (juni 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
@@ -240,17 +240,17 @@
               items:
                 - name: Arkitekturöversikt för Dynamics 365 Commerce
                   href: commerce-architecture.md
-                - name: Autentiseringsflöden för Dynamics 365 Commerce
+                - name: Dynamics 365 Commerce autentiseringsflöden
                   href: arch-auth-flow.md
-                - name: Dynamics 365 Commerce krav för komponentversionering
+                - name: Dynamics 365 Commerce krav för komponentversionshantering
                   href: arch-component-versioning.md
-                - name: Arkitektur för Commerce Scale Unit
+                - name: Fjärradministrerad handelsmotorarkitektur
                   href: dev-itpro/retail-server-architecture.md
-                - name: Välj en butikstopologi
+                - name: Välja en butikstopologi
                   href: dev-itpro/retail-in-store-topology.md
                 - name: Commerce Data Exchange
                   items:
-                    - name: Commerce Data Exchange – bästa praxis
+                    - name: Commerce Data Exchange metodtips
                       href: dev-itpro/CDX-Best-Practices.md
                     - name: Commerce Data Exchange och kommunikation för butikskanaler
                       href: dev-itpro/define-retail-channel-communications-cdx.md
@@ -258,7 +258,7 @@
                       href: dev-itpro/CDX-Troubleshooting.md
                 - name: Arkitektur för Modern POS
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: Publiceringsarkitektur för onlinebutik
+                - name: Publicera en kanal för onlinebutik
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Innehåll för Retail Channel Performance Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
@@ -546,6 +546,8 @@
                       href: paypal.md
                     - name: Stöd för Wallet-betalning
                       href: wallets.md
+                    - name: Utökade betalningar i webbutikskassa
+                      href: dev-itpro/enhanced-sca.md
                     - name: Vanliga frågor om betalningar
                       href: dev-itpro/payments-retail.md
                 - name: E-post och meddelanden
@@ -772,11 +774,15 @@
                   href: tasks/use-continuity-program.md
                 - name: Aktivera incheckningsmeddelanden för kunder i kassan
                   href: enable-customer-check-in.md
-            - name: Returer
+            - name: Returer och återbetalningar
               items:
+                - name: Skapa returer i kassan
+                  href: POS-returns.md
+                - name: Returnera serienummerkontrollerade produkter i kassan
+                  href: POS-serial-returns.md
                 - name: Länkade återbetalningar
                   href: dev-itpro/linked-refunds.md
-                - name: Sälja och returnera produkter som inte ingår i en butiks sortiment
+                - name: Sälja och returnera produkter som inte ingår i ett butikssortiment
                   href: sell-return-outside-assortments.md
                 - name: Konfigurera och behandla ett utbyte för en returorder
                   href: orderexchanges.md
@@ -1230,14 +1236,18 @@
                   href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
                 - name: Skapa ER-konfigurationer i Regulatory configuration service och överföra dem till den globala databasen
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service – Lifecycle Services lagringsutfasning
+                  href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
             - name: Österrike
               items:
-                - name: Exempel på skatteregistreringstjänsten för Österrike
+                - name: Exempel på skatteregistreringstjänst för Österrike
                   href: localizations/emea-aut-fi-sample.md
             - name: Brasilien
               items:
-                - name: Commerce lokalisering för Brasilien
+                - name: Commerce-lokalisering för Brasilien
                   href: localizations/latam-bra-commerce-localization.md
+                - name: Konfigurera och distribuera Commerce-lokalisering för Brasilien
+                  href: localizations/latam-bra-deployment.md
             - name: Östeuropa
               items:
                 - name: Gemensamt
@@ -1962,8 +1972,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
                     - name: Generera utskrivbara formulär för fritextfakturor (FTI)
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
-                - name: Spåra körning av ER-format för att felsöka prestandaproblem
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                - name: Utforma effektiva ER-lösningar
+                  items:
+                    - name: Spåra körning av ER-format för att felsöka prestandaproblem
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                    - name: Felsöka prestandaproblem i ER-konfigurationer
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
                 - name: Hantering av affärsdokument
                   items:
                     - name: Hantering av affärsdokument – översikt
@@ -2396,7 +2410,7 @@
               items:
                 - name: Kassaskärmslayouter
                   href: pos-screen-layouts.md
-                - name: Store Commerce-appen i Microsoft Dynamics 365 Commerce
+                - name: Appen Store Commerce i Microsoft Dynamics 365 Commerce
                   href: dev-itpro/store-commerce.md
                 - name: Öppna URL i kassa
                   href: Open-URL-in-POS.md

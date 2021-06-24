@@ -12,9 +12,9 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Nyheter och ändringar i Platform updates
               items:
-                - name: Nyheter och ändringar på startsidan för Platform updates
+                - name: Nyheter och ändringar på Platform updates startsida
                   href: get-started/whats-new-home-page.md
-                - name: Platform updates för version 10.0.20 (juli 2021)
+                - name: Platform updates för version 10.0.20 (augusti 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Platform updates för 10.0.19 (juni 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
@@ -850,13 +850,11 @@
               items:
                 - name: Börja spåra med Trace parser
                   href: perf-test/trace-trace-tutorial.md
-                - name: Enanvändartestning med Uppgiftsinspelaren och Performance SDK
+                - name: Enanvändartester med Performance SDK och Uppgiftsinspelaren
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: Fleranvändartestning med Performance SDK och en lokal testkontrollant
-                  href: perf-test/multi-user-testing-local-test-controller.md
-                - name: Fleranvändartestning med Performance SDK och Azure DevOps
-                  href: perf-test/multi-user-testing-perfsdk-azuredevops.md
-                - name: Felsökningsguide för testning med Performance SDK
+                - name: Fleranvändartester med Performance SDK
+                  href: perf-test/perfsdk-multi-user-testing.md
+                - name: Felsökningsguide för tester med Performance SDK
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
                 - name: Performance SDK och fleranvändartestning i lokala miljöer
                   href: perf-test/perfsdk-tutorial-lbd.md
@@ -1538,6 +1536,8 @@
                   href: sysadmin/batch-server-overview.md
                 - name: Skapa batchjobb
                   href: sysadmin/tasks/create-batch-job.md
+                - name: Aktivera automatiska nya försök på batchjobb
+                  href: sysadmin/retryable-batch.md
                 - name: Kopiera ett batchjobb
                   href: sysadmin/copy-batch-job.md
                 - name: Aktiva batchperioder
@@ -1588,12 +1588,10 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012-uppgradering – Checklista för föruppgradering för datauppgradering
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: AX 2012-uppgradering – Datauppgradering i sandbox-miljöer med dacpac-process
-                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: Uppgradera från AX 2012 – SQL Transactional Replication
                   href: database/replication-setup.md
-                - name: AX 2012-uppgradering – Datauppgradering i sandbox-miljöer
-                  href: migration-upgrade/upgrade-data-sandbox.md
+                - name: Uppgradera från AX 2012 – Datauppgradering i självbetjäningsmiljöer
+                  href: migration-upgrade/data-upgrade-self-service.md
                 - name: AX 2012-uppgradering – Lokala miljöer
                   href: migration-upgrade/on-prem-upgrade-2012.md
                 - name: AX 2012-uppgradering – Övergångstest
