@@ -70,9 +70,9 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nyheter eller ändringar i Supply Chain Management
                   items:
-                    - name: Nyheter eller ändringar av startsidan till Supply Chain Management
+                    - name: Nyheter eller ändringar på Supply Chain Managements startsida
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.20 (juli 2021)
+                    - name: Supply Chain Management 10.0.20 (augusti 2021)
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (juni 2021)
                       href: get-started/whats-new-scm-10-0-19.md
@@ -222,6 +222,8 @@
                       href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Skapa ER-konfigurationer i Regulatory configuration service och överföra dem till den globala databasen
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Regulatory Configuration Service – Lifecycle Services lagringsutfasning
+                      href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Elektronisk fakturering
                   items:
                     - name: Översikt över elektronisk fakturering
@@ -232,8 +234,10 @@
                       href: ../finance/localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Utfärda elektroniska fakturor i Finance och Supply Chain Management
                       href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Skapa ett Azure-lagringskonto och ett nyckelvalv
+                    - name: Skapa ett Azure lagringskonto och ett nyckelvalv
                       href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Instrumentpanel för användningshantering
+                      href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Kom i gång
                       items:
                         - name: Kom i gång med tjänstadministration för elektronisk fakturering
@@ -1383,8 +1387,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Generera utskrivbara formulär för fritextfakturor (FTI)
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Spåra körning av ER-format för att felsöka prestandaproblem
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Utforma effektiva ER-lösningar
+                  items:
+                    - name: Spåra körning av ER-format för att felsöka prestandaproblem
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Felsöka prestandaproblem i ER-konfigurationer
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Hantering av affärsdokument
                   items:
                     - name: Hantering av affärsdokument – översikt
@@ -1675,30 +1683,38 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: Samarbeta med interna kunder i leveranskedjan
                   href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
-            - name: Efterfrågeprognosticering
+            - name: Prognosticering
               items:
-                - name: Efterfrågeprognosticering – översikt
-                  href: master-planning/introduction-demand-forecasting.md
-                - name: Inställning av efterfrågeprognosticering
-                  href: master-planning/demand-forecasting-setup.md
-                - name: Importera historiska data för efterfrågeprognoser
-                  href: master-planning/import-historical-data.md
-                - name: Generera en statistisk baslinjeprognos
-                  href: master-planning/generate-statistical-baseline-forecast.md
-                - name: Utför manuell justering i baslinjeprognosen
-                  href: master-planning/manual-adjustments-baseline-forecast.md
-                - name: Auktorisera en justerad efterfrågeprognos
-                  href: master-planning/authorize-adjusted-forecast.md
-                - name: Övervaka prognosens exakthet
-                  href: master-planning/monitor-forecast-accuracy.md
-                - name: Ta bort avskilda från historiska transaktionsdata när du beräknar en efterfrågeprognos
-                  href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
-                - name: Reduceringsnycklar
-                  href: master-planning/reduction-keys.md
-                - name: Skapa en baslinjeprognos
-                  href: master-planning/tasks/create-baseline-forecast.md
-                - name: Ändra en efterfrågeprognos manuellt
-                  href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Prognoser för efterfrågan och tillgång
+                  items:
+                    - name: Lagerprognoser
+                      href: master-planning/inventory-forecast.md
+                    - name: 'Guide: Ändra en efterfrågeprognos manuellt'
+                      href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Efterfrågeprognosticering
+                  items:
+                    - name: Efterfrågeprognosticering – översikt
+                      href: master-planning/introduction-demand-forecasting.md
+                    - name: Inställning av efterfrågeprognosticering
+                      href: master-planning/demand-forecasting-setup.md
+                    - name: Generera en statistisk baslinjeprognos
+                      href: master-planning/generate-statistical-baseline-forecast.md
+                    - name: Utför manuell justering i baslinjeprognosen
+                      href: master-planning/manual-adjustments-baseline-forecast.md
+                    - name: Auktorisera en justerad efterfrågeprognos
+                      href: master-planning/authorize-adjusted-forecast.md
+                    - name: Importera historiska data för efterfrågeprognoser
+                      href: master-planning/import-historical-data.md
+                    - name: Ta bort avskilda från historiska transaktionsdata när du beräknar en efterfrågeprognos
+                      href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
+                    - name: Övervaka prognosens exakthet
+                      href: master-planning/monitor-forecast-accuracy.md
+                    - name: 'Guide: Skapa en baslinjeprognos'
+                      href: master-planning/tasks/create-baseline-forecast.md
+                - name: Huvudplanering med prognos
+                  items:
+                    - name: Prognosreduceringnycklar
+                      href: master-planning/reduction-keys.md
             - name: Felsöka huvudplanering
               href: master-planning/troubleshoot-masterplanning.md
         - name: Mobilapp
@@ -3425,6 +3441,8 @@
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: Försäljning och marknadsföring
               items:
+                - name: Det går inte att minska kvantiteten när försäljningsordern annulleras
+                  href: troubleshooting/sales/quantity-cannot-be-reduced.md
                 - name: Systemadministratörer kan inte rensa orderspärrar eftersom de inte är auktoriserade
                   href: troubleshooting/sales/system-administrator.md
             - name: Transporthantering
