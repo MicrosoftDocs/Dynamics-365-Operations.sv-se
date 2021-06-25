@@ -15,42 +15,40 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 33d5e831d3a631aa17e78628a4e88b5e1cfa8c73
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e4109762a2db3114ad66882092d6729dd9b08364
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052875"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190218"
 ---
-# <a name="manage-items-that-are-lent-to-workers"></a><span data-ttu-id="9949a-103">Hantera artiklar som lånas ut till medarbetare</span><span class="sxs-lookup"><span data-stu-id="9949a-103">Manage items that are lent to workers</span></span>
+# <a name="manage-items-that-are-lent-to-workers"></a><span data-ttu-id="f23fd-103">Hantera artiklar som lånas ut till medarbetare</span><span class="sxs-lookup"><span data-stu-id="f23fd-103">Manage items that are lent to workers</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="9949a-104">Låneartiklar är poster som gör det enklare för chefer att spåra fysiska artiklar som företaget lånar ut till arbetare.</span><span class="sxs-lookup"><span data-stu-id="9949a-104">Loan items are records that help managers track the physical items that your company lends to its workers.</span></span> 
+<span data-ttu-id="f23fd-104">Låneartiklar är poster som gör det enklare för chefer att spåra fysiska artiklar som företaget lånar ut till arbetare.</span><span class="sxs-lookup"><span data-stu-id="f23fd-104">Loan items are records that help managers track the physical items that your company lends to its workers.</span></span> 
 
-<span data-ttu-id="9949a-105">Följande exempel anger exempel på artiklar som ett företag kan låna till anställda:</span><span class="sxs-lookup"><span data-stu-id="9949a-105">The following points list examples of items that a company might lend to workers:</span></span>
--   <span data-ttu-id="9949a-106">Mobiltelefoner</span><span class="sxs-lookup"><span data-stu-id="9949a-106">Mobile telephones</span></span>
--   <span data-ttu-id="9949a-107">Bilar</span><span class="sxs-lookup"><span data-stu-id="9949a-107">Automobiles</span></span>
--   <span data-ttu-id="9949a-108">Datorutrustning</span><span class="sxs-lookup"><span data-stu-id="9949a-108">Computer equipment</span></span>
+<span data-ttu-id="f23fd-105">Följande exempel anger exempel på artiklar som ett företag kan låna till anställda:</span><span class="sxs-lookup"><span data-stu-id="f23fd-105">The following points list examples of items that a company might lend to workers:</span></span>
+-   <span data-ttu-id="f23fd-106">Mobiltelefoner</span><span class="sxs-lookup"><span data-stu-id="f23fd-106">Mobile telephones</span></span>
+-   <span data-ttu-id="f23fd-107">Bilar</span><span class="sxs-lookup"><span data-stu-id="f23fd-107">Automobiles</span></span>
+-   <span data-ttu-id="f23fd-108">Datorutrustning</span><span class="sxs-lookup"><span data-stu-id="f23fd-108">Computer equipment</span></span>
 
-<span data-ttu-id="9949a-109">Varje fysisk artikel måste ha en motsvarande låneartikel.</span><span class="sxs-lookup"><span data-stu-id="9949a-109">Each physical item must have a corresponding loan item.</span></span> <span data-ttu-id="9949a-110">Varje låneartikelpost bör beskriva vad som lånas ut, vem som är ansvarig för lånet och antalet dagar som artikeln kan lånas ut till arbetaren.</span><span class="sxs-lookup"><span data-stu-id="9949a-110">Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can loaned to a worker.</span></span> <span data-ttu-id="9949a-111">Du kan skapa flera låneartiklar samtidigt, till exempel för nycklar, passerkort eller uniformer.</span><span class="sxs-lookup"><span data-stu-id="9949a-111">You can create multiple loan items, for items such as keys, access cards or uniforms, at the same time.</span></span> 
+<span data-ttu-id="f23fd-109">Varje fysisk artikel måste ha en motsvarande låneartikel.</span><span class="sxs-lookup"><span data-stu-id="f23fd-109">Each physical item must have a corresponding loan item.</span></span> <span data-ttu-id="f23fd-110">Varje låneartikelpost bör beskriva vad som lånas ut, vem som är ansvarig för lånet och antalet dagar som artikeln kan lånas ut till arbetaren.</span><span class="sxs-lookup"><span data-stu-id="f23fd-110">Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can loaned to a worker.</span></span> <span data-ttu-id="f23fd-111">Du kan skapa flera låneartiklar samtidigt, till exempel för nycklar, passerkort eller uniformer.</span><span class="sxs-lookup"><span data-stu-id="f23fd-111">You can create multiple loan items, for items such as keys, access cards or uniforms, at the same time.</span></span> 
 
-<span data-ttu-id="9949a-112">När en artikel lånas registrerar du datumet då artikeln lånades samt planerat återlämningsdatum.</span><span class="sxs-lookup"><span data-stu-id="9949a-112">When loaning an item, enter the date that the item was loaned, and the planned return date.</span></span> <span data-ttu-id="9949a-113">När artikeln lämnas tillbaka anger du det faktiska återlämningsdatumet.</span><span class="sxs-lookup"><span data-stu-id="9949a-113">When the item is returned, enter the actual return date.</span></span>
+<span data-ttu-id="f23fd-112">När en artikel lånas registrerar du datumet då artikeln lånades samt planerat återlämningsdatum.</span><span class="sxs-lookup"><span data-stu-id="f23fd-112">When loaning an item, enter the date that the item was loaned, and the planned return date.</span></span> <span data-ttu-id="f23fd-113">När artikeln lämnas tillbaka anger du det faktiska återlämningsdatumet.</span><span class="sxs-lookup"><span data-stu-id="f23fd-113">When the item is returned, enter the actual return date.</span></span>
 
-<span data-ttu-id="9949a-114">Medarbetare kan se posterna för de artiklar som har lånats ut till dem via arbetsytan Självbetjäning för medarbetare.</span><span class="sxs-lookup"><span data-stu-id="9949a-114">Employees can view the records of the items that have been loaned to them using the Employee self-service workspace.</span></span> <span data-ttu-id="9949a-115">De kan också redigera befintliga poster eller ange nya låneartiklar, om de har fått ytterligare fysiska artiklar.</span><span class="sxs-lookup"><span data-stu-id="9949a-115">They can also edit the existing records or enter new loan items, if they've received additional physical items.</span></span>  <span data-ttu-id="9949a-116">Arbetsflödet kan ställas in att dirigera vägändringar till nya eller befintliga låneartiklar via en godkännandeprocess.</span><span class="sxs-lookup"><span data-stu-id="9949a-116">Workflow can be set up to route changes to new or existing loan items through an approval process.</span></span> 
+<span data-ttu-id="f23fd-114">Medarbetare kan se posterna för de artiklar som har lånats ut till dem via arbetsytan Självbetjäning för medarbetare.</span><span class="sxs-lookup"><span data-stu-id="f23fd-114">Employees can view the records of the items that have been loaned to them using the Employee self-service workspace.</span></span> <span data-ttu-id="f23fd-115">De kan också redigera befintliga poster eller ange nya låneartiklar, om de har fått ytterligare fysiska artiklar.</span><span class="sxs-lookup"><span data-stu-id="f23fd-115">They can also edit the existing records or enter new loan items, if they've received additional physical items.</span></span>  <span data-ttu-id="f23fd-116">Arbetsflödet kan ställas in att dirigera vägändringar till nya eller befintliga låneartiklar via en godkännandeprocess.</span><span class="sxs-lookup"><span data-stu-id="f23fd-116">Workflow can be set up to route changes to new or existing loan items through an approval process.</span></span> 
 
-<span data-ttu-id="9949a-117">Chefer kan visa lånade artiklar för deras underställda.</span><span class="sxs-lookup"><span data-stu-id="9949a-117">Managers can view loaned items for their direct reports.</span></span> <span data-ttu-id="9949a-118">De kan också beviljas behörighet att lägga till nya låneartiklar åt deras medarbetare.</span><span class="sxs-lookup"><span data-stu-id="9949a-118">They can also be granted permission to add new loan items on behalf of their employees.</span></span>
+<span data-ttu-id="f23fd-117">Chefer kan visa lånade artiklar för deras underställda.</span><span class="sxs-lookup"><span data-stu-id="f23fd-117">Managers can view loaned items for their direct reports.</span></span> <span data-ttu-id="f23fd-118">De kan också beviljas behörighet att lägga till nya låneartiklar åt deras medarbetare.</span><span class="sxs-lookup"><span data-stu-id="f23fd-118">They can also be granted permission to add new loan items on behalf of their employees.</span></span>
 
- <a name="account-for-lost-or-misplaced-loan-items"></a><span data-ttu-id="9949a-119"> Konto för förlorade eller borttappade låneartiklar</span><span class="sxs-lookup"><span data-stu-id="9949a-119">Account for lost or misplaced loan items</span></span>
------------------------------------------
+##  <a name="account-for-lost-or-misplaced-loan-items"></a><span data-ttu-id="f23fd-119"> Konto för förlorade eller borttappade låneartiklar</span><span class="sxs-lookup"><span data-stu-id="f23fd-119">Account for lost or misplaced loan items</span></span>
 
-<span data-ttu-id="9949a-120">Om en artikel skadas eller tappas bort anger du ett fiktivt återlämnande.</span><span class="sxs-lookup"><span data-stu-id="9949a-120">If an item becomes damaged or misplaced, enter a fictitious return record.</span></span> <span data-ttu-id="9949a-121">Sedan raderar du artikeln eller behåller den i översikten och ändrar beskrivningen så att det framgår att den inte är tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="9949a-121">Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.</span></span>
+<span data-ttu-id="f23fd-120">Om en artikel skadas eller tappas bort anger du ett fiktivt återlämnande.</span><span class="sxs-lookup"><span data-stu-id="f23fd-120">If an item becomes damaged or misplaced, enter a fictitious return record.</span></span> <span data-ttu-id="f23fd-121">Sedan raderar du artikeln eller behåller den i översikten och ändrar beskrivningen så att det framgår att den inte är tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="f23fd-121">Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.</span></span>
 
 
-<a name="additional-resources"></a><span data-ttu-id="9949a-122">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="9949a-122">Additional resources</span></span>
---------
+## <a name="additional-resources"></a><span data-ttu-id="f23fd-122">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="f23fd-122">Additional resources</span></span>
 
-[<span data-ttu-id="9949a-123">Personal</span><span class="sxs-lookup"><span data-stu-id="9949a-123">Human resources</span></span>](index.md)
+[<span data-ttu-id="f23fd-123">Personal</span><span class="sxs-lookup"><span data-stu-id="f23fd-123">Human resources</span></span>](index.md)
 
 
 
