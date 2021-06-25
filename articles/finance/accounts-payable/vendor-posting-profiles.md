@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37fb7d2623451313475a6c234e820c7c6295be40
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e4b38fd137e6479493da79d4b62d0111b502a632
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835494"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189503"
 ---
 # <a name="vendor-posting-profiles"></a>Bokföringsprofiler för leverantörer
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835494"
 
 Leverantörsbokföringsprofiler styr bokföringen av leverantörstransaktioner i redovisningen.
 
-<a name="vendor-posting-profiles"></a>Bokföringsprofiler för leverantörer
------------------------
+## <a name="vendor-posting-profiles"></a>Bokföringsprofiler för leverantörer
 
 Leverantörsbokföringsprofiler gör det möjligt att tilldela redovisningskonton och dokumentinställningar till alla leverantörer, en grupp leverantörer eller en enskild leverantörer. De här inställningarna kan användas när inköpsorder leverantörsfakturor och kontantbetalningar skapas. För en del transaktioner kan du markera en bokföringsprofil som skiljer sig från och har företräde framför de bokföringsprofiler som har ställts in för transaktioner på den här sidan. Standardbokföringsprofilen definieras på snabbfliken **Redovisning och moms** på parametersidan **Leverantörsreskontra**. Standardbokföringsprofilen inkluderas sedan automatiskt i rubriken för nya dokument som du kan ändra den till en annan bokföringsprofil, om det behövs.
 

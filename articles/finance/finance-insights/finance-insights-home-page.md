@@ -2,7 +2,7 @@
 title: Finance-insikter – startsida (förhandsversion)
 description: Finance-insikter ger konfigurerbara och utökningsbara modeller för att hjälpa dig att noggrant och effektivt förutsäga företagets kassaflöde, när du ska få betalning för utestående kundfordringar och skapa ett budgetförslag som kan påskynda budgetprocessen. Alla dessa funktioner baseras på intelligenta maskininlärningsmodeller.
 author: ShivamPandey-msft
-ms.date: 07/20/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3a78a162469790d797344ce9311c55bfcecd19f4
-ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
+ms.openlocfilehash: 4876d2d4ad79dc09ce4b372eedf4c6ab31930957
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "6086999"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222520"
 ---
 # <a name="finance-insights-home-page-preview"></a>Finance-insikter – startsida (förhandsversion)
 
@@ -68,7 +68,9 @@ Om du är bekant med processen för att skapa och hantera resurser i Azure, Micr
 
 ## <a name="configure-finance-insights"></a>Konfigurera Finance-insikter
 
-Du måste slutföra vissa konfigurationssteg innan du kan använda Finance-insikter. Mer information om hur du konfigurerar Finance-insikter finns i [Konfiguration för Finance-insikter](configure-for-fin-insites.md).
+Du måste slutföra vissa konfigurationssteg innan du kan använda Finance-insikter. Mer information om hur du konfigurerar Finance Insights finns i:
+  - För versioner upp till 10.0.19: [Konfiguration för Finance insights – versioner upp till 10.0.19](configure-for-fin-insites.md).
+  - För version 10.0.20 och senare: [Konfiguration för Finance Insights (förhandsversion) – versioner 10.0.20 och senare](configure-for-fin-insites-PubPrvw.md).
 
 ## <a name="create-a-data-integrator-project"></a>Skapa ett projekt för dataintegrerare
 
@@ -84,10 +86,7 @@ Om du använder demodata för att testa kundbetalningsförutsägelser måste du 
 Om du vill aktivera kundbetalningsförutsägelser måste du utföra en uppsättning steg för att bygga en maskininlärningsmodell som använder organisationens data för att generera förutsägelser om när det är sannolikt att kunder betalar utestående fakturor, och när specifika fakturor sannolikt kommer att betalas. Mer information och de olika stegen finns i [Aktivera prediktioner av kundbetalning](enable-cust-paymnt-prediction.md). 
 
 ### <a name="enable-cash-flow-forecasting"></a>Aktivera kassaflödesprognoser
-Om du vill aktivera kassaflödesprognoser måste du utföra en uppsättning steg för att bygga en maskininlärningsmodell som använder organisationens data för att generera kassaflödesprognoser. Mer information och de olika stegen finns i [Aktivera kassaflödesprognoser](enable-cash-flow-forecasting.md) 
-
-### <a name="set-up-and-use-cash-flow-forecasting"></a>Konfigurera och använda kassaflödesprognoser
-Mer information om hur du konfigurerar och använder kassaflödesprognoser finns i [Aktivera kassaflödesprognoser](enable-cash-flow-forecasting.md). Mer information om hur du använder den här funktionen finns i [Kassaflödesprognoser](cash-flow-forecast-intro.md).
+Om du vill aktivera kassaflödesprognoser måste du utföra en uppsättning steg för att bygga en maskininlärningsmodell som använder organisationens data för att generera kassaflödesprognoser. Mer information och de olika stegen finns i [Aktivera kassaflödesprognoser](enable-cash-flow-forecasting.md).
 
 ### <a name="enable-budget-proposals"></a>Aktivera budgetförslag
 
@@ -111,14 +110,12 @@ Med hjälp av funktionen för kassaflödesprognos kan du få en mer exakt uppska
 
 - Mer information om de nya funktionerna i kassaflödesprognoser finns i [Kassaflödesprognos](cash-flow-forecast-intro.md).
 - Mer information om hur du importerar externa data som ska inkluderas i kassaflödesprognosen finns i [Använda externa data i kassaflödesprognoser](external-data-in-cash-flow.md). 
-- Information om hur du använder en AI-modell för att förutsäga kassaflöden för långfristiga perioder finns i [Kassaflödesprognoser – översikt](cash-position.md).
+- Information om hur du använder en AI-modell för att förutsäga kassaflöden för kortfristiga perioder finns i [Kassaplacering](cash-position.md).
 - Information om hur du sparar kassaflödespositioner och kassaflödesprognoser som ögonblicksbilder och för att jämföra en ögonblicksbild med verkliga värden finns i [Översikt över ögonblicksbilder](payment-snapshots.md).
 
 ### <a name="using-budget-proposal"></a>Använda budgetförslag
 
 Information om hur du påskyndar skapandet av en budget finns i [Budgetförslag](budget-proposals.md). 
-
-Demonstrationsdata för budgetförslag:
 
 ## <a name="feedback-and-support"></a>Feedback och support
 

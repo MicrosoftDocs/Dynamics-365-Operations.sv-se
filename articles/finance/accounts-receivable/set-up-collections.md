@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5e08832d39f0428590780d47fd6b686048889cd
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1ce37a85477d65b9592a32dcbe430d09f9dde62b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835230"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189479"
 ---
 # <a name="set-up-collections"></a>Ställ in inkasseringar
 
@@ -40,8 +40,7 @@ Denna artikel förklarar hur du ställer in samlingsfunktionen. Du måste slutf�
 
 Dessa punkter beskrivs mer detaljerat under resten av det här avsnittet. 
 
-<a name="set-up-aging-period-definitions"></a>Ställ in definitioner för åldersfördelningsperioder
--------------------------------
+## <a name="set-up-aging-period-definitions"></a>Ställ in definitioner för åldersfördelningsperioder
 
 Konfigurera en definition för åldersfördelningsperioder. En definition av åldersfördelningsperioder definierar kolumnerna som visas på listsidorna **Åldersfördelade saldon**, **Inkassoaktiviteter** och **Kravärenden**. Den anger även perioderna som visas på sidan **Inkasso**. Om en kundpool har ställts in, används åldersfördelningsperioddefinitionen för poolen. Om inga pooler har ställts in används den förvalda definitionen av åldersfördelningsperioder som angetts på sidan **Parametrar för kundreskontra**. Om ingen förvald definition av åldersfördelningsperioder har angetts används den första definitionen av åldersfördelningsperioder på sidan **Definitioner för åldersfördelningsperiod**.
 

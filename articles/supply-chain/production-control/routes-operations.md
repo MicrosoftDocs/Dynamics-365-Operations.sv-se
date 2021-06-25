@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 484a80d9eeb0b652a8363a9ea49f58f9780b6968
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908938"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188944"
 ---
 # <a name="routes-and-operations"></a>Flöden och operationer
 
@@ -29,8 +29,7 @@ ms.locfileid: "5908938"
 
 Det här avsnittet innehåller information om Flöden och operationer. Ett flöde definierar processen för tillverkning av en produkt eller produktvariant. Det beskriver varje steg (operation) i produktionsprocessen och den ordning som dessa steg måste utföras i. För varje steg definierar också flödet de operationsresurser krävs, ställtid och körtid som krävs och hur kostnaden ska beräknas.
 
-<a name="overview"></a>Översikt
---------
+## <a name="overview"></a>Översikt
 
 Ett flöde beskriver ordningen av operationer som krävs för att producera en produkt eller produktvariant. Flödet definierar också operationsresurser som krävs, tid som krävs för att ställa in och utföra operationen och hur kostnaden ska beräknas för varje operation. Du kan använda samma flöde för att skapa flera produkter eller definiera ett unikt flöde för varje produkt eller produktvariant. Du kan också ha flera flöden för samma produkt. I detta fall varierar det flöde som används beroende på faktorer som t.ex. den kvantitet som måste produceras. Definitionen av ett flöde i Supply Chain Management består av fyra separata element som tillsammans beskriver produktionsprocessen:
 

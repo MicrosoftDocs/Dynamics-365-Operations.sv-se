@@ -2,7 +2,7 @@
 title: Aktivera budgetförslag (förhandsversion)
 description: I det här ämnet beskrivs hur du aktiverar funktionen för Budgetförslag i Finance-insikter.
 author: ShivamPandey-msft
-ms.date: 07/24/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7e90a1a2f2a8e7808f03ce9a6ee58c027bd48d8d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 948a3e051e5964c5c773cefd90c8587cf833a450
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818714"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222544"
 ---
 # <a name="enable-budget-proposals-preview"></a>Aktivera budgetförslag (förhandsversion)
 
@@ -34,7 +34,7 @@ I det här ämnet beskrivs hur du aktiverar funktionen för Budgetförslag i Fin
     `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BudgetIntelligentBudgetRegisterProposalFeature', 1)`
 
     > [!NOTE]
-    > Om din distribution av Microsoft Dynamics 365 Finance är en Service Fabric-distribution kan du hoppa över det här steget. Teamet för Finance-insikter ska redan ha aktiverat förhandsversionen för dig. Om funktionen inte visas i arbetsytan **Funktionshantering**, eller om det uppstår problem när du försöker att aktivera den, skickar du e-post till [teamet för förhandsversionen av Finance-insikts-appen](mailto:fiap@microsoft.com).
+    > Hoppa över det här steget om du använder version 10.0.20 eller senare, eller om du använder en Service Fabric-distribution. Teamet för ekonomiinsikter ska redan ha aktiverat förhandsversionen för dig. Om funktionen inte visas på arbetsytan **Funktionshantering**, eller om det uppstår problem när du försöker att aktivera den, kontaktar du <fiap@microsoft.com>.
 
 2. Öppna arbetsytan **Funktionshantering** och gör så här:
 
@@ -42,9 +42,5 @@ I det här ämnet beskrivs hur du aktiverar funktionen för Budgetförslag i Fin
     2. Sök efter **Budgetförslag** och aktivera den funktionen.
 
 3. Gå till **Budgetering \> Konfigurera \> Grundläggande budgetering \> Budgetförslag (förhandsversion)** och välj **Aktivera funktion**.
-
-#### <a name="privacy-notice"></a>Sekretesspolicy
-Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

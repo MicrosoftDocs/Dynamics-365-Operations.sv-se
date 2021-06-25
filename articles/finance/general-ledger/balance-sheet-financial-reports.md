@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d916b6593b641ec1c8365475103b1520e07e3768
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 64e3624b387820bea3bfea9c2a4b2f48b0aa9822
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821947"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189031"
 ---
 # <a name="balance-sheet-financial-reports"></a>Balansräkning
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821947"
 
 Den här artikeln beskriver standardrapporter för balansräkningar. Den beskrivs också de byggstenar som associeras med dessa rapporter. 
 
-<a name="default-balance-sheet-reports"></a>Standardbalansräkning
------------------------------
+## <a name="default-balance-sheet-reports"></a>Standardbalansräkning
 
 Det finns två standardrapporter för balansräkning. På en rapport staplas avsnitten. På den andra rapporten visas är avsnitten bredvid varandra.
 
@@ -68,8 +67,7 @@ Dessa kolumndefinitioner innehåller olika typer av kolumner för att tillhandah
 
 
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över ekonomisk rapportering](financial-reporting-getting-started.md)
 

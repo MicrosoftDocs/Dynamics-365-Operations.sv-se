@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b03d176791ee476ccddbf519471becafd086b0b7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 07acb7ef5565fa4a63607f6828e46c1fcf8110cc
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826381"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193628"
 ---
 # <a name="customer-posting-profiles"></a>Kundbokföringsprofiler
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826381"
 
 Bokföringsprofiler för kund styr bokföringen av kundtransaktionerna i redovisningen.kundpool
 
-<a name="customer-posting-profiles"></a>Kundbokföringsprofiler
--------------------------
+## <a name="customer-posting-profiles"></a>Kundbokföringsprofiler
 
 Kundbokföringsprofiler gör det möjligt att tilldela redovisningskonton och dokumentinställningar för alla kunder, en grupp av kunder eller en enskild kund. Dessa inställningar kommer att användas när du skapar försäljningsorder, fritextfakturor, kontantbetalningar, kravbrev samt räntefakturor. För en del transaktioner kan du markera en bokföringsprofil som skiljer sig från och har företräde framför de bokföringsprofiler som har ställts in för transaktioner på den här sidan. 
 
@@ -118,7 +117,6 @@ Om du vill att alla kundtransaktioner ska ha samma bokföringsprofil skapar du b
 </tbody>
 </table>
 
-### 
 
 ### <a name="table-restrictions"></a>**Registerbegränsningar**
 

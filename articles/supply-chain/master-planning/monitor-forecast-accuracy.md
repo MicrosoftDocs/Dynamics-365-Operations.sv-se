@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db8b9fdaf05f58d1386513348c11fcc54887d9c8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6ad41e002f6246311c3755df5baf4a010f9204ee
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826477"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188920"
 ---
 # <a name="monitor-forecast-accuracy"></a>Övervaka prognosens exakthet
 
@@ -38,8 +38,7 @@ Supply Chain Management beräknar följande typer av prognosprecision:
 > Om du använder efterfrågeprognos för Microsoft Azure Machine Learning Learning baseras beräkningen av intern modellnoggrannhet på testdata. För att ange storleken på testdatauppsättningen, ställ in parametern **TEST\_SET\_SIZE\_PERCENT** på sidan **Parametrar för efterfrågeprognosticering**. Till exempel, om du anger värdet till **20**, de sista 20 procent av historiska data används för att beräkna intern modell noggrannhet.
 
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Auktorisera en justerad efterfrågeprognos](authorize-adjusted-forecast.md)
 

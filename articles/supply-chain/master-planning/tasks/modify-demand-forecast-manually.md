@@ -1,5 +1,5 @@
 ---
-title: Ändra en efterfrågeprognos manuellt
+title: 'Guide: Ändra en efterfrågeprognos manuellt'
 description: Detta ämne beskriver hur du ändrar prognosen för en artikel
 author: ChristianRytt
 ms.date: 08/12/2019
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5da1d5b1fbd91964e695a704681b1c9ee513a2f1
-ms.sourcegitcommit: 4016c223a985c46e33f9941bf91ba5e1583e1cfd
+ms.openlocfilehash: 1e12ccf90b9971379e8931bd48d6243a855bb795
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889034"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224020"
 ---
-# <a name="modify-a-demand-forecast-manually"></a>Ändra en efterfrågeprognos manuellt
+# <a name="guide-modify-a-demand-forecast-manually"></a>Guide: Ändra en efterfrågeprognos manuellt
 
 [!include [banner](../../includes/banner.md)]
 
-I den här proceduren visas hur du ändrar prognosen för en artikel. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Den här proceduren är avsedd för produktionsplaneraren.
+I den här proceduren visas hur du ändrar prognosen för en artikel. Den här proceduren är avsedd för produktionsplaneraren.
 
 ## <a name="modify-the-forecast-for-a-selected-item"></a>Ändra en prognosen för en vald artikel
 
@@ -36,9 +36,9 @@ För att ändra prognosen för en vald artikel:
 1. Fyll i övriga fält efter behov.
 1. Välj **Spara** i åtgärdsfönstret.
 
-## <a name="modify-the-forecast-for-one-or-more-items-microsoft-excel"></a>Ändra prognosen för en eller flera artiklar i Microsoft Excel
+## <a name="modify-the-forecast-for-one-or-more-items-with-microsoft-excel"></a>Ändra prognosen för en eller flera artiklar med Microsoft Excel
 
-För att ändra prognosen för en eller flera artiklar i Microsoft Excel:
+För att ändra prognosen för en eller flera artiklar med Microsoft Excel:
 
 1. Gör något av följande:
     - Öppna sidan **Efterfrågeprognos** för valfri artikel (det spelar ingen roll vilken) som beskrivs i föregående avsnitt.

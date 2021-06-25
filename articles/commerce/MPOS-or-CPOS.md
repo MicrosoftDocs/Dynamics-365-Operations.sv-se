@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 84ee7c82fa6aaa819798f4bc052b12b06a51c025
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f19506d66aef22099dae9396fd345c293bf559b7
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796520"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193081"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Välj mellan Modern POS (MPOS) och Cloud POS
 
@@ -57,7 +57,7 @@ Fastän MPOS och CPOS är i stort sett samma sak, finns det vissa viktiga skilln
 MPOS på en Windows-, iOS- eller Android-enhet är ett program som paketeras, installeras och underhålls på enheten.
 
 - **Windows** – MPOS-programmet för Windows all programkod och inbäddat Commerce Runtime (CRT). 
-- **iOS/Android** – på dessa plattformar utgör programmet värd för CPOS-programkoden. Med andra ord aktiveras programkoden från CPOS-servern på Microsoft Azure eller från skalningsenhet för handel. Mer information finns i [Översikt av Commerce Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
+- **iOS/Android** – på dessa plattformar utgör programmet värd för CPOS-programkoden. Med andra ord aktiveras programkoden från CPOS-servern på Microsoft Azure eller från skalningsenhet för handel. Mer information finns i [Översikt av Commerce Scale Unit](dev-itpro/retail-store-system-begin.md).
 
 #### <a name="cpos"></a>CPOS
 
@@ -79,11 +79,11 @@ Skalningsenhet för handel är en komponent som är värd för CRT. CRT ger till
 
 #### <a name="offline-mode"></a>Offlineläge
 
-MPOS för Windows stöder offline-läge. I offline-läge kan POS fortsätta att bearbeta försäljning även om den kopplas bort från skalningsenhet för handel. Den kan sedan synkroniseras med kanaldatabasen när anslutningen har återställts. MPOS använder sin egen inbäddade instans av CRT, och använder tillfälligt sin egen lokala datakälla (SQL Server-databas som är offline). Mer information om offline-funktioner finns i [Offline-funktioner för kassa](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-offline-functionality).
+MPOS för Windows stöder offline-läge. I offline-läge kan POS fortsätta att bearbeta försäljning även om den kopplas bort från skalningsenhet för handel. Den kan sedan synkroniseras med kanaldatabasen när anslutningen har återställts. MPOS använder sin egen inbäddade instans av CRT, och använder tillfälligt sin egen lokala datakälla (SQL Server-databas som är offline). Mer information om offline-funktioner finns i [Offline-funktioner för kassa](pos-offline-functionality.md).
 
 ### <a name="pos-peripheralhardware-considerations"></a>Överväganden för kassakringutrustning/-maskinvara
 
-Återförsäljare måste också ta hänsyn till hur POS får åtkomst till enheter och kringutrustning som exempelvis skrivare, kassaapparater och betalningsterminaler. Endast MPOS för Windows stöder direkt kommunikation med dessa enheter. MPOS för Windows Phone iOS eller Android, samt molnbaserad kassa kräver en maskinvarustation för att komma åt dessa enheter. Maskinvarustationer kan tilldelas ett kassaregister eller delas av kassorna i en butik. Mer information om maskinvarustationer finns [Konfiguration och installation av Retail-maskinvarustationer](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation).
+Återförsäljare måste också ta hänsyn till hur POS får åtkomst till enheter och kringutrustning som exempelvis skrivare, kassaapparater och betalningsterminaler. Endast MPOS för Windows stöder direkt kommunikation med dessa enheter. MPOS för Windows Phone iOS eller Android, samt molnbaserad kassa kräver en maskinvarustation för att komma åt dessa enheter. Maskinvarustationer kan tilldelas ett kassaregister eller delas av kassorna i en butik. Mer information om maskinvarustationer finns [Konfiguration och installation av Retail-maskinvarustationer](retail-hardware-station-configuration-installation.md).
 
 ## <a name="implementation-considerations"></a>Implementeringöverväganden
 
@@ -100,7 +100,7 @@ Tänk på följande när du planerar kassaimplementeringen i dina butiker:
     Dessa alternativ inte är ömsesidigt uteslutande. För en maximalt pålitlig topologi kan återförsäljare distribuera en lokal RSSU i syfte att minska beroendet av en internetanslutning eller Azure-tillgänglighet, och kan också distribuera kassaapparater där offline-läget aktiveras om det uppstår problem med den lokala servern eller det lokala nätverket.
 
 - **Maskinvaruenheter/kringutrustning** – En viktig aspekt av ett Retail POS-system är möjligheten att använda kassakringutrustning som exempelvis skrivare, kassaapparater och betalningsterminaler. Även om alla tillgängliga kassalaternativ kan använda kringutrustning är det bara MPOS för Windows som stöder dem direkt. En eller fler maskinvarustationer krävs för alla andra program. Även om den här metoden ger ökad flexibilitet, måste ytterligare komponenter distribueras, konfigureras och underhållas.
-- **Systemkrav** – Systemkraven för kassatillämpningen varierar. Ta reda på den senaste informationen innan du gör ditt val. Eftersom CPOS körs i en webbläsare stöder det till exempel fler operativsystem. Mer information om systemkraven finns [Systemkrav för molnbaserad distribution](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
+- **Systemkrav** – Systemkraven för kassatillämpningen varierar. Ta reda på den senaste informationen innan du gör ditt val. Eftersom CPOS körs i en webbläsare stöder det till exempel fler operativsystem. Mer information om systemkraven finns [Systemkrav för molnbaserad distribution](../fin-ops-core/fin-ops/get-started/system-requirements.md).
 - **Distribution och underhåll** – Distributions- och underhållskravens komplexitet kan variera beroende på program- och distributionsalternativ. För en CPOS-distribution med molnbaserad värd måste du exempelvis inte installera och uppdatera på alla enheter. Därför minskar denna metod komplexitet och kostnad avsevärt. Om du distribuerar MPOS på alla kassor, aktiverar offline-läget och dessutom distribuerar delade maskinvarustationer, kan du emellertid avsevärt öka antalet slutpunkter som måste hanteras.
 
 

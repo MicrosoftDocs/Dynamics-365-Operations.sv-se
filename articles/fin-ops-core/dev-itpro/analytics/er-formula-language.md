@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2015405f3c7f89ba36f811ca125f3a73bc13c38
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753274"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6223996"
 ---
 # <a name="electronic-reporting-formula-language"></a>Formelspråk i elektronisk rapportering
 
@@ -38,13 +38,13 @@ ER-uttryck kan innehålla några eller flera av följande element:
 - [Sökvägar](#Paths)
 - [Funktioner](#Functions)
 
-## <a name=""></a><a name="Constants">Konstanter</a>
+## <a name="constants"></a><a name="Constants"></a>Konstanter
 
 Du kan använda text och numeriska konstanter (värden som inte är beräknade) för att utforma uttryck. Till exempel uttrycket `VALUE ("100") + 20` använder den numeriska konstanten **20** och strängkonstanten **"100"** och returnerar det numeriska värdet **120**.
 
 Elektronisk rapportering (ER) formeldesignern stöder escape-sekvenser. Därför kan du ange en uttryckssträng som ska hanteras på olika sätt. Uttrycket `"Leo Tolstoy ""War and Peace"" Volume 1"` returnerar till exempel textsträngen **Leo Tolstoy "krig och fred" volym 1**.
 
-## <a name=""></a><a name="Operators">Operatorer</a>
+## <a name="operators"></a><a name="Operators"></a>Operatorer
 
 Följande register visar de aritmetiska operatorer du kan använda för att göra grundläggande matematiska operationer såsom addition, subtraktion, multiplikation och division.
 
@@ -88,9 +88,9 @@ Ordningen i vilken delarna i ett sammansatt uttryck utvärderas är viktig. Till
 
 Om ett uttryck omfattar flera på varandra följande operatorer med samma rangordning, utvärderas dessa åtgärder från vänster till höger. Exempelvis returnerar uttrycket `1 + 6 / 2 \* 3 > 5` **Sant**. Vi rekommenderar att du använder parenteser om du explicit vill ange önskad ordning för utvärdering av uttryck så att uttrycken blir enklare att läsa och underhålla.
 
-## <a name=""></a><a name="References">Referenser</a>
+## <a name="references"></a><a name="References"></a>Referenser
 
-Alla datakällor för den aktuella ER-komponenten som är tillgängliga under utformningen av ett uttryck kan användas som namngivna referenser. Den aktuella ER-komponenten kan antingen vara en modellmappning eller ett format. Till exempel innehåller den aktuella ER-modellmappning datakällan **ReportingDate** som returnerar ett värde av datatypen *DateTime*. I syfte att korrekt formatera värdet i skapande dokument kan du referera datakällan i uttrycket på följande sätt: `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
+Alla datakällor för den aktuella ER-komponenten som är tillgängliga under utformningen av ett uttryck kan användas som namngivna referenser. Den aktuella ER-komponenten kan antingen vara en modellmappning eller ett format. Till exempel innehåller den aktuella ER-modellmappninge datakällan **ReportingDate**, som returnerar ett värde av datatypen [*DateTime*](er-formula-supported-data-types-primitive.md#datetime). I syfte att korrekt formatera värdet i skapande dokument kan du referera datakällan i uttrycket på följande sätt: `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
 
 Alla tecken i referenser till en datakälla som inte representerar en bokstav i alfabetet måste föregås av en apostrof ('). Om namnet på en refererad datakälla innehåller minst en symbol som inte representerar inte en bokstav i alfabetet måste namnet visas inom enkla citattecken. Dessa icke-alfabetiska symboler kan till exempel vara skiljetecken eller andra skrivna symboler. Nedan följer några exempel:
 
@@ -99,7 +99,7 @@ Alla tecken i referenser till en datakälla som inte representerar en bokstav i 
 
 Om appdatakällor har parametrar måste följande syntax användas för att anropa dessa metoder:
 
-- Om metoden **isLanguageRTL** i datakällan **System** har en **EN-US**-parameter av typen *Sträng* så måste denna anges på följande sätt `System.isLanguageRTL("EN-US")` i ett ER-uttryck.
+- Om metoden **isLanguageRTL** för datakällan **System** har en **EN-US**-parameter av datatypen [*Sträng*](er-formula-supported-data-types-primitive.md#string) måste denna metod anges i ett ER-uttryck som `System.isLanguageRTL("EN-US")`.
 - Det krävs inga citationstecken när ett metodnamn innehåller endast alfanumeriska symboler. Dock är de obligatoriska för en metod i en tabell när namnet innehåller parenteser.
 
 När datakällan **System** läggs till en ER-mappning som refererar till programklassen **Global** returnerar uttrycket `System.isLanguageRTL("EN-US ")` ett *booleskt* värde **FALSK**. Det ändrade uttrycket `System.isLanguageRTL("AR")` returnerar det *booleska* värdet **SANT**.
@@ -107,9 +107,9 @@ När datakällan **System** läggs till en ER-mappning som refererar till progra
 Du kan begränsa hur värden skickas till parametrarna för den här typen av metod:
 
 - Endast konstanter kan överföras till metoder av den här typen. Värdena för konstanterna definieras i designläge.
-- Endast primitiva (grundläggande) datatyper stöds för parametrar av den här typen. Primitiva datatyper är *Heltal*, *Realtal*, *Boolesk* och *Sträng*.
+- Endast [primitiva](er-formula-supported-data-types-primitive.md) (basic) datatyper stöds för parametrar av detta slag. Primitiva datatyper är *Heltal*, *Realtal*, *Boolesk* och *Sträng*.
 
-## <a name=""></a><a name="Paths">Sökvägar</a>
+## <a name="paths"></a><a name="Paths"></a>Sökvägar
 
 När ett uttryck refererar till en strukturerad datakälla kan du använda sökvägsdefinitionen för att välja ett specifikt primitivt element i den datakällan. En punkt (.) används för separera enskilda element i en strukturerad datakälla. Till exempel innehåller den aktuella ER-modellmappningen datakällan **InvoiceTransactions**, och denna returnerar en lista över poster. Poststrukturen **InvoiceTransactions** innehåller fälten **AmountDebit** och **AmountCredit**, som båda returnerar numeriska värden. Därför kan du designa följande uttryck för att beräkna det fakturerade beloppet: `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit`. `InvoiceTransactions.AmountDebit` konstruktionen i det här uttrycket är den sökväg som används för att komma åt fältet **AmountDebit** i datakällan **InvoiceTransactions** för typen *postlista*.
 
@@ -129,7 +129,7 @@ Den återstående delen av den absoluta sökvägen visas också i [ER-formelredi
 
 Mer information finns i [Använd en relativ sökväg i databindningar för ER-modeller och -format](relative-path-data-bindings-er-models-format.md).
 
-## <a name=""></a><a name="Functions">Funktioner</a>
+## <a name="functions"></a><a name="Functions"></a>Funktioner
 
 ER inbyggda funktioner kan användas i ER-uttryck. Alla datakällor i uttryckets sammanhang (aktuell ER-modellmappning eller aktuellt ER-format) kan användas som parametrar för anropsfunktioner i enlighet med listan över argument för anropsfunktionen. Konstanter kan också användas som parametrar av anropsfunktioner. Till exempel innehåller den aktuella ER-modellmappningen datakällan **InvoiceTransactions**, och denna returnerar en lista över poster. Poststrukturen **InvoiceTransactions** innehåller fälten **AmountDebit** och **AmountCredit**, som båda returnerar numeriska värden. Ett uttryck för att beräkna det fakturerade beloppet kan utformas på följande sätt med hjälp av den inbyggda ER-avrundningsfunktionen: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`.
 
@@ -173,5 +173,8 @@ IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded
 
 [Utöka listan med funktioner för elektronisk rapportering](general-electronic-reporting-formulas-list-extension.md)
 
+[Primitiva datatyper som stöds](er-formula-supported-data-types-primitive.md)
+
+[Sammansatta datatyper som stöds](er-formula-supported-data-types-composite.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

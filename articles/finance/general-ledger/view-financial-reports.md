@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f729b1703a7703a8a604b007bd1c8d9e1f604a6
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 723e0fa52cd7a9377671795e039f5948ce9239f3
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897294"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187804"
 ---
 # <a name="view-financial-reports"></a>Visa ekonomiska rapporter
 
@@ -28,8 +28,7 @@ ms.locfileid: "5897294"
 
 Den här ämnet innehåller en beskrivning av hur du visar och utforskar ekonomiska rapporter. Den innehåller information om de olika alternativ du kan tillämpa på ekonomiska rapporter för att ändra deras utseende och de data de innehåller.
 
-<a name="financial-reporting-overview"></a>Översikt över ekonomisk rapportering
-----------------------------
+## <a name="financial-reporting-overview"></a>Översikt över ekonomisk rapportering
 
 ## <a name="open-a-financial-report"></a>Öppna en ekonomisk rapport
 Välj ett rapportnamn om du vill öppna en rapport. Första gången rapporten öppnas skapas den automatiskt för föregående månad. Om du exempelvis öppnar en rapport för första gången i augusti 2015 genereras rapporten för den 31 juli 2015. När en rapport har öppnats kan du börja utforska den mer ingående genom att titta närmare på specifika delar av data och ändra rapportsalternativ.
@@ -76,8 +75,7 @@ När du har angett utskriftsalternativen klickar du på **Skriv ut** för att fo
 ## <a name="export-a-financial-report"></a>Exportera en ekonomisk rapport
 Exportera en ekonomisk rapport genom att klicka på **Exportera** i åtgärdsfönstret. Rapporten exporteras till Microsoft Excel och webbläsaren uppmanar dig att öppna eller spara den exporterade filen. Exportinställningarna som definieras i rapportdesignen används i den exporterade rapporten.    
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md)
 

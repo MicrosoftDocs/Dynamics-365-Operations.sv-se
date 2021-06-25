@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 0ccb2ed2a143735c199c36f2da357996ad3fbff3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: edab3420cbd39539358c03fe4d6b3646433f8ec5
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812846"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190170"
 ---
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Terminologi för produktvariantnummer och namn
 
@@ -188,8 +188,7 @@ Beroende på terminologin kan systemet komma att försöka tilldela ett icke-uni
 
 Under ett steg under konfigurationsprocessen föreslår systemet ett konfigurationsvärde enligt terminologin. I detta steg kan du ändra konfigurationsvärdet manuellt. När du sparar konfigurationen kommer systemet att bekräfta att konfigurationsvärdet är unikt. Du får ett felmeddelande om värdet som du angett inte är unikt. Du måste ange ett unikt konfigurationsvärde för att spara konfigurationen.
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Skapa en produktnummernomenklatur för fördefinierade produktvarianter](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 

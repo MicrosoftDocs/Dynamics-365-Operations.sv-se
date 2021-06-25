@@ -2,7 +2,7 @@
 title: Skatteberäkning (förhandsversion)
 description: Detta ämne innehåller information om skatteberäkningsfunktionens övergripande omfattning och funktioner.
 author: wangchen
-ms.date: 04/12/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b26472e195d9bdbba340a118c106de1a4dc79b34
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9daa6e001200d03a2639974fb6de618d77ddf09d
+ms.sourcegitcommit: cb282e8d2306ab71adf80a84346a6863d2d019e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021942"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184111"
 ---
 # <a name="tax-calculation-preview"></a>Skatteberäkning (förhandsversion)
 
@@ -31,6 +31,9 @@ ms.locfileid: "6021942"
 Skatteberäkningen är en hyperskalbar tjänst för flera innehavare som gör det möjligt för den globala skattemotorn (Global Tax Engine) att automatisera och förenkla bestämmandet och beräkningsprocessen för skatt. Skattemotorn är helt konfigurerbar. Elementen som kan konfigureras är inklusive, men inte begränsat till, den beskattningsbara datamodellen, skattekoden, tillämplighetsmatrisen för skatt och beräkningsformeln för skatt. Skattemotorn körs på Microsoft Azure kärntjänsters plattform och erbjuder modern teknik och exponentiell skalbarhet.
 
 Beräkningstjänsten för skatt går att integrera med Dynamics 365 Finance och Dynamics 365 Supply Chain Management. Så småningom kommer den också att integreras Dynamics 365 Project Operations, Dynamics 365 Commerce och andra applikationer från första och tredje part.
+
+> [!IMPORTANT]
+> När du aktiverar tjänsten Skatteberäkning kan vissa operationer på relaterade data utföras i ett annat datacenter än det datacenter som underhåller dina servicedata. Gå igenom [användarvillkoren](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) innan du aktiverar tjänsten för momsberäkning. Din sekretess är viktig för oss. Mer information finns i vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 Skatteberäkningstjänsten är en mikrotjänstbaserad skattemotor som erbjuder exponentiell skalbarhet. Det kan hjälpa dig att utföra följande uppgifter:
 

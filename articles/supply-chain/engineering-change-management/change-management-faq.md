@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 69232eed8520bafeb734ffad43b333bf9e36909e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c95c1f2342654ca2bbee57959becc85291eebbc
+ms.sourcegitcommit: a7649b361ec54b49c0e9ee1c1c63a8815f320225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018695"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187281"
 ---
 # <a name="engineering-change-management-faq"></a>Vanliga frågor och svar om konstruktionsändringshantering
 
@@ -46,7 +46,7 @@ Det här alternativet är mycket enklare att hantera eftersom du bara behöver g
 
 De flesta organisationer väljer det här alternativet eftersom det tillhandahåller hantering av versioner och ändringar, men det medför inte någon extra omkostnad för att spåra versionen i varje transaktion, i lagret eller under huvudplaneringen.
 
-## <a name="which-fields-are-copied-to-the-released-item-template"></a>Vilka fält kopieras till den frisläppta artikelmallen?
+## <a name="which-fields-are-copied-from-the-released-item-template"></a>Vilka fält kopieras från den frisläppta artikelmallen?
 
 När ett konstruktionsföretag skapar en konstruktionsprodukt, skapas den produkten som en frisläppt produkt i konstruktionsföretaget. Den frisläppta produkten som skapas baseras på den valda *frisläppta artikelmallen*. (Den frisläppta artikelmallen är i sig en befintlig frisläppt produkt.) Den frisläppta artikelmallen används också när produkten frisläpps till ett operativt företag. I varje fall definierar den frisläppta artikelmallen de flesta fältvärden för den frisläppta produkten, och dessa värden kommer från den kopplade sidan **Frisläppt produktinformation**.
 

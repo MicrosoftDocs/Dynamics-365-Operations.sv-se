@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0af952c760a3a2039d3332f73544d0b7c45d7b09
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 87bb31d6456356342773f38699a412aa72ea458e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811371"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193915"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Ekonomisk konsolidering och valutaregistrering – översikt
 
@@ -165,7 +165,8 @@ Kunder som använder ekonomisk rapportering för ekonomisk konsolidering och val
 - **Strömlinjeformad valutaomräkning** – efter minimal installation i Finance kan du konvertera alla ekonomiska rapporter till all rapporteringsvaluta som har ställts in. Dessutom kan du skapa och tilldela namn till ett obegränsat antal rapporteringsvalutor.
 - **Bokför elimineringarna vid källan** – du kan skapa och skriva ut en rapport för att kontrollera elimineringstransaktioner. Därefter kan du bokföra alla nya elimineringar som koncerninterna standardtransaktioner. Du kan också använda en juridisk person för eliminering för alla transaktioner som inte ska ingå i juridiska personer.
 
-## <a name="supported-consolidation-scenarios"></a>Konsolideringsscenarier som stöds
+## <a name="supported-consolidation-scenarios-for-financial-reporting"></a>Konsolideringsscenarier som stöds för ekonomisk rapportering
+
 Nedan följer några konsolideringsscenarier som Ekonomisk rapportering stöder:
 
 - Konsolideringar på en nivå och flera nivåer över juridiska personer

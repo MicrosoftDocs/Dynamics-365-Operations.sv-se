@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abc8607e5c3c6ab63a3878b92072bde2ebb0216c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0313bd1a5adc0fdb7a4958c5dfa013cfdc51491a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814546"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189652"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Registrera materialförbrukning med en mobil enhet
 
@@ -28,8 +28,7 @@ ms.locfileid: "5814546"
 
 Det här avsnittet beskriver ett arbetsflöde som möjliggör registrering av förbrukningen av råmaterial i produktionen med hjälp av en bärbar enhet.
 
-<a name="introduction"></a>Introduktion
-------------
+## <a name="introduction"></a>Introduktion
 
 Arbetsflödet är relevant om det finns strikta krav på att material ska kunna spåras. Om du vill behålla spårbarheten för material måste exakt datum och exakt tid rapporteras för förbrukningen. Den här processen kan ses i motsats till för- eller backflushing-arbete där det finns en avvikelse mellan registreringstiden och tiden då den faktiska förbrukningen sker. Detta förklarar varför en strategi för automatisk förbrukning inte kan inte för vissa material med spårbarhetskrav. Låt oss titta på ett enkelt scenario som beskriver hur du ställer in ett arbetsflöde för att aktivera registrering av förbrukningen av råmaterial med hjälp av en bärbar enhet. [![Skapa ett arbetsflöde för att möjliggöra registrering av förbrukning av råmaterial med en bärbar enhet](./media/scenario3.png)](./media/scenario3.png)
 

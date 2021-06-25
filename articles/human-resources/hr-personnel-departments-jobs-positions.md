@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1279cd1eb0d495107515dd40f7d2e0f9dfd5e080
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 84e7017cb0bd799e27e19fc82009307d2955dea7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058834"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189760"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisera personalen efter avdelningar, jobb och befattningar
 
@@ -42,8 +42,7 @@ Följande exempel används för att illustrera koncepten som beskrivs i det här
 |**Personal**|Anställande chef (central)|Anställande chef|
 
 
- <a name="departments"></a>Avdelningar
-------------
+##  <a name="departments"></a>Avdelningar
 
 En avdelning är en driftenhet som representerar en kategori eller ett funktionellt område i organisationen, som är ansvarig för ett visst område i organisationen, till exempel försäljning eller redovisning. En avdelning används för att skapa rapporter om funktionella områden och kan ha vinst- och förlustansvar. En avdelning kan omfatta en grupp kostnadsställen. Försäljning, redovisning och personal är exempel på avdelningar i organisationen.
 
@@ -96,8 +95,7 @@ Använd jobbtyper för att klassificera liknande jobb i kategorier. Jobbtyåer, 
 
 Använd ansvarsområden för att indikera arbetets roller, processer och produkter som en befattning för det jobbet skulle vara ansvarig för. Ett exempel på ett ansvarsområde för ett jobb som kallas "revisor" kan vara "Ekonomisk rapporteringen för produkt A”.
 
-<a name="positions"></a>Befattningar
-----------
+## <a name="positions"></a>Befattningar
 
 Befattningar är ett viktigt element i den lägre nivån i en organisationshierarki. En befattning är ett exempel på ett enskilt jobb. Befattningen "Försäljningschef (öst)" är exempelvis bara en de befattningar som associeras med jobbet "Försäljningschef." Befattningar som finns på en avdelning och tilldelas arbetare.
 ### <a name="position-creation-and-maintenance"></a>Befattningskapelse och underhåll

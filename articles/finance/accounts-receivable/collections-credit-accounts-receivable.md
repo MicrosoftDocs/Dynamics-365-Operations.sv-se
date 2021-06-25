@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dc4dc556cbb8bd461e904ef569016acd4276f7a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c394219bbb58bea187d352c8817ed4c3e2eb883c
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814258"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189455"
 ---
 # <a name="collections-in-accounts-receivable"></a>Samlingar i kundreskontra
 
@@ -99,8 +99,7 @@ Avskrivningstransaktionen skapas i transaktionsvalutan.
 
 Mer information finns i [Skapa en avskrivningsjournal för en kund](tasks/create-write-off-journal-customer.md).
 
-<a name="process-not-sufficient-funds-nsf-payments"></a>Bearbeta otillräckliga medel (NSF-betalning) 
---------------------------------------------
+## <a name="process-not-sufficient-funds-nsf-payments"></a>Bearbeta otillräckliga medel (NSF-betalning) 
 
 Du kan bearbeta NSF-betalningar, genom att klicka på NSF-betalning på sidan Inkasso. När du klickar på den här knappen, annulleras betalningen. Om en NSF-avgift tillämpas för kunden, skapas en avgiftstransaktion i en betalningsjournal. Avgiftsbeloppet baseras på inställningarna för de automatiska avgifterna. De automatiska avgifterna som gäller för NSF-betalningar anges av avgiftsgruppen som valts på sidan Bankkonton för det berörda bankkontot.
 

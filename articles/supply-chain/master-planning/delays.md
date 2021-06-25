@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4216ed1d9b981eee94cfd4c621abd1da99111512
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a8e863ae63466f68e763b133da9f0e9488c6cfa6
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813685"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189356"
 ---
 # <a name="delays"></a>Fördröjningar
 
@@ -52,8 +52,7 @@ För att undvika den här kända begränsningen kan tillverkningsorder högst up
 
 På sidan **planerad order** under fliken **Förseningar** är **önskat datum** för den planerade ordern. Önskat datum för en planerad order är grunddata för förseningar, vilket är ett beräknat datum som är lika med **begärt datum** beräknat från **nettobehovet**. Om den planerade ordern är en strukturlisterad, produktionsrad eller kanban-rad, baseras önskat datum på **Behovsdatum** och det önskade datumet visas på sidan **Planerad order**.
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Disponeringsinställningar](coverage-settings.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 972762522b4f7627648f1e1eec9dad73fe503710
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 90bfd55bd865b27aec831957209ce8716cb253c8
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825456"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188291"
 ---
 # <a name="purchase-agreements"></a>Inköpsavtal
 
@@ -102,8 +102,7 @@ Om du skapar en koncernintern inköpsorder med det koncerninterna inköpsavtalet
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Ekonomiska dimensioner på inköpsavtal
 Du kan kopiera ekonomiska dimensioner till dokumenthuvuden eller till enskilda rader i ett inköpsavtal. Om du ändrar dimensionerna i avtalshuvudet eller på avtalsraden påverkar inte ändringen frisläppta order, men den återspeglas i alla nya order.
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Skapa ett nytt inköpsavtal](tasks/create-purchase-agreement.md)
 

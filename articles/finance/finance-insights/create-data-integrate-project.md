@@ -2,7 +2,7 @@
 title: Skapa ett projekt för dataintegrerare (förhandsversion)
 description: I det här ämnet beskrivs hur du skapar ett projekt för dataintegrerare.
 author: ShivamPandey-msft
-ms.date: 07/24/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9ecf6ef7b7f052ebbb1201dcd04a7431f5b72ce5
-ms.sourcegitcommit: b64c52d85aa6f110f3b1959a5521637dd8631b5b
+ms.openlocfilehash: 59f85c64ea7b1f539a245e08b76bd6a34797b0ca
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5867457"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186478"
 ---
 # <a name="create-a-data-integrator-project-preview"></a>Skapa ett projekt för dataintegrerare (förhandsversion)
 
@@ -67,10 +67,5 @@ I det här ämnet beskrivs hur du skapar ett projekt för dataintegrerare.
 
 > [!NOTE]
 > Om du inte ser de obligatoriska entiteterna i CDS går du till **Kredit och inkasso > Konfigurera > Finance-insikter > Parametrar för ekonomiinsikter**, aktiverar funktionen Prediktioner av kundbetalning och klickar på knappen **Skapa förutsägelsemodell**. När AI-modellens distribution är slutförd (lyckad eller misslyckad), distribueras de CDS-entiteter som behövs för att skapa integrationen i CDS.
-
-## <a name="privacy-notice"></a>Sekretesspolicy
-
-Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

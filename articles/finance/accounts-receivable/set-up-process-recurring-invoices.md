@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76dd6b21207b61dfb96e4d9538b5e6ffc1c6b02d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 834dc64ce531fb614bc7836e0def16f27ecf5e18
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835135"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188648"
 ---
 # <a name="set-up-and-process-recurring-invoices"></a>Ställa in och bearbeta återkommande fakturor
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835135"
 
 Det här avsnittet innehåller en beskrivning av hur du ställer in och bearbetar återkommande fakturor. Du kan använda återkommande fakturor om du måste fakturera kunder samma belopp regelbundet.
 
-<a name="create-a-recurring-free-text-invoice-template"></a>Skapa en fritextmall för återkommande fakturor
----------------------------------------------
+## <a name="create-a-recurring-free-text-invoice-template"></a>Skapa en fritextmall för återkommande fakturor
 
 Om du regelbundet vill fakturera kunder för samma tjänster måste du definiera en fritextfakturamall som kan återanvändas för att skapa fakturorna. Mallen innehåller följande information:
 
@@ -52,13 +51,11 @@ En kund kan ha flera mallar med olika frekvenser.
 ## <a name="generate-the-recurring-invoices"></a>Generera de återkommande fakturorna
 På sidan **Återkommande fakturor** finns en uppgift som bearbetar återkommande fakturamallar. Du anger fakturadatumet och vilken mall fakturorna ska genereras från. Fakturor skapas och kopplas till ett återkommande-id-nummer för varje grupp av fakturor som bearbetas.
 
-<a name="post-recurring-free-text-invoices"></a>Bokföra återkommande fritextfakturor
----------------------------------
+## <a name="post-recurring-free-text-invoices"></a>Bokföra återkommande fritextfakturor
 
 När återkommande fakturor har skapats, visas återkommande-id:na för fakturorna i en bokföringsuppgift på sidan **Återkommande fakturor**. Du kan visa alla av fakturor för ett återkommande-id genom att klicka på länken. När du granskar fakturorna för återkommande-id:t kan du ta bort enskilda fakturor. Kundens inställningar för återkommande fakturor återställs för mallen, så att den kan genereras igen senare. Du kan bokföra en, många eller alla fakturor för ett återkommande-id. Om arbetsflöden är aktiva, måste du klicka på **Skicka** innan du kan bokföra fakturor.
 
-<a name="print-recurring-free-text-invoices"></a>Skriva ut återkommande fritextfakturor
-----------------------------------
+## <a name="print-recurring-free-text-invoices"></a>Skriva ut återkommande fritextfakturor
 
 När återkommande fakturor bokförs kan du skriva ut fakturorna från sidan med en lista över fritextfakturor. Du kan skriva ut de fakturor som har valts, eller välja ett intervall med fakturor som ska skrivas ut.
 

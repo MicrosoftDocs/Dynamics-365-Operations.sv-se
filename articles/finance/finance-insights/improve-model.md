@@ -2,7 +2,7 @@
 title: Förbättra prediktionsmodellen (förhandsversion)
 description: I det här avsnittet beskrivs funktioner som du kan använda för att förbättra prestandan för förutsägelsemodeller.
 author: ShivamPandey-msft
-ms.date: 05/28/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 197aba724ea68ef79c2d16028c23533d952329a9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 184a1cb5d3851e26b41340b711c51ef38e06eb53
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810039"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186652"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Förbättra prediktionsmodellen (förhandsversion)
 
@@ -77,9 +77,5 @@ Följande fält ska inte väljas för träning:
 Filtren stöder för närvarande inte scenariot för förutsägelser av kundbetalning. Välj därför **Hoppa över detta steg** och fortsätt till sammanfattningssidan.
 
 [![Fokusmodell med filter](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
-
-#### <a name="privacy-notice"></a>Sekretesspolicy
-Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

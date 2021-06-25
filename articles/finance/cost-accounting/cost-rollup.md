@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2235545760899c0d945f08b5419154dfdbe4dffc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1137ee7938b378e5212e355580d005cd49b31dbb
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815774"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189055"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy för samlade kostnader och omkostnadsberäkning 
 
@@ -149,8 +149,7 @@ Kostnadsfördelningsregler kan ställas in på följande sätt.
 | CC001                                | Totalt         | **HR-tjänster**        |
 | CC002                                | Totalt         | **Ekonomitjänster** |
 
-<a name="brhow-cost-flows-between-cost-centers"></a><br>Hur kostnadsflödet går mellan kostnadsställen 
----------------------------------------------------
+## <a name="brhow-cost-flows-between-cost-centers"></a><br>Hur kostnadsflödet går mellan kostnadsställen 
 
 Om du vill veta hur kostnadsflödet går mellan kostnadsställen i organisationen kan du skapa kostnadselement av typen **sekundär** för varje kostnadsställe. Dessa kostnadselement måste användas för att överföra saldon mellan kostnadsställen under omkostnadsberäkningen.
 

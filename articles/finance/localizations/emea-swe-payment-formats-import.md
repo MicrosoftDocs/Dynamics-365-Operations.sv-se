@@ -14,12 +14,12 @@ ms.search.region: Sweden
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5222c3562c8fadbd1f39c36d33da091b86068374
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 00ff348a3aef8ccda1676110f484cc67e6250911
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818272"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188977"
 ---
 # <a name="import-payment-formats-for-sweden"></a>Importformat för betalning för Sverige
 
@@ -27,8 +27,7 @@ ms.locfileid: "5818272"
 
 Det här avsnittet innehåller information om BankGirot MAX, importera via BankGirot OCR och BankGirot-returformat för Sverige.
 
-<a name="bankgirot-max-bankgirot-ocr"></a>BankGirot MAX, BankGirot OCR
-----------------------------
+## <a name="bankgirot-max-bankgirot-ocr"></a>BankGirot MAX, BankGirot OCR
 
 Filimporter via BankGirot MAX och BankGirot OCR låter dig importera kundbetalningar BankGirot-filformat. BG MAX är fillayout som samlar alla betalningar i en fil. OCR är en specifik referenstyp i filformatet BG MAX med en betalningsreferens. Utför följande steg för att importera betalningar:
 

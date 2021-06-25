@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02122d9145552952412c239a7f541e6a727f061e
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: 9ae13ce4038346cd5b101b5c40fe3b7c5e617fbf
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5960059"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187950"
 ---
 # <a name="budgeting-overview"></a>Budgetöversikt
 
@@ -28,8 +28,7 @@ ms.locfileid: "5960059"
 
 I stort sett alla företag som använder funktionen ekonomi i Microsoft Dynamics 365 Finance måste kunna skapa rapporter över budget kontra faktiska värden. Den här artikeln beskriver den minimikonfiguration som krävs för att skapa budgetar i Finance and Operations eller läsa in dem från ett tredjepartsprogram.
 
-<a name="overview"></a>Översikt
---------
+## <a name="overview"></a>Översikt
 
 Den godkända budgeten för ett rättssubjekt är kvar i ett dokument som kallas en *budget registret*. Raderna i ett dokument för budgetregistreringsposter kallas för *budgetkonto*-poster och innehåller information om ekonomiska dimensioner, datum och godkända budgetbelopp. Dokumentet för budgetregistreringsposter är integrerat i grundläggande ekonomiska rapporter och frågesidor, där faktiska redovisningsbelopp jämförts med budgeterade belopp. 
 

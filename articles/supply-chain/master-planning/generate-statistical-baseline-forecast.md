@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 562cf07348e77d9c2f169e31a852843bea10fcc6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 780d1e1307b69ec9a31d032039970de454160d6f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816518"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189702"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Generera en statistisk baslinjeprognos
 
@@ -67,8 +67,7 @@ Om prognosen inte skapas för en stor grupp objekt, utan (till exempel) för en 
 > [!NOTE]
 > En potentiell prognos som ser platt ut kan bero på historiska data som måste vara en längre historisk tidsram (minst tre tidsperioder för att kunna plocka ut mönster, t.ex. 3 år med månatlig prognos). Om du vill få ett bättre resultat kan du försöka med att ändra tidsområdets granularitet eller öka tidsintervallet.
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Inställning av efterfrågeprognosticering](demand-forecasting-setup.md)
 

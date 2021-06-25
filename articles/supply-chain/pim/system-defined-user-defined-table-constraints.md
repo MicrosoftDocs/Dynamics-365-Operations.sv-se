@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ddc7b9f0ccaa787b2297a253a7fdd9de11e9eee
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 35ea5b97708272edf50f09d892088bcd3e07402d
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812700"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187977"
 ---
 # <a name="system-defined-and-user-defined-table-constraints"></a>Systemdefinierade och användardefinierade registerbegränsningar
 
@@ -57,8 +57,7 @@ När du skapar en systemdefinierad registerbegränsning, väljer du ett register
 
 Innan ett register kan tillämpas på en modell för produktkonfiguration måste registerbegränsningen inkluderas i en begränsning av en av modellens komponenter. Proceduren är att skapa en ny begränsning, markera typen av begränsning och välj den definition av registerbegränsning som ska användas. Så småningom måste alla fält i registerbegränsningen mappas till attribut i produktkonfigurationsmodellen.
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över produktkonfigurationsmodeller](product-configuration-models.md)
 

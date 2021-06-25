@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62868c30d3ff60e51d99c71b743ab0bbb3c87451
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fc986ea752d1482f618401058f7a0b18f13efd5f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835206"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188720"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Ställa in räntesatser för en räntekod
 
@@ -90,7 +90,6 @@ Du ställer in information om intervall så här.
 
 
 ## <a name="example-2-interest-by-range--days"></a>Exempel 2: Ränta efter period = Dagar
---------------------------------------------------
 
 Du kan ställa in en räntekod som beräknar ränta en gång för varje 15 dagar som överskrider fakturans förfallodatum för transaktionen. Du ska basera beräkningen på ett räntevärde för ett belopp, efter stegvisa dagsintervall. Räntavärdet blir 10,00 per 15 dagar under de första 60 dagar, 15,00 dagar per 15 dagar under 61 till 90 och 20,00 per 15 dagar från dag 91 och ska. Du ställer in räntekodfältvärdena på följande sätt.
 
@@ -111,7 +110,6 @@ Du ställer in information om intervall så här.
 
 
 ## <a name="example-3-interest-by-range--months"></a>Exempel 3: Ränta efter period = Månader
-----------------------------------------------------
 
 Du kan ställa in en räntekod som beräknar ränta en gång för varje månad som överskrider fakturans förfallodatum för transaktionen. Du ska basera beräkningen på ett procentuellt räntevärde, efter stegvisa månadsintervall. Räntevärdet ska vara 1,5 procent per månad för de första tre förfallna månaderna, 2,0 procent per månad för nästa tre månader och 2,5 procent per månad för varje månad efter det första halvåret. Du ställer in räntekodfältvärdena på följande sätt.
 

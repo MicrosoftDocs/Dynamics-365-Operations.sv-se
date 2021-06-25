@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcdd8097279027df2fa5cf22cc38cc8a5e2a13e3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f3d82089d2917a0ec0b9ceead7cd1ec22457733
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814594"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188159"
 ---
 # <a name="production-process-overview"></a>Översikt över produktionsprocess
 
@@ -74,8 +74,7 @@ Följande steg i tillverkningslivscykeln kan genereras för alla ordertyper av t
 12. **Stängning av period** - En del kostnadsredovisningprinciper som periodiskt genomsnitt, kostnadsredovisning med bakåtavräkning, FIFO eller LIFO, kräver periodiska aktiviteter för att stänga lagret eller den finansiella perioden. Vanligtvis försöker systemet att rapportera all material- och resursförbrukning och även korrigeringar av lagret och kassering innan perioderna stängs. Detta görs normalt genom att använda lagerrörelsejournaler, eller justering av journaler. Målet är att bedöma ekonomisk prestanda för driftenheter per period. I vissa fall används när avancerade produktionsorder används som sträcker sig över perioder för ekonomisk rapportering, används produktionsjournaler för att rapportera produktionsförlopp och resursförbrukning i slutet av perioden.
 
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Produktionsåterrapportering](production-feedback.md)
 

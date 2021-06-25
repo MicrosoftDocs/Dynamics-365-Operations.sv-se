@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57495de069a11f2ab41c20d17cfbe87df276ef47
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 191d5aee93217af19364932a0066464b2af89794
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817903"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189286"
 ---
 # <a name="operations-resources"></a>Operations-resurser
 
@@ -29,8 +29,7 @@ ms.locfileid: "5817903"
 
 Verksamhetsresurser utför aktiviteter för ett projekt eller en produktionsprocess. De kan vara av olika typer och kan ha olika förmågor. 
 
-<a name="operations-resources"></a>Operations-resurser
---------------------
+## <a name="operations-resources"></a>Operations-resurser
 
 Verksamhetsresurser är de datorer, verktygen, arbetarna, lättheterna, fysiska områdena eller leverantörer som utför aktiviteter för ett projekt eller en produktionsprocess. De kan vara av andra typer och kan ha olika förmågor.
 

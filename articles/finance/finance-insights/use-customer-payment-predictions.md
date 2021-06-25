@@ -2,7 +2,7 @@
 title: Använda prediktioner av kundbetalning (förhandsversion)
 description: I det här avsnittet beskrivs förutsättningarna och de övergripande steg som krävs för att använda en bedömningsversion av Finance-insikter.
 author: ShivamPandey-msft
-ms.date: 11/16/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 21c5236b6d7e7ce7bd968f1511723a3646fe7a29
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 1349521d65511864747de6c2fed3a904dea8917e
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897802"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186574"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>Använda prediktioner av kundbetalning (förhandsversion)
 
@@ -103,10 +103,5 @@ Om du inte är nöjd med noggrannheten väljer du länken **Förbättra modellen
 Den allmänt tillgängliga förhandsversionen av Ekonomiska insikter finns tillgänglig för distribution i USA, Europa och Storbritannien. Microsoft lägger stegvis till support för fler regioner.
 
 Funktionerna för allmänt tillgänglig förhandsversion kan och ska bara aktiveras i nivå-2-sandbox-miljöer. Konfiguration och AI-modeller som skapas i en sandbox-miljö kan inte migreras till en produktionsmiljö. Mer information finns i [Tilläggsavtal för Microsoft Dynamics 365 förhandsversioner](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
-
-## <a name="privacy-notice"></a>Sekretesspolicy
-
-Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

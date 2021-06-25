@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf3872a47a92509af5857c0c1aec0d4da4095d19
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5b1ec24c84d2b1a3dc88bf96ae6f52441b58a694
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835278"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188696"
 ---
 # <a name="sepa-direct-debit-overview"></a>Översikt över SEPA-autogiro
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835278"
 
 SEPA (Single Euro Payments Area) skapas av den europeiska kommissionen och anger att alla elektroniska betalningar ska betraktas som inhemska oavsett i vilket land/region personen, företaget eller organisationen och banken finns. Det finns inte någon skillnad mellan nationella och gränsöverskridande betalningar. SEPA inkluderar de 28 medlemsstaterna i Europeiska unionen samt Island, Liechtenstein, Norge, Schweiz, Monaco och San Marino. SEPA hjälper till att skapa en gemensam marknad för betalningstransaktioner inom Europeiska ekonomiska samarbetsområdet (EES). Slutligen förväntas SEPA minska antalet betalningsformat, som banker, företag och individer måste arbeta med.   
 
-<a name="what-is-the-goal-of-sepa-direct-debits"></a>Vad är målet för SEPA-autogiron?
----------------------------------------
+## <a name="what-is-the-goal-of-sepa-direct-debits"></a>Vad är målet för SEPA-autogiron?
 
 Ett SEPA-autogiro låter en fordringshavare ta ut medel från en kunds bankkonto, förutsatt att kunden har bett fordringshavaren en signerad fullmakt. Kunden signerar en fullmakt som auktoriserar fordringsägaren till att inkassera en betalning och instruerar kundens bank att betala inkasseringen. 
 

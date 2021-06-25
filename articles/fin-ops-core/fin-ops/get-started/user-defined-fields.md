@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 1acbcbc49be6b764481e151d0fb3f12bf3cf5554
-ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
+ms.openlocfilehash: b15b25ac172e8ab942e950c9e8c4aff1e26c9291
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6092358"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193865"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Skapa och arbeta med anpassade fält
 
@@ -62,7 +62,7 @@ Följande steg beskriver processen för att skapa ett anpassat fält och placera
 11. **Valfritt:** Aktivera läget **flytta** från verktygsfältet för anpassning för att flytta de nya fälten till önskad plats i det markerade området. Se [anpassa användarupplevelsen](personalize-user-experience.md) för mer information om hur du använder olika funktioner för anpassning om du vill optimera ett formulär för din personliga användning.
 
 > [!WARNING]
-> Möjligheten att ange värden i ett eget fält som läggs till på en sida beror på om registret som är kopplat till det anpassade fältet kan redigeras eller vara skrivskyddbart. När det associerade registret är skrivskyddat är alla fält som är länkade till det registret, inklusive eventuella anpassade fält, skrivskyddade.
+> Möjligheten att ange värden i ett eget fält som läggs till på en sida beror på om registret som är kopplat till det anpassade fältet kan redigeras eller vara skrivskyddbart. När den associerade tabellen är skrivskyddad är alla fält som är länkade till den tabellen – inklusive eventuella anpassade fält – skrivskyddade.
 
 
 ## <a name="sharing-custom-fields-with-other-users"></a>Dela anpassade fält med andra användare

@@ -2,7 +2,7 @@
 title: Kassaposition (förhandsversion)
 description: I det här ämnet beskrivs hur funktionen för kassaflödesprognoser förutsäger organisationens kassaposition för specifika tider. Här beskrivs också vilka alternativ som finns för att visa prognoser för olika perioder.
 author: ShivamPandey-msft
-ms.date: 05/26/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: cf9d3fd905a90a2937bfac97c8e44ea13be4f42e
-ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
+ms.openlocfilehash: b3b32bac436dc0be7ae4c072f4e560ad6d8b6d81
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6123400"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186502"
 ---
 # <a name="cash-position-preview"></a>Kassaposition (förhandsversion)
 
@@ -48,6 +48,5 @@ Skapa en ögonblicksbild om du vill spara och redigera kassapositionen. Mer info
 
 #### <a name="privacy-notice"></a>Sekretesspolicy
 Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

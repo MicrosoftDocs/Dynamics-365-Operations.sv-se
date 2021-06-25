@@ -2,7 +2,7 @@
 title: Krav för beräkning av maskinvara för lokala miljöer
 description: Detta ämne listar krav för beräkning av maskinvara för lokala miljöer
 author: sericks007
-ms.date: 11/27/2019
+ms.date: 06/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: c5e6e96ea1ce821233d7104bb9a7af8e793f4264
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 1ef427ff57c79b64a2435edd902e09a7d99e81d9
+ms.sourcegitcommit: 4a508bd11267f24eeb774af57faa56369beacf51
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923490"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6168739"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav för beräkning av maskinvara för lokala miljöer
 
@@ -131,6 +131,8 @@ I de flesta fall, om de inte används mycket, ska de rekommenderade minimikraven
 ## <a name="sql-server-reporting-services"></a>SQL Server Reporting Services 
 
 En SSRS-nod kan användas för normal tillgänglighet. Övervaka din SSRS-nod medan du testar och ökar antalet kärnor tillgängliga för SSRS på grundval av behov. Kontrollera att du har en tillgänglig förkonfigurerad sekundär nod på en virtuell värd som är en annan än SSRS VM. Detta är viktigt om det finns ett problem med den virtuella datorn som är värd för SSRS eller den virtuella värden. Om så är fallet behöver du byta ut dem.
+
+Från och med version 10.0.17 är det möjligt att konfigurera ytterligare SSRS-noder för att uppnå en hög tillgänglighet. Mer information finns i [Konfigurera hög tillgänglighet för SSRS-noder (SQL Server Reporting Services)](../../dev-itpro/deployment/onprem-ssrsha.md).
 
 ## <a name="environment-orchestrator"></a>Orchestrator-miljö
 

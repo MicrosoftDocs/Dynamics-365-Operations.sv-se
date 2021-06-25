@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e0df9177b63619787dba057e9aa532255e68bde
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 86fbc81de8ba59f0782bd9af5b50bfcf45d5621a
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811880"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193055"
 ---
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Fördela tid till jobb i en jobbunt
 
@@ -80,7 +80,7 @@ Följande tabell visar formeln för att beräkna allokerad tid. Formeln är föl
 ## <a name="net-time-allocation-key"></a>Allokeringsnyckeln Nettotid
 Följande tabell visar formeln för att beräkna allokerad tid. Formeln är följande: Beräknad tid per rapport = Bunttid ÷ Antal jobb
 
-|                              | 09:00–10:00 (1 timme) | 10:00–11:00 (1 timme) | 11:00–13:00 (2 timmar) | 13:00–15:00 (2 timmar) | Tilldelad tid |
+| Exempel                       | 09:00–10:00 (1 timme) | 10:00–11:00 (1 timme) | 11:00–13:00 (2 timmar) | 13:00–15:00 (2 timmar) | Tilldelad tid |
 |------------------------------|----------------------|----------------------|-----------------------|-----------------------|----------------|
 | Antalet jobb i bunten. | 1                    | 3                    | 2                     | 1                     | Inte tillämpligt |
 | Jobb 1                        | 1 ÷ 1 = 1 timme       | 1 ÷ 3 = 0,33 timme    | Inte tillämpligt        | Inte tillämpligt        | 1,33 timmar     |

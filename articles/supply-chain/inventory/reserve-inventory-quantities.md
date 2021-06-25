@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1fcdb43f95892c541be2c31101d8f592f5d5e16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 052cb56e026fbfe5cf5f6ad5d265337d7b88dc4d
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834203"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193963"
 ---
 # <a name="reserve-inventory-quantities"></a>Reservera lagerkvantiteter
 
@@ -46,7 +46,7 @@ Policyer för lagerreservation anges på sidan **Artikelmodellgrupper**, sidan *
 
 Avsnittet **Lagerpolicyer** innehåller följande reservationspolicyer.
 
-|                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| &nbsp;                  | &nbsp;                                                                                                                                     |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Reservationspolicy**  | **Beskrivning**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | FIFO-datumkontrollerad    | Om du väljer alternativet **FIFO-datumkontrollerad**, kommer lagerreservationen att styras av ett sorteringsdatum i enlighet med bästa FIFO-princip. En batch reserveras baserat på det tidigaste datumet för inleverans av artiklar, enligt principen först in-först ut (FIFO).                                                                                                                                                                                                                                                                       |

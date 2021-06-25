@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 1726d127883f9849fe87888134c0c174377ecf2b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7bba084b03f8698c8bf31d171d5e4e486ed06ad
+ms.sourcegitcommit: a7649b361ec54b49c0e9ee1c1c63a8815f320225
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813037"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187257"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Visa planhistorik och planeringsloggar
 
@@ -31,19 +31,17 @@ I det här avsnittet beskrivs hur du visar historiken för planeringsjobb som l�
 
 Om du vill visa historiken för en plan öppnar du planen genom att gå till **huvudplanering** \> **inställningar** \> **planer** \> **huvudplaner** och väljer **historik**. I historiken visas alla jobb för den valda planen. Listan innehåller slutförda och aktiva jobb.
 
-Förutom att visa starttid och status för jobb kan du visa loggen för ett specifikt jobb. Loggen innehåller ytterligare information och varningar. Alla jobb har inte en logg. Om du vill visa loggen för ett jobb väljer du **logg**.
+Jobbhistoriken i huvudplaneringskörningarna för planeringsoptimeraren innehåller bara upp till 60 poster per huvudplan. När du kör en ny huvudplaneringsberäkning tas den planens tidigaste historikpost bort.
+
+Förutom att visa starttid och status för jobb kan du visa loggen för ett specifikt jobb. Loggen innehåller ytterligare information och varningar. Alla jobb har inte en logg. Om du vill visa loggen för ett jobb väljer du **logg**. Loggposter lagras bara i 30 dagar efter det datum då jobbet avslutades, efter det att de raderas automatiskt.
 
 ## <a name="related-resources"></a>Relaterade resurser
 
-[Rådgivning om optimering – översikt](planning-optimization-overview.md)
-
-[Kom igång med planeringsoptimering](get-started.md)
-
-[Planera analys av optimeringsanpassning](planning-optimization-fit-analysis.md)
-
-[Använda filter på en plan](plan-filters.md)
-
-[Annullera ett planeringsjobb](cancel-planning-job.md)
+- [Planeringsoptimering – översikt](planning-optimization-overview.md)
+- [Kom i gång med planeringsoptimering](get-started.md)
+- [Planera analys av optimeringsanpassning](planning-optimization-fit-analysis.md)
+- [Använda filter på en plan](plan-filters.md)
+- [Annullera ett planeringsjobb](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

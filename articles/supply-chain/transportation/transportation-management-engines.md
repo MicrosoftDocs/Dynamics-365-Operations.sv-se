@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf9c256c4b9ade408111a46899ee266b2eb0d651
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: 61c745802edc419cb2ae94df6bc293f839cd8a0a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920119"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188869"
 ---
 # <a name="transportation-management-engines"></a>Transporthanteringsmotorer
 
@@ -43,8 +43,7 @@ Följande tabell visar de transporthanteringsmotorer som är tillgängliga.
 | **Fraktsedelstyp**            | Standardiserar fraktfakturan och frakträkningsraderna och används för automatisk fraktfakturamatchning.                                                                                                                                                                                                                |
 
 
-<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Vilka motorer måste konfigureras att utvärdera en försändelse?
----------------------------------------------------
+## <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Vilka motorer måste konfigureras att utvärdera en försändelse?
 
 Om du vill utvärdera en försändelse genom att använda ett visst transportföretag, måste du konfigurera flera transporthanteringsmotorer. **Tariffmotor** krävs, men andra transportledningsmotorer kan krävas för att stödja **Tariffmotor**. **Tariffmotor** kan till exempel användas för att hämta data från **Milkostnadsmotor** om du vill beräkna tariffen baserat på milkostnad mellan källa och mål.
 
@@ -62,8 +61,7 @@ I de flesta fall kan du klicka på knappen **Parametrar** i transporthanteringsm
 |  <em>MileageEngineCode</em>  |                       Koden för milkostnadsmotor som identifierar milkostnad motorposten i databasen.                        |
 | <em>ApportionmentEngine</em> |                        Koden för allmän motor som identifierar fördelningsmotorn i databasen.                        |
 
-<a name="how-is-metadata-used-in-transportation-management-engines"></a>Hur används metadata i transportledningsmotorer?
-----------------------------------------------------------
+## <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hur används metadata i transportledningsmotorer?
 
 Transporthanteringsmotorer, som utgår från data som anges i Supply Chain Management kan använda olika datascheman. Transporthanteringssystemet möjliggör för olika transportledningsmotorer att använda samma allmänna register i den fysiska databasen. Om du vill vara säker på att den körtiden för tolkningen av motordata är korrekt, kan du definiera metadata för databasregistren. Detta minskar kostnaden för att skapa nya transporthanteringsmotorer eftersom ytterligare register- och formulärstrukturer inte krävs i Operations.
 

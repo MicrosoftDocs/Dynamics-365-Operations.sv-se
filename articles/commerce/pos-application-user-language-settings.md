@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0c5087ee04030a76aef774871b88b7970391723c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bdd03dff359e7c2799eff53b0e999580ce8b1c06
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804391"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193113"
 ---
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>Kassaprogram (POS) och språkinställningar för användare
 
@@ -57,7 +57,7 @@ Kassaanvändarens språkinställning anger vilka översättningar som används i
 
 POS användarens språk är inställd på **Alla arbetare** på sidan **Arbetare** under **Butik och handel &gt; Språk**. Detta är inte inställt på fliken Profil. Den här inställningen används inte av POS. Om användarens språk är inte inställd eller till ett språk där översättningar är inte tillgängliga, POS återgår till butiken språk.
 
-|             | UI-språk                  | Data språk (produkter, kvitto format, radvisning etc.) |
+| &nbsp;      | UI-språk                  | Data språk (produkter, kvitto format, radvisning etc.) |
 |-------------|----------------------------|---------------------------------------------------------------|
 | **Företag** | Standard                    | Standard                                                       |
 | **Butik**   | Åsidosätter företaget          | Åsidosätter företaget                                             |

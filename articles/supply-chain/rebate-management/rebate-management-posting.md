@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: b52a1720077c055d416f04cbbe9ec46cbcf319bc
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 808080d9e84c4af1b061d5a4ce76d5fa309e66f7
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020421"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216753"
 ---
 # <a name="rebate-management-posting-setup"></a>Bokföringsinställningar för rabatthantering
 
@@ -43,7 +43,7 @@ I tabellen nedan beskrivs de inställningar som är tillgängliga i rubrikavsnit
 | beskrivning | Ange en beskrivning av profilen. |
 | Modul | Välj den typ av rabatter och royalties som profilen är associerad med ( *Kund* eller *Leverantör*). |
 | Typ | Välj profiltyp ( *Rabatt* eller *Royalty*). |
-| Betalningstyp | <p>Det här fältet bestämmer formatet för den bokförda rabattutleveransen.<p><p>När fältet **Typ** är inställt på *Rabatt* är följande värden tillgängliga:</p><ul><li>*Ingen* – Det finns ingen standardbokföringstyp. Därför måste du definiera typen när du bearbetar.</li><li>*Betala med leverantörsreskontra* – När du bokför rabatten skapas en leverantörsfaktura för remissleverantören som ställs in för rabattkunden.</li><li>*Kundavdrag* – När du bokför rabatten skapas en kundavdragsjournal för rabattkunden.</li><li>*Kundavdrag för momsfaktura* – När du bokför rabatten skapas en fritextfaktura för rabattkunden.</li><li>*Handelsutgift* – När du bokför rabatten skapas en kundavdragsjournal för rabattkunden.</li><li>*Rapportering* – När du bokför rabatten skapas en kundavdragsjournal för rabattkunden.</li></ul><p>När fältet **Typ** är inställt på *Royalty* är följande värden tillgängliga:</p><ul><li>*Ingen* – Det finns ingen standardbokföringstyp. Därför måste du definiera typen när du bearbetar.</li><li>*Betala med leverantörsreskontra* – När du bokför rabatten skapas en leverantörsfaktura för rabattens leverantörskonto.</li><li>*Rapportering* – När du bokför rabatten skapas en leverantörsfaktura för rabattens leverantörskonto.</li></ul><p>För mer information, se avsnittet [Betalningstyper](#payment-types) som följer. |
+| Betalningstyp | <p>Det här fältet bestämmer formatet för den bokförda rabattutleveransen.<p><p>När fältet **Typ** är inställt på *Rabatt* är följande värden tillgängliga:</p><ul><li>*Betala med leverantörsreskontra* – När du bokför en kundrabatt skapas en leverantörsfaktura för remissleverantören som ställs in för rabattkunden. När du bokför en leverantörsrabatt skapas en leverantörsfaktura för rabattens leverantörskonto.</li><li>*Kundavdrag* – När du bokför rabatten skapas en kundavdragsjournal för rabattkunden.</li><li>*Kundavdrag för momsfaktura* – När du bokför rabatten skapas en fritextfaktura för rabattkunden.</li><li>*Handelsutgift* – När du bokför rabatten skapas en kundavdragsjournal för rabattkunden.</li><li>*Rapportering* – När du bokför rabatten skapas en kundavdragsjournal för rabattkunden.</li></ul><p>När fältet **Typ** är inställt på *Royalty* är följande värden tillgängliga:</p><ul><li>*Betala med leverantörsreskontra* – När du bokför rabatten skapas en leverantörsfaktura för rabattens leverantörskonto.</li><li>*Rapportering* – När du bokför rabatten skapas en leverantörsfaktura för rabattens leverantörskonto.</li></ul><p>För mer information, se avsnittet [Betalningstyper](#payment-types) som följer. |
 | Företag | Välj vilket företag (juridisk person) som provisioner ska periodiseras och att anspråken ska betalas av. |
 
 ### <a name="payment-types"></a>Betalningstyper

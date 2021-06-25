@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d322d0a59c2d1fe7be98b97bf25c6db8dec2d6e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e57e97847c6aa7a775b0f2639dff93f1e3a9e7a2
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815366"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189383"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Beräkningsmetod för moms i fältet Ursprung
 
@@ -52,8 +52,7 @@ Om nettobeloppet är 10,00, är AVGIFT 1 1,00 (10,00 x 10 %) och AVGIFT 2 = 2,00
 | Endast en momskod med Ursprung = procentandel av bruttobeloppet kan användas för en transaktion. Om mer än en sådan momskod bestäms av en transaktion, visas ett fel att moms inte kan beräknas. |
 
 
-<a name="percentage-of-sales-tax"></a>Procent av moms
------------------------
+## <a name="percentage-of-sales-tax"></a>Procent av moms
 
 När du väljer procentsats av moms i fältet Ursprung, beräknas momsen som en procentandel av momsen som har valts i fältet Moms på moms. Momsen som väljs i fältet Moms på moms beräknas först. Den andra momsen beräknas därefter baserat på det första momsbeloppet.
 ### <a name="example"></a>Exempel
@@ -119,8 +118,7 @@ Dokumentet/journalen ställs in på Moms ingår i beloppen = Nej, Transaktionens
 
 
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Momssatser baserade på fälten Bidragsunderlag och Beräkningsmetoder](marginal-base-field.md)
 

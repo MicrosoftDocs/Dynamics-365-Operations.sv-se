@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: b773b12b7eb3a8a59627d011f2469a98c5dde58a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: d683b0b140592e4c93a68f7f58c7d13475b4c2a5
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058930"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189611"
 ---
 # <a name="compensation-plans"></a>Kompensationsplaner
 
@@ -121,8 +121,7 @@ Följande register visar komponenter i kompensationsprocessen som kan vara väse
 ## <a name="process-events"></a>Processhändelser
 En processhändelse beräknar kompensationsinformation för en angiven period för alla medarbetare som har anmälts till minst en fast eller variabel kompensationsplan. Du kan köra en processhändelse flera gånger för att testa eller uppdatera beräknade kompensationsresultat.
 
-<a name="compensation-events"></a>Kompensationshändelser
--------------------
+## <a name="compensation-events"></a>Kompensationshändelser
 
 Varje gång en processhändelse körs skapas en kompensationshändelse.  Händelser för medarbetarkompensation innehåller resultaten av kompensationsprocessen för varje anställd som omfattas av den processhändelsen.  När beräkningarna är korrekta kan du ladda kompensationshändelsen för att uppdatera kompensationsposterna för de medarbetare som påverkas av processhändelsen.
 

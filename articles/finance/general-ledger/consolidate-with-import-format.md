@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: e3124ac0e161e003986d7e167e292cbb374e1bfa
-ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
+ms.openlocfilehash: 714c34dfcd109a442a4ecd741409dea5c4aade20
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085460"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216816"
 ---
 # <a name="import-format-for-consolidation"></a>Importformat for konsolidering
 
@@ -34,7 +34,7 @@ I tabellen nedan visas det importformat som du bör använda när du gör en kon
 |--------------|---------|-------|
 | 1            | 170150, Goodwill, 4 | <ul><li>Postregistret</li><li>Huvudkonto-ID för källa</li><li>Huvudkontoraden</li><li>Huvudkontotypen</li></ul> |
 | 2            | 110130, 2015/01/01, 1, USD, 0,0,80699.39,0,1 | <ul><li>Huvudkonto-ID</li><li>Transaktionsdatumet</li><li>Räkenskapsperiodtyp (**0** = Öppnande, **1** = Verksamhet, samt **2** = Stängning)</li><li>Transaktionsvalutan</li><li>Debet eller kredit (**0** = Debet och **1** = Kredit)</li><li>Bokföringsskikt</li><li>Transaktionsbelopp</li><li>Kvantitet</li><li>Lokalt RecID (tvetydigt, unikt int64-värde för transaktionen)</li></ul> |
-| 3            | USMF0000009, 2017/01/01, FY2017, 1, 2017,01,01, 602200, USD, 6053.6.0 | <ul><li>Postnumret (transaktionsnummer för budgetrubrik)</li><li>Standarddatum för budgetrubrik</li><li>ID för budgetmodell</li><li>Uppräkningens heltalsvärde för transaktionstypen (tomt, ursprunglig budget o.s.v.)</li><li>Datum för raden</li><li>Huvudkonto-ID för raden</li><li>Valutakod för raden</li><li>Beloppet för raden i transaktionsvalutan</li><li>Uppräkningens heltalsvärde för budgettypen för raden (utgift eller intäkt)</li></ul> |
+| 3            | USMF0000009, 2017/01/01, FY2017, 1, 2017,01,01, 602200, USD, 6053.6.0 | <ul><li>Postnumret (transaktionsnummer för budgetrubrik)</li><li>Standarddatum för budgetrubrik</li><li>ID för budgetmodell</li><li>Budgettyp (**1** – Ursprunglig budget, **2** – Överföring, **3** – Ändring, **4** – Inteckning, **5** – Förinteckning, **6** – Överförd budget, **7** – Projekt, **8** – Anläggningstillgångar, **9** – Efterfrågeprognos, **10** – Inflödesprognos, **11** – Enhetliga fördelningar, **12** – Preliminär budget.)</li><li>Datum för raden</li><li>Huvudkonto-ID för raden</li><li>Valutakod för raden</li><li>Beloppet för raden i transaktionsvalutan</li><li>Uppräkningens heltalsvärde för budgettypen för raden (utgift eller intäkt)</li></ul> |
 | 4            | DEMF | RecordCompany är juridisk person för Källa. |
 | 5            | 110130, 2015/01/01, 1, USD, 0,0,80699.39,0,1 | <ul><li>Huvudkonto-ID</li><li>Transaktionsdatum</li><li>Räkenskapsperiodtyp (0 Öppnande, 1 Verksamhet, 2 Stängning)</li><li>Transaktionsvaluta</li><li>Debet eller kredit (0 för Debet och 1 för Kredit)</li><li>Bokföringsskikt</li><li>Transaktionsbelopp</li><li>Antal</li><li>Lokalt RecID (tvetydigt, unikt int64-värde för transaktionen)</li></ul>  |
 | 6            | Affärsenhet, 1 avdelning, 2 | Attributen för den ekonomiska dimension som har definierats i segmentordningen.<p>På sidan **Exportera** kan du bekräfta attributdefinitionerna.</p> |

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 953069dfd39843d39cc92d99318f02819dc31ed0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 513066a597620450f0b482e98e36d31c6f2c980a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820994"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189103"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Redovisningsfördelningar och journalposter för leverantörsfakturor
 
@@ -28,8 +28,7 @@ ms.locfileid: "5820994"
 
 Redovisningsfördelningar används för att definiera hur ett belopp ska redovisas, till exempel hur utgiften, momsen eller avgifterna ska redovisas på en leverantörsfaktura. Varje belopp som måste redovisas när leverantörsfakturan journalförs ska ha en eller flera redovisningsfördelningar. 
 
-<a name="accounting-distributions"></a>Redovisningsfördelningar 
--------------------------
+## <a name="accounting-distributions"></a>Redovisningsfördelningar 
 
 Du kan använda följande knappar i formuläret Leverantörsfaktura om du vill visa, och möjligen ändra, redovisningsfördelningarna för varje belopp på leverantörsfakturan.
 -   **Fördela belopp** – Visa och ändra redovisningsfördelningar för en enskild rad och eventuella underordnade rader, till exempel moms eller avgifter. Du kan också visa och ändra redovisningsfördelningarna för den underordnade raden direkt från sidan Momstransaktioner eller sidan Transaktioner för avgifter.
@@ -227,8 +226,7 @@ När du registrerar en leverantörsfaktura, kommer varje belopp fördelas på f�
 </table>
 
 
-<a name="distributing-taxes"></a>Fördela moms
-------------------
+## <a name="distributing-taxes"></a>Fördela moms
 
 Redovisningsfördelning för skatter går inte att skapa förrän skatter har beräknats. Om du vill beräkna moms måste du färdigställa en av följande uppgifter på sidan Leverantörsfaktura.
 -   Visa fakturasumman.

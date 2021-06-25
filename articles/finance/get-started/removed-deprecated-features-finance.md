@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 8cacf2fbef8873288493f71b43d22dc186e6d18e
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: e6a391b10ddaef79e68f47afae7d77135a1c333a
+ms.sourcegitcommit: cb282e8d2306ab71adf80a84346a6863d2d019e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980908"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184135"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Borttagna och utfasade funktioner i Dynamics 365 Finance
 
@@ -65,7 +65,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 | **Ersatt av en annan funktion?**   | Ja |
 | **Produktområden som påverkas**         | Dynamics 365 Finance, Supply Chain Management och Project Operations-produkter|
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell: Senast den 1 april 2022 planerar vi att inte längre stödja Microsoft Dynamics Lifecycle Services-databasen (LCS) som lagringsalternativ för konfigurationer av elektronisk rapportering (ER). Nya Microsoft ER-konfigurationer kommer att publiceras för hämtning exklusivt från den globala databasen. Du öppnar den globala databasen från Dynamics 365-produkterna och RCS. Mer information finns i [Importera konfigurationer för elektronisk rapportering (ER) från RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md). |
+| **Status**                         | Inaktuell: Senast den 1 april 2022 planerar vi att inte längre stödja Microsoft Dynamics Lifecycle Services-databasen (LCS) som lagringsalternativ för konfigurationer av elektronisk rapportering (ER). Nya Microsoft ER-konfigurationer kommer att publiceras för hämtning exklusivt från den globala databasen. Du öppnar den globala databasen från Dynamics 365-produkterna och RCS. Mer information finns i [Importera ER-konfigurationer från RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) och [Regulatory Configuration Service – Lagringsavskrivning för Lifecycle Services-lagring](../localizations/rcs-lcs-repo-dep-faq.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.16 utgåva
 

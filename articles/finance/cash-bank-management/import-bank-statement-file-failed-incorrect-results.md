@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0e01881a6b68526479d27014d49a718069cffc9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 14f0e480b93e663f81db5a1edb2ae71b559bb05e
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815894"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188570"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>Felsökning av fel på bankutdragsfilen
 
@@ -28,8 +28,7 @@ ms.locfileid: "5815894"
 
 Det är viktigt att bankutdragsfilen från banken matchar den layout som Microsoft Dynamics 365 Finance stöder. På grund av de strikta standarder som gäller för bankutdrag kommer de flesta integreringar att fungera korrekt. Ibland kan emellertid utdragsfilen inte importeras, eller också har den felaktiga resultat. Vanligtvis orsakas dessa problem av små skillnader i bankutdragsfilen. Denna artikel förklarar hur du korrigerar dessa skillnader och löser problemen.
 
-<a name="what-is-the-error"></a>Vad består felet av?
-------------------
+## <a name="what-is-the-error"></a>Vad består felet av?
 
 Gå till jobbhistoriken för datahantering och dess utförandedetaljer för att hitta felet när du försöker importera en bankutdragsfil. Felet kan hjälpa dig genom att peka på utdraget, saldot eller utdragsraden. Det ger dig emellertid troligtvis inte tillräckligt med information för att hjälpa dig att identifiera det fält eller element som orsakat problemet.
 

@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db97d05d79a100ebdcfb5b4931b37243b77bd352
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bafbb908531e003d2184409bf5d09ed5848fc474
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815001"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216794"
 ---
 # <a name="intrastat-overview"></a>Intrastat – översikt
 
@@ -73,7 +73,7 @@ Följande tabell anger förutsättningarna för Intrastat-rapportering.
 </tr>
 <tr class="odd">
 <td>Produktkategorihierarki (försäljningshierarki, anskaffningshierarki)</td>
-<td>Tilldela Intrastat-artikelkoderna till kategorinoder på fliken <strong>Artikelkoder</strong> på sidan <strong>Kategorihierarki</strong>. När du tilldelar en artikelkod till en överordnad kategorinod gäller den koden för alla underordnade kategorinoder. De valda artikelkoderna är tillgängliga i vyn <strong>Markerad</strong> när du väljer en artikelkod i informationen om frisläppta produkter och på försäljningsorder-, inköpsorder- och överföringsorderrader.</td>
+<td>Tilldela Intrastat-artikelkoderna till kategorinoder på fliken <strong>Artikelkoder</strong> på sidan <strong>Kategorihierarki</strong>. När du tilldelar en artikelkod till en överordnad kategorinod gäller den koden för alla underordnade kategorinoder. De valda artikelkoderna är tillgängliga i vyn <strong>Markerade</strong> när du väljer en varukod i produktinformationen samt på försäljningsorder-, inköpsorder- och överföringsorderrader.</td>
 </tr>
 <tr class="even">
 <td>Information om frisläppt produkt</td>
@@ -84,6 +84,7 @@ Följande tabell anger förutsättningarna för Intrastat-rapportering.
 <li><strong>Ursprungsland/ursprungsregion</strong> – Välj standardlandet/standardregionen där varorna erhölls helt eller tillverkades.</li>
 <li><strong>Delstat/provins för ursprung/mål</strong> – Välj den förvalda delstaten/provinsen för målen för införsel och ursprungsdelstaten/ursprungsprovinsen för utförsel.</li>
 <li><strong>Nettovikt i kg</strong></li>
+<li><strong>Exkludera</strong> - Aktivera den här parametern om du inte vill överföra transaktioner med den här produkten till Intrastat</li>
 </ul></td>
 </tr>
 <tr class="odd">

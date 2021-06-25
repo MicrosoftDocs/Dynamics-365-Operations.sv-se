@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: e2b0abb2826f81ed87b4f0f37dba32c1d8d749c2
-ms.sourcegitcommit: 194d68b24cd36db21e9029044bed18983fd9810c
+ms.openlocfilehash: c62290506d32579d926ad1a1d6f090845c0d0f26
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937896"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216622"
 ---
 # <a name="party-and-global-address-book"></a>Part och global adressbok
 
@@ -143,16 +143,22 @@ Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande ve
 
 ## <a name="setup"></a>Ställ in
 
-1. Installera den senaste versionen (2.2.2.60 eller senare) av [Lösningen för dubbelriktad skrivning för programorkestrering](https://aka.ms/dual-write-app).
+1. Öppna din appmiljö för kundengagemang.
 
-2. Installera [lösningar för dubbel skrivningspart och global adressbok](https://aka.ms/dual-write-gab).
+2. Installera den senaste versionen (2.2.2.60 eller senare) av [Lösningen för dubbelriktad skrivning för programorkestrering](https://aka.ms/dual-write-app).
 
-3. Stoppa följande kartor eftersom de inte krävs av dig. Kör istället `Contacts V2 (msdyn_contactforparties)`-kartan.
+3. Installera [lösningar för dubbel skrivningspart och global adressbok](https://aka.ms/dual-write-gab).
+
+4. Öppna appen Finance and Operations. Navigera till modulen Datahantering och välj fliken Dubbel skrivning. Administrationssidan för dubbel skrivning öppnas.
+
+5. Använd båda lösningar som är installerade i steg 2 och 3 med hjälp av funktionen [Använd lösning](link-your-environment.md).
+
+6. Stoppa följande kartor eftersom de inte krävs av dig. Kör istället `Contacts V2 (msdyn_contactforparties)`-kartan.
 
     + CDS Kontakter V2 och Kontakter (gäller kundkontakter)
     + CDS Kontakter V2 och Kontakter (gäller leverantörskontakter)
 
-4. Följande enhetsmappningar uppdateras för partfunktionen, så den senaste versionen måste tillämpas på dessa mappningar.
+7. Följande enhetsmappningar uppdateras för partfunktionen, så den senaste versionen måste tillämpas på dessa mappningar.
 
     Mappa | Uppdatera till den här versionen | Ändringar
     ---|---|---
@@ -176,7 +182,7 @@ Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande ve
     `Salutations (msdyn_salutations)` | 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | Detta är en ny karta som har lagts till som en del av den här utgåvan.
 
-5. Innan du kör kartorna ovan måste du uppdatera integrationsnycklarna manuellt enligt beskrivningen i följande steg. Välj sedan **Spara**.
+8. Innan du kör kartorna ovan måste du uppdatera integrationsnycklarna manuellt enligt beskrivningen i följande steg. Välj sedan **Spara**.
 
     | Mappa | Nycklar |
     |-----|------|
@@ -185,7 +191,7 @@ Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande ve
     | Kontakt för kund/leverantör | msdyn_contactforpartynumber [Kontakt för partsnummer]<br>msdyn_associatedcompanyid.cdm_companycode [associerat företag (företagskod)] |
     | Leverantör | msdyn_vendoraccountnumber [leverantörskontonummer]<br>msdyn_company.cdm_companycode [Företag (Företagskod)]|
 
-6. I Dataverse har teckengränserna för dubblettidentifieringsregler ökat från 450 till 700 tecken. Med den här gränsen kan du lägga till en eller flera nycklar till dubblettidentifieringsreglerna. Expandera regeln för dubblettidentifiering för registret **Konton** genom att ställa in följande fält.
+9. I Dataverse har teckengränserna för dubblettidentifieringsregler ökat från 450 till 700 tecken. Med den här gränsen kan du lägga till en eller flera nycklar till dubblettidentifieringsreglerna. Expandera regeln för dubblettidentifiering för registret **Konton** genom att ställa in följande fält.
 
     | Fält | Värde |
     |-------|-------|
@@ -201,7 +207,7 @@ Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande ve
 
     ![Dubblettregel för konton](media/duplicate-rule-1.PNG)
 
-7. Expandera regeln för dubblettidentifiering för registret **Kontakter** genom att ställa in följande fält.
+10. Expandera regeln för dubblettidentifiering för registret **Kontakter** genom att ställa in följande fält.
 
     | Fält | Värde |
     |-------|-------|
@@ -217,9 +223,9 @@ Elektroniska adresser är bara tillgängliga i det här rutnätet. I kommande ve
 
     ![Dubblettregel för kontakter](media/duplicate-rule-2.PNG)
 
-8. Om du redan är en befintlig användare med dubbelriktad skrivning följer du instruktionerna i [Uppgradera till modellen för part och global adressbok](upgrade-party-gab.md) och uppgradera dina uppgifter.
+11. Om du redan är en befintlig användare med dubbelriktad skrivning följer du instruktionerna i [Uppgradera till modellen för part och global adressbok](upgrade-party-gab.md) och uppgradera dina uppgifter.
 
-9. Kör kartorna i följande ordning: Om du får ett fel där det står "Projektvalideringen misslyckades. Målfält saknas..." öppnar du kartan och väljer **Uppdatera register**. Kör sedan kartan.
+12. Kör kartorna i följande ordning: Om du får ett fel där det står "Projektvalideringen misslyckades. Målfält saknas..." öppnar du kartan och väljer **Uppdatera register**. Kör sedan kartan.
 
     Finance and Operations-app | Kundengagemangsapp  
     ----------------------------|------------------------

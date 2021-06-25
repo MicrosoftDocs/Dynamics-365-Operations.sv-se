@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6a3e0e4a8389fdd6580f66004d86ef4b1980dd9f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891803"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224044"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Skapa en ny ER-lösning för att skriva ut en egen rapport
 
@@ -285,7 +285,7 @@ Om du vill fortsätta hoppar du över nästa procedur, [skapa en ny konfiguratio
 
 Status för version 1 av denna konfiguration ändras från **utkast** till **slutförd**. Version 1 kan inte längre ändras. Den här versionen innehåller den konfigurerade datamodellen och kan användas som grund för andra ER-konfigurationer. Version 2 av denna konfiguration skapas och har statusen **utkast**. Du kan redigera den här versionen för att justera datamodellen **enkät**.
 
-![Versioner av den redigerbara ER-konfigurationen på sidan konfigurationer](./media/er-quick-start1-model-configuration.png)
+![Versioner av den redigerbara konfigurationen på sidan Konfigurationer](./media/er-quick-start1-model-configuration.png)
 
 Mer information om versionshantering för ER-konfigurationer finns i [Översikt över elektroniska rapporter (ER)](general-electronic-reporting.md#component-versioning).
 
@@ -799,7 +799,7 @@ Följande bild visar en genererad rapport i Excel-format där frågeställningar
 
 Status för version 1.1 av denna konfiguration ändras från **utkast** till **slutförd**. Version 1.1 kan inte längre ändras. Den här versionen innehåller det konfigurerade formatet och kan användas för att skriva ut din anpassade rapport. Version 1.2 av denna konfiguration skapas och har statusen **utkast**. Du kan redigera den här versionen för att justera formatet för rapporten **enkät**.
 
-![Versioner av den redigerbara ER-konfigurationen på sidan konfigurationer](./media/er-quick-start1-format-configuration.png)
+![Redigerbar ER-konfigurationen på sidan Konfigurationer](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > Det konfigurerade formatet är din design av **enkät**-rapporten och innehåller inga relationer till de Finance-specifika artefakter.

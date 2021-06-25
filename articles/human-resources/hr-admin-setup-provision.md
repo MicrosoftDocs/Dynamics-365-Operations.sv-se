@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: df06df63c28ca99bb9cb95e99b3498f70c54d97f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e354cec1fb5612afff6e265c4808f4fb2c237a9d
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053669"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193734"
 ---
 # <a name="provision-human-resources"></a>Reservera Personal
 
@@ -56,7 +56,7 @@ För att hantera dina Personal-miljöer med LCS måste först skapa ett LCS-proj
 1. Logga in på [LCS](https://lcs.dynamics.com/Logon/Index) med det konto som du använder för din Personal-prenumeration.
 
    > [!NOTE]
-   > För att säkerställa ett lyckat tillhandahållande måste det konto som du använder för att tillhandahålla Personal-miljön tilldelas antingen rollen **Systemadministratör** eller rollen **Systemanpassare** i den Power Apps-miljö som är kopplad till Personal-miljön. Se [Konfigurera användarsäkerhet för resurser](https://docs.microsoft.com/power-platform/admin/database-security) för mer information om hur du tilldelar säkerhetsroller till användare i Power Platform.
+   > För att säkerställa ett lyckat tillhandahållande måste det konto som du använder för att tillhandahålla Personal-miljön tilldelas antingen rollen **Systemadministratör** eller rollen **Systemanpassare** i den Power Apps-miljö som är kopplad till Personal-miljön. Se [Konfigurera användarsäkerhet för resurser](/power-platform/admin/database-security) för mer information om hur du tilldelar säkerhetsroller till användare i Power Platform.
 
 2. Klicka på plustecknet (**+**) för att skapa ett projekt.
 

@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 672bb37a4d191c4b4f72b234ba98766ffd223f69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5d1df15462a39c17710c9300425561bba8b69fc7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826135"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188390"
 ---
 # <a name="eu-sales-list-reporting"></a>EU-säljlistrapportering
 
@@ -27,8 +27,7 @@ ms.locfileid: "5826135"
 
 Det här avsnittet innehåller information om rapportering av försäljningslista för Europeiska unionen (EU).
 
-<a name="eu-sales-list-reporting"></a>Rapportering av EU-säljlista
------------------------
+## <a name="eu-sales-list-reporting"></a>Rapportering av EU-säljlista
 
 En leverantör som utför gemenskapsinterna leveranser av varor eller tjänster till företag som är etablerade inom Europeiska unionen (EU) måste lämna in en försäkran om fläskkött förbrukningsmaterial (lista över försäljning inom EU, eller ESL). I allmänhet ESL måste lämnas till skattemyndigheten senast den sista dagen i månaden efter den kalendermånad som ESL omslag. Leverantören skall ange sin mervärdesskatt (moms) identifikationsnummer på ESL och måste också staten, kund, följande information:
 
@@ -40,9 +39,9 @@ Genom att använda ESL, skattemyndigheterna i varje EU-medlemsstat kan kontrolle
 ## <a name="overview-of-the-eu-sales-list-reporting-process"></a>Översikt över EU:s försäljning lista rapporteringen
 Du kan utföra följande uppgifter för försäljning i EU listan rapportering:
 
--   Samla information om gemenskapsintern handel. En gemenskapsintern handel transaktion kan vara en faktura, fri text faktura, fakturera projekt, eller säljaren fakturan. En transaktion är identifierade som baseras på det land/den region av motparten. Handeln inom gemenskapen transaktioner av olika slag samlas in i lista över försäljning inom EU tabell, där de är representerade i den gemensamma blankett. Varje post i ESL tabellen representerar en enda transaktion och består av moms-id för en motpart och det sammanlagda värdet av de varor och tjänster som levereras.
+-   Samla information om gemenskapsintern handel. En gemenskapsintern handel transaktion kan vara en faktura, fri text faktura, fakturera projekt, eller säljaren fakturan. En transaktion identifieras utifrån motpartens land/region. Handeln inom gemenskapen transaktioner av olika slag samlas in i lista över försäljning inom EU tabell, där de är representerade i den gemensamma blankett. Varje post i ESL tabellen representerar en enda transaktion och består av moms-id för en motpart och det sammanlagda värdet av de varor och tjänster som levereras.
 -   (Valfritt) Förhandsgranska en **lista över försäljning inom EU** . Du kan förhandsgranska och godkänn rapporten **försäljningslista för EU** för en given period i form av en Microsoft Excel arbetsbok.
--   Generera **försäljning i EU-lista** . **EU:s lista över försäljning** rapport genereras i form av en elektronisk fil av ett särskilt format som är specifika för varje medlemsstat i EU. I allmänhet är en **lista över försäljning inom EU** rapport innehåller grundläggande information om rapportering och värdena för leveranser av varor och tjänster. Informationen grupperas av land och momsnummer för en motpart.
+-   Generera **försäljning i EU-lista** . **EU:s lista över försäljning** rapport genereras i form av en elektronisk fil av ett särskilt format som är specifika för varje medlemsstat i EU. I allmänhet är en **lista över försäljning inom EU** rapport innehåller grundläggande information om rapportering och värdena för leveranser av varor och tjänster. Informationen grupperas utifrån land och momsnummer för en motpart.
 -   Stäng försäljningslista för EU rapportperioden. Efter den **lista över försäljning inom EU** rapport genereras och skickas till myndigheterna, kan du markera de poster i ESL tabell som **stängt**. Dessa transaktioner inte ingår i ytterligare rapporter.
 
 ## <a name="prerequisites"></a>Krav

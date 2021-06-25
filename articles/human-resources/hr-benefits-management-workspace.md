@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 154c3d70b61869795edc25514e98a28389eeb244
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: cf2c41af6aa8e77eff819cfacc3459ead290642b
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052251"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193441"
 ---
 # <a name="benefits-management-workspace"></a>Arbetsyta för förmånshantering
 
@@ -31,7 +31,7 @@ ms.locfileid: "6052251"
 I detta avsnitt beskrivs funktionen arbetsyta för **förmånshantering** i Dynamics 365 Human Resources.
 
 > [!NOTE]
-> Om du vill visa arbetsytan **förmånshantering** måste du först aktivera funktionen för **(förhandsgranska) förmånshantering** i funktionshantering. Mer information om hur du aktiverar förhandsfunktioner finns i [Hantera funktioner](../hr-admin-manage-features.md).<br><br>![Aktiver arbetsyta för hantering av förmåner](./media/hr-benefits-management-workspace-enable.png)
+> Om du vill visa arbetsytan **förmånshantering** måste du först aktivera funktionen för **(förhandsgranska) förmånshantering** i funktionshantering. Mer information om hur du aktiverar förhandsfunktioner finns i [Hantera funktioner](hr-admin-manage-features.md).<br><br>![Aktiver arbetsyta för hantering av förmåner](./media/hr-benefits-management-workspace-enable.png)
 
 Arbetsytan **förmånshantering** ger dig en snabb översikt över fördelar som kräver din uppmärksamhet. På denna sida kan du se:
 

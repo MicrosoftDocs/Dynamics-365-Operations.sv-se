@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f573dadeab88ead57fdb4b91ade21c244325058c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 818d96b14e32716e95b57391df5a90f7d32c4bb0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054029"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190242"
 ---
 # <a name="set-up-training-courses"></a>Ställa in utbildningskurser
 
@@ -28,8 +28,7 @@ ms.locfileid: "6054029"
 
 Personalresursadministratörer och chefer kan använda kursfunktionerna för att underhålla information om utbildningen som ges till arbetare.
 
- <a name="set-up-prerequisites"></a> Konfigurera krav
----------------------
+##  <a name="set-up-prerequisites"></a> Konfigurera krav
 
 Följande information krävs och måste ställas in innan du skapar kurser.
 -   **Kurstyper**
@@ -127,8 +126,7 @@ Följande tabell listar möjliga kursstatusvärden och de åtgärder som du kan 
 ## <a name="course-participants"></a>Kursdeltagare
 Kursdeltagare är arbetare som deltar i en utbildningskurs eller en händelse. Du kan bara registrera deltagare för öppna kurser. Det minsta och det högsta antalet deltagare som du kan registrera för en kurs definieras på snabbfliken **Allmänt** på sidan **Kurser**.
 
-<a name="workflow"></a>Arbetsflöde
---------
+## <a name="workflow"></a>Arbetsflöde
 
 Medarbetare som registrerar sig för en kurs via sidan **Självbetjäning för medarbetare** kan få sin registrering skickad via arbetsflödet för godkännande. Du kan tilldela ett arbetsflöde till en kurs i snabbfliken **Allmänt** på sidan **Kurser**.
 

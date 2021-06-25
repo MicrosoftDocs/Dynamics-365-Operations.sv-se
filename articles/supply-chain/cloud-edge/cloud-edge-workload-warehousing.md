@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980960"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184032"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
 
@@ -289,14 +289,15 @@ I följande tabell visas vilka funktioner för lagerställeåtgärder och hanter
 | Ändra arbetspool för arbete                           | Ja | Ja                          |
 | Avbryt arbete                                        | Ja | Ja                          |
 
-
 ### <a name="production"></a>Produktion
 
-Produktionsscenarier för lagerstyrning stöds för närvarande inte på arbetslaster i skalningsenheter, vilket anges i följande tabell.
+Följande tabell sammanfattar vilka produktionsscenarier för lagerstyrning som för närvarande stöds (eller inte) inte på arbetsbelastningar i skalningsenheter.
 
 | Process | Hubb | WES arbetsbelastning på en skalningsenhet |
 |---------|-----|------------------------------|
-| <p>Alla lagerstyrningsprocesser som är relaterade till produktion. Nedan följer några exempel:</p><li>Frisläpp till distributionslager</li><li>Bearbetning av produktionspåfyllnader</li><li>Råmaterialhämtning</li><li>RAF och lagring av färdig vara</li><li>Plats för samprodukt och biprodukt</li><li>Kanban-plats</li><li>Kanban-plockning</li><li>Starta produktionsorder</li><li>Produktionskassation</li><li>Sista produktionspall</li><li>Registrera materialförbrukning</li><li>Töm kanban</li></ul> | Ja | Nr |
+| Rapportera som färdigt gods och stuvat gods | Ja | Ja |
+| Plats för samprodukt och biprodukt | Ja | Ja |
+| <p>Alla andra lagerstyrningsprocesser som är relaterade till produktion, inklusive:</p><li>Frisläpp till distributionslager</li><li>Bearbetning av produktionspåfyllnader</li><li>Råmaterialhämtning</li><li>Kanban-plats</li><li>Kanban-plockning</li><li>Starta produktionsorder</li><li>Produktionskassation</li><li>Sista produktionspall</li><li>Registrera materialförbrukning</li><li>Töm kanban</li></ul> | Ja | Nr |
 
 ## <a name="maintaining-scale-units-for-wes"></a>Underhålla skalningsenheter för WES
 

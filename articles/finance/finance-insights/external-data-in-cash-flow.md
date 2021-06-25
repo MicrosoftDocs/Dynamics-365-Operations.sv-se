@@ -2,7 +2,7 @@
 title: Använd externa data i kassaflödesprognoser (förhandsversion)
 description: I det här ämnes beskrivs de konfigurationssteg som du måste utföra så att externa data kan anges i eller importeras till kassaflödesprognoser.
 author: rcarlson
-ms.date: 05/01/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ddfc0670a5fca24d996e9ab605e267f9f3f26f19
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 66bdb8bd638859bb4fc5565e3f12a8f671addcff
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897898"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186700"
 ---
 # <a name="use-external-data-in-cash-flow-forecasts-preview"></a>Använd externa data i kassaflödesprognoser (förhandsversion)
 
@@ -57,9 +57,5 @@ Dessutom, om du måste flytta konfigurationsdata från en miljö till en annan, 
 
 - Konfiguration av extern kassaflödesprognoskälla
 - Konfiguration av extern källa för kassaflödesprognos – juridisk person
-
-#### <a name="privacy-notice"></a>Sekretesspolicy
-Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

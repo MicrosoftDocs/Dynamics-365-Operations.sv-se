@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3f8aa791cee1926afe6be347331d47902a3b7304
-ms.sourcegitcommit: f4dc09601bceb5cdc88ee184ce7c8f369e3e6e86
+ms.openlocfilehash: e72b81d4a109db2dd8b4c6ca2ca0b030220e25f3
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6060573"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216729"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>Kom igång med skatteberäkning (förhandsversion)
 
@@ -58,7 +58,7 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 Stegen i det här avsnittet är inte relaterade till någon specifik juridisk person. Du måste bara genomföra den här proceduren en gång och du kan genomföra den i alla juridiska personer i RCS.
 
 1. Logga in på [RCS](https://marketing.configure.global.dynamics.com/).
-2. I arbetsytan Finance i **Elektronisk rapportering**, lägg till ny konfigurationsleverantör. Använd ditt företagsnamn som namn på leverantören. Mer information finns i [Skapa konfigurationsleverantörer och markera dem som aktiva](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. I arbetsytan Finance i **Elektronisk rapportering** lägger du till en ny konfigurationsleverantör. Använd ditt företagsnamn som namn på leverantören. Mer information finns i [Skapa konfigurationsleverantörer och markera dem som aktiva](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Välj den konfigurationsprovider som du just skapat och välj sedan **Ställ in aktiv**.
 4. Välj konfigurationsprovidern **Microsoft** och välj **Databaser**.
 5. Välj **Typ** i fältet **Global**.

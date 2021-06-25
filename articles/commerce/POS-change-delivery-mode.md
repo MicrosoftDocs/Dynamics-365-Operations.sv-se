@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: a88ca9cc8fc8cde6d738dbc4fcf474f1e27e05dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fd69d82536047c06e94ba4a7e860ef54680619a4
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796400"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193141"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Ändra Leveranssätt i POS
 
@@ -31,7 +31,7 @@ I Dynamics 365 Commerce versioner 10.0.10 och senare är åtgärden **Byt levera
 
 Funktionen ändra leveranssätt ger dig möjlighet att ändra leveranssättet för en eller flera försändelse konfigurerade försäljningsrader i kassatransaktionen. I tidigare versions versioner av Commerce var du tvungen att gå igenom hela konfigurationsflöden **Leverera allt** eller **Leverera utvalda** om du vill ändra leveranssättet på en befintlig rad som har konfigurerats för leverans. Den här processen tar lång tid och skulle kunna leda till att den ursprungliga leveransdagen eller leveransdatumen ändras av raden. Den nya funktionen ger en alternativ metod för att effektivt uppdatera leveranssättet på dessa försäljningsrader.
 
-Mer information om hur du lägger till en operation i en knapp på kassaknappens rutnät finns it [Skärmlayouter för POS](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts).
+Mer information om hur du lägger till en operation i en knapp på kassaknappens rutnät finns it [Skärmlayouter för POS](pos-screen-layouts.md).
 
 När den här funktionen har konfigurerats i POS när du väljer **Ändra leverans** visas en listsida där du kan välja rader för den transaktion som du vill ändra leveranssättet för. Du kan välja några eller alla av raderna eller avsluta utan att göra några ändringar. De försäljningsrader som tidigare konfigurerades för leverans är de enda raderna i listan som du kan ändra. Om du vill ändra en rad som är avsedd för upphämtning eller utföra leverans, måste du använda operationen **leverera alla** eller **leverera utvalda**. Om du vill ändra en rad som angivits som en försändelse till en upphämtning eller utför måste du använda åtgärderna **upphämta**, **upphämtning vald**, **Utför alla** eller **Utför valda**.
 

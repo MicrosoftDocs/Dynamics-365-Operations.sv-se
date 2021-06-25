@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f89b3d94fd16aa9cf27931d11fd8fff22048d40
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c6d96f1f957bfe8002a763d98f170681ad92b23
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824038"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188744"
 ---
 # <a name="customer-payments-for-a-partial-amount"></a>Kundbetalningar för ett delbelopp
 
@@ -28,8 +28,7 @@ ms.locfileid: "5824038"
 
 Ibland kan kunder betala ett belopp som är mindre än beloppet i en faktura. Det här avsnittet innehåller en beskrivning av de olika alternativen för att hantera den här situationen. Vilka alternativ som är tillgängliga för dig beror på dina affärskrav och konfigurationer.
 
-<a name="partial-payment-with-no-discount"></a>Delbetalning utan rabatt
---------------------------------
+## <a name="partial-payment-with-no-discount"></a>Delbetalning utan rabatt
 
 Kunder kan göra en delbetalning eftersom de inte bara har tillräckligt med kontanter för att betala hela fakturan, eller om det finns en tvist om en artikel på fakturan. I den här situationen kan fakturan delvis kvittas mot betalningen. Fakturan kommer att förbli öppen och visar ett saldo.
 

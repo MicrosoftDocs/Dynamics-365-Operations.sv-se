@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9e3976eaf94f6a8440794beebae1ab7241e5aa54
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: cdc16d02f24f24e0f9933542589573ee6b5cde45
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897658"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193389"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Utbildningskatalog för Dynamics 365 Finance utvecklare
 
@@ -29,20 +29,20 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 
 ## <a name="get-started"></a>Kom igång<a name="get-started"></a>
 
-| Innehåll  | beskrivning     | Format     | Längd    |
-|-------------|-----------------|-------------|------------|
-| [Kom igång med Finance and Operations-appar](/learn/paths/get-started-finance-operations/) | Lär dig hur Finance and Operations-appar ger stöd till företag för att hantera deras globala ekonomisystem, operativa affärsprocesser och effektiviserade leveranskedjor för att ge användarna möjlighet att fatta snabba, välgrundade beslut. Det första steget i arbetet med Finance and Operations-appar är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill ha. | Gratis, självstudier online utbildningsväg | 2.2 timmar |
-| [Kom igång med Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance gör det möjligt för företagsanvändare att anpassa sig till att snabbt byta affärsmiljöer. Det förser företagen med allt de behöver för att kontrollera ekonomin och hantera fonder med exakt information för ekonomisk planering och prognosticering och hjälper dem att hålla sig uppdaterade med analysverktyg. Eftersom ekonomi är kärnan i alla verksamheter är det viktigt att du är bekant med funktionerna i Dynamics 365 Finance. | Gratis, självstudier online utbildningsmodul | 1 timma |
+| Innehåll | beskrivning | Format | Längd |
+|---------|-------------|--------|--------|
+| [Kom igång med Finance and Operations-appar](https://docs.microsoft.com/learn/paths/get-started-finance-operations/) | Lär dig hur Finance and Operations-appar ger stöd till företag för att hantera deras globala ekonomisystem, operativa affärsprocesser och effektiviserade leveranskedjor för att ge användarna möjlighet att fatta snabba, välgrundade beslut. Det första steget i arbetet med Finance and Operations-appar är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill ha. | Gratis, självstudier online utbildningsväg | 2.2 timmar |
+| [Kom igång med Dynamics 365 Finance](https://docs.microsoft.com/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance gör det möjligt för företagsanvändare att anpassa sig till att snabbt byta affärsmiljöer. Det förser företagen med allt de behöver för att kontrollera ekonomin och hantera fonder med exakt information för ekonomisk planering och prognosticering och hjälper dem att hålla sig uppdaterade med analysverktyg. Eftersom ekonomi är kärnan i alla verksamheter är det viktigt att du är bekant med funktionerna i Dynamics 365 Finance. | Gratis, självstudier online utbildningsmodul | 1 timma |
 
 ## <a name="core-development-concepts"></a>Core-utvecklingskomponenter<a name="core-development-concepts"></a>
 
-| Innehåll  | beskrivning  | Format   | Längd    |
-|-------------|-----------------|-------------|------------|
-| [Introduktion till utveckling med Finance and Operations-appar](/learn/paths/introduction-develop-finance-operations/) | Som utvecklare som arbetar med Finance and Operations-appar är det viktigt att ha ett fast grepp om huvudarkitekturens komponenter i Dynamics 365 ekosystem och Finance and Operations-appar. Kunskaper om viktiga utvecklingskoncept, bland annat tekniska funktioner, källkod, testningsramverk och rapporteringsverktyg, ger stöd åt dina ytterligare insatser för att skapa utvecklingskunskaper som du kan använda i Finance and Operations-appar. | Gratis, självstudier online utbildningsväg | 7.75 timmar |
-| [Skapa Finance and Operations-appar](/learn/paths/build-finance-operations/) | Utveckling i Finance and Operations-appar kräver grundläggande förståelse för de uppgifter som krävs för att skapa nya element och anpassa Finance and Operations-appar. I uppgifterna ingår att förstå X++ kod och Visual Studio, samt att kunna skapa och ändra de grundläggande elementen i systemet. | Gratis, självstudier online utbildningsväg | 13 timmar |
-| [Utöka Finance and Operations-appar](/learn/paths/extending-finance-operations/) | Med tilläggen kan utvecklare ändra användarupplevelsen i Finance and Operations-appar genom att tillämpa ändringar av koden som inte påverkar baskoden. Tillägg ger bland annat utvecklarna möjlighet att uppdatera Finance and Operations-appar för att följa affärsprocesser och nödvändiga ändringar. | Gratis, självstudier online utbildningsväg | 2.5 timmar |
-| [Anslut till Finance and Operations-appar](/learn/paths/connect-finance-operations/) | Integrering och möjligheten att komma åt dina data i Finance and Operations-appar är viktiga funktioner. Utvecklare som har lärt sig att bygga och utöka kod i Finance and Operations-appar kan förbättra sin kunskap om utveckling genom att lära sig mer om dataintegrering och hur anslutningar till data kan få positiva konsekvenser för användarna. | Gratis, självstudier online utbildningsväg | 5.75 timmar |
-| [Migrera data och publicera med Finance and Operations-appar](/learn/paths/migrate-data-go-live-finance-operations/) | Som funktionell konsult måste du förstå hur du förbereder dina kunders data för migrering, arbetar med datahantering och utför acceptanstestet för användare för att publicera med Finance and Operations. | Gratis, självstudier online utbildningsväg | 4 timmar |
+| Innehåll | beskrivning | Format | Längd |
+|---------|-------------|--------|--------|
+| [Introduktion till utveckling med Finance and Operations-appar](https://docs.microsoft.com/learn/paths/introduction-develop-finance-operations/) | Som utvecklare som arbetar med Finance and Operations-appar är det viktigt att ha ett fast grepp om huvudarkitekturens komponenter i Dynamics 365 ekosystem och Finance and Operations-appar. Kunskaper om viktiga utvecklingskoncept, bland annat tekniska funktioner, källkod, testningsramverk och rapporteringsverktyg, ger stöd åt dina ytterligare insatser för att skapa utvecklingskunskaper som du kan använda i Finance and Operations-appar. | Gratis, självstudier online utbildningsväg | 7.75 timmar |
+| [Skapa Finance and Operations-appar](https://docs.microsoft.com/learn/paths/build-finance-operations/) | Utveckling i Finance and Operations-appar kräver grundläggande förståelse för de uppgifter som krävs för att skapa nya element och anpassa Finance and Operations-appar. I uppgifterna ingår att förstå X++ kod och Visual Studio, samt att kunna skapa och ändra de grundläggande elementen i systemet. | Gratis, självstudier online utbildningsväg | 13 timmar |
+| [Utöka Finance and Operations-appar](https://docs.microsoft.com/learn/paths/extending-finance-operations/) | Med tilläggen kan utvecklare ändra användarupplevelsen i Finance and Operations-appar genom att tillämpa ändringar av koden som inte påverkar baskoden. Tillägg ger bland annat utvecklarna möjlighet att uppdatera Finance and Operations-appar för att följa affärsprocesser och nödvändiga ändringar. | Gratis, självstudier online utbildningsväg | 2.5 timmar |
+| [Anslut till Finance and Operations-appar](https://docs.microsoft.com/learn/paths/connect-finance-operations/) | Integrering och möjligheten att komma åt dina data i Finance and Operations-appar är viktiga funktioner. Utvecklare som har lärt sig att bygga och utöka kod i Finance and Operations-appar kan förbättra sin kunskap om utveckling genom att lära sig mer om dataintegrering och hur anslutningar till data kan få positiva konsekvenser för användarna. | Gratis, självstudier online utbildningsväg | 5.75 timmar |
+| [Migrera data och publicera med Finance and Operations-appar](https://docs.microsoft.com/learn/paths/migrate-data-go-live-finance-operations/) | Som funktionell konsult måste du förstå hur du förbereder dina kunders data för migrering, arbetar med datahantering och utför acceptanstestet för användare för att publicera med Finance and Operations. | Gratis, självstudier online utbildningsväg | 4 timmar |
 | [Finance and Operations: Utveckling ALM (DYN766PAL)](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-and-operations---development-alm-february-19-2020) | Det här tekniksnacket tar upp utvecklingsprogram för livscykelhantering och de koncept, verktyg och metodtips vi rekommenderar. Vi tar upp hur Lifecycle Services, Visual Studio och Azure DevOps samarbetar för att möjliggöra affärsprocesser för kontinuerlig leverans av lösningens kodbas och underhåll av dina miljöer. | Fri registrering av en webbkonferens | 52 minuter |
 | [Finance and Operations: Utöka Dynamics 365 for Finance and Operations med PowerApps (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Förstå hur enkelt Microsoft PowerApps är och hur den kan integreras med Dynamics 365 for Finance and Operations om du vill kunna omvandla företag digitalt och öka användarproduktiviteten. | Fri registrering av en webbkonferens | 43 minuter |
 | [Finance and Operations: Utbyggbarhet (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Vi kommer att tillhandahålla en översikt och uppdatera Microsofts tilläggsplaner. Vi diskuterar de olika sätten för utökning av en lösning i detalj, en djupdykning i utökfunktionerna för metadata och möjligheten att utöka kod, inklusive via den kraftfulla funktionen för beslutskedja. | Fri registrering av en webbkonferens | 50 minuter |
@@ -58,8 +58,8 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 
 ## <a name="servicing"></a>Behandling<a name="servicing"></a>
 
-| Innehåll  | beskrivning  | Format  | Längd    |
-|-------------|-----------------|-------------|------------|
+| Innehåll | beskrivning | Format | Längd |
+|---------|-------------|--------|--------|
 | [Finance and Operations: Underhåll, support och underhåll av produktion (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Tekniksnack om hur du effektivt kan stödja, underhålla och använda din Dynamics 365 for Finance and Operations produktionsmiljö. | Fri registrering av en webbkonferens | 53 minuter |
 | [Finance and Operations: Funktionshantering (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Tekniksnack om funktionshanteringsupplevelsen. Här finns en arbetsyta där du kan visa, aktivera, inaktivera och schemalägga funktioner som har levererats i varje utgåva. Nya funktionen är avstängda som standard. Du kan använda arbetsytan för att aktivera dem och visa dokumentationen för dem. Delta i det här mötet för att se vad som levereras i 10.0.3 och våra planer för framtida versioner. | Fri registrering av en webbkonferens | 47 minuter |
 | [Finance And Operations: Microsoft hanterar kontinuerliga uppdateringar (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Den kontinuerliga uppdateringsmiljön för Finance and Operations har startat! Var med oss under denna timme för att diskutera Microsoft hanterar kontinuerliga uppdateringar, användarupplevelsen som redan finns i Lifecycle Services och kommande uppdateringar. | Fri registrering av en webbkonferens | 61 minuter |
@@ -68,16 +68,17 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 
 ## <a name="migration-and-upgrade"></a>Migrering och uppgradering<a name="migration-and-upgrade"></a>
 
-| Innehåll  | beskrivning    | Format  | Längd    |
-|-------------|-----------------|-------------|------------|
+| Innehåll | beskrivning | Format | Längd |
+|---------|-------------|--------|--------|
+| [Uppgradera Dynamics AX 2012 till Finance and Operations-program](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/) | Läs om de viktigaste elementen och bästa metoderna för att uppgradera din Dynamics AX 2012-lösning till Finance and Operations-program. Från de första stegen för att upptäcka viktiga arkitekturskillnader, komma igång med uppgraderingsprocessen och kod- och datauppgraderingsverktygen, till de bästa sätten att göra om integration, analys och rapportering baserat på de senaste funktionerna. | Gratis, självstudier online utbildningsväg | 7 timmar |
 | [Finance and Operations: Uppgraderar från 7.x till 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Delta i vår nästa tekniksnack under vilken vi ska omfatta uppgraderingsprocessen för 7.X till 8.X. Vi kommer att diskutera olika scenarier och steg för att utföra koduppgradering och datauppgradering. Vi kommer också att omfatta scenarier för utökningsförfrågningar och hur du höjer dem när det är lämpligt. Del 1 av 2. | Fri registrering av en webbkonferens | 61 minuter |
 | [AX2012 till Dynamics 365 for Operations uppgradera (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Den här teknicksnack innehåller en översikt över hur du uppgraderar kod och data från Dynamics AX 2012 till Dynamics 365 for Operations. | Fri registrering av en webbkonferens | 45 minuter |
 | [AX2009 till Dynamics 365 for Operations migreringsverktyg (VIR809PAL) ](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | Den här sessionen kommer att omfatta verktyg som är tillgängliga för att hjälpa dig att migrera från AX2009 till D365 för operationer. | Fri registrering av en webbkonferens | 55 minuter |
 
 ## <a name="testing"></a>Testar<a name="testing"></a>
 
-| Innehåll  | beskrivning  | Format  | Längd    |
-|-------------|-----------------|-------------|------------|
+| Innehåll | beskrivning | Format | Längd |
+|---------|-------------|--------|--------|
 | [Finance and Operations: Bibliotek för acceptanstest (DYN650PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-acceptance-test-library-june-20-2019) | Tekniksnack om hur du effektivt kan stödja, underhålla och använda din Dynamics 365 for Finance and Operations produktionsmiljö. | Fri registrering av en webbkonferens | 61 minuter |
 | [Finance and Operations: Regression Suite Automation Tool -- Bakgrund och inställningar (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | Det här är den första av en serie med två delar i RSAT (Regression Suite Automation Tool). I den här sessionen får vi veta hur du ska hålla jämna steg med regelbundna uppdateringar med hjälp av RSAT. Du får lära känna och rekommendationer om hur du skapar uppgiftsregistreringar och kör tester med RSAT, tillsammans med en steg-för-steg-beskrivning av installationen och konfigurationen. | Fri registrering av en webbkonferens | 70 minuter |
 | [Finance and Operations: Regression Suite Automation Tool --Testar livscykeldemon (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | Det här är den andra av en serie med två delar i RSAT (Regression Suite Automation Tool). Den här sessionen omfattar en demo av hela cykeln där du skapar och sparar uppgiftsregistreringar från Finance and Operations till BPM-biblioteket i LCS, vilket synkroniserar BPM-biblioteket för att skapa testfall i Azure DevOps grupperar testerna i testpaket och läser in och kör testpaket i RSAT. | Fri registrering av en webbkonferens | 70 minuter |
@@ -89,9 +90,8 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 
 ## <a name="exam"></a>Prov<a name="exam"></a>
 
-| Innehåll | beskrivning  | Format  |
-|-------------|-----------------|-------------|
-|[Examen MB-500: Microsoft Dynamics 365: Finance and Operations-apputvecklare](/learn/certifications/exams/mb-500) | Denna examen mäter förmågan att utföra följande tekniska uppgifter: planera arkitektur och lösningsdesign; Använd utvecklingsverktyg; utforma och utveckla AOT-element; utveckla och testa kod. implementera rapportering; integrera och hantera datalösningar. och implementera säkerhet och optimera prestandan. | Prov; kostnaden varierar beroende på region |
-
+| Innehåll | beskrivning | Format |
+|---------|-------------|--------|
+|[Examen MB-500: Microsoft Dynamics 365: Finance and Operations-apputvecklare](https://docs.microsoft.com/learn/certifications/exams/mb-500) | Denna examen mäter förmågan att utföra följande tekniska uppgifter: planera arkitektur och lösningsdesign; Använd utvecklingsverktyg; utforma och utveckla AOT-element; utveckla och testa kod. implementera rapportering; integrera och hantera datalösningar. och implementera säkerhet och optimera prestandan. | Prov; kostnaden varierar beroende på region |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

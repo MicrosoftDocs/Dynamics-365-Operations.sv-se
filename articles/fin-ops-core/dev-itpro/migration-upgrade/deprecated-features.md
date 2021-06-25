@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: f6a2bf4b15a067fd98059ecc41dfd62e4a91862e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112631"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193576"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Borttagna eller utfasade funktioner i tidigare versioner
 
@@ -92,7 +92,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Ersatt av en annan funktion?**   | Nej |
 | **Produktområden som påverkas**         | Italiensk lokalisering |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell: 1 oktober 2020, men vi planerar inte längre att stödja **Rapport för svarta listan (IT) – funktionsreferens IT-00001**. |
+| **Status**                         | Inaktuell: Från och med den 1 oktober 2020 planerar vi att inte längre ge support för denna rapport. |
 
 ### <a name="domestic-tax-report--feature-reference-it-00003"></a>Inhemsk momsrapport – funktionsreferens IT-00003
 
@@ -365,6 +365,16 @@ Funktion för att skapa mallar för nya vinstskattregister. Den här funktionen 
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Tas bort från Finance and Operations 8.1 med plattformsuppdatering 20. |
 
+### <a name="payroll-and-human-resources-for-russia"></a>Löner och Personal för Ryssland
+Rysk landsspecifik modul för hantering av personaladministrationsinformation, tidrapportinformation för anställda, löneredovisning och skapande av löneutdrag. 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Lön ingår inte i det globala strategiska fokuset i Dynamics 365-portföljen. Partners och ISV:er är bäst placerade för att tillhandahålla lönefunktioner som överensstämmer med lokala regler och skatteuppdateringar.|
+| **Ersatt av en annan funktion?**   | Nr|
+| **Produktområden som påverkas**         | Hantering av Löner och Personal för Ryssland |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell: Måltidsramen för funktionen som ska tas bort är en av de framtida uppdateringarna av version 10.0. |
 
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 med plattformsuppdatering 15
 Inga funktioner har tagit bort eller ersatts med den här versionen. Plattformsuppdatering 15 är kumulativ och innehåller nya eller ändrade funktioner från plattformsuppdatering 13, plattformsuppdatering 14 och plattformsuppdatering 15.

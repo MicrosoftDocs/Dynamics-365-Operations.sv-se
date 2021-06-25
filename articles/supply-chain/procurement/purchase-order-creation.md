@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b19c01afa162cce309443c9270ee1b39aeb0328
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d09b6f693f3396da181a0f47051b7c961aa55e03
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909166"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188255"
 ---
 # <a name="create-purchase-orders"></a>Skapa inköpsorder
 
@@ -80,8 +80,7 @@ Inköpsorder kan konfigureras till att kräva att budgetmedel allokeras till ord
 
 Du kan behöva skjuta upp slutförandet av en inköpsorder. Du kan till exempel behöva ytterligare information om produkter eller tjänster eller så kanske du behöver få utgiften godkänd. Det finns flera sätt att hålla tillbaka en order. Till exempel kan du vänta med att bekräfta ordern. Om ett arbetsflöde för ändringshantering används ska du inte skicka ordern för godkännande. Om du måste blockera alla order för en viss leverantör kan du även markera leverantören som **Spärrad** för bearbetning i leverantörshuvudet. Det finns omständigheter som kan förhindra att ordern bearbetas. Bearbetning kan exempelvis förhindras om kreditgränser har överskridits eller om de budgetmedel som krävs inte är tillgängliga.
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt av inköpsorder](purchase-order-overview.md)
 

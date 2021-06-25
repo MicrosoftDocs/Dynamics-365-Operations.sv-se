@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: b24d37292a2e9749fb2fde06b9f03fcd13db0bbe
-ms.sourcegitcommit: 48528233e0f02dbd47e96e030254ef65f2bb899e
+ms.openlocfilehash: 5a65f1884ea87bbf2519cc94e4c52a40ac1a91bd
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6076616"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193987"
 ---
 # <a name="enter-skills"></a>Ange färdigheter
 
@@ -77,7 +77,7 @@ Om du vill registrera färdigheter utan att kräva godkännande måste du skapa 
 
 15. Välj **Stäng**, välj **Arbetsflöde** i arbetsflödet och välj sedan **Spara och stäng**.
 
-För mer information om att skapa arbetsflöden, se [arbetsflödessystem, översikt](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system?toc=/dynamics365/human-resources/toc.json).
+För mer information om att skapa arbetsflöden, se [arbetsflödessystem, översikt](../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json).
 
 ## <a name="enter-skills-for-a-worker"></a>Ange färdigheter för en arbetare
 

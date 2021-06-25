@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6223cce4a960d3fa3db1f3a17b324201085ea04
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1e22089220edfff3fb53b2101b39f5352817db2a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822237"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188031"
 ---
 # <a name="budget-planning"></a>Budgetplanering
 
@@ -34,13 +34,12 @@ Målet med den här övningen är att ge en guidad visning av funktionen Microso
 - Använda allokeringar för att justera dokumentdata för budgetplanen
 - Redigera dokumentdata för budgetplan i Excel 
 
-<a name="prerequisites"></a>Förutsättningar 
-------------------
+## <a name="prerequisites"></a>Förutsättningar 
 
 I den här självstudien måste du ha tillgång till Microsoft Dynamics 365 Finance-miljön med Contoso-demonstrationsdata och vara administratör för instansen. Använd inte i webbläsaren i privat läge i övningen – logga ut från alla andra konton på webbläsaren och logga in med administratörsautentiseringsuppgifter. När du loggar in **MÅSTE** du markera kryssrutan Håll mig inloggad. Då skapas en beständig cookie som Excel-appen behöver. Om du loggar in i appen med en annan webbläsare än IE, uppmanas du att logga in via Excel-appen. När du klickar på Logga in i Excel-appen visas ett IE-popup-fönster och när du loggar in **MÅSTE** du markera kryssrutan Håll mig inloggad. Om det inte händer något när du klickar på logga in i Excel-appen rensar du cookiecachen i IE.
 
 ## <a name="scenario-overview"></a>**Scenarioöversikt**
-Julia arbetar som ekonomichef i Contoso Entertainment Systems i Tyskland (DEMF). Eftersom FY2016 närmar sig, måste hon arbeta med företagets budget för det kommande året. Budgetförberedelserna ser ut så här:
+Julia arbetar som ekonomichef för Contoso Entertainment Systems i Tyskland (DEMF). Eftersom FY2016 närmar sig, måste hon arbeta med företagets budget för det kommande året. Budgetförberedelserna ser ut så här:
 
 1.  Julia använder föregående års faktiska belopp som utgångspunkt för att skapa budgeten.
 2.  Baserat på tidigare år skapar hon uppskattningar för tolv månader i det kommande året.

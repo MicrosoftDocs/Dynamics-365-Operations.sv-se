@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 734246cde20f5ce76e34dae772ed0ba6b0e361a0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1dc6c99a986bad767691f7cac7e0135c54e1d0b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837379"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189561"
 ---
 # <a name="warehouse-configuration-overview"></a>Konfiguration av lagerställe – översikt
 
@@ -109,8 +109,7 @@ Som namnet antyder används platsdirektiv för att vidarebefordra arbetstransakt
 
 Gör det enklare och snabbare att definiera åtgärder som är knutna till varje platsdirektivrad genom att använda en av de fördefinierade strategierna. Du kan till exempel använda strategin **Tom plats utan inkommande arbetsuppgifter** om du vill söka efter lediga platser på ett lagerställe eller använda strategin **FEFO-batchreservation** för plockning av utgående försäljning.
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Konfigurera platser i ett WMS-aktiverat lagerställe](tasks/configure-locations-wms-enabled-warehouse.md)
 

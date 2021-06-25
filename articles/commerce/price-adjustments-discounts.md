@@ -2,7 +2,7 @@
 title: Prisjusteringar och rabatter
 description: Denna artikel innehåller information om prisjusteringar och rabatter i Dynamics 365 Commerce.
 author: scott-tucker
-ms.date: 11/16/2020
+ms.date: 06/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2d3e8025c5ab28296713634094694156f9addf62
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 44c03ae0a04d648e788a72d8f6dcc3671c5736c7
+ms.sourcegitcommit: 7c9d6be464db058511df9cb6ba162d21dc0554e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802801"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "6240952"
 ---
 # <a name="price-adjustments-and-discounts"></a>Prisjusteringar och rabatter
 
@@ -48,6 +48,13 @@ Det finns många olika typer av rabatter:
 - **Leveransrabatt** – En rabatt som tillämpas när transaktionssumman är mer än ett angivet belopp och ett specifikt leveranssätt (t. ex. två dagars leverans nästföljande dag) används på ordern.
 
 Både prisjusteringar och rabatter kan associeras till prisgrupper. Prisgrupper kan sedan associeras till kanaler, kataloger, anknytningar och bonusprogram.
+
+> [!NOTE]
+> Mixa och matcha-rabatten och tröskelrabatten har egenskaper som kallas "Räkna icke-rabatterbara produkter" respektive "Räkna icke-rabatterbara produkter mot tröskel". Om dessa egenskaper är aktiverade kan en artikel som inte berättigar till rabatt ändå hjälpa till att kvalificera en transaktion för rabatten, men den icke-berättigade artikeln får inte rabatten. 
+> 
+> Om du till exempel skapar en mixa och matcha-rabatt med två rader, A och B, där en kund ska få 10 % rabatt på båda artiklarna, men artikel A har konfigurationen "Förhindra alla rabatter" markerad, skulle detta normalt hindra artikel A från att inkluderas i rabatten. Om egenskapen "Räkna icke-rabatterbara produkter" är aktiverad kan emellertid artikel A användas för att kvalificera sig för mixa och matcha-rabatten, men 10 %-rabatten tillämpas endast på artikel B. Liknande logik gäller för tröskelrabatten. 
+>
+> Egenskapen "Räkna icke-rabatterbara produkter mot tröskel" har emellertid en ytterligare kapacitet när den jämförs med egenskapen "Räkna icke-rabatterbara produkter" för mixa och matcha-rabatterna. Om tröskelrabatten är aktiverad, och om det finns en artikel som har en befintlig rabatt som hindrar artikeln från att omfattas av andra rabatter, blir priset som betalas för artikeln lika med eller högre än tröskelvärdet, men artikeln får inte ytterligare rabatt.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

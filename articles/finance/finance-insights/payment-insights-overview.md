@@ -2,7 +2,7 @@
 title: Kundbetalningsförutsägelser (förhandsversion)
 description: I det här ämnet beskrivs funktioner för betalningsförutsägelse som kan hjälpa dig att bättre förstå en kunds typiska betalningspraxis. Den här funktionen kan också hjälpa till att identifiera omständigheter som gör att du kan starta inkassoprocesser tidigare än vad du annars skulle kunna starta.
 author: ShivamPandey-msft
-ms.date: 05/26/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 4151b56b8b385e29d3926dc7e245728158cbcd34
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 84a2342d76dc309fa1fd3de7b2c3de60e62e4d72
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5898022"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186406"
 ---
 # <a name="customer-payment-predictions-preview"></a>Kundbetalningsförutsägelser (förhandsversion)
 
@@ -72,10 +72,5 @@ Tidigare har det vanligtvis varit svårt att utveckla och distribuera en AI-lös
 Den allmänt tillgängliga förhandsversionen av Finance-insikter finns tillgänglig för distribution i USA, Europa och Storbritannien. Microsoft lägger stegvis till support för ytterligare regioner.
 
 Funktionerna för allmänt tillgänglig förhandsversion kan och ska bara aktiveras i nivå-2-sandbox-miljöer. Konfiguration och AI-modeller som skapas i en sandbox-miljö kanske inte migreras till produktionsmiljön. Mer information finns i [Tilläggsavtal för Microsoft Dynamics 365 förhandsversioner](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
-
-## <a name="privacy-notice"></a>Sekretesspolicy
-
-Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

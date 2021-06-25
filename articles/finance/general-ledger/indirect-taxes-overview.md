@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8dcb5c9860cb617612dade03b55b8bd4a0983b6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41c64607f5dfbe00bd8a2e7cc80fb4771f11a6d1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826628"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188450"
 ---
 # <a name="sales-tax-overview"></a>Momsöversikt
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826628"
 
 Det här ämnet innehåller en översikt över momssystemet. Det ger en beskrivning av komponenterna för inställning av moms och hur de arbetar tillsammans.
 
-<a name="overview"></a>Översikt
---------
+## <a name="overview"></a>Översikt
 
 Ramverket för moms stöder många typer av indirekta skatter, till exempel moms/mervärdesskatt, skatt på varor och tjänster (GST), enhetsbaserade avgifter och källskatt. Dessa skatter beräknas och dokumenteras i samband med inköps- och försäljningstransaktioner. Dessa måste regelbundet rapporteras och betalas till skattemyndigheten. 
 

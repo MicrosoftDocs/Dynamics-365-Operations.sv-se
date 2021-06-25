@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 231c59cea2ca0bcb139079209d2e846e67eb7fed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b23edee0884b595a0da6ebd7eca0cf0391ff33f7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839159"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190098"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Direktleverans från produktionsorder till utlastningsplatser
 
@@ -28,8 +28,7 @@ ms.locfileid: "5839159"
 
 Det här avsnittet beskriver hur du hanterar processen för direktutleveransmaterial som rapporteras som färdiga från en produktionsrad till en plats med utgående transporter.
 
-<a name="introduction"></a>Introduktion
-------------
+## <a name="introduction"></a>Introduktion
 
 Direktutleverans från produktion till en utlastningsplats gäller tillverkare som producerar stora volymer och vi vill skicka de färdiga produkterna när de rapporteras som färdiga från produktionsraderna. Syftet är att leverera produkter till distributionscenter som fysiskt finns nära kundefterfrågan, i stället för att bygga upp lagret på tillverkningsplatsen.
 

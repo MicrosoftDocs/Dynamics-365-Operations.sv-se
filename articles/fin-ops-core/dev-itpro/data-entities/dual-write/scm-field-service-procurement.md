@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2c27f06524b91f91d95ef4b901740e7761232c28
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: c50aabf94ae37b7b7b214699160bf958ad3ea9fd
+ms.sourcegitcommit: 2cc14f6c537628e79ad2dd17dabf2c246deaa40d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941119"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6219797"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integrera anskaffning mellan Supply Chain Management och Field Service
 
@@ -196,23 +196,10 @@ Följande mallar finns tillgängliga för integrering av anskaffningsrelaterade 
 
 | Hantering av underleverantörer | Field Service | beskrivning |
 |---|---|---|
-| Inköpsorderrubrik V2 | msdyn\_Purchaseorders | Den här tabellen innehåller de kolumner som representerar inköpsorderrubriken. |
-| Entiteten inköpsorderrad | msdyn\_PurchaseOrderProducts | Den här tabellen innehåller de rader som representerar rader på en inköpsorder. Produktnumret används för synkronisering. Detta identifierar produkten som en lagerhållningsenhet (SKU), inklusive produktdimensioner. Mer information om produktintegration med Dataverse finns i [Enhetlig produkterfarenhet](product-mapping.md). |
-| Produktinleveranshuvud | msdyn\_purchaseorderreceipts | Den här tabellen innehåller rubrikerna för produktinleverans som skapas när en produktinleverans bokförs i Supply Chain Management. |
-| Produktinleveransrad | msdyn\_purchaseorderreceiptproducts | Den här tabellen innehåller rader för produktinleverans som skapas när en produktinleverans bokförs i Supply Chain Management. |
-| Inköpsorderrad mjukt borttagen enhet | msdyn\_purchaseorderproducts | Den här tabellen innehåller information om inköpsorderrader som är mjukraderade. En inköpsorderrad i Supply Chain Management kan bara tas bort mjukt när inköpsordern har bekräftats eller godkänts, om ändringshanteringen är aktiverad. Raden finns i Supply Chain Management-databasen och markeras som **IsDeleted**. Eftersom Dataverse inte har något begrepp för mjukradering är det viktigt att den här informationen synkroniseras till Dataverse. Rader som är mjukraderade i Supply Chain Management kan på detta sätt automatiskt raderas från Dataverse. I det här fallet finns logiken för att radera en rad i Dataverse som finns i utökad Supply Chain Management. |
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/productreceiptheader-msdyn-purchaseorderreceipts.md)]
-
-[!include [Currency](includes/productreceiptline-msdyn-purchaseorderreceiptproducts.md)]
-
-[!include [Currency](includes/purchaseorderheadersv2-msdyn-purchaseorders.md)]
-
-[!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
-
-[!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
-
+| [Inköpsorderrubrik V2](mapping-reference.md#183) | msdyn\_Purchaseorders | Den här tabellen innehåller de kolumner som representerar inköpsorderrubriken. |
+| [Entiteten inköpsorderrad](mapping-reference.md#181) | msdyn\_PurchaseOrderProducts | Den här tabellen innehåller de rader som representerar rader på en inköpsorder. Produktnumret används för synkronisering. Detta identifierar produkten som en lagerhållningsenhet (SKU), inklusive produktdimensioner. Mer information om produktintegration med Dataverse finns i [Enhetlig produkterfarenhet](product-mapping.md). |
+| [Produktinleveranshuvud](mapping-reference.md#185) | msdyn\_purchaseorderreceipts | Den här tabellen innehåller rubrikerna för produktinleverans som skapas när en produktinleverans bokförs i Supply Chain Management. |
+| [Produktinleveransrad](mapping-reference.md#184) | msdyn\_purchaseorderreceiptproducts | Den här tabellen innehåller rader för produktinleverans som skapas när en produktinleverans bokförs i Supply Chain Management. |
+| [Inköpsorderrad mjukt borttagen enhet](mapping-reference.md#182) | msdyn\_purchaseorderproducts | Den här tabellen innehåller information om inköpsorderrader som är mjukraderade. En inköpsorderrad i Supply Chain Management kan bara tas bort mjukt när inköpsordern har bekräftats eller godkänts, om ändringshanteringen är aktiverad. Raden finns i Supply Chain Management-databasen och markeras som **IsDeleted**. Eftersom Dataverse inte har något begrepp för mjukradering är det viktigt att den här informationen synkroniseras till Dataverse. Rader som är mjukraderade i Supply Chain Management kan på detta sätt automatiskt raderas från Dataverse. I det här fallet finns logiken för att radera en rad i Dataverse som finns i utökad Supply Chain Management. |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

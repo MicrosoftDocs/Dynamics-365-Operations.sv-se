@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.openlocfilehash: 9cd7dd8b9241171bdfdb3cc1379211a2fe99bbe1
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899105"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184006"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för tillverkningskörning för moln- och kantskalningsenheter
 
@@ -72,6 +72,7 @@ Följande uppgifter för tillverkningskörning kan förnärvarande köras på ar
 - Rapportera kassation
 - Indirekt aktivitet
 - Avbrott
+- Rapportera som färdig och artikelinförsel (kräver att du även kör arbetsbelastningen för lagerställekörningen på din skalningsenhet, se även [Rapportera som färdig och artikelinförsel](#RAF))
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Arbeta med arbetsbelastningar för tillverkningskörning på navet
 
@@ -108,6 +109,26 @@ För att granska historiken om tillverkningsjobb som har bearbetats på en skale
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Tillverkningsnav till skalenhet meddelande processorjobb
 
 Jobbet _Tillverkningsnav till skalenhet meddelande processorjobb_ bearbetar data från navet till skalenheten. Det här jobbet startas automatiskt när arbetsbelastning för tillverkningskörningen distribueras. Du kan dock köra den manuellt när som helst genom att gå till **tillverkningskontroll \> periodiska uppgifter \> hantering av backoffice-arbetsbelastning \> Tillverkningsnav till skalenhet meddelande processorjobb**.
+
+<a name="RAF"></a>
+
+## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>Rapportera som färdig och artikelinförsel på en skalningsenhet
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+I den aktuella versionen stöds funktionerna "rapportera som färdig" och "artikelinförsel" (för färdiga produkter, samprodukter och biprodukter) av [körningsarbetsbelastningen för lagerställe](cloud-edge-workload-warehousing.md) (inte av körningsarbetsbelastningen för tillverkning). Om du vill använda den här funktionen vid anslutning till en skalningsenhet måste du därför göra följande:
+
+- Installera både körningsarbetsbelastningen för lagerstället och körningsarbetsbelastningen för tillverkning på din skalningsenhet.
+- Använd mobilapplikationen Warehouse Management om du vill rapportera som färdig och bearbeta artikelinförselarbetet. Körningsgränssnittet för produktionsgolv har för närvarande inte stöd för dessa processer.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

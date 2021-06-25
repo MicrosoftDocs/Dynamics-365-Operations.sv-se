@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4735b51d13a6de9874c10ec82e1e6d9761ce9fcf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 42934a88065da015334455b6c37f57591611360f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810880"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188135"
 ---
 # <a name="sales-and-marketing-overview"></a>Försäljning och marknadsföring – översikt
 
@@ -27,8 +27,7 @@ ms.locfileid: "5810880"
 
 Du kan använda Försäljning och marknadsföring för att hämta, spara och använda olika typer av data i försäljningsflödet. Informationen inkluderar den ursprungliga försäljningsinsatsen, framtida uppföljningsåtgärder och ytterligare försäljning.
 
-<a name="marketing"></a>Marknadsföring
----------
+## <a name="marketing"></a>Marknadsföring
 
 Du använder marknadskampanjer och aktiviteter för att hitta och bygga relationer med potentiella kunder, så att de första interaktionerna kan utvecklas till försäljningsrelationer. Följande processflöde visar affärsprocessen för marknadsföring. [![Affärsprocess för marknadsföring](./media/marketing01.jpg)](./media/marketing01.jpg)
 

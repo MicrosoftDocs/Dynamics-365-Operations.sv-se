@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: dee9a6a7e2a5278f069958ce00689b1beb9b1bd7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a243399536fec3f5361104289c38e550bf8b1144
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792157"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193292"
 ---
 # <a name="ratings-and-reviews-modules"></a>Moduler för omdömen och recensioner
 
@@ -54,7 +54,11 @@ Följande illustration visar hur dialogrutan **Lägg till modul** presenterar mo
 
 Modulen skriv recension inkluderar knappen **Skriv en recension**, där användarna kan logga in, tilldela ett omdöme och skriva en recension av en produkt. Med hjälp av modulen kan du också redigera ett omdöme eller granska de som tidigare har skickat in dem. Den här modulen visas normalt ovanför modulerna omdömeshistogram och produktrecensioner i en PDP.
 Bilden nedan visar dialog rutan **Skriv en recension** som visas när en kund väljer **skriva en recension**. Kunden kan använda den här dialogrutan för att skicka ett omdöme och en recension.
-![Dialogrutan Skriv en recension](media/rnr-eCommerce-write-review-module.png) I följande tabell visas den egenskap för modulen skriv recension som måste konfigureras i utvecklingsverktyget.
+
+![Dialogrutan Skriv en recension](media/rnr-eCommerce-write-review-module.png)
+
+I följande tabell visas den egenskap för modulen skriv recension som måste konfigureras i utvecklingsverktyget.
+
 | Egenskapsnamn | Värde        | Egenskapsbeskrivning                 |
 |---------------|--------------|--------------------------------------|
 | Namn          | Skriv recension | Namnet på modulen för skriv en recension. |

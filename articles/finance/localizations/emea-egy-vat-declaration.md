@@ -2,7 +2,7 @@
 title: Momsdeklaration för Egypten
 description: I det här avsnittet beskrivs hur du konfigurerar och genererar formuläret retur av moms för Egypten.
 author: sndray
-ms.date: 03/10/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: bd48ee96a26c59183981fae879e3659711e70ce3
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c776cedb65804f8cadbe324082c2abac435f906
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021966"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186624"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Momsdeklaration för Egypten (EG-00002)
 
@@ -85,6 +85,7 @@ Dessa följande sökkonfigurationer används för att klassificera transaktioner
 - **VATRateTypeLookup** > Kolumn B: Momstyp
 - **VATRateTypeLookup** > Kolumn C: Tabellartikeltyp
 - **PurchaseOperationTypeLookup** > Kolumn A: Dokumenttyp
+- **CustomerTypeLookup** > Kolumn A: Dokumenttyp
 - **SalesOperationTypeLookup** > Kolumn N: Operationstyp
 - **SalesItemTypeLookup** > Kolumn O: Artikeltyp
 
@@ -98,6 +99,8 @@ Gör på följande sätt om du vill ställa in de olika sökningar som används 
 6. Upprepa steg 3–5 för alla tillgängliga sökningar.
 7. Välj **Lägg till** för att inkludera den sista postraden och i kolumnen **Sökresultat** välj **Inte aktuellt**. 
 8. Välj i de återstående kolumnerna **Ej tom**. 
+9. I fältet **Stat**, välj **Slutförd**.
+10. Välj **Spara** och stäng sidan **Programspecifika parametrar**.
 
 > [!NOTE]
 > När du lägger till den sista posten, **Inte aktuellt**, definierar du följande regel: När momsgrupp, artikelmomsgrupp, momskod och namn som passerats när ett argument inte uppfyller några av de föregående reglerna, inkluderas inte transaktionerna i momsboken. Även om denna regel inte används när rapporten genereras, bidrar regeln till att undvika fel vid generering av rapporter när en regelkonfiguration saknas.
@@ -138,7 +141,7 @@ Följande register ger ett exempel på den föreslagna konfigurationen för de b
 | Tjänster       | 7    | VAT_SERV                | *Inte tom* | SaleExempt            |
 | Tjänster       | 8    | VAT_SERV                | *Inte tom* | SalesExemptCreditNote |
 | Modifieringar    | 9    | *Tom*                 | VAT_ADJ     | Försäljning                 |
-| Modifieringar    | 10   | *Tom*                 | VAT_ADJ     | Inköp              |
+| Modifieringar    | 10   | *Tom*                 | VAT_ADJ     | SalesCreditNote       |
 | Inte aktuellt | 11   | *Inte tom*             | *Inte tom* | *Inte tom*           |
 
 **PurchaseItemTypeLookup**
@@ -148,16 +151,14 @@ Följande register ger ett exempel på den föreslagna konfigurationen för de b
 | Varor                  | 1    | VAT_GOODS               | *Inte tom* | Inköp                 |
 | Varor                  | 2    | VAT_GOODS               | *Inte tom* | PurchaseCreditNote       |
 | Tjänster               | 3    | VAT_SERV                | *Inte tom* | Inköp                 |
-| Tjänster               | 4    | VAT_SERV                | *Inte tom*  | PurchaseCreditNote       |
+| Tjänster               | 4    | VAT_SERV                | *Inte tom* | PurchaseCreditNote       |
 | Maskin och utrustning  | 5    | VAT_M&E                 | *Inte tom* | Inköp                 |
 | Maskin och utrustning  | 6    | VAT_M&E                 | *Inte tom* | PurchaseCreditNote       |
 | Maskindelar         | 7    | VAT_PARTS               | *Inte tom* | Inköp                 |
 | Maskindelar         | 8    | VAT_PARTS               | *Inte tom* | PurchaseCreditNote       |
 | Undantag             | 9    | VAT_EXE                 | *Inte tom*  | PurchaseExempt           |
 | Undantag             | 10   | VAT_EXE                 | *Inte tom* | PurchaseExemptCreditNote |
-| Inte aktuellt         | 11   | *Tom*                 | VAT_ADJ     | *Inte tom*              |
-| Inte aktuellt         | 12   | *Inte tom*             | *Inte tom* | *Inte tom*              |
-| Inte aktuellt         | 13   | *Tom*                 | *Inte tom* | *Inte tom*              |
+| Inte aktuellt         | 11   | *Inte tom*             | *Inte tom* | *Inte tom*              |
 
 **PurchaseOperationTypeLookup**
 
@@ -174,6 +175,17 @@ Följande register ger ett exempel på den föreslagna konfigurationen för de b
 | Modifieringar    | 9    | *Tom*          | VAT_ADJ     | PurchaseCreditNote       |
 | Modifieringar    | 10   | *Tom*          | VAT_ADJ     | Inköp                 |
 | Inte aktuellt | 11   | *Inte tom*      | *Inte tom* | *Inte tom*              |
+
+**CustomerTypeLookup**
+
+|    Sökningsresultat    | Rad | Momsgrupp |
+|---------------------|------|-----------------|
+| Organisation        |  1   | VAT_LOCAL       |
+| Organisation        |  2   | VAT_EXPORT      |
+| Organisation        |  3   | VAT_EXE         |
+| Slutkund      |  4   | VAT_FINALC      |
+| Offentlig organization |  5   | VAT_PUBLIO      |
+| Inte tillämpligt      |  6   | *Inte tom*     |
 
 **VATRateTypeLookup**
 

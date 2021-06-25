@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 2dddc22128621dc148a253cd568430587f294544
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8dc312e66dc666ac6c23bac6b705ffc7893fd06b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822913"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188007"
 ---
 # <a name="overhead-calculation"></a>Beräkning av indirekta kostnader
 
@@ -29,8 +29,7 @@ ms.locfileid: "5822913"
 
 Det här avsnittet beskriver de vanliga processerna för beräkning och allokering av indirekta kostnader.
 
-<a name="term-definition"></a>Termdefinition
----------------
+## <a name="term-definition"></a>Termdefinition
 
 Indirekta kostnader är sådana kostnader som uppkommer för att kunna driva ett företag, men som inte är direkt hänförliga till en viss affärsverksamhet, produkt eller tjänst. Indirekta kostnader har viktiga funktioner för generering av vinstdrivande aktiviteter. Här följer några exempel på indirekta kostnader:
 

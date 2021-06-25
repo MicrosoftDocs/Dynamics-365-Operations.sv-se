@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9e6138ccd92019f52afab0d8ed4b8cf64d66ff24
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 78ab17952801a1d77f321e212bb61e9b45d93216
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897706"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189212"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobila fakturagodkännanden
 
@@ -27,8 +27,7 @@ ms.locfileid: "5897706"
 
 Med mobila funktioner kan en affärsanvändare skapa mobila funktioner. För avancerade scenarier gör plattformen också att utvecklare kan utöka användningsområdena som de önskar. Det mest effektiva sättet att lära sig nya koncept på mobilen är att gå igenom processen att skapa några scenarier. Det här avsnittet är avsett att ge en praktisk metod för att skapa mobila scenarier genom att ta leverantörsfakturagodkännanden för mobila enheter som ett användningsfall. Det här avsnittet hjälper dig att skapa varianter på scenarier och kan även tillämpas på andra scenarier som inte är relaterade till leverantörsfakturor.
 
-<a name="prerequisites"></a>Förutsättningar
--------------
+## <a name="prerequisites"></a>Förutsättningar
 
 | Förutsättning                                                                                            | beskrivning                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|

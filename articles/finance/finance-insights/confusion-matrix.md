@@ -2,7 +2,7 @@
 title: Resultat av maskininlärningsmodeller (förhandsversion)
 description: Det här ämnet innehåller information om sammanblandningsmatris, klassificeringsproblem och noggrannhet i maskininlärningsmodeller (ML). Syftet är att förbättra din förståelse av noggrannhet i ML-förutsägelseresultat.
 author: ShivamPandey-msft
-ms.date: 06/05/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: fe652c32df9417f0f716242a24a26eabd1a16f65
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028213"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193550"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Resultat av maskininlärningsmodeller (förhandsversion)
 
@@ -129,16 +129,12 @@ För att förenkla beräkningarna skapades exempelmatriser som matchar de faktis
 
 Mer information om hur beräkningen fungerar finns i sklearn.metrics-klassificeringsrapporten för modell 1. De tre tillstånden, "i tid", "sent" och "mycket sent", representeras av de rader som är märkta 1, 2 och 3. Makromedelvärdet är bara genomsnittet för kolumnen "f1-score".
 
-|           | precision | återkallande   | f1-score |
+| &nbsp;    | precision | återkallande   | f1-score |
 |-----------|-----------|----------|----------|
 | **1**     | 0.83      | 0.80     | 0.82     |
 | **2**     | 0.68      | 0.71     | 0.69     |
 | **3**     | 0.50      | 0.50     | 0.50     |
 
 Som de här resultaten visar har de två modellerna nästan identiska F1-makropoäng för noggrannhet. I detta och många andra fall ger F1-noggrannhet en bättre indikator på modellens funktion. När det gäller noggrannhet kräver tolkningen av resultaten att du förstår vad som är viktigast att beakta i modellen.
-
-#### <a name="privacy-notice"></a>Sekretesspolicy
-Förhandsversioner (1) kan använda färre sekretess- och säkerhetsfunktioner än Dynamics 365 Finance and Operations, (2) de ingår inte i serviceavtalet (SLA) för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterlevnadskrav, samt (4) har begränsad support.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

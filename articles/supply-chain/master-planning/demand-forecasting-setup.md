@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d2f1820f79798488c73f20f9c688fa877af4f1b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4960e8418de473d20c9a1948ca606ae76ad1ac19
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816542"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189726"
 ---
 # <a name="demand-forecasting-setup"></a>Behovsprognoser inställning
 
@@ -88,8 +88,7 @@ På fliken **allokeringsnycklar** kan du ställa in parametrar **Parametrar för
 - **Ledtråd för säsongsvarianter**: för säsongsvariationsdata anger du en ledtråd för prognosmodellen för att förbättra prognosnoggrannheten. Format: heltal som representerar antalet grupper som ett efterfrågansmönster upprepas. Ange till exempel "6" för data som upprepas var 6:e månad.
 - **Testuppsättningsstorlek i procent**: Procentandel av historiska data som ska användas som testuppsättning för beräkning av prognosexakthet. 
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Efterfrågeprognosticering – översikt](introduction-demand-forecasting.md)
 

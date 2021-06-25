@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5544fefbbf0dfc012e868b672f80cc2be30fe7ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f80d1509c7c363e93b83cb47c1b93ab00bf67180
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020872"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193478"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Borttagna och utfasade funktioner i Dynamics 365 Commerce
 
@@ -37,7 +37,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ### <a name="full-dataset-generation-interval-is-deprecated"></a>Fullständigt genereringsintervall för datauppsättning blir inaktuellt
 
-|   |  |
+|  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | I formuläret **Parametrar för handelsschema** i Dynamics 365-administationen kommer från och med denna version fältet **Intervall för komplett datauppsättningsgenerering** att bli inaktuellt. Från och med denna version tas fältet även bort visuellt så att värdet inte kan redigeras. Detta förblir värdet **0**. |
 | **Ersatt av en annan funktion?**   | Nr |
@@ -49,7 +49,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11-stöd för Dynamics 365 är inaktuellt
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Från och med december 2020 kommer Microsoft Internet Explorer 11-stöd för samtliga Dynamics 365-produkter att betraktas som inaktuellt, och Internet Explorer 11 kommer inte att stödjas efter augusti 2021.<br><br>Detta påverkar kunder som använder Dynamics 365-produkter som har utformats för användning med ett Internet Explorer 11-gränssnitt. Efter augusti 2021 stöds inte Internet Explorer 11 för sådana Dynamics 365-produkter. |
 | **Ersatt av en annan funktion?**   | Vi rekommenderar våra kunder att övergå till Microsoft Edge.|
@@ -59,7 +59,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Borttagna eller föråldrade funktioner i Commerce version 10.0.11
 ### <a name="data-action-hooks"></a>Dataåtgärdshookar
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Funktionen dataåtgärdshookar har föråldrats på grund av prestandaproblem. |
 | **Ersatt av en annan funktion?**   | Vi rekommenderar att du använder [dataåtgärdsåsidosättningar](../e-commerce-extensibility/data-action-overrides.md) för att ändra affärslogiken i dataåtgärdsskiktet.|
@@ -68,7 +68,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 | **Status**                         | Inaktuell: Från version 10.0.11 |
 
 ### <a name="retail-sdk-support-for-visual-studio-2015-msbuild-140-and-retail-sdkreference-libraries-and-tools"></a>Stöd för SDK för Retail för Visual Studio 2015, msbuild 14.0 och Retail SDK\Referensbibliotek och verktyg
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Stöd för Retail SDK för Visual Studio 2015 har föråldrats och uppdaterats till att stödja VS 2017, msbuild 15.0 och alla referensbibliotek och verktyg för Commerce och proxy-generator i mappen RetailSDK\References har flyttat till NuGet-paket för att förenkla tilläggsmodellen och SDK-uppgraderingsprocessen.|
 | **Ersatt av en annan funktion?**   | Vi rekommenderar att du följer informationen i [Flytta SDK för Retail från Visual Studio 2015 till Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk.md) för att uppdatera systemet. |
@@ -77,7 +77,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 | **Status**                         | Inaktuell: Från version 10.0.11 |
 
 ### <a name="retail-server-extension-using-iedmmodelextender-and-commercecontroller"></a>Tillägg i Retail Server med IEdmModelExtender och CommerceController
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Tillägg Retail Server med IEdmModelExtender och CommerceController har ersatts för att ge förenklad tilläggsmodell. Den nya implementeringen har bara styrenhetsklassen utan ytterligare IEdmModelExtender klassimplementering. Detta eliminerar också beroendet med en särskild OData-version (om OData-versionen uppdateras kan det innebära att tillägg avbryts.) |
 | **Ersatt av en annan funktion?**   |  Vi rekommenderar att du använder klasstilläggsmodellen IController genom att importera NuGet-paketet (Microsoft.Dynamics.Commerce.Hosting.Contracts). |
@@ -86,7 +86,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 | **Status**                         | Inaktuell: Från version 10.0.11 |
 
 ### <a name="hardware-station-extension-using-ihardwarestationcontroller"></a>Tillägget Hardware station med IHardwareStationController
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Tillägget Hardware station med IHardwareStationController har ersatts för att ge förenklad tilläggsmodell. Den nya implementeringen har bara IController-klassen utan någon ytterligare klassimplementering och för att undvika beroendet av kärnbibliotek för Hardware station, måste du använda tidigare tillägg för att referera flera bibliotek.) |
 | **Ersatt av en annan funktion?**   | Vi rekommenderar att du använder klasstilläggsmodellen IController genom att importera NuGet-paketet (Microsoft.Dynamics.Commerce.Hosting.Contracts). |
@@ -96,7 +96,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10010-release"></a>Borttagna eller föråldrade funktioner i Commerce version 10.0.10
 ### <a name="pos-operation-803---picking-and-receiving"></a>Kassaåtgärd 803 – Plockning och mottagning
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Plocknings- och mottagningsåtgärder föråldras på grund av att ny åtgärd har omdesignats. |
 | **Ersatt av en annan funktion?**   | Ja. Den ersätts av två nya kassaåtgärder: inkommande åtgärd (804) och utgående åtgärd (805).|
@@ -107,7 +107,7 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-1007-release"></a>Borttagna eller föråldrade funktioner i Commerce version 10.0.7
 ### <a name="commerce-getproductavailabilities-and-getavailableinventorynearby-apis"></a>Commerce GetProductAvailabilities och GetAvailableInventoryNearby API:er
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Nya optimerade API:er har skapats för att ersätta GetProductAvailabilities och GetAvailableInventoryNearby API:er. |
 | **Ersatt av en annan funktion?**   | Ja: Det ersätts med GetEstimatedAvailability och GetEstimatedProductWarehouseAvailability API:er. |

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0be27fc759c525dcc1ffe4f2717b2e2378c52a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b07da82086696409b128d76d8845c61b241a34b0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744173"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188085"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Skapa dokumentation eller utbildning med uppgiftsinspelning
 
@@ -31,8 +31,7 @@ Det här avsnittet förklarar vad uppgiftsregistrering och uppgiftsguider är, h
 > [!IMPORTANT]
 > Du kan spela in egna uppgiftsguider för Dynamics 365 Human Resources, men du kan inte spara dem i ett bibliotek för Affärsprocessmodelleraren (BPM) eller öppna dem direkt från fönstret Hjälp just nu. Du kan spara dem lokalt eller på en nätverksplats och sedan öppna och spela upp dem med Uppgiftsinspelaren. 
 
-<a name="learn-about-task-recorder"></a>Läs om uppgiftsregistrering
--------------------------
+## <a name="learn-about-task-recorder"></a>Läs om uppgiftsregistrering
 
 Uppgiftsinspelaren är ett verktyg som du kan använda till att registrera åtgärder som du utför i produktanvändargränssnittet (UI). När du använder uppgiftsinspelning spelas alla händelser som du utför i UI, som utförs mot servern, inklusive lägga till värden, ändra inställningar, ta bort data, in. Stegen som du registrerar kallas gemensamt för en *uppgiftsregistrering* Uppgiftsregistrering kan användas på flera sätt:
 
@@ -111,8 +110,7 @@ Du kan hämta och redigera Microsofts uppgiftsregistreringar för att använda d
 
 
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Hjälpsystem](../../fin-ops/get-started/help-overview.md)
 

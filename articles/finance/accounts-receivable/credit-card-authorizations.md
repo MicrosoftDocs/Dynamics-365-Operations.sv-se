@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6b59d54df9427961e2c4fb6f1387646d6fe8dfc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 502fe22aa0caafbcff059c9d0ae83c7cd030e8d0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837139"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190319"
 ---
 # <a name="credit-card-setup-authorization-and-capture"></a>Kreditkortinställning, auktorisering och registrering
 
@@ -28,8 +28,7 @@ ms.locfileid: "5837139"
 
 Den här artikeln ger en översikt över kreditkortskontroll i Microsoft Dynamics 365 Finance. Här finns information om hur du ställer in en betalningstjänst, lägger till ett kreditkort till en försäljningsorder och annullerar en auktorisering.
 
-<a name="setting-up-the-credit-card-payment-service"></a>Ställa in kreditkortbetalningtjänsten
-------------------------------------------
+## <a name="setting-up-the-credit-card-payment-service"></a>Ställa in kreditkortbetalningtjänsten
 
 Om du vill använda kreditkort måste du ställa in och aktivera en betalning på sidan Betalningtjänst. En betalningstjänst fungerar som en brygga mellan din juridiska person och banken som bearbetar en kunds kreditkortavgifter. Du måste arbeta med en kreditkortleverantör, som anges i fältet Betalningkoppling och ställer in ett konto med den leverantören. Du måste sedan ställa in andra alternativ på sidan Betalningtjänst, ställa in kreditkorttyper för American Express Discover och MasterCard på sian Kreditkorttyp och aktivera leverantören som standardleverantören. Du måste även följa stegen för att slutföra inställningarna:
 -   På sidan Parametrar för kundreskontra anger du parametrar för att använda kreditkortskontroller.
@@ -39,13 +38,11 @@ Om du vill använda kreditkort måste du ställa in och aktivera en betalning p�
 ## <a name="adding-a-new-credit-card"></a>Lägg till ett nytt kreditkort
 Du kan skapa nya kreditkortsposter på sidan Kunder, genom att använda Kund, Inställning, Kreditkort. Du kan också skapa kreditkortsposter när du registrerar försäljningsorder på sidan Försäljningsorder, genom att använda Hantera, Kund, Kreditkort, Register.
 
-<a name="adding-a-credit-card-to-a-sales-order"></a>Lägg till ett kreditkort till en försäljningsorder
--------------------------------------
+## <a name="adding-a-credit-card-to-a-sales-order"></a>Lägg till ett kreditkort till en försäljningsorder
 
 Du kan lägga till ett kreditkort till en försäljningsorder, genom att välja ett kreditkort i kreditkortuppslagningen på snabbfliken Pris och rabatter på sidan Försäljningsorder. Om du vill starta behörighetsprocessen, väljer du kreditkort och godkänna i åtgärdsfönstret på fliken Hantera.
 
-<a name="authorizing-a-credit-card"></a>Kreditkortskontroll
--------------------------
+## <a name="authorizing-a-credit-card"></a>Kreditkortskontroll
 
 När ett kreditkort auktoriseras verifieras kortnumret och kortinnehavarens namn, och det tillgängliga kreditsaldot bekräftas. Du kan även verifiera cvv-kod och kortinnehavarens adress verifieras. Kundens tillgängliga kreditsaldo minskas med beloppet på fakturan. Betaltjänsten skickar information om att kreditkortet har godkänts eller avvisats. När en försäljningsorder faktureras, debiteras kreditkortet (samlats in) med fakturabeloppet.
 

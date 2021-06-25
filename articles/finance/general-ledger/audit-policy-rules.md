@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1297f405e57c2de4f42f05f78ef52b2d763f0f8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f57c3405e03651798b7e0aaf1fab84d25f33f7cc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821995"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187878"
 ---
 # <a name="audit-policy-rules"></a>Regler för granskningspolicy
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821995"
 
 Du kan använda granskningsprinciper för att utvärdera utgiftsrapporter, leverantörsfakturor och inköpsorder för att säkerställa att de överensstämmer med policyregler som du skapar. Alla regler som är associerade med en granskningspolicy körs i batchläge enligt en tidsplan som du anger.  Varje policyregel är en instans av en policyregeltyp. Endast en policyregel i taget kan gälla för en policyregeltyp. 
 
-<a name="queries-and-query-types"></a>Frågor och frågetyper
------------------------
+## <a name="queries-and-query-types"></a>Frågor och frågetyper
 
 När du skapar en granskningspolicyregel, väljer du först en policyregeltyp. Policyregeltypen anger vilken programobjektträdfråga som ska användas som utgångspunkt för att skapa policyregeln. Den kan också ange den frågetyp som ska användas för policyregeln. Frågan bestämmer vilket källdokument som policyregeln utvärderar. Den visar även fälten i källdokumentet som identifierar både den juridiska personen och det datum som ska användas när dokument har valts för granskning. Frågetypen styr standardfälten på frågesidan och sidan för granskningspolicyregler. Följande tabell visar de frågetyper som finns tillgängliga för granskningspolicyregler.
 
@@ -91,8 +90,7 @@ Alla policyregler för en viss granskningspolicy delar samma batchparametrar och
 
 
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Överträdelser av granskningspolicyn och ärenden](audit-policy-violations-cases.md)
 [Definiera granskningspolicyer för källdokument](tasks/define-audit-policies-source-documents.md)
