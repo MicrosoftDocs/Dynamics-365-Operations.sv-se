@@ -2,7 +2,7 @@
 title: Konfigurera satser
 description: Tariffer i Microsoft Dynamics 365 Human Resources definierar hur mycket arbetsgivare och medarbetare som deltar i en förmån.
 author: andreabichsel
-ms.date: 06/22/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3d6018decbc429a5e6fbb658369d56a34439f6c7
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 2b6767df573260f32de8409e487f649bdc4779b0
+ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054990"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "6266667"
 ---
 # <a name="configure-rates"></a>Konfigurera satser
 
@@ -46,7 +46,7 @@ Använd tariffer för att fastställa hur mycket anställda och arbetsgivare som
    | **Förfallotid** | Slutdatum för tariffen. 12/31/2154 (vilket betyder aldrig) är standardvärdet. |
    | **Använd nivåer** | Den nivå som ska användas för beräkning av förmånspriset. En nivå för förmånspris i en nivå eller en dubbel nivå för förmånspris på två nivåer. Ett exempel på en dubbel nivå är en nivå baserad på kön och ålder. |
    | **Lönefrekvens** | Den lönefrekvens som avgör hur ofta förmånspriset betalas till förmånsleverantören. Om lönefrekvensen t.ex. är månadsvis representerar förmånspriset månadskostnaden. |
-   | **Avrundning av lönefrekvens** | Metod för avrundning av priset: standard eller trunkerad. |
+   | **Avrundning av lönefrekvens** | Metoderna för avrundning av satsen är: Standard, Trunkerad, Normal, Nedåt och Avrundning uppåt. </br></br><ul><li>**Standard** - Avrunda alltid uppåt. Till exempel rundar 10,611 av till 10,62. -10,231 rundar av till -10,23. </li><li>**Trunkerad** - Avrunda alltid nedåt. Till exempel rundar 10,619 av till 10,61. -10,231 rundar av till -10,24. </li><li>**Normal** – Decimalvärden som slutar på eller större än 5 avrundas från noll. Decimalvärden som slutar på eller under 4 avrundas mot noll. Till exempel rundar 10,615 av till 10,62. -10,235 rundar av till -10,24. 10,614 rundar av till 10,61. -10,234 rundar av till -10,23. </li><li>**Nedåt** - Avrunda mot noll. Till exempel rundar 10,619 av till 10,61. -10,231 rundar av till -10,23. </li><li>**Avrundning upp** – Avrunda från noll. Till exempel rundar 10,619 av till 10,62. -10,231 rundar av till -10,24. |
    | **Medarbetarbelopp för ickerökare** | Det belopp som en förmånsleverantör debiteras för en anställd som inte är rökare. Detta är det belopp som arbetsgivaren betalar till den förmånsleverantören och som ska baseras på lönefrekvensen för tariffinställningen. |
    | **Arbetsgivarbelopp för ickerökare** | Det belopp som en förmånsleverantör debiteras för en anställd som inte är rökare. Detta är det belopp som arbetsgivaren betalar till den förmånsleverantören och som ska baseras på lönefrekvensen för tariffinställningen. |
    | **Medarbetarbelopp för rökare** | Det belopp som en förmånsleverantör debiteras för en anställd som är rökare. Detta är det belopp som arbetsgivaren betalar till den förmånsleverantören och som ska baseras på lönefrekvensen för tariffinställningen. |

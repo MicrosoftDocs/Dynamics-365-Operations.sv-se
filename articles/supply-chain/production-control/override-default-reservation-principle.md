@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a1b2dd204c9a507dba387b0295f3021253e02dc4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eb4200deed5407bef6861913cecdad7114ea68cc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814812"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270797"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Åsidosätt standardreservationsprincipen för material i produktionen.
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Med funktionen *Åsidosätt standardproduktionsreservation* kan du ange en standardreservationsprincip för varje artikelmodellgrupp. Därför kan olika reservationsprinciper användas automatiskt för varje artikel som ingår i en strukturlista eller en batchorderformel. Du kan välja om varje artikelmodellgrupp ska åsidosätta principen för standardreservation som är inställd för en order och vilken reservationprincip som ska användas iställe (*manuell*, *uppskattning*, *tidsplanering*, *frisläppning* eller *start*).
 
@@ -37,7 +36,7 @@ Om du till exempel har råmaterial eller ingredienser som kräver plockarbete, s
 Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 
 - **Modul:** *produktionskontroll*
-- **Funktionsnamn:** *(förhandsversion) Åsidosätt standardproduktionsreservation*
+- **Funktionsnamn:** *Åsidosätt standardproduktionsreservation*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Tilldela en policy för produktionsreservation till en artikelmodellgrupp
 
