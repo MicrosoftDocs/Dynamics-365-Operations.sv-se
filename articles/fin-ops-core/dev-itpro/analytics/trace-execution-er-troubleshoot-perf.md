@@ -2,7 +2,7 @@
 title: Spåra körningen av ER-format för att felsöka prestandaproblem
 description: Det här avsnittet innehåller information om hur du använder funktionen för prestandaspårning i elektronisk rapportering (ER) för att felsöka prestandaproblem.
 author: NickSelin
-ms.date: 04/23/2021
+ms.date: 06/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 7fbec962fea374afdbabaad48a42dad380708678
+ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944663"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6295583"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spåra körning av ER-format för att felsöka prestanda problem
 
@@ -119,12 +119,27 @@ Motsvarande versioner av datamodell- och modellmappningskonfigurationer importer
 2. På sidan **Konfigurationer** i åtgärdsfönstret, på fliken **Konfigurationer** i gruppen **Avancerad inställningar** markerar du **Använd parametrar**.
 3. I dialogrutan **Användarparametrar** i avsnittet **körningsspårning** gör fäljande steg:
 
-    1. I fältet **körningsspårningsformat** väljer du **felsökningsspårningsformat** för att börja samla in information om ER-formatkörning. När det här värdet väljs samlar prestandaspårningen in information om den tid som har ägnats åt följande åtgärder:
+    1. Du använder fältet **körningsspårningsformat** om du vill ange formatet för den genererade prestandaspårning som körningsinformationen lagras i för ER-format och mappningselement.
 
-        - Kör varje datakälla i modellmappningen som anropas för att hämta data
-        - Behandla varje formatobjekt för att ange data i de utdata som genereras
+        - **Felsökningsspårningsformat** – Välj det här värdet om du planerar att interaktivt köra ett ER-format som har en kort körningstid. En samling detaljer om körningen av ER-formatet startas sedan. När det här värdet väljs samlar prestandaspårningen in information om den tid som har ägnats åt följande åtgärder:
 
-        Du använder fältet **körningsspårningsformat** om du vill ange formatet för den genererade prestandaspårning som körningsinformationen lagras i för ER-format och mappningselement. Om du väljer **felsökningsspårningsformat** som värde kan du analysera innehållet i spårningen i ER-åtgärdsdesignern och se ER-format eller mappningselement som nämns i spårningen.
+            - Kör varje datakälla i modellmappningen som anropas för att hämta data
+            - Behandla varje formatobjekt för att ange data i de utdata som genereras
+
+            Om du väljer värdet **Felsökningsspårningsformat** kan du analysera innehållet i spårningen i ER-åtgärdsdesigner. Där kan du visa ER-formatet eller mappningselementen som nämns i spårningen.
+
+        - **Sammansatt spårningsformat** – Välj det här värdet om du planerar att köra ett ER-format som har en lång körningstid i batchläge. En samling sammanlagda detaljer om körningen av ER-formatet startas sedan. När det här värdet väljs samlar prestandaspårningen in information om den tid som har ägnats åt följande åtgärder:
+
+            - Kör varje datakälla i modellmappningen som anropas för att hämta data
+            - Kör varje datakälla i formatmappningen som anropas för att hämta data
+            - Behandla varje formatobjekt för att ange data i de utdata som genereras
+
+            Värdet **Sammansatt spårningsformat** finns tillgängligt i Microsoft Dynamics 365 Finance version 10.0.20 och senare.
+
+            I ER-formatdesignern för ER modellmappningsdesignern kan du visa den totala körningstiden för en enskild komponent. Spårningen innehåller även information om körningen, t.ex. antalet körningar samt den minsta och maximala tiden för en enda körning.
+
+            > [!NOTE]
+            > Spårningen samlas in utifrån den spårade komponentsökvägen. Statistiken kan därför bli felaktig när en enskild överordnad komponent innehåller flera icke-underordnade komponenter, eller när flera underordnade komponenter har samma namn.
 
     2. Ange följande alternativ till **ja** för att samla in specifik information om körningen av komponenterna ER-modellmappning och ER-format:
 

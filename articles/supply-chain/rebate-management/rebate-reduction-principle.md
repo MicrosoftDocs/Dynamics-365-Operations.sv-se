@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: f586e0f40b5362510333263a985eada39d3c53f5
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: a0cde0c22b69e7605708a647d47530840ce823b1
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020377"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270943"
 ---
 # <a name="rebate-reduction-principles"></a>Principer för rabattreducering
 
@@ -45,7 +45,7 @@ Om du vill arbeta med principer för rabattreducering går du till **Rabatthante
 
 Följande tabell innehåller några typiska exempel på inställningar för rabattreduceringsprinciper. För var och en av dessa rabatter minskar principerna **Beskrivning** beskriver syftet med rabattreduceringsprincipen.
 
-| princip för rabattreducering | beskrivning | Använd reducering | Reduceringsunderlag | Exkludera från reducering |
+| Princip för rabattreducering | beskrivning | Använd reducering | Reduceringsunderlag | Exkludera från reducering |
 |---|---|---|---|---|
 | Uppskjutet | Minska rabatten | Ja | Båda | Nr |
 | Exclreb | Exkludera rabatt | Ja | Rabatt | Ja |

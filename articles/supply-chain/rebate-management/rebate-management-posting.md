@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 808080d9e84c4af1b061d5a4ce76d5fa309e66f7
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: e77022bde6e612392c80cf5fe2b4c1e75ec5775d
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216753"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271015"
 ---
 # <a name="rebate-management-posting-setup"></a>Bokföringsinställningar för rabatthantering
 
@@ -41,7 +41,7 @@ I tabellen nedan beskrivs de inställningar som är tillgängliga i rubrikavsnit
 |---|---|
 | Bokföringsprofil | Ange ett unikt namn för profilen. |
 | beskrivning | Ange en beskrivning av profilen. |
-| Modul | Välj den typ av rabatter och royalties som profilen är associerad med ( *Kund* eller *Leverantör*). |
+| Modul | Välj den modul som rabatter och royalties som profilen är associerad med ( *Kund* eller *Leverantör*). |
 | Typ | Välj profiltyp ( *Rabatt* eller *Royalty*). |
 | Betalningstyp | <p>Det här fältet bestämmer formatet för den bokförda rabattutleveransen.<p><p>När fältet **Typ** är inställt på *Rabatt* är följande värden tillgängliga:</p><ul><li>*Betala med leverantörsreskontra* – När du bokför en kundrabatt skapas en leverantörsfaktura för remissleverantören som ställs in för rabattkunden. När du bokför en leverantörsrabatt skapas en leverantörsfaktura för rabattens leverantörskonto.</li><li>*Kundavdrag* – När du bokför rabatten skapas en kundavdragsjournal för rabattkunden.</li><li>*Kundavdrag för momsfaktura* – När du bokför rabatten skapas en fritextfaktura för rabattkunden.</li><li>*Handelsutgift* – När du bokför rabatten skapas en kundavdragsjournal för rabattkunden.</li><li>*Rapportering* – När du bokför rabatten skapas en kundavdragsjournal för rabattkunden.</li></ul><p>När fältet **Typ** är inställt på *Royalty* är följande värden tillgängliga:</p><ul><li>*Betala med leverantörsreskontra* – När du bokför rabatten skapas en leverantörsfaktura för rabattens leverantörskonto.</li><li>*Rapportering* – När du bokför rabatten skapas en leverantörsfaktura för rabattens leverantörskonto.</li></ul><p>För mer information, se avsnittet [Betalningstyper](#payment-types) som följer. |
 | Företag | Välj vilket företag (juridisk person) som provisioner ska periodiseras och att anspråken ska betalas av. |
@@ -66,7 +66,7 @@ I tabellen nedan beskrivs hur de olika inställningarna i fältet **Betalningsty
 > Ta hänsyn till följande när du ställer in [rabatthanteringserbjudanden](rebate-management-deals.md):
 >
 > - För transaktioner där fältet **Stäm av efter** anges till *Erbjudande*, kan du inte använda det dynamiska erbjudandekontot vid bokföring. Du måste använda ett angivet kund- eller leverantörskonto.
-> - För erbjudanden där fältet **Stäm av efter** anges till *Rad* kan du använda en bokföringsprofil som förskjuts till ett dynamiskt affärskonto på erbjudanderaden, eftersom kunden är inställd per transaktionsrad.
+> - För erbjudanden där fältet **Stäm av efter** anges till *Rad* kan du använda en bokföringsprofil som förskjuts till ett dynamiskt affärskonto på erbjudanderaden, eftersom kunden eller leverantören är inställd per transaktionsrad.
 
 ## <a name="posting-fasttab"></a>Snabbflik för bokföring
 
@@ -74,15 +74,15 @@ I tabellen nedan beskrivs de fält som är tillgängliga på snabbfliken **Bokf�
 
 | Fält | beskrivning |
 |---|---|
-| Kredittyp | Välj om du vill kreditera ett redovisningskonto eller en kund eller leverantör. |
-| Kreditkonto | Det konto som kreditbeloppen bokförs på när rabattbeloppen förs in. Det här kontot kommer även att användas som debetkonto när rabatten bokförs för att kreditera kunden. |
+| Kredittyp | Välj om du vill kreditera ett redovisningskonto eller en kund. Om fältet **Betalningstyp** i rubriken anges till *Momsfaktura och kundavdrag*, anges detta fält till *huvudbokskonto*. För leverantörsrabatter är det här fältet inställt på *huvudbokskonto*. |
+| Kreditkonto | Välj det konto som kreditbeloppen bokförs på när rabattbeloppen förs in. Det här kontot kommer även att användas som motkonto när rabatten bokförs för att kreditera kunden eller debitera leverantören. |
 | Journalnamn<br>(I avsnittet **Provision**) | Välj namnet på den journal som ska användas för att registrera den bokförda provisionen. |
 | Typ | Välj om du vill bokföra rabatten till ett redovisningskonto eller till en kund eller leverantör. Om fältet **Betalningstyp** i rubriken anges till *Momsfaktura och kundavdrag*, anges detta fält till *Kund/leverantör*. |
-| Använd kontokälla | <p>Välj ett av följande värden:</p><ul><li>*Ingen* – Om du väljer det här värdet måste du ange ett konto i fältet **Rabattkonto**.</li><li>*Erbjudandekonto* – Använd kund- eller leverantörskontot som anges på rabattraden. Du kan bara välja detta värde för erbjudanden där fältet **Stäm av efter** anges till *Rad* och erbjudanderader där fältet **Kontokod** anges till *Tabell*. Den gäller inte för bokföringsprofiler för kundroyalty.</li></ul> |
+| Använd kontokälla | <p>Välj ett av följande värden:</p><ul><li>*Fast konto* – Om du väljer det här värdet måste du ange ett konto i fältet **Rabattkonto**.</li><li>*Erbjudanderadkonto* – Använd kund- eller leverantörskontot som anges på rabattraden. Du kan bara välja detta värde för erbjudanden där fältet **Stäm av efter** anges till *Rad* och erbjudanderader där fältet **Kontokod** anges till *Tabell*. Den gäller inte för bokföringsprofiler för kund-/royaltybokföring eller leverantörsrabatter som baseras på försäljningsorder.</li></ul> |
 | Rabattkonto | Kontot som faktiska rabatter bokförs på. |
-| Journalnamn<br>(I avsnittet **Rabatthantering**) | Välj namnet på den journal som ska användas för att bokföra en kreditfaktura för rabattbeloppet till kunden. Det här fältet är inte tillgängligt när **Betalningstyp** anges till *Momsfaktura för kundavdrag*. |
+| Journalnamn<br>(I Fältgrupp för **rabatthantering**) | Välj namnet på den journal som ska användas för att bokföra en kreditfaktura för rabattbeloppet till kunden eller leverantören. Det här fältet är inte tillgängligt när **Betalningstyp** anges till *Momsfaktura för kundavdrag*. För kundrabatter är journalnamn av typen *Daglig* journal tillgängliga. För kund- och leverantörsrabatter är journalnamnen för journaltypen *Leverantörsfakturaregistrering* tillgänglig. |
 | Artikelmomsgrupp | Ange om rabatten är beskattningsbar. |
-| Journalnamn<br>(I avsnittet **Skriva av**) | Om rabatten som bokförs inte är lika med provision kan skillnaden skrivas av. Välj namnet på den journal som ska användas för att registrera den bokförda avskrivningen. |
+| Journalnamn<br>(I fältgrupp **Avskrivning**) | Om rabatten som bokförs inte är lika med provision kan skillnaden skrivas av. Välj namnet på den journal som ska användas för att registrera den bokförda avskrivningen. |
 
 ## <a name="posting-by-company-fasttab"></a>Snabbflik för bokföring efter företag
 
@@ -92,6 +92,6 @@ Använd knapparna i verktygsfältet för att lägga till företag i rutnätet oc
 
 Markera raden för respektive företag och ange sedan följande information med hjälp av fälten under rutnätet:
 
-- **Debettyp** – Välj om du vill debitera ett redovisningskonto eller en kund eller leverantör.
+- **Debettyp** – Välj om du vill debitera ett redovisningskonto eller leverantör. För kundrabatter och royalties är det här fältet inställt på *huvudbokskonto*.
 - **Debetkonto** – Ange det konto som debetbeloppet bokförs på när rabattbeloppen tillämpas.
 - **Huvudkonto** – Välj huvudkonto för avskrivning.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: c62e2d1b361e0ed1ab1ced42997add157b30c828
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 88e38989e3d3e46d0c43779659bc6ea2e29f08e2
+ms.sourcegitcommit: 8e846b52763f90d2232ec7d427839f4722570bce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019061"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "6292747"
 ---
 # <a name="containerization"></a>Skapande av fraktbehållare
 
@@ -50,7 +50,7 @@ Använd behållartyper för att skapa beskrivningar av behållare, inklusive hö
 
 Så här ställer du in en behållartyp:
 
-1. Gå till **Lagerstyrning** \> **Inställningar** \> **Behållare** \> **Behållartyp**.
+1. Gå till **Warehouse management** \> **Inställningar** \> **Behållare** \> **Behållartyp**.
 1. Skapa en ny behållartyp genom att välja **Nytt**.
 1. Ange en unik identifierare (ID) och en beskrivning för behållartypen.
 1. Ange behållarens verkliga eller beräknade vikt i fältet **Taravikt**.
@@ -68,7 +68,7 @@ Du kan ställa in logiska grupper av behållartyper. För varje grupp kan du ang
 
 Så här ställer du in en behållargrupp:
 
-1. Gå till **Lagerstyrning** \> **Inställningar** \> **Behållare** \> **Behållargrupper**.
+1. Gå till **Warehouse management** \> **Inställningar** \> **Behållare** \> **Behållargrupper**.
 1. Välj **Nytt** för att skapa en behållargrupp.
 1. Ange ett unikt ID och en beskrivning för behållargruppen.
 1. På snabbfliken **Detaljer**, välj **Ny** för att lägga till en behållartyp i gruppen.
@@ -81,7 +81,7 @@ Du kan ställa in regler för processen att skapa behållare, till exempel bland
 
 Så här ställer du in en behållarversionsmall:
 
-1. Gå till **Lagerstyrning** \> **Inställningar** \> **Behållare** \> **Mall för behållarversion**.
+1. Gå till **Warehouse management** \> **Inställningar** \> **Behållare** \> **Mall för behållarversion**.
 1. Skapa en ny behållarversionsmall.
 1. I fälten **Namn på skapande av behållare** och **Sekvensnummer**, ange namnet på mallen för skapande av behållare och den ordning som matchas med allokeringsrader.
 
@@ -108,6 +108,8 @@ Så här ställer du in en behållarversionsmall:
 
       - **Packa till alla öppna behållare** – Systemet utvärderar om allokeringsraden får plats i alla behållare som skapas.
       - **Packa endast till aktuell behållare** – Systemet utvärderar bara om allokeringsraden får plats i den senast skapade containern.
+
+    Mer information och exempel som visar hur du arbetar med förpackningsstrategier för behållare finns i [Förpackningsstrategier för behållare](container-packing-strategy-overview.md).
 
 1. Välj om du vill ställa in regler för packning av allokeringsrader i behållare **Avbrott för blandningslogik**. Du kan till exempel skapa en regel som låter arbetstagare packa allokeringsrader för två olika artiklar i samma behållare. Om du vill definiera en blandningsregel, följ dessa steg:
 

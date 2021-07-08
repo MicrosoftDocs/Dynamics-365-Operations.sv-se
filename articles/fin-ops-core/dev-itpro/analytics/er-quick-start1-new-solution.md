@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 90e5381c2d30753e3ad82a38d7361b411f1d7a87
+ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224044"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304403"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Skapa en ny ER-lösning för att skriva ut en egen rapport
 
@@ -185,7 +185,7 @@ Genom att slutföra stegen i avsnittet [Importera en ny konfiguration för datam
 
 ### <a name="import-a-new-data-model-configuration"></a><a name="ImportDataModel"></a>Importera en ny konfiguration för datamodell
 
-1. Hämta filen [enkätmodell.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) och spara den på den lokala datorn.
+1. Hämta filen [enkätmodell.version.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml) och spara den på den lokala datorn.
 2. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 3. På arbetsytan **Elektronisk rapportering** väljer du **Rapporteringskonfiguration**.
 4. På Åtgärdsfönster väljer du **växla** \> **läs in från XML-fil**.
@@ -300,7 +300,7 @@ Genom att slutföra stegen i avsnittet [Importera en ny konfiguration för model
 
 ### <a name="import-a-new-model-mapping-configuration"></a><a name="ImportModelMapping"></a>Importera en ny konfiguration för modellmappning
 
-1. Hämta filen [enkätmappning.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) och spara den på den lokala datorn.
+1. Hämta filen [enkätmappning.version.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml) och spara den på den lokala datorn.
 2. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 3. På arbetsytan **Elektronisk rapportering** väljer du **Rapporteringskonfiguration**.
 4. På Åtgärdsfönster väljer du **växla** \> **läs in från XML-fil**.
@@ -366,7 +366,7 @@ Du måste konfigurera datakällor för att få åtkomst till programtabellerna s
     2. Markera **Lägg till**.
     3. I dialogrutan i fältet **Namn** ange **\$ResultGroup**.
     4. Välj **Redigera recept**.
-    5. I [ER-formelredigeraren](general-electronic-reporting-formula-designer.md), i fältet **Formel** ange **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** för att använda [sökväg](er-formula-language.md#paths) för 1:n-relation mellan register KMCollection och KMQuestionResultGroup.
+    5. I [ER-formelredigeraren](general-electronic-reporting-formula-designer.md), i fältet **Formel** ange **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** för att använda [sökväg](er-formula-language.md#Paths) för 1:n-relation mellan register KMCollection och KMQuestionResultGroup.
     6. Markera **Spara** och stäng sedan formelredigeraren.
     7. Klicka på **OK** om du vill lägga till nya beräknade fält.
 
@@ -547,7 +547,7 @@ Status för version 1.1 av denna konfiguration ändras från **utkast** till **s
 
 ER-ramverket använder fördefinierade mallar för att generera rapporter i Microsoft Office-format (Excel-arbetsböcker eller Word-dokument). Medan den rapport som krävs skapas fylls en mall i med de data som krävs enligt det konfigurerade dataflöden. Därför måste du först designa en mall för din anpassade rapport. Den här mallen måste vara utformad som en Excel-arbetsbok, vars struktur representerar layouten i en anpassad rapport. Du måste namnge varje Excel-artikel som du tänker fylla i med nödvändiga data.
 
-1. Hämta filen [enkätrapportmall.xslx](https://go.microsoft.com/fwlink/?linkid=851448) och spara den på den lokala datorn.
+1. Hämta filen [enkätrapportmall.xslx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx) och spara den på den lokala datorn.
 2. Öppna filen i Excel och granska arbetsbokens struktur.
 
 Som visas i bilden nedan har den hämtade mallen utformats för att skriva ut angivna enkäter som visar en enkätfrågeställningar tillsammans med lämpliga svar.
@@ -572,7 +572,7 @@ Genom att slutföra stegen i avsnittet [Importera en utformad formatkonfiguratio
 
 ### <a name="import-a-designed-format-configuration"></a><a name="FormatImport"></a>Importera en utformad formatkonfiguration
 
-1. Hämta filen [enkätformat.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) och spara den på den lokala datorn.
+1. Hämta filen [enkätformat.version.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml) och spara den på den lokala datorn.
 2. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 3. På arbetsytan **Elektronisk rapportering** väljer du **Rapporteringskonfiguration**.
 4. På Åtgärdsfönster väljer du **växla** \> **läs in från XML-fil**.

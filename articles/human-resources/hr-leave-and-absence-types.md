@@ -2,7 +2,7 @@
 title: Konfigurera typer av tjänstledighet och frånvaro
 description: Ställ in tjänstledighetstyper som medarbetarna kan göra i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 098f614da80a1e7e3e31b30cea707ecfbd5b0a70
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 39e4c4b9c83ca648c21ac20bd20b739af8a6b9ed
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056622"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271137"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurera typer av tjänstledighet och frånvaro
 
@@ -71,7 +71,7 @@ Tjänstledighetstyper i Dynamics 365 Human Resources definierar olika typer av f
    
  3. Ange **Överför tjänstledighetstyp** för tjänstledighetstypen. När du väljer det här alternativet överförs alla överförda saldon till den angivna tjänstledighetstypen. Tjänstledighetstypen måste också inkluderas i planen för tjänstledighet och frånvaro. 
  
- 4. Definiera **utgångsregler** för tjänstledighetstypen. När du konfigurerar det här alternativet kan du välja en enhet med dagar eller månader och ange varaktighet för förfallodatum. Du kan också ange giltighetsdatum för utgångsregeln. Giltighetsdatumet används för att bestämma när batchjobbet ska köras som bearbetar utgångsdatumet för tjänstledighet eller det datum då regeln börjar gälla. Själva utgångsdatumet inträffar alltid på startdatumet för tjänstledighetsplanen när batchjobbet är inställt på att bearbeta. Startdatumet för planen kan till exempel vara den 1 januari 2020, men regeln gäller bara för 2020-06-1. Genom att ange giltighetsdatumet till 2020-06-1 bearbetas regeln vid nästa års gräns, så 2021-01-1. Alla tjänstledighetssaldon som finns vid förfallotiden kommer att dras från tjänstledighetstypen och återspeglas i tjänstledighetssaldot. 
+4. Definiera **utgångsregler** för tjänstledighetstypen. När du konfigurerar det här alternativet kan du välja en enhet med dagar eller månader och ange varaktighet för förfallodatum. Giltighetsdatumet för utgångsregeln används för att bestämma när batchjobbet ska köras som bearbetar utgångsdatumet för tjänstledighet eller det datum då regeln börjar gälla. Själva utgångsdatumet inträffar alltid på startdatumet för periodiseringsperioden. Till exempel, om startdatumet för periodiseringsperioden är 3 augusti 2021 och utgångsregeln sattes till 6 månader, kommer regeln att behandlas baserat på utgångsförskjutningen från startdatumet för periodiseringsperioden, så den skulle köras den 3 februari 2022. Alla tjänstledighetssaldon som finns vid förfallotiden kommer att dras från tjänstledighetstypen och återspeglas i tjänstledighetssaldot.
  
 ## <a name="see-also"></a>Se även
 
@@ -79,6 +79,7 @@ Tjänstledighetstyper i Dynamics 365 Human Resources definierar olika typer av f
 - [Skapa en plan för tjänstledighet och frånvaro](hr-leave-and-absence-plans.md)
 - [Skapa en arbetstidskalender](hr-leave-and-absence-working-time-calendar.md)
 - [Skjut upp tjänstledighet](hr-leave-and-absence-suspend-leave.md)
+- [Skapa ett arbetsflöde för köpa och sälja ledighetsansökan](hr-leave-and-absence-buy-sell-workflow.md)
 
 
 

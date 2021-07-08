@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 86f231b9ae85d136b0e963757d9561a7abda4edc
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 24c322712edf1277eabfdd708f528d89bcf43640
+ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938310"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261756"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Moln- och kantskalningsenheter för arbetsbelastning i tillverknings och distributionslagerhantering
 
@@ -45,15 +45,15 @@ Skalningsenheter utökas med Supply Chain Management navmiljö genom att lägga 
 
 Skalningsenheter tillhandahåller effektivitet, tillförlitlighet och skalning för de tilldelade arbetsbelastningarna. Kantskalenheter kan tillfälligt kopplas ned från den molnbaserade miljön, och medarbetarna fortsätter att arbeta i de tilldelade arbetsbelastningarna "on the edge" – i utkanten av nätverket istället för som annars centralt.
 
-En *arbetsbelastning* är en definierad uppsättning affärsfunktioner som kan beaktas och delegeras till en skalningsenhet. Trots att arbetsbelastningen för lagerstyrning har frisläppts befinner sig arbetsbelastningen för tillverkningskörning fortfarande i förhandsgranskningsstadiet.
+En *arbetsbelastning* är en definierad uppsättning affärsfunktioner som kan beaktas och delegeras till en skalningsenhet. Trots att arbetsbelastningen för Warehouse management har frisläppts befinner sig arbetsbelastningen för tillverkningskörning fortfarande i förhandsgranskningsstadiet.
 
 Du kan använda [portalen för skalningsenhetsansvarig](https://sum.dynamics.com) för att konfigurera din navmiljö och dina molnskalningsenhet för utvalda arbetsbelastningar. Du kan också tilldela flera arbetsbelastningar per skalningsenhet. Mer information om förutsättningar och begränsningar för molnbaserade skalningsenheter i den aktuella versionen finns i avsnittet [Förutsättningar och begränsningar för molnskalningsenheter](#cloud-scale-unit-prerequisites) längre fram i detta ämne.
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Särskilda arbetsbelastningsmöjligheter för distributionslagerhantering i en skalningsenhet
 
-Arbetsbelastningen fär lagerstyrning är den första distribuerade arbetsbelastningen för skalningsenheter som har frisläppts för allmän tillgänglighet.
+Arbetsbelastningen fär Warehouse management är den första distribuerade arbetsbelastningen för skalningsenheter som har frisläppts för allmän tillgänglighet.
 
-För lagerstyrning tillför skalningsenheter följande funktioner:
+För Warehouse management tillför skalningsenheter följande funktioner:
 
 - Systemet kan bearbeta utvalda påfyllningsmetoder för försäljningsorder och lagerpåfyllnad baserad på efterfrågan.
 - Lagerarbetare kan köra lagerställearbete för försäljnings- och efterfrågepåfyllning genom att använda mobilappen Hantering av distributionslager.

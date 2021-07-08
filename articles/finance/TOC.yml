@@ -1184,7 +1184,7 @@
               href: general-ledger/view-financial-reports.md
             - name: Användargränssnitt i Rapportdesignern
               href: ../fin-ops-core/dev-itpro/analytics/report-designer-interface.md?toc=/dynamics365/finance/toc.json
-            - name: Kortkommandon för ekonomisk rapportering
+            - name: Kortkommandon för Financial Reporter
               href: general-ledger/financial-reporting-keyboard-shortcuts.md
             - name: Användarinställningar i designer för ekonomiska rapporter
               href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/dynamics365/finance/toc.json
@@ -1208,15 +1208,15 @@
               href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
             - name: Frågor och svar om ekonomisk rapportering
               href: general-ledger/financial-reporting-faq.md
-        - name: Ekonomiinsikter
+        - name: Finance insights
           items:
-            - name: Ekonomiinsikter – startsida
+            - name: Finance insights – startsida
               href: finance-insights/finance-insights-home-page.md
             - name: Konfiguration och administration
               items:
-                - name: Konfigurera Finance Insights för allmänt tillgänglig förhandsversion
+                - name: Konfigurera Finance insights för allmänt tillgänglig förhandsversion
                   href: finance-insights/configure-for-fin-insites-PubPrvw.md
-                - name: Konfigurera Finance Insights
+                - name: Konfigurera Finance insights
                   href: finance-insights/configure-for-fin-insites.md
                 - name: Aktivera förutsägelser av kundbetalning
                   href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1226,7 +1226,7 @@
                   href: finance-insights/enable-budget-proposal.md
                 - name: Skapa projekt för dataintegrerare
                   href: finance-insights/create-data-integrate-project.md
-            - name: Använda Ekonomiinsikter
+            - name: Använda Finance insights
               items:
                 - name: Budgetförslag
                   href: finance-insights/budget-proposals.md
@@ -1462,8 +1462,10 @@
                       href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
                     - name: Regulatory configuration service – Globaliseringsfunktioner
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
-                    - name: Skapa ER-konfigurationer i Regulatory configuration Service och överföra dem till den globala lagringsplatsen
+                    - name: Skapa ER-konfigurationer i Regulatory Configuration Service och överföra dem till den globala lagringsplatsen
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                    - name: Regulatory Configuration Service – ta bort en RCS-miljö
+                      href: localizations/rcs-delete-environment.md
                     - name: Regulatory Configuration Service – Lifecycle Services lagringsutfasning
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Elektronisk fakturering
@@ -1476,7 +1478,7 @@
                       href: localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/finance/toc.json
                     - name: Utfärda elektroniska fakturor i Finance och Supply Chain Management
                       href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/finance/toc.json
-                    - name: Skapa ett Azure lagringskonto och ett nyckelvalv
+                    - name: Skapa ett Azure lagringskonto och ett Key Vault
                       href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
                     - name: Instrumentpanel för användningshantering
                       href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
@@ -1524,6 +1526,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Lista över försäljning inom EU
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Rapportering i Storbritannien
+                          items:
+                            - name: Förbered för integration med MTD för moms
+                              href: localizations/emea-gbr-mtd-vat-integration.md
             - name: Regeluppdateringar
               href: localizations/regulatory-updates.md
             - name: Australien
@@ -2446,7 +2452,7 @@
                               href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
                         - name: 'TDS (moms), Indien'
                           items:
-                            - name: Översikt över momsavdrag vid källan (TDS) i Indien
+                            - name: Översikt över Tax Deducted at Source (TDS) i Indien
                               href: localizations/apac-ind-TDS-India-TDS-overview.md
                             - name: Inkludera GST (moms) vid beräkning av momsavdrag
                               href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
@@ -3176,6 +3182,8 @@
                       href: localizations/rus-rated-expenses-registers.md
                     - name: Leverantörsreskontra – skatteskuldregister och skuldavskrivningar
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
+                    - name: Dåliga skuldreserver i kundreskontra
+                      href: localizations/rus-bad-debts.md
             - name: Saudiarabien
               items:
                 - name: Saudiarabien – översikt
@@ -3292,8 +3300,6 @@
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
                     - name: Ställa in momsgrupper för återfört tillägg
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: Göra skatt digitalt för moms
-                  href: localizations/emea-gbr-mtd-vat-integration.md
                 - name: Rapport för statistik över betalningspraxis
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: USA
@@ -3665,6 +3671,12 @@
               items:
                 - name: Formelspråk
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json
+                - name: Datatyper som stöds för ER-formler
+                  items:
+                    - name: Primitiva datatyper
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/finance/toc.json
+                    - name: Sammansatta datatyper
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/finance/toc.json
                 - name: Funktioner
                   items:
                     - name: Behållare
@@ -3929,12 +3941,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
             - name: Utforma ER-format för att skapa utgående dokument i olika format
               items:
+                - name: Utforma en konfiguration för rapportgenerering i OPENXML-format
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Skapa konfigurationer för att generera utgående dokument i Excel-format
                   items:
                     - name: Skapa en konfiguration för att generera dokument i Excel-format
                       href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
-                    - name: Exempel på generering av rapporter i OPENXML-format
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Ändra ER-format genom att tillämpa Excel-mallar igen
                       href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
                     - name: Lägg dynamiskt till kolumner till rapporter från Excel som horisontellt expanderbara intervall
@@ -4211,13 +4223,17 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
                     - name: Application update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
+                    - name: Application update 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
                 - name: Ange anpassad lagringsplats för skapade dokument
                   items:
                     - name: Prenumerera på en händelse för att begära ett svar från en prenumerationshanterare
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
                     - name: Delegera genereringen av ett ER-mål till en anpassad målfabrik
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
-                - name: Initiera datakällvärden för typen ANVÄNDARENS INDATAPARAMETER från källkod
+                    - name: Implementera ett anpassat mål för skapade dokument
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/finance/toc.json
+                - name: Initiera datakällvärden för typen USER INPUT PARAMETER från källkod
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
         - name: Mobilapp
           items:

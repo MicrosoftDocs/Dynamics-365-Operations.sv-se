@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79115f26047c64ddb528a73e01e76891fd9b5044
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6d32abacc1539cb930ad6f1ebcfe6fa9af4befcf
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052083"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271505"
 ---
 # <a name="buy-and-sell-leave"></a>Köpa och sälja tjänstledighet
 
@@ -48,10 +48,16 @@ Dina saldon kommer antingen att uppdateras automatiskt eller gå igenom en godk�
 
 Dina saldon kommer antingen att uppdateras automatiskt eller gå igenom en godkännande process innan du uppdaterar. Detta beror på hur inköpsprincipen har konfigurerats.
 
+
+## <a name="troubleshooting"></a>Felsökning 
+
+Om ett arbetsflöde för begäran om köp eller försäljning misslyckas misslyckas användare med **EssLeaveBuySellRequestApprover** privilegium kan granska meddelandeloggen för alla begäran om köp och försäljning. För att göra detta, gå till **Tjänstledighet > Länk > Köpa och sälja tjänstledighetsansökningar > Meddelandelogg** (upp till vänster). I **meddelandeloggen** visas hur transaktionerna bearbetas och vilken arbetsflödeshistorik som har associerats.
+
+
 ## <a name="see-also"></a>Se även
 
 [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)</br>
-[Hantera principer för köpa och sälja tjänstledighet](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+[Hantera policyer för köpa och sälja tjänstledighet](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

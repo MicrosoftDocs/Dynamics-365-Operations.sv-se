@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de380113fe951f75c15f9e5526ad2f1f5cc84334
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0b04ee246d4c28e934407ccb92d792692cc4347d
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908890"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301660"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Importera historikdata för efterfrågeprognoser
 
@@ -39,26 +39,6 @@ Du måste ha en Microsoft Excel-fil eller kommaseparerade värden (CSV) som inne
 
 Mer information om hur du importerar data, bland annat hur du rensar data efter en import, finns i [Översikt över dataimport- och exportjobb](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) samt relaterade ämnen.
 
-## <a name="example"></a>Exempel
-
-Du kan använda följande fil som exempel. Hämta [HistoricalDemandData](/dynamics/s-e/). Denna fil innehåller historiska efterfrågedata för artikel D0001. Den innehåller endast följande obligatoriska fält: webbplats, kvantitet och efterfrågedatum.
-
-1. Välj det företag som du vill importera de historiska efterfrågeuppgifterna till.
-2. Öppna arbetsytan **Datahantering**.
-3. Välj panelen **Import**.
-4. Namnge importprojektet, exempelvis **Importera historisk efterfrågan för artikeln D0001**.
-5. I fältet **Källdataformat** väljer du filformat för den fil som du importerar. Om du vill importera filen HistoricalDemandData i det här exemplet väljer du **CSV**.
-6. I fältet **Enhetsnamn** väljer du **Historisk extern efterfrågan**.
-7. Spara filen på din dator och överför den sedan.
-8. Välj **Importera**.
-9. Sidan **Utförandesummering** öppnas automatiskt. Kontrollera den importerade informationen på sidan.
-
-När du har importerat efterfrågehistoriken kan du skapa en efterfrågeprognos.
-
-## <a name="additional-resources"></a>Ytterligare resurser
-
-[Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)  
-[Översikt över jobb för import och export av data](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
-
+Se [Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: ee342de6d069131e230120c5d65aef58da8e632a
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8436842b4f07ba000649075198bdef43ad508f8f
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020397"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270967"
 ---
 # <a name="rebate-management-deal-workflows"></a>Arbetsflöden för rabatthantering
 
@@ -27,12 +27,12 @@ ms.locfileid: "6020397"
 
 Om du vill godkänna rabatterbjudanden använder Rabatthantering samma arbetsflödesplattform som andra Finance and Operations-appar. Två jobbprocesser associeras med varje arbetsflöde:
 
-- Ett element i arbetsflödet aktiverar affären så att användaren eller arbetsflödesprocessen kan godkänna transaktionerna.
 - Ett element i arbetsflödet godkänner erbjudandet.
+- Ett element i arbetsflödet aktiverar affären så att användaren eller arbetsflödesprocessen kan godkänna transaktionerna.
 
 Innan du kan använda ett rabattavtal måste det vara aktivt i modulen **Rabatthantering**. Om du vill aktivera ett erbjudande måste du först skapa och konfigurera ett arbetsflöde för *rabatthantering*.
 
-När ett arbetsflöde har aktiverats för Rabatthantering kan användarna inte godkänna erbjudanden manuellt. Arbetsflödet måste alltid användas.
+Användarna kan inte godkänna erbjudanden manuellt. Arbetsflödet måste alltid användas.
 
 ## <a name="create-and-manage-rebate-management-deal-workflows"></a>Skapa och hantera arbetsflöden för rabatthantering
 
@@ -43,3 +43,16 @@ För att arbeta med dina arbetsflöden för rabatthantering, gå till **Rabattha
 Om du vill aktivera ett erbjudande via ett arbetsflöde öppnar du erbjudandet (till exempel på sidan **Alla rabatthanteringserbjudanden**). Sedan i åtgärdsfönstret, välj **Arbetsflöde \> Skicka**. När det nya erbjudandet har bearbetats och godkänts i arbetsflödet är den aktiv och klar att användas.
 
 När ett erbjudande har aktiverats kan du inte ändra dess inställningar. Om du måste ändra ett aktivt erbjudande, inaktivera det och skapa sedan ett nytt erbjudande. Om den nya affären ska liknar det gamla erbjudandet kan du skapa det genom att kopiera det gamla erbjudandet.
+
+Du kan ändra följande inställningar för en deal när den har aktiverats:
+
+- Stäm av
+- Ackumulerad garanti
+- Bokföringsprofil
+- Bokföringsprofil för garanti
+- Dokumentnoteringar
+- Valuta
+- Från-datum
+- Till-datum
+
+Dessutom kan rabattrader tas bort.

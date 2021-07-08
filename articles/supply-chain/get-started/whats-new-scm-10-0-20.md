@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3a35d3becbf81c51d29ef2e0f4cbf6a12cd196b8
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: a782416bdb12a8ac7f1ba807452ca54072af3ab5
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187636"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301756"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10020-august-2021"></a>Förhandsversion av Dynamics 365 Supply Chain Management 10.0.20 (augusti 2021)
 
@@ -26,7 +26,7 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 - **Förhandsversion:** maj 2021
 - **Allmän tillgänglighet för version (självuppdatering):** juli 2021
-- **Allmän tillgänglighet för version (automatisk uppdatering):** juli 2021
+- **Allmän tillgänglighet för frisläppning (automatisk uppdatering):** augusti 2021
 
 
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
@@ -57,7 +57,7 @@ Följande register lista de funktionsförbättringar som ingår i denna version:
 | Produktinformationshantering | Förbearbetning av strukturlistasrapport för att förhindra tidsgräns | Med den här funktionen kan strukturlistasrapporten förbearbetas. På så sätt undviker du tidsutjämningsproblem när du har en stor databelastning för rapporten. |
 | Anskaffning och källa | Aktivera återställning av anskaffningsrelaterade arbetsflöden | Med den här förhandsgranskningsfunktionen kan du återställa följande arbetsflöden till utkaststatus: Inköpsorder, Leverantörsändring och Inköpsrekvisitioner. |
 | Transporthantering | Gör det möjligt att skapa en leverantörsfakturajournal när en fraktsedel kastas | När den här funktionen är aktiverad skapas en motsvarande leverantörsfakturajournal bara av avstämningsskäl när du använder alternativet för löneleverantör. Annars skapas alltid fakturajournalen. |
-| Lagerstyrning | Validera mallar valda för lagerpåfyllnadsjobb | Med den här funktionen kan användarna välja giltiga påfyllnadsmallar när de ställer in ett påfyllnadsjobb. Den hindrar användarna från att skapa ett påfyllnadsjobb utan en mall och från att välja mallar av typen *Lagerpåfyllnad*, om inte skapar påfyllnadsarbete och kan ta lång tid att bearbeta. |
+| Warehouse management | Validera mallar valda för lagerpåfyllnadsjobb | Med den här funktionen kan användarna välja giltiga påfyllnadsmallar när de ställer in ett påfyllnadsjobb. Den hindrar användarna från att skapa ett påfyllnadsjobb utan en mall och från att välja mallar av typen *Lagerpåfyllnad*, om inte skapar påfyllnadsarbete och kan ta lång tid att bearbeta. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nya och uppdaterade dokumentationsresurser
 
@@ -69,7 +69,7 @@ Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De
 | Lagerhantering | [Tillägg för lagersynlighet](../inventory/inventory-visibility.md)<br><br>[Översikt över kvalitet och avvikelsehantering](../inventory/quality-management-processes.md) (samt alla relaterade kvalitetshanteringsavsnitt) |
 | Anskaffning och källa | [Underhålla leverantörscertifiering](../../finance/public-sector/manage-vendor-certification.md) |
 | Produktionskontroll | [Styla körningsgränssnittet för produktionsgolvet](../production-control/production-floor-execution-styles.md) |
-| Lagerstyrning | [Tilldela stegikoner och titlar för mobilappen för Warehouse Management](../warehousing/step-icons-titles.md)<br><br>[Uppskjuten bearbetning av manuell lagerrörelse](../warehousing/deferred-processing-manual-inventory-movement.md) |
+| Warehouse management | [Tilldela stegikoner och titlar för mobilappen för Warehouse Management](../warehousing/step-icons-titles.md)<br><br>[Uppskjuten bearbetning av manuell lagerrörelse](../warehousing/deferred-processing-manual-inventory-movement.md) |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

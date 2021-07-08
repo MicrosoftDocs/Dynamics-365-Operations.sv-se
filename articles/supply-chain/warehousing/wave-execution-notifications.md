@@ -11,19 +11,18 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2022-04-01
+ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: fee112d3211f619b2146dd21c4f8a52ad33667d6
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 47f270b5fff37e8e231d8a9c4a011172df3d9385
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019164"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271387"
 ---
 # <a name="wave-execution-notifications"></a>Meddelanden för påfyllnadskörning
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Funktionen *Meddelande påfyllnadskörning* använder affärshändelser och åtgärdscenter för att leverera meddelanden som är relaterade till påfyllnadskörning. Där kan du ange vilka typer av händelser som genererar meddelanden, vilka lagerställen som genererar dem och vilka användare som tar emot dem.
 
@@ -35,7 +34,7 @@ Affärshändelser inträffar när affärsprocesser körs. Affärsprocesser best�
 
 Innan du kan använda funktionen *meddelande om påfyllnadskörning* den aktiveras i ditt system. Administratörer kan använda arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
 
-- **Modul:** *Lagerstyrning*
+- **Modul:** *Warehouse management*
 - **Funktionsnamn:** *meddelande om påfyllnadskörning*
 
 ## <a name="scenario-send-wave-batch-execution-notifications-to-the-action-center"></a>Scenario: Skicka meddelanden för batchkörning för påfyllnad till åtgärdscentret
@@ -48,7 +47,7 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
 
 ### <a name="make-sure-that-waves-are-run-in-batch-mode"></a>Kontrollera att påfyllnader körs i batchläge
 
-1. Gå till **Lagerstyrning \> Inställningar \> Parametrar för lagerstyrning**.
+1. Gå till **Warehouse management \> Inställningar \> Parametrar för Warehouse management**.
 1. På snabbfliken **Påfyllnadsbearbetning**, ange alternativet **Behandla påfyllnader i batch** till *Ja*.
 
 > [!NOTE]
@@ -58,7 +57,7 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
 
 Policyer för påfyllnadsmeddelanden definierar vilka typer av meddelanden som skickas och vilka användare som meddelas.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Påfyllnader \> Policyer för påfyllnadsmeddelanden**.
+1. Gå till **Warehouse management \> Inställningar \> Påfyllnader \> Policyer för påfyllnadsmeddelanden**.
 1. Skapa en post med följande inställningar:
 
     - **Policy påfyllnadsmeddelanden:** *24BatchError*
@@ -67,7 +66,7 @@ Policyer för påfyllnadsmeddelanden definierar vilka typer av meddelanden som s
     - **Till rollen:** *Systemadministratör*
 
         > [!NOTE]
-        > Eftersom detta scenario använder demodata väljs rollen *Systemadministratör* för enkelhetens skull. Eftersom du är inloggad som systemadministratör får du därför meddelandena. I praktiken bör du dock vanligtvis välja en mer specifik roll för att meddela om körningsfel för påfyllnadsbatchen, t.ex. *Lagerstyrning*.
+        > Eftersom detta scenario använder demodata väljs rollen *Systemadministratör* för enkelhetens skull. Eftersom du är inloggad som systemadministratör får du därför meddelandena. I praktiken bör du dock vanligtvis välja en mer specifik roll för att meddela om körningsfel för påfyllnadsbatchen, t.ex. *Warehouse management*.
 
 1. Klicka på **Spara** i åtgärdsfönstret.
 
@@ -75,7 +74,7 @@ Policyer för påfyllnadsmeddelanden definierar vilka typer av meddelanden som s
 
 Med påfyllnadsmallar kan du länka specifika förekomster av påfyllnadsmetoder till en motsvarande påfyllnadsetikettsmallar.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Påfyllnader \> Påfyllnadsmallar**.
+1. Gå till **Warehouse management \> Inställningar \> Påfyllnader \> Påfyllnadsmallar**.
 1. I listrutan, ange fältet **Malltyp för påfyllnad** till *Leverans* och väljer sedan påfyllnadsmallen *24 leveransstandard* för lagerställe 24.
 1. På snabbfliken **Allmänt** ställer du in fältet **Policy påfyllnadsmeddelanden** till *24BatchError*.
 
@@ -83,7 +82,7 @@ Med påfyllnadsmallar kan du länka specifika förekomster av påfyllnadsmetoder
 
 Arbetsmallar används under påfyllnadskörningen för att generera arbete. I det här scenariot ska ett fel utlösas av påfyllnadskörningen. Genom att ställa in arbetsmallfrågan till att använda ett lagerställe som inte finns, ser du till att påfyllnadskörningen misslyckas och skickar därför ett meddelande.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Arbete \> Arbetsmallar**.
+1. Gå till **Warehouse management \> Inställningar \> Arbete \> Arbetsmallar**.
 1. I listrutan, ange fältet **Malltyp för arbete** till *Försäljningsorder* och väljer sedan arbetsmallen *24 SO steg* för lagerställe 24.
 1. I åtgärdsfönstret väljer du **Redigera fråga**.
 1. I dialogrutan för frågeredigeraren, på fliken **Intervall** redigera följande rad (eller lägg till det om det inte finns):

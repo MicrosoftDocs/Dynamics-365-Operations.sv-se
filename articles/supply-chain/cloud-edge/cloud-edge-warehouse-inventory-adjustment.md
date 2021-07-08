@@ -16,21 +16,20 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a451816078ca2e77f30379828777209dc48bd849
-ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
+ms.openlocfilehash: 1bf147ce430d84980516d8d4824081ee2a9321a2
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6026143"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271242"
 ---
 # <a name="warehouse-inventory-adjustment"></a>Lagerställets lagerjustering
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Funktionen för lagerjustering används när molnbaserade enheter och kantskalningsenheter körs för [arbetsbelastningar inom tillverkning](cloud-edge-workload-manufacturing.md) samt [arbetsbelastningar inom lagerstyrning](cloud-edge-workload-warehousing.md).
+Funktionen för lagerjustering används när molnbaserade enheter och kantskalningsenheter körs för [arbetsbelastningar inom tillverkning](cloud-edge-workload-manufacturing.md) samt [arbetsbelastningar inom Warehouse management](cloud-edge-workload-warehousing.md).
 
-När en medarbetare utför en lagerjustering med hjälp av lagerstyrningsappen mot en lagerstyrningsarbetsbelastning med skalningsenheter, måste den fysiska uppdateringen av lagerbehållningen bearbetas av batchjobbet **Justeringsjournal för lager**, som du kör och schemalägger via **Lagerstyrning > Periodiska uppgifter > Justeringsjournal för lagerställe**.
+När en medarbetare utför en lagerjustering med hjälp av Warehouse managementsappen mot en Warehouse managementsarbetsbelastning med skalningsenheter, måste den fysiska uppdateringen av lagerbehållningen bearbetas av batchjobbet **Justeringsjournal för lager**, som du kör och schemalägger via **Warehouse management > Periodiska uppgifter > Justeringsjournal för lagerställe**.
 
 Följande arbetsprocesser i appar för lagerställe använder för närvarande **lagerjusteringsjournalen för lagerställe** på arbetsbelastningar med skalning:
 
@@ -62,10 +61,10 @@ När en skalningsenhet har skapat en **lagerjusteringsjournal** i navet kan du g
 Du kan granska alla dessa journalposter och transaktioner i Supply Chain Management genom att göra följande:
 
 1. Logga in på skalningsenheten.
-1. Gå till **Lagerstyrning \> Periodiska uppgifter \> Lagerjusteringsjournal**.
+1. Gå till **Warehouse management \> Periodiska uppgifter \> Lagerjusteringsjournal**.
 1. På sidan **Lagerjusteringsjournal** hittar och öppnar du journalen som registrerade lagerbehållningsändringen. I avsnittet **Journalradet** visas varje justering som registrerats i den här journalen.
 1. Logga in på navet.
-1. Gå till **Lagerstyrning \> Periodiska uppgifter \> Lagerjusteringsjournal**.
+1. Gå till **Warehouse management \> Periodiska uppgifter \> Lagerjusteringsjournal**.
 1. På sidan **Lagerjusteringsjournal** bör du se samma journal i listan om navet och skalningsenheten har synkroniserats.
 1. Öppna journalen. Om [meddelandena i meddelandeprocessorn](cloud-edge-message-processor-messages.md) har bearbetats visas länkar till **inventeringsjournalen** och **motbokningsjournalen** i rubriken.
     - **Inventeringsjournalen** ska visa samma dimensionsvärden som journalraderna.

@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: c9e1cadae97bd8f0dea270deaa1a8e09bb28eb4b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ee5a195b3d2881ff70fb1f0d4063ed681e874648
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020493"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271087"
 ---
 # <a name="rebate-management-groups"></a>Rabatthanteringsgrupper
 
 [!include [banner](../includes/banner.md)]
 
-Rabatt- och avdragsberäkningar kan baseras på grupper. Rabatthanteringsgrupper kan skapas för kunder, leverantörer och artiklar. De kan kopplas till en huvudpost.
+Rabatthanteringsberäkningar kan baseras på grupper. Rabatthanteringsgrupper kan skapas för kunder, leverantörer och artiklar. De kan kopplas till en huvudpost.
 
 ## <a name="rebate-management-customer-groups"></a>Rabatthanteringsgrupper för kunder
 
@@ -52,7 +52,6 @@ Följ de här stegen om du vill visa, lägga till eller ta bort kunder för den 
 1. Välj om du vill lägga till en ny kund i gruppen, välj **Ny** i åtgärdsfönstret för att lägga till en rad i rutnätet. Ange sedan följande fält för den nya raden:
 
     - **Kundkonto** – Välj kundkonto-ID.
-    - **Namn** – Ange ett namn och/eller en beskrivning av kunden.
 
 1. Om du vill ta bort en kund från gruppen markerar du kunden och väljer **Ta bort** i åtgärdsfönstret.
 
@@ -64,7 +63,6 @@ Följ dessa steg för att visa, lägga till eller ta bort gruppuppdrag för en v
 1. Välj om du vill lägga till en ny kund i gruppen, välj **Ny** i åtgärdsfönstret för att lägga till en rad i rutnätet. Ange sedan följande fält för den nya raden:
 
     - **Rabatthanteringsgrupp** – Välj den grupp som kunden ska läggas till i.
-    - **Beskrivning** – Ange en beskrivning av gruppen (till exempel för att förklara varför kunden är medlem i den).
 
 1. Om du vill ta bort en kund från gruppen markerar du gruppen och väljer **Ta bort** i åtgärdsfönstret.
 
@@ -91,7 +89,6 @@ Följ de här stegen om du vill visa, lägga till eller ta bort leverantör för
 1. Välj om du vill lägga till en ny leverantör i gruppen, välj **Ny** i åtgärdsfönstret för att lägga till en rad i rutnätet. Ange sedan följande fält för den nya raden:
 
     - **Leverantörskonto** – Välj leverantörskonto-ID.
-    - **Namn** – Ange ett namn och/eller en beskrivning av leverantör.
 
 1. Om du vill ta bort en leverantör från gruppen markerar du leverantören och väljer **Ta bort** i åtgärdsfönstret.
 
@@ -103,7 +100,6 @@ Följ dessa steg för att visa, lägga till eller ta bort gruppuppdrag för en v
 1. Välj om du vill lägga till en leverantör i en ny grupp, välj **Ny** i åtgärdsfönstret för att lägga till en rad i rutnätet. Ange sedan följande fält för den nya raden:
 
     - **Rabatthanteringsgrupp** – Välj den grupp som leverantören ska läggas till i.
-    - **Beskrivning** – Ange en beskrivning av gruppen (till exempel för att förklara varför leverantören är medlem i den).
 
 1. Om du vill ta bort en leverantör från gruppen markerar du gruppen och väljer **Ta bort** i åtgärdsfönstret.
 
@@ -130,7 +126,6 @@ Följ de här stegen om du vill visa, lägga till eller ta bort artiklar för de
 1. Välj om du vill lägga till ny en artikel i gruppen, välj **Ny** i åtgärdsfönstret för att lägga till en rad i rutnätet. Ange sedan följande fält för den nya raden:
 
     - **Artikelkonto** – Välj artikelkonto-ID.
-    - **Produktnamn** – Ange ett namn och/eller en beskrivning av artikeln.
 
 1. Om du vill ta bort en artikel från gruppen markerar du artikeln och väljer **Ta bort** i åtgärdsfönstret.
 
@@ -142,7 +137,6 @@ Följ dessa steg för att visa, lägga till eller ta bort gruppuppdrag för en v
 1. Välj om du vill lägga till artikeln i en ny grupp, välj **Ny** i åtgärdsfönstret för att lägga till en rad i rutnätet. Ange sedan följande fält för den nya raden:
 
     - **Rabatthanteringsgrupp** – Välj den grupp som artikeln ska läggas till i.
-    - **Beskrivning** – Ange en beskrivning av gruppen (till exempel för att förklara varför artikeln är medlem i den).
 
 1. Om du vill ta bort en artikel från gruppen markerar du gruppen och väljer **Ta bort** i åtgärdsfönstret.
 

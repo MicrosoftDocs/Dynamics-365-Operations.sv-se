@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 14a32f7fc4608ef8910646f80786a188c46dc89d
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 6360f36b6a3526cdc5680a4059ae1202896986a5
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102624"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301781"
 ---
 # <a name="wave-label-printing"></a>Utskrift av påfyllnadsetikett
 
@@ -55,7 +55,7 @@ Dessa förbättringar gör det effektivare att märka kartonger före palleterin
 
 Innan du kan använda funktionen *utskrift av påfyllnadsmall* den aktiveras i ditt system. Administratörer kan använda arbetsytan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Funktionen visas på följande sätt:
 
-- **Modul:** *Lagerstyrning*
+- **Modul:** *Warehouse management*
 - **Funktionsnamn:** *utskrift av påfyllnadsetiketter*
 
 ## <a name="scenario-1-wave-label-printing-where-a-single-wave-label-is-generated"></a>Scenario 1: utskrift av påfyllnadsetiketter där en enskild påfyllnadsetikett genereras
@@ -72,14 +72,14 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
 
 Du måste kanske återskapa dina metoder för påfyllnadsprocess för att göra påfyllnadsetikett metoden tillgänglig.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Påfyllnader \> Metoder för påfyllnadsprocess**.
+1. Gå till **Warehouse management \> Inställningar \> Påfyllnader \> Metoder för påfyllnadsprocess**.
 1. Kontrollera att **waveLabelPrinting** finns i listan. Om den inte finns med väljer du **återskapa metoder** i åtgärdsfönstret för att lägga till den.
 
 ### <a name="configure-a-wave-template"></a>Konfigurera en påfyllnadsmall
 
 Med påfyllnadsmallar kan du länka specifika förekomster av påfyllnadsmetoder till en motsvarande påfyllnadsetikettsmall.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Påfyllnader \> Påfyllnadsmallar**.
+1. Gå till **Warehouse management \> Inställningar \> Påfyllnader \> Påfyllnadsmallar**.
 1. Välj en mall som **62 standard för leverans**.
 1. På snabbfliken **metoder** flyttar du metoden **utskrift av påfyllnadsetiketter** till kolumnen **valda metoder**.
 1. I kolumnen **Valda metoder** välj metoden **Utskrift av påfyllnadsetiketter** och ange dess fält **Kod för påfyllnadssteg** till *PrintLabel*. För mer information om koder för påfyllnadssteg, se [Koder för påfyllnadssteg](wave-step-codes.md).
@@ -88,7 +88,7 @@ Med påfyllnadsmallar kan du länka specifika förekomster av påfyllnadsmetoder
 
 Etikettlayouten bestämmer vilken information som ska skrivas ut på etiketten och hur den visas. Här anger du koden för ZPL som skickas till skrivaren.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Dokumentflöde \> Layout för påfyllnadsetikett**.
+1. Gå till **Warehouse management \> Inställningar \> Dokumentflöde \> Layout för påfyllnadsetikett**.
 1. Skapa en post med följande inställningar:
 
     - **Etikettlayout-ID:** *kartong*
@@ -205,7 +205,7 @@ Nu kan du använda din etikett.
 
 Påfyllnadsetikettyper används för att länka påfyllnadsetikettmallar till en enhet på enhetssekvensgrupprader.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Dokumentflöde \> Typer av påfyllnadsetikett**.
+1. Gå till **Warehouse management \> Inställningar \> Dokumentflöde \> Typer av påfyllnadsetikett**.
 1. Lägg till en typ av påfyllnadsetikett med följande inställningar:
 
     - **Etikettyp:** *kartong*
@@ -215,7 +215,7 @@ Påfyllnadsetikettyper används för att länka påfyllnadsetikettmallar till en
 
 Ställ sedan in enhetsseriegruppen för typ av påfyllnadsnivå.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Enhetsseriegrupp**.
+1. Gå till **Warehouse management \> Inställningar \> Lagerställe \> Enhetsseriegrupp**.
 1. Välj gruppen **Ea Box PL**.
 1. För raden **ruta** ange fältet **typ av påfyllnadsnivå** till *kartong*.
 
@@ -223,7 +223,7 @@ Ställ sedan in enhetsseriegruppen för typ av påfyllnadsnivå.
 
 Skapa sedan mall för påfyllnadsetikett för typen av påfyllnadsetikett.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Dokumentflöde \> Mall för påfyllnadsetikett**.
+1. Gå till **Warehouse management \> Inställningar \> Dokumentflöde \> Mall för påfyllnadsetikett**.
 1. Lägg till en mall för påfyllnadsnivå och ange följande värden i rubriken:
 
     - **Namn på etikettmallen:** *kartongetiketter*
@@ -333,21 +333,21 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
 
 Du måste kanske återskapa dina metoder för påfyllnadsprocess för att göra påfyllnadsetikett metoden tillgänglig.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Påfyllnader \> Metoder för påfyllnadsprocess**.
+1. Gå till **Warehouse management \> Inställningar \> Påfyllnader \> Metoder för påfyllnadsprocess**.
 1. Kontrollera att **waveLabelPrinting** finns i listan. Om den inte finns med väljer du **återskapa metoder** i åtgärdsfönstret för att lägga till den.
 
 ### <a name="set-up-a-wave-template"></a>Ställa in en påfyllnadsmall
 
 Med påfyllnadsmallar kan du länka specifika förekomster av påfyllnadsmetoder till en motsvarande påfyllnadsetikettsmall.
 
-1. Gå till **Lagerstyrning \> Inställningar \> Påfyllnader \> Påfyllnadsmallar**.
+1. Gå till **Warehouse management \> Inställningar \> Påfyllnader \> Påfyllnadsmallar**.
 1. Välj en mall som **63 skapande av behållare**.
 1. På snabbfliken **metoder** flyttar du metoden **utskrift av påfyllnadsetiketter** till kolumnen **valda metoder**.
 1. I kolumnen **Valda metoder** välj metoden **Utskrift av påfyllnadsetiketter** och ange dess fält **Kod för påfyllnadssteg** till *PrintLabel*. För mer information om koder för påfyllnadssteg, se [Koder för påfyllnadssteg](wave-step-codes.md).
 
 ### <a name="create-a-wave-label-layout"></a>Skapa en layout för påfyllnadsetiketten
 
-1. Gå till **Lagerstyrning \> Inställningar \> Dokumentflöde \> Layout för påfyllnadsetikett**.
+1. Gå till **Warehouse management \> Inställningar \> Dokumentflöde \> Layout för påfyllnadsetikett**.
 1. Skapa en post med följande inställningar:
 
     - **Etikettlayout-ID:** *kartong*
@@ -426,7 +426,7 @@ Nu kan du använda din etikett.
 
 ### <a name="create-a-wave-label-template"></a>Skapa en mall för påfyllnadsetikett
 
-1. Gå till **Lagerstyrning \> Inställningar \> Dokumentflöde \> Mall för påfyllnadsetikett**.
+1. Gå till **Warehouse management \> Inställningar \> Dokumentflöde \> Mall för påfyllnadsetikett**.
 1. Lägg till en mall för påfyllnadsnivå och ange följande värden i rubriken:
 
     - **Namn på etikettmallen:** *behållaretiketter*
@@ -502,7 +502,7 @@ Nummerserietillägg styr GS1 efterlevnaden av specifika nummerserier. Den här k
     - I systemet bearbetas den skapade utleveransen med hjälp av mallen som inkluderar utskriftssteget för etikett. Etikettlayouten används för att definiera etikettens format, och slutresultatet blir en etikett som har fem rader och som skrivs ut på den skrivare som väljs i etikettmallen.
     - Ett nytt fraktsedels-ID genereras för leveranserna. Om du har konfigurerat nummerserietilläggen följer påfyllnadsetikett-ID nummerformatet **SSCC-18**. 
 
-Du kan skriva ut dessa påfyllnadsetiketter igen genom att gå till **Lagerstyrning \> Frågor och rapporter \> Påfyllnadsetiketthistorik**.
+Du kan skriva ut dessa påfyllnadsetiketter igen genom att gå till **Warehouse management \> Frågor och rapporter \> Påfyllnadsetiketthistorik**.
 
 ## <a name="scenario-3-wave-label-printing-for-multi-tiered-labels"></a>Scenario 3: utskrift av påfyllnadsetikett för etiketter med flera nivåer
 
@@ -522,13 +522,13 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
 
 ### <a name="set-up-a-wave-process-method"></a>Ställa in en påfyllnadsprocessmetod
 
-1. Gå till **Lagerstyrning \> Inställningar \> Påfyllnader \> Metoder för påfyllnadsprocess**.
+1. Gå till **Warehouse management \> Inställningar \> Påfyllnader \> Metoder för påfyllnadsprocess**.
 1. Kontrollera att **waveLabelPrinting** finns i listan. Om den inte finns med väljer du **återskapa metoder** i åtgärdsfönstret för att lägga till den.
 1. För metoden **waveLabelPrinting** markera kryssrutan **gör metoden upprepningsbar**.
 
 ### <a name="set-up-a-wave-template"></a>Ställa in en påfyllnadsmall
 
-1. Gå till **Lagerstyrning \> Inställningar \> Påfyllnader \> Påfyllnadsmallar**.
+1. Gå till **Warehouse management \> Inställningar \> Påfyllnader \> Påfyllnadsmallar**.
 2. Välj en mall som **62 standard för leverans**.
 3. På snabbfliken **metoder** flyttar du metoden **utskrift av påfyllnadsetiketter** till kolumnen **valda metoder**.
 4. I kolumnen **valda metoder** tilldelar du ett värde för **Kod för påfyllnadssteg** som *kartong* till metoden **utskrift av påfyllnadsetikett**. För mer information om koder för påfyllnadssteg, se [Koder för påfyllnadssteg](wave-step-codes.md).
@@ -537,7 +537,7 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
 
 ### <a name="create-three-wave-label-layouts"></a>Skapa tre layouter för påfyllnadsetiketten
 
-1. Gå till **Lagerstyrning \> Inställningar \> Dokumentflöde \> Layout för påfyllnadsetikett**.
+1. Gå till **Warehouse management \> Inställningar \> Dokumentflöde \> Layout för påfyllnadsetikett**.
 1. Skapa en post med följande inställningar:
 
     - **Etikettlayout-ID:** *kartong*
@@ -752,7 +752,7 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
 
 ### <a name="create-two-wave-label-types"></a>Skapa två typer av påfyllnadsetiketten
 
-1. Gå till **Lagerstyrning \> Inställningar \> Dokumentflöde \> Typer av påfyllnadsetikett**.
+1. Gå till **Warehouse management \> Inställningar \> Dokumentflöde \> Typer av påfyllnadsetikett**.
 1. Skapa en post med följande inställningar:
 
     - **Etikettyp:** *kartong*
@@ -765,14 +765,14 @@ För att följa detta scenario måste du ha demonstrationsdata installerad och d
 
 ### <a name="set-up-unit-sequence-groups"></a>Konfigurera enhetssekvensgrupper
 
-1. Gå till **Lagerstyrning \> Inställningar \> Lagerställe \> Enhetsseriegrupp**.
+1. Gå till **Warehouse management \> Inställningar \> Lagerställe \> Enhetsseriegrupp**.
 1. Välj eller skapa en grupp för **Ea Box PL**.
 1. För raden **ruta** ange fältet **typ av påfyllnadsnivå** till *kartong*.
 1. För raden **PL** ange fältet **typ av påfyllnadsnivå** till *lastpall*.
 
 ### <a name="create-wave-label-templates"></a>Skapa mallar för påfyllnadsetikett
 
-1. Gå till **Lagerstyrning \> Inställningar \> Dokumentflöde \> Mall för påfyllnadsetikett**.
+1. Gå till **Warehouse management \> Inställningar \> Dokumentflöde \> Mall för påfyllnadsetikett**.
 1. Skapa en etikettmall med följande inställningar:
 
     - **Namn på etikettmallen:** *kartongetiketter*
@@ -933,5 +933,6 @@ För de flesta av dessa sidor hittar du den relevanta funktionen genom att välj
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Skriva ut på nytt och annullera påfyllnadsetiketter](reprint-and-void-wave-labels.md)
+- [Tidsplanera påfyllnadsetikett utskrift under påfyllnad](configure-task-based-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

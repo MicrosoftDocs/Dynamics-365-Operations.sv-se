@@ -16,19 +16,18 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 03d8cad743ac2b2b1e7b2832b8272ca3dbf5a163
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 86f15831f11dc9fdcada9639858fd3b18cdc7503
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021065"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271111"
 ---
 # <a name="message-processor-messages"></a>Meddelandeprocessormeddelanden
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Meddelanden i meddelandeprocessorn används när molnbaserade enheter och kantskalningsenheter körs för [arbetsbelastningar inom tillverkning](cloud-edge-workload-manufacturing.md) samt [arbetsbelastningar inom lagerstyrnings](cloud-edge-workload-warehousing.md).
+Meddelanden i meddelandeprocessorn används när molnbaserade enheter och kantskalningsenheter körs för [arbetsbelastningar inom tillverkning](cloud-edge-workload-manufacturing.md) samt [arbetsbelastningar inom Warehouse managements](cloud-edge-workload-warehousing.md).
 
 En stor mängd data utbyts mellan distribueringsmiljöerna för nav och skalningsenhet i syfte att hålla dem synkroniserade, men endast ett fåtal av dessa datautbyten kommer att bearbetas av *meddelandeprocessorn*. Du kan visa meddelanden som bearbetats av meddelandeprocessorn genom att gå till **Systemadministration > Meddelandeprocessor > Meddelanden i meddelandeprocessorn**.
 
@@ -49,7 +48,7 @@ Med hjälp av fälten högst upp på sidan **Meddelanden i meddelandeprocessorn*
 
 ## <a name="example-message-type-request-inventory-adjustment-financial-update"></a>Exempel på meddelandetyp: Begär ekonomisk uppdatering av lagerjustering
 
-Till exempel används **meddelandetypen** *Begär ekonomisk uppdatering av lagerjustering* för att skapa och bokföra en inventeringsjournal i navet när en medarbetare använder lagerställeappen för att [registrera en lagerjustering](cloud-edge-warehouse-inventory-adjustment.md) på en lagerstyrningsarbetsbelastning med skalningsenheter. Eftersom denna specifika process har sitt ursprung i en skalningsenhet visar fältet **Meddelandekö** värdet *Skalningsenhet till nav*.
+Till exempel används **meddelandetypen** *Begär ekonomisk uppdatering av lagerjustering* för att skapa och bokföra en inventeringsjournal i navet när en medarbetare använder lagerställeappen för att [registrera en lagerjustering](cloud-edge-warehouse-inventory-adjustment.md) på en Warehouse managementsarbetsbelastning med skalningsenheter. Eftersom denna specifika process har sitt ursprung i en skalningsenhet visar fältet **Meddelandekö** värdet *Skalningsenhet till nav*.
 
 För denna meddelandetyp registrerar en skalningsenhetsarbetsbelastning meddelandet som en del av en lagerjusteringsfunktion för ett lagerställe. Meddelandedata överförs sedan till navet som ett led i samma process som används för [arkitekturen för Commerce Data Exchange](../../commerce/commerce-architecture.md). Meddelandet uppdateras så att **Meddelandestatus** anges som *Köad*. Meddelandeprocessorn försöker sedan att bearbeta meddelandet och uppdaterar **Meddelandestatus** till *Bearbetad* vid slutförande, eller till *Annullerad* vid fel.
 

@@ -78,8 +78,6 @@
                       href: get-started/whats-new-scm-10-0-19.md
                     - name: Supply Chain Management 10.0.18 (maj 2021)
                       href: get-started/whats-new-scm-10-0-18.md
-                    - name: Supply Chain Management 10.0.17 (april 2021)
-                      href: get-started/whats-new-scm-10-0-17.md
                 - name: Borttagna eller inaktuella funktioner
                   items:
                     - name: Borttagna eller inaktuella funktioner – startsida
@@ -216,11 +214,11 @@
                   href: ../finance/localizations/globalization-services-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Regulatory Configuration Service
                   items:
-                    - name: Översikt över Regulatory configuration service
+                    - name: Översikt över Regulatory Configuration Service
                       href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Regulatory configuration service – Globaliseringsfunktioner
                       href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Skapa ER-konfigurationer i Regulatory configuration service och överföra dem till den globala databasen
+                    - name: Skapa ER-konfigurationer i Regulatory configuration Service och överföra dem till den globala lagringsplatsen
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Regulatory Configuration Service – Lifecycle Services lagringsutfasning
                       href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
@@ -234,7 +232,7 @@
                       href: ../finance/localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Utfärda elektroniska fakturor i Finance och Supply Chain Management
                       href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Skapa ett Azure lagringskonto och ett nyckelvalv
+                    - name: Skapa ett Azure lagringskonto och ett Key Vault
                       href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Instrumentpanel för användningshantering
                       href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
@@ -288,13 +286,13 @@
                       href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
         - name: Moln och kant
           items:
-            - name: Moln- och kantskalningsenheter för arbetsbelastning i tillverknings och distributionslagerhantering
+            - name: Moln- och kantskalningsenheter för arbetsbelastning i tillverkning och lagerstyrning
               href: cloud-edge/cloud-edge-landing-page.md
             - name: Distribuera kantskalenheter på anpassad maskinvara med hjälp av LBD
               href: cloud-edge/cloud-edge-edge-scale-units-lbd.md
             - name: Arbetsbelastningar för tillverkningskörning för moln- och kantskalningsenheter
               href: cloud-edge/cloud-edge-workload-manufacturing.md
-            - name: Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
+            - name: Arbetsbelastningar för lagerstyrning för moln- och kantskalningsenheter
               href: cloud-edge/cloud-edge-workload-warehousing.md
             - name: Distributionslagerorder för moln- och kantskalningsenheter
               href: cloud-edge/cloud-edge-warehouse-order.md
@@ -603,6 +601,20 @@
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
             - name: Använda arbetsytan för kostnadsstyrning för Finance and Operations-mobilapp
               href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Global lagerredovisning
+          items:
+            - name: Startsida för global lagerredovisning
+              href: global-inventory-accounting/global-inventory-accounting-home.md
+            - name: Kom igång med global lagerredovisning
+              href: global-inventory-accounting/get-started-with-gia.md
+            - name: Affärsdokument som stöds av global lagerredovisning
+              href: global-inventory-accounting/business-documents-supported.md
+            - name: Aktivera Power BI för global lagerredovisning
+              href: global-inventory-accounting/enable-power-bi-for-gia.md
+            - name: Praxis
+              href: global-inventory-accounting/conventions.md
+            - name: Transaktionsregister för global lagerredovisning
+              href: global-inventory-accounting/global-inventory-accounting-ledger.md
         - name: Kostnadshantering
           items:
             - name: Kostnadshantering – startsida
@@ -873,6 +885,12 @@
               items:
                 - name: Formelspråk
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Datatyper som stöds för ER-formler
+                  items:
+                    - name: Primitiva datatyper
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Sammansatta datatyper
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Funktioner
                   items:
                     - name: Behållare
@@ -1417,13 +1435,17 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Application update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Application update 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Ange anpassad lagringsplats för skapade dokument
                   items:
                     - name: Prenumerera på en händelse för att begära ett svar från en prenumerationshanterare
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Delegera genereringen av ett ER-mål till en anpassad målfabrik
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Initiera datakällvärden för typen ANVÄNDARENS INDATAPARAMETER från källkod
+                - name: Implementera ett anpassat mål för skapade dokument
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Initiera datakällvärden för typen USER INPUT PARAMETER från källkod
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/supply-chain/toc.json
         - name: Lagerhantering
           items:
@@ -1491,7 +1513,7 @@
                   href: inventory/inventory-locations.md
                 - name: Lagerstatus
                   href: inventory/inventory-statuses.md
-                - name: Skapa en ny layout för distributionslager
+                - name: Skapa en ny layout för lagerstyrning
                   href: inventory/tasks/create-new-warehouse-layout.md
                 - name: Underhåll streckkodstyper
                   href: inventory/tasks/maintain-barcode-types.md
@@ -1503,7 +1525,7 @@
                   href: inventory/tasks/initialize-stock-levels-warehouse.md
                 - name: Överför fysiskt lager i distributionslagret
                   href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
-                - name: Justera lagernivåer i lagerstället (grundläggande distributionslagerhantering)
+                - name: Justera lagernivåer i lagerstället (grundläggande lagerstyrning)
                   href: inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing.md
                 - name: Lagermärkesinventering
                   href: inventory/inventory-tag-counting.md
@@ -1593,6 +1615,8 @@
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Säkerhetsmarginaler
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: Fördröjningstolerans (negativa dagar)
+                  href: master-planning/planning-optimization/delay-tolerance.md
                 - name: Inköpsrekvisitioner
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Produktionsplanering
@@ -1603,6 +1627,8 @@
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Utesluta produkter med vissa livscykeltillstånd för produkt
                   href: master-planning/planning-optimization/product-lifecycle-state.md
+                - name: Lagerpåfyllnadsmetoder och kvantitetsändring
+                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Tidsgränser för disponering
                   href: master-planning/planning-optimization/coverage-time-fence.md
                 - name: Godkänna planerade order
@@ -3035,18 +3061,20 @@
               href: landed-cost/landed-cost-inquiries.md
             - name: Rapporter om hemtagningskostnader
               href: landed-cost/landed-cost-reports.md
-        - name: Hantering av distributionslager
+        - name: Lagerstyrning
           items:
             - name: Hantering av distributionslager – översikt
               href: warehousing/warehouse-management-overview.md
             - name: Åtgärder för mottagande distributionslager
               items:
-                - name: Distributionslagerhantering av inkommande laster för inköpsorder
+                - name: Lagerstyrning av inkommande laster för inköpsorder
                   href: warehousing/inbound-load-handling.md
-                - name: Registrera artiklar för en artikel som är aktiverad för avancerad distributionslagerhantering med hjälp av en artikelinförseljournal
+                - name: Registrera artiklar för en artikel som är aktiverad för avancerad lagerstyrning med hjälp av en artikelinförseljournal
                   href: warehousing/tasks/register-items-advanced-warehousing.md
-                - name: Registrera artiklar för en artikel som är aktiverad för grundläggande distributionslagerhantering med hjälp av en artikelinförseljournal
+                - name: Registrera artiklar för en artikel som är aktiverad för grundläggande lagerstyrning med hjälp av en artikelinförseljournal
                   href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: 'Importera inkommande ASN:er via V2-datatabellen'
+                  href: warehousing/import-asn-v2-data-entity.md
                 - name: Direktleverera produkter från det mottagande lagerstället till butiker
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: Ställ in ett platsdirektiv för artikelinförsel av inköpsorder
@@ -3065,11 +3093,11 @@
                   href: warehousing/troubleshoot-warehouse-inbound.md
             - name: Åtgärder för utgående distributionslager
               items:
-                - name: Reservationer i distributionslagerhantering
+                - name: Reservationer i lagerstyrning
                   items:
                     - name: Flexibel reservationspolicy för dimension på distributionslagernivå
                       href: warehousing/flexible-warehouse-level-dimension-reservation.md
-                    - name: Felsöka reservationer i distributionslagerhantering
+                    - name: Felsöka reservationer i lagerstyrning
                       href: warehousing/troubleshoot-warehouse-reservations.md
                     - name: Felsöka batch- och seriereservationshierarkier för distributionslager
                       href: warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md
@@ -3183,7 +3211,7 @@
                   items:
                     - name: Arbetspolicyer
                       href: warehousing/warehouse-work-policies.md
-                    - name: Lagerrörelse med tillhörande arbete med distributionslagerhantering
+                    - name: Lagerrörelse med tillhörande arbete med lagerstyrning
                       href: warehousing/move-inventory-associated-work.md
                     - name: Skapa en arbetsklass
                       href: warehousing/tasks/create-work-class.md
@@ -3215,9 +3243,11 @@
                       href: warehousing/partial-location-cycle-counting.md
                     - name: Definiera rullande inventering av del av platser
                       href: warehousing/tasks/define-partial-location-cycle-counting-process.md
-                    - name: Jobbet Rensning av behållningsposter för distributionslagerhantering
+                    - name: Exempelscenarier för rullande inventering
+                      href: warehousing/cycle-counting-scenarios.md
+                    - name: Jobbet Rensning av behållningsposter för lagerstyrning
                       href: warehousing/onhand-cleanup.md
-                    - name: Lagerjournaler
+                    - name: Lagerjournaler.
                       href: inventory/inventory-journals.md
                     - name: Lagerplats
                       href: inventory/inventory-locations.md
@@ -3241,6 +3271,52 @@
                       href: warehousing/mhax.md
                     - name: Felsöka distributionslagerarbete
                       href: warehousing/troubleshoot-warehouse-work.md
+            - name: Distributionslagerappen
+              items:
+                - name: 'Installera, konfigurera och använda mobila enheter'
+                  items:
+                    - name: Nyheter eller ändringar i mobilappen Warehouse Management
+                      href: warehousing/whats-new-wma.md
+                    - name: Installera och ansluta mobilappen Warehouse Management
+                      href: warehousing/install-configure-warehouse-management-app.md
+                    - name: Installera och ansluta distributionslagerappen
+                      href: warehousing/install-configure-warehousing-app.md
+                    - name: Skanna streckkoder med kamera i mobilappen Warehouse Management
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Felsöka anslutningsproblem med mobilappen Warehouse Management
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
+                - name: Konfigurera fält och menyer för mobila enheter
+                  items:
+                    - name: Konfigurera fält för Warehouse Management-mobilappen
+                      href: warehousing/configure-app-field-names-priorities-warehouse.md
+                    - name: Konfigurera mobila enheter för distributionslagerarbete
+                      href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Inleverans av ID-nummer via Warehouse Management-mobilappen
+                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+                    - name: Ställa in ett menyalternativ för mobil enhet för att slutföra arbete i en inköpsorder
+                      href: warehousing/tasks/set-up-mobile-device-menu.md
+                    - name: Ställa in ett menyalternativ för mobila enheter för att registrera mottagna artiklar
+                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Konfigurera ett menyalternativ för mobila enheter för att visa översikt över plockrader
+                      href: warehousing/pick-line-overview.md
+                    - name: Skapa ett nytt menyalternativ för mobila enheter för avstämning av ID-nummer
+                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                    - name: Inleverans av blandat ID-nummer på en mobil enhet
+                      href: warehousing/mixed-license-plate-receiving.md
+                    - name: Konfigurera visning av äldre batchar inom lagerstället på en mobil enhet
+                      href: warehousing/display-older-batches-within-warehouses.md
+                    - name: Plocka den äldsta batchen på en mobil enhet
+                      href: warehousing/pick-oldest-batch.md
+                - name: Användarinställningar för mobil enhet
+                  href: warehousing/mobile-device-user-settings.md
+                - name: Händelsebearbetning i distributionslagerappen
+                  href: warehousing/warehouse-app-events.md
+                - name: Anpassa distributionslagerappen
+                  items:
+                    - name: Processguideram
+                      href: warehousing/process-guide-framework.md
+                    - name: Tilldela stegikoner och titlar
+                      href: warehousing/step-icons-titles.md
             - name: Inställningar för distributionslager
               items:
                 - name: Konfiguration av distributionslager
@@ -3277,8 +3353,12 @@
                           href: warehousing/wave-execution-notifications.md
                         - name: Utskrift av påfyllnadsetikett
                           href: warehousing/configure-wave-label-printing.md
-                        - name: Skapande av behållare
+                        - name: Schemalägga utskrift av påfyllnadsetikett under cykel
+                          href: warehousing/configure-task-based-wave-label-printing.md
+                        - name: Skapande av fraktbehållare
                           href: warehousing/wave-containerization.md
+                        - name: Strategier för förpackning av behållare
+                          href: warehousing/container-packing-strategy-overview.md
                     - name: Uppdatera leveranser automatiskt
                       href: warehousing/auto-update-shipment.md
                     - name: Skapa en platsprofil
@@ -3309,49 +3389,11 @@
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Felsöka distributionslagerkonfiguration
                       href: warehousing/troubleshoot-warehouse-configuration.md
-                - name: Installera och konfigurera mobilappen för distributionslagerhantering
-                  items:
-                    - name: Installera och ansluta mobilappen för distributionslagerhantering
-                      href: warehousing/install-configure-warehouse-management-app.md
-                    - name: Användarinställningar för mobil enhet
-                      href: warehousing/mobile-device-user-settings.md
-                    - name: Installera och ansluta distributionslagerappen
-                      href: warehousing/install-configure-warehousing-app.md
-                    - name: Skanna streckkoder med kamera i mobilappen för distributionslagerhantering
-                      href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Konfigurera fält för Warehouse Management-mobilappen
-                      href: warehousing/configure-app-field-names-priorities-warehouse.md
-                    - name: Ställa in mobila enheter för distributionslagerarbete
-                      href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: Tilldela stegikoner och titlar
-                      href: warehousing/step-icons-titles.md
-                    - name: Händelsebearbetning i distributionslagerappen
-                      href: warehousing/warehouse-app-events.md
-                    - name: Inleverans av ID-nummer via Warehouse Management-mobilappen
-                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-                    - name: Ställa in ett menyalternativ för mobil enhet för att slutföra arbete i en inköpsorder
-                      href: warehousing/tasks/set-up-mobile-device-menu.md
-                    - name: Ställa in ett menyalternativ för mobila enheter för att registrera mottagna artiklar
-                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                    - name: Konfigurera ett menyalternativ för mobila enheter för att visa översikt över plockrader
-                      href: warehousing/pick-line-overview.md
-                    - name: Skapa ett nytt menyalternativ för mobila enheter för avstämning av ID-nummer
-                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-                    - name: Inleverans av blandat ID-nummer på en mobil enhet
-                      href: warehousing/mixed-license-plate-receiving.md
-                    - name: Konfigurera visning av äldre batchar inom lagerstället på en mobil enhet
-                      href: warehousing/display-older-batches-within-warehouses.md
-                    - name: Plocka den äldsta batchen på en mobil enhet
-                      href: warehousing/pick-oldest-batch.md
-                    - name: Processguideram
-                      href: warehousing/process-guide-framework.md
-                    - name: Felsöka anslutningsproblem med mobilappen för distributionslagerhantering
-                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Uppgradering och migrering
                   items:
-                    - name: Uppgradera processer för distributionslagerhantering från Microsoft Dynamics AX 2012 till Finance and Operations
+                    - name: Uppgradera processer för lagerstyrning från Microsoft Dynamics AX 2012 till Finance and Operations
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
-                    - name: Felsöka uppgradering och migrering till avancerad distributionslagerhantering
+                    - name: Felsöka uppgradering och migrering till avancerad lagerstyrning
                       href: warehousing/troubleshoot-warehouse-upgrade-migration.md
                 - name: Felsöka distributionslagerinställningar
                   href: warehousing/troubleshoot-warehouse-setup.md
@@ -3393,6 +3435,22 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Huvudplanering
               items:
+                - name: Du får ett felmeddelande när du kör den inbyggda huvudplaneringsmotorn
+                  href: troubleshooting/planning/deprecated-master-planning-error.md
+                - name: Artikeln kan inte ha en strukturlista eller en formel
+                  href: troubleshooting/planning/item-cannot-have-bom-formula.md
+                - name: Parametrar för huvudplan finns inte
+                  href: troubleshooting/planning/no-parameters-for-master-plan.md
+                - name: Den planerade produktionsordern måste tidsplaneras innan den kan bekräftas
+                  href: troubleshooting/planning/planned-order-must-be-scheduled.md
+                - name: Produkten är spärrad för transaktioner
+                  href: troubleshooting/planning/product-is-on-hold.md
+                - name: Det valda formelnumret är inte godkänt för en batchorder.
+                  href: troubleshooting/planning/selected-formula-not-approved.md
+                - name: Leverantörskoden har inte auktoriserats för en viss produkt och ett visst datum
+                  href: troubleshooting/planning/vendor-code-not-authorized.md
+                - name: Leverantören har inte angetts när planerade order bekräftats
+                  href: troubleshooting/planning/vendor-not-specified.md
                 - name: Direkt härledda bekräftade order bearbetas av ett arbetsflöde i granskning
                   href: troubleshooting/planning/firmed-directly-deri.md
                 - name: Du kan inte filtrera huvudplaneringsartiklar efter relaterade disponeringsgruppvärden
@@ -3449,8 +3507,22 @@
               items:
                 - name: Det går endast att lägga till huvudkontot som kreditkonto av avstämningsorsaker
                   href: troubleshooting/transportation/reconciliation-reaso.md
-            - name: Hantering av distributionslager
+            - name: Lagerstyrning
               items:
+                - name: Annullerade produktinleveranser uppdaterar inte transaktionsstatus till registrerad
+                  href: troubleshooting/warehousing/canceled-product-receipts.md
+                - name: Decimalavrundningen för den fysiska uppdateringskvantiteten är fel
+                  href: troubleshooting/warehousing/decimal-rounding-of-quantity.md
+                - name: Fysisk rest i enheten måste vara skild från noll
+                  href: troubleshooting/warehousing/physical-remaining-q.md
+                - name: Plockad kvantitet är inte tillräcklig under generering av följesedeln
+                  href: troubleshooting/warehousing/picked-quantity-is-n.md
+                - name: Kvantiteten överskrider procentsatsen för överleverans under generering av följesedeln
+                  href: troubleshooting/warehousing/quantity-exceeds-over-pack-slip.md
+                - name: Kvantitet som du försöker uppdatera överstiger den mottagna/levererade kvantiteten
+                  href: troubleshooting/warehousing/quantity-exceeds-rec-del.md
+                - name: Kvantiteten underskrider procentsatsen för överleverans under generering av följesedeln
+                  href: troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md
                 - name: Ett fel uppstår när du väljer plats under plocklisteregistrering
                   href: troubleshooting/warehousing/error-cannot-update.md
                 - name: Förpackningsstationen visar inte produktanteckningar

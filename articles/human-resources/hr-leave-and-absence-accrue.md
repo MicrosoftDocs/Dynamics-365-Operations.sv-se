@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86ca63b1703faa6f57ed2e5591c89a5e84363481
-ms.sourcegitcommit: 318e406b84d43381d450272eb83c5eea9c5cf1c0
+ms.openlocfilehash: ddd4c55f6ebfbe91fb949a92cb379f51d826c465
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059483"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303474"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Periodisera planer för tjänstledighet och frånvaro
 
@@ -104,11 +104,9 @@ Ta bort periodiseringsposter för ett specifikt plan- och datumintervall. Period
 
 2. Under **Hantera tjänstledighet**, välj **Ta bort granskning av periodisering av tjänstledighet**.
 
-## <a name="preview-leave-accrual-transaction-auditing"></a>(Förhandsversion) Granskning av periodiseringstransaktion för tjänstledighet
+## <a name="leave-accrual-transaction-auditing"></a>Granskning av periodiseringstransaktion för tjänstledighet
 
-[!include [Preview feature](includes/preview-feature.md)]
-
-Den här förhandsgranskningsfunktionen hjälper lediga och frånvaroansvariga att förstå transaktioner för periodiseringar för frånvaro och transaktioner relaterade till en anställds lediga saldon för en specifik semester.
+Den här funktionen hjälper lediga och frånvaroansvariga att förstå transaktioner för periodiseringar för frånvaro och transaktioner relaterade till en anställds lediga saldon för en specifik semester.
 
 För att visa transaktionsdetaljer:
 

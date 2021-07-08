@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 824f7eb66c1d3f03df74a706e8214bcfe1d8efd9
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 6941a38e96520befd3bdba65956d45a6bbaee4be
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941206"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306399"
 ---
 # <a name="unified-product-experience"></a>Enhetlig produktupplevelse
 
@@ -124,7 +124,7 @@ Produktdimensioner är egenskaper som identifierar en produktvariant. De fyra pr
 
 När en produkt har olika produktdimensioner (t.ex. en produktmall har storlek och färg som produktdimensioner) definieras varje enskild produkt (dvs. varje produktvarianten) som en kombination av dessa produktdimensioner. Produktnummer B0001 är t.ex. en extra liten svart T-shirt och produktnummer B0002 är en liten svart T-shirt. I det här fallet definieras de befintliga kombinationerna av produktdimensioner. T.ex. kan t-shirten från föregående exempel vara extra small och svart, small och svart, medium och svart eller large och svart, men inte vara extra large och svarta. Med andra ord anges de produktdimensioner som en produktmall kan utföra och varianter kan frisläppas baserat på dessa värden.
 
-Om du vill hålla reda på vilka produktdimensioner en produktmall kan utföra, skapas följande tabeller och mappas i Dataverse för varje produktdimension. Mer information finns i [Produktinformationsöversikt](../../../supply-chain/pim/product-information.md).
+Om du vill hålla reda på vilka produktdimensioner en produktmall kan utföra, skapas följande tabeller och mappas i Dataverse för varje produktdimension. Mer information finns i [Översikt över produktinformation](../../../../supply-chain/pim/product-information.md). 
 
 [!include [product colors](includes/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 

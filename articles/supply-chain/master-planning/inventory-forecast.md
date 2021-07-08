@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a7ed310ebdef130b0fb09c5db19397398dc5042
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 7901bcfc239885aa53863729e573d1f37ba67f81
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216852"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306425"
 ---
 # <a name="inventory-forecasts"></a>Lagerprognoser
 
@@ -353,20 +353,46 @@ Använd denna procedur när du vill bearbeta befintliga prognostransaktionsrader
 1. Använd avsnittet **Ekonomiska dimensioner** om du vill uppdatera prognosradernas ekonomiska dimensioner. Välj de ekonomiska dimensioner som du vill ändra och ange sedan ett värde som ska användas för de valda dimensionerna.
 1. Välj **OK** om du vill applicera dina ändringar.
 
-## <a name="run-forecast-planning"></a>Kör prognosplanering
+## <a name="use-forecasts-with-master-planning"></a>Använd prognoser med huvudplanering
 
-När du har angett dina efterfråge- och/eller inflödesprognos kan du köra en prognosplanering för att beräkna bruttobehov för material och kapacitet, samt för att generera planerade order.
+När du har anger efterfrågeprognosen och/eller leveransprognosen kan du inkludera prognoserna under huvudplaneringen för att ta med förväntad efterfrågan och/eller leverans i huvudplaneringskörningen. När prognoser inkluderas i huvudplaneringen beräknas bruttobehov för material och kapacitet och planerade order genereras.
 
-1. Gå till **Huvudplanering \> Prognosticering \> Prognosplanering**.
-1. I fältet **Prognosplan** väljer du en prognosplan.
-1. Aktivera **Spåra bearbetningstid** för att registrera bearbetningstiden för respektive planeringsuppgift.
-1. Ange ett värde i fältet **Antal trådar.** (Mer information finns i [Förbättra prestandan för huvudplanering](master-planning-performance.md).)
-1. I fältet **Kommentar** anger du en text för att registrera ytterligare information som krävs.
-1. På snabbfliken **Poster som ska inkluderas** väljer du **Filter** för att begränsa artikelurvalet.
-1. På snabbfliken **Kör i bakgrunden** anger du parametrar för batchen.
+### <a name="set-up-a-master-plan-to-include-an-inventory-forecast"></a>Ställ in en huvudplan för att inkludera en lagerprognos
+
+Följ dessa steg för att konfigurera en huvudplan så att den innehåller en lagerprognos.
+
+1. Gå till **Huvudplanering \> Inställningar \> Planer \> Huvudplaner**.
+1. Välj en befintlig plan eller skapa en ny plan.
+1. På snabbfliken **Allmänt** ange följande fält:
+
+    - **Prognosmodell** – Välj den prognosmodell som ska tillämpas. Den här modellen kommer att beaktas när ett leveransförslag skapas för den aktuella huvudplanen.
+    - **Inkludera inflödesprognos** – Ange detta alternativ till *Ja* om du vill inkludera inflödesprognos i den aktuella huvudplanen. Om du ställer in den på *Nej*, tas inte inflödesprognos transaktioner med i huvudplanen.
+    - **Inkludera efterfrågeprognos** – Ange detta alternativ till *Ja* om du vill inkludera efterfrågeprognosen i den aktuella huvudplanen. Om du ställer in den på *Nej*, tas inte efterfrågeprognos transaktioner med i huvudplanen.
+    - **Metod som används för att minska prognosbehov** – Välj den metod som ska användas för att minska prognosbehoven. Mer information finns i [Prognosreduceringnycklar](planning-optimization/demand-forecast.md#reduction-keys).
+
+1. På snabbfliken **Tidsgränser i dagar** du kan ställa in följande fält för att ange den period som prognosen inkluderas under:
+
+    - **Prognosplan** – Ställ in det här alternativet på *Ja* för att åsidosätta tidsgränsen för en prognosplan som kommer från de enskilda disponeringsgrupper. Ställ in den på *Nej* om du vill använda värdena från de enskilda disponeringsgrupper för den aktuella huvudplanen.
+    - **Prognostidsperiod** – om du ställer in alternativet **prognosplan** till *Ja* anger du antalet dagar (från dagens datum) som efterfrågeprognos ska användas.
+
+    > [!IMPORTANT]
+    > Alternativet **Prognosplan** stöder inte separat prognosplanering.
+
+### <a name="run-a-master-plan-that-includes-an-inventory-forecast"></a>Kör en huvudplan som inkluderar en lagerprognos
+
+Följ dessa steg för att köra en huvudplan så att den innehåller en lagerprognos.
+
+1. Gå till **Huvudplanering \> Arbetsytor \> Huvudplanering**.
+1. I fältet **Huvudplan** anger du eller väljer huvudplanen som du ställer in i den föregående proceduren.
+1. I panelen **Huvudplanering** välj **Kör**.
+1. I dialogrutan **Huvudplanering** ange alternativet **Spåra bearbetningstid** till *Ja*.
+1. Ange ett nummer i fältet **Antal trådar.**
+1. På snabbfliken **Poster att inkludera**, välj **Filter**.
+1. En dialogruta för standard frågeredigeraren visas. På fliken **Område** väljer du den rad där fältet **Fält** är inställt på *artikelnummer*.
+1. I fältet **Kriterium** välj artikelnummer som ska inkluderas i planen.
 1. Välj **OK**.
 
-Du visar de behov som beräknas genom att öppna sidan **Bruttobehov**. På sidan **Frisläppta produkter**, på fliken **Plan**, i avsnittet **Krav**, väljer du **Bruttobehov**.
+Du visar de behov som beräknas genom att öppna sidan **Bruttobehov**. På sidan **Frisläppta produkter** i åtgärdsfönstret på fliken **Plan**, i gruppen **Krav**, väljer du **Bruttobehov**.
 
 Om du vill visa planerade order som genereras går du till **Huvudplanering \> Common \> Planerade order** och väljer sedan lämplig prognosplan.
 
@@ -376,5 +402,6 @@ Om du vill visa planerade order som genereras går du till **Huvudplanering \> C
 - [Inställning av efterfrågeprognosticering](demand-forecasting-setup.md)
 - [Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)
 - [Gör manuella justeringar på baslinjeprognosen](manual-adjustments-baseline-forecast.md)
+- [Huvudplanering med efterfrågeprognoser](planning-optimization/demand-forecast.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

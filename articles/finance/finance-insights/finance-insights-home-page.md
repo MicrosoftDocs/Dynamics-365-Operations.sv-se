@@ -1,6 +1,6 @@
 ---
-title: Finance-insikter – startsida (förhandsversion)
-description: Finance-insikter ger konfigurerbara och utökningsbara modeller för att hjälpa dig att noggrant och effektivt förutsäga företagets kassaflöde, när du ska få betalning för utestående kundfordringar och skapa ett budgetförslag som kan påskynda budgetprocessen. Alla dessa funktioner baseras på intelligenta maskininlärningsmodeller.
+title: Finance insights – startsida (förhandsversion)
+description: Finance insights ger konfigurerbara och utökningsbara modeller för att hjälpa dig att noggrant och effektivt förutsäga företagets kassaflöde, när du ska få betalning för utestående kundfordringar och skapa ett budgetförslag som kan påskynda budgetprocessen. Alla dessa funktioner baseras på intelligenta maskininlärningsmodeller.
 author: ShivamPandey-msft
 ms.date: 06/03/2021
 ms.topic: article
@@ -15,35 +15,38 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4876d2d4ad79dc09ce4b372eedf4c6ab31930957
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: 9d7eca35d6e5ce8f434f923fef69a6d13a8ac1b3
+ms.sourcegitcommit: c9f55e64416d0bbedfdadafb00e4181921ad0f37
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222520"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261920"
 ---
-# <a name="finance-insights-home-page-preview"></a>Finance-insikter – startsida (förhandsversion)
+# <a name="finance-insights-home-page-preview"></a>Finance insights – startsida (förhandsversion)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance-insikter ger konfigurerbara och utökningsbara modeller för att hjälpa dig att noggrant och effektivt förutsäga företagets kassaflöde, när du ska få betalning för utestående kundfordringar och skapa ett budgetförslag som kan påskynda budgetprocessen. Alla dessa funktioner baseras på intelligenta maskininlärningsmodeller. När dessa nya funktioner kombineras med automatisering i leverantörsbetalningar och -samlingar, tillhandahåller de ett omfattande och intelligent system som driver beslutsfattande och hjälper dig att vidta åtgärder för att effektivt svara på aktuella och förväntade affärsutmaningar.
+Finance insights ger konfigurerbara och utökningsbara modeller för att hjälpa dig att noggrant och effektivt förutsäga företagets kassaflöde, när du ska få betalning för utestående kundfordringar och skapa ett budgetförslag som kan påskynda budgetprocessen. Alla dessa funktioner baseras på intelligenta maskininlärningsmodeller. När dessa nya funktioner kombineras med automatisering i leverantörsbetalningar och -samlingar, tillhandahåller de ett omfattande och intelligent system som driver beslutsfattande och hjälper dig att vidta åtgärder för att effektivt svara på aktuella och förväntade affärsutmaningar.
 
-Förhandsversionen av Finance-insikter finns tillgänglig för bedömningsdistribution i USA, Europa och Storbritannien. Microsoft lägger stegvis till support för fler regioner.
+Förhandsversionen av Finance insights finns tillgänglig för bedömningsdistribution i USA, Europa och Storbritannien. Microsoft lägger stegvis till support för fler regioner.
 
 Förhandsversionsfunktionerna kan och ska bara aktiveras i nivå-2-sandbox-miljöer. Konfiguration och AI-modeller (artificiell intelligens) som skapas i en sandbox-miljö kan inte migreras till en produktionsmiljö. Mer information finns i [Tilläggsavtal för Microsoft Dynamics 365 förhandsversioner](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
 
+> [!NOTE]
+> Den här funktionen ges som en uppsättning förhandsgranskningsfunktioner. Som en förhandsgranskning bör du inte använda de resulterande maskininlärningsmodellerna för att påverka dina affärsbeslut eller budgeteringsförslag. Din användning av den här funktionen regleras [extra användningsvillkor](https://go.microsoft.com/fwlink/?linkid=2105274).
+
 ## <a name="prerequisites"></a>Förutsättningar
 
-I det här avsnittet beskrivs kraven för att använda Finance-insikter. När det är möjligt tillhandahålls länkar till källor med ytterligare information.
+I det här avsnittet beskrivs kraven för att använda Finance insights. När det är möjligt tillhandahålls länkar till källor med ytterligare information.
 
 ### <a name="legal-requirements"></a>Lagkrav
 
-Om du vill ansöka om att använda förhandsversionen av programmet fyller du i [Avtal för förhandsversion av Finance-insikter för Dynamics 365 Finance](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u).
+Om du vill ansöka om att använda förhandsversionen av programmet fyller du i [Avtal för förhandsversion av Finance insights för Dynamics 365 Finance](https://forms.office.com/FormsPro/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUM1c0Uzc1RFpaU1RVTEwxVTNWUERPRThUSy4u).
 
 ### <a name="system-requirements"></a>Systemkrav
 
-En nivå-2-sandbox-miljö (multibox) krävs för att förhandsgranska Finance-insikter. Mer bakgrundsinformation om miljöer finns i [Miljöplanering](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+En nivå-2-sandbox-miljö (multibox) krävs för att förhandsgranska Finance insights. Mer bakgrundsinformation om miljöer finns i [Miljöplanering](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### <a name="version-requirements"></a>Versionskrav
 
@@ -66,17 +69,17 @@ Exempeldata finns för demosystem som har demodatauppsättningen Contoso.
 
 Om du är bekant med processen för att skapa och hantera resurser i Azure, Microsoft Dataverse och LCS kommer det vara till hjälp när du slutför processen.
 
-## <a name="configure-finance-insights"></a>Konfigurera Finance-insikter
+## <a name="configure-finance-insights"></a>Konfigurera Finance insights
 
-Du måste slutföra vissa konfigurationssteg innan du kan använda Finance-insikter. Mer information om hur du konfigurerar Finance Insights finns i:
+Du måste slutföra vissa konfigurationssteg innan du kan använda Finance insights. Mer information om hur du konfigurerar Finance insights finns i:
   - För versioner upp till 10.0.19: [Konfiguration för Finance insights – versioner upp till 10.0.19](configure-for-fin-insites.md).
-  - För version 10.0.20 och senare: [Konfiguration för Finance Insights (förhandsversion) – versioner 10.0.20 och senare](configure-for-fin-insites-PubPrvw.md).
+  - För version 10.0.20 och senare: [Konfiguration för Finance insights (förhandsversion) – versioner 10.0.20 och senare](configure-for-fin-insites-PubPrvw.md).
 
 ## <a name="create-a-data-integrator-project"></a>Skapa ett projekt för dataintegrerare
 
 Du måste skapa ett projekt för dataintegrerare så att data som skapas i maskininlärningsmodellen kan flöda in Dynamics 365 Finance. Information om hur du skapar ett sådant projekt finns i [Skapa ett projekt för dataintegrerare](create-data-integrate-project.md).
 
-## <a name="enable-finance-insights-capabilities"></a>Aktivera funktioner för Finance-insikt
+## <a name="enable-finance-insights-capabilities"></a>Aktivera funktioner för Finance insights
 
 När du har slutfört konfigurationsstegen och konfigurerat demodata måste du aktivera och ställa in varje funktion som du vill använda: kundbetalningsförutsägelser, kassaflödesprognoser och budgetförslag.
 
@@ -92,7 +95,7 @@ Om du vill aktivera kassaflödesprognoser måste du utföra en uppsättning steg
 
 I funktionen Budgetförslag används en maskininlärningsmodell tillsammans med din organisations historiska data för att generera ett budgetförslag. Det genererade förslaget kan hjälpa dig att påbörja en budgetprocess som är effektivare än en manuell process. Mer information om hur du aktiverar den här funktionen finns i [Aktivera budgetförslag](enable-budget-proposal.md). 
 
-## <a name="using-finance-insights-features"></a>Använda Finance-insikt-funktioner
+## <a name="using-finance-insights-features"></a>Använda Finance insights-funktioner
 
 ### <a name="using-customer-payment-predictions"></a>Använda prediktioner av kundbetalning
 

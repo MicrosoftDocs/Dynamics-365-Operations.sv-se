@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 7afad911454916c49cda47253736defdd7e9b16b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d271d70791a8fe4ad1581ae8a150ad13bffc7a94
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020469"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271063"
 ---
 # <a name="rebate-management-module-overview"></a>Modul för rabatthantering – översikt
 
@@ -70,7 +70,7 @@ Rabatter kan konfigureras baserat på många olika parametrar. De kan till exemp
 
 Rabattberäkningsresultat kan också reduceras med andra rabatter, beroende på om rabatten har ställts in för beräkning baserat på nettobeloppet.
 
-På leverantörssidan kan rabatter beräkna priset baserat på en fifo-regel (först in, först ut), det senaste inköpspriset, det genomsnittliga inköpspriset eller försäljningspriset.
+På leverantörssidan kan rabatter som baseras på försäljningsorder beräkna priset baserat på en fifo-regel (först in, först ut), det senaste inköpspriset, det genomsnittliga inköpspriset eller försäljningspriset.
 
 ## <a name="rebate-target-transactions"></a>Rabattmåltransaktioner
 
@@ -84,11 +84,12 @@ Artikelutleverans skapar en gratis artikelförsäljningsorder för kundrabatter 
 
 Kombinationen av associerade erbjudanden, frekvensen för beräkningarna, beräkningsunderlaget och den valda beräkningsmetoden avgör om rabattberäkningarna är korrekta och precisa. Rabattbeloppet kan användas för att periodisera och begärde värden.
 
-Bestämmelserna kan hanteras dagligen eller varje månad. Funktionen kan emellertid allokera eller betala rabatten eller ta emot betalning av den vid en angiven frekvens. Användarna kan enkelt justera ett plan- eller betalningsbelopp när som helst under utbetalningen.
+Bestämmelserna kan hanteras dagligen, varje vecka, varje månad eller enligt en anpassad period. Funktionen kan emellertid allokera eller betala rabatten, eller ta emot betalning av den, vid en definierad frekvens som är lika lång eller längre än reserveringsfrekvensen. För bortskrivning används samma frekvens som rabatten. Användarna kan enkelt justera ett plan- eller betalningsbelopp när som helst under utbetalningen.
 
 Användarna behöver inte längre hantera affärer eller villkor i två steg. Provisions- och avskrivningar bokförs direkt i redovisningen. Dessutom kan kreditnotor skapas automatiskt. Därför finns det fullständig integration med leverantörsreskontra och kundreskontra. Under bearbetningen överväger beräkningarna kvittningsrabatter, betalda fakturor, handelsrabatter och befintliga kreditfakturor för att se till att beloppen och värdena beräknas korrekt.
 
-När rabatter beräknas skapar processen transaktioner som kan granskas innan bokföringen sker. En journal, kreditfaktura eller debettransaktion kan sedan skapas. En separat process bokför rabatt- och avdragstransaktioner. Rapportutdrag och transaktionslistor kan erhållas för att säkerställa efterföljande, effektivitet och genomskinlighet.
+När rabatter beräknas skapar processen transaktioner som kan granskas innan bokföringen sker. En separat process bokför rabatthanteringstransaktioner. En journal, kreditfaktura eller debettransaktion kan sedan skapas vid bokföring till föreslagna transaktioner. Rapportutdrag och transaktionslistor kan erhållas för att säkerställa efterföljande, effektivitet och genomskinlighet.
+
 
 ## <a name="guaranteed-royalty-payments"></a>Så här ser det ut att vara royaltybetalningar
 

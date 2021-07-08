@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 438e8ba38726a25a2464490f4098f96095b4d5c6
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 2164c07d1a179a0aa15611b742084d872f41bbfc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923317"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270823"
 ---
 # <a name="feature-management-overview"></a>Översikt över funktionshantering
 
@@ -160,8 +160,8 @@ Policyn är att alla nya funktioner kommer att ingå i en 12-månaders period oc
 ### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Varför finns det inget specifikt "obligatoriskt aktiverat datum"? 
 Tidpunkten för uppdateringsfrisläppning är variabel, tidsinställning för miljön är variabel och kunderna kan välja att hoppa över vissa uppdateringar. Därför är det svårt att fastställa särskilda datum. 
 
-### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Var är dokumentationen till de funktioner som görs obligatoriska? 
-Denna dokumentation hämtas från programteamen. Dessa nämns ofta i [borttagna eller inaktuella funktioner](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
+### <a name="wheres-the-documentation-for-features-that-are-mandatory"></a>Var är dokumentationen till de funktioner som görs obligatoriska? 
+Denna dokumentation kommer från varje Dynamics 365-appteam. Ofta nämns dessa funktioner i [uppdateringar av klientfunktionstillstånd](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) eller [borttagna eller inaktuella funktioner](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Finns det ett produkt- eller signalmeddelande om att en funktion ska vara obligatorisk aktiverad? 
 En meddelandefunktion som är relaterad till att utföra en funktion som är obligatorisk finns inte idag.
