@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d1378ae652ea70cba941316f4667052dcb05f717
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 71aefbc9c041074225b379d90db5cecf3849cb59
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812922"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347720"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Förbättra schemaläggningsmotorns prestanda
 
@@ -64,13 +64,13 @@ Det kan till exempel vara en väg som visas i följande tabell och bild, vilket 
 | --- | --- | --- | --- | --- | --- | --- |
 | 10 | Primär | 1.00 | 2.00 | | 1 | 20 |
 | 10 | Sekundär&nbsp;1 | | | | 1 | 20 |
-| 20 | Primär | | 3.00 | 1.00 | 3 | 0 |
+| 20 | Primärt | | 3.00 | 1.00 | 3 | 0 |
 
-![Exempel på ruttdiagram](media/scheduling-engine-route.png "Exempel på ruttdiagram")
+![Exempel på flödesdiagram.](media/scheduling-engine-route.png "Exempel på ruttdiagram")
 
 När du skickar detta till motorn delas det upp i åtta jobb, vilket visas i bilden nedan (markera bilden om du vill förstora den).
 
-[![Planera motorjobb](media/scheduling-engine-jobs.png "Planera motorjobb")](media/scheduling-engine-jobs-large.png)
+[![Tidsplanering av motorjobb](media/scheduling-engine-jobs.png "Tidsplanering av motorjobb."](media/scheduling-engine-jobs-large.png)
 
 Standardlänken mellan två jobb är `FinishStart` vilket innebär att sluttiden för ett jobb måste infalla före starttiden för ett annat jobb. Eftersom inställningarna måste utföras av samma resurs som senare kommer att utföra processen, finns det `OnSameResource` begränsningar mellan dem. Mellan jobben för den primära och sekundära operationen för 10, finns `StartStart` och `FinishFinish` länkar, vilket innebär att jobben måste starta och sluta samtidigt och det finns `NotOnSameResource` begränsningar som förhindrar samma resurs för primär och sekundär.
 

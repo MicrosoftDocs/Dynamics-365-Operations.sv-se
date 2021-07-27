@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86e8787320721a58f449abcfba21c2c4c6b4caf9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 988340d9e5fc12c9329a587c7401fe039c8e5722
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751786"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350704"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Konfigurera godkännandesteg i ett arbetsflöde
 
@@ -156,7 +156,7 @@ Gör på följande sätt när du vill ange vem som ska tilldelas godkännandeste
 
     - **Enskild godkännare** – Den åtgärd som tillämpas på dokumentet avgörs av den första personen som svarar. Till exempel har Sam skickat in en utgiftsrapport på 15 000 dollar. Utgiftsrapporten tilldelas för närvarande Sue, Jo och Bill. Om Sue är den första personen som svarar på dokumentet, är det hon som bestämmer vilken åtgärd som ska vidtas. Om Sue avvisar dokumentet, avslås det och skickas tillbaka till Sam. Om Sue godkänner dokumentet, skickas det vidare till Ann för godkännande.
 
-        ![Arbetsflöde med en godkännandeprocess](./media/workflow_multipleusersinstep.gif)
+        ![Arbetsflöde med en godkännandeprocess.](./media/workflow_multipleusersinstep.gif)
 
     - **Majoritet av godkännare** – Den åtgärd som tillämpas på dokumentet avgörs när majoriteten av godkännarna har svarat. Till exempel har Sam skickat in en utgiftsrapport på 15 000 dollar. Utgiftsrapporten tilldelas för närvarande Sue, Jo och Bill. Om Sue och Jo är de första två godkännarna som svarar, tillämpas den åtgärd de vidtar på dokumentet.
 

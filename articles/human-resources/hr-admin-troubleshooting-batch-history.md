@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 6a9e94e282aa8f101b42c1378ef21c6c1fe0477e
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 5a4749e3234288927a781106dd4becebd5260084
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053501"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344674"
 ---
 # <a name="optimize-performance-with-auto-cleanup-tasks"></a>Optimera prestanda med automatiska rensningsuppgifter
 
@@ -41,23 +41,23 @@ Schemalägg en automatisk uppgift för att rensa historiken för batchjobb. Vi r
 
 2. I fätet **Sök**, ange **Rensa historik för batchjobb**.
 
-   ![Sök efter rensa historik för batchjobb](media/talent-batch-history-cleanup-search-bar.png)
+   ![Sök efter historikrensning för batchjobb.](media/talent-batch-history-cleanup-search-bar.png)
 
 3. I **Historikgränser (dagar)**, ange **30**.
 
-   ![Ange historikgräns till 30](media/talent-batch-history-cleanup-history-limit.png)
+   ![Ange historikgräns till 30.](media/talent-batch-history-cleanup-history-limit.png)
 
 4. Välj **kör i bakgrunden** och välj sedan **återkommande**.
 
-   ![Ange upprepning](media/talent-batch-history-cleanup-recurrence.png)
+   ![Ange upprepning.](media/talent-batch-history-cleanup-recurrence.png)
 
 5. Under **definiera återkommande**, ange **Startdatum** och **Starttid** vid ledighet eller helg och välj sedan **INGET SLUTDATUM**. 
 
-   ![Definiera återkommande startdatum och tid](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Definiera startdatum och tid för upprepning.](media/talent-batch-history-cleanup-define-recurrence.png)
 
 6. Under **ÅTERKOMMANDE MÖNSTER**, välj **dagar** och ange **UPPREPA EFTER ANGIVET INTERVALL** till **7**.
 
-   ![Ställ in rensning för att upprepa veckovis](media/talent-batch-history-cleanup-recurrence-pattern.png)
+   ![Ställ in rensning att upprepas veckovis.](media/talent-batch-history-cleanup-recurrence-pattern.png)
 
 7. Välj **OK**.
 

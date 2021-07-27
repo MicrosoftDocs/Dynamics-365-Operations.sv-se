@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76dbf5f8f2fc3b33077d559ffcef580a5295adb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 59dda2207f002402f5153f9c77206b6c644f2679
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815582"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352868"
 ---
 # <a name="general-journal-processing"></a>Hantering av allmänna journaler
 
@@ -42,14 +42,14 @@ På **Journalnamn** sidan kan du ställa in följande element:
 
 Journalnamn kan endast användas för justeringar. I det här fallet kan du ange att endast **huvudbokskonton** är giltiga för alla företag. 
 
-[![Kontotyper för journalkontroll](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![Kontotyper för journalkontroll.](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 Journalnamn kan användas endast för en viss sektor eller ett datumintervall för huvudbokskonton. 
 
-[![Journalkontrollsegment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Journalkontrollsegment.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 **Automatisk återföring** alternativet finns tillgängligt i allmänna journaler. Du kan till exempel ha en periodiserad justering där det aktuella dokumentet har inte bearbetats, som visas i följande illustration.
-[![Allmän journalåterföring](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Allmän journalåterföring.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 Microsoft Excel-tillägget för poster i redovisningsjournal ger en extra nivå av automatisering och gör dataregistreringen lättare. **Öppna rader i Excel** åtgärden är tillgänglig i **Allmän journal** och **Journalverifikat** sidor. 
 

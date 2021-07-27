@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3fc7cff0a3f8d0fbfb196ec5951b138088afece7
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 45decb55ce5cf3399f48034df367e1565ab689bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019480"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347450"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-faq"></a>Vanliga frågeställningar och svar om Dynamics 365 Commerce och Microsoft Teams-integration
 
@@ -45,7 +45,7 @@ Om du vill tilldela en medarbetare rollen som butiksuppgiftschef i Commerce-admi
 
 I Commerce-administration är varje organisationshierarki kopplad till ett eller flera syften. Se till att den hierarki som du vill tillhandahålla Microsoft Teams har **Butiksrapportering** syfte associerat med det, som visas i följande exempelbild. 
 
-![Exempel på ett organisationshierarkisyfte i Commerce-administration](media/d365-commerce-organization-hierarchies-purpose.png)
+![Exempel på ett organisationshierarkisyfte i Commerce-administrationen.](media/d365-commerce-organization-hierarchies-purpose.png)
 
 ### <a name="how-do-i-enable-retail-store-workers-to-sign-in-to-commerce-point-of-sale-pos-using-azure-active-directory-azure-ad"></a>Hur aktiverar jag att butiksarbetare ska logga in i Commerce kassa med hjälp av Azure Active Directory (Azure AD)?
 

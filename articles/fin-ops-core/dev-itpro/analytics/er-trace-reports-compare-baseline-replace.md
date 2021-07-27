@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 49ca9a878b9289b02f9bb9346190425197e0ceea
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: f6eaf5f9cbc6eed09f6a3067826f7fa15fb94b2e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117045"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345874"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Förbättra spårningsresultat av genererade ER-rapporter för att jämföra med originalvärden
 
@@ -57,7 +57,7 @@ Om du vill slutföra stegen i det här exemplet måste du först slutföra stege
 
 Baslinjen har lagts till för det valda formatet **Format för att lära ER-baslinjer** men baslinjereglerna har ännu inte lagts till för denna baslinje.
 
-![Sidan Baslinjer med elektroniskt rapporteringsformat, inga regler ännu](media/GER-BaselineSample-AddBaseline2.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
+![Sidan för baslinjer för elektroniskt rapporteringsformat, inga regler ännu.](media/GER-BaselineSample-AddBaseline2.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
 
 ### <a name="make-a-new-baseline-rule"></a>Skapa en ny baslinjeregel
 
@@ -70,7 +70,7 @@ Baslinjen har lagts till för det valda formatet **Format för att lära ER-basl
 7. Välj **OK**.
 8. Välj **baslinjer**.
 
-    ![Sidan Baslinjer med elektroniskt rapporteringsformat, baslinjer valda](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
+    ![Sidan för baslinjer för elektroniskt rapporteringsformat, baslinjer valda.](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
 
     Den genererade utgående filen har automatiskt kopplats till baslinjen för det körda ER-formatet. Baslinjeregeln läggs automatiskt till i denna baslinje och innehåller också referensen till den bifogade filen.
 
@@ -110,14 +110,14 @@ Om du vill slutföra stegen i det här exemplet måste du först slutföra stege
 13. Välj **spara** och välj sedan **test**.
 14. Välj **test** igen om du vill testa om det konfigurerade uttrycket.
 
-    ![Sidan Formeldesigner](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Skärmbild av sidan Formeldesigner")
+    ![Sidan Formeldesigner.](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Skärmbild av sidan Formeldesigner")
 
     > [!NOTE]
     > På fliken **testresultat** visas att det konfigurerade uttrycket returnerar ett annat datum- och tidsvärde när det anropas.
 
 15. Stäng sidan **Formeldesigner** och välj sedan **Spara**.
 
-    ![Formatdesignersida](media/GER-BaselineSample-FormatMappingDesign2.PNG "Skärmbild av sidan Formatdesigner")
+    ![Formatdesignersida.](media/GER-BaselineSample-FormatMappingDesign2.PNG "Skärmbild av sidan Formatdesigner")
 
 16. Stäng sidan **Formatdesigner**.
 
@@ -128,7 +128,7 @@ Om du vill slutföra stegen i det här exemplet måste du först slutföra stege
 3. I listan över baslinjer väljer du den baslinje som har konfigurerats för formatet **Format för att lära sig ER-baslinjer**.
 4. På snabbfliken **baslinjer** väljer du **ta bort** för att ta bort den baslinjeregel som du konfigurerade tidigare.
 
-![Sidan Baslinjer med elektroniskt rapporteringsformat, borttagen](media/GER-BaselineSample-AddBaseline3.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
+![Sidan för baslinjer för elektroniskt rapporteringsformat, borttagen.](media/GER-BaselineSample-AddBaseline3.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
 
 ### <a name="define-replacements-for-bindings-of-designed-er-format"></a>Definiera ersättningar för bindningar av utformade ER-format
 
@@ -136,7 +136,7 @@ Om du vill slutföra stegen i det här exemplet måste du först slutföra stege
 2. I trädet formatkomponenter expanderar du **Utdata**, expanderar **Utdata\\dokument** och markerar sedan kryssrutan **Utdata\\dokument\\ProcessingDateTime**.
 3. Välj **OK**.
 
-![Sidan Baslinjer med elektroniskt rapporteringsformat, komponenter](media/GER-BaselineSample-AddBaseline4.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
+![Sidan Baslinjer för elektroniskt rapporteringsformat, komponenter.](media/GER-BaselineSample-AddBaseline4.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
 
 Den valda ER-formatkomponenten har lagts till i listan över komponenter på snabbfliken **ersättningar**. När bas-ER-formatet körs i felsökningsläge ersätts formatets bindning för varje komponent med bindningen som visas i kolumnen **bindning**. Om du vill ändra standardbindningen för en komponent som visas på snabbfliken **ersättningar** väljer du **redigera**.
 
@@ -144,7 +144,7 @@ Den valda ER-formatkomponenten har lagts till i listan över komponenter på sna
 
 Följ stegen i avsnittet "exempel: automatisera inställningen av baslinjeregler" ovan i det här avsnittet. Ett meddelande visas med en varning om att den utgående filen har genererats med hjälp av inställningar för baslinje och att formatbindningarna har bytts ut.
 
-![Meddelande på sidan Konfigurationer](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Skärmbild av meddelande på sidan Konfigurationer")
+![Meddelande på sidan Konfigurationer.](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Skärmbild av meddelande på sidan Konfigurationer")
 
 ### <a name="suppress-warnings-about-the-replacement-of-format-bindings"></a>Ignorera varningar om byte av formatbindningar
 
@@ -192,11 +192,11 @@ Exporterade baslinjeinställningar kan importeras till en annan miljö. Miljön 
 
 Om du vill importera baslinjeinställningar från en lokalt lagrad XML-fil väljer du **Baslinjer med elektroniskt rapporteringsformat** och **Importera** och sedan **bläddra** för att välja XML-filen.
 
-![Dialogrutan Importera baslinjeinställningar](media/GER-BaselineSample-ImportBaseline1.PNG "Skärmbild av dialogrutan Importera baslinjeinställningar")
+![Dialogrutan Importera baslinjeinställningar.](media/GER-BaselineSample-ImportBaseline1.PNG "Skärmbild av dialogrutan Importera baslinjeinställningar")
 
 Om du vill importera baslinjeinställningar från en XML-fil som är lagrad på Microsoft SharePoint-servern, baserat på de aktuella dokumenthanteringsinställningarna och den valda dokumenttypen väljer du sidan **Baslinjer med elektroniskt rapporteringsformat** och sedan **Importera från källa**. Välj sedan dokumenttyp och XML-fil. Den dokumenttyp som krävs för åtkomst SharePoint-mappen måste konfigureras i förväg.
 
-![Dialogrutan Importera från källa](media/GER-BaselineSample-ImportBaseline2.PNG "Skärmbild av dialogrutan Importera från källa")
+![Dialogrutan Importera från källa.](media/GER-BaselineSample-ImportBaseline2.PNG "Skärmbild av dialogrutan Importera från källa")
 
 > [!NOTE]
 > Du kan använda uppgiftsregistrering för att registrera stegen för att välja önskad dokumenttyp och filnamnet i dialogrutan **importera från källa**. På det här sättet kan du behålla de nödvändiga baslinjeinställningarna på SharePoint-servern och sedan automatiskt importera dem genom att spela upp en uppgiftsinspelning när du kör automatiserade tester med hjälp av Regression Suite Automation Tool.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65adcd07f1649b2e4eb2e2528507bb15631782ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 69653d0dde2d3675a5af5cdc032a3c9c9462d705
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816734"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354094"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Arbetsorder och anläggningstillgångar
 
@@ -34,31 +34,31 @@ I Tillgångshantering kan tillgångar relateras till anläggningstillgångar och
 
 I bilden nedan visas relationen mellan ett investeringsprojekt i **projektlednings- och redovisningsmodulen** och ett jobbprojekt för arbetsorder.
 
-![Figur 1](media/24-work-orders.png)
+![Figur 1.](media/24-work-orders.png)
 
 Följande procedur beskriver relationen mellan tillgångar, arbetsorder, jobbprojekt för arbetsorder och anläggningstillgångar.
 
 1. Du skapar en tillgång som du kopplar till en anläggningstillgång.
 
-![Figur 2](media/25-work-orders.png)
+![Figur 2.](media/25-work-orders.png)
 
 2. När du ställer in arbetsordertyper på sidan **Arbetsorderordertyper** (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Arbetsordertyper**) skapar du en arbetsordertyp för hantering av investeringar. Se även [Arbetsordertyper](../setup-for-work-orders/work-order-types.md).
 
-![Figur 3](media/26-work-orders.png)
+![Figur 3.](media/26-work-orders.png)
 
 3. När du ställer in projektgrupper för arbetsorder i fliken **Projektgrupp** på sidan **Projektinställningar för arbetsorder** (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Projktinställningar**) skapas en relation mellan arbetsordertypen som används för investeringar och projektgruppen som skapas för investeringar på sidan **Projektgrupper** i modulen **Projekthantering och redovisning** (**Projekthantering och redovisning** > **Inställningar** > **Bokföring** > **Projektgrupper**).
 
-![Figur 4](media/27-work-orders.png)
+![Figur 4.](media/27-work-orders.png)
 
 4. När du skapar en arbetsorder som är relaterad till en anläggningstillgång väljer du den arbetsordertyp som brukar användas för att hantera investeringar, t.ex. **investeringar**.
 
 5. När arbetsordern skapas visas den relaterade arbetsordertypen på sidan **Alla arbetsorder.**
 
-![Figur 5](media/28-work-orders.png)
+![Figur 5.](media/28-work-orders.png)
 
 6. När arbetsordern skapas kommer projektet som är relaterat till arbetsordern på sidan **Alla projekt** skapas i modulen **Projekthantering och redovisning** (**Projekthantering och redovisning** > **Projekt** > **Alla projekt**). För att visa projektrelaterad information, välj länken i fältet **Projekt-ID** på fliken **Allmänt** på snabbfliken **Raddetaljer** i detaljvyn för sidan **Alla arbetsorder** i modulen **Tillgångshantering** (**Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder**).
 
-![Figur 6](media/29-work-orders.png)
+![Figur 6.](media/29-work-orders.png)
 
 7. Om du vill visa en översikt över de projekt som är kopplade till en anläggningstillgång **anläggningstillgångar** > **anläggningstillgångar** > **anläggningstillgångar** och sedan i fältet **anläggningstillgångsnummer**, välj länken för anläggningstillgången för att öppna detaljvyn. Expandera fönstret **relaterad information** till höger på sidan och välj snabbfliken **associerade projekt**.
 

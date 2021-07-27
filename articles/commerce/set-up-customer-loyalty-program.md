@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 16201
+ms.custom:
+- "16201"
+- intro-internal
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a1ee19a052c4a64995e6fcaa4afbe04b3e95fa55
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: b52dc87e4a6a47f0c656c25bd5b5506f9de919c3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027562"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344333"
 ---
 # <a name="loyalty-overview"></a>Lojalitetsöversikt
 
@@ -41,7 +43,7 @@ Du kan ställa in bonusprogram, så att de omfattar följande alternativ.
 
 Du måste ställa in flera komponenter om du vill aktivera lojalitetsfunktionen i Commerce. I bilden nedan visas lojalitetskomponenterna och hur de är relaterade till varandra.
 
-![Processflöde för bonus](./media/loyaltyprocess.gif "Förmånskomponenter och hur de relaterar till varandra")
+![Processflöde för bonus.](./media/loyaltyprocess.gif "Förmånskomponenter och hur de relaterar till varandra")
 
 ## <a name="loyalty-components"></a>Bonuskomponenter
 
@@ -80,15 +82,15 @@ I tabellen nedan beskrivs de processer som måste köras för att skicka bonusko
     > [!NOTE]
     > Inkomstregler inom ett bonusprogram är extra. Till exempel om du skapar en regel som belönar guldmedlem med 10 poäng för varje USD och du även skapar en regel för en kund med ”veteran”-anknytning till en belöning på 5 poäng för varje USD, skulle en veterananvändare som även ingår i guldnivån få 15 poäng för 1 USD eftersom kunden uppfyller kraven för båda raderna. Men om veterankunden inte var guldmedlem skulle kunden få 5 poäng för varje USD. För att reflektera ändringarna i kanalerna, kör **Bearbeta förmånsscheman** och **1050** (information om förmåner) jobb.
     
-    ![Anknytningsbaserad inkomst](./media/Affiliation-based-earning.png "Anknytningsbaserad inkomst")
+    ![Anknytningsbaserad inkomst.](./media/Affiliation-based-earning.png "Anknytningsbaserad inkomst")
 
 - Återförsäljare har ofta särskilda priser för en viss grupp av kunder som de inte vill att bonusprogram ska gälla. T.ex. grossister och anställda som får specialpriser och inga förmånspoäng. Vanligtvis används ”anknytningar” för att ge specialpriser till sådana kundgrupper. Om återförsäljaren vill förhindra att vissa kundgrupper tjänar förmånspoäng kan återförsäljaren ange en eller flera anknytningar under avsnittet **Undantagna anknytningar** i bonusprogrammet. På så sätt när kunder som hör till undantagna anknytningar är befintliga lojalitetsmedlemmar har de inte möjlighet att tjäna förmånspoäng för sina inköp. För att reflektera ändringarna i kanalerna, kör **Bearbeta förmånsscheman** och **1050** (information om förmåner) jobb.
 
-    ![Undantagna anknytningar](./media/Excluded-affiliations.png "Undanta anknytningar från att tjäna förmånspoäng")
+    ![Undantagna anknytningar.](./media/Excluded-affiliations.png "Undanta anknytningar från att tjäna förmånspoäng")
     
 - POS gör det möjligt för återförsäljare att antingen använda fysiska förmånskort eller generera ett unikt förmånskortsnummer automatiskt. Om du vill aktivera automatisk generering av förmånskort butiker aktiverar du **generera förmånskortnummer** i funktionsprofilen som är kopplad till butiken. För onlinekanaler, kan återförsäljare använda IssueLoyaltyCard-API för att utfärda förmånskort till kunder. Återförsäljare kan antingen tillhandahålla ett förmånskortnummer till denna API, som används för att generera förmånskortet, eller så kommer systemet att använda förmånskortets nummerserie i Commerce. Men om nummerserien inte finns och återförsäljaren inte tillhandahåller ett förmånskortnummer när API anropas visas ett felmeddelande.
 
-    ![Generera förmånskort](./media/Generate-loyalty-card.png "Generera automatiskt förmånskortnummer")
+    ![Generera förmånskort.](./media/Generate-loyalty-card.png "Generera automatiskt förmånskortnummer")
 
 - Intjänad och inlösta förmånspoäng sparas nu för varje transaktion och försäljningsorder mot försäljningsraden, så att samma belopp kan återbetalas eller tas tillbaka vid hela eller delvisa returer. Dessutom ger synliggörs för punkterna på försäljningsraden nivå möjlighet till call center användarna besvara kundfrågor om hur många poäng som har erhållits eller löses in för varje rad. Före ändringen räknades alltid belöningspoängen om vid returer som resulterade i ett annat belopp än det ursprungligt om reglerna för inkomst eller inlösen ändrades och även användarna av kundtjänst syntes inte på poängfördelningen. Poängen visas under formuläret **korttransaktioner** för varje förmånskort. För att aktivera den här funktionen aktiverar du konfigurationen **Bokför förmånspoäng per försäljningsrad** under **Delade handelsparametrar** \> **Allmänt**.
 
@@ -99,33 +101,33 @@ I tabellen nedan beskrivs de processer som måste köras för att skicka bonusko
 
 Återförsäljare kan dessutom definiera maximal gräns för förmånsbelöningspoäng per förmånskort. Det här fältet kan användas för att minska effekten av förmånskortbedrägeri. När den maximala belöningspoängen har nåtts, kan inte användaren får mer poäng. Återförsäljaren kan välja att blockera sådana kort tills de har undersökts för eventuella bedrägerier. Om återförsäljaren avgör bedrägeri, kan inte återförsäljaren bara spärra förmånskortet för kunden utan även markera kunden som blockerades. För att göra detta, ange egenskapen **spärra kunden för registrering av förmåner** till **Ja** under **alla kunder** på snabbfliken **Commerce**. Spärrade kunder kommer inte att utfärda ett förmånskort i någon av kanalerna.
 
-   ![Överlåtelse och maximal belöningspoäng](./media/Vesting-and-maximum-reward-points.png "Definiera överlåtelse och maximal belöningspoäng")
+   ![Överlåtelse och maximala belöningspoäng.](./media/Vesting-and-maximum-reward-points.png "Definiera överlåtelse och maximal belöningspoäng")
 
 - Anknytningar används för att tillhandahålla särskilda priser och rabatter, men det finns vissa anknytningar som återförsäljare inte vill visa kunderna. Exempelvis en anknytning som heter ”kund som spenderar mycket” kanske inte tas emot väl av kunder. Dessutom finns vissa anknytningar som inte kan hanteras i butiken, till exempel anställda, eftersom du inte vill att kassörerna bestämmer vem som är en medarbetare och därmed ge medarbetarbaserade rabatter. Nu kan återförsäljare välja anknytningar som ska döljas i kanalerna. Anknytningar som är markerade som **dölja i kanaler** kan inte visas, läggas till eller tas bort i POS. Men priser och rabatter som är kopplade till anknytningen kan fortfarande tillämpas på produkterna.
 
-    ![Göm anknytningar](./media/Hide-affiliations.png "Dölj anknytningar i kanaler")
+    ![Dölj anknytningar.](./media/Hide-affiliations.png "Dölj anknytningar i kanaler")
     
 - Användare av kundtjänst kan nu enklare söka efter en kund med deras information om förmånskort och navigera till kundens förmånskort och transaktionssidan för lojalitetskort från sidan **kundtjänst**.
 
-    ![Kundtjänst](./media/Customer-service.png "Hitta information om förmåner för kunden")
+    ![Kundtjänst.](./media/Customer-service.png "Hitta information om förmåner för kunden")
     
 - Om ett förmånskort skadas behöver ett nytt kort skapas och befintliga poäng överföras till det nya kortet Ersättningskortet har förenklats i den här versionen. Kunder kan dessutom ge bort några eller alla deras förmånspoäng till familj och vänner. När poängen överförs skapas poängjusteringsposter för varje förmånskort. Ersättningskort och funktionen för överföring av saldo kan nås från sidan **förmånskort**.
 
-    ![Ersätta och flytta över poäng](./media/Replace-and-transfer-points.png "Ersätt förmånskort eller överför saldo")
+    ![Ersätta och överföra poäng.](./media/Replace-and-transfer-points.png "Ersätt förmånskort eller överför saldo")
     
 - Återförsäljare kanske vill fånga effektiviteten hos en viss kanal för att registrera kunder i ett bonusprogram. Registreringskällan för förmånskort sparas nu så att återförsäljare kan köra rapporter med dessa data. Registreringskällan inhämtas automatiskt för alla utfärdade förmånskort från MOPS/CPOS eller näthandelsföretagskanaler. För förmånskort som utfärdats av back office-programmet, kan användaren av kundtjänst välja korrekt kanal.
 - I tidigare versioner kan återförsäljare använda MOPS/CPOS för att lösa in förmånspoäng för kunder i en butik. Men i dessa versioner, eftersom förmånssaldot visas i förmånspoäng, kan kassören inte visa valutabeloppvärdet som kunde tillämpas mot den aktuella transaktionen. Kassören var tvungen att göra valutakonvertering innan betalning med förmånspoäng. I den aktuella versionen när komponentraderna läggs till transaktionen kan kassören se beloppet som förmånspoängen kan täcka för den aktuella transaktionen vilket gör det enkelt att tillämpa hela eller delar av förmånspoängen till transaktionen. Kassören kan dessutom se poäng som löper ut inom de kommande 30 dagarna så att de kan göra merförsäljning eller korsförsäljning för att motivera kunden att spendera de poäng som snart förfaller på den transaktionen.
 
-    ![Poäng som täcks av förmånssaldo](./media/Points-covered-by-loyalty-balance.png "Visa saldo som täcks av lojalitetspoäng")
+    ![Poäng som täcks av bonussaldot.](./media/Points-covered-by-loyalty-balance.png "Visa saldo som täcks av lojalitetspoäng")
 
-    ![Poäng som går ut](./media/Expiring-points.png "Visa utgångna punkter")
+    ![Poäng som löper ut.](./media/Expiring-points.png "Visa utgångna punkter")
 
 - Med 8.1.3 frisläppning vi har aktiverat alternativet ”betald av förmånskort” i kundtjänstkanalen. Om du vill aktivera det här alternativet skapar du en typen för förmånsbetalningsmedel och associerar den till en kundtjänst. 
 
     > [!NOTE]
     > Eftersom lojalitetsbetalningarna är inställda som kortbetalningar du måste välja ett kort från sidan **kortinställningar**. 
 
-    ![Inställning av förmånskort](./media/LoyaltyCardSetup.png "Inställning av förmånskort")
+    ![Inställning av bonuskort.](./media/LoyaltyCardSetup.png "Inställning av förmånskort")
 
     När detta har ställts in kunder lösa in sina förmånspoäng i kundtjänst. Dessutom förbättrar vi användargränssnittet för att visa ”Belopp som täcks av förmånspoäng”, så att kundtjänstanvändare inte behöver gå till en annan skärm för att visa förmånskortets saldo.
 

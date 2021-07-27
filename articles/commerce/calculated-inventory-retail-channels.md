@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 96a600279b7a90d6626d23ee8868de13e9dd0f14
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2b6f9663ed08ab431ffc6ffe3154854250c1b092
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270895"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350484"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beräkna lagertillgänglighet för butikskanaler
 
@@ -105,7 +105,7 @@ I Commerce version 10.0.9 och tidigare använde funktionen **Lagersökning** i k
 
 När kanalsidans beräkning är korrekt konfigurerad och hanterad kan den ge en mer tillförlitlig uppskattning av den aktuella butiksinventeringen, detta eftersom den använder de transaktionsdata som finns i Commerce-kanaldatabasen men som administrationen kanske ännu inte har information om. Om du till exempel använder det befintliga serviceanropet i realtid för lagersökningar i kassan (POS) har administrationen antagligen ingen information om hämtköpförsäljning som har utförts för en produkt. Det lagerbehållningsvärde som administrationen returnerar för den produkten kommer därför troligen att överskrida butikens faktiska lagerbehållning med en enhet. Om du däremot använder beräkning på kanalsidan kan hämtköpförsäljning delas upp i beräkningen och dras av från behållningsvärdet som visas. Även om de värden som används vid beräkningen av både kanalsidan och servicesamtalet i realtid är enbart uppskattningar av lagerbehållning, är värdet som beräkningen på kanalsidan ger mycket mer exakt för den aktuella butiken.
 
-Följ de här stegen om du vill konfigurera kassafunktionen (POS) **Säkerhetskopiera lager** i syfte att använda beräkningslogiken på kanalsidan och stänga av serviceanrop i realtid.
+Om du vill konfigurera funktionen **Lagersökning** i Commerce-administrationen i syfte att använda beräkningslogiken på kanalsidan och stänga av serviceanrop i realtid måste du först aktivera funktionen **Optimerad beräkning för produkttillgänglighet** via arbetsytan **Funktionshantering** i Commerce-administrationen och sedan följa dessa steg.
 
 1. Gå till **Retail and Commerce \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Funktionsprofiler**.
 1. Välj en funktionsprofil.

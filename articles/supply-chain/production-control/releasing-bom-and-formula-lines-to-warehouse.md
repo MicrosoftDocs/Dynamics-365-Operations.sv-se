@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5917d3f6acf6db6b5e3ceee1b399839542ce1f6f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 99047bd30b04ccaaa24edbb2e28d5288ed2872f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811688"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350556"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frisläpp strukturliste- och formelrader till lagerstället
 
@@ -61,7 +61,7 @@ I fråga om batchjobbet **Automatisk frisläppning av strukturliste- och formelr
 
 Följande bild visar en produktionsorder som har två jobb, 10 och 20, som täcker sammansättning och förpackning av tillverkningsordern. Varje jobb konfigureras till att använda en mängd material. I den här bilden är tidsgränsen för frisläppningen som anges av den gröna pilen nedanför tidslinjen lika med antalet dagar som har angetts i villkoret **(LessThanDate())**. Till exempel **(LessThanDate(2))** anger att jobbet ska söka efter ej frisläppta kvantiteter endast inom tidsgräns på två dagar.
 
-![Exempel på en tillverkningsorder med två batchjobb](media/bach-job-setup.PNG)
+![Exempel på en produktions med två batchjobb.](media/bach-job-setup.PNG)
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Frsiläppa material per operationsnummer eller i förhållande till mängden färdiga varor
 
@@ -78,7 +78,7 @@ För att kontrollera de åtgärder som materialet ska frisläppas till, används
 
 Följande bild visar en produktionsorder som använder två åtgärder 10 och 20. I det här exemplet begränsar du frisläppning till operation 10, endast material M9203 kommer att frisläppas.
 
-![Exempel på frisläppning av material per operationsnummer](media/two-operations.PNG)
+![Exempel på frisläppning av material per åtgärdsnummer.](media/two-operations.PNG)
 
 Titta på den här korta YouTube-videon för en snabb demonstration av hur du frisläpper material i förhållande till mängden färdiga varor: [Förbättringar av tillverkningsorderns leveransprocess](https://www.youtube.com/watch?v=Rm3ojAz6Zu0).
 

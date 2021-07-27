@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6fce4e2cb8c5507769533a875e23ccc4531abf51
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2bb1f22c33de52f9a7bc00b450ce131d4d58d200
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020149"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352844"
 ---
 # <a name="tax-calculation-performance-affects-transactions"></a>Resultatet av momsberäkningen påverkar transaktioner
 
@@ -36,7 +36,7 @@ Du kan sedan avgöra om något av följande villkor uppfylls:
 - Flera sessioner bearbetar samma transaktionsskatteberäkning samtidigt.
 - Transaktionen har flera rader och vyerna uppdateras i realtid. Till exempel uppdateras fältet **Beräknat momsbelopp** på sidan **Allmän journal** uppdateras i realtid när en rads fält ändras.
 
-   [![Beräknat momsbeloppsfält på sidan Journalverifikation](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
+   [![Fältet Beräknat momsbelopp sidan Journalverifikation.](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
 
 Om något av dessa villkor uppfylls ska du försena momsberäkningen.
 
@@ -53,11 +53,11 @@ Granska tidslinjen för anropsstacken och ta reda på huruvida följande problem
 
 - Transaktionen gör att systemet slutar svara tills sessionen avslutas. Därför kan momsresultatet inte beräknas i transaktionen. I följande bild visas meddelandet "Sessionen avslutad" som du får.
 
-    [![Meddelande om att sessionen avslutats](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
+    [![Meddelande om att sessionen avslutats.](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
 
 - Metoden **TaxUncommitted** tar mer tid än andra metoder. I följande illustration tar metoden **TaxUncommitted::updateTaxUncommitted()** 43 347,42 sekunder, men andra metoder tar 0,09 sekunder.
 
-    [![Tidslängder för metod](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
+    [![Tidslängder för metod.](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
 
 ## <a name="customizing-and-calling-tax-calculation"></a>Anpassa och anropa momsberäkning
 

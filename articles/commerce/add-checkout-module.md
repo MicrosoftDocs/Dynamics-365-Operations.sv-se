@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b1e86cbe1c2b9247f902a8f5777e73f7a9b37929
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bda264a255a688d64e314d994dc281602c9324cc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797825"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347600"
 ---
 # <a name="checkout-module"></a>Kassamodul
 
@@ -33,7 +33,7 @@ En kassamodul återger data baserat på kundvagn-ID. Detta kundvagn-ID sparas so
 
 Följande bild visar ett exempel på en Fabrikam kassamodul på en kassasida.
 
-![Exempel på en kassamodul](./media/Checkout.PNG)
+![Exempel på en kassamodul.](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Egenskaper för kassamodul
 
@@ -52,13 +52,13 @@ En betalningsmodul visar en ordersammanfattning och innehåller funktioner för 
 
     Följande bild visar ett exempel på en leveransadressmodul på en kassasida.
 
-    ![Exempel på en leveransadressmodul](./media/ecommerce-shippingaddress.PNG)
+    ![Exempel på en leveransadressmodul.](./media/ecommerce-shippingaddress.PNG)
 
 - **Leveransalternativ** – i den här modulen kan en kund välja ett leveranssätt för en order. Mer information om den här modulen finns i [Modul för leveransalternativ](delivery-options-module.md).
 
     Följande bild visar ett exempel på en leveransalternativmodul på en kassasida.
  
-    ![Exempel på en leveransalternativmodul](./media/ecommerce-deliveryoptions.PNG)
+    ![Exempel på en leveransalternativmodul.](./media/ecommerce-deliveryoptions.PNG)
 
 - **Behållare för kassaavsnitt** – den här modulen är en behållare som du kan placera flera moduler i för att skapa ett avsnitt i kassaflödet. Du kan till exempel placera alla betalningsrelaterade moduler i behållaren så att de visas som ett avsnitt. Den här modulen påverkar endast flödets layout.
 
@@ -70,7 +70,7 @@ En betalningsmodul visar en ordersammanfattning och innehåller funktioner för 
 
     Följande bild visar ett exempel på moduler för presentkort, förmånspoäng och betalningsmoduler på en kassasida.
 
-    ![Exempel på moduler för presentkort, förmånspoäng och betalningsmoduler på en kassasida](./media/ecommerce-payments.PNG)
+    ![Exempel på moduler för presentkort, förmånspoäng och betalningsmoduler på en kassasida.](./media/ecommerce-payments.PNG)
 
 - **Kontaktinformation** – i den här modulen kan en kund lägga till eller ändra kontaktinformation (e-postadress) för en order.
 
@@ -80,7 +80,7 @@ En betalningsmodul visar en ordersammanfattning och innehåller funktioner för 
 
     Följande bild visar ett exempel på villkor på en kassasida.
 
-    ![Exempel på villkor på en kassasida](./media/ecommerce-checkout-terms.PNG)
+    ![Exempel på villkor på en kassasida.](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interaktion för skalningsenhet för handel
 

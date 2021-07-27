@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a774a0edf00a17be674b7a1bb07f6494e90554c3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 595de6292b81ca78bf08a66f61850c3b5a537396
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743689"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354401"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Hantera flera härledda mappningar för en enskild modellrot
 
@@ -55,7 +55,7 @@ Om du vill lägga till standard-ER-konfigurationer i din aktuella Finance-instan
 2. På sidan **Lokaliseringskonfiguration** i avsnittet **Konfigurationer** väljer du panelen **Rapporteringskonfiguration**.
 3. På sidan **konfigurationer** i konfigurationsträdet i vänster fönster expanderar du **Fakturamodell**.
 
-    ![Granska de importerade konfigurationerna på sidan Konfigurationer](./media/er-multiple-model-mappings-image1.png)
+    ![Granska de importerade konfigurationerna på sidan Konfigurationer.](./media/er-multiple-model-mappings-image1.png)
 
 4. Granska formatet **Fritextfaktura (Excel)**:
 
@@ -66,7 +66,7 @@ Om du vill lägga till standard-ER-konfigurationer i din aktuella Finance-instan
     
        Det aktuella ER-formatet är konfigurerat till att använda rotdefinitionen **InvoiceCustomer** för **Fakturamodell**. När detta format körs och datakällan **Modell** anropas, används den modellmappning som konfigurerats för rotdefinitionen **InvoiceCustomer** för åtkomst till programdata och ifyllnad av datamodellen.
 
-        ![Granska modelldatakällan på sidan Formatdesigner](./media/er-multiple-model-mappings-image2.png)
+        ![Granska modelldatakällan på sidan Formatdesigner.](./media/er-multiple-model-mappings-image2.png)
 
     6. Stäng sidan **Formatdesigner**.
 
@@ -79,7 +79,7 @@ Om du vill lägga till standard-ER-konfigurationer i din aktuella Finance-instan
         + Modellmappningen **Kundfaktura** konfigureras för rotdefinitionen **InvoiceCustomer** för **Fakturamodellen**. När ER-formatet för **Fritextfaktura (Excel)** körs modellmappningen **Kundfaktura** av den här ER-konfigurationen väljas för åtkomst till programdata och fyll i datamodellen.
         + Modellmappningen **Projektfaktura** konfigureras för rotdefinitionen **InvoiceProject** för **Fakturamodellen**. När ER-formatet för **Projektfaktura (Excel)** körs modellmappningen **Projektfaktura** av den här ER-konfigurationen väljas för åtkomst till programdata och fyll i datamodellen.
 
-        ![Fakturamodellmappning på sidan Modell till mappning av datakälla](./media/er-multiple-model-mappings-image3.png)
+        ![Fakturamodellmappning på mappningssidan för Modell till datakälla.](./media/er-multiple-model-mappings-image3.png)
 
     4. Stäng sidan **modell till mappning av datakälla**.
     5. På snabbfliken **Versioner**, välj **Ta bort** om du vill ta bort alla versioner av denna ER-konfigurationen som är senare än den version 240.175.
@@ -90,7 +90,7 @@ Om du vill lägga till standard-ER-konfigurationer i din aktuella Finance-instan
     2. Klicka på **Designer** i åtgärdsfönstret.
     3. På sidan **Modell till mappning av datakälla** observera att den aktuella ER-modellmappningskonfigurationen innehåller modellmappningen **InvoiceProject** och att denna modellmappning är konfigurerad för rotdefinitionen **InvoiceProject** för **fakturamodell**. När ER-formatet för **Projektfaktura (Excel)** körs, välj modellmappningen **InvoiceProject** för denna ER-konfigurationen för åtkomst till programdata och fyll i datamodellen.
 
-        ![Fakturamodellmappning för projekt på sidan Modell till mappning av datakälla](./media/er-multiple-model-mappings-image4.png)
+        ![Fakturamodellmappning för projekt på mappningssidan Modell till datakälla.](./media/er-multiple-model-mappings-image4.png)
 
     4. Stäng sidan **modell till mappning av datakälla**.
     5. På snabbfliken **Versioner**, välj **Ta bort** om du vill ta bort alla versioner av denna ER-konfigurationen som är senare än den version 226.35.
@@ -115,7 +115,7 @@ I det här avsnittet beskrivs hur du anpassar [anpassar](er-quick-start3-customi
 
 7. I åtgärdsfönstret, välj **Designer** för att granska modellmappningarna för den här konfigurationen.
 
-    ![Granska fakturamodellmappning för projekt på sidan Modell till mappning av datakälla](./media/er-multiple-model-mappings-image5.png)
+    ![Granska fakturamodellmappning för projekt på mappningssidan Modell till datakälla.](./media/er-multiple-model-mappings-image5.png)
 
     > [!TIP]
     > Du kan nu öppna någon av ER-modellmappningskomponenterna i den här ER-konfigurationen i designern för att konfigurera din anpassade logik. Mer information finns i [Anpassa modellmappningskonfigurationen](er-quick-start3-customize-report.md#customize-the-model-mapping-configuration).
@@ -126,7 +126,7 @@ Du har nu konfigurationer **Fakturamodellmappning** och **Fakturamodellmappning 
  
 > Det finns fler än en modellmappning för '\<model name\> (\<root descriptor\>)' datamodellen i konfigurationerna \<configuration names separated by commas\>. Ställ in en av konfigurationerna som standard.
 
-![Öppna formatet för redigering på sidan Konfigurationer](./media/er-multiple-model-mappings-image6.gif)
+![Öppna formatet för redigering på sidan Konfigurationer.](./media/er-multiple-model-mappings-image6.gif)
 
 ### <a name="customize-the-project-invoice-model-mapping-rdp-configuration"></a>Anpassa konfigurationen av Fakturamodellmappning för projekt (RDP)
 
@@ -138,7 +138,7 @@ Du har nu konfigurationer **Fakturamodellmappning** och **Fakturamodellmappning 
 6. För konfigurationen av **Fakturamodellmappning för projekt (Litware)** som för närvarande valts i konfigurationsträdet, ange alternativet **Kör utkast** till **Ja**.
 7. I åtgärdsfönstret, välj **Designer** för att granska modellmappningarna för den här konfigurationen.
 
-    ![Granska den anpassade fakturamodellmappning för projekt på sidan Modell till mappning av datakälla](./media/er-multiple-model-mappings-image7.png)
+    ![Granska den anpassade fakturamodellmappningen för projekt på mappningssidan Modell till datakälla.](./media/er-multiple-model-mappings-image7.png)
 
 8. Stäng sidan **modell till mappning av datakälla**.
 
@@ -149,7 +149,7 @@ Du har nu konfigurationer **Fakturamodellmappning**, **Fakturamodellmappning fö
 1. På sidan **konfigurationer** i konfigurationsträdet i vänster fönster väljer du **Fakturamodellmappning Litware**.
 2. Ange alternativet **standard för modellmappning** till **Ja**.
 
-    ![Ange modellmappningen som standardmodellmappning på sidan Konfigurationer](./media/er-multiple-model-mappings-image8.png)
+    ![Ange modellmappningen som standardmodellmappning på sidan Konfigurationer.](./media/er-multiple-model-mappings-image8.png)
 
     På grund av den här inställningen används modellmappningen för **kundfakturakopia** används när du kör **fritextfaktura (Excel)** eller när du redigerar eller validerar den. Modellmappning **Kundfaktura** från konfigurationen **Fakturamodellmappning** ignoreras.
 
@@ -167,7 +167,7 @@ Du har nu konfigurationer **Fakturamodellmappning**, **Fakturamodellmappning fö
 5. På sidan **Modell till mappning av datakälla** välj **Redigera** om du vill göra sidan redigerbar, efter behov.
 6. Markera modellmappningen **Projektfakturakopia** och markera kryssrutan **Är borttagen** för det.
 
-    ![Ställa in modellmappningen som praktiskt taget borttagen på sidan för Modell till mappning av datakälla](./media/er-multiple-model-mappings-image9.png)
+    ![Ställa in modellmappningen som praktiskt taget borttagen på mappningssidan för Modell till datakälla.](./media/er-multiple-model-mappings-image9.png)
 
     På grund av denna inställning behandlas konfigurationen för **mappning av fakturamodell (Litware)** som om den inte har någon modellmappning för rotdefinitionen **InvoiceProject**. Modelmappningen **InvoiceProject Copy** utfärdas som standard. Den här konfigurationen, **Fakturamodellmappning för projekt (Litware)**, som innehåller denna modellmappning är markerad som standardmodellmappningar. Eftersom den är markerad som standard har den högre prioritet än modellmappningen **InvoiceProject** från konfigurationen **Fakturamodellmappning för projekt (RDP)**.
 

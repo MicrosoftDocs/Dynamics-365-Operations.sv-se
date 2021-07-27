@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 6f74602cafe3f0848a9e03f17300ca6242fe1545
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 53d01756d803a0ebc9eb366deded4bf3bef3b1f6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893990"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351756"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Hämta ER-konfigurationer från den globala databasen med konfigurationstjänster
 
@@ -40,7 +40,7 @@ I det här avsnittet beskrivs hur du hämtar [konfigurationer av elektronisk rap
 3. I avsnittet **Konfigurationsleverantörer** väljer du panelen **Microsoft**.
 3. I panelen **Microsoft** väljer du **Databaser**.
 
-    ![Arbetsytan för elektronisk rapportering](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![Arbetsytan för elektronisk rapportering.](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. På sidan **Konfigurationsdatabaser** väljer du i rutnätet den befintliga databasen för **Global**-typen. Om denna databas inte visas i rutnätet, följ då nedanstående steg:
 
@@ -52,7 +52,7 @@ I det här avsnittet beskrivs hur du hämtar [konfigurationer av elektronisk rap
 
 5. Välj **Öppna** om du vill visa listan över ER-konfigurationer för den valda databasen.
 
-    ![Sidan Konfigurationsdatabas](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![Sidan Konfigurationsdatabaser.](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## <a name="import-a-single-configuration"></a>Importera en enda konfiguration
 
@@ -63,7 +63,7 @@ I det här avsnittet beskrivs hur du hämtar [konfigurationer av elektronisk rap
     > [!NOTE]
     > Knappen **Importera** är inte tillgänglig för ER-konfigurationsversioner som redan finns i den aktuella Finance-instansen.
 
-    ![Sidan Konfigurationsdatabas](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Sidan Konfigurationsdatabas.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Importera filtrerade konfigurationer
 
@@ -77,7 +77,7 @@ I det här avsnittet beskrivs hur du hämtar [konfigurationer av elektronisk rap
 4. På snabbfliken **konfigurationer** välj **Importera** om du vill hämta de filtrerade konfigurationerna från den globala databasen till den aktuella instansen.
 5. På snabbfliken **konfigurationer** välj **Återställ filter** för att rensa de angivna villkoren för urval.
 
-    ![Sidan Konfigurationsdatabas](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Sidan Konfigurationsdatabas.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > Beroende på ER-inställningarna valideras konfigurationerna när de har importerats. Du kan komma att meddelas om eventuella inkonsekvensproblem som upptäcks. Innan du kan använda den importerade konfigurationsversionen måste du lösa problemen. Mer information finns i listan över relaterade resurser för detta avsnitt.

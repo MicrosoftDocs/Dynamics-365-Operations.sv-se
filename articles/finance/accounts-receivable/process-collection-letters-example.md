@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: fb2651644efd2cadfccb91e48c34dfddc8383e1f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e813b4f0c6408a8046fa8203007a0a356ca2c794
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021426"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347818"
 ---
 # <a name="process-collection-letters-example"></a>Exempel på bearbeta kravbrev
 
@@ -40,7 +40,7 @@ När du avslutar följer du dessa steg.
 
 I följande illustration visas den information som finns i registret på det sätt som den skulle visas på sidan **Kravbrev**. 
 
-[![Ställ in en kravbrevsserie](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
+[![Ställa in en kravbrevsserie.](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
 
  Nu måste du ställa in de två parametrar som krävs för det här exemplet.
 
@@ -49,7 +49,7 @@ I följande illustration visas den information som finns i registret på det sä
     1. På fliken **Inkasso**, ange alternativet **Ignorera betalningar och kreditnotor vid beräkning av kravbrevskod** till **Ja**.
     2. Se till att fältet **skapa kravbrev per** anges till **Kund**.
 
-    [![Ställa in kundreskontraparametrar för kreditsamlingar](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
+    [![Ställa in kundreskontraparametrar för inkasso.](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
 
 3. Gå till **Kundreskontra \> Fakturor \> Alla fritextfakturor**, välj **Ny** och gör följande steg:
 
@@ -74,7 +74,7 @@ I följande illustration visas den information som finns i registret på det sä
 5. Upprepa steg 4, men ange **-200,00** i fältet **Enhetspris**.
 6. Gå till **Kundreskontra \> Kunder \> Alla kunder** och välj kund **US-045**. I åtgärdsfönstret väljer du sedan **Transaktioner \> Transaktioner** för att granska de kundtransaktioner som du publicerade tidigare.
 
-    [![Granska bokförda kundtransaktioner](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
+    [![Granska bokförda kundtransaktioner.](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
 
     Du måste nu skapa kravbrev för kunden US-045.
 
@@ -93,7 +93,7 @@ I följande illustration visas den information som finns i registret på det sä
 
     1. Observera att kravbrevkoden på både rubriken och transaktionsraderna är **Kravbrev 1**, eftersom det här kravbrevet är det första kravbrevet i sekvensen. (Om du vill visa transaktionsraderna måste du kanske välja snabbflik **transaktioner**.)
 
-   [![Kontrollera att samma kravbrevskod visas på huvudet och på raderna](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
+   [![Kontrollera att samma kravbrevskod visas i sidhuvudet och på raderna.](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
 
     2. Klicka på **Bokföra** i åtgärdsfönstret.
     3. I fältet **Bokföringsdatum**, ange **1/19/2021**.
@@ -115,7 +115,7 @@ I följande illustration visas den information som finns i registret på det sä
 
     1. Lägg märke till att kravbrevskoden i rubriken **Kravbrev 1**. Koden på transaktionsraderna är dock **Kravbrev 2**.
 
-   [![Kontrollerar att olika kravbrevskoder visas på huvudet och på raderna](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
+   [![Kontrollerar att olika kravbrevskoder visas i sidhuvudet och på raderna.](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
 
   Koderna skiljer sig åt eftersom alternativet **Ignorera betalningar och kreditnotor vid beräkning av kravbrevskod** är **Ja**.
 
@@ -123,7 +123,7 @@ I följande illustration visas den information som finns i registret på det sä
 
 11. Gå till **Kredit och inkasso \> Inställningar \> Parametrar för kundreskontra** och fliken **Inkasso**, ange **Ignorera betalningar och kreditnotor vid beräkning av kravbrevskod** till **Nej**.
 
-    [![Ställa in alternativet ignorera betalningar och kreditnotor när du beräknar kravbrevskod till Nej](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
+    [![Ställa in alternativet Ignorera betalningar och kreditnotor när du beräknar alternativet kravbrevskod som Nej.](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
 
     Du måste nu skapa kravbrev igen för kunden US-045.
 
@@ -140,6 +140,6 @@ I följande illustration visas den information som finns i registret på det sä
 
 13. Gå till **Kredit och inkasso \> Kravbrev \> Granska och bearbeta kravbrev** och märker att kravbrevkoden på både rubriken och transaktionsraderna är **Kravbrev 2**.
 
-    [![Visa igen att samma kravbrevskod visas på huvudet och på raderna](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
+    [![Visar återigen att samma kravbrevskod visas i sidhuvudet och på raderna.](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
 
     Samma kod visas på båda platserna eftersom alternativet **Ignorera betalningar och kreditnotor vid beräkning av kravbrevskod** anges **Nej**.

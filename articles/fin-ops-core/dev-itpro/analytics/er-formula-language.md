@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 1e48c02ecc9d69cf14ed257aae56081925cedfe9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6223996"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355404"
 ---
 # <a name="electronic-reporting-formula-language"></a>Formelspråk i elektronisk rapportering
 
@@ -117,15 +117,15 @@ När ett uttryck refererar till en strukturerad datakälla kan du använda sökv
 
 Om sökvägen till en strukturerad datakälla börjar med ett "at"-tecken (@) är det en relativ sökväg. "At"-tecknet visas i stället för den återstående delen av den absoluta sökvägen till den hierarkiska trädstruktur som används. Illustrationen nedan visar ett exempel. Här anger den absoluta sökvägen `Ledger.'accountingCurrency()'` att redovisningsvalutavärdet från datakällan **redovisning** anges i fältet **AccountingCurrency** i datamodellen.
 
-![Exempel på en absolut sökväg på sidan för ER-modellmappning designer](./media/ER-FormulaLanguage-AbsolutePath.png)
+![Exempel på en absolut sökväg på sidan för ER-modellmappningsdesigner.](./media/ER-FormulaLanguage-AbsolutePath.png)
 
 Exemplet i följande illustration visar hur en relativ sökväg används. Den relativa sökvägen `@.AccountNum` anger att fältet **AccountNum** för **Intrastat**-datakällan (som visas en nivå ovanför fältet **AccountNum** i datamodellens hierarkiska träd) används för att ange kund- eller leverantörskontonumret i datamodellens **AccountNum**-fält.
 
-![Exempel på en relativ sökväg på sidan för ER-modellmappning designer](./media/ER-FormulaLanguage-RelativePath1.png)
+![Exempel på en relativ sökväg på sidan för ER-modellmappningsdesigner.](./media/ER-FormulaLanguage-RelativePath1.png)
 
 Den återstående delen av den absoluta sökvägen visas också i [ER-formelredigeraren](general-electronic-reporting-formula-designer.md).
 
-![Resterande del av den absoluta sökvägen på sidan ER formeldesigner](./media/ER-FormulaLanguage-RelativePath2.png)
+![Resterande del av den absoluta sökvägen på sidan för ER-formeldesigner.](./media/ER-FormulaLanguage-RelativePath2.png)
 
 Mer information finns i [Använd en relativ sökväg i databindningar för ER-modeller och -format](relative-path-data-bindings-er-models-format.md).
 

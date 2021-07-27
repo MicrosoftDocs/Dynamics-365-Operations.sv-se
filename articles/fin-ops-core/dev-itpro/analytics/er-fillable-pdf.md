@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7c1c21015a172d7ebaa3577d5d0e55c254ef871e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 63994a4583e27b0197b9fc42c622f6c0e42c84ee
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753298"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355428"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Utforma ER-konfigurationer för att fylla i PDF-mallar
 
@@ -115,11 +115,11 @@ Därefter ska du i den konfiguration av ER-format som du har skapat utforma det 
 
 Följande bild visar PDF-mallen för rapportens första sida.
 
-![Mall 1](media/rcs-ger-filloutpdf-template1.png)
+![Mall 1.](media/rcs-ger-filloutpdf-template1.png)
 
 Följande bild visar PDF-mallen för rapportens andra sidor.
 
-![Mall 2](media/rcs-ger-filloutpdf-template2.png)
+![Mall 2.](media/rcs-ger-filloutpdf-template2.png)
 
 1. Välj **Designer** på sidan **Konfigurationer**.
 2. Välj **Lägg till rot**.
@@ -146,7 +146,7 @@ Följande bild visar PDF-mallen för rapportens andra sidor.
 
 12. Välj **OK**.
 
-    ![Importera från PDF dialogrutan](media/rcs-ger-filloutpdf-importtemplate.png)
+    ![Importera från PDF-dialogrutan.](media/rcs-ger-filloutpdf-importtemplate.png)
 
 13. Expandera **Utdata** i trädet.
 
@@ -176,7 +176,7 @@ Följande bild visar PDF-mallen för rapportens andra sidor.
 
     Lägg märke till att det importerade PDF-dokumentet är kopplat till det redigerade ER-formatet.
 
-    ![Förhandsgranskning av PDF-bilaga](media/rcs-ger-filloutpdf-attachedtemplate.png)
+    ![Förhandsgranskning av PDF-bilaga.](media/rcs-ger-filloutpdf-attachedtemplate.png)
 
 19. Fortsätt att utforma det här formatet genom att importera den andra PDF-mallen, lägga till nödvändiga bindningar till data källor och så vidare.
 20. Välj **Spara**.
@@ -215,7 +215,7 @@ Nu ska du importera det exempel på ER-format som du tidigare hämtade för att 
 1. Välj fliken **Formatdesigner** välj fliken **Mappning**.
 2. I trädet, expandera **Sidindelning \> Sidor**.
 
-    ![Formeldesignersida där modellträdet är expanderat](media/rcs-ger-filloutpdf-reviewformat.png)
+    ![Formeldesignersida där modellträdet visas.](media/rcs-ger-filloutpdf-reviewformat.png)
 
     Observera följande information:
 
@@ -238,7 +238,7 @@ Nu ska du importera det exempel på ER-format som du tidigare hämtade för att 
 
     Oservera att attributet **Namn** av detta formatelement definieras som **korrigering 1**. Observera också att uttrycket **Namn** för formatelementet definieras som **Paging.FldName("Correction",\@.Number)**.
 
-![Formatdesigner där en mappning har valts](media/rcs-ger-filloutpdf-reviewformat2.png)
+![Formatdesigner där en mappning har valts.](media/rcs-ger-filloutpdf-reviewformat2.png)
 
 Observera att formatelementet **fält** används för att fylla i ett enskilt fält i ett ifyllbart PDF-dokument som definieras som en mall för det överordnade **PDF-fil** formatet. Bindningen för **PDF-fil** formatet eller det inkapslade elementet, om det innehåller några kapslade element, anger värdet som anges i motsvarande PDF-fält. Olika egenskaper för formatelementet **fält** kan användas för att ange vilket PDF-fält som fylls i av ett enskilt formatelement:
 
@@ -275,7 +275,7 @@ Nu ska du läsa in ER-format **Intrastat (import från Excel)**. Det här format
 
     När alternativet **standard för modellmappning** anges till **Ja**, tilldelas det importerade ER-formatet **Intrastat (importera från Excel)** som standarddatakälla för formatkonfigurationen **Intrastat rappport (PDF)**. När formatkonfigurationen för **Intrastat-rapport (PDF**) körs, kommer innehållet i den Excel-arbetsbok som tolkas av formatet **Intrastat (import från Excel)** att simulera utländska handelstransaktioner som måste rapporteras. Illustrationen nedan visar ett exempel på en Excel-arbetsbok.
 
-    ![Excel-arbetsbok med exempeldata](media/rcs-ger-filloutpdf-excelworkbook.png)
+    ![Excel-arbetsbok med exempeldata.](media/rcs-ger-filloutpdf-excelworkbook.png)
 
 ### <a name="run-the-format-configuration"></a>Kör formatkonfigurationen
 
@@ -289,11 +289,11 @@ Nu ska du läsa in ER-format **Intrastat (import från Excel)**. Det här format
 
 Den följande bilden visar ett exempel på första sidan i den rapport som genereras.
 
-![Första sidan i den genererade rapporten](media/rcs-ger-filloutpdf-generatedreport.png)
+![Första sidan i den genererade rapporten.](media/rcs-ger-filloutpdf-generatedreport.png)
 
 Den följande bilden visar ett exempel på en annan sida i den rapport som genereras.
 
-![Annan sida i den genererade rapporten](media/rcs-ger-filloutpdf-generatedreport2.png)
+![Annan sida i den genererade rapporten.](media/rcs-ger-filloutpdf-generatedreport2.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

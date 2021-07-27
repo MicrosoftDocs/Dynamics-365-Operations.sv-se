@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8962cbbc8f413093eef0fb3783aa6ced22f7bc2d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6e16c0bcd9521f822d0f92681e2a545439b78acb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839569"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354867"
 ---
 # <a name="manually-created-work-orders"></a>Manuellt skapade arbetsorder
 
@@ -111,7 +111,7 @@ Du kan skapa en arbetsorder som är relaterad till en befintlig arbetsorder. Den
 
 I bilden nedan visas ett exempel på sidan dialogrutan **Skapa relaterad arbetsorder**.
 
-![Figur 1](media/03-work-orders.png)
+![Figur 1.](media/03-work-orders.png)
 
 >[!NOTE]
 >Om du har angett en relaterad arbetsordermask i **Parametrar för tillgångshantering** fliken  > **Arbetsorder** > fältet **Relaterad arbetsordermask** skapas arbetsorder-ID enligt inställningen för masken. Om ingen relaterad arbetsordermask ställs in används nästa tillgängliga arbetsorder-ID för relaterade arbetsorder.
@@ -137,7 +137,7 @@ Det är möjligt att snabbt skapa en ny arbetsorder utifrån en befintlig arbets
 
 Illustrationen nedan visar ett exempel på dialogrutan **Kopiera arbetsorder**.
 
-![Figur 2](media/04-work-orders.png)
+![Figur 2.](media/04-work-orders.png)
 
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Skapa en arbetsorder baserad på en underhållsbegäran
@@ -157,7 +157,7 @@ Illustrationen nedan visar ett exempel på dialogrutan **Kopiera arbetsorder**.
 
 Illustrationen nedan visar ett exempel på dialogrutan **Skapa arbetsorder**.
 
-![Figur 3](media/05-work-orders.png)
+![Figur 3.](media/05-work-orders.png)
 
 
 >[!NOTE]

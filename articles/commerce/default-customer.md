@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ecdf4e5618d3397527bf83977857fbe3f8dbb265
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de378edbd7d13626302c7129c605b1837ffb579e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799189"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349612"
 ---
 # <a name="create-a-default-customer"></a>Skapa en standardskund
 
@@ -47,7 +47,7 @@ Gör så här om du vill skapa en kundgrupp.
 
 I följande bild visas flera konfigurerade kundgrupper.
 
-![Kundgrupper](media/customer-groups.png)
+![Kundgrupper.](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>Skapa en kundadressbok
 
@@ -63,7 +63,7 @@ Följ dessa steg för att skapa en kundadressbok.
 
 I bilden nedan visas ett exempel på adressbok.
 
-![Adressbok](media/address-book.png)
+![Adressbok.](media/address-book.png)
 
 ## <a name="create-a-default-customer&quot;></a>Skapa en standardskund
 
@@ -86,11 +86,11 @@ Gör så här om du vill skapa en standardkund.
 
 I bilden nedan visas ett exempel på skapande av kund.
 
-![Skapa en standardkund](media/default-customer-creation.png)
+![Skapa en standardkund.](media/default-customer-creation.png)
 
 Följande bild visar en standardkundkonfiguration.
 
-![Exempel på kundkonfiguration](media/default-customer-configuration1.png)
+![Exempel på kundkonfiguration.](media/default-customer-configuration1.png)
 
 De flesta standardvärdena i informationsskärmen kund kan vara kvar, men två värden ska ändras.
 
@@ -100,13 +100,13 @@ De flesta standardvärdena i informationsskärmen kund kan vara kvar, men två v
 
 I bilden nedan visas ett exempel på skapande av kundkonfiguration.
 
-![Exempel på kundkonfiguration](media/default-customer-configuration2.png)
+![Exempel på kundkonfiguration.](media/default-customer-configuration2.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över kanaler](channels-overview.md)
 
-[Förutsättningar för att ställa in kanaler](channels-prerequisites.md)
+[Förutsättningar för kanalinställningar](channels-prerequisites.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1fa55ab83562983273768895db61032ec7199fa6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 017cdc76368ae4f80131471a289aa03ab06c99bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793955"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350218"
 ---
 # <a name="work-with-fragments"></a>Arbeta med fragment 
 
@@ -62,7 +62,7 @@ Om du vill konvertera en tidigare konfigurerad modul till ett återanvändbart f
 1. I dialogrutan **Spara som fragment** anger du namnet för fragmentet.
 1. Välj **OK** om du vill spara modulens konfiguration som ett fragment som kan läggas till på andra sidor.
 <!-- The following image shows how to save a module configuration as a fragment.-->
-<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
+<!--![A screen capture of how to save a module configuration as a fragment.](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>Skapa ett nytt fragment
 
@@ -73,7 +73,7 @@ För att skapa ett nytt fragment i Commerce webbplatsskaparen.
 1. Välj en modultyp för fragmentet.
 
 <!-- The following image shows where to create a new fragment.-->
-<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
+<!-- ![A screen capture of where to create a new fragment.](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Genom att välja en generisk behållarmodultyp får du den mest flexibla när du måste uppdatera och konfigurera fragmentet senare.
 
@@ -88,14 +88,14 @@ För att lägga till ett fragment till en sida i Commerce webbplatsskaparen.
 1. I dispositionsfönstret till vänster eller direkt i visuell sidskapare, välj en behållare eller fack som underordnade moduler kan läggas till.
 1. Välj tre punkter (**...**) bredvid namnet på behållaren eller platsen.  Om du vill kan du även välja plustecknet (**+**) om du använder visuell sidskapare.  
 1. Välj **Lägg till fragment**.
-    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container.](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Om en behållare eller en plats inte stöder nya underordnade moduler är alternativet **Lägg till fragment** inte tillgängligt.
     
 1. Sök efter och markera ett fragment som ska läggas till i dialogrutan **Välj fragment**. Om det inte finns några tillgängliga fragment kanske du först måste skapa ett fragment från en modultyp som den valda behållaren eller platsen stöder.
 1. Välj önskat fragment om du vill lägga till behållaren eller platsen på sidan.
-<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
+<!--    ![A screen capture of the fragment picker modal window.](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > Modulerna som är tillåtna i en behållare eller plats definieras av sidans mall eller modulernas egna definitioner.

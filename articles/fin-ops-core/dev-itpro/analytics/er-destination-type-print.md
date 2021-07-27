@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7749a458020de664d00e81ccf0e480ae459da617
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: b79c93c4920d7f40e88aa7d463961128ea9e83c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894014"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347934"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Skrivardestination
 
@@ -39,7 +39,7 @@ Om du vill göra **skrivarmålet** tillgängligt i den aktuella instansen av Mic
 1. Konvertera utgående dokument för elektronisk rapportering från Microsoft Office-format till PDF.
 2. Dokumentflödesagenten som mål för utgående dokument vid elektronisk rapportering
 
-[![Aktivera funktionen för ER-skrivarmål i funktionshantering](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
+[![Aktivera funktionen för ER-skrivarmål i funktionshanteringen.](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
 ### <a name="applicability"></a>Tillämplighet
 
@@ -55,7 +55,7 @@ Om du vill göra **skrivarmålet** tillgängligt i den aktuella instansen av Mic
 2. I fältet **Skrivarnamn** välj önskad nätverksskrivare.
 3. Ange alternativet **Spara i utskriftsarkivet?** till **Ja** att de genererade utdata ska sparas i utskriftsarkivet så att de blir tillgängliga för utskriften. Om du vill komma åt arkiverade utdata senare **Organisationsadministration** \> **Förfrågningar och rapporter** \> **Rapportarkiv**.
 
-[![Använd skrivarmål](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
+[![Använda skrivarmål.](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
 
 > [!NOTE]
 > Alternativet **konvertera till PDF** måste inte vara aktiverat när du konfigurerar **skrivarmålet**. PDF-konverteringen för utskrift sker även om alternativet är inaktiverat.

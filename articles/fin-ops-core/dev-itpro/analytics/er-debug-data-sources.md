@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: fe3e6a4223fc8b26e523a982a2e1752a34b370de
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 86551cfeda1e4204c91b0534cda563012191e25c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753682"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348126"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Felsöka datakällor i ett kört ER-format för analys av dataflöde och omvandling
 
@@ -64,7 +64,7 @@ Följande inställningar för ER-format är för närvarande inte tillgängliga 
 
 1. Följ instruktionerna i [Bilaga 3](#appendix3) till det här avsnittet för att bearbeta leverantörsbetalningar.
 
-    ![Bearbetning av leverantörsbetalningar pågår](./media/er-data-debugger-process-payment.png)
+    ![Bearbetning av leverantörsbetalningar pågår.](./media/er-data-debugger-process-payment.png)
 
 2. Hämta och spara zip-filen på din lokala dator.
 3. Packa upp betalningsfilen **ISO20022 Credit transfer.xml** från zip-filen.
@@ -72,7 +72,7 @@ Följande inställningar för ER-format är för närvarande inte tillgängliga 
 
     I betalningsfilen finns IBAN-koden (International Bank Account Number) för leverantörens bankkonto utan blanksteg. Därför skiljer det sig från värdet som [angavs](#enteredIBANcode) på sidan **Bankkonton**.
 
-    ![IBAN-kod utan blanksteg](./media/er-data-debugger-payment-file.png)
+    ![IBAN-kod utan blanksteg.](./media/er-data-debugger-payment-file.png)
 
     Du kan använda felsökaren för ER-datakälla om du vill veta vilken del av ER-lösningen som används för att ta bort blanksteg i IBAN-koden.
 
@@ -85,14 +85,14 @@ Följande inställningar för ER-format är för närvarande inte tillgängliga 
     > [!NOTE]
     > Den här parametern är specifik för användaren och företaget.
 
-    ![Dialogruta Användarparametrar](./media/er-data-debugger-user-parameters.png)
+    ![Dialogrutan Användarparametrar.](./media/er-data-debugger-user-parameters.png)
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>Bearbeta en leverantörsbetalning för felsökning
 
 1. Följ instruktionerna i [Bilaga 3](#appendix3) till det här avsnittet för att bearbeta leverantörsbetalningar.
 2. I meddelanderutan väljer du **Ja** för att bekräfta att du vill avbryta bearbetning av leverantörsbetalningar och i stället starta felsökning av datakällor på sidan **Felsökning av datakällor**.
 
-    ![Ruta för bekräftelsemeddelande](./media/er-data-debugger-start-debugging.png)
+    ![Ruta för bekräftelsemeddelande.](./media/er-data-debugger-start-debugging.png)
 
 ## <a name="debug-data-sources-that-are-used-in-payment-processing"></a>Felsökning av datakällor som används vid betalningsbearbetning
 
@@ -115,7 +115,7 @@ Följande inställningar för ER-format är för närvarande inte tillgängliga 
 
 7. Välj **Expandera alla**.
 
-    ![Värdet i IBAN-fältet i modellmappningen](./media/er-data-debugger-debugging-model-mapping.png)
+    ![Värdet i IBAN-fältet i modellmappningen.](./media/er-data-debugger-debugging-model-mapping.png)
 
     Som du ser är modellmappningen inte ansvarig för avkortningar, eftersom IBAN-koden som den returnerar för leverantörens bankkonto innehåller blanksteg. Därför måste du fortsätta felsökningen av datakällan.
 
@@ -130,7 +130,7 @@ Följande inställningar för ER-format är för närvarande inte tillgängliga 
 7. Välj **Hämta värde**.
 8. Välj **Expandera alla**.
 
-    ![Värdet i IBAN-fältet i formatmappningen](./media/er-data-debugger-debugging-format-mapping.png)
+    ![Värdet i IBAN-fältet i formatmappningen.](./media/er-data-debugger-debugging-format-mapping.png)
 
     Som du ser är datakällorna för formatmappningen inte ansvariga för avkortningar, eftersom IBAN-koden som de returnerar för leverantörens bankkonto innehåller blanksteg. Därför måste du fortsätta felsökningen av datakällan.
 
@@ -142,7 +142,7 @@ Följande inställningar för ER-format är för närvarande inte tillgängliga 
 4. Expandera formatelementen för att välja **ISO20022CTReports** \> **XMLHeader** \> **Document** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** och välj sedan **Hämta värde**.
 5. Välj **Expandera alla**.
 
-    ![Värdet i IBAN-fältet i formatet](./media/er-data-debugger-debugging-format.png)
+    ![Värdet i IBAN-fältet i formatet.](./media/er-data-debugger-debugging-format.png)
 
    Som du ser är formatbindningen inte ansvarig för avkortningar, eftersom IBAN-koden som den returnerar för leverantörens bankkonto innehåller blanksteg. Därför konfigureras elementet **BankIBAN** att använda formatomvandling som avkortar blanksteg.
 
@@ -154,13 +154,13 @@ Följande inställningar för ER-format är för närvarande inte tillgängliga 
 2. På sidan **Konfigurationer** väljer du **Betalningsmodell** \> **ISO20022-kreditöverföring**.
 3. Välj **Designer** och expandera sedan elementen för att välja **Document** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN**.
 
-    ![BankIBAN-element på sidan Formatdesigner](./media/er-data-debugger-referred-transformation.png)
+    ![BankIBAN-element på sidan Formatdesigner.](./media/er-data-debugger-referred-transformation.png)
 
     Som du ser är elementet **BankIBAN** konfigurerat att använda **ta bort icke alfanumerisk** omvandling.
 
 4. Välj fliken **Omvandlingar**.
 
-    ![Fliken omvandlingar för BankIBAN-elementet](./media/er-data-debugger-transformation.png)
+    ![Fliken Omvandlingar för BankIBAN-elementet.](./media/er-data-debugger-transformation.png)
 
     Som du ser konfigureras omvandlingen **ta bort icke alfanumeriska** att använda ett uttryck som avkortar blanksteg från den angivna textsträngen.
 
@@ -168,7 +168,7 @@ Följande inställningar för ER-format är för närvarande inte tillgängliga 
 
 När du konfigurerar en utkastversion av ER-format som kan köras direkt från åtgärdsdesignern, kan du öppna felsökningen för datakälla genom att välja **Starta felsökning** i åtgärdsfönstret.
 
-![Knappen Starta felsökning på sidan formatdesigner](./media/er-data-debugger-run-from-designer.png)
+![Knappen Starta felsökning på sidan Formatdesigner.](./media/er-data-debugger-run-from-designer.png)
 
 Formatmappning och formatkomponenter för ER-formatet som redigeras är tillgängliga för felsökning.
 
@@ -176,7 +176,7 @@ Formatmappning och formatkomponenter för ER-formatet som redigeras är tillgän
 
 När du konfigurerar en ER-modellmappning som kan köras från sidan **Modellmappning** kan du öppna felsökning för datakälla genom att välja **Starta felsökning** i åtgärdsfönstret.
 
-![Knappen Starta felsökning på sidan modellmappningsdesigner](./media/er-data-debugger-run-from-designer-mapping.png)
+![Knappen Starta felsökning på sidan Modellmappningsdesigner.](./media/er-data-debugger-run-from-designer-mapping.png)
 
 Modellmappningskomponenten i ER-mappningen som redigeras är tillgänglig för felsökning.
 
@@ -186,7 +186,7 @@ Modellmappningskomponenten i ER-mappningen som redigeras är tillgänglig för f
 
 Om du vill använda en ER-lösning för att generera en elektronisk betalningsfil för en leverantörsbetalning som bearbetas, kan du [hämta](download-electronic-reporting-configuration-lcs.md) ER-betalningsformatet **ISO20022-kreditöverföring** som finns i det delade resursbiblioteket i Microsoft Dynamics Lifecycle Services (LCS) eller i den globala databasen.
 
-![Importera ER-betalningsformatet på sidan konfigurationsdatabas](./media/er-data-debugger-import-from-repo.png)
+![Importera ER-betalningsformatet på sidan Konfigurationsdatabas.](./media/er-data-debugger-import-from-repo.png)
 
 Förutom det valda ER-formatet måste följande [konfigurationer](general-electronic-reporting.md#Configuration) automatiskt importeras till din Microsoft Dynamics 365 Finance-instans som del av ER-lösningen **ISO20022-kreditöverföring**:
 
@@ -197,7 +197,7 @@ Förutom det valda ER-formatet måste följande [konfigurationer](general-electr
 
 Du hittar dessa konfigurationer på sidan **Konfigurationer** i ER-ramverket (**Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**).
 
-![Importerade konfigurationer på sidan Konfigurationer](./media/er-data-debugger-configurations.png)
+![Importerade konfigurationer på sidan Konfigurationer.](./media/er-data-debugger-configurations.png)
 
 Om några av de tidigare listade konfigurationerna saknas i konfigurationsträdet måste du hämta dem manuellt från LCS delade resursbibliotek på samma sätt som du har hämtat ER-betalningsformatet **ISO20022 kreditöverföring**.
 
@@ -213,7 +213,7 @@ Om några av de tidigare listade konfigurationerna saknas i konfigurationsträde
 
     Observera att fältet **Betalningar** i datamodellen är knutet till datakällan **\$notSentTransactions** som returnerar listan med leverantörsbetalningsrader som bearbetas.
 
-    ![Fältet Betalningar på sidan modellmappningsdesigner](./media/er-data-debugger-model-mapping.png)
+    ![Fältet Betalningar på sidan Modellmappningsdesigner.](./media/er-data-debugger-model-mapping.png)
 
 #### <a name="review-the-format-mapping"></a>Granska formatmappningen
 
@@ -224,7 +224,7 @@ Om några av de tidigare listade konfigurationerna saknas i konfigurationsträde
 
     Observera att elementet **Dokument** \> **CstmrCdtTrfInitn** \> **PmtInf** i **ISO20022CTReports** \> **XMLHeader**-filen är knutet till datakällan **\$PaymentByDebtor** som är konfigurerad för att gruppera poster i datamodellens fält **Betalningar**.
 
-    ![PmtInf-element på sidan Formatdesigner](./media/er-data-debugger-format-mapping.png)
+    ![PmtInf-element på sidan Formatdesigner.](./media/er-data-debugger-format-mapping.png)
 
 #### <a name="review-the-format"></a>Granska formatet
 
@@ -234,7 +234,7 @@ Om några av de tidigare listade konfigurationerna saknas i konfigurationsträde
 
     Observera att formatelementet under **Dokument** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAccts** \> **ID** \> **IBAN** \> **BankIBAN** har konfigurerats för att ange IBAN-kod för leverantörens konto i betalningsfilen.
 
-    ![BankIBAN-element på sidan Formatdesigner](./media/er-data-debugger-format.png)
+    ![BankIBAN-element på sidan Formatdesigner.](./media/er-data-debugger-format.png)
 
 ## <a name="appendix-2-configure-accounts-payable"></a><a name="appendix2"></a>Bilaga 2: Konfigurera leverantörsreskontra
 
@@ -245,7 +245,7 @@ Om några av de tidigare listade konfigurationerna saknas i konfigurationsträde
 3. På snabbfliken **Identifiering**, i fältet **IBAN**, <a name="enteredIBANcode"></a>anger du **GB33 BUKB 2020 1555 5555 55**.
 4. Välj **Spara**.
 
-![IBAN-fält inställt på sidan Leverantörsbankkonton](./media/er-data-debugger-iban.png)
+![IBAN-fält inställt på sidan Leverantörsbankkonton.](./media/er-data-debugger-iban.png)
 
 ### <a name="set-up-a-method-of-payment"></a>Skapa betalningsmetod
 
@@ -255,7 +255,7 @@ Om några av de tidigare listade konfigurationerna saknas i konfigurationsträde
 4. I fältet **Exportformatkonfiguration** väljer du ER-formatet **ISO20022 kredit överföring**.
 5. Välj **Spara**.
 
-![Filformatinställningar på sidan Betalningsmetoder](./media/er-data-debugger-payment-method.png)
+![Filformatinställningar på sidan Betalningsmetoder.](./media/er-data-debugger-payment-method.png)
 
 ### <a name="add-a-vendor-payment"></a>Lägg till en leverantörsbetalning
 
@@ -267,7 +267,7 @@ Om några av de tidigare listade konfigurationerna saknas i konfigurationsträde
 6. I fältet **Betalningsmetod** väljer du **SEPA CT**.
 7. Välj **Spara**.
 
-![Leverantörsbetalning har lagts till på sidan Leverantörsbetalningar](./media/er-data-debugger-payment-journal.png)
+![Leverantörsbetalning har lagts till på sidan Leverantörsbetalningar.](./media/er-data-debugger-payment-journal.png)
 
 ## <a name="appendix-3-process-a-vendor-payment"></a><a name="appendix3"></a>Bilaga 3: Bearbeta leverantörsbetalningstransaktioner
 

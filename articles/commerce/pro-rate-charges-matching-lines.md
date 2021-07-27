@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: c36948cc58291b56c1bbe8a3d5c3db52dccc8399
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: cca35be696c8dd9956176e54e77a60f0252e0760
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018616"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352190"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Allokera huvudavgifter för att matcha försäljningsrader
 
@@ -56,9 +56,9 @@ I det här scenariot beskrivs beteendet när alternativet **Allokera huvudavgift
 
 I det här scenariot har organisationen definierat avgifter på huvudnivå för leveranssättrelation **99** och leveranssättrelation **11**. Inga automatiska avgifter är konfigurerade för leveranssätt **21**.
 
-![Automatiska avgifter för leveranssätt 99 när matchande proportionell fördelning stängs av](media/99_disabled.png)
+![Automatiska avgifter för leveranssätt 99 när matchande proportionell fördelning stängs av.](media/99_disabled.png)
 
-![Automatiska avgifter för leveranssätt 11 när matchande proportionell fördelning stängs av](media/11_disabled.png)
+![Automatiska avgifter för leveranssätt 11 när matchande proportionell fördelning stängs av.](media/11_disabled.png)
 
 En försäljningsorder skapas i kundtjänst och leveranssätt anges till **99**. Den här beställningen innehåller fem artiklar. Två rader har konfigurerats för att använda leveranssätt **99**, två rader har konfigurerats för att använda leveranssätt **11** och en rad har konfigurerats för att använda leveranssätt **21**, enligt följande tabell.
 
@@ -78,9 +78,9 @@ I detta scenario, om en kund returnerar vissa av artiklarna på ordern, och om [
 
 I det här scenariot definieras avgifter på huvudnivå för leveranssättrelation **99** och leveranssättrelation **11**. Men alternativet **Allokera huvudavgifter för att matcha försäljningsrader** är inställd på **Ja** för dessa tabeller för automatiska avgifter.
 
-![Automatiska avgifter för leveranssätt 99 när matchande proportionell fördelning slås på](media/99_enabled.png)
+![Automatiska avgifter för leveranssätt 99 när matchande proportionell fördelning slås på.](media/99_enabled.png)
 
-![Automatiska avgifter för leveranssätt 11 när matchande proportionell fördelning slås på](media/11_enabled.png)
+![Automatiska avgifter för leveranssätt 11 när matchande proportionell fördelning slås på.](media/11_enabled.png)
 
 Det här scenariot använder samma försäljningsorder som innehåller fem rader. Leveranssätt i orderrubriken anges till **99**, men leveranssätt för varje artikel i försäljningsordern har konfigurerats enligt följande tabell.
 
@@ -130,9 +130,9 @@ Eftersom konfigurationen av automatisk avgift är inställd på proportionellt f
     - Totalt produktvärde = 15 $
     - **Avgiftsvärde = 0 $** (inga automatiska avgifter har konfigurerats för den här kombinationen av kund och ett leveranssätt).
 
-    ![Avgifter med leveranssätt 11 är indelade i det markerade skiktet.](media/step2mode11.png)
+    ![Avgifter med leveranssätt 11 hamnar inom det markerade skiktet.](media/step2mode11.png)
 
-    ![Avgifter med leveranssätt 99 är indelade i det markerade skiktet.](media/step2mode99.png)
+    ![Avgifter med leveranssätt 99 hamnar inom det markerade skiktet.](media/step2mode99.png)
 
 3. Systemet beräknar det avgiftsvärde som ska tillämpas på varje rad baserat på den proportionella fördelningslogiken som beaktar det proportionella värdet för raden i förhållande till gruppens totala produktvärde.
 
@@ -163,7 +163,7 @@ Eftersom konfigurationen av automatisk avgift är inställd på proportionellt f
 
 Därför kommer artikel 81334 få en fraktavgift på 5,62 $ i det här exemplet. Du kan visa dessa avgifter på sidan **Underhållavgifter** för försäljningsraden. Följande bild visar hur den här sidan ser ut för artikel 81334.
 
-![Proportionellt fördelade avgifter på försäljningsraden för artikel 81334](media/proratedlinecharge.png)
+![Proportionellt fördelade avgifter på försäljningsraden för artikel 81334.](media/proratedlinecharge.png)
 
 När denna beräkningsmetod används i ett scenario med delvis retur, om avgiftskoden återbetalas kommer endast en del av avgiften som tilldelas den här raden att återbetalas när artikeln returneras.
 

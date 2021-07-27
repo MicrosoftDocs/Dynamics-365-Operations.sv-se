@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: 12de6d70243bdcda5fc7887f24eecb462de23683
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937340"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351029"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Översikt över jobb för import och export av data
 
@@ -106,7 +107,7 @@ Det finns två vyer för mappning: **Mappningsvisualisering**, som är standard,
 
 Du kan skapa en mappning på sidan genom att markera **Skapa källmappning**. En skapad mappning fungerar som en automatisk mappning. Därför måste du mappa de omappade fälten manuellt.
 
-![Datamappning](./media/dixf-map.png)
+![Datamappning.](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Kontrollera säkerheten för import- eller exportjobbet
 Åtkomsten till arbetsytan **Datahantering** kan begränsas så att icke-administratörer endast kan få åtkomst till specifika datajobb. Åtkomsten till data-jobbet innebär fullständig åtkomst till jobbets körningshistorik samt till mellanlagringsregistren. Därför måste du se till att en lämplig åtkomstkontroll finns på plats när du skapar ett datajobb.
@@ -132,7 +133,7 @@ Du kan köra ett jobb en gång genom att välja knappen **Importera** eller **Ex
 ## <a name="validate-that-the-job-ran-as-expected"></a>Validera att jobbet har körts som förväntat
 Jobbhistoriken blir tillgänglig för felsökning och undersökning för såväl import- som exportjobb. Historiska jobbkörningar ordnas efter tidsintervall.
 
-![Intervall för jobbhistorik](./media/dixf-job-history.md.png)
+![Intervall för jobbhistorik.](./media/dixf-job-history.md.png)
 
 Varje gång du kör jobbet erhåller du följande information:
 

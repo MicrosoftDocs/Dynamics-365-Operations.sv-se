@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 143aa5c3ba4d6064cde63f8e7ebeac0977b1325c
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 97fc3c6bd096854b5aa72980dd2bd6f3a8a1ef9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908716"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353430"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Gantt-diagram för jobbplanering
 
@@ -45,10 +45,10 @@ Gantt-schemat kan öppnas i två olika vyer **Ordervy** och **Resursvy**. I **Or
 
 ## <a name="order-view"></a>Ordervy
 
-[![Ordervy](./media/orderview.png)](./media/orderview.png)
+[![Ordervy.](./media/orderview.png)](./media/orderview.png)
 
 ## <a name="resource-view"></a>Resursvy
-[![Resursvy](./media/resview.png)](./media/resview.png)
+[![Resursvy.](./media/resview.png)](./media/resview.png)
 
 ## <a name="activities"></a>Aktiviteter
 Aktiviteterna visas som staplar och ordnas i ett tidsskalerutnät med en schemalagd start- och sluttid, som gör längden på staplarna proportionell mot den tid som krävs för att slutföra aktiviteten. Aktiviteterna visas enligt en tidsskala. Du kan anpassa tidsskalan i menyn där du väljer ett startdatum, slutdatum och en tidsenhet såsom timmar eller dagar. Du kan ange fokus på ett tidsintervall inom vilket du vill hantera aktiviteter genom att justera tidsskalan. 
@@ -102,25 +102,25 @@ Det går inte att schemalägga ett jobb utanför det definierade tidsintervallet
 
 I ett nätverk med aktiviteter såsom jobb som tillhör samma produktionsorder kan du använda funktionen **Tidsplanera tidigare jobb** för att tidsplanera tidigare jobb i relation till ett valt jobb i nätverket. I exemplet nedan är den markerade aktiviteten det valda jobbet. Diagrammet visar situationer innan ett tidigare jobb har schemalagts, samt efter det att det har schemalagts. 
 
-[![Schemalägg tidigare jobb](./media/schprevjob3.png)](./media/schprevjob3.png)
+[![Tidsplanera tidigare jobb.](./media/schprevjob3.png)](./media/schprevjob3.png)
 
 ### <a name="schedule-next-jobs"></a>Tidsplanera nästa jobb
 
 Du kan använda funktionen **Tidsplanera nästa jobb** för att tidsplanera nästa jobb i relation till ett valt jobb i ett nätverk med aktiviteter. I exemplet nedan är den markerade aktiviteten det valda jobbet. Diagrammet visar situationer innan nästa jobb har schemalagts, samt efter det att det har schemalagts. 
 
-[![Schemalägg nästa jobb](./media/schnxtjob.png)](./media/schnxtjob.png)
+[![Tidsplanera nästa jobb.](./media/schnxtjob.png)](./media/schnxtjob.png)
 
 ### <a name="schedule-around-job"></a>Tidsplanera runt jobb
 
 Du kan använda funktionen **Tidsplanera runt jobb** för att tidsplanera nästa jobb och tidigare jobb i relation till ett valt jobb i ett nätverk med aktiviteter. I exemplet nedan är den markerade aktiviteten det valda jobbet. Diagrammet visar situationer innan ett jobb har schemalagts, samt efter det att det har schemalagts. 
 
-[![Tidsplanera runt jobb](./media/scharoundjob1.png)](./media/scharoundjob1.png)
+[![Tidsplanera runt jobb.](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
 ### <a name="arrange-jobs"></a>Ordna jobb
 
 Du kan använda funktionen **Ordna** för att ordna valda aktiviteter på samma resurs. Aktiviteterna kan finnas i samma nätverk med aktiviteter, men kan även ingå i olika nätverk. När du använder funktionen Ordna ska tidsgapet mellan de valda aktiviteterna elimineras. Du kan använda funktionen för att optimera kapacitetsutnyttjande resurser. Diagrammet visar situationer innan ett jobb har schemalagts, samt efter det att det har schemalagts. 
 
-[![Ordna jobb](./media/arrangejobs1.png)](./media/arrangejobs1.png)
+[![Ordna jobb.](./media/arrangejobs1.png)](./media/arrangejobs1.png)
 
 ### <a name="reassign-activities-from-one-resource-to-another"></a>Tilldela om aktiviteter från en resurs till en annan
 

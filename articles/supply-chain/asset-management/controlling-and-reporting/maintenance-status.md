@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f3d6f86c5052c845c9c8aad1e4437f4196f78b50
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1b0c8b6a81fd863d66ca01689262f0ec08a94d76
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808626"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354987"
 ---
 # <a name="maintenance-status"></a>Underhållsstatus
 
@@ -57,13 +57,13 @@ I Tillgångshantering kan du göra en översiktsberäkning för en viss period f
 
 I bildskärmen nedan har knapparna **År** och **Månad** aktiverats. Med dessa val för **Gruppera efter** markerade får du en allmän översikt på basis av månadsvis arbetsbelastning och genomflöde som är relaterat till underhållsbegäranden och arbetsorder. 
 
-![Exempel på månatlig arbetsbelastning](media/13-controlling-and-reporting.png)
+![Exempel på månatlig arbetsbelastning.](media/13-controlling-and-reporting.png)
 
 ## <a name="example-2"></a>Exempel 2
 
 I bildskärmen nedan har information om funktionsplatser lagts till. Nu är det möjligt att jämföra arbetsbelastning och genomflöde på funktionsplatser, vilket kan representera geografiska platser, fabriker eller arbetsområden. 
 
-![Exempel på en månatlig arbetsbörda med funktionella platser](media/14-controlling-and-reporting.png)
+![Exempel på en månatlig arbetsbörda med funktionsplatser.](media/14-controlling-and-reporting.png)
 
 
 

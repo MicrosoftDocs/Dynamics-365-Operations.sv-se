@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 02e8bb1bfb088a877ef23b7a81982868700f4ae2
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 7b5f8303ea23f4f38bf27d35de0fa91ab82f4b5b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028117"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354479"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Uppgiftsinspelare och hjälp för Retail Modern POS (MPOS) och molnbaserad kassa
 
@@ -55,14 +55,14 @@ Följ dessa steg för att skapa en ny inspelning med hjälp av uppgiftsinspelare
 1. Starta Retail Modern POS eller Cloud POS och logga in.
 2. På sidan **Inställningar**, i avsnittet **Uppgiftsinspelare** klickar du på **Öppna uppgiftsinspelaren**. Sidan **Uppgiftsinspelare** visas. Du kan klicka på knappen **Stäng** (**X**) i det övre högra hörnet för att stänga fönstret **Uppgiftsinspelare** innan du påbörjar en ny inspelning. Upprepa steg 2 för att öppna fönstret.
 
-    [![Fönstret Uppgiftsinspelare](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
+    [![Fönstret Uppgiftsinspelare.](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
 3. Ange ett namn och en beskrivning för inspelningen och klicka sedan på **Starta**. Inspelningssessionen börjar så fort du klickar på **Starta**.
 
     > [!NOTE]
     > Om du klickar på knappen **Stäng** (**X**) det övre högra hörnet när inspelningen pågår, stängs fönstret **Uppgiftsinspelare** men inspelningssessionen avslutas inte. Om du vill öppna fönstret Uppgiftsinspelare, klicka då på knappen **Hjälp** (frågetecken) överst på skärmen.
     >
-    > [![Frågetecken](./media/help.jpg)](./media/help.jpg)
+    > [![Frågetecken.](./media/help.jpg)](./media/help.jpg)
 
 4. När du klickar på **Starta** växlar Uppgiftsinspelaren till inspelningsläget. Fönstret **Uppgiftsinspelare** visar information och kontroller som är relaterade till inspelningsprocessen.
 5. Utför de åtgärder som du vill utföra i Retail Modern POS- eller Cloud POS-användargränssnittet (UI).
@@ -72,7 +72,7 @@ Följ dessa steg för att skapa en ny inspelning med hjälp av uppgiftsinspelare
 
 När du avslutar inspelningssessionen visas ett flertal alternativ som gör att du kan hämta din inspelning.
 
-[![Hämtningsalternativ](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
+[![Hämtningsalternativ.](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
 
 ### <a name="save-to-this-pc"></a>Spara på datorn
 
@@ -88,7 +88,7 @@ Inspelningens råformatfil kommer att vara till stor nytta för utvecklingsscena
 
 ## <a name="recording-controls"></a>Inspelningskontroller
 
-[![Inspelningskontroller](./media/controls.jpg)](./media/controls.jpg)
+[![Inspelningskontroller.](./media/controls.jpg)](./media/controls.jpg)
 
 ### <a name="stop"></a>Stopp
 
@@ -117,13 +117,13 @@ Du kan ange början och slut för en uppsättning grupperade steg via knapparna 
 
 En anteckning är ytterligare text som du lägger till i ett steg i en inspelning. Du kan exempelvis använda anteckningar för att ge användaren mer kontext eller instruktioner. Du kan lägga till anteckningar före eller efter ett steg. Du kan lägga till en anteckning till ett steg genom att klicka på knappen **Redigera** (pennsymbol) till höger om steget.
 
-[![Redigeringsknapp för ett steg](./media/annotate.jpg)](./media/annotate.jpg)
+[![Redigeringsknapp för ett steg.](./media/annotate.jpg)](./media/annotate.jpg)
 
 ### <a name="texts-and-notes"></a>Texter och anteckningar
 
 Du kan använda fälten **Texter** och **Anteckningar** om du vill lägga till text som ska associeras med ett steg i en uppgiftsguide.
 
-[![Text- och anteckningsfält](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
+[![Text- och anteckningsfält.](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
 
 #### <a name="text"></a>Text
 
@@ -137,7 +137,7 @@ Text som du anger i fältet **Anteckningar** visas *under* stegtexten i uppgifts
 
 Om du vill visa dina egna anpassade uppgiftsinspelningar i hjälpfönstret för Retail Modern POS och Cloud POS så att de kan spelas upp text, så måste du spara dina uppgiftsinspelningar i ditt eget BPM-bibliotek och sedan uppdatera hjälpsystemparametrarna så att de pekar mot ditt BPM-bibliotek. Mer information finns i [Ansluta hjälpsystemet](../fin-ops-core/fin-ops/get-started/help-connect.md). Retail Modern POS och Cloud POS Help söker LCS i realtid. Det söker igenom alla BPM-bibliotek som valts i hjälpsystemparametrarna för Commerce och visar relevanta resultat. För att få åtkomst till menyn **Hjälp** klickar du på knappen **Hjälp** (frågetecken) högst upp på skärmen. Ange sedan ditt processnamn i sökrutan och tryck på sökknappen.
 
-[![Knappen Hjälp](./media/help.jpg)](./media/help.jpg)
+[![Knappen Hjälp.](./media/help.jpg)](./media/help.jpg)
 
 När du klickar på en uppgiftsguide i sökresultaten kan du antingen se stegen som ett hjälpavsnitt eller exportera stegen till ett Word-dokument.
 

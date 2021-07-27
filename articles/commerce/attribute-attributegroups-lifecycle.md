@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: a49a0d05a55e72b5dae17933d38d03287a01d5ee
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: dce26087a81e38c5618b07a9341fee195e3c98c9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936814"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346814"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Hantera attribut och attributsgrupper
 
@@ -70,7 +70,7 @@ Attribut baseras på *attributtyper*. Attributtypen identifierar den typ av data
     - Namnge en attributtyp **Linsform** och lägg till följande värden: **ellips**, **ruta** och **rektangel**.
     - Namnge den andra attributtypen **Solglasögonmärke** och lägg till följande värden: **Ray ban**, **Aviator** och **Oakley**.
 
-![Attributtyper](media/AttributeType.png)
+![Attributtyper.](media/AttributeType.png)
 
 ### <a name="set-up-an-attribute"></a>Ställ in attribut
 
@@ -79,7 +79,7 @@ Attribut baseras på *attributtyper*. Attributtypen identifierar den typ av data
 3. Skapa ett attribut med namnet **lins**.
 4. Ange fältet **attributtyp** till **linsform**.
 
-![Attribut](media/Attribute.png)
+![Attribut.](media/Attribute.png)
 
 ## <a name="attribute-metadata"></a>Attributmetadata
 
@@ -142,7 +142,7 @@ När attribut har definierats, kan de tilldelas till attributgrupper. En *attrib
 
 Du kan också ange standardvärden för attribut som ingår i en attributgrupp. Exempelvis kan du lägga till ett attribut för färg till en attributgrupp och markera **blå** som standardattributvärde. I det här fallet, när attributgruppen läggs till en produkt som inkluderar färg som ett av attributen, visas **blå** som standardfärg för den produkten.
 
-![Attributgrupper](media/AttributeGroup.png)
+![Attributgrupper.](media/AttributeGroup.png)
 
 ### <a name="create-an-attribute-group"></a>Skapa attributgrupper
 
@@ -155,7 +155,7 @@ Du kan också ange standardvärden för attribut som ingår i en attributgrupp. 
 
 En eller flera attributgrupper kan kopplas till kategorinoder i följande typer av butikskategorihierarkier: handelshierarki, kanalens navigeringskategorihierarki och tillägg för produktkategorihierarki. När produkterna har kategoriserats, de ärver de attribut som ingår i attributgrupper.
 
-![Produkthierarki – produktattributgrupper](media/AGRetailProdHierarchy.PNG)
+![Produkthierarki – produktattributgrupper.](media/AGRetailProdHierarchy.PNG)
 
 Gör så här om du vill tilldela attributgrupper till kategorier i produkthierarki.
 
@@ -200,7 +200,7 @@ En eller flera attributgrupper som kan förknippas med en eller flera butiker i 
     3. Välj kategorinoden **Mode accessoarer** och välj kategorin **Modesolglasögon** och välj **Kanalproduktattribut** på snabbfliken och sedan **Inkludera attribut** för varje attribut.
     4. Välj kategorinoden **Herrkläder** och välj kategorin **Byxor** och välj **Modesolglasögon** på snabbfliken och sedan **Inkludera attribut** för varje attribut.
 
-![Kanalkategorier och produktattribut – attributgrupper](media/CCPAttrGrp.png)
+![Kanalkategorier och produktattribut – Attributgrupper.](media/CCPAttrGrp.png)
 
 ## <a name="overriding-attribute-values"></a>Åsidosätta attributvärden
 
@@ -214,7 +214,7 @@ Standardvärden för attribut kan åsidosättas för enskilda produkter på prod
 4. Välj den nödvändiga produkten i rutnätet. I åtgärdsfönstret, på fliken **Produkt**, i gruppen **Inställning**, markerar du sedan **Produktattribut**.
 5. Välj ett attribut i det vänstra fönstret och uppdatera dess värde i den högra rutan.
 
-![Produkdetaljsida – produktattributgrupper](media/ProdDetailsProdAttrValues.png)
+![Produkdetaljsida – Produktattributgrupper.](media/ProdDetailsProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>Åsidosätt attributvärdena för produkterna i en katalog
 
@@ -233,7 +233,7 @@ Standardvärden för attribut kan åsidosättas för enskilda produkter på prod
     > [!NOTE]
     > Om delad produktmedia och delade produktattribut skapas gäller de för alla produkter.
 
-![Katalogens produktattributgrupper](media/CatalogProdAttrValues.png)
+![Katalogens produktattributgrupper.](media/CatalogProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>Åsidosätt attributvärdena för produkterna i en kanal
 

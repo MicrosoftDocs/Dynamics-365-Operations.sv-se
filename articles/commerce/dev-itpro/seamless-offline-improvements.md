@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 47867447e6d16a0fb4542c17ab184068300b2c1c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8f5c8f104d8304cf9a54efcdf6e22efbc3b356b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019967"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348278"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Sömlös offline-växlare för presentkort och kreditnotor
 
@@ -36,7 +36,7 @@ Om kassan förlorar anslutningen efter att ett presentkort har lagts till i en t
 
 Om du vill att funktionen ska ingå presentkortstransaktioner efter att du växlat till offlineläge, gå till fliken **Bokföring** på sidan **Commerce-parametrar**. På den fliken letar du upp snabbfliken **presentkort** och ställer in **Tillåt presentkortstransaktioner i offlineläge** till **ja**.
 
-![Presentkortsinställning för offline](../media/gift.png)
+![Presentkortsinställning för offline.](../media/gift.png)
 
 Commerce-parametrar cachelagras normalt. När den här parametern har uppdaterats och distributionsplanen har initierats för att synkronisera ändringen till kanalen, kan ändringen därför ta upp till 24 timmar innan ändringen börjar gälla. Återställ Microsoft Internet Information Services (IIS) om du vill att ändringen ska börja gälla omedelbart.
 
@@ -46,7 +46,7 @@ Precis som interna presentkort underhålls kreditnotor centralt i Commerce-admin
 
 Om du vill att funktionen ska ingå transaktioner för kreditnota efter att du växlat till offlineläge, gå till fliken **Bokföring** på sidan **Commerce-parametrar**. På den fliken letar du upp snabbfliken **kreditnota** och ställer in **Tillåt transaktioner för kreditnota i offlineläge** till **ja**.
 
-![Inställning för kreditnota offline](../media/creditmemo.png)
+![Inställning för kreditnota offline.](../media/creditmemo.png)
 
 Commerce-parametrar cachelagras normalt. När den här parametern har uppdaterats och distributionsplanen har initierats för att synkronisera ändringen till kanalen, kan ändringen därför ta upp till 24 timmar innan ändringen börjar gälla. Återställ IIS om du vill att ändringen ska börja gälla omedelbart.
 

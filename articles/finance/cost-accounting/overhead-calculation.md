@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8dc312e66dc666ac6c23bac6b705ffc7893fd06b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 09d4516c40833771d27db13eac8228bd8c5e0e4a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188007"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355045"
 ---
 # <a name="overhead-calculation"></a>Beräkning av indirekta kostnader
 
@@ -48,7 +48,7 @@ Beräkning av indirekta kostnader kör kostnadsredovisningspolicyerna i korrekt 
 
 Beräkningen av indirekta kostnader körs oberoende av versionen. Du kan därför beräkna budgetversionen innan den faktiska versionen. Beräkningen av indirekta kostnader består av fyra steg som visas i följande bild. I varje steg skapas en journalrubrik med journalposter. Den här journalrubriken behåller indata för varje beräkningssteg. Policyer och regler tillämpas på varje journalrad och kostnadstransaktioner skapas som utleverans. Därför måste du alltid ha fullständig spårning. 
 
-[![Beräkning av indirekta kostnader](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+[![Beräkning av indirekta kostnader.](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Beräkna och fördela den indirekta elkostnaden
 I affärsredovisning är vissa kostnader som till exempel el, registrerade som en klumpsumma. Därför ges inte detaljerad ledarskapsinblick för kostnadsredovisning. I kostnadsredovisning måste kostnader flöda genom organisationsenheterna för att ge rätt ledarskapsinsikt för alla organisationsenheter och nivåer. Detta flöde måste baseras på en korrekt bild av förbrukningen eller en rimlig bedömning. I redovisning kan en elkostnad bokföras enligt tabellen nedan.
@@ -618,7 +618,7 @@ För mer information, se [Utföra beräkning av indirekta kostnader](cost-rollup
 
 Allokering används för att allkokera saldot på ett kostnadsobjekt till andra kostnadsobjekt genom att använda ett allokeringsunderlag. Finance stöder ömsesidig allokeringsmetod. I den inbördes allokeringsmetoden identifieras de ömsesidiga tjänsterna som de extra kostnadobjekten utbyter fullständigt. Systemet avgör automatiskt den korrekta ordnigen för att utföra allokeringar i. Saldot på ett kostnadsobjekt allkoeras genom ett enda allokeringsunderlag. Allokeringar över kostnadsobjektdimensioner och deras respektive medlemmar stöds. Allokeringsordern styrs av kostnadskontrollenheten. 
 
-[![Ömsesidig metod](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+[![Ömsesidig metod.](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
 #### <a name="define-the-cost-allocation"></a>Definiera kostnadsallokering
 

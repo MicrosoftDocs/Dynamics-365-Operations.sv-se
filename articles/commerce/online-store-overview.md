@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: b7050f954116213f700e4a2b3326547f4d070674
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022482"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353022"
 ---
 # <a name="e-commerce-site-overview"></a>Näthandelsplats – översikt
 
@@ -47,27 +47,27 @@ Under initieringen av en näthandelssajt uppmanas du att ange ett domännamn. Me
 
 När du startar Commerce-webbplatsbyggaren från LCS visas sidan **Webbplatser**. Den här sidan innehåller två förkonfigurerade webbplatser, **standard** och **fabrikam**, som visas i följande illustration.
 
-![Sidan Webbplatser i Commerce-webbplatsbyggaren](media/e-commerce-site-01.png)
+![Sidan Webbplatser i Commerce-webbplatsbyggaren.](media/e-commerce-site-01.png)
 
 När du väljer en av dessa webbplatser uppmanas du att välja ett domännamn, en standardkanal för onlinebutik, ett språk som stöds för den valda kanalen och en sökväg. Om bara en kanal används kan du låta sökvägen vara tom. Fler onlinebutikskanaler eller -språk kan konfigureras senare i Commerce-webbplatsbyggaren. Varje ytterligare kanal eller språk kommer att kräva en unik sökväg. Du har till exempel två onlinekanaler som är kopplade till en enda webbplats, och domännamnet för webbplatsen är `www.fabrikam.com`. I det här fallet kan sökvägen för en kanal vara standardvärdet som inte har någon sökväg (`https://www.fabrikam.com`), och den andra kanalen kan ställas in på en ny sökväg, till exempel **webbplats2**, som kommer att ha webbadressen `https://www.fabrikam.com/site2`. I bilden nedan visas ett exempel på en dialogruta för webbplatsinitiering i Commerce-webbplatsbyggaren.
 
-![Dialogrutan för initiering av webbplatser i Commerce-webbplatsbyggaren](media/e-commerce-site-02.png)
+![Dialogrutan för initiering av webbplatser i Commerce-webbplatsbyggaren.](media/e-commerce-site-02.png)
 
 Sidan **Webbplatser** innehåller också knappen **Ny webbplats**. Dialogrutan som visas när du väljer den här knappen liknar dialogrutan för initiering av webbplatsen, men den används för att skapa en ny webbplats. Nya webbplatser är tomma. De innehåller inte samma standardmallar, fragment, sidor och bilder som tillhandahålls med webbplatserna **standard** och **fabrikam**. Efter behov kan du emellertid öppna ett supportärende för att begära att en kopia av standardinnehållet läggs till på en ny, tom webbplats. Mer information finns i [Skapa en näthandels](create-ecommerce-site.md).
 
 När en ny webbplats har initierats visas **Start**-sidan för Commerce-webbplatsbyggaren. Den här sidan innehåller länkar till vanliga åtgärder och vägledningsinnehåll, enligt exemplet i följande illustration.
 
-![Länkar på startsidan i Commerce-webbplatsbyggaren](media/e-commerce-site-03.png)
+![Länkar på startsidan i Commerce-webbplatsbyggaren.](media/e-commerce-site-03.png)
 
 ## <a name="modify-online-store-channels-or-add-online-store-channels-to-an-e-commerce-site"></a>Ändra kanaler i onlinebutiken eller lägga till onlinebutikskanaler på en näthandelssajt
 
 När en näthandelssajt har skapats kan du ändra kanalen som den är kopplad till genom att följa stegen i [Associera en näthandelssajt med en onlinekanal](associate-site-online-store.md). Exemplet i följande bild visar hur ett numret för en kanaldriftsenhet (OUN) kan ändras på sidan **Kanaler** (**Webbplatsinställningar \> Kanaler**). När du har slutfört en ändring ska du se till att välja **Spara och publicera**. På så sätt ser du till att ändringen publiceras.
 
-![Sidan Kanaler i Commerce-webbplatsbyggaren](media/e-commerce-site-04.png)
+![Sidan Kanaler i Commerce-webbplatsbyggaren.](media/e-commerce-site-04.png)
 
 Du kan lägga till nya kanaler genom att välja **Lägg till en kanal**. Om du vill lägga till nya språk i en kanal markerar du kanalen och väljer sedan **Lägg till ett språk** i kanaldialogrutan som visas. Innan språken kan visas i dialogrutan måste de vara förkonfigurerade för onlinebutikskanalen i Commerce-administrationen.
 
-![Kanaldialogrutan i Commerce-webbplatsbyggaren](media/e-commerce-site-05.png)
+![Kanaldialogrutan i Commerce-webbplatsbyggaren.](media/e-commerce-site-05.png)
 
 ## <a name="set-up-an-azure-b2c-tenant"></a>Konfigurera en Azure B2C-klientorganisation
 

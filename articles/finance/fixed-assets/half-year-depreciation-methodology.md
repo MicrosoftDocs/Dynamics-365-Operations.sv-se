@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: d0e33128c37e970ebf5af87bd601ae30aef96952
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9a8dd3d8c6b92be9f22573f463aa96b13d9e3418
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818594"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355542"
 ---
 # <a name="half-year-depreciation-convention-methodology"></a>Metod för halvårs avskrivningspraxis
 
@@ -36,7 +36,7 @@ Det första året i tjänst kommer att ingå i december 2020, vilket innebär at
 > Årlig avskrivning 50 000/5 = 10 000 månatlig avskrivning 10000/12 = 833,33 <br>
 > Avskrivning första året 10 000/2 = 5 000 och den efterföljande månadsavskrivningen 5000/9 = 555,56
 
-   [![Avskrivningsschema för halvårs avskrivningspraxis](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
+   [![Avskrivningstidsplan för halvårs avskrivningspraxis.](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 De utökade avskrivningsperioder som läggs till med halvårspraxis ger en mer korrekt fördelning av avskrivningen. Den sex månaders praxis representerar avskrivningskostnaderna mer jämt, vilket är användbart för rapportering av resultaträkningen.
 

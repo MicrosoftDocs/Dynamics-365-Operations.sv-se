@@ -13,12 +13,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 742d49b1b7b46952d0a8bb6c8a33cde2a35d124f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1abcc4befd1277d7f08d3dfa89cb76b0ee4a6178
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791714"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354575"
 ---
 # <a name="configure-task-management"></a>Konfigurera uppgiftshantering
 
@@ -44,7 +44,7 @@ Konfigurera behörigheter av uppgiftshantering för butikschefer enligt följand
 
 Följande illustration visar hur du konfigurerar behörigheter av uppgiftshantering för butikschefer.
 
-![Konfigurera behörigheter av uppgiftshantering för butikschefer](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![Konfigurera behörigheter för uppgiftshantering för butikschefer.](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## <a name="configure-permissions-for-employees"></a>Konfigurera behörigheter för medarbetare
 
@@ -78,7 +78,7 @@ Gör på följande vis för att konfigurera kassameddelanden.
 
 Följande bild visar åtgärder **Uppgiftshantering** på sidan **Kassaoperationer**.
 
-![Åtgärden uppgiftshantering på sidan kassaåtgärder](media/HQ-POS-Tasks-Notifications.png)
+![Åtgärden Uppgiftshantering på sidan Kassaåtgärder.](media/HQ-POS-Tasks-Notifications.png)
 
 Mer information om hur du konfigurerar kassameddelanden finns i [Visa ordermeddelanden i POS](notifications-pos.md).
 
@@ -95,7 +95,7 @@ Konfigurera **uppgift** på en kassaprogram startsida, följ dessa steg.
 
 Följande illustration visar ett exempel på panelen **Uppgifter** på en kassas startsida.
 
-![Paneluppgift på en startsida för kassa](media/POS-home-screen-tasks-button-image.png)
+![Uppgiftspanel på en startsida för kassa.](media/POS-home-screen-tasks-button-image.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

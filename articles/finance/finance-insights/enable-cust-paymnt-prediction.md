@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ae957f592ad9a1237817fec5d4172295f9a53020
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: a9b2e8d46debf8e065361d85f10162cda56b62e8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222596"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349044"
 ---
 # <a name="enable-customer-payment-predictions-preview"></a>Aktivera prediktioner av kundbetalning (förhandsversion)
 
@@ -51,7 +51,7 @@ I det här ämnet beskrivs hur du aktiverar och konfigurerar funktionen för kun
 
     1. Gå till **Kredit och inkasso \> Konfigurera \> Finance-insikter \> Parametrar för ekonomiinsikter**.
 
-        [![Sidan med parametrar för ekonomiinsikter innan funktionen har konfigurerats](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
+        [![Sidan med parametrar för Finance Insights innan funktionen har konfigurerats.](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
 
     2. På sidan **Parametrar för ekonomiinsikter**, på fliken **Kundbetalningsinsikter**, väljer du länken **Visa de datafält som används i förutsägelsemodellen** för att öppna sidan **Datafält för förutsägelsemodell**. Där kan du visa standardlistan över fält som används för att skapa en AI-förutsägelsemodell för kundbetalningsförutsägelser.
 
@@ -77,7 +77,7 @@ I det här ämnet beskrivs hur du aktiverar och konfigurerar funktionen för kun
 
 När funktionen har aktiverats och konfigurerats, och om förutsägelsemodellen har skapats och fungerar, visar avsnittet **Förutsägelsemodell** på sidan **Parametrar för ekonomiinsikter** hur noggrann modellen är, vilket visas i bilden nedan.
 
-[![Noggrannhet för förutsägelsemodellen på sidan Parametrar för ekonomiinsikter](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
+[![Noggrannheten för förutsägelsemodellen på sidan Parametrar för Finance Insights](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
 
 ## <a name="release-details"></a>Frisläppningsinformation
 

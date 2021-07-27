@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c61686615495ac64efccf84c697e0e1d594dcaf9
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 7efd9096a85ccafd114448f9ba7ca924c198aacb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027973"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352070"
 ---
 # <a name="account-management-pages-overview"></a>Översikt över sidor för kontohantering
 
@@ -35,7 +36,7 @@ När en kund loggar in och väljer **mitt konto**, öppnas landningssidan för k
 
 Följande illustration visar ett exempel på landningssidan kontohantering.
 
-![Exempel på landningssidan Kontohantering](./media/Account-Management.PNG)
+![Exempel på landningssida för kontohantering.](./media/Account-Management.PNG)
 
 ### <a name="my-profile-page"></a>Min profilsida
 
@@ -43,7 +44,7 @@ På sidan **Min profil** visas kundens kontoinformation, till exempel namn och t
 
 Följande illustration visar ett exempel på sidan **Min profil** som har skapats med hjälp av modulbibliotek.
 
-![Exempel på sidan Min profil](./media/Account-Management-MyProfile.PNG)
+![Exempel på sidan Min profil.](./media/Account-Management-MyProfile.PNG)
 
 ### <a name="addresses-page"></a>Adressida
 
@@ -51,7 +52,7 @@ Sidan **Adresser** låter kunden lägga till adresser till sitt konto. Det visar
 
 Följande illustration visar ett exempel på sidan **Adresser**.
 
-![Exempel på sidan Adresser](./media/Account-Management-Address.png)
+![Exempel på sidan Adresser.](./media/Account-Management-Address.png)
 
 ### <a name="order-history-and-order-details-pages"></a>Orderhistorik och orderdetaljsidor
 
@@ -59,11 +60,11 @@ Sidan **Orderhistorik** visar en översikt över alla order som kunden har skick
 
 Följande illustration visar ett exempel på sidan **Orderhistorik**.
 
-![Exempel på en sida med orderhistorik](./media/Account-Management-OrderHistory.PNG)
+![Exempel på en sida med orderhistorik.](./media/Account-Management-OrderHistory.PNG)
 
 Följande illustration visar ett exempel på sidan **Orderdetaljer**.
 
-![Exempel på en sida med orderdetaljer](./media/Account-Management-OrderDetails.PNG)
+![Exempel på en sida med orderdetaljer.](./media/Account-Management-OrderDetails.PNG)
 
 ### <a name="loyalty-program-page"></a>Sidan Bonusprogram
 
@@ -71,7 +72,7 @@ Sidan **Bonusprogram** låter kunden bli medlem i ett bonusprogram. När en kund
 
 Illustrationen nedan visar ett exempel på sidan **Bonusprogram**.
 
-![Exempel på sidan bonusprogram](./media/Account-Management-Loyalty.PNG)
+![Exempel på sidan bonusprogram.](./media/Account-Management-Loyalty.PNG)
 
 ### <a name="wishlist-page"></a>Sida med önskelista
 
@@ -79,7 +80,7 @@ Sidan **Önskelista** visar en lista över artiklar som kunden har lagt till i s
 
 Illustrationen nedan visar ett exempel på sidan **Önskelista**.
 
-![Exempel på en önskelista](./media/Account-Management-Wishlist.PNG)
+![Exempel på en önskelista.](./media/Account-Management-Wishlist.PNG)
 
 Mer information om moduler för kontohantering och hur du redigerar dem finns i [kontohantering](account-management.md).
 

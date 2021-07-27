@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a3da8e1b8176eb25fe4e0a320aa3e907c06e09c5
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: cdac52ed7f11f796b9559e5454456fb139c6ba00
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021402"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346408"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Lägga till datafält i momsintegreringen genom att använda tillägg
 
@@ -41,7 +41,7 @@ Här är en lista över huvudobjekt:
 
 I följande bild visas hur de här objekten är relaterade.
 
-[![Datamodellobjekt relation](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)
+[![Objektrelation för datamodellobjekt.](./media/tax-service-customize-image1.png)](./media/tax-service-customize-image1.png)
 
 Ett **Dokument** objekt kan innehålla många **Rad** objekt. Varje objekt innehåller metadata för momstjänsten.
 

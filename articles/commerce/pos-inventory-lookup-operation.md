@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: 873c6413c14d2ee8315c149ee9c495bb59dbd930
-ms.sourcegitcommit: 11ca5863175150b6c39f47a9322caa2186727a26
+ms.openlocfilehash: c0f753febb0d347015fde1374148835f90df55a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6025458"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353790"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Lagersökning i kassan
 
@@ -45,7 +45,10 @@ För en enskild produkt innehåller lagersökningsfunktionen en vy över lagers�
 
 I listvyn över platser ingår alla butiker och lagerställen som har konfigurerats i uppfyllelsegrupperna som den aktuella butiken är kopplad till, enligt bilden nedan.
 
-![Listvy över lagersökningsfunktionen](media/inventory-lookup-list-view.png)
+![Listvy över lagersökningsfunktionen.](media/inventory-lookup-list-view.png)
+
+> [!NOTE]
+> Kontrollera att din aktuella butik finns inkluderad i de associerade uppfyllelsegrupperna.
 
 Följande åtgärder är tillgängliga i kassans appfält:
 
@@ -65,7 +68,7 @@ Följande åtgärder är tillgängliga i kassans appfält:
 - **Lägg till i transaktion** - Den här åtgärden lägger till produkten i varukorgen och dirigerar användaren till transaktionsskärmen.
 
 > [!NOTE]
-> För en platsbaserad sortering bestäms avståndet mellan en plats och den aktuella butiken av de koordinater (latitud och longitud) som definierats i Commerce Headquarters. För en butik definieras platsinformationen i den primära adressen till den verksamhetsenhet som är kopplad till butiken. För ett lagerställe utan butik anges platsinformationen i lagerställesadressen. Om den aktuella butiken inte har koordinaterna som de ska, visas den aktuella butiken högst upp i listan och andra platser sorteras efter namn i det platsbaserade sorteringsalternativet.
+> För en platsbaserad sortering bestäms avståndet mellan en plats och den aktuella butiken av de koordinater (latitud och longitud) som definierats i Commerce Headquarters. För en butik definieras platsinformationen i den primära adressen till den verksamhetsenhet som är kopplad till butiken. För ett lagerställe utan butik anges platsinformationen i lagerställesadressen. Om den aktuella butiken inte har definierade koordinaterna visas den aktuella butiken högst upp i listan och andra platser sorteras efter namn i det platsbaserade sorteringsalternativet.
 
 > [!NOTE]
 > Åtgärderna **Visa butikstillgänglighet**, **Visa butiksplats**, **Hämta i butik** och **Skicka produkt** är inte tillgängliga för platser utan butik.
@@ -76,7 +79,7 @@ För en huvudprodukt med varianter innehåller lagersökningsfunktionen också e
 
 Följande exempelbild visar matrisvyn av lagersökingen i kassan.
 
-![Matrisvy över lagersökningsfunktionen](media/inventory-lookup-matrix-view.png)
+![Matrisvy över lagersökningsfunktionen.](media/inventory-lookup-matrix-view.png)
 
 I matrisvyn representerar varje cell en enskild variant och visar lagerbehållning (fysiskt tillgängligt) i det nedre högra hörnet samt värden för **reserverade** (fysiskt reserverade) och **beställda** (beställt totalt) i det övre vänstra hörnet. Följande tabell förklarar innebörden av olika lagerbehållningsvärden.
 
@@ -103,7 +106,7 @@ Kassaanvändarna kan komma åt lagersökningsfunktionen från andra sidor i kass
 
 Följande exempelbild visar lagersökingsresultaten från en PDP i kassan.
 
-![Lagersökning från produktinformationssidan](media/inventory-lookup-from-product-details-page.png)
+![Lagersökning från produktinformationssidan.](media/inventory-lookup-from-product-details-page.png)
 
 På PDP för en huvudprodukt kan du använda åtgärden **Visa alla varianter** i appfältet för att öppna matrisvyn av lagersökningen som visar information om lagertillgänglighet för den aktuella butiken för alla varianter av en produkt. För en enskild produkt visar PDP lagerbehållningen (tillgängligt fysiskt) för den produkten för den aktuella butiken. Dessutom kan du välja länken **Lager i andra butiker** för att öppna lagersökningsfunktionen för att kontrollera lagertillgängligheten av en produkt i andra butiker eller lager.
 
