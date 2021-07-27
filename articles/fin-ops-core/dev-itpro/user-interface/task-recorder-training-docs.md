@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b07da82086696409b128d76d8845c61b241a34b0
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: a2bc5aa1080709931b3aa71c548a7bf2fb9b1192
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188085"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354303"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Skapa dokumentation eller utbildning med uppgiftsinspelning
 
@@ -62,21 +62,21 @@ Om du skapar en ny uppgiftsregistrering eller baserar din registrering på Micro
 
 Detta är redigeringsfönstret som visas när du lägger till en kommentar när du skapar registreringen. Ange en rubrik kommentar i rutan **Rubrik**. 
 
-[![Redigeringsfönster med rubrikanteckning](./media/screen1.png)](./media/screen1.png) 
+[![Redigeringsfönster med rubrikanteckning.](./media/screen1.png)](./media/screen1.png) 
 
 Detta är vad rubrikkommentarer ser ut som i "bubblan” i uppgiftsguiden. 
 
-[![Rubrikanteckningens utseende i uppgiftsguiden](./media/screen2.png)](./media/screen2.png)
+[![Rubrikanteckningens utseende i uppgiftsguiden.](./media/screen2.png)](./media/screen2.png)
 
 -   **Anteckningar:** En anteckningskommentar visas efter stegtexten som uppgiftsregistrering skapar automatiskt. I uppgiftsguiden är den bara synlig om användaren klickar på länken **Visa mer** i uppgiftsguidens bubbla. Använd den här kommentarstypen för att beskriva allt som användaren måste veta för att slutföra steget.
 
 Detta är redigeringsfönstret som visas när du lägger till en kommentar när du skapar registreringen. Ange en anteckningskommentar i rutan **Kommentarer**. 
 
-[![Redigeringsfönster med anteckning i anteckningsruta](./media/screen3.png)](./media/screen3.png) 
+[![Redigeringsfönster med anteckning i anteckningsrutan.](./media/screen3.png)](./media/screen3.png) 
 
 Detta är vad anteckningskommentar ser ut som i "bubblan” i uppgiftsguiden.
 
-[![Anteckningskommentarens utseende i uppgiftsguiden](./media/screen4.png)](./media/screen4.png)
+[![Anteckningskommentarens utseende i uppgiftsguiden.](./media/screen4.png)](./media/screen4.png)
 
 -   **Informationssteg**: Dessa anteckningar skapas genom att högerklicka på en kontroll eller någonstans i ett formulär &lt; **Uppgiftsinspelare** &lt; **Lägg till informationssteg.** Informationssteg visas som ett numrerat steg vid den tidpunkt som du infogar det, även om ingen uppgift spelats in i användargränssnittet. Du kan lägga till ett informationssteg på formulärnivå eller ett informationssteg associerat med en kontroll. När ett informationssteg tillhör ett formulär visas uppgiftsguidens "bubbla" någonstans i formuläret utan pekare när uppgiftsguiden spelas upp. När ett informationssteg tillhör en kontroll pekar uppgiftsguidens "bubbla" på kontrollen när uppgiftsguiden spelas upp. I hjälpfönstret visas en informationsstegsanteckning som ett numrerat steg med texten du angett. Använd informationssteg för att förbereda användaren för nästa steg, för att beskriva steg som måste utföras utanför appen eller att hänvisa till andra registreringar (det går dock inte att skapa hyperlänkar i kommentarer).
 

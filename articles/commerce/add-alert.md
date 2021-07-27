@@ -2,7 +2,7 @@
 title: Annonsbanderollmodul
 description: Det här avsnittet handlar om annonsbanderollmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: be3cc9729b58fce9ebc9885d8cb20b63114362a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3158916f96522bec6e7511f2d9daf61d36ffe8c6
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796256"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479362"
 ---
 # <a name="promo-banner-module"></a>Modul med kampanjbanderoll
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Det här avsnittet handlar om annonsbanderollmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 
@@ -34,7 +35,7 @@ I annonsbanderollmoduler kan du använda textmeddelanden och länkar. Om flera m
 
 Annonsbanderollmoduler styrs av data från CMS-systemet (Content Management System) och kan placeras på vilken sida som helst.
 
-## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>Exempel på annonsbanderoller i näthandel
+## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>Användningsexempel för annonsbanderoller i näthandel
 
 Annonsbanderoller kan användas i webbplatshuvudet för att visa erbjudanden som rör hela webbplatsen, som i följande exempel.
 
@@ -46,7 +47,7 @@ Annonsbanderoller kan användas i webbplatshuvudet för att visa erbjudanden som
 
 Följande bild visar ett exempel på en annonsbanderoll.
 
-![Exempel på en annonsbannermodul](./media/ecommerce-Promobanner.PNG)
+![Exempel på en annonsbannermodul.](./media/ecommerce-Promobanner.PNG)
 
 ## <a name="promo-banner-module-properties"></a>Egenskaper för annonsbanderollmodul
 
@@ -59,6 +60,10 @@ Följande bild visar ett exempel på en annonsbanderoll.
 | Visa ikonen karusell     | **Sant** eller **falskt**              | Ett värde som anger om karusell-ikoner ska visas, så att kunder manuellt kan gå igenom flera olika banderollobjekt. |
 | Textjustering            | **Höger**, **Vänster** eller **Centrera** | Textjusteringen i annonsbanderollmodulen. |
 | Länka                      | En URL                              | URL:en för en valfri länk. |
+|Textjustering             | **Höger**, **Vänster** eller **Centrera** | Denna egenskap finns som ett tematillägg för Adventure Works-temat. Med den kan en användare ställa in textjusteringen i kampanjbannern. |
+
+> [!IMPORTANT]
+> Adventure Works-temat finns tillgängligt från och med Dynamics 365 Commerce-version 10.0.20.
 
 ## <a name="add-a-promo-banner-module-to-a-page"></a>Lägg till annonsbanderollmodul till en sida 
 
@@ -78,7 +83,6 @@ Om du vill lägga till en annonsbanderollmodul på en sida och ställa in de obl
 
 > [!NOTE]
 > En annonsbanderoll används vanligtvis i sidhuvud- eller underrubrikfacket.
-
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

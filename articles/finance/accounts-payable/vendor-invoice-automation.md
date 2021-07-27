@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d776ad4eda623f55a69d81eefd0e88842d9da401
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 217c5d6d6df88eccf377fbf604eb0a1eb0ba7c9c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841247"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344816"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Fakturaautomatisering för skannade dokument
 
@@ -32,9 +32,9 @@ Organisationer som vill förenkla sina processer för leverantörsreskontra (AP)
 
 Lösningen för automatiseringen av fakturor innebär ett standardgränssnitt som kan acceptera fakturametadata för fakturahuvudet och fakturaraderna och även bifogade filer som är kopplade till fakturan. Alla externa system som genererar artefakter som överensstämmer med det här gränssnittet kan skicka flödet för automatisk bearbetning av fakturor och bifogade filer.
 
-Följande bild visar ett exempelscenario på integrering där Contoso samarbetar med en OCR-tjänstleverantör för behandling av leverantörsfakturor. Contosos leverantörer skickar fakturor till tjänstleverantören via e-post. Via OCR-bearbetningen genererar tjänstleverantören fakturans metadata (rubrik och/eller rader) och en skannad bild av fakturan. Ett integreringsskikt omvandlar sedan dessa artefakter så att de kan förbrukas.
+Följande bild visar ett exempelscenario på integrering där Contoso samarbetar med en OCR-tjänsteleverantör för behandling av leverantörsfakturor. Contosos leverantörer skickar fakturor till tjänsteleverantören via e-post. Via OCR-bearbetningen genererar tjänstleverantören fakturans metadata (rubrik och/eller rader) och en skannad bild av fakturan. Ett integreringsskikt omvandlar sedan dessa artefakter så att de kan förbrukas.
 
-![Exempel på integreringsscenario](media/vendor_invoice_automation_01.png)
+![Exempel på integreringsscenario.](media/vendor_invoice_automation_01.png)
 
 Det finns flera varianter av föregående scenario som är möjliga om fakturintegrering krävs. Migrering av data är ett annat användningsfall där detta gränssnitt kan användas för att skapa fakturor och bilagor.
 
@@ -92,7 +92,7 @@ I fall där leverantörsfakturor når Finance and Operations via integrering må
 
 Den nya sidan med lista över undantag finns på **Leverantörsreskontra** > **Fakturor** > **Importfel** > **Leverantörsfakturor som inte importerades**. Den här sidan visar alla rubrikposter för leverantörsfakturan från mellanlagringsregistret för leverantörsfakturans rubrikdatapost. Observera att du kan visa samma poster från arbetsytan **Datahantering**. Du kan också utföra samma åtgärder som tillhandahålls i undantagshanteringsfunktionen från arbetsytan **Datahantering**. Funktionen för undantagshantering har optimerats för en funktionell användare, vilket gör det enklare att använda.
 
-![Sida med lista över undantag](media/vendor_invoice_automation_02.png)
+![Sida med lista över undantag.](media/vendor_invoice_automation_02.png)
 
 Den här sidan innehåller följande fält som kommer in via flödet:
 
@@ -136,7 +136,7 @@ Sidan med en lista över undantag stöder standardsäkerhetskonstruktioner som a
 + Efter användare
 + Efter juridisk person
 
-![Importjobb som skyddas av användarroll och juridisk person](media/vendor_invoice_automation_04.png)
+![Importjobb som skyddas av användarroll och juridisk person.](media/vendor_invoice_automation_04.png)
 
 Om skydd konfigureras för importen av fakturan, godkänner sidan med listan över undantag dessa inställningar. Användarna kommer enbart att kunna visa de undantagsposter för fakturan som den här inställningen tillåter.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d4a1c2f45d77c3ff9a7bb4dffaf12d877dc04e69
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 214f99563f8bb08d8c051f904d0ca0a88267aa6b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936790"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349660"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Ställa in anpassade sidor för användarinloggningar
 
@@ -40,7 +40,7 @@ De anpassade handelssidorna kan skapas med hjälp av modulen logga in, registrer
 
 När du har ställt in Azure AD B2C-innehavare och associerar den med din handelsmiljö, går du till sidan **Azure AD B2C** i Azure-portalen och väljer i menyn **Policyer** och sedan **Användarflöden (policyer)**.
 
-![Kommandot användarflöden (policyer) på menyn](./media/B2C_CustomPage_PoliciesMenu.png)
+![Kommandot Användarflöden (policyer) på menyn.](./media/B2C_CustomPage_PoliciesMenu.png)
 
 Du kan nu konfigurera användarinloggningsflöden "registrera och logga in", "profilredigering" och "lösenordsåterställning".
 
@@ -54,13 +54,13 @@ För att konfigurera policyn "Registrera och logga in" följ stegen nedan.
 1. I kolumnen **Samla in attribut** välj kryssrutorna för **e-postadress**, **förnamn** och **efternamn**.
 1. I kolumnen **returanspråk** markerar du kryssrutorna för **e-postadresser**, **förnamn**, **identitetsleverantör**, **efternamn** och **användarens objekt-ID**.
 
-    ![Valda attribut och anspråk](./media/B2C_SignInSignUp_Attributes.png)
+    ![Valda attribut och anspråk.](./media/B2C_SignInSignUp_Attributes.png)
 
 1. Skapa policyn genom att välja **OK**.
 1. Dubbelklicka på det nya policynamnet och välj sedan **Egenskaper** i navigeringsfönstret.
 1. Ange alternativet **aktivera JavaScript med tvingad sidlayout (förhandsgranskning)** till **På**.
 
-    ![Egenskapssida för den nya policyn](./media/B2C_SignInSignUp_EnableJavascript.png)
+    ![Egenskapssida för den nya policyn.](./media/B2C_SignInSignUp_EnableJavascript.png)
 
 > [!NOTE]
 > Policynamnet kommer att refereras till i handelsmiljön. (Prefixet **B2C\_1\_** kommer att inkluderas i referensen.) Det går inte att byta namn på policyer när de har skapats. Om du ersätter en befintlig policy för din handelsmiljö, kan du ta bort den ursprungliga policyn och bygga en ny policy som har samma namn. Om miljön redan har etablerats kan du skicka det nya policynamnet via en tjänstbegäran.
@@ -150,7 +150,7 @@ För att uppdatera policyn "Registrera och logga in" med anpassad sidinformation
     1. För attributen **e-postadress**, **förnamn** och **efternamn** väljer du **nej** i kolumnen **Valfritt**.
 1. Välj **Spara**.
 
-    ![Konfiguration av policyn sida för registrering av lokalt konto](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
+    ![Konfiguration av policy för registreringssida för lokalt konto.](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
 
 ### <a name="update-the-profile-editing-policy-with-custom-page-information"></a>Uppdatera policyn "Profilredigering" med anpassad sidinformation
 
@@ -188,11 +188,11 @@ I modulbiblioteket är inloggningsmoduler förifyllda med standardtextsträngar 
 
 Standardtexten för länken Glömt lösenordet är **glömt lösenord?**. Nedan visas den här standardtexten på inloggningssidan.
 
-![Standardtext för länken Glömt lösenordet på inloggningssidan](./media/B2C_SignUp_ModuleFace.png)
+![Standardtext för länken Glömt lösenordet på inloggningssidan.](./media/B2C_SignUp_ModuleFace.png)
 
 I global.json-filen för modulen modulbibliotek kan du emellertid redigera texten till **glömt lösenordet?**, som du ser i bilden nedan.
 
-![Länktexten uppdaterades i loggen i modulens global.json-fil](./media/B2C_CustomizingStringsForModule.png)
+![Länktexten uppdaterades inloggningsmodulens global.json-fil.](./media/B2C_CustomizingStringsForModule.png)
 
 När du har uppdaterat global.json-filen och publicerat ändringarna, visas den nya länktexten i modulen logga in både i handel och på live-inloggningssidan.
 

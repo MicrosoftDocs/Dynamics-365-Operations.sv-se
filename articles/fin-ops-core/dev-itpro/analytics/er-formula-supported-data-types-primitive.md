@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d5e6bb5e070ebbcdb7e99b1b70010acd5fca5ac
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 4e1c70dd0fa89c6cc5a8b4778b073d1cf4a3dadd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224115"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355332"
 ---
 # <a name="supported-primitive-data-types-for-electronic-reporting-formulas"></a>Primitiva datatyper som stöds för elektroniska rapporteringsformler
 
@@ -112,13 +112,13 @@ En *programuppräkning* kan användas i uttryck för valfri ER-modellmappning oc
 
 I följande bild visas hur du kan lägga till uppräkningsmodellen **CustVendCorrecpreciReasonCode** i den redigerbara ER-datamodellen.
 
-[![Konfigurera en modelluppräkning i ER-datamodelldesignern](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
+[![Konfigurera en modelluppräkning i ER-datamodelldesignern.](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
 
 En *modelluppräkning* kan användas i uttryck för valfri ER-modellmappning och valfritt ER-format som skapades under en datamodell där *uppräkningen* infördes.
 
 I följande bild visas hur du kan lägga till uppräkningsformatet **Lista över underkategorier för återförda tillägg in natura** i det redigerbara ER-formatet.
 
-[![Konfigurera en formatuppräkning i ER-formatdesignern](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
+[![Konfigurera en formatuppräkning i ER-formatdesignern.](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
 
 En *formatuppräkning* kan bara användas i uttryck för ER-formatet där *uppräkningen* införts.
 
@@ -126,15 +126,15 @@ Du måste använda lämplig typ av ER-datakällor för att ta med en specifik up
 
 - Programuppräkningar kan nås med datakällorna **Dynamics 365 for Operations \ Uppräkning** och **Allmänt \ Parametrar för användarindata**. I följande bild visas hur du i de redigerbara ER-formaten kan lägga till datakällorna **appenumNoYes** och **uipNoYes** som refererar till programuppräkningen **NoYes**.
 
-    [![Lägga till datakällor för programuppräkning i ER-formatdesignern](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
+    [![Lägga till datakällor för programuppräkning i ER-formatdesignern.](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
 
 - Du når uppräkningar för datamodeller med hjälp av datakällorna **Datamodell \ Uppräkning** och **Datamodell \ Inmatningsparametrar för uppräkningsanvändare**. I följande bild visas hur du i de redigerbara ER-formaten kan lägga till datakällan **CustVendCorrectiveReasonCode** som refererar till datamodelluppräkningen **CustVendCorrectiveReasonCode**.
 
-    [![Lägga till datakällor för modelluppräkning i ER-formatdesignern](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
+    [![Lägga till datakällor för modelluppräkning i ER-formatdesignern.](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
 
 - Formatuppräkningar kan nås med datakällorna **Format \ Uppräkning** och **Format \ Inmatningsparametrar för uppräkningsanvändare**. I följande bild visas hur du i de redigerbara ER-formaten kan lägga till datakällan **NaturaReverseCharge** som refererar till formatuppräkningen **Underkategorier för återförda tillägg in natura**.
 
-    [![Lägga till datakällor för formatuppräkning i ER-formatdesignern](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
+    [![Lägga till datakällor för formatuppräkning i ER-formatdesignern.](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
 
 En *uppräkning* har inga implicita omvandlingar. Du kan emellertid använda funktionen [TEXT](er-functions-text-text.md) för abonnemangsändring för att konvertera en *uppräkning* till en textsträng. Denna abonnemangsändring är inte språkberoende. För mer information om hur du kan associera ett värde för *uppräkning* med passande språkspecifika etiketter, se användningsexemplen för funktionerna [LISTOFFIELDS](er-functions-list-listoffields.md) och [GETENUMVALUEBYNAME](er-functions-text-getenumvaluebyname.md).
 

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: c34410a8c817de9fed350bf2cd2dd918a37c230f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 0cd19f218e9fa05cd23c52fdf9bbdac6ad82a23b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795367"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357724"
 ---
 # <a name="social-share-module"></a>Modul för delning på sociala nätverk
 
@@ -36,7 +36,7 @@ Varje plattform för sociala medier kan spåra cookies, så den här modulen kr�
 
 Följande bild visar ett exempel på en modul för social delning som används på en produktinformationssida.
 
-![Exempel på en modul för social delning](./media/ecommerce-socialshare.png)
+![Exempel på en modul för social delning.](./media/ecommerce-socialshare.png)
 
 ## <a name="social-share-module-properties"></a>Egenskaper för modul för social delning
 

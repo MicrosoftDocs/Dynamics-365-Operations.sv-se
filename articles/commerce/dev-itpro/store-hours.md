@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 862b032c75145594be78fb2f4e27ea5616605c4d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6d8c1d4e7edc4b83e2489ac6a0bad18ab55c042b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792939"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348252"
 ---
 # <a name="create-and-update-store-hours"></a>Skapa och uppdatera öppettider
 
@@ -49,14 +49,14 @@ Om du vill konfigurera butikens öppettider, följ dessa steg.
     > [!NOTE]
     > Du kan skapa flera mallar med överlappande start- och slutdatum. Därför kan du t.ex. definiera öppettider för butiker i olika tidszoner.
 
-    ![Dialogrutan Lägg till intervall](../dev-itpro/media/Storehours1.png "Dialogrutan Lägg till intervall")
+    ![Dialogrutan Lägg till intervall.](../dev-itpro/media/Storehours1.png "Dialogrutan Lägg till intervall")
 
 4. Associera mallen för öppettider med butikerna där den ska användas. I dialogrutan **Välj organisationsnoder** väljer du butiker, regioner och organisationer som mallen ska associeras med.
 
     - Det går bara att associera en öppettidsmall till varje butik.
     - Välj butiker, regioner eller organisationer med pilknapparna. Kalendern kommer att vara tillgänglig för butikerna eller butiksgrupperna och den visas i kassan för referens.
 
-    ![Dialogrutan Välj organisationsnoder](../dev-itpro/media/Storehours2.png "Dialogrutan Välj organisationsnoder")
+    ![Dialogrutan Välj organisationsnoder.](../dev-itpro/media/Storehours2.png "Dialogrutan Välj organisationsnoder")
 
 5. På sidan **Distributionsschema**, kör du jobben **1070** och **1090** för att göra öppettiderna tillgängliga för kassan.
 
@@ -75,7 +75,7 @@ Följ dessa steg för att lägga till öppettider på de utskrivna kassakvittona
 
 I kassakvitton ingår nu butikens öppettider. Om helgdagar inkluderades i mallen visas de på kvittot.
 
-![Kvittoexempel](../dev-itpro/media/Storehours3.png "Kvittoexempel")
+![Kvittoexempel.](../dev-itpro/media/Storehours3.png "Kvittoexempel")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

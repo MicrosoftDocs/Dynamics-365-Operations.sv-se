@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dd652af3100f8de59e06490443baeebca58a4dd3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7976a7d555c04cb2ea01a2dbe571f6b8b440b69a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838548"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347078"
 ---
 # <a name="maintenance-forecasts"></a>Underhållsprognoser
 
@@ -102,7 +102,7 @@ Om du vill få en översikt som visar var artikeln på den valda raden används,
 
 I bilden nedan visas ett exempel på sidan **Underhållsprognos för arbetsorder**.
 
-![Figur 1](media/06-work-orders.png)
+![Figur 1.](media/06-work-orders.png)
 
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatisk uppdatering av arbetsorderprognoser
@@ -120,7 +120,7 @@ Om timkostnader, artikelkostnader och utgifter uppdateras i andra moduler i Micr
 
 I bilden nedan visas ett exempel på sidan dialogrutan **Uppdatera arbetsorderprognos**.
 
-![Figur 2](media/07-work-orders.png)
+![Figur 2.](media/07-work-orders.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

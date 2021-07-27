@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5b044e4616555559be51b0846327b1d55bfe47b3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 851cf6df576db303d9fefdcd0e732a92a019189a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822549"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354118"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Ställ in prioriterade underhållsarbetare
 
@@ -59,7 +59,7 @@ Ju fler val du gör för samma post, desto mer specifika blir inställningarna.
 
     [!NOTE] När en prioriterad underhållsarbetare väljs under arbetsorderplaneringen går Tillgångshantering igenom alla poster för **Prioriterade underhållsarbetare** för att söka efter en eventuell matchning, och kontrollerar alltid den mest specifika kombinationen först. Om det inte går att hitta någon matchning används "standard"-posten med ett val i fältet **Prioriterad underhållsarbetargrupp** eller fältet **Prioriterad underhållsarbetare**.
 
-![Figur 1](media/02-work-order-scheduling.png)
+![Figur 1.](media/02-work-order-scheduling.png)
 
 Du kan också ställa in *ansvariga* underhållsarbetare som kan väljas när en begäran om underhåll eller en arbetsorder skapas. Du kan redigera valet i **Alla arbetsorder** och **Alla underhållsbegäranden** om det behövs. Mer information finns i [Ansvariga underhållsarbetare](../setup-for-maintenance-requests/responsible-workers.md).
 

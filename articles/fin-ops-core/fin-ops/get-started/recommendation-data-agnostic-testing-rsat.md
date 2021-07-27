@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 120a88790b7cdb6a8cfcf97cbafeced4685384f2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e4795d11ac370003e48dc845c86ec8a5ba22aa86
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744673"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348665"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Test av dataagnostisk med hjälp av Regression Suite Automation Tool
 
@@ -30,7 +30,7 @@ Funktionsvalideringen av ett ERP-program kan inte vara fullständigt dataagnosti
 - ATL-ramverk
 - Regression Suite Automation Tool (RSAT)
 
-[![Testklassificeringspyramid](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
+[![Testklassificeringspyramid.](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
 
 ## <a name="overview"></a>Översikt
 -   **SysTest-ramverk** – SysTest-ramverket är pålitligt för skrivning av enhetstest. Eftersom enhetstest vanligtvis testar en metod eller funktion bör de alltid vara dataagnostik och endast beroende av indata som tillhandahålls som en del av testet.
@@ -42,7 +42,7 @@ Funktionsvalideringen av ett ERP-program kan inte vara fullständigt dataagnosti
     - o Ange de unika identifierarna, t.ex. fakturanummer, via nummerserien eller genom att använda Microsoft Excel funktioner som t.ex. =TEXT(NOW(),"yyyymmddhhmm"). Funktionen anger ett unikt nummer varje minut, vilket gör att du kan spåra när åtgärden utförs. Den kan användas för variabler som t.ex. produktinleveransnummer och leverantörsfakturanummer. Dessa tester fortsätter att arbeta med samma databas igen och återigen, utan att det krävs någon återställning.
     - Ställ alltid in **Redigeringsläge** för miljön till **Läsa** eller **Redigera** som det första test fallet eftersom standardalternativet är **Auto**. Alternativet **Auto** använder alltid den föregående inställningen och kan orsaka otillförlitliga tester. 
  
-    [![Sidan Alternativ, fliken Prestanda](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![Sidan Alternativ, fliken Prestanda.](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - Validera endast när du filtrerar efter en viss transaktion i stället för en allmän validering. För antalet poster kan du t.ex. filtrera för transaktionsnumret eller transaktionsdatumet så att valideringen exkluderar alla andra transaktioner. 
     - Om du checkar in ett kundsaldo eller en budgetkontroll sparar du först värdet och lägger sedan till transaktionsvärdet för att validera det förväntade resultatet istället för att validera ett fast förväntat värde. 

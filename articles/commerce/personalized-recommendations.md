@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dc0fbff437bfa948d70a03479561542106805bdb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b6d68d62636b5750cdcdca3f8ccbe155dc249b72
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804439"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352310"
 ---
 # <a name="enable-personalized-recommendations"></a>Aktivera anpassade rekommendationer
 
@@ -50,7 +50,7 @@ Så här aktiverar du anpassning.
 1. Välj funktionen **Anpassade produktrekommendationer**.
 1. I egenskapsfönstret **Anpassade produktrekommendationer** välj **Aktivera nu**.
 
-![Aktivera anpassning](./media/FeatureManagement_Personalized.PNG)
+![Aktivera anpassning.](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > När du aktiverar anpassningar startas processen för generering av anpassade produktrekommendationslistor. Det kan krävas upp till en dag innan dessa listor är tillgängliga och kan visas online och i POS.
@@ -73,7 +73,7 @@ Innan listan "Val för dig"-listan kan visas på alla näthandelssidor måste f�
 
 I bilden nedan visas ett exempel på en lista över "val för dig"-lista på en nätbutiks sida.
 
-!["Val för dig"-lista online](./media/picksforyou.png)
+!["Val för dig"-lista online.](./media/picksforyou.png)
 
 ### <a name="recommended-for-customer-lists-at-the-pos"></a>"Rekommenderad för kunder"-listor i POS
 
@@ -81,7 +81,7 @@ För att förbättra sin klientelingupplevelse kan återförsäljare anpassa bef
 
 I bilden nedan visas ett exempel på en lista över "rekommenderad för kund"-lista i en kassaterminal.
 
-!["Rekommenderad för kunder"-list i POS](./media/picksonpos.png)
+!["Rekommenderas för kunder"-lista i kassan.](./media/picksonpos.png)
 
 ## <a name="apply-personalization-to-existing-recommendation-lists"></a>Använd anpassningar för befintliga rekommendationslistor
 
@@ -89,7 +89,7 @@ I bilden nedan visas ett exempel på en lista över "rekommenderad för kund"-li
 
 En inloggad användare har till exempel redan köpt den svarta klockan och de bruna arbetsstövlar som visas i listan "trend – standard" i följande bild. Därför kommer användarna att se nya produkter i stället för dessa produkter, som de visas i listan "trend – anpassa".
 
-![Använda anpassning](./media/applypersonalization.png)
+![Använda anpassning.](./media/applypersonalization.png)
 
 Om du vill använda anpassningar för en befintlig rekommendations lista i webbplatsskaparen för Commerce följer du stegen nedan.
 
@@ -99,7 +99,7 @@ Om du vill använda anpassningar för en befintlig rekommendations lista i webbp
 1. I dialogrutan **Välj konfiguration för produktlista**, under **Typ**, välj listtyp.
 1. Markera kryssrutan **Använd anpassning** och välj sedan **OK**.
 
-    ![Använda anpassningar i en trendlista](./media/ApplyPersonalizationToTrending.PNG)
+    ![Använda anpassningar i en trendlista.](./media/ApplyPersonalizationToTrending.PNG)
 
 1. Spara sidan, slutför redigeringen av den och publicera den. När sidan har publicerats kommer de inloggade användarna att se anpassade trendlistor.
 

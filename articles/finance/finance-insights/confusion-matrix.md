@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: fe652c32df9417f0f716242a24a26eabd1a16f65
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 32561935958268f35acc24f1cfb823546636c1f6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193550"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349068"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Resultat av maskininlärningsmodeller (förhandsversion)
 
@@ -34,7 +34,7 @@ När ett övervakat ML-problem har tränats in på en uppsättning historiska da
 
 Ditt mål kan till exempel vara att förutsäga om ett husdjur är en hund eller katt, baserat på vissa fysiska och beteendebaserade attribut. Om du har en testdatamängd som innehåller 30 hundar och 20 katter kan sammanblandningsmatrisen likna följande bild.
 
-![Exempel på förutsägelse om art](media/species-prediction-matrix.png)
+![Exempel på förutsägelse om art.](media/species-prediction-matrix.png)
 
 Talen i de gröna cellerna representerar korrekta förutsägelser. Som du ser förutsäger modellen en högre procentandel av faktiska katter på rätt sätt. Modellens övergripande noggrannhet är enkel att beräkna. I det här fallet är den 42 ÷ 50, eller 0,84.
 
@@ -44,7 +44,7 @@ De flesta diskussioner om sammanblandningsmatrisen är inriktade på binära kla
 
 Nu ska vi ta hänsyn till ett klassificeringsproblem för ett finansscenario med tre tillstånd. Modellen förutsäger om en kundfaktura kommer att betalas i tid, sent eller mycket sent. Exempelvis av 100 testfakturor betalas 50 i tid, 35 betalas sent och 15 betalas mycket sent. I det här fallet kan en modell generera en sammanblandningsmatris som liknar bilden nedan.
 
-![Modell 1](media/payment-prediction-matrix.png)]
+![Modell 1.](media/payment-prediction-matrix.png)]
 
 En sammanblandningsmatris ger betydligt mer information än ett enkelt noggrannhetsmått. Det är dock fortfarande relativt enkelt att förstå. En sammanblandningsmatris visar om du har en balanserad datamängd där utdataklasserna har liknande antal. När det gäller scenariot med flera klasser får du veta hur avvikande en förutsägelse kan vara när utdataklasserna är ordningstal, som i föregående exempel om kundbetalningar.
 
@@ -55,7 +55,7 @@ Eftersom noggrannhet är ett enkelt mått att förstå, är det en bra utgångsp
 
 För en mer grundlig förståelse bör emellertid flera utmaningar som är förknippade med noggrannhet noteras. Måttets användbarhet beror på problemets kontext. En fråga som ofta uppstår i relation till modellprestanda är, "hur bra är modellen?". Svaret på den här frågan är dock inte nödvändigtvis okomplicerat. Tänk på följande sammanblandningsmatris (modell 2).
 
-![Exempel på betalningsförutsägelse med ett större urval](media/payment-prediction-matrix-2.png)
+![Exempel på betalningsförutsägelse med ett större urval.](media/payment-prediction-matrix-2.png)
 
 En snabb beräkning visar att den här modellens noggrannhet är (70 + 10 + 3) ÷ 100, eller 0,83. På ytan verkar detta resultat bättre än resultatet för den tidigare modellen med flera klasser (modell 1), vilket har en exakthet på 0,73. Men är det bättre?
 
@@ -87,7 +87,7 @@ Det slutliga övervägandet i det här ämnet är ett mer avancerat mått på kl
 
 Innan F1-noggrannhet kan definieras måste ytterligare två mått införas: precision och återkallande. Precision anger hur många av det totala antalet förutsägelser som har angetts som positiva som är korrekt tilldelade. Det här måttet kallas även det positiva predikativa värdet. Återkallande är det totala antalet faktiska positiva fall som har förutsagts korrekt. Det här måttet kallas också för känslighet.
 
-[![Sanna resultat kontra falska resultat](./media/tn-fn.png)](./media/tn-fn.png)
+[![Sanna resultat kontra falska resultat.](./media/tn-fn.png)](./media/tn-fn.png)
 
 I sammanblandningsmatrisen i föregående bild beräknas dessa mått på följande sätt:
 
@@ -100,7 +100,7 @@ Med F1-måttet kombineras precision och återkallande. Resultatet blir det harmo
 
 Nu ska vi titta på ett konkret exempel. Tidigare i det här avsnittet fanns ett exempel på en modell som var förutsade om ett djur är en hund eller katt. Bilden upprepas här.
 
-[![Exempel på förutsägelse om art (upprepas)](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+[![Exempel på förutsägelse om art (upprepas).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 Här är resultaten om "hund" används som positivt svar.
 
@@ -114,9 +114,9 @@ Som du ser ligger F1-värdet mellan värdena för precision och återkallande.
 
 Avsnittet [Modellens noggrannhet](#model-accuracy) i det här ämnet jämförde de två följande sammanblandningsmatriserna. Även om den första modellen har lägre noggrannhet, ansågs den vara en mer användbar modell eftersom den visade mer förbättring än standardgissningen för betalning i tid.
 
-![Exempel på betalningsförutsägelse kontra faktiskt utfall](media/payment-prediction-matrix.png)
+![Exempel på betalningsförutsägelse kontra faktiskt utfall.](media/payment-prediction-matrix.png)
 
-![Exempel på betalningsförutsägelse med ett större urval (upprepas)](media/payment-prediction-matrix-2.png)
+![Exempel på betalningsförutsägelse med ett större urval (upprepas).](media/payment-prediction-matrix-2.png)
 
 Nu ska vi se hur de här två modellerna står sig i jämförelse med när F1-poängen används. F1-poängfaktorerna i precision och återkallande för varje tillstånd, och F1-makroberäkningen tar fram medelvärdet för F1-poäng för alla tillstånd för att fastställa en övergripande F1-poäng. Det finns andra F1-varianter, men det är av större intresse att ta hänsyn till makroversionen, med tanke på den lika behandling som ges för alla tre tillstånden.
 

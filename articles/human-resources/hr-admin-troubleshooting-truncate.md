@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a03c8f340e8ebb2fb0440518c154ed3bdd0197f6
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 7f735726a7e126174bc9c6a4002e421df3f21298
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053261"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360626"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Undvika att texten trunkeras i befattningshierarkin och exportera till Visio
 
@@ -29,13 +29,13 @@ ms.locfileid: "6053261"
 
 När en kund visar befattningshierarkin i Dynamics 365 Human Resources trunkeras namnen på individer och befattningar. Därför kan det vara svårt att ta en skärmbild eller att skriva ut och distribuera hierarkin.
 
-![Befattningshierarki](media/position-h.png)
+![Befattningshierarki.](media/position-h.png)
 
 **Orsak**
 
 Detta beteende är av design.
 
-**Upplösning**
+**Lösning**
 
 Tyvärr kan användare inte enkelt ändra textens storlek. Du kan exportera befattningshierarkin från Personal och sedan importera den till Microsoft Visio. Även om följande artikel skrevs för Microsoft Dynamics AX 2012, gäller processen fortfarande för Personal: [Exportera en befattningshierarki till Microsoft Visio](/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
 
@@ -47,48 +47,48 @@ Gör så här för att exportera till Visio.
 
 2. I åtgärdsfönstret, välj knappen **Öppen i Microsoft Office** och klicka sedan på **Exportera till Excel**, välj **Befattningar**. Du kan också trycka på Ctrl+T.
 
-    ![Exportera positionslistsidan till Excel](media/org-admin.png)
+    ![Exportera befattningslistsidan till Excel.](media/org-admin.png)
 
 3. Spara Excel-filen som exporteras.
 
-    ![Exportera till Excel-dialogruta](media/export-excel.png)
+    ![Exportera till Excel-dialogruta.](media/export-excel.png)
 
 4. I Visio, välj **Visio – skapa ny** och välj mallkategorin **Företag**.
 
-    ![Nytt diagram](media/new.png)
+    ![Nytt diagram.](media/new.png)
 
 5. Välj **Guide för organisationsschema** och välj sedan **Skapa**.
 
-    ![Dialogrutan Guide för organisationsschema](media/orgchart-wizard.png)
+    ![Dialogrutan Guide för organisationsschema.](media/orgchart-wizard.png)
 
 6. Välj **Information som redan sparats i en fil eller databas** och välj sedan **Nästa**.
 
-    ![Organisationsschema 1](media/orgchart-wizard7.png)
+    ![Guide för Organisationsschema 1.](media/orgchart-wizard7.png)
 
 7. Välj **En text, Org Plus (\*.txt), eller Excel-fil** och sedan **Nästa**.
 
-    ![Organisationsschema 2](media/orgchart-wizard3.png)
+    ![Guide för Organisationsschema 2.](media/orgchart-wizard3.png)
 
 8. Bläddra till den exporterade Excel-filen som innehåller befattningshierarkin och markera sedan **Nästa**.
 
-    ![Organisationsschema 3](media/orgchart-wizard2.png)
+    ![Guide för Organisationsschema 3.](media/orgchart-wizard2.png)
 
 9. Ange fältet **Namn** till **Befattning**, ange **Rapporterar till** till **Rapportera till befattning** och välj sedan **Nästa**.
 
-    ![Organisationsschema 4](media/orgchart-wizard1.png)
+    ![Guide för Organisationsschema 4.](media/orgchart-wizard1.png)
 
 10. Markera de fält som ska visas på varje nod och välj **Nästa**.
 
-    ![Organisationsschema 5](media/orgchart-wizard5.png)
+    ![Guide för Organisationsschema 5.](media/orgchart-wizard5.png)
 
 11. Lägg till kolumnen **Befattning** till listan **Formdatafält** och välj sedan **Nästa**.
 
-    ![Organisationsschema 6](media/orgchart-wizard6.png)
+    ![Guide för Organisationsschema 6.](media/orgchart-wizard6.png)
 
 12. Bilder är inte tillgängliga för tillfället. Därför på nästa sida välj **Nästa**.
 13. Välj **Jag vill att guiden ska dela upp organisationsschemat över flera sidor**.
 
-    ![Organisationsschema 7](media/orgchart-wizard4.png)
+    ![Guide för Organisationsschema 7.](media/orgchart-wizard4.png)
 
 14. Välj **Slutför**.
 
@@ -98,7 +98,7 @@ Det diagram som skapas i Visio visar varje chef i ett separat kalkylblad.
 
 Baserat på de fält som du valt att inkludera i diagrammet visar varje nod den lämpliga informationen när Visio-filen genereras.
 
-![Hierarkidiagram](media/hierarchy.png)
+![Hierarkidiagram.](media/hierarchy.png)
 
 **Ytterligare alternativ**
 

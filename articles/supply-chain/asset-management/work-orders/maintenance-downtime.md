@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5c0c584ed53dc4ec8a761065838127dc67cbc41e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 09c20020e5e0b957785a88ad511cedfec50a5f29
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813735"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344626"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Underhållsstopp för arbetsorder
 
@@ -45,7 +45,7 @@ Du kan skapa registreringar av underhållsstopp för den valda tillgången på e
 
 Bilden nedan visar ett exempel på sidan **Orsakskoder för underhållsstopp**.
 
-![Figur 1](media/15-work-orders.png)
+![Figur 1.](media/15-work-orders.png)
 
 När du har skapat de orsakskoder för underhållsstopp som du vill använda kan du skapa registreringar av underhållsstopp för arbetsorder och tillgångar.
 
@@ -71,15 +71,15 @@ När du har skapat de orsakskoder för underhållsstopp som du vill använda kan
 
 Bilden nedan visar ett exempel på listan Registrering för underhållsstopp.
 
-![Figur 2](media/16-work-orders.png)
+![Figur 2.](media/16-work-orders.png)
 
 Den kalender som används för att beräkna en registrering av underhållsstopp beror på ditt val i inställningarna av tillgångar och parametrar. Om en resurs väljs för en tillgång i fältet **Resurs** på snabbfliken **Anläggningstillgång** på sidan **Alla tillgångar** används den kalender som har ställts in för den associerade resursgruppen, vilket visas i bilden nedan.
 
-![Figur 3](media/17-work-orders.png)
+![Figur 3.](media/17-work-orders.png)
 
 Om ingen resurs väljs för tillgången används standardkalender som valts på sidan **Parametrar för tillgångshantering** som visas i följande bild.
 
-![Figur 4](media/18-work-orders.png)
+![Figur 4.](media/18-work-orders.png)
 
 Om du vill se en översikt över alla underhållsstoppregistreringar, klicka på **Tillgångshantering** > **Förfrågningar** > **Underhållsstopp**.
 

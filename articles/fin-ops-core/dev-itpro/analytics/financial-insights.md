@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 982d835c6c0d9bf6e19aa0ec1b03bce9aa7d2e5d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 90622bb8fb6452e4b4002fa5aab491112e98d923
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193760"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345822"
 ---
 # <a name="financial-analysis"></a>Ekonomisk analys
 
@@ -60,7 +60,7 @@ För att visas i bokslut och inkluderas i andra visuella element, t ex KPI:er, m
 ## <a name="entity-store"></a>Enhetslagring
 Data för **Ekonomiska analys** hämtas från enhetsbutiken (**systemadministration** \> **inställningar** \> **enhetsbutik**). Om du öppnar arbetsytorna för **Översikt över ekonomichef** eller **Ekonomiska analys** och följande varningsmeddelande visas måste du uppdatera enheterna.
 
-![Varning](./media/Cantdisplay.png)
+![Varning.](./media/Cantdisplay.png)
 
 Du måste uppdatera följande enheter om du vill se data i arbetsytan **Ekonomisk analys**:
 
@@ -124,7 +124,7 @@ Användare kan filtrera rapporten med hjälp av fönstret **Filter** till vänst
 - **Visuellt filter** – dessa filter tillämpas endast på det utvalda visuella elementet. Dessa filter läggs ovanpå sidnivåfiltren.
 - **Detaljgranskningsfilter** – detta filter filtrerar från ett "visuellt källelement" som tillämpas på aktuellt element när du detaljgranskar från källan till aktuellt visuellt element.
 
-![Filteralternativ](./media/filter.png)
+![Filteralternativ.](./media/filter.png)
 
 Välj symbolen för att radera om du vill ta bort ett specifikt filtervärde. Ta inte bort ett filter genom att markera X. Om du väljer X raderas det fält som du filtrerar och försvinner som filteralternativ. Om du av misstag tar bort ett fält från filtret kan du stänga arbetsytan och öppna den igen. Standardinställningarna för filtret kommer att återställas.
 
@@ -169,25 +169,25 @@ Olika nivåer av granskning är tillgängliga via Power BI. Varje nivå har olik
 
 På följande bild är utdraget **råbalans** komprimerat till den högsta nivån i radhierarkin, dvs huvudkontotypen.
 
-![Råbalansutdrag](./media/trial-balance.png)
+![Råbalansutdrag.](./media/trial-balance.png)
 
 Om du vill visa nästa nivå i hierarkin huvudkontokategorier, kan du ställa in fältet **Detaljgranska** till **rader** och välj sedan knappen **visa** (den tredje efter granskningsfältet). Nu visas alla huvudkontokategorier i expanderat format. För närvarande kan Power BI inte expandera bara en rad eller kolumn och samtidigt visa alla de andra raderna eller kolumnerna.
 
-![Råbalansens rader för detaljgranskning](./media/trial-balance2.png)
+![Råbalansens rader för detaljgranskning.](./media/trial-balance2.png)
 
 För att expandera till huvudkonton för alla rader kan du åter använda knappen **visa**. Men om du vill granska huvudkonton för en enstaka rad väljer du först knappen **detaljgranska** (den enda nedåtriktade pilen till höger i fönstret) och markerar sedan den rad du vill detaljgranska. I följande bild visas resultatet när raden **Sales** har markerats efter att knappen **detaljgranska** har valts.
 
-![Expansionsknapp för råbalans](./media/trial-balance3.png)
+![Visningsknapp för råbalans.](./media/trial-balance3.png)
 
 När du detaljgranskar en enda rad krävs flera val för att återgå till full råbalans. Knappen för **upp** (den första knappen efter **detaljgranska**) går uppåt endast vad gäller kategorin **Sales**, vilket visas i följande illustration.
 
-![Knapp upp för detaljnivå på råbalans](./media/trial-balance4.png)
+![Knapp för ökad detaljnivå för råbalans.](./media/trial-balance4.png)
 
 Du kan fortsätta att använda knappen **upp** för att gå tillbaka till den högsta nivån av sammanfattning för raderna.
 
 Power BI har även en knapp som gör att du kan gå till nästa nivå i hierarkin (den andra knappen efter fältet **detaljgranska**). Effekten av den här knappen skiljer sig från effekterna av knappen **expandera** (tredje knappen efter fältet **detaljgranska**), som används för att expandera hierarkin. När du expanderar hierarkin underhålls hierarkin i rapporten. Till exempel, som visades tidigare, om du expanderar på huvudkontotypen syns fortfarande huvudkontotypen i rapporten. Men när du går till nästa nivå i hierarkin visar rapporten inte längre den överordnade hierarkin, enligt följande illustration.
 
-![Knapp ner för detaljnivå på råbalans](./media/trial-balance5.png)
+![Knapp för minskad detaljnivå för råbalans.](./media/trial-balance5.png)
 
 För att se transaktionsdetaljer bakom summerade saldon kan du välja att granska vissa summor tillbaka till Financial and Operations.
 
@@ -226,7 +226,7 @@ För närvarande stöder boksluten inte organisationshierarkier som gör att du 
 ## <a name="data-limitations"></a>Databegränsningar
 De visuella elementen för bokslut har en gräns för hur många rader som kan visas. För närvarande är gränsen satt till 30 000. Om du överskrider den här gränsen ser du en varningssymbol som informerar dig om detta.
 
-![Databegränsningar](./media/data-limit.png)
+![Databegränsningar.](./media/data-limit.png)
 
 Om maximalt antal överskrids blir summorna som visas i bokslutet felaktiga, eftersom inte alla rader har lästs in i det visuella elementet.
 

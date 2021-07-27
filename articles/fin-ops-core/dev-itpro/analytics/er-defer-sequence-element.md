@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a7904924d1c2830287e26eb9fb71bd9a03f210d9
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 3a8d4c57ca6b1fee5f4eb1414bfb503470b5e570
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944519"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348102"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Skjut upp körningen av serie element i ER-format
 
@@ -88,14 +88,14 @@ Innan du börjar måste du också hämta och spara följande konfiguration av ex
 6. I konfigurationsträdet expanderar **Modell för att se uppskjutna element**.
 7. Granska listan över importerade ER-konfigurationer i konfigurationsträdet.
 
-    ![Importerade ER-konfigurationer på sidan konfigurationer](./media/ER-DeferredSequence-Configurations.png)
+    ![Importerade ER-konfigurationer på sidan Konfigurationer.](./media/ER-DeferredSequence-Configurations.png)
 
 ### <a name="activate-a-configurations-provider"></a>Aktivera en konfigurationsprovider
 
 1. Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.
 2. På sidan **lokaliseringskonfiguration** i avsnittet **konfigurationsleverantörer** kontrollerar du att [konfigurationsprovidern](general-electronic-reporting.md#Provider) för Litware, Inc. (`http://www.litware.com`) exempelföretageet är listat och att det är markerat som aktivt. Om denna konfigurationsprovider inte finns med i listan, eller om den inte är markerad som aktiv, följer du [Skapa en konfigurationsleverantör och markera den som aktiv](./tasks/er-configuration-provider-mark-it-active-2016-11.md) markerar den som ett aktivt ämne.
 
-    ![Litware, Inc. exempelföretag på sidan lokaliseringskonfiguration](./media/ER-DeferredSequence-ElectronicReportingWorkspace.png)
+    ![Exempelföretaget Litware, Inc. på sidan Lokaliseringskonfiguration.](./media/ER-DeferredSequence-ElectronicReportingWorkspace.png)
 
 ### <a name="review-the-imported-model-mapping"></a>Granska den importerade modellmappningen
 
@@ -117,7 +117,7 @@ Granska inställningarna för komponenten ER-modellmappning komponenten är konf
     - Datakällan **Grupperade** typ *Gruppera efter* är konfigurerad för att gruppera filtrerade skattetransaktioner för den filtrerade **datakällan**.
     - Sammansättningsfältet **TotalSum** för datakällan **Gruppera** konfigurerad för att sammanfatta värden på fälten **\$TaxAmount** datakällan **filtrerade** datakälla för alla filtrerade skattetransaktioner för den datakällan.
 
-        ![TotalSum aggregeringsfält på sidan redigera 'GroupBy'-parametrar](./media/ER-DeferredSequence-GroupByParameters.png)
+        ![TotalSum-sammansättningsfält på parametersidan "GroupBy".](./media/ER-DeferredSequence-GroupByParameters.png)
 
 9. Granska hur de konfigurerade datakällorna är bundna till datamodellen och hur de visar öppna data så att de blir tillgängliga i ett ER-format:
 
@@ -125,7 +125,7 @@ Granska inställningarna för komponenten ER-modellmappning komponenten är konf
     - Fältet **\$TaxAmount** för datakällan **filtrerade** är bunden fältet **Data.List.Value** i datamodellen.
     - Fältet **TotalSum** för datakällan **Gruppera** är bunden fältet **Data.Summary.Total** av datamodellen.
 
-    ![Modellmappningsdesigner](./media/ER-DeferredSequence-ModelMapping.png)
+    ![Sidan Modellmappningsdesigner.](./media/ER-DeferredSequence-ModelMapping.png)
 
 10. Stäng sidan **Modellmappningsdesigner** och **Modellmappning**.
 
@@ -138,12 +138,12 @@ Granska inställningarna för komponenten ER-modellmappning komponenten är konf
 
     - Elementet för sekvensformat **Rapport\\Rader** är konfigurerat för att fylla det utgående dokumentet med en enda rad som genereras från den kapslade sekvenselement (**Rubrik**, **Post** och **Sammanfattning**).
 
-        ![Formatelement för radsekvens och kapslade element på sidan formatera designer](./media/ER-DeferredSequence-Format.png)
+        ![Formatelement för radsekvens och kapslade element på sidan Formatdesigner.](./media/ER-DeferredSequence-Format.png)
 
     - Format **Rapport\\Rader\\Rubrik** elementet sekvensformat är konfigurerat för att fylla det utgående dokumentet med en enda rubrikrad som visar datum och tid när behandlingen startar.
     - Formatelement för sekvens **Rapport \\Rader\\Post** är konfigurerat för att fylla det utgående dokumentet med en enda rad som visar detaljerna för enskilda skattetransaktioner. Dessa skattetransaktioner skiljs åt av ett semikolon.
 
-        ![Formatelement för postsekvens som använder ett semikolon som avgränsare](./media/ER-DeferredSequence-Format1.png)
+        ![Formatelement för postsekvens som använder ett semikolon som avgränsare.](./media/ER-DeferredSequence-Format1.png)
 
     - Formatelementet för sekvens **Rapportera\\Rader\\Sammanfattning** är konfigurerat för att fylla det utgående dokumentet med en enda sammanfattningsrad som inkluderar summan av skattvärdena från de behandlade skattetransaktionerna.
 
@@ -162,14 +162,14 @@ Granska inställningarna för komponenten ER-modellmappning komponenten är konf
     - Element **TotalTaxAmount** är bundet till **model.Data.Summary.Total** för att generera summan av skattevärden för de bearbetade skattetransaktionerna.
     - Elementet **ExecutionDateTime** genereras datum och tid (inklusive millisekunder) när sammanfattningsraden läggs till.
 
-    ![Fliken Mappning på sidan Formatdesigner](./media/ER-DeferredSequence-Format2.png)
+    ![Fliken Mappning på sidan Formatdesigner.](./media/ER-DeferredSequence-Format2.png)
 
 ### <a name="run-the-imported-format"></a>Kör det importerade formatet
 
 1. Välj **Formatdesigner** på sidan **Kör**.
 2. Hämta filen som webbläsaren erbjuder och öppna den för granskning.
 
-    ![Hämtad exempelrapportfil](./media/ER-DeferredSequence-Run.png)
+    ![Hämtad exempelrapportfil.](./media/ER-DeferredSequence-Run.png)
 
 Observera att sammanfattningsraden 22 visar summan av skattevärden för de bearbetade transaktionerna. Eftersom formatet konfigureras för att använda **model.Data.Summary.Total** bindning om du vill returnera den här summan beräknas summan genom att den **TotalSum** aggregering av datakällan **Grupperad** av typen *GroupBy* som använder modellmappningen. För att beräkna denna modellmappning itererar modellmappningen över alla transaktioner som har valts i datakällan **filtrerade**. Genom att jämföra körningstiderna för raderna 21 och 22 kan du bestämma att beräkningen av summan tog 10 millisekunder (ms). Genom att jämföra körningstiderna för raderna 2 och 21 kan du bestämma att genereringen av alla transaktionsrader tog 7 ms. Därför krävdes totalt 17 ms.
 
@@ -183,12 +183,12 @@ Om transaktionsvolymen är mycket större än volymen i det aktuella exemplet ka
 4. Konfigurera uttrycket **Insamlat datanyckelnamn** som `WsColumn`.
 5. Konfigurera uttrycket **Insamlat datanyckelvärde** som `WsRow`.
 
-    ![Element för radsekvens på sidan formatdesigner](./media/ER-DeferredSequence-Format3.png)
+    ![Element för radsekvens på sidan Formatdesigner.](./media/ER-DeferredSequence-Format3.png)
 
 6. Markera numeriskt element **rapport\\rader\\posten\\TaxAmount**.
 7. Konfigurera uttrycket **Insamlat datanyckelnamn** som `SummingAmountKey`.
 
-    ![TaxAmount numeriskt element på sidan formatdesigner](./media/ER-DeferredSequence-Format4.png)
+    ![Numeriskt TaxAmount-element på sidan Formatdesigner.](./media/ER-DeferredSequence-Format4.png)
 
     Du kan fundera på att ange att ett virtuellt kalkylblad ska uppfyllas, där värdet i cell A1 läggs till med värdet för skattebeloppet från alla bearbetade skattetransaktioner.
 
@@ -196,13 +196,13 @@ Om transaktionsvolymen är mycket större än volymen i det aktuella exemplet ka
 9. Konfigurera `SUMIF(SummingAmountKey, WsColumn, WsRow)` uttrycket med hjälp av den inbyggda [SUMIF](er-functions-datacollection-sumif.md) ER-funktionen.
 10. Välj **Spara**.
 
-    ![SUMIF-uttryck](./media/ER-DeferredSequence-FormulaDesigner.png)
+    ![SUMIF-uttryck.](./media/ER-DeferredSequence-FormulaDesigner.png)
 
 11. Stäng sidan **Formeldesigner**.
 12. Välj **spara** och välj sedan **kör**.
 13. Hämta och granska filen som webbläsaren erbjuder.
 
-    ![Hämtad fil – summerade momsvärden](./media/ER-DeferredSequence-Run1.png)
+    ![Hämtad fil – summerade momsvärden.](./media/ER-DeferredSequence-Run1.png)
 
     Rad 21 innehåller den löpande summan av skattevärden som beräknas för alla bearbetade transaktioner genom att använda den genererade utmatningen som en datakälla. Den här datakällan startar från rapportens början och fortsätter genom den senaste skattetransaktionen. Rad 22 innehåller summan av alla skattevärden för alla bearbetade transaktioner som beräknas i modellmappningen med hjälp av datakällan för typen *GroupBy*. Observera att dessa värden är lika. Därför kan du använda den utmatnings summeringen i stället **GroupBy**. Genom att jämföra körningstiderna för raderna 2 och 21 kan du bestämma att genereringen av alla transaktionsrader och summering tog 9 ms. Därför är det ändrade formatet ungefär två gånger snabbare än det ursprungliga formatet när det gäller genereringen av detaljerade rader och summering av skattevärden.
 
@@ -211,7 +211,7 @@ Om transaktionsvolymen är mycket större än volymen i det aktuella exemplet ka
 16. Välj **spara** och välj sedan **kör**.
 17. Hämta och granska filen som webbläsaren erbjuder.
 
-    ![Hämtad fil med redigerad formel](./media/ER-DeferredSequence-Run2.png)
+    ![Hämtad fil med redigerad formel.](./media/ER-DeferredSequence-Run2.png)
 
     Observera att den totala skattevärden som körs på den sista raden i transaktionsdetaljer nu är lika med summan på sammanfattningsraden.
 
@@ -224,7 +224,7 @@ Om du till exempel vill visa summan av skattevärden i rapportens rubrik kan du 
 3. Välj **spara** och välj sedan **kör**.
 4. Hämta och granska filen som webbläsaren erbjuder.
 
-    ![Hämtad fil för summering i rapportrubriken](./media/ER-DeferredSequence-Run3.png)
+    ![Hämtad fil för summering i rapportsidhuvudet.](./media/ER-DeferredSequence-Run3.png)
 
     Observera att summan av skattevärden på sammanfattningsrad 2 nu är lika med 0 (noll), detta eftersom summan nu beräknas baserat på den genererade utleveransen. När rad 2 genereras, innehåller den genererade utflödet inte ännu rader som har transaktionsdetaljer. Du kan konfigurera det här formatet för att skjuta upp körningen sekvenselement **Rapport\\Rader\\Sammanfattning** tills sekvenselement **Rapport\\Rader\\Post** har körts för alla skattetransaktioner.
 
@@ -233,12 +233,12 @@ Om du till exempel vill visa summan av skattevärden i rapportens rubrik kan du 
 1. På sidan **Formatdesigner** på fliken **Format**, välj sekvenselement **Rapport\\Rader\\Sammanfattning**.
 2. Ge alternativet **uppskjuten körning** värdet **Ja**.
 
-    ![Alternativet uppskjuten körning av sekvenselement sammanfattning på sidan formatdesigner](./media/ER-DeferredSequence-Format5.png)
+    ![Alternativet Uppskjuten körning av sekvenselement för sammanfattning på sidan Formatdesigner.](./media/ER-DeferredSequence-Format5.png)
 
 3. Välj **spara** och välj sedan **kör**.
 4. Hämta och granska filen som webbläsaren erbjuder.
 
-    ![Hämtad fil – uppskjuten körning](./media/ER-DeferredSequence-Run4.png)
+    ![Hämtad fil – uppskjuten körning.](./media/ER-DeferredSequence-Run4.png)
 
     Sekvenselementet **Rapport\\Rader\\Sammanfattning** körs nu bara efter alla andra objekt som är kapslade under dess överordnade element **Rapport\\Rader** har körts. Därför körs det efter att sekvenselementet **Rapport\\Rader\\Post** har elementet har körts för alla skattetransaktioner i **model.Data.List**. Körningstiderna för raderna 1, 2 och 3 och på den sista raden, 22, avslöjar detta faktum.
 

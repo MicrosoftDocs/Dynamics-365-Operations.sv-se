@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: d80c754b7aa154d9636bb0d9fbfb448987d01e48
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cc9273cc46e2549765dec4b2bbc9a3030753791d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841801"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353526"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Säkerhet för artiklar i lageruppfyllelse
 
@@ -72,37 +72,50 @@ Följande scenario visar hur denna parameter fungerar och vad som är skillnader
 > [!NOTE]
 > För alla bilder i det här avsnittet representerar x-axeln lager, y-axeln representerar dagar, staplarna representerar lagernivån, pilarna representerar transaktioner, exempelvis försäljningsorderrader, inköpsorderrader eller planerade order.
 
-[![Vanligt scenario för uppfyllande av säkerhetslager](./media/Scenario1.png)](./media/Scenario1.png) Parametern **Uppfylla minimum** kan ha följande värden:
+[![Vanligt scenario för uppfyllelse av säkerhetslager.](./media/Scenario1.png)](./media/Scenario1.png)
+Parametern **Uppfyll minimum** kan ha följande värden:
 ### <a name="todays-date"></a>Dagens datum 
 Den angivna minimikvantiteten är uppfylld på datumet då huvudplaneringen körs. Systemet försöker så snart som möjligt uppfylla säkerhetslagergränsen trots att den kan vara orealistisk på grund av ledtiden. 
-[![Krav på dagens datum](./media/TodayReq.png)](./media/TodayReq.png) Planerad order P1 skapas för dagens datum så att tillgängligt lager kommer över säkerhetslagernivån på det datumet. Försäljningsorderraderna S1 till S3 fortsätter att minska lagernivån. Planerade order P2 till P4 genereras av huvudplaneringen så att lagernivån återförs till säkerhetsgränsen efter varje försäljningsorder.
+[![Behov på dagens datum.](./media/TodayReq.png)](./media/TodayReq.png)
+Planerad order P1 skapas för dagens datum i syfte att göra att tillgängligt lager överskrider säkerhetslagernivån på det datumet. Försäljningsorderraderna S1 till S3 fortsätter att minska lagernivån. Planerade order P2 till P4 genereras av huvudplaneringen så att lagernivån återförs till säkerhetsgränsen efter varje försäljningsorder.
 När disponeringskoden **Krav** används skapas flera planerade order. Det är alltid en god idé att använda antingen **Period** eller **Min/Max** disposition för artiklar och material som efterfrågas ofta till att förpacka påfyllningen. Följande illustration visar ett exempel på disponeringskoden **Period**.
-[![Period. Dagens datum](./media/TodayPeriod.png)](./media/TodayPeriod.png) Följande illustration visar ett exempel på disponeringskoden **Min/Max**.
-[![MinMax. Dagens datum](./media/TodayMinMax.png)](./media/TodayMinMax.png)
+[![Period. Dagens datum.](./media/TodayPeriod.png)](./media/TodayPeriod.png)
+Följande illustration visar ett exempel på disponeringskoden **Min/Max**.
+[![MinMax. Dagens datum.](./media/TodayMinMax.png)](./media/TodayMinMax.png)
 ### <a name="todays-date--procurement-time"></a>Dagens datum + anskaffningstid 
 Den angivna minimikvantiteten är uppfylld på det datum då huvudplaneringen körs plus leverans- eller produktionstid. Den här tiden inkluderar eventuella säkerhetsmarginaler. Om artikeln har ett handelsavtal och kryssrutan **Sök efter handelsavtal** är markerad på sidan **Huvudplaneringsparametrar** tas leveranstiden från handelsavtalet inte med i beräkningen. Produktionstider tas från inställningarna för artikeldisponering eller från artikeln.
 Det här uppfyllelseorderläget skapar planer med färre förseningar och färre planerade order, oavsett disponeringsgruppen inställd på artikeln. I följande bild visas resultatet av planen om disponeringskoden är **Krav** eller **Period**.  
-[![Krav. Period. Dagens datum och produktionstid](./media/TodayPLTReq.png)](./media/TodayPLTReq.png) Följande bild visar resultatet av planen om disponeringskoden är **Min/Max**.  
-[![MinMax. Dagens datum och ledtid](./media/TodayPLTMinMax.png)](./media/TodayPLTMinMax.png)
+[![Krav. Period. Dagens datum och ledtid.](./media/TodayPLTReq.png)](./media/TodayPLTReq.png)
+I följande bild visas resultatet av planen om disponeringskoden är **Min/Max**.  
+[![MinMax. Dagens datum och ledtid.](./media/TodayPLTMinMax.png)](./media/TodayPLTMinMax.png)
 ### <a name="first-issue"></a>Första utleveransen 
 Den angivna minimikvantiteten är uppfylld på datumet när tillgängligt lager ligger under miniminivån, enligt följande bild. Även om det tillgängliga lagret understiger miniminivån på datumet då huvudplaneringen körs, försöker inte **Första utleveransen** att täcka det förrän nästa behov kommer in.
 Följande illustration visar ett exempel på disponeringskoden **Krav**.
-[![Planera för en artikel med disponeringskoden **Krav** och uppfyllandet **Första utleveransen**](./media/FirstIssueReq.png)](./media/FirstIssueReq.png) Följande bild visar ett exempel på disponeringskoden **Period**.
-[![Planera för en artikel med disponeringskoden **Period** och uppfyllandet **Första utleveransen**](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png) Följande bild visar ett exempel på disponeringskoden **Min/Max**.
-[![Planera för en artikel med disponeringskoden **MinMax** och uppfyllandet **Första utleveransen**](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png) På datumet när huvudplaneringen körs, om tillgängligt lager redan ligger under säkerhetslagergränsen **Dagens datum** och **Dagens datum + anskaffningstid** utlöser omedelbart påfyllningen. **Första utleveransen** väntar tills det finns en annan utleveranstransaktion, till exempel försäljningsorder och krav i strukturlisterad för artikeln och utlöser den påfyllnad vid tidpunkten för transaktionen. Pådatumet när huvudplaneringen körs, om tillgängligt lager inte ligger under säkerhetslagergränsen, ger **Dagens datum** och **Första utleveransen** exakt samma resultat som visas i bilden nedan. 
+[![Planera en artikel med disponeringskoden **Krav** och uppfyllandet **Första utleverans**.](./media/FirstIssueReq.png)](./media/FirstIssueReq.png)
+Följande illustration visar ett exempel på disponeringskoden **Period**.
+[![Planera en artikel med disponeringskoden **Period** och uppfyllandet **Första utleverans**.](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png)
+Följande illustration visar ett exempel på disponeringskoden **Min/Max**.
+[![Planera en artikel med disponeringskoden **MinMax** och uppfyllandet **Första utleverans**.](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png)
+Om tillgängligt lager redan ligger under säkerhetslagergränsen på datumet när huvudplaneringen körs, kommer **Dagens datum** och **Dagens datum + anskaffningstid** omedelbart att utlösa lagerpåfyllnaden. **Första utleveransen** väntar tills det finns en annan utleveranstransaktion, till exempel försäljningsorder och krav i strukturlisterad för artikeln och utlöser den påfyllnad vid tidpunkten för transaktionen. Pådatumet när huvudplaneringen körs, om tillgängligt lager inte ligger under säkerhetslagergränsen, ger **Dagens datum** och **Första utleveransen** exakt samma resultat som visas i bilden nedan. 
 
-[![NotUnderLimit](./media/ReqFirstIssue.png)](./media/ReqFirstIssue.png) På datumet när huvudplaneringen körs, om inte tillgängligt lager ligger under säkerhetslagergränsen, ger **Dagens datum + anskaffningstid** följande resultat eftersom den skjuter upp uppfyllande tills slutet på anskaffningstiden.
-![Planera en artikel med disponeringskoden **Krav** och uppfyllandet **Första utleveransen**](./media/ReqTodayLT.png)
+[![InteUnderLimit.](./media/ReqFirstIssue.png)](./media/ReqFirstIssue.png)
+På det datum då huvudplaneringen körs kommer, om tillgängligt lager inte underskrider gränsen för säkerhetslagret, **Dagens datum + anskaffningstid** att tillhandahålla följande resultat eftersom detta skjuter upp uppfyllandet tills slutet på anskaffningstiden.
+![Planera en artikel med disponeringskoden **Krav** och uppfyllandet **Första utleverans**.](./media/ReqTodayLT.png)
 ### <a name="coverage-time-fence"></a>Tidsgräns för disponering
 Den angivna minimikvantiteten är uppfylld inom den tidsperiod som är angiven i fältet **Tidsgräns för disponering**. Det här alternativet är användbart när huvudplanering inte tillåter att tillgängligt lager används till faktiska order, till exempel försäljningar eller överföringar, i försöket att hålla säkerhetsnivån. I en framtida version behövs det här lagerpåfyllnadsläget inte lägre och det här alternativet blir inaktuellt.
 ## <a name="plan-safety-stock-replenishment-for-first-expired-first-out-fefo-items"></a>Planera säkerhetslageråteranskaffning för artiklar med först utgången, först ut (FEFO)
 Vid varje tillfälle används lagerinleverans med senaste utgångsdatum för säkerhetslager så att den faktiska efterfrågan, till exempel försäljningsrader eller BOM-rader, uppfylls i ordningen FEFO (först utgången, först ut).
 Visa hur detta fungerar genom att anta följande scenario.
-[![FEFOScenario](./media/FEFOScenario.png)](./media/FEFOScenario.png) När planeringen körs täcks den första försäljningsordern från befintlig lagerbehållning och en ytterligare inköpsorder för kvarvarande antal.
-[![FEFO1](./media/FEFO1.png)](./media/FEFO1.png) En planerad order skapas för att säkerställa att tillgängligt lager är tillbaka på säkerhetsgränsen.
-[![FEFO2](./media/FEFO2.png)](./media/FEFO2.png) När andra försäljningsordern planeras används föregående planerad order som täcker säkerhetslagret för denna kvantitet. Därför rullar säkerhetslagret kontinuerligt.
-[![FEFO3](./media/FEFO3.png)](./media/FEFO3.png) Slutligen skapas en annan planerad order för att täcka säkerhetslagret.
-[![FEFO4](./media/FEFO4.png)](./media/FEFO4.png) Alla batchar upphör därför och planerade order skapas för att fylla på säkerhetslagret när det har förfallit.
+[![FEFOScenario.](./media/FEFOScenario.png)](./media/FEFOScenario.png)
+När planeringen körs täcks den första försäljningsordern från befintlig lagerbehållning och en ytterligare inköpsorder för kvarvarande antal.
+[![FEFO1.](./media/FEFO1.png)](./media/FEFO1.png)
+En planerad order skapas för att säkerställa att tillgängligt lager återställs till säkerhetsgränsen.
+[![FEFO2.](./media/FEFO2.png)](./media/FEFO2.png)
+När den andra försäljningsordern planeras används föregående planerad order som täcker säkerhetslagret för denna kvantitet. Därför rullar säkerhetslagret kontinuerligt.
+[![FEFO3.](./media/FEFO3.png)](./media/FEFO3.png)
+Slutligen skapas ytterligare en planerad order för att täcka säkerhetslagret.
+[![FEFO4.](./media/FEFO4.png)](./media/FEFO4.png)
+Alla batchar upphör därför, och planerade order skapas för att fylla på säkerhetslagret när detta har förfallit.
 
 ## <a name="how-master-planning-handles-the-safety-stock-constraint"></a>Hur huvudplanering hanterar av säkerhetlagrets begränsningar
 

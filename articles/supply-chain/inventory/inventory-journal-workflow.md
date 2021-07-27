@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b53ecec4bb7593cb0a0cae72e4132c49d6ec6a68
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bcb242214efab3fd632ea0b9e0f3329bb7821dc0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826021"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354771"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Godkännandearbetsflöden för lagerjournal
 
@@ -55,7 +55,7 @@ För att skapa ditt godkännandearbetsflöde för lagerjournal:
     - **Lagerjournal för strukturlista**
     - **Lagerjusteringsjournal**
 
-    ![Dialogrutan skapa arbetsflöde](media/journal-workflow-create-workflow.png "Dialogrutan skapa arbetsflöde")
+    ![Dialogrutan skapa arbetsflöde.](media/journal-workflow-create-workflow.png "Dialogrutan skapa arbetsflöde")
 
 1. Arbetsflödesredigerarens app startas på din dator. (Du kan bli ombedd att godkänna den här åtgärden.) Använd den för att utforma arbetsflödet efter behov. Mer information om hur du använder arbetsflödes redigeraren finns i [arbetsflödessystem - översikt](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 1. När du har sparat och stängt appen i arbetsflödes redigeraren måste du välja om du vill aktivera arbetsflödesversionen eller behålla den som inaktiv.
@@ -73,7 +73,7 @@ Så här kopplar du ett arbetsflöde för lagerjournal med ett lagerjournalnamn:
 1. Välj ett journalnamn från listkolumnen för att öppna sidan inställningar för dess inställningar.
 1. På snabbfliken **Allmänt** ställer du in **Godkännandearbetsflöde** till **Ja**. Om du uppmanas att bekräfta åtgärden väljer du **Ja**.
 
-    ![Tilldela ett arbetsflöde till ett journalnamn](media/journal-workflow-journal-name.png "Tilldela ett arbetsflöde till ett journalnamn")
+    ![Tilldela ett arbetsflöde till ett journalnamn.](media/journal-workflow-journal-name.png "Tilldela ett arbetsflöde till ett journalnamn")
 
 1. Öppna listrutan **Arbetsflöde** och välj lämpligt arbetsflöde. I listan visas varje aktivt arbetsflöde som du har skapat med hjälp av appen arbetsflödesredigeraren.
 
@@ -87,7 +87,7 @@ När du har associerat namnet på en lagerjournal med det matchande arbetsflöde
 1. Fyll i journalen efter behov.
 1. När du skapar eller öppnar en lagerjournal med ett godkännande arbetsflöde som är associerat med den, kommer knappen **arbetsflöde** att vara aktiv i åtgärdsfönstret. När du är klar att skicka in journalen för godkännande väljer du knappen **arbetsflöde** för att öppna en nedrullningsbar dialogruta och sedan välja **Skicka**. Godkännandeförfrågan skickas sedan till relevant godkännare, som meddelas med hjälp av den meddelandemetod som har konfigurerats för arbetsflödet.
 
-    ![Skicka en journal för godkännande](media/journal-workflow-inventory-journal.png "Skicka en journal för godkännande")
+    ![Skicka en journal för godkännande.](media/journal-workflow-inventory-journal.png "Skicka en journal för godkännande")
 
 Om du vill återkalla en begäran om godkännande öppnar du den relevanta journalen, väljer knappen **Arbetsflöde** och väljer sedan **återkalla**. Detta återställer arbetsflödet.
 

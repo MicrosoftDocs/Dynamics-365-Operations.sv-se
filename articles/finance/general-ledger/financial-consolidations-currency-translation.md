@@ -9,16 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 87bb31d6456356342773f38699a412aa72ea458e
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 4e8d4f28c42f44dc01c92e51b5e9a69fe7f40fa0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193915"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345390"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Ekonomisk konsolidering och valutaregistrering – översikt
 
@@ -66,13 +67,13 @@ Nedan följer några konsolideringsscenarier som Konsolidera online stöder:
 ## <a name="legal-entity-setup"></a>Inställning av juridisk person
 Innan du bearbetar en konsolidering måste du ställa in den juridiska personen. Du kan köra konsolideringen så många gånger som du behöver och alla data som ska konverteras från källföretagets redovisningsvaluta till den valuta som har definierats för konsolideringsföretaget. Därför, för följande organisationsstruktur, om du först måste konvertera alla amerikanska företag till amerikanska dollar (USD) och sedan till euro (EUR), valutan för det överordnade företaget, måstedu ah ha minst två konsolideringsföretag.
 
-![Organisationsstruktur](./media/organizational-structure.png "Organisationsstruktur")
+![Organisationsstruktur.](./media/organizational-structure.png "Organisationsstruktur")
 
 I den föregående organisationsstrukturen måste du ha en juridisk person för nordamerikanska konsolideringen eftersom konsolideringar alltid konsoliderar från källföretagets redovisningsvaluta till konsolideringsföretagets valuta. I exemplet, om alla företag ingår i en enda konsolidering, ska det mexikanska dotterbolaget konvertera från Mexikanska pesos (MXN) till euro, inte från MXN till USD till EUR.
 
 När du skapar en juridisk person kan du ange om företaget används för både konsolideringsprocessen och elimineringsprocessen eller för endast en av dessa processer. I följande exempel används företaget för båda processerna. Observera att du inte kan bokföra dagboksjournaler i ett konsolideringsföretag, men du kan bokföra dem i ett elimineringsföretag. Därför kan du behöva ett separat elimineringsföretag.
 
-![Juridisk person som används för både konsolidering och eliminering](./media/sep-elimination-company.png "Juridisk person som används för både konsolidering och eliminering")
+![Juridisk person som används för både konsolidering och eliminering.](./media/sep-elimination-company.png "Juridisk person som används för både konsolidering och eliminering")
 
 ## <a name="main-accounts-and-consolidation-account-groups"></a>Huvudkonton och konsolideringskontogrupper
 Ett val som du måste göra är hur du vill konsolidera din kontoplan. Under konsolideringsprocessen finns det tre alternativ för konsolidering av huvudkonto.
@@ -81,11 +82,11 @@ Det första alternativet är att använda huvudkonton från källföretag. I det
 
 Det andra alternativet är att ange ett standardkonto för konsolideringen på sidan **huvudkonton**. Kontot mappas sedan till konsolideringskontot. Det här alternativet kan vara användbart när du har olika kontoplaner eller måste mappa till ett diagram som definieras av huvudkontoret.
 
-![Standard konsolideringskonto som angetts på sidan huvudkonto](./media/main-accounts.png "Standard konsolideringskonto som angetts på sidan huvudkonto")
+![Förvalt konsolideringskonto som angetts på sidan Huvudkonto.](./media/main-accounts.png "Standard konsolideringskonto som angetts på sidan huvudkonto")
 
 Det tredje alternativet är att använda konsolideringskontogrupper. Du kan definiera så många konsolideringskontogrupper som du behöver. Sedan på sidan **Ytterligare konsolideringskonton** kan du bara mappa huvudkontot från kontoplanen på det konto som du vill ha för den gruppen.
 
-![Mappning på sidan ytterligare konsolideringskonton](./media/additional-consolidation-accounts.png "Mappning på sidan ytterligare konsolideringskonton")
+![Mappning på sidan Ytterligare konsolideringskonton.](./media/additional-consolidation-accounts.png "Mappning på sidan ytterligare konsolideringskonton")
 
 ## <a name="consolidating-online"></a>Onlinekonsolidering
 Information om hur du anger information om onlinekonsolideringar finns i [Online ekonomisk konsolidering](./consolidate-online.md).
@@ -97,7 +98,7 @@ Om du vill visa resultaten av konsolideringen har du flera alternativ:
 - Granska listsidan **Råbalans** i konsolideringsföretaget.
 - I listan över konsolideringstransaktioner på sidan **konsolideringar** kan du visa saldon som har skapats efter datum för varje källföretag för varje period.
 
-    ![Konsolideringstransaktioner på sidan Konsolideringar](./media/managing-consolidation-transactions.png "Konsolideringstransaktioner på sidan Konsolideringar")
+    ![Konsolideringstransaktioner på sidan Konsolideringar.](./media/managing-consolidation-transactions.png "Konsolideringstransaktioner på sidan Konsolideringar")
 
 Om du vill köra konsolideringen igen, kan du bara behandla konsolideringen. Alternativt kan du först markera **ta bort transaktionerna** på sidan **konsolideringar**.
 I händelsen är saldona för det konsoliderade kontot inte korrekta, dessa saldon kan korrigeras med hjälp av **Sidan UB-periodsjusteringar**.
@@ -118,7 +119,7 @@ Du hittar inställningar för elimineringar i området **Inställningar** i modu
 
 Du kan ange det datum då elimineringsregeln träder i kraft och det datum då den förfaller enligt behov. Du måste ange **Aktiv** som **Ja** om du vill att elimineringsregeln ska vara tillgänglig i förslagsprocessen för eliminering. Välj ett journalnamn som har typen **Eliminering**.
 
-![Grundläggande egenskaper för en elimineringsregel](./media/ledger-elimination-rule-journal.png "Grundläggande egenskaper för en elimineringsregel")
+![Grundläggande egenskaper för en elimineringsregel.](./media/ledger-elimination-rule-journal.png "Grundläggande egenskaper för en elimineringsregel")
 
 Du kan definiera de faktiska bearbetningsreglerna genom att klicka på **Rader** efter att du har angett grundläggande egenskaper. Det finns två olika alternativ för elimineringar: du kan eliminera nettoändringsbeloppet eller att definiera ett fast belopp.
 
@@ -126,7 +127,7 @@ Välj källkontona. Du kan använda asterisk (\*) som jokertecken. **1\**_ välj
 
 När du har valt dina källkonton, använd fältet **Kontospecifikation** för att ange kontot som används från destinationsföretaget. Välj **Källa** om du vill använda samma huvudkonto som angetts i källkontot. Om du väljer **Användardefinierad** måste du ange ett destinationskonto.
 
-![Sidan Elimineringsregelrad för redovisning](./media/ledger-elimination-rule-line.png "Sidan Elimineringsregelrad för redovisning")
+![Sidan Elimineringsregelrad för redovisning.](./media/ledger-elimination-rule-line.png "Sidan Elimineringsregelrad för redovisning")
 
 Fältet **Dimensionsspecifikation** fungerar som fältet **kontospecifikation**. Välj **Källa** för att använda samma dimensioner i destinationsföretaget som i källföretaget. Om du väljer **Användardefinierad** måste du ange dimensioner för destinationsföretaget genom att välja **Måldimensioner**. Välj sedan källdimensioner och ekonomiska dimensioner, samt de värden som används som källa för eliminering.
 

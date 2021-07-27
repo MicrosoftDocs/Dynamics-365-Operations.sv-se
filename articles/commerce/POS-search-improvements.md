@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1392b767815722c17b1cc72d27fe2bb8a7c32281
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d562f97ecc3c442be4231470167a0aae86f84fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796376"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345170"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- och kundsökning i POS
 
@@ -36,7 +36,7 @@ Som standard utförs en produktsökning på butikssortimentet. Denna typ av sök
 
 På sidan **Ändra katalog** kan personalen enkelt välja valfri butik, eller också kan de söka efter produkter i alla butiker.
 
-![Ändra katalogen](./media/Changecatalog.png "Ändra katalogen")
+![Ändra katalogen.](./media/Changecatalog.png "Ändra katalogen")
 
 En lokal produktsökning söker inom följande produktegenskaper:
 
@@ -59,7 +59,7 @@ En lokal produktsökning söker inom följande produktegenskaper:
 - Återförsäljare kan konfigurera produktsökningen så att denna visar sökförslag när användarna skriver produktnamn. En ny inställning för denna funktion finns i kassafunktionens profil, i en grupp som heter **Produktsökning**. Inställningen kallas **Visa sökförslag medan du skriver**. Denna funktion hjälper anställda att snabbt hitta den produkt som de söker efter, detta eftersom de inte behöver skriva hela namnet manuellt.
 - Sökalgoritmen för produkten söker nu också efter de sökta villkoren i produktens **Söknamn**-egenskap.
 
-![Produktförslag](./media/Productsuggestions.png "Produktförslag")
+![Produktförslag.](./media/Productsuggestions.png "Produktförslag")
 
 ## <a name="customer-search"></a>Sök efter kund
 
@@ -83,7 +83,7 @@ För att genomföra en global sökning kan personalen använda knappen **Filtrer
 
 Kund ID som frågas för kunder från andra juridiska personer, detta eftersom inget kund-ID har skapats för dessa parter i det aktuella företaget. Om en medarbetare emellertid öppnar sidan för information om kunden kan systemet automatiskt skapa ett kund-ID för parten, och kopplar också ihop butikens kundadressböcker med kunden. Därför syns kunden i lokala butikssökningar som utförs senare.
 
-![Global kundsökning](./media/Globalcustomersearch.png "Global kundsökning")
+![Global kundsökning.](./media/Globalcustomersearch.png "Global kundsökning")
 
 ### <a name="additional-local-customer-search-capabilities"></a>Ytterligare sökfunktioner för lokal kund
 
@@ -94,11 +94,11 @@ När användaren söker efter ett telefonnummer ignorerar systemet specialtecken
 
 Vanlig kundsökning kan vara tidskrävande, eftersom den söker över flera fält. Kassörer kan istället söka i en kudegenskap, till exempel namn, telefonnummer eller e-postadress. Egenskaper som kundens sökalgoritm använder kallas *sökvillkor för kund*. Systemadministratören kan enkelt konfigurera ett eller flera kriterier som genvägar som visas i POS. Eftersom sökningen är begränsat till ett enda villkor visas endast relevanta sökresultat och den får mycket bättre prestanda än en standardkundsökningsprestanda. I följande illustration visas kundens sökgenvägar i POS.
 
-![Genvägar för kundsökning](./media/SearchShortcutsPOS.png "Genvägar för kundsökning")
+![Genvägar för kundsökning.](./media/SearchShortcutsPOS.png "Genvägar för kundsökning")
 
 Om du vill ange sökvillkor som genvägar måste administratören öppna sidan **Handelparametrar** i Commerce och sedan på fliken **Sökvillkor för kassa** väljer du de kriterier som ska visas som genvägar.
 
-![Konfigurera sökgenvägar](./media/ConfigureShortcutsAX.png "Konfigurera sökgenvägar")
+![Konfigurera sökgenvägar.](./media/ConfigureShortcutsAX.png "Konfigurera sökgenvägar")
 
 > [!NOTE]
 > Om du lägger till för många genvägar kommer menyn på sökfältet i POS att bli plottrig och medarbetarens sökupplevelse kan påverkas. Vi rekommenderar att du endast lägger till så många genvägar som du behöver.

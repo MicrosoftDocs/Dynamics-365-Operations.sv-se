@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 15a61b1fe4a267552708fa02fe482f7702668e06
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fc656c6339da92deceff2f8861fd8570171b7a2d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824976"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345558"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synkronisera arbetsorder i Field Service till försäljningsorder i Supply Chain Management
 
@@ -31,7 +31,7 @@ ms.locfileid: "5824976"
 
 Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera arbetsorder i Dynamics 365 Field Service till försäljningsorder Dynamics 365 Supply Chain Management.
 
-[![Synkronisering av affärsprocesser mellan Supply Chain Management och Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
+[![Synkronisering av affärsprocesser mellan Supply Chain Management och Field Service.](./media/field-service-integration.png)](./media/field-service-integration.png)
 
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
@@ -245,31 +245,31 @@ I följande illustrationer visas en mallmappning i dataintegrering.
 
 Filter: (msdyn_systemstatus ne 690970005) och (msdyn_systemstatus ne 690970000) och (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Mallmappning i dataintegrering](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![Mallmappning i dataintegrering.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Arbetsorder till Sales orders (Field Service till Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och (msdyn_linestatus eq 690970000) och (msdynce_headersystemstatus ne 690970004)
 
-[![Mallmappning i dataintegrering](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![Mallmappning i dataintegrering.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Arbetsorder till Sales orders (Field Service till Supply Chain Management): WorkOrderServiceLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004))
 
-[![Mallmappning i dataintegrering](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![Mallmappning i dataintegrering.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Arbetsorder till Sales orders (Field Service till Supply Chain Management): WorkOrderProductLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och (msdyn_linestatus eq 690970000) och (msdynce_headersystemstatus ne 690970004) och (msdyn_allocated eq true)
 
-[![Mallmappning i dataintegrering](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![Mallmappning i dataintegrering.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Arbetsorder till Sales orders (Field Service till Supply Chain Management): WorkOrderProductLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004) eller (msdyn_allocated ne true))
 
-[![Mallmappning i dataintegrering](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+[![Mallmappning i dataintegrering.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

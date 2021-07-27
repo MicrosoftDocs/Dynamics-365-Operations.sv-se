@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0a3fd442f20fd40cdf8b845d353ae5d61ce51e29
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 026a549bfb856abc56eeaab21c681a8271ce4f44
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797657"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347526"
 ---
 # <a name="content-block-module"></a>Innehållsblockmodul
 
@@ -46,15 +46,15 @@ Dessutom kan temat visa olika egenskaper för varje layout. En temautvecklare ka
 
 Följande bild visar ett exempel på en innehållsblockmodul med en fokuslayout.
 
-![Exempel på en fokusmodul](./media/Hero.PNG)
+![Exempel på en fokusmodul.](./media/Hero.PNG)
 
 Följande bild visar ett exempel på en innehållsblockmodul med en funktionslayout.
 
-![Exempel på funktionsmoduler](./media/Feature.PNG)
+![Exempel på funktionsmoduler.](./media/Feature.PNG)
 
 ## <a name="content-block-module-properties"></a>Egenskaper för innehållsblockmoduler
 
-| Egenskapsnamn  | Värden | Beskrivning |
+| Egenskapsnamn  | Värden | beskrivning |
 |----------------|--------|-------------|
 | Bild          | Bildfil | En bild kan användas för att presentera en produkt eller ett erbjudande. En bild kan överföras till bildgalleriet, eller så kan en befintlig bild användas. |
 | Rubrik        | Rubriktext och rubriktagg (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Varje fokusmodul kan ha en rubrik. Som standard används rubriktaggen **H2** för rubriken. Taggen kan emellertid ändras så att den uppfyller tillgänglighetskraven. |

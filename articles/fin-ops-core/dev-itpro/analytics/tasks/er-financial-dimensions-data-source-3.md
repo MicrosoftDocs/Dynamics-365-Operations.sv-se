@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2a3b9a8b5775d2001f3384480e2f9593f2dfa8b1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 74c845cf5ce361b0e9594863cdfca98d9cb9b0ca
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752422"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356329"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER Använd ekonomiska dimensioner som en datakälla (Del 3 - Designa rapporten)
 
@@ -92,7 +92,7 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 59. Klicka på Add Attribute.
 60. Ange "Desc" i namnfältet.
 61. Klicka på OK.
-![ER-åtgärdsdesignersida](../media/er-financial-dimensions-guides-format1.png)
+![Designersida för ER-åtgärder.](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Mappa rapportelement till datakällor
 1. Klicka på fliken Mappning.
@@ -141,7 +141,7 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 44. Klicka på Bind.
 45. Klicka på Spara.
 46. Stäng sidan.
-![ER-åtgärdsdesignersida](../media/er-financial-dimensions-guides-format2.png)
+![Designersida för ER-åtgärder.](../media/er-financial-dimensions-guides-format2.png)
 
 
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 74987506699834d86703702106e5abf87bfa45da
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 284fd4047347386b3893684f077a5980f98a6788
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018791"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350010"
 ---
 # <a name="taxtrans-record-isnt-generated"></a>TaxTrans-post genereras inte
 
@@ -26,7 +26,7 @@ ms.locfileid: "6018791"
 
 Om du väljer **Bokförd moms** för en transaktion men sidan **Bokförd moms** antingen inte anger några momsrader eller saknar en momsrad, kanske posten **TaxTrans** inte har genererats.
 
-[![Bokförd momssida som inte innehåller några radartiklar](./media/taxtrans-is-not-generated-Picture1.png)](./media/taxtrans-is-not-generated-Picture1.png)
+[![Bokförd momssida som inte innehåller några radartiklar.](./media/taxtrans-is-not-generated-Picture1.png)](./media/taxtrans-is-not-generated-Picture1.png)
 
 Felsök det här problemet genom att följa stegen i följande avsnitt.
 
@@ -34,7 +34,7 @@ Felsök det här problemet genom att följa stegen i följande avsnitt.
 
 1. Innan du bokför transaktionen väljer du, på sidan **Bokföring av faktura**, **Moms** för att kontrollera beräkningen.
 
-    [![Knappen Moms på sidan Bokföring av faktura](./media/taxtrans-is-not-generated-Picture2.png)](./media/taxtrans-is-not-generated-Picture2.png)
+    [![Knappen Moms på sidan Bokföring av faktura.](./media/taxtrans-is-not-generated-Picture2.png)](./media/taxtrans-is-not-generated-Picture2.png)
 
 2. På sidan **Tillfälliga momstransaktioner** kan du granska resultatet av beräkningen. Om ingen moms beräknas, gå till [Moms beräknas inte, eller också är momsbeloppet noll](sales-tax-troubleshooting-tax-not-calculated-amount-zero.md).
 
@@ -44,16 +44,16 @@ Felsök det här problemet genom att följa stegen i följande avsnitt.
 2. I kolumnrubriken för **Verifikation** väljer du filtersymbolen för att hitta posten **TaxTrans**.
 3. Kontrollera datumet om det finns momsposter du letar efter. Om datumet inte är det samma som datumet för journalrubriken skapar du en Microsoft-servicebegäran för ytterligare support.
 
-    [![Sidan Bokförd moms](./media/taxtrans-is-not-generated-Picture4.png)](./media/taxtrans-is-not-generated-Picture4.png)
+    [![Sidan Bokförd moms.](./media/taxtrans-is-not-generated-Picture4.png)](./media/taxtrans-is-not-generated-Picture4.png)
 
 ## <a name="debug-to-check-details"></a>Felsöka om du vill kontrollera detaljer
 
 1. Mer information om hur du felsöker och fastställer huruvida **TmpTaxWorkTrans** och **TaxUncommitted** har genererats korrekt, se [Fältvärdet i TaxTrans är felaktigt](sales-tax-troubleshooting-field-value-taxtrans-incorrect.md).
 2. Om **TaxTmpWorkTrans** eller **TaxUncommitted** har genererats korrekt lägger du till en brytpunkt för **TaxPost::SaveAndPost()** och **Tax::SaveAndPost** i syfte att felsöka orsaken till att **TaxTrans** inte förts in.
 
-    [![Brytpunkter tillagda i kod](./media/taxtrans-is-not-generated-Picture5.png)](./media/taxtrans-is-not-generated-Picture5.png)
+    [![Brytpunkter tillagda i kod.](./media/taxtrans-is-not-generated-Picture5.png)](./media/taxtrans-is-not-generated-Picture5.png)
 
-    [![Resultat av tillagda brytpunkter](./media/taxtrans-is-not-generated-Picture6.png)](./media/taxtrans-is-not-generated-Picture6.png)
+    [![Resultat av tillagda brytpunkter.](./media/taxtrans-is-not-generated-Picture6.png)](./media/taxtrans-is-not-generated-Picture6.png)
 
 ## <a name="determine-whether-customization-exists"></a>Bestäm om anpassning finns
 

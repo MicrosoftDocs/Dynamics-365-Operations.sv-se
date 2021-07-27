@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 238123f59c3d85b2b2c64aed9d94c7d8af27eaf2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9f19a6ed70445791433c2db2559f6922b9715c5e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820821"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350656"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatisera leverantörsbetalningsförslag
 
@@ -97,11 +97,11 @@ Vi rekommenderar att du utvärderar om hur automatiseringen kommer att vara för
 
 Efter att automatiseringsserien för leverantörsbetalningsförslaget har skapats visas förekomsterna för varje betalning i veckovy för processautomatisering. För leverantörsbetalningar har den veckovisa vyn för processautomatisering lagts till i arbetsytan **Leverantörsbetalningar** och sidan **Processens automatisering**.
 
-[![Veckovisläge för processautomatisering i arbetsytan för leverantörsbetalningar](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
+[![Veckovyläge för processautomatisering i arbetsytan för leverantörsbetalningar.](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
 Veckovisvy för automatisering av process i arbetsytan **leverantörsbetalningar** visar bara automatiseringar av leverantörsbetalningsförslag. Den visar alla förekomster av betalningar under den aktuella veckan, för alla juridiska enheter som den inloggade användaren har säkerhetsbehörigheter till. Om till exempel betalningsansvarig för leverantörsreskontra är ansvarig för betalningar i USMF- och USSI-företagen ser han eller hon förekomsten av automatisering av leverantörsbetalningsförslag för dessa två företag men inte för andra företag.
 
-[![Veckovis vy över processautomatisering för USMF- och USSI-företagen](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
+[![Veckovy över processautomatisering för USMF- och USSI-företag.](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
 Varje förekomst visar företaget som betalningsjournalen har eller kommer att skapas i. Om betalningar skapas med hjälp av centraliserade betalningar är det företag som visas det företag som betalningarna skapas i. Förekomsten visar inte nödvändigt vis vilka företags fakturor som kommer att betalas ut.
 

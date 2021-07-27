@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 46e8fba0c1269aa8b81e0df8d415fe11b2307924
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 3b042374179de7aa5bbff73719cbe8546920132e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897318"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360698"
 ---
 # <a name="financial-dimensions-and-posting"></a>Ekonomiska dimensioner och bokföring 
 
@@ -71,29 +71,29 @@ Användare har ofta frågeställningar om ordningen som olika komponenter körs 
 
 Följande illustration visar den fasta standarddimension som har angetts för huvudkonto 401100.
 
-[![Ekonomiska standarddimensioner](./media/default-dimensions.png)](./media/default-dimensions.png)
+[![Ekonomiska standarddimensioner.](./media/default-dimensions.png)](./media/default-dimensions.png)
 
 I det här mycket grundläggande exemplet anger vi en allmän journal där avdelningsdimensionen är inställd på att använda standardvärdet **023** (operationer). Vi anger och bokför på ett redovisningskonto. Följande illustration visar den ekonomiska standarddimension i huvudboken.
 
-[![Allmänna journaler](./media/general-journal.png)](./media/general-journal.png)
+[![Allmänna journaler.](./media/general-journal.png)](./media/general-journal.png)
 
 Standarddimensionen på journalrubrik medför att avdelning 023 använd som standard på försäljningskontoraden. Följande illustration visar allmänna journalraden, där standarddimensionsvärdet **023** från rubriken används.
 
-[![Bokföringsorder](./media/journal-voucher.png)](./media/journal-voucher.png)
+[![Bokföringsorder.](./media/journal-voucher.png)](./media/journal-voucher.png)
 
 När raden bokförs används fast dimension och raden bokförs till avdelning 022. Följande illustration visar bokförda verifikationer där fast dimension används för försäljningskontot.
 
-[![Verifikationstransaktioner med fast dimension tillämpas](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Verifikationstransaktioner med fast dimension tillämpas.](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Exempel 2
 
 Det här exemplet använder samma inställningar som i det första exemplet. Men vi lägger ytterligare en andra komponent och använder avdelningsdimensionen som balanserande dimension. I följande illustration anges **avdelning** som den balanserande ekonomiska dimensionen för USMF-redovisningen.
 
-[![Illustration som visar Avdelning som den balanserade ekonomiska dimensionen](./media/ledger.png)](./media/ledger.png)
+[![Illustration som visar Avdelning som den balanserade ekonomiska dimensionen.](./media/ledger.png)](./media/ledger.png)
 
 Om samma konfiguration av journalrubrik används och samma transkation bokförs används den fasta dimension först. Sedan används mottransaktionen för att garantera att varje avdelning har en balanserad transaktion. Följande illustration visar verifikationstransaktioner med mottransaktionen efter att den fasta dimensionen används.
 
-[![Verifikationstransaktioner efter det att balanseringsposten har använts](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Verifikationstransaktioner efter det att balanseringsposten har tillämpats.](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Exempel 3
 
@@ -101,11 +101,11 @@ I det här exemplet lägger vi till en avancerad regel. Den avancerade regeln an
 
 Det här exemplet är viktigt på grund av ordern. Kontostrukturen bestäms efter att huvudkontot har angetts. Om du refererar till kontostrukturens inställningar, kan systemet bestämma att huvudkonto, affärsenhet, avdelning och kostnadsställe är relevanta. Nu har den avancerade regeln inte utlösts, eftersom fasta dimensioner inte används förrän standarddimensioner använts för journalverifikationen vid bokföring. I följande illustration är inte kundsegmentet närvarande eftersom kriterierna för avancerad regel inte har uppfyllts.
 
-[![Redovisningskonto](./media/drop-down.png)](./media/drop-down.png)
+[![Huvudbokskonto.](./media/drop-down.png)](./media/drop-down.png)
 
 Bokföringen kommer inte att lyckas eftersom den fasta dimensionen användes i slutet av processen. Dimensionsvalidering anger att kundsegmentet krävs om huvudkontot är 401100 och avdelningen 022. Bokföring kan inte inträffa på grund av valideringsfelet. Följande bild visar ett meddelande som visas när dimensionsvalidering bestämmer att kunden är ett segment som krävs.
 
-[![Meddelandeinformation](./media/message.png)](./media/message.png)
+[![Meddelandeinformation.](./media/message.png)](./media/message.png)
 
 I det här exemplet måste du skriva över standardvärdet så att den avancerade regeln utlöses och du kan ange kundsegmentet. Den här lösningen är inte alltid möjligt och vissa användare är inte medvetna om bokföringsreglerna. Därför är det viktigt att du förstår den ordning som standarddimensioner används i när du ställer in kontoplanen.
 

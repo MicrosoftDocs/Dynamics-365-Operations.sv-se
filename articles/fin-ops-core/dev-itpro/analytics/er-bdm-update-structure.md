@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 203c9f0990051c1618660959dad0e184add68ffa
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b3419d328e84c199fa32aeb13b54425a31e96ce7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750494"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350266"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Uppdatera strukturen för en affärsdokumentmall 
 
@@ -58,7 +58,7 @@ Slutför följande procedurer i [Översikt över hantering av affärsdokument](e
 
     Den nya mallen öppnas för redigering i den inbäddade kontrollen i Excel Online på sidan för att redigera mall.
 
-[![Börja redigera en affärsdokumentmall med arbetsytan för hantering av affärsdokument](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
+[![Börja redigera en affärsdokumentmall med arbetsytan för hantering av affärsdokument.](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
 
 ### <a name="review-the-current-structure-of-the-editable-template"></a>Granska den redigerbara mallens aktuella struktur
 
@@ -68,7 +68,7 @@ Slutför följande procedurer i [Översikt över hantering av affärsdokument](e
 4. I fönstret **Mallstruktur** expanderar du **Rapport \> Faktura \> rptHeader \> rptHeaderPart1**.
 5. Observera att posten **rptHeaderCompLogo** i mallstrukturen i Finance, presenteras underordnad post till **Rapport \> Faktura \> rptHeader \> rptHeaderPart1**.
 
-[![Granska den aktuella strukturen för en redigerbar mall med arbetsytan för hantering av affärsdokument](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
+[![Granska den aktuella strukturen för en redigerbar mall med arbetsytan för hantering av affärsdokument.](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-deleting-a-picture"></a>Uppdatera strukturen för en affärsdokumentmall genom att radera en bild
 
@@ -85,7 +85,7 @@ Slutför följande procedurer i [Översikt över hantering av affärsdokument](e
 4. I fönstret **Mallstruktur** expanderar du **Rapport \> Faktura \> rptHeader \> rptHeaderPart1**.
 5. Observera att posten **rptHeaderCompLogo** inte längre ingår i mallstrukturen i Finance.
 
-[![Radera en bild från en affärsdokumentmall med arbetsytan för hantering av affärsdokument](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
+[![Radera en bild från en affärsdokumentmall med arbetsytan för hantering av affärsdokument.](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-adding-a-picture"></a>Uppdatera strukturen för en affärsdokumentmall genom att lägga till en bild
 
@@ -97,7 +97,7 @@ Slutför följande procedurer i [Översikt över hantering av affärsdokument](e
 6. I fönstret **Mallstruktur** expanderar du **Rapport \> Faktura \> rptHeader \> rptHeaderPart1**.
 7. Observera att den nya bilden nu ingår som en post i mallstrukturen i Finance.
 
-[![Lägg till en bild i en affärsdokumentmall med arbetsytan för hantering av affärsdokument](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
+[![Lägg till en bild i en affärsdokumentmall med arbetsytan för hantering av affärsdokument.](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
 
 ## <a name="related-links"></a>Relaterade länkar
 

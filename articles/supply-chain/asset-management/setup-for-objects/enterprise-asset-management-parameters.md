@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8df8e6204e9c64305387e6aed304142d7f13b33a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6affcc20c2c2e2b8fa9e38cb523e172bb2a79f22
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808338"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349828"
 ---
 # <a name="asset-management-parameters"></a>Parametrar för tillgångshantering
 
@@ -99,7 +99,7 @@ Fälten som beskrivs i följande lista relaterar till beräknade bedömningspoä
 
 ## <a name="the-document-types-tab"></a>Fliken Dokumenttyper
 
-Välj de dokumenttyper som ska vara tillgängliga för utskrift av bilagor relaterade till en arbetsorderrapport. Detta görs genom att välja en dokumenttyp i avsnittet **tillgängliga** och välja ![framåtpilknappen](media/15-setup-for-objects.png). Om du vill ta bort en vald dokumenttyp väljer du dokumenttypen i avsnittet **Markerade** och klickar på ![bakåtpilknappen](media/16-setup-for-objects.png).
+Välj de dokumenttyper som ska vara tillgängliga för utskrift av bilagor relaterade till en arbetsorderrapport. Detta görs genom att välja en dokumenttyp i avsnittet **tillgängliga** och välja ![framåtpilknappen.](media/15-setup-for-objects.png). Om du vill ta bort en vald dokumenttyp väljer du dokumenttypen i avsnittet **Markerade** och klickar på ![bakåtpilknappen](media/16-setup-for-objects.png).
 
 ## <a name="the-number-sequences-tab"></a>Fliken Nummerserie
 

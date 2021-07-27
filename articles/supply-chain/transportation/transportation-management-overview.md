@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, TMSLoadBuildTemplateApply, WHSLoadTemplate, TMSTransportationStatus, TMSLoadSeal, TMSLoadBuildProposal, TMSLoadBuildWorkbench, TMSLoadBuildStrategy, TMSLoadBuildStrategyAttributeValue
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 30251
+ms.custom:
+- "30251"
+- intro-internal
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8afb7d28d9dd6487e00a2bf7e813069aac386c0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2e438df0b01b864b3ef96eb41819087cbbbef4d9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807738"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359519"
 ---
 # <a name="transportation-management-overview"></a>Transporthantering – översikt
 
@@ -67,17 +69,17 @@ Transporthantering låter dig använda företagets transporter och även identif
 ## <a name="planning-transportation-in-supply-chain-management"></a>Planera transporter i Supply Chain Management
 I transporthantering, transportplaneringen baseras antingen på order eller på försändelserna som skapas baserat på dessa order. Försändelserna alltid finns någon gång i tiden men krävs inte för transportplanering. Överföringsorder är en del av det utgående scenariot och kan planeras tillsammans med försäljningsorder. 
 
-![Lastuttag](./media/Load-drawing1-1024x477.jpg)
+![Lastuttag.](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Ingående transport
 När du beställer artiklar från en leverantör och artiklarna måste levereras till ditt lagerställe, kanske du vill ordna själva transporten av artiklarna. Du kan använda Supply Chain Management för att planera transporten och inleveransen av den ingående lasten. I bilden nedan visas affärsprocessflödet för planering av transport för en inkommande beläggning. 
 
-![Affärsprocessflöde för transport av inkommande last](./media/Businessprocessflowforinboundloadtransportation.jpg)
+![Affärsprocessflöde för transport av inkommande last.](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Utgående transport
 Du kan planera och bearbeta en utgående last för att skicka vissa artiklar från ett företags lager till en kund. Du kan använda Supply Chain Management för att planera transporten och leveransen av en utgående last. I bilden nedan visas affärsprocessflödet för planering och bearbetning av utgående beläggningar för leverans. 
 
-![Planera och bearbeta utgående laster](./media/Planningandprocessingoutboundloads.jpg)
+![Planera och bearbeta utgående laster.](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Lastuppbyggnad
 Supply Chain Management innehåller en lastuppbyggnadsstrategi med namnet Volymbaserad lastuppbyggnadsstrategi. Denna strategi låter dig använda de angivna maximivärdena som specificerats för höjd och vikt i lastmallen eller så kan du åsidosätta inställningarna genom att ange nya värden. För att använda denna strategi, välj den i fältet **Lastuppbyggnadsstrategi** på snabbfliken **Inställningar** på sidan **Workbench för lastuppbyggnad**. Dessutom kan du lägga till dina egna uppbyggnadsstrategier genom att skapa en ny klass i programobjektträdet.

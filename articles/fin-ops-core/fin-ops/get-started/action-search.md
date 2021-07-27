@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41313dd1fde51cb84bc971bb7bb98841222259b1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce10817d677f7e48194272b5ebb91b95d657441f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754836"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360303"
 ---
 # <a name="action-search"></a>Åtgärdssökning
 
@@ -31,7 +31,7 @@ I artikeln beskrivs funktionen åtgärdssökning. Funktionen för åtgärdssökn
 
 Sidorna visar främst kommandon i åtgärdsfönster, både det vanliga åtgärdsfönstret som visas högst upp på en sida och verktygsfälten som visas på olika delar av sidan. I tidigare versioner fanns funktionen Tangenttips, som snabbt gav dig åtkomst till valfri knapp i ett åtgärdsfönster genom att trycka på ALT och en serie bokstäver.
 
-[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
+[![keyTipsAX6.](./media/keytipsax6.png)](./media/keytipsax6.png)
 
 Åtgärden sökningsfunktionen ersätter tangenttips, som inte längre är tillgängliga. Den här nya funktionen kan du snabbt söka efter och kör en knapp från synliga rutan Åtgärd.
 
@@ -45,7 +45,7 @@ För att använda åtgärden sökfunktionen, följ dessa steg.
 
 När du kör, fokus återgår till din senaste position på sidan, så att du kan fortsätta att arbeta.
 
-[![fält-för-åtgärdssökning](./media/action-search-field.png)](./media/action-search-field.png)
+[![fält-för-åtgärdssökning.](./media/action-search-field.png)](./media/action-search-field.png)
 
 Du kan också starta åtgärden sökning, genom att pressa Ctrl+/- eller Alt+Q. Tryck på kortkommandot igen för att återgå till din senaste position på sidan.
 
@@ -61,11 +61,11 @@ Du måste ofta veta både på plats och samband för en knapp för att förstå 
 
 Exempelvis du maskinskrev **tot** i **sökfältet** och granskar nu resultat listan. Den första posten, för en knapp vid namn **Summor**, markeras. Knappsökvägen för **Försäljningsorder** &gt; **Visa** visas också. **Försäljningsorder**-delen av sökvägen motsvarar fliken **Försäljningsorder** i åtgärdsfönstret, och **Visa**-delen i sökvägen motsvarar **Visa** gruppen på fliken. Dessutom informerar sökvägen till knappen **Totalrabatt** (**Sälj** &gt; **Beräkna**) dig om att den här knappen finns i gruppen **Beräkna** på fliken **Sälj** i åtgärdsfönstret. Därför kan den här informationen hjälpa dig att förstå exakt vilken knapp som utlöses av sökåtgärden (om du väljer knappen i resultatlistan).
 
-[![fält-för-åtgärdssökning-med-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
+[![fält-för-åtgärdssökning-med-data.](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
 
 I föregående exempel visade åtgärdsökningen resultat från det vanliga åtgärdsfönstret överst på sidan. Men action sök visar också resultaten från synligt verktygsfält som finns på andra ställen på sidan. Låt oss till exempel säga att du söker efter knappen **Lagerbehållning** som finns på snabbfliken **Försäljningsorderrader**. I det här fallet kommer knappsökvägen i resultatlistan (**Försäljningsorderrader** &gt; **Lager** &gt; **Visa**) att informera dig om att den här knappen finns under rubriken **Visa** på menyknappen **Lager** på snabbfliken **Försäljningsorderrader**.
 
-[![lagerbehållning](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
+[![lagerbehållning.](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 > [!NOTE]
 > Det finns vissa knappar som inte visas vid åtgärdssökning. Dessa inkluderar nedrullningsbara dialogknappar och knappar från underformulär. 

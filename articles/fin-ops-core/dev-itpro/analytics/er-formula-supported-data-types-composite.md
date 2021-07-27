@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7ed9e62751b6be9fad6de3bf262d37d7977d192
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 2593f3128ec103248e109f3c80f48b9d7a035f54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224114"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355356"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Sammansatta datatyper som stöds för elektroniska rapporteringsformler
 
@@ -43,11 +43,11 @@ Standardvärdet för en *klass* är **null**.
 
 I följande bild anges hur datakällan **System information(xInfo)** för typen **Klass** läggs till i syfte att skapa instansen för programklassen **xInfo** och anropa dess **productName()**-metod i syfte att erhålla namnet på aktuellt program. Namnet på det aktuella programmet hämtas i samband med körning genom körning av den `xInfo.productName`-bindning som konfigurerats för fältet **Programvarunamn (SoftwareName)** i ER-datamodellen. Denna bindning kallas `productName()`-metoden för den **xInfo**-programklass som representeras i aktuell modellmappning som datakällan **System information(xInfo)**.
 
-[![Konfigurera en Klass-datakälla i ER-modellmappningsdesignern](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
+[![Konfigurera en Klass-datakälla i ER-modellmappningsdesignern.](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
 
 Följande bild visar hur ER-formatet är konfigurerat för att placera det angivna programnamnet i genererade dokument. Fältet **Programvarunamn (SoftwareName)** i använd datamodell var bundet till den **Sträng**-komponent kapslats under XML-elementet **softwareUsed** för ER-formatet. I så fall placeras namnet på det aktuella programmet vid körning i XML-elementet **softwareUsed** för ett genererat dokument i XML-format.
 
-[![Konfigurera strukturen för ett elektroniskt utgående dokument i ER-formatdesignern](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
+[![Konfigurera strukturen för ett elektroniskt utgående dokument i ER-formatdesignern.](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
 
 ## <a name="container"></a><a name="container"></a>Behållare
 
@@ -60,7 +60,7 @@ Standardvärdet för en *behållare* är **null**.
 
 I följande bild visas hur fältet **Bitmap (bild)** av typen *Behållare* är knutet till datamodellfältet **Logo** av typen **Behållare** i modellmappningen **Försäljningsfaktura**. Med den här bindningen blir företagslogotypen tillgänglig för alla ER-format som har utformats för rotdefinitionen **SalesInvoice** och som använder denna modellmappning vid körning.
 
-[![Binda ett fält av behållartyp i ER-modellmappningsdesignern](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
+[![Binda ett fält av behållartyp i ER-modellmappningsdesignern.](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
 
 ## <a name="record"></a><a name="record"></a>Registrera
 
@@ -109,7 +109,7 @@ Standardvärdet för ett *objekt* är **null**.
 
 I följande bild visas hur datakällan **ReportDataContract** av typen *Objekt* läggs till för att överföra information om en genererad faktura från källkoden till modellmappningen **Projektfaktura**. Fakturainstanstexten skickas till exempel som en del av körningskontexten. Denna text tas från källkoden vid körning genom körning av den `ReportDataContract.parmInvoiceInstanceText`-bindning som konfigurerats för fältet **Anteckning** i ER-datamodellen. Denna bindning kallas för `parmInvoiceInstanceText()`-etoden för den **PSAProjInvoiceContract**-programklass som finns representerad i aktuell modellmappning som datakällan **ReportDataContract**.
 
-[![Konfigurera en objektdatakälla i ER-modellmappningsdesignern](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
+[![Konfigurera en objektdatakälla i ER-modellmappningsdesignern.](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
 
 Mer information om hur du vidarebefordrar detaljer från körningskontexten från källkod till den ER-lösning som köls [Ta fram programartefakter för att anropa designad rapport](er-quick-start1-new-solution.md#DevelopCustomCode).
 

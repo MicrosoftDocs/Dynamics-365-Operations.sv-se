@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 31798508e4cc71e31a30dc91acebfdde8226b16c
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: de8840b92307ba63d6d0c2cfa90536bd00696ec3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937072"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349684"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Ändra sorteringsordning för marknadsföringsenheter
 
@@ -51,9 +51,9 @@ Innan du kan slutföra den här proceduren måste demonstrationsdata vara instal
 
 Visningsordningen för kanalensnavigeringshierarkin kommer att avspeglas i huvudkontoret för handelsprodukthierarkin och frisläppta produkter efter kategori.
 
-![Produkthierarki anpassat sorterad med negativa värden](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![Anpassad produkthierarki sorterad med negativa värden.](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![Produkter som frisläppts efter kategori sorteras baserat på produkthierarki](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![Produkter som frisläppts efter kategori med anpassad sortering baserad på produkthierarki.](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## <a name="configure-the-display-order-for-categories-in-the-channel-navigation-hierarchy"></a>Konfigurera visningsordningen för kategorier i kanalnavigeringshierarkin
 
@@ -77,11 +77,11 @@ Innan du kan slutföra den här proceduren måste demonstrationsdata vara instal
 
 Visningsordningen för kanalnavigeringshierarkin visas i huvudkontor, katalog och kanalerna.
 
-![Anpassat sorterad kanalnavigeringshierarki](./media/ChannelNavCustomSorted.png)
+![Anpassat sorterad kanalnavigeringshierarki.](./media/ChannelNavCustomSorted.png)
 
-![Anpassat sorterad katalognavigeringshierarki baserat på kanalnavigeringshierarkin](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
+![Anpassat sorterad katalognavigeringshierarki baserad på kanalnavigeringshierarkin.](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
 
-![Kassa med anpassade, sorterade kategorier](./media/POSChannelCategoriesCustomSorted.png)
+![Kassa med anpassade, sorterade kategorier.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
 > Funktionen för anpassad sorteringsordning är avstängd som standard. Mer information om hur du aktiverar den här funktionen och andra funktioner finns i [Funktionshantering](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).

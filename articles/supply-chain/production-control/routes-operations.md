@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: bfcbeaa64aa00f19dc72cf5256ead47654808ed9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188944"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350508"
 ---
 # <a name="routes-and-operations"></a>Flöden och operationer
 
@@ -45,7 +45,7 @@ Ett flöde beskriver ordningen av operationer som används för att producera en
 
 Ett enkelt flöde är sekventiellt och det finns bara en startpunkt för flödet.  
 
-[![Enkelt flöde](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Enkelt flöde.](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 Om du bara aktiverar enkla flöden i produktionsstyrningsparametrarna genererar Supply Chain Management automatiskt operationsnumren (10, 20, 30 osv.) när du definierar flödet.
 
@@ -53,7 +53,7 @@ Om du bara aktiverar enkla flöden i produktionsstyrningsparametrarna genererar 
 
 Om du aktiverar mer komplexa flödesnätverk i produktionsstyrningsparametrarna kan du definiera flöden som har flera startpunkter och operationer som kan köras parallellt.  
 
-[![Flödesnätverk](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Flödesnätverk.](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - Varje operation kan ha endast ha en efterföljande operation och hela flödet måste sluta i en enkel operation.
@@ -64,7 +64,7 @@ Om du aktiverar mer komplexa flödesnätverk i produktionsstyrningsparametrarna 
 
 Ibland krävs en kombination av flera operationsresurser som har olika egenskaper för att utföra en operation. En monteringsoperation kanske till exempel kräver en maskin och ett verktyg och en arbetare för varje två maskiner för att övervaka operationen. Det här exemplet kan utformas med parallella operationer där en operation anges som den primära operationen och de andra sekundära.  
 
-[![Flöde som har primära och sekundära operationer](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Flöde som har primära och sekundära åtgärder.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 Den primära operationen representerar vanligen flaskhalsresurs och avgör bearbetningstiden för sekundära operationer. Under schemaläggningen som innefattar begränsad kapacitet, måste emellertid resurserna som är schemalagda för både primära operationer och sekundära operationer vara tillgängliga och samtidigt ha fri kapacitet.  
 

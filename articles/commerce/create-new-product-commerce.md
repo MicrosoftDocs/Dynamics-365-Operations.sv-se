@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 44a58da0be280b06d96cdeae6929042bb50ed4a6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 057acf50f16bef3eea55e51571cb6f49b79c5ab1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795725"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352432"
 ---
 # <a name="create-a-new-product-in-commerce"></a>Skapa en ny produkt i Commerce
 
@@ -49,13 +49,13 @@ En produkt definieras i första hand med hjälp av ett produktnummer, ett namn o
 
 Följande bild visar en exempelprodukt som läggs till.
 
-![Skapa en produkt](media/create-new-product.png)
+![Skapa en produkt.](media/create-new-product.png)
 
 När en produkt har lagts till kan ytterligare data ställas in för den, t.ex. **produktbeskrivning**, **variantgrupper**, **dimensionsgrupper**, **produktattribut** och **relaterade produkter**.
 
 Följande bild visar en produkts ytterligare information.
 
-![Produktdetaljer](media/create-new-product-2.png)
+![Produktdetaljer.](media/create-new-product-2.png)
 
 ### <a name="create-product-variants"></a>Skapa produktvarianter
 
@@ -74,23 +74,23 @@ Om du vill sälja en produkt måste den först frisläppas till en juridisk pers
 
 1. Välj **frisläppta produkter** på sidan produkt.
 
-    ![Frisläpp produkt](media/create-new-product-3.png)
+    ![Frisläpp produkt.](media/create-new-product-3.png)
 
 1. Välj produkten som ska frisläppas och välj sedan **nästa**.
 
-    ![Välj produkt som ska frisläppas](media/create-new-product-4.png)
+    ![Välj produkt som ska frisläppas.](media/create-new-product-4.png)
 
 1. Välj uppsättningen med produktvarianter som ska frisläppas och välj sedan **nästa**.
 
-    ![Välj varianter som ska frisläppas](media/create-new-product-5.png)
+    ![Välj varianter som ska frisläppas.](media/create-new-product-5.png)
 
 1. Välj den juridiska personen och välj sedan **Nästa**.
 
-    ![Välj juridisk person](media/create-new-product-6.png)
+    ![Välj juridisk person.](media/create-new-product-6.png)
 
 1. Välj **Slutför**.
 
-    ![Slutför produktfrisläppning](media/create-new-product-7.png)
+    ![Slutför produktfrisläppning.](media/create-new-product-7.png)
 
 ## <a name="configure-a-released-product"></a>Konfigurera en frisläppt produkt
 
@@ -105,7 +105,7 @@ När en produkt har frisläppts kräver den ytterligare konfiguration som omfatt
 
 Följande bild visar ett exempel på en konfiguration för en frisläppt produkt.
 
-![Konfigurera en frisläppt produkt](media/create-new-product-8.png)
+![Konfigurera en frisläppt produkt.](media/create-new-product-8.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

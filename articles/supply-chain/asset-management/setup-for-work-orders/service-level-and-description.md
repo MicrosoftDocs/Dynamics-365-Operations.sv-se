@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb342e700c9390e1eb9f2a9e9d67b874b3e19b8e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d50955d510dca21c3de160fd280ff53ba54926a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808266"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356474"
 ---
 # <a name="service-level-and-description"></a>Servicenivå och beskrivning
 
@@ -45,7 +45,7 @@ När du skapar en arbetsorder kanske du vill definiera servicenivåerna för den
 8. Om du vill ange en sluttid för arbetsordern, utöver slutdatumet, ställer du in alternativet **Ange sluttid** till **Ja**. Ange sluttiden i fältet **Sluttid**. Om du ställer in alternativet till **Nej**, används den aktuella tiden på dagen.
 9. Välj **Spara**.
 
-![Sidan Servicenivå för arbetsorder](media/19-setup-for-work-orders.png)
+![Sidan Servicenivå för arbetsorder.](media/19-setup-for-work-orders.png)
 
 ## <a name="create-a-description"></a>Skapa en beskrivning
 
