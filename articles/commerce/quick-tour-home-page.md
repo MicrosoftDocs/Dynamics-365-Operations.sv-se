@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f083115f5dc0cfe0e9ba4786bf79ec4083ab7e78
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3cd179483458dd3da3b69afaa464c21a11c3df8b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792205"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352022"
 ---
 # <a name="home-page-overview"></a>Översikt över startsidan
 
@@ -31,7 +32,7 @@ Startsidan är den standardsida som köparen går till när han eller hon besök
 
 Följande illustration visar ett exempel på en startsida som har skapats med hjälp av modulbibliotek och temat "Fabrikam".
 
-![Exempel på en startsida](./media/Homepage2.PNG)
+![Exempel på en startsida.](./media/Homepage2.PNG)
 
 Den övre delen av startsidan har en rubrik som visar alla produktkategorier och andra sidor som återförsäljaren vill att kunderna ska bläddra i. Startsidans nedre del har en sidfot som innehåller snabblänkar till olika ämnen som kan vara intressanta för kunderna.
 
@@ -41,13 +42,13 @@ I huvudavsnittet på startsidan kan du markera produkter, kategorier eller kampa
 
     Följande illustration visar ett exempel på en startsida där det första objektet i huvudavsnittet är en fokuslayout av innehållsblockmodul som kallas ny införsel.
 
-    ![Exempel på en fokusmodul](./media/Hero.PNG)
+    ![Exempel på en fokusmodul.](./media/Hero.PNG)
 
 - **Funktion** – en funktionslayout av innehållsblockmodul används för att marknadsföra produkter eller erbjudanden genom att använda en kombination av bilder och text. Funktionslayouter kan användas oberoende av varandra, eller också kan de finnas i en karusellmodul.
 
     Följande illustration visar ett exempel på funktionslayouter av innehållsblockmodul på en startsida.
 
-    ![Exempel på funktionsmoduler](./media/Feature.PNG)
+    ![Exempel på funktionsmoduler.](./media/Feature.PNG)
 
 - **Panel** – en panellayout för innehållsblockmodul används för att presentera flera produkter eller kategorier med produkter genom att använda en kombination av bilder och text i en layout med flera kolumner. I illustrationen av en startsida som visas tidigare i det här avsnittet används en panellayout med tre kolumner som återger objekten **Handla kvinna**, **Handla man** och **Handla tillbehör**.
 - **Videospelare** – en videospelarmodul kan användas för att presentera videoinnehåll på startsidan. En illustration av en startsida som finns tidigare i det här avsnittet innehåller en videospelarmodul.
@@ -56,7 +57,7 @@ I huvudavsnittet på startsidan kan du markera produkter, kategorier eller kampa
 
     Följande illustration visar ett exempel på moduler för produktrekommendationer på en startsida.
 
-    ![Exempel på moduler för produktrekommendationer](./media/Recommendations.PNG)
+    ![Exempel på moduler för produktrekommendationer.](./media/Recommendations.PNG)
 
 > [!NOTE]
 > Alla moduler som anges här kan användas på alla webbplatssidor. Det är dock viktigt att deras placering på startsidan är viktig eftersom kunderna först interagerar med din webbplats.

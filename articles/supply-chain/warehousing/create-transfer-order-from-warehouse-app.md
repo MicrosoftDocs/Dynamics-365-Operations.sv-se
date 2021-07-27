@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d8bab58727a7031f122864cb7465d9bc5983b467
-ms.sourcegitcommit: 1f2394be857afaefa8749f607cda62dfa00ba2c5
+ms.openlocfilehash: fe5983d40033c0cd15674815067eaa969e97d38b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "6164856"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343635"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Skapa överföringsorder från distributionslagerappen
 
@@ -95,7 +95,7 @@ Förutom att ställa in skapa överföringsordern i menyalternativen på den mob
 
 Du är återförsäljare och har flera registreringsskyltar, där var och en innehåller en blandning av artiklar som placerats på en viss plats i ett av dina lagerställen (*lagerställe 51*). Du vill aktivera processen som gör att arbetare kan skapa en överföringsorder till ett annat lagerställe (*lagerställe 61*) för en samling skannade registreringsskyltar. Du kommer automatiskt att uppdatera överföringsordern så snart den sista registreringsskylten för beställningen har identifierats.
 
-![Exempel på automatiserad överföringsorderprocess](media/create-transfer-order-from-app-example.png "Exempel på automatiserad överföringsorderprocess")
+![Exempel på automatiserad överföringsorderprocess.](media/create-transfer-order-from-app-example.png "Exempel på automatiserad överföringsorderprocess")
 
 ### <a name="create-a-mobile-device-menu-item-for-creating-transfer-orders"></a>Skapa ett menyalternativ för mobila enheter för att skapa överföringsorder
 

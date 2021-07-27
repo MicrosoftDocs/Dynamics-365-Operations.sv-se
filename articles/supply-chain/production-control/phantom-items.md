@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validfrom: ''
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1118d7334602e450e5d503632895f73ba19066a1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cb04502721740c48004b62bc96ff13ca063e06db
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814788"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360908"
 ---
 # <a name="phantom-items"></a>Fiktiva artiklar
 
@@ -27,12 +27,12 @@ ms.locfileid: "5814788"
 
 Det här avsnittet beskrivs i detalj, hur radtypen fiktiv kan användas för rader i en strukturlista (BOM) och en formel. I bilden nedan (a) är strukturlistan för produkt H och delar F och G och (b) flödesbladet för produkter H och del F.
 
-![Produkt H och del F](media/product-H-part-F.png)
+![Produkt H och del F.](media/product-H-part-F.png)
 
 
 Illustrationen visar ett exempel på en strukturlista på två nivåer. Slutprodukten H representerar en produkt för en maskinsammansättning. Maskinsammansättningen består av två delar, en elektrisk enhet (F) med två material (A och B) och en uppsättning förpackningsmaterial (G) som också har två material (C och D). Ett annat material (E) används vid allmän sammansättning av maskinen.
 
-![Produkt H och del F](media/product-H-part-B.png)
+![Produkt H och del F.](media/product-H-part-B.png)
 
 Bilden ovan representerar teknikstrukturlistan för produkt H. Den här strukturen ger en bra översikt över delarna och komponenterna i maskinens övergripande sammansättning. Men även om produktutvecklare kanske föredrar att visa strukturlistan på detta sätt, kanske strukturen inte korrekt återger hur maskinen byggs i fabriken. 
 
@@ -53,23 +53,23 @@ Till skillnad från teknikstrukturlistan som hade två operationsblad har tillve
 ## <a name="multilevel-phantom-bom-structures"></a>Fiktiva artikelstrukturlistor på flera nivåer
 Radtypen Fiktiv kan användas i strukturlistor på flera nivåer, vilket visas i följande illustration. I den här illustrationen (a) är strukturlistan för produkt G och (b) flödesbladet för delar E och produkt G. 
 
-![Produkt G och del F med bladflöde](media/product-G-route-sheet-G.png)
+![Produkt G och del F med flödesark.](media/product-G-route-sheet-G.png)
 
 
 Följande bild visar den resulterande tillverkningsstrukturlistan och flödesbladet och strukturlisteraderna för delar E och F konfigureras så att radtypen är Fiktiv. I den här illustrationen (a) är strukturlistan för produkt G och (b) flödesbladet för produkt G.
 
-![Produkt G](media/product-G.png)
+![Produkt G.](media/product-G.png)
 
 
 ## <a name="phantom-and-route-network"></a>Fiktiv och flödesnätverk
 Fiktiva strukturlistor kan också användas för en strukturlista som har ett flödesnätverk. I ett flödesnätverk körs en eller flera åtgärder parallellt. Nedan visas ett exempel på ett flödesnätverk som används i en strukturlista med flera nivåer. I den här illustrationen (a) är strukturlistan för produkt G och F och (b) flödesbladet för produkt G och del F som har flödesnätverk.
 
-![Produkt G och del F](media/product-G-part-F.png)
+![Produkt G och del F.](media/product-G-part-F.png)
 
 
 I bilden nedan (a) är strukturlistan för produkt G och del F och (b) flödesbladet för produkt G och del F.
 
-![Produkt G och del F med bladflöde](media/product-G-part-F-with-route-sheet.png)
+![Produkt G och del F med flödesark.](media/product-G-part-F-with-route-sheet.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

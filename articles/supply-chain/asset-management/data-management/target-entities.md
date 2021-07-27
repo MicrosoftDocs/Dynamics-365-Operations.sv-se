@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b9fd32d539a8f2e038f571910314889f92e3fd9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e3b28475e6432294b3a9ed0c63341122bedca037
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838644"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346188"
 ---
 # <a name="target-entities"></a>Målenheter
 
@@ -34,13 +34,13 @@ I arbetsytan **Datahantering** kan du få en översikt över målentiteter, rela
 
 2. I avsnittet **Import/Export**, klicka på **Dataentiteter**. 
 
-    ![Figur 1](media/01-data-management.png)
+    ![Figur 1.](media/01-data-management.png)
 
 3. På sidan **Målentiteter** söker du efter "tillgångshantering" i filtret och trycker på RETUR för att visa en lista över de entiteter som hör till Tillgångshantering.
 
     I bilden nedan visas några av Tillgångshanteringsentiteterna.
 
-   ![Figur 2](media/02-data-management.png)
+   ![Figur 2.](media/02-data-management.png)
 
 4. Välj en entitet och klicka på **Ändra målmappning**.
 
@@ -48,7 +48,7 @@ I arbetsytan **Datahantering** kan du få en översikt över målentiteter, rela
 
     I bilden nedan visas en visualisering av de fält som är relaterade till tillgångstypen entitet.
 
-    ![Figur 3](media/03-data-management.png)
+    ![Figur 3.](media/03-data-management.png)
 
 
 

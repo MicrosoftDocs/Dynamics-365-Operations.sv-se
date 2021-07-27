@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1ec8e89ed82bcdffdc21e62d24ad8c8a7d939cdf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 76d4bea9ad25494015a7bfeb324cb0e84dd024b7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797873"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346862"
 ---
 # <a name="cart-module"></a>Kundvagnsmodul
 
@@ -35,11 +35,11 @@ I modulen kundvagn återges data baserat på vagn-ID:t, som är en webbläsarcoo
 
 Följande bild visar ett exempel på en kundvagnssida på Fabrikam-webbplatsen.
 
-![Exempel på en kundvagnsmodul på webbplatsen Fabrikam](./media/cart2.PNG)
+![Exempel på en kundvagnsmodul på webbplatsen Fabrikam.](./media/cart2.PNG)
 
 Följande bild visar ett exempel på en kundvagnssida på Fabrikam-webbplatsen. I det här exemplet är det en hanteringsavgift för en radartikel.
 
-![Exempel på en kundvagnsmodul med en hanteringsavgift för en radartikel](./media/ecommerce-handling-fee.png)
+![Exempel på en kundvagnsmodul med en hanteringsavgift för en radartikel.](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>Egenskaper och platser för kundvagnsmodul
 

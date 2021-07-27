@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: a243399536fec3f5361104289c38e550bf8b1144
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 27e52a94208129aee0e33074e7fc3778de53733a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193292"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355839"
 ---
 # <a name="ratings-and-reviews-modules"></a>Moduler för omdömen och recensioner
 
@@ -42,20 +42,20 @@ Tre moduler visar sammanfattningen av omdömen och recensioner i PDP:
  
 I bilden nedan visas hur modulerna omdömen och recensioner ser ut på ett PDP.
 
-![Moduler för omdömen och recensioner på en PDP](media/rnr-eCommerce-pdp-reviews-modules_design.png)
+![Moduler för omdömen och recensioner på en PDP.](media/rnr-eCommerce-pdp-reviews-modules_design.png)
 
 > [!TIP] 
 > Information om hur du optimerar mallar och layouter i PDP så att du kan dela med dig av konfigurationerna för omdömen och recensioner av moduler mellan flera PDP på din näthandelssajt finns på [Översikt över mallar och layouter](templates-layouts-overview.md).
 
 Följande illustration visar hur dialogrutan **Lägg till modul** presenterar moduler för omdömen och recensioner i Dynamics 365 Commerce.
-![Dialogrutan Lägg till modul](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
+![Dialogrutan Lägg till modul.](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
 
 ### <a name="write-review-module"></a>Modulen skriv recension
 
 Modulen skriv recension inkluderar knappen **Skriv en recension**, där användarna kan logga in, tilldela ett omdöme och skriva en recension av en produkt. Med hjälp av modulen kan du också redigera ett omdöme eller granska de som tidigare har skickat in dem. Den här modulen visas normalt ovanför modulerna omdömeshistogram och produktrecensioner i en PDP.
 Bilden nedan visar dialog rutan **Skriv en recension** som visas när en kund väljer **skriva en recension**. Kunden kan använda den här dialogrutan för att skicka ett omdöme och en recension.
 
-![Dialogrutan Skriv en recension](media/rnr-eCommerce-write-review-module.png)
+![Dialogrutan Skriv en recension.](media/rnr-eCommerce-write-review-module.png)
 
 I följande tabell visas den egenskap för modulen skriv recension som måste konfigureras i utvecklingsverktyget.
 
@@ -67,7 +67,7 @@ I följande tabell visas den egenskap för modulen skriv recension som måste ko
 
 Modulen omdömeshistogram visar ett histogram med omdömet. Den här modulen visas normalt mellan modulen skriv recension och produktrecensionslistan på ett PDP.
 Modulen omdömeshistogram kräver ingen konfiguration. Du behöver bara lägga till modulen i PDP-mallen. Följande illustrationer visar hur en PDP-mall ser ut i Dynamics 365 Commerce när moduler för omdömen och recensioner konfigureras för visning på PDP.
-![PDP-mall när omdömen och recensioner konfigureras för visning på PDP](media/rnr-eCommerce-pdp-reviews-modules.png)
+![PDP-mall när omdömen och recensioner konfigureras för visning på PDP.](media/rnr-eCommerce-pdp-reviews-modules.png)
 
 ### <a name="product-reviews-list-module"></a>Modulen produktrecensionslista
 
@@ -82,11 +82,11 @@ I följande tabell visas de egenskaper för modulen produktrecensionslista som m
 
 Modulen produktrecensionslista innehåller en plats där du kan lägga till en modul för ett omdöme i histogram. Följande illustration visar hur du kan lägga till en modul för omdömeshistogram i modulen produktrecensionslista i Dynamics 365 Commerce.
 
-![Lägga till modulen omdömeshistogram i modulen produktrecensionslista](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
+![Lägga till modulen omdömeshistogram i modulen produktrecensionslista.](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över modulbibliotek](starter-kit-overview.md)
+[Modulbibliotek – översikt](starter-kit-overview.md)
 
 [Behållarmodul](add-container-module.md)
 

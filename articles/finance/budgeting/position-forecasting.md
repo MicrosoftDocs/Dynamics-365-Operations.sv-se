@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3ff7ac15a64196d7839177ded5515386184e268
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: c76919c6289fe0c2367cedecc64bbdae9ee86e63
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028237"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358521"
 ---
 # <a name="position-forecasting"></a>Befattningsprognos
 
@@ -30,7 +30,7 @@ Utgifter relateradr till att kompensera för arbetare är ofta en stor del av et
 
 ## <a name="position-forecasting-in-budget-planning"></a>Befattningsprognos i budgetplanering
 
-[![Komponenter för befattningsprognosticering](./media/graphic-top.png)](./media/graphic-top.png) 
+[![Komponenter för befattningsprognosticering.](./media/graphic-top.png)](./media/graphic-top.png) 
 
 Befattningsprognosen har tre huvudsakliga komponenter för att ge exakta budgetbelopp för befattningsutgifter. Beloppen kan sedan tas med på en budgetplan för budgetberäkningar. 
 
@@ -42,14 +42,14 @@ En **kompensationsgrupp** är en valfri inställningskomponent som används för
 
 ### <a name="position-forecasting-processes"></a>Befattningsprognosprocesser
 
-[![Bild av processer för befattningsprognosticering](./media/graphic1b.png)](./media/graphic1b.png) 
+[![Bild av processer för befattningsprognosticering.](./media/graphic1b.png)](./media/graphic1b.png) 
 
 I en normal process för befattningsprognos skapar du först inställningskomponenterna (budgetkostnadselement och kompensationsgrupper). Prognosbefattningar genereras sedan, baserat på befintliga befattningar. Du kan sedan göra justeringar. Du kan till exempel lägga till eller avsluta befattningar, ändra ändra lönesatser och förmånskostnader och lägga till löneökningar. Du kan skapa flera versioner av en prognosbefattning för att underlätta jämmförelser mellan olika budgetscenarier. Därefter kan du inkludera budgettransaktioner i prognosbefattningsplaner och sammanföra i kostnaderna från prognosbefattningarna, som den här planen.
 
 Du kan skapa ytterligare prognosbefattningsversioner, som budgetplaner revideras. Dessa nya versioner innehåller bas för revideringarna.
 
 ## <a name="position-forecasting-setup"></a>Befattningsprognosinställning
-[![Bild av markering av inställning](./media/graphic2-1024x327.png)](./media/graphic2.png)
+[![Bild av markeringskonfiguration.](./media/graphic2-1024x327.png)](./media/graphic2.png)
 
 ### <a name="budget-cost-elements"></a>Budgetkostnadselement
 
@@ -86,7 +86,7 @@ De giltiga data och förfallodatum på kompensationtaktregistren kan du ändra k
 Det kostnader för elementet förtjänsten, som valts på kompensationsgruppen, används, när du skapar resultat för prognosbefattningarna i gruppen, inklusive deras grundlön och eventuella kliver taget. **Kompensation fasta plan** Fältet kompensationsgruppen länkar till en fast kompensationsplan i Personal. Den länk kan tilldela en arbetares information om fast kompensation till en prognos befattning och kan därför göra budgettransaktioner planera exakt. Kom ihåg att strukturen för kompensationsrutnätet (nivåerna och stegen) för kompensationsgruppen bör matcha strukturen för fasta kompensationsplanen. I annat fall kan systemet inte korrekt och länka kompensationsgruppen fasta kompensationsplanen.
 
 ## <a name="creating-forecast-positions"></a>Skapa prognosbefattningar
-[![Bild av markering "Skapa prognosbefattningar"](./media/graphic3-1024x327.png)](./media/graphic3.png)
+[![Bild som framhäver "skapa prognosbefattningar."](./media/graphic3-1024x327.png)](./media/graphic3.png)
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Skapa befattningar en befintlig prognos för befattningar
 
@@ -115,7 +115,7 @@ När en prognos, befattning har valt **Kopiera den valda prognosbefattningen** a
 Du kan också skapa en ny prognosbefattning helt. Markera ett befintligt jobb, och även välja det budgeterade och budgetering planscenariot planeringsprocessen. Du kan sedan lägga till andra uppgifter som du vill lägga till. En gång till skapas en ny befattning i personal samtidigt.
 
 ## <a name="working-with-forecast-positions"></a>Arbeta med prognosbefattningar
-[![Bild av markering "Ändra prognosbefattningar"](./media/graphic5-1024x327.png)](./media/graphic5.png)
+[![Bild som framhäver "Ändra prognosbefattningar."](./media/graphic5-1024x327.png)](./media/graphic5.png)
 
 ### <a name="multiple-versions-of-a-forecast-position"></a>Flera versioner av en prognosbefattning
 
@@ -171,7 +171,7 @@ Omberäkningprocessen används automatiskt i en prognosbefattning som har ändra
 
 ## <a name="bringing-forecast-positions-into-budget-plans"></a>Komma prognostiserade med befattningar till budget planer
 
-[![Bild av markering "Lägg till i budgetplan"](./media/graphic6-1024x327.png)](./media/graphic6.png)
+[![Bild som framhäver "Lägg till i budgetplan".](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
 Syftet med att skapa och ändra prognostiserade befattningar är att lägga till dem till budgetplaner, så att budgetplanerna inkluderar de exaktaste budgetbeloppen. Det finns två sätt att lägga till befattningar prognostiserade budgetering planer. Du kan använda antingen en utvecklingsprocess eller en valprocess på den här planen.
 

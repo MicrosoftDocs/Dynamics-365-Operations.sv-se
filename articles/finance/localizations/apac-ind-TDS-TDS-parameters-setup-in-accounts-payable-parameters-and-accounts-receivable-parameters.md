@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 4540cdfff2362d8fb7cc2b4cccf9c340be9750ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ccf1557d3c95829421b26d5f84750e3d4236c9e0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023598"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358228"
 ---
 # <a name="set-tds-parameters-in-accounts-payable-and-accounts-receivable"></a>Konfigurera TDS-parametrar i Leverantörsreskontra och Kundreskontra
 
@@ -38,12 +38,12 @@ I det här avsnittet beskrivs hur du ställer in parametrar i leverantörsreskon
     - **Uppmaning** – Användarna får ett meddelande som uppmanar dem att uppdatera TDS-gruppen på orderraderna.
 4. Välj **OK**.
 
-    [![Dialogrutan Uppdatera orderrader](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
+    [![Dialogrutan Uppdatera orderrader.](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
 
 5. Gå till **Skatt \> Konfiguration \> Parametrar \> Parametrar för leverantörsreskontra**.
 6. Under fliken **Allmänt**, under snabbfliken **Dela upp baserat på leveransinformation**, ställer du in alternativet **Produktinleverans** på **Ja** för att bokföra och dela upp en produktinleverans som har olika leveransadresser och skattekontonummer (TAN). Om det här alternativet är inställt på **Nej**, kan du inte bokföra en inköpsföljesedel som har olika leveransadresser och TAN.
 7. Ställ in alternativet **Faktura** på **Ja** för att bokföra och dela upp en inköpsfaktura som har olika leveransadresser och TAN.
 
-    [![Snabbfliken Dela upp baserat på leveransinformation](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
+    [![Snabbfliken Dela upp baserat på leveransinformation.](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
 
 8. Stäng sidan.

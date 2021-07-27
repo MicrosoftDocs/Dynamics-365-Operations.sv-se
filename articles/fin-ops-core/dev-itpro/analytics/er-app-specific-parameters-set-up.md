@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 4003208a1f02db134bbec1ecf90c1cdd2973e67f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9276a633d560bc95c868b9c12438b4f625ed169a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751164"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351900"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Ställ in parametrarna för ett ER-format per juridisk person
 
@@ -49,7 +49,7 @@ Om du vill slutföra exemplen i det här avsnittet måste du ha tillgång till M
     
     Följande illustration visar vilka konfigurationer du måste ha när du är klar.
 
-    ![Sidan ER-konfigurationer](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
+    ![Sidan ER-konfigurationer.](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
 
 ## <a name="set-up-parameters-for-the-demf-company"></a>Ställa in parametrar för DEMF-företaget
 
@@ -59,7 +59,7 @@ Du kan använda ER-ramverket för att ställa in programspecifika parametrar fö
 2.  I konfigurationsträdet väljer du formatet **format för att lära dig hur du letar upp LE-data**.
 3.  I Åtgärdsfönstret, på fliken **Konfigurationer**, i gruppen **Appspecifika parametrar**, markerar du **Konfigurera**.
 
-    ![Sidan Importera ER-programspecifika parametrar](./media/GER-AppSpecParms-LookupForm.PNG)
+    ![Sidan Importera ER-programspecifika parametrar.](./media/GER-AppSpecParms-LookupForm.PNG)
     
     På sidan **Programspecifika parametrar** kan du konfigurera reglerna för datakällan **väljare** för formatet **format för att lära dig hur du söker efter LE-data**.
     
@@ -75,14 +75,14 @@ Du kan använda ER-ramverket för att ställa in programspecifika parametrar fö
 
     Sökningen visar en lista över momskoder för urvalet. Den här listan returneras av datakällan **Model.Data.Tax** som har konfigurerats i ER-basformat. Eftersom datakällan innehåller fältet **namn** visas namnet på varje skattekod i sökningen.
 
-    ![Sidan Importera ER-programspecifika parametrar](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
+    ![Sidan Importera ER-programspecifika parametrar.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
     
 7.  Välj momskoden **VAT19**.
 8.  I fältet **Sökningsresultat** för den nya posten väljer du nedrullningsbara pilen för att öppna uppslaget. Sökningen visar en lista med värden för TaxationLevel formatuppräkning för urval.
 
     Observera att om tyska har valts som det prioriterade språket för den användare som du är inloggad på som, kommer etiketterna för värdena i sökningen att vara på tyska, förutsatt att de har översatts i ER-basformatet. Dessutom, om etiketten för en datakälla för sökning har översatts, kommer den etiketten att visas på användarens önskade språk på fliken **sökningar**.
 
-    ![Sidan Importera ER-programspecifika parametrar](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
+    ![Sidan Importera ER-programspecifika parametrar.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
 
 9.  Välj värdet **vanlig beskattning**.
 
@@ -120,7 +120,7 @@ Du kan använda ER-ramverket för att ställa in programspecifika parametrar fö
     
     Genom att lägga till den här posten definierar du följande regel: När datakällan för sökning skicka eftersom ett argument inte uppfyller någon av de tidigare reglerna, kommer uppslagning datakällan tillbaka **Övrig** som den begärda momsnivån.
 
-    ![Sidan Importera ER-programspecifika parametrar](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
+    ![Sidan Importera ER-programspecifika parametrar.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
     
 16. I fältet **Stat**, välj **Slutförd**.
 
@@ -144,7 +144,7 @@ Du kan använda ER-ramverket för att ställa in programspecifika parametrar fö
 6.  Välj momskoden **InVAT7**.
 7.  I åtgärdsfönstret på fliken **Momskod** i gruppen **Förfrågningar** välj **Bokförd moms** om du vill visa information om momsvärde och tillämpad momssats per momskod.
 
-    ![Sidan Bokförd moms](./media/GER-AppSpecParms-Statement.PNG)
+    ![Sidan Bokförd moms.](./media/GER-AppSpecParms-Statement.PNG)
 
 8.  Stäng sidan Bokförd moms.
 
@@ -160,7 +160,7 @@ Du kan använda ER-ramverket för att ställa in programspecifika parametrar fö
 
     Sökningen visar nu en lista över momskoder för **USMF** företagsmoms för urvalet.
 
-    ![Sidan Importera ER-programspecifika parametrar](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
+    ![Sidan Importera ER-programspecifika parametrar.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
     
 8.  Välj momskoden **EXEMPT**.
 9.  I fältet **Sökningsresultat** för den nya posten, välj värdet **Ingen beskattning**.
@@ -170,7 +170,7 @@ Du kan använda ER-ramverket för att ställa in programspecifika parametrar fö
 13. I fältet **Stat**, välj **Slutförd**.
 14. Välj **Spara**.
 
-    ![Sidan Importera ER-programspecifika parametrar](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
+    ![Sidan Importera ER-programspecifika parametrar.](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
     
 15. Stäng sidan **Appspecifika parametrar**.
 
@@ -225,13 +225,13 @@ I föregående exempel har du tillgång till programspecifika parametrar för et
 
 1.  Återanvänd antingen ett befintligt menyalternativ **ERSolutionAppSpecificParametersDesigner** eller implementera dina egna **ERSolutionAppSpecificParametersDesigner** menyalternativ.
 
-    ![Visual Studio-sida](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
+    ![Visual Studio-sida.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
     
 2.  Gör något av följande:
 
     1.  Skapa en ny knapp för meny objekt och länka den till motsvarande post från tabellen **ERSolutionTable** genom att ange egenskapen **Datakälla** till **ERSolutionTable**.
     
-        ![Visual Studio-sida](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
+        ![Visual Studio-sida.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
         
     2.  Skapa en enkel knapp och åsidosätt den **klickade** metoden som den visas i följande exempel.
     

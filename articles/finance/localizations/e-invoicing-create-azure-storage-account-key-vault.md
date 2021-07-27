@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5c2ddad10f9cbedd77a04fe0f42bdc217fd43344
-ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
+ms.openlocfilehash: d68587a88b52e95d1e11c64b9a2d51dbc8b70561
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5963249"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357424"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Skapa ett Azure Storage-konto och ett nyckelvalv
 
@@ -49,7 +49,7 @@ I det här avsnittet ska du utföra två huvudsteg:
 5. Välj **Lägg till policy** om du vill lägga till en lagrad åtkomstpolicy.
 6. Ange fältet **Identifierare** och **Behörigheter** efter behov. I fältet **Behörigheter** bör du välja alla behörigheter.
 
-    ![Bevilja behörighet för Blob Storage](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
+    ![Bevilja behörighet för Blob Storage.](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
 
 7. Ange start- och utgångsdatum. Utgångsdatumet måste vara i framtiden.
 8. Klicka på **OK** om du vill spara policy och spara sedan ändringarna i behållaren.
@@ -57,7 +57,7 @@ I det här avsnittet ska du utföra två huvudsteg:
 10. Högerklicka på behållaren och välj sedan **Hämta signatur för delad åtkomst**.
 11. I dialogrutan **Signatur för delad åtkomst** kopiera och spara värdet **URI**. Det här värdet används i nästa procedur och kallas för *Signatur för delad åtkomst URI*.
 
-    ![Markera och kopiera URI-värdet](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
+    ![Markera och kopiera URI-värdet.](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>Ställ in nyckelvalvet för att lagra lagringskontots URI
 
@@ -69,11 +69,11 @@ I det här avsnittet ska du utföra två huvudsteg:
 6. Ställ in åtkomstprincipen så att e-fakturering på den korrekta nivån för säker åtkomst till den hemlighet som du har skapat. Gå till **Inställningar \> Åtkomstprinciper** och välj **Lägg till åtkomstprincip**.
 7. Ange de hemliga behörigheterna för åtgärderna **Hämta** och **Lista**.
 
-    ![Bevilja tjänståtkomst](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
+    ![Bevilja tjänsteåtkomst.](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
 
 8. Ange certifikatbehörigheter för åtgärderna **Hämta** och **Lista**.
 
-    ![Bevilja certifikatbehörighet](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
+    ![Bevilja certifikatbehörighet.](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
 9. I fältet **Välj huvudkonto**, välj **Inget valt**.
 10. I dialogrutan **Primär** välj primär genom att lägga till **Tjänst för e-fakturering**.

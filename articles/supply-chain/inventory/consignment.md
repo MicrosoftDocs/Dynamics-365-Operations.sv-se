@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a41fb3118359ab9a597f3c3242759fcbcf1e090a
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 742c6d1b713b8669dcc3544cf84eb340e3e9293b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015863"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360410"
 ---
 # <a name="set-up-consignment"></a>Ställ in försändelse
 
@@ -61,7 +61,7 @@ En order för försändelseåteranskaffning är ett dokument som används för a
 
 Dimensionen **Ägare** används för att separat information om vilket lager som ägs av leverantören och som ägs av den mottagande juridiska personen. Orderrader för försändelsepåfyllnad har statusen **Öppen order** status så länge inte hela radkvantiteten har tagits emot eller annullerats. När den fullständiga kvantiteten har tagits emot eller annullerats ändras statusen till **Slutfört**. Den fysiska lagerbehållningen som gäller en order för försändelseåteranskaffning kan registreras med hjälp av en registreringsprocess samt en uppdateringsprocess för produktinleverans. Registreringen kan göras som en del av artikelinförselprocessen eller manuellt genom att uppdatera orderraderna. När uppdateringprocessen för produktinleverans används, görs en post i produktinleveransjournalen som kan användas för att bekräfta inleveranser av varor till leverantörerna.
 
-[![Order för försändelseåteranskaffning](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
+[![Order för försändelseåteranskaffning.](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Journal för lagerägarskapsändring
 
@@ -74,7 +74,7 @@ De enda lagertransaktioner som skapas är de som relaterar till en bokförd jour
 
 Det går inte att uppdatera kvantiteten på rader för försändelseinköpsorder efter att ordern har skapats.
 
-[![Journal för lagerägarskapsändring](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+[![Lagerjournal för ägarskapsändring.](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Leverantörssamarbete i försändelseprocesser
 
@@ -90,13 +90,13 @@ Mer information finns i [Användarsäkerhet på leverantörsportalen](../procure
 
 Om du vill registrera det fysiska inkommande försändelselagret måste du definiera en leverantörsägare. Detta görs på sidan **Lagerägare**. När du väljer ett **Leverantörskonto** genererar detta förvalda värden för fälten **Namn** och **Ägare**. Värdet i fältet **Ägare** visas för leverantören, så du kanske vill ändra det om ditt leverantörkontonamn inte är svårt för externa kontakter att känna igen. Det är möjligt att redigera fältet **Ägare**, men bara fram till den punkt när du sparar posten **Lagerägare**. Fältet **Namn** fylls i med namnet på den part som leverantörskontot är kopplat till och detta kan inte ändras.
 
-[![Lagerägare](./media/inventory-owners.png)](./media/inventory-owners.png)
+[![Lagerägare.](./media/inventory-owners.png)](./media/inventory-owners.png)
 
 ## <a name="tracking-dimension-group"></a>Spårningsdimensionsgrupp
 
 Artiklar som ska användas i försändelseprocesser, måste associeras med en **Spårningsdimensionsgrupp** där dimensionen **Ägare** är inställd på **Aktiv**. Dimensionen Ägare har alltid alternativen **Fysiskt lager** och **Ekonomiskt lager** markerade. **Disponera per dimension** markeras aldrig.
 
-[![Spårningsdimensionsgrupp](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+[![Spårningsdimensionsgrupp.](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

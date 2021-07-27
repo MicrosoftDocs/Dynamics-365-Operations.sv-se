@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4b8c1467368cbcbed5049561b52b29388ec21a5f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6e500125e1d96f6b595910e1168e2e1baeef0cd3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055110"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360602"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integration med LinkedIn Talent Hub
 
@@ -48,7 +48,7 @@ En systemadministratör måste slutföra installationsåtgärderna för att kunn
 
 5. På sidan **Dynamics 365 Human Resources**, välj den miljö du vill länka LinkedIn Talent Hub till och välj sedan **Länka**.
 
-    ![LinkedIn Talent Hub registrering](./media/hr-admin-integration-talent-hub-onboarding.jpg)
+    ![LinkedIn Talent Hub-registrering.](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
     > [!NOTE]
     > Du kan bara länka till miljöer där ditt användarkonto har administratörsåtkomst till både Personal-miljön och den associerade Power Apps-miljön. Om det inte finns några miljöer på sidan Personal-länkar ser du till att du har licensierade Personal-miljöer på klientorganisationen och att användaren som du har loggat in på länksidan som har administratörsbehörighet för både Personal-miljön och Power Apps-miljön.
@@ -91,7 +91,7 @@ En program användare måste skapas för LinkedIn Talent Hub för att bevilja be
 
 6. Använd den nedrullningsbara menyn ovanför listan för att ändra visningen av vyn standardinställda **användare** för **appanvändare**.
 
-    ![Vyn appanvändare](./media/hr-admin-integration-power-apps-application-users.jpg)
+    ![Vyn Programanvändare.](./media/hr-admin-integration-power-apps-application-users.jpg)
 
 7. I verktygsfältet klickar du på **Nytt**.
 
@@ -163,7 +163,7 @@ När en kandidat har gått igenom rekryteringsprocessen och har anställts kan d
     - I fältet **plats** anger du den plats där medarbetaren ska baseras.
     - Ange eller verifiera medarbetarens e-postadress.
 
-![Exportera till HRIS-fönstret på LinkedIn Talent Hub](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
+![Exportera till HRIS-fönstret i LinkedIn Talent Hub.](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
 
 ## <a name="complete-onboarding-in-human-resources"></a>Slutföra registrering i Personal
 

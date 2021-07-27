@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: 6662b6cad53c832e15fb27b435e277840afd8097
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112683"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346556"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Uppgradera till part- och globala adressboksmodellen
 
@@ -89,7 +89,7 @@ Följande aktiviteter behövs för att förbereda uppgraderingen:
 
 10. Efter distributionen kan du validera datauppsättningarna, dataflödet och länkad tjänst för datafabriken.
 
-   ![Datauppsättningar, dataflöde och länkad tjänst](media/data-factory-validate.png)
+   ![Datauppsättningar, dataflöde och länkad tjänst.](media/data-factory-validate.png)
 
 11. Navigera till **Hantera**. Under **Anslutningar** väljer du **Kopplad tjänst**. Välj **DynamicsCrmLinkedService**. Ange följande värden i formuläret **Redigera kopplad tjänst (Dynamics CRM)**.
 
@@ -154,7 +154,7 @@ Följande aktiviteter behövs för att förbereda uppgraderingen:
 
 7. Kör mallen i datafabriken genom att välja **Utlösa nu** på det sätt som visas i bilden nedan. Denna process kan ta några timmar att slutföra baserat på datavolymen.
 
-    ![Utlösarkörning](media/data-factory-trigger.png)
+    ![Utlösarkörning.](media/data-factory-trigger.png)
 
     > [!NOTE]
     > Om du har anpassningar för **Konto**, **Kontakt** och **Leverantör** måste du ändra mallen.
@@ -164,7 +164,7 @@ Följande aktiviteter behövs för att förbereda uppgraderingen:
     + Hämta filen `FONewParty.csv` från Azure blob-lagring. Sökvägen är `partybootstrapping/output/FONewParty.csv`.
     + Konvertera filen `FONewParty.csv` till en Excel-fil och importera Excel-filen till Finance and Operations-programmet. Om CSV-importen fungerar kan du importera CSV-filen direkt. Importen kan ta ett par timmar att köra, beroende på datavolymen. Mer information finns i [Översikt över dataimport- och exportjobb](../data-import-export-job.md).
 
-    ![Importera poster för Datavers-parten](media/data-factory-import-party.png)
+    ![Importera poster för Datavers-parten.](media/data-factory-import-party.png)
 
 9. Aktivera följande instickssteg i programmet för kundengagemang:
 
@@ -199,7 +199,7 @@ Följande aktiviteter behövs för att förbereda uppgraderingen:
 3. Datafabriken körs baserat på CSV-filer som är kommaavgränsade. Om det finns ett fältvärde med ett kommatecken kan detta komma att störa resultaten. Du måste ta bort kommatecknen.
 4. På fliken **Övervakning** finns information om alla steg och data som bearbetas. Välj ett specifikt steg för att felsöka det.
 
-    ![Fliken Övervakning](media/data-factory-monitor.png)
+    ![Fliken Övervakning.](media/data-factory-monitor.png)
 
 ## <a name="learn-more-about-the-template"></a>Läs mer om mallen
 

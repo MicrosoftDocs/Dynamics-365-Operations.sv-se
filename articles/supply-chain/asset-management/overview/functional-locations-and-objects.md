@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e626daa89eecf838d7cda0663d00c1c2dbecb76
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fa61f9ab9d38a748742733a4143e6d50b82caf4c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816782"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351595"
 ---
 # <a name="functional-locations-and-assets"></a>Funktionsplatser och tillgångar
 
@@ -34,13 +34,13 @@ Det här avsnittet beskriver funktionsplats och tillgångar i tillgångshanterin
 
 Tillgångshantering integreras sömlöst med flera moduler med andra Finance and Operations-appar. Följande illustration visar gränssnitten med andra moduler.
 
-![Diagram som visar tillgångshanterings gränssnitt med andra moduler](media/01-overview-image.png)
+![Diagram som visar hur tillgångshantering samarbetar med andra moduler.](media/01-overview-image.png)
 
 Med tillgångshantering kan du effektivt hantera och utföra alla uppgifter som är relaterade till hantering och underhåll av många typer av utrustning i företaget. Denna utrustning omfattar maskiner, produktionsutrustning och fordon. Tillgångshantering stödjer även lösningar inom många branscher.
 
 Följande illustration visar en översikt över de viktigaste funktionerna som täcks av tillgångshantering.
 
-![Diagram som visar huvudfunktionerna i tillgångshantering](media/02-overview-image.png)
+![Diagram som visar huvudfunktionerna i tillgångshanteringen.](media/02-overview-image.png)
 
 ## <a name="functional-locations-and-assets"></a>Funktionsplatser och tillgångar
 
@@ -50,11 +50,11 @@ Tillgångskostnader följer alltid placeringen av tillgången. Med andra ord, om
 
 Hur du bygger din hierarki av funktionsplatser beror på ditt företags krav på underhåll av intern utrustning eller service av kundutrustning. Följande bild visar ett exempel på funktionsplatser som är baserade på geografiska platser.
 
-![Diagram som visar funktionella platser baserat på geografiska platser](media/03-overview-image.png)
+![Diagram som visar funktionella platser baserat på geografiska platser.](media/03-overview-image.png)
 
 Följande bild visar ett exempel på funktionsplatser som är baserade på kunder.
 
-![Diagram som visar funktionella platser baserat på kunder](media/04-overview-image.png)
+![Diagram som visar funktionella platser baserat på kunder.](media/04-overview-image.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

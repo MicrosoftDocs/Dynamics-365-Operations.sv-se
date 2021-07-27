@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aeb9675477e728c28c38b1ef43fa6055acd23360
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 913b20d73b87f03b4b1f80efdcf6e60bd07ce270
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909389"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359495"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Installera och ansluta distributionslagerappen
 
@@ -64,28 +64,28 @@ Om du vill att lagerställeappen ska interagera med en viss Supply Chain Managem
 1. Ange namn och lösenord för den användare som har tillgång till Azure-abonnemanget.
 1. I Azure-portalen väljer du i det vänstra navigeringsfönstret **Azure Active Directory**.
 
-    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Se till att du arbetar med den instans av Azure AD som används av Supply Chain Management.
 1. I listan **Hantera** väljer du **App-registreringar**.
 
-    ![App-registreringar](media/app-connect-azure-register.png "App-registreringar")
+    ![App-registreringar.](media/app-connect-azure-register.png "App-registreringar")
 
 1. I verktygsfältet väljer du **Ny registrering** för att öppna guiden **Registrera ett program**.
 1. Ange ett namn på programmet, välj alternativet **Endast konton i denna organisationskatalo** och sedan **Registrera**.
 
-    ![Guiden Registrera ett program](media/app-connect-azure-register-wizard.png "Guiden Registrera ett program")
+    ![Guiden Registrera ett program.](media/app-connect-azure-register-wizard.png "Guiden Registrera ett program")
 
 1. Din nya programregistrering öppnas. Anteckna värdet för **Program-ID (klient)** eftersom du kommer att behöva detta senare. Detta ID benämns *klient-ID* längre fram i detta avsnitt.
 
-    ![Program-ID (klient)](media/app-connect-azure-app-id.png "Program-ID (klient)")
+    ![Program-ID (klient).](media/app-connect-azure-app-id.png "Program-ID (klient)")
 
 1. I listan **Hantera** väljer du **Certifikat och hemligheter**. Välj sedan någon av följande knappar, beroende på hur du vill konfigurera appen för autentisering. (Mer information finns under [Autentisera med hjälp av ett certifikat eller en klienthemlighet](#authenticate) senare i det här avsnittet.)
 
     - **Ladda upp certifikat** – Ladda upp ett certifikat som ska användas som hemlighet. Vi rekommenderar detta tillvägagångssätt eftersom det är säkrare och även kan automatiseras helt. Om du kör lagerställeappen på Windows-enheter ska du anteckna det värde för **tumavtryck** som visas när du har laddat upp certifikatet. Du kommer att behöva detta värde när du konfigurerar certifikatet på Windows-enheter.
     - **Ny klienthemlighet** – Skapa en nyckel genom att ange en nyckelbeskrivning och en varaktighet i avsnittet **Lösenord**, och välj sedan **Lägg till**. Skapa en kopia av nyckeln och spara den på ett säkert sätt.
 
-    ![Certifikat & hemligheter](media/app-connect-azure-authentication.png "Certifikat & hemligheter")
+    ![Certifikat & hemligheter.](media/app-connect-azure-authentication.png "Certifikat & hemligheter")
 
 Mer information om hur du ställer in webbtjänstprogram i Azure AD finns i följande resurser:
 
@@ -105,7 +105,7 @@ Gör så här om du vill låta Supply Chain Management använda ditt Azure AD-pr
     1. Skapa en användare.
     1. Tilldela användaren av den mobila enheten för lagerstyrningsenheten.
 
-    ![Tilldela användaren av den mobila enheten för lagerstyrningsenheten](media/app-connect-app-users.png "Tilldela användaren av den mobila enheten för lagerstyrningsenheten")
+    ![Tilldela användaren av den mobila enheten för lagerstyrningsenheten.](media/app-connect-app-users.png "Tilldela användaren av den mobila enheten för lagerstyrningsenheten")
 
 1. Koppla ditt Azure AD-program till användaren av lagerställeappen:
 
@@ -113,7 +113,7 @@ Gör så här om du vill låta Supply Chain Management använda ditt Azure AD-pr
     1. Skapa en rad.
     1. Ange det klient-ID som du noterade i föregående avsnitt, ge det ett namn och välj sedan den användare du just skapat. Vi rekommenderar att du taggar alla enheter. Om dessa går förlorade kan du enkelt ta bort åtkomsten till Supply Chain Management från den här sidan.
 
-    ![Azure Active Directory-program](media/app-connect-aad-apps.png "Azure Active Directory-program")
+    ![Azure Active Directory-program.](media/app-connect-aad-apps.png "Azure Active Directory-program")
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Autentisera med hjälp av ett certifikat eller en klienthemlighet
 
@@ -201,26 +201,26 @@ Följ dessa steg om du vill importera anslutningsinställningar från antingen e
 1. Gå till **Anslutningsinställningar**.
 1. Ange alternativet **Använd demoläge** som _Nej_.
 
-    ![Använd alternativet demoläge](media/app-connect-app-demo-mode.png "Använd alternativet demoläge")
+    ![Använd alternativet demoläge.](media/app-connect-app-demo-mode.png "Använd alternativet demoläge")
 
 1. Välj **Välj fil** eller **Skanna QR-kod** beroende på hur du vill importera inställningarna:
 
     - Om du importerar anslutningsinställningar från en fil kan det hända att appen redan har hittat filen om standardnamnet och standardplatsen användes när den sparades. I annat fall väljer du **Välj fil**, bläddrar till filen på den lokala enheten och markerar den. Om du väljer en anpassad plats kommer appen att lagra den och använda den automatiskt nästa gång.
     - Om du importerar anslutningsinställningar genom att skanna en QR-kod väljer du **Skanna QR-kod**. I appen uppmanas du att ange din behörighet att använda enhetens kamera. När du har gett ditt tillstånd startar kameran så att du kan använda den för skanning. Beroende på kvaliteten på enhetens kamera och hur pass komplex QR-koden är, kan det vara svårt att få en korrekt genomsökning. I så fall kan du försöka minska komplexiteten i QR-koden genom att bara skapa en anslutning per QR-kod. (För närvarande kan du endast använda enhetens kamera för att skanna QR-koden.)
 
-    ![Importera anslutningsinställningar](media/app-connect-app-select-file.png "Importera anslutningsinställningar")
+    ![Importera anslutningsinställningar.](media/app-connect-app-select-file.png "Importera anslutningsinställningar")
 
 1. När anslutningsinställningarna har lästs in väljer du knappen **Bakåt** (vänsterpil) i sidans övre vänstra hörn.
 
-    ![Inlästa anslutningsinställningar](media/app-connect-app-settings-loaded.png "Inlästa anslutningsinställningar")
+    ![Inlästa anslutningsinställningar.](media/app-connect-app-settings-loaded.png "Inlästa anslutningsinställningar")
 
 1. Om du använder en Android-enhet och ett certifikat för autentisering uppmanas du av enheten att välja certifikatet.
 
-    ![Välj certifikatuppmaning på en Android-enhet](media/app-connect-app-choose-cert.png "Välj certifikatuppmaning på en Android-enhet")
+    ![Välj certifikatuppmaning på en Android-enhet.](media/app-connect-app-choose-cert.png "Välj certifikatuppmaning på en Android-enhet")
 
 1. Appen ansluter till din Supply Chain Management-server och visar inloggningssidan.
 
-    ![Inloggningssida](media/app-connect-sign-in.png "Inloggningssida")
+    ![Inloggningssida.](media/app-connect-sign-in.png "Inloggningssida")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>Konfigurera programmet manuellt
 
@@ -230,11 +230,11 @@ Du kan konfigurera programmet manuellt på enheten så att den ansluter till Sup
 1. Gå till **Anslutningsinställningar**.
 1. Ange alternativet **Använd demoläge** som _Nej_.
 
-    ![Demoläge är inaktiverat](media/app-connect-app-select-file.png "Demoläge är inaktiverat")
+    ![Demoläge är inaktiverat.](media/app-connect-app-select-file.png "Demoläge är inaktiverat")
 
 1. Peka i fältet **Välj anslutning** för att expandera de inställningar som krävs för att ange anslutningsinformationen manuellt.
 
-    ![Manuella anslutningsfält](media/app-connect-manual-connect.png "Manuella anslutningsfält")
+    ![Manuella anslutningsfält.](media/app-connect-manual-connect.png "Manuella anslutningsfält")
 
 1. Ange följande information:
 

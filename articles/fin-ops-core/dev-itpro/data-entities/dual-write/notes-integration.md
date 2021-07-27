@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: ceb5b7c90cc7efa0049d0278e2c245228e5b52bd
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 3ff40011ac60c47f6ed667adfcf01bc727334f13
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186796"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358989"
 ---
 # <a name="note-integration"></a>Integrering av anteckning
 
@@ -51,23 +51,23 @@ Följ de här stegen om du vill skapa en notering i en kundengagemangsapp och sy
 1. I kundengagemangsapp, öppna kontopostför en kund.
 2. I fönstret **tidslinje** välj plustecknet (**+**) och välj sedan **Anteckning** för att skapa en anteckning.
 
-    ![Skapa en notering i en kundengagemangsapp](media/notes-ce-1.png)
+    ![Skapa en notering i en kundengagemangsapp.](media/notes-ce-1.png)
 
 3. Ange en titel och en beskrivning och välj sedan **Lägg till notering**.
 
-    ![Ange en titel och en beskrivning](media/notes-ce-2.png)
+    ![Ange en rubrik och en beskrivning.](media/notes-ce-2.png)
 
     Den nya noteringen läggs till kundens tidslinje.
 
-    ![Ny notering på kundens tidslinje](media/notes-ce-3.png)
+    ![Ny notering på kundens tidslinje.](media/notes-ce-3.png)
 
 4. Logga in på Finance and Operations-appen och öppna samma kundpost. Lägg märke till att knappen **Bilagor** (gemsymbol) i det övre högra hörnet anger att posten har en bifogad fil.
 
-    ![Meddelande om en bilaga](media/notes-ce-4.png)
+    ![Meddelande om en bilaga.](media/notes-ce-4.png)
 
 5. Välj knappen **Bilagor** för att öppna sidan **Bilagor**. Du bör hitta noteringen som du skapade i kundengagemangsappen.
 
-    ![Notering från kundengagemangsapp](media/notes-ce-5.png)
+    ![Notering från kundengagemangsappen.](media/notes-ce-5.png)
 
 Alla uppdateringar av noteringen synkroniseras fram och tillbaka mellan Finance and Operations-appen och kundengagemangsappen.
 
@@ -79,21 +79,21 @@ Följ de här stegen om du vill skapa en notering i Finance and Operations och s
 
 1. I Finance and Operations-appen, på sidan **Bilagor**, välj **Ny** \> **notering**.
 
-    ![Skapa en notering i en Finance and Operations-app](media/notes-fo-1.png)
+    ![Skapa en notering i Finance and Operations-appen.](media/notes-fo-1.png)
 
 2. Ange en rubrik och en kort uppsättning instruktioner och välj sedan **Spara**.
 
-    ![Ange en titel och instruktioner](media/notes-fo-2.png)
+    ![Ange en rubrik och instruktioner.](media/notes-fo-2.png)
 
 3. Uppdatera posten i kundengagemangsapp. Du bör hitta den nya noteringen under tidslinjen.
 
-    ![Ny notering på tidslinjen i kundengagemangsapp](media/notes-fo-3.png)
+    ![Ny notering på tidslinjen i kundengagemangsappen.](media/notes-fo-3.png)
 
 Du kan klassificera en notering som intern eller extern.
 
 - I Finance and Operations-app, på sidan **Bilagor**, öppna en anteckning och sedan i fältet **Begränsning** välj **Intern** eller **Extern**.
 
-    ![Begränsningsfält](media/notes-fo-4.png)
+    ![Begränsningsfält.](media/notes-fo-4.png)
 
 Du kan även skapa en URL.
 
@@ -101,13 +101,13 @@ Du kan även skapa en URL.
 2. Ange en titel och en URL.
 3. I fältet **Begränsning**, välj **Intern** eller **Extern**.
 
-    ![Skapa en URL i en Finance and Operations-app](media/notes-fo-5.png)
+    ![Skapa en URL i en Finance and Operations-appen.](media/notes-fo-5.png)
 
 4. Välj **Spara**.
 
     Eftersom kundengagemangsappar inte har någon URL-typ integreras URL med dubbel skrivning som en notering.
 
-    ![URL visas som en notering i en kundengagemangsapp](media/notes-ce-6.png)
+    ![URL visas som en notering i en kundengagemangsappen.](media/notes-ce-6.png)
 
 > [!NOTE]
 > Filbilagor stöds inte.

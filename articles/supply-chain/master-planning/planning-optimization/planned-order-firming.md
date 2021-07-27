@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 2df579bfb820f871bfcc9c18bd8e5681cdf42447
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 00cb05105c047989ea74bbba3360c067b1b98ce8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271218"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360386"
 ---
 # <a name="firm-planned-orders"></a>Bekräfta planerade order
 
@@ -81,7 +81,7 @@ Om du vill bekräfta planerade order manuellt hittar och väljer du de planerade
     - **Gruppera efter period** (i avsnittet **Inköpsorder**) – Välj den period som planerade inköpsorder ska grupperas efter. Om du vill använda det här alternativet måste du också välja alternativet **Gruppera efter leverantör**.
     - **Gruppera efter period** (i avsnittet **Överföringar**) – Välj den period som planerade överföringsorder ska grupperas efter. Orderna grupperas efter värdena i **Från lagerställe** och **Till lagerställe**.
 
-    ![Snabbfliken Parametrar i dialogrutan Bekräftelse](./media/manual-firming.png "Snabbfliken Parametrar i dialogrutan Bekräftelse")
+    ![Snabbfliken Parametrar i dialogrutan Bekräftelse.](./media/manual-firming.png "Snabbfliken Parametrar i dialogrutan Bekräftelse")
 
 1. På snabbfliken **Kör i bakgrunden** ställer du in jobbet så att det körs i batchläge. Det är dock ingen mening med att ställa in ett återkommande schema när du håller på att bekräfta manuellt. Fälten fungerar precis som för andra typer av [bakgrundsjobb](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) i Supply Chain Management. För manuell bekräftelse bearbetas dock endast valda planerade order i batchjobbet. Inga order som passar de filter som för tillfället används på sidan bearbetas.
 1. Välj **OK** om du vill använda inställningarna och generera bekräftade order.
@@ -140,15 +140,15 @@ Följ de här stegen om du vill bekräfta en planerad order med hjälp av fråge
     - **Bekräfta tidsgräns i dagar framåt** – Välj hur långt in i framtiden som olika krav och andra överväganden måste beräknas i huvudplaneringen.
     - **Bekräfta tidsgräns i dagar bakåt** – Välj hur långt i det förgångna som olika krav och andra överväganden måste beräknas i huvudplaneringen.
 
-    ![Snabbfliken Parametrar i dialogrutan Planerad orderbekräftelse](./media/planned-order-firming-main-1.png "Snabbfliken Parametrar i dialogrutan Planerad orderbekräftelse")
+    ![Snabbfliken Parametrar i dialogrutan Planerad orderbekräftelse.](./media/planned-order-firming-main-1.png "Snabbfliken Parametrar i dialogrutan Planerad orderbekräftelse")
 
 1. Ange vilka poster som ska ingå i ordern genom att klicka på knappen **Filter** på snabbfliken **Poster att inkludera**. En standarddialogruta för fråga visas där du kan definiera urvalskriterier, sorteringskriterier och sammankopplingar. Fälten fungerar precis som för andra typer av frågor i Supply Chain Management. Fälten här är skrivskyddade och visar värden som är relaterade till frågan.
 
-    ![Snabbfliken Poster att inkludera i dialogrutan Planerad orderbekräftelse](./media/planned-order-firming-main-2.png "Snabbfliken Poster att inkludera i dialogrutan Planerad orderbekräftelse")
+    ![Snabbfliken Poster att inkludera i dialogrutan Planerad orderbekräftelse.](./media/planned-order-firming-main-2.png "Snabbfliken Poster att inkludera i dialogrutan Planerad orderbekräftelse")
 
 1. Välj **Förhandsgranskning** om du vill förhandsgranska innehållet i den bekräftade ordern, baserat på de inställningar du gjort hittills. Listan över planerade order som ska bekräftas visas som ett meddelande. Du kan sedan justera inställningarna efter behov tills förhandsgranskningen visar den bekräftade ordern så som du har tänkt dig.
 
-    ![Exempel på en bekräftad orderförhandsgranskning](./media/planned-order-firming-preview.png "Exempel på en bekräftad orderförhandsgranskning")
+    ![Exempel på en bekräftad orderförhandsgranskning.](./media/planned-order-firming-preview.png "Exempel på en bekräftad orderförhandsgranskning")
 
     > [!WARNING]
     > Med den här funktionen kan alla planerade order som matchar filterkriteriet bekräftas. Okritiskt bekräftande av planerade order kan leda till att ett stort antal oönskade inköps-, överförings- och tillverkningsorder skapas. Innan du fortsätter ska du alltid använda knappen **Förhandsgranskning** för att validera posterna som ska ingå.

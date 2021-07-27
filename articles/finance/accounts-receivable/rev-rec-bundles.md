@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: bce824267f435d9de0acd43ca145e0d148dfe67c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9afc7786de16cb1cada982f43beb956e062777a4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816278"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347792"
 ---
 # <a name="revenue-recognition-bundles"></a>Buntar för intäktsredovisning
 
@@ -33,7 +33,7 @@ Om du vill konfigurera buntar måste du ange konfigurationsnycklar för intäkts
 
 Konfigurationen för buntar använder funktionen för strukturlistor. Information om hur du konfigurerar en buntartikel finns i [inställningar för intäktsredovisning](revenue-recognition-setup.md). Om den överordnade artikeln flaggas som en bunt behandlas den på ett annat sätt än andra strukturlisteartiklar. Här är en lista över skillnaderna:
 
-- Buntar måste brytas ned genom bekräftelse av försäljningsordern genom att du väljer **Bekräfta försäljningsorder** på fliken **Sälj** i åtgärdsfönstret på försäljningsordersidan. Du får aldrig bryta ned buntartiklar genom att markera **Strukturlisterad** under **Bryt ned** på menyn **Försäljningsorderrad** på snabbfliken **Försäljningsorderrad**. Annars behandlas artikeln som en strukturlista och inte som en bunt.
+- Buntar måste brytas ned genom bekräftelse av försäljningsordern genom att du väljer **Bekräfta försäljningsorder** på fliken **Sälj** i åtgärdsrutan på försäljningsordersidan. Du får aldrig bryta ned buntartiklar genom att markera **Strukturlisterad** under **Bryt ned** på menyn **Försäljningsorderrad** på snabbfliken **Försäljningsorderrad**. Annars behandlas artikeln som en strukturlista och inte som en bunt.
 - En försäljningsorder som innehåller en buntartikel måste bekräftas innan följesedeln eller fakturan skapas.
 - När en bunt bryts ned genom bekräftelse av försäljningsorder annulleras den överordnade artikeln och dess enhetspris och rabatter fördelas på buntens komponentartiklar.
 - Summan av komponentartiklarna måste alltid vara lika med priset på den överordnade artikeln. Därför finns det begränsningar i fälten som kan uppdateras eller ändras för komponentartiklar. Enhetspriset kan till exempel inte ändras manuellt. Det kan inte heller ändras indirekt genom att ett nytt prisavtal gäller. Lagerdimensionerna kan inte ändras för komponentartiklarna för att förhindra ett nytt prisavtal.
@@ -57,17 +57,17 @@ Följande basförsäljningspriser definieras för komponentartiklarna:
 - **S0021:** $150,00
 - **Support:** $500,00
 
-En försäljningsorder registreras för kunden US-004, Cave Wholesales. Den enda raden som registreras är för artikeln Bunt för bärbar dator. Standardpriset per enhet för den överordnade raden kan hämtas från flera platser, till exempel handelsavtalet eller basförsäljningspriset. I det här exemplet registreras 2 300 manuellt som enhetspris.
+En försäljningsorder registreras för kunden US-004, Cave Wholesales. Den enda raden som registreras är för artikeln Bunt för bärbar dator. Standardpriset per enhet för den överordnade raden kan hämtas från flera platser, till exempel handelsavtalet eller basförsäljningspriset. I det här exemplet registreras 2 300 USD manuellt som enhetspris.
 
-[![Artikeln Bunt för bärbar dator på en försäljningsorder](./media/bundle-01.png)](./media/bundle-01.png)
+[![Artikeln Bunt för bärbar dator på en försäljningsorder.](./media/bundle-01.png)](./media/bundle-01.png)
 
 Eftersom försäljningsordern innehåller en bunt måste den bekräftas. I bekräftelsedialogrutan visas komponenterna i bunten.
 
-[![Dialogrutan Bekräfta försäljningsorder som visar komponentartiklarna](./media/bundle-02.png)](./media/bundle-02.png)
+[![Dialogrutan Bekräfta försäljningsorder som visar komponentartiklarna.](./media/bundle-02.png)](./media/bundle-02.png)
 
 Den utskrivna bekräftelserapporten visar dock endast den överordnade artikeln i bunten, eftersom rapporten är det externa dokumentet för kunden.
 
-[![Bekräftelserapport som bara visar den överordnade artikeln](./media/bundle-03.png)](./media/bundle-03.png)
+[![Bekräftelserapport som bara visar den överordnade artikeln.](./media/bundle-03.png)](./media/bundle-03.png)
 
 När försäljningsordern har bekräftats visas den överordnade artikeln fortfarande på försäljningsordern, men dess status har ändrats till **Annullerad**. Nettobeloppet spåras dessutom i fältet **Buntens nettobelopp**. Detta belopp krävs för att fakturan ska skrivas ut, eftersom fakturan visar den överordnade artikeln och inte komponentartiklarna.
 
@@ -85,7 +85,7 @@ Summan av komponenterna måste vara lika med $2 300, och det gör ($1 713,73 +
 
 Om du behöver göra ändringar av alla komponentartiklar kan du ta bort den överordnade artikeln. I så fall tas även komponentartiklarna bort. Den överordnade artikeln kan sedan läggas till igen, och redigeringar kan göras innan försäljningsordern bekräftas.
 
-[![Buntartikel som omfattar ändringar av komponentartiklarna](./media/bundle-04.png)](./media/bundle-04.png)
+[![Buntartikel som omfattar ändringar av komponentartiklarna.](./media/bundle-04.png)](./media/bundle-04.png)
 
 När försäljningsordern plockas och packas kommer dokumenten bara att innehålla komponenterna i bunten. Följesedeln och fakturan måste omfatta en hel bunt. Annars kan de inte bokföras. I dialogrutan visas till exempel tre komponentartiklar. Om du försöker ta bort en av dem visas ett felmeddelande om att alla produkter i bunten måste levereras innan de kan faktureras.
 
@@ -95,19 +95,19 @@ En delmängd kan bara levereras och faktureras om kvantiteten reduceras för all
 
 Det sista steget är att fakturera försäljningsordern. Under fakturering visas komponentartiklarna i dialogrutan Faktura.
 
-[![Dialogrutan Faktura som visar komponentartiklarna](./media/bundle-06.png)](./media/bundle-06.png)
+[![Dialogrutan Faktura som visar komponentartiklarna.](./media/bundle-06.png)](./media/bundle-06.png)
 
 Den utskrivna fakturan visar dock bara den överordnade artikeln.
  
-[![Utskriven faktura som bara visar den överordnade artikeln](./media/bundle-07.png)](./media/bundle-07.png)
+[![Utskriven faktura som bara visar den överordnade artikeln.](./media/bundle-07.png)](./media/bundle-07.png)
 
 Fakturajournalen som skapas efter bokföringen skapas inte med den överordnade artikeln från bunten eftersom artikeln har statusen **Annullerad**.
 
-[![Fakturajournal som inte innehåller det överordnade objektet](./media/bundle-08.png)](./media/bundle-08.png)
+[![Fakturajournal som inte innehåller den överordnade artikeln.](./media/bundle-08.png)](./media/bundle-08.png)
 
-Det är viktigt att fakturajournalen inte innehåller den överordnade artikeln från bunten, eftersom eventuella processer som utförs efter att fakturan har bokförts baseras på fakturajournalen. Om du till exempel skapar en kreditfaktura från fliken **Sälj** i åtgärdsfönstret, kommer kreditfakturan som skapas att inkludera komponentartiklarna men inte den överordnade artikeln.
+Det är viktigt att fakturajournalen inte innehåller den överordnade artikeln från bunten, eftersom eventuella processer som utförs efter att fakturan har bokförts baseras på fakturajournalen. Om du till exempel skapar en kreditfaktura från fliken **Sälj** i åtgärdsrutan, kommer kreditfakturan som skapas att inkludera komponentartiklarna men inte den överordnade artikeln.
 
-[![Kreditfaktura som visar komponentartiklarna men inte den överordnade artikeln](./media/bundle-09.png)](./media/bundle-09.png)
+[![Kreditfaktura som visar komponentartiklarna men inte den överordnade artikeln.](./media/bundle-09.png)](./media/bundle-09.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

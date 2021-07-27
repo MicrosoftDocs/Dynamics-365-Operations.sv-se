@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 33ed1c7f69fa92bbd123042a139dd8fd0ee3e73a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7554189c779404559187ecd99f4bca4636054446
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754098"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361424"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potentiell kund till kontanter vid dubbel skrivning
 
@@ -33,7 +33,7 @@ Ett viktigt mål för de flesta företag är att konvertera potentiell kund till
 
 I programgränssnitten får du åtkomst till bearbetningsstatus och fakturainformation i realtid. Därför är det enklare att hantera funktioner som produktlager, lagerhantering och uppfyllelse i Supply Chain Management, utan att du behöver skapa offerter och order på nytt.
 
-![Dataflöde med dubbel skrivning i potentiell kund till kontanter](../dual-write/media/dual-write-prospect-to-cash[1].png)
+![Dataflöde med dubbel skrivning i potentiell kund-till-pengar.](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
 Mer information om kund- och kontaktintegrering finns i [Integrerad kundmall](customer-mapping.md). Information om produktintegration finns i [Enhetlig produkterfarenhet](product-mapping.md).
 
@@ -48,7 +48,7 @@ Innan du kan synkronisera försäljningsofferter måste du uppdatera följande i
 
 I Sales, gå till **Inställningar \> Administration \> Systeminställningar \> Sales** och säkerställ att följande inställningar används:
 
-- Systemalternativet **Använd systemets prisberäkning** är **Ja**.
+- Systemalternativet **Använd systemets beräkningssystem för prissättning** anges som **Ja**.
 - Kolumnen **Metod för rabattberäkning** har tilldelats **radartikel**.
 
 ### <a name="sites-and-warehouses"></a>Webbplatser och lagerställen

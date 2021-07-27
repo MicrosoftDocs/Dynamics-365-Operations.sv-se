@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 071c73f9295ad7911037cbd10a48b46b044eebda
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 19cdc33fcc9d1293b235facbaffd1ccf62875217
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808242"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360063"
 ---
 # <a name="work-order-project-setup"></a>Projektinställningar för arbetsorder
 
@@ -69,7 +69,7 @@ Inställningen möjliggör fullständig integration med modulen **Projekthanteri
 
     Som standard är startdatumet det datum då du lägger till arbetsorderprojektet på sidan. Det styrs av fältet **Giltig från**, som är dolt som standard. Om du vill visa fältet **Giltig från** väljer du **Visa** \> **Allt**. Du kan sedan använda fältet **Giltig från** tillsammans med fältet **Slutdatum** för att ange en begränsad giltighetsperiod för arbetsorderprojektet.
 
-    ![Sidan Projektinställningar för arbetsorder](media/17-setup-for-work-orders.png)
+    ![Sidan Projektkonfiguration för arbetsorder.](media/17-setup-for-work-orders.png)
 
 6. På fliken **Projektgrupp** väljer du **Lägg till**.
 7. I fältet **arbetsordertyp** väljer du en arbetsorder.
@@ -77,7 +77,7 @@ Inställningen möjliggör fullständig integration med modulen **Projekthanteri
 9. I fältet **Projektgrupp** väljer du den projektgrupp som ska vara relaterad till arbetsordertypen. En arbetsordertyp med namnet **Förebyggande underhåll** kan till exempel associeras med en projektgrupp som har namnet **Förebyggande underh** eller **Internt**. Alternativt kan en arbetsordertyp **Investering** som används för arbetsorder som är relaterade till investeringar och anläggningstillgångar associeras med en projektgrupp med namnet **Investera** eller **Investering**.
 10. Välj **Spara**.
 
-![Sidan Projektinställningar för arbetsorder, Lägg till arbetsorder](media/18-setup-for-work-orders.png)
+![Sidan Projektkonfiguration för arbetsorder, Lägg till arbetsorder.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Varje gång en arbetsorderrad skapas söker Tillgångshantering efter en projektgrupp som ska relateras till jobbprojektet för arbetsordern. Sökningen baseras på inställningarna som beskrivs i det här avsnittet. Varje projektgrupp har en relaterad projekttyp. Projekt grupper som har projekttypen **Tid och material** eller **Fastpris** är endast giltiga för tillgångar som är relaterade till ett kundkonto.

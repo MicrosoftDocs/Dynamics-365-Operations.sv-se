@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5ed66bb2b2fce659e1e1f029fd60f74149b6526b
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 81b65d1aeeff6c4459fe0b2637013009958cfd55
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055134"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360650"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurera integration med Finance
 
@@ -30,7 +30,7 @@ ms.locfileid: "6055134"
 
 För att integrera Dynamics 365 Human Resources med Dynamics 365 Finance kan du använda mallen personal för finansiering i [Dataintegrerare](/powerapps/administrator/data-integrator). Med mallen personal till ekonomi kan dataflöden för jobb, befattningar och arbetare användas. Med hjälp av mallen kan dataflöda från personal till ekonomi, men tillåter inte att data flödar från ekonomi till personal.
 
-![Personal till ekonomi integrationsflöde](./media/hr-admin-integration-finance-flow.png)
+![Integrationsflöde Personal till Ekonomi.](./media/hr-admin-integration-finance-flow.png)
 
 Lösningen personal till ekonomi innehåller följande typer av datasynkronisering:
 
@@ -253,6 +253,6 @@ Det plats-ID som används för arbetaradressen är inte en del av en nummerserie
 
 I följande illustration visas ett exempel på en mallmappning i Dataintegrerare. 
 
-![Mallmappning](./media/IntegrationMapping.png)
+![Mallmappning.](./media/IntegrationMapping.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

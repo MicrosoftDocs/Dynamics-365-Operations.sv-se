@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 8709b91b354fa4e1319b406c009bfdadeef48a41
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017016"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358108"
 ---
 # <a name="inventory-visibility-add-in"></a>Tillägg för lagersynlighet
 
@@ -143,7 +143,7 @@ När du har ställt in förutsättningarna använder du följande procedur om du
 
             Mer information om den här variabeln finns i avsnittet [Ställa in integration av lagersynlighet](#setup-inventory-visibility-integration) senare i det här avsnittet.
 
-        ![Konfigurationsutlösare](media/configuration-trigger.png "Konfigurationsutlösare")
+        ![Konfigurationsutlösare.](media/configuration-trigger.png "Konfigurationsutlösare")
 
     1. Välj **Aktivera**.
 
@@ -157,7 +157,7 @@ För att installera tillägget för lagersynlighet måste du göra följande:
 1. Rulla ned på miljösidan tills du ser avsnittet **Miljö-tillägg** i avsnittet **Power Platform integration** där du hittar Dataverse miljönamnet.
 1. I avsnittet **Miljötillägg**, välj **Installera ett nytt tillägg**.
 
-    ![Sidan miljö i LCS](media/inventory-visibility-environment.png "Sidan miljö i LCS")
+    ![Sidan Miljö i LCS.](media/inventory-visibility-environment.png "Sidan miljö i LCS")
 
 1. Välj länken **installera ett nytt tillägg**. En lista med tillgängliga tillägg öppnas.
 1. Välj **lagersynlighet** i listan.
@@ -166,7 +166,7 @@ För att installera tillägget för lagersynlighet måste du göra följande:
     - **AAD-program-ID (klient)**
     - **AAD klientorganisationens ID**
 
-    ![Lägg till på inställningssidan](media/inventory-visibility-setup.png "Lägg till på inställningssidan")
+    ![Lägg till på konfigurationssidan.](media/inventory-visibility-setup.png "Lägg till på inställningssidan")
 
 1. Godkänn villkoren genom att markera kryssrutan **villkor**.
 1. Välj **Installera**. Tilläggets status visas som **installerar**. När det är klart uppdaterar du sidan så att status ändras till **installerad**.

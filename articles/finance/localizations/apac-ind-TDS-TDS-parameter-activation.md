@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: dda276b7d634317aae26728f7d9f51af9ccfb896
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: b74a1ab6d0f17367fc16f795e1b28ff5d0c5508e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023596"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358252"
 ---
 # <a name="set-the-tds-parameters"></a>Ställ in TDS-parametrar
 
@@ -34,13 +34,13 @@ I det här avsnittet beskrivs hur du ställer in parametrar för att aktivera fu
 3. Ställ in alternativet **Faktura** på **Ja** för att aktivera fälten som används för att beräkna och dra av TDS på fakturanivå.
 4. Ställ in alternativet **Betalning** på **Ja** för att aktivera fälten som används för att beräkna och dra av TDS på betalningsnivå.
 
-    [![Fliken Direkt skatt](./media/apac-ind-TDS-1.png)](./media/apac-ind-TDS-1.png)
+    [![Fliken Direkt skatt.](./media/apac-ind-TDS-1.png)](./media/apac-ind-TDS-1.png)
 
 5. Under fliken **Nummersekvenser** letar du upp raden där fältet **Referens** är inställt på **Betalning av källskatt**. I fältet **Nummersekvenskod** för raden väljer du nummersekvenskoden. Nummersekvenskoden används för att generera verifikationsnummer för den periodiska TDS-kvittningsprocessen.
 
     > [!NOTE]
     > Om du vill köra den periodiska TDS-kvittningsprocessen går du till **Skatt \> Deklarationer \> Källskatt \> Betalning av källskatt**.
 
-    [![Fliken Nummerserie](./media/apac-ind-TDS-2.png)](./media/apac-ind-TDS-2.png)
+    [![Fliken Nummerserie.](./media/apac-ind-TDS-2.png)](./media/apac-ind-TDS-2.png)
 
 6. Stäng sidan.

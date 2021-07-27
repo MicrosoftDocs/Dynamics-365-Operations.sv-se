@@ -2,7 +2,7 @@
 title: Modul för videospelare
 description: Det här avsnittet handlar om moduler för videospelare och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: aa1efa6ce959439c49983553edfaf247c8e8dcd5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 48d7a047a739420fa4aaa3f520c774854f254ef9
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797417"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479290"
 ---
 # <a name="video-player-module"></a>Modul för videospelare
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Det här avsnittet handlar om moduler för videospelare och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 
@@ -43,12 +44,16 @@ Videospelarmodulen stöder också sekundära ljudspår. När en video laddas upp
 
 Följande bild visar ett exempel på en modul för videospelare på en startsida.
 
-![Exempel på en videospelar-modul](./media/ecommerce-videoplayer.PNG)
+![Exempel på en videospelarmodul.](./media/ecommerce-videoplayer.PNG)
 
 ### <a name="video-player-module-properties"></a>Egenskaper för videospelarmodul
 
 | Egenskapsnamn         | Värde                               | beskrivning |
 |-----------------------|-------------------------------------|-------------|
+| Rubrik               | Rubriktext och rubriktagg (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Som standard används rubriktaggen **H2** för rubriken, men taggen kan ändras i syfte att uppfylla tillgänglighetskraven. |
+| RTF-format             | Stycketext | Modulen har stöd för stycketext i RTF-format. Vissa grundläggande RTF-funktioner stöds, t.ex. hyperlänkar samt fetstil, understrykning och kursiv text. Vissa av dessa funktioner kan åsidosättas av det sidtema som används i modulen. |
+| Länka                  | Länktext, länk-URL, ARIA-etikett (Accessible Rich Internet Applications) samt väljaren **Öppna länk i ny flik** | Modulen stöder en eller flera "uppmaning till åtgärd"-länkar. Om en länk läggs till, en länktext, en URL-adress och en ARIA-etikett krävs. ARIA-etiketter ska vara beskrivande i syfte att uppfylla tillgänglighetskraven. Länkar kan konfigureras så att de öppnas på en ny flik. |
+| Undertext              | Rubrik, text eller länkar | Du kan lägga till ytterligare kontext för videospelaren, till exempel namnet på författaren eller designern, eller länkar till personliga bloggar. |
 | Spela upp automatiskt             | **Sant** eller **falskt**               | När värdet är inställt på **Sant** spelas videon upp automatiskt. |
 | Ljud av                  | **Sant** eller **falskt**               | När värdet är inställt på **Sant** stängs ljudet av. För den här spelaren är standardvärdet **Falskt**. I webbläsaren Chrome är automatiska videor avstängda som standard och ljudet spelas endast upp om användaren spelar upp videon manuellt. |
 | Slinga                  | **Sant** eller **falskt**               | När värdet är inställt på **Sant** spelas videon upprepat i en slinga. |
@@ -58,6 +63,9 @@ Följande bild visar ett exempel på en modul för videospelare på en startsida
 | Kontroller för videospelare | **Sant** eller **falskt**               | När värdet är inställt på **Sant** visas alla videospelarkontroller. Dessa kontroller omfattar både spela upp och paus-knappar, en förloppsindikator och en dold textning. |
 | Dölj affischbild     | **Sant** eller **falskt**               | Ett videoklipp kan ha en affischram. När värdet för den här egenskapen har angetts till **Sant** döljs affischramen. |
 | Masknivå            | Ett nummer mellan **0** och **100** | Den mask som används på videon som ska formateras. |
+
+> [!IMPORTANT]
+> Egenskaperna **Rubrik**, **RTF-text**, **Länk** och **Undertext** är tillgängliga från och med Dynamics 365 Commerce-version 10.0.20.
 
 ## <a name="add-a-video-player-module-to-a-page"></a>Lägg till en videospelarmodul till en sida
 

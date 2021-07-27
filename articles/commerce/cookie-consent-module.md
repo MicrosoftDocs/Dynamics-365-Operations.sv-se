@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 2f0118b197f465113bb894e3e57b3e682e04ef36
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a277ef0634c4ddd5769d278ce6186aac5e84ebfa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796013"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352528"
 ---
 # <a name="cookie-consent-module"></a>Modul för samtycke till cookies
 
@@ -35,7 +35,7 @@ Om samtycke från webbplatsanvändare inte tas emot, återges inte alla funktion
 En modul för cookie-samtycke kan konfigureras på sidans rubrikfragment så att den kan användas när sidan läses in. Modulen för cookie-samtycke ska ha ett tydligt meddelande som informerar användaren om cookie-användning på webbplatsen och ska innehålla en länk till platsens integritetssida.
 
 I följande bild visas ett exempel på ett samtyckesmeddelande för en cookie med en länk till platsens sekretesspolicy sida som visas i rubriken på en webbplatssida.
-![Exempel på en modul för cookie-samtycke](./media/ecommerce-cookieconsent.png)
+![Exempel på en modul för cookie-samtycke.](./media/ecommerce-cookieconsent.png)
 
 ## <a name="cookie-consent-module-properties"></a>Egenskaper för modul för cookie-samtycke
 

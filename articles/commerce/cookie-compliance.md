@@ -2,7 +2,7 @@
 title: Cookie-kompatibilitet
 description: I det här avsnittet beskrivs överväganden för cookie-efterlevnad och standardprinciper som ingår i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/21/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
-ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
+ms.openlocfilehash: 71b2e0e8d0a7db6cbbc8b9b4024b067bd5c6a2a1
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6088397"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333079"
 ---
 # <a name="cookie-compliance"></a>Cookie-kompatibilitet
 
@@ -33,26 +33,27 @@ Om du vill veta mer om de grundläggande principer som Microsoft använder för 
 
 I följande tabell visas den aktuella referenslistan över cookies som placerats på Dynamics 365 Commerce-webbplatser.
 
-| Cookienamn                               | Användning                                                        |
-| ------------------------------------------- | ------------------------------------------------------------ |
-| .AspNet.Cookies                             | Lagra Microsoft Azure Active Directory (Azure AD)-verifieringscookies för enkel inloggning (SSO). Lagrar krypterad huvudinformation för användare (namn, efternamn, e-post). |
-| &#95;msdyn365___cart&#95;                           | Lagrar kundvagns-ID som används för att hämta listan över produkter som lagts till i kundvagnsinstansen. |
-| &#95;msdyn365___ucc&#95;                            | Spårning av samtycket till cookie-kompatibilitet.                          |
-| ai_session                                  | Upptäcker hur många sessioner av användaraktivitet som har inkluderat vissa sidor och funktioner i appen. |
-| ai_user                                     | Upptäcker hur många personer som har använt appen och dess funktioner. Användare räknas med anonyma ID:n. |
-| b2cru                                       | Lagrar omdirigerings-URL dynamiskt.                              |
-| JSESSIONID                                  | Används av Adyen-butiksanvändarsession.       |
-| OpenIdConnect.nonce.&#42;                       | Äkthetsbevisning                                               |
-| x-MS-cpim-cache:.&#42;                          | Används för att underhålla status för begäran.                      |
-| x-ms-cpim-csrf                              | Förfalskning av begäran mellan webbplatser (CRSF) som används för att skydda från CRSF.     |
-| x-ms-cpim-dc                                | Används för att dirigera förfrågningar till en lämplig serverinstans för produktionsinleverans. |
-| x-ms-cpim-rc.&#42;                              | Används för att dirigera förfrågningar till en lämplig serverinstans för produktionsinleverans. |
-| x-ms-cpim-slice                             | Används för att dirigera förfrågningar till en lämplig serverinstans för produktionsinleverans. |
-| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Används för att underhålla SSO-sessionen.                        |
-| x-ms-cpim-trans                             | Används för att spåra transaktioner (antalet öppna flikar som autentiserar mot en B2C-webbplats), inklusive den aktuella transaktionen. |
-| \_msdyn365___muid_                            | Används om Experimentering har aktiverats för miljön; används som userId i experimenteringssyfte. |
-| \_msdyn365___exp_                             | Används om Experimentering har aktiverats för miljön; används för att mäta belastningsutjämning.         |
-| d365mkt                                       | Används om platsbaserad identifiering för att spåra en användares IP-adress för förslag till butiksplats aktiveras i Commerce webbplatsskaparen **Webbplatsinställningar > Allmänt > Aktivera platsbaserad butiksdetektering**.      |
+| Cookienamn                               | Användning                                                        | Livstid |
+| ------------------------------------------- | ------------------------------------------------------------ |  ------- |
+| .AspNet.Cookies                             | Lagra Microsoft Azure Active Directory (Azure AD)-verifieringscookies för enkel inloggning (SSO). Lagrar krypterad huvudinformation för användare (namn, efternamn, e-post). | Session |
+| \_msdyn365___cart_                           | Lagrar kundvagns-ID som används för att hämta listan över produkter som lagts till i kundvagnsinstansen. | Session |
+| \_msdyn365___checkout_cart_                           | Lagra kundvagns-ID som används för att hämta listan över produkter som lagts till i kundvagnsinstansen i kassan. | Session |
+| \_msdyn365___ucc_                            | Spårning av samtycket till cookie-kompatibilitet.                          | 1 år |
+| ai_session                                  | Upptäcker hur många sessioner av användaraktivitet som har inkluderat vissa sidor och funktioner i appen. | 30 minuter |
+| ai_user                                     | Upptäcker hur många personer som har använt appen och dess funktioner. Användare räknas med anonyma ID:n. | 1 år |
+| b2cru                                       | Lagrar omdirigerings-URL dynamiskt.                              | Session |
+| JSESSIONID                                  | Används av Adyen-butiksanvändarsession.       | Session |
+| OpenIdConnect.nonce.&#42;                       | Äkthetsbevisning                                               | 11 minuter |
+| x-MS-cpim-cache:.&#42;                          | Används för att underhålla status för begäran.                      | Session |
+| x-ms-cpim-csrf                              | Förfalskning av begäran mellan webbplatser (CRSF) som används för att skydda från CRSF.     | Session |
+| x-ms-cpim-dc                                | Används för att dirigera förfrågningar till en lämplig serverinstans för produktionsinleverans. | Session |
+| x-ms-cpim-rc.&#42;                              | Används för att dirigera förfrågningar till en lämplig serverinstans för produktionsinleverans. | Session |
+| x-ms-cpim-slice                             | Används för att dirigera förfrågningar till en lämplig serverinstans för produktionsinleverans. | Session |
+| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Används för att underhålla SSO-sessionen.                        | Session |
+| x-ms-cpim-trans                             | Används för att spåra transaktioner (antalet öppna flikar som autentiserar mot en B2C-webbplats), inklusive den aktuella transaktionen. | Session |
+| \_msdyn365___muid_                            | Används om Experimentering har aktiverats för miljön; används som användar-ID i experimenteringssyfte. | 1 år |
+| \_msdyn365___exp_                             | Används om Experimentering har aktiverats för miljön; används för att mäta belastningsutjämning.         | 1 timma |
+| d365mkt                                       | Används om platsbaserad identifiering för att spåra en användares IP-adress för förslag till butiksplats aktiveras i Commerce-webbplatsskaparen på **Webbplatsinställningar \> Allmänt \> Aktivera platsbaserad butiksdetektering**.      | 1 timma |
 
 Om en webbplatsanvändare väljer några sociala medialänkar på en webbplats kommer cookies i följande register även att spåras i webbläsaren.
 

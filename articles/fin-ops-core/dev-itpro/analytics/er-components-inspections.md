@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d164dfe10c9736d8b4529a32ffba765f94ad37d9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 309e613b707222920936d5af995ac57c4c423b40
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753850"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357676"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Granska den konfigurerade ER-komponenten för att förhindra körningsproblem
 
@@ -242,7 +242,7 @@ Följande steg visar hur det här problemet kan uppstå.
 1. Börja konfigurera ER-datamodellen och ER-modellmappningskomponenterna samtidigt.
 2. Lägg till ett fält med namnet **X** i datamodellträdet och välj **Heltal** som datatyp.
 
-    ![X-fält och data typen Heltal läggs till i datalägesträdet på datamodellsidan](./media/er-components-inspections-01.png)
+    ![X-fält och datatypen Heltal lades till i datalägesträdet på sidan Datamodell.](./media/er-components-inspections-01.png)
 
 3. I formgivaren för modellkartläggning, i **Datakällor** lägger du till en datakälla av typen **Beräknat fält**.
 4. Namnge den nya datakällan **Y** och konfigurera den så att den innehåller uttrycket `INTVALUE(100)`.
@@ -250,17 +250,17 @@ Följande steg visar hur det här problemet kan uppstå.
 6. I datamodelldesignern ändrar du datatyp för fältet **X** från **Heltal** till **Int64**.
 7. Välj **Validera** för att granska den redigerbara modellmappningskomponenten på sidan **Modellmappningsdesigner**.
 
-    ![Validerar den redigerbara modellmappningskomponenten på sidan Modellmappningsdesigner](./media/er-components-inspections-01.gif)
+    ![Validera den redigerbara modellmappningskomponenten på sidan Modellmappningsdesigner.](./media/er-components-inspections-01.gif)
 
 8. Välj **Validera** för att kontrollera modellmappningskomponenten för den markerade ER-konfigurationen på sidan **Konfigurationer**.
 
-    ![Inspektera modellmappningskomponenten på sidan Konfigurationer](./media/er-components-inspections-01a.png)
+    ![Inspektera modellmappningskomponenten på sidan Konfigurationer.](./media/er-components-inspections-01a.png)
 
 9. Observera att ett valideringsfel uppstår. Meddelandet anger att värdet för typen **Heltal** som uttrycket `INTVALUE(100)` för datakällan **Y** returnerar inte kan lagras i datamodellfältet **X** för typen **Int64**.
 
 Följande bild visar det körningsfel som uppstår om du ignorerar varningen och väljer **Kör** för att köra ett format som konfigurerats att använda modellmappningen.
 
-![Körningsfel på sidan Formatdesigner](./media/er-components-inspections-01b.png)
+![Körningsfel på sidan Formatdesigner.](./media/er-components-inspections-01b.png)
 
 ### <a name="automatic-resolution"></a>Automatisk lösning
 
@@ -290,7 +290,7 @@ Följande steg visar hur det här problemet kan uppstå.
 6. I formatstrukturträdet ändrar du datatyp för formatet **Y** från **Heltal** till **Int64**.
 7. Välj **Validera** för att granska den redigerbara formatkomponenten på sidan **Formatdesigner**.
 
-    ![Validering av typkompatibilitet på sidan Formatdesigner](./media/er-components-inspections-02.gif)
+    ![Validera av typkompatibilitet på sidan Formatdesigner.](./media/er-components-inspections-02.gif)
 
 8. Observera att ett valideringsfel uppstår. Meddelandet anger att det konfigurerade uttrycket endast kan acceptera **Int64**-värden. Därför kan värdet i datamodellfältet **X** för typen **Heltal** inte anges i formatelementet **Y**.
 
@@ -317,7 +317,7 @@ Följande steg visar hur det här problemet kan uppstå.
 1. Börja konfigurera ER-datamodellen och ER-modellmappningskomponenterna samtidigt.
 2. Lägg till ett fält med namnet **X** i datamodellträdet och välj **Heltal** som datatyp.
 
-    ![Datamodellträd med X-fält och datatypen Heltal läggs till på sidan Datamodell](./media/er-components-inspections-01.png)
+    ![Datamodellträd med X-fält och datatypen Heltal på sidan Datamodell.](./media/er-components-inspections-01.png)
 
 3. I formgivaren för modellkartläggning, i **Datakällor** lägger du till en datakälla av typen **Beräknat fält**.
 4. Namnge den nya datakällan **Y** och konfigurera den så att den innehåller uttrycket `INTVALUE(100)`.
@@ -325,7 +325,7 @@ Följande steg visar hur det här problemet kan uppstå.
 6. I modellmappningsdesignern, i rutan **Datakällor**, ta bort **Y** datakälla.
 7. Välj **Validera** för att granska den redigerbara modellmappningskomponenten på sidan **Modellmappningsdesigner**.
 
-    ![Inspekterar redigerbara ER-modellmappningskomponenten på sidan Modellmappningsdesigner](./media/er-components-inspections-03.gif)
+    ![Inspekterar den redigerbara ER-modellmappningskomponenten på sidan Modellmappningsdesigner.](./media/er-components-inspections-03.gif)
 
 8. Observera att ett valideringsfel uppstår. Meddelandet anger att bindningen för datamodellfältet **X** innehåller sökvägen som refererar till datakällan **Y** men den datakällan hittas inte.
 
@@ -359,13 +359,13 @@ Följande steg visar hur det här problemet kan uppstå.
 8. Namnge det nya kapslade fältet **$AccNumber** och konfigurera det så att det innehåller uttrycket `TRIM(Vendor.AccountNum)`.
 9. Välj **Validera** för att granska den redigerbara modellmappningskomponenten på sidan **Modellmappningsdesigner** och kontrollera att uttrycket `FILTER(Vendor, Vendor.AccountNum="US-101")` i datakällan **Leverantör** kan läsas.
 
-    ![Verifiering av uttrycket kan frågas på sidan Modellmappningsdesigner](./media/er-components-inspections-04.gif)
+    ![Verifiering av uttrycket kan sökas på sidan Modellmappningsdesigner.](./media/er-components-inspections-04.gif)
 
 10. Observera att ett valideringsfel inträffar eftersom datakällan **Leverantör** innehåller ett kapslat fält av typen **Beräknat fält** som inte tillåter att uttrycket för datakällan **FilteredVendor** översätts till den direkta SQL-instruktionen.
 
 Följande bild visar det körningsfel som uppstår om du ignorerar varningen och väljer **Kör** för att köra ett format som konfigurerats att använda modellmappningen.
 
-![Körningsfel som uppstår vid körning av det redigerbara formatet på sidan Formatdesigner](./media/er-components-inspections-04a.png)
+![Körningsfel som uppstår vid körning av det redigerbara formatet på sidan Formatdesigner.](./media/er-components-inspections-04a.png)
 
 ### <a name="automatic-resolution"></a>Automatisk lösning
 
@@ -396,23 +396,23 @@ Följande steg visar hur det här problemet kan uppstå.
     - Välj datakällan **Trans** som källa för poster som ska grupperas.
     - I fältet **Körningsplats** väljer du **Fråga** för att ange att du vill köra den här datakällan på databasnivå.
 
-    ![Konfigurera datakällan på sidan Redigera "Gruppera efter"-parametrar](./media/er-components-inspections-05a.gif)
+    ![Konfigurera datakällan på parametersidan Redigera "Gruppera efter".](./media/er-components-inspections-05a.gif)
 
 6. Välj **Validera** för att granska den redigerbara modellmappningskomponenten på sidan **Modellmappningsdesigner** och kontrollera att den konfigurerade datakällan **GroupedTrans** kan frågas.
 7. Ändra datakällan **Trans** genom att lägga till ett kapslat fält av typen **Beräknat fält** för att hämta det trimmade leverantörskontonumret.
 8. Namnge den nya datakällan **$AccNumber** och konfigurera den så att den innehåller uttrycket `TRIM(Trans.AccountNum)`.
 
-    ![Konfigurera datakällan på sidan Modellmappningsdesigner](./media/er-components-inspections-05a.png)
+    ![Konfigurera datakällan på sidan Modellmappningsdesigner.](./media/er-components-inspections-05a.png)
 
 9. Välj **Validera** för att granska den redigerbara modellmappningskomponenten på sidan **Modellmappningsdesigner** och kontrollera att den konfigurerade datakällan **GroupedTrans** kan frågas.
 
-    ![Validera ER-modellmappningskomponenten och verifiera att datakällan GroupedTrans på sidan Modellmappningsdesigner kan frågas](./media/er-components-inspections-05b.png)
+    ![Validera ER-modellmappningskomponenten och verifiera att datakällan GroupedTrans på sidan Modellmappningsdesigner kan sökas.](./media/er-components-inspections-05b.png)
 
 10. Observera att ett valideringsfel inträffar eftersom datakällan **Trans** innehåller ett kapslat fält av typen **Beräknat fält** som inte tillåter att uttrycket för datakällan **GroupedTrans** översätts till den direkta SQL-instruktionen.
 
 Följande bild visar det körningsfel som uppstår om du ignorerar varningen och väljer **Kör** för att köra ett format som konfigurerats att använda modellmappningen.
 
-![Körningstidfel som uppstår när varningen på sidan Formatdesigner ignoreras](./media/er-components-inspections-05c.png)
+![Körningstidfel som uppstår när varningen på sidan Formatdesigner ignoreras.](./media/er-components-inspections-05c.png)
 
 ### <a name="automatic-resolution"></a>Automatisk lösning
 
@@ -448,21 +448,21 @@ Följande steg visar hur det här problemet kan uppstå.
     2. Lägg till datakällan **Vendor.FilteredTrans** som den andra uppsättningen med poster att koppla. Välj **INNER** som typ.
     3. I fältet **Körning** väljer du **Fråga** för att ange att du vill köra den här datakällan på databasnivå.
 
-    ![Konfigurera datakällan på sidan Kopplingsdesigner](./media/er-components-inspections-06a.gif)
+    ![Konfigurera datakällan på sidan Kopplingsdesigner.](./media/er-components-inspections-06a.gif)
 
 10. Välj **Validera** för att granska den redigerbara modellmappningskomponenten på sidan **Modellmappningsdesigner** och kontrollera att den konfigurerade datakällan **JoinedList** kan frågas.
 11. Ändra uttrycket för datakällan **Vendor.FilteredTrans** från `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` till `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)`.
 12. Välj **Validera** för att granska den redigerbara modellmappningskomponenten på sidan **Modellmappningsdesigner** och kontrollera att den konfigurerade datakällan **JoinedList** kan frågas.
 
-    ![Validera den redigerbara modellmappningskomponenten och kontrollera att datakällan JoinedList kan frågas på sidan Modellmappningsdesigner](./media/er-components-inspections-06b.png)
+    ![Validera den redigerbara modellmappningskomponenten och kontrollera att datakällan JoinedList kan sökas på sidan Modellmappningsdesigner.](./media/er-components-inspections-06b.png)
 
 13. Observera att ett valideringsfel inträffar eftersom uttrycket för datakällan **Vendor.FilteredTrans** inte kan översättas till det direkta SQL-anropet. Det direkta SQL-anropet tillåter inte heller att anropet för datakällan **JoinedList** översätts till den direkta SQL-instruktionen.
 
-    ![Körningsfel från misslyckad validering av datakällan på sidan Modellmappningsdesigner](./media/er-components-inspections-06c.png)
+    ![Körningsfel från misslyckad validering av datakällan JoinedList på sidan Modellmappningsdesigner.](./media/er-components-inspections-06c.png)
 
 Följande bild visar det körningsfel som uppstår om du ignorerar varningen och väljer **Kör** för att köra ett format som konfigurerats att använda modellmappningen.
 
-![Kör det redigerbara formatet på sidan Formatdesigner](./media/er-components-inspections-06e.png)
+![Kör det redigerbara formatet på sidan Formatdesigner.](./media/er-components-inspections-06e.png)
 
 ### <a name="automatic-resolution"></a>Automatisk lösning
 
@@ -474,7 +474,7 @@ Det finns inget alternativ för automatisk korrigering av det här problemet.
 
 Ändra uttrycket för datakällan **Vendor.FilteredTrans** från `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)` tillbaka till `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)`, som varningen uppmanar till.
 
-![Uppdaterat uttryck för datakällan på sidan modeModel mapping designer](./media/er-components-inspections-06d.png)
+![Uppdaterat uttryck för datakällan på sidan Modellmappningsdesigner.](./media/er-components-inspections-06d.png)
 
 #### <a name="option-2"></a>Alternativ 2
 
@@ -497,11 +497,11 @@ Följande steg visar hur det här problemet kan uppstå.
 9. Namnge den nya datakällan **FilteredVendor** och konfigurera den så att den innehåller uttrycket `WHERE(Vendor, Vendor.AccountNum="US-101")`.
 10. Välj **Validera** för att granska den redigerbara modellmappningskomponenten på sidan **Modellmappningsdesigner**.
 
-    ![Granska den redigerbara ER-modellmappningskomponenten på sidan Modellmappningsdesigner](./media/er-components-inspections-07a.png)
+    ![Granska den redigerbara modellmappningskomponenten på sidan Modellmappningsdesigner.](./media/er-components-inspections-07a.png)
 
 11. Observera att valideringsvarningar rekommenderar att du använder **FILTER**-funktionen i stället för **WHERE**-funktionen för datakällorna **FilteredVendor** och **FilteredTrans**.
 
-    ![Rekommendation att använda FILTER-funktionen istället för WHERE-funktionen på sidan Modellmappningsdesigner](./media/er-components-inspections-07b.png)
+    ![Rekommendation att använda FILTER-funktionen istället för WHERE-funktionen på sidan Modellmappningsdesigner.](./media/er-components-inspections-07b.png)
 
 ### <a name="automatic-resolution"></a>Automatisk lösning
 
@@ -509,7 +509,7 @@ Välj **Korrigera** för att automatiskt ersätta **WHERE**-funktionen med **FIL
 
 Alternativt kan du välja raden för en enskild varning i rutnätet och sedan välja **Korrigera valda**. I det här fallet ändras uttrycket automatiskt enbart i datakällan som nämns i den valda varningen.
 
-![Välj Korrigera för att automatiskt ersätta WHERE-funktionen med FILTER-funktionen på sidan Modellmappningsdesigner](./media/er-components-inspections-07c.png)
+![Välj Korrigera för att automatiskt ersätta WHERE-funktionen med FILTER-funktionen på sidan Modellmappningsdesigner.](./media/er-components-inspections-07c.png)
 
 ### <a name="manual-resolution"></a>Manuell lösning
 
@@ -530,11 +530,11 @@ Följande steg visar hur det här problemet kan uppstå.
 7. Namnge den nya datakällan **FilteredVendorTrans** och konfigurera den så att den innehåller uttrycket `ALLITEMS(FilteredVendor.'<Relations'.'VendTrans.VendTable_AccountNum')`.
 8. Välj **Validera** för att granska den redigerbara modellmappningskomponenten på sidan **Modellmappningsdesigner**.
 
-    ![Inspekterar redigerbara modellmappningskomponenten på sidan Modellmappningsdesigner](./media/er-components-inspections-08a.png)
+    ![Inspektera den redigerbara modellmappningskomponenten på sidan Modellmappningsdesigner.](./media/er-components-inspections-08a.png)
 
 9. Observera att en valideringsvarning uppstår. Det här meddelandet rekommenderar att du använder funktionen **ALLITEMSQUERY** i stället för funktionen **ALLITEMS** för datakällan **FilteredVendorTrans**.
 
-    ![Rekommendation att använda ALLITEMSQUERY-funktionen istället för ALLITEMS-funktionen på sidan Modellmappningsdesigner](./media/er-components-inspections-08b.png)
+    ![Rekommendation att använda ALLITEMSQUERY-funktionen istället för ALLITEMS-funktionen på sidan Modellmappningsdesigner.](./media/er-components-inspections-08b.png)
 
 ### <a name="automatic-resolution"></a>Automatisk lösning
 
@@ -542,7 +542,7 @@ Välj **Korrigera** för att automatiskt ersätta funktionen **ALLITEMS** med fu
 
 Alternativt kan du välja raden för en enskild varning i rutnätet och sedan välja **Korrigera valda**. I det här fallet ändras uttrycket automatiskt enbart i datakällan som nämns i den valda varningen.
 
-![Välj Korrigera valda på sidan Modellmappningsdesigner](./media/er-components-inspections-08c.png)
+![Välj Korrigera valda på sidan Modellmappningsdesigner.](./media/er-components-inspections-08c.png)
 
 ### <a name="manual-resolution"></a>Manuell lösning
 
@@ -563,7 +563,7 @@ Följande steg visar hur det här problemet kan uppstå.
     - Lägg till ett kapslat fält av typen **Sträng** och ge det namnet **Namn**.
     - Lägg till ett kapslat fält av typen **Sträng** och ge det namnet **AccountNumber**.
 
-    ![Lägga till kapslade fält på sidan Datamodell](./media/er-components-inspections-09a.png)
+    ![Lägga till kapslade fält på sidan Datamodell.](./media/er-components-inspections-09a.png)
 
 6. I formgivaren för modellkartläggning, i typen **Datakällor** lägger du till en datakälla av typen **Dynamics 365 for Operations \\ tabellposter**.
 7. Namnge den nya datakällan **Leverantör**. I fältet **Vabell** väljer du **VendTable** för att ange att denna datakälla ska begära tabellen VendTable.
@@ -577,7 +577,7 @@ Följande steg visar hur det här problemet kan uppstå.
     - Bind **FilteredVendor.AccountNum** till **Vendor.AccountNumber**.
     - Bind **FilteredVendor.'name()'** till **Vendor.Name**.
 
-    ![Binda datamodellobjekt på sidan Modellmappningsdesigner](./media/er-components-inspections-09b.png)
+    ![Binda datamodellartiklar på sidan Modellmappningsdesigner.](./media/er-components-inspections-09b.png)
 
 13. I formatstrukturträdet lägger du till följande objekt för att skapa ett utgående dokument i XML-format som innehåller leverantörsinformation:
 
@@ -595,15 +595,15 @@ Följande steg visar hur det här problemet kan uppstå.
 
 15. Välj **Validera** för att granska den redigerbara formatkomponenten på sidan **Formatdesigner**.
 
-    ![Validera formatelementen som du har bundit till datakällor på sidan Format designer](./media/er-components-inspections-09c.png)
+    ![Validera formatelementen som du har bundit till datakällor på sidan Formatdesigner.](./media/er-components-inspections-09c.png)
 
 16. Observera att ett valideringsfel uppstår. Meddelandet anger att det kan finnas ett fel för konfigurerade formatkomponenterna **Statement\\Party\\Name** och **Statement\\Party\\AccountNum** vid körning om listan `model.Vendor` är tom.
 
-    ![Valideringsfel som meddelar eventuella fel på konfigurerade formatkomponenter](./media/er-components-inspections-09d.png)
+    ![Valideringsfel som meddelar eventuella fel på konfigurerade formatkomponenter.](./media/er-components-inspections-09d.png)
 
 Följande bild visar det körningsfel som uppstår om du ignorerar varningen och väljer **Kör** för att köra formatet och väljer kontonummer för en leverantör som inte finns. Eftersom den begärda leverantören inte finns är listan `model.Vendor` tom (dvs den kommer inte att innehålla några poster).
 
-![Körningsfel eftersom detta inträffade när formatmappningen kördes](./media/er-components-inspections-09e.png)
+![Körningsfel som uppstår när formatmappningen körs.](./media/er-components-inspections-09e.png)
 
 ### <a name="automatic-resolution"></a>Automatisk lösning
 
@@ -615,7 +615,7 @@ För den valda raden i rutnätet på fliken **Varningar** kan du välja **Avbind
 
 Du kan binda formatelementet **Statement\\Party\\Name** till datakällobjektet `model.Vendor`. Vid körning anropar den här bindningen datakällan `model.Vendor` först. När `model.Vendor` returnerar en tom postlista körs inte de kapslade formatelementen. Därför visas inga valideringsvarningar för den här formatkonfigurationen.
 
-![Bind formatelementet till datakällobjektet på sidan Format designer](./media/er-components-inspections-09e.gif)
+![Bind formatelementet till datakällsartikeln på sidan Formatdesigner.](./media/er-components-inspections-09e.gif)
 
 #### <a name="option-2"></a>Alternativ 2
 
@@ -626,7 +626,7 @@ Du kan binda formatelementet **Statement\\Party\\Name** till datakällobjektet `
 
 Därför uppstår inga valideringsvarningar för formatelementet **Instruktion\\Part\\Namn** när det är bundet till uttrycket `FIRSTORNULL(model.Vendor).Name`.
 
-![Ändrad bindning löser valideringsvarningar på sidan Format designer](./media/er-components-inspections-09f.gif)
+![Ändrad bindning löser valideringsvarningar på sidan Formatdesigner.](./media/er-components-inspections-09f.gif)
 
 #### <a name="option-3"></a>Alternativ 3
 
@@ -653,17 +653,17 @@ Följande steg visar hur det här problemet kan uppstå.
 7. Namnge den nya datakällan **FilteredVendor** och konfigurera den så att den innehåller uttrycket `FILTER(Vendor, Vendor.AccountNum=RequestedAccountNum)`.
 8. Markera den konfigurerade datakällan **Leverantör** som cachelagrad.
 
-    ![Konfigurera modellmappningskomponenten på sidan Modellmappningsdesigner](./media/er-components-inspections-10a.gif)
+    ![Konfigurera modellmappningskomponenten på sidan Modellmappningsdesigner.](./media/er-components-inspections-10a.gif)
 
 9. Välj **Validera** för att granska den redigerbara modellmappningskomponenten på sidan **Modellmappningsdesigner**.
 
-    ![Validera FILTER-funktionen som används för cacheminnets leverantörsdatakälla på sidan Modellmappningsdesigner](./media/er-components-inspections-10a.png)
+    ![Validera den FILTER-funktion som används för cacheminnets leverantörsdatakälla på sidan Modellmappningsdesigner.](./media/er-components-inspections-10a.png)
 
 10. Observera att ett valideringsfel uppstår. Meddelandet anger att funktionen **FILTER** inte kan tillämpas på den cachelagrade datakällan **Leverantör**.
 
 Följande bild visar det körningsfel som uppstår om du ignorerar varningen och väljer **Kör** för att köra formatet.
 
-![Körningsfel som uppstod under formatmappningskörning på sidan Formatdesigner](./media/er-components-inspections-10b.png)
+![Körningsfel som uppstår under formatmappningskörning på sidan Formatdesigner.](./media/er-components-inspections-10b.png)
 
 ### <a name="automatic-resolution&quot;></a>Automatisk lösning
 
@@ -694,7 +694,7 @@ Följande steg visar hur det här problemet kan uppstå.
     - Lägg till ett kapslat fält av typen **Sträng** och ge det namnet **Namn**.
     - Lägg till ett kapslat fält av typen **Sträng** och ge det namnet **AccountNumber**.
 
-    ![Lägga till kapslade fält i leverantörsobjektet på datamodellsidan](./media/er-components-inspections-11a.png)
+    ![Lägga till kapslade fält i leverantörsartikeln på sidan Datamodell.](./media/er-components-inspections-11a.png)
 
 6. I formgivaren för modellkartläggning, i typen **Datakällor** lägger du till en datakälla av typen **Dynamics 365 for Operations \\ tabellposter**.
 7. Namnge den nya datakällan **Leverantör**. I fältet **Vabell** väljer du **VendTable** för att ange att denna datakälla ska begära tabellen VendTable.
@@ -710,7 +710,7 @@ Följande steg visar hur det här problemet kan uppstå.
     > [!NOTE]
     > Datamodellfältet **Vendor.Name** förblir obundet.
 
-    ![Datamodellobjekt som är bundna till konfigurerade datakällor och ett datalägesobjekt som förblir obundet på sidan Modellmappningsdesigner](./media/er-components-inspections-11b.png)
+    ![Datamodellsartiklar som är bundna till konfigurerade datakällor och en datalägesartikel som förblir obunden på sidan Modellmappningsdesigner.](./media/er-components-inspections-11b.png)
 
 13. I formatstrukturträdet lägger du till följande objekt för att skapa ett utgående dokument i XML-format som innehåller information om leverantör som det frågas om:
 
@@ -729,15 +729,15 @@ Följande steg visar hur det här problemet kan uppstå.
 
 15. Välj **Validera** för att granska den redigerbara formatkomponenten på sidan **Formatdesigner**.
 
-    ![Validera ER-formatkomponenten på sidan Formatdesigner](./media/er-components-inspections-11c.png)
+    ![Validera ER-formatkomponenten på sidan Formatdesigner.](./media/er-components-inspections-11c.png)
 
 16. Observera att en valideringsvarning uppstår. Meddelandet anger att datakällfältet **model.Vendor.Name** inte är bundet till någon datakälla i modellmappningen som är konfigurerad för att användas av formatet. Därför kanske inte formatelementet **Instruktion\\Part\\Namn** fylls i vid körning och det inträffar ett körningsundantag.
 
-    ![Validera ER-formatkomponenten på sidan Formatdesigner](./media/er-components-inspections-11d.png)
+    ![Validera ER-formatkomponenten på sidan Formatdesigner.](./media/er-components-inspections-11d.png)
 
 Följande bild visar det körningsfel som uppstår om du ignorerar varningen och väljer **Kör** för att köra formatet.
 
-![Köra det redigerbara formatet på sidan Formatdesigner](./media/er-components-inspections-11e.png)
+![Köra det redigerbara formatet på sidan Formatdesigner.](./media/er-components-inspections-11e.png)
 
 ### <a name="automatic-resolution"></a>Automatisk lösning
 
@@ -766,7 +766,7 @@ Följande steg visar hur det här problemet kan uppstå.
 5. I elementet **Excel\\Fil** väljer du arbetsbokfil A.
 6. Välj **Validera** för att granska den redigerbara formatkomponenten på sidan **Formatdesigner**.
 
-    ![Validerar den redigerbara formatkomponenten i arbetsbokfilen på sidan Format designer](./media/er-components-inspections-12a.gif)
+    ![Validera den redigerbara formatkomponenten i arbetsbokfilen på sidan Formatdesigner.](./media/er-components-inspections-12a.gif)
 
 7. Observera att en valideringsvarning uppstår. Meddelandet anger att arbetsbokfilen B.xlsx inte är länkad till några komponenter och att den tas bort när status för konfigurationsversionen har ändrats.
 
@@ -794,11 +794,11 @@ Följande steg visar hur det här problemet kan uppstå.
 4. Lägg till **Excel\\Cell**-elementet **Titel** som kapslat element för elementet **Rapport**. I fältet **Excel-intervall** anger du **ReportTitle**.
 5. Välj **Validera** för att granska den redigerbara formatkomponenten på sidan **Formatdesigner**.
 
-    ![Validera kapslade element och fält på sidan Format designer](./media/er-components-inspections-13a.png)
+    ![Validera kapslade element och fält på sidan Formatdesigner.](./media/er-components-inspections-13a.png)
 
 6. Observera att en valideringsvarning uppstår. Meddelandet anger att namnet **ReportTitle** inte finns i arket **Blad1** i den Excel-mall du använder.
 
-    ![Valideringsvarning för att namnet ReportTitle inte finns på Blad1 i Excel-mallen](./media/er-components-inspections-13b.png)
+    ![Valideringsvarning att namnet ReportTitle inte finns på Flik1 i Excel-mallen.](./media/er-components-inspections-13b.png)
 
 ### <a name="automatic-resolution"></a>Automatisk lösning
 

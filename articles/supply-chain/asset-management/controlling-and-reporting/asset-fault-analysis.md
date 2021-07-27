@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a26ee80eb52e40b60ace9b1494b3512d85f04cfe
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 913e5cf8d39dfe36efea0526d84808e7d736b030
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837883"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361171"
 ---
 # <a name="asset-fault-analysis"></a>Felanalys för tillgång
 
@@ -60,7 +60,7 @@ I skärmbilden nedan är bara knappen **Symptom** markerad.
 - Felregistreringar har utförts på tre felsymtom: "luftläcka", "utlöst säkring" och "utrustning har fastnat".  
 - I kolumnen **Sannolikhet %** blir procentsatserna totalt 100 %. Sannolikheten baseras på alla **symptom** registreringar i den här felanalysen.
 
-![Figur 1](media/06-controlling-and-reporting.png)
+![Figur 1.](media/06-controlling-and-reporting.png)
 
 ### <a name="group-by-symptoms-and-time-period"></a>Gruppera efter symptom och tidsperiod
 
@@ -69,7 +69,7 @@ I bilden nedan läggs **år** och **månad** till för att visa hur du kan visa 
 - Felsymptomen visas nu som registreringar per år/månad.  
 - Om du lägger till alla procentsatser för varje månad i kolumnen **Sannolikhet %** blir procentsatserna totalt 100 %. Sannolikheten baseras på **symptom** registreringarna i den här felanalysen. Om du har ett stort antal rader på en tillgång, men en stor procentsats på en rad, kan det vara en indikation på ett felsymptom som du ska undersöka närmare för att begränsa antalet registreringar för det felsymptomet.
 
-![Figur 2](media/07-controlling-and-reporting.png)
+![Figur 2.](media/07-controlling-and-reporting.png)
 
 ### <a name="group-by-multiple-symptoms-and-assets"></a>Gruppera efter flera symptom och tillgångar
 
@@ -84,7 +84,7 @@ På skärmbilden nedan har **Tillgång** och **Tillgångstyp** lagts till för a
 - Felsymptomen delas nu upp i kombinationer av **Tillgång** / **Tillgångstyp** / **Symptom**.  
 - I kolumnen **Sannolikhet %**, om du lägger till alla procentandelar för kombinationen av **Tillgång** / **Tillgångstyp** / **Symptom** uppgår var och en till 100 %. Sannolikheten baseras på **symptom** registreringarna i den här felanalysen. Om du har ett stort antal rader på en tillgång, men en stor procentsats på en rad, kan det vara en indikation på ett felsymptom som du ska undersöka närmare för att begränsa antalet registreringar för det felsymptomet.
 
-![Figur 3](media/08-controlling-and-reporting.png)
+![Figur 3.](media/08-controlling-and-reporting.png)
 
 **Gruppera efter två symptom, tillgång och tillgångstyp**
 
@@ -92,7 +92,7 @@ På skärmbilden nedan har **Område** lagts till i **Symptom**, **Tillgång** o
 
 - I kolumnen **Sannolikhet %**, om du lägger till alla procentandelar för kombinationen av **Tillgång** / **Tillgångstyp** / **Symptom** på en tillgång uppgår var och en till 100 %. Sannolikheten baseras på kombinationen av **Symptom** och **Område** i den här felanalysen. Om du har ett stort antal rader på en tillgång, men en stor procentsats på en rad, kan det vara en indikation på ett felområde som du ska undersöka närmare för att begränsa antalet registreringar för det felområdet.  
 
-![Figur 4](media/09-controlling-and-reporting.png)
+![Figur 4.](media/09-controlling-and-reporting.png)
 
 **Gruppera efter tre symptom, tillgång och tillgångstyp**
 
@@ -100,7 +100,7 @@ I skärmbilden nedan läggs **Typ** till, och den mest detaljerade beräkningen 
  
 - I kolumnen **Sannolikhet %**, om du lägger till alla procentandelar för kombinationen av **Tillgång** / **Tillgångstyp** / **Symptom** på en tillgång uppgår var och en till 100 %. Sannolikheten baseras på kombinationen av **Symptom**, **Område** och **Typ** i den här felanalysen. Om du har ett stort antal rader på en tillgång, men en stor procentsats på en rad, kan det vara en indikation på en feltyp som du ska undersöka närmare för att begränsa antalet registreringar för den feltypen.
 
-![Figur 5](media/10-controlling-and-reporting.png)
+![Figur 5.](media/10-controlling-and-reporting.png)
 
 
 >[!NOTE]

@@ -12,9 +12,9 @@
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
             - name: Tjänstuppdateringar för One Version
               items:
-                - name: Översikt över tjänstuppdateringar för en version
+                - name: Översikt över Tjänstuppdateringar för One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Frågor och svar om tjänstuppdateringar för en version
+                - name: Frågor och svar om Tjänstuppdateringar för One Version
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'Hantera uppdateringar och den anpassade kodens livs cykel, inklusive Dynamics 365 Commerce'
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/supply-chain/toc.json
@@ -214,7 +214,7 @@
                   href: ../finance/localizations/globalization-services-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Regulatory Configuration Service
                   items:
-                    - name: Översikt över Regulatory Configuration Service
+                    - name: Översikt över Regulatory configuration service
                       href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Regulatory configuration service – Globaliseringsfunktioner
                       href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
@@ -246,8 +246,6 @@
                           href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Kom i gång med elektronisk fakturering för Egypten
                           href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Kom i gång med elektronisk fakturering för Italien
-                          href: ../finance/localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Kom i gång med elektronisk fakturering för Mexiko
                           href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Ställ in elektronisk fakturering
@@ -1607,6 +1605,8 @@
                   href: master-planning/planning-optimization/get-started.md
                 - name: Bristanalys för planeringsoptimering
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Parametrar som inte används i Planeringsoptimering
+                  href: master-planning/planning-optimization/not-used-parameters.md
                 - name: Använda filter på en plan
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Huvudplanering med efterfrågeprognos
@@ -1621,6 +1621,8 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Produktionsplanering
                   href: master-planning/planning-optimization/production-planning.md
+                - name: Tidsplanering med obegränsad kapacitet
+                  href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: Lagermarkeringen med Planeringsoptimering
                   href: master-planning/planning-optimization/marking.md
                 - name: Koncernintern planering
@@ -1757,7 +1759,7 @@
                   href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Kostnadskontroll
                   href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Utläggshantering
+                - name: Utgiftshantering
                   href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Lagerbehållning
                   href: inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
@@ -1861,6 +1863,8 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurera godkännandesteg
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurera omkostnadsgranskare
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurera manuella beslut
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurera villkorliga beslut

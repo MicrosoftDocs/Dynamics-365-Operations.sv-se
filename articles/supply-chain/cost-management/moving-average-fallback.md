@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-03-25
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 09da3c3a79b5540670db25d5466023132d2848f4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a9521d9be3c380795abf476646d2d0e1cd36e8e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832284"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354795"
 ---
 # <a name="moving-average-fallback-cost-sequence"></a>Rörligt genomsnitt, reservkostnadssekvens
 
@@ -42,7 +42,7 @@ Följ de här stegen om du vill välja en reservkostnadssekvenser för beräknin
     - **Aktiv kostnad – senaste utleverans**
     - **Aktiv kostnad – ett artikelpris** – organisationer kan uppleva prestandaproblem om de använder affärsprocesser där lagret regelbundet blir negativt och samtidigt är transaktionsvolymen hög. Den här inställningen kan hjälpa till att minska prestandaproblemen.
 
-![Parametrarna lagerredovisning](media/inventory-accounting-parameters.png "Parametrarna lagerredovisning")
+![Parametrar för lagerredovisning.](media/inventory-accounting-parameters.png "Parametrarna lagerredovisning")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

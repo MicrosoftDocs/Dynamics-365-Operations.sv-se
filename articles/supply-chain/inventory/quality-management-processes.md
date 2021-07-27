@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConformanceTable, InventQualityOrderLineResults, InventQualityOrderTable, InventTestCorrection, InventTestDiagnosticType, InventTestInstrument, InventTestReportSetup, InventTestTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 11574
+ms.custom:
+- "11574"
+- intro-internal
 ms.assetid: 5ac8a059-5cb4-4cb5-ba14-b944bd08dae9
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ca6f9884b1d977e36f04f6da04ab8a0ea228632
-ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
+ms.openlocfilehash: d8bb3862b2a082dd975af8bbb30961caf209c5ad
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5956240"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344530"
 ---
 # <a name="quality-and-nonconformance-management-overview"></a>Kvalitets- och avvikelsehantering – en översikt
 
@@ -62,7 +64,7 @@ Nedan följer några sätt att styra kvalitetshanteringsprocessen:
 - Dokumentera kostnaden för att hantera en avvikelse. Denna kostnad kan inkludera artiklarna (till exempel reservdelar), diverse avgifter samt och tidrapporttimmarna som krävs för att korrigera avvikelsen.
 - Tidsplanera felkorrigeringsprocesser genom att använda korrigeringshantering som är kopplad till kvalitetsorder.
 
-[![Kvalitetshanteringsprocesser](media/quality-management-process-diagram.png)](media/quality-management-process-diagram.png)
+[![Kvalitetshanteringsprocess.](media/quality-management-process-diagram.png)](media/quality-management-process-diagram.png)
 
 ## <a name="product-testing-and-quality-orders"></a>Produkttestning och kvalitetsorder
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 3550b2b7b305702ffc337ba0a9bb79f60a9de120
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: db7bdfe102fa5e24816f2cfaf2b53351362cddd1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023595"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358204"
 ---
 # <a name="set-up-tds-registration-numbers-for-legal-entities"></a>Ställ in TDS-registreringsnummer för juridiska personer
 
@@ -31,7 +31,7 @@ I det här avsnittet beskrivs hur du ställer in registreringsnummer för juridi
 
 1. Gå till **Organisationsadministration \> Organisationer \> Juridiska personer**.
 
-    [![Sidan Juridiska personer](./media/apac-ind-TDS-4.png)](./media/apac-ind-TDS-4.png)
+    [![Sidan Juridiska personer.](./media/apac-ind-TDS-4.png)](./media/apac-ind-TDS-4.png)
 
 2. Under snabbfliken **Skatteinformation**, fältet **Permanent kontonummer**, anger du det permanenta kontonumret (PAN) för den juridiska personen.
 3. I fältet **Cirkelnummer** anger du cirkelnumret för TDS-myndigheten.
@@ -41,11 +41,11 @@ I det här avsnittet beskrivs hur du ställer in registreringsnummer för juridi
 7. I åtgärdsfönstret väljer du **Registrerings-ID** för att öppna sidan **Hantera adresser**.
 8. Under snabbfliken **Skatteinformation** väljer du **Lägg till** eller **Redigera** för att öppna sidan **Hantera skatteinformation**, där du kan bibehålla skatteregistreringsposten.
 
-    [![Sidan Hantera adresser](./media/apac-ind-TDS-5.png)](./media/apac-ind-TDS-5.png)
+    [![Sidan Hantera adresser.](./media/apac-ind-TDS-5.png)](./media/apac-ind-TDS-5.png)
 
 9. Under snabbfliken **Källskatt**, i fältet **Skattekontonummer (TAN)**, anger du registreringsnumret. Detta nummer måste bestå av fyra alfabetiska tecken, därefter fem numeriska tecken och därefter ett alfabetiskt tecken. Här är ett exempel: **AXDF87645F**.
 10. I fältet **Namn eller beskrivning** anger du en beskrivning av registreringsnumret för källskatt.
 
-    [![Sidan Hantera skatteinformation](./media/apac-ind-TDS-5-1.png)](./media/apac-ind-TDS-5-1.png)
+    [![Sidan Hantera skatteinformation.](./media/apac-ind-TDS-5-1.png)](./media/apac-ind-TDS-5-1.png)
 
 11. Stäng sidan.

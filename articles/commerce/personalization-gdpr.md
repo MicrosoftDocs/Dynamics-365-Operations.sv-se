@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1e7d0f505ce49bc9be0d027cbb0d636c9de0600b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 75f41db74512ea758a83de56ffd2a9166712f5e2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804463"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352286"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Avanmäl anpassade rekommendationer
 
@@ -44,11 +44,11 @@ I kontohantering i backoffice i Commerce kan återförsäljare avanmäla sig fö
 1. På startsidan för backoffice söker du efter **alla kunder**.
 1. Sök efter och välj en kund och välj sedan snabbfliken **butik**.
 
-    ![Snabbfliken Butik](./media/Disablepersonalizationpart1.png)
+    ![Snabbfliken Butik.](./media/Disablepersonalizationpart1.png)
 
 1. Under **sekretess** anger du alternativet **inaktivera anpassningar** till **ja**.
 
-    ![Sekretessinställningar](./media/Disablepersonalizationpart2.png)
+    ![Sekretessinställningar.](./media/Disablepersonalizationpart2.png)
 
 1. Markera **Spara** och stäng sedan sidan.
 
