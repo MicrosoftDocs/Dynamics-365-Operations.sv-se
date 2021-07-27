@@ -2,11 +2,11 @@
 title: Ställ in komponenter för ett jobb
 description: Det här avsnittet beskriver begreppsmässiga element som ett projekt kan innehålla och ger exempel på hur du kan använda dessa objekt inom din organisation.
 author: andreabichsel
-ms.date: 06/20/2017
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace
+ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
 audience: Application User
 ms.author: anbichse
 ms.search.scope: Human Resources
@@ -15,12 +15,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88dc3cec4880fdcb4d4f8d54b03037f738d2a57a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: d4e24e64f3fece0807df8fbf4fb206c4588c9332
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056580"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333103"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Ställ in komponenter för ett jobb
 
@@ -35,7 +35,7 @@ Viss jobbinformation, exempelvis befattning, typ och funktion, har giltighetsdat
 ## <a name="job-titles"></a>jobbtitlar
 Innan du skapar jobb måste du ställa in titlar för jobben. Befattningar ärver jobbtitlar från jobben som befattningarna är kopplade till. 
 
-Underhåll jobbtitlar med hjälp av sidan **Titlar**, som du kan öppna genom att använda sökfunktionen. På sidan **Titlar** anger du de rubriker som du vill använda för dina jobb.
+Underhåll jobbtitlar med hjälp av sidan **Titlar**, som du kan öppna genom att använda sökfunktionen. På sidan **Titlar** anger du de titlar som du vill använda för dina jobb.
 
 ## <a name="job-types"></a>Jobbtyper
 Du använder jobbtyper för att gruppera liknande jobb i kategorier. Jobbtyper krävs inte. Om du tänker använda jobbtyper när du ställer in berättiganderegler för kompensationshantering bör du ställa in jobbtyper innan du ställer in jobb. Några exempel på jobbtyper är heltid och deltid, eller lön och timpenning. Du kan underhålla jobbtyper med hjälp av sidan **Jobbtyper**. På sidan **Jobbtyper** anger du ett namn och en kort beskrivning för jobbtypen. I fältet **Befrielsestatus** väljer du ett av följande alternativ för att ange befrielsestatusen Fair Labor Standards Act (FLSA) befrielsestatus för jobb som har den här jobbtypen:
@@ -43,6 +43,11 @@ Du använder jobbtyper för att gruppera liknande jobb i kategorier. Jobbtyper k
 -   **Undantag** – Jobb är befriade från övertid under FLSA.
 -   **Icke-undantag** – Jobb är inte befriade från övertid under FLSA.
 -   **Gäller inte** – FLSA-täckning gäller inte.
+
+## <a name="job-family"></a>Jobbgrupp
+En jobbfamilj är en grupp av jobb som inbegriper liknande arbete och som kräver liknande utbildning, färdigheter, kunskap och expertis. En jobbfamilj kan kopplas till ett jobb på snabbfliken **Jobbklassificering** på sidan **Jobb** samt på snabbfliken **Allmänt** på sidan **Alla befattningar**. Jobbfamiljer kan vara breda eller specifika beroende på verksamhet och rapporteringskrav. Vissa exempel på breda jobbfamiljer är **Kvalificerad arbetskraft** och **Okvalificerad arbetskraft**. Vissa exempel på specifika jobbfamiljer är **Redovisning**, **Tillverkning** och **Försäljning**.
+
+Underhåll jobbfamiljer med hjälp av sidan **Jobbfamilj**, som du kan öppna genom att använda sökfunktionen. På sidan **Jobbfamilj** anger du ett unikt namn för familjen samt en detaljerad beskrivning som du tänker använda för dina jobb.
 
 ## <a name="job-functions"></a>Jobbfunktioner
 Jobbkopplingar beskriver funktionella kategorier på hög nivå och relaterar uppgifter på hög nivå. Jobbfunktioner krävs inte. Du kan använda jobbfunktioner tillsammans med jobbtyper för att filtrera kompensationsplaner till specifika jobb. Du kopplar jobbfunktioner och jobbtyper till kompensationsplaner genom att ställa in berättiganderegler på sidan **Berättiganderegler**. Du kan sedan lägga till en nivåserie till en kompensationsplan som gäller den specifika kombinationen av en jobbtyp och en jobbfunktion som du har definierat med en berättiganderegel. (Dessa funktioner gäller både planer för fast kompensation och planer för variabel kompensation.) Om du emellertid tänker använda jobbfunktioner när du skapar berättiganderegler för kompensationshantering, bör du skapa jobbfunktioner innan du skapar jobb. Följande tabell anger några exempel på jobbfunktioner.
@@ -53,6 +58,14 @@ Jobbkopplingar beskriver funktionella kategorier på hög nivå och relaterar up
 | Redovisare    | Yrkespersoner        |
 
 Du underhåller jobbtyper med hjälp av sidan **Jobbfunktioner**. På sidan **Jobbfunktioner** anger du en identifieringskod och en kort beskrivning för jobbfunktionen.
+
+## <a name="compensation"></a>Kompensation
+Om du vill tilldela en fast kompensationsplan till en medarbetare med en viss befattning i ett visst jobb måste du ställa in kompensationsnivåer för jobbet. Kompensationsnivån används när minimi-, mittpunkts- och maximibelopp ställs in i en kompensationsstruktur (ett kompensationsrutnät). När en fast kompensationsplan skapas väljs kompensationsstrukturen. Kompensationsstrukturen omfattar också kompensationsnivån. När du väljer en fast kompensationsplan för en medarbetare kommer de kompensationsnivåer som går att välja att baseras på det jobb som medarbetarens befattning är associerad med. Mer information om hur du konfigurerar kompensation finns i [Kompensationsplaner](hr-compensation-overview.md).
+
+## <a name="job-skills"></a>Jobbkompetenser
+I jobbkompetenserna beskrivs de färdigheter som krävs för att utföra ett jobb. En färdighetsnivå måste associeras med respektive jobbfärdighet. Färdighetsnivåerna definieras av användaren. De anger vilken kunskapsnivå eller effektivitet som krävs för färdigheten. Företag kan till exempel ställa in numeriska nivåer, till exempel 1 till 5, där **1** anger en nybörjare och **5** anger en expert. Företag kan också ställa in nivåer som bär etiketterna **Nybörjare**, **Erfaren** eller **Expert**. När färdighetsnivån har ställts in kan du också ange hur viktig färdigheten är. Om till exempel en revisor avkrävs omfattande kunskaper i Microsoft Excel du skapa en färdighet med namnet **Excel-kunskaper**. Färdighetsnivån kan sedan ställas in som **Erfaren** och viktighetsgraden som **Ytterst**.
+
+De färdigheter som ingår i ett jobb kan användas i färdighetsmappningen. Färdighetsmappning kan jämföra den färdighetsuppsättning som krävs för ett jobb och de färdigheter som associeras med en arbetare. Den kan sedan bestämma en procentuell matchning baserat på överlappande färdigheter. Mer information om färdighetsmappning finns i [Konfigurera färdigheter](hr-develop-skills.md). 
 
 ## <a name="job-tasks"></a>Jobbuppgifter
 Jobbuppgifter beskriver de grundläggande uppgifter som en anställd i en befattning måste utföra. Samma jobbuppgift kan läggas till i flera jobb och i befattningar för de jobb som använder dessa jobbuppgifter. Följande tabell anger några exempel på jobbuppgifter.

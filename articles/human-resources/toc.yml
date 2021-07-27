@@ -355,6 +355,8 @@
           items:
             - name: Introduktion
               href: hr-admin-integration-ats-api-introduction.md
+            - name: Autentisering mellan servrar för ATS-integrationer
+              href: hr-admin-integration-ats-api-s2s-auth.md
             - name: Rekryteringsbegäran och relaterade enheter
               items:
                 - name: Rekryteringsbegäran
@@ -443,16 +445,40 @@
               href: hr-admin-integration-payroll-api-introduction.md
             - name: Generera och granska lönelisteentiteter
               href: hr-admin-integration-payroll-api-generate-review-entities.md
-            - name: Lönemedarbetare
-              href: hr-admin-integration-payroll-api-payroll-employee.md
-            - name: Lönearbetarens adress
-              href: hr-admin-integration-payroll-api-payroll-worker-address.md
-            - name: Kompensationsplan med fast lön
-              href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
-            - name: Lönebefattningsjobb
-              href: hr-admin-integration-payroll-api-payroll-position-job.md
-            - name: Lönebefattning
-              href: hr-admin-integration-payroll-api-payroll-position.md
+            - name: Parametrar för löneintegration
+              href: hr-admin-integration-payroll-api-parameters.md
+            - name: Löneentiteter
+              items:
+                - name: Lönemedarbetare
+                  href: hr-admin-integration-payroll-api-payroll-employee.md
+                - name: Lönearbetarens adress
+                  href: hr-admin-integration-payroll-api-payroll-worker-address.md
+                - name: Kompensationsplan med fast lön
+                  href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+                - name: Kompensationsplan med variabel lön
+                  href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md
+                - name: Lönebefattning
+                  href: hr-admin-integration-payroll-api-payroll-position.md
+                - name: Lönebefattningsjobb
+                  href: hr-admin-integration-payroll-api-payroll-position-job.md
+            - name: Tjänstledighets- och frånvarorelaterade entiteter
+              items:
+                - name: Ledighetssaldo
+                  href: hr-admin-integration-payroll-api-leave-balance.md
+                - name: Tjänstledighetstyp
+                  href: hr-admin-integration-payroll-api-leave-type.md
+                - name: Begäran om tjänstledighet
+                  href: hr-admin-integration-payroll-api-leave-request.md
+            - name: Alternativuppsättningar
+              items:
+                - name: Kön
+                  href: hr-admin-integration-payroll-api-gender.md
+                - name: Nej Ja
+                  href: hr-admin-integration-payroll-api-no-yes.md
+                - name: Belöningstyp
+                  href: hr-admin-integration-payroll-api-award-type.md
+                - name: Processtyp
+                  href: hr-admin-integration-payroll-api-process-type.md
     - name: Användarhandbok
       items:
         - name: Översikt
@@ -599,6 +625,8 @@
           items:
             - name: Organisera personalen
               href: hr-personnel-departments-jobs-positions.md
+            - name: Arbetsyta för personalhantering
+              href: hr-personnel-personnel-management-workspace.md
             - name: Ställa in komponenter för ett jobb
               href: hr-personnel-jobs.md
             - name: Definiera avdelningar
@@ -607,6 +635,8 @@
               href: hr-personnel-add-department-hierarchy.md
             - name: Definiera jobb
               href: hr-personnel-define-jobs.md
+            - name: Befattningar
+              href: hr-personnel-positions.md
             - name: Skapa en arbetstidskalender
               href: hr-personnel-create-working-time-calendar.md
             - name: Rekrytera jobbkandidater
@@ -837,3 +867,69 @@
               href: hr-employee-manager-self-service-edit-personal-information.md
             - name: Begränsa redigering av personlig information
               href: hr-employee-self-service-restrict-editing.md
+        - name: Använda arbetsflödessystemet
+          items:
+            - name: Arbetsflödessystem – översikt
+              href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbetsflödessystemets arkitektur
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbetsflödeselement
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbetsflödesåtgärder
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+            - name: Skapa arbetsflöden
+              items:
+                - name: Skapa arbetsflöden – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurera arbetsflödesegenskaper
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurera manuella uppgifter
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurera automatiska uppgifter
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurera godkännandeprocesser
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurera godkännandesteg
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurera omkostnadsgranskare
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurera manuella beslut
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurera villkorliga beslut
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurera parallella aktiviteter
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurera parallella grenar
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurera arbetsflöden för radartiklar
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurera batchjobbet Meddelandebehandling i arbetsflöde som kritiskt
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+            - name: Delegera arbetsuppgifter i ett arbetsflöde
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: Visa arbetsflödeshistorik
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurera systemet för att skicka arbetsflödesrelaterad e-post till användare
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbetsflödestyper
+              items:
+                - name: Skapar en arbetsflödestyp
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Checklista för arbetsflödestyp
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa en arbetsflödeskategori
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa en fråga för en arbetsflödestyp
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa en ny arbetsflödestyp
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa en arbetsflödesdokumentklass
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa en SubmitToWorkflow-klass
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Associera en arbetsflödesdokumentklass med en arbetsflödestyp
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+            - name: Rapport för arbetsflödestyper
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+            - name: Vanliga frågor om arbetsflöde
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json

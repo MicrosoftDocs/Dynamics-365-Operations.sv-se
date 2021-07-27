@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 206434
+ms.custom:
+- "206434"
+- intro-internal
 ms.assetid: 8a6238bd-9d6f-48d9-8752-3966836364a4
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33c12fc47dc5781867ad6872a8be2a9ae1f28a2d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: a35a11430cf5a075d2e79c136d15b71d1341d5fe
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890339"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6335340"
 ---
 # <a name="finance-home-page"></a>Finance – startsida
 
@@ -38,7 +40,7 @@ Välj ett funktionsområde för att läsa mer om det.
         - [Kostnadsredovisning](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Utläggshantering](/dynamics365/project-operations/prod-exp/expense-management)
+        - [Utgiftshantering](/dynamics365/project-operations/prod-exp/expense-management)
         - [Ekonomisk rapportering](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
         - [Anläggningstillgångar](fixed-assets/fixed-assets.md)
         - [Redovisning och ekonomisk rapportering](general-ledger/general-ledger.md) 

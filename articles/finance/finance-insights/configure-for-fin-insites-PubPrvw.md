@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 613bd4816e2f0c4fbb56cf79779a08c6a09592bd
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: eeb3061f215666d0aeb32094b5d04a9ae6e618f2
+ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222622"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309675"
 ---
 # <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Konfiguration för Finance Insights för offentlig förhandsgranskning (förhandsversion) – version 10.0.20 och senare
 
@@ -33,7 +33,7 @@ ms.locfileid: "6222622"
 Ekonomiska insikter kombinerar funktioner från Microsoft Dynamics 365 Finance med Dataverse, Azure och AI Builder för att tillhandahålla kraftfulla prognosverktyg för organisationen. I detta ämne beskrivs hur du konfigurerar Dynamics 365 Finance version 10.0.20 så att ditt system kan använda de funktioner som finns i Finance Insights för allmänt tillgänglig förhandsversion.
 
 > [!NOTE]
-> Konfigurationsstegen som beskrivs i det här ämnet gäller bara för Finance version 10.0.20 och senare. "Mer information om hur du ställer in Finance Insights i version 10.0.19 och senare finns i [Konfiguration för Finance Insights – versioner upp till 10.0.18](configure-for-fin-insites.md).
+> Konfigurationsstegen som beskrivs i det här ämnet gäller bara för Finance version 10.0.20 och senare. "Mer information om hur du ställer in Finance Insights i version 10.0.19 och senare finns i [Konfiguration för Finance Insights – versioner upp till 10.0.19](configure-for-fin-insites.md).
 
 ## <a name="deploy-finance"></a>Distribuera Finance
 
@@ -748,6 +748,8 @@ Följ anvisningarna nedan för att installera tillägget Finance Insights.
 2. I avsnittet **Miljötillägg**, välj **Installera ett nytt tillägg**.
 3. Välj tillägget **Finance insights**.
 4. Godkänn villkoren och välj sedan **Installera**.
+
+Tillägget kan ta flera minuter att installera.
 
 ## <a name="feedback-and-support"></a>Feedback och support
 
