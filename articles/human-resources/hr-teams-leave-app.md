@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
-ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
+ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6097269"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356522"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Hantera begäranden om ledighet i Teams
 
@@ -61,7 +61,7 @@ Du kan be roboten att:
 
 - Påbörja en ledighetsbegäran åt dig. Skicka till exempel ett meddelande där det står: "Ta ledigt" eller "Jag vill ta semester nästa torsdag och fredag" som är mer specifik för att begära tjänstledighet för semestertypen. 
 
-  ![Starta en tjänstledighetsbegäran i Teams-chatt](./media/hr-teams-leave-app-initiate.png)
+  ![Starta en tjänstledighetsbegäran i Teams-chatten.](./media/hr-teams-leave-app-initiate.png)
 
 - Chattroboten fyller i en tjänstledighetsbegäran för dig. Välj **Begär ledig tid** och redigera informationen för din förfrågan.
 
@@ -69,11 +69,11 @@ Du kan be roboten att:
 
    Om du väljer en halvdagsledighet när tjänstledighetsenheten är i dagar, kan du ange om du vill begära ledighet från den första halvan av dagen eller den andra halvan av dagen genom att välja alternativet **Halvdagsdefinition** på menyn **Fler alternativ**.
    
-   ![Halvdagsdefinitioner](./media/HalfDayDefinitions.png)
+   ![Halvdagsdefinitioner.](./media/HalfDayDefinitions.png)
 
 - När du har redigerat informationen om din tjänstledighet väljer du **Skicka** för att skicka den för godkännande.
 
-  ![Skicka ledighetsbegäran](./media/hr-teams-leave-app-submit.png)
+  ![Skicka ledighetsbegäran.](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Hantera din ledighet i Teams
 
@@ -93,7 +93,7 @@ På fliken **Ledighet** kan du visa:
 
 2. Ange den dag eller de dagar som du vill ta ledigt och välj sedan **Lägg till**.
 
-   ![Lägg till ledighet i Personal Teams-appen för ledighet](./media/TimeOffHours.png)
+   ![Lägg till ledighet i Personal Teams-appen för tjänstledighet.](./media/TimeOffHours.png)
 
 3. Ange en orsakskod vid behov. Skriv även eventuella kommentarer och lägg till eventuella bifogade filer.
 
@@ -123,7 +123,7 @@ När du har installerat Personal-appen för Teams kan du enkelt skicka informati
 
 1. I ett team eller chatt i Teams väljer du Personal-knappen under chattfönstret.
 
-   ![Personal-knappen under chattfönstret](./media/hr-teams-leave-app-chat-button.png)
+   ![Personal-knappen under chattfönstret.](./media/hr-teams-leave-app-chat-button.png)
 
 2. Välj den begäran som du vill dela. Om du vill dela ett utkast till en ledighetsansökan väljer du **utkast** först.
 
@@ -173,11 +173,11 @@ Om översättningarna inte visas som förväntat ser du till att det språk du v
 
 I Teams, titta på **Appspråket** i **Inställningar**.
 
-![Teams-inställningar](./media/hr-teams-leave-app-settings.png)
+![Teams-inställningar.](./media/hr-teams-leave-app-settings.png)
 
 I personal, välj **Inställningar** och sedan **Användaralternativ**. Kontrollera att fältet **Språk** matchar fältet i fältet **Appspråk** i Teams.
 
-![Användaralternativ för personal](./media/hr-teams-leave-app-user-options.png)
+![Användaralternativ för personal.](./media/hr-teams-leave-app-user-options.png)
 
 Hör av dig om du fortfarande upplever översättningsproblem. Mer information finns i [Få support för Finance and Operations-appar eller Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 

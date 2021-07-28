@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2f7ad4f53917bb607afe84a2c457518c3f8f7a08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7a9507cd7f2a1612ab4063d6307b72d8522619ba
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799117"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349434"
 ---
 # <a name="recall-order-operation-in-pos"></a>Åtgärden återkalla order i POS
 
@@ -29,7 +29,7 @@ För att aktivera denna funktion, slå på funktionen **Förbättrad åtgärden 
 
 Genom att konfigurera knappen **Återkalla order** kan organisationer distribuera operationen med en fördefinierad visning.
 
-![Konfiguration av knapprutnät](media/recallorderbuttongrid.png)
+![Konfiguration av knapprutnät.](media/recallorderbuttongrid.png)
 
 Visningsalternativen är följande.
 - **Inget** – det här alternativet distribuerar åtgärden utan specifik visning. När en användare öppnar åtgärden med den här konfigurationen uppmanas de att söka efter order eller välja från ett fördefinierat orderfilter.
@@ -42,11 +42,11 @@ När du startar åtgärden **Återkalla order** från POS, om bildskärmen har k
 - Välj ikonen **Sök order** eller **Sök och filtrera** på AppBar om du vill använda filtreringsfunktionen för att söka efter order som uppfyller filtervillkoren.
 - Välj från ett fördefinierat filter på listrutan **Visa order** (order som ska uppfyllas, order som ska hämtas eller order som ska levereras).
 
-![RecallOrderMainMenu](media/recallordermain.png)
+![RecallOrderMainMenu.](media/recallordermain.png)
 
 När sökkriterier har tillämpats visas en lista med matchande försäljningsorder i programmet. Tänk på att när du använder sök-/filteralternativen behöver de hämtade orderna inte vara order som kopplas till användarens aktuella butik. Den här sökprocessen hämtar och visar alla kundorder som matchar sökkriterierna, även om ordern skapades eller skapades för att uppfyllas av en annan butik/kanal eller lagerställeplats.
 
-![RecallOrderDetail](media/orderrecalldetail.png)
+![RecallOrderDetail.](media/orderrecalldetail.png)
 
 En användare kan välja en order i listan om du vill visa mer information. Informationspanelen till höger på skärmen visar specifika uppgifter för den valda ordern, inklusive order raddetaljer, leveransinformation och information om uppfyllelse.
 

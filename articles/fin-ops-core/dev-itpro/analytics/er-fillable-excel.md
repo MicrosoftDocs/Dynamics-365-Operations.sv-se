@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1c8d939fef4fd0f9e189ca37318c2c0306511785
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 96e1575e2237cab481c368083da1e60fec612087
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893918"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359039"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Skapa en konfiguration för att generera dokument i Excel-format
 
@@ -39,7 +39,7 @@ När du lägger till en ny konfiguration för ER-format i syfte att generera ett
 
 Om du vill konfigurera ER-formatkomponenten för konfigurationen väljer du **Designer** i åtgärdsfönstret och öppnar ER-formatkomponenten för redigering i ER-åtgärdersdesignern.
 
-![Sidan Konfigurationer](./media/er-excel-format-add-format.png)
+![Sidan Konfigurationer.](./media/er-excel-format-add-format.png)
 
 ## <a name="excel-file-component"></a>Excel-filkomponent
 
@@ -47,14 +47,14 @@ Om du vill konfigurera ER-formatkomponenten för konfigurationen väljer du **De
 
 Du måste lägga till en **Excel\\fil**-komponent i det konfigurerade ER-formatet för att kunna generera ett utgående dokument i Excel-format.
 
-![Excel-\filkomponent](./media/er-excel-format-add-file-component.png)
+![Excel-\filkomponent.](./media/er-excel-format-add-file-component.png)
 
 Om du vill ange layouten för det utgående dokumentet bifogar du en Excel-arbetsbok med filnamnstillägget .xlsx till komponenten **Excel\\fil** som mall för utgående dokument.
 
 > [!NOTE]
 > När du bifogar en mall manuellt måste du använda en [dokumenttyp](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types) som har konfigurerats för detta syfte i [ER-parametrarna](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
-![Lägga till en bilaga i Excel\fil-komponenten](./media/er-excel-format-add-file-component2.png)
+![Lägga till en bilaga i Excel\fil-komponenten.](./media/er-excel-format-add-file-component2.png)
 
 Om du vill ange hur den bifogade mallen ska fyllas i när du kör det konfigurerade ER-formatet måste du lägga till kapslade **Ark-**, **Intervall-** och **Cell-** komponenter i **Excel\\fil**-komponenten. Varje kapslad komponent måste associeras med ett namngivet Excel-objekt.
 
@@ -62,7 +62,7 @@ Om du vill ange hur den bifogade mallen ska fyllas i när du kör det konfigurer
 
 Du kan välja **Importera från Excel** på fliken **Importera** i åtgärds fönstret för att importera en ny mall till ett tomt ER-format. I det här exemplet skapas en **Excel\\-fil** komponent automatiskt, och den importerade mallen kopplas till den. Alla obligatoriska ER-komponenter skapas också automatiskt, baserat på listan med Excel-objekt som upptäcks.
 
-![Välja Importera från Excel](./media/er-excel-format-import-template.png)
+![Välja Importera från Excel.](./media/er-excel-format-import-template.png)
 
 > [!NOTE]
 > Om du vill skapa det valfria **Ark**-elementet i det redigerbara ER-formatet ställer du in alternativet **Skapa formatelement för Excel-ark** som **Ja**.
@@ -79,7 +79,7 @@ På fliken **Mappning** i ER-åtgärdsdesignern kan du konfigurera egenskapen **
 - Om ett uttryck för egenskapen **Aktiverad** har konfigurerats att returnera **True** vid körning, eller om inget uttryck har konfigurerats alls, infogas lämpligt kalkylblad i det genererade dokumentet.
 - Om ett uttryck för egenskapen **Aktiverad** har konfigurerATS att returnera **False** vid körning kommer det genererade dokumentet inte att innehålla något kalkylblad.
 
-![Exempel på en ark-komponent](./media/er-excel-format-sheet-component.png)
+![Exempel på en ark-komponent.](./media/er-excel-format-sheet-component.png)
 
 ## <a name="range-component"></a>Intervall-komponent
 
@@ -182,7 +182,7 @@ Du kan välja **Uppdatera från Excel** på fliken **Importera** i åtgärdsfön
 >
 > Om det redigerbara ER-formatet ursprungligen innehöll **ark**-element rekommenderar vi att du ställer in alternativet **Skapa formatelement för Excel-kalkylblad** som **Ja** när du importerar en uppdaterad mall. I annat fall kommer alla kapslade element i det ursprungliga **ark**-elementet att skapas från grunden. Därför kommer också alla bindningar för de återskapade formatelementen att gå förlorade i det uppdaterade ER-formatet.
 
-![Alternativet Skapa formatelement för Excel-ark i dialogrutan Uppdatera från Excel](./media/er-excel-format-update-template.png)
+![Alternativet Skapa formatelement för Excel-ark i dialogrutan Uppdatera från Excel.](./media/er-excel-format-update-template.png)
 
 Om du vill veta mer om den här funktionen följer du stegen i [Ändra format för elektronisk rapportering genom att återanvända Excel-mallar](modify-electronic-reporting-format-reapply-excel-template.md).
 
@@ -190,7 +190,7 @@ Om du vill veta mer om den här funktionen följer du stegen i [Ändra format f�
 
 När du validerar ett ER-format som kan redigeras görs en konsekvenskontroll för att säkerställa att Excel-namnet finns i den Excel-mall som används för närvarande. Du får ett meddelande om eventuella inkonsekvenser. För vissa inkonsekvenser kommer alternativet att åtgärda problem automatiskt att erbjudas.
 
-![Meddelande om felvalidering](./media/er-excel-format-validate.png)
+![Meddelande om valideringsfel.](./media/er-excel-format-validate.png)
 
 ## <a name="control-the-calculation-of-excel-formulas"></a>Kontrollera beräkning av Excel-formler
 
@@ -209,7 +209,7 @@ När ett utgående dokument i ett Microsoft Excel arbetsboksformat genereras, ka
 1. Använd de angivna ER-konfigurationerna för att [generera](er-generate-printable-fti-forms.md) ett utskrivbart dokument med fritextfaktura (FTI).
 2. Granska sidfoten för det genererade dokumentet. Lägg märke till att det innehåller information om det aktuella sidnumret och det totala antalet sidor i dokumentet.
 
-    ![Granska sidfoten för ett genererat dokument i Excel-format](./media/er-fillable-excel-footer-1.gif)
+    ![Granska sidfoten för ett genererat dokument i Excel-format.](./media/er-fillable-excel-footer-1.gif)
 
 3. I ER-formatdesigner, [öppna](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) exemplet ER-format för granskning.
 
@@ -222,7 +222,7 @@ När ett utgående dokument i ett Microsoft Excel arbetsboksformat genereras, ka
 
     - Den andra komponenten **Sträng** fyller i texten som innehåller det aktuella sidnumret och det totala antalet sidor i det aktuella dokumentet.
 
-    ![Granska sidfoten ER-formatkomponenten på sidan Formatdesigner](./media/er-fillable-excel-footer-2.png)
+    ![Granska ER-formatkomponenten för sidfot på sidan Formatdesigner.](./media/er-fillable-excel-footer-2.png)
 
 4. Anpassa exempelformatet för ER för att ändra den aktuella sidfoten:
 
@@ -237,14 +237,14 @@ När ett utgående dokument i ett Microsoft Excel arbetsboksformat genereras, ka
         1. Lägg till en **Sträng** komponent som justerar bearbetningsdatumet till höger och presenterar det i åtta punkter "Segoe UI Regular" teckensnitt (**"&R&"Segoe UI,Vanlig"&8"**).
         2. Lägg till en **Sträng** komponent som fyller i bearbetningsdatumet i ett anpassat format (**"&nbsp;"&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**).
 
-        ![Granska sidfoten ER-formatkomponenten på sidan Formatdesigner](./media/er-fillable-excel-footer-3.png)
+        ![Granska ER-formatkomponenten för sidfot på sidan Formatdesigner.](./media/er-fillable-excel-footer-3.png)
 
     4. [Slutför](er-quick-start2-customize-report.md#CompleteDerivedFormat) utkastversionen av den härledda **fritextfakturan (Excel) anpassade** ER-format.
 
 5. [Konfigurera](er-generate-printable-fti-forms.md#configure-print-management) utskriftshantering för att använda det härledda **fritextfakturan (Excel) anpassade** ER-format istället för ER-exempelformatet.
 6. Generera ett utskrivbart FTI-dokument och granska sidfoten för det genererade dokumentet.
 
-    ![Granska sidfoten för ett genererat dokument i Excel-format](./media/er-fillable-excel-footer-4.gif)
+    ![Granska sidfoten för ett genererat dokument i Excel-format.](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

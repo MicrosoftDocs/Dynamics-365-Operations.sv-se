@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f3bc63fd4b1017a5c96116ff6c9bbcc387869927
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b579ebff28e01caa727a22b01ae636ff713a27aa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825288"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359967"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Förbättringar i inköps-cXML
 
@@ -38,7 +38,7 @@ När du har aktiverat funktionen bör du konfigurera inställningar i följande 
 
 I bilden nedan sammanfattas den här konfigurationen.
 
-![Områden för inställning av cXML-funktioner](media/cxml-settings-areas.png "Områden för inställning av cXML-funktioner")
+![Områden för inställning av cXML-funktioner.](media/cxml-settings-areas.png "Områden för inställning av cXML-funktioner")
 
 Du måste dessutom ställa in [Batch-jobbet inköpsorder förfrågan](#po-batch). Det här batch-jobbet används för att skicka bekräftade inköpsorder.
 
@@ -46,7 +46,7 @@ Du måste dessutom ställa in [Batch-jobbet inköpsorder förfrågan](#po-batch)
 
 Använd **cXML-parametrar** för att göra några globala inställningar som gäller för funktionaliteten för att skicka inköpsorder.
 
-![cXML-parametersida](media/cxml-parameters.png "cXML-parametersida")
+![cXML-parametersida.](media/cxml-parameters.png "cXML-parametersida")
 
 Gå till **Anskaffning och källa \> inställningar \> cXML-hantering \> cXML-parametrar** och ange följande parametrar:
 
@@ -67,7 +67,7 @@ Varje gång du bekräftar en inköpsorder där alternativet **Skicka inköps ord
 - Om du vill ställa in en leverantör så att den automatiskt använder cXML för alla nya inköpsorder som skapas från en rekvisition, gå till **Anskaffning och källa \> Leverantörer \> Alla leverantörer** och välj eller skapa en leverantör för att öppna sidan med information om sidan. På snabbfliken **Standardvärden för inköpsorder** anger du alternativet **Skicka inköpsorder via cXML** till _Ja_. Om cXML även ska användas automatiskt för nya inköpsorder som **inte** skapas från en rekvisition, måste du också ställa in egenskapen **ENABLEMANUALPO** till _True_ för den relaterade externa katalogen, enligt beskrivningen i [Ange orderegenskaper](#set-order-properties) senare i det här avsnittet.
 - För enskilda inköpsorder går du till **Anskaffning och källa \> Inköpsorder \> Alla inköpsorder** och väljer eller skapar en inköpsorder för att öppna sidan information om den. Växla till vyn **Huvud** och sedan på snabbfliken **Inställningar** ange alternativet **Skicka inköpsorder via cXML** efter behov.
 
-![Standardinställningar för inköpsorder för leverantör](media/cxml-order-defaults.png "Standardinställningar för leverantörs inköpsorder")
+![Standardinställningar för inköpsorder för leverantör.](media/cxml-order-defaults.png "Standardinställningar för leverantörs inköpsorder")
 
 ## <a name="set-up-an-external-catalog-to-use-cxml"></a><a name="external-catalog-setup"></a>Ställ in en extern katalog till att använda cXML
 
@@ -76,7 +76,7 @@ På sidan **Externa kataloger**, för varje katalog, kan du ställa in funktione
 > [!NOTE]
 > När du bekräftar en inköpsorder som kan skickas via cXML, letar systemet upp den leverantör som är kopplad till inköpsordern och söker sedan efter den första aktiva externa katalogen som är kopplad till leverantören. Därefter använder systemet de inställningar från den externa katalogen för att skicka inköpsordern. Om flera externa kataloger har ställts in, använder systemet bara den första externa katalogen som den hittar, baserat på leverantören på inköpsordern. Därför rekommenderar vi att du skapar en enda extern katalog för varje leverantör.
 
-![Inställningar för extern katalog](media/cxml-supplier-catalog.png "Inställningar för extern katalog")
+![Inställningar för extern katalog.](media/cxml-supplier-catalog.png "Inställningar för extern katalog")
 
 ### <a name="set-the-punchout-protocol-type"></a>Ange protokolltyp för PunchOut
 
@@ -143,11 +143,11 @@ Som nämnts i avsnittet [Ange orderegenskaper](#set-order-properties) om du vill
 
 Om du vill ange vilka typer av anteckningar som systemet ska söka efter går du till **Anskaffning och källa \> Inställningar \> Formulär \> Från inställning**. Sedan på fliken **Inköpsorder** anger du fältet **Inkludera dokument av typen** den typ av notering som du vill kunna ta med. Endast textanteckningar kommer att inkluderas, inte bifogade dokument.
 
-![Formulär inställningssida](media/cxml-form-setup.png "Formulär inställningssida")
+![Inställningssida för formulär.](media/cxml-form-setup.png "Formulär inställningssida")
 
 Bilagor ingår endast i en inköpsorder om deras fält **Typ** anges till värdet du har valt i fältet **Inkludera dokument av typen** och om deras fält **Begränsning** anges till _Extern_. Gå till om du vill skapa, visa eller redigera bilagorna för en inköpsorder **Anskaffning och källa \> Alla inköpsorder**, väljer eller skapar du en inköpsorder och markerar sedan knappen **Bifogade filer** (gemsymbol) i det övre högra hörnet.
 
-![Kopplad notering som har ställts in för att skickas till en leverantör](media/cxml-note-to-vendor.png "Kopplad notering som har ställts in för att skickas till en leverantör")
+![Kopplad anteckning som har konfigurerats att skickas till en leverantör.](media/cxml-note-to-vendor.png "Kopplad notering som har ställts in för att skickas till en leverantör")
 
 ## <a name="view-the-cxml-cart-message-log-for-external-catalog-punchout"></a><a name="message-log"></a>Visa meddelandelogg för cXML-kundvagn för extern katalog PunchOut
 
@@ -155,7 +155,7 @@ När du ställer in fältet **PunchOut-protokolltyp** till _cXML_ för en extern
 
 Om du vill öppna loggen för en extern katalog väljer du relevant katalog och väljer sedan **meddelandelogg för cXML-kundvagn** i åtgärdsfönstret. Sidan **meddelandelogg för cXML-kundvagn** visas en lista över de kundvagnar som har returnerats, den XML som är relaterad till dessa vagnar och de rader som har skapats på den relaterade inköpsrekvisitionen.
 
-![Sidan meddelandelogg för cXML-kundvagn](media/cxml-cart-message-log.png "Sidan meddelandelogg för cXML-kundvagn")
+![Sida för meddelandelogg för cXML-kundvagn.](media/cxml-cart-message-log.png "Sidan meddelandelogg för cXML-kundvagn")
 
 ## <a name="set-the-extrinsic-elements-for-external-catalog-punchout"></a>Ange extrinsic-element för externa katalog PunchOut
 
@@ -178,21 +178,21 @@ Om du vill lägga till extrinsic-element i en extern katalog följer du stegen n
         - **Efternamn** – Ange efternamnet på den kontaktperson som är kopplad till användaren som använder den externa katalogen.
         - **Telefonnummer** – Ange det primära telefonnumret på den kontaktperson som är kopplad till användaren som använder den externa katalogen.
 
-![Extrinsic-elementinställningar](media/cxml-extrinsics.png "Extrinsic-elementinställningar")
+![Extrinsic-elementinställningar.](media/cxml-extrinsics.png "Extrinsic-elementinställningar")
 
 Användaren eller administratören ser inte extrinsic-elementen eftersom de inte läggs till förrän användaren har en PunchOut. De infogas automatiskt mellan **BuyerCookie** och **BrowserFromPost**-elementen i begärandemeddelandet för cXML-inställning. Därför behöver du inte ställa in dem manuellt i XML-filen när du ställer in den externa katalogen.
 
-![Extrinsic-element har lagts till i XML](media/cxml-extrinsics-xml.png "Extrinsic-element har lagts till i XML")
+![Extrinsic-element har lagts till i XML.](media/cxml-extrinsics-xml.png "Extrinsic-element har lagts till i XML")
 
 ## <a name="create-and-process-a-purchase-order"></a><a name="create-po"></a>Skapa och behandla en inköpsorder
 
 När du skapar en inköpsorder för en leverantör ärver den inställningen för alternativet **Skicka inköpsorder via cXML** från leverantören. Inställningen finns emellertid kvar på snabbfliken **Inställningar** i vyn **Rubrik** på inköpsordern, så att du kan ändra den senare efter behov.
 
-![Inköpsorder inställd för att använda cXML](media/cxml-purchase-order.png "Inköpsorder inställd för att använda cXML")
+![Inköpsorder inställd att använda cXML.](media/cxml-purchase-order.png "Inköpsorder inställd för att använda cXML")
 
 När du skapar en inköpsorder från en inköpsrekvisition som kom från ett PunchOut-flöde fylls all nödvändig radinformation i. Därefter kan du manuellt lägga till inköpsorderrader eller kopiera dem från andra inköpsorder. Var noga med att ange alla obligatoriska fält. Dessa obligatoriska fält innehåller det externa referensnumret, som är det leverantörsnummer som kommer att användas i cXML-meddelandet.
 
-![Exempel på ett externt referensnummer](media/cxml-line-details.png "Exempel på ett externt referensnummer")
+![Exempel på ett externt referensnummer.](media/cxml-line-details.png "Exempel på ett externt referensnummer")
 
 När du har fyllt i all information om inköpsordern måste du bekräfta den. Inget meddelande skickas om inte inköpsordern bekräftas. För att bekräfta en inköpsorder, i åtgärdsfönstret på fliken **Inköp** i gruppen **Åtgärder**, välj **Bekräfta**. 
 
@@ -200,17 +200,17 @@ När inköpsordern har bekräftats kan du visa bekräftelsens status genom journ
 
 Varje inköpsorder kan ha många bekräftelser. Varje bekräftelse markeras med ett inkrementellt nummer. I bilden nedan är inköpsordern *00000275* och bekräftelsen är *00000275-1*. Denna numrering visar standardfunktionen för Supply Chain Management, där ändringar i en inköpsorder och därför vilken typ av cXML-meddelande som ska skickas till leverantören, identifieras utifrån bekräftelsen. Som illustrationen visar innehåller sidan **Bekräftelser av inköpsorder** även fälten **Status för skicka order** och **Leverantörsstatus för orderförfrågan**. För mer information om de olika statusvärdena som du kan se på den här sidan, se avsnittet [Övervaka inköpsorderförfrågningar](#monitor-po-requests) senare i detta avsnittet.
 
-![Sidan bekräftelser av inköpsorder](media/cxml-po-confirmations.png "Sidan bekräftelser av inköpsorder")
+![Bekräftelsesida för inköpsorder.](media/cxml-po-confirmations.png "Sidan bekräftelser av inköpsorder")
 
 Om du vill visa mer information om dokumentet väljer du **begäran om inköpsorder** ovanför rutnätet.
 
 Sidan **Förfrågan om inköpsorder** innehåller två rutnät. Rutnätet i den övre delen av sidan har en post för varje inköpsorder som har markerats för sändning. Rutnätet på fliken **Historik för förfrågan om inköpsorder** i nedre delen av sidan kan ha flera poster för den valda inköpsordern för att ange status för varje bekräftelse. Följande bild visar inköpsorder 00000275 i det övre rutnätet och dokument 00000275-1 i rutnätet på fliken **Historik för förfrågan om inköpsorder**.
 
-![Sidan förfrågan om inköpsorder](media/cxml-po-request.png "Sidan förfrågan om inköpsorder")
+![Sidan Förfrågan om inköpsorder.](media/cxml-po-request.png "Sidan förfrågan om inköpsorder")
 
 Om batch-jobbet har ställts in och körs kommer dokumentet att skickas. Du kan visa statusändringen när dokumentet har skickats. I följande bild anges fältet **Status för skicka order** till _Skicka_. Fältet **Leverantörsstatus för orderförfrågan** anges _bekräftad_ för att ange att säljaren fick dokumentet och kunde läsa det och lagra det i sitt system. Rutnätet på fliken **Historik för inköpsorderförfrågan** visar vilken tid dokumentet skickades. För mer information om de olika statusvärdena som du kan se på den här sidan, se avsnittet [Övervaka inköpsorderförfrågningar](#monitor-po-requests).
 
-![Statusmeddelanden på sidan för begäran om inköpsorder](media/cxml-po-request-2.png "Statusmeddelanden på sidan för begäran om inköpsorder")
+![Statusmeddelanden på sidan för begäran om inköpsorder.](media/cxml-po-request-2.png "Statusmeddelanden på sidan för begäran om inköpsorder")
 
 ## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>Tidsplanera batch-jobbet för begäran om inköpsorder
 
@@ -226,7 +226,7 @@ Processen söker efter förfrågningsdokument för inköpsorder med statusen *v�
 
 När order som kan skickas via cXML bekräftas hamnar de i statusen _väntar_. Som beskrivs i avsnittet [Skapa och bearbeta en inköpsorder](#create-po) kan du visa inköpsorderns status på sidan för **Förfrågan om inköpsorder**. Varje begäran om inköpsorder kan ha en av flera statusvärden, beroende på dess parametrar och data. I det här avsnittet beskrivs olika statustyper och vilka värden de kan ha. Den här informationen kan hjälpa dig att hantera ärenden och förstå statusen på dina inköpsorder.
 
-![Inköpsorderstatus på sidan för begäran om inköpsorder](media/cxml-monitor-po-request.png "Inköpsorderstatus på sidan för begäran om inköpsorder")
+![Inköpsorderstatus på sidan för begäran om inköpsorder.](media/cxml-monitor-po-request.png "Inköpsorderstatus på sidan för begäran om inköpsorder")
 
 Rutnätet i den övre delen av sidan **Förfrågan om inköpsorder** kan visa följande statusvärden:
 
@@ -262,13 +262,13 @@ Rutnätet på fliken **Historik för inköpsorderförfrågan** i den nedre delen
 
 Om du vill visa XML för meddelande om inköpsorderförfrågan, välj fliken **Begär XML-text** på sidan för **inköpsorderförfrågan**. Informationen på den här fliken kan vara till hjälp vid testning eller felvalidering. För att informationen ska bli lättare att läsa kan du visa den som ett formaterat meddelande. Kopiera innehållet på fliken till en textfil och visa den i en XML-redigerare.
 
-![Fliken begär XML-text](media/cxml-request-xml-text.png "Fliken begär XML-text")
+![Fliken Begär XML-text.](media/cxml-request-xml-text.png "Fliken begär XML-text")
 
 ### <a name="view-the-details-of-the-vendor-response"></a>Visa mer information om leverantörens svar
 
 Om du vill visa innehållet i en leverantörsbekräftelse eller ett fel svar väljer du fliken **svars-XML** längst ned på sidan **Förfrågan om inköpsorder**.
 
-![Fliken svars-XML](media/cxml-response-xml.png "Fliken svars-XML")
+![Fliken XML-svar.](media/cxml-response-xml.png "Fliken svars-XML")
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

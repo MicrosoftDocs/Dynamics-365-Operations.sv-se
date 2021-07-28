@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3f3a02a369cab34b965b2443bb77053377a190e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838140"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353382"
 ---
 # <a name="work-policies"></a>Arbetspolicyer
 
@@ -200,7 +200,7 @@ Inköpsordern tas nu emot, men inget arbete associeras med den. Lagerbehållning
 
 I följande exempel finns det två produktionsorder *PRD-001* och *PRD-002*. Produktionsorder *PRD-001* har en åtgärd med namnet *Sammansättning*, där produkten *SC1* rapporterats som färdig till plats *001*. Produktionsorder *PRD-002* har en åtgärd med namnet *Målar* och förbrukar produkten *SC1* från platsen *001*. Produktionsorder *PRD-002* förbrukar även råmaterial *RM1* från platsen *001*. Råmaterial *RM1* lagras på lagerställeplats och *BULK-001* plockas till platsen *001* av lagerställets arbetsuppgift för plockning av råmaterial. Plockningsarbetet skapas när produktion *PRD-002* frisläpps.
 
-[![Policyer för distributionslagerarbete](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+[![Policyer för distributionslagerarbete.](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 När du planerar att konfigurera en arbetspolicy för detta scenario på lagerstället, bör du beakta följande punkter:
 

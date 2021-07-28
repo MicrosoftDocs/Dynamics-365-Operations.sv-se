@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103579"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359373"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Inställning av dubbelriktad skrivning från Lifecycle Services
 
@@ -40,7 +40,7 @@ Följ dessa steg när du vill ställa in dubbelriktad skrivning från LCS **milj
 
 2. Välj knappen **dubbelriktad skrivning för app**.
 
-    ![Power Platform-integration](media/powerplat_integration_step2.png)
+    ![Power Platform-integrering.](media/powerplat_integration_step2.png)
 
 3. Granska villkoren och markera sedan **Konfigurera**.
 
@@ -52,7 +52,7 @@ Följ dessa steg när du vill ställa in dubbelriktad skrivning från LCS **milj
 
 7. Välj **Länk till Power Platform miljö** om du vill skapa en länk mellan Dataverse och den aktuella miljöns databaser. Detta tar normalt mindre än 5 minuter.
 
-    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Länka till Power Platform miljö":::
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Länk till Power Platform-miljö.":::
 
 8. När länkningen är slutförd visas en hyperlänk. Använd länken för att logga in på administrationsområdet för dubbelriktad skrivning i Finance and Operations-miljön. Därifrån kan du ställa in enhetsmappningar.
 

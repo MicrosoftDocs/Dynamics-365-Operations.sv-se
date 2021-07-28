@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 413be634e80b87781444e1c1445c78691f4b4b0b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: d152449b55ab111cf5bac363b38d32c3658a56e3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944302"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359421"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Återanvända ER-konfigurationer med Excel-mallar för att generera rapporter i Word-format
 
@@ -54,14 +54,14 @@ Procedurerna gäller för en funktion som lagts till Dynamics 365 for Operations
 5. Välj **Designer**.
 6. På sidan **Formatdesigner**, lägg märke till att titeln på rotformatelementet anger att en Excel-mall för närvarande används.
 
-![Markera den befintliga konfigurationen](../media/er-design-configuration-word-2016-11-image01.gif)
+![Markera den befintliga konfigurationen.](../media/er-design-configuration-word-2016-11-image01.gif)
 
 ## <a name="review-the-downloaded-word-template"></a>Granska den hämtade Word-mallen
 
 1. I Word-skrivbordsprogrammet, öppna mallfilen **SampleVendPaymDocReport.docx** som du hämtat tidigare.
 2. Verifiera att mallen endast innehåller layouten i det dokument som vi vill generera som ER-utdata.
 
-![Word-malllayout i skrivbordsprogrammet](../media/er-design-configuration-word-2016-11-image02.png)
+![Layout för Word-mall i skrivbordsprogrammet.](../media/er-design-configuration-word-2016-11-image02.png)
 
 ## <a name="replace-the-excel-template-with-the-word-template-and-add-a-custom-xml-part"></a>Ersätt Excel-mallen med Word-mallen och lägg till en anpassad XML-kod
 
@@ -84,7 +84,7 @@ För närvarande används Excel-dokumentet som en mall för att skapa utdata i O
 
 9. Observera att titeln på rotformatelementet anger att en Word-mall för närvarande används.
 
-    ![Ersätt Excel-mallen med Word-mallen och lägg till en anpassad XML-kod](../media/er-design-configuration-word-2016-11-image03.gif)
+    ![Ersätta Excel-mallen med Word-mallen och lägga till en anpassad XML-del.](../media/er-design-configuration-word-2016-11-image03.gif)
 
 10. Välj **bifogade filer** på fliken **format**.
 
@@ -110,7 +110,7 @@ Om du känner till processen att utforma Word-dokument som formulär som innehå
 1. I Word-skrivbordsprogrammet, öppna mallfilen **SampleVendPaymDocReportBounded.docx**.
 2. Verifiera att mallen innehåller layouten i det dokument som vi vill generera som ER-utdata. Innehållskontrollerna som används som platshållare för data som ER kommer att ange i den här mallen vid körning är baserade på mappningarna som är konfigurerade mellan elementen i den anpassade **Rapport** XML-koden och innehållskontrollerna i Word-dokumentet.
 
-![Förhandsgranska Word-mall i skrivbordsprogrammet](../media/er-design-configuration-word-2016-11-image04.png)
+![Förhandsversin av Word-mall i skrivbordsprogrammet.](../media/er-design-configuration-word-2016-11-image04.png)
 
 ## <a name="upload-the-word-template-where-the-custom-xml-part-is-mapped-to-content-controls"></a>Överför Word-mallen där den anpassade XML-koden mappas till innehållskontroller
 
@@ -144,7 +144,7 @@ Om du vill köra utkastversionen för det redigerbara formatet måste du göra d
 3. På sidan **Leverantörsbetalningar** markera alla rader i rutnätet.
 4. Välj **betalningsstatus** \> **ingen**.
 
-    ![Betalningar för bearbetning på sidan Leverantörsbetalningar](../media/er-design-configuration-word-2016-11-image05.png)
+    ![Betalningar för bearbetning på sidan Leverantörsbetalningar.](../media/er-design-configuration-word-2016-11-image05.png)
 
 5. Välj **Generera betalningar** i åtgärdsfönstret.
 6. Gör följande i dialogrutan som visas:
@@ -156,7 +156,7 @@ Om du vill köra utkastversionen för det redigerbara formatet måste du göra d
 7. I dialogrutan **Parametrar för elektronisk rapportering** väljer du **OK**.
 8. De skapade utdata visas i Word-format och innehåller information om de behandlade betalningarna. Analysera den skapade utleveransen.
 
-    ![Genererad utdata i Word-format](../media/er-design-configuration-word-2016-11-image06.png)
+    ![Genererade utdata i Word-format.](../media/er-design-configuration-word-2016-11-image06.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

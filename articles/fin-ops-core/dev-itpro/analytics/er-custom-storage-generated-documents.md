@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ca50f030e67e517a227766f6a30d4bd4b345300b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 424917f98ec7c4c044fb5cdae78133d1529aefd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894134"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348174"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Ange en anpassad lagringsplats för skapade dokument
 
@@ -39,7 +39,7 @@ Du måste också ha tillgång till utvecklingsmiljön för den här topologin.
 
 I den aktuella topologin [skapa ett nytt ER-format](tasks/er-format-configuration-2016-11.md) för att skapa dokument som du vill lägga till en egen lagringsplats för. Alternativt kan du [importera ett befintligt ER-format till den här topologin](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Formatdesignersida](media/er-extend-file-storages-format.png)
+![Formatdesignersida.](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > ER-formatet du skapar eller importerar måste innehålla minst ett av följande formatelement:
@@ -58,7 +58,7 @@ Om du vill ange hur dokument som ett ER-format genereras skickas, måste du konf
 3. I fältet **klass** anger du **bifoga fil**.
 4. I fältet **grupp** anger du **fil**.
 
-![Sida för dokumenttyper](media/er-extend-file-storages-document-type.png)
+![Sida för dokumenttyper.](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > Dokumenttyper är företagsspecifika. Om du vill använda ett ER-format med en konfigurerad destination i flera företag, måste du konfigurera en separat dokumenttyp i varje företag.
@@ -113,14 +113,14 @@ Händelsen **AttachingFile()** utlöses när följande ER-destinationer bearbeta
 - **Arkivera** – när denna destination används skapas en ny post för ER-formatet i tabellen ERFormatMappingRunJobTable. Fältet **arkiverade** i den här posten har tilldelats **falsk**. Om ER-formatet körs korrekt, kommer det genererade dokumentet kopplas till denna post och händelsen **AttachingFile()** utlöses. Dokumenttypen som väljs i ER-destinationen bestämmer lagringsplats för den bifogade filen (Microsoft Azure lagring eller en Microsoft SharePoint-mapp).
 - **Jobbarkiv** – när denna destination används skapas en ny post för ER-formatet i tabellen ERFormatMappingRunJobTable. Fältet **arkiverade** i den här posten har tilldelats **sant**. Om ER-formatet körs korrekt, kommer det genererade dokumentet kopplas till denna post och händelsen **AttachingFile()** utlöses. Dokumenttypen som konfigureras i ER-parametrarna bestämmer lagringsplats för den bifogade filen (Azure lagring eller en SharePoint-mapp).
 
-![Sida för parametrar för elektronisk rapportering](media/er-extend-file-storages-parameters.png)
+![Sida för parametrar för elektronisk rapportering.](media/er-extend-file-storages-parameters.png)
 
 ## <a name="configure-an-er-destination"></a>Konfigurera ER-destination
 
 1. Konfigurera arkiverade destinationen för en av de ovan nämnda elementfilerna (fil, mapp, sammanslagning eller bilaga) för ER-formatet som du skapat eller importerat. Instruktioner finns i [ER konfigurera destinationer](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Använd den dokumenttyp som du lagt till tidigare konfigurerade destinationen. (I exemplet i det här avsnittet är dokumenttypen **FileX**.)
 
-![Dialogruta för destinationsinställningar](media/er-extend-file-storages-destination.png)
+![Dialogruta för målinställningar.](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Modifiera källkod
 

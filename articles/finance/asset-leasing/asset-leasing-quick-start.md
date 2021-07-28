@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 4464
+ms.custom:
+- "4464"
+- intro-internal
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f0d39e5a3a1a70f57d305da67e160b0b20cedf4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892443"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360746"
 ---
 # <a name="asset-leasing-get-started"></a>Kom i gång med tillgångsleasing
 
@@ -35,7 +37,7 @@ Mer information om redovisningsstandarder finns i standarddokumentationen för I
 ## <a name="asset-leasing-elements"></a>Element för leasing av tillgångar
 I bilden nedan visas huvudelementen i affärsprocessen för leasingavtal.
 
-[![Element för leasing av tillgångar](./media/overview-01.png)](./media/overview-01.png)
+[![Element för leasing av tillgångar.](./media/overview-01.png)](./media/overview-01.png)
 
 En leasad tillgång innehåller följande huvudkomponenter:
 
@@ -54,7 +56,7 @@ Kartor för leasing av tillgångar, leasinginformation, betalningsplaner, start-
 
 Följande diagram visar leasingboken, leasingavtalet, beräknad betalningsplan, klassificeringstesterna för leasing och leasingböcker samt motsvarande redovisningstransaktioner.
 
-[![Leasing, leasingbok och betalningsplan](./media/overview-02.png)](./media/overview-02.png)
+[![Leasing, leasingbok och betalningsplan.](./media/overview-02.png)](./media/overview-02.png)
 
 - **Leasingbok** – leasingboken innehåller all information om leasingavtalet, t.ex. leasingvillkor, verkligt värde och leasingbetalningar. Den innehåller också redovisningsstandarden som du följer, leasingtypen och tröskelvärdena som beaktas i leasingklassificeringstestet. Leasingboken innehåller också de leasingtransaktioner som bokförts i redovisningen. 
   
@@ -117,7 +119,7 @@ Den första perioden börjar med period noll om annuitetstypen är förfallodatu
 
 Klassificeringstest omfattar överföring av ägarskap, inköpsalternativ, leasingperiod, nuvarande nettovärdet och unik tillgång. I följande diagram illustreras testerna av leasingklassificeringen.
 
-[![Test av leasingklassificering](./media/overview-03.png)](./media/overview-03.png)
+[![Test av leasingklassificering.](./media/overview-03.png)](./media/overview-03.png)
 
 Varje leasingtyp hanterar redovisningen på olika sätt för olika leasingtransaktioner. Transaktionerna inkluderar initial bokföring, räntekostnad, förfallen leasingbetalning och leasingavskrivning och de baseras på följande redovisningsstandarder (IFRS 16 eller ASC 842). Redovisningskonton definieras under leasingbokföringsprofilen för varje transaktionstyp och redovisningsramverk.
 
@@ -232,7 +234,7 @@ Gör på följande sätt om du vill skapa en ny leasing.
 
    På sidan **Betalningsplan** visas framtida betalningsplaner för ett leasing-ID. Välj **Bekräfta plan** om du vill kunna bokföra transaktionerna för **första redovisningen**. 
 
-[![Funktionen första redovisningen](./media/overview-13.png)](./media/overview-13.png)
+[![Funktionen för första redovisning.](./media/overview-13.png)](./media/overview-13.png)
 
 8. Välj **första redovisningstillfället** för att skapa journalen för första redovisningstillfället. 
 
@@ -246,7 +248,7 @@ Gör på följande sätt om du vill skapa en ny leasing.
 
    Sidan **avskrivningsplan för tillgången** visar avskrivningstransaktioner för valt leasing-ID. 
 
-   [![Sida för ROU transaktioner för tillgång](./media/overview-20.png)](./media/overview-20.png)
+   [![Sida för tillgång med nyttjanderätt.](./media/overview-20.png)](./media/overview-20.png)
 
    Sidan **ROU transaktioner för tillgång** anger första redovisningstillfället, ackumulerad avskrivning och tillgångens saldo. 
 

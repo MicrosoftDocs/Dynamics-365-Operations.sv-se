@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 147388d5052bd14851bbddfbb7fe25297a43f104
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 861899e4cd7565309ba513408346912642b7fa9a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102984"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354915"
 ---
 # <a name="create-maintenance-requests"></a>Skapa underhållsbegäranden
 
@@ -52,7 +52,7 @@ Avsnittet **aktiva underhållsbegäran** i rutan **relaterad information** till 
 11. I fältet **noteringar** anger du eventuella ytterligare noteringar som krävs.
 12. Välj **OK**.
 
-![Skapa underhållsbegäran](media/03-manage-maintenance-requests.png)
+![Skapa underhållsbegäran.](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Efterföljande behandling av underhållsbegäran
 
@@ -67,7 +67,7 @@ I informationsvyn kan du uppdatera olika information. Nedan följer några exemp
 - Välj en typ av underhållsjobb och, om denna information är relevant, en relaterad underhållsjobbvariant och en jobbhandel.
 - Ange geografiska koordinater i fälten **latitud** och **longitud**. Alla koordinater som läggs till i en underhållsbegäran överförs automatiskt till en relaterad arbetsorder. 
 
-![Uppdatera underhållsbegäran](media/04-manage-maintenance-requests.png)
+![Uppdatera underhållsbegäran.](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Om du väljer en tillgång när du skapar en underhållsbegäran kan du lägga till ett fel till tillgången. När underhållsbegäran har skapats kan du lägga till fler fel, som du behöver. Om du vill lägga till fel väljer du **tillgångsfel** på sidan **alla underhållsbegäran**.

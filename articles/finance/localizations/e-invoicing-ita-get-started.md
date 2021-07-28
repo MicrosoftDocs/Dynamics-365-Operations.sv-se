@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 140977a6eac145f35870d3516a4b0d0c794afe4b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 8bbb78f0b20ec12fe59dfb3c656b3177b2464004
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894787"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356087"
 ---
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>Kom i gång med e-fakturering för Italien
 
@@ -59,7 +61,7 @@ Under RCS-inställningar ska du utföra följande uppgifter:
 
 4. Välj funktionen **export av e-fakturor (IT)** och välj sedan **Importera**.
 
-![Importera funktionen export av e-fakturor (IT)](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
+![Importera funktionen för export av e-fakturor (IT).](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
 
 När du importerar funktionen **exportera e-fakturor (IT)** från den globala databasen, importeras även alla inställningar som beskrivs i de följande avsnitten.
 
@@ -67,13 +69,13 @@ När du importerar funktionen **exportera e-fakturor (IT)** från den globala da
 
 1. På sidan **e-faktureringsfunktioner** på fliken **Versioner** välj Ändra status **Ny**. 
 
-    ![Lägger till en ny version av e-faktureringsfunktion](media/e-Invoicing-services-get-started-ITA-Select-New-e-Invoicing-feature-version.png)
+    ![Lägga till en ny version av e-faktureringsfunktionen.](media/e-Invoicing-services-get-started-ITA-Select-New-e-Invoicing-feature-version.png)
 
     Därefter ska du konfigurera formaten för elektronisk rapportering (ER) som är kopplade till e-faktureringsfunktionen.
 
 2. På fliken **Konfigurationer** välj **Lägg till** för att hantera konfigurationsversionerna.
 
-    ![Hantera konfigurationsversioner av e-faktureringsfunktion](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-configurations.png)
+    ![Hantera konfigurationsversioner av e-faktureringsfunktionen.](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-configurations.png)
 
     I det här steget ska du lägga till och konfigurera ER-formaten för olika filer som används för att exportera italienska e-fakturor. För italienska FatturaPA e-fakturor använder du antingen följande standardkonfigurationer eller de anpassade konfigurationerna som du använder för e-fakturering:
 
@@ -85,17 +87,17 @@ När du importerar funktionen **exportera e-fakturor (IT)** från den globala da
 3. Välj en specifik konfiguration för ER-formatfil.
 4. Välj **Redigera** eller **Visa** för att öppna sidan **Formatdesigner**.
 
-    ![Öppna sidan Formatdesigner](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
+    ![Öppna sidan Formatdesigner.](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
 
 5. Använd sidan **Formatdesigner** för att redigera och visa filkonfigurationerna i ER-format.
 
-    ![Formatdesignersida](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
+    ![Formatdesignersida.](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Hantera inställningen för e-faktureringsfunktionen
 
 - på sidan **e-faktureringsfunktioner** på fliken **Inställningar** välj **Lägg till**, **Ta bort** eller **Redigera** för att hantera inställningsfunktionen för e-fakturering.
 
-![Hantera inställningen för e-faktureringsfunktionen](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
+![Hantera konfigurationer för e-faktureringsfunktionen.](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
 
 I det här steget konfigurerar du de händelser som gäller för elektroniska fakturor, inklusive generering av XML-utdatafilerna i **FatturaPA**-format och digital signering (om det behövs).
 
@@ -105,20 +107,20 @@ I det här steget konfigurerar du de händelser som gäller för elektroniska fa
 2. Välj **Redigera**.
 3. På sidan **Inställning av funktionsversion** välj fliken **Åtgärder** för att hantera listan med åtgärder. Åtgärder definierar en lista med operationer som måste köras i en sekventiell ordning för att händelsen ska kunna utföras.
 
-    ![Fliken åtgärder](media/e-Invoicing-services-get-started-ITA-Select-Actions.png)
+    ![Fliken Åtgärder.](media/e-Invoicing-services-get-started-ITA-Select-Actions.png)
 
     | Åtgärds-ID | Namn på åtgärd        | Åtgärdsbeskrivning                                     |
     |-----------|--------------------|--------------------------------------------------------|
-    | 1         | Transformera dokument | Skapa e-fakturans XML-fil i formatet **FatturaPA**. |
+    | 1         | Omvandla dokument | Skapa e-fakturans XML-fil i formatet **FatturaPA**. |
     | 2         | Signera dokument      | Använd en digital signatur i XML-filen.             |
 
 4. Välj fliken **tillämplighetsregler** om du vill visa och underhålla tillämplighetsreglerna. Tillämplighetsregler definierar i vilket sammanhang åtgärden ska köras.
 
-    ![Fliken tillämplighetsregler](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
+    ![Fliken Tillämplighetsregler.](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
 
 5. Välj fliken **Variabler** om du vill visa och underhålla variablerna.
 
-    ![Fliken Variabler](media/e-Invoicing-services-get-started-ITA-Select-Variables.png)
+    ![Fliken Variabler.](media/e-Invoicing-services-get-started-ITA-Select-Variables.png)
 
 6. Definiera de offentliga variabler som krävs för att köra åtgärderna.
 
@@ -133,7 +135,7 @@ Stegen och inställningarna som krävs för att konfigurera funktionsinställnin
 3. I fältet **gäller från** väljer du det datum då miljön ska börja gälla.
 4. Välj **Aktivera**. 
 
-![Aktivera en e-faktureringsmiljö](media/e-Invoicing-services-get-started-ITA-Enable-e-Invoicing-environment.png)
+![Aktivera en e-faktureringsmiljön.](media/e-Invoicing-services-get-started-ITA-Enable-e-Invoicing-environment.png)
 
 ## <a name="publish-the-e-invoicing-feature"></a>Publicera e-faktureringsfunktion
 
@@ -149,7 +151,7 @@ Du kan publicera e-faktureringsfunktionen genom att ändra versionsstatus till *
 1. På sidan **e-faktureringsfunktion** på fliken **Versioner**, välj den version av e-faktureringsfunktionen som har status **Slutförd**.
 2. Välj **Ändra status \> Publicera**.
 
-![Ändra status för e-faktureringsfunktionen](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
+![Ändra status för e-faktureringsfunktionen.](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
 ## <a name="set-up-electronic-invoicing-integration-in-finance"></a>Ställ in integrering av e-fakturering i Finance
 
@@ -170,7 +172,7 @@ Under inställningar av Finance ska du utföra följande uppgifter:
 1. Gå till **organisationsadministration \> inställning \> parametrar för elektroniska dokument**.
 2. På fliken **Funktioner** markerar du kryssrutan **Aktivera** i raden för funktionsreferens **IT00036**.
 
-![Aktivera funktionen FatturaPA](media/e-Invoicing-services-get-started-ITA-Enable-FatturaPA-feature.png)
+![Aktivera funktionen FatturaPA.](media/e-Invoicing-services-get-started-ITA-Enable-FatturaPA-feature.png)
 
 #### <a name="configure-electronic-documents"></a>Konfigurera elektroniska dokument
 
@@ -185,7 +187,7 @@ Under inställningar av Finance ska du utföra följande uppgifter:
     - För **Kundfakturajournaler** anger du **Kundfakturakontext**.
     - För **Projektfaktura**, ange **Projektfaktura kontext**.
 
-![Ställ in svarstyper](media/e-Invoicing-services-get-started-ITA-Set-up-response-types.png)
+![Konfigurera svarstyper.](media/e-Invoicing-services-get-started-ITA-Set-up-response-types.png)
 
 ## <a name="electronic-invoice-processing"></a>Elektronisk fakturabearbetning
 
@@ -207,13 +209,13 @@ Du kan skicka dokumenten manuellt, baserat på efterfrågan på e-fakturadokumen
 2. Ställ alltid in alternativet **Skicka dokument igen** till **Nej** för första inlämningen av ett dokument. Om du måste skicka ett dokument på nytt via tjänsten ställer du in det här alternativet på **Ja**.
 3. På snabbfliken **Poster att inkludera** välj **Filter** för att öppna dialogrutan **fråga** där du kan skapa en frågeställning för att välja dokument för överföring.
 
-![Skicka in dialogrutan elektroniska dokument](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
+![Skicka in dialogrutan för elektroniska dokument.](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
 
 #### <a name="filter-query"></a>Filterfråga
 
 1. Dialogrutan **Förfrågning**, konfigurera filtreringsvillkoren för både försäljningsfakturor och projektfakturor, eller låt villkoren vara tomma för att inkludera alla icke inlämnade fakturor.
 
-    ![Ställa in kriterier för överföringsfilter](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
+    ![Konfigurera kriterier för överföringsfilter.](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
 
 2. Välj **OK** för att stänga dialogrutan **Förfrågning**.
 3. Välj **OK** för att skicka de valda dokumenten.
@@ -227,13 +229,13 @@ Du kan visa överföringsloggar för alla skickade dokument.
 1. Gå till **organisationsadministration \> periodisk \> elektroniska dokument \> logg för inlämning av elektroniska dokument**.
 2. I fältet **Dokumenttyp** väljer du **Kundfakturajournal** eller **Projektfaktura** för att filtrera fram nödvändiga elektroniska dokument.
 
-    ![Välja en dokumenttyp för att visa överföringsloggarna](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
+    ![Välja en dokumenttyp för att visa överföringsloggarna.](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
 
     Värdet som visas i kolumnen **överföringsstatus** representerar den status för överföringsprocessen. Det anger om processen kördes som konfigurerad och om ytterligare åtgärder krävs.
 
 3. I åtgärdsfönstret, välj **Förfrågningar \> Överföringsinformation** om du vill visa information om körningsloggar för överföring.
 
-    ![Visa information om överföringsloggen](media/e-Invoicing-services-get-started-ITA-View-Submission-log-details.png)
+    ![Visa information om överföringsloggen.](media/e-Invoicing-services-get-started-ITA-View-Submission-log-details.png)
 
 4. På snabbfliken **Bearbeta åtgärder** kan du visa körningsloggen för de åtgärder som är konfigurerade i funktionsversionen som ställdes in i RCS. Kolumnen **Status** visar om åtgärden har utförts utan fel.
 5. På snabbfliken **Åtgärdsfiler** kan du visa de mellanliggande filer som genererades under körningen av åtgärderna. Du kan välja **vy** för att hämta utdata-XML-filen i format **FatturaPA** och visa dess innehåll.

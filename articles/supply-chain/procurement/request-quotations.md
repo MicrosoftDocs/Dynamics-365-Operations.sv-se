@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ, PurchRFQReplyFollowupItem, PurchRFQCaseVend, PurchRFQReplyFollowup, PurchRFQCaseAmendmentInfo, PurchRFQReplyFollowupCase, PurchRFQReplyStatus, PurchRFQCaseReplyFields, PurchRFQAddQuestionnaire, PurchRFQAmendmentWizard, PurchRFQReplyTableStatus, PurchRFQReplyTableListPage, PurchRFQCancelWizard
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2154
+ms.custom:
+- "2154"
+- intro-internal
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ff153d9c16b219158c12f4bb49eb0a0c5d401ac
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 9f6aaec76beb6dcc48a6f4457c876ceb9fa18643
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102912"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359919"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Anbudsförfrågningar (RFQ) – översikt
 
@@ -37,7 +39,7 @@ Anbudsförfråganprocessen består av följande uppgifter:
 
 Följande bild ger en översikt över ändringarna i anbudsförfrågansprocessen.
 
-[![RFQ-process](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
+[![RFQ-process-](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
 
 Du kan skapa ett anbudsförfrågansärende från planerade order, från en inköpsrekvisition eller genom en manuell post. Anbudsförfrågansärendet är det grundläggande dokument som du använder för att skicka en anbudsförfrågan till varje leverantör.
 

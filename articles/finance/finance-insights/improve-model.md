@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 184a1cb5d3851e26b41340b711c51ef38e06eb53
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 74005d17e2524b922b0fab1aab5350b85dfad771
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186652"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355686"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Förbättra prediktionsmodellen (förhandsversion)
 
@@ -33,7 +33,7 @@ I det här avsnittet beskrivs funktioner som du kan använda för att förbättr
 
 Du väljer först ett eller flera av de tre möjliga resultaten för fakturor: **i tid**, **sent** och **mycket sent**. Alla tre resultat ska väljas. Om du avmarkerar något av resultaten kommer fakturorna att filtreras bort från träningsprocessen och noggrannheten i förutsägelsen försämras.
 
-[![Bekräfta resultat](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
+[![Bekräfta resultat.](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
 
 Om din organisation bara behöver två resultat ändrar du tröskelvärdena **Sent** och **Mycket sent** till 0 (noll) dagar. På så sätt komprimerar du på ett effektivt sätt förutsägelsen till en binär status av **I tid** eller **Sent**.
 
@@ -51,7 +51,7 @@ I följande avsnitt visas de fält som är tillgängliga för entiteterna faktur
 
 I följande illustrationer visar de fält som är tillgängliga för fakturaregistret.
 
-[![Tillgängliga fält för fakturaregistret](./media/available-fields.png)](./media/available-fields.png)
+[![Tillgängliga fält för fakturatabellen.](./media/available-fields.png)](./media/available-fields.png)
 
 Följande fält ska inte väljas för träning:
 
@@ -66,7 +66,7 @@ Följande fält ska inte väljas för träning:
 
 I följande illustrationer visas de fält som är tillgängliga för kundregistret.
 
-[![Tillgängliga fält för kundregistret](./media/related-entities.png)](./media/related-entities.png)
+[![Tillgängliga fält för kundregistret.](./media/related-entities.png)](./media/related-entities.png)
 
 Följande fält ska inte väljas för träning:
 
@@ -74,8 +74,8 @@ Följande fält ska inte väljas för träning:
 
 ## <a name="filters"></a>Filter
 
-Filtren stöder för närvarande inte scenariot för förutsägelser av kundbetalning. Välj därför **Hoppa över detta steg** och fortsätt till sammanfattningssidan.
+Du kan filtrera fakturorna som används för utbildning genom att ställa in filterkriterier för fält på fakturan eller i kundregistren. Du kan till exempel ange ett tröskelvärde om du bara vill inkludera fakturor där summan är lika med eller högre än ett specifikt belopp. Du kan också exkludera fakturor som har associerats med kunder i en viss kundgrupp.
 
-[![Fokusmodell med filter](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
+Mer information om hur du filtrerar data finns i [Skapa en förutsägelsemodell](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

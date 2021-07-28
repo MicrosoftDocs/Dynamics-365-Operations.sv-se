@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: eb3ee4a12d2d29c2769f1ae22e11dc05608b47c1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dad1cad6dcda1c7768f9be8bd7bd4426be7fbcbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815462"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358867"
 ---
 # <a name="print-the-sales-tax-payment-by-code-report"></a>Skriva ut rapporten för momsbetalning per kod 
 
@@ -40,11 +40,11 @@ I arbetsytan **funktionshantering** aktivera följande funktion: **Generera moms
     - **Redovisningsvaluta** – Skriv ut rapportbeloppen i redovisningsvalutan.
     - **Momskodvaluta** – Skriv ut rapportbeloppen i momskodernas valutor.
 
-    ![Dialogrutan momsbetalning per kod](media/Sales-tax-payment-by-code.png)
+    ![Dialogrutan Momsbetalning per kod.](media/Sales-tax-payment-by-code.png)
 
 Den följande bilden visar ett exempel på den rapport som genereras. Rapporten visar att rapporteringskoden **101** har valutan **EUR** om fältet **momsvaluta** anges till **EUR** för den momskod som rapportkoden är tilldelad till.
 
-![Exempel på rapporten för momsbetalning per kod](media/Sales-tax-payment-by-code-2.png)
+![Exempel på rapporten för momsbetalning per kod.](media/Sales-tax-payment-by-code-2.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

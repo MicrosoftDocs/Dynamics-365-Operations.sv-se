@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: faeaf0746532875d3517a208c9c338c112bf2c77
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d605ac0b6e4190f0c0f576d402c9b101d754b347
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816893"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356686"
 ---
 # <a name="withholding-tax-in-purchase-transactions"></a>Källskatt i inköpstransaktioner
 
@@ -64,15 +64,15 @@ Standardkällskattegruppen och artikelkällskattegruppen förs in på raderna n�
 
 Det tillfälliga källskattebeloppet är tillgängligt i fältet **Justerad källskatt** i fliken **Summor** på sidan **Inköpsorder**.
 
-![Källskatt inkluderas i inköpsordern](media/withholding-tax-adjusted.png)
+![Källskatt inkluderas på inköpsordern.](media/withholding-tax-adjusted.png)
 
 Källskatt som beräknats i **leverantörsbetalningsjournalen**. Du kan manuellt justera tillämpliga källskattekoder och de faktiska källskattebeloppen på fliken **Källskatt** på sidan **Kvitta transaktioner**.
 
-![Källskatt kan justeras manuellt på sidan Kvitta transaktioner](media/withholding-tax-vendor-payment-tab.png)
+![Källskatt kan justeras manuellt på sidan Kvitta transaktioner.](media/withholding-tax-vendor-payment-tab.png)
 
 Det härledda källskattebeloppet dras av från leverantörsbetalningen och bokförs på **Källskattekontot** i en relaterad verifikation.
 
-![Källskattekonto som visar en relaterad verifikation](media/withholding-tax-adjusted.png)
+![Källskattekonto som visar en relaterad verifikation.](media/withholding-tax-adjusted.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

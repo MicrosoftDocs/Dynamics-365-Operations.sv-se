@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: e5fd7a9a9703f9ab6802def0aac096e29aa04f1a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1235f8fa64fbc87a4c22f4dcf0e9ddd4b4565b76
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831396"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359773"
 ---
 # <a name="location-license-plate-positioning"></a>Placering för plats-ID-nummer
 
@@ -88,7 +88,7 @@ Funktionen måste vara aktiverad i platsprofilen för varje plats där den ska a
 1. När **ID-nummer** fortfarande är markerad väljer du **Lägg till registerkoppling**.
 1. I listan över register som visas i kolumnen **Relation** välj **Plats för positionering av ID-nummer (ID-nummer)**. Välj sedan **Välj** för att lägga till **Plats för positionering av ID-nummer** i registerkoppling **Lagerdimensioner**.
 
-    ![Registerkopplingar](media/LpTableJoin.png "Registerkopplingar")
+    ![Tabellkopplingar.](media/LpTableJoin.png "Registerkopplingar")
 
 1. Välj **OK** om du vill bekräfta de uppdaterade kopplade register och stäng frågeredigeraren.
 1. På snabbfliken **Platsdirektivåtgärd**, välj **Redigera fråga** igen för att öppna frågeredigeraren igen.
@@ -100,7 +100,7 @@ Funktionen måste vara aktiverad i platsprofilen för varje plats där den ska a
     - **Fält:** *LP-position*
     - **Kriterier:** *1*
 
-    ![Nytt intervall](media/LpPositionCriteria.png "Nytt intervall")
+    ![Nytt område.](media/LpPositionCriteria.png "Nytt intervall")
 
 1. Välj **OK** om du vill bekräfta dina ändringar fråga och stänga frågeredigeraren.
 
@@ -275,7 +275,7 @@ Nu när funktionen *positionering av ID-nummer* har ställts in och lagret har m
 1. På sidan **Skanna ett arbets-ID/ID-nummer** välj fältet **ID** och anger sedan arbets-ID:t från försäljningsraden.
 1. Observera att plockningsarbetet styr att du kan välja artikel *A0002* från plats *01A01R1S2B*. Den här instruktionen visas eftersom objektet *A0002* finns på ett ID-nummer som finns på position *1* på den platsen.
 
-    ![Position 1 plats](media/LocationLicensePlatePositioning.png "Position 1 plats")
+    ![Plats för position 1.](media/LocationLicensePlatePositioning.png "Position 1 plats")
 
 1. Ange det ID-nummer som du skapade för platsen och följ sedan instruktionerna för att plocka försäljningsordern.
 

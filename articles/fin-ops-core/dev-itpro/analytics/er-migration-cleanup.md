@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 97dbb625fc312548fb266b2ef6643a2b8e2b0f81
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8b6e81e47cd781bbe856676b1cecb50b8ee1adfc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750896"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351059"
 ---
 # <a name="er-migration-cleanup"></a>Rensning av ER-migrering 
 
@@ -30,11 +30,11 @@ När du hanterar dina ekonomiinstanser kanske du bestämmer dig för att flytta 
 
 Om du försöker köra ett ER-format som använder en mall för att generera affärsdokument, uppstår ett undantag och du meddelas om den saknade mallen. Du kan också använda alternativet för rensning av ER-migrering för att radera och sedan åter importera konfigurationen för ER-format som innehåller mallen.
 
-[![Köra ett ER-format](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
+[![Köra ett ER-format.](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
 
 Du får ett liknande felmeddelande om du navigerar till sidan **Konfigurationer** (**Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**) och i konfigurationsträdet försöker radera en ER-formatskonfiguration som använder en mall.
 
-[![Radera ett ER-format](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
+[![Radera ett ER-format.](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
 
 Gör på följande sätt för att lösa problem med ER-mallar som du inte kan komma åt.
 
@@ -50,7 +50,7 @@ Gör på följande sätt för att lösa problem med ER-mallar som du inte kan ko
 >
 > Om du raderar en ER-formatkonfiguration med alternativet **Rensning av migrering** när den refererade mallen finns i blob-lagring så raderar du enbart konfigurationsartefakterna i programdatabasen. Den fysiska filen för mallen i blob-lagringen finns kvar. Filöverskrivning i blob-lagring är inte längre tillåten. Mer information finns i [KB4557217](https://fix.lcs.dynamics.com/Issue/Details?kb=4557217). Dessutom kan du inte längre återimportera konfigurationerna som raderats med hjälp av rensning av migrering i den här miljön. För att lösa det här problemet måste du hitta motsvarande fil i blob-lagring och manuellt radera den.
 
-[![Importera ett ER-format](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
+[![Importera ett ER-format.](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
 
 Ett liknande problem kan uppstå om du migrerar programinstansen till en annan plats som har använts som migreringsmål mer än en gång och för vilken blob-lagring redan innehåller ER-mallfiler.
 

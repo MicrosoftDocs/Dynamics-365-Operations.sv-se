@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 435e4c0b7aac8a8dc179ee8e74b985a4c434b7ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839617"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361124"
 ---
 # <a name="maintenance-plans"></a>Underhållsplaner
 
@@ -145,23 +145,23 @@ Nedan finns exempel på hur du ställer in tidsbaserade och räknarbaserade unde
 
 **Exempel 1 - Tidsbaserad underhållsplanrad:** Ett smörjjobb kan ställas in i ett fast intervall, som inträffar en gång i veckan. För det ändamålet väljer du "Upprepat från plandatum" i fältet **Intervalltyp**. Se exemplet i följande bild.
 
-![Ett servicejobb som ställs in i ett fast intervall, som inträffar en gång per vecka](media/02-preventive-maintenance.png "Ett servicejobb som ställs in i ett fast intervall, som inträffar en gång per vecka")
+![Ett servicejobb som ställs in i ett fast intervall som inträffar en gång per vecka.](media/02-preventive-maintenance.png "Ett servicejobb som ställs in i ett fast intervall, som inträffar en gång per vecka")
 
 **Exempel 2 – Tidsbaserad underhållsplanrad:** Ett inspektionsjobb kan ställas in för att genomföras ungefär en gång i veckan. För det ändamålet väljer du "Upprepat från senaste arbetsorder" i fältet **Intervalltyp**. Se exemplet i följande bild.
 
-![Ett inspektionsjobb som är inställt på att utföras ungefär en gång per vecka](media/03-preventive-maintenance.png "Ett inspektionsjobb som är inställt på att utföras ungefär en gång per vecka")
+![Ett inspektionsjobb som är inställt på att utföras ungefär en gång per vecka.](media/03-preventive-maintenance.png "Ett inspektionsjobb som är inställt på att utföras ungefär en gång per vecka")
 
 **Exempel 3 – Räknarbaserad underhållsplanrad**: Bilden nedan visar en grafisk vy av en timräknare för vilken en ny underhållsschemarad skapas varje gång 250 timmar har passerat. Intervalltypen för den här raden är "Upprepat från startdatum". Startdatumet är startdatumet för de relaterade tillgångarna i detaljvyn **Alla tillgångar** snabbfliken \> **Underhållsplaner för tillgångar** fältet \> **Startdatum** eller i detaljvyn **Funktionsplats** snabbfliken \> **Underhållsplaner** fältet \> **Startdatum**. Detta är ett exempel på en *förebyggande* underhållsplan eftersom underhållsplanraden skapas automatiskt varje gång som tröskelvärdet (+ 250) uppnås.
 
-![En timräknare som regelbundet skapar underhållsplanrader](media/04-preventive-maintenance.png "En timräknare som regelbundet skapar underhållsplanrader")
+![En timräknare som regelbundet skapar underhållsplanrader.](media/04-preventive-maintenance.png "En timräknare som regelbundet skapar underhållsplanrader")
 
 **Exempel på 4 - Räknarbaserad underhållsplanrad:** Bilden nedan visar en grafisk vy av en minskning av räknarvärdet, som mäter slitage på bromsklossar. En underhållsschemarad skapas när en räknarregistrering under 20 mm skapas på bromsklossen. Intervalltypen för den här räknarraden är "När nedre nås" eller "En gång från senaste startdatum". Detta är ett exempel på en *reaktiv* underhållsplan eftersom underhållsschemaraden inte skapas förrän ett mått under 20 mm registreras.
 
-![En minskning av räknarvärdet som mäter bromsklossar](media/05-preventive-maintenance.png "En minskning av räknarvärdet som mäter bromsklossar")
+![En minskning av räknarvärdet som mäter slitage på bromsklossar.](media/05-preventive-maintenance.png "En minskning av räknarvärdet som mäter bromsklossar")
 
 **Exempel 5 – Räknarbaserad underhållsplanrad**: Bilden nedan visar en grafisk vy av en räknare med en tröskel på -18 ° Celsius. En underhållsschemarad skapas när en räknarregistrering överstiger-18 ° Celsius görs. Intervalltypen för den här räknarbaserade raden är "När övre nås". Detta är ett exempel på en *reaktiv* underhållsplan eftersom underhållsschemaraden inte skapas förrän ett mått som är högre än -18 ° Celsius registreras.
 
-![En räknare med tröskelvärdet -18 grader](media/06-preventive-maintenance.png "En räknare med tröskelvärdet -18 grader")
+![En räknare med tröskelvärdet -18 grader Celsius.](media/06-preventive-maintenance.png "En räknare med tröskelvärdet -18 grader")
 
 - När du skapar en ny tillgång och en sådan tillgång använder en tillgångstyp relaterad till en underhållsplan infogas underhållsplanen automatiskt i snabbfliken **Alla objekt \> Underhållsplaner för tillgångar**. I **Standardtyper för tillgång** på snabbfliken **Underhållsplaner** infogas automatiskt de relaterade underhållsplanerna.
 - Om du lägger till eller tar bort tillgångstyper eller funktionsplatstyper i **Underhållsplaner** kommer denna ändring bara att återspeglas i nya tillgångar som skapas efter att du gjort ändringen.
@@ -169,7 +169,7 @@ Nedan finns exempel på hur du ställer in tidsbaserade och räknarbaserade unde
 
 Följande illustration visar ett exempel på en underhållsplan för "Lastbilsservice" på sidan **underhållsplaner**.
 
-![Ett exempel på en underhållsplan för lastbilsservice](media/07-preventive-maintenance.png "Ett exempel på en underhållsplan för lastbilsservice")
+![Ett exempel på en underhållsplan för lastbilsservice.](media/07-preventive-maintenance.png "Ett exempel på en underhållsplan för lastbilsservice")
 
 ## <a name="add-a-maintenance-plan-to-an-asset"></a>Lägga till en underhållsplan till en tillgång
 
@@ -187,11 +187,11 @@ Följande illustration visar ett exempel på en underhållsplan för "Lastbilsse
 
 Följande illustration visar ett exempel på underhållsplaner som anges på en tillgång på sidan **Alla tillgångar**.
 
-![Ett exempel på underhållsplaner som ställts in för en tillgång](media/08-preventive-maintenance.png "Ett exempel på underhållsplaner som ställts in för en tillgång")
+![Ett exempel på underhållsplaner som ställts in för en tillgång.](media/08-preventive-maintenance.png "Ett exempel på underhållsplaner som ställts in för en tillgång")
 
 <a id="counter-based-maintenance"></a>
 
-## <a name="counter-based-maintenance-enhancements"></a>Förbättringar av räknarbaserat underhåll
+## <a name="counter-based-maintenance-enhancements"></a>Räknarbaserade underhållsförbättringar
 
 Funktionen *Förbättringar av räknarbaserat underhåll* innehåller följande funktioner:
 

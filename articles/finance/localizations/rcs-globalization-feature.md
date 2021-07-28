@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: cbb1d9a53a7a09ab525532f08553898c4e40223a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7faa9a3cf6a29d8ed126cfcb0e2902b2016d03ff
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822791"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358156"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Services (RCS) – Globaliseringsfunktioner
 
@@ -53,7 +53,7 @@ I Finance and Operations-appinstansen följer du stegen nedan.
 1. I din RCS-instans, välj panelen **funktionshantering**.
 2. I arbetsytan **Funktionshantering** välj **Globaliseringfunktioner** i listan och sedan **Aktivera nu**.
 
-    ![Globaliseringsfunktioner i funktionshantering](./media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
+    ![Globaliseringsfunktioner i funktionshanteringen.](./media/RCS_GlobalF_1%20Feature%20mgmt.JPG)
 
 ## <a name="globalization-features"></a>Globaliseringsfunktioner
 
@@ -67,11 +67,11 @@ Om du vill använda en globaliseringsfunktion måste du först importera den fr�
 1. Se till att funktionen **globaliseringsfunktioner** är aktiverad i funktionshantering, enligt beskrivningen ovan.
 2. Öppna arbetsytan **globaliseringsfunktioner** och under **funktioner**, välj panelen **e-fakturering**.
 
-    ![Arbetsyta för globala funktioner](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
+    ![Arbetsyta för globala funktioner.](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
 
     Sidan **e-faktureringsfunktioner** öppnas.
 
-    ![Sidan e-faktureringsfunktioner](./media/RCS_GlobalF_3%20Feature%20form.JPG)
+    ![Sidan e-faktureringsfunktioner.](./media/RCS_GlobalF_3%20Feature%20form.JPG)
 
 ## <a name="add-a-derived-globalization-feature"></a>Lägga till en härledd globaliseringsfunktion
 
@@ -79,27 +79,27 @@ Du kan lägga till en ny globaliseringsfunktion genom att härleda den från en 
 
 1. Välj **importera** om du vill öppna sidan **importfunktionen från den globala databasen**.
 
-    ![Importera funktion från sidan Global databas](./media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
+    ![Importera funktion från sidan Global databas.](./media/RCS_GlobalF_4%20Feature%20import%20form%20GR.JPG)
 
 2. Välj **synkronisera** om du vill hämta de senaste funktionerna.
 
     I den synkroniserade listan finns funktioner som du kan välja mellan eftersom de publicerades av Microsoft eller att de har delats med dig av en annan konfigurationsleverantör.
 
-    ![Synkroniserad lista över funktioner](./media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
+    ![Synkroniserad lista över funktioner.](./media/RCS_GlobalF_5%20Feature%20GR%20sync.JPG)
 
 3. Välj de funktioner du vill importera i listan och välj sedan **Importera**. Ett meddelande visas när de valda funktionerna har importerats utan problem.
 
-    ![Meddelandet Import klar](./media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)
+    ![Meddelandet Import klar.](./media/RCS_GlobalF_6%20Feature%20GR%20import%20success.JPG)
 
 4. Välj **Lägg till** och välj sedan alternativet **baserad på befintlig version i den nedrullningsbara dialogrutan**.
 5. Ange ett namn och en beskrivning för funktionen.
 6. Välj basversion för funktionen i listan med tillgängliga funktioner och välj sedan **skapa funktion**.
 
-    ![Lägga till en härledd funktion](./media/RCS_GlobalF_7%20Feature%20create%20derived.JPG)
+    ![Lägga till en härledd funktion.](./media/RCS_GlobalF_7%20Feature%20create%20derived.JPG)
 
     Funktionen som du har lagt till skapas och har statusen **utkast**.
 
-    ![Härledd funktion med utkaststatus](./media/RCS_GlobalF_8%20Feature%20draft%20create.JPG)
+    ![Härledd funktion med utkaststatus.](./media/RCS_GlobalF_8%20Feature%20draft%20create.JPG)
 
 7. Granska funktionskomponenterna och ta reda på om det behövs några uppdateringar:
 
@@ -120,7 +120,7 @@ Du kan lägga till en ny globaliseringsfunktion genom att skapa den från grunde
 2. Ange ett namn och en beskrivning för funktionen.
 3. Välj **skapa funktion**.
 
-    ![Lägga till en ny funktion](./media/RCS_GlobalF_9%20Feature%20create%20new.JPG)
+    ![Lägga till en ny funktion.](./media/RCS_GlobalF_9%20Feature%20create%20new.JPG)
 
 4. På fliken **versioner** välj ett **Giltighet från**-datum och sedan **Ändra status** för att slutföra funktionen. Slutförda funktioner kan göras tillgängliga för en viss miljö så att de kan användas i globaliseringstjänster, och de kan också publiceras i den globala databasen.
 
@@ -176,7 +176,7 @@ Följande åtgärder är tillgängliga för framtida inställningar:
     - Tillämplighetsregler
     - Variabler
 
-![Inställningssida för funktionsversion](./media/RCS_GlobalF_10%20Feature%20set%20up.JPG)
+![Konfigurationssida för funktionsversion.](./media/RCS_GlobalF_10%20Feature%20set%20up.JPG)
 
 ### <a name="environments"></a>Miljöer
 
@@ -193,7 +193,7 @@ Följ dessa steg om du vill dela en globaliseringsfunktion med en extern organis
 2. På sidan **Organisationer**, välj **Dela med** och ange sedan organisationens domännamn i den nedrullningsbara dialogrutan.
 3. Välj **dela**.
 
-    ![Dela en funktion med en organisation](./media/RCS_GlobalF_20%20Feature%20orgn_share%20with.JPG)
+    ![Dela en funktion med en organisation.](./media/RCS_GlobalF_20%20Feature%20orgn_share%20with.JPG)
 
 Fuktionen delas med den valda organisationen och är tillgänglig för den organisationen i den globala databasen. Därifrån kan funktionen importeras till organisationens instans av RCS eller Dynamics 365 Finance så att den kan användas.
 
@@ -201,7 +201,7 @@ Fuktionen delas med den valda organisationen och är tillgänglig för den organ
 
 Du kan basera en härledd globaliseringsfunktion på ny eller uppdaterad basfunktionsversion. På så sätt kan ändringar som har gjorts i basversionen uppdateras automatiskt. Den uppdaterade basfunktionsversionen skapas av den ursprungliga konfigurationsprovidern och publiceras eller delas sedan.
 
-![Uppdaterad basfunktionsversion](./media/RCS_GlobalF_12%20Feature%20new%20version.JPG)
+![Uppdaterad basfunktionsversion.](./media/RCS_GlobalF_12%20Feature%20new%20version.JPG)
 
 Om du till exempel vill basera om den härledda versionen av en funktion som du skapade, hämtar du först den senaste versionen av funktionen genom att importera den från den globala databasen.
 
@@ -209,23 +209,23 @@ Om du till exempel vill basera om den härledda versionen av en funktion som du 
 2. Välj **synkronisera** om du vill hämta de senaste funktionerna.
 3. Välj de funktioner du vill importera i listan över funktioner och välj sedan **Importera**.
 
-    ![Importera den senaste versionen av en funktion](./media/RCS_GlobalF_13%20Feature%20new%20version%20import.JPG)
+    ![Importera den senaste versionen av en funktion.](./media/RCS_GlobalF_13%20Feature%20new%20version%20import.JPG)
 
 4. Välj den funktion som ska återbyggas i listan över funktioner.
 5. På fliken **Version**, välj **Ny** för att skapa en utkastversion.
 
-    ![Nytt utkastversion har skapats](./media/RCS_GlobalF_14%20Feature%20new%20base%20version.JPG)
+    ![Nytt utkastversion har skapats.](./media/RCS_GlobalF_14%20Feature%20new%20base%20version.JPG)
 
 6. Välj **Basera om**.
 7. I dialogrutan **Basera om** väljer du den senaste versionen av funktionen som ska baseras om till.
 
-    ![Dialogrutan Basera om](./media/RCS_GlobalF_15%20Feature%20rebase%20version.JPG)
+    ![Dialogrutan Basera om.](./media/RCS_GlobalF_15%20Feature%20rebase%20version.JPG)
 
 8. Välj **OK**.
 9. Granska funktionskomponenter och gör nödvändiga ändringar.
 10. Välj **ändra status** om du vill slutföra funktionen basera om. När ombaseringen är slutförd kan du utföra ytterligare åtgärder. Du kan till exempel publicera funktionen och göra den tillgänglig för användning i globaliseringstjänster.
 
-    ![Funktionsstatus uppdaterades till slutfört](./media/RCS_GlobalF_16%20Feature%20rebase%20version%20complete.JPG)
+    ![Funktionsstatusen uppdaterades till Slutfördes.](./media/RCS_GlobalF_16%20Feature%20rebase%20version%20complete.JPG)
 
 ## <a name="configure-environments-for-globalization-features"></a><a name="configureenvironment"></a>Konfigurera miljöer för globaliseringsfunktioner
 
@@ -233,13 +233,13 @@ Användare av globaliseringstjänster kan hantera miljön för att ställa in en
 
 1. I arbetsytan **globaliseringsfunktioner** och under **Miljöer**, välj panelen **e-fakturering**.
 
-    ![Arbetsyta för globaliseringsfunktioner](./media/RCS_GlobalF_17%20Feature%20environment.JPG)
+    ![Arbetsyta för globaliseringsfunktioner.](./media/RCS_GlobalF_17%20Feature%20environment.JPG)
 
 2. Välj **Parametrar för nyckelvalv** och välj sedan **Ny** för att skapa en Azure Key Vault-hemlighet.
 3. Ange ett namn och en beskrivning för nyckelvalvet och ange sedan i fältet **URI för nyckelvalv**, ange den URL som identifierar nyckelvalvresursen i Azure.
 4. På snabbfliken **Certifikat** väljer du **Lägg till** om du vill lägga till certifikatet och ange ett namn och en beskrivning för varje certifikat.
 
-    ![Certifikat tillagt](./media/RCS_GlobalF_18%20Feature%20envn%20key%20vault%20parameter.JPG)
+    ![Certifikat tillagt.](./media/RCS_GlobalF_18%20Feature%20envn%20key%20vault%20parameter.JPG)
 
 5. Skapa en ny miljö genom att välja **Nytt**.
 6. Ange ett namn, en beskrivning och hemligheten som krävs för signaturen för signaturen som krävs för lagringen.
@@ -248,7 +248,7 @@ Användare av globaliseringstjänster kan hantera miljön för att ställa in en
 9. Upprepa steg 7 och 8 om du vill lägga till fler användare.
 10. Välj **publicera** om du vill publicera miljön.
 
-    ![Publicerad miljö](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+    ![Publicerad miljö.](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

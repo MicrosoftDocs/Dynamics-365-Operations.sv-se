@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9ffb1378eccf175fbb9bd84228f91ba606125a63
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754000"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350846"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Felsöka problem under första installationen
 
@@ -42,7 +42,7 @@ Det här avsnittet innehåller felsökningsinformation för integrering av dubbe
 
 Fel på sidan **Konfigurera länk till Dataverse** orsakas vanligtvis av ofullständiga installations- eller behörighetsproblem. Kontrollera att hela hälsokontrollen passerar **Konfigurera länk till Dataverse** som visas i följande illustration. Du kan inte länka dubbelriktad skrivning om inte hela hälsokontrollen passerar.
 
-![Lyckad hälsokontroll](media/health_check.png)
+![Lyckad hälsokontroll.](media/health_check.png)
 
 Du måste ha Azure AD autentiseringsuppgifter för klientadministratör för att länka Finance and Operations och Dataverse-miljöer. När du har länkat miljöerna kan användare logga in med hjälp av sina kontouppgifter och uppdatera en befintlig tabellmappning.
 
@@ -77,7 +77,7 @@ För att säkerställa att dubbelriktad skrivning fungerar korrekt skapas de fö
 4. Välj det företag som länkades när du konfigurerade dubbelskrivning.
 5. Kontrollera att kolumnen **standardägargrupp** har ett värde. I bilden nedan är kolumnen **standardägargrupp** anges till **USMF dubbelriktad skrivning**.
 
-    ![Verifiera standardägargruppen](media/default_owning_team.png)
+    ![Verifiera standardägargruppen.](media/default_owning_team.png)
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Hitta gränsen för antal juridiska tabeller eller företag som kan länkas för dubbelriktad skrivning
 

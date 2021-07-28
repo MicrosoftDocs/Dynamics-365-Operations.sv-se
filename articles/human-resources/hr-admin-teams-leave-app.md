@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c1cceb15d64215cb8d5c996df792e863d466f87d
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 627883544f387e53920da268fa8d805c0074de47
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053573"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357371"
 ---
 # <a name="human-resources-app-in-teams"></a>Personal-app i Teams
 
@@ -28,11 +28,11 @@ ms.locfileid: "6053573"
 
 Med hjälp av Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan personalen snabbt begära ledighet och visa information om sitt ledighetssaldo i Microsoft Teams. Personalen kan interagera med en robot för att begära information. Fliken **Ledighet** visar mer detaljerad information. Dessutom kan de skicka personuppgifter om kommande ledighet i team och chattar utanför Personal-appen.
 
-![Personal Teams-approbot för tjänstledighet](./media/hr-teams-leave-app-bot.png)
+![Personalteam efterlämnar app-robot.](./media/hr-teams-leave-app-bot.png)
 
-![Fliken Ledighet i Personal Teams-appen för ledighet](./media/hr-teams-leave-app-timeoff-tab.png)
+![Personalteam lämnar ledighetsflik för app.](./media/hr-teams-leave-app-timeoff-tab.png)
 
-![Kort för ledighetsansökan i Personal](./media/hr-teams-leave-app-chat-card.png)
+![Kort för tjänstledighetsansökan i Personal.](./media/hr-teams-leave-app-chat-card.png)
 
 ## <a name="install-and-setup"></a>Installera och konfigurera
 
@@ -57,11 +57,11 @@ Om du vill att användarna ska få lämna meddelanden i appen Teams måste du ak
 
 4. På fliken **Allmänt** anger du **Aktivera meddelanden för Teams-appen** till **Ja** .
 
-   ![Aktivera Teams-appmeddelanden i systemparametrar](./media/hr-admin-teams-leave-app-enable-notifications.png)
+   ![Aktivera Teams-appmeddelanden i Systemparametrar.](./media/hr-admin-teams-leave-app-enable-notifications.png)
 
 5. Om du vill aktivera Teams-meddelanden för alla användare väljer du **Ja** vid prompten.
 
-   ![Aktivera Teams-meddelanden för alla användare](./media/hr-admin-teams-leave-app-notifications-all-users.png)
+   ![Aktivera Teams-meddelanden för alla användare.](./media/hr-admin-teams-leave-app-notifications-all-users.png)
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Aktivera eller inaktivera Teams-meddelanden för enskilda användare
 
@@ -77,7 +77,7 @@ När du har aktiverat meddelanden för Dynamics 365 Human Resources Teams-appen 
 
 5. Ange **Aktivera meddelanden för Teams-app** till **Ja** för att aktivera aviseringar för användaren eller **Nej** för att inaktivera meddelanden för användaren.
 
-   ![Aktivera Teams-appmeddelanden på fliken arbetsflöde i användaralternativ](./media/hr-admin-teams-leave-app-notifications.png)
+   ![Aktivera Teams-appmeddelanden på fliken Arbetsflöde i Användaralternativ.](./media/hr-admin-teams-leave-app-notifications.png)
 
 6. Välj **Spara**.
 

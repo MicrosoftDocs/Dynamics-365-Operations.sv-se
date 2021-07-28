@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 1f9325d182f89b98e8b943ae047c55e7e1aeb02f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c74132af95f088ea88155b722a8270861fba50e7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023608"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361296"
 ---
 # <a name="set-up-withholding-tax-reporting-codes-for-the-tds-tax-type"></a>Ställ in källskatterapporteringskoder för TDS-skattetypen
 
@@ -31,7 +31,7 @@ Källskatterapporteringskoder används för att generera utdrag från formulär 
 
 1. Gå till **Skatt \> Konfiguration \> Källskatt \> Källskatterapporteringskoder**.
 
-    [![Sidan Källskatterapporteringskoder](./media/apac-ind-TDS-16.png)](./media/apac-ind-TDS-16.png)
+    [![Sidan Källskatterapporteringskoder.](./media/apac-ind-TDS-16.png)](./media/apac-ind-TDS-16.png)
 
 2. I fältet **Skattetyp** väljer du **TDS** för att definiera källskatterapporteringskoder för skattetypen TDS.
 3. I fältet **Källskattekomponent** väljer du TDS-komponent som du definierar källskatterapporteringskoden för. I fältet **Källskattekomponentgrupp** visas TDS-komponentgruppen som definierades för TDS-komponenten som du definierar.

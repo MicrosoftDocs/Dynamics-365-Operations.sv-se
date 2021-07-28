@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f1a405f5bbf8728876213e6c726ae41ebf809626
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: acfde5961f481f5d939f0c6388b80edfd65ee339
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810496"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351427"
 ---
 # <a name="outbound-workload-visualization"></a>Visualisering av utgående arbetsbelastning
 
@@ -60,7 +60,7 @@ Om du vill ställa in en utgående arbetsbelastningsvisualisering följer du ste
     - **Antal dagar att inkludera** – Ange det antal dagar bakåt från vilket diagrammet ska genereras.
     - **Typ av arbetsorder** – Välj de avgående arbetsordertyper som du vill filtrera efter.
 
-    ![Sidan konfigurera filter](media/work-viz-filters-1.png "Sidan konfigurera filter")
+    ![Sidan konfigurera filter.](media/work-viz-filters-1.png "Sidan konfigurera filter")
 
 1. Stäng sidan **Konfigurera filter** om du vill återvända till sidan **Visualiseringar av utgående arbetsbelastning**.
 
@@ -70,11 +70,11 @@ Om du vill ställa in en utgående arbetsbelastningsvisualisering följer du ste
     - **Uppdaterades senast** – i det här fältet visas det datum och den tidpunkt då informationen i diagrammet senast uppdaterades.
     - **Uppskattad/faktisk tid** – om arbetsstandarder ställs in i systemet ställer du in det här alternativet på *Ja* för att visa ackumulerade uppskattade plocktider överst i varje kolumn i diagrammet. Om du inte använder arbetsstandarder är det här alternativet inte tillgängligt.
 
-    ![Exempel på visuella effekter](media/work-viz-chart.png "Exempel på visuella effekter")
+    ![Exempel på visualisering.](media/work-viz-chart.png "Exempel på visuella effekter")
 
 1. Välj en stapel i diagrammet om du vill visa den tillhörande arbetsradinformationen.
 
-    ![Arbetsradsdetaljer](media/work-viz-work-details.png "Arbetsradsdetaljer")
+    ![Arbetsradsdetaljer.](media/work-viz-work-details.png "Arbetsradsdetaljer")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Exempel: Visualisering av utgående arbetsbelastning för zoner
 
@@ -92,7 +92,7 @@ I det här exemplet vill du skapa en visualisering som visar arbetsrader för va
 
 Följande bild visar ett exempel på det resulterande diagrammet.
 
-![Visualisering av zoner kontra arbetsstatus](media/work-viz-chart.png "Visualisering av zoner kontra arbetsstatus")
+![Visualisering av zoner kontra arbetsstatus.](media/work-viz-chart.png "Visualisering av zoner kontra arbetsstatus")
 
 Det här diagrammet visar två zoner med namnet **VÅNING** och **BULK**, plus en zon som har namnet **Tom**. Den **tomma** zonen representerar alla arbetsrader som inte är medlemmar i några zoner. Diagrammet visar alltid alla icke-relaterade filtrerade data som **tomma** för att ge så mycket synlighet som möjligt. I **GOLVET** visar diagrammet tre stängda rader och fyra öppna rader. I **BULK** visar diagrammet fyra stängda rader, en öppen och 24 annullerade rader. Slutligen visar diagrammet åtta stängda rader som inte ingår i någon zon och därför listas som **tomma**.
 

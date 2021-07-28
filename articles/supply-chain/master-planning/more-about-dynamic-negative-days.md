@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37ae6ebd4347d3bbb414b7f1e4e0d54150878c02
-ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
+ms.openlocfilehash: 0fd573ab1676af292174efce562b010bcbeb6514
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6097244"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354747"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negativa dagar och dynamiska negativa dagar
 
@@ -43,7 +43,7 @@ Du kan få efterfrågan antingen relativt tidigt i artikelns produktionstid elle
 
 Bilden nedan visar en grafisk vy av detta scenario.
 
-![Grafisk vy över scenario 1](./media/negative-days-1.jpg)
+![Grafisk vy över scenario 1.](./media/negative-days-1.jpg)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Fall A: negativa dagar är mindre än artikelns produktionstid
 
@@ -51,11 +51,11 @@ Om du ställer in de negativa dagarna till ett tal som är mindre än artikelns 
 
 Bilden nedan visar en skärmbild av det här fallet.
 
-![Skärmbild av fall A för scenario 1](./media/negative-days-2.png)
+![Skärmbild av ärende A för scenario 1.](./media/negative-days-2.png)
 
 Bilden nedan visar en grafisk vy av vad som händer i detta fall.
 
-![Grafisk vy av fall A för scenario 1](./media/negative-days-3.png)
+![Grafisk vy av ärende A för scenario 1.](./media/negative-days-3.png)
 
 Om du anser att MPS-prestanda och planens nerver fungerar, så är detta inte bra. MPS måste skapa en ny planerad order och måste beräkna förseningar och åtgärder. Dessa uppgifter är tidskrävande. Detta innebär också att ytterligare två transaktioner läggs till i planen. Å andra sidan försenas försäljningsordern med endast sex dagar, inte sju dagar.
 
@@ -73,11 +73,11 @@ Dynamiska negativa dagars tidsgräns = Ledtid för inköp + negativa dagarnas ti
 
 När dynamiska negativa dagar används, är tidsgränsen som MPS kontrollerar för inleveranser nu 6 + 2 + 0 = 8 dagar. MRP hittar den befintliga inköpsordern och fixerar försäljningsordern mot den. Inga nya planerade order har skapats. Därför är körningstiden för MPS kortare. Följande bild visar nettobehoven för den DemoProduct-artikeln.
 
-![Nettobehov för ärende C för scenario 1](./media/negative-days-4.png)
+![Nettobehov för ärende C för scenario 1.](./media/negative-days-4.png)
 
 Bilden nedan visar en grafisk vy av vad som händer i detta fall.
 
-![Grafisk vy av fall C för scenario 1](./media/negative-days-5.png)
+![Grafisk vy av ärende C för scenario 1.](./media/negative-days-5.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Fall D: Använd endast dynamiska negativa dagar
 
@@ -85,11 +85,11 @@ Om du ställer in de negativa dagarna till **0** (noll) och bara använder tidsg
 
 Bilden nedan visar en skärmbild av det här fallet.
 
-![Skärmbild av fall D för scenario 1](./media/negative-days-6.png)
+![Skärmbild av ärende D för scenario 1.](./media/negative-days-6.png)
 
 Bilden nedan visar en grafisk vy av vad som händer i detta fall.
 
-![Grafisk vy av fall D för scenario 1](./media/negative-days-7.png)
+![Grafisk vy av ärende D för scenario 1.](./media/negative-days-7.png)
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Fall E: Använd både negativa dagar som är mer än artikelns produktionstid och de dynamiska negativa dagarna tidsgräns
 
@@ -106,7 +106,7 @@ Du kan få behov av en stund under artikelns produktionstid. Här följer ett ex
 
 Bilden nedan visar en grafisk vy av detta scenario.
 
-![Grafisk vy över scenario 2](./media/negative-days-8.png)
+![Grafisk vy över scenario 2.](./media/negative-days-8.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Fall A: negativa dagar är mindre än artikelns produktionstid
 
@@ -114,11 +114,11 @@ Om du ställer in de negativa dagarna till ett tal som är mindre än artikelns 
 
 Bilden nedan visar en skärmbild av det här fallet.
 
-![Skärmbild av fall A för scenario 2](./media/negative-days-9.png)
+![Skärmbild av ärende A för scenario 2.](./media/negative-days-9.png)
 
 Bilden nedan visar en grafisk vy av vad som händer i detta fall.
 
-![Grafisk vy av fall A för scenario 2](./media/negative-days-10.png)
+![Grafisk vy av ärende A för scenario 2.](./media/negative-days-10.png)
 
 ### <a name="case-b-negative-days-are-more-than-the-items-lead-time"></a>Fall B: negativa dagar är mer än artikelns produktionstid
 
@@ -130,11 +130,11 @@ Detta fall liknar fall C för scenario 1 eftersom dynamiska negativa dagar funge
 
 Bilden nedan visar en skärmbild av det här fallet.
 
-![Skärmbild av fall C för scenario 2](./media/negative-days-11.png)
+![Skärmbild av ärende C för scenario 2.](./media/negative-days-11.png)
 
 Bilden nedan visar en grafisk vy av vad som händer i detta fall.
 
-![Grafisk vy av fall C för scenario 2](./media/negative-days-12.png)
+![Grafisk vy av ärende C för scenario 2.](./media/negative-days-12.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Fall D: Använd endast dynamiska negativa dagar
 
@@ -155,7 +155,7 @@ Du kanske får efterfrågan efter artikelns produktionstid Här följer ett exem
 
 Bilden nedan visar en grafisk vy av detta scenario.
 
-![Grafisk vy över scenario 3](./media/negative-days-13.png)
+![Grafisk vy över scenario 3.](./media/negative-days-13.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Fall A: negativa dagar är mindre än artikelns produktionstid
 
@@ -163,11 +163,11 @@ Om du ställer in de negativa dagarna till ett tal som är mindre än artikelns 
 
 Bilden nedan visar en skärmbild av det här fallet.
 
-![Skärmbild av fall A för scenario 3](./media/negative-days-14.png)
+![Skärmbild av ärende A för scenario 3.](./media/negative-days-14.png)
 
 Bilden nedan visar en grafisk vy av vad som händer i detta fall.
 
-![Grafisk vy av fall A för scenario 3](./media/negative-days-15.png)
+![Grafisk vy av ärende A för scenario 3.](./media/negative-days-15.png)
 
 > [!NOTE]
 > På föregående skärmbild är inköpsorderns behovsdatum är 12 januari. Eftersom skärmbilden togs år 2015, när 11 januari var söndag, flyttade MRP behovsdatumet till nästa arbetsdag, som var måndag den 12 januari. Inköpsordern har dock ett leveransdatum på 11 januari.
@@ -178,11 +178,11 @@ Om du ställer in de negativa dagarna till ett tal som är mer än artikelns pro
 
 Bilden nedan visar en skärmbild av det här fallet.
 
-![Skärmbild av fall B för scenario 3](./media/negative-days-16.png)
+![Skärmbild av ärende B för scenario 3.](./media/negative-days-16.png)
 
 Bilden nedan visar en grafisk vy av vad som händer i detta fall.
 
-![Grafisk vy av fall B för scenario 3](./media/negative-days-17.png)
+![Grafisk vy av ärende B för scenario 3.](./media/negative-days-17.png)
 
 ### <a name="case-c-automatically-correlate-the-items-lead-time-to-the-negative-days-time-fence"></a>Fall C: Korrelera automatiskt artikelns produktionstid till negativa dagens tidsgräns
 
@@ -192,7 +192,7 @@ Tidsgränsen för dynamiska negativa dagar är 6 + 2 – 7 = 1 dag. I det här 
 
 Bilden nedan visar en grafisk vy av vad som händer i detta fall.
 
-![Grafisk vy av fall C för scenario 3](./media/negative-days-18.png)
+![Grafisk vy av ärende C för scenario 3.](./media/negative-days-18.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Fall D: Använd endast dynamiska negativa dagar
 
@@ -219,11 +219,11 @@ Du kanske vill ställa in de negativa dagarna till en lång tidsgräns och sedan
 
 Bilden nedan visar en grafisk vy av vad som händer.
 
-![Grafisk granskning av exemplet](./media/negative-days-19.png)
+![Grafisk granskning av exemplet.](./media/negative-days-19.png)
 
 MRP ger följande resultat.
 
-![Resultatexempel 1](./media/negative-days-20.png)
+![Resultatexempel 1.](./media/negative-days-20.png)
 
 I föregående skärmbild är försäljningsorderns behovsdatum är 9 januari i stället för 10 januari. Eftersom skärmbilden togs år 2015, när 10 januari var lördag, flyttade behovsdatumet för ordern till föregående arbetsdag, som var fredag den 9 januari.
 
@@ -233,7 +233,7 @@ Resultatet är inte fel, men körtiden för MPS kan vara längre, eftersom MPS m
 
 Om du minskar de negativa dagarna till en siffra som ligger närmare artikelns produktionstid och använder dynamiska negativa dagar, ger MPS följande resultat.
 
-![Resultatexempel 2](./media/negative-days-21.png)
+![Resultatexempel 2.](./media/negative-days-21.png)
 
 MPS skapar en planerad order som är kopplad till den första försäljningsordern. Sedan, som förväntat, peggas den andra försäljningsordern mot den befintliga inköpsordern, baserat på inställningen för negativa dagar. Det här planeringsresultatet är också korrekt och körningstiden för MPS kan vara kortare. I det här fallet är det inte nödvändigt att förstå och veta hur man arbetar med åtgärdsmeddelandena.
 

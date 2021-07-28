@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b112bb453e0840120c63038bf8d6897fbf5ff288
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 637d8d211f59711aafe9357dcd48d48f861f722d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798763"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353118"
 ---
 # <a name="navigation-menu-module"></a>Modul för navigeringsmeny
 
@@ -33,7 +33,7 @@ Det primära syftet med moduler för navigeringsmenyn är att låta användarna 
 Du kan lägga till modulen navigeringsmeny på en sidhuvudmodul på en sida. I det Fabrikam-temat visar navigeringsmenyn två nivåer som standard. I det Starter-temat visar navigeringsmenyn tre nivåer som standard. Om du vill ändra antalet nivåer måste du ha ett visningstillägg i temat.
 
 Följande illustration visar ett exempel på en navigeringsmeny för Fabrikam-webbplatsen med två nivåer av kategorihierarki och vissa statiska menyalternativ.
-![Exempel på en modul för navigeringsmeny](./media/ecommerce-header.png)
+![Exempel på en modul för navigeringsmeny.](./media/ecommerce-header.png)
 
 ## <a name="navigation-menu-module-properties"></a>Egenskaper för modulen navigeringsmeny
 
@@ -50,7 +50,7 @@ Följande illustration visar ett exempel på en navigeringsmeny för Fabrikam-we
 | Rotmeny | sträng | Den här egenskapen kan användas för att definiera text för en anpassad rot om egenskapen **Visa rotmeny** är inställd på **True**. |
 
 Följande illustration visar ett exempel på en kategoribild som visas på navigeringsmenyn för webbplatsen Fabrikam.
-![Exempel på en navigeringsmodul med kategoribilder](./media/ecommerce-categoryimages.PNG)
+![Exempel på en navigeringsmodul med kategoribilder.](./media/ecommerce-categoryimages.PNG)
 
 ## <a name="add-a-navigation-menu-module-to-a-header-module"></a>Lägg till en modul för navigeringsmeny i en sidhuvudmodul
 

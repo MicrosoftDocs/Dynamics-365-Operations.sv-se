@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b5c17a65a54ae88118bc5ecaa25cdadb67861129
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 037c9fb8dfc7aca4535540d92aae3e0ce0f8c638
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802777"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352166"
 ---
 # <a name="process-customer-order-pickups-in-pos"></a>Bearbeta upphämtning av kundorder i POS
 
@@ -32,7 +32,7 @@ Om du är butiksanvändare kan du utföra upphämtningen genom att använda anti
 
 Om den valda ordern eller orderraderna inte är konfigurerad för upphämtning i denna specifika butik, eller om ordern redan har plockats upp helt, kommer åtgärden **Upphämtning** inte att vara tillgänglig.
 
-![Upphämtningsåtgärd](media/pickupoperation.png)
+![Upphämtningsåtgärd.](media/pickupoperation.png)
 
 I Microsoft Dynamics 365 Commerce version 10.0.17 och senare kan funktionen **Förbättrad användarupplevelse för bearbetning av upphämtningsorder i POS** aktiveras via Funktionshanteringen i Commerce-administrationen. Om den här funktionen är inaktiverad kan användarna inte välja upphämtningskvantiteter. Som standard är den fullständiga kvantiteten som beställts för raden den kvantitet som ska hämtas upp. Den här erfarenheten kan vara problematisk, detta eftersom användarna kan glömma bort att välja vissa artiklar för upphämtning när de utför upphämtningen via orderuppfyllelse.
 
@@ -40,13 +40,13 @@ Funktionen **Förbättrad användarupplevelse för bearbetning av upphämtningso
 
 När funktionen **Förbättra användarupplevelse för bearbetning av upphämtningsorder i POS** är aktiverad och du väljer åtgärden **Hämta**, visas dialogrutan **Hämta**. Där kan du välja de artiklar och kvantiteter som ska hämtas upp. Som standard betraktas all beställd kvantitet som har lager i plockad eller packad status som tillgänglig för upphämtning. Som standard anges den kvantiteten som upphämtningskvantitet. Du kan ändra kvantiteten som angavs om kvantiteten inte har värdet 0 (noll) och inte överskrider den totala öppna kvantiteten (dvs. ej fakturerad) för den valda raden.
 
-![Dialogrutan Hämta](media/pickupselect.png)
+![Dialogrutan Hämta.](media/pickupselect.png)
 
 När du har valt de kvantiteter som ska hämtas och sedan valt **Hämta** visas transaktionssidan. Om funktionen för [flerkanalsbetalningar](omni-channel-payments.md) har aktiverats och det finns förauktoriserade kreditkortsbetalningar registrerade, måste du tillämpa betalningen.
 
 På transaktionssidan beräknar systemet de belopp som förfaller genom beräkning av det totala beloppet som förfaller för de valda upphämtningsartiklarna och sedan subtrahera eventuella tidigare använda insättningar eller auktoriserade kreditkortsbetalningar. Du måste bearbeta betalning för att slutföra upphämtningstransaktionen. Om [skärmlayouten](pos-screen-layouts.md) på transaktionssidan har konfigurerats att omfatta åtgärden **Slutför transaktion** och inget belopp förfaller, kan du slutföra transaktionen utan att välja något betalsätt. Om åtgärden **Slutför transaktion** inte finns att tillgå kan du välja länken **Beloppet 0,00 USD förfaller** i fönstret **Summor** för att slutföra transaktionen utan att behöva välja ett betalsätt.
 
-![Transaktionssida för en upphämtningstransaktion för kundorder](media/pickupcart.png)
+![Transaktionssida för en upphämtningstransaktion för kundorder.](media/pickupcart.png)
 
 ## <a name="changing-pickup-lines-or-quantities"></a>Ändra upphämtningsrader eller kvantiteter
 
@@ -54,7 +54,7 @@ Om du måste ändra upphämtningskvantiteten efter det att du har valt artiklarn
 
 Om funktionen **Förbättra användarupplevelsen för upphämtning av order i kassan** är aktiverad, kan organisationer lägga till en knapp för åtgärden **Ändras upphämtningsrader** på transaktionens skärmlayout. När du har skapat kundvagnen för upphämtningstransaktion i POS och valt artiklar kan du välja **Ändra upphämtningsrader** om du måste ändra hämtningsartiklar men inte vill annullera hela transaktionen. I dialogrutan **Ändra upphämtningsrader** som visas, kan du ändra upphämtningsartiklarna och kvantiteterna. Transaktionsvagnen uppdateras sedan efter dina ändringar.
 
-![Ändra dialogrutan Upphämtningsartiklar](media/pickupchange.png)
+![Ändra dialogrutan för upphämtningsartiklar.](media/pickupchange.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

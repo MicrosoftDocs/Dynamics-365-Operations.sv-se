@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4ee5a074c5c6d2e2144181e39917b1cc42dfc015
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: e3dc83b71300387c8123f5533522c5ead7d86333
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944857"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349194"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Förbättra prestanda för ER-lösningar genom att lägga till parametriserade datakällor för BERÄKNADE FÄLT
 
@@ -56,7 +56,7 @@ Det första steget är att importera exempel ER-lösningen för att generera en 
     2. Välj **bläddra** om du vill välja en fil för ER-konfigurationen i XML-format.
     3. Välj **OK**.
 
-![Importerade konfigurationer på sidan Konfigurationer](./media/er-calculated-field-ds-performance-imported-configurations.png)
+![Importerade konfigurationer på sidan Konfigurationer.](./media/er-calculated-field-ds-performance-imported-configurations.png)
 
 ## <a name="review-the-sample-er-solution"></a>Granska ER-exempellösning
 
@@ -76,7 +76,7 @@ Det första steget är att importera exempel ER-lösningen för att generera en 
 
     Modellmappningen i den här konfigurationen implementerar basdatamodellen för alla ER-format som skapas för den här modellen och körs i Finance. Detta innebär att innehållet i datakällan **Trans** visas för ER-format, t.ex. abstrakta datakällor **modell**.
 
-    ![Trans datakälla på sidan för modellmappningsdesigner](media/er-calculated-field-ds-performance-mapping-1.png)
+    ![Trans-datakälla på sidan för modellmappningsdesigner.](media/er-calculated-field-ds-performance-mapping-1.png)
 
 4. Stäng sidan **modellmappningsdesigner**.
 5. Stäng sidan **modell till mappning av datakälla**.
@@ -90,7 +90,7 @@ Det första steget är att importera exempel ER-lösningen för att generera en 
 
     Det här ER-formatet är utformat för att skapa en leverantörstransaktionsrapport i XML-format.
 
-    ![Formatera datakällor och konfigurerade bindningar för formatelement på sidan formatdesigner](media/er-calculated-field-ds-performance-format.png)
+    ![Formatdatakällor och konfigurerade bindningar för formatelement på sidan Formatdesigner.](media/er-calculated-field-ds-performance-format.png)
 
 5. Stäng sidan **Formatdesigner**.
 
@@ -103,7 +103,7 @@ Anta att du har skapat den första versionen av ER-lösningen. Du vill nu testa 
 1. Välj företaget **DEMF**.
 2. Följ stegen i [Aktivera ER-prestationsspårning](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace) för att generera en prestandaspårning medan ett ER-format körs.
 
-    ![Dialogruta Användarparametrar](media/er-calculated-field-ds-performance-format-user-parameters.png)
+    ![Dialogrutan Användarparametrar.](media/er-calculated-field-ds-performance-format-user-parameters.png)
 
 ### <a name="run-the-er-format"></a><a id="run-format"></a>Kör ER-format
 
@@ -124,7 +124,7 @@ Ny information är nu tillgänglig för vissa datakällobjekt i den aktuella mod
 - Den faktiska tid som användes för att hämta data genom att använda datakällan
 - Samma tid uttryckt i procent av den totala tid som användes för att köra hela modellmappningen
 
-![Körningstid på sidan modellmappningsdesigner](./media/er-calculated-field-ds-performance-mapping-2.png)
+![Information om körningstid på sidan Modellmappningsdesigner.](./media/er-calculated-field-ds-performance-mapping-2.png)
 
 Rutnätet **Prestandastatistik** visar att datakällan **Trans** anropar VendTrans-registret en gång. Värdet **\[265\]\[Q:265\]** för datakällan **Trans** anger att 265 leverantörstransaktioner har hämtats från appregistret och återgått till datamodellen.
 
@@ -137,7 +137,7 @@ I rutnätet **Prestandastatistik** visas också att den aktuella modellmappninge
 
 - Leverantörsregistret anropas för varje förbrukad leverantörstransaktion även om de hämtade transaktionerna bara har bokförts för fem leverantörer. Av 530 samtal, 525 är dubbletter. Följande illustration visar meddelandet som du får om att ringa upp (databas begäran).
 
-![Meddelande om dubbla databasbegäranden på sidan modellmappningsdesigner](./media/er-calculated-field-ds-performance-mapping-2a.png)
+![Meddelande om dubbla databasbegäranden på sidan Modellmappningsdesigner.](./media/er-calculated-field-ds-performance-mapping-2a.png)
 
 För den totala modellmappningens körningstid (ungefär åtta sekunder), lägg märke till att mer än 80 procent (cirka sex sekunder) har hämtats till värden från apptabellen för VendTable. Procentandelen är för stor för två attribut för fem leverantörer, jämfört med mängden information från apptabellen VendTrans.
 
@@ -172,7 +172,7 @@ Gör så här om du vill använda cachelagring och en datakälla för typen **be
     3. I dialogrutan i fältet **Namn**, ange **Ruta**.
     3. Välj **OK**.
 
-    ![Ruta datakälla på sidan för modellmappningsdesigner](./media/er-calculated-field-ds-performance-mapping-3.png)
+    ![Rutdatakälla på sidan för modellmappningsdesigner.](./media/er-calculated-field-ds-performance-mapping-3.png)
 
 6. Följ dessa steg för att lägga till en parameteriserad datakälla för typen **beräknat fält**:
 
@@ -208,7 +208,7 @@ Gör så här om du vill använda cachelagring och en datakälla för typen **be
 
 9. Välj **Spara**.
 
-    ![Vend datakälla på sidan för modellmappningsdesigner](./media/er-calculated-field-ds-performance-mapping-4.png)
+    ![Leverantörsdatakälla på sidan för modellmappningsdesigner.](./media/er-calculated-field-ds-performance-mapping-4.png)
 
 10. Stäng sidan **modellmappningsdesigner**.
 11. Stäng sidan **modellmappningar**.
@@ -232,11 +232,11 @@ Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i det här avs
 
 Observera att justeringarna som du har gjort av modellmappningen har eliminerat dubbla frågor till databasen. Antalet anrop till databasregister och datakällor för den här modellmappningen har också minskats.
 
-![Spåra information på sidan för modellmappningsdesigner 1](./media/er-calculated-field-ds-performance-mapping-5.png)
+![Spåra information på sidan för modellmappningsdesigner 1.](./media/er-calculated-field-ds-performance-mapping-5.png)
 
 Den totala körningstiden har reducerats omkring 20 gånger (från cirka 8 sekunder till cirka 400 millisekunder). Därför har hela ER-lösningens prestanda förbättrats.
 
-![Spåra information på sidan för modellmappningsdesigner 2](./media/er-calculated-field-ds-performance-mapping-5a.png)
+![Spåra information på sidan för modellmappningsdesigner 2.](./media/er-calculated-field-ds-performance-mapping-5a.png)
 
 ## <a name="appendix-1-download-the-components-of-the-sample-microsoft-er-solution"></a><a name="appendix1"></a>Tillägg 1: Hämta komponenterna i exemplet Microsoft ER-lösning
 

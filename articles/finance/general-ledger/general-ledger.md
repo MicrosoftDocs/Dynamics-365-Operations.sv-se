@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 65431
+ms.custom:
+- "65431"
+- intro-internal
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 403cd616faef2f856c21a771d46607c41987f0bb
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: dc5bc56ccbbafa16d1de5da89f45354d281cbd6a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897539"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348996"
 ---
 # <a name="general-ledger-home-page"></a>Startsida för redovisning
 
@@ -34,10 +36,10 @@ Använd redovisningen när du vill definiera och hantera den juridiska personens
 Du kan allokera, eller fördela, monetära belopp på ett eller flera konton eller konto-/ och dimensionskombinationer som baseras på allokeringsregler. Det finns två typer av allokeringar: fasta och variabla. Du kan också kvitta transaktioner mellan redovisningskonton och revalvera valutabelopp. I slutet av ett räkenskapsår måste du skapa UB-transaktioner och förbereda redovisningssystemet för det nya räkenskapsåret. Du kan använda konsolideringsfunktionen för att kombinera de finansiella resultaten för flera juridiska personer till resultat för en enda, konsoliderad organisation. Dotterbolagen kan finnas in samma databas eller i separata databaser.
 
 - [Översikt över konsolidering och eliminering](../budgeting/consolidation-elimination-overview.md)
-- [Kontosaldon i redovisningskontot](general-ledger-account-balances.md)
+- [Balanser på huvudbokskonto](general-ledger-account-balances.md)
 - [Ekonomiska dimensioner](financial-dimensions.md)
 
-[![Affärsprocess](./media/GL-process.PNG)](./media/GL-process.PNG)
+[![Affärsprocess.](./media/GL-process.PNG)](./media/GL-process.PNG)
 
 ## <a name="sales-tax"></a>Moms
 Alla företag samlar in och betalar skatt till olika skattemyndigheter. Reglerna och satserna varierar efter land/region, delstat, kommun och ort.

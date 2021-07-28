@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0788091755fb784621e972a0573f7004952e8e11
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4622b2a26ac6193b1408c029389e4d9f55162418
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792109"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355815"
 ---
 # <a name="ratings-and-reviews-overview"></a>Översikt över omdömen och recensioner
 
@@ -39,7 +39,7 @@ Funktionen för omdömen och recensioner i Dynamics 365 Commerce är en flerkana
 
 Följande illustration visar hur lösningen för omdömen och recensioner fungerar i Dynamics 365 Commerce.
 
-![Omdömen och recensioner i Dynamics 365 for Commerce](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
+![Omdömen och recensioner i Dynamics 365 for Commerce.](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
 
 Lösningen för omdömen och recensioner i Dynamics 365 Commerce använder Azure Cognitive Services för att ge en automatisk kontroll av ord på 40 språk. Eftersom det inte behövs något mänskligt godkännande minskar du redigeringskostnaderna. Systemet erbjuder även redigeringsverktyg som kan användas för att svara på kundproblem, återrapportering och upphämtningsbegäranden och för att adressera dataförfrågningar från användare.
 

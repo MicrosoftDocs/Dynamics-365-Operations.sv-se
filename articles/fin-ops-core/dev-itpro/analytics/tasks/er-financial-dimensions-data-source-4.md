@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a06936da71d7b05f312a99c8c11d148403d29c3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 11d15a9e932eb02fc1bc8960d9c7ecbf4b57a4e8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752398"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356305"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-4---run-the-report"></a>ER Använd ekonomiska dimensioner som en datakälla (Del 4 - Kör rapporten)
 
@@ -34,19 +34,19 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 2. Expandera "Financial dimensions sample model" i trädet.
 3. Välj "Financial dimensions sample model\Ledger journal report" i trädet.
 4. Klicka på Kör.
-![Sidan ER-konfigurationer](../media/er-financial-dimensions-guides-run1.png)
+![Sidan ER-konfigurationer.](../media/er-financial-dimensions-guides-run1.png)
 5. Ange eller välj ett värde i namnfältet Dimensions.
     * Ange följande information om du vill välja alla dimensioner i det aktuella företaget: BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project  
-![Sidan ER-konfigurationer](../media/er-financial-dimensions-guides-run2.png)
+![Sidan ER-konfigurationer.](../media/er-financial-dimensions-guides-run2.png)
 6. Expandera avsnittet Poster som ska ingå.
 7. Klicka på Filter.
 8. Markera raden för redovisningsjournalregistret (Ledger journal table) och fältet för journalens batchnummer (Journal batch number).
 9. Ange "00057" i fältet Criteria.
 10. Klicka på OK.
 11. Klicka på OK.
-![Sidan ER-konfigurationer](../media/er-financial-dimensions-guides-run3.png)
+![Sidan ER-konfigurationer.](../media/er-financial-dimensions-guides-run3.png)
     * Granska den genererade utleveransen. Ekonomiska dimensioner från den motsvarande dimensioner visas för varje transaktion i den valda batchen. Kör denna rapport och välj olika dimensioner för att se att rapporten inte är beroende av antalet valda dimensioner eller antalet dimensioner som konfigureras för denna instans.  
-![Sidan ER-konfigurationer](../media/er-financial-dimensions-guides-run4.png)
+![Sidan ER-konfigurationer.](../media/er-financial-dimensions-guides-run4.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

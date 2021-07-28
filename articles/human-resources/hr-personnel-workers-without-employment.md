@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2021-04-06
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f6fbada6feb55b8627b1aa1ddfe367177edb7a0a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 71cb119e533e64b14badf65f55e8c4d5aa4c4b2f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051723"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356594"
 ---
 # <a name="workers-without-employment"></a>Arbetare utan anställning
 
@@ -42,13 +42,13 @@ I listan **Medarbetare utan anställning** kan du ta bort listade individer. Som
 
 2. På fliken **behörigheter** filtrera listan **behörigheter** till **Underhåll arbetare**.
 
-   [![Lista över filterbehörigheter](./media/hr-personnel-workers-without-employment-filter.png)](./media/hr-personnel-workers-without-employment-filter.png)
+   [![Lista över filterbehörigheter.](./media/hr-personnel-workers-without-employment-filter.png)](./media/hr-personnel-workers-without-employment-filter.png)
 
 3. I kolumnen **Referenser**, välj **Visa menyobjekt**.
 
 4. I kolumnen **Visa menyobjekt** väljer du **HcmWOrkersWithoutEmployment**.
 
-   [![Välj formulär](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
+   [![Välj formulär.](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
 
 5. Ange behörigheten **Ta bort** som **Beviljande**.
 
@@ -56,6 +56,6 @@ I listan **Medarbetare utan anställning** kan du ta bort listade individer. Som
 
 7. Markera **Publicera alla**.
 
-   [![Publicera ändringar](./media/hr-personnel-workers-without-employment-publish.png)](./media/hr-personnel-workers-without-employment-publish.png)
+   [![Publicera ändringar.](./media/hr-personnel-workers-without-employment-publish.png)](./media/hr-personnel-workers-without-employment-publish.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

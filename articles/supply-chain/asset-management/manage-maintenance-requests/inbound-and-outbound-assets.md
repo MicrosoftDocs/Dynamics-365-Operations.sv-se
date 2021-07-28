@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1a2bac914330058400a7e4d7d355bd4a00a4522f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 86d85d280b32834c36691535a019ef6d5141bf93
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816806"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356031"
 ---
 # <a name="inbound-and-outbound-assets"></a>Inkommande och avgående tillgångar
 
@@ -42,7 +42,7 @@ Inställningen av tillgångshantering avgör om du kan arbeta med inkommande och
 3. Välj **uppdatera underhållsbegärantillstånd**.
 4. Välj **inkommande** (eller ett annat livscykeltillstånd som du har skapat för inkommande tillgångar) och välj **OK**.
 
-![Registrera tillgångar som inkommande](media/07-manage-maintenance-requests.png)
+![Registrera tillgångar som inkommande.](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Registrera inkommande tillgångar som inlevererade
 
@@ -51,7 +51,7 @@ Inställningen av tillgångshantering avgör om du kan arbeta med inkommande och
 3. Ta emot **anläggningstillgångar**
 4. I fältet **Inlevererad** ställer du in datum och tid. Välj sedan **OK**. Posten tas bort från listsidan **inkommande tillgångar**.
 
-![Registrera inkommande tillgångar som inlevererade](media/08-manage-maintenance-requests.png)
+![Registrera inkommande tillgångar som inlevererade.](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Registrera tillgångar som utgående
 

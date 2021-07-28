@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-19
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 75913edcbac0151d5d27d866ff5430b194c62738
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 447d319f5a96851f7eb3104b3330026d269e7dd1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815270"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358819"
 ---
 # <a name="sales-tax-specification-by-ledger-transaction-report"></a>Momsspecifikation per redovisningstransaktion (rapport)
 [!include [banner](../includes/banner.md)]
@@ -54,7 +54,7 @@ När du genererar den här rapporten visas följande standardfält. Du kan anvä
 
 Om du bara vill visa icke-momskonton i rapporten ställer du in ett filtervillkor, t.ex. en asterisk (\*), som visas på bilden nedan.
 
-![Rapporten visar icke-momskonton](media/taxspecperledgertrans.png)
+![Rapport som visar icke-momskonton.](media/taxspecperledgertrans.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

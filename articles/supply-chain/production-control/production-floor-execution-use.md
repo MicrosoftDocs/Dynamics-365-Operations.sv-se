@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 0ece83a20a33a8f23e8700d1b5d680a11d64fea0
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: c8c50a9a6f9f3c6582e9fd0f28080a3259faab21
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907727"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349780"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hur arbetare använder körningsgränssnittet för produktionsgolvet
 
@@ -32,7 +32,7 @@ Innan arbetarna kan börja använda enheten måste han eller hon förbereda den 
 
 När enheten har förberett visas inloggningssidan på den. På den här sidan visas information om status för jobb för den lokala arbetsgruppen. Denna information uppdateras regelbundet. På sidan använder arbetarna sin ID-bricka för att logga in. Även om arbetarna inte behöver ha ett användarkonto för Supply Chain Management, måste de ha ett konto för *tidsregistrerad arbetare* som de kan använda när de loggar in.
 
-![Inloggningssida för körningsgränssnittet för produktionsgolvet](media/pfei-sign-in-page.png "Inloggningssida för körningsgränssnittet för produktionsgolvet")
+![Inloggningssida för körningsgränssnittet för produktionsgolv.](media/pfei-sign-in-page.png "Inloggningssida för körningsgränssnittet för produktionsgolvet")
 
 I de återstående avsnitten i det här ämnet beskrivs hur arbetare interagerar med gränssnittet.
 
@@ -40,7 +40,7 @@ I de återstående avsnitten i det här ämnet beskrivs hur arbetare interagerar
 
 Fliken **Alla jobb** tillhandahåller en jobblista som visar alla produktionsjobb som har statusen *inte startad*, *stoppad* eller *startad*. (Det här fliknamnet är anpassningsbart och kan vara ett annat för systemet.)
 
-![Fliken alla jobb](media/pfei-all-jobs-tab.png "Fliken alla jobb")
+![Fliken Alla jobb.](media/pfei-all-jobs-tab.png "Fliken alla jobb")
 
 Det finns följande kolumner i jobblistan. Siffrorna motsvarar siffrorna i föregående illustration.
 
@@ -59,7 +59,7 @@ Det finns följande kolumner i jobblistan. Siffrorna motsvarar siffrorna i före
 
 Flikarna **Aktiva jobb** visar en lista över alla jobb som den inloggade arbetaren redan har startat. (Det här fliknamnet är anpassningsbart och kan vara ett annat för systemet.)
 
-![Fliken aktiva jobb](media/pfei-active-jobs-tab.png "Fliken aktiva jobb")
+![Fliken Aktiva jobb.](media/pfei-active-jobs-tab.png "Fliken aktiva jobb")
 
 Listan med aktiva jobb har följande kolumner:
 
@@ -76,7 +76,7 @@ Listan med aktiva jobb har följande kolumner:
 
 Fliken **Min maskin** låter arbetare välja en tillgång som är ansluten till en maskinresurs inom filteruppsättningen på fliken **Alla jobb**. Arbetaren kan sedan se tillståndet och hälsan för den valda tillgången genom att läsa värden för upp till fyra valda räknare och listor över senaste underhållsförfrågningar och registrerade driftstopp. Arbetaren kan också begära underhåll av den valda tillgången och registrera och redigera maskiners drifttid. (Det här fliknamnet är anpassningsbart och kan vara ett annat för systemet.)
  
-![Min maskinflik](media/pfei-my-machine-tab.png "Min maskinflik")
+![Fliken Min maskin.](media/pfei-my-machine-tab.png "Min maskinflik")
 
 Fliken **Min maskin** har följande kolumner. Siffrorna motsvarar siffrorna i föregående illustration.
 
@@ -87,7 +87,7 @@ Fliken **Min maskin** har följande kolumner. Siffrorna motsvarar siffrorna i f�
 
 1. **Inställningar** - Välj kugghjulsikonen för att öppna en dialogruta där du kan välja vilka räknare som ska visas för den valda maskintillgången. Värden för dessa räknare visas längst upp på fliken **Tillgångshantering**. Menyn **Inställningar** (visas i följande skärmdump) kan du aktivera upp till fyra räknare. För varje räknare som du vill aktivera använder du sökfältet högst upp i panelen för att välja en räknare. Sökfältet listar alla räknare som är kopplade till tillgången som valts högst upp på sidan **Tillgångshantering**. Ställ in varje räknare till att övervaka antingen det **aggregerade** värdet eller det senaste **faktiska** värdet för räknaren. Om du till exempel ställer in en räknare som spårar hur många timmar maskinen har körts ska du ställa in den på **Aggregerat**. Om du ställer in en räknare för att mäta den senaste uppdaterade temperaturen eller försiktighet, bör du ställa in den på **Faktisk**. Välj **OK** om du vill spara inställningarna och stänga dialogrutan.
 
-    ![Inställningar för Min maskinflik](media/pfei-my-machine-tab-settings.png "Inställningar för Min maskinflik")
+    ![Inställningar för Min maskinflik.](media/pfei-my-machine-tab-settings.png "Inställningar för Min maskinflik")
 
 1. **Begär underhåll** - Välj den här knappen om du vill öppna en dialogruta där du kan skapa en underhållsbegäran. Du kan ange en beskrivning och en notering. Denna begäran visas för en användare av Supply Chain Management som sedan kan konvertera underhållsbehovet till en underhållsorder.
 1. **Registrera drifttid** - Välj den här knappen om du vill öppna en dialogruta där du kan registrera maskiners drifttid. Du kan välja en orsakskod och ange ett datum/tidsintervall för nedtiden. Registreringen av maskinens drifttid används för att beräkna maskintillgångens effektivitet.
@@ -98,7 +98,7 @@ Fliken **Min maskin** har följande kolumner. Siffrorna motsvarar siffrorna i f�
 
 Arbetare startar ett produktionsjobb genom att välja ett jobb på fliken **Alla jobb** och sedan välja **Starta jobb** för att öppna dialogrutan **Starta jobb**.
 
-![Dialogrutan Startjobb](media/pfei-start-job-dialog.png "Dialogrutan Startjobb")
+![Dialogrutan Starta jobb.](media/pfei-start-job-dialog.png "Dialogrutan Startjobb")
 
 Arbetare använder dialogrutan **Startjobb** för att bekräfta produktionskvantiteten och sedan starta jobbet. Arbetare kan justera kvantiteten genom att markera fältet **Kvantitet** och sedan använda det numeriska tangentbordet som visas. Arbetstagarna väljer sedan **Start** för att börja arbeta med jobbet. Dialogrutan **Starta jobb** stängs och jobbet läggs till på fliken **Aktiva jobb**.
 
@@ -108,13 +108,13 @@ Arbetare kan starta ett jobb som har status. När en arbetare startar ett jobb m
 
 När en arbetare slutför eller delvis slutför ett jobb kan de rapportera bra kvantiteter som producerats genom att välja ett jobb på fliken **Aktiva jobb** och flik **Rapportera progress**. Sedan i dialogrutan **Rapportera framsteg** anger arbetaren den goda kvantiteten med hjälp av det numeriska tangentbordet. Kvantiteten är tom som standard. När en kvantitet har angivits kan han eller hon uppdatera status för jobbet till *pågår*, *stoppad* eller *slutfört*.
 
-![Dialogrutan rapportera framsteg](media/pfei-report-progress-dialog.png "Dialogrutan rapportera framsteg")
+![Dialogrutan Rapportera framsteg.](media/pfei-report-progress-dialog.png "Dialogrutan rapportera framsteg")
 
 ## <a name="reporting-scrap"></a>Rapportera kassation
 
 När en arbetare slutför eller delvis slutför ett jobb kan de rapportera kassation genom att välja ett jobb på **Aktiva jobb** och flik **Rapportera kassation**. Sedan i dialogrutan **Rapportera kassation** anger arbetaren kassationskvantiteten med hjälp av det numeriska tangentbordet. Arbetaren väljer också en orsak (*ingen*, *maskin*, *operatör* eller *material*).
 
-![Dialogrutan rapportera kassation](media/pfei-report-scrap-dialog.png "Dialogrutan rapportera kassation")
+![Dialogrutan rapportera kassation.](media/pfei-report-scrap-dialog.png "Dialogrutan rapportera kassation")
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Slutföra ett jobb och starta ett nytt jobb
 

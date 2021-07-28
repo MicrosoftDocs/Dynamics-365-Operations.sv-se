@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7b4734fd363cd5ee44f228e0c0f9ce73abad1aaa
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 633717d77f4d31463d51c575d837a65dbb0e5ce2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021862"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358737"
 ---
 # <a name="manage-user-roles-in-microsoft-teams"></a>Hantera användarroller i Microsoft Teams
 
@@ -30,7 +30,7 @@ När du skapar ett team för varje butik eller kanal i Teams skapas ett gruppmed
 
 I följande bild visas ett exempel på en lista över gruppmedlemmar och deras användarroller i Microsoft Teams administrationscentret.
 
-![Teammedlemmar och användarroller i Microsoft Teams administrationscentret](media/d365-commerce-teams-integration-user-roles.png)
+![Teammedlemmar och användarroller i administrationscentret för Microsoft Teams.](media/d365-commerce-teams-integration-user-roles.png)
 
 Mer information finns i [Tilldela teamägare och medlemmar i Microsoft Teams](/microsoftteams/assign-roles-permissions).
 

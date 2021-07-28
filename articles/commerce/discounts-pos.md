@@ -16,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: a9fd5a90d59ec329f8d4a2515e657fb822c098b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d251eb02e7d9db1e61ba8bb6531c90e0e23717b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792857"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356888"
 ---
 # <a name="show-discounts-in-pos"></a>Visa rabatter i POS
 
@@ -33,7 +33,7 @@ Erbjudanden spelar en viktig roll när det gäller att motivera kunder som fatta
 
 Commerce inkluderar en operation med namnet "Visa alla rabatter". Den här åtgärden visar alla rabatter som för närvarande körs i en butik. Åtgärden "Visa alla rabatter" kan mappas till en knapp i POS, och den knappen kan läggas till på **Välkomstsidan** eller på **transaktionssidan**. Följande illustration visar ett exempel på listsidan **alla rabatter** som är öppna.
 
-![Sidan alla rabatter](./media/View_all_discounts.png "Sidan alla rabatter")
+![Sidan Alla rabatter.](./media/View_all_discounts.png "Sidan alla rabatter")
 
 Om du vill visa rabatter letar systemet efter alla rabatter som matchar ett eller flera av följande villkor:
 
@@ -61,11 +61,11 @@ Följande illustrationer visar logiken som avgör vilka rabatter som ska visas i
 
 Följande bild visar den logik som används när concurrency-läge för rabatt är inställd på **bästa pris och sammansatt inom prioritet, aldrig sammansatt över prioritet**.
 
-![Logik för bästa pris och förening inom prioritet, aldrig sammansatt över prioritet](./media/Model_1.png "Logik för bästa pris och förening inom prioritet, aldrig sammansatt över prioritet").
+![Logik för bästa pris och sammansättning inom prioritet, aldrig sammansättning över prioritet.](./media/Model_1.png "Logik för bästa pris och förening inom prioritet, aldrig sammansatt över prioritet").
 
 Följande bild visar den logik som används när concurrency-läge för rabatt är inställd på **bästa pris endast inom prioritet, alltid sammansatt över prioritet**.
 
-![Logik för bästa pris endast inom prioritet, alltid sammansatt över prioritet](./media/Model_2.png "Logik för bästa pris endast inom prioritet, alltid sammansatt över prioritet").
+![Logik för bästa pris endast inom prioritet, alltid sammansatt över prioritet.](./media/Model_2.png "Logik för bästa pris endast inom prioritet, alltid sammansatt över prioritet").
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

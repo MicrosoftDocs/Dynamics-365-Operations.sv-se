@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de317c2fae4607f5b8b887dd5e866d812043dcd3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5f35dc48dbdf89e963108e9e8ef6faec326f970
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799527"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349732"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Aktivera och använda delning av flera kanaler
 
@@ -48,15 +48,15 @@ Gör så här om du vill aktivera delning mellan flera kanaler i Commerce webbpl
 1. Gå till **Webbplatsinställningar \> Funktioner**.
 1. Ställ in alternativet för funktionen **Flera kanaler** till **på**.
 
-    ![Alternativet för flera kanaler anges till på Commerce webbplatsskaparen](./media/enabling-cross-channel-sharing.png)
+    ![Alternativet för flera kanaler angivet som På i webbplatsskaparen för Commerce.](./media/enabling-cross-channel-sharing.png)
 
 När du har aktiverat delning av flera kanaler visas information om flera kanaler i avsnittet **kanaler** på **webbplatsinställningar \> funktioner**, som exemplet i bilden nedan visar.
 
-![Information om kanaler visas efter att delning mellan kanaler har aktiverats](./media/channels-cross-channel.png)
+![Information om kanaler visas efter att delning mellan kanaler har aktiverats.](./media/channels-cross-channel.png)
 
 När du har aktiverat delning av flera kanaler kommer fältet **kanal** högst upp till höger i Commerce webbplatsskaparen inkludera ett alternativ för **Onlinebutik i flera kanaler** som du kan använda för att hantera innehåll i flera kanaler, vilket visas i bilden nedan.
 
-![Alternativet för onlinebutik i flera kanaler i fältet kanaler när delning mellan kanaler har aktiverats](./media/cross-channel-dropdown.png)
+![Alternativet för onlinebutik i flera kanaler i fältet Kanaler när delning mellan kanaler har aktiverats.](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>Skapa och använda delning av innehåll
 

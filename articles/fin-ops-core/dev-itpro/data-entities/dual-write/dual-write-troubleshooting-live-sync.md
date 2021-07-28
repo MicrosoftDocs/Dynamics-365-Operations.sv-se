@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 1c0dfebb3ef442f67d8489d7aed00305c02cf410
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2694f48b295ba727870f068e7062f7cdcababdbe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748907"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350798"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Felsöka problem med direkt synkronisering
 
@@ -73,21 +73,21 @@ Om det finns data på båda sidor och du har bekräftat att problemet inte är d
 
 Felmeddelandet "Felaktig begäran" kan visas som liknar följande exempel när du skapar data i en Finance and Operations-app.
 
-![Exempel på felmeddelandet Felaktig begäran](media/error_record_id_source.png)
+![Exempel på felmeddelandet Felaktig begäran.](media/error_record_id_source.png)
 
 För att åtgärda problemet måste du tilldela rätt säkerhetsroll till teamet för den mappade affärsenheten Dynamics 365 Sales eller Dynamics 365 Customer Service för att aktivera den saknade behörigheten.
 
 1. I Finance and Operations-appen, leta reda på den affärsenhet som är mappad till anslutningsuppsättningen för dataintegration.
 
-    ![Organisationsmappning](media/mapped_business_unit.png)
+    ![Organisationsmappning.](media/mapped_business_unit.png)
 
 2. Logga in på miljön i den modellstyrda appen i Dynamics 365, gå till **Inställningar \> Säkerhet** och hitta teamet för den mappade affärsenheten.
 
-    ![Team av den mappade affärsenheten](media/setting_security_page.png)
+    ![Team av den mappade affärsenheten.](media/setting_security_page.png)
 
 3. Öppna sidan för teamet som ska redigeras och välj sedan **Hantera Roller** för att öppna dialogrutan **Hantera teamroller**.
 
-    ![Knappen Hantera roller](media/manage_team_roles.png)
+    ![Knappen Hantera roller.](media/manage_team_roles.png)
 
 4. Tilldela rollen som har läs-/skrivbehörighet för de relevanta tabellerna och välj sedan **OK**.
 

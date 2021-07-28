@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b617ce4358a6b6aaacea9069d8db40c4aa82b7ed
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 01797b5a1c29ee608e7796319a18d6402b542409
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798715"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353764"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Visuella konfigurationer för kassaanvändargränssnitt
 
@@ -32,15 +32,15 @@ Användargränssnittet (UI) för Microsoft Dynamics 365 Commerce kassa (POS) kan
 
 Följande bild visar förhållandet mellan de olika enheter som utgör de konfigurerbara elementen i Användargränssnittet för kassa.
 
-![Entiteter för kassaskärmlayout](../commerce/media/POS-layout-configuration-entities-diagram.png)
+![Entiteter för kassaskärmlayout.](../commerce/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>Visuell profil
 
 Visuella profiler tilldelas till kassor och de anger visuella element som är kassaspecifika och delade för användare. Alla användare som loggar in på POS ser samma tema, layout, färger och bilder.
 
-![Välkommen till POS-skärmen med ljust tema](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
+![Välkomstskärm för kassa med ljust tema.](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
-![POS-transaktionsskärmen med mörkt tema](../commerce/media/POS-Transaction-Screen-with-Dark-theme.png)
+![Kassatransaktionsskärm med mörkt tema.](../commerce/media/POS-Transaction-Screen-with-Dark-theme.png)
 
 - **Profilnummer** – Profilnumret är en unik identifierare för den visuella profilen.
 - **Beskrivning** – Du kan ange ett beskrivande namn som gör det lättare att identifiera korrekt profil för din situation.
@@ -65,15 +65,15 @@ Du måste köra distributionschemajobbet **1090** (**Kassor**) för att synkroni
 
 Skärmlayoutkonfigurationen avgör åtgärderna, innehållet i och placeringen av gränssnittskontrollerna på kassans **välkomst**-skärm och **transaktions**-skärmen.
 
-![Visa vy för kassaskärmslayout](../commerce/media/POS-Screen-Layout-View.png)
+![Layoutvy för kassaskärm.](../commerce/media/POS-Screen-Layout-View.png)
 
 - **Välkomstskärm**- I de flesta fall är välkomstskärmen den sida som användare ser när de först loggar in i POS. Välkomstskärmen kan bestå av ett varumärke och knappsatser som ger åtkomst till kassaåtgärder. Åtgärder som inte är specifika för den aktuella transaktionen är oftast placerade på den här skärmen.
 
-    ![Kassavälkomstskärm](../commerce/media/POS-Welcome-Screen.png)
+    ![Välkomstskärm för kassa.](../commerce/media/POS-Welcome-Screen.png)
 
 - **Transaktionsskärm** – **Transaktionsskärmen** är huvudskärmen i POS för bearbetning av försäljningstransaktioner och order. Innehåll och layout konfigureras med skärmlayoutdesignern.
 
-    ![POS transaktionen skärm](../commerce/media/POS-Transaction-Screen.png)
+    ![Transaktionsskärm för kassa.](../commerce/media/POS-Transaction-Screen.png)
 
 - **Standardstartskärm** – Vissa återförsäljare föredrar att kassören går direkt till **Transaktionsskärmen** efter inloggning. Inställningen för **standardstartskärmen** låter dig ange den standardskärm som visas efter inloggning för varje skärmlayout.
 
@@ -89,7 +89,7 @@ De flesta delar i användargränssnittet för kassa är responsiva och layouten 
 
 Vid uppstart väljer kassaprogrammet automatiskt den närmaste layoutstorleken som är konfigurerad för enheten. En skärmlayout kan även innehålla konfigurationer för både stående och liggande lägen och både stora och komprimerade enheter. Därför kan användare tilldelas till en enda skärmlayout som fungerar för olika storlekar och formfaktorer som används i butiken.
 
-![Kassalayoutstorlekar](../commerce/media/POS-Screen-Layout-Sizes.png)
+![Layoutstorlekar för kassa.](../commerce/media/POS-Screen-Layout-Sizes.png)
 
 - **Namn** – du kan ange ett beskrivande namn för att identifiera skärmens storlek.
 - **Layouttyp** – Kassaprogrammet kan visa sitt användargränssnitt i olika lägen för att ge den bästa användarupplevelsen på en viss enhet.
@@ -102,7 +102,7 @@ Vid uppstart väljer kassaprogrammet automatiskt den närmaste layoutstorleken s
 > [!TIP]
 > Du kan ta reda på layoutstorleken som krävs för kassaskärmen genom att visa upplösningen i programmet. Starta POS och gå till **inställningar \>sessionsinformation**. POS visar skärmens storlek och position som för närvarande är inläst, layoutstorlek och upplösning i programfönstret.
 
-![Kassainformationssida som visar den för närvarande laddade skärmlayouten, layoutstorleken och upplösningen i appfönstret](../commerce/media/POS-Session-Information.png)
+![Kassainformationssida som visar den för närvarande inlästa skärmlayouten, layoutstorleken och upplösningen i appfönstret](../commerce/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Knappsatser
 
@@ -112,7 +112,7 @@ I fullständiga kassalayouter anges placeringen av knappsatser i skärmlayoutdes
 
 I kompakta kassalayouter placeras knappsatser på välkomstskärmen ut automatiskt uppifrån och ned (transaktionsskärm 1) till det högsta numret. De kan användas på menyn **åtgärder**.
 
-![Komprimera layoutens knappsatser](../commerce/media/Compact-View-Button-Grids.png)
+![Komprimera layoutens knappsatser.](../commerce/media/Compact-View-Button-Grids.png)
 
 > [!NOTE]
 > Knappstorlekarna i designern anpassas efter fönstrets storlek, och därför är det inte säkert att de återspeglar de faktiska knappar som visas i POS. Om du vill simulera knapprutnätets layout kan du justera designerfönsterna till samma storlek som POS.
@@ -132,7 +132,7 @@ Skärmlayoutdesignern låter dig konfigurera olika aspekter av **kassatransaktio
 
 Den fullständiga layoutdesignern låter användarna dra gränssnittskontroller till **kassatransaktionsskärmen** och konfigurera inställningarna för dessa kontroller.
 
-![Fullständig layoutdesigner för kassa (liggande)](../commerce/media/POS-Full-Layout-Designer-Landscape.png)
+![Fullständig layoutdesigner för kassa (liggande).](../commerce/media/POS-Full-Layout-Designer-Landscape.png)
 
 - **Importera layout/exportera layout** – du kan exportera och importera layoutdesign för kassaskärm som XML-filer så att du enkelt kan återanvända och dela dem med andra miljöer. Det är viktigt att du importerar layoutdesigner för rätt layoutstorlekar. I annat fall kanske inte gränssnittselement passar på skärmen.
 - **Liggande eller stående** – om användarna av kassaenheten kan växla mellan stående och liggande visning, måste du definiera en skärmlayout för varje läge. POS identifierar skärmrotation automatiskt och visar rätt layout.
@@ -140,11 +140,11 @@ Den fullständiga layoutdesignern låter användarna dra gränssnittskontroller 
 - **Designerzoom** – du kan zooma in och ut designervyn för att bättre visa innehållet på kassaskärmen. Denna funktion är användbar när skärmupplösningen i POS skiljer sig avsevärt från upplösningen på skärmen som används i designern.
 - **Visa/dölj navigeringsfältet** – för fullständiga kassalayouter kan du välja om det vänstra navigationsfältet ska synas på skärmen **transaktion**. Den här funktionen är användbar för skärmar som har lägre upplösning. Om du vill ange synlighet, högerklicka på navigeringsfältet i designern och markera eller avmarkera kryssrutan **alltid synlig**. Om fältet är dolt kan kassaanvändare fortfarande komma åt det via menyn längst upp till vänster.
 
-    ![Visa eller dölj navigeringsfältet](../commerce/media/Navigation-Bar.PNG)
+    ![Visa eller dölj navigeringsfältet.](../commerce/media/Navigation-Bar.PNG)
 
 - **Kassakontroller** – Kassalayoutdesignern stöder följande kontroller. Du kan konfigurera många kontroller genom att högerklicka och använda snabbmenyn.
 
-    ![Kontroller för kassagränssnittet](../commerce/media/POS-UI-Controls.png)
+    ![Kontroller för kassagränssnitt.](../commerce/media/POS-UI-Controls.png)
 
     - **Numerisk knappsats** – Den numeriska knappsatsen är den huvudsakliga användarinmatningen på kassans **Transaktionsskärm**. Du kan konfigurera kontrollen så att fullständig numeriskt knappsats visas. Det här alternativet är idealiskt för pekskärmsenheter. Du kan också konfigurera det så att endast inmatningsfältet visas. I det här fallet används ett fysiskt tangentbord för inmatning. Inställningarna för knappsats finns bara i den fullständiga layouten. För kompakta layouter visas alltid fullständig numerisk knappsats på **transaktionsskärmen**.
     - **Summapanel** – Summapanelen kan konfigureras i en eller två kolumner för att visa värden såsom radantal, rabattbelopp, avgifter, delsumma och skatt. Komprimerad layout stöder bara en enda kolumn.
@@ -159,13 +159,13 @@ Den fullständiga layoutdesignern låter användarna dra gränssnittskontroller 
 
 Liksom den fullständiga layoutdesignern kan du med den komprimerade layoutdesignern konfigurera kassaskärmlayout enbart för mobiltelefoner och små surfplattor. Men då har själva layouten åtgärdats. Du kan konfigurera kontrollerna genom att högerklicka och använda snabbmenyn. Du kan däremot inte använda dra och släpp-åtgärder för ytterligare innehåll.
 
-![Kompakt layoutdesigner](../commerce/media/Compact-Layout-Designer.png)
+![Kompakt layoutdesigner.](../commerce/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a>Knappsatsdesigner
 
 Knappsatsdesignern låter dig konfigurera knappsatser som kan användas i kassavälkomstskärmen och **transaktionsskärmen** för både fullständig och komprimerad layout. Samma knappsats kan användas för olika layouter och typer av layout. Liksom skärmlayoutdesignern använder knappsatsdesignern ClickOnce-distributionsteknik för att hämta, installera och starta den senaste versionen av programmet varje gång användaren öppnar den. Kom ihåg att kontrollera webbläsarkrav för ClickOnce. Vissa webbläsare, till exempel Google Chrome kräver filnamnstillägg.
 
-![Knappsatsdesigner](../commerce/media/Button-Grid-Designer.png)
+![Knappsatsdesigner.](../commerce/media/Button-Grid-Designer.png)
 
 - **Knappen Ny** – Klicka om du vill lägga till en ny knapp i knappsatsen. Som standard visas nya knappar längst upp till vänster i rutnätet. Du kan emellertid ordna knappar genom att dra dem i layouten.
 
@@ -178,7 +178,7 @@ Knappsatsdesignern låter dig konfigurera knappsatser som kan användas i kassav
     > [!IMPORTANT]
     > Vissa inställningar för knappsatser gäller bara för Enterprise POS inte för Modern POS eller Cloud POS.
 
-    ![Egenskaper för knappsats](../commerce/media/Button-grid-button-properties.png)
+    ![Egenskaper för knappsats.](../commerce/media/Button-grid-button-properties.png)
 
     - **Åtgärd** – I listan med tillämpliga kassaåtgärder, välj den åtgärd som startar när användaren klickar på knappen i POS.
 
@@ -190,7 +190,7 @@ Knappsatsdesignern låter dig konfigurera knappsatser som kan användas i kassav
     - **Knappbeskrivning** – ange ytterligare hjälptext som visas när användarna placerar muspekaren över knappen.
     - **Storlek i kolumner/storlek i rader** – du kan ange hur hög och bred knappen ska vara.
 
-        ![Kassaknappstorlek i rader och kolumner](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
+        ![Kassaknappstorlekar i rader och kolumner.](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
 
     - **Anpassade teckensnitt** – när du markerar kryssrutan **Aktivera anpassade teckensnitt för kassa** kan du ange ett annat teckensnitt än systemets standardteckensnitt för POS.
     - **Anpassa tema** – som standard använder kassaknappar accentfärg från den visuella profilen. När du markerar kryssrutan **Använd anpassat tema** kan du ange ytterligare färger.
@@ -200,7 +200,7 @@ Knappsatsdesignern låter dig konfigurera knappsatser som kan användas i kassav
 
     - **Bild av knappen** – knappar kan innehålla bilder och ikoner. Välj bland de tillgängliga bilderna som angetts i **Butik och handel \> kanalinställning \> kassainställning \> kassa \> bilder**.
 
-![Exempel på knappsats i POS](../commerce/media/Example-Button-Grid-In-POS.png)
+![Exempel på knappsats i kassan.](../commerce/media/Example-Button-Grid-In-POS.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
