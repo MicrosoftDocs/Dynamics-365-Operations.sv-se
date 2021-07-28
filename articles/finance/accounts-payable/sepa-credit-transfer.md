@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 11124
+ms.custom:
+- "11124"
+- intro-internal
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 158d96e748b982c87be3f8b08f68d1fdb919aeeb
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 03732ecd5a0cd59d15fa1f9f0691571bd0a19606
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897172"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346460"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Översikt över SEPA-kreditöverföring
 
@@ -30,7 +32,7 @@ Artikeln innehåller allmän information om ISO 20022 kreditöverföringar, som 
 
 ## <a name="what-is-a-credit-transfer-message"></a>Vad är ett kreditöverföringsmeddelande?
 Kreditöverföringsmeddelandet är en begäran som en initierande part (ditt företag) skickar för att flytta medel från eget konto till en fordringshavare. Det finns många lands-/regionspecifika och bankspecifika implementeringar av betalningsmeddelanden. Några av dem används inom ett land/en region och vissa blir standarder. En väl etablerad global standard är ISO 20022 och dess initieringsmeddelandet som t.ex. kreditöverföring. Följande bild visar relationerna och täckning för valda kreditöverföringsmeddelanden. 
-![Kreditöverföring](./media/credit-transfer.jpg) Kreditöverföringsmeddelanden 
+![Kreditöverföring.](./media/credit-transfer.jpg) Kreditöverföringsmeddelanden 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Vad är ISO 20022 och SEPA-betalningar?
 SEPA (Single Euro Payments Area) skapas av den europeiska kommissionen och anger att alla elektroniska betalningar ska betraktas som inhemska oavsett i vilket land/region personen, företaget eller organisationen och banken finns. Det finns inte någon skillnad mellan nationella och gränsöverskridande betalningar. SEPA inkluderar de 28 medlemsstaterna i Europeiska unionen plus Island, Liechtenstein, Norge, Schweiz, Monaco och San Marino. SEPA hjälper till att skapa en gemensam marknad för betalningstransaktioner inom Europeiska ekonomiska samarbetsområdet (EES). Slutligen förväntas SEPA minska antalet betalningsformat, som banker, företag och individer måste arbeta med. Europeiska kommissionen etablerade den juridiska grunden för SEPA-betalningar med betalningstjänstdirektivet (PSD). Det europeiska betalningsrådet (EPC) stöder SEPA genom följande aktiviteter:

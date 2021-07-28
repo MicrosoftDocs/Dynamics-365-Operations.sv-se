@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8c2e207efe0eeec6fc7e679a6ae12edcb21b291f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: f0dac25ede6c9b9dfcfa1be1f1a5f4d7a7752112
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058594"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344724"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurera virtuella Dataverse-register
 
@@ -41,7 +41,7 @@ Alla OData-entiteter (Open Data Protocol) i Personal är tillgängliga som virtu
 
 Du kan visa listan med virtuella register som är aktiverade i miljön och börja arbeta med registren i [Power Apps](https://make.powerapps.com), i lösningen **Virtuella personalregister för Dynamics 365**.
 
-![Virtuella personalregister för Dynamics 365 i Power Apps](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
+![Virtuella personalregister för Dynamics 365 i Power Apps.](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
 
 ## <a name="virtual-tables-versus-native-tables"></a>Virtuella register kontra inbyggda register
 
@@ -147,7 +147,7 @@ Nästa steg är att konfigurera datakällan för det virtuella registret i Power
 
    - **Hemlighet för AAD app-ID**: klienthemligheten som skapades för den app som är registrerat i Microsoft Azure-portalen. Du har fått den här informationen tidigare under steget [Registrera appen i Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
-   ![Microsoft HR-datakälla](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+   ![Microsoft HR-datakälla.](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
 
 9. Välj **Spara och stäng**.
 
@@ -187,7 +187,7 @@ När installationsprogrammet är slutfört kan du välja vilka virtuella registe
 
 4. Välj **generera/uppdatera**.
 
-![Dataverse-integration](./media/hr-admin-integration-dataverse-integration.png)
+![Dataverse-integrering.](./media/hr-admin-integration-dataverse-integration.png)
 
 ## <a name="check-table-generation-status"></a>Kontrollera registrets genereringsstatus
 

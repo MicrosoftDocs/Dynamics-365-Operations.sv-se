@@ -7,16 +7,17 @@ ms.topic: article
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f481f6ca047ee0285fe0e81d8fa96665e9d27cee
-ms.sourcegitcommit: 8e846b52763f90d2232ec7d427839f4722570bce
+ms.openlocfilehash: d39283dea37c0e0fbf432aae8b1a30a87198f9f0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "6292771"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343734"
 ---
 # <a name="container-packing-strategies"></a>Förpackningsstrategier för behållare
 
@@ -251,7 +252,7 @@ Så här ställer du in en konsolideringspolicy för leveranser.
 1. Välj **Standard** policy i listan.
 1. I åtgärdsfönstret väljer du **Redigera**.
 1. På snabbfliken **Konsolideringsfält**, i listan **Valda fält**, markerar du den rad där fältet **Fältnamn** är inställt på *Ordernummer*.
-1. Välj knappen **Ta bort** ![Vänsterpil](media/backward-button.png) om du vill flytta fältet till listan **Resterande fält**.
+1. Välj knappen **Ta bort** ![Vänster pil.](media/backward-button.png) om du vill flytta fältet till listan **Återstående fält**.
 1. Klicka på **Spara** i åtgärdsfönstret.
 
 ### <a name="set-up-physical-dimensions-for-the-product"></a>Ställ in fysiska produktdimensioner för produkten

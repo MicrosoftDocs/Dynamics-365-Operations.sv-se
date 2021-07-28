@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5bc2227e08dbbf5f76a37180114e5affff131658
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 69f6b0c6dab5dd5a9e15e2b7ec2a6301d13ab810
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797897"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346886"
 ---
 # <a name="carousel-module"></a>Karusellmodul
 
@@ -40,7 +40,7 @@ Du kan lägga till innehållsblockmoduler i en karusellmodul. Egenskaperna för 
 
 Följande bild visar ett exempel på en karusellmodul som används på en startsida. Den här karusellmodulen innehåller flera innehållsblockobjekt.
 
-![Exempel på en karusellmodul](./media/Hero.PNG)
+![Exempel på en karusellmodul.](./media/Hero.PNG)
 
 ## <a name="carousel-module-properties"></a>Egenskaper för karusellmodul
 

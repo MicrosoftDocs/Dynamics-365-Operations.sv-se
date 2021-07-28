@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
-ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
+ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6184032"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345510"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
 
@@ -73,7 +73,7 @@ Navet äger följande data:
 
 Skalningsenheterna som äger den faktiska påfyllnadsbearbetningen (t.ex. arbetsfördelning, lagerpåfyllnadsarbete och skapande av efterfrågan) efter att påfyllnad har frisläppts. Därför kan lagerarbetare bearbeta utgående arbete genom att använda en mobilappen för distributionslagerhantering som är kopplad till skalningsenheten.
 
-![Påfyllnadsbearbetningsflöde](./media/wes-wave-processing-ga.png "Påfyllnadsbearbetningsflöde")
+![Påfyllnadsbearbetningsflöde.](./media/wes-wave-processing-ga.png "Påfyllnadsbearbetningsflöde")
 
 ### <a name="process-work-and-ship"></a>Bearbeta arbete och skeppa
 
@@ -81,7 +81,7 @@ Så snart som den slutliga arbetsprocessen för in lagret på en slutgiltig leve
 
 Så snart som navet har uppdaterat transaktionerna till *Plockade* kan det bearbeta den utgående försändelsebekräftelsen, samt beläggningens tillhörande försäljningsordersedel eller överföringsorderleverans.
 
-![Utgående processflöde](./media/WES-outbound-processing-19.png "Utgående processflöde")
+![Utgående bearbetningsflöde.](./media/WES-outbound-processing-19.png "Utgående processflöde")
 
 ## <a name="inbound-process-flow"></a>Ingående processflöde
 
@@ -107,11 +107,11 @@ Arbetaren kan köra mottagningsprocessen med hjälp av en mobilappen för distri
 
 Om du inte använder processen *frisläppning till lager* och därför inte använder *lagerställeorder*, kan navet bearbeta inleverans och bearbetning av lager oberoende från skalningsenheter.
 
-![Ingående processflöde](./media/wes-inbound-ga.png "Ingående processflöde")
+![Ingående bearbetningsflöde.](./media/wes-inbound-ga.png "Ingående processflöde")
 
 När inkommande registreringar genomförs via en mottagningsprocess som sker via en lager-app mot skalningsenhetens lagerställeorder, kommer skalningsenhetens arbetsbelastning säga till navet att uppdatera relaterade radtransaktioner för inköpsorder till *Registrerad*. Så snart denna är färdig kommer du att kunna köra en produktinleverans för inköpsorder på navet.
 
-![Inkommande processflöde](./media/WES-inbound-processing-19.png "Inkommande processflöde")
+![Inkommande bearbetningsflöde.](./media/WES-inbound-processing-19.png "Inkommande processflöde")
 
 ## <a name="supported-processes-and-roles"></a>Processer och roller som stöds
 

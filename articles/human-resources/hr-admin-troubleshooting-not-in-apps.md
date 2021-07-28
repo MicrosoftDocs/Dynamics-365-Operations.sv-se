@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17a454cd32a08db105a13577c32368ad819bed1c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 292db7e430bf0f2171f2b0a482ad70250774caec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053386"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346356"
 ---
 # <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Personalresurser visas inte i Microsoft Dynamics 365-appar
 
@@ -39,11 +39,11 @@ Användaren måste läggas till rollen Environment Maker för miljön i Microsof
 
 3. På fliken **Säkerhet** på fliken **Miljöroller**, välj **Environment Maker**.
 
-    ![Fliken Miljöroller](media/environment-roles.png)
+    ![Fliken Miljöroller.](media/environment-roles.png)
 
 4. På fliken **Användare** lägger du till användaren eller organisationen.
 
-    ![Fliken Användare](media/environment-maker.png)
+    ![Fliken Användare.](media/environment-maker.png)
 
 5. Välj **Spara**.
 
@@ -51,7 +51,7 @@ Användaren måste läggas till rollen Environment Maker för miljön i Microsof
 
 7. Välj **Synkronisera** för att uppdatera användarapparna.
 
-    ![Knappen Synkronisera](media/get-more.png)
+    ![Knappen Synkronisera.](media/get-more.png)
 
     När synkroniseringen är klar visas Personal på startsidan.
 

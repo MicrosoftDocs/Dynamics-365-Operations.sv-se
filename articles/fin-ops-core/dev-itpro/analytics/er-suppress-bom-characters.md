@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5ada93c0192aadac70c38c8c8c4f3af86ff6fc3
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2b26e31748f97603b0b175f79a8daae2650261d7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893286"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345898"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Designa ER-konfigurationer för att ignorera strukturlistetecken i genererade filer
 
@@ -29,14 +29,14 @@ Du kan utforma [elektronisk rapportering (ER)](general-electronic-reporting.md) 
 > [!NOTE]
 > Om formatet innehåller fel kodningsnamn uppstår ett fel när du sparar ändringarna av formatets inställningar.
 
-![Lägga till rotelement på sidan Formatdesigner](./media/er-suppress-bom-characters-image1.gif)
+![Lägga till ett rotelement på sidan Formatdesigner.](./media/er-suppress-bom-characters-image1.gif)
 
 Om du anger **UTF-8**, **UTF-16** eller **UTF-32** som kodning blir alternativet **Undertryck strukturlistetecken** tillgängligt. Ställ in det här alternativet på **Ja** för att undertrycka [byteordningsmärke (strukturlista) tecken](/globalization/encoding/byte-order-mark) i utgående filer som genereras vid körning när det redigerbara ER-formatet körs.
 
 > [!NOTE]
 > Om du lämnar fältet **Kodning** används standardvärdet **UTF-8**.
 
-![Ange alternativet Ignorera strukturlistetecken på sidan Formatdesigner](./media/er-suppress-bom-characters-image2.gif)
+![Ange alternativet Ignorera strukturlistetecken på sidan Formatdesigner.](./media/er-suppress-bom-characters-image2.gif)
 
 Om du vill granska funktionen vid körning ska du gå igenom lämplig procedur. Du kan till exempel utföra stegen i ämnet [Periodisera körning av XML-element i ER-format](er-defer-xml-element.md). När du har utfört stegen i avsnittet [Ändra formatet så att beräkningen baseras på genererade utdata](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) i det ämnet, följ dessa ytterligare steg.
 
@@ -59,7 +59,7 @@ Om du vill granska funktionen vid körning ska du gå igenom lämplig procedur. 
 
     Den första skillnaden som du kommer att märka finns i filrubriken. Filen SampleXmlReport.xml innehåller ett strukturlistetecken, där SampleXmlReport(1).xml-filen inte finns.
 
-    ![Jämför de genererade filerna med ett filjämförelseverktyg](./media/er-suppress-bom-characters-image3.png)
+    ![Jämför de genererade filerna med ett filjämförelseverktyg.](./media/er-suppress-bom-characters-image3.png)
 
 ## <a name="see-also"></a>Se även
 

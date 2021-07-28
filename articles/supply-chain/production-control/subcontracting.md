@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 053dff19da6e51d23383d667c340c49f3eff1b27
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 37a82a2bf9fc73b81e5a61b120e7bed73b8c4521
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825192"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346140"
 ---
 # <a name="subcontracting"></a>Legotillverkning
 
@@ -39,9 +39,9 @@ Avancerade högtalare tillverkas i den juridiska personen HQUS. Under tillverkni
 
 Följande bild visar de tre operationerna och materialet som de använder.
 
-![Operationerna förmontering, beläggning, ytbehandling och materialet som de förbrukar](./media/subcontract01_operations-materials.png)
+![Åtgärderna Förmontering, Beläggning, Ytbehandling och materialet som dessa förbrukar.](./media/subcontract01_operations-materials.png)
 
-## <a name="setup"></a>Konfigurera
+## <a name="setup"></a>Ställ in
 
 Innan du påbörjar genomgången måste du ställa in data.
 
@@ -52,41 +52,41 @@ Den här proceduren hjälper dig genom inställningarna för frisläppt produkt 
 1. Välj **produktinformationshantering \> produkter \> frisläppta produkter** för att öppna sidan **Information om frisläppt produkt**.
 2. I snabbfilterfältet anger du **D8100** för att söka efter befintlig frisläppt produkt.
 
-    ![Filtrering för frisläppt produkt D8100 på informationssidan för frisläppt produkt](./media/subcontract02_filtering-released-products.png)
+    ![Filtrering för frisläppt produkt D8100 på informationssidan för frisläppt produkt.](./media/subcontract02_filtering-released-products.png)
 
 3. I åtgärdsfönstret, på fliken **tekniker**, välj **flöde** för att öppna sidan **flöde**.
 
     Sidan **Flöde** visar de åtta flödesversioner för frisläppt produkt D8100. Åtta flödesversioner ska delas upp mellan fyra flöden på site 1 och 5. Flöde 000400 används för kostnadsredovisning, flöde 00041 används när beläggningsoperationen är en intern operation, och flöde 00042 används när beläggningsoperationen är en extern operation.
 
-    ![Åtta flödesversioner på sidan Flöde](./media/subcontract03_route-page.png)
+    ![Åtta flödesversioner på sidan Flöde.](./media/subcontract03_route-page.png)
 
 4. I det övre fönstret i rutnätet **versioner**, välj flödesversion **00042** för site **5**.
 5. I det nedre fönstret på fliken **översikt**, välj operation **20** (**Cbnt CtSc**) i rutnätet.
 
-    ![Operation 20 flödesversionen 00042 för site 5 markerad](./media/subcontract04_route-version-operation.png)
+    ![Åtgärd 20 för flödesversion 00042 för webbplats 5 markerad.](./media/subcontract04_route-version-operation.png)
 
 6. Välj fliken **Allmänt**.
 
     Lägg märke till att fältet **flödestyp** har tilldelats **leverantör**. Detta värde anger att operation 20 (Cbnt CtSc) är en legotillverkningsoperation.
 
-    ![Fältet Flödestyp anges till Leverantör på fliken Allmänt](./media/subcontract05_general-tab.png)
+    ![Fältet Flödestyp angiven som Leverantör på fliken Allmänt.](./media/subcontract05_general-tab.png)
 
 7. Välj fliken **Resurskrav**.
 
     Funktioner används för att hitta en tillämplig resurs vid produktionsplaneringen. Observera att för operation 20 (Cbnt CtSc) krävs en resurs som har två funktioner **beläggning** och **belagd kabinett**.
 
-    ![Kapacitet för beläggning och belagda kabinett på fliken resursbehov](./media/subcontract06_resource-requirements-tab.png)
+    ![Kapacitet för beläggning och belagda kabinett på fliken för resursbehov.](./media/subcontract06_resource-requirements-tab.png)
 
 8. Välj **tillämpliga resurser** för att öppna dialogrutan **tillämpliga resurser**.
 
     Tre resurser hittas som matchar operationens resursbehov. Lägg märke till att 8851 och 8852 är av typen **leverantör**.
 
-    ![Tre tillämpliga resurser i dialogrutan tillämpliga resurser.](./media/subcontract07_applicable-resources-dialog.png)
+    ![Tre tillämpliga resurser i dialogrutan Tillämpliga resurser.](./media/subcontract07_applicable-resources-dialog.png)
 
 9. Välj **OK** för att stänga dialogrutan **tillämpliga resurser** och återgå till sidan **flöde**.
 10. Stäng sidan **flöde** om du vill återgå till sidan **Information om frisläppt produkt**.
 
-    ![Sidan Information om frisläppt produkt](./media/subcontract08_released-product-details-page.png)
+    ![Sidan Information om frisläppt produkt.](./media/subcontract08_released-product-details-page.png)
 
 11. I åtgärdsfönstret, på fliken **tekniker**, välj **strukturlisteversioner** för att öppna sidan **strukturlisteversioner**.
 
@@ -94,7 +94,7 @@ Den här proceduren hjälper dig genom inställningarna för frisläppt produkt 
 
     Observera att artikel S8050 är en produkt av artikeltypen **Tjänst**. Den här artikeln representerar legotillverkning.
 
-    ![Fyra strukturlisteversioner på sidan strukturlisteversioner](./media/subcontract09_bom-versions-page.png)
+    ![Fyra strukturlisteversioner på sidan Strukturlisteversioner.](./media/subcontract09_bom-versions-page.png)
 
 12. På snabbfliken **strukturlisterader**, välj **redigera** för att öppna dialogrutan **Redigera strukturlisterad**.
 
@@ -102,7 +102,7 @@ Den här proceduren hjälper dig genom inställningarna för frisläppt produkt 
 
     Observera att strukturlisteraden är ansluten till beläggningsoperationen genom operationsnummer (i vårt exempel 20).
 
-    ![Redigera dialogrutan Strukturlista](./media/subcontract10_edit-bom-line-dialog.png)
+    ![Redigera dialogrutan Strukturlista.](./media/subcontract10_edit-bom-line-dialog.png)
 
 ### <a name="create-a-password-for-warehouse-workers"></a>Skapa ett lösenord för lagerarbetare
 
@@ -111,7 +111,7 @@ Du måste definiera ett lösenord för lagerarbetare som använder den bärbara 
 1. Välj **lagerstyrning \> inställningar \> arbetare** för att öppna sidan **Arbetsanvändare**.
 2. På snabbfliken **användare**, markerar du raden för användaren **51**.
 
-    ![Sidan arbetsanvändare](./media/subcontract11_work-users-page.png)
+    ![Sidan Arbetsanvändare.](./media/subcontract11_work-users-page.png)
 
 3. Välj **Återställ lösenord**.
 4. I fältet **Lösenord** och **Bekräfta lösenord** ange **1**.
@@ -126,14 +126,14 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
 1. Välj **produktionskontroll \> produktionsorder \> alla produktionsorder** för att öppna sidan **alla produktionsorder**.
 2. I åtgärdsfönstret, välj **ny produktionsorder** för att öppna dialogrutan **skapa produktionsorder**.
 
-    ![Dialogrutan Skapa produktionsorder](./media/subcontract12_create-production-order-dialog.png)
+    ![Dialogrutan Skapa produktionsorder.](./media/subcontract12_create-production-order-dialog.png)
 
 3. I fältet **Artikelnummer**, välj **D8100**.
 4. När du har valt artikelnumret visas fälten för inventeringsdimensionerna. I fältet **Färg**, välj **Chrome**.
 
     Ett meddelande visas som frågar om du vill infoga aktiva versioner för strukturlista och flöde.
 
-    ![Meddelanderuta](./media/subcontract13_message-box.png)
+    ![Meddelanderuta.](./media/subcontract13_message-box.png)
 
 5. Välj **Ja**. 
 
@@ -149,15 +149,15 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
     > [!NOTE]
     > För både strukturlistan och flödet används version 000042 för att underleverera beläggningen av kabinetten till leverantör US-801.
 
-    ![Värdena som anges i dialogrutan Skapa produktionsorder](./media/subcontract14_create-production-order-dialog-set.png)
+    ![Värdena som anges i dialogrutan Skapa produktionsorder.](./media/subcontract14_create-production-order-dialog-set.png)
 
 9. Välj **Skapa** för att skapa produktionsordern och återgå till sidan **alla produktionsorder**.
 
-    ![Ny produktionsorder på sidan Alla produktionsorder](./media/subcontract15_new-production-order.png)
+    ![Ny produktionsorder på sidan Alla produktionsorder.](./media/subcontract15_new-production-order.png)
 
 10. I åtgärdsfönstret, på fliken **produktionsorder**, välj **Beräkna** för att öppna dialogrutan **Beräkna**.
 
-    ![Dialogrutan Beräkna](./media/subcontract16_estimate-dialog.png)
+    ![Dialogrutan Beräkna.](./media/subcontract16_estimate-dialog.png)
 
 11. Välj **OK** för att bekräfta beräkningen och återgå till sidan **alla produktionsorder**.
 
@@ -168,7 +168,7 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
 
     För serviceartikel S8050 märker du att det finns en hänvisning till inköpsordern som genererades när produktionsordern beräknades.
 
-    ![Produktionsorders strukturrader på sidan Strukturlista](./media/subcontract17_production-order-bom-lines.png)
+    ![Strukturlisterader för produktionsorder på sidan Strukturlista.](./media/subcontract17_production-order-bom-lines.png)
 
 13. Stäng sidan **Strukturlista** om du vill återgå till sidan **alla produktionsorder**.
 14. I åtgärdsfönstret, på fliken **Tidsplan**, välj **Tidsplanera jobb** för att öppna dialogrutan **Finplanering**.
@@ -177,24 +177,24 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
     - I fältet **Planeringsriktning**, välj **Framåt från imorgon**.
     - Ange alternativet **begränsad kapacitet** till **Ja**.
 
-    ![Dialogrutan Finplanera](./media/subcontract18_job-scheduling-dialog.png)
+    ![Dialogrutan Tidsplanering för jobb.](./media/subcontract18_job-scheduling-dialog.png)
 
 16. Välj **OK** för att stänga dialogrutan **finplanering** och återgå till sidan **alla produktionsorder**.
 17. I åtgärdsfönstret, på fliken **Tidsplan**, välj **Gantt** för att öppna sidan **Gantt-schema - Resursvy**.
 
     Gantt-schemat ger en visuell översikt av hur produktionsjobben tidplaneras på resurser. Observera att den externa beläggningsoperationen består av tre jobb: ett processjobb, ett transportjobb och ett kötidjobb.
 
-    ![Gantt-schema i Gantt-schemat - Sida för resursvy](./media/subcontract19_gantt-chart.png)
+    ![Gantt-schema i Gantt-schemat - Sida för resursvy.](./media/subcontract19_gantt-chart.png)
 
 18. Stäng sidan **Gantt.schema - Resursvy** om du vill återgå till sidan **alla produktionsorder**.
 19. I åtgärdsfönstret, på fliken **produktionsorder**, välj **Frisläpp** för att öppna dialogrutan **Frisläpp**.
 
-    ![Dialogrutan Frisläpp](./media/subcontract20_release-dialog.png)
+    ![Dialogrutan Frisläpp.](./media/subcontract20_release-dialog.png)
 
 20. Välj **OK** för att stänga dialogrutan **Frisläpp**.
 21. Välj **produktionskontroll \> periodiska uppgifter \> frisläpp till lagerställe \> Automatisk frisläppning av strukturliste- och receptrader** för att öppna dialogrutan **Automatisk frisläppning av strukturliste- och receptrader**.
 
-    ![Dialogrutan Automatisk frisläppning av strukturliste- och receptrader](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
+    ![Dialogrutan Automatisk frisläppning av strukturliste- och formelrader.](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
 
 22. Välj **OK** för att köra automatiskt frisläppning av strukturliste- och receptradjobb.
 
@@ -206,7 +206,7 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
 
     Observera att sidan visar två uppsättningar arbete för råmaterialplockning. Första arbetet är för material M8100 och M8101. Dessa material som förbrukas av operation 10. Det andra arbetet är för material M8202 och M8250. Dessa material förbrukas av operation 20, d.v.s. legotillverkningsoperationen.
 
-    ![Två uppsättningar arbete för råmaterialplockning på sidan Arbete.](./media/subcontract22_work-page.png)
+    ![Två uppsättningar arbete för råmaterialplockning på sidan Arbete..](./media/subcontract22_work-page.png)
 
 26. Starta mobilappen för distributionslagerhantering för att bearbeta lagerställearbetet för operation 10.
 
@@ -220,7 +220,7 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
     - I fältet **Från oper.nr.** välj **10**.
     - I fältet **Till oper.nr.** välj **10**.
 
-    ![Värden som har angetts på fliken Allmänt 1](./media/subcontract23_start-dialog.png)
+    ![Värden som har angetts på fliken Allmänt 1.](./media/subcontract23_start-dialog.png)
 
 31. Välj **OK** för att stänga dialogrutan **Starta** och återgå till sidan **alla produktionsorder**.
 
@@ -238,7 +238,7 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
     - I fältet **Kvantitet**, ange **10**.
     - Ange alternativet **Bokför plocklista nu** till **Nej**.
 
-    ![Värden som har angetts på fliken Allmänt 2](./media/subcontract24_general-tab.png)
+    ![Värden som har angetts på fliken Allmänt 2.](./media/subcontract24_general-tab.png)
 
 35. Välj **OK** för att stänga dialogrutan **Starta** och återgå till sidan **alla produktionsorder**.
 
@@ -247,57 +247,57 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
 36. I åtgärdsfönstret, på fliken **Visa**, välj **Plocklista** för att öppna sidan **Plocklista**.
 37. Välj plocklistan som inte har bokförts och markera journalnumret för att visa journalraderna.
 
-    ![Journalrader på sidan Plocklista](./media/subcontract25_picking-list.png)
+    ![Journalrader på sidan Plocklista.](./media/subcontract25_picking-list.png)
 
 38. I åtgärdsfönstret, välj **Skriv ut** \> **Rapport över plocklista** för att öppna dialogrutan **Rapport över plocklista**.
 39. Ange alternativet **Använd layouten för följesedelsnoteringen** till **Ja**.
 
-    ![Dialogrutan Plocklista - rapport](./media/subcontract26_picking-list-report-dialog.png)
+    ![Dialogrutan Plocklista - rapport.](./media/subcontract26_picking-list-report-dialog.png)
 
 40. Välj **OK** för att generera rapporten **Plocklista**.
 
     I det här fallet skrivs en leverantörens följesedelsnotering ut för produktionens plocklistejournal. Följesedeln anger det material som levereras till leverantören som ska utföra beläggningsoperationen.
 
-    ![Plocklista - rapport](./media/subcontract27_picking-list-report.png)
+    ![Plocklista - rapport.](./media/subcontract27_picking-list-report.png)
 
 41. Stäng rapporten **plocklista** för att återgå till sidan **plocklista**.
 42. I åtgärdsfönstret, välj **Bokför** för att öppna dialogrutan **bokför journal**.
 
-    ![Dialogrutan Bokför journal](./media/subcontract28_post-journal-dialog.png)
+    ![Dialogrutan Bokför journal.](./media/subcontract28_post-journal-dialog.png)
 
 43. Välj **OK** för att stänga dialogrutan **Bokför journal**.
 44. Öppna inköpsordern.
 
-    ![Inköpsordersida](./media/subcontract29_purchase-order-page.png)
+    ![Sidan Inköpsorder.](./media/subcontract29_purchase-order-page.png)
 
 45. I åtgärdsfönstret, på fliken **Inköp**, välj **Bekräfta**.
 46. Välj **Bokför** för att öppna dialogrutan **Bokför journal**.
 47. Välj **OK** för att stänga dialogrutan **Bokför journal** och återgå till sidan **Inköpsorder**.
 48. Ändra enhetspriset från **33** till **40**.
 
-    ![Enhetspris ändras på sidan inköpsorder](./media/subcontract30_unit-price.png)
+    ![Enhetspris som ändrats på sidan Inköpsorder.](./media/subcontract30_unit-price.png)
 
 49. Bekräfta inköpsordern igen.
 50. Produktinleverans.
 
-    ![Dialogrutan Bokför produktinleverans](./media/subcontract31_posting-product-receipt-dialog.png)
+    ![Dialogrutan Bokför produktinleverans.](./media/subcontract31_posting-product-receipt-dialog.png)
 
 51. Inköpsfaktura.
 52. Uppdatera matchningsstatus.
 
-    ![Sidan Leverantörsfaktura](./media/subcontract32_vendor-invoice-page.png)
+    ![Sidan Leverantörsfaktura.](./media/subcontract32_vendor-invoice-page.png)
 
 53. Rapportera som färdig.
 
-    ![Dialogrutan Rapportera som färdigt](./media/subcontract33_report-as-finished-dialog.png)
+    ![Dialogrutan Rapportera som slutförd.](./media/subcontract33_report-as-finished-dialog.png)
 
 54. Slut.
 
-    ![Dialogrutan Slut](./media/subcontract34_end-dialog.png)
+    ![Dialogrutan Slut.](./media/subcontract34_end-dialog.png)
 
 55. Kostnadsjämförelse.
 
-    ![Kostnadsjämförelsediagram](./media/subcontract35_cost-comparison-charts.png)
+    ![Diagram för kostnadsjämförelse.](./media/subcontract35_cost-comparison-charts.png)
 
 Inställning saknas i data.
 

@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f7b28a33dff4af6bf2b97db825a5a8304213f3a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 57f5d23533c2fd17593648a15745fa770fc01dc4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796496"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345218"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Visa ordermeddelanden i POS
 
@@ -72,14 +72,14 @@ Kassaknapparna kan nu visa ett antal för att hjälpa medarbetarna att bestämma
 
 Följande bild visar inställningarna för levande innehåll i knappsatsen för designern,
 
-![Inställningar för levande innehåll i knappsatsens designer](./media/ButtonGridDesigner.png "Inställningar för levande innehåll i knappsatsens designer")
+![Inställningar för levande innehåll i knappsatsens designer.](./media/ButtonGridDesigner.png "Inställningar för levande innehåll i knappsatsens designer")
 
 Om du vill visa meddelanderäkningen på en knapp måste du kontrollera att rätt skärmlayout håller på att uppdateras. Om du vill ta reda på vilken skärmlayout som används i POS väljer du ikonen **Inställningar** i övre högra hörnet och noterar **Skärmlayout-ID** och **Layoutupplösning.** Nu använder du Edge-webbläsaren, gå till sidan **skärmlayout**, leta reda på **bildskärms-ID** och **Layoutupplösning** som identifieras ovan och markera kryssrutan **Aktivera live-innehåll**. Gå **Butik och handel \> Butiken och handel-IT \> Distributionsschema** och kör 1090-jobbet (journaler) för att synkronisera layoutändringar.
 
-![Hitta den skärmlayout som används i POS](./media/Choose_screen_layout.png "Hitta skärmlayouten")
+![Hitta den skärmlayout som används i kassan.](./media/Choose_screen_layout.png "Hitta skärmlayouten")
 
 Följande bild visar effekterna av att välja **Högst upp till höger** jämfört med **Mitten** i fältet **Innehållsjustering** för knappar med olika storlekar.
 
-![Levande innehåll på kassaknappar](./media/ButtonsWithLiveContent.png "Levande innehåll på kassaknappar")
+![Levande innehåll på kassaknappar.](./media/ButtonsWithLiveContent.png "Levande innehåll på kassaknappar")
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 91b19598075871dcfaed3ad9978aa8fe8181aa6f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9440471d6983136971878c8ee9e327d4dd407833
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836672"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346164"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Genomgång av funktioner för konstruktionsändringshantering
 
@@ -57,7 +57,7 @@ En teknikorganisation som äger den tekniska informationen och ansvarar för pro
     - **Teknikorganisation:** *DEMF*
     - **Organisationens namn:** *Contoso Entertainment System Germany*
 
-    ![Lägga till en teknikorganisation](media/engineering-org.png "Lägga till en teknikorganisation")
+    ![Lägga till en teknikorganisation.](media/engineering-org.png "Lägga till en teknikorganisation")
 
 ### <a name="set-up-the-version-product-dimension-group"></a>Ställ in produktdimensionsgruppen för version
 
@@ -67,7 +67,7 @@ En teknikorganisation som äger den tekniska informationen och ansvarar för pro
 1. Välj **Spara** om du vill spara den nya dimensionen och läsa in värden på snabbfliken **Produktdimensioner**.
 1. På snabbfliken **Produktdimensioner** anger du **Version** som aktiv produktdimension.
 
-    ![Lägga till produktdimensionsgrupp](media/product-dimension-groups.png "Lägga till produktdimensionsgrupp")
+    ![Lägga till en produktdimensionsgrupp.](media/product-dimension-groups.png "Lägga till produktdimensionsgrupp")
 
 ### <a name="set-up-product-lifecycle-states"></a>Ställa in produktens livscykeltillstånd
 
@@ -82,7 +82,7 @@ När en konstruktionsprodukt går igenom sin livscykel är det viktigt att du ka
 1. Välj **Spara** om du vill spara den nya livscykeltillstånd och läsa in värden på snabbfliken **Aktiverade affärsprocesser**.
 1. På snabbfliken **Aktiverade affärsprocesser** väljer du de affärsprocesser som ska vara tillgängliga. I det här exemplet lämnar du fältet **Policy** inställt på *aktiverat* för alla affärsprocesser.
 
-    ![Aktivera affärsprocesser för ett livscykeltillstånd](media/product-lifecycle-states-1.png "Aktivera affärsprocesser för ett livscykeltillstånd")
+    ![Aktivera affärsprocesser för ett livscykeltillstånd.](media/product-lifecycle-states-1.png "Aktivera affärsprocesser för ett livscykeltillstånd")
 
 1. Välj **Ny** för att lägga till en livscykeltillstånd och ställa sedan in följande värden för den:
 
@@ -92,7 +92,7 @@ När en konstruktionsprodukt går igenom sin livscykel är det viktigt att du ka
 1. Välj **Spara** om du vill spara den nya livscykeltillstånd och läsa in värden på snabbfliken **Aktiverade affärsprocesser**.
 1. På snabbfliken **Aktiverade affärsprocesser** väljer du de affärsprocesser som ska vara tillgängliga. I det här exemplet lämnar du fältet **Policy** inställt på *Aktiverad med varning* för alla affärsprocesser.
 
-    ![Aktivera (med varningar) affärsprocesser för ett livscykeltillstånd](media/product-lifecycle-states-2.png "Aktivera (med varningar) affärsprocesser för ett livscykeltillstånd")
+    ![Aktivera (med varningar) affärsprocesser för ett livscykeltillstånd.](media/product-lifecycle-states-2.png "Aktivera (med varningar) affärsprocesser för ett livscykeltillstånd")
 
 ### <a name="set-up-a-version-number-rule"></a>Ställa in en regel för versionsnummer
 
@@ -103,7 +103,7 @@ När en konstruktionsprodukt går igenom sin livscykel är det viktigt att du ka
     - **Nummerregel:** *Auto*
     - **Format:** *V-\#\#*
 
-    ![Lägga till en produktversion nummerregel](media/version-number-rule.png "Lägga till en produktversion nummerregel")
+    ![Lägga till en nummerregel för produktversion.](media/version-number-rule.png "Lägga till en produktversion nummerregel")
 
 ### <a name="set-up-a-product-release-policy"></a>Ställa in en policy för produktlansering
 
@@ -135,7 +135,7 @@ När en konstruktionsprodukt går igenom sin livscykel är det viktigt att du ka
     - **Kopiera godkännande av flöde:** Markera den här kryssrutan.
     - **Kopiera aktivering av flöde:** Markera den här kryssrutan.
 
-    ![Lägga till en policy för produktlansering](media/product-release-policy.png "Lägga till en policy för produktlansering")
+    ![Lägga till en policy för produktlansering.](media/product-release-policy.png "Lägga till en policy för produktlansering")
 
 ### <a name="set-up-an-engineering-product-category"></a>Ställa in en konstruktionsproduktkategori 
 
@@ -160,7 +160,7 @@ Tekniska produktkategorier utgör grunden för att skapa tekniska produkter (dvs
 1. På snabbfliken **frisläppningspolicy** ange fältet **produktfrisläppningspolicy** till *komponenter*.
 1. Välj **Spara**.
 
-    ![Lägga till en konstruktionsproduktkategori](media/product-category-details.png "Lägga till en konstruktionsproduktkategori")
+    ![Lägga till en kategori för konstruktionsprodukt.](media/product-category-details.png "Lägga till en konstruktionsproduktkategori")
 
 ### <a name="set-up-product-acceptance-conditions"></a>Ställ in villkor för produktgodkännande
 
@@ -168,7 +168,7 @@ Tekniska produktkategorier utgör grunden för att skapa tekniska produkter (dvs
 1. Gå till **konstruktionsändringshantering &gt; inställningar &gt; parametrar för konstruktionsändringshantering**.
 1. På fliken **frisläppningskontroll** i avsnittet **produktgodkännande** ange fältet **produktgodkännande** till *manuell*.
 
-    ![Ställ in villkor för produktgodkännande](media/engineering-change-management-parameters.png "Ställ in villkor för produktgodkännande")
+    ![Ställa in villkor för produktgodkännande.](media/engineering-change-management-parameters.png "Ställ in villkor för produktgodkännande")
 
 ## <a name="create-a-new-engineering-product"></a>Skapa en ny konstruktionsprodukt
 
@@ -187,23 +187,23 @@ En konstruktionsprodukt är en produkt som har versionskontroll och styrs genom 
     - **Produknummer:** *Z0001*
     - **Produktnamn:** *Högtalaruppsättning*
 
-    ![Lägga till en konstruktionsprodukt](media/new-product-dialog.png "Lägga till en konstruktionsprodukt")
+    ![Lägga till en konstruktionsprodukt.](media/new-product-dialog.png "Lägga till en konstruktionsprodukt")
 
     Observera att fältet **Version** automatiskt ställs in med hjälp av nummerregeln för produktversion som du ställer in tidigare.
 
 1. Välj **OK** för att skapa produkt och stänga dialogrutan.
 1. Detaljsidan för den nya produkten öppnas. Observera att värden redan har fyllts i för vissa fält, till exempel **lagringsdimensionsgrupp**, **spårningsdimensionsgrupp** och/eller **artikelmodellgrupp**. Dessa fält ställdes in automatiskt eftersom produkten släpps i juridiska enheten *DEMF* och använder policy för produktlansering *Komponenter* som är kopplad till konstruktionsproduktkategori *Komponenter*. Eftersom du tidigare har använt artikeln *D0006* som mall för att ställa in en rad för den juridiska personen *DEMF* togs de värden som har fyllts i från artikel *D0006*.
 
-    ![Information om frisläppt produkt](media/product-details.png "Information om frisläppt produkt")
+    ![Information om frisläppt produkt.](media/product-details.png "Information om frisläppt produkt")
 
 1. I åtgärdsfönstret på fliken **Tekniker** i grupp **Konstruktionsändringshantering** välj **Teknikversioner** för att se versionerna av produkten.
 
-    ![Konstruktionsversioner](media/engineering-versions-list.png "Konstruktionsversioner")
+    ![Konstruktionsversioner.](media/engineering-versions-list.png "Konstruktionsversioner")
 
 1. På sidan **Teknikversioner** ser du att det bara finns en version för produkten och att den är aktiv.
 1. Välj version för att visa detaljerna.
 
-    ![Information om konstruktionsversion](media/engineering-version-details.png "Information om konstruktionsversion")
+    ![Information om konstruktionsversion.](media/engineering-version-details.png "Information om konstruktionsversion")
 
 1. På sidan **konstruktionsversion** på snabbfliken **Strukturlista** välj **Skapa strukturlista**.
 1. I dialogrutan **Skapa strukturlista** ange följande värden:
@@ -212,25 +212,25 @@ En konstruktionsprodukt är en produkt som har versionskontroll och styrs genom 
     - **Namn:** Högtalaruppsättning
     - **Plats:** 1
 
-    ![Skapa en BOM](media/create-bom.png "Skapa en BOM")
+    ![Skapa en strukturlista.](media/create-bom.png "Skapa en BOM")
 
 1. Välj **OK** för att lägga till strukturlista och stänga dialogrutan.
 1. På snabbfliken **strukturlista** välj **strukturlista**.
 1. På sidan **strukturlista** på snabbfliken **strukturlisterader** lägga till tre rader, en var för artikelnumren *D0001*, *D0003* och *D0006*.
 
-    ![Lägga till strukturlisterader](media/bom.png "Lägga till strukturlisterader")
+    ![Lägga till strukturlisterader.](media/bom.png "Lägga till strukturlisterader")
 
 1. Välj **Spara**.
 1. Stäng sidan.
 1. På sidan **konstruktionsversion** på snabbfliken **Strukturlista** välj **Godkänn**.
 1. I dialogrutan som visas väljer du **OK**.
 
-    ![Godkänna strukturlistan](media/approve-dialog.png "Godkänna strukturlistan")
+    ![Godkänna strukturlistan.](media/approve-dialog.png "Godkänna strukturlistan")
 
 1. På sidan **konstruktionsversion** på snabbfliken **Strukturlista** välj **Aktivera**.
 1. Observera att kryssrutorna **Aktiv** och **Godkänd** är markerade för strukturlistan.
 
-    ![Aktiv och godkända strukturlista](media/approved-bom.png "Aktiv och godkända strukturlista")
+    ![Aktiv och godkänd strukturlista.](media/approved-bom.png "Aktiv och godkända strukturlista")
 
 1. Stäng sidan.
 
@@ -244,25 +244,25 @@ Produkten har nu skapats av teknikavdelningen. I det här exemplet är produkten
 1. I åtgärdsföntstet, på fliken **Produkt** i gruppen **Underhåll** välj **struktur för frisläppt produkt** för att öppna guiden **frisläppta produkter**.
 1. På sidan **Välj tekniska produkter att frisläppa**, välj kryssrutan **Välj** för produkt *Z0001*.
 
-    ![Välja de teknikprodukter som ska frisläppas](media/select-eng-product-to-release.png "Välja de teknikprodukter som ska frisläppas")
+    ![Välja de konstruktionsprodukter som ska frisläppas.](media/select-eng-product-to-release.png "Välja de teknikprodukter som ska frisläppas")
 
 1. Välj **frisläppningsdetaljer**.
 1. Sidan **produkfrisläppningsinformation** visas, där du kan granska detaljerna för den produkt som ska frisläppas och dess produktstruktur. Observera att alternativet **Skicka strukturlista** har värdet *Ja*. Därför kommer både produkt *Z0001* och alla dess underordnade artiklar från strukturlistan att frisläppas.
 
     Du kan markera ett underordnat objekt i det vänstra fönstret om du vill granska dess information. Om ett underordnat objekt har en struktur kan du också välja att frisläppa strukturlistan för den underordnade artikeln.
 
-    ![Granska produkfrisläppningsinformation](media/product-release-details.png "Granska produkfrisläppningsinformation")
+    ![Granska produkfrisläppningsinformation.](media/product-release-details.png "Granska produkfrisläppningsinformation")
 
 1. Stäng sidan för att återgå till guiden **Frisläpp produkter**.
 1. Välj **Nästa** för att öppna sidan **Välj produkter att frisläppa**. Om du har valt några standardprodukter (inte tekniker) visas de på den här sidan. Observera att när du släpper en standardprodukt genom att välja **Frisläpp produktstruktur**, frigörs också dess strukturlista och flöde.
 
-    ![Välja de standardprodukter som ska frisläppas](media/select-std-product-to-release.png "Välja de standardprodukter som ska frisläppas")
+    ![Välja de standardprodukter som ska frisläppas.](media/select-std-product-to-release.png "Välja de standardprodukter som ska frisläppas")
 
 1. Välj **Nästa** för att öppna sidan **Välj produktvarianter att frisläppa**. I det här exemplet finns det inte några varianter.
 1. Välj **Nästa** för att öppna sidan **Välj företag**.
 1. Välj de företag som produkten ska frisläppas till. I det här exemplet markerar du kryssrutan **USMF**.
 
-    ![Välja ut de företag som ska frisläppas](media/select-release-companies.png "Välja ut de företag som ska frisläppas")
+    ![Välja ut de företag som ska frisläppas till.](media/select-release-companies.png "Välja ut de företag som ska frisläppas")
 
 1. Välj **Nästa** för att öppna sidan **Bekräfta val**.
 1. Välj **Slutför**.
@@ -280,7 +280,7 @@ Om du vill granska produkten och släppa den i *USMF*-företaget följer du steg
 
     På sidan **öppna produktfrisläppningar** visas produkt *Z0001* som har statusen *väntar på att accepteras*.
 
-    ![Öppna produktfrisläppningar](media/open-product-releases.png "Öppna produktfrisläppningar")
+    ![Öppna produktfrisläppningar.](media/open-product-releases.png "Öppna produktfrisläppningar")
 
 1. Välj värdet i kolumnen **produktnummer** om du vill öppna sidan **produkfrisläppningsinformation**. Observera följande information:
 
@@ -288,7 +288,7 @@ Om du vill granska produkten och släppa den i *USMF*-företaget följer du steg
     - På snabbfliken **Frisläppningsinformation** visas information om produkten och den version som släpptes. Här kan du ändra inställningar som t.ex. effektivitetsdatum.
     - På snabbfliken **flöde** visas produktens flöde. I det här exemplet släpper du emellertid inga vägar.
 
-    ![Information om produktfrisläppning](media/product-release-details-2.png "Information om produktfrisläppning")
+    ![Information om produktfrisläppning.](media/product-release-details-2.png "Information om produktfrisläppning")
 
 1. När du är klar med granskningen av informationen kan du ta emot produkten och på det här sättet frisläppa företaget *USMF*. I åtgärdsfönstret, välj **Åtgärder &gt; Acceptera**.
 1. Produkten släpps nu i frisläppt företaget *USMF*. Gå till **Produktinformationshantering &gt; Produkter &gt; Frisläppta produkter**. Du bör se artikel *Z0001*.
@@ -304,7 +304,7 @@ Master Data Manager för det *USMF*-företaget vill försäkra sig om att produk
 1. I åtgärdsfönstret, på fliken **Produkt**, i gruppen **Livscykeltillstånd**, markerar du sedan **Ändra livscykeltillstånd**.
 1. I listrutan **Ändra livscykeltillstånd** anger du fältet **Tillstånd** till *Prototyp* och välj sedan **OK**.
 
-    ![Ändrar livscykeltillståndet](media/change-lifecycle-state.png "Ändrar livscykeltillståndet")
+    ![Ändra livscykeltillståndet.](media/change-lifecycle-state.png "Ändrar livscykeltillståndet")
 
 ## <a name="add-the-engineering-product-to-a-sales-order"></a>Lägg till en konstruktionsprodukt i en försäljningsorder
 
@@ -318,7 +318,7 @@ Produkten kan nu säljas till en kund. Följ dessa steg om du vill lägga till p
 
     En varning visas som informerar dig om att artikeln har statusen *prototyp*. Eftersom meddelandet bara är en varning, skapades dock fortfarande försäljningsordern.
 
-    ![Försäljningsorder för en konstruktionsprodukt](media/sales-order-eng-product.png "Försäljningsorder för en konstruktionsprodukt")
+    ![Försäljningsorder för en konstruktionsprodukt.](media/sales-order-eng-product.png "Försäljningsorder för en konstruktionsprodukt")
 
 ## <a name="request-changes-in-the-engineering-product"></a>Begära ändringar i den tekniska produkten
 
@@ -328,7 +328,7 @@ Produkten skickades till en kund, men kunden var inte helt nöjd och ger feedbac
 1. Leta upp och öppna försäljningsordern som du skapade i föregående övning.
 1. På snabbfliken **Försäljningsorderrader** välj **Konstruktionsändringshantering &gt; Ny begäran om teknisk ändring**.
 
-    ![Skapa en begäran om teknisk ändring från en försäljningsorder](media/sales-order-eng-change-request.png "Skapa en begäran om teknisk ändring från en försäljningsorder")
+    ![Skapa en begäran om teknisk ändring från en försäljningsorder.](media/sales-order-eng-change-request.png "Skapa en begäran om teknisk ändring från en försäljningsorder")
 
 1. Fyll i begäran om teknisk ändring utifrån kundens feedback. Ange följande värden för det här exemplet:
 
@@ -341,7 +341,7 @@ Produkten skickades till en kund, men kunden var inte helt nöjd och ger feedbac
 1. På snabbfliken **Information** välj **Ny &gt; Anteckning** för att lägga till en anteckning i rutnätet.
 1. I fältet **Beskrivning** för den nya anteckningen, ange det objektet *D0003* ska tas bort från strukturlistan Om du måste lägga till mer information för noteringen kan du ange text i fältet **anteckningar**.
 
-    ![Begäran om konstruktionsändring](media/eng-change-request.png "Begäran om konstruktionsändring")
+    ![Begäran om konstruktionsändring.](media/eng-change-request.png "Begäran om konstruktionsändring")
 
 1. Klicka på **Spara** i åtgärdsfönstret.
 1. Lägg märke till att artikeln automatiskt har lagts till på snabbfliken **produkter** och att källan till begäran om teknisk ändring (försäljningsordern) har lagts till på snabbfliken **källa**.
@@ -370,26 +370,26 @@ Teknikern granskar nu begäran från kunden och skapar en ändringsorder för pr
     - **Produkt:** *Z0001*
     - **Påverkan:** *Ny version*
 
-    ![Skapa en teknisk ändringsorder](media/eng-change-order.png "Skapa en teknisk ändringsorder")
+    ![Skapa en teknisk ändringsorder.](media/eng-change-order.png "Skapa en teknisk ändringsorder")
 
 1. Observera att eftersom du ställer in fältet **Påverkan** till *Ny version*, fältet **Ny version** på fliken **Detaljer** av snabbfliken **Produktinformation** visar vad det nya versionsnumret kommer att bli (*V-02* för detta exempel).
 
-    ![Produktinformation för teknisk ändringsorder](media/eng-change-order-product-details.png "Produktinformation för teknisk ändringsorder")
+    ![Produktinformation för teknisk ändringsorder.](media/eng-change-order-product-details.png "Produktinformation för teknisk ändringsorder")
 
 1. Klicka på **Spara** i åtgärdsfönstret.
 1. På snabbfliken **Produktinformation** på fliken **Strukturlista** välj **Rader** för att öppna strukturlistan för version *V-01* för produkt *Z0001*.
 
-    ![Strukturlisterader för tekniska produkter](media/eng-product-bom-lines.png "Strukturlisterader för tekniska produkter")
+    ![Strukturlisterader för tekniska produkter.](media/eng-product-bom-lines.png "Strukturlisterader för tekniska produkter")
 
 1. Markera raden för artikelnumret *D0003* och välj sedan **ta bort** i åtgärdsfönstret. Värdet i fältet **Ändringstyp** för den här raden ändras till *Borttaget*.
 1. Klicka på **Spara** i åtgärdsfönstret.
 
-    ![Modifierad strukturlisterader för tekniska produkter](media/eng-product-bom-lines-modified.png "Modifierad strukturlisterader för tekniska produkter")
+    ![Modifierade strukturlisterader för teknisk produkt.](media/eng-product-bom-lines-modified.png "Modifierad strukturlisterader för tekniska produkter")
 
 1. Stäng sidan **strukturlisteraden** för att återgå till sidan **Teknisk ändringsorder**.
 1. På snabbfliken **Produktdetaljer** på fliken **Strukturlista**, meddela värdet av fältet **Ändringstyp** för strukturlista *Z0001* är nu *Ändrad*.
 
-    ![Teknisk ändringsorder som innehåller en ändrad strukturlista](media/eng-change-order-changed-bom.png "Teknisk ändringsorder som innehåller en ändrad strukturlista")
+    ![Teknisk ändringsorder som innehåller en ändrad strukturlista.](media/eng-change-order-changed-bom.png "Teknisk ändringsorder som innehåller en ändrad strukturlista")
 
     Beställningen måste nu godkännas innan ändringarna kan behandlas. När ändringarna bearbetas uppdateras produkterna med de ändringar som ingår i den teknisk ändringsorder. I det här exemplet har personen som skapar teknisk ändringsorder angetts som godkännare.
 

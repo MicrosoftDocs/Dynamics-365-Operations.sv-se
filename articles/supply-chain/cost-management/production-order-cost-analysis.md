@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12e9446c145752cd74fb71884fcabe9d4bd03c68
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4d0a298a8f782ae318971e99c03e864fa5a4ef88
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187708"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343660"
 ---
 # <a name="production-order-cost-analysis"></a>Analys av kostnad för produktionsorder
 
@@ -41,7 +41,7 @@ Avvikelserna återspeglar en jämförelse mellan de rapporterade produktionsakti
 
 I bilden nedan visas de fyra avvikelserna som står för skillnaden mellan en tillverkningsorders faktiska kostnader och de beräknade kostnaderna i artikelns kostnadspost när tillverkningsordern avslutas. 
 
-![Avvikelser som hanterar skillnaderna i en avslutad tillverkningsorder](./media/control.jpg) 
+![Avvikelser som förklarar skillnaderna i en avslutad produktionsorder.](./media/control.jpg) 
 
 Du kan analysera produktionsavvikelser genom att använda sidan **avvikelse** rapporten **produktionsavvikelse**. Använd visningsalternativen om du vill visa detaljerade avvikelser per artikel och verksamhetsresurs eller per kostnadsgrupp. Principen för kostnadsuppdelning i lagerparametrarna bestämmer om avvikelser spåras efter kostnadsgrupp. Du kan också använda visningsalternativen **enstaka**, **flera** och **summa** för att visa sammanfattande avvikelser. Den detaljerade avvikelseinformationen ger dig en bättre förståelse för källan till respektive avvikelse. Om du vill kunna förutse avvikelserna innan tillverkningsordern avslutas, kan du analysera den detaljerade informationen som finns i rapporten **Kostnadsuppskattningar och kostnadsredovisningar**.
 

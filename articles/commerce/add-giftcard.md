@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8db7e597241f1fd552f6b960c2b57b0ba83da949
-ms.sourcegitcommit: efde05c758b2e02960760d875569d780d77d5550
+ms.openlocfilehash: 7fc35c67a2d9b641f03f11ed5d06913e10d8e25b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5962773"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347514"
 ---
 # <a name="gift-card-module"></a>Presentkortsmodul
 
@@ -42,7 +42,7 @@ Det finns två tillgängliga presentkortmoduler:
 
 Följande bild visar ett exempel på en presentkortmodul på en kassasida.
 
-![Exempel på en presentkortsmodul](./media/ecommerce-giftcard.PNG)
+![Exempel på en presentkortsmodul.](./media/ecommerce-giftcard.PNG)
 
 ## <a name="module-properties"></a>Modulegenskaper
 

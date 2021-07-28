@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1a884031905e59e7bfedab9af7b97a7c54e40895
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 97ecd7996ed2d8fb12c1038aa296450d3481e6fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866312"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345796"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportträddefinitioner i ekonomiska rapporter
 
@@ -170,23 +170,23 @@ Här är strukturen för rapportenheter i följande rapportträd:
 - Detaljrapportenheterna på lägsta nivån (Home Sales, Auto Sales, Client Services och Operations) representerar avdelningar i ekonomiska data. Dessa rapportenheter är det skuggade i området i diagrammet.
 - Summeringsenheterna på högre nivå sammanfattar informationen från detaljenheterna.
 
-[![Struktur i sammanfattningsrapport för Contoso - Exempel 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Struktur i sammanfattningsrapport för Contoso - Exempel 1.](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Rapportenhetsstruktur – Exempel 2
 
 Följande diagram visar ett rapportträd för en organisationsstruktur som är uppdelad efter affärsfunktioner.
 
-[![Struktur i sammanfattningsrapport för Contoso - Exempel 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Struktur i sammanfattningsrapport för Contoso - Exempel 2.](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Exempel på dialogrutan Infoga Rapportenheter från Dimensioner
 
 Det här illustrationen visar ett exempel på dialogrutan **Infoga Rapportenheter från Dimensioner**. I det här exemplet returnerar resultaten en kombination av affärsenheter, kostnadsställen och avdelningar.
 
-[![Infoga rapportenheter](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Infoga rapportenheter.](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 Den resulterande rapportträdsdefinitionen är sorterad efter affärsenheter därefter efter kostnadsställe och sedan efter avdelning. Dimensionen för den femte rapportenheten är **Affärsenhet = \[001\], Kostnadsställe =\[\], Avdelning = \[022\]** och identifierar en rapportenhet för konton som är specifika för affärsenheten 001 och avdelningen 022.
 
-[![Illustration av rapportträdet](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Illustration av rapportträdet.](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Exempel på rulla upp data
 
@@ -194,11 +194,11 @@ Följande exempel visar möjlig information som används i en rapportträddefini
 
 #### <a name="example-1"></a>Exempel 1
 
-[![Sammanslagning av flera företag](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Sammanslagning av flera företag.](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>Exempel 2
 
-[![Sammanslagning av avdelning för flera företag](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Sammanslagning av avdelning för flera företag.](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

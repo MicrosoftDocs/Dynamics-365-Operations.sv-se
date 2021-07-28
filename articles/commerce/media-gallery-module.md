@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e9af56a8a82938fa7d23e8096db2c59ed5fcb517
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271290"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346726"
 ---
 # <a name="media-gallery-module"></a>Modul för mediegalleri
 
@@ -41,7 +41,7 @@ Här följer några användarexempel på moduler för mediegalleri:
 
 I exemplet nedan är en inköpsrruta på ett PDP-program värd för produktbilder med hjälp av modulen mediegalleri.
 
-![Exempel på en inköpsruta på en produktinformations sida som är värd för produktbilder med hjälp av en modulen mediegalleri](./media/ecommerce-pdp-buybox.PNG)
+![Exempel på en inköpsruta på en produktinformationssida som är värd för produktbilder med hjälp av en modul för mediegalleri.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="media-gallery-properties"></a>Egenskaper för mediegalleri
 
@@ -59,11 +59,11 @@ I exemplet nedan är en inköpsrruta på ett PDP-program värd för produktbilde
 
 Följande illustration visar ett exempel på en modul mediegalleri där helskärms- och zoomningsalternativen är tillgängliga.
 
-![Exempel på en modul mediegalleri där helskärms- och zoomningsalternativen är tillgängliga.](./media/ecommerce-media-zoom.png)
+![Exempel på en modul för mediegalleri där helskärms- och zoomningsalternativen är tillgängliga.](./media/ecommerce-media-zoom.png)
 
 Följande illustration visar ett exempel på modulen mediegaller som har granskade bilder (dvs. de angivna bilderna är inte beroende av produkt-ID eller sidkontext).
 
-![Exempel på modulen mediegalleri som har granskade bilder](./media/ecommerce-media-curated.PNG)
+![Exempel på modul för mediegalleri som har granskade bilder.](./media/ecommerce-media-curated.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interaktion för skalningsenhet för handel
 

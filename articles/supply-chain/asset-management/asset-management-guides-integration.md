@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 3793dca681e28b90e96469256f368620393704f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908577"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344280"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrera Dynamics 365 Supply Chain Management (tillgångshantering) med Dynamics 365 Guides
 
@@ -56,38 +56,38 @@ För att associera en guide med en mall för underhållschecklista ska du följa
     1. På snabbfliken **Underhållschecklistrader** markerar du raden som du vill associera guiden till.
     1. På snabbfliken **Associerade guider** väljer du **Lägg till guide**.
 
-        ![Associera en guide med en mall för underhållschecklistrad](media/am-guides-integration-add-guide.png "Associera en guide med en mall för underhållschecklistrad")
+        ![Associera en guide med en mall för underhållschecklisterad.](media/am-guides-integration-add-guide.png "Associera en guide med en mall för underhållschecklistrad")
 
     1. I fältet **Namn** väljer du en guide och sedan **Spara**.
 
-        ![Välj guide i fältet Namn](media/am-guides-integration-select-guide.png "Välj guide i fältet Namn")
+        ![Välj en guide i fältet Namn.](media/am-guides-integration-select-guide.png "Välj guide i fältet Namn")
 
 1. Associera en mall för underhållschecklista med en jobbtyp:
 
     1. [Skapa en underhållsjobbtyp](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-job-type) eller välj en befintlig underhållsjobbtyp.
     1. I åtgärdsfönstret väljer du **Standardinställningar för underhållsjobbtyp**.
 
-        ![Knappen standardinställningar för underhållsjobbtyp](media/am-guides-integration-job-defaults.png "Knappen standardinställningar för underhållsjobbtyp")
+        ![Knappen Standardinställningar för underhållsjobbtyp.](media/am-guides-integration-job-defaults.png "Knappen standardinställningar för underhållsjobbtyp")
 
     1. Skapa en rad och välj sedan **Spara**.
 
-        ![Skapa en rad](media/am-guides-integration-add-line.png "Skapa en rad")
+        ![Skapa en rad.](media/am-guides-integration-add-line.png "Skapa en rad")
 
     1. I åtgärdsfönstret klickar du på **Underhållschecklista**.
 
-        ![Knapp för underhållschecklista](media/am-guides-integration-maintenance-checklist.png "Knapp för underhållschecklista")
+        ![Knapp för underhållschecklista.](media/am-guides-integration-maintenance-checklist.png "Knapp för underhållschecklista")
 
     1. På snabbfliken **Underhållschecklistrader** lägger du till en rad och ändrar sedan värdet i fältet **Typ** till **Mall**.
 
-        ![Ändra värdet Typ](media/am-guides-integration-checklist-lines.png "Ändra värdet Typ")
+        ![Ändra värdet Typ.](media/am-guides-integration-checklist-lines.png "Ändra värdet Typ")
 
     1. På snabbfliken **Raddetaljer** i fältet **Mall** väljer du den mall som du associerade guiden till och väljer **Spara**.
 
-        ![Välj mall](media/am-guides-integration-checklist-line-details.png "Välj mall")
+        ![Välj mallen.](media/am-guides-integration-checklist-line-details.png "Välj mall")
 
 1. [Skapa en arbetsorder](work-orders/manually-created-workorders.md#create-work-order) och välj sedan underhållsjobbtyp som använder den mall för underhållschecklista som du associerade guiden till. Guiden associeras automatiskt till arbetsordern.
 
-    ![Välj underhållsjobbtyp](media/am-guides-integration-create-work-order.png "Välj underhållsjobbtyp")
+    ![Välj underhållsjobbtyp.](media/am-guides-integration-create-work-order.png "Välj underhållsjobbtyp")
 
 1. Visa den guide som är associerad till arbetsordern och arbetarna:
 
@@ -95,11 +95,11 @@ För att associera en guide med en mall för underhållschecklista ska du följa
     1. [Öppna underhållschecklistan](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job) för arbetsordern.
     1. Välj en checklistrad för att se associerad guide.
 
-        ![Guide associerad till checklistarad](media/am-guides-integration-show-guide.png "Guide associerad till checklistrad")
+        ![Guide associerad till checklisterad.](media/am-guides-integration-show-guide.png "Guide associerad till checklistrad")
 
     1. Öppna guiden i HoloLens.
 
-        ![Öppna guiden i HoloLens](media/am-guides-integration-hololens-select.png "Öppna guiden i HoloLens")
+        ![Öppna guiden i HoloLens.](media/am-guides-integration-hololens-select.png "Öppna guiden i HoloLens")
 
 > [!NOTE]
 > Du kan även associera en guide direkt i underhållschecklistan för en arbetsorder eller jobbtyp.

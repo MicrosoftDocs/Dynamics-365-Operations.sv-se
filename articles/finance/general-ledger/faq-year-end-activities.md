@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 379bb8a1f969a74618db0e57c84c2038db1b631c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ceacdbe36cc946b64d13b3faff2b3b1ca59afbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822841"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345486"
 ---
 # <a name="year-end-activities-faq"></a>Vanliga frågor och svar om aktiviteter för årsavslut 
 
@@ -29,7 +29,7 @@ Det här avsnittet har sammanställts för att underlätta aktiviteter för års
 ## <a name="general-ledger-how-do-i-know-that-were-running-year-end-close-and-not-undoing-year-end-close"></a>Redovisning: Hur vet jag att vi utför årsbokslutet och inte ångrar årsbokslutet?
 Vi har sett organisationer försöka utföra årsbokslutet men i stället ångrade årsbokslutet. Om årsbokslutet slutförs mycket snabbt eller om årsbokslutet inte skapar några poser för ingående balans, ska du kontrollera inställningen **Ångra föregående slut** i **Årsbokslut** (**Redovisning > Periodstängning > Årsbokslut > Kör årsbokslut**). 
 
-[![Köra årsbokslut kontra ångra årsbokslut](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
+[![Köra årsbokslut kontra ångra årsbokslut.](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
 
 Om alternativet **Ångra föregående slut** anges till **Ja** återförs föregående årsbokslut. När du ångrar tas alla poster för utgående och ingående balans bort, som om årsbokslutet aldrig hade körts. Verifikationerna tas bort. Årsbokslutet körs inte igen automatiskt. Du måste starta processen igen och nu ändra **Ångra föregående slut** till **Nej**. 
 
@@ -39,11 +39,11 @@ Om alternativet **Ångra föregående slut** anges till **Ja** återförs föreg
 ## <a name="general-ledger-what-is-the-difference-between-undo-and-delete-gl-parameter-for-year-end-close"></a>Redovisning: Vad är skillnaden mellan redovisningsparametrarna Ångra och Ta bort för årsbokslutet?
 Det kan uppstå förvirring gällande skillnaderna mellan parametern **Ångra föregående slut**, som finns i dialogrutan **Årsbokslut**, och parametern **Radera UB-transaktioner vid överföring** i redovisningen (**Redovisning > Periodstängning > Årsbokslut > Kör årsbokslut**).  
 
-[![Skillnaden mellan redovisningsparametrarna Ångra och Ta bort för årsbokslut](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
+[![Skillnaden mellan redovisningsparametrarna Ångra och Ta bort för årsbokslut.](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
 
 Välj **Ångra föregående slut** i den nedrullningsbara menyn i dialogrutan när du kör årsbokslutet för att på så sätt ta bort alla poster för utgående och ingående balans, som om årsbokslutet aldrig hade körts. Verifikationerna tas bort. Årsbokslutet körs inte igen automatiskt. Om du vill köra årsbokslutet måste du sätta i gång den här processen igen, men denna gång ska du ändra **Ångra föregående slut** till **Nej** (**Redovisning > Redovisningsinställningar > Redovisningsparametrar**). 
 
-[![Inställningen Redovisningsparametrar](./media/faq-2020-yr-end-03.png)](./media/faq-2020-yr-end-03.png)
+[![Inställningen Redovisningsparametrar.](./media/faq-2020-yr-end-03.png)](./media/faq-2020-yr-end-03.png)
 
 Parametern **Radera UB-transaktioner vid överföring** i redovisningen används bara när du kör (inte ångrar) årsbokslutet (alternativet **Ångra föregåendes slut** anges till **Nej**). Om den här parametern är inställd på **Ja** tas alla poster för utgående och ingående balans bort och årsbokslutet körs igen. Den här processen används när organisationen vill att alla transaktioner, inklusive justeringar sedan senaste årsbokslut, ska bokföras i en enda redovisningspost för poster för utgående och ingående balans. 
 
@@ -60,7 +60,7 @@ När du kör årsbokslutet återskapas saldot för varje dimensionsuppsättning,
 
 De onödiga dimensionsuppsättningarna påverkar också batchjobbet **BudgetDimensionFocusInitializeBalance** (**Redovisning > Kontoplan > Dimensioner > Ekonomiska dimensionsuppsättningar**).
 
-[![Ekonomiska dimensionsuppsättningar](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
+[![Ekonomiska dimensionsuppsättningar.](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### <a name="year-end-close-template-configuration"></a>Konfiguration av mall för årsbokslut
 Med mallen för årsbokslut kan organisationer välja nivån på ekonomiska dimensioner som ska underhållas när resultatsaldon ska överföras till balanserade vinstmedel. Med dessa inställningarna kan en organisation underhålla de detaljerade ekonomiska dimensionerna (**Stäng alla**) när saldona överförs till balanserade vinstmedel eller välja att summera beloppen till ett enda dimensionsvärde (**Stäng enstaka**). Detta kan definieras för varje ekonomisk dimension. Mer information om de här inställningarna finns i avsnittet [Årsbokslut](year-end-close.md).
@@ -72,14 +72,14 @@ Om du har uppdaterat till version 10.0.13 eller senare sedan den senaste gången
  
 ## <a name="general-ledger--what-does-the-period-close--year-end-close-do"></a>Redovisning – Vad gör Periodstängning – Årsbokslut?
  
-[![Periodstängning, årsbokslut](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
+[![Periodstängning, årsbokslut.](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
 
 ### <a name="performance-improvements-for-rebuilding-financial-dimension-sets-new-feature"></a>Prestandaförbättringar vid återskapande av ekonomiska dimensionsuppsättningar (ny funktion)
 En ny funktion har lagts till i version 10.0.16 som förbättrar prestandan vid årsbokslut och konsolideringsprocessen. Funktionen kallas för Prestandaförbättringar vid återskapande av ekonomiska dimensionsuppsättningar. Med den här funktionen ändras sättet som dimensionsuppsättningar återskapas på, så att de bara återskapas för en relevant tidsram. I föregående versioner återskapades dimensionsuppsättningar för alla datum. Om du exempelvis stänger år 2020 kommer systemet bara att återskapa saldona för transaktioner under räkenskapsåret 2020. Om du kör konsolidering för datumintervallet 1 november 2020 till 30 november 2020, kommer systemet bara att återskapa saldona för det datumintervallet.
 
 Eftersom den här funktionen betraktas som en stor ändring måste du aktivera den med hjälp av arbetsytan för **funktionshantering**.
  
-[![Årsbokslut](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
+[![Årsbokslut.](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
 
 ## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2020"></a>Leverantörsreskontra: Vilka ändringar har gjorts som stöd för 1099-rapport vid årsslut för 2020?
 
@@ -114,15 +114,15 @@ Nej. Rutinen Uppdatera 1099 utförs mot en enda leverantör åt gången. Om din 
 ## <a name="accounts-payable-1099--recalculate-existing-1099-amounts-vs-update-all-in-the-update-1099-utility"></a>Leverantörsreskontra: 1099 – "Omberäkna befintliga 1099-belopp" kontra "Uppdatera alla" i verktyget Uppdatera 1099.
 Kryssrutan **Omberäkna befintliga 1099-belopp** återställer 1099-beloppet till de totala betalda värdena, när de används tillsammans med kryssrutan **Uppdatera alla**. 
 
-[![Skatt 1099-transaktioner: Innan uppdateringsrutinen körs](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
+[![Skatt 1099-transaktioner: Innan uppdateringsrutinen körs.](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
 
 Kryssrutan **Omberäkning av befintliga 1099-belopp** fungerar bara när det finns delvärden för 1099 på fakturan eller om den ändrades i formuläret 1099-skatt. Anta att du har en faktura med värdet 1 000,00 USD, men användaren skriver manuellt in ett 1099-belopp på fakturan på 500,00 USD.
 
-[![Skatt 1099-transaktioner: Markera både Uppdatera alla och Omberäkna befintliga 1099-belopp](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
+[![Skatt 1099-transaktioner: Markera både Uppdatera alla och Omberäkna befintliga 1099-belopp.](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
 
 Om detta betalas blir 500,00 USD det betalade 1099-beloppet. Om du utför omberäkningsrutinen ändrar systemet 1099-beloppet till 1 000,00 USD, vilket är den summa som betalades.
 
-[![Skatt 1099-transaktioner: Efter att 1099-rutinen har körts](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
+[![Skatt 1099-transaktioner: Efter att 1099-rutinen har körts.](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
 
 ## <a name="accounts-payable-1099--manually-create-1099-transactions"></a>Leverantörsreskontra: 1099 – Skapa 1099-transaktioner manuellt
 En organisation kanske måste skapa 1099-transaktioner manuellt som inte är kopplade till en faktura. Du kan lägga till manuella 1099-transaktioner genom att gå **Leverantörsreskontra > Periodiska uppgifter > 1099-skatt > Leverantörskvittning för 1099-transaktioner**. Välj knappen **Manuella 1099-transaktioner**. 

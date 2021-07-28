@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 645022000d8746db3793a8a8611ab8f17c7bcc6e
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 04ffa8e56b72727c079db07f38bfae675ae2abb1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117143"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344966"
 ---
 # <a name="search-results-module"></a>Sökresultatmodul
 
@@ -38,7 +38,7 @@ Mer information om kategori- och sökresultatsidor finns i [Standardkategorins l
 
 Följande illustration visar ett exempel på en sökresultatsida för en kategori på Fabrikams webbplats.
 
-![Exempel på en sökresultatsida på webbplatsen Fabrikam](./media/SimpleCategoryLandingDressCategory.png)
+![Exempel på en sökresultatsida på webbplatsen Fabrikam.](./media/SimpleCategoryLandingDressCategory.png)
 
 ## <a name="search-results-module-properties"></a>Egenskaper för sökresultatmodul
 

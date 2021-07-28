@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 496c4fe5230a599acf60fac39e51c43db372f92c
-ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
+ms.openlocfilehash: c7be9e2d32384df23a4609d82216804fc945061a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129832"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345194"
 ---
 # <a name="create-returns-in-pos"></a>Skapa returer i kassan (POS)
 
@@ -48,7 +48,7 @@ Om en transaktion eller order hittas som matchar sökkriterierna visas sidan **R
 
 För varje orderrad i listan med returnerbara varor visar kassan (POS) information om den ursprungliga inköpskvantiteten och kvantiteterna från eventuella returer som tidigare bearbetats. Returkvantiteten som en användare anger för en orderrad måste vara mindre än eller lika med värdet i fältet **Tillgängliga för retur**.
 
-![Sidan Returnerbara produkter](media/returnslist.png)
+![Sidan Returnerbara produkter.](media/returnslist.png)
 
 Om en användare har den fysiska produkten och den produkten har en streckkod kan användaren skanna streckkoden för att registrera returen i samband med retur. Varje skanning av streckkoden ökar returkvantiteten med en (1) artikel. Om streckkodsetiketten emellertid har en inbäddad kvantitet anges den kvantiteten i fältet **Returneras nu**.
 
@@ -97,6 +97,13 @@ Om kanalsidans information av någon anledning inte är uppdaterad och en offlin
 
 > [!NOTE]
 > När funktionen **Enhetlig returbearbetningserfarenhet i kassan (POS)** är aktiverad blir nya tillvalsfunktioner tillgängliga som stöder bekräftandet av serialiserade produktreturer. Mer information finns i [Returserienummerkontrollerade produkter i kassan (POS)](POS-serial-returns.md).
+
+## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Aktivera korrekt momsberäkning för returer med delkvantitet
+
+Med hjälp av den här funktionen kan du se till att momsen blir lika med det momsbelopp som ursprungligen debiterades när en order returneras med hjälp av flera fakturor.
+1.  Gå till arbetsytan **Funktionshantering** och sök efter **Aktivera korrekt momsberäkning för returer med delkvantitet**.
+2.  Välj **Aktivera korrekt momsberäkning för returer med delkvantitet** och klicka sedan på **Aktivera**.
+
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

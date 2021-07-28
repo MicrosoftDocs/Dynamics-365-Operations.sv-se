@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c3827c5cff009453c820e70f00bfa4f36d78973f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3bf1c8081eea86fd14600174d843447b727d0226
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755262"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347958"
 ---
 # <a name="modify-row-definition-cells"></a>Ändra raddefinitionsceller
 
@@ -174,7 +174,7 @@ I kolumnen **Formatkod** i en raddefinition använder formatkoderna **DES**, **L
 
 I följande exempel vill en användare förhindra att rubriken och understrecken i raden **Totala kontanter** i rapporten skrivs ut, eftersom det inte finns någon aktivitet på något av kassakontona. Därför, på rad 220 (som, vilket formatkoden **---** anger, är en formateringsrad), i cellen **Relaterade formler/rader/enheter**, anger användaren **250** som är radkoden för beloppsraden som ska utelämnas.
 
-[![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
+[![RelatedRowsRowDefinition.](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
 ## <a name="select-the-base-row-for-a-column-calculation"></a>Välj basraden för en kolumnberäkning
 I relationsrapportering tilldelar du en eller flera basrader i raddefinitionen, med hjälp av formatkoden **CBR** (ändra basrad). En basrad refereras sedan av en beräkning i kolumndefinitionen. Här följer några typiska exempel på CBR-beräkning:
@@ -399,7 +399,7 @@ Cellen **Länka till ekonomiska dimensioner** innehåller länkar till de ekonom
 2. Dubbelklicka på en cell i en kolumn av typen **Länk till ekonomiska dimensioner**.
 3. I dialogrutan **Dimensioner** dubbelklickar du på en cell under dimensionsnamnet.
 4. I dialogrutan för dimensionen, välj **Individuella eller intervall**.
-5. I fältet **Från** anger du startdimensionen eller klickar på ![Bläddra](media/browse.gif "Bläddra") för att söka efter tillgängliga dimensioner. Om du vill ange ett intervall med dimensioner, anger du den avslutande dimensionen i fältet **Till** .
+5. I fältet **Från** anger du startdimensionen eller klicka på ![Bläddra.](media/browse.gif "Bläddra") för att söka efter tillgängliga dimensioner. Om du vill ange ett intervall med dimensioner, anger du den avslutande dimensionen i fältet **Till** .
 6. Klicka på **OK** för att stänga dialogrutan för dimensionen. Dialogrutan **Dimensioner** visar den uppdaterade dimensionen eller intervallet.
 7. Klicka på **OK** för att stänga dialogrutan **Dimensioner**.
 
@@ -476,7 +476,7 @@ I tabellen nedan beskrivs fälten i dialogrutan **Dimensioner**.
 
 | Artikel                | Beskrivning |
 |---------------------|-------------|
-| Individuella eller Intervall | I fältet **Från** anger du namnet på ett konto eller klickar på knappen **Bläddra** ![Bläddra](media/browse.gif "Bläddra") för att bläddra till kontot. För att välja ett intervall anger du eller bläddrar efter ett värde i fältet **Till**. |
+| Individuella eller Intervall | I fältet **Från** anger du namnet på ett konto eller klickar på knappen **Bläddra** ![Bläddra.](media/browse.gif "Bläddra") om du vill bläddra efter kontot. För att välja ett intervall anger du eller bläddrar efter ett värde i fältet **Till**. |
 | Dimensionsvärdeuppsättning | Ange namnet på en dimensionsvärdeuppsättning i fältet **Namn**. Om du vill skapa, ändra, kopiera eller ta bort en uppsättning, klickar du på **Hantera dimensionsvärdeuppsättningar**. Fältet **Formel** fylls i med formeln från cellen **Länka till ekonomiska dimensioner** för denna dimensionsvärdeuppsättning som anges i raddefinitionen. |
 | SUmmeringskonton   | I fältet **Namn** anger du eller bläddrar efter en dimension av summeringskonton. Fältet **Formel** fylls i med formeln i cellen **Länka till ekonomiska dimensioner** för detta summeringskonto i rapportdefinitionen. |
 

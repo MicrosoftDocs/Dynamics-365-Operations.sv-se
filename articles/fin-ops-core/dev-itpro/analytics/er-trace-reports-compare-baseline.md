@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: a8609cb026e7738eab96980bc9fe4a53340272eb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e4245f5951cc4891b378f2343a1563ced33bc937
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743591"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345850"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Spåra skapade rapportresultat och jämföra dem med baslinjevärden
 
@@ -52,7 +52,7 @@ För att slutföra stegen i detta exempel måste du i RCS först slutföra stege
 2. I fältet **klass** anger du **bifoga fil**.
 3. I fältet **grupp** anger du **fil**.
 
-![Sida för dokumenttyper](media/GER-BaselineSample-SetupDocumentType.PNG "Skärmbild av sidan dokumenttyper")
+![Sida för dokumenttyper.](media/GER-BaselineSample-SetupDocumentType.PNG "Skärmbild av sidan dokumenttyper")
 
 > [!NOTE]
 > En ny dokumenttyp som har samma namn måste konfigureras för varje datauppsättning där du planerar att använda funktionen ER-baslinje.
@@ -61,11 +61,11 @@ För att slutföra stegen i detta exempel måste du i RCS först slutföra stege
 
 1. I arbetsytan **elektronisk rapportering** i avsnittet **Relaterade länkar** väljer du **parametrar för elektronisk rapportering**.
 
-    ![Arbetsytan för elektronisk rapportering](media/GER-BaselineSample-ERWorkspace.PNG "Skärmbild av arbetsytan elektronisk rapportering")
+    ![Arbetsytan för elektronisk rapportering.](media/GER-BaselineSample-ERWorkspace.PNG "Skärmbild av arbetsytan elektronisk rapportering")
 
 2. På fliken **bifogade filer** i fältet **baslinje** anger du eller väljer den dokumenttyp som du just har skapat.
 
-    ![Fliken bifogade filer på sidan parametrar för elektronisk rapport](media/GER-BaselineSample-ERParameters.PNG "Skärmbild av parametrar för elektronisk rapportering")
+    ![Fliken Bifogade filer på sidan Parametrar för elektronisk rapport.](media/GER-BaselineSample-ERParameters.PNG "Skärmbild av parametrar för elektronisk rapportering")
 
 3. Välj **Spara** och stäng sidan **Parametrar för elektronisk rapportering**.
 
@@ -76,7 +76,7 @@ För att slutföra stegen i detta exempel måste du i RCS först slutföra stege
 3. I listrutan i fältet **namn** anger du **modell för att lära dig ER-baslinjer**.
 4. Välj **skapa konfiguration** om du vill bekräfta att en ny post för ER-datamodell skapas.
 
-![Den nedrullningsbara dialogrutan skapa konfiguration](media/GER-BaselineSample-ModelAdd.PNG "Skärmbild av den nedrullningsbara dialogrutan skapa konfiguration")
+![Den nedrullningsbara dialogrutan Skapa konfiguration.](media/GER-BaselineSample-ModelAdd.PNG "Skärmbild av den nedrullningsbara dialogrutan skapa konfiguration")
 
 ### <a name="design-a-data-model"></a>Designa en datamodell
 
@@ -90,7 +90,7 @@ För att slutföra stegen i detta exempel måste du i RCS först slutföra stege
 8. Välj **Ändra status**.
 9. Välj **Slutför** och välj sedan **OK**.
 
-![Sidan Konfigurationer](media/GER-BaselineSample-ModelComplete.PNG "Skärmbild av sidan Konfigurationer")
+![Sidan Konfigurationer.](media/GER-BaselineSample-ModelComplete.PNG "Skärmbild av sidan Konfigurationer")
 
 ### <a name="add-a-new-er-format-configuration"></a>Lägg till en ny konfiguration för ER-format
 
@@ -99,7 +99,7 @@ För att slutföra stegen i detta exempel måste du i RCS först slutföra stege
 3. I fältet **namn** anger du **format för att lära dig ER-baslinjer**.
 4. Välj **skapa konfiguration** om du vill bekräfta att en ny post för ER-format skapas.
 
-![Den nedrullningsbara dialogrutan skapa konfiguration](media/GER-BaselineSample-FormatAdd.PNG "Skärmbild av den nedrullningsbara dialogrutan skapa konfiguration")
+![Den nedrullningsbara dialogrutan Skapa konfiguration.](media/GER-BaselineSample-FormatAdd.PNG "Skärmbild av den nedrullningsbara dialogrutan skapa konfiguration")
 
 ### <a name="design-a-format"></a>Designa ett format
 
@@ -128,7 +128,7 @@ I det här exemplet ska du skapa ett enkelt ER-format för att generera XML-doku
     2. I fältet **Namn**, ange **ID**.
     3. Välj **OK**.
 
-    ![Formatdesignersida](media/GER-BaselineSample-FormatLayoutDesign.PNG "Skärmbild av sidan Formatdesigner")
+    ![Formatdesignersida.](media/GER-BaselineSample-FormatLayoutDesign.PNG "Skärmbild av sidan Formatdesigner")
 
 8. Välj **ta bort** på fliken **mappning**.
 9. Välj **Lägg till rot**.
@@ -141,7 +141,7 @@ I det här exemplet ska du skapa ett enkelt ER-format för att generera XML-doku
 11. I trädet, välj **Output\\Document\\Id**.
 12. Välj **Bind** och välj sedan **Spara**.
 
-![Formatdesignersida](media/GER-BaselineSample-FormatMappingDesign.PNG "Skärmbild av sidan Formatdesigner")
+![Formatdesignersida.](media/GER-BaselineSample-FormatMappingDesign.PNG "Skärmbild av sidan Formatdesigner")
 
 Baserat på den designade strukturen kommer det konfigurerade formatet att generera en XML-fil. Denna XML-kod innehåller elementet **Rot** som har attributet **ID** som är angivet med värdet som användaren anger i dialogrutan ER-körtid.
 
@@ -151,11 +151,11 @@ Baserat på den designade strukturen kommer det konfigurerade formatet att gener
 2. I fältet **Ange ID** anger du **1**.
 3. Välj **OK**.
 
-    ![Dialogrutan Elektroniska rapportparametrar](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "Skärmbild av dialogrutan för parametrar för elektronisk rapportering")
+    ![Dialogrutan Elektroniska rapportparametrar.](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "Skärmbild av dialogrutan för parametrar för elektronisk rapportering")
 
 4. Spara en lokal kopia av filen **out.Admin.xml** som genereras så att du kan använda den senare som en baslinje för det här ER-formatet.
 
-    ![Meddelande om den genererade filen på sidan konfigurationer](media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG "Skärmbild av meddelande om den genererade filen på sidan konfigurationer")
+    ![Meddelande om den genererade filen på sidan konfigurationer.](media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG "Skärmbild av meddelande om den genererade filen på sidan konfigurationer")
 
 ### <a name="configure-er-parameters-to-use-the-baseline-feature"></a>Konfigurera ER-parametrar för att använda baslinjefunktionen
 
@@ -163,20 +163,20 @@ Baserat på den designade strukturen kommer det konfigurerade formatet att gener
 2. Ställ in alternativet **Kör i felsökningsläge** till **Ja**.
 3. Välj **OK**.
 
-![Dialogruta Användarparametrar](media/GER-BaselineSample-ERUserParameters.PNG "Skärmbild av dialogrutan användarparametrar")
+![Dialogrutan Användarparametrar.](media/GER-BaselineSample-ERUserParameters.PNG "Skärmbild av dialogrutan användarparametrar")
 
 ### <a name="add-a-new-baseline-for-designed-er-format"></a>Lägg till en ny baslinje för ett utformat ER-format
 
 1. Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
 2. Klicka på **Baslinjer** i åtgärdsfönstret.
 
-    ![Knappen Baslinjer på sidan Konfigurationer](media/GER-BaselineSample-OpenBaselinePage.PNG "Skärmbild av knappen Baslinjer på sidan Konfigurationer")
+    ![Knappen Baslinjer på sidan Konfigurationer.](media/GER-BaselineSample-OpenBaselinePage.PNG "Skärmbild av knappen Baslinjer på sidan Konfigurationer")
 
 3. Klicka på **Ny** i åtgärdsfönstret.
 4. Välj **format för att lära dig ER-baslinjer** som du har utformat tidigare.
 5. Välj **Spara**.
 
-![Sidan Baslinjer med elektroniskt rapporteringsformat](media/GER-BaselineSample-AddBaseline.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
+![Sidan Baslinjer för elektroniskt rapporteringsformat.](media/GER-BaselineSample-AddBaseline.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
 
 Baslinjen läggs till i formatet **format för att lära dig ER-baslinjer**.
 
@@ -186,7 +186,7 @@ Baslinjen läggs till i formatet **format för att lära dig ER-baslinjer**.
 2. I åtgärdsfönstret väljer du **Ny** \> **Fil**. I ER-parametrarna bör dokumenttypen **fil** ha valts tidgare som den dokumenttyp som används för att lagra baslinjefiler.
 3. Välj **bläddra** och välj sedan filen **out. Admin.xml** som skapades när det konfigurerade ER-formatet kördes tidigare.
 
-    ![Sidan Bilagor](media/GER-BaselineSample-UploadBaselineFile.PNG "Skärmbild av sidan Bilagor")
+    ![Sidan Bilagor.](media/GER-BaselineSample-UploadBaselineFile.PNG "Skärmbild av sidan Bilagor")
 
 4. Stäng sidan **Bilagor**.
 5. På snabbfliken **Baslinjer**, välj **Ny**.
@@ -201,7 +201,7 @@ Baslinjen läggs till i formatet **format för att lära dig ER-baslinjer**.
 10. I fältet **baslinje** anger eller väljer du bilagan **out.Admin**.
 11. Välj **Spara**.
 
-![Sidan Baslinjer med elektroniskt rapporteringsformat](media/GER-BaselineSample-SetupBaselineLine.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
+![Sidan Baslinjer för elektroniskt rapporteringsformat.](media/GER-BaselineSample-SetupBaselineLine.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Kör det utformade ER-formatet och granska loggen för att analysera resultaten
 
@@ -212,7 +212,7 @@ Baslinjen läggs till i formatet **format för att lära dig ER-baslinjer**.
 5. Välj **OK**.
 6. Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfiguration av felsökningsloggar**.
 
-    ![Sidan körningsloggar för elektronisk rapportering](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Skärmbild av sidan körningsloggar för elektronisk rapportering")
+    ![Sidan körningsloggar för elektronisk rapportering.](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Skärmbild av sidan körningsloggar för elektronisk rapportering")
 
     > [!NOTE]
     > Körningsloggen innehåller information om resultaten av jämförelsen mellan den genererade filen och den konfigurerade baslinjen. I det här exemplet anger loggen att den genererade filen och baslinjen är lika.
@@ -228,7 +228,7 @@ Baslinjen läggs till i formatet **format för att lära dig ER-baslinjer**.
 5. Välj **OK**.
 6. Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfiguration av felsökningsloggar**.
 
-    ![Sidan körningsloggar för elektronisk rapportering](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Skärmbild av sidan körningsloggar för elektronisk rapportering")
+    ![Sidan körningsloggar för elektronisk rapportering.](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Skärmbild av sidan körningsloggar för elektronisk rapportering")
 
     > [!NOTE]
     > Körningsloggen innehåller information om resultaten av jämförelsen mellan den genererade filen och den konfigurerade baslinjen. I det här exemplet anger loggen att den genererade filen och baslinjen är olika.

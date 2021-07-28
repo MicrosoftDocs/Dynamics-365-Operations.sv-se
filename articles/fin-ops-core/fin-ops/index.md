@@ -9,17 +9,17 @@ ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: rhaertle
-ms.custom: 62303
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be65f8c49d5a4fb87f7d859c1e012d53515ad073
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: bc81c7eed4724f9f68b592b23818781e1b047ebf
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893508"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6340311"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Finance and Operations-programdokumentation
 
@@ -48,8 +48,8 @@ Mycket av innehållet gäller även relaterade produkter: Dynamics 365 Commerce 
 <p><a href="imp-lifecycle/onboard.md">Introducera ett projekt</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Förbereda publicering</a></p>
 
-<h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">Tjänstuppdateringar för en version</a></h3>
-<p><a href="get-started/one-version.md">Frågor och svar om tjänstuppdateringar för en version</a></p>
+<h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">Tjänstuppdateringar för One Version</a></h3>
+<p><a href="get-started/one-version.md">Frågor och svar om Tjänstuppdateringar för One Version</a></p>
 <p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Livscykelpolicy för programmet: moln</a></p>
 <p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Livscykelpolicy för programmet: lokal</a></p>
 <p><a href="get-started/public-preview-releases.md">Tjänstuppdateringar för standardversion och första version</a></p>
@@ -80,7 +80,7 @@ Mycket av innehållet gäller även relaterade produkter: Dynamics 365 Commerce 
 <p><a href="../../finance/public-sector/public-sector-functionality.md">Offentlig sektor</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Funktioner för nationella föreskrifter</a></p>
 
-<h3><a href="hr/hr-landing-page.md">Personal</a></h3>
+<h3><a href="hr/hr-landing-page.md">Human Resources</a></h3>
 <p><a href="../../human-resources/hr-benefits-manage-program.md">Förmåner</a></p>
 <p><a href="../../human-resources/hr-develop-performance-management-overview.md">Medarbetares utveckling och utbildning</a></p>
 <p><a href="../../human-resources/hr-learning-questionnaires.md">Enkäter</a></p>

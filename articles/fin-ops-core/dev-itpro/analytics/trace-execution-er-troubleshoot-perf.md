@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7fbec962fea374afdbabaad48a42dad380708678
-ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
+ms.openlocfilehash: 23b965bb51a4323164ae52bf70050133c9c9c9da
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6295583"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344892"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spåra körning av ER-format för att felsöka prestanda problem
 
@@ -56,14 +56,14 @@ Du måste också hämta följande filer och lagra dem lokalt.
 
 Varje ER-prestandaspårning som skapas i programmet lagras som en bilaga till körningsloggposten. Dokumenthanteringsramverket (DM) används för att hantera dessa bilagor. Du måste konfigurera återställningsparametrar i förväg för att kunna ange vilken typ av DM-dokument som ska användas för att koppla prestandaspårningar. På arbetsytan **Elektronisk rprogramortering** väljer du **Elektroniska rprogramorteringsparametrar**. Välj sedan sidan **parametrar för elektronisk rapportering** på fliken **bilagor** i fältet **övriga** och sedan den DM-dokumenttyp som du ska använda för prestandaspårning.
 
-![Sida för parametrar för elektronisk rapportering](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
+![Sida för parametrar för elektronisk rapportering.](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
 
 För att vara tillgänglig i sökfältet **Övriga** måste en DM-dokumenttyp konfigureras på följande sätt på sidan **Dokumenttyper** (**Organisationsadministration \> Dokumenthantering \> Dokumenttyper**):
 
 - **Klass:** Bifoga fil
 - **Grupp:** fil
 
-![Sida för dokumenttyper](./media/GER-PerfTrace-DM-DocumentType.png)
+![Sida för dokumenttyper.](./media/GER-PerfTrace-DM-DocumentType.png)
 
 > [!NOTE]
 > Den valda dokumenttypen måste vara tillgänglig i alla företag i den aktuella instansen eftersom DM-bilagor är företagsspecifika.
@@ -72,7 +72,7 @@ För att vara tillgänglig i sökfältet **Övriga** måste en DM-dokumenttyp ko
 
 ER-prestandaspårningar som skapas importeras till RCS för analys med hjälp av ER-formatdesigner och ER-mappningsdesigner. Eftersom ER-prestandaspårning lagras som bilagor till körningsloggposten som är relaterad till ER-formatet, måste du konfigurera RCS-parametrar i förväg för att ange den DM-dokumenttyp som ska användas för att koppla prestandaspårningar. elektronisk I instansen av RCS som har etablerats för ditt företag, i arbetsytan **elektronisk rapportering** väljer du **elektronisk rapportering**. Välj sedan sidan **parametrar för elektronisk rapportering** på fliken **bilagor** i fältet **övriga** och sedan den DM-dokumenttyp som du ska använda för prestandaspårning.
 
-![Sida för parametrar för elektronisk rapportering i RCS](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
+![Sida för parametrar för elektronisk rapportering i RCS.](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
 
 För att vara tillgänglig i sökfältet **Övriga** måste en DM-dokumenttyp konfigureras på följande sätt på sidan **Dokumenttyper** (**Organisationsadministration \> Dokumenthantering \> Dokumenttyper**):
 
@@ -92,7 +92,7 @@ Anta att du har börjat designa en ny ER-lösning för att skapa en ny rapport s
     2. Välj **bläddra** om du vill välja en fil för den nödvändiga ER-konfigurationen i XML-format.
     3. Välj **OK**.
 
-    ![Sidan Konfigurationer i RCS](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
+    ![Sidan Konfigurationer i RCS.](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
 
 ## <a name="run-the-er-solution-to-trace-execution"></a>Kör ER-lösning för att spåra körning
 
@@ -109,7 +109,7 @@ Anta att du har skapat den första versionen av ER-lösningen. Du vill nu testa 
     3. På snabbfliken **konfigurationer** väljer du konfigurationen **Prestandaspårningsformat**.
     4. I snabbfliken **Versioner** väljer du version **1.1.** för vald konfiguration och sedan **Importera**.
 
-    ![Sidan Konfigurationsdatabas](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
+    ![Sidan Konfigurationsdatabas.](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
 
 Motsvarande versioner av datamodell- och modellmappningskonfigurationer importeras automatiskt som förutsättningar för den importerade ER-formatkonfigurationen.
 
@@ -156,7 +156,7 @@ Motsvarande versioner av datamodell- och modellmappningskonfigurationer importer
     > [!NOTE]
     > Parametrarna i dialogrutan **användarparametrar** är specifika för användaren och det aktuella företaget.
 
-    ![Dialogruta Användarparametrar](./media/GER-PerfTrace-GER-UserParameters.png)
+    ![Dialogrutan Användarparametrar.](./media/GER-PerfTrace-GER-UserParameters.png)
 
 ### <a name="run-the-er-format"></a><a id='run-format'></a>Kör ER-format
 
@@ -177,11 +177,11 @@ Prestandaspårningen kopplas från källans ER-format och kan serialiseras till 
 2. På sidan **elektronisk rapportering kör loggar** i det vänstra fönstret i **konfigurationsnamn** väljer du **prestandaspårningsformat** i för att hitta de loggposter som har genererats vid körning av konfigurationen **Prestandaspårningsformat**.
 3. Välj knappen **Bilagor** (gemsymbolen) längst upp till höger på sidan eller tryck på **Ctrl+Shift+A**.
 
-    ![Knappen Bilagor på sidan elektronisk rapportering körningsloggarna](./media/GER-PerfTrace-GER-DebugLog.png)
+    ![Knappen Bilagor på sidan förkörningsloggar för elektronisk rapportering.](./media/GER-PerfTrace-GER-DebugLog.png)
 
 4. På sidan **bilagor för elektroniska rapportering körningsloggar** i åtgärdsfönstret väljer du **öppna** för att få prestandaspårningen som en zip-fil och spara den lokalt.
 
-    ![Bilagor för elektroniska rapportkörningsloggar](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
+    ![Bilagor för körningsloggar för elektronisk rapportering.](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
 
 > [!NOTE]
 > Spårningen som genereras har en referens till källans ER-rapport via en unik rapportidentifierare i **GUID**-format. Versionsnumret för formatet beaktas inte.
@@ -198,7 +198,7 @@ Observera att associationen mellan resultatspårningen som har genererats för d
 6. Välj **bläddra** för att markera den zip-fil som du exporterade tidigare.
 7. Välj **OK**.
 
-    ![Dialogrutan inställningar av prestandaspårningsresultat i RCS](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
+    ![Dialogrutan inställningar av prestandaspårningsresultat i RCS.](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--format-execution"></a>Använd prestandaspårning för analys i RCS – formatkörning
 
@@ -209,7 +209,7 @@ Observera att associationen mellan resultatspårningen som har genererats för d
     - Den faktiska tid som användes för att mata in data i det genererade utmatninget med hjälp av formaobjekt
     - Samma tid uttryckt i procent av den totala tid som användes för att generera hela utdata
 
-    ![Formatdesignersida i RCS](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
+    ![Formatdesignersida i RCS.](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
 
 2. Stäng sidan **Formatdesigner**.
 
@@ -232,7 +232,7 @@ Observera att du informerar dig om att den aktuella modellmappningen duplicerar 
 - Ett anrop görs för att ange information om varje transaktion i datamodellen, baserat på konfigurerade bindningar.
 - Ett samtal görs för att ange det beräknade antalet transaktioner per leverantör i datamodellen.
 
-![Meddelande om dubbla databasbegäranden på sidan modellmappningsdesigner i RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
+![Meddelande om dubbla databasbegäranden på sidan Modellmappningsdesigner i RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
 
 Värdet **\[Q:530\]** anger att VendTrans-registret har anropats 530 gånger för att returnera en post från registret till datakällan VendTable/\<Relations/VendTrans.VendTable\_AccountNum. Värdet **\[530\]** anger att datakällan VendTable/\<Relations/VendTrans.VendTable\_AccountNum har anropats 530 gånger för att returnera en post från den datakällan och ange informationen från den i datamodellen.
 
@@ -240,7 +240,7 @@ Vi rekommenderar att du använder cache för datakällan VendTable/\<Relations/V
 
 Det kan också vara användbart om du vill minska antalet anrop som görs till datakällan LedgerTransTypeList. Denna datakälla används för att koppla varje värde i **LedgerTransType**-uppräkningen till dess etikett. Genom att använda den här datakällan kan du hitta en lämplig etikett och ange den i datamodellen för varje leverantörstransaktion. Det aktuella antalet anrop till den här datakällan (9 027) är ganska högt för 265 transaktioner.
 
-![Sidan modellmappningsdesigner i RCS, visar 9 027 anrop till datakällan](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
+![Sidan Modellmappningsdesigner i RCS som visar 9 027 anrop till datakällan.](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
 
 ## <a name="improve-the-model-mapping-based-on-information-from-the-execution-trace"></a>Förbättra modellmappningen utifrån information från körningsspårningen
 
@@ -253,7 +253,7 @@ Det kan också vara användbart om du vill minska antalet anrop som görs till d
     3. Expandera objektet **VendTable**  expandera listan med 1:n-relationer för VendTable-datakälla (**\<Relationer** objekt) och välj objektet **VendTrans.VendTable\_AccountNum**.
     4. Välj **cache**.
 
-    ![Cachelagring för att förhindra dubbla anrop](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
+    ![Cachelagringskonfiguration för att förhindra dubbla anrop.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
 
 2. Följ dessa steg för att hämta datakällan LedgerTransTypeList till omfattningen för datakällan VendTable:
 
@@ -274,7 +274,7 @@ Det kan också vara användbart om du vill minska antalet anrop som görs till d
     3. Välj objektet **VendTable.\$TransType**.
     4. Välj **cache**.
 
-    ![Cachelagra inställningar för fältet $TransType](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
+    ![Cachelagra konfiguration för fältet $TransType.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
 
 4. Följ dessa steg för att ändra **\$TransTypeRecord** så att det börjar använda cachelagrade fältet **\$TransType**:
 
@@ -329,19 +329,19 @@ Upprepa stegen i avsnittet [Använd prestandaspårning för analys i RCS – mod
 
 Observera att justeringarna som du har gjort av modellmappningen har eliminerat dubbla frågor till databasen. Antalet anrop till databasregister och datakällor för den här modellmappningen har också minskats. Därför har hela ER-lösningens prestanda förbättrats.
 
-![Spårningsinformation för datamodellen VendTable på sidan för modellmappningsdesigner i RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
+![Spårningsinformation för datamodellen VendTable på sidan för modellmappningsdesigner i RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
 
 I spårningsinformationen indikerar värdet **\[12\]** för VendTable-datakällan att denna datakälla har anropats 12 gånger. Värdet **\[Q:6\]** anger att sex anrop översattes till databasanrop till VendTable-registret. Värdet **\[C:6\]** indikerar att posterna som hämtades från databasen cachelagrades, och sex andra anrop bearbetades med hjälp av cachen.
 
 Observera att antalet anrop till datakällan LedgerTransTypeList har minskats från 9 027 till 240.
 
-![Spårningsinformation för datamodellen LedgerTransTypeList på sidan för modellmappningsdesigner i RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
+![Spårningsinformation för datamodellen LedgerTransTypeList på sidan för modellmappningsdesigner i RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
 
 ## <a name="review-the-execution-trace-in-the-application"></a>Granska körningsspårningen i programmet
 
 Förutom RCS kan vissa versioner erbjuda funktioner för en ER-ramverk designerupplevelse. Dessa versioner har alternativet **aktivera designläge** som kan aktiveras. Du hittar det här alternativet på fliken **Allmänt** på sidan **parametrar elektronisk rapportering** som du öppnar från arbetsytan **elektronisk rapportering**.
 
-![Aktivera alternativet designläge på sidan parametrar för elektronisk rapportering](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
+![Aktivera alternativet för designläge på sidan parametrar för elektronisk rapportering.](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
 
 Om du använder någon av dessa versioner kan du analysera detaljerna för genererade resultat spårningar direkt i programmet. Du behöver inte exportera dem från programmet och importera dem till RCS.
 
@@ -359,7 +359,7 @@ Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i det här avs
 
 Observera att en zip-fil kan hämtas i webbläsaren. Den här filen innehåller prestandaspårningen i PerfView-format. Du kan sedan använda prestandaanalysverktyget PerfView för att analysera information om ER-formatkörning.
 
-![Information om prestandaspårning i PerfView-format](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![Information om prestandaspårning i PerfView-format.](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Använd externa verktyg för att granska en körningsspårning som omfattar databasfrågor
 
@@ -375,7 +375,7 @@ På grund av de förbättringar som har gjorts i ER-ramverk innehåller den pres
     - Ställ in alternativet **Samla in frågestatistik** till **Ja**.
     - Ställ in alternativet **Spårningsfråga** till **Ja**.
 
-    ![Avsnitt för körningsspårning, dialogrutan användarparametrar](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![Avsnitt för körningsspårning, dialogrutan Användarparametrar.](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### <a name="run-the-er-format"></a>Kör ER-format
 
@@ -383,7 +383,7 @@ Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i det här avs
 
 Observera att en zip-fil kan hämtas i webbläsaren. Den här filen innehåller prestandaspårningen i PerfView-format. Du kan sedan använda prestandaanalysverktyget PerfView för att analysera information om ER-formatkörning. I den här spårningen finns nu information om åtkomst till SQL-databasen under körningen av ER-formatet.
 
-![Spårningsinformation för det körda återställningsformatet i PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+![Spårningsinformation för det körda ER-formatet i PerfView.](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

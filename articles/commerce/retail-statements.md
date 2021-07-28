@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 8d6687ddaae28ebf278aca6a78ba798e2e79edd8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 41d135af00618dbe4046338c8d0e6f5a01f33892
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791931"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345016"
 ---
 # <a name="retail-statements"></a>Butiksutdrag
 
@@ -31,7 +31,7 @@ I Dynamics 365 Commerce är bokföringsprocessen för utdraget att ta hänsyn ti
 
 Utdragsbokföringsprocessen illustreras i följande diagram. I denna process överförs transaktioner som är registrerade i POS till klienten, genom att Commerce schemaläggare används. När klienten har tagit emot transaktionerna kan du skapa, beräkna och bokföra transaktionsutdraget för butiken.
 
-[![utdragbokföringsprocessen](./media/retail-statements.png)](./media/retail-statements.png)
+[![Bokföringsprocess för utdrag.](./media/retail-statements.png)](./media/retail-statements.png)
 
 ## <a name="creating-and-posting-statements"></a>Skapa och bokföra utdrag
 

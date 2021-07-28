@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 5a18fed2eac4c120dca20a1d7797d047639275b9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 70904ee716aabd019210e92895a894810bde27fb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750604"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346530"
 ---
 # <a name="switch-between-vendor-designs"></a>Växla mellan leverantörsdesigner
 
@@ -48,14 +48,14 @@ Skapa nya arbetsflödesprocesser med hjälp av arbetsflödesprocessmallar genom 
 
 1. Skapa en ny arbetsflödesprocess för tabellen **Leverantör** och välj arbetsflödesprocessmallen **Skapa leverantörer i tabellen Konton**. Välj sedan **OK**. Det här arbetsflödet hanterar scenariot för skapande av leverantörer för tabellen **konto**.
 
-    ![Arbetsflödesprocess Skapa leverantörer i tabellen Konton](media/create_process.png)
+    ![Skapa leverantörer i arbetsflödesprocessen Kontotabell.](media/create_process.png)
 
 2. Skapa en ny arbetsflödesprocess för tabellen **Leverantör** och välj arbetsflödesprocessmallen **Uppdatera leverantörer i tabellen Konton**. Välj sedan **OK**. Det här arbetsflödet hanterar scenariot för uppdatering av leverantörer för tabellen **konto**.
 3. Skapa en ny arbetsflödesprocess för tabellen **Konto** och välj arbetsflödesprocessmallen **Skapa leverantörer i tabellen leverantörer**.
 4. Skapa en ny arbetsflödesprocess för tabellen **Konto** och välj arbetsflödesprocessmallen **Uppdatera leverantörer i tabellen leverantörer**.
 5. Du kan konfigurera arbetsflödena som antingen arbetsflöden i realtid eller i bakgrunden beroende på dina krav. Om du vill konfigurera ett arbetsflöde som ett bakgrundsarbetsflöde väljer du **Konvertera till ett arbetsflöde i bakgrunden**.
 
-    ![Knappen Konvertera till ett arbetsflöde i bakgrunden](media/background_workflow.png)
+    ![Knappen Konvertera till ett arbetsflöde i bakgrunden.](media/background_workflow.png)
 
 6. Aktivera de arbetsflöden som du skapade för tabellerna **Konto** och **Leverantör** för att börja använda tabellen **Konto** för att lagra leverantörsinformation av typen **Organisation**.
 

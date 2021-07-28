@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 69f497ed8efff9aa18dedbce65d88e3b2d5168a6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8941ca0d2b9599dabd05427949d72f55aae7d6bc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839039"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347648"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synkronisera huvuden och rader i försäljningsfakturor direkt från Finance and Operations till Sales
 
@@ -33,7 +33,7 @@ I det här ämnet diskuteras mallarna och de underliggande uppgifterna som anvä
 
 Lösningen Potentiell kund till kontanter använder funktionen Dataintegrering för att synkronisera data mellan instanser av Supply Chain Management och Sales. Potentiell kund till kontanter-mallarna med funktionen för dataintegrering möjliggör ett flöde av konto-, produkt-, försäljningskvots-, försäljningsorder- samt försäljningsfakturadata mellan Supply Chain Management och Sales. Följande bild visar hur data synkroniseras mellan Supply Chain Management och Sales.
 
-[![Dataflöden i Potentiell kund till kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Dataflöden i Potentiell kund-till-pengar.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
 
@@ -116,17 +116,17 @@ I följande illustrationer visas ett exempel på en mallmappning i dataintegreri
 
 ### <a name="salesinvoiceheader"></a>Rubrik på försäljningsfakturan
 
-![Mallmappning i dataintegrering](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
+![Mallmappning i dataintegrering.](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="salesinvoiceline"></a>Rad i försäljningsfaktura
 
-![Mallmappning i dataintegrering](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
+![Mallmappning i dataintegrering.](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
 
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Prospekt till kontanter](prospect-to-cash.md)
+[Potentiell kund till pengar](prospect-to-cash.md)
 
 [Synkronisera konton direkt från Sales till kunder i Supply Chain Management](accounts-template-mapping-direct.md)
 

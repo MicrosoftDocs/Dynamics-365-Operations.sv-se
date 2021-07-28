@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 044a5c21e4ebf1bf83edc74335e655b9388bc1d4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fc7d47897d1a332ba1af7305525f9e75bca12afd
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795607"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6337513"
 ---
 # <a name="product-recommendations-overview"></a>Översikt av produktrekommendationer
 
@@ -32,6 +32,9 @@ Microsoft Dynamics 365 Commerce kan användas för att visa produktrekommendatio
 Med produktrekommendationer kan kunderna enkelt och snabbt hitta produkter som de vill ha medan de får en upplevelse som tjänar dem väl. Korsförsäljning och merförsäljning kan användas för att hjälpa kunder att hitta fler produkter än vad de ursprungligen avsåg att köpa. När rekommendationer används för att hjälpa till med produktidentifiering kan de skapa fler konverteringsmöjligheter, hjälpa till att öka försäljningsintäkterna och till och med öka kundens tillfredsställelse och kvarhållande.
 
 I näthandel drivs produktrekommendationerna av Microsoft maskininlärningsteknik för rekommendationer i en stor skala.
+
+Denna tjänst är ett tillägg för Dynamics 365 Commerce. Hämta den senaste licenshandboken för [Microsoft Dynamics 365 om du vill ha mer information](https://go.microsoft.com/fwlink/?LinkId=866544).
+
 
 ## <a name="recommendation-service"></a>Rekommendationstjänst
 
@@ -47,7 +50,7 @@ Produktrekommendationer är tillgängliga för följande scenarier:
 - **På valfri butikssida för bläddring eller landnings sida i näthandel:** Om kunder eller butikspartner besöker en butikssida kan rekommendationsmotorn föreslå produkter i listorna **Ny**. **Bästsäljande** och **Trend**.
 - **På sidan produktinformation:** om kunder eller säljare besöker en sida med **produktinformation** föreslår rekommendationsmotorn ytterligare artiklar som troligen kommer att köpas. Dessa objekt visas i listan **människor gillar också**.
 - **På transaktionssidan eller på kassasidan:** rekommendationsmotorn föreslår artiklar, baserat på den fullständiga listan med artiklar i varukorgen. Dessa objekt visas i listan över **Köps ofta ihop**.
-- **Personliga rekommendationer:** inköpare kan ge de inloggade kunderna en anpassad **plockning för dig**, förutom nya funktioner som gör att befintliga listscenarier kan anpassas baserat på den kunden. Mer information finns i [Aktivera anpassade rekommendationer.](personalized-recommendations.md).
+- **Personliga rekommendationer:** Återförsäljare kan tillhandahålla de inloggade kunderna en anpassad **utvalt för dig**-lista samt dessutom nya funktioner som gör att befintliga listscenarier kan anpassas baserat på den kunden. Mer information finns i [Aktivera anpassade rekommendationer.](personalized-recommendations.md).
 
 ### <a name="types-of-product-recommendations"></a>Typer av produktrekommendationer
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 84c97bdbe00285d7992a25edbf5d42ffe9b58903
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a8ddc7022a1e9a7db14aaa67efcd442025b0f9d8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814522"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344487"
 ---
 # <a name="replenishment-strategies"></a>Strategier för lagerpåfyllnad
 
@@ -45,7 +45,7 @@ Innan du kan använda den här funktionen den aktiveras i ditt system. Administr
 
 För åtkomst till mallarna, gå till **Lagerstyrning \> Inställningar \> Lagerpåfyllnad \> Mallar för lagerpåfyllnad**. I avsnittet **Översikt** väljer eller skapar du en mall för lagerpåfyllnadsbegäran där fältet **Lagerpåfyllnadstyp** är inställt på *Lagerpåfyllnad*. Skapa sedan raderna för påfyllningsmallen i avsnittet **Information om mall för lagerpåfyllnad**. För varje rad väljer du den **lagerpåfyllnadsstrategi** som du vill använda i fältet lagerpåfyllnadsstrategi.
 
-![Sidan Mallar för lagerpåfyllnad](media/ReplenTempWaveDmdMaxLocCap.png "Sidan Mallar för lagerpåfyllnad")
+![Sidan Mallar för lagerpåfyllnad.](media/ReplenTempWaveDmdMaxLocCap.png "Sidan Mallar för lagerpåfyllnad")
 
 Om kolumnen **påfyllningsstrategin** inte visas i rutnätet i avsnittet **Information om mall för lagerpåfyllnad** kontrollerar du att funktionen har aktiverats och att den valda påfyllnadsgrupp har en påfyllningstyp för en *Lagerpåfyllnad*.
 
@@ -85,7 +85,7 @@ Om du ställer in återanskaffningsstrategin till *maximal platskapacitet* i st�
 - **Påfyllnadsarbete 1:** Välj 4 lådor från bulkplatser och placera dem i plats-001-plock.
 - **Påfyllnadsarbete 2:** Välj 5 lådor från bulkplatser och placera dem i plats-002-plock.
 
-[![Exempel 1](media/ReplenTemp_example_1.png "Exempel 1")](media/ReplenTemp_example_1_large.png)
+[![Exempel 1.](media/ReplenTemp_example_1.png "Exempel 1")](media/ReplenTemp_example_1_large.png)
 
 ### <a name="example-2"></a>Exempel 2
 
@@ -109,7 +109,7 @@ Beroende på inställningen av alternativet **Tillåt delning** i platsdirektiv 
 
 Resultaten skiljer sig på grund av den information som är tillgänglig när du skapar arbetet. När alternativet **Tillåt delning** har ställts in på *Ja* i platsdirektiv för påfyllnadsplockning vet du att du har hanterat att hitta 160 st. Därför kan du skapa arbete för kvantiteten. Om alternativet **Tillåt delning** är inställt på *Nej*, vet du dock inte om det finns några 160 st. Eftersom den extra kvantitet som du har valt att fylla på var 3 lådor, släpper du den extra kvantiteten och prova den ursprungliga kvantiteten på nytt.
 
-[![Exempel 2](media/ReplenTemp_example_2.png "Exempel 2")](media/ReplenTemp_example_2_large.png)
+[![Exempel 2.](media/ReplenTemp_example_2.png "Exempel 2")](media/ReplenTemp_example_2_large.png)
 
 Om du vill hämta den maximala kvantiteten till de påfyllningsbara platserna bör du ställa in alternativet **Tillåt delning** på *Ja* i platsdirektiv för påfyllningsplockning.
 

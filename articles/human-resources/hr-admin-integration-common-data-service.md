@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 721799c9a6fafe0a809f447189ce6814b30ca863
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 1a1ee5345e2d6b3736d45e233a59ac4009a9f1c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052467"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344698"
 ---
 # <a name="configure-dataverse-integration"></a>Konfigurera Dataverse-integrering
 
@@ -48,15 +48,15 @@ Du kanske vill inaktivera integration i följande situationer:
 
 1. I personalinstansen där du vill visa eller konfigurera inställningar för integrering med Dataverse väljer du panelen **systemadministration**.
 
-    [![Panelen Systemadministration](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
+    [![Panelen Systemadministration.](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
 2. Välj fliken **Länkar**.
 
-    [![Fliken Länkar](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
+    [![Fliken Länkar.](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
 3. Under **Integrationer**, välj **Dataverse konfiguration**.
 
-    [![Dataverse konfigurationslänk](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
+    [![Dataverse-konfigurationslänk.](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
 
 ## <a name="turn-data-integration-between-human-resources-and-dataverse-on-or-off"></a>Aktivera och inaktivera dataintegrering mellan personal och Dataverse
 
@@ -67,7 +67,7 @@ Du kanske vill inaktivera integration i följande situationer:
 
 - Om du vill stänga av integrationen ställer du in alternativet på **Nej**.
 
-[![Aktivera eller inaktivera Dataverse-integreringen](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
+[![Aktivera eller inaktivera Dataverse-integreringen.](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
 
 > [!WARNING]
 > Vi rekommenderar att du inaktiverar Dataverse integration när du utför dataflyttningsuppgifter. Stora dataöverföringar kan påverka prestanda betydligt. Exempelvis kan överföringar av 2 000 arbetare ta flera timmar när integreringen är aktiverad och mindre än en timme när den är inaktiverad. Siffrorna i det här exemplet är endast avsedda som demonstrationer. Hur lång tid det tar att importera poster kan variera kraftigt baserat på många faktorer.
@@ -98,7 +98,7 @@ Om du får problem under synkroniseringen mellan personal och Dataverse kan du k
 
 - Om du vill ta bort kopplingen mellan en Personal-post och en Dataverse-rad väljer du registret i fältet **Dataverse-register** och sedan **Rensa spårningsinformation**.
 
-[![Rensa uppföljningsinformation](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
+[![Rensa spårningsinformation.](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
 
 Se nästa procedur för att köra en fullständig synkronisering på registret efter det att du har rensat spårningen.
 
@@ -116,13 +116,13 @@ Så här kör du en fullständig synkronisering på ett register mellan Personal
 
 2. Välj **Synkronisera nu**.
 
-[![Köra en fullständig synkronisering](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
+[![Köra en fullständig synkronisering.](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
 
 ## <a name="see-also"></a>Se även
 
 [Dataverse-register](hr-developer-entities.md)<br>
 [Konfigurera virtuella Dataverse-register](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Vanliga frågeställningar och svar om virtuella register i Personal](hr-admin-virtual-entity-faq.md)<br>
+[Vanliga frågor och svar om virtuella register i Human Resources](hr-admin-virtual-entity-faq.md)<br>
 [Vad är Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminologiuppdateringar](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 

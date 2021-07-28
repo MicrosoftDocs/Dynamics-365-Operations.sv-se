@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 99fd4b816b1a3a1fe3c2d1579be45b43fdc3d385
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 89fe41d7ce57b584be34b156696b4044c4571afe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020766"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347282"
 ---
 # <a name="refund-on-a-return-order-is-declined"></a>Återbetalning på en returorder avvisas
 
@@ -34,9 +34,9 @@ En återbetalning avvisas när kreditkortet som används för att fakturera en r
 
 Detaljer om betalningsauktoriseringen innehåller följande felmeddelande: "Adyen gateway SendRequest() misslyckades med statusen InternalServerError'.22144; Tomt svar som returnerats från Adyen. (22001);"
 
-![Avvisad återbetalning vid ett returorderfel](media/refund-order-decline.jpg)
+![Avvisad återbetalning vid ett returorderfel.](media/refund-order-decline.jpg)
 
-## <a name="resolution"></a>Upplösning
+## <a name="resolution"></a>Lösning
 
 ### <a name="enable-blind-returns-in-adyen"></a>Aktivera blinda returer i Adyen
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e84a8c3f69bb1a429c6fd9679ba671a185cf6378
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d86c16ecd2105a7f118cf77aa078f553feb2d933
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838356"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345268"
 ---
 # <a name="cycle-counting"></a>Rullande inventering
 
@@ -34,7 +34,7 @@ Rullande inventering är en lagerställesprocess som du kan använda för att ko
 2.  **Bearbeta rullande inventering** – Efter att du har skapat det rullande inventeringsarbetet utför du det rullande inventeringsarbetet genom att räkna artiklar på en lagerplats och sedan ange resultatet i Dynamics 365 Supply Chain Management med hjälp av en mobil enhet. Alternativt kan du inventera artiklar i ett lagerställe utan att skapa rullande inventeringsarbete. Den här processen kallas för *rullande inventering av typen spot*.
 3.  **Lösa avvikelser i det räknade värdet** – Efter en rullande inventering har alla artiklar som har avvikelser i det inventerade värdet en arbetsstatus som är **Pågående granskning** på sidan **Allt arbete**. Du kan lösa dessa skillnader på sidan **Granskning av väntande rullande inventeringsarbete**.
 
-I bilden nedan visas processen för rullande inventering. ![Bearbeta flöde rullande inventering](./media/performcyclecountinginawarehouselocation.jpg)
+I bilden nedan visas processen för rullande inventering. ![Bearbeta flöde rullande inventering.](./media/performcyclecountinginawarehouselocation.jpg)
 
 ## <a name="cycle-counting-prerequisites"></a>Förutsättningar för rullande inventering
 Följande tabell visar förutsättningarna som krävs och måste finnas på plats innan du kan använda rullande inventering.

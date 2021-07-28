@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b23edee0884b595a0da6ebd7eca0cf0391ff33f7
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 32a1acba8b4ca9484cbbc4b23ba496521ec4f61b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190098"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347696"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Direktleverans från produktionsorder till utlastningsplatser
 
@@ -42,7 +42,7 @@ En produkt har rapporterats som färdig för produktionsutleveransplatsen (3) oc
 -   Om en släpvagn redan tilldelats vikdörren dirigeras truckföraren till att lasta produkten direkt till släpfordonet.
 -   Om det inte sker planerad aktivitet för överföring av produkten, dirigeras truckföraren till att ställa undan produkten till en plats i det interna lagerstället (5).
 
-[![opportunistisk korsdockning](./media/scenario1.png)](./media/scenario1.png)
+[![opportunistisk direktleverans.](./media/scenario1.png)](./media/scenario1.png)
 
 ## <a name="configure-cross-docking"></a>Konfigurera direktleverans
 Du konfigurerar direktutleveransprocessen i **arbetspolicyer**. En arbetspolicy omfattar en arbetsordertyp, plats och produkt. I följande exempel konfigureras direktutleverans för produkt X och plats Y.

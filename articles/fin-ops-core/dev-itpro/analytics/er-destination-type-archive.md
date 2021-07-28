@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 079eda04fcc41fc637419a83452db10b89ed1ab9
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: a9e0f07241de003dd2971e0d336f89795ad1319b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894038"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348030"
 ---
 # <a name="archive-er-destination-type"></a>Arkivera ER-målstyp
 
@@ -30,7 +30,7 @@ Du kan konfigurera en arkivdestination för varje **Mapp**- eller **Fil**-kompon
 
 Du kan använda detta alternativ för att skicka de genererade dokumentet till en Microsoft SharePoint-mapp eller till Microsoft Azure Storage. Ställ in **Aktiverad** till **Ja** för att skicka utdata till en mål som definierats av den valda dokumenttypen. Endast dokumenttyper där gruppen är inställd på **Fil** kan väljas. Du kan ange dokument [typer](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) på **Organisationsadministration** \> **Dokumenthantering** \> **Dokumenttyper**. Konfigurationen för ER-mål är samma som konfigurationen för dokumenthanteringssystemet.
 
-[![Sida för dokumenttyper](./media/ER_Destinations-SharePointDocuType.png)](./media/ER_Destinations-SharePointDocuType.png)
+[![Sida för dokumenttyper.](./media/ER_Destinations-SharePointDocuType.png)](./media/ER_Destinations-SharePointDocuType.png)
 
 Platsen avgör var filen sparas. När målen **Arkiv** har aktiverats kan resultaten sparas i jobbarkivet. Du kan visa resultaten via **Organisationsadministration** \> **Elektronisk rapportering** \> **Arkiverade elektroniska rapporteringsjobb**.
 
@@ -41,7 +41,7 @@ Platsen avgör var filen sparas. När målen **Arkiv** har aktiverats kan result
 
 Du kan spara en fil i en viss SharePoint-mapp. Du definierar standard SharePoint-server via **Organisationsadministration** \> **Dokumenthantering** \> **Dokumenthanteringsparametrar**. På fliken **SharePoint**, konfigurera SharePoint-mappen. Sedan kan du välja den mapp där ER-utdata ska sparas. **SharePoint**-platsen måste väljas i dokumenttypen.
 
-[![Markera SharePoint-mappen](./media/ER_Destinations-SharePointDocuTypeLocation.png)](./media/ER_Destinations-SharePointDocuTypeLocation.png)
+[![Markera en SharePoint-mapp.](./media/ER_Destinations-SharePointDocuTypeLocation.png)](./media/ER_Destinations-SharePointDocuTypeLocation.png)
 
 ## <a name="azure-storage"></a>Azure Storage
 

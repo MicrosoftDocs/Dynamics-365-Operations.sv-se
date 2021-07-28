@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9dc305f46dad6b372721805669529bbc9ac554e8
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 428de5304b3f6f9b861e765d5084d5573b79df90
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908303"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347744"
 ---
 # <a name="safety-margins"></a>Säkerhetsmarginaler
 
@@ -41,7 +41,7 @@ Det finns tre typer av säkerhetsmarginaler:
 
 Följande bild visar hur dessa säkerhetsmarginaler gäller över tid.
 
-![Säkerhetsmarginaler](media/safety-margins-1.png)
+![Säkerhetsmarginaler.](media/safety-margins-1.png)
 
 Alla marginaler anges i dagar. Standardvärde *0* (noll), indikerar att ingen marginal tillämpas. Om du ställer in flera marginaler läggs de till den totala tiden från leveransens *orderdatum* till efterfrågans *behovsdatum* . Till exempel har en inställning ingen produktionstid och alla tre marginaltyperna är inställda på en dag. I det här fallet kommer det att finnas tre dagar mellan leveransorder datumet och behovsdatumet, så om orderdatumet är den 1 juli blir behovsdatumet den 4 juli.
 
@@ -51,7 +51,7 @@ Kvittomarginalen är antagligen den mest utnyttjade av de tre säkerhetsmarginal
 
 På bilden nedan beskrivs kvittomarginalen.
 
-![Inleveransmarginal](media/safety-margins-2.png)
+![Inleveransmarginal.](media/safety-margins-2.png)
 
 Kvittomarginalen används vanligtvis som buffert för att säkerställa tid för lagerregistrering eller andra tidskrävande processer som inte har registrerats som en del av den allmänna produktionstiden i systemet. För inköp är en fördel att *leveransdatum* för inköpsordern flyttas framåt i enlighet med detta. Om du ökar produktionstiden istället för att använda en säkerhetsmarginal, kommer leverantören fortfarande att bli ombedd att leverera den sista minuten.
 
@@ -66,7 +66,7 @@ Observera att en inleveransmarginal inte används när lagerbehållning används
 
 På bilden nedan beskrivs beställningsmarginalen.
 
-![Beställningsmarginal](media/safety-margins-3.png)
+![Marginal förombeställning.](media/safety-margins-3.png)
 
 Beställningsmarginalen läggs till före artikelns produktionstid för alla planerade order vid huvudplaneringen. Därför gör det det enklare att placera en leveransorder. Den här marginalen används vanligtvis som buffert för att säkerställa tiden för godkännandeprocesser eller andra interna processer som krävs när leveransorder skapas. Beställningsmarginalen placeras mellan leverans *orderdatum* och *startdatum*.
 
@@ -77,7 +77,7 @@ Beställningsmarginalen läggs till före artikelns produktionstid för alla pla
 
 På bilden nedan beskrivs utleveransmarginal.
 
-![Utleveransmarginal](media/safety-margins-4.png)
+![Marginal för utleverans.](media/safety-margins-4.png)
 
 Utleveransmarginalen dras från behovsdatumet vid behov vid huvudplaneringen. Det säkerställer att du har tid att reagera på och leverera inkommande efterfrågeorder. Den här marginalen används vanligtvis som buffert för att säkerställa tid för leverans och relaterade avgående lagerprocesser.
 
@@ -165,7 +165,7 @@ Följande bild visar en matris som sammanfattar vilka kalendrar som gäller när
 - **Lagerställe (WH):** gul
 - **Leverantör (V):** blå
 
-[![Matris för översikt över kalenderinställningar](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
+[![Matris för översikt över kalenderinställningar.](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>Beräkna fördröjningar
 
@@ -173,11 +173,11 @@ Alla tre typerna av säkerhetsmarginal tas med när systemet fastställer om en 
 
 En artikel har t.ex. produktionstid på en dag och en kvittomarginal på tre dagar. En försäljningsorder för denna artikel ställs in efter behov i dag. I det här fallet beräknas förseningen som *produktionstiden* + *kvittomarginal* = fyra dagar. Om dagens datum är den 14 augusti skapas därför en leverans på 18 augusti för fyra dagars fördröjning. Illustrationen nedan visar ett exempel.
 
-![Exempel på fördröjningsberäkning](media/safety-margins-delays.png)
+![Exempel på fördröjningsberäkning.](media/safety-margins-delays.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Kom igång med planeringsoptimering](get-started.md)
+[Kom i gång med planeringsoptimering](get-started.md)
 
 [Bristanalys för planeringsoptimering](planning-optimization-fit-analysis.md)
 
