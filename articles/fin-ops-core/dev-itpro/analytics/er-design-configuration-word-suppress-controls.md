@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 8c99203110cfdc7f8123c30488611d55f48e8f67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e6ab75c970c6c14d4977b6c739ba46e33f4962e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753617"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348054"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Ignorera Word-innehållskontroller i genererade rapporter
 
@@ -63,7 +63,7 @@ Du måste också ladda ner och spara följande mall för exempelrapporten:
     > [!NOTE]
     > Den upprepade innehållskontrollen är taggad av **SummaryLines** nyckel som matchar fältet för den anpassade XML-delen som den har mappats till.
 
-    ![Word-mall layout](./media/er-design-configuration-word-suppress-controls-image1.gif)
+    ![Layout för Word-mall.](./media/er-design-configuration-word-suppress-controls-image1.gif)
 
 ## <a name="select-the-existing-er-report-configuration"></a>Markera den befintliga ER-rapportkonfigurationen
 
@@ -98,7 +98,7 @@ För närvarande används SampleVendPaymDocReportBounded.docx-filen som en mall 
 7. Välj **OK**.
 8. I dialogrutan **Elektroniska rapportparametrar**, välj **OK** och analysera det genererade resultatet.
 
-    ![Betalningar för bearbetning på sidan Leverantörsbetalningar](./media/er-design-configuration-word-suppress-controls-image2.gif)
+    ![Betalningar för bearbetning på sidan Leverantörsbetalningar.](./media/er-design-configuration-word-suppress-controls-image2.gif)
 
     Resultatet presenteras i Word-format och innehåller sammanfattningsavsnittet.
 
@@ -149,7 +149,7 @@ Om du vill ignorera samlingsavsnittet i ett genererat dokument, baserat på beg�
 
 9. Välj **Spara** om du vill ändra till redigerbart format.
 
-    ![Genererad utdata i Word-format](./media/er-design-configuration-word-suppress-controls-image3.gif)
+    ![Genererade utdata i Word-format.](./media/er-design-configuration-word-suppress-controls-image3.gif)
 
 ## <a name="run-the-modified-format-to-create-word-output"></a>Kör det modifierade formatet för att skapa Word-utleverans
 
@@ -163,7 +163,7 @@ Om du vill ignorera samlingsavsnittet i ett genererat dokument, baserat på beg�
 8. I dialogrutan **Parametrar för elektroniska rapporter** i fältet **Avsluta sammanfattningsavsnittet**, välj **Ja**.
 9. Välj **OK** och analysera det genererade resultatet.
 
-    ![Genererad utdata i Word-format](./media/er-design-configuration-word-suppress-controls-image4.gif)
+    ![Genererade utdata i Word-format.](./media/er-design-configuration-word-suppress-controls-image4.gif)
 
     Lägg märke till att utdata inte innehåller sammanfattningsavsnittet eftersom det har utelämnats.
 

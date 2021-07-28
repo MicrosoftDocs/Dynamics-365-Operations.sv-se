@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 563fa291754f7f795fa64d530de49b9fe4083c56
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9990df3e57d65c77a75913efaf30675528d411b4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821307"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343710"
 ---
 # <a name="weighted-average-date"></a>Datum för viktat medelvärde
 
@@ -39,7 +39,7 @@ Viktat medelvärde = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 
 
 Under lagerstängningen utförs beräkningen dagligen under hela stängningsperioden vilket visas i följande bild. 
 
-![Modell för daglig beräkning av viktat medeldatum](./media/weightedaveragedatedailycalculationmodel.gif) 
+![Modell för daglig beräkning av viktat medeldatum.](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 Lagertransaktioner som lämnar lagerinleveranserna, bland anat försäljningsorder, lagerjournaler, inköpskreditfakturor och tillverkningsorder, gör det med en uppskattad självkostnad vid bokföringsdatumet. Denna uppskattade självkostnad kallas också för löpande genomsnittlig självkostnad. På datumet för lagerstängningen analyserar systemet lagertransaktionerna för föregående perioder, föregående dagar och den aktuella dagen. Denna analys används för att avgöra vilken av följande stängningsprinciper som ska användas:
 
@@ -72,7 +72,7 @@ Illustrationen som följer visar dessa transaktioner:
 -   2b. Lagrets ekonomiska utleverans uppdateras med kvantiteten 2 med en kostnad på 100,00 kronor vardera.
 -   3. Lagerstängningen utförs med den direkta kvittningsmetoden som kvittar lagrets ekonomiska inleverans mot lagrets ekonomiska utleverans.
 
-![Viktat genomsnittligt datum med direkt kvittning utan alternativet Inkludera fysiskt värde](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![Viktat genomsnittligt datum med direkt kvittning utan alternativet Inkludera fysiskt värde.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Förklaring till bilden:**
 
@@ -126,7 +126,7 @@ Systemet skapar och bokför den summerade lageröverföringstransaktionen. Dessu
 
 I bilden nedan visas hur den här serien med transaktioner påverkas när du väljer lagermodellen för viktat medelvärde med den summerade kvittningsprincipen utan alternativet **Inkludera fysiskt värde**. 
 
-![Viktat genomsnittligt datum med summerad kvittning utan alternativet Inkludera fysiskt värde](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Viktat genomsnittligt datum med summerad kvittning utan alternativet Inkludera fysiskt värde.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Förklaring till bilden**
 
@@ -175,7 +175,7 @@ Du kan markera ett problem transaktion till en inleverans innan en transaktion b
 
 Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 275,00 kronor. I bilden nedan visas hur den här serien med transaktioner påverkas om du väljer lagermodell med datum för viktat medelvärde och markering.
 
-![Viktat genomsnittligt datum med markering](./media/weightedaveragedatewithmarking.gif) 
+![Viktat genomsnittligt datum med markering.](./media/weightedaveragedatewithmarking.gif) 
 
 **Förklaring till bilden:**
 

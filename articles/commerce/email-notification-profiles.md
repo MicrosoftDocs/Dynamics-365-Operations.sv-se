@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 7504b2b36f6869f90de196bf32c09e7bdd51e7b5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ac58ea4f1dfd8208c1c2f78e36d82d1375475413
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792667"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349530"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Ställa in en meddelandeprofil för e-post
 
@@ -59,7 +59,7 @@ Gör så här om du vill skapa en e-postmall.
 
 I bilden nedan visas några exempel på Inställningar för e-postmallar.
 
-![Inställningar för e-postmall](media/email-template.png)
+![Inställningar för e-postmall.](media/email-template.png)
 
 ### <a name="create-an-email-event"></a>Skapa en e-posthändelse
 
@@ -74,7 +74,7 @@ Gör så här om du vill skapa en e-posthändelse.
 
 I bilden nedan visas några exempel på Inställningar för meddelande för händelse.
 
-![Meddelandeinställningar för händelse](media/email-notification-profile.png)
+![Inställningar för händelsemeddelande.](media/email-notification-profile.png)
 
 ### <a name="next-steps"></a>Nästa steg
 

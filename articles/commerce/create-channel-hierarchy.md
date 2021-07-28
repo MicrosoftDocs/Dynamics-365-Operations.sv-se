@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5df46de9dadfa0b7160a9b340ef36fdf963a0ad3
-ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
+ms.openlocfilehash: e43c4c00545dfecb2f9a2192f81cd25300e3d6e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5951918"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352480"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>Skapa en kanalnavigeringshierarki
 
@@ -49,7 +49,7 @@ Följ stegen nedan om du vill skapa en navigeringshierarki för kanaler.
 
 I bilden nedan visas ett exempel på en rotnod.
 
-![Exempel på rotnod](media/create-channel-hierarchy-1.png)
+![Exempel på rotnod.](media/create-channel-hierarchy-1.png)
 
 ## <a name="create-navigation-category-nodes"></a>Skapa navigeringskategorinoder
 
@@ -65,7 +65,7 @@ Om du vill skapa ytterligare navigeringskategorinoder som representerar produktk
 
 Följande bild visar ett exempel på en slutförd navigeringshierarkin för butikskanal.
 
-![Exempel på kanalhierarki](media/create-channel-hierarchy-2.png)
+![Exempel på kanalhierarki.](media/create-channel-hierarchy-2.png)
 
 ## <a name="add-products-to-category-nodes"></a>Lägg till produkter i kategorinoder
 
@@ -81,7 +81,7 @@ Följ stegen nedan om du vill lägga till produkter till kategorinoder.
 
 Följande bild visar en exempelnod med produkter som läggs till.
 
-![Produkter i som lagts till i en kategorinod](media/create-channel-hierarchy-3.png)
+![Produkter i som lagts till i en kategorinod.](media/create-channel-hierarchy-3.png)
 
 ## <a name="add-product-attribute-groups-to-category-nodes"></a>Lägg till produktattributgrupper till kategorinoder
 
@@ -97,7 +97,7 @@ För att lägga till en attributgrupp till en kategorinod, följ dessa steg.
 
 Följande bild visar en exempelnod med produktattributgrupper som läggs till.
 
-![Produktattributgrupper på en nod](media/create-channel-hierarchy-4.png)
+![Produktattributgrupper på en nod.](media/create-channel-hierarchy-4.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

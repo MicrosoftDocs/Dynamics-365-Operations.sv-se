@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e227cabdd205b7a0c1fe784fc719b538e6ea4443
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: e9aa911ca22ca2beeffe6bec95f17f94142065e4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907701"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348767"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migrering till planeringsoptimering för huvudplanering
 
@@ -65,7 +65,7 @@ När de nödvändiga funktionerna blir tillgängliga kommer Microsoft att tillha
 
 Flödesschemat nedan sammanfattar informationen i detta avsnitt så att du snabbt kan ta reda på om du bör begära ett undantag. Om du behöver begära ett undantag kan du fylla i och skicka in enkäten [Planera optimeringsmigrering och undantag](https://go.microsoft.com/fwlink/?linkid=2144962).
 
-![Flödesschema för undantag](media/exception-diagram.png "Flödesschema för undantag")
+![Flödesschema för undantag.](media/exception-diagram.png "Flödesschema för undantag")
 
 > [!NOTE]
 > Du kan endast begära ett undantag för klientorganisationer som för närvarande inkluderar, eller kommer att omfatta, en produktionsmiljö, ej endast klientorganisationer med enbart sandbox-miljöer. Om du behöver inaktivera undantagsfelet för planeringsoptimeringen i en infrastruktur som en service (IaaS) miljö med begränsat läge kör du SQL-frågeställningen i [begränsade miljöer](#faq-sandbox).

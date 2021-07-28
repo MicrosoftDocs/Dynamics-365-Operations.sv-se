@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 23d02cf96faf3753303435acc148bf71e487d791
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c38717ca9c57913ea22f2dd7712b49f39d2e556e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799932"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349708"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Aktivera och konfigurera automatiska avgifter efter kanal
 
@@ -66,7 +66,7 @@ Om du vill tilldela en standardhierarki till ett syfte för organisationshierark
 1. I åtgärdsfönstret, klicka på **Kör nu**.
 1. Upprepa de föregående två stegen för att köra jobben **1070** (**Kanalkonfiguration**) och **1110** (**Global konfiguration**).
 
-![Konfiguration av syfte med organisationshierarkier för automatisk avgift för butik](media/Auto-charges-org-hierarchy-purpose.png)
+![Konfiguration av syftet med organisationshierarkier för automatisk avgift för butik.](media/Auto-charges-org-hierarchy-purpose.png)
 
 ## <a name="define-auto-charges-by-channel"></a>Definiera automatiska tillägg per kanal
 
@@ -86,7 +86,7 @@ Om du vill definiera automatiska debiteringar utifrån kanal i Commerce följer 
 1. I åtgärdsfönstret, klicka på **Kör nu**.
 1. Upprepa de föregående två stegen för att köra jobben **1070** (**Kanalkonfiguration**) och **1110** (**Global konfiguration**).
     
-![Automatiska tillägg definieras per kanal](media/Auto-charges-line-charge-by-channel.png)
+![Automatiska debiteringar definierade per kanal.](media/Auto-charges-line-charge-by-channel.png)
 
 ## <a name="example-scenario"></a>Exempelscenario
 
@@ -94,7 +94,7 @@ I följande exempel beskrivs de steg som krävs för att konfigurera en produkt 
 
 Organisationen definierar en avgiftskod som kallas **ÅTERVINNING**, som visas på bilden nedan.
 
-![Avgiftskod för ÅTERVINNING](media/Auto-charges-charge-code.png)
+![Debiteringskod för ÅTERVINNING](media/Auto-charges-charge-code.png)
 
 En automatisk avgift skapas på radnivå. Det har följande konfigurationer:
 
@@ -112,13 +112,13 @@ En rad för automatiska avgifter skapas. Det har följande konfigurationer:
 - Fältet **Kategori** ställs in på **fast**.
 - Fältet **avgifter** anges till **$6,25**.
 
-![Konfiguration av automatiska avgiften på radnivå och automatiska avgiftsraden](media/Auto-charges-recyclingfee-line-fee.png)
+![Konfiguration av den automatiska debiteringen på radnivå och den automatiska debiteringsraden.](media/Auto-charges-recyclingfee-line-fee.png)
 
 I kassaprogrammet skapas en försäljningsorder i **San Francisco** butikskanal. Raden **Avgifter** visar återvinningsavgiften på **$6,25**.
 
 Genom att välja avgifter **Transaktionsalternativ \> Avgifter \> Hantera avgifter** i kassaprogrammet kan du se avgiftskoden och beskrivning för återvinningsavgiften.
 
-![Återvinningsavgift i kassaprogrammet](media/pos-auto-charges-recyclingfee-line-fee.png)
+![Återvinningsavgift i kassaprogrammet.](media/pos-auto-charges-recyclingfee-line-fee.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

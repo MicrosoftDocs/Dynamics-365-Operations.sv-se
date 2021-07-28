@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b85084a2ccb9e9cad09f86af43995bfbce44a1e9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: fd92ab2646031a488352e1a0d250c21d1527eaa1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051339"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357249"
 ---
 # <a name="create-custom-links-in-manager-self-service"></a>Skapa anpassade länkar i Självbetjäning för chef
 
@@ -38,11 +38,11 @@ Om du vill använda den här funktionen aktiverar du **anpassade länkar i Själ
 
 2. Under **Ange länkar för chefer** kan du lägga till, redigera eller ta bort en länk. Du kan också gruppera länkarna så att de visas i en grupp i Självbetjäning för chef.
 
-   ![Ange anpassade länkar i Självbetjäning för chef](./media/hr-employee-manager-self-service-custom-links-setup.png)
+   ![Ange anpassade länkar i Självbetjäning för chef.](./media/hr-employee-manager-self-service-custom-links-setup.png)
 
 3. Om du vill visa länkarna går du till fliken **Mitt team** i Självbetjäning för medarbetare.
 
-   ![Visa anpassade länkar i Självbetjäning för chef](./media/hr-employee-manager-self-service-custom-links-view.png)
+   ![Visa anpassade länkar i Självbetjäning för chef.](./media/hr-employee-manager-self-service-custom-links-view.png)
 
 ## <a name="see-also"></a>Se även
 

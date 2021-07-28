@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dcc562f46884cc5bf82611db9ed35436791045b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4a8e3378a1d31101d111673cf66f75e807cd05a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188183"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353478"
 ---
 # <a name="purchase-requisition-workflow"></a>Arbetsflöde för inköpsrekvisitioner
 
@@ -51,7 +51,7 @@ I bilden nedan visas hur en inköpsrekvisition kan flöda genom arbetsflödesgra
 -   **Inköpsagent** – Användaren som genomför en anskaffningsgranskning och kan godkänna dokumentet.
 -   **Beställarens chef** – Användaren som genomför en chefsgranskning och kan godkänna dokumentet.
 
-![Process för granskning av arbetsflödet för inköpsrekvisitioner](./media/purchreqworkflowoverview_submission.gif)  
+![Granskningsprocess för arbetsflödet för inköpsrekvisitioner.](./media/purchreqworkflowoverview_submission.gif)  
 I det här exemplet innehåller arbetsflödesprocessen för inköpsrekvisitionen följande steg:
 
 1.  Förberedaren skickar inköpsrekvisitionen för granskning.
@@ -74,7 +74,7 @@ Följande roller ingår i arbetsflödesprocessen för det här exemplet:
 -   **Avdelningschef** – Användaren som genomför en omkostnadsgranskning och kan godkänna dokumentet.
 -   **Gruppchef** – Användaren som utför en auktoriserad signeringsgranskning och kan godkänna dokumentet.
 
-![Process för granskning av arbetsflödet för inköpsrekvisitionsrader](./media/purchreqlineworkflowoverview.gif)  
+![Granskningsprocess av arbetsflödet för inköpsrekvisitionsrader.](./media/purchreqlineworkflowoverview.gif)  
 I det här exemplet innehåller arbetsflödesprocessen för inköpsrekvisitionsraderna följande steg:
 
 1.  Förberedaren skickar inköpsrekvisitionen för granskning. Varje rad skickas till granskaren som är konfigurerad att få den i arbetsflödesprocessen.

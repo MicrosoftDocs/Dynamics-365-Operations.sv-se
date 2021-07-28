@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ed90e773e1b8c90afc119a471cf844941ad19226
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: eca0b61e1fa6760bfed1a9f9979deddccf6fb1a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103056"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343784"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexibel reservationspolicy för dimension på distributionslagernivå
 
@@ -58,7 +58,7 @@ I det här scenariot använder ett företag en lagerstrategi där färdiga varor
 
 För att tillgodose önskad flexibilitet i batchreservationens beteende för artiklar som är associerade med en *Batch-under\[plats\]* lagerreservationshierarki måste chefer markera kryssrutan **Tillåt reservation av efterfrågeorder** för nivån **Batch-nummer** på sidan **lagerreservationshierarkier**.
 
-![Göra lagerreservationshierarkin flexibel](media/Flexible-inventory-reservation-hierarchy.png)
+![Göra lagerreservationshierarkin flexibel.](media/Flexible-inventory-reservation-hierarchy.png)
 
 När nivån **Batch-nummer** i hierarkin väljs kommer alla dimensioner över den nivån och upp till nivån **plats** att väljas automatiskt. (Som standard är alla dimensioner ovanför nivån **plats** förvalda.) Det här beteendet återspeglar logiken där alla dimensioner i intervallet mellan batchnumret och lagerstället också reserveras automatiskt när du har reserverat ett specifikt batchnummer på orderraden.
 
@@ -145,7 +145,7 @@ För det här exemplet måste demonstrationsdata vara installerade och du måste
 
 6. På sidan **Batch-reservation** välj raden för batch **B11** och välj sedan **reservera rad**. Det finns ingen särskild logik för att tilldela platser och licensskyltarna vid automatisk reservation. Du kan ange kvantiteten manuellt i fältet **reservation**. Observera att snabbfliken **batchnummer för källrad**, batch **B11** visas som **utfäst**.
 
-    ![Utfästa ett specifikt batchnummer på en försäljningsorderrad på sidan batch-reservation](media/Batch-reservation-form-with-order-committed-reservation.png)
+    ![Utfästa ett specifikt batchnummer på en försäljningsorderrad på sidan för batch-reservation.](media/Batch-reservation-form-with-order-committed-reservation.png)
 
     > [!NOTE]
     > Det går att utföra reservationer av kvantiteten på en försäljningsorderrad i flera batchar. På samma sätt kan reservation av samma batch göras mot flera platser och licensskyltar (om licensskyltar är aktiverade för platserna).
@@ -154,7 +154,7 @@ För det här exemplet måste demonstrationsdata vara installerade och du måste
 
 7. Gå till **Produktinformationshantering** \> **Produkter** \> **Frisläppta produkter**. Markera artikeln och välj sedan **hantera lager** \> **visa** \> **transaktioner**.
 
-    ![Order-allokerad reservation som en lagertransaktionstyp](media/Inventory-transactions-for-order-committed-reservation.png)
+    ![Order-allokerad reservation som en lagertransaktionstyp.](media/Inventory-transactions-for-order-committed-reservation.png)
 
 8. Granska artikelns lagertransaktioner som hör till försäljningsorderradens reservation.
 
@@ -172,7 +172,7 @@ För det här exemplet måste demonstrationsdata vara installerade och du måste
     - Om du vill skapa arbete använder systemet arbetsmallar men inte platsdirektiv. Alla standardinställningar som definieras för arbetsmallar, t.ex. ett maximalt antal plockningsrader eller en specifik måttenhet, används för att bestämma när nytt arbete ska skapas. Reglerna som är kopplade till platsdirektiv för identifiering av plockningsplatser beaktas dock inte eftersom den order som genomförts redan anger alla lagerdimensioner. Dessa lagerdimensioner inkluderar dimensionerna på lagerställets lagernivå. Därför ärver arbetet dessa dimensioner utan att behöva konsultera platsdirektiv.
     - Batchnumret visas inte på plockningsraden (som är fallet för den arbetsrad som skapas för en artikel som har en motsvarande *batch-ovan\[plats\]* reservationshierarki.) I stället visas batchnummer från och alla andra lagringsdimensioner på arbetsradens jobblagertransaktion som refereras från de associerade lagertransaktionerna.
 
-        ![Lagerställets lagertransaktion för arbete som härrör från en reservation som har genomförts av order](media/Work-inventory-transactions-for-order-committed-reservation.png)
+        ![Lagerställets lagertransaktion för arbete som härrör från en reservation som har genomförts av order.](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
     - När arbetet har skapats är artikelns lagertransaktion där fältet **Referens** är inställt på **Order-allokerad reservation** borttagen. Lagertransaktionen där fältet **Referens** anges till **Arbete** innehåller nu den fysiska reservationen på alla lagerdimensionerna för kvantiteten.
 
@@ -207,7 +207,7 @@ Innan du kan använda flexibel reservation av ID-nummer måste två funktioner a
 
 Om du vill aktivera reservation av ID-nummer på en order måste du markera kryssrutan **Tillåt reservation på efterfrågeorder** för nivån **ID-nummer** på sidan **Tillåt reservation av efterfrågeorder** för lagerreservationer för den hierarki som är kopplad till den relevanta artikeln.
 
-![Sidan hierarkier för lagerreservationer för en flexibel reservationshierarki för ID-nummer](media/Flexible-LP-reservation-hierarchy.png)
+![Sidan Hierarkier för lagerreservationer för en flexibel reservationshierarki för ID-nummer.](media/Flexible-LP-reservation-hierarchy.png)
 
 Du kan aktivera reservation av ID-nummer på ordern när som helst i distributionen. Den här ändringen påverkar inte reservationer och öppna jobb i lagerställe som har skapats innan ändringen gjordes. Men du kan inte avmarkera kryssrutan **Tillåt reservation på efterfrågeorder** om öppna avgående lagertransaktioner som har en för utleveransstatus *Som har beställts*, *Fysiskt reserverat* eller *Beställt* finns för en eller flera artiklar som är associerade med den reservationshierarkin.
 
@@ -227,7 +227,7 @@ När försäljningsorderraden som använder en orderallokerad reserverat ID-numm
 
 Om en artikel för ett lagerställe består av rader som är lika med en komplett lastpall och har licensskyltar, kan du optimera plockningsprocessen genom att använda ett menyalternativ för mobila enheter där alternativet **Hantera efter ID-nummer** är inställt på *Ja*. En lagerarbetare kan sedan söka igenom ett ID-nummer för att slutföra en plockning i stället för att behöva skanna artiklarna från ett arbetsställe en i taget.
 
-![Menyalternativet mobilen där alternativet hantera efter ID-nummer är inställt på Ja](media/Handle-by-LP-menu-item.png)
+![Menyalternativet Mobil enhet där alternativet Hantera efter ID-nummer är inställt på Ja.](media/Handle-by-LP-menu-item.png)
 
 Eftersom funktionen **Hantera efter ID-nummer** inte stöder arbete som täcker flera lastpallar, är det bättre att ha en separat arbetsuppgift för olika ID-nummer. Om du vill använda den här metoden lägger du till fältet **orderallokerade reservation av ID-nummer** som en sidhuvudsbrytning på sidan **arbetsmall**.
 
@@ -249,7 +249,7 @@ Det här scenariot i detta ämne innehåller värdet och poster som ingår i den
 1. I fältet **Namn** anger du ett värde (till exempel *FlexibleLP*).
 1. I fältet **Beskrivning** anger du en värde (till exempel, *Flexibel LP reservation*).
 1. I listan **Valda** välj **Batchnummer**, **Serienummer** och **Ägare**.
-1. Välj knappen **Ta bort** ![Bakåtpilen](media/backward-button.png) om du vill flytta fältet till valda poster till listan **Tillgängliga**.
+1. Välj knappen **Ta bort** ![Bakåtpil.](media/backward-button.png) om du vill flytta de valda posterna till listan **Tillgängliga**.
 1. Välj **OK**.
 1. I raden för dimensionsnivån **ID-nummer** markera kryssrutan **Tillåt reservation på efterfrågeorder**. Nivån **Plats** markeras automatiskt och du kan inte avmarkera kryssrutorna för den.
 1. Välj **Spara**.

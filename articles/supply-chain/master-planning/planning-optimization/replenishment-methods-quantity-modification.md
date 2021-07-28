@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5e0e671e624de2646a47647ef08d3567599b884
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: d693d306929140c9640ed34d756399d70b81a12f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261706"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347768"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Påfyllnadsmetoder och kvantitetsändring
 
@@ -34,15 +34,15 @@ Följande disponeringskoder kan användas vid planeringsoptimering:
 
 - **Period** - den påfyllnadsmetod som kombinerar hela efter frågan för en period till en order för produkt. Ordern planeras under den första dagen i perioden och dess kvantitet uppfyller nettokraven under den fastställda perioden. Perioden inleds med det första efter frågan av produkten och täcker den definierade tiden i tid. Nästa period kommer att inledas med nästa behov av produkten. Disponeringskod *Period* används ofta för icke-förutsägbar inventering, säsongspåverkade produkter eller högkostnadsprodukter. Illustrationen nedan visar ett exempel.
 
-    ![Exempel på användning av period disponeringskod](./media/coverage-code-period.png "Exempel på användning av period disponeringskod")
+    ![Exempel på kodanvändning för av Perioddisponering.](./media/coverage-code-period.png "Exempel på användning av period disponeringskod")
 
 - **Krav** - I påfyllnadsmetod i vilken systemet skapar en planerad inköps-, överförings- eller produktionsorder per behov för artikeln. Denna metod används för höga produkter som har återkommande efterfrågan. Disponeringskod *Krav* används ofta för konfigurerbara produkter eller scenarier som måste beställas. Illustrationen nedan visar ett exempel.
 
-    ![Exempel på användning av krav disponeringskod](./media/coverage-code-requirement.png "Exempel på användning av krav disponeringskod")
+    ![Exempel på kodanvändning för kravdisponering.](./media/coverage-code-requirement.png "Exempel på användning av krav disponeringskod")
 
 - **Min./Max.** – Påfyllnadsmetoden baseras på lagernivån. Den definierar påfyllnaden av lagret upp till en specifik nivå när den prognosterade lagerbehållningsnivån är under ett specifikt tröskelvärde. Kvantiteten för påfyllnaden är differensen mellan den högsta nivån och den förutsagda behållningsnivån. *Minsta/högsta.* disponeringskod används ofta för förutsägbar inventering, höga kostnader eller billigaste produkter. Illustrationen nedan visar ett exempel.
 
-    ![Exempel på användning av min/max disponeringskod](./media/coverage-code-min-max.png "Exempel på användning av min/max disponeringskod")
+    ![Exempel på användning av min/max-disponeringskod.](./media/coverage-code-min-max.png "Exempel på användning av min/max disponeringskod")
 
 - **Manuell** - Påfyllnadsmetoden för partistorlek där systemet inte föreslår inköps-, överförings- eller tillverkningsorder för produkten. I stället ansvarar planeraren för produkten för att skapa de order som krävs för påfyllnaden av produkten. *Manuell* disponeringskod används ofta för produkter som systemgenererade planerade order inte är önskade för.
 

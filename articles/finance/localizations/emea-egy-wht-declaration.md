@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8c9aaa3868167806ce3189d724621991ec7e53eb
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: afb9f95458089e854335399ea3d14ba229c02bbd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022821"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349883"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Källskattedeklaration för Egypten (EG-00005)
 
@@ -103,7 +103,7 @@ Om du vill generera en rapport för deklarationsformulär i Microsoft Excel-form
 2. På fliken **källskatt** i fältet **WHT mappning av deklarationsformat**, välj **WHT-deklaration Excel (EG)**. Om du lämnar fältet tomt genereras standard momsrapporten i SSRS-format.
 
 
-![Deklarationsformulär](media/egypt-wht-declaration-setup1.png)
+![Deklarationsformulär.](media/egypt-wht-declaration-setup1.png)
 
 ## <a name="generate-the-withholding-declaration-forms"></a>Generera källdeklarationsformulären
 Processen för att förbereda och skicka ett källskattedeklarationsformulär för en viss period baseras på källskattetransaktionerna som bokförs under kvittnings- och redovisningsjobbet. Mer information om global källskatt finns i [Global källskatt](../general-ledger/global-withholding-tax-overview.md).

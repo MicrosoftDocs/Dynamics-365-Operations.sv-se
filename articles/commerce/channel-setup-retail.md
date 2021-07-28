@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3f1f5dc2c8402d9b6b68a049f804932812eb74c0
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: fe6262fa8a7fb27fda7642180f605376af726e54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937544"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346068"
 ---
 # <a name="set-up-a-retail-channel"></a>Ställa in en återförsäljarkanal
 
@@ -50,11 +50,11 @@ Innan du skapar en butikskanal ska du kontrollera att du följer [kanalförutsä
 
 Följande bild visar hur en ny butikskanal skapas.
 
-![Ny butikskanal](media/channel-setup-retail-1.png)
+![Ny butikskanal.](media/channel-setup-retail-1.png)
 
 I bilden nedan visas ett exempel på butikskanal.
 
-![Exempel på butikskanal](media/channel-setup-retail-2.png)
+![Exempel på butikskanal.](media/channel-setup-retail-2.png)
 
 ## <a name="other-settings"></a>Andra inställningar
 
@@ -64,7 +64,7 @@ Se även [Skärmlayouter för POS](pos-screen-layouts.md) för information om at
 
 I bilden nedan visas ett exempel på konfiguration av butikskanal.
 
-![Exempel på butikskanalkonfiguration](media/channel-setup-retail-3.png)
+![Exempel på butikskanalkonfiguration.](media/channel-setup-retail-3.png)
 
 ## <a name="additional-channel-set-up"></a>Konfiguration av ytterligare kanal
 
@@ -74,7 +74,7 @@ Ytterligare uppgifter som krävs för online-kanalkonfigurering inkluderar inst�
 
 Följande bild visar olika ytterligare alternativ för inställning av butikskanaler på fliken **Inställningar**.
 
-![Ställ in en kanal](media/channel-setup-retail-4.png)
+![Konfigurera kanal.](media/channel-setup-retail-4.png)
 
 ### <a name="set-up-payment-methods"></a>Ange betalsätt
 
@@ -89,7 +89,7 @@ Om du vill ställa in betalsätt följer du dessa steg för varje betalningstyp 
 
 I bilden nedan visas ett exempel på en kontantbetalningsmetod.
 
-![Exempel på betalsätt](media/channel-setup-retail-5.png)
+![Exempel på betalningsmetoder.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-cash-declaration"></a>Inställningar för kontantavstämning
 
@@ -98,7 +98,7 @@ I bilden nedan visas ett exempel på en kontantbetalningsmetod.
 
 I bilden nedan visas ett exempel på en kontantavstämning.
 
-![Inställningar för kontantavstämningar](media/channel-setup-retail-6.png)
+![Inställningar för kontantavstämningar.](media/channel-setup-retail-6.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Ställ in leveranssätt
 
@@ -112,7 +112,7 @@ Om du vill ändra eller lägga till ett leveranssätt följer du stegen nedan.
 
 I bilden nedan visas ett exempel på ett leveranssätt.
 
-![Ställ in leveranssätt](media/channel-setup-retail-7.png)
+![Konfigurera leveranssätt.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-incomeexpense-account"></a>Ställ in intäkts-/utgiftskonto
 
@@ -129,7 +129,7 @@ Så här ställer du in intäkts-/utgiftskonto.
 
 I följande bild visas ett exempel på ett intäkts-/utgiftskonto.
 
-![Ställ in intäkts-/utgiftskonton](media/channel-setup-retail-8.png)
+![Konfigurera intäkts-/utgiftskonton.](media/channel-setup-retail-8.png)
 
 ### <a name="set-up-sections"></a>Ställ in avsnitt
 
@@ -155,7 +155,7 @@ Så här ställer du in en tilldelning av uppfyllelsegrupp.
 
 I bilden nedan visas ett exempel på en inställning av tilldelning av uppfyllelsegrupp.
 
-![Ange tilldelning av uppfyllelsegrupp](media/channel-setup-retail-9.png)
+![Konfigurera tilldelning av uppfyllelsegrupp.](media/channel-setup-retail-9.png)
 
 ### <a name="set-up-safes"></a>Ställ in kassaskåp
 

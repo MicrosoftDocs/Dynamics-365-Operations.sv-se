@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0313bd1a5adc0fdb7a4958c5dfa013cfdc51491a
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 2c70b6ecd284acc8817970e090583603d1b8e110
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189652"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345414"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Registrera materialförbrukning med en mobil enhet
 
@@ -30,7 +30,7 @@ Det här avsnittet beskriver ett arbetsflöde som möjliggör registrering av f�
 
 ## <a name="introduction"></a>Introduktion
 
-Arbetsflödet är relevant om det finns strikta krav på att material ska kunna spåras. Om du vill behålla spårbarheten för material måste exakt datum och exakt tid rapporteras för förbrukningen. Den här processen kan ses i motsats till för- eller backflushing-arbete där det finns en avvikelse mellan registreringstiden och tiden då den faktiska förbrukningen sker. Detta förklarar varför en strategi för automatisk förbrukning inte kan inte för vissa material med spårbarhetskrav. Låt oss titta på ett enkelt scenario som beskriver hur du ställer in ett arbetsflöde för att aktivera registrering av förbrukningen av råmaterial med hjälp av en bärbar enhet. [![Skapa ett arbetsflöde för att möjliggöra registrering av förbrukning av råmaterial med en bärbar enhet](./media/scenario3.png)](./media/scenario3.png)
+Arbetsflödet är relevant om det finns strikta krav på att material ska kunna spåras. Om du vill behålla spårbarheten för material måste exakt datum och exakt tid rapporteras för förbrukningen. Den här processen kan ses i motsats till för- eller backflushing-arbete där det finns en avvikelse mellan registreringstiden och tiden då den faktiska förbrukningen sker. Detta förklarar varför en strategi för automatisk förbrukning inte kan inte för vissa material med spårbarhetskrav. Låt oss titta på ett enkelt scenario som beskriver hur du ställer in ett arbetsflöde för att aktivera registrering av förbrukningen av råmaterial med hjälp av en bärbar enhet. [![konfigurera ett arbetsflöde för att möjliggöra registrering av förbrukning av råmaterial med en bärbar enhet.](./media/scenario3.png)](./media/scenario3.png)
 
 ### <a name="scenario-details"></a>Scenario-information
 

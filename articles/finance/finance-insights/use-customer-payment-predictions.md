@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 1349521d65511864747de6c2fed3a904dea8917e
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 873a11f3151344de63ee0b01b586ccbffe0df51b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186574"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355638"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>Använda prediktioner av kundbetalning (förhandsversion)
 
@@ -38,13 +38,13 @@ På arbetsytan **Hantera kundkredit och samlingar** finns två nya paneler, **Be
 - Panelen **Betalningsförutsägelse per transaktion** visar antalet öppna kundtransaktioner som sannolikt har en betalning som är mindre än 50 procent i bucketen **I tid**. Du kan välja den här panelen för att öppna listsidan **Betalningsförutsägelse per transaktion**.
 - Panelen **Kunder med förutsagda stora sena saldon** visar antalet kunder för vilka mer än hälften (50 procent) och det totala saldot förutsägs betalas sent och/eller mycket sent. Du kan välja den här panelen för att öppna listsidan **Betalningsförutsägelse per kund**.
 
-[![Arbetsytan Hantera kundkredit och samlingar](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
+[![Arbetsytan Hantera kundkredit och samlingar.](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
 
 ### <a name="payment-predictions-per-transaction-list-page"></a>Listsidan Betalningsförutsägelse per transaktion
 
 På listsidan **Betalningsförutsägelse per transaktion** kan du visa sannolikheten för betalning för öppna transaktioner i bucketen **I tid**, **Sent** och **Mycket sent**. För varje transaktion i rutnätet visar kolumnen **Sannolikhet för I tid** sannolikheten för att fakturan ska betalas på eller före förfallodatumet. Om sannolikheten för en betalning i tid är mindre än 50 procent visas en röd cirkel bredvid procentsatsen i kolumnen **Sannolikhet för I tid** för att indikera risken för sen betalning.
 
-[![Listsidan Betalningsförutsägelse per transaktion](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
+[![Betalningsförutsägelse per transaktionssida.](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
 
 I fönstret **Relaterad information** till höger på sidan visas mer information om förutsägelserna:
 
@@ -54,13 +54,13 @@ I fönstret **Relaterad information** till höger på sidan visas mer informatio
 
 Data i avsnittet **Främsta faktorer** och på snabbflikarna **Kundinsikter** och **Kundhistorik** bidrar till att förklara betalningsförutsägelserna. Det kan hjälpa till att öka förtroendet för förutsägelserna.
 
-[![Grafiska indikatorer för betalningsförutsägelser i fönstret Relaterad information](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
+[![Grafiska indikatorer för betalningsförutsägelser i fönstret Relaterad information.](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
 ### <a name="payment-prediction-per-customer-list-page"></a>Listsidan Betalningsförutsägelse per kund
 
 På listsidan **Betalningsförutsägelse per kund** visas det totala ingående saldot och det belopp som förutsägs att betalas i bucketen **I tid**, **Sent** och **Mycket sent**.
 
-[![Sidan Betalningsförutsägelse per kund](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
+[![Sidan Betalningsförutsägelse per kund.](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
 Betalningsbeloppet i varje bucket beräknas som summan av det vägda genomsnittet för transaktionssaldot. Detta belopp beräknas utifrån betalningssannolikheten i varje bucket.
 
@@ -92,11 +92,11 @@ Data i avsnittet **Främsta faktorer** och på snabbflikarna **Kundinsikter** oc
 
 Du kan visa noggrannheten hos betalningsförutsägelser genom att gå till **Kredit och inkasso \> Konfigurera \> Finance-insikter \> Parametrar för ekonomiinsikter**. På fliken **Kundbetalningsinsikter** visar avsnittet **Förutsägelsemodell** noggrannheten i förutsägelsemodellen som en procentandel.
 
-[![Noggrannheten i betalningsförutsägelser](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
+[![Noggrannheten i betalningsförutsägelser.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
 Om du inte är nöjd med noggrannheten väljer du länken **Förbättra modellens noggrannhet** för att öppna AI Builder-tilläggets upplevelse. I AI Builder-tilläggets upplevelse kan du välja eller avbryta urvalet av fält tills du har valt de fält som du tror är viktigast för en korrekt förutsägelse av betalningssannolikhet. När du är klar kan du enkelt återträna förutsägelsemodellen och publicera dina ändringar. Den nyligen tränade förutsägelsemodellen hämtas automatiskt för förutsägelser i Dynamics 365 Finance.
 
-[![AI Builder-tilläggsupplevelse](./media/ai-builder.png)](./media/ai-builder.png)
+[![AI Builder-tilläggsupplevelse.](./media/ai-builder.png)](./media/ai-builder.png)
 
 ## <a name="release-details"></a>Frisläppningsinformation
 

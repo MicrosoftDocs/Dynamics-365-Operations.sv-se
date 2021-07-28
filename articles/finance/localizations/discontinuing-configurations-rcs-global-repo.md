@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2021-02-02
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 2bd22e991de376cfd93f75158f1f29716d2559e1
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 1d25d583580af3d73a3ac1eaebc9f7d8413c6563
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018743"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360224"
 ---
 # <a name="discontinue-configurations-in-the-rcs-global-repository"></a>Upphöra konfigurationer i den globala RCS-databasen
 
@@ -45,7 +45,7 @@ Om du vill avbryta konfigurationen utför du följande steg.
 2. Ange parametern **Upphör** till **Ja**.
 3. Välj **OK** om du vill upphöra konfigurationerna. Fältet **Utgångsdatum** fylls då i när du sparar ändringarna.
 
-![Upphöra med konfigurationsinformation](media/Discontinue-details-2.png)
+![Upphöra med konfigurationsinformation.](media/Discontinue-details-2.png)
   
 Du kan när som helst återställa konfigurationen till **Delad** eller justera annulleringsinformation. Om du delar en konfiguration anger du datumet **Stöds till** och all annan information relaterad till avvecklingen för att ange dina planer för framtida avveckling.
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9523492d766669e6c38579fba7b5ddd6b3d282fc
-ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
+ms.openlocfilehash: a74847b50512d2f712e5a9a5125e520afc732591
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049374"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344505"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Tilldela stegikoner och titlar för mobilappen för Warehouse Management
 
@@ -25,13 +25,13 @@ I det här avsnittet beskrivs hur du tilldelar stegikoner och titlar för nya el
 
 Följande illustrationer visar hur stegikoner och titlar visas i mobilappen för Warehouse Management.
 
-![Exempel på en stegikon och en stegrubrik i mobilappen för Warehouse Management](media/step-icon-example.png "Exempel på en stegikon och en stegrubrik i mobilappen för Warehouse Management")
+![Exempel på en stegikon och en stegrubrik i mobilappen för Warehouse Management.](media/step-icon-example.png "Exempel på en stegikon och en stegrubrik i mobilappen för Warehouse Management")
 
 ## <a name="turn-on-this-feature-in-your-system"></a>Aktivera funktionen i systemet
 
 Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 
-- **Modul:** *Lagerstyrning*
+- **Modul:** *Warehouse management*
 - **Funktionsnamn:** *användarinställningar, ikoner och stegrubriker för den nya distributionslagerappen*
 
 ## <a name="standard-step-ids-classes-and-icons"></a>Standardstegs-ID, klasser och ikoner
@@ -350,13 +350,13 @@ I det här exemplet förklaras hur du ställer in stegikoner och titlar för ett
 
 Illustrationen nedan visar detta uppgiftsflöde.
 
-![Uppgiftsflödesdiagram](media/step-icons-example-task-flow.png "Uppgiftsflödesdiagram")
+![Diagram för uppgiftsflöde.](media/step-icons-example-task-flow.png "Uppgiftsflödesdiagram")
 
 ### <a name="create-a-step-class-for-the-container-input-page"></a>Skapa en stegklass för inmatningssidan för behållare
 
 På inmatningssidan för behållare kan arbetaren skanna eller ange ett behållar-ID.
 
-![Inmatningssida för behållare](media/step-icons-example-container-input.png "Inmatningssida för behållare")
+![Inmatningssida för behållare.](media/step-icons-example-container-input.png "Inmatningssida för behållare")
 
 På behållarens inmatningssida är kontrollnamnet för inmatningsfältet `ContainerId`. Eftersom det här kontrollnamnet inte finns i [listan med steg-ID](#step-ids-classes), hittar du inte ett befintligt steg som baseras på det. Därför måste du skapa en stegklass som representerar steget. Här är ett exempel:
 
@@ -382,7 +382,7 @@ Om du vill tilldela en stegikon ställer du in `defaultStepIcon` till ett av de 
 
 På indatasidan för vikt kan arbetaren ange en vikt.
 
-![Viktinmatningssida](media/step-icons-example-weight-input.png "Viktinmatningssida")
+![Viktinmatningssida.](media/step-icons-example-weight-input.png "Viktinmatningssida")
 
 På viktinmatningssidan är kontrollnamnet för inmatningsfältet `Weight`, som finns i [listan med steg-ID](#step-ids-classes). Därför, om stegikonen och titeln som definieras i `WHSMobileAppStepWeight` klass är acceptabelt för dig, du behöver inte ändra någonting för detta steg.
 

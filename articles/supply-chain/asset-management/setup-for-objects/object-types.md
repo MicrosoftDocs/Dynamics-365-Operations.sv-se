@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b493c6993ebd466c153e999fa2592105b78d0f2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ba8151e6f6b53f53e8ab54821d86a371b3341775
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825720"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347174"
 ---
 # <a name="asset-types"></a>tillgångstyper
 
@@ -45,9 +45,9 @@ Först ställer du in de nödvändiga tillgångstyperna. Därefter skapar du de 
 7. Välj **Spara**.
 8. På snabbfliken **Underhållsjobbtyper** väljer du de underhållsjobbtyper som ska relateras till tillgångstypen.
 
-    - Om du vill välja en underhållsjobbtyp väljer du den i fältet **återstående underhållsjobbtyper** och väljer sedan högerpilen ![högerpilen](media/29-setup-for-objects.png) för att flytta den till avsnittet **valda underhållsjobbtyper**.
-    - Om du vill välja alla tillgängliga underhållsjobbtyper väljer du ![pilen vidarebefordra alla](media/30-setup-for-objects.png). Alla underhållsjobbtyper överförs från fältet **återstående underhållsjobbtyper** till fältet **valda underhållsjobbtyper**.
-    - Om du vill avbryta valet av underhållsjobbtyp markerar du fältet **Valda underhållsjobbtyper** och väljer sedan vänsterpil knappen ![vänsterpil knappen](media/31-setup-for-objects.png) för att flytta den till fältet **Återstående underhållsjobbtyper**.
+    - Om du vill välja en typ av underhållsjobb väljer du denna i fältet **Återstående underhållsjobbtyper** och sedan höger pilknapp ![Höger pilknapp.](media/29-setup-for-objects.png) för att flytta den till avsnittet **Valda typer för underhållsjobb**.
+    - Om du vill välja alla tillgängliga underhållsjobbtyper väljer du ![pilen Vidarebefordra alla](media/30-setup-for-objects.png) . Alla underhållsjobbtyper överförs från fältet **återstående underhållsjobbtyper** till fältet **valda underhållsjobbtyper**.
+    - Om du vill annullera valet av en underhållsjobbtyp väljer du denna i fältet **Valda underhållsjobbtyper** och sedan vänster pilknapp ![Vänster pilknapp.](media/31-setup-for-objects.png) för att flytta den till avsnittet **Återstående underhållsjobbtyper**.
 
 9. Du kan också välja räknare som ska vara relaterade till tillgångstypen. På snabbfliken **räknare** gör du dina val med hjälp av metoderna som beskrivs för underhållsjobbtyper i steg 8. Mer information om hur du ställer in räknare finns i [räknare](counters.md).
 10. Du kan också välja attributtyper som ska vara relaterade till tillgångstypen. På snabbfliken **attributtyper** gör du dina val med hjälp av metoderna som beskrivs för underhållsjobbtyper i steg 8. Om du vill skapa den önskade sekvensen av attributtyper väljer du en attributtyp de **valda attributtyper** och använder sedan uppåtpil och nedåtpil för att flytta den. Sekvensen av attributtyper visas på tillgångar som använder den här tillgångstypen. Mer information om tillgångsattribut finns i [underhåll attributtyper](../setup-for-functional-locations/specification-types.md).

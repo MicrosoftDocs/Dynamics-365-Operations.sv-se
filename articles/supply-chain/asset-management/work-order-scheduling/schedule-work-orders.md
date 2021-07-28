@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5f5cfdcb5e930d2dc5830ad7cd9c85c88b3d40f7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7fa0b6f315008e6af774470c775bd34106201b16
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813759"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347126"
 ---
 # <a name="schedule-work-orders"></a>Schemalägg arbetsorder
 
@@ -56,7 +56,7 @@ Endast arbetsorder med ett livscykeltillstånd för arbetsorder som tillåter pl
 
 *Exempel:* På bilden nedan genererar formeln som infogas i fältet **Förväntad start** tidsplanering av arbetsorder för alla arbetsorder med förväntat startdatum en vecka från och med nu och senare. Den här formeln kan vara användbar när du kör tidsplanering av arbetsorder löpande, men du vill vara säker på att de schemalagda arbetsorderna under de kommande 5-6 dagarna inte har tidsplanerats.
 
-![Figur 1](media/03-work-order-scheduling.png)
+![Figur 1.](media/03-work-order-scheduling.png)
 
 Arbetsordertypen som är relaterad till arbetsorder kan ställa in tidsplanering för en underhållsarbetare (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Arbetsordertyper** >  växlingsknappen **En underhållsarbetare** inställd på "Ja"). Detta innebär att om arbetsordertypen används på en arbetsorder, sätts växlingsknappen **En underhållsarbetare** automatiskt till "Ja" på informationssidan **Alla arbetsorder** > vyn **Sidhuvud** > snabbfliken **Tidsplanera**. Under tidsplaneringen av arbetsordern planeras sedan alla arbetsorderjobb som skapats på arbetsordern till samma underhållsarbetare. Om det behövs kan du redigera valet för växlingsknappen **En underhållsarbetare** i **Alla arbetsorder** för att möjliggöra planering av flera arbetare eller en arbetare för arbetsorderjobben.
 

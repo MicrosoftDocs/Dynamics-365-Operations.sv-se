@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5204fb80dcf3dc2342e9d37f18b9d4f587de1808
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e84f882f69fbc7fceae8a6e0332716a82830dfdc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754304"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344058"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Rapportdefinitioner i designer för ekonomiska rapporter
 
@@ -158,7 +158,7 @@ Den formatering som anges i raddefinitionen åsidosätter all formatering som an
 
 1. Öppna den raddefinition som ska ändras i Report Designer.
 2. Välj cellerna om du vill formatera. Håll ned CTRL-tangenten medan du väljer koderna om du vill välja mer än en cell.
-3. Klicka på verktygsfältsknappen av formatet som ska användas. För att exempelvis göra indrag på en rad väljer du raden och klickar sedan på **Öka indrag** ![Öka indrag](media/indent.gif "Öka indrag") i verktygsfältet.
+3. Klicka på verktygsfältsknappen av formatet som ska användas. För att exempelvis göra indrag på en rad väljer du raden och klickar sedan på **Öka indrag** ![Öka indrag](media/indent.gif "Öka indrag"). i verktygsfältet.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Justera kolumner medan du utformar rapporter
 

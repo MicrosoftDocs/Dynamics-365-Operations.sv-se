@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fa174bbb257379f6ce906dd21180bbcb19f8bc3f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 647060635813ad7e680ea88be76668818ff606d3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021137"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350364"
 ---
 # <a name="order-synchronization-error-related-to-the-default-payment-service"></a>Fel vid ordersynkronisering relaterad till standardbetalningstjänsten
 
@@ -32,9 +32,9 @@ Det här avsnittet innehåller felsökningsvägledning som kan hjälpa till att 
 
 När du synkroniserar en onlineorder visas följande felmeddelande: "Det måste finnas en standardbetalningstjänst för att bearbeta kreditkortstransaktioner."
 
-![Standardbetalningstjänstfel saknas](media/default-payment-method-error.jpg)
+![Standardfel för betalningstjänst saknas.](media/default-payment-method-error.jpg)
 
-## <a name="resolution"></a>Upplösning
+## <a name="resolution"></a>Lösning
 
 ### <a name="confirm-or-set-the-default-payment-service-in-commerce-headquarters"></a>Bekräfta eller ställ in standardbetalningstjänsten i Commerce-administration
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82bb9a09e6d302b0d453ceb5131da039769b58fb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1a70a9771d5f9c1acea9274b8454a23c8dd7c1ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745699"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343944"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurera hjälpfunktionen för Finance and Operations-appar
 
@@ -32,7 +32,7 @@ I det här avsnittet finns en översikt över komponenterna i hjälpsystemet fö
 
 Finance and Operations-appar innehåller begreppsmässiga översikter och andra ämnen som publiceras på [https://docs.microsoft.com/dynamics365](/dynamics365/)-webbplatsen. Du når detta innehåll från **Hjälp**-fönstret i produkten. Följande bild visar delarna i hjälpsystemet.
 
-[![Hjälparkitektur](./media/help-architecture.png)](./media/help-architecture.png)
+[![Hjälparkitektur.](./media/help-architecture.png)](./media/help-architecture.png)
 
 Hjälpsystemet i produkten hämtar artiklar från docs.microsoft.com och andra anslutna webbplatser. Det tar också med uppgiftsguider som lagras i BPM (affärsprocessmodelleraren) i Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -47,14 +47,14 @@ På sidan **Systemparametrar** kan systemadministratörer konfigurera åtkomst t
 > - Om du vill konfigurera Hjälp måste du vara inloggad på ett konto i samma klientorganisation där appen distribueras.
 > - Det går inte att ansluta till ett LCS-bibliotek från en instans av appen som körs på en virtuell hårddisk (VHD).
 
-[![Formulär för systemparametrar med hjälpinställningar](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![Formulär för systemparametrar med hjälpinställningar.](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 Om du vill konfigurera uppgiftsguider för en lösning följer du instruktionerna på sidan **Systemparametrar**.
 
 > [!IMPORTANT]
 > Första gången du öppnar fliken **Hjälp** måste du ansluta till Lifecycle Services. Se till att välja länken i mitten av formuläret, vänta på anslutningen, stäng dialogrutan och välj sedan **OK** för att komma till sidan **Systemparametrar**.
 >
-> [![Anslut till LCS](./media/connect-to-lcs-crop-1024x365.png "Anslut till LCS")](./media/connect-to-lcs-crop.png)
+> [![Anslut till LCS](./media/connect-to-lcs-crop-1024x365.png "Anslut till LCS."](./media/connect-to-lcs-crop.png)
 
 1. Välj Lifecycle Services-projektet att ansluta till.
 2. Välj BPM-biblioteken (inom det valda projektet) att hämta uppgiftsregistreringar från.

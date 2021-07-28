@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edc6da8a54de98696322ace67ada5dfe97af2024
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 1c8a6b4152215bc912d99f2f4c250defa75278c3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189954"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356937"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Lagerpåfyllnad med uttags-kanbans
 
@@ -35,7 +35,7 @@ Uttags-kanban kan användas för att flytta en kanban för ett enskilt objekt me
 
 I följande scenario visas pull-baserat påfyllningssystem där en pull-signal utlöser skapandet av ett kanban för att fylla på material för en produktionsprocess. 
 
-[![Pull-signalen utlöser skapandet av en kanban för att fylla på material för en produktionsprocess](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
+[![Pull-signalen utlöser skapandet av en kanban för att fylla på material för en produktionsprocess.](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
 
 1.  Uttags-kanban
 2.  "Från"- och "till"-kanbanplatser för arbete på lagerställe
@@ -72,7 +72,7 @@ Om avståndet mellan lagerställena och platsen för produktionsinleverans är l
 
 I följande scenario konfigureras överföringsaktiviteten för uttags-kanban att överföras mellan två platser på samma lagerställe. Överföringsaktiviteten för uttags-kanban ställs in så att den fylls i automatiskt. 
 
-[![Överföringsaktiviteten fylls i automatiskt när kanban-plockarbetet bearbetas](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
+[![Överföringsaktiviteten fylls i automatiskt när kanban-plockarbetet bearbetas.](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
 
 1.  Delat lagerställe för råmaterial och produktion
 2.  Lagerställen för råmaterial

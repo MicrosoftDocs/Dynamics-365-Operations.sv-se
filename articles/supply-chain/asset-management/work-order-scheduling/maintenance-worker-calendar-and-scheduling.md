@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e1abf029e6f72c1c6a827a00483bb34c4abcaec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3e5cc7d21a9993985d1ad1fc2684777ff7ceb138
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808146"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354142"
 ---
 # <a name="maintenance-worker-calendar-and-scheduling"></a>Underhållsarbetares kalender och planering
 
@@ -32,7 +32,7 @@ När du planerar arbetsorder skapar du ett schema för underhållsarbetare, verk
 
 På bilden nedan visas ett exempel på en underhållsarbetare som är relaterad till en resurs som använder arbetstidskalendern "Produktion".
 
-![Figur 1](media/01-work-order-scheduling.png)
+![Figur 1.](media/01-work-order-scheduling.png)
 
 Kalenderinställningar för verktyg och tillgångar behövs inte i samband med tidsplanering av arbetsorder. Antagandet är att verktyg och tillgångar är tillgängliga dygnet runt för underhållet.
 

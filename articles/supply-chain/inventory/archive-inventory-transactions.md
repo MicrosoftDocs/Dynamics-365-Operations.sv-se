@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 8b61e65d3a641a1e3d73192853c832d57ed17401
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 23da08f982639c9ba0ef847990979f73b96cac22
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021281"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345534"
 ---
 # <a name="archive-inventory-transactions"></a>Arkivera lagertransaktioner
 
@@ -64,7 +64,7 @@ Följ dessa steg för att arkivera inventeringstransaktioner.
 
     Sidan **Lagertransaktionsarkiv** visas och visar en lista med arkiverade processposter.
 
-    ![Sidan lagertransaktionsarkiv](media/archive-inventory-empty.png "Sidan lagertransaktionsarkiv")
+    ![Sidan Arkiv för lagertransaktion.](media/archive-inventory-empty.png "Sidan lagertransaktionsarkiv")
 
 1. I åtgärdsfönstret, välj **Lagertransaktionsarkiv** om du vill skapa ett lagertransaktionsarkiv.
 1. I dialogrutan **Lagertransaktionsarkiv** på snabbfliken **Parametrar** ange följande fält:
@@ -72,7 +72,7 @@ Följ dessa steg för att arkivera inventeringstransaktioner.
     - **Från datum i stängd redovisningsperiod** – Välj det tidigaste transaktionsdatumet som ska inkluderas i arkivet.
     - **Till datum i stängd redovisningsperiod** – Välj det senaste transaktionsdatumet som ska inkluderas i arkivet.
 
-    ![Dialogrutan lagertransaktionsarkiv](media/archive-inventory-dates.png "Dialogrutan lagertransaktionsarkiv")
+    ![Dialogrutan Arkiv för lagertransaktion.](media/archive-inventory-dates.png "Dialogrutan lagertransaktionsarkiv")
 
     > [!NOTE]
     > Endast perioder som uppfyller [kraven](#prerequisites) är tillgängliga för val.
@@ -87,7 +87,7 @@ Följ dessa steg för att arkivera inventeringstransaktioner.
 
 Sidan **lagertransaktionsarkiv** visar hela arkiveringshistoriken. Varje rad i rutnätet visar information som t.ex. datum då arkivet skapades, användaren som skapade det och dess status.
 
-![Arkiveringshistorik på sidan en lagertransaktionsarkiv](media/archive-inventory-full.png "Arkiveringshistorik på sidan en lagertransaktionsarkiv")
+![Arkiveringshistorik på sidan Arkiv för lagertransaktion.](media/archive-inventory-full.png "Arkiveringshistorik på sidan en lagertransaktionsarkiv")
 
 Välj ett av följande värden i listrutan högst upp på sidan för att filtrera de arkiv som visas i rutnätet:
 
@@ -109,7 +109,7 @@ Verktygsfältet ovanför rutnätet innehåller följande knappar som du använde
 
 - **Arkiverade transaktioner** – Visa fullständiga detaljer om det valda arkivet. Sidan **Arkiverade transaktioner** visar alla transaktioner i arkivet.
 
-    ![Sidan Arkiverade transaktioner](media/archive-inventory-transactions.png "Sidan Arkiverade transaktioner")
+    ![Sidan Arkiverade transaktioner.](media/archive-inventory-transactions.png "Sidan Arkiverade transaktioner")
 
     För att få mer information om en viss transaktion på sidan **Arkiverade transaktioner** markerar du den i rutnätet och väljer sedan **Information om arkiverade transaktioner**. Sidan **Information om arkiverade transaktioner** som visas kommer att visa information som redovisningsbokföring, relaterade redovisningsreferenser och ekonomiska dimensioner.
 

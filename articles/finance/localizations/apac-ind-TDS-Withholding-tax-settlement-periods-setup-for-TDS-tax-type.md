@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 9430bc1386f127d02b598d6cad1b53f66e0cf2ba
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 12ba639ccf670997d4f16325172aa351732a5722
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023585"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348919"
 ---
 # <a name="set-up-withholding-tax-settlement-periods-for-the-tds-tax-type"></a>Ställ in kvittningsperioder för källskatt för TDS-skattetyp
 
@@ -31,7 +31,7 @@ I det här avsnittet beskrivs hur du ställer in kvittningsperioder för kvittni
 
 1. Gå till **Skatt \> Indirekta skatter \> Källskatt \> Källskattekvittningsperioder**.
 
-    [![Sidan Källskattekvittningsperioder](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
+    [![Sidan Källskattekvittningsperioder.](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
 
 2. I fältet **Skattetyp** väljer du **TDS** för att konfigurera källskattekvittningsperioder för skattetypen TDS.
 3. Klicka på **Nytt** för att skapa en ny rad.
@@ -47,6 +47,6 @@ I det här avsnittet beskrivs hur du ställer in kvittningsperioder för kvittni
     > [!NOTE]
     > Om du vill köra den periodiska TDS-kvittningsprocessen går du till **Redovisning \> Periodisk \> Källskatt \> Betalning av källskatt**.
 
-    [![Sidan Betalning av källskatt](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
+    [![Sidan Betalning av källskatt.](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
 
 12. Stäng sidan.

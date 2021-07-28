@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 294c7bbb328c31c6c3fdc16a72267224d7c71b27
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dcac72a60eac6abb29a017eb4ce02a71dca572d3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809744"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344554"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO med fysiskt värde och markering
 
@@ -53,7 +53,7 @@ I det här exemplet markeras inte artikelmodellgruppen till att inkludera fysisk
 
 Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet för de ekonomiskt uppdaterade transaktionerna på 150,00 kronor. Följande illustration visar effekten av LIFO-lagermodellen på den här serien med transaktioner, när alternativet **Inkludera fysiskt värde** inte används. 
 
-![LIFO utan Inkludera fysiskt värde](./media/lifowithoutincludephysicalvalue.gif) 
+![LIFO utan Inkludera fysiskt värde.](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
 
@@ -89,7 +89,7 @@ Transaktion 6a justeras mot inleveranstransaktion 4b. Systemet kvittar inte dess
 
 I illustrationen visas effekten av den LIFO-lagermodellen på serien med transaktioner, när alternativet **Inkludera fysiskt värde** används. 
 
-![LIFO med Inkludera fysiskt värde](./media/lifowithincludephysicalvalue.gif) 
+![LIFO med Inkludera fysiskt värde.](./media/lifowithincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
 
@@ -133,7 +133,7 @@ Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av eko
 
 I illustrationen nedan visas hur den här serien med transaktioner påverkas av LIFO-lagermodellen när länkning mellan utleverans och inleverans används. 
 
-![LIFO med Markering](./media/lifowithmarking.gif) 
+![LIFO med markering.](./media/lifowithmarking.gif) 
 
 **Förklaringar till bilden**
 

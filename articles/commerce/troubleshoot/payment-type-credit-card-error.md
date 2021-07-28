@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 5be19949e9d1dbc43fdd3e6def119effa50a34d0
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 1d6813a642aefa59e20a7c77ddcf53ce7d3625eb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018420"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347354"
 ---
 # <a name="payment-type-must-be-credit-card-error-on-the-sales-order-page"></a>Betalningstypen måste vara kreditkortsfel på försäljningsordersidan
 
@@ -32,9 +32,9 @@ Det här avsnittet innehåller felsökningsvägledning som kan vara till hjälp 
 
 När du öppnar försäljningsordersidan efter att du synkroniserat en order visas följande felmeddelande: "Betalningstypen måste vara kreditkort, eftersom kreditkortsnumret har angetts."
 
-![Betalningstypen måste vara kreditkortsfel](media/payment-type-must-be-credit-card.jpg)
+![Betalningstypen måste vara kreditkort-fel.](media/payment-type-must-be-credit-card.jpg)
 
-## <a name="resolution"></a>Upplösning
+## <a name="resolution"></a>Lösning
 
 ### <a name="set-the-payment-type-in-commerce-headquarters"></a>Ställ in betalningstypen i Commerce-administration
 

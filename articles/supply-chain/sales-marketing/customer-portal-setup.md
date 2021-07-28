@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 5c4cad305e3d130b3283ca3424c84f60e2d13307
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 7d723e7468e42589b8b9a1ed3080c691ebc6bc8e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907825"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353924"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Installera, ställ in och uppdatera kundportalen
 
@@ -34,7 +34,7 @@ Om du vill implementera kundportalen måste du ha följande licenser:
 
 Kundportalen beror på Power Apps-portaler och dubbelskrivning, vilket visas i bilden nedan.
 
-![Kundportalberoenden](media/customer-portal-elements.png "Kundportalberoenden")
+![Kundportalberoenden.](media/customer-portal-elements.png "Kundportalberoenden")
 
 Till skillnad från andra funktioner från Supply Chain Management, kundportalmallen finns i Power Apps-portaler. Därför begränsas kundportalen av de funktioner som tillhandahålls av Power Apps-portaler och tabellerna i dubbelriktad skrivning.
 

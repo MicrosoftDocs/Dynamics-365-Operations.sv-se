@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22123eb7a46910a2bc68a85b57271cfa2f3eb41e
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 8d4d3ebed7cf3f006672454e086fc0f918f2418d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193816"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360674"
 ---
 # <a name="configure-account-structures"></a>Konfigurera kontostrukturer
 
@@ -65,7 +65,7 @@ Avsnittet **Segment** och **Information om tillåtna värden** ger en rutnätsli
 
 Avsnittet **Information om tillåtna värden** hjälper dig att skapa villkor med hjälp av **operatorer** som börjar med, mellan, omfattar, och många andra.
 
-[![Tillåta värden](./media/account.png)](./media/account.png) 
+[![Tillåta värden.](./media/account.png)](./media/account.png) 
 
 Tillåtna värden används som standard på en journal- eller redovisningspostsida när det inte finns några andra möjliga värden att välja enligt kontostrukturinställningarna.
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 9afa64df73aa17e7a15a0ee4f4529ac74bcd3c67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a1f85c100f1d062517c14d31a19838cc4af18f10
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750724"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346580"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Ställa in mappning för kolumnerna för försäljningsorderns status
 
@@ -100,7 +100,7 @@ Så här aktiverar du attribut **IsSOPIntegrationEnabled** följ dessa steg.
 1. I en webbläsare går du till `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Ersätt **\<test-name\>** med företagets länk till Sales.
 2. På den sida som är öppnad, sök efter **organizationid** och anteckna värdet.
 
-    ![Sök efter organizationid](media/sales-map-orgid.png)
+    ![Sök efter organizationid.](media/sales-map-orgid.png)
 
 3. Öppna webbläsarkonsolen i Sales och kör följande skript. Använd värdet **organizationid** från steg 2.
 
@@ -119,33 +119,33 @@ Så här aktiverar du attribut **IsSOPIntegrationEnabled** följ dessa steg.
     );
     ```
 
-    ![JavaScript-kod i webbläsarkonsol](media/sales-map-script.png)
+    ![JavaScript-kod i webbläsarkonsolen.](media/sales-map-script.png)
 
 4. Kontrollera att **IsSOPIntegrationEnabled** är inställt på **true**. Använd URL från steg 1 för att kontrollera värdet.
 
-    ![Ange IsSOPIntegrationEnabled till true](media/sales-map-integration-enabled.png)
+    ![Ange IsSOPIntegrationEnabled till "true".](media/sales-map-integration-enabled.png)
 
 Så här aktiverar du attribut **isIntegrationUser** följ dessa steg.
 
 1. I Sales, gå till **Inställning \> Anpassning \> Anpassa systemet**, välj **Användartabell** och öppna sedan **Formulär \> Användare**.
 
-    ![Öppna användarformuläret](media/sales-map-user.png)
+    ![Öppna användarformuläret.](media/sales-map-user.png)
 
 2. I Tillgängliga fält, hitta **Användarläge för integration** och dubbelklicka på den för att lägga till den i formuläret. Spara ändringarna.
 
-    ![Lägga till kolumnen användarläge för integration i formuläret](media/sales-map-field-explorer.png)
+    ![Lägga till kolumnen Användarläge för integrering i formuläret.](media/sales-map-field-explorer.png)
 
 3. I Sales, gå till **inställning \> säkerhet \> användare** och ändra vyn från **aktiverade användare** till **programanvändare**.
 
-    ![Ändra visningen av aktiverade användare till programanvändare](media/sales-map-enabled-users.png)
+    ![Ändra visningen från Aktiverade användare till Programanvändare.](media/sales-map-enabled-users.png)
 
 4. Välj de två posterna för **DualWrite IntegrationUser**.
 
-    ![Lista över programanvändare](media/sales-map-user-mode.png)
+    ![Lista över programanvändare.](media/sales-map-user-mode.png)
 
 5. Ändra värdet för kolumnen **användarläge för integration** till **Ja**.
 
-    ![Ändra värdet för kolumnen användarläge för integration](media/sales-map-user-mode-yes.png)
+    ![Ändra värdet för kolumnen Användarläge för integrering.](media/sales-map-user-mode-yes.png)
 
 Dina försäljningsorder är nu mappade.
 

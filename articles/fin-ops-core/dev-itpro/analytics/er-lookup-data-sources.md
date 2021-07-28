@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 131d14f1f1aa329bd71b1f8a4015192736bd8e44
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 682910350832e441ed13c716c0c18200a3b7865d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022585"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351083"
 ---
 # <a name="configure-lookup-data-sources-to-use-er-application-specific-parameters"></a>Konfigurera sökdatakällor att använda programspecifika parametrar för ER 
 
@@ -44,38 +44,38 @@ Du kan konfigurera följande typer av **Sökning**-datakällor beroende på vilk
 
 I följande bild visas hur en uppräkning av format kan konfigureras i provformatet för ER.
 
-   ![Visar en formatuppräkning som bas för den konfigurerade sökdatakällan](./media/er-lookup-data-sources-img1.gif)
+   ![Visar en formatuppräkning som bas för den konfigurerade sökdatakällan.](./media/er-lookup-data-sources-img1.gif)
 
 I följande bild visas de formatkomponenter som konfigurerats för att rapportera olika typer av skatter i ett annat avsnitt i en genererad rapport.
 
-   ![Visar formatavsnitt för att separat rapportera olika typer av skatter](./media/er-lookup-data-sources-img2.png)
+   ![Visar formatavsnitt för att rapportera olika typer av skatter separat.](./media/er-lookup-data-sources-img2.png)
 
 I följande bild visas hur ER Operations-designern tillåter att en datakälla av typen **Formatuppräkning\Sökning** läggs till.  Den tillagda datakällan konfigureras som att ett värde för `List of taxation levels`-formaträkning returneras.
 
-   ![Lägga till en ER-datakälla för uppräkningsformatet\Sökningstyp](./media/er-lookup-data-sources-img3.gif)
+   ![Lägga till en ER-datakälla för Formatuppräkning\Sökningstyp.](./media/er-lookup-data-sources-img3.gif)
 
 I följande bild visas hur den tillagda datakällan är konfigurerad att använda fältet **Kod** i postlistan **Model.Data.tax** tillhörande datakällan **Modell** som en parameter som måste anges för varje enskild konfigurerad regel.
 
-![Konfigurera parametrar för den tillagde datakällan för uppräkningsformat\Sökningstyp](./media/er-lookup-data-sources-img4.gif)
+![Konfigurera parametrar för den tillagde datakällan för Formatuppräkning\Sökningstyp.](./media/er-lookup-data-sources-img4.gif)
 
 Den tillagda `Model.Data.Tax`-datakällan konfigureras i syfte att ange en skattekod för varje konfigurerad regel, detta genom att få åtkomst till programtabellen **TaxTable**.
 
-   ![Granska sökdatakällan för enskilt företag tillhörande typen Formatuppräkning\Sökningstyp](./media/er-lookup-data-sources-img5.gif)
+   ![Granska sökdatakällan för enskilt företag tillhörande typen Formatuppräkning\Sökningstyp.](./media/er-lookup-data-sources-img5.gif)
 
 Du kan ställa in sökningsregler för det valda ER-formatet genom att använda det användargränssnitt som automatiskt anpassas efter strukturen för den konfigurerade datakällan. Detta användargränssnitt kräver för närvarande att du för varje regel anger det returnerade värdet som uppräkningsvärdet `List of taxation levels` för format, samt även skattekoden som en parameter.
 
-   ![Konfigurera regler för den konfigurerade datakällan](./media/er-lookup-data-sources-img6.gif)
+   ![Konfigurera regler för den konfigurerade datakällan.](./media/er-lookup-data-sources-img6.gif)
 
 I följande bild visas hur datakällan `Model.Data.Summary.LevelByLookup` för typen **Beräknat fält** kan konfigureras att anropa den konfigurerade datakällan **Sökning** som tillhandahåller erforderliga parametrar. För att bearbeta detta anrop vid körning går ER igenom listan med konfigurerade regler i den definierade sekvensen i syfte att hitta den första regel som uppfyller de angivna villkoren. I detta exempel är det regeln som innehåller skattekoden som matchar den angivna. Det innebär att den lämpligaste regeln hittas och att uppräkningsvärdet som konfigureras för den hittade regeln returneras av denna datakälla.
 
 > [!NOTE]
 > Ett undantag utlöses när ingen tillämplig regel hittas. Om du vill förhindra dessa undantag kan du konfigurera ytterligare regler i slutet av regellistan som hanterar fall där ett icke-konfigurerat värde eller inget värde anges. Använd alternativen **\*Ej tom*** och **\*Tom*** i enlighet därmed.  
 >
-> ![Lägg till en datakälla för att anropa den konfigurerade sökdatakällan](./media/er-lookup-data-sources-img7.png)
+> ![Lägg till en datakälla för att anropa den konfigurerade sökdatakällan.](./media/er-lookup-data-sources-img7.png)
 
 När du anger alternativet **Mellan företag** som **Ja** för den redigerbara sökdatakällan lägger du till en ny, erforderlig **Företag**-parameter i parameteruppsättningen i denna datakälla. Värdet för parametern **Företag** måste anges vid körning när sökdatakällan anropas. När företagskoden anges vid körning används de regler som konfigurerats för detta företag för att hitta den lämpligaste regeln, och motsvarande värde returneras. I följande bild visas hur du kan göra detta och hur uppsättningen av parametrar för den redigerbara datakällan ändras.
 
-   ![Granska sökningsdatakällan mellan företag tillhörande typen Formatuppräkning\Sökningstyp](./media/er-lookup-data-sources-img8.gif)
+   ![Granska sökningsdatakällan mellan företag tillhörande typen Formatuppräkning\Sökningstyp.](./media/er-lookup-data-sources-img8.gif)
 
 > [!NOTE]
 > Välj alla företag separat för att konfigurera regeluppsättningen för denna sökdatakälla för det redigerbara ER-formatet. Ett undantag avslutas vid körning när sökning mellan företag anropas med koden för det företag för vilket sökinställningen inte kunde slutföras.
@@ -84,7 +84,7 @@ När du anger alternativet **Mellan företag** som **Ja** för den redigerbara s
 
 Med start i version 10.0.19 finns de utökade funktionerna för datakällor för **Sökning** tillgängliga. När du anger alternativet **Utökat** som **Ja** för den redigerbara sökdatakällan omvandlas den konfigureras sökdatakällan till den strukturerade datakälla som ger ytterligare möjligheter att analysera den konfigurerade regeluppsättningen. Illustrationen nedan visar denna omvandling.
 
-   ![Granskning av strukturerad sökdatakälla för typen Formatuppräkning\Sökning](./media/er-lookup-data-sources-img9.gif)
+   ![Granskning av strukturerad sökdatakälla för typen Formatuppräkning\Sökning.](./media/er-lookup-data-sources-img9.gif)
 
 - Underartikeln **Sökning** har utformats som en funktion för att hitta den lämpligaste regeln från uppsättningen konfigurerbara regler baserat på den tillhandahållna uppsättningen parametrar.
 - Underartikeln **IsLookupResultSet** har utformats som en funktion för att acceptera det angivna värdet i datakällan för basräkning och returnera det *booleska* värdet **True** när uppsättningen regler innehåller minst en regel för vilken det angivna uppräkningsvärdet har konfigurerats som ett returnerat värde. Denna funktion returnerar det *booleska* värdet **False** när det inte finns några konfigurerade regler för att returnera det angivna uppräkningsvärdet.

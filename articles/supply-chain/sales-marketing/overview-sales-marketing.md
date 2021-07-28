@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 92303
+ms.custom:
+- "92303"
+- intro-internal
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42934a88065da015334455b6c37f57591611360f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 92077c0d8a9c9f3820171fd4ffd8aedb02f59602
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188135"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359871"
 ---
 # <a name="sales-and-marketing-overview"></a>Försäljning och marknadsföring – översikt
 
@@ -29,18 +31,18 @@ Du kan använda Försäljning och marknadsföring för att hämta, spara och anv
 
 ## <a name="marketing"></a>Marknadsföring
 
-Du använder marknadskampanjer och aktiviteter för att hitta och bygga relationer med potentiella kunder, så att de första interaktionerna kan utvecklas till försäljningsrelationer. Följande processflöde visar affärsprocessen för marknadsföring. [![Affärsprocess för marknadsföring](./media/marketing01.jpg)](./media/marketing01.jpg)
+Du använder marknadskampanjer och aktiviteter för att hitta och bygga relationer med potentiella kunder, så att de första interaktionerna kan utvecklas till försäljningsrelationer. Följande processflöde visar affärsprocessen för marknadsföring. [![Affärsprocess för marknadsföring.](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Relationer
 
-Inom försäljning och marknadsföring kan de första interaktionerna som du har med potentiella kunder uppstå i olika situationer. Du kanske exempelvis hittar en potentiell kund medan du deltar i en mässa eller kanske har ett möjligt lead med en kund efter att din organisationen har kört en massutskickskampanj. Det är mycket viktigt att du förstår flödet för en parts enhet innan denne blir en kund. Följande bild visar flödet för enhetsrelationer när en potentiell kund blir en verklig kund. [![SalesandMarketing01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
+Inom försäljning och marknadsföring kan de första interaktionerna som du har med potentiella kunder uppstå i olika situationer. Du kanske exempelvis hittar en potentiell kund medan du deltar i en mässa eller kanske har ett möjligt lead med en kund efter att din organisationen har kört en massutskickskampanj. Det är mycket viktigt att du förstår flödet för en parts enhet innan denne blir en kund. Följande bild visar flödet för enhetsrelationer när en potentiell kund blir en verklig kund. [![SalesandMarketing01.](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
 ### <a name="campaigns"></a>Kampanjer
 
 En kampanj riktar sig till kontakter för prospekt, leads, affärstillfällen och kunder som har valt att delta i kampanjen. I Supply Chain Management kan du skapa flera olika typer av kampanjer såsom telemarketing, E-postutskick och E-postkampanjer för att maximera din kundpotential. När kampanjen pågår och du får positiva svar kan du inleda försäljningsprocessen med de mottagare som har svarat positivt på kampanjen.
 
 ## <a name="sales"></a>Försäljning
-Du kan använda försäljningsfunktionen för att skapa offerter, mer- och korsförsäljning till nya och befintliga kunder, försäljningsorder och kundfakturor. Följande processflöde visar affärsprocessen för försäljning. [![Affärsprocess för försäljning](./media/sales01.jpg)](./media/sales01.jpg)
+Du kan använda försäljningsfunktionen för att skapa offerter, mer- och korsförsäljning till nya och befintliga kunder, försäljningsorder och kundfakturor. Följande processflöde visar affärsprocessen för försäljning. [![Affärsprocess för försäljning.](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Försäljningsofferter
 

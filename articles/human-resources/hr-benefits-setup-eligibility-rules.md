@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b4673631f9c7d2310d8bdb08e0b25027bc8dedf
-ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
+ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6093930"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351667"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurera berättiganderegler och alternativ
 
@@ -137,20 +137,20 @@ Du kan definiera regler som har flera kriterier. När du definierar flera kriter
 
 Regeln för **aktiva medarbetare** ovan består till exempel av följande kriterier. För att medarbetaren ska vara behörig enligt regeln **Aktiva medarbetare** måste medarbetaren vara anställd i den juridiska personen USMF *och* ha befattningstypen heltid.  
 
-![Kriterier inom en berättiganderegel](media/CriteriaWithinAnEligibilityRule.png) 
+![Kriterier inom en berättiganderegel.](media/CriteriaWithinAnEligibilityRule.png) 
  
 ### <a name="multiple-conditions-within-criteria"></a>Flera villkor inom kriterier
 
 Regler kan utvidgas ytterligare om du vill använda flera villkor inom ett enda kriterium. Medarbetaren måste uppfylla minst ett villkor för att vara behörig. Regeln för **aktiva medarbetare** kan utökas ytterligare för att inkludera medarbetare som också är deltidsanställda, baserat på exemplet ovan. Följden blir att medarbetaren nu måste vara en medarbetare i USMF *och* antingen heltids- eller deltids medarbetare.  
 
-![Flera villkor inom kriterier](media/MultipleConditionsWithinCriteria.png) 
+![Flera villkor inom kriterier.](media/MultipleConditionsWithinCriteria.png) 
  
 ### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Berättigandevillkor inom ett anpassat fältkriterium 
 På liknande sätt kan anpassade fält användas när du skapar berättiganderegler och arbetar på samma sätt. Du kanske till exempel vill erbjuda återbetalning på Internet till de Fargo- och Köpenhamn-medarbetare som arbetar hem, eftersom Internetkostnaderna är högre på dessa platser. Det gör du genom att skapa två anpassade fält: **Kontorsplats** (plocklista) och **Arbeta hemifrån** (kryssruta). Skapa sedan en regel som kallas **WFH-medarbetare**. Kriteriet för regeln är var **Kontorsplats = Fargo** eller **Köpenhamn** *och* där **Arbeta hemifrån = Ja**.
 
 De anpassade berättigandereglerna måste ställas in på det sätt som visas i bilden nedan. 
 
-![Berättigandevillkor inom ett anpassat fältkriterium](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+![Berättigandevillkor inom ett anpassat fältkriterium.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
 ## <a name="configure-bundles"></a>Konfigurera buntar
 

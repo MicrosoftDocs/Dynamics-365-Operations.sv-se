@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 567f102cfe78a92e2e6f1243fb531dd3366c9bf2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 699c285ba0f92df4ccc05790b813ff423c01b62a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792473"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353838"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Skapa och konfigurera utökade garantier
 
@@ -81,7 +81,7 @@ Följ de här stegen om du vill skapa en garantiartikel i Commerce.
 
     Om du till exempel vill ha en två års garanti ställer du in fältet **tidsenhet** på **År** och fältet **tidslängd** på **2**. Du kan också ställa in värdet för fältet **Tidsenhet** till **Månader** och fältet **Tidslängd** till **24**, som visas i bilden nedan.
 
-    ![Produktinformationssida för en garantiartikel](./media/ew-time-properties.png)
+    ![Produktinformationssida för en garantiartikel.](./media/ew-time-properties.png)
 
 1. Välj **Spara** för att spara garantiartikeln.
 1. Frisläpp garantiprodukten till företaget så att den kan säljas. För mer information, se [Ställ in butiksprodukter](set-up-retail-products.md).
@@ -94,7 +94,7 @@ Följ de här stegen om du vill skapa en garantiartikel i Commerce.
 
     I följande bild visas till exempel fältet **Bas för prisintervall** som anges till **Grundpris**, fältet **nedre gräns** anges till 500 $ och fältet **övre gräns** anges till 1 000 $.
     
-    ![Informationssida för frisläppt produkt för en garantiartikel](./media/ew-release-product-details.png)
+    ![Informationssida för frisläppt produkt för en garantiartikel.](./media/ew-release-product-details.png)
 
 1. Sortera garantiartikeln till den kanal där den ska säljas. Mer information finns i [Ställ in sortiment](set-up-assortments.md).
 
@@ -161,11 +161,11 @@ Två kassaåtgärder gör det möjligt för säljare att sälja garantiartiklar 
 
 I följande illustration visas ett exempel på ett kassaterminalfönster med en uppmaning att lägga till en garantiartikel för det aktuella inköpet av en artikel som kan vara berättigad.
 
-![Exempel på en fråga om du vill lägga till en garantiartikel för det aktuella inköpet](./media/ew-sell-warranty.png)
+![Exempel på en uppmaning att vill lägga till en garantiartikel för det aktuella inköpet.](./media/ew-sell-warranty.png)
 
 I följande illustration visas ett exempel på funktionen för att lägga till en garantiartikel för en motiverad artikel som tidigare har sålts.
 
-![Exempel på funktionen för att lägga till en garantiartikel för en tidigare såld artikel](./media/ew-add-warranty-existing.png)
+![Exempel på funktionen för att lägga till en garantiartikel för en tidigare såld och garantiberättigad artikel.](./media/ew-add-warranty-existing.png)
 
 ## <a name="process-warranty-transactions"></a>Bearbeta garantitransaktioner
 

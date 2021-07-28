@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 09c7504eda0d389738b9d13b73f33472dc8f5fe3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1d4aaa40ee0128a281fe76072e021774a52c9a9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804489"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352334"
 ---
 # <a name="payment-module"></a>Betalningsmodul
 
@@ -46,9 +46,9 @@ Adyen betalningskontakt stöder också stark kundautentisering (SCA). En del av 
 
 Följande bild visar ett exempel på moduler för presentkort, lojalitet och Adyen-betalning på en kassasida.
 
-![Exempel på moduler för presentkort, lojalitet och Adyen-betalningsmoduler på en kassasida](./media/ecommerce-payments.PNG)
+![Exempel på moduler för presentkort, lojalitet och Adyen-betalningsmoduler på en kassasida.](./media/ecommerce-payments.PNG)
 
-## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365-betalningsanslutning för PayPal
+## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365 Payment Connector för PayPal
 
 Från och med Commerce version 10.0.14 är betalningsmodulen även integrerad i Dynamics 365-betalningsanslutningen för PayPal. För mer information om hur du konfigurerar denna betalningsanslutning, se [Dynamics 365-betalningsanslutning för PayPal](paypal.md).
  
@@ -59,10 +59,10 @@ När betalningsmodulen är konfigurerad för att använda PayPal-betalningsanslu
 PayPal-betalningsanslutningen kräver ingen faktureringsadressmodul eftersom all faktureringsrelaterad information hanteras av PayPal inom dess iframe. Modulerna för leveransadress och -alternativ krävs dock.
 
 I bilden nedan visas ett exempel på två betalningsmoduler på en kassasida, en konfigurerad med Adyen-betalningsanslutningen och den andra med PayPal-betalningsanslutningen.
-![Exempel på moduler för Adyen- respektive PayPal-betalning på en kassasida](./media/ecommerce-paypal.png)
+![Exempel på moduler för Adyen- respektive PayPal-betalning på en kassasida.](./media/ecommerce-paypal.png)
 
 I bilden nedan visas ett exempel på den PayPal-iframe som åberopas med hjälp av PayPal-knappen. 
-![Exempel på Paypal-iframe på en kassasida](./media/ecommerce-paypal-iframe.png)
+![Exempel på Paypal-iframe på en kassasida.](./media/ecommerce-paypal-iframe.png)
 
 ## <a name="payment-module-properties"></a>Egenskaper för betalningsmodul
 
@@ -76,7 +76,7 @@ I bilden nedan visas ett exempel på den PayPal-iframe som åberopas med hjälp 
 |Är primär betalning|  **Sant** eller **falskt** | Om **True** kommer eventuella felmeddelanden att genereras via den primära betalningsanslutningen på kassasidan. Om både Adyen- och PayPal-betalningsanslutningarna har konfigurerats anger du Adyen som **True**, som lades till i Commerce version 10.0.14.|
 
 I bilden nedan visas ett exempel på värdet **Offerttyper som stöds** angivet som "PayPal" i konfigurationen av betalningsanslutning i Commerce-administrationen.
-![Exempel på offerttyper som stöds i Commerces-administrationen](./media/ecommerce-paymenttendertypes.png)
+![Exempel på offerttyper som stöds i Commerce-administrationen.](./media/ecommerce-paymenttendertypes.png)
 
 ## <a name="billing-address"></a>Faktureringsadress
 

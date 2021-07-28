@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bbe7749e6c8293ded933611d6f1084b89223302c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 447c5f580e5d925efbfeaabc3890e2d67f9688f5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790992"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344357"
 ---
 # <a name="set-up-assortments"></a>Ställa in sortiment
 
@@ -31,7 +31,7 @@ Denna artikeln beskriver vad ett sortiment är och förklarar hur du ställer in
 
 Ett sortiment är en samling relaterade produkter som du tilldelar en handelskanal, till exempel en fysisk butik eller en onlinebutik. Du använder sortiment för att identifiera de produkter som är tillgängliga i varje butik. Ett sortiment kan inkludera kategorier av produkter. Alla produkter som tilldelats den valda kategorin, ingår i sortimentet. Ett sortiment kan också ta med specifika produkter och specifika varianter av produkter. Om du ställer in ett sortiment, kan du tilldela tusentals produkter till dina kanaler samtidigt, i valfri kombination som din butik kräver. Du kan ställa in så många produktsortiment, som du behöver. Varje produkt kan inkluderas i ett eller flera sortiment, och varje produkt kan tilldelas en eller flera kanaler. Om du till exempel anger ett sortiment som innehåller en basuppsättning med produkter. Alla butiker tar emot sortimentet. Du definierar sedan ett annat sortiment som inkluderar en större sportutrustning. Endast dina större butiker får sortimentet. Följande diagram visar hur produkter kan tilldelas sortiment, och hur de sortimenten kan tilldelas kanaler.
 
-![Relationer för produktsortiment](./media/assortments_relationship.gif)
+![Relationer för produktsortiment.](./media/assortments_relationship.gif)
 
 ## <a name="prerequisites"></a>Förutsättningar
 

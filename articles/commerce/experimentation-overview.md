@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7e415bc0a4ced11c5bb8393fe5dfe03a5f7cdd6c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 658396e87b3007216f6fa11c6ad3923daeb8a67d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798997"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349338"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Experiment i Dynamics 365 Commerce
 Du kan använda experiment i Dynamics 365 Commerce för att validera hypoteser om hur effektiva dina näthandelssidor är och fatta beslut med datadriven säkerhet. Commerce har stöd för A/B-test på sidor, moduler och fragment och gör att du kan mäta effekterna av föreslagna ändringar på webbplatsen.
@@ -39,7 +39,7 @@ Du kan skapa, redigera och hantera metoder för sid- och innehållshantering som
 ## <a name="experimentation-lifecycle"></a>Livscykel för experiment
 Att ställa in ett experiment, skapa varianter och att köra ett experiment är en iterativ process. I diagrammet nedan visas experiment livscykeln i Commerce och tjänsten för tredje part. 
 
-[ ![Livscykel för experiment](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+[ ![Livscykel för experiment.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 Mer information om varje steg i experimentprocessen finns i följande avsnitt.
 - [Identifiera en hypotes och fastställa mätvärden för ett experiment](experimentation-identify.md)

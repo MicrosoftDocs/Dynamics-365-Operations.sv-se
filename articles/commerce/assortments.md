@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: 74df8ac27c2028582b8909db0a7260b9b0ed38f5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a81a779dd484d30397c89076d081413a72560f0b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797291"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348717"
 ---
 # <a name="assortment-management"></a>Sortimenthantering
 
@@ -35,27 +35,27 @@ Den övergripande produktblandningen för en kanal bestäms av det publicerade s
 
 I följande exempel konfigureras ett unikt sortiment för varje butik. I det här fallet är endast produkt 1 tillgänglig i butiken 1 och endast produkt 2 är tillgänglig i butik 2.
 
-![Varje produkt är tillgänglig i en butik](./media/Managing-assortments-figure1.png)
+![Varje produkt är tillgänglig i en och samma butik.](./media/Managing-assortments-figure1.png)
 
 För att göra produkt 2 tillgänglig i butik 1 lägger du till produkten sortimentet 1.
 
-![Produkt 2 läggs till i sortiment 1](./media/Managing-assortments-figure2.png)
+![Produkt 2 läggs till i sortiment 1.](./media/Managing-assortments-figure2.png)
 
 Alternativt kan du lägga till butik 1 sortiment 2.
 
-![Lagra 1 läggs till i sortiment 2](./media/Managing-assortments-figure3.png)
+![Butik 1 läggs till i sortiment 2.](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>Organisationshierarkier
 
 I situationer där flera kanaler delar samma produktsortiment kan du konfigurera sortimentet med hjälp av organisationshierarkin för handelssortiment. När du lägger till noder från hierarkin inkluderas alla kanaler i den noden och dess underordnade noder.
 
-![Organisationshierarki](./media/Managing-assortments-figure4.png)
+![Organisationshierarki.](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Produktkategorier
 
 På samma sätt på produktsidan kan du inkludera produktgrupper genom att använda produktkategorihierarkier. Du kan konfigurera sortiment genom att lägga till en eller flera kategorihierarkinoder. I det här fallet inkluderar sortimentet alla produkter i kategorinoden och de underordnade noderna.
 
-![Produktkategorier](./media/Managing-assortments-figure5.png)
+![Produktkategorier.](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Exkluderade produkter eller kategorier
 
@@ -64,7 +64,7 @@ Förutom att inkludera produkter eller kategorier i sortiment kan du använda al
 > [!NOTE]
 > Om en produkt är både inkluderad och exkluderad i ett eller flera sortiment per definition kommer produkten alltid att betraktas som exkluderad.
 
-![Exkluderad produkter ](./media/Managing-assortments-figure6.png)
+![Exkluderad produkt.](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Globala och frisläppta produkter
 

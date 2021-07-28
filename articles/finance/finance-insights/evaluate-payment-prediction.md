@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 014684595c7cd65383dc12d9eec2dd8ea7b8c20f
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 872f4cfd968b70cb8a2087822870dcc76e83e92b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186748"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349020"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Utvärdera den första förutsägelsemodellen för kundbetalning (förhandsversion)
 
@@ -33,32 +33,32 @@ I det här ämnet beskrivs hur du utvärderar en förutsägelsemodell när du ha
 
 På sidan **Parametrar för ekonomiinsikter** i Microsoft Dynamics 365 Finance visas länken **Förbättra modellens noggrannhet** bredvid noggrannhetspoängen.
 
-[![Länken Förbättra modellens noggrannhet](./media/prediction-model.png)](./media/prediction-model.png)
+[![Länken Förbättra modellens noggrannhet.](./media/prediction-model.png)](./media/prediction-model.png)
 
 Med den här länken kommer du till AI Builder, där du kan lära dig mer om den aktuella modellen och även vidta åtgärder för att förbättra den. Följande illustration visar den sida som öppnas.
 
-[![AI Builder](./media/what-to-predict.png)](./media/what-to-predict.png)
+[![AI Builder.](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 Den sida som öppnas visar följande information:
 
 - I avsnittet **Prestanda** ger modellens prestandapoäng ett perspektiv på modellens kvalitet. Mer information om den här poängen finns i [Förutsägelsemodellens prestanda](/ai-builder/prediction-performance) i dokumentationen för AI Builder.
 - Avsnittet **Mest inflytelserika data** visar hur viktiga olika indatatyper var för din modell. Du kan utvärdera den här listan och motsvarande procentsatser för att avgöra om informationen är överensstämmer med vad du känner till om ditt företag och din marknad.
 
-    [![Avsnitten Prestanda och Mest inflytelserika data för förutsägelsemodellen](./media/models.png)](./media/models.png)
+    [![Avsnitten Prestanda och Mest inflytelserika data för förutsägelsemodellen.](./media/models.png)](./media/models.png)
 
 - I avsnittet **Prestanda** väljer du **Visa information** för att få veta mer om poängen och andra överväganden. I bilden nedan visas information om att modellen använder mindre information än vad som rekommenderas. Därför har systemet genererat ett varningsmeddelande.
 
-    [![Varningar om modellens prestanda](./media/details.png)](./media/details.png)
+    [![Varningar om modellens prestanda.](./media/details.png)](./media/details.png)
 
 ## <a name="digging-deeper"></a>Gräva djupare
 
 Även om noggrannhet är en bra utgångspunkt för utvärdering av en modell, och prestandapoängen ger perspektiv, innehåller AI Builder mer detaljerade mått som du kan använda för utvärderingen. Om du vill hämta informationen väljer du ellips-knappen (**...**) i avsnittet **Prestanda** bredvid knappen **Använd modell**, och väljer sedan **Ladda ner detaljerade mått**.
 
-[![Kommandot Ladda ner detaljerade mått](./media/performance.png)](./media/performance.png)
+[![Kommandot Ladda ner detaljerade mått.](./media/performance.png)](./media/performance.png)
 
 Följande bild visar det format som du kan ladda ner data i.
 
-[![Format på nedladdade data](./media/data-format.png)](./media/data-format.png)
+[![Format på nedladdade data.](./media/data-format.png)](./media/data-format.png)
 
 För en djupare analys av resultaten är det en bra utgångspunkt att granska måttet "Sammanblandningsmatris". Här finns exempelvis de data som visas för det här måttet i föregående illustration.
 

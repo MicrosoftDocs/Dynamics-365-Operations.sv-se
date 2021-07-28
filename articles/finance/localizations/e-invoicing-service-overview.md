@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a6a8ea3fcad980dc02f489e07a7b21fe1c1b5a5a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c3a0cc24a77b29cedaa10ebb4d6e2ad2a4cbf629
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839990"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344768"
 ---
 # <a name="electronic-invoicing-overview"></a>Elektronisk fakturering – översikt
 
@@ -98,7 +100,7 @@ När Elektronisk fakturering installeras från LCS och de obligatoriska inställ
 
 Följande illustration visar hur data flödar till och från elektronisk fakturering.
 
-![Dataflöde för Elektronisk fakturering](media/e-invoicing-service-data-flow-diagram-overview.png)
+![Dataflöde för Elektronisk fakturering.](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Sekretesspolicy
 Om du aktiverar och använder elektronisk fakturering kan det krävas att begränsade data skickas, vilket inkluderar organisationens momsregistrerings-ID. Detta kommer att översändas till tredje parts byråer som har tillstånd av skattemyndigheten för att skicka elektroniska fakturor i fördefinierade format som krävs för integrering med den offentliga sektorns webbtjänster. Data som importeras från dessa externa system till denna Dynamics 365 onlinetjänst omfattas av vår [sekretesspolicy](https://go.microsoft.com/fwlink/?LinkId=512132). Mer information finns i sektionerna om sekretessmeddelanden i landsspecifik funktionsdokumentation.
