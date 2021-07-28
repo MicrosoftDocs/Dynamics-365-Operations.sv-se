@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9e64899e0bbdb5a9d8899e865de9ee32aae59382
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f5556195a1a787420061fbcaef5d97ac47823221
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751666"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359015"
 ---
 # <a name="generate-printable-fti-forms"></a>Skapa utskrivbara FTI-formulär
 
@@ -77,7 +77,7 @@ Om du vill generera FTI-formulär genom att använda ER-ramverket kan du tilldel
 3. Välj den dokumentnivå som ska specificera räckvidden av fakturor för bearbetning.
 4. Välj ER-format för den angivna dokumentnivån.
 
-![Skriv ut hanteringsinställningar](media/FTIbyGER-PMSetting.png)
+![Konfiguration för utskriftshantering.](media/FTIbyGER-PMSetting.png)
 
 > [!NOTE]
 > Endast ER-format som använder rotbeskrivningen **Fritextfaktura** med datamodellen **Kundfaktura** syns i fältet **Sökning av rapportformat** för valt format.
@@ -87,9 +87,9 @@ FTI-formulär skapas i ER-ramverket på samma sätt som SSRS-rapporter.
 
 Om du vill skapa FTI-formulär väljer du fakturor genom antingen intervall eller markering. 
 
-![Fakturaval](media/FTIbyGER-InvoiceSelection.png)
+![Fakturaval.](media/FTIbyGER-InvoiceSelection.png)
 
-![Fakturagranskning](media/FTIbyGER-InvoiceExcelPreview.png)
+![Fakturagranskning.](media/FTIbyGER-InvoiceExcelPreview.png)
 
 När du använder ER-format för att skriva ut FTI-formulär på det här sättet används förvalda ER-fildestinationer. Du kan inte ändra destinationen. Mer information om hur du konfigurerar ER-destinationer för ER-format finns i [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md).
 
@@ -101,9 +101,9 @@ Du kan även generera FTI-formulär när du bokför en FTI genom att aktivera **
 > - **Namn:** ERFormatDestinationKörningBehåll
 > - **Etikett:** Behåll formatmål för elektronisk rapportering vid körning
 
-![Destination för elektronisk rapportering](media/FTIbyGER-ERFileDestinationSetting.png)
+![Mål för elektronisk rapportering.](media/FTIbyGER-ERFileDestinationSetting.png)
 
-![Formatmål för elektronisk rapportering](media/FTIbyGER-ERFileDestinationUsage.png)
+![Formatmål för elektronisk rapportering.](media/FTIbyGER-ERFileDestinationUsage.png)
 
 ER-ramverket stöder för närvarande följande mål för skapade dokument:
 
@@ -128,7 +128,7 @@ Du kan hämta exempel på ER-konfigurationer och använda dessa som mall för di
 ### <a name="features-that-are-implemented-in-the-sample-er-format"></a>Funktioner som implementeras i ER-provformat
 I exempelkonfigurationen för ER-format användes en Excel-fil som mall för att skapa FTI-formulär.
 
-![Formatdesigner](media/FTIbyGER-ERFormat.png)
+![Formatdesigner.](media/FTIbyGER-ERFormat.png)
 
 Detta provformat för ER stöder för närvarande följande funktioner för att skapa FTI-formulär:
 
@@ -179,7 +179,7 @@ Förutom till det genererade fakturaformuläret kan giroöverföringsblanketter 
 - För den juridiska person som använder lands-/regionkontext för Finland och som har minst ett bankkonto markerat som **Girokonto** och **Streckkod för bank**. 
 - För en faktura som har markerats på korrekt sätt för associerad **Finsk** betalningsbilaga.
 
-![Giroblankett](media/FTIbyGER-GiroSlip.PNG)
+![Giroblankett.](media/FTIbyGER-GiroSlip.PNG)
 
 > [!NOTE]
 > ER-provformatet har konfigurerats för att skapa gireringsblanketter i separata kalkylblad som tillval.
@@ -194,7 +194,7 @@ Använd följande element för ER-provformatet för att konfigurera e-postmål:
 - Ämnestexten för e-post kan nås via följande ER-uttryck **Emailing.TxtToUse.Subject**.
 - Brödtexten för e-post kan nås via följande ER-uttryck **Emailing.TxtToUse.Body**.
 
-![Destinationsinställningar](media/FTIbyGER-ERFileDestinationSettingEmail.png)
+![Destinationsinställningar.](media/FTIbyGER-ERFileDestinationSettingEmail.png)
 
 Standardtexten i e-postens ämne och brödtext definieras i provformatet för ER. Språket beror på formatets etiketter. Denna standardtext används för e-post om ingen anpassad e-postmall för en organisation med fördefinierat ID **ERFTITMP** har lagts till.
 
@@ -203,9 +203,9 @@ Standardtexten i e-postens ämne och brödtext definieras i provformatet för ER
 
 Om organisationens e-postmall med de fördefinierat **ERFTITMP**-ID har lagts till för den juridiska person som du bearbetar fakturan för, kommer mallen för e-postens ämnesrad och brödtext att användas för att skapa e-postmeddelandet. 
 
-![Organisationens e-postmallar](media/FTIbyGER-EmailTemplate.png)
+![Organisationens e-postmallar.](media/FTIbyGER-EmailTemplate.png)
 
-![Överför e-postmall](media/FTIbyGER-EmailTemplateBody.png)
+![Överför e-postmall.](media/FTIbyGER-EmailTemplateBody.png)
 
 ER-uttrycket **Emailing.TxtToUse.Subject** för ER-provformatet konfigureras i syfte att ersätta eventuella förekomster av platshållare %1 med det faktura-ID som bearbetas.
 
@@ -218,7 +218,7 @@ Uttrycket **Emailing.TxtToUse.Body** för provformatet konfigureras för följan
 - ”%5” ersätts med jobbtiteln på företagets kontaktperson.
 - ”%6” ersätts med e-postadressen till företagets kontaktperson.
 
-![E-postadress](media/FTIbyGER-Email.PNG)
+![E-postmeddelande.](media/FTIbyGER-Email.PNG)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)

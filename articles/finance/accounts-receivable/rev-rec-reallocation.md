@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2d961cb4eedda6265b4acd8dbd6f82e8026373fa
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 37c3da576b79d3ae9f6983b5046343a7c8120de6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820579"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356135"
 ---
 # <a name="revenue-recognition-reallocation"></a>Omallokering vid intäktsredovisning
 
@@ -48,7 +48,7 @@ Eftersom omallokering kan göras på en försäljningsorder som är delvis eller
 
 Varje organisation måste bestämma om korrigeringen enbart ska uppdatera redovisningen eller om den även ska uppdatera kundreskontra. Det beslut som fattas avgör vilken lämplig inställning som ska anges i alternativet **Bokför fakturakorrigeringar i Kundreskontra** på fliken **Intäktsredovisning** på sidan **Redovisningsparametrar** (**Intäktsredovisning \> Inställningar \> Redovisningsparametrar**). Vilken inställning som ska väljas beror på scenariot. Mer information om möjliga scenarier finns i länkarna i avsnittet [Scenarier för omallokering](#scenarios-for-reallocation)senare i det här avsnittet.
 
-[![Fliken Intäktsredovisning på sidan Redovisningsparametrar](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
+[![Fliken Intäktsredovisning på sidan Redovisningsparametrar.](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
 Om alternativet **Bokför fakturakorrigeringar i Kundreskontra** är inställt på **Ja** leder omallokeringsprocessen till följande resultat:
 
@@ -76,21 +76,21 @@ Så som tidigare rapporterats kan du uppdatera enbart redovisningen, eller så k
 
 Du startar omallokeringsprocessen genom att välja **Allokera om pris med nya orderrader** på en försäljningsorder du behöver omallokera. Du kan också gå till **Intäktsredovisning \> Periodiska uppgifter \> Allokera om pris med nya orderrader** och sedan ange lämpliga filter, till exempel kundkontot.
 
-[![Sidan Allokera om pris med nya orderrader](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
+[![Sidan Allokera om pris med nya orderrader.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
 Det övre rutnätet på sidan **Allokera om pris med nya orderrader** har namnet **Försäljning**. Här visas försäljningsorder för kunden. Välj de försäljningsorder som ska allokeras om. Du kan inte välja projektförsäljningsorder eftersom projektförsäljningsorder inte kan allokeras om. Du kan heller inte välja försäljningsorder som redan har ett omallokerings-ID, eftersom andra typer av försäljningsorder än projektförsäljningsorder bara kan allokeras om en gång. Om en försäljningsorder har ett omallokerings-ID har den redan markerats för omallokering av en annan användare.
 
 Det nedre rutnätet på sidan har namnet **Rader**. När du har valt en eller flera försäljningsorder i rutnätet **Försäljning** visar rutnätet **Rader** försäljningsorderraderna. Välj de försäljningsorderrader som ska allokeras om. Om du bara har valt en försäljningsorder måste raderna i samma försäljningsorder allokeras om. Denna situation kan uppstå när en av försäljningsorderraderna har fakturerats tidigare, och sedan har en ny rad lagts till, eller när en befintlig rad har tagits bort eller annullerats. Om en rad har tagits bort visas den inte i rutnätet. Därför kan den inte väljas. Den beaktas dock fortfarande när omallokeringsprocessen körs.
 
-När du har valt försäljningsorderraderna använder du knapparna i åtgärdsfönstret enligt beskrivningen här:
+När du har valt försäljningsorderraderna använder du knapparna i åtgärdsrutan enligt beskrivningen här:
 
 - **Uppdatera omallokering** – Beräkna de nya intäktsprisbeloppen för de valda försäljningsorderraderna. Om en rad har tagits bort eller annullerats görs omallokeringen bara för de befintliga rader som du har valt. Följande bild visar ett exempel på försäljningsorderrader innan omallokeringen uppdateras.
 
-    [![Försäljningsorderrader innan omallokeringen uppdateras](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
+    [![Försäljningsorderrader innan omallokeringen uppdateras.](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
 
     De nya intäktsprisbeloppen visas i kolumnen **Omallokerat belopp** i rutnätet **Rader**. Vid den här punkten har omallokeringen bearbetats, men den har ännu inte beräknats. Följande bild visar ett exempel på försäljningsorderrader efter att omallokeringen uppdateras.
 
-    [![Försäljningsorderrader efter att omallokeringen uppdaterats](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
+    [![Försäljningsorderrader efter att omallokeringen uppdaterats.](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
 
 - **Bearbeta** – Bearbeta eller bokför de omallokerade intäktspriserna. När du har valt den här knappen går det inte att återföra omallokeringen. Om du inte valde **Uppdatera omallokering** innan du valde **Bearbeta** körs omallokeringen automatiskt.
 
@@ -100,7 +100,7 @@ När du har valt försäljningsorderraderna använder du knapparna i åtgärdsf�
 - **Förväntad verifikation** – Visa en förhandsgranskning av redovisningsposterna som har skapats för alla försäljningsorderrader som har fakturerats. Om inga rader har fakturerats visas ingenting. Om du inte valde **Uppdatera omallokering** innan du valde **Förväntad verifikation** körs omallokeringen automatiskt.
 - **Intäktsfördelning** – Öppna en sida som visar allokeringen av intäktspriset för alla valda rader. Du kan inte ändra någon information på sidan. Här visas de radbelopp som användes för att göra omallokeringen.
 
-    [![Radbelopp som har använts för omallokering](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
+    [![Radbelopp som har använts för omallokering.](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
 
 - **Återställ data för den valda kunden** – Om omallokeringsprocessen startats men inte slutförts kan du bara rensa data i omallokeringstabellen för den valda kunden. Du markerar till exempel flera försäljningsorderrader för omallokering, lämnar sidan öppen utan att välja **Bearbeta** och sedan uppnås sidans tidsgräns. I så fall förblir försäljningsorderraderna markerade och kan inte användas av en annan användare för att slutföra omallokeringsprocessen. Sidan kan till och med vara tom när den öppnas. I den här situationen kan knappen **Återställ data för den valda kunden** användas för att rensa obearbetade försäljningsorder så att en annan användare kan slutföra omallokeringsprocessen.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f38b01d94fd2efcce5de210f77124fdc24be6e39
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 50ace9a2f8f5fa39dc927e11f0acd707167ef126
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837907"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346236"
 ---
 # <a name="register-consumption"></a>Registrera förbrukning
 
@@ -54,7 +54,7 @@ I vissa fall kanske kan lägga till eller ta bort prognosrader på en arbetsorde
 
 På bilden nedan visas ett exempel på tim- och artikelregistreringar i en arbetsorder i **Arbetsorderjournaler**.
 
-![Figur 1](media/01-consumption.png)
+![Figur 1.](media/01-consumption.png)
 
 
 ## <a name="split-hours-on-work-orders-with-several-work-order-jobs"></a>Dela timmar på arbetsorder med flera arbetsorderjobb
@@ -73,13 +73,13 @@ Om en arbetsorder innehåller flera jobb för arbetsorder kan du registrera arbe
 
 6. Infoga antal arbetstimmar som ska delas i fältet **Timmar**.
 
-    ![Figur 2](media/02-consumption.png)
+    ![Figur 2.](media/02-consumption.png)
 
 7. Klicka på **OK**.
 
 *Exempel:* På bilden nedan visas journalrader för en arbetsorder som innehåller tre arbetsorderjobb. Den första raden, som innehåller tre arbetstimmar, har delats upp och en arbetstimme har registrerats för varje arbetsorderjobb. När de tre timregistreringsraderna har skapats, bestämmer du vad du ska göra med den ursprungliga timregistreringsraden (den första raden i exemplet). Du kan behålla den som den är eller ta bort den. 
 
-![Figur 3](media/03-consumption.png)
+![Figur 3.](media/03-consumption.png)
 
 ## <a name="financial-dimensions-on-consumption-registrations"></a>Ekonomiska dimensioner för förbrukningsregistreringar
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 678561856fbb5514ff954363a767091edac6dee2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 89237c830109e8cb304b2547230484f15b90d875
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794383"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351307"
 ---
 # <a name="manage-product-categories-and-products"></a>Hantera produktkategorier och produkter
 
@@ -35,17 +35,17 @@ Lägg märke till den förbättrade struktur för sidan **Produkthierarki (hande
 
 I den förbättrade produktkategoristrukturen separeras produktegenskaper logiskt baserat på deras tillämpbarhet inom en viss grupp i syfte att reflektera strukturen i informationen om den frisläppta produkten.
 
-![Fältgruppering baserat på egenskapens tillämpningsområde](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
+![Fältgruppering baserat på egenskapens tillämpningsområde.](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
 Du kan växla mellan att hantera egenskaper specifika för den juridiska personen över samtliga juridiska personer och att hantera dem för en specifik juridisk person.
 
 Om du vill hantera egenskaper i alla juridiska personer, välj **Visa för alla juridiska personer** (eller **Redigera för alla juridiska personer**).
 
-![Visa/redigera för alla juridiska personer](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+![Visa/redigera för alla juridiska personer.](media/ToggleBackToEditForSpecificLegalEntity.PNG)
 
 Om du vill hantera egenskaper för en viss juridisk person **Visa för en viss juridisk person** (eller **Redigera för en viss juridisk person**).
 
-![Visa/redigera för en viss juridisk person](media/ToggleToEditForAllLegalEntities.PNG)
+![Visa/redigera för en viss juridisk person.](media/ToggleToEditForAllLegalEntities.PNG)
 
 Dessutom, i den förbättrade produktkategoristrukturen kan en marknadsföringschef nu också definiera standardvärden för ytterligare en uppsättning produktegenskaper på en enskild kategorinivå. Sedan när produkter skapas ärver de standardvärden för sina produktegenskaper baserat på kopplingen av de här egenskaperna med en enskild kategori från produkthierarkin. Dessa ärvda produktegenskaper kan också ändras för respektive produkt så att dessa motsvarar individuella affärskrav.
 
@@ -53,7 +53,7 @@ Dessutom, i den förbättrade produktkategoristrukturen kan en marknadsföringsc
 
 Du kan använda den här nya förbättrade strukturen för produktegenskaper för att välja vilka uppdaterade produktegenskaper som måste skickas till associerade produkter. På sidan **Produkthierarki (handel)** på åtgärdsfönstret, välj **Kategori** och välj sedan **Uppdatera produkter** för att öppna dialogrutan **Uppdatera produkter**.
 
-![Dialogrutan Uppdatera produkter](media/NewUpdateProductsEnhancedView.PNG)
+![Dialogrutan Uppdatera produkter.](media/NewUpdateProductsEnhancedView.PNG)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

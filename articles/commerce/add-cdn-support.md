@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59277323e0995f59d3a451395a038fa3708274eb
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 85ca468fe6c440fb333b4c32f59f1d41eb89f4e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936840"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346838"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Lägga till stöd för nätverk för innehållsleverans
 
@@ -74,11 +74,11 @@ För att konfigurera en serverpool i Azure Front Door Service, följ dessa steg.
 
 I följande bild visas dialogrutan **Lägg till en serverpool** i Azure Front Door Service med serverpoolens värdnamn angivet.
 
-![Lägga till en dialogruta för en serverpool](./media/CDN_BackendPool.png)
+![Lägga till en dialogruta för en serverpool.](./media/CDN_BackendPool.png)
 
 I följande bild visar dialogrutan **Lägg till en serverpool** i Azure Front Door Service med standardvärden för belastningsutjämning.
 
-![Lägga till en dialogruta för en serverpool fortsatt](./media/CDN_BackendPool_2.png)
+![Lägga till en dialogruta för en serverpool (forts.)](./media/CDN_BackendPool_2.png)
 
 > [!NOTE]
 > Se till att du inaktiverar **hälsosonder** när du ställer in din egen Azure Front Door-tjänst för Commerce.
@@ -107,13 +107,13 @@ Om din domän är ny och inte är en befintlig aktiv domän kan du lägga till d
 
 I följande bild visas dialogrutan **CNAME-konfiguration** i Azure Front Door Service.
 
-![Dialogrutan CNAME-konfiguration](./media/CNAME_Configuration.png)
+![Dialogrutan CNAME-konfiguration.](./media/CNAME_Configuration.png)
 
 Du kan använda Azure Front Door Service för att hantera certifikatet, eller så kan du använda ditt eget certifikat för den anpassade domänen.
 
 I följande bild visas dialogrutan **anpassade domän-HTTPS** i Azure Front Door Service.
 
-![Dialogrutan anpassad domän-HTTPS](./media/Custom_Domain_HTTPS.png)
+![Dialogrutan HTTPS för anpassad domän.](./media/Custom_Domain_HTTPS.png)
 
 Detaljerad information om hur du lägger till en anpassad domän i din Azure Front Door Service finns i [lägga till en anpassad domän i din Front Door](/azure/frontdoor/front-door-custom-domain).
 

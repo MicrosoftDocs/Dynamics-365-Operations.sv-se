@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f0339f5ef5bf5655d0471394539aee56437bb26f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: d3fbcdfde48af0b14237ead22a4b94e73e5aa4df
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055662"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357153"
 ---
 # <a name="change-employee-self-service-workspace-name"></a>Ändra namn på arbetsytan för självbetjäning för medarbetare
 
@@ -37,7 +37,7 @@ Om du har frivilliga eller andra icke-anställda, kanske du vill ändra namnet p
 
 3. Under **Displaynamn**, välj **Självbetjäning**.
 
-   ![Ändra namn på arbetsytan för självbetjäning för självbetjäning](./media/hr-employee-self-service-workspace-name.png)
+   ![Ändra namn på arbetsytan för självbetjäning för medarbetare till Självbetjäning.](./media/hr-employee-self-service-workspace-name.png)
 
 4. Välj **Spara**.
 

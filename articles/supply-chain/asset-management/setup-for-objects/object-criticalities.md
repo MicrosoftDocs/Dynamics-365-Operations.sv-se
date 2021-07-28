@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb2da2d58b7f98fad80d0ea63bf4445ec4d08163
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: baf2c279a656bd67a0850ef9178e1bc984bb9b8b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808362"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351499"
 ---
 # <a name="asset-criticality-types"></a>Allvarlighetsgradtyper för tillgång
 
@@ -40,7 +40,7 @@ Om du vill ställa in allvarlighetsgrad kan du först skapa allvarlighetsgradtyp
 4. Ange ett namn för allvarlighetsgradtypen i fältet **Namn**.
 5. Ange en faktor i fältet **Faktor**. Den här faktorn används under beräkningen av arbetsorderplanering för att fastställa den allvarlighetsgradpost som ska användas. (Den post som har den högsta faktorn används alltid.) Den här inställningen är relevant om, som visas i följande illustration, allvarlighetsgradrader skapas som har samma allvarlighetsgradvärde.
 
-    ![Sidan Typer av allvarlighetsgrad](media/23-setup-for-objects.png)
+    ![Sidan Typer av allvarlighetsgrad.](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Ställ in allvarlighetsgrad för tillgång
 

@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6d8a1cb9619a863184460a74e472af3f06934b6
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 3b6b01053a043477521d7eb1a41bb9f6f51fc0e4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058570"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360578"
 ---
 # <a name="payroll-integration-api-introduction"></a>Introduktion till API för löneintegrering
 
@@ -26,7 +26,7 @@ ms.locfileid: "6058570"
 
 Detta dokument beskriver API för löneintregrering i Dynamics 365 Human Resources. Med API:t kan du effektivisera kompletta integreringar mellan Personal och associerade lönesystem. Den integrerade erfarenheten startar i Personal med medarbetarprofil, löne- och avdragsinformation och bidragsinformation. När du anställer en medarbetare och anger den nödvändiga profil- och löneinformationen i Personal hämtar lönesystemet denna information i samband med bearbetning av löner. Eventuella uppdateringar av medarbetar- eller löneinformationen kan också användas vid senare lönekörningar.
 
-![Löneintegreringsflöde](media/hr-admin-integration-payroll-api-introduction-flow.png)
+[![Löneintegreringsflöde.](media/hr-admin-integration-payroll-api-introduction-flow.png)](media/hr-admin-integration-payroll-api-introduction-flow-2.png#lightbox)
 
 För att aktivera integreringen lägger Personal till följande komponenter:
 
@@ -60,7 +60,7 @@ Information om hur du genererar virtuella register för API:et finns i [Konfigur
 
 Följande diagram visar relationer inom API:t. Flera typer har utländska nycklar till andra, befintliga entiteter i Personal som inte visas här. Detta dokument innehåller information om entiteter som är specifika för löneintegreringsscenarier. Det finns emellertid många andra entiteter i webb-API:t för Dataverse för Personal som också kan vara relevanta för din integrering. Vissa av dessa entiteter refereras till i relationer med sekundärnycklar eller navigeringsegenskaper.
 
-![API-datamodell för löneintegrering](media/hr-admin-payroll-api-data-model.png)
+[![API-datamodell för löneintegrering.](media/hr-admin-payroll-api-data-model.png)](media/hr-admin-payroll-api-data-model.png#lightbox)
 
 ## <a name="payroll-employee-and-related-entities"></a>Lönemedarbetare och relaterade entiteter
 
@@ -68,7 +68,8 @@ Enheter:
 
 - [Lönemedarbetare](hr-admin-integration-payroll-api-payroll-employee.md)
 - [Lönearbetarens adress](hr-admin-integration-payroll-api-payroll-worker-address.md)
-- [Kompensationsplan med fast lön](hr-admin-integration-ats-api-recruiting-request-education.md)
+- [Kompensationsplan med fast lön](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md)
+- [Löneplan för variabel kompensation](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md)
 - [Lönebefattningsjobb](hr-admin-integration-payroll-api-payroll-position-job.md)
 - [Lönebefattning](hr-admin-integration-payroll-api-payroll-position.md)
 

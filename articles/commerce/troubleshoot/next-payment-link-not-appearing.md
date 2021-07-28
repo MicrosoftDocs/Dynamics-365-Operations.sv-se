@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: af19a3abd78d543d82f7a8d017e2dc413115a6d8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 679c2453068695caca03ac9618573eba0686b863
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018444"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347330"
 ---
 # <a name="save-for-my-next-payment-option-doesnt-appear"></a>Spara för min nästa betalningsalternativ visas inte
 
@@ -34,9 +34,9 @@ Kryssrutan **Spara för nästa betalning** visas inte i avsnittet **Betalningsme
 
 Följande illustration visar ett exempel på en kassasida som innehåller kryssrutan **Spara för nästa betalning**.
 
-![Spara nästa betalningskryssruta i modulen Betalning](media/payment-module-save-payment.jpg)
+![Kryssrutan Spara till min nästa betalning i modulen Betalning.](media/payment-module-save-payment.jpg)
 
-## <a name="resolution"></a>Upplösning
+## <a name="resolution"></a>Lösning
 
 ### <a name="verify-that-the-dynamics-365-payment-connector-for-adyen-is-correctly-configured-in-commerce-headquarters"></a>Kontrollera att Dynamics 365 Payment Connector för Adyen är korrekt konfigurerat i Commerce-administration
 
@@ -46,7 +46,7 @@ Kontrollera att Dynamics 365 Payment Connector för Adyen är korrekt konfigurer
 1. Välj onlinebutik.
 1. Kontrollera att snabbflikarna **Betalningskonton** se till att fältet **Tillåt att spara betalningsinformation i näthandel** ange till **True**.
 
-![Tillåt att betalningsinformation sparas i fältet e-handel i Commerce-administration](media/payment-connector-save-payment.jpg)
+![Tillåt att betalningsinformation sparas i fältet e-handel i Commerce-administrationen.](media/payment-connector-save-payment.jpg)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

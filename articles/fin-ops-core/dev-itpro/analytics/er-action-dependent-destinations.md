@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7decdb1d759284c616ecf928c10f99098627472d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: e9c9143bdbab450b1793b15937d123607361add6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893588"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358679"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurera åtgärdsberoende ER-destinationer
 
@@ -69,11 +69,11 @@ Du kan till exempel använda ER-formatet **Fritextfaktura (Excel)** för att skr
 
 I följande bild visas hur du kan uppnå detta konfigurerar ER-destinationer som uppsättning individuella destinationsposter när varje post konfigureras för en enskild användaråtgärd:
 
-![Målsida för elektronisk rapportering med åtgärdsberoende målinställningar för ett ER-format när varje målpost konfigureras för en enskild användaråtgärd](./media/er-destination-action-dependent-01.png)
+![Målsida för elektronisk rapportering med åtgärdsberoende målinställningar för ett ER-format när varje målpost konfigureras för en enskild användaråtgärd.](./media/er-destination-action-dependent-01.png)
 
 I följande bild visas hur du kan uppnå detta konfigurerar ER-destinationer som uppsättning individuella destinationsposter när varje post konfigureras för en enskild destination:
 
-![Målsida för elektronisk rapportering med åtgärdsberoende målinställningar för ett ER-format när varje målpost konfigureras för en enskild användardestination](./media/er-destination-action-dependent-01a.png)
+![Målsida för elektronisk rapportering med åtgärdsberoende målinställningar för ett ER-format när varje målpost konfigureras för ett enskilt användarmål.](./media/er-destination-action-dependent-01a.png)
 
 > [!NOTE]
 > Om en åtgärdskod tillhandahålls för det körande ER-formatet, men inga destinationer har konfigurerats för den åtgärdskoden, kommer [standard](electronic-reporting-destinations.md#default-behavior) målbeteende tillämpas.
@@ -84,7 +84,7 @@ När ett ER-format körs, om användaråtgärder har tillhandahållits av använ
 
 Följande illustration visar ett exempel på dialogrutan **destinationer i elektroniskt rapporteringsformat** som visas när en fritextfaktura [bokförs](../../../finance/accounts-receivable/create-free-text-invoice-new.md) och ER-formatet **fritextfaktura invoice (Excel)** körs för att skapa dokumentet om åtgärden **skrivare** tillhandahölls och ER-destinationer konfigurerades för det här formatet som visas tidigare i detta ämne.
 
-![Dialogruta som ger möjlighet att ändra de initialt konfigurerade ER-destinationera för det körande ER-formatet](./media/er-destination-action-dependent-02.gif)
+![Dialogruta som ger möjlighet att ändra de initialt konfigurerade ER-målen för det ER-format som körs.](./media/er-destination-action-dependent-02.gif)
 
 > [!NOTE]
 > Om du konfigurerat ER-destinationer för flera komponenter i det körande ER-formatet, erbjuds ett alternativ separat för alla konfigurerade komponenter i ER-formatet.
@@ -103,7 +103,7 @@ Följ dessa steg för att verifiera den användaråtgärdskod som finns.
 6. På sidan **Konfiguration av felsökningsloggar**, filtrera ER-körloggarna för att hitta loggen för din ER-formatkörning.
 7. Granska loggposterna som måste innehålla den post som presenterar den angivna användaråtgärdskoden, om någon åtgärd har tillhandahållits för ER-formatkörningen.
 
-    ![Sidan Elektronisk rapporteringskörning loggar som innehåller information om användaråtgärdskoden som har angetts för den filtrerade körningen av ett ER-format.](./media/er-destination-action-dependent-03.png)
+    ![Sidan Körningsloggar för elektronisk rapportering som innehåller information om den användaråtgärdskod som har angetts för den filtrerade körningen av ett ER-format.](./media/er-destination-action-dependent-03.png)
 
 ## <a name=""></a><a name="reports-list-wave1">Lista över affärsdokument (cykel 1)</a>
 

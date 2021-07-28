@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 66fb9f2b50079b5eb4eb16da17b8a473d687d354
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 17316081501ab29aafac476d13947774ecbb61e5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054918"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346284"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Optimera frågor för virtuell Dataverse-tabell
 
@@ -50,13 +50,13 @@ Ett exempel där denna effekt kan komma att uppstå är i frågor som gäller en
 - **Tidsgräns för fråga**: Frågan kan överskrida tidsgränsen och returnera följande fel: "En token erhölls i syfte att anropa Finance and Operations, men Finance and Operations returnerade ett fel av typen InternalServerError."
 - **Oväntat fel**: Frågan kan komma att returnera feltypen 400 med följande meddelande: "Ett oväntat fel har inträffat."
 
-  ![Feltyp 400 på HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType400.png)
+  ![Feltyp 400 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
 - **Begränsning**: Frågan kan komma att överanvända serverresurser och drabbas av begränsningar. I det här fallet returnerar frågan följande felmeddelande: "En token anskaffades i syfte att anropa Finance and Operations, men Finance and Operations returnerade feltypen 429." Mer information om begränsning i Personal finns i [Frågor och avar om begränsningar](./hr-admin-integration-throttling-faq.md).
 
-  ![Feltyp 429 på HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType429.png)
+  ![Feltyp 429 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
-## <a name="resolution"></a>Upplösning
+## <a name="resolution"></a>Lösning
 
 ### <a name="limit-the-number-of-columns-included-in-your-data-query"></a>Begränsa antalet kolumner som ingår i datafrågan
 
@@ -96,7 +96,7 @@ Om du upplever något av ovannämnda tecken på sämre prestanda när du skapar 
 2. I fönstret **Hämta data** anger du **Common Data Service** i sökrutan, väljer kopplingen **Common Data Service** och sedan **Anslut**.
 3. I fältet **Server-URL** tillhörande fönstret Common Data Service anger du URI för din Dataverse-miljlö och sedan **OK**.
   
-   ![Ange URI för din Dataverse-miljö](./media/PowerBIDataverseURLSetup.png)
+   ![Ange URI för din Dataverse-miljö.](./media/PowerBIDataverseURLSetup.png)
   
 4. Expandera noden **Entiteter** i navigeringsfönstret.
 5. I sökrutan anger du **mshr_hcmworkerbaseentity** och väljer sedan entiteten.
@@ -113,7 +113,7 @@ Om du upplever något av ovannämnda tecken på sämre prestanda när du skapar 
    in
      selectedWorkerBaseEntityColumns
    ```
-   ![Uppdatera frågeställningen i Advanced Editor för Power Query-redigeraren](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
+   ![Uppdatera frågeställningen i Advanced Editor för Power Query-redigeraren.](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
 
 9. Välj **Klar**.
 
@@ -138,7 +138,7 @@ Om till exempel ett av datafälten som finns på en sida i programmet refererar 
 
 Du kan använda [Power Apps-övervakaren](/powerapps/maker/monitor-overview) i syfte att säkerställa att bara de kolumner du behöver inkluderas i frågeställningen med avsikt att hämta data till Power App. Du kan visa den URL som skapats för åtgärden getRows i syfte att se till att de kolumner du har valt för programmet blir de optimala för hämtning av data.
 
-![Använd Power Apps-övervakaren när du vill analysera åtgärden getData](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
+![Använd Power Apps-övervakaren när du vill analysera åtgärden getData.](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
 
 ### <a name="filtering-the-data-query"></a>Filtrera datafrågeställningen
 

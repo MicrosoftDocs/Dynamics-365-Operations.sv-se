@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 529f419a4e3e4e8807c6938fd2425ae01ce282f9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: dc883606b832dc75b28f6209b05c0e35a51036b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051819"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359687"
 ---
 # <a name="recruit-job-candidates"></a>Rekrytera jobbkandidater
 
@@ -61,13 +61,13 @@ Om din organisation har flera platser kan du lägga till dem så att de kan väl
 
 3. I fältet **Plats för rekryteringsbegäran** anger du platsens namn.
 
-   ![Lägg till en plats för rekryteringsbegäran](./media/hr-recruit-0a-add-location.png)
+   ![Lägg till en plats för rekryteringsbegäran.](./media/hr-recruit-0a-add-location.png)
 
 4. I **Beskrivning** anger du en beskrivning av platsen.
 
 5. Under **Plats**, välj **Lägg till**. Om popup-fönstret **Ny adress** visas anger du platsens adress.
 
-   ![Ange adress](./media/hr-recruit-0b-address.png)
+   ![Ange adress.](./media/hr-recruit-0b-address.png)
 
 6. Under **Kontaktuppgifter** anger du uppgifterna för platsens kontaktperson.
 
@@ -83,11 +83,11 @@ Chefer kan skicka in rekryteringsförfrågningar till Personal. Om du använder 
 
 3. Välj **Begär att rekrytera**.
 
-   ![Starta en rekryteringsbegäran](./media/hr-recruit-1-request-to-recruit.png)
+   ![Starta en rekryteringsbegäran.](./media/hr-recruit-1-request-to-recruit.png)
 
 4. Fyll i fälten **Beskrivning**, **Jobb** och **Uppskattat startdatum**.
 
-   ![Slutför rekryteringsbegäran](./media/hr-recruit-2-request-to-recruit.png)
+   ![Slutför rekryteringsbegäran.](./media/hr-recruit-2-request-to-recruit.png)
 
 5. Välj **Fortsätt**. Rekryteringsbegäran för din befattning visas.
 
@@ -95,7 +95,7 @@ Chefer kan skicka in rekryteringsförfrågningar till Personal. Om du använder 
 
 7. Under **Jobb** ändrar du informationen efter behov och väljer sedan **Skapa information från jobb**.
 
-   ![Skapa information från jobb](./media/hr-recruit-3-create-details-from-job.png)
+   ![Skapa information från jobb.](./media/hr-recruit-3-create-details-from-job.png)
 
    Resten av din rekryteringsbegäran fylls i med standardinformation för det jobb som du har angett.
 
@@ -103,13 +103,13 @@ Chefer kan skicka in rekryteringsförfrågningar till Personal. Om du använder 
 
 9. Under **Befattningar** väljer du **Lägg till** och sedan en befattning för den här rekryteringsbegäran.
 
-   ![Lägg till en befattning](./media/hr-recruit-4-select-position.png)
+   ![Lägg till en befattning.](./media/hr-recruit-4-select-position.png)
 
 10. Under **Färdigheter** väljer du **Lägg till** och sedan en färdighet.
 
 11. Under **Utbildningsmässiga krav** väljer du **Lägg till** och sedan värden från listrutorna **Utbildning** och **Utbildningsnivå**.
 
-   ![Lägg till utbildningsmässiga krav](./media/hr-recruit-5-select-educational-requirements.png)
+   ![Lägg till utbildningsmässiga krav.](./media/hr-recruit-5-select-educational-requirements.png)
 
 12. Under **Kommentar** lägger du till kommentarer efter behov.
 
@@ -117,7 +117,7 @@ Chefer kan skicka in rekryteringsförfrågningar till Personal. Om du använder 
 
 14. När din rekryteringsbegäran är slutförd och du är redo att starta rekryteringsprocessen väljer du **Aktivera** på menyraden.
 
-   ![Aktivera rekryteringsbegäran](./media/hr-recruit-6-activate-recruit-request.png)
+   ![Aktivera rekryteringsbegäran.](./media/hr-recruit-6-activate-recruit-request.png)
 
 15. Välj **Spara**.
 
@@ -131,7 +131,7 @@ Om du är chef och vill visa dina egna begäranden:
 
 3. Under fliken **Information om mitt team**, välj fliken **Rekryteringsförfrågningar**.
 
-   ![Välj fliken Rekryteringsförfrågningar](./media/hr-recruit-7-recruiting-requests.png)
+   ![Välj fliken Rekryteringsförfrågningar.](./media/hr-recruit-7-recruiting-requests.png)
 
 4. Om du vill visa eller redigera en rekryteringsbegäran väljer du den i rutnätet.
 
@@ -141,7 +141,7 @@ Om du är HR Pro och vill visa alla rekryteringsförfrågningar:
 
 2. Välj **Rekryteringsförfrågningar**.
 
-   ![Visa rekryteringsförfrågningar i Personalhantering](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
+   ![Visa rekryteringsförfrågningar i Personalhantering.](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
 
 3. Om du vill visa eller redigera en rekryteringsbegäran väljer du den i rutnätet.
 
@@ -155,7 +155,7 @@ Om din organisation har integrerats med ett annat program för att kunna hantera
 
 3. Under **Rekrytering** väljer du **Kandidater**.
 
-   ![Visa kandidater](./media/hr-recruit-9-candidates.png)
+   ![Visa kandidater.](./media/hr-recruit-9-candidates.png)
 
 4. Om du vill lägga till en kandidat väljer du **Ny**. Om du vill redigera en befintlig kandidat väljer du kandidaten från listan och väljer sedan **Redigera**. Kandidatprofilen visas.
 
@@ -163,7 +163,7 @@ Om din organisation har integrerats med ett annat program för att kunna hantera
 
 6. Under **Rekryteringsbegäran** väljer du en rekryteringsbegäran som kandidaten ska kopplas till. Fyll sedan i fälten **Uppskattat startdatum**, **Anställande chef**, **Befattning** och **Beskrivning**.
 
-   ![Länka till rekryteringsbegäran](./media/hr-recruit-10-link-to-recruiting-request.png)
+   ![Länka till rekryteringsbegäran.](./media/hr-recruit-10-link-to-recruiting-request.png)
 
 7. Fyll i all information i följande områden som du vill inkludera i kandidatens post:
    - **Kommentarer**
@@ -182,11 +182,11 @@ När du är redo att anställa en kandidat följer du den här proceduren för a
 
 1. I kandidatformuläret väljer du **Anställ**.
 
-   ![Anställa en kandidat](./media/hr-recruit-11-hire.png)
+   ![Anställa en kandidat.](./media/hr-recruit-11-hire.png)
 
 2. I formuläret **Anställa ny arbetstagare**, under **Detaljer**, fyller du i alla fält.
 
-   ![Ange ny anställningsinformation](./media/hr-recruit-12-hire-new-worker.png)
+   ![Ange ny anställningsinformation.](./media/hr-recruit-12-hire-new-worker.png)
 
 3. Under **Befattningsdetaljer** verifierar och ändrar du information efter behov.
 
@@ -203,7 +203,7 @@ Om du väljer att inte anställa en kandidat följer du den här proceduren för
 
 1. I kandidatformuläret väljer du **Anställ inte**.
 
-   ![Anställ inte kandidat](./media/hr-recruit-13-do-not-hire.png)
+   ![Anställ inte kandidat.](./media/hr-recruit-13-do-not-hire.png)
 
 2. Välj en **orsakskod** och ta med eventuella kommentarer.
 
@@ -215,7 +215,7 @@ Vid behov kan du avvisa en kandidat när du har anställt den. En kandidat kan t
 
 - I kandidatformuläret väljer du **Avvisa kandidat**.
 
-  ![Avfärda kandidat](./media/hr-recruit-14-dismiss-candidate.png)
+  ![Avfärda kandidat.](./media/hr-recruit-14-dismiss-candidate.png)
 
 ## <a name="see-also"></a>Se även
 

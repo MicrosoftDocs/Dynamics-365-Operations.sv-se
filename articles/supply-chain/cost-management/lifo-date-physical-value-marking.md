@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6a9f21c6c329ef37d515fa0fbdaca57b4f3be0a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 744111a28256bb737246605ca8a259ff5a3d2b5d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821547"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344578"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-datum med fysiskt värde och markering
 
@@ -55,7 +55,7 @@ I det här exemplet markeras inte artikelmodellgruppen till att inkludera fysisk
 
 Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet för de ekonomiskt uppdaterade transaktionerna på 150,00 kronor. 
 
-I illustrationen visas effekten av lagermodellen LIFO-data på serien med transaktioner, när alternativet **Inkludera fysiskt värde** inte används. ![LIFO-datum med Inkludera fysiskt värde](./media/lifodatewithoutincludephysicalvalue.gif) 
+I illustrationen visas effekten av lagermodellen LIFO-data på serien med transaktioner, när alternativet **Inkludera fysiskt värde** inte används. ![LIFO-datum med Inkludera fysiskt värde.](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
 
@@ -90,7 +90,7 @@ Illustrationen som följer visar dessa transaktioner:
 
 Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet för de ekonomiskt uppdaterade transaktionerna på 200,00 kronor. 
 
-I illustrationen visas effekten av lagermodellen LIFO på serien med transaktioner, när alternativet **Inkludera fysiskt värde** används. ![LIFO-datum med Inkludera fysiskt värde](./media/lifodatewithincludephysicalvalue.gif) 
+I illustrationen visas effekten av lagermodellen LIFO på serien med transaktioner, när alternativet **Inkludera fysiskt värde** används. ![LIFO-datum med Inkludera fysiskt värde.](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
 
@@ -136,7 +136,7 @@ Illustrationen som följer visar dessa transaktioner:
 
 Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 275,00 kronor. 
 
-I illustrationen visas effekten av lagermodellen LIFO på serien med transaktioner, när markering mellan inleveranser och utleveranser används. ![LIFO-datum med Markering](./media/lifodatewithmarking.gif) 
+I illustrationen visas effekten av lagermodellen LIFO på serien med transaktioner, när markering mellan inleveranser och utleveranser används. ![LIFO-datum med markering.](./media/lifodatewithmarking.gif) 
 
 **Förklaringar till bilden**
 

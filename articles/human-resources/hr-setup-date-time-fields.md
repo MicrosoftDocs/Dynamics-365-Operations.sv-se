@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b7e5726f7e4beea1584b9a8e142212531ba1db56
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6e87781762112955902d8a5807092a842f53f6af
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051747"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356570"
 ---
 # <a name="understand-date-and-time-fields"></a>Förstå Datum- och tid-fält
 
@@ -36,13 +36,13 @@ ms.locfileid: "6051747"
 
 När data visas i ett **datum- och tidsfält** justerar personal datum och tid baserat på användarens tidszon i formuläret **Användaralternativ** (**Gemensamma > Inställningar > Användaralternativ**). Datum- och tidsinformationen du anger i fältet kanske inte är densamma som den information som skrivs till databasen.
 
-[![Formuläret Användaralternativ](./media/useroptionsform.png)](./media/useroptionsform.png)
+[![Formuläret Användaralternativ.](./media/useroptionsform.png)](./media/useroptionsform.png)
 
 ## <a name="understanding-date-and-time-fields-in-forms"></a>Förstå Datum och tidsfält i formulär 
 
 Den data för **Datum och tidsfält** som visas på skärmen är inte desamma som de data som lagras i databasen om användarens tidszon inte är inställd på UTC-tid (Coordinated Universal Time). Data i **Datum- och tidsfält** lagras alltid som UTC.
 
-[![Medarbetarformulär UTC](./media/worker-form.png)](./media/worker-form.png)
+[![UTC-formulär för medarbetare.](./media/worker-form.png)](./media/worker-form.png)
 
 ## <a name="understand-date-and-time-fields-in-the-database"></a>Förstå Datum och tidsfält i databasen 
 
@@ -52,7 +52,7 @@ I exemplet ovan är starttiden en tidpunkt, inte ett särskilt datum. Genom att 
   
 I exemplet nedan blir medarbetarens anställning 000724 aktiva samtidigt oavsett tidszon. Medarbetaren aktiveras 04/30/2019 i GMT-zonen, som är samma som 05/01/2019 i GMT +12:00 tidszon. Båda refererar till samma tidpunkt och inte ett särskilt datum. 
 
-[![Medarbetarformulär GMT](./media/worker-form2.png)](./media/worker-form2.png)
+[![GMT-formulär för medarbetare.](./media/worker-form2.png)](./media/worker-form2.png)
 
 ## <a name="date-and-time-data-in-data-management-framework-excel-dataverse-and-power-bi"></a>Datum- och tidsdata i Data Management Framework, Excel Dataverse och Power BI 
 
@@ -68,27 +68,27 @@ När du använder externa källor som DMF för att visa eller redigera data är 
 
 **Personal med användarens tidszon inställd på UTC**
 
-[![Medarbetarformulär inställt på UTC](./media/worker-form3.png)](./media/worker-form3.png)
+[![Medarbetarformulär inställt på UTC.](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Personal med användarens tidszon inställd på GMT +12:00** 
 
-[![Medarbetarformulär inställt på GMT](./media/worker-form4.png)](./media/worker-form4.png)
+[![Medarbetarformulär inställt på GMT.](./media/worker-form4.png)](./media/worker-form4.png)
 
 **Excel via OData**
 
-[![Excel via OData](./media/Excelviaodata.png)](./media/Excelviaodata.png)
+[![Excel via OData.](./media/Excelviaodata.png)](./media/Excelviaodata.png)
 
 **DMF-mellanlagring**
 
-[![DMF-mellanlagring](./media/DMFStaging.png)](./media/DMFStaging.png)
+[![DMF-mellanlagring.](./media/DMFStaging.png)](./media/DMFStaging.png)
 
 **DMF-export**
 
-[![DMF Export](./media/DMFexport.png)](./media/DMFexport.png)
+[![DMF-export.](./media/DMFexport.png)](./media/DMFexport.png)
 
 **Excel via Dataverse**
 
-[![Excel via Dataverse](./media/ExcelCDS.png)](./media/ExcelCDS.png)
+[![Excel via Dataverse.](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
 ## <a name="see-also"></a>Se även
 

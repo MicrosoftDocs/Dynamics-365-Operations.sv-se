@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 06b5721c423330b8840bb546bdb144c3189c25bb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c350e6d6bfd4e699c55a4c0a57695b1b718b7167
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795391"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357772"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>Aktivera rekommendationer för "köp liknande produkter"
 
@@ -68,7 +68,7 @@ Gör så här om du vill aktivera rekommendationer funktionen "köp liknande pro
 
 I följande bild visas funktionen **köp liknande produkter** på sidan **Funktionshantering** i Commerce-administration.
 
-![Funktionen handla liknande utseende på sidan funktionshantering i Commerce-administration](./media/enableshopsimilarlooks.png)
+![Funktionen Köp liknande produkter på sidan Funktionshantering i Commerce-administrationen.](./media/enableshopsimilarlooks.png)
 
 När föregående uppgifter har slutförts förbättras kassaterminaler automatiskt med en panel för **köp liknande produkter**. Genom att välja **Se mer** användare av kassaterminal kan tas till en dedikerad sida för "köp liknande produkter" som kan filtreras ytterligare.
 
@@ -88,7 +88,7 @@ Lägg till en knapp för **Köp liknande produkter** till en PDP genom att anvä
 
 Bilden nedan visar kryssrutan **Aktivera länken köp liknande produkter** och knappen **köp liknande produkter** på en exempel PDP i webbplatsskaparen.
 
-![Aktivera länken köp liknande produkter och knappen köp liknande produkter på en PDP i webbplatsskaparen.](./media/SSLecomtooling.png)
+![Aktivera kryssrutan för länken Sök liknande produkter och knappen Köp liknande produkter på en PDP i webbplatsskaparen.](./media/SSLecomtooling.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

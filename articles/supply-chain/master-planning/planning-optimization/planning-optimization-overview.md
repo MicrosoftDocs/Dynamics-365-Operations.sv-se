@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 5ecfa8ac4db050ee1e38f3b420d81beba19b9409
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9b55a48847e9c6201e7a93a2fb5d6622b581d785
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812965"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354723"
 ---
 # <a name="planning-optimization-overview"></a>Rådgivning om optimering – översikt
 
@@ -33,7 +33,7 @@ Om du vill använda planeringsoptimering måste du installera tillägget planeri
 
 Följande illustration visar fördelen med att använda planeringsoptimering under kontorstid.
 
-![Fördelar med att använda planeringsoptimering under kontorstid](media/PlanningOptimization1.png)
+![Fördelar med att använda planeringsoptimering under kontorstid.](media/PlanningOptimization1.png)
 
 ## <a name="improved-performance"></a>Förbättrad prestanda
 
@@ -62,11 +62,11 @@ Om tillägget för planeringsoptimering avinstalleras tas alla relaterade data i
 
 Illustrationen som följer visar dataflöde.
 
-![Dataflöde för återskapande körs](media/PlanningOptimization2.png)
+![Dataflöde för återskapandekörningar.](media/PlanningOptimization2.png)
 
 ## <a name="related-resources"></a>Relaterade resurser
 
-[Kom igång med planeringsoptimering](get-started.md)
+[Kom i gång med planeringsoptimering](get-started.md)
 
 [Planera analys av optimeringsanpassning](planning-optimization-fit-analysis.md)
 

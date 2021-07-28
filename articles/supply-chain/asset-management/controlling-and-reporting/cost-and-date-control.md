@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 4fd08d9eeb9bb6ac9e3c19ff3c8592086c050182
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6016165"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354965"
 ---
 # <a name="cost-and-date-control"></a>Kostnads- och datumkontroll
 
@@ -58,7 +58,7 @@ De beräkningar som görs för tillgångar, funktionsplatser och arbetsorder är
 
     I bilden nedan visas ett exempel på dialogrutan **Kostnadskontroll för tillgång**.
 
-    ![Dialogrutan kostnadskontroll för tillgång](media/01-controlling-and-reporting.png)
+    ![Dialogrutan Kostnadskontroll för tillgång.](media/01-controlling-and-reporting.png)
 
 10. På sidan **Kostnadskontroll för tillgång**, välj knapparna **Gruppera efter** för att visa den obligatoriska detaljnivån för beräkningen. De valda knapparna **Gruppera efter** markeras. Klicka på en knapp för att aktivera och inaktivera den.
 
@@ -71,7 +71,7 @@ I skärmbilden nedan visas ett exempel på beräkningsresultat i **Kostnadskontr
 - I fältet **Öppen utfäst kostnad** visas utfästelser som ska betalas för artiklar, timmar och tjänster som du har beställt eller tagit emot men ännu inte betalt för. 
 - **Faktisk kostnad** fältet visar relaterade kostnader efter att alla förbrukningsregistreringar har bokförts.
 
-![Exempel på beräkningsresultat i Kostnadskontroll för tillgång](media/02-controlling-and-reporting.png)
+![Exempel på beräkningsresultat i Kostnadskontroll för tillgång.](media/02-controlling-and-reporting.png)
 
 Ett annat sätt att göra en kostnadsberäkning är att använda flera tillgångar i **Alla tillgångar** eller **Aktiva tillgångar**. Klicka sedan på knappen **Kostnadskontroll** på fliken **Allmänt**. I dialogrutan **Kostnadskontroll för tillgång** infogas de valda tillgångarna automatiskt i fältet **Tillgång** på snabbfliken **Poster som ska ingå**. Klicka på **OK** och en kostnadsberäkning för valda tillgångar visas. Samma procedur kan utföras för funktionsplatser i **Alla funktionsplatser** eller **Aktiva funktionsplatser**, och för arbetsorder i **Alla arbetsorder** eller **Aktiva arbetsorder**.
 
@@ -99,7 +99,7 @@ I bildskärmen nedan visas ett exempel på beräkningsresultat i **Datumkontroll
 - Fältet **Genomsnittlig slutfördröjning** visar skillnaden i dagar mellan det schemalagda slutdatumet för en arbetsorder jämfört med faktiskt slutdatum. Om till exempel det faktiska slutdatumet infaller tre dagar efter det schemalagda slutdatumet visas "3" i det här fältet.  
 - I fälten **Förekomster** visas antalet gånger avvikelser uppträder i relation till schemalagt och faktiskt startdatum, samt schemalagt och faktiskt slutdatum på arbetsordern.
 
-![Exempel på beräkningsresultat i Datumkontroll för arbetsorder](media/03-controlling-and-reporting.png)
+![Exempel på beräkningsresultat i Datumkontroll för arbetsorder.](media/03-controlling-and-reporting.png)
 
 
 

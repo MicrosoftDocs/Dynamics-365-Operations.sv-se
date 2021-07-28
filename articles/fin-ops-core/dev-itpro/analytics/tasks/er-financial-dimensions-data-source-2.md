@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1e6f5ffbebdfcd9f945e6237904d80e8734b0220
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 15f564ec0b4639ba7a27c6f3f989304c71695ee4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752446"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356353"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>"ER Använd ekonomiska dimensioner som en datakälla (Del 2 - Modellmappning)"
 
@@ -56,14 +56,14 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 21. Välj Yes i fältet Ask for main account.
     * Ange "Ask for main account" som Yes om du vill låta användare välja huvudkontot som en del i listan över dimensioner.   Om No kommer huvudkontot inte att inkluderas i listan över dimensioner, och alternativet "Is main account mandatory" aktiveras. Om ”Is main account mandatory" anges som Yes, inkludera då huvudkontot i dimensionslistan oavsett användarens urval.  
 22. Klicka på OK.
-![Sidan ER-modellmappningsdesigner](../media/er-financial-dimensions-guides-model-mapping1.png)
+![Sidan ER-modellmappningsdesigner.](../media/er-financial-dimensions-guides-model-mapping1.png)
 23. Välj "Dynamics 365 for Operations\Table records" i trädet.
 24. Klicka på Lägg till rot.
 25. Välj "LedgerJournal" i namnfältet.
 26. Välj Ja i fältet Fråga efter fråga.
 27. Ange "LedgerJournalTable" i tabellfältet.
 28. Klicka på OK.
-![Sidan ER-modellmappningsdesigner](../media/er-financial-dimensions-guides-model-mapping2.png)
+![Sidan ER-modellmappningsdesigner.](../media/er-financial-dimensions-guides-model-mapping2.png)
 
 ## <a name="map-data-model-elements-to-added-data-sources"></a>Mappa datamodellelement till tillagda datakällor
 1. Expandera "Journal" i trädet.
@@ -94,7 +94,7 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 25. Välj "LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions" i trädet.
 26. Välj "Journal\Transaction\Dimensions data" i trädet.
 27. Klicka på Bind.
-![Sidan ER-modellmappningsdesigner](../media/er-financial-dimensions-guides-model-mapping3.png)
+![Sidan ER-modellmappningsdesigner.](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. Välj "LedgerJournal\<Relations\LedgerJournalTrans\Debit(AmountCurDebit)" i trädet.
 29. Välj "Journal\Transaction\Debit" i trädet.
 30. Klicka på Bind.
@@ -133,7 +133,7 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 63. I fältet expressionAsStringText anger du "Company.'find()'.'name()''.
     * Company.'find()'.'name()'  
 64. Klicka på Spara.
-![Sidan ER-modellmappningsdesigner](../media/er-financial-dimensions-guides-model-mapping4.png)
+![Sidan ER-modellmappningsdesigner.](../media/er-financial-dimensions-guides-model-mapping4.png)
 65. Stäng sidan.
 66. Klicka på Spara.
 67. Stäng sidan.
@@ -144,7 +144,7 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 3. Klicka på Ändra status.
 4. Klicka på Slutför.
 5. Klicka på OK.
-![Sidan ER-modellmappningsdesigner](../media/er-financial-dimensions-guides-model-mapping5.png)
+![Sidan ER-modellmappningsdesigner.](../media/er-financial-dimensions-guides-model-mapping5.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 4e2b3746e690623e347e0319ab1b55f2645a5e23
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5bf8ce93d2c804325305672d79b633210a790cf0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814690"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347672"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Designa körningsgränssnittet för produktionsgolvet
 
@@ -32,7 +32,7 @@ På sidan **Konfigurera körning av produktionsgolv** kan du skapa och konfigure
 
 Varje flik är uppdelad i fyra delar, som visas i bilden nedan.
 
-![Fliklayout](media/pfe-tab-layout.png "Fliklayout")
+![Fliklayout.](media/pfe-tab-layout.png "Fliklayout")
 
 Följande element visas i bilden:
 
@@ -47,7 +47,7 @@ Följ stegen nedan om du vill skapa och konfigurera en ny flik:
 
 1. Välj **Designa flikar** i åtgärdsfönstret för att **Designa flikar**.
 
-    ![Sidan designa flikar](media/pfe-design-tabs.png "Sidan designa flikar")
+    ![Sidan Designa flikar.](media/pfe-design-tabs.png "Sidan designa flikar")
 
 1. Välj **Ny** i åtgärdsfönstret.
 
@@ -67,7 +67,7 @@ När du har skapat alla flikar du behöver kan du koppla dem till en konfigurati
 
 1. Gå till **Produktionskontroll \> Inställningar \> Tillverkningskörning \> Konfigurera körningsgränssnittet för produktionsgolvet**.
 
-    ![Konfigurera körning på produktionsgolv](media/pfe-config-prod-floor-execution.png "Konfigurera körning på produktionsgolv")
+    ![Konfigurera körning på produktionsgolv.](media/pfe-config-prod-floor-execution.png "Konfigurera körning på produktionsgolv")
 
 1. På snabbfliken **Val av flik** välj **Lägg till**.
 

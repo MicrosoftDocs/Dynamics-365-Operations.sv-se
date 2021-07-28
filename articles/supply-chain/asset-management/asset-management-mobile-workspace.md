@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 98f935a11ad8a5272cde0270f9ae0471411b914a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fb4e2843ecb30b75d2a8d97ceff5b5825e0bd704
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837955"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360135"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Använd mobil arbetsyta för tillgångshantering
 
@@ -60,7 +60,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 1. När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.
 
-    ![Välj en arbetsyta](media/am-mobile-01.png "Välj en arbetsyta")
+    ![Välj en arbetsyta.](media/am-mobile-01.png "Välj en arbetsyta")
 
 ## <a name="view-assigned-work-order-jobs-in-calendar-view"></a>Visa tilldelade arbetsorderjobb i en kalendervy.
 
@@ -90,7 +90,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 1. Välj **Klar**.
 
-    ![Lägg till radskärmen](media/am-mobile-03.png "Lägg till radskärmen")
+    ![Skärmen Lägg till rad.](media/am-mobile-03.png "Lägg till radskärmen")
 
 
 ## <a name="add-attachment-to-a-work-order-job"></a>Lägga till en bilaga till ett arbetsorderjobb
@@ -112,7 +112,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 1. Välj **Klar**.
 
-    ![Visa och lägga till bilagor för ett arbetsorderjobb](media/am-mobile-04.png "Visa och lägga till bilagor för ett arbetsorderjobb")
+    ![Visa och lägg till bilagor för ett arbetsorderjobb.](media/am-mobile-04.png "Visa och lägga till bilagor för ett arbetsorderjobb")
 
 ## <a name="view-maintenance-checklist-on-a-work-order-job"></a>Visa underhållschecklista för ett arbetsorderjobb
 
@@ -129,7 +129,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 1. Klicka på knappen Tillbaka (**<**) för att gå tillbaka till föregående sida.
 
-    ![Underhållschecklista och raddetaljer](media/am-mobile-05.png "Underhållschecklista och raddetaljer")
+    ![Underhållschecklista och raddetaljer.](media/am-mobile-05.png "Underhållschecklista och raddetaljer")
 
 ## <a name="view-and-update-asset-counters-on-a-work-order-job"></a>Visa och uppdatera tillgångsräknare för ett arbetsorderjobb
 
@@ -146,7 +146,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 1. Ange ett nytt räknarvärde och välj sedan **klar**.
 
-    ![Visa och uppdatera tillgångsräknare](media/am-mobile-06.png "Visa och uppdatera tillgångsräknare")
+    ![Visa och uppdatera tillgångsräknare.](media/am-mobile-06.png "Visa och uppdatera tillgångsräknare")
 
 ## <a name="register-consumption-on-a-work-order-job"></a>Registrera förbrukning för ett arbetsorderjobb
 
@@ -178,7 +178,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
     1. Ange **Självkostnad** för utgiftsregistrering.
     1. Välj **Klar**.
 
-    ![Uppdatera en arbetsorderjournal](media/am-mobile-07.png "Uppdatera en arbetsorderjournal")
+    ![Uppdatera en arbetsorderjournal.](media/am-mobile-07.png "Uppdatera en arbetsorderjournal")
 
 ## <a name="update-lifecycle-state-on-a-work-order"></a>Uppdatera livscykeltillstånd för en arbetsorder.
 
@@ -216,7 +216,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 1. Välj **Klar**.
 
-    ![Skapa en underhållsbegäran](media/am-mobile-09.png "Skapa en underhållsbegäran")
+    ![Skapa en underhållsbegäran.](media/am-mobile-09.png "Skapa en underhållsbegäran")
 
 ## <a name="add-attachment-to-a-maintenance-request"></a>Lägg till en bilaga till en underhållsbegäran
 
@@ -236,7 +236,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 1. Välj **Klar**.
 
-    ![Lägg till en bilaga till en underhållsbegäran](media/am-mobile-10.png "Lägg till en bilaga till en underhållsbegäran")
+    ![Lägg till en bilaga i en underhållsbegäran.](media/am-mobile-10.png "Lägg till en bilaga till en underhållsbegäran")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c9dfad3615cfe4f9937f0dc30c4684cd14f420c1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894158"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348150"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Ange anpassade lagringsplatser för genererade dokument
 
@@ -41,7 +41,7 @@ Alla uppgifter i det här avsnittet kan slutföras i företaget **USMF**.
 
 För att generera de dokument som du planerar att lägga till en anpassad lagringsplats för [importerar](er-download-configurations-global-repo.md) du ER-formatkonfigurationen för **uppdateringsrapport för anläggningstillgång** till den aktuella topologin.
 
-![Sidan Konfigurationsdatabas](./media/er-custom-storage-generated-files-import-format.png)
+![Sidan Konfigurationsdatabas.](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>Kör rapporten för Uppdateringsrapport för anläggningstillgång
 
@@ -52,7 +52,7 @@ För att generera de dokument som du planerar att lägga till en anpassad lagrin
 5. I fältet **Formatmappning** väljer du **Uppdateringsrapport för anläggningstillgång**.
 6. Välj **OK**.
 
-![Körningsdialogruta för rapport om Uppdateringsrapport för anläggningstillgång](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![Körningsdialogruta för Uppdateringsrapport över anläggningstillgångar.](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 I Microsoft Excel granskar du det utgående dokument som genereras och är tillgängligt för hämtning. Detta är [standardbeteendet](electronic-reporting-destinations.md#default-behavior) för ett ER-format som inte är konfigurerat för [destinationer](electronic-reporting-destinations.md) och som körs i interaktivt läge.
 

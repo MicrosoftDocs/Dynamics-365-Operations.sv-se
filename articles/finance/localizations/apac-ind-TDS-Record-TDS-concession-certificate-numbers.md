@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f543adc8bab5ca224bdb672d6b3c282c2d8531d8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 97fce25ea8c556f001c84f6836a0a270a9f3524f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023586"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358396"
 ---
 # <a name="record-tds-concession-certificate-numbers"></a>Registrera koncessionscertifikatnummer för TDS
 
@@ -33,7 +33,7 @@ I det här avsnittet beskrivs hur du registrerar koncessionscertifikatnumren fö
 2. I fältet **Skattetyp** väljer du **TDS** för att registrera koncessionscertifikat för TDS-skattetypen.
 3. På fliken **Översikt** väljer du **Alt+N** för att skapa en rad.
 
-    [![Rubrik för den nya raden](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
+    [![Rubrik för den nya raden.](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
 
 4. I fältet **Källskattekod** väljer du den TDS-skattekod som leverantörens koncessionscertifikat utfärdas för. I fältet **Namn på källskattekod** visas namnet på TDS-skattekoden.
 5. I fälten **Från datum** och **Till datum** definierar du giltighetsperioden för det koncessionscertifikat som använder TDS-skattekoden för att beräkna TDS för leverantören på koncessionsbasis.
@@ -50,6 +50,6 @@ I det här avsnittet beskrivs hur du registrerar koncessionscertifikatnumren fö
 
 11. I fältet **Certifikat** anger du numret på TDS-koncessionscertifikatet.
 
-    [![Snabbfliken Certifikat](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
+    [![Snabbfliken Certifikat.](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
 
 12. Stäng sidan.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: d132ed979a84c2906298c05708cef1ee87f47078
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9fb5b851c71ac632a045cf09c725a088d13f21ad
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752924"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360268"
 ---
 # <a name="client-alert-notifications-by-email"></a>Kundnotifieringar via e-postmeddelande
 
@@ -36,7 +36,7 @@ För mer information om hur du konfigurerar e-post, se [konfigurera och skicka e
 
 Följande bild visar dialogrutan **Skapa notifieringsregel** som nu innehåller ett alternativ för **skicka e-post**.
 
-[![Dialogrutan Skapa notifieringsregel alternativet Skicka e-post är inställt på Ja](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)
+[![Dialogrutan Skapa varningsregel, där alternativet Skicka e-post är inställt på Ja.](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)
 
 > [!NOTE]
 > När alternativet **skicka e-post** är inställt på **Ja** kommer notifieringar fortsätta levereras från Åtgärdscentret.
@@ -47,7 +47,7 @@ Tjänsten skickar e-postmeddelanden med hjälp av fördefinierade e-postmallar s
 
 Följande bild visar strukturen för aviseringar skickas när de tas emot via e-post.
 
-[![Mallbaserade aviseringar för att skapa, ändra och ta bort mallen](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+[![Mallbaserade aviseringar för att skapa poster, ändra i fält och ta bort mall.](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 0c1e6a9490fba0becb4840cbec9d04c22d482511
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: e0b0eb1466d962fb04566b936322db1e4c28f830
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103178"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359797"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhantering av inkommande laster för inköpsorder
 
@@ -30,7 +30,7 @@ För varje inkommande last bör systemet redan ha en relaterad försäljningsord
 
 Följande bild visar det typiska flödet för hantering av inkommande laster som har inköpsorderkvantiteter när de anländer till lagret.
 
-![Hanteringsprocess för inkommande last](media/inbound-process.png "Hanteringsprocess för inkommande last")
+![Hanteringsprocess för inkommande last.](media/inbound-process.png "Hanteringsprocess för inkommande last")
 
 1. **Leverantören bekräftar inköpsordern.**
 
@@ -293,7 +293,7 @@ I det här avsnittet skapar du ett menyalternativ för mobila enheter och lägge
 
     Du kan lämna alla andra inställningar med standardvärden.
 
-    ![Inställning för menykommando på mobil enhet](media/inbound-mobile-menu-items.png "Inställning för menykommando på mobil enhet")
+    ![Inställningar för menykommando på mobil enhet.](media/inbound-mobile-menu-items.png "Inställning för menykommando på mobil enhet")
 
     Mer information om hur du konfigurerar menyartiklar för mobila enheter finns i [ställa in mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md).
 
@@ -328,7 +328,7 @@ I den här proceduren ska du skapa en inköpsorder och en tillhörande överför
     - På snabbfliken **last** anges fältet **laststatus** anges till _öppen_.
     - I avsnittet **Lastrader** finns en enda rad där fältet **kvantitet** anges till _10_ och fältet **Arbetsskapad kvantitet** anges till _0_ (noll).
 
-    ![Information om last](media/inbound-load-details.png "Information om last")
+    ![Information om last.](media/inbound-load-details.png "Information om last")
 
 1. I Åtgärdsfönster, på fliken **Leverera och ta emot** välj **Bekräfta \> Inkommande leverans**. Observera att **laststatus** har ändrats till _levererat_.
 1. Anteckna värdet för **Last-ID** så att du kan använda det i nästa procedur.

@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 61f96dae0643e3383afd91864e4c145f3b5c04c8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9ac440362379475b05c6a37019c25e3a96be3739
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792617"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349506"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Aktivera Azure Data Lake Storage i en Dynamics 365 Commerce-miljö
 
@@ -59,7 +59,7 @@ En mer ingående översikt över de steg som krävs för att aktivera Azure Data
 
 I bilden nedan visas ett exempel på Azure Data Lake Storage-konfiguration.
 
-![Exempel på Azure Data Lake Storage-konfiguration](./media/exampleADLSConfig1.png)
+![Exempel på Azure Data Lake Storage-konfiguration.](./media/exampleADLSConfig1.png)
 
 ### <a name="test-the-azure-data-lake-storage-connection"></a>Testa Azure Data Lake Storage-anslutningen
 
@@ -79,7 +79,7 @@ Aktivera automatisk uppdatering för enhetsarkivet genom att följa stegen nedan
 
 I bilden nedan visas ett exempel på ett enhetslagring med automatisk uppdatering aktiverat.
 
-![Exempel på enhetslagring med automatisk uppdatering aktiverad](./media/exampleADLSConfig2.png)
+![Exempel på enhetslagring med automatisk uppdatering aktiverad.](./media/exampleADLSConfig2.png)
 
 Azure Data Lake Storage har nu konfigurerats för miljön. 
 

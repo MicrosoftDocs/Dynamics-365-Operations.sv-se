@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dfe04881e71558ed326025d8f2545c3c611df3aa
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6a319007b32a8a52bd4a0c0af337ed8fd4062cfa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796980"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346678"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Justera AI-ML-baserade produktrekommendationsresultat
 
@@ -51,7 +51,7 @@ Beroende på din verksamhet kan listan bästsäljare få andra resultat än tren
 
 Produktlistan bästsäljande har en parameter som kan ändras:
 
-![Exempel på standardparameter för bästsäljarlista](./media/examplebestsellingparameters.PNG)
+![Exempel på standardparameter för bästsäljarlista.](./media/examplebestsellingparameters.PNG)
 
 1. **Inkludera nya försäljningar från de senaste X dagarna** – Försäljningstransaktioner som har inträffat till inom det angivna antalet dagar innan det aktuella datumet kan användas för att beställa produkterna. Standardvärdet ovan innebär att alla inköp av en produkt under de senaste 30 dagarna ska användas för att fastställa produktens placering i produktlistan för bästsäljare. 
 
@@ -65,13 +65,13 @@ Produktlistan bästsäljande har en parameter som kan ändras:
 1.  För att lägga till produkter i tabellen, välj **Lägg till rad**. 
 1.  Under kolumnen produkt, sök efter en produkt via **Namn** eller **Produktnummer.**
 
-    ![Exempel på sökning efter en produkt i den nya produktlistan](./media/examplenewlistconfiguration1.png)
+    ![Exempel på sökning efter en produkt i den nya produktlistan.](./media/examplenewlistconfiguration1.png)
 
 1.  Välj ett av två alternativ under kolumnen Radtyp:
     -   **Inkludera** – framtvingar en produkt överst i listan
     -   **Exkludera** – tar bort en produkt från listan
     
-    ![Exempel på inkludering eller uteslutning av en produkt från den nya produktlistan](./media/examplenewlistconfiguration2.png)
+    ![Exempel på inkludering eller uteslutning av en produkt från den nya produktlistan.](./media/examplenewlistconfiguration2.png)
 
 1.  Att ändra **Visningsorder** ändrar ordningen där produkter som markerats **inkludera** visas i listan.
     - Om två produkter har samma **visningsordningsvärde** kan den slutgiltiga ordningen på dessa två resultat skilja sig från backoffice.
@@ -86,12 +86,12 @@ En *startprodukt* är den produkt som du vill generera resultat för. I samband 
 
 Följ dessa steg för att lägga till eller ta bort resultat för en startprodukt manuellt:
 1.  Välj **startprodukt**. 
-1.  Under kolumnen **produkt** sök efter en ny produkt efter **Namn** eller **Produktnummer.**
-![Exempel på sökning efter en produkt i listan Ofta köpt tillsammans](./media/exampleFBTlistconfiguration1.png)
+1.  Under kolumnen **Produkt** söker du efter en ny produkt efter **Namn** eller **Produktnummer.**
+![Exempel på sökning efter en produkt i listan Ofta köpt tillsammans.](./media/exampleFBTlistconfiguration1.png)
 1. Välj ett av två alternativ under kolumnen **Radtyp**:
     - **Inkludera** – framtvingar en produkt överst i listan
     - **Exkludera** – tar bort en produkt från listan     
-![Exempel på inkludering eller exkludering av en produkt i listan som ofta köps ihop](./media/exampleFBTlistconfiguration2.png)
+![Exempel på inkludering eller exkludering av en produkt i listan över produkter ofta köps ihop.](./media/exampleFBTlistconfiguration2.png)
 1.  Så här tar du bort produkter från registret: Markera raden som du vill ta bort och välj ta bort.
 
 

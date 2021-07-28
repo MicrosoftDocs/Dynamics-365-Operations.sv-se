@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260624
+ms.custom:
+- "260624"
+- intro-internal
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: b680ec227ecd70893999950a8be2ad152c476575
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 598145bccadbeb44d33adb96388f6af5a8a45f5d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937022"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352698"
 ---
 # <a name="clienteling-overview"></a>Översikt över kundhantering
 
@@ -68,7 +70,7 @@ Om du vill aktivera klienteling-funktionen i din miljö följer du stegen nedan.
 
 1. I arbetsytan **Funktionshantering** kan du filtrera funktionerna i modulen **Retail and Commerce**.
 
-    ![Klienteling i listan över funktioner för modulen Commerce](./media/Enable_clienteling.png "Klienteling i listan över funktioner för modulen Retail and Commerce")
+    ![Clienteling i listan över funktioner för modulen Commerce.](./media/Enable_clienteling.png "Klienteling i listan över funktioner för modulen Retail and Commerce")
 
 2. Aktivera funktionen **Klienteling** genom att välja **Aktivera nu**.
 3. På sidan **handelsparametrar** väljer du fliken **Nummersekvens** och väljer raden **identifierare av klientbok**. Sedan i fältet **Nummersekvenskod** väljer du en nummersekvens. I systemet används den här nummerserien för att tilldela ett ID till klientböcker.
@@ -83,7 +85,7 @@ Om du vill aktivera klienteling-funktionen i din miljö följer du stegen nedan.
 
 6. På sidan **Handelsparametrar** på fliken **klienteling** i fältet **Attributgruppen kundbok** väljer du den attributgrupp som du just skapade.
 
-    ![Vald attributgrupp för kundbok](./media/Client%20book%20attributes.png "Vald attributgrupp för kundbok")
+    ![Vald attributgrupp för kundbok.](./media/Client%20book%20attributes.png "Vald attributgrupp för kundbok")
 
 7. Om du vill registrera aktiviteter som inträffar i POS definierar du aktivitetstyperna på sidan **aktivitetstyper** (**Retail and Commerce \> Kunder \> Aktivitetstyper**).
 
@@ -95,7 +97,7 @@ Om du vill aktivera klienteling-funktionen i din miljö följer du stegen nedan.
 
 När du har slutfört den här proceduren kan säljarna öppna kunddetaljsidan i POS och lägga till kunder i sin kundbok, visa och fånga in aktiviteter och noteringar för kunder och mål kunder genom att använda attribut för kund och klientbok för att filtrera kundboken. Illustrationen nedan visar ett exempel på en kundbok.
 
-![Exempel på en kundbok](./media/client_book.png "Exempel på en kundbok")
+![Exempel på en kundbok.](./media/client_book.png "Exempel på en kundbok")
 
 ## <a name="turn-on-the-integration-of-customer-insights-with-commerce"></a>Aktivera integreringen av Customer Insights med Commerce
 

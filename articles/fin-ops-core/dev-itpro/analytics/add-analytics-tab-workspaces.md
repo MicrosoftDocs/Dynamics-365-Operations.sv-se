@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8e82c9a5ff4b6d7db1a808e5a94206628cdf0930
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 14c8c36b90caa3a9378a739932d734b94985b46c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754608"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354455"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Lägg till analyser i arbetsytor genom att använda Power BI Embedded
 
@@ -54,11 +54,11 @@ Följ dessa steg om du vill lägga till en .pbix-fil som en projektartefakt för
 3. I dialogrutan **Lägg till nytt objekt** under **Operations artefakter** markerar du mallen **resurs**.
 4. Ange ett namn som används för att referera till rapporten i X++-metadata och klicka sedan på **Lägg till**.
 
-    ![Lägg till dialogruta nytt objekt](media/analytical-workspace-add.png)
+    ![Dialogrutan Lägg till ny artikel.](media/analytical-workspace-add.png)
 
 5. Leta upp filen .pbix som innehåller definitionen av analytisk rapport och klicka sedan på **öppna**.
 
-    ![Välj dialogrutan Resursfil](media/analytical-workspace-select-resource.png)
+    ![Välj en dialogruta för Resursfil.](media/analytical-workspace-select-resource.png)
 
 Nu när du har lagt till .pbix-filen som en resurs i Dynamics 365, kan du bädda in rapporter i arbetsytor och lägga till direkta länkar med hjälp av menyalternativ.
 
@@ -67,7 +67,7 @@ I det här exemplet ska vi utöka arbetsytan **Hantering av reservationer** i mo
 
 Följande bild visar hur formuläret **FMClerkWorkspace** ser ut i designern i Microsoft Visual Studio.
 
-![FMClerkWorkspace-formuläret innan ändringar](media/analytical-workspace-definition-before.png)
+![FMClerkWorkspace-formuläret före ändringar.](media/analytical-workspace-definition-before.png)
 
 Följ dessa steg för att utöka formulärets definition för arbetsytan **Reservationshantering**.
 
@@ -92,7 +92,7 @@ Följ dessa steg för att utöka formulärets definition för arbetsytan **Reser
 
 Följande illustration visar hur designen ser ut efter ändringarna har tillämpats.
 
-![FMClerkWorkspace efter ändringar](media/analytical-workspace-definition-after.png)
+![FMClerkWorkspace efter ändringar.](media/analytical-workspace-definition-after.png)
 
 Nu när du har lagt till formulärkontroller som används för att bädda in arbetsytrapporten måste du ange storleken på den överordnade kontrollen så att layouten sparas. Som standard visas både sidan **filterruta** och **flik** i rapporten. Du kan dock ändra synligheten för dessa kontroller efter målkonsumenten för rapporten.
 
@@ -142,7 +142,7 @@ Så här lägger du till affärslogik som initierar rapportvisningskontrollen so
 
 Du har nu slutfört uppgiften att lägga till inbäddad affärslogik för att initiera rapportvisningskontrollen. Följande illustration visar hur arbetsytan ser ut efter ändringarna har tillämpats.
 
-![Rapport som är inbäddad i arbetsytan](media/analytical-workspace-final.png)
+![Rapport som är inbäddad i arbetsytan.](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > Du kommer åt den befintliga vyn med hjälp av flikarna för arbetsyta under en rubrik.

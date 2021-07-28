@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 7bc4b48260907788eb90a19c5dc0b5c8f1d9d3b5
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a16006a18e552c00fbed5eda7579fbcb77c315ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908118"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355935"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Synkronisera kontakter direkt från Sales till kontakter i Supply Chain Management
 
@@ -38,7 +38,7 @@ I det här ämnet diskuteras mallarna och de underliggande uppgifterna som anvä
 
 Lösningen Potentiell kund till kontanter använder funktionen Dataintegrering för att synkronisera data mellan instanser av Supply Chain Management och Sales. Potentiell kund till kontanter-mallarna med funktionen för dataintegrering möjliggör ett flöde av konto-, produkt-, försäljningskvots-, försäljningsorder- samt försäljningsfakturadata mellan Supply Chain Management och Sales. Följande bild visar hur data synkroniseras mellan Supply Chain Management och Sales.
 
-[![Dataflöden i Potentiell kund till kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Dataflöden i Potentiell kund-till-pengar.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
 
@@ -119,16 +119,16 @@ I följande illustrationer visas ett exempel på en mallmappning i dataintegreri
 
 ### <a name="contact-to-contact"></a>Kontakt till kontakt
 
-![Mallmappning i dataintegreraren](./media/contacts-direct-template-mapping-data-integrator-1.png)
+![Mallmappning i dataintegratorn.](./media/contacts-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="contact-to-customer"></a>Kontakt till kund
 
-![Mallmappning i dataintegreraren](./media/contacts-direct-template-mapping-data-integrator-2.png)
+![Mallmappning i dataintegratorn.](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Prospekt till kontanter](prospect-to-cash.md)
+[Potentiell kund till pengar](prospect-to-cash.md)
 
 [Synkronisera konton direkt från Sales till kunder i Supply Chain Management](accounts-template-mapping-direct.md)
 

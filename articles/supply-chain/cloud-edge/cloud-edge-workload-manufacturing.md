@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b1e2006c0d9b9effe331a644aaaa9fa33ff2fb7c
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: da19066f647c17e934a11e4dab7cb370baabfb5c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270545"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352746"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för tillverkningskörning för moln- och kantskalningsenheter
 
@@ -44,7 +44,7 @@ I det här avsnittet beskrivs hur arbetsbelastningar för tillverkningskörning 
 
 Som visas i bilden nedan är tillverkningslivscykeln uppdelad i tre faser: *planera*, *utföra* och *slutföra*.
 
-[![Tillverkningskörningsfaser när en enskild miljö används](media/mes-phases.png "Tillverkningskörningsfaser när en enskild miljö används")](media/mes-phases-large.png)
+[![Tillverkningskörningsfaser när en enda miljö används](media/mes-phases.png "Tillverkningskörningsfaser när en enda miljö används."](media/mes-phases-large.png)
 
 _Planeringsfasen_ omfattar produktdefinition, planering, skapande och tidsplanering av order och frisläppning. Frisläppningssteget visar över gången från _planeringsfasen_ till _körningsfasen_. När en tillverkningsorder frisläpps visas produktionsorderjobben på produktionsvåningen och är klara för körning.
 
@@ -54,7 +54,7 @@ När ett produktionsjobb markeras som slutfört flyttas det från _körningsfase
 
 Som följande bild visar, när skalenheter används delas _körningsfasen_ ut som separat arbetsbelastning.
 
-[![Produktionskörningsfaser när skalenheter används](media/mes-phases-workloads.png "Produktionskörningsfaser när skalenheter används")](media/mes-phases-workloads-large.png)
+[![Tillverkningskörningsfaser när skalningsenheter används](media/mes-phases-workloads.png "Tillverkningskörningsfaser när skalningsenheter används."](media/mes-phases-workloads-large.png)
 
 Modellen hämtas nu från en installation med enkel instans till en modell som baseras på navet och skalenheten. _Planeringsfasen_ och _avslutningsfasen_ körs som backoffice-operationer på navet och arbetsbelastningen för tillverkningskörning körs på skalenheterna. Data överförs asynkront mellan nav och skalenhet.
 
@@ -87,7 +87,7 @@ Ett batchjobb i Supply Chain Management körs automatiskt för att bearbeta alla
 
 Du kan granska bearbetningsloggen för registrering genom att logga in på navet och gå till **tillverkningskontroll \> periodiska uppgifter \> hantering av backoffice-arbetsbelastning \> bearbetningslogg för råregistrering**. På sidan **bearbetningslogg för råregistrering** visas en lista över bearbetade råregistreringar och status för varje registrering.
 
-![Sidan bearbetningslogg för råregistreringar](media/mes-processing-log.png "Sidan bearbetningslogg för råregistreringar")
+![Sidan Bearbetningslogg för råregistreringar.](media/mes-processing-log.png "Sidan bearbetningslogg för råregistreringar")
 
 Du kan arbeta med valfri registrering i listan genom att markera den och sedan välja någon av följande knappar i åtgärdsfönstret:
 

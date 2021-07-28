@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 04e0bb3b1b99299c344a393e72cbe6f380e380af
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5facd333c9a76f391b36de71fa3a8e276fe2583f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825624"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350628"
 ---
 # <a name="work-order-lifecycle-states"></a>Livscykeltillstånd för arbetsorder
 
@@ -35,9 +35,9 @@ De livscykeltillstånd för arbetsorder som krävs för dina arbetsorder måste 
 
 I följande tabell beskrivs alternativen i avsnitten **Arbetsorder** och **Tidsplan** på snabbfliken **Allmänt** på sidan **Livscykeltillstånd för arbetsorder** (**Tillgångshantering** \> **Inställning** \> **Arbetsorder** \> **Livscykeltillstånd**).
 
-![Sidan Livscykeltillstånd för arbetsorder](media/09-setup-for-work-orders.png)
+![Sidan Livscykeltillstånd för arbetsorder.](media/09-setup-for-work-orders.png)
 
-| Namn på alternativ                   | Beskrivning |
+| Namn på alternativ                   | beskrivning |
 |-------------------------------|-------------|
 | Aktiva                        | Ställ in det här alternativet på **Ja** om arbetsordern ska vara aktiv när den är i detta livscykeltillstånd. |
 | Lägg till rad                      | Ställ in det här alternativet på **Ja** om arbetsorderjobb kan läggas till i en arbetsorder som är i det här livscykeltillståndet. |
@@ -93,7 +93,7 @@ I följande tabell beskrivs alternativen i avsnitten **Arbetsorder** och **Tidsp
     - Om alternativet **Underhållsstopp** är inställt på **Ja** för livscykeltillståndet som en arbetsorder uppdateras till görs en validering av underhållsstopp på tillgången som hör till arbetsordern. Om registrering av ett underhållsstopp har gjorts, men det inte finns någon **Avslutat** registrering, visas ett meddelande när arbetsordern uppdateras till detta livscykeltillstånd.
     - Om standardprojektsinställningarna inte innehåller alla faser som du behöver för inställningarna för Tillgångshantering kan du ställa in användardefinierade projektfaser på fliken **Projektfas** på sidan **Parametrar för projekthantering och redovisning**. I bilden nedan visas fliken **Projektfas** på sidan **Parametrar för projekthantering och redovisning**.
 
-    ![Sidan Ställ in projektfaser för olika projekttyper](media/10-setup-for-work-orders.png)
+    ![Sidan Ställ in projektfaser för olika projekttyper.](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
 > Om livscykeltillståndet som du uppdaterar en arbetsorder till är inaktivt, raderas automatiskt journaler som är relaterade till arbetsordern, men som ännu inte har bokförts. Detta är ett sätt att garantera automatisk rensning av oanvända data. (Ett livscykeltillstånd är inaktivt om alternativet **Aktivt** för det har inställningen **Nej** på snabbfliken **Allmänt** på sidan **Livscykeltillstånd för arbetsorder**.)
@@ -111,7 +111,7 @@ Anledningen till att använda typer är att när en typ har definierats på till
 
 Följande illustration visar relationen mellan arbetsordertyper, livscykelmodeller och livscykeltillstånd.
 
-![Sidan arbetsordertyp jämfört med sidan Livscykelmodeller för arbetsorder](media/11-setup-for-work-orders.png)
+![Sidan arbetsordertyp jämfört med sidan Livscykelmodeller för arbetsorder.](media/11-setup-for-work-orders.png)
 
 ## <a name="work-order-lifecycle-models"></a>Livscykelmodeller för arbetsorder
 
@@ -126,16 +126,16 @@ När du har skapat de livscykeltillstånd för arbetsorder som krävs för dina 
 
 5. På snabbfliken **livscykeltillstånd** väljer du de livscykeltillstånd som ska inkluderas i livscykelmodellen.
 
-    - Om du vill inkludera ett livscykeltillstånd i livscykelmodellen markerar du avsnittet **återstående livscykeltillstånd** och markerar sedan högerpilknappen ![högerpil](media/12-setup-for-work-orders.png) för att flytta den till avsnittet **Valt livscykeltillstånd**.
-    - Om du vill inkludera alla tillgängliga livscykeltillstånd i livscykelmodellen markerar du knappen **Välj alla tillgängliga faser** ![Välj alla tillgängliga faser](media/13-setup-for-work-orders.png). Alla livscykeltillstånd flyttas till avsnittet **markerade livscykeltillstånd**.
-    - Om du vill ta bort ett livscykeltillstånd i livscykelmodellen markerar du avsnittet **valda livscykeltillstånd** och markerar sedan vänsterpilknappen ![vänsterpil](media/14-setup-for-work-orders.png) för att flytta den till avsnittet **Återstående livscykeltillstånd**.
+    - Om du vill inkludera ett livscykeltillstånd i livscykelmodellen markerar du det i avsnittet **Återstående livscykeltillstånd** och väljer sedan höger pilknapp ![Högerpil.](media/12-setup-for-work-orders.png) för att flytta den till avsnittet **Valda livscykeltillstånd**.
+    - Om du vill inkludera alla tillgängliga livscykeltillstånd i livscykelmodellen markerar du knappen **Välj alla tillgängliga faser** ![Välj alla tillgängliga faser.](media/13-setup-for-work-orders.png). Alla livscykeltillstånd flyttas till avsnittet **markerade livscykeltillstånd**.
+    - Om du vill ta bort ett livscykeltillstånd från livscykelmodellen markerar du det i avsnittet **Valt livscykeltillstånd** och väljer sedan vänster pilknapp ![Vänsterpil.](media/14-setup-for-work-orders.png) för att flytta det till avsnittet **Återstående livscykeltillstånd**.
 
 6. Välj **Uppdateringar av livscykeltillstånd** för att definiera vilka livscykeltillstånd som kan följa ett valt livscykeltillstånd.
 7. På snabbfliken **Uppdateringar** i fältet **Tidsplanerat tillstånd** väljer du det livscykeltillstånd som alltid ska väljas för en arbetsorder som du har slutfört en arbetsorderplanering för, oavsett föregående livscykeltillstånd för arbetsordern.
 8. I fältet **Ej tidsplanerat livscykeltillstånd** väljer du det livscykeltillstånd som alltid ska väljas för en arbetsorder om tidsplanering för arbetsorder tas bort.
 9. Spara arbetsorderns livscykelmodell.
 
-![Sidan Livscykelmodeller för arbetsorder](media/15-setup-for-work-orders.png)
+![Sidan Livscykelmodeller för arbetsorder.](media/15-setup-for-work-orders.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

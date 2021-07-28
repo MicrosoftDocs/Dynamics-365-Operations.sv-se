@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: e56bf86a11eb34679269eae5ca093d7cc379932b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 42c35fcca90b7dc55c8ef2985283d2ce92c4c8bc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822477"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344230"
 ---
 # <a name="vendor-rebates"></a>Leverantörsrabatter
 
@@ -53,7 +53,7 @@ Ett rabattavtal för leverantörer är ett kontrakt med en leverantör som anger
 
 För att öppna sidan **Rabattavtal för leverantörer** markerar du **Anskaffning och inköp** &gt; **Leverantörsrabatter** &gt; **Rabattavtal**.
 
-![Inköpsavtal](media/purchase-agreement.PNG)
+![Inköpsavtal.](media/purchase-agreement.PNG)
 
 På sidan **Rabattavtal för leverantörer** på sidan kan du visa information om de förhandlade villkoren i ett leverantörsavtal.
 
@@ -129,7 +129,7 @@ När ett anspråk har godkänts kan det bearbetas av Leverantörsreskontra (A/P)
 
     En periodiseringsjournal för rabatt bokförs för anspråksbeloppet. Denna bokföringspost debiterar kontot för ackumulerad kundreskontrarabatt för den förväntade leverantörskrediten, och krediterar den förväntade intäkten till det preliminära kontot för mottagna, ackumulerade leverantörsrabatter.
 
-    ![Meddelande](media/message.png)
+    ![Meddelande.](media/message.png)
 
 5. Markera raden i rabattlistan och markera sedan **Rabattransaktioner** i åtgärdsfönstret för att visa och navigera till journalbatchnumret för bokföringen av rabattperiodiseringen.
 

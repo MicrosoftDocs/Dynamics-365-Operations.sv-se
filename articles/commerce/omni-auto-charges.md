@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0eb1f112430005945b4f82b99ef9cc718c56de65
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0ff85acfbe16fc28afb2fbcee0baf4b12b1f3e9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022717"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353070"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerade automatiska avgifter för flera kanaler
 
@@ -43,7 +43,7 @@ Med funktionen för avancerade automatiska avgifter kan kassaanvändare ha syste
 
 På sidan **Butik och handel \> Administrationsinställning \> Parametrar \> Commercesparametrar**, gå till fliken **kundorder**. På snabbfliken **Avgifter**, ange **Använd avancerade automatiska avgifter** till **Ja**.
 
-![Parametrar för avancerade automatiska avgifter](media/advancedchargesparameter.png)
+![Avancerade parametrar för automatiska debiteringar.](media/advancedchargesparameter.png)
 
 När avancerad automatiska avgifter aktiveras uppmanas användare inte längre att manuellt ange en fraktkostnad vid kassaterminalen när man skapar en leverera alla eller leverera utvalda kundorder. Kassans orderavgifter beräknas systematiskt och läggs till kassatransaktionen (om det finns en motsvarande tabell för automatiska avgifter som matchar kriteriet om ordern som skapats). Användare kan också lägga till eller underhålla sidhuvud eller radnivå tillägg manuellt via tillagda kassaoperationer som kan läggas till kassaskärmens layout.
 
@@ -86,7 +86,7 @@ Konfigurera två olika automatiska avgifter på huvudnivå. Konfigurera en för 
 
 För markleverans, i radavsnittet på sidan **automatiska avgifter** kan du definiera ett tillägg som ska användas för order mellan $,01- och $100 som $10,00. Skapa en annan avgiftsrad för att ange att order under $100,01 inte har avgifter.
 
-![Exempel på tabeller med två automatiska debiteringar](media/headerchargesexample.png)
+![Exempel på tabeller med två automatiska debiteringar.](media/headerchargesexample.png)
 
 För luftsleverans, i radavsnittet på formuläret automatiska avgifter kan du definiera ett tillägg på $20,00 som ska användas för alla order (mellan $,01och $9 999 999).
 
@@ -116,7 +116,7 @@ Gå till **Kundreskontra \> Ställa in avgifter \> Automatiska avgifter**.
 
 Ange listrutan **nivå** till **rad** och skapa en ny post för automatiska avgifter för alla kunder och för en viss produkt eller produktgrupp där inställningsavgifter tas ut.
 
-![Exempel på tabell med automatiska debiteringar på en radnivå](media/linechargesexample.png)
+![Exempel på tabell med automatiska debiteringar på enkel radnivå.](media/linechargesexample.png)
 
 Skicka avgifterna till skalningsenhet för handel/Channel DB så att POS kan utnyttja dem genom att köra jobbet **1040 distributionsschema**.
 
@@ -136,7 +136,7 @@ En återförsäljare gör undantag från vanliga processer genom att erbjuda en 
 
 Kontrollera att avgiftskoden som används i det här scenariot har konfigurerats korrekt genom att gå till **kundreskontra \> inställningar av avgifter \> avgifter** för att definiera en lämplig avgiftskod för scenariot.
 
-![Exempel på avgifter](media/chargesexample.png)
+![Exempel på debiteringar.](media/chargesexample.png)
 
 Ange om avgiften ska betraktas som en ”frakt”-relaterad avgift för fraktrelaterade rabatter eller kampanjer, ange **leveransavgift** för avgiftskoden till **Ja**. Om denna avgift också kan återbetalas systematiskt under bearbetningen av en returtransaktion i kassaprogram ställer du in **Återbetalningsbar** till **Ja**. Flaggan **Återbetalningsbar** gäller endast när parameter **Använd avancerade automatiska avgifter** är inställd på **Ja**.
 

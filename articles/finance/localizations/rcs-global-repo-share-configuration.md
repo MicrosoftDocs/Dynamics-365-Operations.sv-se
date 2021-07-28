@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ace62319bbfa38bcf4be7157882dd0c8989e25bc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 530cb77ccbca1b6946b5a96cee4e6226ed3467e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838755"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361268"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Dela elektroniska rapporteringskonfigurationer (ER) i Microsoft Regulatory Configuration Services (RCS)/den globala databasen med externa organisationer
 
@@ -47,7 +47,7 @@ Följ dessa steg för att kontrollera att konfigurationen som du vill dela redan
 
 1. I arbetsytan **Elektronisk rapportering** väljer du **Databaser** för din konfigurationsleverantör.
 
-    ![Konfigurationsleverantörer](media/1_RCS_Repo_for_config_provider.JPG)
+    ![Konfigurationsleverantörer.](media/1_RCS_Repo_for_config_provider.JPG)
 
 2. Välj **Global databas** \> **Öppna**.
 3. Sök efter den konfiguration du vill dela. Du kan använda filterfältet för att begränsa sökresultatet. Om du inte kan hitta konfigurationen i den globala databasen följer du stegen i [Skapa och ladda upp en ny version av en konfiguration för elektronisk rapportering (ER)](rcs-global-repo-upload.md).
@@ -61,11 +61,11 @@ När en konfiguration har skapats i din konfigurationsleverantör kan du dela de
 3. Välj den konfiguration du vill dela.
 4. I snabbfliken **Delas med** väljer du **Organisation**.
 
-    ![Delas med snabbfliken](media/1_RCS_Repo_for_Share_with_org.JPG)
+    ![Delas med snabbfliken.](media/1_RCS_Repo_for_Share_with_org.JPG)
 
 5. I dialogrutan anger du domännamnet för den externa organisationen och väljer sedan **OK**.
 
-    ![Dela konfigurationsversion med dialogrutan för extern organisation](media/1_RCS_Repo_for_Share_with_form.JPG)
+    ![Dela konfigurationsversion med dialogrutan för extern organisation.](media/1_RCS_Repo_for_Share_with_form.JPG)
 
 Konfigurationen delas med den externa organisationen och är tillgänglig för den organisationen i den globala databasen. Därifrån kan den importeras till organisationens instans av RCS eller till dess instanser av Finance and Operations-appar.
 

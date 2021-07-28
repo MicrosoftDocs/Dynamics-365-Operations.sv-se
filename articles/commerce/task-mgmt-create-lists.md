@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: f3fcfae9f4ab458b4f14f18859f22fc25bf98623
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: e7964181a739a8138011abca77d0321d819e0a98
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027634"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354503"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Skapa uppgiftslistor och lägga till uppgifter
 
@@ -70,7 +70,7 @@ Lägg till aktivitetslänkar under tiden som du skapar en uppgift genom att föl
 
 Följande bild visar hur du väljer aktivitetslänkar i dialogrutan **redigera uppgift**.
 
-![Markera aktivitetslänkar i dialogrutan redigera uppgift](media/HQ-POS-Tasks-Linking.png)
+![Markera uppgiftslänkar i dialogrutan Redigera uppgift.](media/HQ-POS-Tasks-Linking.png)
 
 ### <a name="configure-a-pos-operation-so-that-it-can-be-linked-to-a-task"></a>Konfigurera en kassaoperation så att den kan länkas till en uppgift
 
