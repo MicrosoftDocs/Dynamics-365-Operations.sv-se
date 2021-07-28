@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 9a4f03d8cf6696b7e449448704e5360f2ef585b7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 38386087a74a0881867df89bbe26453dff740be3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803715"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350314"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsekvenskontroll av butikstransaktion
 
@@ -38,7 +38,7 @@ När inkonsekventa transaktioner fångas upp i bokföringsprocessen för utdrag,
 
 I följande diagram visas bokföringsprocessen där konsekvenskontroll av transaktioner tillämpas.
 
-![Bokföringsprocess för utdrag med konsekvenskontroll av transaktioner](./media/validchecker.png "Bokföringsprocess för utdrag med konsekvenskontroll av butikstransaktioner")
+![Bokföringsprocess för utdrag med konsekvenskontroll av transaktioner.](./media/validchecker.png "Bokföringsprocess för utdrag med konsekvenskontroll av butikstransaktioner")
 
 Batchprocessen **Validera butikstransaktioner** kontrollerar att butikens handelstransaktionsregister är konsekventa i följande scenarier.
 

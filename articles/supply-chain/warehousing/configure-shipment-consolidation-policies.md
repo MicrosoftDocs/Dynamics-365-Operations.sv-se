@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 03150ccdaeaf48754f04a4329cb1bc14ea2b6895
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9215672f4ace591bf7d964c8fbd3ad483bacca5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840423"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360434"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurera konsolideringspolicyer för leverans
 
@@ -179,7 +179,7 @@ Följ stegen nedan om du vill skapa en leveranskonsolideringspolicy för affärs
 1. Lämna alternativet **Konsolidera med öppna leveranser** inställt på *Nej*.
 1. Klicka på **Spara** i åtgärdsfönstret.
 1. På snabbfliken **Konsolideringsfält**, i listan **Återstående fält**, markerar du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
-1. Välj knappen **Lägg till** ![Högerpil](media/forward-button.png) om du vill flytta fältet till listan **Valda fält**.
+1. Välj knappen **Lägg till** ![Höger pil](media/forward-button.png) om du vill flytta fältet till listan **Markerade fält**.
 1. I åtgärdsfönstret väljer du **Redigera fråga**.
 1. I dialogrutan för frågeredigeraren, på fliken **Intervall**, letar du upp raden där fältet **Fält** är inställt på *Kundkonto* och ställer in fältet **Kriterium** för den raden som *USA – 001*.
 1. Välj **Lägg till** för att lägga till en rad med följande inställningar i rutnätet:
@@ -214,7 +214,7 @@ Följ stegen nedan om du vill skapa en leveranskonsolideringspolicy för affärs
 1. Ange alternativet **Konsolidera med öppna leveranser** som *Ja*.
 1. Klicka på **Spara** i åtgärdsfönstret.
 1. På snabbfliken **Konsolideringsfält**, i listan **Återstående fält**, markerar du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
-1. Välj knappen **Lägg till** ![Högerpil](media/forward-button.png) om du vill flytta fältet till listan **Valda fält**.
+1. Välj knappen **Lägg till** ![Höger pil](media/forward-button.png) om du vill flytta fältet till listan **Markerade fält**.
 1. I åtgärdsfönstret väljer du **Redigera fråga**.
 1. I dialogrutan för frågeredigeraren, i fliken **Kopplingar**, expanderar och väljer du **Register \> Läs in information** i trädet.
 1. Välj **Lägg till registerkoppling**.
@@ -251,9 +251,9 @@ Följ stegen nedan om du vill skapa en leveranskonsolideringspolicy för affärs
 1. Ange alternativet **Konsolidera med öppna leveranser** som *Ja*.
 1. Klicka på **Spara** i åtgärdsfönstret.
 1. På snabbfliken **Konsolideringsfält**, i listan **Återstående fält**, markerar du den rad där fältet **Fältnamn** är inställt på *Kundrekvisition*.
-1. Välj knappen **Lägg till** ![Högerpil](media/forward-button.png) om du vill flytta fältet till listan **Valda fält**.
+1. Välj knappen **Lägg till** ![Höger pil](media/forward-button.png) om du vill flytta fältet till listan **Markerade fält**.
 1. I listan **Återstående fält** väljer du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
-1. Välj knappen **Lägg till** ![Högerpil](media/forward-button.png) om du vill flytta fältet till listan **Valda fält**.
+1. Välj knappen **Lägg till** ![Höger pil](media/forward-button.png) om du vill flytta fältet till listan **Markerade fält**.
 1. I åtgärdsfönstret väljer du **Redigera fråga**.
 1. I dialogrutan för frågeredigeraren, på fliken **Intervall**, letar du upp raden där fältet **Fält** är inställt på *Kundkonto* och ställer in fältet **Kriterium** för den raden som *US-001*.
 1. Välj **OK** för att stänga dialogrutan.
@@ -283,7 +283,7 @@ Följ stegen nedan om du vill skapa en leveranskonsolideringspolicy för affärs
 1. Lämna alternativet **Konsolidera med öppna leveranser** inställt på *Nej*.
 1. Klicka på **Spara** i åtgärdsfönstret.
 1. På snabbfliken **Konsolideringsfält**, i listan **Återstående fält**, markerar du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
-1. Välj knappen **Lägg till** ![Högerpil](media/forward-button.png) om du vill flytta fältet till listan **Valda fält**.
+1. Välj knappen **Lägg till** ![Höger pil](media/forward-button.png) om du vill flytta fältet till listan **Markerade fält**.
 1. I åtgärdsfönstret väljer du **Redigera fråga**.
 1. På fliken **Intervall** i dialogrutan för frågeredigerare väljer du **Lägg till** för att lägga till en rad med följande inställningar i rutnätet:
 
@@ -317,7 +317,7 @@ Vanligtvis kan detta affärsärendet åtgärdas med hjälp av de standardprincip
 1. Lämna alternativet **Konsolidera med öppna leveranser** inställt på *Nej*.
 1. Klicka på **Spara** i åtgärdsfönstret.
 1. På snabbfliken **Konsolideringsfält**, i fältet **Återstående fält**, markerar du den rad där fältet **Fältnamn** är inställt på *Leveranssätt*.
-1. Välj knappen **Lägg till** ![Högerpil](media/forward-button.png) om du vill flytta fältet till listan **Valda fält**.
+1. Välj knappen **Lägg till** ![Höger pil](media/forward-button.png) om du vill flytta fältet till listan **Markerade fält**.
 1. I åtgärdsfönstret väljer du **Redigera fråga**.
 1. I dialogrutan för frågeredigeraren, på fliken **Intervall**, letar du upp raden där fältet **Fält** är inställt på *Lagerställe* och ställer in fältet **Kriterium** för den raden som *61, 63*.
 1. Välj **OK** för att stänga dialogrutan.

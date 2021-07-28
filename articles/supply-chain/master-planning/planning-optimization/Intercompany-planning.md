@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e6fff06cb6194f17444025f7ea1f9dbb46e4f3ea
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a3b48667bb266fec082c48e777fd71d8e5ef6dae
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907653"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357033"
 ---
 # <a name="intercompany-planning"></a>Koncernintern planering
 
@@ -76,7 +76,7 @@ I det här exemplet skapas en planerad tillverkningsorder i USMF-företaget för
 
 Följande illustration visar hur det här exemplet kan visas på sidan **Pegging på flera nivåer** för den planerade tillverkningsordern.
 
-![Koncerninternt exempel som inbegriper två företag](media/IntercompanyPlanning1.png)
+![Koncerninternt exempel som inbegriper två företag.](media/IntercompanyPlanning1.png)
 
 ### <a name="intercompany-example-that-involves-three-companies"></a>Koncerninternt exempel som inbegriper tre företag
 
@@ -84,7 +84,7 @@ I det här exemplet skapas en planerad inköpsorder i USMF-företaget för att t
 
 Följande illustration visar hur det här exemplet kan visas på sidan **Pegging på flera nivåer** för den planerade tillverkningsordern.
 
-![Koncerninternt exempel som inbegriper tre företag](media/IntercompanyPlanning2.png)
+![Koncerninternt exempel som inbegriper tre företag.](media/IntercompanyPlanning2.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

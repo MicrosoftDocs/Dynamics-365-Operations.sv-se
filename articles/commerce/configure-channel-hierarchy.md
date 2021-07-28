@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 94d38c5c3a091263b310f346f839e1a67d6c0609
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 79054573fa6f86bea5c4fe014233d71c01020348
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796134"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352600"
 ---
 # <a name="configure-a-channel-to-use-a-channel-navigation-hierarchy"></a>Konfigurera en kanal för att använda en kanalnavigeringshierarki
 
@@ -45,7 +45,7 @@ Om du vill konfigurera en kanal till att använda en navigeringshierarki för ka
 
 Följande bild visar hur du konfigurerar en kanal till att använda en navigeringshierarki för kanal.
 
-![Exempel på kanalkonfiguration](media/configure-channel-hierarchy-1.png)
+![Exempel på kanalkonfiguration.](media/configure-channel-hierarchy-1.png)
 
 ## <a name="set-attribute-metadata"></a>Ställ in attributmetadata
 
@@ -61,7 +61,7 @@ Följ dessa steg för att ställa in metadata för attribut.
 
 Följande bild visar ett exempel på en uppsättning kanalproduktattribut som konfigurerats på en kanalkategorinod.
 
-![Kanalvärdena för en kanalkategorinod](media/configure-channel-hierarchy-2.png)
+![Kanalattribut för en kanalkategorinod.](media/configure-channel-hierarchy-2.png)
 
 ## <a name="publish-changes"></a>Publicera ändringar
 
@@ -74,11 +74,11 @@ Gör så här om du vill publicera ändringarna.
 
 Följande bild visar hur du publicerar kanaluppdateringar.
 
-![Publicera kanaluppdateringar](media/configure-channel-hierarchy-3.png)
+![Publicera kanaluppdateringar.](media/configure-channel-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Skapa en navigeringshierarki för kanal](create-channel-hierarchy.md)
+[Skapa en kanalnavigeringshierarki](create-channel-hierarchy.md)
 
 
 

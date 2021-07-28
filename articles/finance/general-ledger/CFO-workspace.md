@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b42fc4f0e299dc785ef465efc54286effccfb92b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e44e0ff5c36190d0f66afb6a59389fee826d8214
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823846"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360722"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Lägg till ekonomiska dimensioner i arbetsyta för ekonomichef
 
@@ -45,14 +45,14 @@ Det här avsnittet beskriver hur du lägger till ekonomiska dimensioner till arb
 11. Ändra värdet **Korsfilterriktning** till **enkel**.
 12. Markera både **aktivera den här relationen** och **anta referensintegritet**, markera **OK**, och välj sedan **nära**.
 
-    [![Skapa en relation](./media/Create-relationship.png)](./media/Create-relationship.png)
+    [![Skapa en relation.](./media/Create-relationship.png)](./media/Create-relationship.png)
 
 13. I listan **fält** bör du se tabellen och de ekonomiska dimensionerna som är tillgängliga. Dra de ekonomiska dimensioner som du vill använda till rapportnivåfilter.
 14. Spara ändringarna.
 15. Högerklicka på projektet i programobjektträdet (AOT) och välj sedan **synkronisera**.
 16. Bygg ditt projekt och öppna sedan programmet för att visa resultaten.
 
-    [![Slutförd arbetsyta](./media/workspace.png)](./media/workspace.png)
+    [![Slutförd arbetsyta.](./media/workspace.png)](./media/workspace.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

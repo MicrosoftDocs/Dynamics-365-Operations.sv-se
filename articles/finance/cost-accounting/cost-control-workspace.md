@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4c5528545e0215b3a3f92b7bd5b492f82274d35a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6fd2a8548d4929a7a3b3b6d20adbc230c5edf6ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833052"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355237"
 ---
 # <a name="cost-control-workspace"></a>Arbetsyta för kostnadskontroll 
 
@@ -116,7 +116,7 @@ Arbetsytan **kostnadskontroll** har utformats som en webbrapport. Därför kan a
 
 Listan över rapporter som är tillgängliga för användare, som t.ex. för chefer, styrs av inställningen av alternativet **publicerad** på sidan **Konfigurationer av arbetsyta för kostnadskontroll**.
 
-![En rapport som användare kan visa i arbetsytan för kostnadskontroll](./media/report-cost-control.png)
+![En rapport som användare kan visa i arbetsytan för kostnadskontroll.](./media/report-cost-control.png)
 
 En chef kan välja att visa räkenskapskalenderperioden. Sessionsdatumet används för att bestämma innevarande standardperiod.
 
@@ -136,11 +136,11 @@ Ett rutnät visar varje kostnadselement som är associerat med dimensionshierark
 
 Två diagram visar en översikt över utfall kontra budget och budgetavvikelse per period.
 
-![Diagram visar en översikt över utfall kontra budget och budgetavvikelse per period](./media/cost-element-details-operations.png)
+![Diagram visar en översikt över faktiskt utfall kontra budget och budgetavvikelse per period.](./media/cost-element-details-operations.png)
 
 Användare kan klicka på **kostnadstransaktioner** för att gå till postens detaljer som krävs.
 
-![Kostnadsposter](./media/cost-entries.png)
+![Kostnadsposter.](./media/cost-entries.png)
 
 Hyra är till exempel en utgift som distribueras till kostnadsställen. En användare som vill förstå om hans eller hennes kostnadsställe ska bära hyreskostnaden kan öka detaljnivån för att se hur hyra beräknas.
 
@@ -148,7 +148,7 @@ Om användaren klickar på **Allokeringsunderlag** på sidan **kostnadstransakti
 
 I följande exempel är allokeringsunderlaget av typen **Formelallokeringsunderlag** och formeln visas. De faktorer som definierar formeln visas. Dessutom visar ett rutnät beräkningen som görs per kostnadsobjekt.
 
-![Beräkningar per kostnadsobjekt](./media/cost-entries-allocation-base.png)
+![Beräkningar per kostnadsobjekt.](./media/cost-entries-allocation-base.png)
 
 Ytterligare resurser 
 

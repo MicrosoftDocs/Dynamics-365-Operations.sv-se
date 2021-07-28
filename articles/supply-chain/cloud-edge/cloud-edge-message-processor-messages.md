@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 86f15831f11dc9fdcada9639858fd3b18cdc7503
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 35fd48ef300d46d00c07f3231d780d1ba431d8ef
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271111"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350580"
 ---
 # <a name="message-processor-messages"></a>Meddelandeprocessormeddelanden
 
@@ -88,15 +88,15 @@ I detta exempel använder du **När en affärshändelse inträffar** tillsammans
 
 1. I [Power Automate](https://preview.flow.microsoft.com) skapar du ett nytt, automatiserat molnflöde för flödesutlösaren **När en affärshändelse inträffar - Appen Fin & Ops (Dynamics 365)** följt av stegen **Parse JSON** och **Skicka ett e-postmeddelande** enligt följande bild.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate automatiskt molnbaserat flöde":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Automatiskt Power Automate-molnflöde.":::
 
 1. I steget **När en affärshändelse inträffar** kan du söka efter eller öppna navet **Instans** efter **Kategori** och därefter **Affärshändelse** > *Meddelandeprocessormeddelande som bearbetas* enligt följande bild.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate Steget När en affärshändelse inträffar":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate Steget När en affärshändelse inträffar.":::
 
 1. För steget **Parse JSON** anger du ett **Schema** som definierar de utökade fälten. Du kan använda alternativet *Hämta schema* på sidan **Katalog för affärshändelser** i Supply Chain Management eller börja genom att klistra in exempelschematexten. Exempeltexten innehåller följande bild.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Parse JSON-steg":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Parsa JSON-steg.":::
 
     ```json
     {
@@ -183,7 +183,7 @@ I detta exempel använder du **När en affärshändelse inträffar** tillsammans
 
 1. I steget **Skicka ett e-postmeddelande** kan du välja individuella fält eller börja med att klista in e-postmeddelandets brödtextexemplet i fältet **Brödtext**. Detta exempel tillhandahålls efter följande bild.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate steget skicka ett e-postmeddelande":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate-steget Skicka ett e-postmeddelande.":::
 
     ```plaintext
     Message queue: @{body('Parse_JSON')?['MessageQueue']}

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: cb4d544d8d74ad10432901381253f84ec9331ae7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cb14a22a231d3fcc139228b59af00d405626cd2c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745775"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358559"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>Säkerhetsdiagnos för uppgiftsinspelningar
 
@@ -39,7 +39,7 @@ I det här avsnittet finns information om hur du analyserar och hanterar krav p�
 
 4. Välj användare i fältet **Användar-ID**. Om användaren inte har behörighet för vissa menyalternativ uppdateras fältet **Saknade behörigheter** till **Ja**.
   
-  ![Sidan med uppgifter om säkerhetsmeny](../media/Security-Menu-Item-Details.png)
+  ![Sidan Artikeldetaljer för säkerhetsmeny.](../media/Security-Menu-Item-Details.png)
 
 5. Välj **Lägg till referens** för att visa en lista över de säkerhetsobjekt, inklusive roller, uppgifter och behörigheter som ger den saknade behörigheten.
 6. Välj ett säkerhetsobjekt i listan:

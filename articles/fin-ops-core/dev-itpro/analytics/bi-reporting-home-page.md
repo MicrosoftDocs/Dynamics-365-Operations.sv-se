@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 27681
+ms.custom:
+- "27681"
+- intro-internal
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e20b6d586e4effbb56d476504a679c3b0b8adb3c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0389ed6ca7926a4981029f6e91be2d1be4b8618e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754504"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354425"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Rapportering och analyser med startsidan för Power BI
 
@@ -37,7 +39,7 @@ Arbetsytorna kan använda informationsgrafik och effekter som stöds av Microsof
 
 Användarna kan interagera med data genom att klicka eller trycka på visuella element på sidan. De kan se orsak och verkan, och utföra enkla konsekvensanalyser utan att behöva lämna arbetsytan. Tack vare de interaktiva visuella elementen kan användarna analysera data och hitta dolda trender samtidigt som de har roligt.
 
-![Exempel på Power BI på en arbetsyta](./media/Power-BI-in-D365-Workspace.png)
+![Exempel på Power BI på en arbetsyta.](./media/Power-BI-in-D365-Workspace.png)
 
 Mer information finns i följande avsnitt:
 
@@ -50,7 +52,7 @@ Mer information finns i följande avsnitt:
 ## <a name="business-documents-and-printing"></a>Affärsdokument och utskrift
 Rapporteringslösningar används ofta för att samla in och kommunicera information om affärstransaktioner. En rapporteringslösning måste därför kunna producera fysiska yttringar av affärsdata med hjälp av befintliga enheter, till exempel nätverksskrivare. Exempel på affärsdokument är försäljningsfakturor, kundutdrag och checkar.
 
-[![Exempel på affärsdokument](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
+[![Exempel på affärsdokument.](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
 
 Mer information finns i följande avsnitt:
 
@@ -61,7 +63,7 @@ Mer information finns i följande avsnitt:
 ## <a name="electronic-reporting"></a>Elektronisk rapportering
 Elektronisk rapportering (ER) är det verktyg som du använder för att konfigurera elektroniska dokumentformat som följer rättsliga krav i olika länder eller regioner. Programmen för elektronisk rapportering omfattar ekonomisk granskning, momsrapportering och elektronisk fakturering.
 
-[![Exempel på elektronisk rapportering](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
+[![Exempel på elektronisk rapportering.](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
 
 Mer information finns i följande avsnitt:
 
@@ -72,7 +74,7 @@ Mer information finns i följande avsnitt:
 ## <a name="financial-reporting"></a>Ekonomisk rapportering
 Det finns ekonomiska standardrapporter som använder standardkategorierna för huvudkonton. Du kan använda rapportdesignern för att skapa eller ändra traditionella bokslut, till exempel resultaträkningar och balansräkningar. Du kan sedan dela resultatet med andra i organisationen. Exempel på ekonomisk rapportering är balansräkningar, kassaflöde och råbalanssammanfattning under året.
 
-[![Exempel på ekonomisk rapportering](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
+[![Exempel på ekonomisk rapportering.](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
 
 Mer information finns i följande avsnitt:
 

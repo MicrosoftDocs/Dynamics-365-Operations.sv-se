@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fe387631a1716c6612f9d475faff56d0aef3fdc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6f23b4c15937a0e61eb64b25eadef58c1fda231e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791691"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354623"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkronisera produktklassificeringar i Dynamics 365 Commerce
 
@@ -59,7 +59,7 @@ Så här kontrollerar du att deljobb **RetailProductRating** finns:
 
 Följande illustration visar ett exempel på deljobbdetaljer i handel.
 
-![Detaljer för deljobbet RetailProductRating](media/rnr-hq-ratings-sub-job.png)
+![Detaljer för deljobbet RetailProductRating.](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
 > Om du inte hittar deljobbet **RetailProductRating** kanske du redan har kört jobbet **synkronisera produktklassificering** och **1040 CDX**-jobb innan du initierade schemaläggare för handel. I det här fallet följer du stegen nedan för att köra jobbet **fullständig datasynkronisering**.
@@ -83,7 +83,7 @@ Om du vill importera produktvärderingar till handel från klassificering och re
 
 Följande illustration visar ett exempel på konfiguration av batchjobb i handel.
 
-![Konfiguration av batchjobbet Synkronisera produktklassificeringar](media/rnr-hq-batchjob-recurrence.png)
+![Konfiguration av batchjobbet Synkronisera produktklassificeringar.](media/rnr-hq-batchjob-recurrence.png)
 
 ## <a name="verify-that-the-batch-job-for-product-rating-synchronization-was-successful"></a>Kontrollera att batchjobbet för synkronisering av produktvärderingar har slutförts.
 
@@ -95,7 +95,7 @@ För att kontrollera att batchjobbet **Synkronisera produktklassificeringar** ly
 
 I följande illustration visas ett exempel på detaljerna i batchjobbet i Commerce när batchjobbet är tidsplanerat för körning med två timmars intervall.
 
-![Detaljer för batchjobbet Synkronisera produktklassificeringar](media/rnr-hq-batchjob-status-checking.png)
+![Detaljer för batchjobbet Synkronisera produktklassificeringar.](media/rnr-hq-batchjob-status-checking.png)
 
 ## <a name="make-product-ratings-available-at-the-pos"></a>Göra produkt produktvärderingar tillgängliga i POS.
 
@@ -113,15 +113,15 @@ Så här aktiverar du produktrecensioner i POS.
 
 Följande illustration visar ett exempel på konfigurationen av parametrarna för Commerce som ska aktiveras för produktvärderingar i POS.
 
-![Konfiguration av handelsparametrarna för produktvärderingar i POS](media/rnr-hq-enable-ratings-in-pos.png)
+![Konfiguration av Commerce-parametrar för produktklassificeringar i kassan.](media/rnr-hq-enable-ratings-in-pos.png)
 
 Följande illustration visar ett exempel på produktvärderingar i POS.
 
-![Produktvärderingar i POS](media/rnr-pos-catalog-ratings.png)
+![Produktvärderingar i kassan.](media/rnr-pos-catalog-ratings.png)
 
 Följande illustration visar ett exempel på produktvärderingar kundtjänstkanaler.
 
-![Produktvärderingar i en kundtjänstkanal](media/rnr-call-center-ratings.png)
+![Produktklassificeringar i en kundtjänstkanal.](media/rnr-call-center-ratings.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

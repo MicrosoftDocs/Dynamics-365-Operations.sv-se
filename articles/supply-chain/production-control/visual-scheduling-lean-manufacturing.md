@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c94834a491877a69a206f827ad60f12455456e3f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: c91de72f32f70fba09c6b7e3ca284553d0c858b1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188868"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353454"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Visuell tidsplanering för lean manufacturing
 
@@ -47,7 +47,7 @@ Du kan bara tidsplanera jobb av typen **Process**. Kanban-jobbet och dess egensk
 ## <a name="kanban-schedule-board"></a>Kanban-schematavla
 Sidan **Kanban-schematavla** innehåller sju huvudelement som visas på bilden nedan. 
 
-![Kanban-schematavla](./media/kanban-schedule-board-1024x554.png)
+![Kanban-schematavla.](./media/kanban-schedule-board-1024x554.png)
 1.  Åtgärdsfönster
 2.  Filtrera fält
 3.  Knapp för oförutsedda jobb
@@ -71,7 +71,7 @@ Du kan använda färger för att förbättra översikten över kanban-schematavl
 ## <a name="plan-unplanned-jobs"></a>Planera oplanerade jobb
 Du kan schemalägga oplanerade kanban-jobb från dialogrutan **Planera oförutsedda jobb**. Om du vill öppna den här dialogrutan, klicka på knappen **Oplanerade jobb** som visar det aktuella antalet oplanerade jobb. Alternativt kan du klicka på **Planera oplanerade jobb** i fliken **Tavla** i åtgärdsfönstret. I dialogrutan visas en lista med oplanerade kanban-jobb för arbetsgruppen. Du kan använda fältet **Filter** för att filtrera efter alla fält i rutnätet. Du kan till exempel filtrera på kanban-jobb för en viss produkt. När du har skapat en filtrerad lista över de jobb som du vill tidsplanera markerar du dem i listan och klickar sedan på **OK**. Om du vill använda automatisk planering för att tidsplaner, ställ in alternativet **Automatisk planering** på **Ja**. I detta fall tidsplaneras jobben till en period efter sina förfallodatum. Du kan också tidsplanera jobb per period. Välj bara en period i fältet **Period**. Följande bild visar ett exempel på dialogrutan **Planera oplanerade jobb**. 
 
-![Dialogrutan Planera oplanerade jobb](./media/plan-unplanned-jobs-1024x564.png)
+![Dialogrutan Planera oplanerade jobb.](./media/plan-unplanned-jobs-1024x564.png)
 
 ## <a name="sequence-kanban-jobs-within-the-same-period"></a>Sekvensen kanban-jobb inom samma period
 Du kan ändra ordningen på en eller flera valda jobb inom en period. Detta kan vara användbart om du vill prioritera vissa jobb under perioden. Alternativt kan behöva du ordna jobb som har samma produktattribut i sekvens för att optimera körningen. Du kan ändra ordningen genom att dra och släppa eller genom att använda menyalternativen **Bakåt** och **Framåt** på fliken **Tavla** i åtgärdsfönstret.

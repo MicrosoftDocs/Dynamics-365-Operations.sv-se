@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ea1fe6ba374c77784c88cf8202bff2eace217b6a
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: b285cefc35654695ee631cc73baa0ccc2c1b5ac9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102720"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359895"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Anpassa och använda kundportalen
 
@@ -27,7 +27,7 @@ I det här avsnittet beskrivs de olika sidor som medföljer kundportalen. Den f�
 
 Kundportalen erbjuder några medföljande webbsidor och åtgärder. I följande webbplatsöversikt finns en översikt över de webbsidor och åtgärder och vilka roller som kan utföra åtgärderna.
 
-![Översikt över kundportal webbplats](media/customer-portal-site-map.png "Översikt över kundportal webbplats")
+![Översikt över kundportalwebbplats.](media/customer-portal-site-map.png "Översikt över kundportal webbplats")
 
 ## <a name="typical-customizations"></a>Typiska anpassningar
 
@@ -61,12 +61,12 @@ Här följer de här standardstegen för att skicka en order från kundportalen.
     - **Rekvisitionsnummer** – Ange orderns rekvisitionsnummer. Detta fält krävs inte.
     - **Leverera till land/region** – ange landet eller regionen som artiklarna ska levereras till. Det här fältet ställs automatiskt in för användare som inte är administratörer.
 
-    ![Sidan orderinformation](media/customer-portal-order-information.png "Sidan orderinformation")
+    ![Sidan Orderinformation.](media/customer-portal-order-information.png "Sidan orderinformation")
 
 1. Välj **Nästa**.
 1. På sidan **Artiklar** markerar du **Lägg till artikel**.
 
-    ![Sidan artiklar](media/customer-portal-items.png "Sidan artiklar")
+    ![Sidan Artiklar.](media/customer-portal-items.png "Sidan artiklar")
 
 1. I dialogrutan **Artikelinformation** anger du följande fält:
 
@@ -75,14 +75,14 @@ Här följer de här standardstegen för att skicka en order från kundportalen.
     - **Enhet** – Ange måttenheten (t.ex. **styck**, **kgs** eller **box**).
     - **Uppskattat nettobelopp** – värdet beräknas som det uppskattade priset för artikeln × kvantiteten för den valda enheten.
 
-    ![Dialogruta för artikelinformation](media/customer-portal-item-information.png "Dialogruta för artikelinformation")
+    ![Dialogruta för artikelinformation.](media/customer-portal-item-information.png "Dialogruta för artikelinformation")
 
 1. Välj **Skicka** för att lägga till artikeln till ordern.
 1. Upprepa steg 4 till och med 6 tills du har lagt till alla artiklar som du vill beställa.
 1. När du har lagt till alla artiklar väljer du **Nästa** på sidan **Artiklar**.
 1. På sidan **Orderinformation** finns en sammanfattning av ordern. Granska orderinnehåll och leveransinformation. Om allting ser korrekt ut väljer du **Skicka** för att skicka ordern.
 
-    ![Sidan slutförd orderinformation](media/customer-portal-order-submit.png "Sidan slutförd orderinformation")
+    ![Sidan Slutförd orderinformation.](media/customer-portal-order-submit.png "Sidan slutförd orderinformation")
 
 ### <a name="standard-data-setup"></a>Ställa in standarddata
 
@@ -147,19 +147,19 @@ Alla kontrollerna i kundportalen är inbyggda i Power Apps-portalkontroller. Du 
 
 Den enda anpassade kontrollen som ingår i kundportalmallen används för att skapa panelerna på startsidan.
 
-![Paneler på startsidan](media/customer-portal-home-page-tiles.png "Paneler på startsidan")
+![Paneler på startsidan.](media/customer-portal-home-page-tiles.png "Paneler på startsidan")
 
 Gör så här om du vill ändra paneler.
 
 1. Öppna [Portalhanteringsapp](/powerapps/maker/portals/configure/configure-portal).
 1. I navigeringsfönstret till vänster, välj **Sidmallar**.
 
-    ![Navigeringsfönster för portalhantering](media/customer-portal-nav.png "Navigeringsfönster för portalhantering")
+    ![Navigeringsfönster för portalhantering.](media/customer-portal-nav.png "Navigeringsfönster för portalhantering")
 
 1. Markera den sidmall som heter **Start**.
 1. I fältet **webbmall** väljer du **start**-länken för att öppna källkoden för den sidan.
 
-    ![Fältet webbmall](media/customer-portal-web-template.png "Fältet webbmall")
+    ![Fältet Webbmall.](media/customer-portal-web-template.png "Fältet webbmall")
 
 1. Du bör nu se alla källkoder för startsidan och kan ändra den efter behov.
 

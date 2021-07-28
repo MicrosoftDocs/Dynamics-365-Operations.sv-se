@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ac3d540ee3d1737e4e8be45394cd5807ae4a8d6f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9636348e7840206ad1ef5669eae7f553231cadf1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796158"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352624"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurera leveranssätt och avgifter för kundtjänst
 
@@ -65,11 +65,11 @@ I avsnittet **rader** kan du definiera en eller flera avgifter med valuta, enlig
 
 Företag konfigurerar ofta skiftindelade avgifter. I detta fall baseras det belopp som kunden ska betala för leveransen på ordervärdet. Om du vill konfigurera skiftindelade avgifter fyller du i fältet **Från belopp** och **Till belopp** förutom att definiera själva avgiften i fältet **Avgiftsvärde**. Exempelvis för order som har ett värde som är mindre än 50 $ debiterar en återförsäljare avgifter på 5,95 $ för markleverans. Order som har ett värde som är lika med eller större än 50 $, men mindre än 100 $, återförsäljaren debiterar 7,95 $. Order som har ett värde som är lika med eller större än 100 $, ger återförsäljaren gratis leverans. Följande bild visar konfigurationen av dessa avgifter.
 
-![Exempel på fasta skiftindelade avgifter](media/fixedtieredcharges.png)
+![Exempel på fasta skiftindelade avgifter.](media/fixedtieredcharges.png)
 
 Du kan använda en blandning av kategorier för avgifter, beroende på företagets behov. Exempelvis för alla order som har ett värde som är mindre än 100 $ finns en fast avgift på 9,95 $ för leverans. För order som har ett värde som är lika med eller överstiger 100 $ beräknas leveransavgifter till 5 procent av värdet för ordern. Följande bild visar konfigurationen av dessa avgifter.
 
-![Exempel på blandade skiftindelade avgifter](media/mixedtieredcharges.png)
+![Exempel på blandade skiftindelade avgifter.](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Använd leveranssätt under orderregistreringen i en kundtjänst
 

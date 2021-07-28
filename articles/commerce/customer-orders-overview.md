@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260594
+ms.custom:
+- "260594"
+- intro-internal
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: e495ac4f3cc55503cc8b15d4d4640d3468ab7cd2
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936740"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349636"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundorder i kassa (POS)
 
@@ -44,7 +46,7 @@ Innan du försöker använda funktionen kundorder i POS måste du se till att sl
 
 Om du vill använda kundorder måste du konfigurera leveranssätt som butikskanalen kan använda. Du måste definiera minst ett leveranssätt som kan användas när orderrader levereras till en kund från en butik. Du måste också definiera minst ett leveranssätt som kan användas när orderrader hämtas från butiken. Leveranssätt definieras på sidan **leveranssätt** i Commerce-administration. För mer information om hur du ställer in leveranssätt för Commerce-kanaler, se [Definiera leveranssätt](./configure-call-center-delivery.md#define-delivery-modes).
 
-![SIdan leveranssätt](media/customer-order-modes-of-delivery.png)
+![Sidan för leveranssätt.](media/customer-order-modes-of-delivery.png)
 
 
 ### <a name="set-up-fulfillment-groups"></a>Ställ in uppfyllelsegrupper
@@ -53,7 +55,7 @@ Vissa butiker eller lagerställen kanske inte kan uppfylla kundorder. Genom att 
 
 I Commerce version 10.0.12 och senare kan organisationer ange huruvida lagerstället eller de kombinationer av lagerställen och butiker som har definierats i uppfyllelsegrupper kan användas för leverans, för upphämtning eller för både leverans och upphämtning. Detta medger ökad flexibilitet för företaget när detta ska avgöra vilka lagerställen som kan väljas när en kundorder skapas för artiklar som ska levereras, kontra vilka butiker som kan väljas när en kundorder skapas för artiklar som ska hämtas upp. Om du vill använda dessa konfigurationsalternativ aktiverar funktionen **Möjlighet att ange platser som "leverans" eller "upphämtning" aktiverad inom en uppfyllelsegrupp**. Om ett lagerställe som är länkat till en uppfyllelsegrupp inte är en butik kan det endast konfigureras som en leveransplats. Den kan inte användas när order för upphämtning har konfigurerats i POS.
 
-![Sidan uppfyllelsegrupper](media/customer-order-fulfillment-group.png)
+![Sidan för uppfyllelsegrupper.](media/customer-order-fulfillment-group.png)
 
 ### <a name="configure-channel-settings"></a>Konfigurera kanalinställningar
 
@@ -65,7 +67,7 @@ När du arbetar med kundorder i POS måste du tänka på några av inställninga
 - **Använd målbaserad moms** – detta alternativ anger om leveransadressen används för att bestämma vilken momsgrupp som ska användas på orderrader som levereras till kundens adress.
 - **Använd kundbaserad moms** – det här alternativet anger om momsgruppen som definieras för kundens leveransadress används för att momsorder för kund som skapas i POS för leverans till kundens hem.
 
-![Inställningar för butikskanal på sidan butiker](media/customer-order-all-stores.png)
+![Konfiguration för butikskanal på sidan Butiker.](media/customer-order-all-stores.png)
 
 ### <a name="set-up-customer-order-parameters"></a>Ställ in orderparametrar för kund
 
@@ -80,7 +82,7 @@ Innan du försöker skapa kundorder i POS måste du konfigurera lämpliga parame
 - **Leveransavgiftskod** – om alternativet **Använd avancerade automatiska tillägg** är inställt på **Ja** har den här parameterinställningen ingen effekt. Om alternativet är inställt på **Nej** kommer användarna att uppmanas att ange leveransavgift manuellt när de skapar kundorder i POS. Använd den här parametern om du vill mappa en avgiftskod för kundreskontra som ska kopplas till order när användarna anger en leveransavgift. Avgiftskoden anger den ekonomiska bokföringslogiken för leveransavgift.
 - **Använd avancerade automatiska omkostnader** – Ställ in det här alternativet på **Ja** för att använda systemberäknade automatiska omkostnader när kundorder skapas i POS. Dessa automatiska debiteringar kan användas för att beräkna fraktavgifter eller andra order- eller artikelspecifika tillägg. För mer information om hur du ställer in och använder avancerade automatiska tillägg finns i [Avancerade automatiska avgifter för flera kanaler](./omni-auto-charges.md).
 
-![Fliken kundorder på sidan Commerce-parametrar](media/customer-order-parameters.png)
+![Fliken kundorder på sidan Commerce-parametrar.](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>Uppdatera skärmlayouter för transaktioner i POS
 
@@ -95,7 +97,7 @@ Kontrollera att POS [skärmlayout](./pos-screen-layouts.md) är konfigurerad så
 - **Ändra leveranssätt** – den här åtgärden kan användas för att snabbt ändra leveranssättet för rader som redan har konfigurerats för leverans, utan att användarna måste gå igenom flödet "leverera alla produkter" eller "leverera valda produkter" igen.
 - **Åsidosättning av insättningar** – denna operation kan användas för att ändra insättningsbeloppet som kunden ska betala för den valda kundordern.
 
-![Åtgärder i kassatransaktionens fönster](media/customer-order-screen-layout.png)
+![Åtgärder i fönstret för kassatransaktion.](media/customer-order-screen-layout.png)
 
 ## <a name="work-with-customer-orders-in-pos"></a>Arbeta med kundorder i POS
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: c398579a0a408e7f5625a3e801a967955c4b1e5b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c731e0284b720394059384e21deea1ea4407718c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020125"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352820"
 ---
 # <a name="tax-isnt-calculated-or-the-tax-amount-is-zero"></a>Moms beräknas inte, eller också är momsbeloppet noll
 
@@ -32,17 +32,17 @@ Om transaktionen inte väljer de korrekta momskoderna – eller om den inte väl
 
 1. På transaktionsraden, på snabbfliken **Radinformation**, i fliken **Inställningar**, i avsnittet **Moms** bekräftar du att rätt momsgrupper har valts i fälten för **Artikelgrupp för moms** samt **Momsgrupp**. Om rätt momsgrupper inte har valts, väljer du dem.
 
-    [![Fält för Artikelgrupp för moms samt Momsgrupp](./media/tax-not-calculated-tax-amount-zero-Picture1.png)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)
+    [![Fält för Artikelgrupp för moms samt Momsgrupp.](./media/tax-not-calculated-tax-amount-zero-Picture1.png)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)
 
 2. Gå till **Skatt** \> **Indirekta skatter** \> **Moms** \> **Momsgrupper**.
 3. Välj lämplig momsgrupp – i snabbfliken **Inställningar** noterar du sedan skattekoden i fältet **Momskod**.
 
-    [![Sida för momsgrupper](./media/tax-not-calculated-tax-amount-zero-Picture2.png)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)
+    [![Sida för momsgrupper.](./media/tax-not-calculated-tax-amount-zero-Picture2.png)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)
 
 4. Gå till **Skatt** \> **Indirekta skatter** \> **Moms** \> **Artikelgrupper för moms**.
 5. Välj lämplig momsgrupp och kontrollera sedan på snabbfliken **Inställningar** att skattekoden i fältet **Momskod** matchar skattekoden för momsgruppen.
 
-    [![Sida för artikelmomsgrupper](./media/tax-not-calculated-tax-amount-zero-Picture3.png)](./media/tax-not-calculated-tax-amount-zero-Picture3.png)
+    [![Sida för artikelmomsgrupper.](./media/tax-not-calculated-tax-amount-zero-Picture3.png)](./media/tax-not-calculated-tax-amount-zero-Picture3.png)
 
 6. Om skattekoderna inte matchar uppdaterar du momskoden för en av grupperna.
 
@@ -53,12 +53,12 @@ Om momskoderna är undantagna, eller om momssatsen är 0 (noll) blir momsberäkn
 1. Gå till **Skatt** \> **Indirekta skatter** \> **Moms** \> **Momsgrupper**.
 2. Välj lämplig momsgrupp och kontrollera sedan, i snabbfliken **Inställningar**, att kryssrutan **Undantagen** har rensats. Rensa om denna har markerats.
 
-    [![Kryssrutan Undantagen på sidan Momsgrupper](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)
+    [![Kryssrutan Undantagen på sidan Momsgrupper.](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)
 
 3. Gå till **Moms** \> **Indirekta skatter** \> **Moms** \> **Momskoder**.
 4. Välj lämplig momskod och kontrollera sedan att momssatsvärdet i fältet **Värde** inte är 0 (noll). Om det är 0 uppdaterar du fältet så att det får rätt momssats.
 
-    [![Värdefält på värdesidan för moms](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
+    [![Värdefält på värdesidan för moms.](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
 
 ## <a name="determine-whether-zero-is-the-correct-tax-amount"></a>Fastställ om noll är korrekt momsbelopp
 
@@ -67,7 +67,7 @@ I vissa scenarier är momsbeloppet 0 (noll) korrekt. Följ anvisningarna nedan o
 1. Gå till **Redovisning** \> **Inställningar för transaktionsregister** \> **Redovisningsparametrar**.
 2. På fliken **Moms**, i fältet **Beräkningsmetod**, bekräftar du att **Summa** har valts.
 
-    [![Fältet för beräkningsmetod på sidan Redovisningsparametrar](./media/tax-not-calculated-tax-amount-zero-Picture6.png)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)
+    [![Fältet för beräkningsmetod på sidan Redovisningsparametrar.](./media/tax-not-calculated-tax-amount-zero-Picture6.png)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)
 
 3. Gå till **Moms** \> **Indirekta skatter** \> **Moms** \> **Momskoder**.
 4. Välj lämplig momskod, välj **Beräkning** \> **Marginalbas** och bekräfta att marginalbasen angetts som **Nettobelopp för fakturasaldo** eller **Fakturasumma inkl. andra momsbelopp**. Mer information finns i [Fakturasumma inkl. andra momsbelopp](marginal-base-field.md#invoice-total-incl-other-sales-tax-amounts).

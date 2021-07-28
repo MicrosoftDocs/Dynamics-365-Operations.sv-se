@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 62f812c7c7fa06deb5f41508044b029e6c5ca4a0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 24f019547b9edc932c203d5dc8c73013007af599
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825744"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361052"
 ---
 # <a name="maintenance-rounds"></a>Underhållsomgångar
 
@@ -80,7 +80,7 @@ In **Tillgångshantering** kan du skapa underhållsomgångar för olika tillgån
 
 Bilden nedan visar och exempel på en underhållsrunda som innehåller tre tillgångar.
 
-![Figur 1](media/13-preventive-maintenance.png)
+![Figur 1.](media/13-preventive-maintenance.png)
 
 
 ## <a name="schedule-maintenance-rounds"></a>Schemalägg underhållsomgångar
@@ -106,9 +106,9 @@ När du har ställt in en underhållsomgång kör du ett schemajobb för att tid
 
 De två bilderna nedan visar ett schemajobb i dialogrutan **Schemalägg underhållsomgångar** och de rader för underhållsschema som skapats i **Alla underhållsscheman** baserat på det schemajobbet.
 
-![Figur 2](media/14-preventive-maintenance.png)
+![Figur 2.](media/14-preventive-maintenance.png)
 
-![Figur 3](media/15-preventive-maintenance.png)
+![Figur 3.](media/15-preventive-maintenance.png)
 
 - När arbetsorder skapas manuellt på tillgångar som täcks av en leverantörsgaranti visas en dialogruta som gör användaren medveten om garantin. Skapandet av arbetsordern kan sedan annulleras. Kontrollen av en garantirelation utelämnas för arbetsorder som skapas automatiskt.  
 - Du kan ställa in ett batchjobb på snabbfliken **Kör i bakgrunden** för att schemalägga omgångar med regelbundna intervall.  

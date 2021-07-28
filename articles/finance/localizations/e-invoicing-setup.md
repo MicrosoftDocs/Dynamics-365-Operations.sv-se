@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9aac18155fbc7a87554ac0521cd9f40d11eba9e2
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 35a2abaa2165288097bc07b47320e002efc290e7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890841"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348496"
 ---
 # <a name="set-up-electronic-invoicing"></a>Ställ in e-fakturering
 
@@ -37,7 +37,7 @@ Konfigureringsmöjligheter är beroende av formatkonfigurationen för elektronis
 
 Följande bild visar huvudkomponenterna i funktionen för e-fakturering.
 
-![Funktionen för e-fakturering: översikt](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
+![Översikt över funktionen för e-fakturering.](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
 På grund av variationer i fakturaformat och åtgärdsflöden kan funktionsinställningarna variera beroende på land eller region eller efter affärsbehov.
 
@@ -50,7 +50,7 @@ Installationsprocessen måste utföras i din RCS-miljö. Följ de här stegen om
 3. På sidan **Funktioner för e-fakturering** välj **Importera** för att importera konfiguration av ER-datamodell från den globala databasen.
 4. Välj **Lägg till** om du vill skapa en funktion för e-fakturering. Du kan antingen skapa funktionen från början eller härleda den från en befintlig funktion för e-fakturering.
 
-    ![Lägg till en funktion för e-fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
+    ![Lägga till en funktion för e-fakturering.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
 > [!NOTE]
 > När du skapar en ny funktion för e-fakturering har den ett versionsnummer och standardstatus är inställd på **utkast**.
@@ -63,21 +63,21 @@ Följ de här stegen om du vill lägga till ER-format till en funktion för e-fa
 
 1. På sidan **Funktioner för e-fakturering** på fliken **Konfigurationer** välj **Lägg till** för att lägga till ER-filformatkonfigurationer för funktion för e-fakturering.
 
-    ![Lägg till konfigurationer för funktion för e-fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
+    ![Lägga till konfigurationer för funktionen för e-fakturering.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > När du skapar en funktion för e-fakturering från början måste du lägga till alla konfigurationer för ER-filformat manuellt. När du härleder en funktion för e-fakturering från en befintlig funktion, skapas konfigurationerna för ER-filformat automatiskt eftersom de ärvs från den ursprungliga funktionen för e-fakturering.
 
 2. Välj **Redigera** om du vill öppna sidan **Formatdesigner**, där du kan redigera konfigurationen för ER-filformat.
 
-    ![Redigera konfigurationer för funktion för e-fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
+    ![Redigera konfigurationer för funktionen för e-fakturering.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > När du redigerar formatet är status för konfigurationsversionen inställd på **utkast**.
 
 3. Använd sidan **Formatdesigner** om du vill ändra konfigurationen av filformat. Mer information finns i [Skapa konfigurationer för elektroniska dokument](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
-    ![Formatdesignersida](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
+    ![Formatdesignersida.](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 
 ### <a name="feature-setups"></a>Funktionsinställningar
 
@@ -87,18 +87,18 @@ Följ de här stegen om du vill lägga funktionsinställningar till en funktion 
 
 1. På sidan **Funktioner för e-fakturering** på fliken **Inställningar** välj **Lägg till** för att lägga till funktionsinställningar till funktionen för e-fakturering.
 
-    ![Lägg till inställning av en funktion för e-fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
+    ![Lägga till konfigurationer för funktionen för e-fakturering.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
     > När du skapar en funktion för e-fakturering från början måste du lägga till alla funktionsinställningar som du behöver. När du härleder en funktion för e-fakturering från en befintlig funktion, skapas alla funktionsinställningar automatiskt eftersom de ärvs från den ursprungliga funktionen för e-fakturering.
 
 2. Välj **Redigera** om du vill redigera inställning av funktionsversion.
 
-    ![Redigera inställning av en funktion för e-fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
+    ![Redigera konfigurationer för funktionen för e-fakturering.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
 3. Använd sidan **Inställning av funktionsversion** för att konfigurera åtgärder, tillämpningsreglerna och variabler.
 
-    ![Åtgärder, tillämpningsreglerna och variabler](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
+    ![Åtgärder, tillämpningsregler och variabler.](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
 
 ### <a name="actions"></a>Åtgärder
 
@@ -113,7 +113,7 @@ På sidan **Inställning av funktionsversion** på fliken **Åtgärder** på sna
 - Välj **Ny** eller **Ta bort** om du vill lägga till nya åtgärder eller ta bort befintliga åtgärder.
 - Välj **Upp** eller **Nedåt** om du vill flytta valda åtgärder uppåt eller nedåt i rutnätet och därför ändra ordningen som de körs i. Åtgärderna körs i den ordning som de visas i rutnätet, uppifrån och ned.
 
-![Hantera åtgärder](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
+![Hantera åtgärder.](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
 
 Följande register beskriver de fält som är tillgängliga i snabbfliken **Åtgärder**.
 
@@ -129,7 +129,7 @@ Följande register beskriver de fält som är tillgängliga i snabbfliken **Åtg
 
 På snabbfliken **Parametrar** visas parametrarna för den åtgärd som är vald på snabbfliken **Åtgärder**.
 
-![Snabbfliken parametrar](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
+![Snabbfliken Parametrar.](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
 
 Följande register beskriver de fält som är tillgängliga i snabbfliken **Parametrar**.
 
@@ -259,20 +259,20 @@ Med tillämplighetsregler kan du skapa logiska regler som bestämmer användning
 
 1. På sidan **Inställningar av funktionsversion** på fliken **Tillämplighetsregler** välj **Ny** för att lägga till en tillämplighetsregel.
 
-    ![Hantera tillämplighetsregler](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
+    ![Hantera tillämplighetsregler.](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
 
 2. I rutnätet väljer du de satser som ska grupperas.
 3. Välj **Gruppsats**.
 
-    ![Grupperingssatser](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
+    ![Grupperingssatser.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
 
     När satser grupperas läggs en ny kolumn till i rutnätet. Den här kolumnen anger den logiska operatorn för grupperade satser.
 
-    ![Logisk operator för grupperade satser](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
+    ![Logisk operator för grupperade satser.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
 
 Om du vill dela upp grupperade satser markerar du de grupperade satserna som ska delas upp och väljer sedan **dela upp sats**.
 
-![Dela upp satser](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
+![Dela upp satser.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
 
 > [!NOTE]
 > När du delar upp en sats ska du alltid börja med den innersta grupperingsnivån.
@@ -294,7 +294,7 @@ Du kan skapa variabler och sedan använda dem som indatavärde för en parameter
 
 - På sidan **inställning av funktionsversion** på fliken **variabler** välj **ny** eller **ta bort** för att hantera variabler.
 
-    ![Hantera variabler](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
+    ![Hantera variabler.](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
 
 Följande register beskriver de fält som är tillgängliga på fliken **variabler**.
 
@@ -310,7 +310,7 @@ Följande register beskriver de fält som är tillgängliga på fliken **variabl
 
 - På sidan **Inställning av funktionsversion** i åtgärdsfönstret väljer du **validera** för att validera inställning av funktionsversion.
 
-   ![Klicka på knappen Validera](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
+   ![Markera knappen Validera.](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
 
 Vid valideringen kontrolleras konsekvensen i hela konfigurationen. Om till exempel en specifik parameter för en åtgärd är obligatorisk men värdet fortfarande är tomt, identifierar valideringen den här inkonsekvensen och du får en varning.
 
@@ -323,7 +323,7 @@ Följ dessa steg för att aktivera en miljö för e-fakturering för funktionen 
 1. På sidan **Funktioner för e-fakturering** på fliken **Miljöer** välj **Aktivera** för att lägga till miljö för e-fakturering.
 2. I fältet **gäller från** anger du det datum då den nya miljön ska börja gälla.
 
-![Aktivera en miljö för e-fakturering](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
+![Aktivera en miljö för e-fakturering.](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
 ## <a name="organizations"></a>Organisationer
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c31564fdc40cb0cba82b9ab8fbfdfee7adf4f4ee
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 579f2946bceceaacc3e4f1d664a5211ce40f705e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053019"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353696"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Definiera och hantera ett förmånsprogram
 
@@ -32,7 +32,7 @@ Personal innehåller en uppsättning av verktyg som kan användas för att stäl
 
 Innan arbetare kan anmäla sig till förmåner, måste du skapa elementen för varje förmån. Dessa element kombinerar liknande förmånplaner och definierar standardinställningen, till exempel avdragspriser och redovisningsinformation. Många av de här inställningarna kan justeras när arbetare anmäler sig till förmånen vid ett senare tillfälle. För varje förmånplan kan en organisation erbjuda flera anmälningsalternativ, eller så kan en arbetare anmäla sig till planen. 
 
-[![Processflöde för förmåner](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
+[![Processflöde för förmåner.](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
 ## <a name="benefit-elements"></a>Förmånselement
 
@@ -44,7 +44,7 @@ Innan du börjar skapa förmåner och anmäla arbetare till dem, måste du defin
 
 För varje typ av förmån som till exempel syn- eller tandvård kan en organisation erbjuda en eller flera planer till dess arbetare. För varje plan kan organisationen erbjuda olika alternativ. T.ex. kan arbetare köpa ytterligare livförsäkringsplaner på ett, två eller tre gånger deras årliga lön. Varje kombination av en plan och alternativ blir en förmån som arbetare kan anmäla sig till. 
 
-[![förmånsbild](./media/benefit-pic.png)](./media/benefit-pic.png)
+[![förmånsbild.](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## <a name="eligibility"></a>Berättigande
 Många faktorer bestämmer berättigande för arbetaren för olika typer av förmåner som en arbetsgivare erbjuder. När du skapar en förmån i Dynamics 365 Human Resources kan du ange den typ av berättigande som gäller för den förmånen. 

@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 17251
+ms.custom:
+- "17251"
+- intro-internal
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ed56920ca1b4f2ac1313f7025b7a3c7245e9913
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 93e5d46d6b9817b7f019e529bf4da6199bc29dbe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5898220"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355734"
 ---
 # <a name="budget-planning-overview"></a>Översikt över budgetplanering
 
@@ -40,7 +42,7 @@ En organisation kan konfigurera budgetplanering och sedan ställa in budgetplane
 - **Budgetplaneringsfaser** – definierar vilka steg som en budgetplan följer från dess startdatum till sista godkännande. Budgetplaneringsfaser arrangeras i budgetplaneringsarbetsflöden.
 - **Budgetplaneringsarbetsflöden** – budgetplaneringsarbetsflöden består av och definierar och budgetplaneringsfaser. Budgetplaneringsarbetsflöden är kopplade till budgeteringsarbetsflöden. Budgeteringsarbetsflöden är de automatiserade och manuella processer som flyttar budgetplaner genom budgetplaneringsfaserna.
 
-[![Terminologi för budgetplanering](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
+[![Terminologi för budgetplanering.](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
 ### <a name="typical-tasks"></a>Vanliga uppgifter
 
@@ -65,11 +67,11 @@ Ett valfritt men rekommenderat första steg är att skapa ett schema som innehå
 
 Illustrationen visar ett allmänt exempel, där separata budgetplaneringsarbetsflöden skapas för olika nivåer i organisationen. Faser anges i varje arbetsflöde, och specifika scenarier tilldelas varje fas för att innehålla budgetdata. Uppgifter utförs för att flytta data från en fas till nästa. Belopp till exempel fördelas eller aggregeras till olika konton, godkännanden och andra granskningar. I det här exemplet visar kursiv stil ett scenario som inte går att redigera under fas, eller data som är historisk eller godkänts i en tidigare fas och därför inte bör ändras.
 
-[![Allmänt schema för budgetplanering](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
+[![Allmänt schema för budgetplanering.](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
 Följande illustration visar ett exempel där företagets huvudkontor uppskattar basbeloppet för den initiala budgeten och distribuerar dem till försäljningsavdelningarna. Försäljningsavdelningarna beräknar sedan prognoserna och skickar dem till högkvarteret, där budgetchefen sammanställer och justerar prognosen. Slutligen skickar budgetchefen de justerade budgetbeloppen till sin ekonomichef för granskning, slutjustering och godkännande.
 
-[![Exempel på budgetplaneringsschema](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
+[![Exempel på budgetplaneringsschema.](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
 ### <a name="organization-hierarchy-for-budget-planning"></a>Organisationshierarki för budgetplanering
 
@@ -93,7 +95,7 @@ En bra tips är att skapa ett budgetplaneringsarbetsflöde för varje nivå i en
 
 Du skapar budgeteringsarbetsflödet för budgetplanering på sidan **Budgeteringsarbetsflöden**. Processen liknar processen för att skapa andra arbetsflöden. Illustrationen nedan visar ett exempel på ett arbetsflöde för administration.
 
-[![Budgetera arbetsflöde för budgetplanering](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
+[![Budgetera arbetsflöde för budgetplanering.](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
 Arbetsflödestyperna innehåller följande element:
 
@@ -141,11 +143,11 @@ När du ställer in en fasallokering kopplar du budgetplaneringsarbetsflödet oc
 
 I exempelschemat som visas tidigare i den här artikeln utförs en allokering för att överföra belopp från en budgetplan och scenarier i fasen Baslinje för huvudkontor till en annan budgetplan och andra scenarier i fasen Uppskatta för försäljningsavdelningen. Illustrationen visar den relevanta delen av exempelschemat.
 
-[![Fasallokering](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
+[![Fasallokering.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
 Fasallokering I exempelschemat görs också en sammanställning från budgetplanerna och scenarierna i fasen Skickad för säljavdelningen till en överordnad plan i fasen Samlad uppdatering för huvudkontoren. Illustrationen visar den relevanta delen av exempelschemat.
 
-[![Sammansättning](./media/aggregation-109x300.png)](./media/aggregation.png)
+[![Sammansättning.](./media/aggregation-109x300.png)](./media/aggregation.png)
 
 ### <a name="priorities"></a>Prioriteter
 
@@ -163,7 +165,7 @@ Förutom kolumner för budgetbelopp kan du definiera kolumner för projektet, f�
 
 I exempelschemat kan det vara en bra idé att skapa kolumner för scenarierna "kopiera försäljning", "kontrakt" och "prognos". (Följande bild visar den relevanta delen av schemat.) Du kan sedan bryta ut ett eller alla dessa scenarier till separata kolumner för varje kvartal av räkenskapsåret, så att försäljningschefen kan ange exakt prognosbelopp för varje period.
 
-[![Illustration av avsnitt i schemat för att lägga till kolumner](./media/columns.png)](./media/columns.png)
+[![Illustration av avsnitt i schemat för att lägga till kolumner.](./media/columns.png)](./media/columns.png)
 
 Du kan också ange om respektive layoutelement (kolumn) ska gå att redigera och om det finns tillgängligt i alla kalkylbladsmallar som skapas för layouten. För exempelschemat i layouten som används för uppskattningsfasen är prognoskolumnerna redigerbara, men kolumnerna för försäljning och kontrakt är skrivskyddade.
 
@@ -201,7 +203,7 @@ Du kan också använda menyn **Åtgärder** för att skapa en ny process att kop
 
 Ett annat användbart kommando på menyn **Åtgärder** är **Visa budgetprocessens status**. Detta kommando visar grafiskt budgetplanerna i en process, tillsammans med relevanta data, till exempel planernas arbetsflödesstatus, sammanfattningar efter belopp och enhet och enklicksnavigering till själva budgetplanerna.
 
-[![Status för budgetplaneringsprocess](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+[![Status för budgetplaneringsprocess.](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
