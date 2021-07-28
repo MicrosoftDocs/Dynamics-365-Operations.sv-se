@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8c2ae3368db47363a65e8ecd6317bb0432829802
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ccad9c55c0200d008525c7d3fdaeeef99b7eecfb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748835"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350750"
 ---
 # <a name="general-troubleshooting"></a>Allmän felsökning
 
@@ -44,16 +44,16 @@ När du har installerat verktyget package deployer installerar du lösningspaket
 
 1. Hämta den senaste lösningspaketfilen från Yammer. com. När paketets zip-fil har hämtats högerklickar du på den och väljer **egenskaper**. Markera kryssrutan **Avblockera** och välj sedan **Använd**. Om du inte ser kryssrutan **Avblockera** är zip-filen redan avblockerad och du kan hoppa över det här steget.
 
-    ![Dialogrutan egenskaper](media/unblock_option.png)
+    ![Dialogrutan Egenskaper.](media/unblock_option.png)
 
 2. Extrahera paketets zip-fil och kopiera alla filer i mappen **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.43**.
 
-    ![Innehåll i mappen Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438](media/extract_package.png)
+    ![Innehåll i mappen Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438.](media/extract_package.png)
 
 3. Klistra in alla kopierade filer i mappen **Verktyg** i verktyget package deployer. 
 4. Kör **PackageDeployer. exe** för att välja Dataverse-miljön och installera lösningarna.
 
-    ![Innehåll i mappen verktyg](media/paste_copied_files.png)
+    ![Innehåll i mappen Verktyg.](media/paste_copied_files.png)
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Aktivera och visa spårningslogg för plugin-program i Dataverse för att visa felinformation
 

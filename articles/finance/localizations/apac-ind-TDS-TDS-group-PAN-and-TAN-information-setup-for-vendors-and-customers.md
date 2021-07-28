@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: fd33b1775afefed798f1e9bb7601f4112222c430
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f4add6d32c34993338b0e587723df12d0a33ce43
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023599"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358276"
 ---
 # <a name="tds-group-pan-and-tan-information-setup-for-vendors-and-customers"></a>TDS-grupp, PAN- och TAN-information för leverantörer och kunder
 
@@ -31,7 +31,7 @@ I det här avsnittet beskrivs hur du ställer in information om gruppen Skatteav
 
 1. Gå till **Leverantörsreskontra \> Leverantörer \> Alla leverantörer** eller **Kundreskontra \> Kunder \> Alla kunder**.
 
-    [![Sidan Alla leverantörer](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
+    [![Sidan Alla leverantörer.](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
 
 2. I åtgärdsfönstret väljer du **Ny** för att skapa en leverantör eller kund och anger den information som krävs. Du kan även välja en befintlig leverantör eller kund.
 3. Under snabbfliken **Faktura och leverans**, i avsnittet **Källskatt**, ställer du in alternativet **Beräkna källskatt** på **Ja** för att beräkna källskatt, TDS eller skatt insamlad vid källan (TCS) för leverantören eller kunden.
@@ -60,7 +60,7 @@ I det här avsnittet beskrivs hur du ställer in information om gruppen Skatteav
     - Lokal myndighet
     - Annat
 
-    [![Snabbfliken Skatteinformation](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
+    [![Snabbfliken Skatteinformation.](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
 
 9. I åtgärdsfönstret, under fliken **Leverantör**, i gruppen **Registrering**, väljer du **Registrerings-ID** för att öppna sidan **Hantera adresser**.
 10. På sidan **Hantera adresser**, under snabbfliken **Skatteinformation**, väljer du **Lägg till** eller **Redigera** för att öppna sidan **Hantera skatteinformation**, där du kan bibehålla skatteregistreringsposten.

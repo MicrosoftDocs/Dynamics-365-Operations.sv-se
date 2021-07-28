@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b41760bb58cbef66146b3f1af6f30c6a35a18727
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 305576b79fdb11f29de9207662de0fe4b4dd6eb5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743857"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351852"
 ---
 # <a name="backup-storage-of-er-templates"></a>Säkerhetslagring av ER-mallar
 
@@ -65,19 +65,19 @@ För att konfigurera parametern **Kör automatiskt procedur för att återställ
 > [!NOTE]
 > Den här parametern definieras som programanvändare och protokollförda företag.
 
-![Sidan ER-konfigurationer](./media/GER-BackupTemplates-1.png)
+![Sidan ER-konfigurationer.](./media/GER-BackupTemplates-1.png)
 
 I bilden nedan visas ett exempel på det meddelande som visas när parametern **Kör automatiskt procedur för att återställa de brutna mallarna i batch** anges till **på.**
 
-![Sida för leverantörsbetalningsjournal](./media/GER-BackupTemplates-2.png)
+![Sida för leverantörsbetalningsjournal.](./media/GER-BackupTemplates-2.png)
 
 Bilden nedan visar hur du batchprocessen **Återställ brutna mallar från intern säkerhetskopia av databas** på sidan **Batch-jobb**.
 
-![Sidan Batchjobb](./media/GER-BackupTemplates-3.png)
+![Sidan Batchjobb.](./media/GER-BackupTemplates-3.png)
 
 Körningsloggen för slutförd batch-process **Återställ brutna mallar från intern säkerhetskopia av databas** omfattar information om mallarna som har återställts från säkerhetskopians lagringsplats till den primära lagringsplatsen.
 
-![Sidan för historik över batchjobb](./media/GER-BackupTemplates-4.png)
+![Sidan för historik över batchjobb.](./media/GER-BackupTemplates-4.png)
 
 Som standard är processen för automatisk generering av säkerhetskopior av mallar i inställningar för ER-format aktiverad. Om du vill sluta göra säkerhetskopior av mallar anger du alternativet **Sluta skapa säkerhetskopior av mall** till **Ja** på fliken **bifogade filer** på sidan **parametrar för elektronisk rapportering**. Du kan öppna den här sidan från arbetsytan **elektronisk rapportering**.
 
@@ -85,7 +85,7 @@ Om du ställer in alternativet **sluta skapa säkerhets kopior av mallar** till 
 
 Om du uppgraderade miljön till Finance and Operations version 10.0.5 (oktober 2019) och vill migrera till en ny miljö som innehåller körbara ER-formatkonfigurationer, väljer du **Fyll i säkerhetslagring** på sidan **Parametrar för elektronisk rapportering** innan migreringen sker. Med den här knappen börjar du skapa säkerhetskopior av alla tillgängliga mallar, så att de kan lagras i lagringsplatsen för ER-säkerhetskopiering för mallar.
 
-![Sida för parametrar för elektronisk rapportering](./media/GER-BackupTemplates-5.png)
+![Sida för parametrar för elektronisk rapportering.](./media/GER-BackupTemplates-5.png)
 
 ## <a name="manual-recovery"></a>Manuell återställning
 

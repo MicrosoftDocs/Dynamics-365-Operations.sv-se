@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2174
+ms.custom:
+- "2174"
+- intro-internal
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e067c9df91894c5d2ce05a6afb92d1fadc954531
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: d8bde73d424e72ad66c27decd11a3b866d02b48c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188207"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349804"
 ---
 # <a name="purchase-requisition-overview"></a>Översikt över inköpsrekvisition
 
@@ -47,7 +49,7 @@ Du kan konfigurera arbetsflödesprocessen för inköpsrekvisitionen att flöda e
 
 Följande diagram visar status som har tilldelats en inköpsrekvisition och en inköpsrekvisitionsrad allt eftersom de går igenom arbetsflödesprocessen.  
 
-[![Status för rubrik och rad för inköpsrekvisition](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Status för rubrik och rad för inköpsrekvisition.](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Statusrelation för rubrik och rad för inköpsrekvisition
 
@@ -179,7 +181,7 @@ Om du vill skapa en inköpsorder för inköpsrekvisitionsrader som inte är valb
 
 Processen för efterfråganskonsolidering börjar när en inköpsrekvisition har godkänts i arbetsflödet och budgetreservationer och förinteckningar har registrerats, om budgetkontroll har konfigurerats för din organisation. Följande diagram visar processflödet för begärandekonsolidering.  
 
-[![Processflöde för efterfråganskonsolidering](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Processflöde för efterfråganskonsolidering.](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 Om du vill konsolidera godkända inköpsrekvisitionsrader, följ dessa steg:
 

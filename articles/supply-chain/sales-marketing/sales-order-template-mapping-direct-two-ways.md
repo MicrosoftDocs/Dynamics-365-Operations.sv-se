@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: f0e26c63635179dc4c145f8d08e85fd110d9caac
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 63363678cb34af97781830d36d94fac1a7415394
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817783"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360884"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synkronisering av försäljningsorder direkt mellan Sales och Supply Chain Management
 
@@ -35,7 +35,7 @@ I det här ämnet diskuteras mallarna och de underliggande uppgifterna som anvä
 
 Lösningen Potentiell kund till kontanter använder funktionen Dataintegrering för att synkronisera data mellan instanser av Supply Chain Management och Sales. Potentiell kund till kontanter-mallarna med funktionen för dataintegrering möjliggör ett flöde av konto-, produkt-, försäljningskvots-, försäljningsorder- samt försäljningsfakturadata mellan Supply Chain Management och Sales. Följande bild visar hur data synkroniseras mellan Supply Chain Management och Sales.
 
-[![Dataflöden i Potentiell kund till kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Dataflöden i Potentiell kund-till-pengar.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
 
@@ -189,23 +189,23 @@ I följande illustrationer visas ett exempel på en mallmappning i dataintegreri
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Försäljningsorder (Supply Chain Management till Sales) - direkt: OrderHeader
 
-[![Mallmappning i dataintegrering](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
+[![Mallmappning i dataintegrering.](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderline"></a>Försäljningsorder (Supply Chain Management till Sales) - direkt: OrderLine
 
-[![Mallmappning i dataintegrering](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
+[![Mallmappning i dataintegrering.](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderheader"></a>Försäljningsorder (Sales till Supply Chain Management) - direkt: OrderHeader
 
-[![Mallmappning i dataintegrering](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
+[![Mallmappning i dataintegrering.](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderline"></a>Försäljningsorder (Sales till Supply Chain Management) - direkt: OrderLine
 
-[![Mallmappning i dataintegrering](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
+[![Mallmappning i dataintegrering.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Potentiell kund till kontanter](prospect-to-cash.md)
+[Potentiell kund till pengar](prospect-to-cash.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

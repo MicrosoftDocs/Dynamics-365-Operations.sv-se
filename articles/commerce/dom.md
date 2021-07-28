@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f50bc2828df19062a6bdced6faaa7b4d66c38bed
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 52d8b1055517bc544eea6a8e405a8b6d5c0eee0a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792785"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356864"
 ---
 # <a name="distributed-order-management-dom"></a>Fördelad orderhantering (DOM)
 
@@ -34,7 +34,7 @@ DOM optimerar orderuppfyllelsen i ett komplext nätverk som består av system oc
 
 Följande illustration visar livscykeln för en försäljningsorder i ett DOM-system.
 
-![Livscykel för försäljningsorder i samband med DOM](./media/flow.png "Livscykel för försäljningsorder i samband med DOM")
+![Livscykel för försäljningsorder i samband med DOM.](./media/flow.png "Livscykel för försäljningsorder i samband med DOM")
 
 ## <a name="set-up-dom"></a>Ställ in DOM
 
@@ -160,13 +160,13 @@ Följande illustration visar livscykeln för en försäljningsorder i ett DOM-sy
     7. Välj **Lägg till** på snabbfliken **Regler** och välj sedan den regel som ska länkas till profilen.
     8. Upprepa de föregående två stegen tills alla regler som ska vara med är kopplade till profilen.
     9. Välj **Spara**.
-    10. Välj **Leveranssätt** på fliken **Inställningar** i åtgärdsfönstret.
+    10. Välj **Leveranssätt** på fliken **Inställningar** i åtgärdsrutan.
     11. Välj **Nytt** på sidan **Leveranssätt**.
     12. Välj den juridiska personen i fältet **Företag**. Listan med företag är begränsad till de juridiska personerna som lades till tidigare.
     13. Ange leveranssättet som ska kopplas till denna profil i fältet **Leveranssätt**. Ett leveranssätt går inte att koppla till flera aktiva profiler.
     14. Upprepa de föregående två stegen tills alla leveranssätt som ska vara med är kopplade till profilen.
     15. Stäng sidan **Leveranssätt**.
-    16. Välj **Försäljningsorderursprung** på fliken **Inställningar** i åtgärdsfönstret.
+    16. Välj **Försäljningsorderursprung** på fliken **Inställningar** i åtgärdsrutan.
     17. Välj **Nytt** på sidan **Försäljningsursprung**.
     18. Välj den juridiska personen i fältet **Företag**. Listan med företag är begränsad till de juridiska personerna som lades till tidigare.
     19. Ange försäljningsursprunget som ska kopplas till denna profil i fältet **Försäljningsursprung**. Ett försäljningsursprung går inte att koppla till flera aktiva profiler.
@@ -200,7 +200,7 @@ Vid bearbetningen beaktar DOM ordern och orderraderna enligt beskrivningen här:
 
 När DOM har tillämpat reglerna, lagerbegränsningarna och optimeringarna väljer DOM platsen som är närmast kundens leveransadress.
 
-![Villkor för försäljningsorder](./media/ordercriteria.png "Villkor för försäljningsorder")
+![Villkor för försäljningsorder.](./media/ordercriteria.png "Villkor för försäljningsorder")
 
 ## <a name="results-of-dom-runs"></a>Resultat av DOM-körningar
 

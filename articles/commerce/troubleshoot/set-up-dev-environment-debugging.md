@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 38a616c418c3b32490c9adaf69a69af0d47d3478
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 892f8001c52cd40d748c81f27c2f83618b84e5c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019456"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350412"
 ---
 # <a name="set-up-an-e-commerce-development-environment-to-debug-against-a-tier-1-retail-server-virtual-machine"></a>Ställa in en e-handelsutvecklingsmiljö för felsökning mot en virtuell dator för nivå 1 Retail Server
 
@@ -38,13 +38,13 @@ När du felsöker mot en nivå 1-miljö, eftersom webbplatsen nu anropar en anna
 
 I bilden nedan visas ett exempel på ett fel som kan inträffa när en variant väljs på en produktinformationssida.
 
-![Fel när en variant väljs på en produktinformationssida](media/unhandled-rejection-error.jpg)
+![Fel när en variant väljs på en produktinformationssida.](media/unhandled-rejection-error.jpg)
 
 I följande bild visas ett exempel på ett liknande fel i en webbläsares felsökningsverktyg (F12 utvecklarverktyg). Felmeddelandet tar upp brott mot säkerhetspolicyn för innehåll.
 
-![Fel i felsökningsverktyg](media/debugger-tools-error.JPG)
+![Fel i felsökningsverktyg.](media/debugger-tools-error.JPG)
 
-## <a name="resolution"></a>Upplösning
+## <a name="resolution"></a>Lösning
 
 ### <a name="disable-the-content-security-policy-for-the-site-in-commerce-site-builder"></a>Inaktivera säkerhetspolicyn för innehåll för webbplatsen i Commerce-webbplatsbyggaren
 

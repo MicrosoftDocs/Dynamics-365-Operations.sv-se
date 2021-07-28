@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: bc170df2fc58ae6b42fbc8834caad0bb7cd16f69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9c8f202a813520129867b57e660e8d995c20ed87
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837787"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351523"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Ställ in mobil arbetsyta för tillgångshantering
 
@@ -47,7 +47,7 @@ Om du vill göra tillgångshanteringsfunktioner tillgängliga i Finance and Oper
 1. I Supply Chain Management väljer du knappen **Inställningar** (kugghjulssymbolen i det övre högra hörnet) och väljer sedan **Mobilapp** på menyn.
 1. I dialogrutan **hantera mobilapp** hitta panelen **Hantera tillgång**. Om den innehåller texten "I metadata - inte publicerats" har arbetsytan ännu inte publicerats. Om den innehåller texten "I metadata - publicerat" har arbetsytan redan publicerats och du kan hoppa över resten av den här proceduren.
 
-    ![Dialogrutan Hantera mobilapp](media/mobile-workspaces.png "Dialogrutan Hantera mobilapp")
+    ![Dialogrutan Hantera mobilapp.](media/mobile-workspaces.png "Dialogrutan Hantera mobilapp")
 
 1. Välj panelen för **tillgångshantering** och välj sedan **Publicera** i verktygsfältet. Efter några sekunder bör du få ett meddelande som anger att arbetsytan har publicerats utan resultat. Dessutom ska texten på panelen ändras till "I metadata - publicerat".
 
@@ -60,14 +60,14 @@ Om du vill göra tillgångshanteringsfunktioner tillgängliga i Finance and Oper
 
 1. Öppna Finance and Operations (Dynamics 365) appen. Inloggningssidan ska visas. I fältet **Logga in** ange Supply Chain Management URL, eller välj senaste URL i listan **senaste miljöer** och tryck **anslut**.
 
-    ![Inloggningssida](media/mobile-app-sign-in.png "Inloggningssida")
+    ![Inloggningssida.](media/mobile-app-sign-in.png "Inloggningssida")
 
 1. Om du uppmanas att bekräfta anslutningen markerar du kryssrutan **Jag förstår** och trycker sedan på **Anslut**.
 1. På sidan **Välj ett konto** använder du ditt Microsoft-konto för att logga in på mobilprogrammet.
 
     Sidan **arbetsytor** visas. Den listar varje mobil arbetsyta som har publicerats av din Supply Chain Management-instans.
 
-    ![Lista över arbetsytor](media/mobile-app-workspaces.png "Lista över arbetsytor")
+    ![Lista över arbetsytor.](media/mobile-app-workspaces.png "Lista över arbetsytor")
 
 1. Om du måste ändra den juridiska personen (företaget) trycker du på menyknappen (kallas ibland hamburgaren eller hamburgerknappen) i det övre vänstra hörnet och sedan på **Ändra företag**.
 
@@ -75,7 +75,7 @@ Om du vill göra tillgångshanteringsfunktioner tillgängliga i Finance and Oper
 
 1. På sidan **Arbetsytor** väljer du den arbetsyta som du vill arbeta med för att öppna den.
 
-    ![Mobil arbetsyta för tillgångshantering](media/mobile-app-asset-workspace.png "Mobil arbetsyta för tillgångshantering")
+    ![Mobil arbetsyta för tillgångshantering.](media/mobile-app-asset-workspace.png "Mobil arbetsyta för tillgångshantering")
 
 ## <a name="work-with-the-asset-management-mobile-workspace"></a>Arbeta med mobil arbetsyta för tillgångshantering
 

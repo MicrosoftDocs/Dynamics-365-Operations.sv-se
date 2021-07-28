@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 141d58c2183c386584b0b974f4997e7a81ef3109
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b9d072914b5effdd733ec2c18e4ada877f932ba8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749996"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350170"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Använd en relativ sökväg i databindningar för ER-modeller och -format
 
@@ -31,20 +31,20 @@ Med verktyget elektronisk rapportering (ER) kan användarna definiera elektronis
 
 För att förbättra användbarheten för ER-mappningar har funktionen för [relativa sökvägar](er-formula-language.md#relative-path) frigjorts. Som standard är alternativet för relativa sökvägar aktiverat för alla nya instanser av programmet där ER-designupplevelse är aktiverad (Microsoft Dynamics 365 Finance Microsoft Regulatory Configuration Service). Vi har implementerat parametern för relativa sökvägar så att användarna kan fortsätta använda den fullständiga sökvägen när de arbetar med den här presentationen av ER-bindningar.
 
-[![Användarparametrar](./media/relative-path-01.png)](./media/relative-path-01.png)
+[![Användarparametrar.](./media/relative-path-01.png)](./media/relative-path-01.png)
 
  
 När den relativa sökvägsanvändningsparametern aktiveras, ersätter ett enda @-tecken sökvägen till det överordnade objektet i bindningen för det aktuella modellelementet. Hela bindningssökvägen blir kortare, vilket gör hela mappningen tydligare och lättare att förstå. I de flesta fall behövs ingen ytterligarebläddring i ER-designer för att du ska kunna visa alla bindningar för datamodellen.
 
-[![Modellmappningsdesigner](./media/relative-path-02.png)](./media/relative-path-02.png)
+[![Modellmappningsdesigner.](./media/relative-path-02.png)](./media/relative-path-02.png)
  
 När du börjar utforma ett nytt ER-uttryck behöver du bara ange ett tecken för att definiera en bindning till ett fält i den överordnade artikeln.
 
-[![Receptdesigner](./media/relative-path-03.png)](./media/relative-path-03.png)
+[![Receptdesigner.](./media/relative-path-03.png)](./media/relative-path-03.png)
  
 När du bestämmer dig för att ändra datakällan för den överordnade modellposten, med absolut sökvägsanvändning, måste du binda om den här modellartikeln manuellt, liksom alla kapslade objekt, till en ny datakälla. När relativ sökvägsanvändning är aktiverad och du väljer att en ny datakälla ska bindas till ett överordnat objekt, erbjuds du ett alternativ att automatiskt binda om alla kapslade element för det här överordnade objektet med ett klick.
 
-[![Ersätt befintligt sökvägsmeddelande](./media/relative-path-04.png)](./media/relative-path-04.png)
+[![Ersätt befintligt sökvägsmeddelande.](./media/relative-path-04.png)](./media/relative-path-04.png)
  
 Om du bekräftar ombindning av kapslade objekt kommer det nya överordnade objektet att placeras i sökvägen för varje kapslad post som innehåller den befintliga överordnade artikeln.
 Den här funktionen avbryter inte kompatibiliteten i ER-ramverket. Alla tidigare utformade ER-konfigurationer fungerar med den här nya funktionen och inga uppgraderingar eller konverteringar krävs.

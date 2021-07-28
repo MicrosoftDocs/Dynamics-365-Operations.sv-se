@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a1a25e3d5bc1cc5c1c7509186451fdfef50dd6cf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c8a22a356053789f97fd4f3f9437d57978a67943
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792349"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352142"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Lägg till produktrekommendationer i POS
 
@@ -39,7 +39,7 @@ Produktrekommendationer har aktiverats för följande kassascenarier. De är til
 
     - Om en butiksmedarbetare besöker en sida **Produktdetaljer** när han eller hon tittar på föregående transaktioner via olika kanaler, föreslår rekommendationstjänsten ytterligare artiklar som kan köpas tillsammans.
 
-    [![Rekommendationer på sidan produktinformation](./media/proddetails.png)](./media/proddetails.png)
+    [![Rekommendationer på sidan produktinformation.](./media/proddetails.png)](./media/proddetails.png)
 
 2. På sidan **Transaktion**:
 
@@ -48,7 +48,7 @@ Produktrekommendationer har aktiverats för följande kassascenarier. De är til
     > [!NOTE]
     > För att kunna visa rekommendationer på sidan **Transaktion** måste återförsäljaren uppdatera skärmlayouten i Dynamics 365 Commerce. Kontrollen **Rekommendationer** måste tas bort på sidan **Transaktion**.
 
-    [![Rekommendationer på sidan Transaktion](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Rekommendationer på sidan Transaktion.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
 ## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurera Commerce för att aktivera rekommendationer i kassa
 

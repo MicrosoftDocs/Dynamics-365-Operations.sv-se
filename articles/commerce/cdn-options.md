@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6e8fb2baf85be0eaecfffcc7ec6cbb457c3bb04
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: eec18dbffe33bc6366b4282d05189b31620616d6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021900"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351259"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Implementeringsalternativ för Content Delivery Network
 
@@ -40,7 +40,7 @@ Alla tre implementeringsalternativen för CDN levererar endast dynamiskt HTML-in
 
 Följande bild ger en översikt över ändringarna i Commerce-arkitektur.
 
-![Översikt över Commerce-arkitektur](media/Commerce_CDN-Option_ComparisonModels.png)
+![Översikt över Commerce-arkitekturen.](media/Commerce_CDN-Option_ComparisonModels.png)
 
 Mer information om hur du ställer in en instans av Azure Front Door för din Commerce-webbplats finns i [Lägg till CDN-support](add-cdn-support.md).
 
@@ -54,7 +54,7 @@ Följande tabell visar fördelar och nackdelar med att använda den förekomst a
 
 Följande illustration visar arkitekturen för den Commerce Azure Front Door-instansen.
 
-![Commerce som tillhandahålls av Azure Front Door-instansen](media/Commerce_CDN-Option_CommerceFrontDoor.png)
+![Commerce-tillhandahållen Azure Front Door-instans.](media/Commerce_CDN-Option_CommerceFrontDoor.png)
 
 ## <a name="use-a-customer-owned-azure-front-door-instance"></a>Använda en kundägd Azure Front Door-instans
 
@@ -78,7 +78,7 @@ I följande tabell beskrivs fördelarna och fördelarna med att använda en exte
 
 I följande bild visas en Commerce-infrastruktur med en extern CDN-tjänst.
 
-![Commerce-infrastruktur som innehåller en extern CDN-tjänst](media/Commerce_CDN-Option_ExternalFrontDoor.png)
+![Commerce-infrastruktur som innehåller en extern CDN-tjänst.](media/Commerce_CDN-Option_ExternalFrontDoor.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

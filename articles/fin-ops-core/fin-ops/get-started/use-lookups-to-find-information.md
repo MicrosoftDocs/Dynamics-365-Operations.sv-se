@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adb8e1a0fef93fdd66a4cbac82689ff7a19aca4a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2672520ddf21e565edee5024d6886cabb18d6e94
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754786"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348639"
 ---
 # <a name="find-information-by-using-lookups"></a>Hitta information med hjälp av sökningar
 
@@ -44,15 +44,15 @@ Tänk dig exempelvis ett sökfält som kallas **Ort**.
 
 Om fokus är i fältet **Ort** kan du börja leta efter orten genom att skriva ett par bokstäver som "kol". Efter du slutat skriva öppnas sökningen automatiskt, filtrerad på de orter som börjar med "kol".
 
-[![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
+[![typeaheadLookupExample.](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
 
 Nu är markören kvar i sökfältet. Om du fortsätter att skriva så att värdet är "kolumn" justeras sökinnehållet automatiskt så att det avspeglar det senaste värdet i kontrollen.
 
-![updateFilterLookupExample](./media/updatefilterlookupexample.png)
+![updateFilterLookupExample.](./media/updatefilterlookupexample.png)
 
 Även om fokus fortfarande är i sökningskontrollen, kan du också använda knapparna **UPPIL** eller **NEDPIL** för att markera den rad som du vill välja. Om du trycker på **Retur** väljs den markerade raden från sökningen och kontrollens värde uppdateras.
 
-![changingSelectionLookup](./media/changingselectionlookup.png)
+![changingSelectionLookup.](./media/changingselectionlookup.png)
 
 ## <a name="typing-in-more-than-ids"></a>Skriva i mer än ett ID-nummer
 
@@ -62,25 +62,25 @@ Beakta till exempel fältet **Kundkonto** när du skapar en försäljningsorder.
 
 Om användaren har börjat att ange ett **konto-ID** i sökningskontrollen kommer den nedrullningsbara menyn att öppnas automatiskt enligt beskrivningen i föregående avsnitt så att användaren ser sökningen enligt nedan.
 
-[![Sammanhangsbaserad sökning när ett kundkonto-ID har angetts](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
+[![Sammanhangsbaserad sökning när ett kundkonto-ID har angetts.](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
 
 Användaren kan emellertid också ange början på ett **kontonamn**. Om detta inträffar kommer användaren att se följande sökning. Observera hur kolumnen **Namn** flyttas till den första kolumnen i sökningen och hur sökningen sorteras och filtreras utifrån kolumnen **Namn**.
 
-[![Sammanhangsbaserad sökning när ett kundnamn har angetts](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
+[![Sammanhangsbaserad sökning när ett kundnamn har angetts.](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
 ## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Med hjälp av rutnätets kolumnrubriker för mer avancerad filtrering och sortering
 
 Sökningsförbättringarna som beskrivs i de föregående punkterna förbättrar avsevärt användarnas möjlighet att navigera raderna i en sökning baserat på en "börjar med"-sökning i fältet **ID** eller **Namn**. Det finns dock situationer då mer avancerad filtrering (eller sortering) behövs för att hitta rätt rad. I sådana fall måste användaren använda alternativen för filtrering och sortering i rutnätets kolumnrubriker i sökningen. Anta exempelvis att en medarbetare registrerar en försäljningsorderrad som behöver hitta rätt "kabel" som produkt. Att skriva "kabel" i kontrollen **artikelnummer** hjälper inte eftersom det inte finns några produktnamn som börjar med "kabel".
 
-![emptyitemlookup](./media/emptyitemlookup.png)
+![emptyitemlookup.](./media/emptyitemlookup.png)
 
 Användaren måste istället radera värdet i sökningskontrollen, öppna den nedrullningsbara sökmenyn och filtrera den nedrullningsbara menyn med hjälp av rutnätets kolumnrubrik som visas nedan. En musanvändare (eller pekskärm) kan bara klicka (eller trycka) på någon kolumnrubrik för att komma åt kolumnens filtrerings- och sorteringsalternativ. För en tangentbordsanvändare behöver användaren bara trycka på **Alt**+**Ned** **pil** en gång för att flytta fokus till listrutan då användaren kan använda flikknappen till korrekt kolumn och trycka på **Ctrl**+**G** för att öppna rutnätets nedrullningsbara kolumnrubrikmeny.
 
-[![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
+[![gridfilteritemlookup.](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
 
 När filtret har använts (se bilden nedan) kan användaren hitta och markera raden som vanligt.
 
-![filtereditemlookup](./media/filtereditemlookup.png)
+![filtereditemlookup.](./media/filtereditemlookup.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

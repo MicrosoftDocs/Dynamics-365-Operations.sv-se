@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 248de8e12703a84482b67d0899857a6efb33531c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: a698a8ccc781167060400068dc4011d318b5fe53
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023594"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360233"
 ---
 # <a name="update-certificate-numbers-and-dates-for-tds-transactions"></a>Uppdatera certifikatnummer och datum för TDS-transaktioner
 
@@ -33,7 +33,7 @@ Följ dessa steg om du vill uppdatera certifikatnummer och datum för TDS-transa
 
 1. Gå till **Skatt \> Deklarationer \> Källskatt \> Uppdatera certifikat**.
 
-    [![Sidan Uppdatera certifikat](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
+    [![Sidan Uppdatera certifikat.](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
 
 2. På sidan **Uppdatera certifikat**, i avsnittet **Välj**, i fältet **Skattetyp**, väljer du **TDS**.
 3. I fältet **Certifikatnummer** väljer du kundens eller leverantörens TDS-certifikatnummer.
@@ -60,4 +60,4 @@ Följ dessa steg om du vill uppdatera certifikatnummer och datum för TDS-transa
 8. Välj **Uppdatera** för att uppdatera fälten **Certifikatnummer** och **Certifikatdatum** för TDS-transaktioner i det nedre rutnätet.
 10. Gå till **Skatt \> Indirekt skatt \> Källskatt \> Återställningsbart certifikat** och välj **Förfrågan** för att visa de uppdaterade transaktionsraderna som har nya certifikatnummer på sidan **Certifikattransaktioner**.
 
-    [![Sidan certifikattransaktioner](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)
+    [![Sidan Certifikattransaktioner.](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)

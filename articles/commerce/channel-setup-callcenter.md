@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e89c63c90aa8d46fd23900897a54165e14fb635d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 34fa845c72f23485a2573d6bb4cf38b66c7adb7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800673"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351210"
 ---
 # <a name="set-up-a-call-center-channel"></a>Ställa in en kundtjänstkanal
 
@@ -54,11 +54,11 @@ Följ stegen nedan om du vill skapa och konfigurera en ny kundtjänstkanal.
 
 Följande bild visar hur en ny kundtjänstkanal skapas.
 
-![Ny kundtjänstkanal](media/channel-setup-callcenter-1.png)
+![Ny kundtjänstkanal.](media/channel-setup-callcenter-1.png)
 
 I bilden nedan visas ett exempel på kundtjänstkanal.
 
-![Exempel på kundtjänstkanal](media/channel-setup-callcenter-2.png)
+![Exempel på kundtjänstkanal.](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>Konfiguration av ytterligare kanal
 
@@ -66,7 +66,7 @@ Ytterligare uppgifter som krävs för inställningar av kundtjänstkanal inklude
 
 I följande bild visas konfigurationsalternativen **leveranssätt** och **betalsätt** på fliken **inställning**.
 
-![Ytterligare åtgärder för konfigurering av kundtjänstkanal](media/channel-setup-callcenter-3.png)
+![Ytterligare åtgärder för konfigurering av kundtjänstkanal.](media/channel-setup-callcenter-3.png)
 
 ### <a name="set-up-payment-methods"></a>Ange betalsätt
 
@@ -81,7 +81,7 @@ Om du vill ställa in betalsätt följer du dessa steg för varje betalningstyp 
 
 I bilden nedan visas ett exempel på en kontantbetalningsmetod.
 
-![Exempel på betalsätt](media/channel-setup-callcenter-payments.png)
+![Exempel på betalningsmetoder.](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Ställ in leveranssätt
 
@@ -97,7 +97,7 @@ Om du vill ändra eller lägga till ett leveranssätt som ska associeras till de
 
 I bilden nedan visas ett exempel på ett leveranssätt.
 
-![Ställ in leveranssätt](media/channel-setup-retail-7.png)
+![Konfigurera leveranssätt.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>Ställ in en kanalanvändare
 

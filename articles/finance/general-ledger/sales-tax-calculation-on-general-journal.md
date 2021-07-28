@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: c019c597f4734f92f5d9aacdff1cbb30f9fb0a60
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937316"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358843"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Momsberäkning för allmänna journalrader
 [!include [banner](../includes/banner.md)]
@@ -55,7 +55,7 @@ Annars är momsriktningen Ingående moms.
 
 Följande diagram visar regeln grafiskt.
 
-![Momsriktningsmöjligheter för projektkonton](media/Sales-Tax-Direction-Vendor.jpg)
+![Momsriktningsmöjligheter för projektkonton.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-vendor"></a>Kontotypen är leverantör
 
@@ -73,7 +73,7 @@ Annars är momsriktningen Ingående moms.
 
 Följande diagram visar regeln grafiskt.
 
-![Momsriktningsmöjligheter för leverantörskonton](media/Sales-Tax-Direction-Vendor.jpg)
+![Momsriktningsmöjligheter för leverantörskonton.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-customer"></a>Kontotyp är kund
 
@@ -89,7 +89,7 @@ Annars är momsriktningen Utgående moms.
 
 Följande diagram visar regeln grafiskt.
 
-![Momsriktningsmöjligheter för kundkonton](media/Sales-Tax-Direction-Customer.jpg)
+![Momsriktningsmöjligheter för kundkonton.](media/Sales-Tax-Direction-Customer.jpg)
 
 ### <a name="account-type-is-ledger"></a>Kontotypen är Redovisning
 
@@ -103,7 +103,7 @@ Annars, om journalbeloppet är debet (positivt), är momsriktningen för Ingåen
 
 Följande diagram visar regeln grafiskt.
 
-![Momsriktningsmöjligheter för redovisningskonton](media/Sales-Tax-Direction-Ledger.jpg)
+![Momsriktningsmöjligheter för redovisningskonton.](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### <a name="override-the-sales-tax-direction"></a>Åsidosätt momsriktningen
 
@@ -115,7 +115,7 @@ Gå till **Redovisning \> Kontoplan \> Konton \> Huvudkonton** och välj snabbfl
 
 I det här avsnittet beskrivs hur tecknet för momsbelopp beräknas.
 
-![Sidan momstransaktioner](media/sales-tax-amount-sign.jpg)
+![Sidan för momstransaktioner.](media/sales-tax-amount-sign.jpg)
 
 I följande register visas den allmänna regeln för bestämning av momsriktning och tecken på momsbelopp i det tillfälliga momsregistret.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50156b8c6b3553b02d092fad9c72e90c1f70ff78
-ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
+ms.openlocfilehash: 48e54c0f7d4bd1b4e1661a5bd1d4c11fd9cec986
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5951995"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351131"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Designa flerspråkiga rapporter i elektronisk rapportering
 
@@ -54,11 +54,11 @@ När du utformar en ER-datamodell, en ER-modellmappning eller ett ER-format visa
 
 Följande illustration visar hur översättningen görs i en redigerbar ER-datamodell. I det här exemplet översätts attributet **Beskrivning** i fältet **PurchaseOrder** för den redigerbara **Fakturamodellen** till österrikisk tyska (DE-AT) och japanska (JA).
 
-![Ge översättning av en ER-etikett i ER-datamodelldesigner](./media/er-multilingual-labels-refer.png)
+![Tillhandahålla översättning av en ER-etikett i ER-datamodelldesignern.](./media/er-multilingual-labels-refer.png)
 
 Endast etikettext för etiketter som finns i en redigerbar återställningskomponent kan översättas. Om du t.ex. väljer **Översätt** för attributet etikett i en datakälla för ER-modellmappning och sedan väljer en ER-etikett som finns i den överordnade ER-datamodellen, visas innehållet i etiketten, men du kan inte ändra det. I dessa fall är fältet **översatt text** inte tillgängligt, som visas i bilden nedan.
 
-![Granska medföljande översättning av en ER-etikett i ER-modellmaningsdesigner](./media/er-multilingual-labels-refer-mapping.png)
+![Granska medföljande översättning av en ER-etikett i ER-modellmappningsdesignern.](./media/er-multilingual-labels-refer-mapping.png)
 
 > [!NOTE]
 > Du kan inte använda designer för att ta bort en etikett som har angetts i en redigerbar ER-komponent.
@@ -71,19 +71,19 @@ ER-etiketter kan refereras till i flera översättningsbara attribut i ER-kompon
 
 När du konfigurerar en ER-datamodell kan du lägga till ER-etiketter för den. Attributen **Etikett** och **Beskrivning** för modellartikeln, varje modells fält och varje <a id="LinkModelEnum"></a>modelluppräkningsvärde kan länkas till en ER-etikett som läggs till i ER-datamodellen.
 
-![Tillhandahålla översättning för attributet beskrivning i ER-datamodelldesigner](./media/er-multilingual-labels-refer.png)
+![Tillhandahålla översättning för attributet Beskrivning i ER-datamodelldesignern.](./media/er-multilingual-labels-refer.png)
 
 När en ER-datamodell konfigureras på det här sättet visas dess innehåll för användarna av ER-datamodelldesigner på varje användares prioriterade språk. Modellunderhåll är därför förenklat. Följande bilder visar hur den här funktionen fungerar för användare med inställd DE-AT och JA som önskat språk.
 
-![Layout för ER-datamodelldesigner för en användare som har inställt DE-AT som prioriterat språk](./media/er-multilingual-labels-refer-de.png)
+![Layout för ER-datamodelldesignern för en användare som har angett DE-AT som prioriterat språk.](./media/er-multilingual-labels-refer-de.png)
 
-![Layout för ER-datamodelldesigner för en användare som har inställt JA som prioriterat språk](./media/er-multilingual-labels-refer-ja.png)
+![Layout för ER-datamodelldesignern för en användare som har JA angivet som prioriterat språk.](./media/er-multilingual-labels-refer-ja.png)
 
 ### <a name="model-mapping-component"></a>Komponent för modellmappning
 
 Eftersom ER-modellmappning baseras på en ER-datamodell, visas etiketterna för de datamodellelement som refereras till på användarens önskade språk i modellmappningsverktyget. Följande bild visar hur betydelsen av fältet **PurchaseOrder** beskrivs i den redigerbara modellmappningen genom att använda etiketten för attributet **Beskrivning** som har lagts till i den konfigurerade datamodellen. Observera att etiketten visas på användarens önskade språk (DE-AT i det här exemplet).
 
-![Layout för ER-mappningsdesigner för en användare som har inställt DE-AT som prioriterat språk](./media/er-multilingual-labels-show-mapping.png)
+![Layout för ER-mappningsdesignern för en användare som har DE-AT angivet som prioriterat språk.](./media/er-multilingual-labels-show-mapping.png)
 
 När attributet **Etikett** i datakällan **Användarindataparametrar** har konfigurerats som länkad till en ER-etikett, visas det parameterfält som motsvarar denna data källa i dialogrutan för användare under körning till användarna på det språk de föredrar.
 
@@ -100,21 +100,21 @@ Eftersom ER-format baseras på en ER-datamodell, visas etiketterna som hänvisas
 
 När attributet **Etikett** i datakällan **Användarindataparametrar** länkas till en ER-etikett, visas det parameterfält som motsvarar parametern i dialogrutan för användare som presenteras under körning till användarna som en uppmaning. I följande illustrationer visas hur du kan länka attributet **Etikett** för datakällan **Användarindataparametrar** vid designtillfället till en ER-etikett, så att användarna uppmanas att ange parametern i olika språk (visas för engelska USA (en-US) och DE-AT de språk som används) under körning.
 
-![Tillhandahålla översättning av attribut för en indataparameter av ett ER-åtgärdsdesigner](./media/er-multilingual-labels-refer-format.png)
+![Tillhandahålla översättning av attribut för en användarindataparameter i ER-funktionsdesignern.](./media/er-multilingual-labels-refer-format.png)
 
-![ER leverantörs betalningsbearbetning vid körning för ett EN-US användarens prioriterade språk](./media/er-multilingual-labels-show-runtime-en.png)
+![Betalningsbearbetning för ER-leverantör vid körning för användarens prioriterade språk EN-US.](./media/er-multilingual-labels-show-runtime-en.png)
 
-![ER leverantörs betalningsbearbetning vid körning för ett DE-AT användarens prioriterade språk](./media/er-multilingual-labels-show-runtime-de.png)
+![Betalningsbearbetning för ER-leverantör vid körning för användarens prioriterade språk DE-AT.](./media/er-multilingual-labels-show-runtime-de.png)
 
 ### <a name="expressions"></a>Uttryck
 
 Om du vill använda en etikett i ett ER [uttryck](er-formula-language.md) måste du använda syntaxen **@"GER\_LABEL:X"**, där prefixet **@** indikerar att operanden refererar till en etikett **GER\_LABEL** anger att en ER-etikett är involverad och **X** är ER-etikett-ID.
 
-![Konfigurera ett ER-uttryck som innehåller en referens till en ER-etikett i ER-formeldesigner](./media/er-multilingual-labels-expression1.png)
+![Konfigurera ett ER-uttryck som innehåller en referens till en ER-etikett i ER-formeldesignern.](./media/er-multilingual-labels-expression1.png)
 
 Om du vill referera till en systemetikett (program) använder du syntaxen **@"X"**, där prefixen **@** indikerar att operanden refererar till en etikett och **X** är systemets etikett-ID.
 
-![Konfigurera ett ER-uttryck som innehåller en referens till en appetikett i ER-formeldesigner](./media/er-multilingual-labels-expression2.png)
+![Konfigurera ett ER-uttryck som innehåller en referens till en programetikett i ER-formeldesignern.](./media/er-multilingual-labels-expression2.png)
 
 #### <a name="model-mapping"></a>Modellmappning
 
@@ -126,19 +126,19 @@ Om en refererad etikett inte har någon översättning för språket i den forma
 
 Du kan konfigurera ett ER-uttryck för en ER-format genom att använda etiketter. När detta format körs för att generera ett utgående dokument, innehåller kontexten för körningen en språkkod. En konfigurerad uttrycksetikett fylls i med den etikettext som har konfigurerats för det aktuella språket i kontexten.
 
-![Tillhandahålla översättning av en ER-etikett för det redigerbara ER-uttrycket i ER-formeldesigner](./media/er-multilingual-labels-refer-in-expression.png)
+![Tillhandahålla översättning av en ER-etikett för det redigerbara ER-uttrycket i ER-formeldesignern.](./media/er-multilingual-labels-refer-in-expression.png)
 
-![Exempel på databindning som refererar till en ER-etikett i ER-åtgärdsdesigner](./media/er-multilingual-labels-refer-in-binding.png)
+![Exempel på databindning som refererar till en ER-etikett i ER-funktionsdesignern.](./media/er-multilingual-labels-refer-in-binding.png)
 
 Du kan konfigurera **FIL**-komponenten i ett ER-format om du vill generera rapporten på användarens önskade språk.
 
-![Ställ in FIL-komponenten i ER-åtgärdsdesigner för att generera rapporten på användarens önskade språk](./media/er-multilingual-labels-language-context-user.png)
+![Konfigurera komponenten FIL i ER-funktionsdesignern i syfte att generera rapporten på användarens önskade språk.](./media/er-multilingual-labels-language-context-user.png)
 
 Om du konfigurerar ett ER-format på det här sättet genereras rapporten med hjälp av motsvarande text i ER-etiketterna. I följande illustrationer visas exempel på rapporter för användarspråken EN-US och DE-AT.
 
-![Förhandsgranskning av rapporten som har genererats i EN-US-användares prioriterade språk](./media/er-multilingual-labels-report-preview-en.png)
+![Förhandsgranskning av rapporten som har genererats i EN-US-användares prioriterade språk.](./media/er-multilingual-labels-report-preview-en.png)
 
-![Förhandsgranskning av rapporten som har genererats i DE-AT-användares prioriterade språk](./media/er-multilingual-labels-report-preview-de.png)
+![Förhandsgranskning av rapporten som har genererats i DE-AT-användarens prioriterade språk.](./media/er-multilingual-labels-report-preview-de.png)
 
 Om en refererad etikett inte har någon översättning för språket i den formatkontext används etikettexten i EN-US-språk i stället.
 
@@ -148,16 +148,16 @@ ER har olika sätt att ange ett språk för en genererad rapport. I fältet **Sp
 
 - **Företagspreferens** – Generera en rapport på ett av företaget angivna språk.
 
-    ![Ange i formuläret ER-åtgärdsdesigner som designer ett företag som anger vilket språk som en genererad rapport ska utföras på](./media/er-multilingual-labels-language-context-company.png)
+    ![I ER-funktionsdesignern anger du ett företagsprioriterat språk som språket för en genererad rapport.](./media/er-multilingual-labels-language-context-company.png)
 
 - **Användarinställningar** – Generera en rapport på användarens önskade språk.
 - **Explicit definierad** – Generera en rapport på ett språk som anges i designläge.
 
-    ![Ange i ER-åtgärdsdesigner ett designtidsspråk som språket i en genererad rapport](./media/er-multilingual-labels-language-context-fixed.png)
+    ![I ER-funktionsdesignern anger du ett språk angivet i samband med design som språket i en genererad rapport.](./media/er-multilingual-labels-language-context-fixed.png)
 
 - **Definierade under körning** – Generera en rapport på ett språk som anges i körning. Om du väljer det här värdet ska du i fältet **Språk** konfigurera ett ER-uttryck som returnerar språk koden för språket, som det språk som tillhör motsvarande kund.
 
-    ![Ange i ER-åtgärdsdesigner en körning definieras språket i en genererad rapport](./media/er-multilingual-labels-language-context-runtime.png)
+    ![I ER-funktionsdesignern anger du ett körningsdefinierat språk som språket i en genererad rapport.](./media/er-multilingual-labels-language-context-runtime.png)
 
 ## <a name="culture-specific-formatting"></a>Språkspecifik formatering
 
@@ -165,15 +165,15 @@ ER har olika sätt att specificera språket för en genererad rapport. Därför 
 
 - **Användarinställningar** – Formatera värdena efter användarens prioriterade språk. Det språket definieras i fältet **Datum, tid och nummerformat** på fliken **Inställningar** på sidan **Användaralternativ**.
 
-    ![Definiera användarens prioriterade språk som språk för en genererad rapport i ER-funktionsdesignern](./media/er-multilingual-labels-culture-context-user-preferred.png)
+    ![Definiera användarens prioriterade språk som språket för en genererad rapport i ER-funktionsdesignern.](./media/er-multilingual-labels-culture-context-user-preferred.png)
 
 - **Explicit definierade** – Formatera värdena enligt det språk som anges vid designtidpunkten.
 
-    ![Definiera det språk som angetts i samband med utformningen som språk för en genererad rapport i ER-funktionsdesignern](./media/er-multilingual-labels-culture-context-fixed.png)
+    ![Definiera det språk som angetts i samband med utformningen som språket för en genererad rapport i ER-funktionsdesignern.](./media/er-multilingual-labels-culture-context-fixed.png)
 
 - **Definieras vid körning** – Formatera värdena enligt det språk som anges vid körningstidpunkten. Om du väljer detta värde ska du på fliken **Mappning**, i fältet **Format för datum, tid och nummer** konfigurera ett ER-uttryck som returnerar språkkoden för språket, exempelvis tillhörande kunds språk.
 
-    ![Definiera det språk som definierats i samband med körningen som språk för en genererad rapport i ER-funktionsdesignern](./media/er-multilingual-labels-culture-context-runtime.png)
+    ![Definiera det språk som definierats i samband med körning som språket för en genererad rapport i ER-funktionsdesignern.](./media/er-multilingual-labels-culture-context-runtime.png)
 
 > [!NOTE]
 > En ER-komponent som du definierar en specifik konstnad för kan innehålla underordnade ER-komponenter som konfigurerats för att fylla i ett textvärde. Som standard används den överordnade komponenten när värdena för dessa komponenter formateras. Du kan använda följande inbyggda ER-funktioner när du konfigurerar bindande element för dessa komponenter och tillämpar ett alternativt språk för värdeformatering:
@@ -196,19 +196,19 @@ När du lägger till en ER-etikett **Textöversättning** [fönstret](#TextTrans
 
 Konfigurationen av en ER-komponent görs i utkastversionen av ER-konfigurationen som den redigerbara återställningskomponenten finns i.
 
-![Sidan ER-konfigurationer ger åtkomst till konfigurationens version i utkaststatus](./media/er-multilingual-labels-configurations.png)
+![Sidan ER-konfigurationer ger åtkomst till konfigurationens version i utkaststatus.](./media/er-multilingual-labels-configurations.png)
 
 Som tidigare nämnts i det här avsnittet kan du lägga till nödvändiga ER-etiketter till en redigerbar ER-komponent. På det här sättet kan du ange texten i ER-etiketterna på språket EN-US. Du kan sedan exportera etiketterna för ER-komponenten med hjälp av den inbyggda ER-funktionen. Markera utkastversionen av en ER-konfiguration som innehåller den redigerbara ER-komponenten och välj sedan **Byt \> Exportetiketter**.
 
-![Sidan ER-konfigurationer som tillåter export av ER-etiketter från den valda konfigurationsversionen](./media/er-multilingual-labels-export.png)
+![Sidan ER-konfigurationer som tillåter export av ER-etiketter från den valda konfigurationsversionen.](./media/er-multilingual-labels-export.png)
 
 Du kan exportera antingen alla etiketter eller etiketterna för ett enskilt språk som du anger i början av exporten. Etiketter exporteras som zip-filer som innehåller XML-filer. Alla XML-filer innehåller etiketter för ett enskilt språk.
 
-![Exempel på den exporterade filen som innehåller ER-etiketter för språket DE-AT](./media/er-multilingual-labels-in-xml.png)
+![Exempel på den exporterade filen som innehåller ER-etiketter för språket DE-AT.](./media/er-multilingual-labels-in-xml.png)
 
 Det här formatet används för automatisk översättning av etiketter med externa översättningstjänst som [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md). När du får de översatta etiketterna kan du importera dem tillbaka till utkastversionen av en ER-konfiguration som innehåller de ER-komponenter som äger dessa etiketter. Markera utkastversionen av en ER-konfiguration som innehåller den redigerbara ER-komponenten och välj sedan **Byt \> Lastetiketter**.
 
-![Sidan ER-konfigurationer som tillåter import av ER-etiketter till den valda konfigurationsversionen](./media/er-multilingual-labels-load.png)
+![Sidan ER-konfigurationer som tillåter import av ER-etiketter till den valda konfigurationsversionen.](./media/er-multilingual-labels-load.png)
 
 Översatta etiketter importeras till den valda ER-konfigurationen. Översatta etiketter som finns i denna ER-konfiguration ersätts. Om en översatt etikett saknas i ER-konfigurationen, läggs den till.
 

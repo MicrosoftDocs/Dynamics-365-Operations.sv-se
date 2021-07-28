@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d06bd5baeb6b8b6995fe1ae47f14bab458b8ecc2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: beacff21c6468e9c4b387a654e95f25572c0ede9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831996"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348378"
 ---
 # <a name="visibility-into-material-exceptions"></a>Insyn i materialundantag
 
@@ -37,7 +37,7 @@ En outgiven strukturlisterad eller formelrad kräver åtgärd om råmaterialdatu
 
 I följande bild representerar den blå stapeln ett produktionsjobb som har tidsplanerats för en resurs. Jobbet är planerat att starta 1 maj 2017 (2017/05/01). Datumet är råmaterialdatumet. Med andra ord måste materialet som tilldelas jobbet på strukturlistan och formelraderna alltså vara klart detta datum. Det andra datumet i bilden, 6 maj 2017 (2017/05/06), representerar arbetsytans datum. I det här exemplet är råmaterialdatumet tidigare än arbetsytans datum. Därför har datumet när förbrukningen av råmaterial skulle starta passerat och strukturlistan och formelraderna uppfyller kraven för åtgärd.
 
-![Exempel på produktionsjobb där råmaterialdatumet tidigare än arbetsytans datum](./media/improved-visibility.png)
+![Exempel på ett produktionsjobb där råmaterialdatumet infaller tidigare än arbetsytans datum.](./media/improved-visibility.png)
 
 ## <a name="unreleased-material-lines-needing-attention"></a>Ej frisläppta materialrader som behöver åtgärdas
 

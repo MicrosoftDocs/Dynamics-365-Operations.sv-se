@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 18556e35d63ea20b181c525b758788dc0f89f701
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f3e01dd85cbe8e2b2c9095431f3e0aead817a5a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842235"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352772"
 ---
 # <a name="procurement"></a>Anskaffning
 
@@ -36,7 +36,7 @@ På listsidan **Inköpsrekvisition för arbetsorder** (**Tillgångshantering** >
 
 I bilden nedan visas ett exempel på listsidan **Inköpsrekvisition för arbetsorder**.
 
-![Figur 1](media/08-work-orders.png)
+![Figur 1.](media/08-work-orders.png)
 
 
 På listsidan **Inköp för arbetsorder** (**Tillgångshantering** > **Allmänt** > **Anskaffning** > **Inköpsrekvisition för arbetsorder**) visas en lista över inköpsorder som är relaterade till arbetsorder. När du väljer ett jobb för arbetsorder på den här sidan kan du använda knapparna i gruppen **Visa** på fliken i åtgärdsfönstret **Inköpsrekvisition för arbetsorder** för att utföra olika åtgärder:
@@ -47,7 +47,7 @@ På listsidan **Inköp för arbetsorder** (**Tillgångshantering** > **Allmänt*
 
 I bilden nedan visas ett exempel på listsidan **Inköp för arbetsorder**.
 
-![Figur 2](media/09-work-orders.png)
+![Figur 2.](media/09-work-orders.png)
 
 
 På listsidan **Inköp för arbetsorder** och **Inköpsrekvisition för arbetsorder** visas en symbol som är relaterad till kontrollen av leveransdatum till höger på varje rad. Om symbolen är ett utropstecken i en röd cirkel, innebär det att leveransen av den relaterade inköpsordern eller inköpsrekvisitionen kan vara försenad.
@@ -93,7 +93,7 @@ Om du vill visa eller ange aktivitetsnumret som hör till en inköpsorderrad, v�
 
 Illustrationen nedan visar ett exempel på sidan **Inköpsorder** med fokus på **aktivitetsnummer**.
 
-![Figur 3](media/10-work-orders.png)
+![Figur 3.](media/10-work-orders.png)
 
 På samma sätt, för att visa eller ange det aktivitetsnummer som är relaterat till en rekvisitionsrad för arbetsorder på listsidan **Inköpsrekvisition för arbetsorder** välj inköpsrekvisitionsposten och sedan i kolumnen **inköpsrekvisition** väljer du länken för inköpsrekvisitionen. Du hittar fältet **aktivitetsnummer** på fliken **projekt** på snabbfliken **radinformation**.
 

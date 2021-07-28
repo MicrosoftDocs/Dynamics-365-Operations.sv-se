@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 24c322712edf1277eabfdd708f528d89bcf43640
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261756"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354819"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Moln- och kantskalningsenheter för arbetsbelastning i tillverknings och distributionslagerhantering
 
@@ -41,7 +41,7 @@ Arbetsbelastningsfunktionerna frisläpps kontinuerligt genom stegvisa förbättr
 
 Skalningsenheter utökas med Supply Chain Management navmiljö genom att lägga till dedikerad bearbetningskapacitet. Skalningsenheter kan köras i molnet. De kan också köras "on the edge" – i utkanten av nätverket istället för som annars centralt – på plats på din lokala anläggning.
 
-:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 med skalningsenheter":::
+:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 med skalningsenheter.":::
 
 Skalningsenheter tillhandahåller effektivitet, tillförlitlighet och skalning för de tilldelade arbetsbelastningarna. Kantskalenheter kan tillfälligt kopplas ned från den molnbaserade miljön, och medarbetarna fortsätter att arbeta i de tilldelade arbetsbelastningarna "on the edge" – i utkanten av nätverket istället för som annars centralt.
 
@@ -157,7 +157,7 @@ Skalningsenheter ges i flera lagerhållningsenheter (SKU) och prissättningsalte
 
 SKU på ingångsnivå kallas *Basic*, och den mer högpresterande kallas *Standard*. Varje SKU förinlästes med ett visst antal månadstransaktioner. Du kan emellertid öka den månatliga transaktionsbudgeten genom att lägga till tilläggsprogram för överförbrukning för respektive SKU.
 
-:::image type="content" source="media/SKUs-highlevel.png" alt-text="Tilläggsprogram för molnskalningsenheter":::
+:::image type="content" source="media/SKUs-highlevel.png" alt-text="Tillägg för molnskalningsenheter.":::
 
 > [!TIP]
 > Identifiera den storlek som bäst uppfyller dina behov genom att samarbeta med din partner och Microsoft för att ta reda på vilken månadstransaktionsstorlek du behöver.
@@ -181,11 +181,11 @@ Om innehavaren som du söker efter inte finns med i listan går du till [LCS](ht
 
 Listan anger registreringsstatus för respektive klientorganisation.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Lista över klientorganisationer i fliken Dynamics 365-klientorganisationer":::
+:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Lista över klientorganisationer i fliken för Dynamics 365-klientorganisationer.":::
 
 Välj **Klicka här för att komma igång** för att begära registrering för LCS-klientorganisationen. Du måste acceptera villkoren. Du måste också ange en e-postadress till företaget där Microsoft kan skicka meddelanden som är relaterade till registreringsprocessen.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Skicka registrering för en klientorganisation":::
+:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Skicka registrering för en klientorganisation.":::
 
 Microsoft kommer att granska din begäran och informera dig om nästa steg genom att skicka ett e-postmeddelande till den adress som du har angett i registreringsformuläret. Microsoft kommer att samarbeta nära dig för att möjliggöra skalningsenheter i hybridtopologin för ditt affärsscenario.
 
@@ -195,13 +195,13 @@ När registreringen är slutförd kan du använda porten för att konfigurera sk
 
 Gå till [portalen för skalningsenhetsansvarig](https://aka.ms/SCMSUM) och logga in med ditt klientkonto. På sidan **Konfigurera skalningsenheter** kan du lägga till en navmiljö om den inte redan finns med i listan. Du kan sedan välja det nav som du vill konfigurera med enheter och arbetsbelastningar.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Skalningsenhet och arbetsbelastningshantering":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Skalningsenhet och arbetsbelastningshantering.":::
 
 Om du vill lägga till en eller flera skalningsenheter som är tillgängliga i dina prenumerationer väljer du **Lägg till skalningsenheter**.
 
 På fliken **Definierade arbetsbelastningar** använder du knappen **Skapa arbetsbelastning** för att lägga till en arbetsbelastning för lagerhantering i en av dina skalningsenheter. För varje arbetsbelastning måste du ange kontexten för de processer som ska ägas av arbetsbelastningen. För distributionslagerhantering arbetsbelastningar är sammanhanget ett specifikt lagerställe på en specifik webbplats och juridisk person.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Skapa arbetsbelastning":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Skapa arbetsbelastning.":::
 
 > [!TIP]
 > Med tiden läggs stegvisa förbättringar till i upplevelsen för skalningsenhetsansvarig i syfte att förenkla hanteringen av livscykler. De specifika möjligheterna för den aktuella versionen dokumenteras i en registreringshandbok som är tillgänglig för kunder som håller på att registrera sig för den distribuerade hybridtopologin för Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->

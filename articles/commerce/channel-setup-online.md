@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f0f1e0f3e7145c66b8f2b082b44ad7035c57d947
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: dc76c3c8c3da11202ebb29f4c5c0df72892c094a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936954"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351186"
 ---
 # <a name="set-up-an-online-channel"></a>Ställa in en onlinekanal
 
@@ -55,11 +55,11 @@ Följ stegen nedan om du vill skapa och konfigurera en ny onlinekanal.
 
 Följande bild visar hur en ny onlinekanal skapas.
 
-![Ny onlinekanal](media/channel-setup-online-1.png)
+![Ny onlinekanal.](media/channel-setup-online-1.png)
 
 I bilden nedan visas ett exempel på onlinekanal.
 
-![Exempel på onlinekanal](media/channel-setup-online-2.png)
+![Exempel på onlinekanal.](media/channel-setup-online-2.png)
 
 ## <a name="set-up-languages"></a>Ställ in språk
 
@@ -75,7 +75,7 @@ Ytterligare uppgifter som krävs för inställningar av onlinekanal inkluderar i
 
 I följande bild visas alternativen **leveranssätt**, **betalsätt** och **uppfyllelse av grupptilldelning** på fliken **inställning**.
 
-![Ytterligare åtgärder för konfigurering av onlinekanal](media/channel-setup-online-3.png)
+![Ytterligare åtgärder för konfigurering av onlinekanal.](media/channel-setup-online-3.png)
 
 ### <a name="set-up-payment-methods"></a>Ange betalsätt
 
@@ -90,7 +90,7 @@ Om du vill ställa in betalsätt följer du dessa steg för varje betalningstyp 
 
 I bilden nedan visas ett exempel på en kontantbetalningsmetod.
 
-![Exempel på betalsätt](media/channel-setup-retail-5.png)
+![Exempel på betalningsmetoder.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Ställ in leveranssätt
 
@@ -104,7 +104,7 @@ Om du vill ändra eller lägga till ett leveranssätt följer du stegen nedan.
 
 I bilden nedan visas ett exempel på ett leveranssätt.
 
-![Ställ in leveranssätt](media/channel-setup-retail-7.png)
+![Konfigurera leveranssätt.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>Ange tilldelning av uppfyllelsegrupp
 
@@ -118,13 +118,13 @@ Så här ställer du in en tilldelning av uppfyllelsegrupp.
 
 I bilden nedan visas ett exempel på en inställning av tilldelning av uppfyllelsegrupp.
 
-![Ange tilldelning av uppfyllelsegrupp](media/channel-setup-retail-9.png)
+![Konfigurera tilldelning av uppfyllelsegrupp.](media/channel-setup-retail-9.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över kanaler](channels-overview.md)
 
-[Förutsättningar för att ställa in kanaler](channels-prerequisites.md)
+[Förutsättningar för kanalinställningar](channels-prerequisites.md)
 
 [Ställa in en butikskanal](channel-setup-retail.md)
 

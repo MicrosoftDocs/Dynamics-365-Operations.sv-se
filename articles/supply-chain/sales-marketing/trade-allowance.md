@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 51b734e6a94ffdfabb218a19986f1bec65b839e7
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 35ceb14d4d048959ae6a1740791bd4d57f33b34c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102816"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359543"
 ---
 # <a name="trade-allowance-management"></a>Hantering av handelsavdrag
 
@@ -59,7 +59,7 @@ Ett avtal för handelsavdrag är ett bonusprogram där monetära belöningar i f
 
 Medel som är allokerade till avtal om handelsavdrag registreras på sidan **medel**. För att öppna sidan **Medel** väljer du **Försäljning och marknadsföring**\>**Handelsavdrag**\>**Medel**\>**Medel**.
 
-![Sidan Medel](./media/trade-allowance-management-funds-page.png "Sidan Medel")
+![Sidan Medel.](./media/trade-allowance-management-funds-page.png "Sidan Medel")
 
 På sidan **Medel** kan du visa information om kampanjmedel.
 
@@ -75,9 +75,9 @@ När fonddefinitionen är på plats, är nästa steg i kampanjplaneringen att re
 
 Handelsavdragsavtal registreras på sidan **Handelsavdragsavtal**. För att öppna sidan **Handelsavdragsavtal**, välj **Försäljning och marknadsföring**\>**Handelsavdrag**\>**Handelsavdragsavtal**.
 
-![Sidan avtal om handelsavdrag](./media/trade-allowance-management-agreements-page.png "Sidan avtal om handelsavdrag")
+![Sidan Avtal om handelsavdrag.](./media/trade-allowance-management-agreements-page.png "Sidan avtal om handelsavdrag")
 
-#### <a name="header"></a>Siduvud
+#### <a name="header"></a>Sidhuvud
 
 Välj **Rubrik** för att växla till rubrikvyn.
 
@@ -103,7 +103,7 @@ Fliken **Marknadsföringshändelser** visar vilka typer av händelser som omfatt
 
 När du markerar marknadsföringshändelsen och sedan väljer fliken **belopp** hittas information om händelsen.
 
-![Rader för handelsavdragsavtal](./media/trade-allowance-management-agreements-lines.png "Rader för handelsavdragsavtal")
+![Avtalsrader för handelsavdrag.](./media/trade-allowance-management-agreements-lines.png "Rader för handelsavdragsavtal")
 
 I avsnittet **Handelsavdragsrader** anger du kvantitet eller beloppsintervall som kunden måste uppnå för definitioner för att erhålla belöningarna.
 

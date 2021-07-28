@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: dabourq
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8f6affd05e658f39d567f7512c71d944636588ff
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ad4ba2781c1b1086f2b554ec1db0f0f970d2d671
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907949"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351451"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobil arbetsyta för leverantörssamarbete
 
@@ -120,12 +120,12 @@ Hämta och installera mobilappen Finance and Operations.
 4.  Första gången du loggar in uppmanas du att ange användarnamn och lösenord. Ange dina autentiseringsuppgifter.
 5.  När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.
 
-    [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Dra nedåt för att uppdatera.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Använda den mobila arbetsytan för leverantörssamarbete
 När du väljer den mobila arbetsytan **Leverantörssamarbete** visas följande alternativ:
 
-![Mobil arbetsyta för leverantörssamarbete](./media/vendor-collaboration-mobile-app.png)
+![Mobil arbetsyta för leverantörssamarbete.](./media/vendor-collaboration-mobile-app.png)
 
 Arbetsytan **Leverantörssamarbete** omfattar följande sidor:
 

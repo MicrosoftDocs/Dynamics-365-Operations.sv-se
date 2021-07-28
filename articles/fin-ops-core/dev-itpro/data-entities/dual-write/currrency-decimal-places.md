@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: c4f663ae36f7d4ea3db9888e618f2fe3bf8c3256
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 073f89b5ae44e20d1d2e854341afaa176f9b6280
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748957"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350945"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering av valutatyp för dubbelriktad skrivning
 
@@ -82,13 +82,13 @@ Det finns några begränsningar:
 
 När migreringen har slutförts kan administratörer ställa in valutaprecision. Gå till **Inställningar \> Administration** och välj **Systeminställningar**. På fliken **Allmänt** ändrar du värdet för kolumnen **Ange valuta precisionen som används för prissättning i hela system** som du ser i bilden nedan.
 
-![Systeminställningar för valuta](media/currency-system-settings.png)
+![Systeminställningar för valuta.](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Affärshantering: valutor
 
 Om du kräver att valutaprecisionen för en viss valuta avviker från den valutaprecision som används för prissättningen kan du ändra den. Gå till **Inställningar \> Företagshantering**, välj **Valutor** och välj sedan vilken valuta du vill ändra. Ställ sedan in kolumnen **Valutaprecision** till önskat antal decimaler, som du ser i bilden nedan.
 
-![Valutainställningar för ett specifikt språk](media/specific-currency.png)
+![Valutainställningar för en specifik plats.](media/specific-currency.png)
 
 ### <a name="tables-currency-column"></a>tabeller: valutakolumn
 

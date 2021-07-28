@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: be5646eaf395310c8b34586ef1274a41b5b97029
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 5b4899cad01a0ed2424dcc5d29e9fb5cca65a6a9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944737"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351107"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Använd sammanfogningsdatakällor för att hämta data från flera programtabeller i ER-modellmappningar (elektronisk rapportering)
 
@@ -69,7 +69,7 @@ I förväg måste du också hämta och spara följande exempelkonfigurationsfile
 | **Beskrivning av innehåll**  | **Filnamn**   |
 |--------------------------|-----------------|
 | Exempelkonfigurationsfil för **ER-datamodell** som används som datakälla för exemplen.| [Modell för att lära dig sammanfogningsdatakällor.version.1.1.xml](https://download.microsoft.com/download/5/c/1/5c1d8a57-6ebd-425b-bc5d-c71dde92c6af/ModeltolearnJOINdatasources.version.1.xml) |
-| Konfigurationsfil för **ER-modelmappning** som implementerar ER-datamodellen för exemplen. | [Mappning för att lära dig sammanfogningsdatakällor.version.1.1.xml](https://user-images.githubusercontent.com/19827601/115923048-86b10400-a432-11eb-9e57-c37a02effcb4.png)|
+| Konfigurationsfil för **ER-modelmappning** som implementerar ER-datamodellen för exemplen. | [Mappning för att lära dig sammanfogningsdatakällor.version.1.1.xml](https://download.microsoft.com/download/9/2/f/92f339ca-41fc-4f5e-b458-6983c957d3dd/MappingtolearnJOINdatasources.version.1.1.xml)|
 | Exempelkonfigurationsfil för **ER-format**. Den här filen beskriver de data som ska fyllas i ER-formatkomponenten för exemplen. | [Format för att lära dig sammanfogningsdatakällor.version.1.1.xml](https://download.microsoft.com/download/f/f/8/ff8f1b48-14d0-4c73-9145-bcdf8b5265bc/FormattolearnJOINdatasources.version.1.1.xml) |
 
 ### <a name="activate-a-configurations-provider"></a>Aktivera en konfigurationsprovider
@@ -78,7 +78,7 @@ I förväg måste du också hämta och spara följande exempelkonfigurationsfile
 2. Gå till **Organisationsadministration \> Arbetsytor \> Elektronisk rapportering**.
 3. På sidan **Lokaliseringskonfigurationer** i avsnittet **Konfigurationsleverantörer** kontrollerar du att konfigurationsleverantören för exempelföretaget [Litware, Inc.](http://www.litware.com) är listat och att det är markerat som **Aktivt**. Om du inte ser den här konfigurationsleverantören ska du följa stegen i proceduren [Skapa en konfigurationsleverantör och välj den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-    ![Arbetsytan för elektronisk rapportering](./media/GER-JoinDS-ActiveProvider.PNG)
+    ![Arbetsytan för elektronisk rapportering.](./media/GER-JoinDS-ActiveProvider.PNG)
 
 ### <a name="import-sample-er-configuration-files"></a>Importera ER-exempelkonfigurationsfiler
 
@@ -101,7 +101,7 @@ I förväg måste du också hämta och spara följande exempelkonfigurationsfile
 5. I konfigurationsträdet expanderar du artikeln **Modell för att lära dig sammanfogningsdatakällor** och även andra modellobjekt (om de är tillgängliga).
 6. Studera listan med ER-konfigurationer i trädet samt versionsinformationen i snabbfliken **Versioner** – de används som datakälla för exempelrapporten.
 
-    ![Sidan konfigurationer för elektronisk rapportering](./media/GER-JoinDS-ConfigurationsTree.PNG)
+    ![Sidan Konfigurationer för elektronisk rapportering.](./media/GER-JoinDS-ConfigurationsTree.PNG)
 
 ### <a name="turn-on-execution-trace-options"></a>Aktivera alternativ för körningsspårning
 
@@ -109,7 +109,7 @@ I förväg måste du också hämta och spara följande exempelkonfigurationsfile
 2. Välj **Användarparametrar**.
 3. Ange parametrar för körningsspårning som visas på bildrutan nedan.
 
-    ![Sida för användarparametrar för elektronisk rapportering](./media/GER-JoinDS-Parameters.PNG)
+    ![Sida för användarparametrar för elektronisk rapportering.](./media/GER-JoinDS-Parameters.PNG)
 
     Om dessa parametrar är aktiverade kommer körningsspårningen att genereras för varje körning av den importerade ER-formatfilen. Med hjälp av information om genererad körningsspårning kan du analysera körningen av komponenter för ER-format och ER-modellmappning. Besök sidan [Spåringskörning av ER-format för att hjälpa dig att felsöka prestandaproblem](trace-execution-er-troubleshoot-perf.md) för mer information om funktionen ER-körningsspårning.
 
@@ -128,13 +128,13 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
     3. Bindning **ConfigurationTitle: String = @.'>Relations'.Solution.Name** anger att namnet på en ER-konfiguration hämtas från fältet **Namn** i tabellen **ERSolutionTable** med hjälp av många-till-en-relation (**'>Relationer'**) mellan tabellerna **ERSolutionVersionTable** och **ERSolutionTable** . Namn på ER-konfigurationer för den aktuella programinstansen visas i konfigurations trädet på sidan **konfigurationer**.
     4. Bindning **@.'>Relations'.Solution.'>Relations'.SolutionVendor.Name** innebär att namnet på konfigurationsprovider som äger den nuvarande konfigurationen hämtas från fältet **Namn** i tabellen **ERVendorTable** med hjälp av många-till-en-relation mellan tabellerna **ERSolutionTable** och **ERVendorTable**. Namn på ER-konfigurationsprovider visas i konfigurations trädet på sidan **konfigurationer** på sidhuvudet för varje konfiguration. Hela listan med konfigurationsprovider hittas på tabellsidan **Organisationsadministration \> Elektronisk rapportering \> Konfigurationsprovider**.
 
-    ![Designersida för ER-modellmappning, lista över bundna datamodellartiklar](./media/GER-JoinDS-Set1Review.PNG)
+    ![Designersida för ER-modellmappning, lista över bundna datamodellartiklar.](./media/GER-JoinDS-Set1Review.PNG)
 
 6. I konfigurationsträdet expanderar du datamodellobjektet **Set1.Summary**:
 
     1. Bindning **VersionsNumber: Integer = VersionsSummary.aggregated.VersionsNumber** anger att objektet **Set1.Summary.VersionsNumber** är bundet till sammansättningsfältet **VersionsNumber** för datakällan **VersionsSummary** av typen **GroupBy** typ som konfigurerades för att returnera antalet poster för tabellen **ERSolutionVersionTable** via datakällan **Versioner**.
 
-    ![Redigera parametersidan för "Gruppera efter"](./media/GER-JoinDS-Set1GroupByReview.PNG)
+    ![Redigera parametersidan för "Gruppera efter".](./media/GER-JoinDS-Set1GroupByReview.PNG)
 
 7. Stäng sidan.
 
@@ -144,18 +144,18 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
 
 1. I konfigurationsträdet expanderar du datamodellobjektet **Set2** och **Set2.Details**. Bindningen **Detaljer: Postlista = Detaljer** anger att objektet **Set2.Details** är bundet till datakällan **Detaljer** konfigurerad som datakälla av typen **Koppling**.
 
-    ![Designersidan för ER-modellmappning som visar expanderade Uppsättning 2-modellartiklar för postdata.](./media/GER-JoinDS-Set2Review.PNG)
+    ![Designersidan för ER-modellmappning som visar expanderade modellartiklar för Uppsättning 2: Postdata.](./media/GER-JoinDS-Set2Review.PNG)
 
     Datakällan **Sammanfoga** kan läggas till genom att välja datakällan **Functions\Join**:
 
-    ![Designersida för ER-modellmappning, sammanfoga typ av datakälla](./media/GER-JoinDS-AddJoinDS.PNG)
+    ![Designersida för ER-modellmappning, Sammanfoga typ av datakälla.](./media/GER-JoinDS-AddJoinDS.PNG)
 
 2. Välj datakällan **Information**.
 3. Välj **redigera** i fönstret **datakällor**.
 4. Välj **Redigera sammanfogning**.
 5. Välj **Visa detaljer**.
 
-    ![Sidan för parametrar för datakälla för JOIN](./media/GER-JoinDS-JoinDSEditor.PNG)
+    ![Parametersida för JOIN-datakälla.](./media/GER-JoinDS-JoinDSEditor.PNG)
 
     Den här sidan används för att utforma den begärda datakällan av **sammanfogningstyp**. Under körningen kommer den här datakällan att skapa en enda lista med poster från data källorna i rutnätet **Sammanfogade listor**. Sammanfogning av poster startar från datakällan **ConfigurationProviders** som är i rutnätet som en första kolumn (kolumnen **typ** är tom för den). Poster i alla andra datakällor kopplas därmed till poster i den överordnade datakällan baserat på dess ordning i det här rutnätet. Varje kopplad datakälla måste konfigureras som en datakälla som kapslats under en måldatakälla (datakällan `1Versions` är kapslad under `1Configurations`; datakällan `1Configurations` är kapslad under **ConfigurationProviders**). Varje konfigurerad datakälla måste innehålla villkoren för sammanfogningen. I datakällan för den här **sammanfogningen** definieras följande sammanfogningar:
 
@@ -178,7 +178,7 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
     - Bindning **VersionsNumber: Integer = DetailsSummary.aggregated.VersionsNumber** anger att objektet **Set2.Summary.VersionsNumber** är bundet till sammansättningsfältet **VersionsNumber** för datakällan **DetailsSummary** av typen **GroupBy** typ som konfigurerades för att returnera antalet sammanfogade poster för tabellen **Information** via datakällan av typen **Sammanfogning**.
     - Platsalternativet **Körning** konfigureras som en **Fråga** vilket innebär att den här datakällan för **GroupBy** kommer köras i körtid på databasnivå som ett direkt SQL-anrop. Beteendet är möjligt eftersom basdatakällan **Information** för typen **Koppling** konfigureras som körd på databasnivå.
 
-    ![Sidan för parametrar för datakälla för GROUPBY](./media/GER-JoinDS-Set2GroupByReview.PNG)
+    ![Parametersida för GROUPBY-datakälla.](./media/GER-JoinDS-Set2GroupByReview.PNG)
 
 9. Stäng sidan.
 10. Välj **Avbryt**.
@@ -196,21 +196,21 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
 
     Det här formatet har utformats för att fylla en genererad textfil med en ny rad för varje version av en ER-konfiguration (ordning för **Version**). Varje genererad rad innehåller namnet på en konfigurationsprovider som äger den aktuella konfigurationen, konfigurationsnamnet och konfigurationsversionen som är åtskilda med semikolon. Den sista raden med genererade filer kommer att innehålla antalet upptäckta versioner av ER-konfigurationer (sekvens **sammanfattning**).
 
-    ![Designersida för ER-format, fliken Format](./media/GER-JoinDS-FormatReview.PNG)
+    ![Designersida för ER-format, fliken Format.](./media/GER-JoinDS-FormatReview.PNG)
 
     Datakällorna **Data** och **Sammanfattning** används för att fylla i information om konfigurationsversion till den genererade filen:
 
     - Information från datamodellen **Set1** används när du väljer **Nej** för datakällan **Väljare** vid körning på användardialogsidan när du kör ER-format.
     - Information från datamodellen **Set2** används när du väljer **Ja** för datakällan **Väljare** vid körning på användardialogsidan.
 
-    ![Designersida för ER-format, fliken Mappa](./media/GER-JoinDS-FormatMappingReview.PNG)
+    ![Designersida för ER-format, fliken Mappa.](./media/GER-JoinDS-FormatMappingReview.PNG)
 
 9. Välj **kör**.
 10. På dialogsidan väljer du **Nej** i fältet **Använd sammanfogningsdatakälla**.
 11. Välj **OK**.
 12. Granska genererad fil
 
-    ![Fil genererad av elektroniska rapportparametrar som inte använder JOIN-datakälla](./media/GER-JoinDS-Set1Run.PNG)
+    ![Fil genererad av elektroniska rapportparametrar som inte använder JOIN-datakälla.](./media/GER-JoinDS-Set1Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a>Analysera körningsspårning för ER-format
 
@@ -224,7 +224,7 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
     - **ERSolutionTable** har anropats så många gånger som du har konfigurationsversionsposter i tabellen **ERSolutionVersionTable** medan antalet sådana samtal kan minskas i tid för prestandaförbättring.
     - **ERVendorTable** har anropats två gånger för varje konfigurationsversionspost som upptäcktes i tabellen **ERSolutionVersionTable** medan antalet sådana samtal kan minskas i tid för prestandaförbättring.
 
-    ![Körningsstatistik designersidan för ER-modellmappning](./media/GER-JoinDS-Set1Run2.PNG)
+    ![Körningsstatistik på designersidan för ER-modellmappning.](./media/GER-JoinDS-Set1Run2.PNG)
 
 5. Stäng sidan.
 
@@ -236,7 +236,7 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
 4. Välj **OK**.
 5. Granska genererad fil
 
-    ![Fil genererad av elektroniska rapportparametrar som använder JOIN-datakälla](./media/GER-JoinDS-Set2Run.PNG)
+    ![Fil genererad av elektroniska rapportparametrar som använder JOIN-datakälla.](./media/GER-JoinDS-Set2Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Analysera körningsspårning för ER-format
 
@@ -249,11 +249,11 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
 
     - Programdatabasen har anropats en gång för att hämta poster från tabellerna **ERVendorTable**, **ERSolutionTable** och **ERSolutionVersionTable** för åtkomst till obligatoriska fält.
 
-    ![Information om prestandastatistik för designersida för ER-modellmappning](./media/GER-JoinDS-Set2Run2.PNG)
+    ![Information om prestandastatistik för designersida för ER-modellmappning.](./media/GER-JoinDS-Set2Run2.PNG)
 
     - Programdatabasen har anropats en gång för att beräkna antalet konfigurationsversioner med hjälp av sammanfogningar som konfigurerats i datakällan **Information**.
 
-    ![Designersida för ER-modellmappning som visar anrop i programdatabasen](./media/GER-JoinDS-Set2Run3.PNG)
+    ![Designersida för ER-modellmappning som visar anrop i programdatabasen.](./media/GER-JoinDS-Set2Run3.PNG)
 
 ## <a name="limitations"></a>Begränsningar
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6e0a6a05fcb4afb8c8965e25c3089bc1b3d98431
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 70e57a928ecd3f5d10ebd3d0fc3f52870d40fcd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023593"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358180"
 ---
 # <a name="set-up-tax-components-for-the-tds-tax-type"></a>Konfigurara skattekomponenter för skattetypen TDS
 
@@ -33,7 +33,7 @@ Följ dessa steg för att ställa in TDS-komponenter.
 
 1. Gå till **Skatt \> Konfiguration \> Källskatt \> Källskattekomponenter**.
 
-    [![Sidan Källskattekomponenter](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
+    [![Sidan Källskattekomponenter.](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
 
 2. I fältet **Skattetyp** väljer du **TDS** för att konfigurera källskattekomponenter för skattetypen TDS.
 3. I åtgärdsfönstret, välj **Ny** för att skapa en rad.
@@ -50,7 +50,7 @@ Följ dessa steg för att ställa in TDS-komponenter.
 
     Om undantagströskelbeloppet till exempel är 5 000, beräknas TDS på en specifik fakturarad om fakturaradsbeloppet överstiger 5 000 (med andra ord om det är 5 001 eller mer).
 
-    [![Sidan Tröskel](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
+    [![Sidan Tröskel.](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
 
     > [!NOTE]
     > Undantagströskeln måste vara mindre än eller lika med tröskelbeloppet.
@@ -66,6 +66,6 @@ Följ dessa steg för att ställa in TDS-komponenter.
 
 14. Välj **OK** för att kopiera och skapa TDS-komponenter för den andra TDS-komponentgruppen på sidan **Källskattekomponenter**.
 
-    [![Dialogrutan Kopiera källskattekomponenter](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
+    [![Dialogrutan Kopiera källskattekomponenter.](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
 
 15. Stäng sidan.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: bdb90f8d629a026a84f8c65e7e95b589169a3e4d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a9e5204c2bb9c0a58b2e4e223a4a3d2d09d53659
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752346"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356273"
 ---
 # <a name="configuration-keys-and-data-entities"></a>Konfigurationsnycklar och datatabeller
 
@@ -52,24 +52,24 @@ I följande tabell sammanfattas hur konfigurationsvärden påverkar olika artefa
 ### <a name="entity-list-refresh"></a>Uppdatering av enhetslista
 När entitetslistan uppdateras bygger ramverket för datahantering konfigurationsnyckelns metadata för körning. Dessa metadata byggs med logiken som beskrivs ovan. Vi rekommenderar att du väntar tills enhetslistans uppdatering är färdig innan du använder jobb och enheter i ramverket för datahantering. Om du inte väntar kan konfigurationsnyckelns metadata vara felaktiga och leda till oväntade resultat. När enhetslistan uppdateras visas följande meddelande på enhetslistans sida.
 
-![Uppdatering av enhetslista](./media/Entity_refresh_list.png)
+![Uppdatering av entitetslista.](./media/Entity_refresh_list.png)
 
 ### <a name="data-entity-list-page"></a>Listsida för datatabell
 I arbetsytan för datahantering visar listsidan för datatabellen inställningar för enheternas konfigurationsnycklar. Starta på den här sidan för att förstå effekten av konfigurationsnycklar för datatabellen.
 
 Denna information visas med metadata som skapats under uppdateringen av enheten. Kolumnen för konfigurationsnyckel visar namnet på den konfigurationsnyckel som är associerad med datatabellen. Om den här kolumnen är tom innebär det att det inte finns någon konfigurationsnyckel som associeras med datatabellen. Statuskolumnen visar status för konfigurationsnyckeln. Om den har en markering innebär det att nyckeln är aktiverad. Om den är tom innebär det antingen att nyckeln är inaktiverad eller att ingen nyckel är associerad.
 
-![Listsida för enhet](./media/Data_entity_list_page.png)
+![Listsida för entitet.](./media/Data_entity_list_page.png)
 
 ### <a name="target-fields"></a>Målfält
 Nästa steg är att gå djupare i datatabellen för att se effekten av konfigurationsnycklar på register och fält. Formuläret för målfält i en datatabell visar konfigurationsnyckeln och dess statusinformation för de relaterade registren och fälten i datatabellerna. Om datatabellen har en inaktiverad konfigurationsnyckel visas ett varningsmeddelande om att register och fält i formuläret för målfält inte är tillgängliga för enheten oavsett status på konfigurationsnyckeln.
 
-![Målfält](./media/Target_fields_1.png)
+![Målfält.](./media/Target_fields_1.png)
 
 ### <a name="child-entities"></a>Underordnade enheter 
 Vissa enheter har andra enheter som datakällor eller är sammansatta datatabeller: information om konfigurationsnyckel för dessa enheter visas i formuläret underordnade enheter. Använd det här formuläret på liknande sätt som enhetens listsida som beskrivs ovan. Formuläret för målfält för underordnade enheter fungerar enligt beskrivningen ovan.
 
-![Målfält](./media/Target_fields_2.png)
+![Målfält.](./media/Target_fields_2.png)
 
 ### <a name="using-data-entities"></a>Att använda datatabeller
 När du förstår den fulla inverkan, om någon, av konfigurationsnycklar i de datatabeller som du vill använda kan du nu fortsätta med att använda datatabellerna genom att lägga till dem i dataprojekt. 
@@ -91,7 +91,7 @@ Genom att använda de metadata för konfigurationsnycklar som skapas under enhet
 ### <a name="managing-configuration-key-changes"></a>Hantera ändringar av konfigurationsnycklar
 När du uppdaterar konfigurationsnycklar i enheten, på register- eller fältnivå, måste enhetslistan i ramverket för datahantering uppdateras. Proceduren säkerställer att ramverket hämtar de senaste inställningarna för konfigurationsnycklar. Tills enhetslistan uppdateras visas följande varningsmeddelande på enhetslistans sida. De uppdaterade ändringarna för konfigurationsnycklar börjar gälla omedelbart efter att enhetslistan uppdateras. Vi rekommenderar att du validerar befintliga dataprojekt och jobb för att säkerställa att de fungerar som förväntat efter att ändringarna av konfigurationsnycklar har börjar gälla.
 
-![Målfält](./media/Target_fields_3.png)
+![Målfält.](./media/Target_fields_3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Modul för sidhuvud
 description: Det här avsnittet handlar om moduler för sidhuvud och beskriver hur du skapar sidhuvud i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/20/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b14178431b281daa827749781dd16481f8bfb74
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 21bf454e57c62a2542ed055bb0913c48ab70e235
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799931"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479266"
 ---
 # <a name="header-module"></a>Modul för sidhuvud
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Det här avsnittet handlar om moduler för sidhuvud och beskriver hur du skapar sidhuvud i Microsoft Dynamics 365 Commerce.
 
@@ -33,7 +34,7 @@ Modulen rubrik innehåller en webbplats logotyp, länkar till navigeringsnoden, 
 
 Följande bild visar ett exempel på en rubrikmodul på en startsida.
 
-![Exempel på en rubrikmodul](./media/ecommerce-header.png)
+![Exempel på en rubrikmodul.](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Egenskaper för sidhuvudmodul
 
@@ -58,9 +59,16 @@ Följande moduler kan användas i en sidhuvudmodul:
 - **Butiksväljare** – modulen butiksväljare kan inkluderas i huvudmodulens plats för butiksväljare. Användarna kan då bläddra bland och söka efter butiker i närheten. Användare kan också ange en prioriterad butik. Denna butik visas sedan i rubriken. Om modulen för butiksväljaren är inkluderad i huvudmodulen, måste egenskapen **Läge** ställas in för att **Hitta butiker**. Mer information finns i avsnittet [modulen butiksväljare](store-selector.md).
 
 > [!NOTE]
-> - Stöd för användning av modulen kundvagnikon i huvudmoduler finns i Dynamics 365 Commerce 10.0.11-versionen.
-> - Stöd för användning av modulen webbplatsväljare i huvudmoduler finns i Dynamics 365 Commerce 10.0.14-versionen.
-> - Stöd för användning av modulen butiksväljare i huvudmoduler finns i Dynamics 365 Commerce 10.0.15-versionen.
+> - Stöd för användning av modulen för kundvagnikon i sidhuvudmoduler finns att tillgå från och med Dynamics 365 Commerce-version 10.0.11.
+> - Stöd för användning av modulen för webbplatsväljare i sidhuvudmoduler finns att tillgå från och med Dynamics 365 Commerce-version 10.0.14.
+> - Stöd för användning av modulen för butiksväljare i sidhuvudmoduler finns att tillgå från och med Dynamics 365 Commerce-version 10.0.15.
+
+## <a name="header-module-in-the-adventure-works-theme"></a>Huvudmodulen i Adventure Works-temat
+
+Sidhuvudmodulen har stöd för egenskapen **Mobillogotyp** i Adventure Works-temat. Med denna egenskap kan en logotyp anges för mobila vyer. Egenskapen **Mobillogotyp** finns som moduldefinitionstillägg.
+
+> [!IMPORTANT]
+> Adventure Works-temat finns tillgängligt från och med Dynamics 365 Commerce-version 10.0.20.
 
 ## <a name="create-a-header-fragment-for-a-page"></a>Skapa ett huvudfragment för en sida
 

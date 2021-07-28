@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-08-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 71ec26bea2063bcf8b6d302a7ece804b3ac934b3
-ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
+ms.openlocfilehash: 94ecd623d445e23cc41829c51429e4783daa49f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304377"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355983"
 ---
 # <a name="view-manage-and-approve-planned-orders"></a>Visa, hantera och godkänna planerade order
 
@@ -65,7 +65,7 @@ Godkännande av planerade order är ett valfritt steg på vägen för att skapa 
 
 I följande bild visas hur du kan använda värdet **Status** som tilldelas varje planerad order i syfte att implementera ett godkännandearbetsflöde. Om du vill implementera en godkännandeprocess justerar du värdet **Status** manuellt för varje planerad order enligt beskrivningen i det föregående avsnittet.
 
-![Planerat orderflöde](media/approved-planned-orders-1.png)
+![Planerat orderflöde.](media/approved-planned-orders-1.png)
 
 > [!TIP]
 > Vi rekommenderar att du godkänner ändrade planerade order. I annat fall ignoreras redigeringarna och skrivs över av nästa planeringskörning.

@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c58aa1cec6c0bfe33fa1ef90267dcd8ac1218157
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: af427e8df2ac7a3a3b5a7fd6edb740400f6bbeaf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830844"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358012"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrera artiklar för en artikel som är aktiverad för avancerad distributionslagerhantering med hjälp av en artikelinförseljournal
 
@@ -53,14 +53,14 @@ I följande scenario visas hur du skapar en artikelinföringsjournalrubrik där 
 1. Ange **Kontonummer** till *1001*.
 1. Ange **Nummer** till numret inköpsordern som du identifierade i det här arbetet.
 
-    ![Artikelinförseljournal](../media/item-arrival-journal-header.png "Artikelinförseljournal")
+    ![Artikelinförselsjournal.](../media/item-arrival-journal-header.png "Artikelinförseljournal")
 
 1. Välj **OK** för att skapa journalrubriken.
 1. I avsnittet **Journalrader**, välj **Lägg till rad** och ange följande data:
     - **Artikelnummer** – Ange till *M9200*. **Webbplatsen**, **lagerstället** och **kvantiteten** kommer att ställas in baserat på lagertransaktionsdata för de 10 lastpallar (1000 st).
     - **Plats** – Ställ in på *001*. Den här platsen spårar inte licensinnehavare.
 
-    ![Artikelinförseljournalrad](../media/item-arrival-journal-line.png "Artikelinförseljournalrad")
+    ![Artikelinförselsjournalrad.](../media/item-arrival-journal-line.png "Artikelinförseljournalrad")
 
     > [!NOTE]
     > Fältet **Datum** bestämmer datumet då lagerbehållningen för artikeln ska registreras i lagret.  

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a4a963bcfe5932f5642b43751ccd96c472fec0d9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: ba4f0eca471cf9734230bb2a23d53ff2e233ba2f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055014"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361243"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Skapa en app för återkommande dataexport
 
@@ -63,13 +63,13 @@ I slutet av övningen har du en logiskapp som är ansluten till personalmiljön 
 
 Den slutförda logikappen kommer att likna följande bild.
 
-![Översikt över logikappar](media/integration-logic-app-overview.png)
+![Översikt över logikappar.](media/integration-logic-app-overview.png)
 
 ### <a name="step-1-create-a-data-export-project-in-human-resources"></a>Steg 1: skapa ett projekt för dataexport i personal
 
 Skapa ett dataexportprojekt i personal som exporterar arbetare. Namnge projektets **exportarbetare** och se till att alternativet **Generera datapaket** är inställt på **ja**. Lägg till en enskild enhet **(** arbetare) i projektet och välj det format du vill exportera i. (Microsoft Excel-formatet används i den här självstudien.)
 
-![Exportera dataprojekt för medarbetare](media/integration-logic-app-export-workers-project.png)
+![Exportera dataprojekt för medarbetare.](media/integration-logic-app-export-workers-project.png)
 
 > [!IMPORTANT]
 > Kom ihåg namnet på dataexportprojektet. Du kommer att behöva det när du skapar logikappen i nästa steg.
@@ -80,12 +80,12 @@ Den stora delen av övningen innebär att skapa logikappen.
 
 1. Skapa en logikapp i Azure-portalen.
 
-    ![Sidan för att skapa logikapp](media/integration-logic-app-creation-1.png)
+    ![Sida för att skapa logikapp.](media/integration-logic-app-creation-1.png)
 
 2. Starta med en tom logikapp i modulen Logic Apps Designer.
 3. Lägg till en [utlösare för upprepningsschema](/azure/connectors/connectors-native-recurrence) om du vill köra logikappen var 24:e timme (eller enligt ett schema som du väljer).
 
-    ![Dialogrutan Upprepning](media/integration-logic-app-recurrence-step.png)
+    ![Dialogrutan Upprepning.](media/integration-logic-app-recurrence-step.png)
 
 4. Anropa [ExportToPackage](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API för att schemalägga exporten av ditt datapaket.
 
@@ -97,7 +97,7 @@ Den stora delen av övningen innebär att skapa logikappen.
         > [!NOTE]
         > Personaltjänsten tillhandahåller inte ännu en anslutning som visar alla API:er som utgör DMF-paketets REST API, t.ex. **ExportToPackage**. I stället måste du anropa API:erna genom att använda råa HTTPS-begäran via HTTP med Azure AD-kopplingen. Den här kopplingen använder Azure Active Directory (Azure AD) för autentisering och auktorisering till personal.
 
-        ![HTTP med Azure AD-koppling](media/integration-logic-app-http-aad-connector-step.png)
+        ![HTTP med Azure AD-anslutningsprogram.](media/integration-logic-app-http-aad-connector-step.png)
 
     2. Logga in på din personalmiljön via HTTP med Azure AD-koppling.
     3. Ställ in en HTTP **POST**-begäran för att anropa **ExportToPackage** DMF REST API.
@@ -116,21 +116,21 @@ Den stora delen av övningen innebär att skapa logikappen.
             }
             ```
 
-        ![Åtgärden anropa en HTTP-begäran](media/integration-logic-app-export-to-package-step.png)
+        ![Åtgärden Anropa en HTTP-begäran.](media/integration-logic-app-export-to-package-step.png)
 
     > [!TIP]
     > Du kanske vill byta namn på varje steg så att det blir mer meningsfullt än standardnamnet **Anropa en HTTP-begäran**. Du kan till exempel byta namn på det här steget **ExportToPackage**.
 
 5. [Initiera en variabel](/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) för att lagra körningsstatusen för **ExportToPackage**-begäran.
 
-    ![Åtgärden Initiera variabel](media/integration-logic-app-initialize-variable-step.png)
+    ![Åtgärden Initiera variabel.](media/integration-logic-app-initialize-variable-step.png)
 
 6. Vänta tills körningsstatusen för dataexporten har **slutförts**.
 
     1. Lägg till en [Till slinga](/azure/logic-apps/logic-apps-control-flow-loops#until-loop) som upprepas tills värdet av **ExecutionStatus**-variabeln är **slutförd**.
     2. Lägg till åtgärden **fördröjning** som väntar fem sekunder innan den avsöker den aktuella körningsstatusen för exporten.
 
-        ![Fram till slinga-behållare](media/integration-logic-app-until-loop-step.png)
+        ![Fram till slinga-behållare.](media/integration-logic-app-until-loop-step.png)
 
         > [!NOTE]
         > Ställ in gränsvärdet till **15** om du vill vänta i högst 75 sekunder (15 iterationer × 5 sekunder) för att exporten ska kunna slutföras. Om exporten tar längre tid, kan du justera antalet så att det blir lämpligt.        
@@ -146,9 +146,9 @@ Den stora delen av övningen innebär att skapa logikappen.
             > [!NOTE]
             > Du kan behöva ange värdet för **brödtext för begäran** antingen i kodvyn eller i funktionsredigeraren i designern.
 
-        ![Åtgärden anropa en HTTP-begäran 2](media/integration-logic-app-get-execution-status-step.png)
+        ![Åtgärden Anropa en HTTP-begäran 2.](media/integration-logic-app-get-execution-status-step.png)
 
-        ![Åtgärden Ange variabel](media/integration-logic-app-set-variable-step.png)
+        ![Åtgärden Ange variabel.](media/integration-logic-app-set-variable-step.png)
 
         > [!IMPORTANT]
         > Värdet för åtgärden **Ange variabel** (**body('Invoke\_an\_HTTP\_request\_2')?['value']**) skiljer sig från värdet för **Invoke an HTTP request 2** brödtextvärde, även om designern visar värdena på samma sätt.
@@ -161,7 +161,7 @@ Den stora delen av övningen innebär att skapa logikappen.
         - **Url för begäran:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
         - **Begärans brödtext:** {"executionId": body('GetExportedPackageURL')?['value']}
 
-        ![Åtgärden GetExportedPackageURL](media/integration-logic-app-get-exported-package-step.png)
+        ![Åtgärden GetExportedPackageURL.](media/integration-logic-app-get-exported-package-step.png)
 
 8. Hämta det exporterade paketet.
 
@@ -173,7 +173,7 @@ Den stora delen av övningen innebär att skapa logikappen.
             > [!NOTE]
             > Du kan behöva ange värdet för **URI** antingen i kodvyn eller i funktionsredigeraren i designern.
 
-        ![Åtgärden HTTP GET](media/integration-logic-app-download-file-step.png)
+        ![Åtgärden HTTP GET.](media/integration-logic-app-download-file-step.png)
 
         > [!NOTE]
         > Denna begäran kräver ingen ytterligare autentisering eftersom den URL som **GetExportedPackageUrl** API:n returnerar innehåller en token för delad åtkomst för signaturer som beviljar åtkomst för att hämta filen.
@@ -187,7 +187,7 @@ Den stora delen av övningen innebär att skapa logikappen.
         - **Filnamn:** worker\_package.zip
         - **Filinnehåll:** brödtexten från föregående steg (dynamiskt innehåll)
 
-        ![Åtgärden Skapa fil](media/integration-logic-app-create-file-step.png)
+        ![Åtgärden Skapa fil.](media/integration-logic-app-create-file-step.png)
 
 ### <a name="step-3-test-the-logic-app"></a>Steg 3: testa logikappen
 
@@ -197,7 +197,7 @@ Om ett fel rapporteras för något steg väljer du det misslyckade steget i desi
 
 Följande bild visar hur Logic Apps Designer ser ut när alla steg i logikappen körs korrekt.
 
-![Körning av lyckade logikappar](media/integration-logic-app-successful-run.png)
+![Lyckad körning av logikappar.](media/integration-logic-app-successful-run.png)
 
 ## <a name="summary"></a>Sammanfattning
 

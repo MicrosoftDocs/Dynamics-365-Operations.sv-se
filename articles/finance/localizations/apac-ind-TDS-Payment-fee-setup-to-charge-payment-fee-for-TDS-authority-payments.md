@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: b52331bb1c7a1bc2c764008112f3df9cc0385995
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9213827ea1ad342beb7ac2fe586606651cfdcfa1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023613"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358444"
 ---
 # <a name="set-up-payment-fees-for-tds-authority-payments"></a>Ställ in betalningsavgifter för TDS-myndighetsbetalningar
 
@@ -31,7 +31,7 @@ I det här avsnittet beskrivs hur du ställer in betalningsavgifter som debitera
 
 1. Gå till **Leverantörsreskontra \> Betalningsinställning \> Betalningsavgift**.
 
-    [![Sidan Betalningsavgift](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
+    [![Sidan Betalningsavgift.](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
 
 2. Välj **Ny** för att skapa en betalningsavgift och ange den information som krävs.
 3. I fältet **Avgiftstyp** väljer du typ av betalningsavgift:
@@ -46,7 +46,7 @@ I det här avsnittet beskrivs hur du ställer in betalningsavgifter som debitera
 5. Ange andra uppgifter som behövs.
 6. I åtgärdsfönstret väljer du **Inställning av betalningsavgift** för att öppna sidan **Inställning av betalningsavgift**, där du kan ställa in betalningsavgifter för olika kombinationer av banker, betalningsmetoder, betalningsspecifikationer, valutor och datumintervall.
 
-    [![Sidan Betalningsavgiftsinställning](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
+    [![Konfigurationssida för Betalningsavgift.](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
 
 7. På fliken **Översikt**, i fältet **Grupperingar**, anger du vilka banker som du ställer in betalningsavgiften för:
 
@@ -64,7 +64,7 @@ I det här avsnittet beskrivs hur du ställer in betalningsavgifter som debitera
 15. I fältet **Avgiftsvaluta** anger du valutakoden för avgiften.
 16. Välj fliken **Allmänt** för att visa eller modifiera informationen för det valda bankkontot.
 
-    [![Fliken Allmänt](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
+    [![Fliken Allmänt.](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
 
 16. I fältet **Minimum** anger du det minsta transaktionsbeloppet som aktiverar avgiften.
 17. I fältet **Maximum** anger du det högsta transaktionsbeloppet som aktiverar avgiften.
@@ -74,7 +74,7 @@ I det här avsnittet beskrivs hur du ställer in betalningsavgifter som debitera
 21. I fältet **Momsgrupp för artikel** väljer du den momsgrupp för artikel som ska användas för att beräkna moms för artikeln för avgiften.
 22. Välj fliken **Intervall**. 
 
-    [![Fliken Intervall](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
+    [![Fliken Intervall.](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
 
 23. I fältet **Dagar** anger du antalet dagar mellan bokföringsdatumet (diskonteringsdatumet) för betalningen och förfallodatumet för skuldsedeln.
 24. I fältet **Procentandel/belopp** väljer du om specifikationen är en procentandel eller ett fast belopp.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df08bdffb2bda67269eec9f1572bd76af9ae1e11
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2da54d147c7e9c8a42ef9de94abcbe7f36c98295
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747187"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355758"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>Åtgärder i godkännandeprocesser i ett arbetsflöde
 
@@ -29,7 +29,7 @@ Det här avsnittet innehåller en beskrivning av åtgärder som alla deltagare i
 
 Ett arbetsflöde kan omfatta flera grupper med personer: upphovsmannen, de som tilldelats uppgifter, beslutsfattare och godkännare. I följande arbetsflöde för utgiftsrapporter är Sam upphovsmannen, medlemmarna i kön har tilldelats uppgifter, John är beslutsfattare och Frank, Sue och Ann är godkännare.
 
-[![Arbetsflöde\_MedManuelltBeslut](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
+[![Arbetsflöde\_MedManuelltBeslut.](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
 
 Följande avsnitt förklarar de arbetsflödesåtgärder som respektive grupp kan utföra.
 

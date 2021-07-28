@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 569f932b256054f2d93a6d699ca5d5af3da08ca6
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: df727f3e66691409b98d2f74f78329b03e638959
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897946"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355213"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Mobil arbetsyta för kostnadskontroll
 
@@ -70,7 +70,7 @@ Den mobila arbetsytan **kostnadskontroll** innehåller följande åtgärder, vye
 
     När du väljer en länk visas ett kort för varje kostnadselement. Följande belopp visas på varje kort: Utfall, Budget, Budgetavvikelse, Budgetavvikelseprocent, Reviderad budget, Reviderad budgetavvikelse samt Reviderad budgetavvikelseprocent.
     
-    [![Kort för ett kostnadselement ](./media/Cost-controlling.png)](./media/Cost-controlling.png)
+    [![Kort för ett kostnadselement.](./media/Cost-controlling.png)](./media/Cost-controlling.png)
 
 ## <a name="prerequisites"></a>Förutsättningar
 Kraven varierar baserat på versionen av Microsoft Dynamics 365 som har distribuerats i organisationen.
@@ -125,7 +125,7 @@ Hämta och installera mobilappen Finance and Operations.
 3.  Första gången du loggar in uppmanas du ange användarnamn och lösenord. Ange dina autentiseringsuppgifter.
 4.  När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.
 
-[![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Dra nedåt för att uppdatera.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace"></a>Visa prestanda för ditt kostnadsställe med hjälp av den mobila arbetsytan för kostnadskontroll
 

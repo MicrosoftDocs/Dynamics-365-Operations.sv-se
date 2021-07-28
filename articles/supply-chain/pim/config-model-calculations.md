@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-18
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: eaf6264f060d33575740ad38e7a65158baba296b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f0806a5b36b04e77a5a6d10f3c2eb3d7ba680e75
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829628"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356426"
 ---
 # <a name="product-configuration-model-calculations"></a>Beräkningar för produktkonfigurationsmodell
 
@@ -70,7 +70,7 @@ I det här exemplet används textattributet `textFixedList` som målattribut. De
 
 Följande skärmbild visar hur inställningarna för det här attributet kan se ut i systemet.
 
-![Attributtypsinställningar, t.ex. 2](media/model-calculations-example2.png "Attributtypsinställningar, t.ex. 2")
+![Attributtypsinställningar, t.ex. 2.](media/model-calculations-example2.png "Attributtypsinställningar, t.ex. 2")
 
 Attributet används i följande villkorsutdrag:
 
@@ -92,7 +92,7 @@ I det här exemplet används målattributet `textFixedList` från föregående e
 
 Följande skärmbild visar hur inställningarna för det här attributet kan se ut i systemet.
 
-![Attributtypsinställningar, t.ex. 3](media/model-calculations-example3.png "Attributtypsinställningar, t.ex. 3")
+![Attributtypsinställningar, t.ex. 3.](media/model-calculations-example3.png "Attributtypsinställningar, t.ex. 3")
 
 Värdet för `textFixedList` attributet beräknas med hjälp av följande villkorsutdrag:
 

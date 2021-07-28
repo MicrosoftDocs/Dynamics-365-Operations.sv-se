@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b675d4af6fb9a080f3f3a13e64b2c5b6ad4b783
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8b288a0d6b7516faf635486fbaad885344d2cc6f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022432"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352094"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Tillhandahåll en Dynamics 365 Commerce utvärderingsmiljö
 
@@ -90,16 +90,16 @@ Följ dessa steg för att distribuera miljön.
 1. I fältet **Programversion** väljer du den mest aktuella versionen. Om du har ett specifikt behov av att välja en annan programversion än den senaste versionen ska du inte välja en version före **10.0.14**.
 1. I fältet **plattformsversion** använder du den plattformsversion som väljs automatiskt för den valda programversionen. 
 
-    ![Välj program- och plattformsversioner](./media/project1.png)
+    ![Välj program- och plattformsversioner.](./media/project1.png)
 
 1. Välj **Nästa**.
 1. Välj **Demo** som miljötopologi.
 
-    ![Välja miljötopologi 1](./media/project2.png)
+    ![Välja miljötopologi 1.](./media/project2.png)
 
 1. Ange ett **miljönamn** på sidan distribuera miljö. Lämna Avancerade inställningar som de är.
 
-    ![Sidan Distribuera miljö](./media/project4.png)
+    ![Sidan Distribuera miljö.](./media/project4.png)
 
 1. Justera VM-storlek som krävs. (Vi rekommenderar VM lagerhållningsenhet \[SKU\]**D13 v2**.)
 1. Granska prissättnings- och licensvillkoren och markera sedan kryssrutan för att ange att du godkänner dem.

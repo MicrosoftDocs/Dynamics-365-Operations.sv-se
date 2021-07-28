@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f380f3f56727d927d7cd328fef3c9d999afa2873
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f9fffb5b4f51c86076d62ac2a44bdc779490c7bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794359"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351283"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Översikt över standardkategorilandningssida och sida för sökresultat
 
@@ -31,7 +31,7 @@ Det här ämnet ger en överblick över målsidan för standardkategori och sök
 
 Standardlandningssidan för kategori är den sida som webbplatsanvändarna normalt använder när de väljer en kategori i navigeringshierarkin. På kategorisidan kan du bläddra och du kan också sortera och justera de kategoriserade produkterna.
 
-![Standardlandningssida för kategori](./media/SimpleCategoryLandingDressCategory.png)
+![Standardlandningssida för kategori.](./media/SimpleCategoryLandingDressCategory.png)
 
 Den övre delen av startsidan har en rubrik som visar alla produktkategorier och andra sidor som inköpschefen har kategoriserat. Konfigurationen görs som en del av konfigurationen av kanalens navigeringshierarki. Startsidans nedre del har en sidfot som innehåller snabblänkar till olika ämnen som kan vara intressanta för köpare.
 
@@ -55,7 +55,7 @@ Följande komponenter är nödvändiga för en kategori:
 
 Om du vill att en kategorilandningssida ska ha en mer skräddarsydd upplevelse för en viss kategori, kan du "utöka" kategorilandningssidan för den kategorin. Du kan till exempel lägga till en marknadsföringsvideo och vissa kategoriberättande för att få köparens uppmärksamhet. Mer information finns i [utöka en kategorilandningssida](enrich-category-page.md).
 
-![Utöka en kategorilandningssida](./media/CategoryLandingPages.png)
+![Utökad kategorilandningssida.](./media/CategoryLandingPages.png)
 
 ## <a name="auto-suggest-and-search-results-pages"></a>Automatiskt föreslå och sökresultatsidor
 
@@ -69,11 +69,11 @@ Här följer några av de typer av förslag som kan visas:
 - **Produkter** tillhandahåller direktlänkar till sidan med produktinformation.
 - **Omfattningsförslag för kategorisökning** anger olika kategorier och låter användare söka efter nyckelordet i en viss kategori.
 
-![Integrerade automatiska förslag](./media/ImmersiveAutoSuggestUX.png)
+![Integrerade automatiska förslag.](./media/ImmersiveAutoSuggestUX.png)
 
 När användarna väljer ett av nyckelorden eller omfattande förslagen på kategorisökning, eller när det inte finns några förslag på sökvillkoren som de anger, omdirigeras de till en sökresultatsida. Användarna kan sedan bläddra, sortera och finjustera listan med sökresultat för att hitta önskad artikel.
 
-![Landningssida för sökning](./media/SearchLanding.png)
+![Landningssida för sökning.](./media/SearchLanding.png)
 
 Följande komponenter är nödvändiga för en sökresultatsida:
 
@@ -94,7 +94,7 @@ Följande komponenter är nödvändiga för en sökresultatsida:
 
 >[!NOTE]
 >De här molndrivna sökfunktionerna är tillgängliga från och med version 10.0.8. Se till att under **Handelsparametrar > Konfigurationsparametrar** finns en post för "ProductSearch.UseAzureSearch inställd på true". 
-![Konfigurationsparametrar för med molndriven sökning](./media/CloudPoweredSearchConfigurationParameters.png)
+![Konfigurationsparametrar för molndriven sökning.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

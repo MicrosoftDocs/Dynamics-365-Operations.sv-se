@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: WorkGuidesManufacturing
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 61943
+ms.custom:
+- "61943"
+- intro-internal
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 15595c46f9d6ff91f6fd618859e9f059ae88bd78
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d172e3dfcb9ca70e1047a174040e7940bdd25296
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910099"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354022"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Tillhandahålla guider för mixad verklighet för arbetare i produktion
 
@@ -57,7 +59,7 @@ Följande underavsnitt beskriver några utvalda scenarier där företag över br
 
 ### <a name="assembly"></a>Sammansättning
 
-![Använda guider i monteringsuppgifter](media/instruction-guides-hero-assembly.png "Använda guider i serviceuppgifter")
+![Använda guider i sammansättningsuppgifter.](media/instruction-guides-hero-assembly.png "Använda guider i serviceuppgifter")
 
 Instruktioner i monteringsoperationer visar arbetare vilka verktyg och delar de behöver och hur de ska användas i realtidssituationer.
 
@@ -65,7 +67,7 @@ Produktionschefer kan t.ex. skapa och tilldela guider för [produktionsflöden](
 
 ### <a name="service"></a>Service
 
-![Använda guider i serviceuppgifter](media/instruction-guides-hero-service.png "Använda guider i serviceuppgifter")
+![Använda guider i tjänsteuppgifter.](media/instruction-guides-hero-service.png "Använda guider i serviceuppgifter")
 
 Utrusta tekniker med guidade instruktioner på arbetsplatsen, vilket eliminerar behovet av att schemalägga ytterligare besök.
 
@@ -73,7 +75,7 @@ Serviceansvariga kan till exempel tilldela guider till specifika [produkter](../
 
 ### <a name="quality"></a>Kvalitet
 
-![Använda guider i kvalitetssäkringsuppgifter](media/instruction-guides-hero-quality.png "Använda guider i kvalitetssäkringsuppgifter")
+![Använda guider i kvalitetssäkringsuppgifter.](media/instruction-guides-hero-quality.png "Använda guider i kvalitetssäkringsuppgifter")
 
 Lansering av nya processer och bättre överensstämmelse genom att göra medarbetarnas kunskaper i ett repeterbart verktyg.
 
@@ -81,13 +83,13 @@ Kvalitetssäkringsansvariga kan tilldela guider till [produkter](../../commerce/
 
 ### <a name="certifications"></a>Intyg
 
-![Använda guider för uppgifter som rör certifiering](media/instruction-guides-hero-certification.png "Använda guider för uppgifter som rör certifiering")
+![Använda guider för uppgifter som rör certifiering.](media/instruction-guides-hero-certification.png "Använda guider för uppgifter som rör certifiering")
 
 Se till att alla medarbetare uppfyller höga standarder genom att snabbt identifiera vem som behöver hjälp och var.
 
 ### <a name="safety"></a>Säkerhet
 
-![Använda guider i instruktioner om arbetssäkerhet](media/instruction-guides-hero-safety.png "Använda guider i instruktioner om arbetssäkerhet")
+![Använda guider i instruktioner om arbetssäkerhet.](media/instruction-guides-hero-safety.png "Använda guider i instruktioner om arbetssäkerhet")
 
 Ge instruktioner för hur du ska gå igenom de farliga procedurerna i stort innan du försöker göra det i den fysiska miljön. Med en blandad verklighet kan medarbetarna uppleva farliga procedurer i princip.
 
@@ -119,7 +121,7 @@ Om du vill göra funktionen tillgänglig i systemet måste du aktivera dess konf
 
 Om du vill konfigurera hur guider visas verkstadsgolvet går du till konfiguration **Mixad verklighet \> Dynamics 365 Guides \> Konfigurera integration av guider**.
 
-![Konfigurera integrering av guide för tillverkning](media/instruction-guides-configure-integration.png "Konfigurera integrering av guide för tillverkning")
+![Konfigurera integrering av guide för tillverkning.](media/instruction-guides-configure-integration.png "Konfigurera integrering av guide för tillverkning")
 
 Ange följande fält.
 
@@ -136,7 +138,7 @@ Ange följande fält.
 
 Använd sidan **Alla guider** för att visa en lista över alla tillgängliga guider i din organisation och alla tilldelningar till produktionsprocesserna och resurserna. Om du vill öppna den går du till **Mixad verklighet \> Guider \> Alla guider**. Listan högst upp visar alla tillgängliga guider och du kan använda fältet här för att filtrera listan. Listan längst ned visar alla guider tilldelningar och innehåller ett verktygsfält för hantering av dem.
 
-![Hantera guider](media/instruction-guides-allguides.png "Hantera guider")
+![Hantera guider.](media/instruction-guides-allguides.png "Hantera guider")
 
 I följande avsnitt beskrivs de typer av objekt som du kan tilldela guider till. Varje tilldelad guide innehåller instruktioner som automatiskt kopplas till respektive produktionsjobb och blir tillgängliga i verktygsgolvet.
 
@@ -157,7 +159,7 @@ Lägg till en guider till en resurs:
 1. Expandera snabbfliken **Associerade guider**.
 1. Välj **Lägg till** från verktygsfältet **Associerade guider**. En ny rad läggs till i rutnätet.
 1. För den nya raden använder du listrutan i kolumnen **namn** för att välja den guider du vill tilldela. Om du har ett stort antal guider kan du filtrera listan för att hitta den som du söker efter.
-    ![Hantera guider](media/instruction-guides-allguides.png "Hantera guider")
+    ![Hantera guider.](media/instruction-guides-allguides.png "Hantera guider")
 
 ## <a name="associate-a-guide-to-a-resource-group"></a><a name="resource-groups"></a>Associera en guider till en resursgrupp
 
@@ -178,7 +180,7 @@ För att lägga till en guide till en resursgrupp:
 1. Expandera snabbfliken **Associerade guider**.
 1. Välj **Lägg till** från verktygsfältet **Associerade guider**. En ny rad läggs till i rutnätet.
 1. För den nya raden använder du listrutan i kolumnen **namn** för att välja den guider du vill tilldela. Om du har ett stort antal guider kan du filtrera listan för att hitta den som du söker efter.
-    ![Lägg till en guide till en resursgrupp](media/instruction-guides-resourcegroup.png "Lägg till en guide till en resursgrupp")
+    ![Lägga till en guide i en resursgrupp.](media/instruction-guides-resourcegroup.png "Lägg till en guide till en resursgrupp")
 
 ## <a name="associate-a-guide-to-a-released-product"></a><a name="released-products"></a>Associera en guide till en frisläppt produkt
 
@@ -198,7 +200,7 @@ Lägg till en guide till en frisläppt produkt:
 1. Sidan **Associerade guider** öppnas för den valda produkten.
 1. Välj **Lägg till** i åtgärdsfönstret för att lägga till en ny rad i rutnätet. 
 1. För den nya raden använder du listrutan i kolumnen **namn** för att välja den guider du vill tilldela.
-    ![Lägg till en guide till en frisläppt produkt](media/instruction-guides-ReleasedProduct-AddGuides.png "Lägg till en guide till en frisläppt produkt")
+    ![Lägg till en guide i en frisläppt produkt.](media/instruction-guides-ReleasedProduct-AddGuides.png "Lägg till en guide till en frisläppt produkt")
 
 ## <a name="associate-a-guide-to-a-formula"></a><a name="formulas"></a>Associera en guide till en formel
 
@@ -223,7 +225,7 @@ Lägg till en guide till en formel:
 1. Expandera snabbfliken **Associerade guider**.
 1. Välj **Lägg till** från verktygsfältet **Associerade guider**. En ny rad läggs till i rutnätet.
 1. För den nya raden använder du listrutan i kolumnen **namn** för att välja den guider du vill tilldela.
-    ![Lägg till en guide till en formel](media/instruction-guides-Formula.png "Lägg till en guide till en formel")
+    ![Lägga till en guide i en formel.](media/instruction-guides-Formula.png "Lägg till en guide till en formel")
 
 ## <a name="associate-a-guide-to-a-formula-version"></a><a name="formula-versions"></a>Associera en guide till en formelversion
 
@@ -248,11 +250,11 @@ Lägg till en guide till en formelversion:
 1. Öppna fliken **Rubrik** ovanför den övre snabbfliken.
 1. På snabbfliken **Formelversioner** välj den version som du vill tilldela en guide till.
 1. I verktygsfältet **Formelversioner** väljer du **Koppla guider**.
-    ![Öppna de guider som associeras med en vald formelversion](media/instruction-guides-FormulaVersion.png "Öppna de guider som associeras med en vald formelversion")
+    ![Öppna de guider som associeras med en vald formelversion.](media/instruction-guides-FormulaVersion.png "Öppna de guider som associeras med en vald formelversion")
 1. Sidan **Associerade guider** öppnas för den valda formelversionen.
 1. Välj **Lägg till** i åtgärdsfönstret för att lägga till en ny rad i rutnätet. 
 1. För den nya raden använder du listrutan i kolumnen **namn** för att välja den guider du vill tilldela.
-    ![Lägg till en guide till en formelversion](media/instruction-guides-FormulaVersionAddGuide.png "Lägg till en guide till en formelversion")
+    ![Lägga till en guide i en formelversion.](media/instruction-guides-FormulaVersionAddGuide.png "Lägg till en guide till en formelversion")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials"></a><a name="bom"></a>Associera en guide till en strukturlista
 
@@ -275,7 +277,7 @@ Lägg till en guide till en strukturlista:
 1. Expandera snabbfliken **Associerade guider**.
 1. Välj **Lägg till** från verktygsfältet **Associerade guider**. En ny rad läggs till i rutnätet.
 1. För den nya raden använder du listrutan i kolumnen **namn** för att välja den guider du vill tilldela.
-    ![Lägg till en guide till en strukturlista](media/instruction-guides-BOM.png "Lägg till en guide till en strukturlista")
+    ![Lägga till en guide till en strukturlista.](media/instruction-guides-BOM.png "Lägg till en guide till en strukturlista")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials-version"></a><a name="bom-versions"></a>Associera en guide till en strukturlisteversion
 
@@ -297,11 +299,11 @@ Lägg till en guide till en strukturlisteversion:
 1. Öppna fliken **Rubrik** ovanför den övre snabbfliken.
 1. På snabbfliken **Strukturlisteversioner** välj den version som du vill tilldela en guide till.
 1. I verktygsfältet **Strukturlisteversioner** väljer du **Koppla guider**.
-    ![Öppna de guider som associeras med en vald strukturlisteversion](media/instruction-guides-BOMVersion.png "Öppna de guider som associeras med en vald strukturlisteversion")
+    ![Öppna de guider som associeras med en vald strukturlisteversion.](media/instruction-guides-BOMVersion.png "Öppna de guider som associeras med en vald strukturlisteversion")
 1. Sidan **Associerade guider** öppnas för den valda strukturlisteversionen.
 1. Välj **Lägg till** i åtgärdsfönstret för att lägga till en ny rad i rutnätet.
 1. För den nya raden använder du listrutan i kolumnen **namn** för att välja den guider du vill tilldela.
-    ![Lägg till en guide till en strukturlisteversion](media/instruction-guides-BOMVersionAddGuide.png "Lägg till en guide till en strukturlisteversion")
+    ![Lägga till en guide i en strukturlisteversion.](media/instruction-guides-BOMVersionAddGuide.png "Lägg till en guide till en strukturlisteversion")
 
 ## <a name="associate-a-guide-to-a-route"></a><a name="routes"></a>Associera en guide till ett flöde
 
@@ -322,7 +324,7 @@ Lägg till en guide till ett flöde:
 1. Expandera snabbfliken **Associerade guider**.
 1. Välj **Lägg till** från verktygsfältet **Associerade guider**. En ny rad läggs till i rutnätet.
 1. För den nya raden använder du listrutan i kolumnen **namn** för att välja den guider du vill tilldela.
-    ![Lägg till en guide till ett flöde](media/instruction-guides-Route.png "Lägg till en guide till ett flöde")
+    ![Lägga till en guide i ett flöde.](media/instruction-guides-Route.png "Lägg till en guide till ett flöde")
 
 ## <a name="associate-a-guide-to-a-route-version"></a><a name="route-versions"></a>Associera en guide till en flödesversion
 
@@ -340,11 +342,11 @@ Lägg till en guide till en flödesversion:
 1. Öppna det flöde som du vill tilldela en guide till.
 1. På snabbfliken **Versioner** välj den version som du vill tilldela en guide till.
 1. I verktygsfältet **Versioner** väljer du **Koppla guider**.
-    ![Öppna de guider som associeras med en vald flödesversion](media/instruction-guides-RouteVersion.png "Öppna de guider som associeras med en vald flödesversion")
+    ![Öppna de guider som associeras med en vald flödesversion.](media/instruction-guides-RouteVersion.png "Öppna de guider som associeras med en vald flödesversion")
 1. Sidan **Associerade guider** öppnas för den valda strukturlisteversionen.
 1. Välj **Lägg till** i åtgärdsfönstret för att lägga till en ny rad i rutnätet.
 1. För den nya raden använder du listrutan i kolumnen **namn** för att välja den guider du vill tilldela.
-    ![Lägg till en guide till en flödesversion](media/instruction-guides-RouteVersionAddGuide.png "Lägg till en guide till en flödesversion")
+    ![Lägga till en guide i en flödesversion.](media/instruction-guides-RouteVersionAddGuide.png "Lägg till en guide till en flödesversion")
 
 ## <a name="associate-a-guide-to-a-route-operation-relation"></a><a name="route-operation-relations"></a>Associera en guide till en flödesoperationsrelation
 
@@ -367,8 +369,8 @@ Lägg till en guide till en flödesoperationsrelation:
 1. Sidan **Flödesinformation** öppnas för det valda flödet.
 1. Välj den operation som du vill ge vägledning för i det övre rutnätet.
 1. I det nedre rutnätet väljer du en specifik relation (eller det generiska **Alla** relation).
-    ![Välj en operation och sedan en relation](media/instruction-guides-RouteOperationRelation.png "Välj en operation och sedan en relation")
-1. Ovanför den nedre rutnätet öppnar du fliken **Kopplade guider**. ![Fliken Kopplade guider](media/instruction-guides-RouteOperationRelation-AddGuide.png "Fliken kopplade guider")
+    ![Välj en åtgärd och sedan en relation.](media/instruction-guides-RouteOperationRelation.png "Välj en operation och sedan en relation")
+1. Ovanför det nedre rutnätet öppnar du fliken **Kopplade guider**.  ![Fliken Kopplade guider.](media/instruction-guides-RouteOperationRelation-AddGuide.png "Fliken kopplade guider")
 1. Välj **Lägg till** från verktygsfältet högst upp i det nedre rutnätet för att lägga till en ny rad till rutnätet.
 1. För den nya raden använder du listrutan i kolumnen **namn** för att välja den guider du vill tilldela. Markera kryssrutan för varje kontext där den valda guiden ska vara tillgänglig i resten av raden.
 
@@ -379,11 +381,11 @@ Lägg till en guide till en flödesoperationsrelation:
 
 När en arbetare öppnar en jobblista i gränssnittet för arbetsstyrningskörningen, hittar Supply Chain Management relevanta guider för de jobb som visas. Använd knappen **Guider** om du vill visa relevanta guider.
 
-![Knappen guider från gränssnittet för arbetsstyrningskörning](media/instruction-guides-Shopfloor1.png "Knappen guider från gränssnittet för arbetsstyrningskörning")
+![Knappen Guider i gränssnittet för butikskörning.](media/instruction-guides-Shopfloor1.png "Knappen guider från gränssnittet för arbetsstyrningskörning")
 
 Sätt sedan på en HoloLens och gå till respektive guide efter att titta på QR-koden och aktivera respektive guide.
 
-![QR-kod för åtkomst till guider med HoloLens](media/instruction-guides-Shopfloor2.png "QR-kod för åtkomst till guider med HoloLens")
+![QR-kod för åtkomst till guider med HoloLens.](media/instruction-guides-Shopfloor2.png "QR-kod för åtkomst till guider med HoloLens")
 
 ## <a name="resolving-the-logic-for-selecting-guides"></a><a name="logic"></a>Lösa logiken för att markera guider
 
@@ -406,7 +408,7 @@ När Supply Chain Management genererar jobben för produktionsgolvet, samlar det
 - Om du kopplar ett flöde till en tillverkningsorder, visas alla guider som är kopplade till den aktuella versionen och även de stödlinjer som är kopplade till det överordnade flödet för den versionen, visas i jobbet.
 - Om du definierar flera flödesoperationsrelationer som omfattar *alla* relationer och tilldelar guider till dem, visas bara guiderna från den mest specifika relationen för jobbet.  
 
-![Diagram för att lösa relevanta guider](media/instruction-guides-Resolve.png "Diagram för att lösa relevanta guider")
+![Diagram för att lösa relevanta guider.](media/instruction-guides-Resolve.png "Diagram för att lösa relevanta guider")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

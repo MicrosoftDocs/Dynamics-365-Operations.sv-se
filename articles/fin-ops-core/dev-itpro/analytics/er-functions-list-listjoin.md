@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b300cef0a508f7cc37397480738091158efdead
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 5fe49184ee4023e8b4f54dd7f5107be8c711d4b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027925"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353740"
 ---
 # <a name="listjoin-er-function"></a>LISTJOIN ER-funktion
 
@@ -66,15 +66,15 @@ Du anger datakälla **post 2** av typen `Container`. Den här datakällan inneh�
 - **Belopp**: det här fältet innehåller ett uttryck som returnerar ett värde av typen `Real`.
 - **IsValid**: det här fältet innehåller ett uttryck som returnerar ett värde av typen `Boolean`.
 
-![Sidan ER-modellmappningsdesigner](./media/er-functions-list-listjoin-image1.gif)
+![Sidan ER-modellmappningsdesigner.](./media/er-functions-list-listjoin-image1.gif)
 
 I det här fallet returnerar uttrycket `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` en ny lista som innehåller två poster.
 
-![Sidan ER-modell mappning i designer med två poster](./media/er-functions-list-listjoin-image2.gif)
+![Sidan ER-modellmappningsdesigner med två poster.](./media/er-functions-list-listjoin-image2.gif)
 
 Strukturen för den här listan består av ett enda fält **belopp** av typen `Real`, eftersom det här fältet är det enda fält som presenteras i alla argument i den anropade funktionen.
 
-![Beloppsfält på sidan ER-modellmappningsdesigner](./media/er-functions-list-listjoin-image3.gif)
+![Beloppsfält på sidan ER-modellmappningsdesigner.](./media/er-functions-list-listjoin-image3.gif)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

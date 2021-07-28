@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1417232baeaf03721bd0b25cc3f9fd5f750c65d5
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: b8a83982ad36abfe9032cae50fe4f09339985dc8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052275"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353672"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>Generera ACA-rapporter i förmånshanteringen
 
@@ -48,11 +48,11 @@ Med disponeringsgrupper för sjukförsäkring kan du hantera denna information f
 
 1. I arbetsytan **Förmånshantering** väljer du **Disponeringsgrupp för sjukförsäkring**.
 
-    ![Välja disponeringsgrupp för sjukförsäkring](./media/hr-benefits-management-aca-coverage-group.png)
+    ![Välja disponeringsgrupp för sjukförsäkring.](./media/hr-benefits-management-aca-coverage-group.png)
 
 2. Välj **Ny** om du vill skapa en ny disponeringsgrupp för sjukförsäkring, eller **Redigera** för att ändra en befintlig grupp.
 
-    ![Välja Ny eller Redigera](./media/hr-benefits-management-aca-new.png)
+    ![Välja Ny eller Redigera.](./media/hr-benefits-management-aca-new.png)
 
 3. Ange följande fält.
 
@@ -67,7 +67,7 @@ Med disponeringsgrupper för sjukförsäkring kan du hantera denna information f
     | Grupp giltig från | Det första datum då posten är giltig. |
     | Grupp giltig till | Det sista datum då posten är giltig. Om det inte finns något utgångsdatum anger du **Aldrig**. |
 
-    ![Skapa en disponeringsgrupp](./media/hr-benefits-management-aca-new-group.png)
+    ![Skapa en disponeringsgrupp.](./media/hr-benefits-management-aca-new-group.png)
 
 4. Välj **Spara**.
 
@@ -77,11 +77,11 @@ Med disponeringsgrupper för sjukförsäkring kan du hantera denna information f
 2. Välj den grupp som medarbetare ska tilldelas till.
 3. Välj **Masstilldelning**.
 
-    ![Välja Masstilldelning](./media/hr-benefits-management-aca-mass-assignment.png)
+    ![Välja Masstilldelning.](./media/hr-benefits-management-aca-mass-assignment.png)
 
 4. Välj medarbetare i listan och välj sedan **Tilldela**.
 
-    ![Tilldela valda medarbetare till en grupp](./media/hr-benefits-management-aca-assign-coverage-group.png)
+    ![Tilldela valda medarbetare till en grupp.](./media/hr-benefits-management-aca-assign-coverage-group.png)
 
 ## <a name="maintain-multiple-versions-of-coverage-options"></a>Underhålla flera versioner av försäkringsskyddsalternativ
 
@@ -111,12 +111,12 @@ Gör på följande sätt om du vill ange undantag för värden i en disponerings
 2. Välj medarbetaren i listan.
 3. På fliken **Anställning**, i avsnittet **Mer information**, väljer du **Disponering för sjukförsäkring**.
 
-    ![Ändra alternativ för en medarbetare](./media/hr-benefits-management-aca-change-single-employee.png)
+    ![Ändra alternativ för en enskild medarbetare.](./media/hr-benefits-management-aca-change-single-employee.png)
 
 4. Välj **Redigera**.
 5. Markera kryssrutan **Åsidosätt standard** och ändra sedan erforderliga värden efter behov för samtliga månader som måste ändras.
 
-    ![Åsidosätta standardvärden](./media/hr-benefits-management-aca-override-default.png)
+    ![Åsidosätta standardvärden.](./media/hr-benefits-management-aca-override-default.png)
 
 6. Välj **Spara**.
 
@@ -131,7 +131,7 @@ Följ de här stegen när du vill ange om en förmånsplan måste rapporteras.
 3. Välj **Redigera**.
 4. Ställ in alternativet **Rapporteras under sjukförsäkringar** som **Ja**.
 
-    ![Rapportering av hälsovårdstäckning](./media/hr-benefits-management-aca-report-coverage.png)
+    ![Rapportera hälsovårdstäckning.](./media/hr-benefits-management-aca-report-coverage.png)
 
 5. Välj **Spara**.
 
@@ -147,23 +147,23 @@ Du kan skapa ACA 1095-B- och 1095-C-formulär och sedan distribuera dessa till v
     > [!NOTE]
     > Om du skriver ut formulär 1095-C till mer än 500 anställda får du mer än en PDF-fil. Vi rekommenderar att du ökar värdet för fältet **Maximal filstorlek i megabyte** på sidan **Parametrar för dokumenthantering** till **150**. (Om du snabbt vill öppna den sidan kan du använda sökfältet i navigeringsfältet.)
     >
-    > ![Ändra den maximala filstorleken](./media/hr-benefits-management-aca-maximum-file-size.png)
+    > ![Ändra den maximala filstorleken.](./media/hr-benefits-management-aca-maximum-file-size.png)
 
 3. Om du vill kontrollera rapporternas status och visa dem använder du sökfältet i navigeringsfältet för att öppna sidan **Jobb för elektronisk rapportering**.
 
-    ![Söka efter sidan Elektroniska rapporteringsjobb](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
+    ![Söka efter sidan Elektroniska rapporteringsjobb.](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
 
 4. Markera rapporten som du vill visa och välj sedan **Visa filer**.
 
-    ![Visar filer](./media/hr-benefits-management-aca-show-files.png)
+    ![Visa filer.](./media/hr-benefits-management-aca-show-files.png)
 
 5. Välj **Öppen**.
 
-    ![Öppna en fil](./media/hr-benefits-management-aca-open-file.png)
+    ![Öppna en fil.](./media/hr-benefits-management-aca-open-file.png)
 
 6. Öppna zip-filen i meddelandefältet som visas längst ned i webbläsaren och markera sedan rapporten. Du kan visa eller skriva ut PDF-filen.
 
-    ![Exempel 1095-C-formulär](./media/hr-benefits-management-aca-1095-c-form.png)
+    ![Exempelformulär 1095-C.](./media/hr-benefits-management-aca-1095-c-form.png)
 
 ## <a name="view-aca-coverage-information"></a>Visa information om ACA-disponering
 
@@ -178,7 +178,7 @@ Följ stegen nedan om du vill visa denna information.
 1. I arbetsytan **Förmånshantering** väljer du **Sjukförsäkringstäckning för medarbetare**.
 2. I fältet **Gruppnamn** väljer du en grupp.
 
-    ![Visa ACA-täckning](./media/hr-benefits-management-aca-view-coverage.png)
+    ![Visa ACA-täckning.](./media/hr-benefits-management-aca-view-coverage.png)
 
 Om något av standardvärdena från täckningsgruppen för sjukförsäkring har åsidosatts, visas en asterisk bredvid värdet som har ändrats. Om värdena för alla 12 månader är desamma och inte har åsidosatts, visas värdet i kolumnen **Samtliga 12 månader**.
 
@@ -198,11 +198,11 @@ Om du vill exportera någon av listorna till Microsoft Excel följer du dessa st
 
 Om du måste rapportera täckta personer eftersom du tillhandahåller självförsäkrad täckning, kan du visa beroende personer som omfattas av förmånsplaner och som har markerats som **pliktiga för sjukförsäkring**. I åtgärdsfönstret väljer du **Visa täckning för beroende person**.
 
-![Visa beroendetäckning](./media/hr-benefits-management-aca-view-dependent-coverage.png)
+![Visa beroendetäckning.](./media/hr-benefits-management-aca-view-dependent-coverage.png)
 
 Taäckningsinformation för medarbetarens beroenden visas.
 
-![Medförsäkringsskydd](./media/hr-benefits-management-aca-dependents.png)
+![Medförsäkringsskydd.](./media/hr-benefits-management-aca-dependents.png)
 
 > [!NOTE]
 > På sidan visas endast förmånsplaner som är markerade som **pliktiga för sjukförsäkring**.

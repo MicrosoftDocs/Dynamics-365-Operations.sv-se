@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 08564ce7af7412f2501b917b3496942004402611
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 513ec2f48a3c7c81a41fd64a9752067d12eb4ec8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117246"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353872"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Konfigurera värden för produktdimensioner som ska visas som färgrutor
 
@@ -39,11 +39,11 @@ Funktionen för visningsdimensioner som färgrutor gör det möjligt för Commer
 
 I följande bild visas ett exempel där färger visas som färgrutor på en Commerce-PDP.
 
-![Exempel på färger som visas som färgrutor på en produktinformationssida](../dev-itpro/media/swatch_pdp.png)
+![Exempel på färger som visas som färgrutor på en produktinformationssida.](../dev-itpro/media/swatch_pdp.png)
 
 I följande bild visas ett exempel där färger visas som färgrutor på en sida för Commerce-sökresultatlistan.
 
-![Exempel på färger som visas som färgrutor på en sida för sökresultatlista](../dev-itpro/media/swatch_searchresults.PNG)
+![Exempel på färger som visas som färgrutor på en listsida för sökresultat.](../dev-itpro/media/swatch_searchresults.PNG)
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>Aktivera visning av dimensioner som färgrutor i Commerce-administration
 
@@ -57,15 +57,15 @@ Konfigurationen kan utföras på någon av följande nivåer:
 
 - **Dimension** – I Commerce-administration, öppna sidan för en dimension genom att söka efter **Färg**, **Storlek** eller **Format**. På varje sida listar ett rutnät dimensionsvärdena. Du kan hantera webbadressvärdena för visningsordning, hexkod och bild. Följande illustration visar ett exempel på konfiguration på sidan **Färger**.
 
-    ![Exempel på dimensionskonfiguration på sidan Färger](../dev-itpro/media/swatch_Color.PNG)
+    ![Exempel på dimensionskonfiguration på sidan Färger.](../dev-itpro/media/swatch_Color.PNG)
 
 - **Dimensionsgrupp** – I Dynamics 365 Commerce, kan du använda egenskapen **RefinerGroup** för att skapa dimensionsgrupper. Om dimensionsgrupper har definierats öppnar du lämplig sida genom att söka efter **färggrupp**, **storleksgrupp** eller **formatgrupp**. På varje sida kan du hantera hexkod, webbadress för bilder och värden för förfiningsgrupper. Följande illustration visar ett exempel på konfiguration på sidan **Färggrupper**.
 
-    ![Exempel på dimensionskonfiguration på sidan Färggrupper](../dev-itpro/media/swatch_colorGroup.PNG)
+    ![Exempel på dimensionskonfiguration på sidan Färggrupper.](../dev-itpro/media/swatch_colorGroup.PNG)
 
 - **Produktdimension (när produkten skapas)** – När du skapar en ny produkt kan du använda sidan **Produktdimensioner** för att ange dimensionsvärden. För befintliga produkter kan fälten **Hexkod**, **URL** (för bilder) och **RefinerGroup** redan ha ställts in. Du kan dock ändra värdena som du vill. Följande illustration visar ett exempel på konfiguration på sidan **Produktdimensioner**.
 
-    ![Exempel på dimensionskonfiguration på sidan Produktdimensioner](../dev-itpro/media/swatch_product_dimensions.PNG)
+    ![Exempel på dimensionskonfiguration på sidan Produktdimensioner.](../dev-itpro/media/swatch_product_dimensions.PNG)
 
 > [!NOTE]
 > Processen för hantering av hexkod och URL-konfigurationer för bilder följer samma mönster som vid hantering av visningsordningen för dimensioner.
@@ -76,7 +76,7 @@ För de flesta färgdimensioner ska ett färgvärde för hexkod anges på dimens
 
 I följande bild visas ett exempel där färgdimensioner konfigureras med hjälp av hexkodvärden.
 
-![Exempel på dimensionskonfiguration som använder hexkoder](../dev-itpro/media/swatch_color_hexcode.png)
+![Exempel på dimensionskonfiguration som använder hexadecimalkoder.](../dev-itpro/media/swatch_color_hexcode.png)
 
 ## <a name="configure-dimension-values-by-using-image-urls"></a>Konfigurera dimensionsvärden med hjälp av bild-URL
 
@@ -86,13 +86,13 @@ Du måste överföra varje bild till Commerce webbplatsskaparen och publicera de
 
 Följande illustration visar ett exempel på när bild-URL används för konfigurationen på sidan **Färger**.
 
-![Exempel på dimensionskonfiguration som använder bild-URL](../dev-itpro/media/swatch_color_urls.PNG)
+![Exempel på dimensionskonfiguration som använder bild-URL:er.](../dev-itpro/media/swatch_color_urls.PNG)
 
 Du kan använda en mediemall för att definiera webbadresser för bilder, på samma sätt som för produkt- och kategoribilder. När du överför bilder till webbplatsskaparen måste filnamnskonventioner och filsökvägar vara konsekventa.
 
 Följande illustration visar ett exempel på när bild-URL används för konfigurationen av en mediemall.
 
-![Exempel på konfiguration av mediemall](../dev-itpro/media/swatch_media_template.PNG)
+![Exempel på konfiguration av mediemall.](../dev-itpro/media/swatch_media_template.PNG)
 
 ## <a name="configure-dimension-values-by-using-both-hex-codes-and-image-urls"></a>Konfigurera dimensionsvärden med hjälp av både hexkoder och bild-URL
 
@@ -100,7 +100,7 @@ Du kan konfigurera både hexkoder och bild-URL-adresser för de flesta färgdime
 
 Följande illustration visar ett exempel när både hexkoder och bild-URL används för konfigurationen på sidan **Färger**.
 
-![Exempel på dimensionskonfiguration som använder både hexkoder och bild-URL](../dev-itpro/media/swatch_color_hexandimage.png)
+![Exempel på dimensionskonfiguration som använder både hexadecimalkoder och bild-URL:er.](../dev-itpro/media/swatch_color_hexandimage.png)
 
 ## <a name="configure-refiner-groups"></a>Konfigurera förfiningsgrupper
 
@@ -110,7 +110,7 @@ Om till exempel dina färgdimensionsvärden är "blå", "blå pläd, " blåtvät
 
 I följande bild visas relationen mellan egenskaperna **Färg** och **RefinerGroup** i Commerce-administration.
 
-![Exempel på hantering av förfiningsgrupper](../dev-itpro/media/swatch_refiner_group.png)
+![Exempel på hantering av förfiningsgrupper.](../dev-itpro/media/swatch_refiner_group.png)
 
 ## <a name="manage-images-in-commerce-site-builder"></a>Hantera bilder i Commerce-webbplatsbyggaren
 
@@ -118,7 +118,7 @@ Om bild-URL-adresser används för dimensionsvärden måste motsvarande bilder �
 
 I följande bild visas ett exempel där dialogrutan **Överför filer** används för att överföra bilder till mediebiblioteket för webbplatsbyggaren. I rapporten markeras de kategorier med **storlek**, **färg** och **stil** som är tillgängliga för urval.
 
-![Exempel på bildfilskategorier under överföring till mediebiblioteket för webbplatsskaparen](../dev-itpro/media/swatch_sitebuilder.png)
+![Exempel på bildfilskategorier under överföring till mediebiblioteket för webbplatsskaparen.](../dev-itpro/media/swatch_sitebuilder.png)
 
 ## <a name="enable-swatch-display-on-e-commerce-site-pages"></a>Aktivera visning av färgrutor på sidor för e-handel
 

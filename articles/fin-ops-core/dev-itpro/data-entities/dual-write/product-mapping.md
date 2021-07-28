@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 6941a38e96520befd3bdba65956d45a6bbaee4be
-ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
+ms.openlocfilehash: 115eaad4f11fc4fb5321f0d8bb9d4f5a9f2f2c7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306399"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358603"
 ---
 # <a name="unified-product-experience"></a>Enhetlig produktupplevelse
 
@@ -33,15 +33,15 @@ När ett affärsekosystem utgörs av Dynamics 365-program, t.ex. Finance, Supply
 
 Här är produktdatamodellen från Sales.
 
-![Datamodell för produkter i CE](media/dual-write-product-4.jpg)
+![Datamodell för produkter i CE.](media/dual-write-product-4.jpg)
 
 Här är produktdatamodellen från Finance and Operations-appar.
 
-![Datamodell för produkter i Finance and Operations](media/dual-write-products-5.jpg)
+![Datamodell för produkter i Finance and Operations.](media/dual-write-products-5.jpg)
 
 Dessa två produktdatamodeller har integrerats i Dataverse som visas nedan.
 
-![Datamodell för produkter i Dynamics 365-appar](media/dual-write-products-6.jpg)
+![Datamodell för produkter i Dynamics 365-appar.](media/dual-write-products-6.jpg)
 
 Dubbelriktade tabellmappningar för produkter har utformats så att data endast kan flödas i en riktning nästan i realtid från Finance and Operations-appar till Dataverse. Produktinfrastrukturen har dock gjorts öppen så att den är dubbelriktad vid behov. Även om du kan anpassa den på din egen risk eftersom Microsoft inte rekommenderar det här tillvägagångssättet.
 
@@ -86,7 +86,7 @@ Eftersom produkten representeras som SKU kan begreppen distinkta produkter, prod
 - **Produktmallar** används som allmänna produkter som innehåller definitionen och reglerna som bestämmer beteendet i affärsprocessern Baserat på dessa definitioner kan distinkta produkter som kallas produktvarianter genereras. T.ex. t-shirt är produktmall och kan ha färg och storlek som dimensioner. Varianter kan frisläppas med olika kombinationer av dessa dimensioner, t.ex. en liten blå t-shirt eller en medelstor grön t-shirt. I integrationen skapas en rad per variant i produktregistret. Den här raden innehåller den variantspecifika informationen, t.ex. de olika dimensionerna. Den allmänna informationen för produkten lagras i raden **msdyn\_sharedproductdetails**. (Denna allmänna information finns i produktmallen). Produktmallinformationen synkroniseras till Dataverse så snart den frisläppta produktmallen skapas (men innan varianter släpps).
 - **Distinkta produkter** refererar till alla produkters undertypprodukt och alla produktvarianter. 
 
-![Datamodell för produkter](media/dual-write-product.png)
+![Datamodell för produkter.](media/dual-write-product.png)
 
 Om funktionen för dubbelriktad skrivning är aktiverad kommer produkterna från Finance and Operations att synkroniseras i andra Dynamics 365-produkter i tillståndet **utkast**. De läggs till den första prislista med samma valuta. Med andra ord läggs de till den första prislistan i en Dynamics 365-app som matchar valutan för den juridiska tabell där produkten släpps i en Finance and Operations-app. Om det inte finns någon prislista för den angivna valutan skapas en prislista automatiskt och produkten tilldelas den. 
 
@@ -112,7 +112,7 @@ Synkroniseringen av produkter sker från Finance and Operations-appen till Datav
 
 Produktdimensioner är egenskaper som identifierar en produktvariant. De fyra produktdimensionerna (färg, storlek, stil och konfiguration) mappas också till Dataverse för att definiera produktvarianter. Följande bild visar datamodellen för produktdimensionsfärgen. Samma modell används i storlekar, stilar och konfigurationer. 
 
-![Datamodell för produktdimensioner](media/dual-write-product-two.png)
+![Datamodell för produktdimensioner.](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -148,7 +148,7 @@ Standardorderinställningar definierar site och lagerställe som artiklar kommer
 
 Måttenheterna och deras respektive konverteringar är tillgängliga i Dataverse enligt datamodellen som visas i diagrammet.
 
-![Datamodell för måttenhet](media/dual-write-product-three.png)
+![Datamodell för måttenhet.](media/dual-write-product-three.png)
 
 Måttenhetens koncept integreras mellan Finance and Operations-appar och andra Dynamics 365-appar. För varje enhetsklass i en Finance and Operations-app skapas en enhetsgrupp i en Dynamics 365-app som innehåller de enheter som tillhör enhetsklassen. En standardbasenhet skapas också för varje enhetsgrupp. 
 

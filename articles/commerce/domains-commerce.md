@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 0a494a36d1d8fa55521c416efd4262d860e1a708
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: fb010f5cb70668913b937b73ba05144f0b99549a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022846"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356840"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domäner i Dynamics 365 Commerce
 
@@ -38,7 +38,7 @@ När du etablerar en näthandelsmiljö i [Microsoft Dynamics Lifecycle Services 
 
 I följande bild visas LCS-etableringsskärmen för näthandel med rutan **Värdnamn som stöds** markerad. 
 
-![Etableringsskärmen för LCS-näthandel med rutan **Värdnamn som stöds** markerad](./media/Domains_ProvisioningeCommerceScreen_publish.png)
+![Etableringsskärmen för LCS-näthandel med rutan **Värdnamn som stöds** markerad.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 Du kan skapa en tjänstbegäran om du vill lägga till fler domäner i en miljö om etableringen redan har genomförts. Om du vill skapa en tjänstbegäran i LCS, inom din miljö, går du till **Support \> Supportproblem** och väljer **Skicka en incident**.
 
@@ -56,7 +56,7 @@ När du först skapar en webbplats i webbplatsskaparen visas dialogrutan **konfi
 
 Bilden nedan visar dialogrutan visar **konfigurera din webbplats** för en webbplats med namnet "standard" när du öppnar webbplatsen för första gången i webbplatsskaparen.
 
-![Dialogrutan **Konfigurera din webbplats**](./media/Domains_SetupyoursiteScreen.png)
+![Dialogrutan **Konfigurera din webbplats**.](./media/Domains_SetupyoursiteScreen.png)
 
 Med hjälp av rutan **Välj en domän** kan du associera ett av de värdnamn som stöds för din webbplats i LCS till webbplatsen i webbplatsskaparen.
 
@@ -79,11 +79,11 @@ När din webbplats har konfigurerats med en sökväg, bygger alla URL-adresser s
 
 I följande bild visas dialogrutan **Ny URL** i webbplatsskaparen med en URL-exempelsökväg markerad. 
 
-![Dialogruta **Ny URL** dialogruta i webbplatsskaparen](./media/Domains_PageSetup2a.png)
+![Dialogrutan **Ny URL** i webbplatsskaparen.](./media/Domains_PageSetup2a.png)
 
 I följande bild visas sidan **URL** i webbplatsskaparen med en URL-exempelsökväg markerad i listan.
 
-![Kör användarflödesalternativ i policyflöde](./media/Domains_URLsInSiteBuilder2a.png)
+![Kör användarflödesalternativ i policyflöde.](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## <a name="domains-in-site-builder"></a>Domäner i webbplatsskaparen
 

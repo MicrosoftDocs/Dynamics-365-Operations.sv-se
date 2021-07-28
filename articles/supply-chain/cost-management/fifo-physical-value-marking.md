@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d37efef723a7ca5e5f2333ff41cdf8351156e9bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 393239571de8a8d845107a8a8a151748c6b963c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821619"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356007"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO med fysiskt värde och markering
 
@@ -51,7 +51,7 @@ I det här exemplet markeras inte artikelmodellgruppen till att inkludera fysisk
 
 Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet för de ekonomiskt uppdaterade transaktionerna. I illustrationen visas effekten av den FIFO-lagermodellen på serien med transaktioner, när alternativet **Inkludera fysiskt värde** inte används. 
 
-![FIFO utan Inkludera fysiskt värde](./media/fifowithoutincludephysicalvalue.gif) 
+![FIFO utan Inkludera fysiskt värde.](./media/fifowithoutincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
 
@@ -83,7 +83,7 @@ Om kryssrutan **Inkludera fysiskt värde** markeras för en artikel på sidan **
 
 Transaktion 5b kvittas mot inleveranstransaktion 1b. En negativ justering på 112,50 kronor görs på den här utleveranstransaktionen. Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 27,50 USD. I illustrationen visas effekten av den FIFO-lagermodellen på serien med transaktioner, när alternativet **Inkludera fysiskt värde** används. 
 
-![FIFO med Inkludera fysiskt värde](./media/fifowithincludephysicalvalue.gif) 
+![FIFO med Inkludera fysiskt värde.](./media/fifowithincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
 
@@ -115,7 +115,7 @@ Märkning är en process som gör det möjligt att länka, eller markera, en utl
 
 Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 27,50 USD. I illustrationen nedan visas hur den här serien med transaktioner påverkas av FIFO-lagermodellen när länkning mellan utleverans och inleverans används. 
 
-![FIFO med Markering](./media/fifowithmarking.gif) 
+![FIFO med markering.](./media/fifowithmarking.gif) 
 
 **Förklaringar till bilden**
 

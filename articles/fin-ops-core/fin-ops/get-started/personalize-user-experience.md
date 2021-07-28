@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 764444442aedcbf0934f1c636d7440bc0d277043
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 279212d05615805dd74c702b2b98c344c87fdc78
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944543"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348689"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
@@ -85,7 +85,7 @@ Några av de vanligaste och mest viktiga ändringar som kan göras till en sida 
 
 Dessutom är de vanligaste typerna av anpassning tillgängliga genom att högerklicka på ett element och sedan välja **anpassa**. (Observera att inte alla element på sidan kan anpassas). När du använder den här metoden för anpassning visas elementets *egenskapsfönster*.
 
-![Anpassa egenskaper för ett element](./media/cli-element-property-window.png)
+![Anpassa egenskaper för ett element.](./media/cli-element-property-window.png)
 
 Du kan använda egenskapsfönstret för att anpassa ett element på följande sätt:
 
@@ -107,7 +107,7 @@ Om du vill göra flera ändringar på en sida eller göra ändringar som inte ä
 - Välj **anpassa den här sidan** i gruppen **Anpassa** på fliken **Alternativ** på en sidas åtgärdsfönster.
 - Välj knappen **inställningar** (kugghjulssymbolen) i navigeringsfältet och välj sedan **anpassa**.
 
-[![Verktygsfält för anpassning](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
+[![Verktygsfält för anpassning.](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigera på sidan
 
@@ -147,7 +147,7 @@ För vissa sidor som innehåller listor är anpassningsfunktionen **Lägg till p
 > [!NOTE]
 > Om funktionen [sparade vyer](saved-views.md) är aktiv länkas det innehåll som du flyttar till en arbetsyta direkt till en vy. Frågan används för att hämta data på arbetsytan och på motsvarande sida eller länk i arbetsytan öppnas sidan i vyn så att frågans fråga och anpassningar tillämpas på den. Om vyn uppdateras ändras motsvarande element i arbetsytan till den nya vydefinitionen.
 
-[![Lägg till på arbetsyta](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
+[![Lägg till på arbetsyta.](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
 - Lägg till en lista i en arbetsyta, sortera först eller filtrera listan på sidan så att den visar information som du vill ska visas på arbetsytan. (Om funktionen **Sparade vyer** är aktiverad kan du inte fortsätta förrän du har sparat en vy som har dessa villkor.) Välj sedan **Lägg till i arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Lista**. När du har valt **konfigurera**, visas en dialogruta, där du kan välja vilka kolumner som ska visas i listan i arbetsytan. Du kan också ange etiketten som ska användas för i listan i arbetsytan.
 - För att lägga till en panel till en arbetsyta, filtrera först listan på sidan så att den visar de data som du vill sammanfatta eller som vill ha snabb tillgång till. (Om funktionen **Sparade vyer** är aktiverad kan du inte fortsätta förrän du har sparat en vy som har dessa villkor.) Välj sedan **Lägg till i arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Panel**. När du har valt **konfigurera**, visas en dialogruta där du kan ange etiketten som ska användas för panelen på arbetsytan. Du kan också ange om panelen ska visa ett antal. När du har lagt till en panel i arbetsytan kan du välja den för att öppna den aktuella sidan från arbetsytan. Du kan sedan visa den filtrerade listan som är kopplad till panelen.

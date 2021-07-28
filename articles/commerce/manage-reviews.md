@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 60ad0dd821dc91576a59cf73ec46da4aefd34a2f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 94abcf7189dc7c1f5587eb06d47650dc707c5007
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794269"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352408"
 ---
 # <a name="manage-ratings-and-reviews"></a>Hantera omdömen och recensioner
 
@@ -45,7 +45,7 @@ För läs till en recension i din Commerce-webbplatsskapare.
 
 Med hjälp av fler filter kan du begränsa granskningarna efter period, klassificering, kanal eller problemstatus (tas upp, svaras eller rapporteras).
 
-![Startsida för moderator](media/rnr-moderation-home.png) 
+![Startsida för moderator.](media/rnr-moderation-home.png) 
 
 ## <a name="respond-to-a-review"></a>Besvara på en recension 
 
@@ -59,7 +59,7 @@ För svara till en recension i din Commerce-webbplatsskapare.
 1. Ange svarstexten och namnet som ska visas för den svarande. Namnet på standardsvarande är **moderator**.
 1. Välj **Publicera svar** när du är klar.
 
-![Besvara en recension](media/rnr-moderation-response.png) 
+![Besvara en recension.](media/rnr-moderation-response.png) 
 
 ## <a name="take-down-a-review"></a>Ta ner en recension 
 
@@ -82,7 +82,7 @@ Om du vill söka efter och ta bort kunddata i Commerce-webbplatsbyggaren följer
 1. Om kunden har en recensionsaktivitet (t.ex. skicka recensioner, röster om användbarheten hos en annan kunds recension eller kommentarer om en annan kunds recension) visas resultatet. För varje artikel finns det en **borttagnings**-knapp.
 1. Välj **ta bort** för varje artikel som måste tas bort. Välj **ja** när du ombeds bekräfta att det är klart. 
     
-![Ta bort kunddata](media/rnr-moderation-delete-reviews.png) 
+![Ta bort kunddata.](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - Det kan ta upp till sju dagar innan data tas bort helt från systemet. Moderatorer bör meddela kunderna om denna fördröjning.
@@ -106,19 +106,19 @@ Om du vill visa klassificeringar och recensionstrender i Commerce-webbplatsbygga
 1. Gå till **start \> recensioner \> rapporter**.
 1. Välj **PowerBI-mall** om du vill hämta mallen.
 
-    ![Hämta Power BI-mallen](media/rnr-moderation-reports.png) 
+    ![Hämta Power BI-mallen.](media/rnr-moderation-reports.png) 
 
 1. Öppna den hämtade mallen med hjälp av Power BI-appen. Stäng dialogrutan **åtkomst till webbinnehåll** som visas och stäng sedan felmeddelandet "uppdatera" som visas.
 1. Gå till sidan **Start**, välj **Redigera frågor** och sedan **inställningar av datakälla**.
 1. I dialogrutan **inställningar av datakälla** välj **ändra källa**.
 1. I fältet **URL** anger du sökvägen till de granskningsdata som du hämtade i föregående procedur (t.ex. **c:\\reviews\\ReviewsData.csv**).
 
-    ![URL-fält i dialogrutan kommaavgränsade värden](media/rnr-powerbi-datasource-settings.png) 
+    ![URL-fält i dialogrutan för kommaavgränsade värden.](media/rnr-powerbi-datasource-settings.png) 
 
 1. Välj **OK** och sedan **Tillämpa ändringar**. Det tar en till två minuter innan ändringarna i datakällan tillämpas.
 1. Välj **Trendark** om du vill visa trender och recensioner.
 
-    ![Trender för omdömen och recensioner](media/rnr-powerbi-dashboard-template.png) 
+    ![Trender för omdömen och recensioner.](media/rnr-powerbi-dashboard-template.png) 
     
 ## <a name="additional-resources"></a>Ytterligare resurser
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 8229dc84040b1f3bd46d75c13795f0dc9b7e71f1
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 105fdc1b8e8c9e30c0d305894910194591707193
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897778"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356713"
 ---
 # <a name="one-voucher"></a>En verifikation
 
@@ -33,18 +33,18 @@ Den befintliga funktionaliteten för redovisningsjournaler (allmän journal, jou
 
 - Ställ in journalnamnet (**Redovisning** \> **Journalinställning** \> **Journalnamn**) så att fältet **Ny verifikation** anges till **Bara ett verifikationsnummer**. Varje rad som du lägger till journalen finns nu på samma verifikation. Därför kan verifikationen anges som en verifikation med flera rader, som ett konto eller motkonto på samma rad, eller en kombination.
 
-    [![Enstaka rad](./media/same-line.png)](./media/same-line.png)
+    [![Enstaka rad.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
     > Definitionen av En verifikation omfattar **inte** fall där journalnamn ställs in som **Bara ett verifikationsnummer**, men användaren anger sedan en verifikation som endast omfattar typer av redovisningskonton. I det här avsnittet betyder En verifikation en enda verifikation som innehåller mer än en leverantör, kund, bank, anläggningstillgångar eller projekt.
 
 - Ange en verifikation med flera rader om det inte finns något motkonto.
 
-    [![Verifikation med flera rader](./media/Multi-line.png)](./media/Multi-line.png)
+    [![Verifikation med flera rader.](./media/Multi-line.png)](./media/Multi-line.png)
 
 - Ange en verifikation där både kontot och motkontot innehåller redovisningsjournal som kontotyp, till exempel **leverantör**/**leverantör**, **kund**/**kund**, **leverantör**/**kund** eller **Bank**/**Bank**.
 
-    [![Redovisningsjournalverifikation](./media/subledger.png)](./media/subledger.png)
+    [![Verifikation för redovisning.](./media/subledger.png)](./media/subledger.png)
 
 ## <a name="issues-with-one-voucher"></a>Problem med en verifikation
 
@@ -52,11 +52,11 @@ Funktionen för en verifikation orsakar problem vid kvittning, beräkning av ska
 
 Du bokför t.ex. följande verifikation med flera rader.
 
-[![Exempel på en flerradsverifikation](./media/example.png)](./media/example.png)
+[![Exempel på en flerradsverifikation.](./media/example.png)](./media/example.png)
 
 Sedan skapar du rapporten **Utgifter per leverantör** i arbetsytan **Ekonomiska insikter**. På den här rapporten grupperas utgiftskontosaldon under leverantörsgrupp och sedan leverantör. När du genererar rapporten kan systemet inte avgöra vilka leverantörsgrupper/leverantörer som påförde kostnaden på 250,00. Eftersom transaktionsdetaljer saknas, antar systemet att hela utgiften på 250,00 uppstod av den första leverantören som finns i verifikationen. Därför visas utgiften på 250,00 som inkluderades i saldot för huvudkonto 600120 under den leverantörsgruppen/leverantören. Det är emellertid troligt att den första leverantören i verifikationen inte är rätt leverantör. Därför är rapporten antagligen felaktig.
 
-[![Utgifter per leverantörsrapport](./media/expenses.png)](./media/expenses.png)
+[![Utgifter per leverantörsrapport.](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Framtiden för en verifikation
 

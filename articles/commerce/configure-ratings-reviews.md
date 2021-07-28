@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5161755b9e15e93fbb5eeb6404ea0820f7068ea7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 09930af8b6ce78a2a88382772a44de173875856a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796085"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352552"
 ---
 # <a name="configure-ratings-and-reviews"></a>Konfigurera omdömen och recensioner
 
@@ -46,7 +46,7 @@ Konfigurera en webbplats för visning av värderingar och recensioner enligt fö
 
 Följande bild visar hur den här konfigurationen ser ut i Dynamics 365 Commerce.
 
-![Konfigurera en webbplats att visa omdömen och recensioner](media/rnr-eCommerce-site-appsettings.png)
+![Konfigurera en webbplats att visa omdömen och recensioner.](media/rnr-eCommerce-site-appsettings.png)
 
 ## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a>Länka en produktvärdering till avsnittet recensioner i ett PDP
 
@@ -60,7 +60,7 @@ Om du vill länka en produktvärdering avsnittet **recensioner** i PDP följer d
 
 Följande bild visar hur den här konfigurationen ser ut i Dynamics 365 Commerce.
 
-![Länka en produktvärdering till avsnittet recensioner i ett PDP](media/rnr-eCommerce-buy-box-rating-summary.png)
+![Länka en produktvärdering till avsnittet Recensioner på en PDP (produktdetaljsida).](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## <a name="configure-the-link-for-the-privacy-and-policy-page"></a>Konfigurera länken till sidan sekretess och policy
 
@@ -75,7 +75,7 @@ Konfigurera länken till sidan sekretess och policy genom att följa dessa steg.
 
 Följande bild visar hur den här konfigurationen ser ut i Dynamics 365 Commerce.
 
-![Konfigurera länken till sidan sekretess och policy](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+![Konfigurera länken till sidan för sekretess och policy.](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
 ## <a name="configure-ratings-and-reviews-modules-on-product-details-pages"></a>Konfigurera klassificeringar och recensioner av moduler på produktinformationssidor
 

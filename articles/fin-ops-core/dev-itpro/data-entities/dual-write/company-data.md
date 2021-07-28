@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 6a858135d377b30d6e8885ae18b2dc50da11813b
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: ab063c66712b43818f58eee1493ec168771ae97a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941039"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350969"
 ---
 # <a name="company-concept-in-dataverse"></a>Företagskoncept i Dataverse
 
@@ -43,7 +43,7 @@ Eftersom affärsenhet och företag inte är likvärdiga begrepp, är det inte m�
 
 Följande illustration visar ett exempel på den här datainställningen i Dataverse.
 
-![Inställning av data i Dataverse](media/dual-write-company-1.png)
+![Inställning av data i Dataverse.](media/dual-write-company-1.png)
 
 På grund av den här konfigurationen kommer alla rader som är relaterade till USMF-företaget att ägas av ett team som är länkat till USMF-affärsenheten i Dataverse. Därför kan alla användare som har åtkomst till den affärsenheten via en säkerhetsroll som är inställd på synlighet på affärsenhetsnivå nu se dessa rader. I följande exempel visas hur team kan användas för att ge rätt åtkomst till dessa rader.
 
@@ -52,21 +52,21 @@ På grund av den här konfigurationen kommer alla rader som är relaterade till 
 + "USMF försäljning"-teamet är länkat till den USMF-affärsenhet som nämndes tidigare.
 + Medlemmar i teamet "USMF försäljning" kan därför se alla konton som ägs av "USMF DW"-användaren, som skulle ha kommit från USMF-företagstabellen i Finance and Operations.
 
-![Så här kan du använda team](media/dual-write-company-2.png)
+![Så här kan du använda team.](media/dual-write-company-2.png)
 
 Som föregående illustration visar är denna 1:1-mappning mellan affärsenhet, företag och team bara en utgångspunkt. I det här exemplet skapas en ny affärsenhet "Europa" manuellt i Dataverse som överordnad för både DEMF och ESMF. Denna nya rotaffärsenhet är inte kopplad till dubbelriktadskrivning. Den kan dock användas för att ge medlemmar i "EUR försäljnings"-teamet tillgång till kontodata i både DEMF och ESMF genom att ange datasynlighet till **överordnad/underordnad BU** i den associerade säkerhetsrollen.
 
 Ett sista avsnitt att diskutera är hur dubbelriktadskrivning avgör vilket ägarteam det ska tilldela rader till. Det här beteendet styrs av kolumnen **Standardägargrupp** i cdm\_Företag-raden. När encdm\_Företag-rad är aktiverad för dubbelriktad skrivning skapar ett plugin-program automatiskt den associerade affärsenheten och ägarteamet (om det inte redan finns) och ställer in kolumnen **Standardägargrupp**. Administratören kan ändra det här kolumnen till ett annat värde. Men administratören kan inte rensa kolumnen så länge tabellen är aktiverad för dubbelriktad skrivning.
 
 > [!div class="mx-imgBorder"]
-![Kolumn för standardägargrupp](media/dual-write-default-owning-team.jpg)
+![Standardkolumn för ägarteam.](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Företagsstrimling och initiering
 
 Dataverse-integrering ger företagsparitet genom att använda en företagsidentifierare för strimla data. Som framgår av följande illustration utökas alla företagsspecifika tabeller så att de har en många-till-en-relation (N:1) med cdm\_Företag-tabellen.
 
 > [!div class="mx-imgBorder"]
-![N:1-relation mellan en företagsspecifik tabell och tabellen cdm_Company](media/dual-write-bootstrapping.png)
+![N:1-relation mellan en företagsspecifik tabell och tabellen cdm_Company.](media/dual-write-bootstrapping.png)
 
 + För rader blir värdet skrivskyddat när ett företag har lagts till och sparats. Därför bör användare se till att de väljer rätt företag.
 + Endast rader som har företagsdata är kvalificerade för dubbelriktad skrivning mellan appen och Dataverse.
@@ -98,7 +98,7 @@ Det finns flera sätt att fylla i företagsnamnet automatiskt i kundengagemangsa
 
 Om du vill använda filtrering baserat på företagets kontext i dina anpassade formulär eller anpassade uppslagskolumner som lagts till i standardformulären öppnar du formuläret och använder avsnittet **filtrering av relaterade poster** för att använda företagsfiltret. Du måste ställa in detta för varje uppslagskolumn som kräver filtrering baserat på det underliggande företaget för en viss rad. Inställningen visas för **kontot** i följande bild.
 
-:::image type="content" source="media/apply-company-context.png" alt-text="Använd företagets kontext":::
+:::image type="content" source="media/apply-company-context.png" alt-text="Använd företagets kontext.":::
 
 
 

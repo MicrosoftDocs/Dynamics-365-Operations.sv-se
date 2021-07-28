@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 3c7dafe55fc7072aa12b98ff42ed7d9e4719f4cd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 51526c8409e0a04cf35e2dbd63cb4a3bd7d121e0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804707"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352972"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Fastställa den optimala kombinationen av överlappande rabatter
 
@@ -39,11 +39,11 @@ Du kan skapa ett obegränsat antal rabatter för en gemensam uppsättning produk
 
 I det här exemplet krävs två produkter för att kvalificera sig för varje rabatt och rabatterna kan inte kombineras. Rabatterna i det här exemplet är **Bästa pris**-rabatter. Båda produkterna uppfyller kraven för båda rabatterna. Här följer två rabatter.
 
-![Exempel på två bästa prisrabatter](./media/overlapping-discount-combo-01.jpg)
+![Exempel på två Bästa Pris-rabatter.](./media/overlapping-discount-combo-01.jpg)
 
 För två valfria produkter vilar den bättre av dessa två rabatter på priserna för de två produkterna. När priset för båda produkterna är nästan lika eller lika, är rabatt 1 bättre. När priset på en produkt är betydligt mindre än priset på den andra produkten, är rabatt 2 bättre. Här följer den matematiska regeln för att bedöma dessa två rabatter mot varandra.
 
-![Regel för utvärdering av rabatterna](./media/overlapping-discount-combo-02.jpg)
+![Regel för utvärdering av rabatter.](./media/overlapping-discount-combo-02.jpg)
 
 > [!NOTE]
 > När priset för produkt 1 är lika med två tredjedelar av priset för produkt 2, väger de två rabatterna lika. I det här exemplet varierar rabattprocenten för rabatt 1 från några procent (när priserna för de två produkterna ligger långt från varandra) till högst 25 procent (när de två produkterna har samma pris). Den effektiv rabattprocenten för rabatt 2 är fast. Den är alltid 20 procent. Eftersom den effektiva rabattprocenten för rabatten 1 har ett intervall som kan vara mer än eller mindre än rabatt 2 är den bästa rabatten beroende av priserna för de två produkter som måste rabatteras. I det här exemplet slutfördes beräkningen snabbt, eftersom endast två rabatter tillämpas på endast två produkter. Det finns två möjliga kombinationer: ett användning av rabatt 1 eller en användning av rabatt 2. Det finns inga permutationer att beräkna. Värdet för varje rabatt beräknas med hjälp av båda produkterna och bästa rabatten används.
@@ -57,11 +57,11 @@ Nu ska använda fyra produkter och samma två rabatter. Alla fyra produkterna up
 
 För att läsa tabellerna, använd en produkt från en rad och en produkt från en kolumn. Till exempel i tabellen för rabatt 1, när du kombinerar de två $20-produkterna, får du $10 rabatt. I tabellen för rabatt 2, när du kombinerar $15-produkten och $5-produkten, får du $4 rabatt.
 
-![Exempel på användning av fyra produkter för samma två rabatter](./media/overlapping-discount-combo-03.jpg)
+![Exempel som använder fyra produkter för samma två rabatter.](./media/overlapping-discount-combo-03.jpg)
 
 Först letar vi reda på den största möjliga rabatten för två produkter genom att använda någondera av rabatterna. De två tabellerna visar rabattbeloppet för alla kombinationer av de två produkterna. Den skuggade delen av tabellerna representerar antingen fall där en produkt är ihopparad med sig själv, vilket vi inte kan göra, eller en omvänd ihopparning av två produkter som ger samma rabattbelopp och kan ignoreras. Genom att titta i tabellerna ser du att rabatt 1 för de två $20-artiklarna är den största möjliga rabatten för någon rabatt på alla fyra produkterna. (Den här rabatten markeras med grönt i den första tabellen.) Kvar finns då $15-produkten och $5-produkten. Genom att titta på de två tabellerna igen ser du att rabatt 1 för dessa två produkter ger en rabatt på $2,50, medan rabatt 2 ger en rabatt på $4. Vi väljer därför rabatt 2. Totalrabatten är $14. För att göra den här diskussionen enklare att visualisera är här två ytterligare tabeller som visar den effektiva rabattprocenten för alla möjliga kombinationer av två produkter för både rabatt 1 och rabatt 2. Endast halva listan över kombinationer ingår, eftersom det för dessa två rabatter inte spelar någon roll i vilken ordning de två produkterna tas med i rabatten. Den högsta effektiva rabatten (25 procent)markeras med grönt och lägsta effektiva rabatten (10 procent) markeras i rött.
 
-![Effektiv rabatt i procent för alla kombinationer med två produkter för båda rabatterna](./media/overlapping-discount-combo-04.jpg)
+![Effektiv rabatt i procent för alla kombinationer med två produkter för båda rabatter.](./media/overlapping-discount-combo-04.jpg)
 
 > [!NOTE]
 > När priserna varierar, och två eller flera rabatter konkurrerar, är det enda sättet att garantera den bästa rabattkombinationen att utvärdera båda rabatter och jämföra dem.
@@ -78,7 +78,7 @@ När ännu större kvantiteter eller fler överlappande rabatter används blir d
 
 För att lösa problemet med ett exponentiellt ökande antal kombinationer som måste utvärderas, finns en optimering som beräknar värdet per delad produkt för varje rabatt i uppsättningen med produkter som två eller flera rabatter kan tillämpas på. Vi kallar detta värde för **marginalvärdet** på rabatten för de delade produkterna. Marginalvärdet är den genomsnittliga ökningen per produkt av det totala rabattbeloppet när delade produkter tas med i varje rabatt. Marginalvärdet beräknas genom att det totala rabattbeloppet (DTotal), dra av rabattbeloppet utan de delade produkterna (DMinus\\ Shared), och dividera denna skillnad med antalet delade produkter (ProductsShared).
 
-![Formel för beräkning av marginalvärde](./media/overlapping-discount-combo-06.jpg)
+![Formel för beräkning av marginalvärde.](./media/overlapping-discount-combo-06.jpg)
 
 När marginalvärdet av varje rabatt i en delad uppsättning produkter beräknas, tillämpas rabatterna på de delade produkterna i ordning och fullständigt, från högsta marginalvärde till lägsta marginalvärde. För den här metoden jämförs inte alla resterande rabattmöjligheter varje gång när en enda instans av en rabatt har tillämpats. I stället jämförs överlappande rabatter en gång och tillämpas sedan i ordning. Inga ytterligare jämförelser görs. Du kan konfigurera tröskeln att byta till marginalvärdesmetoden på fliken **Rabatt** på sidan **Handelsparametrar**. Den godtagbar tiden att beräkna den totala rabatten varierar mellan butiksbranscher. Tiden ligger dock vanligtvis mellan tiotals millisekunder och en sekund.
 

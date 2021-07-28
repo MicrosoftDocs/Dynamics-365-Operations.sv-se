@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d2ac28a1bd09cf68c711295116fb007bdfab2070
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 946d0433df41ce7067b8b0673db680abb42b7792
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053405"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357299"
 ---
 # <a name="integration-with-finance-faq"></a>Vanliga frågeställningar integration med Finance
 
@@ -37,7 +37,7 @@ Nr Om du redigerar Personal-programanvändaren kan det hända att integreringen 
 | --- | --- | --- | --- |
 | Dynamics 365 för Talang | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
 
-![Standardinställningar för Talang-programanvändare](media/DynamicsApplicationUser.png)
+![Standardinställningar för Talent-programanvändare.](media/DynamicsApplicationUser.png)
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Synkroniseras all data eller bara vissa datatabeller?
 
@@ -57,7 +57,7 @@ Ekonomiska dimensioner finns inte för närvarande i Dataverse och ingår därf�
 
 För data som finns i Finance men inte finns i Personal, länkar ihop de två systemen med hjälp av **konfigurerar länkar** i Personal.
 
-![Mappa ekonomiska dimensioner](media/MapFinancialDimensions.png)
+![Mappa ekonomiska dimensioner.](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>Ibland när jag importerar anställda blir de inaktiva arbetare i Finance. Varför?
 
@@ -71,14 +71,14 @@ Datasynkronisering efter körning av tidsplan. Integreringen kommer att hämta e
 
 Med hjälp av "Avancerad fråga" kan du filtrera och omforma källdata innan du skickar den till destinationen.
 
-![Avancerad fråga för aktiva medarbetare](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Avancerad fråga för aktiva medarbetare.](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Kan jag ange vilka fält som ska skickas till Finance för en viss enhet?
 
 Fält kan läggas till eller tas bort från integrationsaktiviteten. Samtliga datafält i Dataverse-registret kommer inte att fyllas i från Personal.
 Ytterligare data kan fyllas i via Power Apps.
 
-![Lägg till eller ta bort fält till och från från integrationsaktiviteten.](media/SpecifyFieldsIncludedInIntegration.png)
+![Lägg till eller ta bort fält till och från en integreringsaktivitet.](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-human-resources-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Jag har ställt in integration som ett batchjobb, men Personal förlorade anslutningen till destinationssystemet. Hur kan jag skicka samma uppsättning ändringar till destinationssystemet
 
@@ -126,11 +126,11 @@ Spåra tiden från tidigare dataintegrerare körningshistorik och letar upp inde
 
 1. Hämta uppgiftsindex från dataintegrerare (i det här exemplet ”9”).
 
-    ![Hämta uppgiftsindex från dataintegrerare](media/CaptureTaskIndex.png)
+    ![Hämta uppgiftsindex från dataintegrerare.](media/CaptureTaskIndex.png)
 
 2. Spåra körningstiden för projektet.
 
-    ![Spåra körningstiden för projektet](media/CaptureTimeOfExecution.png)
+    ![Spåra körningstid för projekt.](media/CaptureTimeOfExecution.png)
 
 3. I Finance identifierar du index -1. I detta exempel matchar projektet med suffixet ”8” och körningstiden för index ”0”-projekt matchar med körningstid i steg 2.
 
@@ -140,7 +140,7 @@ Spåra tiden från tidigare dataintegrerare körningshistorik och letar upp inde
 
 Integrering med Finance är en tvåstegsprocess. Kontrollera först att Personal-data är uppdaterade och finns tillgänglig i Dataverse. Detta är en synkronisering nästan i realtid och kan verifieras i Power Apps genom att granska datan i dataregistren.
 
-![Data i Dataverse](media/DataInCDS.png)
+![Data i Dataverse.](media/DataInCDS.png)
 
 Om data inte visas som förväntat i Dataverse, kontrollerar du att enheten stöds i integrationen. Om du vill inkludera ytterligare information i Dataverse krävs en ändring på Microsoft-sidan.
 
@@ -165,7 +165,7 @@ Se också till att du väljer rätt juridiska personer för associerad anslutnin
 
 Uppdatera datatabellerna i Finance genom att gå till **datahantering \> ramverksparametrar \> entitetsinställningar \> uppdatera entitetslistan.** Detta tar några minuter att slutföra och sedan visas mappningarna. Problemet uppstår när nya projekt skapas.
 
-![Saknad fältmappning](media/MissingFieldMapping.png)
+![Fältmappning saknas.](media/MissingFieldMapping.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
