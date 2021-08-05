@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Platform updates för 10.0.19 (juni 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
-                - name: Platform updates för 10.0.18 (maj 2021)
-                  href: get-started/whats-new-platform-updates-10-0-18.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -72,7 +70,7 @@
           items:
             - name: Kontinuerlig leverans – startsida
               href: dev-tools/continuous-delivery-home-page.md
-            - name: Frågor och svar om utveckling och kontinuerlig leverans
+            - name: Vanliga frågor och svar om utveckling och kontinuerlig leverans
               href: dev-tools/continuous-delivery-faq.md
             - name: Exkludera testpaket från skapandet
               href: dev-tools/exclude-test-packages.md
@@ -354,7 +352,7 @@
                       href: deployment/infrastructure-stack.md
                     - name: Distribuera en ny miljö
                       href: deployment/deployenvironment-newinfrastructure.md
-                    - name: Frågor och svar om distribution
+                    - name: Vanliga frågor och svar om distribution
                       href: deployment/deploymentFAQ.md
                     - name: Kända problem med självbetjäningsdistribution
                       href: deployment/known-issues-new-deployment-experience.md
@@ -366,6 +364,8 @@
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: Vanliga frågor och svar om planerat underhåll i självbetjäningsmiljöer
                       href: deployment/plannedmaintenance-selfservice.md
+                    - name: Affärskontinuitet och haveriberedskap
+                      href: sysadmin/business-continuity-disaster-recovery.md
                 - name: Slutför registrering av Azure Resource Manager
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute och Finance and Operations
@@ -376,6 +376,8 @@
                   href: deployment/apply-deployable-package-system.md
                 - name: Tillämpa uppdateringar och tillägg för Commerce Scale Unit (moln)
                   href: deployment/Update-retail-channel.md
+                - name: Autouppdatering för Commerce Scale Unit (moln)
+                  href: deployment/Auto-Update-Commerce-Scale-Unit.md
                 - name: Initiera Commerce Scale Unit (moln)
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Migrera kanaler till en annan Commerce Scale Unit
@@ -392,6 +394,8 @@
                       href: deployment/on-premises-overview.md
                     - name: Planera och förbereda för lokala distributioner
                       href: deployment/plan-onprem-deployment.md
+                    - name: Programvara som stöds av Microsoft Dynamics 365 Finance + Operations (on-premises)
+                      href: deployment/onprem-compatibility.md
                     - name: Storlekskrav för maskinvara
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                     - name: Autentisering i Dynamics 365 Finance + Operations (on-premises)
@@ -502,9 +506,7 @@
                   href: dev-tools/access-instances.md
                 - name: Konfigurera enskilda utvecklingsmiljöer
                   href: dev-tools/configure-developer-vm.md
-                - name: Skapa nya användare på utvecklingsdatorer
-                  href: dev-tools/enable-development-machine.md
-                - name: Frågor och svar om hur du utvecklar och skapar virtuella maskiner som inte tillåter administratörsåtkomst
+                - name: Vanliga frågor och svar om hur du utvecklar och skapar virtuella datorer som inte tillåter administratörsåtkomst
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Byta namn på lokala miljöer för att komma åt Azure DevOps
                   href: migration-upgrade/vso-machine-renaming.md
@@ -720,7 +722,7 @@
                       href: extensibility/extensibility-roadmap.md
                     - name: Begäranden om utbyggbarhet
                       href: extensibility/extensibility-requests.md
-                    - name: Frågor och svar om utbyggbarhet
+                    - name: Vanliga frågor och svar om utbyggbarhet
                       href: extensibility/app-sealing-faq.md
                     - name: Migrera från överlägg till tillägg
                       href: extensibility/migrate-overlayer-extension.md
@@ -1116,7 +1118,7 @@
                       href: data-entities/dual-write/integrated-hr.md
                     - name: Part och global adressbok
                       href: data-entities/dual-write/party-gab.md
-                    - name: Använda Power Portal med datamodellen för part
+                    - name: Använda Microsoft Power Apps-portaler med datamodellen för part
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: Uppgradera till part- och globala adressboksmodellen
                       href: data-entities/dual-write/upgrade-party-gab.md
@@ -1604,6 +1606,8 @@
                   href: migration-upgrade/upgrade-go-live-prep.md
                 - name: AX 2012-uppgradering – Publicera
                   href: migration-upgrade/2012-upgrade-cutover.md
+                - name: Uppgradera från AX 2012 – Vanliga frågor och svar gällande datauppgradering
+                  href: migration-upgrade/upgrade-faq.md
                 - name: Ändringar som påverkar uppgradering från AX 2012
                   items:
                     - name: Gör kontoplansavgränsare unika

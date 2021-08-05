@@ -5,6 +5,8 @@
       items:
         - name: Nyheter och ändringar i Human Resources
           href: hr-admin-whats-new.md
+        - name: 12 juli 2021
+          href: hr-whats-new-2021-07-12.md
         - name: 22 juni 2021
           href: hr-whats-new-2021-06-22.md
         - name: 20 maj 2021
@@ -217,7 +219,7 @@
               href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json
             - name: Översikt över funktionshantering
               href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json
-            - name: Frågor och svar för klient
+            - name: Vanliga frågor och svar för klient
               href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json
             - name: Åtgärdssökning
               href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json
@@ -253,8 +255,10 @@
           href: hr-admin-teams-leave-app.md
         - name: Förbereda Go live
           href: hr-admin-go-live-prepare.md
-        - name: Frågor och svar om Go live
+        - name: Vanliga frågor och svar om Go live
           href: hr-admin-go-live-faq.md
+        - name: Vanliga frågor och svar gällande sammanslagning av Human Resources-infrastruktur
+          href: hr-infrastructure-merge-faq.md
         - name: Dokumentationsresurser
           items:
             - name: Hjälpsystem
@@ -691,6 +695,8 @@
               href: hr-compensation-define-process.md
             - name: Bearbeta kompensationsplaner
               href: hr-compensation-process.md
+            - name: Markera en medarbetare som klar att betala
+              href: hr-compensation-payroll.md
         - name: Hantera förmåner
           items:
             - name: Hantering av förmåner
@@ -715,7 +721,7 @@
                       href: hr-benefits-setup-payment-frequencies.md
                     - name: Konfigurera livshändelsetyper
                       href: hr-benefits-setup-life-event-types.md
-                    - name: Skapa plantyper
+                    - name: Översikt över plantyp
                       href: hr-benefits-setup-plan-types.md
                     - name: Ställa in orsakskoder
                       href: hr-benefits-setup-reason-codes.md
@@ -803,10 +809,12 @@
               href: hr-leave-and-absence-analytics.md
             - name: Hantera begäranden om ledighet och frånvaro
               href: hr-employee-self-service-manage-requests.md
-            - name: Begär ledig tid
+            - name: Begära ledighet
               href: hr-employee-self-service-request-time-off.md
             - name: Visa team- och företagskalendrar
               href: hr-employee-self-service-calendar.md
+            - name: Konfigurera roll för frånvaroansvarig
+              href: hr-configure-absence-manager.md
             - name: Hantera policyer för köpa och sälja tjänstledighet
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
             - name: Skapa arbetsflöden för att köpa och sälja tjänstledigt

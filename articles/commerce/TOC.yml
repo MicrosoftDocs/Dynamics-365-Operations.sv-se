@@ -12,7 +12,7 @@
               items:
                 - name: Översikt över Tjänstuppdateringar för One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Frågor och svar om Tjänstuppdateringar för One Version
+                - name: Vanliga frågor och svar om Tjänstuppdateringar för One Version
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Hantera uppdateringar och den anpassade kodens livs cykel, inklusive Dynamics 365 Commerce'
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/commerce/toc.json
@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (juni 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
-                    - name: Commerce 10.0.18 (maj 2021)
-                      href: get-started/whats-new-commerce-10-0-18.md
                 - name: Borttagna eller inaktuella funktioner
                   items:
                     - name: Borttagna eller inaktuella funktioner – startsida
@@ -158,7 +156,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/commerce/toc.json
                 - name: Översikt över funktionshantering
                   href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Frågor och svar för klient
+                - name: Vanliga frågor och svar för klient
                   href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/commerce/toc.json
                 - name: Åtgärdssökning
                   href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/commerce/toc.json
@@ -208,11 +206,11 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
                 - name: Förbereda Go live
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
-                - name: Frågor och svar om Go live
+                - name: Vanliga frågor och svar om Go live
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
                 - name: Skicka en serviceförfrågan
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Frågor och svar om prenumerationer, LCS-projekt och Azure AD-klientorganisationer'
+                - name: 'Vanliga frågor och svar om prenumerationer, LCS-projekt och Azure AD-klientorganisationer'
                   href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Flytta miljöer mellan datacenter
                   href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
@@ -900,6 +898,8 @@
                   href: set-up-B2C-tenant.md
                 - name: Ställa in anpassade sidor för användarinloggningar
                   href: custom-pages-user-logins.md
+                - name: Aktivera automatisk länkning av identitetsposter till kundkonton
+                  href: identity-record-linking.md
                 - name: Konfigurera flera B2C-klientorganisationer i en Commerce-miljö
                   href: configure-multi-B2C-tenants.md
                 - name: Domäner i Dynamics 365 Commerce
@@ -1022,6 +1022,8 @@
                   items:
                     - name: Adventure Works-tema – översikt
                       href: adventure-works-theme.md
+                    - name: Installera Adventure Works-temat
+                      href: install-adventure-works.md
             - name: Hantera digitala tillgångar
               items:
                 - name: Översikt av digital tillgångshantering

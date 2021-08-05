@@ -14,7 +14,7 @@
               items:
                 - name: Översikt över Tjänstuppdateringar för One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Frågor och svar om Tjänstuppdateringar för One Version
+                - name: Vanliga frågor och svar om Tjänstuppdateringar för One Version
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/finance/toc.json
                 - name: 'Hantera uppdateringar och den anpassade kodens livs cykel, inklusive Dynamics 365 Commerce'
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/finance/toc.json
@@ -76,8 +76,6 @@
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (juni 2021)
                       href: get-started/whats-new-changed-10-0-19.md
-                    - name: Finance 10.0.18 (maj 2021)
-                      href: get-started/whats-new-changed-10-0-17.md
             - name: Borttagna eller inaktuella funktioner
               items:
                 - name: Borttagna eller inaktuella funktioner – startsida
@@ -136,7 +134,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/finance/toc.json
                 - name: Översikt över funktionshantering
                   href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Frågor och svar för klient
+                - name: Vanliga frågor och svar för klient
                   href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Åtgärdssökning
                   href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/finance/toc.json
@@ -186,11 +184,11 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/finance/toc.json
                 - name: Förbereda Go live
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/finance/toc.json
-                - name: Frågor och svar om Go live
+                - name: Vanliga frågor och svar om Go live
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Skicka en serviceförfrågan
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/finance/toc.json
-                - name: 'Frågor och svar om prenumerationer, LCS-projekt och Azure AD-klientorganisationer'
+                - name: 'Vanliga frågor och svar om prenumerationer, LCS-projekt och Azure AD-klientorganisationer'
                   href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Flytta miljöer mellan datacenter
                   href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/finance/toc.json
@@ -1060,7 +1058,7 @@
                   href: general-ledger/import-currency-exchange-rates.md
                 - name: En verifikation
                   href: general-ledger/one-voucher.md
-                - name: Frågor och svar om En verifikation
+                - name: Vanliga frågor och svar om En verifikation
                   href: general-ledger/one-voucher-faq.md
                 - name: Redovisningskvittningar
                   href: general-ledger/ledger-settlements.md
@@ -1214,7 +1212,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
             - name: När du ska återställa en data mart
               href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
-            - name: Frågor och svar om ekonomisk rapportering
+            - name: Vanliga frågor och svar om ekonomisk rapportering
               href: general-ledger/financial-reporting-faq.md
         - name: Finance Insights
           items:
@@ -1566,6 +1564,8 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Rapport för gränsöverskridande tjänster
                   href: localizations/emea-aut-cross-border-services-report.md
+                - name: Inköpsavgifter
+                  href: localizations/emea-aut-purchase-duties.md
             - name: Bahrain
               items:
                 - name: Bahrain – översikt
@@ -1992,6 +1992,10 @@
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
                     - name: Generera en EU Intrastat-deklaration
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
+                    - name: Fransk Intrastat
+                      href: localizations/emea-fra-intrastat.md
+                    - name: Italiensk Intrastat
+                      href: localizations/emea-ita-intrastat.md
                 - name: Lagerjournalrapporter
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: Tidsgränser för fakturautfärdande
@@ -2968,6 +2972,12 @@
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
                 - name: 'Momsdeklaration med kassaapparater (JPK_V7M, VDEK)'
                   href: localizations/emea-pol-vdek.md
+                - name: Förbered för JPK-V7M-rapportering
+                  href: localizations/emea-pol-vdek-setup.md
+                - name: JPK-V7M-rapportering
+                  href: localizations/emea-pol-vdek-reporting.md
+                - name: Information om särskilda affärsscenarier i JPK-V7M-rapporten
+                  href: localizations/emea-pol-vdek-scenarios.md
             - name: Qatar
               items:
                 - name: Qatar – översikt
@@ -3204,6 +3214,8 @@
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
                     - name: Dåliga skuldreserver i kundreskontra
                       href: localizations/rus-bad-debts.md
+                    - name: Beräkning av register över skattetillgångar och skatteskulder
+                      href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
             - name: Saudiarabien
               items:
                 - name: Saudiarabien – översikt
@@ -3997,6 +4009,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Skapa rapporter i Office-format som har inbäddade bilder
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                    - name: Designa ett ER-format för att generera en rapport i Excel med inbäddade bilder i sidhuvuden eller sidfötter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Dela upp genererade XML-filer utifrån filstorlek och innehållskvantitet
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
                 - name: Undertrycka strukturlistetecken i genererade filer
@@ -4475,7 +4489,7 @@
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-earning-code-group-tasks.md
                 - name: 'Ställa in moms, momsregioner, momskoder och momsgrupper'
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-tax-information-tasks.md
-                - name: 'Frågor och svar om momskoder, momsgrupper och bokföringsdefinitioner'
+                - name: 'Vanliga frågor och svar om momskoder, momsgrupper och bokföringsdefinitioner'
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-tax-codes-tax-groups-definitions.md
                 - name: Ange initiala lönesaldon
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-enter-beginning-balances.md
@@ -4493,7 +4507,7 @@
               href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-track-time-for-fmla.md
             - name: Lönebearbetningsuppgifter
               items:
-                - name: Frågor och svar om intäkter och generering av intäkter
+                - name: Vanliga frågor och svar om intäkter och generering av intäkter
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-earnings-generation-process.md
                 - name: Generera intäkter för arbetare
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-generate-earnings.md
