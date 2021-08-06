@@ -2,7 +2,7 @@
 title: Begär ledig tid
 description: Begär ledig tid i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 04/21/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86a0c659c8b586912ee848aa5f233f2e16f05fd4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: da04e3f93f381fbe25c7e1ed117b7ce10e8b04e9
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357201"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639568"
 ---
 # <a name="request-time-off"></a>Begär ledig tid
 
@@ -41,6 +41,8 @@ Du kan skicka in en begäran om ledighet, visa semestern och lämna saldon och s
 5. Ange information i **kommentar** om det behövs.
 
 6. Välj **skicka** när du är redo att skicka din begäran. Annars väljer du **Spara utkast**.
+
+Medarbetare som skickar en ny tjänstledighetsbegäran kan välja olika typer av tjänstledighet när de vill skapa sin tjänstledighetsbegäran. Alla tjänstledighetstyper som väljs som en del av en enda tjänstledighetsbegäran ska dock ha samma tjänstledighetsenhet. Medarbetare kan visa tjänstledighetsenheten för varje tjänstledighetstyp i formuläret **Ledighetsbegäran**. 
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Lägg till en bilaga i en befintlig begäran
 

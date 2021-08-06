@@ -2,7 +2,7 @@
 title: Konfigurera satser
 description: Tariffer i Microsoft Dynamics 365 Human Resources definierar hur mycket arbetsgivare och medarbetare som deltar i en förmån.
 author: andreabichsel
-ms.date: 06/15/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2b6767df573260f32de8409e487f649bdc4779b0
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: 85cf561828aa8ef9d80df31436f473b29406e2fd
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266667"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558355"
 ---
 # <a name="configure-rates"></a>Konfigurera satser
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Tariffer i Microsoft Dynamics 365 Human Resources definierar hur mycket arbetsgivare och medarbetare som deltar i en förmån. Värdet kan vara ett belopp eller en flexsaldo, beroende på din konfiguration.
+Tariffer definierar hur mycket arbetsgivare och medarbetare som deltar i en förmån. Värdet kan vara antingen ett belopp eller ett nummer med flexsaldo, beroende på din konfiguration.
 
 Använd tariffer för att fastställa hur mycket anställda och arbetsgivare som betalar för varje förmån, baserat på flera faktorer. Täckningstariffer har giltighetsdatum så att du kan spara en historisk post med tariffer. 
 
@@ -42,11 +42,11 @@ Använd tariffer för att fastställa hur mycket anställda och arbetsgivare som
    | --- | --- |
    | **Kurs** | Ett unikt namn som identifierar förmånstarriffen. |
    | **Beskrivning** | En beskrivning av förmånstarriffen. |
-   | **Giltighet** | Datum då tariffen är giltig. Det aktuella systemdatumet är standardvärdet. 
-   | **Förfallotid** | Slutdatum för tariffen. 12/31/2154 (vilket betyder aldrig) är standardvärdet. |
-   | **Använd nivåer** | Den nivå som ska användas för beräkning av förmånspriset. En nivå för förmånspris i en nivå eller en dubbel nivå för förmånspris på två nivåer. Ett exempel på en dubbel nivå är en nivå baserad på kön och ålder. |
-   | **Lönefrekvens** | Den lönefrekvens som avgör hur ofta förmånspriset betalas till förmånsleverantören. Om lönefrekvensen t.ex. är månadsvis representerar förmånspriset månadskostnaden. |
-   | **Avrundning av lönefrekvens** | Metoderna för avrundning av satsen är: Standard, Trunkerad, Normal, Nedåt och Avrundning uppåt. </br></br><ul><li>**Standard** - Avrunda alltid uppåt. Till exempel rundar 10,611 av till 10,62. -10,231 rundar av till -10,23. </li><li>**Trunkerad** - Avrunda alltid nedåt. Till exempel rundar 10,619 av till 10,61. -10,231 rundar av till -10,24. </li><li>**Normal** – Decimalvärden som slutar på eller större än 5 avrundas från noll. Decimalvärden som slutar på eller under 4 avrundas mot noll. Till exempel rundar 10,615 av till 10,62. -10,235 rundar av till -10,24. 10,614 rundar av till 10,61. -10,234 rundar av till -10,23. </li><li>**Nedåt** - Avrunda mot noll. Till exempel rundar 10,619 av till 10,61. -10,231 rundar av till -10,23. </li><li>**Avrundning upp** – Avrunda från noll. Till exempel rundar 10,619 av till 10,62. -10,231 rundar av till -10,24. |
+   | **Giltighet** | Det datum då tariffen blir mer effektiv. Det aktuella systemdatumet är standardvärdet. Det här datumet bör in ligger på eller före förmånsperioden. Det är praktiskt att ange datumet till förmånsplanens datum. |
+   | **Upphörande** | Slutdatum för tariffen. 12/31/2154 (vilket betyder aldrig) är standardvärdet. |
+   | **Använd nivåer** |  Använd det här fältet om du har logik som måste användas för att bestämma en sats. Om en sats måste ökas baserat på ålder väljer du till exempel ett värde här. Välj förmånspris i **en nivå** eller en **dubbel nivå** för förmånspris på två nivåer. Ett exempel på en dubbel nivå är en nivå baserad på kön och ålder. När du har valt ett värde väljer du **Åtgärder** och sedan **Nivåpriser**. Om du har ett schablonbelopp som inte ändras lämnar du det här fältet tomt. |
+   | **Lönefrekvens** | Ange hur ofta bonussatsen för förmånen ska betalas till förmånsprovidern. Tarifferna som du anger på sidan som beskrivs senare i det här avsnittet baseras på den betalningsfrekvens som du anger här. Om du till exempel anger **Månatlig** i det här fältet och anger en medarbetarsats på **100 USD**,antas det att förmånen innebär att medarbetaren 100 USD per månad. En medarbetare kanske emellertid betalas två gånger per månad, baserat på den betalningsfrekvens för förmån som har ställts in för medarbetarposten. När medarbetaren signerar självbetjäning för medarbetaren blir i så fall det belopp som de betalar 50 USD eftersom priset som medarbetarens självbetjäning visar baseras på medarbetarens betalningsfrekvens. |
+   | **Avrundning av lönefrekvens** | Metoderna för avrundning av satsen är: Standard, Trunkerad, Normal, Nedåt och Avrundning uppåt. </br></br><ul><li>**Standard** – Avrunda alltid uppåt. Till exempel rundar 10,611 av till 10,62. -10,231 rundar av till -10,23. </li><li>**Trunkerad** – Avrunda alltid nedåt. Till exempel rundar 10,619 av till 10,61. -10,231 rundar av till -10,24. </li><li>**Normal** – Decimalvärden som slutar på eller större än 5 avrundas från noll. Decimalvärden som slutar på eller under 4 avrundas mot noll. Till exempel rundar 10,615 av till 10,62. -10,235 rundar av till -10,24. 10,614 rundar av till 10,61. -10,234 rundar av till -10,23. </li><li>**Nedåt** – Avrunda mot noll. Till exempel rundar 10,619 av till 10,61. -10,231 rundar av till -10,23. </li><li>**Avrundning upp** – Avrunda från noll. Till exempel rundar 10,619 av till 10,62. -10,231 rundar av till -10,24. |
    | **Medarbetarbelopp för ickerökare** | Det belopp som en förmånsleverantör debiteras för en anställd som inte är rökare. Detta är det belopp som arbetsgivaren betalar till den förmånsleverantören och som ska baseras på lönefrekvensen för tariffinställningen. |
    | **Arbetsgivarbelopp för ickerökare** | Det belopp som en förmånsleverantör debiteras för en anställd som inte är rökare. Detta är det belopp som arbetsgivaren betalar till den förmånsleverantören och som ska baseras på lönefrekvensen för tariffinställningen. |
    | **Medarbetarbelopp för rökare** | Det belopp som en förmånsleverantör debiteras för en anställd som är rökare. Detta är det belopp som arbetsgivaren betalar till den förmånsleverantören och som ska baseras på lönefrekvensen för tariffinställningen. |
@@ -66,6 +66,9 @@ Du kan använda nivåpriser i din prisinställning om priset varierar beroende p
 
 Du kan också använda dubbla nivåer. Om du väljer **dubbla nivåer** för värdet **använd nivåer** i formuläret **inställning av pris** kan du definiera priser baserade på två dimensioner. Du kan t.ex. konfigurera ett dubbelt nivåsystem som anger att om du är man och din ålder är upp till 34,99, är beloppet för ickerökare 2. Om du är man och din ålder är upp till 39,99 är beloppet för ickerökare 3. Om du är kvinna och din ålder är upp till 34,99 är beloppet för ickerökare 1.8. Om du är kvinna och din ålder är upp till 39,99 är beloppet för ickerökare 2.8.
 
+> [!IMPORTANT]
+> Ett alternativ under **Personlig information** i arbetsposten används för att ange om medarbetaren är en sådan. Om medarbetaren registreras som en rökare, används pris för rökare. (Indikeringen av det samma anger aldrig för medarbetaren.)
+   
 1. I arbetsytan **Förmånshantering** under **inställningar**, välj **tariffer**.
 
 2. Välj en eller flera priser i listan, välj **åtgärder** och välj sedan **nivåpriser**.
@@ -92,6 +95,7 @@ Du kan också använda dubbla nivåer. Om du väljer **dubbla nivåer** för vä
    | **Flexkreditpris för rökare** | Antalet flexkrediter för förmånspris, baserat på den beräkning som definierats för prisnivån för rökare. |
 
 5. Välj **Spara**. 
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

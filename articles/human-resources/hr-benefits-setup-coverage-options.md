@@ -2,7 +2,7 @@
 title: Skapa disponeringsalternativ
 description: Täckningsalternativ i Microsoft Dynamics 365 Human Resources är täckningsgrad för en deltagares val i en förmånsplan eller ett program.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,21 +15,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d9f67a97ec57bade840e1035c6011b94427a77c4
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 1e8f13075a9835963c231a8e4e8a737368a952ba
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055590"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558235"
 ---
 # <a name="create-coverage-options"></a>Skapa disponeringsalternativ
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Täckningsalternativ i Microsoft Dynamics 365 Human Resources är täckningsgrad för en deltagares val i en förmånsplan eller ett program. Täckningsalternativ kan t.ex. inkludera **endast medarbetare** för en sjukvårdsplan eller **2x lön** för en livförsäkringsplan. När du har definierat den kan du återanvända alternativ för förmånens omfattning. Du kan associera ett alternativ med en eller flera planer.
+Disponeringsalternativen avgör vem som ska omfattas eller hur mycket täckning som är tillgänglig i en försäkringsplan. För en medicinsk plan kan det till exempel bara finnas ett alternativ **endast medarbetaren**, ett alternativ **medarbetare + 1** och alternativet **familj**. För life insurance kan du erbjuda täckning för **1 x lön** eller **2 x lön**.
 
-När du definierar omfattningsalternativ kopplar du omfattningsalternativen till en förmånsplantyp. Plantypen associeras sedan med en förmånsplan eller ett program. Omfattningsalternativ som är kopplade till en plantyp blir tillgängligt för alla planer som skapas med den aktuella plantypen. 
+När alternativ för förmånstäckning har definierats kan du återanvända dem. Du kan associera ett alternativ med en eller flera planer.
 
+> [!IMPORTANT]
+> När du definierar omfattningsalternativ kopplar du dem till en förmånsplantyp. Plantypen associeras sedan med en förmånsplan eller ett program. Omfattningsalternativ som är kopplade till en plantyp blir tillgängligt för alla planer som skapas med den aktuella typen.
+
+## <a name="create-coverage-options"></a>Skapa disponeringsalternativ
 1. I arbetsytan **Förmånshantering** under **inställningar**, välj **Omfattningsalternativ**.
 
 2. Välj **Ny**.
@@ -40,7 +44,7 @@ När du definierar omfattningsalternativ kopplar du omfattningsalternativen till
    | --- | --- |
    | **Omfattningsalternativ** | Ett unikt namn på omfattningsalternativ. |
    | **Beskrivning** | Ange en beskrivning av omfattningsalternativet. |
-   | **Omfattningskod** | Täckningskoder tilldelar minimi- och maximibelopp för varje stödberättigad persontyp. En variantkod anger vem som täcks av eller hur mycket täckningsbelopp som tillåts för en plantyp. Du kan uttrycka beloppet för täckningen som ett dollarbelopp eller en procentsats. Exempel:</br></br>- **Emp+ 1** – för att kvalificeras måste medarbetaren ha ett beroende valt (om fler än en har valts, de är inte längre kvalificerade).</br></br>- **Emp+familj** – som ska kvalificeras måste medarbetaren ha minst två beroenden valda. |
+   | **Omfattningskod** | Täckningskoder tilldelar minimi- och maximibelopp för varje stödberättigad persontyp. En variantkod anger vem som täcks av eller hur mycket täckningsbelopp som tillåts för en plantyp. Du kan uttrycka beloppet för täckningen som ett dollarbelopp eller en procentsats. Exempel:<ul><li>**Emp+ 1** – för att kvalificeras måste medarbetaren ha ett beroende valt (om fler än en har valts, de är inte längre kvalificerade).</li><li>**Emp+familj** – som ska kvalificeras måste medarbetaren ha minst två beroenden valda.</li></ul> |
    | **Maximalt antal** | Det högsta antalet beroenden. |
    | **Status** | Status för omfattningsalternativ. Om omfattningsalternativets status är inaktiverat kan omfattningsalternativet inte väljas på plantyper. |
    | **Procent** | Procentbeloppet. Det här fältet är bara aktivt om % x lön har valts i fältet Disponeringskod. |

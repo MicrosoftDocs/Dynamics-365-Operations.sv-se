@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4da23ff0dc8858558df3111b90159e43bd5fdccf
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e00748fc9629d7ecfa91701002d3d2d7dda0a86f
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056334"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639424"
 ---
 # <a name="request-a-leave-of-absence"></a>Begäran om frånvaro
 
@@ -48,6 +48,10 @@ Du kan skicka en begäran om frånvaro och se statusen för din begäran om frå
 1. I arbetsyta **Självbetjäning för medarbetare**, välj **Fler** (...) panelen **ledighetssaldon**.
 
 2. Om du vill visa din begäran om frånvaro, välj **Visa begäran om frånvaro**.
+
+## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Importera tjänstledighetsansökningar från andra system eller äldre system
+
+Om du vill importera tjänstledighetsansökningar från ett annat system måste du gå igenom det vanliga arbetsflödet för att skapa lämpliga tjänstledighetstransaktioner. Du kan också importera tjänstledighetstransaktionerna och tjänstledighetsansökningarna i en slutförd status. Observera att det inte skapas några banktransaktioner automatiskt om du bara importerar tjänstledighetsansökningar.
 
 ## <a name="see-also"></a>Se även
 

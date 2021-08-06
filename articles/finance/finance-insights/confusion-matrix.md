@@ -2,7 +2,7 @@
 title: Resultat av maskininlärningsmodeller (förhandsversion)
 description: Det här ämnet innehåller information om sammanblandningsmatris, klassificeringsproblem och noggrannhet i maskininlärningsmodeller (ML). Syftet är att förbättra din förståelse av noggrannhet i ML-förutsägelseresultat.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 32561935958268f35acc24f1cfb823546636c1f6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: f766303f0592dec917a23339511a957fcdc940d6
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349068"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638690"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Resultat av maskininlärningsmodeller (förhandsversion)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Det här ämnet innehåller information om sammanblandningsmatris, klassificeringsproblem och noggrannhet i maskininlärningsmodeller (ML). Syftet är att förbättra din förståelse av noggrannhet i ML-förutsägelseresultat. Målgruppen är ingenjörer, analytiker och chefer som vill få större kunskap och kompetens inom datavetenskap.
 

@@ -2,7 +2,7 @@
 title: Konfigurera berättiganderegler och alternativ
 description: Ange berättiganderegler och optioner för hantering av förmåner i Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 05/20/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 25593bc4d136e403c7ba87e044c95f4fae1e7db9
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351667"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558379"
 ---
-# <a name="configure-eligibility-rules-and-options"></a>Konfigurera berättiganderegler och alternativ
+# <a name="configure-eligibility-rules-and-options"></a>Konfigurera regler och alternativ för berättigande 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-När du har konfigurerat de nödvändiga parametrarna för förmånshantering i Microsoft Dynamics 365 Human Resources kan du skapa berättiganderegler, buntar, perioder och program som du vill associera med dina förmånsplaner.
+När du har konfigurerat de nödvändiga parametrarna för förmånshantering kan du skapa berättiganderegler, buntar, perioder och program som du vill associera med dina förmånsplaner.
+
+Berättiganderegler används för att fastställa om en medarbetare är berättigad till en plan. Medarbetare måste uppfylla villkoret om minst en regel för att kunna anses vara berättigade till förmånen. Du har till exempel två regler för en plan. Den första regeln (rad 1) anger att medarbetartypen måste vara **medarbetare**. Den andra regeln (rad 2) anger att medarbetartypen måste vara heltidsanställd. Därför är medarbetare som uppfyller regel 1 berättigade även om de bara är deltid anställda.
+
+Du kan dock skapa en enda regel som har flera villkor. I detta fall måste anställda uppfylla alla villkor i regeln för att anses vara berättigade till förmånen Du har till exempel en regel som kallas **Heltidsanställd**. Den här regeln anger att medarbetartypen **Medarbetare** *och* medarbetaren måste vara anställd heltid. Därför måste medarbetarna uppfylla båda villkoren i regeln för att vara berättigade.
+
+> [!IMPORTANT]
+> Minst en berättiganderegel måste kopplas till varje förmånsplan. Du kan associera flera regler med en förmån.
 
 ## <a name="create-an-eligibility-rule"></a>Skapa en berättiganderegel
 
@@ -72,7 +79,7 @@ Medarbetarna kan välja förmånsplaner under den öppna anmälan. Om de är ol�
    | **Berättigad befattningstyp** | Anger den befattningstyp eller de befattningstyper som uppfyller berättiganderegeln. Till exempel heltid. |
    | **Berättigad delstat** | Anger de stater eller provinser som uppfyller berättiganderegeln. Till exempel North Dakota USA eller British Columbia, Kanada. |
    | **Berättigande anställningsvillkor** | Anger de anställningsvillkor som uppfyller berättiganderegeln. Till exempel provanställning eller gruppavtal. |
-   | **Berättigad fackförening** | Anger det fackföreningsmedlemskap som uppfyller berättiganderegeln. Till exempel gaffeltruckförare i USA. </br></br>När du använder en fackföreningsbaserad berättiganderegel måste medarbetarens fackföreningspost ha slutdatumet ifyllt. Du kan inte lämna det tomt. |
+   | **Berättigad fackförening** | Anger det fackföreningsmedlemskap som uppfyller berättiganderegeln. Till exempel gaffeltruckförare i USA.</br></br>När du använder en fackföreningsbaserad berättiganderegel måste medarbetarens fackföreningspost ha slutdatumet ifyllt. Du kan inte lämna det tomt. |
    | **Berättigat postnummer** | Anger de postnummer som uppfyller berättiganderegeln. Exempelvis 58104. |
 
 5. Under **ytterligare detaljer** kan du visa följande ytterligare information.

@@ -4,24 +4,16 @@ description: I det här avsnittet beskrivs integreringen av redovisning mellan F
 author: robinarh
 ms.date: 09/06/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: rhaertle
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 5fedcbcd8db2692214ea66b2fbab9f7381e0a622
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9e6e65b2b8ec8241bc2082b30ae641692c31afdd
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748527"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542671"
 ---
 # <a name="integrated-ledger"></a>Integrerad redovisning
 
@@ -29,63 +21,26 @@ ms.locfileid: "5748527"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
 I ett affärsprogram definierar redovisningsdata den kärna som är inställd för hur ett företag gör affärer. Redovisningsdata beskriver t.ex. räkenskapsåret som företaget följer, de valutor det använder och vilka konton det använder. I det här avsnittet beskrivs integrationen av dessa grundläggande ekonomiska data.
 
 ## <a name="templates"></a>Mallar
 
 Redovisningsdata inkluderar en samling tabellmappningar för grundläggande ekonomiska som fungerar tillsammans under kunddatainteraktion, som visas i följande tabell.
 
-Finance and Operations-appar      | Modellstyrda appar i Dynamics 365 | beskrivning
+Finance and Operations-appar | Kundengagemangsappar     | beskrivning
 ---------------------------------|----------------------------------|------------
-Valutor                       | transactioncurrencies            |
-FiscalCalendar                   | msdyn\_fiscalcalendars        |
-FiscalCalendarYear               | msdyn\_fiscalcalendaryears        |
-ExchRateType                     | msdyn\_exchangeratetypes        |
-ExchangeRateCurrencyPair         | msdyn\_currencyexchangeratepairs        |
-FiscalPeriodEntity               | msdyn\_fiscalcalendarperiods        |
-MainAccountCategory              | msdyn\_mainaccountcategory        |
-MainAccount                      | msdyn\_mainaccounts        |
-Redovisning                           | msdyn\_ledgers        |
-ExchangeRates                    | msdyn\_currencyexchangerates        |
-FinancialCalendarPeriod          | msdyn\_fiscalcalendarperiods        |
-DimensionAttributeEntity         | msdyn\_dimensionattributes        |
-DimensionIntegrationFormatEntity | msdyn\_financialdimensionformats        |
-LedgerChartOfAccounts            | msdyn\_chartofaccounts        |
-
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/Currencies-transactioncurrencies.md)]
-
-[!include [Fiscal calendar](includes/FiscalCalendar-msdyn-fiscalcalendars.md)]
-
-[!include [Fiscal calendar year](includes/FiscalCalendarYear-msdyn-fiscalcalendaryears.md)]
-
-[!include [Exchange rate types](includes/ExchRateType-msdyn-exchangeratetypes.md)]
-
-[!include [Exchange rate pair](includes/ExchangeRateCurrencyPair-msdyn-currencyexchangeratepairs.md)]
-
-[!include [Main account category](includes/MainAccountCategory-msdyn-mainaccountcategory.md)]
-
-[!include [Main account](includes/MainAccount-msdyn-mainaccounts.md)]
-
-[!include [Ledger](includes/Ledger-msdyn-ledgers.md)]
-
-[!include [Exchange rates](includes/ExchangeRates-msdyn-currencyexchangerates.md)]
-
-[!include [Financial Calendar Period](includes/FiscalPeriodEntity-msdyn-fiscalcalendarperiods.md)]
-
-[!include [Dimension attribute](includes/DimensionAttributeEntity-msdyn-dimensionattributes.md)]
-
-[!include [Dimension integration format](includes/DimensionIntegrationFormatEntity-msdyn-financialdimensionformats.md)]
-
-[!include [Chart Of Account](includes/LedgerChartOfAccounts-msdyn-chartofaccounts.md)]
-
-
-
-
-
+[Valutakurser för CDS](mapping-reference.md#123) | msdyn_currencyexchangerates |
+[Kontoplan](mapping-reference.md#121) | msdyn_chartofaccountses |
+[Valutor](mapping-reference.md#218) | transactioncurrencies |
+[Valutapar för valutakurs](mapping-reference.md#122) | msdyn_currencyexchangeratepairs |
+[Valutakurstyp](mapping-reference.md#129) | msdyn_exchangeratetypes |
+[Format för ekonomisk dimension](mapping-reference.md#130) | msdyn_financialdimensionformats |
+[Ekonomiska dimensioner](mapping-reference.md#128) | msdyn_dimensionattributes |
+[Integrationsenhet för räkenskapskalender](mapping-reference.md#132) | msdyn_fiscalcalendars |
+[Period i räkenskapskalender](mapping-reference.md#131) | msdyn_fiscalcalendarperiods |
+[Integrationsenhet för räkenskapskalenderår](mapping-reference.md#133) | msdyn_fiscalcalendaryears |
+[Ledger](mapping-reference.md#148) | msdyn_ledgers |
+[Huvudkonto](mapping-reference.md#152) | msdyn_mainaccounts |
+[Huvudkontokategorier](mapping-reference.md#151) | msdyn_mainaccountcategories |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

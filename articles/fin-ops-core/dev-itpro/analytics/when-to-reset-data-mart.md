@@ -2,7 +2,7 @@
 title: Vanliga frågor om återställ datatorg
 description: Det här avsnittet innehåller svar på vanliga frågor om återställ datatorg.
 author: jinniew
-ms.date: 06/09/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7cd96c7bc698986ef1ef07ca88479a3d49f22924
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: 90abe1fc3e84e0a9777f3eabd790a4b7e9b509c5
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266619"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638277"
 ---
 # <a name="data-mart-resets-faq"></a>Vanliga frågor om återställ datatorg
 
@@ -37,6 +37,9 @@ Om ett eller flera av följande gäller i din situation kan din organisation dra
 
 - Återställdes programdatabasen.
 - Du har öppnat en supportbegäran och en supporttekniker har uppmanat dig att återställa datatorg som ett del av ett felsökningssteg.
+ 
+> [!NOTE]
+> Processen för att återställa data påverkas av antalet redovisnings- och budgettransaktioner i databasen. Beroende på antalet transaktioner i ditt system kan en data-reset slutföras om bara 15 minuter eller så kan den ta upp till fyra timmar. Om återställningen tar längre än fyra timmar rekommenderar vi dock att du kontaktar Support.
  
 ## <a name="when-is-a-data-mart-reset-inappropriate"></a>När är återställa en datatorg inte lämpligt?
 

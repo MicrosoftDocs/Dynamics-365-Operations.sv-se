@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d7bba084b03f8698c8bf31d171d5e4e486ed06ad
-ms.sourcegitcommit: a7649b361ec54b49c0e9ee1c1c63a8815f320225
+ms.openlocfilehash: 93e8f933524b34116987c9e0d91d226e21d98f4d
+ms.sourcegitcommit: 5c9a5bfef507ed36f0f849ab56fa0aa8abb78d54
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187257"
+ms.lasthandoff: 07/20/2021
+ms.locfileid: "6646497"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Visa planhistorik och planeringsloggar
 
@@ -34,6 +34,19 @@ Om du vill visa historiken för en plan öppnar du planen genom att gå till **h
 Jobbhistoriken i huvudplaneringskörningarna för planeringsoptimeraren innehåller bara upp till 60 poster per huvudplan. När du kör en ny huvudplaneringsberäkning tas den planens tidigaste historikpost bort.
 
 Förutom att visa starttid och status för jobb kan du visa loggen för ett specifikt jobb. Loggen innehåller ytterligare information och varningar. Alla jobb har inte en logg. Om du vill visa loggen för ett jobb väljer du **logg**. Loggposter lagras bara i 30 dagar efter det datum då jobbet avslutades, efter det att de raderas automatiskt.
+
+Om alternativet **batchbearbetning** på snabbfliken **Kör i bakgrunden** var aktiverat när huvudplaneringsbearbetningen skapades, visar batchjobbloggen mer information om eventuella varningar och fel som genererades under huvudplaneringskörningen. Till exempel fångas automatiskt bekräftande fel bara i batchjobbloggen. De visas inte i loggar på sidan **historik**.
+
+Gör på följande sätt om du vill visa automatiskt bekräftande fel och andra varningar eller fel som uppstod under en huvudplaneringskörning.
+
+1. Gå till **Systemadministration \> Förfrågningar \> Batchjobb**.
+1. Sök och välj den post som representerar den huvudplaneringskörning som du är intresserad av. (Exempelvis värdet av fältet **Jobbeskrivning** kan börja med *Huvudplanering*.)
+1. Följ ett av dessa steg, beroende på om du använder *förbättrat formulär* eller *äldre (ej förbättrat) formulär* för sidorna **Batch-jobb**:
+
+    - Om du använder det förbättrade formuläret: Välj **batchjobbhistorik** i åtgärdsfönstret. På sidan **Batchjobbhistorik** i åtgärdsfönstret, välj **Logg**.
+    - Om du använder det äldre formuläret i åtgärdsfönstret, på fliken **Batch-jobb**, välj **Logg**.
+
+1. Välj **Meddelandeinformation** om du vill öppna fönstret **Meddelandeinformation** där du kan visa alla varningar och fel som har samlats in under bearbetningen.
 
 ## <a name="related-resources"></a>Relaterade resurser
 

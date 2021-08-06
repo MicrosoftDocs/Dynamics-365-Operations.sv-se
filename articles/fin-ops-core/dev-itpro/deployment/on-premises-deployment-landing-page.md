@@ -2,7 +2,7 @@
 title: Lokal distribution – startsida
 description: Det här avsnittet innehåller information och länkar till innehåll om lokal distribution.
 author: sericks007
-ms.date: 03/22/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: ef19a154b4e18246c88adea48ee2709af17f039f
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: f5ecc71326892683e0a49685262aae0db4a49ea9
+ms.sourcegitcommit: 41a5d18552bcc94cb1ddbbe3f3278eaf9d05f418
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338940"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "6617080"
 ---
 # <a name="on-premises-deployment-home-page"></a>Lokal distribution – startsida
 
@@ -33,6 +33,7 @@ Du kan distribuera Dynamics 365 Finance + Operations (lokal). När du väljer en
 - [Lokal distribution – översikt](on-premises-overview.md)
 - [Planera och förbereda för lokala distributioner](plan-onprem-deployment.md)
 - [Systemkrav för lokala distributioner](../../fin-ops/get-started/system-requirements-on-prem.md)
+- [Programvara som stöds av Microsoft Dynamics 365 Finance + Operations (lokal)](onprem-compatibility.md)
 - [Krav för beräkning av maskinvara för lokala miljöer](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Köp Finance + Operations (on-premises)](../../fin-ops/get-started/purchase-on-premises.md)
 - [Jämförelse mellan funktioner i molnet och lokalt](../../fin-ops/get-started/cloud-prem-comparison.md)

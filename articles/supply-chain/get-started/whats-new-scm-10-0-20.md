@@ -1,5 +1,5 @@
 ---
-title: Förhandsversion av Dynamics 365 Supply Chain Management 10.0.20 (augusti 2021)
+title: Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.20 augusti 2021
 description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.20.
 author: kamaybac
 ms.date: 05/28/2021
@@ -10,30 +10,28 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a782416bdb12a8ac7f1ba807452ca54072af3ab5
-ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
+ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
+ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6301756"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6641066"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10020-august-2021"></a>Förhandsversion av Dynamics 365 Supply Chain Management 10.0.20 (augusti 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.20 augusti 2021
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management förhandsversion 10.0.20. Den här versionen har ett versionsnummer för 10.0.886 och är tillgänglig enligt följande:
+Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management version 10.0.20. Den här versionen har ett versionsnummer för 10.0.886 och är tillgänglig enligt följande:
 
 - **Förhandsversion:** maj 2021
 - **Allmän tillgänglighet för version (självuppdatering):** juli 2021
 - **Allmän tillgänglighet för frisläppning (automatisk uppdatering):** augusti 2021
 
-
 ## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
 
 Följande register lista de funktioner som ingår i denna version: Kolumnen *Funktion* innehåller länkar till [versionsplanen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), där du kan se de officiella frisläppningsdatumen för respektive funktion. Kolumnen *Mer information* innehåller mer information och/eller länkar till relaterad dokumentation.
 
-De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem. Vissa av funktionerna visas fortfarande i en förhandsversion, men andra användare kan redan vara tillgängliga i allmänhet.
+De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
 
 | Funktionsområde | Funktion | Mer information |
 |---|---|---|
@@ -49,7 +47,7 @@ Följande register lista de funktionsförbättringar som ingår i denna version:
 
 | Funktionsområde | Funktionsnamn&nbsp;&nbsp;i&nbsp;funktionshantering | Mer information |
 |---|---|---|
-| Huvudplanering | Negativa dagar för planeringsoptimering | Denna förhandsgranskningsfunktion gör det möjligt för Planeringsoptimering att överväga fördröjningstolerans baserat på parametern **Negativa dagar** som definierats i disponeringsgrupper. |
+| Huvudplanering | Negativa dagar för planeringsoptimering | Denna funktion gör det möjligt för Planeringsoptimering att överväga fördröjningstolerans baserat på parametern **Negativa dagar** som definierats i disponeringsgrupper. |
 | Huvudplanering | Parallell auktorisering av justerad efterfrågeprognos | Med den här funktionen kan du parallellt skapa justerad efterfrågeprognos från sidan **Justerad efterfrågeprognos**. Syftet med funktionen är att öka prestanda när ett stort antal prognoser godkänns. Vid auktorisering kan användaren ange **Antal trådar** i dialogrutan för godkänna. |
 | Huvudplanering | (Förhandsversion) Batchbar bekräftelse och konsolidering för planerade bulk- och paketbatchorder | Den här funktionen gör det möjligt att använda batchjobb för att bekräfta och konsolidera planerade bulk- och paketorder. |
 | Produktionskontroll | Kopiera allmänna flöden | Med den här funktionen utökas kopieringsflödesfunktionen så att användarna kan kopiera flöden som inte är artikelspecifika. Det gör att systemet kan uppdatera all relevant information (till exempel plats, flödesgrupp, resursbehov och olika tider) när funktionen för kopiering av flöde har använts för att skriva över ett flöde som ännu inte tilldelats en artikel. |
@@ -75,7 +73,7 @@ Följande hjälpavsnitt har nyligen lagts till eller uppdaterats väsentligt. De
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdateringar för Finance and Operations-appar
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.20 inkluderar plattformsuppdateringar. Mer information finns i [plattformsuppdateringar för version 10.0.20 av Finance and Operations appar (juli 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.20 inkluderar plattformsuppdateringar. Mer information finns i [plattformsuppdateringar för version 10.0.20 av Finance and Operations appar (juli 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
 

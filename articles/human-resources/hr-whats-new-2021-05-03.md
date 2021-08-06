@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-05-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4fd0d0d39d19634498f9313aeda4143f9ec81e8f
-ms.sourcegitcommit: f3c28f57d997e824a64485d9a4ce8f198e3bcf23
+ms.openlocfilehash: 8cee60750d3c451024466109acbdc5924074a11f
+ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059639"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6559970"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-3-2021"></a>Nyheter och ändringar i Dynamics 365 Human Resources 3 maj 2021
 
@@ -65,7 +65,7 @@ Följande nya funktioner är i förhandsgranskning. Mer information om hur du ak
 | Arbetsyta för förmånshantering | [Arbetsyta för hantering av förmåner (förhandsversion)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Arbetsyta för förmånshantering](hr-benefits-management-workspace.md) |
 | Förbättringar av arbetsflödesupplevelse för tjänstledighet och frånvaro | [Förbättringar av arbetsflödesupplevelse för tjänstledighet och frånvaro](https://go.microsoft.com/fwlink/?linkid=2147528) | [Begära ledig tid](hr-employee-self-service-request-time-off.md)|
 | Aktivera förenklad löneintegrering (löneintegrerings-API:er) | [Aktivera förenklad integrering löneleverantörer](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Löneintegration-API](hr-admin-integration-payroll-api-introduction.md)|
-| Granskning av periodiseringstransaktion för tjänstledighet | - | [Granskning av periodiseringstransaktion för tjänstledighet](hr-leave-and-absence-accrue.md#preview-leave-accrual-transaction-auditing)|
+| Granskning av periodiseringstransaktion för tjänstledighet | - | [Granskning av periodiseringstransaktion för tjänstledighet](hr-leave-and-absence-accrue.md)|
 
 ## <a name="coming-soon"></a>Kommer snart
 

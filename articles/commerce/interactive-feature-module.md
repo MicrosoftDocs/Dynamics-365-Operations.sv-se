@@ -15,17 +15,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a01fb446a1b7dd07e0429b96ff949b88a591f800
-ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
+ms.openlocfilehash: b1d00b9173fd1d5faee71e0fec6c9d1546989e41
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "6479542"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638864"
 ---
 # <a name="interactive-feature-module"></a>Interaktiv funktionsmodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Detta ämne innehåller interaktiva funktionsmoduler och beskriver hur du lägger till dem på webbsidor i Microsoft Dynamics 365 Commerce.
 

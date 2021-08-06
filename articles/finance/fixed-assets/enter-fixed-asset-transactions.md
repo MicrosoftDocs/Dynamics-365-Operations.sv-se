@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3540cf17050a953a97c7291a1bcbe5ebf6fb670e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2f9cd8846688e6b70f3ac2034caa1a9e3015355e
+ms.sourcegitcommit: f9b40df70a77136529fbc790325ed657eb203731
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815726"
+ms.lasthandoff: 07/20/2021
+ms.locfileid: "6645382"
 ---
 # <a name="fixed-asset-transaction-options"></a>Alternativ för transaktion för anläggningstillgång
 
@@ -46,7 +46,7 @@ När inköpsorderjournalen eller journalen för lager till anläggningstillgång
 ## <a name="general-ledger"></a>Huvudbok
 Alla transaktionstyper för anläggningstillgångar kan bokföras på sidan Allmän journal. Du kan också använda journaler i Anläggningstillgångar för att bokföra transaktioner för anläggningstillgångar.
 
-## <a name="options-for-entering-fixed-asset-transaction-types"></a>Alternativ för att ange transaktionstyper för anläggningstillgångar
+### <a name="options-for-entering-fixed-asset-transaction-types"></a>Alternativ för att ange transaktionstyper för anläggningstillgångar
 
 
 | transaktionstyp                    | Modul                   | Alternativ                                   |
@@ -61,10 +61,20 @@ Alla transaktionstyper för anläggningstillgångar kan bokföras på sidan Allm
 | ** **                               | Huvudbok           | Allmän journal                           |
 | ** **                               | Kundreskontra      | Fritextfaktura                         |
 
-
 Avskrivningsperiodernas återstående värde av anläggningstillgången uppdateras inte när en journalrad för avskrivningstransaktionstyp skapas manuellt eller importeras via en datatabell. Detta värde uppdateras när avskrivningsförslagsprocessen används till att skapa journalraden.
 
 Mer information finns i [Integrering av anläggningstillgångar](fixed-asset-integration.md).
 
+### <a name="transactions-that-require-different-voucher-numbers"></a>Transaktioner som kräver olika verifikationsnummer
+
+Följande transaktioner för anläggningstillgångar kommer att använda olika verifikationsnummer:
+
+- Ett ytterligare förvärv görs på en tillgång och "catch-up”-avskrivning beräknas.
+- En tillgång delas upp.
+- En parameter för att beräkna avskrivning vid avyttring aktiveras och sedan avyttras tillgången.
+- En tillgångs servicedatum infaller före anskaffningsdatumet. Dörför bokförs en avskrivningsjustering.
+
+> [!NOTE]
+> När du registrerar transaktioner ska du se till att alla transaktionerna gäller för samma anläggningstillgång. Verifikationen bokförs inte om den innehåller fler än en anläggningstillgång, även om fältet **Ny verifikation** anges till bara **Ett verifikationsnummer** på sidan **Journalnamn** i redovisningen. Om du inkluderar fler än en anläggningstillgång i verifikationen kan meddelandet Den kan bara finnas en transaktion för anläggningstillgång per verifikation och du kan inte bokföra verifikationen.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

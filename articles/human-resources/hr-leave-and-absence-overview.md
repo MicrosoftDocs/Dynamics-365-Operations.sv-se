@@ -2,7 +2,7 @@
 title: Översikt över tjänstledighet och frånvaro
 description: I Dynamics 365 Human Resources är arbetsytan tjänstledighet och frånvaro en flexibel struktur för att skapa nya tjänstledighetsplaner. Den innehåller också arbetsflöden för hantering av förfrågningar och en intuitiv sida för självbetjäningstjänster för medarbetare som ber om ledighet.
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b41838b447dcbffc656ab759fcc4746abb620661
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 7a3c305910f41ebd775292dee91a6044c2cdb244
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339725"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639496"
 ---
 # <a name="leave-and-absence-overview"></a>Översikt över tjänstledighet och frånvaro
 
@@ -34,7 +34,8 @@ Innan du kan skapa tjänstledighetsplaner för dina medarbetare måste du göra 
 
 - [Konfigurera tjänstledighets- och frånvaroparametrar](hr-leave-and-absence-parameters.md)
 - [Skapa en arbetstidskalender](hr-leave-and-absence-working-time-calendar.md)
-- [Skapa en ledighetsansökan till arbetsflödet](hr-leave-and-absence-workflow.md)
+- [Skapa ett arbetsflöde för ledighetsansökan](hr-leave-and-absence-workflow.md)
+- [Konfigurera rollen för frånvarochefen](hr-configure-absence-manager.md)
 
 ## <a name="create-and-manage-leave-plans"></a>Skapa och hantera tjänstledighetsplaner
 
@@ -50,8 +51,9 @@ Innan du skapar tjänstledighetsplaner för dina arbetare måste du skapa tjäns
 
 Dina medarbetare kan skicka ledighetsansökningar och du kan hantera dem på arbetsytan **medarbetarens självbetjäning**.
 
-[Begär ledig tid](hr-employee-self-service-request-time-off.md)
-[Hantera begäranden om ledighet och frånvaro](hr-employee-self-service-manage-requests.md)
+- [Begära ledig tid](hr-employee-self-service-request-time-off.md)
+- [Hantera begäranden om ledighet och frånvaro](hr-employee-self-service-manage-requests.md)
+- [Konfigurera rollen för frånvarochefen](hr-configure-absence-manager.md)
 
 
 

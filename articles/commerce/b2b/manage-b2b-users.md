@@ -2,24 +2,24 @@
 title: Hantera affärspartnersanvändare på B2B-näthandelssajter
 description: I detta ämne beskrivs hur administratörer kan lägga till, redigera och ta bort affärspartners på B2B-näthandelssajter.
 author: josaw1
-ms.date: 01/20/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailOperations
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: v-chgri
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6beee4cc4c0dd36f49a38ee49a1a23ad9b513360
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 88f613be59a0c7b0d5efcdc0bef2c5a54506f9eb
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936666"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655616"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Hantera affärspartnersanvändare på B2B-näthandelssajter
 
@@ -67,7 +67,7 @@ Om du vill godkänna och ställa in en administratörsanvändare för en affärs
 
 1. Gå till **IT för Retail and Commerce \> Distributionsschema** och kör jobbet **1010** (**Kunder**) för att förflytta de nya kund- och kundhierarkiposterna till kanaldatabasen.
 
-När en begäran har godkänts och kund- och kundhierarkiposterna har synkroniserats med kanaldatabasen kan begäranden logga in på B2B-näthandelssajten med den e-postadress som han eller hon angav när han/hon skickade begäran. Användarna kan använda inloggningsflödet för att definiera lösenordet för sitt konto.
+När en begäran har godkänts och kund- och kundhierarkiposterna har synkroniserats med kanaldatabasen kan begäranden logga in på B2B-näthandelssajten med den e-postadress som han eller hon angav när han/hon skickade begäran. Användarna kan använda inloggningsflödet för att definiera lösenordet för sitt konto. Om du vill aktivera identitetsprovider (Azure AD B2C) post som ska länkas till B2B-kundposten som skapades vid registrering eller inloggning, följ instruktionerna i [Aktivera automatisk länkning av identitetsposter till kundkonton](../identity-record-linking.md).
 
 ## <a name="onboard-additional-business-partner-users"></a>Registrera fler affärspartneranvändare
 
@@ -83,7 +83,7 @@ Följ de här stegen om du vill registrera fler affärspartneranvändare till en
 
 1. Kör jobbey **1010** (**Kunder**) om du vill synkronisera den nye affärspartneranvändaren med kanaldatabasen.
 
-När kundposten synkroniseras får statusvärdet för användaren på B2B-näthandelssajten värdet **Aktiv**, och den nye användaren kan sedan logga in på B2B-näthandelssajten med sin e-postadress. Användarna kan använda inloggningsflödet för att definiera lösenordet för sitt konto.
+När kundposten synkroniseras får statusvärdet för användaren på B2B-näthandelssajten värdet **Aktiv**, och den nye användaren kan sedan logga in på B2B-näthandelssajten med sin e-postadress. Användarna kan använda inloggningsflödet för att definiera lösenordet för sitt konto. Om du vill aktivera identitetsprovider (Azure AD B2C) post som ska länkas till B2B-kundposten som skapades vid registrering eller inloggning, följ instruktionerna i [Aktivera automatisk länkning av identitetsposter till kundkonton](../identity-record-linking.md).
 
 ## <a name="edit-business-partner-user-details"></a>Redigera användarinformation för affärspartner
 

@@ -2,7 +2,7 @@
 title: Hantera tjänstledighet för medarbetare
 description: Hantera tjänstledighet för medarbetare i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 33080fc5ca43f3d83ee9d17565f4c229ced7b94f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: c161e324a1ebe5b30c95d6d3e0468da671a7c2de
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055638"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639472"
 ---
 # <a name="manage-employee-leave"></a>Hantera tjänstledighet för medarbetare
 
@@ -44,12 +44,11 @@ Du kan hantera en medarbetares tjänstledighet efter ledighetstyp. Det inkludera
 
 Du kan inkludera en orsakskod och en kommentar när du justerar en medarbetares tjänstledighetssaldo. 
 
->[!IMPORTANT]
->Visa mer information om att lämna saldon är i förhandsgranskning. Du måste aktivera den i **sandbox-miljön**. Mer information om att aktivera förhandsfunktioner finns i [Hantera funktioner](hr-admin-manage-features.md).<br>
->När du hovrar över en tjänstledighet visas nu:<br>
->- **Tillgänglig**: totalt under året – ta detta år
->- **Total i år**: alla periodiseringar, justeringar och överföringar för året
->- **Taget i år**: alla godkända ledigheter
+När du nu hovrar över ett tjänstledighetssaldo visas följande information:
+
+- **Tillgänglig** – Värdet **Totalt i år** minus värdet **Uttaget detta år**.
+- **Total i år** – alla periodiseringar, justeringar och överföringar för året.
+- **Taget i år** – alla godkända ledigheter.
 
 ## <a name="see-also"></a>Se även
 

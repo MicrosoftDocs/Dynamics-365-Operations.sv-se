@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2694f48b295ba727870f068e7062f7cdcababdbe
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a0a14c87af7f0d2372d752233f21d9accbca58a8
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350798"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542525"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Felsöka problem med direkt synkronisering
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
-
 
 Det här avsnittet innehåller felsökningsinformation för integrering av dubbelriktad skrivning mellan Finance and Operations-appar och Dataverse. Särskilt ger den information som kan hjälpa dig att åtgärda problem med direkt synkronisering.
 
@@ -81,7 +79,7 @@ För att åtgärda problemet måste du tilldela rätt säkerhetsroll till teamet
 
     ![Organisationsmappning.](media/mapped_business_unit.png)
 
-2. Logga in på miljön i den modellstyrda appen i Dynamics 365, gå till **Inställningar \> Säkerhet** och hitta teamet för den mappade affärsenheten.
+2. Logga in på miljön i kundengagemangsappen, gå till **Inställningar \> Säkerhet** och hitta teamet för den mappade affärsenheten.
 
     ![Team av den mappade affärsenheten.](media/setting_security_page.png)
 
@@ -99,7 +97,7 @@ Följande felmeddelande kan visas när du skapar data i en Finance and Operation
 
 *{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Det gick inte att generera nyttolast för entiteten CustCustomerV3Entity**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Skapande av nyttolast misslyckades med fel URI: URI är tom."}\],"isErrorCountUpdated":true}*
 
-Så här ser felet ut i den modellstyrda appen i Dynamics 365:
+Här är hur felet ser ut i appen kundengagemangsappen:
 
 *Ett oväntat fel uppstod från ISV-koden. (ErrorType = ClientError) Oväntat undantag från plugin-programmet (kör): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: misslyckades att bearbeta ett entitetskonto - (Ett anslutningsförsök misslyckades eftersom den anslutna parten inte svarade ordentligt efter en tidsperiod, eller upprättad anslutning misslyckades eftersom ansluten värd inte har svarat*
 
@@ -125,6 +123,5 @@ Gör så här om du vill åtgärda problemet.
 
 3. Kontrollera att kolumnen **externalenvironmentURL** har korrekt Dataverse eller app URL. Radera alla dubblettrader som pekar på fel Dataverse URL. Ta bort motsvarande rader i tabellerna DUALWRITEPROJECTFIELDCONFIGURATION och DUALWRITEPROJECTCONFIGURATION.
 4. Stoppa tabellmappningen och starta sedan om den
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

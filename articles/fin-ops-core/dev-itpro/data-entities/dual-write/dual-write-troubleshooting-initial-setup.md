@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e7316d7749566b74835acded0addb2fa4b0e858
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350846"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542425"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Felsöka problem under första installationen
 
@@ -71,7 +71,7 @@ Följ dessa steg för att ge appen samtycke.
 
 För att säkerställa att dubbelriktad skrivning fungerar korrekt skapas de företag som du väljer under konfigurationen i Dataverse-miljön. Som standard är dessa företag skrivskyddade och egenskapen **IsDualWriteEnable** är inställd på **Sant**. Dessutom skapas standardägaren och teamet för den ägande affärsenheten och teamet och inkluderar företagsnamnet. Innan du aktiverar kartorna kontrollerar du att standardteamets ägare har angetts. För att hitta tabellen **företag (CDM\_företag)** följer du stegen nedan.
 
-1. I den modellstyrda appen i Dynamics 365 väljer du filtret i det övre högra hörnet.
+1. Välj filtret i det övre högra hörnet i programmet för kundengagemangsappen.
 2. Välj **Företag** i listrutan.
 3. Välj **Kör** om du vill visa resultatet.
 4. Välj det företag som länkades när du konfigurerade dubbelskrivning.

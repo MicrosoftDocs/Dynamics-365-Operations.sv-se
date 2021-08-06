@@ -2,7 +2,7 @@
 title: Konfigurera berättigandealternativ för personlig kontakt
 description: Konfigurera berättigande alternativ för personliga kontakter i Microsoft Dynamics 365 Human Resources. Personliga kontakter kan vara mottagare eller beroende.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d85677973f67f0c68de6c5ede62c142524939833
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 071523e2a1e9de6f0ed2b77e4ad6802efb0073f7
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054414"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558259"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>Konfigurera berättigandealternativ för personlig kontakt
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I den här artikeln beskrivs hur du konfigurerar olika typer av personliga kontakter att använda i förmåner i Microsoft Dynamics 365 Human Resources. Personliga kontakter kan vara mottagare eller beroende. 
+Det här ämnet förklarar hur du konfigurerar de typer av personliga kontakter som kan användas i förmåner i Microsoft Dynamics 365 Human Resources. Personliga kontakter är de personer som omfattas av dina planer (beroende) eller som kan dra fördel av dina planer (förmåner). Beroende är vanligtvis make/maka eller barn. Det kan vara make/maka, barn, förtroenden eller underhålls.
 
 1. I arbetsytan **olämplig** under **inställningar**, välj **Berättigandealternativ för personlig kontakt**.
 

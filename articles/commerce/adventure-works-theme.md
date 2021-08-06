@@ -2,7 +2,7 @@
 title: Temaöversikt för Adventure Works
 description: Detta ämne innehåller en översikt över Adventure Works-temat och en beskrivning av hur det tillämpas på webbplatssidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 07/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,36 +14,48 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c7557a36a948de5ae877d74bbbdea78821099b82
-ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
+ms.openlocfilehash: c8183d09e15f83606d84fddd02cb2dfb9b2fb528
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "6479537"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655642"
 ---
 # <a name="adventure-works-theme-overview"></a>Temaöversikt för Adventure Works
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Detta ämne innehåller en översikt över Adventure Works-temat och en beskrivning av hur det tillämpas på webbplatssidorna i Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce har ett tema för näthandel som kallas Adventure Works. Adventure Works-temat framhäver sport- och fritidsprodukter och är optimerat för en innehållsrik och förbättrad berättandeupplevelse. Det ger ett modernt utseende, nya layouter och animationseffekter när du vill skapa en uppslukande, djup shoppingupplevelse online för näthandelskunder.
 
-Temat Adventure Works ger följande nya arbetsflöden:
+## <a name="trial-environments-in-commerce"></a>Utvärderingsmiljöer i Commerce
+
+Om du vill se hur Adventure Works-tema ser ut när det distribueras för B2C (Business-to-consumer) och B2B-webbplatser (business-to-business) besöker du följande utvärderingssidor:
+
+- [Adventure Works B2C-webbplats](https://www.adventure-works.com/)
+- [Adventure Works B2B-webbplats](https://www.adventure-works.com/business)
+
+## <a name="theme-capabilities"></a>Tema-funktioner
+
+Temat Adventure Works ger följande nya funktioner:
 
 - Videospelarmodulen stöder nu rubrik-, styckes- och länkfunktioner för ytterligare berättande.
+- Det finns bättre innehållsomställning genom animeringen.
 - Åtgärden Lägg till i kundvagnen anropar minikundvagnen istället för att ange ett meddelande.
 - Snabbvisningsmodulen är ett fönster som används i såväl stationära som mobila vyer.
-- En tom kundvagn kan nu demonstrera kampanjerbjudanden.
+- Det finns nya layouter för webbplatssidorna. 
+- Marknadsföringsinnehåll kan konfigureras för vagnen och minivagnen när de är tomma.
+- I vagnen kan du visa kampanjmeddelanden som "Gratis frakt på order över $50."
+- Beskrivningskort visas på sök- och kategorisidor.
 
 Temat Adventure Works innehåller följande moduler i modulbiblioteket i Commerce:
 
-- Panellistmodul
-- Interaktiv funktionsmodul
-- Prenumerationsmodul
-- Aktiv bildmodul
-- Bildlistmodul
+- [Panellistemodul](tile-list-module.md)
+- [Interaktiv funktionsmodul](interactive-feature-module.md)
+- [Aktiv bildmodul](active-image-module.md)
+- [Prenumerationsmodul](subscribe-module.md)
+- [Bildlistemodul](image-list-module.md)
 
 Temat Adventure Works är ytterst responsivt och ger dig en optimerad upplevelsevy för datorer, mobiler och surfplattor.
 
@@ -78,11 +90,15 @@ På samma sätt innefattar andra moduler moduldefinitionstillägg. [Modulen för
 
 Mer information om tematillägg finns i [Tematillägg](e-commerce-extensibility/theme-module-extensions.md).
 
+## <a name="install-the-adventure-works-theme"></a>Installera Adventure Works-tema
+
+Information om hur du installerar tema Adventure Works finns i [Installera temat Adventure Works](install-adventure-works.md).
+
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Modulbibliotek – översikt](starter-kit-overview.md)
 
-[Panellistmodul](tile-list-module.md)
+[Panellistemodul](tile-list-module.md)
 
 [Interaktiv funktionsmodul](interactive-feature-module.md)
 

@@ -2,7 +2,7 @@
 title: Förslag på uppsägning av leasingavtal
 description: I detta ämne beskrivs hur du föreslår ett leasingavtal för uppsägning.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6b32f9e8f80827e04269ac8cb6a4fbb5a13af8bc
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 003eaa3f9e5ad653daed2e973044f384972b0331
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881118"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638498"
 ---
 # <a name="propose-a-lease-for-termination"></a>Föreslå ett leasingavtal för uppsägning
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Om ett leasingavtal avslutas i förtid kan tillgångsleasingen registrera en journalpost för uppsägning för att skriva av leasingskulden, användanderättigheten (ROU) samt ackumulerad avskrivning, och registrera en vinst eller förlust. Processen för förtida uppsägning avslutar ett leasingavtal och dess associerade leasingböcker. Den säger inte upp enskilda leasingböcker. I detta ämne beskrivs de funktioner som gör att du kan föreslå ett leasingavtal för uppsägning och bearbeta journalposten för leasinguppsägningen.
 
@@ -103,7 +102,7 @@ I följande tabeller visas de värden som är inställda på flikarna **Allmänt
 | Tillgångens verkliga värde    | 600,000          |
 | Valuta                   | USD              |
 | Direkta utgifter       | 1 000            |
-| Marginell låneränta | 7 %               |
+| Marginell låneränta | 7%               |
 | Intervall för sammanslagning       | Årligen         |
 | Tillgångens livslängd (månader) | 600              |
 | Typ av annuitet               | Vanlig annuitet |

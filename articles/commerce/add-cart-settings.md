@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 55b81e7c644f884b052853206f312ac796031600
-ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
+ms.openlocfilehash: c1d29b84d79ab503580478a1553514ddf992ca46
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "6479538"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6637987"
 ---
 # <a name="apply-add-product-to-cart-settings"></a>Tillämpa inställningar för att lägga till produkt i kundvagnen
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Detta ämne handlar om inställningar för **Lägg till produkt i kundvagn** och beskriver hur du lägger till dem i Microsoft Dynamics 365 Commerce.
 

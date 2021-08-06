@@ -2,7 +2,7 @@
 title: Hantera ansökningar om ledighet i Teams
 description: I det här avsnittet beskrivs hur du begär ledighet i Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
-ms.date: 05/25/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2a74b895052d017ccbe397bfb9a45609646b2f93
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356522"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639448"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Hantera begäranden om ledighet i Teams
 
@@ -166,6 +166,10 @@ Om du har problem med att logga in på eller använda Teams-appen Dynamics 365 H
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Det går inte att logga in på Personal-appen i Teams
 
 Om du inte kan logga in i appen är det möjligt att det konto du använder för att logga in i Microsoft Teams inte är associerat med en medarbetarpost i Dynamics 365 Human Resources. Kontakta systemadministratören för att se till att din medarbetarpost är korrekt associerad.
+
+### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>Det går inte att hitta Dynamics 365 Human Resources-miljön i Inställningar
+
+Om du inte kan välja korrekt Dynamics 365-miljö kanske användarposten inte har synkroniserats korrekt. Kontakta systemadministratören om du vill skapa användarposten på nytt och koppla den till användarreferenserna. Försök sedan att logga in på Personal-programmet Microsoft Teams under några minuter.
 
 ### <a name="translations-dont-display-correctly"></a>Översättningarna visas inte korrekt
 

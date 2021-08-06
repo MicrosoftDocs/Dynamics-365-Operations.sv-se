@@ -1,8 +1,8 @@
 ---
 title: Överför delredovisning till redovisningen
-description: Det här ämnet beskriver funktionerna i Microsoft Dynamics 365 Finance som rör överföringsprocessen för delredovisningen i redovisningen.
-author: roschlom
-ms.date: 09/09/2019
+description: Det här ämnet beskriver funktionerna som rör överföringsprocessen för delredovisningen i redovisningen.
+author: rcarlson
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,30 +15,34 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 1efdf095e379b73d553ca3525abbeee8ca35bcbb
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: a2fdeaadc7453458f8fc7165664eccedee632f5f
+ms.sourcegitcommit: e9cf75545d55bfb2f37b2036df886128879a5b73
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897514"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "6646810"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Överför delredovisning till redovisningen
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs funktioner i Microsoft Dynamics 365 Finance som är relaterade till reglerna för överföring av delredovisningsjournalposter.
+I det här avsnittet beskrivs funktioner som är relaterade till reglerna för överföring av delredovisningsjournalposter.
 
 I version 8.1 gjordes ändringar för att tillåta överföring av regler, vilket föråldrade alternativet **Synkront**. Mer information finns i [borttagna eller gamla funktioner för Finance and Operations](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=%2fdynamics365%2ffinance%2ftoc.json#finance-and-operations-81-with-platform-update-20).
 
-Följande alternativ är tillgängliga för överföring av delredovisningsbatchar. 
+Följande alternativ är tillgängliga för överföring av delredovisningsbatchar:
 
- - Asynkron – det här alternativet schemalägger omedelbart överföringen av delredovisningstransaktionerna till redovisningen. Redovisningsverifikationen registreras så snart resurser är fria att bearbeta denna begäran på servern. 
+- **Asynkron** – Överför av delredovisningstransaktionerna till redovisningen schemaläggs omedelbart. Redovisningsverifikationen registreras så snart resurser är fria att bearbeta denna begäran på servern.
+- **Tidsplanerad batch** – Bokföringsposterna som måste överföras läggs till i behandlingskön i huvudbok. Posterna i kön bearbetas i den ordning de kommer in. Redovisningsverifikationen kommer att uppdatera kontona på den schemalagda tiden om resurser är fria att bearbeta detta batchjobb på servern.
 
-- Tidsplanerad batch – med det här alternativet läggs delredovisning poster för redovisningen till som överförs till bearbetningskön i redovisningen, där posterna kommer att bearbetas i inlevererade order. Redovisningsverifikationen registreras på den schemalagda tiden om resurser är fria att bearbeta detta batchjobb på servern. 
- 
-I version 10.0.8 har förbättringar gjorts för att förbättra prestanda för alternativet Asynkront. Den här funktionen aktiveras under funktionsnamnet **Prestandaoptimering för överföring av delredovisning till redovisning**. 
- 
-Den här funktionen gör det enklare att överföra data från delredovisningen till redovisningen. Det gör att processen blir effektivare och grupper av mindre transaktioner som kan överföras till varandra. På så sätt kan du använda batch-servern mer effektivt. Denna funktion kräver att batch-servern ställs in online och fungerar för att det asynkrona överföringsalternativet ska fungera. 
+I version 10.0.8 har förbättringar gjorts för att förbättra prestanda för alternativet **Asynkront**. Den här funktionen aktiveras under funktionsnamnet **Prestandaoptimering för överföring av delredovisning till redovisning**.
 
+Funktionerna för asynkron överföring av redovisningsbatchar underlättar överföringen av data från redovisningen till redovisningen. Genom att gruppera uppsättningar med mindre transaktioner och överföra transaktioner i grupper, bearbetar funktionerna transaktionerna på ett mer effektivt sätt. När transaktioner grupperas används batchserverns resurser på ett effektivare sätt.
+
+Asynkron överföring av underbearbetningsbatchar kräver att batchservern ställs in, är online och arbetar. Annars fungerar inte **Asynkrona** överföringsalternativet.
+
+Effektivitetsändringen på batchnivå använder ett enda återkommande batchjobb för alla juridiska personer i systemet. Vid körning skapas ett nytt batchjobb för bearbetning av de obligatoriska poster som ännu inte har överförts. Fler inställningar kan kontrolleras från sidan **Processautomatisering** i systemadministration. På den sidan kan du ändra bakgrundsprocessen, ändra frekvensen och definiera en period.
+
+Mer information om inställning av processautomatisering finns i [processautomatisering](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

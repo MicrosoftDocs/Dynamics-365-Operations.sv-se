@@ -2,7 +2,7 @@
 title: Kom i gång med skatteberäkning
 description: Detta ämne förklarar hur du ställer in skatteberäkningen.
 author: wangchen
-ms.date: 05/17/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 454608c2c3a86b71cf181129c762c837c5165902
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: b76184b3f1a97941fea7539aa3fac2c11b1f59b1
+ms.sourcegitcommit: cef2986e24d0510957b5db742545c266dec4275c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336666"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6644984"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>Kom igång med skatteberäkning (förhandsversion)
 
@@ -58,15 +58,16 @@ Innan du kan slutföra procedurerna i detta ämne måste följande förutsättni
 Stegen i det här avsnittet är inte relaterade till någon specifik juridisk person. Du måste bara genomföra den här proceduren en gång och du kan genomföra den i alla juridiska personer i RCS.
 
 1. Logga in på [RCS](https://marketing.configure.global.dynamics.com/).
-2. I arbetsytan Finance i **Elektronisk rapportering** lägger du till en ny konfigurationsleverantör. Använd ditt företagsnamn som namn på leverantören. Mer information finns i [Skapa konfigurationsleverantörer och markera dem som aktiva](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
-3. Välj den konfigurationsprovider som du just skapat och välj sedan **Ställ in aktiv**.
-4. Välj konfigurationsprovidern **Microsoft** och välj **Databaser**.
-5. Välj **Typ** i fältet **Global**.
-6. Välj **Öppen**.
-7. Gå till **Skattedatamodell**, expandera filträdet och välj sedan **Skattekonfiguration**.
-8. Välj den senaste versionen och sedan **Importera**.
-9. Återgå till arbetsytan **Globaliseringsfunktioner (förhandsgranskning)**, välj **Funktioner**, välj panelen **Skatteberäkning** och sedan **Lägg till**.
-10. Välj en av följande funktionstyper:
+2. I arbetsytan **Funktionshantering** välj och aktivera funktionen **Globaliseringsfunktioner**.
+3. I arbetsytan Finance i **Elektronisk rapportering** lägger du till en ny konfigurationsleverantör. Använd ditt företagsnamn som namn på leverantören. Mer information finns i [Skapa konfigurationsleverantörer och markera dem som aktiva](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+4. Välj den konfigurationsprovider som du just skapat och välj sedan **Ställ in aktiv**.
+5. Välj konfigurationsprovidern **Microsoft** och välj **Databaser**.
+6. Välj **Typ** i fältet **Global**.
+7. Välj **Öppen**.
+8. Gå till **Skattedatamodell**, expandera filträdet och välj sedan **Skattekonfiguration**.
+9. Välj den senaste versionen och sedan **Importera**.
+10. Återgå till arbetsytan **Globaliseringsfunktioner**, välj **Funktioner**, välj panelen **Skatteberäkning** och sedan **Lägg till**.
+11. Välj en av följande funktionstyper:
 
     - **Ny funktion** – Skapa en funktionsinställning som har tomt innehåll.
     - **Baserat på befintlig funktion** – Skapa en funktion från en befintlig funktion och kopiera innehållet från de befintliga funktionsinställningarna.

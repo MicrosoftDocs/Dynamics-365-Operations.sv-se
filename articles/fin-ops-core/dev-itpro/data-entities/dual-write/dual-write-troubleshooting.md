@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: ccad9c55c0200d008525c7d3fdaeeef99b7eecfb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b4de461d26fc6d5c39c1ac0c49201f265f562f5a
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350750"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542501"
 ---
 # <a name="general-troubleshooting"></a>Allmän felsökning
 
@@ -61,14 +61,14 @@ När du har installerat verktyget package deployer installerar du lösningspaket
 
 Så här aktiverar du spårningslogg.
 
-1. Logga in på den modelldrivna appen i Dynamics 365, öppna sidan **Inställningar** och under **System**, välj **Administration**.
+1. Logga in på kundengagemangsappen, öppna sidan **inställningar** och under **System**, välj **Administration**.
 2. På sidan **Administration** väljer du **Systeminställningar**.
 3. På fliken **Anpassning** i kolumnen **Plugin-program and aktivitetsspåring för anpassat arbetsflöde**, välj **Alla** för att aktivera spårningsloggen för plugin-program. Om du bara vill logga spårningsloggar när undantag inträffar kan du istället välja **undantag**.
 
 
 Så här visar du spårningslogg.
 
-1. Logga in på den modelldrivna appen i Dynamics 365, öppna sidan **Inställningar** och under **Anpassning**, välj **Spårningslogg för plugin-program**.
+1. Logga in på kundengagemangsappen, öppna sidan **inställningar** och under **Anpassning**, välj **Spårningslogg för plugin-program**.
 2. Sök efter spårningsloggarna där kolumnen **Typnamn** anges till **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Dubbelklicka på ett objekt om du vill visa hela loggen och på snabbfliken **Körning**, granska texten **Meddelandeblock**.
 

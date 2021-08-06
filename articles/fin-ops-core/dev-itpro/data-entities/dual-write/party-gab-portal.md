@@ -1,6 +1,6 @@
 ---
-title: Använda Power Portal med datamodellen för part
-description: I det här avsnittet beskrivs ändringarna av Power Portal-webbrollerna på grund av partens datamodell i nedskrivningen.
+title: Använda Microsoft Power Apps-portaler med datamodellen för part
+description: I det här avsnittet beskrivs ändringarna av webbrollerna för Microsoft Power Apps-portaler på grund av partens datamodell i nedskrivningen.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 3b03603038d05305c63fc2890a196670ae343e53
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca9d4ad1efa128ba274cd84b1c2f672fe70975a5
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358627"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542573"
 ---
-# <a name="using-power-portal-with-the-party-data-model"></a>Använda Power Portal med datamodellen för part
+# <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Använda Microsoft Power Apps-portaler med datamodellen för part
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
@@ -44,13 +44,13 @@ Gör på följande sätt om du vill skapa de nya registerbehörigheterna:
 
     Du måste skapa tre nya behörigheter:
 
-    + Kontakt till partanslutning
-    + Part till kontoanslutning
-    + Anslutning mellan konto och beställning
+    + **Kontakt** till **Part** registeranslutning
+    + **Part** till **Konto** registeranslutning
+    + **Konto** till **Order** registeranslutning
 
 4. Skapa och spara en ny behörighet för anslutningen till kontaktpersonen och ange följande parametrar:
 
-    + **Namn**: Part till kontoanslutning (eller ditt val)
+    + **Namn**: **Part** till **Konto** registeranslutning (eller ditt val)
     + **Registernamn**: msdyn_contactforparty
     + **Webbplats**: kundportal
     + **Område**: Kontakt

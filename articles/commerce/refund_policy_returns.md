@@ -2,7 +2,7 @@
 title: Skapa och uppdatera ett retur- och återbetalningspolicy för en kanal
 description: I det här avsnittet beskrivs hur du ställer in en policy för returer och återbetalningar för en kanal.
 author: ShalabhjainMSFT
-ms.date: 07/02/2021
+ms.date: 07/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 6cb2bb77a62ee9fc2ea6115949e30496bf3365c4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca5797cfc2d92c4cbc98d3f64d60e1fd260f0418
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345118"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558307"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Skapa och uppdatera en retur- och återbetalningspolicy för en kanal
 
@@ -36,12 +36,21 @@ Omfattningen av policyn är för närvarande begränsad till att ställa in beta
 
 ## <a name="enable-return-policy"></a>Aktivera returpolicy
 
-Aktivera funktionen för att återgå till kanalen genom att göra följande:
+För att aktivera funktionen returpolicy för kanal i Commerce-administration, följ dessa steg.
 
 1. Gå till arbetsytan **Funktionshantering** i Dynamics 365 Commerce.
 1. Sök efter funktionen **aktivera kanal returprinciper** i listan med funktionsnamn.
 1. Välj **Aktivera nu**.
-1. På sidan **Distributionsschema** kör du jobbet **1110** (global konfiguration) för att distribuera funktionsändringen. 
+1. På sidan **Distributionsschema** kör du jobbet **1110** (global konfiguration) för att distribuera funktionsändringen.
+
+## <a name="initialize-the-commerce-scheduler"></a>Initiera schemaläggare för Commerce
+
+När du har aktiverar funktionen **aktivera kanal returprinciper** måste du initiera Commerce -schemaläggaren för att säkerställa att nya funktionsdatabasändringar läggs till via Commerce Data Exchange (CDX) synkronisering. 
+
+Följ dessa steg för att initiera Commerce-schemaläggare i Commerce-administrationen.
+
+- Gå till **Butik och handel \> Administrationsinställning \> Schemaläggare för handel \> Initiiera schemaläggare för handel**. Du kan också söka efter "initiera schemaläggare för Commerce".
+- I dialogrutan **Initiera schemaläggare för handel** se till att alternativet **ta bort befintligt konfiguration** anges till **nej** och klicka sedan på **OK**.
 
 ## <a name="configure-return-policy"></a>Konfigurera returpolicy
 

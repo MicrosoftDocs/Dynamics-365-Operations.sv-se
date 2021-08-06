@@ -4,24 +4,17 @@ description: I det här avsnittet beskriver integreringen av leverantörsdata me
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7e6ac62b2b289ef818a083b9ae4d1d74946ae3fc
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 36cfed92535c1df3ba55fd56bc8aa2f9eccf3003
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346506"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542449"
 ---
 # <a name="integrated-vendor-master"></a>Integrerat leverantörshuvud
 
@@ -29,9 +22,7 @@ ms.locfileid: "6346506"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
-Termen *leverantör* avser en leverantörs organisation, eller en enskild person som levererar varor eller tjänster till ett företag. Även om *leverantören* är ett etablerat koncept i Microsoft Dynamics 365 Supply Chain Management inget leverantörskoncept finns i modellstyrda appar i Dynamics 365. Du kan dock överlagra tabellen **konto/kontakt** för att lagra leverantörsinformation. Den integrerade leverantörsmästaren introducerar ett uttryckligt leverantörskoncept i modellstyrda appar i Dynamics 365. Du kan antingen använda den nya leverantörsdesignen eller lagra leverantörsdata i tabellen **konto/kontakt**. Båda metoderna stöds av dubbelriktad skrivning.
+Termen *leverantör* avser en leverantörs organisation, eller en enskild person som levererar varor eller tjänster till ett företag. Även om *leverantören* är ett etablerat koncept i Microsoft Dynamics 365 Supply Chain Management inget leverantörskoncept finns i kundengagemangsappar. Du kan dock överlagra tabellen **konto/kontakt** för att lagra leverantörsinformation. Den integrerade leverantörsmästaren introducerar ett uttryckligt leverantörskoncept i kundengagemangsappar. Du kan antingen använda den nya leverantörsdesignen eller lagra leverantörsdata i tabellen **konto/kontakt**. Båda metoderna stöds av dubbelriktad skrivning.
 
 I båda metoderna är leverantörsdata integrerad mellan Dynamics 365 Supply Chain Management, Dynamics 365 Sales, Dynamics 365 Field Service och Power Apps-portaler. I Supply Chain Management är data tillgängliga för arbetsflöden som inköpsrekvisitioner och inköpsorder.
 
@@ -52,27 +43,17 @@ Om du vill fortsätta att lagra leverantörsdata i tabellen **konto/kontakt** ka
 
 Leverantörsdata innehåller all information om leverantören, till exempel leverantörsgruppen, adresser, kontaktinformation, betalningsprofil och fakturaprofil. En samling tabellmappningar fungerar tillsammans under leverantörsdatainteraktion, som visas i följande tabell.
 
-Finance and Operations-appar | Andra Dynamics 365-appar     | beskrivning
+Finance and Operations-appar | Kundengagemangsappar     | beskrivning
 ----------------------------|-----------------------------|------------
-Leverantör V2                   | Konto                     | Företag som använder kontotabellen för att lagra leverantörsinformation kan fortsätta att använda den på samma sätt. De kan också dra nytta av de explicita leverantörsfunktioner som kommer på grund av Finance and Operations-appintegrering.
-Leverantör V2                   | Msdyn\_vendors              | Företag som använder en anpassad lösning för leverantörer kan dra nytta av det färdiga leverantörskoncept som introduceras i Dataverse på grund av Finance and Operations-appintegrering. 
-Leverantörsgrupper               | msdyn\_vendorgroups         | Den här mallen synkroniserar leverantörsgruppinformation.
-Betalningsmetod för leverantör       | msdyn\_vendorpaymentmethods | Den här mallen synkroniserar information om leverantörsbetalningsmetod.
-CDS-kontakter V2             | kontakter                    | Mallen [Kontakter](customer-mapping.md#cds-contacts-v2-to-contacts) synkroniserar all primär, sekundär och tertiär kontaktinformation för både kunder och leverantörer.
-Betalningsplanrader      | msdyn\_paymentschedulelines | Mallen [betalningsplanrader](customer-mapping.md#payment-schedule-lines-to-msdyn_paymentschedulelines) synkroniserar referensdata för kunder och leverantörer.
-Betalningsplan            | msdyn\_paymentschedules     | Mallen [betalningsplaner](customer-mapping.md#payment-schedule-to-msdyn_paymentschedules) synkroniserar referensdata för betalningsplaner för både kunder och leverantörer.
-Betalningsdagsrader – CDS V2    | msdyn\_paymentdaylines      | Mallen [betalningsdagsrader](customer-mapping.md#payment-day-lines-cds-v2-to-msdyn_paymentdaylines) synkroniserar referensdata för betalningsdagsrader för kunder och leverantörer.
-Betalningsdagar – CDS            | msdyn\_paymentdays          | Mallen [betalningsdagar](customer-mapping.md#payment-days-cds-to-msdyn_paymentdays) synkroniserar referensdata för betalningsdagar för både kunder och leverantörer.
-Betalningsvillkor            | msdyn\_paymentterms         | Mallen [betalningsvillkor](customer-mapping.md#terms-of-payment-to-msdyn_paymentterms) synkroniserar referensdata för betalningsvillkor för både kunder och leverantörer.
-Namnaffix                | msdyn\_nameaffixes          | Mallen [namnaffix](customer-mapping.md#name-affixes-to-msdyn_nameaffixes) synkroniserar referensdata för namnaffix för både kunder och leverantörer.
-
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [Vendors](includes/VendorsV2-msdyn-vendors.md)]
-
-[!include [Vendor groups](includes/VendVendorGroup-msdyn-vendorgroups.md)]
-
-[!include [Vendor payment methods](includes/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
-
+[CDS-kontakter V2](mapping-reference.md#115) | kontakter | Den här mallen synkroniserar all primär, sekundär och tertiär kontaktinformation för både kunder och leverantörer.
+[Namnaffix](mapping-reference.md#155) | msdyn_nameaffixes | Mallen synkroniserar referensdata för namnaffix för både kunder och leverantörer.
+[Betalningsdagsrader – CDS V2](mapping-reference.md#157) | msdyn_paymentdaylines | Mallen synkroniserar referensdata för betalningsplanrader för både kunder och leverantörer.
+[Betalningsdagar – CDS](mapping-reference.md#158) | msdyn_paymentdays | Mallen synkroniserar referensdata för betalningsdagar för både kunder och leverantörer.
+[Betalningsplanrader](mapping-reference.md#159) | msdyn_paymentschedulelines | Synkronisera referensdata för betalningsplanrader för både kunder och leverantörer.
+[Betalningsplan](mapping-reference.md#160) | msdyn_paymentschedules | Mallen synkroniserar referensdata för betalningsplan för både kunder och leverantörer.
+[Betalningsvillkor](mapping-reference.md#161) | msdyn_paymentterms | Mallen synkroniserar referensdata för betalningsvillkor för både kunder och leverantörer.
+[Leverantörer V2](mapping-reference.md#202) | msdyn_vendors | Företag som använder en anpassad lösning för leverantörer kan dra nytta av det färdiga leverantörskoncept som introduceras i Dataverse på grund av Finance and Operations-appintegrering.
+[Leverantörsgrupper](mapping-reference.md#200) | msdyn_vendorgroups | Den här mallen synkroniserar leverantörsgruppinformation.
+[Betalningsmetod för leverantör](mapping-reference.md#201) | msdyn_vendorpaymentmethods | Den här mallen synkroniserar information om leverantörsbetalningsmetod.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

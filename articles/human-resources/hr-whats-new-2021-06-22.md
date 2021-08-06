@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ae444b4d208804364333bd3d6e4704500da85470
-ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
+ms.openlocfilehash: c2f362e71832d6f7b17e06ad98142019ced4df14
+ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6303572"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6560084"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Nyheter och ändringar i Dynamics 365 Human Resources 22 juni 2021
 
@@ -44,7 +44,7 @@ Följande funktioner är i allmänhet tillgänglig i den här versionen.
 | --- | --- | --- |
 | Informera användare av arbetare utan anställningsfunktionen – När avancerad åtkomst är inaktiv och funktionen **Visa alla medarbetare utan anställning** är inaktiverad i funktionshantering visas en banner för arbetarna utan anställningsformulär. Bannern uppmanar användaren att aktivera funktionen **Visa alla medarbetare utan anställning**. | Inte aktuellt| [Arbetare utan anställning](/dynamics365/human-resources/hr-personnel-workers-without-employment)|
 | Stöd för anpassade fält i behörighetsregler för förmånshantering | [Stöd för anpassade fält för bearbetning av berättigande](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |[Konfigurera berättiganderegler](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules) |
-| Granskning av periodiseringstransaktion för tjänstledighet | Inte aktuellt | [Granskning av periodiseringstransaktion för tjänstledighet](hr-leave-and-absence-accrue.md#preview-leave-accrual-transaction-auditing)|
+| Granskning av periodiseringstransaktion för tjänstledighet | Inte aktuellt | [Granskning av periodiseringstransaktion för tjänstledighet](hr-leave-and-absence-accrue.md)|
 | Förbättringar av arbetsflödesupplevelse för tjänstledighet och frånvaro | [Förbättringar av arbetsflödesupplevelse för tjänstledighet och frånvaro](https://go.microsoft.com/fwlink/?linkid=2147528) | [Begära ledig tid](hr-employee-self-service-request-time-off.md)|
 
 ### <a name="bug-fixes"></a>Felkorrigeringar
