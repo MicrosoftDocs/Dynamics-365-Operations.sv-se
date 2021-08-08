@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b6b01053a043477521d7eb1a41bb9f6f51fc0e4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a1e94067e2dcca59f03e01520f16a09da1bd4f52
+ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360578"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6560000"
 ---
 # <a name="payroll-integration-api-introduction"></a>Introduktion till API för löneintegrering
 
@@ -30,8 +30,8 @@ Detta dokument beskriver API för löneintregrering i Dynamics 365 Human Resourc
 
 För att aktivera integreringen lägger Personal till följande komponenter:
 
-- Funktion för att markera en medarbetare som betalningsredo
-- Ett integrations-API som öppnar den nya funktionen för integrering av program
+- [Funktion för att markera en medarbetare som betalningsredo.](hr-compensation-payroll.md)
+- Ett integrations-API som öppnar den nya funktionen för integrering av program.
 
 ## <a name="microsoft-dataverse"></a>Microsoft Dataverse
 

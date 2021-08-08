@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c53d28192c5bf673baccd76e4cfb6e0453fe29d
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: e155263daf2f33531abefdc45c5046a5ab5bca11
+ms.sourcegitcommit: 787c94b35f343f4c38fc8efaaa0cfaf20a846368
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6337939"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "6647216"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Startsidan för Anskaffning och källa
 
@@ -78,9 +78,8 @@ Anskaffning och källa omfattar alla steg från att identifiera ett behov av pro
 -   [Skapa en inköpsorder för en engångsleverantör](tasks/create-purchase-order-one-time-supplier.md)
 -   [Skapa en inköpsorder med en leveransplan](tasks/create-purchase-order-delivery-schedule.md)
 -   [Skapa en inköpsreturorder](tasks/create-purchase-return-order.md)
--   [Skapa en inköpsfrisläppningsorder från ett inköpsavtal](tasks/create-purchase-release-order-purchase-agreement.md)
--   [Skapa en inköpsfrisläppningsorder när inköpsordern skapas](tasks/create-purchase-release-order-creating-purchase-order.md)
--   [Skapa en order för lagerpåfyllnad för försändelse](../inventory/tasks/create-consignment-replenishment-order.md)
+-   [Tillämpa ett köpeavtal när du skapar en inköpsorder](tasks/create-purchase-release-order-purchase-agreement.md)
+-   [Skapa en ny order för lagerpåfyllnad för försändelse](../inventory/tasks/create-consignment-replenishment-order.md)
 
 ## <a name="prices-and-discounts"></a>Priser och rabatter
 -   [Inköpsavtal](purchase-agreements.md)

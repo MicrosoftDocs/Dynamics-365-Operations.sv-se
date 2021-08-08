@@ -2,7 +2,7 @@
 title: Översikt
 description: Användarhandboken för Dynamics 365 Human Resources innehåller anvisningar om hur du ställer in personal, ställer in kompensation och fördelar för medarbetarna och hanterar personalen.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8595bbbce9ab39893b67ee142bcb71996ccd6994
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 8b03865c1e53f943989437ed4839474e37419f2e
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338064"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639520"
 ---
 # <a name="overview"></a>Översikt
 
@@ -102,6 +102,7 @@ Användarhandboken för Dynamics 365 Human Resources innehåller anvisningar om 
 [Hantera begäranden om ledighet och frånvaro](hr-employee-self-service-manage-requests.md)</br>
 [Begära ledig tid](hr-employee-self-service-request-time-off.md)</br>
 [Visa team- och företagskalendrar](hr-employee-self-service-calendar.md)</br>
+[Konfigurera rollen för frånvarochefen](hr-configure-absence-manager.md)</br>
 
 ## <a name="develop-employees"></a>Utveckla medarbetare
 

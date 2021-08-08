@@ -4,24 +4,17 @@ description: I det här avsnittet beskrivs integreringen av organisationsinforma
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 77625e6e80bfa45add6839df89d9aae27e41d456
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d1ad3bc4eef1650b927d9f6dd699f788994c7e87
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355308"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542597"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisationshierarki i Dataverse
 
@@ -45,32 +38,17 @@ Organisationshierarkins tabellmappningar är tillgängliga för enkelriktad synk
 
 Produktinformationen innehåller all information som är relaterad till produkten och dess definition, t.ex. produktdimensioner eller spårnings- och lagringsdimensioner. Som framgår av följande tabell skapas en samling med tabellmappningar för synkronisering av produkter och relaterad information.
 
-Finance and Operations-appar | Andra Dynamics 365-appar | beskrivning
+Finance and Operations-appar | Kundengagemangsappar     | beskrivning
 -----------------------|--------------------------------|---
-Syften för organisationshierarki | msdyn_internalorganizationhierarchypurposes | Den här mallen innehåller en enkelriktad synkronisering av tabellen syfte för organisationshierarki.
-Typ av organisationshierarki | msdyn_internalorganizationhierarchytypes | Den här mallen innehåller en enkelriktad synkronisering av tabellen typ för organisationshierarki.
-Organisationshierarki - publicerad | msdyn_internalorganizationhierarchies | Den här mallen innehåller en enkelriktad synkronisering av tabellen publicerad för organisationshierarki.
-Driftenhet | msdyn_internalorganizations |
-Juridiska personer | msdyn_internalorganizations |
-Juridiska personer | cdm_companies | Tillhandahåller dubbelriktad synkronisering av information om den juridiska personen (företag).
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Organization hierarchy purposes](includes/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
-
-[!include [Organization hierarchy type](includes/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
-
-[!include [Organization hierarchy - published](includes/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
+[Juridiska personer](mapping-reference.md#102) | cdm_companies | Tillhandahåller dubbelriktad synkronisering av information om den juridiska personen (företag).
+[Juridiska personer](mapping-reference.md#142) | msdyn_internalorganizations |
+[Driftenhet](mapping-reference.md#143) | msdyn_internalorganizations |
+[Organisationshierarki - publicerad](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | Den här mallen innehåller en enkelriktad synkronisering av tabellen publicerad för organisationshierarki.
+[Syften för organisationshierarki](mapping-reference.md#140) | msdyn_internalorganizationhierarchypurposes | Den här mallen innehåller en enkelriktad synkronisering av tabellen syfte för organisationshierarki.
+[Typ av organisationshierarki](mapping-reference.md#141) | msdyn_internalorganizationhierarchytypes | Den här mallen innehåller en enkelriktad synkronisering av tabellen typ för organisationshierarki.
 
 ## <a name="internal-organization"></a>Intern organisation
 
 Intern organisationsinformation i Dataverse kommer från två tabeller **driftenhet** och **juridiska personer**.
-
-[!include [Operating unit](includes/OperatingUnit-msdyn-internalorganizations.md)]
-
-[!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
-
-[!include [Legal entities](includes/LegalEntities-Companies.md)]
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

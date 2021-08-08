@@ -2,7 +2,7 @@
 title: Implementeringsalternativ för Content Delivery Network
 description: Detta ämne granskar de olika alternativen för implementering av nätverk för innehållsleverans (CDN) som kan användas med with Microsoft Dynamics 365 Commerce miljöer. Dessa alternativ omfattar inbyggda, Commerce-försedd instanser av Azure Front Door och kundägda instanser av Azure Front Door.
 author: BrianShook
-ms.date: 03/11/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: eec18dbffe33bc6366b4282d05189b31620616d6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e6425d7e473d1d1c263624599d54c6b040d90cb
+ms.sourcegitcommit: a52ad281071b3a49c461e5853e82f302dd33095a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351259"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6657129"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Implementeringsalternativ för Content Delivery Network
 
@@ -50,7 +50,7 @@ Följande tabell visar fördelar och nackdelar med att använda den förekomst a
 
 | Fördelar | Nackdelar |
 |------|------|
-| <ul><li>Instansen inkluderas i Commerce-kostnaden.</li><li>Eftersom instansen hanteras av Commerce-teamet krävs mindre underhåll och det finns delade inställningssteg.</li><li>Den infrastruktur som har Azure-värd är skalbar, säker och tillförlitlig.</li><li>SSL-certifikatet (Secure Sockets Layer) kräver en inställning vid ett tillfälle och förnyas automatiskt.</li><li>Instansen övervakas för fel och fel av Commerce-teamet.</li></ul> | <ul><li>En WAF stöds inte.</li><li>Det finns inga särskilda anpassningar eller inställningsjusteringar.</li><li>Instansen beror på om Commerce-teamet behöver uppdateringar eller ändringar.</li><li>En separat Azure Front Door-instans krävs för apex-domäner och extra arbete krävs för att integrera apex-domäner med Azure DNS.</li><li>Det finns ingen telemeter om svar per andra (RPS) eller så visas ingen felsats för kunden.</li></ul> |
+| <ul><li>Instansen inkluderas i Commerce-kostnaden.</li><li>Eftersom instansen hanteras av Commerce-teamet krävs mindre underhåll och det finns delade inställningssteg.</li><li>Den infrastruktur som har Azure-värd är skalbar, säker och tillförlitlig.</li><li>SSL-certifikatet (Secure Sockets Layer) kräver en inställning vid ett tillfälle och förnyas automatiskt.</li><li>Instansen övervakas för fel och fel av Commerce-teamet.</li></ul> | <ul><li>En strukturlista stöds inte.</li><li>Det finns inga särskilda anpassningar eller inställningsjusteringar.</li><li>Instansen beror på om Commerce-teamet behöver uppdateringar eller ändringar.</li><li>En separat Azure Front Door-instans krävs för apex-domäner och extra arbete krävs för att integrera apex-domäner med Azure DNS.</li><li>Det finns ingen telemeter om svar per andra (RPS) eller så visas ingen felsats för kunden.</li></ul> |
 
 Följande illustration visar arkitekturen för den Commerce Azure Front Door-instansen.
 
@@ -74,7 +74,7 @@ I följande tabell beskrivs fördelarna och fördelarna med att använda en exte
 
 | Fördelar | Nackdelar |
 |------|------|
-| <ul><li>Det här alternativet är användbart när den befintliga domänen redan finns på ett externt CDN-nätverk.</li><li>Konkurrentens CDN (till exempel Akamai) kan ha fler WAF-funktioner.</li></ul> | <ul><li>Ett separat kontrakt och ytterligare kostnader krävs.</li><li>SSL kan ådra sig ytterligare kostnader.</li><li>Eftersom tjänsten är skild från Azure molnbaserade struktur måste ytterligare infrastruktur hanteras.</li><li>Tjänsten kan kräva längre tidsplaceringar i slutpunkts- och säkerhetsinställningar.</li><li>Tjänsten är självstyrd.</li><li>Tjänsten är självövervakad.</li></ul> |
+| <ul><li>Det här alternativet är användbart när den befintliga domänen redan finns på ett externt CDN-nätverk.</li><li>Strukturlista: Beror på extern leverantör.</li></ul> | <ul><li>Ett separat kontrakt och ytterligare kostnader krävs.</li><li>SSL kan ådra sig ytterligare kostnader.</li><li>Eftersom tjänsten är skild från Azure molnbaserade struktur måste ytterligare infrastruktur hanteras.</li><li>Tjänsten kan kräva längre tidsplaceringar i slutpunkts- och säkerhetsinställningar.</li><li>Tjänsten är självstyrd.</li><li>Tjänsten är självövervakad.</li></ul> |
 
 I följande bild visas en Commerce-infrastruktur med en extern CDN-tjänst.
 
