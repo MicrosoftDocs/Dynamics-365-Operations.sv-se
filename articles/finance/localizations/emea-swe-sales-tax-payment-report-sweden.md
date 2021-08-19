@@ -14,12 +14,12 @@ ms.search.region: Sweden
 ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e8d63117585ff95149fe279d914d6b854cf081f8
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 83d396b82962d11f9166d1f302359c393e85325e8a286a7fc48483e4581abdd8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347796"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715007"
 ---
 # <a name="sales-tax-report-for-sweden"></a>Momsrapport för Sverige
 

@@ -2,7 +2,7 @@
 title: Definiera ER‑konfigurationers beroende av andra komponenter
 description: I det här avsnittet beskrivs hur du utformar en elektronisk rapporteringskonfiguration (ER) och anger sitt beroende från andra programvarukomponenter.
 author: NickSelin
-ms.date: 06/23/2017
+ms.date: 07/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4aef052a77428bb783a3a098754ca4dcc1b4296
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2901092938dae5ae14480716eeeb2b0386848332e91ad388ce5d34437f8492ba
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755116"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717604"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definiera ER‑konfigurationers beroende av andra komponenter
 
@@ -138,5 +138,8 @@ Vi ska ta bort de skapade konfigurationerna från systemet och hämta tillbaka d
     * Observera att modellkonfigurationen Exempelmappning har hämtats tillsammans med den valda datamodellkonfigurationen. De två filerna hämtas tillsammans eftersom Exempelmappning har definierats till att implementera den valda datamodellen, och eftersom den gäller för appen. Konfigurationen Exempelmappning (alternative) har inte hämtats eftersom villkoret för programversionen inte är uppfyllt.   
     * Om du loggar in till Finance and Operations, registrerar samma leverantör, öppnar LCS-projektet och hämtar samma datamodellkonfiguration, hämtas konfigurationen Exempelmappning (alternativ) medan konfigurationen Exempelmappning hoppas över.  
 
+## <a name="additional-resources"></a>Ytterligare resurser
+
+[Hantera livscykeln för konfiguration av elektronisk rapportering (ER)](../general-electronic-reporting-manage-configuration-lifecycle.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

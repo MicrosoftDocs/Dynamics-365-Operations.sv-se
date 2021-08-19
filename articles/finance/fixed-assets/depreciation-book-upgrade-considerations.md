@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c7a6bcbccd9ea8c50fbf56ba080d2004dfa05087
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 757c8b9f2b57374e4b6d35c9be95b9e1dfe7f249c9ea903009cc26e16711bead
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339827"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713814"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Översikt över uppgradering av förteckning med avskrivningsregler
 
@@ -42,19 +42,19 @@ Alternativ 1:  **Systemdefinierad nummerserie** – Detta är standardalternativ
     -   Konstantnamn: **NumberSequenceDefaultParameterPrefix**
     -   Standardvärde: "FADBUpgr"
 -   **Alfanumerisk längd** – Längden på det alfanumeriska segmentet i nummerserien.
-    -   Konstantnamn: **NumberSequenceDefaultParameterAlpanumericLength **
+    -   Konstantnamn: **NumberSequenceDefaultParameterAlpanumericLength**
     -   Standardvärde: 9
 -   **Startnummer** – Det första nummer som ska användas i nummerserien.
-    -   Konstantnamn: **NumberSequenceDefaultParameterStartNumber  **
+    -   Konstantnamn: **NumberSequenceDefaultParameterStartNumber**
     -   Standardvärde: 1
 
 Alternativ 2: **Befintlig användardefinierad nummerserie** – Detta alternativ låter dig definiera den nummerserie som ska användas för uppgraderingen. Överväg att använda detta alternativ om du behöver avancerad konfiguration av nummerserie. Om du vill använda en nummerserie måste du ändra uppgraderingsklassen ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans med följande information:
 
 -   **Nummerseriekod** – Nummerseriens kod.
-    -   Konstantnamn: **NumberSequenceExistingCode **
+    -   Konstantnamn: **NumberSequenceExistingCode**
     -   Förvalt värde: Ingen standardinställning, detta måste uppdateras till nummerseriekoden.
 -   **Delade nummerserier** – Ett booleskt värde som identifierar omfånget på nummerserien. Använd ”sant” för delade nummerserier för alla företag,” och ”falskt" för ett företagsspecifikt omfång. När du använder "falskt" måste nummerserien med det angivna namnet finnas i samtliga företag som innehåller transaktioner för avskrivningsregler. Delade nummerserier finns i alla partitioner som innehåller transaktioner för avskrivningsregler.
-    -   Konstantnamn: **NumberSequenceExistingIsShared **
+    -   Konstantnamn: **NumberSequenceExistingIsShared**
     -   Standardvärde: sant
 
 Parametrarna finns i början av klassen ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans class. 

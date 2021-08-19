@@ -2,7 +2,7 @@
 title: Få support för Finance and Operations-appar eller Lifecycle Services (LCS)
 description: Den här artikeln beskrivs hur du får hjälp med Finance and Operations-appar eller Microsoft Dynamics Lifecycle Services (LCS).
 author: EricMoos
-ms.date: 09/16/2020
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20b32ae88f9c4439b83ae60e6a0b5f0e16280fcf
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4314545941cd4c401325aad7651c8882db322f58aae54e85dbad2548733cc95e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753888"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713344"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Få support för Finance and Operations-appar eller Lifecycle Services (LCS)
 
@@ -48,7 +48,7 @@ Den här artikeln beskrivs hur du får hjälp med Finance and Operations-appar e
 <td>I <a href="https://lcs.dynamics.com/">LCS</a> använder du verktyget <strong>Problemsökning</strong> för att snabbt söka Microsoft Knowledge Base-artiklar, snabbkorrigeringar och lösningar på problem som rapporterats. Du kan se vilka rapporterade problem som håller på att lösas eller för ett visst funktionsområde och vilka problem som redan har åtgärdats. Mer information finns i <a href="issue-search-lcs.md">problemsökning (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
-<td>Få support iappen.</td>
+<td>Få support inom din Finance and Operations app.</td>
 <td>Markera knappen <strong>hjälp</strong> (<strong>?</strong>) i det övre högra hörnet på appen och välj <strong>Support</strong>. Problem rapporteras på fliken <strong>aktiva problem</strong> i LCS. Där kan administratörerna avgöra om de ska ge support inom företaget eller skicka in problemen till Microsoft.</td>
 </tr>
 <tr>

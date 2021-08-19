@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: df7cb4810b83d74725df3d59b7b08da1e8cf4a53
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a57b51870d5738d906ca779474e0591dc16395cc992b3f79d37d1f45782bf66a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345042"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715344"
 ---
 # <a name="peripherals"></a>Kringutrustning
 
@@ -126,12 +126,12 @@ För att garantera att den största mängden enheter kan användas med Commerce 
 > [!NOTE]
 > OPOS-stöd garanterar inte stöd för alla enheter som har OPOS-drivrutiner. Commerce måste först ge stöd för denna enhetstyp eller klass via OPOS. Dessutom kanske serviceobjekt inte alltid är uppdaterade med den senaste versionen av dessa CCO. Du bör också vara medveten om att i allmänhet varierar kvaliteten på serviceobjekten.
 
-### <a name="windows&quot;></a>Windows
+### <a name="windows"></a>Windows
 
 Kvittoutskrift i POS optimeras för OPOS. OPOS brukar vara betydligt snabbare än utskrift genom Windows. Därför är det en bra idé att använda OPOS, särskilt i miljöer där 40-kolumnkvitton skrivs ut och transaktionstiderna måste vara snabba. För de flesta enheter används OPOS-kontroller. Vissa OPOS kvittoskrivare stöder emellertid Windows-drivrutiner. Genom att använda en Windows-drivrutin kan du komma åt de senaste teckensnitten och en nätverksskrivare för flera kassor. Det finns emellertid nackdelar med Windows-drivrutiner. Här följer några exempel på dessa nackdelar:
 
 -   När Windows-drivrutiner används återges bilder innan utskrift sker. Därför brukar utskrifter vara långsammare än på skrivare med OPOS-kontroller.
--   Enheter som är anslutna till skrivaren (&quot;daisy-fastkedjad") fungerar inte när Windows-drivrutiner används. Exempelvis går det inte att öppna kassalådan eller kvittoskrivaren kanske inte skriver som förväntat.
+-   Enheter som är anslutna till skrivaren ("daisy-fastkedjad") fungerar inte när Windows-drivrutiner används. Exempelvis går det inte att öppna kassalådan eller kvittoskrivaren kanske inte skriver som förväntat.
 -   OPOS stöder även en mer omfattande uppsättning variabler som avser kvittoskrivare, som t.ex. pappersskärning eller kvittoutskrift.
 -   Windows-skrivare stöds inte via IIS maskinvarustation. 
 
