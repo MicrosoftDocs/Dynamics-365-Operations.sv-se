@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1b1077fdb4707bf2c019e86cb073b30465817577
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2544591773bea7d54b4da4ac25ed3fed3f9e3594c5f791a0975c0349583b695c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728637"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standardvyer för Supply Chain Management
 
@@ -77,6 +77,18 @@ I följande tabell beskrivs de sparade vyerna som är tillgängliga för modulen
 | Inköpsorderdetaljer | Ekonomistyrning | Denna förenklade vy är optimerad för att utföra ekonomirelaterade aktiviteter, till exempel fakturera och kontrollera priser, summor och avgifter. | Sparade vyer för inköpsorder |
 | Inköpsorderdetaljer | Ordergodkännande | Den här förenklade vyn är optimerad för att godkänna inköpsorder. | Sparade vyer för inköpsorder |
 
+## <a name="saved-views-for-the-product-information-management-module"></a>Sparade vyer för modulen Produktinformationshantering
+
+I följande tabell beskrivs de sparade vyerna som är tillgängliga för modulen Produktinformationshantering.
+
+| Sida | Vynamn | Visa beskrivningen | Funktionsnamn |
+|---|---|---|---|
+| Lista med frisläppta produkter | Produktgenerering | En förenklad sidvy som endast innehåller fälten som oftast används vid skapande av produkter. | Sparade vyer för frisläppta produkter |
+| Information om frisläppt produkt | Produktgenerering | En förenklad sidvy som endast innehåller fälten som oftast används vid skapande av produkter. | Sparade vyer för frisläppta produkter |
+| Information om frisläppt produkt | Hantering av logistisk information | En förenklad sidvy som endast innehåller fälten som oftast används vid hantering av logistisk information för produkter. | Sparade vyer för frisläppta produkter |
+| Information om frisläppt produkt | Hantering av inköpsinformation | En förenklad sidvy som endast innehåller fälten som oftast används vid hantering av inköpsinformation för produkter. | Sparade vyer för frisläppta produkter |
+| Information om frisläppt produkt | Hantering av försäljningsinformation | En förenklad sidvy som endast innehåller fälten som oftast används vid hantering av försäljningsrelaterad information för produkter. | Sparade vyer för frisläppta produkter |
+
 ## <a name="saved-views-for-the-production-control-module"></a>Sparade vyer för modulen Produktionskontroll
 
 I följande tabell beskrivs de sparade vyerna som är tillgängliga för modulen Produktionskontroll.
@@ -110,7 +122,7 @@ I följande tabell beskrivs de sparade vyerna som är tillgängliga för modulen
 | Alla leveranser | Inkommande bearbetning | Denna förenklade vy innehåller bara de fält som oftast används för att bearbeta ingående leveranser. | Sparade vyer för leveransbearbetning |
 | Alla leveranser | Utgående bearbetning | Denna förenklade vy innehåller bara de fält som oftast används för att bearbeta utgående leveranser. | Sparade vyer för leveransbearbetning |
 | Alla påfyllnader | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparad vy för påfyllnadsbearbetning |
-| Workbench för lastplanering | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparad vy för arbetsplaneringens workbench |
+| Workbench för lastplanering | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparad vy för workbench vid lastplanering |
 | Information om arbete | Förenklad | Den här förenklade vyn innehåller bara de fält som oftast används. På det här sättet blir det en snabbare översikt och en strömlinjeformad arbetsprocess. | Sparad vy för sidan Information om arbete |
 
 
