@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 672db002ddf8d12aaab5b97241390c036ad7ab5c
-ms.sourcegitcommit: 8fb79920bea14746a71551a4456236a6386bfcea
+ms.openlocfilehash: 20e74e97f98d0bc0fd454d54cbf969d4f1b46c7c98b2949b0ed8cfe671312dd2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6538864"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768201"
 ---
 # <a name="payroll-employee"></a>Lönemedarbetare
 
@@ -33,27 +33,25 @@ Fysiskt namn: mshr_payrollemployeeentity.
 Denna entitet ger information om medarbetaren. Du måste ställa in [löneintegreringsparametrarna](hr-admin-integration-payroll-api-parameters.md) innan du använder den här entiteten.
 
 >[!IMPORTANT] 
->Fälten **FirstName**, **MiddleName**, **LastName**, **NameValidFrom** och **NameValidTo** kommer inte längre att vara tillgängliga på den här enheten. På så sätt säkerställer du att det bara finns ett enda datum för datakällan som backar upp enheten, det vill säga **HcmEmployment** med fälten **EmploymentStartDate** och **EmploymentEndDate**.
-
->Dessa fält kommer att vara tillgängliga på **DirPersonNameHistoricalEntity**, som släpptes i Plattformsuppdatering 43. Det finns en OData-relation från **PayrollEmployeeEntity** till **DirPersonNameHistoricalEntity** på fältet **Person**. Alternativt kan enheten **DirPersonNameHistoricalEntity** enhet kan frågas direkt via OData med det offentliga namnet, **PersonHistoricalNames**.
-
+>Fälten **FirstName**, **MiddleName**, **LastName**, **NameValidFrom** och **NameValidTo** kommer inte längre att vara tillgängliga på den här enheten. På så sätt ser du till att det bara finns en datakälla med giltighetsdatum som backar den här enheten.
+>Dessa fält kommer att vara tillgängliga på **DirPersonNameHistoricalEntity**, som släpptes i Plattformsuppdatering 43. Det finns en OData-relation från **PayrollEmployeeEntity** till **DirPersonNameHistoricalEntity** på fältet **Person**. 
 
 ## <a name="properties"></a>Egenskaper
 
 | Egenskap<br>**Fysiskt namn**<br>**_Typ_** | Använd | beskrivning |
 | --- | --- | --- |
-| **Personalnummer**<br>mshr_personnelnumber<br>*Sträng* | Skrivskydd<br>Obligatoriskt | Medarbetarens unika personalnummer. |
-| **Primärt fält**<br>mshr_primaryfield<br>*Sträng* | Obligatoriskt<br>Systemgenererad |  |
-| **ID för juridisk person**<br>mshr_legalentityID<br>*Sträng* | Skrivskydd<br>Obligatoriskt | Anger den juridiska personen (företaget). |
-| **Kön**<br>mshr_gender<br>[alternativuppsättningen mshr_hcmpersongender](hr-admin-integration-payroll-api-gender.md) | Skrivskydd<br>Obligatoriskt | Medarbetarens kön. |
+| **Personalnummer**<br>mshr_personnelnumber<br>*Sträng* | Skrivskydd | Medarbetarens unika personalnummer. |
+| **Primärt fält**<br>mshr_primaryfield<br>*Sträng* | Skrivskydd<br>Systemgenererad |  |
+| **ID för juridisk person**<br>mshr_legalentityID<br>*Sträng* | Skrivskydd | Anger den juridiska personen (företaget). |
+| **Kön**<br>mshr_gender<br>[alternativuppsättningen mshr_hcmpersongender](hr-admin-integration-payroll-api-gender.md) | Skrivskydd | Medarbetarens kön. |
 | **Entitets-ID för lönemedarbetare**<br>mshr_payrollemployeeentityid<br>*GUID* | Obligatoriskt<br>Systemgenererad | Ett systemgenererat GUID-värde som unikt identifierar medarbetaren. |
-| **Startdatum för anställning**<br>mshr_employmentstartdate<br>*Datum Tid Offset* | Skrivskydd<br>Obligatoriskt | Startdatumet för medarbetarens anställning. |
-| **ID för identifieringstyp**<br>mshr_identificationtypeid<br>*Sträng* |Skrivskydd<br>Obligatoriskt | Identifieringstypen som definierats för medarbetaren. |
-| **Slutdatum för anställning**<br>mshr_employmentenddate<br>*Datum Tid Offset* | Skrivskydd<br>Obligatoriskt |Slutet på medarbetarens anställning.  |
-| **ID för dataområde**<br>mshr_dataareaid_id<br>*GUID* | Obligatoriskt <br>Systemgenererad | Systemgenererat GUID-värde som identifierar den juridiska personen (företaget). |
-| **Giltig till**<br>mshr_namevalidto<br>*Datum Tid Offset* |  Skrivskydd<br>Obligatoriskt | Det datum då medarbetarinformationen slutar gälla. |
-| **Födelsedatum**<br>mshr_birthdate<br>*Datum Tid Offset* | Skrivskydd <br>Obligatoriskt | Medarbetarens födelsedatum |
-| **ID-nummer till**<br>mshr_identificationnumber<br>*Sträng* | Skrivskydd <br>Obligatoriskt |Det identifieringsnummer som definierats för medarbetaren.  |
+| **Startdatum för anställning**<br>mshr_employmentstartdate<br>*Datum Tid Offset* | Skrivskydd | Startdatumet för medarbetarens anställning. |
+| **ID för identifieringstyp**<br>mshr_identificationtypeid<br>*Sträng* |Skrivskydd | Identifieringstypen som definierats för medarbetaren. |
+| **Slutdatum för anställning**<br>mshr_employmentenddate<br>*Datum Tid Offset* | Skrivskydd |Slutet på medarbetarens anställning.  |
+| **ID för dataområde**<br>mshr_dataareaid_id<br>*GUID* | Skrivskydd <br>Systemgenererad | Systemgenererat GUID-värde som identifierar den juridiska personen (företaget). |
+| **Giltig till**<br>mshr_namevalidto<br>*Datum Tid Offset* |  Skrivskydd | Det datum då medarbetarinformationen slutar gälla. |
+| **Födelsedatum**<br>mshr_birthdate<br>*Datum Tid Offset* | Skrivskydd | Medarbetarens födelsedatum |
+| **ID-nummer till**<br>mshr_identificationnumber<br>*Sträng* | Skrivskydd |Det identifieringsnummer som definierats för medarbetaren.  |
 
 ## <a name="example-query-for-payroll-employee"></a>Exempelfrågeställning för lönemedarbetare
 

@@ -12,12 +12,12 @@ ms.search.region: Sweden
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 155eef93f9bd1e86fac39b876606ec22ce2e0c15
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2581a1658890dd13354627cc5e4052a58e531e411c2a2cd73f10783307612264
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818264"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6781685"
 ---
 # <a name="export-financial-information-for-auditors-in-sweden"></a>Exportera ekonomisk information för revisorer i Sverige
 

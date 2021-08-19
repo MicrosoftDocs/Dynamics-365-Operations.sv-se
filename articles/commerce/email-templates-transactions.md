@@ -2,7 +2,7 @@
 title: Skapa e-postmallar för transaktionshändelser
 description: I det här avsnittet beskrivs hur du skapar, överför och konfigurerar e-postmallar för transaktionshändelser i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,20 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bfc773bec035ceee151e2e2dd8925aa772747452
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2da1044cd332d841a8c18f7139d0d8c09bad95f446494034060e59416b4018b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019893"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718717"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Skapa e-postmallar för transaktionshändelser
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du skapar, överför och konfigurerar e-postmallar för transaktionshändelser i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Översikt
 
 Dynamics 365 Commerce tillhandahåller en färdig lösning för utskick av e-postmeddelanden som meddelar kunder om transaktionshändelser (t.ex. när en order har lagts, är klar för upphämtning eller har levererats). Det här avsnittet beskriver hur du skapar, överför och konfigurerar e-postmallar som används för att skicka transaktionsmeddelanden.
 
@@ -79,26 +77,33 @@ Följande platshållare hämtar och visar data som definieras på försäljnings
 | Namn på platshållare     | Platshållarens värde                                            |
 | -------------------- | ------------------------------------------------------------ |
 | customername         | Namnet på den kund som lade beställningen.               |
-| salesid              | Försäljningsorderns ID.                                   |
-| deliveryaddress      | Leveransadressen för levererade order.                     |
 | customeraddress      | Kundens adress.                                 |
 | customeremailaddress | E-postadressen som kunden angav i kassan.     |
+| salesid              | Försäljningsorderns ID.                                   |
+| orderconfirmationid  | Det korskanals-ID som genererades när en order skapades. |
+| channelid            | ID:t för detaljhandels- eller onlinekanal som ordern gjordes via. |
+| deliveryname         | Namnet som anges för leveransadressen.        |
+| deliveryaddress      | Leveransadressen för levererade order.                     |
 | deliverydate         | Leveransdatum.                                           |
 | shipdate             | Transportdatum.                                               |
 | modeofdelivery       | Leveranssätt för ordern.                              |
+| ordernetamount       | Det totala beloppet för ordern, minus total moms.         |
+| rabatt             | Orderns totala rabatt.                            |
 | avgifter              | Orderns totala kostnader.                             |
 | moms                  | Orderns totala moms.                                 |
 | summa                | Orderns totala belopp.                              |
-| ordernetamount       | Det totala beloppet för ordern, minus total moms.         |
-| rabatt             | Orderns totala rabatt.                            |
 | storename            | Namnet på den butik som lade beställningen.            |
 | storeaddress         | Adressen till den butik som lade beställningen.              |
 | storeopenfrom        | Öppningstiden för den butik som lade beställningen.         |
 | storeopento          | Stängningstiden för den butik som lade beställningen.         |
-| pickupstorename      | Namnet på den butik där ordern kommer att hämtas upp.     |
-| pickupstoreaddress   | Adressen till den butik där ordern kommer att hämtas upp.  |
-| pickupopenstorefrom  | Öppningstiden för den butik där ordern kommer att hämtas upp. |
-| pickupopenstoreto    | Stängningstiden för den butik där ordern kommer att hämtas upp. |
+| pickupstorename      | Namnet på den butik där ordern kommer att hämtas upp.\* |
+| pickupstoreaddress   | Adressen till den butik där ordern kommer att hämtas upp.\* |
+| pickupopenstorefrom  | Öppningstiden för den butik där ordern kommer att hämtas upp.\* |
+| pickupopenstoreto    | Stängningstiden för den butik där ordern kommer att hämtas upp.\* |
+| pickupchannelid      | Kanal-ID för butiken som har angetts för upphämtningssättet.\* |
+| packingslipid        | ID:t för följesedeln som genererades när rader i en order packades.\* |
+
+\*Dessa platshållare returnerar endast data när de används för **ordern klar för upphämtning** av meddelandetyp. 
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Platshållare för orderrad (försäljningsradnivå)
 
@@ -106,7 +111,10 @@ Följande platshållare hämtar och visar data för enskilda produkter (rader) i
 
 | Namn på platshållare               | Platshållarens värde |
 |--------------------------------|-------------------|
-| productid                      | Produkt-ID för raden. |
+| productid                      | <p>Produktens ID. Detta ID-konto för varianter.</p><p><strong>Observera:</strong> Denna platshållare har avaktiverats i syfte att använda **lineproductrecid**.</p> |
+| lineproductrecid               | Produktens ID. Detta ID-konto för varianter. Den identifierar unikt en artikel på variantnivå. |
+| lineitemid                     | Produkt-nivå-ID på produkten. (Det här ID:t tar inte hänsyn till varianter.) |
+| lineproductvariantid           | Produktvariantens ID. |
 | lineproductname                | Namnet på produkten. |
 | lineproductdescription         | Produktbeskrivningen. |
 | linequantity                   | Antalet enheter som beställts för raden, plus måttenheten (t.ex. **ea** eller **par**). |
@@ -125,6 +133,8 @@ Följande platshållare hämtar och visar data för enskilda produkter (rader) i
 | linedeliverydate               | Leveransdatumet för raden. |
 | linedeliverymode               | Leveranssättet för raden. |
 | linedeliveryaddress            | Leveransadressen för raden. |
+| linepickupdate                 | Upphämtningsdatum som kunden har angett för order där upphämtningssätt används. |
+| linepickuptimeslot             | Tidsintervallet för upphämtning som kunden har angett för order där upphämtningssätt används. |
 | giftcardnumber                 | Presentkortsnummer för produkter av typen presentkort. |
 | giftcardbalance                | Presentkortssaldo för produkter av typen presentkort. |
 | giftcardmessage                | Presentkortsmeddelande för produkter av typen presentkort. |
