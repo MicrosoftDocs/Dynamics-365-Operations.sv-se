@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 577d48e207c8ce5911d104e657101a8557100064
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 136e528093e6e73ffe090cea0c02a4cdbf787c5efc3d9c0664869c995a682daa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6340004"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720262"
 ---
 # <a name="rebate-management-module-overview"></a>Modul för rabatthantering – översikt
 
@@ -91,10 +91,9 @@ Användarna behöver inte längre hantera affärer eller villkor i två steg. Pr
 
 När rabatter beräknas skapar processen transaktioner som kan granskas innan bokföringen sker. En separat process bokför rabatthanteringstransaktioner. En journal, kreditfaktura eller debettransaktion kan sedan skapas vid bokföring till föreslagna transaktioner. Rapportutdrag och transaktionslistor kan erhållas för att säkerställa efterföljande, effektivitet och genomskinlighet.
 
-
 ## <a name="guaranteed-royalty-payments"></a>Så här ser det ut att vara royaltybetalningar
 
-I Rabatthantering gör automatisk generering av betalningar det möjligt att hantera royalties snabbt och enkelt, även om det gäller minimum. 
+I Rabatthantering gör automatisk generering av betalningar det möjligt att hantera royalties snabbt och enkelt, även om det gäller minimum.
 
 ## <a name="maximizing-spend-versus-rebates"></a>Maximera utgift jämfört med rabatter
 

@@ -2,7 +2,7 @@
 title: Vad är nytt eller ändrat i mobilappen Warehouse Management
 description: Det här ämnet visar en lista med nya och ändrade funktioner för varje frisläppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
 author: ivanv-microsoft
-ms.date: 06/07/2021
+ms.date: 07/30/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,38 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 61124728942c0b8162de9f687ae752773c47d07e
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: 43d1381e73d5659bfd6ae6c6d944b7e6918b681a4f89df7ad23abbed5b4a0d3c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261800"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720094"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Vad är nytt eller ändrat i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Detta ämne listar nya funktioner, korrigeringar, förbättringar och kända problem för varje släppt version av mobilappen Warehouse Management för Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="2070"></a>2.0.7.0
+
+### <a name="new-features-fixes-and-improvements-in-version-2070"></a>Nya funktioner, korrigeringar och förbättringar i version 2.0.7.0
+
+- Har lagt till ett avsnitt på sidan **Om** där den senast släppta versionen av appen kontrolleras.
+- Gör det enklare att snärta och svepa mellan sidor.
+- Ändrade ikonen för knappen stigande/fallande i arbetslistan.
+- Minskade marginalerna på kortet **Information** för mer plats för information.
+- Tillämpat olika prestandaförbättringar för att minska problemet med att appen blir långsammare med tiden.
+- Om det finns fler kontroller än de som får plats på skärmen leder det till sidindelning och kontrollen rullar inte längre på samma sätt som sidan.
+- Prioritera att visa det senast skannade värdet före att visa uppgiftens titel, så om de överlappar uppgiftstiteln kortas den av.
+- Åtgärdade olika problem som gjorde att systemet inte svarade har lösts.
+- Text på olika ställen skärs inte längre av på vissa språk.
+- Appen körs nu som standard i helskärmsläge.
+- Åtgärdade ett problem som medförde att skanningar ignorerades på huvudsidan för vissa enheter.
+
+### <a name="known-issues-in-version-2070"></a>Kända problem i version 2.0.7.0
+
+- På vissa enheter visas följande felmeddelande när du startar appen eller påbörjar en uppgift: "Det går inte att hitta någon lämplig vy för den angivna storleken." Om det här felmeddelandet visas på någon av dina enheter måste du nedgradera mobilappen Warehouse Management till version 2.0.6.0 på den enheten och vänta med uppgradering tills nästa version av appen släpps.
 
 ## <a name="version-2060"></a>Version 2.0.6.0
 
