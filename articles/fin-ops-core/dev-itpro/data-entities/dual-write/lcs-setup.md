@@ -1,8 +1,8 @@
 ---
 title: Inställning av dubbelriktad skrivning från Lifecycle Services
 description: I det här avsnittet beskrivs hur du ställer in en dubbelriktad anslutning från Microsoft Dynamics Lifecycle Services (LCS).
-author: RamaKrishnamoorthy
-ms.date: 05/11/2021
+author: laneswenka
+ms.date: 08/03/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 060734154607263b5fed80b21fc9355b513ea26e3b1be88498310905531dceaa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359373"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729053"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Inställning av dubbelriktad skrivning från Lifecycle Services
 
@@ -66,5 +66,18 @@ Om du vill ställa in dubbelriktad skrivning för en befintlig Dataverse-miljö 
 
 > [!NOTE]
 > Du kan inte avlänka miljöer med hjälp av LCS. Om du vill ta bort länken för en miljö, öppna arbetsytan **Dataintegration** i Finance and Operations-miljön och välj sen **Ta bort länk**.
+
+## <a name="linking-mismatch"></a>Koppla matchningsfel
+
+Det är möjligt att din LCS-miljö är länkad till en Dataverse instans, medan din skrivmiljö är kopplad till en annan Dataverse instans. Denna koppling av matchningsfel kan orsaka oväntade beteende, och det kan sluta med att data skickas till fel miljö. Den rekommenderade miljön att använda för skrivskrivning är den som skapas som en del av Power Platform integrationen, och på längre sikt är detta det enda sättet att upprätta en länk mellan olika miljöer.
+
+Om din miljö har en matchningsfel, visar LCS en varning på din miljöinformationssida, som liknar "Microsoft har upptäckt att din miljö är kopplad via Webbplatsskrivning till en annan destination än den som angetts i Power Platform integreringen, och det rekommenderas inte":
+
+:::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform integrationslänk stämmer inte överens.":::
+
+Om du stöter på det här felet finns det två alternativ, baserat på dina behov:
+
++ [Ta bort länken och koppla om dubbelskrivningsmiljöer (Återställ eller ändra länkning)](relink-environments.md#scenario-reset-or-change-linking) enligt specifikationen på din LCS -miljöinformation. Detta är det bästa alternativet, eftersom du kan köra det utan Microsofts stöd.  
++ Om du vill behålla din länk i dubbelskrivning kan du be om hjälp från Microsofts support för att ändra Power Platform integration för att använda din befintliga Dataverse miljö som dokumenterats i föregående avsnitt.  
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

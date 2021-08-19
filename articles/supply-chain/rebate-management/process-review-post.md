@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 82b8a4e6ba7ebea7df9f5dad5abc3dfc3ce2687d
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 1a9603df8fd3b2c81c37ca95fd1b13d0b6f4004a38b0cf86846486e3b5d41bfa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270771"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729420"
 ---
 # <a name="process-review-and-post-rebates"></a>Bearbeta, granska och bokföra rabatter
 
@@ -42,7 +42,70 @@ Den periodiska uppgiften **Beräkna FIFO-inköpspris** måste köras för att be
 
 Gå till **Rabatthantering \> Periodiska uppgifter \> Beräkna FIFO-inköpspris**. Välj **OK** för att köra beräkningen i dialogrutan som visas.
 
-## <a name="process-rebate-management-deals"></a>Bearbeta rabatthanteringserbjudanden
+## <a name="create-source-transactions"></a>Skapa källtransaktioner
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Du kan skapa försäljnings- eller inköpsorder som har källtransaktioner, antingen före eller efter att du skapar ett tillämpligt rabatthanteringserbjudande.
+
+Du kan ställa in varje erbjudanderad så det automatiskt skapas en rabattreservering genom att bokföra antingen leverans eller faktura för en försäljningsorder eller inköpsorder. Ställ in fältet **Transaktionstyp** för erbjudanderaden som *Leverans* eller *Faktura* och ställ in alternativet **Bearbeta vid bokföring** som *Ja*. Om fältet **Transaktionstyp** är inställt på *Order*, inaktiveras bearbetning vid bokföringen. För källtransaktioner som skapades efter att ett erbjudande aktiverats, kan du fortfarande bearbeta reserveringarna enligt beskrivningen i avsnittet [Bearbeta rabatthanteringserbjudande](#process-deals) senare i det här avsnittet.
+
+### <a name="enable-price-details"></a>Aktivera prisinformation
+
+Innan du kan skapa källtransaktioner måste du aktivera alternativet **Aktivera prisinformation** för kundreskontra.
+
+1. Gå till **Kundreskontra \> Inställningar \> Parametrar för kundreskontra**.
+1. På fliken **Priser** på snabbfliken **Prisinformation**, anger du alternativet **Aktivera prisinformation** som *Ja*.
+
+### <a name="create-a-source-transaction"></a>Skapa en källtransaktion
+
+Följ dessa steg för att skapa en källtransaktion.
+
+1. Gå till **Försäljning och marknadsföring \> Försäljningsorder \> Alla försäljningsorder**.
+1. Välj **Ny**.
+
+    Om du vill efterlikna det sätt som rabattanspråk genereras måste du skapa en försäljningsorder, där produkt och kvantitet berättigar kunden för en rabatt.
+
+1. Ange eller välj en kund som ska berättigas till rabatterbjudande i fältet **Kundkonto**.
+1. Skapa försäljningsordern genom att välja **OK**.
+1. På snabbfliken **Försäljningsorderrader** lägger du till en rad och ställer in följande fält för den:
+
+    - **Artikelnummer** – Ange en artikel som berättigar till en rabatt.
+    - **Kvantitet** – Ange en kvantitet som berättigar till ett rabatterbjudande som omfattar en rad där fältet **Bas** är inställt på *Kvantitet*.
+    - **Enhetspris** – Ange ett pris som berättigar till ett rabatterbjudande som omfattar en rad där fältet **Bas** är inställt på *Värde*.
+    - **Plats** – Välj en plats där produkten är tillgänglig och som berättigar till ett rabatterbjudande.
+    - **Distributionslager** – Välj ett distributionslager där produkten är tillgänglig och som berättigar till ett rabatterbjudande.
+
+1. På snabbfliken **Försäljningsorderrader**, i verktygsfältet, väljer du **Försäljningsorderrad \> Prisinformation**. Kommandot är endast tillgängligt om du har aktiverat prisinformation enligt föregående avsnittet.
+1. På sidan **Prisinformation** markerar du snabbfliken **Rabatthantering**. På snabbfliken visas alla rabatthanteringserbjudanden som gäller för den aktuella orderraden och det beräknade rabattbeloppet i ordervalutan. Observera att beloppen endast är uppskattningar av framtida rabattanspråk. De faktiska rabattbeloppen kan skilja sig. Här är några av de faktorer som kan påverka de faktiska beloppen:
+
+    - Den totala försäljningsvolymen som kunden har uppnått för ett periodiskt rabatterbjudande.
+    - Om kunden returnerade alla kvantiteter eller delkvantiteter.
+    - Om den tillämpliga försäljningsordern har uppnått transaktionstypen (*Order, Leverans* eller *Faktura*) som definierats för rabatthanteringserbjudandet.
+    - Erbjudandets **Utgående** värde. Ett tomt rabattbelopp visas för erbjudanden där **Utgående** är inställt som *Artikel*.
+
+1. Observera att avsnittet för **Marginalberäkning** på snabbfliken **Information** innehåller följande fält. Dessa fält läggs till av rabatthantering. Alla visar värden per enhet (men fälten på snabbfliken **Rabatthantering** visas totalvärden för raden).
+
+    - **Rabattbelopp för rabatthantering** (endast försäljningsorder)
+    - **Royaltybelopp för rabatthantering** (endast försäljningsorder)
+    - **Leverantörsrabattbelopp för rabatthantering** (försäljningsorder och inköpsorder)
+
+1. Stäng sidan **Prisinformation**.
+1. Om försäljningsordern inte berättigar till de rabatter som du just har visat, följer du dessa steg för att exkludera rabatter. (Vanligtvis exkluderar du dock inte rabatter.)
+
+    1. På snabbfliken **Försäljningsorderrader** väljer du relevant rad.
+    1. Ställ in alternativet **Exkludera från rabatthantering** till *Ja* på fliken **Pris och rabatt** på snabbfliken **Radinformation**. Det här alternativet gäller inte för inköpsorder. Dessutom exkluderas endast kundrabatter när alternativet är inställt som *Ja*. Kundens royaltyrabatter och leverantörsrabatter gäller fortfarande.
+
+1. Välj **Bokför följesedel** i gruppen **Generera** på fliken **Plocka och packa** i åtgärdsrutan.
+1. På snabbfliken **Parametrar** i fältet **Kvantitet** väljer du *Allt*.
+1. Välj **OK**.
+1. Om du uppmanas att bekräfta åtgärden väljer du **OK**.
+1. I åtgärdsrutan på fliken **Faktura** i gruppen **Generera**, klicka på **Faktura**.
+1. På snabbfliken **Parametrar** i fältet **Kvantitet** väljer du *Allt* eller *Följesedel*.
+1. Välj **OK**.
+1. Om du uppmanas att bekräfta åtgärden väljer du **OK**.
+
+## <a name="process-rebate-management-deals"></a><a name="process-deals"></a>Bearbeta rabatthanteringserbjudanden
 
 När du bearbetar ett erbjudande beräknar systemet alla relevanta rabatter och royalties som har ställts in. Endast valda erbjudanden som har beräkningsperioder som är klara att beräknas och som har statusen *Aktiv* kommer att bearbetas. När bearbetningen är klar genererar systemet en uppsättning transaktioner som du kan granska och sedan bokföra.
 
@@ -93,9 +156,34 @@ Istället för att bearbeta specifika avtal eller rader kan du köra ett batchjo
 1. På snabbfliken **Kör i bakgrunden** kan du ställa batchbearbetning och schemaläggningsalternativ efter behov. Inställningarna fungerar på samma sätt som de fungerar för andra typer av batchjobb.
 1. Välj **OK** för att köra och/eller planera beräkningen.
 
+### <a name="process-deals-by-using-the-rebate-workbench"></a>Bearbeta erbjudanden med workbench för rabatt
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Istället för att bearbeta specifika erbjudanden eller rader kan du använda *workbench för rabatt* för att bearbeta flera erbjudanden samtidigt. Om du vill kan du även använda postfilter och/eller ställa in ett återkommande schema. Du behöver inte markera några rader. Alla rader som uppfyller de datum- och filterkrav som du anger bearbetas av systemet.
+
+Om du vill bearbeta erbjudanden genom att använda workbench för rabatt följer du dessa steg.
+
+1. Gå till **Rabatthantering \> Rabatthanteringserbjudanden \> Workbench för rabatt**.
+1. I åtgärdsfönstret, på fliken **Workbench för rabatt** i gruppen **Bearbeta** väljer du ett av följande kommandon:
+
+    - **Bearbeta \> Reservera** – Reservera en uppsättning periodiseringar för varje relevant erbjudanderad, men bokför inte periodiseringen.
+    - **Process \> Rabatthantering** – Behandla en serie transaktioner som ger rabatten för varje erbjudanderad.
+    - **Bearbeta \> Avskrivning** – Bearbeta avvikelsen mellan reservering och rabatthantering som bokförts för varje källtransaktion för rabatterbjudandet och den angivna perioden.
+
+1. I dialogrutan **Rabatthantering** som visas i avsnittet **Period** , ange fälten **Från-datum** och **Till-datum** för att ange datumintervall för beräkningen.
+1. I avsnittet **Garantiperiod** anger du fälten **Från-datum** och **Till-datum** för att ange datumintervallet för garantier för beräkningen.
+1. På snabbfliken **Poster som ska ingå** kan du ställa in filter för att begränsa den uppsättning erbjudanden som batchjobbet kommer att bearbetas. Inställningarna fungerar på samma sätt som de fungerar för andra typer av batchjobb.
+1. På snabbfliken **Kör i bakgrunden** kan du ställa batchbearbetning och schemaläggningsalternativ efter behov. Inställningarna fungerar på samma sätt som de fungerar för andra typer av batchjobb.
+1. Välj **OK** för att köra och/eller planera beräkningen.
+
 ## <a name="view-and-edit-rebate-management-transactions"></a>Visa och redigera transaktioner för rabatthantering
 
 När du bearbetar en eller flera affärer skapar systemet transaktioner som du kan visa och kanske redigera innan du bokför dem.
+
+### <a name="view-and-edit-rebate-management-transactions-by-using-the-rebate-deals-list-page"></a>Visa och redigera transaktioner för rabatthantering genom att använda listsidan med rabatterbjudanden
+
+Följ dessa steg för att visa och redigera transaktioner för rabatthantering genom att använda listsidan med rabatterbjudanden.
 
 1. Gör något av följande:
 
@@ -120,6 +208,31 @@ När du bearbetar en eller flera affärer skapar systemet transaktioner som du k
 
         - Redigera värdet i fältet **Korrigerat belopp**.
         - I åtgärdsfönstret, välj **ange korrigering**. Ange sedan ett värde i listrutan som visas i fältet **Korrigerat belopp**.
+
+> [!NOTE]
+> Om du använder en anspråksprocess, när du behandlar nästa period kommer transaktionslistan att innehålla alla icke-begärda transaktioner från föregående bokföring, plus eventuella nya transaktioner för vald period.
+
+### <a name="view-and-edit-rebate-management-transactions-by-using-the-rebate-workbench"></a>Visa och redigera transaktioner för rabatthantering genom att använda workbench för rabatt
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Följ dessa steg för att visa och redigera transaktioner för rabatthantering genom att använda workbench för rabatt.
+
+1. Gå till **Rabatthantering \> Rabatthanteringserbjudanden \> Workbench för rabatt**.
+1. Ställ in fältet **Visa** till *Inte bokfört*.
+1. På sidan **Workbench för rabatt** visas en lista med transaktionerna. Varje transaktion innehåller relevant information. Informationen varierar beroende på transaktionstyp. På den här sidan kan du utföra följande åtgärder:
+
+    - Om du vill visa mer information om en transaktion markerar du den och väljer sedan fliken **Allmänt**, **Ekonomisk dimension** eller **Dimension**.
+    - Om du använder en anspråksprocess kan du markera transaktionerna som antingen anspråkstagna eller inte anspråkstagna. Välj relevanta rader och välj sedan, i åtgärdsfönstret, på fliken **Workbench för rabatt** ett av följande kommandon. (Du aktiverar anspråksprocesser på sidan [**Parametrar för rabatthantering**](rebate-management-parameters.md).)
+
+        - **Ställ in som ianspråkstagna** – Markera de valda transaktionerna som anspråkstagna.
+        - **Ställ in som inte ianspråkstagna** – Markera de valda transaktionerna som inte anspråkstagna.
+
+    - Om du vill bokföra anspråk på en eller flera rader markerar du de relevanta raderna. Sedan väljer du **Bokför** på fliken **Workbench för rabatt** i åtgärdsrutan. Knappen **Bokför** är tillgänglig för reserverings-, rabatt- och avskrivningstransaktioner. I dialogrutan **Bokför** ställs fälten **Från datum** och **Till datum** automatiskt in. Ange fältet **Bokföringsdatum** och välj **OK**.
+    - Om du vill justera beloppet som visas för en öppen eller icke-bokförd transaktion markerar du transaktionen och följer sedan ett av följande steg:
+
+        - Redigera värdet i fältet **Korrigerat belopp**.
+        - Sedan väljer du **Ange korrigering** på fliken **Workbench för rabatt** i åtgärdsrutan. Ange sedan ett värde i listrutan som visas i fältet **Korrigerat belopp**.
 
 > [!NOTE]
 > Om du använder en anspråksprocess, när du behandlar nästa period kommer transaktionslistan att innehålla alla icke-begärda transaktioner från föregående bokföring, plus eventuella nya transaktioner för vald period.
@@ -180,19 +293,89 @@ Istället för att bokföra transaktioner för specifika avtal eller rader kan d
 1. På snabbfliken **Kör i bakgrunden** kan du ställa batchbearbetning och schemaläggningsalternativ efter behov. Inställningarna fungerar på samma sätt som de fungerar för andra typer av batchjobb.
 1. Välj **OK** för att köra och/eller planera beräkningen.
 
-## <a name="review-rebate-management-journals"></a>Granska journaler för rabatthantering
+### <a name="post-transactions-by-using-the-rebate-workbench"></a>Bokför transaktioner med workbench för rabatt
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+När du har bearbetat reserverings-, rabatt- eller avskrivningstransaktioner följer du dessa steg och använder workbench för rabatt för att granska och bokföra de genererade transaktionerna för en eller flera specifika transaktionsrader för alla erbjudanden.
+
+1. Gå till **Rabatthantering \> Rabatthanteringserbjudanden \> Workbench för rabatt**.
+1. I rutnätet markerar du alla transaktionsrader som du vill bokföra. Du kan välja ej bokförda reserverings-, rabatt- och/eller avskrivningstransaktioner. Följande regler gäller:
+
+    - Systemet bokför även alla rader som har samma värde för **Rabatttransaktionsnummer** som de rader du väljer.
+    - Systemet bokför inga rader av transaktionstypen *Rabatt* som inte har markerats som anspråkstagna.
+    - Om du markerar rader som redan har bokförts hoppar systemet över de bokförda raderna.
+    - Knappen **Bokför** är endast tillgänglig om du väljer minst en icke bokförd rad.
+
+1. I åtgärdsfönstret, på fliken **Workbench för rabatt** i gruppen **Bearbeta**, väljer du **Bokför**.
+1. I dialogrutan **Bokför** ställer du in fältet **Bokföringsdatum**. Fälten **Från-datum** och **Till-datum** ställs in automatiskt baserat på det tidigaste värdet för **Från-datum** och det senaste värdet för **Till-datum** för de markerade raderna.
+1. Välj **OK** när du vill bokföra transaktioner.
+
+## <a name="review-rebate-management-journals"></a><a name="review-journals"></a>Granska journaler för rabatthantering
 
 När transaktionerna har bokförts kan du granska de journaler, dokument eller artiklar som de resulterar i. Måltransaktionerna för rabatter och royalties baseras på betalningstypen som har angetts i bokföringsprofilen och rabattens utdatatyp. Om till exempel rabattutleveransen är inställd på *Artikel* skapas en försäljningsorder för en kundrabatt och en inköpsorder skapas för en leverantörsrabatt. Dessa order kan visas via måltransaktionerna. Alternativt, om betalningen är inställd på att använda leverantörsreskontra, skapas en leverantörsfaktura för leverantören som är inställd på kunden för kundrabatter.
+
+### <a name="review-journals-by-using-the-rebate-deals-list-page"></a>Granska journaler genom att använda listsidan för rabatterbjudanden
 
 Granska journalposterna som är kopplade till ett rabatthanteringserbjudande genom att följa dessa steg.
 
 1. Öppna lämplig [listsida för rabatterbjudanden](rebate-management-deals.md) för den typ av erbjudande du vill arbeta med.
 1. Välj erbjudandet som du vill granska journalposter för.
 1. I åtgärdsfönstret, på fliken **Rabatthanteringserbjudanden** i gruppen **Transaktioner**, välj **Transaktioner** eller **Garantitransaktioner**, beroende på vilken typ av transaktioner som du vill visa.
-1. Kontrollera att fältet **Visa** är inställt på *Alla* eller *Bokfört*.
+1. Ställ in fältet **Visa** som *Allt* eller *Bokfört*.
 1. Sök efter och välj den transaktionssamling som du vill kontrollera och välj sedan en av följande knappar i åtgärdsfönstret. (Dessa knappar är endast tillgängliga när det finns relevanta bokföringar för den valda transaktionssamlingen.)
 
     - **Måltransaktioner** – Granska relevanta journaler och andra typer av dokument som genererades av den valda affären.
     - **Artiklar** - Granska relevanta försäljnings- eller inköpsorder som genererades av den valda affären.
 
 1. En lista över relevanta journaler, dokument eller artiklar visas. Om du vill visa mer information om en journal, ett dokument eller ett objekt väljer du dess rad och väljer sedan i åtgärdsfönstret **Visa information**.
+
+### <a name="review-journals-by-using-the-rebate-workbench"></a>Granska journaler med workbench för rabatt
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+För att granska journaler med workbench för rabatt följer du dessa steg.
+
+1. Gå till **Rabatthantering \> Rabatthanteringserbjudanden \> Workbench för rabatt**.
+1. Ställ in fältet **Visa** som _Allt_ eller _Bokfört_.
+1. Sök reda på och välj den rad som du vill granska. I åtgärdsfönstret, på fliken **Workbench för rabatt** i gruppen **Visa**, väljer du sedan **Måltransaktioner**. Den här knappen är enbart tillgänglig om det finns relevanta bokföringar för den valda raden.
+1. En lista över relevanta journaler, dokument eller artiklar visas. Om du vill visa mer information om en journal, ett dokument eller ett objekt väljer du dess rad och väljer sedan i åtgärdsfönstret **Visa information**.
+
+## <a name="rebate-management-transactions-on-the-deduction-workbench"></a>Transaktioner för rabatthantering i workbench för avdrag
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+När du bokför en rabatthanteringstransaktion som har något av följande värden för **Betalningstyp** skapar systemet en kundavdragsjournal eller en fritextfaktura för det relevanta kundkontot:
+
+- Kundavdrag
+- Momsfaktura och kundavdrag
+- Handelsutgift
+- Rapportering
+
+När en måltransaktion har skapats och bokförts, blir den tillgänglig som en öppen transaktion på sidan **Workbench för avdrag** (**Försäljning och marknadsföring \> Handelsavdrag \> Avdrag \> Workbench för avdrag**). Öppna transaktioner har värdet **Anspråkstyp** för *Rabatthantering* och ett värde för **Rabattransaktionsnummer** är tillgängligt för spårning. Datumet ställs in som bokföringsdatum för måltransaktionen Rabatthantering. För att använda workbench för avdrag när du vill kvitta öppna transaktioner mot befintliga avdrag för samma kundkonto ska du välja **Underhåll \> Matcha** i åtgärdsrutan.
+
+Mer information finns i [Hantera avdrag med workbench för avdrag](deduction-workbench.md).
+
+## <a name="purge-unposted-transactions"></a>Rensa ej bokförda transaktioner
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+När du har bearbetat reserverings-, rabatt- eller avskrivningstransaktioner följer du dessa steg för att rensa valda, ej bokförda transaktioner.
+
+1. Gå till **Rabatthantering \> Rabatthanteringserbjudanden \> Workbench för rabatt**.
+2. Ställ in fältet **Visa** till *Inte bokfört*.
+3. Sök efter och välj de transaktioner som ska raderas. I åtgärdsfönstret, på fliken **Workbench för rabatt** i gruppen **Bearbeta**, väljer du sedan **Rensa**.
+4. Välj **OK** för att radera transaktionerna som inte bokförts.
+
+## <a name="cancel-a-posted-provision"></a>Annullera en bokförd reservering
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+När du har bearbetat och bokfört en reservering följer du dessa steg för att annullera bokförda reserveringstransaktioner.
+
+1. Gå till **Rabatthantering \> Rabatthanteringserbjudanden \> Workbench för rabatt**.
+2. Ställ in fältet **Visa** som *Bokfört*.
+3. Sök efter och välj de reserveringstransaktioner som ska annulleras. I åtgärdsfönstret, på fliken **Workbench för rabatt** i gruppen **Bearbeta**, väljer du sedan **Annullera reservering**.
+4. Välj **OK** för att återföra transaktionerna.
+
+Dessa reserveringsåterföringar visas också i relevanta [Rabatthanteringsjournaler](#review-journals).

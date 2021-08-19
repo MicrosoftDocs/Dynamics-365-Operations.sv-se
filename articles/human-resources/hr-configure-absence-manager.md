@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8a8250b36d2774ac308637253b780592df316cd
-ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
+ms.openlocfilehash: 050874628388629569751afae201ef346af020da09c81d24a69e1a4b5eb41b6f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6639616"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6732355"
 ---
 # <a name="configure-the-absence-manager-role"></a>Konfigurera rollen för frånvarochefen
 
@@ -89,16 +89,21 @@ Medarbetarna måste ha rollen Frånvaroansvarig om de ska kunna godkänna eller 
 
 ## <a name="absence-manager-workspace"></a>Arbetsyta för frånvaroansvarig
 
-I arbetsytan **Självbetjäning för medarbetare** visar fliken **Frånvaroansvarig** visar frånvaroinformation om de anställda som är tilldelade frånvarohanteraren i ledighetshierarkin.
+I arbetsytan **Självbetjäning för medarbetare** visar fliken **tjänstledighetshantering** visar frånvaroinformation om de anställda som är tilldelade frånvarohanteraren i ledighetshierarkin. Det finns några alternativ tillgängliga för frånvarochefen: 
+ - Granska ansökningar om ledighet.</br>
+ - Skicka en ledighetsansökan på uppdrag av en medarbetare.</br>
+ - Visa alla medarbetare som tilldelats dem som en del av tjänstledighetshierarkin.</br>
+ - Visa kalendern för frånvaroansvarig.</br>
 
-På fliken **Tjänstledighet och frånvaro** är följande alternativ tillgängliga för varje medarbetare:
-
-- **Semester** – Visa saldon, godkänd semester och begäran om semester för den valda medarbetaren.
-- **Tjänstledighetssaldon** – Visa en lista över saldona för de olika ledighetsplanerna för den valda medarbetaren.
+Det finns två flikar i arbetsytan för **tjänstledighetshantering**:
+ - **Ledighetsansökan**: På den här fliken visas alla pågående ledighetsansökningar som frånvarochefen kan godkänna. Frånvarochefen kan välja flera poster och vidta åtgärder på dem samtidigt. Om visning av tjänstledighet mellan företag har aktiverats, visar den här listan väntande ledighetsansökningar för alla juridiska personer som de har åtkomst till. I annat fall visas pågående förfrågningstid för den juridiska personen som är vald. </br>
+ - **Alla medarbetare**: På den här fliken visas alla medarbetare som är tilldelade frånvarochefen i hierarkin Lämna hierarkin. Det finns ett par alternativ för varje medarbetare:
+    - **Begära ledighet** – Skicka en ny ledigtbegäran för den valda medarbetaren.</br>
+    - **Semester** – Visa saldon, godkänd semester och begäran om semester för den valda medarbetaren.</br>
 
 ## <a name="approve-time-off-requests"></a>Godkänn ansökningar om ledighet
 
-Frånvarochefer kan godkänna eller neka ledighetsansökningar för medarbetare. De kan också skapa förfrågningar på uppdrag av medarbetare, efter behov.
+Frånvarochefer kan godkänna eller neka ledighetsansökningar för medarbetare. 
 
 > [!IMPORTANT]
 > Innan frånvarochefer kan godkänna eller neka ledighetsansökningar måste arbetsflödet för tjänstledighetsansökningar konfigureras till att tilldela dem ledighetsansökningar för granskning.
@@ -109,15 +114,13 @@ Frånvarochefer kan godkänna eller neka ledighetsansökningar för medarbetare.
 >
 > Mer information om hur du skapar arbetsflödet för ledighetsförfrågan finns i [skapa ett arbetsflöde för tjänstledighetsbegäran](hr-leave-and-absence-workflow.md).
 
-1. I arbetsytan **Självbetjäning för medarbetare** välj fliken **Frånvaroansvarig**.
+1. I arbetsytan **Självbetjäning för medarbetare** välj fliken **tjänstledighetshantering**.
 
-2. På fliken **Frånvaroansvarig** välj önskad medarbetare.
+2. På fliken **Ansökningar om ledighet**, välj begäran om ledighet som du vill vidta åtgärder. Du kan markera flera poster i listvyn.
 
-3. Välj **Detaljer** och sedan **Semester**.
+3. Använd åtgärdsknapparna högst upp i rutnätet om du vill godkänna, neka eller delegera förfrågningen. 
 
-4. Hitta en begäran för förfrågningen och välj alternativet **Godkännande**. Du kan sedan välja ett alternativ för att godkänna eller avbryta ledighetsansökan.
-
-Statusvärdet **Avbryt** anger att förfrågningen har avslagits. Statusvärdet **Slutförd** anger att förfrågningen har godkänts.
+Alternativt kan användaren också använda panelen **Ansökningar om ledighet** till vänster för att navigera till listan över alla lediga arbetsobjekt. 
 
 ## <a name="view-time-off-in-the-calendar"></a>Visa ledighet i kalendern
 
@@ -126,7 +129,7 @@ Användare med rollen Frånvaroansvarig kan visa ledighetsansökningar i sin kal
 > [!IMPORTANT]
 > En systemadministratör måste konfigurera visningsalternativen för frånvaroansvarigkalendern. På sidan **Parametrar för tjänstledighet och frånvaro** på fliken **Kalender** finns det alternativ för att dölja eller visa födelsedagar, frånvaro utan detaljer, frånvaro och väntande ledighetsförfrågningar. Det finns också ett alternativ för att filtrera kalendervyalternativet efter arbetstyp.
 
-1. I arbetsytan **Självbetjäning för medarbetare**, välj **Frånvaroansvarig** och sedan **Frånvaroansvarigkalendern**.
+1. I arbetsytan **Självbetjäning för medarbetare**, välj **tjänstledighetshantering** och sedan **Frånvaroansvarigkalendern**.
 
 2. I fältet **Datum** anger du önskade datum.
 

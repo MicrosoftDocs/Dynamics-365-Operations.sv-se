@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5387aaf5a5e0d20ac22595fbea86a25fdf38a771
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e349df6b7e2a627562c65b961385625b0ad95b5423fa25b9139af3a8a227321b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831132"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733334"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemstyrd arbetssekvensering
 
@@ -140,7 +140,7 @@ För att arbeta igenom scenariot genom att använda värdena som presenteras i d
 
 ### <a name="location-directives"></a>Platsdirektiv
 
-Om du använder Contoso-standarddata behöver frågan för åtgärdsrad för platsdirektiv inte ändras. Om du vill vara säker på att platsdirektiven kommer att fånga in artiklarna på försäljningsordern när du tillämpar funktionen i en icke-Contoso-miljö, ska du dock skapa ett nytt lokaliseringsdirektiv. Kontrollera inställningarna i demomiljön enligt följande instruktioner.
+Om du använder standard Contoso-data behöver frågan för åtgärd för platsdirektiv inte ändras. Om du vill vara säker på att platsdirektiven kommer att fånga in artiklarna på försäljningsordern när du tillämpar funktionen i en icke-Contoso-miljö, bör du dock skapa ett nytt platsdirektiv. Kontrollera inställningarna i demomiljön enligt följande instruktioner.
 
 1. Gå till **Lagerstyrning** \> **Ställ in** \> **Platsdirektiv**.
 1. Välj **Inköpsorder** i fältet *Försäljningsarbetsorder*.

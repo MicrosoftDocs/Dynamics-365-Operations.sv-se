@@ -2,7 +2,7 @@
 title: Modul för mediegalleri
 description: Det här avsnittet handlar om modul för mediegalleri och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346726"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733207"
 ---
 # <a name="media-gallery-module"></a>Modul för mediegalleri
 
@@ -56,6 +56,10 @@ I exemplet nedan är en inköpsrruta på ett PDP-program värd för produktbilde
 | Bilder | Bilder som väljs från webbplatsskaparen för mediebibliotek | Förutom att de återges från en produkt kan bilder granskas för en modulen mediegalleriet. Dessa bilder kommer att läggas till alla produktbilder som finns tillgängliga. Den här funktionen är tillgänglig i Commerce version 10.0.12. |
 | Miniatyrorientering | **Lodrät** eller **vågrät** | Den här egenskapen anger om miniatyrbilder ska visas i en lodrät remsa eller som en vågrät remsa. |
 | Dölj huvudproduktbilder för variant | **Sant** eller **falskt** | Om denna egenskap anges som **True** kommer, när en variant väljs, bilder på huvudprodukten att döljas såvida varianten inte är bildfri. Egenskapen påverkar inte produkter som inte har några varianter. |
+| Uppdatera media vid dimensionsurval | **Sant** eller **falskt** | Om den här egenskapen är inställd på **True**, bilder i mediebiblioteket kommer att uppdateras när någon dimension (t.ex. färg, stil eller storlek) väljs och om en bild är tillgänglig. Denna egenskap underlättar bläddringsupplevelsen eftersom inte alla produktvariantdimensioner måste väljas för att motsvarande bild ska uppdateras. Egenskapen är tillgänglig på fliken **Avancerat**. |
+
+> [!IMPORTANT]
+> Egenskapen **Uppdatera media för dimensionsurval är tillgänglig** i versionen 10.0.21 av Commerce-versionen. De kräver att paketversion 9.31 för Commerce-modulens bibliotek är installerad.
 
 Följande illustration visar ett exempel på en modul mediegalleri där helskärms- och zoomningsalternativen är tillgängliga.
 
