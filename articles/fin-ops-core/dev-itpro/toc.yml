@@ -14,6 +14,8 @@
               items:
                 - name: Nyheter och ändringar på Platform updates startsida
                   href: get-started/whats-new-home-page.md
+                - name: Platform updates för version 10.0.21 (oktober 2021)
+                  href: get-started/whats-new-platform-updates-10-0-21.md
                 - name: Platform updates för version 10.0.20 (augusti 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Platform updates för 10.0.19 (juni 2021)
@@ -446,6 +448,8 @@
                       href: deployment/onprem-adfscompatibility.md
                     - name: Skripts för lokal agent för fördistribution och efterdistribution
                       href: lifecycle-services/pre-post-scripts.md
+                    - name: Distributionskonfigurationer för den lokala agenten
+                      href: deployment/onprem-localagent-options.md
                     - name: Uppdatera den lokala agenten
                       href: lifecycle-services/update-local-agent.md
                 - name: Felsökning

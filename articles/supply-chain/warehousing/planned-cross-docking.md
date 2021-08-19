@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 9c31b8dd7d69fee40ecefb6c6bc81c9c2dd17ef7
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 81888e0703c53333ab9697c0445270f2f40c7b9ba02f3ba5fa728aef0b78b3a6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730020"
 ---
 # <a name="planned-cross-docking"></a>Planerad direktleverans
 
@@ -117,9 +117,12 @@ Planerad direktleverans är implementerad som en lastbokföringsmetod. När du h
     - **Löpnummer:** *1*
     - **Leveranskälla:** *inköpsorder*
 
+> [!NOTE]
+> Du kan ställa in en frågeställning för att kontrollera när en specifik direktleveransmall används. Frågan för direktleveransmallar har bara *inventTable*-registret (artiklar) och den inre sammanfogade tabellen *WHSInventTable* (WHS-artiklar). Om du vill lägga till andra register i frågan kan du sammanfoga dem genom att bara använda *finns sammankopplingar* eller *finns inte sammankopplingar*. När du filtrerar på de sammanfogade registren hämtas en post från huvudregistret för varje matchande post i det sammanfogade registret. Om sammanfogningstypen är *finns sammanfogning* avslutas sökningen efter att den första matchningen har hittats. Om du till exempel sammanfogar registret för försäljningsorderraden till registret för artiklar validerar och returnerar systemet artiklar för vilka minst en försäljningsorderrad har det definierade villkoret. Data hämtas i praktiken från det överordnade (artikel) registret och inte från det underordnade registret (försäljningsorderraden). Därför går det inte att från början filtrera efter källdokument som försäljningsorderrader eller kunder.
+
 ### <a name="create-a-work-class"></a>Skapa en arbetsklass
 
-1. Gå till **Lagerstyrning \> Inställningar \> Arbete \> Arbetsklasser**.
+1. Gå till **Warehouse management \> Inställningar \> Arbete \> Arbetsklasser**.
 1. I åtgärdsfönstret, välj **Ny** för att skapa en arbetsklass.
 1. Ange följande värden.
 
@@ -151,6 +154,9 @@ Planerad direktleverans är implementerad som en lastbokföringsmetod. När du h
     - **Arbetsklass-ID:** *CrossDock*
 
 1. Välj **Spara** och bekräfta att kryssrutan **Giltig** är markerad för mallen *51 direktleverans*.
+1. Valfritt: Välj **Redigera fråga** för att ställa in kriterier som ska styra när och var arbetsmallen används.
+
+    Du kan ställa in en frågeställning för att kontrollera när en specifik arbetsuppgiftsmall används. Du kan till exempel ange att en mall bara kan användas för arbete på en viss plats. Om du vill att arbetsuppgiftsmallen för direktleveransen ska användas på en viss plats måste du filtrera fältet **Startplats**, inte fältet **Plats**, eftersom skapa arbetsuppgift för inkommande processerna (inköp, direktleverans och lagerpåfyllnad) börjar från placeringsraden. När arbetsuppgift skapas anger platsdirektivet i fältet **Plats** placeringsplats. Plockplatsen lagras dock i fältet **Startplats**.
 
 > [!NOTE]
 > Arbetsklass-ID för arbetstyperna *Plocka* och *Placera* måste vara samma.
