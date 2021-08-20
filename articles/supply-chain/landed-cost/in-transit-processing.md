@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ecf8caa7f31c560af2cbc929a37f3ca02bd0da44
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d4503b6939e3d01ae5bcf1d79c1f85d39348fbb6233cfb7a965f84f3a3b0699a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021210"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744808"
 ---
 # <a name="goods-in-transit-processing"></a>Bearbetning av varor på väg
 
@@ -104,6 +104,7 @@ Du kan också ta emot varor genom att skapa en införseljournal. Du kan skapa en
 1. Öppna den färd, behållaren eller folio.
 1. I åtgärdsfönstret, på fliken **Hantera** i gruppen **Funktioner** markerar du **Skapa införseljournal**.
 1. I dialogrutan **Skapa inköpsorder** ställ in följande värden:
+
     - **Initiera kvantitet** – Ange detta alternativ till *Ja* om du vill ställa in kvantiteten från kvantiteten under transport. Om det här alternativet ställs in på *Nej* ges ingen standardkvantitet från varor på väg rader.
     - **Skapa från varor på väg** - Ange det här alternativet till *Ja* för att ta kvantiteter från de valda transitraderna för den markerade färden, behållare eller folio.
     - **Skapa från orderrader** – Ange det här alternativet till *Ja* om du vill ange standardkvantiteten i införseljournalen från inköpsorderraderna. Standardkvantiteten i införseljournalen kan endast anges på det här sättet om kvantiteten på inköpsorderraden matchar kvantiteten på order för varor på väg.
@@ -140,4 +141,21 @@ Hemtagningskostnad lägger till en ny arbetsordertyp som heter *Varor på väg* 
 
 ### <a name="work-templates"></a>Arbetsmallar
 
+I avsnittet beskrivs funktioner som modulen **Hemtagningskostnad** lägger till i arbetsmallar.
+
+#### <a name="goods-in-transit-work-order-type"></a>Arbetsordertyp för varor på väg
+
 Hemtagningskostnad lägger till en ny arbetsordertyp som heter *Varor på väg* på sidan **Arbetsmallar**. Denna arbetsordertyp ska konfigureras på samma sätt som [arbetsordermallar för inköpsorder](/dynamicsax-2012/appuser-itpro/create-a-work-template).
+
+#### <a name="work-header-breaks"></a>Arbetsrubrikuppdelningar
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Arbetsmallar som har arbetsordertypen *Varor på väg* kan konfigureras att dela arbetsuppgiftsrubriker. På sidan **Arbetsmallar** följer du något av dessa steg:
+
+- Ange max för arbetsuppgiftsrubrik på fliken **Allmänt** för mallen. Dessa max fungerar på samma sätt som de fungerar för arbetsmallar för inköpsorder. (Mer information finns i [arbetsmallar för inköpsorder](/dynamicsax-2012/appuser-itpro/create-a-work-template).)
+- Använd knappen **Arbetsuppgiftshuvudet delas** för att definiera när nya arbetsuppgiftsrubriker ska skapas i systemet baserat på fält som används vid sortering. Om du till exempel vill skapa ett arbetshuvud för varje container-ID, väljer du **Redigera fråga** i åtgärdsrutan och lägger sedan till fältet **Container-ID** på fliken **Sortera** i frågeredigeraren. Fält som läggs till på fliken **Sortering** är tillgängliga för markering som *grupperingsfält*. För att ställa in grupperade fält väljer du **Arbetsuppgiftshuvudet delas** i åtgärdsrutan och markerar kryssrutan i kolumnen **Gruppera efter detta fält** för varje fält som du ska använda som grupperingsfält.
+
+Hemtagningskostnaden [skapar en övertransaktion](over-under-transactions.md) om den registrerade kvantiteten överstiger den ursprungliga orderkvantiteten. När en arbetsuppgiftsrubrik har slutförts uppdaterar systemet status för lagertransaktionerna för den huvudsakliga orderkvantiteten. Den uppdaterar emellertid först den kvantitet som är kopplad till övertransaktionen när det huvudsakliga har köpts in helt.
+
+Om du avbryter en arbetsuppgiftsrubrik för en övertransaktion som redan har registrerats, reduceras övertransaktionen först med den annullerade kvantiteten. När övertransaktionen har reducerats till kvantiteten 0 (noll) tas posten bort och eventuella ytterligare kvantiteter tas bort från den huvudsakliga orderkvantiteten.

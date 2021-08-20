@@ -2,7 +2,7 @@
 title: Cookie-kompatibilitet
 description: I det här avsnittet beskrivs överväganden för cookie-efterlevnad och standardprinciper som ingår i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/01/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71b2e0e8d0a7db6cbbc8b9b4024b067bd5c6a2a1
-ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
+ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "6333079"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747707"
 ---
 # <a name="cookie-compliance"></a>Cookie-kompatibilitet
 
@@ -54,6 +54,10 @@ I följande tabell visas den aktuella referenslistan över cookies som placerats
 | \_msdyn365___muid_                            | Används om Experimentering har aktiverats för miljön; används som användar-ID i experimenteringssyfte. | 1 år |
 | \_msdyn365___exp_                             | Används om Experimentering har aktiverats för miljön; används för att mäta belastningsutjämning.         | 1 timma |
 | d365mkt                                       | Används om platsbaserad identifiering för att spåra en användares IP-adress för förslag till butiksplats aktiveras i Commerce-webbplatsskaparen på **Webbplatsinställningar \> Allmänt \> Aktivera platsbaserad butiksdetektering**.      | 1 timma |
+| \_msdyn365___tuid_                           | Används endast om aktivering av omvärdering har aktiverats för en miljö. genererar ett GUID som fungerar som användar-ID. Värdet ändras om en användares inloggningsstatus ändras.      | 1 år |
+| \_msdyn365___aud_0                          | Lagrar segmentvärden som används vid mål och används bara om mål ska konfigureras på en sida eller i ett fragment som en webbplatsanvändaren. Denna placeras endast om segmentvärdena kommer från en segmenteringsleverantör som är tredje part.      | 7 dagar |
+| \_msdyn365___aud_1                           | Lagrar segmentvärden som används vid mål och används bara om mål ska konfigureras på en sida eller i ett fragment som en webbplatsanvändaren. Denna placeras endast om segmentvärdena kommer från en segmenteringsleverantör som är tredje part.      | 7 dagar |
+| \_msdyn365___aud_2                           | Lagrar segmentvärden som används vid mål och används bara om mål ska konfigureras på en sida eller i ett fragment som en webbplatsanvändaren. Denna placeras endast om segmentvärdena kommer från en segmenteringsleverantör som är tredje part.      | 7 dagar |
 
 Om en webbplatsanvändare väljer några sociala medialänkar på en webbplats kommer cookies i följande register även att spåras i webbläsaren.
 
