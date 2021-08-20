@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: e7925206f3c060c6332de9d4972c8a7fb0066be2
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d0e6cce8f7a90cd1624e64023a1b51fd02d12152f874e13ce2e5d22af16fe173
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023588"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6782853"
 ---
 # <a name="calculate-tds-invoices-using-purchase-order-form-and-sales-order-form"></a>Beräkna TDS-fakturor med hjälp av inköpsorderformulär och försäljningsorderformulär
 
@@ -48,7 +48,7 @@ Det här ämnet visar en lista med stegen för beräkning för avdragen moms vid
 
 7. Välj **Källskatt** för att öppna sidan **Temporära källskattetransaktioner**. Visa följande fält i det övre fönstret på sidan **Temporära källskattetransaktioner**.
 
-   - **Total källskatt** - Total TDS beräknad för transaktionen för TDS-gruppen.
+   - **Käll** **skatte** **belopp** **i** **total** - Total beräknad TDS för transaktionen för TDS-gruppen.
 
    - **Värde** – Den totala procentsatsen som används för att beräkna TDS för transaktionen. Den totala procentsatsen baseras på formeln som definieras för TDS-momskoder som är kopplade till TDS-gruppen.
 

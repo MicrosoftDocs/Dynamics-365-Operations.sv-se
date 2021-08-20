@@ -2,7 +2,7 @@
 title: ER-målstyp för e-post
 description: I det här avsnittet beskrivs hur du konfigurerar en e-post-destination för varje MAPP- eller FIL-komponent i ett elektroniskt rapporteringsformat (ER).
 author: NickSelin
-ms.date: 12/03/2020
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f2d8d441ad742252f3be7dc207544387f5224c37
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 46817197f3b0938fb325b2b3ebefbee41b5e4583092e521e6a8dae70d78b0970
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6348006"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769329"
 ---
 # <a name="email-er-destination-type"></a>ER-målstyp för e-post
 
@@ -42,23 +42,43 @@ Du kan också [gruppera](#grouping) flera **mapp**- eller **fil**-komponenter sa
 
 Flera grupper av komponenter kan konfigureras för en enda ER-formatkonfiguration. På det här sättet kan du konfigurera ett e-postmål för varje grupp komponenter och ett e-postmål för varje komponent.
 
-## <a name="configure-an-email-destination"></a>Konfigurera en e-postdestination
+## <a name="enable-an-email-destination"></a>Aktivera e-postmål
 
-För att skicka en utdatafil eller flera utdatafiler via e-post ska du välja sidan **Elektronisk rapportering och destination** på **fildestination** FastTab, välja en komponent eller en grupp av komponenter i rutnätet och sedan välja **inställningar**. I dialogrutan **Målinställningar** som visas på fliken **E-post** anger du alternativet för **Aktiverad** som **Ja**. Du kan sedan ange e-postmottagare samt redigera e-postmeddelandets ämne och brödtext. Du kan antingen skapa konstant text för e-postmeddelandets ämne eller använda [ER-formler](er-formula-language.md) för att skapa e-posttexter dynamiskt.
+Följ de här stegen om du vill skicka en eller flera utdatafiler med e-post.
 
-Du kan konfigurera e-postadresser för ER på två sätt. Konfigurationen kan slutföras på samma sätt som funktionen utskriftshanterings slutför den, eller så kan du lösa en e-postadress genom att använda en direkt referens till ER-konfigurationen via en formel.
+1. På sidan **Elektronisk rapporteringsdestination** på snabbfliken **Fildestination**, välj en komponent eller grupp av komponenter i rutnätet.
+2. Välj **Inställningar** och sedan i dialogrutan **Målinställningar** på fliken **E-post** ange alternativet **Aktiverad** till **Ja**.
 
 [![Ange alternativet för Aktivera som Ja för ett e-postmål.](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
 
+## <a name="configure-an-email-destination"></a>Konfigurera en e-postdestination
+
+Du kan ange e -postavsändare och e -postmottagare och du kan redigera e-postmeddelandets ämne och brödtext. Du kan skapa konstanta texter mailets rubrik och brödtext, eller använda ER-[formler](er-formula-language.md) för att skapa e-posttexter dynamiskt.
+
+Som standard skickas ett e-postmeddelande på uppdrag av den aktuella användaren. Om du vill ange en annan e-postavsändare måste du konfigurera fältet **Från**.
+
+> [!NOTE]
+> När en e-postdestination är konfigurerad visas fältet **Från** endast för användare som har säkerhetsbehörighet `ERFormatDestinationSenderEmailConfigure`, **Konfigurera avsändarens e -postadress för destinationer i ER-format**.
+>
+> När en e -postdestination erbjuds för ändring [körtid](electronic-reporting-destinations.md#security-considerations), visas endast fältet **Från** för användare som har `ERFormatDestinationSenderEmailMaintain` säkerhetsbehörighet, **Behåll avsändarens e -postadress för ER -formatmålet**.
+>
+> När fältet **Från** är konfigurerat för att använda en annan e-postadress än den nuvarande användarens, antingen behörigheten **Skicka som** eller **Skicka på uppdrag för** måste vara korrekt [ange](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) i förväg. Annars kastas följande undantag vid körning: "Det går inte att skicka e -post som \<from email account\> från \<current user account\> kontot, kontrollera "Skicka som"-behörigheten på \<from email account\>."
+
+Du kan konfigurera fältet **Från** för att returnera mer än en e -postadress. I det här fallet används den första adressen i listan som avsändaradress i e-post.
+
+Om du vill ange e-postmottagare måste du konfigurera fälten **Till** och **Kopia** (valfritt).
+
+Du kan konfigurera e-postadresser för ER på två sätt. Konfigurationen kan slutföras på samma sätt som funktionen utskriftshanterings, eller så kan du lösa en e-postadress genom att använda en direkt referens till ER-konfigurationen via en formel.
+
 ## <a name="email-address-types"></a>E-postadresstyper
 
-Om du väljer **Redigera** bredvid fältet **Till** eller **Kopia** i dialogrutan **Målinställningar** visas enbart dialogrutan **E-post**. Välj **Lägg till** och välj sedan vilken typ av e-postadress som ska användas. Två typer stöd för närvarande: **Utskriftshanterings-e-post** och **Konfigurations-e-postmeddelande**.
+Om du väljer fält **Redigera** bredvid **Från**, **Till** eller **Kopia** i dialogrutan **Målinställningar** visas enbart dialogrutan **E-post från**, **E-post till** eller **E-post kopia** visas. Där kan du konfigurera avsändare och e-postmottagare. Välj **Lägg till** och välj sedan vilken typ av e-postadress som ska användas. Två typer stöd för närvarande: **Utskriftshanterings-e-post** och **Konfigurations-e-postmeddelande**.
 
 [![Välja typ av e-postadress.](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### <a name="print-management-email"></a>E-postmeddelande om utskriftshantering
 
-Om du väljer **Utskriftshanterings-e-post** som e-postadresstyp kan du ange fasta e-postadresser i dialogrutan **E-post till** genom att ställa in följande fält:
+Om du väljer **Utskriftshanterings-e-post** som e -postadresstyp kan du ange fasta e -postadresser i dialogrutan **E-post från**, **E-post till** eller **E-post kopia** genom att ställa in följande fält:
 
 - I fältet **E-postkälla** väljer du **Ingen**.
 - I fältet **Ytterligare e-postadresser, åtskilda av ";"** anger du de fasta e-postadresserna.
@@ -74,6 +94,7 @@ Du kan också få e-postadresser från kontaktinformationen för den part som du
 - Sökande
 - Potentiell leverantör
 - Otillåten leverantör
+- Juridisk person
 
 Om du till exempel vill konfigurera ett e-postmål för ett ER-format som används för att bearbeta leverantörsbetalningar, väljer du rollen **Leverantör**.
 
@@ -106,7 +127,7 @@ Om du vill ange vilken typ av e-postadresser som ska användas vid körning väl
 
 ### <a name="configuration-email"></a>Konfigurations-e-postmeddelande
 
-Välj **Konfigurations-e-post** som e-postadresstyp om konfigurationen som du använder har en nod i datakällorna som returnerar antingen en enskild e-postadress eller flera e-postadresser som avgränsas med semikolon (;). Du kan använda [datakällor](general-electronic-reporting.md#FormatComponentOutbound) och [funktioner](er-formula-language.md#functions) i formeldesignern för att få en korrekt formaterad e-postadress eller korrekt formaterade e-postadresser som avgränsas med semikolon. Om du till exempel använder en konfiguration för **ISO 20022 kreditöverföring** representerar noden den primära e-postadressen för en leverantör från leverantörens kontaktuppgifter som följebrevet ska skickas till är `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
+Välj **Konfigurations-e-post** som e-postadresstyp om konfigurationen som du använder har en nod i datakällorna som returnerar antingen en enskild e-postadress eller flera e-postadresser som avgränsas med semikolon (;). Du kan använda [datakällor](general-electronic-reporting.md#FormatComponentOutbound) och [funktioner](er-formula-language.md#Functions) i formeldesignern för att få en korrekt formaterad e-postadress eller korrekt formaterade e-postadresser som avgränsas med semikolon. Om du till exempel använder en konfiguration för **ISO 20022 kreditöverföring** representerar noden den primära e-postadressen för en leverantör från leverantörens kontaktuppgifter som följebrevet ska skickas till är `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
 [![Konfigurera en e-postadresskälla.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 
