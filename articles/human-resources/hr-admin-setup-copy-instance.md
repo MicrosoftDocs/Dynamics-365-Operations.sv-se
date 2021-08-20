@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd5a92470b711b9d316e4fe96aecadd7252ff807
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 48fef68dc3e5935f0032ca006840202b53d577e06e5376ead0b66eca2a9c36bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360159"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740849"
 ---
 # <a name="copy-an-instance"></a>Kopiera en instans
 
@@ -52,9 +52,9 @@ Följande händelser inträffar när du kopierar en personaldatabas:
 
 - Dokument i Microsoft Azure Blob-lagring kopieras inte från en miljö till en annan. Därför kopieras inte de kopplade dokumenten och mallarna och de blir kvar i källmiljön.
 
-- Alla användare förutom administratören och andra interna användarkonton kommer inte att vara tillgängliga.​ Administratörsanvändaren kan ta bort eller dölja data innan andra användare tillåts tillbaka till systemet.
+- Alla användare utom de som har säkerhetsrollen Systemadministratör och andra interna tjänsteanvändarkonton är inte tillgängliga. Administratörsanvändaren kan ta bort eller dölja data innan andra användare tillåts tillbaka till systemet.
 
-- Administratörsanvändaren måste göra obligatoriska konfigurationsändringar, t.ex. återansluta integreringsslutpunkter för specifika tjänster eller URL:er.
+- Alla användare med säkerhetsrollen "Systemadministratör" måste göra obligatoriska konfigurationsändringar, t.ex. återansluta integreringsslutpunkter för specifika tjänster eller URL:er.
 
 ## <a name="copy-the-human-resources-database"></a>Kopiera databasen för personal
 
@@ -111,7 +111,7 @@ Vissa av elementen kopieras inte eftersom de är miljöspecifika. Exempel inneh�
 
 Dessutom ändras följande statusvärden när du kopierar en instans:
 
-- Alla användare utom administratören har **inaktiverats**.
+- Alla användare utom de med säkerhetsrollen "Systemadministratör" ställs in på **Inaktiverad**.
 
 - Alla batchjobb, förutom vissa systemjobb, ställs in på **undanhålla**.
 

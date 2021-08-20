@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 725b6dea98805baaf3f4d60b3922543067a205bc7196a05f33af21a6cd680a37
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345510"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740705"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Arbetsbelastningar för distributionslagerhantering för moln- och kantskalningsenheter
 
@@ -142,7 +142,7 @@ Följande arbetsordertyper stöds för närvarande för WES-arbetsbelastningar v
 
 - Försäljningsorder
 - Överför leverans
-- Lagerpåfyllnad
+- Lagerpåfyllnad (innefattar inte råmaterial för produktion)
 - Lagerrörelse
 - Rullande inventering
 - Inköpsorder (som är kopplade till lagerorder)
@@ -298,6 +298,7 @@ Följande tabell sammanfattar vilka produktionsscenarier för lagerstyrning som 
 | Rapportera som färdigt gods och stuvat gods | Ja | Ja |
 | Plats för samprodukt och biprodukt | Ja | Ja |
 | <p>Alla andra lagerstyrningsprocesser som är relaterade till produktion, inklusive:</p><li>Frisläpp till distributionslager</li><li>Bearbetning av produktionspåfyllnader</li><li>Råmaterialhämtning</li><li>Kanban-plats</li><li>Kanban-plockning</li><li>Starta produktionsorder</li><li>Produktionskassation</li><li>Sista produktionspall</li><li>Registrera materialförbrukning</li><li>Töm kanban</li></ul> | Ja | Nr |
+| Lagerpåfyllnad av råmaterial | Nr | Nr |
 
 ## <a name="maintaining-scale-units-for-wes"></a>Underhålla skalningsenheter för WES
 
