@@ -2,7 +2,7 @@
 title: Frågor och svar om ekonomisk rapportering
 description: Det här avsnittet innehåller svar på några vanliga frågor om ekonomisk rapportering.
 author: jiwo
-ms.date: 01/13/2021
+ms.date: 07/07/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e1b67f86446403933005008a9a1e2cc6739dc516
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: dd493e855e45362c1681dc9cdfbbcb71f7627d64624cd093eadab32fd966c174
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266643"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733621"
 ---
 # <a name="financial-reporting-faq"></a>Frågor och svar om ekonomisk rapportering
 
@@ -76,6 +76,30 @@ Du bör nu kunna kopiera data från Excel-rapporten Financial Reporter till rapp
 Meddelandet anger att ett problem inträffade när systemet skulle hämta ekonomiska metadata från den ekonomiska rapporteringen medan du använde Financial Reporting. Det finns två sätt att hantera det här problemet:
 
 - Granska integrationsstatusen för data genom att gå till **Verktyg \> Integrationsstatus** i Report Designer. Om integrationen inte är klar väntar du tills den är klar. Försök sedan igen med det du gjorde när du fick meddelandet.
-- Kontakta supporten om du vill identifiera och arbeta dig igenom problemet. Det kan finnas inkonsekventa data i systemet. Supporttekniker kan hjälpa dig att identifiera problemet på servern och hitta de specifika data som kan kräva en uppdatering.
+- Kontakta supporten om du vill identifiera och arbeta dig igenom problemet. Det kan finnas inkonsekventa data i systemet. Supporttekniker kan hjälpa dig att identifiera problemet på servern och hitta de specifika data som kan behöva uppdatering.
+
+## <a name="how-does-the-selection-of-historical-rate-translation-affect-report-performance"></a>Hur påverkar valet av historisk kursomräkning rapportresultatet?
+
+Den historiska kursen används normalt med balanserade vinstmedel, egendom, anläggningar och utrustning samt konton för eget kapital. Den historiska kursen kan krävas baserat på riktlinjerna från FASB (Financial Accounting Standards Board) eller GAAP-bokföringsprinciper. Mer information finns i [Valutafunktioner i ekonomisk rapportering](financial-reporting-currency-capability.md).
+
+## <a name="how-many-types-of-currency-rate-are-there"></a>Hur många typer av valutakurser finns det?
+
+Det finns tre typer:
+
+- **Aktuell kurs** – Den här typen används normalt för balansräkningskonton. Den kallas vanligen *stickprovskurs* och kan vara kursen sista dagen i månaden eller något annat förutbestämt datum.
+- **Genomsnittskurs** – Typen används normalt med resultatkonton (vinst/förlust). Du kan ställa in genomsnittskursen för att göra ett enkelt medelvärde eller ett viktat medelvärde.
+- **Historisk kurs** – Den här typen används normalt med balanserade vinstmedel, egendom, anläggningar och utrustning samt konton för eget kapital. Dessa konton kan vara obligatoriska enligt FASB- eller GAAP-riktlinjer.
+
+## <a name="how-does-historical-currency-translation-work"></a>Hur fungerar historisk valutaomräkning?
+
+Kurserna är specifika för transaktionsdatumet. Därför översätts varje transaktion enskilt baserat på närmaste valutakurs.
+
+Vid historisk valutaomräkning kan förberäknade periodsaldon användas i stället för enskilda transaktionsuppgifter. Detta beteende skiljer sig från beteendet för aktuell kursomräkning.
+
+## <a name="how-does-historical-currency-translation-affect-performance"></a>Hur påverkar historisk valutaomräkning resultatet?
+
+När data som visas i rapporterna uppdateras kan det bli en fördröjning eftersom beloppen måste räknas om genom kontroll av transaktionsuppgifter. Den här fördröjningen utlöses varje gång satserna uppdateras eller när ytterligare transaktioner bokförs. Om exempelvis tusentals konton ställs in för historisk omräkning ett par gånger om dagen kan det ta upp till en timme innan uppgifterna i rapporten uppdateras. Om det däremot finns ett mindre antal specifika konton kan bearbetningstiden för uppdateringar av rapportdata minska till minuter eller mindre.
+
+När rapporter genereras med hjälp av valutaomräkning för konton av historisk typ, blir det på samma sätt extra beräkningar per transaktion. Beroende på antal konton kan tiden för att generera rapporten mer än fördubblas.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

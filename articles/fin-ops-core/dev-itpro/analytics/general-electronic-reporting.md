@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05c77b913c1c2281ca45a3dea8fef2223a1dcfbb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: e9bb0b427f4fe30ab95efabf8ab9871b681e35d51c0fbaf5a162235640d2f376
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345700"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723175"
 ---
 # <a name="electronic-reporting-er-overview"></a>Översikt över elektronisk rapportering (ER)
 
@@ -195,7 +195,7 @@ För mer information, se [Importera e-rapporteringskonfigurationer från global 
 
 En databas för **Verksamhetsresurser** ger åtkomst till listan över konfigurationer som Microsoft frisläpper som en del av programlösningen i egenskap av ER-konfigurationsleverantör. Dessa konfigurationer kan importeras till den aktuella instansen och användas för elektronisk rapportering eller spela upp exempeluppgiftsguider. De kan också användas för ytterligare lokaliseringar och anpassningar. Observera att de senaste versionerna från Microsoft ER-konfigurationer måste importeras från det delade LCS-tillgångsbiblioteket med motsvarande ER-databas.
 
-Obligatoriska datalager för **LCS-projekt**, **Filsystem** och **Lagstadgade konfigurationstjänster (RCS)** kan registreras separat för respektive konfigurationsleverantör av den aktuella instansen. Varje databas kan reserveras för en viss konfigurationsleverantör.
+Obligatoriska datalager för **LCS-projekt**, **Filsystem** och **Regulatory Configuration Services (RCS)** kan registreras separat för respektive konfigurationsleverantör av den aktuella instansen. Varje databas kan reserveras för en viss konfigurationsleverantör.
 
 ## <a name="supported-scenarios"></a>Stödda scenarier
 

@@ -2,7 +2,7 @@
 title: Vagnikonmodul
 description: Det här avsnittet handlar om vagnikonmodulen och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9e3850d98e716d1bbea2017f6e8c9d75f19adc9
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: 5cf86876ba03d510b03237c9c89a1fc069a73482b755a1d72227037c91439e86
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638011"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735688"
 ---
 # <a name="cart-icon-module"></a>Ikon för kundvagnsmodul
 
@@ -35,9 +35,14 @@ Följande bild visar ett exempel på en kundvagnsikon som visar en minikundvagn 
 
 ## <a name="module-properties"></a>Modulegenskaper
 
-- **Visa minivagn** – när värdet är sant kan den här egenskapen användas för att visa en sammanfattning av kundvagnen (minivagn) när man hovrar över vagnikonen. Den här funktionen stöds endast för portar i skrivbordsvy.
+- **Visa minivagn** – När den här egenskapen är inställd på **True**, en vagnöversikt (minivagn) visas när användare håller muspekaren över vagnikonen. Den här funktionen stöds endast för portar i skrivbordsvy.
+- **Tillåt anonym utcheckning** – När denna egenskap ställs in på **True**, minivagnen tillåter användare som inte är inloggade att göra en gästkassa. Den här egenskapen är tillgänglig i versionen Commerce version 10.0.21 som en del av paketet Commerce-modulbibliotek.
+- **Order av artiklar** – Denna egenskap styr i vilken ordning artiklar visas i vagnen. När alternativet **Nya objekt har lagts till överst på listan** väljs, nya artiklar som läggs till i vagnen visas högst upp i listan över minivagnartiklar. När standardalternativet **Nya objekt har lagts till överst på listan** väljs, nya artiklar som läggs till i vagnen visas högst upp i listan över minivagnartiklar. Den här egenskapen är tillgänglig i versionen Commerce version 10.0.21 som en del av paketet Commerce-modulbibliotek.
 
-## <a name="module-properties-in-the-adventure-works-theme"></a>Modulegenskaper i Adventure Works-temat
+> [!IMPORTANT]
+> Egenskaperna **Tillåt anonym utcheckning** och **Order av artiklar** är tillgängliga från version 10.0.21 av Commerce. De kräver att paketversion 9.31 för Commerce-modulens bibliotek är installerad.
+
+## <a name="module-properties-and-slots-in-the-adventure-works-theme"></a>Modulegenskaper och platser i Adventure Works-temat
 
 I temat Adventure Works innehåller modulen för kundvagnsikon ytterligare två platser för minivagnen. Dessa platser ingår som ett moduldefinitionstillägg.
 
