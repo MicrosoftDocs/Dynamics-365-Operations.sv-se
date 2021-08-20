@@ -2,7 +2,7 @@
 title: Översikt över ekonomisk rapportering
 description: Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 Finance och hur du använder finansiella rapporteringsfunktioner.
 author: aprilolson
-ms.date: 12/04/2020
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf07b12d83221952aefb80ab6a5b651bb4ef3762
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: da997af4c4cab7b99dfa14f185de6a7c057d6831b7ee576787c17b550fa60194
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338167"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748220"
 ---
 # <a name="get-started-with-financial-reporting"></a>Kom i gång med Financial reporting 
 
@@ -47,9 +47,9 @@ Om du vill skapa och skapa ekonomiska rapporter för en juridisk person måste d
 -   Kontoplan
 -   Valuta
 -   Bokför en transaktion på minst ett konto
--   Huvudkontot visas i kolumnen Markerade i **Redovisning > Redovisningsinställningar > Inställningar för Financial Reporting**
+-   Huvudkontot visas i kolumnen **Markerade** på sidan **Inställning av ekonomisk rapportering** (**Redovisning > Redovisningsinställningar > Inställning av ekonomisk rapportering**)
 
-## <a name="granting-security-access-to-financial-reporting"></a>Bevilja säkerhetsåtkomst till Financial Reporting
+## <a name="granting-security-access-to-financial-reporting"></a>Bevilja säkerhetsåtkomst till ekonomisk rapportering
 Funktionerna för ekonomisk rapportering är tillgängliga för användare som har rätt behörigheter och uppgifter tilldelade genom sina säkerhetsroller. Nedan följer dessa privilegier och behörigheter tillsammans med de kopplade rollerna.
 
 ### <a name="duties"></a>Programbehörigheter
@@ -165,10 +165,47 @@ Problem 2: användaren har inte tilldelats de behörigheter som krävs för att 
   Om en annan användare kan öppna rapportdesigner, väljer du **verktyg** och väljer **integrationsstatus**. Kontrollera att integrationskartan, "Företagets användarleverantör till företaget", har körts korrekt eftersom du tilldelades behörighet att använda Financial Reporting. 
 * Det kan vara möjligt att ett annat fel har hindrat **Dynamics-användare till den Financial Reporting användarintegration** från att slutföras. Det kan också hända att en återställning av datamart har initierats och ännu inte slutförts, eller att ett annat systemfel har inträffat. Försök köra processen igen senare. Kontakta systemadministratören om problemet kvarstår.
 
-Problem 3: du kan gå vidare till sidan logga in rapport i ClickOnce rapportdesigner, men du kan inte slutföra inloggningen i rapportdesigner. 
+Problem 3: du kan gå vidare till sidan logga in rapport i **ClickOnce Report Designer**, men du kan inte slutföra inloggningen i Report Designer. 
 
-* Den tid som anges på din lokala dator när du anger dina inloggningsuppgifter måste ligga inom fem minuter efter tiden på den Financial Reporting-servern. Om det finns en skillnad på mer än fem minuter kommer systemet inte att tillåta inloggning. 
-* I det här fallet rekommenderar vi att du aktiverar Windows-alternativet för att ställa in datorns tid automatiskt. 
+* Den tid som anges på din lokala dator när du anger dina logga in på systemet måste ligga inom fem minuter efter tiden på den Financial Reporting-servern. Om det finns en skillnad på mer än fem minuter kommer systemet inte att tillåta inloggning. 
+* Om tiden på din dator skiljer sig från tiden på en ekonomisk rapporteringsserver rekommenderar vi att du aktiverar Windows-alternativet så att datorns tid ställs in automatiskt. 
+
+## <a name="troubleshoot-report-designer-issues-with-event-viewer"></a>Felsöka problem med Report Designer med Loggboken
+
+Du kan använda Loggboken när du vill analysera några av de problem som uppstår när du använder ekonomisk rapportering. 
+
+### <a name="what-happens-when-you-have-connections-issues-with-financial-reporting"></a>Vad händer när du har problem med ekonomisk rapportering? 
+
+Nedan finns några steg du kan vidta för att göra dina samtal med Microsoft mer effektiva och ta dig till en snabbare lösning. 
+ 
+I följande steg går du igenom processen för att aktivera meddelanden i Loggboken för ekonomisk rapportering. Loggarna som Loggboken genererar hjälper supporttekniker att snabbt identifiera källan till anslutningsproblemet. Skicka kopior av dessa loggar tillsammans med din lott när du kontaktar supporten.
+
+> 1.    Kopiera RegisterETW.zip-filen till klientens arbetsstation (helst Desktop) och extrahera [RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster).
+
+> 2.    Kontrollera att Loggboken i Windows är stängd.
+
+> 3.    Öppna en kommandotolk för Administratör PowerShell och gå till katalogen där RegisterETW.ps1 finns.
+
+> 4.    Kör följande kommando: .\RegisterETW.ps1
+   
+   En lyckad utdata i PowerShell verifieras med meddelandet, med hjälp av det **konkurrerade RegisterETW-skriptet**.
+Öppna Loggboken igen och du ser nu dessa loggar under **Microsoft > Dynamics**: * MR-Client * MR-DVT * MR-Integration * MR-Logger * MR-Reporting * MR_SchedulerTasks * MR-Sql * MR-TraceManager
+   
+> 5. Återskapa problemet i Report Designer.
+   
+> 6. Exportera MR-Logger-händelserna med hjälp av Loggboken.
+
+## <a name="troubleshoot-issues-connecting-to-financial-reporting"></a>Felsöka problem som kan anslutas till ekonomisk rapportering
+
+Problem: Du får felmeddelandet "Det gick inte att ansluta till den ekonomiska rapporteringsservern".
+
+* Bestäm om problemet uppstår i webbläsaren Chrome och Chrome.
+* Om problemet endast förekommer i en webbläsare kan det vara ClickOnce-problemet. 
+* När du får anslutningsfelmeddelandet väljer du **Testa** om du vill testa anslutningen för att se vilket meddelande som visas. 
+* Problemet kan vara resultatet om en annan användare inte har tillgång till ekonomisk rapportering. Om en användare inte har åtkomst får han eller hon ett meddelande om att han eller hon inte har behörighet.
+* Om problemet uppstår på flera webbläsare måste du kontrollera att tidsklockan på din arbetsstation är inställd på Auto.
+* Arbeta med en användare som har säkerhetsadministratörens rättigheter i Dynamics 365 Finance samt administratörsbehörigheten till nätverksdomänen, för att logga in på din arbetsstation för att se om de kan ansluta. Om de kan ansluta kan problemet vara relaterat till nätverksbehörigheter.
+* På arbetsstationen inaktiverar du tillfälligt brandväggen. Om du sedan kan ansluta till Report Designer handlar det om brandväggen. Arbeta med organisationens IT-avdelning för att lösa problemet.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 - [Visa ekonomiska rapporter](view-financial-reports.md)
