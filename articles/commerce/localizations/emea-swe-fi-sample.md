@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: sepism
 ms.search.validFrom: 2019-10-08
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8ed84afd75f70e060e9669df5cfa0c2b209eee0e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9b2e1aaa36bd27c8d15e1ab6506a903af9a10bd7feb4d93a431b0f7763151416
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798795"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746649"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Exempel på integration av kontrollenhet för Sverige
 
@@ -136,7 +136,7 @@ CRT tilläggskomponenter inkluderas i CRT-exemplen. För att slutföra följande
 #### <a name="documentprovidercleancashsample-component"></a>DocumentProvider. CleanCashSample-komponent
 
 1. Leta upp projektet **Runtime.Extensions.DocumentProvider.CleanCashSample** och skapa det.
-2. I mappen **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** hitta sammansättningsfilen **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll**.
+2. I sammansättningsfilen **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll**.
 3. Kopiera sammansättningsfilen till CRT-tilläggsmappen:
 
     - **Commerce Scale Unit:** kopiera sammansättningen till mappen **\\bin\\ext** under Microsoft Internet Information Services (IIS) Commerce Scale Unit-webbplatsen.
@@ -173,7 +173,7 @@ Tilläggskomponenterna för Hardware Station ingår i Hardware Station exemplen.
 #### <a name="cleancash-component"></a>CleanCash-komponent
 
 1. Leta upp projektet **HardwareStation.Extension.CleanCashSample** och skapa det.
-2. I mappen **Extension.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** hitta sammansättningsfilen **Contoso.Commerce.HardwareStation.CleanCashSample.dll**.
+2. I mappen **Extension.CleanCashSample\\bin\\Debug** sök sammansättningsfilen **Contoso.Commerce.HardwareStation.CleanCashSample.dll**.
 3. Kopiera sammansättningsfilen till Hardware Station-tilläggsmappen:
 
     - **Delad Hardware Station** : kopiera filen till **binge**-mappen under IIS Hardware Station webbplatsen.
@@ -378,7 +378,7 @@ Migreringsprocessen bör bestå av följande steg.
 #### <a name="update-crt"></a>Uppdatera CRT
 
 1. Leta upp projektet **Runtime.Extensions.DocumentProvider.CleanCashSample** och skapa det.
-2. I mappen **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** hitta sammansättningsfilen **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll**.
+2. I sammansättningsfilen **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll**.
 3. Kopiera sammansättningsfilen till CRT-tilläggsmappen:
 
     - **Commerce Scale Unit:** kopiera sammansättningen till mappen **\\bin\\ext** under IIS Commerce Scale Unit-webbplatsen.
@@ -411,7 +411,7 @@ Migreringsprocessen bör bestå av följande steg.
 #### <a name="update-hardware-station"></a>Uppdatera Hardware Station
 
 1. Leta upp projektet **HardwareStation.Extension.CleanCashSample** och skapa det.
-2. I mappen **Extension.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** hitta sammansättningsfilen **Contoso.Commerce.HardwareStation.CleanCashSample.dll**.
+2. I mappen **Extension.CleanCashSample\\bin\\Debug** sök sammansättningsfilen **Contoso.Commerce.HardwareStation.CleanCashSample.dll**.
 3. Kopiera sammansättningsfilen till Hardware Station-tilläggsmappen:
 
     - **Delad Hardware Station** : kopiera filen till **binge**-mappen under IIS Hardware Station webbplatsen.
