@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 8d7020ff1ad1beb06ff7a9ce217f39993c6eceec
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4ee68b691bba7f3314b5278b0bcc26504c1583335914a1e7c645abd5303f02c6
+ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358132"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "7012023"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 
@@ -49,6 +49,9 @@ På sidan **Regulatory Configuration Service** läser du igenom och godkänner t
 
 - **Registrera dig** om du använder tjänsten för första gången och använder en företags-e-postadress för att tillhandahålla en tjänstemiljö till din organisation
 - **Logga in** om du redan tidigare har registrerat dig för tjänsten och vill komma åt organisationsmiljön
+
+> [!NOTE] 
+> När du har registrerat dig rekommenderar vi att du lägger till ytterligare en SysAdmin-användare till OMVS-miljön. Den här användaren får sin medadministratör för miljön. Detta kommer att göra det enkelt att få åtkomst till RCS-miljön, eftersom SysAdmin-rollen är att hantera användare för den miljön. Du kan lägga till användare med **RCS-arbetsyta > Systemadministration**.
 
 ## <a name="regional-availability"></a>Regional tillgänglighet
 

@@ -72,6 +72,8 @@
                   items:
                     - name: Nyheter eller ändringar på Supply Chain Managements startsida
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.21 (oktober 2021)
+                      href: get-started/whats-new-scm-10-0-21.md
                     - name: Supply Chain Management 10.0.20 (augusti 2021)
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (juni 2021)
@@ -1599,8 +1601,10 @@
               items:
                 - name: Planeringsoptimering – översikt
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Kom i gång med planeringsoptimering
+                - name: Kom igång med Planeringsoptimering
                   href: master-planning/planning-optimization/get-started.md
+                - name: Versionsprocess och versionshistorik för Planeringsoptimering
+                  href: master-planning/planning-optimization/release-process.md
                 - name: Bristanalys för planeringsoptimering
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Parametrar som inte används i Planeringsoptimering
@@ -1631,6 +1635,8 @@
                   href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Tidsgränser för disponering
                   href: master-planning/planning-optimization/coverage-time-fence.md
+                - name: Nettobehov och pegging-information med Planeringsoptimering
+                  href: master-planning/planning-optimization/net-requirements.md
                 - name: Godkänna planerade order
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Bekräfta planerade order
@@ -1709,7 +1715,9 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: Samarbeta med interna kunder i leveranskedjan
                   href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
-            - name: Prognosticering
+                - name: Nettobehov och pegging-information med inbyggd masterplanering
+                  href: master-planning/net-requirements-built-in-master-planning.md
+            - name: Prognostisering
               items:
                 - name: Prognoser för efterfrågan och tillgång
                   items:
@@ -1967,6 +1975,8 @@
                   href: procurement/request-quotations.md
                 - name: Skapa en anbudsförfrågan
                   href: procurement/tasks/create-request-quotation.md
+                - name: Sluten budgivning för anbudsförfrågningar
+                  href: procurement/sealed-bidding.md
                 - name: Skapa en rekvisition som använder en anbudsförfrågan
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Skapa en poängmetod för anbudsförfrågan
@@ -2281,6 +2291,8 @@
               href: engineering-change-management/product-readiness.md
             - name: Frisläppa produktstruktur
               href: engineering-change-management/release-product-structure.md
+            - name: Generera varianter för tekniska produkter
+              href: engineering-change-management/engineering-variants.md
             - name: Konstruktionsändringshantering – vanliga frågor
               href: engineering-change-management/change-management-faq.md
         - name: Produktionskontroll
@@ -2603,6 +2615,8 @@
               href: rebate-management/rebate-management-overview.md
             - name: Ställa in och konfigurera modulen för rabatthantering
               items:
+                - name: Aktivera modulen Rabatthantering för ditt system
+                  href: rebate-management/rebate-management-enable.md
                 - name: Parametrar för rabatthantering
                   href: rebate-management/rebate-management-parameters.md
                 - name: Arbetsflöden för rabatthanteringsavtal
@@ -2619,6 +2633,8 @@
               href: rebate-management/rebate-management-deals.md
             - name: 'Bearbeta, granska och bokföra rabatter'
               href: rebate-management/process-review-post.md
+            - name: Hantera avdrag med hjälp av workbench för avdrag
+              href: rebate-management/deduction-workbench.md
         - name: Försäljning och marknadsföring
           items:
             - name: Försäljning och marknadsföring – översikt
@@ -3057,11 +3073,13 @@
               href: landed-cost/in-transit-processing.md
             - name: Bearbeta över-/undertransaktioner
               href: landed-cost/over-under-transactions.md
+            - name: Uppdatera spårning för införsel
+              href: landed-cost/update-tracking-putaway.md
             - name: Förfrågningar om hemtagningskostnader
               href: landed-cost/landed-cost-inquiries.md
             - name: Rapporter om hemtagningskostnader
               href: landed-cost/landed-cost-reports.md
-        - name: Lagerstyrning
+        - name: Hantering av distributionslager
           items:
             - name: Hantering av distributionslager – översikt
               href: warehousing/warehouse-management-overview.md
@@ -3117,6 +3135,8 @@
                       href: warehousing/cluster-position-full.md
                     - name: Systemdirigerad klusterplockning
                       href: warehousing/system-directed-cluster-pick.md
+                    - name: Överplockning för försäljningsorder och överföringsorder
+                      href: warehousing/over-picking-for-sales-and-transfer-orders.md
                     - name: Konfigurera olika dimensioner för packning och lagring
                       href: warehousing/packing-vs-storage-dimensions.md
                     - name: Bekräftelse av batch och ID-nummer
@@ -3507,8 +3527,14 @@
               items:
                 - name: Det går endast att lägga till huvudkontot som kreditkonto av avstämningsorsaker
                   href: troubleshooting/transportation/reconciliation-reaso.md
-            - name: Lagerstyrning
+            - name: Hantering av distributionslager
               items:
+                - name: Du kan inte bekräfta en leverans eftersom kunden är spärrad
+                  href: troubleshooting/warehousing/customer-is-on-hold.md
+                - name: Du kan inte bekräfta en leverans eftersom inläsningsrader har noll kvantitet
+                  href: troubleshooting/warehousing/load-line-quantity-is-zero.md
+                - name: Kan inte uppdatera en inläsningsrad eftersom den frisläppta kvantiteten skulle bli negativ
+                  href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
                 - name: Annullerade produktinleveranser uppdaterar inte transaktionsstatus till registrerad
                   href: troubleshooting/warehousing/canceled-product-receipts.md
                 - name: Decimalavrundningen för den fysiska uppdateringskvantiteten är fel

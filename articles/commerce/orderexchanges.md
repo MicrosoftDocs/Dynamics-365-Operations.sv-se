@@ -2,7 +2,7 @@
 title: Konfigurera och behandla ett utbyte för en returorder
 description: I detta avsnitt beskriver vi hur du konfigurerar ett utbyte för en returorder i Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/12/2018
+ms.date: 07/28/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 46d6e912aca64951da2865f5609a9dc22fbbcbe3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 488f6fb5af6451bc462566a9714054b49eb1a80b8264528778797f6a39647764
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804611"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758346"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurera och behandla ett utbyte för en returorder
 
@@ -32,7 +32,10 @@ Denna funktion har dock lagts till så att det ska gå att byta ut produkter på
 
 ## <a name="configure-commerce-to-support-exchanges-on-return-orders"></a>Konfigurera Commerce för att stödja utbyten med returorder
 
-Gör så här för att konfigurera systemet så att de stöder utbyten med returorder.
+> [!NOTE]
+> I Commerce 10.0.20 och senare finns en ny funktion med namnet "Enhetlig returbearbetningserfarenhet i kassan". Om du aktiverar funktionen behövs inte konfigurationsstegen nedan. **Behandla returorder som försäljningsorder** blir en permanent konfigurerad inställning och du kan inte ändra den.
+
+Följ de här stegen för att konfigurera systemet att stödja utbyten med returorder (om du inte har aktiverat funktionen **Enhetlig returbearbetningserfarenhet i kassan**).
 
 1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> Commerce-parametrar**. Ge alternativet **Behandla returorder som försäljningsorder** på snabbfliken **Kundorder** värdet **Ja**.
 2. Kör jobbet **Globalt konfigurationsfördelningsschema** (**1110**).
