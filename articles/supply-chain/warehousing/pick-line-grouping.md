@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: fe0e63ef742b7bfd09684a94d273a1841d24599c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 076a4dfdc49525eef616d1008073371be1dd4a248cd6f16d395b544ae70e7531
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828284"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757504"
 ---
 # <a name="pick-line-grouping"></a>Plockradsgruppering
 
@@ -116,7 +116,7 @@ Innan du kan ställa in plockradsgruppering måste du skapa vissa kvalificerade 
     - **Artikel M9201:** *3* var
     - **Artikel M9202:** *9* var
 
-1. Innan du släpper order till distributionslagret måste du se till att plockplatserna har tillräckligt med lager för alla artiklar på alla order. Granska inställningen **platsdirektiv** för att avgöra vilka plockplatser som används för plockning av försäljningsorder. Om du använder Contoso-demodatamiljön för lagerställe *51* ska du bekräfta att det finns tillgängligt lager.
+1. Innan du släpper order till distributionslagret måste du se till att plockplatserna har tillräckligt med lager för alla artiklar på alla order. Granska inställningen **platsdirektiv** för att avgöra vilka plockplatser som används för plockning av försäljningsorder. Om du använder Contoso-demodatamiljön för lagerställe *51* ska du kontrollera att det finns tillgängligt lager.
 
     Du måste nu reservera lagret för varje rad.
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d0f644da640b56761a52baec9ff01c898e895d19
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e9c97982233b1f3dc3924fa42954b5cb8d09ffcaa07d19a3892b25737a6c29c5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023589"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778879"
 ---
 # <a name="formula-designer-for-tds-calculations"></a>Formeldesigner för TDS-beräkningar
 
@@ -44,7 +44,7 @@ I det här exemplet kopplas TDS-gruppen Hyra till en inköpsfaktura som skapats 
 | Tilläggsavgift (TDS-komponent -Tilläggsavgift)                         | 10 %                                     | Exkl. bruttobelopp | +TDS                              |                   10000                    | 1 000        |                       |
 | PE-inspektör (TDS-komponent- PE-inspektör)                            | 2 %                                      | Exkl. bruttobelopp | +TDS+Tilläggsavgift                    |                   11000                    | 220         |                       |
 | SHE-inspektör (TDS-komponent - SHE-inspektör)                          | 1 %                                      | Exkl. bruttobelopp | +TDS+Tilläggsavgift                    |                   11000                    | 110         |                       |
-| **Totalt** **TDS** **beräknat** **för** **fakturan** | **11,330**                               |                    |                                   |                                            |             |                       |
+| **Totalt** **TDS** **beräknat** **för** **den** **fakturan** | **11,330**                               |                    |                                   |                                            |             |                       |
 
 Verifikationsposterna skapas på följande sätt.
 

@@ -2,7 +2,7 @@
 title: Rutnätsmöjligheter
 description: I det här avsnittet beskrivs flera kraftfulla funktioner i rutnätskontrollen. Du måste aktivera den nya rutnätsfunktionen för att du ska kunna använda dessa funktioner.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 08/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b7a1809a3012af86ad9ba39da8721c63b3c4b885
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923608"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775252"
 ---
 # <a name="grid-capabilities"></a>Rutnätsmöjligheter
 
@@ -158,6 +158,13 @@ Om din organisation hittar en sida med vissa problem med att använda det nya ru
  ```this.forceLegacyGrid();```
 
 Denna API kommer att hedras tills oktober 2021 släpps när den nya nätkontrollen blir obligatorisk. Om något problem kräver att denna API används rapporterar du dem till Microsoft.
+
+### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Tvinga en sida att använda det nya rutnätet efter att tidigare valt ut rutnätet
+Om du har valt att inte använda det nya rutnätet för en enskild sida kanske du senare vill aktivera det nya rutnätet igen efter att de underliggande frågorna inte har lösts. Om du vill göra detta måste du bara ta bort samtalet `forceLegacyGrid()`. Ändringen börjar inte gälla förrän något av följande inträffar:
+
+- **Omdistribuering av miljö**: När en miljö uppdateras och omplaceras rensas tabellen som lagrar sidorna som har valt bort det nya rutnätet (FormControlReactGridState) automatiskt.
+
+- **Manuell clearing av registret**: För utvecklingsscenarier måste du använda SQL för att rensa tabellen FormControlReactGridState och sedan starta om AOS. Den här kombinationen av åtgärder återställer cachningen av sidor som har valt att inte använda det nya rutnätet.  
 
 ## <a name="developer-size-to-available-width-columns"></a>[Utvecklare] kolumner med storlek till tillgänglig bredd
 Om en utvecklare ställer in egenskapen **WidthMode** på **SizeToAvailable** för kolumner inuti det nya rutnätet, har de kolumnerna samma bredd som de skulle ha om egenskapen hade värdet **SizeToContent**. De sträcker sig däremot åt att använda valfri tillgänglig bredd i rutnätet. Om egenskapen har ställts in på **SizeToAvailable** för flera kolumner, delar alla dessa kolumner all tillgänglig bredd i rutnätet. Om en användare manuellt ändrar storleken på en av dessa kolumner blir kolumnen statisk. Den kommer att finnas kvar till den bredden och kan inte längre sträckas ut för att ta upp extra tillgängligt rutnäts bredd.  
