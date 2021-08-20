@@ -1,8 +1,8 @@
 ---
 title: Kundorder i kassa (POS)
-description: Det här avsnittet innehåller information om kundorder i POS. Kundorder kallas även specialorder. Avsnittet innehåller en beskrivning av relaterade parametrar och transaktionsflöden.
+description: Det här avsnittet innehåller information om kundorder i kassan (POS). Kundorder kallas även specialorder. Avsnittet innehåller en beskrivning av relaterade parametrar och transaktionsflöden.
 author: josaw1
-ms.date: 01/06/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 44beb4515bf0d2f8fc7ad75feb3164bf1c7c2d5737552b1a06ce59c2edcaf8fe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755093"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundorder i kassa (POS)
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller information om hur du skapar och hanterar kundorder i POS. Kundorder kan användas för att fånga in försäljningar där köpare vill hämta produkter på ett senare datum, hämta produkter från en annan plats eller låta artiklarna levereras till dem. 
+Det här avsnittet innehåller information om hur du skapar och hanterar kundorder i kassaappen (POS). Kundorder kan användas för att fånga in försäljningar där köpare vill hämta produkter på ett senare datum, hämta produkter från en annan plats eller låta artiklarna levereras till dem. 
 
 I en handelsvärld kännetecknad av omnikanaler erbjuder många återförsäljare möjlighet till kundorder (eller specialorder) för att uppfylla kraven för olika produkter och utföranden. Här följer några vanliga scenarier:
 
@@ -132,6 +132,10 @@ Detaljhandelsorder som skapas i både online- eller butikskanalen kan återkalla
 > [!IMPORTANT]
 > Det är inte alla butiksorder som kan redigeras via POS-programmet. Order som skapas i en kundtjänstkanal kan inte redigeras via POS om inställningen [Aktivera slutförande av order](./set-up-order-processing-options.md#enable-order-completion) är aktiverad för kundtjänstkanalen. För att säkerställa en korrekt betalningsprocess måste order som har sitt ursprung i en kundtjänstkanal och som använder funktionen för att aktivera slutförande av order redigeras via programmet i Commerce-administration.
 
+> [!NOTE]
+> Vi rekommenderar att du inte redigerar order och offerter i kassan som har skapats av en icke-kundtjänstanvändare i Commerce-administration. Dessa order och offerter använder inte Commerce-prismotorn, så om de redigeras i kassan, kommer Commerce-prismotorn att sätta pris igen.
+
+
 I version 10.0.17 och senare kan användarna redigera berättigade order via POS-programmet, även om ordern är delvis uppfylld. Order som är helt fakturerade kan dock fortfarande inte redigeras via POS. Du kan aktivera denna funktion genom att slå på funktionen **Redigera delvis uppfyllda order i kassan** i arbetsytan **Funktionshantering**. Om den här funktionen inte är aktiverad, eller om du använder version 10.0.16 eller tidigare, kan användarna bara redigera kundorder i POS om ordern är helt öppen. Om funktionen är aktiverad kan du begränsa vilka butiker som kan redigera delvis uppfyllda order. Alternativet att inaktivera denna funktion för specifika butiker kan konfigureras via **Funktionsprofilen** på snabbfliken **Allmänt**.
 
 
@@ -142,7 +146,23 @@ I version 10.0.17 och senare kan användarna redigera berättigade order via POS
 5. Slutför redigeringsprocessen genom att välja en betalningsåtgärd.
 6. Om du vill avsluta redigeringsprocessen utan att spara ändringarna kan du använda åtgärden **Annullera transaktion**.
 
+#### <a name="pricing-impact-when-orders-are-edited"></a>Prissättningspåverkan när order redigeras
 
+När order placeras i kassan eller på en e-handelsplats för Commerce, åtar sig kunderna ett belopp. Detta belopp inkluderar ett pris och kan även omfatta en rabatt. En kund som lägger en order och sedan kontaktar kundtjänsten för att senare ändra ordern (t.ex. för att lägga till en artikel) har särskilda förväntningar på hur rabatter ska tillämpas. Även om erbjudandena på de befintliga orderraderna har förfallit, förväntar sig kunden att rabatterna som ursprungligen användes för raderna börjar gälla. Om ingen rabatt var i kraft när ordern ursprungligen gjordes, men rabatten har tillämpats sedan dess, förväntar kunden sig att den nya rabatten tillämpas på den ändrade ordern. Annars kanske kunden bara annullerar den befintliga ordern och sedan skapar en ny order där den nya rabatten tillämpas. Som det här scenariot visar måste priser och rabatter som kunderna har åtagit sig att behålla. Samtidigt måste kassaanvändare och kundtjänstanvändare ha flexibiliteten att räkna om priser och rabatter för försäljningsorderrader efter behov.
+
+När order återkallas och redigeras i kassan betraktas priser och rabatter för de befintliga orderraderna som "låsta". Med andra ord ändras de inte, även om vissa orderrader annulleras eller ändras, eller så läggs nya orderrader till. Om du vill ändra priser och rabatter för befintliga försäljningsrader, måste kassaanvändaren välja **Omberäkna**.  Prislåset tas sedan bort från de befintliga orderraderna. Innan Commerce version 10.0.21 finns den här kapaciteten inte tillgänglig i kundtjänsten. Eventuella ändringar på orderrader gör istället att priser och rabatter räknas om.
+
+I Commerce version 10.0.21, en ny funktion som heter **Förhindra oavsiktlig prisberäkning för handelsorder** är tillgänglig i arbetsytan **Funktionshantering**. Den här funktionen är aktiverad som standard. När den är aktiverad är en ny **prislåst** egenskap tillgänglig för alla e-handelsorder. När order har slutförts för order som placeras från en kanal aktiveras egenskapen automatiskt (det vill säga kryssrutan markeras) för alla orderrader. Commerce-prissättningsmotorn exkluderar sedan dessa orderrader från alla pris- och rabattberäkningar. Om ordern redigeras exkluderas därför orderraderna som standard från pris- och rabattberäkningen. Däremot kan kundtjänstanvändare inaktivera egenskapen (det vill säga avmarkera kryssrutan) för en orderrad och sedan välja **Omberäkna** för att inkludera de befintliga orderraderna i prissättningsberäkningarna.
+
+Även om de tillämpar en manuell rabatt på en befintlig försäljningsrad måste kundtjänstanvändare inaktivera den **prislåsta** egenskapen för försäljningsraden innan de använder den manuella rabatten.
+
+Kundtjänstanvändare kan också inaktivera egenskapen **Prislås** för orderrader på en gång genom att välja **Ta bort prislås** i gruppen **Beräkna** på fliken **Försäljning** i åtgärdsfönstret på sidan **försäljningsorder**. I detta fall tas prislåset bort från alla orderrader utom rader som inte kan redigeras (med andra ord rader som har statusen **Delvis fakturerad** eller **Fakturerad**). När ändringarna i ordern har slutförts och skickats visas sedan prislåset på nytt för alla orderrader.
+
+> [!IMPORTANT]
+> När funktionen **Förhindra oavsiktlig prisberäkning för handelsorder aktiveras**, ignoreras inställningen av handelsavtalsutvärderingen i prissättningsarbetsflödena. Med andra ord visar inte dialogrutorna för handelsavtalsutvärdering det **prisrelaterade** avsnittet. Detta inträffar eftersom både inställningen av handelsavtalsutvärderingen och prislåsfunktionen har ett liknande syfte: att förhindra oavsiktliga prisändringar. Användarerfarenheten för handelsavtalsutvärdering fungerar dock inte bra för stora order där användarna måste välja en eller flera orderrader för omvärdering.
+
+> [!NOTE]
+> Egenskapen **Prislåst** kan bara inaktiveras för en eller flera valda rader när **kundtjänst** modulen används. Kassans beteende förblir oförändrat. Med andra ord kan kassaanvändaren inte låsa upp priser för valda orderrader. De kan dock välja **Omberäkna** om du vill ta bort prislåset från alla befintliga orderrader.
 
 ### <a name="cancel-a-customer-order"></a>Annullera en kundorder
 

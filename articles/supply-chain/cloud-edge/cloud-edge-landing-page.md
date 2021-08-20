@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354819"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780684"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Moln- och kantskalningsenheter för arbetsbelastning i tillverknings och distributionslagerhantering
 
@@ -102,7 +102,7 @@ Din aktuella produktionsmiljö måste vara taggad med typen **Självbetjäning**
 > [!IMPORTANT]
 > Miljötyper som körs som infrastruktur som en tjänst (IaaS) stöds inte. Dessa miljöer är vanligtvis taggade med typen **Hanteras av Microsoft** i LCS. Om du har miljöer av den här typen bör du arbeta tillsammans med din Microsoft-kontakt i syfte att förstå tidslinjen för migrering till typen **Självbetjäning**.
 
-Microsoft arbetar med att överföra alla molnbaserade miljöer inom Supply Chain Management från en IaaS-modell till en topologi som finns i Service Fabric. Denna flytt ger en större skalbarhet och gör servicehanteringen enklare. Därför går det snabbare att distribuera och underhålla åtgärder. Servicekomponenter migreras på samma sätt till begreppet mikrotjänster, och värdmodellen för tjänsten kommer att [övergå](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm) från en virtuell maskinmodell (VM) till en lättare containerarkitektur.
+Microsoft arbetar med att överföra alla molnbaserade miljöer inom Supply Chain Management från en IaaS-modell till en topologi som finns i Service Fabric. Denna flytt ger en större skalbarhet och gör servicehanteringen enklare. Därför går det snabbare att distribuera och underhålla åtgärder. Servicekomponenter migreras på samma sätt till begreppet mikrotjänster, och värdmodellen för tjänsten kommer att [övergå](/virtualization/windowscontainers/about/containers-vs-vm) från en virtuell maskinmodell (VM) till en lättare containerarkitektur.
 
 I slutändan kommer samma Service Fabric-baserade containerinfrastruktur för tjänster att driva såväl molnbaserade som kantinstanser av tjänsten, oavsett om en instans är ett nav i molnet eller en skalningsenhet i molnet eller "on the edge" – i utkanten av nätverket istället för som annars centralt.
 

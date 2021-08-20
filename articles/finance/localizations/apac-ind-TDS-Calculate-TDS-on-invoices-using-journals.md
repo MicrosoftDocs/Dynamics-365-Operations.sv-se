@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: bc1a8570e60e2b17f27c3e63c5ff847b3cb7a2dd
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: cfe473f39ee729957924fd7c161aed01138cd507eea56766af35177891676f65
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358468"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778903"
 ---
 # <a name="calculate-tds-on-invoices-using-journals"></a>Beräkna TDS på fakturor med journaler
 
@@ -65,6 +65,6 @@ Börja med att öppna sidan **Allmänna journaler** (**Redovisning > Journalpost
 
 8. Ange andra uppgifter som behövs. Validera och bokför journalen. Det TDS-belopp som beräknas på inköpsfakturor bokförs på leverantörsreskontrakontot. Det TDS-belopp som beräknas på försäljningsfakturor bokförs på det kundreskontrakonto som har definierats för varje TDS-momskod i TDS-gruppen. Leverantörsreskontrakontona och kundreskontrakontona för TDS-skattekoder definieras på sidan **Källskattekoder**.
 
-9. Välj **Bokförd källskatt** för att öppna sidan **Källskattetransaktioner**. I fältet **Värde** visas den totala procentsats som användes för att beräkna TDS för transaktionen.
+9. Välj **Bokförd källskatt** för att öppna sidan **Källskatta** **skatt** **transaktioner** I fältet **Värde** visas den totala procentsats som användes för att beräkna TDS för transaktionen.
 
    Fälten under flikarna **Översikt**, **Allmänt** och **Belopp** på sidan Källskattetransaktioner visar det beräknade TDS-beloppet och justerad TDS-beloppinformation för varje TDS-momskod som är kopplad till TDS-gruppen.

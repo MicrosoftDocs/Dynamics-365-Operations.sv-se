@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: db75b09f1ae1f83a88a5e5eaef0c8c1b8eab5901
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 27dc29109693c06913c8107e27e79a48cf2c9db7146ff3a5919305366641af3d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804147"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774471"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Skapa och köra färdiga rapporter
 
@@ -36,7 +36,7 @@ Det demonstrationsdataföretag som används för att skapa den här registrering
 4. Ange ett datum i fältet Från datum.
 5. Ange ett datum i fältet Till datum.
 6. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kanal.
-7. I trädet, välj Contoso Retail\Contoso Retail USA\Central\Houston.
+7. I trädet, välj 'Contoso Retail\Contoso Retail USA\Central\Houston'.
     * Här visas standardorganisationshierarkin för handelrapporteringsyfte.   Gå till Organisationsadministration > Organisationer > Syften för organisationshierarki, välj handelsrapportering och under Tilldelade hierarkier, kontrollera det hierarkinamn för vilket standardkolumnen är markerad. Som en del av demodata (som används för registreringen av den här uppgiften) bör du märka att Butiker efter region är standardorganisationshierarki för syftet med rapportering.     
 8. Klicka på OK.
 9. Markera ett alternativ i fältet Visa.
@@ -48,7 +48,7 @@ Det demonstrationsdataföretag som används för att skapa den här registrering
 2. Ange ett datum i fältet Från datum.
 3. Ange ett datum i fältet Till datum.
 4. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kanal.
-5. I trädet, välj Contoso Retail\Contoso Retail USA\West\Seattle.
+5. I trädet, välj 'Contoso Retail\Contoso Retail USA\West\Seattle'.
     * Här visas standardorganisationshierarkin för handelrapporteringsyfte. Gå till Organisationsadministration > Organisationer > Syften för organisationshierarki, välj handelsrapportering och under Tilldelade hierarkier, kontrollera det hierarkinamn för vilket standardkolumnen är markerad. Som en del av demodata (som används för registreringen av den här uppgiften) bör du märka att Butiker efter region är standardorganisationshierarki för syftet med rapportering.     
 6. Klicka på OK.
 7. Klicka på OK.
