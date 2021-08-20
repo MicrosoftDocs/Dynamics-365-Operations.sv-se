@@ -2,7 +2,7 @@
 title: Konfigurera värden för produktdimensioner som ska visas som färgrutor
 description: I det här avsnittet beskrivs hur du konfigurerar produktdimensionsvärden som färgrutor i Microsoft Dynamics 365 Commerce-administration.
 author: anupamar-ms
-ms.date: 05/28/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 4ffbb6a162e87fd19cdb44224adc8c223ba8e903
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: b1cef992b3d4e3889dd1d5dcc21a0d1ba3f55acc166f5003fc79f64fc54a8754
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638304"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764624"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Konfigurera värden för produktdimensioner som ska visas som färgrutor
 
@@ -46,7 +46,7 @@ I följande bild visas ett exempel där färger visas som färgrutor på en sida
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>Aktivera visning av dimensioner som färgrutor i Commerce-administration
 
-För att aktivera visningsdimensionerna som färgrutor i Commerce-administration, gå till **Arbetsytor \> Funktionshantering** och aktiverar funktionen **Aktivera bildstöd för produktdimensionsvärden**. När funktionens flagga aktiveras, läggs tre nya fält till för varje dimension i de passande registren i Commerce-administration: **Hexkod**, **URL** (för bilder) och **RefinerGroup**.
+För att aktivera visningsdimensionerna som färgrutor i Commerce-administration, gå till **Arbetsytor \> Funktionshantering** och aktiverar funktionen **Aktivera en mekanism för att representera dimensioner som en färgruta**. När funktionens flagga aktiveras, läggs tre nya fält till för varje dimension i de passande registren i Commerce-administration: **Hexkod**, **URL** (för bilder) och **RefinerGroup**.
 
 ## <a name="configure-dimension-values-in-commerce-headquarters"></a>Konfigurera dimensionsvärden i Commerce-administration
 
@@ -124,6 +124,19 @@ I följande bild visas ett exempel där dialogrutan **Överför filer** används
 Innan färgrutor kan visas på webbplatssidor med e-handel som kräver dimensionsval, såsom PDP och listsidor, måste du konfigurera dimension webbplatsinställningar i Commerce-administration. Mer information finns i [Använd webbplatsinställningar för dimensioner](../dimension-settings.md).
 
 Du bör dessutom aktivera egenskapen **Inkludera produktattribut i sökresultaten** för sökresultatmoduler. Om din webbplats använder anpassade kategorisidor bör du uppdatera sökresultat modulerna som används på dessa sidor så att egenskapen **Inkludera produktattribut i sökresultat** är aktiverad. Mer information finns i avsnittet [modulen sökresultaten](../search-result-module.md).
+
+## <a name="inventory-awareness-on-swatches"></a>Lagermeddeenhet på färgruta
+
+Färgrutor har en valfri funktion för att visa lagertillgänglighet för en produktvariantfärg eller dimension. En produkt säljs till exempel i flera storlekar men det finns vissa storlekar inte i lager. I så fall återges lagervarorna för produkter som inte finns i lager på ett annat sätt för att visa att de inte är tillgängliga. Den här kapaciteten minskar antalet kundklick som krävs för att avgöra om produkten är tillgänglig.
+
+Funktionen för lagertillgänglighet för lager kan konfigureras för användning på både PDF-adresser och sök- eller kategorilistesidor där tum visas. För att aktivera det måste du ställa in egenskapen **Uppdatera media om måttval** till **True** i [mediagallerimodulen](../media-gallery-module.md). Denna inställning gör det möjligt att uppdatera mediebilder när dimensioner väljs. 
+
+> [!IMPORTANT]
+> Tillgänglighetsfunktionen för färgrutor är tillgänglig från version 10.0.21 av Commerce. De kräver att paketversion 9.31 för Commerce-modulens bibliotek är installerad.
+
+I följande bild visas ett exempel på kunskap om lagerinformation i storleken på en PDP.
+
+![Exempel på lagermeddelandet om storleken på färgrutor ett PDP-tecken](../dev-itpro/media/swatch_inventory.png)
 
 ## <a name="display-swatches-in-pos-and-other-channels"></a>Visa färgrutor i kassa och andra kanaler
 
