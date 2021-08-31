@@ -222,6 +222,26 @@
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Regulatory Configuration Service – Lifecycle Services lagringsutfasning
                       href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Ladda ner ER-konfigurationer till Supply Chain Management
+                      items:
+                        - name: Hämta konfigurationer från RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Importera konfigurationer från RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Global lagringsplats (GR)
+                      items:
+                        - name: Importera konfigurationer från GR
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Importera uppdaterade versioner av ER-konfigurationer
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Förbättrad filtrering för att hitta konfigurationer i GR
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Överför konfigurationer till GR
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
+                        - name: Dela konfigurationer i GR
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Avbryt konfigurationer i den globala lagringsplatsen RCS
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Elektronisk fakturering
                   items:
                     - name: Översikt över elektronisk fakturering
@@ -1237,30 +1257,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Importera konfigurationer (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Regulatory services (RCS)
-                  items:
-                    - name: Globaliseringsfunktioner i RCS
-                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Ladda ner ER-konfigurationer till Supply Chain Management
-                      items:
-                        - name: Hämta konfigurationer från RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Importera konfigurationer från RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Global lagringsplats (GR)
-                      items:
-                        - name: Importera konfigurationer från GR
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Importera uppdaterade versioner av ER-konfigurationer
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Förbättrad filtrering för att hitta konfigurationer i GR
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Överför konfigurationer till GR
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
-                        - name: Dela konfigurationer i GR
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Avbryt konfigurationer i den globala lagringsplatsen RCS
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
             - name: Snabbstartsguider
               items:
                 - name: Justera ett ER-format för att skapa ett anpassat elektroniskt dokument
@@ -1319,7 +1315,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Felsök datakällor
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Generera streckkods bilder med BARCODE
+                    - name: Generera streckkodsbilder med BARCODE
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurera modellmappningar
                   items:
@@ -1574,7 +1570,19 @@
             - name: Arkivera lagertransaktioner
               href: inventory/archive-inventory-transactions.md
             - name: Tillägg för lagersynlighet
-              href: inventory/inventory-visibility.md
+              items:
+                - name: Tillägg för lagersynlighet – översikt
+                  href: inventory/inventory-visibility.md
+                - name: Konfigurera lagersynlighet
+                  href: inventory/inventory-visibility-setup.md
+                - name: Konfigurera lagersynlighet
+                  href: inventory/inventory-visibility-configuration.md
+                - name: Lagersynlighetsreservationer
+                  href: inventory/inventory-visibility-reservations.md
+                - name: Power Apps för lagersynlighet
+                  href: inventory/inventory-visibility-power-platform.md
+                - name: 'Offentliga API:er för lagersynlighet'
+                  href: inventory/inventory-visibility-api.md
         - name: IoT-intelligens
           items:
             - name: IoT-intelligens – startsida
@@ -1607,6 +1615,8 @@
                   href: master-planning/planning-optimization/release-process.md
                 - name: Bristanalys för planeringsoptimering
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Skillnader mellan inbyggd huvudplanering och planeringsoptimering
+                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: Parametrar som inte används i Planeringsoptimering
                   href: master-planning/planning-optimization/not-used-parameters.md
                 - name: Använda filter på en plan
@@ -1795,7 +1805,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
             - name: Öppna enhetsdata i Excel och uppdatera dem med hjälp av Excel-tillägg
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Skapa Öppna i Excel-upplevelse
+            - name: Öppna i Excel-upplevelse – vanliga frågor
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
             - name: Lägga till mallar på menyn Öppna rader i Excel
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
@@ -1975,8 +1985,6 @@
                   href: procurement/request-quotations.md
                 - name: Skapa en anbudsförfrågan
                   href: procurement/tasks/create-request-quotation.md
-                - name: Sluten budgivning för anbudsförfrågningar
-                  href: procurement/sealed-bidding.md
                 - name: Skapa en rekvisition som använder en anbudsförfrågan
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Skapa en poängmetod för anbudsförfrågan
@@ -3297,11 +3305,13 @@
                   items:
                     - name: Nyheter eller ändringar i mobilappen Warehouse Management
                       href: warehousing/whats-new-wma.md
-                    - name: Installera och ansluta mobilappen Warehouse Management
+                    - name: Installera och ansluta Warehouse Management-mobilappen
                       href: warehousing/install-configure-warehouse-management-app.md
                     - name: Installera och ansluta distributionslagerappen
                       href: warehousing/install-configure-warehousing-app.md
-                    - name: Skanna streckkoder med kamera i mobilappen Warehouse Management
+                    - name: Stöd för streckkod för mobil
+                      href: warehousing/mobile-barcode-support.md
+                    - name: Skanna streckkoder med kamera i Warehouse Management-mobilappen
                       href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Felsöka anslutningsproblem med mobilappen Warehouse Management
                       href: warehousing/troubleshoot-warehouse-app-connection.md
@@ -3311,6 +3321,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Konfigurera mobila enheter för distributionslagerarbete
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Anpassa stegtitlar och instruktioner för Warehouse Management-mobilappen
+                      href: warehousing/mobile-app-titles-instructions.md
                     - name: Inleverans av ID-nummer via Warehouse Management-mobilappen
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Ställa in ett menyalternativ för mobil enhet för att slutföra arbete i en inköpsorder
@@ -3331,7 +3343,7 @@
                   href: warehousing/mobile-device-user-settings.md
                 - name: Händelsebearbetning i distributionslagerappen
                   href: warehousing/warehouse-app-events.md
-                - name: Anpassa distributionslagerappen
+                - name: Utöka mobila processer för lagerställen
                   items:
                     - name: Processguideram
                       href: warehousing/process-guide-framework.md
@@ -3399,12 +3411,12 @@
                       href: warehousing/unit-measure-stocking-policies.md
                     - name: Power BI-innehåll för lagerställe
                       href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
-                    - name: Systemgruppering i en öppen arbetslista
+                    - name: Systemgruppering i en öppen arbetsuppgiftslista
                       href: warehousing/system-group-on-open-work-list.md
                     - name: Layout för dokumentflöde för ID-nummeretiketter
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Stöd för streckkod för mobil
-                      href: warehousing/mobile-barcode-support.md
+                    - name: GS1-streckkoder och QR-koder
+                      href: warehousing/gs1-barcodes.md
                     - name: Ställa in distributionslager för överföringsorder
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Felsöka distributionslagerkonfiguration

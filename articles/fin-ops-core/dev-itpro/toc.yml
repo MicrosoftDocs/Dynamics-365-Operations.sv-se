@@ -332,8 +332,6 @@
                       href: database/api/v1/reference-create-export.md
                     - name: Hämta aktivitetsstatus för åtgärd
                       href: database/api/v1/reference-get-status.md
-                    - name: Starta och stoppa miljöer
-                      href: database/api/v1/reference-start-stop-environments.md
         - name: Demodata
           items:
             - name: Demonstrationsdata – översikt
@@ -368,8 +366,10 @@
                       href: deployment/plannedmaintenance-selfservice.md
                     - name: Affärskontinuitet och haveriberedskap
                       href: sysadmin/business-continuity-disaster-recovery.md
-                - name: Slutför registrering av Azure Resource Manager
+                - name: Slutför registreringen av Azure Resource Manager
                   href: deployment/arm-onboarding.md
+                - name: Slutför den pågående registreringen av Azure Resource Manager för LCS-projekt för amerikanska myndigheter
+                  href: deployment/arm-onbarding-us-goverment.md
                 - name: Azure ExpressRoute och Finance and Operations
                   href: deployment/expressroute.md
                 - name: Finance and Operations-arkitektur
@@ -944,6 +944,16 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: LCS för partner
                   href: lifecycle-services/getting-started-lcs.md
+                - name: 'RESTful API:er'
+                  items:
+                    - name: Starta och stoppa miljöer
+                      href: lifecycle-services/api/v1/reference-start-stop-environments.md
+                    - name: Hämta miljömetadata
+                      href: lifecycle-services/api/v1/reference-environment-metadata.md
+                    - name: Hämta miljöhistorik
+                      href: lifecycle-services/api/v1/reference-environment-history.md
+                    - name: Hämta certifikat-ZIP för miljö RSAT
+                      href: lifecycle-services/api/v1/reference-download-rsat-certificate.md
                 - name: Nyheter och ändringar i Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
             - name: Användarhandbok för Lifecycle Services
@@ -1138,22 +1148,24 @@
                       href: data-entities/dual-write/migrate-prospect-to-cash.md
                     - name: Felsökning
                       items:
-                        - name: Kontrollera konfiguration för dubbelriktad skrivning i Finance and Operations-appar och Dataverse
-                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                        - name: Allmän felsökning
+                          href: data-entities/dual-write/dual-write-troubleshooting.md
                         - name: Felsöka problem under första installationen
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
                         - name: Felsöka problem under första synkroniseringen
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                        - name: Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
-                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                         - name: Felsöka problem med livesynkronisering
                           href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                        - name: Felsöka problem med dubbelriktad skrivning i Finance and Operations-appar
+                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                        - name: Felsök problem i part- och global adressboksmodell
+                          href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
                         - name: Felsöka problem som rör lösningsmedvetande
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
                         - name: Felsöka problem från uppgraderingar av Finance and Operations-appar
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Allmän felsökning
-                          href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Kontrollera konfiguration för dubbelriktad skrivning i Finance and Operations-appar och Dataverse
+                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                 - name: Vanliga frågor om dubbelriktad skrivning
                   href: data-entities/dual-write/dual-write-faq.md
             - name: Virtuella enheter

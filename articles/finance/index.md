@@ -2,7 +2,7 @@
 title: Finance – startsida
 description: Det här avsnittet innehåller en lista med hjälpavsnitt och andra resurser för de ekonomiska styrningsfunktionerna i Microsoft Dynamics 365 Finance.
 author: roschlom
-ms.date: 06/20/2018
+ms.date: 08/18/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85b93f43a599e2da17d873dbe5609347d53af03cbfcaaccde7963b2f1ee97f08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad6c671dd48ff482caf1b24a3842d8db0064dc18
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779432"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394573"
 ---
 # <a name="finance-home-page"></a>Finance – startsida
 
@@ -35,14 +35,16 @@ Välj ett funktionsområde för att läsa mer om det.
     :::column:::
         - [Leverantörsreskontra](accounts-payable/accounts-payable.md) 
         - [Kundreskontra](accounts-receivable/accounts-receivable.md)
+        - [Leasing av tillgångar](asset-leasing/asset-leasing-homepage.md)
         - [Budgetering](budgeting/budgeting-overview.md) 
         - [Kassa- och bankhantering](cash-bank-management/cash-bank-management.md)
         - [Kostnadsredovisning](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Utgiftshantering](/dynamics365/project-operations/prod-exp/expense-management)
+        - [Utläggshantering](/dynamics365/project-operations/prod-exp/expense-management)
         - [Ekonomisk rapportering](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
         - [Anläggningstillgångar](fixed-assets/fixed-assets.md)
+        - [Finance Insights](finance-insights/finance-insights-home-page.md)
         - [Redovisning och ekonomisk rapportering](general-ledger/general-ledger.md) 
         - [Projekthantering och redovisning](/dynamics365/project-operations/prod-pma/overview-project-management-accounting)
         - [Offentlig sektor](public-sector/public-sector-functionality.md) 
@@ -57,9 +59,6 @@ Välj ett funktionsområde för att läsa mer om det.
 - [Microsoft Dynamics 365-blogg](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)
 - [Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials) 
 - [Bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog)
-
-### <a name="task-guides"></a>Uppgiftsguider
-Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.
 
 ### <a name="videos"></a>Videoklipp
 

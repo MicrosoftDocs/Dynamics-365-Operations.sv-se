@@ -256,7 +256,7 @@
                       href: dev-itpro/CDX-Troubleshooting.md
                 - name: Arkitektur för Modern POS
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: Publicera en kanal för onlinebutik
+                - name: Publicera en katalog för onlinebutik
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Innehåll för Retail Channel Performance Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
@@ -1268,6 +1268,26 @@
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
                 - name: Regulatory Configuration Service – Lifecycle Services lagringsutfasning
                   href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
+                - name: Ladda ner dina ER-konfigurationer till Commerce
+                  items:
+                    - name: Hämta konfigurationer från RCS
+                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importera konfigurationer från RCS
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+                - name: Global lagringsplats (GR)
+                  items:
+                    - name: Importera konfigurationer från GR
+                      href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importera uppdaterade versioner av ER-konfigurationer
+                      href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: Förbättrad filtrering för att hitta konfigurationer i GR
+                      href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: Överför konfigurationer till GR
+                      href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                    - name: Dela konfigurationer i GR
+                      href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+                    - name: Avbryt konfigurationer i den globala lagringsplatsen RCS
+                      href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Österrike
               items:
                 - name: Exempel på skatteregistreringstjänst för Österrike
@@ -1315,6 +1335,12 @@
                 - name: Funktioner för kassaapparat
                   href: localizations/emea-fra-cash-registers.md
                 - name: Riktlinjer för distribution av kassaapparater
+                  href: localizations/emea-fra-fi-deployment.md
+                - name: Verifiering av räkenskapsarkiv och dataintegritet
+                  href: localizations/emea-fra-fiscal-archive.md
+                - name: Migrera från äldre funktioner för Frankrike
+                  href: localizations/emea-fra-fi-migration.md
+                - name: Riktlinjer för distribution av kassaapparater (äldre)
                   href: localizations/emea-fra-deployment.md
             - name: Tyskland
               items:
@@ -1350,6 +1376,8 @@
               items:
                 - name: Commerce-lokalisering för Ryssland
                   href: localizations/rus-commerce-localization.md
+                - name: Förenklat kundadressformat i Commerce kassa för Ryssland
+                  href: localizations/rus-simplified-address.md
                 - name: Konfigurera Commerce-lokalisering för Ryssland
                   href: localizations/rus-commerce-setup.md
                 - name: Förskottsbetalningar i Commerce för Ryssland
@@ -1860,30 +1888,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
                     - name: Importera konfigurationer (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory services (RCS)
-                  items:
-                    - name: Globaliseringsfunktioner i RCS
-                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-                    - name: Ladda ner dina ER-konfigurationer till Commerce
-                      items:
-                        - name: Hämta konfigurationer från RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
-                        - name: Importera konfigurationer från RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
-                    - name: Global lagringsplats (GR)
-                      items:
-                        - name: Importera konfigurationer från GR
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Importera uppdaterade versioner av ER-konfigurationer
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Förbättrad filtrering för att hitta konfigurationer i GR
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Överför konfigurationer till GR
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-                        - name: Dela konfigurationer i GR
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
-                        - name: Avbryt konfigurationer i den globala lagringsplatsen RCS
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Snabbstartsguider
               items:
                 - name: Justera ett ER-format för att skapa ett anpassat elektroniskt dokument
@@ -2112,7 +2116,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
             - name: Öppna enhetsdata i Excel och uppdatera dem med hjälp av Excel-tillägg
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
-            - name: Skapa Öppna i Excel-upplevelse
+            - name: Öppna i Excel-upplevelse – vanliga frågor
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/commerce/toc.json
             - name: Lägga till mallar på menyn Öppna rader i Excel
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/commerce/toc.json
@@ -2360,6 +2364,8 @@
                       href: e-commerce-extensibility/globalize-modules.md
                     - name: Konfigurera Azure Key Vault för säker nyckelhantering
                       href: e-commerce-extensibility/set-up-key-vault.md
+                    - name: Skapa en begärandehook för plugin-program för försäljningsförlopp
+                      href: e-commerce-extensibility/request-pipeline-hook.md
                 - name: Utveckla dataåtgärder
                   items:
                     - name: Översikt över dataåtgärder
@@ -2422,6 +2428,12 @@
                   items:
                     - name: Konfigurera och aktivera anslutningsprogram
                       href: e-commerce-extensibility/connectors.md
+                - name: Resultat
+                  items:
+                    - name: Konfigurera sidcachelagring
+                      href: e-commerce-extensibility/page-caching.md
+                    - name: Instanscache för dataåtgärd
+                      href: e-commerce-extensibility/instance-cache.md
                 - name: Telemetri och analyser
                   items:
                     - name: Telemetrilogg
